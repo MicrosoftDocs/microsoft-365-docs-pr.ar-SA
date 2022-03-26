@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db219fe7ce39ae59668cedff10f03e931ddba416
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 83f0f53e2d2376975f853d826531e749732416b7
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63569810"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754325"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>الأجهزة المجهزة بدون اتصال بالإنترنت إلى Microsoft Defender لنقطة النهاية
 
@@ -37,7 +37,7 @@ ms.locfileid: "63569810"
 للأجهزة المجهزة بدون اتصال بالإنترنت، ستحتاج إلى اتخاذ الخطوات العامة التالية:
 
 > [!IMPORTANT] 
-> تنطبق الخطوات أدناه فقط على الأجهزة التي تعمل بالإصدارات السابقة من Windows مثل: Windows Server 2016 والإصدارات السابقة Windows 8.1 والإصدارات السابقة.
+> تنطبق الخطوات التالية فقط على الأجهزة التي تعمل بالإصدارات السابقة من Windows باستخدام الحل المستند إلى MMA. لمزيد من المعلومات، راجع [Windows إلى خدمة Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
 > [!NOTE]
 > - لا يمكن استخدام خادم بوابة OMS كوكيل للأجهزة Windows أو Windows غير المتصلة عند تكوينها عبر سجل 'TelemetryProxyServer' أو GPO.
@@ -50,7 +50,7 @@ ms.locfileid: "63569810"
 - [خوادم على لوحة لخدمة Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [تكوين إعدادات اتصال الإنترنت ووكيل الجهاز](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 
-## <a name="on-premises-devices"></a>الأجهزة الداخلية
+## <a name="devices-running-the-previous-mma-based-solution"></a>الأجهزة التي تقوم بتشغيل الحل السابق المستند إلى MMA
 
 - إعداد Azure Log Analytics (المعروف سابقا باسم بوابة OMS) للعمل كوكيل أو مركز:
   - [وكيل Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
@@ -63,9 +63,9 @@ ms.locfileid: "63569810"
     - Azure Log Analytics IP كوكيل
     - Defender لمفتاح مساحة عمل نقطة النهاية & ID
 
-## <a name="azure-virtual-machines"></a>أجهزة Azure الظاهرية
+### <a name="azure-virtual-machines"></a>أجهزة Azure الظاهرية
 
-- إعداد بوابة Azure Log Analytics (المعروفة سابقا باسم بوابة OMS) للعمل كوكيل أو مركز:
+- بالنسبة للأجهزة التي تقوم بتشغيل الحل السابق المستند إلى MMA، قم بإعداد Azure Log Analytics Gateway (المعروف سابقا ببوابة OMS) للعمل كوكيل أو مركز:
     - [بوابة تحليلات سجل Azure](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
     - [تثبيت عامل مراقبة Microsoft (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) وتكوينه يشير إلى مفتاح Defender for Endpoint Workspace & ID
 - أجهزة VMs Azure غير المتصلة في نفس شبكة بوابة OMS

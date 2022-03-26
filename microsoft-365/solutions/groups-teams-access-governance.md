@@ -16,12 +16,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: تعرف على كيفية إدارة الوصول في Microsoft 365 والمجموعات Teams SharePoint.
-ms.openlocfilehash: e01326093476f341c6c4c75448efbdf8c745779f
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: 3f4304a54cd1eae86c98d530e5a4ec4db5f6dc66
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "63569953"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716157"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>تحكم الوصول في Microsoft 365 Teams و SharePoint
 
@@ -53,7 +53,6 @@ ms.locfileid: "63569953"
 |إدارة المستخدمين|||
 ||مراجعة عضوية الفريق والمجموعة بشكل منتظم.|[ما هي مراجعات الوصول إلى Azure AD؟](/azure/active-directory/governance/access-reviews-overview)|
 ||أتمتة إدارة الوصول إلى المجموعات والفرق.|[ما هي إدارة استحقاق Azure AD؟](/azure/active-directory/governance/entitlement-management-overview)|
-||السماح للأشخاص بإنشاء قنوات خاصة أو حظرهم في Teams.|[إدارة دورة حياة القنوات الخاصة في Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## <a name="membership"></a>العضوية
 
@@ -156,7 +155,9 @@ Microsoft 365 العديد من الطرق المختلفة لمشاركة ال�
 
 - [القنوات الخاصة في Microsoft Teams](/MicrosoftTeams/private-channels)
 
-- [إدارة دورة حياة القنوات الخاصة في Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)
+تسمح لك القنوات المشتركة بدعوة أشخاص من خارج الفريق أو خارج المؤسسة. استنادا إلى احتياجات العمل المعينة ونهج المشاركة الخارجية، قد ترغب في السماح بهذه الإمكانية أو حظرها.
+
+- [القنوات المشتركة](/MicrosoftTeams/shared-channels)
 
 موارد إضافية:
 

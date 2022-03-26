@@ -21,25 +21,29 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: ce75fff753acfa9d5e183154e09805b04d7523da
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 41583a89abc3418799263dc46643fbe06a07e818
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63569800"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63712829"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>التحقق من التنبيهات في Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **ينطبق على:**
+
 - Microsoft 365 Defender
+
+>[!Note]
+>تصف هذه المقالة تنبيهات الأمان في Microsoft 365 Defender. ومع ذلك، يمكنك استخدام تنبيهات النشاط لإرسال إعلامات بالبريد الإلكتروني إلى نفسك أو إلى المسؤولين الآخرين عندما يقوم المستخدمون بتنفيذ أنشطة معينة في Microsoft 365. لمزيد من المعلومات، راجع [إنشاء تنبيهات النشاط - Microsoft 365 التوافق | Microsoft Docs](../../compliance/create-activity-alerts.md).
 
 التنبيهات هي أساس كل الأحداث وتشير إلى حدوث أحداث ضارة أو مريبة في بيئتك. عادة ما تكون التنبيهات جزءا من هجوم أوسع وتوفر دلائل حول حادث.
 
-في Microsoft 365 Defender، يتم تجميع التنبيهات ذات الصلة معا لحوادث [النموذج](incidents-overview.md). توفر الأحداث دائما السياق الأوسع للهجوم، ومع ذلك، يمكن أن يكون تحليل التنبيهات ذا قيمة عند الحاجة إلى إجراء تحليل أعمق. 
+في Microsoft 365 Defender، يتم تجميع التنبيهات ذات الصلة معا لحوادث [النموذج](incidents-overview.md). توفر الأحداث دائما السياق الأوسع للهجوم، ومع ذلك، يمكن أن يكون تحليل التنبيهات ذا قيمة عند الحاجة إلى إجراء تحليل أعمق.
 
-تعرض **قائمة انتظار التنبيهات** مجموعة التنبيهات الحالية. يمكنك الوصول إلى قائمة انتظار التنبيهات من & **تنبيهات** > التنبيهات عند التشغيل السريع <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender المدخل</a>.
+تعرض **قائمة انتظار التنبيهات** مجموعة التنبيهات الحالية. يمكنك الوصول إلى قائمة انتظار التنبيهات من & **تنبيهات** > التنبيهات عند التشغيل السريع [Microsoft 365 Defender المدخل](https://go.microsoft.com/fwlink/p/?linkid=2077139).
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="مثال على قائمة انتظار التنبيهات في مدخل Microsoft 365 Defender":::
 

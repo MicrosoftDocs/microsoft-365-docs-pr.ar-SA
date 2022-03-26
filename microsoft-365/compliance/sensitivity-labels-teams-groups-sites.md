@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم تسميات الحساسية لحماية المحتوى في SharePoint Microsoft Teams ومواقع الويب Microsoft 365 المجموعات.
-ms.openlocfilehash: 46daf3ecd4c918196fa7a50f8e8869bdd54c945e
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: b5eb295e83e2a87a538201fe58c221f3f9400f97
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63566356"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714906"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>استخدام تسميات الحساسية لحماية المحتوى في Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint ويب
 
@@ -57,6 +57,9 @@ ms.locfileid: "63566356"
 بعد تمكين تسميات الحساسية والحاويات وتكوينها، يمكن للمستخدمين رؤية تسميات الحساسية وتطبيقها على مواقع فريق Microsoft ومجموعات Microsoft 365 ومواقع SharePoint أخرى. على سبيل المثال، عند إنشاء موقع فريق جديد من SharePoint:
 
 ![تسمية حساسية عند إنشاء موقع فريق من SharePoint.](../media/sensitivity-labels-new-team-site.png)
+
+> [!NOTE]
+> تدعم تسميات الحساسية الخاصة Teams [القنوات المشتركة](/MicrosoftTeams/shared-channels)، حاليا في وضع المعاينة. إذا كان الفريق لديه أي قنوات مشتركة، فإنه يرث تلقائيا إعدادات تسمية الحساسية من الفريق الأصل، ولا يمكن إزالة هذه التسمية أو استبدالها بتسمية مختلفة.
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>كيفية تمكين تسميات الحساسية والحاويات ومزامنة التسميات
 

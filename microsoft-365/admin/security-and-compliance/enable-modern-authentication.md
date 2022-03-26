@@ -23,91 +23,80 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: تعرف على كيفية تعيين مفاتيح التسجيل لتمكين المصادقة الحديثة للأجهزة التي تم تثبيت Microsoft Office 2013 عليها.
-ms.openlocfilehash: c390e3b9858a4d7d8fc37ea5c5e6f1901d5e20fb
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 468658c3b346c7923937ff9595699a20306ed6a9
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63567725"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754181"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>تمكين المصادقة الحديثة Office 2013 على Windows الأجهزة
 
-لتمكين المصادقة الحديثة لأي أجهزة Windows تم تثبيت Office 2013 عليها، ستحتاج إلى تعيين مفاتيح تسجيل معينة.
-  
-## <a name="enable-modern-authentication-for-office-2013-clients"></a>تمكين المصادقة الحديثة لعملاء Office 2013
-
-> [!NOTE]
-> تم تمكين المصادقة الحديثة Office عملاء 2016، لست بحاجة إلى تعيين مفاتيح التسجيل Office 2016. 
-  
-لتمكين المصادقة الحديثة لأي أجهزة تعمل Windows (على سبيل المثال، على أجهزة الكمبيوتر المحمولة وأجهزة الكمبيوتر اللوحية)، التي تم تثبيت Microsoft Office 2013 عليها، ستحتاج إلى تعيين مفاتيح التسجيل التالية. يجب تعيين المفاتيح على كل جهاز تريد تمكينه للمصادقة الحديثة:
-
-<br>
-
-****
+Microsoft Office 2013 على أجهزة الكمبيوتر Windows Microsoft على المصادقة الحديثة. ولكن، لكي تقوم بتكوينه، ستحتاج إلى تكوين مفاتيح التسجيل التالية:
 
 |مفتاح التسجيل|النوع|القيمة|
-|:---|:---:|---:|
+|:---|:---:|:---:|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|1|
 |HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
 |HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
 
-قم بإنشاء مفاتيح التسجيل التالية أو تعديلها لتجبر Outlook استخدام أسلوب مصادقة أحدث لخدمات الويب، مثل EWS و Autodiscover. نوصي المستخدمين Outlook استخدام المصادقة الحديثة.
+> [!NOTE]
+> تم تمكين المصادقة الحديثة بالفعل في Office 2016 أو أي وقت لاحق. لست بحاجة إلى تعيين مفاتيح التسجيل هذه للإصدارات الأحدث من Office.
 
-1. إنهاء Outlook.
+## <a name="enable-modern-authentication-for-office-2013-clients"></a>تمكين المصادقة الحديثة لعملاء Office 2013
 
-2. ابدأ "محرر السجل" باستخدام أحد الإجراءات التالية، كما هو مناسب للإصدار الذي تستخدمه من Windows:
+1. أغلق Outlook.
 
-   - **Windows 10 Windows 8.1 Windows 8:** اضغط على مفتاح Windows + R لفتح مربع الحوار تشغيل. اكتب *regedit.exe*، ثم اضغط على **Enter.**
-   - **Windows 7:** **انقر فوق***بدء،regedit.exe* في مربع البحث، ثم اضغط على **Enter.**
+2. انسخ النص التالي واللصق فيه المفكرة:
 
-3. في محرر السجل، حدد موقع مفتاح السجل الفرعي التالي وانقر فوقه:
+   ```text
+   Windows Registry Editor Version 5.00
 
-   ```console
-   HKEY_CURRENT_USER\Software\Microsoft\Exchange\
+   [HKEY_CURRENT_USER\Software\Microsoft\Exchange]
+   "AlwaysUseMSOAuthForAutoDiscover"=dword:00000001
+
+   [HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common]
+
+   [HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity]
+   "EnableADAL"=dword:00000001
+   "Version"=dword:00000001
    ```
 
-4. إذا كان *المفتاح AlwaysUseMSOAuthForAutoDiscover* مفقودا، ففي القائمة تحرير، قم ب الإشارة إلى **جديد** ثم حدد **قيمة DWORD**. اكتب *AlwaysUseMSOAuthForAutoDiscover*، ثم اضغط على **Enter.**
+3. احفظ الملف بملحق الملف .reg بدلا من .txt في موقع يسهل عليك العثور عليه. على سبيل المثال، `C:\Data\Office2013_Enable_ModernAuth.reg`.
 
-5. انقر ب الماوس *الأيمن فوق AlwaysUseMSOAuthForAutoDiscover*، ثم انقر فوق **تعديل.**
+4. افتح مستكشف الملفات (المعروف سابقا باسم Windows Explorer)، واستعرض موقع ملف .reg الذي حفظته للتو، ثم انقر نقرا مزدوجا فوقه.
 
-6. في المربع **بيانات** القيمة، اكتب **1**، ثم انقر فوق **موافق.**
+5. في مربع **الحوار عنصر تحكم حساب** المستخدم الذي يظهر، انقر فوق **نعم** للسماح للتطبيق بإجراء تغييرات على جهازك.
 
-7. في محرر السجل، حدد موقع مفتاح السجل الفرعي التالي وانقر فوقه:
+6. في مربع **الحوار تحذير محرر** السجل الذي يظهر، انقر فوق **نعم** لقبول التغييرات.
 
-   ```console
-   HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
-   ```
+بعد تعيين مفاتيح التسجيل، يمكنك تعيين Office 2013 لاستخدام المصادقة متعددة العوامل (MFA) مع Microsoft 365. لمزيد من المعلومات، راجع [إعداد المصادقة متعددة العوامل](set-up-multi-factor-authentication.md).
 
-8. إذا كان *مفتاحي EnableADAL والإصدار* موجودين بالفعل، فعدل القيم إذا لزم الأمر، ثم قم بالخروج من محرر السجل. إذا لم يتم ذلك، في القائمة تحرير، قم ب الإشارة إلى **جديد** ثم حدد **قيمة DWORD** لإنشاء المفاتيح المفقودة. 
+إذا قمت حاليا تسجيل الدخول إلى أي من تطبيقات Office العميل، يجب تسجيل الخروج ثم تسجيل الدخول مرة أخرى لكي يتم تطبيق التغيير. وبخلاف ذلك، لن تتوفر إعدادات التجوال و MRU حتى يتم إنشاء الهوية.
 
-9. على سبيل المثال، إذا كان *المفتاح EnableADAL* مفقودا، فاختر *EnableADAL*، ثم اضغط على **مفتاح Enter.**
-
-10. انقر ب زر الماوس *الأيمن فوق EnableADAL*، ثم انقر فوق **تعديل.**
-
-11. في المربع **بيانات** القيمة، اكتب **1**، ثم انقر فوق **موافق.**
-
-12. اتبع العملية نفسها لمفتاح الإصدار إذا لزم الأمر. 
-
-13. **إنهاء محرر السجل.**
-
-بعد تعيين مفاتيح التسجيل، يمكنك تعيين تطبيقات أجهزة Office 2013 لاستخدام المصادقة متعددة العوامل [(MFA)](set-up-multi-factor-authentication.md) مع Microsoft 365. 
-  
-إذا كنت تقوم حاليا تسجيل الدخول باستخدام أي من تطبيقات العميل، يجب تسجيل الخروج ثم تسجيل الدخول مرة أخرى لكي يتم تطبيق التغيير. وبخلاف ذلك، لن تتوفر إعدادات التجوال و MRU حتى يتم إنشاء الهوية.
-  
 ## <a name="disable-modern-authentication-on-devices"></a>تعطيل المصادقة الحديثة على الأجهزة
 
-لتعطيل المصادقة الحديثة على جهاز، قم بتعيين مفاتيح التسجيل التالية على الجهاز:
-
-<br>
-
-****
+يتشابه الإجراء لتعطيل المصادقة الحديثة على جهاز إلى حد كبير، ولكن هناك حاجة إلى عدد أقل من مفاتيح التسجيل، وستحتاج إلى تعيين قيمها إلى 0.
 
 |مفتاح التسجيل|النوع|القيمة|
-|:---|:---:|---:|
-|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
+|---|:---:|:---:|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|0|
-   
+|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
+
+```text
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Exchange]
+"AlwaysUseMSOAuthForAutoDiscover"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity]
+"EnableADAL"=dword:00000000
+```
+
 ## <a name="related-content"></a>المحتوى ذي الصلة
 
-[سجل الدخول إلى Office 2013 باستخدام أسلوب تحقق ثان](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) (مقالة)\
-[Outlook عن](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) كلمة المرور ولا يستخدم المصادقة الحديثة للاتصال Office 365 (مقالة)
+[تسجيل الدخول إلى Office 2013 باستخدام طريقة تحقق ثانية](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+
+[Outlook عن كلمة المرور ولا يستخدم المصادقة الحديثة للاتصال Office 365](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)

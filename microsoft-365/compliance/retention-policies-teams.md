@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على سياسات الاستبقاء التي تنطبق على Microsoft Teams.
-ms.openlocfilehash: d3562126a678e486fd97f3c760841f9ba4de7193
-ms.sourcegitcommit: 6e43aeff217afe97876137b1ead8df26db6e9937
+ms.openlocfilehash: fc870050b8ef69a908553617d755412d95efa288
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "63567461"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714863"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>تعرف على استبقاء Microsoft Teams
 
@@ -43,6 +43,9 @@ ms.locfileid: "63567461"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>ما هو مضمن للاحتفاظ والحذف
 
+> [!NOTE]
+> تدعم الآن سياسات الاستبقاء [القنوات](/MicrosoftTeams/shared-channels) المشتركة، حاليا في وضع المعاينة. ترث أي قنوات مشتركة إعدادات الاستبقاء من القناة الأصل.
+
 Teams يمكن حذف رسائل الدردشات ورسائل القناة ورسائل القناة الخاصة باستخدام سياسات الاستبقاء ل Teams، بالإضافة إلى النص في الرسائل، يمكن الاحتفاظ بالعناصر التالية لأسباب تتعلق بالتوافق: الصور المضمنة والجداول وارتباطات النصوص التشعبية والربط بالرسائل والملفات الأخرى في Teams ومحتوى [البطاقة](/microsoftteams/platform/task-modules-and-cards/what-are-cards). تتضمن رسائل الدردشة ورسائل القناة الخاصة جميع أسماء الأشخاص في المحادثة، كما تتضمن رسائل القناة اسم الفريق وعنوان الرسالة (إذا تم توفيرهما). 
 
 لا يتم الاحتفاظ ب قصاصات التعليمات البرمجية والمذكرات الصوتية المسجلة من عميل Teams المحمول والصور المصغرة وصور الإعلانات وردود الأفعال من الآخرين على شكل رموز التعبير عند استخدام سياسات الاستبقاء Teams.
@@ -60,6 +63,7 @@ Teams يمكن حذف رسائل الدردشات ورسائل القناة ور
 - **UserMailbox**: تخزن علب البريد هذه بيانات الرسائل للمستخدمين المستندين إلى Teams السحابة.
 - **MailUser**: تخزن علب البريد هذه بيانات الرسائل للمستخدمين Teams [المستخدمين](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: تخزن علب البريد هذه بيانات الرسائل Teams القنوات القياسية.
+- **المجموعة الفرعية**: تخزن علب البريد هذه بيانات الرسائل Teams المشتركة.
 
 أنواع علب البريد الأخرى، مثل RoomMailbox المستخدمة Teams المؤتمرات، غير معتمدة Teams الاستبقاء.
 

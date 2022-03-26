@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: تعرف على كيفية نشر الفرق مع حماية البيانات عالية الحساسية.
-ms.openlocfilehash: 053f92f0a3f7551d747c81b13b3832798c7e953c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 02b74d6f2a2e168f07a095207dcdc1bb6785aa8f
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63569292"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63715202"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>تكوين الفرق مع حماية البيانات عالية الحساسية
 
@@ -62,7 +62,7 @@ ms.locfileid: "63569292"
 
 بالنسبة لمستوى الحماية عالي الحساسية، سنستخدم تسمية حساسية لتصنيف الفريق. يمكن استخدام هذه التسمية أيضا لتصنيف الملفات الفردية وتشفيرها في هذا الفريق أو في فرق أخرى أو في مواقع ملفات أخرى مثل SharePoint أو OneDrive. 
 
-كخطوة أولى، يجب تمكين تسميات الحساسية Teams. راجع [استخدام تسميات الحساسية](../compliance/sensitivity-labels-teams-groups-sites.md) لحماية المحتوى في Microsoft Teams ومجموعات Office 365 والمواقع SharePoint للحصول على التفاصيل.
+كخطوة أولى، يجب تمكين تسميات الحساسية Teams. راجع [استخدام تسميات الحساسية](../compliance/sensitivity-labels-teams-groups-sites.md) لحماية المحتوى في Microsoft Teams Office 365 والمجموعات SharePoint للحصول على التفاصيل.
 
 إذا كان لديك بالفعل تسميات حساسية تم نشرها في مؤسستك، فنظر في كيفية تناسب هذه التسمية مع استراتيجية التسمية الشاملة. يمكنك تغيير الاسم أو الإعدادات إذا لزم الأمر لتلبية احتياجات مؤسستك.
 
@@ -119,6 +119,10 @@ ms.locfileid: "63569292"
 
 يمكنك أيضا استخدام [سياسات الفرق](/MicrosoftTeams/teams-policies) للتحكم في الأشخاص الذين يمكنهم إنشاء قنوات خاصة.
 
+## <a name="shared-channel-settings"></a>إعدادات القناة المشتركة
+
+[لا تملك القنوات](/MicrosoftTeams/shared-channels) المشتركة إعدادات على مستوى الفريق. ستتوفر إعدادات القناة المشتركة التي تقوم بتكوينها في مركز إدارة Teams و Azure AD لجميع الفرق بغض النظر عن الحساسية.
+
 ## <a name="sharepoint-settings"></a>SharePoint الإعدادات
 
 في كل مرة تقوم فيها بإنشاء فريق جديد باستخدام التسمية عالية الحساسية، هناك خطوتان يجب القيام بها في SharePoint:
@@ -136,9 +140,7 @@ ms.locfileid: "63569292"
 1. ضمن نوع ارتباط المشاركة الافتراضي، قم بمسح خانة الاختيار **نفس** الإعداد على مستوى المؤسسة، وحدد **الأشخاص الذين لهم حق وصول موجود**.
 1. حدد **حفظ**.
 
-#### <a name="private-channels"></a>القنوات الخاصة
-
-إذا أضفت قنوات خاصة إلى الفريق، فإن كل قناة خاصة تقوم بإنشاء موقع SharePoint جديد مع إعدادات المشاركة الافتراضية. هذه المواقع غير مرئية في مركز إدارة SharePoint، لذلك يجب استخدام الأمر cmdlet Set-SPOSite PowerShell لتحديث إعدادات مشاركة الضيف.
+تجدر الإشارة إلى أنه إذا أضفت قنوات خاصة أو مشتركة إلى الفريق، فإن كل قناة تقوم بإنشاء موقع SharePoint جديد بإعدادات المشاركة الافتراضية. يمكنك تحديثها في مركز SharePoint عن طريق تحديد المواقع المقترنة بالفريق.
 
 ### <a name="site-sharing-settings"></a>إعدادات مشاركة الموقع
 

@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: تعرف على أفضل الممارسات لإعداد التعاون الآمن في الملفات ومشاركتها في Teams لحماية البيانات استنادا إلى حساسيتها.
-ms.openlocfilehash: 4bf18635b0c345e18c1ed5db8c7072ca6225e33c
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: db1ad7d6d5c62775c696da89c3d771114d48e67e
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "63567451"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63714942"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>إعداد مشاركة الملفات الآمنة والتعاون باستخدام Microsoft Teams
 
@@ -70,7 +70,7 @@ ms.locfileid: "63567451"
 |---|---|---|
 |Microsoft Defender Office 365|خزينة مرفقات SPO OneDrive و Teams؛ خزينة المستندات؛ خزينة ارتباطات Teams|Microsoft 365 E1 و E3 و E5|
 |SharePoint|سياسات مشاركة الموقع والملفات، أذونات مشاركة الموقع، ارتباطات المشاركة، طلبات Access، إعدادات مشاركة ضيف الموقع|Microsoft 365 E1 و E3 و E5|
-|Microsoft Teams|وصول الضيف والفرق الخاصة والقنوات الخاصة|Microsoft 365 E1 و E3 و E5|
+|Microsoft Teams|وصول الضيف والفرق الخاصة والقنوات الخاصة والقنوات المشتركة|Microsoft 365 E1 و E3 و E5|
 |Microsoft 365 التوافق|تسميات الحساسية|Microsoft 365 E3 و E5|
 
 ## <a name="collaboration-governance-framework-for-teams-and-microsoft-365"></a>إطار عمل حوكمة التعاون Teams Microsoft 365
@@ -119,6 +119,7 @@ Microsoft 365 العديد من الخيارات التي تحكم حل التع
 - [التعاون في العمل على المستندات](collaborate-on-documents.md) لمشاركة الملفات الفردية للمجلدات.
 - [التعاون في موقع للتعاون](collaborate-in-site.md) مع الضيوف في SharePoint ويب.
 - [التعاون في العمل كفريق](collaborate-as-team.md) للتعاون مع الضيوف في فريق.
+- [التعاون مع المشاركين الخارجيين في قناة](/microsoft-365/solutions/collaborate-teams-direct-connect) للتعاون مع أشخاص من خارج المؤسسة في قناة مشتركة.
 
 استنادا إلى حساسية المعلومات التي يتم مشاركتها، يمكنك إضافة ضمانات للمساعدة على منع المشاركة المفرطة. ستساعدك هذه الموارد على إعداد الحماية التي تحتاجها لمنظمتك:
 
@@ -126,7 +127,7 @@ Microsoft 365 العديد من الخيارات التي تحكم حل التع
 - [الحد من التعرض العرضي للملفات عند المشاركة مع أشخاص من خارج مؤسستك](share-limit-accidental-exposure.md)
 - [إنشاء بيئة مشاركة ضيوف آمنة](create-secure-guest-sharing-environment.md)
 
-إذا كان لديك مشروع رئيسي مع مؤسسة شريكة، يمكنك استخدام Azure Entitlement Management لإدارة الضيوف من تلك المؤسسة في فريق قمت بإعداده للمشروع. راجع [إنشاء إكسترانت B2B مع الضيوف المدارين](b2b-extranet.md) للحصول على التفاصيل.
+إذا كان لديك مشروع رئيسي مع مؤسسة شريكة، يمكنك استخدام إما القنوات المشتركة [](/microsoft-365/solutions/collaborate-teams-direct-connect) أو [إدارة استحقاق Azure](b2b-extranet.md) لإدارة الأشخاص من خارج مؤسستك الذين تحتاج إلى التعاون معهم.
 
 ## <a name="training-for-administrators"></a>تدريب للمسؤولين
 
@@ -154,7 +155,7 @@ Microsoft 365 العديد من الخيارات التي تحكم حل التع
 
 |التدريب:|حماية معلومات المؤسسة باستخدام Microsoft 365|
 |---|---|
-|![Teams التدريب على حماية المعلومات.](../media/protect-enterprise-information-microsoft-365.svg)|إن حماية معلومات مؤسستك وتأمينها أصعب من أي وقت مضى. يناقش مسار حماية معلومات المؤسسة باستخدام Microsoft 365 كيفية حماية معلوماتك الحساسة من تضخيم أو إساءة الاستخدام العرضية، وكيفية اكتشاف البيانات وتصنيفها، وكيفية حمايتها باستخدام تسميات الحساسية، وكيفية مراقبة المعلومات الحساسة وتحليلها لحمايتها من فقدانها. يمكن أن يساعدك مسار التعلم هذا على التحضير Microsoft 365 معتمد: معتمد ومعتمد Microsoft 365 مسؤول الأمان: شهادات خبراء إدارة المؤسسة..<p>1 ساعة - Learning مسار - 5 وحدات نموذجية|
+|![Teams التدريب على حماية المعلومات.](../media/protect-enterprise-information-microsoft-365.svg)|إن حماية معلومات مؤسستك وتأمينها أصعب من أي وقت مضى. يناقش مسار حماية معلومات المؤسسة باستخدام Microsoft 365 كيفية حماية معلوماتك الحساسة من تضخيم أو إساءة الاستخدام العرضية، وكيفية اكتشاف البيانات وتصنيفها، وكيفية حمايتها باستخدام تسميات الحساسية، وكيفية مراقبة المعلومات الحساسة وتحليلها لحمايتها من فقدانها. يمكن أن يساعدك مسار التعلم هذا على التحضير Microsoft 365 معتمد: معتمد ومعتمد Microsoft 365 مسؤول الأمان: شهادات خبراء إدارة المؤسسة.<p>1 ساعة - Learning مسار - 5 وحدات نموذجية|
 
 > [!div class="nextstepaction"]
 > [ابدأ >](/learn/modules/m365-security-info-overview/introduction/)

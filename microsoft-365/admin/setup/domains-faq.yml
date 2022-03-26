@@ -1,0 +1,67 @@
+### YamlMime:FAQ
+metadata:
+  title: الأسئلة المتكررة حول المجالات
+  f1.keywords:
+  - NOCSH
+  ms.author: efrene
+  author: efrene
+  manager: scotv
+  audience: Admin
+  ms.topic: article
+  ms.service: o365-administration
+  ms.localizationpriority: medium
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  - Adm_TOC
+  ms.custom:
+  - AdminSurgePortfolio
+  - okr_smb
+  - seo-marvel-may2020
+  search.appverid:
+  - BCS160
+  - MET150
+  - MOE150
+  - BEA160
+  - GEA150
+  ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
+  description: تعرف على المزيد حول المجالات (مجال onmicrosoft ومجال النقل) من خلال العثور على إجابات لأسئلتك في الأسئلة الشائعة.
+  ms.openlocfilehash: 6b99f8d2d6b976add06dea9382a22d0e1a0a2b6c
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.translationtype: MT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63572988"
+title: الأسئلة الشائعة حول المجالات
+summary: "\n\nتحتوي هذه المقالة على إجابات على الأسئلة التي يتم طرحها بشكل متكرر حول المجالات في Microsoft 365.\n\nإذا لم تتمكن من العثور على إجابة على سؤالك، فدعنا نعرف ذلك من خلال ترك تعليق وسنضيفه إلى القائمة.\n"
+sections:
+- name: تم التجاهل
+  questions:
+  - question: ما هي أولوية MX؟
+    answer: "يتم تسليم البريد إلى خادم تبادل البريد مع أقل رقم تفضيل (الأولوية الأعلى)، لذا يجب أن يكون سجل MX الذي تستخدمه في توجيه البريد أقل رقم تفضيل، وعادة ما يكون 0 أو *أولوية عالية.* \n  \n- عند إنشاء سجل MX، يطلب منك معظم موفري استضافة DNS تعيين رقم التفضيل.\n    \n- بعض التسميات لتفضيلات *المربع* ، وتسمية *بعضها أولوية .* \n    \n- يتطلب بعضها رقما، والبعض يطلب منك تحديد منخفض أو  *متوسط* أو *عال* . \n    \n- إذا كان لديك سجل MX واحد فقط، فإن أي قيمة تكون جيدة بالنسبة إلى الأولوية أو التفضيل.\n    \n- إذا كان لديك أكثر من سجل واحد، فتأكد من أن سجل MX الخاص ب توجيه البريد أعلى أولوية من السجل المستخدم للتحقق من أنك تملك المجال.\n    \n"
+  - question: كيف يمكنني التحقق من صحة سجلات SPF لمجالي؟
+    answer: "من المهم أن يكون لديك سجل  **TXT واحد فقط ل SPF أو إنشاء سجل TXT واحد له**. إذا كان لديك سجل SPF بالفعل، يجب إلحاق Microsoft 365 الجديدة به، بدلا من إنشاء سجل جديد. بعد إضافة سجل SPF للبريد الإلكتروني من Microsoft أو تحديثه، يجب التحقق للتأكد من صحة بناء الجملة باستخدام إحدى هذه الأدوات: \n  \n- [أدوات اختبار سجل SPF](http://www.kitterman.com/spf/validate.html)\n    \n- [مساح SPF](https://dmarcian.com/spf-survey/)\n    \n- [التعمق في واجهة الويب](http://digwebinterface.com/)\n"
+  - question: ما هو اسم المجال؟
+    answer: "المجال هو اسم فريد يظهر بعد تسجيل **@** الدخول إلى عناوين البريد الإلكتروني، وبعد **www.** في عناوين الويب. ويأخذ عادة شكل اسم مؤسستك و اللاحقة القياسية للإنترنت، مثل  *yourbusiness.com أو*  *stateuniversity.edu.* \n  \nيمكن أن يساعد استخدام مجال مخصص **مثل \"contoso.com\\@**\" Microsoft 365 على بناء المصداقية والإدراك للعلامة التجارية الخاصة بك. \n  \nيمكنك [شراء مجال في](../get-help-with-domains/buy-a-domain-name.md) Microsoft 365 وسوف نقوم بإعداده تلقائيا، أو يمكنك شراء مجال تملكه بالفعل من جهة تسجيل المجالات أو إحضاره.\n"
+  - question: هل من الممكن توصيل مجال ب العروض الشخصية أو عروض العائلة؟
+    answer: "للاستفادة من اشتراكك في Microsoft 365 Family أو Microsoft 365 Personal، يمكنك إنشاء عنوان بريد إلكتروني مخصص مقترن لعلبة بريد Outlook.com، على سبيل المثال، yourname@example.com. في الوقت الحالي، ندعم فقط توصيل المجالات المدارة بواسطة GoDaddy باستخدام Outlook.com. لمزيد من المعلومات، راجع [الحصول على عنوان بريد إلكتروني مخصص في Microsoft 365](https://support.microsoft.com/office/get-a-personalized-email-address-in-microsoft-365-75416a58-b225-4c02-8c07-8979403b427b).\n   \n"
+  - question: ماذا يحدث إذا لم يكن موفر DNS يدعم أنواع سجلات معينة؟
+    answer: "إذا كنت تدير سجلات DNS الخاصة بك ولم يكن مضيف DNS يدعم كل سجلات DNS Microsoft 365، فلن تعمل بعض Microsoft 365 الإضافية. نوصي بنقل مجالك إلى جهة تسجيل تدعم كل سجلات DNS المطلوبة.\n  \nالموفرون الذين يدعمون كل سجلات DNS المطلوبة:\n  \n- Dynadot\n    \n- eNomCentral\n    \n- Europe Registry\n\n- Cloudflare\n    \n- GoDaddy\n    \n- Hover\n    \n- MyHosting.com\n    \n- Name.com\n    \n- الكلام الحر تقريبا\n    \n- Nettica\n    \n- مركز معلومات الشبكة (NIC)\n    \n- Network Solutions\n    \n- Register.com\n  \n"
+  - question: كيف يمكنني تعيين المجال الافتراضي أو تغييره في Microsoft 365؟
+    answer: "يجب أن يكون لديك مجال مخصص واحد على الأقل أضفته إلى Microsoft 365 قبل أن تتمكن من اختيار مجال افتراضي.\n\n::: moniker range=\"o365-worldwide\"\n\n1. في مركز الإدارة، **انتقل إلى الإعدادات** \\> <a href=\"https://go.microsoft.com/fwlink/p/?linkid=834818\" target=\"_blank\">المجالات</a>.\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\n1. في مركز الإدارة، **انتقل إلى الإعدادات** > <a href=\"https://go.microsoft.com/fwlink/p/?linkid=2007048\" target=\"_blank\">المجالات</a>.\n\n::: moniker-end\n    \n2. في صفحة **المجالات** ، حدد المجال الذي تريد تعيينه كافتراضي عناوين البريد الإلكتروني الجديدة. \n    \n3. حدد **تعيين كافتراضي**.\n    \n::: moniker range=\"o365-worldwide\"\n\nلا يمكنك تغيير اسم مجال  *.onmicrosoft.com*  الأولي. \n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\nلا يمكنك تغيير اسم مجال  *.partner.onmschina.cn*  الأولي. \n\n::: moniker-end\n\n> [!NOTE]\n> لا يؤثر تغيير المجال الافتراضي على بيانات اعتماد المستخدم أو إمكانية وصوله إلى التطبيقات أو الخدمات. سي يؤثر تغيير المجال المقترن بالمستخدم على البريد، والتخزين عبر الإنترنت، وبيانات اعتماد تسجيل الدخول.\n"
+  - question: هل يمكنني إضافة مجالات فرعية مخصصة أو مجالات متعددة Microsoft 365؟
+    answer: "::: moniker range=\"o365-worldwide\"\n\nنعم. لإضافة المجالات الفرعية، يجب إدارة إعدادات DNS الخاصة بك في موقع جهة التسجيل على الويب. إذا كنت تسمح لشركة Microsoft بإدارة إعدادات DNS باستخدام سجلات NS، أو إذا اشتريت المجال من Microsoft، لا يمكنك إضافة مجالات فرعية.\n\n::: moniker-end\n\n::: moniker range=\"o365-21vianet\"\n\nنعم! لإضافة المجالات الفرعية، يجب إدارة إعدادات DNS الخاصة بك في موقع جهة التسجيل على الويب. إذا كنت تسمح ل 21Vianet بإدارة إعدادات DNS باستخدام سجلات NS، لا يمكنك إضافة بعض المناطق الفرعية.\n\n::: moniker-end\n\nيمكنك عادة إضافة ما يصل إلى 900 مجال إلى Microsoft 365 الخاص بك.\n  \nعلى سبيل المثال، يمكنك `www.contoso.com``www.partners.contoso.com``www.marketing.partners.contoso.com`إضافة المجالات contoso.com contosomarketing.com، ثم إضافة المجالات الفرعية و وهكذا.\n  \nعند إضافة مجال فرعي، يتم التحقق منه تلقائيا استنادا إلى المجال الأصل الذي يتم التحقق منه.\n  \nعند إضافة مجالات متعددة Microsoft 365، يمكنك استضافة أي من الخدمات (مثل البريد الإلكتروني) على أي من المجالات التي أضفتها.  *عند تغيير البريد الإلكتروني إلى Microsoft 365، عن طريق تحديث سجل MX لمجال ما، ستبدأ جميع رسائل البريد الإلكتروني المرسلة إلى هذا المجال في الوصول إلى Microsoft 365.* \n \n::: moniker range=\"o365-worldwide\"\n\n> [!NOTE]\n> إذا أضفت contoso.com إلى اشتراك Microsoft 365، يمكنك أيضا إضافة المجال الفرعي xyz.contoso.com إلى Microsoft 365 أخرى. عند إضافة مجال فرعي، تتم مطالبتك بإضافة سجل TXT في موفر استضافة DNS.\n::: moniker-end\n"
+  - question: كيف يمكنني نقل مجال من Microsoft 365 إلى مضيف آخر؟
+    answer: >
+      للحصول على الإجراء الخاص بنقل مجال، راجع [نقل مجال من Microsoft إلى مضيف آخر](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md).
+  - question: تطبيق Microsoft 365 من مجالي المخصص
+    answer: >
+      للحصول على إجراء تجريبي Microsoft 365 البريد الإلكتروني من مجال مخصص إلى علبة بريد Microsoft 365 بريد إلكتروني، راجع Microsoft 365 [من مجالي المخصص](../misc/pilot-microsoft-365-from-my-custom-domain.md).
+  - question: لماذا لدي مجال "onmicrosoft.com"؟
+    answer: "Microsoft 365 إنشاء مجال لك، مثل contoso.onmicrosoft.com، عند التسجيل في الخدمة. يتضمن \"اسم المستخدم\" الذي تقوم بإنشاءه عند التسجيل المجال *، مثل alan@contoso.onmicrosoft.com*. \n  \n **إذا كنت تريد *\\@*** [](../get-help-with-domains/buy-a-domain-name.md) أن يبدو بريدك الإلكتروني contoso.com: قم بشراء المجال أو ما عليك سوى اتباع الخطوات الواردة في إضافة المستخدمين [](add-domain.md) والمجال Microsoft 365 إذا كنت تملكه بالفعل. \n  \n- **لا يمكنك إعادة تسمية مجال onmicrosoft بعد التسجيل.** على سبيل المثال، إذا كان المجال الأولي الذي اخترته fourthcoffee.onmicrosoft.com، لا يمكنك تغييره fabrikam.onmicrosoft.com. لاستخدام مجال onmicrosoft.com، يجب بدء اشتراك جديد باستخدام Microsoft 365. \n    \n- **قد لا تتمكن من تغيير اسم SharePoint المجال.** يستند SharePoint مجالك إلى onmicrosoft.com مجالك. تتوفر القدرة [على تغيير SharePoint المجال](/sharepoint/change-your-sharepoint-domain-name) في المعاينة العامة ل المؤسسات التي لا SharePoint الإجمالية وحساباتها OneDrive أقل من 1000.\n    \n- **لا يمكنك إزالة مجال onmicrosoft.** Microsoft 365 تحتاج إلى الاحتفاظ به في مكان آخر لأنه يستخدم في الكواليس لاشتراكك. ولكن لن تحتاج إلى استخدام المجال بنفسك بعد إضافة مجال مخصص. \n    \nيمكنك الاستمرار في استخدام المجال onmicrosoft.com الأولي حتى بعد إضافة مجالك. لا يزال يعمل للبريد الإلكتروني والخدمات الأخرى، لذا فهو اختيارك.\n  \n"
+  - question: لماذا لدي مجال "onmicrosoft.de"؟
+    answer: "Microsoft 365 إنشاء مجال لك، مثل contoso.onmicrosoft.de، عند التسجيل في الخدمة. يتضمن \"اسم المستخدم\" الذي تقوم بإنشاءه عند التسجيل المجال *، مثل alan@contoso.onmicrosoft.de*. \n  \n **إذا كنت تريد** [](../get-help-with-domains/buy-a-domain-name.md) أن يبدو بريدك الإلكتروني alan@contoso.de: قم بشراء المجال أو ما عليك سوى اتباع الخطوات الواردة في إضافة [](add-domain.md) المستخدمين والمجال Microsoft 365 إذا كنت تملكه بالفعل. \n  \n- **لا يمكنك إعادة تسمية مجال onmicrosoft بعد التسجيل.** على سبيل المثال، إذا كان المجال الأولي الذي اخترته fourthcoffee.onmicrosoft.de، لا يمكنك تغييره إلى مجال fabrikam.onmicrosoft.de. لاستخدام مجال onmicrosoft.de، يجب بدء اشتراك جديد باستخدام Microsoft 365. \n    \n- **لا يمكنك إعادة تسمية عنوان URL لموقع الفريق.** يستند عنوان URL لموقع الفريق إلى onmicrosoft.de مجالك. لسوء الحظ، نظرا لطريقة عمل SharePoint Online، لا يمكنك إعادة تسمية موقع الفريق. \n    \n- **لا يمكنك إزالة مجال onmicrosoft.** Microsoft 365 تحتاج إلى الاحتفاظ به في مكان آخر لأنه يستخدم في الكواليس لاشتراكك. ولكن لن تحتاج إلى استخدام المجال بنفسك بعد إضافة مجال مخصص. \n    \nيمكنك الاستمرار في استخدام المجال onmicrosoft.de الأولي حتى بعد إضافة مجالك. لا يزال يعمل للبريد الإلكتروني والخدمات الأخرى، لذا فهو اختيارك.\n  \n"
+  - question: كيف يمكنني التحقق من حالة المؤسسات غير الربحية أو التعليمية؟
+    answer: "1. حدد **إعداد** في [مركز الإدارة](/admin) لبدء تشغيل المعالج. (تأكد من تسجيل الدخول إلى Microsoft 365 أولا.) \n    \n2. لكي تصبح المسؤول لمدرستك، حدد الخيار **كن** مسؤول في Microsoft 365. \n    \n3. ستطالب بإضافة سجل DNS TXT في موقع ويب مضيف DNS لمجالك. لماذا؟ لأنه بتسجيل الدخول في مضيف DNS وإضافة سجل لمجالك، Microsoft 365 أنك تملك اسم المجال.\n    \n4. بعد إضافة السجل، سوف تعود إلى مدخل Microsoft 365 وتأكد من أنك أضفته، Microsoft 365 التحقق.\n    \nهل لديك مؤسسة غير ربحية وتريد الحصول على Microsoft 365؟ [تأكد من أن مؤسستك مؤهلة](https://www.microsoft.com/nonprofits/eligibility) ثم قم التسجيل للحصول على الخدمة. \n  \nهل تريد معرفة المزيد حول أن تصبح المسؤول عن مدرستك؟ [تعرف على كل شيء حول ذلك](/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education\n).\n"
+  - question: كيف يمكنني إنشاء موقع ويب للأعمال؟
+    answer: "شاهد فيديو <a href=\"https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb?autoplay=false\" target=\"_blank\">قصيرا: إنشاء موقع ويب خاص بأعمالك</a> حول استخدام موفر استضافة ويب لإنشاء موقع ويب لمجالك.\n\nMicrosoft 365 موقع ويب عام للأعمال. لإعداد واحد، فكر في استخدام شركة استضافة ويب مثل GoDaddy أو Wix أو WordPress.\n 1. ابحث عن موفر استضافة ويب حيث يمكنك إنشاء موقعك على ويب.\n \n 2. قد تجد أنه من الأسهل اختيار منشئ موقع ويب في الشركة نفسها حيث تم تسجيل اسم مجالك.\n \n 3. صمم موقع ويب العمل، مع التأكد من تضمين شعار العمل والغرض من العمل والنص والصور والربط.\n \n 4. لدمج موقع ويب مع Microsoft 365، يمكنك إضافة البريد الإلكتروني الخاص بأعمالك إلى موقع ويب واارتباط إلى Microsoft Teams أو SharePoint أو أداة تعاون أخرى.\n \n 5. تأكد من توصيل موقعك على ويب باسم مجالك، الذي&#39;أيضا استخدامه للبريد الإلكتروني على Microsoft 365."

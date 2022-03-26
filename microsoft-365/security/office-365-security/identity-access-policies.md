@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 08d15cacdd6b391759aeb1a22abd91c98376cd17
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 27d45b46944a624abde48a37affad285092bc44d
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63568886"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775467"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>الهوية الصفرية الشائعة ونهج الوصول إلى الجهاز
 
@@ -67,7 +67,6 @@ Here's a one-page PDF summary:
 ||[تعريف سياسات توافق الأجهزة](#define-device-compliance-policies)|نهج واحد لكل نظام أساسي.|Microsoft 365 E3 أو E5|
 ||[يتطلب أجهزة كمبيوتر وأجهزة محمولة متوافقة](#require-compliant-pcs-and-mobile-devices)|فرض إدارة Intune لكل من أجهزة الكمبيوتر الشخصية (Windows أو macOS) والهواتف أو الأجهزة اللوحية (iOS أو iPadOS أو Android).|Microsoft 365 E3 أو E5|
 |**أمان متخصص**|[*طلب* MFA دائما](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 أو E5|
-|
 
 ## <a name="assigning-policies-to-groups-and-users"></a>تعيين سياسات إلى المجموعات والمستخدمين
 
@@ -119,7 +118,6 @@ Here's a one-page PDF summary:
 |تطبيقات السحابة أو إجراءاتها|**تطبيقات السحابة > تضمين**|**حدد التطبيقات**: حدد التطبيقات التي تريد تطبيق هذا النهج عليها. على سبيل المثال، حدد Exchange Online.||
 |الشروط|||تكوين الشروط الخاصة ببيئة واحتياجاتك.|
 ||مخاطر تسجيل الدخول||راجع الإرشادات في الجدول التالي.|
-|
 
 ### <a name="sign-in-risk-condition-settings"></a>إعدادات حالة مخاطر تسجيل الدخول
 
@@ -130,7 +128,6 @@ Here's a one-page PDF summary:
 |نقطة البداية|عال، متوسط|تحقق من كليهما.|
 |Enterprise|عالية ومتوسطة ومنخفضة|تحقق من الثلاثة.|
 |أمان متخصص||اترك كل الخيارات غير محدودة لفرض MFA دائما.|
-|
 
 في المقطع **عناصر تحكم Access** :
 
@@ -139,7 +136,6 @@ Here's a one-page PDF summary:
 |المنحة|**Grant access**||حدد|
 |||**يتطلب المصادقة متعددة العوامل**|التحقق|
 ||**يتطلب كل عناصر التحكم المحددة**||حدد|
-|
 
 اختر **تحديد** **لحفظ إعدادات المنح** .
 
@@ -161,7 +157,6 @@ Here's a one-page PDF summary:
 ||استبعاد|**المستخدمون والمجموعات**: حدد مجموعة استثناءات الوصول الشرطي؛ حسابات الخدمة (هويات التطبيق).|يجب تعديل العضوية حسب الحاجة، بشكل مؤقت.|
 |تطبيقات السحابة أو إجراءاتها|**تطبيقات السحابة > تضمين**|**تحديد التطبيقات**: حدد التطبيقات المطابقة للعملاء الذين لا يدعمون المصادقة الحديثة.||
 |الشروط|**تطبيقات العميل**|اختر **نعم** **للتكوين** <p> مسح علامات الاختيار لتطبيقات **المستعرض** والأجهزة **المحمولة والعملاء على سطح المكتب**||
-|
 
 في المقطع **عناصر تحكم Access** :
 
@@ -169,7 +164,6 @@ Here's a one-page PDF summary:
 |---|---|---|---|
 |المنحة|**حظر الوصول**||حدد|
 ||**يتطلب كل عناصر التحكم المحددة**||حدد|
-|
 
 اختر **تحديد** **لحفظ إعدادات المنح** .
 
@@ -191,7 +185,6 @@ Here's a one-page PDF summary:
 |---|---|---|---|
 |المستخدمون|تضمين|**جميع المستخدمين**|حدد|
 |مخاطر المستخدم|**عال**||حدد|
-|
 
 في المقطع **الثاني الواجبات** :
 
@@ -199,7 +192,6 @@ Here's a one-page PDF summary:
 |---|---|---|---|
 |وصول|**السماح بالوصول**||حدد|
 |||**طلب تغيير كلمة المرور**|التحقق|
-|
 
 اختر **تم** لحفظ إعدادات **Access** .
 
@@ -228,7 +220,6 @@ Here's a one-page PDF summary:
 |نقطة البداية|[حماية البيانات المحسنة من المستوى 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|تتضمن إعدادات النهج المفروضة في المستوى 2 كل إعدادات النهج الموصى بها للمستوى 1، كما تضيف إعدادات النهج أدناه أو تحديثها فقط لتنفيذ المزيد من عناصر التحكم وتكوين أكثر تعقيدا من المستوى 1.|
 |Enterprise|[حماية البيانات المحسنة من المستوى 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|تتضمن إعدادات النهج المفروضة في المستوى 2 كل إعدادات النهج الموصى بها للمستوى 1، كما تضيف إعدادات النهج أدناه أو تحديثها فقط لتنفيذ المزيد من عناصر التحكم وتكوين أكثر تعقيدا من المستوى 1.|
 |أمان متخصص|[الحماية العالية للبيانات من المستوى 3 للمؤسسات](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|تتضمن إعدادات النهج المفروضة في المستوى 3 كل إعدادات النهج الموصى بها للمستوىين 1 و2، كما تضيف إعدادات النهج أدناه أو تحديثها فقط لتنفيذ المزيد من عناصر التحكم وتكوين أكثر تعقيدا من المستوى 2.|
-|
 
 لإنشاء نهج حماية تطبيق جديد لكل نظام أساسي (iOS وAndroid) إدارة نقاط النهاية من Microsoft باستخدام إعدادات إطار عمل حماية البيانات، يمكنك:
 
@@ -362,7 +353,6 @@ With Conditional Access, organizations can restrict access to approved (modern a
 |يتطلب BitLocker|يتطلب|حدد|
 |يتطلب تمكين "التشغيل الآمن" على الجهاز|يتطلب|حدد|
 |يتطلب تكامل التعليمات البرمجية|يتطلب|حدد|
-|
 
 بالنسبة **لخصائص الجهاز**، حدد القيم المناسبة لإصدارات نظام التشغيل استنادا إلى سياسات المعلومات والأمان.
 
@@ -388,14 +378,12 @@ With Conditional Access, organizations can restrict access to approved (modern a
 ||إصدار الحد الأدنى من برامج Microsoft Defender Antimalware||النوع <p> معتمد فقط Windows 10 سطح المكتب. توصي Microsoft بالإصدارات التي لا يزيد عددها عن خمسة إصدارات من أحدث إصدار.|
 ||تحديث توقيع Microsoft Defender Antimalware|يتطلب|حدد|
 ||الحماية في الوقت الحقيقي|يتطلب|حدد <p> مدعوم فقط Windows 10 واللاحقة لسطح المكتب|
-|
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender لنقطة النهاية
 
 |النوع|الخصائص|القيمة|الإجراء|
 |---|---|---|---|
 |قواعد Microsoft Defender لنقطة النهاية في مركز إدارة إدارة نقاط النهاية من Microsoft|[طلب أن يكون الجهاز في أو تحت درجة المخاطر على الجهاز](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|متوسط|حدد|
-|
 
 <!--
 ## Require compliant PCs (but not compliant phones and tablets)

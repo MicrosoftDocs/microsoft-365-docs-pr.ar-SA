@@ -8,18 +8,19 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 search.appverid:
 - MET150s
 description: يمكن للمسؤولين التعرف على الخيارات المتوفرة والمفضلة لحظر الرسائل الواردة في Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 71f6312f160a445c184a52f96493360af8b9a360
-ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
+ms.openlocfilehash: bf47fd7723bc1fe9cdef1b57cf16e1948112e749
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63566564"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63675637"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>إنشاء قوائم المرسلين المحظورين في EOP
 

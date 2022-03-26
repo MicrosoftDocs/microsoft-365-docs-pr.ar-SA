@@ -1,0 +1,82 @@
+- name: Microsoft 365 Business Premium
+  items:
+    - name: نظرة عامة
+      href: index.md
+    - name: الحصول Microsoft 365 Business Premium
+      href: get-microsoft-365-business-premium.md
+    - name: الحصول Microsoft 365 للحملات
+      href: get-microsoft-365-campaigns.md
+    - name: كيفية Microsoft 365 مؤسستك
+      href: m365bp-secure-users.md
+- name: إعداد تسجيل الدخول
+  items:
+    - name: إعداد Microsoft 365 Business Premium
+      href: m365bp-setup.md
+    - name: إعداد Microsoft 365 للحملات
+      items:
+        - name: نظرة عامة
+          href: microsoft-365-campaigns-setup-overview.md
+        - name: التسجيل
+          href: m365-campaigns-sign-up.md
+        - name: تسجيل الدخول
+          href: m365-campaigns-sign-in.md
+        - name: تخصيص صفحة تسجيل الدخول
+          href: m365-customize-sign-in.md
+- name: حماية أمان منتهية
+  items:
+    - name: حماية حسابات المسؤولين
+      href: m365bp-protect-admin-accounts.md
+    - name: تشغيل إعدادات الأمان الافتراضية
+      href: m365bp-conditional-access.md
+    - name: الحماية من البرامج الضارة والتهديدات الأخرى
+      href: m365bp-increase-protection.md
+- name: إعداد الأجهزة
+  items:
+    - name: إعداد المصادقة متعددة العوامل
+      href: m365bp-multifactor-authentication.md
+    - name: إعداد أجهزة Windows مدارة
+      href: ../business/set-up-windows-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: إعداد الأجهزة المحمولة
+      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: حماية أجهزة الكمبيوتر الشخصية و Mac غير التي تم تدراجها
+      href: m365bp-protect-pcs-macs.md
+- name: حماية البريد الإلكتروني
+  items:
+    - name: الحماية من التصيد الاحتيالي وهجمة أخرى
+      href: m365-campaigns-phishing-and-attacks.md
+    - name: إرسال بريد إلكتروني مشفر
+      href: send-encrypted-email.md
+- name: التعاون في العمل ومشاركته بأمان
+  items:
+    - name: إنشاء Teams للتعاون
+      href: create-teams-for-collaboration.md
+    - name: إعداد الاجتماعات
+      href: set-up-meetings.md
+    - name: مشاركة الملفات ومقاطع الفيديو
+      href: share-files-and-videos.md
+    - name: إنشاء موقع اتصالات لمنظمتك
+      href: create-communications-site.md
+- name: حماية الأجهزة باستخدام Defender for Business
+  items:
+    - name: الأجهزة المجهزة على Microsoft Defender for Business
+      href: m365bp-onboard-devices-mdb.md
+    - name: مراجعة سياسات الأجهزة وتحريرها
+      href: m365bp-view-edit-create-mdb-policies.md
+    - name: إدارة مجموعات الأجهزة
+      href: m365bp-device-groups-mdb.md
+- name: إعادة تعيين البيانات أو إزالتها من الأجهزة
+  items:
+    - name: إزالة البيانات من الأجهزة
+      href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: إعادة تعيين الأجهزة إلى إعدادات المصنع
+      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: إدارة أحداث الأمان
+  items:
+    - name: مراجعة إجراءات المعالجة على الأجهزة
+      href: m365bp-review-remediation-actions-devices.md
+    - name: الاستجابة إلى حساب بريد إلكتروني م اختراق
+      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: المرجع
+  items:
+    - name: Microsoft Defender for Business
+      href: ../security/defender-business/index.yml
