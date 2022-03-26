@@ -1,0 +1,52 @@
+- name: Microsoft 365 الأمان
+  href: index.yml
+  expanded: true
+  items:
+    - name: بدء العمل
+      items:
+        - name: Microsoft 365 نشر الثقة الصفرية
+          href: microsoft-365-zero-trust.md
+        - name: أهم المهام لدعم العمل من المنزل
+          href: top-security-tasks-for-remote-work.md
+    - name: تكوينات الوصول إلى الأجهزة وهوية الثقة الصفرية
+      items:
+        - name: نظرة عامة
+          href: ./office-365-security/microsoft-365-policies-configurations.md
+        - name: عمل المتطلبات الأساسية
+          href: ./office-365-security/identity-access-prerequisites.md
+        - name: ونهج الوصول إلى الأجهزة والهوية الشائعة
+          href: ./office-365-security/identity-access-policies.md
+        - name: سياسات المستخدمين الضيوف والخارجيين
+          href: ./office-365-security/identity-access-policies-guest-access.md
+        - name: سياسات الوصول Teams المستحسنة
+          href: ./office-365-security/teams-access-policies.md
+        - name: سياسات الوصول Exchange المستحسنة
+          href: ./office-365-security/secure-email-recommended-policies.md
+        - name: سياسات الوصول SharePoint المستحسنة
+          href: ./office-365-security/sharepoint-file-access-policies.md
+        - name: سياسات "Defender for Cloud Apps" المستحسنة لتطبيقات SaaS
+          href: ./office-365-security/mcas-saas-access-policies.md
+        - name: تقييم الوصول المستمر
+          href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
+    - name: Microsoft 365 Defender المستندات
+      items:
+        - name: Microsoft 365 Defender
+          href: ./defender/index.yml
+        - name: Defender for Office 365
+          href: ./office-365-security/index.yml
+        - name: Defender لنقطة النهاية
+          href: ./defender-endpoint/index.yml
+        - name: Defender for Identity
+          href: /defender-for-identity
+        - name: Defender for Cloud Apps
+          href: /cloud-app-security
+        - name: Defender for Business
+          href: ./defender-business/index.yml
+    - name: Microsoft 365 Enterprise
+      href: ../enterprise/index.yml
+    - name: Microsoft 365 للأعمال
+      href: ./index.yml
+    - name: Microsoft 365 التوافق
+      href: ../compliance/index.yml
+    - name: إدارة المحتوى النشط في Office المستندات
+      href: active-content-in-trusted-docs.md

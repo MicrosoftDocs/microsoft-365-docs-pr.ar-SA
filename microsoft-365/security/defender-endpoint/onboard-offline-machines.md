@@ -1,0 +1,78 @@
+---
+title: الأجهزة المجهزة بدون اتصال بالإنترنت إلى Microsoft Defender لنقطة النهاية
+ms.reviewer: ''
+description: الأجهزة المجهزة بدون اتصال بالإنترنت بحيث يمكنها إرسال بيانات المستشعر إلى مستشعر نقطة النهاية ل Microsoft Defender
+keywords: onboard, servers, vm, on-premises, oms gateway, log analytics, azure log analytics, mma
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: db219fe7ce39ae59668cedff10f03e931ddba416
+ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.translationtype: MT
+ms.contentlocale: ar-SA
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "63569810"
+---
+# <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>الأجهزة المجهزة بدون اتصال بالإنترنت إلى Microsoft Defender لنقطة النهاية
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**ينطبق على:**
+- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+
+للأجهزة المجهزة بدون اتصال بالإنترنت، ستحتاج إلى اتخاذ الخطوات العامة التالية:
+
+> [!IMPORTANT] 
+> تنطبق الخطوات أدناه فقط على الأجهزة التي تعمل بالإصدارات السابقة من Windows مثل: Windows Server 2016 والإصدارات السابقة Windows 8.1 والإصدارات السابقة.
+
+> [!NOTE]
+> - لا يمكن استخدام خادم بوابة OMS كوكيل للأجهزة Windows أو Windows غير المتصلة عند تكوينها عبر سجل 'TelemetryProxyServer' أو GPO.
+> - بالنسبة Windows أو Windows Server - بينما يمكنك استخدام TelemetryProxyServer، يجب أن يشير إلى جهاز وكيل قياسي أو جهاز.
+> - بالإضافة إلى Windows أو Windows أن يتمكن الخادم في البيئات غير المتصلة من تحديث قوائم الثقة بالشهادات دون اتصال عبر ملف داخلي أو خادم ويب.
+> - لمزيد من المعلومات حول تحديث عناوين CTLs دون اتصال، راجع تكوين ملف أو خادم [ويب لتنزيل ملفات CTL](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files).
+
+للحصول على مزيد من المعلومات حول أساليب الboard، راجع المقالات التالية:
+- [الإصدارات السابقة من Windows](/microsoft-365/security/defender-endpoint/onboard-downlevel)
+- [خوادم على لوحة لخدمة Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
+- [تكوين إعدادات اتصال الإنترنت ووكيل الجهاز](/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
+
+## <a name="on-premises-devices"></a>الأجهزة الداخلية
+
+- إعداد Azure Log Analytics (المعروف سابقا باسم بوابة OMS) للعمل كوكيل أو مركز:
+  - [وكيل Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+  - [تثبيت عامل مراقبة Microsoft (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) وتكوينه يشير إلى مفتاح Defender for Endpoint Workspace & ID
+
+[الإصدارات السابقة من Windows](onboard-downlevel.md)
+
+- الأجهزة غير المتصلة في شبكة Azure Log Analytics نفسها
+  - تكوين MMA لتشير إلى:
+    - Azure Log Analytics IP كوكيل
+    - Defender لمفتاح مساحة عمل نقطة النهاية & ID
+
+## <a name="azure-virtual-machines"></a>أجهزة Azure الظاهرية
+
+- إعداد بوابة Azure Log Analytics (المعروفة سابقا باسم بوابة OMS) للعمل كوكيل أو مركز:
+    - [بوابة تحليلات سجل Azure](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+    - [تثبيت عامل مراقبة Microsoft (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) وتكوينه يشير إلى مفتاح Defender for Endpoint Workspace & ID
+- أجهزة VMs Azure غير المتصلة في نفس شبكة بوابة OMS
+    - تكوين Azure Log Analytics IP كوكيل
+    - مفتاح مساحة عمل Azure Log Analytics & ID
+- Microsoft Defender for Cloud
+    - [مساحة عمل تحليلات \> سجل نهج الأمان](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - [الكشف عن المخاطر \> السماح ل Defender لنقطة النهاية بالوصول إلى بياناتي](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+
+    لمزيد من المعلومات، راجع [استخدام سياسات الأمان](/azure/security-center/tutorial-security-policy).

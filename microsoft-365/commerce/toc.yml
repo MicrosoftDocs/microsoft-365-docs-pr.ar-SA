@@ -1,0 +1,84 @@
+- name: إدارة اشتراكات الأعمال
+  href: index.yml
+- name: Microsoft 365 مركز تعليمات المسؤول
+  href: ../admin/index.yml
+- name: تجربة أو شراء
+  items:
+    - name: حاول شراء Microsoft 365
+      href: try-or-buy-microsoft-365.md
+    - name: شراء الوظائف الإضافية أو إدارتها
+      href: buy-or-edit-an-add-on.md
+    - name: المساعدة في العمل Microsoft 365
+      href: ../admin/misc/business-assist.md
+    - name: إضافة مساحة تخزين
+      href: add-storage-space.md
+- name: إدارة الاشتراكات
+  items:
+    - name: ترقية الاشتراكات
+      href: subscriptions/upgrade-to-different-plan.md
+    - name: تجديد اشتراكك
+      href: subscriptions/renew-your-subscription.md
+    - name: إعادة تنشيط الاشتراك
+      href: subscriptions/reactivate-your-subscription.md
+    - name: إلغاء اشتراكك
+      href: subscriptions/cancel-your-subscription.md
+    - name: ماذا لو تنتهي صلاحية اشتراكي؟
+      href: subscriptions/what-if-my-subscription-expires.md
+    - name: إدارة اشتراكات تطبيقات  الأطراف الخارجية
+      href: manage-saas-apps.md
+    - name: إدارة عمليات شراء الخدمة الذاتية (المستخدمون)
+      href: subscriptions/manage-self-service-purchases-users.md
+    - name: إدارة عمليات شراء الخدمة الذاتية (المسؤول)
+      href: subscriptions/manage-self-service-purchases-admins.md
+- name: إدارة التراخيص
+  items:
+    - name: شراء تراخيص الاشتراك أو إزالتها
+      href: licenses/buy-licenses.md
+    - name: تعيين تراخيص للمستخدمين
+      href: ../admin/manage/assign-licenses-to-users.md
+    - name: اخطاء تعيين التراخيص من المستخدمين
+      href: ../admin/manage/remove-licenses-from-users.md
+    - name: نقل المستخدمين إلى اشتراك مختلف
+      href: subscriptions/move-users-different-subscription.md
+    - name: إدارة تراخيص تطبيق ISV
+      href: licenses/manage-third-party-app-licenses.md
+    - name: إدارة سياسات المطالبة التلقائية
+      href: licenses/manage-auto-claim-policies.md
+    - name: فهم الاشتراكات والتراخيص
+      href: licenses/subscriptions-and-licenses.md
+- name: الفواتير والمدفوعات
+  items:
+    - name: عرض الفاتورة أو الفاتورة
+      href: billing-and-payments/view-your-bill-or-invoice.md
+    - name: فهم الفاتورة أو الفاتورة
+      href: billing-and-payments/understand-your-invoice2.md
+    - name: الدفع مقابل اشتراكك
+      href: billing-and-payments/pay-for-your-subscription.md
+    - name: إدارة طرق الدفع
+      href: billing-and-payments/manage-payment-methods.md
+    - name: تغيير معدل تكرار الفوترة
+      href: billing-and-payments/change-payment-frequency.md
+    - name: إدارة إعلامات الفوترة ومرفقات الفواتير
+      href: billing-and-payments/manage-billing-notifications.md
+    - name: فهم ملفات تعريف الفوترة
+      href: billing-and-payments/manage-billing-profiles.md
+    - name: تغيير عناوين الفوترة
+      href: billing-and-payments/change-your-billing-addresses.md
+    - name: حول التوجيه 2 لخدمات الدفع ومصادقة العملاء القوية
+      href: billing-and-payments/psd2.md
+    - name: طلب رصيد لضريبة الخصم على حسابك
+      href: billing-and-payments/withholding-tax-credit-global.md
+- name: حسابات الفوترة
+  items:
+    - name: فهم حسابات الفوترة
+      href: manage-billing-accounts.md
+    - name: إقران مستأجر مع حساب الفوترة
+      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
+- name: إدارة العلاقات مع الشركاء
+  href: manage-partners.md
+- name: مراجعة امتيازات الشريك
+  href: review-partner-admin-privileges.md
+- name: إغلاق حسابك
+  href: close-your-account.md
+- name: الاتصال بالدعم
+  href: ../admin/get-help-support.md

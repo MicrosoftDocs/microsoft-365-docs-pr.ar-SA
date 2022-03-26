@@ -1,0 +1,131 @@
+- name: Microsoft 365 التدريب على الشركات الصغيرة
+  href: index.yml
+  items:
+    - name: بدء العمل
+      items:
+        - name: نظرة عامة حول الإعداد
+          href: setup-overview.md
+        - name: اختيار اشتراك
+          href: Choose-subscription.md
+    - name: إعداد السحابة
+      items:
+        - name: التسجيل للحصول على اشتراك
+          href: sign-up.md
+        - name: إعداد الخدمة
+          href: set-up.md
+        - name: أجهزة Windows 10 آمنة
+          href: secure-win10-pcs.md
+        - name: إنشاء موقع ويب GoDaddy
+          href: create-web-site.md
+    - name: إعداد الجهاز
+      items:
+        - name: الترقية إلى Windows 10 Pro
+          href: upgrade.md
+        - name: الاتصال الكمبيوتر الشخصي Microsoft 365
+          href: connect.md
+        - name: تثبيت Microsoft Office التطبيق
+          href: install-office.md
+        - name: استيراد البريد وإعادة توجيهه
+          href: import-email.md
+    - name: Mobile
+      items:
+        - name: العمل من أي مكان
+          href: work-from-anywhere.md
+        - name: تثبيت Office على Android
+          href: 'https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f'
+        - name: تثبيت Office على نظام التشغيل iOS
+          href: 'https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f'
+        - name: الحصول على تطبيق الأجهزة المحمولة "المسؤول"
+          href: admin-mobile.md
+    - name: التعاون في العمل
+      items:
+        - name: استخدم Outlook Teams
+          href: collab-outlook-teams.md
+        - name: بدء العمل مع Teams
+          href: 'https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937'
+        - name: إنشاء عنوان بريد إلكتروني لمجموعة
+          href: 'https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c'
+        - name: إنشاء تقويم مشترك
+          href: 'https://support.microsoft.com/office/353ed2c1-3ec5-449d-8c73-6931a0adab88'
+        - name: إنشاء فريق على مستوى المؤسسة
+          href: /microsoftteams/create-an-org-wide-team
+        - name: إنشاء فريق مع ضيوف
+          href: 'https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f'
+        - name: الانضمام إلى فريق كضيف
+          href: /microsoftteams/guest-experience
+        - name: الدردشة مع الموظفين والعملاء
+          href: 'https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92'
+        - name: جدولة اجتماع مع الضيوف
+          href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
+        - name: الانضمام إلى اجتماع مع الضيوف
+          href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
+    - name: مساحة التخزين السحابية
+      items:
+        - name: نظرة عامة حول المشاركة
+          href: overview-file-sharing.md
+        - name: مكان تخزين الملفات
+          href: 'https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e'
+        - name: مشاركة الملفات بأمان خارجيا
+          href: 'https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07'
+        - name: مشاركة الملفات بسهولة خارجيا
+          href: 'https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07'
+    - name: Business Voice
+      items:
+        - name: نظرة عامة على صوت العمل
+          href: business-voice.md
+        - name: شراء الوظائف الإضافية Business Voice
+          href: buy-business-voice.md
+    - name: تطبيقات الإنتاجية
+      items:
+        - name: نظرة عامة على Bookings
+          href: 'https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5'
+    - name: إدارة الخدمات
+      items:
+        - name: ما هو المسؤول
+          href: what-is-admin.md
+        - name: عرض الفاتورة أو تنزيلها أو طباعتها
+          href: view-bill.md
+        - name: شراء تراخيص جديدة
+          href: buy-licenses.md
+        - name: إزالة التراخيص الموجودة
+          href: remove-existing-licenses.md
+        - name: تحديث طريقة الدفع
+          href: update-payment.md
+        - name: إعادة تعيين كلمات مرور المستخدمين
+          href: reset-user-passwords.md
+        - name: إعداد إعادة تعيين كلمة مرور الخدمة الذاتية
+          href: set-up-self-serve-password-reset.md
+        - name: إضافة مستخدم
+          href: add-user.md
+        - name: إضافة مسؤول آخر
+          href: add-admin.md
+        - name: تغيير اسم مستخدم أو بريد إلكتروني
+          href: change-user-name-email.md
+        - name: نقل المستخدمين إلى اشتراك مختلف
+          href: change-subscription.md
+        - name: إنشاء توقيع على مستوى الشركة
+          href: company-wide-signature.md
+        - name: العمل على تقرير الاستخدام
+          href: act-on-report.md
+        - name: إعداد عنوان بريد إلكتروني جديد للأعمال
+          href: set-up-a-new-business-email-address.md
+    - name: إدارة الأجهزة
+      items:
+        - name: أجهزة Windows 10 Pro آمنة
+          href: secure-win-10-pro-devices.md
+        - name: تأمين Office على iOS
+          href: secure-office-on-ios.md
+    - name: توافق & الأمان
+      items:
+        - name: نظرة عامة Microsoft 365 Business Premium الأمان
+          href: overview-m365-security.md
+        - name: تأمين حسابات الموظفين باستخدام MFA
+          href: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
+        - name: إعداد تسجيل الدخول بعاملين على هاتفك
+          href: 'https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14'
+    - name: الدعم
+      items:
+        - name: البحث عن المستندات والتدريب
+          href: ../admin/index.yml
+    - name: التبديل من Google Workspace
+      href: moveto-microsoft-365/move-from-google-workspace-overview.md

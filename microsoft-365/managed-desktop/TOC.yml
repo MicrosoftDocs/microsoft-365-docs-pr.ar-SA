@@ -1,0 +1,195 @@
+- name: سطح المكتب المدار من Microsoft
+  href: index.yml
+  items:
+    - name: ما هو Microsoft Managed Desktop؟
+      href: intro/index.md
+      items:
+        - name: سطح المكتب المدار من Microsoft Windows 11
+          href: intro/win11-overview.md
+        - name: الأدوار والمسؤوليات
+          href: intro/roles-and-responsibilities.md
+        - name: التقنيات في Microsoft Managed Desktop
+          href: intro/technologies.md
+        - name: سطح المكتب المدار من Microsoft و ITIL
+          href: MMD-and-ITSM.md
+        - name: التوافق
+          href: intro/compliance.md
+    - name: وصف خدمة سطح المكتب المدار من Microsoft
+      href: service-description/index.md
+      items:
+        - name: المناطق المعتمدة
+          href: service-description/regions-languages.md
+        - name: الأجهزة
+          href: null
+          items:
+            - name: متطلبات الجهاز
+              href: service-description/device-requirements.md
+            - name: صور الجهاز
+              href: service-description/device-images.md
+            - name: أسماء الأجهزة
+              href: service-description/device-names.md
+            - name: خدمات الأجهزة
+              href: service-description/device-services.md
+            - name: ملفات تعريف الجهاز
+              href: service-description/profiles.md
+            - name: مجموعات نشر الأجهزة
+              href: service-description/deployment-groups.md
+            - name: تكوين الجهاز
+              href: service-description/device-policies.md
+        - name: تقنيات الأمان
+          href: service-description/security.md
+        - name: عمليات الأمان
+          href: service-description/security-operations.md
+        - name: الخصوصية
+          href: service-description/privacy-personal-data.md
+        - name: التحديثات
+          href: service-description/updates.md
+        - name: دعم المسؤول
+          href: service-description/support.md
+        - name: دعم المستخدم
+          href: service-description/user-support.md
+        - name: العمليات والمراقبة
+          href: service-description/operations-and-monitoring.md
+        - name: سجلات التشخيص
+          href: service-description/diagnostic-logs.md
+        - name: متطلبات التطبيق
+          href: service-description/mmd-app-requirements.md
+        - name: عنصر تحكم التطبيق
+          href: service-description/app-control.md
+        - name: تغييرات الخدمة والاتصالات
+          href: service-description/servicechanges.md
+        - name: استثناءات لخطة الخدمة
+          href: service-description/customizing.md
+        - name: الأجهزة المشتركة
+          href: service-description/shared-devices.md
+    - name: الاستعداد للتسجيل في Microsoft Managed Desktop
+      href: get-ready/index.md
+      items:
+        - name: المتطلبات الأساسية لسطح المكتب المدار من Microsoft
+          href: get-ready/prerequisites.md
+        - name: استخدام أدوات تقييم الجهوزية
+          href: get-ready/readiness-assessment-tool.md
+          items:
+            - name: إصلاح المشاكل التي عثرت عليها أداة تقييم الجهوزية عبر الإنترنت
+              href: get-ready/readiness-assessment-fix.md
+            - name: مدقق تقييم الجهوزية القابل للتنزيل
+              href: get-ready/readiness-assessment-downloadable.md
+        - name: المتطلبات الأساسية الخاصة وحسابات الضيوف
+          href: get-ready/guest-accounts.md
+        - name: إعداد الشبكة
+          href: get-ready/network.md
+        - name: إعداد الشهادات وملفات تعريف الشبكة
+          href: get-ready/certs-wifi-lan.md
+        - name: إعداد الوصول إلى الموارد المحلية
+          href: get-ready/authentication.md
+        - name: تحضير التطبيقات
+          href: get-ready/apps.md
+          items:
+            - name: العمل مع Microsoft Consulting Services
+              href: get-ready/apps-MCS.md
+        - name: إعداد محركات أقراص تم تعيينها
+          href: get-ready/mapped-drives.md
+        - name: إعداد موارد الطباعة
+          href: get-ready/printing.md
+        - name: أسماء أجهزة العنوان
+          href: get-ready/address-device-names.md
+    - name: بدء تشغيل Microsoft Managed Desktop
+      href: get-started/index.md
+      items:
+        - name: الوصول إلى مدخل المسؤول
+          href: get-started/access-admin-portal.md
+        - name: إضافة جهات اتصال المسؤول والتحقق منها في مدخل المسؤول
+          href: get-started/add-admin-contacts.md
+        - name: ضبط الإعدادات بعد التسجيل
+          href: get-started/conditional-access.md
+        - name: تعيين التراخيص
+          href: get-started/assign-licenses.md
+        - name: نشر Intune Company Portal
+          href: get-started/company-portal.md
+        - name: تمكين تجوال حالة المؤسسة
+          href: get-started/enterprise-state-roaming.md
+        - name: تعريف تجربة المستخدم
+          href: get-started/localization.md
+        - name: التحقق من صحة الأجهزة الجديدة
+          href: get-started/validate-device.md
+        - name: تحضير الأجهزة
+          href: null
+          items:
+            - name: بدء العمل
+              href: get-started/prepare-devices.md
+            - name: تسجيل الجهاز
+              href: null
+              items:
+                - name: أساليب تسجيل الجهاز
+                  href: get-started/device-registration-methods.md
+                  items:
+                    - name: التسجيل اليدوي
+                      href: get-started/manual-registration.md
+                    - name: تسجيل الشريك
+                      href: get-started/partner-registration.md
+                    - name: التسجيل اليدوي للأجهزة الموجودة
+                      href: get-started/manual-registration-existing-devices.md
+        - name: تمكين ميزات دعم المستخدم
+          href: get-started/enable-support.md
+        - name: اجهز المستخدمين لاستخدام الأجهزة
+          href: get-started/get-started-devices.md
+        - name: تجربة التشغيل الأول مع Autopilot وصفحة حالة التسجيل
+          href: get-started/esp-first-run.md
+        - name: Windows 10 موقع الخدمة
+          href: get-started/device-location.md
+        - name: بدء استخدام عنصر تحكم التطبيق
+          href: get-started/get-started-app-control.md
+        - name: نشر التطبيقات
+          href: get-started/deploy-apps.md
+          items:
+            - name: Microsoft Project و Microsoft Visio
+              href: get-started/project-visio.md
+            - name: Microsoft Edge
+              href: get-started/edge-browser-app.md
+            - name: Microsoft 365 Apps للمؤسسات
+              href: get-started/m365-apps.md
+            - name: Microsoft Teams
+              href: get-started/teams.md
+            - name: Microsoft OneDrive
+              href: get-started/onedrive.md
+    - name: العمل مع Microsoft Managed Desktop
+      href: working-with-managed-desktop/index.md
+      items:
+        - name: العمل على التقارير
+          href: working-with-managed-desktop/reports.md
+          items:
+            - name: تقرير مخزون الجهاز
+              href: working-with-managed-desktop/device-inventory-report.md
+            - name: تقرير حالة الجهاز
+              href: working-with-managed-desktop/device-status-report.md
+            - name: Windows تحديثات الأمان
+              href: working-with-managed-desktop/security-updates-report.md
+            - name: تقرير استخدام التطبيق
+              href: working-with-managed-desktop/app-usage-report.md
+            - name: تقرير مقاييس الخدمة
+              href: working-with-managed-desktop/service-metrics-report.md
+        - name: دعم المسؤول
+          href: working-with-managed-desktop/admin-support.md
+        - name: دعم المستخدم
+          href: working-with-managed-desktop/end-user-support.md
+        - name: إدارة التطبيقات
+          href: working-with-managed-desktop/manage-apps.md
+        - name: استخدام عنصر تحكم التطبيق
+          href: working-with-managed-desktop/work-with-app-control.md
+        - name: تغيير ملف تعريف الجهاز
+          href: working-with-managed-desktop/change-device-profile.md
+        - name: تعيين أجهزة إلى مجموعة النشر
+          href: working-with-managed-desktop/assign-deployment-group.md
+        - name: إزالة الأجهزة
+          href: working-with-managed-desktop/remove-devices.md
+        - name: إعدادات قابلة للتكوين
+          href: working-with-managed-desktop/config-setting-overview.md
+          items:
+            - name: مرجع الإعدادات القابلة للتكوين
+              href: working-with-managed-desktop/config-setting-ref.md
+            - name: نشر إعدادات قابلة للتكوين
+              href: working-with-managed-desktop/config-setting-deploy.md
+        - name: معاينة واختبار Windows 11 سطح المكتب المدار من Microsoft
+          href: working-with-managed-desktop/test-win11-mmd.md
+    - name: تغيير المحفوظات
+      href: change-history-managed-desktop.md

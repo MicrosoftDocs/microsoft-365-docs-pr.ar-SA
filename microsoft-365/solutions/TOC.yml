@@ -1,0 +1,398 @@
+- name: Microsoft 365 حل وهندسة
+  href: index.yml
+  displayName: Home
+- name: توضيحات الحل والهندسة
+  items:
+    - name: Microsoft 365 توضيحية للإنتاجية
+      href: productivity-illustrations.md
+    - name: نماذج هندسة سحابة Microsoft
+      href: cloud-architecture-models.md
+    - name: الرسوم البيانية للمعلومات للمستخدمين
+      href: infographics-for-users.md
+    - name: الأيقونات والقوالب الهندسية
+      href: architecture-icons-templates.md
+- name: Microsoft 365 الأساسات
+  items:
+    - name: إعداد البنية الأساسية للعمل المختلط
+      items:
+        - name: نظرة عامة
+          href: empower-people-to-work-remotely.md
+        - name: الخطوة 1. زيادة أمان تسجيل الدخول
+          href: empower-people-to-work-remotely-secure-sign-in.md
+        - name: الخطوة 2. توفير الوصول عن بعد
+          href: empower-people-to-work-remotely-remote-access.md
+        - name: الخطوة 3. نشر الأمان والتوافق
+          href: empower-people-to-work-remotely-security-compliance.md
+        - name: الخطوة 4. إدارة نقاط النهاية
+          href: empower-people-to-work-remotely-manage-endpoints.md
+        - name: الخطوة 5. نشر تطبيقات وخدمات الإنتاجية
+          href: empower-people-to-work-remotely-teams-productivity-apps.md
+        - name: الخطوة 6. تدريب العاملين
+          href: empower-people-to-work-remotely-train-monitor-usage.md
+    - name: إدارة نقاط النهاية باستخدام Intune Microsoft 365
+      items:
+        - name: نظرة عامة
+          href: manage-devices-with-intune-overview.md
+        - name: الخطوة 1. تنفيذ سياسات حماية التطبيقات
+          href: manage-devices-with-intune-app-protection.md
+        - name: الخطوة 2. تسجيل الأجهزة في الإدارة
+          href: manage-devices-with-intune-enroll.md
+        - name: الخطوة 3. إعداد سياسات التوافق
+          href: manage-devices-with-intune-compliance-policies.md
+        - name: الخطوة 4. يتطلب أجهزة سليمة ومتوافقة
+          href: manage-devices-with-intune-require-compliance.md
+        - name: الخطوة 5. نشر ملفات تعريف الجهاز
+          href: manage-devices-with-intune-configuration-profiles.md
+        - name: الخطوة 6. مراقبة مخاطر الأجهزة وتوافقها مع خطوط الأمان الأساسية
+          href: manage-devices-with-intune-monitor-risk.md
+        - name: الخطوة 7. تنفيذ منع فقدان البيانات (DLP) باستخدام قدرات حماية المعلومات
+          href: manage-devices-with-intune-dlp-mip.md
+    - name: إعداد التعاون الآمن باستخدام Microsoft 365
+      items:
+        - name: نظرة عامة
+          href: setup-secure-collaboration-with-teams.md
+        - name: تكوين ثلاثة مستويات من الحماية باستخدام Microsoft Teams
+          items:
+            - name: ثلاث مستويات من نظرة عامة حول الحماية
+              href: configure-teams-three-tiers-protection.md
+            - name: تكوين حماية الأساس
+              href: configure-teams-baseline-protection.md
+            - name: تكوين الحماية الحساسة
+              href: configure-teams-sensitive-protection.md
+            - name: تكوين حماية عالية الحساسية
+              href: configure-teams-highly-sensitive-protection.md
+            - name: تكوين فريق مع عزل الأمان
+              href: secure-teams-security-isolation.md
+        - name: تكوين المشاركة الخارجية
+          items:
+            - name: نظرة عامة حول المشاركة الخارجية
+              href: collaborate-with-people-outside-your-organization.md
+            - name: سيناريوهات التكوين
+              items:
+                - name: التعاون في العمل على المستندات
+                  href: collaborate-on-documents.md
+                - name: التعاون في العمل في موقع
+                  href: collaborate-in-site.md
+                - name: التعاون في العمل كفريق
+                  href: collaborate-as-team.md
+                - name: إنشاء إكسترانت B2B
+                  href: b2b-extranet.md
+                - name: تقييد المشاركة
+                  href: microsoft-365-limit-sharing.md
+            - name: سيناريوهات الأمان
+              items:
+                - name: المشاركة غير المأكة
+                  href: best-practices-anonymous-sharing.md
+                - name: الحد من التعرض العرضي
+                  href: share-limit-accidental-exposure.md
+                - name: حماية بيئة مشاركة الضيوف
+                  href: create-secure-guest-sharing-environment.md
+            - name: مرجع المشاركة الخارجية
+              href: microsoft-365-guest-settings.md
+    - name: نشر الحماية من برامج الفدية الضارة لمستأجر Microsoft 365 الخاص بك
+      items:
+        - name: نظرة عامة
+          href: ransomware-protection-microsoft-365.md
+        - name: الخطوة 1. تكوين خطوط الأمان الأساسية
+          href: ransomware-protection-microsoft-365-security-baselines.md
+        - name: الخطوة 2. نشر الكشف عن الهجمات والاستجابة لها
+          href: ransomware-protection-microsoft-365-attack-detection-response.md
+        - name: الخطوة 3. حماية الهويات
+          href: ransomware-protection-microsoft-365-identities.md
+        - name: الخطوة 4. حماية الأجهزة
+          href: ransomware-protection-microsoft-365-devices.md
+        - name: الخطوة 5. حماية المعلومات
+          href: ransomware-protection-microsoft-365-information.md
+    - name: نشر حماية المعلومات لأنظمة خصوصية البيانات
+      items:
+        - name: نظرة عامة
+          href: information-protection-deploy.md
+        - name: الخطة
+          href: information-protection-deploy-assess.md
+        - name: تعقب
+          href: information-protection-deploy-compliance.md
+        - name: منع
+          href: information-protection-deploy-identity-device-threat.md
+        - name: الحماية
+          href: information-protection-deploy-protect-information.md
+        - name: الاحتفاظ
+          href: information-protection-deploy-govern.md
+        - name: التحقق
+          href: information-protection-deploy-monitor-respond.md
+- name: حلول وسيناريوهات حمل العمل
+  items:
+    - name: نظرة عامة
+      href: ./index.yml
+    - name: الإدارة وا الترحيل
+      items:
+        - name: إدارة المستأجر
+          items:
+            - name: نظرة عامة
+              href: tenant-management-overview.md
+            - name: الخطوة 1. المستأجرون
+              href: tenant-management-tenants.md
+            - name: الخطوة 2. الشبكات المثلى
+              href: tenant-management-networking.md
+            - name: الخطوة 3. الهوية
+              href: tenant-management-identity.md
+            - name: الخطوة 4. الترحيل
+              href: tenant-management-migration.md
+            - name: الخطوة 5. إدارة الأجهزة والتطبيقات
+              href: tenant-management-device-management.md
+            - name: إزالة موظف سابق
+              items:
+                - name: نظرة عامة
+                  href: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: الخطوة 1. منع موظف من تسجيل الدخول وحظر الوصول إلى Microsoft 365 الخدمات
+                  href: ../admin/add-users/remove-former-employee-step-1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: الخطوة 2. حفظ محتويات علبة بريد موظف سابق
+                  href: ../admin/add-users/remove-former-employee-step-2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: الخطوة 3. مسح الجهاز المحمول الخاص بالموظف السابق وحظره
+                  href: ../admin/add-users/remove-former-employee-step-3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: الخطوة 4. إعادة توجيه بريد إلكتروني لموظف سابق إلى موظف آخر أو تحويله إلى علبة بريد مشتركة
+                  href: ../admin/add-users/remove-former-employee-step-4.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: الخطوة 5. منح موظف آخر حق الوصول OneDrive Outlook البيانات
+                  href: ../admin/add-users/remove-former-employee-step-5.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: الخطوة 6. إزالة Microsoft 365 من موظف سابق
+                  href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: الخطوة 7. حذف حساب مستخدم لموظف سابق
+                  href: ../admin/add-users/remove-former-employee-step-7.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: ترحيل المحتوى إلى Microsoft 365
+          href: /sharepointmigration/migrate-to-sharepoint-online?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: ترحيل أسهم الملفات إلى Microsoft 365
+          items:
+            - name: نظرة عامة
+              href: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: 'الخطوة 1: إعداد الوكلاء'
+              href: /sharepointmigration/mm-setup-clients?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: 'الخطوة 2: إنشاء مهمة ترحيل'
+              href: /sharepointmigration/mm-how-to-use?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: 'الخطوة 3: المراقبة والتقارير'
+              href: /sharepointmigration/mm-reports?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+    - name: الاجتماعات والاتصالات
+      items:
+        - name: نشر Teams في Microsoft 365
+          items:
+            - name: نظرة عامة
+              href: deploy-voice.md
+            - name: الخطوة 1. اختيار الحل الصوتي
+              href: /MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: الخطوة 2. - إعداد نظام الهاتف
+              href: /MicrosoftTeams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: الخطوة 3. - إعداد اتصال PSTN
+              items:
+                - name: الخيار "خطة الاتصال"
+                  href: /MicrosoftTeams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: خيار التوجيه المباشر
+                  href: /MicrosoftTeams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: دراسة حالة للشركة متعددة الجنسيات
+              href: /MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: اتصالات الشركات
+          items:
+            - name: نظرة عامة على اتصالات الشركة
+              href: /sharepoint/corporate-communications-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+              items:
+                - name: 'الخطوة 1: تخطيط استراتيجية الاتصالات'
+                  href: /sharepoint/plan-communication-strategy?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: 'الخطوة 2: مراجعة أدوات الاتصال'
+                  href: /sharepoint/review-communication-apps?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: 'الخطوة 3: تحديد نطاق الجمهور وتحديده'
+                  href: /sharepoint/audience-profile?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: 'الخطوة 4: اختيار حل الاتصالات'
+                  href: /sharepoint/choose-communication-method?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: إعداد Viva Connections
+              href: /sharepoint/guide-to-setting-up-viva-connections?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: الحصول على موقع المنزل للانترانت
+              href: /sharepoint/home-site-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: توزيع أخبار المؤسسة
+              href: /sharepoint/distribute-corporate-news-to-your-organization?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: الاتصال قادة المؤسسة ومنظمتك
+              href: /sharepoint/leadership-connection?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: عقد قاعة مدينة باستخدام Yammer
+              href: /sharepoint/hold-town-hall-using-yammer?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: إنشاء تجارب التعلم والتدريب
+              href: /sharepoint/build-learning-and-training-experiences-for-employees?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+    - name: العمل الجماعي والتعاون
+      items:
+        - name: إدارة العقود الخاصة بأعمالك
+          items:
+            - name: نظرة عامة
+              href: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: الخطوة 1. استخدام SharePoint Syntex
+              href: ../contentunderstanding/solution-manage-contracts-step1.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: الخطوة 2. استخدام Microsoft Teams
+              href: ../contentunderstanding/solution-manage-contracts-step2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: الخطوة 3. Power Automate
+              href: ../contentunderstanding/solution-manage-contracts-step3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: إنشاء شبكة ذكية SharePoint الإنترانت
+          items:
+            - name: نظرة عامة
+              href: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: كيفية التفكير في الإنترانت الذكي
+              href: /sharepoint/trad-vs-modern-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: خارطة طريق إنترانت
+              items:
+                - name: خارطة طريق إنترانت
+                  href: /sharepoint/intranet-team-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: أدوار الإنترانت ومهامه
+                  href: /sharepoint/intranet-roles-tasks?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+                - name: ملخص خارطة طريق إنترانت
+                  href: /sharepoint/intranet-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: تخطيط الإنترانت
+              href: /sharepoint/plan-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: الاعتبارات عند التخطيط ل إنترانت عام
+              href: /sharepoint/set-up-global-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: إدارة الإنترانت
+              href: /sharepoint/intranet-governance?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: الاتصال في مكان العمل
+              href: /sharepoint/workplace-communications?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: إدارة التعاون
+          items:
+            - name: نظرة عامة
+              href: collaboration-governance-overview.md
+            - name: إنشاء خطة الإدارة
+              href: collaboration-governance-first.md
+            - name: الإعدادات في الخدمات
+              items:
+                - name: المجموعات ذات SharePoint
+                  href: groups-sharepoint-governance.md
+                - name: المجموعات SharePoint Teams
+                  href: groups-sharepoint-teams-governance.md
+                - name: المجموعات ذات الخدمات الأخرى
+                  href: groups-services-interactions.md
+            - name: وصول
+              href: groups-teams-access-governance.md
+            - name: التوافق
+              href: groups-teams-compliance-governance.md
+            - name: الاتصالات
+              href: groups-teams-communication-governance.md
+            - name: المؤسسة و دورة الحياة
+              items:
+                - name: إدارة المؤسسة و دورة الحياة
+                  href: plan-organization-lifecycle-governance.md
+                - name: إدارة إنشاء المجموعة
+                  href: manage-creation-of-groups.md
+                - name: سياسات التسمية
+                  href: groups-naming-policy.md
+                - name: نهج انتهاء الصلاحية
+                  href: microsoft-365-groups-expiration-policy.md
+                - name: وصول الضيف لكل مجموعة
+                  href: per-group-guest-access.md
+                - name: نهج إرسال باسم
+                  href: allow-members-to-send-as-or-send-on-behalf-of-group.md
+                - name: مجال إنشاء المجموعات
+                  href: choose-domain-to-create-groups.md
+                - name: خيارات نهاية دورة الحياة
+                  href: end-life-cycle-groups-teams-sites-yammer.md
+        - name: التعاون في الملفات SharePoint باستخدام Microsoft 365
+          href: /sharepoint/deploy-file-collaboration
+        - name: OneDrive دليل المؤسسات
+          href: /onedrive/plan-onedrive-enterprise
+    - name: التوافق
+      items:
+        - name: حلول مخاطر Insider في Microsoft 365
+          href: ../compliance/insider-risk-solution-overview.md
+        - name: حلول التدقيق
+          href: ../compliance/auditing-solutions-overview.md
+        - name: حلول eDiscovery في Microsoft 365
+          href: ../compliance/ediscovery.md
+        - name: Microsoft 365 Advanced eDiscovery
+          href: ../compliance/overview-ediscovery-20.md
+        - name: خطط إجراءات التوافق التنظيمية
+          items:
+            - name: ISO - خطة الإجراء الموصى بها
+              href: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: NIST - خطة الإجراء الموصى بها
+              href: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: CCPA - الأسئلة التي يتم طرحها بشكل متكرر
+              href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            - name: GDPR - خطة الإجراء الموصى بها
+              href: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+    - name: الأمان
+      items:
+        - name: Microsoft 365 نشر الثقة الصفرية
+          href: ../security/microsoft-365-zero-trust.md
+        - name: أهم المهام لفرق الأمان لدعم العمل من المنزل
+          href: ../security/top-security-tasks-for-remote-work.md
+        - name: تكوينات الوصول إلى الأجهزة والهوية
+          href: ../security/office-365-security/microsoft-365-policies-configurations.md
+        - name: تقييم التقييم Microsoft 365 Defender
+          href: ../security/defender/eval-overview.md
+        - name: الاستجابة للحادث الأول
+          href: ../security/defender/first-incident-overview.md
+        - name: نشر Microsoft Defender لنقطة النهاية
+          href: ../security/defender-endpoint/deployment-phases.md
+        - name: التبديل من حماية نقطة نهاية غير Microsoft إلى Microsoft Defender لنقطة النهاية
+          href: ../security/defender-endpoint/switch-to-mde-overview.md
+        - name: التبديل من أداة حماية غير Microsoft إلى Microsoft Defender Office 365
+          href: ../security/office-365-security/migrate-to-defender-for-office-365.md
+        - name: توصيات الأمان للحسابات ذات الأولوية في Microsoft 365
+          href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+        - name: إزالة موظف سابق وتأمين البيانات
+          href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+    - name: دراسات حالة Contoso
+      items:
+        - name: Microsoft 365 حلول شركة Contoso Corporation
+          href: contoso-case-study-solutions.md
+        - name: استجابة COVID-19 ودعمه للعمل المختلط
+          href: contoso-remote-onsite-work.md
+        - name: فريق معزول لمشروع سري للغاية
+          href: contoso-team-for-top-secret-project.md
+        - name: Teams الصوت
+          href: /MicrosoftTeams/voice-case-study-overview
+        - name: دراسة حالة توافق Contoso
+          href: ../compliance/communication-compliance-case-study.md
+    - name: أدلة الاختبار المعملية
+      items:
+        - name: اختبار دليل المعمل للحلول والسيناريوهات
+          href: test-lab-guides-overview-solutions.md
+        - name: فريق مع عزل الأمان
+          href: team-security-isolation-dev-test.md
+- name: إرشادات خاصة بال الصناعة
+  items:
+    - name: الخدمات المالية
+      items:
+        - name: الأمان والتوافق للخدمات المالية
+          href: financial-services-secure-collaboration.md
+    - name: خدمات الطاقة والخدمات المساعدة
+      items:
+        - name: الأمان والتوافق لخدمات الطاقة والخدمات المساعدة
+          href: energy-secure-collaboration.md
+    - name: الرعاية الصحية
+      items:
+        - name: نظرة عامة
+          href: healthcare-overview.md
+        - name: Teams الرعاية الصحية
+          href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+    - name: Education
+      items:
+        - name: Teams للتعليم
+          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
+    - name: Government
+      items:
+        - name: Teams ل Government
+          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
+        - name: دعم العاملين في الحكومة البعيدة باستخدام Teams
+          href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
+    - name: البيع بالتجزئة
+      items:
+        - name: نظرة عامة
+          href: retail-overview.md
+        - name: Teams للبيع بالتجزئة
+          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
+- name: مبادئ تصميم هندسة المؤسسة
+  items:
+    - name: نظرة عامة
+      href: design-principles.md
+    - name: للهوية وما بعدها
+      href: identity-design-principles.md
+    - name: عوائق الأمان التي يمكنك ابحر فوقها
+      href: security-design-principles.md
+    - name: الاتصال بالشبكات (إلى السحابة)
+      href: networking-design-principles.md
+- name: Microsoft 365 النشر
+  items:
+    - name: نشر Microsoft 365
+      href: ../enterprise/microsoft-365-overview.md
+- name: دليل التنقل
+  href: ../microsoft-365-docs-navigation-guide.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json

@@ -1,0 +1,54 @@
+### YamlMime:FAQ
+metadata:
+  title: الأسئلة الشائعة حول الإدارة المفوضة
+  f1.keywords:
+  - NOCSH
+  ms.author: chrisda
+  author: chrisda
+  manager: dansimp
+  ms.date: 
+  audience: ITPro
+  ms.topic: troubleshooting
+  ms.localizationpriority: medium
+  ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
+  ms.custom:
+  - seo-marvel-apr2020
+  description: يمكن للمسؤولين عرض الأسئلة والأجوبة التي يتم طرحها بشكل متكرر حول مهام الإدارة المفوضة في Microsoft 365 لشركاء Microsoft وبالتجزئة.
+  ms.technology: mdo
+  ms.prod: m365-security
+  ms.openlocfilehash: 7f011829110481f6cd7b9238deadccad0d2a1264
+  ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+  ms.translationtype: MT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 12/15/2021
+  ms.locfileid: "63570285"
+title: الأسئلة الشائعة حول الإدارة المفوضة
+summary: >
+  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+
+  توفر هذه المقالة الأسئلة والأجوبة التي يتم طرحها بشكل متكرر حول مهام الإدارة المفوضة في Microsoft 365 لشركاء Microsoft وبالتجزئة. تتضمن الإدارة المفوضة إمكانية إدارة إعدادات Exchange Online Protection (EOP) للمستأجرين الآخرين (الشركات).
+sections:
+- name: تم التجاهل
+  questions:
+  - question: >
+      أنا بائع وأحتاج إلى إدارة مستأجري العملاء. كيف يعمل هذا؟
+    answer: >
+      إذا كنت أحد شركاء Microsoft أو بائعا، وقد قمت بالتوقيع لكي تكون عميلا موفر حلول الحوسبة السحابية من Microsoft (CSP)، يمكنك طلب قدرات الإدارة المفوضة في Microsoft 365 العميل. لمزيد من المعلومات، راجع المقالات التالية:
+
+
+      - [Cloud Solution Provider جديد](/partner-center/csp-overview)
+
+      - [الحصول على الأذونات لإدارة خدمة عميل أو اشتراكه](/customers-revoke-admin-privileges).
+  - question: >
+      أنا عميل، لست بائعا. كيف يمكن إعداد المسؤول المفوض للواتين الفرعيتين؟
+    answer: >
+      الإدارة المفوضة متوفرة فقط للموزعين والشركاء. ومع ذلك، هناك نموذج برنامج PowerShell النصي الذي سيساعدك على تطبيق سياسات على الناهات الفرعية (الشركات). لمزيد من المعلومات، راجع [نموذج البرنامج النصي لتطبيق إعدادات EOP على مستأجرين متعددين](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants).
+  - question: >
+      هل يمكنني منع المسؤول الفرعي من تعديل نهجي؟
+    answer: >
+      لا. Microsoft 365 هذه الإمكانية حاليا.
+  - question: >
+      هل يمكنني الحصول على تقارير مدمجة عبر كل الشركات الفرعية؟
+    answer: لا تتوفر التقارير المجمعة عبر الشركات التي تديرها في مركز مسؤولي Microsoft 365 التقارير. ومع ذلك، يمكنك الحصول على التقارير باستخدام [Microsoft Graph](/graph/overview).

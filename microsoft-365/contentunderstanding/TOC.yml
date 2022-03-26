@@ -1,0 +1,130 @@
+- name: Microsoft SharePoint Syntex
+  href: index.md
+- name: نماذج مخصصة
+  items:
+    - name: فهم المستند
+      items:
+        - name: نظرة عامة
+          href: document-understanding-overview.md
+        - name: الاختلافات بين النماذج
+          href: difference-between-document-understanding-and-form-processing-model.md
+        - name: استيراد نموذج نموذجي
+          href: learn-about-document-understanding-models-through-the-sample-model.md
+        - name: إنشاء مركز محتوى
+          href: create-a-content-center.md
+        - name: إنشاء تصنيف
+          href: create-a-classifier.md
+        - name: تكرار نموذج
+          href: duplicate-a-model.md
+        - name: إعادة تسمية نموذج
+          href: rename-a-model.md
+        - name: إنشاء مستخرج
+          href: create-an-extractor.md
+        - name: إعادة تسمية مستخرج
+          href: rename-an-extractor.md
+        - name: أنواع الشرح
+          href: explanation-types-overview.md
+        - name: استخدام قوالب الشرح
+          href: explanation-templates.md
+        - name: تطبيق نموذج فهم المستند
+          href: apply-a-model.md
+        - name: نشر نموذج واكتشافه
+          href: model-discovery.md
+        - name: تطبيق تسمية استبقاء
+          href: apply-a-retention-label-to-a-model.md
+        - name: تطبيق تسمية حساسية
+          href: apply-a-sensitivity-label-to-a-model.md
+        - name: إنشاء نموذج محلي
+          href: create-local-model.md
+        - name: تحليلات استخدام النماذج
+          href: model-usage-analytics.md
+        - name: الاستفادة من مستخرج مخزن المصطلحات عند إنشاء مستخرج
+          href: leverage-term-store-taxonomy.md
+        - name: وضع إمكانية وصول ذوي الاحتياجات الخاصة
+          href: accessibility-mode.md
+    - name: معالجة النموذج
+      items:
+        - name: نظرة عامة
+          href: form-processing-overview.md
+        - name: الاختلافات بين النماذج
+          href: difference-between-document-understanding-and-form-processing-model.md
+        - name: إنشاء نموذج لمعالجة النماذج
+          href: create-a-form-processing-model.md
+        - name: تطبيق تسمية استبقاء
+          href: apply-a-retention-label-to-a-model.md
+        - name: تحليلات استخدام النماذج
+          href: model-usage-analytics.md
+- name: النماذج التي تم تصميمها مسبقا
+  items:
+    - name: نظرة عامة
+      href: prebuilt-overview.md
+    - name: نماذج الفواتير والإيصالات التي تم تصميمها مسبقا
+      href: prebuilt-models.md
+    - name: تطبيق تسمية استبقاء
+      href: apply-a-retention-label-to-a-model.md
+    - name: إنشاء نموذج محلي
+      href: create-local-model.md
+    - name: تحليلات استخدام النماذج
+      href: model-usage-analytics.md
+- name: تجميع المحتوى
+  items:
+    - name: إنشاء مستندات باستخدام تجميع المحتوى
+      href: content-assembly.md
+- name: البحث في بيانات التعريف
+  items:
+    - name: البحث عن بيانات التعريف في مكتبات المستندات
+      href: metadata-search.md
+- name: Taxonomy
+  items:
+    - name: الاستيراد باستخدام SKOS
+      href: import-term-set-skos.md
+    - name: مرجع تنسيق SKOS
+      href: skos-format-reference.md
+    - name: دفع نوع المحتوى إلى الموزع
+      href: push-content-type-to-hub.md
+    - name: تقارير مخزن المصطلحات
+      href: term-store-analytics.md
+- name: الإعداد والإدارة
+  items:
+    - name: ترخيص SharePoint Syntex
+      href: syntex-licensing.md
+    - name: إعداد SharePoint Syntex
+      href: set-up-content-understanding.md
+    - name: إنشاء مركز محتوى
+      href: create-a-content-center.md
+    - name: إدارة SharePoint Syntex باستخدام PowerShell
+      items:
+        - name: نظرة عامة
+          href: powershell-syntex-intro.md
+        - name: نماذج التصدير والاستيراد
+          href: powershell-syntex-import-export.md
+        - name: نشر النماذج
+          href: powershell-syntex-publishing.md
+        - name: طلب المعالجة حسب نموذج
+          href: powershell-syntex-processing.md
+        - name: العمل باستخدام تفسيرات النموذج
+          href: powershell-syntex-explanations.md
+- name: الاعتماد
+  items:
+    - name: بدء العمل باستخدام
+      href: adoption-getstarted.md
+    - name: السيناريوهات و حالات الاستخدام
+      href: adoption-scenarios.md
+    - name: تشغيل الإصدار التجريبي
+      href: trial-syntex.md
+    - name: إدارة العقود في Microsoft 365
+      items:
+        - name: نظرة عامة
+          href: solution-manage-contracts-in-microsoft-365.md
+        - name: الخطوة 1. استخدام SharePoint Syntex
+          href: solution-manage-contracts-step1.md
+        - name: الخطوة 2. استخدام Microsoft Teams
+          href: solution-manage-contracts-step2.md
+        - name: الخطوة 3. استخدام Power Automate
+          href: solution-manage-contracts-step3.md
+    - name: قالب موقع إدارة العقود
+      href: use-contracts-management-site.md
+    - name: قالب موقع "مركز المحتويات"
+      href: use-content-center-site.md
+- name: إمكانية التوسعة
+  href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

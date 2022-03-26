@@ -1,3 +1,67 @@
-## Microsoft Open Source Code of Conduct
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+# <a name="overview"></a>نظرة عامة
+
+## <a name="learn-how-to-contribute"></a>تعرف على كيفية المساهمة
+
+يمكن لأي شخص يهتم بالمساهمة في المواضيع. عند المساهمة، سيتحول عملك مباشرة إلى مجموعة المحتويات بعد دمجها. وسيظهر بعد ذلك في docs.microsoft.com، وستدرج كمساهم في: <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors>.
+
+### <a name="quickly-update-an-article-using-githubcom"></a>تحديث مقالة بسرعة باستخدام GitHub.com
+
+يمكن للمساهمين الذين يجريون تحديثات صغيرة أو غير منتظمة تحرير الملف مباشرة على GitHub.com دون الحاجة إلى تثبيت أي برنامج إضافي. توضح لك هذه المقالة كيفية ذلك. [يتناول هذا الفيديو الذي لمدة دقيقتين](https://www.microsoft.com/videoplayer/embed/RE1XQTG) أيضا كيفية المساهمة.
+
+1. تأكد من أنك قمت GitHub.com باستخدام GitHub الخاص بك.
+2. انتقل إلى الصفحة التي تريد تحريرها على docs.microsoft.com.
+3. على الجانب الأيسر من الصفحة، انقر فوق **تحرير** (أيقونة القلم الرصاص).
+
+   ![الزر "تحرير" docs.microsoft.com.](microsoft-365/media/quick-update-edit.png)
+
+4. يتم فتح ملف الموضوع GitHub، حيث تحتاج إلى النقر فوق **الأيقونة تحرير قلم** رصاص هذا الملف.
+
+   ![الزر "تحرير" على github.com.](microsoft-365/media/quick-update-github.png)
+
+5. يتم فتح الموضوع في صفحة تحرير ذات رقم سطري حيث يمكنك إجراء تغييرات على الملف. يتم كتابة GitHub باللغة الإنجليزية وتحريرها باستخدام لغة Markdown. للحصول على تعليمات حول استخدام Markdown، راجع [وضع علامة إتقان](https://guides.github.com/features/mastering-markdown/). حدد علامة **التبويب معاينة التغييرات** لعرض التغييرات أثناء التنقل.
+
+6. عندما تنتهي من إجراء التغييرات، انتقل إلى القسم اقتراح **تغيير الملف في** أسفل الصفحة:
+
+   - يجب أن يكون هناك عنوان مختصر. بشكل افتراضي، يكون العنوان هو اسم الملف، ولكن يمكنك تغييره.
+   - بشكل اختياري، يمكنك إدخال المزيد من التفاصيل في **المربع إضافة وصف موسع اختياري** .
+
+   عندما تكون جاهزا، انقر فوق الزر الأخضر **اقتراح تغيير الملف** .
+
+   ![قسم اقتراح تغيير الملف.](microsoft-365/media/propose-file-change.png)
+
+7. في الصفحة **مقارنة التغييرات** التي تظهر، انقر فوق الزر **الأخضر إنشاء طلب سحب** .
+
+   ![صفحة مقارنة التغييرات.](microsoft-365/media/comparing-changes-page.png)
+
+8. في الصفحة **فتح طلب سحب** التي تظهر، انقر فوق الزر **الأخضر إنشاء طلب** سحب.
+
+   ![فتح صفحة طلب سحب.](microsoft-365/media/open-a-pull-request-page.png)
+
+> [!NOTE]
+> تحدد الأذونات في إعادة الاكتتاب ما تراه في الخطوات العديدة الأخيرة. سيشاهد الأشخاص الذين لا امتيازات **خاصة مقطع اقتراح** تغيير الملف وصفحات التأكيد التالية كما هو موضح. سيشاهد الأشخاص الذين تتوفر لهم الأذونات اللازمة لإنشاء طلبات السحب والموافقة عليها مقطعا  مماثلا حول "التزام التغييرات" مع خيارات إضافية لإنشاء فرع جديد وصفحات تأكيد أقل.<br/><br/>النقطة هي: انقر فوق أي أزرار خضراء يتم تقديمها لك حتى لا يكون هناك المزيد.
+
+سيتم إعلام الكاتب الذي تم تعريفه في بيانات تعريف الموضوع وسيراجع التغييرات ويوافق عليها في النهاية بحيث يتم تحديث الموضوع على docs.microsoft.com. إذا كانت هناك أسئلة أو مشاكل تتعلق بهذه التحديثات، سيتصل بك الكاتب.
+
+## <a name="microsoft-open-source-code-of-conduct"></a>قواعد السلوك الخاصة ب Microsoft Open Source
+
+اعتمد هذا المشروع مدونة [قواعد السلوك الخاصة ب Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/).
+
+لمزيد من المعلومات، [راجع الأسئلة](https://opensource.microsoft.com/codeofconduct/faq/) الشائعة حول قواعد [السلوك أو](mailto:opencode@microsoft.com) الاتصال opencode@microsoft.com مع أي أسئلة أو تعليقات إضافية.
+
+### <a name="contributing"></a>المساهمة
+
+ويرحب هذا المشروع بالتبرعات والاقتراحات.  تتطلب منك معظم المساهمات الموافقة على اتفاقية ترخيص المساهم (CLA) التي تعلن أنك تملك الحق في منحنا الحقوق لاستخدام مساهمتك، وتمنحنا هذه الحقوق فعليا. للحصول على التفاصيل، تفضل بزيارة <https://cla.microsoft.com>.
+
+عند إرسال طلب سحب، سيحدد روبوت CLA تلقائيا ما إذا كنت بحاجة إلى توفير CLA وتزيين العلاقات العامة بشكل مناسب (على سبيل المثال، التسمية والتعليق). ما عليك سوى اتباع الإرشادات التي يوفرها الروبوت. ستحتاج إلى القيام بذلك مرة واحدة فقط عبر جميع التكاتف باستخدام CLA.
+
+### <a name="legal-notices"></a>الإشعارات القانونية
+
+تمنحك Microsoft وأي مساهمين ترخيصا لوثائق Microsoft وأي محتوى آخر في هذا المستودع ضمن ترخيص [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) العام الدولي، راجع ملف [الترخيص](LICENSE) ، وامنحك ترخيصا لأي رمز في المستودع ضمن ترخيص [MIT](https://opensource.org/licenses/MIT)، راجع ملف [LICENSE-CODE](LICENSE-CODE) .
+
+قد Windows Microsoft أو Microsoft Azure و/أو منتجات وخدمات Microsoft الأخرى المشار إليها في الوثائق علامات تجارية أو علامات تجارية مسجلة لشركة Microsoft في الولايات المتحدة و/أو بلدان أخرى.
+
+لا تمنحك تراخيص هذا المشروع حقوق استخدام أي من أسماء Microsoft أو شعاراتها أو علاماتها التجارية. يمكن العثور على إرشادات علامة Microsoft التجارية العامة في <https://go.microsoft.com/fwlink/?LinkID=254653>.
+
+يمكن العثور على معلومات الخصوصية في <https://privacy.microsoft.com/>
+
+تحتفظ Microsoft وأي مساهمين بجميع الحقوق الأخرى، سواء بموجب حقوق النشر أو براءات الاختراع أو العلامات التجارية الخاصة بهم، سواء ضمنيا أو estoppel أو خلاف ذلك.
