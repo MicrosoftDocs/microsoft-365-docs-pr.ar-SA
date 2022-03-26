@@ -1,0 +1,177 @@
+### YamlMime:FAQ
+metadata:
+  title: الأسئلة الشائعة حول الرسائل المعزولة
+  f1.keywords:
+  - NOCSH
+  ms.author: chrisda
+  author: chrisda
+  manager: dansimp
+  ms.date: 
+  audience: ITPro
+  ms.topic: troubleshooting
+  ms.localizationpriority: medium
+  search.appverid:
+  - MET150
+  ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
+  ms.collection:
+  - M365-security-compliance
+  - m365initiative-defender-office365
+  description: يمكن للمسؤولين عرض الأسئلة والأجوبة التي يتم طرحها بشكل متكرر حول الرسائل المعزولة في Exchange Online Protection (EOP).
+  ms.custom: seo-marvel-apr2020
+  ms.technology: mdo
+  ms.prod: m365-security
+  ms.openlocfilehash: 839469f1aa872ff89c4dd488ed441cf51c911a8d
+  ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+  ms.translationtype: MT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 01/12/2022
+  ms.locfileid: "63575526"
+title: الأسئلة الشائعة حول الرسائل المعزولة
+summary: >
+  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+  **ينطبق على**
+
+  - [Exchange Online Protection](exchange-online-protection-overview.md)
+
+  - [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+
+  - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+
+  يوفر هذا الموضوع الأسئلة والأجوبة التي يتم طرحها بشكل متكرر حول رسائل البريد الإلكتروني المعزولة لمنظمات Microsoft 365 التي بها علب بريد في Exchange Online أو مؤسسات Exchange Online Protection (EOP) مستقلة بدون Exchange Online علب بريد.
+
+
+  للحصول على الأسئلة والأجوبة حول الحماية من البريد العشوائي، راجع [الأسئلة](anti-spam-protection-faq.yml) الشائعة حول الحماية من البريد العشوائي.
+
+
+  للحصول على الأسئلة والأجوبة حول الحماية من البرامج الضارة، راجع [الأسئلة](anti-malware-protection-faq-eop.yml) الشائعة حول الحماية من البرامج الضارة.
+
+
+  للحصول على الأسئلة والأجوبة حول الحماية من الازدهاق، راجع الأسئلة الشائعة حول الحماية من ال انتحال[.](anti-spoofing-protection-faq.yml)
+sections:
+- name: تم التجاهل
+  questions:
+  - question: >
+      كيف يمكنني إدارة الرسائل التي تم فحصها للبرامج الضارة؟
+    answer: >
+      بشكل افتراضي، يمكن للمسؤولين فقط إدارة الرسائل التي تم فحصها للبرامج الضارة. لمزيد من المعلومات، راجع [إدارة الرسائل والملفات](manage-quarantined-messages-and-files.md) المعزولة كمسؤول.
+
+
+      ولكن، يمكن للمسؤولين _إنشاء سياسات الفحص_ وتطبيقها على سياسات مكافحة البرامج الضارة التي تحدد المزيد من القدرات للمستخدمين. لمزيد من المعلومات، راجع [سياسات الفحص](quarantine-policies.md).
+  - question: >
+      كيف أقوم بعزل البريد العشوائي؟
+    answer: >
+      بشكل افتراضي، يتم تسليم الرسائل المصنفة كبريد عشوائي أو بريد إلكتروني مجمع بواسطة تصفية البريد العشوائي إلى علبة بريد المستخدم، ثم يتم نقلها إلى مجلد البريد الإلكتروني غير الهام. ولكن يمكنك تكوين سياسات مكافحة البريد العشوائي لعزل البريد العشوائي أو رسائل البريد الإلكتروني المجمعة بدلا من ذلك. لمزيد من المعلومات، راجع [تكوين سياسات مكافحة البريد العشوائي في EOP](configure-your-spam-filter-policies.md).
+  - question: >
+      كيف يمكنني منح المستخدمين حق الوصول إلى الفحص؟
+    answer: >
+      يجب أن يكون لدى المستخدم حساب صالح للوصول إلى رسائله الخاصة في الفحص. يتطلب EOP مستقل تمثيل المستخدمين كمستخدمي البريد في EOP (يتم إنشاؤها أو إنشاؤها يدويا عبر مزامنة الدليل). لمزيد من المعلومات حول إدارة المستخدمين في بيئات EOP مستقلة، راجع إدارة مستخدمي البريد [في EOP مستقل](/exchange/standalone-eop/manage-mail-users-in-eop).
+  - question: >
+      ما هي الرسائل التي يمكن للمستخدمين الوصول إليها في الفحص؟
+    answer: >
+      تحدد سياسات الفحص ما إذا كان يمكن للمستخدمين الوصول إلى الرسائل المعزولة استنادا إلى سبب عزل الرسالة ( [للميزات المعتمدة](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). لمزيد من المعلومات، راجع [سياسات الفحص](quarantine-policies.md).
+
+
+      بشكل افتراضي، يمكن للمستخدمين الوصول إلى الأنواع التالية من الرسائل المعزولة حيث كانوا مستلمين:
+
+
+      - **سياسات مكافحة البريد العشوائي**: البريد العشوائي والبريد الإلكتروني المجمع ورسائل التصيد الاحتيالي (رسائل تصيد احتيالي غير عالية الثقة).
+
+      - سياسات مكافحة التصيد الاحتيالي **:** المرسلون المخادعون وحماية انتحال المستخدم (Defender for Office 365) وحماية انتحال المجال (Defender for Office 365) وحماية معلومات علبة البريد (Defender for Office 365).
+
+
+      لمزيد من المعلومات، راجع [البحث عن الرسائل المعزولة وحررها كمستخدم](find-and-release-quarantined-messages-as-a-user.md).
+
+
+      بشكل افتراضي، لا يمكن للمستخدمين الوصول إلى الأنواع التالية من الرسائل المعزولة حيث هم مستلمون:
+
+
+      - **سياسات مكافحة البريد العشوائي**: التصيد الاحتيالي عالي الثقة.
+
+      - **سياسات مكافحة البرامج الضارة**
+
+      - خزينة المرفقات **(Defender for Office 365)**: رسائل البريد الإلكتروني من سياسات وملفات مرفقات خزينة من مرفقات خزينة ل SharePoint OneDrive Microsoft Teams.
+
+      - **قواعد تدفق البريد (قواعد النقل)**: الرسائل التي تم فحصها بسبب الرسالة تسليم  الرسالة إلى إجراء الفحص المستضاف في قواعد تدفق البريد.
+
+
+      لمزيد من المعلومات، راجع [إدارة الرسائل والملفات](manage-quarantined-messages-and-files.md) المعزولة كمسؤول.
+  - question: >
+      ما المدة التي يتم فيها الاحتفاظ بالرسائل في الفحص؟
+    answer: >
+      يعتمد ذلك على سبب عزل الرسالة. لمزيد من المعلومات، راجع [الرسائل المعزولة في EOP و Defender Office 365](quarantine-email-messages.md).
+  - question: >
+      هل يمكنني إصدار أكثر من رسالة معزولة أو الإبلاغ عنها في كل مرة؟
+    answer: >
+      في Microsoft 365 Defender، يمكنك تحديد ما يصل إلى 100 رسالة في كل مرة والافراج عنها.
+
+
+      يمكن للمسؤولين استخدام أمري cmdlets [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) و [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) في Exchange Online PowerShell أو EOP PowerShell مستقل للعثور على الرسائل التي تم فحصها بشكل مجمع وحررها، وللتقارير عن إيجابية خاطئة بشكل مجمع.
+  - question: >
+      هل أحرف البدل معتمدة عند البحث عن رسائل معزولة؟ هل يمكنني البحث عن الرسائل المعزولة لمجال معين؟
+    answer: >-
+      أحرف البدل غير معتمدة في Microsoft 365 Defender المدخل. على سبيل المثال، عند البحث عن مرسل، ستحتاج إلى تحديد عنوان البريد الإلكتروني الكامل. ولكن، يمكنك استخدام أحرف البدل في Exchange Online PowerShell أو EOP PowerShell مستقل.
+
+
+      على سبيل المثال، انسخ التعليمات البرمجية التالية من PowerShell إلى "المفكرة" واحفظ الملف .ps1 في موقع يسهل عليك العثور عليه (على سبيل المثال، C:\Data\QuarantineRelease.ps1).
+
+
+      بعد ذلك، بعد الاتصال Exchange Online [PowerShell أو Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-powershell) [PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)، قم بتشغيل الأمر التالي لتشغيل البرنامج النصي:
+
+
+      ```powershell
+
+      & C:\Data\QuarantineRelease.ps1
+
+      ```
+
+
+      يقوم البرنامج النصي بالتصرفات التالية:
+
+
+      - ابحث عن الرسائل غير المكتشفة التي تم فحصها كرسالة عشوائية من جميع المرسلين في مجال fabrikam. الحد الأقصى لعدد النتائج هو 50000 (50 صفحة من 1000 نتيجة).
+
+      - احفظ النتائج في ملف CSV.
+
+      - حرر الرسائل المطابقة التي تم فحصها لجميع المستلمين  الأصلية.
+
+
+      ```powershell
+
+      $Page = 1
+
+      $List = $null
+
+
+      Do
+
+      {
+
+      Write-Host "Getting Page " $Page
+
+
+      $List = (Get-QuarantineMessage -Type Spam -PageSize 1000 -Page $Page | where {$_.Released -like "False" -and $_.SenderAddress -like "*fabrikam.com"})
+
+      Write-Host "                     " $List.count " rows in this page match"
+
+      Write-Host "                                                             Exporting list to appended CSV for logging"
+
+      $List | Export-Csv -Path "C:\Data\Quarantined Message Matches.csv" -Append -NoTypeInformation
+
+
+      Write-Host "Releasing page " $Page
+
+      $List | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+
+
+      $Page = $Page + 1
+
+
+      } Until ($Page -eq 50)
+
+      ```
+
+
+      بعد تحرير رسالة، لا يمكنك تحريرها مرة أخرى.
