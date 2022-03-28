@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fb48e432d20067f3c6ca1913349152154c57e81
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: 7532d5be8febda1b4dc4dfc0a0860516188ecfc5
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63570200"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775577"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>عرض تقارير Office 365 في مدخل Microsoft 365 Defender
 
@@ -88,8 +88,8 @@ ms.locfileid: "63570200"
 
 بغض النظر عن علامة التبويب التي تحددها، يعرض المخطط الرسائل المنظمة في الفئات التالية:
 
-- **زمن زمن تسليم البريد**
-- **عمليات التسلل**
+- **الإجمالي**
+- **التهجير**
 
 عند مرورك فوق فئة في المخطط، يمكنك رؤية تصنيف تفصيلي ل زمن زمن الوصول في كل فئة.
 
@@ -100,17 +100,20 @@ ms.locfileid: "63570200"
 - **التاريخ (UTC)**: **تاريخ البدء** **وتاريخ الانتهاء**
 - **طريقة عرض الرسالة**: إحدى القيم التالية:
   - **كافة الرسائل**
-  - **الرسائل التي تحتوي على مرفقات أو عناوين URL**
-  - **الرسائل المهينة**
+  - **الرسائل المرتوبة**: إحدى القيم التالية:
+    - **التوصيل المضمر**: يتضمن الرسائل التي يتم اختبارها بالكامل قبل التسليم.
+    - **التشوه غير المتزامن**
 
 عند الانتهاء من تكوين عوامل التصفية، انقر فوق **تطبيق** عوامل التصفية أو إلغاء الأمر أو **مسحها**.
 
 في جدول التفاصيل أسفل المخطط، تتوفر المعلومات التالية:
 
 - **التاريخ (UTC)**
-- **القيم المئوية**: **50** أو **90** أو **99**
+- **زمن زمن التأخر**
 - **عدد الرسائل**
-- **زمن زمن زمن التأخر الكلي**
+- **النسبة المئوية 50**
+- **النسبة المئوية 90**
+- **النسبة المئوية 99**
 
 على صفحة التقرير الرئيسي، الأيقونة ![تصدير.](../../media/m365-cc-sc-download-icon.png) **[الزر](view-email-security-reports.md#export-report)** "تصدير" متوفر.
 
@@ -211,22 +214,13 @@ ms.locfileid: "63570200"
 
 بالإضافة إلى التقارير الموضحة في هذه المقالة، تتوفر عدة تقارير أخرى، كما هو موضح في الجدول التالي:
 
-<br>
-
-****
-
 |تقرير|الموضوع|
 |---|---|
 |**المستكشف** (Microsoft Defender Office 365 الخطة 2) أو الكشف في الوقت **الحقيقي (Microsoft** Defender Office 365 الخطة 1)|[مستكشف التهديدات (والكشف في الوقت الحقيقي)](threat-explorer.md)|
 |تقارير أمان البريد الإلكتروني التي لا تتطلب استخدام Defender Office 365|[عرض تقارير أمان البريد الإلكتروني في مدخل Microsoft 365 Defender الإلكتروني](view-email-security-reports.md)|
 |تقارير تدفق البريد في Exchange إدارة البريد (EAC)|[تقارير تدفق البريد في مركز إدارة Exchange الجديد](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|
 
 Cmdlets لتقارير PowerShell:
-
-<br>
-
-****
 
 |تقرير|الموضوع|
 |---|---|
@@ -237,7 +231,6 @@ Cmdlets لتقارير PowerShell:
 |المستخدمون الذين تم اختراقهم|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |حالة تدفق البريد|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |المستخدمون المنتحلون|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
-|
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>ما هي الأذونات المطلوبة لعرض تقارير Office 365 الخاصة؟
 

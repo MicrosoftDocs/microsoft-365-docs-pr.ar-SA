@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 846fd6854b8e2dcb408aaa55348380bb91c6b907
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: a12c81635f712dd0fac70101348d30bc1dc4f154
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63574004"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754626"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>تمكين بيئة تقييم Microsoft Defender لنقطة النهاية
 
@@ -39,7 +39,7 @@ ms.locfileid: "63574004"
 
 استخدم الخطوات التالية لتمكين تقييم Microsoft Defender لنقطة النهاية.
 
-![خطوات لتمكين Microsoft Defender لنقطة النهاية في بيئة تقييم Microsoft Defender.](../../media/defender/m365-defender-endpoint-eval-enable-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-enable-steps.png" alt-text="الخطوات اللازمة لتمكين Microsoft Defender لنقطة النهاية في بيئة تقييم Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-enable-steps.png":::
 
 - [الخطوة 1. التحقق من حالة الترخيص](#step-1-check-license-state)
 - [الخطوة 2. نقاط نهاية الألواح](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
@@ -52,13 +52,14 @@ ms.locfileid: "63574004"
 
 1. لعرض التراخيص، انتقل إلى مدخل **Microsoft Azure** وانتقل إلى قسم [ترخيص مدخل Microsoft Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
-   ![صورة لصفحة ترخيص Azure.](../../media/defender/atp-licensing-azure-portal.png)
+   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="صفحة ترخيص Azure في مدخل Microsoft 365 Defender" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
 
 1. بدلا من ذلك، في مركز الإدارة، انتقل إلى **BillingSubscriptions** > .
 
     على الشاشة، سترى كل التراخيص التي تم توفيرها ووضعها **الحالي**.
 
-    ![صورة لتراخيص الفوترة.](../../media/defender/atp-billing-subscriptions.png)
+    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="صفحة تراخيص الفوترة في مدخل Microsoft Azure" lightbox="../../media/defender/atp-billing-subscriptions.png":::
+    
 
 ## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>الخطوة 2. نقاط نهاية الألواح باستخدام أي من أدوات الإدارة المعتمدة
 

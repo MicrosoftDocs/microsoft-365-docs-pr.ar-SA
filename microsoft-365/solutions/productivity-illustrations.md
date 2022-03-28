@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 89aba3f74925b4c591c523aae5aaeb1a2844b4b9
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: ec1c4942923edb824452c4438f79edff1abfd702
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63567648"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775907"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 توضيحية للإنتاجية
 
@@ -40,14 +40,12 @@ ms.locfileid: "63567648"
 |:-----|:-----|
 |[![ملصق سيناريو اتصالات شركة Contoso.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>تحديث يناير 2022   |يوضح هذا الملصق كيف يحافظ Contoso على اطلاع الموظفين وتواصلهم عبر سيناريوهات الاتصال الشائعة. تستخدم Contoso مجموعة متنوعة من تطبيقات M365، بما في ذلك عرض جديد، Viva Connections.<br/><br/>**أدلة الحلول ذات الصلة** <br/> <ul><li>[الاتصالات التنظيمية: الإرشادات والأساليب والمنتجات](/sharepoint/corporate-communications-overview)|
 
-
-
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>المجموعات في Microsoft 365 ل IT Architects
 يتضمن هذا الرسم التوضيحي معلومات لمهندسي تكنولوجيا المعلومات Microsoft 365 المجموعات. للتعرف على كيفية تكوين مجموعات Microsoft 365 وفرق التعاون وإدارتها في مؤسستك، راجع إعداد التعاون الآمن باستخدام Microsoft 365 وما [هو حوكمة التعاون؟](/microsoft-365/solutions/collaboration-governance-overview).[](/microsoft-365/solutions/setup-secure-collaboration-with-teams)
 
 | عنصر | الوصف |
 |:-----|:-----|
-|[![صورة مصغرة للمجموعات البيانية للمعلومات.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> تم التحديث في مايو 2020|تفصيل هذه التوضيحات لأنواع المجموعات المختلفة، وكيفية إنشائها وإدارتها، وبضع توصيات حول الإدارة.|
+|[![صورة مصغرة للمجموعات البيانية للمعلومات.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> تم التحديث في مايو 2020|تفصيل هذه التوضيحات لأنواع المجموعات المختلفة، وكيفية إنشائها وإدارتها، وبضع توصيات حول الإدارة.
 
 ## <a name="migrate-to-microsoft-365"></a>الترحيل إلى Microsoft 365
 
@@ -76,6 +74,15 @@ Microsoft 365 مجموعة واسعة من قدرات حماية المعلوم�
 |:-----|:-----|
 |[![رسم بياني للمعلومات متعدد المناطق.](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>تم التحديث في مارس 2020 |إن استخدام Microsoft 365 مستأجر واحد لمنظمتك العالمية هو الخيار الأفضل والتجربة لأسباب عديدة. ومع ذلك، يصارع العديد من المهندسين المعماريين في العمل على كيفية تحقيق أهداف الأمان وحماية المعلومات عبر مناطق مختلفة. توفر مجموعة المواضيع هذه توصيات. |
 
+## <a name="security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>إرشادات الأمان للحملات السياسية، و"المؤسسات غير الربحية"، و"مؤسسات Agile الأخرى"
+
+إذا كانت مؤسستك أكثر مرونة، وكان لديك فريق صغير ل IT، وكان ملف تعريف التهديدات الخاص بك أعلى من المتوسط، فقد تم تصميم هذا الإرشاد لك. يوضح هذا الحل كيفية إنشاء بيئة بسرعة باستخدام خدمات السحابة الأساسية التي تتضمن عناصر تحكم آمنة من البداية. يتضمن هذا الإرشاد توصيات أمان وصفية لحماية البيانات والهويات والبريد الإلكتروني والوصول من الأجهزة المحمولة.
+
+| عنصر | الوصف |
+|:---|:---|
+|**إرشادات أمان Microsoft للحملات السياسية** <br> [:::image type="content" source="../media/d370ce28-ca40-4930-9a2c-907312aa06c8.png" alt-text="صورة مصغرة لملصق مصغر حول إرشادات الأمان.":::](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br> [PDF](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) \| [Visio](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx)|تستخدم هذه الإرشادات مؤسسة حملة وطنية كمثال. استخدم هذا الإرشاد كنقطة بداية لأي بيئة.|
+|**إرشادات أمان Microsoft للمؤسسات غير الربحية** <br> [:::image type="content" source="../media/e4784889-1c69-4067-9a8f-31d31d1eceea.png" alt-text="صورة مصغرة لتنزيل إرشادات الأمان.":::](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br> [PDF](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) \| [Visio](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx)|تمت مراجعة هذا الدليل قليلا للمؤسسات غير الربحية. على سبيل المثال، يشير إلى Office 365 Nonprofit التخطيطية. الإرشادات التقنية هي نفسها دليل حل الحملات السياسية.|
+
 ## <a name="microsoft-defender-for-endpoint-deployment-strategy"></a>استراتيجية نشر Microsoft Defender لنقطة النهاية
 
 استنادا إلى بيئتك، تكون بعض الأدوات أكثر ملاءمة لبعض التصميمات.
@@ -83,9 +90,7 @@ Microsoft 365 مجموعة واسعة من قدرات حماية المعلوم�
 
 | عنصر | الوصف |
 |:-----|:-----|
-|[![صورة مصغرة لا استراتيجية نشر نقطة النهاية ل Microsoft Defender.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)\| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)   <br>تحديث سبتمبر 2021| تساعدك المواد الهندسية على التخطيط لنشرك للهندسة التالية: <ul><li> السحابة الأصلية </li><li> الإدارة المشاركة </li><li> في الموقع</li><li>التقييم واللوح المحلي</li>
-
-
+|[![صورة مصغرة لا استراتيجية نشر نقطة النهاية ل Microsoft Defender.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)\| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)   <br>تحديث سبتمبر 2021| تساعدك المواد الهندسية على التخطيط لنشرك للهندسة التالية: <ul><li> السحابة الأصلية </li><li> الإدارة المشاركة </li><li> في الموقع</li><li>التقييم واللوح المحلي</li> |
 <!--
 
 <a name="BKMK_O365IDP"></a>
@@ -98,18 +103,15 @@ Recommended Zero Trust capabilities for protecting identities and devices that a
 |[![Model poster: Zero Trust identity and device protection for Microsoft 365.](../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> Updated November 2021|It's important to use consistent levels of protection across your data, identities, and devices. This model shows you which Zero Trust capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
 
 --> 
-
-
 <a name="BKMK_ediscovery"></a>
-##Advanced eDiscovery التصميم في Microsoft 365
+
+## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscovery التصميم في Microsoft 365
 
 Advanced eDiscovery سير العمل وتدفق البيانات من نهاية إلى نهاية، بما في ذلك Microsoft 365 متعددة الجغرافيا.
 
 | عنصر | الوصف |
 |:-----|:-----|
 |[![ملصق النموذج: Advanced eDiscovery تصميم Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [عرض كصورة](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [التنزيل كمستند PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> تحديث أكتوبر 2020|يتضمن: <ul><li>  سير عمل من النهاية إلى النهاية في بيئة واحدة</li><li>سير عمل من النهاية إلى النهاية في Microsoft 365 متعددة الجغرافيا </li><li>تدفق بيانات من نهاية إلى نهاية يدعم سير عمل EDRM</li> |
-
-
 
 ## <a name="microsoft-telephony-solutions"></a>Microsoft Telephony Solutions
 
@@ -125,7 +127,7 @@ Advanced eDiscovery سير العمل وتدفق البيانات من نهاي�
 باستخدام Microsoft 365 السحابية الأخرى من Microsoft، يمكنك تزويد العاملين لديك بالوصول الآمن إلى المعلومات والأدوات والموارد المستندة إلى السحابة المحلية والمستندة إلى السحابة من منزلهم.
 
 [![قم بإعداد البنية الأساسية لملصق العمل المختلط.](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
-[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) |  [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) <br>
+[PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)   <br>
 تم التحديث في يونيو 2021
 
 لمزيد من المعلومات، راجع مقالة هذا الملصق: إعداد البنية الأساسية [للعمل المختلط باستخدام](empower-people-to-work-remotely.md) Microsoft 365.

@@ -1,0 +1,91 @@
+### YamlMime:Landing
+title: أهم 20 مقالة من مقالات تعليمات المسؤول الأكثر مشاهدة هذا الشهر
+summary: تم التحديث الأخير في 13/1/2022. هل ينتابك الفضول حول مقالات المساعدة الأكثر شيوعا لدى المسؤولين؟ اطلع على هذه المجموعة من مقالات المساعدة العشرين الأكثر مشاهدة، التي تم تحديثها شهريا.
+metadata:
+  title: أهم 20 مقالة من مقالات تعليمات المسؤول الأكثر مشاهدة هذا الشهر
+  description: اطلع على هذه المجموعة من أهم 20 مقالة تعليمات الأكثر شيوعا بين المسؤولين، التي تم تحديثها شهريا.
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: SKjerland
+  ms.author: sharik
+  ms.date: 10/01/2021
+  ms.localizationpriority: high
+  ms.custom: AdminSurgePortfolio
+  ms.collection: Adm_TOC
+  ms.openlocfilehash: 8bc6995e9f3d1aab0125546cb9f52c1790582165
+  ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+  ms.translationtype: MT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 03/17/2022
+  ms.locfileid: "63575187"
+landingContent:
+- title: معلوماتية
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: حول أدوار المسؤولين
+      url: admin-overview/sign-up-for-office-365.md
+  - linkListType: video
+    links:
+    - text: الحصول على المساعدة أو الدعم
+      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+- title: المجالات
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: إضافة سجلات DNS لتوصيل مجالك
+      url: setup/setup-business-basic.md
+    - text: إضافة مجال إلى Microsoft 365
+      url: setup/setup-business-standard.md
+- title: الأمان
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: إعداد المصادقة متعددة العوامل
+      url: setup/migrate-email-and-contacts-admin.md
+- title: الفواتير والاشتراكات
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: إلغاء اشتراكك
+      url: setup/setup-business-basic.md
+    - text: الدفع مقابل اشتراكك
+      url: setup/setup-business-standard.md
+    - text: إدارة طرق الدفع
+      url: setup/setup-business-standard.md
+    - text: عرض الفاتورة أو الفاتورة
+      url: setup/setup-business-standard.md
+- title: البريد الإلكتروني
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: حول علب البريد المشتركة
+      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+  - linkListType: how-to-guide
+    links:
+    - text: تكوين إعادة توجيه البريد الإلكتروني في Microsoft 365
+      url: admin-overview/sign-up-for-office-365.md
+    - text: إنشاء علبة بريد مشتركة
+      url: admin-overview/sign-up-for-office-365.md
+    - text: منح أذونات علبة البريد لمستخدم آخر
+      url: admin-overview/sign-up-for-office-365.md
+    - text: تغيير اسم المستخدم وعنوان البريد الإلكتروني
+      url: admin-overview/sign-up-for-office-365.md
+    - text: تحويل علبة بريد مستخدم إلى علبة بريد مشتركة
+      url: admin-overview/sign-up-for-office-365.md
+- title: المستخدمون والمجموعات وكلمات المرور
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: مقارنة المجموعات
+      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+  - linkListType: how-to-guide
+    links:
+    - text: إضافة مستخدمين وتعيين تراخيص في الوقت نفسه
+      url: admin-overview/sign-up-for-office-365.md
+    - text: تعيين تراخيص للمستخدمين
+      url: admin-overview/sign-up-for-office-365.md
+    - text: تعيين نهج انتهاء صلاحية كلمة المرور لمنظمتك
+      url: admin-overview/sign-up-for-office-365.md
+    - text: تمكين المستخدمين من تسجيل الدخول Outlook تطبيقات الأجهزة المحمولة باستخدام رمز الاستجابة السريعة
+      url: admin-overview/sign-up-for-office-365.md

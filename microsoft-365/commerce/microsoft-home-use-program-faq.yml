@@ -1,0 +1,120 @@
+### YamlMime:FAQ
+metadata:
+  title: برنامج الاستخدام المنزلي من Microsoft الأسئلة الشائعة (الأسئلة المتكررة)
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  manager: scotv
+  ms.reviewer: tugu, jmueller
+  audience: Admin
+  ms.topic: reference
+  ms.service: o365-administration
+  ms.localizationpriority: medium
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  ms.custom:
+  - commerce_subscriptions
+  - okr_SMB
+  - AdminSurgePortfolio
+  search.appverid: MET150
+  description: الأسئلة المتكررة (الأسئلة المتكررة) حول برنامج الاستخدام المنزلي من Microsoft.
+  ms.date: 05/01/2021
+  ms.openlocfilehash: 5fbc27e82c61fd1cc7ca3fc75f4369afca532f9d
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.translationtype: MT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63574319"
+title: برنامج الاستخدام المنزلي من Microsoft الأسئلة الشائعة (الأسئلة المتكررة)
+summary: >
+  يستخدم عملاء الترخيص برنامج الاستخدام المنزلي من Microsoft (HUP) على Microsoft Store للأعمال [ويب](https://go.microsoft.com/fwlink/?linkid=2139192).
+
+
+  يمكن لجميع العملاء الآخرين الوصول إلى HUP باستخدام هذه الخطوة:
+
+
+  - في مركز إدارة Microsoft، انتقل  إلى **صفحة منتجات BillingYour** > ، وحدد علامة التبويب فوائد، ثم حدد علامة التبويب **HUP**.[](https://go.microsoft.com/fwlink/p/?linkid=842054)
+sections:
+- name: تم التجاهل
+  questions:
+  - question: >
+      ما هو برنامج الاستخدام المنزلي من Microsoft؟
+    answer: >
+      تسمح برنامج الاستخدام المنزلي من Microsoft (HUP) للموظفين في الشركات المؤهلة بشراء منتجات Microsoft للمستهلكين بخصم. يمكنك التحقق من الخصومات الحالية لكل عرض منتج من خلال زيارة صفحة منتج [Home Use Program](https://www.microsoft.com/home-use-program).
+  - question: >
+      ما هي الأسواق التي يعرض فيها برنامج Home Use Program؟
+    answer: "يتم تقديم خصومات على Microsoft 365 Family الشخصية والشركات المؤهلة في جميع أنحاء العالم مع هذه الاستثناءات:\n\n- لبنان، ماكاو، روسيا وفنزويلا: هذا العرض غير متوفر في هذه الأسواق.\n- الصين وهونغ كونغ: يتوفر اشتراك لمدة سنة واحدة في هذه الأسواق. بالنسبة إلى الصين، [تفضل بزيارة Microsoft 365 في الصين](https://www.microsoftstore.com.cn/home-use-program/invite). بالنسبة إلى هونغ كونغ، [تفضل بزيارة شراء Microsoft 365 بسعر مخفض](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- اليابان: Microsoft 365 Family غير متوفر.\n- يتم تقديم خصومات على أجهزة Surface وملحقاتها المحددة للشركات المؤهلة في أسواق محددة. \n"
+  - question: >
+      كيف تتأهل المؤسسة للحصول على خصومات HUP؟
+    answer: "لكي يستفيد الموظفون من خصم برنامج الاستخدام المنزلي من Microsoft، يحتاجون إلى عنوان بريد إلكتروني صالح خاص بالشركة و\"حساب Microsoft\" نشط، ويجب أن تلبي مؤسستك أحد المعايير التالية:\n\n- العملاء الذين لديهم ضمان برنامج نشط للتطبيقات Office المؤهلة\n- العملاء الذين لديهم Microsoft 365/Microsoft 365 E3/E5 من ضمان البرنامج\n- العملاء التجاريون والعملاء الحكوميون الذين اشتروا ≥ 2000 ترخيص لرخصة واحدة أو مزيج من Microsoft 365 E3/E5\n- عملاء التعليم والعملاء غير الربحين\n- العملاء التجاريون والعملاء الحكوميون الذين أنفقوا 250000 دولار أمريكي أو أكثر في الأشهر ال 12 السابقة على ملحقات Power BI و Office وأجهزة Surface & والأجهزة Windows و Enterprise Mobility \n"
+  - question: >
+      لماذا يجب علي إنشاء حساب Azure Active Directory (AAD (دليل Azure النشط)) لاستخدام Home Use Program/Microsoft Store للأعمال؟
+    answer: >
+      لتحديث برنامج Home Use Program وتحديثه إلى نطاق أوسع من مزايا الترخيص و المنتج، نحتاج إلى تغيير الطريقة التي ننجز بها برنامج HUP. Microsoft Store للأعمال للتحقق من الأهلية وتعيين مزايا HUP، ويعتمد على AAD (دليل Azure النشط) لتوصيل المعلومات من VLSC والتحقق من صحة مجالات البريد الإلكتروني التي يستخدمها موظفو مؤسستك. لمزيد من المعلومات، راجع [التسجيل للحصول على حسابات Azure AD Office 365 for Business](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
+  - question: >
+      كيف يمكنني أن أصبح مسؤول المعلومات المعين لمستأجر مدار؟
+    answer: >
+      يجب إنشاء سجل خاص في DNS لإثبات أنك تملك مجال شركتك، على شكل:contoso.com.
+
+
+      للحصول على عملية خطوة بخطوة لتصبح مستأجرا مدارا، راجع إدارة دليل غير مدار كمسؤول [في Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+  - question: >
+      ما هي الموارد المتوفرة للمساعدة في الترويج لمنافع برنامج Home Use Program للموظفين؟
+    answer: >
+      استخدم الموارد الموجودة على الصفحة الرئيسية لبرنامج [Home Use Program](https://www.microsoft.com/home-use-program/resources) لمساعدتك على ترقية البرنامج للموظفين. ستجد نشرات رقمية قابلة للطباعة، وإسهاب لاستخدامها في رسائل البريد الإلكتروني والرسائل الإخبارية، وإرشادات حول كيفية الترويج لبرنامج Home Use Program بشكل أفضل.
+  - question: >
+      ما هي الخطوات التي يجب على الموظف المؤهل القيام بها برنامج الاستخدام المنزلي من Microsoft الشراء؟
+    answer: >
+      1. **التسجيل** انتقل إلى برنامج الاستخدام المنزلي من Microsoft [،](https://www.microsoft.com/home-use-program) وحدد زر بدء الاستخدام. يدخل الموظفون عنوان البريد الإلكتروني الخاص بالشركة.
+
+      2. **تأكيد**  يتم إرسال رسالة بريد إلكتروني إلى علبة وارد عنوان البريد الإلكتروني الخاص بالشركة مع ارتباط يصادق على أهليتهم للبرنامج.
+
+      3. **تسجيل الدخول** بعد المصادقة عليهم، يبدأون عملية الشراء من خلال توفير حساب Microsoft المقترن مع عنوان بريدهم الإلكتروني الشخصي، مما يسمح لهم ب عرض الخصومات على المنتجات المتوفرة لهم استنادا إلى فائدة برنامج Home Use Program الخاص بالم المؤسسة. لمزيد من المعلومات، [راجع كيفية تسجيل الدخول إلى حساب Microsoft الخاص بك](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
+
+      4. **التسوق** تتم معالجة عملية الشراء وإكمالها في Microsoft Store.
+  - question: >
+      إذا اشترك أحد الموظفين في Microsoft 365 عبر برنامج الاستخدام المنزلي من Microsoft، فكيف يؤثر ذلك على الحد الأقصى لاشتراك Microsoft 365 العمل والجهاز في مؤسستك؟
+    answer: >
+      لا تؤثر التثبيتات من خلال Home Use Program على اشتراك Microsoft 365 الأعمال الخاص بك. عند تنشيط الموظفين Microsoft 365 على أجهزتهم الشخصية، يستخدمون حساب Microsoft الشخصي الخاص بهم، وليس حساب العمل الخاص بهم. لا يدير مسؤول تكنولوجيا المعلومات في مؤسستك أي عمليات شراء يتم شراؤها من خلال برنامج Home Use Program أو يدعمها.
+  - question: >
+      أواجه مشكلة في إدارة برنامج الاستخدام المنزلي من Microsoft المؤسسة. أين يمكنني الحصول على الدعم؟
+    answer: >
+      للحصول على الدعم للقضايا التي يتم فيها عملية التهجر من مركز خدمات الترخيص الكلي أو للوصول إلى Microsoft Store للأعمال، راجع دعم [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
+
+
+      للاطلاع على المشاكل المتعلقة بعرض الفائدة بعد الوصول إلى Microsoft Store للأعمال، راجع [دعم مسؤول المتجر للأعمال](/microsoft-store/)
+  - question: >
+      لماذا لا أرى خيارا لشراء Visio Professional 2021 و/أو Project Professional 2021؟
+    answer: >
+      إذا استفد أحد الموظفين من البرنامج السابق وكان يبحث عن خصومات على Visio Professional 2021 و/أو Project Professional 2021، فالرجاء الانتقال إلى عملية التحقق من الأهلية، وبعد أن يتم التسجيل في الدخول باستخدام حساب Microsoft الشخصي، انتقل إلى منتجات **Office الأخرى** لشراء هذه المنتجات. إذا لم يتم تطبيق الخصومات المتوقعة، فاتصل بمسؤول برنامج الاستخدام المنزلي لصاحب العمل الخاص بك للحصول على هذه المزايا الإضافية.
+  - question: >
+      ماذا لو كان لدى الموظفين لدي أسئلة حول هذا البرنامج أو إذا كانوا بحاجة إلى دعم في الشراء والتثبيت؟
+    answer: >
+      إذا كان لدى الموظفين أسئلة، فاحالتهم إلى الموارد التالية:
+
+
+      - [الأسئلة الشائعة حول ما بعد الشراء والتثبيت](https://products.office.com/microsoft-office-for-home-and-school-faq)
+
+
+      - [الأسئلة الشائعة حول موظف برنامج Home Use Program](https://www.microsoft.com/home-use-program/frequently-asked-questions)
+
+       للحصول على تعليمات حول المشاكل التقنية، راجع [دعم Microsoft](https://support.microsoft.com/). ستجد تعليمات حول:
+
+      - حالة الطلب
+
+      - الفوترة
+
+      - تثبيت Office
+
+      - تسجيل الدخول إلى Office
+  - question: >
+      لماذا يتعين على شركتي المشاركة في برنامج Home Use Program؟
+    answer: "يساعد برنامج Home Use Program شركتك على زيادة عائد استثمار Microsoft الخاص بها إلى أقصى حد. تتضمن مزايا المشاركة في البرنامج ما يلي: \n\n- تقليل الحاجة إلى التدريب على IT \n- خفض تكاليف مكتب المساعدة والتدريب \n- السماح للموظفين بالإلمام Microsoft 365 في المنزل \n- زيادة إتقان البرامج، مما يمكن أن يزيد الإنتاجية \n"
+  - question: >
+      كيف يستفيد برنامج الاستخدام المنزلي من Microsoft الموظفين؟
+    answer: >
+      عندما يشتري Microsoft 365 المنتجات بخصم كبير، يمكنهم استخدام البرنامج نفسه في المنزل الذي يستخدمونه في المكتب. يساعد ذلك على تعزيز إنتاجيتهم وتحسين مهاراتهم وتحسين مستوى رضاهم عن الوظائف.
+  - question: >
+      ماذا يحدث عندما يترك أحد الموظفين الشركة؟
+    answer: "بالنسبة للموظفين المؤهلين للحصول على عرض اشتراك Microsoft 365 الذي تم شراؤه من خلال البرنامج، يتم تطبيق السعر المخفض طالما بقي اشتراك الموظف نشطا، بغض النظر عن حالة توظيفه في مؤسستك. ومع ذلك، تنتهي حقوق الاستخدام التجاري الخاصة بهم بمجرد انتهاء توظيفهم. بالنسبة للموظفين المؤهلين للحصول على Office 2019، يجب عليهم إلغاء تثبيت برامج Office التي تم شراؤها من خلال Home Use Program بمجرد مغادرة الموظف للشركة. \n"
+additionalContent: "\n## <a name=\"related-content\"></a>المحتوى ذي الصلة\n  [الأسئلة المفهمة لبرنامج Home Use Program](https://www.microsoft.com/home-use-program/frequently-asked-questions). (article)\\\n  [مركز خدمات الترخيص الكلي من Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (صفحة الارتباط)\\\n  [Microsoft Store للأعمال دعم المسؤول](/microsoft-store/) (صفحة الارتباط)\\\n  [Microsoft Store للأعمال](https://go.microsoft.com/fwlink/?linkid=2139192) (صفحة ارتباط)\\\n  [مخزن موظف Home Use Program](https://www.microsoft.com/home-use-program) (صفحة الارتباطات)\\\n  [ترخيص Microsoft: نظرة عامة حول برنامج Home Use Program](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (صفحة الارتباط)"

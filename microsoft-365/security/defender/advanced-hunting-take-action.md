@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cd4423ab63019b554157de3a05da3c6c7e7d3d4c
-ms.sourcegitcommit: ab5368888876d8796da7640553fc8426d040f470
+ms.openlocfilehash: eb881611ad4b983eb80d028dfe3dee20c3ed6216
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "63575810"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754661"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>اتخاذ إجراء بشأن نتائج استعلام البحث المتقدمة
 
@@ -62,10 +62,10 @@ ms.locfileid: "63575810"
 ## <a name="quarantine-files"></a>عزل الملفات
 يمكنك نشر إجراء *الفحص* على الملفات بحيث يتم عزلها تلقائيا عند مصادفتها. عند تحديد هذا الإجراء، يمكنك الاختيار من بين الأعمدة التالية لتحديد الملفات الموجودة في نتائج الاستعلام التي يجب فحصها:
 
-- `SHA1` — في معظم جداول الصيد المتقدمة، هذه هي SHA-1 من الملف الذي تأثر بالتحرك المسجل. على سبيل المثال، إذا تم نسخ ملف، سيكون هذا هو الملف المنسوخ.
-- `InitiatingProcessSHA1` — في معظم جداول الصيد المتقدمة، هذا هو الملف المسؤول عن بدء الإجراء المسجل. على سبيل المثال، إذا تم تشغيل عملية طفل، ستكون هذه هي العملية الأصل. 
-- `SHA256` — هذا هو SHA-256 المكافئ للملف الذي يحدده `SHA1` العمود.
-- `InitiatingProcessSHA256` — هذا هو SHA-256 المكافئ للملف الذي يحدده `InitiatingProcessSHA1` العمود.
+- `SHA1`: في معظم جداول الصيد المتقدمة، يشير هذا العمود إلى SHA-1 للملف الذي تأثر بالتحرك المسجل. على سبيل المثال، إذا تم نسخ ملف، سيكون هذا الملف المتأثر هو الملف المنسوخ.
+- `InitiatingProcessSHA1`: في معظم جداول الصيد المتقدمة، يشير هذا العمود إلى الملف المسؤول عن بدء الإجراء المسجل. على سبيل المثال، إذا تم تشغيل عملية طفل، سيكون ملف البادء هذا جزءا من العملية الأصل. 
+- `SHA256`: هذا العمود هو مكافئ SHA-256 للملف المعرف بواسطة `SHA1` العمود.
+- `InitiatingProcessSHA256`: هذا العمود هو مكافئ SHA-256 للملف المعرف بواسطة `InitiatingProcessSHA1` العمود.
 
 لمعرفة المزيد حول كيفية اتخاذ إجراءات الفحص وكيفية استعادة الملفات، اقرأ [حول إجراءات الاستجابة على الملفات](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
 
@@ -75,7 +75,7 @@ ms.locfileid: "63575810"
 ## <a name="take-action"></a>اتخاذ إجراء
 لاتخاذ أي من الإجراءات الموضحة، حدد سجلا واحدا أو أكثر في نتائج الاستعلام، ثم حدد **اتخاذ إجراءات**. سيرشدك المعالج خلال عملية تحديد الإجراءات المفضلة لديك ثم إرسالها.
 
-![صورة سجل محدد مع لوحة لفحص السجل.](../../media/take-action-multiple.png)
+:::image type="content" source="../../media/take-action-multiple.png" alt-text="الخيار &quot;اتخاذ الإجراءات&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/take-action-multiple.png":::
 
 ## <a name="review-actions-taken"></a>مراجعة الإجراءات التي تم اتخاذها
 يتم تسجيل كل إجراء بشكل فردي في [مركز الإجراءات](m365d-action-center.md) ضمن **Action** **centerHistory** >  ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). انتقل إلى مركز الإجراءات للتحقق من حالة كل إجراء.

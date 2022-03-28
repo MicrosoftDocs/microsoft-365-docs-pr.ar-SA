@@ -15,16 +15,16 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/22/2022
+ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: c334a3829d28ad7b65f0f0db3bd9599570db8337
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: c6454704c6cabfd5136eeec565c3c57dca044250
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716179"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63573881"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>إدارة برنامج الحماية من الفيروسات من Microsoft Defender الأساسية وتطبيقها
 
@@ -668,21 +668,6 @@ ms.locfileid: "63716179"
 لمزيد من المعلومات، راجع [تحديث Microsoft Defender Windows تثبيت نظام التشغيل](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
-<summary>20220321.1</summary>
-
-&ensp;إصدار الحزمة: **20220321.1**<br/>
-&ensp;إصدار النظام الأساسي: **4.18.2202.4**<br/>
-&ensp;إصدار المحرك: **1.1.19000.8**<br/>
-&ensp;إصدار التوقيع: **1.351.337.0**<br/>
-
-### <a name="fixes"></a>الإصلاحات
-- بلا
-
-### <a name="additional-information"></a>معلومات إضافية
-- بلا
-
-<br/>
-</details><details>
 <summary>20220305.1</summary>
 
 &ensp;إصدار الحزمة: **20220305.1**<br/>

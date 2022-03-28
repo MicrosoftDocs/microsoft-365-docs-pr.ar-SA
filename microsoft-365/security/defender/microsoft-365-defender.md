@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 691db83111ba14e9fed7eed36a819479bda15ff5
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 28f50cbd362104ba910ed5560e184036fc7f8703
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63571484"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754644"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -155,7 +155,7 @@ Microsoft 365 Defender *على الوحدة* والوضوح والأهداف ا�
 
 تنشئ معلومات الأمان المركزية مكانا واحدا للتحري عن أحداث الأمان عبر Microsoft 365. مثال **أساسي هو الأحداث** ضمن & **تنبيهات** عند بدء تشغيل Microsoft 365 Defender.
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="صفحة &quot;الأحداث&quot; في Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="مثال لصفحة &quot;الأحداث&quot; في Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
 
 يعرض تحديد اسم حادث صفحة توضح قيمة معلومات الأمان المركزية.
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: تحتوي هذه المقالة على معلومات مرجعية حول أداة eDiscovery للبحث في المحتوى في مركز التوافق في Microsoft 365 لمساعدتك على معرفة التفاصيل الكثيرة حول البحث في المحتوى.
-ms.openlocfilehash: 0688f3119b500f8e11675aa101d92942a3063e8b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3f2918c378d94fd65d4a89afed50957a2da40a7d
+ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63571674"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63716365"
 ---
 # <a name="feature-reference-for-content-search"></a>مرجع الميزة للبحث في المحتوى
 
@@ -80,7 +80,7 @@ ms.locfileid: "63571674"
 
 - للبحث عن المحتوى الموجود في Teams ومجموعات Microsoft 365، يجب تحديد علبة البريد SharePoint موقع ويب المقترن بفريق أو مجموعة.
 
-- يتم تخزين المحتوى من القنوات الخاصة في علبة بريد كل مستخدم، وليس في علبة بريد الفريق. للبحث عن محتوى في القنوات الخاصة، راجع [eDiscovery للقنوات الخاصة](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
+- يتم تخزين المحتوى من القنوات الخاصة في علبة بريد كل مستخدم، وليس في علبة بريد الفريق. للبحث عن محتوى في القنوات الخاصة، راجع [eDiscovery للقنوات الخاصة والمشتركة](/microsoftteams/ediscovery-investigation#ediscovery-of-private-and-shared-channels).
 
 - تشغيل **الأمر cmdlet Get-UnifiedGroup** في Exchange Online لعرض خصائص فريق أو مجموعة Microsoft 365 المجموعة. هذه طريقة جيدة للحصول على عنوان URL للموقع المقترن بفريق أو مجموعة. على سبيل المثال، يعرض الأمر التالي خصائص محددة لمجموعة Microsoft 365 تسمى فريق القيادة العليا:
 

@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7a7e7a397f9cf9f89b75eb1f515e37a5386a73b1
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: b1381e7c2be2224818c72fb8e269ad65ffcacfc8
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63574007"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755029"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>مراجعة متطلبات بنية نقطة النهاية والمفاهيم الأساسية ل Microsoft Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "63574007"
 
 يوضح الرسم التخطيطي التالي بنية Microsoft Defender لنقطة النهاية والتكاملات. 
 
-![خطوات لإضافة Microsoft Defender Office إلى بيئة تقييم Defender.](../../media/defender/m365-defender-endpoint-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-architecture.png" alt-text="خطوات إضافة Microsoft Defender Office إلى بيئة تقييم Defender" lightbox="../../media/defender/m365-defender-endpoint-architecture.png":::
 
 يصف الجدول التالي الرسم التوضيحي.
 

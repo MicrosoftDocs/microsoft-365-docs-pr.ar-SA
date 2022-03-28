@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ab0eb6c9f7ecfbc51de4857d708f1fa34bd3f515
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 59933705bb113e4ad23b12fe8bf00e8d0ca2e701
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63566155"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775797"
 ---
 # <a name="insider-risk-management-cases"></a>حالات إدارة مخاطر Insider
 
@@ -150,7 +150,7 @@ ms.locfileid: "63566155"
 
 ### <a name="contributors"></a>المساهمون
 
-علامة **التبويب المساهمون** في الحالة هي المكان الذي يمكن لمحللو المخاطر والمحققين فيه إضافة مراجعين آخرين إلى الحالة. افتراضيا، يتم سرد جميع المستخدمين الذين تم تعيينهم لمحللو إدارة المخاطر في **Insider** وأدوار **Insider لإدارة** المخاطر كمساهمين لكل حالة نشطة ومغلقة. لا يسمح سوى للمستخدمين الذين تم **تعيين دور Insider لإدارة المخاطر بإذن** عرض الملفات والرسائل في مستكشف المحتوى.
+علامة **التبويب المساهمون** في الحالة هي المكان الذي يمكن لمحللو المخاطر والمحققين فيه إضافة مراجعين آخرين إلى الحالة. بشكل افتراضي، يتم إدراج جميع المستخدمين الذين تم تعيينهم إلى **محللي إدارة مخاطر Insider** وأدوار **Insider لإدارة** المخاطر كمساهمين لكل حالة نشطة ومغلقة. لا يسمح سوى للمستخدمين الذين تم **تعيين دور Insider لإدارة المخاطر بإذن** عرض الملفات والرسائل في مستكشف المحتوى.
 
 يمكن منح حق الوصول المؤقت إلى حالة عن طريق إضافة مستخدم كمساهم. ويتحكم المساهمون في كل حالات التحكم في حالة معينة باستثناء:
 

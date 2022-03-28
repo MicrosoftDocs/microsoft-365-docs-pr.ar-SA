@@ -6,7 +6,7 @@ metadata:
   author: SKjerland
   manager: scotv
   audience: Admin
-  ms.topic: faq
+  ms.topic: article
   ms.prod: microsoft-365-lighthouse
   ms.localizationpriority: medium
   ms.collection:
@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: بالنسبة إلى موفري الخدمات المدارة (MSPs) Microsoft 365 المنارة، احصل على إجابات على الأسئلة المتكررة (الأسئلة المتكررة) حول Microsoft 365 المنارة.
-  ms.openlocfilehash: 24edebe8ef0a04c3256937195252fd5421599558
-  ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+  ms.openlocfilehash: 746ec9210e517921d1c2145c9e87f0d339a67758
+  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 03/24/2022
-  ms.locfileid: "63775423"
+  ms.lasthandoff: 03/08/2022
+  ms.locfileid: "63574376"
 title: Microsoft 365 المنارة الأسئلة المتكررة (الأسئلة المتكررة)
 summary: >
   تحتوي هذه المقالة على إجابات على الأسئلة المتكررة (الأسئلة المتكررة) حول Microsoft 365 المنارة.
@@ -57,7 +57,7 @@ sections:
     answer: >
       قد يستغرق تحميل بيانات مستأجر العميل داخل المنارة ما يصل إلى 48 ساعة. إذا كان قد انتهى أكثر من 48 ساعة منذ أن أكملت عملية الادمال، فالرجاء التواصل مع فريق الدعم للحصول على المساعدة. ستحتاج إلى أن تعلمه عند إكمال التركب وتوفير أي لقطات شاشة وسجلات ذات صلة. لمزيد من المعلومات، راجع [الحصول على تعليمات ودعم Microsoft 365 المنارة](m365-lighthouse-get-help-and-support.md).
   - question: لماذا أرى بيانات لبعض مستأجري العملاء وليس للآخرين؟
-    answer: "لكي تظهر بيانات مستأجر العميل في المنارة، يجب على MSPs إنشاء وصول مفوض لإدارة مستأجر العميل. إن امتيازات المسؤول المفوض (DAP) مطلوبة لتكتاب العملاء في المنارة. نوصي بإنشاء امتيازات المسؤول المفوض (GDAP) مع العملاء لتمكين وصول مفوض أكثر أمانا. بينما يكون DAP و GDAP مترابطين، فإن GDAP سيكون له الأسبقية للعملاء حيث يكون النموذجان في مكانهما. قريبا، سيتمكن العملاء الذين لا يوجد معهم سوى GDAP (بدون DAP) من التمكن من الوصول إلى المنارة. لمزيد من المعلومات حول الوصول المفوض، راجع طلب علاقة موزع [مع عميل في مركز الشركاء](/partner-center/request-a-relationship-with-a-customer). يجب أن يكون لدى المستأجرين أيضا اشتراك Microsoft 365 Business Premium أو Microsoft 365 E3 واحد على الأقل وأقل من 1000 مستخدم مرخص في المستأجر الخاص بهم. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 المنارة](m365-lighthouse-requirements.md) Microsoft 365 [نظرة عامة على صفحة مستأجري المنارة](m365-lighthouse-tenants-page-overview.md).          \n"
+    answer: "\nلكي تظهر بيانات مستأجر العميل في المنارة، يجب على MSPs إنشاء امتيازات المسؤول المفوض (DAP) أو امتيازات المسؤول المفوض (GDAP) مع العملاء من خلال مركز الشركاء. لمزيد من المعلومات، راجع [طلب علاقة موزع مع عميل في مركز الشركاء](/partner-center/request-a-relationship-with-a-customer). يجب أن يكون لدى المستأجرين أيضا اشتراك Microsoft 365 Business Premium أو Microsoft 365 E3 واحد على الأقل وأقل من 1000 مستخدم مرخص في المستأجر الخاص بهم. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 المنارة](m365-lighthouse-requirements.md) Microsoft 365 [نظرة عامة على صفحة مستأجري المنارة](m365-lighthouse-tenants-page-overview.md).\n"
   - question: ماذا لو لم أرغب في رؤية مستأجرين معينين في Microsoft 365 المنارة؟
     answer: >
       إذا كنت لا تريد رؤية مستأجرين معينين وبياناتهم في "المنارة"، يمكنك إلغاء تنشيط هؤلاء المستأجرين. تنشيط مستأجر، اتبع الخطوات التالية:

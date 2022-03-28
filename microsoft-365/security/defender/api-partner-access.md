@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 8a80245f4e94ee6f5f413154cf9b6d2ea318f5e4
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: f0ed889cbc0a07a1f64bc0f717fe07fe877a98b9
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63570613"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754697"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>إنشاء تطبيق مع وصول الشريك Microsoft 365 Defender واجهات برمجة التطبيقات
 
@@ -77,7 +77,7 @@ Microsoft 365 Defender البيانات والإجراءات من خلال مج�
 
 2. انتقل إلى **تسجيلات Azure Active DirectoryApp** >  >  **التسجيل الجديد**.
 
-   ![صورة Microsoft Azure والتنقل إلى تسجيل التطبيق.](../../media/atp-azure-new-app2.png)
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="مقطع تسجيل أحد التطبيقات في مدخل Microsoft 365 Defender" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. في نموذج التسجيل:
 
@@ -87,18 +87,18 @@ Microsoft 365 Defender البيانات والإجراءات من خلال مج�
 
    بعد أن تملأ النموذج، حدد **تسجيل**.
 
-   ![صورة ل نموذج تسجيل أحد التطبيقات.](../..//media/atp-api-new-app-partner.png)
+   :::image type="content" source="../..//media/atp-api-new-app-partner.png" alt-text="أقسام تسجيل التطبيق في مدخل Microsoft 365 Defender" lightbox="../..//media/atp-api-new-app-partner.png":::
 
 4. في صفحة التطبيق الخاصة بك، حدد أذونات **APIAdd** >  **permissionAPIs** >  **تستخدم >**، وا اكتب الحماية من المخاطر من **Microsoft**، وحدد **الحماية من المخاطر من Microsoft**. يمكن لتطبيقك الآن الوصول إلى Microsoft 365 Defender.
 
    > [!TIP]
    > *Microsoft Threat Protection* هو اسم سابق Microsoft 365 Defender، ولن يظهر في القائمة الأصلية. ستحتاج إلى بدء كتابة اسمه في مربع النص لكي يظهر.
 
-   ![صورة تحديد أذونات API.](../../media/apis-in-my-org-tab.PNG)
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="قسم استخدام واجهات برمجة التطبيقات في مدخل Microsoft 365 Defender" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
 5. حدد **أذونات التطبيق**. اختر الأذونات ذات الصلة في السيناريو (على سبيل المثال **، Incident.Read.All**)، ثم حدد **إضافة أذونات**.
 
-   ![صورة الوصول إلى API واختيار API.](../../media/request-api-permissions.PNG)
+   :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="جزء أذونات التطبيق في مدخل Microsoft 365 Defender" lightbox="../../media/request-api-permissions.PNG":::
 
     > [!NOTE]
     > أنت بحاجة إلى تحديد الأذونات ذات الصلة في السيناريو الخاص بك. *ما عليك سوى قراءة كل* الأحداث كمثال. لتحديد الإذن الذي تحتاج إليه، يرجى الاطلاع على قسم **الأذونات** في API الذي تريد الاتصال به.
@@ -107,18 +107,18 @@ Microsoft 365 Defender البيانات والإجراءات من خلال مج�
 
 6. حدد **منح موافقة المسؤول**. في كل مرة تضيف فيها إذنا، يجب تحديد **منح موافقة** المسؤول لكي يتم هذا الأمر.
 
-    ![صورة لمنح الأذونات.](../../media/grant-consent.PNG)
+    :::image type="content" source="../../media/grant-consent.PNG" alt-text="مقطع لمنح موافقة المسؤول في مدخل Microsoft 365 Defender" lightbox="../../media/grant-consent.PNG":::
 
 7. لإضافة سر إلى التطبيق، حدد الشهادات **&،** وأضف وصفا للسر، ثم حدد **إضافة**.
 
     > [!TIP]
     > بعد تحديد **إضافة،** حدد **نسخ القيمة السرية التي تم إنشاؤها**. لن تتمكن من استرداد القيمة السرية بعد المغادرة.
 
-    ![صورة لمفتاح إنشاء تطبيق.](../../media/webapp-create-key2.png)
+      :::image type="content" source="../../media/webapp-create-key2.png" alt-text="القسم &quot;إضافة سرية&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/webapp-create-key2.png":::
 
 8. سجل "رقم التطبيق" وم ID المستأجر الخاص بك في مكان آمن. يتم سردها ضمن **نظرة عامة** على صفحة التطبيق.
 
-   ![صورة لم id التطبيق الذي تم إنشاؤه.](../../media/app-and-tenant-ids.png)
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="الجزء &quot;نظرة عامة&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/app-and-tenant-ids.png":::
 
 9. أضف التطبيق إلى مستأجر المستخدم.
 
@@ -136,7 +136,7 @@ Microsoft 365 Defender البيانات والإجراءات من خلال مج�
 
    بعد النقر فوق ارتباط الموافقة، سجل الدخول مع المسؤول العام لمستأجر المستخدم ووافق على التطبيق.
 
-   ![صورة الموافقة.](../../media/app-consent-partner.png)
+   :::image type="content" source="../../media/app-consent-partner.png" alt-text="صفحة طلب الموافقة في مدخل Microsoft 365 Defender" lightbox="../../media/app-consent-partner.png":::
 
    ستحتاج أيضا إلى طلب من المستخدم الخاص بك لمعرف المستأجر الخاص به. معرف المستأجر هو أحد المعرفين المستخدمين للحصول على رموز الوصول المميزة.
 
@@ -266,7 +266,8 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 
 في الصورة التالية، يمكنك رؤية رمز مميز تم فك تشفيره تم الحصول عليه من تطبيق، باستخدام ```Incidents.Read.All```، ```Incidents.ReadWrite.All```و، وأذونات ```AdvancedHunting.Read.All``` :
 
-![صورة التحقق من صحة الرمز المميز.](../../media/webapp-decoded-token.png)
+:::image type="content" source="../../media/webapp-decoded-token.png" alt-text="جزء الرمز المميز المفكك في مدخل Microsoft 365 Defender" lightbox="../../media/webapp-decoded-token.png":::
+
 
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>استخدام الرمز المميز للوصول إلى Microsoft 365 Defender API
 

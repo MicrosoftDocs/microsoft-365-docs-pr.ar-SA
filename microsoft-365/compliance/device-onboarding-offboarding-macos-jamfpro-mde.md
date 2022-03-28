@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: تعرف على كيفية تشغيل أجهزة macOS وإبقاف تشغيلها في Microsoft 365 التوافق باستخدام JAMF Pro لعملاء نقطة النهاية ل Microsoft Defender (معاينة)
-ms.openlocfilehash: f260d901f8f02c2c02007b2cc0d49ab9ee57dafd
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 7e2109f52590cc4d9ad23700fa4b51a09ae4b5db
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63716310"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63575108"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview"></a>أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في حلول التوافق باستخدام JAMF Pro ل Microsoft Defender لعملاء نقطة النهاية (معاينة)
 
@@ -37,8 +37,9 @@ ms.locfileid: "63716310"
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-- تأكد من إدارة أجهزة [macOS من خلال JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) ومقترنة بهوية (Azure AD انضم إلى UPN) من خلال JAMF الاتصال Intune.
-- تثبيت مستعرض v95+ Edge على أجهزة macOS
+- تأكد من أن [أجهزة macOS الخاصة بك منضمة إلى Azure AD](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
+- تأكد من إدارة [أجهزة macOS من خلال JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
+- تثبيت مستعرض v95+ Edge على أجهزة macOS 
 
 ## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>الأجهزة المجهزة في Microsoft 365 التوافق باستخدام JAMF Pro
 

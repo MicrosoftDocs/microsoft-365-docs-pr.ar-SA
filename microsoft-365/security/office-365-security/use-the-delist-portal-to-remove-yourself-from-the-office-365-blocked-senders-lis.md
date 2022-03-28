@@ -20,12 +20,12 @@ ms.custom:
 description: في هذه المقالة، ستتعرف على كيفية استخدام مدخل الحذف لإزالة نفسك من قائمة المرسلين المحظورين Microsoft 365 المحظورين. هذه هي أفضل استجابة لمعالجة الأخطاء التي تم رفضها في Access 5.7.511.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 36187288b2a7acf1a852e6c203cbb84035ba5d7a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 58ddb2913ce7ecd047b1d5acb360c8f4c9ff5074
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63566503"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775775"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>استخدام مدخل الحذف لإزالة نفسك من قائمة المرسلين المحظورين وعنوان 5.7.511 أخطاء رفض Access
 
@@ -55,7 +55,6 @@ ms.locfileid: "63566503"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvD]
 
-
 ## <a name="to-use-delist-portal-to-remove-yourself-from-the-blocked-senders-list-after-errors-like-57511-access-denied"></a>لاستخدام مدخل الحذف لإزالة نفسك من قائمة المرسلين المحظورين (بعد أخطاء مثل 5.7.511 رفض Access)
 
 1. في مستعرض ويب، انتقل إلى <https://sender.office.com>.
@@ -82,13 +81,13 @@ ms.locfileid: "63566503"
 راجع [إنشاء قوائم مرسلين آمنة في EOP](create-safe-sender-lists-in-office-365.md) والحماية من البريد العشوائي الصادر في [EOP](outbound-spam-controls.md) لمنع حظر IP.
 
 ### <a name="how-do-fix-error-code-57511"></a>كيفية إصلاح رمز الخطأ 5.7.511
- 
+
 عند وجود مشكلة في تسليم رسالة بريد إلكتروني أرسلتها، Microsoft 365 أو Office 365 رسالة بريد إلكتروني لتعلمك بها. البريد الإلكتروني الذي تتلقاه هو إعلام حالة التسليم، يعرف أيضا باسم DSN أو رسالة إعلام البريد المرتد. يسمى النوع الأكثر شيوعا تقرير بعدم التسليم (NDR) وأخبرك بأنه لم يتم تسليم رسالة. في بعض الحالات، يجب على Microsoft إجراء عمليات تحقيق إضافية ضد حركة المرور من IP، وإذا كنت تتلقى رمز NDR 5.7.511، لن تتمكن من استخدام مدخل الشطب.
- 
->   550 5.7.511 رفض الوصول، المرسل المحظور[xxx.xxx.xxx.xxx]. لطلب الإزالة من هذه القائمة، يجب إعادة توجيه هذه الرسالة delist@messaging.microsoft.com. لمزيد من المعلومات، انتقل إلى https://go.microsoft.com/fwlink/?LinkId=526653. 
- 
-في البريد الإلكتروني لطلب الإزالة من هذه القائمة، زودك NDR التعليمات البرمجية الكاملة وعنوان IP. ستتصل بك Microsoft في غضون 48 ساعة باستخدام الخطوات التالية. 
+
+> 550 5.7.511 رفض الوصول، المرسل المحظور[xxx.xxx.xxx.xxx]. لطلب الإزالة من هذه القائمة، يجب إعادة توجيه هذه الرسالة delist@messaging.microsoft.com. لمزيد من المعلومات، انتقل إلى <https://go.microsoft.com/fwlink/?LinkId=526653>.
+
+في البريد الإلكتروني لطلب الإزالة من هذه القائمة، زودك NDR التعليمات البرمجية الكاملة وعنوان IP. ستتصل بك Microsoft في غضون 48 ساعة باستخدام الخطوات التالية.
 
 ## <a name="more-information"></a>معلومات إضافية
-  
-نموذج الشطب ل **Outlook.com،** يمكن العثور على خدمة المستهلك [هنا](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75). تأكد من قراءة الأسئلة [الشائعة](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) أولا *لاتجاه* الإرسال.
+
+نموذج الشطب ل **Outlook.com،** يمكن العثور على خدمة المستهلك [هنا](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75). تأكد من قراءة الأسئلة [الشائعة](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) أولا _لاتجاه_ الإرسال.

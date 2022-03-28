@@ -1,0 +1,102 @@
+### YamlMime:FAQ
+metadata:
+  title: الأسئلة المتكررة حول Microsoft Defender for Business
+  description: الحصول على إجابات لأسئلتك حول Microsoft Defender for Business
+  search.appverid: MET150
+  author: denisebmsft
+  ms.author: deniseb
+  manager: dansimp
+  audience: Admin
+  ms.topic: overview
+  ms.date: 03/15/2022
+  ms.prod: m365-security
+  ms.technology: mdb
+  ms.localizationpriority: medium
+  ms.reviewer: inbadian, shlomiakirav
+  f1.keywords: NOCSH
+  ms.collection:
+  - SMB
+  - M365-security-compliance
+  ms.openlocfilehash: 7e853264254c556e28e9e8dc2ac81e27e17173e8
+  ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+  ms.translationtype: MT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 03/17/2022
+  ms.locfileid: "63575944"
+title: Microsoft Defender for Business - الأسئلة والأجوبة التي يتم طرحها بشكل متكرر
+summary: "يتم طرح Microsoft Defender for Business Microsoft 365 Business Premium العملاء، بدءا من 1 مارس 2022. يكون Defender for Business باشتراك مستقل في وضع المعاينة، وسوف يتم طرحه تدريجيا للعملاء وشركاء المعلومات الذين سجلوا هنا لطلبه.[](https://aka.ms/mdb-preview) تتضمن [المعاينة مجموعة أولية من السيناريوهات](mdb-tutorials.md#try-these-preview-scenarios)، وسنضيف القدرات بشكل منتظم.\n\nتتعلق بعض المعلومات الواردة في هذه المقالة بالمنتجات/الخدمات التي تم إصدارها مسبقا التي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، للمعلومات المتوفرة هنا. \n\nاستخدم هذه المقالة للحصول على إجابات على الأسئلة التي قد تكون لديك حول Defender for Business.\n"
+sections:
+- name: عام
+  questions:
+  - question: لدي اشتراك آخر في Microsoft Cloud. لماذا لا يمكنني رؤية Microsoft Defender for Business في مدخلي؟
+    answer: >
+      في الوقت الحالي، كلما كان لدى أحد العملاء اشتراكات متعددة، فإن أعلى اشتراك له الأسبقية. فيما يلي بعض الأمثلة:
+
+
+      - مثال 1: إذا كان لديك [Microsoft Defender لخطة](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) نقطة النهاية 2 (التي تم شراؤها أو الاشتراك التجريبي)، وكان لديك Microsoft Defender for Business، فإن Defender for Endpoint Plan 2 له الأسبقية. في هذه الحالة، لن ترى تجربة Defender for Business.
+
+
+      - المثال 2: إذا كان لديك [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) (تم شراؤه أو الاشتراك التجريبي)، وكان لديك الأسبقية ل Defender for Business، فإن Defender for Cloud له الأسبقية. في هذه الحالة، لن ترى تجربة Defender for Business.
+  - question: ما هي الاختلافات بين "Defender for Business" و"Defender" لخطتي نقطة النهاية 1 و2؟
+    answer: "تم تصميم Defender for Business للشركات الصغيرة والمتوسطة الحجم (ما يصل إلى 300 موظف). من خلال [عملية تكوين](mdb-simplified-configuration.md) مبسطة [](mdb-onboard-devices.md)وخيارات إعداد الجهاز، يمكن Defender for Business العملاء الذين ليس لديهم بالضرورة خلفية أمان لإعداد Defender for Business وتكوينه واستخدامه.  \n\nيوفر كل من Defender for Business و Defender for Endpoint قدرات حماية قوية من المخاطر لنقاط نهاية شركتك. لمعرفة المزيد حول الاختلافات، راجع [مقارنة Microsoft Defender for Business Microsoft 365 Business Premium](compare-mdb-m365-plans.md).\n"
+  - question: كيف يمكنني التسجيل للحصول على معاينة ل Defender for Business؟
+    answer: >
+      يتم طرح Defender for Business كجزء من Microsoft 365 Business Premium، بدءا من 1 مارس 2022. إذا كان لديك Microsoft 365 Business Premium، فسوف تحصل قريبا على قدرات Defender for Business تلقائيا.
+
+
+      لا يزال الإصدار مستقل من Defender for Business في وضع المعاينة. تفضل [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) بزيارة لتطبيق برنامج المعاينة. لمعرفة المزيد، [راجع كيفية الحصول على Microsoft Defender for Business](get-defender-business.md).
+  - question: هل هناك أي متطلبات أساسية لمعاينة Defender for Business؟
+    answer: >
+      يجب أن تكون شركتك واحدة من ما يلي:
+
+
+      - شريك يوفر خدمات المعلومات للشركات الصغيرة والمتوسطة الحجم
+
+
+      - شركة صغيرة أو متوسطة الحجم مع ما يصل إلى 300 موظف
+
+
+      ليس عليك بالفعل الحصول على اشتراك Microsoft 365 آخر. لمعرفة المزيد، راجع [متطلبات Microsoft Defender for Business](mdb-requirements.md).
+  - question: ما هو نموذج الترخيص في GA؟
+    answer: >
+      بدءا من 1 مارس 2022، يتم طرح Defender for Business كجزء من Microsoft 365 Business Premium. يصل Defender for Business الآن إلى التوفر العام (GA) Microsoft 365 Business Premium العملاء.
+
+
+      بالنسبة للعملاء الذين ليس لديهم Microsoft 365 Business Premium، فإن Defender for Business هو خيار كخطة مستقلة. لا يزال الإصدار مستقل من Defender for Business في وضع المعاينة، وسيصل إلى GA في وقت لاحق من هذه السنة التقويمية.
+  - question: إذا كنت أستخدم Microsoft 365 Business Premium، لماذا أحتاج إلى Defender for Business؟
+    answer: >
+      Microsoft 365 Business Premium حاليا قدرات إدارة الأجهزة و Defender Office 365 1 برنامج الحماية من الفيروسات من Microsoft Defender حماية الجيل التالي Windows الأجهزة. يوسع Defender for Business هذه الإمكانات من خلال إضافة المزيد من الأمان للأجهزة الخاصة بالشركة. لمعرفة المزيد، راجع المقالات التالية:
+
+
+      - [نظرة عامة حول Defender for Business](mdb-overview.md)
+
+
+      - [مقارنة Microsoft Defender for Business Microsoft 365 Business Premium](compare-mdb-m365-plans.md
+  - question: ماذا يحدث لمعاينة Defender for Business إذا تنتهي صلاحية عرض الإصدار التجريبي للمعاينة قبل وصول Defender for Business إلى التوفر العام (GA)؟
+    answer: >
+      يمكن لشركاء Microsoft تمديد تراخيص الإصدار التجريبي للمعاينة حتى نقطة GA. بمجرد اكتمال GA، لن يتم تمديد الإصدار التجريبي للمعاينة.
+  - question: ماذا يحدث إذا كان العميل لديه 20 مستخدما لديهم مزيج من الاشتراكات؟ على سبيل المثال، لنفترض أن 10 مستخدمين قد عينوا ترخيص Defender for Business و10 مستخدمين تم تعيينهم إلى ترخيص Defender for Endpoint Plan 2؟
+    answer: "التراخيص المختلطة غير معتمدة حاليا، نحن لا ندعم حاليا التراخيص المختلطة. يعمل الترخيص الأعلى وظيفيا على تعيين تجربة المستأجر. باستخدام مثالنا، ستكون تجربة المستأجر هي Defender for Endpoint Plan 2، وستتطلب 20 ترخيص Defender لخطة نقطة النهاية 2. \n"
+  - question: هل يمكنني تكوين أكثر من نهج تصفية محتوى ويب واحد في Defender for Business؟
+    answer: "حاليا، يدعم Defender for Business نهج تصفية ويب واحد فقط لكل مستأجر Defender for Business. \n"
+  - question: كيف يمكنني تشغيل التقارير المخصصة باستخدام Defender for Business؟
+    answer: >
+      يتضمن Defender for Business حاليا مجموعة من واجهات برمجة التطبيقات لدعم إعداد التقارير المخصصة القوية وموصل Power BI. يمكنك جدولة برنامج PowerShell النصي لإنشاء ملخصات تنفيذية تم تنسيقها بتنسيق HTML، وإرسال تلك الملخصات عبر البريد الإلكتروني.
+  - question: أنا شريك Microsoft. هل سأتمكن من إدارة مستأجرين متعددين من لوحة تحكم واحدة، أو سأتمكن من تسجيل الدخول إلى كل مستأجر على حدة؟
+    answer: >
+      يتم تمكين Defender for Business في Microsoft 365 المنارة لدعم المستأجرين المتعددين في وحدة تحكم واحدة. في الوقت الحالي، توفر لك قائمة انتظار الأحداث متعددة المستأجرين طريقة عرض عبر المستأجر للحوادث التي تتطلب الانتباه؛ ومع ذلك، يتم التكوين والتهيئة في مستأجر العميل باستخدام بيانات اعتماد الشريك. تم التخطيط لمزيد من سيناريوهات التكامل.
+  - question: كيف يمكنني تكوين قدرات وقواعد الحد من الهجمات في Defender for Business؟
+    answer: "التكوين المبسط لقواعد الحد من الهجمات وإمكانياتها عبر Defender for Business في Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) غير معتمد حتى الآن. إذا كان لديك إدارة نقاط النهاية من Microsoft، يمكنك استخدام إدارة نقاط النهاية لتكوين سياسات تقليل مساحة الهجوم. \n"
+  - question: إذا لم يكن لدي إدارة نقاط النهاية من Microsoft حاليا، هل أحتاج إلى ترخيص إضافي لاستخدام الميزات المضمنة في كل من Defender for Business إدارة نقاط النهاية؟
+    answer: "إذا كان لديك Defender for Business باشتراك مستقل وليس لديك Microsoft Intune (جزء من إدارة نقاط النهاية)، يمكنك إدارة أجهزة Windows في Defender for Business باستخدام مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). يمكنك أيضا إدارة سياسات حماية جدار الحماية من الجيل التالي في Microsoft 365 Defender من خلال [تجربة تكوين مبسطة](mdb-simplified-configuration.md). لإدارة إعدادات أخرى، مثل سياسات الحد من سطح الهجوم، أو لترك بعض الأجهزة (مثل أجهزة Android)، ستحتاج إلى إدارة نقاط النهاية.  \n"
+additionalContent: >-
+  ## <a name="see-also"></a>راجع أيضًا
+
+
+  - [نظرة عامة على Microsoft 365 Business Premium](/microsoft-365/business-premium/)
+
+
+  - [نظرة عامة حول Microsoft Defender for Business](mdb-overview.md)
+
+
+  - [مقارنة Microsoft Defender for Business Microsoft 365 Business Premium](compare-mdb-m365-plans.md)

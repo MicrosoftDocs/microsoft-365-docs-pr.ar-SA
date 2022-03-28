@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bbd4100466fbfef75363848bc5b89bbb9a769265
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: f6767b1a788129266bff713a6608277a2450598c
+ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63570801"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "63775885"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>تشغيل محلل العملاء على macOS و Linux
 
@@ -34,7 +34,7 @@ ms.locfileid: "63570801"
 1. قم [بتنزيل أداة محلل عميل XMDE](https://aka.ms/XMDEClientAnalyzer) إلى جهاز macOS أو Linux الذي تحتاج إلى التحقق منه.
 
    > [!NOTE]
-   > إن علامة تفرع SHA256 الحالية ل "XMDEClientAnalyzer.zip" التي يتم تنزيلها من الارتباط أعلاه هي: 'B95E2E21D5A93E0AC88BA401ACB20E5F721727B409D4186147C8D17468185583'.
+   > إن علامة تفرع SHA256 الحالية ل "XMDEClientAnalyzer.zip" التي يتم تنزيلها من الارتباط أعلاه هي: 'A9BF065DE3F2608A309BC4F5295548BB9931F107BF2F01DC42A789C5527C1308'.
 
 2. استخراج محتويات XMDEClientAnalyzer.zip على الجهاز.
 
