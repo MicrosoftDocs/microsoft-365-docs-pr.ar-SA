@@ -17,12 +17,12 @@ ms.collection:
 description: يمكن للمسؤولين التعرف على قيم مستوى الشكوى المجمعة (BCL) المستخدمة في Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 93eed15773acc505b0106510d3774d862c50e67a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8c50ca25a355ca142e36c67d03fad42c3aa461a2
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63567153"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679863"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>مستوى الشكوى المجمعة (BCL) في EOP
 
@@ -41,14 +41,11 @@ ms.locfileid: "63567153"
 
 يتم وصف عتبات BCL في الجدول التالي.
 
-****
-
 |BCL|الوصف|
 |:---:|---|
 |0|الرسالة ليست من مرسل مجمع.|
 |1, 2, 3|يتم إرسال الرسالة من مرسل مجمع ويولد بعض الشكوى.|
 |4, 5, 6, 7<sup>\*</sup>|يتم إرسال الرسالة من مرسل مجمع ينشئ عددا مختلطا من الشكوى.|
 |8, 9|الرسالة مرسلة من مرسل مجمع ينتج عنها عدد كبير من الشكوى.|
-|
 
 <sup>\*</sup> هذه هي قيمة العتبة الافتراضية المستخدمة في سياسات مكافحة البريد العشوائي.

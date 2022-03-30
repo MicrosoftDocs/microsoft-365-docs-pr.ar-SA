@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: يتيح لك "مستكشف المحتوى" عرض العناصر الملصقات بشكل أصلي.
-ms.openlocfilehash: 61d262c04d4a304506bc521d155be71f81d219ca
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: f402df53c19da78435e22717577b351fc302d0f4
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63566146"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679951"
 ---
 # <a name="get-started-with-content-explorer"></a>بدء استخدام مستكشف المحتوى
 
@@ -34,15 +34,7 @@ ms.locfileid: "63566146"
 
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
-يجب تعيين ترخيص لكل حساب يمكن الوصول إليه واستخدامه لتصنيف البيانات من أحد هذه الاشتراكات:
-
-- Microsoft 365 (E5)
-- Office 365 (E5)
-- الوظائف الإضافية للتوافق المتقدم (E5)
-- الوظائف الإضافية المتقدمة لذكاء المخاطر (E5)
-- Microsoft 365 E5/A5 إدارة & المعلومات
-- Microsoft 365 E5/توافق A5
-
+للحصول على متطلبات الترخيص، راجع [حماية المعلومات: تحليلات تصنيف البيانات: عبر المحتوى & النشاط](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
 
 ### <a name="permissions"></a>الأذونات
 

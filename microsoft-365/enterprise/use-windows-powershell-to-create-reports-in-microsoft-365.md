@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Ent_O365
@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'ملخص: استخدم PowerShell Microsoft 365 لإنشاء تقارير لا يمكنك إنتاجها في مركز مسؤولي Microsoft 365.'
-ms.openlocfilehash: 35c4e810dbbf0006a72c8073c3ead900812f5c66
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f29f9d6ac2f71163118b8e00eb78d39e16e0a79a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63568968"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679907"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>استخدم PowerShell لإنشاء تقارير Microsoft 365
 

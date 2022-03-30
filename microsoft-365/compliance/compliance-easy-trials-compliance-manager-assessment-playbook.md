@@ -6,7 +6,7 @@ ms.author: chvukosw
 author: chvukosw
 manager: laurawi
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: الإصدار التجريبي لتقييمات Microsoft Compliance Manager المتميزة.
-ms.openlocfilehash: 7beff27d5d2eb7693f165d479bbc8df6e190d028
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 47b9e37cb3b73733028254849048cf1f0f058448
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570924"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680061"
 ---
 # <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>دليل التشغيل التجريبي: التقييمات المتميزة من Microsoft Compliance Manager
 

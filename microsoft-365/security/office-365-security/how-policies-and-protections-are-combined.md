@@ -17,12 +17,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على ترتيب تطبيق الحماية في Exchange Online Protection (EOP)، وكيفية تحديد قيمة الأولوية في نهج الحماية النهج الذي يتم تطبيقه.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5fbccec656e0508535c2fbdaa055777a07968878
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1debec0d2f8ca1498fd674f3d5a2d5a4681196eb
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63566105"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679775"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>ترتيب حماية البريد الإلكتروني وأسبقيته
 
@@ -41,10 +41,6 @@ ms.locfileid: "63566105"
 
 - **أولوية نوع حماية** البريد الإلكتروني: هذا الطلب غير قابل للتكوين، كما هو موضح في الجدول التالي:
 
-  <br>
-
-  ****
-
   |الأولوية|حماية البريد الإلكتروني|الفئة|مكان الإدارة|
   |---|---|---|---|
   |1|البرامج الضارة|CAT:MALW|[تكوين سياسات مكافحة البرامج الضارة في EOP](configure-anti-malware-policies.md)|
@@ -55,7 +51,6 @@ ms.locfileid: "63566105"
   |6<sup>\*</sup>|انتحال المجال (المجالات المحمية)|DIMP|[تكوين سياسات مكافحة التصيد الاحتيالي في Microsoft Defender Office 365](configure-mdo-anti-phishing-policies.md)|
   |7|البريد العشوائي|CAT:SPM|[تكوين سياسات مكافحة البريد العشوائي في EOP](configure-your-spam-filter-policies.md)|
   |8|مجمع|CAT:BULK|[تكوين سياسات مكافحة البريد العشوائي في EOP](configure-your-spam-filter-policies.md)|
-  |
 
   <sup>\*</sup>لا تتوفر هذه الميزات إلا في سياسات مكافحة التصيد الاحتيالي في Microsoft Defender Office 365.
 
@@ -66,15 +61,10 @@ ms.locfileid: "63566105"
 
 على سبيل المثال، ضع في اعتبارك سياسات مكافحة التصيد الاحتيالي التالية في Microsoft Defender ل Office 365 التي تنطبق على نفس المستخدمين، ورسالة تم تعريفها على أنها كل من انتحال المستخدم والخادعة:
 
-<br>
-
-****
-
 |اسم النهج|الأولوية|انتحال المستخدم|مكافحة ال انتحال|
 |---|---|---|---|
 |النهج A|1|في|إيقاف التشغيل|
 |النهج B|2|إيقاف التشغيل|في|
-|
 
 1. يتم وضع علامة على الرسالة ومعاملتها على أنها انتحال، لأن الانتحال له أولوية أعلى (4) من انتحال المستخدم (5).
 2. يتم تطبيق النهج A على المستخدمين لأنه له أولوية أعلى من النهج B.

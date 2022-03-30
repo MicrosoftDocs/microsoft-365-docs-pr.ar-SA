@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 الإصدار التجريبي لحلول التوافق.
-ms.openlocfilehash: 896e3fe81c74cc2a594ab88807e0b9505fed1a18
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: e0d48ba9c4a5ca50869b64d6312fe845ef9bf50c
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754260"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679885"
 ---
 # <a name="trial-playbook-microsoft-365-compliance-solutions"></a>دليل التشغيل التجريبي: Microsoft 365 التوافق
 
@@ -434,6 +434,6 @@ ms.locfileid: "63754260"
 
 **الميزات المضمنة**: للحصول على قائمة كاملة Microsoft 365 والميزات المدرجة حسب مستوى المنتج، يمكنك عرض [مصفوفة الميزات](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-**مكتبة المحتويات التقنية في Microsoft Security**: استكشف هذه المكتبة للعثور على أدلة تفاعلية ومحتوى تعلم آخر ذي صلة باحتياجاتك. [تفضل بزيارة المكتبة](/security).
+**مكتبة المحتويات التقنية في Microsoft Security**: استكشف هذه المكتبة للعثور على أدلة تفاعلية ومحتوى تعلم آخر ذي صلة باحتياجاتك. [تفضل بزيارة المكتبة](/security/content-library).
 
 **موارد أمان Microsoft**: من مكافحة البرامج الضارة إلى الثقة الصفرية، احصل على كل الموارد ذات الصلة لتلبية احتياجات أمان مؤسستك. [تفضل بزيارة الموارد](/security/business/resources).
