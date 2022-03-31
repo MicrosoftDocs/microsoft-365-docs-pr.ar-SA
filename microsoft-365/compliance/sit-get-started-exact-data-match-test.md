@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: تكوين الخدمات
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d0870cda205168e73d40adef7cdab333c7f0abdf
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 583a07eee97024d59efc8d81c1d7a9fd02d176ff
+ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679929"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63578550"
 ---
 # <a name="test-an-exact-data-match-sensitive-information-type"></a>اختبار نوع معلومات دقيق يطابق المعلومات الحساسة
 
@@ -69,7 +69,7 @@ Test-DataClassification  -ClassificationNames “[Your EDM sensitive info type]�
 
 - [سياسات DLP](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
 - [سياسات التسمية التلقائية](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Microsoft Defender لتطبيقات السحابة](/cloud-app-security/data-protection-policies)
+- [Microsoft Cloud App Security الملفات](/cloud-app-security/data-protection-policies)
 
 ## <a name="troubleshooting-tips"></a>تلميحات استكشاف الأخطاء وإصلاحها
 

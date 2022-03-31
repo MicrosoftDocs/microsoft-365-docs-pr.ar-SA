@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين التعرف على كيفية استخدام نهج التسليم المتقدم في Exchange Online Protection (EOP) لتحديد الرسائل التي لا يجب تصفيتها في سيناريوهات محددة معتمدة (عمليات محاكاة التصيد الاحتيالي من جهة خارجية والرسائل التي يتم تسليمها إلى علب بريد عمليات الأمان (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1abb2c1710d1a7bd101801110e3c44f3b8e2ae65
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: bf564765b9bb896fcfcdac01961d414139199603
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775863"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "63578192"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>تكوين تسليم عمليات محاكاة التصيد الاحتيالي من جهة خارجية إلى المستخدمين والرسائل التي لم يتم فصلها إلى علب بريد SecOps
 
@@ -446,7 +446,7 @@ Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Id
 عدل هذا المثال تاريخ انتهاء صلاحية الإدخال المحدد.
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery -Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+Set-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
 ```
 
 للحصول على معلومات مفصلة حول بناء الجملة والمعلمات، راجع [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
@@ -490,7 +490,7 @@ Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids 
 عدل هذا المثال تاريخ انتهاء صلاحية الإدخال المحدد.
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery -Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
+Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –Entries "*.fabrikam.com" -ExpirationDate 9/11/2021
 ```
 
 للحصول على بناء جملة تفصيلي ومعلومات المعلمة، راجع [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
