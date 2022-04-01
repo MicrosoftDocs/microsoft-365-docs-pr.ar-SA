@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة إلى موفري الخدمات المدارة (MSPs) Microsoft 365 المنارة، احصل على تعليمات حول استكشاف أخطاء رسائل الخطأ ومشاكلها وحلها.
-ms.openlocfilehash: 49e6657815ed71476a3dc79d778f7e1fbacfa1f4
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 957177dd20817f9b3d5fbc378f22b19eeaef1f7f
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775445"
+ms.locfileid: "64403663"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>استكشاف المشاكل ورسائل الخطأ وحلها في Microsoft 365 المنارة
 
@@ -53,8 +53,8 @@ ms.locfileid: "63775445"
 
 **السبب:** لا يلبي مستأجرو العملاء المعايير التالية:
 
-  - يجب أن يكون قد تم إعداد (DAP) مفوض لموفر الخدمة المدارة (MSP) ليتمكن من إدارة العميل tenaant*
-  - يجب أن يكون لديك ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business
+  - يجب أن يكون قد تم إعداد (DAP) مفوض لموفر الخدمة المدارة (MSP) لكي يتمكن من إدارة مستأجر العميل*
+  - يجب أن يكون لديك ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business ترخيص
   - يجب ألا يكون هناك أكثر من 1000 مستخدم مرخص 
 
 **الحل:** يصف الجدول التالي مختلف حالة المستأجر التي تتطلب إجراء ويشرح كيفية حلها.

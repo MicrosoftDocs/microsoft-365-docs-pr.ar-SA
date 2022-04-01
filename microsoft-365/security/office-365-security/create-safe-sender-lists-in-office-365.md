@@ -8,6 +8,7 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 search.appverid:
 - MET150s
@@ -17,12 +18,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على الخيارات المتوفرة والمفضلة للسماح بالرسائل الواردة في Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3c12511a3e5b4011765f744e714086cbb7924c7b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b1edcbba31075e9880b8ea2034f4ffde50bb71e9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63566338"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465718"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>إنشاء قوائم مرسلين آمنة في EOP
 
@@ -30,7 +31,7 @@ ms.locfileid: "63566338"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 إذا كنت عميل Microsoft 365 مع علب بريد في Exchange Online أو عميل Exchange Online Protection (EOP) مستقل بدون علب بريد Exchange Online، فإن EOP يوفر طرقا متعددة لضمان تلقي المستخدمين للبريد الإلكتروني من مرسلين موثوق بهم. تتضمن هذه الخيارات Exchange قواعد تدفق البريد الإلكتروني (المعروفة أيضا بقواعد النقل) ومرسلي Outlook خزينة وقائمة السماح ب IP (تصفية الاتصال) وقوائم المرسلين المسموح بها أو قوائم المجالات المسموح بها في سياسات مكافحة البريد العشوائي. بشكل جماعي، يمكنك التفكير في هذه الخيارات ك قوائم _مرسلين آمنة_.
@@ -100,7 +101,8 @@ ms.locfileid: "63566338"
 
       عندما تتخطى رسالة `SFV:SKN` تصفية البريد العشوائي بسبب قاعدة تدفق البريد، يتم وضع طابع على قيمة القيمة في **رأس X-Forefront-Antispam-Report** . إذا كانت الرسالة من مصدر في قائمة السماح ب IP `IPV:CAL` ، فيضاف أيضا القيمة. يمكن أن تساعدك هذه القيم في استكشاف الأخطاء وإصلاحها.
 
-![إعدادات قاعدة تدفق البريد في EAC لتجاوز تصفية البريد العشوائي.](../../media/1-AllowList-SkipFilteringFromContoso.png)
+      :::image type="content" source="../../media/1-AllowList-SkipFilteringFromContoso.png" alt-text="إعدادات قاعدة تدفق البريد في EAC لتجاوز تصفية البريد العشوائي" lightbox="../../media/1-AllowList-SkipFilteringFromContoso.png":::
+
 
 ## <a name="use-outlook-safe-senders"></a>استخدام Outlook خزينة المرسلين
 

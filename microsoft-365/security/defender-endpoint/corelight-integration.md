@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34e8b1f97319e4881175c7d79629dbed83730738
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 3a7a4b7ab842baaadb276e60037451e8eb919bf9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63578576"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465441"
 ---
 # <a name="enable-corelight-data-integration"></a>تمكين تكامل بيانات Corelight
 
@@ -38,7 +38,7 @@ ms.locfileid: "63578576"
 
 لقد قامت Microsoft ب شراكة مع [Corelight](https://corelight.com/integrations/iot-security)، موفر النظام الأساسي المفتوح للكشف عن الشبكة والاستجابة (NDR) في المجال، لمساعدتك على اكتشاف أجهزة IoT/OT عبر مؤسستك. باستخدام البيانات، المرسلة من أجهزة شبكة Corelight، Microsoft 365 Defender رؤية أكثر في أنشطة الشبكة للأجهزة غير المراقبة، بما في ذلك الاتصال بأجهزة أخرى غير مستخدمة أو شبكات خارجية.
 
-مع تمكين مصدر البيانات هذا، يتم إرسال كل الأحداث من أجهزة شبكة Corelight إلى Microsoft 365 Defender. يمكنك عرض هذه الأنشطة في المخطط الزمني للأجهزة غير التي يتم إدارةها، والمتوفر في مخزون أجهزة نقطة النهاية ل Microsoft Defender. لمزيد من المعلومات، راجع [اكتشاف الجهاز](device-discovery.md).
+مع تمكين مصدر البيانات هذا، يتم إرسال كل الأحداث من أجهزة شبكة Corelight إلى Microsoft 365 Defender. يمكنك عرض هذه الأنشطة في المخطط الزمني للأجهزة غير التي يتم إدارةها، والمتوفر في Microsoft Defender لنقطة النهاية الأجهزة. لمزيد من المعلومات، راجع [اكتشاف الجهاز](device-discovery.md).
 
 ## <a name="enabling-the-corelight-integration"></a>تمكين تكامل Corelight
 
@@ -52,7 +52,7 @@ ms.locfileid: "63578576"
 
 1. في جزء التنقل من [https://security.microsoft.com](https://security.microsoft.com/) المدخل **، حدد الإعدادات** \> **بيانات** \> اكتشاف **الجهاز**.
 
-    ![صورة مصادر البيانات](images/enable-corelight.png)
+   :::image type="content" source="images/enable-corelight.png" alt-text="صفحة مصادر البيانات في مدخل Microsoft 365 Defender" lightbox="images/enable-corelight.png":::
 
 2. حدد **إرسال بيانات Corelight إلى M365D** وحدد **حفظ**.
 
@@ -81,15 +81,15 @@ ms.locfileid: "63578576"
 1. في المقطع تكوين واجهة GUI لمستشعر Corelight، حدد **تصدير المستشعر**\>.
 2. من القائمة، انتقل إلى **تصدير إلى KAFKA** وحدد مفتاح التبديل لكي يتم تشغيلها.
 
-   ![صورة لتصدير kafka](images/exporttokafka.png)
+   :::image type="content" source="images/exporttokafka.png" alt-text="تصدير kafka" lightbox="images/exporttokafka.png":::
 
 3. بعد ذلك، قم بتصدير **إلى AZURE DEFENDER ل IOT** وأدخل "الم IOT" الخاص بك للمستأجر، كما هو ملاحظ في الخطوة 1، في حقل "الم ID المستأجر".
 
-   ![صورة لتصدير iot](images/exporttodiot.png)
+   :::image type="content" source="images/exporttodiot.png" alt-text="تصدير iot" lightbox="images/exporttodiot.png":::
 
 4. حدد **تطبيق التغييرات**.
 
-   ![تطبيق صورة ](images/corelightapply.png)
+   :::image type="content" source="images/corelightapply.png" alt-text="الأيقونة &quot;تطبيق التغييرات&quot;" lightbox="images/corelightapply.png":::
 
 > [!NOTE]
 > يجب عدم تغيير خيارات التكوين في كافكا (باستثناء استبعاد السجل و عوامل التصفية). سيتم تجاهل أي تغييرات تم إدخالها.

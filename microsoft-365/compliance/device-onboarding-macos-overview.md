@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: تعرف على كيفية وضع أجهزة macOS في حلول التوافق
-ms.openlocfilehash: 93a930f13a17c19c3ff7209295ddada648b9575a
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 783179ae749ac7cd6de671435927ba5bbdbdacad
+ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63575890"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64387004"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>أجهزة macOS المجهزة في Microsoft 365 عامة (معاينة)
 
@@ -27,14 +27,14 @@ ms.locfileid: "63575890"
 
 **ينطبق على:**
 
-- [Microsoft 365 فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
+- [منع فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
 - [إدارة مخاطر Insider](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## <a name="before-you-begin"></a>قبل البدء
 
 قبل بدء استخدام Endpoint DLP على أجهزة macOS (Catalina 10.15 أو أي وقت لاحق)، يجب أن تطلع نفسك على المقالات التالية:
 
-- [التعرف على Microsoft 365 فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
+- [التعرف على منع فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
 - [بدء استخدام منع فقدان بيانات نقطة النهاية](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 
 إذا لم تكن ملما باستخدام DLP على الإطلاق، يجب عليك التعرف على هذه المقالات أيضا:
@@ -87,10 +87,7 @@ ms.locfileid: "63575890"
    > [!NOTE]
    > على الرغم من أن تمكين تشغيل الجهاز يستغرق عادة حوالي 60 ثانية، يرجى السماح بما يصل إلى 30 دقيقة قبل التفاعل مع دعم Microsoft.
 
-2. افتح صفحة إعدادات مركز التوافق واختر **أجهزة Onboard**.
-
-   > [!div class="mx-imgBorder"]
-   > ![تمكين إدارة الأجهزة.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. افتح صفحة إعدادات مركز التوافق واختر **تشغيل مراقبة أجهزة macOS**.
 
 ## <a name="next-steps"></a>الخطوات التالية
 
@@ -99,9 +96,9 @@ ms.locfileid: "63575890"
 الموضوع | الوصف
 :---|:---
 |[أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في Microsoft 365 التوافق باستخدام Intune (معاينة)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|بالنسبة إلى أجهزة macOS التي يتم إدارتها من خلال Intune
-|[أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في حلول التوافق باستخدام Intune لعملاء نقطة النهاية ل Microsoft Defender (معاينة)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |بالنسبة إلى أجهزة macOS التي يتم إدارتها من خلال Intune التي تم نشر Microsoft Defender for Endpoint (MDE) لها
+|[أجهزة macOS التي تعمل باللوح واللوح خارجها في حلول التوافق باستخدام Intune لعملاء Microsoft Defender لنقطة النهاية (معاينة)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |بالنسبة إلى أجهزة macOS التي يتم إدارتها من خلال Intune Microsoft Defender لنقطة النهاية (MDE) التي تم نشرها عليها
 |[أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في Microsoft 365 التوافق باستخدام JAMF Pro (معاينة)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | بالنسبة إلى أجهزة macOS التي يتم إدارتها من خلال JAMF Pro
-|[أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في حلول التوافق باستخدام JAMF Pro ل Microsoft Defender لعملاء نقطة النهاية (معاينة)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|بالنسبة إلى أجهزة macOS التي يتم إدارتها من خلال JAMF Pro التي تم نشر Microsoft Defender for Endpoint (MDE) لها
+|[أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في حلول التوافق باستخدام JAMF Pro لعملاء Microsoft Defender لنقطة النهاية (معاينة)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|بالنسبة إلى أجهزة macOS التي يتم إدارتها من خلال PRO JAMF التي تم نشرها Microsoft Defender لنقطة النهاية (MDE) عليها
 
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة

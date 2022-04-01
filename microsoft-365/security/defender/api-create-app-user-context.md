@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 88b1bc6c46296e3694ef53ae733955a1491b21c7
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: fdba7ee1b1cf2f46bd17c648c7cda48f1ca65490
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63570193"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755230"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>إنشاء تطبيق للوصول Microsoft 365 Defender واجهات برمجة التطبيقات بالنيابة عن المستخدم
 
@@ -69,11 +69,12 @@ Microsoft 365 Defender البيانات والإجراءات من خلال مج�
 
 2. انتقل إلى **تسجيلات Azure Active DirectoryApp** >  >  **التسجيل الجديد**.
 
-   ![صورة Microsoft Azure والتنقل إلى تسجيل التطبيق.](../../media/atp-azure-new-app2.png)
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="خيار التسجيل &quot;جديد&quot; في الجزء &quot;إدارة&quot; في مدخل Azure" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. في النموذج، اختر اسما للتطبيق وأدخل المعلومات التالية لمعاينة إعادة التوجيه، ثم حدد **تسجيل**.
 
-   ![صورة نافذة إنشاء تطبيق.](../../media/nativeapp-create2.PNG)
+   :::image type="content" source="../../media/nativeapp-create2.PNG" alt-text="جزء تسجيل التطبيق في مدخل Azure" lightbox="../../media/nativeapp-create2.PNG":::
+   
 
    - **نوع التطبيق:** عميل عام
    - **إعادة توجيه URI:** https://portal.azure.com
@@ -83,11 +84,11 @@ Microsoft 365 Defender البيانات والإجراءات من خلال مج�
    > [!TIP]
    > *Microsoft Threat Protection* هو اسم سابق Microsoft 365 Defender، ولن يظهر في القائمة الأصلية. ستحتاج إلى بدء كتابة اسمه في مربع النص لكي يظهر.
 
-   ![صورة تحديد أذونات API.](../../media/apis-in-my-org-tab.PNG)
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="جزء واجهات برمجة التطبيقات في مؤسستك في مدخل Microsoft 365 Defender" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
    - اختر **الأذونات المفوضة**. اختر الأذونات ذات الصلة في السيناريو (على سبيل المثال **Incident.Read**)، ثم حدد **إضافة أذونات**.
 
-   ![صورة الوصول إلى API واختيار API.](../../media/request-api-permissions-delegated.PNG)
+     :::image type="content" source="../../media/request-api-permissions-delegated.PNG" alt-text="جزء الأذونات المفوضة في مدخل Microsoft 365 Defender" lightbox="../../media/request-api-permissions-delegated.PNG":::
 
     > [!NOTE]
     > أنت بحاجة إلى تحديد الأذونات ذات الصلة في السيناريو الخاص بك. *ما عليك سوى قراءة كل* الأحداث كمثال. لتحديد الإذن الذي تحتاج إليه، يرجى الاطلاع على قسم **الأذونات** في API الذي تريد الاتصال به.
@@ -96,11 +97,11 @@ Microsoft 365 Defender البيانات والإجراءات من خلال مج�
 
 5. حدد **منح موافقة المسؤول**. في كل مرة تضيف فيها إذنا، يجب تحديد **منح موافقة** المسؤول لكي يتم هذا الأمر.
 
-   ![صورة لمنح الأذونات.](../../media/grant-consent-delegated.PNG)
+   :::image type="content" source="../../media/grant-consent-delegated.PNG" alt-text="جزء منح موافقة المسؤول في مدخل Microsoft 365 Defender" lightbox="../../media/grant-consent-delegated.PNG":::
 
 6. سجل "رقم التطبيق" وم ID المستأجر الخاص بك في مكان آمن. يتم سردها ضمن **نظرة عامة** على صفحة التطبيق.
 
-   ![صورة لم id التطبيق الذي تم إنشاؤه.](../../media/app-and-tenant-ids.png)
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="الجزء &quot;نظرة عامة&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/app-and-tenant-ids.png":::
 
 ## <a name="get-an-access-token"></a>الحصول على رمز وصول مميز
 
@@ -131,7 +132,7 @@ $response.AccessToken
 
 في الصورة التالية، يمكنك رؤية رمز مميز تم فك تشفيره تم الحصول عليه من تطبيق، باستخدام ```Incidents.Read.All```، ```Incidents.ReadWrite.All```و، وأذونات ```AdvancedHunting.Read.All``` :
 
-![صورة التحقق من صحة الرمز المميز.](../../media/webapp-decoded-token.png)
+:::image type="content" source="../../media/defender-endpoint/webapp-decoded-token.png" alt-text="مقطع الأذونات في جزء الرمز المميز المفكك في مدخل Microsoft 365 Defender" lightbox="../../media/defender-endpoint/webapp-decoded-token.png":::
 
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>استخدام الرمز المميز للوصول إلى Microsoft 365 Defender API
 

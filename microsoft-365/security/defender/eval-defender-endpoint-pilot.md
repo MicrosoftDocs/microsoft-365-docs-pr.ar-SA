@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: adaf1a7798c9e2e7b016a85577c1f62995a7a78e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 4fff094b06dfa265f9fc44c568216582083ce1d9
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63578406"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755477"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>تجريبي ل Microsoft Defender لنقطة النهاية
 
@@ -34,7 +34,7 @@ ms.locfileid: "63578406"
 
 استخدم الخطوات التالية لإعداد التجربة وتكوينها ل Microsoft Defender ل Endpoint. 
 
-![خطوات لإضافة Microsoft Defender for Identity إلى بيئة تقييم Defender.](../../media/defender/m365-defender-endpoint-pilot-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-pilot-steps.png" alt-text="خطوات إضافة Microsoft Defender for Identity إلى بيئة تقييم Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-pilot-steps.png":::
 
 - الخطوة 1. التحقق من مجموعة تجريبية
 - الخطوة 2. تجربة الإمكانات

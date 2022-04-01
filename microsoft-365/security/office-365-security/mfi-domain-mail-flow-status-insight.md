@@ -7,6 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -14,12 +15,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على كيفية استخدام معلومات حالة تدفق البريد للمجالات العليا في لوحة معلومات تدفق البريد في مركز التوافق ل & الأمان استكشاف مشاكل تدفق البريد المرتبطة بسجلات MX وإصلاحها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e4ed59e31cd21826eebf306e566610d54635f0c4
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3994859c1d5a4e0026f61dcc24a9735c6122ad15
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63566553"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465410"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>معرفة حالة تدفق بريد المجال العلوي في مركز & الأمان
 
@@ -27,14 +28,14 @@ ms.locfileid: "63566553"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 توفر **لك معرفة حالة تدفق البريد** للمجال العلوي [](mail-flow-insights-v2.md) في لوحة معلومات تدفق البريد [في](https://protection.office.com) مركز التوافق & الأمان حالة تدفق البريد الحالية لمنظمتك.
 
 تساعدك هذه المعرفة على تحديد المجالات التي تواجه مشاكل في ***تدفق*** البريد وإصلاحها. على سبيل المثال، يتعذر على المجال تلقي بريد إلكتروني خارجي بسبب انتهاء صلاحية المجال أو لأن المجال لديه سجل MX غير صحيح.
 
-![عنصر واجهة مستخدم حالة تدفق المجال العلوي في لوحة معلومات تدفق البريد في مركز & الأمان.](../../media/mfi-top-domain-mail-flow-status-widget.png)
+:::image type="content" source="../../media/mfi-top-domain-mail-flow-status-widget.png" alt-text="عنصر واجهة مستخدم حالة تدفق المجال العلوي في لوحة معلومات تدفق البريد في مركز & الأمان" lightbox="../../media/mfi-top-domain-mail-flow-status-widget.png":::
 
 عند النقر فوق **عرض التفاصيل** في عنصر واجهة المستخدم، تظهر  عنصر تحكم منسدل حالة المجال يعرض لك المزيد من التفاصيل حول حالة كل مجال:
 
@@ -48,7 +49,7 @@ ms.locfileid: "63566553"
 
 يمكنك النقر فوق **عرض المزيد** للاطلاع على المعلومات نفسها لمزيد من المجالات.
 
-![القائمة العلوية لالتفاصيل في معرفة حالة تدفق بريد المجال العلوي.](../../media/mfi-top-domain-mail-flow-status-view-details.png)
+:::image type="content" source="../../media/mfi-top-domain-mail-flow-status-view-details.png" alt-text="القائمة العلوية &quot;تفاصيل&quot; في تحليلات حالة تدفق بريد المجال العلوي" lightbox="../../media/mfi-top-domain-mail-flow-status-view-details.png":::
 
 ## <a name="see-also"></a>راجع أيضًا
 

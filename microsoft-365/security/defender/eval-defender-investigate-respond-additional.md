@@ -23,12 +23,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: cc57c2b39466e84d5652ef60c56d6951fbe86714
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0ad2fc9a1566e7816b3ff806b7d07ac29347cc89
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63574006"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63754770"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>تجربة Microsoft 365 Defender الاستجابة للحوادث في بيئة تجريبية
 
@@ -51,7 +51,8 @@ ms.locfileid: "63574006"
 
 يمكنك الوصول إلى قائمة انتظار الأحداث من & **تنبيهات** > على التشغيل السريع <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender المدخل</a>. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="مثال على قائمة انتظار الحادث.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="المقطع &quot;& تنبيهات الأحداث&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+
 
 يعرض **قسم الأحداث والتنبيهات** الأخيرة رسما بيانيا لعدد التنبيهات التي تم تلقيها والحوادث التي تم إنشاؤها في آخر 24 ساعة.
 
@@ -63,7 +64,7 @@ ms.locfileid: "63574006"
 
 من قائمة انتظار الأحداث الافتراضية، حدد **عوامل** التصفية لرؤية جزء **عوامل** التصفية، الذي يمكنك تحديد مجموعة معينة من الأحداث منه. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="مثال ل جزء عوامل التصفية  الانتظار للحادث.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="جزء عوامل التصفية من المقطع & التنبيهات في مدخل Microsoft 365 Defender" lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 لمزيد من المعلومات، راجع [تحديد أولوية الأحداث](incident-queue.md).
 
@@ -71,7 +72,7 @@ ms.locfileid: "63574006"
 
 يمكنك إدارة الأحداث من الجزء **إدارة** الأحداث لحادث ما. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="مثال على جزء إدارة حادث لحادث.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="الجزء &quot;إدارة الأحداث&quot; من القسم &quot;& الأحداث&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 يمكنك عرض هذا الجزء من الارتباط **إدارة الحادث** على:
 
@@ -112,11 +113,12 @@ ms.locfileid: "63574006"
 
 فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="مركز الإجراءات الموحد في Microsoft 365 Defender.":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="مركز الإجراءات الموحدة في مدخل Microsoft 365 Defender" lightbox="../../media/m3d-action-center-unified.png":::
 
 من مركز الإجراءات، يمكنك تحديد الإجراءات المعلقة ثم الموافقة عليها أو رفضها في جزء قائمة منتظة. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="الموافقة على إجراء أو رفضه.":::
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="يعرض الجزء خيارات الموافقة على إجراء أو رفضه في مدخل Microsoft 365 Defender" lightbox="../../media/air-actioncenter-itemselected.png":::
+
 
 يمكنك الموافقة على (أو رفض) الإجراءات المعلقة في أسرع وقت ممكن بحيث يمكن متابعة عمليات التحقيق التلقائية وإكمالها في الوقت المناسب.
 
@@ -187,7 +189,7 @@ ms.locfileid: "63574006"
       > [!NOTE]
       > راجع الخطوة التالية للحصول على خيارات التصفية للحد من إرجاع البيانات.
 
-      ![مثال لنتائج استعلام البحث المتقدم.](../../media/advanced-hunting-incident-response-try-1.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-1.png" alt-text="صفحة &quot;الصيد المتقدم&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/advanced-hunting-incident-response-try-1.png":::
 
         > [!NOTE]
         > يعرض البحث المتقدم نتائج الاستعلام كالبيانات الجدولية. يمكنك أيضا اختيار عرض البيانات بأنواع تنسيقات أخرى مثل المخططات.
@@ -201,7 +203,7 @@ ms.locfileid: "63574006"
 
    1. انقر فوق الصفوف الناتجة من الاستعلام حتى تتمكن من فحص السجل.
 
-      ![مثال للوحة فحص جانب السجل التي تفتح عند تحديد نتيجة عملية صيد متقدمة.](../../media/advanced-hunting-incident-response-try-2.png)
+      :::image type="content" source="../../media/advanced-hunting-incident-response-try-2.png" alt-text="مقطع فحص السجل من صفحة &quot;الصيد المتقدم&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/advanced-hunting-incident-response-try-2.png":::
 
 4. الآن وقد قمت بالتحقق من أنه يمكنك رؤية البريد الإلكتروني، أضف عامل تصفية للمرفقات. ركز على كل رسائل البريد الإلكتروني التي بها مرفقات في البيئة. بالنسبة لهذه المحاكاة، ركز على رسائل البريد الإلكتروني الواردة، وليس تلك التي يتم إرسالها من بيئتك. قم بإزالة أي عوامل تصفية أضفتها لتحديد موقع رسالتك وإضافة "| حيث **يكون عدد المرفقات > 0** و **EmailDirection** ==  **"Inbound""**
 
@@ -259,40 +261,41 @@ ms.locfileid: "63574006"
 
 1. في صفحة الاستعلام، قم بإزالة الأسطر 7 و8 التي تم إضافتها في الخطوة 7 من إرشادات "الانتقال للصيد" وانقر فوق **إنشاء قاعدة الكشف**.
 
-   ![مثال حول المكان الذي يمكنك فيه النقر فوق إنشاء قاعدة الكشف في صفحة الصيد المتقدمة.](../../media/advanced-hunting-incident-response-try-3.png)
+   :::image type="content" source="../../media/advanced-hunting-incident-response-try-3.png" alt-text="قسم تحرير الاستعلام من صفحة &quot;الصيد المتقدم&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/advanced-hunting-incident-response-try-3.png":::
 
    > [!NOTE]
    > إذا نقرت فوق **إنشاء قاعدة الكشف** وكان لديك أخطاء في بناء الجملة في الاستعلام، فلن يتم حفظ قاعدة الكشف. تحقق مرة أخرى من الاستعلام للتأكد من عدم وجود أي أخطاء.
 
 2. قم بتعبئة الحقول المطلوبة بالمعلومات التي ستسمح لفريق الأمان بفهم التنبيه، ولماذا تم إنشاؤه، والإجراءات التي تتوقع منهم اتخاذها.
 
-   ![مثال على صفحة إنشاء قاعدة الكشف حيث يمكنك تعريف تفاصيل التنبيه.](../../media/mtp/fig23.png)
+   :::image type="content" source="../../media/mtp/fig23.png" alt-text="صفحة تفاصيل التنبيه في مدخل Microsoft 365 Defender" lightbox="../../media/mtp/fig23.png":::
 
    تأكد من ملء الحقول بوضوح للمساعدة في منح المستخدم التالي قرارا مخبرا حول تنبيه قاعدة الكشف هذا
 
 3. حدد الكيانات التي تم التأثير عليها في هذا التنبيه. في هذه الحالة، حدد **الجهاز** علبة **البريد**.
 
-   ![مثال لصفحة قاعدة إنشاء قاعدة الكشف حيث يمكنك اختيار معلمات الكيانات التي تم التأثير عليها.](../../media/mtp/fig24.png)
+   :::image type="content" source="../../media/mtp/fig24.png" alt-text="صفحة تفاصيل الكيانات التي تم التأثير عليها في مدخل Microsoft 365 Defender" lightbox="../../media/mtp/fig24.png":::
 
 4. حدد الإجراءات التي يجب اتخاذها إذا تم تشغيل التنبيه. في هذه الحالة، قم بتشغيل فحص الحماية من الفيروسات، على الرغم من أنه يمكن اتخاذ إجراءات أخرى.
 
-   ![مثال على صفحة قاعدة إنشاء قاعدة الكشف حيث يمكنك تشغيل فحص برنامج الحماية من الفيروسات عند تشغيل تنبيه للمساعدة في معالجة التهديدات.](../../media/mtp/fig25.png)
+   :::image type="content" source="../../media/mtp/fig25.png" alt-text="صفحة الإجراءات في مدخل Microsoft 365 Defender" lightbox="../../media/mtp/fig25.png":::
 
 5. حدد نطاق قاعدة التنبيه. بما أن هذا الاستعلام يتضمن أجهزة، فإن مجموعات الأجهزة ذات صلة في عملية الكشف المخصصة هذه وفقا لسياق Microsoft Defender لنقطة النهاية. عند إنشاء الكشف المخصص الذي لا يتضمن الأجهزة ككيانات متأثّر بها، لا يتم تطبيق النطاق.
 
-   ![مثال على صفحة إنشاء قاعدة الكشف حيث يمكنك تعيين نطاق لقاعدة التنبيه يدير توقعاتك للنتائج التي ستشاهدها.](../../media/mtp/fig26.png)
+   :::image type="content" source="../../media/mtp/fig26.png" alt-text="صفحة النطاق في مدخل Microsoft 365 Defender" lightbox="../../media/mtp/fig26.png":::
+
 
    بالنسبة إلى هذا النموذج التجريبي، قد ترغب في حصر هذه القاعدة في مجموعة فرعية من أجهزة الاختبار في بيئة الإنتاج.
 
 6. حدد **إنشاء**. بعد ذلك، **حدد قواعد الكشف المخصصة** من لوحة التنقل.
 
-   ![مثال على خيار قواعد الكشف المخصصة في القائمة.](../../media/mtp/fig27a.png)
+   :::image type="content" source="../../media/mtp/fig27a.png" alt-text="خيار قواعد قواعد الكشف المخصصة في مدخل Microsoft 365 Defender" lightbox="../../media/mtp/fig27a.png":::
 
-   ![مثال لصفحة قواعد الكشف التي تعرض تفاصيل القاعدة والتنفيذ.](../../media/mtp/fig27b.png)
+   :::image type="content" source="../../media/mtp/fig27b.png" alt-text="الصفحة التي تعرض قواعد الاكتشاف وتفاصيل التنفيذ في مدخل Microsoft 365 Defender" lightbox="../../media/mtp/fig27b.png":::
 
    من هذه الصفحة، يمكنك تحديد قاعدة الكشف، التي ستفتح صفحة تفاصيل.
 
-   ![مثال لصفحة مرفقات البريد الإلكتروني حيث يمكنك رؤية حالة تنفيذ القاعدة والتنبيهات والإجراءات التي تم تشغيلها وتحرير الكشف وما إلى ذلك.](../../media/mtp/fig28.png)
+   :::image type="content" source="../../media/mtp/fig28.png" alt-text="الصفحة التي تعرض تفاصيل التنبيهات المشغلة في مدخل Microsoft 365 Defender" lightbox="../../media/mtp/fig28.png":::
 
 
 ### <a name="expert-training-on-advanced-hunting"></a>تدريب الخبراء على الصيد المتقدم

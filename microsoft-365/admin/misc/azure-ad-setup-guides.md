@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: تعرف على أدلة الإعداد ل Azure Active Directory.
-ms.openlocfilehash: 0150e88f6e5fc4f7a77ecfcecbc61395bf015c51
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 059890bd6a79ced1f7121e973b070790dffd8db9
+ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63575954"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64403600"
 ---
 # <a name="azure-active-directory-setup-guides"></a>أدلة إعداد Azure Active Directory
 
-تساعدك ميزات Azure Active Directory (Azure AD) على إدارة مؤسستك وتأمينها. ستساعدك أدلة الإعداد هذه على دمج هذه الميزات بطريقة بسيطة. في الأقسام التالية، سنقدم وصفا مختصرا لدليل الإعداد ومشاركة الارتباطات إلى الدليلين.
+تساعدك ميزات Azure Active Directory (Azure AD) على إدارة مؤسستك وتأمينها. ستساعدك أدلة الإعداد هذه على دمج هذه الميزات بطريقة بسيطة. في الأقسام التالية، سنصف موجزا لإرشادات الإعداد ونشارك الارتباطات إلى الدليلين.
 
 ## <a name="who-are-these-setup-guides-for"></a>روبوت Who هل توجد أدلة الإعداد هذه؟
 
@@ -29,11 +29,22 @@ ms.locfileid: "63575954"
 
 ### <a name="required-permissions"></a>الأذونات المطلوبة
 
-يجب أن تكون عضوا في أدوار المسؤولين التالية:
+يجب أن تكون عضوا في الأدوار الإدارية التالية:
 
-- المسؤول العام: يسمح لك باستخدام الأدوات المتكاملة في أدلة الإعداد من أجل إجراء تغييرات في Microsoft 365 مؤسستك.
+- مسؤول عمومي: يسمح لك باستخدام الأدوات المتكاملة في أدلة الإعداد من أجل إجراء تغييرات في Microsoft 365 مؤسستك.
 
 - القارئ العام: يتيح لك عرض أدلة الإعداد ولكن لا يسمح لك بإجراء تغييرات في المستأجر.
+
+## <a name="identity-security-for-teams"></a>أمان الهوية Teams
+
+Azure Active Directory (Azure AD) هو خدمة إدارة الوصول والهوية المستندة إلى السحابة، مما يساعد الموظفين على تسجيل الدخول والوصول إلى التطبيقات والخدمات.
+يحتوي هذا الكتالوج على بعض ميزات الأمان الأساسية التي يمكنك استخدامها لضمان أمان المستخدمين وحرصهم على الحصول على الوقت الأكثر إنتاجية باستخدام Teams.
+
+### <a name="licensing"></a>الترخيص
+
+ترخيص Azure Active Directory P2 مطلوب لاستخدام ميزات الأمان في هذا الكتالوج.
+
+[فتح أمان الهوية لكتالوج Teams](https://aka.ms/teamsidentity)
 
 ## <a name="azure-active-directory-deployment"></a>نشر Azure Active Directory  
 
@@ -47,11 +58,21 @@ ms.locfileid: "63575954"
 
 يساعدك هذا الدليل على إعداد حسابات المستخدمين في Azure Microsoft 365. استنادا إلى بيئتك واحتياجاتك، يمكنك اختيار إضافة مستخدمين بشكل فردي أو ترحيل الدليل المحلية باستخدام مزامنة سحابة Azure AD أو Azure AD الاتصال أو استكشاف مشاكل المزامنة الموجودة وإصلاحها.
 
-[افتح دليل إعداد إضافة مستخدمين أو مزامنتهم](https://go.microsoft.com/fwlink/?linkid=2183349).
-
 ### <a name="licensing"></a>الترخيص
 
 استخدام أدوات مزامنة Azure Active Directory مجاني ومضمن مع Microsoft 365 اشتراكات.
+
+[افتح دليل إعداد إضافة مستخدمين أو مزامنتهم](https://go.microsoft.com/fwlink/?linkid=2183349).
+
+## <a name="add-a-cloud-app-to-microsoft-365"></a>إضافة تطبيق سحابة Microsoft 365 
+
+تم تصميم هذا الدليل لمساعدتك على إضافة تطبيقات السحابة Microsoft 365. في دليلنا، يمكنك إضافة تطبيق إلى المستأجر وإضافة مستخدمين إلى التطبيق وتعيين أدوار والمزيد.  إذا كان التطبيق يدعم single Sign-On (SSO)، سنعرفك خلال هذا التكوين أيضا.
+
+### <a name="licensing"></a>الترخيص
+
+يأتي كل اشتراك مدفوع Microsoft 365 اشتراك مجاني في Azure AD. يمكنك استخدام Azure AD لإدارة تطبيقاتك وإنشاء حسابات المستخدمين وحسابات المجموعات وإدارتها.
+
+[فتح دليل إضافة تطبيق سحابي Microsoft 365 الإعداد](https://aka.ms/AzureAppSetup)
 
 ## <a name="azure-self-service-password-reset-sspr-guide"></a>دليل إعادة تعيين Self-Service Azure (SSPR)
 
@@ -81,8 +102,12 @@ ms.locfileid: "63575954"
 
 [فتح دليل المصادقة متعددة العوامل (MFA)](https://go.microsoft.com/fwlink/?linkid=2183506)
 
-### <a name="the-passwordless-setup-guide"></a>دليل الإعداد بدون كلمة مرور
+## <a name="the-passwordless-setup-guide"></a>دليل الإعداد بدون كلمة مرور
 
-تم تصميم دليل الإعداد بدون كلمة مرور لمساعدتك على تحديد أفضل أسلوب بدون كلمة مرور بيئة. تتضمن الأساليب مفاتيح الأمان Windows Hello for Business Microsoft Authenticator التطبيق. إذا كانت التوصية Windows Hello for Business، فهناك مقطع لإرشادك عبر الخيارات المختلفة. يطرح عليك الدليل أسئلة لمساعدتك على صياغة خطة خطوة بخطوة.
+تم تصميم دليل الإعداد بدون كلمة مرور لمساعدتك على تحديد أفضل أسلوب بدون كلمة مرور بيئة. تتضمن الأساليب مفاتيح الأمان Windows Hello للأعمال Microsoft Authenticator التطبيق. إذا كانت Windows Hello للأعمال، فهناك مقطع لإرشادك عبر الخيارات المختلفة. يطرح عليك الدليل أسئلة لمساعدتك على صياغة خطة خطوة بخطوة.
+
+### <a name="licensing"></a>الترخيص
+
+يأتي كل اشتراك مدفوع Microsoft 365 اشتراك مجاني في Azure AD. يمكنك استخدام Azure AD لإدارة تطبيقاتك وإنشاء حسابات المستخدمين وحسابات المجموعات وإدارتها.
 
 [افتح دليل الإعداد بدون كلمة مرور](https://go.microsoft.com/fwlink/?linkid=2183427).

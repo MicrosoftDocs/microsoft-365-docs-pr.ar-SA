@@ -1,0 +1,1088 @@
+- name: التوافق في Microsoft 365
+  href: index.yml
+- name: الجديد في التوافق في Microsoft 365
+  href: whats-new.md
+- name: الإصدارات التجريبية للتوافق
+  items:
+    - name: حول التجربة المجانية لتوافق Microsoft 365
+      href: compliance-easy-trials.md
+    - name: حول الإصدار التجريبي المجاني لتقييمات Microsoft Compliance Manager المتميزة
+      href: compliance-easy-trials-compliance-manager-assessments.md
+- name: بدء الاستخدام
+  items:
+    - name: المهام السريعة للبدء باستخدام التوافق
+      href: compliance-quick-tasks.md
+    - name: كتالوج حلول Microsoft 365
+      href: microsoft-365-solution-catalog.md
+    - name: مركز التوافق في Microsoft 365
+      href: microsoft-365-compliance-center.md
+    - name: الأذونات في مركز التوافق في Microsoft 365
+      href: microsoft-365-compliance-center-permissions.md
+    - name: إعادة توجيه المستخدمين إلى مركز التوافق في Microsoft 365
+      href: microsoft-365-compliance-center-redirection.md
+    - name: استخدام اشتراك Azure Active Directory المجاني
+      href: use-your-free-azure-ad-subscription-in-office-365.md
+    - name: التخطيط للأمان والتوافق في Office 365
+      href: plan-for-security-and-compliance.md
+    - name: إمكانية الوصول إلى التوافق
+      href: compliance-extensibility.md
+- name: ميزات الحلول المتقاطعة
+  items:
+    - name: إلحاق أجهزة Windows 10 وWindows 11
+      items:
+        - name: نظرة عامة حول إلحاق أجهزة Windows 10 وWindows 11 في Microsoft 365
+          href: device-onboarding-overview.md
+        - name: إلحاق أجهزة Windows 10 وأجهزة Windows 11 عبر نهج المجموعة
+          href: device-onboarding-gp.md
+        - name: إلحاق أجهزة Windows 10 وأجهزة Windows 11 باستخدام أدوات إدارة الأجهزة المحمولة
+          href: device-onboarding-mdm.md
+        - name: إلحاق أجهزة Windows 10 وWindows 11 باستخدام Configuration Manager
+          href: device-onboarding-sccm.md
+        - name: إلحاق أجهزة Windows 10 وأجهزة Windows 11 باستخدام برنامج نصي محلي
+          href: device-onboarding-script.md
+        - name: أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة
+          href: device-onboarding-vdi.md
+    - name: أجهزة macOS على اللوحة (معاينة)
+      items:
+        - name: نظرة عامة على أجهزة macOS المدمجة في Microsoft 365 (معاينة)
+          href: device-onboarding-macos-overview.md
+        - name: أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في حلول التوافق باستخدام Microsoft Intune (معاينة)
+          href: device-onboarding-offboarding-macos-intune.md
+        - name: أجهزة macOS الداخلية والخارجية في حلول التوافق باستخدام Intune for Microsoft Defender لعملاء نقطة النهاية (معاينة)
+          href: device-onboarding-offboarding-macos-intune-mde.md
+        - name: أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في حلول التوافق باستخدام JAMF Pro (معاينة)
+          href: device-onboarding-offboarding-macos-jamfpro.md
+        - name: أجهزة macOS الداخلية والخارجية في حلول التوافق باستخدام JAMF Pro for Microsoft Defender لعملاء نقطة النهاية (معاينة)
+          href: device-onboarding-offboarding-macos-jamfpro-mde.md
+- name: إدارة الموصلات لبيانات الأطراف الخارجية
+  items:
+    - name: التعرّف على الموصلات لبيانات الأطراف الخارجية
+      href: archiving-third-party-data.md
+    - name: موصلات بيانات Microsoft
+      items:
+        - name: رسالة Bloomberg
+          href: archive-bloomberg-message-data.md
+        - name: بيانات الرعاية الصحية في Epic EHR (معاينة)
+          href: import-epic-data.md
+        - name: Facebook Business
+          href: archive-facebook-data-with-sample-connector.md
+        - name: بيانات الرعاية الصحية العامة لـ EHR (معاينة)
+          href: import-healthcare-data.md
+        - name: بيانات الموارد البشرية
+          href: import-hr-data.md
+        - name: دردشة ICE
+          href: archive-icechat-data.md
+        - name: Instant Bloomberg
+          href: archive-instant-bloomberg-data.md
+        - name: LinkedIn
+          href: archive-linkedin-data.md
+        - name: بيانات الشارات الفعلية
+          href: import-physical-badging-data.md
+        - name: Slack eDiscovery (معاينة)
+          href: archive-slack-data-microsoft.md
+        - name: Twitter
+          href: archive-twitter-data-with-sample-connector.md
+    - name: موصلات بيانات Veritas
+      items:
+        - name: CellTrust
+          href: archive-celltrust-data.md
+        - name: Cisco Jabber على MS SQL
+          href: archive-ciscojabberonmssql-data.md
+        - name: Cisco Jabber على Oracle
+          href: archive-ciscojabberonoracle-data.md
+        - name: Cisco Jabber على PostgreSQL
+          href: archive-ciscojabberonpostgresql-data.md
+        - name: EML
+          href: archive-eml-data.md
+        - name: الاتصال بـ FX
+          href: archive-fxconnect-data.md
+        - name: Jive
+          href: archive-jive-data.md
+        - name: بيانات MS SQL
+          href: archive-mssqldatabaseimporter-data.md
+        - name: Pivot
+          href: archive-pivot-data.md
+        - name: Redtail Speak
+          href: archive-redtailspeak-data.md
+        - name: التعامل مع Reuters
+          href: archive-reutersdealing-data.md
+        - name: Reuters Eikon
+          href: archive-reuterseikon-data.md
+        - name: Reuters FX
+          href: archive-reutersfx-data.md
+        - name: RingCentral
+          href: archive-ringcentral-data.md
+        - name: Salesforce Chatter
+          href: archive-salesforcechatter-data.md
+        - name: ServiceNow
+          href: archive-servicenow-data.md
+        - name: Skype for Business
+          href: archive-skypeforbusiness-data.md
+        - name: Slack eDiscovery
+          href: archive-slack-data.md
+        - name: Symphony
+          href: archive-symphony-data.md
+        - name: نص محدد
+          href: archive-text-delimited-data.md
+        - name: Twitter (معاينة)
+          href: archive-veritas-twitter-data.md
+        - name: Webex Teams
+          href: archive-webexteams-data.md
+        - name: صفحات ويب
+          href: archive-webpagecapture-data.md
+        - name: مساحة العمل من Facebook
+          href: archive-workplacefromfacebook-data.md
+        - name: XIP
+          href: archive-xip-data.md
+        - name: XSLT/XML
+          href: archive-xslt-xml-data.md
+        - name: Yieldbroker
+          href: archive-yieldbroker-data.md
+        - name: YouTube
+          href: archive-youtube-data.md
+        - name: اجتماعات Zoom
+          href: archive-zoommeetings-data.md
+    - name: موصلات بيانات TeleMessage
+      items:
+        - name: أرشفة Android
+          href: archive-android-archiver-data.md
+        - name: أرشيفي شبكة AT&T SMS/MMS
+          href: archive-att-network-archiver-data.md
+        - name: أرشيف شبكة جرس SMS/MMS
+          href: archive-bell-network-data.md
+        - name: أرشفة رقم المؤسسة
+          href: archive-enterprise-number-data.md
+        - name: أداة لأرشفة البيانات من شبكة O2 Telefonica للرسائل القصيرة والمكالمات الصوتية
+          href: archive-o2-network-data.md
+        - name: أرشفة شبكة Rogers
+          href: archive-rogers-network-archiver-data.md
+        - name: أرشفة الإشارة
+          href: archive-signal-archiver-data.md
+        - name: أرشفة Telegram
+          href: archive-telegram-archiver-data.md
+        - name: شبكة TELUS
+          href: archive-telus-network-data.md
+        - name: أرشيفي الشبكة Verizon SMS/MMS
+          href: archive-verizon-network-data.md
+        - name: أرشيف WeChat
+          href: archive-wechat-data.md
+        - name: أرشيف WhatsApp
+          href: archive-whatsapp-data.md
+    - name: موصلات بيانات 17a-4
+      items:
+        - name: محلل البيانات BlackBerry
+          href: archive-17a-4-blackberry-data.md
+        - name: محلل البيانات Bloomberg
+          href: archive-17a-4-bloomberg-data.md
+        - name: محلل البيانات Cisco Jabber
+          href: archive-17a-4-cisco-jabber-data.md
+        - name: محلل البيانات Cisco Webex
+          href: archive-17a-4-webex-teams-data.md
+        - name: محلل البيانات FactSet
+          href: archive-17a-4-factset-data.md
+        - name: محلل البيانات Fuze
+          href: archive-17a-4-fuze-data.md
+        - name: محلل بيانات الاتصال بـ FX
+          href: archive-17a-4-fxconnect-data.md
+        - name: محلل البيانات ICE
+          href: archive-17a-4-ice-im-data.md
+        - name: محلل البيانات InvestEdge
+          href: archive-17a-4-investedge-data.md
+        - name: محلل بيانات سحابة محادثة LivePerson
+          href: archive-17a-4-liveperson-data.md
+        - name: محلل بيانات Quip
+          href: archive-17a-4-quip-data.md
+        - name: محلل بيانات Refinitiv Eikon Messenger
+          href: archive-17a-4-refinitiv-messenger-data.md
+        - name: محلل بيانات ServiceNow
+          href: archive-17a-4-servicenow-data.md
+        - name: محلل بيانات Skype for Business Server
+          href: archive-17a-4-skype-for-business-server-data.md
+        - name: محلل بيانات Slack
+          href: archive-17a-4-slack-data.md
+        - name: محلل بيانات SQL
+          href: archive-17a-4-sql-database-data.md
+        - name: محلل بيانات Symphony
+          href: archive-17a-4-symphony-data.md
+        - name: محلل بيانات Zoom
+          href: archive-17a-4-zoom-data.md
+    - name: موصلات CellTrust
+      items:
+        - name: CellTrust SL2
+          href: archive-data-from-celltrustsl2.md
+    - name: العمل مع شريك لأرشفة بيانات جهة خارجية
+      href: work-with-partner-to-archive-third-party-data.md
+    - name: البحث عن بيانات جهة خارجية
+      href: use-content-search-to-search-third-party-data-that-was-imported.md
+- name: إدارة مخاطر Insider
+  items:
+    - name: حلول مخاطر Microsoft 365 Insider
+      href: insider-risk-solution-overview.md
+    - name: توافق الاتصالات
+      items:
+        - name: نظرة عامة
+          href: communication-compliance-solution-overview.md
+        - name: التعرّف على توافق الاتصالات
+          href: communication-compliance.md
+        - name: التخطيط لتوافق الاتصالات
+          href: communication-compliance-plan.md
+        - name: بدء العمل باستخدام توافق الاتصالات
+          href: communication-compliance-configure.md
+        - name: الكشف عن إشارات القناة مع توافق الاتصالات
+          href: communication-compliance-channels.md
+        - name: إنشاء وإدارة سياسات الامتثال للاتصالات
+          href: communication-compliance-policies.md
+        - name: التحقيق ومعالجة تنبيهات الامتثال للاتصالات
+          href: communication-compliance-investigate-remediate.md
+        - name: تعرّف على تقارير الامتثال للاتصالات والتدقيق
+          href: communication-compliance-reports-audits.md
+        - name: توافق الاتصالات مع حلول إدارة معلومات الأمان والأحداث
+          href: communication-compliance-siem.md
+        - name: دراسة حالة - تقوم Contoso بتكوين نهج نص غير مناسب بسرعة
+          href: communication-compliance-case-study.md
+    - name: إدارة المخاطر الداخلية
+      items:
+        - name: نظرة عامة
+          href: insider-risk-management-solution-overview.md
+        - name: تعرّف على إدارة المخاطر الداخلية
+          href: insider-risk-management.md
+        - name: خطة لإدارة المخاطر الداخلية
+          href: insider-risk-management-plan.md
+        - name: بدء استخدام إدارة المخاطر الداخلية
+          href: insider-risk-management-configure.md
+        - name: بدء العمل باستخدام إعدادات مخاطر Insider
+          href: insider-risk-management-settings.md
+        - name: إنشاء سياسات مخاطر Insider وإدارتها
+          href: insider-risk-management-policies.md
+        - name: التحقق من أنشطة مخاطر Insider
+          href: insider-risk-management-activities.md
+        - name: اتخاذ إجراء بشأن حالات مخاطر Insider
+          href: insider-risk-management-cases.md
+        - name: التعرّف على الكشف عن إشارات المستعرض وتكوينه
+          href: insider-risk-management-browser-support.md
+        - name: مراجعة الأنشطة باستخدام سجل تدقيق مخاطر Insider
+          href: insider-risk-management-audit-log.md
+        - name: مراجعة البيانات باستخدام مستكشف محتوى مخاطر Insider
+          href: insider-risk-management-content-explorer.md
+        - name: إدارة سير العمل باستخدام لوحة معلومات المستخدمين
+          href: insider-risk-management-users.md
+        - name: إنشاء قوالب إشعار مخاطر Insider
+          href: insider-risk-management-notices.md
+    - name: عوائق المعلومات
+      items:
+        - name: نظرة عامة
+          href: information-barriers-solution-overview.md
+        - name: التعرّف على عوائق المعلومات
+          href: information-barriers.md
+        - name: بدء استخدام حواجز المعلومات
+          href: information-barriers-policies.md
+        - name: إدارة حواجز المعلومات
+          href: information-barriers-edit-segments-policies.md
+        - name: سمات حواجز المعلومات
+          href: information-barriers-attributes.md
+        - name: حواجز المعلومات وخدمات Microsoft 365
+          items:
+            - name: فرق Microsoft وحواجز المعلومات
+              href: /microsoftteams/information-barriers-in-teams?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: OneDrive وحواجز المعلومات
+              href: /onedrive/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: SharePoint وحواجز المعلومات
+              href: /sharepoint/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+    - name: إدارة الوصول المتميز
+      items:
+        - name: نظرة عامة
+          href: privileged-access-management-solution-overview.md
+        - name: التعرّف على إدارة الوصول المتميزة
+          href: privileged-access-management-overview.md
+        - name: بدء استخدام إدارة الوصول المتميزة
+          href: privileged-access-management-configuration.md
+    - name: حماية وصول المستخدم والجهاز
+      href: protect-access-to-data-and-services.md
+    - name: صندوق تأمين بيانات العملاء
+      href: customer-lockbox-requests.md
+- name: إدارة حماية المعلومات
+  items:
+    - name: معرفة بياناتك، وحماية بياناتك، ومنع فقدان البيانات
+      href: information-protection.md
+    - name: نشر حل MIP
+      href: information-protection-solution.md
+    - name: التسميات والسياسات الافتراضية حماية البيانات في Microsoft
+      href: mip-easy-trials.md
+    - name: أنواع المعلومات الحساسة
+      items:
+        - name: التعرّف على أنواع المعلومات الحساسة
+          items:
+            - name: التعرّف على أنواع المعلومات الحساسة
+              href: sensitive-information-type-learn-about.md
+            - name: التعرّف على أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة
+              href: sit-learn-about-exact-data-match-based-sits.md
+            - name: تعريف المستند ببصمة الإصبع
+              href: document-fingerprinting.md
+            - name: التعرف على الكيانات المسماة (معاينة)
+              href: named-entities-learn.md
+        - name: بدء استخدام نوع المعلومات الحساسة
+          items:
+            - name: إنشاء أنواع معلومات حساسة مخصصة - مركز التوافق
+              href: create-a-custom-sensitive-information-type.md
+            - name: بدء استخدام أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة
+              href: sit-get-started-exact-data-match-based-sits-overview.md
+            - name: تصدير بيانات المصدر لنوع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة
+              href: sit-get-started-exact-data-match-export-data.md
+            - name: إنشاء المخطط لأنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة
+              href: sit-get-started-exact-data-match-create-schema.md
+            - name: تجزئة وتحميل جدول مصدر المعلومات الحساسة للحصول على بيانات مطابقة تماماً لأنواع المعلومات الحساسة
+              href: sit-get-started-exact-data-match-hash-upload.md
+            - name: إنشاء بيانات دقيقة تتطابق مع نوع المعلومات الحساسة/حزمة القاعدة
+              href: sit-get-started-exact-data-match-create-rule-package.md
+            - name: اختبار نوع معلومات دقيق يطابق المعلومات الحساسة
+              href: sit-get-started-exact-data-match-test.md
+        - name: استخدام أنواع المعلومات الحساسة
+          items:
+            - name: تخصيص نوع معلومات حساسة مضمن
+              href: customize-a-built-in-sensitive-information-type.md
+            - name: تعديل مخطط تطابق البيانات الدقيق لاستخدام تطابق قابل للتكوين
+              href: sit-modify-edm-schema-configurable-match.md
+            - name: إنشاء إعلامات لأنشطة مطابقة البيانات الدقيقة
+              href: sit-edm-notifications-activities.md
+            - name: إدارة أنواع المعلومات الحساسة المخصصة في مركز التوافق
+              href: sit-manage-custom-sits-compliance-center.md
+            - name: أنواع المعلومات الحساسة للتحقق من صحة REGEX والتحقق الإضافي
+              href: sit-regex-validators-additional-checks.md
+            - name: إنشاء نوع معلومات حساسة مخصص - PowerShell
+              href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+            - name: إزالة نوع معلومات حساسة مخصص - PowerShell
+              href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+            - name: تعديل نوع معلومات حساسة مخصصة - PowerShell
+              href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+            - name: إنشاء قاموس كلمة أساسية
+              href: create-a-keyword-dictionary.md
+            - name: تعديل قاموس كلمة أساسية
+              href: sit-modify-keyword-dictionary.md
+            - name: إدارة مخطط مطابقة البيانات بالضبط
+              href: sit-use-exact-data-manage-schema.md
+            - name: قم بتحديث ملف جدول مصدر المعلومات الحساسة
+              href: sit-use-exact-data-refresh-data.md
+            - name: استخدام الكيانات المسماة في سياسات منع فقدان البيانات (معاينة)
+              href: named-entities-use.md
+            - name: سيناريوهات الاستخدام الشائعة لأنواع المعلومات الحساسة
+              href: sit-common-scenarios.md
+        - name: مرجع نوع المعلومات الحساسة
+          items:
+            - name: تعريفات كيان نوع المعلومات الحساسة
+              href: sensitive-information-type-entity-definitions.md
+            - name: دالات نوع المعلومات الحساسة
+              href: sit-functions.md
+            - name: مرجع عوامل تصفية نوع المعلومات الحساسة المخصصة
+              href: sit-custom-sit-filters.md
+    - name: مصنفات قابلة للتدريب
+      items:
+        - name: تعرّف على المزيد حول مصنفات قابلة للتدريب
+          href: classifier-learn-about.md
+        - name: بدء استخدام المصنفات القابلة للتدريب
+          href: classifier-get-started-with.md
+        - name: كيفية إعادة تدريب المصنف في مستكشف المحتوى
+          href: classifier-how-to-retrain-content-explorer.md
+    - name: تصنيف البيانات
+      items:
+        - name: التعرّف على تصنيف البيانات
+          href: data-classification-overview.md
+        - name: بدء استخدام مستكشف المحتوى
+          href: data-classification-content-explorer.md
+        - name: بدء استخدام مستكشف النشاط
+          href: data-classification-activity-explorer.md
+        - name: إجراءات التسمية التي تم لصقها في "مستكشف النشاط"
+          href: data-classification-activity-explorer-available-events.md
+    - name: تسميات الحساسية
+      items:
+        - name: التعرّف على تسميات الحساسية
+          href: sensitivity-labels.md
+        - name: لماذا اختر تسمية حماية المعلومات في Microsoft المضمنة لتطبيقات Office
+          href: sensitivity-labels-aip.md
+        - name: بدء استخدام تسميات الحساسية
+          href: get-started-with-sensitivity-labels.md
+        - name: إنشاء أوصاف حساسية ونشرها
+          href: create-sensitivity-labels.md
+        - name: تقييد الوصول إلى المحتوى باستخدام تسميات الحساسية لتطبيق التشفير
+          href: encryption-sensitivity-labels.md
+        - name: تطبيق تسمية حساسية على المحتوى تلقائياً
+          href: apply-sensitivity-label-automatically.md
+        - name: استخدام تسميات الحساسية مع الفرق والمجموعات والمواقع
+          href: sensitivity-labels-teams-groups-sites.md
+        - name: تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive
+          href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: تمكين التأليف المشترك للمستندات المشفرة بواسطة تسميات الحساسية
+          href: sensitivity-labels-coauthoring.md
+        - name: تعيين نوع ارتباط المشاركة الافتراضي باستخدام تسميات الحساسية
+          href: sensitivity-labels-default-sharing-link.md
+        - name: إدارة تسميات الحساسية في تطبيقات Office
+          href: sensitivity-labels-office-apps.md
+    - name: التشفير
+      items:
+        - name: فهم التشفير
+          href: encryption.md
+        - name: تشفير المفتاح المزدوج (DKE)
+          href: double-key-encryption.md
+        - name: الأسئلة الشائعة حول تشفير المفاتيح المزدوجة
+          href: double-key-encryption-overview.md
+        - name: تشفير خدمة Office 365
+          href: office-365-service-encryption.md
+        - name: مفتاح العميل
+          items:
+            - name: مفتاح العميل في Microsoft 365
+              href: customer-key-overview.md
+            - name: إعداد مفتاح العميل Microsoft 365
+              href: customer-key-set-up.md
+            - name: إدارة مفتاح العميل Microsoft 365
+              href: customer-key-manage.md
+            - name: لف مفتاح عميل أو مفتاح توفر أو تدويره
+              href: customer-key-availability-key-roll.md
+            - name: التعرّف على مفتاح التوفر لمفتاح العميل
+              href: customer-key-availability-key-understand.md
+        - name: تشفير البريد الإلكتروني
+          href: email-encryption.md
+          items:
+            - name: تشفير رسائل Office 365 (OME)
+              href: ome.md
+            - name: إعداد قدرات تشفير Office 365 الرسائل الجديدة
+              href: set-up-new-message-encryption-capabilities.md
+            - name: تعريف قواعد تدفق البريد لتشفير رسائل البريد الإلكتروني في Office 365
+              href: define-mail-flow-rules-to-encrypt-email.md
+            - name: إضافة العلامة التجارية لمنظمتك إلى الرسائل المشفرة
+              href: add-your-organization-brand-to-encrypted-messages.md
+            - name: إنشاء نهج نوع معلومات حساسة لمنظمتك باستخدام تشفير رسائل Office 365
+              href: ome-sensitive-info-types.md
+            - name: إدارة تشفير رسائل Office 365
+              href: manage-office-365-message-encryption.md
+            - name: تشفير الرسائل المتقدم من Office 365
+              href: ome-advanced-message-encryption.md
+            - name: تعيين تاريخ انتهاء صلاحية للبريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Office 365
+              href: ome-advanced-expiration.md
+            - name: إبطال البريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Office 365
+              href: revoke-ome-encrypted-mail.md
+            - name: مقارنة إصدارات OME
+              href: ome-version-comparison.md
+            - name: الأسئلة الشائعة حول تشفير الرسائل من Office 365
+              href: ome-faq.yml
+            - name: كيف تؤمّن Exchange Online أسرار بريدك الإلكتروني
+              href: exchange-online-secures-email-secrets.md
+            - name: كيفية استخدام Exchange Online لـ TLS لتأمين اتصالات البريد الإلكتروني في Office 365
+              href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: كيفية عمل SMTP DANE
+              href: how-smtp-dane-works.md
+            - name: BitLocker و"إدارة المفاتيح الموزعة" (DKM) للتشفير
+              href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
+            - name: OME القديم
+              items:
+                - name: المعلومات القديمة لتشفير رسائل Office 365
+                  href: legacy-information-for-message-encryption.md
+                - name: إعداد Azure Rights Management للإصدار السابق من تشفير رسائل Office 365
+                  href: set-up-azure-rms-for-previous-version-message-encryption.md
+        - name: SharePoint IRM
+          href: set-up-irm-in-sp-admin-center.md
+        - name: مرجع تقني
+          href: technical-reference-details-about-encryption.md
+        - name: سلاسل تشفير Microsoft 365
+          href: encryption-office-365-certificate-chains.md
+        - name: إهمال TLS 1.0 و1.1 لـ Office 365
+          href: tls-1.0-and-1.1-deprecation-for-office-365.md
+        - name: إهمال TLS 1.0 و1.1 في Office 365 سحابة القطاع الحكومي High وDoD
+          href: tls-1-2-in-office-365-gcc.md
+        - name: التحضير لاستخدام TLS 1.2 في Office 365
+          href: prepare-tls-1.2-in-office-365.md
+        - name: تغييرات شهادة Office TLS
+          href: encryption-office-365-tls-certificates-changes.md
+    - name: تفادي فقدان البيانات (DLP)
+      items:
+        - name: التعرّف على DLP
+          items:
+            - name: التعرّف على تفادي فقدان البيانات
+              href: dlp-learn-about-dlp.md
+            - name: التعرّف على تفادي فقدان بيانات نقطة النهاية
+              href: endpoint-dlp-learn-about.md
+            - name: تعرّف على نهج منع فقدان البيانات الافتراضي في Microsoft Teams (معاينة)
+              href: dlp-teams-default-policy.md
+            - name: تعرف على الماسح الضوئي المحلي لتفادي فقدان البيانات في Microsoft 365
+              href: dlp-on-premises-scanner-learn.md
+            - name: التعرّف على ملحق التوافق من Microsoft
+              href: dlp-chrome-learn-about.md
+            - name: التعرّف على لوحة معلومات تنبيهات تفادي فقدان البيانات
+              href: dlp-alerts-dashboard-learn.md
+        - name: التخطيط لـ DLP
+          items:
+            - name: التخطيط لتفادي فقدان البيانات
+              href: dlp-overview-plan-for-dlp.md
+            - name: تصميم نهج DLP
+              href: dlp-policy-design.md
+            - name: مرجع نهج تفادي فقدان البيانات
+              href: dlp-policy-reference.md
+        - name: بدء استخدام DLP
+          items:
+            - name: تكوين إعدادات تفادي فقدان البيانات في نقطة النهاية
+              href: dlp-configure-endpoint-settings.md
+            - name: بدء استخدام نهج DLP الافتراضي
+              href: get-started-with-the-default-dlp-policy.md
+            - name: إنشاء نهج DLP من قالب
+              href: create-a-dlp-policy-from-a-template.md
+            - name: إنشاء نهج DLP واختباره وضبطه
+              href: create-test-tune-dlp-policy.md
+            - name: بدء استخدام الماسح الضوئي المحلي لمنع فقدان البيانات في Microsoft 365
+              href: dlp-on-premises-scanner-get-started.md
+            - name: للحصول على متطلبات إضافية لنشر Endpoint DLP، راجع البدء في تفادي فقدان البيانات على الأجهزة.
+              href: endpoint-dlp-getting-started.md
+            - name: تكوين إعدادات اتصال الإنترنت ووكيل الجهاز حماية البيانات
+              href: device-onboarding-configure-proxy.md
+            - name: بدء العمل باستخدام ملحق التوافق من Microsoft
+              href: dlp-chrome-get-started.md
+            - name: بدء استخدام لوحة معلومات تنبيهات تفادي فقدان البيانات
+              href: dlp-alerts-dashboard-get-started.md
+            - name: بدء استخدام سياسات منع فقدان البيانات لـ Power BI (معاينة)
+              href: dlp-powerbi-get-started.md
+        - name: استخدام DLP
+          items:
+            - name: DLP وMicrosoft Teams
+              href: dlp-microsoft-teams.md
+            - name: استخدام تفادي فقدان البيانات في نقطة النهاية
+              href: endpoint-dlp-using.md
+            - name: استخدم الماسح الضوئي المحلي لمنع فقدان البيانات في Microsoft 365
+              href: dlp-on-premises-scanner-use.md
+            - name: استخدام الإعلامات وتلميحات النهج في نهج DLP
+              href: use-notifications-and-policy-tips.md
+            - name: ما تتضمنه قوالب نهج DLP
+              href: what-the-dlp-policy-templates-include.md
+            - name: إنشاء نهج DLP لحماية المستندات باستخدام FCI أو خصائص أخرى
+              href: protect-documents-that-have-fci-or-other-properties.md
+            - name: عرض تقارير DLP
+              href: view-the-dlp-reports.md
+            - name: تشكيل استعلام للعثور على البيانات الحساسة المخزنة على المواقع
+              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+            - name: كيفية عمل DLP بين مركز الأمان ومركز إدارة Exchange
+              href: how-dlp-works-between-admin-centers.md
+            - name: تكوين التنبيهات وعرضها لنهج DLP (معاينة)
+              href: dlp-configure-view-alerts-policies.md
+            - name: استخدام تسميات الحساسية كشرط في سياسات DLP
+              href: dlp-sensitivity-label-as-condition.md
+            - name: استخدام نُهُج تفادي فقدان البيانات للتطبيقات السحابية غير الخاصة بـ Microsoft
+              href: dlp-use-policies-non-microsoft-cloud-apps.md
+            - name: شروط نهج DLP والاستثناءات
+              href: dlp-conditions-and-exceptions.md
+            - name: قم بترحيل نهج تفادي فقدان بيانات Exchange Online إلى مركز التوافق
+              href: dlp-migrate-exo-policy-to-unified-dlp.md
+            - name: تلميحات حول نهج تفادي فقد البيانات (DLP)
+              href: dlp-policy-tips-reference.md
+- name: إدارة المعلومات والسجلات
+  items:
+    - name: تحكم بياناتك
+      href: manage-information-governance.md
+    - name: فهم الاحتفاظ بالبيانات وحذفها
+      items:
+        - name: التعرّف على نهج الاستبقاء البيانات
+          href: retention.md
+        - name: مخطط انسيابي لنتائج الاستبقاء والحذف
+          href: retention-flowchart.md
+        - name: حذف واستبقاء لأحمال العمل Microsoft 365 العمل
+          items:
+            - name: SharePoint وOneDrive
+              href: retention-policies-sharepoint.md
+            - name: Microsoft Teams
+              href: retention-policies-teams.md
+            - name: Yammer
+              href: retention-policies-yammer.md
+            - name: Exchange
+              href: retention-policies-exchange.md
+        - name: الإعدادات الشائعة للاحتفاظ والحذف
+          href: retention-settings.md
+        - name: حدود الاستبقاء والحذف
+          href: retention-limits.md
+    - name: إدارة المعلومات
+      items:
+        - name: التعرّف على إدارة المعلومات
+          href: information-governance.md
+        - name: بدء استخدام إدارة المعلومات
+          href: get-started-with-information-governance.md
+        - name: إنشاء نهج استبقاء
+          href: create-retention-policies.md
+        - name: استخدام تسميات الاستبقاء للاستثناءات
+          href: create-retention-labels-information-governance.md
+        - name: أرشفة بيانات علبة البريد
+          items:
+            - name: التعرّف على علب بريد الأرشيف
+              href: archive-mailboxes.md
+            - name: تمكين علب بريد الأرشيف
+              href: enable-archive-mailboxes.md
+            - name: تعرّف على المزيد حول أرشفة التوسع التلقائي
+              href: autoexpanding-archiving.md
+            - name: تمكين أرشفة التوسع التلقائي
+              href: enable-autoexpanding-archiving.md
+            - name: تخصيص نهج أرشفة وحذف لعلب البريد (MRM)
+              href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
+        - name: إدارة علب البريد غير النشطة
+          items:
+            - name: التعرّف على علب البريد غير النشطة
+              href: inactive-mailboxes-in-office-365.md
+            - name: إنشاء علب بريد غير نشطة وإدارتها
+              href: create-and-manage-inactive-mailboxes.md
+            - name: تغيير مدة الانتظار لعلبة بريد غير نشطة
+              href: change-the-hold-duration-for-an-inactive-mailbox.md
+            - name: استرداد علبة بريد غير نشطة
+              href: recover-an-inactive-mailbox.md
+            - name: استعادة علبة بريد غير نشطة
+              href: restore-an-inactive-mailbox.md
+            - name: حذف علبة بريد غير نشطة
+              href: delete-an-inactive-mailbox.md
+        - name: استيراد ملفات PST
+          items:
+            - name: التعرّف على استيراد ملفات PST
+              href: importing-pst-files-to-office-365.md
+            - name: استخدام تحميل الشبكة لاستيراد ملفات PST
+              href: use-network-upload-to-import-pst-files.md
+            - name: استخدام شحن محرك الأقراص لاستيراد ملفات PST
+              href: use-drive-shipping-to-import-pst-files-to-office-365.md
+            - name: تصفية البيانات عند استيراد ملفات PST
+              href: filter-data-when-importing-pst-files.md
+            - name: الأسئلة الشائعة حول استيراد ملفات PST
+              href: faqimporting-pst-files-to-office-365.yml
+    - name: إدارة السجلات
+      items:
+        - name: فهم إدارة السجلات
+          items:
+            - name: تعرّف على إدارة السجلات
+              href: records-management.md
+            - name: موارد للمتطلبات التنظيمية
+              href: retention-regulatory-requirements.md
+            - name: تعريف السجلات باستخدام تسميات الاستبقاء
+              href: declare-records.md
+            - name: استخدام إصدار السجل للملفات
+              href: record-versioning.md
+        - name: بدء العمل باستخدام إدارة السجلات
+          href: get-started-with-records-management.md
+        - name: إنشاء تسميات استبقاء وإدارتها باستخدام خطة ملف
+          href: file-plan-manager.md
+        - name: بدء الاستبقاء عند وقوع حدث
+          href: event-driven-retention.md
+        - name: نشر تسميات الاستبقاء في التطبيقات وتطبيقها
+          href: create-apply-retention-labels.md
+        - name: تطبيق تسميات الاستبقاء تلقائياً على المحتوى
+          href: apply-retention-labels-automatically.md
+        - name: تأمين سياسات تقييد التغييرات
+          href: retention-preservation-lock.md
+        - name: استخدام PowerShell لإنشاء واستبقاء النشر
+          href: bulk-create-publish-labels-using-powershell.md
+        - name: استخدم تسميات الاستبقاء لإدارة المستندات في SharePoint
+          href: auto-apply-retention-labels-scenario.md
+        - name: إدارة ترتيب البيانات
+          href: disposition.md
+- name: إدارة eDiscovery
+  items:
+    - name: Microsoft 365 eDiscovery
+      href: ediscovery.md
+    - name: البحث عن المحتوى
+      items:
+        - name: نظرة عامة حول البحث في المحتوى
+          href: search-for-content.md
+        - name: البحث عن المحتوى
+          href: content-search.md
+          items:
+            - name: استعلامات الكلمات الأساسية وشروط البحث
+              href: keyword-queries-and-search-conditions.md
+            - name: استخدام محرر KQL لإنشاء استعلامات البحث
+              href: ediscovery-kql-editor.md
+            - name: البحث عن Teams الدردشة للمستخدمين في الموقع
+              href: search-cloud-based-mailboxes-for-on-premises-users.md
+            - name: تكوين تصفية أذونات البحث
+              href: permissions-filtering-for-content-search.md
+            - name: معاينة نتائج بحث eDiscovery
+              href: preview-ediscovery-search-results.md
+            - name: عرض إحصائيات نتائج البحث
+              href: view-keyword-statistics-for-content-search.md
+            - name: تصدير نتائج البحث
+              href: export-search-results.md
+            - name: تصدير تقرير بحث
+              href: export-a-content-search-report.md
+            - name: البحث عن رسائل البريد الإلكتروني وحذفها
+              href: search-for-and-delete-messages-in-your-organization.md
+            - name: إعادة محاولة بحث فشل
+              href: retry-failed-content-search.md
+            - name: المحافظة على مستلمي "عملية حفظ"، للبحث
+              href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+        - name: مرجع البحث في المحتوى
+          items:
+            - name: مرجع الميزة للبحث في المحتوى
+              href: content-search-reference.md
+            - name: حدود البحث في eDiscovery
+              href: limits-for-content-search.md
+            - name: المحتوى المخزن في علب البريد لـ eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
+            - name: الاختلافات بين نتائج البحث المقدرة والفعلية
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: العناصر المفهرسة جزئياً
+              href: partially-indexed-items-in-content-search.md
+            - name: التحقق من العناصر المفهرسة جزئياً
+              href: investigating-partially-indexed-items-in-ediscovery.md
+            - name: إزالة التكرار في نتائج البحث
+              href: de-duplication-in-ediscovery-search-results.md
+            - name: فك التشفير في أدوات eDiscovery
+              href: ediscovery-decryption.md
+            - name: تغيير حجم ملفات PST عند تصدير نتائج البحث
+              href: change-the-size-of-pst-files-when-exporting-results.md
+            - name: تعطيل التقارير عند تصدير نتائج البحث
+              href: disable-reports-when-you-export-content-search-results.md
+            - name: التحقق من أخطاء استعلام البحث
+              href: check-your-content-search-query-for-errors.md
+            - name: استخدام Microsoft Edge لتنزيل نتائج البحث
+              href: configure-edge-to-export-search-results.md
+            - name: البحث عن أنشطة eDiscovery في سجل التدقيق
+              href: search-for-ediscovery-activities-in-the-audit-log.md
+        - name: برامج PowerShell النصية للبحث في المحتوى
+          items:
+            - name: استخدام البحث عن المحتوى للمجموعات المستهدفة
+              href: use-content-search-for-targeted-collections.md
+            - name: البحث في علبة البريد OneDrive عن قائمة المستخدمين
+              href: search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md
+            - name: إنشاء عمليات بحث متعددة أو الإبلاغ عنها أو حذفها
+              href: create-report-on-and-delete-multiple-content-searches.md
+            - name: نسخ عملية بحث
+              href: clone-a-content-search.md
+    - name: eDiscovery الأساسي
+      items:
+        - name: بدء استخدام eDiscovery الأساسي
+          href: get-started-core-ediscovery.md
+        - name: إنشاء مواعيد لـ eDiscovery
+          href: create-ediscovery-holds.md
+        - name: البحث عن محتوى في حالة
+          href: search-for-content-in-core-ediscovery.md
+        - name: تصدير محتوى من حالة
+          href: export-content-in-core-ediscovery.md
+        - name: إغلاق حالة وإعادة فتحها وحذفها
+          href: close-reopen-delete-core-ediscovery-cases.md
+        - name: مرجع eDiscovery الأساسي
+          items:
+            - name: حدود البحث في eDiscovery
+              href: limits-for-content-search.md
+            - name: تعيين أذونات مسؤول eDiscovery
+              href: assign-ediscovery-permissions.md
+            - name: استعلامات الكلمات الأساسية وشروط البحث
+              href: keyword-queries-and-search-conditions.md
+            - name: استخدام محرر KQL لإنشاء استعلامات البحث
+              href: ediscovery-kql-editor.md
+            - name: إعداد حدود التوافق
+              href: set-up-compliance-boundaries.md
+            - name: تكوين تصفية أذونات البحث
+              href: permissions-filtering-for-content-search.md
+            - name: المحتوى المخزن في علب البريد لـ eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
+            - name: الاختلافات بين نتائج البحث المقدرة والفعلية
+              href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: العناصر المفهرسة جزئياً
+              href: partially-indexed-items-in-content-search.md
+            - name: التحقق من العناصر المفهرسة جزئياً
+              href: investigating-partially-indexed-items-in-ediscovery.md
+            - name: معاينة نتائج بحث eDiscovery
+              href: preview-ediscovery-search-results.md
+            - name: تصدير تقرير بحث
+              href: export-a-content-search-report.md
+            - name: استخدم برنامجاً نصياً لإضافة مستخدمين إلى تعليق eDiscovery
+              href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
+            - name: استخدام برنامج نصي لإنشاء تقرير عن "المواجد"
+              href: create-a-report-on-holds-in-ediscovery-cases.md
+            - name: عرض إحصائيات نتائج البحث
+              href: view-keyword-statistics-for-content-search.md
+            - name: البحث عن البيانات الممتدة وإبقاءها
+              href: data-spillage-scenariosearch-and-purge.md
+            - name: المحافظة على مستلمي "عملية حفظ"، للبحث
+              href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: فك التشفير في أدوات eDiscovery
+              href: ediscovery-decryption.md
+            - name: تجميع معلومات تشخيص eDiscovery
+              href: ediscovery-diagnostic-info.md
+            - name: إعادة محاولة بحث فشل
+              href: retry-failed-content-search.md
+            - name: استخدام Microsoft Edge لتنزيل نتائج البحث
+              href: configure-edge-to-export-search-results.md
+            - name: البحث عن أنشطة eDiscovery في سجل التدقيق
+              href: search-for-ediscovery-activities-in-the-audit-log.md
+    - name: eDiscovery المتقدم
+      items:
+        - name: نظرة عامة
+          href: overview-ediscovery-20.md
+        - name: إعداد eDiscovery المتقدم
+          href: get-started-with-advanced-ediscovery.md
+        - name: إنشاء Advanced eDiscovery حالات
+          items:
+            - name: إنشاء حالة وإدارتها
+              href: create-and-manage-advanced-ediscoveryv2-case.md
+            - name: استخدام تنسيق حالة جديدة
+              href: advanced-ediscovery-new-case-format.md
+        - name: سير عمل eDiscovery المتقدم لمحتوى Teams
+          href: teams-workflow-in-advanced-ediscovery.md
+        - name: إدارة المتحكمين ومصادر البيانات غير المهينة
+          href: managing-custodians.md
+          items:
+            - name: إضافة مديرين إلى حالة
+              href: add-custodians-to-case.md
+            - name: استيراد العديد من أطباء الوصاية إلى حالة
+              href: bulk-add-custodians.md
+            - name: إدارة المتحكمين
+              href: manage-new-custodians.md
+            - name: عرض نشاط التدقيق الخاص بالأمين
+              href: view-custodian-activity.md
+            - name: إضافة مصادر بيانات غير قابلة للحجز إلى حالة
+              href: non-custodial-data-sources.md
+        - name: إدارة الاتصالات المهينة
+          href: managing-custodian-communications.md
+          items:
+            - name: إنشاء إعلام مع الاستمرار
+              href: create-hold-notification.md
+            - name: استخدام محرر الاتصالات
+              href: using-communications-editor.md
+            - name: إدارة إعلامات الانتظار
+              href: manage-hold-notification.md
+            - name: الإقرار بإعلام الانتظار
+              href: acknowledge-hold-notification.md
+            - name: إدارة الموظفين المصدرين
+              href: advanced-ediscovery-issuing-officers.md
+            - name: إدارة قوالب الاتصالات العامة
+              href: advanced-ediscovery-communications-library.md
+        - name: إدارة عمليات التحكم
+          href: managing-holds.md
+          items:
+            - name: استخدام برنامج نصي لإنشاء تقرير عن "المواجد"
+              href: create-a-report-on-holds-in-ediscovery-cases.md
+        - name: إدارة أخطاء المعالجة
+          href: processing-data-for-case.md
+          items:
+            - name: الفهرسة المتقدمة للمحتوى غير المحتوي
+              href: indexing-custodian-data.md
+            - name: تصحيح الأخطاء عند معالجة المحتوى
+              href: error-remediation-when-processing-data-in-advanced-ediscovery.md
+            - name: تصحيح خطأ عنصر واحد
+              href: single-item-error-remediation.md
+        - name: تجميع محتوى لقضية
+          items:
+            - name: التعرّف على المجموعات
+              href: collections-overview.md
+            - name: إنشاء مجموعة مسودة
+              href: create-draft-collection.md
+            - name: التزام مجموعة مسودة إلى مجموعة مراجعة
+              href: commit-draft-collection.md
+            - name: إحصائيات المجموعات والتقارير
+              href: collection-statistics-reports.md
+            - name: إنشاء استعلامات البحث للمجموعات
+              href: building-search-queries.md
+            - name: استخدام محرر KQL لإنشاء استعلامات البحث
+              href: ediscovery-kql-editor.md
+            - name: استعلامات الكلمات الأساسية وشروط البحث
+              href: keyword-queries-and-search-conditions.md
+            - name: تجميع مرفقات السحابة
+              href: advanced-ediscovery-cloud-attachments.md
+        - name: إدارة مجموعات المراجعة
+          href: managing-review-sets.md
+          items:
+            - name: تحميل بيانات غير Office 365 إلى مجموعة مراجعة
+              href: load-non-Office-365-data-into-a-review-set.md
+            - name: إضافة بيانات إلى مجموعة مراجعة أخرى
+              href: add-data-to-review-set-from-another-review-set.md
+        - name: مراجعة محتوى حالة
+          items:
+            - name: الاستعلام وتصفية المحتوى في مجموعة مراجعة
+              href: review-set-search.md
+            - name: وضع علامة على المستندات في مجموعة مراجعة
+              href: tagging-documents.md
+            - name: عرض المستندات في مجموعة مراجعة
+              href: view-documents-in-review-set.md
+            - name: استخدام لوحة معلومات مجموعة المراجعة
+              href: advanced-ediscovery-dashboard.md
+        - name: تحليل محتوى حالة
+          href: analyzing-data-in-review-set.md
+          items:
+            - name: الكشف المكرر تقريباً
+              href: near-duplicate-detection-in-advanced-ediscovery.md
+            - name: ترابط البريد الإلكتروني
+              href: email-threading-in-advanced-ediscovery.md
+            - name: النُسق
+              href: themes-in-advanced-ediscovery.md
+        - name: استخدام الترميز المتوقع (معاينة)
+          items:
+            - name: بداية سريعة - ترميز متوقع
+              href: predictive-coding-quick-start.md
+            - name: التعرف على التعليمات البرمجية المتوقعة
+              href: predictive-coding-overview.md
+            - name: إنشاء نموذج ترميز متوقع
+              href: predictive-coding-create-model.md
+            - name: تدريب نموذج ترميز متوقع
+              href: predictive-coding-train-model.md
+            - name: تطبيق عامل تصفية نقاط التنبؤ
+              href: predictive-coding-apply-prediction-filter.md
+            - name: مرجع ترميز متوقع
+              href: predictive-coding-reference.md
+        - name: تصدير محتوى حالة المحتوى
+          href: exporting-data-ediscover20.md
+          items:
+            - name: تنزيل المستندات من مجموعة مراجعة
+              href: download-documents-from-review-set.md
+            - name: تصدير المستندات من مجموعة مراجعة
+              href: export-documents-from-review-set.md
+            - name: تصدير المستندات إلى حساب Azure Storage
+              href: download-export-jobs.md
+        - name: إدارة المهام
+          href: managing-jobs-ediscovery20.md
+        - name: تكوين إعدادات حالة الضبط
+          items:
+            - name: إغلاق حالة أو حذفها
+              href: close-or-delete-case.md
+            - name: إضافة أعضاء أو إزالتهم من حالة
+              href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
+            - name: تكوين إعدادات البحث والتحليلات
+              href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
+        - name: مرجع eDiscovery المتقدم
+          items:
+            - name: حدود eDiscovery المتقدم
+              href: limits-ediscovery20.md
+            - name: أنواع الملفات المعتمدة
+              href: supported-filetypes-ediscovery20.md
+            - name: حقول بيانات تعريف المستند
+              href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: إعداد الإصدارات التاريخية
+              href: advanced-ediscovery-historical-versions.md
+            - name: إعداد الكشف عن امتيازات المحامي والعميل
+              href: attorney-privilege-detection.md
+            - name: تعيين أذونات مسؤول eDiscovery
+              href: assign-ediscovery-permissions.md
+            - name: استعلامات الكلمات الأساسية وشروط البحث
+              href: keyword-queries-and-search-conditions.md
+            - name: إعداد حدود التوافق
+              href: set-up-compliance-boundaries.md
+            - name: تكوين تصفية أذونات البحث
+              href: permissions-filtering-for-content-search.md
+            - name: المحتوى المخزن في علب البريد لـ eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
+            - name: فك التشفير في أدوات eDiscovery
+              href: ediscovery-decryption.md
+            - name: مجموعات مراجعة المحادثة
+              href: conversation-review-sets.md
+            - name: دعم لغة CJK
+              href: ediscovery-cjk-support.md
+            - name: تجميع معلومات تشخيص eDiscovery
+              href: ediscovery-diagnostic-info.md
+            - name: البحث عن أنشطة eDiscovery في سجل التدقيق
+              href: search-for-ediscovery-activities-in-the-audit-log.md
+            - name: استكشاف الأخطاء في AzCopy وإصلاحها
+              href: troubleshooting-azcopy.md
+    - name: تقاعد أدوات eDiscovery القديمة
+      href: legacy-ediscovery-retirement.md
+- name: إدارة عمليات التحكم
+  items:
+    - name: كيفية تحديد نوع الانتظار الموضوع على علبة بريد
+      href: identify-a-hold-on-an-exchange-online-mailbox.md
+    - name: احذف العناصر الموجودة في مجلد "العناصر القابلة للاسترداد" الخاص بصناديق البريد المعلقة
+      href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
+    - name: زيادة الحصة النسبية للعناصر القابلة للاسترداد لعلب البريد في الانتظار
+      href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: إنشاء الاحتجاز في الدعاوى القضائية
+      href: create-a-litigation-hold.md
+    - name: الاحتفاظ بـ نسخة مماثلة خفية" و"مجموعة التوزيع الموسعة"
+      href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+- name: إدارة نهج التدقيق والتنبيه
+  items:
+    - name: حلول التدقيق في Microsoft 365
+      href: auditing-solutions-overview.md
+    - name: التدقيق الأساسي
+      items:
+        - name: إعداد التدقيق الأساسي
+          href: set-up-basic-audit.md
+        - name: البحث في سجل التدقيق
+          href: search-the-audit-log-in-security-and-compliance.md
+        - name: تصدير سجلات سجل التدقيق وتكوينها وعرضها
+          href: export-view-audit-log-records.md
+        - name: استخدام برنامج PowerShell النصي للبحث في سجل التدقيق
+          href: audit-log-search-script.md
+        - name: الخصائص المفصلة في سجل التدقيق
+          href: detailed-properties-in-the-office-365-audit-log.md
+        - name: تشغيل التدقيق أو إيقاف تشغيله
+          href: turn-audit-log-search-on-or-off.md
+        - name: استخدام سجل التدقيق للتحقق من المشاكل الشائعة
+          href: auditing-troubleshooting-scenarios.md
+        - name: استخدام تدقيق المشاركة في سجل التدقيق
+          href: use-sharing-auditing.md
+        - name: واجهة برمجة التطبيقات لنشاط الإدارة في Office 365
+          items:
+            - name: مرجع واجهة برمجة تطبيقات نشاط إدارة Office 365
+              href: /office/office-365-management-api/office-365-management-activity-api-reference
+            - name: مخطط واجهة برمجة التطبيقات لنشاط إدارة Office 365
+              href: /office/office-365-management-api/office-365-management-activity-api-schema
+            - name: الأسئلة المتداولة حول واجهة برمجة تطبيقات Office 365 Management Activity واستكشاف الأخطاء وإصلاحها
+              href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
+    - name: التدقيق المتقدم
+      items:
+        - name: نظرة عامة على التدقيق المتقدم
+          href: advanced-audit.md
+        - name: إعداد التدقيق المتقدم
+          href: set-up-advanced-audit.md
+        - name: إدارة سياسات استبقاء سجل التدقيق
+          href: audit-log-retention-policies.md
+        - name: استخدام التدقيق المتقدم للتحقق من الحسابات المخترقة
+          href: mailitemsaccessed-forensics-investigations.md
+    - name: تدقيق علبة البريد
+      href: enable-mailbox-auditing.md
+    - name: نُهج التنبيهات
+      href: alert-policies.md
+- name: إدارة مخاطر التوافق
+  items:
+    - name: إدارة التوافق
+      items:
+        - name: التعرّف على إدارة التوافق
+          href: compliance-manager.md
+        - name: ما الجديد في إدارة التوافق
+          href: compliance-manager-whats-new.md
+        - name: العمل السريع لـ "إدارة التوافق"
+          href: compliance-manager-quickstart.md
+        - name: بدء استخدام "إدارة الترحيل"
+          href: compliance-manager-setup.md
+        - name: إنشاء التقييمات وإدارتها
+          href: compliance-manager-assessments.md
+        - name: التعرّف على قوالب التقييم
+          href: compliance-manager-templates.md
+        - name: إنشاء قوالب التقييم
+          href: compliance-manager-templates-create.md
+        - name: توسيع قوالب التقييم
+          href: compliance-manager-templates-extend.md
+        - name: تعديل قوالب التقييم
+          href: compliance-manager-templates-modify.md
+        - name: تنسيق بيانات القالب في Excel
+          href: compliance-manager-templates-format-excel.md
+        - name: قائمة قوالب إدارة التوافق
+          href: compliance-manager-templates-list.md
+        - name: العمل باستخدام إجراءات التحسين
+          href: compliance-manager-improvement-actions.md
+        - name: إنشاء نُهج التنبيهات وإدارتها
+          href: compliance-manager-alert-policies.md
+        - name: كيفية حساب نقاط التوافق
+          href: compliance-score-calculation.md
+        - name: أداة محلل تكوين التوافق
+          href: compliance-manager-mcca.md
+        - name: الأسئلة المتداولة
+          href: compliance-manager-faq.yml
+    - name: Microsoft Service Trust Portal
+      href: get-started-with-service-trust-portal.md
+    - name: إرشادات خاصة بالمجال
+      items:
+        - name: أمان الخدمات المالية وتوافقها
+          href: ../solutions/financial-services-secure-collaboration.md
+        - name: أمان خدمات الطاقة وتوافقها
+          href: ../solutions/energy-secure-collaboration.md
+- name: إمكانات التوافق المختلط
+  items:
+    - name: تشفير بريد Exchange عبر الإنترنت باستخدام AD RMS
+      href: information-rights-management-in-exchange-online.md
+      items:
+        - name: تكوين IRM لاستخدام خادم AD RMS
+          href: configure-irm-to-use-an-on-premises-ad-rms-server.md
+- name: "Microsoft\_365 Enterprise"
+  href: ../enterprise/index.yml
+- name: الأمان في Microsoft 365
+  href: ../security/index.yml
+- name: تطبيقات Microsoft 365 للأعمال
+  href: /office365/admin/admin-home
+- name: Microsoft Priva
+  href: /privacy/priva/
+- name: استكشاف الأخطاء وإصلاحها
+  href: /office365/troubleshoot/microsoft-365-compliance-welcome

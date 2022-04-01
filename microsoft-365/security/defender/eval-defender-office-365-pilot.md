@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 456f5dae90f2a559e82599271f23bd5f3452ac12
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 58d7a8acd752eda36fe8ee73989105b54e746ddf
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63571751"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755563"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>تجريبي ل Microsoft Defender Office 365
 
@@ -45,28 +45,28 @@ ms.locfileid: "63571751"
 
 عند تقييم Microsoft Defender Office 365، يمكنك اختيار إجراء تجريبي لمستخدمين معينين قبل تمكين السياسات وفرضها لمنظمتك بكاملها. يمكن أن يساعد إنشاء مجموعات التوزيع على إدارة عمليات النشر. على سبيل المثال، أنشئ مجموعات مثل *Defender for Office 365 Users - Standard Protection* أو *Defender for Office 365 Users - Strict Protection* أو *Defender for Office 365 Users - Custom Protection* أو *Defender for Office 365 Users - Exceptions*.
 
-قد لا يكون من الواضح سبب استخدام المصطلحين "قياسي" و"صارم" لهذا، ولكن سيصبح ذلك واضحا عند استكشاف المزيد حول Defender for Office 365 المسبقة لأمن المستخدم. تحدث تسمية المجموعات "المخصصة" و"الاستثناءات" عن نفسها، وعلى الرغم من أن معظم المستخدمين يجب أن يقعوا  ضمن المجموعات القياسية والمتقيدة، فإن المجموعات المخصصة والاستثناءات ستجمع بيانات قيمة بالنسبة لك فيما يتعلق بإدارة المخاطر.
+قد لا يكون واضحا سبب استخدام المصطلحين "قياسي" و"صارم" لهذه المجموعات، ولكن سيصبح ذلك واضحا عند استكشاف المزيد حول إعدادات الأمان المسبقة ل Defender for Office 365 الجديدة. تحدث تسمية المجموعات "المخصصة" و"الاستثناءات" عن نفسها، وعلى الرغم من أن معظم المستخدمين يجب أن يقعوا  ضمن المجموعات القياسية والمتقيدة، فإن المجموعات المخصصة والاستثناءات ستجمع بيانات قيمة بالنسبة لك فيما يتعلق بإدارة المخاطر.
 
 ## <a name="step-1-create-pilot-groups"></a>الخطوة 1: إنشاء مجموعات تجريبية
 
 يمكن إنشاء مجموعات التوزيع بتعريفها مباشرة في Exchange Online أو مزامنتها من Active Directory المحلية.
 
-1. تسجيل Exchange مركز إدارة (EAC) باستخدام حساب تم منحه دور مسؤول المستلم أو تم تفويض أذونات إدارة المجموعة له.
-2. من قائمة التنقل، قم بتوسيع **المستلمين** وحدد <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**مجموعات**</a>.
+1. سجل الدخول إلى مركز إدارة Exchange (EAC) باستخدام حساب تم منحه دور مسؤول المستلم أو تم تفويض أذونات إدارة المجموعة له.
+2. من قائمة التنقل، قم بتوسيع *المستلمين* وحدد *مجموعات*.
 
-   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text="Exchange مركز الإدارة على قائمة التنقل (شريط الإطلاق السريع) مع سهم يشير إلى المجموعات. انقر فوق مجموعات.":::
+   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text="قائمة التنقل الخاصة Exchange مركز الإدارة (شريط العمل السريع) مع سهم يشير إلى المجموعات. انقر فوق المجموعات" lightbox="../../media/mdo-eval/1_mdo-eval-pilot.png":::
 
 3. من لوحة معلومات المجموعات، حدد "إضافة مجموعة".
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png" alt-text="إضافة مجموعات على لوحة المجموعات.":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png" alt-text="الخيار &quot;إضافة مجموعات&quot; على لوحة &quot;المجموعات&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png":::
 
 4. بالنسبة لنوع المجموعة، حدد *توزيع* وانقر فوق التالي.
 
-   :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text="اختر نوع مجموعة توزيع هنا.":::
+   :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text="الصفحة &quot;اختيار نوع مجموعة&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png":::
 
 5. قم امنح المجموعة اسما ووصفا، ثم انقر فوق التالي.
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png" alt-text="قم  بالاسم ووصف المجموعة.":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png" alt-text="الصفحة &quot;إعداد الأساسيات&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png":::
 
 ## <a name="step-2-configure-protection"></a>الخطوة 2: تكوين الحماية
 
@@ -83,7 +83,7 @@ ms.locfileid: "63571751"
 
 ### <a name="assign-preset-security-policies"></a>تعيين سياسات أمان معينة مسبقا
 
-يتم التشجيع على البدء باستخدام سياسات الأساس الموصى  بها عند تقييم MDO ثم تحسينها حسب الحاجة خلال فترة التقييم.
+من المستحسن أن تبدأ ونهج الأساس الموصى  بها عند تقييم MDO ثم تحسينها حسب الحاجة خلال فترة التقييم.
 
 يمكنك تمكين EOP و Defender المستحسنين Office 365 الحماية بسرعة، وتعيينها لمستخدمين تجريبيين معينين أو مجموعات معرفة كجزء من التقييم. توفر السياسات المعينة مسبقا قالب حماية **قياسي** أساسي أو قالب حماية صارمة أكثر  صرامة يمكن تعيينه بشكل مستقل أو دمجه.
 
@@ -96,28 +96,28 @@ ms.locfileid: "63571751"
 
 3. على لوحة المعلومات نهج &، انقر فوق *نهج التهديدات*.
 
-   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="أ.":::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="عنصر القائمة &quot;سياسات التهديدات&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png":::
 
 4. من مدخل Microsoft 365 Defender، قم بتوسيع إدارة المخاطر من قائمة التنقل ثم حدد نهج من القائمة الفرعية.
 5. على لوحة معلومات النهج، انقر فوق *نهج الأمان المحددة مسبقا*.
 
-   :::image type="content" source="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png" alt-text="انقر فوق اللوحة &quot;سياسات الأمان&quot; التي تم الإعداد المسبق لها.":::
+   :::image type="content" source="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png" alt-text="صفحة &quot;سياسات التهديدات&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png":::
 
 6. انقر *فوق* تحرير لتكوين النهج القياسي و/أو النهج الصارم وتعيينه.
 
-   :::image type="content" source="../../media/mdo-eval/8-mdo-eval-pilot-preset.png" alt-text="في لوحة سياسات الأمان التي تم الإعداد المسبق لها، انقر فوق تحرير.":::
+   :::image type="content" source="../../media/mdo-eval/8-mdo-eval-pilot-preset.png" alt-text="صفحة سياسات الأمان التي تم الإعداد المسبق لها في مدخل Microsoft 365 Defender" lightbox="../../media/mdo-eval/8-mdo-eval-pilot-preset.png":::
 
 7. أضف شروطا لتطبيق الحماية الأساسية ***EOP** _لمستخدمين تجريبيين معينين أو مجموعات من المستخدمين، حسب الحاجة، وحدد _Next* للمتابعة.
 
    على سبيل المثال، يمكن تطبيق شرط حماية Office 365 لتقييمات تجريبية إذا كان المستلمون أعضاء في مجموعة حماية قياسية  محددة ل *Office 365 Defender ل Office 365*، ثم تتم إدارتها ببساطة عن طريق إضافة حسابات إلى المجموعة أو إزالتها منها.
 
-   :::image type="content" source="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png" alt-text="أضف الشروط اللازمة لتطبيق مستوى أمان EOP على مجموعة التجربة.":::
+   :::image type="content" source="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png" alt-text="تنطبق حماية EOP على الصفحة في مدخل Microsoft 365 Defender" lightbox="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png":::
 
 8. أضف شروطا لتطبيق الحماية الأساسية ***MDO** _ لمستخدمين تجريبيين معينين أو مجموعات من المستخدمين، حسب الحاجة. انقر _Next* للمتابعة.
 
    على سبيل المثال، يمكن تطبيق شرط Office 365 ل Defender لتقييمات تجريبية إذا كان المستلمون أعضاء مجموعة *محددة ل Defender for Office 365 Standard Protection*، ثم تتم إدارتها ببساطة عن طريق إضافة /إزالة الحسابات عبر المجموعة.
 
-   :::image type="content" source="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png" alt-text="أضف الشروط اللازمة لتطبيق &quot;مستوى Office 365&quot; على مجموعة التجربة.":::
+   :::image type="content" source="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png" alt-text="تنطبق حماية Office 365 Defender على الصفحة في مدخل Microsoft 365 Defender" lightbox="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png":::
 
 9. قم بمراجعة التغييرات وتأكيدها لتعيين سياسات أمان معينة مسبقا.
 10. يمكن إدارة سياسات الحماية التي تم إعدادها مسبقا (إعادة تكوينها أو إعادة تطبيقها أو تعطيلها وغير ذلك) من خلال العودة إلى مدخل Microsoft 365 Defender > قواعد & > سياسات التهديدات > والنقر فوق لوحة سياسات الأمان التي تم إعدادها مسبقا.

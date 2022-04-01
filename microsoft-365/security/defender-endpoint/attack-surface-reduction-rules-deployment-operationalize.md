@@ -1,7 +1,7 @@
 ---
 title: تشغيل نشر قواعد الحد من الهجمات على سطح الهجوم (ASR)
 description: يوفر إرشادات حول تشغيل نشر قواعد تقليل مساحة الهجوم.
-keywords: نشر قواعد تقليل مساحة الهجوم ونشر ASR وتمكين قواعد asr وتكوين ASR ونظام منع اقتحام المضيف وقواعد الحماية وقواعد مكافحة استغلالها وقواعد مكافحة استغلالها واستغلالها وقواعد منع الإصابة و Microsoft Defender ل Endpoint وتكوين قواعد ASR
+keywords: نشر قواعد الحد من الهجمات على سطح الهجوم ونشر ASR وتمكين قواعد asr وتكوين ASR ونظام منع اقتحام المضيف وقواعد الحماية وقواعد مكافحة الهجمات وقواعد مكافحة استغلالها واستغلالها وقواعد منع Microsoft Defender لنقطة النهاية وتكوين قواعد ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,14 +16,16 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: m365solution-scenario
+ms.collection:
+- m365solution-scenario
+- M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 3229cd0a98714819009e7d50baab0872f3a67c43
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 9a3e8ab38c807b8cf3ea54bb5a18a5405d0b3c49
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63575971"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465344"
 ---
 # <a name="step-4-operationalize-asr-rules"></a>الخطوة 4: تشغيل قواعد ASR
 
@@ -31,7 +33,7 @@ ms.locfileid: "63575971"
 
 ## <a name="managing-false-positives"></a>إدارة الإيجابيات الخاطئة
 
-يمكن أن تحدث الإيجابيات/السلبيات الخاطئة مع أي حل للحماية من المخاطر. إن الإيجابيات الخاطئة هي الحالات التي يتم فيها الكشف عن كيان (مثل ملف أو عملية) وتعرف على أنه ضار، على الرغم من أن الكيان لا يشكل في الواقع خطرا. في المقابل، السلبية الخاطئة هي كيان لم يتم اكتشافه كخطر ولكنه ضار. لمزيد من المعلومات حول الإيجابيات الخاطئة والسلبيات الخاطئة، راجع: معالجة الإيجابيات [/السلبيات الخاطئة في Microsoft Defender لنقطة النهاية](defender-endpoint-false-positives-negatives.md)
+يمكن أن تحدث الإيجابيات/السلبيات الخاطئة مع أي حل للحماية من المخاطر. إن الإيجابيات الخاطئة هي الحالات التي يتم فيها الكشف عن كيان (مثل ملف أو عملية) وتعرف على أنه ضار، على الرغم من أن الكيان لا يشكل في الواقع خطرا. في المقابل، السلبية الخاطئة هي كيان لم يتم اكتشافه كخطر ولكنه ضار. لمزيد من المعلومات حول الإيجابيات الخاطئة والسلبيات الخاطئة، راجع: معالجة الإيجابيات/السلبيات الخاطئة [في Microsoft Defender لنقطة النهاية](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="keeping-up-with-reports"></a>متابعة التقارير
 
@@ -42,7 +44,7 @@ ms.locfileid: "63575971"
 إحدى أكثر ميزات [Microsoft 365 Defender هي البحث](https://security.microsoft.com) المتقدم. إذا لم تكن ملما بالصيد المتقدم، فاطلع على: البحث بشكل استباقي عن [التهديدات باستخدام الصيد المتقدم](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender البحث المتقدم](images/asr-defender365-advanced-hunting2.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="صفحة &quot;الصيد المتقدم&quot; في مدخل Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting2.png":::
 
 إن الصيد المتقدم هو أداة بحث عن تهديدات تستند إلى استعلام (لغة استعلام Kusto) تتيح لك استكشاف ما يصل إلى 30 يوما من البيانات التي تم التقاطها (الخام) والتي يجمعها Microsoft Defender ATP Endpoint detection and Response (الكشف التلقائي والاستجابة على النقط النهائية) من جميع الأجهزة. من خلال البحث المتقدم، يمكنك فحص الأحداث بشكل استباقي لتحديد موقع المؤشرات والكيانات المثيرة للاهتمام. يسهل الوصول المرن إلى البيانات عمليات البحث غير المقيدة لكل من التهديدات المعروفة والمحتملة.
 
@@ -53,10 +55,10 @@ ms.locfileid: "63575971"
 يتم كبح أحداث ASR التي تظهر في مدخل الصيد المتقدم للعمليات الفريدة التي تظهر كل ساعة. وقت حدث ASR هو المرة الأولى التي يتم فيها رؤية الحدث في غضون تلك الساعة.
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender الأمر "استعلام بحث متقدم"](images/asr-defender365-advanced-hunting3.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting3.png" alt-text="سطر أوامر استعلام البحث المتقدم في مدخل Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting3.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender نتائج استعلام البحث المتقدم](images/asr-defender365-advanced-hunting4.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting4.png" alt-text="يؤدي استعلام البحث المتقدم إلى Microsoft 365 Defender الإلكتروني" lightbox="images/asr-defender365-advanced-hunting4.png":::
 
 يوضح ما ذكر أعلاه أنه تم تسجيل 187 حدثا ل AsrLsasCredentialTheft:
 
@@ -68,10 +70,10 @@ ms.locfileid: "63575971"
 إذا كنت تريد التركيز على قاعدة AsrOfficeChildProcess والحصول على تفاصيل حول الملفات والعمليات الفعلية المضرورة، فغير عامل التصفية ل ActionType واستبدل سطر التلخيص مع عرض الحقول المطلوب (في هذه الحالة هي DeviceName و FileName و FolderPath وغير ذلك).
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender استعلام البحث المتقدم](images/asr-defender365-advanced-hunting4b.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting4b.png" alt-text="مثال مركز على استعلام البحث المتقدم في مدخل Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting4b.png":::
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender نتائج استعلام البحث المتقدم](images/asr-defender365-advanced-hunting5b.png)
+> :::image type="content" source="images/asr-defender365-advanced-hunting5b.png" alt-text="نتائج استعلام البحث المتقدم التي تركز على مدخل Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting5b.png":::
 
 الفائدة الحقيقية للصيد المتقدم هي أنه يمكنك تشكيل الاستعلامات على نحو يعجبك. من خلال تشكيل الاستعلام، يمكنك رؤية القصة الدقيقة لما كان يحدث، بغض النظر عما إذا كنت تريد تثبيت شيء ما على جهاز فردي، أو كنت تريد استخراج نتائج تحليلات من بيئتك بأكملها.
 

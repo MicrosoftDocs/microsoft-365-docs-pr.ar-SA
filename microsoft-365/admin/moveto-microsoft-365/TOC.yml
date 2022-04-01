@@ -1,22 +1,22 @@
-- name: التبديل من Google Workspace إلى Microsoft 365
+- name: التبديل من مساحة عمل Google إلى Microsoft 365
   items:
     - name: نظرة عامة
       href: move-from-google-workspace-overview.md
     - name: التسجيل في Microsoft 365
-      href: /admin-overview/sign-up-for-office-365?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
-    - name: إعداد Microsoft 365 ترحيل Google
+      href: ../admin-overview/sign-up-for-office-365.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
+    - name: إعداد Microsoft 365 لترحيل Google
       href: set-up-microsoft-365-forgoogle.md
-    - name: إعداد سياسات الأمان للأجهزة Windows الأجهزة
+    - name: إعداد سياسات الأمان لأجهزة Windows
       href: ../setup/secure-win-10-pcs.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
-    - name: إضافة مجال Google Workspace
+    - name: إضافة مجال لمساحة عمل Google
       href: add-google-domain.md
-    - name: تثبيت Office وتطبيقات Microsoft Teams
+    - name: تثبيت تطبيقات Office و Microsoft Teams
       href: ../setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
     - name: ترحيل البريد الإلكتروني والتقويم وجهات الاتصال إلى Microsoft 365
       href: migrate-email.md
-    - name: الاتصال مجالك Microsoft 365
+    - name: توصيل مجالك بـ Microsoft 365
       href: connect-domain-tom365.md
-    - name: استخدام إدارة الترحيل لنقل بيانات الجميع
+    - name: استخدام مدير الترحيل لنقل بيانات الجميع
       href: migrate-files-migration-manager.md
-    - name: إلغاء Google Workspace
+    - name: إلغاء مساحة عمل Google
       href: cancel-google.md

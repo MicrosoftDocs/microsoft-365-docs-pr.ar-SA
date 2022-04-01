@@ -1,7 +1,7 @@
 ---
 title: مرجع قواعد الحد من سطح الهجوم
 description: تسرد تفاصيل حول قواعد الحد من سطح الهجوم على أساس كل قاعدة.
-keywords: قواعد الحد من سطح الهجوم، قواعد ASR، قواعد asr، الوركين، نظام منع اقتحام المضيف، قواعد الحماية، قواعد مكافحة استغلال، مكافحة استغلال، قواعد استغلال، قواعد منع الإصابة، Microsoft Defender ل Endpoint، تكوين قواعد ASR، وصف قاعدة ASR
+keywords: قواعد الحد من سطح الهجوم، قواعد ASR، قواعد asr، الوركين، نظام منع اقتحام المضيف، قواعد الحماية، قواعد مكافحة استغلال، مكافحة استغلال، قواعد استغلال، قواعد منع الإصابة، Microsoft Defender لنقطة النهاية، تكوين قواعد ASR، وصف قاعدة ASR
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,19 +17,19 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 5ffbe15fe9fa06e7c06546f9452d6c4f2bddfc39
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b9655189759707e9c4463d3c53a3b0b9fd20e730
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63578591"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520562"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>مرجع قواعد الحد من سطح الهجوم
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 توفر هذه المقالة معلومات حول قواعد الحد من الهجمات:
@@ -37,9 +37,10 @@ ms.locfileid: "63578591"
 - [إصدارات نظام التشغيل المعتمدة](#supported-operating-systems)
 - [أنظمة إدارة التكوين المعتمدة](#supported-configuration-management-systems)
 - [تفاصيل الإعلامات والتنبيهات لكل قاعدة](#per-rule-alert-and-notification-details)
+- [مصفوفة قواعد ASR ومصفوفة GUIDs](#asr-rules-and-guids-matrix)
+- [أوضاع قواعد ASR](#asr-rule-modes)
 - [الأوصاف لكل قاعدة](#per-rule-descriptions)
   - أوصاف القاعدة
-  - GUIDs
   - أسماء قواعد نظام إدارة التكوين
 
 ## <a name="public-preview-supported-operating-systems"></a>المعاينة العامة: أنظمة التشغيل المعتمدة
@@ -110,9 +111,9 @@ _إنهاء المعاينة العامة: أنظمة التشغيل المعت�
 
 يتم سرد الارتباطات إلى معلومات حول إصدارات نظام إدارة التكوين المشار إليها في هذا الجدول أسفل هذا الجدول.
 
-|اسم القاعدة | Intune | إدارة نقاط النهاية من Microsoft |Microsoft Endpoint Configuration Manager |نهج المجموعة<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
+|اسم القاعدة | Intune | إدارة نقاط النهاية من Microsoft |Microsoft Endpoint Configuration Manager |<sup>نهج المجموعة[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[حظر إساءة استخدام برامج التشغيل الموقعة المعرضة للاستغلال](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  Y |
+|[حظر إساءة استخدام برامج التشغيل الموقعة المعرضة للاستغلال](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  Y  |
 |[منع Adobe Reader من إنشاء عمليات الأطفال](#block-adobe-reader-from-creating-child-processes) | Y |   | Y | Y  | Y  |
 |[حظر جميع Office من إنشاء عمليات الأطفال](#block-all-office-applications-from-creating-child-processes) | Y |   |Y <br><br> CB 1710 | Y  | Y  |
 |[حظر سرقة بيانات الاعتماد من Windows فرعي لسلطات الأمان المحلية (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
@@ -135,7 +136,7 @@ _إنهاء المعاينة العامة: أنظمة التشغيل المعت�
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 - [إدارة نقاط النهاية من Microsoft CB 1710](/configmgr/core/servers/manage/updates)
-- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_تم الآن Microsoft Endpoint Configuration Manager SCCM._
+- [System Center Configuration Manager CB 1710 (SCCM)](/configmgr/core/servers/manage/updates) <br>_تم الآن Microsoft Endpoint Configuration Manager SCCM._
 
 ## <a name="per-rule-alert-and-notification-details"></a>تفاصيل الإعلامات والتنبيه لكل قاعدة
 
@@ -143,7 +144,7 @@ _إنهاء المعاينة العامة: أنظمة التشغيل المعت�
 
 بالنسبة إلى القواعد التي تم تحديد "حالة القاعدة":
 
-- يتم استخدام قواعد \<ASR Rule, Rule State\> ASR ذات التركيبات لسطح التنبيهات (الإعلامات المنبثقة) على Microsoft Defender لنقطة النهاية فقط للأجهزة على مستوى الكتلة السحابية العالية. لن تنشئ الأجهزة التي لا تعمل على مستوى كتلة سحابية عالية تنبيهات لأي <قاعدة ASR أو مجموعة> قاعدة
+- يتم استخدام قواعد \<ASR Rule, Rule State\> ASR مع التركيبات لسطح التنبيهات (الإعلامات المنبثقة) Microsoft Defender لنقطة النهاية فقط للأجهزة على مستوى الكتلة السحابية العالية. لن تنشئ الأجهزة التي لا تعمل على مستوى كتلة سحابية عالية تنبيهات لأي <قاعدة ASR أو مجموعة> قاعدة
 - الكشف التلقائي والاستجابة على النقط النهائية التنبيهات لقواعد ASR في الحالات المحددة، ولكن فقط للأجهزة التي تعمل بمستوى كتلة سحابية عال.
 
 | اسم القاعدة: | حالة القاعدة: | إنشاء تنبيهات في الكشف التلقائي والاستجابة على النقط النهائية؟ <br> (نعم&nbsp;\|&nbsp;لا) | هل تنشئ إعلامات منت المنبثقة؟ <br> (نعم&nbsp;\|&nbsp;لا) |
@@ -167,6 +168,27 @@ _إنهاء المعاينة العامة: أنظمة التشغيل المعت�
 |[استخدام الحماية المتقدمة من برامج الفدية الضارة](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> يتطلب جهازا على مستوى كتلة عالية السحابة  | N \| Y <br> يتطلب جهازا على مستوى كتلة عالية السحابة |
 |   |   |   |   |
   
+## <a name="asr-rules-and-guids-matrix"></a>مصفوفة قواعد ASR ومصفوفة GUIDs
+
+| اسم القاعدة | Guid للقاعدة |
+|:-----|:-----|
+| حظر إساءة استخدام برامج التشغيل الموقعة المعرضة للاستغلال | 56a863a9-875e-4185-98a7-b882c64b5ce5 |
+| منع Adobe Reader من إنشاء عمليات الأطفال | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c |
+| حظر جميع Office من إنشاء عمليات الأطفال | d4f940ab-401b-4efc-aadc-ad5f3c50688a |
+| حظر سرقة بيانات الاعتماد من Windows فرعي لسلطات الأمان المحلية (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 |
+| حظر المحتوى القابل للتنفيذ من عميل البريد الإلكتروني والبريد الإلكتروني | be9ba2d9-53ea-4cdc-84e5-9b1eeee46550 |
+| حظر تشغيل الملفات القابلة للتنفيذ إلا إذا كانت تلبي معيار قائمة ذات عمر أو عمر أو قائمة موثوق بها | 01443614-cd74-433a-b99e-2ecdc07bfc25 |
+| حظر تنفيذ البرامج النصية التي يحتمل أن تكون غير مهية | 5beb7efe-fd9a-4556-801d-275e5ffc04cc |
+| حظر JavaScript أو VBScript من بدء تشغيل المحتوى القابل للتنفيذ الذي تم تنزيله | d3e037e1-3eb8-44c8-a917-57927947596d |
+| حظر Office من إنشاء محتوى قابل للتنفيذ | 3b576869-a4ec-4529-8536-b80a7769e899 |
+| حظر Office من إدخال التعليمات البرمجية في عمليات أخرى | 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 |
+| منع Office الاتصالات من إنشاء عمليات الطفل | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
+| حظر الثبات عبر اشتراك حدث WMI <br>* استثناءات الملفات والمجلدات غير معتمدة. | e6db77e5-3df2-4cf1-b95a-636979351e5b |
+| إنشاءات عملية الحظر التي تنشأ من أوامر PSExec و WMI | d1e49aac-8f56-4280-b9ba-993a6d77406c |
+| حظر العمليات غير الملوثة وغير الموقعة التي يتم تشغيلها من USB | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 |
+| حظر مكالمات Win32 API من وحدات Office الماكرو | 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b |
+| استخدام الحماية المتقدمة من برامج الفدية الضارة | c1db55ab-c21a-4637-bb3f-a12568109d35 |
+
 ## <a name="asr-rule-modes"></a>أوضاع قواعد ASR
 
 - **غير مكون أو** **تعطيل**: هذه هي الحالة التي لم يتم فيها تمكين قاعدة ASR أو تعطيلها. التعليمة البرمجية لهذه الحالة = 0.
@@ -205,7 +227,7 @@ _وضع التحذير_ هو نوع وضع الحظر الذي ينبه المس
 
 اسم Intune: `Block abuse of exploited vulnerable signed drivers` (غير متوفر بعد)
 
-اسم مدير التكوين: غير متوفر بعد
+Configuration Manager: غير متوفر بعد
   
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
@@ -214,7 +236,7 @@ Advanced hunting action type:
 -->
 
 <!-- 
-Dependencies:
+Dependencies: none provided by engineering
 -->
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>منع Adobe Reader من إنشاء عمليات الأطفال
@@ -225,7 +247,7 @@ Dependencies:
 
 اسم Intune: `Process creation from Adobe Reader (beta)`
 
-اسم مدير التكوين: غير متوفر بعد
+Configuration Manager: غير متوفر بعد
 
 GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
@@ -240,11 +262,11 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 تمنع هذه القاعدة Office التطبيقات من إنشاء عمليات الطفل. Office تطبيقات Word Excel و PowerPoint و OneNote و Access.
 
-إنشاء عمليات الأطفال الضارة هي استراتيجية برامج ضارة شائعة. غالبا ما Office البرامج الضارة التي تستخدمها كمتجه إلى تشغيل وحدات ماكرو VBA وتستغل التعليمات البرمجية لتنزيل المزيد من التحميلات ومحاولة تشغيلها. ومع ذلك، قد تنشئ بعض تطبيقات خط العمل المشروعة أيضا عمليات طفل لأغراض غير مهينة؛ مثل تباعد موجه أوامر أو استخدام PowerShell لتكوين إعدادات التسجيل.
+إنشاء عمليات الأطفال الضارة هي استراتيجية برامج ضارة شائعة. غالبا ما يقوم Office البرامج الضارة التي تسيء استخدامها كمتجه بتشغيل وحدات ماكرو VBA وتستغل التعليمات البرمجية لتنزيل المزيد من التحميلات ومحاولة تشغيلها. ومع ذلك، قد تنشئ بعض تطبيقات خط العمل المشروعة أيضا عمليات طفل لأغراض غير مهينة؛ مثل تباعد موجه أوامر أو استخدام PowerShell لتكوين إعدادات التسجيل.
 
 اسم Intune: `Office apps launching child processes`
 
-اسم مدير التكوين: `Block Office application from creating child processes`
+Configuration Manager الاسم:`Block Office application from creating child processes`
 
 GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
@@ -269,7 +291,7 @@ GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 اسم Intune: `Flag credential stealing from the Windows local security authority subsystem`
 
-اسم مدير التكوين: `Block credential stealing from the Windows local security authority subsystem`
+Configuration Manager الاسم:`Block credential stealing from the Windows local security authority subsystem`
 
 GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
@@ -320,7 +342,7 @@ GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
 اسم Intune: `Executables that don't meet a prevalence, age, or trusted list criteria`
 
-اسم مدير التكوين: `Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
+Configuration Manager الاسم:`Block executable files from running unless they meet a prevalence, age, or trusted list criteria`
 
 GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
@@ -339,7 +361,7 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
 اسم Intune: `Obfuscated js/vbs/ps/macro code`
 
-اسم مدير التكوين: `Block execution of potentially obfuscated scripts`
+Configuration Manager الاسم:`Block execution of potentially obfuscated scripts`
 
 GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
@@ -358,7 +380,7 @@ GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
 اسم Intune: `js/vbs executing payload downloaded from Internet (no exceptions)`
 
-اسم مدير التكوين: `Block JavaScript or VBScript from launching downloaded executable content`
+Configuration Manager الاسم:`Block JavaScript or VBScript from launching downloaded executable content`
 
 GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
@@ -400,7 +422,7 @@ GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
 اسم Intune: `Office apps injecting code into other processes (no exceptions)`
 
-اسم مدير التكوين: `Block Office applications from injecting code into other processes`
+Configuration Manager الاسم:`Block Office applications from injecting code into other processes`
 
 GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
@@ -422,7 +444,7 @@ GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 اسم Intune: `Process creation from Office communication products (beta)`
 
-اسم مدير التكوين: غير متوفر
+Configuration Manager الاسم: غير متوفر
 
 GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
@@ -444,7 +466,7 @@ GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 اسم Intune: غير متوفر
 
-اسم مدير التكوين: غير متوفر
+Configuration Manager الاسم: غير متوفر
 
 GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
@@ -460,11 +482,11 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 تمنع هذه القاعدة العمليات التي يتم إنشاؤها من [خلال PsExec](/sysinternals/downloads/psexec) [و WMI](/windows/win32/wmisdk/about-wmi) من التشغيل. يمكن لكل من PsExec و WMI تنفيذ التعليمات البرمجية عن بعد، لذلك هناك خطر من استخدام البرامج الضارة لهذه الوظيفة لأغراض الأمر والتحكم، أو لنشر إصابة عبر شبكة المؤسسة.
 
 > [!WARNING]
-> استخدم هذه القاعدة فقط إذا كنت تدير أجهزتك باستخدام [Intune](/intune) أو حل MDM آخر. لا تتوافق هذه القاعدة مع الإدارة من خلال [](/configmgr) Microsoft Endpoint Configuration Manager لأن هذه القاعدة تمنع أوامر WMI التي يستخدمها عميل "إدارة التكوين" لكي تعمل بشكل صحيح.
+> استخدم هذه القاعدة فقط إذا كنت تدير أجهزتك باستخدام [Intune](/intune) أو حل MDM آخر. لا تتوافق هذه القاعدة مع الإدارة من خلال [](/configmgr) Microsoft Endpoint Configuration Manager لأن هذه القاعدة تمنع أوامر WMI Configuration Manager الذي يستخدمه العميل لكي يعمل بشكل صحيح.
 
 اسم Intune: `Process creation from PSExec and WMI commands`
 
-اسم مدير التكوين: غير قابل للتطبيق
+Configuration Manager الاسم: غير قابل للتطبيق
 
 GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
@@ -481,7 +503,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 اسم Intune: `Untrusted and unsigned processes that run from USB`
 
-اسم مدير التكوين: `Block untrusted and unsigned processes that run from USB`
+Configuration Manager الاسم:`Block untrusted and unsigned processes that run from USB`
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
@@ -507,7 +529,7 @@ Office VBA مكالمات Win32 API. يمكن للبرامج الضارة إسا
 
 اسم Intune: `Win32 imports from Office macro code`
 
-اسم مدير التكوين: `Block Win32 API calls from Office macros`
+Configuration Manager الاسم:`Block Win32 API calls from Office macros`
 
 GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
@@ -533,7 +555,7 @@ GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
 اسم Intune: `Advanced ransomware protection`
 
-اسم مدير التكوين: `Use advanced protection against ransomware`
+Configuration Manager الاسم:`Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 

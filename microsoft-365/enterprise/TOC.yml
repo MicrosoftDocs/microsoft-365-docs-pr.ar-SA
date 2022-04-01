@@ -1,0 +1,686 @@
+- name: موارد ووثائق Microsoft 365 للمؤسسات
+  href: index.yml
+- name: نظرة عامة حول Microsoft 365 للمؤسسات
+  href: microsoft-365-overview.md
+- name: الشبكة
+  items:
+    - name: مخطط
+      href: networking-roadmap-microsoft-365.md
+    - name: الخطة
+      items:
+        - name: نظرة عامة على اتصال الشبكة Microsoft 365
+          href: microsoft-365-networking-overview.md
+        - name: مبادئ اتصال الشبكة Microsoft 365
+          href: microsoft-365-network-connectivity-principles.md
+        - name: تقييم اتصال الشبكة Microsoft 365
+          href: assessing-network-connectivity.md
+        - name: تخطيط الشبكة باستخدام ExpressRoute لـ Office 365
+          href: network-planning-with-expressroute.md
+        - name: التخطيط لأجهزة الشبكة التي تتصل بخدمات Microsoft 365
+          href: plan-for-network-devices.md
+        - name: تخطيط الشبكة والترحيل لـ Microsoft 365
+          href: network-and-migration-planning.md
+    - name: النشر
+      items:
+        - name: إضافة مجال
+          href: ../admin/setup/add-domain.md
+        - name: تكوين نقاط النهاية لتجاوزها
+          items:
+            - name: عنوان IP لـ Office 365 وخدمة URL على ويب
+              href: microsoft-365-ip-web-service.md
+            - name: نقاط النهاية الإضافية غير مضمنة في خدمة ويب
+              href: additional-office365-ip-addresses-and-urls.md
+            - name: متطلبات أمان الشبكة الإضافية لـ Office 365 GCC High و DOD
+              href: additional-network-security-requirements-for-office-365-gcchigh-and-dod.md
+            - name: سجلات DNS لـ Office 365 DoD
+              href: dns-records-for-office-365-dod.md
+            - name: سجلات DNS لـ Office 365 GCC High
+              href: dns-records-for-office-365-gcc-high.md
+        - name: التشغيل السريع لشبكة تسليم المحتوى (CDN)
+          href: office-365-cdn-quickstart.md
+        - name: استخدام CDN مع SharePoint Online
+          href: use-microsoft-365-cdn-with-spo.md
+        - name: تحسين الاتصال للمستخدمين عن بعد
+          items:
+            - name: نظرة عامة حول الاتصال النفقي المنقسم على VPN
+              href: microsoft-365-vpn-split-tunnel.md
+            - name: سيناريوهات الاتصال النفقي المنقسم الشائعة على VPN
+              href: microsoft-365-vpn-common-scenarios.md
+            - name: تنفيذ الاتصال النفقي المنقسم عبر VPN
+              href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: تأمين نقل وسائط Teams للاتصال النفقي المنقسم لشبكة VPN
+              href: microsoft-365-vpn-securing-teams.md
+            - name: البث والأحداث المباشرة في بيئات VPN
+              href: microsoft-365-vpn-stream-and-live-events.md
+            - name: تحسين Microsoft 365 للمستخدمين في الصين
+              href: microsoft-365-networking-china.md
+            - name: تحسين استخدام شبكة Microsoft 365 للعاملين عن بعد باستخدام عميل VPN Windows 10 الأصلي
+              href: /windows/security/identity-protection/vpn/vpn-office-365-optimization
+        - name: ExpressRoute for Office 365
+          href: azure-expressroute.md
+          items:
+            - name: تطبيق ExpressRoute
+              href: implementing-expressroute.md
+            - name: التوجيه باستخدام ExpressRoute لـ Office 365
+              href: routing-with-expressroute.md
+    - name: الإدارة
+      items:
+        - name: نقاط نهاية Office 365
+          items:
+            - name: نقاط نهاية Microsoft 365
+              href: microsoft-365-endpoints.md
+            - name: إدارة نقاط نهاية Office 365
+              href: managing-office-365-endpoints.md
+            - name: نقاط النهاية في جميع أنحاء العالم
+              href: urls-and-ip-address-ranges.md
+            - name: نقاط نهاية DoD لحكومة الولايات المتحدة
+              href: microsoft-365-u-s-government-dod-endpoints.md
+            - name: نقاط نهاية GCC High لحكومة الولايات المتحدة
+              href: microsoft-365-u-s-government-gcc-high-endpoints.md
+            - name: Office 365 المشغل بواسطة نقاط نهاية 21Vianet
+              href: urls-and-ip-address-ranges-21vianet.md
+        - name: شبكات تسليم المحتوى
+          href: content-delivery-networks.md
+        - name: دعم IPv6 في خدمات Office 365
+          href: ipv6-support.md
+        - name: دعم NAT مع Office 365
+          href: nat-support-with-microsoft-365.md
+        - name: طلبات الشبكة في Office for Mac
+          href: network-requests-in-office-2016-for-mac.md
+        - name: تخطيط الشبكة وضبط الأداء
+          href: network-planning-and-performance.md
+        - name: مراقبة الاتصالية
+          href: monitor-connectivity.md
+        - name: إدارة ExpressRoute
+          href: managing-expressroute-for-connectivity.md
+    - name: برنامج شريك الشبكة لـ Microsoft 365
+      href: microsoft-365-networking-partner-program.md
+- name: مستأجر
+  items:
+    - name: مخطط
+      href: tenant-roadmap-microsoft-365.md
+    - name: الخطة
+      items:
+        - name: الاشتراكات والتراخيص والحسابات والمستأجرين
+          href: subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md
+        - name: التخطيط لشهادات SSL التابعة لجهة خارجية
+          href: plan-for-third-party-ssl-certificates.md
+        - name: إرشادات الإعداد
+          href: setup-guides-for-microsoft-365.md
+        - name: التكامل
+          items:
+            - name: التطبيقات المتكاملة وAzure AD
+              href: integrated-apps-and-azure-ads.md
+            - name: التكامل مع المحلي
+              href: microsoft-365-integration.md
+            - name: تكامل Azure
+              href: azure-integration.md
+            - name: Azure ExpressRoute
+              href: azure-expressroute.md
+        - name: المصادقة الحديثة المختلطة
+          items:
+            - name: المتطلبات الأساسية لـ Skype for Business Server وExchange Server
+              href: hybrid-modern-auth-overview.md
+            - name: تكوين Exchange Server
+              href: configure-exchange-server-for-hybrid-modern-authentication.md
+            - name: تكوين Skype for Business
+              href: configure-skype-for-business-for-hybrid-modern-authentication.md
+            - name: إزالة Skype for Business وExchange أو تعطيلهما
+              href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
+            - name: تطبيقات عميل Office 2013 وOffice 2016 وOffice 2019
+              href: modern-auth-for-office-2013-and-2016.md
+        - name: التخطيط للترقية
+          href: plan-upgrade-previous-versions-office.md
+          items:
+            - name: Office 2007
+              items:
+                - name: الترقية من خوادم Office 2007 وعملائه
+                  href: upgrade-from-office-2007-servers-and-products.md
+                - name: سطح مكتب Office 2007
+                  href: /DeployOffice/endofsupport/office-2007-end-support-roadmap
+                - name: Exchange 2007
+                  href: exchange-2007-end-of-support.md
+                - name: SharePoint 2007
+                  href: sharepoint-2007-end-of-support.md
+                - name: خادم اتصالات Office
+                  href: /skypeforbusiness/plan-your-deployment/upgrade
+                - name: PerformancePoint Server 2007
+                  href: pps-2007-end-of-support.md
+                - name: Project Server 2007
+                  href: project-server-2007-end-of-support.md
+            - name: Office 2010
+              items:
+                - name: الترقية من خوادم Office 2010 وعملائه
+                  href: upgrade-from-office-2010-servers-and-products.md
+                - name: سطح مكتب Office 2010
+                  href: /DeployOffice/endofsupport/office-2010-end-support-roadmap
+                - name: Exchange 2010
+                  href: exchange-2010-end-of-support.md
+                - name: SharePoint 2010
+                  href: upgrade-from-sharepoint-2010.md
+                - name: Lync Server 2010
+                  href: /skypeforbusiness/plan-your-deployment/upgrade
+                - name: Project Server 2010
+                  href: project-server-2010-end-of-support.md
+        - name: عزل المستأجر في Microsoft 365
+          href: /compliance/assurance/microsoft-365-isolation-controls
+          items:
+            - name: العزل والتحكم بالوصول في Azure Active Directory
+              href: microsoft-365-isolation-in-azure-active-directory.md
+            - name: مراقبة حدود المستأجر واختبارها
+              href: /compliance/assurance/assurance-monitoring-and-testing
+            - name: حدود الموارد
+              href: /compliance/assurance/assurance-resource-limits
+            - name: العزل والتحكم بالوصول
+              href: microsoft-365-isolation-in-microsoft-365.md
+    - name: النشر
+      items:
+        - name: إضافة مجال
+          href: ../admin/setup/add-domain.md
+    - name: الإدارة
+      items:
+        - name: حالة حماية الخدمة Microsoft 365
+          href: microsoft-365-service-health.md
+        - name: مراقبة Microsoft 365
+          href: microsoft-365-monitoring.md
+          items:
+            - name: مراقبة Exchange Online
+              href: microsoft-365-exchange-monitoring.md
+              items:
+                - name: تنبيهات الخدمة لاستخدام علبة البريد
+                  href: microsoft-365-mailbox-utilization-service-alerts.md
+                - name: تنبيهات الخدمة للتأخيرات في مصدر MRS
+                  href: microsoft-365-mrs-source-delays-service-alerts.md
+                - name: تنبيهات الخدمة للرسائل المدرجة في قائمة الانتظار للمستلمين الخارجيين
+                  href: microsoft-365-external-recipient-service-alerts.md
+            - name: مراقبة تطبيقات Microsoft 365
+              href: microsoft-365-apps-monitoring.md
+            - name: مراقبة Microsoft 365 Teams
+              href: microsoft-365-teams-monitoring.md
+        - name: إرشادات الإعداد
+          href: setup-guides-for-microsoft-365.md
+    - name: مستأجرون متعددون
+      items:
+        - name: التعاون بين المستأجرين
+          href: microsoft-365-inter-tenant-collaboration.md
+        - name: ترحيل علبة بريد عبر المستأجرين
+          href: cross-tenant-mailbox-migration.md
+        - name: عمليات الترحيل من المستأجر إلى المستأجر
+          href: microsoft-365-tenant-to-tenant-migrations.md
+    - name: متعدد المواقع الجغرافية
+      items:
+        - name: Microsoft 365 متعدد المواقع الجغرافية
+          href: microsoft-365-multi-geo.md
+        - name: المواقع الجغرافية المتعددة لـ Teams
+          href: multi-geo-capabilities-in-teams-in-microsoft-365.md
+        - name: OneDrive وSharePoint متعدد المواقع الجغرافية
+          href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md
+        - name: Exchange Multi-Geo
+          href: multi-geo-capabilities-in-exchange-online.md
+        - name: الخطة
+          items:
+            - name: التخطيط لجغرافيا متعددة
+              href: plan-for-multi-geo.md
+            - name: تجربة الإدارة
+              href: administering-a-multi-geo-environment.md
+            - name: تجربة المستخدم
+              href: multi-geo-user-experience.md
+        - name: النشر
+          items:
+            - name: تكوين المواقع الجغرافية المتعددة
+              href: multi-geo-tenant-configuration.md
+            - name: تكوين موقع البيانات المفضل
+              href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
+            - name: تكوين البحث
+              href: configure-search-for-multi-geo.md
+        - name: الإدارة
+          items:
+            - name: إدارة بيئة متعددة المواقع الجغرافية
+              href: administering-a-multi-geo-environment.md
+            - name: إدارة الحصص النسبية لـ SharePoint
+              href: sharepoint-multi-geo-storage-quota.md
+            - name: نقل موقع OneDrive
+              href: move-onedrive-between-geo-locations.md
+            - name: نقل موقع SharePoint
+              href: move-sharepoint-between-geo-locations.md
+            - name: إضافة مسؤول جغرافي أو إزالته
+              href: add-a-sharepoint-geo-admin.md
+            - name: تقييد المحتوى إلى موقع جغرافي
+              href: restrict-content-to-geo-location.md
+            - name: تكوين eDiscovery متعدد المواقع الجغرافية لـ Microsoft 365
+              href: multi-geo-ediscovery-configuration.md
+            - name: إنشاء مجموعة باستخدام PDL معين
+              href: multi-geo-add-group-with-pdl.md
+            - name: حذف موقع جغرافي
+              href: delete-a-geo-location.md
+            - name: تمكين SharePoint متعدد المواقع الجغرافية في الموقع الجغرافي للقمر الصناعي
+              href: enabling-SP-multigeo-satellite-geolocation.md
+            - name: إدارة Exchange متعدّد المواقع الجغرافية
+              href: administering-exchange-online-multi-geo.md
+    - name: الانتقال إلى موقع جديد لمركز بيانات Microsoft 365
+      href: moving-data-to-new-datacenter-geos.md
+      items:
+        - name: كيفية طلب نقل البيانات
+          href: request-your-data-move.md
+        - name: أثناء نقل البيانات وبعدها
+          href: during-and-after-your-data-move.md
+        - name: الأسئلة المتداولة حول نقل البيانات
+          href: data-move-faq.yml
+        - name: مكان تخزين بيانات العميل
+          href: o365-data-locations.md
+        - name: مواقع بيانات الاتحاد الأوروبي
+          href: eu-data-storage-locations.md
+- name: الهوية
+  items:
+    - name: نظرة عامة
+      href: deploy-identity-solution-overview.md
+    - name: الخطوة 1. تحديد نموذج هويتك
+      href: deploy-identity-solution-identity-model.md
+    - name: الخطوة 2. حماية حساباتك المتميزة
+      href: protect-your-global-administrator-accounts.md
+    - name: الخطوة 3. حماية حسابات المستخدمين
+      href: microsoft-365-secure-sign-in.md
+    - name: الخطوة 4. نشر نموذج هويتك
+      items:
+        - name: هوية السحابة فقط
+          href: cloud-only-identities.md
+        - name: الهوية المختلطة
+          items:
+            - name: التجهيز لمزامنة الدليل
+              href: prepare-for-directory-synchronization.md
+            - name: إعداد مجال غير قابل للتوجيه لمزامنة الدليل
+              href: prepare-a-non-routable-domain-for-directory-synchronization.md
+            - name: إعداد مزامنة الدليل
+              href: set-up-directory-synchronization.md
+            - name: حلول مختلطة
+              items:
+                - name: نظرة عامة
+                  href: hybrid-solutions.md
+                - name: استخدام Azure Active Directory لمصادقة SharePoint Server 2016
+                  href: /azure/active-directory/saas-apps/sharepoint-on-premises-tutorial
+                - name: توصيل شبكة محلية بشبكة Azure ظاهرية
+                  href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
+                - name: نشر خادم مزامنة الدليل في Azure IaaS
+                  href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
+                - name: نشر المصادقة الموحدة ذات التوفر العالي في Azure
+                  href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+                  items:
+                    - name: المرحلة 1 - تكوين Azure
+                      href: high-availability-federated-authentication-phase-1-configure-azure.md
+                    - name: المرحلة 2 - تكوين وحدات التحكم بالمجال
+                      href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
+                    - name: المرحلة 3 - تكوين خوادم AD FS
+                      href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
+                    - name: المرحلة 4 - تكوين وكلاء تطبيق ويب
+                      href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
+                    - name: المرحلة 5 - تكوين المصادقة الموحدة
+                      href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
+                - name: استرداد SharePoint Server 2013 بعد الكوارث في Microsoft Azure
+                  href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
+    - name: الإدارة
+      items:
+        - name: حسابات المستخدمين
+          items:
+            - name: حسابات المستخدمين
+              href: manage-microsoft-365-accounts.md
+            - name: إضافة عدة مستخدمين في الوقت نفسه
+              href: add-several-users-at-the-same-time.md
+        - name: التراخيص
+          href: assign-licenses-to-user-accounts.md
+        - name: كلمات المرور
+          href: manage-microsoft-365-passwords.md
+        - name: المجموعات
+          href: manage-microsoft-365-groups.md
+        - name: حوكمة
+          href: manage-microsoft-365-identity-governance.md
+        - name: مزامنة الدليل
+          items:
+            - name: عرض الحالة
+              href: view-directory-synchronization-status.md
+            - name: تحديد الأخطاء
+              href: identify-directory-synchronization-errors.md
+            - name: إصلاح المشاكل
+              href: fix-problems-with-directory-synchronization.md
+            - name: إيقاف تشغيله
+              href: turn-off-directory-synchronization.md
+- name: برنامج العميل والخادم
+  items:
+    - name: مخطط
+      href: client-server-software-roadmap-microsoft-365.md
+    - name: نماذج معمارية لـ SharePoint وExchange وSkype for Business وLync
+      href: architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md
+    - name: الخطة
+      items:
+        - name: التخطيط للترقية
+          href: plan-upgrade-previous-versions-office.md
+    - name: النشر
+      items:
+        - name: Office 2007
+          items:
+            - name: الترقية من خوادم Office 2007 وعملائه
+              href: upgrade-from-office-2007-servers-and-products.md
+            - name: سطح مكتب Office 2007
+              href: /DeployOffice/office-2007-end-support-roadmap
+            - name: Exchange 2007
+              href: exchange-2007-end-of-support.md
+            - name: SharePoint 2007
+              href: sharepoint-2007-end-of-support.md
+            - name: خادم اتصالات Office
+              href: /skypeforbusiness/plan-your-deployment/upgrade
+            - name: PerformancePoint Server 2007
+              href: pps-2007-end-of-support.md
+            - name: Project Server 2007
+              href: project-server-2007-end-of-support.md
+        - name: Office 2010
+          items:
+            - name: الترقية من خوادم Office 2010 وعملائه
+              href: upgrade-from-office-2010-servers-and-products.md
+            - name: سطح مكتب Office 2010
+              href: /DeployOffice/office-2010-end-support-roadmap
+            - name: Exchange 2010
+              href: exchange-2010-end-of-support.md
+            - name: SharePoint 2010
+              href: upgrade-from-sharepoint-2010.md
+            - name: Lync Server 2010
+              href: /skypeforbusiness/plan-your-deployment/upgrade
+            - name: Project Server 2010
+              href: project-server-2010-end-of-support.md
+        - name: Office 2013
+          items:
+            - name: سطح مكتب Office 2013
+              href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
+            - name: SharePoint 2013
+              href: upgrade-from-sharepoint-2013.md
+            - name: Lync Server 2013
+              href: upgrade-from-lync-2013.md
+            - name: Project Server 2013
+              href: project-server-2013-end-of-support.md
+            - name: Exchange Server 2013
+              href: exchange-2013-end-of-support.md
+- name: التوافق
+  href: ../compliance/index.yml
+- name: الأمان
+  href: ../security/index.yml
+- name: خدمات السحابة
+  items:
+    - name: مخطط
+      href: cloud-services-roadmap-microsoft-365.md
+    - name: النشر
+      items:
+        - name: استعد
+          href: configure-services-and-applications.md
+        - name: Exchange Online
+          href: /Exchange/exchange-online
+        - name: SharePoint
+          href: /sharepoint/sharepoint-online
+        - name: Skype for Business
+          href: /SkypeForBusiness/skype-for-business-online
+        - name: Microsoft Teams
+          href: /MicrosoftTeams/Teams-overview
+        - name: Yammer
+          href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
+        - name: تنشيط إدارة الحقوق
+          href: activate-rms-in-microsoft-365.md
+        - name: تكوين خيارات الإصدار
+          href: 'https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47'
+        - name: تدريب المستخدمين
+          href: /office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users
+    - name: الإدارة
+      items:
+        - name: كيفية التحقق من حالة الخدمة
+          href: view-service-health.md
+        - name: خيارات الدعم
+          href: ../admin/get-help-support.md
+        - name: Exchange Online
+          href: /Exchange/exchange-online
+        - name: SharePoint
+          href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
+        - name: Skype for Business
+          href: /SkypeForBusiness/skype-for-business-online
+        - name: Microsoft Teams
+          href: /microsoftteams/upgrade-monitor-quality
+        - name: Yammer
+          href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
+        - name: الأداء والضبط
+          items:
+            - name: ضبط أداء Microsoft 365
+              href: tune-microsoft-365-performance.md
+            - name: ضبط الأداء باستخدام الخطوط الأساسية ومحفوظات الأداء
+              href: performance-tuning-using-baselines-and-history.md
+            - name: ضبط أداء Exchange Online
+              href: tune-exchange-online-performance.md
+            - name: ضبط أداء SharePoint
+              href: tune-sharepoint-online-performance.md
+              items:
+                - name: مقدمة حول ضبط الأداء لـ SharePoint
+                  href: introduction-to-performance-tuning-for-sharepoint-online.md
+                - name: تشخيص مشاكل الأداء في SharePoint
+                  href: diagnosing-performance-issues-with-sharepoint-online.md
+            - name: ضبط أداء Skype for Business Online
+              href: tune-skype-for-business-online-performance.md
+            - name: ضبط أداء Project Online
+              href: /ProjectOnline/tune-project-online-performance
+            - name: خطة استكشاف أخطاء الأداء وإصلاحها
+              href: performance-troubleshooting-plan.md
+- name: Windows 10
+  items:
+    - name: كيفية التحقق من حالة الإصدار
+      href: /windows/deployment/update/check-release-health
+    - name: النشر والتحديث
+      href: /windows/deployment/
+- name: Microsoft 365 Apps for enterprise
+  href: /deployoffice/deployment-guide-microsoft-365-apps
+- name: أجهزة Surface
+  href: /surface/deploy
+- name: إدارة الأجهزة
+  items:
+    - name: مخطط
+      href: device-management-roadmap-microsoft-365.md
+- name: Microsoft Edge
+  href: /deployedge/deploy-edge-plan-deployment
+- name: نشر وتحديث أمثلة عن تكوينات القناة
+  items:
+    - name: نظرة عامة
+      href: deploy-update-channels-examples.md
+    - name: نشر واسع النطاق لأحدث الإصدارات
+      href: deploy-update-channels-examples-rapid-deploy.md
+- name: إدارة Microsoft 365 باستخدام PowerShell
+  href: manage-microsoft-365-with-microsoft-365-powershell.md
+  items:
+    - name: بدء الاستخدام
+      href: getting-started-with-microsoft-365-powershell.md
+      items:
+        - name: لماذا تحتاج إلى استخدام PowerShell
+          href: why-you-need-to-use-microsoft-365-powershell.md
+        - name: الاتصال بـ Microsoft 365 باستخدام PowerShell
+          href: connect-to-microsoft-365-powershell.md
+        - name: الاتصال بكافة خدمات Microsoft 365 في نافذة Windows PowerShell واحدة
+          href: connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md
+        - name: إنشاء تقارير باستخدام PowerShell
+          href: use-windows-powershell-to-create-reports-in-microsoft-365.md
+        - name: مراجع Cmdlet لخدمات Microsoft 365
+          href: cmdlet-references-for-microsoft-365-services.md
+        - name: موارد مجتمع PowerShell
+          href: microsoft-365-powershell-community-resources.md
+    - name: حسابات المستخدمين وكلمات المرور والتراخيص والمجموعات
+      href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
+      items:
+        - name: حسابات المستخدمين
+          items:
+            - name: إنشاء
+              href: create-user-accounts-with-microsoft-365-powershell.md
+            - name: عرض
+              href: view-user-accounts-with-microsoft-365-powershell.md
+            - name: تكوين الخصائص
+              href: configure-user-account-properties-with-microsoft-365-powershell.md
+            - name: تعيين أدوار المسؤولين
+              href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
+            - name: حذف واستعادة
+              href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
+            - name: حظر
+              href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: كلمات المرور
+              href: manage-passwords-with-microsoft-365-powershell.md
+        - name: التراخيص والخدمات
+          items:
+            - name: عرض التراخيص والخدمات
+              href: view-licenses-and-services-with-microsoft-365-powershell.md
+            - name: عرض المستخدمين المرخصين وغير المرخصين
+              href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
+            - name: تعيين التراخيص لحسابات المستخدمين
+              href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
+            - name: عرض تفاصيل ترخيص الحساب والخدمة
+              href: view-account-license-and-service-details-with-microsoft-365-powershell.md
+            - name: إزالة التراخيص من حسابات المستخدمين
+              href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
+            - name: تعطيل الوصول إلى الخدمات
+              href: disable-access-to-services-with-microsoft-365-powershell.md
+              items:
+                - name: تعطيل الوصول إلى Sway
+                  href: disable-access-to-sway-with-microsoft-365-powershell.md
+                - name: تعطيل الوصول إلى الخدمات أثناء تعيين تراخيص المستخدمين
+                  href: disable-access-to-services-while-assigning-user-licenses.md
+        - name: المجموعات
+          items:
+            - name: إدارة مجموعات الأمان
+              href: manage-security-groups-with-microsoft-365-powershell.md
+            - name: الحفاظ على عضوية مجموعة الأمان
+              href: maintain-group-membership-with-microsoft-365-powershell.md
+            - name: إدارة مجموعات Microsoft 365
+              href: manage-microsoft-365-groups-with-powershell.md
+    - name: إدارة SharePoint
+      href: manage-sharepoint-online-with-microsoft-365-powershell.md
+      items:
+        - name: إنشاء مواقع SharePoint Online وإضافة مستخدمين
+          href: create-sharepoint-sites-and-add-users-with-powershell.md
+        - name: إدارة مجموعات ومستخدمي SharePoint Online
+          href: manage-sharepoint-users-and-groups-with-powershell.md
+        - name: إدارة مجموعات مواقع SharePoint Online
+          href: manage-sharepoint-site-groups-with-powershell.md
+    - name: إدارة Exchange Online
+      href: /powershell/exchange/connect-to-exchange-online-powershell
+    - name: استخدام PowerShell لترحيل البريد الإلكتروني إلى Microsoft 365
+      href: use-powershell-for-email-migration-to-microsoft-365.md
+      items:
+        - name: استخدم PowerShell لإجراء ترحيل كلي إلى Microsoft 365
+          href: use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md
+        - name: استخدم PowerShell لإجراء ترحيل IMAP إلى Microsoft 365
+          href: use-powershell-to-perform-an-imap-migration-to-microsoft-365.md
+        - name: استخدم PowerShell لإجراء ترحيل مرحلي إلى Microsoft 365
+          href: use-powershell-to-perform-a-staged-migration-to-microsoft-365.md
+    - name: إدارة Microsoft 365 باستخدام Windows PowerShell لشركاء الوصول المفوض
+      href: manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md
+      items:
+        - name: إدارة مستأجري Microsoft 365 باستخدام Windows PowerShell لشركاء الوصول المفوض
+          href: manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md
+        - name: إضافة مجال إلى إيجار عميل باستخدام Windows PowerShell لشركاء الوصول المفوض
+          href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
+        - name: الاتصال بـ Exchange Online عبر Windows PowerShell عن بعد لشركاء الوصول المفوض
+          href: /powershell/exchange/connect-to-exchange-online-powershell
+        - name: استرداد بيانات تقارير العملاء عبر Windows PowerShell لشركاء الوصول المفوض
+          href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
+    - name: إدارة Microsoft Teams
+      href: /microsoftteams/teams-powershell-install
+    - name: إدارة Skype for Business Online
+      href: manage-skype-for-business-online-with-microsoft-365-powershell.md
+      items:
+        - name: إدارة نهج Skype for Business Online
+          href: manage-skype-for-business-online-policies-with-microsoft-365-powershell.md
+        - name: تعيين نهج Skype for Business Online لكل مستخدم
+          href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
+    - name: إدارة الوظائف الإضافية باستخدام PowerShell للنشر المركزي
+      href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
+- name: مجموعة أدوات معمل نشر Windows وOffice 365
+  href: modern-desktop-deployment-and-management-lab.md
+- name: دلائل معمل الاختبار
+  href: m365-enterprise-test-lab-guides.md
+  items:
+    - name: التكوين الأساسي
+      items:
+        - name: خفيفة الوزن
+          href: lightweight-base-configuration-microsoft-365-enterprise.md
+        - name: مؤسسة محاكاة
+          href: simulated-ent-base-configuration-microsoft-365-enterprise.md
+    - name: الهوية
+      items:
+        - name: مزامنة تجزئة كلمة المرور
+          href: password-hash-sync-m365-ent-test-environment.md
+        - name: مصادقة المرور
+          href: pass-through-auth-m365-ent-test-environment.md
+        - name: مصادقة جهات الاتصال الخارجية
+          href: federated-identity-for-your-microsoft-365-dev-test-environment.md
+        - name: تسجيل الدخول الأحادي السلس إلى Azure AD
+          href: single-sign-on-m365-ent-test-environment.md
+        - name: مصادقة متعددة العوامل
+          href: multi-factor-authentication-microsoft-365-test-environment.md
+        - name: حماية حسابات المسؤولين العموميين
+          href: protect-global-administrator-accounts-microsoft-365-test-environment.md
+        - name: إعادة كتابة كلمة المرور
+          href: password-writeback-m365-ent-test-environment.md
+        - name: إعادة تعيين كلمة المرور
+          href: password-reset-m365-ent-test-environment.md
+        - name: الترخيص التلقائي وعضوية المجموعة
+          href: automate-licenses-group-membership-microsoft-365-test-environment.md
+        - name: حماية الهوية في Azure AD
+          href: azure-ad-identity-protection-microsoft-365-test-environment.md
+        - name: الوصول إلى الهوية والجهاز
+          href: identity-device-access-m365-test-environment.md
+          items:
+            - name: السحابة فقط
+              href: cloud-only-prereqs-m365-test-environment.md
+            - name: مزامنة تجزئة كلمة المرور
+              href: phs-prereqs-m365-test-environment.md
+            - name: مصادقة المرور
+              href: pta-prereqs-m365-test-environment.md
+    - name: إدارة الأجهزة المحمولة
+      items:
+        - name: تسجيل أجهزة iOS وAndroid
+          href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
+        - name: نهج توافق الجهاز
+          href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
+    - name: حماية المعلومات
+      items:
+        - name: أمان Microsoft 365 متزايد
+          href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
+        - name: تصنيف البيانات
+          href: data-classification-microsoft-365-enterprise-dev-test-environment.md
+        - name: إدارة الوصول المتميز
+          href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
+- name: دراسة حالة Contoso
+  href: contoso-case-study.md
+  items:
+    - name: نظرة عامة
+      href: contoso-overview.md
+    - name: البنية الأساسية لـ Contoso IT واحتياجاتها
+      href: contoso-infra-needs.md
+    - name: الشبكة
+      href: contoso-networking.md
+    - name: الهوية
+      href: contoso-identity.md
+    - name: Windows 10 Enterprise
+      href: contoso-win10.md
+    - name: Microsoft 365 Apps for enterprise
+      href: contoso-o365pp.md
+    - name: إدارة الأجهزة المحمولة
+      href: contoso-mdm.md
+    - name: حماية المعلومات
+      href: contoso-info-protect.md
+    - name: ملخص الأمان
+      href: contoso-security-summary.md
+- name: بنية وحلول Microsoft 365
+  href: ../solutions/index.yml
+- name: إدارة استمرارية الأعمال للمؤسسة (EBCM) مع خدمات السحابة
+  href: /compliance/assurance/assurance-understanding-ebcm-with-cloud-services
+  items:
+    - name: مسؤوليات EBCM للعميل وشركاء السحابة
+      href: /compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities
+    - name: مرونة خدمات السحابة لـ Microsoft 365
+      href: /compliance/assurance/assurance-m365-service-resiliency
+    - name: تطوير خطة الاستمرارية
+      href: /compliance/assurance/assurance-developing-your-ebcm-plan
+    - name: سيناريوهات تقليل أحداث الخدمة
+      href: /compliance/assurance/assurance-microsoft-365-mitigations
+- name: دليل التنقل
+  href: ../microsoft-365-docs-navigation-guide.md?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
+- name: Microsoft 365 للأعمال
+  href: ../admin/index.yml

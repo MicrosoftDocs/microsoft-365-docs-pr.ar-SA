@@ -16,17 +16,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 897a8691bc7cbc3c03adcbf5befc2a2da8b12294
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d724b7663bd4484c630e97362eb5766490e1fa8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63571415"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465894"
 ---
 # <a name="techniques-in-the-device-timeline"></a>التقنيات في المخطط الزمني للجهاز
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 يمكنك الحصول على مزيد من المعرفة في التحقيق من خلال تحليل الأحداث التي حدثت على جهاز معين. أولا، حدد الجهاز الذي يهمك من [قائمة الأجهزة](machines-view-overview.md). على صفحة الجهاز، يمكنك تحديد علامة **التبويب المخطط الزمني** لعرض كل الأحداث التي وقعت على الجهاز.
 
@@ -35,13 +35,13 @@ ms.locfileid: "63571415"
 > [!IMPORTANT]
 > تتعلق بعض المعلومات بميزة منتج تم إصدارها مسبقا في المعاينة العامة والتي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، فيما يتعلق بالمعلومات المتوفرة هنا.
 
-في Microsoft Defender لنقطة النهاية، **التقنيات** هي نوع بيانات إضافي في المخطط الزمني للحدث. توفر التقنيات معرفة أكثر حول الأنشطة المقترنة ب [MITRE ATT&تقنيات أو تقنيات CK](https://attack.mitre.org/) الفرعية.
+في Microsoft Defender لنقطة النهاية **، التقنيات** هي نوع بيانات إضافي في المخطط الزمني للحدث. توفر التقنيات معرفة أكثر حول الأنشطة المقترنة ب [MITRE ATT&تقنيات أو تقنيات CK](https://attack.mitre.org/) الفرعية.
 
 تبسط هذه الميزة تجربة التحقيق من خلال مساعدة المحللين على فهم الأنشطة التي تم ملاحظتها على جهاز. يمكن للمحللين عندئذ أن يقرروا إجراء المزيد من التحقيق.
 
 للمعاينة العامة، تتوفر التقنيات بشكل افتراضي، كما تظهر مع الأحداث عند عرض المخطط الزمني للجهاز.
 
-![التقنيات في لقطة شاشة مخطط زمني للجهاز.](images/device-timeline-2.png)
+:::image type="content" source="images/device-timeline-2.png" alt-text="التقنيات في المخطط الزمني للجهاز" lightbox="images/device-timeline-2.png":::
 
 يتم تمييز التقنيات بنص غامق، كما تظهر مع أيقونة زرقاء على اليمين. يظهر أيضا اسم أسلوب&MITRE ATT&CK ID واسم التقنية كعلامات ضمن معلومات إضافية.
 
@@ -55,17 +55,17 @@ ms.locfileid: "63571415"
 
 يمكنك نسخ تفاصيل كيان عندما ترى أيقونة زرقاء على الجانب الأيمن. على سبيل المثال، لنسخ SHA1 ملف ذي صلة، حدد أيقونة الصفحة الزرقاء.
 
-![نسخ تفاصيل الكيان.](images/techniques-side-pane-clickable.png)
+:::image type="content" source="images/techniques-side-pane-clickable.png" alt-text="تفاصيل الكيان لنسخ" lightbox="images/techniques-side-pane-clickable.png":::
 
 يمكنك القيام بالشيء نفسه لخطوط الأوامر.
 
-![نسخ سطر الأوامر.](images/techniques-side-pane-command.png)
+:::image type="content" source="images/techniques-side-pane-command.png" alt-text="خيار نسخ سطر الأوامر" lightbox="images/techniques-side-pane-command.png":::
 
 ## <a name="investigate-related-events"></a>التحقق من الأحداث ذات الصلة
 
 لاستخدام البحث [المتقدم](advanced-hunting-overview.md) للبحث عن الأحداث المرتبطة بالتقنية المحددة، حدد **البحث عن الأحداث ذات الصلة**. يؤدي ذلك إلى صفحة الصيد المتقدمة مع استعلام للعثور على الأحداث ذات الصلة بالتقنية.
 
-![البحث عن الأحداث ذات الصلة.](images/techniques-hunt-for-related-events.png)
+:::image type="content" source="images/techniques-hunt-for-related-events.png" alt-text="الخيار &quot;البحث عن الأحداث ذات الصلة&quot;" lightbox="images/techniques-hunt-for-related-events.png":::
 
 > [!NOTE]
 > يؤدي الاستعلام باستخدام الزر **البحث** عن الأحداث ذات الصلة من الجزء الجانبي تقنية إلى عرض كل الأحداث ذات الصلة بالتقنية المحددة ولكنه لا يتضمن التقنية نفسها في نتائج الاستعلام.
@@ -80,7 +80,8 @@ ms.locfileid: "63571415"
 
 يمكنك اختيار الأعمدة التي تريد عرضها في المخطط الزمني عن طريق تحديد **الزر اختيار** أعمدة.
 
-![تخصيص الأعمدة.](images/filter-customize-columns.png)
+:::image type="content" source="images/filter-customize-columns.png" alt-text="الجزء الذي يمكنك تخصيص الأعمدة فيه" lightbox="images/filter-customize-columns.png":::
+
 
 من هناك، يمكنك تحديد المعلومات التي تم تعيينها لتضمينها.
 
@@ -88,9 +89,9 @@ ms.locfileid: "63571415"
 
 لعرض الأحداث أو التقنيات فقط، حدد **عوامل التصفية** من المخطط الزمني للجهاز واختر نوع البيانات المفضل لديك لعرضه.
 
-![لقطة شاشة ل عوامل التصفية.](images/device-timeline-filters.png)
+:::image type="content" source="images/device-timeline-filters.png" alt-text="جزء عوامل التصفية" lightbox="images/device-timeline-filters.png":::
 
 ## <a name="see-also"></a>راجع أيضًا
 
 - [عرض قائمة الأجهزة وتنظيمها](machines-view-overview.md)
-- [علامة حدث مخطط زمني لجهاز Microsoft Defender لنقطة النهاية](device-timeline-event-flag.md)
+- [Microsoft Defender لنقطة النهاية أحداث المخطط الزمني للجهاز](device-timeline-event-flag.md)

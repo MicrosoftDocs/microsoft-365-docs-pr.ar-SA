@@ -1,6 +1,6 @@
 ---
 title: التبديل من حماية نقطة نهاية غير Microsoft إلى Microsoft Defender لنقطة النهاية
-description: قم بالتبديل إلى Microsoft Defender لنقطة النهاية، الذي برنامج الحماية من الفيروسات من Microsoft Defender حل الحماية لنقطة النهاية.
+description: قم بالتبديل إلى Microsoft Defender لنقطة النهاية، الذي يتضمن برنامج الحماية من الفيروسات من Microsoft Defender لحل حماية نقطة النهاية.
 keywords: الترحيل، windows defender، حماية نقاط النهاية المتقدمة، الحماية من الفيروسات، الحماية من البرامج الضارة، الوضع السلبي، الوضع النشط
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,21 +23,21 @@ ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: eb0971c6f5b8fd8bf37f3d33cb65cff8d331e0d0
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: e93e762501b942a67cef35a95bb2a9a2b1113e3a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63578568"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465850"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>التبديل من حماية نقطة نهاية غير Microsoft إلى Microsoft Defender لنقطة النهاية
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804) إذا كنت تفكر في التبديل من حل حماية نقطة نهاية غير Microsoft إلى [Microsoft Defender لنقطة](microsoft-defender-endpoint.md) النهاية (Defender for Endpoint)، أو إذا كنت في مرحلة التخطيط، فاستخدم هذه المقالة كدليل. تصف هذه المقالة العملية الشاملة لعملية الانتقال إلى Defender for Endpoint.
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804) إذا كنت تفكر في التبديل من حل حماية نقطة نهاية غير Microsoft إلى [Microsoft Defender لنقطة النهاية](microsoft-defender-endpoint.md) (Defender for Endpoint)، أو إذا كنت في مرحلة التخطيط، فاستخدم هذه المقالة كدليل. تصف هذه المقالة العملية الشاملة لعملية الانتقال إلى Defender for Endpoint.
 
-:::image type="content" source="images/nonms-mde-migration.png" alt-text="قم بتبديل حل حماية نقطة النهاية إلى Defender لنقطة النهاية.":::
+:::image type="content" source="images/nonms-mde-migration.png" alt-text="عملية الترحيل لتبديل حل حماية نقطة النهاية إلى Defender لنقطة النهاية" lightbox="images/nonms-mde-migration.png":::
 
 عندما تقوم بالتبديل إلى Defender for Endpoint، تبدأ بحماية برامج الحماية من الفيروسات/البرامج الضارة غير من Microsoft في الوضع النشط. بعد ذلك، يمكنك برنامج الحماية من الفيروسات من Microsoft Defender في الوضع غير النشط، وتهيئة أجهزتك إلى Defender for Endpoint. بعد ذلك، يمكنك تكوين ميزات حماية نقطة النهاية، برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع النشط، والتحقق من أن كل شيء يعمل بشكل صحيح. وأخيرا، يمكنك إزالة الحل غير الخاص ب Microsoft.
 
@@ -45,7 +45,8 @@ ms.locfileid: "63578568"
 
 يمكن تقسيم عملية ارحل إلى Defender for Endpoint إلى ثلاث مراحل، كما هو موضح في الجدول التالي:
 
-![عملية ترحيل MDE.](images/phase-diagrams/migration-phases.png)
+:::image type="content" source="images/phase-diagrams/migration-phases.png" alt-text="عملية ترحيل MDE" lightbox="images/phase-diagrams/migration-phases.png":::
+
 
 <br/><br/>
 

@@ -1,0 +1,49 @@
+- name: Microsoft Bookings
+  href: bookings-overview.md
+  items:
+    - name: إعداد
+      items:
+        - name: الوصول إلى Microsoft Bookings
+          href: get-access.md
+        - name: إدخال معلومات العمل
+          href: enter-business-information.md
+        - name: تعريف عروض الخدمة الخاصة بك
+          href: define-service-offerings.md
+        - name: تكوين إعلامات نص SMS
+          href: bookings-sms.md
+        - name: إضافة فريق عمل إلى Bookings
+          href: add-staff.md
+        - name: جدولة أوقات إغلاق الأعمال وإجازاتها
+          href: schedule-closures-time-off-vacation.md
+        - name: تعيين نهج الجدولة
+          href: set-scheduling-policies.md
+        - name: تخصيص صفحة الحجز ونشرها
+          href: customize-booking-page.md
+        - name: إنشاء حجز يدوي
+          href: create-a-manual-booking.md
+        - name: ساعات عمل الموظف
+          href: employee-hours.md
+        - name: إضافة أسئلة مخصصة ومطلوبة إلى صفحة الحجز
+          href: add-questions.md
+        - name: تعيين وقت المخزن المؤقت
+          href: set-buffer-time.md
+        - name: المقاييس وتعقب النشاط
+          href: metrics-and-activity-tracking.md
+        - name: تعيين اللغة والمنطقة الزمنية
+          href: set-language-time-zones.md
+    - name: الحصول على تطبيق Bookings
+      href: get-bookings-app.md
+    - name: إدارة تطبيق Bookings في Microsoft Teams
+      href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
+    - name: الزيارات الظاهرية باستخدام Microsoft Teams وتطبيق Bookings
+      href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
+    - name: مخطط المقارنة - تطبيق الويب مقابل تطبيق Teams
+      href: comparison-chart.md
+    - name: حذف تقويم حجز
+      href: delete-calendar.md
+    - name: تشغيل Microsoft Bookings أو إيقاف تشغيله
+      href: turn-bookings-on-or-off.md
+    - name: الإبلاغ عن معلومات Microsoft Bookings
+      href: reporting-info.md
+    - name: الأسئلة المتداولة حول Microsoft Bookings (الأسئلة المتداولة)
+      href: bookings-faq.yml

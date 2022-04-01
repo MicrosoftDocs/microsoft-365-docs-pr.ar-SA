@@ -17,18 +17,18 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: حماية البريد الإلكتروني وبيانات العمل من التهديدات الإلكترونية، بما في ذلك برامج الفدية الضارة والتصيد الاحتيالي والمرفقات الضارة.
-ms.openlocfilehash: 584da4e192ddbd8ac5b223e0d292a71f0c35c305
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 1277d001118dda764aa9b2a968f1024d5befcac1
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63568458"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755072"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>أهم 12 مهام لفرق الأمان لدعم العمل من المنزل
 
 إذا كنت مثل [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) وعثرت فجأة على نفسك تدعم قوة عمل منزلية أساسية، فنحن نريد مساعدتك على ضمان عمل مؤسستك بأمان قدر الإمكان. تعطي هذه المقالة الأولوية للمهام لمساعدة فرق الأمان على تنفيذ قدرات الأمان الأكثر أهمية في أسرع وقت ممكن.
 
-![قم بتنفيذ أهم هذه المهام لدعم العمل من المنزل.](../media/security/security-support-remote-work.png)
+:::image type="content" source="../media/security/security-support-remote-work.png" alt-text="أهم 12 مهام لفرق الأمان لدعم العمل من المنزل" lightbox="../media/security/security-support-remote-work.png":::
 
 إذا كنت مؤسسة صغيرة أو متوسطة الحجم تستخدم إحدى خطط Microsoft للأعمال، فشاهد هذه الموارد بدلا من ذلك:
 
@@ -50,17 +50,16 @@ ms.locfileid: "63568458"
 |4|[تكوين Microsoft Defender for Identity](#4-configure-microsoft-defender-for-identity)|||![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5|[تشغيل Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6|[تكوين حماية تطبيق Intune mobile للهواتف وأجهزة الكمبيوتر اللوحية](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7|[تكوين MFA والوصول الشرطي للضيوف، بما في ذلك حماية تطبيق Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8|[تسجيل أجهزة الكمبيوتر في إدارة الأجهزة وتتطلب أجهزة كمبيوتر متوافقة](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9|[تحسين الشبكة لاتصال السحابة](#9-optimize-your-network-for-cloud-connectivity)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10|[تدريب المستخدمين](#10-train-users)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11|[بدء استخدام Microsoft Defender لتطبيقات السحابة](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![مضمن](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|12|[مراقبة التهديدات واتخاذ إجراء](#12-monitor-for-threats-and-take-action)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|
+|7|[تكوين MFA والوصول الشرطي للضيوف، بما في ذلك حماية تطبيق Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|8|[تسجيل أجهزة الكمبيوتر في إدارة الأجهزة وتتطلب أجهزة كمبيوتر متوافقة](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9|[تحسين الشبكة لاتصال السحابة](#9-optimize-your-network-for-cloud-connectivity)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10|[تدريب المستخدمين](#10-train-users)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11|[بدء استخدام Microsoft Defender لتطبيقات السحابة](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|12|[مراقبة التهديدات واتخاذ إجراء](#12-monitor-for-threats-and-take-action)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![مضمن.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 قبل البدء، تحقق من Microsoft 365 [نقاط](./defender/microsoft-secure-score.md) آمنة في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender المدخل</a>. من لوحة معلومات مركزية، يمكنك مراقبة وتحسين أمان Microsoft 365 البيانات والتطبيقات والأجهزة والبنية الأساسية. ستمنح نقاطا لتكوين ميزات الأمان الموصى بها أو تنفيذ المهام ذات الصلة بالامن (مثل عرض التقارير) أو معالجة التوصيات باستخدام تطبيق أو برنامج من جهة خارجية. سترفع المهام الموصى بها في هذه المقالة نقاطك.
 
-![لقطة شاشة ل Microsoft Secure Score.](../media/secure-score.png)
+:::image type="content" source="../media/secure-score.png" alt-text="شاشة Microsoft Secure Score في مدخل Microsoft 365 Defender" lightbox="../media/secure-score.png":::
 
 ## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1: تمكين مصادقة Azure AD متعددة العوامل (MFA)
 
@@ -77,7 +76,6 @@ ms.locfileid: "63568458"
 |Microsoft 365 التخطيط (بدون Azure AD P1 أو P2)|[تمكين إعدادات الأمان الافتراضية في Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). تتضمن إعدادات الأمان الافتراضية في Azure AD MFA للمستخدمين والمسؤولين.|
 |Microsoft 365 E3 (مع Azure AD P1)|استخدم [سياسات الوصول الشرطي](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) الشائعة لتكوين السياسات التالية: <br/>- [طلب MFA للمسؤولين](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [طلب MFA لجميع المستخدمين](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [حظر المصادقة القديمة](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
 |Microsoft 365 E5 (باستخدام Azure AD P2)|الاستفادة من Azure AD Identity Protection، ابدأ في تنفيذ مجموعة Microsoft الموصى بها من الوصول الشرطي والسياسات ذات [الصلة من خلال](./office-365-security/identity-access-policies.md) إنشاء هذه السياسات:<br/> - [يتطلب MFA عندما تكون مخاطر تسجيل الدخول متوسطة أو عالية](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [حظر العملاء الذين لا يدعمون المصادقة الحديثة](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [يجب على المستخدمين المعرضين لمخاطر عالية تغيير كلمة المرور](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
-|
 
 ## <a name="2-protect-against-threats"></a>2: الحماية من التهديدات
 
@@ -124,7 +122,9 @@ Microsoft Defender Office 365:
 
 الآن وقد تم تكوين Microsoft Defender Office 365 و Microsoft Defender for Identity، يمكنك عرض الإشارات المدمجة من هذه الإمكانات في لوحة معلومات واحدة. [يجمع Microsoft 365 Defender](./defender/microsoft-365-defender.md) التنبيهات والحوادث والتحري التلقائي والاستجابة والصيد المتقدم عبر أحمال العمل (Microsoft Defender for Identity و Defender for Office 365 و Microsoft Defender for Endpoint و Microsoft Defender for Cloud Apps) في جزء واحد في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender المدخل</a>.
 
-![رسم توضيحي للوحة معلومات MTP.](../media/top-ten-security-remote-work-mtp-dashboard.png)
+<!--
+:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="The MTP dashboard in the Microsoft 365 Defender portal" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
+--> 
 
 بعد تكوين واحد أو أكثر من خدمات Defender Office 365، قم تشغيل MTP. تضاف الميزات الجديدة باستمرار إلى MTP؛ يمكنك الاشتراك لتلقي ميزات المعاينة.
 
@@ -215,7 +215,6 @@ Microsoft 365 الموارد التالية للمساعدة على إعلام �
 |Microsoft 365|[مسارات التعلم القابلة للتخصيص](/office365/customlearning/) <p>يمكن أن تساعدك هذه الموارد على جمع التدريب للمستخدمين النهائيين في مؤسستك|
 |Microsoft 365 الأمان|[Learning النمطية: تأمين مؤسستك باستخدام أمان مضمن وذكي من Microsoft 365](/learn/modules/security-with-microsoft-365) <p>تمكنك هذه الوحدة النمطية من وصف كيفية Microsoft 365 ميزات الأمان معا والتعبير عن فوائد ميزات الأمان هذه.|
 |المصادقة متعددة العوامل|[التحقق على خطوتين: ما هي صفحة التحقق الإضافية؟](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>تساعد هذه المقالة المستخدمين على فهم المصادقة متعددة العوامل ولماذا يتم استخدامها في مؤسستك.|
-|
 
 بالإضافة إلى هذا الإرشاد، توصي Microsoft بأن يتخذ المستخدمون الإجراءات الموضحة في هذه المقالة: حماية حسابك وأجهزتك من المتسللين [والبرامج](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx) الضارة. تتضمن هذه الإجراءات:
 

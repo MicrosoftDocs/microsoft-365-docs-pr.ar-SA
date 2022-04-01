@@ -18,12 +18,12 @@ ms.collection:
 description: تعرف على كيفية تكوين مصادقة الرسائل وإعداد التقارير والتوافق المستندة إلى المجال (DMARC) للتحقق من صحة الرسائل المرسلة من مؤسستك.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b166a481bf503ce2d46e79f2cb674861935f4ff
-ms.sourcegitcommit: 07405a81513d1c63071a128b9d5070d3a3bfe1cd
+ms.openlocfilehash: cae3f007cc046bfc2afd6bb7322c65fe047816d5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63566745"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465872"
 ---
 # <a name="use-dmarc-to-validate-email"></a>استخدام DMARC للتحقق من صحة البريد الإلكتروني
 
@@ -31,7 +31,7 @@ ms.locfileid: "63566745"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 تعمل مصادقة الرسائل وإعداد التقارير والتوافق ([DMARC](https://dmarc.org)) المستندة إلى المجال مع إطار نهج المرسل (SPF) وبريد DomainKeys المعرف (DKIM) لمصادقة مرسلي البريد والتأكد من أن أنظمة البريد الإلكتروني الوجهة تثق بالرسائل المرسلة من مجالك. يوفر تنفيذ DMARC باستخدام SPF و DKIM حماية إضافية من الخادعة والتصيد الاحتيالي للبريد الإلكتروني. تساعد DMARC في تلقي أنظمة البريد في تحديد ما يجب فعله بالرسائل المرسلة من مجالك التي تفشل في التحقق من SPF أو DKIM.
@@ -258,7 +258,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 سيتم توجيه كل البريد الإلكتروني أو معظمه أولا إلى mail.contoso.com لأنه MX الأساسي، ثم سيتم توجيه البريد إلى EOP. في بعض الحالات، قد لا تقوم حتى سرد EOP كسجل MX على الإطلاق وربط الموصلات ببساطة توجيه بريدك الإلكتروني. لا يجب أن يكون EOP الإدخال الأول للتحقق من صحة DMARC الذي يجب القيام به. فهو يضمن فقط التحقق من الصحة، للتأكد من أن كل الخوادم في الموقع/خارج O365 ستتحقق من DMARC.  يكون DMARC مؤهلا لتطبيقه على مجال العميل (وليس الخادم) عند إعداد سجل DMARC TXT، ولكن الأمر متروك للخادم المتلقي لتنفيذ عملية التنفيذ فعليا.  إذا قمت بإعداد EOP كخادم المتلقي، يقوم EOP بتنفيذ DMARC.
 
-:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="رسم استكشاف الأخطاء وإصلاحها ل DMARC، مجاملة لدانيال ماني" lightbox="../../media/Tp_DMARCTroublehoot.png":::
+:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="رسم استكشاف الأخطاء وإصلاحها ل DMARC" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 
 ## <a name="for-more-information"></a>لمزيد من المعلومات
 

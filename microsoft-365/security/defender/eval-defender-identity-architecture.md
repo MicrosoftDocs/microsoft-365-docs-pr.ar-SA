@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: de49205fe20cd5685279c0a5f9d138147f24bb8d
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: e534211008ea560642ba306844b9223170ac0140
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754163"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63579677"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>مراجعة متطلبات البنية والمفاهيم الأساسية ل Microsoft Defender for Identity
 
@@ -46,13 +46,13 @@ ms.locfileid: "63754163"
 
 يوضح الرسم التخطيطي التالي بنية الأساس ل Defender for Identity. 
 
-:::image type="content" source="../../media/defender/m365-defender-identity-architecture.png" alt-text="هندسة الهوية ل Microsoft Defender for Identity" lightbox="../../media/defender/m365-defender-identity-architecture.png":::
+![هندسة Microsoft Defender for Identity.](../../media/defender/m365-defender-identity-architecture.png)
 
 في هذا الرسم التوضيحي:
-
 - تقوم أدوات الاستشعار المثبتة على وحدات التحكم في مجال AD بتحليل السجلات وازدحام الشبكة وإرسالها إلى Microsoft Defender for Identity لتحليلها وإعداد التقارير بشأنها.
 -  يمكن أن تقوم أدوات الاستشعار أيضا تحليل خدمات اتحاد Active Directory (AD FS) عند تكوين Azure AD لاستخدام المصادقة المتحدة (الخط المنقطة في الرسم التوضيحي). 
 - يشارك Microsoft Defender for Identity الإشارات Microsoft 365 Defender للكشف والاستجابة الموسعة (XDR).
+
 
 يمكن تثبيت Defender for Identity sensors مباشرة على الخوادم التالية:
 
@@ -66,6 +66,7 @@ ms.locfileid: "63754163"
 
 حدد الجدول التالي المفاهيم الأساسية التي من المهم فهمها عند تقييم Microsoft Defender for Identity وتكوينه ونشره.
 
+
 |المفهوم  |الوصف |معلومات إضافية  |
 |---------|---------|---------|
 | الأنشطة التي يتم مراقبتها | يراقب Defender for Identity الإشارات التي يتم إنشاؤها من داخل مؤسستك للكشف عن نشاط مريب أو ضار ويساعدك على تحديد مدى صلاحية كل خطر محتمل حتى تتمكن من الفرز والاستجابة بفعالية.  |  [أنشطة Microsoft Defender for Identity التي يتم مراقبتها](/defender-for-identity/monitored-activities)       |
@@ -77,6 +78,8 @@ ms.locfileid: "63754163"
 | مجموعات الدور    | يوفر Defender for Identity مجموعات مستندة إلى الدور والوصول المفوض لحماية البيانات وفقا لاحتياجات التوافق والأمان الخاصة في مؤسستك التي تتضمن المسؤولين والمستخدمين والعارضين.        |  [مجموعات دور Microsoft Defender for Identity](/defender-for-identity/role-groups)       |
 | المدخل الإداري    |  بالإضافة إلى مدخل Microsoft 365 Defender، يمكن استخدام مدخل Defender for Identity لمراقبة النشاط المريب والاستجابة له.      | [العمل مع مدخل Microsoft Defender for Identity](/defender-for-identity/workspace-portal)        |
 | تكامل Microsoft Defender for Cloud Apps   | يتكامل Microsoft Defender for Cloud Apps مع Microsoft Defender for Identity لتوفير تحليلات سلوكية (UEBA) لكيان المستخدم عبر بيئة مختلطة - كل من تطبيق السحابة والتطبيق المحلي   | تكامل Microsoft Defender for Identity  |
+| | | |
+
 
 ## <a name="review-prerequisites"></a>مراجعة المتطلبات الأساسية
 

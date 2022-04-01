@@ -1,0 +1,491 @@
+- name: Microsoft 365 Defender
+  href: index.yml
+  expanded: true
+  items:
+    - name: نظرة عامة
+      items:
+        - name: Microsoft 365 Defender
+          href: microsoft-365-defender.md
+        - name: الجديد في Microsoft 365 Defender
+          href: whats-new.md
+        - name: خدمات Microsoft 365 Defender
+          items:
+            - name: Defender for Endpoint في Microsoft 365 Defender
+              href: microsoft-365-security-center-mde.md
+            - name: Defender for Office 365 في Microsoft 365 Defender
+              href: microsoft-365-security-center-mdo.md
+            - name: إعادة توجيه Defender لنقطة النهاية إلى Microsoft 365 Defender
+              href: microsoft-365-security-mde-redirection.md
+        - name: تكامل Microsoft 365 Defender مع Microsoft Sentinel
+          href: microsoft-365-defender-integration-with-azure-sentinel.md
+        - name: Microsoft 365 Defender لعملاء حكومة الولايات المتحدة
+          href: usgov.md
+        - name: اختبارات المجال
+          href: ./top-scoring-industry-tests.md
+    - name: الخطة
+      items:
+        - name: المتطلبات الأساسية
+          href: prerequisites.md
+        - name: الخصوصية وأمان البيانات
+          href: data-privacy.md
+        - name: مداخل أمان Microsoft
+          href: portals.md
+    - name: التقييم والإصدار التجريبي
+      items:
+        - name: نظرة عامة
+          href: eval-overview.md
+        - name: الخطوة 1. إنشاء بيئة التقييم
+          href: eval-create-eval-environment.md
+        - name: الخطوة 2. Defender for Identity
+          items:
+            - name: نظرة عامة
+              href: eval-defender-identity-overview.md
+            - name: مراجعة متطلبات البنية
+              href: eval-defender-identity-architecture.md
+            - name: تمكين التقييم
+              href: eval-defender-identity-enable-eval.md
+            - name: الإصدار التجريبي لـ Defender for Identity
+              href: eval-defender-identity-pilot.md
+        - name: الخطوة 3. Defender for Office 365
+          items:
+            - name: نظرة عامة
+              href: eval-defender-office-365-overview.md
+            - name: مراجعة متطلبات البنية
+              href: eval-defender-office-365-architecture.md
+            - name: تمكين التقييم
+              href: eval-defender-office-365-enable-eval.md
+            - name: الإصدار التجريبي لـ Defender for Office
+              href: eval-defender-office-365-pilot.md
+        - name: الخطوة 4. Defender لنقطة النهاية
+          items:
+            - name: نظرة عامة
+              href: eval-defender-endpoint-overview.md
+            - name: مراجعة متطلبات البنية
+              href: eval-defender-endpoint-architecture.md
+            - name: تمكين التقييم
+              href: eval-defender-endpoint-enable-eval.md
+            - name: الإصدار التجريبي لـ Microsoft Defender لنقطة النهاية
+              href: eval-defender-endpoint-pilot.md
+        - name: الخطوة 5. Microsoft Defender for Cloud Apps
+          items:
+            - name: نظرة عامة
+              href: eval-defender-mcas-overview.md
+            - name: مراجعة متطلبات البنية
+              href: eval-defender-mcas-architecture.md
+            - name: تمكين التقييم
+              href: eval-defender-mcas-enable-eval.md
+            - name: الإصدار التجريبي Microsoft Defender for Cloud Apps
+              href: eval-defender-mcas-pilot.md
+        - name: الخطوة 6. التحقيق والاستجابة
+          items:
+            - name: نظرة عامة
+              href: eval-defender-investigate-respond.md
+            - name: محاكاة هجوم
+              href: eval-defender-investigate-respond-simulate-attack.md
+            - name: تجربة الإمكانات
+              href: eval-defender-investigate-respond-additional.md
+        - name: الخطوة 7. ترقية الإصدار التجريبي إلى الإنتاج
+          href: eval-defender-promote-to-production.md
+    - name: بدء الاستخدام
+      items:
+        - name: نظرة عامة
+          href: get-started.md
+        - name: 1. تمكين Microsoft 365 Defender
+          href: m365d-enable.md
+        - name: 2. نشر الخدمات المعتمدة
+          href: deploy-supported-services.md
+        - name: تشغيل الأسئلة المتداولة Microsoft 365 Defender
+          href: m365d-enable-faq.md
+        - name: تدريب موظفي الأمان
+          href: microsoft-365-defender-train-security-staff.md
+    - name: الحماية من التهديدات
+      items:
+        - name: Microsoft Secure Score
+          items:
+            - name: نظرة عامة على "درجة الأمان"
+              href: microsoft-secure-score.md
+            - name: تقييم وضعية الأمان
+              href: microsoft-secure-score-improvement-actions.md
+            - name: تعقب سجل درجاتك وتحقيق الأهداف
+              href: microsoft-secure-score-history-metrics-trends.md
+            - name: ما الجديد
+              href: microsoft-secure-score-whats-coming.md
+            - name: ما الجديد
+              href: microsoft-secure-score-whats-new.md
+        - name: حماية نقاط النهاية
+          href: ../defender-endpoint/index.yml
+        - name: حماية هوياتك
+          items:
+            - name: إعدادات المستشعر والصحة
+              href: ../defender-identity/sensor-health.md
+            - name: حساب خدمات الدليل
+              href: ../defender-identity/directory-service-accounts.md
+            - name: تكامل VPN
+              href: ../defender-identity/vpn-integration.md
+            - name: تعيين علامات الكيانات
+              href: ../defender-identity/entity-tags.md
+            - name: إدارة تنبيهات الأمان
+              href: ../defender-identity/manage-security-alerts.md
+            - name: تكوين استثناءات الكشف
+              href: ../defender-identity/exclusions.md
+            - name: إخطارات البريد الإلكتروني وسجل النظام
+              href: ../defender-identity/notifications.md
+        - name: حماية أحمال Office 365 العمل
+          href: ../office-365-security/index.yml
+    - name: التحقق من التهديدات والاستجابة لها
+      items:
+        - name: نظرة عامة
+          href: incident-response-overview.md
+        - name: الاستجابة للأحداث
+          items:
+            - name: نظرة عامة
+              href: incidents-overview.md
+            - name: تحديد أولوية الأحداث
+              href: incident-queue.md
+            - name: إدارة الأحداث
+              href: manage-incidents.md
+            - name: الاستجابة للحدث الأول
+              items:
+                - name: نظرة عامة
+                  href: first-incident-overview.md
+                - name: إعداد
+                  href: first-incident-prepare.md
+                - name: الخطوة 1. الفرز والتحليل
+                  href: first-incident-analyze.md
+                - name: الخطوة 2. معالجة
+                  href: first-incident-remediate.md
+                - name: الخطوة 3. مراجعة
+                  href: first-incident-post.md
+                - name: أمثلة على أحداث إضافية
+                  items:
+                    - name: بريد إلكتروني احتيالي
+                      href: first-incident-path-phishing.md
+                    - name: الهوية
+                      href: first-incident-path-identity.md
+            - name: التحقيق في الأحداث
+              items:
+                - name: الأحداث
+                  href: investigate-incidents.md
+                - name: التنبيهات
+                  href: investigate-alerts.md
+                - name: تنبيه مصنفات الدرجات
+                  items:
+                    - name: نظرة عامة
+                      href: alert-grading-playbooks.md
+                    - name: نشاط إعادة توجيه البريد الإلكتروني المريب
+                      href: alert-grading-playbook-email-forwarding.md
+                    - name: قواعد إعادة توجيه علبة الوارد المريبة
+                      href: alert-grading-playbook-inbox-forwarding-rules.md
+                    - name: قواعد معالجة علبة الوارد المريبة
+                      href: alert-grading-playbook-inbox-manipulation-rules.md
+                - name: المستخدمون
+                  href: investigate-users.md
+            - name: دفاتر تشغيل الاستجابة للأحداث
+              href: /security/compass/incident-response-playbooks
+        - name: إدارة التحقيق التلقائي والاستجابة
+          items:
+            - name: نظرة عامة
+              href: m365d-autoir.md
+            - name: تكوين الإمكانات
+              href: m365d-configure-auto-investigation-response.md
+            - name: إجراءات المعالجة
+              href: m365d-remediation-actions.md
+            - name: استخدام مركز الإجراءات
+              href: m365d-action-center.md
+            - name: عرض إجراءات الإصلاح وإدارتها
+              href: m365d-autoir-actions.md
+            - name: عرض التفاصيل والنتائج
+              href: m365d-autoir-results.md
+            - name: معالجة الإيجابيات والسلبيات الخاطئة
+              href: m365d-autoir-report-false-positives-negatives.md
+        - name: البحث عن التهديدات باستخدام الصيد المتقدم
+          items:
+            - name: نظرة عامة
+              href: advanced-hunting-overview.md
+            - name: التعرّف على أمثلة أكثر واحصل عليها
+              items:
+                - name: التعرّف على لغة الاستعلام
+                  href: advanced-hunting-query-language.md
+                - name: الحصول على تدريب من الخبراء
+                  href: advanced-hunting-expert-training.md
+                - name: استخدام الاستعلامات المشتركة
+                  href: advanced-hunting-shared-queries.md
+                - name: البحث عبر الأجهزة ورسائل البريد الإلكتروني والتطبيقات والهويات
+                  href: advanced-hunting-query-emails-devices.md
+                - name: البحث عن برامج الفدية الضارة
+                  href: advanced-hunting-find-ransomware.md
+                - name: مثال عن الصيد المتقدم
+                  href: advanced-hunting-example.md
+                - name: الانتقال من Defender لنقطة النهاية
+                  href: advanced-hunting-migrate-from-mde.md
+            - name: استخدام نتائج الاستعلام
+              href: advanced-hunting-query-results.md
+            - name: اتخاذ إجراء بشأن نتائج الاستعلام
+              href: advanced-hunting-take-action.md
+            - name: التحقق بسرعة باستخدام البحث السريع
+              href: advanced-hunting-go-hunt.md
+            - name: ربط نتائج الاستعلام بحدث
+              href: advanced-hunting-link-to-incident.md
+            - name: تحسينا الأخطاء ومعالجتها
+              items:
+                - name: تطبيق أفضل ممارسات الاستعلام
+                  href: advanced-hunting-best-practices.md
+                - name: معالجة الأخطاء
+                  href: advanced-hunting-errors.md
+                - name: معلمات الاستخدام والحصص النسبية
+                  href: advanced-hunting-limits.md
+                - name: توسيع تغطية البيانات
+                  href: advanced-hunting-extend-data.md
+            - name: مخطط البيانات
+              items:
+                - name: فهم المخطط
+                  href: advanced-hunting-schema-tables.md
+                - name: تغييرات تسمية المخطط
+                  href: advanced-hunting-schema-changes.md
+                - name: AADSignInEventsBeta
+                  href: advanced-hunting-aadsignineventsbeta-table.md
+                - name: AADSpnSignInEventsBeta
+                  href: advanced-hunting-aadspnsignineventsbeta-table.md
+                - name: AlertEvidence
+                  href: advanced-hunting-alertevidence-table.md
+                - name: AlertInfo
+                  href: advanced-hunting-alertinfo-table.md
+                - name: CloudAppEvents
+                  href: advanced-hunting-cloudappevents-table.md
+                - name: DeviceEvents
+                  href: advanced-hunting-deviceevents-table.md
+                - name: DeviceFileCertificateInfo
+                  href: advanced-hunting-devicefilecertificateinfo-table.md
+                - name: DeviceFileEvents
+                  href: advanced-hunting-devicefileevents-table.md
+                - name: DeviceImageLoadEvents
+                  href: advanced-hunting-deviceimageloadevents-table.md
+                - name: DeviceInfo
+                  href: advanced-hunting-deviceinfo-table.md
+                - name: DeviceLogonEvents
+                  href: advanced-hunting-devicelogonevents-table.md
+                - name: DeviceNetworkEvents
+                  href: advanced-hunting-devicenetworkevents-table.md
+                - name: DeviceNetworkInfo
+                  href: advanced-hunting-devicenetworkinfo-table.md
+                - name: DeviceProcessEvents
+                  href: advanced-hunting-deviceprocessevents-table.md
+                - name: DeviceRegistryEvents
+                  href: advanced-hunting-deviceregistryevents-table.md
+                - name: DeviceTvmSecureConfigurationAssessment
+                  href: advanced-hunting-devicetvmsecureconfigurationassessment-table.md
+                - name: DeviceTvmSecureConfigurationAssessmentKB
+                  href: advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
+                - name: DeviceTvmSoftwareEvidenceBeta
+                  href: advanced-hunting-devicetvmsoftwareevidencebeta-table.md
+                - name: DeviceTvmSoftwareInventory
+                  href: advanced-hunting-devicetvmsoftwareinventory-table.md
+                - name: DeviceTvmSoftwareVulnerabilities
+                  href: advanced-hunting-devicetvmsoftwarevulnerabilities-table.md
+                - name: DeviceTvmSoftwareVulnerabilitiesKB
+                  href: advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
+                - name: EmailAttachmentInfo
+                  href: advanced-hunting-emailattachmentinfo-table.md
+                - name: EmailEvents
+                  href: advanced-hunting-emailevents-table.md
+                - name: EmailPostDeliveryEvents
+                  href: advanced-hunting-emailpostdeliveryevents-table.md
+                - name: EmailUrlInfo
+                  href: advanced-hunting-emailurlinfo-table.md
+                - name: IdentityDirectoryEvents
+                  href: advanced-hunting-identitydirectoryevents-table.md
+                - name: IdentityInfo
+                  href: advanced-hunting-identityinfo-table.md
+                - name: IdentityLogonEvents
+                  href: advanced-hunting-identitylogonevents-table.md
+                - name: IdentityQueryEvents
+                  href: advanced-hunting-identityqueryevents-table.md
+            - name: الدالات
+              items:
+                - name: AssignedIPAddresses()
+                  href: advanced-hunting-assignedipaddresses-function.md
+                - name: DeviceFromIP()
+                  href: advanced-hunting-devicefromip-function.md
+                - name: FileProfile()
+                  href: advanced-hunting-fileprofile-function.md
+            - name: الاكتشافات المخصصة
+              items:
+                - name: نظرة عامة على الكشف المخصص
+                  href: custom-detections-overview.md
+                - name: إنشاء قواعد الكشف وإدارتها
+                  href: custom-detection-rules.md
+        - name: تتبع التهديدات الناشئة والرد عليها
+          items:
+            - name: نظرة عامة حول تحليل المخاطر
+              href: threat-analytics.md
+            - name: فهم تقرير المحلل
+              href: threat-analytics-analyst-reports.md
+        - name: التعاون في العمل خبراء المخاطر في Microsoft
+          items:
+            - name: نظرة عامة
+              href: microsoft-threat-experts.md
+            - name: تكوين قدرات خبراء المخاطر في Microsoft وإدارتها
+              href: configure-microsoft-threat-experts.md
+    - name: دليل عمليات الأمان
+      items:
+        - name: نظرة عامة
+          href: integrate-microsoft-365-defender-secops.md
+        - name: الخطوة 1. الجهازية للعمليات
+          href: integrate-microsoft-365-defender-secops-plan.md
+        - name: الخطوة 2. تقييم الجهازية باستخدام ثقة معدومة
+          href: integrate-microsoft-365-defender-secops-readiness.md
+        - name: الخطوة 3. التكامل مع خدمات SOC
+          href: integrate-microsoft-365-defender-secops-services.md
+        - name: الخطوة 4. الأدوار والمسؤوليات ولمراقبة
+          href: integrate-microsoft-365-defender-secops-roles.md
+        - name: الخطوة 5. اختبار حالات الاستخدام
+          href: integrate-microsoft-365-defender-secops-use-cases.md
+        - name: الخطوة 6. مهام صيانة SOC
+          href: integrate-microsoft-365-defender-secops-tasks.md
+    - name: المرجع
+      items:
+        - name: الأذونات & والإعدادات
+          items:
+            - name: إدارة الوصول
+              href: m365d-permissions.md
+            - name: أدوار مخصصة في الوصول المستند إلى الدور
+              href: custom-roles.md
+            - name: تعيين المنطقة الزمنية
+              href: m365d-time-zone.md
+            - name: عرض ملفات تعريف الجهاز
+              href: device-profile.md
+            - name: تقديم ملاحظات
+              href: feedback.md
+            - name: توفير الوصول إلى موفر الخدمة المدارة (MSSP)
+              href: mssp-access.md
+            - name: إنشاء تذاكر الخدمة والمهام
+              items:
+                - name: نظرة عامة حول تكامل ServiceNow
+                  href: ./tickets.md
+        - name: واجهات برمجة تطبيقات Microsoft 365 Defender
+          items:
+            - name: نظرة عامة على واجهات برمجة تطبيقات Microsoft 365 Defender
+              href: api-overview.md
+            - name: دعم واجهات برمجة تطبيقات Microsoft 365 Defender
+              href: api-supported.md
+            - name: بدء العمل باستخدام واجهات برمجة تطبيقات Microsoft 365 Defender
+              items:
+                - name: ترخيص واجهة برمجة تطبيقات Microsoft 365 Defender وشروط الاستخدام
+                  href: api-terms.md
+                - name: الوصول إلى واجهات برمجة تطبيقات Microsoft 365 Defender
+                  href: api-access.md
+                - name: مثال "مرحباً بالعالم"
+                  href: api-hello-world.md
+                - name: الوصول باستخدام سياق التطبيق
+                  href: api-create-app-web.md
+                - name: الوصول باستخدام سياق المستخدم
+                  href: api-create-app-user-context.md
+                - name: الحصول على وصول إلى تطبيق الشريك
+                  href: api-partner-access.md
+                - name: موارد واجهة برمجة التطبيقات الأخرى
+                  href: api-articles.md
+            - name: مخطط وواجهات برمجة تطبيقات Microsoft 365 Defender
+              items:
+                - name: رموز أخطاء واجهات برمجة تطبيقات REST الشائعة
+                  href: api-error-codes.md
+                - name: واجهات برمجة تطبيقات البث
+                  items:
+                    - name: واجهة برمجة تطبيقات Microsoft 365 للبث
+                      href: streaming-api.md
+                    - name: بث أحداث الصيد المتقدمة إلى مركز أحداث Azure
+                      href: streaming-api-event-hub.md
+                    - name: بث أحداث الصيد المتقدمة إلى حساب التخزين
+                      href: streaming-api-storage.md
+                    - name: أنواع أحداث البث المعتمدة
+                      href: supported-event-types.md
+                    - name: تكوين مركز الحدث
+                      href: configure-event-hub.md
+                - name: التتبع المتقدم لواجهات برمجة التطبيقات
+                  href: api-advanced-hunting.md
+                - name: واجهات برمجة التطبيقات للأحداث
+                  items:
+                    - name: أساليب الأحداث وخصائصها
+                      href: api-incident.md
+                    - name: سرد الأحداث
+                      href: api-list-incidents.md
+                    - name: تحديث الأحداث
+                      href: api-update-incidents.md
+                    - name: الحصول على حادث
+                      href: api-get-incident.md
+            - name: إحضار أحداث Microsoft 365 Defender
+              href: fetch-incidents.md
+            - name: تكامل إدارة معلومات الأمان والأحداث
+              items:
+                - name: ادمج أدوات إدارة معلومات الأمان والأحداث مع Microsoft 365 Defender
+                  href: configure-siem-defender.md
+                - name: استكشاف المشاكل المتعلقة بتكامل أدوات إدارة معلومات الأمان والأحداث وإصلاحها
+                  href: ../defender-endpoint/troubleshoot-siem.md
+            - name: فهم مفاهيم المعلومات الاستخبارية للتهديدات
+              href: ../defender-endpoint/threat-indicator-concepts.md
+        - name: التحليل الذكي لمخاطر الأمان
+          items:
+            - name: تنزيل "الماسح الضوئي للأمان"
+              href: ../intelligence/safety-scanner-download.md
+            - name: فهم البرامج الضارة وتهديدات أخرى
+              href: ../intelligence/understanding-malware.md
+              items:
+                - name: منع البرامج الضارة
+                  href: ../intelligence/prevent-malware-infection.md
+                - name: أسماء البرامج الضارة
+                  href: ../intelligence/malware-naming.md
+                - name: تعدين العملات
+                  href: ../intelligence/coinminer-malware.md
+                - name: استغلال مجموعات الأدوات واستغلالها
+                  href: ../intelligence/exploits-malware.md
+                - name: التهديدات بدون ملفات
+                  href: ../intelligence/fileless-threats.md
+                - name: برامج الماكرو الضارة
+                  href: ../intelligence/macro-malware.md
+                - name: التصيّد الاحتيالي
+                  href: ../intelligence/phishing.md
+                - name: برامج الفدية الضارة
+                  href: /security/compass/human-operated-ransomware
+                - name: Rootkits
+                  href: ../intelligence/rootkits-malware.md
+                - name: هجمات سلاسل التوريد
+                  href: ../intelligence/supply-chain-malware.md
+                - name: رسائل الدعم التقني الخادعة
+                  href: ../intelligence/support-scams.md
+                - name: حصان طروادة
+                  href: ../intelligence/trojans-malware.md
+                - name: البرامج غير المرغوب فيها
+                  href: ../intelligence/unwanted-software.md
+                - name: فيروسات متنقلة
+                  href: ../intelligence/worms-malware.md
+            - name: كيف تحدد Microsoft البرامج الضارة والتطبيقات غير المرغوب فيها
+              href: ../intelligence/criteria.md
+            - name: إرسال الملفات لتحليلها
+              href: ../intelligence/submission-guide.md
+            - name: برامج التعاون في المجال
+              href: ../intelligence/cybersecurity-industry-partners.md
+            - name: تحالف معلومات الفيروسات
+              href: ../intelligence/virus-information-alliance-criteria.md
+            - name: مبادرة الفيروسات من Microsoft
+              href: ../intelligence/virus-initiative-criteria.md
+            - name: التخلص من البرامج الضارة المنسقة
+              href: ../intelligence/coordinated-malware-eradication.md
+            - name: برنامج مكافأة الأخطاء من Microsoft
+              href: ../intelligence/microsoft-bug-bounty-program.md
+            - name: معلومات للمطورين
+              items:
+                - name: الأسئلة الشائعة حول مطوري البرامج
+                  href: ../intelligence/developer-faq.yml
+                - name: موارد مطوري البرامج
+                  href: ../intelligence/developer-resources.md
+    - name: المستندات Microsoft 365 Defender
+      items:
+        - name: Defender for Office 365
+          href: ../office-365-security/index.yml
+        - name: Defender لنقطة النهاية
+          href: ../defender-endpoint/index.yml
+        - name: Defender for Identity
+          href: /defender-for-identity
+        - name: Defender for Cloud Apps
+          href: /cloud-app-security
+        - name: Defender for Business
+          href: ../defender-business/index.yml

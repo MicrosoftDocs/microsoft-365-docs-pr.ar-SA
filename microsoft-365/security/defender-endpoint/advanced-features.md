@@ -1,7 +1,7 @@
 ---
 title: تكوين الميزات المتقدمة في Microsoft Defender لنقطة النهاية
-description: قم تشغيل الميزات المتقدمة مثل ملف الحظر في Microsoft Defender لنقطة النهاية.
-keywords: الميزات المتقدمة والإعدادات وملف الحظر والتحري التلقائي والحل التلقائي وسكايب و Microsoft defender للهوية و office 365 وحماية معلومات azure و intune
+description: قم تشغيل الميزات المتقدمة مثل حظر ملف في Microsoft Defender لنقطة النهاية.
+keywords: الميزات المتقدمة والإعدادات وملف الحظر والتحري التلقائي والحل التلقائي وسكايب و microsoft defender للهوية و office 365 وحماية معلومات azure و intune
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,17 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56a836e14051e3f621fb42fd518fb2cf5efe8bed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 94e5b18ab1090f6fb76cb7734e90411b93b444e7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570148"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465432"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>تكوين الميزات المتقدمة في Defender for Endpoint
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -69,11 +69,11 @@ ms.locfileid: "63570148"
 
 التطبيقات التي يحتمل أن تكون غير مرغوب فيها (PUA) هي فئة من البرامج التي يمكن أن تتسبب في تشغيل جهازك ببطء، أو عرض إعلانات غير متوقعة، أو في أسوأ الأحوال، تثبيت برامج أخرى، قد تكون غير متوقعة أو غير مرغوب فيها.
 
-قم تشغيل هذه الميزة بحيث يتم معالجة التطبيقات غير المرغوب فيها (PUA) على جميع الأجهزة في المستأجر الخاص بك حتى لو لم يتم تكوين حماية PUA على الأجهزة. سيساعد ذلك في حماية المستخدمين من تثبيت التطبيقات غير المرغوب فيها عن غير قصد على أ جهازهم. عند إيقاف تشغيلها، تعتمد المعالجة على تكوين الجهاز.
+قم تشغيل هذه الميزة بحيث يتم معالجة التطبيقات غير المرغوب فيها (PUA) على جميع الأجهزة في المستأجر الخاص بك حتى لو لم يتم تكوين حماية PUA على الأجهزة. يساعد تنشيط هذه الميزة على حماية المستخدمين من تثبيت التطبيقات غير المرغوب فيها عن غير قصد على أ جهازهم. عند إيقاف تشغيلها، تعتمد المعالجة على تكوين الجهاز.
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>تقييد الارتباط بضمن مجموعات الأجهزة ضمن النطاق
 
-يمكن استخدام هذا التكوين للسيناريوهات التي ترغب فيها عمليات SOC المحلية في تقييد ارتباطات التنبيهات لمجموعات الأجهزة التي يمكنها الوصول إليها فقط. من خلال تشغيل هذا الإعداد، لن يتم اعتبار حادث يتألف من تنبيهات بأن المجموعات عبر الأجهزة حادثا واحدا. بعد ذلك، يمكن ل SOC المحلي اتخاذ إجراء بشأن الحادث نظرا لأنه لديه حق الوصول إلى إحدى مجموعات الأجهزة المعنية. ومع ذلك، سيشاهد SOC العام عدة أحداث مختلفة حسب مجموعة الأجهزة بدلا من حادث واحد. لا نوصي باستخدام هذا الإعداد إلا إذا كان ذلك سيحول دون فوائد الارتباط بين الأحداث عبر المؤسسة بكاملها.
+يمكن استخدام هذا التكوين للسيناريوهات التي ترغب فيها عمليات SOC المحلية في تقييد ارتباطات التنبيهات لمجموعات الأجهزة التي يمكنها الوصول إليها فقط. من خلال تشغيل هذا الإعداد، لن يتم اعتبار حادث مكون من تنبيهات بأن المجموعات عبر الأجهزة حادثا واحدا. بعد ذلك، يمكن ل SOC المحلي اتخاذ إجراء بشأن الحادث نظرا لأنه لديه حق الوصول إلى إحدى مجموعات الأجهزة المعنية. ومع ذلك، سيشاهد SOC العام عدة أحداث مختلفة حسب مجموعة الأجهزة بدلا من حادث واحد. لا نوصي باستخدام هذا الإعداد إلا إذا كان ذلك سيحول دون فوائد الارتباط بين الأحداث عبر المؤسسة بكاملها.
 
 > [!NOTE]
 > يؤثر تغيير هذا الإعداد على ارتباطات التنبيهات المستقبلية فقط.
@@ -84,7 +84,7 @@ ms.locfileid: "63570148"
 
 ## <a name="autoresolve-remediated-alerts"></a>تنبيهات تم إصلاحها بشكل تلقائي
 
-بالنسبة للمستأجرين الذين تم إنشاؤهم في الإصدار 1809 من Windows 10 أو بعده، يتم بشكل افتراضي تكوين إمكانية المعالجة والتحرير التلقائية لحل التنبيهات التي تكون فيها حالة نتيجة التحليل التلقائي "لم يتم العثور على أي تهديدات" أو "تم المعالجة". إذا كنت لا تريد أن يتم حل التنبيهات تلقائيا، ستحتاج إلى إيقاف تشغيل الميزة يدويا.
+بالنسبة للمستأجرين الذين تم إنشاؤهم في الإصدار 1809 من Windows 10 أو بعده، يتم بشكل افتراضي تكوين إمكانية المعالجة والتحرير التلقائية لحل التنبيهات التي تكون فيها حالة نتيجة التحليل التلقائي "لم يتم العثور على أي تهديدات" أو "تم المعالجة". إذا كنت لا تريد حل التنبيهات تلقائيا، ستحتاج إلى إيقاف تشغيل الميزة يدويا.
 
 > [!TIP]
 > بالنسبة للمستأجرين الذين تم إنشاؤهم قبل هذا الإصدار، ستحتاج إلى تشغيل هذه الميزة يدويا من [صفحة الميزات](https://security.microsoft.com//preferences2/integration) المتقدمة.
@@ -109,7 +109,7 @@ ms.locfileid: "63570148"
 
 1. تبديل الإعداد **بين تشغيل أو** **إيقاف تشغيل**.
  
-    :::image type="content" source="../../media/alloworblockfile.png" alt-text="صورة الإعدادات المتقدمة لمميزة حظر الملفات.":::
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="شاشة نقاط النهاية" lightbox="../../media/alloworblockfile.png":::
 
 1. حدد **حفظ التفضيلات** في أسفل الصفحة.
 
@@ -147,14 +147,14 @@ ms.locfileid: "63570148"
 
 ## <a name="skype-for-business-integration"></a>Skype for Business التكامل
 
-يتيح Skype for Business التكامل إمكانية التواصل مع المستخدمين باستخدام Skype for Business أو البريد الإلكتروني أو الهاتف. قد يكون هذا الأمر في متناول يديك عندما تحتاج إلى التواصل مع المستخدم والحد من المخاطر.
+يتيح Skype for Business التكامل إمكانية التواصل مع المستخدمين باستخدام Skype for Business أو البريد الإلكتروني أو الهاتف. قد يكون هذا التنشيط في متناول يديك عندما تحتاج إلى التواصل مع المستخدم والحد من المخاطر.
 
 > [!NOTE]
 > عندما يتم عزل جهاز عن الشبكة، توجد نافذة منبثقة حيث يمكنك اختيار تمكين اتصالات Outlook و Skype التي تسمح بالاتصالات للمستخدم أثناء قطع اتصاله بالشبكة. ينطبق هذا الإعداد على Skype Outlook الاتصال عندما تكون الأجهزة في وضع العزل.
 
-## <a name="microsoft-defender-for-identity-integration"></a>تكامل Microsoft Defender for Identity
+## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender for Identity التكامل
 
-يسمح لك التكامل مع Microsoft Defender for Identity بالتحول مباشرة إلى منتج أمان Microsoft Identity آخر. يزيد Microsoft Defender for Identity من التحقيق مع مزيد من المعلومات حول حساب مشتبه به في حالة اختراق وموارد ذات صلة. من خلال تمكين هذه الميزة، ستثري إمكانية التحقيق المستندة إلى الجهاز من خلال التمركز عبر الشبكة من وجهة عرض التعريف.
+يسمح لك التكامل مع Microsoft Defender for Identity بالتحول مباشرة إلى منتج أمان Microsoft Identity آخر. Microsoft Defender for Identity تحقيق مع مزيد من المعلومات حول حساب مشتبه به في حالة اختراق وموارد ذات صلة. من خلال تمكين هذه الميزة، ستثري إمكانية التحقيق المستندة إلى الجهاز من خلال التمركز عبر الشبكة من وجهة عرض التعريف.
 
 > [!NOTE]
 > ستحتاج إلى الترخيص المناسب لتمكين هذه الميزة.
@@ -163,7 +163,7 @@ ms.locfileid: "63570148"
 
 لا تتوفر هذه الميزة إلا إذا كان لديك Office 365 E5 نشط أو الوظائف الإضافية Threat Intelligence. لمزيد من المعلومات، راجع صفحة Office 365 Enterprise E5.
 
-عند تشغيل هذه الميزة، ستكون قادرا على تضمين بيانات من Microsoft Defender ل Office 365 في Microsoft 365 Defender لإجراء تحقيق أمان شامل عبر علب بريد Office 365 وأجهزة Windows أخرى.
+عند تشغيل هذه الميزة، ستكون قادرا على تضمين البيانات من Microsoft Defender لـ Office 365 في Microsoft 365 Defender لإجراء تحقيق أمان شامل عبر علب بريد Office 365 البريد والأجهزة Windows الأخرى.
 
 > [!NOTE]
 > ستحتاج إلى الترخيص المناسب لتمكين هذه الميزة.
@@ -177,18 +177,18 @@ ms.locfileid: "63570148"
 > [!NOTE]
 > تتوفر خبراء المخاطر في Microsoft في Defender for Endpoint مع ترخيص E5 ل [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
 
-## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender لتطبيقات السحابة
+## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-يؤدي تمكين هذا الإعداد إلى إعادة توجيه إشارات Defender لنقطة النهاية إلى Microsoft Defender لتطبيقات السحابة لتوفير رؤية أكثر عمقا لاستخدام تطبيقات السحابة. يتم تخزين البيانات التي تمت إعادة توجيهها ومعالجتها في نفس موقع بيانات Defender for Cloud Apps.
+يؤدي تمكين هذا الإعداد إلى إعادة توجيه إشارات Defender لنقطة النهاية Microsoft Defender for Cloud Apps لتوفير رؤية أكثر عمقا في استخدام تطبيقات السحابة. يتم تخزين البيانات التي تمت إعادة توجيهها ومعالجتها في نفس موقع بيانات Defender for Cloud Apps.
 
 > [!NOTE]
 > ستتوفر هذه الميزة مع ترخيص E5 ل [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) على الأجهزة التي تعمل Windows 10، الإصدار 1709 (إصدار نظام التشغيل 16299.1085 مع [KB4493441](https://support.microsoft.com/help/4493441))، Windows 10، الإصدار 1803 (إصدار نظام التشغيل 17134.704 مع [KB4493464](https://support.microsoft.com/help/4493464))، الإصدار 1809 من Windows 10 (إصدار نظام التشغيل 17763.379 مع [KB4489899)،](https://support.microsoft.com/help/4489899) لاحقا Windows 10 الإصدارات أو Windows 11.
 
-### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>تمكين تكامل Microsoft Defender لنقطة النهاية من مدخل Microsoft Defender for Identity
+### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>تمكين Microsoft Defender لنقطة النهاية من مدخل Microsoft Defender for Identity
 
-لتلقي تكامل الجهاز السياقي في Microsoft Defender for Identity، ستحتاج أيضا إلى تمكين الميزة في مدخل Microsoft Defender for Identity.
+لتلقي تكامل الجهاز السياقي في Microsoft Defender for Identity، ستحتاج أيضا إلى تمكين الميزة في Microsoft Defender for Identity المدخل.
 
-1. سجل دخولك إلى [مدخل Microsoft Defender for Identity](https://portal.atp.azure.com/) باستخدام دور مسؤول عام أو مسؤول الأمان.
+1. سجل دخولك إلى مدخل Microsoft Defender for Identity [باستخدام](https://portal.atp.azure.com/) دور مسؤول عام أو مسؤول الأمان.
 
 2. انقر **فوق إنشاء المثيل**.
 
@@ -198,7 +198,7 @@ ms.locfileid: "63570148"
 
 ## <a name="web-content-filtering"></a>تصفية محتوى ويب
 
-حظر الوصول إلى مواقع الويب التي تحتوي على محتوى غير مرغوب فيه وتعقب نشاط الويب عبر جميع المجالات. لتحديد فئات محتوى الويب التي تريد حظرها، أنشئ نهج تصفية محتوى [ويب](https://security.microsoft.com/preferences2/web_content_filtering_policy). تأكد من حماية الشبكة في وضع الحظر عند نشر [خط أمان Microsoft Defender لنقطة النهاية](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2).
+حظر الوصول إلى مواقع الويب التي تحتوي على محتوى غير مرغوب فيه وتعقب نشاط الويب عبر جميع المجالات. لتحديد فئات محتوى الويب التي تريد حظرها، أنشئ نهج تصفية محتوى [ويب](https://security.microsoft.com/preferences2/web_content_filtering_policy). تأكد من حماية الشبكة في وضع الحظر عند نشر Microsoft Defender لنقطة النهاية [الأمان.](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)
 
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>مشاركة تنبيهات نقاط النهاية باستخدام مركز توافق Microsoft
 
@@ -213,7 +213,7 @@ ms.locfileid: "63570148"
 > [!IMPORTANT]
 > ستحتاج إلى تمكين التكامل على كل من Intune و Defender ل Endpoint لاستخدام هذه الميزة. لمزيد من المعلومات حول خطوات معينة، راجع [تكوين الوصول الشرطي في Defender لنقطة النهاية](configure-conditional-access.md).
 
-لا تتوفر هذه الميزة إلا إذا كان لديك ما يلي:
+لا تتوفر هذه الميزة إلا إذا كانت لديك المتطلبات الأساسية التالية:
 
 - مستأجر مرخص Enterprise Mobility + Security E3، Windows E5 (أو Microsoft 365 Enterprise E5)
 - بيئة Microsoft Intune نشطة، مع أجهزة [Azure AD](/azure/active-directory/devices/concept-azure-ad-join/) Windows التي تديرها Intune.

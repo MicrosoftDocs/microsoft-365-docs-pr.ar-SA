@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs)، احصل على قائمة بالمتطلبات لاستخدام Microsoft 365 المنارة.
-ms.openlocfilehash: b26eb34c728121b4c6f2474dd52aa2a6824d92d6
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 51dd2404f03dc58d5975a37c386ba9c8f1333763
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775401"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63579666"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>متطلبات Microsoft 365 المنارة
 
@@ -29,26 +29,24 @@ Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخد
 
 يجب أن يكون MSPs مسجلا في برنامج Cloud Solution Provider (CSP) ك بائع غير مباشر أو شريك فاتورة مباشرة لاستخدام المنارة.  
 
-بالإضافة إلى ذلك، يجب أن يكون كل مستأجر عميل MSP مؤهلا ل "المنارة" من خلال تلبية المتطلبات التالية:
+بالإضافة إلى ذلك، يجب أن يكون كل مستأجر عميل MSP مؤهلا ل "المنارة" من خلال تلبية المتطلبات التالية: 
  
-- يجب أن يكون لديك حق وصول مفوض تم إعداده لموفر الخدمة المدارة (MSP) لكي يتمكن من إدارة مستأجر العميل*
-- يجب أن يكون لديك ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business
-- يجب ألا يكون هناك أكثر من 1000 مستخدم مرخص
-
-*امتيازات المسؤول المفوض (DAP) مطلوبة لتكئب العملاء على المنارة. نوصي أيضا بإنشاء امتيازات المسؤول المفوض (GDAP) مع العملاء لتمكين وصول مفوض أكثر أمانا. بينما يكون DAP و GDAP مترابطين، فإن GDAP سيكون له الأسبقية للعملاء حيث يكون النموذجان في مكانهما. قريبا، سيتمكن العملاء الذين لا يوجد معهم سوى GDAP (بدون DAP) من التمكن من الوصول إلى المنارة.
+- امتيازات المسؤول المفوض (DAP) أو امتيازات المسؤول المفوض (GDAP) الخاصة ب MSP 
+- ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 واحد على الأقل 
+- أقل من 1000 مستخدم مرخص  
 
 ## <a name="requirements-for-enablingdevice-management"></a>متطلبات تمكين إدارة الأجهزة
 
 لعرض أجهزة مستأجر العميل على صفحات إدارة الأجهزة، يجب أن يقوم MSP بما يلي:
 
 - تسجيل جميع أجهزة العملاء في إدارة نقاط النهاية من Microsoft (MEM).لمزيد من المعلومات، راجع [تسجيل الأجهزة في Microsoft Intune](/mem/intune/enrollment/).
-- تعيين سياسات التوافق إلى جميع أجهزة العملاء.لمزيد من المعلومات، راجع [إنشاء نهج توافق في Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+- تعيين سياسات التوافق إلى جميع أجهزة العملاء.لمزيد من المعلومات، راجع [إنشاء نهج توافق في Microsoft Intune](/mem/intune/protect/create-compliance-policy). 
 
-## <a name="requirements-for-enabling-usermanagement"></a>متطلبات تمكين إدارة المستخدمين
+## <a name="requirements-for-enabling-usermanagement"></a>متطلبات تمكين إدارة المستخدمين 
 
-لكي تظهر بيانات العملاء في تقارير على صفحات إدارة المستخدمين، بما في ذلك المستخدمون الخطرون والمصادقة متعددة العوامل وإعادة تعيين كلمة المرور، يجب أن يكون لدى مستأجري العملاء تراخيص Azure Active Directory Premium P1 أو إصدار لاحق. يتم تضمين azure AD Premium P1 مع Microsoft 365 Business Premium Microsoft 365 E3.
+لكي تظهر بيانات العملاء في تقارير على صفحات إدارة المستخدمين، بما في ذلك المستخدمون الخطرون والمصادقة متعددة العوامل وإعادة تعيين كلمة المرور، يجب أن يكون لدى مستأجري العملاء تراخيص Azure Active Directory Premium P1 أو إصدار لاحق. يتم تضمين azure AD Premium P1 مع Microsoft 365 Business Premium Microsoft 365 E3.   
 
-## <a name="requirements-for-enablingthreat-management"></a>متطلبات تمكين إدارة المخاطر
+## <a name="requirements-for-enablingthreat-management"></a>متطلبات تمكين إدارة المخاطر 
 
 لعرض أجهزة مستأجري العملاء والتهديدات على صفحات إدارة المخاطر، يجب تسجيل جميع أجهزة مستأجري العملاء في إدارة نقاط النهاية من Microsoft (MEM) وحمايتهم عن طريق تشغيل برنامج الحماية من الفيروسات من Microsoft Defender.  
 
@@ -56,8 +54,8 @@ Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخد
 
 برنامج الحماية من الفيروسات من Microsoft Defender جزء من نظام Windows، كما أنه يتم تمكينه بشكل افتراضي على الأجهزة التي تعمل Windows 10.  
 
-> [!NOTE]
-> إذا كنت تستخدم حلا من برامج الحماية من الفيروسات غير Microsoft وليس برنامج الحماية من الفيروسات من Microsoft Defender، برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا. عندما تقوم ب إلغاء تثبيت حل مكافحة الفيروسات برنامج الحماية من الفيروسات من Microsoft Defender Microsoft، يتم تنشيط البرنامج تلقائيا لحماية Windows من التهديدات.
+> [!NOTE] 
+> إذا كنت تستخدم حلا من برامج الحماية من الفيروسات غير Microsoft وليس برنامج الحماية من الفيروسات من Microsoft Defender، برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا. عندما تقوم ب إلغاء تثبيت حل مكافحة الفيروسات برنامج الحماية من الفيروسات من Microsoft Defender Microsoft، يتم تنشيط البرنامج تلقائيا لحماية Windows من التهديدات.    
 
 ## <a name="related-content"></a>المحتوى ذي الصلة
 

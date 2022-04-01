@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 2005ead772399f26c3537ac8bf36f6b0810b07fb
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 18fc51f37e66cd3212ea1e5af22ed4389d025a05
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63566497"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755088"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>مرجع إعدادات قابلة للتكوين - سطح المكتب المدار من Microsoft
 
@@ -150,6 +150,7 @@ ms.locfileid: "63566497"
 
 - يجب أن يكون عنوان خادم صالحا رقم المنفذ.
 - يجب أن تكون عناوين URL موقع http صالحا.
+- يجب أن تقتصر استثناءات الوكيل على 2064 حرفا كحد أقصى. يشمل ذلك عناوين سطح المكتب المدارة من Microsoft المضافة.
 
 ### <a name="customize-and-deploy-proxies"></a>تخصيص ونشر وكلاء
 

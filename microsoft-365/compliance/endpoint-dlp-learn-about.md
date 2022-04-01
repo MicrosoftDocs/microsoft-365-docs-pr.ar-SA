@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 منع فقدان بيانات نقطة النهاية إلى توسيع مراقبة أنشطة الملفات والإجراءات المتعلقة بالحماية لتلك الملفات إلى نقاط النهاية. تظهر الملفات في حلول التوافق '
-ms.openlocfilehash: 83608f005b9024583142515094b2d958b8f5d915
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 031d1d80dd6700939c9d73cc82350b7abc30c132
+ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63571154"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64520772"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>التعرف على Microsoft 365 فقدان بيانات نقطة النهاية
 
@@ -33,7 +33,7 @@ ms.locfileid: "63571154"
 تعمل عملية منع فقدان بيانات نقطة **النهاية (** DLP) على توسيع قدرات مراقبة النشاط والحماية ل DLP إلى العناصر الحساسة المخزنة فعليا على أجهزة Windows 10 و Windows 11 و macOS (Catalina 10.15 والأعلى). بمجرد أن يتم االأجهزة في حلول توافق Microsoft 365، تظهر المعلومات حول ما يفعله المستخدمون بالعناصر الحساسة في مستكشف النشاط، كما يمكنك فرض إجراءات [](data-classification-activity-explorer.md) الحماية على هذه العناصر عبر سياسات [DLP](create-test-tune-dlp-policy.md).
 
 > [!TIP]
-> إذا كنت تبحث عن التحكم في الجهاز للتخزين القابل للإزالة، فاطلع على [Microsoft Defender للتحكم](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control) في الوصول إلى التخزين القابل للإزالة لنقطة النهاية.
+> إذا كنت تبحث عن التحكم في الجهاز للتخزين القابل للإزالة، فاطلع على Microsoft Defender لنقطة النهاية التحكم في الوصول [إلى التخزين القابل للإزالة للجهاز](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 > [!NOTE]
 > في Microsoft 365 التوافق، يتم إجراء تقييم نهج DLP للعناصر الحساسة مركزيا، لذلك لا توجد فترة زمنية طويلة لتوزيع النهج وتحديثات النهج على أجهزة فردية. عند تحديث نهج في مركز التوافق، يستغرق الأمر عادة ساعة تقريبا لمزامنة تلك التحديثات عبر الخدمة. بمجرد مزامنة تحديثات النهج، يتم إعادة تقييم العناصر الموجودة على الأجهزة المستهدفة تلقائيا في المرة التالية التي يتم فيها الوصول إليها أو تعديلها.
@@ -124,8 +124,8 @@ ms.locfileid: "63571154"
 
 - برنامج نصي محلي (ما يصل إلى 10 أجهزة)
 - نهج المجموعة
-- System Center Configuration Manager (الإصدار 1610 أو الإصدارات الأحدث)
-- إدارة/إدارة أجهزة المحمول Microsoft Intune
+- مركز Configuration Manager (الإصدار 1610 أو الإصدارات الأحدث)
+- الأجهزة إدارة الجهاز/Microsoft Intune
 - برامج VDI النصية لللآلات غير الثابتة
 
 > [!div class="mx-imgBorder"]
@@ -133,7 +133,7 @@ ms.locfileid: "63571154"
 
  استخدم الإجراءات في بدء استخدام Microsoft 365 [Endpoint DLP](endpoint-dlp-getting-started.md) للأجهزة المجهزة.
 
-إذا كان لديك أجهزة مجهزه من خلال [Microsoft Defender ل Endpoint](/windows/security/threat-protection/)، سوف تظهر هذه الأجهزة تلقائيا في قائمة الأجهزة. يمكنك تشغيل **مراقبة الجهاز** لاستخدام نقطة النهاية DLP.
+إذا كان لديك أجهزة مجهزه [من خلال Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/)، سوف تظهر هذه الأجهزة تلقائيا في قائمة الأجهزة. يمكنك تشغيل **مراقبة الجهاز** لاستخدام نقطة النهاية DLP.
 
 > [!div class="mx-imgBorder"]
 > ![قائمة الأجهزة المدارة.](../media/endpoint-dlp-learn-about-2-device-list.png)
@@ -179,7 +179,7 @@ ms.locfileid: "63571154"
 - اسم الجهاز
 - نوع موقع الوجهة
 - التطبيق الذي ينفذ النسخة
-- Microsoft Defender لمحدد جهاز نقطة النهاية (إذا كان ذلك قابلا للتطبيق)
+- Microsoft Defender لنقطة النهاية جهاز (إذا كان ذلك قابلا للتطبيق)
 - الشركة المصنعة لجهاز وسائط قابل للإزالة
 - نموذج جهاز وسائط قابل للإزالة
 - الرقم التسلسلي لجهاز وسائط قابل للإزالة
@@ -192,7 +192,8 @@ ms.locfileid: "63571154"
 الآن وقد تعرفت على نقطة النهاية DLP، الخطوات التالية هي:
 
 1. [عرض Windows 10 أو Windows 11 الأجهزة في Microsoft 365 عامة](device-onboarding-overview.md)
-1. [أجهزة macOS المجهزة في Microsoft 365 عامة (معاينة)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+1. [أجهزة macOS المجهزة في Microsoft 365 عامة (معاينة)](device-onboarding-macos-overview.md)
+1. [تكوين إعدادات منع فقدان البيانات في نقطة النهاية](dlp-configure-endpoint-settings.md)
 1. [استخدام منع فقدان بيانات نقطة نهاية Microsoft](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>راجع أيضًا

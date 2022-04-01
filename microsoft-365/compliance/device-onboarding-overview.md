@@ -19,27 +19,27 @@ ms.collection:
 search.appverid:
 - MET150
 description: أجهزة Windows 10 Windows 11 في Microsoft 365
-ms.openlocfilehash: dc2324f9ab8105d51730071f84397c8648c9a9de
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: ea1038554349b6c035c52bd3d3429d71d7d866bc
+ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63574697"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64387122"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>عرض Windows 10 الأجهزة Windows 11 في Microsoft 365 عامة
 
 **ينطبق على:**
 
-- [Microsoft 365 فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
+- [منع فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
 - [إدارة مخاطر Insider](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-Microsoft 365 منع فقدان بيانات نقطة النهاية (DLP) وإدارة مخاطر insider إلى أن يتم ا متنبأ أجهزة Windows 10 Windows و Windows 11 في الخدمة بحيث يمكنهم إرسال بيانات المراقبة إلى الخدمات.
+يتطلب منع فقدان بيانات نقطة النهاية (DLP) وإدارة مخاطر insider أن Windows 10 Windows و Windows 11 أجهزة في الخدمة بحيث يمكنهم إرسال بيانات المراقبة إلى الخدمات.
  
-Microsoft 365 DLP لنقطة النهاية بمراقبة أجهزة Windows 10 أو Windows 11 والكشف عن وقت استخدام العناصر الحساسة ومشاركتها. يوفر لك ذلك إمكانية الرؤية والتحكم التي تحتاج إليها لضمان استخدامها وحمايتها بشكل صحيح، وللمساعدة على منع السلوك الخطر الذي قد يؤدي إلى اختراقها. لمزيد من المعلومات حول كل عروض DLP من Microsoft، راجع [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md). لمعرفة المزيد حول نقطة النهاية DLP، راجع [التعرف على منع فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md).
+تسمح لك نقطة النهاية DLP بمراقبة أجهزة Windows 10 أو Windows 11 والكشف عن وقت استخدام العناصر الحساسة ومشاركتها. يوفر لك ذلك إمكانية الرؤية والتحكم التي تحتاج إليها لضمان استخدامها وحمايتها بشكل صحيح، وللمساعدة على منع السلوك الخطر الذي قد يؤدي إلى اختراقها. لمزيد من المعلومات حول كل عروض DLP من Microsoft، راجع [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md). لمعرفة المزيد حول نقطة النهاية DLP، راجع [التعرف على منع فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md).
 
 تستخدم إدارة مخاطر Insider الاتساع الكامل للخدمة ومؤشرات 3 من جهة خارجية لمساعدتك على تحديد نشاط المستخدم الخطر وفرزه والعمل عليه بسرعة. باستخدام السجلات من Microsoft 365 و Microsoft Graph، تسمح لك إدارة مخاطر insider بتحديد سياسات معينة لتحديد مؤشرات المخاطر واتخاذ إجراء للحد من هذه المخاطر. لمزيد من المعلومات، راجع [التعرف على إدارة مخاطر insider في Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365).
 
-يتم مشاركة تشغيل الجهاز عبر Microsoft 365 و Microsoft Defender ل Endpoint (MDE). إذا قمت بالفعل بضم الأجهزة إلى MDE، ستظهر في قائمة الأجهزة المدارة ولا يلزم اتخاذ أي خطوات إضافية لضم هذه الأجهزة المحددة. كما أن أجهزة التكهين في مركز التوافق تعمل أيضا على اجهزتها في MDE.
+يتم مشاركة تشغيل الجهاز عبر Microsoft 365 Microsoft Defender لنقطة النهاية (MDE). إذا قمت بالفعل بضم الأجهزة إلى MDE، ستظهر في قائمة الأجهزة المدارة ولا يلزم اتخاذ أي خطوات إضافية لضم هذه الأجهزة المحددة. كما أن أجهزة التكهين في مركز التوافق تعمل أيضا على اجهزتها في MDE.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
@@ -78,7 +78,7 @@ Microsoft 365 DLP لنقطة النهاية بمراقبة أجهزة Windows 10
 
 1. يجب تشغيل Windows 10 x64 1809 أو أي وقت لاحق أو Windows 11.
 
-2. إصدار عميل مكافحة البرامج الضارة هو 4.18.2110 أو إصدار أحدث. تحقق من الإصدار الحالي عن طريق أمن Windows التطبيق، وحدد الإعدادات، ثم حدد حول. يتم سرد رقم الإصدار ضمن إصدار عميل مكافحة البرامج الضارة. قم بتحديث إصدار عميل مكافحة البرامج الضارة الأخير عن طريق تثبيت Windows KB4052623.
+2. إصدار عميل مكافحة البرامج الضارة هو 4.18.2110 أو إصدار أحدث. تحقق من الإصدار الحالي عن طريق أمن Windows التطبيق، وحدد الإعدادات، ثم حدد حول. يتم سرد رقم الإصدار ضمن إصدار عميل مكافحة البرامج الضارة. قم بتحديث إصدار عميل مكافحة البرامج الضارة الأخير Windows Update KB4052623.
 
    > [!NOTE]
    > لا أمن Windows أي من المكونات النشطة، ولكن يجب تمكين جهاز عرض الحماية والسلوك في [](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)الوقت الحقيقي.
@@ -103,7 +103,7 @@ Microsoft 365 DLP لنقطة النهاية بمراقبة أجهزة Windows 10
    > - إذا كنت تقوم بتشغيل Office 365 - يجب 4577063 KB.
    > - إذا كنت على التحديث الشهري للمؤسسة Microsoft 365 Apps الإصدارات 2004-2008، يجب التحديث إلى الإصدار 2009 أو الإصدارات الأحدث. راجع [تحديث محفوظات Microsoft 365 Apps (مدرجة حسب التاريخ)](/officeupdates/update-history-microsoft365-apps-by-date) للإصدارات الحالية. لمعرفة المزيد حول المشكلة المعروفة، راجع Office مجموعة ملاحظات الإصدارات الخاصة [بإطلاقات القناة الحالية في 2020](/officeupdates/current-channel#version-2010-october-27).
 
-6. إذا كانت لديك نقاط نهاية تستخدم وكيل جهاز للاتصال بالإنترنت، فاتبع الإجراءات الواردة في تكوين إعدادات وكيل الجهاز والاتصال بالإنترنت [لحماية المعلومات](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
+6. إذا كانت لديك نقاط نهاية تستخدم وكيل جهاز للاتصال بالإنترنت، فاتبع الإجراءات في تكوين إعدادات اتصال وكيل الجهاز [والإنترنت](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) حماية البيانات.
 
 ## <a name="onboarding-windows-10-or-windows-11-devices"></a>أجهزة Windows 10 أو أجهزة Windows 11
 
@@ -111,7 +111,7 @@ Microsoft 365 DLP لنقطة النهاية بمراقبة أجهزة Windows 10
 
 عندما تريد أن تقوم بتركب الأجهزة التي لم يتم تشغيلها بعد، يمكنك تنزيل البرنامج النصي المناسب ونشره على تلك الأجهزة. اتبع إجراءات تشغيل الجهاز أدناه.
 
-إذا كان لديك بالفعل أجهزة مجهزه في [Microsoft Defender ل Endpoint](/windows/security/threat-protection/)، ستظهر بالفعل في قائمة الأجهزة المدارة.
+إذا كان لديك بالفعل أجهزة مجهزه [Microsoft Defender لنقطة النهاية، ستظهر](/windows/security/threat-protection/) بالفعل في قائمة الأجهزة المدارة.
 
 في سيناريو النشر هذا، سوف تقوم Windows 10 أو Windows 11 الأجهزة التي لم يتم اجهزتك بعد.
 
@@ -120,15 +120,12 @@ Microsoft 365 DLP لنقطة النهاية بمراقبة أجهزة Windows 10
    > [!NOTE]
    > على الرغم من أن تمكين تشغيل الجهاز يستغرق عادة حوالي 60 ثانية، يرجى السماح بما يصل إلى 30 دقيقة قبل التفاعل مع دعم Microsoft.
 
-2. افتح صفحة إعدادات مركز التوافق واختر **أجهزة Onboard**.
-
-   > [!div class="mx-imgBorder"]
-   > ![تمكين إدارة الأجهزة.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. افتح صفحة إعدادات مركز التوافق واختر **تشغيل Windows الأجهزة**.
 
 3. اختر **إدارة الأجهزة** لفتح **قائمة** الأجهزة. 
 
 > [!NOTE]
-> إذا قمت مسبقا بنشر Microsoft Defender ل Endpoint، سيتم إدراج جميع الأجهزة التي تم اضماها أثناء هذه العملية في **قائمة الأجهزة** . لن تحتاج إلى ا متنها مرة أخرى.
+> إذا قمت مسبقا بنشر Microsoft Defender لنقطة النهاية، سيتم إدراج جميع الأجهزة التي تم إدراجها أثناء هذه العملية في **قائمة** الأجهزة. لن تحتاج إلى ا متنها مرة أخرى.
 
 4. اختر **"التكهين** " لبدء عملية التكهين.
 
@@ -138,9 +135,9 @@ Microsoft 365 DLP لنقطة النهاية بمراقبة أجهزة Windows 10
 
 الموضوع | الوصف
 :---|:---
-[أجهزة Windows 10 أو 11 جهازا باستخدام "نهج المجموعة"](device-onboarding-gp.md) | استخدم نهج المجموعة لنشر حزمة التكوين على الأجهزة.
+[أجهزة Windows 10 أو 11 جهازا تستخدم نهج المجموعة](device-onboarding-gp.md) | استخدم نهج المجموعة لنشر حزمة التكوين على الأجهزة.
 [أجهزة Windows 10 أو 11 جهازا تستخدم Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | يمكنك استخدام Microsoft Endpoint Configuration Manager (الفرع الحالي) الإصدار 1606 أو Microsoft Endpoint Configuration Manager (الفرع الحالي) الإصدار 1602 أو إصدار سابق لنشر حزمة التكوين على الأجهزة.
-[أجهزة Windows 10 أو 11 جهازا باستخدام أدوات إدارة أجهزة المحمول](device-onboarding-mdm.md) | استخدم أدوات إدارة أجهزة المحمول أو Microsoft Intune لنشر حزمة التكوين على الجهاز.
+[أجهزة Windows 10 أو 11 جهازا باستخدام إدارة الجهاز المحمول](device-onboarding-mdm.md) | استخدم أدوات إدارة الجهاز أو Microsoft Intune المحمول لنشر حزمة التكوين على الجهاز.
 [أجهزة Windows 10 أو 11 جهازا باستخدام برنامج نصي محلي](device-onboarding-script.md) | تعرف على كيفية استخدام البرنامج النصي المحلي لنشر حزمة التكوين على نقاط النهاية.
 [أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة](device-onboarding-vdi.md) | تعرف على كيفية استخدام حزمة التكوين لتكوين أجهزة VDI.
 

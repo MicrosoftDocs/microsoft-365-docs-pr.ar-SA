@@ -1,0 +1,44 @@
+- name: وثائق قاعدة الاختبار
+  href: index.yml
+- name: نظرة عامة
+  items:
+    - name: ما هو Test Base؟
+      href: overview.md
+- name: Quickstarts
+  items:
+    - name: إنشاء حساب أساس اختباري
+      href: createAccount.md
+    - name: إنشاء حزمة
+      href: buildpackage.md
+    - name: تحميل حزمة
+      href: uploadApplication.md
+    - name: Upload الثنائيات & التبعيات
+      href: binaries.md
+    - name: تعيين مهام الاختبار
+      href: testtask.md
+    - name: تعيين خيارات الاختبار
+      href: testoptions.md
+    - name: مراجعة
+      href: review.md
+    - name: إرشادات الحزمة
+      href: contentguideline.md
+    - name: قواعد التطبيق/الاختبار
+      href: rules.md
+- name: أدلة إرشادية
+  items:
+    - name: اختبار تطبيق الخادم
+      href: server.md
+    - name: الاختبار الوظيفي
+      href: functional.md
+    - name: التحقق من صحة تحديث الميزة
+      href: feature.md
+    - name: تحليل انحدار الذاكرة
+      href: memory.md
+    - name: تحليل انحدار CPU
+      href: cpu.md
+    - name: SDK & API
+      href: sdkapi.md
+- name: المرجع
+  items:
+    - name: الأسئلة المتداولة
+      href: faq.md

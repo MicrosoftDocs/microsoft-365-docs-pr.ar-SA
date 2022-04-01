@@ -21,16 +21,16 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 5b684a1ead5638a787413d7470cb103cbe55e7df
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 98d2ee2394e4384fbf8d7b2b3832d11a847b8521
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775511"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755160"
 ---
 # <a name="step-1-create-the-microsoft-365-defender-evaluation-environment-for-greater-cyber-security"></a>الخطوة 1. إنشاء Microsoft 365 Defender التقييم لمزيد من الأمان عبر الإنترنت
 
-يمكنك التعرف على حل Microsoft Defender XDR هذا في الخطوات التي يتم توزيعها عبر باقي هذه السلسلة:
+يمكنك التعرف على هذا الحل Microsoft Defender XDR في الخطوات التي يتم توزيعها خلال باقي هذه السلسلة:
 
 - [كيفية إنشاء البيئة](eval-create-eval-environment.md)
 - إعداد أو التعرف على كل تقنية من تقنيات Microsoft XDR هذه
@@ -44,7 +44,7 @@ ms.locfileid: "63775511"
 
 يتم تشغيل الخطوات في هذه السلسلة بشكل شامل، من التعرف على المفاهيم Microsoft 365 Defender XDR إلى بنى هذه السلسلة، ونهاية بيئة التقييم إلى الإنتاج.
 
-هناك طريقتان شائعتان للقيام بذلك الخطوة التالية في التقييم. تفترض هذه السلسلة أن لديك Microsoft 365 مستأجر وتنشيط تراخيص الإصدار التجريبي من E5 لتقييم Microsoft 365 Defender *في البيئة الحالية*. سيترك لك التقييم المواظبة على الاحتفاظ بأي أساليب أمان عند شراء التراخيص بعد فترة التقييم.
+هناك طريقتان شائعتان للقيام بذلك الخطوة التالية في التقييم. تفترض هذه السلسلة أن لديك Microsoft 365 مستأجر، وستنشيط تراخيص الإصدار التجريبي من E5 لتقييم Microsoft 365 Defender *في البيئة الحالية*. سيترك لك التقييم المواظبة على الاحتفاظ بأي أساليب أمان عند شراء التراخيص بعد فترة التقييم.
 
 والثانية هي إعداد [بيئة Microsoft 365 Defender تجريبية](setup-m365deval.md) لغرض التقييم. تجدر الإشارة إلى أنه قد لا يكون لديها العديد من الإشارات الحقيقية من العمل أثناء الاختبار.
 

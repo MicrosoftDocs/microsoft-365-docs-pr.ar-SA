@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 06952be112f4eb28867a4a0cd4bffbee0c664b5c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 96db917808094487039a13740cba80ad751f062f
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63569802"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755515"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>استخدام الاستعلامات المشتركة في البحث المتقدم
 
@@ -38,7 +38,7 @@ ms.locfileid: "63569802"
 
 [يمكن مشاركة استعلامات](advanced-hunting-overview.md) الصيد المتقدمة بين المستخدمين في المؤسسة نفسها. يمكنك أيضا العثور على الاستعلامات المشتركة بشكل عام على GitHub. تسمح لك هذه الاستعلامات بمتابعة سيناريوهات معينة خاصة بالصيد دون الحاجة إلى كتابة الاستعلامات من البداية.
 
-![صورة للاستعلامات المشتركة.](../../media/shared-query-1.png)
+:::image type="content" source="../../media/shared-query-1.png" alt-text="معلومات الاستعلامات المشتركة في مدخل Microsoft 365 Defender" lightbox="../../media/shared-query-1.png":::
 
 ## <a name="save-modify-and-share-a-query"></a>حفظ استعلام وتعديله ومشاركته
 يمكنك حفظ استعلام جديد أو موجود بحيث يمكن الوصول إليه من قبلك فقط أو مشاركته مع مستخدمين آخرين في مؤسستك. 
@@ -49,7 +49,7 @@ ms.locfileid: "63569802"
     
 3. أدخل اسما للاستعلام. 
 
-   ![صورة لحفظ استعلام.](../../media/shared-query-2.png)
+   :::image type="content" source="../../media/shared-query-2.png" alt-text="الاستعلام الجديد الذي على وشك أن يتم حفظه في مدخل Microsoft 365 Defender" lightbox="../../media/shared-query-2.png":::
 
 4. حدد المجلد الذي تريد حفظ الاستعلام فيه.
     - **الاستعلامات المشتركة** — المشتركة لجميع المستخدمين في مؤسستك
@@ -60,7 +60,7 @@ ms.locfileid: "63569802"
 ## <a name="delete-or-rename-a-query"></a>حذف استعلام أو إعادة تسميته
 1. حدد النقاط الثلاث إلى يمين الاستعلام الذي تريد إعادة تسميته أو حذفه.
 
-    ![صورة لاستعلام الحذف.](../../media/shared-query-3.png)
+    :::image type="content" source="../../media/shared-query-3.png" alt-text="خيارات استعلام مشترك في صفحة &quot;الصيد المتقدم&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/shared-query-3.png":::
 
 2. حدد **حذف** وأكد الحذف. أو حدد **إعادة تسمية** وأقدم اسما جديدا للاستعلام.
 

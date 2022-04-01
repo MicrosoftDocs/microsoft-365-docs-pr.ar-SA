@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: فهم الإعدادات التي يمكنك تكوينها في نهج استبقاء أو نهج تسمية استبقاء للاحتفاظ بما تريده والتخلص مما لا تريده.
-ms.openlocfilehash: 3b2833b2b6293845379f9f5aeffd3bd46610e2a8
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 2fd9f2655b13d8c9ac829108d3563a6a4322f3bc
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63713064"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63579949"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>الإعدادات الشائعة لنهج الاستبقاء ونهج تسميات الاستبقاء
 
@@ -59,7 +59,7 @@ ms.locfileid: "63713064"
 |:-----|:-----|
 |**المستخدمون** - ينطبق على:  <br/> - Exchange الإلكتروني <br/> - OneDrive الحسابات <br/> - Teams الدردشات <br/> - Teams رسائل القناة الخاصة <br/> - Yammer المستخدمين| الاسم الأول <br/> اسم العائلة <br/>اسم العرض <br/> الملقب بالوظيفة <br/> القسم <br/> Office <br/>عنوان الشارع <br/> المدينة <br/>الولاية أو المقاطعة <br/>الرمز البريدي <br/> البلد أو المنطقة <br/> عناوين البريد الإلكتروني <br/> الاسم المستعار <br/> Exchange السمات المخصصة: CustomAttribute1 - CustomAttribute15|
 |**SharePoint المواقع** - تنطبق على:  <br/> - SharePoint ويب <br/> - OneDrive الحسابات |URL الموقع <br/>اسم الموقع <br/> SharePoint المخصصة: RefinableString00 - RefinableString99 |
-|**Microsoft 365 المجموعات** - تنطبق على:  <br/> - Microsoft 365 المجموعات <br/> - Teams رسائل القناة (القياسية والمشتركة) <br/> - Yammer رسائل المجتمع |الاسم <br/> اسم العرض <br/> الوصف <br/> عناوين البريد الإلكتروني <br/> الاسم المستعار <br/> Exchange السمات المخصصة: CustomAttribute1 - CustomAttribute15 |
+|**Microsoft 365 المجموعات** - تنطبق على:  <br/> - Microsoft 365 المجموعات <br/> - Teams قنوات جديدة <br/> - Yammer رسائل المجتمع |الاسم <br/> اسم العرض <br/> الوصف <br/> عناوين البريد الإلكتروني <br/> الاسم المستعار <br/> Exchange السمات المخصصة: CustomAttribute1 - CustomAttribute15 |
 
 تستند أسماء الخصائص للمواقع إلى الخصائص المدارة SharePoint الموقع. للحصول على معلومات حول السمات المخصصة، راجع استخدام خصائص الموقع SharePoint لتطبيق الاستبقاء مع نطاقات النهج Microsoft 365 مع [نطاقات النهج التكييفية](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 

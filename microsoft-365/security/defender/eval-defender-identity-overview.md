@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2438e7690230af88eae72e0864184e771bdd4135
-ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
+ms.openlocfilehash: d77bb5f61127475c8c7c00e58af6c19013aaffe2
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63570775"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755416"
 ---
 # <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>الخطوة 2. تقييم نظرة عامة حول Microsoft Defender for Identity
 
@@ -43,14 +43,12 @@ ms.locfileid: "63570775"
 
 استخدم الخطوات أدناه لتمكين Microsoft Defender for Identity وتدياره.
 
-![خطوات لإضافة Microsoft Defender for Identity إلى بيئة تقييم Defender.](../../media/defender/m365-defender-identity-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-eval-steps.png" alt-text="خطوات إضافة Microsoft Defender for Identity إلى بيئة تقييم Microsoft Defender" lightbox="../../media/defender/m365-defender-identity-eval-steps.png":::
 
 يصف هذا الجدول الخطوات في الرسم التوضيحي.
 
-| |الخطوة  |الوصف  |
+| الرقم التسلسلي|الخطوة  |الوصف  |
 |---------|---------|---------|
 |1|[مراجعة متطلبات البنية والمفاهيم الأساسية](eval-defender-identity-architecture.md)    | افهم بنية Defender for Identity وتأكد من أن بيئتك تلبي المتطلبات الأساسية للهندسة.       |
 |2|[تمكين بيئة التقييم](eval-defender-identity-enable-eval.md)     |   اتبع الخطوات لإعداد بيئة التقييم.      |
 |3|[إعداد التجربة](eval-defender-identity-pilot.md)     |   تعرف على إعدادات معايير بيئة هويتك وجرب البرامج التعليمية ل Defender for Identity.     |
-||||
-

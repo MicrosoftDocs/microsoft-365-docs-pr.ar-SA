@@ -1,6 +1,6 @@
 ---
-title: دفق أحداث Microsoft Defender لنقطة النهاية إلى حساب التخزين
-description: تعرف على كيفية تكوين Microsoft Defender لنقطة النهاية لبث أحداث "البحث المتقدم" إلى حساب التخزين.
+title: دفق Microsoft Defender لنقطة النهاية الأحداث إلى حساب التخزين
+description: تعرف على كيفية تكوين Microsoft Defender لنقطة النهاية لبث أحداث "الصيد المتقدم" إلى حساب التخزين.
 keywords: تصدير البيانات الخام، دفق API، API، مراكز الأحداث، تخزين Azure، حساب التخزين، البحث المتقدم، مشاركة البيانات الخام
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9db98456cc971b4ac4179cd4f3460dfe2137b91
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 77220c8e34cfcbcdb6b1ca527786696bb67e5d79
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "63573303"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465764"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>تكوين Microsoft Defender لنقطة النهاية لبث أحداث "الصيد المتقدم" إلى حساب التخزين
+# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>تكوين Microsoft Defender لنقطة النهاية دفق أحداث "الصيد المتقدم" إلى حساب التخزين
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
@@ -52,7 +52,7 @@ ms.locfileid: "63573303"
 
 6. اكتب " **مورد حساب التخزين" الخاص بك**. للحصول على "مورد حساب التخزين"، انتقل إلى صفحة حساب التخزين على علامة التبويب خصائص مدخل [Azure](https://ms.portal.azure.com/) \> \> انسخ النص ضمن "مورد حساب التخزين **"**:
 
-   :::image type="content" alt-text="صورة لمورد مركز الحدث ID1." source="images/storage-account-resource-id.png" lightbox="images/storage-account-resource-id.png":::
+   :::image type="content" source="images/storage-account-resource-id.png" alt-text="مراكز الأحداث مع &quot;مورد الم ID1&quot;" lightbox="images/storage-account-resource-id.png":::
 
 7. اختر الأحداث التي تريد دفقها وانقر فوق **حفظ**.
 
@@ -60,7 +60,7 @@ ms.locfileid: "63573303"
 
 - سيتم إنشاء حاوية blob لكل نوع حدث:
 
-  :::image type="content" alt-text="صورة لمورد مركز الحدث ID2." source="images/storage-account-event-schema.png" lightbox="images/storage-account-event-schema.png":::
+  :::image type="content" source="images/storage-account-event-schema.png" alt-text="مراكز الأحداث مع &quot;مورد الم ID2&quot;" lightbox="images/storage-account-event-schema.png":::
 
 - مخطط كل صف في blob هو JSON التالي:
 
@@ -77,7 +77,7 @@ ms.locfileid: "63573303"
 
 - يحتوي كل صف على اسم الحدث والوقت الذي تلقى فيه Defender لنقطة النهاية الحدث والمستأجر الذي ينتمي إليه (ستحصل فقط على الأحداث من المستأجر)، والحدث بتنسيق JSON في خاصية تسمى "الخصائص".
 
-- لمزيد من المعلومات حول مخطط أحداث نقطة النهاية ل Microsoft Defender، راجع [نظرة عامة حول "الصيد المتقدم](advanced-hunting-overview.md)".
+- لمزيد من المعلومات حول مخطط أحداث Microsoft Defender لنقطة النهاية، راجع [نظرة عامة حول "الصيد المتقدم](advanced-hunting-overview.md)".
 
 - في البحث المتقدم، يحتوي جدول **DeviceInfo** على عمود يسمى **MachineGroup** يحتوي على مجموعة الجهاز. هنا سيتم تزيين كل حدث بهذا العمود أيضا. لمزيد [من المعلومات،](machine-groups.md) راجع مجموعات الأجهزة.
 
@@ -97,11 +97,11 @@ ms.locfileid: "63573303"
 
 - فيما يلي مثال لحدث معلومات الجهاز:
 
-  ![صورة لمورد مركز الحدث ID3.](images/data-types-mapping-query.png)
+  :::image type="content" source="images/data-types-mapping-query.png" alt-text="مراكز الأحداث مع &quot;مورد ID3&quot;" lightbox="images/data-types-mapping-query.png":::
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
 - [نظرة عامة حول "الصيد المتقدم"](advanced-hunting-overview.md)
-- [Microsoft Defender ل API لنقطة النهاية المتدفقة](raw-data-export.md)
-- [دفق أحداث Microsoft Defender لنقطة النهاية إلى حساب تخزين Azure](raw-data-export-storage.md)
+- [Microsoft Defender لنقطة النهاية API للتدفق](raw-data-export.md)
+- [دفق Microsoft Defender لنقطة النهاية الأحداث إلى حساب تخزين Azure](raw-data-export-storage.md)
 - [وثائق حساب تخزين Azure](/azure/storage/common/storage-account-overview)

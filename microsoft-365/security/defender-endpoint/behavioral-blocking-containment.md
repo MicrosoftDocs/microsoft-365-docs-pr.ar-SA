@@ -1,7 +1,7 @@
 ---
 title: الحظر السلوكي والاحتواء
 description: تعرف على قدرات الحظر والاحتواء السلوكية في Microsoft Defender لنقطة النهاية
-keywords: Microsoft Defender ل Endpoint، الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر، حظر الوضع السلبي
+keywords: Microsoft Defender لنقطة النهاية، الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر، حظر الوضع السلبي
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -17,17 +17,17 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: bab766fd69b9227f10ba897040faff79e65b1722
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f919a93768699c573c87b938cea37a05955ab9f2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570163"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64465322"
 ---
 # <a name="behavioral-blocking-and-containment"></a>الحظر السلوكي والاحتواء
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -38,7 +38,7 @@ ms.locfileid: "63570163"
 
 يمكن أن تساعد قدرات الحظر والاحتواء السلوكية على تحديد التهديدات والتوقف عنها، استنادا إلى سلوكياتها وأشجار المعالجة حتى عندما يبدأ التهديد التنفيذ. تعمل ميزات حماية الجيل الكشف التلقائي والاستجابة على النقط النهائية و Defender لمكونات نقطة النهاية وميزاتها معا في قدرات الحظر والاحتواء السلوكية.
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="الحظر السلوكي والاحتواء.":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="الحظر السلوكي والاحتواء في مدخل MICROSOFT Defender ATP" lightbox="images/mdatp-next-gen-EDR-behavblockcontain.png":::
 
 تعمل قدرات الحظر والاحتواء السلوكية مع مكونات وميزات متعددة ل Defender for Endpoint لإيقاف الهجمات على الفور ومنع تقدم الهجمات.
 
@@ -52,7 +52,7 @@ ms.locfileid: "63570163"
 
 تعرض الصورة التالية مثالا عن تنبيه تم تشغيله بواسطة قدرات الحظر والاحتواء السلوكية:
 
-:::image type="content" alt-text="مثال على تنبيه من خلال الحظر السلوكي والاحتواء." source="images/blocked-behav-alert.png" lightbox="images/blocked-behav-alert.png":::
+:::image type="content" source="images/blocked-behav-alert.png" alt-text="صفحة التنبيهات مع تنبيه من خلال الحظر السلوكي والاحتواء" lightbox="images/blocked-behav-alert.png":::
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>مكونات الحظر والاحتواء السلوكية
 
@@ -62,7 +62,7 @@ ms.locfileid: "63570163"
 
 - **[يتم ملاحظة حظر تكرار الملاحظات](feedback-loop-blocking.md)** (يشار إليه أيضا بالحماية السريعة) من خلال الذكاء السلوكي. يتم إيقاف التهديدات ومنعها من التشغيل على نقاط نهاية أخرى. (يتم تمكين حظر تكرار الملاحظات بشكل افتراضي.)
 
-- **[يتم حظر](edr-in-block-mode.md)** الكشف عن نقاط النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) في وضع الحظر، يتم حظر التحف الضارة أو السلوكيات التي يتم ملاحظتها من خلال الحماية بعد الخرق، كما يتم احتواؤها. الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر حتى برنامج الحماية من الفيروسات من Microsoft Defender لم يكن هذا هو حل الحماية من الفيروسات الأساسي. (الكشف التلقائي والاستجابة على النقط النهائية الإعدادات في وضع الحظر بشكل افتراضي؛ يمكنك تشغيلها في Microsoft 365 Defender.)
+- **[يتم حظر](edr-in-block-mode.md)** الكشف عن نقاط النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) في وضع الحظر، يتم حظر التحف الضارة أو السلوكيات التي يتم ملاحظتها من خلال الحماية بعد الخرق، كما يتم احتواؤها. الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر حتى برنامج الحماية من الفيروسات من Microsoft Defender لم يكن هذا هو حل الحماية من الفيروسات الأساسي. (الكشف التلقائي والاستجابة على النقط النهائية الإعدادات في وضع الحظر بشكل افتراضي؛ يمكنك تشغيلها في وضع Microsoft 365 Defender.)
 
 توقع المزيد في مجال الحظر السلوكي والاحتواء، بينما تواصل Microsoft تحسين ميزات الحماية من المخاطر وإمكاناتها. لمعرفة ما تم التخطيط له و نشره الآن، تفضل [بزيارة Microsoft 365 التخطيط.](https://www.microsoft.com/microsoft-365/roadmap)
 
@@ -90,12 +90,12 @@ ms.locfileid: "63570163"
 
 تم ضبط نماذج تعلم الأجهزة المستندة إلى السلوك في Defender for Endpoint وأوقفت أساليب المهاجم في نقطتين في سلسلة الهجوم:
 
-- اكتشفت طبقة الحماية الأولى سلوك استغلال. تعرفت مصنفات تعلم الجهاز في السحابة على الخطر بشكل صحيح على أنه تم توجيه جهاز العميل على الفور لحظر الهجوم.
+- اكتشفت طبقة الحماية الأولى سلوك استغلال. حددت تصنيفات تعلم الأجهزة في السحابة الخطر بشكل صحيح على أنه تم توجيه جهاز العميل على الفور لحظر الهجوم.
 - طبقة الحماية الثانية، التي كانت تساعد على إيقاف حالات اجتياج الهجوم للطبقة الأولى، والكشف عن تجويف العملية، وتوقفت عن هذه العملية، وأزلت الملفات المقابلة (مثل Lokibot).
 
 أثناء اكتشاف الهجوم وتوقفه، تم تشغيل تنبيهات، مثل "تنبيه الوصول الأولي"، وظهرت في مدخل Microsoft 365 Defender[.](/microsoft-365/security/defender/microsoft-365-defender)
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="تنبيه الوصول الأولي في Microsoft 365 Defender المدخل.":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="تنبيه الوصول الأولي في مدخل Microsoft 365 Defender" lightbox="images/behavblockcontain-initialaccessalert.png":::
 
 يوضح هذا المثال كيف تضيف نماذج تعلم الأجهزة المستندة إلى السلوك في السحابة طبقات جديدة من الحماية من الهجمات، حتى بعد بدء تشغيلها.
 
@@ -103,13 +103,13 @@ ms.locfileid: "63570163"
 
 كما هو موضح في منشور المدونة الأخير، الحظر السلوكي والاحتواء [:](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection) تحويل البصريات إلى حماية، في يناير 2020، كشف Defender for Endpoint عن نشاط تصاعد الامتيازات على جهاز في مؤسسة. تم تشغيل تنبيه باسم "تصاعد الامتيازات المحتمل باستخدام ترحيل NTLM".
 
-:::image type="content" alt-text="تنبيه NTLM للبرامج الضارة للبطاطس القهورية." source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
+:::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="تنبيه NTLM للبرامج الضارة &quot;بطاطس الجويسية&quot;" lightbox="images/NTLMalertjuicypotato.png":::
 
 تبين أن الخطر هو برنامج ضار؛ لقد كانت أداة اختراق سيئة السمعة تسمى "بطاطس حلوة"، والتي يستخدمها المتطفلون لتصعيد الامتياز على جهاز ما، هو متغير جديد لم يتم رؤيته من قبل.
 
 بعد دقائق من تشغيل التنبيه، تم تحليل الملف، وتأكد أنه ضار. تم إيقاف العملية الخاصة بها وحظرها، كما هو موضح في الصورة التالية:
 
-:::image type="content" alt-text="تم حظر التحف." source="images/Artifactblockedjuicypotato.png" lightbox="images/Artifactblockedjuicypotato.png":::
+:::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="تم حظر التحف"  lightbox="images/Artifactblockedjuicypotato.png":::
 
 بعد دقائق قليلة من حظر الأداة الفنية، تم حظر مثيلات متعددة لنفس الملف على الجهاز نفسه، مما منع المزيد من المهاجمين أو البرامج الضارة الأخرى من النشر على الجهاز.
 
