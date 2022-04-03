@@ -1,5 +1,5 @@
 ---
-title: إدارة Microsoft Defender لحوادث نقطة النهاية
+title: إدارة Microsoft Defender لنقطة النهاية الأحداث
 description: يمكنك إدارة الأحداث من خلال تعيينها أو تحديث الحالة أو تعيين تصنيفها.
 keywords: الأحداث، والإدارة، والتعيين، الحالة، والتصنيف، والتنبيه الحقيقي، والتنبيه إلى خطأ
 search.product: eADQiWindows 10XVcnh
@@ -18,21 +18,21 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45c08c5a3c304a23b5761d96a4d9aceb1b4f1562
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a84f7ba72acb4caf3e229f0bed4d997e123cc7ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63572274"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466202"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-incidents"></a>إدارة Microsoft Defender لحوادث نقطة النهاية
+# <a name="manage-microsoft-defender-for-endpoint-incidents"></a>إدارة Microsoft Defender لنقطة النهاية الأحداث
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -42,8 +42,7 @@ ms.locfileid: "63572274"
 
 إن تحديد حادث من قائمة انتظار  "الأحداث" يحضر جزء إدارة الحوادث  حيث يمكنك فتح صفحة الحادث للحصول على التفاصيل.
 
-
-![صورة ل جزء إدارة الأحداث.](images/atp-incidents-mgt-pane-updated.png)
+:::image type="content" source="images/atp-incidents-mgt-pane-updated.png" alt-text="جزء إدارة الأحداث" lightbox="images/atp-incidents-mgt-pane-updated.png":::
 
 يمكنك تعيين أحداث لنفسك أو تغيير الحالة والتصنيف أو إعادة التسمية أو التعليق عليها لتعقب تقدمها.
 
@@ -55,8 +54,7 @@ ms.locfileid: "63572274"
 > ستحتفظ الأحداث التي كانت موجودة قبل طرح تسمية الأحداث التلقائية باسمها.
 >
 
-
-![صورة لصفحة تفاصيل الحادث.](images/atp-incident-details-updated.png)
+:::image type="content" source="images/atp-incident-details-updated.png" alt-text="صفحة تفاصيل الحادث" lightbox="images/atp-incident-details-updated.png":::
 
 ## <a name="assign-incidents"></a>تعيين أحداث
 إذا لم يتم تعيين حادث بعد، يمكنك تحديد **تعيين** إلي لتعيين الحادث لنفسك. ويفترض القيام بذلك ملكية ليس فقط للحادث، ولكن أيضا لكل التنبيهات المقترنة به.

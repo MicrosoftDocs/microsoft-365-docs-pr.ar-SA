@@ -1,7 +1,7 @@
 ---
 title: تنبيهات خدمة MRS
-ms.author: markjjo
-author: markjjo
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
 ms.date: ''
 audience: Admin
@@ -16,18 +16,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: استخدم تنبيهات خدمة ترحيل علب البريد لمراقبة التأخيرات في طلبات ترحيل علبة البريد في مؤسستك.
-ms.openlocfilehash: 25c569030bd5da914dc6eb7ec0e58ebadfe4d766
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 6b4b618bae602c7c06b2d6371e39cc865d0a3407
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63575188"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64567973"
 ---
 # <a name="service-alerts-for-mrs-source-delays-in-exchange-online-monitoring"></a>تنبيهات الخدمة لتأخيرات مصدر MRS في مراقبة Exchange Online
 
 تنبيهات خدمة تأخير مصدر علبة البريد (MRS) تعلمك بقيود التخزين أو مشاكل استخدام المعالجات العالية على جانب المستأجر (مصدر الترحيل) التي قد تؤخر ترحيل علب البريد في Microsoft 365 الخاصة بك. تتضمن تنبيهات الخدمة هذه أيضا ارتباطات إلى موارد Microsoft لمساعدتك على حل هذه المشاكل.
 
-يتم عرض تنبيهات الخدمة هذه في مركز مسؤولي Microsoft 365. لعرض تنبيهات الخدمة هذه، انتقل إلى **حالة HealthService** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Exchange Online**</a> >  **ثم انقر** فوق **علامة التبويب مشاكل** نشطة.
+يتم عرض تنبيهات الخدمة هذه في مركز مسؤولي Microsoft 365. لعرض تنبيهات الخدمة هذه، انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> >  >  حالة Estado de funcionamento dos serviços **Exchange Online** ثم انقر فوق **علامة التبويب مشاكل** نشطة.
 
 ## <a name="what-do-these-service-alerts-indicate"></a>ماذا تشير تنبيهات الخدمة هذه؟
 

@@ -15,12 +15,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: e47783d2308ca4b94360dd4fa06341d18f8973bb
-ms.sourcegitcommit: bd43f08b4719ba984ea6712227508d4a281148cf
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
+ms.openlocfilehash: 61e98e18466992a0463aa1f97ce2527b943f8abd
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "63574699"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498616"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>خبراء المخاطر في Microsoft في Microsoft 365 عامة
 
@@ -41,9 +44,9 @@ ms.locfileid: "63574699"
 > [!IMPORTANT]
 > قبل أن تقوم بالتقديم، تأكد من مناقشة متطلبات الأهلية خبراء المخاطر في Microsoft – إعلامات الهجمات المستهدفة مع موفر خدمة Microsoft التقنية وفريق الحساب.
 
-إذا كان لديك Microsoft Defender لنقطة النهاية Microsoft 365 Defender، يمكنك تطبيق على خبراء المخاطر في Microsoft – إعلامات الهجمات المستهدفة من خلال مدخل Microsoft 365 Defender الخاص بها. انتقل إلى **الإعدادات > نقاط النهاية > عام > الميزات المتقدمة > خبراء المخاطر في Microsoft – إعلامات** الهجمات المستهدفة، وحدد **تطبيق**. راجع [تكوين خبراء المخاطر في Microsoft للحصول](./configure-microsoft-threat-experts.md) على وصف كامل.
+إذا كان لديك Microsoft Defender لنقطة النهاية أو Microsoft 365 Defender، يمكنك التقدم بطلب خبراء المخاطر في Microsoft – إعلامات الهجمات المستهدفة من خلال Microsoft 365 Defender المدخل. انتقل إلى **الإعدادات > نقاط النهاية > عام > الميزات المتقدمة > خبراء المخاطر في Microsoft – إعلامات** الهجمات المستهدفة، وحدد **تطبيق**. راجع [تكوين خبراء المخاطر في Microsoft للحصول](./configure-microsoft-threat-experts.md) على وصف كامل.
 
-![لقطة شاشة لصفحة تطبيق MTE.](../../media/mte/mte-collaboratewithmte.png)
+:::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="خيار الميزات المتقدمة في جزء التنقل الأيسر من صفحة نقاط النهاية في مدخل Microsoft 365 Defender" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 بمجرد الموافقة على طلبك، ستبدأ في تلقي إعلامات الهجمات المستهدفة عندما يكتشف خبراء التهديدات وجود خطر على بيئتك.
 
@@ -71,22 +74,27 @@ ms.locfileid: "63574699"
 يتوفر الخيار " **استشارة** خبير في المخاطر" في عدة أماكن في المدخل:
 
 - <i>**قائمة إجراءات صفحة الجهاز**</i><BR>
-![لقطة شاشة لخيار قائمة MTE-EOD في قائمة إجراء صفحة الجهاز.](../../media/mte/device-actions-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/device-actions-mte-highlighted.png" alt-text="خيار قائمة MTE-EOD في قائمة إجراءات صفحة الجهاز في مدخل Microsoft 365 Defender" lightbox="../../media/mte/device-actions-mte-highlighted.png":::
 
 - <i>**قائمة قائمة منسدلة لصفحة مخزون الجهاز**</i><BR>
-![لقطة شاشة لخيار قائمة MTE-EOD على صفحة مخزون الجهاز.](../../media/mte/device-inventory-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/device-inventory-mte-highlighted.png" alt-text="خيار قائمة MTE-EOD في صفحة مخزون الجهاز في مدخل Microsoft 365 Defender" lightbox="../../media/mte/device-inventory-mte-highlighted.png":::
 
 - <i>**قائمة منسدلة لصفحة التنبيهات**</i><BR>
-![لقطة شاشة لخيار قائمة MTE-EOD على صفحة التنبيه.](../../media/mte/alerts-actions-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/alerts-actions-mte-highlighted.png" alt-text="خيار قائمة MTE-EOD في صفحة التنبيهات في مدخل Microsoft 365 Defender" lightbox="../../media/mte/alerts-actions-mte-highlighted.png":::
 
 - <i>**قائمة إجراءات صفحة الأحداث**</i><BR>
-![لقطة شاشة لخيار قائمة MTE-EOD على صفحة الأحداث.](../../media/mte/incidents-action-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="خيار قائمة MTE-EOD في صفحة &quot;الأحداث&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
 
 - <i>**صفحة مخزون الأحداث**</i><BR>
-![لقطة شاشة لخيار قائمة MTE-EOD على صفحة مخزون الأحداث.](../../media/mte/incidents-inventory-mte-highlighted.png)
+
+:::image type="content" source="../../media/mte/incidents-inventory-mte-highlighted.png" alt-text="خيار قائمة MTE-EOD في صفحة مخزون الأحداث في مدخل Microsoft 365 Defender" lightbox="../../media/mte/incidents-inventory-mte-highlighted.png":::
 
 > [!NOTE]
-> إذا كان لديك اشتراك دعم Premier تم تعيينه إلى ترخيص Microsoft Defender Office 365، يمكنك تعقب حالة حالات الخبراء عند الطلب من خلال مركز خدمات Microsoft.
+> إذا كان لديك اشتراك دعم Premier تم تعيينه إلى Microsoft Defender لـ Office 365، يمكنك تعقب حالة حالات الخبراء عند الطلب من خلال مركز خدمات Microsoft.
 
 شاهد هذا الفيديو للحصول على نظرة عامة سريعة حول مركز خدمات Microsoft.
 

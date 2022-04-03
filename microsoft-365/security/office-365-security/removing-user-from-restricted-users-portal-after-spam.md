@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66b810f7bb6381d405ee7ffc0d6b1cf7a10f2bf2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c375d77c3aa64d996a8d8d2f8dce538829eaa3b2
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63566550"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568303"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-microsoft-365"></a>إزالة المستخدمين المحظورين من مدخل المستخدمين المقيدين في Microsoft 365
 
@@ -34,16 +34,16 @@ ms.locfileid: "63566550"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 إذا تجاوز المستخدم أحد حدود الإرسال الصادر كما هو محدد في حدود الخدمة أو في سياسات البريد [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) العشوائي الصادر، فيبقى المستخدم [](configure-the-outbound-spam-policy.md)مقيدا من إرسال البريد الإلكتروني، ولكن لا يزال يمكنه تلقي البريد الإلكتروني.
 
-يضاف المستخدم إلى صفحة **المستخدمون** المقيدون في مدخل Microsoft 365 Defender. عندما يحاول إرسال بريد إلكتروني، يتم إرجاع الرسالة في تقرير بعدم التسليم (يعرف أيضا بالرسائل المرتد أو التقرير بعدم التسليم) مع رمز الخطأ [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) والنص التالي:
+يضاف المستخدم إلى صفحة **المستخدمون** المقيدون في مدخل Microsoft 365 Defender. عندما يحاول إرسال بريد إلكتروني، يتم إرجاع الرسالة في تقرير بعدم التسليم (يعرف أيضا ب NDR أو رسالة البريد المرتد) مع رمز الخطأ [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) والنص التالي:
 
 > "لم يتم تسليم رسالتك لأنه لم يتم التعرف عليك كمرسل صالح. السبب الأكثر شيوعا لذلك هو أن عنوان بريدك الإلكتروني مشتبه في إرسال بريد عشوائي ولم يعد مسموحا له بإرسال البريد الإلكتروني.  اتصل بمسؤول البريد الإلكتروني للحصول على المساعدة. أرجع الخادم البعيد '550 5.1.8 رفض الوصول، مرسل الصادر السيئ"."
 
-يمكن للمسؤولين إزالة المستخدمين من صفحة المستخدمون المقيدون في Microsoft 365 Defender أو في Exchange Online PowerShell.
+يمكن للمسؤولين إزالة المستخدمين من  صفحة المستخدمين المقيدين في Microsoft 365 Defender أو في Exchange Online PowerShell.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
@@ -93,9 +93,9 @@ ms.locfileid: "63566550"
 > [!IMPORTANT]
 > لكي تعمل التنبيهات، يجب تشغيل البحث في سجل التدقيق. لمزيد من المعلومات، راجع [تشغيل البحث في سجل التدقيق أو إيقاف تشغيله](../../compliance/turn-audit-log-search-on-or-off.md).
 
-1. في مدخل Microsoft 365 Defender، انتقل إلى البريد الإلكتروني & **نهج التعاون &** \>  \> **نهج التنبيه**.
+1. في مدخل Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى البريد الإلكتروني & **نهج التعاون &** \>  \> **نهج التنبيه**. الانتقال مباشرة إلى صفحة **نهج التنبيه** ، استخدم <https://security.microsoft.com/alertpolicies>.
 
-2. في صفحة **نهج التنبيه** ، ابحث عن التنبيه المسمى المستخدم المحظور **من إرسال البريد الإلكتروني وحدده**. يمكنك فرز النهج حسب الاسم، أو استخدام مربع **البحث** للعثور على النهج.
+2. في صفحة **نهج التنبيه** ، ابحث عن التنبيه المسمى المستخدم المحظور **من إرسال البريد الإلكتروني وحدده**. يمكنك فرز النهج حسب الاسم، أو استخدام **مربع البحث للعثور** على النهج.
 
 3. في المستخدم **المحظور من إرسال** قائمة البريد الإلكتروني المستعرضة التي تظهر، تحقق من الإعدادات التالية أو قم بتكوينها:
    - **الحالة**: تحقق من تشغيل التنبيه ![إلى تشغيل تشغيل.](../../media/scc-toggle-on.png).

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d9f1b4619670c1998dbac584bf7ef4e1d1f940b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b969efd9d83fa34ded01f8be7db7aaf4db971128
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570444"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498617"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>تقييم وضع الأمان باستخدام Microsoft Secure Score
 
@@ -39,14 +39,14 @@ Microsoft Secure Score هو قياس لوضعية الأمان في المؤسس
 
 - الهوية (حسابات Azure Active Directory & الأدوار)
 - الجهاز (Microsoft Defender لنقطة النهاية، المعروف باسم [Microsoft Secure Score للأجهزة](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-- التطبيقات (تطبيقات البريد الإلكتروني والسحابة، بما في ذلك Office 365 و Microsoft Defender لتطبيقات السحابة)
+- التطبيقات (تطبيقات البريد الإلكتروني والسحابة، بما في ذلك Office 365 Microsoft Defender for Cloud Apps)
 
 >[!NOTE]
 >في الإصدار الأخير من Microsoft Secure Score، تم إصدار نموذج تسجيل نقاط محسن مما جعل Microsoft Secure Score غير متوافق مؤقتا مع نقاط الهوية الآمنة Graph API. [عرض التفاصيل](microsoft-secure-score-whats-new.md)
 
 في صفحة نظرة عامة على Microsoft Secure Score، يمكنك عرض كيفية تقسيم النقاط بين هذه المجموعات والنقاط المتوفرة. يمكنك أيضا الحصول على طريقة عرض مضمنة لإجمالي الدرجة، والاتجاه التاريخي لسجل نقاطك الآمنة باستخدام مقارنات المعايير، والإجراءات ذات الأولوية للتحسينات التي يمكن اتخاذها لتحسين نقاطك.
 
-![الصفحة الرئيسية ل "نقاط آمنة".](../../media/secure-score/secure-score-home-page.png)
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="الصفحة الرئيسية &quot;نقاط آمنة&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## <a name="check-your-current-score"></a>التحقق من نقاطك الحالية
 
@@ -62,7 +62,7 @@ Microsoft Secure Score هو قياس لوضعية الأمان في المؤسس
 
 ستبدو طريقة العرض هذه كما لو قمت بضم كل طرق عرض النقاط المحتملة:
 
-![نقاطك الآمنة بما في ذلك النتيجة المخطط لها والنتيجة الحالية للترخيص والنتيجة القابلة للتنفيذ.](../../media/secure-score/secure-score-achievable.png)
+:::image type="content" source="../../media/secure-score/secure-score-achievable.png" alt-text="نقاطك الآمنة بما في ذلك النتيجة المخطط لها والنتيجة الحالية للترخيص والنتيجة القابلة لتحقيقها في مدخل Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-achievable.png":::
 
 ## <a name="take-action-to-improve-your-score"></a>اتخاذ إجراء لتحسين نقاطك
 
@@ -76,7 +76,7 @@ Microsoft Secure Score هو قياس لوضعية الأمان في المؤسس
 
 عند تحديد إجراء تحسين معين، تظهر قائمة منبئة بصفحة كاملة.  
 
-![مثال على عملية التحسين من خلال عملية النشر.](../../media/secure-score/secure-score-improvement-action-details.png)
+:::image type="content" source="../../media/secure-score/secure-score-improvement-action-details.png" alt-text="منتحلة من أحد إجراءات التحسين في مدخل Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-improvement-action-details.png":::
 
 لإكمال الإجراء، لديك بعض الخيارات:
 

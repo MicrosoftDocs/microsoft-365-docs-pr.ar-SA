@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9b4640872f4e4fbdba65b1e29ceee5575e583bac
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6621ca47356f87edd47a905e4edeb592d9b556ff
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570793"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499078"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>الخطوة 5. تطوير حالات الاستخدام واختبارها
 
@@ -56,7 +56,7 @@ ms.locfileid: "63570793"
 
 لتسهيل عمليات إنشاء المصنف والمكتب، أنشئ شجرة قرارات حالة استخدام. يعرض هذا الرسم البياني مثالا.
 
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="عملية اتخاذ قرار بشأن حالة الاستخدام." lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="عملية اتخاذ قرار حالة الاستخدام" lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
 
 بمجرد تحديد معيار حالة استخدام عال المستوى وموافق عليه، فإن الخطوة التالية هي إنشاء حالة استخدام فعلية واختبارها. تستخدم الأقسام التالية سيناريوهات مكافحة التصيد الاحتيالي والتهديد والقابلية للفحص كأمثلة.
 
@@ -64,13 +64,13 @@ ms.locfileid: "63570793"
 
 الخطوة الأولى في إنشاء حالة استخدام هي إنشاء مخطط تفصيلي لسير العمل باستخدام لوحة القصة. فيما يلي مثال على لوحة قصة عالية المستوى لأعلام استغلال تصيد احتيالي جديد لفريق "معلومات التهديدات".
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="مثال على استخدام سير عمل حالة الدعوى لحملة مكافحة التصيد الاحتيالي." lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="سير عمل حالة استخدام لحملة مكافحة التصيد الاحتيالي" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-1"></a>استدعاء سير عمل حالة الاستخدام على سبيل المثال 1
 
 بمجرد الموافقة على لوحة القصة، فإن الخطوة التالية هي استدعاء سير عمل حالة الاستخدام. فيما يلي عملية مثال لحملة مكافحة التصيد الاحتيالي. 
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="مثال على سير عمل حالة استخدام تفصيلي لحملة مكافحة التصيد الاحتيالي." lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png" alt-text="سير عمل حالة استخدام مفصل لحملة مكافحة التصيد الاحتيالي" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-phishing.png":::
 
 ## <a name="use-case-example-2-threat-and-vulnerability-scanning"></a>استخدام مثال حالة الحالة 2: المسح الضوئي للتهديد والضعف
 
@@ -78,13 +78,13 @@ ms.locfileid: "63570793"
 
 فيما يلي مثال على لوحة العمل عالية المستوى إدارة المخاطر والثغرات الأمنية الأصول.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="مثال على استخدام سير عمل حالة إدارة المخاطر والثغرات الأمنية." lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="سير عمل حالة استخدام إدارة المخاطر والثغرات الأمنية" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
 
 ### <a name="invoke-the-use-case-workflow-for-example-2"></a>استدعاء سير عمل حالة الاستخدام على سبيل المثال 2
 
 فيما يلي مثال لعملية مسح المخاطر والضعف.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="مثال على سير عمل حالة استخدام تفصيلي إدارة المخاطر والثغرات الأمنية." lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png" alt-text="سير عمل حالة استخدام تفصيلي إدارة المخاطر والثغرات الأمنية" lightbox="../../media/integrate-microsoft-365-defender-secops/example-detailed-use-case-workflow-tvm.png":::
  
 ### <a name="analyze-the-use-case-output-and-lessons-learned"></a>تحليل إخراج حالة الاستخدام والدروس المستفادة
 
@@ -95,9 +95,9 @@ ms.locfileid: "63570793"
 
 | فريق SOC | المتطلب | الأشخاص الذين يلبيون المتطلبات | معالجة لتلبية المتطلبات | التقنية ذات الصلة | تم تحديد الثغرة | استخدام سجل تغيير حالة القضيه | الإعفاء (Y/N) |
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
-| فريق التحليلات والذكاء من المخاطر | تعمل مصادر البيانات على تغذية محركات المعلومات المتعلقة بالخطر بشكل صحيح. | محلل/مهندس معلومات المخاطر | متطلبات موجز البيانات المنشأة ومشغلات المعلومات المتعلقة بالخطر من المصادر المعتمدة | Microsoft Defender for Identity، Microsoft Defender ل Endpoint | لم يستخدم فريق "معلومات المخاطر" البرنامج النصي التلقائي لربط Microsoft 365 Defender API بمحركات intel الخاصة بالخطر | إضافة Microsoft 365 Defender كمصادر بيانات إلى محركات التهديدات <BR> <BR> تحديث دفتر تشغيل حالة الاستخدام | N |
+| فريق التحليلات والذكاء من المخاطر | تعمل مصادر البيانات على تغذية محركات المعلومات المتعلقة بالخطر بشكل صحيح. | محلل/مهندس معلومات المخاطر | متطلبات موجز البيانات المنشأة ومشغلات المعلومات المتعلقة بالخطر من المصادر المعتمدة | Microsoft Defender for Identity، Microsoft Defender لنقطة النهاية | لم يستخدم فريق "معلومات المخاطر" البرنامج النصي التلقائي لربط Microsoft 365 Defender API بمحركات intel الخاصة بالخطر | إضافة Microsoft 365 Defender كمصادر بيانات إلى محركات التهديدات <BR> <BR> تحديث دفتر تشغيل حالة الاستخدام | N |
 | فريق المراقبة | تعمل مصادر البيانات على تغذية لوحات معلومات المراقبة بشكل صحيح | محلل المستوى 1,2 SOC –مراقبة & تنبيهات | سير العمل للإبلاغ عن نقاط الأمان & Compliance Center | [التنبيهات في مركز & الأمان](/microsoft-365/security/office-365-security/alerts)  <br><br> مراقبة النتائج الآمنة  | لا توجد آلية لمحللين SOC للتقارير حول اكتشاف متغير التصيد الاحتيالي الجديد بنجاح لتحسين "نقاط آمنة" <br><br> [إعداد التقارير في مركز & الأمان](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| إضافة عملية لتعقب تحسين "النقاط الآمنة" إلى مهام سير عمل إعداد التقارير | N | 
-| فريق الهندسة و SecOps | يتم تغيير تحديثات عناصر التحكم في مصنفات فريق SOC | مهندس SOC من المستوى 2 | تغيير إجراء الإعلام "التحكم" لدفاتر تشغيل فريق SOC | التغييرات المعتمدة على أجهزة الأمان | تتطلب التغييرات Microsoft 365 Defender الاتصال بتقنية أمان SOC الموافقة | إضافة Microsoft Defender لتطبيقات السحابة و Defender for Identity و Defender for Endpoint و Security & Compliance Center إلى مصنفات SOC | Y |
+| فريق الهندسة و SecOps | يتم تغيير تحديثات عناصر التحكم في مصنفات فريق SOC | مهندس SOC من المستوى 2 | تغيير إجراء الإعلام "التحكم" لدفاتر تشغيل فريق SOC | التغييرات المعتمدة على أجهزة الأمان | تتطلب التغييرات Microsoft 365 Defender الاتصال بتقنية أمان SOC الموافقة | إضافة Microsoft Defender for Cloud Apps، و Defender for Identity، و Defender for Endpoint، و Security & Compliance Center إلى دفاتر SOC | Y |
 |||||||||
 
 بالإضافة إلى ذلك، كان من الممكن أن تكون فرق SOC قد حققت الاكتشافات الموضحة في الجدول أدناه فيما يتعلق إدارة المخاطر والثغرات الأمنية الموضح أعلاه:

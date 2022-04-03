@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 9b37e353af74b7a01c0647f99b149f5fac0ae8a3
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 59ebfb9ffb925cc5937802a31902e7c2342fc740
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "63575931"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755658"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 نشر الثقة الصفرية
 
@@ -36,13 +36,7 @@ ms.locfileid: "63575931"
 
 يوفر هذا الرسم التوضيحي تمثيلا للعناصر الأساسية التي تساهم في الثقة الصفرية.
 
-<!---
-[![Zero Trust security architecture](../media/zero-trust/zero-trust-architecture.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/zero-trust/zero-trust-architecture.png)
--->
-
 :::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="بنية أمان &quot;الثقة الصفرية&quot;" lightbox="../media/zero-trust/zero-trust-architecture.png":::
-
-
 
 في الرسم التوضيحي:
 - يوجد تطبيق نهج الأمان في وسط بنية "الثقة الصفرية". يشمل ذلك المصادقة متعددة العوامل مع الوصول الشرطي الذي يأخذ في الاعتبار مخاطر حساب المستخدم، حالة الجهاز، والمعايير والسياسات الأخرى التي تقوم بتعيينها.
@@ -144,7 +138,8 @@ Microsoft 365 Defender هو حل موسع للكشف والاستجابة (XDR) 
 
 حماية البيانات في Microsoft إطار عمل وعملية وإمكانيات يمكنك استخدامها لتحقيق أهداف أعمالك المحددة.
 
-![حماية البيانات في Microsoft (MIP)](../media/zero-trust/mip-solution-overview.png)
+:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="إطار حماية البيانات في Microsoft" lightbox="../media/zero-trust/mip-solution-overview.png":::
+
 
 لمزيد من المعلومات حول كيفية التخطيط لحماية المعلومات ونشرها، راجع [**_نشر حل حماية البيانات في Microsoft._**](../compliance/information-protection-solution.md) 
 

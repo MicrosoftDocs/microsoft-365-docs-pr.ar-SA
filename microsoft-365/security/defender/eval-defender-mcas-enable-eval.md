@@ -1,6 +1,6 @@
 ---
-title: تمكين بيئة التقييم ل Microsoft Defender لتطبيقات السحابة
-description: تعرف على تصميم Defender for Cloud Apps داخل Microsoft Defender Office 365 التفاعلات بين Microsoft 365 Defender السحابة.
+title: تمكين بيئة التقييم Microsoft Defender for Cloud Apps
+description: تعرف على تصميم Defender for Cloud Apps Microsoft Defender لـ Office 365 التفاعلات بين Microsoft 365 Defender السحابة.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,33 +20,33 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4c8f0ff2ca13d7f1c0e8adfcf4e0bdf09aa1c2ac
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: a66a3563d01e8e4239a0f4815fec9234fd46e1fc
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63579668"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64498968"
 ---
-# <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>تمكين بيئة التقييم ل Microsoft Defender لتطبيقات السحابة
+# <a name="enable-the-evaluation-environment-for-microsoft-defender-for-cloud-apps"></a>تمكين بيئة التقييم Microsoft Defender for Cloud Apps
 
 **ينطبق على:**
 
 - Microsoft 365 Defender
 
-هذه المقالة هي [الخطوة 2 من 2](eval-defender-mcas-overview.md) في عملية إعداد بيئة التقييم ل Microsoft Defender لتطبيقات السحابة. لمزيد من المعلومات حول هذه العملية، راجع [مقالة النظرة العامة](eval-defender-mcas-overview.md).
+هذه المقالة هي [الخطوة 2 من 2](eval-defender-mcas-overview.md) في عملية إعداد بيئة التقييم Microsoft Defender for Cloud Apps. لمزيد من المعلومات حول هذه العملية، راجع [مقالة النظرة العامة](eval-defender-mcas-overview.md).
 
 ادفعك هذه المقالة خلال عملية الوصول إلى مدخل Defender for Cloud Apps وتكوين التكامل اللازم لجمع بيانات حركة مرور تطبيقات السحابة.
 
-لاكتشاف تطبيقات السحابة المستخدمة في بيئتك، يمكنك القيام بما يلي أو كليهما:
+لاكتشاف تطبيقات السحابة المستخدمة في بيئتك، يمكنك تنفيذ أحد الأساليب التالية أو كليهما:
 
-- يمكنك العمل بسرعة مع "اكتشاف السحابة" من خلال التكامل مع Microsoft Defender ل Endpoint. يمكنك هذا التكامل الأصلي من البدء فورا في تجميع البيانات على حركة مرور السحابة عبر أجهزة Windows 10 وأجهزة Windows 11، على الشبكة أو خارجها.
-- لاكتشاف جميع تطبيقات السحابة التي يمكن الوصول إليها من قبل جميع الأجهزة المتصلة بالشبكة، انتشر سجل Defender for Cloud Apps الذي تم تجميعه على جدران الحماية الخاصة بك وغيرها من المحترفين. يجمع هذا البيانات من نقاط النهاية ويرسلها إلى Defender for Cloud Apps لتحليلها. يتكامل Defender for Cloud Apps بشكل أصلي مع بعض تكاملات  الأطراف الخارجية للحصول على المزيد من الإمكانات.
+- يمكنك العمل بسرعة مع "اكتشاف السحابة" من خلال التكامل مع Microsoft Defender لنقطة النهاية. يمكنك هذا التكامل الأصلي من البدء فورا في تجميع البيانات على حركة مرور السحابة عبر أجهزة Windows 10 وأجهزة Windows 11، على الشبكة أو خارجها.
+- لاكتشاف جميع تطبيقات السحابة التي يمكن الوصول إليها من قبل جميع الأجهزة المتصلة بالشبكة، انتشر سجل Defender for Cloud Apps الذي تم تجميعه على جدران الحماية الخاصة بك وغيرها من المحترفين. يساعد هذا النشر في تجميع البيانات من نقاط النهاية وإرسالها إلى Defender for Cloud Apps لتحليلها. يتكامل Defender for Cloud Apps بشكل أصلي مع بعض تكاملات  الأطراف الخارجية للحصول على المزيد من الإمكانات.
 
 تتضمن هذه المقالة إرشادات لكلا الطريقة.
 
 استخدم الخطوات التالية لإعداد Microsoft Defender for Cloud Apps.
 
-![خطوات لتمكين Microsoft Microsoft Defender لتطبيقات السحابة في بيئة تقييم Microsoft Defender.](../../media/defender/m365-defender-mcas-eval-enable-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-mcas-eval-enable-steps.png" alt-text="الخطوات اللازمة لتمكين Microsoft Microsoft Defender for Cloud Apps في بيئة تقييم Microsoft Defender" lightbox="../../media/defender/m365-defender-mcas-eval-enable-steps.png":::
 
 - [الخطوة 1. الاتصال إلى مدخل Defender for Cloud Apps](#step-1)
 - [الخطوة 2. التكامل مع Microsoft Defender لنقطة النهاية](#step-2)
@@ -57,9 +57,9 @@ ms.locfileid: "63579668"
 
 ## <a name="step-1-connect-to-the-defender-for-cloud-apps-portal"></a>الخطوة 1. الاتصال إلى مدخل Defender for Cloud Apps
 
-للتحقق من الترخيص والاتصال بمدخل Defender for Cloud Apps، راجع التشغيل السريع [: بدء استخدام Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
+للتحقق من الترخيص والاتصال بمدخل Defender for Cloud Apps، راجع البدء السريع[: بدء استخدام](/cloud-app-security/getting-started-with-cloud-app-security) Microsoft Defender for Cloud Apps.
 
-إذا لم تتمكن على الفور من الاتصال بالمدخل، فقد تحتاج إلى إضافة عنوان IP إلى قائمة السماح بجدار الحماية. راجع [الإعداد الأساسي ل Defender for Cloud Apps](/cloud-app-security/general-setup).
+إذا لم تتمكن من الاتصال مباشرة إلى المدخل، فقد تحتاج إلى إضافة عنوان IP إلى قائمة السماح بجدار الحماية. راجع [الإعداد الأساسي ل Defender for Cloud Apps](/cloud-app-security/general-setup).
 
 إذا كنت لا تزال تواجه مشكلة، فراجع [متطلبات الشبكة](/cloud-app-security/network-requirements).
 
@@ -67,11 +67,11 @@ ms.locfileid: "63579668"
 
 ## <a name="step-2-integrate-with-microsoft-defender-for-endpoint"></a>الخطوة 2. التكامل مع Microsoft Defender لنقطة النهاية
 
-يتكامل Microsoft Defender for Cloud Apps مع Microsoft Defender ل Endpoint في الوقت الأصلي. يبسط التكامل عملية طرح "اكتشاف السحابة"، ويوسع إمكانات "اكتشاف السحابة" خارج شبكة الشركة، كما يمكن إجراء تحقيق مستند إلى الأجهزة. يكشف هذا التكامل عن تطبيقات السحابة والخدمات التي يتم الوصول إليها من أجهزة Windows 10 المعلومات Windows 11 الأجهزة.
+Microsoft Defender for Cloud Apps التكامل مع Microsoft Defender لنقطة النهاية الأصلية. يبسط التكامل عملية طرح "اكتشاف السحابة"، ويوسع إمكانات "اكتشاف السحابة" خارج شبكة الشركة، كما يمكن إجراء تحقيق مستند إلى الأجهزة. يكشف هذا التكامل عن تطبيقات السحابة والخدمات التي يتم الوصول إليها من أجهزة Windows 10 المعلومات Windows 11 الأجهزة.
 
 إذا سبق لك إعداد Microsoft Defender لنقطة النهاية، فإن تكوين التكامل مع Defender for Cloud Apps هو تبديل في Microsoft 365 Defender. بعد تشغيل التكامل، يمكنك العودة إلى مدخل Defender for Cloud Apps وعرض البيانات الغنية في لوحة معلومات اكتشاف السحابة.
 
-لتنفيذ هذه المهام، راجع [تكامل Microsoft Defender لنقطة النهاية مع Microsoft Defender لتطبيقات السحابة](/cloud-app-security/mde-integration).
+لتنفيذ هذه المهام، راجع Microsoft Defender لنقطة النهاية [التكامل مع Microsoft Defender for Cloud Apps](/cloud-app-security/mde-integration).
 
 <a name="step-3"></a>
 
@@ -98,8 +98,8 @@ ms.locfileid: "63579668"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-الخطوة 3 من 3: [تجريبي ل Microsoft Defender لتطبيقات السحابة](eval-defender-mcas-pilot.md)
+الخطوة 3 من 3: [التجربة Microsoft Defender for Cloud Apps](eval-defender-mcas-pilot.md)
 
-العودة إلى نظرة عامة حول [تقييم Microsoft Defender لتطبيقات السحابة](eval-defender-mcas-overview.md)
+العودة إلى نظرة عامة [حول تقييم](eval-defender-mcas-overview.md) Microsoft Defender for Cloud Apps
 
 العودة إلى النظرة العامة لتقييم التقييم [Microsoft 365 Defender](eval-overview.md)
