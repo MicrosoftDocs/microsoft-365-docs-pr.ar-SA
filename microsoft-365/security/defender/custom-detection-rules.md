@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 473d58cde13f1f776c31184b2b50e74e23810b22
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: dac2a68249d90b212e6bbcaacdec84918560deb5
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63575702"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755819"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>إنشاء قواعد عمليات الكشف المخصصة وإدارتها
 
@@ -203,7 +203,7 @@ DeviceEvents
 
 لعرض معلومات شاملة حول قاعدة الكشف المخصصة، انتقل إلى قواعد الكشف **عن** **CustomCustom** >  ثم حدد اسم القاعدة. يمكنك بعد ذلك عرض معلومات عامة حول القاعدة، بما في ذلك معلومات حول حالة تشغيلها ونطاقها. توفر الصفحة أيضا قائمة بالتنبيهات والإجراءات التي تم تشغيلها.
 
-![صفحة تفاصيل قاعدة الكشف المخصصة.](../../media/custom-detect-rules-view.png)<br>
+:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="صفحة تفاصيل قاعدة الكشف المخصص في مدخل Microsoft 365 Defender" lightbox="../../media/custom-detect-rules-view.png":::<br>
 *تفاصيل قاعدة الكشف المخصصة*
 
 يمكنك أيضا اتخاذ الإجراءات التالية على القاعدة من هذه الصفحة:

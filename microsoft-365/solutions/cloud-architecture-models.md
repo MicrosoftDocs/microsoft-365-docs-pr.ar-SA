@@ -13,18 +13,28 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b0a89bc8a79f3ea2c5c0b3c1f01039944565a75c
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: cdff93ed308767256df1adf8dcf9ce2f3eb095a4
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63567650"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755758"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>رسومات Microsoft السحابية لمهندسي تقنيات
 
 توفر لك ملصقات هندسة السحابة هذه معلومات حول خدمات Microsoft السحابية، بما في ذلك Microsoft 365 و Azure Active Directory (Azure AD) و Microsoft Intune و Microsoft Dynamics 365 والحلول المختلطة المحلية وحلول السحابة. 
 
 يمكن لصانعي القرار والمهندسين المعماريين في مجال المعلومات استخدام هذه الموارد لتحديد الحلول المثالية لأحمال العمل الخاصة بهم واتخاذ قرارات حول مكونات البنية الأساسية الأساسية مثل الشبكات والهوية والأمان.
+
+<a name="zero trust"></a>
+### <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 نشر الثقة الصفرية
+
+
+يوفر هذا الرسم التوضيحي خطة نشر لبناء أمان "الثقة الصفرية" Microsoft 365. إن Zero Trust هو نموذج أمان جديد يفترض الخرق ويتحقق من كل طلب كما لو أنه من شبكة غير خاضعة لرقم. بغض النظر عن مصدر الطلب أو المورد الذي يمكن الوصول إليه، يعلمنا نموذج "صفر الثقة" أنه "لا تثق أبدا، تحقق دائما".
+
+| عنصر | الوصف |
+|:-----|:-----|
+|[![رسم توضيحي Microsoft 365 نشر الثقة الصفرية.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> تم التحديث في مارس 2022 | استخدم هذا الرسم التوضيحي مع هذه المقالة: Microsoft 365 [نشر الثقة الصفرية](../security/Microsoft-365-zero-trust.md) <br/><br/>**أدلة الحلول ذات الصلة** <br/> <ul><li>[نشر البنية الأساسية للهوية Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[تكوينات الوصول إلى الأجهزة والهوية الموصى بها](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[إدارة الأجهزة باستخدام Intune](manage-devices-with-intune-overview.md)</li><li>[تقييم التقييم Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[نشر حل حماية البيانات في Microsoft](../compliance/information-protection-solution.md)</li><li>[نشر حماية المعلومات لأنظمة خصوصية البيانات باستخدام Microsoft 365](information-protection-deploy.md)</li></ul>
 
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>الهجمات الشائعة وإمكانات Microsoft التي تحمي مؤسستك

@@ -18,12 +18,12 @@ ms.custom:
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 4ec06a96e345345560a2714fa7e23d91a6f5832f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0e38dc36ca85425c033d2b8fd4828043b4043f1a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570192"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499408"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>تكوين قدرات الاستجابة والتحري التلقائي في Microsoft 365 Defender
 
@@ -49,9 +49,9 @@ Microsoft 365 Defender إمكانات الاستجابة والتحري التل
 |المتطلب|التفاصيل|
 |---|---|
 |متطلبات الاشتراك|أحد هذه الاشتراكات: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 باستخدام الأمان في Microsoft 365 E5 الإضافية</li><li>Microsoft 365 A3 باستخدام Microsoft 365 A5 Security الإضافية</li><li>Office 365 E5 بالإضافة إلى Enterprise Mobility + Security E5 بالإضافة إلى Windows E5</li></ul> <p> راجع [Microsoft 365 Defender متطلبات الترخيص](./prerequisites.md#licensing-requirements).|
-|متطلبات الشبكة|<ul><li>[تمكين Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)</li><li>[تم تكوين Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)</li><li>[تكامل Microsoft Defender for Identity](/cloud-app-security/mdi-integration)</li></ul>|
+|متطلبات الشبكة|<ul><li>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) تمكين</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) تكوين</li><li>[Microsoft Defender for Identity التكامل](/cloud-app-security/mdi-integration)</li></ul>|
 |Windows الأجهزة|<ul><li>Windows 11</li><li>Windows 10 الإصدار 1709 أو الإصدار الأحدث المثبت ([راجع Windows الإصدار](/windows/release-information/))</li><li>تم تكوين خدمات الحماية من المخاطر التالية:<ul><li>[Microsoft Defender لنقطة النهاية](../defender-endpoint/configure-endpoints.md)</li><li>[برنامج الحماية من الفيروسات من Microsoft Defender](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
-|الحماية لمحتوى البريد الإلكتروني Office الملفات|[Microsoft Defender Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) تكوين|
+|الحماية لمحتوى البريد الإلكتروني Office الملفات|[Microsoft Defender لـ Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) تكوين|
 |الأذونات|لتكوين قدرات الاستجابة والتحري التلقائي، يجب تعيين دور المسؤول العام أو مسؤول الأمان في Azure Active Directory (<https://portal.azure.com>) أو في مركز مسؤولي Microsoft 365 (<https://admin.microsoft.com>). <p> للحصول على الأذونات اللازمة للعمل باستخدام إمكانات الاستجابة والتحريات التلقائية، مثل مراجعة الإجراءات المعلقة أو الموافقة عليها أو رفضها، راجع الأذونات المطلوبة لمهام [مركز الإجراءات](m365d-action-center.md#required-permissions-for-action-center-tasks).|
 |
 
@@ -69,7 +69,7 @@ Microsoft 365 Defender إمكانات الاستجابة والتحري التل
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>راجع سياسات الأمان والتنبيه في Office 365
 
-توفر Microsoft سياسات تنبيه [مضمنة](../../compliance/alert-policies.md) تساعد على تحديد مخاطر معينة. وتتضمن هذه المخاطر Exchange إساءة استخدام أذونات المسؤول، ونشاط البرامج الضارة، والمخاطر الخارجية والداخلية المحتملة، ومخاطر إدارة المعلومات. يمكن أن تؤدي بعض التنبيهات إلى [تشغيل التحقيق التلقائي والاستجابة في Office 365](../office-365-security/office-365-air.md). تأكد من تكوين [ميزات defender Office 365](../office-365-security/defender-for-office-365.md) بشكل صحيح.
+توفر Microsoft سياسات تنبيه [مضمنة](../../compliance/alert-policies.md) تساعد على تحديد مخاطر معينة. وتتضمن هذه المخاطر Exchange إساءة استخدام أذونات المسؤول، ونشاط البرامج الضارة، والمخاطر الخارجية والداخلية المحتملة، ومخاطر إدارة المعلومات. يمكن أن تؤدي بعض التنبيهات إلى [تشغيل التحقيق التلقائي والاستجابة في Office 365](../office-365-security/office-365-air.md). تأكد من [Defender لـ Office 365](../office-365-security/defender-for-office-365.md) تكوين ميزاتك بشكل صحيح.
 
 على الرغم من أن بعض التنبيهات ونهج الأمان يمكن أن تؤدي إلى تشغيل عمليات تحقيق تلقائية، إلا أنه لا يتم اتخاذ أي إجراءات إصلاح تلقائيا *للبريد الإلكتروني والمحتوى*. بدلا من ذلك، تنتظر كل إجراءات المعالجة للبريد الإلكتروني ومحتوى البريد الإلكتروني موافقة فريق عمليات الأمان في [مركز الإجراءات](m365d-action-center.md).
 
@@ -92,7 +92,7 @@ Microsoft 365 Defender إمكانات الاستجابة والتحري التل
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>تأكد من Microsoft 365 Defender تشغيل
 
-:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="كيفية التأكد من تمكين Microsoft 365 Defender." lightbox="../../media/mtp-enable/mtp-on.png":::
+:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="جزء التنقل الأيسر في مدخل Microsoft 365 Defender عند Microsoft 365 Defender تشغيل" lightbox="../../media/mtp-enable/mtp-on.png":::
 
 1. تسجيل <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">الدخول إلى مدخل</a> Microsoft 365 Defender
 

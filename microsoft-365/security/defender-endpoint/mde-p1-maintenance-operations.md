@@ -1,5 +1,5 @@
 ---
-title: إدارة Microsoft Defender لخطة نقطة النهاية 1
+title: إدارة Microsoft Defender لنقطة النهاية 1
 description: الاحتفاظ ب Defender لخطة نقطة النهاية 1 وتحديثها. يمكنك إدارة الإعدادات والحصول على التحديثات ومعالجة الإيجابيات/السلبيات الخاطئة.
 search.appverid: MET150
 author: denisebmsft
@@ -14,17 +14,17 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 69e4df29817675918873e4d13b81bfe5b00b1219
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5217cf3f8b61c4e5bc24dfc205fb78c5bde5a3b5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63572011"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466620"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>إدارة Microsoft Defender لخطة نقطة النهاية 1
+# <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>إدارة Microsoft Defender لنقطة النهاية 1
 
 **ينطبق على**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 بينما تستخدم Defender for Endpoint Plan 1 في مؤسستك، يمكن لفريق الأمان اتخاذ خطوات معينة للحفاظ على حل الأمان. عندما يجمع فريق الأمان خطة الصيانة والعمليات، تأكد من تضمين الأنشطة التالية على الأقل:
 
@@ -51,10 +51,10 @@ ms.locfileid: "63572011"
 
 إن الإيجابيات الخاطئة هي عملية يدوية، مثل ملف أو عملية، تم اكتشافها كضارة، على الرغم من أنها ليست في الواقع خطرا. السلبية الخاطئة هي كيان لم يتم اكتشافه كخطر، على الرغم من أنه في الواقع. يمكن أن تحدث الإيجابيات/السلبيات الخاطئة مع أي حل لحماية نقطة النهاية، بما في ذلك Defender لنقطة النهاية. ومع ذلك، هناك خطوات يمكنك اتخاذها لمعالجة هذه الأنواع من المشاكل وضبط الحل، كما هو مبين في الصورة التالية:
 
-:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="نظرة عامة حول معالجة الإيجابيات والسلبيات الخاطئة":::
+:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="نظرة عامة حول معالجة الإيجابيات والسلبيات الخاطئة" lightbox="../../media/defender-endpoint/false-positives-overview.png":::
 
-إذا كنت ترى موجبة/سالبة خاطئة في Defender for Endpoint، فحدد العنوان الموجبة/السالبة الخاطئة في [Microsoft Defender لنقطة النهاية](defender-endpoint-false-positives-negatives.md).
+إذا كنت ترى موجبة/سالبة خاطئة في Defender for Endpoint، فحدد العنوان [الموجبة/](defender-endpoint-false-positives-negatives.md)السالبة الخاطئة في Microsoft Defender لنقطة النهاية.
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-- [الاطلاع على أحدث ما في Microsoft Defender ل Endpoint](whats-new-in-microsoft-defender-endpoint.md)
+- [تعرف على الجديد في Microsoft Defender لنقطة النهاية](whats-new-in-microsoft-defender-endpoint.md)

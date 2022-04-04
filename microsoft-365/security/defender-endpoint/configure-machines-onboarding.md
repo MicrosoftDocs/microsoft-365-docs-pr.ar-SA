@@ -1,7 +1,7 @@
 ---
-title: الحصول على الأجهزة المجهزة في Microsoft Defender لنقطة النهاية
-description: تعقب التكوين للأجهزة المدارة من Intune إلى Microsoft Defender ل Endpoint وزيادة معدل التكوين.
-keywords: onboard, Intune management, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, configuration management
+title: الحصول على الأجهزة المجهزة Microsoft Defender لنقطة النهاية
+description: تعقب عملية التكتير للأجهزة المدارة من Intune Microsoft Defender لنقطة النهاية وزيادة معدل التكهين.
+keywords: onboard، إدارة Intune، Microsoft Defender لنقطة النهاية، Microsoft Defender، Windows Defender، إدارة التكوين
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ef0f461bef452336052018a26970bad94400fa71
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 6caaddc208e6f73de0f49ff6d419c335848ae439
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63570511"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466312"
 ---
-# <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>الحصول على الأجهزة المجهزة في Microsoft Defender لنقطة النهاية
+# <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>الحصول على الأجهزة المجهزة Microsoft Defender لنقطة النهاية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
@@ -43,12 +43,12 @@ ms.locfileid: "63570511"
 
 توفر  بطاقة "التكوين" نظرة عامة عالية المستوى حول معدل التكوين من خلال مقارنة عدد أجهزة Windows التي تم بالفعل اجهزتها في Defender for Endpoint مقابل العدد الإجمالي للأجهزة المدارة Windows Intune.
 
-![بطاقة إعداد إدارة تكوين الجهاز.](images/secconmgmt_onboarding_card.png)
+:::image type="content" source="images/secconmgmt_onboarding_card.png" alt-text="بطاقة إعداد إدارة تكوين الجهاز" lightbox="images/secconmgmt_onboarding_card.png":::
 
 *بطاقة تعرض الأجهزة المجهزة مقارنة بعدد أجهزة الكمبيوتر المدارة Windows Intune*
 
 > [!NOTE]
-> إذا كنت تستخدم إدارة التكوين أو البرنامج النصي للتهيئة أو أساليب التهيئة الأخرى التي لا تستخدم ملفات تعريف Intune، فقد تواجه تعارضات في البيانات. لحل هذه التعارضات، قم بإنشاء ملف تعريف تكوين Intune مقابل ل Defender لتهيئة نقطة النهاية وتعيين ملف التعريف هذا إلى أجهزتك.
+> إذا استخدمت Configuration Manager أو البرنامج النصي ل الإستخدام أو أساليب التكهين الأخرى التي لا تستخدم ملفات تعريف Intune، فقد تواجه تعارضات في البيانات. لحل هذه التعارضات، قم بإنشاء ملف تعريف تكوين Intune مقابل ل Defender لتهيئة نقطة النهاية وتعيين ملف التعريف هذا إلى أجهزتك.
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>الأجهزة المجهزة بشكل أكبر باستخدام ملفات تعريف Intune
 
@@ -56,9 +56,9 @@ ms.locfileid: "63570511"
 
 من بطاقة **التهيئة****، حدد تهيئة** المزيد من الأجهزة لإنشاء ملف تعريف وتعيينه على Intune. ويأخذك الارتباط إلى صفحة توافق الجهاز في Intune، التي توفر نظرة عامة مماثلة على حالة التكهف.
 
-![صفحة توافق أجهزة Microsoft Defender لنقطة النهاية على إدارة أجهزة Intune.](images/secconmgmt_onboarding_1deviceconfprofile.png)
+:::image type="content" source="images/secconmgmt_onboarding_1deviceconfprofile.png" alt-text="صفحة Microsoft Defender لنقطة النهاية توافق الأجهزة على إدارة أجهزة Intune" lightbox="images/secconmgmt_onboarding_1deviceconfprofile.png":::
 
-*صفحة توافق أجهزة Microsoft Defender لنقطة النهاية على إدارة أجهزة Intune*
+*Microsoft Defender لنقطة النهاية توافق الأجهزة على إدارة أجهزة Intune*
 
 > [!TIP]
 > بدلا من ذلك، يمكنك الانتقال إلى صفحة التوافق لتوافق تعيين نقاط النهاية في مدخل [Microsoft Azure](https://portal.azure.com/) من كل **الخدمات > Intune > توافق > Microsoft Defender ATP**.

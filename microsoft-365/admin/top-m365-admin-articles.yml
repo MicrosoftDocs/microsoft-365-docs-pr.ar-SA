@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: أهم 20 مقالة من مقالات تعليمات المسؤول الأكثر مشاهدة هذا الشهر
-summary: تم التحديث الأخير في 13/1/2022. هل ينتابك الفضول حول مقالات المساعدة الأكثر شيوعا لدى المسؤولين؟ اطلع على هذه المجموعة من مقالات المساعدة العشرين الأكثر مشاهدة، التي تم تحديثها شهريا.
+summary: تم التحديث الأخير في 23/3/2022. هل ينتابك الفضول حول مقالات المساعدة الأكثر شيوعا لدى المسؤولين؟ اطلع على هذه المجموعة من مقالات المساعدة العشرين الأكثر مشاهدة، التي تم تحديثها شهريا.
 metadata:
   title: أهم 20 مقالة من مقالات تعليمات المسؤول الأكثر مشاهدة هذا الشهر
   description: اطلع على هذه المجموعة من أهم 20 مقالة تعليمات الأكثر شيوعا بين المسؤولين، التي تم تحديثها شهريا.
@@ -8,84 +8,90 @@ metadata:
   ms.topic: landing-page
   author: SKjerland
   ms.author: sharik
-  ms.date: 10/01/2021
+  ms.date: 03/22/2022
   ms.localizationpriority: high
   ms.custom: AdminSurgePortfolio
   ms.collection: Adm_TOC
-  ms.openlocfilehash: 8bc6995e9f3d1aab0125546cb9f52c1790582165
-  ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+  ms.openlocfilehash: 115617fb4291e65b828bb8308afab1765fcab3b6
+  ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 03/17/2022
-  ms.locfileid: "63575187"
+  ms.lasthandoff: 03/23/2022
+  ms.locfileid: "63761511"
 landingContent:
-- title: معلوماتية
+- title: إدارة البيانات والخدمات
   linkLists:
   - linkListType: overview
     links:
     - text: حول أدوار المسؤولين
-      url: admin-overview/sign-up-for-office-365.md
+      url: add-users/about-admin-roles.md
+    - text: Microsoft 365 تقارير الاستخدام
+      url: activity-reports/activity-reports.md
   - linkListType: video
     links:
     - text: الحصول على المساعدة أو الدعم
-      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+      url: get-help-support.md
 - title: المجالات
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: إضافة سجلات DNS لتوصيل مجالك
-      url: setup/setup-business-basic.md
+      url: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
     - text: إضافة مجال إلى Microsoft 365
-      url: setup/setup-business-standard.md
+      url: setup/add-domain.md
 - title: الأمان
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: إعداد المصادقة متعددة العوامل
-      url: setup/migrate-email-and-contacts-admin.md
+      url: security-and-compliance/set-up-multi-factor-authentication.md
 - title: الفواتير والاشتراكات
   linkLists:
+  - linkListType: overview
+    links:
+    - text: حول أرقام التسجيل والإعلامات التي لم يتم مراجعتها
+      url: ../commerce/about-registration-numbers.md
   - linkListType: how-to-guide
     links:
     - text: إلغاء اشتراكك
-      url: setup/setup-business-basic.md
+      url: ../commerce/subscriptions/cancel-your-subscription.md
     - text: الدفع مقابل اشتراكك
-      url: setup/setup-business-standard.md
+      url: ../commerce/billing-and-payments/pay-for-your-subscription.md
     - text: إدارة طرق الدفع
-      url: setup/setup-business-standard.md
+      url: ../commerce/billing-and-payments/manage-payment-methods.md
     - text: عرض الفاتورة أو الفاتورة
-      url: setup/setup-business-standard.md
+      url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
 - title: البريد الإلكتروني
   linkLists:
   - linkListType: overview
     links:
     - text: حول علب البريد المشتركة
-      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+      url: email/about-shared-mailboxes.md
   - linkListType: how-to-guide
     links:
     - text: تكوين إعادة توجيه البريد الإلكتروني في Microsoft 365
-      url: admin-overview/sign-up-for-office-365.md
+      url: email/configure-email-forwarding.md
     - text: إنشاء علبة بريد مشتركة
-      url: admin-overview/sign-up-for-office-365.md
+      url: email/create-a-shared-mailbox.md
     - text: منح أذونات علبة البريد لمستخدم آخر
-      url: admin-overview/sign-up-for-office-365.md
+      url: add-users/give-mailbox-permissions-to-another-user.md
     - text: تغيير اسم المستخدم وعنوان البريد الإلكتروني
-      url: admin-overview/sign-up-for-office-365.md
+      url: add-users/change-a-user-name-and-email-address.md
     - text: تحويل علبة بريد مستخدم إلى علبة بريد مشتركة
-      url: admin-overview/sign-up-for-office-365.md
+      url: email/convert-user-mailbox-to-shared-mailbox.md
 - title: المستخدمون والمجموعات وكلمات المرور
   linkLists:
   - linkListType: overview
     links:
     - text: مقارنة المجموعات
-      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+      url: create-groups/compare-groups.md
   - linkListType: how-to-guide
     links:
     - text: إضافة مستخدمين وتعيين تراخيص في الوقت نفسه
-      url: admin-overview/sign-up-for-office-365.md
+      url: add-users/add-users.md
     - text: تعيين تراخيص للمستخدمين
-      url: admin-overview/sign-up-for-office-365.md
+      url: manage/assign-licenses-to-users.md
     - text: تعيين نهج انتهاء صلاحية كلمة المرور لمنظمتك
-      url: admin-overview/sign-up-for-office-365.md
-    - text: تمكين المستخدمين من تسجيل الدخول Outlook تطبيقات الأجهزة المحمولة باستخدام رمز الاستجابة السريعة
-      url: admin-overview/sign-up-for-office-365.md
+      url: manage/set-password-expiration-policy.md
+    - text: السماح للمستخدمين تسجيل الدخول Outlook تطبيقات الأجهزة المحمولة باستخدام رمز الاستجابة السريعة
+      url: manage/use-qr-code-download-outlook.md

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: احصل على تقرير دوري حول كيفية استخدام الأشخاص في مؤسستك Microsoft 365 التنقل في كل مخطط للحصول على مزيد من المعلومات.
-ms.openlocfilehash: 8dd72f1f153bb9052317afca1d0370645d8ad85b
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: c9d79b12d4a33282540274cf9f0688e071261469
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63570964"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679323"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365 التقارير في مركز الإدارة
 
@@ -94,7 +94,7 @@ ms.locfileid: "63570964"
 |[Office التنشيط](microsoft-office-activations-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[المستخدمون النشطون](active-users-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[Microsoft 365 المجموعات](office-365-groups-ww.md)|نعم|نعم|نعم|نعم|نعم|
-|[Microsoft 365 Apps الاستخدام](microsoft365-apps-usage-ww.md)|نعم|نعم|No[^1]|No[^1]|No[^1]|
+|[Microsoft 365 Apps الاستخدام](microsoft365-apps-usage-ww.md)|نعم|نعم|No[^1]|No[^1]|نعم
 |[OneDrive for Business المستخدم](onedrive-for-business-activity-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[OneDrive for Business الاستخدام](onedrive-for-business-usage-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[SharePoint الموقع](sharepoint-site-usage-ww.md)|نعم|نعم|نعم|نعم|نعم|

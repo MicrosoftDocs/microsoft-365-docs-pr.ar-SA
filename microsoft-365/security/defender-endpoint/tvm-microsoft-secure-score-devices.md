@@ -1,7 +1,7 @@
 ---
 title: Microsoft Secure Score للأجهزة
 description: تعرض نقاطك للأجهزة حالة تكوين الأمان الجماعي للأجهزة عبر التطبيقات ونظام التشغيل والشبكات والحسابات و عناصر التحكم في الأمان.
-keywords: Microsoft Secure Score for Devices، Microsoft Defender ل Endpoint Microsoft Secure Score for Devices، نقاط آمنة، نقاط تكوين، إدارة المخاطر والثغرات الأمنية، عناصر تحكم الأمان، فرص التحسين، نقاط تكوين الأمان مع مرور الوقت، وضع الأمان، الأساس
+keywords: Microsoft Secure Score للأجهزة، Microsoft Defender لنقطة النهاية Microsoft Secure Score للأجهزة، نقاط آمنة، نقاط تكوين، إدارة المخاطر والثغرات الأمنية، عناصر تحكم الأمان، فرص التحسين، نقاط تكوين الأمان مع مرور الوقت، وضع الأمان، الأساس
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ccd5164839244250c5e2d908f41c35a706e0f49d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 1d63e240c0698273807421a4121061630b8f3951
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63570653"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499518"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Microsoft Secure Score للأجهزة
 
@@ -29,7 +29,7 @@ ms.locfileid: "63570653"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [التهديدات إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -48,22 +48,10 @@ ms.locfileid: "63570653"
 
 حدد فئة للذهاب إلى صفحة [**توصيات**](tvm-security-recommendation.md) الأمان وعرض التوصيات ذات الصلة.
 
-## <a name="turn-on-the-microsoft-secure-score-connector"></a>تشغيل موصل Microsoft Secure Score
-
-إعادة توجيه إشارات Microsoft Defender لنقطة النهاية، مما يمنح Microsoft Secure Score الرؤية في وضع أمان الجهاز. يتم تخزين البيانات التي تمت إعادة توجيهها ومعالجتها في نفس موقع بيانات Microsoft Secure Score.
-
-قد تستغرق التغييرات ما يصل إلى بضع ساعات لتعكسها في لوحة المعلومات.
-
-1. في جزء التنقل، **انتقل إلى الإعدادات** \> **نقاط النهاية** \> **العامة** \> **المتقدمة**
-
-2. قم **بالتمرير لأسفل وصولا إلى Microsoft Secure Score** و قم بالتمرير إلى **وضع التشغيل**.
-
-3. حدد **حفظ التفضيلات**.
-
 ## <a name="how-it-works"></a>كيفية عمل ذلك
 
 > [!NOTE]
-> يدعم Microsoft Secure Score للأجهزة حاليا التكوينات التي تم تعيينها عبر "نهج المجموعة". بسبب دعم Intune الجزئي الحالي، قد تظهر التكوينات التي تم تعيينها من خلال Intune على أنها تكوين غير صحيح. اتصل بمسؤول تكنولوجيا المعلومات للتحقق من حالة التكوين الفعلي في حال كانت مؤسستك تستخدم Intune لإدارة التكوين الآمن.
+> يدعم Microsoft Secure Score للأجهزة حاليا التكوينات التي تم تعيينها عبر نهج المجموعة. بسبب دعم Intune الجزئي الحالي، قد تظهر التكوينات التي تم تعيينها من خلال Intune على أنها تكوين غير صحيح. اتصل بمسؤول تكنولوجيا المعلومات للتحقق من حالة التكوين الفعلي في حال كانت مؤسستك تستخدم Intune لإدارة التكوين الآمن.
 
 البيانات الموجودة في بطاقة Microsoft Secure Score for Devices هي نتاج عملية اكتشاف ثغرة مستمرة ومهمة. يتم تجميعها مع تقييمات اكتشاف التكوين التي تقوم باستمرار:
 
@@ -80,17 +68,17 @@ ms.locfileid: "63570653"
 
 2. حدد عنصر في القائمة. سيتم فتح لوحة المعلومات من خلال تفاصيل ذات صلة بالتوصية. حدد **خيارات المعالجة**.
 
-   :::image type="content" alt-text="توصيات الأمان ذات الصلة بالتحكم في الأمان." source="images/security-controls.png":::
+   :::image type="content" source="images/security-controls.png" alt-text="توصيات الأمان ذات الصلة ب عناصر التحكم في الأمان" lightbox="images/security-controls.png":::
 
 3. اقرأ الوصف لفهم سياق المشكلة وما يجب فعله بعد ذلك. حدد تاريخ الاستحقاق، وأضف الملاحظات، وحدد تصدير كل بيانات نشاط المعالجة إلى **CSV** حتى تتمكن من إرفاقه ببريد إلكتروني للمتابعة.
 
 4. **إرسال الطلب**. سترى رسالة تأكيد بأن مهمة الإصلاح قد تم إنشاؤها.
 
-   :::image type="content" alt-text="تأكيد إنشاء مهمة المعالجة." source="images/remediation-task-created.png":::
+   :::image type="content" source="images/remediation-task-created.png" alt-text="تأكيد إنشاء مهمة &quot;المعالجة&quot;" lightbox="images/remediation-task-created.png":::
 
 5. احفظ ملف CSV.
 
-   :::image type="content" alt-text="حفظ ملف csv." source="images/tvm_save_csv_file.png":::
+   :::image type="content" source="images/tvm_save_csv_file.png" alt-text="الصفحة التي تحتوي على خيار حفظ ملف CSV" lightbox="images/tvm_save_csv_file.png":::
 
 6. أرسل بريدا إلكترونيا للمتابعة إلى مسؤول تكنولوجيا المعلومات واسمح باحتوائك على الوقت الذي قمت بتم فيه نشر المعالجة في النظام.
 

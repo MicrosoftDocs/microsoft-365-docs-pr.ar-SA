@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-ransomware
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 79dee9b6750e21d9b2482d4a0482d87d7fc7434b
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: e90661932880ee146b8b1b81f8412e97d674749d
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "63571578"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755734"
 ---
 # <a name="hunt-for-ransomware"></a>البحث عن برامج الفدية الضارة
 
@@ -236,7 +236,7 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 - **TotalEvidenceCount** —عدد العلامات التي تم ملاحظتها
 - **UniqueEvidenceCount** —عدد أنواع العلامات التي تم ملاحظتها
 
-:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="مثال لاستعلام مدمج لنشاط برامج الفدية الضارة في مدخل Microsoft 365 Defender":::
+:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="مثال لاستعلام مدمج لنشاط برامج الفدية الضارة في مدخل Microsoft 365 Defender" lightbox="../../media/advanced-hunting-ransomware-query.png":::
 
 *تظهر نتائج الاستعلام الأجهزة المتأثرة وعدد مختلف علامات نشاط برامج الفدية الضارة*
 
@@ -254,7 +254,7 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 - [فهم المخطط](advanced-hunting-schema-tables.md)
 - [تطبيق أفضل ممارسات الاستعلام](advanced-hunting-best-practices.md)
 
-## <a name="additional-ransomware-resources"></a>موارد برامج الفدية الضارة الإضافية
+## <a name="more-ransomware-resources"></a>المزيد من موارد برامج الفدية الضارة
 
 المعلومات الأساسية من Microsoft:
 
@@ -290,7 +290,7 @@ Microsoft Defender لتطبيقات السحابة:
 
 منشورات مدونة فريق أمان Microsoft:
 
-- [3 خطوات لمنع برامج الفدية الضارة واستردادها (سبتمبر 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [ثلاث خطوات لمنع برامج الفدية الضارة واستردادها (سبتمبر 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [دليل لمكافحة برامج الفدية الضارة التي يتم تشغيلها من قبل الإنسان: الجزء 1 (سبتمبر 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
 
   الخطوات الأساسية حول كيفية إدارة فريق الكشف والاستجابة (DART) من Microsoft لإجراء عمليات التحقيق في أحداث برامج الفدية الضارة.

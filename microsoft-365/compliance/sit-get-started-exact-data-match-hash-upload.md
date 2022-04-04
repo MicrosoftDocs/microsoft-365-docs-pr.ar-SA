@@ -1,5 +1,5 @@
 ---
-title: قم بتهش جدول مصدر المعلومات الحساس وتحميله للحصول على بيانات دقيقة تتطابق مع أنواع المعلومات الحساسة
+title: تجزئة وتحميل جدول مصدر المعلومات الحساسة للحصول على بيانات مطابقة تماماً لأنواع المعلومات الحساسة
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: يطابق جدول مصدر المعلومات الحساس وتحميله للبيانات الدقيقة أنواع المعلومات الحساسة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8d3effe3d46375ffcaec268e4b3fc6d53fc5044e
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: e8726b17a3f87d61c8d63be7137ec8e465a5cd9a
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63575142"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568467"
 ---
-# <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>قم بتهش جدول مصدر المعلومات الحساس وتحميله للحصول على بيانات دقيقة تتطابق مع أنواع المعلومات الحساسة
+# <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>تجزئة وتحميل جدول مصدر المعلومات الحساسة للحصول على بيانات مطابقة تماماً لأنواع المعلومات الحساسة
 
 توضح لك هذه المقالة كيفية تزحزح جدول مصدر المعلومات الحساس وتحميله.
 
@@ -51,18 +51,19 @@ ms.locfileid: "63575142"
 ### <a name="best-practices"></a>أفضل الممارسات
 
 افصل بين عمليات تفرق البيانات الحساسة وتحميلها بحيث يمكنك عزل أي مشاكل في العملية بسهولة أكبر.
- 
+
 بعد الإنتاج، احتفظ بخطوتين منفصلتين في معظم الحالات. يؤدي تنفيذ عملية التكهيل على كمبيوتر معزول ثم نقل الملف للتحميل إلى كمبيوتر مواجه للإنترنت إلى ضمان عدم توفر البيانات الفعلية أبدا في نموذج نصي واضح في كمبيوتر ربما تم اختراقه بسبب اتصاله بالإنترنت.
 
-### <a name="ensure-your-sensitive-data-table-doesnt-have-formatting-issues"></a>تأكد من عدم وجود مشاكل في التنسيق في جدول البيانات الحساسة. 
+### <a name="ensure-your-sensitive-data-table-doesnt-have-formatting-issues"></a>تأكد من عدم وجود مشاكل في التنسيق في جدول البيانات الحساسة.
 
-قبل أن تقوم بتقحم البيانات الحساسة وتحميلها، قم بالبحث للتحقق من وجود أحرف خاصة قد تسبب مشاكل في تحليل المحتوى. يمكنك التحقق من أن الجدول بتنسيق مناسب للاستخدام مع EDM باستخدام وكيل تحميل EDM مع بناء الجملة التالي:
+قبل أن تقوم بتقحم البيانات الحساسة وتحميلها، قم بالبحث للتحقق من وجود أحرف خاصة قد تسبب مشاكل في تحليل المحتوى.
+يمكنك التحقق من أن الجدول بتنسيق مناسب للاستخدام مع EDM باستخدام وكيل تحميل EDM مع بناء الجملة التالي:
 
 ```powershell
-EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file] 
+EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 ```
 
-إذا كانت الأداة تشير إلى عدم تطابق في عدد الأعمدة، فقد يعود سبب ذلك إلى وجود فهامات أو أحرف اقتباس داخل القيم الموجودة في الجدول والتي يتم الخلط بينها وبين قيم مفهاة الأعمدة. ما لم تكن تحيط بقيمة كاملة، يمكن أن تتسبب علامات الاقتباس الفردية المزدوجة في تحديد الأداة بشكل غير جيد حيث يبدأ عمود فردي أو ينتهي. 
+إذا كانت الأداة تشير إلى عدم تطابق في عدد الأعمدة، فقد يعود سبب ذلك إلى وجود فهامات أو أحرف اقتباس داخل القيم الموجودة في الجدول والتي يتم الخلط بينها وبين قيم مفهاة الأعمدة. ما لم تكن تحيط بقيمة كاملة، يمكن أن تتسبب علامات الاقتباس الفردية المزدوجة في تحديد الأداة بشكل غير جيد حيث يبدأ عمود فردي أو ينتهي.
 
 **إذا وجدت أحرف اقتباس مفردة أو مزدوجة تحيط بالقيم الكاملة**: يمكنك تركها كما هي.
 
@@ -93,7 +94,7 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 > [!NOTE]
 > قبل بدء هذا الإجراء، تأكد من أنك عضو في مجموعة أمان **EDMDataUploaders\_**.
 
-> [!TIP] 
+> [!TIP]
 >بشكل اختياري، يمكنك تشغيل التحقق من الصحة مقابل ملف جدول مصدر المعلومات الحساس للتحقق من وجود أخطاء قبل التحميل عن طريق تشغيل:
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
@@ -106,7 +107,7 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 
 - [التجاري + سحابة القطاع الحكومي](https://go.microsoft.com/fwlink/?linkid=2088639) - يجب على معظم العملاء التجاريين استخدام هذا
 - [سحابة القطاع الحكومي-High](https://go.microsoft.com/fwlink/?linkid=2137521) - هذا خاص لمشتركي السحابة الحكومية عالية الأمان
-- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) - هذا خاص لعملاء السحابة في وزارة الدفاع الأمريكية
+- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) - هذا خاص Estados Unidos السحابة في وزارة الدفاع
 
 1. إنشاء دليل عمل ل EDMUploadAgent. على سبيل المثال **، C:\EDM\Data**. ضع الملف **PatientRecords.csv** هناك.
 
@@ -121,8 +122,8 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 
    `EdmUploadAgent.exe /Authorize`
 
-> [!IMPORTANT]
-> يجب تشغيل **EdmUploadAgent** من المجلد حيث تم تثبيته، مع الإشارة إلى المسار الكامل إلى ملفات البيانات. 
+   > [!IMPORTANT]
+   > يجب تشغيل **EdmUploadAgent** من المجلد حيث تم تثبيته، مع الإشارة إلى المسار الكامل إلى ملفات البيانات.
 
 4. سجل الدخول باستخدام حساب العمل أو المدرسة Microsoft 365 الذي تم إضافته إلى مجموعة EDM_DataUploaders الأمان. يتم استخراج معلومات المستأجر من حساب المستخدم للاتصال.
 
@@ -137,14 +138,15 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
    ```dos
    EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"] /AllowedBadLinesPercentage [value]
    ```
+
    > [!NOTE]
-> التنسيق الافتراضي لملف البيانات الحساسة هو قيم مفصولة بفصول. يمكنك تحديد ملف مفصول ب علامة تبويب عن طريق الإشارة إلى الخيار "{Tab}" باستخدام المعلمة /ColumnSeparator، أو يمكنك تحديد ملف مفصول بواسطة توجيه الخيار "|".
+   > التنسيق الافتراضي لملف البيانات الحساسة هو قيم مفصولة بفصول. يمكنك تحديد ملف مفصول ب علامة تبويب عن طريق الإشارة إلى الخيار "{Tab}" باستخدام المعلمة /ColumnSeparator، أو يمكنك تحديد ملف مفصول بواسطة توجيه الخيار "|".
+   >
+   > على سبيل المثال:`EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5`
 
-   مثال: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
+   إذا كان جدول المعلومات الحساسة به بعض القيم التي تم تنسيقها بشكل غير صحيح، ولكنك تريد استيراد البيانات المتبقية مع تجاهل الصفوف غير الصالحة على أي حال، يمكنك استخدام *المعلمة /AllowedBadLinesPercentage* في الأمر. يحدد المثال أعلاه عتبة خمسة بالمائة. وهذا يعني أن الأداة ستتقحم جدول المعلومات الحساسة وترفعه حتى لو كانت نسبة تصل إلى خمسة في المئة من الصفوف غير صالحة.
 
-إذا كان جدول المعلومات الحساسة به بعض القيم التي تم تنسيقها بشكل غير صحيح، ولكنك تريد استيراد البيانات المتبقية مع تجاهل الصفوف غير الصالحة على أي حال، يمكنك استخدام *المعلمة /AllowedBadLinesPercentage* في الأمر. يحدد المثال أعلاه عتبة خمسة بالمائة. وهذا يعني أن الأداة ستتقحم جدول المعلومات الحساسة وترفعه حتى لو كانت نسبة تصل إلى خمسة في المئة من الصفوف غير صالحة. 
-
-سيضيف هذا الأمر تلقائيا قيمة ملح تم إنشاؤها عشوائيا إلى ها هوة لمزيد من الأمان. بشكل اختياري، إذا كنت تريد استخدام قيمة الملح الخاصة بك، أضف **/Salt <saltvalue>** إلى الأمر. يجب أن تكون هذه القيمة 64 حرفا في الطول ويمكن أن تحتوي فقط على أحرف أ-ي و0-9 أحرف.
+   سيضيف هذا الأمر تلقائيا قيمة ملح تم إنشاؤها عشوائيا إلى ها هوة لمزيد من الأمان. بشكل اختياري، إذا كنت تريد استخدام قيمة الملح الخاصة بك، أضف **/Salt \<saltvalue\>** إلى الأمر. يجب أن تكون هذه القيمة 64 حرفا في الطول ويمكن أن تحتوي فقط على أحرف أ-ي و0-9 أحرف.
 
 6. تحقق من حالة التحميل عن طريق تشغيل هذا الأمر:
 
@@ -152,9 +154,9 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
    EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
    ```
 
-   مثال: **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**
+   على سبيل المثال:`EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords`
 
-   ابحث عن الحالة لتكون في **ProcessingInProgress**. تحقق مرة أخرى كل بضع دقائق حتى تتغير الحالة إلى **مكتمل**. بمجرد اكتمال الحالة، تكون بيانات EDM جاهزة للاستخدام. استنادا إلى حجم ملف جدول مصدر المعلومات الحساس، قد يستغرق ذلك بضع دقائق إلى عدة ساعات. 
+   ابحث عن الحالة لتكون في **ProcessingInProgress**. تحقق مرة أخرى كل بضع دقائق حتى تتغير الحالة إلى **مكتمل**. بمجرد اكتمال الحالة، تكون بيانات EDM جاهزة للاستخدام. استنادا إلى حجم ملف جدول مصدر المعلومات الحساس، قد يستغرق ذلك بضع دقائق إلى عدة ساعات.
 
 > [!TIP]
 > إذا كنت تريد أن يتم إعلامك بمجرد أن تكون البيانات الحساسة التي تم تحميلها جاهزة للاستخدام، فاتبع الإجراءات الواردة في إنشاء إعلامات لأنشطة [مطابقة البيانات بدقة](sit-edm-notifications-activities.md#create-notifications-for-exact-data-match-activities).
@@ -181,24 +183,24 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
    ```
 
-> [!NOTE]
-> التنسيق الافتراضي لملف البيانات الحساسة هو قيم مفصولة بفصول. يمكنك تحديد ملف مفصول ب علامة تبويب عن طريق الإشارة إلى الخيار "{Tab}" باستخدام المعلمة /ColumnSeparator، أو يمكنك تحديد ملف مفصول بواسطة توجيه الخيار "|".
+   > [!NOTE]
+   > التنسيق الافتراضي لملف البيانات الحساسة هو قيم مفصولة بفصول. يمكنك تحديد ملف مفصول ب علامة تبويب عن طريق الإشارة إلى الخيار "{Tab}" باستخدام المعلمة /ColumnSeparator، أو يمكنك تحديد ملف مفصول بواسطة توجيه الخيار "|".
 
-
-   سيخرج هذا ملفا مفواصلا وملفا ملحا بهذه الملحقات إذا لم تحدد **الخيار /Salt <saltvalue>** :
+   سيخرج هذا ملفا مفواصلا وملفا ملحا بهذه الملحقات إذا لم تحدد **الخيار /Salt \<saltvalue\>** :
 
    - . EdmHash
    - . EdmSalt
-
 
 2. انسخ هذه الملفات بطريقة آمنة إلى الكمبيوتر الذي تستخدمه لتحميل ملف جدول مصدر المعلومات الحساس (PatientRecords) إلى المستأجر.
 
 3. قم ب تخويل Upload EDM، وافتح نافذة موجه الأوامر كمسؤول، والتبديل إلى **دليل C:\EDM\Data** ثم قم بتشغيل الأمر التالي:
 
-   `EdmUploadAgent.exe /Authorize`
+   ```dos
+   EdmUploadAgent.exe /Authorize
+   ```
 
-> [!IMPORTANT]
-> يجب تشغيل **EdmUploadAgent** من المجلد حيث تم تثبيته، مع الإشارة إلى المسار الكامل إلى ملفات البيانات. 
+   > [!IMPORTANT]
+   > يجب تشغيل **EdmUploadAgent** من المجلد حيث تم تثبيته، مع الإشارة إلى المسار الكامل إلى ملفات البيانات.
 
 4. سجل الدخول باستخدام حساب العمل أو المدرسة Microsoft 365 الذي تم إضافته إلى مجموعة EDM_DataUploaders الأمان. يتم استخراج معلومات المستأجر من حساب المستخدم للاتصال.
 
@@ -219,6 +221,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    ```dos
    EdmUploadAgent.exe /GetDataStore
    ```
+
    سترى قائمة مخازن البيانات ومتى تم تحديثها آخر مرة.
 
 7. إذا كنت تريد رؤية كل تحميلات البيانات إلى مخزن معين، ف قم بتشغيل الأمر التالي في موجه أوامر Windows لرؤية قائمة بكل مخازن البيانات ومتى تم تحديثها:
@@ -226,8 +229,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    ```dos
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
-     
+
 ## <a name="next-step"></a>الخطوة التالية
 
 - [إنشاء بيانات دقيقة تتطابق مع نوع المعلومات الحساسة/حزمة القاعدة](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
-

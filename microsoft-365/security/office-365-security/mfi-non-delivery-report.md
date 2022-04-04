@@ -7,6 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
@@ -14,12 +15,12 @@ ms.custom:
 description: يمكن للمسؤولين معرفة كيفية استخدام تقرير تفاصيل عدم التسليم في لوحة معلومات تدفق البريد في مركز توافق الأمان & لمراقبة رموز الخطأ الأكثر شيوعا في تقارير عدم التسليم (المعروفة أيضا بالتقارير بعدم التسليم أو رسائل البريد المرتد) من المرسلين في مؤسستك.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 00efa42dbe9f3ca119d407c74d3711d99d6c0d5c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 73d48b831f42deca83b6b1b62fde09cd6c44562e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63568598"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679621"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>تقرير بعدم التسليم في مركز & الأمان
 

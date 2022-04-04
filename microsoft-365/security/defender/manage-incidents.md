@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 3418eac69930819fdb0e3fd8d1bae80312f89a9f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 14332b2787b59e2ef192741dc97e59a7c7cb5418
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63573330"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499496"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>إدارة الأحداث في Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "63573330"
 
 يمكنك إدارة الأحداث من تنبيهات  & من > على الإطلاق السريع لمدخل Microsoft 365 Defender ([security.microsoft.com](https://security.microsoft.com)). فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="مثال على قائمة انتظار الحادث." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="صفحة &quot;الأحداث&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 فيما يلي الطرق التي يمكنك من خلالها إدارة أحداثك:
 
@@ -53,7 +53,7 @@ ms.locfileid: "63573330"
 
 يمكنك إدارة الأحداث من الجزء **إدارة** الأحداث لحادث ما. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="مثال على جزء إدارة حادث لحادث." lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="جزء إدارة الأحداث في مدخل Microsoft 365 Defender" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 يمكنك عرض هذا الجزء من الارتباط **إدارة الحادث** على:
 

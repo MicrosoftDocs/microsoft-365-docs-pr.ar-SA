@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 71e4b3d5f2a8cbf147a9aa50dd849be14047e27d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 28b389292ed733318e5796a1be3ed9c11d2df462
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63575408"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466598"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>سياسات السماح بالوصول إلى الضيف والوصول إلى المستخدم الخارجي B2B
 
-تناقش هذه المقالة ضبط هوية الصفر الموثوق بها ونهج الوصول إلى الجهاز الموصى بها للسماح بالوصول إلى الضيوف والمستخدمين الخارجيين الذين لديهم حساب Azure Active Directory (Azure AD) Business-to-Business (B2B). يعتمد هذا الإرشاد على [الهوية المشتركة ونهج الوصول إلى الأجهزة](identity-access-policies.md).
+تناقش هذه المقالة ضبط ثقة معدومة الوصول إلى الأجهزة وهويتها الموصى بها للسماح بالوصول إلى الضيوف والمستخدمين الخارجيين الذين لديهم حساب Azure Active Directory (Azure AD) Business-to-Business (B2B). يعتمد هذا الإرشاد على [الهوية المشتركة ونهج الوصول إلى الأجهزة](identity-access-policies.md).
 
 تم تصميم هذه التوصيات لتطبيقها على **مستوى** الحماية لنقطة البداية. ولكن يمكنك أيضا ضبط التوصيات استنادا إلى احتياجاتك **الخاصة لحماية المؤسسة** **والأمان** المتخصصة.
 
@@ -38,7 +38,7 @@ ms.locfileid: "63575408"
 
 يعرض هذا الرسم التخطيطي السياسات التي تريد إضافتها أو تحديثها بين سياسات الوصول إلى الأجهزة والهوية المشتركة، لضيف B2B والوصول إلى المستخدم الخارجي.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="ملخص تحديثات النهج لحماية وصول الضيف." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="ملخص تحديثات النهج لحماية وصول الضيف" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
 
 يسرد الجدول التالي السياسات التي تحتاج إما إلى إنشائها وتحديثها. ترتبط النهج الشائعة بتعليمات التكوين المقترنة [في مقالة](identity-access-policies.md) سياسات الوصول إلى الأجهزة والهوية الشائعة.
 
@@ -49,7 +49,7 @@ ms.locfileid: "63575408"
 
 لتضمين الضيوف والمستخدمين الخارجيين أو استبعادهم في سياسات الوصول الشرطي، بالنسبة إلى الواجبات > المستخدمون والمجموعات > تضمين أو **استبعاد**، تحقق من جميع المستخدمين **الخارجيين والضيوف**.
 
-![لقطة شاشة لمراقبة عناصر التحكم لاستبعاد الضيوف والمستخدمين الخارجيين.](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png" alt-text="عناصر التحكم الخاصة باستبعاد الضيوف والمستخدمين الخارجيين" lightbox="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png":::
 
 ## <a name="more-information"></a>معلومات إضافية
 
@@ -81,12 +81,12 @@ Microsoft Teams المستخدمين التاليين:
 
 ## <a name="next-step"></a>الخطوة التالية
 
-![الخطوة 4: سياسات تطبيقات Microsoft 365 السحابة و Microsoft Defender لتطبيقات السحابة.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="سياسات تطبيقات Microsoft 365 السحابة Microsoft Defender for Cloud Apps" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 تكوين سياسات الوصول الشرطي ل:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)
-- [Microsoft Defender لتطبيقات السحابة](mcas-saas-access-policies.md)
+- [Microsoft Defender for Cloud Apps](mcas-saas-access-policies.md)
  

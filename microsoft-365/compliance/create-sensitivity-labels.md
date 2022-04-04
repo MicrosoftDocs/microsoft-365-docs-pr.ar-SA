@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'أحد المتطلبات لكل حماية البيانات في Microsoft: إنشاء تسميات الحساسية وتكوينها ونشرها لتصنيف بيانات مؤسستك وحمايتها.'
-ms.openlocfilehash: b5bc61de14f54d65e4ce5eb6f7ae78303626c123
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 5c80147c18cff8c27f8c205ab1ed600e892f7335
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63565960"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499562"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>إنشاء تسميات الحساسية ونهجها وتكوينها
 
@@ -52,7 +52,7 @@ ms.locfileid: "63565960"
     ![إنشاء تسمية حساسية.](../media/create-sensitivity-label-full.png)
 
     > [!NOTE]
-    > بشكل افتراضي، لا يوجد لدى المستأجرين أي تسميات ويجب عليك إنشاؤها. تظهر التسميات في الصورة على سبيل المثال التسميات الافتراضية التي تم [ترحيلها من Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
+    > بشكل افتراضي، لا يوجد لدى المستأجرين أي تسميات ويجب عليك إنشاؤها. تظهر التسميات في الصورة على سبيل المثال التسميات الافتراضية التي تم [ترحيلها من Azure حماية البيانات](/azure/information-protection/configure-policy-migrate-labels).
 
 3. في **الصفحة تعريف** نطاق هذه التسمية، تحدد الخيارات المحددة نطاق التسمية للاعدادات التي يمكنك تكوينها وأين ستكون مرئية عند نشرها:
 
@@ -96,13 +96,13 @@ ms.locfileid: "63565960"
 
 - استخدم *المعلمة LocaleSettings* للنشرات المتعددة الجنسيات بحيث يرى المستخدمون اسم التسمية وتميط الأداة بلغتهم المحلية. في [المقطع التالي](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) تكوين مثال يحدد اسم التسمية ونص تنقيط الأدوات لكل من الفرنسية والإيطالية والألمانية.
 
-- يدعم عميل التسمية الموحد في Azure Information Protection قائمة واسعة من الإعدادات المتقدمة [](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) التي تتضمن تعيين لون تسمية وتطبيق خاصية مخصصة عند تطبيق تسمية. للحصول على القائمة الكاملة، راجع الإعدادات [المتقدمة المتوفرة للتسميات](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) من دليل مسؤول هذا العميل.
+- يدعم عميل حماية البيانات Azure الموحد قائمة واسعة من الإعدادات المتقدمة التي تتضمن تعيين لون تسمية وتطبيق [](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) خاصية مخصصة عند تطبيق تسمية. للحصول على القائمة الكاملة، راجع الإعدادات [المتقدمة المتوفرة للتسميات](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) من دليل مسؤول هذا العميل.
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>تكوين مثال لتكوين تسمية حساسية للغات مختلفة
 
 يوضح المثال التالي تكوين PowerShell لتسمية تسمى "عام" مع نص نائب لنص الأداة. في هذا المثال، يتم تكوين اسم التسمية ونص شريط الأدوات لكل من الفرنسية والإيطالية والألمانية.
 
-نتيجة لهذا التكوين، يرى المستخدمون الذين لديهم تطبيقات Office تستخدم لغات العرض هذه أسماء التسميات وtitips باللغة نفسها. وبالمثل، إذا كان عميل التسمية الموحد لحماية معلومات Azure مثبتا على ملفات التسمية من "مستكشف الملفات"، فإن المستخدمين الذين لديهم إصدارات اللغات هذه من Windows يمكنهم رؤية أسماء التسميات وأصابع الأدوات بلغتهم المحلية عند استخدامهم إجراءات النقر بز الماوس الأيمن للتسمية.
+نتيجة لهذا التكوين، يرى المستخدمون الذين لديهم تطبيقات Office تستخدم لغات العرض هذه أسماء التسميات وtitips باللغة نفسها. وبالمثل، إذا كان عميل التسمية الموحد ل Azure حماية البيانات مثبتا على ملفات التسمية من مستكشف الملفات، فإن المستخدمين الذين لديهم إصدارات اللغات هذه من Windows يمكنهم رؤية أسماء التسميات وأصابع الأدوات بلغتهم المحلية عند استخدامهم إجراءات النقر بز الماوس الأيمن للتسمية.
 
 بالنسبة للغات التي تحتاج إلى دعمها، استخدم معرفات [Office (المعروفة](/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) أيضا باسم علامات اللغة)، وحدد الترجمة الخاصة بك لاسم التسمية وتميط الأداة.
 
@@ -168,20 +168,17 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 يبدأ هذا **الزر تكوين إنشاء** نهج، الذي يتيح لك تحرير التسميات المضمنة وإعدادات التسميات. عند إكمال التكوين، يتم نسخ أي تغييرات تلقائيا إلى المستخدمين والخدمات المحددة.
 
-عند استخدام تسميات مضمنة لتطبيقات Office على Windows و macOS و iOS و Android، يرى المستخدمون تسميات جديدة في غضون أربع ساعات، وفي غضون ساعة واحدة ل Word و Excel و PowerPoint على الويب عند تحديث المستعرض. ومع ذلك، اسمح حتى 24 ساعة لتكرار التغييرات على جميع التطبيقات والخدمات.
-
-قد يتم تحديث التطبيقات والخدمات الأخرى التي تدعم تسميات الحساسية بشكل متكرر أكثر من 24 ساعة باستخدام جداول التحديث ومشغلات تحديثات النهج الخاصة بها. تحقق من وثائقهم للحصول على التفاصيل. على سبيل المثال، بالنسبة إلى عميل التسمية الموحد لحماية معلومات Azure، راجع صف  تحديث النهج في المقارنات المفصلة في جدول عملاء [Azure Information Protection](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients).
-
-> [!TIP]
-> تذكر أن تعمل في تبعيات التوقيت التي قد تؤخر أحيانا تسميات الحساسية ونهج التسميات من العمل كما هو متوقع. على سبيل المثال، ملء تغييرات عضوية مجموعة أو مجموعة جديدة، وقيود النطاق الترددي وزمن تكرار الشبكة، وا التخزين المؤقت لعضوية المجموعة بواسطة [خدمة Azure Information Protection](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection) للملصقات التي تطبق التشفير.
-> 
-> مع العديد من التبعيات الخارجية التي يكون لكل منها دورات توقيت خاصة بها، من الجيد الانتظار لمدة 24 ساعة قبل قضاء الوقت في استكشاف الأخطاء وإصلاحها ونهج التسميات الخاصة بالتغييرات الأخيرة.
-
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>إعدادات نهج التسميات الإضافية مع & مركز التوافق PowerShell
 
 تتوفر إعدادات نهج التسميات الإضافية مع [الأمر cmdlet Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) [من Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
 
-يدعم عميل وضع التسميات الموحد في Azure Information Protection العديد من [](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) الإعدادات المتقدمة التي تتضمن عملية إعادة إرسال رسائل البريد الإلكتروني المرسلة من حلول التسميات الأخرى والرسائل المنبثقة في Outlook التي تحذر رسائل البريد الإلكتروني التي يتم إرسالها أو تضبطها أو تمنعها. للحصول على القائمة الكاملة، راجع الإعدادات المتقدمة المتوفرة لنهج [التسميات](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) من دليل مسؤول هذا العميل.
+يدعم عميل التسمية الموحد حماية البيانات Azure العديد من الإعدادات المتقدمة التي [](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) تتضمن عملية إعادة إرسال رسائل البريد الإلكتروني المرسلة من حلول التسميات الأخرى والرسائل المنبثقة في Outlook التي تحذر رسائل البريد الإلكتروني التي يتم إرسالها أو تضبطها أو تمنعها. للحصول على القائمة الكاملة، راجع الإعدادات المتقدمة المتوفرة لنهج [التسميات](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) من دليل مسؤول هذا العميل.
+
+## <a name="when-to-expect-new-labels-and-changes-to-take-effect"></a>متى يجب توقع أن تكون التسميات والتغييرات الجديدة حيز التنفيذ
+
+بالنسبة إلى التسميات وإعدادات نهج التسميات، اسمح بنشر التغييرات عبر الخدمات لمدة 24 ساعة. هناك العديد من التبعيات الخارجية التي يكون لكل منها دورات توقيت خاصة بها، لذا من الجيد الانتظار هذه الفترة الزمنية التي 24 ساعة قبل قضاء الوقت في استكشاف الأخطاء وإصلاحها ونهج التسميات الخاصة بالتغييرات الأخيرة.
+
+ومع ذلك، هناك بعض السيناريوهات التي يمكن أن يتم فيها إدخال تغييرات على نهج التسمية والتسمية بشكل أسرع أو أطول من 24 ساعة. على سبيل المثال، بالنسبة لتسميات الحساسية الجديدة والمحذوفة ل Word Excel و PowerPoint على الويب، قد ترى التحديثات تتكرر في غضون ساعة. ولكن بالنسبة إلى التكوينات التي تعتمد على ملء تغييرات عضوية مجموعة أو مجموعة جديدة، أو زمن تكرار الشبكة وقيود النطاق الترددي، قد تستغرق هذه التغييرات من 24 إلى 48 ساعة.
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>استخدام PowerShell لتسميات الحساسية ونهجها
 

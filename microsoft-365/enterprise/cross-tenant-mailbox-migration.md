@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: a368102b6cb4eabaadd459fd185d18e3a7dc7381
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e9ec5c27f5dabfa2df0f12ca6daecfcef860547c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63577004"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499364"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>ترحيل علبة البريد عبر المستأجر (معاينة)
 
@@ -38,7 +38,7 @@ ms.locfileid: "63577004"
 تصف هذه المقالة عملية نقل علب البريد عبر المستأجر وتوفر إرشادات حول كيفية إعداد المستأجرين المصدر والمستأجرين الهدف Exchange Online نقل محتوى علبة البريد.
 
    > [!NOTE]
-   > لقد قمنا مؤخرا بتحديث خطوات الإعداد لتمكين ترحيل علبة البريد عبر المستأجرين بحيث لا يتطلب مخزن مفاتيح Azure بعد الآن! إذا كانت هذه هي المرة الأولى التي تقوم فيها بالمعاينة، فلا حاجة إلى اتخاذ أي إجراء، كما يمكنك المتابعة واتبع الخطوات المفصلة في هذا المستند. إذا كنت قد بدأت في تكوين المستأجرين باستخدام أسلوب AKV السابق، فإننا نوصي بشدة ب إيقاف هذا التكوين أو إزالته لبدء استخدام هذا الأسلوب الجديد. إذا كانت عمليات ترحيل علب البريد في وضع التقدم باستخدام أسلوب AKV السابق، فالرجاء الانتظار حتى تكتمل عمليات الترحيل الموجودة واتبع الخطوات أدناه لتمكين الأسلوب المبسط الجديد. يتم أرشفة خطوات الإعداد المطلوبة في Azure Key Vault ولكن يمكن العثور عليها **[هنا](https://github.com/microsoft/cross-tenant/wiki/V1-Content#cross-tenant-mailbox-migration-preview)**، كمرجع.
+   > لقد قمنا مؤخرا بتحديث خطوات الإعداد لتمكين ترحيل علبة البريد عبر المستأجرين بحيث لا يتطلب Azure Key Vault! إذا كانت هذه هي المرة الأولى التي تقوم فيها بالمعاينة، فلا حاجة إلى اتخاذ أي إجراء، كما يمكنك المتابعة واتبع الخطوات المفصلة في هذا المستند. إذا كنت قد بدأت في تكوين المستأجرين باستخدام أسلوب AKV السابق، فإننا نوصي بشدة ب إيقاف هذا التكوين أو إزالته لبدء استخدام هذا الأسلوب الجديد. إذا كانت عمليات ترحيل علب البريد في وضع التقدم باستخدام أسلوب AKV السابق، فالرجاء الانتظار حتى تكتمل عمليات الترحيل الموجودة واتبع الخطوات أدناه لتمكين الأسلوب المبسط الجديد. Azure Key Vault خطوات الإعداد المطلوبة مؤرشفة ولكن يمكن العثور عليها **[هنا](https://github.com/microsoft/cross-tenant/wiki/V1-Content#cross-tenant-mailbox-migration-preview)**، كمرجع.
 
 ## <a name="preparing-source-and-target-tenants"></a>إعداد المستأجرين المصدر والمستأجرين الهدف
 
@@ -148,7 +148,7 @@ ms.locfileid: "63577004"
    
    # Enable customization if tenant is dehydrated
      $dehydrated=Get-OrganizationConfig | fl isdehydrated
-     if ($dehy -eq $true) {Enable-OrganizationCustomization}
+     if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
      
    $AppId = "[guid copied from the migrations app]"
 
@@ -284,16 +284,16 @@ ms.locfileid: "63577004"
      |                      |                                                                         |
 
    - قد يتم تضمين سمات إضافية في Exchange المختلطة بالفعل. وإذا لم يكن الأمر كذلك، يجب تضمينها.
-   - msExchBlockedSendersHash – إعادة كتابة بيانات المرسلين الآمنة والمحظرة عبر الإنترنت من العملاء إلى Active Directory في الموقع.
-   - msExchSafeRecipientsHash – إعادة كتابة بيانات المرسلين الآمنة والمملوكة عبر الإنترنت من العملاء إلى Active Directory في الموقع.
-   - msExchSafeSendersHash – إعادة كتابة بيانات المرسلين الآمنة والمحظرة عبر الإنترنت من العملاء إلى Active Directory في الموقع.
+   - msExchBlockedSendersHash – إعادة كتابة بيانات المرسلين الآمنة والمحظرة عبر الإنترنت من العملاء Active Directory محلي.
+   - msExchSafeRecipientsHash – كتابة بيانات المرسلين الآمنة والمحظرة عبر الإنترنت من العملاء Active Directory محلي.
+   - msExchSafeSendersHash – إعادة كتابة بيانات المرسلين الآمنة والمحظرة عبر الإنترنت من العملاء Active Directory محلي.
 
 2. إذا كانت علبة البريد المصدر في LitigationHold وكان حجم علبة البريد المصدر "العناصر القابلة لاستردادها" أكبر من حجم قاعدة البيانات الافتراضية (30 غيغابايت)، لن يتم المتابعة نظرا لأن الحصة النسبية الهدف أقل من حجم علبة البريد المصدر. يمكنك تحديث كائن MailUser الهدف لنقل علامة علبة بريد ELC من البيئة المصدر إلى الهدف، مما يؤدي إلى تشغيل النظام الهدف لتوسيع الحصة النسبية ل MailUser إلى 100 غيغابايت، مما يسمح بالنقل إلى الهدف. ستعمل هذه الإرشادات فقط للهوية المختلطة التي تعمل ب Azure AD الاتصال، حيث لا يتم عرض الأوامر الخاصة بطوابع علامة ELC لمسؤولي المستأجرين.
 
     > [!NOTE]
     > عينة – كما هو، لا يوجد ضمان
     >
-    > يفترض هذا البرنامج النصي اتصالا بكل من علبة البريد المصدر (للحصول على قيم المصدر) والهدف المحلي Active Directory (لطوابع كائن ADUser). إذا كان المصدر لديه دعوى قضائية أو تم تمكين استرداد عنصر واحد، فحدد هذا على الحساب الوجهة.  سيزيد ذلك حجم تفريغ حساب الوجهة إلى 100 غيغابايت.
+    > يفترض هذا البرنامج النصي اتصالا بكل من علبة البريد المصدر (للحصول على قيم المصدر) Active Directory محلي الهدف (لطوابع كائن ADUser). إذا كان المصدر لديه دعوى قضائية أو تم تمكين استرداد عنصر واحد، فحدد هذا على الحساب الوجهة.  سيزيد ذلك حجم تفريغ حساب الوجهة إلى 100 غيغابايت.
 
     ```powershell
     $ELCValue = 0
@@ -399,7 +399,7 @@ Get-MoveRequest -Flags "CrossTenant"
 **هل يمكنك توفير برامج نصية على سبيل المثال لنسخ السمات المستخدمة في الاختبار؟**
 
 > [!NOTE]
-> عينة – كما هو، لا يوجد ضمان يفترض هذا البرنامج النصي اتصالا بكل من علبة البريد المصدر (للحصول على القيم المصدر) والهدف المحلي خدمات مجال Active Directory (لتضمين كائن ADUser). إذا كان المصدر لديه دعوى قضائية أو تم تمكين استرداد عنصر واحد، فحدد هذا على الحساب الوجهة.  سيزيد ذلك حجم تفريغ حساب الوجهة إلى 100 غيغابايت.
+> نموذج – كما هو، لا يوجد ضمان يفترض هذا البرنامج النصي اتصالا بكل من علبة البريد المصدر (للحصول على قيم المصدر) والهدف Active Directory محلي Domain Services (لتضمين كائن ADUser). إذا كان المصدر لديه دعوى قضائية أو تم تمكين استرداد عنصر واحد، فحدد هذا على الحساب الوجهة.  سيزيد ذلك حجم تفريغ حساب الوجهة إلى 100 غيغابايت.
 
 
 
@@ -514,7 +514,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 نعم، ولكننا لا نحتفظ إلا بأذونات المتجر كما هو موضح في المقالات التالية:
 
-- [مستندات Microsoft | إدارة الأذونات للمستلمين في Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
+- [Microsoft Docs | إدارة الأذونات للمستلمين في Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
 - [دعم Microsoft | كيفية منح Exchange علب Outlook البريد في Office 365 مخصصة](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
@@ -540,9 +540,9 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 نظرا لأن عمليات الترحيل عبر المستأجرين لا تقوم بتصدير التسميات ولا توجد أي طريقة لمشاركة التسميات بين المستأجرين، يمكنك تحقيق ذلك فقط عن طريق إعادة إنشاء التسميات في المستأجر الوجهة.
 
-**هل تدعم نقل Microsoft 365 المجموعات؟**
+**هل تدعم نقل مجموعات Microsoft 365؟**
 
-لا تدعم حاليا ميزة ترحيل علب البريد عبر المستأجر ترحيل Microsoft 365 المجموعات.
+لا تدعم حاليا ميزة ترحيل علب البريد عبر المستأجر ترحيل مجموعات Microsoft 365.
 
 **هل يمكن لمسؤول المستأجر المصدر إجراء بحث eDiscovery في علبة بريد بعد ترحيل علبة البريد إلى المستأجر الجديد/الهدف؟**
 
@@ -660,16 +660,16 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
       | Exchange Online POP                              |
       | Exchange Online Protection                       |
       | حواجز المعلومات                             |
-      | حماية المعلومات Office 365 - Premium  |
-      | حماية المعلومات Office 365 - قياسي |
+      | حماية البيانات Office 365 - Premium  |
+      | حماية البيانات Office 365 - قياسي |
       | Insights بواسطة MyAnalytics                          |
       | Microsoft 365 التدقيق المتقدم                  |
       | Microsoft Bookings                               |
       | مركز أعمال Microsoft                        |
       | Microsoft MyAnalytics (كامل)                     |
-      | eDiscovery المتقدم في Office 365                   |
-      | Microsoft Defender Office 365 (الخطة 1)       |
-      | Microsoft Defender Office 365 (الخطة 2)       |
+      | Office 365 Advanced eDiscovery                   |
+      | Microsoft Defender لـ Office 365 (الخطة 1)       |
+      | Microsoft Defender لـ Office 365 (الخطة 2)       |
       | Office 365 إدارة الوصول المتميزة          |
       | Premium التشفير في Office 365                 |
       |                                                  |

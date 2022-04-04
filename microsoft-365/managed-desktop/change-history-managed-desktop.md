@@ -13,16 +13,31 @@ f1.keywords:
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 57b4119c1c96132b2f9a5c715cb498f228802fcc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c979ace1b5d3f1fa807384c769c5711c9fc2fda7
+ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63566484"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63761489"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>محفوظات التغيير لوثائق Microsoft Managed Desktop
 
-تسرد هذه المقالة المقالات الجديدة والمحدثة في وثائق [Microsoft Managed Desktop](index.yml). المقالات "محدثة" بها إضافات مادية أو تصحيحات-- لا يتم سرد التصحيحات البسيطة مثل تصحيح الأخطاء الكاتبة أو النمط أو مشاكل التنسيق. يمكنك دائما عرض محفوظات الالتزامات المحددة (بما في ذلك تفاصيل أي تغييرات) من خلال زيارة إعادة الاكتتاب [في](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop) GitHub.
+تسرد هذه المقالة المقالات الجديدة والمحدثة في وثائق [Microsoft Managed Desktop](index.yml). تم إدراج إضافات أو تصحيحات المواد في المقالات "محدثة"، ولا يتم إدراج تصحيحات بسيطة مثل تصحيح الأخطاء الكاتبة أو النمط أو مشاكل التنسيق. يمكنك دائما عرض محفوظات الالتزامات المحددة (بما في ذلك تفاصيل أي تغييرات) من خلال زيارة إعادة الاكتتاب [في](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop) GitHub.
+
+## <a name="march-2022"></a>مارس 2022
+
+مقالة جديدة أو تم تغييرها | الوصف
+--- | ---
+| [مرجع الإعدادات القابلة للتكوين](working-with-managed-desktop/config-setting-ref.md) | متطلبات الوكيل الإضافية المضافة |
+| [تعريف تجربة المستخدم](get-started/localization.md) | ملاحظة مضافة إلى القسم "تثبيت المزيد من اللغات" |
+| [مرجع الإعدادات القابلة للتكوين](working-with-managed-desktop/config-setting-ref.md) | ملاحظة مضافة حول Legacy Edge |
+
+## <a name="february-2022"></a>فبراير 2022
+
+مقالة جديدة أو تم تغييرها | الوصف
+--- | ---
+| [تقرير مقاييس الخدمة](working-with-managed-desktop/service-metrics-report.md) | إضافة تقرير مقياس الخدمة |
+| [Microsoft Edge](get-started/edge-browser-app.md) | المقالة المحدثة |
 
 ## <a name="october-2021"></a>أكتوبر 2021
 

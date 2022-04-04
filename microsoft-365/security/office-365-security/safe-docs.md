@@ -1,5 +1,5 @@
 ---
-title: خزينة المستندات في Microsoft Defender Office 365
+title: خزينة المستندات في Microsoft Defender لـ Office 365
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,12 +16,12 @@ ms.collection:
 description: تعرف على خزينة المستندات في Microsoft 365 E5/A5 أو Microsoft 365 E5/A5.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: beb34c04f93fe853678b30bcd9b5f7a621f4666b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ab5e35954cac20a18e34f418b5b9fcdc7f2fd007
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63566160"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466334"
 ---
 # <a name="safe-documents-in-microsoft-365-e5a5"></a>خزينة المستندات في Microsoft 365 E5/A5
 
@@ -30,7 +30,7 @@ ms.locfileid: "63566160"
 **ينطبق على**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-خزينة المستندات هي ميزة متميزة تستخدم الواجهة الخلفية السحابية ل [Microsoft Defender ل Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) لمسح مستندات Office في "طريقة عرض محمية" أو "[حماية](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46) التطبيقات" [](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) Office.
+خزينة المستندات هي ميزة متميزة تستخدم الواجهة الخلفية السحابية ل [Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) لمسح مستندات Office في "طريقة عرض محمية" أو "حماية [التطبيقات](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)" Office.[](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
 
 لا يحتاج المستخدمون إلى تثبيت Defender for Endpoint على أجهزتهم المحلية خزينة حماية المستندات. يحصل المستخدمون خزينة حماية المستندات إذا تم تلبية كل المتطلبات التالية:
 
@@ -41,7 +41,7 @@ ms.locfileid: "63566160"
   - Microsoft 365 E5
   - الأمان في Microsoft 365 E5
 
-  خزينة المستندات غير مضمنة في Microsoft Defender Office 365 الترخيص.
+  خزينة المستندات غير مضمنة في Microsoft Defender لـ Office 365 الترخيص.
 
   لمزيد من المعلومات، راجع [أسماء المنتجات ومعرفات خطة الخدمة للترخيص](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
 
@@ -67,7 +67,7 @@ ms.locfileid: "63566160"
 
 ### <a name="how-does-microsoft-handle-your-data"></a>كيف تتعامل Microsoft مع بياناتك؟
 
-للحفاظ على حمايتك، خزينة المستندات الملفات إلى [سحابة Microsoft Defender لنقطة](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) النهاية لتحليلها. يمكنك العثور على تفاصيل حول كيفية تعامل Microsoft Defender for Endpoint مع بياناتك هنا: [Microsoft Defender لتخزين بيانات نقطة النهاية والخصوصية](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
+للحفاظ على حمايتك، خزينة المستندات الملفات [إلى Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) السحابة لتحليلها. يمكن العثور على Microsoft Defender لنقطة النهاية كيفية معالجة البيانات هنا: Microsoft Defender لنقطة النهاية [تخزين البيانات والخصوصية](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
 لا يتم الاحتفاظ بالملفات خزينة المستندات في Defender for Endpoint بعد الوقت المطلوب للتحليل (عادة ما يكون أقل من 24 ساعة).
 
@@ -83,7 +83,7 @@ ms.locfileid: "63566160"
 
    عند الانتهاء، انقر فوق **حفظ**.
 
-   ![خزينة إعدادات المستندات بعد تحديد الإعدادات "عام" على خزينة المرفقات.](../../media/safe-docs-global-settings.png)
+   :::image type="content" source="../../media/safe-docs-global-settings.png" alt-text="إعدادات خزينة بعد تحديد الإعدادات &quot;عام&quot; على خزينة المرفقات" lightbox="../../media/safe-docs-global-settings.png":::
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>استخدام Exchange Online PowerShell لتكوين خزينة المستندات
 
@@ -119,11 +119,11 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 - [عرض Microsoft 365 تفاصيل الخدمة وترخيص الحساب باستخدام PowerShell](/microsoft-365/enterprise/view-account-license-and-service-details-with-microsoft-365-powershell)
 - [أسماء المنتجات ومعرفات خطط الخدمة للترخيص](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
 
-### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>التمكن من الوصول إلى خدمة Microsoft Defender for Endpoint لتمكين إمكانات التدقيق
+### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>التمكن من Microsoft Defender لنقطة النهاية الخدمة لتمكين إمكانات التدقيق
 
-لتمكين إمكانات التدقيق، يجب أن يكون Microsoft Defender ل Endpoint مثبتا على الجهاز المحلي. لنشر Microsoft Defender لنقطة النهاية، تحتاج إلى الانتقال إلى مختلف مراحل النشر. بعد التهيئة، يمكنك تكوين قدرات التدقيق في Microsoft 365 Defender المدخل.
+لتمكين إمكانات التدقيق، يجب أن يكون الجهاز المحلي Microsoft Defender لنقطة النهاية مثبتا. لنشر Microsoft Defender لنقطة النهاية، تحتاج إلى الانتقال إلى مختلف مراحل النشر. بعد التهيئة، يمكنك تكوين قدرات التدقيق في Microsoft 365 Defender المدخل.
 
-لمعرفة المزيد، راجع [Onboard إلى خدمة Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding). إذا كنت بحاجة إلى مساعدة إضافية، يمكنك الرجوع إلى استكشاف مشاكل [تشغيل نقطة النهاية وإصلاحها في Microsoft Defender](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding).
+لمعرفة المزيد، راجع [لوحة Microsoft Defender لنقطة النهاية الخدمة](/microsoft-365/security/defender-endpoint/onboarding). إذا كنت بحاجة إلى مساعدة إضافية، ف الرجوع إلى استكشاف الأخطاء وإصلاحها Microsoft Defender لنقطة النهاية [التكحيل](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding).
 
 ### <a name="how-do-i-know-this-worked"></a>كيف أتأكد من نجاح هذا الأمر؟
 

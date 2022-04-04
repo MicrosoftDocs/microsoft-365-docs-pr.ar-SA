@@ -8,7 +8,7 @@ metadata:
   manager: scotv
   ms.reviewer: mijeffer, pablom
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.localizationpriority: medium
   ms.collection: M365-subscription-management
@@ -20,12 +20,12 @@ metadata:
   - MET150
   description: يمكنك العثور على إجابات على الأسئلة الشائعة حول عمليات شراء الخدمة الذاتية.
   ms.date: 09/15/2020
-  ms.openlocfilehash: 026269d86bda075d460e3f62d64bb8a8a36cfaf9
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: 288548642ec4d0f9c9d7c49cb3f5fb562e4a049d
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63570288"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63679467"
 title: الأسئلة الشائعة حول شراء الخدمة الذاتية
 summary: >
   توفر خدمة الشراء الذاتي للمستخدمين فرصة تجربة التقنيات الجديدة وتطوير الحلول التي تعود بالفائدة على مؤسساتهم الكبيرة في النهاية. يمكن لفرق المشتريات المركزية وفرق IT رؤية جميع المستخدمين الذين يشترون حلول شراء الخدمة الذاتية ونشرها من <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">خلال</a> مركز مسؤولي Microsoft 365. يمكن للمسؤولين إيقاف تشغيل شراء الخدمة الذاتية على أساس كل منتج عبر PowerShell. لمعرفة المزيد، راجع [استخدام AllowSelfServicePurchase للوحدة النمطية MSCommerce PowerShell](allowselfservicepurchase-powershell.md).

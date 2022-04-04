@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 9838d7f3ffed46c62891822c6e3761e36d49baf5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: eec3881d2fdb53bc03e4e730fecaf6f1c78c98c7
+ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63570350"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63755855"
 ---
 # <a name="device-profile-page"></a>صفحة ملف تعريف الجهاز
 
@@ -36,7 +36,7 @@ ms.locfileid: "63570350"
 
 يتم تقسيم صفحة ملف التعريف إلى مقاطع واسعة متعددة.
 
-![صورة لصفحة ملف تعريف الجهاز مع (1) منطقة علامة التبويب (2) شريط جانبي و(3) إجراءات تم تمييزها باللون الأحمر.](../../media/mtp-device-profile/hybrid-device-overall.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-overall.png" alt-text="صفحة ملف تعريف الجهاز في مدخل Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-overall.png":::
 
 يسرد شريط الجانب (1) التفاصيل الأساسية حول الجهاز.
 
@@ -48,7 +48,7 @@ ms.locfileid: "63570350"
 
 إلى جانب منطقة المحتوى الرئيسي لصفحة ملف تعريف الجهاز، يوجد شريط جانبي.
 
-![صورة ل علامة تبويب "شريط جانبي" لملف تعريف الجهاز.](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
+:::image type="content" source="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png" alt-text="علامة التبويب &quot;شريط جانبي&quot; لملف تعريف الجهاز في مدخل Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/azure-atp-only-device-sidebar.png":::
 
 يسرد شريط جانبي الاسم الكامل للجهاز ومستوى التعرض للضوء. كما يوفر أيضا بعض المعلومات الأساسية المهمة في أقسام فرعية صغيرة يمكن تبديلها مفتوحة أو مغلقة، مثل:
 
@@ -66,7 +66,7 @@ ms.locfileid: "63570350"
 
 توفر إجراءات الاستجابة طريقة سريعة للدفاع عن التهديدات وتحليلها.
 
-![صورة شريط الإجراءات لملف تعريف الجهاز.](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-long-action-bar.png" alt-text="شريط الإجراءات لملف تعريف الجهاز في مدخل Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-long-action-bar.png":::
 
 > [!IMPORTANT]
 > * [تتوفر إجراءات](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) الاستجابة فقط إذا كان الجهاز مسجلا في Microsoft Defender لنقطة النهاية.
@@ -94,7 +94,7 @@ ms.locfileid: "63570350"
 
 علامة التبويب الافتراضية هي **نظرة عامة**. إنه يوفر نظرة سريعة على حقيقة الأمان الأكثر أهمية حول الجهاز.
 
-![صورة ل علامة التبويب "نظرة عامة" لملف تعريف الجهاز.](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-overview.png" alt-text="علامة التبويب &quot;نظرة عامة&quot; لملف تعريف الجهاز في مدخل Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-overview.png":::
 
 هنا، يمكنك الحصول على نظرة سريعة على التنبيهات النشطة للجهاز وأي مستخدمين مسجلين حاليا.
 
@@ -104,7 +104,7 @@ ms.locfileid: "63570350"
 
 تحتوي **علامة التبويب** تنبيهات على قائمة بالتنبيهات التي تم رفعها على الجهاز، من كل من Microsoft Defender for Identity و Microsoft Defender for Endpoint.
 
-![صورة ل علامة تبويب التنبيهات لملف تعريف الجهاز.](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-alerts.png" alt-text="علامة التبويب &quot;تنبيهات&quot; لملف تعريف الجهاز في مدخل Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-alerts.png":::
 
 يمكنك تخصيص عدد العناصر المعروضة، بالإضافة إلى الأعمدة التي يتم عرضها لكل عنصر. السلوك الافتراضي هو سرد 30 عنصر في كل صفحة.
 
@@ -122,7 +122,7 @@ ms.locfileid: "63570350"
 
 يوجد أسفل المخطط قائمة بالأحداث الخاصة بمجموعة التواريخ المحددة.
 
-![صورة ل علامة تبويب المخطط الزمني لملف تعريف الجهاز.](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-timeline.png" alt-text="علامة التبويب &quot;المخطط الزمني&quot; لملف تعريف الجهاز في مدخل Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-timeline.png":::
 
 يمكن تخصيص عدد العناصر المعروضة والأعمدة الموجودة في القائمة. سرد الأعمدة الافتراضية وقت الحدث والمستخدم النشط ونوع الإجراء والكيانات (العمليات) والمعلومات الإضافية حول الحدث.
 
@@ -136,7 +136,7 @@ ms.locfileid: "63570350"
 
 **تسرد علامة التبويب توصيات** الأمان الإجراءات التي يمكنك اتخاذها لحماية الجهاز. سيفتح تحديد عنصر في هذه القائمة قائمة منبهاة حيث يمكنك الحصول على إرشادات حول كيفية تطبيق التوصية.
 
-![صورة ل علامة تبويب توصيات الأمان لملف تعريف الجهاز.](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png" alt-text="علامة التبويب &quot;توصيات الأمان&quot; لملف تعريف الجهاز في مدخل Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png":::
 
 كما هو الأمر مع علامات التبويب السابقة، يمكن تخصيص عدد العناصر المعروضة لكل صفحة، بالإضافة إلى الأعمدة المرئية.
 
@@ -146,7 +146,7 @@ ms.locfileid: "63570350"
 
 **تسرد علامة تبويب** مخزون البرامج البرامج المثبتة على الجهاز.
 
-![صورة ل علامة تبويب مخزون البرامج لملف تعريف الجهاز.](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png" alt-text="علامة التبويب &quot;مخزون البرامج&quot; لملف تعريف الجهاز في مدخل Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png":::
 
 تعرض طريقة العرض الافتراضية مورد البرنامج، رقم الإصدار المثبت، وعدد نقاط ضعف البرامج المعروفة، ورؤى المخاطر، رمز المنتج، والعلامات. يمكن تخصيص عدد العناصر المعروضة والأعمدة المعروضة.
 
@@ -158,7 +158,7 @@ ms.locfileid: "63570350"
 
 **تسرد علامة التبويب نقاط** الضعف المكتشفة أي نقاط الضعف والمآثر الشائعة (CVEs) التي قد تؤثر على الجهاز.
 
-![صورة علامة تبويب نقاط الضعف المكتشفة لملف تعريف الجهاز.](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png" alt-text="علامة التبويب &quot;نقاط الضعف المكتشفة&quot; لملف تعريف الجهاز في مدخل Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png":::
 
 تسرد طريقة العرض الافتراضية خطورة CVE ونقاط الضعف الشائعة (CVS) والبرامج ذات الصلة ب CVE، وعند نشر CVE، وعند آخر تحديث ل CVE، والتهديدات المقترنة ب CVE.
 
@@ -170,7 +170,7 @@ ms.locfileid: "63570350"
 
 **تسرد علامة التبويب KBs** المفقودة أي تحديثات Microsoft لم يتم تطبيقها بعد على الجهاز. إن "KBs" المعنية هي [مقالات قاعدة](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) المعارف التي تصف هذه التحديثات؛ على سبيل المثال [، KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
-![صورة علامة تبويب kbs مفقودة لملف تعريف الجهاز.](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
+:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG" alt-text="علامة التبويب &quot;ملفات KBs مفقودة&quot; لملف تعريف الجهاز في مدخل Microsoft 365 Defender" lightbox="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG":::
 
 تسرد طريقة العرض الافتراضية النشرة التي تحتوي على التحديثات، إصدار نظام التشغيل، المنتجات المتأثرة، CVEs التي تم تناولها، رقم KB، والعلامات.
 

@@ -1,5 +1,5 @@
 ---
-title: نظرة عامة حول Microsoft Defender لخطة نقطة النهاية 1
+title: نظرة عامة Microsoft Defender لنقطة النهاية الخطة 1
 description: احصل على نظرة عامة حول Defender for Endpoint Plan 1. تعرف على الميزات والإمكانات المضمنة في اشتراك حماية نقطة النهاية هذا.
 search.appverid: MET150
 author: denisebmsft
@@ -17,27 +17,27 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 50dbe395bee852601aae8e834514c6bbac3dd84d
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: d7e7f7d7c22da007187db5df8bd773dca798597c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63574627"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466290"
 ---
-# <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>نظرة عامة حول Microsoft Defender لخطة نقطة النهاية 1
+# <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>نظرة عامة Microsoft Defender لنقطة النهاية الخطة 1
 
 **ينطبق على**
 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender ل Endpoint هو نظام أساسي لأمن نقطة نهاية المؤسسة تم تصميمه لمساعدة المؤسسات مثل مؤسستك على منع التهديدات المتقدمة والكشف عنها والتحقق منها والاستجابة لها. يسرنا أن نعلن أن Defender for Endpoint متوفر الآن في خطتين: 
+Microsoft Defender لنقطة النهاية هو نظام أساسي لأمن نقطة نهاية المؤسسة مصمم لمساعدة المؤسسات مثل مؤسستك على منع التهديدات المتقدمة والكشف عنها والتحقق منها والاستجابة لها. يسرنا أن نعلن أن Defender for Endpoint متوفر الآن في خطتين: 
 
 - **Defender for Endpoint Plan 1**، الموضح في هذه المقالة؛ و 
 - **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**، المتوفرة بشكل عام، والمعروفة سابقا باسم [Defender for Endpoint](microsoft-defender-endpoint.md).
 
 تصف المربعات الخضراء في الصورة التالية ما هو مضمن في خطة Defender for Endpoint 1:
 
-:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="رسم تخطيطي ل Defender for Endpoint Plan 1":::
+:::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="ما الذي تم حسابه باستخدام Defender for Endpoint الخطة 1" lightbox="../../media/mde-p1/mde-p1-overview-diagram.png":::
 
 استخدم هذا الدليل ل:
 
@@ -178,7 +178,7 @@ Microsoft Defender ل Endpoint هو نظام أساسي لأمن نقطة نها
 - **يسرد مركز** الإجراءات إجراءات الإصلاح التي تم اتخاذها. على سبيل المثال، إذا تم إرسال ملف إلى الفحص، أو تم حظر عنوان URL، يتم سرد كل إجراء في مركز الإجراءات ضمن علامة **التبويب** محفوظات.
 - يتضمن **قسم** التقارير تقارير تظهر التهديدات التي تم الكشف عنها ووضعها. 
 
-لمعرفة المزيد، راجع [بدء العمل باستخدام Microsoft Defender لخطة نقطة النهاية 1](mde-plan1-getting-started.md).
+لمعرفة المزيد، راجع بدء [Microsoft Defender لنقطة النهاية الخطة 1](mde-plan1-getting-started.md).
 
 ### <a name="apis"></a>واجهات برمجة التطبيقات
 
@@ -199,7 +199,7 @@ Microsoft Defender ل Endpoint هو نظام أساسي لأمن نقطة نها
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-- [مقارنة Microsoft Defender لخطة نقطة النهاية 1 مع الخطة 2](defender-endpoint-plan-1-2.md)
+- [مقارنة Microsoft Defender لنقطة النهاية 1 مع الخطة 2](defender-endpoint-plan-1-2.md)
 - [إعداد وتكوين Defender لخطة نقطة النهاية 1](mde-p1-setup-configuration.md)
 - [بدء العمل مع Defender for Endpoint الخطة 1](mde-plan1-getting-started.md)
 - [إدارة Defender لخطة نقطة النهاية 1](mde-p1-maintenance-operations.md)

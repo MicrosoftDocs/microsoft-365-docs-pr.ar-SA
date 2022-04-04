@@ -23,12 +23,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d31fa35ddf84b63a115cf3128673794617fcc730
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: ed80d57d25fea2f3c19b6fe6363f993569c68a92
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63575807"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499430"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -49,7 +49,7 @@ Microsoft Secure Score هو قياس لوضعية الأمان في المؤسس
 
 تحصل المؤسسات على إمكانية الوصول إلى مرئيات قوية للمقاييس والاتجاهات، والتكامل مع منتجات Microsoft الأخرى، ومقارنة النتائج مع مؤسسات مماثلة، والمزيد. يمكن أن تعكس النتيجة أيضا عندما تعالج حلول  الأطراف الخارجية الإجراءات الموصى بها.
 
-![الصفحة الرئيسية ل "نقاط آمنة".](../../media/secure-score/secure-score-home-page.png)
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="الصفحة الرئيسية ل Microsoft Secure Score في مدخل Microsoft 365 Defender Microsoft" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 ## <a name="how-it-works"></a>كيفية عمل ذلك
 

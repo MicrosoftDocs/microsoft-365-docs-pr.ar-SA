@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e7253993a1c05bd25e6dd13865826c42dd7603a
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 5c5a457d960f7dd7906c7d26a099d242507fbe86
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63571513"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499188"
 ---
 # <a name="take-response-actions-on-a-file"></a>اتخاذ إجراءات الاستجابة على ملف
 
@@ -27,7 +27,9 @@ ms.locfileid: "63571513"
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+- [Microsoft Defender لنقطة النهاية 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -49,17 +51,12 @@ ms.locfileid: "63571513"
 
 تتطلب بعض الإجراءات أذونات معينة. يصف الجدول التالي الإجراء الذي يمكن أن تتخذه بعض الأذونات على الملفات القابلة للتنفيذ القابلة للنقل (PE) وغير PE:
 
-<br>
-
-****
-
 |الإذن|ملفات PE|ملفات غير PE|
 |---|:---:|:---:|
 |عرض البيانات|X|X|
 |التحقيق في التنبيهات|&#x2611;|X|
 |الاستجابة المباشرة الأساسية|X|X|
 |الاستجابة المباشرة متقدمة|&#x2611;|&#x2611;|
-|
 
 لمزيد من المعلومات حول الأدوار، راجع [إنشاء أدوار وإدارتها للتحكم بالوصول المستند إلى الدور](user-roles.md).
 
@@ -93,15 +90,15 @@ ms.locfileid: "63571513"
 
 2. انتقل إلى الشريط العلوي وحدد **إيقاف وفحص ملف**.
 
-   ![صورة إجراء ملف إيقاف وفحص.](images/atp-stop-quarantine-file.png)
+   :::image type="content" source="images/atp-stop-quarantine-file.png" alt-text="إجراء ملف إيقاف وفحص" lightbox="images/atp-stop-quarantine-file.png":::
 
 3. حدد سببا، ثم حدد **تأكيد**.
 
-   ![صورة للنافذة مشروطة لملفات التوقف والعزل.](images/atp-stop-quarantine.png)
+   :::image type="content" source="images/atp-stop-quarantine.png" alt-text="صفحة ملف التوقف والعزل" lightbox="images/atp-stop-quarantine.png":::
 
    يعرض مركز الإجراءات معلومات الإرسال:
 
-   ![صورة لمركز إجراءات ملف إيقاف وفحص.](images/atp-stopnquarantine-file.png)
+   :::image type="content" source="images/atp-stopnquarantine-file.png" alt-text="مركز إجراءات ملف التوقف والعزل" lightbox="images/atp-stopnquarantine-file.png":::
 
    - **وقت الإرسال** - يظهر وقت إرسال الإجراء.
    - **النجاح** - إظهار عدد الأجهزة التي تم إيقاف الملف فيها وعزلها.
@@ -114,7 +111,7 @@ ms.locfileid: "63571513"
 
 عند إزالة الملف من جهاز، يظهر الإعلام التالي:
 
-![صورة إعلام على مستخدم الجهاز.](images/atp-notification-file.png)
+:::image type="content" source="images/atp-notification-file.png" alt-text="الإعلام للمستخدم على الجهاز" lightbox="images/atp-notification-file.png":::
 
 في المخطط الزمني للجهاز، يضاف حدث جديد لكل جهاز تم إيقاف ملف فيه وعزله.
 
@@ -150,7 +147,7 @@ ms.locfileid: "63571513"
 
 بشكل افتراضي، يجب أن تتمكن من تنزيل الملفات الموجودة في الفحص.
 
-![صورة إجراء تنزيل الملف.](images/atp-download-file-action.png)
+:::image type="content" source="images/atp-download-file-action.png" alt-text="إجراء ملف التنزيل" lightbox="images/atp-download-file-action.png":::
 
 ### <a name="download-quarantined-files"></a>تنزيل الملفات المعزولة
 
@@ -177,7 +174,7 @@ ms.locfileid: "63571513"
 
 ### <a name="collect-files"></a>تجميع الملفات
 
-إذا لم يكن الملف مخزنا بالفعل بواسطة Microsoft Defender لنقطة النهاية، لا يمكنك تنزيله. بدلا من ذلك، سترى الزر **تجميع** ملف في الموقع نفسه. إذا لم يتم رؤية ملف في المؤسسة خلال ال 30 يوما الماضية، سيتم تعطيل تجميع الملف. 
+إذا لم يكن الملف مخزنا بالفعل Microsoft Defender لنقطة النهاية، لا يمكنك تنزيله. بدلا من ذلك، سترى الزر **تجميع** ملف في الموقع نفسه. إذا لم يتم رؤية ملف في المؤسسة خلال ال 30 يوما الماضية، سيتم تعطيل تجميع الملف. 
 > [!Important]
 > قد لا يكون الملف الذي تم فحصه كخطر محتمل على الشبكة قابلا لاسترداده. إذا حاول مستخدم استعادة الملف بعد الفحص، فقد لا يمكن الوصول إلى هذا الملف. قد يعود سبب ذلك إلى أن النظام لم يعد لديه بيانات اعتماد الشبكة للوصول إلى الملف. عادة ما يكون ذلك نتيجة تسجيل دخول مؤقت إلى نظام أو مجلد مشترك وانتهاء صلاحية رموز الوصول المميزة.
 
@@ -232,7 +229,7 @@ ms.locfileid: "63571513"
 
 يتم أيضا عرض كل التفاصيل الأخرى ذات الصلة، مثل تاريخ/وقت الإرسال، إرسال المستخدم، وإذا نجح الإجراء أو فشل.
 
-![صورة لمركز الإجراءات مع معلومات.](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="مركز الإجراءات الذي به معلومات" lightbox="images/action-center-details.png":::
 
 ## <a name="deep-analysis"></a>تحليل معمق
 
@@ -256,10 +253,10 @@ ms.locfileid: "63571513"
 > [!NOTE]
 > يمكن تجميع الملفات Windows 10 Windows 11 تلقائيا.
 
-يمكنك أيضا إرسال عينة من خلال مدخل مركز أمان [Microsoft](https://www.microsoft.com/security/portal/submission/submit.aspx) إذا لم يتم ملاحظة الملف على جهاز Windows 10 (أو Windows 11)، وانتظر حتى يتوفر الزر إرسال للتحليل العميق.
+يمكنك أيضا إرسال عينة عبر مدخل Microsoft 365 Defender إذا [](https://www.microsoft.com/security/portal/submission/submit.aspx) لم يتم ملاحظة الملف على جهاز Windows 10 (أو Windows 11)، وانتظر حتى يتوفر الزر إرسال للتحليل العميق.
 
 > [!NOTE]
-> نظرا لتدفقات المعالجة الخلفية في مدخل مركز أمان Microsoft، قد يكون هناك ما يصل إلى 10 دقائق من زمن الوصول بين إرسال الملفات وتوفر ميزة التحليل العميق في Defender for Endpoint.
+> نظرا لتدفقات المعالجة الخلفية في مدخل Microsoft 365 Defender، قد يكون هناك ما يصل إلى 10 دقائق من زمن الوصول بين إرسال الملفات وتوفر ميزة التحليل العميق في Defender for Endpoint.
 
 ### <a name="submit-files-for-deep-analysis"></a>إرسال الملفات لتحليلها بعمق
 
@@ -271,7 +268,7 @@ ms.locfileid: "63571513"
 
 2. في علامة **التبويب تحليل أعمق** ل طريقة عرض الملف، حدد **إرسال**.
 
-   ![يمكنك إرسال ملفات PE فقط في مقطع تفاصيل الملف.](images/submit-file.png)
+   :::image type="content" source="images/submit-file.png" alt-text="الزر &quot;إرسال ملفات PE&quot;" lightbox="images/submit-file.png":::
 
    > [!NOTE]
    > ملفات PE فقط معتمدة، _بما في ذلك_ _.exe.dllالملفات_ .
@@ -295,7 +292,7 @@ ms.locfileid: "63571513"
 1. حدد الملف الذي قمت بتقديمه لتحليله بعمق.
 2. حدد علامة **التبويب تحليل أعمق** . إذا كانت هناك أي تقارير سابقة، سيظهر ملخص التقرير في علامة التبويب هذه.
 
-    ![يعرض تقرير التحليل العميق معلومات مفصلة عبر عدد من الفئات.](images/analysis-results-nothing500.png)
+   :::image type="content" source="images/analysis-results-nothing500.png" alt-text="يعرض تقرير التحليل العميق معلومات مفصلة عبر عدد من الفئات" lightbox="images/analysis-results-nothing500.png":::
 
 #### <a name="troubleshoot-deep-analysis"></a>استكشاف الأخطاء وإصلاحها
 
@@ -318,7 +315,7 @@ ms.locfileid: "63571513"
       Value = 1 - allow sample collection
     ```
 
-5. تغيير الوحدة التنظيمية من خلال نهج المجموعة. لمزيد من المعلومات، راجع [تكوين باستخدام نهج المجموعة](configure-endpoints-gp.md).
+5. تغيير الوحدة التنظيمية عبر نهج المجموعة. لمزيد من المعلومات، راجع [تكوين باستخدام نهج المجموعة](configure-endpoints-gp.md).
 
 6. إذا لم تحل هذه الخطوات المشكلة، فاتصل بالدعم.
 
@@ -326,4 +323,4 @@ ms.locfileid: "63571513"
 
 - [اتخاذ إجراءات الاستجابة على جهاز](respond-machine-alerts.md)
 - [التحقق من الملفات](investigate-files.md)
-- [إجراءات الاستجابة اليدوية في Microsoft Defender لخطة نقطة النهاية 1](defender-endpoint-plan-1.md#manual-response-actions)
+- [إجراءات الاستجابة اليدوية في Microsoft Defender لنقطة النهاية 1](defender-endpoint-plan-1.md#manual-response-actions)

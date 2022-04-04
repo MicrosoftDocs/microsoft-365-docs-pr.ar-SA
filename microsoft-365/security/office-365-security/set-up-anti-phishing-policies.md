@@ -17,12 +17,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على سياسات مكافحة التصيد الاحتيالي المتوفرة في Exchange Online Protection (EOP) و Microsoft Defender Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 899a76fac01c6058d5642cb52af5a6e8fb7d11ee
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: a0f491c099e5a3b67866738267215e79ff6cbeb0
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63568580"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679533"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>سياسات مكافحة التصيد الاحتيالي في Microsoft 365
 
@@ -44,10 +44,6 @@ ms.locfileid: "63568580"
 
 يتم وصف الاختلافات عالية المستوى بين سياسات مكافحة التصيد الاحتيالي في EOP ونهج مكافحة التصيد الاحتيالي في Defender for Office 365 في الجدول التالي:
 
-<br>
-
-****
-
 |الميزة|سياسات مكافحة التصيد الاحتيالي في EOP|سياسات مكافحة التصيد الاحتيالي في Defender for Office 365|
 |---|:---:|:---:|
 |النهج الافتراضي الذي تم إنشاؤه تلقائيا|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
@@ -57,7 +53,6 @@ ms.locfileid: "63568580"
 |جهة الاتصال تلميح الأمان|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار](../../media/checkmark.png)|
 |إعدادات انتحال||![علامة الاختيار](../../media/checkmark.png)|
 |عتبات التصيد الاحتيالي المتقدمة||![علامة الاختيار](../../media/checkmark.png)|
-|
 
 <sup>\*</sup> في النهج الافتراضي، يكون اسم النهج والوصف للقراءة فقط (الوصف فارغ)، ولا يمكنك تحديد الشخص الذي ينطبق عليه النهج (ينطبق النهج الافتراضي على جميع المستلمين).
 

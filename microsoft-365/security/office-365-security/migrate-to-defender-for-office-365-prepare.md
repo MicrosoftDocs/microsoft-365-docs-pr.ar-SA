@@ -1,5 +1,5 @@
 ---
-title: 'الترحيل إلى Microsoft Defender Office 365 1: التحضير'
+title: 'الترحيل إلى Microsoft Defender لـ Office 365 1: التحضير'
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,28 +16,28 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: migrationguides
-description: خطوات المتطلبات الأساسية لرقم خدمة حماية جهة خارجية أو جهاز إلى Microsoft Defender Office 365 الحماية.
+description: خطوات المتطلبات الأساسية لرقم خدمة حماية جهة خارجية أو جهاز Microsoft Defender لـ Office 365 الحماية.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f8a35fa7e8ac469a87861d25f45e7078eb4be940
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: 019f7152f0f892abd19bb09ffa9449874b00340c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63579976"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466576"
 ---
-# <a name="migrate-to-microsoft-defender-for-office-365---phase-1-prepare"></a>الترحيل إلى Microsoft Defender Office 365 - المرحلة 1: التحضير
+# <a name="migrate-to-microsoft-defender-for-office-365---phase-1-prepare"></a>الترحيل إلى Microsoft Defender لـ Office 365 - المرحلة 1: التحضير
 
 **ينطبق على**
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 
 <br>
 
-|![المرحلة 1: التحضير.](../../media/phase-diagrams/prepare.png) <br> المرحلة 1: التحضير|[![المرحلة الثانية: إعداد](../../media/phase-diagrams/setup.png)](migrate-to-defender-for-office-365-setup.md) <br> [المرحلة الثانية: إعداد](migrate-to-defender-for-office-365-setup.md)|[![المرحلة 3: Onboard](../../media/phase-diagrams/onboard.png)](migrate-to-defender-for-office-365-onboard.md) <br> [المرحلة 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
+|![المرحلة 1: التحضير.](../../media/phase-diagrams/prepare.png) <br> المرحلة 1: التحضير|[![المرحلة الثانية: إعداد](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [المرحلة الثانية: إعداد](migrate-to-defender-for-office-365-setup.md)|[![المرحلة 3: Onboard](../../media/phase-diagrams/onboard.png#lightbox)](migrate-to-defender-for-office-365-onboard.md) <br> [المرحلة 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
 |---|---|---|
 |*أنت هنا!*|||
 
-مرحبا بك **في المرحلة 1: تحضير** الترحيل إلى **[Microsoft Defender Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**! تتضمن مرحلة الترحيل هذه الخطوات التالية. يجب أن تقوم بجرد الإعدادات في خدمة الحماية الموجودة أولا، قبل إجراء أي تغييرات. وإلا، يمكنك القيام بالخطوات المتبقية بأي ترتيب:
+مرحبا بك **في المرحلة 1: تحضير** الترحيل **[إلى Microsoft Defender لـ Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**! تتضمن مرحلة الترحيل هذه الخطوات التالية. يجب أن تقوم بجرد الإعدادات في خدمة الحماية الموجودة أولا، قبل إجراء أي تغييرات. وإلا، يمكنك القيام بالخطوات المتبقية بأي ترتيب:
 
 1. [جرد الإعدادات في خدمة الحماية الحالية](#inventory-the-settings-at-your-existing-protection-service)
 2. [تحقق من تكوين الحماية الموجود في Microsoft 365](#check-your-existing-protection-configuration-in-microsoft-365)
@@ -50,11 +50,11 @@ ms.locfileid: "63579976"
 
 يعد إجراء مخزون كامل من الإعدادات والقواعد والاستثناءات وغير ذلك من خدمة الحماية الحالية فكرة جيدة، لأنه من المرجح ألا يكون لديك حق الوصول إلى المعلومات بعد إلغاء اشتراكك.
 
-**ولكن من المهم جدا ألا تقوم تلقائيا أو بشكل عشوائي إعادة إنشاء كل التخصيصات الموجودة في Defender for Office 365.** في أفضل الأحوال، قد تقدم إعدادات لم تعد مطلوبة أو ذات صلة أو وظيفية. والأسوأ من ذلك، قد تنشئ بعض التخصيصات السابقة مشاكل أمان في Defender for Office 365.
+**ولكن من المهم جدا ألا تقوم تلقائيا أو بشكل عشوائي إعادة إنشاء كل التخصيصات الموجودة في Defender لـ Office 365.** في أفضل الأحوال، قد تقدم إعدادات لم تعد مطلوبة أو ذات صلة أو وظيفية. والأسوأ من ذلك، قد تنشئ بعض التخصيصات السابقة مشاكل أمان في Defender لـ Office 365.
 
-سيحدد اختبارك للقدرات الأصلية ل Defender Office 365 سلوكه في النهاية التجاوزات والإعدادات التي تحتاجها. قد تجد أنه من المفيد تصنيف الإعدادات من خدمة الحماية الموجودة إلى الفئات التالية:
+سيحدد اختبارك للإمكانات الأصلية وسلوك Defender لـ Office 365 في النهاية التجاوزات والإعدادات التي تحتاجها. قد تجد أنه من المفيد تصنيف الإعدادات من خدمة الحماية الموجودة إلى الفئات التالية:
 
-- **تصفية الاتصال أو المحتوى**: من المرجح أنك لن تحتاج إلى معظم هذه التخصيصات في Defender for Office 365.
+- **تصفية الاتصال أو المحتوى**: من المرجح أنك لن تحتاج إلى معظم هذه التخصيصات في Defender لـ Office 365.
 - **توجيه الأعمال**: ستقع معظم التخصيصات التي تحتاج إلى إعادة إنشائها على المرجح في هذه الفئة. على سبيل المثال، يمكنك إعادة إنشاء هذه الإعدادات في Microsoft 365 كقياسات تدفق البريد Exchange (المعروفة أيضا بقواعد النقل) والموصلات والاستثناءات من المعلومات المنتحلة.
 
 بدلا من نقل الإعدادات القديمة بشكل Microsoft 365، نوصي بنهج انمطي يتضمن مرحلة تجريبية ذات عضوية مستخدم متزايدة باستمرار، وضبط يستند إلى المراقبة استنادا إلى موازنة اعتبارات الأمان مع احتياجات الأعمال التنظيمية.
@@ -79,7 +79,7 @@ ms.locfileid: "63579976"
 
 - قد Microsoft 365 ترحيل البريد الإلكتروني من خوادم البريد الإلكتروني في الموقع إلى مشروع معقد بحد ذاته. مثال بسيط هو عدد صغير من التطبيقات أو الأجهزة التي ترسل معظم رسائلها إلى مستلمين داخليين ولا يتم استخدامها للمرسلات الجماعية. راجع [هذا الدليل](/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) للحصول على التفاصيل. يجب أن تكون البيئات الأكثر اتنيا مدروسة. البريد الإلكتروني التسويقي والرسائل التي يمكن أن يرى المستلمون أنها بريد عشوائي غير مسموح بها.
 
-- لا تتوفر Office 365 ل Defender ميزة تجميع تقارير DMARC. تفضل بزيارة [كتالوج Microsoft Intelligent Security Association (MISA)](https://www.microsoft.com/misapartnercatalog) لعرض موردي الجهات الخارجية الذين يقدمون تقارير DMARC Microsoft 365.
+- Defender لـ Office 365 ميزة تجميع تقارير DMARC. تفضل بزيارة [كتالوج Microsoft Intelligent Security Association (MISA)](https://www.microsoft.com/misapartnercatalog) لعرض موردي الجهات الخارجية الذين يقدمون تقارير DMARC Microsoft 365.
 
 ## <a name="move-features-that-modify-messages-into-microsoft-365"></a>نقل الميزات التي تقوم بتعديل الرسائل إلى Microsoft 365
 
@@ -100,7 +100,7 @@ ms.locfileid: "63579976"
 
 ## <a name="account-for-any-active-phishing-simulations"></a>حساب أي عمليات محاكاة نشطة لتصيد احتيالي
 
-إذا كان لديك عمليات محاكاة تصيد احتيالي نشطة من جهة خارجية، يجب منع التعرف على الرسائل والربطات والمرفقات على أنها تصيد احتيالي من قبل Defender Office 365. لمزيد من المعلومات، راجع تكوين عمليات محاكاة التصيد الاحتيالي لجهة خارجية [في نهج التسليم المتقدم](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
+إذا كان لديك عمليات محاكاة تصيد احتيالي نشطة من جهة خارجية، يجب منع التعرف على الرسائل والربطات والمرفقات على أنها تصيد احتيالي من قبل Defender لـ Office 365. لمزيد من المعلومات، راجع تكوين عمليات محاكاة التصيد الاحتيالي لجهة خارجية [في نهج التسليم المتقدم](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 
 ## <a name="define-spam-and-bulk-user-experiences"></a>تعريف البريد العشوائي وتجارب المستخدمين المجمعة
 
@@ -114,7 +114,7 @@ ms.locfileid: "63579976"
   - [لن تعمل المعلومات المنتحلة](anti-spoofing-protection.md) بشكل صحيح.
   - ستحصل على الأرجح على عدد كبير من الإيجابيات الخاطئة (تم وضع علامة سيئة على البريد الجيد).
 
-  وفي النهاية، قرارك هو منع تسليم البريد الإلكتروني إلى مجلد البريد الإلكتروني غير الهام لتسليمه إلى الفحص. ولكن هناك شيء واحد مؤكد: إذا كانت التجربة في Defender for Office 365 مختلفة عما اعتاد المستخدمون عليه، يجب إعلامهم وتوفير التدريب الأساسي. قم بدمج التعلمات من التجربة وتأكد من أن المستخدمين على استعداد لأي سلوك جديد لتسليم البريد الإلكتروني.
+  وفي النهاية، قرارك هو منع تسليم البريد الإلكتروني إلى مجلد البريد الإلكتروني غير الهام لتسليمه إلى الفحص. ولكن هناك شيء واحد مؤكد: إذا كانت التجربة في Defender لـ Office 365 مختلفة عما كان المستخدمون معتادين عليه، يجب إعلامهم وتوفير التدريب الأساسي. قم بدمج التعلمات من التجربة وتأكد من أن المستخدمين على استعداد لأي سلوك جديد لتسليم البريد الإلكتروني.
 
 - **البريد المجمع المطلوب مقابل البريد** المجمع غير المرغوب فيه: تسمح العديد من أنظمة الحماية للمستخدمين بالسماح للبريد الإلكتروني المجمع أو حظره لأنفسهم. لا يتم ترحيل هذه الإعدادات بسهولة إلى Microsoft 365، لذلك يجب عليك التفكير في العمل مع الأشخاص ذوي الهمم والموظفين لإعادة إنشاء تكويناتهم الموجودة في Microsoft 365.
 
@@ -124,10 +124,10 @@ ms.locfileid: "63579976"
 
 ## <a name="identify-and-designate-priority-accounts"></a>تحديد حسابات الأولوية وتحديدها
 
-إذا كانت الميزة متوفرة لك، يمكن أن  تساعد الحسابات ذات  الأولوية والعلامات الخاصة ب المستخدمين في تحديد المستخدمين Microsoft 365 المهمة بحيث تبرز في التقارير. لمزيد من المعلومات، راجع [علامات المستخدم في Microsoft Defender Office 365](user-tags.md) [وإدارة حسابات الأولوية ومراقبتها](/microsoft-365/admin/setup/priority-accounts).
+إذا كانت الميزة متوفرة لك، يمكن أن  تساعد الحسابات ذات  الأولوية والعلامات الخاصة ب المستخدمين في تحديد المستخدمين Microsoft 365 المهمة بحيث تبرز في التقارير. لمزيد من المعلومات، راجع [علامات المستخدم في](user-tags.md) Microsoft Defender لـ Office 365 [وإدارة حسابات الأولوية ومراقبتها](/microsoft-365/admin/setup/priority-accounts).
 
 ## <a name="next-step"></a>الخطوة التالية
 
-**تهانينا**! لقد أكملت مرحلة **التحضير** ل الترحيل إلى [Microsoft Defender Office 365](migrate-to-defender-for-office-365.md#the-migration-process)!
+**تهانينا**! لقد أكملت مرحلة **التحضير** ل الترحيل [إلى](migrate-to-defender-for-office-365.md#the-migration-process) Microsoft Defender لـ Office 365!
 
 - تابع إلى [المرحلة 2: الإعداد](migrate-to-defender-for-office-365-setup.md).

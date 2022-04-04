@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d0add9fe000966cdeb2ffc5ce23e4ba0690bbadb
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 75aea706cdcb65752b673d32ccff968209ba74b7
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63578249"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499432"
 ---
 # <a name="microsoft-365-defender-integration-with-microsoft-sentinel"></a>Microsoft 365 Defender التكامل مع Microsoft Sentinel
 
@@ -37,7 +37,7 @@ ms.locfileid: "63578249"
 
 يرسل Microsoft 365 Defender Microsoft Sentinel (preview) جميع Microsoft 365 Defender والتنبيهات إلى Microsoft Sentinel ويحافظ على مزامنة الأحداث. 
 
-بمجرد إضافة الموصل، ستتضمن أحداث Microsoft 365 Defender&mdash; جميع التنبيهات والكيانات والمعلومات ذات الصلة المقترنة التي تم تلقيها من Microsoft Defender لنقطة النهاية و Microsoft Defender for Identity و Microsoft Defender for Office 365 و Microsoft Defender لتطبيقات السحابة&mdash; يتم تدفقها إلى Microsoft Sentinel كالبيانات الخاصة بمعلومات الأمان وإدارة الأحداث (SIEM)، مما يوفر لك السياق لتنفيذ الفرز والاستجابة للحوادث باستخدام Microsoft Sentinel. 
+بمجرد إضافة الموصل، Microsoft 365 Defender&mdash; الأحداث التي تتضمن كل التنبيهات والكيانات والمعلومات ذات الصلة المقترنة التي يتم تلقيها من Microsoft Defender لنقطة النهاية Microsoft Defender for Identity، Microsoft Defender لـ Office 365، Microsoft Defender for Cloud Apps&mdash; إلى Microsoft Sentinel كالبيانات المتعلقة بمعلومات الأمان وإدارة الأحداث (SIEM)، مما يوفر لك السياق لتنفيذ الفرز والاستجابة للحوادث باستخدام Microsoft Sentinel. 
 
 بمجرد الوصول إلى Microsoft Sentinel، تبقى الأحداث متزامنة بشكل ثنائي الاتجاه مع Microsoft 365 Defender، مما يسمح لك ب الاستفادة من مزايا كل من مدخل Microsoft 365 Defender و Microsoft Sentinel في مدخل Azure للتحري عن الحادث والاستجابة له.
 
@@ -50,7 +50,7 @@ ms.locfileid: "63578249"
 
 إليك كيفية عمل ذلك.
 
-:::image type="content" source="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png" alt-text="تدفق بيانات الحادث ومشاركتها بين Microsoft 365 Defender Microsoft Sentinel.":::
+:::image type="content" source="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png" alt-text="تدفق بيانات الحادث ومشاركتها لمداخل Microsoft 365 Defender و Microsoft Sentinel" lightbox="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png":::
 
 ## <a name="next-steps"></a>الخطوات التالية
 

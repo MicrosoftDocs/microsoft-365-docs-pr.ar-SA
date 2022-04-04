@@ -8,17 +8,18 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: يمكن للمسؤولين التعرف على معلومات تدفق البريد الصادر والداخل في لوحة معلومات تدفق البريد في مركز التوافق & الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: acd1b46dfd93e2baee7861daae7b24daa42a324b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5de9c699a12a7c3f282c4e1752eb23c5842a8c5d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63566570"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679599"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>نظرة ثاقبة حول تدفق البريد الصادر والداخل في مركز & الأمان
 

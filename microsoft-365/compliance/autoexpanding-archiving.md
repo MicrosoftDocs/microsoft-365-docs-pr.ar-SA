@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: تعرف على المزيد حول أرشفة التوسع التلقائي، التي توفر مساحة تخزين إضافية للأرشفة لعلب Exchange Online البريد.
-ms.openlocfilehash: 1b4b8d81868cc97fc8e8faf5b0dc449e4c07a868
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b55c0504f04f896377c1e1b0a4dccdacdb8bbc37
+ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63578495"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63761533"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>تعرف على المزيد حول أرشفة التوسع التلقائي
 
@@ -79,6 +79,10 @@ ms.locfileid: "63578495"
 ## <a name="outlook-requirements-for-accessing-items-in-an-auto-expanded-archive"></a>Outlook متطلبات الوصول إلى العناصر في أرشيف موسع بشكل تلقائي
 
 للوصول إلى الرسائل المخزنة في أرشيف موسع بشكل تلقائي، يجب على المستخدمين استخدام أحد Outlook التالية:
+
+- Outlook كجزء من Microsoft 365 Apps for enterprise (المسمى سابقا Office 365 ProPlus)
+
+- Outlook كجزء من Microsoft 365 Apps for business (المسمى سابقا Office 365 Business)
 
 - Outlook 2016 أو Outlook 2019 Windows
 

@@ -1,6 +1,6 @@
 ---
-title: تقديم ملاحظات حول أداة محلل عميل نقطة النهاية ل Microsoft Defender
-description: تقديم ملاحظات حول أداة محلل عميل Microsoft Defender for Endpoint
+title: تقديم ملاحظات حول أداة "محلل Microsoft Defender لنقطة النهاية العميل"
+description: تقديم ملاحظات حول أداة محلل Microsoft Defender لنقطة النهاية العميل
 keywords: المستشعر، حماية المستشعر، تكوين خاطئ، غير نشط، عدم وجود بيانات استشعار، بيانات المستشعر، ضعف الاتصالات، الاتصال
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,21 +17,25 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 11f2c6202d31a3715a73b189648dcef0ade79b0b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7dbe8ca06c142a3e918c90523ee2d4f147734f18
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570804"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466268"
 ---
-# <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>تقديم ملاحظات حول أداة محلل عميل Microsoft Defender for Endpoint
+# <a name="provide-feedback-on-the-microsoft-defender-for-endpoint-client-analyzer-tool"></a>تقديم ملاحظات حول أداة محلل Microsoft Defender لنقطة النهاية العميل
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-إذا كانت لديك ملاحظات أو اقتراحات من شأنها مساعدتنا على تحسين محلل عميل Microsoft Defender for Endpoint، فالرجاء استخدام الارتباط التالي لإرسال الملاحظات:
+إذا كانت لديك ملاحظات أو اقتراحات من شأنها مساعدتنا على تحسين Microsoft Defender لنقطة النهاية العميل، فاستخدم أحد هذين الخيارين لإرسال الملاحظات:
 
-Microsoft 365 Defender المدخل (security.microsoft.com):
+1. Microsoft 365 Defender المدخل (security.microsoft.com):
 
-![صورة لزر تقديم الملاحظات.](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)
+:::image type="content" source="images/3e2db5015cd4f47436b4765b2303f4f5.png" alt-text="أيقونة الملاحظات الضاحكة" lightbox="images/3e2db5015cd4f47436b4765b2303f4f5.png":::
+
+2. Microsoft 365 Defender المدخل (security.microsoft.com):
+
+:::image type="content" source="images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png" alt-text="الزر &quot;تقديم ملاحظات&quot;" lightbox="images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png":::

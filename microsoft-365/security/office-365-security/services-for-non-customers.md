@@ -17,12 +17,12 @@ ms.collection:
 description: للمساعدة في الحفاظ على ثقة المستخدم في استخدام البريد الإلكتروني، وضعت Microsoft سياسات وتقنيات متنوعة للمساعدة في حماية المستخدمين.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2894d565a08cf500199b123a0acd738de129faf0
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7af1a901bf9b3b27f08a7a3d36de69d49c2c85e9
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63566540"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679555"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>خدمات لغير العملاء الذين يرسلون البريد إلى Microsoft 365
 
@@ -35,15 +35,12 @@ ms.locfileid: "63566540"
 
 ## <a name="sender-solutions"></a>حلول المرسلين
 
-****
-
 |الخدمة|المزايا|
 |---|---|
 |محتوى المساعدة هذا عبر الإنترنت|يوفر: <ul><li>نقطة بداية لأي أسئلة متعلقة بتسليم الاتصالات لمستخدمي EOP.</li><li>يتضمن دليل بسيط عبر الإنترنت مع سياساتنا ومتطلباتنا.</li><li>نظرة عامة حول عوامل تصفية البريد الإلكتروني غير الهام وتقنيات المصادقة المستخدمة بواسطة Microsoft.</li><ul>|
 |[دعم Microsoft](#microsoft-support)|يوفر الدعم الذاتي للمساعدة والتصعيد لقضايا التسليم.|
 |[مدخل Delist IP لمكافحة البريد العشوائي](#anti-spam-ip-delist-portal)|أداة لإرسال طلب شطب عناوين IP. قبل إرسال هذا الطلب، تقع على عاتق المرسل مسؤولية التأكد من أن أي بريد آخر مصدره عنوان IP المعني ليس مسيئا أو ضارا.|
 |[الإبلاغ عن إساءة الاستخدام والبريد العشوائي للبريد الإلكتروني غير الهام الذي ينشأ من Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|تمنع إرسال البريد العشوائي والبريد غير المرغوب فيه من Exchange Online البريد الإلكتروني والتكدوج عبر الإنترنت ونظام البريد.|
-|
 
 ## <a name="microsoft-support"></a>دعم Microsoft
 
