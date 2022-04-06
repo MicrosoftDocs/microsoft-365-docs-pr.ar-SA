@@ -1,5 +1,5 @@
 ---
-title: سياسات المستندات الآمنة الموصى بها - Microsoft 365 للمؤسسات | Microsoft Docs
+title: سياسات المستندات الآمنة الموصى بها - Microsoft 365 للمؤسسات | Microsoftova dokumentacija
 description: يصف هذه المقالة سياسات توصيات Microsoft حول كيفية SharePoint الوصول إلى الملفات.
 ms.author: dansimp
 author: dansimp
@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 3057e66352b9bd658ddd4958986cbefd61e4e187
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 6effe1ffefaf7faeb90258163c539cdddcec2679
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682934"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569986"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>توصيات النهج لتأمين SharePoint والملفات
 
-تصف هذه المقالة كيفية تنفيذ هوية الصفر الموثوق بها ونهج الوصول إلى الجهاز الموصى بها لحماية SharePoint OneDrive for Business. يعتمد هذا الإرشاد على [الهوية المشتركة ونهج الوصول إلى الأجهزة](identity-access-policies.md).
+تصف هذه المقالة كيفية تنفيذ Confiança zero الموصى بها ونهج الوصول إلى الأجهزة والهوية لحماية SharePoint OneDrive for Business. يعتمد هذا الإرشاد على [الهوية المشتركة ونهج الوصول إلى الأجهزة](identity-access-policies.md).
 
 تستند هذه التوصيات إلى ثلاثة مستويات مختلفة من الأمان والحماية لملفات SharePoint التي يمكن تطبيقها بالاستناد إلى مجموعة **احتياجاتك: نقطة** البداية والمؤسسة والأمان **المتخصص**.  يمكنك معرفة المزيد حول مستويات الأمان هذه، وأنظمت تشغيل العميل الموصى بها، المشار إليها بواسطة هذه التوصيات في [النظرة العامة](microsoft-365-policies-configurations.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "63682934"
 
 لحماية الملفات في SharePoint OneDrive، يوضح الرسم التخطيطي التالي سياسات التحديث التي يجب تحديثها من سياسات الوصول إلى الأجهزة والهوية المشتركة.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="ملخص تحديثات النهج لحماية الوصول إلى SharePoint." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="ملخص تحديثات النهج لحماية الوصول إلى SharePoint" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
 
 إذا قمت SharePoint عند إنشاء السياسات الشائعة، ستحتاج فقط إلى إنشاء سياسات جديدة. بالنسبة إلى سياسات الوصول الشرطي، SharePoint تتضمن OneDrive.
 
@@ -60,7 +60,7 @@ ms.locfileid: "63682934"
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>استخدام القيود المفروضة على التطبيق في SharePoint
 
-إذا قمت بتنفيذ عناصر تحكم الوصول في SharePoint، فيجب إنشاء نهج الوصول الشرطي هذا في Azure AD لإخبار Azure AD بفرض النهج التي تقوم بتكوينها في SharePoint. ينطبق هذا النهج على جميع المستخدمين، ولكنه يؤثر فقط على الوصول إلى المواقع التي تحددها باستخدام PowerShell عند إنشاء عناصر التحكم بالوصول في SharePoint.
+إذا قمت بتنفيذ عناصر تحكم الوصول في SharePoint، يتم إنشاء سياسات الوصول الشرطي في Azure AD لإخبار Azure AD بفرض السياسات التي تقوم بتكوينها في SharePoint. بشكل افتراضي، ينطبق هذا النهج على جميع المستخدمين، ولكنه يؤثر فقط على الوصول إلى المواقع التي تحددها باستخدام PowerShell عند إنشاء عناصر التحكم بالوصول في SharePoint. يمكن أيضا تحديد نطاق النهج لمستخدمين معينين أو مجموعات أو مواقع معينة.
 
 لتكوين هذا النهج، راجع "حظر الوصول إلى مجموعات مواقع SharePoint مواقع OneDrive محددة أو تقييد الوصول إليها" في التحكم في الوصول من الأجهزة غير التي يتم التحكم [فيها](/sharepoint/control-access-from-unmanaged-devices).
 
@@ -79,7 +79,7 @@ ms.locfileid: "63682934"
 
 يوفر الرسم التوضيحي التالي مثالا حول كيفية SharePoint الوصول إلى الأجهزة لحماية الوصول إلى المواقع للمستخدم.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="مثال حول SharePoint الوصول إلى الأجهزة لحماية المواقع." lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="مثال حول كيفية حماية SharePoint الوصول إلى الأجهزة للمواقع" lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
 
 تم تعيين نهج الوصول الشرطي إلى جيمس نقطة البداية، ولكن يمكن منحه حق الوصول إلى مواقع SharePoint مع حماية أمان خاصة أو خاصة بالمؤسسة.
 
@@ -89,7 +89,8 @@ ms.locfileid: "63682934"
 
 ## <a name="next-step"></a>الخطوة التالية
 
-![الخطوة 4: سياسات Microsoft 365 السحابية.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="الخطوة 4 - سياسات تطبيقات Microsoft 365 السحابة" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+
 
 تكوين سياسات الوصول الشرطي ل:
 

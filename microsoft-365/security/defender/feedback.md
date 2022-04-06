@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 68a6d080346cc450ae91c72709ce61cbc2a8238c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 2843406c934ab95587ba07e3f897a3055562d9e1
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63571443"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501234"
 ---
 # <a name="provide-feedback-on-microsoft-365-defender"></a>تقديم ملاحظات حول Microsoft 365 Defender
 
@@ -44,8 +44,8 @@ ms.locfileid: "63571443"
 
 1. من أي جزء من المدخل، حدد **تقديم ملاحظات**. 
 
-    ![صورة لزر الملاحظات.](../../media/feedback.png)
-
+    :::image type="content" source="../../media/feedback.png" alt-text="الأحداث في مدخل Microsoft 365 الأمان" lightbox="../../media/feedback.png":::   
+ 
 2. يمكنك تقييم تجربتك وتوفير تفاصيل حول ما أعجبك أو مكان إجراء التحسين. يمكنك أيضا أن تختار أن يتم الاتصال بك حول الملاحظات. 
 
 3. حدد **إرسال**.

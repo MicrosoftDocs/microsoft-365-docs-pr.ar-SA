@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5715a796e0c7b78ae369f074b5edcb6ccfc8ae90
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c39ef92448317e625f3f2e6948f69a38093b1504
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63573376"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467698"
 ---
 # <a name="deployment-phases"></a>مراحل النشر
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -40,10 +40,10 @@ ms.locfileid: "63573376"
 
 يتوافق كل مقطع مع مقالة منفصلة في هذا الحل.
 
-![صورة لمراحل النشر مع تفاصيل من جدول.](images/deployment-guide-phases.png)
+:::image type="content" source="images/deployment-guide-phases.png" alt-text="مراحل النشر مع تفاصيل من الجدول" lightbox="images/deployment-guide-phases.png":::
 
 
-![ملخص مراحل النشر: الإعداد والإعداد واللوح.](images/phase-diagrams/deployment-phases.png)
+:::image type="content" source="images/phase-diagrams/deployment-phases.png" alt-text="ملخص مراحل النشر: الإعداد والإعداد واللوح" lightbox="images/phase-diagrams/deployment-phases.png":::
 
 <br>
 
@@ -62,7 +62,7 @@ ms.locfileid: "63573376"
 
 ## <a name="key-capabilities"></a>الإمكانات الأساسية
 
-على الرغم من أن Microsoft Defender ل Endpoint يوفر العديد من الإمكانات، فإن الغرض الأساسي من دليل النشر هذا هو بدء استخدام أجهزة الالتحاق. بالإضافة إلى الالإضافة، فإن هذه الإرشادات ستطلق عليك الإمكانات التالية.
+على الرغم Microsoft Defender لنقطة النهاية يوفر العديد من الإمكانات، فإن الغرض الأساسي من دليل النشر هذا هو بدء استخدام أجهزة الالتحاق. بالإضافة إلى الالإضافة، فإن هذه الإرشادات ستطلق عليك الإمكانات التالية.
 
 <br>
 
@@ -71,11 +71,11 @@ ms.locfileid: "63573376"
 |الإمكانية|الوصف|
 |---|---|
 |الكشف عن نقطة النهاية والاستجابة لها|يتم وضع قدرات الكشف عن نقاط النهاية والاستجابة للكشف عن محاولات التسلل والانتهاكات النشطة والكشف عنها والاستجابة لها.|
-|حماية الجيل التالي|لمزيد من تعزيز محيط الأمان للشبكة، يستخدم Microsoft Defender ل Endpoint حماية الجيل التالي المصممة لالتقاط جميع أنواع التهديدات الناشئة.|
+|حماية الجيل التالي|لمزيد من تعزيز محيط الأمان للشبكة، Microsoft Defender لنقطة النهاية حماية الجيل التالي المصممة لالتقاط جميع أنواع التهديدات الناشئة.|
 |الحد من سطح الهجوم|توفير خط الدفاع الأول في المكدس. ومن خلال ضمان تعيين إعدادات التكوين بشكل صحيح وتطبيق أساليب التخفيف من المخاطر، تقاوم هذه الإمكانات الهجمات واستغلالها.|
 |
 
-تتوفر كل هذه الإمكانات لحاملي تراخيص نقطة النهاية من Microsoft Defender. لمزيد من المعلومات، راجع [متطلبات الترخيص](minimum-requirements.md#licensing-requirements).
+تتوفر كل هذه الإمكانات Microsoft Defender لنقطة النهاية حاملي التراخيص. لمزيد من المعلومات، راجع [متطلبات الترخيص](minimum-requirements.md#licensing-requirements).
 
 ## <a name="scope"></a>النطاق
 

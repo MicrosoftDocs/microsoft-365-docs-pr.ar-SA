@@ -1,5 +1,5 @@
 ---
-title: إعداد خزينة الارتباطات في Microsoft Defender Office 365
+title: إعداد خزينة الارتباطات في Microsoft Defender لـ Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,40 +16,40 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: يمكن للمسؤولين معرفة كيفية عرض خزينة الارتباطات وإعدادات الارتباطات العامة خزينة في Microsoft Defender Office 365.
+description: يمكن للمسؤولين التعرف على كيفية عرض خزينة الارتباطات وإعدادات الارتباطات العامة خزينة في Microsoft Defender لـ Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7d4cbaccab3eca371114eec92fe1bf89b2c0e353
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7a352391a0acc595463a8363da315e8dda2758c1
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63573865"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507220"
 ---
-# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>إعداد خزينة الارتباطات في Microsoft Defender Office 365
+# <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>إعداد خزينة الارتباطات في Microsoft Defender لـ Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> هذه المقالة مخصصة لعملاء الأعمال الذين لديهم [Microsoft Defender Office 365](defender-for-office-365.md). إذا كنت مستخدما منزليا تبحث عن معلومات حول الارتباطات الآمنة في Outlook، فاطلع على [أمان Outlook.com المتقدم](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> هذه المقالة مخصصة لعملاء الأعمال [الذين لديهم Microsoft Defender لـ Office 365](defender-for-office-365.md). إذا كنت مستخدما منزليا تبحث عن معلومات حول الارتباطات الآمنة في Outlook، فاطلع على [أمان Outlook.com المتقدم](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-خزينة الارتباطات في [Microsoft Defender for Office 365](defender-for-office-365.md) فحص URL لرسائل البريد الإلكتروني الواردة في تدفق البريد، والوقت الذي يتم فيه النقر فوق التحقق من عناوين URL والارتباطات في رسائل البريد الإلكتروني وفي مواقع أخرى. لمزيد من المعلومات، راجع خزينة [ارتباطات في Microsoft Defender Office 365](safe-links.md).
+خزينة الارتباطات [في Microsoft Defender لـ Office 365](defender-for-office-365.md) فحص URL لرسائل البريد الإلكتروني الواردة في تدفق البريد، والوقت الذي يتم فيه النقر فوق التحقق من عناوين URL والارتباطات في رسائل البريد الإلكتروني وفي مواقع أخرى. لمزيد من المعلومات، راجع خزينة [الارتباطات في Microsoft Defender لـ Office 365](safe-links.md).
 
-على الرغم من عدم وجود نهج خزينة ارتباطات افتراضي، إلا أن  نهج الأمان المضمن للحماية المسبقة يوفر حماية ارتباطات خزينة لكل المستلمين (المستخدمون غير المحددين في نهج ارتباطات خزينة المخصصة). لمزيد من المعلومات، راجع [سياسات الأمان التي تم الإعداد المسبق لها في EOP و Microsoft Defender Office 365](preset-security-policies.md).
+على الرغم من عدم وجود نهج خزينة ارتباطات افتراضي، إلا أن  نهج الأمان المضمن للحماية المسبقة يوفر حماية ارتباطات خزينة لكل المستلمين (المستخدمون غير المحددين في نهج ارتباطات خزينة المخصصة). لمزيد من المعلومات، راجع [إعدادات مسبقة لنهج الأمان في EOP Microsoft Defender لـ Office 365](preset-security-policies.md).
 
 يمكنك أيضا استخدام الإجراءات في هذه المقالة لإنشاء خزينة الارتباطات التي تنطبق على مستخدمين معينين أو مجموعة أو مجالات معينة.
 
 > [!NOTE]
 >
-> يمكنك تكوين الإعدادات العامة لحماية خزينة الارتباطات **خارج** خزينة الارتباطات. للحصول على الإرشادات، راجع تكوين [الإعدادات خزينة ارتباطات في Microsoft Defender Office 365](configure-global-settings-for-safe-links.md).
+> يمكنك تكوين الإعدادات العامة لحماية خزينة الارتباطات **خارج** خزينة الارتباطات. للحصول على الإرشادات، راجع تكوين الإعدادات [خزينة ارتباطات في Microsoft Defender لـ Office 365](configure-global-settings-for-safe-links.md).
 >
-> يجب على المسؤولين التفكير في إعدادات التكوين المختلفة خزينة الارتباطات. أحد الخيارات المتوفرة هو تضمين معلومات تعريف المستخدم في خزينة الارتباطات. تمكن هذه الميزة *فرق "عمليات* الأمان" من التحقق من اختراق المستخدم المحتمل، واتخاذ إجراء تصحيحي، والحد من الخروقات مكلفة.
+> يجب على المسؤولين التفكير في إعدادات التكوين المختلفة خزينة الارتباطات. أحد الخيارات المتوفرة هو تضمين معلومات تعريف المستخدم في خزينة الارتباطات. تمكن هذه الميزة فرق عمليات الأمان (SecOps) من التحقق من اختراق المستخدم المحتمل واتخاذ إجراء تصحيحي والحد من الخروقات مكلفة.
 
-يمكنك تكوين سياسات ارتباطات خزينة في مدخل Microsoft 365 Defender أو في PowerShell (Exchange Online PowerShell لمنظمات Microsoft 365 المؤهلة التي بها علب بريد في Exchange Online؛ EOP PowerShell مستقل ل المؤسسات التي لا يمكنها Exchange Online علب البريد، ولكن باستخدام Microsoft Defender Office 365 اشتراكات الوظائف الإضافية).
+يمكنك تكوين سياسات ارتباطات خزينة في مدخل Microsoft 365 Defender أو في PowerShell (Exchange Online PowerShell لمنظمات Microsoft 365 المؤهلة التي بها علب بريد في Exchange Online؛ EOP PowerShell مستقل ل المؤسسات التي لا يمكنها Exchange Online علب البريد، ولكن مع Microsoft Defender لـ Office 365 الوظائف الإضافية).
 
 إن العناصر الأساسية لن نهج ارتباطات خزينة هي:
 
@@ -85,7 +85,7 @@ ms.locfileid: "63573865"
 
 - السماح بتطبيق نهج جديد أو محدث لمدة تصل إلى 6 ساعات.
 
-- [يتم باستمرار إضافة الميزات الجديدة إلى Microsoft Defender Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). عند إضافة ميزات جديدة، قد تحتاج إلى إجراء تعديلات على سياسات الارتباطات خزينة الموجودة.
+- [يتم إضافة الميزات الجديدة باستمرار إلى Microsoft Defender لـ Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). عند إضافة ميزات جديدة، قد تحتاج إلى إجراء تعديلات على سياسات الارتباطات خزينة الموجودة.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>استخدام مدخل Microsoft 365 Defender لإنشاء خزينة الارتباطات
 
@@ -104,7 +104,7 @@ ms.locfileid: "63573865"
 
 4. في **صفحة المستخدمون والمجالات** التي تظهر، حدد المستلمين الداخليين الذين ينطبق النهج علىهم (شروط المستلمين):
    - **المستخدمون**: علب البريد المحددة أو مستخدمي البريد أو جهات اتصال البريد المحددة في مؤسستك.
-   - **المجموعات**: مجموعات التوزيع المحددة أو مجموعات الأمان التي تم تمكين البريد Microsoft 365 في مؤسستك.
+   - **المجموعات**: مجموعات التوزيع المحددة أو مجموعات الأمان التي تم تمكين البريد مجموعات Microsoft 365 في مؤسستك.
    - **المجالات**: جميع المستلمين في المجالات المقبولة [المحددة](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) في مؤسستك.
 
    انقر في المربع المناسب، وابدأ بكتابة قيمة، وحدد القيمة التي تريدها من النتائج. كرر هذه العملية قدر ما يلزم. لإزالة قيمة موجودة، انقر فوق إزالة ![أيقونة إزالة.](../../media/m365-cc-sc-remove-selection-icon.png) بجانب القيمة.
@@ -123,8 +123,8 @@ ms.locfileid: "63573865"
        - **انتظر حتى تكتمل** عملية مسح URL قبل تسليم الرسالة: حدد هذا الخيار لانتظار اكتمال فحص URL في الوقت الحقيقي قبل تسليم الرسالة.
      - **تطبيق خزينة ارتباطات** إلى رسائل البريد الإلكتروني المرسلة داخل المؤسسة: حدد هذا الخيار لتطبيق نهج ارتباطات خزينة على الرسائل بين المرسلين الداخليين والمستلمين الداخليين.
    - **حدد الإجراء URL** غير معروف أو يحتمل أن يكون ضارا ضمن Microsoft Teams: حدد على لتمكين خزينة  الارتباطات للربطات في Teams. تجدر الإشارة إلى أن هذا الإعداد قد يستغرق ما يصل إلى 24 ساعة حتى يتم تطبيق هذا الإعداد.
-   - **عدم تعقب نقرات المستخدم**: اترك هذا الإعداد غير محدد لتمكين المستخدم المتعقب ينقر فوق عناوين URL في رسائل البريد الإلكتروني.
-   - **لا تسمح للمستخدمين** بالنقر فوق عنوان URL الأصلي: حدد هذا الخيار لمنع المستخدمين من النقر فوق عنوان URL الأصلي في [صفحات التحذير](safe-links.md#warning-pages-from-safe-links).
+   - **تعقب نقرات المستخدم**: اترك هذا الخيار محددا لتمكين المستخدم المتعقب ينقر فوق عناوين URL في رسائل البريد الإلكتروني.
+   - **السماح للمستخدمين بالنقر عبر عنوان URL** الأصلي: قم بمسح هذا الخيار لمنع المستخدمين من النقر فوق عنوان URL الأصلي في [صفحات التحذير](safe-links.md#warning-pages-from-safe-links).
    - **لا تعيد كتابة عناوين URL** التالية: تسمح بالوصول إلى عناوين URL المحددة التي كانت ستحظرها خزينة الارتباطات.
 
      في المربع، اكتب عنوان URL أو القيمة التي تريدها، ثم انقر فوق **إضافة**. كرر هذه الخطوة قدر ما يلزم.
@@ -254,7 +254,7 @@ ms.locfileid: "63573865"
 لإنشاء نهج ارتباطات آمنة، استخدم بناء الجملة هذا:
 
 ```PowerShell
-New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
 > [!NOTE]
@@ -270,11 +270,11 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 - قم تشغيل المسح الضوئي في الوقت الحقيقي من عناوين URL التي تم النقر فوقها، بما في ذلك الارتباطات التي تم النقر فوقها والتي تشير إلى الملفات.
 - انتظر حتى تكتمل عملية فحص عنوان URL قبل تسليم الرسالة.
 - تشغيل مسح URL وإعادة كتابته للرسائل الداخلية.
-- تعقب نقرات المستخدم المتعلقة خزينة الارتباطات (لا نستخدم معلمة _DoNotTrackUserClicks_، والقيمة الافتراضية $false، مما يعني أنه يتم تعقب نقرات المستخدم).
+- تعقب نقرات المستخدم المتعلقة خزينة الارتباطات (لا نستخدم المعلمة _TrackUserClicks_، والقيمة الافتراضية $true).
 - لا تسمح للمستخدمين بالنقر فوق عنوان URL الأصلي.
 
 ```PowerShell
-New-SafeLinksPolicy -Name "Contoso All" -IsEnabled $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -DoNotAllowClickThrough $true
+New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
 ```
 
 للحصول على معلومات مفصلة حول بناء الجملة والمعلمات، راجع [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy).
@@ -468,7 +468,7 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 للحصول على معلومات مفصلة حول بناء الجملة والمعلمات، راجع [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-للتحقق من أن خزينة الارتباطات تقوم بالمسح الضوئي للرسائل، تحقق من Microsoft Defender المتوفر Office 365 التقارير. لمزيد من المعلومات، راجع [عرض تقارير ل Defender for Office 365](view-reports-for-mdo.md) [واستخدام المستكشف في Microsoft 365 Defender المدخل](threat-explorer.md).
+للتحقق من خزينة الارتباطات هي مسح الرسائل ضوئيا، تحقق من Microsoft Defender لـ Office 365 المتوفرة. لمزيد من المعلومات، راجع [عرض تقارير](view-reports-for-mdo.md) Defender لـ Office 365 [واستخدام المستكشف في Microsoft 365 Defender المدخل](threat-explorer.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>كيف يمكنك معرفة كيفية عمل هذه الإجراءات؟
 

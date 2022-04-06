@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0fece71510237f086e6a6f499a9b6b8b76de2a0e
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 6acfec658ee7c104ae58974390ba39da8bc171f9
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500288"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569876"
 ---
 # <a name="step-3-enable-and-pilot-microsoft-defender-for-office-365"></a>الخطوة 3. تمكين Microsoft Defender لـ Office 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "64500288"
 
 يصف الجدول التالي الخطوات في الرسم التوضيحي.
 
-| الرقم التسلسلي|الخطوة  |الوصف  |
+| رقم الخطوة | ارتباط  |الوصف  |
 |---------|---------|---------|
 |1|[مراجعة متطلبات البنية والمفاهيم الأساسية](eval-defender-office-365-architecture.md)    | تعرف على تصميم Office ل Defender وتأكد من أن بيئة Exchange Online تلبي المتطلبات الأساسية للهندسة.       |
 |2|[تمكين بيئة التقييم](eval-defender-office-365-enable-eval.md)     |   اتبع الخطوات اللازمة لإعداد بيئة التقييم.      |

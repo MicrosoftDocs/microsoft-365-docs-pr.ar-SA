@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d49ef6b31e6446f3452d0efdce2e918813eabcc6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 51bb4f451329a74417c21db0a64aadae6dccbce6
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63572234"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500860"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>التحقق من المستخدمين في Microsoft 365 Defender
 
@@ -36,11 +36,11 @@ ms.locfileid: "63572234"
 
 يمكن أن يتضمن جزء من التحقيق في الحادث حسابات المستخدمين. يمكنك الاطلاع على تفاصيل حسابات المستخدمين المحددة في تنبيهات حادث في مدخل Microsoft 365 Defender من **الأحداث** \> & **_التنبيهات incident_*_ \> _* Users**. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="مثال لصفحة &quot;المستخدمون&quot; لحادث." lightbox="../../media/investigate-incidents/incident-users.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="صفحة المستخدمون لحادث في مدخل Microsoft 365 Defender." lightbox="../../media/investigate-incidents/incident-users.png":::
 
 للحصول على ملخص سريع لحساب مستخدم للحادث، حدد علامة الاختيار بجانب اسم حساب المستخدم. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="مثال لجزاء ملخص حساب المستخدم لحادث ما." lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="علامة التبويب &quot;المستخدمون&quot; لحادث في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-users/incidents-ss-user-pane.png":::
 
 > [!NOTE]
 > تعرض صفحة المستخدم مؤسسة Azure Active Directory (Azure AD) بالإضافة إلى المجموعات، مما يساعدك على فهم المجموعات والأذونات المقترنة بمستخدم.
@@ -51,17 +51,17 @@ ms.locfileid: "63572234"
 
 من هنا، يمكنك تحديد **الانتقال إلى صفحة المستخدم** لرؤية تفاصيل حساب مستخدم. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="مثال لصفحة حساب المستخدم لحادث." lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="تفاصيل حساب المستخدم في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-users/incidents-ss-user-details.png":::
 
 يمكنك أيضا رؤية هذه الصفحة عن طريق تحديد اسم حساب المستخدم من القائمة على **صفحة** المستخدمون.
 
 يمكنك رؤية عضوية المجموعة للمستخدم عن طريق تحديد الرقم ضمن **المجموعات**.
 
-:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="مثال لعضوية المجموعة لمستخدم." lightbox="../../media/investigate-users/user-group-membership.png":::
+:::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="المعلومات حول عضوية المجموعة لمستخدم في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-users/user-group-membership.png":::
 
 من خلال تحديد الأيقونة ضمن **مدير**، يمكنك معرفة مكان وجود المستخدم في شجرة المؤسسة.
 
-تجمع Microsoft 365 Defender مدخل ويب معلومات من Microsoft Defender ل Endpoint و Microsoft Defender for Identity و Microsoft Defender for Cloud Apps (استنادا إلى التراخيص التي لديك).
+تجمع Microsoft 365 Defender مستخدم المدخل معلومات من Microsoft Defender لنقطة النهاية Microsoft Defender for Identity و Microsoft Defender for Cloud Apps (استنادا إلى التراخيص التي تملكها).
 
 تعرض هذه الصفحة معلومات خاصة بخطر الأمان لحساب المستخدم، الذي يتضمن درجة تساعد على تقييم المخاطر والأحداث والتنبيهات الأخيرة التي كانت تساهم في الخطر العام.
 
@@ -76,7 +76,7 @@ ms.locfileid: "63572234"
 
 فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="مثال على الإجراءات على حساب مستخدم لحادث." lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="القسم الذي يصف الإجراءات على حساب مستخدم لحادث في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
 
 ## <a name="view-lateral-movement-paths"></a>عرض مسارات الحركة العرضية
 
@@ -86,7 +86,7 @@ ms.locfileid: "63572234"
 
 إذا لم يتم اكتشاف مسار حركة لاحقة للكيان خلال اليومين الماضيين، لن يتم عرض الرسم البياني. حدد تاريخا مختلفا باستخدام عرض تاريخ مختلف لعرض الرسوم البيانية السابقة لمسارات الحركة اللاحقة التي تم اكتشافها لهذا الكيان. يتوفر تقرير مسار الحركة اللاحقة دائما لتزويدك بمعلومات حول مسارات الحركة اللاحقة المحتملة التي تم اكتشافها، ويمكن تخصيصه حسب الوقت.
 
-:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="مثال لمسار الحركة اللاحقة للمستخدم." lightbox="../../media/investigate-users/lateral-movement-path.png":::
+:::image type="content" source="../../media/investigate-users/lateral-movement-path.png" alt-text="مسار الحركة اللاحقة لمستخدم في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-users/lateral-movement-path.png":::
 
 لمزيد من المعلومات، راجع [مسارات الحركة اللاحقة](/defender-for-identity/use-case-lateral-movement-path).
 

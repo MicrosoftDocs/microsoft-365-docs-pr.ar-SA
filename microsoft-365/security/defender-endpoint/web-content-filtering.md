@@ -1,6 +1,6 @@
 ---
 title: تصفية محتوى ويب
-description: استخدم تصفية محتوى الويب في Microsoft Defender ل Endpoint لتعقب الوصول إلى مواقع الويب وتنظيمه استنادا إلى فئات المحتوى الخاصة بها.
+description: استخدم تصفية محتوى الويب في Microsoft Defender لنقطة النهاية لتعقب الوصول إلى مواقع الويب وتنظيمها استنادا إلى فئات المحتوى الخاصة بها.
 keywords: حماية الويب، الحماية من المخاطر على الويب، استعراض الويب، المراقبة، التقارير، البطاقات، قائمة المجالات، الأمان، التصيد الاحتيالي، البرامج الضارة، استغلال، مواقع الويب، حماية الشبكة، Edge، Internet Explorer، Chrome، Firefox، مستعرض ويب
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,26 +15,26 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 14d45f4ac22a9707b380d817cb89da1bbee562e2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 24cdf18ad510902a533834da2f3595acaa9b33d7
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63573296"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595247"
 ---
 # <a name="web-content-filtering"></a>تصفية محتوى ويب
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-تصفية محتوى الويب هي جزء من إمكانات [حماية](web-protection-overview.md) الويب في Microsoft Defender لنقطة النهاية. وهو يمكن مؤسستك من تعقب الوصول إلى مواقع الويب وتنظيمه استنادا إلى فئات المحتوى الخاصة بها. قد تسبب العديد من مواقع الويب هذه مشاكل، على الرغم من أنها ليست ضارة، بسبب أنظمة التوافق أو استخدام النطاق الترددي أو غير ذلك من المشاكل.
+تصفية محتوى ويب هي جزء من إمكانات [حماية](web-protection-overview.md) الويب في Microsoft Defender لنقطة النهاية. وهو يمكن مؤسستك من تعقب الوصول إلى مواقع الويب وتنظيمه استنادا إلى فئات المحتوى الخاصة بها. قد تسبب العديد من مواقع الويب هذه مشاكل، على الرغم من أنها ليست ضارة، بسبب أنظمة التوافق أو استخدام النطاق الترددي أو غير ذلك من المشاكل.
 
 قم بتكوين السياسات عبر مجموعات الأجهزة لحظر فئات معينة. يمنع حظر فئة المستخدمين ضمن مجموعات أجهزة محددة من الوصول إلى عناوين URL المقترنة بالفئة. بالنسبة لأي فئة غير محظرة، يتم تدقيق عناوين URL تلقائيا. يمكن للمستخدمين الوصول إلى عناوين URL دون انقطاع، وستجمع إحصائيات الوصول للمساعدة في إنشاء قرار نهج مخصص أكثر. سيشاهد المستخدمون إعلام حظر إذا كان أحد العناصر على الصفحة التي يشاهدونها يجري مكالمات إلى مورد تم حظره.
 
@@ -44,7 +44,7 @@ ms.locfileid: "63573296"
 
 - يتم منع المستخدمين من الوصول إلى مواقع الويب في الفئات المحظورة، سواء كانوا يستعرضون في الموقع أو خارجها.
 
-- يمكن لفريق الأمان نشر سياسات بشكل ملائم لمجموعات من المستخدمين باستخدام مجموعات الأجهزة المعرفة في إعدادات التحكم بالوصول المستند إلى الدور في [Microsoft Defender](/microsoft-365/security/defender-endpoint/rbac) لنقطة النهاية.
+- يمكن لفريق الأمان نشر سياسات بشكل ملائم لمجموعات من المستخدمين باستخدام مجموعات الأجهزة [المعرفة في Microsoft Defender لنقطة النهاية التحكم](/microsoft-365/security/defender-endpoint/rbac) بالوصول المستندة إلى الدور.
 
 - يمكن لفريق الأمان الوصول إلى تقارير الويب في الموقع المركزي نفسه، مع إمكانية الرؤية عبر الكتل الفعلية واستخدام الويب.
 
@@ -52,7 +52,7 @@ ms.locfileid: "63573296"
 
 قبل تجربة هذه الميزة، تأكد من تلبية المتطلبات التالية:
 
-- يتضمن اشتراكك أحد ما يلي: Windows 10 Enterprise E5، Microsoft 365 E5، الأمان في Microsoft 365 E5، Microsoft 365 E3 + الأمان في Microsoft 365 E5  أو ترخيص Microsoft Defender ل Endpoint مستقل. 
+- يتضمن اشتراكك أحد ما يلي: Windows 10 Enterprise E5، Microsoft 365 E5، الأمان في Microsoft 365 E5، Microsoft 365 E3 + الأمان في Microsoft 365 E5 الوظائف الإضافية أو Microsoft Defender لنقطة النهاية مستقل. 
 
 - يمكنك الوصول إلى Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">الإلكتروني</a>.
 
@@ -62,7 +62,7 @@ ms.locfileid: "63573296"
 
 ## <a name="data-handling"></a>معالجة البيانات
 
-يتم تخزين البيانات في المنطقة التي تم تحديدها كجزء من [إعدادات معالجة بيانات نقطة النهاية من Microsoft Defender](data-storage-privacy.md). لن تغادر بياناتك مركز البيانات في هذه المنطقة. بالإضافة إلى ذلك، لن يتم مشاركة بياناتك مع أي جهات خارجية، بما في ذلك موفري البيانات لدينا.
+يتم تخزين البيانات في المنطقة التي تم تحديدها كجزء من Microsoft Defender لنقطة النهاية [معالجة البيانات](data-storage-privacy.md). لن تغادر بياناتك مركز البيانات في هذه المنطقة. بالإضافة إلى ذلك، لن يتم مشاركة بياناتك مع أي جهات خارجية، بما في ذلك موفري البيانات لدينا.
 
 ## <a name="turn-on-web-content-filtering"></a>تشغيل تصفية محتوى الويب
 
@@ -134,7 +134,7 @@ ms.locfileid: "63573296"
 
 **الدردشة:** المواقع التي تستند بشكل أساسي إلى غرف المحادثة على الويب.
 
-**الألعاب**: المواقع المتعلقة بألعاب الفيديو أو الكمبيوتر، بما في ذلك المواقع التي تروج للألعاب من خلال استضافة الخدمات عبر الإنترنت أو المعلومات المتعلقة بالألعاب.
+**الألعاب**: المواقع المتعلقة بألعاب الفيديو أو الكمبيوتر، بما في ذلك المواقع التي تروج للألعاب من خلال استضافة خدمات الإنترنت أو المعلومات المتعلقة بالألعاب.
 
 **المراسلة الفورية**: المواقع التي يمكن استخدامها لتنزيل برامج المراسلة الفورية أو المراسلة الفورية المستندة إلى العميل.
 
@@ -203,9 +203,9 @@ ms.locfileid: "63573296"
 
 ### <a name="url-category-lookup"></a>البحث عن فئة URL
 
-لتحديد فئة موقع ويب، يمكنك استخدام وظيفة البحث في URL المتوفرة على Microsoft 365 Defender (<https://security.microsoft.com>) ضمن **بحث نقاط** \> **النهاية**. في نتائج البحث في URL، تظهر فئة تصفية محتوى الويب ضمن **تفاصيل عنوان URL/المجال**. يمكن للمسؤولين أيضا النزاع على فئة المجال مباشرة من هذه الصفحة، كما هو موضح في الصورة التالية. إذا لم تظهر نتيجة الفئة، فلا يتم تعيين عنوان URL حاليا إلى فئة تصفية محتوى ويب موجودة.
+لتحديد فئة موقع ويب، يمكنك استخدام وظيفة البحث في URL المتوفرة على Microsoft 365 Defender (<https://security.microsoft.com>) ضمن **بحث نقاط** \> **النهاية**. في نتائج البحث في URL، تظهر فئة تصفية محتوى الويب ضمن **تفاصيل عنوان URL/المجال**. إذا لم تظهر نتيجة الفئة، فلا يتم تعيين عنوان URL حاليا إلى فئة تصفية محتوى ويب موجودة.
 
-![صورة لنتائج البحث عن فئة تصفية محتوى ويب.](../../media/web-content-filtering-category-lookup.png)
+<!---:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="The web content filtering category lookup results" lightbox="../../media/web-content-filtering-category-lookup.png":::--->
 
 ## <a name="web-content-filtering-cards-and-details"></a>بطاقات تصفية محتوى ويب وتفاصيله
 
@@ -217,25 +217,25 @@ ms.locfileid: "63573296"
 
 في أول 30 يوما من استخدام هذه الميزة، قد لا تتوفر لدى مؤسستك بيانات كافية لعرض هذه المعلومات.
 
-![صورة لنشاط ويب حسب بطاقة الفئة.](images/web-activity-by-category600.png)
+:::image type="content" source="images/web-activity-by-category600.png" alt-text="نشاط الويب حسب بطاقة الفئة" lightbox="images/web-activity-by-category600.png":::
 
 ### <a name="web-content-filtering--summary-card"></a>بطاقة ملخص تصفية محتوى ويب
 
 تعرض هذه البطاقة توزيع محاولات الوصول المحظورة عبر فئات محتوى الويب الأصل المختلفة. حدد أحد الأشرطة الملونة لعرض مزيد من المعلومات حول فئة ويب أصل معينة.
 
-![صورة لبطاقة ملخص تصفية محتوى الويب.](images/web-content-filtering-summary.png)
+:::image type="content" source="images/web-content-filtering-summary.png" alt-text="بطاقة ملخص تصفية محتوى الويب" lightbox="images/web-content-filtering-summary.png":::
 
 ### <a name="web-activity-summary-card"></a>بطاقة ملخص نشاط ويب
 
 تعرض هذه البطاقة العدد الإجمالي للطلبات لمحتوى الويب في كل عناوين URL.
 
-![صورة لبطاقة ملخص نشاط الويب.](images/web-activity-summary.png)
+:::image type="content" source="images/web-activity-summary.png" alt-text="بطاقة ملخص نشاط الويب" lightbox="images/web-activity-summary.png":::
 
 ### <a name="view-card-details"></a>عرض تفاصيل البطاقة
 
 يمكنك الوصول إلى **تفاصيل التقرير** لكل بطاقة عن طريق تحديد صف جدول أو شريط ملون من المخطط في البطاقة. تحتوي صفحة تفاصيل التقرير لكل بطاقة على بيانات إحصائية واسعة النطاق حول فئات محتوى الويب ومجالات مواقع الويب ومجموعات الأجهزة.
 
-![صورة التفاصيل الخاصة بتفاصيل تقرير حماية الويب.](images/web-protection-report-details.png)
+:::image type="content" source="images/web-protection-report-details.png" alt-text="تفاصيل تقرير حماية الويب" lightbox="images/web-protection-report-details.png":::
 
 - **فئات الويب**: تسرد فئات محتوى الويب التي كانت لديها محاولات وصول في مؤسستك. حدد فئة معينة لفتح منتدي من حول الملخص.
 

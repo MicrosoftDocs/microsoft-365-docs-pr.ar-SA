@@ -15,19 +15,19 @@ ms.assetid: ''
 ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: يمكن للمسؤولين التعرف على اعتبارات النشر والأسئلة التي يتم طرحها بشكل متكرر حول محاكاة الهجمات والتدريب عليها في Microsoft 365 E5 أو Microsoft Defender Office 365 2 في الخطة 2.
+description: يمكن للمسؤولين التعرف على اعتبارات النشر والأسئلة التي يتم طرحها بشكل متكرر حول محاكاة الهجمات والتدريب عليها في المؤسسات Microsoft 365 E5 أو Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 380241d44f667a845c47f85062d877192e1a7802
-ms.sourcegitcommit: 7b83e2605895fee5c73cd1d01f4cd16e1457a69f
+ms.openlocfilehash: 57b4d684e52fd51a2ece279cc7322389a953a17c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "63570573"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467786"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>اعتبارات نشر التدريب على محاكاة الهجمات وال الأسئلة الشائعة
 
-يتيح التدريب على محاكاة الهجمات ل Microsoft 365 E5 أو Microsoft Defender ل Office 365 في الخطة 2 من قياس مخاطر الهندسة الاجتماعية وإدارتها من خلال السماح بإنشاء عمليات محاكاة التصيد الاحتيالي التي يتم تمكينها بواسطة تحميلات التصيد الاحتيالي الحقيقية غير المحملة بالسلاح وإدارتها. يساعد التدريب المستهدف بشكل تشعبي، الذي يتم تقديمه في شراكة مع أمان Terranova، على تحسين المعرفة وتغيير سلوك الموظفين.
+يمكن التدريب على محاكاة الهجمات مؤسسات Microsoft 365 E5 أو Microsoft Defender لـ Office 365 الخطة 2 من قياس مخاطر الهندسة الاجتماعية وإدارتها من خلال السماح بإنشاء عمليات محاكاة التصيد الاحتيالي التي يتم دعمها بواسطة تحميلات التصيد الاحتيالي الحقيقية غير المحملة بالسلاح وإدارتها. يساعد التدريب المستهدف بشكل تشعبي، الذي يتم تقديمه في شراكة مع أمان Terranova، على تحسين المعرفة وتغيير سلوك الموظفين.
 
 لمزيد من المعلومات حول بدء استخدام التدريب على محاكاة الهجمات، راجع [بدء استخدام التدريب على محاكاة الهجمات](attack-simulation-training-get-started.md).
 
@@ -39,7 +39,7 @@ ms.locfileid: "63570573"
 
 قد تحدد خدمة سمعة URL واحدة أو أكثر من عناوين URL المستخدمة بواسطة التدريب على محاكاة الهجمات على أنها غير آمنة. يمنع خزينة Google في Google Chrome بعض عناوين URL المحاكاة لتصيد احتيالي مع رسالة **مخادعة في موقع** متقدم. بينما نعمل مع العديد من موردي سمعة URL للسماح دائما باستخدام عناوين URL للمحاكاة، لا نغطيها بشكل كامل دائما.
 
-![تحذير موقع مخادع مسبقا في Google Chrome.](../../media/attack-sim-training-faq-chrome-deceptive-site-message.png)
+:::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="التحذير المسبق لموقع مخادع في Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
 لاحظ أن هذه المشكلة لا تؤثر على Microsoft Edge.
 
@@ -96,11 +96,11 @@ ms.locfileid: "63570573"
 
 أثناء وجود محاكاة في الحالة **مجدولة** ، ستكون تقارير المحاكاة فارغة في معظمها. أثناء هذه المرحلة، يقوم مشغل المحاكاة بحل عناوين البريد الإلكتروني للمستخدم الهدف، وتوسيع مجموعات التوزيع، وإزالة المستخدمين الضيوف من القائمة، وما إلى ذلك:
 
-![تعرض تفاصيل المحاكاة المحاكاة في الحالة مجدولة.](../../media/attack-sim-training-faq-scheduled-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-scheduled-state.png" alt-text="تفاصيل المحاكاة تظهر المحاكاة في الحالة مجدولة" lightbox="../../media/attack-sim-training-faq-scheduled-state.png":::
 
 بمجرد دخول عملية المحاكاة في **مرحلة** التقدم، ستلاحظ أن المعلومات بدأت في البدأ في إعداد التقارير:
 
-![تعرض تفاصيل المحاكاة المحاكاة في حالة التقدم.](../../media/attack-sim-training-faq-in-progress-state.png)
+:::image type="content" source="../../media/attack-sim-training-faq-in-progress-state.png" alt-text="تفاصيل المحاكاة تظهر المحاكاة في حالة التقدم" lightbox="../../media/attack-sim-training-faq-in-progress-state.png":::
 
 قد يستغرق تحديث تقارير المحاكاة الفردية ما يصل إلى 30 دقيقة بعد الانتقال إلى حالة **التقدم** . يستمر إنشاء بيانات التقرير حتى تصل عملية المحاكاة إلى الحالة **مكتملة** . تحدث تحديثات إعداد التقارير عند الفواصل الزمنية التالية:
 
@@ -166,7 +166,7 @@ ms.locfileid: "63570573"
 
 أ: نعم يمكنك! في صفحة " **مراجعة** المحاكاة" الأخيرة في المعالج لإنشاء محاكاة جديدة، يوجد خيار **لإرسال اختبار**. سيرسل هذا الخيار رسالة محاكاة تصيد احتيالي نموذجية إلى المستخدم الذي سجل دخوله حاليا. بعد التحقق من صحة رسالة التصيد الاحتيالي في علبة الوارد، يمكنك إرسال المحاكاة.
 
-![الزر "إرسال اختبار" على صفحة "مراجعة المحاكاة".](../../media/attack-sim-training-simulations-review-simulation.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="الزر &quot;إرسال اختبار&quot; على صفحة &quot;مراجعة المحاكاة&quot;" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>س: هل يمكنني استهداف المستخدمين الذين ينتمون إلى مستأجر مختلف كجزء من حملة المحاكاة نفسها؟
 

@@ -18,19 +18,19 @@ ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: fd049930b7b5b922e30e49f5796a736d44038bf2
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: e8a1e08242ab3f884115c414f8a1ba80f5f2aa17
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63571614"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507066"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>برنامج الحماية من الفيروسات من Microsoft Defender التوافق مع منتجات الأمان الأخرى
 
 **ينطبق على:**
 
 - برنامج الحماية من الفيروسات من Microsoft Defender
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "63571614"
 - Windows Server أو الإصدار 1803 أو الأحدث
 - Windows Server 2016‏
 
-ماذا يحدث عند استخدام حل آخر غير Microsoft antivirus/antimalware؟ هل يمكنك تشغيل برنامج الحماية من الفيروسات من Microsoft Defender إلى جانب منتج آخر لمكافحة الفيروسات؟ تعتمد الإجابات على عدة عوامل، مثل نظام التشغيل لديك وما إذا كنت تستخدم [Microsoft Defender ل Endpoint](microsoft-defender-endpoint.md) مع الحماية من الفيروسات.
+ماذا يحدث عند استخدام حل آخر غير Microsoft antivirus/antimalware؟ هل يمكنك تشغيل برنامج الحماية من الفيروسات من Microsoft Defender إلى جانب منتج آخر لمكافحة الفيروسات؟ تعتمد الإجابات على عدة عوامل، مثل نظام التشغيل لديك وما إذا كنت تستخدم [Microsoft Defender لنقطة النهاية الحماية من](microsoft-defender-endpoint.md) الفيروسات.
 
 تصف هذه المقالة ما يحدث برنامج الحماية من الفيروسات من Microsoft Defender برنامج الحماية من الفيروسات/مكافحة البرامج الضارة من Microsoft، مع برنامج Defender for Endpoint وبدونه.
 
@@ -68,7 +68,7 @@ ms.locfileid: "63571614"
 |Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server أو الإصدار 1803 أو الأحدث <br/> Windows Server 2016‏ |برنامج الحماية من الفيروسات من Microsoft Defender|الوضع النشط|
 |Windows Server 2022<br/>Windows Server 2019<br/>Windows Server أو الإصدار 1803 أو الأحدث <br/> Windows Server 2016‏  |حل برنامج مكافحة الفيروسات/مكافحة البرامج الضارة من Microsoft|معطل (تعيين يدويا) <sup>[[1](#fn1)]</sup>|
 
-(<a id="fn1">1</a>) على Windows الخادم، إذا كنت تقوم بتشغيل منتج برنامج الحماية من الفيروسات غير Microsoft، يمكنك إلغاء تثبيت برنامج الحماية من الفيروسات من Microsoft Defender لمنع حدوث تعارض. إذا كان الجهاز مفعلا في Microsoft Defender لنقطة النهاية، يمكنك استخدام برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي (انظر أدناه).
+(<a id="fn1">1</a>) على Windows الخادم، إذا كنت تقوم بتشغيل منتج برنامج الحماية من الفيروسات غير Microsoft، يمكنك إلغاء تثبيت برنامج الحماية من الفيروسات من Microsoft Defender لمنع حدوث تعارض. إذا كان الجهاز مفعلا Microsoft Defender لنقطة النهاية، يمكنك استخدام برنامج الحماية من الفيروسات من Microsoft Defender في الوضع غير النشط (انظر أدناه).
 
 > [!TIP]
 > على Windows Server 2016، *قد ترى برنامج الحماية من الفيروسات لـ Windows Defender* *بدلا من برنامج الحماية من الفيروسات من Microsoft Defender*.
@@ -101,7 +101,7 @@ ms.locfileid: "63571614"
 | Windows Server 2016‏ <br/> Windows Server 2012 R2  | حل برنامج مكافحة الفيروسات/مكافحة البرامج الضارة من Microsoft | نعم | برنامج الحماية من الفيروسات من Microsoft Defender تعيين الإعدادات إلى الوضع السلبي (يدويا) <sup>[[2](#fn2)]<sup> |
 |Windows Server 2016‏ <br/> Windows Server 2012 R2  | حل برنامج مكافحة الفيروسات/مكافحة البرامج الضارة من Microsoft | لا | برنامج الحماية من الفيروسات من Microsoft Defender يجب تعطيلها (يدويا) <sup>[[3](#fn3)]<sup> |
 
-(<a id="fn2">2</a>) في Windows Server 2019 أو Windows Server أو الإصدار 1803 أو الأحدث أو Windows Server 2016 أو Windows Server 2012 R2، لا يدخل برنامج الحماية من الفيروسات من Microsoft Defender الوضع السلبي تلقائيا عند تثبيت برنامج مكافحة الفيروسات من دون Microsoft المنتج. في هذه الحالات، برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي لمنع المشاكل التي تسببها تثبيت منتجات الحماية من الفيروسات المتعددة على الخادم. يمكنك تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي باستخدام PowerShell أو نهج المجموعة أو مفتاح التسجيل. 
+(<a id="fn2">2</a>) في Windows Server 2019 أو Windows Server أو الإصدار 1803 أو الأحدث أو Windows Server 2016 أو Windows Server 2012 R2، لا يدخل برنامج الحماية من الفيروسات من Microsoft Defender الوضع السلبي تلقائيا عند تثبيت برنامج مكافحة الفيروسات من دون Microsoft المنتج. في هذه الحالات، برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي لمنع المشاكل التي تسببها تثبيت منتجات الحماية من الفيروسات المتعددة على الخادم. يمكنك تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي باستخدام PowerShell أو نهج المجموعة أو مفتاح تسجيل. 
 
   يمكنك تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي عن طريق تعيين مفتاح التسجيل التالي:
 - المسار: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
@@ -112,7 +112,7 @@ ms.locfileid: "63571614"
  > [!NOTE]
  > لكي يعمل الوضع السلبي على نقاط النهاية التي تعمل Windows Server 2016 و Windows Server 2012 R2، يجب أن يتم تشغيل نقاط النهاية هذه مع الحل الموحد الحديث الموضح في خوادم [Windows على اللوحة](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
 
-(<a id="fn3">3</a>) في Windows Server 2016 أو Windows Server 2012 R2، إذا كنت تستخدم منتجا من برامج الحماية من الفيروسات من غير Microsoft ولم يتم تشغيل نقطة النهاية هذه في Microsoft Defender لنقطة النهاية، فعطل/قم ب إلغاء تثبيت برنامج الحماية من الفيروسات من Microsoft Defender  يدويا لمنع حدوث مشاكل بسبب تثبيت العديد من منتجات الحماية من الفيروسات على خادم.
+(<a id="fn3">3</a>) في Windows Server 2016 و Windows Server 2012 R2 و Windows Server الإصدار 1803 أو الأحدث و Windows Server 2019 و Windows Server 2022، إذا كنت تستخدم منتجا من برامج الحماية من الفيروسات غير من Microsoft على نقطة نهاية غير محدثة في  Microsoft Defender لنقطة النهاية، قم بتعطيل/إلغاء تثبيت برنامج الحماية من الفيروسات من Microsoft Defender يدويا لمنع حدوث مشاكل بسبب تثبيت منتجات الحماية من الفيروسات المتعددة على الخادم.
 
 > [!TIP]
 > على Windows Server 2016، *قد ترى برنامج الحماية من الفيروسات لـ Windows Defender* *بدلا من برنامج الحماية من الفيروسات من Microsoft Defender*.
@@ -190,7 +190,7 @@ ms.locfileid: "63571614"
 
  |  الولاية  |  ماذا يحدث  | 
  |:---|:---| 
- |  الوضع النشط  |  في الوضع النشط برنامج الحماية من الفيروسات من Microsoft Defender يتم استخدام تطبيق الحماية من الفيروسات على الجهاز. الإعدادات التي يتم تكوينها باستخدام إدارة التكوين أو نهج المجموعة أو Microsoft Intune أو منتجات الإدارة الأخرى. يتم مسح الملفات ضوئيا، كما يتم معالجة التهديدات، كما يتم إعداد التقارير حول معلومات الكشف في أداة التكوين (مثل إدارة التكوين أو تطبيق برنامج الحماية من الفيروسات من Microsoft Defender على نقطة النهاية نفسها).  | 
+ |  الوضع النشط  |  في الوضع النشط برنامج الحماية من الفيروسات من Microsoft Defender يتم استخدام تطبيق الحماية من الفيروسات على الجهاز. الإعدادات التي تم تكوينها باستخدام Configuration Manager أو نهج المجموعة أو Microsoft Intune أو منتجات إدارة أخرى. يتم مسح الملفات ضوئيا، كما يتم معالجة التهديدات، كما يتم إعداد التقارير حول معلومات الكشف في أداة التكوين (مثل Configuration Manager أو تطبيق برنامج الحماية من الفيروسات من Microsoft Defender على نقطة النهاية نفسها).  | 
  |  الوضع السلبي  |  في الوضع السلبي، برنامج الحماية من الفيروسات من Microsoft Defender يتم استخدام التطبيق ك تطبيق الحماية من الفيروسات، ولا يتم معالجة التهديدات عن  طريق برنامج الحماية من الفيروسات من Microsoft Defender. ومع ذلك، يمكن معالجة التهديدات من خلال الكشف عن نقطة النهاية والاستجابة [لها (الكشف التلقائي والاستجابة على النقط النهائية) في وضع](edr-in-block-mode.md) الحظر. <br/><br/> يتم فحص الملفات الكشف التلقائي والاستجابة على النقط النهائية، كما يتم توفير التقارير للكشف عن المخاطر التي تمت مشاركتها مع خدمة Defender for Endpoint. قد تظهر التنبيهات برنامج الحماية من الفيروسات من Microsoft Defender كمصدر، حتى عندما برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي. <br/><br/> عندما برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي، لا يزال بإمكانك إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender؛ [](manage-updates-baselines-microsoft-defender-antivirus.md)ومع ذلك، لا يمكنك التنقل برنامج الحماية من الفيروسات من Microsoft Defender في الوضع النشط إذا كان لدى أجهزتك منتج برنامج الحماية من الفيروسات غير Microsoft يوفر الحماية في الوقت الحقيقي من البرامج الضارة. <br/><br/> للحصول على أفضل مستويات أمان الدفاع والكشف، تأكد من الحصول على تحديثات الحماية من الفيروسات وفيروسات الحماية من البرامج الضارة، حتى لو كان برنامج الحماية من الفيروسات من Microsoft Defender قيد التشغيل في الوضع السلبي. راجع [إدارة برنامج الحماية من الفيروسات من Microsoft Defender الأساسية وتطبيق الأساسات](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> تجدر الإشارة إلى أن الوضع السلبي مدعوم فقط على Windows Server 2012 R2 & 2016 عند تشغيل الجهاز باستخدام الحل الحديث [الموحد](/microsoft-365/security/defender-endpoint/configure-server-endpoints).  | 
  |  معطل <br/><br/> أو <br/><br/> إلغاء تثبيت  |  عند تعطيله أو إلغاء تثبيته، برنامج الحماية من الفيروسات من Microsoft Defender يتم استخدامه ك تطبيق الحماية من الفيروسات. لا يتم مسح الملفات ضوئيا ولا يتم معالجة التهديدات. <br/><br/> لا يوصى بتعطيل برنامج الحماية من الفيروسات من Microsoft Defender أو إلغاء تثبيته بشكل عام؛ إذا أمكن، فاحتفظ ب برنامج الحماية من الفيروسات من Microsoft Defender في الوضع غير النشط إذا كنت تستخدم حل مكافحة البرامج الضارة/برنامج الحماية من الفيروسات من Microsoft. <br/><br/> في الحالات التي يتم فيها تعطيل برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا، يمكن إعادة تمكينه تلقائيا إذا تنتهي صلاحية منتج مكافحة الفيروسات/مكافحة البرامج الضارة غير التابع ل Microsoft أو توقف عن توفير الحماية في الوقت الحقيقي من الفيروسات أو البرامج الضارة أو التهديدات الأخرى. تساعد إعادة التمكين التلقائي برنامج الحماية من الفيروسات من Microsoft Defender على ضمان الحفاظ على الحماية من الفيروسات في نقاط النهاية. <br/><br/> يمكنك [أيضا استخدام الفحص](limited-periodic-scanning-microsoft-defender-antivirus.md) الدوري المحدود، الذي يعمل مع محرك برنامج الحماية من الفيروسات من Microsoft Defender للتحقق بشكل دوري من التهديدات إذا كنت تستخدم تطبيقا غير من تطبيقات مكافحة الفيروسات من Microsoft.  | 
 

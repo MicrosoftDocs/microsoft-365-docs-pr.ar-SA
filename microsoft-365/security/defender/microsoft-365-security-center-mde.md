@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: f50a6750c3f5cd39e68a39cf000ff60e4fec8ef2
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: fa9833572a57e0ea81978f25a7d8d34db068109a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568683"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501102"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender لنقطة النهاية في Microsoft 365 Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "64568683"
 **ينطبق على:**
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
-- [مشكلات الأداء في Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## <a name="quick-reference"></a>مرجع سريع
 
@@ -46,7 +46,7 @@ ms.locfileid: "64568683"
 |---------|---------|
 | لوحات المعلومات <ul><li>عمليات الأمان</li><li>Threat Analytics</li></ul>  |Home <ul><li>تحليل المخاطر</li></ul>   |
 | الأحداث | الأحداث & تنبيهات |
-| بيانات الجهاز | بيانات الجهاز |
+| مخزون الجهاز | مخزون الجهاز |
 | قائمة انتظار التنبيهات | الأحداث & تنبيهات |
 | عمليات التحقيق التلقائية | مركز الإجراءات |
 | الصيد المتقدم | الصيد |
@@ -77,7 +77,7 @@ Microsoft Defender لنقطة النهاية في Microsoft 365 Defender منح 
 
 أطلع على Microsoft 365 Defender في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
 
-Mer informasjon حول الفوائد: [نظرة عامة على Microsoft 365 Defender](microsoft-365-defender.md)
+تعرف على المزيد حول الفوائد: [نظرة عامة على Microsoft 365 Defender](microsoft-365-defender.md)
 
 ## <a name="whats-changed"></a>ما الذي تم تغييره
 
@@ -98,7 +98,7 @@ Mer informasjon حول الفوائد: [نظرة عامة على Microsoft 365 D
 |---------|---------|
 |البحث   |  يقع شريط البحث في أعلى الصفحة. يتم توفير الاقتراحات بينما تكتب. يمكنك البحث عبر الوحدات التالية في Defender for Endpoint و Defender for Identity: <br><br> - **الأجهزة** - معتمدة لكل من Defender for Endpoint و Defender for Identity. يمكنك حتى استخدام عوامل تشغيل البحث، على سبيل المثال، يمكنك استخدام "يحتوي على" للبحث عن جزء من اسم المضيف. <br><br> - **المستخدمون** - مدعوم لكل من Defender for Endpoint و Defender for Identity. <br><br> - **الملفات، عناوين الإنترنت، عناوين URL** - القدرات نفسها الموجودة في Defender for Endpoint. <br> ملاحظة: *عمليات البحث في عنوان IP وURL متطابقة تماما ولا تظهر في صفحة نتائج البحث ، فهي تؤدي مباشرة إلى صفحة الكيان.  <br><br> - **TVM** - القدرات نفسها كما في Defender for Endpoint (نقاط الضعف والبرامج والتوصيات). <br><br>  تمركز صفحة نتائج البحث المحسنة النتائج من جميع الكيانات.  |
 |[لوحة المعلومات](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  هذه هي لوحة معلومات عمليات الأمان. راجع نظرة عامة حول عدد التنبيهات النشطة التي تم تشغيلها، والأجهزة المعرضة للمخاطر، والمستخدمين المعرضين للمخاطر، ومستوى الخطورة للتنبيهات والأجهزة والمستخدمين. يمكنك أيضا معرفة ما إذا كانت هناك أي أجهزة لديها مشاكل في المستشعر، وعلى حالة الخدمة بشكل عام، وكيفية اكتشاف أي تنبيهات لم يتم حلها. |
-|بيانات الجهاز | لا توجد تغييرات. |
+|مخزون الجهاز | لا توجد تغييرات. |
 |[إدارة الثغرات](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    تم تقصير الاسم لاحتواء جزء التنقل. إنه نفس مقطع إدارة المخاطر والثغرات الأمنية، مع كل الصفحات الموجودة أسفله.     |
 | الشركاء و واجهات برمجة التطبيقات | لا توجد تغييرات. |
 | التقييمات & التعليمية    |     قدرات اختبار وتعلم جديدة.     |
@@ -115,7 +115,7 @@ Mer informasjon حول الفوائد: [نظرة عامة على Microsoft 365 D
 | المنطقة | وصف التغيير |
 |---------|---------|
 | التقارير  | راجع تقارير نقاط النهاية والبريد الإلكتروني & التعاون، بما في ذلك الحماية من المخاطر وحماية الجهاز والتوافق والأجهزة المعرضة للتأثر. |
-| الصحة  |  يقوم حاليا بالربط بصفحة "Estado de funcionamento dos serviços" في [مركز مسؤولي Microsoft 365](https://admin.microsoft.com/). |
+| الصحة  |  حاليا يتم الارتباط إلى صفحة "Service health" في [مركز مسؤولي Microsoft 365](https://admin.microsoft.com/). |
 | الإعدادات |  يمكنك إدارة الإعدادات Microsoft 365 Defender نقاط النهاية والبريد الإلكتروني & والتعاون والهويات واكتشاف الجهاز.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365 التنقل والأمان وإمكانياته
@@ -126,8 +126,8 @@ Mer informasjon حول الفوائد: [نظرة عامة على Microsoft 365 D
 
 تجمع إدارة الأحداث والتنبيهات عبر البريد الإلكتروني والأجهزة والهويات. توفر صفحة التنبيه سياقا كاملا للتنبيه من خلال دمج إشارات الهجوم لإنشاء قصة مفصلة. تجمع الآن التجربة الموحدة الجديدة معا طريقة عرض متناسقة للتنبيهات عبر أحمال العمل. يمكنك إجراء الفرز بسرعة، والتحري، واتخاذ إجراء فعال.
 
-- [Mer informasjon حول الأحداث](incidents-overview.md)
-- [Mer informasjon حول إدارة التنبيهات](investigate-alerts.md)
+- [معرفة المزيد حول الأحداث](incidents-overview.md)
+- [معرفة المزيد حول إدارة التنبيهات](investigate-alerts.md)
 
 :::image type="content" source="../../media/converge-1-alerts-and-actions.png" alt-text="شريط &quot;التنبيهات والإجراءات&quot; السريع في مدخل Microsoft 365 Defender" lightbox="../../media/converge-1-alerts-and-actions.png":::
 
@@ -142,7 +142,7 @@ Mer informasjon حول الفوائد: [نظرة عامة على Microsoft 365 D
 
 يعرض لك مركز الإجراءات عمليات البحث التي تم إنشاؤها بواسطة قدرات الاستجابة والتحريات التلقائية. يمكن أن يساعد هذا الاختبار التلقائي Microsoft 365 Defender فرق الأمان من خلال الاستجابة تلقائيا إلى أحداث معينة.
 
-[Mer informasjon حول مركز الإجراءات](m365d-action-center.md).
+[تعرف على المزيد حول مركز الإجراءات](m365d-action-center.md).
 
 ### <a name="threat-analytics"></a>Threat Analytics
 
@@ -154,7 +154,7 @@ Mer informasjon حول الفوائد: [نظرة عامة على Microsoft 365 D
 
 يمكنك الوصول إلى تحليلات التهديدات إما من شريط التنقل العلوي الأيمن في Microsoft 365 Defender، أو من بطاقة لوحة معلومات مخصصة تعرض التهديدات الرئيسية لمنظمتك.
 
-Mer informasjon حول كيفية تعقب التهديدات الناشئة والاستجابة [لها باستخدام تحليلات المخاطر](./threat-analytics.md).
+تعرف على المزيد حول كيفية تعقب التهديدات الناشئة والاستجابة لها [باستخدام تحليلات المخاطر](./threat-analytics.md).
 
 ### <a name="endpoints-section"></a>مقطع نقاط النهاية
 

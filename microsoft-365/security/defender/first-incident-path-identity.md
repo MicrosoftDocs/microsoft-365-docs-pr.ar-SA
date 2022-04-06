@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 20b9fca87e003c0c776c9f614afaa1b6054c24a5
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 6d62e1127eabb401a6af77aa1bbf073e4cfced17
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500266"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570096"
 ---
 # <a name="example-of-an-identity-based-attack"></a>مثال عن هجوم مستند إلى الهوية
 
@@ -44,7 +44,7 @@ Microsoft 365 Defender للمحللين بتصفية التنبيهات حسب �
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="تصفية مصدر الكشف في Microsoft Defender for Identity" lightbox="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png":::
 
-عند **تحديد تنبيه هجوم** تجاوز الهاشش المشتبه به، يتم إرساله إلى صفحة في Microsoft Defender for Cloud Apps تعرض معلومات أكثر تفصيلا. يمكنك دائما معرفة المزيد حول تنبيه أو هجوم عن طريق تحديد معرفة المزيد حول  نوع التنبيه هذا لقراءة وصف لاقتراحات [](/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) الهجوم والتعليل.
+عند **تحديد تنبيه هجوم** تجاوز الهاشش المشتبه به، يتم إرساله إلى صفحة في Microsoft Defender for Cloud Apps تعرض معلومات أكثر تفصيلا. يمكنك دائما معرفة المزيد حول تنبيه أو هجوم **عن** طريق تحديد Mer informasjon حول نوع التنبيه هذا لقراءة وصف لاقتراحات الهجوم والعد [](/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002).
  
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="تنبيه هجوم تجاوز الهاشش المشتبه به" lightbox="../../media/first-incident-path-identity/first-incident-identity-alert-example.png"::: 
 
@@ -52,7 +52,7 @@ Microsoft 365 Defender للمحللين بتصفية التنبيهات حسب �
 
 بدلا من ذلك، يمكن للمحلل استخدام Defender for Endpoint لمعرفة المزيد حول النشاط على نقطة نهاية. حدد الحادث من قائمة انتظار الحادث، ثم حدد **علامة التبويب** تنبيهات. ومن هنا، يمكنهم تحديد مصدر الكشف أيضا. إن مصدر الكشف المسمى الكشف التلقائي والاستجابة على النقط النهائية هو "كشف نقطة النهاية والاستجابة لها"، وهو Defender لنقطة النهاية. من هنا، يختار المحلل تنبيها تم اكتشافه بواسطة الكشف التلقائي والاستجابة على النقط النهائية.
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="الكشف عن نقطة النهاية والاستجابة لها في مدخل Microsoft Defender لنقطة النهاية" lightbox="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="الكشف عن نقطة النهاية والاستجابة لها في مدخل Microsoft Defender لنقطة النهاية" lightbox="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png":::
 
 تعرض صفحة التنبيه معلومات مختلفة ذات صلة مثل اسم الجهاز الذي تم التأثير عليه واسم المستخدم حالة التحقيق التلقائي وتفاصيل التنبيه. تصف قصة التنبيه تمثيلا مرئيا شجرة العملية. إن شجرة العمليات هي تمثيل هيكلي للعمليات الأصل والطفل المرتبطة بالتنبيه.
 

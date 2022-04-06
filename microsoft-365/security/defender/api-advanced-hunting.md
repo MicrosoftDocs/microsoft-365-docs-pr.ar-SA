@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 94ce63f30b0016a920fdca60dd10b486922ffa32
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 05957fcf7cf2b3b03fbc757fc8b21e67156b285a
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63578099"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500816"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender المتقدمة لصيد API
 
@@ -61,8 +61,8 @@ ms.locfileid: "63578099"
 
 نوع الإذن | الإذن | اسم عرض الأذونات
 -|-|-
-Application | AdvancedHunting.read.All | تشغيل الاستعلامات المتقدمة
-مفوض (حساب العمل أو المدرسة) | AdvancedHunting.Read | تشغيل الاستعلامات المتقدمة
+Application | AdvancedQuery.Read.All| تشغيل الاستعلامات المتقدمة
+مفوض (حساب العمل أو المدرسة) | AdvancedQuery.Read | تشغيل الاستعلامات المتقدمة
 
 >[!Note]
 > عند الحصول على رمز مميز باستخدام بيانات اعتماد المستخدم:

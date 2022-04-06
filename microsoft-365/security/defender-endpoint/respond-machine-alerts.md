@@ -14,19 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00347aabe38e4e74374f0b96d189051ebb56af3b
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: f1fa77f33988893967e71b82cc81059429e41d55
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "63575705"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501278"
 ---
 # <a name="take-response-actions-on-a-device"></a>اتخاذ إجراءات الاستجابة على جهاز
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
@@ -45,6 +46,7 @@ ms.locfileid: "63575705"
 - مركز الإجراءات
 
 [![صورة إجراءات الاستجابة.](images/response-actions.png)](images/response-actions.png#lightbox)
+
 
  يمكنك العثور على صفحات الجهاز من أي من طرق العرض التالية:
 
@@ -97,11 +99,11 @@ ms.locfileid: "63575705"
 
 1. حدد **مركز الإجراءات** من مقطع إجراءات الاستجابة في صفحة الجهاز.
 
-    ![صورة لزر مركز الإجراءات.](images/action-center-package-collection.png)
+   :::image type="content" source="images/action-center-package-collection.png" alt-text="الخيار &quot;مركز الإجراءات&quot;" lightbox="images/action-center-package-collection.png":::
 
 2. في تحرك مركز الإجراءات، حدد **حزمة مجموعة الحزم المتوفرة** لتنزيل الملف المضغوط.
 
-    ![صورة لزر تنزيل الحزمة.](images/collect-package.png)
+   :::image type="content" source="images/collect-package.png" alt-text="خيار حزمة التنزيل" lightbox="images/collect-package.png":::
 
 تحتوي الحزمة على المجلدات التالية:
 
@@ -137,7 +139,7 @@ ms.locfileid: "63575705"
 
 واحدة قمت بتحديد تشغيل مسح الحماية من الفيروسات، حدد نوع الفحص الذي تريد تشغيله (سريع أو كامل) وأضف تعليقا قبل تأكيد الفحص.
 
-![صورة إعلام لتحديد فحص سريع أو فحص كامل وإضافة تعليق.](images/run-antivirus.png)
+:::image type="content" source="images/run-antivirus.png" alt-text="الإعلام لتحديد فحص سريع أو فحص كامل وإضافة تعليق" lightbox="images/run-antivirus.png":::
 
 سيعرض مركز الإجراءات معلومات الفحص وسيتضمن المخطط الزمني للجهاز حدثا جديدا، مما يعكس إرسال إجراء مسح ضوئي على الجهاز. ستعكس تنبيهات Microsoft Defender AV أي عمليات كشف ظهرت أثناء الفحص.
 
@@ -164,13 +166,13 @@ ms.locfileid: "63575705"
 
 بعد تحديد تقييد **تنفيذ التطبيق** على صفحة الجهاز، اكتب تعليقا وحدد **تأكيد**. سيعرض مركز الإجراءات معلومات الفحص وسيتضمن المخطط الزمني للجهاز حدثا جديدا.
 
-![صورة إعلام تقييد التطبيق.](images/restrict-app-execution.png)
+:::image type="content" source="images/restrict-app-execution.png" alt-text="إعلام تقييد التطبيق" lightbox="images/restrict-app-execution.png":::
 
 ### <a name="notification-on-device-user"></a>إعلام على مستخدم الجهاز
 
 عندما يكون أحد التطبيقات مقيدا، يتم عرض الإعلام التالي لإعلام المستخدم بأن التطبيق مقيد من التشغيل:
 
-![صورة لقيد التطبيق.](images/atp-app-restriction.png)
+:::image type="content" source="images/atp-app-restriction.png" alt-text="رسالة تقييد التطبيق" lightbox="images/atp-app-restriction.png":::
 
 >[!NOTE]
 >لا يتوفر الإعلام على Windows Server 2016 Windows Server 2012 R2.
@@ -183,7 +185,7 @@ ms.locfileid: "63575705"
 >- هذا الإجراء غير معتمد حاليا لكل من macOS و Linux. استخدم الاستجابة المباشرة لتشغيل الإجراء. لمزيد من المعلومات حول الاستجابة المباشرة، راجع [التحقق من الكيانات على الأجهزة باستخدام الاستجابة المباشرة](live-response.md)
 >- يتوفر عزل كامل للأجهزة على Windows 10 والإصدار 1703 و Windows 11 و Windows Server 2019 و Windows Server 2016 و Windows Server 2012 R2 و Windows Server 2022.
 >- يتوفر عزل انتقائي للأجهزة Windows 10 والإصدار 1709 أو الإصدارات الأحدث Windows 11.
->- عند عزل جهاز، يتم السماح ببعض العمليات والوجهات فقط. وبالتالي، لن تتمكن الأجهزة التي تقف خلف خدمة VPN كاملة من الوصول إلى خدمة سحابة Microsoft Defender for Endpoint بعد عزل الجهاز. نوصي باستخدام VPN مقسم للانقسام ل Microsoft Defender لنقطة النهاية برنامج الحماية من الفيروسات من Microsoft Defender البيانات ذات الصلة بالحماية المستندة إلى السحابة.
+>- عند عزل جهاز، يتم السماح ببعض العمليات والوجهات فقط. وبالتالي، لن تتمكن الأجهزة التي تقف خلف خدمة VPN كاملة من الوصول إلى الخدمة السحابية Microsoft Defender لنقطة النهاية بعد عزل الجهاز. نوصي باستخدام VPN منقسمة Microsoft Defender لنقطة النهاية البيانات برنامج الحماية من الفيروسات من Microsoft Defender البيانات ذات الصلة بالحماية المستندة إلى السحابة.
 
 تفصل ميزة عزل الجهاز هذه الجهاز الذي تم اختراقه عن الشبكة مع الاحتفاظ باتصال خدمة Defender for Endpoint، التي تستمر في مراقبة الجهاز.
 
@@ -194,7 +196,7 @@ ms.locfileid: "63575705"
 
 بعد تحديد عزل **الجهاز** على صفحة الجهاز، اكتب تعليقا وحدد **تأكيد**. سيعرض مركز الإجراءات معلومات الفحص وسيتضمن المخطط الزمني للجهاز حدثا جديدا.
 
-![صورة لجهاز معزول.](images/isolate-device.png)
+:::image type="content" source="images/isolate-device.png" alt-text="صفحة تفاصيل جهاز معزولة" lightbox="images/isolate-device.png":::
 
 > [!NOTE]
 > سيظل الجهاز متصلا بالخدمة Defender for Endpoint حتى لو كان معزولا عن الشبكة. إذا اخترت تمكين Outlook الاتصال Skype for Business الاتصال، فسوف تتمكن من التواصل مع المستخدم أثناء عزل الجهاز.
@@ -203,7 +205,7 @@ ms.locfileid: "63575705"
 
 عند عزل جهاز، يتم عرض الإعلام التالي لإعلام المستخدم بأنه يتم عزل الجهاز عن الشبكة:
 
-![صورة بلا اتصال بالشبكة.](images/atp-notification-isolate.png)
+:::image type="content" source="images/atp-notification-isolate.png" alt-text="رسالة عدم الاتصال بالشبكة" lightbox="images/atp-notification-isolate.png":::
 
 ## <a name="consult-a-threat-expert"></a>استشارة خبير في التهديدات
 
@@ -222,10 +224,11 @@ ms.locfileid: "63575705"
 
 يتم أيضا عرض كل التفاصيل الأخرى ذات الصلة، على سبيل المثال، تاريخ/وقت الإرسال، إرسال المستخدم، وإذا نجح الإجراء أو فشل.
 
-![صورة لمركز الإجراءات مع معلومات.](images/action-center-details.png)
+:::image type="content" source="images/action-center-details.png" alt-text="مركز الإجراءات الذي به معلومات" lightbox="images/action-center-details.png":::
+
 
 ## <a name="see-also"></a>راجع أيضًا
 
 - [اتخاذ إجراءات الاستجابة على ملف](respond-file-alerts.md)
-- [إجراءات الاستجابة اليدوية في Microsoft Defender لخطة نقطة النهاية 1](defender-endpoint-plan-1.md#manual-response-actions)
+- [إجراءات الاستجابة اليدوية في Microsoft Defender لنقطة النهاية 1](defender-endpoint-plan-1.md#manual-response-actions)
 - [عدم دقة التقرير](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

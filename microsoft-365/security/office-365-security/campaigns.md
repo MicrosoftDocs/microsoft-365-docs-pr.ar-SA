@@ -1,5 +1,5 @@
 ---
-title: طرق عرض الحملة في Microsoft Defender Office 365 خطة
+title: طرق عرض الحملات Microsoft Defender لـ Office 365 التخطيطي
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,24 +17,24 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: تعرف على طرق عرض الحملة في Microsoft Defender Office 365.
+description: تعرف على طرق عرض الحملات Microsoft Defender لـ Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8fad29e82b647d309d3b7046e36bd03b64de81d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: eb1e5e6e740accdb9c6102b798df8e60ab47dfff
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682538"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467720"
 ---
-# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>طرق عرض الحملة في Microsoft Defender Office 365
+# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>طرق عرض الحملات Microsoft Defender لـ Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
-- [Microsoft Defender Office 365 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 2](defender-for-office-365.md)
 
-طرق عرض الحملات هي ميزة في Microsoft Defender Office 365 الخطة 2 (على سبيل المثال، Microsoft 365 E5 أو المؤسسات التي تتضمن أحد الوظائف الإضافية ل Defender for Office 365 2). تحدد طرق عرض Microsoft 365 Defender في مدخل ويب هجمات التصيد الاحتيالي في الخدمة وتصنفها. يمكن أن تساعدك طرق عرض الحملة على:
+طرق عرض الحملات هي ميزة في Microsoft Defender لـ Office 365 2 (على سبيل المثال، Microsoft 365 E5 أو المؤسسات التي تتضمن Defender لـ Office 365 الإضافية الخطة 2). تحدد طرق عرض Microsoft 365 Defender في مدخل ويب هجمات التصيد الاحتيالي في الخدمة وتصنفها. يمكن أن تساعدك طرق عرض الحملة على:
 
 - التحقق بفعالية من هجمات التصيد الاحتيالي والرد عليها.
 - فهم أفضل لنطاق الهجوم.
@@ -59,7 +59,7 @@ ms.locfileid: "63682538"
 
 تتوفر طرق عرض الحملات في مدخل Microsoft 365 Defender في <https://security.microsoft.com> **البريد الإلكتروني & حملات التعاون**\>، أو مباشرة في .<https://security.microsoft.com/campaigns>
 
-![نظرة عامة على الحملات Microsoft 365 Defender المدخل.](../../media/campaigns-overview.png)
+:::image type="content" source="../../media/campaigns-overview.png" alt-text="نظرة عامة على الحملات في مدخل Microsoft 365 Defender" lightbox="../../media/campaigns-overview.png":::
 
 يمكنك أيضا الوصول إلى طرق عرض الحملة من:
 
@@ -93,7 +93,7 @@ ms.locfileid: "63682538"
   - **التصيد** الاحتيالي: عند توفرها، يتم تصيد العلامة التجارية التي يتم تصيدها بواسطة هذه الحملة. على سبيل المثال، `Microsoft`أو أو `365`أو `Unknown`أو `Outlook`أو `DocuSign`.
   - **البرامج الضارة**: على سبيل المثال، `HTML/PHISH` أو `HTML/<MalwareFamilyName>`.
 
-  عند توفرها، يتم تصيد العلامة التجارية التي يتم تصيدها بواسطة هذه الحملة. عندما يكون الكشف مدفوعا بواسطة Defender لتقنية Office 365، تضاف البادرة **ATP-** إلى القيمة subtype.
+  عند توفرها، يتم تصيد العلامة التجارية التي يتم تصيدها بواسطة هذه الحملة. عندما يكون الكشف مدفوعا بتقنية Defender لـ Office 365، تضاف البادرة **ATP إلى** القيمة subtype.
 
 - **المستلمون**: عدد المستخدمين الذين تم استهدافهم بواسطة هذه الحملة.
 
@@ -113,7 +113,7 @@ ms.locfileid: "63682538"
 
 في أعلى صفحة **الحملة، هناك** العديد من إعدادات التصفية والاستعلام لمساعدتك في العثور على حملات معينة وعزلها.
 
-![عوامل تصفية الحملات.](../../media/campaign-filters-and-settings.png)
+:::image type="content" source="../../media/campaign-filters-and-settings.png" alt-text="عوامل تصفية الحملة" lightbox="../../media/campaign-filters-and-settings.png":::
 
 إن التصفية الأساسية التي يمكنك القيام بها هي تاريخ/وقت البدء وتاريخ/وقت الانتهاء.
 
@@ -170,7 +170,7 @@ ms.locfileid: "63682538"
 
 لتصدير الرسم البياني أو قائمة الحملات، انقر فوق تصدير  وحدد **تصدير بيانات المخطط** أو **تصدير قائمة الحملات.**
 
-إذا كان لديك اشتراك في Microsoft Defender لنقطة النهاية، يمكنك النقر فوق **MDE** الإعدادات للاتصال بمعلومات الحملات أو قطع اتصالها باستخدام Microsoft Defender لنقطة النهاية. لمزيد من المعلومات، راجع [دمج Microsoft Defender Office 365 مع Microsoft Defender لنقطة النهاية](integrate-office-365-ti-with-mde.md).
+إذا كان لديك اشتراك Microsoft Defender لنقطة النهاية، يمكنك النقر فوق **MDE** الإعدادات للاتصال بمعلومات الحملات أو قطع اتصالها باستخدام Microsoft Defender لنقطة النهاية. لمزيد من المعلومات، راجع [تكامل Microsoft Defender لـ Office 365 مع Microsoft Defender لنقطة النهاية](integrate-office-365-ti-with-mde.md).
 
 ## <a name="campaign-details"></a>تفاصيل الحملة
 
@@ -192,7 +192,7 @@ ms.locfileid: "63682538"
 - يبدأ التاريخ/الوقت وتصفية البيانات/الوقت لتدفق الحملة كما هو موضح في القسم التالي.
 - مخطط زمني تفاعلي لنشاط الحملة: يعرض المخطط الزمني النشاط طوال مدة الحملة. يمكنك مرر فوق نقاط البيانات في الرسم البياني لرؤية كمية الرسائل التي تم الكشف عنها.
 
-![معلومات الحملة.](../../media/campaign-details-campaign-info.png)
+:::image type="content" source="../../media/campaign-details-campaign-info.png" alt-text="معلومات الحملة" lightbox="../../media/campaign-details-campaign-info.png":::
 
 ### <a name="campaign-flow"></a>تدفق الحملة
 
@@ -201,7 +201,7 @@ ms.locfileid: "63682538"
 > [!TIP]
 > يتم التحكم في المعلومات المعروضة في الرسم التخطيطي للتدفق بواسطة عامل تصفية نطاق التاريخ في المخطط الزمني كما هو موضح في المقطع السابق.
 
-![تفاصيل الحملة التي لا تحتوي على نقرات URL للمستخدم.](../../media/campaign-details-no-recipient-actions.png)
+:::image type="content" source="../../media/campaign-details-no-recipient-actions.png" alt-text="تفاصيل الحملة التي لا تحتوي على نقرات URL للمستخدم" lightbox="../../media/campaign-details-no-recipient-actions.png":::
 
 إذا قمت بالمرر فوق نطاق أفقي في الرسم التخطيطي، سترى عدد الرسائل ذات الصلة (على سبيل المثال، الرسائل من عنوان IP مصدر معين، والرسائل من IP المصدر باستخدام مجال المرسل المحدد، وغير ذلك).
 
@@ -253,7 +253,7 @@ ms.locfileid: "63682538"
 - **مسموح به**
 - **BlockPage**: نقر المستلم فوق عنوان URL الخاص بالحمل، ولكن تم حظر الوصول إلى موقع ويب الضار بواسطة نهج ارتباطات [](safe-links.md) خزينة في مؤسستك.
 - **BlockPageOverride**: نقر المستلم فوق عنوان URL الخاص بالحمل في الرسالة، وحاول خزينة الارتباطات إيقافها، ولكن تم السماح له بتجاوز الحظر. افحص [خزينة الارتباطات](set-up-safe-links-policies.md) لمعرفة سبب السماح للمستخدمين بتجاوز قرار ارتباطات خزينة والمتابعة إلى موقع الويب الضار.
-- **PendingDetonationPage**: خزينة المرفقات في Microsoft Defender ل Office 365 في عملية فتح URL التحميل في بيئة كمبيوتر ظاهرية والتحري عنه.
+- **PendingDetonationPage**: خزينة المرفقات في Microsoft Defender لـ Office 365 في عملية فتح URL التحميل في بيئة كمبيوتر ظاهرية والتحري عن وجوده.
 - **PendingDetonationPageOverride**: تم السماح للمستلم بتجاوز عملية معالجة التحميل وفتح عنوان URL دون انتظار النتائج.
 
 ### <a name="tabs"></a>علامات التبويب

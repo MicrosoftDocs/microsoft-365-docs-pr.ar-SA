@@ -1,8 +1,8 @@
 ---
-title: 'اعتماد SharePoint Syntex Microsoft: بدء العمل'
-description: تعرف على كيفية استخدام SharePoint Syntex في مؤسستك لمساعدتك على حل مشاكل العمل.
-ms.author: samanro
-author: samanro
+title: بدء استخدام Microsoft SharePoint Syntex
+description: تعرف على كيفية استخدام SharePoint Syntex في مؤسستك لمساعدتك على تنظيم عمليات الأعمال.
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.date: ''
 audience: admin
@@ -14,14 +14,14 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 172c0a681bc8e7c7867e4bcba1c75f94cfc12e60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 40af6061029785705d262f3b8c5134531e76885f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63568883"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467632"
 ---
-# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>اعتماد SharePoint Syntex Microsoft: بدء العمل
+# <a name="get-started-driving-adoption-of-microsoft-sharepoint-syntex"></a>بدء استخدام Microsoft SharePoint Syntex
 
 فكر في خدمات المحتوى الذكية المتوفرة في SharePoint Syntex من ثلاثة أجزاء:
 

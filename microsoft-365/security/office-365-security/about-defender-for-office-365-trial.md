@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: يمكن للمسؤولين التعرف على الوضع التجريبي ل Microsoft Defender Office 365
-ms.openlocfilehash: 3d8d873a3e89b0ae3302eca0ab7d7c471fd94449
-ms.sourcegitcommit: 39838c1a77d4e23df56af74059fb95970223f718
+ms.openlocfilehash: 40ad151dfa4ee26bf1e6177dda170cc2998c7c7e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63569523"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683856"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>حول الإصدار التجريبي من Microsoft Defender Office 365 الإصدار التجريبي
 
@@ -40,10 +40,6 @@ ms.locfileid: "63569523"
 
 الإصدار التجريبي من Microsoft Defender Office 365 هو طريقة سهلة لمحاولة تجربة إمكانات Defender for Office 365 الخطة 2 مجانا، بعد نقرات قليلة فقط. يتم وصف هذه الإمكانات عالية المستوى في الجدول التالي:
 
-<br>
-
-****
-
 |الميزة|الوصف|
 |---|---|
 |[الإعدادات الحصرية في سياسات مكافحة التصيد الاحتيالي](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|احصل على حماية انتحال المستخدم، وحماية انتحال المجال، وذكاء علبة البريد، وعتبات التصيد الاحتيالي المتقدمة.|
@@ -56,7 +52,6 @@ ms.locfileid: "63569523"
 |[طرق عرض الحملة](campaigns.md)<sup>\*</sup>|التحقق من نشاط البريد الإلكتروني الضار على نطاق واسع والاستجابة له.|
 |[التقارير التي تستخدم Defender لإمكانيات Office 365](view-reports-for-mdo.md)|عرض التقارير بما في ذلك حالة الحماية من المخاطر والحماية من تهديدات URL و زمن البريد والمزيد.|
 |[حماية حساب الأولوية](/microsoft-365/admin/setup/priority-accounts)<sup>\*</sup>|يتم وضع علامة على المستخدمين الذين تحددهم على أنهم حسابات الأولوية في التنبيهات والتقارير والتباحثات بحيث تبرز. يمكنك أيضا استخدام علامة الأولوية في عوامل التصفية.|
-|
 
 <sup>\*</sup>هذه الميزة حصرية ل Defender for Office 365 2.
 

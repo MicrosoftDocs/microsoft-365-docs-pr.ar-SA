@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 159b4a41d423c2a7af3d367185e29af35a378b6b
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.openlocfilehash: ed62807c0efc7003bab8fc725c2753c3d91ef1d6
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "63575541"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501212"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>تكوين Microsoft 365 Defender دفق أحداث "الصيد المتقدم" إلى حساب التخزين
 
@@ -53,7 +53,7 @@ ms.locfileid: "63575541"
    2. حدد **إعادة توجيه الأحداث إلى Azure Storage**.
    3. في المربع **"مورد حساب** التخزين" الذي يظهر، اكتب "معرود موارد **حساب التخزين**". للحصول **على "مورد** حساب التخزين"، افتح مدخل Azure <https://portal.azure.com>في ،  \> \> وانقر فوق حسابات التخزين انتقل إلى علامة التبويب خصائص انسخ النص ضمن "مورد **حساب التخزين**".
 
-      ![صورة لمورد مركز الحدث ID1.](../defender-endpoint/images/storage-account-resource-id.png)
+      :::image type="content" source="../defender-endpoint/images/storage-account-resource-id.png" alt-text="&quot;مورد حساب التخزين&quot;" lightbox="../defender-endpoint/images/storage-account-resource-id.png":::
 
    4. مرة أخرى على **قائمة قائمة برمجة** تطبيقات إضافة إعدادات تدفق جديدة، اختر أنواع **الأحداث** التي تريد دفقها.
 
@@ -63,7 +63,7 @@ ms.locfileid: "63575541"
 
 - سيتم إنشاء حاوية blob لكل نوع حدث:
 
-  ![صورة لمورد مركز الحدث ID2.](../defender-endpoint/images/storage-account-event-schema.png)
+  :::image type="content" source="../defender-endpoint/images/storage-account-event-schema.png" alt-text="مثال على حاوية blob" lightbox="../defender-endpoint/images/storage-account-event-schema.png":::
 
 - مخطط كل صف في blob هو JSON التالي:
 
@@ -98,7 +98,7 @@ ms.locfileid: "63575541"
 
 - فيما يلي مثال لحدث معلومات الجهاز:
 
-  ![صورة لمورد مركز الحدث ID3.](../defender-endpoint/images/machine-info-datatype-example.png)
+  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="مثال على استعلام معلومات الجهاز" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

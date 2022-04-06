@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل بيانات Slack eDiscovery الذي توفره Microsoft لاستيراد بيانات المراسلة الفورية وأرشفتها.
-ms.openlocfilehash: 2bd4df859d5bb3a4ccd048c83a864d44f81f33bc
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 7882524bb01a1d28c0f4f7c564472961d04baa07
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63583781"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501190"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>إعداد موصل لأرشفة بيانات eDiscovery في Slack (معاينة)
 
@@ -77,7 +77,15 @@ ms.locfileid: "63583781"
 
    بعد **النقر فوق السماح**، يتم إغلاق صفحة Slack وعرض صفحة تعيين **Slack eDiscovery** للمستخدمين Microsoft 365 في معالج الموصل.
 
-## <a name="step-3-map-users-and-select-data-types-to-import"></a>الخطوة 3: تعيين المستخدمين وتحديد أنواع البيانات لاستيرادها
+## <a name="step-3-specify-the-users-to-import-data-for"></a>الخطوة 3: تحديد المستخدمين لاستيراد البيانات ل
+
+حدد أحد الخيارات التالية لتحديد المستخدمين الذين تريد استيراد بياناتهم في Slack eDiscovery.
+
+- **جميع المستخدمين في مؤسستك**. حدد هذا الخيار لاستيراد البيانات لجميع المستخدمين.
+
+- **المستخدمون الذين لديهم الدعاوى القضائية فقط**. حدد هذا الخيار لاستيراد البيانات فقط للمستخدمين الذين تم وضع علب بريدهم قيد الاحتجاز بسبب الدعاوى القضائية. يقوم هذا الخيار باستيراد البيانات إلى علب بريد المستخدمين التي تم تعيين الخاصية LitigationHoldEnabled لها إلى True. لمزيد من المعلومات، راجع [إنشاء جلسة الاحتجاز القضائية](create-a-litigation-hold.md).
+
+## <a name="step-4-map-users-and-select-data-types-to-import"></a>الخطوة 4: تعيين المستخدمين وتحديد أنواع البيانات لاستيرادها
 
 1. قم بتكوين أحد الخيارين التاليين أو كليهما ل تعيين مستخدمي Slack إلى علب بريدهم Microsoft 365 البريد.
 
@@ -103,7 +111,7 @@ ms.locfileid: "63583781"
 
 3. بعد تكوين أنواع البيانات التي تريد استيرادها، انقر فوق التالي **، وراجع** إعدادات الموصل، ثم انقر فوق إنهاء  لإنشاء الموصل.
 
-## <a name="step-4-monitor-the-slack-ediscovery-connector"></a>الخطوة 4: مراقبة موصل Slack eDiscovery
+## <a name="step-5-monitor-the-slack-ediscovery-connector"></a>الخطوة 5: مراقبة موصل Slack eDiscovery
 
 بعد إنشاء موصل Slack eDiscovery، يمكنك عرض حالة الموصل في مركز التوافق في Microsoft 365.
 

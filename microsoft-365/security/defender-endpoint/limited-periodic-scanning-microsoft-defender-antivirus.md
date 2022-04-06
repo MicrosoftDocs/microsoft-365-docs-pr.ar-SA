@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e0a8293709da44dc3a46cf565ad099666e8dae24
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 1ba846402bb2ee447ee5f38ff035c119bdc28fc1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "63573888"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467676"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>استخدام الفحص الدوري المحدود في برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -29,8 +29,8 @@ ms.locfileid: "63573888"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 الفحص الدوري المحدود هو نوع خاص من الكشف عن المخاطر والوساطة التي يمكن تمكينها عند تثبيت منتج آخر من برامج الحماية من الفيروسات على جهاز Windows 10 أو Windows 11 آخر.
 
@@ -44,7 +44,7 @@ ms.locfileid: "63573888"
 
 إذا برنامج الحماية من الفيروسات من Microsoft Defender، ستظهر الخيارات العادية لتكوينه على هذا الجهاز:
 
-![أمن Windows التطبيق خيارات Microsoft Defender AV، بما في ذلك خيارات الفحص والإعدادات وخيارات التحديث.](images/vtp-wdav.png)
+:::image type="content" source="images/vtp-wdav.png" alt-text="يعرض أمن Windows خيارات Microsoft Defender AV، بما في ذلك خيارات الفحص والإعدادات وخيارات التحديث" lightbox="images/vtp-wdav.png":::
 
 إذا تم تثبيت منتج آخر من برامج الحماية من الفيروسات ويعمل بشكل صحيح، برنامج الحماية من الفيروسات من Microsoft Defender تعطيل نفسه. سيغير أمن Windows التطبيق قسم الحماية من المخاطر &  الفيروسات لإظهار حالة المنتج AV وتوفير ارتباط لخيارات تكوين المنتج.
 

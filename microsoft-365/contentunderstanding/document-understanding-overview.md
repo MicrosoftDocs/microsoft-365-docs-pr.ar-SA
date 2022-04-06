@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: تعرف على كيفية فهم المستند في Microsoft SharePoint Syntex.
-ms.openlocfilehash: 4c4910ac2cec9688af60c6999e67e1be41701ef3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c7488fcb44116f030d538b416af1f04b33382519
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63576864"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507312"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>نظرة عامة حول فهم المستند في Microsoft SharePoint Syntex
 
@@ -112,7 +112,8 @@ ms.locfileid: "63576864"
 
 ### <a name="supported-languages"></a>اللغات المعتمدة
 
-تدعم نماذج فهم المستندات اللغات التالية:
+تدعم نماذج فهم المستندات *كل* اللغات المستندة إلى اللغة اللاتينية، بما في ذلك:
+
 - الإنكليزية
 - الفرنسية
 - الألمانية

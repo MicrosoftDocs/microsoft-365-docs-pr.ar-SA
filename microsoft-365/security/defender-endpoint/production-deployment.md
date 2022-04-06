@@ -1,6 +1,6 @@
 ---
-title: إعداد Microsoft Defender لنشر نقطة النهاية
-description: تعرف على كيفية إعداد النشر ل Microsoft Defender لنقطة النهاية
+title: إعداد Microsoft Defender لنقطة النهاية النشر
+description: تعرف على كيفية إعداد النشر Microsoft Defender لنقطة النهاية
 keywords: النشر والإعداد والتحقق من صحة الترخيص وتكوين المستأجر وتكوين الشبكة
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,27 +18,27 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c59e07e1d11be406c1f954a656cef7b32fa2851f
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: e1fbfdaa71cc57a7797a2b95c96a56abba4fcc40
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63575781"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64506978"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>إعداد Microsoft Defender لنشر نقطة النهاية
+# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>إعداد Microsoft Defender لنقطة النهاية النشر
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 عملية نشر Defender لنقطة النهاية هي عملية من ثلاث مراحل:
 
-|[![مرحلة النشر - التحضير.](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[المرحلة 1: التحضير](prepare-deployment.md) | ![مرحلة النشر - الإعداد](images/phase-diagrams/setup.png)<br>المرحلة الثانية: الإعداد | [![مرحلة النشر - على اللوحة](images/phase-diagrams/onboard.png)](onboarding.md)<br>[المرحلة 3: Onboard](onboarding.md)|
+|[![مرحلة النشر - التحضير.](images/phase-diagrams/prepare.png#lightbox)](prepare-deployment.md)<br>[المرحلة 1: التحضير](prepare-deployment.md) | ![مرحلة النشر - الإعداد](images/phase-diagrams/setup.png#lightbox)<br>المرحلة الثانية: الإعداد | [![مرحلة النشر - على اللوحة](images/phase-diagrams/onboard.png#lightbox)](onboarding.md)<br>[المرحلة 3: Onboard](onboarding.md)|
 |---|---|---|
 ||*أنت هنا!*||
 
@@ -51,7 +51,7 @@ ms.locfileid: "63575781"
 - تكوين الشبكة
 
 > [!NOTE]
-> لغرض إرشادك عبر عملية نشر نموذجية، سيغطي هذا السيناريو فقط استخدام Microsoft Endpoint Configuration Manager. يدعم Defender ل Endpoint استخدام أدوات التكوين الأخرى ولكنه لن يغطي هذه السيناريوهات في دليل النشر. لمزيد من المعلومات، راجع [الأجهزة المجهزة ل Microsoft Defender لنقطة النهاية](onboard-configure.md).
+> لغرض إرشادك عبر عملية نشر نموذجية، سيغطي هذا السيناريو فقط استخدام Microsoft Endpoint Configuration Manager. يدعم Defender ل Endpoint استخدام أدوات التكوين الأخرى ولكنه لن يغطي هذه السيناريوهات في دليل النشر. لمزيد من المعلومات، راجع [أجهزة الألواح Microsoft Defender لنقطة النهاية](onboard-configure.md).
 
 ## <a name="check-license-state"></a>التحقق من حالة الترخيص
 
@@ -59,13 +59,13 @@ ms.locfileid: "63575781"
 
 1. لعرض التراخيص، انتقل إلى مدخل **Microsoft Azure** وانتقل إلى قسم [ترخيص مدخل Microsoft Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
-   ![صورة لصفحة ترخيص Azure.](images/atp-licensing-azure-portal.png)
+   :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="صفحة ترخيص Azure" lightbox="images/atp-licensing-azure-portal.png":::
 
 1. بدلا من ذلك، في مركز الإدارة، انتقل إلى **اشتراكات** \> **الفوترة**.
 
     على الشاشة، سترى كل التراخيص التي تم توفيرها ووضعها **الحالي**.
 
-    ![صورة لتراخيص الفوترة.](images/atp-billing-subscriptions.png)
+    :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="صفحة تراخيص الفوترة" lightbox="images/atp-billing-subscriptions.png":::
 
 ## <a name="cloud-service-provider-validation"></a>التحقق من صحة موفر خدمة السحابة
 
@@ -75,28 +75,28 @@ ms.locfileid: "63575781"
 
 2. يؤدي النقر فوق ارتباط **مدخل الشريك** إلى فتح الخيار **المسؤول** بالنيابة عن وسيمنحك إمكانية الوصول إلى مركز إدارة العملاء.
 
-   ![صورة مدخل مسؤول O365.](images/atp-O365-admin-portal-customer.png)
+   :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="مدخل Office 365 الإلكتروني" lightbox="images/atp-O365-admin-portal-customer.png":::
 
 ## <a name="tenant-configuration"></a>تكوين المستأجر
 
-من السهل التكهين في Microsoft Defender لنقطة النهاية. من قائمة التنقل، حدد أي عنصر ضمن المقطع نقاط النهاية أو أي ميزة Microsoft 365 Defender مثل الحوادث أو الصيد أو مركز الإجراءات أو تحليل التهديدات لبدء عملية التهيئة.
+من السهل Microsoft Defender لنقطة النهاية الوصول. من قائمة التنقل، حدد أي عنصر ضمن المقطع نقاط النهاية أو أي ميزة Microsoft 365 Defender مثل الحوادث أو الصيد أو مركز الإجراءات أو تحليل التهديدات لبدء عملية التهيئة.
 
 من مستعرض ويب، انتقل إلى مدخل Microsoft 365 Defender<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">.</a>
 
 ## <a name="data-center-location"></a>موقع مركز البيانات
-سيخزن Microsoft Defender for Endpoint البيانات ويمررها في الموقع [نفسه الذي](/microsoft-365/security/defender/m365d-enable) يستخدمه Microsoft 365 Defender. إذا لم Microsoft 365 Defender التشغيل بعد، فإن التكوين في Microsoft Defender لنقطة النهاية سيتم أيضا تشغيل Microsoft 365 Defender، كما يتم تحديد موقع مركز بيانات جديد تلقائيا استنادا إلى موقع خدمات Microsoft 365 النشطة. يظهر موقع مركز البيانات المحدد على الشاشة.
+Microsoft Defender لنقطة النهاية تخزين البيانات في [الموقع](/microsoft-365/security/defender/m365d-enable) نفسه الذي تستخدمه Microsoft 365 Defender. إذا Microsoft 365 Defender تشغيل Microsoft Defender لنقطة النهاية، سيتم أيضا تشغيل Microsoft 365 Defender، كما يتم تحديد موقع مركز بيانات جديد تلقائيا بالاستناد إلى موقع البيانات Microsoft 365  خدمات الأمان. يظهر موقع مركز البيانات المحدد على الشاشة.
 
 ## <a name="network-configuration"></a>تكوين الشبكة
 
 إذا لم تطلب المؤسسة نقاط النهاية لاستخدام وكيل للوصول إلى الإنترنت، فتخطى هذا المقطع.
 
-يتطلب مستشعر Microsoft Defender لنقطة النهاية من Microsoft Windows HTTP (WinHTTP) الإبلاغ عن بيانات المستشعر والتواصل مع خدمة Microsoft Defender for Endpoint. يتم تشغيل مستشعر Microsoft Defender المضمن لنقطة النهاية في سياق النظام باستخدام حساب LocalSystem. يستخدم المستشعر Microsoft Windows HTTP Services (WinHTTP) لتمكين التواصل مع خدمة سحابة Microsoft Defender ل Endpoint. يكون إعداد تكوين WinHTTP مستقلا عن إعدادات وكيل استعراض الإنترنت Windows Internet (WinINet) ويمكنه اكتشاف خادم وكيل فقط باستخدام أساليب الاكتشاف التالية:
+يتطلب Microsoft Defender لنقطة النهاية المستشعر من Microsoft Windows HTTP (WinHTTP) الإبلاغ عن بيانات المستشعر والتواصل مع Microsoft Defender لنقطة النهاية الخدمة. يتم تشغيل Microsoft Defender لنقطة النهاية المضمن في سياق النظام باستخدام حساب LocalSystem. يستخدم المستشعر Microsoft Windows HTTP Services (WinHTTP) لتمكين الاتصال Microsoft Defender لنقطة النهاية السحابية. يكون إعداد تكوين WinHTTP مستقلا عن إعدادات وكيل استعراض الإنترنت Windows Internet (WinINet) ويمكنه اكتشاف خادم وكيل فقط باستخدام أساليب الاكتشاف التالية:
 
 - **أساليب الاكتشاف التلقائي**:
   - وكيل شفاف
   - بروتوكول Autodiscovery لوكيل ويب (WPAD)
 
-  إذا تم تنفيذ وكيل شفاف أو WPAD في طبولوجيا الشبكة، فلا حاجة لإعدادات تكوين خاصة. للحصول على مزيد من المعلومات حول استثناءات URL ل Microsoft Defender لنقطة النهاية في الوكيل، راجع المقطع عناوين [URL](production-deployment.md#proxy-service-urls) للخدمة الوكيلة في هذا المستند لقائمة السماح عناوين URL أو في تكوين إعدادات وكيل الجهاز واتصال [الإنترنت](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
+  إذا تم تنفيذ وكيل شفاف أو WPAD في طبولوجيا الشبكة، فلا حاجة لإعدادات تكوين خاصة. لمزيد من المعلومات حول Microsoft Defender لنقطة النهاية URL في الوكيل، راجع المقطع عناوين [URL](production-deployment.md#proxy-service-urls) لخدمة الوكيل في هذا المستند لقائمة السماح عناوين URL أو في تكوين إعدادات اتصال الإنترنت ووكيل [الجهاز](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 - **تكوين وكيل ثابت يدوي**:
   - تكوين مستند إلى السجل
@@ -106,22 +106,22 @@ ms.locfileid: "63575781"
 
 ### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>تكوين الخادم الوكيل يدويا باستخدام وكيل ثابت مستند إلى السجل
 
-قم بتكوين وكيل ثابت يستند إلى السجل للسماح فقط لمستشعر نقطة النهاية ل Microsoft Defender ب الإبلاغ عن البيانات التشخيصية والتواصل مع Microsoft Defender لخدمات نقطة النهاية إذا لم يسمح للكمبيوتر بالاتصال بالإنترنت. يمكن تكوين الوكيل الثابت من خلال نهج المجموعة (GP). يمكن العثور على نهج المجموعة ضمن:
+قم بتكوين وكيل ثابت يستند إلى السجل للسماح فقط Microsoft Defender لنقطة النهاية المستشعر بلتقارير البيانات التشخيصية والتواصل مع خدمات Microsoft Defender لنقطة النهاية في حالة عدم السماح للكمبيوتر بالاتصال بالإنترنت. يمكن تكوين الوكيل الثابت من خلال نهج المجموعة (GP). يمكن العثور على نهج المجموعة ضمن:
 
 - القوالب الإدارية Windows \> تجميع \> \> البيانات والمكونات ونمط المعاينة تكوين استخدام الوكيل المصادق عليه لخدمة استخدام المستخدمين المتصلين وبيانات بيانات الاستخدام
 - قم بتعيينه إلى **"تمكين"** وحدد **"تعطيل استخدام الوكيل المصادق عليه"**
 
-1. افتح وحدة تحكم إدارة نهج المجموعة.
+1. افتح وحدة نهج المجموعة إدارة البيانات.
 2. إنشاء نهج أو تحرير نهج موجود يستند إلى الممارسات التنظيمية.
-3. تحرير نهج المجموعة والانتقال إلى القوالب **الإدارية Windows \> \> إنشاءات المعاينة وجمع البيانات لمكونات تكوين استخدام الوكيل المصادق عليه لخدمة استخدام المستخدمين المتصلين وبيانات الاستخدام.\>**
+3. حرر نهج المجموعة وانتقل إلى القوالب **الإدارية Windows \> \> مكونات تجميع البيانات وبناءات المعاينة تكوين استخدام الوكيل المصادق عليه لخدمة تجربة المستخدم المتصلة وبيانات الاستخدام.\>**
 
-   ![صورة تكوين نهج المجموعة.](images/atp-gpo-proxy1.png)
+   :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="الخيارات ذات الصلة لتكوين نهج الاستخدام" lightbox="images/atp-gpo-proxy1.png":::
 
 4. حدد **تمكين**.
 5. حدد **تعطيل استخدام الوكيل المصادق عليه**.
 6. انتقل إلى **القوالب \> الإدارية Windows تجميع \> البيانات والمكونات وبناءات \> المعاينة تكوين تجارب المستخدمين المتصلين وبيانات بيانات الاستخدام**.
 
-    ![صورة لإعداد تكوين نهج المجموعة.](images/atp-gpo-proxy2.png)
+   :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="الخيارات ذات الصلة لتكوين تجربة المستخدم المتصلة و بيانات بيانات الاستخدام" lightbox="images/atp-gpo-proxy2.png":::
 
 7. حدد **تمكين**.
 8. أدخل **اسم الخادم الوكيل**.
@@ -167,7 +167,7 @@ ms.locfileid: "63575781"
 
 لا يلزم استخدام عناوين URL التي تتضمن الإصدار 20 منها إلا إذا كان لديك Windows 10 أو الإصدار 1803 أو Windows 11 الأجهزة. على سبيل المثال، `us-v20.events.data.microsoft.com` لا يلزم استخدام الجهاز إلا إذا كان Windows 10 أو الإصدار 1803 أو Windows 11.
 
-إذا كان الوكيل أو جدار الحماية يمنع حركة مرور مجهولة، حيث أن مستشعر نقطة النهاية من Microsoft Defender يتصل من سياق النظام، فتأكد من أن حركة المرور المجهولة مسموح بها في عناوين URL المدرجة.
+إذا كان الوكيل أو جدار الحماية يمنع حركة مرور مجهولة، Microsoft Defender لنقطة النهاية اتصال مستشعر البيانات من سياق النظام، فتأكد من أن حركة المرور المجهولة مسموح بها في عناوين URL المدرجة.
 
 يسرد جدول البيانات القابل للتنزيل التالي الخدمات وقوائم URL المقترنة بها التي يجب أن تتمكن شبكتك من الاتصال بها. تأكد من عدم وجود جدار حماية أو قواعد لتصفية الشبكة من شأنها رفض الوصول إلى عناوين URL هذه، أو قد تحتاج إلى إنشاء قاعدة السماح  خاصة بها.
 
@@ -178,10 +178,9 @@ ms.locfileid: "63575781"
 
 |جدول بيانات قائمة المجالات| الوصف|
 |---|---|
-|قائمة URL ل Microsoft Defender لنقطة النهاية للعملاء التجاريين | جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS للعملاء التجاريين. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| قائمة URL ل Microsoft Defender لنقطة النهاية لعملاء Gov/سحابة القطاع الحكومي/DoD| جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS لعملاء Gov/سحابة القطاع الحكومي/DoD. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
-|
+|Microsoft Defender لنقطة النهاية URL للعملاء التجاريين| جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS للعملاء التجاريين. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender لنقطة النهاية URL ل Gov/سحابة القطاع الحكومي/DoD | جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS لعملاء Gov/سحابة القطاع الحكومي/DoD. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 ## <a name="next-step"></a>الخطوة التالية
 
-![**المرحلة 3: Onboard**.](images/onboard.png) <br> [المرحلة 3: Onboard](onboarding.md): الأجهزة المجهزة للخدمة حتى تتمكن خدمة Microsoft Defender for Endpoint من الحصول على بيانات المستشعر منها.
+[![**المرحلة 3: Onboard**.](images/onboard.png#lightbox)] <br> [المرحلة 3: Onboard](onboarding.md): الأجهزة المجهزة للخدمة بحيث Microsoft Defender لنقطة النهاية الحصول على بيانات المستشعر منها.

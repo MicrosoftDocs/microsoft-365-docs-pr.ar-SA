@@ -19,12 +19,12 @@ ms.collection:
 description: ما هي أفضل الممارسات لإعدادات Exchange Online Protection (EOP) و Defender Office 365 الأمان؟ ما هي التوصيات الحالية للحماية القياسية؟ ما الذي يجب استخدامه إذا كنت تريد أن تكون أكثر صرامة؟ وما هي إضافات الحصول عليها إذا كنت تستخدم أيضا Defender Office 365؟
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 66d221b422236c6818ebb146babc0cc90eab1206
-ms.sourcegitcommit: f563b4229760fa099703296d1ad2c1f0264f1647
+ms.openlocfilehash: 078fbe60b18c06b46c4da0935fce3c4ad867908b
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "63583212"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683702"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>الإعدادات المستحسنة ل EOP و Microsoft Defender Office 365 الأمان
 
@@ -56,10 +56,6 @@ ms.locfileid: "63583212"
 
 لإنشاء سياسات مكافحة البريد العشوائي وتكوينها، راجع تكوين سياسات مكافحة البريد العشوائي [في EOP](configure-your-spam-filter-policies.md).
 
-<br>
-
-****
-
 |اسم ميزة الأمان|افتراضي|Standard|التقيد|تعليق|
 |---|:---:|:---:|:---:|---|
 |**حد البريد الإلكتروني المجمع & البريد العشوائي**|||||
@@ -85,15 +81,10 @@ ms.locfileid: "63583212"
 |مجالات المرسل المسموح بها <p> _AllowedSenderDomains_|بلا|بلا|بلا|تعد إضافة مجالات إلى قائمة المرسلين المسموح بها فكرة سيئة للغاية. يمكن للمهاجمين إرسال بريد إلكتروني إليك تمت تصفيته بخلاف ذلك. <p> استخدم المعلومات [](learn-about-spoof-intelligence.md) الاستخبارية المنتحلة وقائمة الحظر[/](tenant-allow-block-list.md)السماح بالمستأجر لمراجعة كل المرسلين الذين ينتحلون عناوين البريد الإلكتروني للمرسلين في مجالات البريد الإلكتروني في مؤسستك أو ينتحلون عناوين البريد الإلكتروني للمرسلين في المجالات الخارجية.|
 |المرسلون المحظورون <p> _BlockedSenders_|بلا|بلا|بلا||
 |مجالات المرسلين المحظورين <p> _BlockedSenderDomains_|بلا|بلا|بلا||
-|
 
 #### <a name="asf-settings-in-anti-spam-policies"></a>إعدادات ASF في سياسات مكافحة البريد العشوائي
 
 يصف الجدول في هذا القسم إعدادات تصفية البريد العشوائي المتقدمة (ASF) المتوفرة في سياسات مكافحة البريد العشوائي. كل هذه الإعدادات م إيقاف **التشغيل** لكل من **المستويات** **القياسية والتقيدية** . لمزيد من المعلومات حول إعدادات ASF، راجع إعدادات تصفية البريد العشوائي المتقدمة [(ASF) في EOP](advanced-spam-filtering-asf-options.md).
-
-<br>
-
-****
 
 |اسم ميزة الأمان|تعليق|
 |---|---|
@@ -113,7 +104,6 @@ ms.locfileid: "63583212"
 |**فشل تصفية "لمعروف المرسل"** (_MarkAsSpamFromAddressAuthFail_)||
 |**Backscatter** (_MarkAsSpamNdrBackscatter_)||
 |**وضع الاختبار** (_TestModeAction_)|بالنسبة لإعدادات ASF التي تدعم **"** الاختبار" ك إجراء، يمكنك تكوين إجراء وضع الاختبار إلى **بلا**، أو إضافة نص **X-Header** افتراضي، أو **إرسال** رسالة "مفبركة" (`None``AddXHeader`أو ، أو ).`BccMessage` لمزيد من المعلومات، راجع [تمكين إعدادات ASF أو تعطيلها أو اختبارها](advanced-spam-filtering-asf-options.md#enable-disable-or-test-asf-settings).|
-|
 
 #### <a name="eop-outbound-spam-policy-settings"></a>إعدادات نهج البريد العشوائي الصادر من EOP
 
@@ -124,10 +114,6 @@ ms.locfileid: "63583212"
 > [!NOTE]
 > لا تكون سياسات البريد العشوائي الصادر جزءا من سياسات الأمان القياسية أو تقيد الإعداد المسبق. تشير **القيم القياسية** **والتقيدية** إلى قيمنا **الموصى** بها في نهج البريد العشوائي الصادر الافتراضي أو النهج المخصصة التي تنشئها.
 
-<br>
-
-****
-
 |اسم ميزة الأمان|افتراضي|Standard|التقيد|تعليق|
 |---|:---:|:---:|:---:|---|
 |**تعيين حد للرسالة الخارجية** <p> _RecipientLimitExternalPerHour_|0|500|400|تعني القيمة الافتراضية 0 استخدام الإعدادات الافتراضية للخدمة.|
@@ -137,15 +123,10 @@ ms.locfileid: "63583212"
 |**قواعد إعادة توجيه تلقائية** <p> _AutoForwardingMode_|**تلقائي - يتم التحكم في النظام** <p> `Automatic`|**تلقائي - يتم التحكم في النظام** <p> `Automatic`|**تلقائي - يتم التحكم في النظام** <p> `Automatic`|
 |**إرسال نسخة من الرسائل الصادرة التي تتجاوز هذه الحدود لهؤلاء المستخدمين والمجموعات** <p> _BccSuspiciousOutboundMail_ <p> _BccSuspiciousOutboundAdditionalRecipients_|غير محدد <p> `$false` <p> فارغ|غير محدد <p> `$false` <p> فارغ|غير محدد <p> `$false` <p> فارغ|ليس لدينا توصيات محددة لهذا الإعداد. <p> يعمل هذا الإعداد فقط في نهج البريد العشوائي الصادر الافتراضي. ولا يعمل في سياسات البريد العشوائي الصادر المخصصة التي تقوم بإنشاءها.|
 |**إعلام المستخدمين والمجموعات إذا تم حظر مرسل بسبب إرسال بريد عشوائي إلى الخارج** <p> _NotifyOutboundSpam_ <p> _NotifyOutboundSpamRecipients_|غير محدد <p> `$false` <p> فارغ|غير محدد <p> `$false` <p> فارغ|غير محدد <p> `$false` <p> فارغ|يرسل نهج [](../../compliance/alert-policies.md) التنبيه الافتراضي المسمى المستخدم المحظور من إرسال البريد الإلكتروني بالفعل إعلامات بالبريد الإلكتروني إلى أعضاء مجموعة **TenantAdmins** **(** المسؤولون العامون) عند حظر المستخدمين بسبب تجاوز الحدود في النهج. نوصي بشدة باستخدام نهج التنبيه بدلا من هذا الإعداد في نهج البريد العشوائي الصادر لإعلام **المسؤولين والمستخدمين الآخرين**. للحصول على الإرشادات، راجع [التحقق من إعدادات التنبيه للمستخدمين المقيدين](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).|
-|
 
 ### <a name="eop-anti-malware-policy-settings"></a>إعدادات نهج مكافحة البرامج الضارة في EOP
 
 لإنشاء سياسات مكافحة البرامج الضارة وتكوينها، راجع تكوين سياسات مكافحة البرامج الضارة [في EOP](configure-anti-malware-policies.md).
-
-<br>
-
-****
 
 |اسم ميزة الأمان|افتراضي|Standard|التقيد|تعليق|
 |---|:---:|:---:|:---:|---|
@@ -171,15 +152,10 @@ ms.locfileid: "63583212"
 |**تخصيص الإعلامات للرسائل الواردة من مرسلين خارجيين**||||يتم استخدام هذه الإعدادات فقط إذا  تم تحديد إعلام المرسلين الخارجيين عند فحص الرسائل كبرامج ضارة أو إعلام المسؤول بالرسائل التي لم يتم إرسالها من مرسلين خارجيين.|
 |**الموضوع** <p> _CustomExternalSubject_|فارغ <p> `$null`|فارغ <p> `$null`|فارغ <p> `$null`||
 |**رسالة** <p> _CustomExternalBody_|فارغ <p> `$null`|فارغ <p> `$null`|فارغ <p> `$null`||
-|
 
 ### <a name="eop-anti-phishing-policy-settings"></a>إعدادات نهج مكافحة التصيد الاحتيالي ل EOP
 
 للحصول على مزيد من المعلومات حول هذه الإعدادات، راجع [إعدادات التهزاء](set-up-anti-phishing-policies.md#spoof-settings). لتكوين هذه الإعدادات، راجع تكوين سياسات مكافحة التصيد الاحتيالي [في EOP](configure-anti-phishing-policies-eop.md).
-
-<br>
-
-****
 
 |اسم ميزة الأمان|افتراضي|Standard|التقيد|تعليق|
 |---|:---:|:---:|:---:|---|
@@ -190,7 +166,6 @@ ms.locfileid: "63583212"
 |**إظهار جهات الاتصال تلميح الأمان** <p> _EnableFirstContactSafetyTips_|غير محدد <p> `$false`|غير محدد <p> `$false`|غير محدد <p> `$false`|لمزيد من المعلومات، راجع [الاتصال تلميح الأمان](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
 |**إظهار (?) للمرسلين الذين لم يتم اظهارهم للانتحال** <p> _EnableUnauthenticatedSender_|محدد <p> `$true`|محدد <p> `$true`|محدد <p> `$true`|إضافة علامة استفهام (؟) إلى صورة المرسل في Outlook لمرسلين منتحلين غير مجهولين. لمزيد من المعلومات، راجع [المرسل غير المأكد](set-up-anti-phishing-policies.md#unauthenticated-sender).|
 |**إظهار علامة "via"** <p> _EnableViaTag_|محدد <p> `$true`|محدد <p> `$true`|محدد <p> `$true`|يضيف علامة عبر (chris@contoso.com عبر fabrikam.com) إلى العنوان من إذا كان مختلفا عن المجال في توقيع DKIM أو عنوان **MAIL FROM** . <p> لمزيد من المعلومات، راجع [المرسل غير المأكد](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|
 
 ## <a name="microsoft-defender-for-office-365-security"></a>Microsoft Defender Office 365 الأمان
 
@@ -214,22 +189,13 @@ ms.locfileid: "63583212"
 
 لمزيد من المعلومات حول هذا الإعداد، راجع حدود التصيد الاحتيالي المتقدمة في سياسات مكافحة التصيد الاحتيالي في [Microsoft Defender Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365). لتكوين هذا الإعداد، راجع تكوين سياسات مكافحة التصيد الاحتيالي [في Defender Office 365](configure-mdo-anti-phishing-policies.md).
 
-<br>
-
-****
-
 |اسم ميزة الأمان|افتراضي|Standard|التقيد|تعليق|
 |---|:---:|:---:|:---:|---|
 |**حد البريد الإلكتروني الخاص بالتصيد الاحتيالي** <p> _PhishThresholdLevel_|**1 - قياسي** <p> `1`|**2 - مهين** <p> `2`|**3 - أكثر عناء** <p> `3`||
-|
 
 #### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>إعدادات انتحال في سياسات مكافحة التصيد الاحتيالي في Microsoft Defender Office 365
 
 لمزيد من المعلومات حول هذه الإعدادات، راجع إعدادات انتحال في سياسات مكافحة التصيد الاحتيالي [في Microsoft Defender Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). لتكوين هذه الإعدادات، راجع تكوين سياسات مكافحة التصيد الاحتيالي [في Defender Office 365](configure-mdo-anti-phishing-policies.md).
-
-<br>
-
-****
 
 |اسم ميزة الأمان|افتراضي|Standard|التقيد|تعليق|
 |---|:---:|:---:|:---:|---|
@@ -248,17 +214,12 @@ ms.locfileid: "63583212"
 |**إظهار انتحال تلميح الأمان** <p> _EnableSimilarUsersSafetyTips_|إيقاف التشغيل <p> `$false`|محدد <p> `$true`|محدد <p> `$true`||
 |**إظهار انتحال المجال تلميح الأمان** <p> _EnableSimilarDomainsSafetyTips_|إيقاف التشغيل <p> `$false`|محدد <p> `$true`|محدد <p> `$true`||
 |**إظهار أحرف انتحال المستخدم غير تلميح الأمان** <p> _EnableUnusualCharactersSafetyTips_|إيقاف التشغيل <p> `$false`|محدد <p> `$true`|محدد <p> `$true`||
-|
 
 #### <a name="eop-anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>إعدادات نهج مكافحة التصيد الاحتيالي ل EOP في Microsoft Defender Office 365
 
 هذه هي الإعدادات نفسها المتوفرة في إعدادات نهج مكافحة البريد العشوائي [في EOP](#eop-anti-spam-policy-settings).
 
 تكون الإعدادات المنتحلة مرتبطة، ولكن لا يعتمد إعداد  إظهار جهة تلميح الأمان الأولى على إعدادات الانتحال.
-
-<br>
-
-****
 
 |اسم ميزة الأمان|افتراضي|Standard|التقيد|تعليق|
 |---|:---:|:---:|:---:|---|
@@ -269,7 +230,6 @@ ms.locfileid: "63583212"
 |**إظهار جهات الاتصال تلميح الأمان** <p> _EnableFirstContactSafetyTips_|غير محدد <p> `$false`|محدد <p> `$true`|محدد <p> `$true`|لمزيد من المعلومات، راجع [الاتصال تلميح الأمان](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
 |**إظهار (?) للمرسلين الذين لم يتم اظهارهم للانتحال** <p> _EnableUnauthenticatedSender_|محدد <p> `$true`|محدد <p> `$true`|محدد <p> `$true`|إضافة علامة استفهام (؟) إلى صورة المرسل في Outlook لمرسلين منتحلين غير مجهولين. لمزيد من المعلومات، راجع [المرسل غير المأكد](set-up-anti-phishing-policies.md#unauthenticated-sender).|
 |**إظهار علامة "via"** <p> _EnableViaTag_|محدد <p> `$true`|محدد <p> `$true`|محدد <p> `$true`|يضيف علامة عبر (chris@contoso.com عبر fabrikam.com) إلى العنوان من إذا كان مختلفا عن المجال في توقيع DKIM أو عنوان **MAIL FROM** . <p> لمزيد من المعلومات، راجع [المرسل غير المأكد](set-up-anti-phishing-policies.md#unauthenticated-sender).|
-|
 
 ### <a name="safe-attachments-settings"></a>خزينة المرفقات
 
@@ -288,16 +248,11 @@ ms.locfileid: "63583212"
 
 في PowerShell، يمكنك استخدام [الأمر Cmdlet Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) لهذه الإعدادات.
 
-<br>
-
-****
-
 |اسم ميزة الأمان|افتراضي|حماية مضمنة|تعليق|
 |---|:---:|:---:|---|
 |**قم تشغيل Defender Office 365 SharePoint OneDrive و Microsoft Teams** <p> _EnableATPForSPOTeamsODB_|إيقاف التشغيل <p> `$false`|في <p> `$true`|لمنع المستخدمين من تنزيل الملفات الضارة، راجع [استخدام SharePoint Online PowerShell لمنع المستخدمين من تنزيل الملفات الضارة](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
 |**تشغيل خزينة العملاء Office العملاء** <p> _EnableSafeDocs_|إيقاف التشغيل <p> `$false`|في <p> `$true`|تتوفر هذه الميزة وذات معنى فقط مع التراخيص غير المضمنة في Defender for Office 365 (على سبيل المثال، Microsoft 365 E5 أو الأمان في Microsoft 365 E5). لمزيد من المعلومات، راجع خزينة [المستندات في Microsoft 365 E5](safe-docs.md).|
 |**السماح للأشخاص بالنقر عبر "طريقة عرض محمية" حتى خزينة المستندات تعرف الملف على أنه ضار** <p> _AllowSafeDocsOpen_|إيقاف التشغيل <p> `$false`|إيقاف التشغيل <p> `$false`|يرتبط هذا الإعداد خزينة المستندات.|
-|
 
 #### <a name="safe-attachments-policy-settings"></a>خزينة نهج المرفقات
 
@@ -310,17 +265,12 @@ ms.locfileid: "63583212"
 >
 > يشير **العمود الافتراضي** في العمود المخصص إلى القيم الافتراضية في خزينة المرفقات الجديدة التي تقوم بإنشاءها. تشير الأعمدة المتبقية إلى (ما لم يذكر خلاف ذلك) القيم التي تم تكوينها في سياسات الأمان المقابلة التي تم إعدادها مسبقا.
 
-<br>
-
-****
-
 |اسم ميزة الأمان|الإعداد الافتراضي في المخصص|حماية مضمنة|Standard|التقيد|تعليق|
 |---|:---:|:---:|:---:|:---:|---|
 |**خزينة البرامج الضارة غير المعروفة للمرفقات** <p> _التمكين_ _والتحرك_|**إيقاف التشغيل** <p> `-Enable $false` و `-Action Block`|**حظر** <p> `-Enable $true` و `-Action Block`|**حظر** <p> `-Enable $true` و `-Action Block`|**حظر** <p> `-Enable $true` و `-Action Block`|عندما _تكون_ المعلمة Enable $false، لا تهم قيمة معلمة الإجراء.|
 |**نهج الفحص** (_Tag)_|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|عندما تنشئ نهج مرفقات خزينة جديد، تعني القيمة الفارغة استخدام نهج الفحص الافتراضي لتعريف القدرات التاريخية للرسائل التي تم فحصها بواسطة مرفقات خزينة (AdminOnlyAccessPolicy). <p> يمكن للمسؤولين إنشاء وتحديد سياسات الفحص المخصصة التي تحدد المزيد من القدرات للمستخدمين. لمزيد من المعلومات، راجع [سياسات الفحص](quarantine-policies.md).|
 |**إعادة توجيه المرفقات التي بها مرفقات تم الكشف عنها** : **تمكين إعادة التوجيه** <p> _إعادة توجيه_ <p> _RedirectAddress_|غير محدد ولا يوجد عنوان بريد إلكتروني محدد. <p> `-Redirect $false` <p> _RedirectAddress فارغ_ (`$null`)|غير محدد ولا يوجد عنوان بريد إلكتروني محدد. <p> `-Redirect $false` <p> _RedirectAddress فارغ_ (`$null`)|محددة وحدد عنوان بريد إلكتروني. <p> `$true` <p> عنوان بريد إلكتروني|محددة وحدد عنوان بريد إلكتروني. <p> `$true` <p> عنوان بريد إلكتروني|إعادة توجيه الرسائل إلى مسؤول أمان لمراجعتها. <p> **ملاحظة**: لم يتم تكوين هذا الإعداد **في سياسات الأمان** القياسية أو الصارم أو المضمنة. تشير **القيم القياسية** **والتقيدية** **إلى** قيمنا الموصى بها في خزينة المرفقات الجديدة التي تقوم بإنشاءها.|
 |**تطبيق خزينة الكشف عن المرفقات إذا لم يكن المسح الضوئي مكتملا (2016 أو 2016)** <p> _ActionOnError_|محدد <p> `$true`|محدد <p> `$true`|محدد <p> `$true`|محدد <p> `$true`||
-|
 
 ### <a name="safe-links-settings"></a>خزينة الارتباطات
 
@@ -339,17 +289,12 @@ ms.locfileid: "63583212"
 
 في PowerShell، يمكنك استخدام [الأمر Cmdlet Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) لهذه الإعدادات.
 
-<br>
-
-****
-
 |اسم ميزة الأمان|افتراضي|حماية مضمنة|تعليق|
 |---|:---:|:---:|---|
 |**حظر عناوين URL التالية** <p> _المستثناةUrls_|فارغ <p> `$null`|فارغ <p> `$null`|ليس لدينا توصيات محددة لهذا الإعداد. <p> لمزيد من المعلومات، راجع [القائمة "حظر عناوين URL التالية" خزينة الارتباطات](safe-links.md#block-the-following-urls-list-for-safe-links).
 |**استخدام خزينة الارتباطات في Office 365 التطبيق** <p> _EnableSafeLinksForO365Clients_|في <p> `$true`|في <p> `$true`|استخدم خزينة الارتباطات في تطبيقات Office 365 سطح المكتب والأجهزة المحمولة (iOS وAndroid) المعتمدة. لمزيد من المعلومات، [راجع خزينة الارتباطات لتطبيقات Office 365.](safe-links.md#safe-links-settings-for-office-365-apps)|
 |**عدم التعقب عندما ينقر المستخدمون فوق الارتباطات المحمية في Office 365 التطبيقات** <p> _TrackClicks_|في <p> `$false`|إيقاف التشغيل <p> `$true`|يؤدي إيقاف تشغيل هذا الإعداد (تعيين _TrackClicks إلى_ `$true`) إلى تعقب نقرات المستخدم في التطبيقات Office 365 المعتمدة.|
 |**لا تدع المستخدمين ينقرون عبر عنوان URL الأصلي في Office 365 التطبيقات** <p> _AllowClickThrough_|في <p> `$false`|في <p> `$false`|يؤدي تشغيل هذا الإعداد (تعيين _AllowClickThrough إلى_ `$false`) إلى منع النقر عبر عنوان URL الأصلي في تطبيقات Office 365 المعتمدة.|
-|
 
 #### <a name="safe-links-policy-settings"></a>خزينة نهج الارتباطات
 
@@ -361,10 +306,6 @@ ms.locfileid: "63583212"
 > كما هو موضح مسبقا، لا يوجد نهج خزينة ارتباطات افتراضية، ولكن يتم تعيين خزينة ارتباطات الحماية لجميع المستلمين بواسطة نهج الأمان المعين مسبقا للحماية [ المضمنة](preset-security-policies.md).
 >
 > يشير **العمود الافتراضي** في العمود المخصص إلى القيم الافتراضية في خزينة الارتباطات الجديدة التي تقوم بإنشاءها. تشير الأعمدة المتبقية إلى (ما لم يذكر خلاف ذلك) القيم التي تم تكوينها في سياسات الأمان المقابلة التي تم إعدادها مسبقا.
-
-<br>
-
-****
 
 |اسم ميزة الأمان|الإعداد الافتراضي في المخصص|حماية مضمنة|Standard|التقيد|تعليق|
 |---|:---:|:---:|:---:|:---:|---|
@@ -381,7 +322,6 @@ ms.locfileid: "63583212"
 |**عدم إعادة كتابة عناوين URL التالية** <p> _DoNotRewriteUrls_|غير محدد <p> فارغ|غير محدد <p> فارغ|غير محدد <p> فارغ|غير محدد <p> فارغ|ليس لدينا توصيات محددة لهذا الإعداد. لمزيد من المعلومات، راجع "عدم إعادة كتابة قوائم [عناوين URL التالية" في خزينة الارتباطات.](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)|
 |**الإعلام**||||||
 |**ما الذي ترغب في إعلام المستخدمين به؟**|**استخدام نص الإعلام الافتراضي**|**استخدام نص الإعلام الافتراضي**|**استخدام نص الإعلام الافتراضي**|**استخدام نص الإعلام الافتراضي**|ليس لدينا توصيات محددة لهذا الإعداد. <p> يمكنك تحديد **استخدام نص إعلام مخصص** (_CustomNotificationText_) لإدخال نص إعلام مخصص لاستخدامه. يمكنك أيضا تحديد **استخدام المترجم من Microsoft الترجمة** التلقائية (_UseTranslatedNotificationText_) لترجمة نص الإعلام المخصص إلى لغة المستخدم.
-|
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 

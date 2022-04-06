@@ -21,12 +21,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2e14e523c9aa662afc0ee38572f8a19be6f851b5
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: d9d418cee35976e621c173b3563b04ee8bdce7ca
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "63565954"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595291"
 ---
 # <a name="get-started-with-communication-compliance"></a>بدء العمل باستخدام توافق الاتصالات
 
@@ -36,14 +36,14 @@ ms.locfileid: "63565954"
 
 قبل بدء استخدام توافق الاتصالات، يجب عليك تأكيد اشتراكك في [Microsoft 365 الوظائف الإضافية](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) وأي من الوظائف الإضافية. للوصول إلى توافق الاتصالات واستخدامه، يجب أن يكون لدى مؤسستك أحد الاشتراكات أو الوظائف الإضافية التالية:
 
-- Microsoft 365 E5/A5/G5 (إصدار مدفوع أو تجريبي)
-- Microsoft 365 E3/A3/G5 + Microsoft 365 E5/A5/G5 Compliance الإضافية
-- Microsoft 365 E3/A3/G5 اشتراك + Microsoft 365 E5/A5/G5 Insider لإدارة المخاطر
+- Microsoft 365 E5/A5/F5/G5 (إصدار مدفوع أو تجريبي)
+- Microsoft 365 E3/A3/F3/G5 + Microsoft 365 E5/A5/F5/G5 Compliance الإضافية
+- Microsoft 365 E3/A3/F3/G5 + Microsoft 365 E5/A5/F5/G5 Insider إدارة المخاطر
 - Office 365 Enterprise E5 (إصدار مدفوع أو تجريبي)
 - Office 365 A5 الاشتراك (إصدار مدفوع أو تجريبي)
 - Office 365 Enterprise اشتراك E3 + خدمات الامتثال المتطورة في Office 365 الإضافية (لم تعد متوفرة للاشتراكات الجديدة، راجع ملاحظة)
 
-يجب تعيين أحد التراخيص أعلاه للمستخدمين المضمنين في سياسات توافق الاتصالات.
+يجب تعيين أحد التراخيص أعلاه للمستخدمين المضمنين في سياسات توافق الاتصالات. لمزيد من المعلومات حول الاشتراكات والترخيص، راجع Microsoft 365 [إرشادات الأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
 > [!IMPORTANT]
 > يتوفر توافق الاتصالات حاليا في المستأجرين المستضافين في المناطق الجغرافية والبلدان المعتمدة بواسطة تبعيات خدمة Azure. للتحقق من دعم توافق الاتصالات لمنظمتك، راجع توفر تبعية [Azure حسب البلد/المنطقة](/troubleshoot/azure/general/dependency-availability-by-country).
@@ -155,7 +155,7 @@ ms.locfileid: "63565954"
 
 | **عضو النهج** | **المجموعات المعتمدة** | **المجموعات غير الم معتمدة** |
 |:-----|:-----|:-----|
-|المستخدمون الذين تم تدهمهم <br> المستخدمون المستبعدون | مجموعات التوزيع <br> Microsoft 365 المجموعات | مجموعات توزيع ديناميكية <br> مجموعات التوزيع المتداخلة <br> مجموعات الأمان التي تم تمكين البريد لها <br> Microsoft 365 المجموعات ذات العضوية الديناميكية |
+|المستخدمون الذين تم تدهمهم <br> المستخدمون المستبعدون | مجموعات التوزيع <br> مجموعات Microsoft 365 | مجموعات توزيع ديناميكية <br> مجموعات التوزيع المتداخلة <br> مجموعات الأمان التي تم تمكين البريد لها <br> Microsoft 365 المجموعات ذات العضوية الديناميكية |
 | المراجعون | بلا | مجموعات التوزيع <br> مجموعات توزيع ديناميكية <br> مجموعات التوزيع المتداخلة <br> مجموعات الأمان التي تم تمكين البريد لها |
 
 عند تعيين مجموعة *توزيع* في النهج، يقوم النهج بمراقبة كل رسائل البريد الإلكتروني Teams الدردشات من كل مستخدم في *مجموعة التوزيع*. عند تعيين مجموعة *Microsoft 365* في النهج، يراقب النهج كل رسائل البريد الإلكتروني دردشات Teams المرسلة إلى مجموعة *Microsoft 365*،* وليس رسائل البريد الإلكتروني الفردية والدردشة التي يتلقاها كل عضو في المجموعة. من المستحسن استخدام مجموعات التوزيع في سياسات توافق الاتصالات بحيث يتم مراقبة رسائل البريد الإلكتروني الفردية Teams الدردشات من كل مستخدم تلقائيا.
@@ -194,7 +194,7 @@ ms.locfileid: "63565954"
 لمزيد من المعلومات حول إعداد المجموعات، راجع:
 
 - [إنشاء مجموعات توزيع وإدارتها](/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [نظرة عامة Microsoft 365 المجموعات](/office365/admin/create-groups/office-365-groups)
+- [نظرة عامة على مجموعات Microsoft 365](/office365/admin/create-groups/office-365-groups)
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>الخطوة 4 (اختيارية): التحقق من Yammer المستأجر في الوضع الأصلي
 

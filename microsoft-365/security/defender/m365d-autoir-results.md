@@ -23,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 05e16a32fb21f682a756c32201a69c192d398184
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5a95980147c66fa8655f5c1b2ebe8adfff9e87c0
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63575701"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501256"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>تفاصيل ونتائج التحقيق التلقائي
 
@@ -41,7 +41,7 @@ ms.locfileid: "63575701"
 
 ## <a name="new-unified-investigation-page"></a>(NEW) صفحة التحقيق الموحد
 
-تم تحديث صفحة التحقيق مؤخرا لتضمين معلومات عبر أجهزتك والبريد الإلكتروني ومحتوى التعاون. تعرف صفحة "التحقيق الموحد" الجديدة لغة شائعة وتوفر تجربة موحدة من أجل إجراء عمليات تحقيق تلقائية عبر [Microsoft Defender ل Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) و Microsoft [Defender Office 365](../office-365-security/defender-for-office-365.md). للوصول إلى صفحة التحقيق الموحد، حدد الارتباط في الشعار الأصفر الذي ستشاهده على:
+تم تحديث صفحة التحقيق مؤخرا لتضمين معلومات عبر أجهزتك والبريد الإلكتروني ومحتوى التعاون. تعرف صفحة "التحقيق الموحد" الجديدة لغة مشتركة وتوفر تجربة موحدة من أجل إجراء عمليات تحقيق تلقائية عبر Microsoft Defender لنقطة النهاية [Microsoft Defender لـ Office 365.](../office-365-security/defender-for-office-365.md)[](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) للوصول إلى صفحة التحقيق الموحد، حدد الارتباط في الشعار الأصفر الذي ستشاهده على:
 
 - أي صفحة تحقيق في Office 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">مركز & التوافق</a>
 - أي صفحة تحقيق في Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))
@@ -89,23 +89,23 @@ ms.locfileid: "63575701"
 
 فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="مثال لصفحة تحقيق." lightbox="../../media/mtp-incidentdetails-tabs.png":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="صفحة التحقيق في مدخل Microsoft 365 Defender" lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## <a name="investigation-details"></a>تفاصيل التحقيق
 
 استخدم طريقة عرض تفاصيل التحقيق لرؤية النشاط السابق، الحالي، المعلق فيما يتعلق بالتحقيق. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="مثال على تفاصيل التحقيق." lightbox="../../media/mtp-air-investdetails.png":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="صفحة تفاصيل التحقيق في مدخل Microsoft 365 Defender" lightbox="../../media/mtp-air-investdetails.png":::
 
 في طريقة عرض تفاصيل التحقيق، يمكنك الاطلاع على معلومات على علامات التبويب رسم التحقيق والتنبيهات والأجهزة والهويات والنتائج الرئيسية والكيانات والسجل والإجراءات المعلقة، كما  هو موضح في الجدول التالي. 
 
 > [!NOTE]
-> تعتمد علامات التبويب المحددة التي تراها في صفحة تفاصيل التحقيق على ما يتضمنه اشتراكك. على سبيل المثال، إذا لم يتضمن اشتراكك Microsoft Defender Office 365 الخطة 2، فلن ترى علامة التبويب **علب** البريد.
+> تعتمد علامات التبويب المحددة التي تراها في صفحة تفاصيل التحقيق على ما يتضمنه اشتراكك. على سبيل المثال، إذا لم يتضمن اشتراكك Microsoft Defender لـ Office 365 2، فلن ترى علامة التبويب **علب** البريد.
 
 | Tab | الوصف |
 |:--------|:--------|
 | **رسم بياني للتحري** | يوفر تمثيلا مرئيا للتحري. يصف الكيانات ويدرج التهديدات التي تم العثور عليها، إلى جانب التنبيهات وما إذا كانت هناك أي إجراءات بانتظار الموافقة.<br/>يمكنك تحديد عنصر في الرسم البياني لعرض المزيد من التفاصيل. على سبيل المثال، يأخذك **تحديد أيقونة** الدليل إلى  علامة التبويب دليل، حيث يمكنك رؤية الكيانات التي تم الكشف عنها وحكمها. |
-| **التنبيهات** | يسرد التنبيهات المقترنة بالتحقيق. يمكن أن تأتي التنبيهات من ميزات الحماية من المخاطر على جهاز المستخدم، وفي تطبيقات Office، و Microsoft Defender لتطبيقات السحابة، وميزات Microsoft 365 Defender الأخرى.|
+| **التنبيهات** | يسرد التنبيهات المقترنة بالتحقيق. يمكن أن تأتي التنبيهات من ميزات الحماية من المخاطر على جهاز المستخدم، وفي تطبيقات Office، Microsoft Defender for Cloud Apps، وميزات أخرى Microsoft 365 Defender أخرى.|
 | **الأجهزة** | تسرد الأجهزة المضمنة في التحقيق إلى جانب مستوى المعالجة الخاصة بها. (تتوافق مستويات المعالجة [مع مستوى التنفيذ التلقائي لمجموعات الأجهزة](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
 | **علب البريد** |يسرد علب البريد التي تؤثر عليها التهديدات التي تم الكشف عنها.  |
 | **المستخدمون**  | تسرد حسابات المستخدمين التي تؤثر عليها التهديدات التي تم الكشف عنها. |

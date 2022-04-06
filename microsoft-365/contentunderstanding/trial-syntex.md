@@ -16,13 +16,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: ''
 ms.localizationpriority: medium
-description: تعرف على كيفية تخطيط برنامج تجريبي تجريبي وتشغيله SharePoint Syntex في مؤسستك.
-ms.openlocfilehash: 74b44c14140f26e0744aac73fd948e58d9d33e24
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: تعرف على كيفية التخطيط لبرنامج تجريبي SharePoint Syntex في مؤسستك، ثم التسجيل فيه وتشغيله.
+ms.openlocfilehash: fc4221b0022aca8a0564c78e64d94028f6483104
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63574372"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507088"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>تشغيل الإصدار التجريبي من Microsoft SharePoint Syntex
 
@@ -44,7 +44,7 @@ ms.locfileid: "63574372"
     2. انتقل إلى **خدمات BillingPurchase** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank"></a>
     3. قم بالتمرير لأسفل وصولا إلى المقطع **الوظائف** الإضافية.
     4. في اللوحة SharePoint Syntex، حدد **تفاصيل**.
-    5. حدد **الحصول على الإصدار التجريبي المجاني**.
+    5. حدد **بدء الإصدار التجريبي المجاني**.
     6. لتأكيد الإصدار التجريبي، اتبع خطوات المعالج المتبقية.
 
 يجب أن تكون مسؤولا Microsoft 365 أو مسؤول فوترة لتنشيط الإصدار التجريبي.

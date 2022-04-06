@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 112bfd63a5f3667b22378790b62f3e33fba784d6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 413c4fadcc6de3527643be712713d37a1e2c346c
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63579574"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64501124"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>مثال على هجوم بريد إلكتروني تصيد احتيالي
 
@@ -40,25 +40,25 @@ Microsoft 365 Defender المساعدة في الكشف عن المرفقات ا
 
 على سبيل المثال، تم تعيين حادث متعدد المراحل لمحلل.
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="مثال لحادث متعدد المراحل."::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="حادث متعدد المراحل" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-incident.png":::
 
-في علامة **التبويب تنبيهات** للحادث، يتم عرض التنبيهات من Defender for Office 365 و Microsoft Defender لتطبيقات السحابة. يمكن للمحلل التنقل لأسفل في تنبيهات Office 365 عن طريق تحديد تنبيهات رسائل البريد الإلكتروني. يتم عرض تفاصيل التنبيه على الجزء الجانبي.
+في **علامة التبويب تنبيهات** للحادث، يتم عرض التنبيهات Defender لـ Office 365 والتنبيهات Microsoft Defender for Cloud Apps. يمكن أن ينزل المحلل إلى Defender لـ Office 365 من خلال تحديد تنبيهات رسائل البريد الإلكتروني. يتم عرض تفاصيل التنبيه على الجزء الجانبي.
 
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="مثال لتنبيه بريد إلكتروني.":::
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="تنبيه بالبريد الإلكتروني" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png":::
  
 من خلال التمرير لأسفل، يتم عرض المزيد من المعلومات، مع عرض الملفات الضارة والمستخدم الذي تم التأثير عليه.
 
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="مثال على تأثير المستخدم والملف لتنبيه بريد إلكتروني.":::
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="تأثير المستخدم والملف لتنبيه بريد إلكتروني" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-impact.png":::
   
 يأخذك **تحديد فتح صفحة التنبيه** إلى التنبيه المحدد حيث يمكن عرض المعلومات المختلفة بتفاصيل أكبر عن طريق تحديد الارتباط. يمكن عرض رسالة البريد الإلكتروني الفعلية عن طريق تحديد عرض الرسائل في **المستكشف** في أسفل اللوحة.
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="مثال التفاصيل الخاصة بتنبيه."::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="تفاصيل تنبيه" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png"::: 
 
 ويأخذ هذا المحلل إلى صفحة إدارة المخاطر حيث يتم عرض البريد الإلكتروني الموضوع والمستلم والمرسل ومعلومات أخرى. **يخبر ZAP** ضمن **الإجراءات** الخاصة المحلل بأنه تم تنفيذ ميزة إزالة تلقائية لمدة ساعة صفرية. يكشف ZAP تلقائيا عن الرسائل الضارة ورسائل البريد العشوائي ويزيلها من علب البريد عبر المؤسسة. لمزيد من المعلومات، راجع إزالة تلقائية [لمدة ساعة (ZAP) في](../office-365-security/zero-hour-auto-purge.md) Exchange Online.
 
 يمكن اتخاذ إجراءات أخرى على رسائل معينة عن طريق تحديد **إجراءات**. 
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="مثال على الإجراءات الأخرى التي يمكن اتخاذها على رسائل البريد الإلكتروني."::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="الإجراءات الأخرى التي يمكن اتخاذها على رسائل البريد الإلكتروني" lightbox="../../media/first-incident-path-phishing/first-incident-phishing-actions.png"::: 
 
 ## <a name="next-step"></a>الخطوة التالية
 

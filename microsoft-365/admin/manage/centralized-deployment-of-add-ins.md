@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: حدد ما إذا كان المستأجر والمستخدمون لديك يلبيون المتطلبات، بحيث يمكنك استخدام "النشر المركزي" لنشر Office إضافية.
-ms.openlocfilehash: 4a64a9dd9a15c9bc877288aa9ac8fc62c40cee51
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 856e48db79627e0e736c05fe0062680017e24418
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63571018"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64506956"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>تحديد ما إذا كان النشر المركزي ل الوظائف الإضافية يعمل مع مؤسستك
 
@@ -36,9 +36,7 @@ ms.locfileid: "63571018"
 يوفر النشر المركزي الفوائد التالية:
 
 - يمكن للمسؤول نشر وظائف إضافية وتعيينها مباشرة إلى مستخدم أو عدة مستخدمين عبر مجموعة أو للجميع في المؤسسة (راجع القسم متطلبات المسؤول للحصول على المعلومات).
-
 - عند بدء تشغيل Office ذي الصلة، يتم تنزيل الوظائف الإضافية تلقائيا. إذا كانت الوظائف الإضافية تدعم أوامر الوظائف الإضافية، تظهر هذه الوظائف الإضافية تلقائيا في الشريط ضمن Office التطبيق.
-
 - لم تعد الوظائف الإضافية تظهر للمستخدمين إذا قام المسؤول ب إيقاف تشغيلها أو حذفها، أو إذا تمت إزالة المستخدم من Azure Active Directory أو من مجموعة تم تعيينها لها.
 
 يدعم النشر المركزي ثلاثة الأنظمة الأساسية لسطح المكتب Windows وتطبيقات Mac Office الإنترنت. يدعم "النشر المركزي" أيضا أجهزة iOS وAndroid (Outlook الإضافية للجوال فقط).
@@ -92,7 +90,6 @@ ms.locfileid: "63571018"
 >
 > ![صورة](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
-
 ### <a name="centralized-deployment-compatibility-checker"></a>مدقق توافق النشر المركزي
 
 باستخدام مدقق توافق النشر المركزي، يمكنك التحقق مما إذا كان المستخدمون على المستأجر قد تم إعدادهم لاستخدام "النشر المركزي" ل Word Excel PowerPoint. مدقق التوافق غير مطلوب Outlook الدعم. قم [بتنزيل مدقق التوافق](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
@@ -107,28 +104,24 @@ ms.locfileid: "63571018"
    Import-Module O365CompatibilityChecker
    ```
 
-3. تشغيل **الأمر Invoke-CompatabilityCheck** :
+3. تشغيل **الأمر Invoke-CompatibilityCheck** :
 
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   يطالبك هذا الأمر  *_ب TenantDomain_* (على سبيل المثال *، TailspinToysIncorporated.onmicrosoft.</span> com*)  *_وبيانات اعتماد TenantAdmin_* (استخدم بيانات اعتماد المسؤول العام)، ثم يطلب الموافقة.
+
+   يطالبك هذا الأمر ب _TenantDomain_ (على سبيل المثال _،_ TailspinToysIncorporated.onmicrosoft.com) وبيانات اعتماد _TenantAdmin_ (استخدم بيانات اعتماد المسؤول العام)، ثم يطلب الموافقة.
 
    > [!NOTE]
-   > استنادا إلى عدد المستخدمين في المستأجر، يمكن أن يكتمل المدقق بالدقائق أو الساعات. 
-  
+   > استنادا إلى عدد المستخدمين في المستأجر، يمكن أن يكتمل المدقق بالدقائق أو الساعات.
+
 عند انتهاء تشغيل الأداة، تنتج ملف إخراج بتنسيق مفصول بفصول (.csv). يتم حفظ الملف في **دليل العمل الحالي** بشكل افتراضي. يحتوي ملف الإخراج على المعلومات التالية:
 
 - اسم المستخدم
-
 - "تعريف المستخدم" (عنوان البريد الإلكتروني للمستخدم)
-
 - النشر المركزي جاهز - إذا كانت العناصر المتبقية صحيحة
-
 - Office خطة - خطة Office تم ترخيصها ل
-
 - Office تنشيط - إذا تم تنشيط Office
-
 - علبة البريد المعتمدة - إذا كانت على علبة بريد تم تمكين OAuth لها
 
 > [!NOTE]
@@ -147,7 +140,6 @@ ms.locfileid: "63571018"
 
 ![MicrosoftTeams-image](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
-
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>معرفة ما إذا كانت المجموعة تحتوي على مجموعات متداخلة
 
 أسهل طريقة للكشف عما إذا كانت المجموعة تحتوي على مجموعات متداخلة هي عرض بطاقة جهة اتصال المجموعة ضمن Outlook. إذا أدخلت اسم المجموعة ضمن الحقل **إلى** في رسالة بريد إلكتروني ثم حددت اسم المجموعة عند حلها، فإنه سيعرض لك ما إذا كانت تحتوي على مستخدمين أو مجموعات متداخلة. في المثال أدناه، لا تعرض  علامة تبويب الأعضاء Outlook جهة الاتصال لمجموعة الاختبار أي مستخدمين ومجموعتين فرعتين فقط.
@@ -158,16 +150,16 @@ ms.locfileid: "63571018"
 
 ![علامة تبويب العضوية في Outlook جهة الاتصال.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
-بدلا من ذلك، يمكنك استخدام Azure Active Directory Graph API لتشغيل الاستعلامات للعثور على قائمة المجموعات ضمن مجموعة. لمزيد من المعلومات، راجع [العمليات على المجموعات | Graph API](/previous-versions/azure/ad/graph/api/groups-operations).
+بدلا من ذلك، يمكنك استخدام Azure Active Directory Graph API لتشغيل الاستعلامات للعثور على قائمة المجموعات ضمن مجموعة. لمزيد من المعلومات، راجع [العمليات على المجموعات| Graph API](/previous-versions/azure/ad/graph/api/groups-operations).
 
 ### <a name="contacting-microsoft-for-support"></a>الاتصال ب Microsoft للحصول على الدعم
 
 إذا واجهت أنت أو المستخدمون مشاكل في تحميل الوظائف الإضافية أثناء استخدام تطبيقات Office على الويب (Word و Excel وما إلى ذلك)، والتي تم نشرها مركزيا، فقد تحتاج إلى الاتصال بدعم [Microsoft (تعرف](../../business-video/get-help-support.md) على كيفية القيام بذلك. توفير المعلومات التالية حول بيئة Microsoft 365 في تذكرة الدعم.
 
-| النظام الأساسي | معلومات تصحيح الأخطاء |
-|:-----|:-----|
-|Office | سجلات Charles/Fiddler  <br/>  معرف المستأجر ([تعرف على كيفية)](/onedrive/find-your-office-365-tenant-id)  <br/>  CorrelationID. اطلع على مصدر إحدى صفحات Office وابحث عن قيمة "الم ID الارتباط" وأرسلها إلى الدعم:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>` |
-|العملاء الثراء (Windows، Mac) | سجلات Charles/Fiddler  <br/>  أرقام إنشاء تطبيق العميل (يفضل أن تكون لقطة شاشة من **ملف/حساب**) |
+|النظام الأساسي|معلومات تصحيح الأخطاء|
+|---|---|
+|Office|سجلات Charles/Fiddler <br/> معرف المستأجر ([تعرف على كيفية)](/onedrive/find-your-office-365-tenant-id) <br/> CorrelationID. اطلع على مصدر إحدى صفحات Office وابحث عن قيمة "الم ID الارتباط" وأرسلها إلى الدعم:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">` <br/> `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`|
+|العملاء الثراء (Windows، Mac)|سجلات Charles/Fiddler <br/> أرقام إنشاء تطبيق العميل (يفضل أن تكون لقطة شاشة من **ملف/حساب**)|
 
 ## <a name="related-content"></a>المحتوى ذي الصلة
 
@@ -175,4 +167,3 @@ ms.locfileid: "63571018"
 [إدارة الوظائف الإضافية في مركز الإدارة](manage-addins-in-the-admin-center.md) (مقالة)\
 [الأسئلة الشائعة حول النشر المركزي](../manage/centralized-deployment-faq.yml) (مقالة)\
 [ترقية Microsoft 365 الخاص بك لمستخدمي الأعمال إلى أحدث عميل](../setup/upgrade-users-to-latest-office-client.md) Office (مقالة)
- 

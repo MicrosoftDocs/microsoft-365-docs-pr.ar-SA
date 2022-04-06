@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 45b5bbcc1268c1f425b914a3f8279fe8dcc583f2
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 993820bace174d993ed81fafb7f1f3b1c7645d37
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569942"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500882"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>ما الجديد في Microsoft Defender لنقطة النهاية Linux
 
@@ -46,7 +46,6 @@ ms.locfileid: "64569942"
 ## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0)
 
 - تدعم أداة سطر الأوامر الآن استعادة الملفات التي تم فحصها إلى موقع آخر غير الموقع الذي تم الكشف عن الملف فيه في الأصل. يمكن القيام بذلك من خلال `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
-- بدءا من هذا الإصدار، يمكن تقييم حماية الشبكة ل Linux عند الطلب
 - إصلاحات الأخطاء
 
 ## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0)

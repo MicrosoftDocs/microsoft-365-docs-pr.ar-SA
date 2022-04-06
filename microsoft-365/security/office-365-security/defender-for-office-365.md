@@ -20,12 +20,12 @@ ms.custom:
 description: يتضمن Microsoft Defender for Office 365 مرفقات خزينة، خزينة ارتباطات، وأدوات متقدمة لمكافحة التصيد الاحتيالي، وأدوات إعداد التقارير، وإمكانيات المعلومات المتعلقة بالخطر.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f78194541db8221aad1243966ddee6b6dc071d7d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b8041962ca1a696146f9a5828c66b1a6800c4b01
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570540"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683724"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender Office 365
 
@@ -77,12 +77,9 @@ ms.locfileid: "63570540"
 
 يلخص الجدول التالي ما هو مضمن في كل خطة.
 
-****
-
 |Defender for Office 365 1|Defender for Office 365 2|
 |---|---|
 |قدرات التكوين والحماية والكشف: <ul><li>[خزينة المرفقات](safe-attachments.md)</li><li>[الارتباطات الآمنة](safe-links.md)</li><li>[خزينة المرفقات SharePoint OneDrive و Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[الحماية من التصيد الاحتيالي في Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[الكشف في الوقت الحقيقي](threat-explorer.md)</li></ul>|Defender for Office 365 الخطة 1 <p> --- بالإضافة إلى --- <p> إمكانات التنفيذ التلقائي، والتحري، والوساطة، والتعليم: <ul><li>[متعقبات التهديدات](threat-trackers.md)</li><li>[مستكشف التهديدات](threat-explorer.md)</li><li>[إجراء عمليات التحقيق والاستجابة التلقائية](office-365-air.md)</li><li>[التدريب على محاكاة الهجمات](attack-simulation-training.md)</li><li>[البحث الاستباقي عن التهديدات باستخدام الصيد المتقدم في Microsoft 365 Defender](../defender/advanced-hunting-overview.md)</li><li>[التحقق من الأحداث في Microsoft 365 Defender](../defender/investigate-incidents.md)</li><li>[التحقق من التنبيهات في Microsoft 365 Defender](../defender/investigate-alerts.md)</li></ul>|
-
 
 - Microsoft Defender Office 365 الخطة 2 مضمنة في Office 365 E5 Office 365 A5 Microsoft 365 E5.
 
@@ -144,10 +141,6 @@ ms.locfileid: "63570540"
 ## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>الأذونات المطلوبة لاستخدام Microsoft Defender Office 365 الميزات
 
 للوصول إلى Microsoft Defender Office 365 الميزات، يجب أن يتم تعيين دور مناسب لك. يتضمن الجدول التالي بعض الأمثلة:
-
-<br>
-
-****
 
 |مجموعة الدور أو الدور|الموارد لمعرفة المزيد|
 |---|---|
