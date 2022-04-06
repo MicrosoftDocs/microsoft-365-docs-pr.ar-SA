@@ -20,12 +20,12 @@ ms.custom:
 description: في هذه المقالة، ستتعرف على كيفية استخدام مدخل الحذف لإزالة نفسك من قائمة المرسلين المحظورين Microsoft 365 المحظورين. هذه هي أفضل استجابة لمعالجة الأخطاء التي تم رفضها في Access 5.7.511.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 58ddb2913ce7ecd047b1d5acb360c8f4c9ff5074
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 627e8f91c9d4730fed6a7fca275e9d53e1dfd7fd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775775"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474784"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>استخدام مدخل الحذف لإزالة نفسك من قائمة المرسلين المحظورين وعنوان 5.7.511 أخطاء رفض Access
 
@@ -33,7 +33,7 @@ ms.locfileid: "63775775"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 هل تظهر رسالة خطأ عند محاولة إرسال رسالة بريد إلكتروني إلى مستلم يكون عنوان بريده الإلكتروني في Microsoft 365 (على سبيل المثال، تم رفض الوصول إلى العنوان 5.7.511)؟ إذا كنت تعتقد أنه لا يجب أن تتلقى رسالة الخطأ، يمكنك استخدام مدخل الحذف لإزالة نفسك من قائمة المرسلين المحظورين.
@@ -65,7 +65,8 @@ ms.locfileid: "63775775"
 
     يرسل المدخل بريدا إلكترونيا إلى عنوان البريد الإلكتروني الذي تقوم بتزويده به. سيبدو البريد الإلكتروني كما يلي:
 
-    ![لقطة شاشة للبريد الإلكتروني الذي تم تلقيه عند إرسال طلب عبر مدخل الرفع.](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    :::image type="content" source="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png" alt-text="البريد الإلكتروني الذي يتم استلامه عند إرسال طلب عبر مدخل الرفع" lightbox="../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png":::
+
 
 4. انقر فوق ارتباط التأكيد في البريد الإلكتروني المرسل إليك بواسطة مدخل الشطب.
 

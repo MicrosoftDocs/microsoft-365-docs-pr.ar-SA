@@ -15,12 +15,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على كيفية استخدام معلومات SMTP الصادقة والتقارير في لوحة معلومات تدفق البريد في مركز التوافق ل الأمان & لمراقبة مرسلي البريد الإلكتروني في المؤسسة الذين يستخدمون SMTP المصادق عليه (SMTP AUTH) لإرسال رسائل البريد الإلكتروني.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e21e9fae80880b479070b1920379b925bf7074c7
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8c2152820e7f3d5dbf04534e5f0b0fec344ecc7b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681117"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474982"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>نظرة ثاقبة حول عملاء SMTP أو تقريرهم في مركز التوافق & الأمان
 
@@ -28,18 +28,18 @@ ms.locfileid: "63681117"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 تسلط نظرة ثاقبة لعملاء **SMTP Auth** في لوحة معلومات تدفق البريد بالإضافة إلى تقرير عملاء [SMTP Auth](#smtp-auth-clients-report) المقترن في مركز التوافق ل الأمان [&](https://protection.office.com) الضوء على استخدام بروتوكول إرسال عميل SMTP AUTH من قبل المستخدمين أو حسابات النظام في مؤسستك.[](mail-flow-insights-v2.md) يقدم هذا البروتوكول القديم (الذي يستخدم نقطة النهاية smtp.office365.com) المصادقة الأساسية فقط، وهو عرضة لأن يتم استخدامه بواسطة الحسابات الم اختراق لإرسال البريد الإلكتروني. تتيح لك الرؤى والتقارير التحقق من النشاط غير المعتاد لمرسلات البريد الإلكتروني ل SMTP AUTH. كما يعرض بيانات استخدام TLS للعملاء أو الأجهزة التي تستخدم SMTP AUTH.
 
 يشير عنصر واجهة المستخدم إلى عدد المستخدمين أو حسابات الخدمة التي استخدمت بروتوكول اونث SMTP في آخر 7 أيام.
 
-![عنصر واجهة مستخدم عملاء SMTP Auth في لوحة معلومات تدفق البريد في مركز & الأمان.](../../media/mfi-smtp-auth-clients-report-widget.png)
+:::image type="content" source="../../media/mfi-smtp-auth-clients-report-widget.png" alt-text="عنصر واجهة مستخدم عملاء SMTP Auth في لوحة معلومات تدفق البريد في مركز & الأمان" lightbox="../../media/mfi-smtp-auth-clients-report-widget.png":::
 
 إذا نقرت فوق عدد الرسائل على عنصر واجهة المستخدم، تظهر من خلال عنصر واجهة المستخدم **عميل SMTP Auth** . توفر هذه الأخيرة طريقة عرض مجمعة لاستخدام TLS وإجماليات أحجامها خلال الأسبوع الماضي.
 
-![تفاصيل القائمة من القائمة من القائمة المنسقة بعد النقر فوق عنصر واجهة مستخدم عملاء SMTP Auth في لوحة معلومات تدفق البريد.](../../media/mfi-smtp-auth-clients-report-details.png)
+:::image type="content" source="../../media/mfi-smtp-auth-clients-report-details.png" alt-text="القائمة flyout Details بعد النقر فوق عنصر واجهة مستخدم عملاء SMTP Auth في لوحة معلومات تدفق البريد" lightbox="../../media/mfi-smtp-auth-clients-report-details.png":::
 
 يمكنك النقر فوق ارتباط تقرير **عملاء SMTP Auth** الانتقال إلى تقرير عملاء SMTP Auth كما هو موضح في القسم التالي.
 
@@ -53,11 +53,11 @@ ms.locfileid: "63681117"
 
 - عرض البيانات حسب **:** إرسال مستوى الصوت: بشكل افتراضي، يعرض المخطط عدد رسائل عميل SMTP Auth التي تم إرسالها من كل المجالات (إظهار البيانات ل **:** يتم تحديد كل مجالات المرسلين بشكل افتراضي). يمكنك تصفية النتائج إلى مجال مرسل معين بالنقر فوق إظهار البيانات لمجال  المرسل وتحديده من القائمة المنسدلة. إذا قمت ب hover a specific data point (day) ، يتم عرض عدد الرسائل.
 
-  ![إرسال طريقة عرض مستوى الصوت في تقرير عملاء SMTP Auth في مركز & الأمان.](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
+  :::image type="content" source="../../media/mfi-smtp-auth-clients-report-sending-volume-view.png" alt-text="طريقة العرض &quot;إرسال مستوى الصوت&quot; في تقرير عملاء SMTP Auth في مركز & الأمان" lightbox="../../media/mfi-smtp-auth-clients-report-sending-volume-view.png":::
 
 - **عرض البيانات حسب: استخدام TLS**: يعرض المخطط النسبة المئوية لاستخدام TLS لكل رسائل عميل SMTP Auth خلال الفترة الزمنية المحددة. يسمح لك هذا المخطط بتحديد المستخدمين وحسابات النظام التي لا تزال تستخدم الإصدارات القديمة من TLS واتخاذ إجراء بشأنها.
 
-  ![طريقة عرض استخدام TLS في تقرير عملاء SMTP Auth في مركز & الأمان.](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
+  :::image type="content" source="../../media/mfi-smtp-auth-clients-report-tls-usage-view.png" alt-text="طريقة عرض استخدام TLS في تقرير عملاء SMTP Auth في مركز & الأمان" lightbox="../../media/mfi-smtp-auth-clients-report-tls-usage-view.png":::
 
 إذا نقرت فوق **عوامل التصفية** في طريقة عرض التقرير، يمكنك تحديد نطاق تاريخ مع **تاريخ البدء** **وتاريخ الانتهاء**.
 
@@ -88,7 +88,7 @@ ms.locfileid: "63681117"
 
 إذا حددت صفا، يتم عرض تفاصيل مماثلة في مجموعة من المعلومات:
 
-![تفاصيل من خارج جدول التفاصيل ل طريقة عرض استخدام TLS في تقرير عملاء SMTP Auth.](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+:::image type="content" source="../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png" alt-text="من جانب منزه التفاصيل من جدول التفاصيل ل طريقة عرض استخدام TLS في تقرير عملاء SMTP Auth" lightbox="../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png":::
 
 انقر **فوق طلب تقرير** لتلقي إصدار أكثر تفصيلا من التقرير في رسالة بريد إلكتروني. يمكنك تحديد نطاق التاريخ والمستلمين لتلقي التقرير.
 

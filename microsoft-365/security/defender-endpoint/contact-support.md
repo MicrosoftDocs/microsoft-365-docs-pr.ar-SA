@@ -1,6 +1,6 @@
 ---
-title: الاتصال بدعم نقطة النهاية ل Microsoft Defender
-description: تعرف على كيفية الاتصال بدعم نقطة النهاية ل Microsoft Defender
+title: الاتصال Microsoft Defender لنقطة النهاية الدعم
+description: تعرف على كيفية الاتصال Microsoft Defender لنقطة النهاية الدعم
 keywords: الدعم، جهة الاتصال، الدعم الأول، الحلول، المشاكل، حالة الاتصال
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,21 +14,21 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 60a389d2422a2d3b2f50f77bc978f9f9bbc4a087
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: bbf7be489f969007badb4d00fb25ce22eb991f55
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63583042"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475334"
 ---
-# <a name="contact-microsoft-defender-for-endpoint-support"></a>الاتصال بدعم نقطة النهاية ل Microsoft Defender
+# <a name="contact-microsoft-defender-for-endpoint-support"></a>الاتصال Microsoft Defender لنقطة النهاية الدعم
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -56,11 +56,11 @@ ms.locfileid: "63583042"
 
 1. النقر فوق علامة استفهام في الجزء العلوي الأيمن من المدخل، ثم النقر فوق "دعم Microsoft":
 
-    :::image type="content" source="../../media/contactsupport.png" alt-text="دعم Microsoft.":::
+   :::image type="content" source="../../media/contactsupport.png" alt-text="أيقونة دعم Microsoft في مدخل Microsoft 365 Defender" lightbox="../../media/contactsupport.png":::
 
 2. هل تريد النقر فوق **هل تحتاج إلى مساعدة؟**  في الجزء السفلي الأيسر من مدخل Microsoft 365 Defender:
 
-    ![صورة لزر الحاجة إلى المساعدة.](images/need-help-option.png)
+   :::image type="content" source="images/need-help-option.png" alt-text="الزر &quot;بحاجة إلى مساعدة&quot;" lightbox="images/need-help-option.png":::
 
 في عنصر واجهة المستخدم، سيتم عرض خيارين:
 
@@ -71,7 +71,7 @@ ms.locfileid: "63583042"
 
 يتضمن هذا الخيار المقالات التي قد تكون مرتبطة بالسؤال الذي قد تسأله. ما عليك سوى بدء كتابة السؤال في مربع البحث وستطرح المقالات ذات الصلة ببحثك.
 
-:::image type="content" source="../../media/contactsupport1.png" alt-text="كيف يمكننا مساعدتك؟":::
+:::image type="content" source="../../media/contactsupport1.png" alt-text="كيف يمكننا مساعدتك؟" lightbox="../../media/contactsupport1.png":::
 
 في حال لم تكن المقالات المقترحة كافية، يمكنك فتح طلب خدمة.
 
@@ -84,9 +84,7 @@ ms.locfileid: "63583042"
 
 ### <a name="contact-support"></a>الاتصال بالدعم
 
-:::image type="content" source="../../media/contactsupport2.png" alt-text="اتصل بالدعم 2."::: </br>
-
-:::image type="content" source="../../media/contactsupport2.png" alt-text="الاتصال بالدعم 2":::
+:::image type="content" source="../../media/contactsupport2.png" alt-text="جهة الاتصال بالدعم 2" lightbox="../../media/contactsupport2.png"::: </br>
 
 1. قم بتعبئة عنوان ووصف المشكلة التي تواجهها، رقم الهاتف وعنوان البريد الإلكتروني حيث يمكننا الوصول إليك.
 2. (اختياري) قم بتضمين ما يصل إلى خمسة مرفقات ذات صلة بهذه المشكلة لتوفير سياق إضافي حالة الدعم.

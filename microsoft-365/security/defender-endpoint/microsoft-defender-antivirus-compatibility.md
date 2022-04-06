@@ -18,12 +18,12 @@ ms.date: 03/16/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: be29874a087936c7131492bde1a3f541e7d00f43
-ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
+ms.openlocfilehash: e8a1e08242ab3f884115c414f8a1ba80f5f2aa17
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64645067"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507066"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>برنامج الحماية من الفيروسات من Microsoft Defender التوافق مع منتجات الأمان الأخرى
 

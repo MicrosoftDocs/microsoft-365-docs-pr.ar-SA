@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: يمكن للمسؤولين التعرف على ميزات مكافحة الانتحال المتوفرة في Exchange Online Protection (EOP)، والتي يمكن أن تساعد في الحد من هجمات التصيد الاحتيالي من المرسلين والمجالات المخادعة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b93f2e1543a70ca7b5dde8ab5e83d48fba5f5a5e
-ms.sourcegitcommit: e246725b0935067aad886530d5178972c0f895d7
+ms.openlocfilehash: 140ed15b793b5d6b74b39a35b854b7432a658bc3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "63565920"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475158"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>الحماية من ال انتحال في EOP
 
@@ -35,7 +35,7 @@ ms.locfileid: "63565920"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 في Microsoft 365 المؤسسات التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection (EOP) مستقلة بدون علب بريد Exchange Online، يتضمن EOP ميزات للمساعدة في حماية مؤسستك من المرسلين المتزيفين (التزييف).
@@ -48,24 +48,24 @@ ms.locfileid: "63565920"
 
   يقوم EOP بتحليل الرسائل التي لا يمكن مصادقتها وحظرها من خلال الجمع بين أساليب مصادقة البريد الإلكتروني القياسية وتقنيات سمعة المرسل.
 
-  ![تدقيقات مكافحة انتحال EOP.](../../media/eop-anti-spoofing-protection.png)
+  :::image type="content" source="../../media/eop-anti-spoofing-protection.png" alt-text="التحقق من مكافحة انتحال EOP" lightbox="../../media/eop-anti-spoofing-protection.png":::
 
 - **معلومات استخبارية** منتحلة: راجع الرسائل المنتحلة من المرسلين في المجالات الداخلية والخارجية خلال آخر 7 أيام، واسمح لهؤلاء المرسلين أو حظرهم. لمزيد من المعلومات، راجع [معلومات المعلومات المنتحلة في EOP](learn-about-spoof-intelligence.md).
 
 - السماح بالمرسلين المنتحلين أو حظرهم في قائمة السماح **/** الحظر للمستأجر: عندما تطغى على القرار في معلومات المعلومات المنتحلة، يتحول المرسل المزلوف إلى إدخال السماح أو الحظر اليدوي الذي يظهر فقط على علامة التبويب انتحال  في قائمة السماح/الحظر للمستأجر. يمكنك أيضا إنشاء إدخالات السماح أو الحظر يدويا للمرسلين المنتحلين قبل اكتشافهم بواسطة المعلومات المنتحلة. لمزيد من المعلومات، راجع [إدارة قائمة السماح/الحظر للمستأجر في EOP](tenant-allow-block-list.md).
 
-- **سياسات مكافحة التصيد** الاحتيالي: في EOP و Microsoft Defender for Office 365، تحتوي سياسات مكافحة التصيد الاحتيالي على إعدادات مكافحة الخادعة التالية:
+- **سياسات مكافحة التصيد** الاحتيالي: في EOP Microsoft Defender لـ Office 365، تحتوي سياسات مكافحة التصيد الاحتيالي على إعدادات مكافحة الخادعة التالية:
   - تشغيل المعلومات المنتحلة أو إيقاف تشغيلها.
   - تشغيل تحديد هوية المرسل غير المأكد في Outlook أو إيقاف تشغيله.
   - حدد الإجراء للمرسلين المحظورين الذين تم اانتحالهم.
 
   لمزيد من المعلومات، راجع [انتحال الإعدادات في سياسات مكافحة التصيد الاحتيالي](set-up-anti-phishing-policies.md#spoof-settings).
 
-  **ملاحظة**: تحتوي سياسات مكافحة التصيد الاحتيالي في Defender for Office 365 على حماية إضافية، بما في ذلك **حماية انتحال** الشخصية. لمزيد من المعلومات، راجع [الإعدادات الحصرية في سياسات](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) مكافحة التصيد الاحتيالي في Microsoft Defender Office 365.
+  **ملاحظة**: تحتوي سياسات مكافحة التصيد الاحتيالي في Defender لـ Office 365 على حماية إضافية، بما في ذلك **حماية انتحال** الشخصية. لمزيد من المعلومات، راجع [الإعدادات الحصرية في سياسات](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365.
 
 - **تقرير الاكتشافات المنتحلة**: لمزيد من المعلومات، [](view-email-security-reports.md#spoof-detections-report)راجع تقرير الكشفات المنتحلة.
 
-  **ملاحظة**: يمكن ل Office 365 في المؤسسات استخدام عمليات الكشف في الوقت الحقيقي (الخطة 1) أو "مستكشف التهديدات" (الخطة 2) لعرض معلومات حول محاولات التصيد الاحتيالي. لمزيد من المعلومات، [راجع Microsoft 365 التهديدات والرد عليها](office-365-ti.md).
+  **ملاحظة**: Defender لـ Office 365 المؤسسات أيضا استخدام عمليات الكشف في الوقت الحقيقي (الخطة 1) أو مستكشف التهديدات (الخطة 2) لعرض معلومات حول محاولات التصيد الاحتيالي. لمزيد من المعلومات، [راجع Microsoft 365 التهديدات والرد عليها](office-365-ti.md).
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>كيفية استخدام الخادعة في هجمات التصيد الاحتيالي
 

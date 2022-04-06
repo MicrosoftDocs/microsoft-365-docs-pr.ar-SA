@@ -1,7 +1,7 @@
 ---
-title: Hello World ل Microsoft Defender ل API لنقطة النهاية
+title: مرحبًا بالعالم ل API Microsoft Defender لنقطة النهاية API
 ms.reviewer: ''
-description: قم بإنشاء مكالمة API نمط 'Hello world' ل Microsoft Defender ل API لنقطة النهاية.
+description: قم بإنشاء مكالمة API نمط 'Hello world' إلى Microsoft Defender لنقطة النهاية API.
 keywords: apis، apis المعتمدة، البحث المتقدم، الاستعلام، microsoft defender atp، microsoft defender لنقطة النهاية
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,21 +16,21 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 55d01dfe6d0b6fd69bf32016b1b5dd585827e168
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: bd8f48e8396225fc03441cfc7c8ed69fa3f378bb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "63571494"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475598"
 ---
-# <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender ل API لنقطة النهاية - Hello World
+# <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender لنقطة النهاية API - مرحبًا بالعالم
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 >هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -51,15 +51,15 @@ ms.locfileid: "63571494"
 
 ### <a name="do-i-need-a-permission-to-connect"></a>هل أحتاج إلى إذن للاتصال؟
 
-بالنسبة إلى مرحلة تسجيل التطبيق، يجب أن يكون لديك دور **مسؤول عام في** مستأجر Azure Active Directory (Azure AD).
+بالنسبة إلى مرحلة تسجيل التطبيق، يجب أن يكون مسؤول عمومي  في مستأجر Azure Active Directory (Azure AD).
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>الخطوة 1 - إنشاء تطبيق في Azure Active Directory
 
-1. سجل دخولك إلى [Azure](https://portal.azure.com) باستخدام **مستخدم المسؤول** العام.
+1. سجل دخولك إلى [Azure](https://portal.azure.com) **باستخدام** مسؤول عمومي المستخدم.
 
 2. انتقل إلى **تسجيلات تطبيق Azure Active Directory** \>  \> **تسجيل جديد**.
 
-   :::image type="content" alt-text="صورة Microsoft Azure والتنقل إلى تسجيل التطبيق." source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="الخيار &quot;تسجيلات التطبيق&quot; ضمن الجزء &quot;إدارة&quot; في مدخل Azure Active Directory"  lightbox="images/atp-azure-new-app2.png":::
 
 3. في نموذج التسجيل، اختر اسما للتطبيق ثم انقر فوق **تسجيل**.
 
@@ -70,11 +70,11 @@ ms.locfileid: "63571494"
      > [!NOTE]
      > لا يظهر WindowsDefenderATP في القائمة الأصلية. ستحتاج إلى بدء كتابة اسمه في مربع النص لكي يظهر.
 
-     :::image type="content" alt-text="صورة الوصول إلى API و API selection1." source="images/add-permission.png" lightbox="images/add-permission.png":::
+     :::image type="content" source="images/add-permission.png" alt-text="الخيار &quot;أذونات API&quot; ضمن الجزء &quot;إدارة&quot; في مدخل Azure Active Directory" lightbox="images/add-permission.png":::
 
    - اختر **أذونات التطبيق** \> **Alert.Read.all >** انقر فوق **إضافة أذونات**.
 
-     :::image type="content" alt-text="صورة الوصول إلى API و API selection2." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
+     :::image type="content" source="images/application-permissions.png" alt-text="نوع الإذن و جزء الإعدادات في صفحة طلب أذونات API" lightbox="images/application-permissions.png":::
 
      > [!IMPORTANT]
      > يجب تحديد الأذونات ذات الصلة. "قراءة كل التنبيهات" هو مثال فقط!
@@ -90,7 +90,7 @@ ms.locfileid: "63571494"
    > [!NOTE]
    > في كل مرة تضيف فيها إذنا، يجب النقر فوق **منح الموافقة** على الإذن الجديد لكي يتم التنفيذ.
 
-   ![صورة لمنح الأذونات.](images/grant-consent.png)
+   :::image type="content" source="images/grant-consent.png" alt-text="خيار الموافقة على منح الإذن في مدخل Azure Active Directory" lightbox="images/grant-consent.png":::
 
 6. أضف سرية إلى التطبيق.
 
@@ -99,13 +99,13 @@ ms.locfileid: "63571494"
     > [!IMPORTANT]
     > بعد النقر فوق إضافة، **انسخ القيمة السرية التي تم إنشاؤها**. لن تتمكن من استرداده بعد المغادرة!
 
-    ![صورة لمفتاح إنشاء تطبيق.](images/webapp-create-key2.png)
+    :::image type="content" source="images/webapp-create-key2.png" alt-text="عنصر القائمة & &quot;&&quot; في الجزء &quot;إدارة&quot; في مدخل Azure Active Directory" lightbox="images/webapp-create-key2.png":::
 
 7. اكتب "معرّف التطبيق" وم ID المستأجر.
 
    على صفحة التطبيق، انتقل إلى **نظرة عامة** ونسخ ما يلي:
 
-   ![صورة لم id التطبيق الذي تم إنشاؤه.](images/app-and-tenant-ids.png)
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="جزء تفاصيل التطبيق ضمن عنصر القائمة نظرة عامة في مدخل Azure Active Directory" lightbox="images/app-and-tenant-ids.png":::
 
 تم! لقد سجلت تطبيقا بنجاح!
 
@@ -143,7 +143,7 @@ ms.locfileid: "63571494"
   - اللصق في المربع العلوي.
   - ابحث عن مقطع "الأدوار". ابحث عن _الدور Alert.Read.All_ .
 
-  :::image type="content" alt-text="صورة jwt.ms." source="images/api-jwt-ms.png" lightbox="images/api-jwt-ms.png":::
+  :::image type="content" source="images/api-jwt-ms.png" alt-text="جزء الرمز المميز المفكك jwt.ms" lightbox="images/api-jwt-ms.png":::
 
 ### <a name="lets-get-the-alerts"></a>يتيح الحصول على التنبيهات!
 
@@ -196,6 +196,6 @@ ms.locfileid: "63571494"
 
 ## <a name="related-topic"></a>موضوع ذو صلة
 
-- [واجهات برمجة تطبيقات Microsoft Defender لنقطة النهاية](exposed-apis-list.md)
-- [الوصول إلى Microsoft Defender لنقطة النهاية باستخدام سياق التطبيق](exposed-apis-create-app-webapp.md)
-- [الوصول إلى Microsoft Defender لنقطة النهاية باستخدام سياق المستخدم](exposed-apis-create-app-nativeapp.md)
+- [Microsoft Defender لنقطة النهاية واجهات برمجة التطبيقات](exposed-apis-list.md)
+- [الوصول Microsoft Defender لنقطة النهاية مع سياق التطبيق](exposed-apis-create-app-webapp.md)
+- [الوصول Microsoft Defender لنقطة النهاية مع سياق المستخدم](exposed-apis-create-app-nativeapp.md)

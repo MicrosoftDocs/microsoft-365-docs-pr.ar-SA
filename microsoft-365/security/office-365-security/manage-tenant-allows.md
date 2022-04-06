@@ -16,12 +16,12 @@ ms.collection:
 description: يمكن للمسؤولين التعرف على كيفية تكوين السماح في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3823290e9f239b14e4bf97fe1ae8ef7020561697
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 755a23d7cddbeb2943809681fc90556a2adac25b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63583374"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475510"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>السماح بإضافة في قائمة السماح/الحظر للمستأجر
 
@@ -29,7 +29,7 @@ ms.locfileid: "63583374"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 لا يمكن للمسؤولين إضافة السماح مباشرة إلى قائمة السماح/الحظر للمستأجر. بدلا من ذلك، يمكنك استخدام عملية إرسال المسؤول لإرسال الرسالة التي تم حظرها بحيث تضاف عناوين URL والملفات و/أو المرسلين المناظرين إلى قائمة السماح/الحظر للمستأجر. إذا لم يحدث أي كتلة من الملف أو URL أو المرسل، لن يتم إنشاء السماح. في معظم الحالات التي تم فيها تحديد الرسالة على أنها إيجابية خاطئة تم حظرها بشكل غير صحيح، يتم الاحتفاظ ب السماح طالما لزم الأمر لإعطاء وقت النظام للسماح لهم بشكل طبيعي.
@@ -55,9 +55,7 @@ ms.locfileid: "63583374"
 
 7. عند الانتهاء، انقر فوق الزر **إرسال** .
 
-> [!div class="mx-imgBorder"]
 > ![إرسال البرامج الضارة إلى Microsoft لتحليلها على سبيل المثال.](../../media/admin-submission-allow-messages.png)
-
 ## <a name="add-url-allows-using-the-submissions-portal"></a>تسمح "إضافة عنوان URL" باستخدام مدخل "الواجبات المرسلة"
 
 السماح عناوين URL على صفحة **"** الواجبات المرسلة" في Microsoft 365 Defender.
@@ -78,7 +76,6 @@ ms.locfileid: "63583374"
 
 > [!div class="mx-imgBorder"]
 > ![إرسال عنوان URL للتحليل.](../../media/submit-url-for-analysis.png)
-
 ## <a name="add-file-allows-using-the-submissions-portal"></a>يسمح "إضافة ملف" باستخدام مدخل "الواجبات المرسلة"
 
 السماح للملفات على **صفحة "الواجبات** المرسلة" في Microsoft 365 Defender.

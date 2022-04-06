@@ -1,5 +1,5 @@
 ---
-title: أمان البريد الإلكتروني باستخدام "مستكشف التهديدات" في Microsoft Defender Office 365
+title: أمان البريد الإلكتروني باستخدام "مستكشف التهديدات" في Microsoft Defender لـ Office 365
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -17,14 +17,14 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3ee97c54174fc7aaa2cd6d653dcd9fdd8298376d
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: da555769cbff177fff7de4ee4a25908e1eee3782
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63578224"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475114"
 ---
-# <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>أمان البريد الإلكتروني باستخدام "مستكشف التهديدات" في Microsoft Defender Office 365
+# <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>أمان البريد الإلكتروني باستخدام "مستكشف التهديدات" في Microsoft Defender لـ Office 365
 
 في هذه المقالة:
 
@@ -39,7 +39,7 @@ ms.locfileid: "63578224"
 
 **ينطبق على:**
 
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## <a name="view-malware-detected-in-email"></a>عرض البرامج الضارة التي تم الكشف عنها في البريد الإلكتروني
@@ -56,13 +56,13 @@ ms.locfileid: "63578224"
 
 3. انقر **فوق مرسل**، ثم اختر **تقنية الكشف** \> **الأساسي** في القائمة المنسدل.
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="تقنية الكشف عن البرامج الضارة.":::
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech-newimg.png" alt-text="تقنية الكشف عن البرامج الضارة" lightbox="../../media/exploreremailmalwaredetectiontech-newimg.png":::
 
    تتوفر تقنيات الكشف الخاصة بك الآن ك عوامل تصفية للتقرير.
 
 4. اختر خيارا، ثم انقر فوق **تحديث** لتطبيق عامل التصفية هذا (لا يتم تحديث نافذة المستعرض).
 
-   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="تقنية الكشف المحددة.":::
+   :::image type="content" source="../../media/exploreremailmalwaredetectiontech2-new.png" alt-text="تقنية الكشف المحددة" lightbox="../../media/exploreremailmalwaredetectiontech2-new.png":::
 
    يتم تحديث التقرير لإظهار النتائج التي كشف عنها البرنامج الضار في البريد الإلكتروني، باستخدام خيار التقنية الذي حددته. من هنا، يمكنك إجراء المزيد من التحليلات.
 
@@ -79,7 +79,7 @@ ms.locfileid: "63578224"
 4. قم بالتمرير لأسفل قائمة الخيارات للذهاب إلى المقطع **بدء الإرسال** الجديد، ثم حدد **تقرير نظيف**. تظهر منتحلة من فوقها.
 
    > [!div class="mx-imgBorder"]
-   > ![الخيار "تنظيف التقرير" في "المستكشف".](../../media/report-clean-option-explorer.png) 
+   > :::image type="content" source="../../media/report-clean-option-explorer.png" alt-text="الخيار &quot;تنظيف التقرير&quot; في المستكشف" lightbox="../../media/report-clean-option-explorer.png":::
 
 5. قم ب تبديل شريط التمرير إلى **"عند"** من القائمة المنسدل، حدد عدد الأيام التي تريد فيها إزالة الرسالة، وأضف ملاحظة إذا لزم الأمر، ثم حدد **إرسال**. 
 
@@ -94,13 +94,13 @@ ms.locfileid: "63578224"
 2. في **القائمة** المنسدل عرض، اختر **البريد الإلكتروني التصيد** \> **الاحتيالي**.
 
    > [!div class="mx-imgBorder"]
-   > ![القائمة "عرض" ل "المستكشف" في سياق التصيد الاحتيالي.](../../media/ExplorerViewEmailPhishMenu.png)
+   > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="القائمة &quot;عرض&quot; ل &quot;المستكشف&quot; في سياق التصيد الاحتيالي" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
 
 3. انقر **فوق مرسل**، ثم اختر **عناوين URL** \> **انقر فوق قرار** في القائمة المنسدل.
 
 4. في الخيارات التي تظهر، حدد أحد الخيارات أو أكثر، مثل تم  الحظر والتجاوز الحظر، ثم **انقر فوق تحديث** (لا تحديث نافذة المستعرض).
 
-    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="عناوين URL والنقر فوق الأحكام.":::
+    :::image type="content" source="../../media/threatexploreremailphishclickverdict-new.png" alt-text="عناوين URL والنقر فوق الأحكام" lightbox="../../media/threatexploreremailphishclickverdict-new.png":::
 
    يتم تحديث التقرير لإظهار جدولي URL مختلفين على علامة التبويب **عناوين URL** ضمن التقرير:
 
@@ -111,7 +111,7 @@ ms.locfileid: "63578224"
    يظهر جدولا URL عناوين URL الرئيسية في رسائل البريد الإلكتروني التصيد الاحتيالي من خلال إجراء التسليم وموقعه. تعرض الجداول نقرات URL التي تم حظرها أو زيارتها على الرغم من التحذير، حتى تتمكن من رؤية الارتباطات السيئة المحتملة التي تم تقديمها للمستخدمين والنقر فوقها. من هنا، يمكنك إجراء المزيد من التحليلات. على سبيل المثال، أسفل المخطط، يمكنك رؤية عناوين URL العلوية في رسائل البريد الإلكتروني التي تم حظرها في بيئة مؤسستك.
 
    > [!div class="mx-imgBorder"]
-   > ![عناوين URL المستكشف التي تم حظرها.](../../media/ExplorerPhishClickVerdictURLs.png)
+   > :::image type="content" source="../../media/ExplorerPhishClickVerdictURLs.png" alt-text="عناوين URL المستكشف التي تم حظرها" lightbox="../../media/ExplorerPhishClickVerdictURLs.png":::
 
    حدد عنوان URL لعرض معلومات أكثر تفصيلا.
 
@@ -134,7 +134,7 @@ ms.locfileid: "63578224"
 ## <a name="start-automated-investigation-and-response"></a>بدء التحقيق التلقائي والاستجابة
 
 > [!NOTE]
-> تتوفر قدرات الاستجابة والتحري التلقائي في *Microsoft Defender Office 365 2* *Office 365 E5*.
+> تتوفر إمكانات الاستجابة والتحري التلقائي في Microsoft Defender لـ Office 365 *2* *Office 365 E5*.
 
 [يمكن أن توفر الاستجابة والتحريات](automated-investigation-response-office.md) التلقائية وقت فريق عمليات الأمان والجهد الذي بذلته في التحقيق في الهجمات الإلكترونية وتخفيفها. بالإضافة إلى تكوين التنبيهات التي يمكنها تشغيل مصنف أمان، يمكنك بدء عملية تحقيق واستجابة تلقائية من طريقة عرض في المستكشف. للحصول على التفاصيل، راجع [مثال: يقوم مسؤول الأمان بتشغيل تحقيق من المستكشف](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 

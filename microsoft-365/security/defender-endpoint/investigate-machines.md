@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b707a6f684df6b9888fb8f2d50c4bba9a6dd3195
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 71755add523b3426d144f748ab3582e3a3975dc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63573372"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475202"
 ---
-# <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>التحقق من الأجهزة في قائمة أجهزة نقطة النهاية ل Microsoft Defender
+# <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>التحقق من الأجهزة في Microsoft Defender لنقطة النهاية الأجهزة
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
@@ -53,7 +53,7 @@ ms.locfileid: "63573372"
 - علامات التبويب (نظرة عامة، تنبيهات، مخطط زمني، توصيات الأمان، مخزون البرامج، نقاط الضعف المكتشفة، KBs مفقودة)
 - البطاقات (التنبيهات النشطة، المستخدمون الذين سجلوا دخولهم، تقييم الأمان)
 
-![صورة ل طريقة عرض الجهاز.](images/specific-device.png)
+:::image type="content" source="images/specific-device.png" alt-text="طريقة عرض الجهاز" lightbox="images/specific-device.png":::
 
 > [!NOTE]
 > نظرا لقيود المنتج، لا يعتبر ملف تعريف الجهاز كل الدلائل الإلكترونية عند تحديد الإطار الزمني 'آخر رؤية' (كما هو نارى على صفحة الجهاز أيضا).
@@ -91,13 +91,13 @@ ms.locfileid: "63573372"
 
 تعرض **علامة** التبويب نظرة عامة [بطاقات](#cards) التنبيهات النشطة والمستخدمين المسجلين وتقييم الأمان.
 
-![صورة ل علامة التبويب نظرة عامة على صفحة الجهاز.](images/overview-device.png)
+:::image type="content" source="images/overview-device.png" alt-text="علامة التبويب &quot;نظرة عامة&quot; على صفحة الجهاز" lightbox="images/overview-device.png":::
 
 ### <a name="alerts"></a>التنبيهات
 
 توفر **علامة التبويب** تنبيهات قائمة بالتنبيهات المقترنة بجهاز. هذه القائمة هي إصدار تمت تصفيته من قائمة [](alerts-queue.md)انتظار التنبيهات، وهي تعرض وصفا مختصرا للتنبيه، الخطورة (عالية، متوسطة، منخفضة، معلوماتية)، الحالة في قائمة الانتظار (جديدة، حال التقدم، تم الحل)، تصنيف (لم يتم تعيينه، تنبيه خاطئ، تنبيه حقيقي)، حالة التحقيق، فئة التنبيه، من يعالج التنبيه، والنشاط الأخير. يمكنك أيضا تصفية التنبيهات.
 
-![صورة تنبيهات ذات صلة بجهاز.](images/alerts-device.png)
+:::image type="content" source="images/alerts-device.png" alt-text="علامة تبويب التنبيهات المرتبطة بجهاز" lightbox="images/alerts-device.png":::
 
 عندما يتم تحديد أيقونة الدائرة إلى يسار التنبيه، تظهر اظهور منير. من هذه اللوحة، يمكنك إدارة التنبيه وعرض المزيد من التفاصيل مثل رقم الحادث والأجهزة ذات الصلة. يمكن تحديد تنبيهات متعددة في كل مرة.
 
@@ -118,7 +118,7 @@ ms.locfileid: "63573372"
 > - [5031](/windows/security/threat-protection/auditing/event-5031) - تم حظر التطبيق من قبول الاتصالات الواردة على الشبكة
 > - [5157](/windows/security/threat-protection/auditing/event-5157) - اتصال تم حظره
 
-![صورة مخطط زمني للجهاز مع أحداث.](images/timeline-device.png)
+:::image type="content" source="images/timeline-device.png" alt-text="المخطط الزمني للجهاز مع الأحداث" lightbox="images/timeline-device.png":::
 
 تتضمن بعض الوظائف:
 
@@ -146,30 +146,30 @@ ms.locfileid: "63573372"
 
 لفحص الحدث والأحداث ذات الصلة بشكل أكبر، يمكنك بسرعة تشغيل استعلام بحث [](advanced-hunting-overview.md) متقدم عن طريق تحديد البحث عن **الأحداث ذات الصلة**. سيرجع الاستعلام الحدث المحدد وقائمة الأحداث الأخرى التي وقعت في نفس الوقت تقريبا في نقطة النهاية نفسها.
 
-![صورة لوحة تفاصيل الحدث.](images/event-details.png)
+:::image type="content" source="images/event-details.png" alt-text="لوحة تفاصيل الحدث" lightbox="images/event-details.png":::
 
 ### <a name="security-recommendations"></a>توصيات الأمان
 
-**يتم إنشاء توصيات** الأمان من Microsoft Defender لقابلية إدارة المخاطر & [نقطة](tvm-dashboard-insights.md) النهاية. سيعرض تحديد توصية لوحة حيث يمكنك عرض التفاصيل ذات الصلة مثل وصف التوصية والمخاطر المحتملة المقترنة ب عدم تقديمها. راجع [توصيات الأمان](tvm-security-recommendation.md) للحصول على التفاصيل.
+**يتم إنشاء توصيات** الأمان من Microsoft Defender لنقطة النهاية [المخاطر & إدارة الثغرات](tvm-dashboard-insights.md). سيعرض تحديد توصية لوحة حيث يمكنك عرض التفاصيل ذات الصلة مثل وصف التوصية والمخاطر المحتملة المقترنة ب عدم تقديمها. راجع [توصيات الأمان](tvm-security-recommendation.md) للحصول على التفاصيل.
 
-![صورة ل علامة تبويب توصيات الأمان.](images/security-recommendations-device.png)
+:::image type="content" source="images/security-recommendations-device.png" alt-text="علامة التبويب &quot;توصيات الأمان&quot;" lightbox="images/security-recommendations-device.png":::
 
 ### <a name="software-inventory"></a>مخزون البرامج
 
 تتيح **لك علامة تبويب** مخزون البرامج عرض البرامج على الجهاز، إلى جانب أي نقاط ضعف أو تهديدات. سيأخذك تحديد اسم البرنامج إلى صفحة تفاصيل البرنامج حيث يمكنك عرض توصيات الأمان ونقاط الضعف المكتشفة والأجهزة المثبتة وتوزيع الإصدار. راجع [مخزون البرامج](tvm-software-inventory.md) للحصول على التفاصيل
 
-![صورة ل علامة تبويب مخزون البرامج.](images/software-inventory-device.png)
+:::image type="content" source="images/software-inventory-device.png" alt-text="علامة التبويب &quot;مخزون البرامج&quot;" lightbox="images/software-inventory-device.png":::
 
 ### <a name="discovered-vulnerabilities"></a>نقاط الضعف المكتشفة
 
 تعرض **علامة التبويب نقاط** الضعف المكتشفة معرفة اسم نقاط الضعف المكتشفة على الجهاز ومدى خطورتها وتهديدها. سيعرض تحديد نقاط الضعف المحددة وصفا وتفاصيل.
 
-![صورة ل علامة التبويب نقاط الضعف المكتشفة.](images/discovered-vulnerabilities-device.png)
+:::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="علامة التبويب &quot;نقاط الضعف المكتشفة&quot;" lightbox="images/discovered-vulnerabilities-device.png":::
 
 ### <a name="missing-kbs"></a>KBs مفقود
 **تسرد علامة التبويب KBs** المفقودة تحديثات الأمان المفقودة للجهاز.
 
-![صورة علامة تبويب kbs مفقودة.](images/missing-kbs-device.png)
+:::image type="content" source="images/missing-kbs-device.png" alt-text="علامة التبويب &quot;KBs مفقودة&quot;" lightbox="images/missing-kbs-device.png":::
 
 ## <a name="cards"></a>البطاقات
 
@@ -177,7 +177,7 @@ ms.locfileid: "63573372"
 
 تعرض **بطاقة Azure Advanced Threat Protection** نظرة عامة عالية المستوى على التنبيهات ذات الصلة للجهاز ومستوى المخاطر الخاص بها، إذا قمت بتمكين ميزة Microsoft Defender for Identity، وكانت هناك أي تنبيهات نشطة. يتوفر المزيد من المعلومات في التنقل لأسفل في "التنبيهات".
 
-![صورة بطاقة التنبيهات النشطة.](images/risk-level-small.png)
+:::image type="content" source="images/risk-level-small.png" alt-text="بطاقة التنبيهات النشطة" lightbox="images/risk-level-small.png":::
 
 > [!NOTE]
 > ستحتاج إلى تمكين التكامل على كل من Microsoft Defender for Identity و Defender ل Endpoint لاستخدام هذه الميزة. في Defender for Endpoint، يمكنك تمكين هذه الميزة في الميزات المتقدمة. لمزيد من المعلومات حول كيفية تمكين الميزات المتقدمة، راجع [تشغيل الميزات المتقدمة](advanced-features.md).
@@ -186,7 +186,7 @@ ms.locfileid: "63573372"
 
 تعرض **بطاقة المستخدمون** المسجلون عدد المستخدمين الذين سجلوا دخولهم خلال ال 30 يوما الماضية، إلى جانب المستخدمين الأكثر تكرارا والأقل تكرارا. يفتح تحديد الارتباط "رؤية جميع المستخدمين" جزء التفاصيل، الذي يعرض معلومات مثل نوع المستخدم، ونوع تسجيل الدخول، ومتى تم عرض المستخدم للمرة الأولى والأخيرة. لمزيد من المعلومات، راجع [التحقق من كيانات المستخدمين](investigate-user.md).
 
-![صورة ل جزء تفاصيل المستخدم.](images/logged-on-users.png)
+:::image type="content" source="images/logged-on-users.png" alt-text="جزء تفاصيل المستخدم" lightbox="images/logged-on-users.png":::
 
 > [!NOTE]
 > يتم حساب قيمة المستخدم "الأكثر تكرارا" فقط استنادا إلى دليل المستخدمين الذين سجلوا دخولهم بشكل تفاعلي بنجاح.
@@ -196,13 +196,13 @@ ms.locfileid: "63573372"
 
 تعرض **بطاقة تقييمات الأمان** مستوى التعرض العام وتوصيات الأمان والبرامج المثبتة ونقاط الضعف التي تم اكتشافها. يتم تحديد مستوى التعرض للجهاز من خلال التأثير التراكمي لتوصيات الأمان المعلقة الخاصة به.
 
-![صورة لبطاقة تقييمات الأمان.](images/security-assessments.png)
+:::image type="content" source="images/security-assessments.png" alt-text="بطاقة تقييمات الأمان" lightbox="images/security-assessments.png":::
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
-- [عرض قائمة انتظار تنبيهات نقطة النهاية في Microsoft Defender وتنظيمها](alerts-queue.md)
-- [إدارة تنبيهات Microsoft Defender لنقطة النهاية](manage-alerts.md)
-- [التحقق من تنبيهات نقطة النهاية ل Microsoft Defender](investigate-alerts.md)
+- [عرض قائمة انتظار تنبيهات Microsoft Defender لنقطة النهاية وتنظيمها](alerts-queue.md)
+- [إدارة Microsoft Defender لنقطة النهاية التنبيهات](manage-alerts.md)
+- [التحقق Microsoft Defender لنقطة النهاية التنبيهات](investigate-alerts.md)
 - [التحقق من ملف مقترن بتنبيه Defender لنقطة النهاية](investigate-files.md)
 - [التحقق من عنوان IP مقترن بتنبيه Defender لنقطة النهاية](investigate-ip.md)
 - [التحقق من مجال مقترن بتنبيه Defender لنقطة النهاية](investigate-domain.md)

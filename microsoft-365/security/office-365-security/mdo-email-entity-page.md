@@ -1,5 +1,5 @@
 ---
-title: صفحة كيان البريد الإلكتروني ل Microsoft Defender Office 365 الإلكتروني
+title: صفحة Microsoft Defender لـ Office 365 كيان البريد الإلكتروني
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: يمكن لعملاء Microsoft Defender Office 365 E5 و P1 و P2 الآن الحصول على طريقة عرض 360 درجة لكل بريد إلكتروني باستخدام صفحة كيان البريد الإلكتروني.
-ms.openlocfilehash: 263411d6f0c9931dfd03fbf8b89fd24a86c3c9e6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Microsoft Defender لـ Office 365 يمكن لعملاء E5 و P1 و P2 الآن الحصول على طريقة عرض 360 درجة لكل بريد إلكتروني باستخدام صفحة كيان البريد الإلكتروني.
+ms.openlocfilehash: d75ebd9b54fc5e7919154a4f65e0d5fc0e77e117
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63573211"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475444"
 ---
 # <a name="the-email-entity-page"></a>صفحة كيان البريد الإلكتروني
 
@@ -32,7 +32,7 @@ ms.locfileid: "63573211"
 - [استخدام علامات تبويب صفحات كيان البريد الإلكتروني](#use-email-entity-page-tabs)
 - [صفحة كيان البريد الإلكتروني جديدة](#new-to-the-email-entity-page)
 
-يمكن لمسؤولي Microsoft Defender Office 365 E5 و Defender Office P1 و P2 عرض البريد الإلكتروني بزهاء 360 درجة باستخدام صفحة **كيان البريد الإلكتروني**. تم إنشاء صفحة البريد الإلكتروني هذه لتحسين المعلومات التي يتم تسليمها في قائمة "تفاصيل البريد الإلكتروني ["](threat-explorer-views.md) الخاصة ب "مستكشف التهديدات".
+يمكن لمسؤولي Microsoft Defender لـ Office 365 E5 و Defender Office P1 و P2 عرض البريد الإلكتروني بزهاء 360 درجة باستخدام صفحة **كيان البريد الإلكتروني**. تم إنشاء صفحة البريد الإلكتروني هذه لتحسين المعلومات التي يتم تسليمها في قائمة "تفاصيل البريد الإلكتروني ["](threat-explorer-views.md) الخاصة ب "مستكشف التهديدات".
 
 ## <a name="reach-the-email-entity-page"></a>الوصول إلى صفحة كيان البريد الإلكتروني
 
@@ -40,9 +40,9 @@ ms.locfileid: "63573211"
 
 في **المستكشف**، حدد موضوع رسالة بريد إلكتروني تقوم بالتحري فيها. سيتم عرض شريط ذهبي في أعلى القائمة fly-out للبريد الإلكتروني لهذا البريد. هذه الدعوة إلى الصفحة الجديدة، تقرأ "جرب صفحة كيان البريد الإلكتروني الجديد مع البيانات المخصبة...". حدد لعرض الصفحة الجديدة.
 
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="سترى شعارا ذهبيا مع الكلمات *جرب صفحة كيان البريد الإلكتروني الجديد مع بيانات غنية* للانتقال إلى التجربة الجديدة.":::
+:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="الشعار الذهبي مع الكلمات *جرب صفحة كيان البريد الإلكتروني الجديد مع البيانات المخصبة* للانتقال إلى التجربة الجديدة" lightbox="../../media/email-entities-1-navigation-to-ee.png":::
 
-:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="يركز هذا الرسم لصفحة كيان البريد الإلكتروني على العناوين التي ستشاهدها. لاحظ أن رأس البريد الإلكتروني معروض هنا.":::
+:::image type="content" source="../../media/email-entities-2-eep.png" alt-text="رسم صفحة كيان البريد الإلكتروني التي تركز على العناوين التي ستشاهدها" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
 > الأذونات اللازمة لعرض هذه الصفحة واستخدامها هي نفسها التي يتم عرضها في **المستكشف**. يجب أن يكون المسؤول عضوا في المسؤول العام أو القارئ العام أو مسؤول الأمان أو قارئ الأمان. لمزيد من المعلومات، راجع [الأذونات في Microsoft 365 Defender المدخل](permissions-microsoft-365-security-center.md).
@@ -53,15 +53,15 @@ ms.locfileid: "63573211"
 
 1. توجد الحقول الأكثر تطلبا على الجانب الأيمن من عملية الخروج. هذه التفاصيل 'ملصقة'، مما يعني أنها ارتساء إلى اليمين بغض النظر عن علامة التبويب التي تنتقل إليها في باقي جزء التنقل.
 
-    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="رسم لصفحة كيان البريد الإلكتروني مع تمييز الجانب الأيمن. العنوان والحقائق المتعلقة بتسلم البريد هنا.":::
+    :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="رسم صفحة كيان البريد الإلكتروني مع تمييز الجانب الأيمن" lightbox="../../media/email-entities-3-left-panel.png":::
 
 2. في الزاوية العلوية اليسرى توجد الإجراءات التي يمكن اتخاذها على رسالة بريد إلكتروني. وستتوفر أيضا أي إجراءات يمكن اتخاذها من خلال **المستكشف** من خلال صفحة كيان البريد الإلكتروني.
 
-    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="رسم لصفحة كيان البريد الإلكتروني مع تمييز الجانب ** الأيسر، هذه المرة. توجد إجراءات مثل &quot;معاينة البريد الإلكتروني&quot; و&quot;الانتقال إلى الفحص&quot; هنا.":::
+    :::image type="content" source="../../media/email-entities-5-preview.png" alt-text="رسم صفحة كيان البريد الإلكتروني مع تمييز الجانب الأيسر" lightbox="../../media/email-entities-5-preview.png":::
 
 3. يمكن إجراء تحليل أعمق من خلال الفرز عبر باقي الصفحة. تحقق من تفاصيل الكشف عن البريد الإلكتروني، حالة مصادقة البريد الإلكتروني، ورأسها. يجب البحث في هذه المنطقة على أساس كل حالة على حدة، ولكن المعلومات في علامات التبويب هذه متوفرة لأي بريد إلكتروني.
 
-    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="تتضمن اللوحة الرئيسية لهذه الصفحة رأس البريد الإلكتروني حالة المصادقة.":::
+    :::image type="content" source="../../media/email-entities-4-middle-panel.png" alt-text="اللوحة الرئيسية للصفحة التي تتضمن رأس البريد الإلكتروني حالة المصادقة" lightbox="../../media/email-entities-4-middle-panel.png":::
 
 ### <a name="use-email-entity-page-tabs"></a>استخدام علامات تبويب صفحات كيان البريد الإلكتروني
 
@@ -102,7 +102,7 @@ ms.locfileid: "63573211"
 1. تفاصيل *السلوك* هي عملية تصدير تعرض تفاصيل السلوك مثل الأحداث الدقيقة التي وقعت أثناء عملية التكرير، والملاحظات التي تحتوي على عناوين URL وملفات IPs والمجالات والملفات التي تم العثور عليها أثناء عملية التكرير (ويمكن أن تكون إشكالية أو غير مقبولة). كن على علم، قد لا تكون هناك تفاصيل سلوك ل:
     - حاويات الملفات مثل .zip أو .rar التي تحتوي على ملفات أخرى.
 
-:::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="لقطة شاشة لملخص عملية التكتيؤ تظهر السلسلة والملخص وتفاصيل عملية التكهين ولشاشة الشاشة أسفل العنوان *تحليل أعمق*.":::
+:::image type="content" source="../../media/email-entities-6-detonation-page.png" alt-text="يعرض ملخص عملية الإنتاج السلسلة والملخص وتفاصيل عملية الاجهار ولشاشة الشاشة أسفل العنوان *تحليل أعمق*" lightbox="../../media/email-entities-6-detonation-page.png":::
 
 ### <a name="other-innovations"></a>ابتكارات أخرى
 

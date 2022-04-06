@@ -1,7 +1,7 @@
 ---
-title: نشر مستند إلى Intune ل Microsoft Defender ل Endpoint على Mac
-description: قم بتثبيت Microsoft Defender ل Endpoint على Mac، باستخدام Microsoft Intune.
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، mac، التثبيت، النشر، إلغاء التثبيت، intune، jamf، macos، catalina، mojave، high sierra
+title: نشر مستند إلى Intune Microsoft Defender لنقطة النهاية Mac
+description: ثبت Microsoft Defender لنقطة النهاية Mac، باستخدام Microsoft Intune.
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، التثبيت، النشر، إلغاء التثبيت، intune، jamf، macos، catalina، mojave، high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,24 +15,24 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4979ee5f3953ced1073779fdcabb7eb361d4911a
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: a511405c2d8fb4753debbadf0744d6277639648b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63583159"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475246"
 ---
-# <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>النشر المستند إلى Intune ل Microsoft Defender ل Endpoint على macOS
+# <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>نشر مستند إلى Intune Microsoft Defender لنقطة النهاية على macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
 
-- [Microsoft Defender ل Endpoint على macOS](microsoft-defender-endpoint-mac.md)
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية على macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-يصف هذا الموضوع كيفية نشر Microsoft Defender ل Endpoint على macOS من خلال Intune. يتطلب النشر الناجح إكمال كل الخطوات التالية:
+يصف هذا الموضوع كيفية نشر Microsoft Defender لنقطة النهاية macOS عبر Intune. يتطلب النشر الناجح إكمال كل الخطوات التالية:
 
 1. [تنزيل حزمة الboarding](#download-the-onboarding-package)
 1. [إعداد جهاز العميل](#client-device-setup)
@@ -42,11 +42,11 @@ ms.locfileid: "63583159"
 
 ## <a name="prerequisites-and-system-requirements"></a>المتطلبات الأساسية ومتطلبات النظام
 
-قبل البدء، راجع صفحة [Microsoft Defender ل Endpoint الرئيسية على macOS](microsoft-defender-endpoint-mac.md) للحصول على وصف للمتطلبات الأساسية ومتطلبات النظام الخاصة بالإصدار الحالي للبرنامج.
+قبل البدء، راجع الصفحة الرئيسية Microsoft Defender لنقطة النهاية [macOS](microsoft-defender-endpoint-mac.md) للحصول على وصف للمتطلبات الأساسية ومتطلبات النظام الخاصة بالإصدار الحالي للبرنامج.
 
 ## <a name="overview"></a>نظرة عامة
 
-يلخص الجدول التالي الخطوات التي ستحتاج إلى اتخاذها لنشر Microsoft Defender لنقطة النهاية وإدارتها على أجهزة Mac، عبر Intune. تتوفر خطوات أكثر تفصيلا أدناه.
+يلخص الجدول التالي الخطوات التي ستحتاج إلى اتخاذها لنشر Microsoft Defender لنقطة النهاية على أجهزة Mac، عبر Intune. تتوفر خطوات أكثر تفصيلا أدناه.
 
 <br>
 
@@ -55,12 +55,12 @@ ms.locfileid: "63583159"
 |الخطوة|أسماء ملفات نموذجية|BundleIdentifier|
 |---|---|---|
 |[تنزيل حزمة الboarding](#download-the-onboarding-package)|WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml|com.microsoft.wdav.atp|
-|[الموافقة على ملحق النظام ل Microsoft Defender لنقطة النهاية](#approve-system-extensions)|MDATP_SysExt.xml|N/A|
-|[الموافقة على ملحق Kernel ل Microsoft Defender لنقطة النهاية](#download-the-onboarding-package)|MDATP_KExt.xml|N/A|
-|[منح حق الوصول الكامل للقرص إلى Microsoft Defender لنقطة النهاية](#full-disk-access)|MDATP_tcc_Catalina_or_newer.xml|com.microsoft.wdav.tcc|
+|[الموافقة على ملحق النظام Microsoft Defender لنقطة النهاية](#approve-system-extensions)|MDATP_SysExt.xml|N/A|
+|[الموافقة على ملحق Kernel Microsoft Defender لنقطة النهاية](#download-the-onboarding-package)|MDATP_KExt.xml|N/A|
+|[منح حق الوصول الكامل إلى القرص Microsoft Defender لنقطة النهاية](#full-disk-access)|MDATP_tcc_Catalina_or_newer.xml|com.microsoft.wdav.tcc|
 |[نهج ملحق الشبكة](#network-filter)|MDATP_NetExt.xml|N/A|
 |[تكوين Microsoft AutoUpdate (MAU)](mac-updates.md#intune)|MDATP_Microsoft_AutoUpdate.xml|com.microsoft.autoupdate2|
-|[إعدادات تكوين Microsoft Defender لنقطة النهاية](mac-preferences.md#intune-full-profile) <p> **ملاحظة:** إذا كنت تخطط لتشغيل AV من جهة خارجية ل macOS، فقم بتعيين إلى `passiveMode` `true`.|MDATP_WDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
+|[Microsoft Defender لنقطة النهاية إعدادات التكوين](mac-preferences.md#intune-full-profile) <p> **ملاحظة:** إذا كنت تخطط لتشغيل AV من جهة خارجية ل macOS، فقم بتعيين إلى `passiveMode` `true`.|MDATP_WDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
 |[تكوين إعلامات Microsoft Defender لنقطة النهاية وMS AutoUpdate (MAU)](mac-updates.md)|MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig|com.microsoft.autoupdate2 أو com.microsoft.wdav.tray|
 |
 
@@ -70,9 +70,9 @@ ms.locfileid: "63583159"
 
 1. في Microsoft 365 Defender، **انتقل إلى الإعدادات** \> **إدارة** \> أجهزة نقاط **النهاية** \> **.**
 
-2. قم بتعيين نظام التشغيل إلى **macOS وطريقة** النشر إلى **إدارة أجهزة المحمول / Microsoft Intune**.
+2. قم بتعيين نظام التشغيل إلى **macOS** وطريقة النشر إلى الأجهزة المحمولة إدارة الجهاز **/ Microsoft Intune**.
 
-    ![لقطة شاشة لإعدادات الضبط.](images/macos-install-with-intune.png)
+   :::image type="content" source="images/macos-install-with-intune.png" alt-text="صفحة إعدادات الضبط" lightbox="images/macos-install-with-intune.png":::
 
 3. حدد **تنزيل حزمة التكهيل**. احفظه _WindowsDefenderATPOnboardingPackage.zip_ إلى الدليل نفسه.
 
@@ -92,42 +92,42 @@ ms.locfileid: "63583159"
 
 ## <a name="create-system-configuration-profiles"></a>إنشاء ملفات تعريف تكوين النظام
 
-الخطوة التالية هي إنشاء ملفات تعريف تكوين النظام التي يحتاجها Microsoft Defender لنقطة النهاية.
+الخطوة التالية هي إنشاء ملفات تعريف تكوين النظام التي Microsoft Defender لنقطة النهاية أخرى.
 في مركز [إدارة نقاط النهاية من Microsoft،](https://endpoint.microsoft.com/) افتح **ملفات تعريف تكوين** \> **الأجهزة**.
 
 ### <a name="onboarding-blob"></a>Blob للانصهار
 
-يحتوي ملف التعريف هذا على معلومات ترخيص ل Microsoft Defender لنقطة النهاية. بدون ملف التعريف هذا، سيقرر Microsoft Defender ل Endpoint أنه غير مرخص.
+يحتوي ملف التعريف هذا على معلومات ترخيص Microsoft Defender لنقطة النهاية. بدون ملف التعريف هذا، Microsoft Defender لنقطة النهاية التقرير بأنه غير مرخص.
 
 1. حدد **إنشاء ملف تعريف** ضمن **ملفات تعريف التكوين**.
 1. حدد **PlatformmacOS**=، **اكتب ملف** **التعريفTemplates**=. **اسم القالب**= **مخصص**. انقر **فوق إنشاء**.
 
     > [!div class="mx-imgBorder"]
-    > ![إنشاء ملف تعريف تكوين مخصص.](images/mdatp-6-systemconfigurationprofiles-1.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-1.png" alt-text="صفحة إنشاء ملف تعريف تكوين مخصص" lightbox="images/mdatp-6-systemconfigurationprofiles-1.png":::
 
 1. اختر اسما لملف التعريف، على سبيل المثال، "Defender for Cloud أو Endpoint onboarding for macOS". انقر فوق **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![ملف تعريف تكوين مخصص - الاسم.](images/mdatp-6-systemconfigurationprofiles-2.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-2.png" alt-text="الحقل &quot;اسم ملف تعريف التكوين المخصص&quot;" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
 
 1. اختر اسما لاسم ملف تعريف التكوين، على سبيل المثال، "Defender for Endpoint onboarding for macOS".
 1. اختر [قناة نشر](/mem/intune/fundamentals/whats-new#new-deployment-channel-setting-for-custom-device-configuration-profiles-on-macos-devices).
 1. حدد intune/WindowsDefenderATPOnboarding.xml التي قمت باستخراجها من حزمة التهيئة أعلاه كملف ملف تعريف التكوين.
 
     > [!div class="mx-imgBorder"]
-    > ![استيراد تكوين من ملف لملف تعريف تكوين مخصص.](images/mdatp-6-systemconfigurationprofiles.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles.png" alt-text="استيراد تكوين من ملف لملف تعريف تكوين مخصص" lightbox="images/mdatp-6-systemconfigurationprofiles.png":::
 
 1. انقر فوق **التالي**.
 1. تعيين الأجهزة على علامة **التبويب واجب** . انقر فوق **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![ملف تعريف تكوين مخصص - واجب.](images/mdatp-6-systemconfigurationprofiles-2.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-2.png" alt-text="ملف تعريف التكوين المخصص - الواجب" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
 
 1. مراجعة **وإنشاء.**
 1. افتح **ملفات تعريف** \> **تكوين الأجهزة**، يمكنك رؤية ملف التعريف الذي تم إنشاؤه هناك.
 
     > [!div class="mx-imgBorder"]
-    > ![ملف تعريف تكوين مخصص - تم.](images/mdatp-6-systemconfigurationprofiles-3.png)
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-3.png" alt-text="اكتمال ملف تعريف التكوين المخصص" lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
 
 ### <a name="approve-system-extensions"></a>الموافقة على ملحقات النظام
 
@@ -144,7 +144,7 @@ ms.locfileid: "63583159"
     |com.microsoft.wdav.netext|UBF8T346G9|
 
     > [!div class="mx-imgBorder"]
-    > ![إعدادات ملحق النظام.](images/mac-system-extension-intune2.png)
+    > :::image type="content" source="images/mac-system-extension-intune2.png" alt-text="إعدادات ملحق النظام" lightbox="images/mac-system-extension-intune2.png":::
 
 1. في علامة **التبويب** الواجبات، قم بتعيين ملف التعريف هذا إلى جميع المستخدمين & **كافة الأجهزة**.
 1. راجع ملف تعريف التكوين هذا وأنشئه.
@@ -163,7 +163,7 @@ ms.locfileid: "63583159"
 1. قم **بتعيين معرف الفريق** إلى **UBF8T346G9** وانقر فوق **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![إعدادات ملحقات Kernel.](images/mac-kernel-extension-intune2.png)
+    > :::image type="content" source="images/mac-system-extension-intune2.png" alt-text="إعدادات Kernel لملحق النظام" lightbox="images/mac-system-extension-intune2.png":::
 
 1. في علامة **التبويب** الواجبات، قم بتعيين ملف التعريف هذا إلى جميع المستخدمين & **كافة الأجهزة**.
 1. راجع ملف تعريف التكوين هذا وأنشئه.
@@ -171,9 +171,9 @@ ms.locfileid: "63583159"
 ### <a name="full-disk-access"></a>الوصول إلى القرص الكامل
 
    > [!CAUTION]
-   > يحتوي macOS 10.15 (Catalina) على تحسينات جديدة على الأمان والخصوصية. بدءا من هذا الإصدار، بشكل افتراضي، لن تتمكن التطبيقات من الوصول إلى مواقع معينة على القرص (مثل المستندات أو التنزيلات أو سطح المكتب وغير ذلك) بدون موافقة صريحة. في حالة عدم وجود هذه الموافقة، لن يتمكن Microsoft Defender ل Endpoint من حماية جهازك بشكل كامل.
+   > يحتوي macOS 10.15 (Catalina) على تحسينات جديدة على الأمان والخصوصية. بدءا من هذا الإصدار، بشكل افتراضي، لن تتمكن التطبيقات من الوصول إلى مواقع معينة على القرص (مثل المستندات أو التنزيلات أو سطح المكتب وغير ذلك) بدون موافقة صريحة. في حالة عدم وجود هذه الموافقة، Microsoft Defender لنقطة النهاية غير قادر على حماية جهازك بشكل كامل.
    >
-   > يمنح ملف تعريف التكوين هذا إمكانية الوصول إلى القرص الكامل إلى Microsoft Defender لنقطة النهاية. إذا قمت مسبقا بتكوين Microsoft Defender ل Endpoint من خلال Intune، نوصي بتحديث النشر باستخدام ملف تعريف التكوين هذا.
+   > يمنح ملف تعريف التكوين هذا إمكانية الوصول إلى القرص الكامل Microsoft Defender لنقطة النهاية. إذا قمت مسبقا بتكوين Microsoft Defender لنقطة النهاية Intune، نوصي بتحديث النشر باستخدام ملف تعريف التكوين هذا.
 
 قم [**بتنزيل fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) [من مستودع GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
@@ -181,7 +181,7 @@ ms.locfileid: "63583159"
 
 ### <a name="network-filter"></a>عامل تصفية الشبكة
 
-كجزء من قدرات الكشف عن نقاط النهاية والاستجابة لها، يفحص Microsoft Defender ل Endpoint على نظام التشغيل macOS حركة مرور مآخذ التوصيل ويعيد Microsoft 365 Defender المدخل. يسمح النهج التالي لملحق الشبكة بتنفيذ هذه الوظيفة.
+كجزء من قدرات الكشف عن نقاط النهاية والاستجابة، Microsoft Defender لنقطة النهاية macOS على حركة مرور مآخذ التوصيل ويعيد الإبلاغ عن هذه المعلومات Microsoft 365 Defender المدخل. يسمح النهج التالي لملحق الشبكة بتنفيذ هذه الوظيفة.
 
 قم [**بتنزيل netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) [من مستودع GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
@@ -189,7 +189,7 @@ ms.locfileid: "63583159"
 
 ### <a name="notifications"></a>الإعلامات
 
-يتم استخدام ملف التعريف هذا للسماح ل Microsoft Defender ل Endpoint على macOS والتحديث التلقائي ل Microsoft بعرض الإعلامات في واجهة المستخدم على macOS 10.15 (Catalina) أو أحدث.
+يتم استخدام ملف التعريف هذا للسماح Microsoft Defender لنقطة النهاية macOS و Microsoft Auto Update بعرض الإعلامات في واجهة المستخدم على macOS 10.15 (Catalina) أو أحدث.
 
 قم [**بتنزيل notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) من [مستودع GitHub.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
@@ -200,40 +200,40 @@ ms.locfileid: "63583159"
 بمجرد نشر تغييرات Intune على الأجهزة المسجلة، يمكنك عرضها مدرجة ضمن **حالة** \> **جهاز العرض**:
 
 > [!div class="mx-imgBorder"]
-> ![عرض حالة الجهاز في جهاز العرض.](images/mdatp-7-devicestatusblade.png)
+> :::image type="content" source="images/mdatp-7-devicestatusblade.png" alt-text="طريقة عرض حالة الجهاز" lightbox="images/mdatp-7-devicestatusblade.png":::
 
 ## <a name="publish-application"></a>تطبيق النشر
 
-تمكن هذه الخطوة نشر Microsoft Defender ل Endpoint على الأجهزة التي تم تسجيلها.
+تمكن هذه الخطوة نشر Microsoft Defender لنقطة النهاية على الأجهزة التي تم تسجيلها.
 
 1. في مركز [إدارة نقاط النهاية من Microsoft،](https://endpoint.microsoft.com/) افتح **التطبيقات**.
 
     > [!div class="mx-imgBorder"]
-    > ![جاهز لإنشاء تطبيق.](images/mdatp-8-app-before.png)
+    > :::image type="content" source="images/mdatp-8-app-before.png" alt-text="صفحة نظرة عامة على التطبيق" lightbox="images/mdatp-8-app-before.png":::
 
 1. حدد حسب النظام الأساسي > macOS > إضافة.
 1. اختر **تطبيق** **typemacOS**=، وانقر فوق **تحديد**.
 
     > [!div class="mx-imgBorder"]
-    > ![حدد نوع التطبيق.](images/mdatp-9-app-type.png)
+    > :::image type="content" source="images/mdatp-9-app-type.png" alt-text="نوع التطبيق المحدد" lightbox="images/mdatp-9-app-type.png":::
 
 1. احتفظ بالقيم الافتراضية، وانقر فوق **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![خصائص التطبيق.](images/mdatp-10-properties.png)
+    > :::image type="content" source="images/mdatp-10-properties.png" alt-text="صفحة خصائص التطبيق" lightbox="images/mdatp-10-properties.png":::
 
 1. أضف الواجبات، وانقر فوق **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![لقطة شاشة للمعلومات حول تعيينات Intune.](images/mdatp-11-assignments.png)
+    > :::image type="content" source="images/mdatp-11-assignments.png" alt-text="صفحة معلومات تعيينات Intune" lightbox="images/mdatp-11-assignments.png":::
 
 1. مراجعة **وإنشاء.**
 1. يمكنك زيارة **التطبيقات** \> **حسب النظام الأساسي** \> **macOS** لمشاهدتها في قائمة جميع التطبيقات.
 
     > [!div class="mx-imgBorder"]
-    > ![قائمة التطبيقات.](images/mdatp-12-applications.png)
+    > :::image type="content" source="images/mdatp-12-applications.png" alt-text="صفحة قوائم التطبيق" lightbox="images/mdatp-12-applications.png":::
 
-لمزيد من المعلومات، راجع [إضافة Microsoft Defender ل Endpoint إلى أجهزة macOS باستخدام](/mem/intune/apps/apps-advanced-threat-protection-macos) Microsoft Intune.)
+لمزيد من المعلومات، راجع [إضافة Microsoft Defender لنقطة النهاية إلى أجهزة macOS باستخدام Microsoft Intune](/mem/intune/apps/apps-advanced-threat-protection-macos).)
 
    > [!CAUTION]
    > يجب عليك إنشاء كل ملفات تعريف التكوين المطلوبة ودفعها إلى جميع الأجهزة، كما هو موضح أعلاه.
@@ -245,11 +245,11 @@ ms.locfileid: "63583159"
 1. تأكيد إدارة الأجهزة.
 
     > [!div class="mx-imgBorder"]
-    > ![تأكيد لقطة شاشة لإدارة الأجهزة.](images/mdatp-3-confirmdevicemgmt.png)
+    > :::image type="content" source="images/mdatp-3-confirmdevicemgmt.png" alt-text="الصفحة &quot;تأكيد إدارة الأجهزة&quot;" lightbox="images/mdatp-3-confirmdevicemgmt.png":::
 
     حدد **فتح تفضيلات النظام**، وحدد **موقع ملف تعريف الإدارة** في القائمة، وحدد **موافقة...**. سيتم عرض "ملف تعريف الإدارة" ك **"متحقق منه"**:
 
-    ![لقطة شاشة لملف تعريف الإدارة.](images/mdatp-4-managementprofile.png)
+    :::image type="content" source="images/mdatp-4-managementprofile.png" alt-text="صفحة ملف تعريف الإدارة" lightbox="images/mdatp-4-managementprofile.png":::
 
 2. حدد **متابعة** وأكمل عملية التسجيل.
 
@@ -258,25 +258,25 @@ ms.locfileid: "63583159"
 3. في Intune، افتح **إدارة الأجهزة** \> **كافة** \> **الأجهزة**. يمكنك هنا رؤية جهازك بين الأشخاص المدرجين:
 
    > [!div class="mx-imgBorder"]
-   > ![لقطة شاشة لإضافة أجهزة.](images/mdatp-5-alldevices.png)
+   > :::image type="content" source="images/mdatp-5-alldevices.png" alt-text="صفحة جميع الأجهزة" lightbox="images/mdatp-5-alldevices.png":::
 
 ## <a name="verify-client-device-state"></a>التحقق من حالة جهاز العميل
 
 1. بعد نشر ملفات تعريف التكوين على أجهزتك، افتح **ملفات تعريف تفضيلات** \> **النظام** على جهاز Mac.
 
     > [!div class="mx-imgBorder"]
-    > ![لقطة شاشة لتفضيلات النظام.](images/mdatp-13-systempreferences.png)
+    > :::image type="content" source="images/mdatp-13-systempreferences.png" alt-text="صفحة تفضيلات النظام" lightbox="images/mdatp-13-systempreferences.png":::
 
-    ![لقطة شاشة لملفات تعريف تفضيلات النظام.](images/mdatp-14-systempreferencesprofiles.png)
+   :::image type="content" source="images/mdatp-14-systempreferencesprofiles.png" alt-text="صفحة ملفات تعريف تفضيلات النظام" lightbox="images/mdatp-14-systempreferencesprofiles.png":::
 
 2. تحقق من أن ملفات تعريف التكوين التالية موجودة ومثبتة. يجب **أن يكون ملف تعريف** الإدارة هو ملف تعريف النظام Intune. _Wdav-config_ و _wdav-kext_ هي ملفات تعريف تكوين النظام التي تم إضافتها في Intune:
 
-    ![لقطة شاشة لملفات التعريف.](images/mdatp-15-managementprofileconfig.png)
+   :::image type="content" source="images/mdatp-15-managementprofileconfig.png" alt-text="صفحة ملفات التعريف" lightbox="images/mdatp-15-managementprofileconfig.png":::
 
 3. سترى أيضا أيقونة Microsoft Defender لنقطة النهاية في الزاوية العلوية اليسرى:
 
     > [!div class="mx-imgBorder"]
-    > ![أيقونة Microsoft Defender لنقطة النهاية في لقطة شاشة ل شريط الحالة.](images/mdatp-icon-bar.png)
+    > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="أيقونة Microsoft Defender لنقطة النهاية في شريط الحالة" lightbox="images/mdatp-icon-bar.png":::
 
 ## <a name="troubleshooting"></a>استكشاف الأخطاء وإصلاحها
 
@@ -290,4 +290,4 @@ ms.locfileid: "63583159"
 
 ## <a name="uninstallation"></a>إلغاء التثبيت
 
-راجع [إلغاء تثبيت للحصول](mac-resources.md#uninstalling) على تفاصيل حول كيفية إزالة Microsoft Defender ل Endpoint على macOS من أجهزة العميل.
+راجع [إلغاء تثبيت للحصول](mac-resources.md#uninstalling) على تفاصيل حول كيفية إزالة Microsoft Defender لنقطة النهاية على macOS من الأجهزة العميلة.
