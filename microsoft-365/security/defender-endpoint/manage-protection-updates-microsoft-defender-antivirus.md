@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c2ebb60d3cd5514d003991d26c5070b05e89fb37
-ms.sourcegitcommit: e3bff611439354e6339bb666a88682078f32ec13
+ms.openlocfilehash: 69c211e02b5bea12431e17bf2256405f96977b53
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63583227"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467390"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>إدارة مصادر تحديثات برنامج الحماية من الفيروسات من Microsoft Defender الحماية
 
@@ -28,8 +28,8 @@ ms.locfileid: "63583227"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -42,7 +42,7 @@ ms.locfileid: "63583227"
 تصف هذه المقالة كيفية التحديد من حيث يجب تنزيل التحديثات (يعرف هذا أيضا بالترتيب الاحتياطي). راجع [إدارة برنامج الحماية من الفيروسات من Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md) الأساسية وتطبيق موضوع الأساسات للحصول على نظرة عامة حول كيفية عمل التحديثات، وكيفية تكوين جوانب أخرى من التحديثات (مثل جدولة التحديثات).
 
 > [!IMPORTANT]
-> برنامج الحماية من الفيروسات من Microsoft Defender تحديثات معلومات الأمان من خلال Windows التحديث وبدءا من يوم الاثنين 21 أكتوبر 2019، سيتم توقيع جميع تحديثات معلومات الأمان بشكل حصري على SHA-2. يجب تحديث أجهزتك لدعم SHA-2 لتحديث معلومات الأمان الخاصة بك. لمعرفة المزيد، راجع متطلبات دعم توقيع التعليمات البرمجية [ل SHA-2 Windows و WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
+> برنامج الحماية من الفيروسات من Microsoft Defender تحديثات معلومات الأمان عبر Windows Update بدءا من يوم الاثنين 21 أكتوبر 2019، سيتم توقيع جميع تحديثات معلومات الأمان بشكل حصري على SHA-2. يجب تحديث أجهزتك لدعم SHA-2 لتحديث معلومات الأمان الخاصة بك. لمعرفة المزيد، راجع متطلبات دعم توقيع التعليمات البرمجية [ل SHA-2 Windows و WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 <a id="fallback-order"></a>
 
@@ -65,7 +65,7 @@ ms.locfileid: "63583227"
 - [مشاركة ملف الشبكة](#unc-share)
 - [تحديثات معلومات الأمان برنامج الحماية من الفيروسات من Microsoft Defender والبرامج الضارة](https://www.microsoft.com/wdsi/defenderupdates) الأخرى من Microsoft <sup>[[2](#fn1)]<sup></sup>
 
-(<a id="fn1">1</a>) خادم تحديث التعريف الداخلي في Intune - إذا كنت تستخدم SCCM/SUP للحصول على تحديثات التعريف ل برنامج الحماية من الفيروسات من Microsoft Defender، وأحتاجت إلى الوصول إلى تحديث Windows على الأجهزة المحظورة على أجهزة العميل، يمكنك الانتقال إلى الإدارة المشاركة وإثقال حمل عمل حماية نقطة النهاية إلى Intune. في نهج مكافحة البرامج الضارة الذي تم تكوينه في Intune، يوجد خيار "خادم تحديث التعريف الداخلي" الذي يمكن تكوينه لاستخدام WSUS الداخلي كمصدر التحديث. يساعدك ذلك على التحكم في التحديثات التي تمت الموافقة عليها من خادم WU الرسمي للمؤسسة، كما يساعد الوكيل وحفظ حركة مرور الشبكة في شبكة Windows UPdates الرسمية.
+(<a id="fn1">1</a>) Intune Internal Definition Update Server - إذا كنت تستخدم SCCM/SUP للحصول على تحديثات التعريف ل برنامج الحماية من الفيروسات من Microsoft Defender، وأحتاجت إلى الوصول إلى Windows Update على الأجهزة المحظورة على الأجهزة العميلة، يمكنك الانتقال إلى الإدارة المشاركة وإثقال حمل عمل حماية نقطة النهاية إلى Intune. في نهج مكافحة البرامج الضارة الذي تم تكوينه في Intune، يوجد خيار "خادم تحديث التعريف الداخلي" الذي يمكن تكوينه لاستخدام WSUS الداخلي كمصدر التحديث. يساعدك ذلك على التحكم في التحديثات التي تمت الموافقة عليها من خادم WU الرسمي للمؤسسة، كما يساعد الوكيل وحفظ حركة مرور الشبكة في شبكة Windows UPdates الرسمية.
 
 (<a id="fn1">2</a>) قد يكون هذا النهج والسجل مدرجين مركز الحماية من البرامج الضارة لـ Microsoft الأمان (MMPC) ، اسم السجل السابق.
 
@@ -86,7 +86,7 @@ ms.locfileid: "63583227"
 |Microsoft Update|تريد أن تتصل نقاط النهاية مباشرة ب Microsoft Update. قد يكون هذا مفيدا لنقاط النهاية التي تتصل بشكل غير منتظم بشبكة المؤسسة، أو إذا لم تستخدم Windows Server Update لإدارة التحديثات.|
 |مشاركة الملف|لديك أجهزة غير متصلة بالإنترنت (مثل أجهزة VMs). يمكنك استخدام مضيف VM المتصل بالإنترنت لتنزيل التحديثات إلى مشاركة شبكة، حيث يمكن ل VMs الحصول على التحديثات منها. راجع دليل [نشر VDI](deployment-vdi-microsoft-defender-antivirus.md) لمعرفة كيفية استخدام مشاركة الملفات في بيئات البنية الأساسية لسطح المكتب الظاهري (VDI).|
 |إدارة نقاط النهاية من Microsoft|أنت تستخدم إدارة نقاط النهاية من Microsoft لتحديث نقاط النهاية.|
-|تحديثات معلومات الأمان برنامج الحماية من الفيروسات من Microsoft Defender والبرامج الضارة الأخرى من Microsoft (يشار إليها سابقا باسم MMPC)|[تأكد من تحديث أجهزتك لدعم SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). برنامج الحماية من الفيروسات من Microsoft Defender يتم تسليم تحديثات معلومات الأمان من خلال Windows التحديث، وبدءا من يوم الاثنين 21 أكتوبر 2019، سيتم توقيع تحديثات معلومات الأمان على SHA-2 بشكل حصري. <br/>قم بتنزيل آخر تحديثات الحماية بسبب إصابة حديثة أو للمساعدة في توفير صورة أساسية قوية لنشر [VDI](deployment-vdi-microsoft-defender-antivirus.md). يجب استخدام هذا الخيار بشكل عام كمصدر خلفي نهائي فقط، وليس كمصدر أساسي. سيتم استخدامه فقط إذا لم يكن من الممكن تنزيل التحديثات من Windows Server Update Service أو Microsoft Update [لعدد معين من الأيام](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
+|تحديثات معلومات الأمان برنامج الحماية من الفيروسات من Microsoft Defender والبرامج الضارة الأخرى من Microsoft (يشار إليها سابقا باسم MMPC)|[تأكد من تحديث أجهزتك لدعم SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). برنامج الحماية من الفيروسات من Microsoft Defender تحديثات الأمان عبر Windows Update، وبدءا من يوم الاثنين 21 أكتوبر 2019، سيتم توقيع تحديثات معلومات الأمان على SHA-2 بشكل حصري. <br/>قم بتنزيل آخر تحديثات الحماية بسبب إصابة حديثة أو للمساعدة في توفير صورة أساسية قوية لنشر [VDI](deployment-vdi-microsoft-defender-antivirus.md). يجب استخدام هذا الخيار بشكل عام كمصدر خلفي نهائي فقط، وليس كمصدر أساسي. سيتم استخدامه فقط إذا لم يكن من الممكن تنزيل التحديثات من Windows Server Update Service أو Microsoft Update [لعدد معين من الأيام](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
 
 يمكنك إدارة الترتيب الذي يتم به استخدام مصادر التحديث مع نهج المجموعة Microsoft Endpoint Configuration Manager و PowerShell cmdlets و WMI.
 
@@ -95,11 +95,11 @@ ms.locfileid: "63583227"
 
 تصف الإجراءات في هذه المقالة أولا كيفية تعيين الترتيب، ثم كيفية إعداد خيار مشاركة الملف إذا قمت بتمكينه.
 
-## <a name="use-group-policy-to-manage-the-update-location"></a>استخدام "نهج المجموعة" لإدارة موقع التحديث
+## <a name="use-group-policy-to-manage-the-update-location"></a>استخدام نهج المجموعة لإدارة موقع التحديث
 
-1. على جهاز إدارة نهج المجموعة، افتح وحدة التحكم [في](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) إدارة نهج المجموعة، وانقر بيمين فوق كائن نهج المجموعة الذي تريد تكوينه وانقر فوق **تحرير**.
+1. على جهاز نهج المجموعة، افتح نهج المجموعة [إدارة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) التحكم، وانقر بيمين فوق نهج المجموعة الذي تريد تكوينه، ثم انقر فوق **تحرير**.
 
-2. في محرر **إدارة نهج المجموعة** ، انتقل إلى **تكوين الكمبيوتر**.
+2. في نهج المجموعة **إدارة الكمبيوتر،** انتقل إلى **تكوين الكمبيوتر**.
 
 3. انقر **فوق سياسات** ثم **قوالب إدارية**.
 
@@ -109,7 +109,7 @@ ms.locfileid: "63583227"
 
    2. أدخل ترتيب المصادر، مفصولة بأنبوب واحد، على سبيل المثال: `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`، كما هو موضح في لقطة الشاشة التالية.
 
-      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="إعداد نهج المجموعة الذي ي سرد ترتيب المصادر.":::
+      :::image type="content" source="../../media/wdav-order-update-sources.png" alt-text="إعداد نهج المجموعة الذي ي سرد ترتيب المصادر" lightbox="../../media/wdav-order-update-sources.png":::
 
    3. حدد **موافق**. سيحدد ذلك ترتيب مصادر تحديث الحماية.
 
@@ -122,7 +122,7 @@ ms.locfileid: "63583227"
 > [!NOTE]
 > بالنسبة Windows 10، الإصدارات 1703 إلى 1809 بما في ذلك، مسار النهج هو **Windows مكونات > برنامج الحماية من الفيروسات من Microsoft Defender >** تحديثات التواقيع ل Windows 10، الإصدار 1903، مسار النهج **Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > "تحديثات معلومات الأمان"**
 
-## <a name="use-configuration-manager-to-manage-the-update-location"></a>استخدام "إدارة التكوين" لإدارة موقع التحديث
+## <a name="use-configuration-manager-to-manage-the-update-location"></a>استخدام Configuration Manager لإدارة موقع التحديث
 
 راجع [تكوين تحديثات معلومات الأمان Endpoint Protection](/configmgr/protect/deploy-use/endpoint-definition-updates) للحصول على تفاصيل حول تكوين إدارة نقاط النهاية من Microsoft (الفرع الحالي).
 
@@ -155,7 +155,7 @@ SignatureDefinitionUpdateFileSharesSource
 
 - [Windows واجهات برمجة التطبيقات ل Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="use-mobile-device-management-mdm-to-manage-the-update-location"></a>استخدام إدارة أجهزة المحمول (MDM) لإدارة موقع التحديث
+## <a name="use-mobile-device-management-mdm-to-manage-the-update-location"></a>استخدام إدارة الجهاز Mobile (MDM) لإدارة موقع التحديث
 
 راجع [النهج CSP - Defender/SignatureUpdateFallbackOrder](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdatefallbackorder) للحصول على تفاصيل حول تكوين MDM.
 

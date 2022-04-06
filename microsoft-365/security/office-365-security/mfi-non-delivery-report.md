@@ -15,12 +15,12 @@ ms.custom:
 description: يمكن للمسؤولين معرفة كيفية استخدام تقرير تفاصيل عدم التسليم في لوحة معلومات تدفق البريد في مركز توافق الأمان & لمراقبة رموز الخطأ الأكثر شيوعا في تقارير عدم التسليم (المعروفة أيضا بالتقارير بعدم التسليم أو رسائل البريد المرتد) من المرسلين في مؤسستك.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73d48b831f42deca83b6b1b62fde09cd6c44562e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bc408f6bb28b11e77c49755b888c44e0ea4d9f57
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679621"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473728"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>تقرير بعدم التسليم في مركز & الأمان
 
@@ -28,12 +28,12 @@ ms.locfileid: "63679621"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 يعرض  تقرير عدم التسليم في لوحة معلومات [](mail-flow-insights-v2.md) تدفق البريد [في مركز](https://protection.office.com) توافق الأمان & رموز الأخطاء الأكثر مصادفة في تقارير عدم التسليم (المعروفة أيضا بالتقارير بعدم التسليم أو رسائل البريد المرتد) للمستخدمين في مؤسستك. يعرض هذا التقرير تفاصيل التقارير غير التسليمية حتى تتمكن من استكشاف مشاكل تسليم البريد الإلكتروني وإصلاحها.
 
-![عنصر واجهة مستخدم تقرير بعدم التسليم في لوحة معلومات تدفق البريد في مركز & الأمان.](../../media/mfi-non-delivery-report-widget.png)
+:::image type="content" source="../../media/mfi-non-delivery-report-widget.png" alt-text="عنصر واجهة مستخدم تقرير عدم التسليم في لوحة معلومات تدفق البريد في مركز & الأمان" lightbox="../../media/mfi-non-delivery-report-widget.png":::
 
 ## <a name="report-view-for-the-non-delivery-report"></a>طريقة عرض التقرير للتقرير بعدم التسليم
 
@@ -43,7 +43,7 @@ ms.locfileid: "63679621"
 
 إذا مرر فوق لون معين (رمز الخطأ) في يوم معين في المخطط، سترى العدد الإجمالي للرسائل الخاصة بالخطأ.
 
-![طريقة عرض التقرير في تقرير المجال غير المقبول.](../../media/mfi-non-delivery-report-overview-view.png)
+:::image type="content" source="../../media/mfi-non-delivery-report-overview-view.png" alt-text="طريقة عرض التقرير في تقرير المجال غير المقبول" lightbox="../../media/mfi-non-delivery-report-overview-view.png":::
 
 ## <a name="details-table-view-for-the-non-delivery-report"></a>طريقة عرض جدول التفاصيل للتقرير بعدم التسليم
 
@@ -65,7 +65,8 @@ ms.locfileid: "63679621"
 - **Count**
 - **نموذج للرسائل**: يمكنك النقر فوق **عرض الرسائل العينة** للاطلاع على نتائج [تتبع](message-trace-scc.md) الرسائل لعينة من الرسائل المتأثرة.
 
-![تفاصيل من حولاء بعد تحديد صف في طريقة عرض جدول التفاصيل في تقرير عدم التسليم.](../../media/mfi-non-delivery-report-details-flyout.png)
+
+:::image type="content" source="../../media/mfi-non-delivery-report-details-flyout.png" alt-text="من حولي التفاصيل بعد تحديد صف في طريقة عرض جدول التفاصيل في تقرير عدم التسليم" lightbox="../../media/mfi-non-delivery-report-details-flyout.png":::
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

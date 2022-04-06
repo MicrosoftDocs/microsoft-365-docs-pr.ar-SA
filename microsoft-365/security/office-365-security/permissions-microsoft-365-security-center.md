@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4e819a9de9d5ccd66caab4bc13d8b11c1a95ab03
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bd76eed421f4d926a956508961dc44a643dbb125
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681711"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467082"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>الأذونات في مدخل Microsoft 365 Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "63681711"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 تحتاج إلى إدارة سيناريوهات الأمان التي تمتد عبر Microsoft 365 الخدمات. وستحتاج إلى المرونة اللازمة لإعطاء المسؤول المناسب أذونات للأشخاص المناسبين في مؤسستك.
@@ -55,7 +55,7 @@ ms.locfileid: "63681711"
 
 تتضمن Microsoft 365 Defender المدخل> مجموعات الدور الافتراضية للمهام والوظائف الأكثر شيوعا التي ستحتاج إلى تعيينها. بشكل عام، نوصي ببساطة بإضافة مستخدمين فرديين **كأعضاء** إلى مجموعات الدور الافتراضية.
 
-![رسم تخطيطي يعرض علاقة مجموعات الأدوار بالأدوار والأعضاء.](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+:::image type="content" source="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png" alt-text="علاقة مجموعة أدوار بأدوارها وأعضائها" lightbox="../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png":::
 
 ## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>الأدوار ومجموعات الأدوار في مدخل Microsoft 365 Defender
 
@@ -65,7 +65,7 @@ ms.locfileid: "63681711"
 
 - **البريد & أدوار** التعاون: هذه هي مجموعات الأدوار نفسها المتوفرة في مركز التوافق & الأمان، ولكن يمكنك إدارتها مباشرة في Microsoft 365 Defender المدخل. الأذونات التي تقوم بتعيينها هنا خاصة ببوابة Microsoft 365 Defender و مركز التوافق في Microsoft 365 ومركز توافق الأمان &، ولا تغطي كل الأذونات المطلوبة في أحمال العمل الأخرى Microsoft 365 العمل.
 
-![الأذونات & الأدوار في Microsoft 365 Defender المدخل.](../../media/m365-sc-permissions-and-roles-page.png)
+:::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="صفحة الأذونات & في مدخل Microsoft 365 Defender" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 
 ### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>أدوار Azure AD في مدخل Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ ms.locfileid: "63681711"
 
 عند تحديد دور، تظهر القائمة من القائمة من خلال القائمة من القائمة المنشرة بالتفاصيل التي تحتوي على وصف الدور وواجبات المستخدم. ولكن لإدارة هذه الواجبات، ستحتاج إلى النقر فوق إدارة الأعضاء في **Azure AD** في عناصر منتبة التفاصيل.
 
-![ارتباط لإدارة الأذونات في Azure Active Directory.](../../media/permissions-manage-in-azure-ad-link.png)
+:::image type="content" source="../../media/permissions-manage-in-azure-ad-link.png" alt-text="الارتباط لإدارة الأذونات في Azure Active Directory" lightbox="../../media/permissions-manage-in-azure-ad-link.png":::
 
 لمزيد من المعلومات، راجع [عرض أدوار المسؤولين وتعيينها في Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 
@@ -85,7 +85,7 @@ ms.locfileid: "63681711"
 |**عامل تشغيل الأمان**|عرض التهديدات النشطة التي تواجه المستخدمين والأجهزة والمحتوى Microsoft 365 والرد عليها. لمزيد من المعلومات، راجع [عامل تشغيل الأمان](/azure/active-directory/roles/permissions-reference#security-operator).|
 |**قارئ الأمان**|يمكنك عرض التهديدات النشطة Microsoft 365 المستخدمين والأجهزة والمحتوى الخاص بك، ولكن (على عكس عامل تشغيل الأمان) ليس لديهم الأذونات اللازمة للاستجابة من خلال اتخاذ إجراء ما. لمزيد من المعلومات، راجع [قارئ الأمان](/azure/active-directory/roles/permissions-reference#security-reader).|
 |**مسؤول الأمان**|يمكنك التحكم في الأمان العام في مؤسستك من خلال إدارة سياسات الأمان ومراجعة تحليلات الأمان والتقارير عبر منتجات Microsoft 365، والبقاء على مستوى السرعة على مستوى المخاطر. لمزيد من المعلومات، راجع [مسؤول الأمان](/azure/active-directory/roles/permissions-reference#security-administrator).|
-|**القارئ العام**|إصدار القراءة فقط من **دور المسؤول** العام. عرض كل الإعدادات والمعلومات الإدارية عبر Microsoft 365. لمزيد من المعلومات، راجع [القارئ العام](/azure/active-directory/roles/permissions-reference#global-reader).|
+|**القارئ العام**|إصدار القراءة فقط **من مسؤول عمومي.** عرض كل الإعدادات والمعلومات الإدارية عبر Microsoft 365. لمزيد من المعلومات، راجع [القارئ العام](/azure/active-directory/roles/permissions-reference#global-reader).|
 |**مسؤول محاكاة الهجمات**|إنشاء جميع جوانب محاكاة الهجمات وإدارتها، و تشغيل/جدولة محاكاة، ومراجعة نتائج المحاكاة.[](attack-simulation-training.md) لمزيد من المعلومات، راجع [مسؤول محاكاة الهجمات](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
 |**كاتب تحميل الهجوم**|قم بإنشاء تحميلات الهجوم ولكن ليس في الواقع تشغيلها أو جدولتها. لمزيد من المعلومات، راجع ["كاتب تحميل الهجوم](/azure/active-directory/roles/permissions-reference#attack-payload-author)".|
 

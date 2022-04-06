@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: تعرف على كيفية العثور على موارد ل Microsoft SharePoint Syntex.
-ms.openlocfilehash: 3b8c85cfd405e68884df844c502473cdd95a4fa5
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 1b57283b5818a7fa502e112d903f873863a6e1b6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63569453"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682053"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>مقدمة حول Microsoft SharePoint Syntex
 
@@ -41,7 +41,7 @@ SharePoint Syntex هي خدمة Microsoft 365 تساعد المؤسسات على
 
 ## <a name="get-started"></a>بدء العمل
 
-تساعدك الموارد الموجودة في هذا القسم على معرفة المزيد حول الأساليب الثلاثة لتصنيف البيانات واستخراجها التي يستخدمها SharePoint Syntex: فهم المستندات، معالجة النموذج، وبنائها مسبقا.
+تساعدك الموارد الموجودة في هذا القسم على معرفة المزيد حول أساليب تصنيف البيانات والاستخراج المستخدمة بواسطة SharePoint Syntex. هناك نوعان من النماذج [المخصصة — فهم](document-understanding-overview.md) المستندات [و معالجة النماذج](form-processing-overview.md) — ونوع نموذج [تم تصميمه](prebuilt-overview.md) مسبقا.
 
 > [!NOTE]
 > يمكنك بدء استخدام SharePoint Syntex دون شراء التراخيص من خلال إنشاء مركز محتوى من SharePoint [إدارة.](create-a-content-center.md) يمكن للمستخدمين غير مرخصين إنشاء نماذج لفهم المستندات ولكن لا يمكنهم تطبيقها على مكتبة مستندات.

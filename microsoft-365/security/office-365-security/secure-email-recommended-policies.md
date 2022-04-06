@@ -20,16 +20,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 6ab6ff7c043dcceacfbb07d0f6fec5e974999204
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b4b47b5cd5b7f345d21f2fa60deec736d931c62f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682428"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473420"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>توصيات النهج لتأمين البريد الإلكتروني
 
-تصف هذه المقالة كيفية تنفيذ هوية الصفر الموثوق بها ونهج الوصول إلى الجهاز الموصى بها لحماية عملاء البريد الإلكتروني والبريد الإلكتروني في المؤسسة الذين يدعمون المصادقة الحديثة والوصول الشرطي. يعتمد هذا الإرشاد على [سياسات الوصول](identity-access-policies.md) إلى الأجهزة والهوية الشائعة ويتضمن أيضا بعض التوصيات الإضافية.
+تصف هذه المقالة كيفية تنفيذ ثقة معدومة الهوية والوصول إلى الجهاز الموصى بها لحماية عملاء البريد الإلكتروني والبريد الإلكتروني في المؤسسة الذين يدعمون المصادقة الحديثة والوصول الشرطي. يعتمد هذا الإرشاد على [سياسات الوصول](identity-access-policies.md) إلى الأجهزة والهوية الشائعة ويتضمن أيضا بعض التوصيات الإضافية.
 
 تستند هذه التوصيات إلى ثلاثة مستويات مختلفة من الأمان والحماية التي يمكن تطبيقها بالاستناد إلى مجموعة **احتياجاتك: نقطة** البداية والمؤسسة **والأمان المتخصص**.  يمكنك معرفة المزيد حول مستويات الأمان هذه، وأنظمت تشغيل العميل الموصى بها، المشار إليها بواسطة هذه التوصيات في مقدمة تكوينات ونهج الأمان [الموصى بها](microsoft-365-policies-configurations.md).
 
@@ -39,7 +39,7 @@ ms.locfileid: "63682428"
 
 لحماية البريد الإلكتروني، يوضح الرسم التخطيطي التالي السياسات التي يجب تحديثها من سياسات الوصول إلى الأجهزة والهوية المشتركة.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="ملخص تحديثات النهج لحماية الوصول إلى Exchange." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="ملخص تحديثات النهج لحماية الوصول إلى Microsoft Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
 
 لاحظ إضافة نهج جديد Exchange Online عملاء ActiveSync. وهذا الأمر يجبر على استخدام Outlook المحمول.
 
@@ -102,13 +102,13 @@ Exchange ActiveSync يمكن استخدامها لمزامنة بيانات ال
 
 ## <a name="set-up-message-encryption"></a>إعداد تشفير الرسائل
 
-باستخدام إمكانيات تشفير الرسائل من Office 365 (OME) الجديدة، التي تستفيد من ميزات الحماية في Azure Information Protection، يمكن لمنظمتك مشاركة البريد الإلكتروني المحمي بسهولة مع أي شخص على أي جهاز. يمكن للمستخدمين إرسال رسائل محمية وتلقيها مع مؤسسات أخرى Microsoft 365 وغير العملاء باستخدام Outlook.com وGmail وخدمات البريد الإلكتروني الأخرى.
+باستخدام إمكانيات Office 365 تشفير الرسائل (OME) الجديدة، والتي تستفيد من ميزات الحماية في Azure حماية البيانات، يمكن لمنظمتك مشاركة البريد الإلكتروني المحمي بسهولة مع أي شخص على أي جهاز. يمكن للمستخدمين إرسال رسائل محمية وتلقيها مع مؤسسات أخرى Microsoft 365 وغير العملاء باستخدام Outlook.com وGmail وخدمات البريد الإلكتروني الأخرى.
 
-لمزيد من المعلومات، راجع إعداد [قدرات تشفير الرسائل من Office 365 الجديدة](../../compliance/set-up-new-message-encryption-capabilities.md).
+لمزيد من المعلومات، راجع [إعداد إمكانيات تشفير Office 365 الرسائل الجديدة](../../compliance/set-up-new-message-encryption-capabilities.md).
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-![الخطوة 4: سياسات Microsoft 365 السحابية.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="سياسات تطبيقات Microsoft 365 السحابية" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 تكوين سياسات الوصول الشرطي ل:
 

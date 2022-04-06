@@ -16,12 +16,12 @@ ms.custom:
 description: تغطي هذه المقالة مواضيع بما في ذلك إعادة توجيه البريد الإلكتروني الخارجي، إعادة توجيه تلقائي، 5.7.520 الرسائل التي تم رفض الوصول إليها، تعطيل إعادة توجيه خارجية، 'تعطيل المسؤول لرسائل إعادة توجيه خارجية'، بالإضافة إلى نهج مكافحة البريد العشوائي الصادر.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14b41f21efe3608096636444afd4b36de3742a85
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8df0ff9902fe22fd44a0d15f7f01e13e791c7b12
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681403"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473596"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>التحكم في إعادة توجيه البريد الإلكتروني الخارجي تلقائيا في Microsoft 365
 
@@ -29,7 +29,7 @@ ms.locfileid: "63681403"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ب أنت مسؤول، قد تحتاج إلى متطلبات الشركة لتقييد الرسائل التي تم إعادة توجيهها تلقائيا أو التحكم بها إلى مستلمين خارجيين (مستلمون من خارج مؤسستك). قد تكون إعادة توجيه البريد الإلكتروني مفيدة، ولكنها قد تشكل أيضا خطرا على الأمان بسبب إمكانية الكشف عن المعلومات. قد يستخدم المهاجمون هذه المعلومات لمهاجمة مؤسستك أو شركاءك.
@@ -84,14 +84,15 @@ ms.locfileid: "63681403"
   - **اسم الرأس**: `X-MS-Exchange-Inbox-Rules-Loop`
   - **قيمة الرأس**: `.`
 
-  يبدو الشرط كما يلي: **يتطابق رأس "X-MS-Exchange-Inbox-Rules-Loop"** **مع '.'**
+  يبدو الشرط كما يلي: رأس "**X-MS-Exchange-علبة الوارد-قواعد-Loop"** يتطابق **مع '.'**
 
   سيطابق هذا الشرط أي قيمة للرأس.
 
 - (اختياري) **قم بما يلي** (الإجراء): يمكنك تكوين إجراء اختياري. على سبيل المثال، يمكنك استخدام الإجراء **تعديل** \> خصائص الرسالة **تعيين** رأس رسالة، باستخدام اسم الرأس **X-Forwarded** والقيمة **True**. ولكن، تكوين إجراء غير مطلوب.
 - تعيين **التدقيق في هذا الرواي بمستوى الخطورة** إلى القيمة **منخفضة** أو **متوسطة** أو **عالية**. يسمح لك هذا الإعداد باستخدام Exchange [قاعدة النقل](view-email-security-reports.md#exchange-transport-rule-report) للحصول على تفاصيل المستخدمين الذين يتم إعادة توجيههم.
 
-![خصائص قاعدة تدفق البريد في EAC لقاعدة لتحديد الرسائل التي تم إعادة توجيهها.](../../media/mail-flow-rule-for-forwarded-messages.png)
+:::image type="content" source="../../media/mail-flow-rule-for-forwarded-messages.png" alt-text="خصائص قاعدة تدفق البريد في EAC لقاعدة لتحديد الرسائل التي تم إعادة توجيهها" lightbox="../../media/mail-flow-rule-for-forwarded-messages.png":::
+
 
 ## <a name="blocked-email-forwarding-messages"></a>رسائل إعادة توجيه البريد الإلكتروني المحظورة
 

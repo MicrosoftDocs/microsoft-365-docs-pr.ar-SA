@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: b969efd9d83fa34ded01f8be7db7aaf4db971128
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 8991c2aca277d2a08e5f8924a5e5cb354df6dc1f
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498617"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569415"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>تقييم وضع الأمان باستخدام Microsoft Secure Score
 
@@ -42,7 +42,7 @@ Microsoft Secure Score هو قياس لوضعية الأمان في المؤسس
 - التطبيقات (تطبيقات البريد الإلكتروني والسحابة، بما في ذلك Office 365 Microsoft Defender for Cloud Apps)
 
 >[!NOTE]
->في الإصدار الأخير من Microsoft Secure Score، تم إصدار نموذج تسجيل نقاط محسن مما جعل Microsoft Secure Score غير متوافق مؤقتا مع نقاط الهوية الآمنة Graph API. [عرض التفاصيل](microsoft-secure-score-whats-new.md)
+>في الإصدار الأخير من Microsoft Secure Score، تم إصدار نموذج تسجيل محسن مما جعل Microsoft Secure Score غير متوافق مؤقتا مع نقاط الهوية الآمنة Graph API. [عرض التفاصيل](microsoft-secure-score-whats-new.md)
 
 في صفحة نظرة عامة على Microsoft Secure Score، يمكنك عرض كيفية تقسيم النقاط بين هذه المجموعات والنقاط المتوفرة. يمكنك أيضا الحصول على طريقة عرض مضمنة لإجمالي الدرجة، والاتجاه التاريخي لسجل نقاطك الآمنة باستخدام مقارنات المعايير، والإجراءات ذات الأولوية للتحسينات التي يمكن اتخاذها لتحسين نقاطك.
 
@@ -80,7 +80,7 @@ Microsoft Secure Score هو قياس لوضعية الأمان في المؤسس
 
 لإكمال الإجراء، لديك بعض الخيارات:
 
-- حدد **إدارة** للذهاب إلى شاشة التكوين، ثم قم بالتغيير. بعد ذلك، ستكتسب النقاط التي يساويها الإجراء، وهي مرئية في تحركها. يستغرق تحديث النقاط عادة حوالي 24 ساعة.
+- حدد **إدارة في Microsoft 365 Defender** الانتقال إلى شاشة التكوين ثم إجراء التغيير. بعد ذلك، ستكتسب النقاط التي يساويها الإجراء، وهي مرئية في الجزء المتحرك. يستغرق تحديث النقاط عادة حوالي 24 ساعة.
 
 - حدد **مشاركة** لنسخ الارتباط المباشر إلى إجراء التحسين. يمكنك أيضا اختيار النظام الأساسي لمشاركة الارتباط، مثل البريد الإلكتروني أو Microsoft Teams أو Microsoft Planner.
 
@@ -123,5 +123,5 @@ Microsoft Secure Score هو قياس لوضعية الأمان في المؤسس
 
 - [نظرة عامة حول Microsoft Secure Score](microsoft-secure-score.md)
 - [تعقب سجل Microsoft Secure Score و تحقيق الأهداف](microsoft-secure-score-history-metrics-trends.md)
-- [ما هو قادم](microsoft-secure-score-whats-coming.md)
-- [ما الجديد](microsoft-secure-score-whats-new.md)
+- [ما الجديد](microsoft-secure-score-whats-coming.md)
+- [أحدث الميزات](microsoft-secure-score-whats-new.md)

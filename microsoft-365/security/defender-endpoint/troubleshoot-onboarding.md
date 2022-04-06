@@ -1,6 +1,6 @@
 ---
-title: استكشاف مشاكل تشغيل نقطة النهاية وإصلاحها في Microsoft Defender
-description: استكشاف المشاكل التي قد تنشأ أثناء االأجهزة أو خدمة Microsoft Defender لنقطة النهاية وإصلاحها.
+title: استكشاف مشاكل Microsoft Defender لنقطة النهاية في الحافظة وإصلاحها
+description: استكشاف المشاكل التي قد تنشأ أثناء اجهزه الالجهزه أو Microsoft Defender لنقطة النهاية الخدمة.
 keywords: استكشاف الأخطاء المتعلقة باللوح وإصلاحها، ومشكلات الboard، وعارض الأحداث، وبناءات تجميع البيانات والمعاينة، وبيانات المستشعر، والت تشخيصات
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,28 +14,28 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 06e0b66a9682f076fcf9a23969328971c784723d
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 9813857bffe62ab26d377d49b2830f55d0f38f93
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63583144"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473486"
 ---
-# <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>استكشاف مشاكل تشغيل نقطة النهاية وإصلاحها في Microsoft Defender
+# <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>استكشاف مشاكل Microsoft Defender لنقطة النهاية في الحافظة وإصلاحها
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows Server 2012 R2
 - Windows Server 2016‏
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-قد تحتاج إلى استكشاف الأخطاء وإصلاحها في عملية تشغيل نقطة النهاية ل Microsoft Defender إذا واجهت مشاكل.
+قد تحتاج إلى استكشاف الأخطاء وإصلاحها Microsoft Defender لنقطة النهاية التكهين إذا واجهت مشاكل.
 توفر هذه الصفحة خطوات تفصيلية لاستعلام مشاكل التكدث وإصلاحها التي قد تحدث عند النشر باستخدام إحدى أدوات النشر والأخطاء الشائعة التي قد تحدث على الأجهزة.
 
 قبل البدء في استكشاف الأخطاء وإصلاحها باستخدام أدوات المستلزمات، من المهم التحقق مما إذا كان قد تم تحقيق الحد الأدنى من المتطلبات للأجهزة التي تريد تشغيلها في الخدمات. [تعرف على متطلبات الترخيص والأجهزة والبرامج للأجهزة المجهزة للخدمة](minimum-requirements.md).
@@ -44,9 +44,9 @@ ms.locfileid: "63583144"
 
 إذا أكملت عملية الضم ولم تشاهد الأجهزة في قائمة الأجهزة بعد ساعة، فقد تشير إلى [](investigate-machines.md) مشكلة في الضم أو الاتصال.
 
-### <a name="troubleshoot-onboarding-when-deploying-with-group-policy"></a>استكشاف الأخطاء في الرصيد وإصلاحها عند النشر باستخدام "نهج المجموعة"
+### <a name="troubleshoot-onboarding-when-deploying-with-group-policy"></a>استكشاف الأخطاء في الحافظة وإصلاحها عند النشر باستخدام نهج المجموعة
 
-يتم النشر باستخدام "نهج المجموعة" عن طريق تشغيل البرنامج النصي لتك الجديدة على الأجهزة. لا تشير وحدة تحكم "نهج المجموعة" إلى نجاح عملية النشر أو عدم نجاحها.
+يتم النشر باستخدام نهج المجموعة عن طريق تشغيل البرنامج النصي ل التشغيل على الأجهزة. لا نهج المجموعة وحدة التحكم هذه ما إذا نجح النشر أم لا.
 
 إذا أكملت عملية الضم ولم تتمكن من رؤية الأجهزة في قائمة الأجهزة بعد ساعة واحدة، [](investigate-machines.md) يمكنك التحقق من إخراج البرنامج النصي على الأجهزة. لمزيد من المعلومات، راجع استكشاف الأخطاء [وإصلاحها عند النشر باستخدام برنامج نصي](#troubleshoot-onboarding-when-deploying-with-a-script).
 
@@ -54,13 +54,13 @@ ms.locfileid: "63583144"
 
 ### <a name="troubleshoot-onboarding-issues-when-deploying-with-microsoft-endpoint-configuration-manager"></a>استكشاف مشاكل الboarding وإصلاحها عند النشر باستخدام Microsoft Endpoint Configuration Manager
 
-عند إعداد الأجهزة باستخدام الإصدارات التالية من "إدارة التكوين":
+عند وضع الأجهزة في الحافظة باستخدام الإصدارات التالية من Configuration Manager:
 
 - Microsoft Endpoint Configuration Manager
 - إدارة تكوين System Center 2012
-- System Center 2012 تكوين R2
+- System Center 2012 R2 Configuration Manager
 
-يتم النشر باستخدام الإصدارات المذكورة أعلاه من إدارة التكوين عن طريق تشغيل البرنامج النصي لتهيئة الأجهزة. يمكنك تعقب النشر في وحدة تحكم إدارة التكوين.
+يتم النشر باستخدام الإصدارات المذكورة أعلاه من Configuration Manager عن طريق تشغيل البرنامج النصي ل التشغيل على الأجهزة. يمكنك تعقب النشر في وحدة Configuration Manager التحكم.
 
 إذا فشل النشر، يمكنك التحقق من إخراج البرنامج النصي على الأجهزة.
 
@@ -70,7 +70,7 @@ ms.locfileid: "63583144"
 
 **تحقق من نتيجة البرنامج النصي على الجهاز:**
 
-1. انقر **فوق** بدء، وا اكتب **عارض الأحداث**، ثم اضغط على **Enter**.
+1. انقر **فوق** بدء، **عارض الأحداث**، ثم اضغط على **Enter**.
 
 2. انتقل إلى **Windows Logs** \> **Application**.
 
@@ -107,7 +107,7 @@ ms.locfileid: "63583144"
 
 - Microsoft Intune رموز الخطأ OMA-URIs الجدول
 - المشاكل المعروفة في جدول عدم التوافق
-- جدول سجلات أحداث إدارة أجهزة المحمول (MDM)
+- جدول سجلات إدارة الجهاز الأجهزة المحمولة (MDM)
 
 إذا لم تعمل أي من سجلات الأحداث والخطوات الخاصة استكشاف الأخطاء وإصلاحها، ف قم بتنزيل البرنامج النصي المحلي من قسم إدارة الأجهزة في المدخل، ثم قم بتشغيله في موجه أوامر غير محدث.
 
@@ -120,10 +120,10 @@ ms.locfileid: "63583144"
 |رمز الخطأ Hex|رمز الخطأ ديسمبر|وصف الخطأ|OMA-URI|خطوات استكشاف الأخطاء وإصلاحها المحتملة|
 |:---:|---|---|---|---|
 |0x87D1FDE8|-2016281112|فشل المعالجة|الboarding <p> إيقاف التشغيل|**السبب المحتمل:** فشل التكليف أو الفقدان على أساس خطأ: توقيع غير صحيح أو حقول PreviousOrgIds مفقودة. <p> **خطوات استكشاف الأخطاء وإصلاحها:** <p> تحقق من "معرّف الحدث" في القسم "عرض أخطاء التكميل للعامل" [في المقطع "سجل أحداث](#view-agent-onboarding-errors-in-the-device-event-log) الجهاز". <p> تحقق من سجلات أحداث MDM في الجدول التالي أو اتبع الإرشادات الواردة في تشخيص حالات فشل [MDM في](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) Windows.|
-||||الboarding <p> إيقاف التشغيل <p> SampleSharing|**السبب المحتمل:** لا يوجد مفتاح تسجيل نهج Microsoft Defender لنقطة النهاية أو لا يكون لدى عميل OMA DM الأذونات للكتابة عليه. <p> **خطوات استكشاف الأخطاء وإصلاحها:** تأكد من وجود مفتاح التسجيل التالي: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <p> إذا لم يكن موجودا، فافتح أمر مرتفع وأضف المفتاح.|
+||||الboarding <p> إيقاف التشغيل <p> SampleSharing|**السبب المحتمل:** Microsoft Defender لنقطة النهاية مفتاح تسجيل النهج غير موجود أو لا يكون لدى عميل OMA DM الأذونات للكتابة عليه. <p> **خطوات استكشاف الأخطاء وإصلاحها:** تأكد من وجود مفتاح التسجيل التالي: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <p> إذا لم يكن موجودا، فافتح أمر مرتفع وأضف المفتاح.|
 ||||SenseIsRunning <p> OnboardingState <p> OrgId|**السبب المحتمل:** محاولة المعالجة بواسطة خاصية للقراءة فقط. فشلت عملية التكهين. <p> **خطوات استكشاف الأخطاء وإصلاحها:** تحقق من خطوات استكشاف الأخطاء وإصلاحها في استكشاف مشاكل [التكدث وإصلاحها على الجهاز](#troubleshoot-onboarding-issues-on-the-device). <p> تحقق من سجلات أحداث MDM في الجدول التالي أو اتبع الإرشادات الواردة في تشخيص حالات فشل [MDM في](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) Windows.|
-||||الكل|**السبب المحتمل:** حاول نشر Microsoft Defender لنقطة النهاية على SKU/النظام الأساسي غير المعتمد، لا سيما Holographic SKU. <p> الأنظمة الأساسية المدعمة حاليا: <p> Enterprise و Education و Professional.<p> الخادم غير معتمد.|
-|0x87D101A9|-2016345687|SyncML(425): فشل الأمر المطلوب لأن المرسل لا لديه أذونات كافية للتحكم بالوصول (ACL) على المستلم.|الكل|**السبب المحتمل:** حاول نشر Microsoft Defender لنقطة النهاية على SKU/النظام الأساسي غير المعتمد، لا سيما Holographic SKU.<p> الأنظمة الأساسية المدعمة حاليا: <p> Enterprise و Education و Professional.|
+||||الكل|**السبب المحتمل:** حاول نشر Microsoft Defender لنقطة النهاية SKU/النظام الأساسي غير المعتمد، لا سيما Holographic SKU. <p> الأنظمة الأساسية المدعمة حاليا: <p> Enterprise و Education و Professional.<p> الخادم غير معتمد.|
+|0x87D101A9|-2016345687|SyncML(425): فشل الأمر المطلوب لأن المرسل لا لديه أذونات كافية للتحكم بالوصول (ACL) على المستلم.|الكل|**السبب المحتمل:** حاول نشر Microsoft Defender لنقطة النهاية SKU/النظام الأساسي غير المعتمد، لا سيما Holographic SKU.<p> الأنظمة الأساسية المدعمة حاليا: <p> Enterprise و Education و Professional.|
 |
 
 #### <a name="known-issues-with-non-compliance"></a>المشاكل المعروفة المتعلقة بعدم التوافق
@@ -141,7 +141,7 @@ ms.locfileid: "63583144"
 |`3`|الجهاز غير متوافق|**خطوات استكشاف الأخطاء وإصلاحها:** تأكد من عدم نشر سياسات التكئب أو إيقاف التشغيل على الجهاز نفسه في الوقت نفسه.|
 |
 
-#### <a name="mobile-device-management-mdm-event-logs"></a>سجلات أحداث إدارة أجهزة المحمول (MDM)
+#### <a name="mobile-device-management-mdm-event-logs"></a>سجلات إدارة الجهاز المحمول (MDM)
 
 عرض سجلات أحداث MDM لا استكشاف الأخطاء التي قد تحدث أثناء ال متنهار وإصلاحها:
 
@@ -170,12 +170,12 @@ ms.locfileid: "63583144"
 
 ### <a name="view-agent-onboarding-errors-in-the-device-event-log"></a>عرض أخطاء تسجيل العامل في سجل أحداث الجهاز
 
-1. انقر **فوق** بدء، وا اكتب **عارض الأحداث**، ثم اضغط على **Enter**.
+1. انقر **فوق** بدء، **عارض الأحداث**، ثم اضغط على **Enter**.
 
-2. في الجزء **عارض الأحداث (المحلي)،** قم بتوسيع التطبيقات والخدمات **سجلات** \> **Microsoft** \>  \> Windows **SENSE**.
+2. في الجزء **عارض الأحداث (محلي)،** قم بتوسيع التطبيقات والخدمات **سجلات** \> **Microsoft** \>  \> Windows **SENSE**.
 
    > [!NOTE]
-   > SENSE هو الاسم الداخلي المستخدم للإشارة إلى المستشعر السلوكي الذي يستخدم Microsoft Defender لنقطة النهاية.
+   > SENSE هو الاسم الداخلي المستخدم للإشارة إلى المستشعر السلوكي الذي Microsoft Defender لنقطة النهاية.
 
 3. حدد **تشغيل** لتحميل السجل.
 
@@ -183,7 +183,7 @@ ms.locfileid: "63583144"
 
 5. على علامة **التبويب تصفية** ، ضمن **مستوى الحدث:** حدد **هام** **وتحذير** **وخطأ**، وانقر فوق **موافق**.
 
-   ![صورة لتصفية سجل عارض الأحداث.](images/filter-log.png)
+   :::image type="content" source="images/filter-log.png" alt-text="عامل عارض الأحداث تسجيل الدخول" lightbox="images/filter-log.png":::
 
 6. ستظهر الأحداث التي يمكن أن تشير إلى وجود مشاكل في **جزء** التشغيل. يمكنك محاولة استكشاف الأخطاء وإصلاحها استنادا إلى الحلول في الجدول التالي:
 
@@ -193,17 +193,17 @@ ms.locfileid: "63583144"
 
    |"معرّف الحدث"|رسالة|خطوات الحل|
    |:---:|---|---|
-   |`5`|فشل اتصال خدمة Microsoft Defender for Endpoint إلى الخادم في _المتغير_|[تأكد من أن الجهاز لديه اتصال بالإنترنت](#ensure-the-device-has-an-internet-connection).|
-   |`6`|لا يتم تعيين Microsoft Defender لخدمة Endpoint كما لم يتم العثور على معلمات التكوين. رمز الفشل: _متغير_|[تشغيل البرنامج النصي للدبور مرة أخرى](configure-endpoints-script.md).|
-   |`7`|فشل Microsoft Defender لخدمة نقطة النهاية في قراءة معلمات التكوين. رمز الفشل: _متغير_|[تأكد من أن الجهاز لديه اتصال](#ensure-the-device-has-an-internet-connection) بالإنترنت، ثم قم بتشغيل عملية التكامل بالكامل مرة أخرى.|
-   |`9`|فشلت خدمة Microsoft Defender for Endpoint في تغيير نوع البدء الخاص بها. رمز الفشل: متغير|إذا حدث الحدث أثناء التكهين، فحاول إعادة التشغيل ثم إعادة تشغيل البرنامج النصي للدبوس. للحصول على مزيد من المعلومات، [راجع تشغيل البرنامج النصي للدبور مرة أخرى](configure-endpoints-script.md). <br><br>إذا حدث الحدث أثناء إيقاف التشغيل، فاتصل بالدعم.|
-   |`10`|فشلت خدمة Microsoft Defender for Endpoint في استمرار معلومات التكوين. رمز الفشل: متغير|إذا حدث الحدث أثناء التكهين، فحاول إعادة تشغيل البرنامج النصي للدبور. للحصول على مزيد من المعلومات، [راجع تشغيل البرنامج النصي للدبور مرة أخرى](configure-endpoints-script.md). <br><br>إذا استمرت المشكلة، فاتصل بالدعم.|
-   |`15`|يتعذر على Microsoft Defender ل Endpoint بدء قناة الأوامر باستخدام عنوان URL: _متغير_|[تأكد من أن الجهاز لديه اتصال بالإنترنت](#ensure-the-device-has-an-internet-connection).|
-   |`17`|فشلت خدمة Microsoft Defender لنقطة النهاية في تغيير موقع خدمة "تجارب المستخدمين المتصلين" و"بيانات الاستخدام". رمز الفشل: متغير|[تشغيل البرنامج النصي للدبور مرة أخرى](configure-endpoints-script.md). إذا استمرت المشكلة، فاتصل بالدعم.|
-   |`25`|فشلت خدمة Microsoft Defender لنقطة النهاية في إعادة تعيين حالة الصحة في السجل. رمز الفشل: _متغير_|اتصل بالدعم.|
-   |`27`|فشل تمكين Microsoft Defender ل وضع نقطة النهاية في Windows Defender. فشلت عملية التكهين. رمز الفشل: متغير|اتصل بالدعم.|
+   |`5`|Microsoft Defender لنقطة النهاية خدمة الاتصال للخادم عند _المتغير_|[تأكد من أن الجهاز لديه اتصال بالإنترنت](#ensure-the-device-has-an-internet-connection).|
+   |`6`|Microsoft Defender لنقطة النهاية الخدمة غير مواد كما لم يتم العثور على معلمات الboarding. رمز الفشل: _متغير_|[تشغيل البرنامج النصي للدبور مرة أخرى](configure-endpoints-script.md).|
+   |`7`|Microsoft Defender لنقطة النهاية خدمة الخدمة قراءة معلمات التكهين. رمز الفشل: _متغير_|[تأكد من أن الجهاز لديه اتصال](#ensure-the-device-has-an-internet-connection) بالإنترنت، ثم قم بتشغيل عملية التكامل بالكامل مرة أخرى.|
+   |`9`|Microsoft Defender لنقطة النهاية الخدمة إلى تغيير نوع البدء. رمز الفشل: متغير|إذا حدث الحدث أثناء التكهين، فحاول إعادة التشغيل ثم إعادة تشغيل البرنامج النصي للدبوس. للحصول على مزيد من المعلومات، [راجع تشغيل البرنامج النصي للدبور مرة أخرى](configure-endpoints-script.md). <br><br>إذا حدث الحدث أثناء إيقاف التشغيل، فاتصل بالدعم.|
+   |`10`|Microsoft Defender لنقطة النهاية فشل الخدمة في الاستمرار في معلومات الboarding. رمز الفشل: متغير|إذا حدث الحدث أثناء التكهين، فحاول إعادة تشغيل البرنامج النصي للدبور. للحصول على مزيد من المعلومات، [راجع تشغيل البرنامج النصي للدبور مرة أخرى](configure-endpoints-script.md). <br><br>إذا استمرت المشكلة، فاتصل بالدعم.|
+   |`15`|Microsoft Defender لنقطة النهاية بدء قناة الأوامر باستخدام عنوان URL: _متغير_|[تأكد من أن الجهاز لديه اتصال بالإنترنت](#ensure-the-device-has-an-internet-connection).|
+   |`17`|Microsoft Defender لنقطة النهاية هذه الخدمة إلى تغيير موقع خدمة "تجارب المستخدمين المتصلين" و"بيانات الاستخدام". رمز الفشل: متغير|[تشغيل البرنامج النصي للدبور مرة أخرى](configure-endpoints-script.md). إذا استمرت المشكلة، فاتصل بالدعم.|
+   |`25`|Microsoft Defender لنقطة النهاية الخدمة بإعادة تعيين حالة الصحة في السجل. رمز الفشل: _متغير_|اتصل بالدعم.|
+   |`27`|فشل تمكين Microsoft Defender لنقطة النهاية في Windows Defender. فشلت عملية التكهين. رمز الفشل: متغير|اتصل بالدعم.|
    |`29`|فشل قراءة معلمات إيقاف التشغيل. نوع الخطأ: ٪1، رمز الخطأ: ٪2، الوصف: ٪3|تأكد من أن الجهاز لديه اتصال بالإنترنت، ثم قم بتشغيل عملية إيقاف التشغيل بالكامل مرة أخرى.|
-   |`30`|فشل تعطيل وضع $(build.sense.productDisplayName) في Microsoft Defender ل Endpoint. رمز الفشل: ٪1|اتصل بالدعم.|
+   |`30`|فشل تعطيل وضع $(build.sense.productDisplayName) في Microsoft Defender لنقطة النهاية. رمز الفشل: ٪1|اتصل بالدعم.|
    |`32`|فشل طلب خدمة $(build.sense.productDisplayName) لإيقاف تشغيلها بعد عملية إيقاف التشغيل. رمز الفشل: ٪1|تحقق من أن نوع بدء الخدمة يدوي وأبدأ تشغيل الجهاز.|
    |`55`|فشل إنشاء "برنامج تأمين ETW" التلقائي. رمز الفشل: ٪1|إعادة تشغيل الجهاز.|
    |`63`|تحديث نوع بدء الخدمة الخارجية. الاسم: ٪1، نوع البدء الفعلي: ٪2، نوع البدء المتوقع: ٪3، رمز الخروج: ٪4|تحديد ما الذي يتسبب في حدوث تغييرات في نوع بدء الخدمة المذكورة. إذا لم تكن رمز الخروج 0، فصلح نوع البدء يدويا إلى نوع البدء المتوقع.|
@@ -212,7 +212,7 @@ ms.locfileid: "63583144"
    |`69`|تم إيقاف الخدمة. اسم الخدمة: ٪1|ابدأ تشغيل الخدمة المذكورة. اتصل بالدعم في حالة استمراره.|
    |
 
-هناك مكونات إضافية على الجهاز يعتمد عليها عامل Microsoft Defender لنقطة النهاية لكي يعمل بشكل صحيح. إذا لم يكن هناك أي أخطاء ذات صلة بالتهيئة في سجل أحداث عامل Microsoft Defender لنقطة النهاية، فاتبع الخطوات التالية للتأكد من تكوين المكونات الإضافية بشكل صحيح.
+هناك مكونات إضافية على الجهاز يعتمد Microsoft Defender لنقطة النهاية العامل على تشغيلها بشكل صحيح. إذا لم يكن هناك أي أخطاء ذات صلة بالتهيئة في سجل أحداث Microsoft Defender لنقطة النهاية، فاتبع الخطوات التالية للتأكد من تكوين المكونات الإضافية بشكل صحيح.
 
 <span id="ensure-the-diagnostics-service-is-enabled" />
 
@@ -240,7 +240,7 @@ ms.locfileid: "63583144"
 
    إذا تم تمكين الخدمة، يجب أن تبدو النتيجة على شكل لقطة الشاشة التالية:
 
-   ![نتيجة أمر استعلام sc ل diagtrack.](images/windefatp-sc-qc-diagtrack.png)
+   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="نتيجة أمر استعلام sc ل diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
 
    `START_TYPE` إذا لم يتم تعيين إلى `AUTO_START`، فسوف تحتاج إلى تعيين الخدمة للبدء تلقائيا.
 
@@ -272,11 +272,11 @@ ms.locfileid: "63583144"
 
 ### <a name="ensure-the-device-has-an-internet-connection"></a>التأكد من أن الجهاز لديه اتصال بالإنترنت
 
-يتطلب مستشعر Microsoft Defender لنقطة النهاية من Microsoft Windows HTTP (WinHTTP) الإبلاغ عن بيانات المستشعر والتواصل مع خدمة Microsoft Defender for Endpoint.
+يتطلب Microsoft Defender لنقطة النهاية المستشعر من Microsoft Windows HTTP (WinHTTP) الإبلاغ عن بيانات المستشعر والتواصل مع Microsoft Defender لنقطة النهاية الخدمة.
 
 إن WinHTTP مستقل عن إعدادات وكيل استعراض الإنترنت وتطبيقات سياق المستخدم الأخرى ويجب أن يكون قادرا على الكشف عن خوادم الوكيل المتوفرة في بيئتك الخاصة.
 
-للتأكد من أن المستشعر لديه اتصال الخدمة، اتبع الخطوات الموضحة في الموضوع التحقق من اتصال العميل ب [Microsoft Defender ل عناوين URL لخدمة نقطة](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls) النهاية.
+للتأكد من أن المستشعر لديه اتصال الخدمة، اتبع الخطوات الموضحة في الموضوع التحقق من اتصال العميل [Microsoft Defender لنقطة النهاية URL للخدمة](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls).
 
 إذا فشلت عملية التحقق وكانت بيئتك تستخدم وكيلا للاتصال بالإنترنت، فاتبع الخطوات الموضحة في الموضوع تكوين الوكيل وإعدادات [اتصال الإنترنت.](configure-proxy-internet.md)
 
@@ -287,18 +287,18 @@ ms.locfileid: "63583144"
 >
 > يضمن التحديث عدم برنامج الحماية من الفيروسات من Microsoft Defender إيقاف تشغيل الأجهزة العميلة عبر نهج النظام.
 
-**المشكلة**: لا تبدأ خدمة Microsoft Defender for Endpoint بعد التكوين.
+**المشكلة**: لا Microsoft Defender لنقطة النهاية تشغيل خدمة البريد بعد الboarding.
 
 **العرض**: اكتملت عملية التكهين بنجاح، ولكنك ترى الخطأ 577 أو الخطأ 1058 عند محاولة بدء الخدمة.
 
-**الحل**: إذا كانت أجهزتك تقوم بتشغيل عميل مكافحة البرامج الضارة من جهة خارجية، يحتاج وكيل Microsoft Defender for Endpoint إلى تمكين برنامج التشغيل المبكر لمكافحة البرامج الضارة (ELAM). يجب أن تضمن عدم إيقاف تشغيله بواسطة نهج النظام.
+**الحل**: إذا كانت أجهزتك تعمل عميلا لمكافحة البرامج الضارة من جهة خارجية، فإن Microsoft Defender لنقطة النهاية يحتاج إلى تمكين برنامج تشغيل برنامج تشغيل مبكر لمكافحة البرامج الضارة (ELAM). يجب أن تضمن عدم إيقاف تشغيله بواسطة نهج النظام.
 
 - استنادا إلى الأداة التي تستخدمها لتنفيذ سياسات، ستحتاج إلى التحقق من مسح Windows Defender التالية:
 
   - DisableAntiSpyware
   - DisableAntiVirus
 
-  على سبيل المثال، في نهج المجموعة، يجب ألا تكون هناك إدخالات مثل القيم التالية:
+  على سبيل المثال، في نهج المجموعة يجب عدم وجود إدخالات مثل القيم التالية:
 
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiSpyware"/></Key>`
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
@@ -310,7 +310,7 @@ ms.locfileid: "63583144"
 
 - يمكنك أيضا التحقق من قيم مفتاح التسجيل السابقة للتحقق من تعطيل النهج، عن طريق فتح مفتاح التسجيل `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
-    ![صورة لمفتاح التسجيل برنامج الحماية من الفيروسات من Microsoft Defender.](images/atp-disableantispyware-regkey.png)
+  :::image type="content" source="images/atp-disableantispyware-regkey.png" alt-text="مفتاح التسجيل برنامج الحماية من الفيروسات من Microsoft Defender" lightbox="images/atp-disableantispyware-regkey.png":::
 
    > [!NOTE]
    > يجب Windows خدمات Defender (wdboot و wdfilter و wdnisdrv و wdnissvc و windefend) في حالتها الافتراضية. إن تغيير بدء تشغيل هذه الخدمات غير معتمد وقد يجبرك على إعادة إدارة النظام.
@@ -333,19 +333,19 @@ ms.locfileid: "63583144"
 
 قد تحتاج أيضا إلى التحقق مما يلي:
 
-- تحقق من وجود Microsoft Defender لخدمة نقطة النهاية قيد التشغيل في علامة **التبويب عمليات** في **إدارة المهام**. على سبيل المثال:
+- تحقق من وجود خدمة Microsoft Defender لنقطة النهاية قيد التشغيل في علامة **التبويب** عمليات في **إدارة المهام**. على سبيل المثال:
 
-    ![صورة ل طريقة عرض العملية مع تشغيل Microsoft Defender لخدمة نقطة النهاية.](images/atp-task-manager.png)
+  :::image type="content" source="images/atp-task-manager.png" alt-text="طريقة عرض العملية مع Microsoft Defender لنقطة النهاية قيد التشغيل" lightbox="images/atp-task-manager.png":::
 
-- تحقق **من إدارة** \>  \> عمليات سجلات سجلات خدمات وتطبيقات عارض الأحداث لمعرفة ما إذا كانت هناك أي أخطاء.
+- تحقق **عارض الأحداث** \> **إدارة** \> عمليات سجلات الخدمات والتطبيقات لمعرفة ما إذا كان هناك أي أخطاء.
 
 - في **الخدمات**، تحقق مما إذا كان **وكيل مراقبة Microsoft** قيد التشغيل على الخادم. على سبيل المثال
 
-    ![صورة الخدمات.](images/atp-services.png)
+  :::image type="content" source="images/atp-services.png" alt-text="الخدمات" lightbox="images/atp-services.png":::
 
 - في **Microsoft Monitoring Agent** \> **Azure Log Analytics (OMS)،** تحقق من مساحات العمل وتحقق من تشغيل الحالة.
 
-    ![صورة لخصائص وكيل مراقبة Microsoft.](images/atp-mma-properties.png)
+  :::image type="content" source="images/atp-mma-properties.png" alt-text="خصائص وكيل مراقبة Microsoft" lightbox="images/atp-mma-properties.png":::
 
 - تحقق من أن الأجهزة تنعكس في قائمة **الأجهزة** في المدخل.
 
@@ -365,126 +365,127 @@ ms.locfileid: "63583144"
 
 
 > [!NOTE]
-> لا تكون الخطوات التالية ذات صلة إلا عند استخدام Microsoft Endpoint Configuration Manager. للحصول على مزيد من التفاصيل حول استخدام Microsoft Endpoint Configuration Manager، راجع [Microsoft Defender لنقطة النهاية](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
+> لا تكون الخطوات التالية ذات صلة إلا عند استخدام Microsoft Endpoint Configuration Manager. للحصول على مزيد من التفاصيل حول استخدام Microsoft Endpoint Configuration Manager[، راجع Microsoft Defender لنقطة النهاية](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
 1. إنشاء تطبيق في Microsoft Endpoint Configuration Manager.
 
-    ![صورة Microsoft Endpoint Configuration Manager التكوين1.](images/mecm-1.png)
+   :::image type="content" source="images/mecm-1.png" alt-text="الإعداد Microsoft Endpoint Configuration Manager-1" lightbox="images/mecm-1.png":::
 
 2. حدد **تحديد معلومات التطبيق يدويا**.
 
-    ![صورة Microsoft Endpoint Configuration Manager التكوين2.](images/mecm-2.png)
+   :::image type="content" source="images/mecm-2.png" alt-text="الإعداد Microsoft Endpoint Configuration Manager-2" lightbox="images/mecm-2.png":::
 
 3. حدد معلومات حول التطبيق، ثم حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager 3.](images/mecm-3.png)
+   :::image type="content" source="images/mecm-3.png" alt-text="الإعداد Microsoft Endpoint Configuration Manager-3" lightbox="images/mecm-3.png":::
 
 4. حدد معلومات حول مركز البرامج، ثم حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager التكوين4.](images/mecm-4.png)
+   :::image type="content" source="images/mecm-4.png" alt-text="الإعداد Microsoft Endpoint Configuration Manager-4" lightbox="images/mecm-4.png":::
 
 5. في **أنواع النشر،** حدد **إضافة**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين5.](images/mecm-5.png)
+   :::image type="content" source="images/mecm-5.png" alt-text="تكوين Microsoft Endpoint Configuration Manager-5" lightbox="images/mecm-5.png":::
 
 6. حدد **تحديد معلومات نوع النشر يدويا**، ثم حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين 6.](images/mecm-6.png)
+   :::image type="content" source="images/mecm-6.png" alt-text="الإعداد Microsoft Endpoint Configuration Manager-6" lightbox="images/mecm-6.png":::
 
 7. حدد معلومات حول نوع النشر، ثم حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين7.](images/mecm-7.png)
+   :::image type="content" source="images/mecm-7.png" alt-text="تكوين Microsoft Endpoint Configuration Manager-7" lightbox="images/mecm-7.png":::
 
 8. في **برنامج** \> **تثبيت المحتوى** ، حدد الأمر: `net start sense`.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين8.](images/mecm-8.png)
+   :::image type="content" source="images/mecm-8.png" alt-text="الإعداد Microsoft Endpoint Configuration Manager-8" lightbox="images/mecm-8.png":::
 
 9. في **أسلوب الكشف**، حدد **تكوين القواعد للكشف عن** وجود نوع النشر هذا، ثم حدد **إضافة عبارة**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين9.](images/mecm-9.png)
+   :::image type="content" source="images/mecm-9.png" alt-text="الإعداد Microsoft Endpoint Configuration Manager-9" lightbox="images/mecm-9.png":::
 
 10. حدد تفاصيل قاعدة الكشف التالية، ثم حدد **موافق**:
 
-    ![صورة Microsoft Endpoint Configuration Manager 10.](images/mecm-10.png)
+    :::image type="content" source="images/mecm-10.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 10" lightbox="images/mecm-10.png":::
 
 11. في **طريقة الكشف،** حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager 11.](images/mecm-11.png)
+    :::image type="content" source="images/mecm-11.png" alt-text="الإعداد Microsoft Endpoint Configuration Manager-11" lightbox="images/mecm-11.png":::
 
 12. في **تجربة المستخدم**، حدد المعلومات التالية، ثم حدد **التالي**:
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين 12.](images/mecm-12.png)
+    :::image type="content" source="images/mecm-12.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 12" lightbox="images/mecm-12.png":::
 
 13. في **المتطلبات**، حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager 13.](images/mecm-13.png)
+    :::image type="content" source="images/mecm-13.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 13" lightbox="images/mecm-13.png":::
 
 14. في **التبعيات**، حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين14.](images/mecm-14.png)
+    :::image type="content" source="images/mecm-14.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 14" lightbox="images/mecm-14.png":::
 
 15. في **الملخص،** حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين15.](images/mecm-15.png)
+    :::image type="content" source="images/mecm-15.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 15" lightbox="images/mecm-15.png":::
 
 16. في **"الإكمال**"، حدد **إغلاق**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين16.](images/mecm-16.png)
+    :::image type="content" source="images/mecm-16.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 16" lightbox="images/mecm-16.png":::
 
 17. في **أنواع النشر**، حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager 17.](images/mecm-17.png)
+    :::image type="content" source="images/mecm-17.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 17" lightbox="images/mecm-17.png":::
 
 18. في **الملخص،** حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين 18.](images/mecm-18.png)
+    :::image type="content" source="images/mecm-18.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 18" lightbox="images/mecm-18.png":::
 
-    يتم عرض الحالة بعد ذلك: ![صورة Microsoft Endpoint Configuration Manager 19.](images/mecm-19.png)
+    يتم عرض الحالة بعد ذلك: :::image type="content" source="images/mecm-19.png" alt-text="Microsoft Endpoint Configuration Manager-19" lightbox="images/mecm-19.png":::
 
 19. في **"الإكمال**"، حدد **إغلاق**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين20.](images/mecm-20.png)
+    :::image type="content" source="images/mecm-20.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 20" lightbox="images/mecm-20.png":::
 
 20. يمكنك الآن نشر التطبيق بالنقر ب الماوس الأيمن فوق التطبيق وتحديد **نشر**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين21.](images/mecm-21.png)
+    :::image type="content" source="images/mecm-21.png" alt-text="تكوين Microsoft Endpoint Configuration Manager-21" lightbox="images/mecm-21.png":::
 
 21. بشكل **عام**، **حدد توزيع المحتوى تلقائيا للتبعيات** **واستعراض.**
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين22.](images/mecm-22.png)
+    :::image type="content" source="images/mecm-22.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 22" lightbox="images/mecm-22.png":::
 
 22. في **المحتوى** ، حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين 23.](images/mecm-23.png)
+    :::image type="content" source="images/mecm-23.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 23" lightbox="images/mecm-23.png":::
 
 23. في **إعدادات النشر،** حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين 24.](images/mecm-24.png)
+    :::image type="content" source="images/mecm-24.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 24" lightbox="images/mecm-24.png":::
 
 24. في **الجدولة****، حدد في أقرب وقت ممكن بعد الوقت المتوفر**، ثم حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين25.](images/mecm-25.png)
+    :::image type="content" source="images/mecm-25.png" alt-text="الإعداد Microsoft Endpoint Configuration Manager-25" lightbox="images/mecm-25.png":::
 
 25. في **تجربة المستخدم،** حدد **إجراء التغييرات في الموعد النهائي أو أثناء نافذة الصيانة (يتطلب إعادة التشغيل)،** ثم حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين 26.](images/mecm-26.png)
+    :::image type="content" source="images/mecm-26.png" alt-text="الإعداد Microsoft Endpoint Configuration Manager-26" lightbox="images/mecm-26.png":::
 
 26. في **التنبيهات** ، حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين27.](images/mecm-27.png)
+    :::image type="content" source="images/mecm-27.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 27" lightbox="images/mecm-27.png":::
 
 27. في **الملخص،** حدد **التالي**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين28.](images/mecm-28.png)
+    :::image type="content" source="images/mecm-28.png" alt-text="تكوين Microsoft Endpoint Configuration Manager 28" lightbox="images/mecm-28.png":::
+      
 
-    يتم عرض الحالة بعد ذلك ![صورة Microsoft Endpoint Configuration Manager تكوين29.](images/mecm-29.png)
+    يتم عرض الحالة بعد ذلك :::image type="content" source="images/mecm-29.png" alt-text="Microsoft Endpoint Configuration Manager تكوين-29" lightbox="images/mecm-29.png":::
 
 28. في **"الإكمال**"، حدد **إغلاق**.
 
-    ![صورة Microsoft Endpoint Configuration Manager تكوين30.](images/mecm-30.png)
+    :::image type="content" source="images/mecm-30.png" alt-text="الإعداد Microsoft Endpoint Configuration Manager-30" lightbox="images/mecm-30.png":::
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
-- [استكشاف الأخطاء في Microsoft Defender لنقطة النهاية وإصلاحها](troubleshoot-mdatp.md)
+- [استكشاف الأخطاء وإصلاحها Microsoft Defender لنقطة النهاية](troubleshoot-mdatp.md)
 - [الأجهزة المجهزة](onboard-configure.md)
 - [تكوين إعدادات اتصال الإنترنت ووكيل الجهاز](configure-proxy-internet.md)

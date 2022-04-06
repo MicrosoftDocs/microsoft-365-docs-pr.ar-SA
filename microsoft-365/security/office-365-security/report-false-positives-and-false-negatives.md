@@ -13,12 +13,12 @@ ms.collection:
 description: تعرف على كيفية الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة في Outlook باستخدام ميزة "رسالة التقرير".
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5539525b6d752223c4895fc62ff49a90768a5b5
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: f2181df44f8d193f8c19c508451733773bd20708
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "63578205"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473493"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة في Outlook
 
@@ -26,7 +26,7 @@ ms.locfileid: "63578205"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
@@ -69,9 +69,9 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 
 1. حدد المزيد **من** الإجراءات في الزاوية العلوية اليسرى من الرسالة المحددة، وحدد الإبلاغ عن رسالة من القائمة  المنسدلة، **ثم حدد البريد** الإلكتروني غير الهام أو **التصيد الاحتيالي**.
 
-   ![رسالة التقرير - مزيد من الإجراءات.](../../media/report-message-more-actions.png)
+   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="أيقونة المزيد من الإجراءات" lightbox="../../media/report-message-more-actions.png":::
 
-   ![رسالة التقرير - البريد الإلكتروني غير الهام والتصيد الاحتيالي.](../../media/report-message-junk-phishing.png)
+   :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="الخيار &quot;البريد الإلكتروني غير الهام والتصيد الاحتيالي&quot; في جزء &quot;رسالة التقرير&quot;" lightbox="../../media/report-message-junk-phishing.png":::
 
 2. سيتم إرسال الرسائل المحددة إلى Microsoft لتحليلها و:
    - تم نقلها إلى مجلد البريد الإلكتروني غير الهام إذا تم إرسال التقارير عنها كبريد عشوائي.
@@ -81,9 +81,9 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 
 1. حدد المزيد **من** الإجراءات في الزاوية العلوية اليسرى من الرسالة المحددة، وحدد الإبلاغ عن رسالة من القائمة  المنسدلة، ثم حدد **ليس غير هام**.
 
-   ![رسالة التقرير - مزيد من الإجراءات.](../../media/report-message-more-actions.png)
+   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="الأيقونة التي توفر المزيد من الإجراءات" lightbox="../../media/report-message-more-actions.png":::
 
-   ![رسالة التقرير - ليست غير هام.](../../media/report-message-not-junk.png)
+   :::image type="content" source="../../media/report-message-not-junk.png" alt-text="الخيار &quot;ليس بريدا غير هام&quot; ضمن جزء &quot;رسالة التقرير&quot;" lightbox="../../media/report-message-not-junk.png":::
 
 2. سيتم إرسال الرسالة المحددة إلى Microsoft لتحليلها، كما سيتم نقلها إلى علبة الوارد أو أي مجلد محدد آخر.
 

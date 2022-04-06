@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: تعرف على خزينة الارتباطات في Defender for Office 365 لحماية مؤسسة من التصيد الاحتيالي وهجمة أخرى تستخدم عناوين URL الضارة. اكتشف Teams خزينة الارتباطات، وشاهد رسومات خزينة الارتباطات.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 736efeb805e45170ec6471b57fc35005d0a12311
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8bd4773d3f712adf13ac2a006f5d8450c58fc89a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63583211"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682075"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>خزينة ارتباطات في Microsoft Defender Office 365
 
@@ -84,10 +84,6 @@ ms.locfileid: "63583211"
 
 يصف الجدول التالي سيناريوهات ارتباطات خزينة في مؤسسات Microsoft 365 و Office 365 التي تتضمن Defender for Office 365 (لاحظ أن عدم وجود ترخيص لا مشكلة أبدا في الأمثلة).
 
-<br>
-
-****
-
 |السيناريو|النتيجة|
 |---|---|
 |جان عضو في قسم التسويق. خزينة تشغيل حماية الارتباطات لتطبيقات Office 365 في الإعدادات العامة ل ارتباطات خزينة، كما يوجد نهج ارتباطات خزينة ينطبق على أعضاء قسم التسويق. يفتح 'جان' PowerPoint تقديمي في رسالة بريد إلكتروني، ثم ينقر فوق عنوان URL في العرض التقديمي.|محمي جانز بواسطة خزينة الارتباطات. <p> يتم تضمين جان في نهج ارتباطات خزينة، خزينة حماية الارتباطات لتطبيقات Office 365 يتم تشغيلها. <p> لمزيد من المعلومات حول متطلبات خزينة الارتباطات في تطبيقات Office 365، راجع المقطع [إعدادات](#safe-links-settings-for-office-365-apps) ارتباطات خزينة لتطبيقات Office 365 لاحقا في هذه المقالة.|
@@ -95,7 +91,6 @@ ms.locfileid: "63583211"
 |في مؤسسة بات، لم ينشئ أي مسؤول أي خزينة الارتباطات، ولكن خزينة الارتباطات لتطبيقات Office 365 يتم تشغيلها. يفتح باحات مستند Word ونقر فوق عنوان URL في الملف.|لا يحمي "بات" خزينة الارتباطات. <p> على الرغم خزينة تشغيل الحماية من الارتباطات لتطبيقات Office 365 بشكل عام، إلا أن بات غير مضمن في أي من سياسات ارتباطات خزينة النشطة، لذا لا يمكن تطبيق الحماية.|
 |في مؤسسة لي، `https://tailspintoys.com` يتم تكوينها في القائمة حظر عناوين **URL** التالية في الإعدادات العالمية خزينة الارتباطات. نهج خزينة الارتباطات التي تتضمن Lee موجود بالفعل. يتلقى لي رسالة بريد إلكتروني تحتوي على عنوان URL `https://tailspintoys.com/aboutus/trythispage`. ينقر لي فوق عنوان URL.|قد يتم حظر عنوان URL تلقائيا ل لي؛ يعتمد ذلك على إدخال URL في القائمة وعلى عميل البريد الإلكتروني الذي استخدمه لي. لمزيد من المعلومات، راجع القائمة ["حظر عناوين URL التالية" خزينة الارتباطات](#block-the-following-urls-list-for-safe-links) لاحقا في هذه المقالة.|
 |يعمل كل من جميل وهليا في contoso.com. منذ فترة طويلة، كان المسؤولون خزينة الارتباطات التي تنطبق على كل من جميل وهليا. يرسل جميل رسالة بريد إلكتروني إلى جوليا، دون أن يعلم أن البريد الإلكتروني يحتوي على عنوان URL ضار.|محمية من قبل **خزينة الارتباطات** إذا تم تكوين خزينة الارتباطات الداخلية الذي ينطبق عليها لتطبيقه على الرسائل بين المستلمين الداخليين. لمزيد من المعلومات، راجع المقطع خزينة [الارتباطات لرسائل البريد](#safe-links-settings-for-email-messages) الإلكتروني لاحقا في هذه المقالة.|
-|
 
 ## <a name="safe-links-settings-for-email-messages"></a>خزينة الارتباطات لرسائل البريد الإلكتروني
 
@@ -281,17 +276,12 @@ ms.locfileid: "63583211"
 
 يتم وصف أمثلة القيم التي يمكنك إدخالها ونتائجها في الجدول التالي:
 
-<br>
-
-****
-
 |القيمة|النتيجة|
 |---|---|
 |`contoso.com` <p> أو <p> `*contoso.com*`|كتل المجال والمجالات الفرعية والمسارات. على سبيل المثال، `https://www.contoso.com`و `https://sub.contoso.com`، و `https://contoso.com/abc` تم حظرها.|
 |`https://contoso.com/a`|كتل `https://contoso.com/a` ولكن ليس مواد فرعية إضافية مثل `https://contoso.com/a/b`.|
 |`https://contoso.com/a*`|كتل `https://contoso.com/a` ومواد فرعية إضافية مثل `https://contoso.com/a/b`.|
 |`https://toys.contoso.com*`|حظر مجال فرعي (`toys` في هذا المثال) مع السماح بالنقر فوق عناوين URL لمجال آخر (مثل `https://contoso.com` أو `https://home.contoso.com`).|
-|
 
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>قوائم "عدم إعادة كتابة عناوين URL التالية" في خزينة الارتباطات
 
@@ -323,17 +313,12 @@ ms.locfileid: "63583211"
 
 يتم وصف أمثلة القيم التي يمكنك إدخالها ونتائجها في الجدول التالي:
 
-<br>
-
-****
-
 |القيمة|النتيجة|
 |---|---|
 |`contoso.com`|يسمح بالوصول إلى `https://contoso.com` ولكن ليس إلى المسارات أو المناطق الفرعية.|
 |`*.contoso.com/*`|يسمح بالوصول إلى مجال ومجالات فرعية ومسارات (على سبيل المثال، `https://www.contoso.com`أو `https://www.contoso.com`أو أو `https://maps.contoso.com`أو `https://www.contoso.com/a`). <p> هذا الإدخال هو في جوهره أفضل من `*contoso.com*`، لأنه لا يسمح بالمواقع التي يحتمل أن تكون احتيالية، مثل أو `https://www.falsecontoso.com``https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|يسمح بالوصول إلى `https://contoso.com/a`، ولكن ليس إلى مواد فرعية مثل `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|السماح بالوصول إلى `https://contoso.com/a` والمواد الفرعية مثل `https://contoso.com/a/b`|
-|
 
 ## <a name="warning-pages-from-safe-links"></a>صفحات التحذير من خزينة الارتباطات
 

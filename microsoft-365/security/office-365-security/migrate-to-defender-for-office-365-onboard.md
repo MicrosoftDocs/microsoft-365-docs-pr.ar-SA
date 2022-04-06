@@ -1,5 +1,5 @@
 ---
-title: 'الترحيل إلى Microsoft Defender Office 365 3: Onboard'
+title: 'الترحيل إلى Microsoft Defender لـ Office 365 3: Onboard'
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,28 +16,28 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: migrationguides
-description: أكمل خطوات عملية عملية إعادة التهجر من خدمة حماية أو جهاز من جهة خارجية إلى Microsoft Defender Office 365 الحماية.
+description: أكمل الخطوات اللازمة لرأب خدمة حماية أو جهاز من جهة خارجية Microsoft Defender لـ Office 365 الحماية.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3798bdb28bb44b5148574b4c09a372ff564e47e5
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 9160a6fc79ba94e4cb86fb0f96f46e565c0f613c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "63574680"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467500"
 ---
-# <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>الترحيل إلى Microsoft Defender Office 365 - المرحلة 3: Onboard
+# <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>الترحيل إلى Microsoft Defender لـ Office 365 - المرحلة 3: Onboard
 
 **ينطبق على**
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 
 <br>
 
-|[![المرحلة 1: التحضير.](../../media/phase-diagrams/prepare.png)](migrate-to-defender-for-office-365-prepare.md) <br> [المرحلة 1: التحضير](migrate-to-defender-for-office-365-prepare.md)|[![المرحلة 2: إعداد.](../../media/phase-diagrams/setup.png)](migrate-to-defender-for-office-365-setup.md) <br> [المرحلة الثانية: إعداد](migrate-to-defender-for-office-365-setup.md)|![المرحلة 3: Onboard.](../../media/phase-diagrams/onboard.png) <br> المرحلة 3: Onboard|
+|[![المرحلة 1: التحضير.](../../media/phase-diagrams/prepare.png#lightbox)](migrate-to-defender-for-office-365-prepare.md) <br> [المرحلة 1: التحضير](migrate-to-defender-for-office-365-prepare.md)|[![المرحلة 2: إعداد.](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [المرحلة الثانية: إعداد](migrate-to-defender-for-office-365-setup.md)|![المرحلة 3: Onboard.](../../media/phase-diagrams/onboard.png) <br> المرحلة 3: Onboard|
 |---|---|---|
 |||*أنت هنا!*|
 
-مرحبا بك **في المرحلة 3: على متن** الترحيل إلى **[Microsoft Defender Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**! تتضمن مرحلة الترحيل هذه الخطوات التالية:
+مرحبا بك **في المرحلة 3: على متن** الترحيل **[إلى Microsoft Defender لـ Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**! تتضمن مرحلة الترحيل هذه الخطوات التالية:
 
 1. [بدء عملية ا متنوأ أمان Teams](#step-1-begin-onboarding-security-teams)
 2. [(اختياري) إعفاء مستخدمي التجربة من التصفية حسب خدمة الحماية الحالية](#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)
@@ -50,7 +50,7 @@ ms.locfileid: "63574680"
 
 ## <a name="step-1-begin-onboarding-security-teams"></a>الخطوة 1: بدء Teams
 
-إذا كان لدى مؤسستك فريق استجابة أمان، فقد حان الوقت لبدء دمج Microsoft Defender Office 365 في عمليات الاستجابة، بما في ذلك أنظمة حجز التذاكر. هذا موضوع بكامله، ولكن في بعض الأحيان يتم تجاهله. يضمن مشاركه فريق الاستجابة الأمنية مبكرا أن مؤسستك جاهزة للتعامل مع التهديدات عند تبديل سجلات MX. يجب أن تكون الاستجابة للحوادث مجهزه جيدا للتعامل مع المهام التالية:
+إذا كانت مؤسستك لديها فريق استجابة أمان، فقد حان الوقت لبدء دمج Microsoft Defender لـ Office 365 في عمليات الاستجابة، بما في ذلك أنظمة حجز التذاكر. هذا موضوع بكامله، ولكن في بعض الأحيان يتم تجاهله. يضمن مشاركه فريق الاستجابة الأمنية مبكرا أن مؤسستك جاهزة للتعامل مع التهديدات عند تبديل سجلات MX. يجب أن تكون الاستجابة للحوادث مجهزه جيدا للتعامل مع المهام التالية:
 
 - تعرف على الأدوات الجديدة ودمجها في التدفقات الموجودة. على سبيل المثال:
   - إدارة المسؤول للرسائل المعزولة مهمة. للحصول على الإرشادات، راجع [إدارة الرسائل والملفات المعزولة كمسؤول](manage-quarantined-messages-and-files.md).
@@ -59,7 +59,7 @@ ms.locfileid: "63574680"
 - ضبط [التنبيهات وتخصيصها](../../compliance/alert-policies.md) للعمليات التنظيمية.
 - إدارة قائمة انتظار الأحداث وإدارة المخاطر المحتملة.
 
-إذا قامت مؤسستك بشراء Microsoft Defender Office 365 2، يجب أن يبدأوا في التعرف على ميزات مثل "مستكشف التهديدات" و"الصيد المتقدم" و"الحوادث". للحصول على التدريبات ذات الصلة، راجع <https://aka.ms/mdoninja>.
+إذا كانت مؤسستك قد اشترت Microsoft Defender لـ Office 365 2، يجب أن يبدأوا في التعرف على ميزات مثل "مستكشف التهديدات" و"الصيد المتقدم" و"الحوادث" واستخدامها. للحصول على التدريبات ذات الصلة، راجع <https://aka.ms/mdoninja>.
 
 إذا كان فريق استجابة الأمان يقوم بتجميع الرسائل التي لم يتم مسحها وتحليلها، يمكنك تكوين علبة بريد SecOps لتلقي هذه الرسائل التي لم يتم حلها. للحصول على الإرشادات، راجع [تكوين علب بريد SecOps في نهج التسليم المتقدم](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
@@ -72,11 +72,11 @@ ms.locfileid: "63574680"
 - [API للصيد المتقدم](/microsoft-365/security/defender/api-advanced-hunting)
 - [واجهات برمجة التطبيقات للحوادث](/microsoft-365/security/defender/api-incident)
 
-إذا لم يكن لدى مؤسستك فريق استجابة أمان أو تدفقات عملية حالية، يمكنك استخدام هذا الوقت لت التعرف على ميزات البحث والاستجابة الأساسية في Defender for Office 365. لمزيد من المعلومات، راجع [التحقيق في التهديدات والاستجابة لها](office-365-ti.md).
+إذا لم يكن لدى مؤسستك فريق استجابة أمان أو تدفقات عملية حالية، يمكنك استخدام هذا الوقت لت التعرف على ميزات البحث والاستجابة الأساسية في Defender لـ Office 365. لمزيد من المعلومات، راجع [التحقيق في التهديدات والاستجابة لها](office-365-ti.md).
 
 ### <a name="rbac-roles"></a>أدوار RBAC
 
-تستند الأذونات في Defender for Office 365 إلى التحكم بالوصول المستند إلى الدور (RBAC) كما يتم شرحها في [الأذونات في](permissions-microsoft-365-security-center.md) مدخل Microsoft 365 Defender. هذه هي النقاط الهامة التي يجب تذكرها:
+تستند الأذونات في Defender لـ Office 365 إلى التحكم بالوصول المستند إلى الدور (RBAC) كما يتم شرحها في الأذونات [في Microsoft 365 Defender المدخل](permissions-microsoft-365-security-center.md). هذه هي النقاط الهامة التي يجب تذكرها:
 
 - تمنح أدوار Azure AD أذونات **لكل** أحمال العمل في Microsoft 365. على سبيل المثال، إذا أضفت مستخدما إلى مسؤول الأمان في مدخل Azure، فإن لديه أذونات مسؤول الأمان في كل مكان.
 - يمنح & الإلكتروني أدوار التعاون في Microsoft 365 Defender الإلكتروني أذونات لمدخل Microsoft 365 Defender، مركز التوافق في Microsoft 365، ومركز التوافق & الأمان الأقدم. على سبيل المثال، إذا أضفت مستخدما إلى مسؤول الأمان في مدخل Microsoft 365 Defender، فإن لديه حق الوصول إلى مسؤول الأمان فقط  في مدخل Microsoft 365 Defender و مركز التوافق في Microsoft 365 ومركز التوافق & الأمان.
@@ -87,7 +87,7 @@ ms.locfileid: "63574680"
 
 ## <a name="step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service"></a>الخطوة 2: (اختياري) إعفاء مستخدمي التجربة من التصفية حسب خدمة الحماية الحالية
 
-على الرغم من أن هذه الخطوة غير مطلوبة، يجب عليك التفكير في تكوين مستخدمي التجربة لتجاوز التصفية حسب خدمة الحماية الموجودة. يسمح هذا الإجراء ل Defender for Office 365 بمعالجة **جميع مهام** التصفية والحماية لمستخدمي التجربة. إذا لم تعفي مستخدمي التجربة من خدمة الحماية الحالية، فإن Defender for Office 365 يعمل بفعالية على حالات التفويت فقط من الخدمة الأخرى (تصفية الرسائل التي تمت تصفيتها بالفعل).
+على الرغم من أن هذه الخطوة غير مطلوبة، يجب عليك التفكير في تكوين مستخدمي التجربة لتجاوز التصفية حسب خدمة الحماية الموجودة. يسمح هذا الإجراء **Defender لـ Office 365 معالجة جميع** مهام التصفية والحماية لمستخدمي التجربة. إذا لم تعفي مستخدمي التجربة من خدمة الحماية الحالية، فإن Defender لـ Office 365 يعمل بفعالية فقط على حالات التفويات من الخدمة الأخرى (تصفية الرسائل التي تمت تصفيتها بالفعل).
 
 > [!NOTE]
 > هذه الخطوة مطلوبة بشكل صريح إذا كانت خدمة الحماية الحالية توفر التفاف الارتباطات، ولكنك تريد خزينة وظيفة الارتباطات. التفاف الارتباطات المزدوج غير معتمد.
@@ -127,7 +127,7 @@ ms.locfileid: "63574680"
 
 - في نهج مكافحة التصيد الاحتيالي باستخدام إعدادات الحماية النصية، غير قيمة إذا كشف معلومات معلومات  علبة البريد عن وجود مستخدم منتحل ومنتحل من إلى **عزل الرسالة**.
 
-لتعديل هذه السياسات، راجع تكوين سياسات مكافحة التصيد الاحتيالي [في Defender Office 365](configure-mdo-anti-phishing-policies.md).
+لتعديل هذه السياسات، راجع [تكوين سياسات](configure-mdo-anti-phishing-policies.md) مكافحة التصيد الاحتيالي في Defender لـ Office 365.
 
 بعد أن تكون قد لاحظت النتائج وأجرت أي تعديلات، انتقل إلى المقطع التالي لإجراء الفحص لرسائل الفحص التي تم الكشف عنها بواسطة انتحال المستخدم.
 
@@ -137,7 +137,7 @@ ms.locfileid: "63574680"
 
 تحقق من [معلومات انتحال](impersonation-insight.md) الشخصية لمعرفة ما يتم حظره كمحاولات انتحال المستخدم.
 
-لتعديل هذه السياسات، راجع تكوين سياسات مكافحة التصيد الاحتيالي [في Defender Office 365](configure-mdo-anti-phishing-policies.md).
+لتعديل هذه السياسات، راجع [تكوين سياسات](configure-mdo-anti-phishing-policies.md) مكافحة التصيد الاحتيالي في Defender لـ Office 365.
 
 بعد أن تكون قد لاحظت النتائج وأجرت أي تعديلات، انتقل إلى المقطع التالي لإجراء الفحص لرسائل الفحص التي تم الكشف عنها بواسطة انتحال المجال.
 
@@ -147,7 +147,7 @@ ms.locfileid: "63574680"
 
 تحقق من [معلومات انتحال](impersonation-insight.md) الشخصية لمعرفة ما يتم حظره كمحاولات لانتحال المجال.
 
-لتعديل هذه السياسات، راجع تكوين سياسات مكافحة التصيد الاحتيالي [في Defender Office 365](configure-mdo-anti-phishing-policies.md).
+لتعديل هذه السياسات، راجع [تكوين سياسات](configure-mdo-anti-phishing-policies.md) مكافحة التصيد الاحتيالي في Defender لـ Office 365.
 
 راقب النتائج وأعد أي تعديلات عند الضرورة.
 
@@ -155,12 +155,12 @@ ms.locfileid: "63574680"
 
 عندما يقوم مستخدمو التجربة ب الإبلاغ عن إيجابيات خاطئة وسلبيات خاطئة، ستظهر الرسائل على صفحة "الواجبات [المرسلة" في Microsoft 365 Defender الإلكتروني](admin-submission.md). يمكنك الإبلاغ عن الرسائل التي تم تحديدها بشكل غير جيد إلى Microsoft لتحليلها واستخدام المعلومات لضبط الإعدادات والاستثناءات في إعدادات التجربة حسب الحاجة.
 
-استخدم الميزات التالية لمراقبة إعدادات الحماية في Defender for Office 365:
+استخدم الميزات التالية لمراقبة إعدادات الحماية في Defender لـ Office 365:
 
 - [الفحص](manage-quarantined-messages-and-files.md)
 - [مستكشف التهديدات](email-security-in-microsoft-defender.md)
 - [تقارير أمان البريد الإلكتروني](view-email-security-reports.md)
-- [Defender for Office 365 التقارير](view-reports-for-mdo.md)
+- [Defender لـ Office 365 التقارير](view-reports-for-mdo.md)
 - [تحليلات تدفق البريد](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
 - [تقارير تدفق البريد](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
@@ -192,7 +192,7 @@ ms.locfileid: "63574680"
 
 2. إيقاف تشغيل قاعدة تدفق البريد SCL=-1 (يمكنك إيقاف تشغيلها دون حذفها).
 
-3. تحقق من أن التغييرات السابقة قد تم تفعيلها، وأن Defender for Office 365 تم تمكينه الآن بشكل صحيح لجميع المستخدمين. في هذه المرحلة، يسمح الآن لجميع ميزات الحماية ل Defender for Office 365 بالتصرف على البريد لكل المستلمين، ولكن تم فحص هذا البريد بالفعل بواسطة خدمة الحماية الموجودة.
+3. تحقق من أن التغييرات السابقة قد تم تفعيلها، وأن Defender لـ Office 365 تم تمكينها الآن بشكل صحيح لجميع المستخدمين. في هذه المرحلة، يسمح الآن لجميع ميزات الحماية الخاصة ب Defender لـ Office 365 بالتصرف على البريد لكل المستلمين، ولكن تم فحص هذا البريد بالفعل بواسطة خدمة الحماية الموجودة.
 
 يمكنك التوقف مؤقتا في هذه المرحلة لتسجيل البيانات وضبطها على نطاق أوسع.
 
@@ -223,10 +223,10 @@ ms.locfileid: "63574680"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-تهانينا! لقد أكملت عملية [الترحيل إلى Microsoft Defender Office 365](migrate-to-defender-for-office-365.md#the-migration-process)! نظرا لأنك اتبعت الخطوات في دليل الترحيل هذا، يجب أن تكون الأيام القليلة الأولى التي يتم فيها تسليم البريد مباشرة إلى Microsoft 365 أكثر سلاسة.
+تهانينا! لقد أكملت عملية [الترحيل إلى Microsoft Defender لـ Office 365](migrate-to-defender-for-office-365.md#the-migration-process)! نظرا لأنك اتبعت الخطوات في دليل الترحيل هذا، يجب أن تكون الأيام القليلة الأولى التي يتم فيها تسليم البريد مباشرة إلى Microsoft 365 أكثر سلاسة.
 
-يمكنك الآن بدء التشغيل والصيانة العاديين ل Defender Office 365. راقب المشاكل التي تتشابه مع ما واجهته أثناء التجربة واراقبها، ولكن على نطاق أوسع. ستكون [معلومات المعلومات المنتحبة](learn-about-spoof-intelligence.md) ورؤى [](impersonation-insight.md) انتحال الشخصية مفيدة للغاية، ولكن يجب أن تفكر في جعل الأنشطة التالية تكرارا منتظما:
+يمكنك الآن بدء التشغيل والصيانة العاديين Defender لـ Office 365. راقب المشاكل التي تتشابه مع ما واجهته أثناء التجربة واراقبها، ولكن على نطاق أوسع. ستكون [معلومات المعلومات المنتحبة](learn-about-spoof-intelligence.md) ورؤى [](impersonation-insight.md) انتحال الشخصية مفيدة للغاية، ولكن يجب أن تفكر في جعل الأنشطة التالية تكرارا منتظما:
 
-- مراجعة عمليات إرسال المستخدمين، لا سيما رسائل التصيد الاحتيالي التي تم إعلام [المستخدم بها](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)
+- مراجعة عمليات إرسال المستخدمين، لا سيما رسائل التصيد الاحتيالي التي تم إعلام [المستخدم بها](automated-investigation-response-office.md)
 - راجع التجاوزات في تقرير [حالة الحماية من المخاطر](view-email-security-reports.md#threat-protection-status-report).
 - استخدم [استعلامات "البحث](/microsoft-365/security/defender/advanced-hunting-example) المتقدم" للبحث عن فرص الضبط والرسائل ذات المخاطر.

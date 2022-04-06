@@ -1,6 +1,6 @@
 ---
 title: تشغيل محلل العميل على Windows
-description: تعرف على كيفية تشغيل Microsoft Defender for Endpoint Client Analyzer على Windows.
+description: تعرف على كيفية تشغيل Microsoft Defender لنقطة النهاية العميل على Windows.
 keywords: محلل العميل، استكشاف الأخطاء وإصلاحها، محلل، mdeanalyzer، windows
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 092a89e41efebafae36e81f5faa7cd3b52fde8d9
-ms.sourcegitcommit: af73b93a904ce8604be319e8dc7cadaf65d50534
+ms.openlocfilehash: 5fa284f5c57214f356bb6b90e12ca60ae019d277
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "63571990"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467126"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>تشغيل محلل العميل على Windows
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 1. قم [بتنزيل أداة محلل عميل MDE](https://aka.ms/mdatpanalyzer) إلى Windows الذي تحتاج إلى التحقق منه.
 
@@ -61,17 +61,17 @@ ms.locfileid: "63571990"
 تم توقيع Microsoft على كل البرامج النصية والوحدات النمطية في PowerShell المضمنة مع المحلل.
 إذا تم تعديل الملفات بأي طريقة، فمن المتوقع أن يخرج المحلل بالخطأ التالي:
 
-![صورة لخطأ محلل العميل](images/sigerror.png)
+:::image type="content" source="images/sigerror.png" alt-text="خطأ محلل العميل" lightbox="images/sigerror.png":::
 
 
 إذا تم عرض هذا الخطأ، فإن issuerInfo.txt سيحتوي على معلومات مفصلة حول سبب حدوث ذلك والملف الذي تأثر به:
 
-![صورة معلومات مصدر](images/issuerinfo.png)
+:::image type="content" source="images/issuerinfo.png" alt-text="معلومات مصدر" lightbox="images/issuerinfo.png":::
 
 
 مثال للمحتويات بعد MDEClientAnalyzer.ps1 تعديل:
 
-![صورة لملف ps1 المعدل](images/modified-ps1.png)
+:::image type="content" source="images/modified-ps1.png" alt-text="ملف ps1 المعدل" lightbox="images/modified-ps1.png":::
 
 
 

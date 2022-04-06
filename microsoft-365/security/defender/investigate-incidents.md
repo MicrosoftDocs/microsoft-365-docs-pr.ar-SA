@@ -23,12 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 0bab6d8aa8aaef29b67ed8460f2d48e65cd24aa1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4bba9797572193199dba0bd4c928693d94bf00de
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570611"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569147"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>التحقق من الأحداث في Microsoft 365 Defender
 
@@ -48,11 +48,11 @@ Microsoft 365 Defender تجميع جميع التنبيهات والأصول و�
 
 يمكنك البدء بتحديد الحادث من عمود علامة الاختيار. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="مثال لتحديد حادث من عمود علامة الاختيار." lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="تحديد حادث في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
 
 عند القيام بذلك، يتم فتح جزء ملخص مع معلومات أساسية حول الحادث، مثل الخطورة، الشخص الذي تم تعيينه له، و [MITRE ATT&CK&trade;](https://attack.mitre.org/) للحادث. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="مثال على جزء الملخص لحادث ما." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="الجزء الذي يعرض تفاصيل الملخص لحادث في Microsoft 365 Defender المدخل." lightbox="../../media/investigate-incidents/incidents-ss-incident-side-panel.png":::
 
 من هنا، يمكنك تحديد **فتح صفحة الحادث**. يفتح هذا الصفحة الرئيسية للحادث حيث ستجد المزيد من المعلومات الموجزة و علامات التبويب الخاصة بالتنبيهات والأجهزة والمستخدمين والتحريات والأدلة.
 
@@ -62,7 +62,7 @@ Microsoft 365 Defender تجميع جميع التنبيهات والأصول و�
 
 توفر **لك صفحة** الملخص نظرة سريعة على أهم الأمور التي يجب ملاحظتها حول الحادث.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="مثال لصفحة الملخص لحادث في مدخل Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="المعلومات الموجزة لحادث في مدخل Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 يتم تنظيم المعلومات في هذه الأقسام.
 
@@ -82,12 +82,12 @@ Microsoft 365 Defender تجميع جميع التنبيهات والأصول و�
 
 - الخطورة.
 - الوحدات التي كانت متدخلة في التنبيه.
-- مصدر التنبيهات (Microsoft Defender for Identity و Microsoft Defender for Endpoint و Microsoft Defender ل Office 365 و Defender for Cloud Apps و الوظائف الإضافية الخاصة بحوكمة التطبيق).
+- مصدر التنبيهات (Microsoft Defender for Identity و Microsoft Defender لنقطة النهاية و Microsoft Defender لـ Office 365 و Defender for Cloud Apps و الوظائف الإضافية الخاصة بحوكمة التطبيق).
 - سبب ارتباطهما معا.
 
 فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="مثال لصفحة تنبيهات لحادث." lightbox="../../media/investigate-incidents/incident-alerts.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="جزء التنبيهات لحادث في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-incidents/incident-alerts.png":::
 
 بشكل افتراضي، يتم ترتيب التنبيهات بشكل زمني للسماح لك برؤية كيفية تنفيذ الهجوم مع مرور الوقت. عند تحديد تنبيه ضمن حادث، Microsoft 365 Defender عرض معلومات التنبيه الخاصة بسيااق الحادث الإجمالي. 
 
@@ -95,7 +95,7 @@ Microsoft 365 Defender تجميع جميع التنبيهات والأصول و�
 
 فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="مثال لصفحة تفاصيل تنبيه ضمن حادث." lightbox="../../media/investigate-incidents/incident-alert-example.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="تفاصيل تنبيه ضمن حادث في مدخل Microsoft 365 Defender." lightbox="../../media/investigate-incidents/incident-alert-example.png":::
 
 تحتوي صفحة تنبيه الحادث على الأقسام التالية:
 
@@ -117,11 +117,11 @@ Microsoft 365 Defender تجميع جميع التنبيهات والأصول و�
 
 **تسرد علامة** التبويب الأجهزة جميع الأجهزة ذات الصلة بالحادث. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="مثال لصفحة &quot;الأجهزة&quot; لحادث." lightbox="../../media/investigate-incidents/incident-devices.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="صفحة الأجهزة لحادث في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-incidents/incident-devices.png":::
 
 يمكنك تحديد علامة الاختيار لجهاز ما لرؤية تفاصيل الجهاز وبيانات الدليل والتنبيهات النشطة والمستخدمين الذين سجلوا دخولهم. حدد اسم الجهاز لرؤية تفاصيل الجهاز في مخزون جهاز Defender for Endpoint. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="مثال لصفحة أجهزة ل Defender لنقطة النهاية." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="الصفحة ذات الصلة بخيار مخزون الجهاز في Microsoft Defender لنقطة النهاية." lightbox="../../media/investigate-incidents/incident-devices-details.png":::
 
 من صفحة الجهاز، يمكنك جمع معلومات إضافية حول الجهاز، مثل كل تنبيهاته وم يومياته وتوصيات الأمان. على سبيل المثال، من  علامة التبويب مخطط زمني، يمكنك التمرير عبر المخطط الزمني للجهاز وعرض كل الأحداث والسلوكيات التي تم ملاحظتها على الجهاز بترتيب زمني، تتقاطع مع التنبيهات التي تم رفعها.
 
@@ -132,7 +132,7 @@ Microsoft 365 Defender تجميع جميع التنبيهات والأصول و�
 
 **تسرد علامة** التبويب المستخدمون جميع المستخدمين الذين تم تحديدهم كجزء من الحادث أو مرتبطين به. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="مثال لصفحة &quot;المستخدمون&quot; لحادث." lightbox="../../media/investigate-incidents/incident-users.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="صفحة المستخدمون في Microsoft 365 Defender المدخل." lightbox="../../media/investigate-incidents/incident-users.png":::
 
 يمكنك تحديد علامة الاختيار للمستخدم لرؤية تفاصيل تهديدات حساب المستخدم والتعرض ومعلومات الاتصال. حدد اسم المستخدم لرؤية تفاصيل حساب مستخدم إضافية.
 
@@ -143,15 +143,15 @@ Microsoft 365 Defender تجميع جميع التنبيهات والأصول و�
 
 **تسرد علامة** التبويب علب البريد كل علب البريد التي تم تحديد أنها جزء من الحادث أو ذات صلة به. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="مثال لصفحة علب بريد لحادث." lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="صفحة علب البريد لحادث في Microsoft 365 Defender المدخل." lightbox="../../media/investigate-incidents/incident-mailboxes.png":::
 
-يمكنك تحديد علامة الاختيار لعلبة بريد لرؤية قائمة بالتنبيهات النشطة. حدد اسم علبة البريد لرؤية تفاصيل علبة البريد الإضافية على صفحة المستكشف ل Defender Office 365.
+يمكنك تحديد علامة الاختيار لعلبة بريد لرؤية قائمة بالتنبيهات النشطة. حدد اسم علبة البريد لرؤية تفاصيل علبة البريد الإضافية على صفحة المستكشف Defender لـ Office 365.
 
 ## <a name="investigations"></a>التحقيق
 
-**تسرد علامة التبويب** "عمليات التحقيق [](m365d-autoir.md)" كل عمليات التحقيق التلقائية التي تم تشغيلها بواسطة التنبيهات في هذا الحادث. ستؤدي عمليات التحقيق التلقائية إلى تنفيذ إجراءات إصلاحية أو انتظار موافقة المحلل على الإجراءات، استنادا إلى الطريقة التي قمت من خلالها بتكوين عمليات التحقيق التلقائية لتشغيلها في Defender for Endpoint و Defender for Office 365.
+**تسرد علامة التبويب** "عمليات التحقيق [](m365d-autoir.md)" كل عمليات التحقيق التلقائية التي تم تشغيلها بواسطة التنبيهات في هذا الحادث. ستؤدي عمليات التحقيق التلقائية إلى تنفيذ إجراءات إصلاحية أو انتظار موافقة المحلل على الإجراءات، استنادا إلى الطريقة التي قمت من خلالها بتكوين عمليات التحقيق التلقائية لتشغيلها في Defender for Endpoint Defender لـ Office 365.
 
-:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="مثال لصفحة &quot;التحقيق&quot; لحادث." lightbox="../../media/investigate-incidents/incident-investigations.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="صفحة &quot;التحقيق&quot; لحادث في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-incidents/incident-investigations.png":::
 
 حدد التحقيق للانتقال إلى صفحة التفاصيل الخاصة به للحصول على معلومات كاملة حول حالة الإصلاح والتحري. إذا كانت هناك أي إجراءات معلقة للموافقة عليها كجزء من التحقيق، ستظهر في علامة التبويب محفوظات **الإجراءات المعلقة** . اتخاذ إجراء كجزء من معالجة الحادث.
 
@@ -169,7 +169,7 @@ Microsoft 365 Defender تجميع جميع التنبيهات والأصول و�
 
 تعرض **علامة التبويب** دليل والاستجابة كل الأحداث المدعومة والكيانات المريبة في التنبيهات في الحادث. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="مثال لصفحة &quot;الدليل والرد&quot; لحادث." lightbox="../../media/investigate-incidents/incident-evidence.png":::
+:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="صفحة الدليل والرد لحادث في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-incidents/incident-evidence.png":::
 
 Microsoft 365 Defender التحقق تلقائيا من كل الأحداث المدعومة للحوادث والكيانات المريبة في التنبيهات، مما يوفر لك معلومات حول رسائل البريد الإلكتروني والملفات والعمليات والخدمات وعناوين IP الهامة والمزيد. يساعدك ذلك على الكشف بسرعة عن التهديدات المحتملة في الحادث وحظرها.
 
@@ -184,16 +184,16 @@ Microsoft 365 Defender التحقق تلقائيا من كل الأحداث ال
 1. تشغيل التنبيهات والعقد على الرسم البياني عند حدوثها مع مرور الوقت لفهم التسلسل الزمني للهجوم.
 
 
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="مثال حول تشغيل التنبيهات والعقد على صفحة Graph":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="تشغيل التنبيهات والعقد على صفحة Graph":::
  
 
 2. افتح جزء كيان، مما يسمح لك بمراجعة تفاصيل الكيان والعمل على إجراءات المعالجة، مثل حذف ملف أو عزل جهاز.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="مثال ل جزء كيان على صفحة Graph" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="جزء الكيان على صفحة Graph في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
 
 3. تمييز التنبيهات استنادا إلى الكيان المرتبط بها.
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="مثال لتسليط الضوء على تنبيه على Graph الصفحة" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="تمييز تنبيه على صفحة Graph" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
 ## <a name="next-steps"></a>الخطوات التالية
 

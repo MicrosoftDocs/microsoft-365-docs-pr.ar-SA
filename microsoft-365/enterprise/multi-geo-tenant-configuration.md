@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: في هذه المقالة، تعرف على كيفية إضافة مواقع الأقمار الصناعية وتكوين المستأجر Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 9842ff2295a64f544940f579d732c688735ae341
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2bd0db24b364c642255ef2e902abad0495d24337
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63575294"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64568867"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 المستأجر متعدد الجغرافيا
 
@@ -54,13 +54,13 @@ ms.locfileid: "63575294"
 
 1. حدد **إغلاق**.
 
-قد يستغرق توفيره من بضع ساعات حتى 72 ساعة، استنادا إلى حجم المستأجر. بمجرد اكتمال عملية توفير موقع القمر الصناعي، ستتلقى تأكيدا للبريد الإلكتروني. عندما يظهر الموقع الجغرافي الجديد باللون الأزرق على الخريطة على علامة التبويب مواقع جغرافية  في مركز إدارة OneDrive، يمكنك المتابعة لتعيين موقع البيانات المفضل للمستخدمين إلى الموقع الجغرافي. 
+قد يستغرق توفيره من بضع ساعات حتى 72 ساعة، استنادا إلى حجم المستأجر. بمجرد اكتمال عملية توفير موقع القمر الصناعي، ستتلقى تأكيدا للبريد الإلكتروني. عندما يظهر الموقع الجغرافي الجديد باللون الأزرق على الخريطة على علامة التبويب مواقع جغرافية  في مركز إدارة OneDrive، يمكنك المتابعة لتعيين موقع البيانات المفضل للمستخدمين إلى الموقع الجغرافي.
 
 > [!IMPORTANT]
 > سيتم إعداد موقع القمر الصناعي الجديد باستخدام الإعدادات الافتراضية. سيسمح لك ذلك بتكوين موقع القمر الصناعي هذا بما يلائم احتياجات التوافق المحلية.
 
 ## <a name="setting-users-preferred-data-location"></a>تعيين موقع البيانات المفضلة للمستخدمين
-<span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
+<span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span>
 
 بمجرد تمكين مواقع الأقمار الصناعية المطلوبة، يمكنك تحديث حسابات المستخدمين لاستخدام موقع البيانات المفضل المناسب. نوصي بتعيين موقع بيانات مفضل لكل مستخدم، حتى لو كان هذا المستخدم يقيم في الموقع المركزي.
 
@@ -72,32 +72,36 @@ ms.locfileid: "63575294"
 
 في Azure Active Directory (Azure AD) يوجد نوعان من كائنات المستخدمين: مستخدمو السحابة فقط والمستخدمون المتزامنون. يرجى اتباع الإرشادات المناسبة لنوع المستخدم.
 
-### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>مزامنة موقع البيانات المفضلة للمستخدم باستخدام Azure AD الاتصال 
+### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>مزامنة موقع البيانات المفضلة للمستخدم باستخدام Azure AD الاتصال
 
-إذا كان مستخدمو شركتك متزامنين من نظام Active Directory موقعي إلى Azure AD، فيجب ملء المفضلةDataLocation الخاصة بهم في AD ومزامنتها مع Azure AD.
+إذا كان مستخدمو شركتك متزامنين من نظام жергілікті Active Directory إلى Azure AD، فيجب ملء المفضلةDataLocation الخاصة بهم في AD ومزامنتها مع Azure AD.
 
-اتبع العملية في مزامنة [Azure Active Directory الاتصال:](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) تكوين موقع البيانات المفضلة للموارد Microsoft 365 لتكوين مزامنة موقع البيانات المفضلة من خدمات مجال Active Directory المحلية (AD DS) إلى Azure AD.
+اتبع العملية في مزامنة [Azure Active Directory الاتصال:](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) تكوين موقع البيانات المفضلة للموارد Microsoft 365 لتكوين مزامنة موقع البيانات المفضلة من خدمات مجال жергілікті Active Directory (AD DS) إلى Azure AD.
 
 نوصي بتضمين تعيين موقع البيانات المفضلة للمستخدم كجزء من سير عمل إنشاء المستخدم القياسي.
 
 > [!IMPORTANT]
 > للمستخدمين الجدد الذين لم يتم توفير OneDrive، قم بتراخيص الحساب وانتظر 48 ساعة على الأقل بعد مزامنة PDL الخاص بالمستخدم مع Azure AD لنشر التغييرات قبل أن يسجل المستخدم دخوله إلى OneDrive for Business. (يضمن تعيين موقع البيانات المفضل قبل تسجيل المستخدم دخوله لتوفير بيانات OneDrive for Business توفير البيانات الجديدة OneDrive المستخدم في الموقع الصحيح.)
 
-### <a name="setting-preferred-data-location-for-cloud-only-users"></a>تعيين موقع البيانات المفضلة لمستخدمي السحابة فقط 
+### <a name="setting-preferred-data-location-for-cloud-only-users"></a>تعيين موقع البيانات المفضلة لمستخدمي السحابة فقط
 
-إذا لم يتم مزامنة مستخدمي شركتك من نظام Active Directory موقعي إلى Azure AD، مما يعني أنه تم إنشاؤهم في Microsoft 365 أو Azure AD، فيجب تعيين PDL باستخدام وحدة Microsoft Azure Active Directory النمطية Windows PowerShell.
+إذا لم يتم مزامنة مستخدمي شركتك من نظام жергілікті Active Directory إلى Azure AD، مما يعني أنه تم إنشاؤهم في Microsoft 365 أو Azure AD، فيجب تعيين PDL باستخدام الوحدة النمطية Microsoft Azure Active Directory ل Windows PowerShell.
 
 تتطلب الإجراءات في هذا القسم Microsoft Azure Active Directory [الوحدة النمطية Windows PowerShell النمطية](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). إذا كانت هذه الوحدة النمطية مثبتة لديك بالفعل، فالرجاء التأكد من التحديث إلى الإصدار الأخير.
 
-1.  [الاتصال تسجيل الدخول](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) باستخدام مجموعة من بيانات اعتماد المسؤول العام للمستأجر.
+1. [الاتصال تسجيل الدخول](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) باستخدام مجموعة من بيانات اعتماد المسؤول العام للمستأجر.
 
-2.  استخدم [الأمر Cmdlet Set-MsolUser](/powershell/msonline/v1/set-msoluser) لتعيين موقع البيانات المفضل لكل مستخدم. على سبيل المثال:
+2. استخدم [الأمر Cmdlet Set-MsolUser](/powershell/msonline/v1/set-msoluser) لتعيين موقع البيانات المفضل لكل مستخدم. على سبيل المثال:
 
-    `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
+   ```powershell
+   Set-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR
+   ```
 
     يمكنك التحقق للتأكد من تحديث موقع البيانات المفضلة بشكل صحيح باستخدام Get-MsolUser cmdlet. على سبيل المثال:
 
-    `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
+   ```powershell
+   (Get-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation
+   ```
 
 ![لقطة شاشة من نافذة PowerShell تظهر set-msoluser.](../media/multi-geo-tenant-configuration-image3.png)
 
@@ -122,11 +126,8 @@ ms.locfileid: "63575294"
 بشكل افتراضي، رجع عمليات البحث من نقاط الإدخال هذه النتائج التجميعية، على الرغم من وجود كل فهرس بحث ضمن موقعه الجغرافي ذي الصلة:
 
 - OneDrive for Business
-
 - Delve
-
 - SharePoint الرئيسية
-
 - مركز البحث
 
 بالإضافة إلى ذلك بحث في مواقع جغرافية متعددة يمكن تكوين قدرات تطبيقات البحث المخصصة التي تستخدم SharePoint API للبحث.
@@ -137,22 +138,22 @@ ms.locfileid: "63575294"
 
 فيما يلي بعض حالات الاستخدام الأساسية التي قد ترغب في تضمينها في خطة التحقق من الصحة قبل Microsoft 365 Multi-Geo إلى شركتك. بعد الانتهاء من هذه الاختبارات وأي حالات استخدام إضافية ذات صلة بالشركة، يمكنك اختيار الانتقال إلى إضافة المستخدمين في مجموعة التجربة الأولية.
 
-**OneDrive for Business**
+**OneDrive for Business**:
 
 حدد OneDrive من Microsoft 365 التطبيق وتأكد من أنه يتم توجيهك تلقائيا إلى الموقع الجغرافي المناسب للمستخدم، استنادا إلى PDL الخاص به. OneDrive for Business يجب أن تبدأ الآن في توفير في ذلك الموقع. بمجرد توفيره، حاول تحميل بعض المستندات وتنزيلها.
 
-**OneDrive Mobile App**
+**OneDrive تطبيق الأجهزة المحمولة**:
 
 سجل الدخول إلى تطبيق OneDrive المحمول باستخدام بيانات اعتماد حساب الاختبار. تأكد من أنه يمكنك رؤية ملفاتك OneDrive for Business والتفاعل معها من جهازك المحمول.
 
-**المزامنة من OneDrive العميل**
+**المزامنة من OneDrive العميل**:
 
 تأكد من أن المزامنة من OneDrive العميل يكشف تلقائيا عن OneDrive for Business الجغرافي عند تسجيل الدخول. إذا كنت بحاجة إلى تنزيل عميل المزامنة، يمكنك **النقر فوق مزامنة** OneDrive المكتبة.
 
-**Office التطبيقات**
+**Office التطبيقات**:
 
-تأكد من أنه يمكنك الوصول إلى OneDrive for Business تسجيل الدخول من تطبيق Office، مثل Word. افتح Office وحدد "OneDrive – <TenantName>". Office عن موقع OneDrive وإظهار الملفات التي يمكنك فتحها.
+تأكد من أنه يمكنك الوصول إلى OneDrive for Business تسجيل الدخول من تطبيق Office، مثل Word. افتح Office وحدد "OneDrive – \<TenantName\>". Office عن موقع OneDrive وإظهار الملفات التي يمكنك فتحها.
 
-**المشاركة**
+**المشاركة**:
 
 حاول مشاركة OneDrive الملفات. تأكد من أن منتقي الأشخاص يعرض لك جميع SharePoint عبر الإنترنت بغض النظر عن موقعهم الجغرافي.

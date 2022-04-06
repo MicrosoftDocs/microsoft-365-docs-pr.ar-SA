@@ -14,29 +14,29 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cefeb36b43b0c59663935b0dd3a0155e80e44f33
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3a7202c6e522441ecbbfd738d3533a242c966f8c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63575774"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467522"
 ---
 # <a name="respond-to-web-threats"></a>الاستجابة إلى تهديدات الويب
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-تتيح لك حماية الويب في Microsoft Defender for Endpoint التحقق من التنبيهات ذات الصلة بمواد ويب ومواقع الويب الضارة والاستجابة لها في قائمة المؤشرات المخصصة.
+تتيح لك ميزة Microsoft Defender لنقطة النهاية الويب التحقق من التنبيهات ذات الصلة بمواد الويب ومواقع الويب الضارة والاستجابة لها في قائمة المؤشرات المخصصة.
 
 ## <a name="view-web-threat-alerts"></a>عرض تنبيهات تهديدات الويب
 
-ينشئ Microsoft Defender ل Endpoint التنبيهات [التالية لنشاط](manage-alerts.md) ويب ضار أو مريب:
+Microsoft Defender لنقطة النهاية التنبيهات [التالية لنشاط](manage-alerts.md) ويب ضار أو مريب:
 
 - **اتصال مريب تم** حظره بواسطة حماية الشبكة: يتم إنشاء هذا التنبيه عندما تتوقف محاولة الوصول إلى موقع ويب ضار أو موقع ويب في قائمة المؤشرات المخصصة عن  طريق حماية الشبكة في *وضع الحظر*
 - **اتصال مريب تم** اكتشافه بواسطة حماية الشبكة: يتم إنشاء هذا التنبيه عند اكتشاف محاولة الوصول إلى موقع ويب ضار أو موقع ويب في قائمة المؤشرات المخصصة بواسطة حماية الشبكة في وضع *التدقيق فقط*
@@ -48,10 +48,10 @@ ms.locfileid: "63575774"
 - URL أو URL ضار في قائمة المؤشرات المخصصة
 - الإجراءات الموصى بها للمستجيبين
 
-![صورة تنبيه مرتبط بحماية تهديدات الويب.](images/wtp-alert.png)
+:::image type="content" source="images/wtp-alert.png" alt-text="التنبيه المتعلق بالحماية من المخاطر على الويب" lightbox="images/wtp-alert.png":::
 
 > [!NOTE]
-> لتقليل حجم التنبيهات، يدمج Microsoft Defender for Endpoint الكشف عن تهديدات الويب للمجال نفسه على الجهاز نفسه كل يوم إلى تنبيه واحد. يتم إنشاء تنبيه واحد فقط وتحسب في تقرير [حماية الويب](web-protection-monitoring.md).
+> لتقليل حجم التنبيهات، Microsoft Defender لنقطة النهاية دمج الكشف عن تهديدات الويب للمجال نفسه على الجهاز نفسه كل يوم إلى تنبيه واحد. يتم إنشاء تنبيه واحد فقط وتحسب في تقرير [حماية الويب](web-protection-monitoring.md).
 
 ## <a name="inspect-website-details"></a>فحص تفاصيل موقع ويب
 
@@ -61,7 +61,7 @@ ms.locfileid: "63575774"
 - الأحداث والتنبيهات المتعلقة بالموقع
 - مدى تكرار رؤية موقع ويب في الأحداث في مؤسستك
 
-    ![صورة لصفحة تفاصيل كيان URL أو المجال.](images/wtp-website-details.png)
+  :::image type="content" source="images/wtp-website-details.png" alt-text="صفحة تفاصيل كيان عنوان URL أو المجال" lightbox="images/wtp-website-details.png":::
 
 [تعرف على المزيد حول URL أو صفحات كيان المجال](investigate-domain.md)
 
@@ -73,13 +73,14 @@ ms.locfileid: "63575774"
 
 ## <a name="web-browser-and-windows-notifications-for-end-users"></a>مستعرض ويب Windows للمستخدمين النهائيين
 
-باستخدام حماية الويب في Microsoft Defender لنقطة النهاية، سيتم منع المستخدمين النهائيين من زيارة مواقع الويب الضارة أو غير المرغوب فيها باستخدام Microsoft Edge أو مستعرضات أخرى. ونظرا لتنفيذ الحظر بواسطة [حماية الشبكة](network-protection.md)، سيشاهدون خطأ عاما من مستعرض الويب. كما سيشاهدون إعلاما من Windows.
+مع حماية الويب في Microsoft Defender لنقطة النهاية، سيتم منع المستخدمين النهائيين من زيارة مواقع الويب الضارة أو غير المرغوب فيها باستخدام Microsoft Edge أو مستعرضات أخرى. ونظرا لتنفيذ الحظر بواسطة [حماية الشبكة](network-protection.md)، سيشاهدون خطأ عاما من مستعرض الويب. كما سيشاهدون إعلاما من Windows.
 
-![صورة Microsoft Edge الخطأ 403 وإعلام Windows.](images/wtp-browser-blocking-page.png)
- *تم حظر تهديدات الويب على Microsoft Edge*
+:::image type="content" source="images/wtp-browser-blocking-page.png" alt-text="تظهر Microsoft Edge الخطأ 403، Windows الخطأ" lightbox="images/wtp-browser-blocking-page.png":::
 
-![صورة لمستعرض ويب Chrome تعرض تحذير اتصال آمن Windows ويب.](images/wtp-chrome-browser-blocking-page.png)
- *تم حظر تهديدات الويب على Chrome*
+*تم حظر تهديدات الويب على Microsoft Edge*
+
+:::image type="content" source="images/wtp-chrome-browser-blocking-page.png" alt-text="يعرض مستعرض ويب Chrome تحذير اتصال آمن، Windows ويب" lightbox="images/wtp-chrome-browser-blocking-page.png":::
+*تم حظر تهديدات الويب على Chrome*
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

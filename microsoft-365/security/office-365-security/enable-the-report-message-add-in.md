@@ -17,12 +17,12 @@ ms.collection:
 description: تعرف على كيفية تمكين "رسالة التقرير" أو الوظائف الإضافية "الإبلاغ عن التصيد الاحتيالي" Outlook و Outlook على ويب أو للمستخدمين الفرديين أو لمنظمتك بكاملها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc4c03a0ed1f0a03d96776c841203c9131c3067c
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.openlocfilehash: 758ee81852d9037ce39cbfdc6f2c2d6ad795aff2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63566712"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466796"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>تمكين رسالة التقرير أو الوظائف الإضافية "الإبلاغ عن التصيد الاحتيالي"
 
@@ -30,7 +30,7 @@ ms.locfileid: "63566712"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
@@ -93,7 +93,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 
 2. انقر **فوق الحصول عليه الآن**.
 
-   ![رسالة التقرير - احصل عليها الآن.](../../media/ReportMessageGETITNOW.png)
+   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="رسالة التقرير &quot;الحصول عليه الآن&quot;" lightbox="../../media/ReportMessageGETITNOW.png":::
 
 3. في مربع الحوار الذي يظهر، راجع شروط الاستخدام ونصوص الخصوصية، ثم انقر فوق **متابعة**.
 
@@ -104,7 +104,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 - في Outlook، تبدو الأيقونة كما يلي:
 
     > [!div class="mx-imgBorder"]
-    > ![أيقونة الوظائف الإضافية لرسالة التقرير Outlook.](../../media/OutlookReportMessageIcon.png)
+    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="أيقونة الوظائف الإضافية &quot;رسالة التقرير&quot; Outlook" lightbox="../../media/OutlookReportMessageIcon.png":::
 
 - في Outlook على ويب، تبدو الأيقونة كما يلي:
 
@@ -119,19 +119,20 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 1. في [مركز مسؤولي Microsoft 365،](https://admin.microsoft.com/AdminPortal/Home?#/homepage) **انتقل إلى الإعدادات** \> **المتكاملة**. انقر **فوق الحصول على التطبيقات**.
 
     > [!div class="mx-imgBorder"]
-    > ![مركز مسؤولي Microsoft 365 المتكاملة](../../media/microsoft-365-admin-center-integrated-apps.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="التطبيقات مركز مسؤولي Microsoft 365 المتكاملة" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+
 
 2. في الصفحة **Microsoft 365 Apps** التي تظهر، انقر في المربع بحث، وأدخل **رسالة** التقرير، ثم انقر فوق **أيقونة** ![بحث في البحث..](../../media/search-icon.png) في قائمة النتائج، ابحث عن رسالة **التقرير وحددها**. 
 
 3. يتم فتح صفحة تفاصيل التطبيق. حدد **الحصول عليه الآن**. 
 
     > [!div class="mx-imgBorder"]
-    > ![الوظائف الإضافية "رسالة التقرير"](../../media/microsoft-365-admin-center-report-message.png)  
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="الوظائف الإضافية &quot;رسالة التقرير&quot;" lightbox="../../media/microsoft-365-admin-center-report-message.png":::
 
 4. أكمل معلومات ملف التعريف الأساسية، ثم انقر فوق **متابعة**. 
 
     > [!div class="mx-imgBorder"]
-    > ![إعداد ملف تعريف الوظائف الإضافية لرسالة التقرير](../../media/microsoft-365-admin-center-profile-info.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="إعداد ملف تعريف الوظائف الإضافية &quot;رسالة التقرير&quot;" lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
 
 5. يتم **فتح نشر تطبيق جديد** . تكوين الإعدادات التالية. انقر **فوق** التالي الانتقال إلى الصفحة التالية لإكمال الإعداد. 
 
@@ -144,13 +145,13 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
      - **قبول طلبات الأذونات**: اقرأ أذونات التطبيق وإمكاناته بعناية قبل الذهاب إلى الصفحة التالية.
 
         > [!div class="mx-imgBorder"]
-        > ![أذونات التطبيق](../../media/microsoft-365-admin-center-deploy-new-app.png)
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="صفحة طلبات قبول الأذونات" lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
 
      - **إنهاء النشر**: مراجعة الوظائف الإضافية والانتهاء من نشرها. 
      - **اكتمل النشر**: حدد **تم** لإكمال الإعداد. 
 
         > [!div class="mx-imgBorder"]
-        > ![اكتمال النشر](../../media/microsoft-365-admin-center-deployment-complete.png)
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="رسالة الإعلام الخاصة بإكمال النشر" lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
 
 ## <a name="edit-settings-for-the-report-message-add-in"></a>تحرير الإعدادات للرسالة الإضافية "تقرير الرسالة"
 
@@ -159,7 +160,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 2. في قائمة الطيران التي تظهر، حدد **تحرير المستخدمين** لتحرير إعدادات المستخدم.
 
     > [!div class="mx-imgBorder"]
-    > ![منتحلة لرسالة التقرير](../../media/microsoft-365-admin-center-report-message-edit.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="من حولاء &quot;رسالة التقرير&quot;" lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
 
 3. لإزالة هذه الوظائف الإضافية، حدد **إزالة التطبيق** ضمن **إجراءات** في نفس الأمر. 
 
@@ -194,7 +195,7 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 1. في [مركز مسؤولي Microsoft 365،](https://admin.microsoft.com/AdminPortal/Home?#/homepage) **انتقل إلى الإعدادات** \> **المتكاملة**. انقر **فوق الحصول على التطبيقات**.
 
     > [!div class="mx-imgBorder"]
-    > ![مركز مسؤولي Microsoft 365 المتكاملة](../../media/microsoft-365-admin-center-integrated-apps.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="التطبيقات مركز مسؤولي Microsoft 365 المتكاملة" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
 2. في الصفحة **Microsoft 365 Apps** التي تظهر، انقر في المربع بحث، وأدخل  الإبلاغ عن التصيد **الاحتيالي**، ثم انقر فوق **أيقونة** ![بحث في البحث..](../../media/search-icon.png) في قائمة النتائج، ابحث عن الإبلاغ عن **التصيد الاحتيالي وحدده**. 
  
@@ -211,6 +212,6 @@ Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled 
 2. في قائمة الطيران التي تظهر، حدد **تحرير المستخدمين** لتحرير إعدادات المستخدم.
 
     > [!div class="mx-imgBorder"]
-    > ![الإبلاغ عن معلومات التصيد الاحتيالي](../../media/microsoft-365-admin-center-report-phishing-edit.png)
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="من حولاء &quot;الإبلاغ عن التصيد الاحتيالي&quot;" lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
 3. لإزالة هذه الوظائف الإضافية، حدد **إزالة التطبيق** ضمن **إجراءات** في نفس الأمر. 

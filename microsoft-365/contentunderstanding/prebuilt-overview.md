@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: تعرف على النماذج التي تم تصميمها مسبقا في Microsoft SharePoint Syntex.
-ms.openlocfilehash: e7a23174deb5726bf05ee7af3fbc089e2d0820bd
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 1146e4947392ce0e0848632e55f22e5b8b8d2d91
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63580035"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569037"
 ---
 # <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>نظرة عامة حول النماذج التي تم تصميمها مسبقا في Microsoft SharePoint Syntex
 
@@ -36,6 +36,8 @@ ms.locfileid: "63580035"
 ## <a name="requirements"></a>المتطلبات
 
 - تنسيقات الملفات المعتمدة: JPEG و PNG و BMP و TIFF و PDF (مضمنة بالنص أو ممسوحة ضوئيا).
+
+- اللغات المعتمدة: فواتير اللغة الإنجليزية فقط من Estados Unidos معتمدة حاليا. يتم دعم إيصالات مبيعات اللغة الإنجليزية من أستراليا وكندا Estados Unidos ولبريطانيا العظمى والهند.
 
 - من الأفضل استخدام PDFs المضمنة في النص لإزالة إمكانية حدوث خطأ في استخراج الأحرف وموقعها.
 

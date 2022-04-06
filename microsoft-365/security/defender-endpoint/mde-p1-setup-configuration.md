@@ -1,5 +1,5 @@
 ---
-title: إعداد Microsoft Defender وتكوينه لخطة نقطة النهاية 1
+title: إعداد الخطة Microsoft Defender لنقطة النهاية 1 وتكوينها
 description: تعرف على كيفية إعداد وتكوين Defender لخطة نقطة النهاية 1. راجع المتطلبات، وخطط للانتهاء، ثم قم بإعداد بيئتك.
 search.appverid: MET150
 author: denisebmsft
@@ -16,23 +16,23 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: b169910c9f0ae96b68711b065af4e6147ddd3ae2
-ms.sourcegitcommit: f8267a0860de62dbd53ebb8a151a8e71a8ccda6a
+ms.openlocfilehash: 741450f2573e0d750a1d3de5012f97cf16a0780d
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63583671"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569081"
 ---
-# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>إعداد Microsoft Defender وتكوينه لخطة نقطة النهاية 1
+# <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>إعداد الخطة Microsoft Defender لنقطة النهاية 1 وتكوينها
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 تصف هذه المقالة كيفية إعداد الخطة 1 ل Defender لنقطة النهاية وتكوينها. سواء كنت تملك المساعدة أو تقوم بذلك بنفسك، يمكنك استخدام هذه المقالة كدليل خلال عملية النشر.  
 
 ## <a name="the-setup-and-configuration-process"></a>عملية الإعداد والتكوين
 
-:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="تدفق الإعداد والنشر ل Microsoft Defender لخطة نقطة النهاية 1":::
+:::image type="content" source="images/mde-p1-deploymentflow.png" alt-text="تدفق الإعداد والنشر Microsoft Defender لنقطة النهاية 1" lightbox="images/mde-p1-deploymentflow.png":::
 
 تكون عملية الإعداد والتكوين العامة ل Defender لخطة نقطة النهاية 1 كما يلي: <br/><br/>
 
@@ -53,10 +53,10 @@ ms.locfileid: "63583671"
 
 | المتطلب | الوصف |
 |:---|:---|
-| متطلبات الترخيص | Defender for Endpoint Plan 1 (يشار إليه سابقا ب Microsoft Defender for Endpoint Lite)|
+| متطلبات الترخيص | Defender for Endpoint الخطة 1 |
 | متطلبات المستعرض | Microsoft Edge <br/> الإصدار 11 من Internet Explorer <br/> Google Chrome |
 | أنظمة التشغيل | Windows 10 الإصدار 1709 أو الإصدارات الأحدث <br/>macOS: 11.5 (Big Sur) أو 10.15.7 (Catalina) أو 10.14.6 (Mojave) <br/>iOS <br/>نظام التشغيل Android  |
-| Datacenter | أحد مواقع مراكز البيانات التالية: <br/>- الاتحاد الأوروبي <br/>- المملكة المتحدة <br/>- الولايات المتحدة |
+| Datacenter | أحد مواقع مراكز البيانات التالية: <br/>- الاتحاد الأوروبي <br/>- المملكة المتحدة <br/>- Estados Unidos |
 
 
 ## <a name="plan-your-deployment"></a>التخطيط للنشر
@@ -66,8 +66,8 @@ ms.locfileid: "63583671"
 | الأسلوب | الوصف |
 |:---|:---|
 | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (مضمن في إدارة نقاط النهاية من Microsoft) | استخدام Intune لإدارة نقاط النهاية في بيئة سحابة أصلية |
-| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) إدارة [التكوين](/mem/configmgr/core/understand/introduction) (مضمنة في إدارة نقاط النهاية من Microsoft) | استخدام Intune و"إدارة التكوين" لإدارة نقاط النهاية وأحمال العمل التي تمتد عبر بيئة السحابة المحلية |
-| [إدارة التكوين](/mem/configmgr/core/understand/introduction) | استخدام "إدارة التكوين" لحماية نقاط النهاية في الموقع باستخدام قوة Defender لنقطة النهاية المستندة إلى السحابة |
+| [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) [Configuration Manager (](/mem/configmgr/core/understand/introduction)مضمنة في إدارة نقاط النهاية من Microsoft) | استخدام Intune Configuration Manager لإدارة نقاط النهاية وأحمال العمل التي تمتد عبر بيئة السحابة المحلية |
+| [إدارة التكوين](/mem/configmgr/core/understand/introduction) | استخدام Configuration Manager لحماية نقاط النهاية في الموقع باستخدام قوة Defender لنقطة النهاية المستندة إلى السحابة |
 | البرنامج النصي المحلي الذي تم تنزيله من Microsoft 365 Defender المدخل | استخدام البرامج النصية المحلية على نقاط النهاية لتشغيل طيار أو تشغيل بضع أجهزة فقط |
 
 لمعرفة المزيد حول خيارات النشر، راجع تخطيط نشر [Defender لنقطة النهاية](deployment-strategy.md). ثم قم بتنزيل الملصق التالي: 
@@ -77,7 +77,7 @@ ms.locfileid: "63583671"
 **[الحصول على ملصق النشر](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)**
 
 > [!TIP]
-> للحصول على مزيد من المعلومات المفصلة حول تخطيط النشر، راجع [تخطيط نشر نقطة نهاية Microsoft Defender](deployment-strategy.md).
+> للحصول على مزيد من المعلومات المفصلة حول تخطيط النشر، راجع تخطيط [Microsoft Defender لنقطة النهاية النشر](deployment-strategy.md).
 
 ## <a name="set-up-your-tenant-environment"></a>إعداد بيئة المستأجر
 
@@ -104,7 +104,7 @@ ms.locfileid: "63583671"
 
 | الدور | الوصف |
 |:---|:---|
-| المسؤولون العامون (يشار أيضا إلى المسؤولين العامين) <br/><br/> *كأفضل ممارسة، حد من عدد المسؤولين العامين.* | يمكن للمسؤولين العامين تنفيذ كل أنواع المهام. إن الشخص الذي سجل شركتك للحصول على Microsoft 365 Microsoft Defender لخطة نقطة النهاية 1 هو مسؤول عام بشكل افتراضي. <br/><br/> يمكن للمسؤولين العامين الوصول إلى/تغيير الإعدادات عبر Microsoft 365، مثل: <br/>- مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender المدخل ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- إدارة نقاط النهاية من Microsoft مركز الإدارة ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
+| المسؤولون العامون (يشار أيضا إلى المسؤولين العامين) <br/><br/> *كأفضل ممارسة، حد من عدد المسؤولين العامين.* | يمكن للمسؤولين العامين تنفيذ كل أنواع المهام. إن الشخص الذي قام Microsoft 365 شركتك Microsoft Defender لنقطة النهاية الخطة 1 هو مسؤول عام بشكل افتراضي. <br/><br/> يمكن للمسؤولين العامين الوصول إلى/تغيير الإعدادات عبر Microsoft 365، مثل: <br/>- مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender المدخل ([https://security.microsoft.com](https://security.microsoft.com)) <br/>- إدارة نقاط النهاية من Microsoft مركز الإدارة ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  |
 | مسؤولو الأمان (يشار أيضا إلى مسؤولي الأمان) | يمكن لمسؤولي الأمان تنفيذ مهام مشغل الأمان بالإضافة إلى المهام التالية: <br/>- مراقبة سياسات الأمان <br/>- إدارة تهديدات الأمان والتنبيهات <br/>- عرض التقارير |
 | عامل تشغيل الأمان | يمكن لمشغلي الأمان تنفيذ مهام قارئ الأمان بالإضافة إلى المهام التالية: <br/>- عرض معلومات حول التهديدات المكتشفة <br/>- التحقق من التهديدات المكتشفة والاستجابة لها  |
 | قارئ الأمان | يمكن لقاري الأمان تنفيذ المهام التالية: <br/>- عرض سياسات الأمان عبر Microsoft 365 الخدمات <br/>- عرض تهديدات الأمان والتنبيهات <br/>- عرض التقارير  |
@@ -119,8 +119,8 @@ ms.locfileid: "63583671"
 
 |نظام تشغيل نقطة النهاية | أساليب ال متنبها|
 |---|---|
-| Windows 10 | [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة نقاط النهاية من Microsoft/ Mobile Device Manager](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [برامج VDI النصية](configure-endpoints-vdi.md)  |
-| macOS | [البرامج النصية المحلية](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [إدارة أجهزة المحمول](mac-install-with-other-mdm.md) |
+| Windows 10 | [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة نقاط النهاية من Microsoft/ Mobile Enhedshåndtering](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [برامج VDI النصية](configure-endpoints-vdi.md)  |
+| macOS | [البرامج النصية المحلية](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [الأجهزة 裝置管理](mac-install-with-other-mdm.md) |
 | iOS |[مستند إلى التطبيق](ios-install.md) |
 | Android | [إدارة نقاط النهاية من Microsoft](android-intune.md) |
 
@@ -130,7 +130,7 @@ ms.locfileid: "63583671"
 
 نوصي [باستخدام إدارة نقاط النهاية من Microsoft](/mem) لإدارة أجهزة المؤسسة وإعدادات الأمان، كما هو موضح في الصورة التالية:
  
-:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="سياسات أمان نقطة النهاية في MEM":::
+:::image type="content" source="../../media/mde-p1/endpoint-policies.png" alt-text="سياسات أمان نقطة النهاية في مدخل Micorosft إدارة نقاط النهاية" lightbox="../../media/mde-p1/endpoint-policies.png":::
 
 لتكوين حماية الجيل التالي في إدارة نقاط النهاية من Microsoft، اتبع الخطوات التالية:
 
@@ -163,7 +163,7 @@ ms.locfileid: "63583671"
 
 تتوفر قواعد تقليل مساحة الهجوم على الأجهزة التي تعمل Windows. نوصي باستخدام إدارة نقاط النهاية من Microsoft، كما هو موضح في الصورة التالية:
 
-:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="قواعد الحد من سطح الهجوم في إدارة نقاط النهاية من Microsoft":::
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="قواعد الحد من سطح الهجوم في مدخل إدارة نقاط النهاية من Microsoft الهجوم" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
 1. انتقل إلى إدارة نقاط النهاية من Microsoft إدارة ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) ثم سجل الدخول.
 
@@ -199,7 +199,7 @@ ms.locfileid: "63583671"
 
 نوصي باستخدام إدارة نقاط النهاية من Microsoft لتكوين الوصول إلى المجلدات التي يتم التحكم بها.
 
-:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="سياسات ASR في إدارة نقاط النهاية من Microsoft":::
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="سياسات ASR في مدخل إدارة نقاط النهاية من Microsoft" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
 1. انتقل إلى إدارة نقاط النهاية من Microsoft إدارة ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) ثم سجل الدخول. 
 
@@ -231,7 +231,7 @@ ms.locfileid: "63583671"
 
 يمكنك تكوين Defender لنقطة النهاية لحظر الأجهزة والملفات القابلة للإزالة أو السماح بها على الأجهزة القابلة للإزالة. نوصي باستخدام إدارة نقاط النهاية من Microsoft لتكوين إعدادات التحكم في جهازك.
 
-:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="إدارة نقاط النهاية من Microsoft الإدارية":::
+:::image type="content" source="../../media/mde-p1/mem-admintemplates.png" alt-text="إدارة نقاط النهاية من Microsoft الإدارية" lightbox="../../media/mde-p1/mem-admintemplates.png":::
 
 1. انتقل إلى إدارة نقاط النهاية من Microsoft إدارة ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) ثم سجل الدخول. 
 
@@ -258,13 +258,13 @@ ms.locfileid: "63583671"
 10. على علامة **التبويب مراجعة + إنشاء** ، راجع إعدادات النهج، ثم اختر **إنشاء**. سيتم تطبيق النهج على أي نقاط نهاية تم تعيينها إلى Defender for Endpoint قريبا.
 
 > [!TIP]
-> لمزيد من المعلومات، [راجع كيفية التحكم في أجهزة USB وغيرها من الوسائط القابلة للإزالة باستخدام Microsoft Defender لنقطة النهاية](control-usb-devices-using-intune.md).
+> لمزيد من المعلومات، [راجع كيفية التحكم في أجهزة USB وغيرها](control-usb-devices-using-intune.md) من الوسائط القابلة للإزالة باستخدام Microsoft Defender لنقطة النهاية.
 
 ### <a name="network-protection"></a>حماية الشبكة
 
 باستخدام حماية الشبكة، يمكنك المساعدة في حماية مؤسستك من المجالات الخطيرة التي قد تستضيف رسائل التصيد الاحتيالي والمستغلة والمحتويات الضارة الأخرى على الإنترنت. نوصي باستخدام إدارة نقاط النهاية من Microsoft تشغيل حماية الشبكة.
 
-:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="ملف تعريف حماية نقطة النهاية في إدارة نقاط النهاية من Microsoft":::
+:::image type="content" source="../../media/mde-p1/mem-endpointprotectionprofile.png" alt-text="ملف تعريف حماية نقطة النهاية في مدخل إدارة نقاط النهاية من Microsoft النهاية" lightbox="../../media/mde-p1/mem-endpointprotectionprofile.png":::
 
 1. انتقل إلى إدارة نقاط النهاية من Microsoft إدارة ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) ثم سجل الدخول. 
 
@@ -352,7 +352,7 @@ ms.locfileid: "63583671"
 
 يساعد جدار حماية الشبكة على تقليل مخاطر أمان الشبكة. يمكن لفريق الأمان لديك تعيين القواعد التي تحدد حركة المرور المسموح بتدفقها إلى أجهزة مؤسستك أو منها. نوصي باستخدام إدارة نقاط النهاية من Microsoft لتكوين جدار حماية الشبكة. 
 
-:::image type="content" source="../../media/mde-p1/mem-firewallpolicy.png" alt-text="نهج جدار الحماية في إدارة نقاط النهاية من Microsoft":::
+:::image type="content" source="../../media/mde-p1/mem-firewallpolicy.png" alt-text="نهج جدار الحماية في مدخل إدارة نقاط النهاية من Microsoft" lightbox="../../media/mde-p1/mem-firewallpolicy.png":::
 
 لتكوين إعدادات جدار الحماية الأساسية، اتبع الخطوات التالية:
 
@@ -385,22 +385,22 @@ ms.locfileid: "63583671"
 9. على علامة **التبويب مراجعة + إنشاء** ، راجع إعدادات النهج، ثم اختر **إنشاء**.
 
 > [!TIP]
-> تكون إعدادات جدار الحماية مفصلة وقد تبدو معقدة. راجع أفضل [الممارسات لتكوين جدار الحماية Windows Defender](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
+> تكون إعدادات جدار الحماية مفصلة وقد تبدو معقدة. راجع أفضل [الممارسات لتكوين جدار](/windows/security/threat-protection/windows-firewall/best-practices-configuring) الحماية Windows Defender.
 
 ### <a name="application-control"></a>عنصر تحكم التطبيق
 
-Windows Defender Application Control (WDAC) على حماية نقاط نهاية Windows من خلال السماح بتشغيل التطبيقات والعمليات الموثوق بها فقط. استخدمت معظم المؤسسات نشرا مرحيا ل WDAC. وهذا يعني أن معظم المؤسسات لا يتم طرح WDAC عبر Windows نقاط النهاية في بادئ الأمر. في الواقع، استنادا إلى ما إذا كانت نقاط نهاية Windows في مؤسستك مدارة بشكل كامل أو مدارة بشكل خفيف أو نقاط نهاية "إحضار جهازك الخاص"، يمكنك نشر WDAC على كل نقاط النهاية أو على بعض نقاط النهاية.
+Windows Defender التحكم في التطبيقات (WDAC) Windows نقاط النهاية من خلال السماح بتشغيل التطبيقات والعمليات الموثوق بها فقط. استخدمت معظم المؤسسات نشرا مرحيا ل WDAC. وهذا يعني أن معظم المؤسسات لا يتم طرح WDAC عبر Windows نقاط النهاية في بادئ الأمر. في الواقع، استنادا إلى ما إذا كانت نقاط نهاية Windows في مؤسستك مدارة بشكل كامل أو مدارة بشكل خفيف أو نقاط نهاية "إحضار جهازك الخاص"، يمكنك نشر WDAC على كل نقاط النهاية أو على بعض نقاط النهاية.
 
 للمساعدة في تخطيط نشر WDAC، راجع الموارد التالية:
 
 - [التحكم في التطبيق Windows](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 
-- [Windows نهج التحكم في تطبيقات Defender](/windows/security/threat-protection/windows-defender-application-control/understand-windows-defender-application-control-policy-design-decisions)
+- [Windows Defender قرارات تصميم نهج التحكم في التطبيقات](/windows/security/threat-protection/windows-defender-application-control/understand-windows-defender-application-control-policy-design-decisions)
 
-- [Windows "التحكم في تطبيق Defender" في سيناريوهات مختلفة: أنواع الأجهزة](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
+- [Windows Defender "التحكم في التطبيق" في سيناريوهات مختلفة: أنواع الأجهزة](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
 ## <a name="next-steps"></a>الخطوات التالية
 
 الآن وقد مرت بعملية الإعداد والتكوين، فإن الخطوة التالية هي بدء استخدام Defender for Endpoint. 
 
-- [بدء العمل مع Defender for Endpoint الخطة 1](mde-plan1-getting-started.md)
+- [Első lépések مع Defender for Endpoint الخطة 1](mde-plan1-getting-started.md)

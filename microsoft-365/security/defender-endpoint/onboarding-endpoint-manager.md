@@ -1,7 +1,7 @@
 ---
 title: الboarding باستخدام إدارة نقاط النهاية من Microsoft
-description: تعرف على كيفية ال متن الطائرة في Microsoft Defender لنقطة النهاية باستخدام إدارة نقاط النهاية من Microsoft
-keywords: التهيئة، التكوين، النشر، النشر، إدارة نقطة النهاية، Microsoft Defender ل Endpoint، إنشاء مجموعة، استجابة الكشف عن نقطة النهاية، حماية الجيل التالي، الحد من سطح الهجوم، إدارة نقطة نهاية Microsoft
+description: تعرف على كيفية الحافظة Microsoft Defender لنقطة النهاية باستخدام إدارة نقاط النهاية من Microsoft
+keywords: التهيئة، التكوين، النشر، النشر، إدارة نقاط النهاية، Microsoft Defender لنقطة النهاية، إنشاء مجموعة، استجابة الكشف عن نقطة النهاية، حماية الجيل التالي، الحد من سطح الهجوم، إدارة نقطة نهاية microsoft
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 261cb8af0f1fbb4c118aca649945f66015f1d25c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ca4c3e4992e9beb10e9369aede9d5ad8b9d73709
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570357"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64466972"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>الboarding باستخدام إدارة نقاط النهاية من Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "63570357"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -39,8 +39,8 @@ ms.locfileid: "63570357"
 
 في موضوع [التخطيط](deployment-strategy.md) ، تم توفير عدة أساليب للأجهزة المجهزة للخدمة. يتناول هذا الموضوع البنية الأصلية للسحابة.
 
-![صورة لهندسة السحابة الأصلية.](images/cloud-native-architecture.png)
- *رسم تخطيطي لهنيات البيئة*
+:::image type="content" source="images/cloud-native-architecture.png" alt-text="هندسة السحابة الأصلية" lightbox="images/cloud-native-architecture.png":::
+*رسم تخطيطي لهنيات البيئة*
 
 على الرغم من أن Defender for Endpoint يدعم التكهن بنقاط النهاية والأدوات المختلفة، لا تغطي هذه المقالة هذه النقاط والأدوات. للحصول على معلومات حول التكديب العام باستخدام أساليب وأدوات النشر المعتمدة الأخرى، راجع [نظرة عامة على التكديب](onboarding.md).
 
@@ -90,12 +90,12 @@ ms.locfileid: "63570357"
 2. افتح **المجموعات > جديدة**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل1.](images/66f724598d9c3319cba27f79dd4617a4.png)
+    > :::image type="content" source="images/66f724598d9c3319cba27f79dd4617a4.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 1" lightbox="images/66f724598d9c3319cba27f79dd4617a4.png":::
 
 3. أدخل التفاصيل وأنشئ مجموعة جديدة.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل 2.](images/b1e0206d675ad07db218b63cd9b9abc3.png)
+    > :::image type="content" source="images/b1e0206d675ad07db218b63cd9b9abc3.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 2" lightbox="images/b1e0206d675ad07db218b63cd9b9abc3.png":::
 
 4. أضف المستخدم أو الجهاز الاختباري.
 
@@ -106,11 +106,11 @@ ms.locfileid: "63570357"
 7. ابحث عن المستخدم أو الجهاز الاختباري وحدده.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل3.](images/149cbfdf221cdbde8159d0ab72644cd0.png)
+    > :::image type="content" source="images/149cbfdf221cdbde8159d0ab72644cd0.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 3" lightbox="images/149cbfdf221cdbde8159d0ab72644cd0.png":::
 
 8. أصبحت الآن مجموعة الاختبار لديك عضوا لاختباره.
 
-## <a name="step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities"></a>الخطوة 2: إنشاء سياسات تكوين لتكوين قدرات نقطة النهاية ل Microsoft Defender
+## <a name="step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities"></a>الخطوة 2: إنشاء سياسات تكوين لتكوين Microsoft Defender لنقطة النهاية التهيئة
 
 في المقطع التالي، ستنشئ عددا من سياسات التكوين.
 
@@ -130,46 +130,46 @@ ms.locfileid: "63570357"
 2. انتقل إلى **نقطة النهاية > للكشف عن نقطة النهاية والاستجابة لها**. انقر فوق **إنشاء ملف تعريف**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل4.](images/58dcd48811147feb4ddc17212b7fe840.png)
+    > :::image type="content" source="images/58dcd48811147feb4ddc17212b7fe840.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 4" lightbox="images/58dcd48811147feb4ddc17212b7fe840.png":::
 
 3. ضمن **النظام الأساسي، حدد Windows 10 واللاحقة، ملف التعريف - الكشف عن نقطة النهاية والاستجابة > إنشاء**.
 
 4. أدخل اسما ووصفا، ثم حدد  **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل5.](images/a5b2d23bdd50b160fef4afd25dda28d4.png)
+    > :::image type="content" source="images/a5b2d23bdd50b160fef4afd25dda28d4.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 5" lightbox="images/a5b2d23bdd50b160fef4afd25dda28d4.png":::
 
 5. حدد الإعدادات كما تقتضي الحاجة، ثم حدد  **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل6.](images/cea7e288b5d42a9baf1aef0754ade910.png)
+    > :::image type="content" source="images/cea7e288b5d42a9baf1aef0754ade910.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 6" lightbox="images/cea7e288b5d42a9baf1aef0754ade910.png":::
 
     > [!NOTE]
-    > في هذا المثيل، تم ملء هذا البرنامج بشكل تلقائي بتكامل Defender for Endpoint بالفعل مع Intune. لمزيد من المعلومات حول التكامل، راجع [تمكين Microsoft Defender لنقطة النهاية في Intune](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp).
+    > في هذا المثيل، تم ملء هذا البرنامج بشكل تلقائي بتكامل Defender for Endpoint بالفعل مع Intune. لمزيد من المعلومات حول التكامل، راجع [تمكين Microsoft Defender لنقطة النهاية Intune](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp).
     >
-    > الصورة التالية هي مثال لما ستشاهده عندما لا يكون Microsoft Defender for Endpoint متكاملا مع Intune:
+    > الصورة التالية هي مثال لما ستشاهده عندما Microsoft Defender لنقطة النهاية دمج NOT مع Intune:
     >
-    > ![صورة إدارة نقاط النهاية من Microsoft portal7.](images/2466460812371ffae2d19a10c347d6f4.png)
+    > :::image type="content" source="images/2466460812371ffae2d19a10c347d6f4.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 7" lightbox="images/2466460812371ffae2d19a10c347d6f4.png":::
 
 6. أضف علامات النطاق إذا لزم الأمر، ثم حدد  **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل8.](images/ef844f52ec2c0d737ce793f68b5e8408.png)
+    > :::image type="content" source="images/ef844f52ec2c0d737ce793f68b5e8408.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 8" lightbox="images/ef844f52ec2c0d737ce793f68b5e8408.png":::
 
 7. أضف مجموعة اختبار بالنقر فوق **تحديد المجموعات لتضمينها** واختيارها، ثم حدد  **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل9.](images/fc3525e20752da026ec9f46ab4fec64f.png)
+    > :::image type="content" source="images/fc3525e20752da026ec9f46ab4fec64f.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 9" lightbox="images/fc3525e20752da026ec9f46ab4fec64f.png":::
 
 8. راجع وقبل، ثم حدد  **إنشاء**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft 10.](images/289172dbd7bd34d55d24810d9d4d8158.png)
+    > :::image type="content" source="images/289172dbd7bd34d55d24810d9d4d8158.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 10" lightbox="images/289172dbd7bd34d55d24810d9d4d8158.png":::
 
 9. يمكنك عرض النهج المكتمل.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل11.](images/5a568b6878be8243ea2b9d82d41ed297.png)
+    > :::image type="content" source="images/5a568b6878be8243ea2b9d82d41ed297.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 11" lightbox="images/5a568b6878be8243ea2b9d82d41ed297.png":::
 
 ### <a name="next-generation-protection"></a>حماية الجيل التالي
 
@@ -178,39 +178,39 @@ ms.locfileid: "63570357"
 2. انتقل إلى **برنامج الحماية من الفيروسات > Endpoint > نهج.**
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل 12.](images/6b728d6e0d71108d768e368b416ff8ba.png)
+    > :::image type="content" source="images/6b728d6e0d71108d768e368b416ff8ba.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 12" lightbox="images/6b728d6e0d71108d768e368b416ff8ba.png":::
 
 3. حدد **النظام الأساسي - Windows 10 واللاحقة - Windows وملف التعريف - برنامج الحماية من الفيروسات من Microsoft Defender > إنشاء**.
 
 4. أدخل الاسم والوصف، ثم حدد  **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل13.](images/a7d738dd4509d65407b7d12beaa3e917.png)
+    > :::image type="content" source="images/a7d738dd4509d65407b7d12beaa3e917.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 13" lightbox="images/a7d738dd4509d65407b7d12beaa3e917.png":::
 
 5. في **صفحة إعدادات التكوين**: قم بتعيين التكوينات التي تتطلبها برنامج الحماية من الفيروسات من Microsoft Defender (الحماية السحابية والاستثناءات Real-Time الحماية والحماية وا الإصلاح).
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل14.](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
+    > :::image type="content" source="images/3840b1576d6f79a1d72eb14760ef5e8c.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 14" lightbox="images/3840b1576d6f79a1d72eb14760ef5e8c.png":::
 
 6. أضف علامات النطاق إذا لزم الأمر، ثم حدد  **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل15.](images/2055e4f9b9141525c0eb681e7ba19381.png)
+    > :::image type="content" source="images/2055e4f9b9141525c0eb681e7ba19381.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 15" lightbox="images/2055e4f9b9141525c0eb681e7ba19381.png":::
 
 7. حدد المجموعات لتضمينها، ثم قم بتعيينها إلى مجموعة الاختبار، ثم حدد  **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل16.](images/48318a51adee06bff3908e8ad4944dc9.png)
+    > :::image type="content" source="images/48318a51adee06bff3908e8ad4944dc9.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 16" lightbox="images/48318a51adee06bff3908e8ad4944dc9.png":::
 
 8. راجع وإنشاء، ثم حدد  **إنشاء**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft 17.](images/dfdadab79112d61bd3693d957084b0ec.png)
+    > :::image type="content" source="images/dfdadab79112d61bd3693d957084b0ec.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 17" lightbox="images/dfdadab79112d61bd3693d957084b0ec.png":::
 
 9. سترى نهج التكوين الذي أنشأته.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل18.](images/38180219e632d6e4ec7bd25a46398da8.png)
+    > :::image type="content" source="images/38180219e632d6e4ec7bd25a46398da8.png" alt-text="مدخل إدارة نقاط النهاية من Microsoft 18" lightbox="images/38180219e632d6e4ec7bd25a46398da8.png":::
 
 ### <a name="attack-surface-reduction---attack-surface-reduction-rules"></a>تقليل مساحة الهجوم - قواعد الحد من سطح الهجوم
 
@@ -223,12 +223,12 @@ ms.locfileid: "63570357"
 4. حدد **النظام الأساسي - Windows 10 واللاحقة - ملف التعريف -** قواعد تقليل مساحة الهجوم > إنشاء.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل19.](images/522d9bb4288dc9c1a957392b51384fdd.png)
+    > :::image type="content" source="images/522d9bb4288dc9c1a957392b51384fdd.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 19" lightbox="images/522d9bb4288dc9c1a957392b51384fdd.png":::
 
 5. أدخل اسما ووصفا، ثم حدد  **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل20.](images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png)
+    > :::image type="content" source="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 20" lightbox="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png":::
 
 6. في الصفحة **إعدادات التكوين**: قم بتعيين التكوينات التي تتطلبها لقواعد تقليل مساحة الهجوم، ثم حدد  **التالي**.
 
@@ -238,27 +238,27 @@ ms.locfileid: "63570357"
     > لمزيد من المعلومات، راجع [قواعد الحد من سطح الهجوم](attack-surface-reduction.md).
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft portal21.](images/dd0c00efe615a64a4a368f54257777d0.png)
+    > :::image type="content" source="images/dd0c00efe615a64a4a368f54257777d0.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 21" lightbox="images/dd0c00efe615a64a4a368f54257777d0.png":::
 
 7. أضف علامات النطاق كما تقتضي الحاجة، ثم حدد  **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل22.](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
+    > :::image type="content" source="images/6daa8d347c98fe94a0d9c22797ff6f28.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 22" lightbox="images/6daa8d347c98fe94a0d9c22797ff6f28.png":::
 
 8. حدد المجموعات لتضمينها وتعيينها إلى مجموعة اختبار، ثم حدد  **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل23.](images/45cefc8e4e474321b4d47b4626346597.png)
+    > :::image type="content" source="images/45cefc8e4e474321b4d47b4626346597.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 23" lightbox="images/45cefc8e4e474321b4d47b4626346597.png":::
 
 9. راجع التفاصيل، ثم حدد  **إنشاء**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل24.](images/2c2e87c5fedc87eba17be0cdeffdb17f.png)
+    > :::image type="content" source="images/2c2e87c5fedc87eba17be0cdeffdb17f.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 24" lightbox="images/2c2e87c5fedc87eba17be0cdeffdb17f.png":::
 
 10. عرض النهج.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft portal25.](images/7a631d17cc42500dacad4e995823ffef.png)
+    > :::image type="content" source="images/7a631d17cc42500dacad4e995823ffef.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 25" lightbox="images/7a631d17cc42500dacad4e995823ffef.png":::
 
 ### <a name="attack-surface-reduction---web-protection"></a>تقليل مساحة الهجوم - حماية الويب
 
@@ -271,12 +271,12 @@ ms.locfileid: "63570357"
 4. حدد **Windows 10 واللاحقة - حماية > إنشاء**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل26.](images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png)
+    > :::image type="content" source="images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 26" lightbox="images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png":::
 
 5. أدخل اسما ووصفا، ثم حدد  **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل27.](images/5be573a60cd4fa56a86a6668b62dd808.png)
+    > :::image type="content" source="images/5be573a60cd4fa56a86a6668b62dd808.png" alt-text="مدخل إدارة نقاط النهاية من Microsoft 27" lightbox="images/5be573a60cd4fa56a86a6668b62dd808.png":::
 
 6. في الصفحة **إعدادات التكوين**: قم بتعيين التكوينات التي تحتاج إليها لحماية ويب، ثم حدد  **التالي**.
 
@@ -286,27 +286,27 @@ ms.locfileid: "63570357"
     > لمزيد من المعلومات، راجع [حماية الويب](web-protection-overview.md).
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل28.](images/6104aa33a56fab750cf30ecabef9f5b6.png)
+    > :::image type="content" source="images/6104aa33a56fab750cf30ecabef9f5b6.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 28" lightbox="images/6104aa33a56fab750cf30ecabef9f5b6.png":::
 
 7. أضف **علامات النطاق كما هو مطلوب > التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل29.](images/6daa8d347c98fe94a0d9c22797ff6f28.png)
+    > :::image type="content" source="images/6daa8d347c98fe94a0d9c22797ff6f28.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 29" lightbox="images/6daa8d347c98fe94a0d9c22797ff6f28.png":::
 
 8. حدد **تعيين إلى مجموعة > التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل30.](images/45cefc8e4e474321b4d47b4626346597.png)
+    > :::image type="content" source="images/45cefc8e4e474321b4d47b4626346597.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 30" lightbox="images/45cefc8e4e474321b4d47b4626346597.png":::
 
 9. حدد **مراجعة وإنشاء > إنشاء**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft portal31.](images/8ee0405f1a96c23d2eb6f737f11c1ae5.png)
+    > :::image type="content" source="images/8ee0405f1a96c23d2eb6f737f11c1ae5.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 31" lightbox="images/8ee0405f1a96c23d2eb6f737f11c1ae5.png":::
 
 10. عرض النهج.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft المدخل32.](images/e74f6f6c150d017a286e6ed3dffb7757.png)
+    > :::image type="content" source="images/e74f6f6c150d017a286e6ed3dffb7757.png" alt-text="المدخل إدارة نقاط النهاية من Microsoft 32" lightbox="images/e74f6f6c150d017a286e6ed3dffb7757.png":::
 
 ## <a name="validate-configuration-settings"></a>التحقق من صحة إعدادات التكوين
 
@@ -321,7 +321,7 @@ ms.locfileid: "63570357"
 1. افتح مدخل MEM وانتقل إلى النهج ذي الصلة كما هو موضح في الخطوات أعلاه. يوضح المثال التالي إعدادات حماية الجيل التالي.
 
     > [!div class="mx-imgBorder"]
-    > [![صورة إدارة نقاط النهاية من Microsoft portal33.](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox)
+    > [![صورة إدارة نقاط النهاية من Microsoft portal33.](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox) 
 
 2. حدد **نهج التكوين** لعرض حالة النهج.
 
@@ -368,7 +368,7 @@ ms.locfileid: "63570357"
 1. قبل تطبيق النهج على جهاز اختبار، يجب أن تكون قادرا على إدارة الإعدادات يدويا كما هو موضح أدناه.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إعداد page1.](images/88efb4c3710493a53f2840c3eac3e3d3.png)
+    > :::image type="content" source="images/88efb4c3710493a53f2840c3eac3e3d3.png" alt-text="صفحة الإعدادات-1" lightbox="images/88efb4c3710493a53f2840c3eac3e3d3.png":::
 
 2. بعد تطبيق النهج، يجب ألا تتمكن من إدارة الإعدادات يدويا.
 
@@ -376,7 +376,7 @@ ms.locfileid: "63570357"
     > في الصورة التالية، **يتم** عرض تشغيل الحماية التي يتم توفيرها  في السحابة و تشغيل الحماية في الوقت الحقيقي كمدارة.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إعداد page2.](images/9341428b2d3164ca63d7d4eaa5cff642.png)
+    > :::image type="content" source="images/9341428b2d3164ca63d7d4eaa5cff642.png" alt-text="صفحة الإعدادات-2" lightbox="images/9341428b2d3164ca63d7d4eaa5cff642.png":::
 
 ### <a name="confirm-attack-surface-reduction---attack-surface-reduction-rules"></a>تأكيد تقليل مساحة الهجوم - قواعد الحد من سطح الهجوم
 
@@ -390,13 +390,13 @@ ms.locfileid: "63570357"
     >
     > AttackSurfaceReductionRules_Ids:
 
-    ![صورة سطر الأوامر 1.](images/cb0260d4b2636814e37eee427211fe71.png)
+    :::image type="content" source="images/cb0260d4b2636814e37eee427211fe71.png" alt-text="سطر الأوامر 1" lightbox="images/cb0260d4b2636814e37eee427211fe71.png":::
 
 3. بعد تطبيق النهج على جهاز اختبار، افتح تطبيق PowerShell Windows وا اكتب `Get-MpPreference`.
 
 4. يجب أن يستجيب هذا باستخدام الأسطر التالية مع المحتوى كما هو موضح أدناه:
 
-    ![صورة سطر الأوامر2.](images/619fb877791b1fc8bc7dfae1a579043d.png)
+   :::image type="content" source="images/619fb877791b1fc8bc7dfae1a579043d.png" alt-text="سطر الأوامر 2" lightbox="images/619fb877791b1fc8bc7dfae1a579043d.png":::
 
 ### <a name="confirm-attack-surface-reduction---web-protection"></a>تأكيد تقليل مساحة الهجوم - حماية الويب
 
@@ -404,10 +404,10 @@ ms.locfileid: "63570357"
 
 2. يجب أن يستجيب هذا ب 0 كما هو موضح أدناه.
 
-    ![صورة سطر الأوامر3.](images/196a8e194ac99d84221f405d0f684f8c.png)
+   :::image type="content" source="images/196a8e194ac99d84221f405d0f684f8c.png" alt-text="سطر الأوامر 3" lightbox="images/196a8e194ac99d84221f405d0f684f8c.png":::
 
 3. بعد تطبيق النهج، افتح حساب PowerShell Windows وا اكتب `(Get-MpPreference).EnableNetworkProtection`.
 
 4. يجب أن يستجيب هذا باستخدام 1 كما هو موضح أدناه.
 
-    ![صورة سطر الأوامر 4.](images/c06fa3bbc2f70d59dfe1e106cd9a4683.png)
+   :::image type="content" source="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png" alt-text="سطر الأوامر 4" lightbox="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png":::

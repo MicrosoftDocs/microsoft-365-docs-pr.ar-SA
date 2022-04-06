@@ -17,16 +17,16 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية استخدام سياسات الفحص للتحكم في ما يمكن للمستخدمين القيام به للرسائل المعزولة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8f015951fec4ea8fb9d433c8b48ccb26cd9e1222
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5133b98609c29e54361b8fe108e8810858f0d8c8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63574406"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467104"
 ---
 # <a name="quarantine-policies"></a>سياسات الفحص
 
-تسمح سياسات الفحص (المعروفة سابقا باسم علامات _الفحص) في_ Exchange Online Protection (EOP) و Microsoft Defender ل Office 365 للمسؤولين بالتحكم في ما يمكن للمستخدمين فعله للرسائل المعزولة استنادا إلى سبب عزل الرسالة.
+تسمح سياسات الفحص (المعروفة سابقا باسم علامات _الفحص) في_ Exchange Online Protection (EOP) و Microsoft Defender لـ Office 365 للمسؤولين بالتحكم في ما يمكن للمستخدمين القيام به للرسائل المعزولة استنادا إلى سبب عزل الرسالة.
 
 بشكل تقليدي، يتم السماح للمستخدمين أو رفض مستويات التفاعل لرسائل الفحص استنادا إلى سبب عزل الرسالة. على سبيل المثال، يمكن للمستخدمين عرض الرسائل التي تم فحصها بواسطة تصفية مكافحة البريد العشوائي كبريد عشوائي أو مجمع، ولكن لا يمكنهم عرض الرسائل التي تم فحصها أو إصدارها على أنها تصيد احتيالي أو برامج ضارة عالية الثقة.
 
@@ -42,10 +42,6 @@ ms.locfileid: "63574406"
 
 يتم وصف أذونات نهج الفحص الفردية المضمنة في مجموعات الأذونات المحددة مسبقا في الجدول التالي:
 
-<br>
-
-****
-
 |الإذن|لا يمكن الوصول|وصول محدود|الوصول الكامل|
 |---|:---:|:---:|:---:|
 |**حظر المرسل** (_PermissionToBlockSender_)||![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
@@ -53,11 +49,8 @@ ms.locfileid: "63574406"
 |**معاينة** (_PermissionToPreview_)||![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
 |**السماح للمستلمين بإطلاق رسالة من الفحص** (_PermissionToRelease_)|||![علامة الاختيار.](../../media/checkmark.png)|
 |**السماح للمستلمين بطلب إصدار** رسالة من الفحص (_PermissionToRequestRelease_)||![علامة الاختيار](../../media/checkmark.png)||
-|
 
 يتم وصف سياسات الفحص الافتراضية ومجموعات الأذونات المقترنة بها وما إذا كانت إعلامات الفحص تم تمكينها في الجدول التالي:
-
-<br>
 
 |نهج الفحص الافتراضي|مجموعة الأذونات المستخدمة|هل تم تمكين إعلامات الفحص؟|
 |---|---|---|
@@ -151,10 +144,6 @@ New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 
 
 يتم وصف الترتيب والقيم المطلوبة لكل إذن فردي في الجدول التالي:
 
-<br>
-
-****
-
 |الإذن|القيمة العشرية|قيمة ثنائية|
 |---|:---:|:---:|
 |PermissionToViewHeader<sup>\*</sup>|128|10000000|
@@ -165,7 +154,6 @@ New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 
 |PermissionToRelease<sup>\*\*\*</sup>|4|00000100|
 |PermissionToPreview|2|00000010|
 |PermissionToDelete|1|00000001|
-|
 
 <sup>\*</sup>لا تخفي القيمة 0 الزر عرض رأس الرسالة في  تفاصيل الرسالة المعزولة (الزر متوفر دائما).
 
@@ -174,10 +162,6 @@ New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 
 <sup>\*\*\*</sup> لا تضع كلتا القيمتين على 1. قم بتعيين واحد إلى 1 والآخر إلى 0، أو قم بتعيين كليهما إلى 0.
 
 بالنسبة إلى أذونات الوصول المحدودة، القيم المطلوبة هي:
-
-<br>
-
-****
 
 |الإذن|وصول محدود|
 |---|:--:|
@@ -191,7 +175,6 @@ New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 
 |PermissionToDelete|1|
 |قيمة ثنائية|00011011|
 |قيمة عشرية لاستخدامها|27|
-|
 
 ينشئ هذا المثال نهج عزل جديد يسمى LimitedAccess مع تشغيل إعلامات الفحص التي تقوم بتعيين أذونات الوصول المحدود كما هو موضح في الجدول السابق.
 
@@ -207,18 +190,13 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 
 في _ميزات_ الحماية المعتمدة التي تقوم بعزل رسائل البريد الإلكتروني، يمكنك تعيين نهج الفحص إلى إجراءات الفحص المتوفرة. الميزات التي يتم وصفها لرسائل الفحص وتوفر سياسات الفحص في الجدول التالي:
 
-<br>
-
-****
-
 |الميزة|هل تم دعم سياسات الفحص؟|سياسات الفحص الافتراضية المستخدمة|
 |---|:---:|---|
 |[سياسات مكافحة البريد العشوائي](configure-your-spam-filter-policies.md): <ul><li>**البريد العشوائي** (_SpamAction_)</li><li>**بريد عشوائي عالي الثقة** (_HighConfidenceSpamAction_)</li><li>**التصيد الاحتيالي** (_PhishSpamAction_)</li><li>**التصيد الاحتيالي عالي الثقة** (_HighConfidencePhishAction_)</li><li>**مجمع** (_BulkSpamAction_)</li></ul>|نعم|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>AdminOnlyAccessPolicy (بلا وصول)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li></ul>|
-|سياسات مكافحة التصيد الاحتيالي: <ul><li>[الحماية من المعلومات المنتحلة](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[الحماية من انتحال الشخصية في Defender for Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**إذا تم اكتشاف الرسالة كمستخدم منتحل** (_TargetedUserProtectionAction_)</li><li>**إذا تم اكتشاف الرسالة كمجال منتحل** (_TargetedDomainProtectionAction_)</li><li>**إذا كشف الذكاء في علبة البريد عن مستخدم منتحل** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|نعم|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>حماية انتحال:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li></ul></li></ul>|
+|سياسات مكافحة التصيد الاحتيالي: <ul><li>[الحماية من المعلومات المنتحلة](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[حماية انتحال في Defender لـ Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**إذا تم اكتشاف الرسالة كمستخدم منتحل** (_TargetedUserProtectionAction_)</li><li>**إذا تم اكتشاف الرسالة كمجال منتحل** (_TargetedDomainProtectionAction_)</li><li>**إذا كشف الذكاء في علبة البريد عن مستخدم منتحل** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|نعم|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>حماية انتحال:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li></ul></li></ul>|
 |[سياسات مكافحة البرامج الضارة](configure-anti-malware-policies.md): يتم دائما فحص كل الرسائل التي تم الكشف عنها.|نعم|AdminOnlyAccessPolicy (بلا وصول)|
 |[خزينة المرفقات](safe-attachments.md): <ul><li>رسائل البريد الإلكتروني التي بها مرفقات تم فحصها كبرامج ضارة خزينة المرفقات (_تمكين_ و _إجراء_)</li><li>الملفات التي تم فحصها [كبرامج ضارة خزينة مرفقات SharePoint OneDrive و Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>نعم</li><li>لا</li></ul>|<ul><li>AdminOnlyAccessPolicy (بلا وصول)</li><li>n/a</li></ul>|
 |[قواعد تدفق البريد](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (المعروفة أيضا بقواعد النقل) مع الإجراء: تسليم **الرسالة** إلى الفحص المستضاف (_الفحص_).|لا|n/a|
-|
 
 <sup>\*</sup> كما [هو موضح سابقا في هذه المقالة](#full-access-permissions-and-quarantine-notifications)، قد تستخدم مؤسستك الإعلاماتالبوليسية بدلا من DefaultFullAccessPolicy. والفرق الوحيد بين هذين الخيارين المعزولين هو أن إعلامات الفحص قيد التشغيل في NotificationEnabledPolicy ويتم إيقاف تشغيلها في DefaultFullAccessPolicy.
 
@@ -247,7 +225,7 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 
    **ملاحظة**: عند إنشاء نهج جديد، تشير قيمة نهج تحديد  الفحص الفارغة إلى استخدام نهج الفحص الافتراضي لهذا القرار. عند تحرير النهج لاحقا، يتم استبدال القيم الفارغة بأسماء نهج الفحص الافتراضي الفعلي كما هو موضح في الجدول السابق.
 
-   ![تحديدات نهج الفحص في نهج مكافحة البريد العشوائي.](../../media/quarantine-tags-in-anti-spam-policies.png)
+   :::image type="content" source="../../media/quarantine-tags-in-anti-spam-policies.png" alt-text="تحديدات نهج الفحص في نهج مكافحة البريد العشوائي" lightbox="../../media/quarantine-tags-in-anti-spam-policies.png":::
 
 يتم وصف الإرشادات الكاملة لإنشاء سياسات مكافحة البريد العشوائي وتعديلها في تكوين سياسات مكافحة البريد العشوائي [في EOP](configure-your-spam-filter-policies.md).
 
@@ -298,7 +276,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 ### <a name="anti-phishing-policies"></a>سياسات مكافحة التصيد الاحتيالي
 
-تتوفر المعلومات المنتحلة في EOP و Defender Office 365. تتوفر حماية انتحال المستخدم والحماية من انتحال المجال وذكاء علبة البريد فقط في Defender for Office 365. لمزيد من المعلومات، راجع [سياسات مكافحة التصيد](set-up-anti-phishing-policies.md) الاحتيالي في Microsoft 365.
+تتوفر المعلومات المنتحلة في EOP Defender لـ Office 365. تتوفر حماية انتحال المستخدم والحماية من انتحال المجال وذكاء علبة البريد فقط في Defender لـ Office 365. لمزيد من المعلومات، راجع [سياسات مكافحة التصيد](set-up-anti-phishing-policies.md) الاحتيالي في Microsoft 365.
 
 1. في مدخل [Microsoft 365 Defender،](https://security.microsoft.com) \>  \>  \> انتقل إلى & البريد الإلكتروني ونهج التعاون & قواعد الحماية من التصيد الاحتيالي في **القسم** "سياسات".
 
@@ -327,12 +305,12 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
    **ملاحظة**: عند إنشاء نهج جديد، تشير القيمة الفارغة لتطبيق نهج الفحص إلى استخدام نهج الفحص الافتراضي لهذا الإجراء. عند تحرير النهج لاحقا، يتم استبدال القيم الفارغة بأسماء نهج الفحص الافتراضي الفعلي كما هو موضح في الجدول السابق.
 
-   ![تحديدات نهج الفحص في نهج مكافحة التصيد الاحتيالي.](../../media/quarantine-tags-in-anti-phishing-policies.png)
+   :::image type="content" source="../../media/quarantine-tags-in-anti-phishing-policies.png" alt-text="تحديدات نهج الفحص في نهج مكافحة التصيد الاحتيالي" lightbox="../../media/quarantine-tags-in-anti-phishing-policies.png":::
 
 تتوفر الإرشادات الكاملة لإنشاء سياسات مكافحة التصيد الاحتيالي وتعديلها في المواضيع التالية:
 
 - [تكوين سياسات مكافحة التصيد الاحتيالي في EOP](configure-anti-phishing-policies-eop.md)
-- [تكوين سياسات مكافحة التصيد الاحتيالي في Microsoft Defender Office 365](configure-mdo-anti-phishing-policies.md)
+- [تكوين سياسات مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365](configure-mdo-anti-phishing-policies.md)
 
 #### <a name="anti-phishing-policies-in-powershell"></a>سياسات مكافحة التصيد الاحتيالي في PowerShell
 
@@ -352,7 +330,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
   Get-AntiPhishPolicy | Format-List Name,Enable*Intelligence,Enable*Protection,*Action,*QuarantineTag
   ```
 
-  للحصول على معلومات حول قيم الإجراءات الافتراضية وقيم الإجراءات الموصى بها لكل من قياسي وصارم، راجع إعدادات نهج مكافحة التصيد الاحتيالي وإعدادات انتحال [EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) في نهج مكافحة التصيد الاحتيالي في [Microsoft Defender Office 365](recommended-settings-for-eop-and-office365.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+  للحصول على معلومات حول قيم الإجراءات الافتراضية وقيم الإجراءات الموصى بها ل Standard and Strict، راجع إعدادات نهج مكافحة التصيد الاحتيالي وإعدادات انتحال [EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) في نهج مكافحة التصيد الاحتيالي في [Microsoft Defender لـ Office 365.](recommended-settings-for-eop-and-office365.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
 - عندما تنشئ نهج مكافحة التصيد الاحتيالي، فإن إجراء مكافحة التصيد الاحتيالي بدون معلمة نهج الفحص المقابلة يعني استخدام [](#step-2-assign-a-quarantine-policy-to-supported-features) نهج الفحص الافتراضي لهذا القرار.
 
@@ -437,7 +415,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 للحصول على بناء الجملة المفصل ومعلومات المعلمة، راجع [Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy).
 
-### <a name="safe-attachments-policies-in-defender-for-office-365"></a>خزينة المرفقات في Defender for Office 365
+### <a name="safe-attachments-policies-in-defender-for-office-365"></a>خزينة المرفقات في Defender لـ Office 365
 
 1. في مدخل [Microsoft 365 Defender،](https://security.microsoft.com) \>  \>  \> انتقل إلى البريد & البريد الإلكتروني ونهج التعاون & قواعد المخاطر خزينة **المرفقات** في **المقطع** "سياسات".
 
@@ -457,7 +435,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
    **ملاحظة**: عند إنشاء نهج جديد، تشير قيمة نهج الفحص  الفارغة إلى استخدام نهج الفحص الافتراضي. عند تحرير النهج لاحقا، يتم استبدال القيمة الفارغة باسم نهج الفحص الافتراضي الفعلي كما هو موضح في الجدول السابق.
 
-يتم وصف الإرشادات الكاملة لإنشاء خزينة المرفقات وتعديلها في إعداد [خزينة المرفقات في Microsoft Defender Office 365](set-up-safe-attachments-policies.md).
+يتم وصف الإرشادات الكاملة لإنشاء خزينة المرفقات وتعديلها في إعداد [خزينة المرفقات في Microsoft Defender لـ Office 365](set-up-safe-attachments-policies.md).
 
 #### <a name="safe-attachments-policies-in-powershell"></a>خزينة المرفقات في PowerShell
 
@@ -515,7 +493,7 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      تعرض لقطة الشاشة التالية اسم العرض المخصص في إعلام الفحص:
 
-     ![اسم عرض مرسل مخصص في إعلام الفحص.](../../media/quarantine-tags-esn-customization-display-name.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-display-name.png" alt-text="اسم عرض مرسل مخصص في إعلام الفحص" lightbox="../../media/quarantine-tags-esn-customization-display-name.png":::
 
    - **إخلاء المسؤولية**: أضف إخلاء إخلاء المسؤولية المخصص إلى أسفل إعلامات الفحص. النص المكتوب، إخلاء المسؤولية من **مؤسستك:** يتم تضمينه أولا دائما، متبوع بالنص الذي تحدده.
 
@@ -523,19 +501,19 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      تعرض لقطة الشاشة التالية إخلاء المسؤولية المخصص في إعلام الفحص:
 
-     ![إخلاء المسؤولية المخصص في أسفل إعلام الفحص.](../../media/quarantine-tags-esn-customization-disclaimer.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="إخلاء المسؤولية المخصص في أسفل إعلام الفحص" lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
 
    - **اختر اللغة**: تكون إعلامات الفحص معروبة بالفعل استنادا إلى إعدادات لغة المستلم. يمكنك تحديد نص مخصص بلغات مختلفة **لقيم** "اسم العرض" و" **إخلاء** المسؤولية".
 
      حدد لغة واحدة على الأقل من مربع اللغة الأولى، ثم انقر فوق **إضافة**. يمكنك تحديد لغات متعددة بالنقر فوق **إضافة** بعد كل لغة. يعرض مربع لغة المقطع كل اللغات التي حددتها:
 
-     ![اللغات المحددة في مربع اللغة الثانية في إعدادات الإعلامات المعزولة العامة لنهج الفحص.](../../media/quarantine-tags-esn-customization-selected-languages.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="اللغات المحددة في مربع اللغة الثانية في إعدادات الإعلامات المعزولة العامة لنهج الفحص" lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
    - **استخدام شعار شركتي**: حدد هذا الخيار لاستبدال شعار Microsoft الافتراضي المستخدم في أعلى إعلامات الفحص. قبل القيام بذلك، ستحتاج إلى اتباع الإرشادات الواردة في [تخصيص](../../admin/setup/customize-your-organization-theme.md) Microsoft 365 لمنظمتك لتحميل شعارك المخصص.
 
      تعرض لقطة الشاشة التالية شعارا مخصصا في إعلام الفحص:
 
-     ![شعار مخصص في إعلام الفحص.](../../media/quarantine-tags-esn-customization-logo.png)
+     :::image type="content" source="../../media/quarantine-tags-esn-customization-logo.png" alt-text="شعار مخصص في إعلام الفحص" lightbox="../../media/quarantine-tags-esn-customization-logo.png":::
 
    - **إرسال إعلام بالبريد العشوائي للمستخدم النهائي كل (أيام)**: حدد تكرار إعلامات الفحص.
 
@@ -670,14 +648,14 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
   - **إزالة من الفحص**
   - **حظر المرسل**
 
-  ![الأزرار المتوفرة في تفاصيل الرسالة المعزولة إذا كان نهج الفحص يمنح المستخدم أذونات وصول محدودة.](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
+  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-limited-access.png" alt-text="الأزرار المتوفرة في تفاصيل الرسالة المعزولة إذا كان نهج الفحص يمنح المستخدم أذونات وصول محدودة" lightbox="../../media/quarantine-tags-quarantined-message-details-limited-access.png":::
 
 - **إعلامات الفحص**: تتوفر الأزرار التالية:
   - **حظر المرسل**
   - **طلب إصدار**
   - **مراجعة**
 
-  ![الأزرار المتوفرة في إعلام الفحص إذا كان نهج الفحص يمنح المستخدم أذونات وصول محدودة.](../../media/quarantine-tags-esn-limited-access.png)
+  :::image type="content" source="../../media/quarantine-tags-esn-limited-access.png" alt-text="الأزرار المتوفرة في إعلام الفحص إذا كان نهج الفحص يمنح المستخدم أذونات وصول محدودة" lightbox="../../media/quarantine-tags-esn-limited-access.png":::
 
 #### <a name="full-access"></a>الوصول الكامل
 
@@ -690,14 +668,14 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
   - **إزالة من الفحص**
   - **حظر المرسل**
 
-  ![الأزرار المتوفرة في تفاصيل الرسالة المعزولة إذا كان نهج الفحص يمنح المستخدم أذونات الوصول الكامل.](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+  :::image type="content" source="../../media/quarantine-tags-quarantined-message-details-full-access.png" alt-text="تفاصيل الأزرار المتوفرة في الرسالة المعزولة إذا كان نهج الفحص يمنح المستخدم أذونات الوصول الكامل" lightbox="../../media/quarantine-tags-quarantined-message-details-full-access.png":::
 
 - **إعلامات الفحص**: تتوفر الأزرار التالية:
   - **حظر المرسل**
   - **Release**
   - **مراجعة**
 
-  ![الأزرار المتوفرة في إعلام الفحص إذا كان نهج الفحص يمنح المستخدم أذونات الوصول الكامل.](../../media/quarantine-tags-esn-full-access.png)
+  :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="الأزرار المتوفرة في إعلام الفحص إذا كان نهج الفحص يمنح المستخدم أذونات الوصول الكامل" lightbox="../../media/quarantine-tags-esn-full-access.png":::
 
 ### <a name="individual-permissions"></a>الأذونات الفردية
 

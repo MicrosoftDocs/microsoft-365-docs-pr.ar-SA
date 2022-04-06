@@ -15,12 +15,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على كيفية استخدام خريطة تدفق البريد في لوحة معلومات تدفق البريد في مركز توافق الأمان & لتصور وتعقب كيفية تدفق البريد إلى المؤسسة وإخرا منها عبر الموصلات وبدون استخدام الموصلات.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 53c86584680f14c68b8d69ac0a0c2fc51933db28
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bd8df34c9484b7a2b8aa2bdd57d160e22f71d247
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680127"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473794"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>خريطة تدفق البريد في مركز & الأمان
 
@@ -28,12 +28,12 @@ ms.locfileid: "63680127"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 توفر **خريطة تدفق** البريد في لوحة [](mail-flow-insights-v2.md) معلومات تدفق البريد في [مركز](https://protection.office.com) & الأمان معلومات حول كيفية تدفق البريد عبر مؤسستك. يمكنك استخدام هذه المعلومات للتعرف على الأنماط وتحديد حالات الشذوذ وإصلاح المشاكل عند حدوثها.
 
-![عنصر واجهة مستخدم خريطة تدفق البريد في لوحة معلومات تدفق البريد في مركز & الأمان.](../../media/mfi-mail-flow-map-widget.png)
+:::image type="content" source="../../media/mfi-mail-flow-map-widget.png" alt-text="عنصر واجهة مستخدم خريطة تدفق البريد في لوحة معلومات تدفق البريد في مركز & الأمان" lightbox="../../media/mfi-mail-flow-map-widget.png":::
 
 بشكل افتراضي، يعرض عنصر واجهة المستخدم نمط تدفق البريد من اليوم السابق في مخطط يعرف بالرسم التخطيطي *Sankey* . يمكنك استخدام سهم لليسار ![لليسار.](../../media/scc-left-arrow.png) وسهم لليمين ![لعرض](../../media/scc-right-arrow.png) المعلومات من أيام مختلفة. يمثل كل لون مختلف تدفق البريد عبر موصل آخر وارد أو الصادر (أو بدون استخدام الموصلات). إذا مرر فوق لون معين، يتم عرض عدد الرسائل لهذا النوع من الموصلات.
 
@@ -45,11 +45,11 @@ ms.locfileid: "63680127"
 
 - **إظهار البيانات ل: نظرة عامة**: هذه طريقة عرض أكبر من عنصر واجهة المستخدم بشكل أساسي. إذا مرر فوق لون معين، يتم عرض عدد الرسائل لهذا النوع من الموصلات.
 
-  ![طريقة عرض نظرة عامة في تقرير خريطة تدفق البريد.](../../media/mfi-mail-flow-map-report-overview.png)
+    :::image type="content" source="../../media/mfi-mail-flow-map-report-overview.png" alt-text="طريقة العرض &quot;نظرة عامة&quot; في تقرير خريطة تدفق البريد" lightbox="../../media/mfi-mail-flow-map-report-overview.png":::
 
 - **إظهار البيانات ل: التفاصيل**: تعرض طريقة العرض هذه تفاصيل حول الموصلات ومجالات الوجهة. يتم سرد أهم مجالات المرسل والمستلم، والباقي في **مجالات أخرى**. إذا مرر فوق لون وقسم معينين، يتم عرض عدد الرسائل.
 
-  ![طريقة عرض التفاصيل في تقرير خريطة تدفق البريد.](../../media/mfi-mail-flow-map-report-detail.png)
+    :::image type="content" source="../../media/mfi-mail-flow-map-report-detail.png" alt-text="طريقة العرض &quot;تفاصيل&quot; في تقرير خريطة تدفق البريد" lightbox="../../media/mfi-mail-flow-map-report-detail.png":::
 
 إذا نقرت فوق **عوامل التصفية** في طريقة عرض التقرير، يمكنك تحديد نطاق تاريخ مع **تاريخ البدء** **وتاريخ الانتهاء**.
 
@@ -71,7 +71,7 @@ ms.locfileid: "63680127"
 
 إذا حددت صفا، يتم عرض تفاصيل مماثلة في مجموعة من المعلومات:
 
-![القائمة المنسابة لالتفاصيل من جدول التفاصيل في خريطة تدفق البريد.](../../media/mfi-mail-flow-map-view-details-table-details.png)
+:::image type="content" source="../../media/mfi-mail-flow-map-view-details-table-details.png" alt-text="القائمة المنسابة التفاصيل من جدول التفاصيل في خريطة تدفق البريد" lightbox="../../media/mfi-mail-flow-map-view-details-table-details.png":::
 
 لبريد التقرير عبر البريد الإلكتروني لنطاق تاريخ معين لمستلم واحد أو أكثر، انقر فوق **طلب التنزيل**.
 

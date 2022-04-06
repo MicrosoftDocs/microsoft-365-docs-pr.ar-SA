@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 03/09/2022
-ms.openlocfilehash: f696cd3631573bdb2206c665340f35601e4624ac
-ms.sourcegitcommit: 9af389e4787383cd97bc807f7799ef6ecf0664d0
+ms.date: 03/18/2022
+ms.openlocfilehash: def22b83dc5c84a3b222d4e50f2d2dce8d5d36ef
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63583273"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682736"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>عنصر تحكم الوصول إلى التخزين القابل للإزالة من Microsoft Defender للتحكم في جهاز نقطة النهاية
 
@@ -46,11 +46,11 @@ ms.locfileid: "63583273"
 
 |الإمكانية|الوصف|النشر من خلال Intune|النشر من خلال نهج المجموعة|
 |---|---|---|---|
-|إنشاء مجموعة وسائط قابلة للإزالة|يسمح لك بإنشاء مجموعة وسائط قابلة لإعادة الإزالة|الخطوة 1 والخطوة 3 في المقطع، [نهج النشر عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 1 في المقطع، [نهج النشر عبر نهج المجموعة](#deploying-policy-via-group-policy)|
-|إنشاء النهج|يسمح لك بإنشاء نهج لفرض كل مجموعة وسائط قابلة للإزالة|الخطوات 2 و3 في المقطع، [نهج النشر عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 2 في المقطع، [نهج النشر عبر نهج المجموعة](#deploying-policy-via-group-policy) |
-|التنفيذ الافتراضي|يسمح لك بتعيين الوصول الافتراضي (رفض أو السماح) إلى وسائط قابلة للإزالة إذا لم يكن هناك نهج|الخطوة 4 في المقطع، [نهج النشر عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 3 في المقطع، [نهج النشر عبر نهج المجموعة](#deploying-policy-via-group-policy) |
-|تمكين عنصر تحكم الوصول إلى التخزين القابل للإزالة أو تعطيله|إذا قمت بتعيين تعطيل، سيتم تعطيل نهج التحكم بالوصول إلى التخزين القابل للإزالة على هذا الجهاز| الخطوة 5 في المقطع، [نهج النشر عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 4 في المقطع، [نهج النشر عبر نهج المجموعة](#deploying-policy-via-group-policy) |
-|التقاط معلومات الملف|يسمح لك بإنشاء نهج لالتقاط معلومات الملف عند حدوث وصول للكتابة| الخطوة 2 و6 في المقطع، [نهج النشر عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 2 و5 في المقطع، [نهج النشر عبر نهج المجموعة](#deploying-policy-via-group-policy) |
+|إنشاء مجموعة وسائط قابلة للإزالة|يسمح لك بإنشاء مجموعة وسائط قابلة لإعادة الإزالة|الخطوة 1 في المقطع، [نهج النشر عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 1 في المقطع، [نهج النشر عبر نهج المجموعة](#deploying-policy-via-group-policy)|
+|إنشاء النهج|يسمح لك بإنشاء نهج لفرض كل مجموعة وسائط قابلة للإزالة|الخطوة 2 في المقطع، [نهج النشر عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوات 2 و3 في المقطع، [نهج النشر عبر نهج المجموعة](#deploying-policy-via-group-policy) |
+|التنفيذ الافتراضي|يسمح لك بتعيين الوصول الافتراضي (رفض أو السماح) إلى وسائط قابلة للإزالة إذا لم يكن هناك نهج|الخطوة 3 في المقطع، [نهج النشر عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 4 في المقطع، [نهج النشر عبر نهج المجموعة](#deploying-policy-via-group-policy) |
+|تمكين عنصر تحكم الوصول إلى التخزين القابل للإزالة أو تعطيله|إذا قمت بتعيين تعطيل، سيتم تعطيل نهج التحكم بالوصول إلى التخزين القابل للإزالة على هذا الجهاز| الخطوة 4 في المقطع، [نهج النشر عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 5 في المقطع، [نهج النشر عبر نهج المجموعة](#deploying-policy-via-group-policy) |
+|التقاط معلومات الملف|يسمح لك بإنشاء نهج لالتقاط معلومات الملف عند حدوث وصول للكتابة| الخطوات 2 و5 في المقطع، [نهج النشر عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 2 و6 في المقطع، [نهج النشر عبر نهج المجموعة](#deploying-policy-via-group-policy) |
 
 ## <a name="prepare-your-endpoints"></a>تحضير نقاط النهاية
 
@@ -82,7 +82,7 @@ ms.locfileid: "63583273"
 
 |اسم الخاصية|الوصف|خيارات|
 |---|---|---|
-|**GroupId**|يمثل GUID، وهو الم ID فريد، المجموعة وسيستخدم في النهج.||
+|**"معرّف المجموعة"**|يمثل GUID، وهو الم ID فريد، المجموعة وسيستخدم في النهج كمجموعة||
 |**DescriptorIdList**|سرد خصائص الجهاز التي تريد استخدامها لتغطية المجموعة. للحصول على مزيد من التفاصيل، راجع [خصائص الجهاز](device-control-removable-storage-protection.md) لكل خاصية جهاز. كل الخصائص حساسة لالحالتين. |**PrimaryId**: `RemovableMediaDevices`، ، `CdRomDevices``WpdDevices`<p>**BusId**: على سبيل المثال، USB و SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId هي سلسلة تعرف الجهاز في النظام بشكل فريد، على سبيل المثال، `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. يمثل الرقم في النهاية (على سبيل &0) الفتحة المتوفرة وقد يتغير من جهاز إلى آخر. للحصول على أفضل النتائج، استخدم أحرف البدل في النهاية. على سبيل المثال، `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: مطابقة هذا الزوج المحدد VID/PID<p>`_55E0`: مطابقة أي وسائط مع PID=55E0 <p>`0751_`: مطابقة أي وسائط باستخدام VID=0751|
 |**MatchType**|عند وجود خصائص جهاز متعددة يتم استخدامها في `DescriptorIDList`، يحدد MatchType العلاقة.|**MatchAll**: أي سمات ضمن `DescriptorIdList` ستكون علاقة و؛  `DeviceID` `InstancePathID`على سبيل المثال، إذا وضع المسؤول و ، لكل USB متصل، سيتحقق النظام لمعرفة ما إذا كان USB يلبي القيمتين. <p> **MatchAny**: تكون السمات ضمن DescriptorIdList علاقة **أو** ؛ على سبيل المثال `DeviceID` `InstancePathID`، إذا وضع المسؤول و ، لكل USB متصل، سينفذ النظام التنفيذ طالما أن USB له قيمة **DeviceID** أو **InstanceID متطابقة** . |
 
@@ -90,7 +90,7 @@ ms.locfileid: "63583273"
 
 | اسم الخاصية | الوصف | خيارات |
 |---|---|---|
-| **PolicyRuleId** | يمثل GUID، وهو الم ID فريد، النهج وسيستخدم في إعداد التقارير استكشاف الأخطاء وإصلاحها. | |
+| **PolicyRule Id** | يمثل GUID، وهو الم ID فريد، النهج وسيستخدم في إعداد التقارير استكشاف الأخطاء وإصلاحها. | |
 | **IncludedIdList** | المجموعة (المجموعات) التي سيتم تطبيق النهج عليها. إذا تم إضافة مجموعات متعددة، سيتم تطبيق النهج على أي وسائط في كل هذه المجموعات.|يجب استخدام "الم ID/GUID" للمجموعة في هذا المثيل. <p> يوضح المثال التالي استخدام GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | المجموعة (المجموعات) التي لن يتم تطبيق النهج عليها. | يجب استخدام "الم ID/GUID" للمجموعة في هذا المثيل. |
 | **"معرّف الإدخال"** | One PolicyRule يمكن أن يكون له إدخالات متعددة؛ كل إدخال مع GUID فريد يخبر التحكم في الجهاز بتقييد واحد.| |
@@ -282,7 +282,7 @@ ms.locfileid: "63583273"
     
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>نشر نهج وإدارته باستخدام واجهة مستخدم Intune
 
-تتوفر هذه الإمكانية في مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>). انتقل إلى **نهج الحد** >  من **الحد من Surface SecurityAtack** > **.** اختر **النظام الأساسي: Windows 10 واللاحقة** باستخدام **ملف التعريف: التحكم في الجهاز**.
+(*قريبا!*) ستتوفر هذه الإمكانية في مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>). انتقل إلى **نهج الحد** >  من **الحد من Surface SecurityAtack** > **.** اختر **النظام الأساسي: Windows 10 واللاحقة** باستخدام **ملف التعريف: التحكم في الجهاز**.
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>عرض بيانات التحكم في الوصول إلى التخزين القابلة للإزالة في Microsoft Defender لنقطة النهاية
 
@@ -338,17 +338,26 @@ DeviceEvents
 
 ## <a name="frequently-asked-questions"></a>الأسئلة المتكررة
 
+
+### <a name="how-to-generate-guid-for-group-idpolicyrule-identry-id"></a>كيفية إنشاء GUID لم Id/PolicyRule Id/Entry Id؟
+
+يمكنك إنشاء GUID من خلال مصدر مفتوح عبر الإنترنت أو من خلال PowerShell - [كيفية إنشاء GUID من خلال PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?msclkid=c1398a25a6d911ec9c888875fa1f24f5&view=powershell-7.2)
+    
+![صورة](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
+    
 ### <a name="what-is-the-removable-storage-media-limitation-for-the-maximum-number-of-usbs"></a>ما هو حد وسائط التخزين القابلة للإزالة لأقصى عدد من وحدات USBs؟
 
 لقد تحققنا من صحة مجموعة USB واحدة بحجم 100000 وسائط - يصل حجمها إلى 7 MB. يعمل النهج في كل من Intune و GPO بدون مشاكل في الأداء.
 
 ### <a name="why-does-the-policy-not-work"></a>لماذا لا يعمل النهج؟
 
-السبب الأكثر شيوعا هو عدم وجود إصدار عميل [مكافحة البرامج الضارة المطلوب](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
+1. السبب الأكثر شيوعا هو عدم وجود إصدار عميل [مكافحة البرامج الضارة المطلوب](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
 
-قد يكون السبب الآخر هو عدم تنسيق ملف XML بشكل صحيح، على سبيل المثال، عدم استخدام تنسيق العلامات الصحيح للعلامة "&" في ملف XML، أو قد يضيف محرر النص علامة ترتيب (BOM) 0xEF 0xBB 0xBF في بداية الملفات، مما يؤدي إلى عدم عمل تحليل XML. أحد الحلول البسيطة هو تنزيل [نموذج الملف](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (حدد **الخام** ثم **حفظ باسم**) ثم قم بتحديثه.
+2. قد يكون السبب الآخر هو عدم تنسيق ملف XML بشكل صحيح، على سبيل المثال، عدم استخدام تنسيق العلامات الصحيح للعلامة "&" في ملف XML، أو قد يضيف محرر النص علامة ترتيب (BOM) 0xEF 0xBB 0xBF في بداية الملفات، مما يؤدي إلى عدم عمل تحليل XML. أحد الحلول البسيطة هو تنزيل [نموذج الملف](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (حدد **الخام** ثم **حفظ باسم**) ثم قم بتحديثه.
 
-إذا كنت تقوم بنشر النهج وإدارته عبر نهج المجموعة، فالرجاء التأكد من دمج كل النهج في ملف XML واحد ضمن عقدة أصل تسمى PolicyRules وكل المجموعة في ملف XML واحد ضمن عقدة أصل تسمى المجموعات؛ إذا كنت تدير من خلال Intune، فاحتفظ ب ملف نهج واحد XML، والشيء نفسه، ملف XML واحد في المجموعة.
+3. إذا كنت تقوم بنشر النهج وإدارته عبر نهج المجموعة، فالرجاء التأكد من دمج كل النهج في ملف XML واحد ضمن عقدة أصل تسمى PolicyRules وكل المجموعة في ملف XML واحد ضمن عقدة أصل تسمى المجموعات؛ إذا كنت تدير من خلال Intune، فاحتفظ ب ملف نهج واحد XML، والشيء نفسه، ملف XML واحد في المجموعة.
+    
+إذا كنت لا تزال لا تعمل، فقد ترغب في الاتصال بنا ومشاركة سيارة الدعم من خلال تشغيل cmd مع المسؤول: "٪programfiles٪\Windows Defender\MpCmdRun.exe" -GetFiles
 
 ### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>لا يوجد تكوين UX ل "تعريف مجموعات نهج التحكم في الجهاز" و"تعريف قواعد نهج التحكم في الجهاز" في نهج المجموعة
 

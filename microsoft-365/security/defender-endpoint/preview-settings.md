@@ -1,6 +1,6 @@
 ---
 title: تشغيل تجربة المعاينة في Microsoft Defender لنقطة النهاية
-description: قم تشغيل تجربة المعاينة في Microsoft Defender ل Endpoint لتجربة الميزات القادمة.
+description: قم تشغيل تجربة المعاينة في Microsoft Defender لنقطة النهاية لتجربة الميزات القادمة.
 keywords: الميزات المتقدمة والإعدادات وملف الحظر
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,20 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 572794880015f53f6db0a3d449dd3d19987cae21
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: 6b29bb45820c0fc74443f14fd2c6866bc026e969
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "63571514"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467280"
 ---
 # <a name="turn-on-the-preview-experience-in-microsoft-defender-for-endpoint"></a>تشغيل تجربة المعاينة في Microsoft Defender لنقطة النهاية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -39,7 +39,7 @@ ms.locfileid: "63571514"
 
 1. في جزء التنقل **، حدد الإعدادات** \> **نقاط النهاية** \> **المتقدمة**.
 
-    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="الإعدادات وصورة تجربة المعاينة.":::
+    :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="الإعدادات وتجربة المعاينة" lightbox="../../media/atp-preview-features-new.png":::
 
 
 2. قم با تبديل **الإعداد بين تشغيل** أو **إيقاف وحدد** **حفظ التفضيلات**.

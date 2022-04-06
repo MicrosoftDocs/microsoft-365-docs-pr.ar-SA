@@ -20,40 +20,40 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b3ff79ead1e337bb78772109e57d34836d0f4ec9
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 29a00c20333c27fcd8138063f31316241b784572
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681601"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467016"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>مستكشف التهديدات والكشف في الوقت الحقيقي
 
 **ينطبق على**
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-إذا كانت مؤسستك تملك [Microsoft Defender for Office 365](defender-for-office-365.md)، وكان لديك الأذونات اللازمة، [](#required-licenses-and-permissions)فإن لديك إما أجهزة الكشف عن المستكشف أو في الوقت **الحقيقي (التي** كانت تعرف سابقا بالتقارير في الوقت *الحقيقي — راجع* ما [الجديد](#new-features-in-threat-explorer-and-real-time-detections)!). في مركز & الأمان، انتقل إلى إدارة **المخاطر، ثم** اختر **المستكشف**  أو **الكشف في الوقت الحقيقي**.
+إذا كانت مؤسستك تملك [Microsoft Defender لـ Office 365](defender-for-office-365.md)، وكان لديك الأذونات اللازمة، فإن [](#required-licenses-and-permissions)لديك إما **المستكشف** أو الكشف في الوقت **الحقيقي (تقارير** الوقت الحقيقي *سابقا — راجع* ما [الجديد](#new-features-in-threat-explorer-and-real-time-detections)!). في مركز & الأمان، انتقل إلى إدارة **المخاطر، ثم** اختر **المستكشف**  أو **الكشف في الوقت الحقيقي**.
 
-|باستخدام Microsoft Defender Office 365 2، سترى:|باستخدام Microsoft Defender Office 365 الخطة 1، سترى:|
+|باستخدام Microsoft Defender لـ Office 365 2، سترى:|باستخدام Microsoft Defender لـ Office 365 1، سترى:|
 |---|---|
 |![مستكشف التهديدات.](../../media/threatmgmt-explorer.png)|![الكشف في الوقت الحقيقي](../../media/threatmgmt-realtimedetections.png)|
 
 تساعد عمليات الكشف في "المستكشف" أو "الوقت الحقيقي" فريق عمليات الأمان على التحقق من التهديدات والاستجابة لها بفعالية. يشبه التقرير الصورة التالية:
 
-![انتقل إلى مستكشف إدارة \> المخاطر.](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+:::image type="content" source="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png" alt-text="عنصر القائمة &quot;مستكشف&quot; في مدخل & الأمان" lightbox="../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png":::
 
 باستخدام هذا التقرير، يمكنك:
 
 - [الاطلاع على البرامج الضارة التي تم اكتشافها Microsoft 365 الأمان](#see-malware-detected-in-email-by-technology)
 - [عرض عنوان URL التصيد الاحتيالي والنقر فوق بيانات الحكم](#view-phishing-url-and-click-verdict-data)
-- [بدء عملية تحقيق واستجابات تلقائية من طريقة عرض في المستكشف](#start-automated-investigation-and-response) (Defender for Office 365 2 فقط)
+- [بدء عملية تحقيق واستجابات تلقائية من طريقة عرض في المستكشف](#start-automated-investigation-and-response) (Defender لـ Office 365 الخطة 2 فقط)
 - [التحقق من البريد الإلكتروني الضار والمزيد](#more-ways-to-use-explorer-and-real-time-detections)
 
 ## <a name="improvements-to-threat-hunting-experience"></a>تحسينات على تجربة البحث عن المخاطر
 
 
-### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>مقدمة حول "تعريف التنبيه" ل "Office 365 تنبيهات" ضمن "المستكشف/الكشف في الوقت الحقيقي"
+### <a name="introduction-of-alert-id-for-defender-for-office-365-alerts-within-explorerreal-time-detections"></a>مقدمة حول "تعريف التنبيه" لتنبيهات Defender لـ Office 365 "المستكشف"/الكشف في الوقت الحقيقي
 
 اليوم، إذا قمت بالتنقل من تنبيه إلى "مستكشف التهديدات"، فإنه يفتح طريقة عرض تمت تصفيتها ضمن المستكشف، مع تصفية طريقة العرض حسب معرف نهج التنبيه (معرف النهج هو معرف فريد لن نهج التنبيه).
 نحن نعمل على جعل هذا التكامل أكثر ملاءمة من خلال تقديم "معر ة التنبيه" (راجع مثال حول "معرفة معلومات التنبيه أدناه" في "مستكشف التهديدات" و"الكشف في الوقت الحقيقي" بحيث ترى الرسائل ذات الصلة بالتنبيه المحدد، بالإضافة إلى عدد رسائل البريد الإلكتروني. وستتمكن أيضا من معرفة ما إذا كانت الرسالة جزءا من تنبيه، بالإضافة إلى الانتقال من تلك الرسالة إلى التنبيه المحدد.
@@ -61,10 +61,10 @@ ms.locfileid: "63681601"
 يتوفر "عنوان التنبيه" ضمن عنوان URL عند عرض تنبيه فردي؛ مثال يجري `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`.
 
 > [!div class="mx-imgBorder"]
-> ![التصفية لم ID تنبيه.](../../media/AlertID-Filter.png)
+> :::image type="content" source="../../media/AlertID-Filter.png" alt-text="عامل التصفية لم ID تنبيه" lightbox="../../media/AlertID-Filter.png":::
 
 > [!div class="mx-imgBorder"]
-> ![تنبيه الم ID في منبه التفاصيل.](../../media/AlertID-DetailsFlyout.png)
+> :::image type="content" source="../../media/AlertID-DetailsFlyout.png" alt-text="من خلال &quot;الماينة&quot; من خلال &quot;الماينة&quot; في التفاصيل" lightbox="../../media/AlertID-DetailsFlyout.png":::
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days"></a>تمديد حد استبقاء البيانات والبحث في المستكشف (والكشف في الوقت الحقيقي) للمستأجرين التجريبيين من 7 إلى 30 يوما
 
@@ -80,7 +80,7 @@ ms.locfileid: "63681601"
 > [!NOTE]
 > ميزة علامات المستخدم في *معاينة*، غير متوفرة للجميع، وهي عرضة للتغيير. للحصول على معلومات حول جدول الإصدار، راجع Microsoft 365 الجديد.
 
-تحدد علامات المستخدم مجموعات معينة من المستخدمين في Microsoft Defender Office 365. لمزيد من المعلومات حول العلامات، بما في ذلك الترخيص والتكوين، راجع [علامات المستخدم](user-tags.md).
+تحدد علامات المستخدم مجموعات معينة من المستخدمين في Microsoft Defender لـ Office 365. لمزيد من المعلومات حول العلامات، بما في ذلك الترخيص والتكوين، راجع [علامات المستخدم](user-tags.md).
 
 في "مستكشف التهديدات"، يمكنك الاطلاع على معلومات حول علامات المستخدم في التجارب التالية.
 
@@ -89,7 +89,7 @@ ms.locfileid: "63681601"
 يحتوي **عمود** العلامات في شبكة البريد الإلكتروني على كل العلامات التي تم تطبيقها على علب بريد المرسل أو المستلم. بشكل افتراضي، يتم عرض علامات النظام مثل حسابات الأولوية أولا.
 
 > [!div class="mx-imgBorder"]
-> ![تصفية العلامات في طريقة عرض شبكة البريد الإلكتروني.](../../media/tags-grid.png)
+> :::image type="content" source="../../media/tags-grid.png" alt-text="علامات التصفية في طريقة عرض شبكة البريد الإلكتروني" lightbox="../../media/tags-grid.png":::
 
 #### <a name="filtering"></a>التصفية
 
@@ -98,7 +98,7 @@ ms.locfileid: "63681601"
 [![تصفية العلامات.](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![لا يمكنك تصفية العلامات.](../../media/tags-filter-not.png)
+> :::image type="content" source="../../media/tags-filter-not.png" alt-text="العلامات التي لم يتم تصفيتها" lightbox="../../media/tags-filter-not.png":::
 
 #### <a name="email-detail-flyout"></a>قائمة من حولاء تفاصيل البريد الإلكتروني
 
@@ -106,14 +106,14 @@ ms.locfileid: "63681601"
 كما تمتد المعلومات حول العلامات الفردية للمرسل والمستلم إلى بيانات CSV المصدرة، حيث يمكنك رؤية هذه التفاصيل في عمودين منفصلين.
 
 > [!div class="mx-imgBorder"]
-> ![علامات تفاصيل البريد الإلكتروني.](../../media/tags-flyout.png)
+> :::image type="content" source="../../media/tags-flyout.png" alt-text="علامات تفاصيل البريد الإلكتروني" lightbox="../../media/tags-flyout.png":::
 
 يتم أيضا عرض معلومات العلامات في معلومات النقر فوق عنوان URL. لعرضه، انتقل إلى طريقة عرض التصيد الاحتيالي أو كل البريد الإلكتروني ثم إلى علامة التبويب عناوين **URL** أو **نقرات URL** . حدد منتدية عناوين URL فردية لعرض تفاصيل إضافية حول النقرات الخاصة ب URL هذا، بما في ذلك العلامات المقترنة بهذه النقرة.
 
 ### <a name="updated-timeline-view"></a>طريقة عرض المخطط الزمني المحدثة
 
 > [!div class="mx-imgBorder"]
-> ![علامات URL.](../../media/tags-urls.png)
+> :::image type="content" source="../../media/tags-urls.png" alt-text="علامات URL" lightbox="../../media/tags-urls.png":::
 >
 تعرف على المزيد من خلال [مشاهدة هذا الفيديو](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
@@ -137,12 +137,12 @@ ms.locfileid: "63681601"
 يمكنك الآن رؤية التهديد المحدد ل URL على علامة التبويب تفاصيل قائمة البريد **الإلكتروني من قائمة** منتحلة. قد يكون الخطر هو *البرامج الضارة* أو *التصيد الاحتيالي* *أو البريد العشوائي* أو *بلا*.)
 
 > [!div class="mx-imgBorder"]
-> ![تهديدات URL.](../../media/URL_Threats.png)
+> :::image type="content" source="../../media/URL_Threats.png" alt-text="تهديدات URL" lightbox="../../media/URL_Threats.png":::
 
 ### <a name="updated-timeline-view-upcoming"></a>طريقة عرض المخطط الزمني المحدث (القادمة)
 
 > [!div class="mx-imgBorder"]
-> ![طريقة عرض المخطط الزمني المحدثة.](../../media/Email_Timeline.png)
+> :::image type="content" source="../../media/Email_Timeline.png" alt-text="طريقة عرض المخطط الزمني المحدثة" lightbox="../../media/Email_Timeline.png":::
 
 تحدد طريقة عرض المخطط الزمني كل أحداث التسليم وما بعد التسليم. ويتضمن معلومات حول الخطر الذي تم تحديده في هذه المرحلة الزمنية ل مجموعة فرعية من هذه الأحداث. توفر طريقة عرض المخطط الزمني أيضا معلومات حول أي إجراء إضافي تم اتخاذه (مثل ZAP أو المعالجة اليدوية)، إلى جانب نتيجة هذا الإجراء. تتضمن معلومات طريقة عرض المخطط الزمني:
 
@@ -159,7 +159,7 @@ ms.locfileid: "63681601"
 **سيمنح موقع** التسليم الأصلي مزيدا من المعلومات حول مكان تسليم رسالة البريد الإلكتروني في البداية. **سيتم تحديد موقع التسليم** الأخير حيث تم الوصول إلى رسالة بريد إلكتروني بعد إجراءات النظام مثل *ZAP* أو إجراءات المسؤول مثل *نقل إلى العناصر المحذوفة*. الهدف من موقع التسليم الأخير هو إخبار المسؤولين عن آخر موقع معروف بعد التسليم للرسالة أو أي إجراءات خاصة ب النظام/المسؤول. ولا يتضمن أي إجراءات للمستخدم النهائي على البريد الإلكتروني. على سبيل المثال، إذا حذف مستخدم رسالة أو نقل الرسالة إلى أرشفة/pst، فلن يتم تحديث موقع الرسالة "التسليم". ولكن إذا كان أحد إجراءات النظام قد أدى إلى تحديث الموقع (على سبيل المثال، ZAP مما أدى إلى نقل رسالة  بريد إلكتروني إلى الفحص)، فيظهر موقع التسليم الأخير على أنه "عزل".
 
 > [!div class="mx-imgBorder"]
-> ![مواقع التسليم المحدثة.](../../media/Updated_Delivery_Location.png)
+> :::image type="content" source="../../media/Updated_Delivery_Location.png" alt-text="مواقع التسليم المحدثة" lightbox="../../media/Updated_Delivery_Location.png":::
 
 > [!NOTE]
 > هناك بعض الحالات التي قد يظهر فيها  موقع التسليم **والتسليم** ك "غير معروف":
@@ -169,7 +169,7 @@ ms.locfileid: "63681601"
 > - **قد يكون موقع** التسليم الأخير غير معروف إذا تم محاولة إجراء مسؤول/نظام (مثل ZAP)، ولكن لم يتم العثور على الرسالة. عادة، يحدث الإجراء بعد نقل المستخدم للرسالة أو حذفها. في مثل هذه الحالات، تحقق من العمود **النتيجة/التفاصيل** في طريقة عرض المخطط الزمني. ابحث عن العبارة "تم نقل الرسالة أو حذفها بواسطة المستخدم".
 
 > [!div class="mx-imgBorder"]
-> ![مواقع تسليم المخطط الزمني.](../../media/Updated_Timeline_Delivery_Location.png)
+> :::image type="content" source="../../media/Updated_Timeline_Delivery_Location.png" alt-text="مواقع تسليم المخطط الزمني" lightbox="../../media/Updated_Timeline_Delivery_Location.png":::
 
 ### <a name="additional-actions"></a>إجراءات إضافية
 
@@ -179,7 +179,7 @@ ms.locfileid: "63681601"
 > كجزء من التغييرات المعلقة، ستزول القيمة "تمت إزالتها بواسطة ZAP" حاليا في عامل التصفية إجراء التسليم. سيكون لديك طريقة للبحث عن كل رسائل البريد الإلكتروني باستخدام محاولة ZAP من خلال **إجراءات إضافية**.
 
 > [!div class="mx-imgBorder"]
-> ![إجراءات إضافية في المستكشف.](../../media/Additional_Actions.png)
+> :::image type="content" source="../../media/Additional_Actions.png" alt-text="الإجراءات الإضافية في المستكشف" lightbox="../../media/Additional_Actions.png":::
 
 ### <a name="system-overrides"></a>تجاوز النظام
 
@@ -198,7 +198,7 @@ ms.locfileid: "63681601"
 [![تجاوز النظام في المستكشف.](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![يتجاوز النظام الشبكة في المستكشف.](../../media/System_Overrides_Grid.png)
+> :::image type="content" source="../../media/System_Overrides_Grid.png" alt-text="تجاوز النظام &quot;الشبكة&quot; في &quot;المستكشف&quot;" lightbox="../../media/System_Overrides_Grid.png":::
 
 ### <a name="improvements-for-the-url-and-clicks-experience"></a>تحسينات لتجربة النقرات وURL
 
@@ -236,14 +236,14 @@ ms.locfileid: "63681601"
 > التصفية والفرز حسب علامات المستخدمين حاليا في المعاينة العامة. قد يتم تعديل هذه الوظيفة بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، فيما يتعلق بالمعلومات المتوفرة حولها.
 
 > [!div class="mx-imgBorder"]
-> ![عمود العلامات في المستكشف.](../../media/threat-explorer-tags.png)
+> :::image type="content" source="../../media/threat-explorer-tags.png" alt-text="العمود &quot;علامات&quot; في &quot;المستكشف&quot;" lightbox="../../media/threat-explorer-tags.png":::
 
 ### <a name="timezone-improvements"></a>تحسينات المنطقة الزمنية
 
 سترى المنطقة الزمنية لسجلات البريد الإلكتروني في المدخل والبيانات التي تم تصديرها. سيكون مرئيا عبر تجارب مثل "شبكة البريد الإلكتروني" و"قائمة منتحلة التفاصيل" و"مخطط زمني للبريد الإلكتروني" و"رسائل بريد إلكتروني مماثلة"، وبالتالي تكون المنطقة الزمنية مجموعة النتائج واضحة.
 
 > [!div class="mx-imgBorder"]
-> ![عرض المنطقة الزمنية في المستكشف.](../../media/TimezoneImprovements.png)
+> :::image type="content" source="../../media/TimezoneImprovements.png" alt-text="المنطقة الزمنية &quot;عرض&quot; في &quot;المستكشف&quot;" lightbox="../../media/TimezoneImprovements.png":::
 
 ### <a name="update-in-the-refresh-process"></a>التحديث في عملية التحديث
 
@@ -252,21 +252,21 @@ ms.locfileid: "63681601"
 من وجهة نظر التجربة، يمكن للمستخدم تطبيق نطاق عوامل التصفية المختلفة وإزالته (من مجموعة عوامل التصفية والتاريخ) وتحديد زر التحديث لتصفية النتائج بعد تعريف الاستعلام. يتم الآن أيضا التأكيد على زر التحديث على الشاشة. لقد قمنا أيضا بتحديث Titips الأدوات ذات الصلة والوثائق داخل المنتج.
 
 > [!div class="mx-imgBorder"]
-> ![حدد تحديث لتصفية النتائج.](../../media/ManualRefresh.png)
+> :::image type="content" source="../../media/ManualRefresh.png" alt-text="الزر &quot;تحديث&quot; لتصفية النتائج" lightbox="../../media/ManualRefresh.png":::
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>التنقل لأسفل للمخطط لإضافة إلى عوامل التصفية
 
 يمكنك الآن إنشاء مخطط لقيم وسيلة الإيضاح لإضافة هذه القيم ك عوامل تصفية. حدد الزر **تحديث** لتصفية النتائج.
 
 > [!div class="mx-imgBorder"]
-> ![التنقل لأسفل عبر المخططات للتصفية.](../../media/ChartDrilldown.png)
+> :::image type="content" source="../../media/ChartDrilldown.png" alt-text="التنقل لأسفل عبر المخططات للتصفية" lightbox="../../media/ChartDrilldown.png":::
 
 ### <a name="in-product-information-updates"></a>تحديثات المعلومات داخل المنتج
 
 تتوفر الآن تفاصيل إضافية داخل المنتج، مثل العدد الإجمالي لنتائج البحث ضمن الشبكة (انظر أدناه). لقد قمنا بتحسين التسميات ورسائل الخطأ وأصابع الأدوات لتوفير مزيد من المعلومات حول عوامل التصفية وتجربة البحث مجموعة النتائج.
 
 > [!div class="mx-imgBorder"]
-> ![عرض معلومات داخل المنتج.](../../media/ProductInfo.png)
+> :::image type="content" source="../../media/ProductInfo.png" alt-text="المعلومات داخل المنتج التي سيتم عرضها" lightbox="../../media/ProductInfo.png":::
 
 ## <a name="extended-capabilities-in-threat-explorer"></a>القدرات الموسعة في "مستكشف التهديدات"
 
@@ -277,7 +277,7 @@ ms.locfileid: "63681601"
 وستتمكن من تصدير قائمة المستخدمين المستهدفين، بما يصل إلى 3000 مستخدم، إلى جانب عدد محاولات التحليل دون اتصال لكل طريقة عرض بريد إلكتروني. بالإضافة إلى ذلك، فإن تحديد عدد المحاولات (على سبيل المثال، 13 محاولة في الصورة أدناه) سيفتح طريقة عرض تمت تصفيتها في "مستكشف التهديدات"، حتى تتمكن من رؤية المزيد من التفاصيل عبر رسائل البريد الإلكتروني والتهديدات لهذا المستخدم.
 
 > [!div class="mx-imgBorder"]
-> ![أهم المستخدمين المستهدفين.](../../media/Top_Targeted_Users.png)
+> :::image type="content" source="../../media/Top_Targeted_Users.png" alt-text="المستخدمون المستهدفون" lightbox="../../media/Top_Targeted_Users.png":::
 
 ### <a name="exchange-transport-rules"></a>Exchange النقل
 
@@ -298,7 +298,7 @@ ms.locfileid: "63681601"
 > ضمن شبكة البريد الإلكتروني، ومن القائمة منسدرة التفاصيل، و CSV التي تم تصديرها، يتم تقديم ETRs مع اسم/GUID كما هو موضح أدناه.
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange النقل.](../../media/ETR_Details.png)
+> > :::image type="content" source="../../media/ETR_Details.png" alt-text="قواعد Exchange النقل" lightbox="../../media/ETR_Details.png":::
 
 ### <a name="inbound-connectors"></a>الموصلات الواردة
 
@@ -307,7 +307,7 @@ ms.locfileid: "63681601"
 البحث عن الموصلات هو "يحتوي" في الطبيعة، مما يعني أن عمليات البحث الجزئية للكلمات الأساسية يجب أن تعمل أيضا. ضمن طريقة عرض الشبكة الرئيسية، القائمة الإعلانية التفاصيل، و CSV التي تم تصديرها، يتم عرض الموصلات بتنسيق Name/GUID كما هو موضح هنا:
 
 > [!div class="mx-imgBorder"]
-> ![تفاصيل الموصل.](../../media/Connector_Details.png)
+> :::image type="content" source="../../media/Connector_Details.png" alt-text="تفاصيل الموصل" lightbox="../../media/Connector_Details.png":::
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>الميزات الجديدة في "مستكشف التهديدات" والكشف في الوقت الحقيقي
 
@@ -345,7 +345,7 @@ ms.locfileid: "63681601"
 
 5. حدد موضوع **أي** رسالة ضمن علامة التبويب البريد الإلكتروني **tabDetails**  >  لرؤية معلومات انتحال إضافية حول المستخدم أو المجال والموقع *الذي تم الكشف عنه*.
 
-    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="جزء تفاصيل &quot;مستكشف التهديدات&quot; لمستخدم محمي يعرض موقع الكشف، والخطر الذي تم اكتشافه (هنا انتحال هوية مستخدم في التصيد الاحتيالي).":::
+    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="جزء تفاصيل &quot;مستكشف التهديدات&quot; لمستخدم محمي يعرض موقع الكشف، والتهديد الذي تم اكتشافه (هنا انتحال هوية مستخدم في التصيد الاحتيالي)" lightbox="../../media/threat-ex-views-impersonated-user-image.png":::
 
 > [!NOTE]
 > في الخطوة 3 أو 5 > ، إذا اخترت تقنية الكشف وحدد مجال انتحال  أو مستخدم انتحال على  التوالي، سيتم عرض المعلومات في علامة التبويب بريد إلكتروني حول المستخدم أو المجال، والموقع الذي تم الكشف عنه فقط على الرسائل المرتبطة بالمستخدم أو  المجال المدرج في صفحة نهج مكافحة التصيد الاحتيالي. 
@@ -412,7 +412,7 @@ ms.locfileid: "63681601"
 > ويعيد "معر ة الشبكة" النقر مرة أخرى إلى رسائل بريد معينة عند البحث في المرجع من خلال المستكشف أو الأدوات المقترنة ب جهة خارجية. تحدد عمليات البحث هذه البريد الإلكتروني المقترن بنقرة. إن وجود "معرّف رسالة الشبكة" المترابط يجعل التحليل أسرع وأكثر قوة.
 
 > [!div class="mx-imgBorder"]
-> ![علامة التبويب "نقرات" في "المستكشف".](../../media/tp_ExportClickResultAndNetworkID.png)
+> :::image type="content" source="../../media/tp_ExportClickResultAndNetworkID.png" alt-text="علامة التبويب &quot;نقرات&quot; في &quot;المستكشف&quot;" lightbox="../../media/tp_ExportClickResultAndNetworkID.png":::
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>الاطلاع على البرامج الضارة التي تم اكتشافها في البريد الإلكتروني حسب التقنية
 
@@ -423,19 +423,19 @@ ms.locfileid: "63681601"
 2. في القائمة **عرض** ، اختر **البريد الإلكتروني البرامج** \> **الضارة**.
 
    > [!div class="mx-imgBorder"]
-   > ![القائمة "عرض" ل "المستكشف".](../../media/ExplorerViewEmailMalwareMenu.png)
+   > :::image type="content" source="../../media/ExplorerViewEmailMalwareMenu.png" alt-text="القائمة &quot;عرض&quot; ل &quot;المستكشف&quot;" lightbox="../../media/ExplorerViewEmailMalwareMenu.png":::
 
 3. انقر **فوق مرسل**، ثم اختر **تقنية الكشف** \> **الأساسية**.
 
    تتوفر تقنيات الكشف الخاصة بك الآن ك عوامل تصفية للتقرير.
 
    > [!div class="mx-imgBorder"]
-   > ![تقنيات الكشف عن البرامج الضارة.](../../media/ExplorerEmailMalwareDetectionTech.png)
+   > :::image type="content" source="../../media/ExplorerEmailMalwareDetectionTech.png" alt-text="تقنيات الكشف عن البرامج الضارة" lightbox="../../media/ExplorerEmailMalwareDetectionTech.png":::
 
 4. اختر خيارا. ثم حدد **الزر تحديث** لتطبيق عامل التصفية هذا.
 
    > [!div class="mx-imgBorder"]
-   > ![تقنية الكشف المحددة.](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   > :::image type="content" source="../../media/ExplorerEmailMalwareDetectionTechATP.png" alt-text="تقنية الكشف المحددة" lightbox="../../media/ExplorerEmailMalwareDetectionTechATP.png":::
 
 يتم تحديث التقرير لإظهار النتائج التي كشف عنها البرنامج الضار في البريد الإلكتروني، باستخدام خيار التقنية الذي حددته. من هنا، يمكنك إجراء المزيد من التحليلات.
 
@@ -450,14 +450,14 @@ ms.locfileid: "63681601"
 2. في القائمة **عرض** ، اختر **البريد الإلكتروني التصيد** \> **الاحتيالي**.
 
    > [!div class="mx-imgBorder"]
-   > ![القائمة "عرض" ل "المستكشف" في سياق التصيد الاحتيالي.](../../media/ExplorerViewEmailPhishMenu.png)
+   > :::image type="content" source="../../media/ExplorerViewEmailPhishMenu.png" alt-text="القائمة &quot;عرض&quot; ل &quot;المستكشف&quot; في سياق التصيد الاحتيالي" lightbox="../../media/ExplorerViewEmailPhishMenu.png":::
 
 3. انقر **فوق مرسل**، ثم اختر **عناوين URL انقر** \> **فوق قرار**.
 
 4. حدد واحدا أو أكثر من الخيارات، مثل  تم الحظر والتجاوز الحظر، ثم حدد الزر تحديث على السطر  نفسه كالخيارات لتطبيق عامل التصفية هذا. (لا يتم تحديث نافذة المستعرض.)
 
    > [!div class="mx-imgBorder"]
-   > ![عناوين URL والنقر فوق الأحكام.](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   > :::image type="content" source="../../media/ThreatExplorerEmailPhishClickVerdictOptions.png" alt-text="عناوين URL والنقر فوق الأحكام" lightbox="../../media/ThreatExplorerEmailPhishClickVerdictOptions.png":::
 
    يتم تحديث التقرير لإظهار جدولي URL مختلفين على علامة التبويب URL ضمن التقرير:
 
@@ -468,7 +468,7 @@ ms.locfileid: "63681601"
    يظهر جدولا URL عناوين URL الرئيسية في رسائل البريد الإلكتروني التصيد الاحتيالي من خلال إجراء التسليم وموقعه. تعرض الجداول نقرات URL التي تم حظرها أو زيارتها على الرغم من التحذير، حتى تتمكن من رؤية الارتباطات السيئة المحتملة التي تم تقديمها للمستخدمين والنقر فوق المستخدم. من هنا، يمكنك إجراء المزيد من التحليلات. على سبيل المثال، أسفل المخطط، يمكنك رؤية عناوين URL العلوية في رسائل البريد الإلكتروني التي تم حظرها في بيئة مؤسستك.
 
    > [!div class="mx-imgBorder"]
-   > ![عناوين URL المستكشف التي تم حظرها.](../../media/ExplorerPhishClickVerdictURLs.png)
+   > :::image type="content" source="../../media/ExplorerPhishClickVerdictURLs.png" alt-text="عناوين URL المستكشف التي تم حظرها" lightbox="../../media/ExplorerPhishClickVerdictURLs.png":::
 
    حدد عنوان URL لعرض معلومات أكثر تفصيلا.
 
@@ -497,21 +497,21 @@ ms.locfileid: "63681601"
 2. في القائمة **عرض** ، اختر **إرسالات** \> **البريد الإلكتروني**.
 
    > [!div class="mx-imgBorder"]
-   > ![القائمة "عرض" ل "المستكشف" لر البريد الإلكتروني.](../../media/explorer-view-menu-email-user-reported.png)
+   > :::image type="content" source="../../media/explorer-view-menu-email-user-reported.png" alt-text="القائمة &quot;عرض&quot; ل &quot;مستكشف&quot; لر الإلكتروني" lightbox="../../media/explorer-view-menu-email-user-reported.png":::
 
 3. انقر **فوق مرسل**، ثم اختر **نوع التقرير** \> **الأساسي**.
 
 4. حدد خيارا، مثل **التصيد الاحتيالي**، ثم حدد **الزر تحديث** .
 
    > [!div class="mx-imgBorder"]
-   > ![التصيد الاحتيالي الذي تم تسجيله من قبل المستخدم.](../../media/EmailUserReportedReportType.png)
+   > :::image type="content" source="../../media/EmailUserReportedReportType.png" alt-text="التصيد الاحتيالي الذي تم تسجيله من قبل المستخدم" lightbox="../../media/EmailUserReportedReportType.png":::
 
-يتم تحديث التقرير لإظهار بيانات حول رسائل البريد الإلكتروني التي ذكرها الأشخاص في مؤسستك كمحاولة تصيد احتيالي. يمكنك استخدام هذه المعلومات لإجراء المزيد من التحليلات، وضبط سياسات مكافحة التصيد الاحتيالي، إذا لزم الأمر، في [Microsoft Defender Office 365](configure-mdo-anti-phishing-policies.md).
+يتم تحديث التقرير لإظهار بيانات حول رسائل البريد الإلكتروني التي ذكرها الأشخاص في مؤسستك كمحاولة تصيد احتيالي. يمكنك استخدام هذه المعلومات لإجراء المزيد من التحليلات، وضبط سياسات مكافحة التصيد الاحتيالي في [Microsoft Defender لـ Office 365.](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="start-automated-investigation-and-response"></a>بدء التحقيق التلقائي والاستجابة
 
 > [!NOTE]
-> تتوفر قدرات الاستجابة والتحري التلقائي في *Microsoft Defender Office 365 2* *Office 365 E5*.
+> تتوفر إمكانات الاستجابة والتحري التلقائي في Microsoft Defender لـ Office 365 *2* *Office 365 E5*.
 
 [يمكن أن توفر الاستجابة والتحريات](automated-investigation-response-office.md) التلقائية وقت فريق عمليات الأمان والجهد الذي بذلته في التحقيق في الهجمات الإلكترونية وتخفيفها. بالإضافة إلى تكوين التنبيهات التي يمكنها تشغيل مصنف أمان، يمكنك بدء عملية تحقيق واستجابة تلقائية من طريقة عرض في المستكشف. للحصول على التفاصيل، راجع [مثال: يقوم مسؤول الأمان بتشغيل تحقيق من المستكشف](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
@@ -527,11 +527,11 @@ ms.locfileid: "63681601"
 
 ## <a name="required-licenses-and-permissions"></a>التراخيص والأذونات المطلوبة
 
-يجب أن يكون [لديك Microsoft Defender Office 365](defender-for-office-365.md) لاستخدام المستكشف أو الكشف في الوقت الحقيقي.
+يجب أن يكون [Microsoft Defender لـ Office 365](defender-for-office-365.md) استخدام المستكشف أو الكشف في الوقت الحقيقي.
 
-- المستكشف مضمن في Defender for Office 365 2.
-- يتم تضمين تقرير الكشف في الوقت الحقيقي في Defender for Office 365 1.
-- التخطيط لتعيين تراخيص لجميع المستخدمين الذين يجب حمايتهم بواسطة Defender Office 365. تظهر الكشفات في المستكشف وفي الوقت الحقيقي بيانات الكشف للمستخدمين المرخص لهم.
+- المستكشف مضمن في Defender لـ Office 365 2.
+- يتم تضمين تقرير الكشف في الوقت الحقيقي في Defender لـ Office 365 1.
+- التخطيط لتعيين تراخيص لجميع المستخدمين الذين يجب حمايتهم بواسطة Defender لـ Office 365. تظهر الكشفات في المستكشف وفي الوقت الحقيقي بيانات الكشف للمستخدمين المرخص لهم.
 
 لعرض المستكشف أو الكشف في الوقت الحقيقي واستخدامه، يجب أن تكون لديك الأذونات المناسبة، مثل تلك الممنوحة لمسؤول الأمان أو قارئ الأمان.
 
@@ -555,10 +555,10 @@ ms.locfileid: "63681601"
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>الاختلافات بين "مستكشف التهديدات" والكشف في الوقت الحقيقي
 
-- يتوفر *تقرير الكشف* في الوقت الحقيقي في Defender for Office 365 1. *يتوفر "مستكشف* التهديدات" في Defender for Office 365 2.
+- يتوفر *تقرير الكشف* في الوقت الحقيقي في Defender لـ Office 365 1. *يتوفر "* مستكشف التهديدات" Defender لـ Office 365 الخطة 2.
 - يتيح لك تقرير الكشف في الوقت الحقيقي عرض الكشف في الوقت الحقيقي. يقوم "مستكشف التهديدات" بذلك أيضا، ولكنه يوفر أيضا تفاصيل إضافية عن هجوم معين.
 - تتوفر *طريقة عرض* البريد الإلكتروني الكل في "مستكشف التهديدات" ولكن ليس في تقرير الكشف في الوقت الحقيقي.
-- يتم تضمين المزيد من إمكانات التصفية والإجراءات المتوفرة في "مستكشف التهديدات". لمزيد من المعلومات، راجع [Microsoft Defender للحصول Office 365 وصف الخدمة: توفر الميزات عبر Defender Office 365 الجديدة](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+- يتم تضمين المزيد من إمكانات التصفية والإجراءات المتوفرة في "مستكشف التهديدات". لمزيد من المعلومات، [راجع Microsoft Defender لـ Office 365 الخدمة: توفر الميزات عبر Defender لـ Office 365 أخرى](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
 ## <a name="other-articles"></a>مقالات أخرى
 

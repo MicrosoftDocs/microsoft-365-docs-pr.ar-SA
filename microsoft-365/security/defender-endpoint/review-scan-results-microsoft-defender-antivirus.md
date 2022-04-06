@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 79c435618f03a8bdbd69638c66b728597cd63cab
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8727baa9bb1935a1186907ca5f3d9d4f82dad6d4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63574254"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473640"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>مراجعة برنامج الحماية من الفيروسات من Microsoft Defender المسح الضوئي
 
@@ -29,13 +29,13 @@ ms.locfileid: "63574254"
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 بعد اكتمال برنامج الحماية من الفيروسات من Microsoft Defender، سواء كان عند الطلب أو فحص مجدول، يتم [](run-scan-microsoft-defender-antivirus.md) تسجيل النتائج، كما [](scheduled-catch-up-scans-microsoft-defender-antivirus.md)يمكنك عرض النتائج. 
 
 
-## <a name="use-configuration-manager-to-review-scan-results"></a>استخدام "إدارة التكوين" لمراجعة نتائج الفحص
+## <a name="use-configuration-manager-to-review-scan-results"></a>استخدام Configuration Manager لمراجعة نتائج الفحص
 
 راجع [كيفية مراقبة حالة Endpoint Protection.](/configmgr/protect/deploy-use/monitor-endpoint-protection)
 
@@ -47,7 +47,7 @@ ms.locfileid: "63574254"
 Get-MpThreatDetection
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="لقطة شاشة ل Cmdlets ومخرجات PowerShell.":::
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="Cmdlets ومخرجات PowerShell" lightbox="../../media/wdav-get-mpthreatdetection.png":::
 
 يمكنك تحديد الحد `-ThreatID` من الإخراج لإظهار الكشف عن خطر معين فقط.
 
@@ -57,7 +57,7 @@ Get-MpThreatDetection
 Get-MpThreat
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="رمز PowerShell.":::
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="رمز PowerShell" lightbox="../../media/wdav-get-mpthreat.png":::
 
 راجع [استخدام Cmdlets في PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) لتكوين الأمرين [cmdlets](/powershell/module/defender/) برنامج الحماية من الفيروسات من Microsoft Defender و Defender Antivirus وتشغيلها للحصول على مزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender.
 

@@ -1,7 +1,7 @@
 ---
-title: كيفية جدولة عمليات الفحص باستخدام Microsoft Defender ل Endpoint (Linux)
-description: تعرف على كيفية جدولة وقت فحص تلقائي ل Microsoft Defender لنقطة النهاية (Linux) لحماية أصول مؤسستك بشكل أفضل.
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، linux، عمليات الفحص، الحماية من الفيروسات، microsoft defender لنقطة النهاية (linux)
+title: كيفية جدولة عمليات الفحص باستخدام Microsoft Defender لنقطة النهاية (Linux)
+description: تعرف على كيفية جدولة وقت فحص تلقائي Microsoft Defender لنقطة النهاية (Linux) لحماية أصول مؤسستك بشكل أفضل.
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، linux، المسح الضوئي، برنامج الحماية من الفيروسات، microsoft defender لنقطة النهاية (linux)
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,17 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ddb02d67866e675febda59fac15e8e494188a47f
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 05e8fccc200b39a606fa67a857631e215c8d4b1c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "63574712"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64467610"
 ---
-# <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>جدولة عمليات الفحص باستخدام Microsoft Defender ل Endpoint (Linux)
+# <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>جدولة عمليات الفحص باستخدام Microsoft Defender لنقطة النهاية (Linux)
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 لتشغيل فحص ل Linux، راجع [الأوامر المعتمدة](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
@@ -95,7 +95,7 @@ CRON_TZ=America/Los_Angeles
 
 لعرض مهام cron، اكتب `sudo crontab -l`
 
-:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp.":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="صفحة linux mdatp" lightbox="../../media/linux-mdatp-1.png":::
 
 #### <a name="to-inspect-cron-job-runs"></a>لفحص تشغيل وظيفة كرون
 
