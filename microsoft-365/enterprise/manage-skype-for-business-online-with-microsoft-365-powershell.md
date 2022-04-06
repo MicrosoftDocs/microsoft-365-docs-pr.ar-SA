@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: استخدم PowerShell Microsoft 365 لإدارة Skype for Business الإنترنت ونهج كل مستخدم وإعدادات الاجتماعات.
-ms.openlocfilehash: 40fc030c957fee2d31c18ea95f1939e3d9f0937b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cb546a7e4130509d7acd0021b3cb78df23c1819f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63576940"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474461"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>إدارة Skype for Business عبر الإنترنت باستخدام PowerShell
 
@@ -30,7 +30,10 @@ Skype for Business المسؤولين عبر الإنترنت عن إدارة ا
 ## <a name="before-you-start"></a>قبل البدء
 
 > [!NOTE]
-> Skype for Business Online Connector حاليا جزءا من أحدث Teams PowerShell. إذا كنت تستخدم أحدث إصدار Teams PowerShell العام، فلا تحتاج إلى تثبيت Skype for Business Online Connector.
+> Skype for Business Online Connector حاليا جزءا من أحدث Teams PowerShell. إذا كنت تستخدم أحدث إصدار Teams **PowerShell** العام، فلا تحتاج إلى تثبيت Skype for Business Online Connector.
+
+> [!NOTE]
+> Skype for Business يمكن للمسؤولين عبر الإنترنت **إدارة Teams** ونهج **Skype for Business عبر** الإنترنت من خلال PowerShell.
 
 قم بتثبيت [Teams PowerShell النمطية](/microsoftteams/teams-powershell-install).
 

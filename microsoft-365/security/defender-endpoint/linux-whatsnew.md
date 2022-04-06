@@ -1,7 +1,7 @@
 ---
-title: ما الجديد في Microsoft Defender for Endpoint على Linux
-description: قائمة التغييرات الرئيسية ل Microsoft Defender ل Endpoint على Linux.
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، linux، whatsnew، الإصدار
+title: ما الجديد في Microsoft Defender لنقطة النهاية Linux
+description: قائمة التغييرات الرئيسية Microsoft Defender لنقطة النهاية على Linux.
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، linux، whatsnew، الإصدار
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -15,19 +15,24 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 48b278d23cd724cade823d2a6b052b11d02a3a13
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 45b5bbcc1268c1f425b914a3f8279fe8dcc583f2
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63570392"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569942"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>ما الجديد في Microsoft Defender for Endpoint على Linux
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>ما الجديد في Microsoft Defender لنقطة النهاية Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1016274-30122022162740"></a>101.62.74 (30.122022.16274.0)
+
+- معالجة مشكلة حيث قد يمنع المنتج بشكل غير صحيح الوصول إلى الملفات التي يزيد حجمها عن 2 غيغابايت عند تشغيلها على إصدارات kernel الأقدم
+- إصلاحات الأخطاء
 
 ## <a name="1016093-30122012160930"></a>101.60.93 (30.122012.16093.0)
 
@@ -41,6 +46,7 @@ ms.locfileid: "63570392"
 ## <a name="1015880-30122012158800"></a>101.58.80 (30.122012.15880.0)
 
 - تدعم أداة سطر الأوامر الآن استعادة الملفات التي تم فحصها إلى موقع آخر غير الموقع الذي تم الكشف عن الملف فيه في الأصل. يمكن القيام بذلك من خلال `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
+- بدءا من هذا الإصدار، يمكن تقييم حماية الشبكة ل Linux عند الطلب
 - إصلاحات الأخطاء
 
 ## <a name="1015662-30121122156620"></a>101.56.62 (30.121122.15662.0)
@@ -53,7 +59,7 @@ ms.locfileid: "63570392"
 
 ## <a name="1015257-30121092152570"></a>101.52.57 (30.121092.15257.0)
 
-- إضافة إمكانية للكشف عن جرار log4j المعرضة للاستخدام بواسطة تطبيقات Java. يتم فحص الجهاز بشكل دوري لتشغيل عمليات Java باستخدام جرار log4j محملة. يتم إرسال المعلومات إلى الواجهة الخلفية ل Microsoft Defender لنقطة النهاية، كما يتم عرضها في منطقة إدارة الثغرات في المدخل.
+- إضافة إمكانية للكشف عن جرار log4j المعرضة للاستخدام بواسطة تطبيقات Java. يتم فحص الجهاز بشكل دوري لتشغيل عمليات Java باستخدام جرار log4j محملة. يتم إرسال المعلومات إلى Microsoft Defender لنقطة النهاية الخلفية، كما يتم عرضها في منطقة إدارة الثغرات في المدخل.
 
 ## <a name="1014776-30121092147760"></a>101.47.76 (30.121092.14776.0)
 
@@ -62,7 +68,7 @@ ms.locfileid: "63570392"
 
 ## <a name="1014513-30121082145130"></a>101.45.13 (30.121082.14513.0)
 
-- بدءا من هذا الإصدار، نقوم بإحضار دعم Microsoft Defender ل Endpoint إلى العروض التقديمية التالية: 
+- بدءا من هذا الإصدار، نقوم Microsoft Defender لنقطة النهاية الدعم إلى السطور التالية: 
   - إصدارات 6.7-6.10 و CentOS6.7-6.10.
   - Amazon Linux 2
   - Fedora 33 أو أعلى
@@ -95,8 +101,8 @@ ms.locfileid: "63570392"
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0)
 
-- يتوفر Microsoft Defender for Endpoint على Linux الآن في المعاينة لعملاء الحكومة الأمريكية. لمزيد من المعلومات، راجع [Microsoft Defender for Endpoint لعملاء الحكومة الأمريكية](gov.md).
-- تم إصلاح مشكلة حيث يؤدي استخدام Microsoft Defender ل Endpoint على Linux على الأنظمة التي تستخدم ملفاتها إلى توقف نظام التشغيل
+- Microsoft Defender لنقطة النهاية على Linux الآن في المعاينة لعملاء الحكومة الأمريكية. لمزيد من المعلومات، [راجع Microsoft Defender لنقطة النهاية عملاء الحكومة الأمريكية](gov.md).
+- تم إصلاح مشكلة حيث يؤدي استخدام Microsoft Defender لنقطة النهاية على Linux على الأنظمة التي تستخدم ملفاتها إلى تعليق نظام التشغيل OS
 - تحسينات الأداء & تصحيحات الأخطاء الأخرى
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0)

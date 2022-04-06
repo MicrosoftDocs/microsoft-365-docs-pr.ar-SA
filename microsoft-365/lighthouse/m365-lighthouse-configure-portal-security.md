@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة إلى موفري الخدمات المدارة (MSPs) Microsoft 365 المنارة، تعرف على كيفية تكوين أمان المدخل.
-ms.openlocfilehash: dd99330d520b409a93cfd5d1ca777c17b9ef4373
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: 4d12755ca1b02988dff3f5ba6be6dd0d8da172ad
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775929"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64594741"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>تكوين أمان Microsoft 365 المنارة
 
@@ -39,7 +39,7 @@ ms.locfileid: "63775929"
 
 يمنح التحكم بالوصول المستند إلى الدور (RBAC) إمكانية الوصول إلى الموارد أو المعلومات استنادا إلى أدوار المستخدمين. يقتصر الوصول إلى بيانات وإعدادات مستأجر العميل في المنارة على أدوار معينة من برنامج Cloud Solution Provider (CSP). لإعداد أدوار RBAC في المنارة، نوصي باستخدام امتيازات المسؤول المفوض (GDAP) لتنفيذ التعيينات الدقيقة للمستخدمين. لا تزال امتيازات المسؤول المفوض (DAP) مطلوبة للمستأجر للتمكن من التمكن من الوصول إلى امتيازات المسؤول المفوض (DAP) بنجاح، ولكن سيتمكن عملاء GDAP فقط قريبا من التمكن من العمل دون تبعية ل DAP. يكون لأذونات GDAP الأسبقية عند تباعد DAP و GDAP للعميل. 
 
-للبدء باستخدام GDAP، راجع [إعداد الأدوار لإدارة مستأجري العملاء](m365-lighthouse-set-up-roles.md).
+للبدء باستخدام GDAP، راجع نظرة [عامة على الأذونات في Microsoft 365 المنارة](m365-lighthouse-overview-of-permissions.md).
 
 يمكن أيضا لتقنيي MSP الوصول إلى المنارة باستخدام أدوار "وكيل المسؤول" أو "وكيل المساعدة" عبر "امتيازات المسؤول المفوض" (DAP).
 

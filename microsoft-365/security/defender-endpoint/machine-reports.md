@@ -1,5 +1,5 @@
 ---
-title: تقرير حالة الجهاز والتوافق في Microsoft Defender لنقطة النهاية
+title: تقرير حالة الجهاز وتوافقه في Microsoft Defender لنقطة النهاية
 description: تعقب الكشف عن حالة الجهاز، حالة الحماية من الفيروسات، النظام الأساسي Windows 10 الإصدارات باستخدام تقرير حالة الجهاز والتوافق
 keywords: حالة الحماية، الحماية من الفيروسات، النظام الأساسي لنظام التشغيل، إصدار windows 10، الإصدار، الحماية، التوافق، الحالة
 ms.prod: m365-security
@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: eaa9d05fd62127949e6a0b40de8d42a79c446d4d
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: bf89c0e57cbe14980b15ecf6f5a88f6db2b83e84
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "63573308"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474014"
 ---
-# <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>تقرير حالة الجهاز والتوافق في Microsoft Defender لنقطة النهاية
+# <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>تقرير حالة الجهاز وتوافقه في Microsoft Defender لنقطة النهاية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -36,7 +36,7 @@ ms.locfileid: "63573308"
 
 تم تنظيم لوحة المعلومات في قسمين:
 
-:::image type="content" alt-text="صورة تقرير الجهاز." source="images/device-reports.png" lightbox="images/device-reports.png":::
+:::image type="content" source="images/device-reports.png" alt-text="تقرير الجهاز" lightbox="images/device-reports.png":::
 
 
 <br>

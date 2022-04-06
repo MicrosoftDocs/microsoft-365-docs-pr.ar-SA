@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b0f12d50cd37832a5c9055fdabcffa0968645682
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 0ce03f919d3a4012952ab7d2056b33f2eeb71926
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498946"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569458"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>مراجعة Microsoft Defender لـ Office 365 الأساسية والمفاهيم الأساسية
 
@@ -52,7 +52,7 @@ ms.locfileid: "64498946"
 |2     | Exchange Online Protection يتفاوض ويتحقق من صحة الاتصال الوارد ويفحص رؤوس الرسائل ومحتوياتها لتحديد النهج الإضافية المطلوبة أو وضع العلامات أو المعالجة.  |
 |3     | Exchange Online التكامل مع Microsoft Defender لـ Office 365 لتقديم المزيد من الحماية المتقدمة من المخاطر وتخفيفها وتوضيعها. |
 |4     | تتم معالجة الرسالة غير الضارة أو المحظورة أو المعزولة وتسليمها إلى المستلم في EXO حيث يتم تقييم تفضيلات المستخدم المتعلقة بالبريد الإلكتروني غير الهام أو قواعد علبة البريد أو الإعدادات الأخرى وتشغلها. |
-|5     | يمكن تمكين Active Directory محلي باستخدام Azure AD الاتصال لمزامنة الكائنات والحسابات التي تم تمكين البريد لها وتوفيرها في Azure Active Directory وفي النهاية Exchange Online. |
+|5     | يمكن تمكين жергілікті Active Directory باستخدام Azure AD الاتصال لمزامنة العناصر والحسابات التي تم تمكين البريد لها وتوفيرها إلى Azure Active Directory وفي النهاية Exchange Online. |
 |6     | عند دمج بيئة المحلية، يتم التشجيع على استخدام خادم Exchange لإدارة وإدارة السمات والإعدادات والتكوينات ذات الصلة بالبريد |
 |7     | Microsoft Defender لـ Office 365 إشارات إلى Microsoft 365 Defender للكشف والاستجابة الموسعة (XDR).|
 
@@ -87,7 +87,7 @@ ms.locfileid: "64498946"
 > [!IMPORTANT]
 > إذا كانت هذه المتطلبات غير قابلة للتطبيق أو إذا كنت لا تزال في سيناريو تعايش مختلط، فإن تقييم Microsoft Defender لـ Office 365 قد يتطلب تكوينات أكثر تعقيدا أو تقدما لم يتم تناولها بالكامل في هذه الإرشادات.
 
-## <a name="siem-integration"></a>تكامل SIEM
+## <a name="siem-integration"></a>تكامل إدارة معلومات الأمان والأحداث
 
 يمكنك دمج Microsoft Defender لـ Office 365 مع Microsoft Sentinel لتحليل أحداث الأمان عبر مؤسستك بشكل أكثر شمولية، فضلا عن إنشاء دفاتر تشغيل للاستجابة الفورية والفعالة. لمزيد من المعلومات، [راجع الاتصال تنبيهات من Microsoft Defender لـ Office 365](/azure/sentinel/connect-office-365-advanced-threat-protection).
 

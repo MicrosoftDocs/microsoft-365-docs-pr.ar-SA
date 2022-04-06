@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5658d2cbb0fd3f8307ceb6cb46057237436271eb
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 064ce5f796d59994b9d7ec4c3403711b1d683e56
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63579617"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500464"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>تكوين Microsoft 365 Defender دفق أحداث "الصيد المتقدم" إلى مركز الأحداث في Azure
 
@@ -70,7 +70,7 @@ ms.locfileid: "63579617"
 
    للحصول على "مورد **مركز** الأحداث"، انتقل إلى صفحة مساحة اسم Azure Event Hub على علامة التبويب [AzureProperties](https://ms.portal.azure.com/) >  > النص ضمن **"مورد المعر"** :
 
-   ![صورة لمورد Hub Event Hub Id1.](../defender-endpoint/images/event-hub-resource-id.png)
+   :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="&quot;مورد مركز الأحداث&quot;" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
 
 8. انتقل [إلى أنواع الأحداث](supported-event-types.md) Microsoft 365 Defender في برمجة تطبيقات دفق الأحداث لمراجعة حالة دعم أنواع الأحداث في Microsoft 365 API للدفق.
 
@@ -116,7 +116,7 @@ ms.locfileid: "63579617"
 
 - فيما يلي مثال لحدث معلومات الجهاز:
 
-  ![صورة لمورد Hub Event Hub Id2.](../defender-endpoint/images/machine-info-datatype-example.png)
+  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="استعلام مثال حول معلومات الجهاز" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

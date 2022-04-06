@@ -11,20 +11,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: يمكن للمسؤولين التعرف على كيفية محاكاة هجمات التصيد الاحتيالي وتدريب المستخدمين على منع التصيد الاحتيالي باستخدام التدريب على محاكاة الهجمات في Microsoft Defender Office 365 2.
+description: يمكن للمسؤولين التعرف على كيفية محاكاة هجمات التصيد الاحتيالي وتدريب المستخدمين على منع التصيد الاحتيالي باستخدام التدريب على محاكاة الهجمات في Microsoft Defender لـ Office 365 2.
 ms.technology: mdo
-ms.openlocfilehash: 5ce7b58410ea53e4f11d746ebc4583b125f1ade6
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: 924fef8e5aba8a797cf6754b6c507624e51a64c2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63575435"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474300"
 ---
-# <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>محاكاة هجوم تصيد احتيالي من خلال التدريب على محاكاة الهجمات في Defender for Office 365
+# <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>محاكاة هجوم تصيد احتيالي باستخدام التدريب على محاكاة الهجمات في Defender لـ Office 365
 
-**ينطبق على** [Microsoft Defender Office 365 2](defender-for-office-365.md)
+**ينطبق على Microsoft Defender لـ Office 365** [2](defender-for-office-365.md)
 
-يتيح لك التدريب على محاكاة الهجمات في Microsoft Defender Office 365 الخطة 2 أو Microsoft 365 E5 تشغيل عمليات محاكاة الهجمات الإلكترونية غير المهينة في مؤسستك. تختبر عمليات المحاكاة هذه سياسات الأمان والممارسات الخاصة بك، بالإضافة إلى تدريب الموظفين على زيادة مستوى وعيهم وتقليل إمكانية التعرض للهجمات. تدربك هذه المقالة على إنشاء هجوم تصيد احتيالي محاكاة باستخدام التدريب على محاكاة الهجمات.
+يتيح لك التدريب على محاكاة الهجمات Microsoft Defender لـ Office 365 الخطة 2 أو Microsoft 365 E5 تشغيل عمليات محاكاة الهجمات الإلكترونية غير المهينة في مؤسستك. تختبر عمليات المحاكاة هذه سياسات الأمان والممارسات الخاصة بك، بالإضافة إلى تدريب الموظفين على زيادة مستوى وعيهم وتقليل إمكانية التعرض للهجمات. تدربك هذه المقالة على إنشاء هجوم تصيد احتيالي محاكاة باستخدام التدريب على محاكاة الهجمات.
 
 للحصول على معلومات حول بدء التدريب على محاكاة الهجمات، راجع [بدء استخدام التدريب على محاكاة الهجمات](attack-simulation-training-get-started.md).
 
@@ -36,7 +36,7 @@ ms.locfileid: "63575435"
 
 2. على علامة **التبويب عمليات المحاكاة** ، حدد ![تشغيل أيقونة محاكاة.](../../media/m365-cc-sc-create-icon.png) **بدء عملية محاكاة**.
 
-   ![تشغيل زر محاكاة على علامة التبويب عمليات المحاكاة في التدريب على محاكاة الهجمات Microsoft 365 Defender المدخل.](../../media/attack-sim-training-simulations-launch.png)
+   :::image type="content" source="../../media/attack-sim-training-simulations-launch.png" alt-text="الزر &quot;تشغيل محاكاة&quot; على علامة التبويب &quot;عمليات محاكاة&quot; في التدريب على محاكاة الهجمات في مدخل Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-launch.png":::
 
 3. يتم فتح معالج إنشاء المحاكاة. تصف باقي هذه المقالة الصفحات والإعدادات التي تحتوي عليها.
 
@@ -55,7 +55,7 @@ ms.locfileid: "63575435"
 
 إذا نقرت **فوق الارتباط عرض** التفاصيل في الوصف، يتم فتح من حولاء التفاصيل التي تصف التقنية، بالإضافة إلى خطوات المحاكاة الناتجة عن التقنية.
 
-![تفاصيل منتحلة لتقنية تجميع بيانات الاعتماد على صفحة تقنية تحديد.](../../media/attack-sim-training-simulations-select-technique-sim-steps.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-technique-sim-steps.png" alt-text="منتحل التفاصيل لتقنية تجميع بيانات الاعتماد على صفحة تقنية &quot;تحديد&quot;" lightbox="../../media/attack-sim-training-simulations-select-technique-sim-steps.png":::
 
 عند الانتهاء، انقر فوق **التالي**.
 
@@ -102,14 +102,14 @@ ms.locfileid: "63575435"
 
 عند الانتهاء من تكوين عوامل التصفية، انقر فوق **تطبيق** عوامل التصفية أو إلغاء الأمر أو **مسحها**.
 
-![حدد صفحة التحميل في التدريب على محاكاة الهجمات في Microsoft 365 Defender المدخل.](../../media/attack-sim-training-simulations-select-payload.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload.png" alt-text="صفحة تحديد الحمولة في التدريب على محاكاة الهجمات في مدخل Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload.png":::
 
 إذا قمت بتحديد تحميل من القائمة، يتم عرض تفاصيل حول الحمولة في قائمة من القائمة المطيرة:
 
 - تحتوي **علامة** التبويب نظرة عامة على مثال وتفاصيل أخرى حول الحمولة.
 - تحتوي **علامة التبويب عمليات المحاكاة** التي تم تشغيلها على اسم **المحاكاة** ومعدل النقر ومعدل **الشبهات** **والتحرك**.
 
-![منتحل بيانات التحميل في التدريب على محاكاة الهجمات في Microsoft 365 Defender المدخل.](../../media/attack-sim-training-simulations-select-payload-details.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details.png" alt-text="منتحل تفاصيل الحمولة في التدريب على محاكاة الهجمات في مدخل Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-select-payload-details.png":::
 
 إذا قمت بتحديد تحميل من القائمة بالنقر فوق الاسم ![، أيقونة إرسال تحميل اختباري.](../../media/m365-cc-sc-create-icon.png) **يظهر زر إرسال** اختبار على الصفحة الرئيسية حيث يمكنك إرسال نسخة من البريد الإلكتروني المحمل إلى نفسك (المستخدم الذي سجل دخوله حاليا) للفحص.
 
@@ -138,7 +138,7 @@ ms.locfileid: "63575435"
         - **المستخدمون غير المستهدفين من خلال محاكاة في الأشهر الثلاثة الأخيرة**
         - **تكرار المخالفين**
 
-      - **علامات المستخدم**: علامات المستخدم هي معرفات لمجموعات معينة من المستخدمين (على سبيل المثال، حسابات الأولوية). لمزيد من المعلومات، راجع [علامات المستخدم في Microsoft Defender Office 365](user-tags.md).
+      - **علامات المستخدم**: علامات المستخدم هي معرفات لمجموعات معينة من المستخدمين (على سبيل المثال، حسابات الأولوية). لمزيد من المعلومات، راجع [علامات المستخدم في Microsoft Defender لـ Office 365](user-tags.md).
 
           استخدم الخيارات التالية:
 
@@ -156,7 +156,7 @@ ms.locfileid: "63575435"
         - تحديد **العنوان كله**
         - حدد قيم العنوان الموجودة.
 
-      ![تصفية المستخدمين على صفحة المستخدمين الهدف في التدريب على محاكاة الهجمات في Microsoft 365 Defender المدخل.](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
+      :::image type="content" source="../../media/attack-sim-training-simulations-target-users-filter-by-category.png" alt-text="تصفية المستخدم على صفحة المستخدمين الهدف في التدريب على محاكاة الهجمات في مدخل Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-target-users-filter-by-category.png":::
 
       بعد تحديد المعايير، يتم عرض المستخدمين المتأثرين في مقطع قائمة المستخدمين الذي يظهر، حيث يمكنك تحديد بعض المستلمين المكتشفين أو كلهم.
 
@@ -194,7 +194,7 @@ ms.locfileid: "63575435"
       - **7 أيام بعد انتهاء المحاكاة**
   - **لا يوجد تدريب**: إذا حددت هذه القيمة، فإن الخيار الوحيد على الصفحة هو الزر **التالي** الذي سينتقل بك إلى صفحة [**الصفحة المنتقلة**](#landing-page) .
 
-![أضف التدريب الموصى به على صفحة تعيين التدريب في التدريب على محاكاة الهجمات في Microsoft 365 Defender المدخل.](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png" alt-text="خيار إضافة التدريب الموصى به على صفحة تعيين التدريب في التدريب على محاكاة الهجمات في مدخل Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png":::
 
 ### <a name="training-assignment"></a>واجب تدريبي
 
@@ -236,7 +236,7 @@ ms.locfileid: "63575435"
 
 إذا كنت لا تريد استخدام تدريب يظهر، انقر فوق ![حذف أيقونة التدريب.](../../media/m365-cc-sc-delete-icon.png) **حذف**.
 
-![صفحة تعيين تدريبي في التدريب على محاكاة الهجمات في Microsoft 365 Defender المدخل.](../../media/attack-sim-training-training-assignment.png)
+:::image type="content" source="../../media/attack-sim-training-training-assignment.png" alt-text="صفحة الواجب التدريبي في التدريب على محاكاة الهجمات في مدخل Microsoft 365 Defender" lightbox="../../media/attack-sim-training-training-assignment.png":::
 
 عند الانتهاء، انقر فوق **التالي**.
 
@@ -374,4 +374,4 @@ ms.locfileid: "63575435"
 
 عند الانتهاء، انقر فوق **إرسال**.
 
-![راجع صفحة المحاكاة في التدريب على محاكاة الهجمات في Microsoft 365 Defender المدخل.](../../media/attack-sim-training-simulations-review-simulation.png)
+:::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="صفحة &quot;مراجعة محاكاة&quot; في التدريب على محاكاة الهجمات في مدخل Microsoft 365 Defender" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::

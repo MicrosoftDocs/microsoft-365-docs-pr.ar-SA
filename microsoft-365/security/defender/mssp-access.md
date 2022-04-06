@@ -1,7 +1,7 @@
 ---
 title: توفير الوصول إلى موفر خدمة الأمان المدار (MSSP)
 description: تعرف على التغييرات من مركز حماية Microsoft Defender إلى مدخل Microsoft 365 Defender
-keywords: بدء استخدام مدخل Microsoft 365 Defender، Microsoft Defender ل Office 365، Microsoft Defender ل Endpoint، MDO، MDE، جزء واحد من الزجاج، مدخل متقارب، مدخل الأمان، مدخل أمان Defender
+keywords: بدء استخدام مدخل Microsoft 365 Defender، Microsoft Defender لـ Office 365، Microsoft Defender لنقطة النهاية، MDO، MDE، جزء واحد من الزجاج، مدخل متقارب، مدخل الأمان، مدخل أمان defender
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 641636528d35c148ceaa41827721e841dfafd4ec
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: f0148a8bfe18c7636e95ceae7b268cc70b2e58ed
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63572338"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500398"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>توفير الوصول إلى موفر خدمة الأمان المدار (MSSP) 
 
@@ -43,7 +43,7 @@ ms.locfileid: "63572338"
 
 3. إدارة طلبات الوصول والتدقيقات في [Microsoft Myaccess.](/azure/active-directory/governance/entitlement-management-request-approve)
 
-## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-defender-portal"></a>تمكين عناصر التحكم بالوصول المستندة إلى الدور في Microsoft Defender لنقطة النهاية في مدخل Microsoft 365 Defender
+## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-defender-portal"></a>تمكين عناصر التحكم بالوصول المستندة إلى الدور في Microsoft Defender لنقطة النهاية في Microsoft 365 Defender المدخل
 
 1. **إنشاء مجموعات وصول إلى موارد MSSP في AAD (دليل Azure النشط): المجموعات**
 
@@ -57,7 +57,7 @@ ms.locfileid: "63572338"
 
     لتمكين RBAC في مدخل Microsoft 365 Defender العميل، يمكنك الوصول إلى **الأذونات > أدوار نقاط النهاية & مجموعات > الأدوار** باستخدام حساب مستخدم مع حقوق المسؤول العام أو مسؤول الأمان.
 
-    ![صورة الوصول إلى MSSP.](../../media/mssp-access.png)
+    :::image type="content" source="../../media/mssp-access.png" alt-text="تفاصيل الوصول إلى MSSP في مدخل Microsoft 365 Defender" lightbox="../../media/mssp-access.png":::
 
     بعد ذلك، قم بإنشاء أدوار RBAC لتلبية احتياجات طبقة MSSP SOC. ربط هذه الأدوار ب مجموعات المستخدمين التي تم إنشاؤها عبر "مجموعات المستخدمين المعينين".
 
@@ -85,7 +85,8 @@ ms.locfileid: "63572338"
 
     للقيام بذلك، في مستأجر AD للعميل، يمكنك الوصول إلى إدارة الهوية: الكتالوجات وإضافة **كتالوج جديد**. في مثالنا، سنسميه **MSSP Accesses**.
 
-    ![صورة لكتالوج جديد.](../../media/goverance-catalog.png)
+    :::image type="content" source="../../media/goverance-catalog.png" alt-text="كتالوج جديد في مدخل Microsoft 365 Defender" lightbox="../../media/goverance-catalog.png":::
+
 
     لمزيد من المعلومات، راجع [إنشاء كتالوج موارد](/azure/active-directory/governance/entitlement-management-catalog-create).
 
@@ -100,7 +101,7 @@ ms.locfileid: "63572338"
     - يمكن فقط طلبها من قبل المستخدمين في مستأجر MSSP SOC
     - تنتهي صلاحية Access التلقائي بعد 365 يوما
 
-    ![صورة لحزمة وصول جديدة.](../../media/new-access-package.png)
+    :::image type="content" source="../../media/new-access-package.png" alt-text="تفاصيل حزمة وصول جديدة في مدخل Microsoft 365 Defender" lightbox="../../media/new-access-package.png":::
 
     لمزيد من المعلومات، راجع [إنشاء حزمة وصول جديدة](/azure/active-directory/governance/entitlement-management-access-package-create).
 
@@ -108,7 +109,7 @@ ms.locfileid: "63572338"
 
     يستخدم محللو MSSP SOC ارتباط مدخل الوصول الخاص ب MsSP لطلب الوصول عبر حزم الوصول التي تم إنشاؤها. الارتباط دائم، مما يعني أنه قد يتم استخدام الارتباط نفسه مع مرور الوقت للمحللين الجدد. يدخل طلب المحلل في قائمة انتظار للموافقة عليه من قبل **الموافقين على محللي MSSP**.
 
-    ![صورة لخصائص Access.](../../media/access-properties.png)
+    :::image type="content" source="../../media/access-properties.png" alt-text="خصائص الوصول في مدخل Microsoft 365 Defender" lightbox="../../media/access-properties.png":::
 
     يقع الارتباط في صفحة نظرة عامة لكل حزمة وصول.
 
@@ -129,4 +130,4 @@ ms.locfileid: "63572338"
     `https://security.microsoft.com/?tid=<CustomerTenantId>` مع الأذونات والأدوار التي تم تعيينها.
 
 > [!IMPORTANT]
-> يتيح الوصول المفوض إلى Microsoft Defender لنقطة النهاية في مدخل Microsoft 365 Defender الوصول حاليا إلى مستأجر واحد لكل نافذة مستعرض.
+> يسمح الوصول المفوض Microsoft Defender لنقطة النهاية في Microsoft 365 Defender الوصول حاليا إلى مستأجر واحد لكل نافذة مستعرض.

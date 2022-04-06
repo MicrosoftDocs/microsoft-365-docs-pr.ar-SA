@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 41ba3bcf31725cd5a9fb8b25bc22b6c8bb591363
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 7173d45fed25fe1d0d1e93dbcc259046c1f221cd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569257"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474256"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>كيفية عمل الاستجابات والتحري التلقائي في Microsoft Defender لـ Office 365
 
@@ -77,7 +77,7 @@ ms.locfileid: "64569257"
 
 ## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>مثال: يقوم مسؤول الأمان بتشغيل تحقيق من "مستكشف التهديدات"
 
-بالإضافة إلى عمليات التحقيق التلقائية التي يتم تشغيلها بواسطة تنبيه، يمكن لفريق عمليات الأمان في مؤسستك تشغيل تحقيق تلقائي من طريقة عرض في "مستكشف [التهديدات](threat-explorer.md)". ينشئ هذا التحقيق أيضا تنبيها، Microsoft 365 Defender الأحداث وأدوات SIEM الخارجية أن هذا التحقيق قد تم.
+بالإضافة إلى عمليات التحقيق التلقائية التي يتم تشغيلها بواسطة تنبيه، يمكن لفريق عمليات الأمان في مؤسستك تشغيل تحقيق تلقائي من طريقة عرض في "مستكشف [التهديدات](threat-explorer.md)".  ينشئ هذا التحقيق أيضا تنبيها، بحيث Microsoft 365 Defender الأحداث وأدوات SIEM الخارجية أن هذا التحقيق قد تم.
 
 على سبيل المثال، افترض أنك تستخدم طريقة عرض **البرامج الضارة في** المستكشف. باستخدام علامات التبويب الموجودة أسفل المخطط، حدد علامة **التبويب البريد** الإلكتروني. إذا قمت بتحديد عنصر واحد أو أكثر في القائمة، يتم تنشيط **الزر +** إجراءات.
 
@@ -98,5 +98,5 @@ ms.locfileid: "64569257"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-- [Első lépések AIR](office-365-air.md)
+- [بدء استخدام AIR](office-365-air.md)
 - [عرض إجراءات المعالجة المعلقة أو المكتملة](air-review-approve-pending-completed-actions.md)

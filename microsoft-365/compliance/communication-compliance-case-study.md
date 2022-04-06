@@ -23,12 +23,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7532051d649be4d0e9320a372c53686879c31972
-ms.sourcegitcommit: a6651b841f111ea2776cab88bf2c80f805fa8e09
+ms.openlocfilehash: 7235bbdfb956369eebe960568921bc4bba86651a
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "63567826"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595115"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-text-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>دراسة حالة - تقوم شركة Contoso بسرعة بتكوين نهج نص غير مناسب Microsoft Teams Exchange واتصالات Yammer
 
@@ -56,19 +56,14 @@ ms.locfileid: "63567826"
 
 الخطوة الأولى هي تأكيد أن ترخيص شركة Contoso Microsoft 365 الدعم لحل توافق الاتصالات. للوصول إلى توافق الاتصالات واستخدامه، يجب على مسؤولي تكنولوجيا المعلومات في Contoso التحقق من أن Contoso لديه أحد ما يلي:
 
-- Microsoft 365 E5 الاشتراك (إصدار مدفوع أو تجريبي)
-- Microsoft 365 E3 الاشتراك + التوافق في Microsoft 365 E5 الإضافية
-- Microsoft 365 E3 اشتراك + Microsoft 365 E5 إدارة مخاطر Insider
-- Microsoft 365 A5 الاشتراك (إصدار مدفوع أو تجريبي)
-- Microsoft 365 A3 الاشتراك + Microsoft 365 A5 التوافق الإضافية
-- Microsoft 365 A3 اشتراك + Microsoft 365 A5 إدارة مخاطر Insider
-- Microsoft 365 G5 (إصدار مدفوع أو تجريبي)
-- Microsoft 365 اشتراك G5 + Microsoft 365 G5 Compliance الإضافية
-- Microsoft 365 اشتراك G5 + Microsoft 365 G5 Insider لإدارة المخاطر
+- Microsoft 365 E5/A5/F5/G5 (إصدار مدفوع أو تجريبي)
+- Microsoft 365 E3/A3/F3/G5 + Microsoft 365 E5/A5/F5/G5 Compliance الإضافية
+- Microsoft 365 E3/A3/F3/G5 + Microsoft 365 E5/A5/F5/G5 Insider إدارة المخاطر
 - Office 365 Enterprise E5 (إصدار مدفوع أو تجريبي)
+- Office 365 A5 الاشتراك (إصدار مدفوع أو تجريبي)
 - Office 365 Enterprise اشتراك E3 + خدمات الامتثال المتطورة في Office 365 الإضافية (لم تعد متوفرة للاشتراكات الجديدة، راجع ملاحظة)
 
-ويجب أن يؤكدوا أيضا أنه يجب تعيين أحد التراخيص الواردة أعلاه للمستخدمين المضمنين في سياسات توافق الاتصالات.
+يجب تعيين أحد التراخيص أعلاه للمستخدمين المضمنين في سياسات توافق الاتصالات. لمزيد من المعلومات حول الاشتراكات والترخيص، راجع Microsoft 365 [إرشادات الأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
 > [!IMPORTANT]
 > خدمات الامتثال المتطورة في Office 365 يتم بيعه لاشتراك مستقل. عند انتهاء صلاحية الاشتراكات الحالية، يجب على العملاء الانتقال إلى أحد الاشتراكات أعلاه، التي تحتوي على نفس ميزات التوافق أو ميزات التوافق الإضافية.

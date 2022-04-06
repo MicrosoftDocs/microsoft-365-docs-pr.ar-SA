@@ -19,12 +19,12 @@ ms.custom:
 description: تعرف على كيفية تحديث سجل خدمة أسماء المجالات (DNS) لاستخدام إطار نهج المرسل (SPF) مع مجالك المخصص في Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab7bd0e579bfe26236eb009dc09689ddb90f2782
-ms.sourcegitcommit: 43adb0d91af234c34e22d450a9c1d26aa745c2ca
+ms.openlocfilehash: a25efbce5b9f8141575a88baa3fdd85b099dfbd6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "63568603"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682956"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>إعداد SPF للمساعدة في منع التهز
 
@@ -77,10 +77,6 @@ ms.locfileid: "63568603"
 
 1. تأكد من أنك على دراية ب بناء جملة SPF في الجدول التالي.
 
-    <br>
-
-    ****
-
     |عنصر|إذا كنت تستخدم...|هل هي شائعة للعملاء؟|أضف هذا...|
     |---|---|---|---|
     |1|أي نظام بريد إلكتروني (مطلوب)|شائع. تبدأ كل سجلات SPF TXT بهذه القيمة|`v=spf1`|
@@ -90,7 +86,6 @@ ms.locfileid: "63568603"
     |5|نظام البريد الإلكتروني الخاص ب جهة خارجية|غير شائع|`include:<domain_name>` <p> \<domain_name\> هو مجال نظام البريد الإلكتروني الخاص ب جهة خارجية.|
     |6|نظام البريد الإلكتروني في الموقع. على سبيل المثال، Exchange Online Protection بريد إلكتروني آخر|غير شائع|استخدم أحد هذه الأنظمة لكل نظام بريد إضافي: <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> وهي \<domain_name\> عنوان IP ومجال نظام البريد الإلكتروني الآخر الذي يرسل البريد نيابة عن مجالك.|
     |7|أي نظام بريد إلكتروني (مطلوب)|شائع. تنتهي كل سجلات SPF TXT بهذه القيمة|`<enforcement rule>` <p> قد تكون هذه إحدى القيم العديدة. نوصي بالقيمة `-all`.|
-    |
 
 2. إذا لم تكن قد فعلت ذلك بعد، فشكل سجل SPF TXT باستخدام بناء الجملة من الجدول.
 

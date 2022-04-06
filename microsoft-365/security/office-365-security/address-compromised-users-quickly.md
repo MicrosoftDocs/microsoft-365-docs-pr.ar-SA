@@ -1,6 +1,6 @@
 ---
 title: معالجة حسابات المستخدمين التي تم اختراقها باستخدام الاستجابة والتحري التلقائي
-keywords: AIR، autoIR، Microsoft Defender ل Endpoint، تلقائي، تحقيق، استجابة، معالجة، تهديدات، متقدم، خطر، حماية، معرض للاختراق
+keywords: AIR، autoIR، Microsoft Defender لنقطة النهاية، تلقائي، تحقيق، استجابة، معالجة، تهديدات، متقدم، خطر، حماية، معرض للخطر
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -13,25 +13,25 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: ''
 ms.date: 06/10/2021
-description: تعرف على كيفية تسريع عملية الكشف عن حسابات المستخدمين التي تم اختراقها ومعالجتها باستخدام قدرات الاستجابة والتحري التلقائية في Microsoft Defender Office 365 2.
+description: تعرف على كيفية تسريع عملية الكشف عن حسابات المستخدمين التي تم اختراقها ومعالجتها باستخدام قدرات الاستجابة والتحري التلقائي في Microsoft Defender لـ Office 365 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbc3c6c8a81d59bebbd5272e13e0f96de2257623
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c1488598eb3a198a70997e755fe77a8a0c97e1c0
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63570963"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474351"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>معالجة حسابات المستخدمين التي تم اختراقها باستخدام الاستجابة والتحري التلقائي
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-[يتضمن Microsoft Defender Office 365 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) قدرات فعالة [للتحري والاستجابة](office-365-air.md) التلقائية (AIR). من الممكن أن توفر هذه الإمكانات لفريق عمليات الأمان الكثير من الوقت والجهد في التعامل مع التهديدات. تواصل Microsoft تحسين قدرات الأمان. مؤخرا، تم تحسين قدرات AIR لتضمين مصنف أمان مستخدم ملوث (حاليا قيد المعاينة). اقرأ هذه المقالة لمعرفة المزيد حول دفتر تشغيل أمان المستخدم الذي تم اختراقه. راجع منشور المدونة تسريع الوقت للكشف عن اختراق المستخدم والاستجابة له والحد من نطاق الانتهاك باستخدام [Microsoft Defender Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) للحصول على مزيد من التفاصيل.
+[Microsoft Defender لـ Office 365 الخطة 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) قدرات [فعالة للتحري](office-365-air.md) والاستجابة التلقائية (AIR). من الممكن أن توفر هذه الإمكانات لفريق عمليات الأمان الكثير من الوقت والجهد في التعامل مع التهديدات. تواصل Microsoft تحسين قدرات الأمان. مؤخرا، تم تحسين قدرات AIR لتضمين مصنف أمان مستخدم ملوث (حاليا قيد المعاينة). اقرأ هذه المقالة لمعرفة المزيد حول دفتر تشغيل أمان المستخدم الذي تم اختراقه. وشاهد منشور المدونة [زيادة سرعة الوقت](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) للكشف عن اختراق المستخدم والاستجابة له والحد من نطاق الخرق Microsoft Defender لـ Office 365 للحصول على مزيد من التفاصيل.
 
 ![إجراء تحقيق تلقائي لمستخدم تم اختراقه.](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -43,7 +43,7 @@ ms.locfileid: "63570963"
 
 ## <a name="compromised-user-alerts"></a>تنبيهات المستخدمين التي تم اختراقها
 
-عند اختراق حساب مستخدم، تحدث سلوكيات غير منطقية أو غير منطقية. على سبيل المثال، قد يتم إرسال رسائل التصيد الاحتيالي والبريد العشوائي داخليا من حساب مستخدم موثوق به. يمكن ل Office 365 الكشف عن حالات الشذوذ هذه في أنماط البريد الإلكتروني ونشاط التعاون داخل Office 365. عند حدوث ذلك، يتم تشغيل التنبيهات، وتبدأ عملية التخفيف من المخاطر.
+عند اختراق حساب مستخدم، تحدث سلوكيات غير منطقية أو غير منطقية. على سبيل المثال، قد يتم إرسال رسائل التصيد الاحتيالي والبريد العشوائي داخليا من حساب مستخدم موثوق به. Defender لـ Office 365 اكتشاف مثل هذه الحالات الشذوذ في أنماط البريد الإلكتروني ونشاط التعاون داخل Office 365. عند حدوث ذلك، يتم تشغيل التنبيهات، وتبدأ عملية التخفيف من المخاطر.
 
 على سبيل المثال، إليك تنبيه تم تشغيله بسبب إرسال بريد إلكتروني مريب:
 
@@ -72,11 +72,11 @@ ms.locfileid: "63570963"
 
 2. في صفحة **التنبيهات** ، يمكنك تصفية النتائج حسب الفترة الزمنية النهج المسمى **المستخدم مقيد من إرسال البريد الإلكتروني**.
 
-   ![صفحة التنبيهات في Microsoft 365 Defender تمت تصفيتها للمستخدمين المقيدين.](../../media/m365-sc-alerts-page-with-restricted-user.png)
+   :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="صفحة التنبيهات في مدخل Microsoft 365 Defender تمت تصفيتها للمستخدمين المقيدين" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
 
 3. إذا قمت بتحديد الإدخال بالنقر فوق الاسم، يتم فتح مستخدم مقيد من  إرسال صفحة البريد الإلكتروني بتفاصيل إضافية لمراجعتها. بجانب الزر **إدارة التنبيه** ، يمكنك النقر فوق أيقونة ![خيارات إضافية.](../../media/m365-cc-sc-more-actions-icon.png) **المزيد من** الخيارات، ثم حدد **عرض تفاصيل** المستخدم المقيدة للذهاب إلى صفحة المستخدمون المقيدون، حيث يمكنك تحرير [المستخدم المقيد](removing-user-from-restricted-users-portal-after-spam.md).
 
-   ![تم تقييد المستخدم من إرسال صفحة البريد الإلكتروني من مركز التنبيهات.](../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png)
+  :::image type="content" source="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png" alt-text="صفحة المستخدم المحظورة من إرسال البريد الإلكتروني" lightbox="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png":::
 
 ### <a name="view-details-about-automated-investigations"></a>عرض تفاصيل حول عمليات التحقيق التلقائية
 
@@ -98,6 +98,6 @@ ms.locfileid: "63570963"
 
 - [البحث عن البريد الإلكتروني الضار في Office 365](investigate-malicious-email-that-was-delivered.md)
 
-- [التعرف على AIR في Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [تعرف على AIR في Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 - [تفضل بزيارة Microsoft 365 خريطة الطريق لمعرفة ما سيكتشف قريبا ويخرج](https://www.microsoft.com/microsoft-365/roadmap?filters=)

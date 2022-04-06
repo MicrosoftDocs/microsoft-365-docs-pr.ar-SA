@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 22a8c8cdd5ebcaa8038c37b73aeeb6c5f80d4267
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d740ab4fb999697edc9ce7c8f662f6d5c6681fdf
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63571482"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500486"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>تعقب سجل Microsoft Secure Score و تحقيق الأهداف
 
@@ -40,13 +40,13 @@ ms.locfileid: "63571482"
 
 يوجد أسفل الرسم البياني قائمة بكل الإجراءات التي تم اتخاذها في النطاق الزمني المحدد وسماتها، مثل النقاط والفئة الناتجة. يمكنك تخصيص نطاق تاريخ وتصفية حسب الفئة.
 
-![سجل النشاط.](../../media/secure-score/secure-score-history-activity.png)
+:::image type="content" source="../../media/secure-score/secure-score-history-activity.png" alt-text="مثال على الصفحة التي تصف محفوظات النشاط في مدخل Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-history-activity.png":::
 
 إذا قمت بتحديد إجراء التحسين المقترن بنشاط ما، ستظهر القائمة من القائمة المن القائمة من القائمة flyout الكاملة للتحسين.
 
 لعرض كل المحفوظات الخاصة ب إجراء التحسين المحدد هذا، حدد ارتباط المحفوظات في flyout.
 
-![محفوظات إجراءات التحسين.](../../media/secure-score/secure-score-history-flyout.png)
+:::image type="content" source="../../media/secure-score/secure-score-history-flyout.png" alt-text="جزء المحفوظات المتعلق بعمل التحسين في مدخل Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-history-flyout.png":::
 
 ## <a name="discover-trends-and-set-goals"></a>اكتشاف الاتجاهات وحدد الأهداف
 
@@ -66,7 +66,7 @@ ms.locfileid: "63571482"
 
 يتوفر مخطط المقارنة الشريطي على علامة التبويب **نظرة** عامة. مرر فوق المخطط لعرض فرصة النتيجة والنتيجة. 
 
-**إن المؤسسات مثل** مؤسستك هي متوسط نقاط المستأجرين الآخرين في المنطقة نفسها (شرط أن يكون لدينا ما لا يقل عن خمسة مستأجرين أو أكثر لمقارنته) مع حجم مؤسسة مماثل لحجم مؤسستك.
+:::image type="content" source="../../media/secure-score/secure-score-comparison-bar.png" alt-text="مثال على الرسم البياني الشريطي لعشرات المؤسسات المماثلة في مدخل Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-comparison-bar.png":::
 
 يتم إخفاء هوية بيانات المقارنة حتى لا نعرف بالضبط المستأجرين الآخرين في هذا الخلط.
 
@@ -76,7 +76,7 @@ ms.locfileid: "63571482"
 
 في علامة **التبويب المقاييس & الاتجاهات** ، يمكنك عرض كيفية مقارنة "نقاط آمنة" في مؤسستك مع الآخرين مع مرور الوقت.
 
-![رسم بياني لخط نتائج المؤسسة المماثلة مع مرور الوقت.](../../media/secure-score/secure-score-comparison-trend.png)
+:::image type="content" source="../../media/secure-score/secure-score-comparison-trend.png" alt-text="مثال على رسم بياني لخط نقاط مؤسسة مماثلة مع مرور الوقت في Microsoft 365 Defender المدخل" lightbox="../../media/secure-score/secure-score-comparison-trend.png":::
 
 ## <a name="we-want-to-hear-from-you"></a>نريد أن نستمع منك
 

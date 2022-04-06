@@ -20,16 +20,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: ec4aa28c25982ea81662ff26fa19f615d13cd314
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: b659853d9323b4a1503cd75cff66a83cbd06e85e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465388"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682890"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>توصيات النهج لتأمين Teams الدردشات والمجموعات والملفات
 
-تصف هذه المقالة كيفية تنفيذ ثقة معدومة الهوية والوصول إلى الجهاز الموصى بها لحماية Microsoft Teams الدردشات والمجموعات والمحتوى مثل الملفات والتقويمات. يعتمد هذا الإرشاد على [الهوية](identity-access-policies.md) المشتركة ونهج الوصول إلى الجهاز، مع معلومات إضافية Teams خاصة. نظرا Teams التكامل مع منتجاتنا الأخرى، راجع أيضا توصيات النهج لتأمين SharePoint والملفات وتوصيات النهج [لتأمين البريد الإلكتروني](secure-email-recommended-policies.md).[](sharepoint-file-access-policies.md)
+تصف هذه المقالة كيفية تنفيذ الهوية الصفرية الموصى بها ونهج الوصول إلى الجهاز لحماية Microsoft Teams الدردشات والمجموعات والمحتوى مثل الملفات والتقويمات. يعتمد هذا الإرشاد على [الهوية](identity-access-policies.md) المشتركة ونهج الوصول إلى الجهاز، مع معلومات إضافية Teams خاصة. نظرا Teams التكامل مع منتجاتنا الأخرى، راجع أيضا توصيات النهج لتأمين SharePoint والملفات وتوصيات النهج [لتأمين البريد الإلكتروني](secure-email-recommended-policies.md).[](sharepoint-file-access-policies.md)
 
 تستند هذه التوصيات إلى ثلاثة مستويات مختلفة من الأمان والحماية Teams يمكن تطبيقها بالاستناد إلى مجموعة احتياجاتك: نقطة البداية والمؤسسة والأمان المتخصص. يمكنك معرفة المزيد حول مستويات الأمان هذه ونهج الموصى بها التي تشير إليها هذه التوصيات في تكوينات الوصول إلى الأجهزة [والهوية](microsoft-365-policies-configurations.md).
 
@@ -49,7 +49,7 @@ ms.locfileid: "64465388"
 
 لحماية الدردشة والمجموعات والمحتوى في Teams، يوضح الرسم التخطيطي التالي السياسات التي يجب تحديثها من سياسات الوصول إلى الأجهزة والهوية المشتركة. لكل نهج يتم تحديثه، تأكد من تضمين Teams والخدمات التابعة في تعيين تطبيقات السحابة.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="ملخص تحديثات النهج لحماية الوصول إلى Teams والخدمات التابعة لها" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="ملخص تحديثات النهج لحماية الوصول إلى Teams والخدمات التابعة لها." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
 
 هذه الخدمات هي الخدمات التابعة لتضمينها في تعيين تطبيقات السحابة Teams:
 
@@ -77,7 +77,7 @@ ms.locfileid: "64465388"
 
 للمرجع، يوضح الرسم التخطيطي التالي الخدمات Teams تعتمد عليها. لمزيد من المعلومات والتوضيحات، راجع Microsoft Teams وخدمات الإنتاجية ذات الصلة [في Microsoft 365 لمهندسي تكنولوجيا المعلومات](../../solutions/productivity-illustrations.md).
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="يعرض الرسم التخطيطي Teams على SharePoint OneDrive for Business و Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="رسم تخطيطي Teams على SharePoint OneDrive for Business و Exchange." lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
 
 ## <a name="guest-and-external-access-for-teams"></a>وصول الضيف والخارجي Teams
 
@@ -140,7 +140,7 @@ Teams أيضا استخدام التطبيقات في أماكن مختلفة، 
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="الخطوة 4: سياسات تطبيقات Microsoft 365 السحابة" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+![الخطوة 4: سياسات Microsoft 365 السحابية.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 تكوين سياسات الوصول الشرطي ل:
 

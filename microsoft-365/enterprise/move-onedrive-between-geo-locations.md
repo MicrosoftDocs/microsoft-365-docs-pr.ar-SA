@@ -15,18 +15,18 @@ ms.collection:
 - SPO_Content
 ms.localizationpriority: medium
 description: يمكنك العثور على معلومات حول OneDrive موقع ويب إلى موقع جغرافي آخر، بما في ذلك كيفية جدولة نقل الموقع وإعلام المستخدمين بتوقعاتهم.
-ms.openlocfilehash: dd601c135ec59a51a413cb4867e567d5dd269752
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: f0a9e319d20c7b56701d776e85a0618ed30e5f78
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "63572819"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64569590"
 ---
-# <a name="move-a-onedrive-site-to-a-different-geo-location"></a>نقل موقع OneDrive إلى موقع جغرافي آخر 
+# <a name="move-a-onedrive-site-to-a-different-geo-location"></a>نقل موقع OneDrive إلى موقع جغرافي آخر
 
 باستخدام OneDrive الجغرافي، يمكنك نقل موقع OneDrive إلى موقع جغرافي آخر. OneDrive التنقل الجغرافي بواسطة SharePoint Online أو المسؤول Microsoft 365 العام. قبل بدء عملية نقل OneDrive الجغرافي، تأكد من إعلام المستخدم الذي OneDrive نقله ويوصيه بغلق كل الملفات طوال مدة الانتقال. (إذا كان لدى المستخدم مستند مفتوح باستخدام عميل Office أثناء عملية الانتقال، يجب حفظ المستند في الموقع الجديد عند اكتمال عملية الانتقال.) يمكن جدولة عملية الانتقال في وقت مستقبلي، إذا أردت ذلك.
 
-تستخدم OneDrive التخزين Azure Blob لتخزين المحتوى. سيتم نقل مساحة التخزين blob المقترنة بمساحة التخزين OneDrive المستخدم من الموقع الجغرافي المصدر إلى الموقع الجغرافي الوجهة في غضون 40 يوما من OneDrive تكون متوفرة للمستخدم. سيتم استعادة الوصول إلى OneDrive المستخدم بمجرد توفر OneDrive الوجهة.
+تستخدم OneDrive الخدمة Azure Blob Storage لتخزين المحتوى. سيتم نقل مساحة التخزين blob المقترنة بمساحة التخزين OneDrive المستخدم من الموقع الجغرافي المصدر إلى الموقع الجغرافي الوجهة في غضون 40 يوما من OneDrive تكون متوفرة للمستخدم. سيتم استعادة الوصول إلى OneDrive المستخدم بمجرد توفر OneDrive الوجهة.
 
 أثناء OneDrive التنقل الجغرافي (حوالي ساعتين إلى 6 ساعات) يتم تعيين OneDrive المستخدم للقراءة فقط. لا يزال يمكن للمستخدم الوصول إلى ملفاته عبر المزامنة من OneDrive أو موقع OneDrive في SharePoint Online. بعد OneDrive نقل الموقع الجغرافي، سيتم توصيل المستخدم تلقائيا ب OneDrive في الموقع الجغرافي الوجهة عند الانتقال إلى OneDrive في Microsoft 365 التطبيق. سيبدأ تطبيق المزامنة تلقائيا في المزامنة من الموقع الجديد.
 
@@ -58,11 +58,15 @@ ms.locfileid: "63572819"
 
 عند استخدام cmdlets الخاصة بالنقل الجغرافي، اتصل ب SPO Service في الموقع الجغرافي OneDrive الحالي للمستخدم، باستخدام بناء الجملة التالي:
 
-`Connect-SPOService -url https://<tenantName>-admin.sharepoint.com`
+```powershell
+Connect-SPOService -url https://<tenantName>-admin.sharepoint.com
+```
 
 على سبيل المثال: لنقل OneDrive المستخدم "Matt@contosoenergy.onmicrosoft.com"، اتصل بمركز إدارة SHAREPOINT يورو حيث يوجد موقع المستخدم OneDrive الجغرافي لليورو:
 
-`Connect-SPOService -url https://contosoenergyeur-admin.sharepoint.com`
+```powershell
+Connect-SPOService -url https://contosoenergyeur-admin.sharepoint.com
+```
 
 ![لقطة شاشة من نافذة PowerShell تعرض الأمر cmdlet للاتصال ب sposervice.](../media/move-onedrive-between-geo-locations-image1.png)
 
@@ -72,45 +76,53 @@ ms.locfileid: "63572819"
 
 للتأكد من توافق كل المواقع الجغرافية، تشغيل:
 
-`Get-SPOGeoMoveCrossCompatibilityStatus`
+```powershell
+Get-SPOGeoMoveCrossCompatibilityStatus
+```
 
 سترى قائمة بالمواقع الجغرافية الخاصة بك وما إذا كان يمكن نقل المحتوى بين سيتم توضيحها ب "متوافق". إذا كان الأمر يرجع "غير متوافق"، فيرجى إعادة محاولة التحقق من صحة الحالة في وقت لاحق.
 
 إذا احتوى OneDrive على الموقع الفرعي، على سبيل المثال، فلا يمكن نقله. يمكنك استخدام الأمر cmdlet Start-SPOUserAndContentMove مع المعلمة -ValidationOnly للتحقق من OneDrive يمكن نقله:
 
-`Start-SPOUserAndContentMove -UserPrincipalName <UPN> -DestinationDataLocation <DestinationDataLocation> -ValidationOnly`
+```powershell
+Start-SPOUserAndContentMove -UserPrincipalName <UPN> -DestinationDataLocation <DestinationDataLocation> -ValidationOnly
+```
 
 سيرجع هذا الأمر النجاح إذا كانت OneDrive جاهزة للتحريك أو فشل إذا كان هناك عقد قانوني أو مكان فرعي قد يمنع عملية الانتقال. بعد التحقق من أن OneDrive جاهزا للتحريك، يمكنك بدء عملية الانتقال.
 
 ## <a name="start-a-onedrive-geo-move"></a>بدء حركة OneDrive الجغرافي
 
-لبدء عملية الانتقال، يمكنك تشغيل:  
+لبدء عملية الانتقال، يمكنك تشغيل:
 
-`Start-SPOUserAndContentMove -UserPrincipalName <UserPrincipalName> -DestinationDataLocation <DestinationDataLocation>`
+```powershell
+Start-SPOUserAndContentMove -UserPrincipalName <UserPrincipalName> -DestinationDataLocation <DestinationDataLocation>
+```
 
 باستخدام هذه المعلمات:
 
--   _UserPrincipalName_ – UPN للمستخدم الذي OneDrive نقله.
-
--   _DestinationDataLocation_ – Geo-Location المكان الذي OneDrive نقله. يجب أن يكون هذا هو موقع البيانات المفضل للمستخدم.
+- _UserPrincipalName_ – UPN للمستخدم الذي OneDrive نقله.
+- _DestinationDataLocation_ – Geo-Location المكان الذي OneDrive نقله. يجب أن يكون هذا هو موقع البيانات المفضل للمستخدم.
 
 على سبيل المثال، لنقل OneDrive matt@contosoenergy.onmicrosoft.com من اليورو إلى AUS، تشغيل:
 
-`Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
+```powershell
+Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS
+```
 
 ![لقطة شاشة من نافذة PowerShell تظهر Start-SPOUserAndContentMove cmdlet.](../media/move-onedrive-between-geo-locations-image2.png)
 
 لجدولة حركة نقل جغرافي لفترة لاحقة، استخدم إحدى المعلمات التالية:
 
--   _المفضلةMoveBeginDate_ – من المرجح أن يبدأ الانتقال في هذا الوقت المحدد. يجب تحديد الوقت في "الوقت العالمي المنسق" (UTC).
+- _المفضلةMoveBeginDate_ – من المرجح أن يبدأ الانتقال في هذا الوقت المحدد. يجب تحديد الوقت في "الوقت العالمي المنسق" (UTC).
+- _BestedMoveEndDate_ – من المرجح أن تكتمل عملية الانتقال بحلول هذا الوقت المحدد، على أساس أفضل جهد. يجب تحديد الوقت في "الوقت العالمي المنسق" (UTC).
 
--   _BestedMoveEndDate_ – من المرجح أن تكتمل عملية الانتقال بحلول هذا الوقت المحدد، على أساس أفضل جهد. يجب تحديد الوقت في "الوقت العالمي المنسق" (UTC). 
-
-## <a name="cancel-a-onedrive-geo-move"></a>إلغاء OneDrive جغرافي 
+## <a name="cancel-a-onedrive-geo-move"></a>إلغاء OneDrive جغرافي
 
 يمكنك إيقاف الانتقال الجغرافي لمحتوى OneDrive المستخدم، شرط ألا يكون الانتقال في تقدم أو مكتمل باستخدام أمر cmdlet:
 
-`Stop-SPOUserAndContentMove – UserPrincipalName <UserPrincipalName>`
+```powershell
+Stop-SPOUserAndContentMove – UserPrincipalName <UserPrincipalName>
+```
 
 حيث _UserPrincipalName_ هو UPN للمستخدم الذي OneDrive تريد إيقافه.
 
@@ -120,42 +132,26 @@ ms.locfileid: "63572819"
 
 يتم وصف حالة الانتقال في الجدول التالي.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left">الحالة</th>
-<th align="left">الوصف</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">NotStarted</td>
-<td align="left">لم يبدأ الانتقال.</td>
-</tr>
-<tr class="even">
-<td align="left">InProgress (<em>n</em>/4)</td>
-<td align="left">يتم الانتقال في إحدى الحالات التالية: التحقق من الصحة (1/4) ونسخ احتياطي (2/4) واستعادة (3/4) وتنظيف (4/4).</td>
-</tr>
-<tr class="odd">
-<td align="left">النجاح</td>
-<td align="left">اكتملت عملية الانتقال بنجاح.</td>
-</tr>
-<tr class="even">
-<td align="left">فشل</td>
-<td align="left">فشل الانتقال.</td>
-</tr>
-</tbody>
-</table>
+|الحالة|الوصف|
+|---|---|
+|NotStarted|لم يبدأ الانتقال|
+|InProgress (*n*/4)|يتم التقدم في عملية الانتقال في إحدى الحالات التالية: <ul><li>التحقق من الصحة (1/4)</li><li>النسخ الاحتياطي (2/4)</li><li>استعادة (3/4)</li><li>التنظيف (4/4)</li></ul>|
+|النجاح|اكتملت عملية الانتقال بنجاح.|
+|فشل|فشل الانتقال.|
 
-للعثور على حالة نقل مستخدم معين، استخدم المعلمة UserPrincipalName:
+للعثور على حالة نقل مستخدم معين، استخدم المعلمة *UserPrincipalName* :
 
-`Get-SPOUserAndContentMoveState -UserPrincipalName <UPN>`
+```powershell
+Get-SPOUserAndContentMoveState -UserPrincipalName <UPN>
+```
 
-للعثور على حالة كل التنقلات داخل الموقع الجغرافي المتصل به أو الخروج منه، استخدم المعلمة MoveState مع إحدى القيم التالية: NotStarted و InProgress و Success و Failed و All.
+للعثور على حالة كل التنقلات داخل الموقع الجغرافي المتصل به أو الخروج منه، استخدم المعلمة *MoveState* مع إحدى القيم التالية: NotStarted و InProgress و Success و Failed و All.
 
-`Get-SPOUserAndContentMoveState -MoveState <value>`
+```powershell
+Get-SPOUserAndContentMoveState -MoveState <value>
+```
 
-يمكنك أيضا إضافة المعلمة `-Verbose` للحصول على أوصاف أكثر إسهاب حالة الانتقال.
+يمكنك أيضا إضافة المعلمة *"إسهاب* " للحصول على أوصاف أكثر إسهاب حالة الانتقال.
 
 ## <a name="user-experience"></a>أسلوب عمل المستخدم
 
@@ -169,31 +165,29 @@ ms.locfileid: "63572819"
 
 سيستمر المستخدمون الذين لديهم OneDrive الوصول إلى المحتوى في الوصول إلى المحتوى أثناء عملية الانتقال وبعد اكتماله.
 
-### <a name="onedrive-sync-app"></a>المزامنة من OneDrive التطبيق 
+### <a name="onedrive-sync-app"></a>المزامنة من OneDrive التطبيق
 
 سيكشف المزامنة من OneDrive التطبيق المزامنة وينقلها تلقائيا إلى موقع OneDrive الجديد بمجرد OneDrive التنقل الجغرافي. لا يحتاج المستخدم إلى تسجيل الدخول مرة أخرى أو اتخاذ أي إجراء آخر.  (الإصدار 17.3.6943.0625 أو إصدار أحدث من تطبيق المزامنة مطلوب.)
 
 إذا قام أحد المستخدمين بتحديث ملف أثناء OneDrive الجغرافي، سيعلمه تطبيق المزامنة بأن تحميلات الملفات معلقة أثناء عملية الانتقال.
 
-### <a name="sharing-links"></a>ارتباطات المشاركة 
+### <a name="sharing-links"></a>ارتباطات المشاركة
 
 عند OneDrive النقل الجغرافي، سيتم تلقائيا إعادة توجيه الارتباطات المشتركة الموجودة للملفات التي تم نقلها إلى الموقع الجغرافي الجديد.
 
-### <a name="onenote-experience"></a>OneNote تجربة المستخدم 
+### <a name="onenote-experience"></a>OneNote تجربة المستخدم
 
 OneNote عميل win32 والتطبيق UWP (Universal) الكشف تلقائيا عن دفاتر الملاحظات ومزامنتها بسلاسة مع موقع OneDrive الجديد بمجرد OneDrive الجغرافيا. لا يحتاج المستخدم إلى تسجيل الدخول مرة أخرى أو اتخاذ أي إجراء آخر. المؤشر المرئي الوحيد للمستخدم هو أن مزامنة دفتر الملاحظات ستفشل عند OneDrive التنقل الجغرافي قيد التقدم. تتوفر هذه التجربة على الإصدارات التالية OneNote العميل:
 
--   OneNote win32 – الإصدار 16.0.8326.2096 (والإصدارات الأحدث)
-
--   OneNote UWP – الإصدار 16.0.8431.1006 (والإصدارات الأحدث)
-
--   OneNote Mobile App – الإصدار 16.0.8431.1011 (والإصدارات الأحدث)
+- OneNote win32 – الإصدار 16.0.8326.2096 (والإصدارات الأحدث)
+- OneNote UWP – الإصدار 16.0.8431.1006 (والإصدارات الأحدث)
+- OneNote Mobile App – الإصدار 16.0.8431.1011 (والإصدارات الأحدث)
 
 ### <a name="teams-app"></a>Teams التطبيق
 
 عند OneDrive نقل الموقع الجغرافي، سيكون للمستخدمين حق الوصول إلى ملفاتهم OneDrive على Teams. بالإضافة إلى ذلك، فإن الملفات التي تمت مشاركتها Teams الدردشة من OneDrive قبل الانتقال الجغرافي ستستمر في العمل بعد اكتمال عملية التنقل.
 
-### <a name="onedrive-mobile-app-ios"></a>OneDrive Mobile App (iOS) 
+### <a name="onedrive-mobile-app-ios"></a>OneDrive Mobile App (iOS)
 
 عند OneDrive نقل الموقع الجغرافي، يحتاج المستخدم إلى تسجيل الخروج ثم تسجيل الدخول مرة أخرى على تطبيق iOS Mobile للمزامنة مع موقع OneDrive الجديد.
 

@@ -1,7 +1,7 @@
 ---
-title: ما الجديد في Microsoft Defender for Endpoint على Mac
-description: تعرف على التغييرات الرئيسية للإصدارات السابقة من Microsoft Defender for Endpoint على Mac.
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، mac، التثبيت، macos، whatsnew
+title: ما الجديد في Microsoft Defender لنقطة النهاية Mac
+description: تعرف على التغييرات الرئيسية للإصدارات السابقة من Microsoft Defender لنقطة النهاية على Mac.
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، التثبيت، macos، whatsnew
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -15,22 +15,26 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 80245af54aa6f7a3328515257fe6e6e73f0739b0
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: d8b2c7725354facb01f8b12af502aae19856afe8
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63570428"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500728"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>ما الجديد في Microsoft Defender for Endpoint على Mac
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>ما الجديد في Microsoft Defender لنقطة النهاية Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1016169-20122022161690"></a>101.61.69 (20.122022.16169.0)
+
+- إصلاحات الأخطاء
 
 ## <a name="1016091-20122021160910"></a>101.60.91 (20.122021.16091.0)
 
@@ -39,8 +43,8 @@ ms.locfileid: "63570428"
 ## <a name="1015950-20122021159500"></a>101.59.50 (20.122021.15950.0)
 
 - يضيف هذا الإصدار الدعم ل macOS 12.3. بدءا من macOS 12.3، [تزيل Apple Python 2.7](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes). لن يكون هناك إصدار Python م تثبيتا مسبقا على macOS بشكل افتراضي. **الإجراء المطلوب**: 
-  - يجب على المستخدمين تحديث Microsoft Defender ل Endpoint for Mac إلى الإصدار 101.59.50 (أو الأحدث) قبل تحديث أجهزتهم إلى macOS Monterey 12.3 (أو أحدث). يعد هذا الإصدار الأدنى 101.59.50 شرطا أساسيا لازما تخلص من المشاكل ذات الصلة ب Python باستخدام Microsoft Defender for Endpoint for Mac على macOS Monterey.
-  - بالنسبة إلى عمليات النشر عن بعد، يجب تحديث إعدادات MDM الموجودة إلى Microsoft Defender ل Endpoint for Mac الإصدار 101.59.50 (أو الأحدث). سينتج عن الدفع عبر MDM إصدار سابق من Microsoft Defender for Endpoint for Mac إلى macOS Monterey 12.3 (أو الإصدار الأحدث) فشل التثبيت.
+  - يجب على المستخدمين تحديث Microsoft Defender لنقطة النهاية ل Mac إلى الإصدار 101.59.50 (أو الأحدث) قبل تحديث أجهزتهم إلى macOS Monterey 12.3 (أو أحدث). يعد هذا الإصدار الأدنى 101.59.50 شرطا أساسيا لازما ازالة المشاكل ذات الصلة ب Python مع Microsoft Defender لنقطة النهاية for Mac على macOS Monterey.
+  - بالنسبة إلى عمليات النشر عن بعد، يجب تحديث إعدادات MDM الموجودة إلى Microsoft Defender لنقطة النهاية ل Mac الإصدار 101.59.50 (أو الأحدث). يؤدي الضغط عبر MDM على إصدار Microsoft Defender لنقطة النهاية for Mac إلى macOS Monterey 12.3 (أو الأحدث) إلى فشل التثبيت.
 
 ## <a name="1015910-20122012159100"></a>101.59.10 (20.122012.15910.0)
 
@@ -58,10 +62,10 @@ ms.locfileid: "63570428"
 - تمت إعادة تسمية التطبيق من "Microsoft Defender ATP" إلى "Microsoft Defender". سيلاحظ المستخدمون التغييرات التالية:
   - تم تغيير مسار تثبيت التطبيق من `/Application/Microsoft Defender ATP.app` إلى `/Applications/Microsoft Defender.app`.
   - ضمن تجربة المستخدم، تم استبدال تكرارات "Microsoft Defender ATP" ب "Microsoft Defender"
-- تم حل مشكلة عدم اتصال بعض تطبيقات VPN بسبب عامل تصفية محتوى الشبكة الذي يتم توزيعه باستخدام Microsoft Defender for Endpoint for Mac
-- تم معالجة مشكلة تم اكتشافها في الإصدار بيتا 12.2 من macOS 2 حيث لا يمكن فتح حزمة التثبيت بسبب حدوث تغيير في نظام التشغيل (OS) يمنع تثبيت حزم ذات خصائص معينة. على الرغم من أنه يبدو أن تغيير نظام التشغيل هذا غير مضمن في الإصدار النهائي من macOS 12.2، فمن المرجح أنه سيتم إعادة تقديمه في إصدار macOS مستقبلي. لذلك، نشجع جميع مسؤولي المؤسسات على تحديث حزمة Microsoft Defender for Endpoint في وحدة تحكم الإدارة الخاصة بهم إلى إصدار المنتج هذا (أو إصدار أحدث).
+- تم حل مشكلة عدم اتصال بعض تطبيقات VPN بسبب عامل تصفية محتوى الشبكة الذي يتم توزيعه باستخدام Microsoft Defender لنقطة النهاية for Mac
+- تم معالجة مشكلة تم اكتشافها في الإصدار بيتا 12.2 من macOS 2 حيث لا يمكن فتح حزمة التثبيت بسبب حدوث تغيير في نظام التشغيل (OS) يمنع تثبيت حزم ذات خصائص معينة. على الرغم من أنه يبدو أن تغيير نظام التشغيل هذا غير مضمن في الإصدار النهائي من macOS 12.2، فمن المرجح أنه سيتم إعادة تقديمه في إصدار macOS مستقبلي. لذلك، نشجع جميع مسؤولي المؤسسات على تحديث حزمة Microsoft Defender لنقطة النهاية في وحدة تحكم الإدارة الخاصة بهم إلى إصدار المنتج هذا (أو إصدار أحدث).
 - معالجة مشكلة تم تعثر عليها على بعض أجهزة M1 حيث كان المنتج عالقا مع تعريفات مكافحة البرامج الضارة غير الصالحة ولا يمكن تحديثه بنجاح إلى مجموعة عمل من التعريفات.
-- `mdatp health` تم توسيع الإخراج باستخدام `full_disk_access_enabled` سمة إضافية تسمى يمكن استخدامها لتحديد ما إذا تم منح الوصول إلى القرص الكامل لكل مكونات Microsoft Defender ل Endpoint for Mac.
+- `mdatp health`تم توسيع الإخراج `full_disk_access_enabled` باستخدام سمة إضافية تسمى يمكن استخدامها لتحديد ما إذا تم منح الوصول إلى القرص الكامل لكل مكونات Microsoft Defender لنقطة النهاية for Mac.
 - تحسينات الأداء & تصحيحات الأخطاء
 
 ## <a name="1015416-20121111154160"></a>101.54.16 (20.121111.15416.0)
@@ -117,7 +121,7 @@ ms.locfileid: "63570428"
 
 ## <a name="1013269-20121042132690"></a>101.32.69 (20.121042.13269.0)
 
-- تم معالجة مشكلة حيث يمكن أن يؤدي الوصول المتزامن إلى سلسلة المفاتيح من Microsoft Defender ل Endpoint والتطبيقات الأخرى إلى تلف سلسلة المفاتيح.
+- معالجة مشكلة حيث يمكن أن يؤدي الوصول المتزامن إلى سلسلة المفاتيح من Microsoft Defender لنقطة النهاية وتطبيقات أخرى إلى تلف سلسلة المفاتيح.
 
 ## <a name="1012964-20121042129640"></a>101.29.64 (20.121042.12964.0)
 
@@ -133,7 +137,7 @@ ms.locfileid: "63570428"
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
-- يتوفر Microsoft Defender for Endpoint على macOS الآن في المعاينة لعملاء الحكومة الأمريكية. لمزيد من المعلومات، راجع [Microsoft Defender for Endpoint لعملاء الحكومة الأمريكية](gov.md).
+- Microsoft Defender لنقطة النهاية على macOS الآن في المعاينة لعملاء الحكومة الأمريكية. لمزيد من المعلومات، [راجع Microsoft Defender لنقطة النهاية عملاء الحكومة الأمريكية](gov.md).
 - تحسينات الأداء (خاصة بالنسبة للحالة عند استخدام تطبيق XCode Simulator) & تصحيح الأخطاء.
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
@@ -154,7 +158,7 @@ ms.locfileid: "63570428"
 > [!NOTE]
 > تم إهمال بناء جملة أداة سطر الأوامر القديم مع هذا الإصدار. للحصول على معلومات حول بناء الجملة الجديد، راجع [الموارد](mac-resources.md#configuring-from-the-command-line).
 
-- إضافة مفتاح تبديل سطر أوامر جديد لتعطيل ملحق الشبكة: `mdatp system-extension network-filter disable`. يمكن أن يكون هذا الأمر مفيدا في استكشاف مشاكل الشبكات التي قد تكون مرتبطة ب Microsoft Defender for Endpoint على Mac وإصلاحها
+- إضافة مفتاح تبديل سطر أوامر جديد لتعطيل ملحق الشبكة: `mdatp system-extension network-filter disable`. يمكن أن يكون هذا الأمر مفيدا في استكشاف مشاكل الشبكات التي قد تكون مرتبطة بالشبكات Microsoft Defender لنقطة النهاية Mac وإصلاحها
 - تحسينات الأداء & تصحيحات الأخطاء
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0)
@@ -169,7 +173,7 @@ ms.locfileid: "63570428"
 
 ## <a name="1011375-20120101113750"></a>101.13.75 (20.120101.11375.0)
 
-- الحالات التي تمت إزالتها عند تشغيل Microsoft Defender ل Endpoint لحشرة macOS 11 (Big Sur) التي تظهر في حالة الهلع في kernel
+- الحالات التي تمت إزالتها Microsoft Defender لنقطة النهاية تشغيل الخطأ macOS 11 (Big Sur) الذي يظهر في حالة من الهلع في نواة
 - تم إصلاح تسريب الذاكرة في ملحق نظام أمان نقطة النهاية عند التشغيل على mac 11 (Big Sur)
 - إصلاحات الأخطاء
 
@@ -187,7 +191,7 @@ ms.locfileid: "63570428"
 
 - تم التحقق من صحة إصدار المنتج هذا على macOS Big Sur 11 beta 9
 
-- بناء الجملة الجديد لأداة `mdatp` سطر الأوامر هو الآن بناء الجملة الافتراضي. لمزيد من المعلومات حول بناء الجملة الجديد، راجع [موارد Microsoft Defender ل Endpoint على macOS](mac-resources.md#configuring-from-the-command-line)
+- بناء الجملة الجديد لأداة `mdatp` سطر الأوامر هو الآن بناء الجملة الافتراضي. لمزيد من المعلومات حول بناء الجملة الجديد، راجع [موارد Microsoft Defender لنقطة النهاية على macOS](mac-resources.md#configuring-from-the-command-line)
 
   > [!NOTE]
   > سيتم إزالة بناء جملة أداة سطر الأوامر القديم من المنتج في **1 يناير 2021**.
@@ -246,13 +250,13 @@ ms.locfileid: "63570428"
 
 - تجربة [محسنة لتكهين المنتج لمستخدمي Intune](/mem/intune/apps/apps-advanced-threat-protection-macos)
 - تدعم [استثناءات برنامج الحماية من الفيروسات الآن أحرف البدل](mac-exclusions.md#supported-exclusion-types)
-- أضفت القدرة على تشغيل عمليات فحص الحماية من الفيروسات من القائمة السياقية ل macOS. يمكنك الآن النقر بزر الماوس الأيمن فوق ملف أو مجلد في "البحث" وتحديد مسح **ضوئي باستخدام Microsoft Defender لنقطة النهاية**
+- أضفت القدرة على تشغيل عمليات فحص الحماية من الفيروسات من القائمة السياقية ل macOS. يمكنك الآن النقر بزر الماوس الأيمن فوق ملف أو مجلد في "البحث" وتحديد مسح **ضوئي باستخدام** Microsoft Defender لنقطة النهاية
 - أصبح المثبت الآن غير مسموح به صراحة لدرجات المنتج المخفضة في مكانها. إذا كنت بحاجة إلى تخفيض الإصدار، فأزل تثبيت الإصدار الموجود أولا ثم ارجع إلى تكوين جهازك
 - تحسينات الأداء الأخرى & تصحيح الأخطاء
 
 ## <a name="1009027"></a>100.90.27
 
-- يمكنك الآن [تعيين قناة](mac-updates.md#set-the-channel-name) تحديث ل Microsoft Defender ل Endpoint على macOS تختلف عن قناة التحديث على مستوى النظام
+- يمكنك الآن [تعيين قناة](mac-updates.md#set-the-channel-name) تحديث Microsoft Defender لنقطة النهاية macOS تختلف عن قناة التحديث على مستوى النظام
 - أيقونة منتج جديد
 - تحسينات أخرى على تجربة المستخدم
 - إصلاحات الأخطاء
@@ -289,7 +293,7 @@ ms.locfileid: "63570428"
 
 ## <a name="1007942"></a>100.79.42
 
-- تم إصلاح مشكلة تداخل Microsoft Defender for Endpoint على Mac في بعض الأحيان مع Time Machine
+- تم إصلاح مشكلة عدم Microsoft Defender لنقطة النهاية على جهاز Mac في بعض الأحيان مع Time Machine
 - إضافة مفتاح تبديل جديد إلى الأداة المساعدة لخط الأوامر لاختبار الاتصال مع الخدمة الخلفية
 
   ```bash
@@ -305,7 +309,7 @@ ms.locfileid: "63570428"
 
 ## <a name="1007099"></a>100.70.99
 
-- تمت معالجة مشكلة تؤثر على قدرة بعض المستخدمين على الترقية إلى macOS Catalina عند تمكين الحماية في الوقت الحقيقي. تحدث هذه المشكلة المتقطعة بسبب تأمين ملفات Microsoft Defender لنقطة النهاية ضمن حزمة ترقية Catalina أثناء فحصها بحثا عن التهديدات، مما أدى إلى حالات فشل في تسلسل الترقية.
+- تمت معالجة مشكلة تؤثر على قدرة بعض المستخدمين على الترقية إلى macOS Catalina عند تمكين الحماية في الوقت الحقيقي. تحدث هذه المشكلة المتقطعة Microsoft Defender لنقطة النهاية تأمين الملفات داخل حزمة ترقية Catalina أثناء فحصها بحثا عن التهديدات، مما أدى إلى حالات فشل في تسلسل الترقية.
 
 ## <a name="1006899"></a>100.68.99
 
@@ -317,7 +321,7 @@ ms.locfileid: "63570428"
 - دعم مضاف ل macOS Catalina
 
   > [!CAUTION]
-  > يحتوي macOS 10.15 (Catalina) على تحسينات جديدة على الأمان والخصوصية. بدءا من هذا الإصدار، بشكل افتراضي، لن تتمكن التطبيقات من الوصول إلى مواقع معينة على القرص (مثل المستندات أو التنزيلات أو سطح المكتب وغير ذلك) بدون موافقة صريحة. في حالة عدم وجود هذه الموافقة، لن يتمكن Microsoft Defender ل Endpoint من حماية جهازك بشكل كامل.
+  > يحتوي macOS 10.15 (Catalina) على تحسينات جديدة على الأمان والخصوصية. بدءا من هذا الإصدار، بشكل افتراضي، لن تتمكن التطبيقات من الوصول إلى مواقع معينة على القرص (مثل المستندات أو التنزيلات أو سطح المكتب وغير ذلك) بدون موافقة صريحة. في حالة عدم وجود هذه الموافقة، Microsoft Defender لنقطة النهاية غير قادر على حماية جهازك بشكل كامل.
   >
   > تعتمد آلية منح هذه الموافقة على كيفية نشر Microsoft Defender لنقطة النهاية:
   >

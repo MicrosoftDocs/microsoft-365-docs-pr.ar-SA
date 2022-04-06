@@ -22,12 +22,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 0bd86f7ba05ce04743f547292105875f3b8234b1
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: e4ac7636b019b0e8c1d00487e95335ede4600d85
+ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499056"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64570030"
 ---
 # <a name="the-action-center"></a>مركز الإجراءات
 
@@ -62,7 +62,7 @@ ms.locfileid: "64499056"
 يمكنك استخدام مركز الإجراءات الموحد إذا كانت لديك الأذونات المناسبة واشتراك واحد أو أكثر من الاشتراكات التالية:
 
 - [Defender لنقطة النهاية](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Defender لـ Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
+- [دليل إعداد Microsoft Defender لـ Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
 > [!TIP]
@@ -82,7 +82,7 @@ ms.locfileid: "64499056"
 
 يمكنك تخصيص البيانات وفرزها وتصفيتها وتصديرها في مركز الإجراءات.
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="إمكانات الفرز والتصفية وتخصيص مركز الإجراءات." lightbox="../../media/m3d-action-center-columnsfilters.png":::
+:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="إمكانات الفرز والتصفية وتخصيص مركز الإجراءات" lightbox="../../media/m3d-action-center-columnsfilters.png":::
 
 - حدد عنوان عمود لفرز العناصر بترتيب تصاعدي أو تنازلي.
 - استخدم عامل تصفية الفترة الزمنية لعرض بيانات اليوم أو الأسبوع أو 30 يوما أو 6 أشهر الماضية.
@@ -97,7 +97,7 @@ ms.locfileid: "64499056"
 
 - تجميع حزمة التحقيق 
 - جهاز معزول (يمكن التراجع عن هذا الإجراء) 
-- جهاز Offboard 
+- جهاز إيقاف التجهيز 
 - تنفيذ رمز الإصدار 
 - الإصدار من الفحص 
 - عينة الطلب 

@@ -17,27 +17,27 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 49d6ee473f84b86f17482c00e254e96b64ec0bf7
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 727a35b5d5b34fa567b399fcc81ccb0c05ded106
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63574232"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500399"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>تقييم Microsoft Defender لنقطة النهاية 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-[Microsoft Defender ل Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037) هو نظام أساسي موحد للحماية الوقائية، والكشف بعد الخرق، والتحري التلقائي، والاستجابة.
+[Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/?linkid=2154037) هو نظام أساسي موحد للحماية الوقائية، والكشف بعد الخرق، والتحري التلقائي، والاستجابة.
 
-يمكنك تقييم Microsoft Defender ل Endpoint في مؤسستك من [خلال بدء الإصدار التجريبي المجاني](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial).
+يمكنك تقييم Microsoft Defender لنقطة النهاية في مؤسستك من [خلال بدء الإصدار التجريبي المجاني](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial).
 
 يمكنك أيضا تقييم قدرات الأمان المختلفة في Microsoft Defender لنقطة النهاية باستخدام الإرشادات التالية.
 
@@ -45,7 +45,6 @@ ms.locfileid: "63574232"
 
 تساعد هذه الإمكانات على منع الهجمات والاستغلال من إصابة مؤسستك.
 
-- [تقييم تقليل مساحة الهجوم](./evaluate-attack-surface-reduction.md)
 - [تقييم الحماية من استغلال](./evaluate-exploit-protection.md)
 - [تقييم حماية الشبكة](./evaluate-exploit-protection.md)
 - [تقييم الوصول المتحكم به إلى المجلد](./evaluate-controlled-folder-access.md)
@@ -60,4 +59,4 @@ ms.locfileid: "63574232"
 
 ## <a name="see-also"></a>انظر أيضاً
 
-[نظرة عامة حول Microsoft Defender لنقطة النهاية](microsoft-defender-endpoint.md)
+[Microsoft Defender لنقطة النهاية عامة](microsoft-defender-endpoint.md)

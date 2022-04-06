@@ -1,7 +1,7 @@
 ---
-title: استكشاف مشاكل الأداء وإصلاحها ل Microsoft Defender ل Endpoint على macOS
-description: استكشاف مشاكل الأداء وإصلاحها في Microsoft Defender ل Endpoint على macOS.
-keywords: microsoft، defender، Microsoft Defender for Endpoint، mac، الأداء
+title: استكشاف مشاكل الأداء وإصلاحها Microsoft Defender لنقطة النهاية على macOS
+description: استكشاف مشاكل الأداء وإصلاحها في Microsoft Defender لنقطة النهاية macOS.
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، أداء
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,42 +15,43 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1d39bd46afae270fc7ac2a9fab8b5f4a2b4aaeb2
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: e83400e444d4c8c733bea5552a31954bb019e358
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63573265"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474036"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>استكشاف مشاكل الأداء وإصلاحها ل Microsoft Defender ل Endpoint على macOS
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>استكشاف مشاكل الأداء وإصلاحها Microsoft Defender لنقطة النهاية على macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
 
-- [Microsoft Defender ل Endpoint على macOS](microsoft-defender-endpoint-mac.md)
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية على macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-يوفر هذا الموضوع بعض الخطوات العامة التي يمكن استخدامها لتضييق نطاق مشاكل الأداء المتعلقة ب Microsoft Defender ل Endpoint على macOS.
+يوفر هذا الموضوع بعض الخطوات العامة التي يمكن استخدامها لتضييق نطاق مشاكل الأداء المتعلقة Microsoft Defender لنقطة النهاية على macOS.
 
-الحماية في الوقت الحقيقي (RTP) هي ميزة من ميزات Microsoft Defender ل Endpoint على macOS تقوم بمراقبة جهازك وحمايته بشكل مستمر من التهديدات. وهي تتكون من مراقبة الملفات وعملية وغيرها من الأسلوبات الاورستاتية.
+الحماية في الوقت الحقيقي (RTP) هي ميزة من ميزات Microsoft Defender لنقطة النهاية macOS التي تراقب جهازك وتحميه بشكل مستمر من التهديدات. وهي تتكون من مراقبة الملفات وعملية وغيرها من الأسلوبات الاورستاتية.
 
-استنادا إلى التطبيقات التي تقوم بتشغيلها وخصائص جهازك، قد تواجه أداء دون المستوى الأمثل عند تشغيل Microsoft Defender ل Endpoint على macOS. بشكل خاص، يمكن للتطبيقات أو عمليات النظام التي يمكنها الوصول إلى العديد من الموارد خلال فترة زمنية قصيرة أن تؤدي إلى مشاكل في الأداء في Microsoft Defender ل Endpoint على macOS.
+استنادا إلى التطبيقات التي تقوم بتشغيلها وخصائص جهازك، قد تواجه أداء دون المستوى الأمثل عند تشغيل Microsoft Defender لنقطة النهاية macOS. بشكل خاص، يمكن للتطبيقات أو عمليات النظام التي يمكنها الوصول إلى العديد من الموارد خلال فترة زمنية قصيرة أن تؤدي إلى مشاكل الأداء في Microsoft Defender لنقطة النهاية على macOS.
 
 يمكن استخدام الخطوات التالية في استكشاف الأخطاء وإصلاحها وتخفيف هذه المشاكل:
 
-1. قم بتعطيل الحماية في الوقت الحقيقي باستخدام أحد الأساليب التالية ولاحظ ما إذا كان الأداء يتحسن أم لا. يساعد هذا النهج على تضييق ما إذا كان Microsoft Defender ل Endpoint على macOS يساهم في مشاكل الأداء.
+1. قم بتعطيل الحماية في الوقت الحقيقي باستخدام أحد الأساليب التالية ولاحظ ما إذا كان الأداء يتحسن أم لا. يساعد هذا النهج على تضييق ما إذا Microsoft Defender لنقطة النهاية على macOS يساهم في مشاكل الأداء.
 
       إذا لم تكن مؤسستك تدير جهازك، يمكن تعطيل الحماية في الوقت الحقيقي باستخدام أحد الخيارات التالية:
 
-    - من واجهة المستخدم. افتح Microsoft Defender ل Endpoint على macOS وانتقل إلى **إدارة الإعدادات**.
+    - من واجهة المستخدم. افتح Microsoft Defender لنقطة النهاية على macOS وانتقل إلى **إدارة الإعدادات**.
 
-      ![إدارة لقطة شاشة للحماية في الوقت الحقيقي.](images/mdatp-36-rtp.png)
+      :::image type="content" source="images/mdatp-36-rtp.png" alt-text=" صفحة إدارة الحماية في الوقت الحقيقي" lightbox="images/mdatp-36-rtp.png":::
+      
 
     - من المحطة الطرفية. لأغراض الأمان، تتطلب هذه العملية رفعا.
 
@@ -58,7 +59,7 @@ ms.locfileid: "63573265"
       mdatp config real-time-protection --value disabled
       ```
 
-      إذا كانت مؤسستك تدير جهازك، يمكن للمسؤول تعطيل الحماية في الوقت الحقيقي باستخدام الإرشادات الواردة في [تعيين تفضيلات ل Microsoft Defender ل Endpoint على macOS](mac-preferences.md).
+      إذا كانت مؤسستك تدير جهازك، يمكن للمسؤول تعطيل الحماية في الوقت الحقيقي باستخدام الإرشادات الواردة في تعيين تفضيلات Microsoft Defender لنقطة النهاية [macOS](mac-preferences.md).
 
       إذا استمرت مشكلة الأداء أثناء إيقاف تشغيل الحماية في الوقت الحقيقي، فمن الممكن أن يكون مصدر المشكلة هو الكشف عن تهديدات نقاط النهاية والرد عليها الأساسي. في هذه الحالة، يرجى الاتصال بدعم العملاء للحصول على مزيد من الإرشادات وتخفيف الأثر.
 
@@ -153,6 +154,6 @@ ms.locfileid: "63573265"
       > [!NOTE]
       > يخزن التطبيق الإحصائيات في الذاكرة ويتعقب نشاط الملف فقط منذ بدء العمل عليه وتمكين الحماية في الوقت الحقيقي. لا يتم حساب العمليات التي تم تشغيلها قبل فترات إيقاف تشغيل الحماية في الوقت الحقيقي أو أثناءها. بالإضافة إلى ذلك، يتم حساب الأحداث التي تم تشغيل عمليات الفحص فيها فقط.
       >
-6. قم بتكوين Microsoft Defender ل Endpoint على macOS مع استثناءات للعمليات أو مواقع الأقراص التي تساهم في مشاكل الأداء وتتمكن من إعادة تمكين الحماية في الوقت الحقيقي.
+6. قم بتكوين Microsoft Defender لنقطة النهاية macOS مع استثناءات للعمليات أو مواقع الأقراص التي تساهم في مشاكل الأداء وتتمكن من إعادة تمكين الحماية في الوقت الحقيقي.
 
-     راجع [تكوين الاستثناءات ل Microsoft Defender ل Endpoint على macOS](mac-exclusions.md) والتحقق من صحتها للحصول على التفاصيل.
+     راجع [تكوين الاستثناءات والتحقق](mac-exclusions.md) من صحتها Microsoft Defender لنقطة النهاية على macOS للحصول على التفاصيل.

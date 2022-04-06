@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1d7d3dab26d4f9034294b2780875d33cb2fbef3
-ms.sourcegitcommit: 677dcc74aa898b2a17eb8430a32e675fea4e3fe5
+ms.openlocfilehash: b6d085d2e3c1e9c1e032f468f56d67a393269fe1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63566588"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63683044"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>عرض تقارير أمان البريد الإلكتروني في مدخل Microsoft 365 Defender الإلكتروني
 
@@ -48,10 +48,6 @@ ms.locfileid: "63566588"
 
 يتم Exchange Online Protection (EOP) و Microsoft Defender ل Office 365 في مدخل Microsoft 365 Defender الذي تم استبداله أو نقله أو إهماله في الجدول التالي.
 
-<br>
-
-****
-
 |تقرير مهمل و cmdlets|تقرير جديد و cmdlets|"معرّف مركز الرسائل"|التاريخ|
 |---|---|:---:|:---:|
 |**تتبع URL** <p> Get-URLTrace|[تقرير حماية URL](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|يونيو 2021|
@@ -62,9 +58,8 @@ ms.locfileid: "63566588"
 |**تم الكشف عن البرامج الضارة في تقرير البريد الإلكتروني** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من المخاطر: عرض البيانات عن طريق البريد الإلكتروني البرامج الضارة \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|يونيو 2021|
 |**تقرير الكشف عن البريد العشوائي** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[تقرير حالة الحماية من المخاطر: عرض البيانات بالبريد الإلكتروني العشوائي \>](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|أكتوبر 2021|
 |Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|مايو 2022|
-|**Exchange قاعدة النقل** <p> Get-MailTrafficPolicyReport <br> Get-MailDetailTransportRuleReport|[Exchange قاعدة النقل في EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> لا توجد cmdlets|MC316157|أبريل 2022|
+|**Exchange قاعدة النقل** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange قاعدة النقل في EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|أبريل 2022|
 |Get-MailTrafficTopReport|[تقرير حالة الحماية من المخاطر: عرض البيانات عن طريق البريد الإلكتروني البرامج الضارة \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **ملاحظة**: لا يوجد بديل لإمكانيات إعداد تقارير التشفير في Get-MailTrafficTopReport.|MC315742|أبريل 2022|
-|
 
 ## <a name="compromised-users-report"></a>تقرير المستخدمين الذين تم اختراقهم
 
@@ -341,7 +336,7 @@ ms.locfileid: "63566588"
 
 تسمح طريقة العرض التجميعية للتقرير بتصفية 90 يوما، بينما تسمح طريقة عرض التفاصيل بتصفية 10 أيام فقط.
 
-لعرض التقرير في مدخل Microsoft 365 Defender،  \> انتقل إلى تقارير البريد الإلكتروني & **البريد** \> الإلكتروني & **التعاون**. في صفحة **البريد الإلكتروني & تقارير التعاون** ، ابحث عن اكتشافات التسلل **، ثم** انقر فوق **عرض التفاصيل**. للذهاب مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/SpoofMailReportV2>.
+لعرض التقرير في مدخل Microsoft 365 Defender،  \> انتقل إلى تقارير البريد الإلكتروني & **البريد** \> الإلكتروني & **التعاون**. في صفحة **البريد الإلكتروني & تقارير التعاون** ، ابحث عن اكتشافات التسلل **، ثم** انقر فوق **عرض التفاصيل**. للذهاب مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/SpoofMailReport>.
 
 ![عنصر واجهة مستخدم الكشف عن & البريد الإلكتروني في صفحة تقارير التعاون.](../../media/spoof-detections-widget.png)
 

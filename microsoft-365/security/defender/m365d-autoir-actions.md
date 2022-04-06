@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 775781a5df9149ae99f1a051303f5d55c23f1bab
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a77a64e2323cc836df9b19694deb5c32ee877fb8
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63575835"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500794"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>عرض الإجراءات وإدارتها في مركز الإجراءات
 
@@ -57,7 +57,7 @@ ms.locfileid: "63575835"
 
 3. في مركز الإجراءات، على علامة **التبويب معلق** ، حدد عنصر في القائمة. يفتح جزء منتفطها. فيما يلي مثال على ذلك.
 
-   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="مثال على الموافقة على إجراء أو رفضه." lightbox="../../media/air-actioncenter-itemselected.png":::
+   :::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="خيارات الموافقة على إجراء أو رفضه" lightbox="../../media/air-actioncenter-itemselected.png":::
 
 4. راجع المعلومات في جزء المعلومات من خلال الجزء الذي يتم التقاطه، ثم قم بوا إحدى الخطوات التالية:
    - حدد **فتح صفحة التحقيق** لعرض مزيد من التفاصيل حول التحقيق.

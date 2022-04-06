@@ -1,6 +1,6 @@
 ---
-title: الإصدارات السابقة من Windows على Microsoft Defender لنقطة النهاية
-description: الإصدارات السابقة المدعمة Windows الأجهزة بحيث يمكنها إرسال بيانات المستشعر إلى مستشعر نقطة النهاية ل Microsoft Defender
+title: تم ا متن الإصدارات السابقة من Windows على Microsoft Defender لنقطة النهاية
+description: الإصدارات السابقة المدعمة Windows الأجهزة بحيث يمكنها إرسال بيانات المستشعر إلى Microsoft Defender لنقطة النهاية المستشعر
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 60fd10024be0b214aed4cbc7ae89d7129df99e79
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8fc3f86aa15a9fe54a410c869eb84b2b1ff79872
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63570361"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474498"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>الإصدارات السابقة من Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **الأنظمة الأساسية**
@@ -122,7 +122,7 @@ ms.locfileid: "63570361"
 
 - [تكوين Windows لاستخدام خادم وكيل لجميع الاتصالات](configure-proxy-internet.md)
 
-إذا كان الوكيل أو جدار الحماية يستخدم، فالرجاء التأكد من أن الخوادم يمكنها الوصول إلى كل عناوين URL لخدمة Microsoft Defender لنقطة النهاية مباشرة وبدون اعتراض SSL. لمزيد من المعلومات، راجع [تمكين الوصول إلى عناوين URL لخدمة Defender for Endpoint](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). سيمنع استخدام تقاطع SSL النظام من التواصل مع خدمة Defender for Endpoint.
+إذا كان الوكيل أو جدار الحماية يستخدم، فالرجاء التأكد من أن الخوادم يمكنها الوصول إلى كل عناوين URL Microsoft Defender لنقطة النهاية الخدمة مباشرة وبدون اعتراض SSL. لمزيد من المعلومات، راجع [تمكين الوصول إلى عناوين URL لخدمة Defender for Endpoint](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). سيمنع استخدام تقاطع SSL النظام من التواصل مع خدمة Defender for Endpoint.
 
 بمجرد الانتهاء، من المفترض أن ترى خوادم Windows في المدخل في غضون ساعة واحدة.
 
@@ -134,7 +134,7 @@ ms.locfileid: "63570361"
 
 3. انقر **فوق خوادم Onboard في Microsoft Defender for Cloud**.
 
-4. اتبع إرشادات التهيئة في [Microsoft Defender ل Endpoint مع Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) وإذا كنت تستخدم Azure ARC، فاتبع إرشادات التهيئة في تمكين تكامل [Microsoft Defender لنقطة النهاية](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
+4. اتبع إرشادات التهيئة في Microsoft Defender لنقطة النهاية [باستخدام Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) وإذا كنت تستخدم Azure ARC، فاتبع إرشادات التهيئة في تمكين [Microsoft Defender لنقطة النهاية التشغيل](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
 
 بعد إكمال خطوات التهيئة، ستحتاج إلى تكوين العملاء System Center Endpoint Protection [تحديثهم](#configure-and-update-system-center-endpoint-protection-clients).
 
@@ -148,10 +148,10 @@ ms.locfileid: "63570361"
 
 ## <a name="verify-onboarding"></a>التحقق من الboarding
 
-تحقق من تشغيل Microsoft Defender AV و Microsoft Defender ل Endpoint. 
+تحقق من أن Microsoft Defender AV Microsoft Defender لنقطة النهاية قيد التشغيل. 
 
 > [!NOTE]
-> تشغيل Microsoft Defender AV غير مطلوب ولكن من المستحسن. إذا كان منتج مورد برنامج الحماية من الفيروسات آخر هو حل الحماية الأساسي لنقطة النهاية، يمكنك تشغيل Defender Antivirus في الوضع السلبي. يمكنك فقط تأكيد تشغيل الوضع السلبي بعد التحقق من تشغيل Microsoft Defender لمستشعر نقطة النهاية (SENSE). 
+> تشغيل Microsoft Defender AV غير مطلوب ولكن من المستحسن. إذا كان منتج مورد برنامج الحماية من الفيروسات آخر هو حل الحماية الأساسي لنقطة النهاية، يمكنك تشغيل Defender Antivirus في الوضع السلبي. يمكنك فقط تأكيد تشغيل الوضع السلبي بعد التحقق من أن Microsoft Defender لنقطة النهاية استشعار (SENSE) قيد التشغيل. 
 
 1. تشغيل الأمر التالي للتحقق من تثبيت Microsoft Defender AV:
 
@@ -159,10 +159,10 @@ ms.locfileid: "63570361"
 
     إذا كانت النتيجة 'الخدمة المحددة غير موجودة كخدمة مثبتة'، ستحتاج إلى تثبيت Microsoft Defender AV. لمزيد من المعلومات، راجع برنامج الحماية من الفيروسات من Microsoft Defender [في Windows 10](microsoft-defender-antivirus-windows.md).
 
-    للحصول على معلومات حول كيفية استخدام "نهج المجموعة" لتكوين برنامج الحماية من الفيروسات من Microsoft Defender على خوادم Windows، راجع استخدام إعدادات نهج المجموعة لتكوين وإدارة [برنامج الحماية من الفيروسات من Microsoft Defender.](use-group-policy-microsoft-defender-antivirus.md)
+    للحصول على معلومات حول كيفية استخدام نهج المجموعة لتكوين برنامج الحماية من الفيروسات من Microsoft Defender وإدارتها على خوادم Windows، راجع استخدام إعدادات نهج المجموعة لتكوين وإدارة [ برنامج الحماية من الفيروسات من Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
 
 
-2. تشغيل الأمر التالي للتحقق من تشغيل Microsoft Defender لنقطة النهاية:
+2. تشغيل الأمر التالي للتحقق من أن Microsoft Defender لنقطة النهاية قيد التشغيل:
 
     ```sc.exe query sense```
     
@@ -232,27 +232,27 @@ OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
 
 
-### <a name="group-policy-configuration"></a>تكوين نهج المجموعة
+### <a name="group-policy-configuration"></a>نهج المجموعة التكوين
 
-قم بإنشاء نهج مجموعة جديد خصيصا للأجهزة المجهزة مثل "Microsoft Defender لتهيئة نقطة النهاية".
+قم بإنشاء نهج مجموعة جديد خصيصا للأجهزة التي تقوم بالتهيئة مثل "Microsoft Defender لنقطة النهاية التهيئة".
 
-- إنشاء مجلد نهج المجموعة المسمى "c:\windows\MMA"
+- إنشاء مجلد نهج المجموعة باسم "c:\windows\MMA"
 
-     :::image type="content" source="images/grppolicyconfig1.png" alt-text="المجلدات":::
+     :::image type="content" source="images/grppolicyconfig1.png" alt-text="موقع المجلدات" lightbox="images/grppolicyconfig1.png":::
 
     **سيضيف هذا مجلدا جديدا على كل خادم يتم تطبيق "GPO"، يسمى MMA، وسوف يتم تخزينه في c:\windows. سيحتوي ذلك على ملفات التثبيت ل MMA والمتطلبات الأساسية وتثبيت البرنامج النصي.**
 
-- قم بإنشاء تفضيلات ملفات نهج المجموعة لكل ملف من الملفات المخزنة في تسجيل تسجيل صافي.
+- قم بإنشاء نهج المجموعة الملفات لكل ملف من الملفات المخزنة في تسجيل صافي.
 
-     :::image type="content" source="images/grppolicyconfig2.png" alt-text="صورة نهج المجموعة1":::
+     :::image type="content" source="images/grppolicyconfig2.png" alt-text="نهج المجموعة - 1" lightbox="images/grppolicyconfig2.png":::
 
 وهو ينسخ الملفات من DOMAIN\NETLOGON\MMA\filename إلى C:\windows\MMA\filename - بحيث تكون ملفات التثبيت محلية **للخادم**:
 
-:::image type="content" source="images/deploymma.png" alt-text="نشر mma cmd":::
+:::image type="content" source="images/deploymma.png" alt-text="خصائص cmd لنشر mma" lightbox="images/deploymma.png":::
 
 كرر العملية ولكن قم بإنشاء استهداف مستوى العنصر على علامة التبويب COMMON، بحيث يتم نسخ الملف فقط إلى إصدار النظام الأساسي/نظام التشغيل المناسب في النطاق:
 
-:::image type="content" source="images/targeteditor.png" alt-text="محرر الهدف":::
+:::image type="content" source="images/targeteditor.png" alt-text="المحرر الهدف" lightbox="images/targeteditor.png":::
 
 على Windows Server 2008 R2 ستحتاج إلى (وسينسخ لأسفل فقط) ما يلي:
 - Windows6.1-KB3080149-x64.msu
@@ -262,7 +262,7 @@ OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
 بمجرد القيام بذلك، ستحتاج إلى إنشاء نهج برنامج نصي للبدء:
 
-:::image type="content" source="images/startupprops.png" alt-text="خصائص البدء":::
+:::image type="content" source="images/startupprops.png" alt-text="خصائص البدء" lightbox="images/startupprops.png":::
 
 اسم الملف الذي يجب تشغيله هنا هو c:\windows\MMA\DeployMMA.cmd.
 بمجرد إعادة تشغيل الخادم كجزء من عملية البدء، سيتم تثبيت تحديث لتجربة العملاء وKB لاتمتة التشخيص، ثم تثبيت عامل MMA، أثناء تعيين "مفتاح ومفتاح" ومفتاح مساحة العمل، وسيصبح الخادم مثبتا.
@@ -271,22 +271,22 @@ OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
 يمكن تنفيذ ذلك على مرحلتين. أولا قم **بإنشاء الملفات** والمجلد في GPO - امنح وقت النظام للتأكد من تطبيق GPO، وأن كل الخوادم لديها ملفات التثبيت. بعد ذلك، أضف المهمة الفورية. سيحقق هذا النتيجة نفسها دون الحاجة إلى إعادة التشغيل.
 
-بما أن البرنامج النصي لديه أسلوب خروج ولن يتم إعادة تشغيله إذا تم تثبيت MMA، يمكنك أيضا استخدام مهمة مجدولة يوميا لتحقيق النتيجة نفسها. على غرار نهج التوافق في إدارة التكوين، سيتم التحقق يوميا للتأكد من وجود MMA.
+بما أن البرنامج النصي لديه أسلوب خروج ولن يتم إعادة تشغيله إذا تم تثبيت MMA، يمكنك أيضا استخدام مهمة مجدولة يوميا لتحقيق النتيجة نفسها. على غرار نهج Configuration Manager، سيتم التحقق يوميا للتأكد من وجود MMA.
 
-:::image type="content" source="images/schtask.png" alt-text="جدولة مهمة":::
+:::image type="content" source="images/schtask.png" alt-text="جدولة مهمة" lightbox="images/schtask.png":::
 
-:::image type="content" source="images/newtaskprops.png" alt-text="خصائص مهمة جديدة":::
+:::image type="content" source="images/newtaskprops.png" alt-text="خصائص المهمة الجديدة" lightbox="images/newtaskprops.png":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="نشر دعائم تنزيل mma":::
+:::image type="content" source="images/deploymmadowmload.png" alt-text="خصائص تنزيل mma النشر" lightbox="images/deploymmadowmload.png":::
 
-:::image type="content" source="images/tasksch.png" alt-text="جدولة المهام":::
+:::image type="content" source="images/tasksch.png" alt-text="مجدول المهام" lightbox="images/tasksch.png":::
 
 كما هو مذكور في وثائق إعداد الخادم حول Server 2008 R2 تحديدا، الرجاء الاطلاع على ما يلي: للحصول على Windows Server 2008 R2 SP1، تأكد من استيفاء المتطلبات التالية:
 
 - تثبيت مجموعة التحديث الشهري لشهر فبراير [2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 - تثبيت [إما .NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (أو أي وقت لاحق) أو [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
-يرجى التحقق من أن KBs موجودة قبل Windows Server 2008 R2. تسمح لك هذه العملية بتهيئة كل الخوادم إذا لم يكن لديك "إدارة التكوين" تقوم بإدارة الخوادم.
+يرجى التحقق من أن KBs موجودة قبل Windows Server 2008 R2. تتيح لك هذه العملية إمكانية ا متنبأ كل الخوادم إذا لم يكن لديك Configuration Manager إدارة الخوادم.
 
 
 ## <a name="offboard-endpoints"></a>نقاط نهاية إيقاف التشغيل
@@ -317,7 +317,7 @@ OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
 2. حدد مساحة عمل Defender لنقطة النهاية، وانقر فوق **إزالة**.
 
-    ![صورة لخصائص وكيل مراقبة Microsoft](images/atp-mma.png)
+    :::image type="content" source="images/atp-mma.png" alt-text="جزء مساحات العمل" lightbox="images/atp-mma.png":::
 
 #### <a name="run-a-powershell-command-to-remove-the-configuration"></a>تشغيل أمر PowerShell لإزالة التكوين
 

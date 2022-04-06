@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: f024f9d93b44e6d6a679311af914330f0e3db37c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3057e66352b9bd658ddd4958986cbefd61e4e187
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63569062"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682934"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>توصيات النهج لتأمين SharePoint والملفات
 
@@ -57,7 +57,6 @@ ms.locfileid: "63569062"
 ||[SharePoint التحكم بالوصول](#sharepoint-access-control-policies): السماح بالوصول فقط إلى المستعرض إلى مواقع SharePoint معينة من الأجهزة غير التي يتم التحكم فيها.|يمنع ذلك تحرير الملفات وتنزيلها. استخدم PowerShell لتحديد المواقع.|
 |**أمان متخصص**|[*طلب* MFA دائما](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|تضمين SharePoint في تعيين تطبيقات السحابة.|
 ||[SharePoint التحكم بالوصول](#use-app-enforced-restrictions-in-sharepoint): حظر الوصول إلى مواقع SharePoint معينة من الأجهزة غير التي يتم التحكم فيها.|استخدم PowerShell لتحديد المواقع.|
-|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>استخدام القيود المفروضة على التطبيق في SharePoint
 

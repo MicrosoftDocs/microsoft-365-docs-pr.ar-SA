@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: da5add0e1f37a813e6962accbc391be6efba1cb1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9a67b05f089fd25e26f22508cbedb8f4b3ce086a
+ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472980"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "64595071"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>تكوين الاستثناءات والتحقق من صحتها استنادا إلى ملحق الملف وموقع المجلد
 
@@ -39,7 +39,7 @@ ms.locfileid: "64472980"
 > برنامج الحماية من الفيروسات من Microsoft Defender لا تنطبق الاستثناءات على إمكانيات Microsoft Defender لنقطة النهاية الأخرى، بما في ذلك [الكشف عن تهديدات نقاط النهاية والرد عليها ( الكشف التلقائي والاستجابة على النقط النهائية)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)، وقواعد تقليل مساحة الهجوم [(ASR)،](/microsoft-365/security/defender-endpoint/attack-surface-reduction) [والوصول المتحكم به إلى المجلدات](/microsoft-365/security/defender-endpoint/controlled-folders). لا تزال الملفات التي تستبعدها باستخدام الأساليب الموضحة في هذه المقالة تؤدي إلى تشغيل الكشف التلقائي والاستجابة على النقط النهائية والكشف الأخرى.
 > لاستبعاد الملفات على نطاق واسع، أضفها إلى Microsoft Defender لنقطة النهاية [المخصصة](/microsoft-365/security/defender-endpoint/manage-indicators).
 
-## <a name="before-you-begin"></a>قبل البدء...
+## <a name="before-you-begin"></a>قبل البدء
 
 راجع [التوصيات تعريف الاستثناءات](configure-exclusions-microsoft-defender-antivirus.md) قبل تعريف قوائم الاستثناء.
 
@@ -52,8 +52,7 @@ ms.locfileid: "64472980"
 >
 > تنطبق الاستثناءات التلقائية فقط على Windows Server 2016 واللاحقة. لا تظهر هذه الاستثناءات في أمن Windows التطبيق وفي PowerShell.
 
-يسرد الجدول التالي بعض أمثلة الاستثناءات استنادا إلى ملحق الملف وموقع المجلد. 
-<br/><br/>
+يسرد الجدول التالي بعض أمثلة الاستثناءات استنادا إلى ملحق الملف وموقع المجلد.
 
 |الاستثناء|أمثلة|قائمة الاستثناء|
 |---|---|---|
@@ -111,7 +110,7 @@ ms.locfileid: "64472980"
     1. تعيين الخيار إلى **تمكين**.
     2. ضمن المقطع **خيارات** ، حدد **إظهار**.
     3. حدد كل مجلد على السطر الخاص به ضمن **العمود اسم** القيمة.
-    4. إذا كنت تحدد ملفا، فتأكد من إدخال مسار مؤهل بالكامل إلى الملف، بما في ذلك حرف محرك الأقراص ومسار المجلد واسم الملف والملحق. 
+    4. إذا كنت تحدد ملفا، فتأكد من إدخال مسار مؤهل بالكامل إلى الملف، بما في ذلك حرف محرك الأقراص ومسار المجلد واسم الملف والملحق.
     5. أدخل **0** في **عمود القيمة** .
 
 5. اختر **موافق**.
@@ -138,8 +137,6 @@ ms.locfileid: "64472980"
 
 يسرد الجدول التالي cmdlets التي يمكنك استخدامها `<cmdlet>` في جزء cmdlet في PowerShell:
 
-<br/><br/>
-
 |إجراء التكوين|PowerShell cmdlet|
 |:---|:---|
 |إنشاء القائمة أو الكتابة فوقها|`Set-MpPreference`|
@@ -147,8 +144,6 @@ ms.locfileid: "64472980"
 |إزالة عنصر من القائمة|`Remove-MpPreference`|
 
 يسرد الجدول التالي القيم التي يمكنك استخدامها `<exclusion list>` في جزء cmdlet في PowerShell:
-
-<br/><br/>
 
 |نوع الاستثناء|معلمة PowerShell|
 |---|---|
@@ -225,8 +220,6 @@ ExclusionPath
 
 يسرد الجدول التالي متغيرات بيئة حساب النظام ويصفها.
 
-<br/><br/>
-
 |متغير بيئة النظام هذا...|عمليات إعادة التوجيه إلى هذا|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -296,8 +289,8 @@ ExclusionPath
 
 - [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
-- MpCmdRun
-- PowerShell
+- [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
+- [PowerShell](/powershell/module/defender)
 - [أمن Windows التطبيق](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
