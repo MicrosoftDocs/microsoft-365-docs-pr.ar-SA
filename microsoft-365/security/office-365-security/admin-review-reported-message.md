@@ -14,22 +14,22 @@ ms.custom: ''
 description: تعرف على كيفية مراجعة الرسائل التي تم تقديم التقارير بشأنها، ثم تقديم ملاحظات إلى المستخدمين.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2cb979260bde62903e97a4726083924101b8711a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 44476e7a8ad3bad9b21e82a9528593ceb350257d
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63573948"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470890"
 ---
 # <a name="admin-review-for-reported-messages"></a>مراجعة المسؤول للرسائل التي تم التقارير عنها
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-في Microsoft 365 المؤسسات التي Exchange Online علب بريدها و Microsoft Defender ل Office 365، يمكن للمسؤولين الآن إرسال الرسائل الم وقوالبها مرة أخرى إلى المستخدمين النهائيين بعد مراجعة الرسائل التي تم الإبلاغ عنها. يمكن تخصيص القوالب لمنظمتك واستنادا إلى قرار المسؤول أيضا.
+في Microsoft 365 المؤسسات Exchange Online علب البريد Microsoft Defender لـ Office 365، يمكن للمسؤولين الآن إرسال الرسائل الم وقوالبها مرة أخرى إلى المستخدمين النهائيين بعد مراجعة الرسائل التي تم الإبلاغ عنها. يمكن تخصيص القوالب لمنظمتك واستنادا إلى قرار المسؤول أيضا.
 
 تم تصميم هذه الميزة لتعطي ملاحظات للمستخدمين ولكنها لا تغير الأحكام الواردة في الرسائل في النظام. لمساعدة Microsoft على تحديث عوامل التصفية وتحسينها، ستحتاج إلى إرسال الرسائل لتحليلها باستخدام [إرسال المسؤول](admin-submission.md).
 
@@ -56,7 +56,7 @@ ms.locfileid: "63573948"
 3. حدد **المنسدل وضع علامة باسم** وإعلام، **ثم حدد لا** توجد أي تهديدات يتم العثور عليها أو التصيد الاحتيالي أو البريد **غير الهام**.
 
    > [!div class="mx-imgBorder"]
-   > ![إرسال رسائل من المدخل.](../../media/admin-review-send-message-from-portal.png)
+   > :::image type="content" source="../../media/admin-review-send-message-from-portal.png" alt-text="الصفحة التي تعرض الرسائل التي تم إعلام المستخدم بها" lightbox="../../media/admin-review-send-message-from-portal.png":::
 
 سيتم وضع علامة على الرسالة التي تم إبلاغها كسلبية خطأ أو موجبة خطأ، وسترسل رسالة بريد إلكتروني تلقائيا من داخل المدخل لإعلام المستخدم الذي أبلغ عن الرسالة.
 
@@ -74,6 +74,6 @@ ms.locfileid: "63573948"
     - تاشيير
 
     > [!div class="mx-imgBorder"]
-    > ![تخصيص الرسائل المرسلة إلى المستخدمين.](../../media/admin-review-customize-message.png)
+    > :::image type="content" source="../../media/admin-review-customize-message.png" alt-text="صفحة رسالة التأكيد &quot;تخصيص&quot;" lightbox="../../media/admin-review-customize-message.png":::
 
 4. عند الانتهاء، انقر فوق **حفظ**. لمسح هذه القيم، انقر فوق **تجاهل** على صفحة **إرسالات** المستخدم.

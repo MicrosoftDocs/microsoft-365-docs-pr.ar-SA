@@ -1,5 +1,5 @@
 ---
-title: سياسات Microsoft Defender لتطبيقات السحابة الموصى بها لتطبيقات SaaS - Microsoft 365 Enterprise | Microsoft Docs
+title: سياسات Microsoft Defender for Cloud Apps لتطبيقات SaaS - Microsoft 365 Enterprise | Microsoft Docs
 description: يصف هذه المقالة السياسات المستحسنة للتكامل مع Microsoft Defender for Cloud Apps.
 author: BrendaCarter
 manager: laurawi
@@ -15,16 +15,16 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.prod: m365-security
-ms.openlocfilehash: 95b46e1c92354015ce6f8d9c5b1fa4b6e9642785
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 7cda1669b4f8441d13f92b09d7390e31f4add529
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683308"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472276"
 ---
-# <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>سياسات Microsoft Defender لتطبيقات السحابة الموصى بها لتطبيقات SaaS
+# <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>سياسات Microsoft Defender for Cloud Apps لتطبيقات SaaS
 
-يتم إنشاء Microsoft Defender لتطبيقات السحابة على سياسات الوصول الشرطي في Azure AD لتمكين مراقبة الإجراءات في الوقت الحقيقي والتحكم فيها باستخدام تطبيقات SaaS، مثل حظر التنزيلات وتحميل الملفات ونسخها ولصقها وطباعتها. تضيف هذه الميزة الأمان إلى جلسات العمل التي تنطوي على مخاطر متأصلة، مثل عند الوصول إلى موارد الشركة من أجهزة غير إدارة أو من قبل مستخدمين ضيوف.
+Microsoft Defender for Cloud Apps بناء على سياسات الوصول الشرطي في Azure AD لتمكين مراقبة الإجراءات في الوقت الحقيقي والتحكم فيها باستخدام تطبيقات SaaS، مثل حظر التنزيلات وتحميل الملفات ونسخها ولصقها وطباعتها. تضيف هذه الميزة الأمان إلى جلسات العمل التي تنطوي على مخاطر متأصلة، مثل عند الوصول إلى موارد الشركة من أجهزة غير إدارة أو من قبل مستخدمين ضيوف.
 
 يتكامل Defender for Cloud Apps أيضا في حماية البيانات في Microsoft، مع توفير فحص المحتوى في الوقت الحقيقي للعثور على البيانات الحساسة استنادا إلى أنواع المعلومات الحساسة وتسميات الحساسية واتخاذ الإجراء المناسب.
 
@@ -47,7 +47,7 @@ ms.locfileid: "63683308"
 
 لحماية البيانات عبر مجموعة تطبيقات SaaS، يوضح الرسم التخطيطي التالي نهج الوصول الشرطي الضروري ل Azure AD بالإضافة إلى النهج المقترحة التي يمكنك إنشاؤها في Defender for Cloud Apps. في هذا المثال، تنطبق السياسات التي تم إنشاؤها في Defender for Cloud Apps على جميع تطبيقات SaaS التي تقوم بإدارتها. وقد تم تصميمها لتطبيق عناصر التحكم المناسبة استنادا إلى ما إذا كانت الأجهزة مدارة بالإضافة إلى تسميات الحساسية التي تم تطبيقها بالفعل على الملفات.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="سياسات إدارة تطبيقات SaaS في Defender for Cloud Apps." lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="سياسات إدارة تطبيقات SaaS في Defender for Cloud Apps" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
 يسرد الجدول التالي نهج الوصول الشرطي الجديد الذي يجب عليك إنشاؤه في Azure AD.
 
@@ -67,7 +67,7 @@ ms.locfileid: "63683308"
 
 للحصول على إرشادات من نهاية إلى نهاية لإعداد التحكم في تطبيق الوصول الشرطي، راجع [نشر التحكم في تطبيق الوصول الشرطي للتطبيقات المميزة](/cloud-app-security/proxy-deployment-aad). تختبر هذه المقالة عملية إنشاء نهج الوصول الشرطي الضروري في Azure AD واختبار تطبيقات SaaS.
 
-لمزيد من المعلومات، راجع [حماية التطبيقات باستخدام Microsoft Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/proxy-intro-aad).
+لمزيد من المعلومات، راجع [حماية التطبيقات باستخدام Microsoft Defender for Cloud Apps التحكم في تطبيق الوصول الشرطي](/cloud-app-security/proxy-intro-aad).
 
 ## <a name="tune-protection-for-specific-saas-apps"></a>ضبط الحماية لتطبيقات SaaS معينة
 
@@ -96,7 +96,7 @@ ms.locfileid: "63683308"
 
 يوفر الرسم التوضيحي التالي وال جدول أمثلة عديدة حول السياسات التي يمكن تكوينها للمساعدة على الامتثال للائحة العامة لحماية البيانات (GDPR). في هذه الأمثلة، تبحث السياسات عن بيانات معينة. استنادا إلى حساسية البيانات، يتم تكوين كل نهج لاتخاذ الإجراء المناسب.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="مثال حول سياسات Defender for Cloud Apps لمنع فقدان البيانات." lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="صفحة &quot;سياسات Defender for Cloud Apps&quot; لمنع فقدان البيانات" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
 
 |مستوى الحماية|أمثلة على سياسات|
 |---|---|
@@ -107,4 +107,4 @@ ms.locfileid: "63683308"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-لمزيد من المعلومات حول استخدام Defender for Cloud Apps، راجع [وثائق Microsoft Defender for Cloud Apps](//cloud-app-security/).
+لمزيد من المعلومات حول استخدام Defender for Cloud Apps، راجع Microsoft Defender for Cloud Apps [المستند](//cloud-app-security/).

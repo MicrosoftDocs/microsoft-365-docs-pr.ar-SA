@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 36713496b5885866dd21a3402dcfe66b4af5b76e
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0208e21394e350c2b5ffffdca6f8e14ebba227c8
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63572242"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476001"
 ---
 # <a name="create-a-notification-rule-when-a-local-onboarding-or-offboarding-script-is-used"></a>إنشاء قاعدة إعلام عند استخدام برنامج نصي محلي للتهيئة أو إيقاف التشغيل
 
@@ -28,8 +28,8 @@ ms.locfileid: "63572242"
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -54,18 +54,19 @@ ms.locfileid: "63572242"
 
 2. انتقل إلى **تدفقاتي > جديد > مجدول - من فارغ**.
 
-    ![صورة للتدفق.](images/new-flow.png)
+   :::image type="content" source="images/new-flow.png" alt-text="التدفق" lightbox="images/new-flow.png":::
+
 
 3. إنشاء تدفق مجدول.
    1. أدخل اسم انسياب.
    2. حدد البدء والوقت.
    3. حدد التكرار. على سبيل المثال، كل 5 دقائق.
 
-    ![صورة لتدفق الإعلامات.](images/build-flow.png)
+   :::image type="content" source="images/build-flow.png" alt-text="تدفق الإعلامات" lightbox="images/build-flow.png":::
 
 4. حدد الزر + لإضافة إجراء جديد. سيكون الإجراء الجديد طلب HTTP لجهاز (أجهزة) مركز أمان Defender for Endpoint. يمكنك أيضا استبداله ب "موصل WDATP" (الإجراء: "الأجهزة - الحصول على قائمة الأجهزة").
 
-    ![صورة التكرار وإضافة إجراء.](images/recurrence-add.png)
+   :::image type="content" source="images/recurrence-add.png" alt-text="التكرار وإضافة الإجراء" lightbox="images/recurrence-add.png":::
 
 5. أدخل حقول HTTP التالية:
 
@@ -78,19 +79,19 @@ ms.locfileid: "63572242"
    - نوع بيانات الاعتماد: حدد "سري".
    - سري: سجل الدخول وانتقل https://portal.azure.com إلى **Azure Active Directory > تسجيلات** التطبيقات واحصل على قيمة "اسم المستأجر".
 
-    ![صورة لشروط HTTP.](images/http-conditions.png)
+    :::image type="content" source="images/http-conditions.png" alt-text="شروط HTTP" lightbox="images/http-conditions.png":::
 
 6. أضف خطوة جديدة عن طريق تحديد **إضافة إجراء جديد** ثم ابحث عن **عمليات** البيانات وحدد **Parse JSON**.
 
-    ![صورة لعمليات البيانات.](images/data-operations.png)
+   :::image type="content" source="images/data-operations.png" alt-text="إدخال عمليات البيانات" lightbox="images/data-operations.png":::
 
 7. إضافة "محتوى" في **الحقل "محتوى** ".
 
-    ![صورة ل parse JSON.](images/parse-json.png)
+   :::image type="content" source="images/parse-json.png" alt-text="القسم parse JSON" lightbox="images/parse-json.png":::
 
 8. حدد الارتباط **استخدام التحميل النموذجي لإنشاء** مخطط.
 
-    ![صورة ل parse json مع تحميل.](images/parse-json-schema.png)
+   :::image type="content" source="images/parse-json-schema.png" alt-text="تحليل JSON مع تحميل" lightbox="images/parse-json-schema.png":::
 
 9. نسخ قصاصة JSON التالية ولصقها:
 
@@ -179,22 +180,22 @@ ms.locfileid: "63572242"
     - إذا كانت الإجابة "نعم"، لن يتم تشغيل أي إعلام
     - إذا لم يكن الأمر لا، سيتم تسجيل الجهاز (الأجهزة) الجديدة التي تم تشغيلها في قائمة SharePoint، وسيرسل إعلام إلى مسؤول Defender for Endpoint
 
-    ![صورة تنطبق على كل منها.](images/flow-apply.png)
+    :::image type="content" source="images/flow-apply.png" alt-text="تطبيق التدفق على كل عنصر" lightbox="images/flow-apply.png":::
 
-    ![صورة لتطبيق على كل مع الحصول على العناصر.](images/apply-to-each.png)
+    :::image type="content" source="images/apply-to-each.png" alt-text="تطبيق التدفق إلى عنصر &quot;الحصول على العناصر&quot;" lightbox="images/apply-to-each.png":::
 
 11. ضمن **شرط**، أضف التعبير التالي: "length(body('Get_items')?[' value'])" وحدد الشرط ليساوي 0.
 
-    ![صورة تنطبق على كل شرط.](images/apply-to-each-value.png)
-    ![ صورة الشرط1.](images/conditions-2.png)
-    ![ صورة الشرط 2.](images/condition3.png)
-    ![ صورة إرسال بريد إلكتروني.](images/send-email.png)
+    :::image type="content" source="images/apply-to-each-value.png" alt-text="تطبيق التدفق على كل شرط" lightbox="images/apply-to-each-value.png":::
+    :::image type="content" source="images/conditions-2.png" alt-text="الشرط-1" lightbox="images/conditions-2.png":::
+    :::image type="content" source="images/condition3.png" alt-text="الشرط 2" lightbox="images/condition3.png":::
+    :::image type="content" source="images/send-email.png" alt-text="القسم &quot;إرسال بريد إلكتروني&quot;" lightbox="images/send-email.png":::
 
 ## <a name="alert-notification"></a>إعلام التنبيه
 
 الصورة التالية هي مثال على إعلام بالبريد الإلكتروني.
 
-![صورة إعلام بالبريد الإلكتروني.](images/alert-notification.png)
+:::image type="content" source="images/alert-notification.png" alt-text="شاشة إعلام البريد الإلكتروني" lightbox="images/alert-notification.png":::
 
 ## <a name="tips"></a>تلميحات
 

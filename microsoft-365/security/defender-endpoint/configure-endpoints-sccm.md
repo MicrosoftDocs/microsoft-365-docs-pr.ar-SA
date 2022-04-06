@@ -1,7 +1,7 @@
 ---
-title: أجهزة Windows باستخدام "إدارة التكوين"
-description: استخدم "إدارة التكوين" لنشر حزمة التكوين على الأجهزة بحيث يتم تهيئة هذه الحزمة في خدمة Defender for Endpoint.
-keywords: أجهزة التهيئة باستخدام sccm وإدارة الأجهزة وتكوين Microsoft Defender للأجهزة التي تعمل بنقطة النهاية
+title: أجهزة Windows التي تستخدم Configuration Manager
+description: استخدم Configuration Manager لنشر حزمة التكوين على الأجهزة بحيث يتم إعدادها في خدمة Defender for Endpoint.
+keywords: الأجهزة المجهزة باستخدام sccm وإدارة الأجهزة وتكوين Microsoft Defender لنقطة النهاية الأجهزة
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,31 +16,31 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: b506cf15e2d08568633533ba29af5e2f809c2134
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d67a4ca067f16d74b15a1d7ece5c47d563f1a941
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63570752"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471887"
 ---
-# <a name="onboard-windows-devices-using-configuration-manager"></a>أجهزة Windows باستخدام "إدارة التكوين"
+# <a name="onboard-windows-devices-using-configuration-manager"></a>أجهزة Windows التي تستخدم Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Endpoint Configuration Manager الفرع الحالي
-- System Center 2012 تكوين R2
+- System Center 2012 R2 Configuration Manager
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 
-يمكنك استخدام "إدارة التكوين" لتهيئة نقاط النهاية لخدمة Microsoft Defender لنقطة النهاية. 
+يمكنك استخدام Configuration Manager لتكوين نقاط النهاية Microsoft Defender لنقطة النهاية الخدمة. 
 
-هناك العديد من الخيارات التي يمكنك استخدامها للأجهزة المجهزة للاستخدام باستخدام "إدارة التكوين":
+هناك العديد من الخيارات التي يمكنك استخدامها للأجهزة المجهزة باستخدام Configuration Manager:
 - [الأجهزة المجهزة باستخدام System Center Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)
 - [إرفاق المستأجر](/mem/configmgr/tenant-attach/)
 
@@ -51,21 +51,21 @@ ms.locfileid: "63570752"
 > [!NOTE]
 > لا يدعم Defender لنقطة النهاية التكوين أثناء مرحلة تجربة "خارج الصندوق" [(OOBE](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) ). تأكد من أن المستخدمين يكملون OOBE بعد Windows التثبيت أو الترقية.
 >
-> تجدر الإشارة إلى أنه من الممكن إنشاء قاعدة الكشف في تطبيق "إدارة التكوين" للتحقق بشكل مستمر مما إذا تم تهيئة جهاز. التطبيق هو نوع مختلف من الكائنات عن الحزمة والبرنامج.
-> إذا لم يتم بعد تهيئة جهاز (بسبب اكتمال OOBE المعلق أو أي سبب آخر)، فإن إدارة التكوين ست محاولة لتهيئة الجهاز حتى تكتشف القاعدة تغيير الحالة.
+> لاحظ أنه من الممكن إنشاء قاعدة الكشف على تطبيق Configuration Manager للتحقق بشكل مستمر مما إذا تم تهيئة جهاز. التطبيق هو نوع مختلف من الكائنات عن الحزمة والبرنامج.
+> إذا لم يتم بعد اكمال الجهاز (بسبب اكتمال OOBE المعلق أو أي سبب آخر)، سي محاولة Configuration Manager ل متن الجهاز حتى تكتشف القاعدة تغيير الحالة.
 >
 > يمكن تنفيذ هذا السلوك عن طريق إنشاء قاعدة الكشف للتحقق مما إذا كانت قيمة السجل "OnboardingState" (من النوع REG_DWORD) = 1.
 > تقع قيمة التسجيل هذه ضمن "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
-لمزيد من المعلومات، راجع [تكوين أساليب الكشف في System Center 2012 تكوين R2](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
+لمزيد من المعلومات، راجع [تكوين أساليب الكشف في System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type).
 
 ### <a name="configure-sample-collection-settings"></a>تكوين إعدادات المجموعة العينة
 
 لكل جهاز، يمكنك تعيين قيمة تكوين لتحدد ما إذا كان يمكن تجميع عينات من الجهاز عند تقديم طلب عبر Microsoft 365 Defender لإرسال ملف لتحليله بعمق.
 
 > [!NOTE]
-> تتم إعدادات التكوين هذه عادة من خلال إدارة التكوين.
+> تتم إعدادات التكوين هذه عادة من خلال Configuration Manager.
 
-يمكنك تعيين قاعدة توافق لعناصر التكوين في "إدارة التكوين" لتغيير إعداد المشاركة العينة على جهاز.
+يمكنك تعيين قاعدة توافق لعناصر التكوين Configuration Manager لتغيير إعداد المشاركة العينة على جهاز.
 
 يجب أن تكون هذه *القاعدة عنصرا لتكوين* قاعدة التوافق التي تقوم بتعيين قيمة مفتاح التسجيل على الأجهزة المستهدفة للتأكد من أنها شكوى.
 
@@ -84,7 +84,7 @@ Value: 0 or 1
 
 القيمة الافتراضية في حالة عدم وجود مفتاح التسجيل هي 1.
 
-لمزيد من المعلومات حول توافق إدارة تكوين مركز النظام، راجع [مقدمة حول إعدادات التوافق في System Center 2012 إدارة تكوين R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+لمزيد من المعلومات حول "مركز Configuration Manager"، راجع مقدمة حول [إعدادات التوافق في System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="other-recommended-configuration-settings"></a>إعدادات التكوين المستحسنة الأخرى
 
@@ -92,7 +92,7 @@ Value: 0 or 1
 
 ### <a name="device-collection-configuration"></a>تكوين مجموعة الأجهزة
 
-إذا كنت تستخدم إدارة تكوين نقطة النهاية، الإصدار 2002 أو الإصدارات الأحدث، يمكنك أن تختار تعزيز النشر ليشمل خوادم أو عملاء من المستوى الأسفل.
+إذا كنت تستخدم Configuration Manager Endpoint أو الإصدار 2002 أو الإصدارات الأحدث، يمكنك أن تختار توزيع التوزيع لتضمين خوادم أو عملاء من المستوى الأسفل.
 
 ### <a name="next-generation-protection-configuration"></a>تكوين حماية الجيل التالي
 
@@ -130,9 +130,9 @@ Value: 0 or 1
 
 ## <a name="run-a-detection-test-to-verify-onboarding"></a>تشغيل اختبار الكشف للتحقق من ال
 
-بعد تشغيل الجهاز، يمكنك أن تختار تشغيل اختبار الكشف للتحقق من أن الجهاز مواد بشكل صحيح للخدمة. لمزيد من المعلومات، راجع [تشغيل اختبار الكشف على جهاز Microsoft Defender ل Endpoint](run-detection-test.md) تم تشغيله حديثا.
+بعد تشغيل الجهاز، يمكنك أن تختار تشغيل اختبار الكشف للتحقق من أن الجهاز مواد بشكل صحيح للخدمة. لمزيد من المعلومات، راجع [تشغيل اختبار الكشف على جهاز Microsoft Defender لنقطة النهاية جديد](run-detection-test.md).
 
-## <a name="offboard-devices-using-configuration-manager"></a>أجهزة إيقاف التشغيل باستخدام "إدارة التكوين"
+## <a name="offboard-devices-using-configuration-manager"></a>أجهزة إيقاف التشغيل التي تستخدم Configuration Manager
 
 لأسباب تتعلق الأمان، ستنتهي صلاحية الحزمة المستخدمة في أجهزة Offboard بعد 30 يوما من تاريخ تنزيلها. سيتم رفض حزم إيقاف التشغيل منتهية الصلاحية المرسلة إلى جهاز. عند تنزيل حزمة إيقاف التشغيل، سيتم إعلامك بتاريخ انتهاء صلاحية الحزم، كما سيتم تضمينها في اسم الحزمة.
 
@@ -143,17 +143,17 @@ Value: 0 or 1
 
 إذا كنت تستخدم إدارة نقاط النهاية من Microsoft الحالي، فشاهد [إنشاء ملف تكوين خارج](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file) الإعداد.
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>أجهزة إيقاف التشغيل System Center 2012 إدارة تكوين R2
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>أجهزة إيقاف التشغيل التي تستخدم System Center 2012 R2 Configuration Manager
 
 1. احصل على حزمة إيقاف التشغيل <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">من مدخل Microsoft 365 Defender:</a>
     1. في جزء التنقل **، حدد الإعدادات** \> **إيقاف** \>  \> تشغيل إدارة أجهزة **نقاط النهاية**.  
     1. حدد Windows 10 أو Windows 11 نظام التشغيل.
-    1. في الحقل **أسلوب النشر** ، حدد **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+    1. في **الحقل أسلوب** النشر، حدد **مركز Configuration Manager 2012/2012 R2/1511/1602**.
     1. حدد **تنزيل الحزمة**، واحفظ الملف .zip.
 
 2. استخراج محتويات ملف .zip إلى موقع مشترك للقراءة فقط يمكن الوصول إليه من قبل مسؤولي الشبكة الذين سينشرون الحزمة. يجب أن يكون لديك ملف *يسمى WindowsDefenderATPOffboardingScript_valid_until_YYYY MM-DD.cmd*.
 
-3. نشر الحزمة باتباع الخطوات في المقالة الحزم والبرامج [في System Center 2012 إدارة التكوين R2](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) .
+3. نشر الحزمة باتباع الخطوات في مقالة الحزم والبرامج [في System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)).
 
    اختر مجموعة أجهزة محددة مسبقا لنشر الحزمة فيها.
 
@@ -162,9 +162,9 @@ Value: 0 or 1
 
 ## <a name="monitor-device-configuration"></a>مراقبة تكوين الجهاز
 
-إذا كنت تستخدم إدارة نقاط النهاية من Microsoft الحالي، فاستخدم لوحة معلومات Defender لنقطة النهاية المضمنة في وحدة تحكم إدارة التكوين. لمزيد من المعلومات، راجع [Defender for Endpoint - جهاز العرض](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
+إذا كنت تستخدم إدارة نقاط النهاية من Microsoft الحالي، فاستخدم لوحة معلومات Defender for Endpoint المضمنة في وحدة Configuration Manager التحكم. لمزيد من المعلومات، راجع [Defender for Endpoint - جهاز العرض](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
-إذا كنت تستخدم إدارة تكوين System Center 2012 R2، فإن المراقبة تتكون من جزأين:
+إذا كنت تستخدم System Center 2012 R2 Configuration Manager، فإن المراقبة تتكون من جزأين:
 
 1. تأكيد نشر حزمة التكوين بشكل صحيح وتشغيلها (أو تشغيلها بنجاح) على الأجهزة في شبكتك.
 
@@ -172,7 +172,7 @@ Value: 0 or 1
 
 ### <a name="confirm-the-configuration-package-has-been-correctly-deployed"></a>تأكيد نشر حزمة التكوين بشكل صحيح
 
-1. في وحدة تحكم إدارة التكوين، انقر فوق **مراقبة** في أسفل جزء التنقل.
+1. في وحدة Configuration Manager، **انقر فوق مراقبة** في أسفل جزء التنقل.
 
 2. حدد **نظرة عامة** ثم **عمليات النشر**.
 
@@ -180,13 +180,13 @@ Value: 0 or 1
 
 4. راجع مؤشرات الحالة ضمن **إحصائيات الإكمال** حالة **المحتوى**.
 
-    في حالة فشل عمليات النشر (الأجهزة التي بها أخطاء أو متطلبات **لم** يتم تحقيقها أو فشل الحالات)، فقد تحتاج إلى استكشاف أخطاء الأجهزة وإصلاحها. لمزيد من المعلومات، راجع استكشاف مشاكل [تشغيل نقطة نهاية Microsoft Defender وإصلاحها](troubleshoot-onboarding.md).
+    في حالة فشل عمليات النشر (الأجهزة التي بها أخطاء أو متطلبات **لم** يتم تحقيقها أو فشل الحالات)، فقد تحتاج إلى استكشاف أخطاء الأجهزة وإصلاحها. لمزيد من المعلومات، راجع استكشاف مشاكل Microsoft Defender لنقطة النهاية [وإصلاحها](troubleshoot-onboarding.md).
 
-    ![تعرض إدارة التكوين عملية نشر ناجحة بدون أخطاء.](images/sccm-deployment.png)
+    :::image type="content" source="images/sccm-deployment.png" alt-text="تظهر Configuration Manager نشر ناجح بدون أخطاء" lightbox="images/sccm-deployment.png":::
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>التحقق من أن الأجهزة متوافقة مع خدمة Microsoft Defender for Endpoint
+### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>التحقق من أن الأجهزة متوافقة مع خدمة Microsoft Defender لنقطة النهاية
 
-يمكنك تعيين قاعدة توافق لعناصر التكوين في System Center 2012 إدارة تكوين R2 لمراقبة النشر.
+يمكنك تعيين قاعدة توافق لعناصر التكوين في System Center 2012 R2 Configuration Manager لمراقبة النشر.
 
 يجب أن تكون هذه القاعدة *عنصر* تكوين قاعدة توافق غير معالجة يراقب قيمة مفتاح التسجيل على الأجهزة المستهدفة.
 
@@ -198,12 +198,12 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-لمزيد من المعلومات، راجع [مقدمة حول إعدادات التوافق في System Center 2012 إدارة تكوين R2](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+لمزيد من المعلومات، راجع [مقدمة حول إعدادات التوافق في System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
-- [أجهزة Windows باستخدام "نهج المجموعة"](configure-endpoints-gp.md)
-- [أجهزة Windows الأجهزة باستخدام أدوات إدارة أجهزة المحمول](configure-endpoints-mdm.md)
+- [أجهزة Windows باستخدام نهج المجموعة](configure-endpoints-gp.md)
+- [أجهزة Windows باستخدام أدوات الأجهزة المحمولة إدارة الجهاز المحمول](configure-endpoints-mdm.md)
 - [أجهزة Windows باستخدام برنامج نصي محلي](configure-endpoints-script.md)
 - [أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة](configure-endpoints-vdi.md)
-- [تشغيل اختبار الكشف على جهاز Microsoft Defender لنقطة النهاية الذي تم تشغيله حديثا](run-detection-test.md)
-- [استكشاف مشاكل تشغيل نقطة النهاية وإصلاحها في Microsoft Defender](troubleshoot-onboarding.md)
+- [تشغيل اختبار الكشف على جهاز تم Microsoft Defender لنقطة النهاية جديد](run-detection-test.md)
+- [استكشاف مشاكل Microsoft Defender لنقطة النهاية في الحافظة وإصلاحها](troubleshoot-onboarding.md)

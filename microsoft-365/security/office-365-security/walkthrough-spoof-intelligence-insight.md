@@ -21,19 +21,19 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 62be716a9663820f90d5c4f125f4634b3b399547
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: f433c93d9bba13822cf84ff8740f86d95cf2befe
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "63566127"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471330"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>إدارة المرسلين المنتحلين باستخدام نهج المعلومات المنتحلة والرؤى الاستخبارية المنتحلة في EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
@@ -67,7 +67,7 @@ ms.locfileid: "63566127"
 - يمكنك تمكين إعدادات المعلومات المنتحلة في سياسات مكافحة التصيد الاحتيالي وتعطيلها وتكوينها. للحصول على إرشادات تستند إلى اشتراكك، راجع أحد المواضيع التالية:
 
   - [تكوين سياسات مكافحة التصيد الاحتيالي في EOP](configure-anti-phishing-policies-eop.md).
-  - [تكوين سياسات مكافحة التصيد الاحتيالي في Microsoft Defender Office 365](configure-mdo-anti-phishing-policies.md).
+  - [تكوين سياسات مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365](configure-mdo-anti-phishing-policies.md).
 
 - للحصول على الإعدادات الموصى بها للذكاء المخادع، راجع إعدادات نهج مكافحة التصيد الاحتيالي [ل EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
@@ -87,7 +87,7 @@ ms.locfileid: "63566127"
 
 2. في صفحة **نهج مكافحة البريد** العشوائي، حدد انتحال نهج المعلومات **من** خلال النقر فوق الاسم.
 
-   ![حدد نهج المعلومات المنتحلة.](../../media/anti-spam-settings-spoof-intelligence-policy.png)
+   :::image type="content" source="../../media/anti-spam-settings-spoof-intelligence-policy.png" alt-text="خيار تحديد نهج المعلومات المنتحلة" lightbox="../../media/anti-spam-settings-spoof-intelligence-policy.png":::
 
 3. في الصورة **المنتحلة لنمط المعلومات** المنتحلة التي تظهر، قم بوا أحد التحديدات التالية:
    - **إظهار المرسلين الذين راجعتهم بالفعل**
@@ -101,7 +101,7 @@ ms.locfileid: "63566127"
    - **نعم**: السماح للمرسل المهزوف.
    - **لا**: وضع علامة على الرسالة على أنها منتحلة. يتم التحكم في الإجراء بواسطة نهج مكافحة التصيد الاحتيالي الافتراضي أو نهج مكافحة التصيد الاحتيالي المخصصة. لمزيد من المعلومات، راجع [انتحال الإعدادات في سياسات مكافحة التصيد الاحتيالي](set-up-anti-phishing-policies.md#spoof-settings).
 
-   ![لقطة شاشة تعرض منتحل المرسلين المنتحلين، وما إذا كان مسموحا للمرسل بالانتحال.](../../media/spoof-allow-block-flyout.png)
+   :::image type="content" source="../../media/spoof-allow-block-flyout.png" alt-text="منتحل المرسلون منتحلون، وما إذا كان مسموحا للمرسل بالانتحال" lightbox="../../media/spoof-allow-block-flyout.png":::
 
    يتم شرح الأعمدة والقيم التي تراها في القائمة التالية:
 
@@ -196,7 +196,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 3. تعرض لك المعلومات المتعمقة على لوحة المعلومات معلومات مثل:
 
-   ![لقطة شاشة رؤى استخباراتية منتحلة.](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+   :::image type="content" source="../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png" alt-text="المعلومات الاستخبارية المنتحلة" lightbox="../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png":::
 
    لهذه النظرة المبصرة وضعان:
 
@@ -232,7 +232,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
    من هنا، يمكنك أيضا اختيار إضافة زوج البنية الأساسية للمجال/الإرسال أو إزالته من القائمة السماح  للمرسلين بال انتحالهم. ما عليك سوى تعيين تبديل وفقا لذلك.
 
-   ![لقطة شاشة لمجال في جزء تفاصيل تحليلات المعلومات المنتحلة.](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+   :::image type="content" source="../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png" alt-text="مجال في جزء تفاصيل تحليلات المعلومات المنتحلة" lightbox="../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png":::
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>كيف يمكنك معرفة كيفية عمل هذه الإجراءات؟
 

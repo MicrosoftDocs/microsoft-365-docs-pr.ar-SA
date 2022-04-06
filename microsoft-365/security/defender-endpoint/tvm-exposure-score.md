@@ -1,7 +1,7 @@
 ---
 title: درجة التعرض للضوء في إدارة المخاطر والثغرات الأمنية
 description: تعكس إدارة المخاطر والثغرات الأمنية التعرض للضوء مدى ضعف مؤسستك في مواجهة تهديدات الأمن الإلكتروني.
-keywords: درجة التعرض للضوء، درجة التعرض لنقطة النهاية ل Microsoft Defender لنقطة النهاية، درجة التعرض لتلفزيون نقطة النهاية، درجة التعرض في المؤسسة، درجة التعرض لتلفزيون المؤسسة، إدارة المخاطر والثغرات الأمنية، Microsoft Defender ل Endpoint
+keywords: نقاط التعرض للضوء، Microsoft Defender لنقطة النهاية التعرض للضوء، Microsoft Defender لنقطة النهاية التعرض للتلفزيون، درجة التعرض لتلفزيون المؤسسة، درجة التعرض لتلفزيون المؤسسة، إدارة المخاطر والثغرات الأمنية، Microsoft Defender لنقطة النهاية
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a82d49e7ac6f87847e7ac61cc4451ad63c2bdeef
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: f65b48f37d1cf141611af075e55328226db6c6bd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63571582"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471572"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>درجة التعرض للضوء - إدارة المخاطر والثغرات الأمنية
 
@@ -29,7 +29,7 @@ ms.locfileid: "63571582"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [التهديدات إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,7 +43,7 @@ ms.locfileid: "63571582"
 
 توفر لك البطاقة طريقة عرض عالية المستوى لاتجاه درجة التعرض للضوء مع مرور الوقت. تمنحك أي مؤشرات موجية في المخطط مؤشرا مرئيا على التعرض لخطر الأمن الإلكتروني العالي الذي يمكنك التحقق منه بشكل أكبر.
 
-![بطاقة نتيجة التعرض للضوء.](images/tvm_exp_score.png)
+:::image type="content" source="images/tvm_exp_score.png" alt-text="بطاقة الأداء &quot;التعرض للضوء&quot;" lightbox="images/tvm_exp_score.png":::
 
 ## <a name="how-it-works"></a>كيفية عمل ذلك
 

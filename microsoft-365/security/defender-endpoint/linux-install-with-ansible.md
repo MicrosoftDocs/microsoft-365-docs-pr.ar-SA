@@ -1,8 +1,8 @@
 ---
 title: نشر Microsoft Defender لنقطة النهاية على Linux باستخدام Ansible
 ms.reviewer: ''
-description: يصف كيفية نشر Microsoft Defender ل Endpoint على Linux باستخدام Ansible.
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، linux، التثبيت، النشر، إزالة التثبيت، الملل، غير مقبول، linux، redhat، ubuntu، debian، sles، suse، centos، fedora، amazon linux 2
+description: يصف كيفية نشر Microsoft Defender لنقطة النهاية على Linux باستخدام Ansible.
+keywords: microsoft, defender, Microsoft Defender لنقطة النهاية, linux, installation, deploy, deploy, uninstall,ible, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6a2c29d27814b4ed8c199b7a4db1ee10ce37b86c
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 57f0687fce422f26b76fc8b98a06ce0566f90f60
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "63570674"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476060"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>نشر Microsoft Defender لنقطة النهاية على Linux باستخدام Ansible
 
@@ -29,7 +29,7 @@ ms.locfileid: "63570674"
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -75,7 +75,7 @@ ms.locfileid: "63570674"
 2. في القائمة المنسدلة الأولى، حدد **Linux Server** كنمع التشغيل. في القائمة المنسدلة الثانية، حدد **أداة إدارة تكوين Linux المفضلة** لديك كطريقة نشر.
 3. حدد **تنزيل حزمة التكهيل**. احفظ الملف WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender شاشة المدخل.](images/portal-onboarding-linux-2.png)
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="الخيار &quot;تنزيل حزمة التكهيل&quot;" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. من موجه الأوامر، تحقق من أن لديك الملف. استخراج محتويات الأرشيف:
 

@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة إلى موفري الخدمات المدارة (MSPs) Microsoft 365 المنارة، احصل على تعليمات حول استكشاف أخطاء رسائل الخطأ ومشاكلها وحلها.
-ms.openlocfilehash: 1bd98a90af19d60aba2e0891c3f993e77523a12c
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 24f282420bb69188106178cefc6fb89968f4fcf6
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632350"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645023"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>استكشاف المشاكل ورسائل الخطأ وحلها في Microsoft 365 المنارة
 
@@ -54,7 +54,7 @@ ms.locfileid: "64632350"
 **السبب:** لا يلبي مستأجرو العملاء المعايير التالية:
 
   - يجب أن يكون لديك حق وصول مفوض تم إعداده لموفر الخدمة المدارة (MSP) لكي يتمكن من إدارة مستأجر العميل*
-  - يجب أن يكون لديك ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business ترخيص
+  - يجب أن يكون لديك ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business واحد على الأقل
   - يجب ألا يكون هناك أكثر من 1000 مستخدم مرخص 
 
 **الحل:** يصف الجدول التالي مختلف حالة المستأجر التي تتطلب إجراء ويشرح كيفية حلها.
@@ -137,4 +137,4 @@ ms.locfileid: "64632350"
 
 [المشاكل المعروفة في Microsoft 365 المنارة](m365-lighthouse-known-issues.md) (مقالة)\
 [Microsoft 365 الأسئلة الشائعة حول المنارة](m365-lighthouse-faq.yml) (مقالة)\
-[الحصول على تعليمات ودعم Microsoft 365 المنارة](m365-lighthouse-get-help-and-support.md) (مقالة)
+[الحصول على تعليمات ودعم Microsoft 365 المنارة](m365-lighthouse-get-help-and-support.md)  (مقالة)

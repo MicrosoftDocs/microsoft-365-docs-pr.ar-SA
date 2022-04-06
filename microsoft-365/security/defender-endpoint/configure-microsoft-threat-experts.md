@@ -18,19 +18,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 28533f2ad3fcf547cab95812048b3de8af3bcb9a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 152c0c54138841d9159c7230fc043307979e4546
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63569828"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471792"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>تكوين قدرات خبراء المخاطر في Microsoft وإدارتها
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -52,15 +52,15 @@ ms.locfileid: "63569828"
 
 2. انقر فوق **تطبيق**.
 
-    ![صورة خبراء المخاطر في Microsoft الإعدادات.](images/mte-collaboratewithmte.png)
+   :::image type="content" source="images/mte-collaboratewithmte.png" alt-text="إعدادات خبراء المخاطر في Microsoft" lightbox="images/mte-collaboratewithmte.png":::
 
 3. أدخل اسمك وعنوان بريدك الإلكتروني حتى تتمكن Microsoft من الرجوع إليك على التطبيق.
 
-    ![صورة خبراء المخاطر في Microsoft التطبيق.](images/mte-apply.png)
+   :::image type="content" source="images/mte-apply.png" alt-text="الحقل &quot;الاسم&quot; على صفحة خبراء المخاطر في Microsoft التطبيق" lightbox="images/mte-apply.png":::
 
 4. اقرأ [بيان الخصوصية،](https://privacy.microsoft.com/privacystatement) ثم انقر فوق **إرسال** عندما تنتهي. ستتلقى رسالة بريد إلكتروني ترحيبية بمجرد الموافقة على طلبك.
 
-    ![صورة لتأكيد خبراء المخاطر في Microsoft التطبيق.](images/mte-applicationconfirmation.png)
+   :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="رسالة خبراء المخاطر في Microsoft تأكيد التطبيق" lightbox="images/mte-applicationconfirmation.png":::
 
 عند القبول، ستتلقى رسالة بريد إلكتروني ترحيبية وسترى الزر تطبيق  يتغير إلى زر تبديل "تشغيل". في حال أردت أن تخرق نفسك من خدمة إعلامات الهجمات المستهدفة، مرر زر "إيقاف التشغيل" وانقر فوق  حفظ التفضيلات في أسفل الصفحة.
 
@@ -105,15 +105,15 @@ ms.locfileid: "63569828"
 
 2. من القائمة العلوية اليسرى، انقر فوق **؟** أيقونة. بعد ذلك، حدد **استشارة خبير في التهديدات**.
 
-    ![صورة خبراء المخاطر في Microsoft "خبراء عند الطلب" من القائمة.](images/mte-eod-menu.png)
+    :::image type="content" source="images/mte-eod-menu.png" alt-text="عنصر خبراء المخاطر في Microsoft القائمة &quot;خبراء عند الطلب&quot;" lightbox="images/mte-eod-menu.png":::
 
     يتم فتح شاشة منتحلة. تظهر الشاشة التالية عندما تكون في اشتراك تجريبي.
 
-    ![صورة لشاشة خبراء المخاطر في Microsoft عند الطلب.](images/mte-eod.png)
+    :::image type="content" source="images/mte-eod.png" alt-text="صفحة خبراء المخاطر في Microsoft عند الطلب" lightbox="images/mte-eod.png":::
 
     تظهر الشاشة التالية عندما تكون في وضع ملء خبراء المخاطر في Microsoft - اشتراك الخبراء عند الطلب.
 
-    ![صورة خبراء المخاطر في Microsoft "خبراء عند الطلب" في ملء شاشة الاشتراك.](images/mte-eod-fullsubscription.png)
+    :::image type="content" source="images/mte-eod-fullsubscription.png" alt-text="صفحة خبراء المخاطر في Microsoft الاشتراك الكامل ل &quot;خبراء عند الطلب&quot;" lightbox="images/mte-eod-fullsubscription.png":::
 
     يتم **ملء حقل موضوع** الاستعلام مسبقا بالارتباط إلى الصفحة ذات الصلة لطلب التحقيق. على سبيل المثال، ارتباط إلى صفحة تفاصيل الحادث أو التنبيه أو الجهاز التي كنت فيها عند تقديم الطلب.
 

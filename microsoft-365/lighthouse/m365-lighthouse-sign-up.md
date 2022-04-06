@@ -17,16 +17,16 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs)، تعرف على كيفية التسجيل للحصول على Microsoft 365 المنارة.
-ms.openlocfilehash: 2607a131908a06ec4b7072cbf718739e1db00ad7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 25ad88edc63d53e3c9110062a64285bbb759a775
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570763"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645169"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>التسجيل للحصول على Microsoft 365 المنارة
 
-توفر هذه المقالة إرشادات حول كيفية التسجيل للحصول على Microsoft 365 المنارة. Microsoft 365 المنارة هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين الأجهزة والبيانات والمستخدمين وإدارتهم على نطاق واسع لعملاء الشركات الصغيرة والمتوسطة الحجم (SMB) الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3. 
+توفر هذه المقالة إرشادات حول كيفية التسجيل للحصول على Microsoft 365 المنارة. Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين الأجهزة والبيانات والمستخدمين وإدارتهم على نطاق واسع لعملاء الشركات الصغيرة والمتوسطة الحجم الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. 
 
 ## <a name="before-you-begin"></a>قبل البدء
 
@@ -68,4 +68,4 @@ ms.locfileid: "63570763"
 
 [نظرة عامة Microsoft 365 المنارة](m365-lighthouse-overview.md) (مقالة)   
 [Microsoft 365 الأسئلة الشائعة حول المنارة](m365-lighthouse-faq.yml) (مقالة)   
-[Microsoft 365 المنارة و Microsoft Defender for Business](../security/defender-business/mdb-lighthouse-integration.md) (مقالة)
+[Microsoft 365 المنارة Microsoft Defender for Business](../security/defender-business/mdb-lighthouse-integration.md) (مقالة)

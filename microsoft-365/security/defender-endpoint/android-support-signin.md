@@ -1,7 +1,7 @@
 ---
 title: استكشاف الأخطاء وإصلاحها على Microsoft Defender لنقطة النهاية على نظام التشغيل Android
-description: استكشاف المشاكل وإصلاحها ل Microsoft Defender لنقطة النهاية على نظام التشغيل Android
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، mde، android، السحابة، الاتصال، الاتصال
+description: استكشاف المشاكل وإصلاحها Microsoft Defender لنقطة النهاية على نظام التشغيل Android
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mde، android، السحابة، الاتصال، الاتصال
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,20 +15,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9d08994d0a69ba1985e69845b3a22abd40c753fd
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 574e02c837ce1f2e3639ed562ed52bacc0e67629
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63583129"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472210"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>استكشاف الأخطاء وإصلاحها على Microsoft Defender لنقطة النهاية على نظام التشغيل Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -43,7 +43,7 @@ ms.locfileid: "63583129"
 
 **فشل تسجيل الدخول:** *خطأ غير متوقع، حاول لاحقا*
 
-:::image type="content" alt-text="صورة لخطأ فشل تسجيل الدخول خطأ غير متوقع." source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
+:::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="خطأ فشل تسجيل الدخول خطأ غير متوقع في صفحة تسجيل الدخول في مدخل Microsoft Defender 365." lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **الرسالة:**
 
@@ -61,7 +61,7 @@ ms.locfileid: "63583129"
 
 **فشل تسجيل الدخول:** *ترخيص غير صالح، يرجى الاتصال بالمسؤول*
 
-:::image type="content" alt-text="صورة فشل تسجيل الدخول يرجى الاتصال بالمسؤول." source="images/920e433f440fa1d3d298e6a2a43d4811.png":::
+:::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="تفاصيل جهة اتصال التوجيه في صفحة تسجيل الدخول في مدخل Microsoft Defender 365" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **رسالة:** *ترخيص غير صالح، يرجى الاتصال بالمسؤول*
 
@@ -85,7 +85,7 @@ ms.locfileid: "63583129"
 
 لا يتم حظر التصيد الاحتيالي وتهديدات الويب الضارة التي يكشف عنها Defender for Endpoint for Android على بعض أجهزة Xiaomi. لا تعمل الوظائف التالية على هذه الأجهزة.
 
-![صورة موقع تم إعلامه بأنه غير آمن.](images/0c04975c74746a5cdb085e1d9386e713.png)
+:::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="رسالة إعلام غير آمنة للموقع" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
 
 **السبب:**
 
@@ -93,7 +93,7 @@ ms.locfileid: "63583129"
 
 إذن أجهزة Xiaomi: "عرض النوافذ المنبثقة أثناء التشغيل في الخلفية".
 
-![صورة لإعداد منبثق.](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
+:::image type="content" source="images/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text="جزء الإعداد المنبثق في مدخل Microsoft Defender 365" lightbox="images/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
 
 **الحل:**
 
@@ -122,23 +122,23 @@ ms.locfileid: "63583129"
 
 2. ابحث عن تحسين **البطارية وحدده**.
 
-   ![ابحث عن "تحسين طاقة البطارية" وحدده.](images/search-battery-optimisation.png)
+   :::image type="content" source="images/search-battery-optimisation.png" alt-text="الصفحة التي يمكنك البحث فيها وتحديد &quot;تحسين طاقة البطارية&quot;" lightbox="images/search-battery-optimisation.png":::
 
 3. في **الوصول إلى التطبيق الخاص**، حدد **تحسين البطارية**.
 
-   ![في الوصول إلى التطبيق الخاص، حدد "تحسين طاقة البطارية".](images/special-app-access.png)
+   :::image type="content" source="images/special-app-access.png" alt-text="جزء الوصول إلى التطبيق الخاص الذي يمكنك تحديد &quot;تحسين طاقة البطارية&quot; منه" lightbox="images/special-app-access.png":::
 
 4. غير "المنسدلة" لإظهار **جميع التطبيقات**.
 
-   ![الخطوة الأولى لتغيير المنسدلة لإظهار "جميع التطبيقات".](images/show-all-apps-2.png)
+   :::image type="content" source="images/show-all-apps-2.png" alt-text="المنسدل الذي يمكنك تغيير القيمة منه إلى &quot;جميع التطبيقات&quot; ضمن الجزء &quot;تحسين طاقة البطارية&quot;" lightbox="images/show-all-apps-2.png":::
 
-   ![الخطوة الثانية لتغيير المنسدلة لإظهار "جميع التطبيقات".](images/show-all-apps-1.png)
+   :::image type="content" source="images/show-all-apps-1.png" alt-text="القائمة المنسدل التي تعرض الخيار &quot;جميع التطبيقات&quot; ضمن الجزء &quot;تحسين طاقة البطارية&quot;" lightbox="images/show-all-apps-1.png":::
 
 5. حدد موقع "Microsoft Defender لنقطة النهاية" وحدد **عدم التحسين**.
 
-   ![حدد موقع "Microsoft Defender لنقطة النهاية" وحدد "عدم التحسين".](images/select-dont-optimise.png)
+   :::image type="content" source="images/select-dont-optimise.png" alt-text="الصفحة التي تمكن موقع الخيار Microsoft Defender لنقطة النهاية تحديد عدم التحسين" lightbox="images/select-dont-optimise.png":::
 
-ارجع إلى شاشة تعيين نقطة النهاية ل Microsoft Defender، وحدد السماح، وستعاد توجيهك إلى شاشة لوحة المعلومات.
+ارجع إلى شاشة Microsoft Defender لنقطة النهاية، وحدد السماح، وستعاد توجيهك إلى شاشة لوحة المعلومات.
 
 ## <a name="send-in-app-feedback"></a>إرسال ملاحظات داخل التطبيق
 
@@ -146,22 +146,22 @@ ms.locfileid: "63583129"
 
 1.  افتح **تطبيق MDE** على جهازك وانقر فوق أيقونة **ملف التعريف** في الزاوية العلوية اليمنى.
 
-    :::image type="content" alt-text="انقر فوق أيقونة ملف التعريف." source="images/select-profile-icon-1.jpg":::
+    :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="أيقونة ملف التعريف في مدخل Microsoft Defender لنقطة النهاية" lightbox="images/select-profile-icon-1.jpg":::
 
 2.  حدد "تعليمات & الملاحظات".
 
-    :::image type="content" alt-text="حدد تعليمات وملاحظات." source="images/selecthelpandfeedback2.png":::
+    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="الخيار &quot;تعليمات & الملاحظات&quot; الذي يمكن تحديده في مدخل Microsoft Defender لنقطة النهاية" lightbox="images/selecthelpandfeedback2.png":::
 
 3.  حدد "إرسال ملاحظات إلى Microsoft".
 
-    :::image type="content" alt-text="حدد إرسال ملاحظات إلى Microsoft." source="images/send-feedback-to-microsoft-3.jpg":::
+    :::image type="content" alt-text="حدد إرسال ملاحظات إلى Microsoft" source="images/send-feedback-to-microsoft-3.jpg":::
 
 4.  اختر من الخيارات المتوفرة. الإبلاغ عن مشكلة، حدد "أريد الإبلاغ عن مشكلة".
 
-    :::image type="content" alt-text="الإبلاغ عن مشكلة." source="images/report-issue-4.jpg":::
+    :::image type="content" source="images/report-issue-4.jpg" alt-text="الخيار &quot;أريد الإبلاغ عن مشكلة&quot;" lightbox="images/report-issue-4.jpg":::
 
 5.  قم بتوفير تفاصيل المشكلة التي تواجهها وتحقق من "إرسال بيانات تشخيصية". نوصي بالتحقق من "تضمين عنوان بريدك الإلكتروني" بحيث يمكن للفريق التواصل معك من خلال حل أو متابعة.
 
-    :::image type="content" alt-text="أضف التفاصيل وأرفق البيانات التشخيصية." source="images/finalsubmit5.png":::
+    :::image type="content" source="images/finalsubmit5.png" alt-text="الجزء الذي يمكنك إضافة التفاصيل عليه وإرفاق البيانات التشخيصية" lightbox="images/finalsubmit5.png":::
 
 6.  انقر فوق "إرسال" لإرسال الملاحظات بنجاح.

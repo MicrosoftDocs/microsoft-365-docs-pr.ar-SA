@@ -1,8 +1,8 @@
 ---
-title: نشر Microsoft Defender لنقطة النهاية على Linux باستخدام Puppet
+title: نشر Microsoft Defender لنقطة النهاية على Linux معنانا
 ms.reviewer: ''
-description: يصف كيفية نشر Microsoft Defender لنقطة النهاية على Linux باستخدام Puppet.
-keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، linux، التثبيت، التوزيع، إلغاء التثبيت، الدمى، ansible، linux، redhat، ubuntu، debian، sles، suse، centos، fedora، amazon linux 2
+description: تصف هذه المقالة كيفية نشر Microsoft Defender لنقطة النهاية Linux باستخدام "نشرة".
+keywords: microsoft, defender, Microsoft Defender لنقطة النهاية, linux, installation, deploy, deploy, uninstall,ible, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,79 +16,74 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5ec3eb5d12933b33f4af7d5af96b4ab54fda4604
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: adf58b3009c3feaafde389b91ddc64b441d49f40
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663787"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475994"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>نشر Microsoft Defender لنقطة النهاية على Linux باستخدام Puppet
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>نشر Microsoft Defender لنقطة النهاية على Linux معنانا
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-تصف هذه المقالة كيفية نشر Defender لنقطة النهاية على Linux باستخدام Puppet. يتطلب النشر الناجح إكمال كافة المهام التالية:
+تصف هذه المقالة كيفية نشر Defender for Endpoint على Linux باستخدام "مهى". يتطلب النشر الناجح إكمال كل المهام التالية:
 
-- [تنزيل حزمة الإلحاق](#download-the-onboarding-package)
-- [إنشاء بيان Puppet](#create-a-puppet-manifest)
-- [نشر](#deployment)
-- [التحقق من حالة الإلحاق](#check-onboarding-status)
+- [تنزيل حزمة الboarding](#download-the-onboarding-package)
+- [إنشاء بيان "مهين"](#create-a-puppet-manifest)
+- [النشر](#deployment)
+- [التحقق من حالة الboarding](#check-onboarding-status)
 
 ## <a name="prerequisites-and-system-requirements"></a>المتطلبات الأساسية ومتطلبات النظام
 
- للحصول على وصف للمتطلبات الأساسية ومتطلبات النظام لإصدار البرنامج الحالي، راجع [Defender الرئيسي لنقطة النهاية على صفحة Linux](microsoft-defender-endpoint-linux.md).
+ للحصول على وصف للمتطلبات الأساسية ومتطلبات النظام الخاصة بالإصدار الحالي للبرنامج، راجع صفحة [Defender الرئيسية ل Endpoint على Linux](microsoft-defender-endpoint-linux.md).
 
-بالإضافة إلى ذلك، لنشر Puppet، تحتاج إلى أن تكون على دراية بمهام إدارة Puppet، وأن تكون Puppet مكونة، وتعرف كيفية توزيع الحزم. يحتوي Puppet على العديد من الطرق لإكمال نفس المهمة. تفترض هذه التعليمات توفر وحدات Puppet المدعومة، مثل *apt* للمساعدة في نشر الحزمة. قد تستخدم مؤسستك سير عمل آخر. راجع [وثائق Puppet](https://puppet.com/docs) للحصول على التفاصيل.
+بالإضافة إلى ذلك، بالنسبة إلى نشر "نشر النشر"، يجب أن تكون على دراية بمهام إدارة "النشر"، وأن تكون "نشرة" قد تم تكوينها، وأن تعرف كيفية نشر الحزم. تكثر طرق إكمال المهمة نفسها من خلال العملية العملية. تفترض هذه الإرشادات توفر الوحدات النمطية المدعمة "للدماء"، مثل *apt* للمساعدة في نشر الحزمة. قد تستخدم مؤسستك سير عمل مختلفا. راجع وثائق ["مهى"](https://puppet.com/docs) للحصول على التفاصيل.
 
-## <a name="download-the-onboarding-package"></a>تنزيل حزمة الإلحاق
+## <a name="download-the-onboarding-package"></a>تنزيل حزمة الboarding
 
-قم بتنزيل حزمة الإلحاق من مدخل Microsoft 365 Defender:
+قم بتنزيل حزمة المحتوى من مدخل Microsoft 365 Defender:
 
-1. في مدخل Microsoft 365 Defender، انتقل إلى **نقاط النهاية الإعدادات > > إدارة الأجهزة > الإلحاق**.
-2. في القائمة المنسدلة الأولى، حدد **Linux Server** كنظام تشغيل. في القائمة المنسدلة الثانية، حدد **أداة إدارة تكوين Linux المفضلة** لديك كأسلوب توزيع.
-3. حدد **تنزيل حزمة الإلحاق**. احفظ الملف WindowsDefenderATPOnboardingPackage.zip.
+1. في Microsoft 365 Defender، انتقل إلى الإعدادات > نقاط النهاية > **إدارة الأجهزة > التكوين**.
+2. في القائمة المنسدلة الأولى، حدد **Linux Server** كنمع التشغيل. في القائمة المنسدلة الثانية، حدد **أداة إدارة تكوين Linux المفضلة** لديك كطريقة نشر.
+3. حدد **تنزيل حزمة التكهيل**. احفظ الملف WindowsDefenderATPOnboardingPackage.zip.
 
-   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="خيار تنزيل الحزمة التي تم إلحاقها" lightbox="images/portal-onboarding-linux-2.png":::
+   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="خيار تنزيل الحزمة التي تم ال متنها" lightbox="images/portal-onboarding-linux-2.png":::
 
 4. من موجه الأوامر، تحقق من أن لديك الملف. 
 
     ```bash
     ls -l
     ```
-
     ```Output
     total 8
     -rw-r--r-- 1 test  staff  4984 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
     ```
-
 5. استخراج محتويات الأرشيف.
-
     ```bash
     unzip WindowsDefenderATPOnboardingPackage.zip
     ```
-
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: mdatp_onboard.json
     ```
 
-## <a name="create-a-puppet-manifest"></a>إنشاء بيان Puppet
+## <a name="create-a-puppet-manifest"></a>إنشاء بيان "مهى"
 
-تحتاج إلى إنشاء بيان Puppet لنشر Defender لنقطة النهاية على Linux إلى الأجهزة التي يديرها خادم Puppet. يستخدم هذا المثال الوحدات النمطية *apt* *وyumrepo* المتوفرة من puppetlabs، ويفترض أن الوحدات النمطية قد تم تثبيتها على خادم Puppet الخاص بك.
+أنت بحاجة إلى إنشاء بيان "مخدم" لنشر Defender for Endpoint على Linux على الأجهزة المدارة بواسطة خادم "مخدم". يستخدم هذا المثال *الوحدات النمطية ل apt* *وyumrepo* المتوفرة منlabs، ويفترض أن الوحدات النمطية قد تم تثبيتها على خادم "المخدم".
 
-قم بإنشاء المجلدات *install_mdatp/الملفات* install_mdatp */manifests* ضمن مجلد الوحدات النمطية لتثبيت Puppet الخاص بك. يقع هذا المجلد عادة في */etc/puppetlabs/code/environments/production/modules* على خادم Puppet الخاص بك. انسخ ملف mdatp_onboard.json الذي تم إنشاؤه أعلاه إلى مجلد *install_mdatp/files* . إنشاء *init.pp* الملف الذي يحتوي على إرشادات النشر:
+قم بإنشاء المجلدات install_mdatp */الملفات* *install_mdatp/البيانات* ضمن مجلد الوحدات النمطية من تثبيت "نواة". يقع هذا المجلد عادة في */etc/environmentslabs/code/environments/production/modules* على خادم "المخدم". انسخ mdatp_onboard.json التي تم إنشاؤها أعلاه إلى *install_mdatp/الملفات* . إنشاء *init.pp* الملف الذي يحتوي على إرشادات النشر:
 
 ```bash
 pwd
 ```
-
 ```Output
 /etc/puppetlabs/code/environments/production/modules
 ```
@@ -96,7 +91,6 @@ pwd
 ```bash
 tree install_mdatp
 ```
-
 ```Output
 install_mdatp
 ├── files
@@ -107,21 +101,21 @@ install_mdatp
 
 ### <a name="contents-of-install_mdatpmanifestsinitpp"></a>محتويات `install_mdatp/manifests/init.pp`
 
-يمكن نشر Defender لنقطة النهاية على Linux من إحدى القنوات التالية (الموضح أدناه ب *[channel]*): *insider-fast* أو *insider-slow* أو *prod*. تتوافق كل قناة من هذه القنوات مع مستودع برامج Linux.
+يمكن نشر Defender for Endpoint على Linux من إحدى القنوات التالية (المشار إلى ذلك أدناه ب *[قناة]*): *insiders-fast* أو *insiders-slow* أو *prod*. تتوافق كل قناة من هذه القنوات مع مستودع برامج Linux.
 
-يحدد اختيار القناة نوع التحديثات التي يتم تقديمها لجهازك ومعدل تكرارها. الأجهزة في *insider-fast* هي أول الأجهزة التي تتلقى التحديثات والميزات الجديدة، متبوعة لاحقا *ببطء مشتركي Insider* وأخيرا بال *prod*.
+يحدد اختيار القناة نوع التحديثات التي يتم تقديمها لجهازك وتكرارها. الأجهزة في *insiders-fast* هي الأجهزة الأولى التي تتلقى التحديثات والميزات الجديدة، يليها *لاحقا insiders-slow* وأخيرا ب *prod*.
 
-من أجل معاينة الميزات الجديدة وتقديم الملاحظات المبكرة، يوصى بتكوين بعض الأجهزة في مؤسستك لاستخدام *مشتركي insider بسرعة* أو *بطيء من الداخل*.
+من أجل معاينة الميزات الجديدة وتقديم الملاحظات المبكرة، من المستحسن تكوين بعض الأجهزة في المؤسسة لاستخدام *insiders-fast* أو *insiders-slow*.
 
 > [!WARNING]
-> يتطلب تبديل القناة بعد التثبيت الأولي إعادة تثبيت المنتج. لتبديل قناة المنتج: قم بإلغاء تثبيت الحزمة الموجودة، وأعد تكوين جهازك لاستخدام القناة الجديدة، واتبع الخطوات الواردة في هذا المستند لتثبيت الحزمة من الموقع الجديد.
+> يتطلب تبديل القناة بعد التثبيت الأولي إعادة تثبيت المنتج. لتبديل قناة المنتج: قم ب إلغاء تثبيت الحزمة الموجودة، ثم إعادة تكوين الجهاز لاستخدام القناة الجديدة، واتبع الخطوات الموجودة في هذا المستند لتثبيت الحزمة من الموقع الجديد.
 
-لاحظ التوزيع والإصدار الخاصين بك وحدد أقرب إدخال له ضمن `https://packages.microsoft.com/config/[distro]/`.
+لاحظ التوزيع والإصدار الخاص بك وحدد أقرب إدخال له ضمن `https://packages.microsoft.com/config/[distro]/`.
 
 في الأوامر أدناه، استبدل *[distro]* و *[version]* بالمعلومات التي حددتها:
 
 > [!NOTE]
-> في حالة RedHat وOracle Linux وAmazon Linux 2 وCentOS 8، استبدل *[distro]* ب 'rhel'.
+> في حالة RedHat و Oracle Linux و Amazon Linux 2 و CentOS 8، استبدل *[distro]* ب 'rhel'.
 
 ```puppet
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
@@ -137,7 +131,7 @@ $version = undef
     case $::osfamily {
         'Debian' : {
             apt::source { 'microsoftpackages' :
-                location => "https://packages.microsoft.com/${distro}/${version}/prod",
+                location => "https://packages.microsoft.com/config/${distro}/${version}/prod",
                 release  => $channel,
                 repos    => 'main',
                 key      => {
@@ -148,7 +142,7 @@ $version = undef
         }
         'RedHat' : {
             yumrepo { 'microsoftpackages' :
-                baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
+                baseurl  => "https://packages.microsoft.com/config/${distro}/${version}/${channel}",
                 descr    => "packages-microsoft-com-prod-${channel}",
                 enabled  => 1,
                 gpgcheck => 1,
@@ -185,30 +179,28 @@ $version = undef
 }
 ```
 
-## <a name="deployment"></a>نشر
+## <a name="deployment"></a>النشر
 
-تضمين البيان أعلاه في site.pp ملف:
+تضمين البيان أعلاه في موقعك.pp ملف:
 
 ```bash
 cat /etc/puppetlabs/code/environments/production/manifests/site.pp
 ```
-
 ```Output
 node "default" {
     include install_mdatp
 }
 ```
 
-تقوم أجهزة العامل المسجلة باستقصاءات خادم Puppet Server بشكل دوري وتثبيت ملفات تعريف ونهج تكوين جديدة بمجرد اكتشافها.
+تقوم أجهزة الوكيل المسجلين بشكل دوري باستطلاع رأي Server وثبت ملفات تعريف ونهج تكوين جديدة بمجرد اكتشافها.
 
-## <a name="monitor-puppet-deployment"></a>مراقبة توزيع Puppet
+## <a name="monitor-puppet-deployment"></a>مراقبة نشر "نشر مهين"
 
-على جهاز العامل، يمكنك أيضا التحقق من حالة الإلحاق عن طريق تشغيل:
+على جهاز الوكيل، يمكنك أيضا التحقق من حالة التكميل عن طريق تشغيل:
 
 ```bash
 mdatp health
 ```
-
 ```Output
 ...
 licensed                                : true
@@ -216,39 +208,39 @@ org_id                                  : "[your organization identifier]"
 ...
 ```
 
-- **مرخص**: هذا يؤكد أن الجهاز مرتبط بمؤسستك.
+- **مرخص**: هذا الأمر يؤكد أن الجهاز مرتبط بمنظمتك.
 
 - **orgId**: هذا هو معرف مؤسسة Defender for Endpoint.
 
-## <a name="check-onboarding-status"></a>التحقق من حالة الإلحاق
+## <a name="check-onboarding-status"></a>التحقق من حالة الboarding
 
-يمكنك التحقق من أن الأجهزة قد تم إلحاقها بشكل صحيح عن طريق إنشاء برنامج نصي. على سبيل المثال، يتحقق البرنامج النصي التالي من الأجهزة المسجلة للحصول على حالة الإلحاق:
+يمكنك التحقق من أن الأجهزة تم تشغيلها بشكل صحيح عن طريق إنشاء برنامج نصي. على سبيل المثال، يتحقق البرنامج النصي التالي من الأجهزة التي تم تسجيلها للحصول على حالة الالتحاق:
 
 ```bash
 mdatp health --field healthy
 ```
 
-يطبع `1` الأمر أعلاه إذا تم إلحاق المنتج ويعمل كما هو متوقع.
+يطبع الأمر أعلاه `1` إذا كان المنتج في الحافظة وكان يعمل كما هو متوقع.
 
 > [!IMPORTANT]
-> عندما يبدأ المنتج لأول مرة، فإنه يقوم بتنزيل أحدث تعريفات مكافحة البرامج الضارة. اعتمادا على اتصالك بالإنترنت، قد يستغرق ذلك بضع دقائق. خلال هذا الوقت، يقوم الأمر أعلاه بإرجاع قيمة .`0`
+> عند بدء تشغيل المنتج للمرة الأولى، يتم تنزيل أحدث تعريفات مكافحة البرامج الضارة. قد يستغرق هذا الأمر بضع دقائق، وهذا يتوقف على اتصالك بالإنترنت. خلال هذه الفترة، يرجع الأمر أعلاه قيمة `0`.
 
-إذا لم يكن المنتج سليما، فإن رمز الخروج (الذي يمكن التحقق منه `echo $?`) يشير إلى المشكلة:
+إذا لم يكن المنتج سليما، فإن رمز الخروج (الذي يمكن `echo $?`التحقق منه) يشير إلى المشكلة:
 
-- 1 إذا لم يتم إلحاق الجهاز بعد.
-- 3 إذا تعذر تأسيس الاتصال بالبرنامج الخفي.
+- 1 إذا لم يتم تشغيل الجهاز بعد.
+- 3 إذا كان الاتصال بالداهمة غير منشأ.
 
 ## <a name="log-installation-issues"></a>مشاكل تثبيت السجل
 
- لمزيد من المعلومات حول كيفية العثور على السجل الذي تم إنشاؤه تلقائيا بواسطة المثبت عند حدوث خطأ، راجع [مشاكل تثبيت السجل](linux-resources.md#log-installation-issues).
+ لمزيد من المعلومات حول كيفية البحث عن السجل الذي تم إنشاؤه تلقائيا الذي تم إنشاؤه بواسطة المثبت عند حدوث خطأ، راجع [مشاكل تثبيت السجل](linux-resources.md#log-installation-issues).
 
 ## <a name="operating-system-upgrades"></a>ترقيات نظام التشغيل
 
-عند ترقية نظام التشغيل إلى إصدار رئيسي جديد، يجب أولا إلغاء تثبيت Defender لنقطة النهاية على Linux، وتثبيت الترقية، وأخيرا إعادة تكوين Defender لنقطة النهاية على Linux على جهازك.
+عند ترقية نظام التشغيل إلى إصدار رئيسي جديد، يجب أولا إلغاء تثبيت Defender ل Endpoint على Linux، وتثبيت الترقية، وأخيرا إعادة تكوين Defender ل Endpoint على Linux على جهازك.
 
-## <a name="uninstallation"></a>الغاء التثبيت
+## <a name="uninstallation"></a>إلغاء التثبيت
 
-إنشاء وحدة *نمطية remove_mdatp* مشابهة *install_mdatp* مع المحتويات التالية في *init.pp* ملف:
+إنشاء وحدة *نمطية remove_mdatp* *مماثلة install_mdatp مع* المحتويات التالية في *init.pp* ملف:
 
 ```bash
 class remove_mdatp {

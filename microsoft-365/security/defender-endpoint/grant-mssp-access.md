@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb92b67b3f19c578d12eb9673d2f80d5fadd131f
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: c8a96f3dba51de09a7237279b4053b9f4ed9b4a7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63583138"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470472"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>منح موفر خدمة الأمان المدار (MSSP) حق الوصول (معاينة)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mssp-support-abovefoldlink)
@@ -57,7 +57,7 @@ ms.locfileid: "63583138"
 
     لتمكين RBAC في مدخل Microsoft 365 Defender العميل، يمكنك الوصول إلى الإعدادات > أذونات **>** الأدوار و"تشغيل الأدوار"، من حساب مستخدم مع حقوق المسؤول العام أو مسؤول الأمان.
 
-    ![صورة الوصول إلى MSSP.](images/mssp-access.png)
+    :::image type="content" source="images/mssp-access.png" alt-text="الوصول إلى MSSP" lightbox="images/mssp-access.png":::
 
     بعد ذلك، قم بإنشاء أدوار RBAC لتلبية احتياجات طبقة MSSP SOC. ربط هذه الأدوار ب مجموعات المستخدمين التي تم إنشاؤها عبر "مجموعات المستخدمين المعينين".
 
@@ -87,7 +87,7 @@ ms.locfileid: "63583138"
 
     للقيام بذلك، في مستأجر AD للعميل، يمكنك الوصول إلى إدارة الهوية: الكتالوجات وإضافة **كتالوج جديد**. في مثالنا، سنسميه **MSSP Accesses**.
 
-    ![صورة لكتالوج جديد.](images/goverance-catalog.png)
+    :::image type="content" source="images/goverance-catalog.png" alt-text="صفحة الكتالوج الجديد" lightbox="images/goverance-catalog.png":::
 
     لمزيد من المعلومات، راجع [إنشاء كتالوج موارد](/azure/active-directory/governance/entitlement-management-catalog-create).
 
@@ -103,7 +103,7 @@ ms.locfileid: "63583138"
     - تنتهي صلاحية Access التلقائي بعد 365 يوما
 
     > [!div class="mx-imgBorder"]
-    > ![صورة لحزمة وصول جديدة.](images/new-access-package.png)
+    > :::image type="content" source="images/new-access-package.png" alt-text="صفحة حزمة الوصول الجديد" lightbox="images/new-access-package.png":::
 
     لمزيد من المعلومات، راجع [إنشاء حزمة وصول جديدة](/azure/active-directory/governance/entitlement-management-access-package-create).
 
@@ -112,7 +112,7 @@ ms.locfileid: "63583138"
     يستخدم محللو MSSP SOC ارتباط مدخل الوصول الخاص ب MsSP لطلب الوصول عبر حزم الوصول التي تم إنشاؤها. الارتباط دائم، مما يعني أنه قد يتم استخدام الارتباط نفسه مع مرور الوقت للمحللين الجدد. يدخل طلب المحلل في قائمة انتظار للموافقة عليه من قبل **الموافقين على محللي MSSP**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة لخصائص Access.](images/access-properties.png)
+    > :::image type="content" source="images/access-properties.png" alt-text="صفحة الخصائص" lightbox="images/access-properties.png":::
 
     يقع الارتباط في صفحة نظرة عامة لكل حزمة وصول.
 

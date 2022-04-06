@@ -1,6 +1,6 @@
 ---
-title: إعلامات Microsoft Defender for Identity في Microsoft 365 Defender
-description: تعرف على كيفية تعيين إعلامات Microsoft Defender for Identity في Microsoft 365 Defender.
+title: Microsoft Defender for Identity الإعلامات في Microsoft 365 Defender
+description: تعرف على كيفية تعيين Microsoft Defender for Identity الإعلامات في Microsoft 365 Defender.
 ms.date: 05/20/2021
 ms.topic: how-to
 author: dcurwin
@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fa740b483cd1a9591f7d4f7ef1961c5e96d4d44b
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 89ed7ae50bf89c28bde81ea02e8905d0056ede53
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682229"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470912"
 ---
 # <a name="defender-for-identity-notifications-in-microsoft-365-defender"></a>Defender for Identity notifications in Microsoft 365 Defender
 
@@ -23,7 +23,7 @@ ms.locfileid: "63682229"
 - Microsoft 365 Defender
 - Defender for Identity
 
-تشرح هذه المقالة كيفية العمل مع [إعلامات Microsoft Defender for Identity](/defender-for-identity) [في](/microsoft-365/security/defender/overview-security-center) Microsoft 365 Defender.
+تشرح هذه المقالة كيفية العمل مع [Microsoft Defender for Identity الإعلامات](/defender-for-identity) في [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 > [!IMPORTANT]
 > كجزء من عملية التحقق من Microsoft 365 Defender، تغيرت بعض الخيارات والتفاصيل من موقعها في مدخل Defender for Identity. الرجاء قراءة التفاصيل أدناه لاكتشاف مكان العثور على كل من الميزات المألوفة والميزات الجديدة.
@@ -34,17 +34,18 @@ ms.locfileid: "63682229"
 
 1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>، **انتقل إلى الإعدادات** ثم **الهويات**.
 
-    ![انتقل إلى الإعدادات، ثم الهويات.](../../media/defender-identity/settings-identities.png)
+  :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="الخيار &quot;الهويات&quot; في العمود &quot;اسم&quot;" lightbox="../../media/defender-identity/settings-identities.png":::
+
 
 1. حدد **إعلامات مشاكل الصحة**.
 
 1. أدخل عنوان البريد الإلكتروني للمستلم. حدد **إضافة**.
 
-    ![أدخل عنوان البريد الإلكتروني لقضايا الصحة.](../../media/defender-identity/health-email-recipient.png)
+   :::image type="content" source="../../media/defender-identity/health-email-recipient.png" alt-text="عنصر القائمة الفرعية إعلامات مشاكل الصحة" lightbox="../../media/defender-identity/health-email-recipient.png":::
 
 1. عندما يكتشف Defender for Identity مشكلة في الصحة، سيتلقى المستلمون إعلاما بالبريد الإلكتروني مع التفاصيل.
 
-    ![مثال على البريد الإلكتروني الخاص مشكلة في الصحة.](../../media/defender-identity/health-email.png)
+   :::image type="content" source="../../media/defender-identity/health-email.png" alt-text="البريد الإلكتروني الخاص مشكلة الصحة" lightbox="../../media/defender-identity/health-email.png":::
 
     > [!NOTE]
     > يوفر البريد الإلكتروني ارتباطين للحصول على مزيد من التفاصيل حول المشكلة. يمكنك إما الانتقال إلى **مركز صحة MDI** أو مركز الصحة **الجديد في M365D**.
@@ -55,13 +56,13 @@ ms.locfileid: "63682229"
 
 1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>، **انتقل إلى الإعدادات** ثم **الهويات**.
 
-    ![انتقل إلى الإعدادات، ثم الهويات.](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="الخيار &quot;الهويات&quot;" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. حدد **إعلامات التنبيهات**.
 
 1. أدخل عنوان البريد الإلكتروني للمستلم. حدد **إضافة**.
 
-    ![أدخل عنوان البريد الإلكتروني للتنبيهات التي تم الكشف عنها.](../../media/defender-identity/alert-email-recipient.png)
+   :::image type="content" source="../../media/defender-identity/alert-email-recipient.png" alt-text="عنصر القائمة الفرعية إعلامات التنبيه" lightbox="../../media/defender-identity/alert-email-recipient.png":::
 
 ## <a name="syslog-notifications"></a>إعلامات Syslog
 
@@ -72,17 +73,17 @@ ms.locfileid: "63682229"
 
 1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>، **انتقل إلى الإعدادات** ثم **الهويات**.
 
-    ![انتقل إلى الإعدادات، ثم الهويات.](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="خيار الهويات في العمود &quot;الاسم&quot;" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. حدد **إعلامات Syslog**.
 
 1. لتمكين إعلام syslog، قم بتعيين تبديل خدمة **Syslog** إلى **الموضع عند** .
 
-    ![تشغيل خدمة syslog.](../../media/defender-identity/syslog-service.png)
+   :::image type="content" source="../../media/defender-identity/syslog-service.png" alt-text="خيار خدمة Syslog الذي يمكن تشغيله" lightbox="../../media/defender-identity/syslog-service.png":::
 
 1. حدد **تكوين الخدمة**. سيتم فتح جزء حيث يمكنك إدخال تفاصيل خدمة syslog.
 
-    ![أدخل تفاصيل خدمة syslog.](../../media/defender-identity/syslog-sensor.png)
+   :::image type="content" source="../../media/defender-identity/syslog-sensor.png" alt-text="الصفحة التي تدخل فيها تفاصيل خدمة Syslog" lightbox="../../media/defender-identity/syslog-sensor.png":::
 
 1. أدخل التفاصيل التالية:
 
@@ -97,7 +98,7 @@ ms.locfileid: "63682229"
 
 1. بعد تكوين خدمة **Syslog**، يمكنك اختيار أنواع الإعلامات (التنبيهات أو المشاكل الصحية) التي تريد إرسالها إلى خادم Syslog.
 
-    ![تم تكوين خدمة Syslog.](../../media/defender-identity/syslog-configured.png)
+   :::image type="content" source="../../media/defender-identity/syslog-configured.png" alt-text="تم تحديد الخيار &quot;تم تكوين خدمة Syslog&quot;" lightbox="../../media/defender-identity/syslog-configured.png":::
 
 ## <a name="see-also"></a>راجع أيضًا
 

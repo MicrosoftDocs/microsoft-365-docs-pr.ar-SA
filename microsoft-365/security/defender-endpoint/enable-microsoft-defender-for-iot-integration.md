@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 70d8586cb8f8babcdc709a67632f32103e9420ce
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: 00b7a7abbf6c9fcb9395723e5e62ef0e89b2114a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "63583763"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470516"
 ---
 # <a name="enable-microsoft-defender-for-iot-integration"></a>تمكين تكامل Microsoft Defender for IoT
 
@@ -36,11 +36,11 @@ ms.locfileid: "63583763"
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-يمكن أن يتكامل Microsoft Defender for Endpoint الآن مع Microsoft Defender for IoT. يعمل هذا التكامل على توسيع إمكانات اكتشاف جهازك باستخدام إمكانات المراقبة بدون وكيل التي يوفرها Microsoft Defender for IoT. سيساعد ذلك على تأمين أجهزة IoT الخاصة بالمؤسسات والمتصلة بشبكة IT، مثل أجهزة Voice عبر بروتوكول الإنترنت (VoIP) والطابعات والكاميرات. وهو يسمح ل المؤسسات ب الاستفادة من حل متكامل واحد يعمل على تأمين جميع البنية الأساسية ل IoT والتقنية التشغيلية (OT). لمزيد من المعلومات، راجع [حماية شبكة Enterprise IoT](/azure/defender-for-iot/organizations/overview-eiot).
+Microsoft Defender لنقطة النهاية الآن التكامل مع Microsoft Defender for IoT. يعمل هذا التكامل على توسيع إمكانات اكتشاف جهازك باستخدام إمكانات المراقبة بدون وكيل التي يوفرها Microsoft Defender for IoT. سيساعد ذلك على تأمين أجهزة IoT الخاصة بالمؤسسات والمتصلة بشبكة IT، مثل أجهزة Voice عبر بروتوكول الإنترنت (VoIP) والطابعات والكاميرات. وهو يسمح ل المؤسسات ب الاستفادة من حل متكامل واحد يعمل على تأمين جميع البنية الأساسية ل IoT والتقنية التشغيلية (OT). لمزيد من المعلومات، راجع [حماية شبكة Enterprise IoT](/azure/defender-for-iot/organizations/overview-eiot).
 
-مع تمكين هذا التكامل، سيتمكن Microsoft Defender لنقطة النهاية من زيادة مستوى الرؤية للمساعدة في تحديد موقع أجهزة IoT في شبكتك وتحديدها وتأمينها. سيتم مزامنة أجهزة IoT التي اكتشفها Microsoft Defender for IoT أو Microsoft Defender ل Endpoint تلقائيا عبر المدخلين. سيمنحك ذلك طريقة عرض موحدة واحدة لمخزون OT/IoT الكامل إلى جانب باقي أجهزة IT (محطات العمل، الخوادم، والأجهزة المحمولة).
+مع تمكين هذا التكامل، Microsoft Defender لنقطة النهاية المزيد من الرؤية للمساعدة في تحديد موقع أجهزة IoT في شبكتك وتحديدها وتأمينها. سيتم مزامنة أجهزة IoT التي اكتشفها Microsoft Defender for IoT أو Microsoft Defender لنقطة النهاية تلقائيا عبر المدخلين. سيمنحك ذلك طريقة عرض موحدة واحدة لمخزون OT/IoT الكامل إلى جانب باقي أجهزة IT (محطات العمل، الخوادم، والأجهزة المحمولة).
 
-يتضمن Microsoft Defender for IoT أيضا مستشعر شبكة قابلا للنشر يوفر مصدر بيانات إضافي. يوفر لك إعداد مستشعر الشبكة كجزء من تكاملك طريقة العرض الأكثر اكتمالا لأجهزتك التي تعمل ب IoT وOT، خاصة بالنسبة إلى أجزاء الشبكة حيث لا يكون Microsoft Defender حساس نقاط النهاية موجودا، وعندما يصل الموظفون إلى المعلومات عن بعد.
+يتضمن Microsoft Defender for IoT أيضا مستشعر شبكة قابلا للنشر يوفر مصدر بيانات إضافي. يوفر لك إعداد مستشعر الشبكة كجزء من تكاملك طريقة العرض الأكثر اكتمالا لأجهزتك التي تعمل ب IoT وOT، خاصة بالنسبة إلى شرائح الشبكة حيث لا توجد أدوات استشعار Microsoft Defender لنقطة النهاية، وعندما يصل الموظفون إلى المعلومات عن بعد.
 
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
@@ -53,7 +53,7 @@ ms.locfileid: "63583763"
 
 1. في جزء التنقل من [https://security.microsoft.com](https://security.microsoft.com/) المدخل **، حدد الإعدادات** \> **اكتشاف** \> **جهاز Microsoft Defender ل IoT**.
 
-    ![صورة لإعداد تكامل IoT.](images/enable-defender-for-iot.png)
+   :::image type="content" source="images/enable-defender-for-iot.png" alt-text="إعداد تكامل IoT" lightbox="images/enable-defender-for-iot.png":::
 
 2. **حدد اشتراك Azure** من القائمة المنسدلة للاشتراكات المتوفرة في مستأجر Azure Active Directory وحدد **حفظ**.
 
@@ -65,7 +65,7 @@ ms.locfileid: "63583763"
 
 ## <a name="turn-off-subscription-integration"></a>إيقاف تشغيل تكامل الاشتراك
 
-يمكنك إيقاف تشغيل تكامل اشتراك Azure من صفحة إعدادات Microsoft Defender for IoT في [https://security.microsoft.com](https://security.microsoft.com/) المدخل. بمجرد إيقاف تشغيل الاشتراك، لن ترى أجهزة IoT التي اكتشفها Microsoft Defender for IoT في مخزون أجهزة Microsoft Defender for Endpoint.
+يمكنك إيقاف تشغيل تكامل اشتراك Azure من صفحة إعدادات Microsoft Defender for IoT في [https://security.microsoft.com](https://security.microsoft.com/) المدخل. بمجرد إيقاف تشغيل الاشتراك، لن ترى أجهزة IoT التي اكتشفها Microsoft Defender for IoT في Microsoft Defender لنقطة النهاية المخزون من الأجهزة.
 
 ## <a name="see-also"></a>راجع أيضًا
 

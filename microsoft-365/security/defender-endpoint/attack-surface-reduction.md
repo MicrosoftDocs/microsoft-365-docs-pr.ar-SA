@@ -1,7 +1,7 @@
 ---
 title: استخدام قواعد الحد من سطح الهجوم لمنع إصابة البرامج الضارة
 description: يمكن لقواعد تقليل مساحة الهجوم المساعدة في منع استغلال التطبيقات والبرامج النصية لإصابة الأجهزة بالبرامج الضارة.
-keywords: قواعد الحد من سطح الهجوم، asr، hips، نظام منع اقتحام المضيف، قواعد الحماية، مكافحة استغلال، مكافحة استغلال، استغلال، منع الإصابة، Microsoft Defender ل Endpoint
+keywords: قواعد الحد من سطح الهجوم، asr، hips، نظام منع اقتحام المضيف، قواعد الحماية، مكافحة استغلال، مكافحة استغلال، استغلال، منع إصابة، Microsoft Defender لنقطة النهاية
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,23 +21,23 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 53f338ec713038841ab5cc089c12cebf7fe46131
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c09405043caeea57fdad1c241dfcd70e47ccd6f1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680610"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470721"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>نظرة عامة حول قواعد الحد من سطح الهجوم
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>سبب أهمية قواعد الحد من سطح الهجوم
 
-يتضمن سطح الهجوم الخاص مؤسستك كل الأماكن التي يمكن أن يعرض فيها مهاجم أجهزة مؤسستك أو شبكاتها للخطر. يعني تقليل سطح الهجوم حماية أجهزة مؤسستك وشبكة الاتصال بها، مما يترك للمهاجمين طرقا أقل لتنفيذ الهجمات. يمكن أن يساعدك تكوين قواعد تقليل مساحة الهجوم في Microsoft Defender for Endpoint!
+يتضمن سطح الهجوم الخاص مؤسستك كل الأماكن التي يمكن أن يعرض فيها مهاجم أجهزة مؤسستك أو شبكاتها للخطر. يعني تقليل سطح الهجوم حماية أجهزة مؤسستك وشبكة الاتصال بها، مما يترك للمهاجمين طرقا أقل لتنفيذ الهجمات. يمكن أن يساعدك تكوين قواعد تقليل مساحة Microsoft Defender لنقطة النهاية الهجوم!
 
 تستهدف قواعد الحد من سطح الهجوم سلوكيات برامج معينة، مثل:
 
@@ -53,7 +53,7 @@ ms.locfileid: "63680610"
 
 يمكنك تقييم كيفية تأثير قاعدة تقليل مساحة الهجوم على الشبكة عن طريق فتح توصية الأمان لهذه [القاعدة في إدارة المخاطر والثغرات الأمنية](/windows/security/threat-protection/#tvm).
 
-:::image type="content" source="images/asrrecommendation.png" alt-text="Reco الأمان لقاعدة الحد من سطح الهجوم.":::
+:::image type="content" source="images/asrrecommendation.png" alt-text="توصية ASR" lightbox="images/asrrecommendation.png":::
 
 في جزء تفاصيل التوصية، تحقق من تأثير المستخدم لتحديد النسبة المئوية لأجهزتك التي يمكنها قبول نهج جديد لتمكين القاعدة في وضع الحظر دون التأثير سلبا على الإنتاجية.
 
@@ -88,7 +88,7 @@ ms.locfileid: "63680610"
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>الحالات التي يكون فيها وضع التحذير غير معتمد
 
-لا يدعم وضع التحذير ثلاث قواعد للحد من سطح الهجوم عند تكوينها في إدارة نقاط النهاية من Microsoft. (إذا كنت تستخدم "نهج المجموعة" لتكوين قواعد الحد من سطح الهجوم، يكون وضع التحذير معتمدا.) القواعد الثلاث التي لا تدعم وضع التحذير عند تكوينها في إدارة نقاط النهاية من Microsoft هي كما يلي:
+لا يدعم وضع التحذير ثلاث قواعد للحد من سطح الهجوم عند تكوينها في إدارة نقاط النهاية من Microsoft. (إذا كنت تستخدم نهج المجموعة لتكوين قواعد الحد من سطح الهجوم، يكون وضع التحذير معتمدا.) القواعد الثلاث التي لا تدعم وضع التحذير عند تكوينها في إدارة نقاط النهاية من Microsoft هي كما يلي:
 
 - [حظر JavaScript أو VBScript من بدء تشغيل المحتوى القابل للتنفيذ الذي تم](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content) تنزيله (GUID `d3e037e1-3eb8-44c8-a917-57927947596d`)
 - [حظر الثبات عبر اشتراك حدث WMI](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)
@@ -133,7 +133,7 @@ ms.locfileid: "63680610"
 - عمليات المراقبة والتحليلات ومسير العمل المتوفرة في [Defender for Endpoint](microsoft-defender-endpoint.md)
 - قدرات إعداد التقارير والتكوين في [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
-لا تتوفر هذه الإمكانات المتقدمة مع ترخيص Windows Professional أو Windows E3. ومع ذلك، إذا كان لديك هذه التراخيص، يمكنك استخدام "عارض الأحداث" برنامج الحماية من الفيروسات من Microsoft Defender لمراجعة أحداث قاعدة تقليل مساحة الهجوم.
+لا تتوفر هذه الإمكانات المتقدمة مع ترخيص Windows Professional أو Windows E3. ومع ذلك، إذا كان لديك تلك التراخيص، يمكنك استخدام عارض الأحداث برنامج الحماية من الفيروسات من Microsoft Defender لمراجعة أحداث قاعدة تقليل مساحة الهجوم.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>مراجعة أحداث الحد من سطح الهجوم في مدخل Microsoft 365 Defender الهجوم
 
@@ -148,13 +148,13 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>مراجعة أحداث الحد من سطح الهجوم في Windows الحدث
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>مراجعة أحداث الحد من سطح الهجوم في Windows عارض الأحداث
 
 يمكنك مراجعة سجل الأحداث Windows لعرض الأحداث التي تم إنشاؤها بواسطة قواعد تقليل مساحة الهجوم:
 
 1. قم [بتنزيل حزمة](https://aka.ms/mp7z2w) التقييم واستخراج الملف *cfa-events.xmlإلى موقع* يمكن الوصول إليه بسهولة على الجهاز.
 
-2. أدخل الكلمات، *عارض* الأحداث، في قائمة البدء لفتح Windows الحدث.
+2. أدخل الكلمات، *عارض الأحداث*، في قائمة البدء لفتح Windows عارض الأحداث.
 
 3. ضمن **إجراءات**، حدد **استيراد طريقة عرض مخصصة...**.
 

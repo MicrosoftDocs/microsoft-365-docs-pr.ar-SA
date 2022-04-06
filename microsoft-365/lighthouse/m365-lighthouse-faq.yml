@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: بالنسبة إلى موفري الخدمات المدارة (MSPs) Microsoft 365 المنارة، احصل على إجابات على الأسئلة المتكررة (الأسئلة المتكررة) حول Microsoft 365 المنارة.
-  ms.openlocfilehash: 84339dd1e4dfe57765200dba42b8d8a954a41f49
-  ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+  ms.openlocfilehash: 34b47e6a8834502db2a9598a425fa3bca123cdaa
+  ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 04/04/2022
-  ms.locfileid: "64635032"
+  ms.lasthandoff: 04/05/2022
+  ms.locfileid: "64645191"
 title: Microsoft 365 المنارة الأسئلة المتكررة (الأسئلة المتكررة)
 summary: >
   تحتوي هذه المقالة على إجابات على الأسئلة المتكررة (الأسئلة المتكررة) حول Microsoft 365 المنارة.
@@ -32,65 +32,65 @@ summary: >
 sections:
 - name: تم التجاهل
   questions:
-  - question: ما هو Microsoft 365 المنارة؟
+  - question: What is Microsoft 365 Lighthouse?
     answer: >
-      Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين الأجهزة والبيانات والمستخدمين وإدارتهم على نطاق واسع لعملاء الشركات الصغيرة والمتوسطة الحجم الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. تبسط "المنارة" عملية التهيئة للمستأجرين من خلال التوصية باساسيات تكوين الأمان المصممة ل SMBs وتوفير طرق عرض متعددة المستأجرين عبر كل بيئات العملاء. لمزيد من المعلومات، راجع نظرة [عامة Microsoft 365 المنارة](m365-lighthouse-overview.md).
-  - question: ما الفرق بين Microsoft 365 المنارة ومنارة Azure؟
+      Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business. Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments. For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+  - question: What's the difference between Microsoft 365 Lighthouse and Azure Lighthouse?
     answer: >
-      Microsoft 365 المنارة على Microsoft 365 الخدمات بدلا من خدمات Azure. على الرغم من أن Azure Lighthouse مضمن في مدخل Azure ويسمح لشركاء المعلومات بإدارة مستأجرين متعددين ل Azure، فإن Microsoft 365 المنارة هي مدخل مستقل يساعد MSPs على إدارة العديد من Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business  مستأجرو العملاء. لمزيد من المعلومات حول Microsoft 365 المنارة، راجع نظرة [عامة Microsoft 365 المنارة](m365-lighthouse-overview.md). لمزيد من المعلومات حول منارة Azure، راجع [ما هي منارة Azure؟](/azure/lighthouse/overview)
-  - question: ما هي تكلفة Microsoft 365 المنارة؟
+      Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
+  - question: How much does Microsoft 365 Lighthouse cost?
     answer: >
-      لا تقترن أي تكاليف إضافية باستخدام "المنارة" لإدارة Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business والخدمات والأجهزة المتصلة. تتوفر المنارة ل MSPs التي توفر الخدمات للشركات الصغيرة إلى المتوسطة الحجم والذين تربطهم علاقة Cloud Solution Provider (CSP) مع عملائهم. تجدر الإشارة إلى أن الموفرين غير المباشرين غير معتمدين حاليا بواسطة Lighthouse. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 المنارة](m365-lighthouse-requirements.md).
-  - question: ما هي متطلبات استخدام Microsoft 365 المنارة؟
+      No additional costs are associated with using Lighthouse to manage Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business services and connected devices. Lighthouse is available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. Note that indirect providers are not currently supported by Lighthouse. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: What are the requirements to use Microsoft 365 Lighthouse?
     answer: >
-      للحصول على قائمة بالمتطلبات الحالية، راجع [متطلبات Microsoft 365 المنارة](m365-lighthouse-requirements.md).
-  - question: ما هي البلدان والمناطق التي Microsoft 365 المنارة؟
+      For a list of current requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: In which countries and regions is Microsoft 365 Lighthouse available?
     answer: >
-      تتوفر المنارة في جميع البلدان التي Microsoft 365 فيها، باستثناء الصين والسلطة الفلسطينية. ومع ذلك، تعتمد الميزات في المنارة مثل إدارة الأجهزة وإدارة المخاطر على Microsoft Intune، وتعتمد إدارة المستخدمين على Azure Active Directory (Azure AD)، وقد لا تتوفر Intune و Azure AD في بعض البلدان والمناطق. للحصول على قائمة كاملة بتوفر Microsoft 365 Azure AD و Intune، راجع [التوفر الدولي](https://www.microsoft.com/microsoft-365/business/international-availability).
+      Lighthouse is available in all countries where Microsoft 365 is available, except China and Palestinian Authority. However, features in Lighthouse such as device management and threat management rely on Microsoft Intune, and user management relies on Azure Active Directory (Azure AD), and Intune and Azure AD may not be available in certain countries and regions. For a complete list of Microsoft 365, Azure AD, and Intune availability, see [International availability](https://www.microsoft.com/microsoft-365/business/international-availability).
 
 
-      لا تتوفر المنارة في السحاب الوطنية.
-  - question: كيف أعمل التسجيل للحصول على Microsoft 365 المنارة؟
+      Lighthouse is not available in national clouds.
+  - question: How do I sign up for Microsoft 365 Lighthouse?
     answer: >
-      للتسجيل في "المنارة"، ستحتاج إلى التسجيل في برنامج CSP. يتعذر علينا حاليا دعم الموفرين غير المباشرين. للحصول على إرشادات حول كيفية التسجيل، راجع [التسجيل للحصول على Microsoft 365 المنارة](m365-lighthouse-sign-up.md). لمعرفة المزيد حول برنامج CSP، راجع نظرة عامة Cloud Solution Provider [البرنامج](/partner-center/csp-overview).
-  - question: لقد انتهيت من التسجيل، فلماذا لا أرى أي بيانات مستأجر عميل؟
+      To sign up for Lighthouse, you'll need to be registered with the CSP program. We're currently unable to support indirect providers. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
+  - question: I finished signing up, so why don't I see any customer tenant data?
     answer: >
-      قد يستغرق تحميل بيانات مستأجر العميل داخل المنارة ما يصل إلى 48 ساعة. إذا كان قد انتهى أكثر من 48 ساعة منذ أن أكملت عملية الادمال، فالرجاء التواصل مع فريق الدعم للحصول على المساعدة. ستحتاج إلى أن تعلمه عند إكمال التركب وتوفير أي لقطات شاشة وسجلات ذات صلة. لمزيد من المعلومات، راجع [الحصول على تعليمات ودعم Microsoft 365 المنارة](m365-lighthouse-get-help-and-support.md).
-  - question: لماذا أرى بيانات لبعض مستأجري العملاء وليس للآخرين؟
-    answer: "لكي تظهر بيانات مستأجر العميل في المنارة، يجب على MSPs إنشاء وصول مفوض لإدارة مستأجر العميل. إن امتيازات المسؤول المفوض (DAP) مطلوبة لتكتاب العملاء في المنارة. نوصي بإنشاء امتيازات المسؤول المفوض (GDAP) مع العملاء لتمكين وصول مفوض أكثر أمانا. راجع [نظرة عامة حول الأذونات في Microsoft 365 المنارة](m365-lighthouse-overview-of-permissions.md) للحصول على تفاصيل إضافية حول أدوار المستأجرين المفوضين الشريكين والموصي باستخدام المنارة. بينما يكون DAP و GDAP مترابطين، فإن GDAP سيكون له الأسبقية للعملاء حيث يكون النموذجان في مكانهما. قريبا، سيتمكن العملاء الذين لا يوجد معهم سوى GDAP (بدون DAP) من التمكن من الوصول إلى المنارة. لمزيد من المعلومات حول الوصول المفوض، راجع طلب علاقة موزع [مع عميل في مركز الشركاء](/partner-center/request-a-relationship-with-a-customer). يجب أن يكون لدى المستأجرين أيضا ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business واحد على الأقل وأقل من 1000 مستخدم مرخص في المستأجر الخاص بهم. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 المنارة](m365-lighthouse-requirements.md) Microsoft 365 [نظرة عامة على صفحة مستأجري المنارة](m365-lighthouse-tenants-page-overview.md).  \n"
-  - question: ماذا لو لم أرغب في رؤية مستأجرين معينين في Microsoft 365 المنارة؟
+      It can take up to 48 hours for customer tenant data to load within Lighthouse. If it's been more than 48 hours since you completed onboarding, please reach out to our Support team for help. You'll need to let them know when you completed onboarding and provide any relevant screenshots and logs. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+  - question: Why do I see data for some customer tenants but not others?
+    answer: "For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Delegated Admin Privileges (DAP) is required to onboard customers to Lighthouse. We recommend establishing Granular Delegated Admin Privileges (GDAP) with your customers to enable more secure delegated access. See [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) for additional details on which delegated and partner tenant roles are recommended to use Lighthouse. While DAP and GDAP coexist, GDAP will take precedence for customers where both models are in place. Soon, customers with just GDAP (and no DAP) will be able to onboard to Lighthouse. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business license and no more than 1000 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Microsoft 365 Lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md).  \n"
+  - question: What if I don't want to see certain tenants in Microsoft 365 Lighthouse?
     answer: >
-      إذا كنت لا تريد رؤية مستأجرين معينين وبياناتهم في "المنارة"، يمكنك إلغاء تنشيط هؤلاء المستأجرين. تنشيط مستأجر، اتبع الخطوات التالية:
+      If you don't want to see certain tenants and their data in Lighthouse, you can inactivate those tenants. To inactivate a tenant, follow these steps:
 
 
-      1. حدد **المستأجرين** من جزء التنقل الأيسر لفتح **صفحة المستأجرين** .
+      1. Select **Tenants** from the left navigation pane to open the **Tenants** page.
 
-      1. ابحث عن المستأجر الذي تريد إلغاء تنشيطه، وحدد النقاط الثلاث المجاورة لاسم المستأجر، ثم حدد **إلغاء تنشيط المستأجر**.
+      1. Find the tenant that you want to inactivate, select the three dots next to the tenant name, and then select **Inactivate tenant**.
 
-      1. في رسالة التأكيد التي تظهر، حدد **تأكيد** تنشيط المستأجر.
+      1. In the confirmation message that appears, select **Confirm** to inactivate the tenant.
           > [!NOTE]
-          > بمجرد إلغاء تنشيط المستأجر، لا يمكنك اتخاذ إجراء بشأن المستأجر حتى اكتمال إلغاء تنشيطه. قد يستغرق إكمال عملية إلغاء التفعية ما يصل إلى 48 ساعة.
+          > Once you inactivate a tenant, you can't take action on the tenant until inactivation is complete. It may take up to 48 hours for inactivation to complete.
 
-      لمعرفة المزيد حول المستأجرين، راجع Microsoft 365 نظرة عامة على صفحة [مستأجري المنارة](m365-lighthouse-tenants-page-overview.md).
-  - question: هل Microsoft 365 المنارة إذا كان لدى مستأجري العملاء اشتراكات أخرى إلى جانب Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business؟
+      To learn more about tenants, see [Microsoft 365 Lighthouse tenants page overview](m365-lighthouse-tenants-page-overview.md).
+  - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business?
     answer: >
-      تساعدك "المنارة" على إدارة مستأجري العملاء الذين لديهم Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business جديدة للمستخدمين. بالنسبة للمستخدمين في مستأجري العملاء الذين ليس لديهم هذه التراخيص، ستكون وظائف "المنارة" محدودة. على سبيل المثال، إذا فقد أحد المستخدمين ترخيصا يتضمن Intune، فإن أجهزة هذا المستخدم، حالة توافق الجهاز، حالة التهديدات لن تكون متوفرة؛ وإذا لم يكن لدى المستخدم ترخيص يتضمن Azure AD P1، لن تتوفر كلمة المرور الخاصة بهذا المستخدم وإدارة تسجيل الدخول. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 المنارة](m365-lighthouse-requirements.md).
-  - question: كيف أعمل لإدارة أجهزة الكمبيوتر السحابية للعملاء في Microsoft 365 المنارة؟
+      Lighthouse helps you manage customer tenants that have Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business licenses in place for their users. For users in customer tenants who don't have these licenses, Lighthouse functionality will be limited. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: How do I qualify to manage customer Cloud PCs in Microsoft 365 Lighthouse?
     answer: >
-      إذا كنت تلبي متطلبات استخدام المنارة، تكون مؤهلا لإدارة أجهزة الكمبيوتر السحابية للعملاء في المنارة. للحصول على قائمة بالمتطلبات الحالية، راجع [متطلبات Microsoft 365 المنارة](m365-lighthouse-requirements.md).
-  - question: أين يمكنني شراء تراخيص Windows 365 (الكمبيوتر السحابي) لعملائي؟
+      If you meet the requirements to use Lighthouse, then you're qualified to manage customer Cloud PCs in Lighthouse. For a list of current requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: Where can I purchase Windows 365 (Cloud PC) licenses for my customers?
     answer: >
-      يمكنك شراء Windows 365 من خلال جميع قنوات المبيعات التجارية المتوفرة من Microsoft. ترخيص واحد تم شراؤه يعادل شراء كمبيوتر سحابة واحد. في الوقت الحالي، يمكن تعيين كمبيوتر سحابة واحد فقط لكل مستخدم من نوع SKU نفسه، ولكن يمكن تعيين عدة أجهزة كمبيوتر سحابية إذا كانت من أنواع SKU مختلفة. لمقارنة Windows 365 والأسعار، راجع [الحصول على الكمبيوتر السحابي لـ Windows 365 المناسبة لك](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
-  - question: كيف أعمل الحصول على المساعدة والدعم؟
+      You can purchase Windows 365 licenses through all available Microsoft commercial sales channels. One license purchased is equivalent to the purchase of one Cloud PC. Currently, each user can be assigned only one Cloud PC of the same SKU type, but they can be assigned multiple Cloud PCs if they are of different SKU types. To compare Windows 365 plans and pricing, see [Get the Windows 365 Cloud PC that’s right for you](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
+  - question: How do I get help and support?
     answer: >
-      في المنارة، حدد **؟** في أعلى المدخل لفتح **جزء** "تعليمات". من هنا، يمكنك الوصول إلى مقالات التعليمات الذاتية أو الاتصال بالدعم. لمزيد من المعلومات حول خيارات الدعم والدعم، راجع [الحصول على تعليمات ودعم Microsoft 365 المنارة](m365-lighthouse-get-help-and-support.md).
-  - question: أين يمكنني إرسال الملاحظات والأفكار؟
+      In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane. From here you can access self-help articles or contact support. For more information about help and support options, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+  - question: Where can I submit feedback and ideas?
     answer: >-
-      ملاحظاتك مهمة ومهمة بالنسبة لنا! هناك بعض الطرق المختلفة لإرسال الملاحظات:
+      Your feedback matters and is important to us! There are a few different ways for you to submit feedback:
 
 
-      - انتقل إلى صفحة ملاحظات [Microsoft 365 المنارة](https://aka.ms/m365lighthouseuservoice). يمكنك بدء محادثات حول "المنارة" Windows 365 الجديدة، أو نشر أسئلة للشركاء الآخرين أو موظفي Microsoft، وتقديم الملاحظات وأفكار الميزات، والمزيد.
+      - Go to the [Microsoft 365 Lighthouse Feedback page](https://aka.ms/m365lighthouseuservoice). You can start conversations about Lighthouse and Windows 365 features, post questions for other partners or Microsoft employees, provide feedback and feature ideas, and more.
 
-      - حدد أيقونة الملاحظات في الزاوية العلوية اليسرى من المنارة.
+      - Select the Feedback icon in the upper-right corner of Lighthouse.
 
-      - استجب للنافذة المنبثقة العرضية (لا يزيد عددها عن مرة واحدة في الشهر) في المنارة التي تطلب منك تقديم الملاحظات.
+      - Respond to the occasional (not more than once a month) pop-up window in Lighthouse that asks you to provide feedback.

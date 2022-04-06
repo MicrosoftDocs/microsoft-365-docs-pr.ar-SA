@@ -14,18 +14,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 91dd3dc8563e7bd443362c47190139101a5ede61
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: b5d9346746dba3b7b4c75909cb8e36e47c3c9d99
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63575856"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472496"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>محلل الأداء برنامج الحماية من الفيروسات من Microsoft Defender
 
 **ينطبق على**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 **ما هو برنامج الحماية من الفيروسات من Microsoft Defender الأداء؟**
 
@@ -74,7 +74,7 @@ ms.locfileid: "63575856"
 
 استنادا إلى الاستعلام، سيكون المستخدم قادرا على عرض البيانات الخاصة بعدد الفحص والمدة (الإجمالي/الحد الأدنى/المتوسط/max/median) والمسار وعملية الفحص والسبب. تعرض الصورة أدناه عينة الإخراج لاستعلام بسيط لأهم 10 ملفات للفحص. 
 
-:::image type="content" source="images/example-output.png" alt-text="مثال إخراج لاستعلام TopFiles أساسي":::
+:::image type="content" source="images/example-output.png" alt-text="مثال إخراج لاستعلام TopFiles أساسي" lightbox="images/example-output.png":::
 
 ### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>وظائف إضافية: التصدير والتحوير إلى CSV و JSON
 
@@ -120,7 +120,7 @@ New-MpPerformanceRecording -RecordTo <String >
 
 يوفر `New-MpPerformanceRecording` الأمر cmdlet هذا نظرة ثاقبة على الملفات التي تسبب مشاكل قد تتسبب في حدوث انخفاض في أداء برنامج الحماية من الفيروسات من Microsoft Defender. يتم توفير هذه الأداة "AS IS"، ولا تهدف إلى تقديم اقتراحات حول الاستثناءات. يمكن أن تقلل الاستثناءات مستوى الحماية على نقاط النهاية. يجب تعريف الاستثناءات، إن وجدت، بحذر.
 
-لمزيد من المعلومات حول محلل الأداء، راجع [مستندات محلل](/windows-hardware/test/wpt/windows-performance-analyzer) الأداء.
+لمزيد من المعلومات حول محلل الأداء[، راجع محلل الأداء](/windows-hardware/test/wpt/windows-performance-analyzer) المستندات.
 
 > [!IMPORTANT]
 > يتطلب الأمر cmdlet هذا امتيازات المسؤول المرتفعة.
@@ -217,7 +217,7 @@ Get-MpPerformanceReport    [-Path] <String>
 
 يوفر محلل الأداء نظرة ثاقبة حول الملفات التي قد تتسبب في حدوث انخفاض في أداء برنامج الحماية من الفيروسات من Microsoft Defender. يتم توفير هذه الأداة "AS IS" ولا تهدف إلى تقديم اقتراحات حول الاستثناءات. يمكن أن تقلل الاستثناءات مستوى الحماية على نقاط النهاية. يجب تعريف الاستثناءات، إن وجدت، بحذر.
 
-لمزيد من المعلومات حول محلل الأداء، راجع [مستندات محلل](/windows-hardware/test/wpt/windows-performance-analyzer) الأداء.
+لمزيد من المعلومات حول محلل الأداء[، راجع محلل الأداء](/windows-hardware/test/wpt/windows-performance-analyzer) المستندات.
 
 **إصدارات نظام التشغيل المعتمدة**
 

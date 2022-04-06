@@ -15,22 +15,22 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 013b189dca95fc63dc8d189d020fcf3f7727cf82
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 881ae2de7a6c752c2be9bfc5ccdbe350050f340b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "63578178"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471990"
 ---
 # <a name="cloud-protection-and-microsoft-defender-antivirus"></a>الحماية السحابية برنامج الحماية من الفيروسات من Microsoft Defender
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
 توفر تقنيات الجيل التالي برنامج الحماية من الفيروسات من Microsoft Defender حماية فورية وأتمتة من التهديدات الجديدة والناشئة. لتحديد التهديدات الجديدة ديناميكيا، تعمل تقنيات الجيل التالي مع مجموعات كبيرة من البيانات المتداخلة في أنظمة الأمان الذكي ل Microsoft Graph والذكاء الاصطناعي القوي (AI) التي تحركها نماذج التعلم الآلي المتقدمة. تعمل الحماية السحابية مع برنامج الحماية من الفيروسات من Microsoft Defender لتقديم حماية دقيقة وفي الوقت الحقيقي وذكية. 
 
-[:::image type="content" source="images/mde-cloud-protection.png" alt-text="رسم تخطيطي يعرض كيفية عمل الحماية السحابية مع برنامج الحماية من الفيروسات من Microsoft Defender":::](enable-cloud-protection-microsoft-defender-antivirus.md)
+[:::image type="content" source="images/mde-cloud-protection.png" alt-text="رسم تخطيطي يعرض كيفية عمل الحماية السحابية مع برنامج الحماية من الفيروسات من Microsoft Defender" lightbox="images/mde-cloud-protection.png":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > نوصي بإبقاء الحماية السحابية في وضع تشغيل. لمعرفة المزيد، [راجع لماذا يجب تمكين](why-cloud-protection-should-be-on-mdav.md) الحماية السحابية برنامج الحماية من الفيروسات من Microsoft Defender. 
@@ -41,7 +41,7 @@ ms.locfileid: "63578178"
 
 توضح منشورات المدونة التالية كيفية عمل الحماية السحابية:
 
-- [تعرف على التقنيات المتقدمة في قلب Microsoft Defender لحماية الجيل التالي من نقطة النهاية](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
+- [تعرف على التقنيات المتقدمة في جوهر Microsoft Defender لنقطة النهاية الجيل التالي](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
 
 - [لماذا برنامج الحماية من الفيروسات من Microsoft Defender هو الأكثر نشرا في المؤسسة](https://www.microsoft.com/security/blog/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise) 
 

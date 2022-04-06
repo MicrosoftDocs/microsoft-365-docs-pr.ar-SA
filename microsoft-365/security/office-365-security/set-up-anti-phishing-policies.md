@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: يمكن للمسؤولين التعرف على سياسات مكافحة التصيد الاحتيالي المتوفرة في Exchange Online Protection (EOP) و Microsoft Defender Office 365.
+description: يمكن للمسؤولين التعرف على سياسات مكافحة التصيد الاحتيالي المتوفرة في Exchange Online Protection (EOP) Microsoft Defender لـ Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a0f491c099e5a3b67866738267215e79ff6cbeb0
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 5389e83634bc92dd01908b16e8ca0a76dd76c765
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679533"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475686"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>سياسات مكافحة التصيد الاحتيالي في Microsoft 365
 
@@ -30,21 +30,21 @@ ms.locfileid: "63679533"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-تتوفر سياسات تكوين إعدادات الحماية من التصيد الاحتيالي في مؤسسات Microsoft 365 التي بها علب بريد Exchange Online، مؤسسات Exchange Online Protection (EOP) مستقلة بدون علب بريد Exchange Online، و Microsoft Defender ل Office 365 المؤسسات.
+تتوفر سياسات تكوين إعدادات الحماية من التصيد الاحتيالي في مؤسسات Microsoft 365 التي بها علب بريد Exchange Online، مؤسسات Exchange Online Protection (EOP) مستقلة بدون علب بريد Exchange Online، و Microsoft Defender لـ Office 365 المؤسسات.
 
-تتضمن أمثلة Microsoft Defender Office 365 المؤسسات التالية:
+تتضمن أمثلة Microsoft Defender لـ Office 365 المؤسسات ما يلي:
 
 - Microsoft 365 Enterprise E5 Microsoft 365 Education A5 وما إلى ذلك.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
-- [Microsoft Defender Office 365 كعناية](https://products.office.com/exchange/advance-threat-protection)
+- [Microsoft Defender لـ Office 365 كعناية](https://products.office.com/exchange/advance-threat-protection)
 
-يتم وصف الاختلافات عالية المستوى بين سياسات مكافحة التصيد الاحتيالي في EOP ونهج مكافحة التصيد الاحتيالي في Defender for Office 365 في الجدول التالي:
+يتم وصف الاختلافات عالية المستوى بين سياسات مكافحة التصيد الاحتيالي في EOP ونهج مكافحة التصيد الاحتيالي في Defender لـ Office 365 في الجدول التالي:
 
-|الميزة|سياسات مكافحة التصيد الاحتيالي في EOP|سياسات مكافحة التصيد الاحتيالي في Defender for Office 365|
+|الميزة|سياسات مكافحة التصيد الاحتيالي في EOP|سياسات مكافحة التصيد الاحتيالي في Defender لـ Office 365|
 |---|:---:|:---:|
 |النهج الافتراضي الذي تم إنشاؤه تلقائيا|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
 |إنشاء سياسات مخصصة|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
@@ -59,13 +59,13 @@ ms.locfileid: "63679533"
 لتكوين سياسات مكافحة التصيد الاحتيالي، راجع المقالات التالية:
 
 - [تكوين سياسات مكافحة التصيد الاحتيالي في EOP](configure-anti-phishing-policies-eop.md)
-- [تكوين سياسات مكافحة التصيد الاحتيالي في Microsoft Defender Office 365](configure-mdo-anti-phishing-policies.md)
+- [تكوين سياسات مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365](configure-mdo-anti-phishing-policies.md)
 
-تصف بقية هذه المقالة الإعدادات المتوفرة في سياسات مكافحة التصيد الاحتيالي في EOP و Defender Office 365.
+تصف بقية هذه المقالة الإعدادات المتوفرة في سياسات مكافحة التصيد الاحتيالي في EOP Defender لـ Office 365.
 
 ## <a name="common-policy-settings"></a>إعدادات النهج الشائعة
 
-تتوفر إعدادات النهج التالية في نهج مكافحة التصيد الاحتيالي في EOP و Defender Office 365:
+تتوفر إعدادات النهج التالية في نهج مكافحة التصيد الاحتيالي في EOP Defender لـ Office 365:
 
 - **الاسم**: لا يمكنك إعادة تسمية نهج مكافحة التصيد الاحتيالي الافتراضي. بعد إنشاء نهج مخصص لمكافحة التصيد الاحتيالي، لا يمكنك إعادة تسمية النهج في Microsoft 365 Defender الإلكتروني.
 
@@ -85,13 +85,13 @@ ms.locfileid: "63679533"
     - **المجالات**
 
   > [!NOTE]
-  > هناك تحديد واحد على الأقل في  إعدادات المستخدمين والمجموعات والمجالات مطلوب في نهج مكافحة التصيد الاحتيالي المخصصة لتحديد مستلمي الرسائل التي ينطبق عليها  <u>النهج</u>. كما أن سياسات مكافحة التصيد الاحتيالي في Defender for Office 365 لها إعدادات انتحال حيث يمكنك تحديد عناوين البريد الإلكتروني الفردية للمرسلين أو مجالات المرسلين التي ستتلقى <u></u> حماية انتحال كما هو موضح لاحقا في هذه المقالة.[](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+  > هناك تحديد واحد على الأقل في  إعدادات المستخدمين والمجموعات والمجالات مطلوب في نهج مكافحة التصيد الاحتيالي المخصصة لتحديد مستلمي الرسائل التي ينطبق عليها  <u>النهج</u>. كما أن سياسات مكافحة التصيد الاحتيالي في Defender لـ Office 365 لها إعدادات انتحال حيث يمكنك تحديد عناوين البريد الإلكتروني الفردية للمرسلين أو مجالات المرسلين التي ستتلقى <u></u> حماية انتحال كما هو موضح لاحقا في هذه المقالة.[](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
 ## <a name="spoof-settings"></a>إعدادات التهزاء
 
 يتم الانتحال عندما لا يكون العنوان من في رسالة بريد إلكتروني (عنوان المرسل الذي يظهر في عملاء البريد الإلكتروني) متطابقا مع مجال مصدر البريد الإلكتروني. للحصول على مزيد من المعلومات حول ال انتحال، راجع الحماية من انتحال المعلومات [في](anti-spoofing-protection.md) Microsoft 365.
 
-تتوفر الإعدادات المنتحلة التالية في سياسات مكافحة التصيد الاحتيالي في EOP و Defender Office 365:
+تتوفر الإعدادات المنتحلة التالية في سياسات مكافحة التصيد الاحتيالي في EOP Defender لـ Office 365:
 
 - **تمكين المعلومات المنتحلة**: تشغيل المعلومات المنتحلة أو إيقاف تشغيلها. نوصي بتركه في العمل.
 
@@ -118,7 +118,7 @@ ms.locfileid: "63679533"
 
 ### <a name="unauthenticated-sender"></a>مرسل غير مهيأ
 
-تكون إعلامات المرسلين غير المصدرين جزءا من إعدادات انتحال المعلومات المتوفرة في سياسات مكافحة التصيد الاحتيالي في EOP و Defender for Office 365 كما هو موضح في القسم السابق.[](#spoof-settings) تتوفر الإعدادات التالية فقط عند تشغيل المعلومات المنتحلة:
+إن إعلامات المرسلين غير المصدرين هي جزء من إعدادات [](#spoof-settings) انتحال المعلومات المتوفرة في سياسات مكافحة التصيد الاحتيالي في EOP Defender لـ Office 365 كما هو موضح في القسم السابق. تتوفر الإعدادات التالية فقط عند تشغيل المعلومات المنتحلة:
 
 - **إظهار (؟)** للمرسلين غير المصادقين للانتحال: يضيف هذا الإعلام علامة استفهام إلى صورة المرسل في المربع من إذا لم تجتاز الرسالة التحقق من SPF أو DKIM ولم تمر الرسالة ب DMARC  أو المصادقة [المركبة.](email-validation-and-authentication.md#composite-authentication) عند إيقاف تشغيل هذا الإعداد، لا تضاف علامة استفهام إلى صورة المرسل.
 
@@ -135,14 +135,14 @@ ms.locfileid: "63679533"
 
 ## <a name="first-contact-safety-tip"></a>جهة الاتصال تلميح الأمان
 
-تتوفر إعدادات إظهار جهات **الاتصال تلميح الأمان** الأولى في EOP و Defender لمنظمات Office 365، ولا يعتمد على إعدادات الحماية من المعلومات الاستخبارية أو انتحال الشخصية. يتم تلميح الأمان للمستلمين في السيناريوهات التالية:
+تتوفر **إعدادات** إظهار جهات تلميح الأمان الأولى في EOP Defender لـ Office 365 المؤسسات، ولا تكون تابعة لإعدادات الحماية من المعلومات الاستخبارية أو انتحال الشخصية. يتم تلميح الأمان للمستلمين في السيناريوهات التالية:
 
 - في المرة الأولى التي يحصل فيها على رسالة من مرسل
 - لا يمكنهم في أغلب الأحيان الحصول على رسائل من المرسل.
 
-![اتصل أولا تلميح الأمان الرسائل مع مستلم واحد.](../../media/safety-tip-first-contact-one-recipient.png)
+:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="يتم إرسال تلميح الأمان جهة الاتصال الأولى للرسائل التي بها مستلم واحد" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
-![اتصل أولا تلميح الأمان للرسائل التي بها عدة مستلمين.](../../media/safety-tip-first-contact-multiple-recipients.png)
+:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="جهة الاتصال الأولى تلميح الأمان الرسائل التي بها عدة مستلمين" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
 تضيف هذه الإمكانية طبقة إضافية من الحماية من الأمان ضد هجمات انتحال الشخصية المحتملة، لذلك نوصيك بتضمينها.
 
@@ -151,14 +151,14 @@ ms.locfileid: "63679533"
 > [!NOTE]
 > إذا كانت الرسالة بها عدة مستلمين، سواء تم عرض التلميح أو الأشخاص الذين يستندون إلى نموذج الغالبية. إذا لم يتلق معظم المستلمين رسائل من المرسل أو لم يتلقواها في أغلب الأحيان، فإن المستلمين المتأثرين سيتلقون التلميح بعض الأشخاص الذين تلقوا **هذه الرسالة...** إذا كنت قلقا من أن يعرض هذا السلوك عادات الاتصال لأحد المستلمين إلى آخر، يجب عدم تمكين جهة الاتصال الأولى تلميح الأمان متابعة استخدام قواعد تدفق البريد بدلا من ذلك.
 
-## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>الإعدادات الحصرية في سياسات مكافحة التصيد الاحتيالي في Microsoft Defender Office 365
+## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>الإعدادات الحصرية في سياسات مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365
 
-يصف هذا القسم إعدادات النهج المتوفرة فقط في نهج مكافحة التصيد الاحتيالي في Defender for Office 365.
+يصف هذا القسم إعدادات النهج المتوفرة فقط في نهج مكافحة التصيد الاحتيالي في Defender لـ Office 365.
 
 > [!NOTE]
-> يوفر نهج مكافحة التصيد الاحتيالي الافتراضي في Defender for Office 365 الحماية المنتحلة وذكاء علبة البريد لجميع المستلمين.[](set-up-anti-phishing-policies.md#spoof-settings) ومع ذلك، لا يتم [](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) تكوين ميزات حماية انتحال أخرى [](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) متوفرة وإعدادات متقدمة أو تمكينها في النهج الافتراضي. لتمكين جميع ميزات الحماية، قم بتعديل نهج مكافحة التصيد الاحتيالي الافتراضي أو قم بإنشاء نهج إضافية لمكافحة التصيد الاحتيالي.
+> يوفر نهج مكافحة التصيد الاحتيالي الافتراضي في Defender لـ Office 365 حماية منتحلة وذكاء لعلبة البريد لجميع المستلمين.[](set-up-anti-phishing-policies.md#spoof-settings) ومع ذلك، لا يتم [](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) تكوين ميزات حماية انتحال أخرى [](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) متوفرة وإعدادات متقدمة أو تمكينها في النهج الافتراضي. لتمكين جميع ميزات الحماية، قم بتعديل نهج مكافحة التصيد الاحتيالي الافتراضي أو قم بإنشاء نهج إضافية لمكافحة التصيد الاحتيالي.
 
-### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>إعدادات انتحال في سياسات مكافحة التصيد الاحتيالي في Microsoft Defender Office 365
+### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>إعدادات انتحال في سياسات مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365
 
 إن انتحال هو المكان الذي يبدو فيه المرسل أو مجال البريد الإلكتروني للمرسل في رسالة مماثلا لمرسل أو مجال حقيقي:
 
@@ -170,7 +170,7 @@ ms.locfileid: "63679533"
 
 وإلا، فقد يعتبر المجال المنتحل مجالا شرعيا (المجال المسجل وسجلات مصادقة البريد الإلكتروني المكونة وغير ذلك)، باستثناء هدفه هو خداع المستلمين.
 
-تتوفر إعدادات انتحال الشخصية التالية فقط في سياسات مكافحة التصيد الاحتيالي في Defender for Office 365:
+تتوفر إعدادات انتحال الشخصية التالية فقط في سياسات مكافحة التصيد الاحتيالي في Defender لـ Office 365:
 
 - **تمكين المستخدمين من الحماية**: يمنع انتحال عناوين البريد الإلكتروني الداخلية أو الخارجية المحددة **كمرسلي رسائل**. على سبيل المثال، تتلقى رسالة بريد إلكتروني من نائب رئيس شركتك تطلب منك إرسال بعض المعلومات الداخلية للشركة إليها. هل يمكنك القيام بذلك؟ كان العديد من الأشخاص يرسلون الرد دون تفكير.
 
@@ -229,13 +229,13 @@ ms.locfileid: "63679533"
 
 - **إضافة مرسلين ومجالات موثوق بها**: استثناءات لإعدادات حماية انتحال الشخصية. لا يتم تصنيف الرسائل الواردة من مجالات المرسلين والمرسلين المحددة على أنها هجمات مستندة إلى انتحال حسب النهج. بعبارة أخرى، لا يتم تطبيق الإجراء الخاص بالمرسلين المحميين أو المجالات المحمية أو حماية المعلومات الاستخبارية لعلب البريد على هؤلاء المرسلين الموثوق بهم أو مجالات المرسلين الموثوق بهم. الحد الأقصى لهذه القوائم هو 1024 إدخالا.
 
-### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>حدود التصيد الاحتيالي المتقدمة في سياسات مكافحة التصيد الاحتيالي في Microsoft Defender Office 365
+### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>حدود التصيد الاحتيالي المتقدمة في سياسات مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365
 
-لا تتوفر عتبات التصيد الاحتيالي المتقدمة التالية إلا في سياسات مكافحة التصيد الاحتيالي في Defender for Office 365. تتحكم هذه العتبات في الحساسية لتطبيق نماذج التعلم الآلي على الرسائل لتحديد قرار التصيد الاحتيالي:
+لا تتوفر حدود التصيد الاحتيالي المتقدمة التالية إلا في سياسات مكافحة التصيد الاحتيالي في Defender لـ Office 365. تتحكم هذه العتبات في الحساسية لتطبيق نماذج التعلم الآلي على الرسائل لتحديد قرار التصيد الاحتيالي:
 
 - **1 - قياسي**: هذه هي القيمة الافتراضية. تعتمد خطورة الإجراء الذي يتم اتخاذه على الرسالة على درجة الثقة في أن الرسالة تصيد احتيالي (ثقة منخفضة أو متوسطة أو عالية أو عالية جدا). على سبيل المثال، تم تطبيق الإجراءات الأكثر شدة على الرسائل التي تم تعريفها على أنها تصيد احتيالي بدرجة عالية جدا من الثقة، في حين تم تطبيق إجراءات أقل حدة على الرسائل التي تم تعريفها على أنها تصيد احتيالي بدرجة منخفضة من الثقة.
 - **2 - مهين**: يتم التعامل مع الرسائل التي يتم تعريفها على أنها تصيد احتيالي بدرجة عالية من الثقة كما لو تم تعريفها بدرجة عالية جدا من الثقة.
 - **3 - أكثر** ضغطا: يتم التعامل مع الرسائل التي يتم تعريفها على أنها تصيد احتيالي بدرجة متوسطة أو عالية من الثقة كما لو تم تعريفها بدرجة عالية جدا من الثقة.
 - **4 - الأكثر** ضغطا: يتم التعامل مع الرسائل التي يتم تعريفها على أنها تصيد احتيالي بدرجة منخفضة أو متوسطة أو عالية من الثقة كما لو تم تعريفها بدرجة عالية جدا من الثقة.
 
-تزيد فرصة الإيجابيات الخاطئة (الرسائل الجيدة التي تم وضع علامة سيئة عليها) عند زيادة هذا الإعداد. للحصول على معلومات حول الإعدادات الموصى بها، راجع نهج مكافحة التصيد الاحتيالي في [Microsoft Defender Office 365 الإعدادات](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
+تزيد فرصة الإيجابيات الخاطئة (الرسائل الجيدة التي تم وضع علامة سيئة عليها) عند زيادة هذا الإعداد. للحصول على معلومات حول الإعدادات الموصى بها، راجع [نهج مكافحة التصيد الاحتيالي Microsoft Defender لـ Office 365 الإعدادات](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).

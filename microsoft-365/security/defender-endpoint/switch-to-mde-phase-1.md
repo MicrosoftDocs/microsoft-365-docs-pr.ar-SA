@@ -21,14 +21,14 @@ ms.topic: article
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 11/30/2021
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: aa0bd45c1765e2aa794e00e437bf08a63d1d742f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 33ad09cb87c80aecbaa72ebe9fb2b6523962498f
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476720"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634416"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>التبديل إلى Microsoft Defender لنقطة النهاية - المرحلة 1: التحضير
 
@@ -37,7 +37,7 @@ ms.locfileid: "64476720"
 - [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| ![المرحلة 1: التحضير.](images/phase-diagrams/prepare.png#lightbox)<br/>المرحلة 1: التحضير | [![المرحلة الثانية: إعداد](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[المرحلة الثانية: إعداد](switch-to-mde-phase-2.md) | [![المرحلة 3: Onboard](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[المرحلة 3: Onboard](switch-to-mde-phase-3.md) |
+| ![المرحلة 1: التحضير.](images/phase-diagrams/prepare.png#lightbox)<br/>المرحلة 1: التحضير | [![المرحلة 2: إعداد](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[المرحلة 2: إعداد](switch-to-mde-phase-2.md) | [![المرحلة 3: التجهيز للاستخدام](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[المرحلة 3: التجهيز للاستخدام](switch-to-mde-phase-3.md) |
 |--|--|--|
 |*أنت هنا!*| | |
 
@@ -63,8 +63,6 @@ ms.locfileid: "64476720"
 ### <a name="make-sure-your-organizations-devices-are-up-to-date"></a>التأكد من أن أجهزة مؤسستك م الحديثة
 
 هل تحتاج إلى مساعدة في تحديث أجهزة مؤسستك؟ راجع الموارد التالية:
-
-<br/><br/>
 
 |نظام التشغيل|المورد|
 |---|---|
@@ -104,7 +102,9 @@ ms.locfileid: "64476720"
     إذا كانت مؤسستك تتطلب أسلوبا غير Intune، فاختر أحد الخيارات التالية:
 
     - [إدارة التكوين](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
+
     - [إدارة نهج المجموعة المتقدمة](/microsoft-desktop-optimization-pack/agpm)
+    
     - [Windows مركز الإدارة](/windows-server/manage/windows-admin-center/overview)
 
 3. منح حق الوصول إلى Microsoft 365 Defender الإلكتروني. (هل تحتاج إلى مساعدة؟ راجع [إدارة الوصول إلى المدخل باستخدام RBAC](rbac.md).
@@ -113,17 +113,14 @@ ms.locfileid: "64476720"
 
 لتمكين الاتصال بين أجهزتك و Defender for Endpoint، قم بتكوين إعدادات الوكيل والإنترنت. يتضمن الجدول التالي ارتباطات إلى الموارد التي يمكنك استخدامها لتكوين إعدادات الوكيل والإنترنت لمختلف أنظمة التشغيل والقدرات:
 
-<br/><br/>
-
 |الإمكانات|نظام التشغيل|الموارد|
 |---|---|---|
 |[الكشف عن نقطة النهاية والاستجابة](overview-endpoint-detection-response.md) لها (الكشف التلقائي والاستجابة على النقط النهائية)|[Windows 10](/windows/release-health/release-information) أو أي وقت لاحق<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 أو أي وقت لاحق](/windows-server/get-started/whats-new-in-windows-server-1803)|[تكوين إعدادات اتصال الإنترنت ووكيل الجهاز](configure-proxy-internet.md)|
 |الكشف التلقائي والاستجابة على النقط النهائية|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[تكوين إعدادات الوكيل والاتصال بالإنترنت](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
 |الكشف التلقائي والاستجابة على النقط النهائية|macOS (راجع [متطلبات النظام](microsoft-defender-endpoint-mac.md)|[Defender for Endpoint على macOS: اتصالات الشبكة](microsoft-defender-endpoint-mac.md#network-connections)|
-|[برنامج الحماية من الفيروسات من Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 أو أي وقت لاحق](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[تكوين اتصالات الشبكة برنامج الحماية من الفيروسات من Microsoft Defender والتحقق من صحتها](configure-network-connections-microsoft-defender-antivirus.md)|
+|[برنامج الحماية من الفيروسات من Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) أو أي وقت لاحق <br/><br/>Windows Server 2022 <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> [Windows Server 1803 أو أي وقت لاحق](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[تكوين اتصالات الشبكة برنامج الحماية من الفيروسات من Microsoft Defender والتحقق من صحتها](configure-network-connections-microsoft-defender-antivirus.md)|
 |برنامج الحماية من الفيروسات|macOS (راجع [متطلبات النظام](microsoft-defender-endpoint-mac.md)|[Defender for Endpoint على macOS: اتصالات الشبكة](microsoft-defender-endpoint-mac.md#network-connections)|
 |برنامج الحماية من الفيروسات|Linux (راجع [متطلبات النظام](microsoft-defender-endpoint-linux.md#system-requirements))|[Defender for Endpoint على Linux: اتصالات الشبكة](microsoft-defender-endpoint-linux.md#network-connections)|
-
 
 ## <a name="next-step"></a>الخطوة التالية
 

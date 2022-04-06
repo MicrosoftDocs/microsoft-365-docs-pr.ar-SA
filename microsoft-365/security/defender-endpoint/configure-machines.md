@@ -1,7 +1,7 @@
 ---
 title: التأكد من تكوين أجهزتك بشكل صحيح
 description: قم بتكوين الأجهزة بشكل صحيح لتعزيز المرونة الشاملة ضد التهديدات وتحسين قدراتك للكشف عن الهجمات والاستجابة لها.
-keywords: onboard, Intune management, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, attack surface reduction, ASR, security baseline
+keywords: onboard, Intune management, Microsoft Defender لنقطة النهاية, Microsoft Defender, Windows Defender, attack surface reduction, ASR, security baseline
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,33 +15,33 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 61b275e5e42a10743eee744ab44bce48a25fa2eb
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 47c3cb5d680899a28e6467b24ef398a428851a07
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63572293"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476148"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>التأكد من تكوين أجهزتك بشكل صحيح
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 باستخدام الأجهزة المكونة بشكل صحيح، يمكنك تعزيز المرونة الشاملة ضد التهديدات وتحسين قدراتك للكشف عن الهجمات والاستجابة لها. تساعد إدارة تكوين الأمان على ضمان أن أجهزتك:
 
-- Onboard to Microsoft Defender for Endpoint
+- على لوحة Microsoft Defender لنقطة النهاية
 - تلبية تكوين الأساس لأساس أمان Defender لنقطة النهاية أو تجاوزه
 - وضع عمليات التخفيف من المخاطر الاستراتيجية على سطح الهجوم في مكانها
 
 انقر **فوق إدارة التكوين** من قائمة التنقل لفتح صفحة إدارة تكوين الجهاز.
 
-![صفحة إدارة تكوين الأمان.](images/secconmgmt_main.png)
+:::image type="content" source="images/secconmgmt_main.png" alt-text="صفحة إدارة تكوين الأمان" lightbox="images/secconmgmt_main.png":::
 
 *صفحة إدارة تكوين الجهاز*
 
@@ -77,7 +77,7 @@ ms.locfileid: "63572293"
 - قراءة الأذونات لنهج توافق الأجهزة
 - قراءة الأذونات إلى المؤسسة
 
-![الأذونات المطلوبة في intune.](images/secconmgmt_intune_permissions.png)
+:::image type="content" source="images/secconmgmt_intune_permissions.png" alt-text="الأذونات المطلوبة في intune" lightbox="images/secconmgmt_intune_permissions.png":::
 
 *أذونات تكوين الجهاز على Intune*
 

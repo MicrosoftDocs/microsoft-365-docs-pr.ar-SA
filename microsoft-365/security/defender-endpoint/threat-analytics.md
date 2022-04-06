@@ -1,5 +1,5 @@
 ---
-title: تعقب التهديدات الناشئة والاستجابة لها باستخدام تحليلات تهديدات نقطة النهاية ل Microsoft Defender
+title: تعقب التهديدات الناشئة والاستجابة لها باستخدام Microsoft Defender لنقطة النهاية المخاطر
 ms.reviewer: ''
 description: فهم التهديدات الناشئة وتقنيات الهجوم وكيفية إيقافها. قم بتقييم تأثيرها على مؤسستك وقيم مرونة مؤسستك.
 keywords: تحليل المخاطر وتقييم المخاطر وتخفيف نظام التشغيل وتخفيف الرمز الصغير وتخفيف حالة التخفيف
@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1c86dad2f303df149921efab87d3ffd026e0f93d
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 0ca4aea3281d6bb375e7b5ff5223cb40e9a980ac
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63575444"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471066"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>تعقب التهديدات الناشئة والاستجابة لها من خلال تحليلات المخاطر
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -66,7 +66,7 @@ ms.locfileid: "63575444"
 
 حدد خطرا من لوحة المعلومات لعرض التقرير الخاص بهذا الخطر.
 
-![صورة لوحة معلومات تحليل المخاطر.](images/ta_dashboard.png)
+:::image type="content" source="images/ta_dashboard.png" alt-text="لوحة معلومات تحليل المخاطر" lightbox="images/ta_dashboard.png":::
 
 ## <a name="view-a-threat-analytics-report"></a>عرض تقرير تحليل المخاطر
 
@@ -76,8 +76,8 @@ ms.locfileid: "63575444"
 
 يوفر **القسم** نظرة عامة معاينة للتقرير التفصيلي للمحلل. كما يوفر المخططات التي تبرز تأثير الخطر على مؤسستك والتعرض من خلال أجهزة غير منظمة وغير منظمة.
 
-![صورة لقسم النظرة العامة في تقرير تحليل المخاطر.](images/ta-overview.png)
- _قسم نظرة عامة حول تقرير تحليل المخاطر_
+:::image type="content" source="images/ta-overview.png" alt-text="القسم &quot;نظرة عامة&quot; في تقرير تحليل المخاطر" lightbox="images/ta-overview.png":::
+_قسم نظرة عامة حول تقرير تحليل المخاطر_
 
 #### <a name="assess-the-impact-to-your-organization"></a>تقييم التأثير على مؤسستك
 
@@ -112,7 +112,8 @@ ms.locfileid: "63575444"
 
 تتضمن معلومات التخفيف في هذا القسم بيانات من إدارة المخاطر والثغرات الأمنية[](next-gen-threat-and-vuln-mgt.md)، مما يوفر أيضا معلومات تفصيلية حول التنقل لأسفل من ارتباطات مختلفة في التقرير.
 
-![صورة لقسم التخفيف من المخاطر في تقرير تحليل المخاطر.](images/ta-mitigations.png)
+:::image type="content" source="images/ta-mitigations.png" alt-text="القسم &quot;تقليل المخاطر&quot; في تقرير تحليل المخاطر" lightbox="images/ta-mitigations.png":::
+
 
 _قسم "تقليل المخاطر" في تقرير تحليل المخاطر_
 

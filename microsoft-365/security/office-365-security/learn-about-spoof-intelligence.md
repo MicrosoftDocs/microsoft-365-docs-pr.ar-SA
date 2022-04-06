@@ -20,12 +20,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على المعلومات الاستخبارية المنتحلة في Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bf0ed143f5bfb78ff1d6af4005a4b5ec64fd90e
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: ba31c5022cb8f449ce9e1e1a4ba65e87afd0b464
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63566306"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471440"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>المعلومات الاستخبارية المنتحلة في EOP
 
@@ -33,7 +33,7 @@ ms.locfileid: "63566306"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
@@ -86,7 +86,7 @@ ms.locfileid: "63566306"
   > - توفر إضافة مستخدمين إلى دور Azure Active Directory المناظر في مركز مسؤولي Microsoft 365 للمستخدمين الأذونات والأذونات المطلوبة للميزات الأخرى  في Microsoft 365. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md).
   > - توفر **أيضا مجموعة دور "** إدارة [المؤسسات Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) طريقة العرض فقط" إمكانية الوصول للقراءة فقط إلى الميزة.
 
-- يمكنك تمكين المعلومات المنتحلة وتعطيلها في سياسات مكافحة التصيد الاحتيالي في EOP و Microsoft Defender Office 365. يتم تمكين المعلومات المنتحلة بشكل افتراضي. لمزيد من المعلومات، راجع تكوين سياسات مكافحة التصيد الاحتيالي في [EOP](configure-anti-phishing-policies-eop.md) أو تكوين سياسات مكافحة التصيد الاحتيالي في [Microsoft Defender Office 365](configure-mdo-anti-phishing-policies.md).
+- يمكنك تمكين المعلومات المنتحلة وتعطيلها في سياسات مكافحة التصيد الاحتيالي في EOP Microsoft Defender لـ Office 365. يتم تمكين المعلومات المنتحلة بشكل افتراضي. لمزيد من المعلومات، راجع تكوين سياسات مكافحة التصيد الاحتيالي في [EOP](configure-anti-phishing-policies-eop.md) أو تكوين [سياسات مكافحة](configure-mdo-anti-phishing-policies.md) التصيد الاحتيالي في Microsoft Defender لـ Office 365.
 
 - للحصول على الإعدادات الموصى بها للذكاء المخادع، راجع إعدادات نهج مكافحة التصيد الاحتيالي [ل EOP](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings).
 
@@ -96,7 +96,7 @@ ms.locfileid: "63566306"
 
 2. في صفحة **قوائم السماح/الحظر للمستأجر** ، تبدو المعلومات الاستخبارية المنتحلة كما يلي:
 
-   ![معلومات استخبارية منتحلة على صفحة نهج مكافحة التصيد الاحتيالي.](../../media/m365-sc-spoof-intelligence-insight.png)
+   :::image type="content" source="../../media/m365-sc-spoof-intelligence-insight.png" alt-text="المعلومات الاستخبارية المنتحلة على صفحة نهج مكافحة التصيد الاحتيالي" lightbox="../../media/m365-sc-spoof-intelligence-insight.png":::
 
    رؤى لها وضعان:
 
@@ -123,7 +123,7 @@ ms.locfileid: "63566306"
   - **خارجي**: المرسل المهزوف في مجال خارجي.
 - **الإجراء**: هذه القيمة **مسموح بها** أو **تم حظرها**:
   - **مسموح به**: فشل المجال في التحقق من مصادقة البريد الإلكتروني [الصريحة ل SPF](how-office-365-uses-spf-to-prevent-spoofing.md) [و DKIM](use-dkim-to-validate-outbound-email.md) و [DMARC](use-dmarc-to-validate-email.md). ومع ذلك، مرر المجال عمليات التحقق الضمنية من مصادقة البريد الإلكتروني ([المصادقة المركبة](email-validation-and-authentication.md#composite-authentication)). ونتيجة لذلك، لم يتم اتخاذ أي إجراء لمكافحة ال انتحال الرسالة.
-  - **المحظورة**: يتم وضع علامة سيئة على الرسائل الواردة من مجموعة المجالات  المنتحلة وأرسال البنية الأساسية بواسطة المعلومات المنتحلة. يتم التحكم في الإجراء الذي يتم اتخاذه على الرسائل المنتحلة بواسطة نهج مكافحة التصيد الاحتيالي الافتراضي أو نهج مكافحة التصيد الاحتيالي المخصصة (القيمة الافتراضية هي نقل رسالة إلى مجلد البريد الإلكتروني غير **الهام**). لمزيد من المعلومات، راجع تكوين سياسات مكافحة التصيد الاحتيالي [في Microsoft Defender Office 365](configure-mdo-anti-phishing-policies.md).
+  - **المحظورة**: يتم وضع علامة سيئة على الرسائل الواردة من مجموعة المجالات  المنتحلة وأرسال البنية الأساسية بواسطة المعلومات المنتحلة. يتم التحكم في الإجراء الذي يتم اتخاذه على الرسائل المنتحلة بواسطة نهج مكافحة التصيد الاحتيالي الافتراضي أو نهج مكافحة التصيد الاحتيالي المخصصة (القيمة الافتراضية هي نقل رسالة إلى مجلد البريد الإلكتروني غير **الهام**). لمزيد من المعلومات، راجع [تكوين سياسات](configure-mdo-anti-phishing-policies.md) مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365.
 
 يمكنك النقر فوق عناوين الأعمدة المحددة لفرز النتائج.
 
@@ -143,7 +143,7 @@ ms.locfileid: "63566306"
 - ما تحتاج إلى القيام به.
 - ملخص مجال يتضمن معظم المعلومات نفسها من صفحة المعلومات المنتحلة الرئيسية.
 - WhoIs بيانات حول المرسل.
-- ارتباط [لفتح "](threat-explorer.md)مستكشف التهديدات" لعرض تفاصيل إضافية حول المرسل ضمن **عرض** \> **التصيد** الاحتيالي في Microsoft Defender Office 365.
+- ارتباط [لفتح "](threat-explorer.md)مستكشف التهديدات" لعرض تفاصيل إضافية حول المرسل ضمن **عرض** \> **التصيد** الاحتيالي في Microsoft Defender لـ Office 365.
 - رسائل مماثلة رأيناها في المستأجر من المرسل نفسه.
 
 ### <a name="about-allowed-spoofed-senders"></a>حول المرسلين المزحلين المسموح لهم

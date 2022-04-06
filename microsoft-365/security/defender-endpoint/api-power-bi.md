@@ -1,7 +1,7 @@
 ---
-title: اتصال واجهات برمجة تطبيقات Microsoft Defender لنقطة النهاية ب Power BI
+title: Microsoft Defender لنقطة النهاية واجهات برمجة التطبيقات ل Power BI
 ms.reviewer: ''
-description: إنشاء تقرير Power Business Intelligence (BI) أعلى Microsoft Defender ل واجهات برمجة تطبيقات نقطة النهاية.
+description: إنشاء تقرير Power Business Intelligence (BI) أعلى Microsoft Defender لنقطة النهاية برمجة التطبيقات.
 keywords: apis، apis المعتمدة، تقارير Power BI
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,19 +16,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 765af5e4a2e880aa9b6c1208495537ad8cf5f26b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4cad6fd5188745773ce561d1db697989598a1dc5
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63569913"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472144"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>إنشاء تقارير مخصصة باستخدام Power BI
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -38,21 +38,21 @@ ms.locfileid: "63569913"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-في هذا القسم، ستتعرف على إنشاء تقرير Power BI أعلى واجهات برمجة التطبيقات ل Defender لنقطة النهاية.
+في هذا القسم، ستتعلم كيفية إنشاء تقرير Power BI أعلى "Defender" ل واجهات برمجة التطبيقات لنقطة النهاية.
 
 يوضح المثال الأول كيفية توصيل Power BI ب API للصيد المتقدم، بينما يوضح المثال الثاني اتصالا ب واجهات برمجة التطبيقات OData، مثل إجراءات الجهاز أو التنبيهات.
 
 ## <a name="connect-power-bi-to-advanced-hunting-api"></a>الاتصال Power BI إلى API للصيد المتقدم
 
-- فتح Microsoft Power BI
+- افتح Microsoft Power BI.
 
-- انقر **فوق الحصول على استعلام** \> **البيانات الفارغ**
+- انقر **فوق الحصول على استعلام** \> **البيانات الفارغ**.
 
-  ![صورة لإنشاء استعلام فارغ.](images/power-bi-create-blank-query.png)
+  :::image type="content" source="images/power-bi-create-blank-query.png" alt-text="الخيار &quot;استعلام فارغ&quot; ضمن عنصر القائمة &quot;الحصول على البيانات&quot;" lightbox="images/power-bi-create-blank-query.png":::
 
-- انقر **فوق محرر متقدم**
+- انقر **فوق محرر متقدم**.
 
-  ![صورة المحرر المتقدم المفتوح.](images/power-bi-open-advanced-editor.png)
+  :::image type="content" source="images/power-bi-open-advanced-editor.png" alt-text="عنصر القائمة &quot;المحرر المتقدم&quot;" lightbox="images/power-bi-open-advanced-editor.png":::
 
 - انسخ ما يلي واللصق في المحرر:
 
@@ -94,23 +94,24 @@ ms.locfileid: "63569913"
     in Table
 ```
 
-- انقر **فوق تم**
+- انقر **فوق تم**.
 
-- انقر **فوق تحرير بيانات الاعتماد**
+- انقر **فوق تحرير بيانات الاعتماد**.
 
-    ![صورة لتحرير بيانات الاعتماد0.](images/power-bi-edit-credentials.png)
+    :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="عنصر القائمة &quot;تحرير بيانات الاعتماد&quot;" lightbox="images/power-bi-edit-credentials.png":::
+    
 
-- حدد **حساب المؤسسة تسجيل** \> **الدخول**
+- حدد **حساب المؤسسة تسجيل** \> **الدخول**.
 
-    ![صورة لتعيين بيانات الاعتماد1.](images/power-bi-set-credentials-organizational.png)
+    :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="الخيار &quot;تسجيل الدخول&quot; في عنصر القائمة &quot;حساب المؤسسة&quot;" lightbox="images/power-bi-set-credentials-organizational.png":::
 
-- أدخل بيانات الاعتماد وانتظر حتى يتم تسجيل الدخول
+- أدخل بيانات الاعتماد وانتظر حتى يتم تسجيل الدخول.
 
-- انقر **الاتصال**
+- انقر **الاتصال**.
 
-    ![صورة لتعيين بيانات الاعتماد2.](images/power-bi-set-credentials-organizational-cont.png)
+    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="رسالة تأكيد تسجيل الدخول في عنصر القائمة حساب المؤسسة" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
-- ستظهر الآن نتائج الاستعلام ك جدول، كما يمكنك بدء إنشاء مرئيات فوقه!
+- ستظهر الآن نتائج الاستعلام ك جدول، كما يمكنك البدء في إنشاء مرئيات فوقه!
 
 - يمكنك تكرار هذا الجدول وإعادة تسميته وتحرير استعلام "البحث المتقدم" داخله للحصول على أي بيانات تريدها.
 
@@ -131,7 +132,7 @@ ms.locfileid: "63569913"
 ```
 
 - يمكنك القيام بالشيء نفسه **للتنبيهات** **و الأجهزة**.
-- يمكنك أيضا استخدام استعلامات OData لتصفية الاستعلامات، راجع [استخدام استعلامات OData](exposed-apis-odata-samples.md)
+- يمكنك أيضا استخدام استعلامات OData لتصفية الاستعلامات، راجع [استخدام استعلامات OData](exposed-apis-odata-samples.md).
 
 ## <a name="power-bi-dashboard-samples-in-github"></a>نماذج لوحة معلومات Power BI في GitHub
 
@@ -139,7 +140,7 @@ ms.locfileid: "63569913"
 
 ## <a name="sample-reports"></a>نماذج التقارير
 
-عرض عينات تقرير Microsoft Defender ل Endpoint Power BI. لمزيد من المعلومات، راجع [استعراض نماذج التعليمات البرمجية](/samples/browse/?products=mdatp).
+عرض Microsoft Defender لنقطة النهاية تقرير Power BI. لمزيد من المعلومات، راجع [استعراض نماذج التعليمات البرمجية](/samples/browse/?products=mdatp).
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

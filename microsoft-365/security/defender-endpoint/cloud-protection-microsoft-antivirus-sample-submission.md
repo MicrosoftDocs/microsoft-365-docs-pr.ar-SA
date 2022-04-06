@@ -15,17 +15,17 @@ ms.technology: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9df9c387f24671d6790d9219590eeac490f2f1aa
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a647617de3706481c2e12f4e1772f5bc609db6fc
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63578431"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470670"
 ---
-# <a name="cloud-protection-and-sample-submission-in-microsoft-defender-antivirus"></a>الحماية السحابية ونموذج الإرسال في برنامج الحماية من الفيروسات من Microsoft Defender
+# <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>الحماية السحابية ونموذج الإرسال في برنامج الحماية من الفيروسات من Microsoft Defender
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
 برنامج الحماية من الفيروسات من Microsoft Defender العديد من الآليات الذكية للكشف عن البرامج الضارة. إحدى أكثر الإمكانات قوة هي القدرة على تطبيق قوة السحابة للكشف عن البرامج الضارة وأداء التحليل السريع. تعمل الحماية السحابية ونموذج الإرسال التلقائي مع برنامج الحماية من الفيروسات من Microsoft Defender للمساعدة في الحماية من التهديدات الجديدة والناشئة. 
@@ -40,11 +40,11 @@ ms.locfileid: "63578431"
 
 تصف الصورة التالية تدفق الحماية السحابية ونموذج الإرسال باستخدام برنامج الحماية من الفيروسات من Microsoft Defender:
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="تدفق الحماية التي يتم تسليمها من السحابة":::
+:::image type="content" source="images/cloud-protection-flow.png" alt-text="تدفق الحماية التي يتم تسليمها من السحابة" lightbox="images/cloud-protection-flow.png":::
 
 برنامج الحماية من الفيروسات من Microsoft Defender الحماية السحابية والحماية من السحابة تلقائيا معظم التهديدات الجديدة التي لم يسبق أن رأيتها من قبل من النظرة الأولى باستخدام الأساليب التالية:
 
-1. نماذج التعلم الآلي الخفيفة المستندة إلى العميل، مع حظر البرامج الضارة الجديدة وغير المعروفة.
+1. نماذج التعلم الآلي خفيفة الوزن المستندة إلى العميل، مع حظر البرامج الضارة الجديدة وغير المعروفة.
 
 2. تحليل سلوكي محلي، إيقاف الهجمات المستندة إلى ملف وهجمة أقل من الملفات.
 
@@ -80,7 +80,7 @@ ms.locfileid: "63578431"
          - "عدم إرسال" هو ما يعادل الإعداد "معطل" في نهج macOS
          - يتم إرسال بيانات التعريف للكشف حتى عند تعطيل عملية إرسال العينة
 
-   3. بعد إرسال بيانات التعريف و/أو الملفات إلى الحماية السحابية، يمكنك استخدام نماذج التعلم الآلي لتحليل البيانات أو تحليل  البيانات الكبيرة للوصول إلى قرار. سيقصر إيقاف تشغيل الحماية التي يتم تسليمها بواسطة السحابة التحليل على ما يمكن للعميل توفيره من خلال نماذج التعلم الآلي المحلية والوظائف المشابهة فقط.
+   3. بعد إرسال بيانات التعريف و/أو الملفات إلى الحماية السحابية، يمكنك استخدام نماذج التعلم الآلي لتحليل البيانات أو تحليل  البيانات الكبيرة للوصول إلى قرار. سيقصر إيقاف تشغيل الحماية التي يتم تسليمها بواسطة السحابة التحليل على ما يمكن للعميل توفيره فقط من خلال نماذج التعلم الآلي المحلية والوظائف المشابهة.
 
 > [!IMPORTANT]
 > [يوفر الحظر من النظرة الأولى (BAFS)](configure-block-at-first-sight-microsoft-defender-antivirus.md) عملية معالجة وتحليل لتحديد ما إذا كان الملف أو العملية آمنة أم لا. يمكن أن يؤخر BAFS فتح ملف بشكل لحظة حتى يتم الوصول إلى قرار. إذا قمت بتعطيل إرسال العينة، يتم تعطيل BAFS أيضا، ويقتصر تحليل الملفات على بيانات التعريف فقط. نوصي بالإبقاء على عينة الإرسال وتمكين BAFS. لمعرفة المزيد، راجع [ما هو "الحظر من النظرة الأولى"؟](configure-block-at-first-sight-microsoft-defender-antivirus.md#what-is-block-at-first-sight)
@@ -97,11 +97,11 @@ ms.locfileid: "63578431"
 - **إرسال كل العينات تلقائيا**  
 - **عدم إرسال عينات**  
 
-للحصول على معلومات حول خيارات التكوين باستخدام Intune أو Configuration Manager أو GPO أو PowerShell، راجع [تشغيل](enable-cloud-protection-microsoft-defender-antivirus.md) الحماية السحابية في برنامج الحماية من الفيروسات من Microsoft Defender.
+للحصول على معلومات حول خيارات التكوين باستخدام Intune أو Configuration Manager أو GPO أو PowerShell، راجع تشغيل الحماية السحابية [في](enable-cloud-protection-microsoft-defender-antivirus.md) برنامج الحماية من الفيروسات من Microsoft Defender.
 
 ## <a name="examples-of-metadata-sent-to-the-cloud-protection-service"></a>أمثلة لبيانات التعريف المرسلة إلى خدمة الحماية السحابية
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="صورة تصف أمثلة لبيانات التعريف المرسلة إلى الحماية السحابية في برنامج الحماية من الفيروسات من Microsoft Defender":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="أمثلة بيانات التعريف المرسلة إلى الحماية السحابية في مدخل برنامج الحماية من الفيروسات من Microsoft Defender" lightbox="images/cloud-protection-metadata-sample.png":::
 
 يسرد الجدول التالي أمثلة لبيانات التعريف المرسلة للتحليل بواسطة الحماية السحابية:
 
@@ -120,13 +120,13 @@ ms.locfileid: "63578431"
 - ISO 27001
 - ISO 27018
 - SOC I، II، III
-- و PCI
+- PCI
 
 لمزيد من المعلومات، راجع الموارد التالية:
 
 - [عروض توافق Azure](/azure/storage/common/storage-compliance-offerings) 
 - [Service Trust Portal](https://servicetrust.microsoft.com)
-- [Microsoft Defender لتخزين بيانات نقطة النهاية والخصوصية](data-storage-privacy.md#data-storage-location)
+- [Microsoft Defender لنقطة النهاية تخزين البيانات والخصوصية](data-storage-privacy.md#data-storage-location)
 
 ## <a name="other-file-sample-submission-scenarios"></a>سيناريوهات إرسال نماذج ملفات أخرى
 

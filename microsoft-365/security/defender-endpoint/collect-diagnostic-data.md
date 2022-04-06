@@ -17,12 +17,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 73f07a7346edbaebe7e53cd4e17e29a5e6764073
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: 099bd5c458a863576c8030a86d6923065228e307
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "63570224"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470714"
 ---
 # <a name="collect-microsoft-defender-antivirus-diagnostic-data"></a>تجميع برنامج الحماية من الفيروسات من Microsoft Defender التشخيصية
 
@@ -31,8 +31,8 @@ ms.locfileid: "63570224"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 تصف هذه المقالة كيفية تجميع البيانات التشخيصية التي يمكن استخدامها من قبل فرق الدعم والهندسة من Microsoft للمساعدة في استكشاف المشاكل التي قد تواجهها عند استخدام برنامج الحماية من الفيروسات من Microsoft Defender.
 
@@ -117,23 +117,24 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
 ## <a name="specify-location-where-diagnostic-data-is-created"></a>تحديد موقع إنشاء البيانات التشخيصية
 
-يمكنك أيضا تحديد مكان إنشاء .cab التشخيص باستخدام كائن نهج المجموعة (GPO).
+يمكنك أيضا تحديد مكان إنشاء .cab التشخيصي باستخدام نهج المجموعة كائن (GPO).
 
-1. افتح محرر نهج المجموعة المحلي واعثر على SupportLogLocation GPO في: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`.
+1. افتح محرر نهج المجموعة واعثر على SupportLogLocation GPO في: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`.
 
 2. حدد **تعريف مسار الدليل لنسخ ملفات سجل الدعم**.
 
-   ![لقطة شاشة لمحرر نهج المجموعة المحلي](images/GPO1-SupportLogLocationDefender.png)
+   :::image type="content" source="images/GPO1-SupportLogLocationDefender.png" alt-text="محرر نهج المجموعة المحلي" lightbox="images/GPO1-SupportLogLocationDefender.png":::
 
-   ![لقطة شاشة لتحديد مسار لإعداد ملفات السجل](images/GPO2-SupportLogLocationGPPage.png)
+   :::image type="content" source="images/GPO2-SupportLogLocationGPPage.png" alt-text="مسار تعريف إعداد ملفات السجل" lightbox="images/GPO2-SupportLogLocationGPPage.png":::
 
-    ![لقطة شاشة لمحرر نهج المجموعة المحلي.](images/GPO1-SupportLogLocationDefender.png)  
+   :::image type="content" source="images/GPO1-SupportLogLocationDefender.png" alt-text="محرر نهج المجموعة المحلي" lightbox="images/GPO1-SupportLogLocationDefender.png"::: 
         
-     ![لقطة شاشة لتحديد مسار لإعداد ملفات السجل.](images/GPO2-SupportLogLocationGPPage.png)  
+   :::image type="content" source="images/GPO2-SupportLogLocationGPPage.png" alt-text="مسار التعريف لتكوين إعداد ملفات السجل" lightbox="images/GPO2-SupportLogLocationGPPage.png":::
+ 
 3. داخل محرر النهج، حدد **تمكين**.
 
 4. حدد مسار الدليل حيث تريد نسخ ملفات سجل الدعم في **الحقل خيارات** .
-     ![لقطة شاشة لإعداد مخصص لمسار الدليل الذي تم تمكينه.](images/GPO3-SupportLogLocationGPPageEnabledExample.png) 
+   :::image type="content" source="images/GPO3-SupportLogLocationGPPageEnabledExample.png" alt-text="الإعداد المخصص لمسار الدليل الذي تم تمكينه" lightbox="images/GPO3-SupportLogLocationGPPageEnabledExample.png":::
 5. حدد **موافق** أو **تطبيق**.
 
 ## <a name="see-also"></a>راجع أيضًا

@@ -19,12 +19,12 @@ search.appverid:
 description: تعرف على ثلاث أدوات يمكنك استخدامها لمراقبة تسريبات البيانات الشخصية.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba164fde38be1e8eed53b71ab568124140deaac5
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4024640173d6cbbf6817d3fa2b1c24cb7264833c
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682692"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470846"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>مراقب للتسريبات في البيانات الشخصية
 
@@ -33,15 +33,15 @@ ms.locfileid: "63682692"
 
 هناك العديد من الأدوات التي يمكن استخدامها لمراقبة استخدام البيانات الشخصية ونقلها. يصف هذا الموضوع ثلاث أدوات تعمل بشكل جيد.
 
-![أدوات لمراقبة استخدام البيانات الشخصية ونقلها.](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image1.png" alt-text="أدوات مراقبة استخدام البيانات الشخصية ونقلها" lightbox="../../media/Monitor-for-leaks-of-personal-data-image1.png":::
 
 في الرسم التوضيحي:
 
 - ابدأ بالتقارير Microsoft 365 فقدان البيانات لمراقبة البيانات الشخصية في SharePoint عبر الإنترنت OneDrive for Business البريد الإلكتروني أثناء النقل. توفر هذه التقارير أكبر مستوى من التفاصيل لمراقبة البيانات الشخصية. ومع ذلك، لا تتضمن هذه التقارير كل الخدمات في Office 365.
 
-- بعد ذلك، استخدم سياسات التنبيه وسجل التدقيق لمراقبة النشاط عبر الخدمات. إعداد المراقبة المستمرة أو البحث في سجل التدقيق للتحقق من حادث ما. يعمل سجل التدقيق عبر الخدمات مثل Sway و Power BI و eDiscovery و Dynamics 365 و Power Automate و Microsoft Teams و نشاط المسؤول و OneDrive for Business و SharePoint عبر الإنترنت و البريد أثناء النقل و علب البريد في راحة. Skype المحادثات في علب البريد بشكل غير مضمن.
+- بعد ذلك، استخدم سياسات التنبيه وسجل التدقيق لمراقبة النشاط عبر الخدمات. إعداد المراقبة المستمرة أو البحث في سجل التدقيق للتحقق من حادث ما. يعمل سجل التدقيق عبر الخدمات— Sway و Power BI و eDiscovery و Dynamics 365 و Power Automate و Microsoft Teams و نشاط المسؤول و OneDrive for Business و SharePoint عبر الإنترنت و البريد أثناء النقل و علب البريد في حالة راحة. Skype المحادثات في علب البريد بشكل غير مضمن.
 
-- وأخيرا، استخدم Microsoft Defender لتطبيقات السحابة لمراقبة الملفات التي بها بيانات حساسة في موفري SaaS الآخرين. قريبا هي القدرة على استخدام أنواع المعلومات الحساسة والتسميات الموحدة عبر Azure Information Protection Office مع Defender for Cloud Apps. يمكنك إعداد سياسات تنطبق على جميع تطبيقات SaaS أو تطبيقات معينة (مثل Box). لا يكتشف Defender for Cloud Apps الملفات في Exchange Online، بما في ذلك الملفات المرفقة بالبريد الإلكتروني.
+- وأخيرا، استخدم Microsoft Defender for Cloud Apps لمراقبة الملفات التي بها بيانات حساسة في موفري SaaS الآخرين. قريبا هي القدرة على استخدام أنواع المعلومات الحساسة والتسميات الموحدة عبر Azure حماية البيانات Office مع Defender for Cloud Apps. يمكنك إعداد سياسات تنطبق على جميع تطبيقات SaaS أو تطبيقات معينة (مثل Box). لا يكتشف Defender for Cloud Apps الملفات في Exchange Online، بما في ذلك الملفات المرفقة بالبريد الإلكتروني.
 
 ## <a name="data-loss-prevention-reports"></a>تقارير منع فقدان البيانات
 
@@ -62,11 +62,11 @@ ms.locfileid: "63682692"
 
 لمزيد من المعلومات، راجع [عرض التقارير لمنع فقدان البيانات](../../compliance/view-the-dlp-reports.md).
 
-![تقرير يعرض تطابقات نهج DLP.](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image2.png" alt-text="يعرض التقرير تطابقات نهج DLP" lightbox="../../media/Monitor-for-leaks-of-personal-data-image2.png":::
 
 ## <a name="audit-log-and-alert-policies"></a>سجل التدقيق ونهج التنبيه
 
-يحتوي سجل التدقيق على أحداث من Exchange Online و SharePoint Online و OneDrive for Business و Azure Active Directory و Microsoft Teams و Power BI و Sway وخدمات أخرى.
+يحتوي سجل التدقيق على أحداث من Exchange Online و SharePoint Online و OneDrive for Business و Azure Active Directory و Microsoft Teams و Power BI Sway وخدمات أخرى.
 
 يوفر Microsoft 365 Defender الإلكتروني مركز التوافق في Microsoft 365 طريقتين لمراقبة سجل التدقيق وتقديم تقرير حوله:
 
@@ -88,17 +88,17 @@ ms.locfileid: "63682692"
 - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 - [الخصائص المفصلة في سجل التدقيق](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
-## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender لتطبيقات السحابة
+## <a name="microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Apps
 
-يساعدك Microsoft Defender لتطبيقات السحابة على اكتشاف تطبيقات SaaS الأخرى التي يتم استخدامها عبر الشبكات والبيانات الحساسة المرسلة إلى هذه التطبيقات أو منها.
+Microsoft Defender for Cloud Apps على اكتشاف تطبيقات SaaS الأخرى التي يتم استخدامها عبر الشبكات والبيانات الحساسة المرسلة إلى هذه التطبيقات أو منها.
 
-Microsoft Defender لتطبيقات السحابة هي خدمة شاملة توفر إمكانية الرؤية العميقة، وتحكما في الجودة، وحماية محسنة من المخاطر لتطبيقات السحابة. ويحدد أكثر من 15000 من تطبيقات السحابة في شبكتك من جميع الأجهزة، ويوفر تحليلا وتقييما لتقييم المخاطر والمخاطر المستمرة. لا يلزم وجود وكلاء: يتم تجميع المعلومات من جدران الحماية والوكلاء لديك لتوفير إمكانية الرؤية الكاملة والسياقات لاستخدام السحابة وظلال تكنولوجيا المعلومات.
+Microsoft Defender for Cloud Apps خدمة شاملة توفر إمكانية الرؤية العميقة، وتحكما في الجودة، وحماية محسنة من المخاطر لتطبيقات السحابة. ويحدد أكثر من 15000 من تطبيقات السحابة في شبكتك من جميع الأجهزة، ويوفر تحليلا وتقييما لتقييم المخاطر والمخاطر المستمرة. لا يلزم وجود وكلاء: يتم تجميع المعلومات من جدران الحماية والوكلاء لديك لتوفير إمكانية الرؤية الكاملة والسياقات لاستخدام السحابة وظلال تكنولوجيا المعلومات.
 
 لفهم بيئة السحابة بشكل أفضل، توفر ميزة التحقق من Defender for Cloud إمكانية الرؤية العميقة في كل الأنشطة والملفات والحسابات للتطبيقات التي تم فرض الفرض عليها الفرض عليها القانون والمدارة. يمكنك الحصول على معلومات مفصلة على مستوى ملف واكتشاف مكان تنقل البيانات في تطبيقات السحابة.
 
 على سبيل المثال، يوضح الرسم التوضيحي التالي اثنين من سياسات Defender for Cloud Apps التي يمكن أن تساعدك في استخدام GDPR.
 
-![مثال حول سياسات Defender for Cloud Apps.](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image3.png" alt-text="سياسات Defender for Cloud Apps" lightbox="../../media/Monitor-for-leaks-of-personal-data-image3.png":::
 
 ينبه النهج الأول عندما تكون الملفات التي لها سمة PII محددة مسبقا أو تعبير مخصص تختاره مشتركة خارج المؤسسة من تطبيقات SaaS التي تختارها.
 
@@ -107,22 +107,22 @@ Microsoft Defender لتطبيقات السحابة هي خدمة شاملة تو
 ستتواف هذه الأنواع من السمات قريبا في Defender for Cloud Apps:
 
 - أنواع المعلومات الحساسة
-- التسميات الموحدة عبر Microsoft 365 حماية المعلومات في Azure
+- التسميات الموحدة عبر Microsoft 365 و Azure حماية البيانات
 
 ### <a name="defender-for-cloud-apps-dashboard"></a>لوحة معلومات Defender for Cloud Apps
 
 إذا لم تكن قد بدأت بعد في استخدام Defender for Cloud Apps، فابدأ ببدء استخدامه. للوصول إلى Defender for Cloud Apps: <https://portal.cloudappsecurity.com>.
 
 > [!NOTE]
-> تأكد من تمكين 'فحص الملفات تلقائيا لتسميات تصنيف Azure Information Protection' (في الإعدادات العامة) عند بدء استخدام Defender for Cloud Apps أو قبل تعيين التسميات. بعد الإعداد، لا يقوم Defender for Cloud Apps بفحص الملفات الموجودة مرة أخرى حتى يتم تعديلها.
+> تأكد من تمكين 'مسح الملفات تلقائيا ل Azure حماية البيانات تصنيف' (في الإعدادات العامة) عند بدء استخدام Defender for Cloud Apps أو قبل تعيين التسميات. بعد الإعداد، لا يقوم Defender for Cloud Apps بفحص الملفات الموجودة مرة أخرى حتى يتم تعديلها.
 
-![تعرض لوحة المعلومات معلومات حول التنبيهات.](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+:::image type="content" source="../../media/Monitor-for-leaks-of-personal-data-image4.png" alt-text="تعرض لوحة المعلومات معلومات حول التنبيهات" lightbox="../../media/Monitor-for-leaks-of-personal-data-image4.png":::
 
 مزيد من المعلومات:
 
 - [نشر Defender لتطبيقات السحابة](/cloud-app-security/getting-started-with-cloud-app-security)
-- [مزيد من المعلومات حول Microsoft Defender لتطبيقات السحابة](https://www.microsoft.com/cloud-platform/cloud-app-security)
-- [حظر تنزيلات المعلومات الحساسة باستخدام وكيل Microsoft Defender for Cloud Apps](/cloud-app-security/use-case-proxy-block-session-aad)
+- [مزيد من المعلومات حول Microsoft Defender for Cloud Apps](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [حظر تنزيلات المعلومات الحساسة باستخدام Microsoft Defender for Cloud Apps الوكيل](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>مثال لنهج الملفات و النشاط للكشف عن مشاركة البيانات الشخصية
 
@@ -163,7 +163,7 @@ Microsoft Defender لتطبيقات السحابة هي خدمة شاملة تو
 |خطورة النهج|عال|
 |الفئة|عنصر تحكم المشاركة|
 |العمل على|نشاط واحد|
-|إعدادات التصفية|نوع النشاط = Upload ملف <p> App = Microsoft OneDrive for Business و Box <p> تسمية التصنيف (حاليا في المعاينة الخاصة): حماية معلومات Azure = بيانات العملاء والموارد البشرية —بيانات الرواتب والموارد البشرية —بيانات الموظفين|
+|إعدادات التصفية|نوع النشاط = Upload ملف <p> التطبيق = Microsoft OneDrive for Business ومربع <p> تسمية التصنيف (حاليا في المعاينة الخاصة): Azure حماية البيانات = بيانات العملاء، الموارد البشرية—بيانات الرواتب، الموارد البشرية—بيانات الموظفين|
 |التنبيهات|إنشاء تنبيه: محدد <p> حد التنبيه اليومي: 1000 <p> تحديد تنبيه كبريد إلكتروني: محدد <p> إلى: infosec@contoso.com|
 |إدارة|جميع التطبيقات <p> وضع المستخدم في الفحص: تحقق <p> كل الإعدادات الأخرى: غير تم تحديدها <p> Office 365 <p> وضع المستخدم في الفحص: تحقق <p> كل الإعدادات الأخرى: غير تم تحديدها|
 

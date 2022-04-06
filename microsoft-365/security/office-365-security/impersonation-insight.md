@@ -20,19 +20,19 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0d9d8ee89aaa551c5fecf7c38fe0dbba97ed7fc8
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: dbaf395f10eaac7ff508b03f6f079f94bdd6cebd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63579609"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475796"
 ---
-# <a name="impersonation-insight-in-defender-for-office-365"></a>نظرة ثاقبة حول انتحال المعلومات في Defender for Office 365
+# <a name="impersonation-insight-in-defender-for-office-365"></a>معلومات انتحال المعلومات في Defender لـ Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
@@ -45,7 +45,7 @@ ms.locfileid: "63579609"
 
 يختلف انتحال المجال عن انتحال [](anti-spoofing-protection.md)المجال، لأن المجال المنتحل عادة ما يكون مجالا حقيقيا مسجلا. يمكن للرسائل الواردة من المرسلين في المجال المنتحل تمرير عمليات التحقق من مصادقة البريد الإلكتروني العادية التي قد تحدد محاولات الانتحال (SPF و DKIM و DMARC).
 
-إن الحماية من التصيد الاحتيالي هي جزء من إعدادات نهج مكافحة التصيد الاحتيالي الحصرية ل Microsoft Defender Office 365. لمزيد من المعلومات حول هذه الإعدادات، راجع إعدادات انتحال في سياسات مكافحة التصيد الاحتيالي [في Microsoft Defender Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+إن الحماية من التصيد الاحتيالي هي جزء من إعدادات نهج مكافحة التصيد الاحتيالي الحصرية Microsoft Defender لـ Office 365. لمزيد من المعلومات حول هذه الإعدادات، راجع إعدادات انتحال الشخصية في [سياسات مكافحة التصيد](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) الاحتيالي في Microsoft Defender لـ Office 365.
 
 يمكنك استخدام معلومات انتحال المعلومات في مدخل Microsoft 365 Defender للتعرف بسرعة على الرسائل الواردة من مرسلين منتحلي الشخصية أو مجالات مرسلين قمت بتكوينها لحماية انتحال الشخصية.
 
@@ -63,7 +63,7 @@ ms.locfileid: "63579609"
 
   **ملاحظة**: تؤدي إضافة مستخدمين إلى دور Azure Active Directory المناظر في مركز مسؤولي Microsoft 365 إلى منح المستخدمين الأذونات المطلوبة في مدخل Microsoft 365 Defender والأذونات للميزات الأخرى  في Microsoft 365. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md).
 
-- يمكنك تمكين الحماية من انتحال الشخصية وتكوينها في سياسات مكافحة التصيد الاحتيالي في Microsoft Defender Office 365. لا يتم تمكين حماية انتحال بشكل افتراضي. لمزيد من المعلومات، راجع تكوين سياسات مكافحة التصيد الاحتيالي [في Microsoft Defender Office 365](configure-mdo-anti-phishing-policies.md).
+- يمكنك تمكين الحماية من انتحال الشخصية وتكوينها في سياسات مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365. لا يتم تمكين حماية انتحال بشكل افتراضي. لمزيد من المعلومات، راجع [تكوين سياسات](configure-mdo-anti-phishing-policies.md) مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365.
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>فتح معلومات انتحال المعلومات في مدخل Microsoft 365 Defender
 
@@ -71,7 +71,7 @@ ms.locfileid: "63579609"
 
 2. في صفحة **مكافحة التصيد** الاحتيالي، تبدو رؤى انتحال الشخصية كما يلي:
 
-   ![معلومات خادعة حول انتحال المعلومات والانتحال على صفحة نهج مكافحة التصيد الاحتيالي.](../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png)
+   :::image type="content" source="../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png" alt-text="معلومات انتحال المعلومات والخادعة على صفحة نهج مكافحة التصيد الاحتيالي" lightbox="../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png":::
 
    رؤى لها وضعان:
 

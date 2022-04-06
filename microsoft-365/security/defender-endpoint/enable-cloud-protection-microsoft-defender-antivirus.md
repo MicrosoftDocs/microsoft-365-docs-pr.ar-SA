@@ -15,18 +15,18 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 95abb603983ea16192d93b12757cde6fba026047
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+ms.openlocfilehash: 78f992e20ee0c0c2505777295ca3ba34a5c4ea66
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63579554"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470626"
 ---
 # <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>تشغيل الحماية السحابية في برنامج الحماية من الفيروسات من Microsoft Defender
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
 [توفر الحماية السحابية برنامج الحماية من الفيروسات من Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) حماية دقيقة وفي الوقت الحقيقي وذكية. يجب تمكين الحماية السحابية بشكل افتراضي؛ ومع ذلك، يمكنك تكوين الحماية السحابية لتتناسب مع احتياجات مؤسستك.
@@ -35,7 +35,7 @@ ms.locfileid: "63579554"
 
 يمكنك تشغيل برنامج الحماية من الفيروسات من Microsoft Defender السحابة أو إيقاف تشغيلها باستخدام إحدى الطرق العديدة:
 
-- إدارة نقاط النهاية من Microsoft، الذي Microsoft Intune إدارة التكوين
+- إدارة نقاط النهاية من Microsoft، الذي يتضمن Microsoft Intune Configuration Manager
 - نهج المجموعة
 - PowerShell cmdlets
 
@@ -81,11 +81,11 @@ ms.locfileid: "63579554"
 
 لمزيد من المعلومات حول Microsoft Endpoint Configuration Manager، راجع كيفية إنشاء سياسات الحماية من البرامج الضارة [ونشرها: خدمة الحماية من السحابة](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service).
 
-## <a name="use-group-policy-to-turn-on-cloud-protection"></a>استخدام "نهج المجموعة" ل تشغيل الحماية السحابية
+## <a name="use-group-policy-to-turn-on-cloud-protection"></a>استخدام نهج المجموعة تشغيل الحماية السحابية
 
-1. على جهاز إدارة نهج المجموعة، افتح وحدة تحكم إدارة [نهج](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) المجموعة، وانقر بز الماوس الأيمن فوق كائن نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
+1. على جهاز نهج المجموعة، افتح وحدة التحكم نهج المجموعة [الإدارة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))، وانقر ب الماوس الأيمن فوق نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
 
-2. في محرر **إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر**.
+2. في نهج المجموعة **إدارة،** انتقل إلى **تكوين الكمبيوتر**.
 
 3. حدد **القوالب الإدارية**.
 
@@ -109,7 +109,7 @@ ms.locfileid: "63579554"
 
    >[!NOTE]
    > يعني **الخيار إرسال عينات آمنة** (1) أنه سيتم إرسال معظم العينات تلقائيا. وستبقى الملفات التي من المرجح أن تحتوي على معلومات شخصية مطالبة وستتطلب تأكيدا إضافيا.
-   > سيخفض تعيين الخيار **المطالبة** دوما (0) حالة حماية الجهاز. يعني تعيينه إلى **عدم إرسال** (2) أن ميزة الحظر [](configure-block-at-first-sight-microsoft-defender-antivirus.md) عند النظرة الأولى من Microsoft Defender لنقطة النهاية لن تعمل.
+   > سيخفض تعيين الخيار **المطالبة** دوما (0) حالة حماية الجهاز. يعني تعيينه إلى **عدم إرسال** (2) أن ميزة الحظر [](configure-block-at-first-sight-microsoft-defender-antivirus.md) عند النظرة الأولى Microsoft Defender لنقطة النهاية لن تعمل.
 
 7. حدد **موافق**.
 
@@ -126,7 +126,7 @@ Set-MpPreference -SubmitSamplesConsent SendAllSamples
 
 > [!IMPORTANT]
 > يمكنك تعيين **-SubmitSamplesConsent** إلى `SendSafeSamples` (الإعداد الافتراضي أو الموصى به) `NeverSend`أو أو `AlwaysPrompt`. يعني `SendSafeSamples` الإعداد أنه سيتم إرسال معظم العينات تلقائيا. ستنتج عن الملفات التي من المرجح أن تحتوي على معلومات شخصية مطالبة للمتابعة وستتطلب تأكيدا.
-> يخفض `NeverSend` `AlwaysPrompt` الإعدادان و مستوى حماية الجهاز. علاوة على ذلك، يعني `NeverSend` الإعداد أن ميزة [الحظر عند](configure-block-at-first-sight-microsoft-defender-antivirus.md) النظرة الأولى من Microsoft Defender لنقطة النهاية لن تعمل.
+> يخفض `NeverSend` `AlwaysPrompt` الإعدادان و مستوى حماية الجهاز. علاوة على ذلك، يعني `NeverSend` الإعداد أن ميزة [الحظر](configure-block-at-first-sight-microsoft-defender-antivirus.md) عند النظرة الأولى Microsoft Defender لنقطة النهاية لن تعمل.
 
 ## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-protection"></a>استخدام Windows إدارة البيانات (WMI) ل تشغيل الحماية السحابية
 
@@ -142,16 +142,18 @@ SubmitSamplesConsent
 ## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>تشغيل الحماية السحابية على العملاء الفرديين باستخدام أمن Windows
 
 > [!NOTE]
-> إذا تم تعيين تجاوز تكوين الإعداد المحلي للإبلاغ عن إعداد نهج مجموعة **MICROSOFT MAPS** إلى معطل، فإن إعداد الحماية المستند إلى السحابة في Windows الإعدادات سيكون رمادي اللون وغير متوفر. يجب نشر التغييرات التي يتم إدخالها من خلال "كائن نهج المجموعة" أولا على نقاط النهاية الفردية قبل أن يتم تحديث الإعداد في Windows الإعدادات.
+> إذا تم تعيين تجاوز تكوين الإعداد المحلي للإبلاغ عن إعداد **microsoft MAPS** نهج المجموعة إلى معطل، سيكون إعداد الحماية المستند إلى السحابة في Windows الإعدادات  رمادي اللون وغير متوفر. يجب نشر التغييرات التي يتم إدخالها نهج المجموعة كائن على نقاط نهاية فردية قبل تحديث الإعداد في Windows الإعدادات.
 
 1. افتح أمن Windows عن طريق تحديد أيقونة الدرع في شريط المهام، أو البحث في قائمة **البدء عن أمن Windows**.
 
 2. حدد لوحة **الحماية من &** الفيروسات (أو أيقونة الدرع على شريط القوائم الأيسر)، ثم ضمن إدارة الإعدادات،  حدد **& الحماية من المخاطر**.
 
-3. تأكد من **تبديل كل** من "الحماية  المستندة إلى السحابة" و"إرسال العينة التلقائية" إلى **تشغيل**.
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="إعدادات الحماية & الفيروسات" lightbox="../../media/wdav-protection-settings-wdsc.png":::
+
+3. تأكد من **تبديل** عمليات الإرسال النموذجي "الحماية المستندة إلى السحابة **" و** "الإرسال التلقائي" إلى **تشغيل**.
 
    > [!NOTE]
-   > إذا تم تكوين نموذج الإرسال التلقائي باستخدام "نهج المجموعة"، سيكون الإعداد رمادي اللون وغير متوفر.
+   > إذا تم تكوين نموذج إرسال تلقائي باستخدام نهج المجموعة سيكون الإعداد رمادي اللون وغير متوفر.
 
 ## <a name="see-also"></a>راجع أيضًا
 

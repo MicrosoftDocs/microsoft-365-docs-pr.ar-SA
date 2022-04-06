@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: c43fdfe746575837e8e5c8f36992f5fa6e2fec96
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: df79062d1dafcd8d82dfa4ff9b9847ff4fad1775
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679489"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476126"
 ---
 # <a name="evaluate-network-protection"></a>تقييم حماية الشبكة
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [تساعد حماية](network-protection.md) الشبكة على منع الموظفين من استخدام أي تطبيق للوصول إلى مجالات خطيرة قد تستضيف رسائل التصيد الاحتيالي والمستغلين والمحتويات الضارة الأخرى على الإنترنت.
@@ -62,14 +62,14 @@ ms.locfileid: "63679489"
 
     سيتم السماح باتصال الشبكة وستعرض رسالة اختبار.
     
-    ![مثال إعلام يفيد بحظر الاتصال: تسبب مسؤول تكنولوجيا المعلومات أمن Windows لحظر اتصال الشبكة هذا. اتصل بمكتب المساعدة في IT.](images/np-notif.png)
+    :::image type="content" source="images/np-notif.png" alt-text="إعلام حظر الاتصال" lightbox="images/np-notif.png":::
 
 > [!NOTE]
 > يمكن أن تكون اتصالات الشبكة ناجحة على الرغم من حظر الموقع بواسطة حماية الشبكة. لمعرفة المزيد، راجع [حماية الشبكة ومصافحة TCP ثلاثية.](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>مراجعة أحداث حماية الشبكة في Windows الحدث
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>مراجعة أحداث حماية الشبكة في Windows عارض الأحداث
 
-لمراجعة التطبيقات التي كان سيتم حظرها، افتح "عارض الأحداث" وتصفية "لمعر 1125 الحدث" في سجل Microsoft-Windows-Windows Defender/التشغيلية. يسرد الجدول التالي كل أحداث حماية الشبكة.
+لمراجعة التطبيقات التي كانت ستحظر، افتح عارض الأحداث وتصفية "لمعر 1125 الحدث" في سجل Microsoft-Windows-Windows Defender/التشغيلية. يسرد الجدول التالي كل أحداث حماية الشبكة.
 
 | "معرّف الحدث" | توفير/مصدر | الوصف |
 |---|---|---|

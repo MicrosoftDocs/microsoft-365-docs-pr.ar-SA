@@ -2,7 +2,7 @@
 title: نشر Microsoft Defender لنقطة النهاية على Linux يدويا
 ms.reviewer: ''
 description: يصف كيفية نشر Microsoft Defender لنقطة النهاية على Linux يدويا من سطر الأوامر.
-keywords: microsoft, defender, Microsoft Defender لنقطة النهاية, linux, installation, deploy, deploy, uninstall,ible, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، linux، التثبيت، التوزيع، إلغاء التثبيت، الدمى، ansible، linux، redhat، ubuntu، debian، sles، suse، centos، fedora، amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4d66dad57fa7b045062a0300327b76030c33dfab
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: a0f499a08288735d5f0d75e7111ec0b6360908a8
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468160"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64664513"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>نشر Microsoft Defender لنقطة النهاية على Linux يدويا
 
@@ -29,51 +29,51 @@ ms.locfileid: "64468160"
 
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 
-تصف هذه المقالة كيفية نشر Microsoft Defender لنقطة النهاية على Linux يدويا. يتطلب النشر الناجح إكمال كل المهام التالية:
+تصف هذه المقالة كيفية نشر Microsoft Defender لنقطة النهاية على Linux يدويا. يتطلب النشر الناجح إكمال كافة المهام التالية:
 
   - [المتطلبات الأساسية ومتطلبات النظام](#prerequisites-and-system-requirements)
   - [تكوين مستودع برامج Linux](#configure-the-linux-software-repository)
-    - [RHEL والمتغيرات (CentOS و Fedora و Oracle Linux و Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
+    - [RHEL والمتغيرات (CentOS و Fedora وOracle Linux وAmazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
     - [SLES والمتغيرات](#sles-and-variants)
     - [أنظمة Ubuntu و Debian](#ubuntu-and-debian-systems)
   - [تثبيت التطبيق](#application-installation)
-  - [تنزيل حزمة الboarding](#download-the-onboarding-package)
+  - [تنزيل حزمة الإلحاق](#download-the-onboarding-package)
   - [تكوين العميل](#client-configuration)
 
 ## <a name="prerequisites-and-system-requirements"></a>المتطلبات الأساسية ومتطلبات النظام
 
-قبل البدء، راجع Microsoft Defender لنقطة النهاية [على Linux](microsoft-defender-endpoint-linux.md) للحصول على وصف للمتطلبات الأساسية ومتطلبات النظام للإصدار الحالي للبرنامج.
+قبل البدء، راجع [Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md) لوصف المتطلبات الأساسية ومتطلبات النظام لإصدار البرنامج الحالي.
 
 > [!WARNING]
-> تتطلب ترقية نظام التشغيل إلى إصدار رئيسي جديد بعد تثبيت المنتج إعادة تثبيت المنتج. تحتاج إلى إلغاء [](linux-resources.md#uninstall) تثبيت Defender for Endpoint الموجود على Linux، وترقية نظام التشغيل، ثم إعادة تكوين Defender ل Endpoint على Linux باتباع الخطوات أدناه.
+> تتطلب ترقية نظام التشغيل إلى إصدار رئيسي جديد بعد تثبيت المنتج إعادة تثبيت المنتج. تحتاج إلى [إلغاء تثبيت](linux-resources.md#uninstall) Defender لنقطة النهاية الموجودة على Linux، وترقية نظام التشغيل، ثم إعادة تكوين Defender لنقطة النهاية على Linux باتباع الخطوات أدناه.
 
 ## <a name="configure-the-linux-software-repository"></a>تكوين مستودع برامج Linux
 
-يمكن نشر Defender for Endpoint على Linux من إحدى القنوات التالية (المشار إلى ذلك أدناه ب *[قناة]*): *insiders-fast* أو *insiders-slow* أو *prod*. تتوافق كل قناة من هذه القنوات مع مستودع برامج Linux. يتم توفير إرشادات لتكوين جهازك لاستخدام أحد هذه المستودعات أدناه.
+يمكن نشر Defender لنقطة النهاية على Linux من إحدى القنوات التالية (الموضح أدناه ب *[channel]*): *insider-fast* أو *insider-slow* أو *prod*. تتوافق كل قناة من هذه القنوات مع مستودع برامج Linux. تتوفر أدناه إرشادات لتكوين جهازك لاستخدام أحد هذه المستودعات.
 
-يحدد اختيار القناة نوع التحديثات التي يتم تقديمها لجهازك وتكرارها. الأجهزة في *insiders-fast* هي الأجهزة الأولى التي تتلقى التحديثات والميزات الجديدة، يليها *لاحقا insiders-slow* وأخيرا ب *prod*.
+يحدد اختيار القناة نوع التحديثات التي يتم تقديمها لجهازك ومعدل تكرارها. الأجهزة في *insider-fast* هي أول الأجهزة التي تتلقى التحديثات والميزات الجديدة، متبوعة لاحقا *ببطء مشتركي Insider* وأخيرا بال *prod*.
 
-من أجل معاينة الميزات الجديدة وتقديم الملاحظات المبكرة، من المستحسن تكوين بعض الأجهزة في المؤسسة لاستخدام *insiders-fast* أو *insiders-slow*.
+من أجل معاينة الميزات الجديدة وتقديم الملاحظات المبكرة، يوصى بتكوين بعض الأجهزة في مؤسستك لاستخدام *مشتركي insider بسرعة* أو *بطيء من الداخل*.
 
 > [!WARNING]
-> يتطلب تبديل القناة بعد التثبيت الأولي إعادة تثبيت المنتج. لتبديل قناة المنتج: قم ب إلغاء تثبيت الحزمة الموجودة، ثم إعادة تكوين الجهاز لاستخدام القناة الجديدة، واتبع الخطوات الموجودة في هذا المستند لتثبيت الحزمة من الموقع الجديد.
+> يتطلب تبديل القناة بعد التثبيت الأولي إعادة تثبيت المنتج. لتبديل قناة المنتج: قم بإلغاء تثبيت الحزمة الموجودة، وأعد تكوين جهازك لاستخدام القناة الجديدة، واتبع الخطوات الواردة في هذا المستند لتثبيت الحزمة من الموقع الجديد.
 
-### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>RHEL والمتغيرات (CentOS و Fedora و Oracle Linux و Amazon Linux 2)
+### <a name="rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2"></a>RHEL والمتغيرات (CentOS و Fedora وOracle Linux وAmazon Linux 2)
 
-- تثبيت `yum-utils` إذا لم يكن مثبتا بعد:
+- قم بالتثبيت `yum-utils` إذا لم يتم تثبيته بعد:
 
     ```bash
     sudo yum install yum-utils
     ```
 
   > [!NOTE]
-  > التوزيع والإصدار، وحدد أقرب إدخال (حسب الرئيسي، ثم ثانوي) له ضمن `https://packages.microsoft.com/config/rhel/`.
+  > التوزيع والإصدار الخاصين بك، وتحديد الإدخال الأقرب (حسب الرئيسي، ثم الثانوي) له ضمن `https://packages.microsoft.com/config/rhel/`.
 
     استخدم الجدول التالي لمساعدتك على إرشادك في تحديد موقع الحزمة:
 
@@ -81,15 +81,15 @@ ms.locfileid: "64468160"
 
     ****
 
-    |إصدار & Distro|الحزمة|
+    |إصدار & Distro|حزمه|
     |---|---|
-    |ل RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
+    |بالنسبة إلى RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
     |ل RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-    |ل RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
-    |بالنسبة إلى Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
-    |بالنسبة إلى Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
+    |بالنسبة إلى RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |ل Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
+    |ل Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
-    في الأوامر التالية، استبدل *[الإصدار]* و *[القناة]* بالمعلومات التي حددتها:
+    في الأوامر التالية، استبدل *[version]* و *[channel]* بالمعلومات التي حددتها:
 
 
     ```bash
@@ -97,21 +97,21 @@ ms.locfileid: "64468160"
     ```
 
     > [!TIP]
-    > استخدم الأمر hostnamectl لتحديد المعلومات ذات الصلة للنظام بما في ذلك الإصدار *[الإصدار]*.
+    > استخدم الأمر hostnamectl لتحديد المعلومات المتعلقة بالنظام بما في ذلك الإصدار *[version]*.
 
-    على سبيل المثال، إذا كنت تقوم بتشغيل CentOS 7 وتريد نشر Defender for Endpoint على Linux من *قناة prod* :
+    على سبيل المثال، إذا كنت تقوم بتشغيل CentOS 7 وتريد نشر Defender لنقطة النهاية على Linux من قناة *prod* :
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
     ```
 
-    أو إذا كنت ترغب في استكشاف الميزات الجديدة على الأجهزة المحددة، فقد ترغب في نشر Microsoft Defender لنقطة النهاية Linux إلى *قناة insiders fast*:
+    أو إذا كنت ترغب في استكشاف ميزات جديدة على الأجهزة المحددة، فقد ترغب في نشر Microsoft Defender لنقطة النهاية على Linux إلى قناة *insider-fast*:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/insiders-fast.repo
     ```
 
-- تثبيت المفتاح العام Microsoft GPG:
+- تثبيت المفتاح العام ل Microsoft GPG:
 
     ```bash
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
@@ -120,7 +120,7 @@ ms.locfileid: "64468160"
 ### <a name="sles-and-variants"></a>SLES والمتغيرات
 
 > [!NOTE]
-> التوزيع والإصدار، وحدد أقرب إدخال (حسب الرئيسي، ثم ثانوي) له ضمن `https://packages.microsoft.com/config/sles/`.
+> التوزيع والإصدار الخاصين بك، وتحديد الإدخال الأقرب (حسب الرئيسي، ثم الثانوي) له ضمن `https://packages.microsoft.com/config/sles/`.
 
    في الأوامر التالية، استبدل *[distro]* و *[version]* بالمعلومات التي حددتها:
 
@@ -129,7 +129,7 @@ ms.locfileid: "64468160"
    ```
 
    > [!TIP]
-   > استخدم الأمر SPident لتحديد المعلومات ذات الصلة للنظام بما في ذلك الإصدار *[الإصدار]*.
+   > استخدم أمر SPident لتحديد المعلومات ذات الصلة بالنظام بما في ذلك الإصدار *[version].*
 
    على سبيل المثال، إذا كنت تقوم بتشغيل SLES 12 وترغب في نشر Microsoft Defender لنقطة النهاية على Linux من قناة *prod*:
 
@@ -137,7 +137,7 @@ ms.locfileid: "64468160"
    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
    ```
 
-- تثبيت المفتاح العام Microsoft GPG:
+- تثبيت المفتاح العام ل Microsoft GPG:
 
     ```bash
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
@@ -145,20 +145,20 @@ ms.locfileid: "64468160"
 
 ### <a name="ubuntu-and-debian-systems"></a>أنظمة Ubuntu و Debian
 
-- تثبيت `curl` إذا لم يكن مثبتا بعد:
+- قم بالتثبيت `curl` إذا لم يتم تثبيته بعد:
 
     ```bash
     sudo apt-get install curl
     ```
 
-- تثبيت `libplist-utils` إذا لم يكن مثبتا بعد:
+- قم بالتثبيت `libplist-utils` إذا لم يتم تثبيته بعد:
 
     ```bash
     sudo apt-get install libplist-utils
     ```
 
 > [!NOTE]
-> التوزيع والإصدار، وحدد أقرب إدخال (حسب الرئيسي، ثم ثانوي) له ضمن `https://packages.microsoft.com/config/[distro]/`.
+> التوزيع والإصدار الخاصين بك، وتحديد الإدخال الأقرب (حسب الرئيسي، ثم الثانوي) له ضمن `https://packages.microsoft.com/config/[distro]/`.
 
    في الأمر أدناه، استبدل *[distro]* و *[version]* بالمعلومات التي حددتها:
 
@@ -167,9 +167,9 @@ ms.locfileid: "64468160"
    ```
 
    > [!TIP]
-   > استخدم الأمر hostnamectl لتحديد المعلومات ذات الصلة للنظام بما في ذلك الإصدار *[الإصدار]*.
+   > استخدم الأمر hostnamectl لتحديد المعلومات المتعلقة بالنظام بما في ذلك الإصدار *[version]*.
 
-   على سبيل المثال، إذا كنت تقوم بتشغيل Ubuntu 18.04 وترغب في نشر Microsoft Defender لنقطة النهاية على Linux من *قناة prod*:
+   على سبيل المثال، إذا كنت تقوم بتشغيل Ubuntu 18.04 وترغب في نشر Microsoft Defender لنقطة النهاية على Linux من قناة *prod*:
 
    ```bash
    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
@@ -181,13 +181,13 @@ ms.locfileid: "64468160"
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
 
-    على سبيل المثال، إذا اخترت *قناة prod* :
+    على سبيل المثال، إذا اخترت قناة *prod* :
 
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
     ```
 
-- تثبيت الحزمة `gpg` إذا لم تكن مثبتة بالفعل:
+- `gpg` تثبيت الحزمة إذا لم تكن مثبتة بالفعل:
 
     ```bash
     sudo apt-get install gpg
@@ -199,13 +199,13 @@ ms.locfileid: "64468160"
     sudo apt-get install gnupg
     ```
 
-- تثبيت المفتاح العام Microsoft GPG:
+- تثبيت المفتاح العام ل Microsoft GPG:
 
     ```bash
     curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
     ```
 
-- ثبت برنامج تشغيل https إذا لم يكن موجودا بالفعل:
+- تثبيت برنامج تشغيل https إذا لم يكن موجودا بالفعل:
 
     ```bash
     sudo apt-get install apt-transport-https
@@ -219,14 +219,14 @@ ms.locfileid: "64468160"
 
 ## <a name="application-installation"></a>تثبيت التطبيق
 
-- RHEL والمتغيرات (CentOS و Oracle Linux):
+- RHEL والمتغيرات (CentOS وOracle Linux):
 
     ```bash
     sudo yum install mdatp
     ```
 
     > [!NOTE]
-    > إذا كان لديك عدة مستودعات Microsoft تم تكوينها على جهازك، يمكنك أن تكون محددا بشأن المستودع الذي تريد تثبيت الحزمة منه. يوضح المثال التالي كيفية تثبيت الحزمة من `production` `insiders-fast` القناة إذا تم أيضا تكوين قناة المستودع على هذا الجهاز. قد يحدث هذا الوضع إذا كنت تستخدم منتجات Microsoft متعددة على جهازك. قد يختلف الاسم المستعار للمستودع عن الاسم المستعار للمستودع في المثال التالي، وذلك استنادا إلى توزيع الخادم والإصدار الذي تم إصداره منه.
+    > إذا كان لديك عدة مستودعات Microsoft تم تكوينها على جهازك، يمكنك أن تكون محددا بشأن المستودع الذي تريد تثبيت الحزمة منه. يوضح المثال التالي كيفية تثبيت الحزمة من القناة `production` إذا كان لديك `insiders-fast` أيضا قناة المستودع التي تم تكوينها على هذا الجهاز. قد يحدث هذا الموقف إذا كنت تستخدم منتجات Microsoft متعددة على جهازك. استنادا إلى توزيع الخادم وإصداره، قد يختلف الاسم المستعار للمستودع عن الاسم المستعار الموجود في المثال التالي.
 
     ```bash
     # list all repositories
@@ -252,7 +252,7 @@ ms.locfileid: "64468160"
     ```
 
     > [!NOTE]
-    > إذا كان لديك عدة مستودعات Microsoft تم تكوينها على جهازك، يمكنك أن تكون محددا بشأن المستودع الذي تريد تثبيت الحزمة منه. يوضح المثال التالي كيفية تثبيت الحزمة من `production` `insiders-fast` القناة إذا تم أيضا تكوين قناة المستودع على هذا الجهاز. قد يحدث هذا الوضع إذا كنت تستخدم منتجات Microsoft متعددة على جهازك.
+    > إذا كان لديك عدة مستودعات Microsoft تم تكوينها على جهازك، يمكنك أن تكون محددا بشأن المستودع الذي تريد تثبيت الحزمة منه. يوضح المثال التالي كيفية تثبيت الحزمة من القناة `production` إذا كان لديك `insiders-fast` أيضا قناة المستودع التي تم تكوينها على هذا الجهاز. قد يحدث هذا الموقف إذا كنت تستخدم منتجات Microsoft متعددة على جهازك.
 
     ```bash
     zypper repos
@@ -278,7 +278,7 @@ ms.locfileid: "64468160"
     ```
 
     > [!NOTE]
-    > إذا كان لديك عدة مستودعات Microsoft تم تكوينها على جهازك، يمكنك أن تكون محددا بشأن المستودع الذي تريد تثبيت الحزمة منه. يوضح المثال التالي كيفية تثبيت الحزمة من `production` `insiders-fast` القناة إذا تم أيضا تكوين قناة المستودع على هذا الجهاز. قد يحدث هذا الوضع إذا كنت تستخدم منتجات Microsoft متعددة على جهازك.
+    > إذا كان لديك عدة مستودعات Microsoft تم تكوينها على جهازك، يمكنك أن تكون محددا بشأن المستودع الذي تريد تثبيت الحزمة منه. يوضح المثال التالي كيفية تثبيت الحزمة من القناة `production` إذا كان لديك `insiders-fast` أيضا قناة المستودع التي تم تكوينها على هذا الجهاز. قد يحدث هذا الموقف إذا كنت تستخدم منتجات Microsoft متعددة على جهازك.
 
     ```bash
     cat /etc/apt/sources.list.d/*
@@ -293,18 +293,18 @@ ms.locfileid: "64468160"
     sudo apt -t bionic install mdatp
     ```
 
-## <a name="download-the-onboarding-package"></a>تنزيل حزمة الboarding
+## <a name="download-the-onboarding-package"></a>تنزيل حزمة الإلحاق
 
-قم بتنزيل حزمة التكهيل من Microsoft 365 Defender المدخل.
+قم بتنزيل حزمة الإلحاق من مدخل Microsoft 365 Defender.
 
 > [!IMPORTANT]
-> إذا فاتتك هذه الخطوة، فإن أي أمر يتم تنفيذه سيعرض رسالة تحذير تشير إلى أن المنتج غير مرخص. كما يرجع `mdatp health` الأمر قيمة `false`.
+> إذا فاتتك هذه الخطوة، فسيعرض أي أمر تم تنفيذه رسالة تحذير تشير إلى أن المنتج غير مرخص. `mdatp health` يقوم الأمر أيضا بإرجاع قيمة .`false`
 
-1. في Microsoft 365 Defender، انتقل إلى الإعدادات > نقاط النهاية > إدارة الأجهزة > **التكوين**.
-2. في القائمة المنسدلة الأولى، حدد **Linux Server** كنمع التشغيل. في القائمة المنسدلة الثانية، حدد **برنامج نصي محلي** كطريقة نشر.
-3. حدد **تنزيل حزمة التكهيل**. احفظ الملف WindowsDefenderATPOnboardingPackage.zip.
+1. في مدخل Microsoft 365 Defender، انتقل إلى **نقاط النهاية الإعدادات > > إدارة الأجهزة > الإلحاق**.
+2. في القائمة المنسدلة الأولى، حدد **Linux Server** كنظام تشغيل. في القائمة المنسدلة الثانية، حدد **البرنامج النصي المحلي** كأسلوب نشر.
+3. حدد **تنزيل حزمة الإلحاق**. احفظ الملف WindowsDefenderATPOnboardingPackage.zip.
 
-   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="تنزيل حزمة التكهيل في مدخل Microsoft 365 Defender" lightbox="images/portal-onboarding-linux.png":::
+   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="تنزيل حزمة إلحاق في مدخل Microsoft 365 Defender" lightbox="images/portal-onboarding-linux.png":::
 
 4. من موجه الأوامر، تحقق من أن لديك الملف، واستخرج محتويات الأرشيف:
 
@@ -331,7 +331,7 @@ ms.locfileid: "64468160"
 1. انسخ MicrosoftDefenderATPOnboardingLinuxServer.py إلى الجهاز الهدف.
 
     > [!NOTE]
-    > في البداية، لم يكن جهاز العميل مقترن بمنظمة وكانت السمة *orgId* فارغة.
+    > في البداية جهاز العميل غير مقترن بمؤسسة وسمة *orgId* فارغة.
 
     ```bash
     mdatp health --field org_id
@@ -340,44 +340,44 @@ ms.locfileid: "64468160"
 2. تشغيل MicrosoftDefenderATPOnboardingLinuxServer.py.
 
     > [!NOTE]
-    > لتشغيل هذا الأمر، يجب أن `python` `python3` يكون لديك أو مثبتة على الجهاز استنادا إلى disto والإصدار. إذا لزم الأمر، راجع [الإرشادات خطوة بخطوة لتثبيت Python على Linux](https://opensource.com/article/20/4/install-python-linux).
+    > لتشغيل هذا الأمر، يجب أن يكون لديك `python`  أو `python3` مثبتا على الجهاز استنادا إلى disto والإصدار. إذا لزم الأمر، فراجع [التعليمات خطوة بخطوة لتثبيت Python على Linux](https://opensource.com/article/20/4/install-python-linux).
     
-    إذا كنت تقوم بتشغيل 8.x أو Ubuntu 20.04 أو أعلى، ستحتاج إلى استخدام `python3`.
+    إذا كنت تقوم بتشغيل RHEL 8.x أو Ubuntu 20.04 أو أعلى، فستحتاج إلى استخدام `python3`.
 
     ```bash
     sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
-    بالنسبة للإصدارات والإصدارات المتبقية، ستحتاج إلى استخدام `python`.
+    بالنسبة لبقية الفرق والإصدارات، ستحتاج إلى استخدام `python`.
     
     ```bash
     sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
     
-3. تحقق من أن الجهاز مقترن الآن بمنظمتك ويقرر معرف مؤسسة صالحا:
+3. تحقق من أن الجهاز مقترن الآن بمؤسستك ويبلغ عن معرف مؤسسة صالح:
 
     ```bash
     mdatp health --field org_id
     ```
 
-4. تحقق من حالة صحة المنتج عن طريق تشغيل الأمر التالي. قيمة مرجعة تشير `1` إلى أن المنتج يعمل كما هو متوقع:
+4. تحقق من الحالة الصحية للمنتج عن طريق تشغيل الأمر التالي. تشير القيمة المرجعة إلى `1` أن المنتج يعمل كما هو متوقع:
 
     ```bash
     mdatp health --field healthy
     ```
 
     > [!IMPORTANT]
-    > عند بدء تشغيل المنتج للمرة الأولى، يتم تنزيل أحدث تعريفات مكافحة البرامج الضارة. قد يستغرق ذلك ما يصل إلى بضع دقائق استنادا إلى اتصال الشبكة. خلال هذه الفترة، يرجع الأمر أعلاه قيمة `false`. يمكنك التحقق من حالة تحديث التعريف باستخدام الأمر التالي:
+    > عندما يبدأ المنتج لأول مرة، فإنه يقوم بتنزيل أحدث تعريفات مكافحة البرامج الضارة. قد يستغرق ذلك بضع دقائق اعتمادا على اتصال الشبكة. خلال هذا الوقت، يقوم الأمر أعلاه بإرجاع قيمة .`false` يمكنك التحقق من حالة تحديث التعريف باستخدام الأمر التالي:
     >
     > ```bash
     > mdatp health --field definitions_status
     > ```
     >
-    > تجدر الإشارة إلى أنك قد تحتاج أيضا إلى تكوين وكيل بعد إكمال التثبيت الأولي. راجع [تكوين Defender ل Endpoint على Linux لاكتشاف الوكيل الثابت: تكوين ما بعد التثبيت](linux-static-proxy-configuration.md#post-installation-configuration).
+    > يرجى ملاحظة أنك قد تحتاج أيضا إلى تكوين وكيل بعد إكمال التثبيت الأولي. راجع [تكوين Defender لنقطة النهاية على Linux لاكتشاف الوكيل الثابت: تكوين ما بعد التثبيت](linux-static-proxy-configuration.md#post-installation-configuration).
 
-5. يمكنك تشغيل اختبار الكشف عن AV للتحقق من أن الجهاز مدرج بشكل صحيح ويبل ى الخدمة. تنفيذ الخطوات التالية على الجهاز المعين حديثا:
+5. قم بتشغيل اختبار الكشف عن AV للتحقق من أن الجهاز تم إلحاقه بشكل صحيح وإعداد التقارير إلى الخدمة. نفذ الخطوات التالية على الجهاز الذي تم إلحاقه حديثا:
 
-    - تأكد من تمكين الحماية في الوقت الحقيقي ( `1` تشير إلى ذلك نتيجة من تشغيل الأمر التالي):
+    - تأكد من تمكين الحماية في الوقت الحقيقي (يشار إليها بنتيجة `1` تشغيل الأمر التالي):
 
         ```bash
         mdatp health --field real_time_protection_enabled
@@ -389,35 +389,35 @@ ms.locfileid: "64468160"
         mdatp config real-time-protection --value enabled
         ```
 
-    - افتح نافذة المحطة الطرفية ونفذ الأمر التالي:
+    - افتح نافذة Terminal ونفذ الأمر التالي:
 
         ``` bash
         curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - يجب أن يكون الملف معزولا بواسطة Defender for Endpoint على Linux. استخدم الأمر التالي لتضمين جميع التهديدات التي تم الكشف عنها:
+    - يجب عزل الملف بواسطة Defender لنقطة النهاية على Linux. استخدم الأمر التالي لإدراج كافة التهديدات المكتشفة:
 
         ```bash
         mdatp threat list
         ```
 
-6. يمكنك تشغيل الكشف التلقائي والاستجابة على النقط النهائية الكشف عن البيانات ومحاكاة عملية الكشف للتحقق من أن الجهاز تم إعداد تقاريره إلى الخدمة بشكل صحيح. تنفيذ الخطوات التالية على الجهاز المعين حديثا:
+6. قم بتشغيل اختبار الكشف عن الكشف التلقائي والاستجابة على النقط النهائية ومحاكاة الكشف للتحقق من أن الجهاز تم إلحاقه بشكل صحيح وإعداد التقارير إلى الخدمة. نفذ الخطوات التالية على الجهاز الذي تم إلحاقه حديثا:
 
-    - تحقق من ظهور خادم Linux الملوح في Microsoft 365 Defender. إذا كان هذا هو أول إعداد للجهاز، فقد يستغرق ظهوره ما يصل إلى 20 دقيقة.
+    - تحقق من ظهور خادم Linux الملحق في Microsoft 365 Defender. إذا كان هذا هو أول إلحاق للجهاز، فقد يستغرق الأمر ما يصل إلى 20 دقيقة حتى يظهر.
 
-    - قم بتنزيل ملف [البرنامج النصي واستخراجه](https://aka.ms/LinuxDIY) إلى خادم Linux تم تثبيته وتشغيل الأمر التالي: `./mde_linux_edr_diy.sh`
+    - قم بتنزيل [ملف البرنامج النصي](https://aka.ms/LinuxDIY) واستخراجه إلى خادم Linux المضمن وتشغيل الأمر التالي: `./mde_linux_edr_diy.sh`
 
     - بعد بضع دقائق، يجب رفع الكشف في Microsoft 365 Defender.
 
-    - أطلع على تفاصيل التنبيه والميول الزمنية للجهاز، وانجز خطوات التحقيق النموذجية.
+    - انظر إلى تفاصيل التنبيه والمخطط الزمني للجهاز ونفذ خطوات التحقيق النموذجية.
 
-## <a name="installer-script"></a>البرنامج النصي "المثبت"
+## <a name="installer-script"></a>البرنامج النصي للمثبت
 
-بدلا من ذلك، يمكنك استخدام برنامج نصي [bash](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) للمثبت التلقائي تم [توفيره في مستودع GitHub العام](https://github.com/microsoft/mdatp-xplat/).
-يحدد البرنامج النصي التوزيع والإصدار، ويبسط تحديد المستودع الصحيح، ويعد الجهاز لسحب الحزمة الأخيرة، ويجمع خطوات تثبيت المنتج والتركيب.
+بدلا من ذلك، يمكنك استخدام [برنامج نصي bash للمثبت](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) التلقائي المتوفر في [مستودع GitHub العام](https://github.com/microsoft/mdatp-xplat/).
+يحدد البرنامج النصي التوزيع والإصدار، ويبسط تحديد المستودع الصحيح، ويقوم بإعداد الجهاز لسحب أحدث حزمة، ويجمع بين خطوات تثبيت المنتج والإلحاق.
 
 ```bash
-❯ ./mde_installer.sh --help
+> ./mde_installer.sh --help
 usage: basename ./mde_installer.sh [OPTIONS]
 Options:
 -c|--channel      specify the channel from which you want to install. Default: insiders-fast
@@ -437,17 +437,17 @@ Options:
 
 ## <a name="log-installation-issues"></a>مشاكل تثبيت السجل
 
-راجع [مشاكل تثبيت السجل](linux-resources.md#log-installation-issues) للحصول على مزيد من المعلومات حول كيفية العثور على السجل الذي تم إنشاؤه تلقائيا الذي أنشأه المثبت عند حدوث خطأ.
+راجع [مشاكل تثبيت السجل](linux-resources.md#log-installation-issues) للحصول على مزيد من المعلومات حول كيفية العثور على السجل الذي تم إنشاؤه تلقائيا بواسطة المثبت عند حدوث خطأ.
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>كيفية الترحيل من Insiders-Fast إلى قناة الإنتاج
 
-1. إلغاء تثبيت إصدار "قناة Insiders-Fast" من Defender for Endpoint على Linux.
+1. إلغاء تثبيت إصدار "قناة Insider-Fast" من Defender لنقطة النهاية على Linux.
 
     ```bash
     sudo yum remove mdatp
     ```
 
-1. تعطيل Defender for Endpoint على Linux Insiders-Fast repo
+1. تعطيل Defender لنقطة النهاية على مستودع Insiders-Fast Linux
 
     ```bash
     sudo yum repolist
@@ -462,9 +462,9 @@ Options:
 
 1. إعادة نشر Microsoft Defender لنقطة النهاية على Linux باستخدام "قناة الإنتاج".
 
-## <a name="uninstallation"></a>إلغاء التثبيت
+## <a name="uninstallation"></a>الغاء التثبيت
 
-راجع [إلغاء التثبيت للحصول](linux-resources.md#uninstall) على تفاصيل حول كيفية إزالة Defender for Endpoint على Linux من أجهزة العميل.
+راجع [إلغاء التثبيت](linux-resources.md#uninstall) للحصول على تفاصيل حول كيفية إزالة Defender لنقطة النهاية على Linux من أجهزة العميل.
 
 ## <a name="see-also"></a>راجع أيضًا
 

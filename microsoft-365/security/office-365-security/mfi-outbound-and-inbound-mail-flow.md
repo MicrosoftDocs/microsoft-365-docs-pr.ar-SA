@@ -14,12 +14,12 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: يمكن للمسؤولين التعرف على معلومات تدفق البريد الصادر والداخل في لوحة معلومات تدفق البريد في مركز التوافق & الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5de9c699a12a7c3f282c4e1752eb23c5842a8c5d
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 3bc9d6c08dfc1c232018d79e988d741505079604
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679599"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475708"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>نظرة ثاقبة حول تدفق البريد الصادر والداخل في مركز & الأمان
 
@@ -27,14 +27,14 @@ ms.locfileid: "63679599"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 تجمع **معلومات** تدفق البريد الصادر والداخل في لوحة معلومات تدفق [](mail-flow-insights-v2.md) البريد في مركز التوافق & [](https://protection.office.com) الأمان المعلومات من تقرير [الموصل](view-mail-flow-reports.md#connector-report) والتقرير السابق ل **نظرة عامة حول TLS** في مكان واحد.
 
 يعرض عنصر واجهة المستخدم تشفير TLS المستخدم للاتصال عند تسليم الرسائل إلى مؤسستك أو منها. يتم تشفير الاتصالات التي يتم تأسيسها مع خدمات البريد الإلكتروني الأخرى بواسطة TLS عندما يتم تقديم TLS من قبل الجانبين. يوفر عنصر واجهة المستخدم لقطة عن الأسبوع الأخير من تدفق البريد.
 
-![عنصر واجهة مستخدم تدفق البريد الصادر والداخل في لوحة معلومات تدفق البريد في مركز & الأمان.](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png" alt-text="عنصر واجهة مستخدم تدفق البريد الصادر والداخل في لوحة معلومات تدفق البريد في مركز & الأمان" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png":::
 
 ترتبط المعلومات في عنصر واجهة المستخدم بالموصلات وحماية رسائل TLS في Microsoft 365. لمزيد من المعلومات، راجع المواضيع التالية:
 
@@ -46,7 +46,7 @@ ms.locfileid: "63679599"
 
 عندما تنقر فوق **عرض التفاصيل** على عنصر واجهة المستخدم، تعرض لك عنصر واجهة المستخدم من خلال عنصر واجهة مستخدم الرسالة المحمية أثناء النقل **(بواسطة TLS) حماية TLS** للرسائل التي تقوم بإدخال مؤسستك ومغادرتها.
 
-![الرسائل المحمية أثناء النقل (بواسطة TLS) التي تظهر بعد النقر فوق عرض التفاصيل على عنصر واجهة مستخدم البريد الإلكتروني الصادر والداخل.](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png" alt-text="قائمة الرسائل المحمية أثناء النقل (بواسطة TLS) التي تظهر بعد النقر فوق عرض التفاصيل على عنصر واجهة مستخدم البريد الإلكتروني الصادر والداخل" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png":::
 
 حاليا، TLS 1.2 هو الإصدار الأكثر أمانا من TLS الذي يقدمه Microsoft 365. ستحتاج في أغلب الأحيان إلى معرفة تشفير TLS الذي يتم استخدامه لتدقيقات التوافق. من المحتمل ألا تكون لديك علاقة مباشرة مع معظم خوادم البريد الإلكتروني المصدر والوجهة (ولا تملكها Microsoft أيضا)، وبالتالي ليس لديك العديد من الخيارات لتحسين تشفير TLS الذي تستخدمه هذه الخوادم.
 

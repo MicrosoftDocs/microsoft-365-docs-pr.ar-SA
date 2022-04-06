@@ -15,20 +15,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6d10354f68dd5ba26db7f4260425559167c8888c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: cf702dbcbec1bf9141827610c1304a0f19e13b90
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63570416"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64475862"
 ---
 # <a name="monitor-web-browsing-security"></a>مراقبة أمان استعراض الويب
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
@@ -37,11 +37,11 @@ ms.locfileid: "63570416"
 
 - **عمليات الكشف** عن تهديدات الويب مع مرور الوقت - تعرض هذه البطاقة الحالية عدد تهديدات الويب التي تم الكشف عنها حسب النوع خلال الفترة الزمنية المحددة (آخر 30 يوما، آخر 3 أشهر، آخر 6 أشهر)
 
-  :::image type="content" alt-text="صورة البطاقة التي تعرض الكشف عن تهديدات الويب مع مرور الوقت." source="images/wtp-blocks-over-time.png" lightbox="images/wtp-blocks-over-time.png":::
+  :::image type="content" source="images/wtp-blocks-over-time.png" alt-text="تعرض البطاقة الكشف عن تهديدات الويب مع مرور الوقت" lightbox="images/wtp-blocks-over-time.png":::
 
 - **ملخص الحماية من** المخاطر على الويب - تعرض هذه البطاقة إجمالي عمليات الكشف عن تهديدات الويب خلال ال 30 يوما الماضية، مع عرض التوزيع عبر الأنواع المختلفة من تهديدات الويب. يفتح تحديد شريحة قائمة المجالات التي تم العثور عليها مع مواقع الويب الضارة أو غير المرغوب فيها.
 
-  :::image type="content" alt-text="صورة البطاقة التي تعرض ملخص الحماية من تهديدات الويب." source="images/wtp-summary.png" lightbox="images/wtp-summary.png":::
+  :::image type="content" source="images/wtp-summary.png" alt-text="تعرض البطاقة ملخص الحماية من تهديدات الويب"  lightbox="images/wtp-summary.png":::
 
 > [!NOTE]
 > قد يستغرق الأمر ما يصل إلى 12 ساعة قبل أن تنعكس الكتلة في البطاقات أو قائمة المجالات.

@@ -1,6 +1,6 @@
 ---
-title: تخطيط نشر Microsoft Defender لنقطة النهاية
-description: حدد أفضل استراتيجية نشر ل Microsoft Defender لنقطة النهاية لبيئة
+title: تخطيط عملية Microsoft Defender لنقطة النهاية النشر
+description: تحديد أفضل Microsoft Defender لنقطة النهاية نشر لبيئة
 keywords: النشر، التخطيط، استراتيجية النشر، السحابة الأصلية، الإدارة، على prem، التقييم، التكوين، نهج المجموعة المحلي، gp، مدير نقطة النهاية، mem
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,28 +17,28 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cfdbb84cfcc2cda08572709adb3b13db83e319fa
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 05ae6e0669784aef515d678835f0fa48be0f9f3f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63573831"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64471242"
 ---
-# <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>تخطيط نشر Microsoft Defender لنقطة النهاية
+# <a name="plan-your-microsoft-defender-for-endpoint-deployment"></a>تخطيط عملية Microsoft Defender لنقطة النهاية النشر
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
 
-خطط لنشر Microsoft Defender لنقطة النهاية بحيث يمكنك تكبير قدرات الأمان داخل المجموعة وحماية المؤسسة بشكل أفضل من التهديدات الإلكترونية.
+خطط Microsoft Defender لنقطة النهاية النشر بحيث يمكنك تكبير قدرات الأمان داخل المجموعة وحماية المؤسسة بشكل أفضل من التهديدات الإلكترونية.
 
 يوفر هذا الحل إرشادات حول كيفية تحديد بنية البيئة، وتحديد نوع أداة النشر الأكثر ملائمة لاحتياجاتك، وإرشادات حول كيفية تكوين القدرات.
 
-![صورة لتدفق النشر.](images/deployment-guide-plan.png)
+:::image type="content" source="images/deployment-guide-plan.png" alt-text="تدفق النشر" lightbox="images/deployment-guide-plan.png":::
 
 ## <a name="step-1-identify-architecture"></a>الخطوة 1: تحديد الهندسة
 
@@ -50,14 +50,14 @@ ms.locfileid: "63573831"
 
 | عنصر | الوصف |
 |:-----|:-----|
-|[![صورة مصغرة لاستراتيجية نشر Defender for Endpoint.](images/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)\| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)   | تساعدك المواد الهندسية على التخطيط لنشرك للهندسة التالية: <ul><li> السحابة الأصلية </li><li> الإدارة المشاركة </li><li> في الموقع</li><li>التقييم واللوح المحلي</li>
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="استراتيجية نشر Defender لنقطة النهاية" lightbox="images/mde-deployment-strategy.png":::](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)\| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)   | تساعدك المواد الهندسية على التخطيط لنشرك للهندسة التالية: <ul><li> السحابة الأصلية </li><li> الإدارة المشاركة </li><li> في الموقع</li><li>التقييم واللوح المحلي</li>
 
 ## <a name="step-2-select-deployment-method"></a>الخطوة 2: تحديد طريقة النشر
 
 | نقطة النهاية     | أداة النشر                       |
 |--------------|------------------------------------------|
-| **بالنسبة لنظام التشغيل**  |  [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة نقاط النهاية من Microsoft/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [برامج VDI النصية](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
-| **macOS**    | [برنامج نصي محلي](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [إدارة أجهزة المحمول](mac-install-with-other-mdm.md) |
+| **بالنسبة لنظام التشغيل**  |  [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة نقاط النهاية من Microsoft/Mobile إدارة الأجهزة](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [برامج VDI النصية](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **macOS**    | [برنامج نصي محلي](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [الأجهزة إدارة الجهاز](mac-install-with-other-mdm.md) |
 | **Linux Server** | [برنامج نصي محلي](linux-install-manually.md) <br> [مهى](linux-install-with-puppet.md) <br> [غير قابل للطي](linux-install-with-ansible.md)|
 | **iOS**      | [إدارة نقاط النهاية من Microsoft](ios-install.md)                                |
 | **Android**  | [إدارة نقاط النهاية من Microsoft](android-intune.md)               | 
@@ -66,8 +66,8 @@ ms.locfileid: "63573831"
 
 |نقطة النهاية|أداة النشر|
 |---|---|
-|**بالنسبة لنظام التشغيل**|[البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة نقاط النهاية من Microsoft/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [برامج VDI النصية](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-azure-defender)|
-|**macOS**|[برنامج نصي محلي](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [إدارة أجهزة المحمول](mac-install-with-other-mdm.md)|
+|**بالنسبة لنظام التشغيل**|[البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة نقاط النهاية من Microsoft/Mobile إدارة الأجهزة](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [برامج VDI النصية](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-azure-defender)|
+|**macOS**|[برنامج نصي محلي](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [الأجهزة إدارة الجهاز](mac-install-with-other-mdm.md)|
 |**Linux Server**|[برنامج نصي محلي](linux-install-manually.md) <br> [مهى](linux-install-with-puppet.md) <br> [غير قابل للطي](linux-install-with-ansible.md)|
 |**iOS**|[مستند إلى التطبيق](ios-install.md)|
 |**Android**|[إدارة نقاط النهاية من Microsoft](android-intune.md)|

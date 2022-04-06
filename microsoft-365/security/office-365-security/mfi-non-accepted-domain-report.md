@@ -15,12 +15,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على كيفية استخدام تقرير المجال غير المقبول في لوحة معلومات تدفق البريد في مركز توافق الأمان & لمراقبة الرسائل الواردة من مؤسستك المحلي حيث لم يتم تكوين مجال المرسل في Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25a8b1adb882aa83861e936d48534fc0a5f826e4
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8f16dfbafa12080058cd1784120e4bc2157e0cff
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679665"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470824"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>تقرير مجال غير مقبول في مركز & الأمان
 
@@ -28,14 +28,14 @@ ms.locfileid: "63679665"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 يعرض  تقرير المجال غير المقبول في لوحة معلومات [](mail-flow-insights-v2.md) تدفق البريد في مركز توافق الأمان [&](https://protection.office.com) معلومات حول الرسائل الواردة من مؤسسة البريد الإلكتروني التي لم يتم تكوين مجال المرسل فيها كمجال مقبول في مؤسستك Microsoft 365.
 
 Microsoft 365 هذه الرسائل إذا كانت لدينا بيانات لإثبات أن الهدف من هذه الرسائل ضار. وبالتالي، من المهم أن تفهم ما يحدث وتصلح المشكلة.
 
-![عنصر واجهة مستخدم المجال غير المقبول في لوحة معلومات تدفق البريد في مركز & الأمان.](../../media/mfi-non-accepted-domain-report-widget.png)
+:::image type="content" source="../../media/mfi-non-accepted-domain-report-widget.png" alt-text="عنصر واجهة مستخدم المجال غير المقبول في لوحة معلومات تدفق البريد في مركز & الأمان" lightbox="../../media/mfi-non-accepted-domain-report-widget.png":::
 
 ## <a name="report-view-for-the-non-accepted-domain-report"></a>طريقة عرض التقرير الخاصة تقرير المجال غير المقبول
 
@@ -45,7 +45,7 @@ Microsoft 365 هذه الرسائل إذا كانت لدينا بيانات لإ
 
 إذا مرر فوق نقطة بيانات (يوم) في المخطط، سترى العدد الإجمالي للرسائل للموصل.
 
-![طريقة عرض التقرير في تقرير المجال غير المقبول.](../../media/mfi-non-accepted-domain-report-overview-view.png)
+:::image type="content" source="../../media/mfi-non-accepted-domain-report-overview-view.png" alt-text="طريقة عرض التقرير في تقرير المجال غير المقبول" lightbox="../../media/mfi-non-accepted-domain-report-overview-view.png":::
 
 ## <a name="details-table-view-for-the-non-accepted-domain-report"></a>طريقة عرض جدول التفاصيل الخاصة بتقرير المجال غير المقبول
 
@@ -69,7 +69,7 @@ Microsoft 365 هذه الرسائل إذا كانت لدينا بيانات لإ
 - **عدد الرسائل**
 - **نموذج للرسائل**: يمكنك النقر فوق **عرض الرسائل العينة** للاطلاع على نتائج [تتبع](message-trace-scc.md) الرسائل لعينة من الرسائل المتأثرة.
 
-![تفاصيل من حولاء بعد تحديد صف في طريقة عرض جدول التفاصيل في تقرير المجال غير المقبول.](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+:::image type="content" source="../../media/mfi-non-accepted-domain-report-details-flyout.png" alt-text="من حولاء التفاصيل بعد تحديد صف في طريقة عرض جدول التفاصيل في تقرير المجال غير المقبول" lightbox="../../media/mfi-non-accepted-domain-report-details-flyout.png":::
 
 للعودة إلى طريقة عرض التقارير، انقر فوق **عرض التقرير**.
 

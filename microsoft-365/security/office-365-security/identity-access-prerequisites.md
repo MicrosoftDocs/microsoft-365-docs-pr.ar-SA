@@ -1,6 +1,6 @@
 ---
 title: العمل الأساسي لتطبيق سياسات الوصول إلى الهوية والجهاز - Microsoft 365 للمؤسسات | Microsoft Docs
-description: تصف هذه المقالة المتطلبات الأساسية التي تحتاج إلى تلبيتها لاستخدام تكوينات وهوية الثقة الصفرية والوصول إلى الجهاز.
+description: تصف هذه المقالة المتطلبات الأساسية التي تحتاج إلى تلبيتها لاستخدام ثقة معدومة الشخصية ونهج الوصول إلى الجهاز وتكويناتها.
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -19,20 +19,20 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 445cb497abfaa0e7e4322268a761aafbaa0e31d6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8123b3602569ec1effcbf79cb12d242ab19d960e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680897"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472342"
 ---
-# <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>العمل المتطلب الأساسي لتطبيق هوية الصفرية ونهج الوصول إلى الجهاز
+# <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>عمل المتطلبات الأساسية لتطبيق ثقة معدومة الهوية ونهج الوصول إلى الجهاز
 
-تصف هذه المقالة المتطلبات الأساسية التي يجب على المسؤولين تلبيتها لاستخدام سياسات الوصول إلى الأجهزة وهوية الصفر الموصى بها واستخدام الوصول الشرطي. كما يناقش الإعدادات الافتراضية الموصى بها لتكوين الأنظمة الأساسية للعميل للحصول على أفضل تجربة تسجيل الدخول الفردي (SSO).
+تصف هذه المقالة المتطلبات الأساسية التي يجب على المسؤولين تلبيتها لاستخدام ثقة معدومة الهوية ونهج الوصول إلى الجهاز الموصى بها، واستخدام الوصول الشرطي. كما يناقش الإعدادات الافتراضية الموصى بها لتكوين الأنظمة الأساسية للعميل للحصول على أفضل تجربة تسجيل الدخول الفردي (SSO).
 
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
-قبل استخدام الهوية الصفرية ونهج الوصول إلى الجهاز الموصى بها، تحتاج مؤسستك إلى تلبية المتطلبات الأساسية. تختلف المتطلبات لنماذج الهوية والمصادقة المختلفة المدرجة:
+قبل استخدام ثقة معدومة الهوية ونهج الوصول إلى الجهاز الموصى بها، تحتاج مؤسستك إلى تلبية المتطلبات الأساسية. تختلف المتطلبات لنماذج الهوية والمصادقة المختلفة المدرجة:
 
 - السحابة فقط
 - مختلط مع مصادقة مزامنة كلمة المرور (PHS)
@@ -122,6 +122,6 @@ ms.locfileid: "63680897"
 
 ## <a name="next-step"></a>الخطوة التالية
 
-[![الخطوة 2: تكوين هوية الصفر الموثوق بها الشائعة والوصول إلى سياسات الوصول الشرطي.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
+[![الخطوة 2: تكوين الهوية ثقة معدومة المشترك والوصول إلى سياسات الوصول الشرطي.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](identity-access-policies.md)
 
-[تكوين الهوية الصفرية الشائعة ونهج الوصول إلى الجهاز](identity-access-policies.md)
+[تكوين ونهج الوصول إلى ثقة معدومة البيانات الشائعة](identity-access-policies.md)

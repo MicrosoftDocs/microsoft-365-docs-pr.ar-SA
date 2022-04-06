@@ -1,7 +1,7 @@
 ---
 title: تحليلات لوحة المعلومات - إدارة المخاطر والثغرات الأمنية
 description: يمكن إدارة المخاطر والثغرات الأمنية المعلومات لمساعدة المسؤولين في SecOps والأمان على معالجة تهديدات الأمان الإلكتروني وبناء المرونة الأمنية لمنظمتهم.
-keywords: Microsoft Defender ل Endpoint-tvm، لوحة معلومات Microsoft Defender ل Endpoint-tvm، التهديدات & إدارة الثغرات الأمنية، إدارة المخاطر والثغرات الأمنية، المخاطر المستندة إلى المخاطر & إدارة الثغرات الأمنية، تكوين الأمان، Microsoft Secure Score للأجهزة، نقاط التعرض للضوء
+keywords: Microsoft Defender لنقطة النهاية tvm، Microsoft Defender لنقطة النهاية tvm، & إدارة الثغرات الأمنية، إدارة المخاطر والثغرات الأمنية، المخاطر المستندة إلى & إدارة الثغرات الأمنية، تكوين الأمان، Microsoft Secure Score للأجهزة، نقاط التعرض للضوء
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb93b179b9d342a4a0d098ddb889a94371fbabc4
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 76eedd78e6bc6a95450a50c04d4f85b0de46db8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "63571569"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472474"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>تحليلات لوحة المعلومات - إدارة المخاطر والثغرات الأمنية
 
@@ -30,7 +30,7 @@ ms.locfileid: "63571569"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [التهديدات إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -58,7 +58,7 @@ ms.locfileid: "63571569"
 
 ## <a name="threat-and-vulnerability-management-dashboard"></a>لوحة معلومات إدارة الثغرات الأمنية المخاطر
 
-:::image type="content" source="../../media/tvmdashboard.png" lightbox="../../media/tvmdashboard.png" alt-text="لوحة معلومات إدارة المخاطر والنقاط الضعف للأجهزة.":::
+:::image type="content" source="../../media/tvmdashboard.png" alt-text="لوحة معلومات إدارة المخاطر والضعف للأجهزة" lightbox="../../media/tvmdashboard.png":::
 
 <br>
 
@@ -76,7 +76,7 @@ ms.locfileid: "63571569"
 |**أفضل الأجهزة المعرضة**|عرض أسماء الأجهزة المعرضة ومستوى التعرض لها. حدد اسم جهاز من القائمة للذهاب إلى صفحة الجهاز حيث يمكنك عرض التنبيهات والمخاطر والحوادث وتوصيات الأمان والبرامج المثبتة ونقاط الضعف المكتشفة المقترنة بالأجهزة التي يتم عرضها. حدد **إظهار المزيد** لرؤية باقي قائمة الأجهزة التي يتم عرضها. من قائمة الأجهزة، يمكنك إدارة العلامات، وبدء عمليات تحقيق تلقائية، وبدء جلسة استجابة مباشرة، وجمع حزمة تحقيق، وتشغيل مسح الحماية من الفيروسات، وتقييد تنفيذ التطبيق، وعزل الجهاز.|
 |
 
-لمزيد من المعلومات حول الأيقونات المستخدمة في المدخل، راجع [Microsoft Defender لأيقونات نقطة النهاية](portal-overview.md#microsoft-defender-for-endpoint-icons).
+لمزيد من المعلومات حول الأيقونات المستخدمة في المدخل، راجع Microsoft Defender لنقطة النهاية [الأخرى](portal-overview.md#microsoft-defender-for-endpoint-icons).
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

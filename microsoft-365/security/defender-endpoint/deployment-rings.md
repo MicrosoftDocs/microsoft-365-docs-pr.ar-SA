@@ -1,6 +1,6 @@
 ---
 title: نشر Microsoft Defender لنقطة النهاية في حلقات
-description: تعرف على كيفية نشر Microsoft Defender لنقطة النهاية في حلقات
+description: تعرف على كيفية نشر Microsoft Defender لنقطة النهاية في الرنين
 keywords: النشر، الرنين، التقييم، التجربة، سرعة insider، بطء insider، الإعداد، التهيئة، التهيئة، اللوحة، المرحلة، النشر، النشر، الاعتماد، التكوين
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,24 +16,24 @@ ms.collection:
 - m365solution-endpointprotect
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7a9673591f4d77197390541a58169a58b04fe91
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 116960ed6e7d4a765479f0c76715e48ec8312e3b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63569851"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472078"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>نشر Microsoft Defender لنقطة النهاية في حلقات
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-يمكن نشر Microsoft Defender لنقطة النهاية باستخدام نهج نشر مستند إلى الرنين.
+يمكن Microsoft Defender لنقطة النهاية نشر المعلومات باستخدام نهج نشر مستند إلى الرنين.
 
 يمكن تطبيق حلقات النشر في السيناريوهات التالية:
 
@@ -42,7 +42,7 @@ ms.locfileid: "63569851"
 
 ## <a name="new-deployments"></a>عمليات نشر جديدة
 
-![صورة حلقات النشر.](images/deployment-rings.png)
+:::image type="content" source="images/deployment-rings.png" alt-text="حلقات النشر" lightbox="images/deployment-rings.png":::
 
 النهج المستند إلى الرنين هو أسلوب لتحديد مجموعة من نقاط النهاية لل متن الطائرة والتحقق من تحقيق معايير معينة قبل المتابعة لنشر الخدمة على مجموعة أكبر من الأجهزة. يمكنك تحديد معايير الخروج لكل حلقة والتأكد من أنها راضية قبل الانتقال إلى الحلقة التالية.
 
@@ -78,14 +78,14 @@ ms.locfileid: "63569851"
 
 ### <a name="pilot"></a>طيار
 
-يدعم Microsoft Defender ل Endpoint مجموعة متنوعة من نقاط النهاية التي يمكنك ا متنها في الخدمة. في هذه الحلقة، حدد عدة أجهزة لداخلها واستنادا إلى معايير الخروج التي تحددها، قرر المتابعة إلى حلقة النشر التالية.
+Microsoft Defender لنقطة النهاية مجموعة متنوعة من نقاط النهاية التي يمكنك ا متنها إلى الخدمة. في هذه الحلقة، حدد عدة أجهزة لداخلها واستنادا إلى معايير الخروج التي تحددها، قرر المتابعة إلى حلقة النشر التالية.
 
 يعرض الجدول التالي نقاط النهاية المعتمدة والأداة المقابلة التي يمكنك استخدامها للأجهزة المجهزة للخدمة.
 
 | نقطة النهاية     | أداة النشر                       |
 |--------------|------------------------------------------|
-| **بالنسبة لنظام التشغيل**  |  [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br> ملاحظة: إذا كنت تريد نشر أكثر من 10 أجهزة في بيئة إنتاج، فاستخدم أسلوب نهج المجموعة بدلا من ذلك أو الأدوات المعتمدة الأخرى المذكورة أدناه.<br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة نقاط النهاية من Microsoft/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [برامج VDI النصية](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
-| **macOS**    | [برنامج نصي محلي](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [إدارة أجهزة المحمول](mac-install-with-other-mdm.md) |
+| **بالنسبة لنظام التشغيل**  |  [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br> ملاحظة: إذا كنت تريد نشر أكثر من 10 أجهزة في بيئة إنتاج، فاستخدم أسلوب نهج المجموعة أو الأدوات المعتمدة الأخرى المذكورة أدناه.<br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة نقاط النهاية من Microsoft/Mobile إدارة الأجهزة](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [برامج VDI النصية](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **macOS**    | [برنامج نصي محلي](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [الأجهزة إدارة الجهاز](mac-install-with-other-mdm.md) |
 | **Linux Server** | [برنامج نصي محلي](linux-install-manually.md) <br> [مهى](linux-install-with-puppet.md) <br> [غير قابل للطي](linux-install-with-ansible.md)|
 | **iOS**      | [إدارة نقاط النهاية من Microsoft](ios-install.md)                                |
 | **Android**  | [إدارة نقاط النهاية من Microsoft](android-intune.md)               |
@@ -94,11 +94,11 @@ ms.locfileid: "63569851"
 
 في هذه المرحلة، يمكنك [استخدام مادة نشر](deployment-strategy.md) الخطة لمساعدتك على التخطيط للنشر.
 
-استخدم المواد التالية لتحديد بنية Microsoft Defender المناسبة لنقطة النهاية التي تلائم مؤسستك بشكل أفضل.
+استخدم المواد التالية لتحديد التصميم Microsoft Defender لنقطة النهاية المناسب الذي يلائم مؤسستك بشكل أفضل.
 
 |**عنصر**|**الوصف**|
 |:-----|:-----|
-|[![صورة مصغرة لا استراتيجية نشر نقطة النهاية ل Microsoft Defender.](images/mde-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)\| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)   | تساعدك المواد الهندسية على التخطيط لنشرك للهندسة التالية: <ul><li> السحابة الأصلية </li><li> الإدارة المشاركة </li><li> في الموقع</li><li>التقييم واللوح المحلي</li></ul>
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="استراتيجية نشر Microsoft Defender لنقطة النهاية" lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)\| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)   | تساعدك المواد الهندسية على التخطيط لنشرك للهندسة التالية: <ul><li> السحابة الأصلية </li><li> الإدارة المشاركة </li><li> في الموقع</li><li>التقييم واللوح المحلي</li></ul>
 
 ## <a name="existing-deployments"></a>عمليات النشر الموجودة
 
@@ -120,7 +120,8 @@ ms.locfileid: "63569851"
 
 يحدد اختيار القناة نوع التحديثات التي يتم تقديمها لجهازك وتكرارها. الأجهزة في Beta هي الأجهزة الأولى التي تتلقى التحديثات والميزات الجديدة، متبوعا لاحقا بمعاينة وأخيرا ب Current.
 
-![صورة حلقات insider.](images/insider-rings.png)
+:::image type="content" source="images/insider-rings.png" alt-text="حلقات insider" lightbox="images/insider-rings.png":::
+
 
 من أجل معاينة الميزات الجديدة وتقديم ملاحظات مبكرة، من المستحسن تكوين بعض الأجهزة في المؤسسة لاستخدام بيتا أو معاينة.
 
