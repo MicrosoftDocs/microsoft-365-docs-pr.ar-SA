@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على سبب إنشاء موقع اتصالات SharePoint للحملة أو الأعمال باستخدام Microsoft 365.
-ms.openlocfilehash: d2634f8793c142cc34d6c1708481aa8e4df3184b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ba0f8f559bc8843a61baca1bbb6615c596ffdc65
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63574757"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634372"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>إنشاء موقع اتصالات في SharePoint
 
@@ -40,9 +40,13 @@ ms.locfileid: "63574757"
 قم بتضمين العناصر التالية في موقع الاتصالات:
 
 1. أضف الشعار والألوان كصورة رأس ونسق.
+
 2. اقود باستخدام الاستراتيجية والرسالة والمستندات المهمة و الدليل وال الأسئلة الشائعة في **جزء ويب Hero**.
+
 3. قم بتضمين بيان المدير التنفيذي أو المرشح للفريق في **جزء ويب النص**.
+
 4. أضف الأحداث إلى جزء **ويب الأحداث** حتى يمكن للجميع رؤية ما هو قادم.
+
 5. أضف الصور التي يمكن للأشخاص استخدامها أو مشاركتها إلى جزء **ويب معرض الصور**.
 
 ![رسم تخطيطي لصفحة SharePoint الاتصالات مع مساحة للعناصر الشائعة التي قد تحتاج إليها الحملة.](../media/m365-democracy-comms-site.png)
@@ -58,7 +62,9 @@ ms.locfileid: "63574757"
 ## <a name="set-it-up"></a>إعداده
 
 1. سجل الدخول إلى https://Office.com.
+
 2. في الزاوية العلوية اليمنى من الصفحة، حدد أيقونة شريط التطبيقات ثم **حدد SharePoint** المتجانبة. إذا لم تظهر لوحة **SharePoint، انقر** فوق لوحة المواقع أو الكل إذا لم  SharePoint مرئيا.
+
 3. في أعلى الصفحة الرئيسية SharePoint، انقر فوق **+ إنشاء موقع** واختر **الخيار موقع** الاتصالات.
 
 تعرف على [كل شيء حول مواقع الاتصالات](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) وكيفية [إنشاء موقع اتصالات في SharePoint Online](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).

@@ -1,7 +1,7 @@
 ---
 title: نقاط الضعف في المؤسسة - إدارة المخاطر والثغرات الأمنية
-description: تسرد هذه القائمة نقاط الضعف الشائعة والتعرض للضوء (CVE) لنقاط الضعف الموجودة في البرنامج الذي يعمل في مؤسستك. تم اكتشافها بواسطة Microsoft Defender لنقطة النهاية إدارة المخاطر والثغرات الأمنية الإمكانية.
-keywords: صفحة نقاط ضعف Microsoft Defender لنقطة النهاية & إدارة الثغرات الأمنية، إدارة المخاطر والثغرات الأمنية، Microsoft Defender لنقاط ضعف تلفزيون نقطة النهاية، العثور على نقاط ضعف من خلال tvm، قائمة نقاط الضعف في tvm، تفاصيل نقاط الضعف في tvm
+description: تسرد هذه القائمة نقاط الضعف الشائعة والتعرض للضوء (CVE) لنقاط الضعف الموجودة في البرنامج الذي يعمل في مؤسستك. تم اكتشافها بواسطة Microsoft Defender لنقطة النهاية إدارة المخاطر والثغرات الأمنية.
+keywords: Microsoft Defender لنقطة النهاية المخاطر & إدارة الثغرات الأمنية أو إدارة المخاطر والثغرات الأمنية أو Microsoft Defender لنقطة النهاية  صفحة نقاط ضعف tvm، ا العثور على نقاط الضعف من خلال tvm، قائمة نقاط الضعف في tvm، تفاصيل الضعف في tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23b0235382e748071f0d8e060e15624b5332326d
-ms.sourcegitcommit: 23a90ed17cddf3b0db8d4084c8424f0fabd7b1de
+ms.openlocfilehash: a2f3db3a28755c5e2bce46f7134eb1c977d1aa0a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "63583194"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476632"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>نقاط الضعف في المؤسسة - إدارة المخاطر والثغرات الأمنية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [التهديدات إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -45,7 +45,7 @@ ms.locfileid: "63583194"
 > إذا لم يتم تعيين CVE-ID رسمي إلى ثغرة أمنية، يتم تعيين اسم الثغرة الأمنية بواسطة إدارة المخاطر والثغرات الأمنية.
 
 > [!TIP]
-> للحصول على رسائل بريد إلكتروني حول أحداث ثغرة أمنية جديدة، راجع تكوين إعلامات البريد الإلكتروني لثغرة أمنية [في Microsoft Defender ل Endpoint](configure-vulnerability-email-notifications.md)
+> للحصول على رسائل بريد إلكتروني حول أحداث ثغرة أمنية جديدة، راجع تكوين إعلامات البريد الإلكتروني للثغرات [الأمنية في Microsoft Defender لنقطة النهاية](configure-vulnerability-email-notifications.md)
 
 ## <a name="navigate-to-the-weaknesses-page"></a>الانتقال إلى صفحة نقاط الضعف
 
@@ -58,11 +58,13 @@ ms.locfileid: "63583194"
 
 انتقل إلى قائمة **التنقل إدارة** الثغرات وحدد **نقاط الضعف** لفتح قائمة CVEs.
 
-### <a name="vulnerabilities-in-global-search"></a>الثغرات في البحث العام
+### <a name="vulnerabilities-in-global-search"></a>نقاط الضعف في بحث شامل
 
-1. انتقل إلى القائمة المنسدلة للبحث العام.
+1. انتقل إلى القائمة بحث شامل المنسدلة.
 2. حدد **ثغرة** أمنية ومفتاح في "الثغرات والتعرضات الشائعة" (CVE) التي تبحث عنها، ثم حدد أيقونة البحث. يتم **فتح** صفحة نقاط الضعف مع معلومات CVE التي تبحث عنها.
-![مربع البحث العام مع تحديد الخيار المنسدلة "ثغرة أمنية" ومثال CVE.](images/tvm-vuln-globalsearch.png)
+
+:::image type="content" source="images/tvm-vuln-globalsearch.png" alt-text="مربع البحث العام مع تحديد ثغرة أمنية في الخيار المنسدلة" lightbox="images/tvm-vuln-globalsearch.png":::
+
 3. حدد CVE لفتح لوحة منكشفة تتضمن المزيد من المعلومات، بما في ذلك وصف الثغرة الأمنية والتفاصيل ورؤى التهديدات والأجهزة التي يتم عرضها.
 
 لرؤية نقاط الضعف المتبقية في صفحة **نقاط** الضعف، اكتب CVE، ثم حدد بحث.
@@ -71,7 +73,7 @@ ms.locfileid: "63583194"
 
 اعرض الثغرات في الأجهزة المعرضة للحد من المخاطر التي تتعرض لها الأصول والمنظمة. إذا كان **العمود الأجهزة** المعرضة يعرض 0، فهذا يعني أنك لست في خطر.
 
-![صفحة نقاط الضعف المنتقلة.](images/tvm-weaknesses-overview.png)
+:::image type="content" source="images/tvm-weaknesses-overview.png" alt-text="الصفحة المنتقل ال بها إلى نقاط الضعف" lightbox="images/tvm-weaknesses-overview.png":::
 
 ### <a name="breach-and-threat-insights"></a>تحليلات الخرق والتهديدات
 
@@ -94,7 +96,7 @@ ms.locfileid: "63583194"
 - يتم عرض الفئة "ميزة نظام التشغيل" في السيناريوهات ذات الصلة
 - يمكنك الانتقال إلى توصية الأمان ذات الصلة لكل CVE مع جهاز مكشوف
 
- ![مثال على نقطة الضعف من خلال مناطير منتحلة للنقاط.](images/tvm-weakness-flyout400.png)
+ :::image type="content" source="images/tvm-weakness-flyout400.png" alt-text="صفحة وصف الثغرة الأمنية" lightbox="images/tvm-weakness-flyout400.png":::
 
 ### <a name="software-that-isnt-supported"></a>البرامج غير المعتمدة
 
@@ -110,7 +112,7 @@ ms.locfileid: "63583194"
 
 1. انتقل إلى لوحة إدارة المخاطر والثغرات الأمنية [ثم](tvm-dashboard-insights.md) قم بالتمرير لأسفل وصولا إلى عنصر **واجهة مستخدم البرامج الأكثر عرضة**. سترى عدد نقاط الضعف الموجودة في كل برنامج، إلى جانب معلومات التهديدات وعرض عالي المستوى لتعرض الجهاز مع مرور الوقت.
 
-    ![بطاقة البرامج الأكثر عرضة للتأثر بأربعة أعمدة: البرامج ونقاط الضعف والتهديدات والأجهزة المعرضة.](images/tvm-top-vulnerable-software500.png)
+   :::image type="content" source="images/tvm-top-vulnerable-software500.png" alt-text="عمود نقاط الضعف في صفحة البرامج الأكثر عرضة للتأثر" lightbox="images/tvm-top-vulnerable-software500.png":::
 
 2. حدد البرنامج الذي تريد التحقق منه الانتقال إلى صفحة التنقل لأسفل.
 
@@ -118,7 +120,7 @@ ms.locfileid: "63583194"
 
 4. حدد الثغرة الأمنية التي تريد التحقق فيها للحصول على مزيد من المعلومات حول تفاصيل الثغرة الأمنية
 
-    ![Windows نظرة عامة لأسفل على Server 2019.](images/windows-server-drilldown.png)
+   :::image type="content" source="images/windows-server-drilldown.png" alt-text="نظرة عامة Windows Server 2019 لأسفل" lightbox="images/windows-server-drilldown.png":::
 
 ### <a name="discover-vulnerabilities-in-the-device-page"></a>اكتشاف نقاط الضعف في صفحة الجهاز
 
@@ -128,13 +130,13 @@ ms.locfileid: "63583194"
 
 2. في صفحة **مخزون الجهاز** ، حدد اسم الجهاز الذي تريد التحقق منه.
 
-    ![قائمة الأجهزة التي تتضمن جهازا محددا للتحقق منه.](images/tvm_machinetoinvestigate.png)
+   :::image type="content" source="images/tvm_machinetoinvestigate.png" alt-text="قائمة الأجهزة التي تتضمن جهازا محددا للتحقق" lightbox="images/tvm_machinetoinvestigate.png":::
 
 3. سيتم فتح صفحة الجهاز مع تفاصيل وخيارات الاستجابة للجهاز الذي تريد التحقق منه.
 
 4. حدد **نقاط الضعف التي تم اكتشافها**.
 
-   :::image type="content" alt-text="صفحة الجهاز مع تفاصيل وخيارات الاستجابة." source="images/tvm-discovered-vulnerabilities.png" lightbox="images/tvm-discovered-vulnerabilities.png":::
+   :::image type="content" source="images/tvm-discovered-vulnerabilities.png" alt-text="صفحة الجهاز مع التفاصيل وخيارات الاستجابة." lightbox="images/tvm-discovered-vulnerabilities.png":::
 
 5. حدد الثغرة الأمنية التي تريد التحقق من وجودها لفتح لوحة منكشفة باستخدام تفاصيل CVE، مثل: وصف الثغرة الأمنية ورؤى التهديدات ومنطق الكشف.
 
@@ -144,7 +146,7 @@ ms.locfileid: "63583194"
 
 يتم أيضا عرض الفئة "ميزة نظام التشغيل" في السيناريوهات ذات الصلة. قد يؤثر CVE على الأجهزة التي تعمل على نظام تشغيل ضعيف فقط إذا تم تمكين مكون نظام تشغيل معين. لنقل أن Windows Server 2019 أو Windows Server 2022 به ثغرة في مكون DNS الخاص به. باستخدام هذه الإمكانية الجديدة، سنقوم بإرفاق CVE هذا فقط بأجهزة Windows Server 2019 و Windows Server 2022 مع إمكانية DNS التي تم تمكينها في نظام التشغيل الخاص بها.
 
-:::image type="content" alt-text="مثال منطق الكشف الذي يسرد البرامج التي تم الكشف عنها على الجهاز وKBs." source="images/tvm-cve-detection-logic.png":::
+:::image type="content" source="images/tvm-cve-detection-logic.png" alt-text="مثال منطق الكشف الذي يسرد البرامج التي تم الكشف عنها على الجهاز وKBs" lightbox="images/tvm-cve-detection-logic.png":::
 
 ## <a name="report-inaccuracy"></a>عدم دقة التقرير
 
@@ -161,4 +163,4 @@ ms.locfileid: "63583194"
 - [توصيات الأمان](tvm-security-recommendation.md)
 - [مخزون البرامج](tvm-software-inventory.md)
 - [تحليلات لوحة المعلومات](tvm-dashboard-insights.md)
-- [عرض قائمة Microsoft Defender لأجهزة نقطة النهاية وتنظيمها](machines-view-overview.md)
+- [عرض قائمة Microsoft Defender لنقطة النهاية الأجهزة وتنظيمها](machines-view-overview.md)

@@ -1,7 +1,7 @@
 ---
 title: تقليل الثغرات في اليوم الصفري - إدارة المخاطر والثغرات الأمنية
 description: تعرف على كيفية البحث عن نقاط الضعف في اليوم الصفري وكيفية تقليلها في بيئتك من خلال إدارة المخاطر والثغرات الأمنية.
-keywords: نقاط الضعف في Microsoft Defender for Endpoint tvm صفر يوم، تلفاز، & إدارة الثغرات الأمنية، صفر يوم، 0 يوم، تقليل نقاط الضعف لمدة 0 أيام، CVE المعرضة للخطر
+keywords: Microsoft Defender لنقطة النهاية عدم التعرض للتلفزيون في اليوم، وتلفزيون، & إدارة الثغرات الأمنية، صفر يوم، 0 يوم، تقليل نقاط الضعف لمدة 0 أيام، CVE المعرضة للخطر
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f4a3e227dd43a812bea64e227e315d207eb6fc7b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 2de9f0a3a0d860b2513c8947a1fe92563b516444
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63571558"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476588"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>تقليل الثغرات في اليوم الصفري - إدارة المخاطر والثغرات الأمنية
 
@@ -29,7 +29,7 @@ ms.locfileid: "63571558"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [التهديدات إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -50,11 +50,11 @@ ms.locfileid: "63571558"
 
 ابحث عن التوصيات باستخدام علامة صفر يوم في بطاقة "أهم توصيات الأمان".
 
-![أهم التوصيات باستخدام علامة يوم صفري.](images/tvm-zero-day-top-security-recommendations.png)
+:::image type="content" source="images/tvm-zero-day-top-security-recommendations.png" alt-text="أهم التوصيات باستخدام علامة صفر يوم" lightbox="images/tvm-zero-day-top-security-recommendations.png":::
 
 ابحث عن أفضل البرامج باستخدام علامة اليوم الصفري في بطاقة "البرامج الأكثر عرضة للتأثر".
 
-![البرامج الأكثر عرضة للتأثر بعلامة يوم صفري.](images/tvm-zero-day-top-software.png)
+:::image type="content" source="images/tvm-zero-day-top-software.png" alt-text="البرنامج الأكثر عرضة للتأثر بعلامة صفرية" lightbox="images/tvm-zero-day-top-software.png":::
 
 ### <a name="weaknesses-page"></a>صفحة نقاط الضعف
 
@@ -64,19 +64,19 @@ ms.locfileid: "63571558"
 
 - إذا لم يتم تعيين CVE-ID لهذه الثغرة الأمنية، فتعثر عليها تحت اسم داخلي مؤقت يبدو مثل "TVM-XXXX-XXXX". سيتم تحديث الاسم بعد تعيين CVE-ID رسمي، ولكن سيبقى الاسم الداخلي السابق قابلا للبحث في اللوحة الجانبية.
 
-:::image type="content" alt-text="مثال ليوم صفري لصفحة CVE-2020-17087 في نقاط الضعف." source="images/tvm-zero-day-weakness-name.png" lightbox="images/tvm-zero-day-weakness-name.png":::
+:::image type="content" source="images/tvm-zero-day-weakness-name.png" alt-text="مثال اليوم الصفري ل CVE-2020-17087 في صفحة نقاط الضعف" lightbox="images/tvm-zero-day-weakness-name.png":::
 
 ### <a name="software-inventory-page"></a>صفحة مخزون البرامج
 
 ابحث عن برنامج باستخدام علامة اليوم الصفري. يمكنك التصفية حسب علامة "اليوم الصفري" لرؤية البرامج ذات الثغرات في اليوم الصفري فقط.
 
-:::image type="content" alt-text="مثال ليوم صفري Windows Server 2016 في صفحة مخزون البرامج." source="images/tvm-zero-day-software-inventory.png" lightbox="images/tvm-zero-day-software-inventory.png":::
+:::image type="content" source="images/tvm-zero-day-software-inventory.png" alt-text="مثال اليوم الصفري Windows Server 2016 في صفحة مخزون البرامج" lightbox="images/tvm-zero-day-software-inventory.png":::
 
 ### <a name="software-page"></a>صفحة البرامج
 
 ابحث عن علامة اليوم الصفري لكل برنامج تأثر بضعف اليوم الصفري.
 
-:::image type="content" alt-text="مثال ليوم صفري لصفحة Windows Server 2016." source="images/tvm-zero-day-software-page.png" lightbox="images/tvm-zero-day-software-page.png":::
+:::image type="content" source="images/tvm-zero-day-software-page.png" alt-text="مثال اليوم الصفري في صفحة برنامج Windows Server 2016" lightbox="images/tvm-zero-day-software-page.png":::
 
 ### <a name="security-recommendations-page"></a>صفحة توصيات الأمان
 
@@ -84,7 +84,7 @@ ms.locfileid: "63571558"
 
 إذا كان هناك برنامج به ثغرة أمنية في اليوم الصفري ونقاط ضعف إضافية يجب معالجتها، فسوف تحصل على توصية واحدة حول جميع نقاط الضعف.
 
-:::image type="content" alt-text="مثال ليوم صفري Windows Server 2016 في صفحة توصيات الأمان." source="images/tvm-zero-day-security-recommendation.png" lightbox="images/tvm-zero-day-security-recommendation.png":::
+:::image type="content" source="images/tvm-zero-day-security-recommendation.png" alt-text="مثال اليوم الصفري Windows Server 2016 في صفحة توصيات الأمان." lightbox="images/tvm-zero-day-security-recommendation.png":::
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>معالجة الثغرات في اليوم الصفري
 
@@ -94,7 +94,7 @@ ms.locfileid: "63571558"
 
 افتح خيارات المعالجة واختر نوع الانتباه. يوصى باستخدام خيار المعالجة "مطلوب الانتباه" لنقاط الضعف في اليوم الصفري، نظرا لأنه لم يتم إصدار تحديث بعد. لن تتمكن من تحديد تاريخ الاستحقاق، نظرا لأنه لا يوجد أي إجراء محدد لتنفيذه. إذا كانت هناك نقاط ضعف قديمة لهذا البرنامج الذي تريد إصلاحه، يمكنك تجاوز خيار المعالجة "مطلوب الانتباه" واختيار "تحديث".
 
-![مثال حول منار اليوم Windows Server 2016 في صفحة توصيات الأمان.](images/tvm-zero-day-recommendation-flyout400.png)
+:::image type="content" source="images/tvm-zero-day-recommendation-flyout400.png" alt-text="مثال لصفر يوم من Windows Server 2016 في صفحة توصيات الأمان" lightbox="images/tvm-zero-day-recommendation-flyout400.png":::
 
 ## <a name="track-zero-day-remediation-activities"></a>تعقب أنشطة المعالجة لمدة صفرية
 

@@ -1,7 +1,7 @@
 ---
 title: صور الجهاز
 description: متطلبات الصورة عند طلب أجهزة جديدة أو إعادة استخدام أجهزة موجودة
-keywords: سطح المكتب المدار من Microsoft، Microsoft 365، الخدمة، الوثائق
+keywords: Microsoft Managed Desktop، Microsoft 365، الخدمة، الوثائق
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f1d00c12512b70ffd62372aaeae787acf1911573
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 294531305321901dfa704462471d1573b9cb4b88
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63575445"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64635098"
 ---
 # <a name="device-images"></a>صور الجهاز
 
@@ -25,19 +25,24 @@ ms.locfileid: "63575445"
 
 ## <a name="new-devices"></a>الأجهزة الجديدة
 
-عند طلب جهاز جديد من شركة مصنعة [](device-requirements.md#minimum-requirements)معتمدة، اتبع هذه الخطوات للتأكد من شحن الأجهزة باستخدام صورة سطح المكتب المدار من Microsoft وتكوين البرنامج المناسبين.
+عند طلب جهاز جديد من شركة مصنعة [](device-requirements.md#minimum-requirements)معتمدة، اتبع هذه الخطوات للتأكد من شحن الأجهزة باستخدام Microsoft Managed Desktop الصحيح وتكوين الصور والبرامج.
 
 في أي وقت تخطط فيه لتسجيل نموذج جهاز معين في الخدمة للمرة الأولى، يجب اختبار مثال للتأكد من أنه سيوصل تجربة المستخدم التي تتوقعها. لمزيد من المعلومات، راجع [التحقق من صحة الأجهزة الجديدة](/microsoft-365/managed-desktop/get-started/validate-device).
+
+### <a name="windows-10-pro"></a>Windows 10 Pro
+إذا كنت تقوم ب طلب الأجهزة باستخدام Windows 10، فاعمل مباشرة مع مندوب مبيعات الشركة الأصلية. حتى 1 نوفمبر 2022، لا يمكن للم الشركة سوى بيع Windows 10 Pro بموجب Windows 11 Pro مع Windows 10 Pro تخفيض الدرجات. لمزيد من المعلومات، [راجع Windows 10 تواريخ الدعم](/lifecycle/products/windows-10-enterprise-and-education?msclkid=4a74c7b9b04111eca478c6fdafbc51a5) لتواريخ التقاعد Windows 10 الإصدارات.
+
+بالنسبة للعملاء الذين ترغب في الانتقال إلى Windows 11، يمكنك العثور على مزيد من المعلومات حول العملية الموصى بها [هنا](/microsoft-365/managed-desktop/intro/win11-overview). 
 
 ### <a name="dell"></a>Dell
 
 العمل مباشرة مع مندوب مبيعات Dell.
 
-سيضمن الممثل تطبيق الصورة التي وافق عليها Microsoft Managed Desktop على الأجهزة التي تريدها. لمزيد من المعلومات حول أجهزة Dell والصورة وعملية الطلب، اتصل MMD_at_dell@dell.com.
+سيضمن الممثل تطبيق الصورة التي Microsoft Managed Desktop عليها على الأجهزة التي تريدها. لمزيد من المعلومات حول أجهزة Dell والصورة وعملية الطلب، اتصل MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>HP
 
-عند طلب أجهزة جديدة من HP، تأكد من استخدام SKU المحددة المدرجة في قسم المتطلبات الإضافية لكل نموذج تم [العثور عليه في](https://www.microsoft.com/windows/business/devices#view-all-filter) صفحة التسوق Windows Pro العمل. تصفية طريقة العرض لتضمين أجهزة سطح المكتب المدارة من Microsoft.
+عند طلب أجهزة جديدة من HP، تأكد من استخدام SKU المحددة المدرجة في قسم المتطلبات الإضافية لكل نموذج تم [العثور عليه في](https://www.microsoft.com/windows/business/devices#view-all-filter) صفحة التسوق Windows Pro العمل. تصفية طريقة العرض لتضمين Microsoft Managed Desktop الأجهزة.
 
 إذا كنت تطلب جهازا من HP تمت الموافقة عليه استثناء، ولكنه غير مدرج حاليا في [](customizing.md)صفحة قائمة الأجهزة، فاطلب استخدام SKU للنموذج. سنعمل مع HP للحصول على هذه المعلومات باستخدام طلب الاستثناء. يمكنك أيضا الاتصال ب HP مباشرة لأي أسئلة حول الأجهزة وإرشادات طلب الجهاز باستخدام العناوين التالية:
 
@@ -67,7 +72,7 @@ ms.locfileid: "63575445"
 
 اتبع الخطوات ذات الصلة بالشركة المصنعة.
 
-يمكنك إعادة عرض الأجهزة إما بصورة من الشركة المصنعة أو باستخدام "الصورة العامة" لسطح المكتب المدار من Microsoft. للحصول على صورة الشركة المصنعة المناسبة، طلب جهاز [جديد](#new-devices) واحد على الأقل للنموذج الذي تقوم باستخدامه. بعد ذلك، يمكنك الحصول على الصورة من هذا الجهاز وتطبيقها على أجهزة أخرى بنفس النموذج.
+يمكنك إعادة عرض الأجهزة إما بصورة من الشركة المصنعة أو باستخدام Microsoft Managed Desktop "الصورة العامة". للحصول على صورة الشركة المصنعة المناسبة، طلب جهاز [جديد](#new-devices) واحد على الأقل للنموذج الذي تقوم باستخدامه. بعد ذلك، يمكنك الحصول على الصورة من هذا الجهاز وتطبيقها على أجهزة أخرى بنفس النموذج.
 
 > [!NOTE]
 > تتحمل أنت مسؤولية إنشاء الصور واختبارها ونشرها. نوصي أيضا باستخدام الصور المناسبة التي توفرها الشركة المصنعة كلما أمكن بدلا من الصور المخصصة؛ يتضمن ذلك "الصورة العامة".
@@ -100,9 +105,9 @@ ms.locfileid: "63575445"
 
 ### <a name="universal-image"></a>صورة شاملة
 
-أنشأ Microsoft Managed Desktop صورة تحتوي على Windows Pro Microsoft 365 Apps ل Enterprise يمكنك استخدامها مع Microsoft Managed Desktop.
+Microsoft Managed Desktop إنشاء صورة تحتوي على Windows Pro Microsoft 365 Apps ل Enterprise يمكنك استخدامها مع Microsoft Managed Desktop.
 
-ومع ذلك، من الأفضل استخدام الصور المناسبة لسطح المكتب المدار من Microsoft الذي توفره الشركة المصنعة كلما أمكن، حتى لو كان ذلك يعني أنه يجب تحديث إصدار قديم Windows بمجرد تسجيل المستخدم الدخول. يجب أن يكون استخدام الصورة العامة لسطح المكتب المدار من Microsoft خيارا نهائيا.
+ومع ذلك، من الأفضل استخدام الصور المناسبة Microsoft Managed Desktop توفرها الشركة المصنعة كلما أمكن، حتى لو كان ذلك يعني أنه يجب تحديث إصدار Windows قديم بمجرد تسجيل المستخدم الدخول. يجب أن Microsoft Managed Desktop الصورة العامة خيارا نهائيا.
 
 - نقوم بتحديث الصورة بأحدث تحديثات Windows الشهرية كل 30-60 يوما، Microsoft 365 Apps تحديثات Enterprise مرتين في السنة على الأقل.
 - تحتوي الصورة على حزمة توفير استرداد لضمان استعادة Microsoft 365 Apps ل Enterprise بعد Windows الاسترداد.

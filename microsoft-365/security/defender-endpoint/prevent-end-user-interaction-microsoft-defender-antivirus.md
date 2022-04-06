@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d54d8ecf2d0c365168ae636cbe85ef1da9cfb6b1
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 26a792a753b0855a12cd994256cef93a64a5a159
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63574256"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469218"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>منع المستخدمين من رؤية واجهة مستخدم برنامج الحماية من الفيروسات من Microsoft Defender أو التفاعل معها
 
@@ -29,10 +29,10 @@ ms.locfileid: "63574256"
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-يمكنك استخدام "نهج المجموعة" لمنع المستخدمين في نقاط النهاية من رؤية برنامج الحماية من الفيروسات من Microsoft Defender المجموعة. يمكنك أيضا منعهم من وضع عمليات المسح الضوئية في وضع انتظار.
+يمكنك استخدام نهج المجموعة لمنع المستخدمين في نقاط النهاية من رؤية واجهة برنامج الحماية من الفيروسات من Microsoft Defender. يمكنك أيضا منعهم من وضع عمليات المسح الضوئية في وضع انتظار.
 
 ## <a name="hide-the-microsoft-defender-antivirus-interface"></a>إخفاء واجهة برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -40,24 +40,24 @@ ms.locfileid: "63574256"
 
 مع تعيين الإعداد إلى **تمكين**:
 
-:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="لقطة شاشة أمن Windows بدون أيقونة الدرع وأقسام الحماية من الفيروسات والتهديدات.":::
+:::image type="content" source="../../media/wdav-headless-mode-off-1703.png" alt-text="لا أمن Windows بدون أيقونة الدرع وأقسام الحماية من الفيروسات والتهديدات" lightbox="../../media/wdav-headless-mode-off-1703.png":::
 
 مع تعيين الإعداد إلى **معطل** أو غير مكون:
 
-:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="لقطة شاشة أمن Windows مع أيقونة الدرع وأقسام الحماية من المخاطر.":::
+:::image type="content" source="../../media/wdav-headless-mode-1703.png" alt-text="المقطع أمن Windows مع أيقونة الدرع وأقسام الحماية من المخاطر" lightbox="../../media/wdav-headless-mode-1703.png":::
 
 > [!NOTE]
-> سيمنع إخفاء الواجهة أيضا برنامج الحماية من الفيروسات من Microsoft Defender الإعلامات من الظهور على نقطة النهاية. سيبقى Microsoft Defender الخاص بإشعارات نقطة النهاية في الظهور. يمكنك أيضا تكوين الإعلامات التي تظهر على [نقاط النهاية بشكل فردي](configure-notifications-microsoft-defender-antivirus.md)
+> سيمنع إخفاء الواجهة أيضا برنامج الحماية من الفيروسات من Microsoft Defender الإعلامات من الظهور على نقطة النهاية. Microsoft Defender لنقطة النهاية الإعلامات تظهر. يمكنك أيضا تكوين الإعلامات التي تظهر على [نقاط النهاية بشكل فردي](configure-notifications-microsoft-defender-antivirus.md)
 
 في الإصدارات السابقة من Windows 10، سيخفي الإعداد Windows عميل Defender. إذا حاول المستخدم فتحه، سيتلقى تحذيرا يقول "قام مسؤول النظام بتقييد الوصول إلى هذا التطبيق".
 
-:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="رسالة تحذير عند تمكين وضع الرأس في Windows 10، إصدارات أقدم من 1703":::
+:::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="رسالة التحذير عند تمكين وضع الرأس في Windows 10، إصدارات أقدم من 1703" lightbox="../../media/wdav-headless-mode-1607.png":::
 
-## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>استخدام "نهج المجموعة" لإخفاء واجهة Microsoft Defender AV عن المستخدمين
+## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>استخدام نهج المجموعة لإخفاء واجهة Microsoft Defender AV من المستخدمين
 
-1. على جهاز إدارة نهج المجموعة، افتح وحدة التحكم [في](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) إدارة نهج المجموعة، وانقر بيمين فوق كائن نهج المجموعة الذي تريد تكوينه وانقر فوق **تحرير**.
+1. على جهاز نهج المجموعة، افتح نهج المجموعة [إدارة](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) التحكم، وانقر بيمين فوق نهج المجموعة الذي تريد تكوينه، ثم انقر فوق **تحرير**.
 
-2. باستخدام **محرر إدارة نهج المجموعة** ، انتقل إلى **تكوين الكمبيوتر**.
+2. باستخدام نهج المجموعة **إدارة الكمبيوتر،** انتقل إلى **تكوين الكمبيوتر**.
 
 3. انقر **فوق قوالب إدارية**.
 
@@ -74,11 +74,11 @@ ms.locfileid: "63574256"
 > [!NOTE]
 > هذا الإعداد غير معتمد على Windows 10.
 
-### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>استخدام "نهج المجموعة" لمنع المستخدمين من وضع الفحص
+### <a name="use-group-policy-to-prevent-users-from-pausing-a-scan"></a>استخدام نهج المجموعة لمنع المستخدمين من وضع الفحص
 
-1. على جهاز إدارة نهج المجموعة، افتح وحدة التحكم [في](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) إدارة نهج المجموعة، وانقر بيمين فوق كائن نهج المجموعة الذي تريد تكوينه وانقر فوق **تحرير**.
+1. على جهاز نهج المجموعة، افتح نهج المجموعة [إدارة](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal) التحكم، وانقر بيمين فوق نهج المجموعة الذي تريد تكوينه، ثم انقر فوق **تحرير**.
 
-2. باستخدام **محرر إدارة نهج المجموعة** ، انتقل إلى **تكوين الكمبيوتر**.
+2. باستخدام نهج المجموعة **إدارة الكمبيوتر،** انتقل إلى **تكوين الكمبيوتر**.
 
 3. انقر **فوق قوالب إدارية**.
 

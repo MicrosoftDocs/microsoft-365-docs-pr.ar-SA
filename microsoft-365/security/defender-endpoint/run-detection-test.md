@@ -1,6 +1,6 @@
 ---
-title: تشغيل اختبار الكشف على جهاز للتحقق من أنه تم ا متنه بشكل صحيح في Microsoft Defender لنقطة النهاية
-description: يمكنك تشغيل البرنامج النصي لاختبار الكشف على جهاز تم تشغيله مؤخرا في خدمة Microsoft Defender for Endpoint للتحقق من إضافته بشكل صحيح.
+title: تشغيل اختبار الكشف على جهاز للتحقق من أنه تم االلوح بشكل صحيح Microsoft Defender لنقطة النهاية
+description: تشغيل البرنامج النصي لاختبار الكشف على جهاز تم تشغيله مؤخرا Microsoft Defender لنقطة النهاية الخدمة للتحقق من إضافتها بشكل صحيح.
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +16,14 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41ba14fd2e4a9e3726e4ef4287812cf8d3ffb2d1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 1d8459633d00d759fda1584e0084cd8ed4e12633
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63571511"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477248"
 ---
-# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>تشغيل اختبار الكشف على جهاز Microsoft Defender لنقطة النهاية الذي تم تشغيله حديثا
+# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>تشغيل اختبار الكشف على جهاز تم Microsoft Defender لنقطة النهاية جديد
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,16 +36,16 @@ ms.locfileid: "63571511"
 - Windows Server، الإصدار 1803
 - Windows Server 2019
 - Windows Server 2022
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-عند إضافة جهاز إلى خدمة Microsoft Defender لنقطة النهاية للإدارة، يسمى ذلك أيضا أجهزة الالإضافة. تسمح التكاتف للأجهزة بالإشارة إلى حالة صحتها للخدمة.
+عند إضافة جهاز إلى الخدمة Microsoft Defender لنقطة النهاية الإدارة، يسمى ذلك أيضا أجهزة الالإضافة. تسمح التكاتف للأجهزة بالإشارة إلى حالة صحتها للخدمة.
 
 إن التأكد من إضافة جهاز إلى الخدمة بنجاح، أو التحقق منه، خطوة هامة في عملية النشر بأكملها. وهو يضمن أنه يتم إدارة جميع الأجهزة المتوقعة. 
 
-## <a name="verify-microsoft-defender-for-endpoint-onboarding-of-a-device-using-a-powershell-detection-test"></a>التحقق من توفر Microsoft Defender لنقطة النهاية على جهاز باستخدام اختبار الكشف عن PowerShell
+## <a name="verify-microsoft-defender-for-endpoint-onboarding-of-a-device-using-a-powershell-detection-test"></a>التحقق من Microsoft Defender لنقطة النهاية على جهاز باستخدام اختبار الكشف عن PowerShell
 
 يمكنك تشغيل البرنامج النصي التالي من PowerShell على جهاز تم إعداده حديثا للتحقق من أنه يتم إبلاغ خدمة Defender for Endpoint بشكل صحيح.
 
@@ -56,8 +56,8 @@ ms.locfileid: "63571511"
 
    1. انقر ب زر الماوس الأيمن **فوق موجه الأوامر** وحدد **تشغيل كمسؤول**.
 
-      ![نافذة قائمة البدء تشير إلى تشغيل كمسؤول.](images/run-as-admin.png)
-
+      :::image type="content" source="images/run-as-admin.png" alt-text="يشير قائمة البدء إلى تشغيل كمسؤول" lightbox="images/run-as-admin.png":::
+    
 3. في المطالبة، انسخ الأمر التالي وتشغيله:
 
    ```powershell
@@ -70,4 +70,4 @@ ms.locfileid: "63571511"
 
 - [أجهزة Windows](configure-endpoints.md)
 - [خوادم على اللوحة](configure-server-endpoints.md)
-- [استكشاف مشاكل تشغيل نقطة النهاية وإصلاحها في Microsoft Defender](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
+- [استكشاف مشاكل Microsoft Defender لنقطة النهاية في الحافظة وإصلاحها](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

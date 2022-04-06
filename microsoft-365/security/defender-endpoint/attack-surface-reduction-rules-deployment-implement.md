@@ -1,7 +1,7 @@
 ---
 title: تنفيذ نشر قواعد الحد من الهجمات (ASR)
 description: يوفر إرشادات لتنفيذ نشر قواعد تقليل مساحة الهجوم.
-keywords: نشر قواعد تقليل مساحة الهجوم ونشر ASR وتمكين قواعد asr وتكوين ASR ونظام منع اقتحام المضيف وقواعد الحماية وقواعد مكافحة استغلالها وقواعد مكافحة استغلالها واستغلالها وقواعد منع الإصابة و Microsoft Defender ل Endpoint وتكوين قواعد ASR
+keywords: نشر قواعد الحد من الهجمات على سطح الهجوم ونشر ASR وتمكين قواعد asr وتكوين ASR ونظام منع اقتحام المضيف وقواعد الحماية وقواعد مكافحة الهجمات وقواعد مكافحة استغلالها واستغلالها وقواعد منع Microsoft Defender لنقطة النهاية وتكوين قواعد ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,24 +20,25 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 2ca83735eab465e3a5ec6b25156143fde1719c0a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c85dcb985210167e04b51092d66fb59080280581
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683110"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477336"
 ---
 # <a name="step-3-implement-asr-rules"></a>الخطوة 3: تنفيذ قواعد ASR
 
 تنفيذ قواعد تقليل مساحة الهجوم (ASR) ينقل حلقة الاختبار الأولى إلى حالة وظيفية وممكنة.
 
 > [!div class="mx-imgBorder"]
-> ![خطوات تنفيذ قواعد ASR](images/asr-rules-implementation-steps.png)
+> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="إجراء تنفيذ قواعد ASR" lightbox="images/asr-rules-implementation-steps.png":::
+  
 
 ## <a name="step-1-transition-asr-rules-from-audit-to-block"></a>الخطوة 1: نقل قواعد ASR من التدقيق إلى الحظر
 
 1. بعد تحديد كل الاستثناءات أثناء العمل في وضع التدقيق، ابدأ في تعيين بعض قواعد ASR إلى وضع "الحظر"، بدءا بالقاعدة التي بها أصغر الأحداث التي تم تشغيلها. راجع" [تمكين قواعد الحد من سطح الهجوم](enable-attack-surface-reduction.md).
-2. راجع صفحة إعداد التقارير في مدخل Microsoft 365 Defender؛ راجع تقرير الحماية من المخاطر [في Microsoft Defender لنقطة النهاية](threat-protection-reports.md). راجع أيضا الملاحظات الواردة من بطلي ASR.
+2. راجع صفحة إعداد التقارير في Microsoft 365 Defender؛ راجع تقرير الحماية من المخاطر [في](threat-protection-reports.md) Microsoft Defender لنقطة النهاية. راجع أيضا الملاحظات الواردة من بطلي ASR.
 3. تنقيح الاستثناءات أو إنشاء استثناءات جديدة كما هو ضروري.
 4. قم بتبديل القواعد التي بها مشاكل مرة أخرى إلى التدقيق.
 
@@ -92,11 +93,11 @@ ms.locfileid: "63683110"
 
 راجع الموضوع [المرجعي لقواعد تقليل مساحة](attack-surface-reduction-rules-reference.md) الهجوم للحصول على تفاصيل حول كل قاعدة.
 
-##### <a name="use-group-policy-to-exclude-files-and-folders"></a>استخدام "نهج المجموعة" لاستبعاد الملفات والمجلدات
+##### <a name="use-group-policy-to-exclude-files-and-folders"></a>استخدام نهج المجموعة لاستبعاد الملفات والمجلدات
 
-1. على كمبيوتر إدارة نهج المجموعة، افتح وحدة تحكم إدارة [نهج](https://technet.microsoft.com/library/cc731212.aspx) المجموعة، وانقر بيمين فوق كائن نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
+1. على الكمبيوتر نهج المجموعة، افتح وحدة التحكم في إدارة نهج المجموعة، [](https://technet.microsoft.com/library/cc731212.aspx)وانقر ب الماوس الأيمن فوق نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
 
-2. في محرر **إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر** وانقر فوق **قوالب إدارية**.
+2. في محرر **نهج المجموعة،** انتقل إلى **تكوين الكمبيوتر** وانقر فوق **قوالب إدارية**.
 
 3. قم بتوسيع الشجرة Windows **مكوناتها برنامج الحماية من الفيروسات من Microsoft Defender** \>  \> **الحماية من مخاطر الهجمات من Microsoft Defender** \> **الحد من سطح الهجوم**.
 

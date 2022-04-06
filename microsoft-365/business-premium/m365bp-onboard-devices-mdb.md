@@ -1,13 +1,13 @@
 ---
-title: اجهزه مؤسستك في Microsoft Defender for Business
-description: اجهزه مؤسستك في Microsoft Defender for Business
+title: اجهزه مؤسستك Microsoft Defender for Business
+description: اجهزه مؤسستك Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 04/01/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,39 +17,43 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 44015c7cf568b968a4910433faa7700d550586fb
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: e9810b453136025e094ef8a0e88bff526f2c5a51
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63705613"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634768"
 ---
-# <a name="onboard-managed-devices-to-microsoft-defender-for-business"></a>الأجهزة المدارة على لوحة إلى Microsoft Defender for Business
+# <a name="onboard-managed-devices-to-microsoft-defender-for-business"></a>الأجهزة المدارة على Microsoft Defender for Business
 
-الأجهزة المجهزة ل Microsoft Defender for Business لحمايتها من الجيل التالي (الحماية من الفيروسات والحماية من البرامج الضارة والحماية التي يتم تسليمها من السحابة) وحماية جدار الحماية وتصفية محتوى الويب والمزيد. 
+يجب على الأجهزة Microsoft Defender for Business لحمايتها من خلال حماية الجيل التالي (الحماية من الفيروسات والحماية من البرامج الضارة والحماية التي يتم تسليمها من السحابة) وحماية جدار الحماية وتصفية محتوى الويب والمزيد. 
 
 للأجهزة المجهزة، يمكنك الاختيار من بين عدة خيارات:
 
 - [استخدام الالتحاق التلقائي للأجهزة Windows التي تم تسجيلها بالفعل في إدارة نقاط النهاية من Microsoft](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager)
+
 - [استخدام برنامج نصي محلي ل Windows وأجهزة macOS](#use-a-local-script-to-onboard-windows-and-macos-devices)
+
 - [استخدم إدارة نقاط النهاية لتسجيل](#use-microsoft-endpoint-manager-to-enroll-devices) الأجهزة (Windows و macOS و iOS و Android) ثم طبق سياسات Defender for Business على هذه الأجهزة
 
 تتضمن هذه المقالة أيضا:
 
 - [كيفية تشغيل اختبار الكشف على جهاز Windows](#run-a-detection-test-on-a-windows-device)
+
 - [كيفية االأجهزة المجهزة تدريجيا](#onboard-devices-gradually)
+
 - [كيفية إيقاف تشغيل جهاز إذا](#offboard-a-device) تم استبدال جهاز أو ترك شخص ما المؤسسة
 
 > [!IMPORTANT]
-> إذا حدث خطأ ما وفشلت عملية التكعيب، فشاهد استكشاف الأخطاء وإصلاحها في [Microsoft Defender for Business](../security/defender-business/mdb-troubleshooting.yml).
+> إذا حدث خطأ ما وفشلت عملية التكعيب، [فشاهد Microsoft Defender for Business وإصلاحها](../security/defender-business/mdb-troubleshooting.yml).
 
 ## <a name="use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager"></a>استخدام الالتحاق التلقائي للأجهزة Windows التي تم تسجيلها بالفعل في إدارة نقاط النهاية من Microsoft
 
-ينطبق خيار التكهين التلقائي على Windows الأجهزة فقط. تتوفر ميزة الالتحاق التلقائي إذا كانت مؤسستك تستخدم بالفعل إدارة نقاط النهاية من Microsoft أو Microsoft Intune أو إدارة أجهزة المحمول (MDM) في Microsoft Intune قبل الحصول على Defender for Business، وكان لديك بالفعل Windows جهاز مسجل في إدارة نقاط النهاية. 
+ينطبق خيار التكهين التلقائي على Windows الأجهزة فقط. تتوفر ميزة التوفر التلقائي إذا كانت مؤسستك تستخدم إدارة نقاط النهاية من Microsoft أو Microsoft Intune أو Mobile إدارة الجهاز (MDM) في Microsoft Intune قبل الحصول على Defender for Business، وكان لديك Windows  الأجهزة التي تم تسجيلها في إدارة نقاط النهاية. 
 
 إذا Windows تم تسجيل أجهزة أخرى بالفعل في إدارة نقاط النهاية، سيكشف Defender for Business عن هذه الأجهزة أثناء عملية إعداد Defender for Business وتكوينه. سيتم سؤالك عما إذا كنت تريد استخدام التركب التلقائي لجميع أجهزة الكمبيوتر Windows أو بعضها. يمكنك الإضافة إلى جميع Windows مرة واحدة، أو تحديد أجهزة معينة للبدء بها، ثم إضافة المزيد من الأجهزة في وقت لاحق.
 
-لمعرفة المزيد حول الإعداد التلقائي، راجع الخطوة 2 في [استخدام المعالج لإعداد Microsoft Defender for Business](../security/defender-business/mdb-use-wizard.md).
+لمعرفة المزيد حول الإعداد التلقائي، راجع الخطوة 2 في [استخدام المعالج لإعداد](../security/defender-business/mdb-use-wizard.md) Microsoft Defender for Business.
 
 ## <a name="use-a-local-script-to-onboard-windows-and-macos-devices"></a>استخدام برنامج نصي محلي ل Windows وأجهزة macOS
 
@@ -68,11 +72,12 @@ ms.locfileid: "63705613"
 5. اتبع الإرشادات في المقالات التالية:
 
    - Windows الأجهزة: [Windows الأجهزة باستخدام برنامج نصي محلي](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
-   - أجهزة macOS: [النشر اليدوي ل Microsoft Defender ل Endpoint على macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
+
+   - أجهزة macOS: [النشر اليدوي Microsoft Defender لنقطة النهاية على macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
 
 ## <a name="use-microsoft-endpoint-manager-to-enroll-devices"></a>استخدام إدارة نقاط النهاية من Microsoft لتسجيل الأجهزة
 
-إذا كنت تستخدم إدارة نقاط النهاية (الذي يتضمن Microsoft Intune وإدارة أجهزة المحمول)، قبل الحصول على Defender for Business، يمكنك الاستمرار في استخدام إدارة نقاط النهاية لضم أجهزة مؤسستك. باستخدام إدارة نقاط النهاية، يمكنك تشغيل أجهزة الكمبيوتر وأجهزة الكمبيوتر اللوحية والهواتف، بما في ذلك أجهزة iOS وAndroid.
+إذا كنت تستخدم إدارة نقاط النهاية (الذي يتضمن Microsoft Intune وجوال إدارة الجهاز)، قبل الحصول على Defender for Business، يمكنك الاستمرار في استخدام إدارة نقاط النهاية لضم أجهزة مؤسستك. باستخدام إدارة نقاط النهاية، يمكنك تشغيل أجهزة الكمبيوتر وأجهزة الكمبيوتر اللوحية والهواتف، بما في ذلك أجهزة iOS وAndroid.
 
 إذا كانت مؤسستك تستخدم أجهزة Android، فاستخدم هذه الطريقة.
 
@@ -131,6 +136,7 @@ ms.locfileid: "63705613"
 7. تشغيل البرنامج النصي على كل جهاز تريد إيقاف تشغيله. هل تحتاج إلى مساعدة في هذه المهمة؟ راجع الموارد التالية:   
 
    - Windows الأجهزة: [إيقاف Windows الأجهزة باستخدام برنامج نصي محلي](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
+   
    - أجهزة macOS: [إلغاء تثبيت على macOS](../security/defender-endpoint/mac-resources.md#uninstalling)
 
 > [!IMPORTANT]

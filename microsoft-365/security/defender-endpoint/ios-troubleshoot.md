@@ -1,7 +1,7 @@
 ---
-title: استكشاف المشاكل وإصلاحها والعثور على إجابات على الأسئلة والأجوبة المتعلقة ب Microsoft Defender ل Endpoint على نظام التشغيل iOS
-description: استكشاف الأخطاء وإصلاحها وال الأسئلة الشائعة - Microsoft Defender لنقطة النهاية على نظام التشغيل iOS
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، ios، استكشاف الأخطاء وإصلاحها، الأسئلة الشائعة، كيفية
+title: استكشاف المشاكل وإصلاحها والعثور على إجابات على الأسئلة والأجوبة المتعلقة Microsoft Defender لنقطة النهاية على iOS
+description: استكشاف الأخطاء وإصلاحها وال الأسئلة Microsoft Defender لنقطة النهاية على iOS
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، ios، استكشاف الأخطاء وإصلاحها، الأسئلة الشائعة، كيفية
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,25 +15,25 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1119d13998510927f249288cc40a47eda45dc9ac
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: bc8cda3fb61ec9338b95eed58f5f0a70e1deb3e1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "63571683"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469350"
 ---
-# <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>استكشاف المشاكل وإصلاحها والعثور على إجابات الأسئلة والأجوبة على Microsoft Defender ل Endpoint على نظام التشغيل iOS
+# <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>استكشاف المشاكل وإصلاحها والعثور على إجابات على الأسئلة Microsoft Defender لنقطة النهاية على iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-يوفر هذا الموضوع معلومات حول استكشاف الأخطاء وإصلاحها لمساعدتك على معالجة المشاكل التي قد تنشأ عند استخدام Microsoft Defender ل Endpoint على نظام التشغيل iOS.
+يوفر هذا الموضوع معلومات حول استكشاف الأخطاء وإصلاحها لمساعدتك على معالجة المشاكل التي قد تنشأ عند Microsoft Defender لنقطة النهاية على iOS.
 
 
 
@@ -48,14 +48,14 @@ ms.locfileid: "63571683"
 على الرغم من تمكينه بشكل افتراضي، قد تكون هناك بعض الحالات التي تتطلب منك تعطيل VPN. على سبيل المثال، تريد تشغيل بعض التطبيقات التي لا تعمل عند تكوين VPN. في مثل هذه الحالات، يمكنك اختيار تعطيل VPN مباشرة من تطبيق Defender for Endpoint أو استخدام الخطوات التالية:
 
 1. على جهاز iOS، **افتح تطبيق الإعدادات**، وانقر فوق **عام** ثم على VPN أو اضغط **عليه**.
-1. انقر فوق الزر "i" ل Microsoft Defender لنقطة النهاية أو اضغط عليه.
+1. انقر فوق الزر "i" أو اضغط عليه Microsoft Defender لنقطة النهاية.
 1. قم بتبدل الاتصال **عند الطلب** لتعطيل VPN.
 
     > [!div class="mx-imgBorder"]
-    > ![تواصل مؤتمرات VPN عند الطلب.](images/ios-vpn-config.png)
+    > :::image type="content" source="images/ios-vpn-config.png" alt-text="خيار الاتصال عند الطلب" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
-> لن تكون حماية الويب متوفرة عند تعطيل VPN. لإعادة تمكين حماية ويب، افتح تطبيق Microsoft Defender لنقطة النهاية على الجهاز وتمكين حماية ويب.
+> لن تكون حماية الويب متوفرة عند تعطيل VPN. لإعادة تمكين حماية الويب، افتح Microsoft Defender لنقطة النهاية التطبيق على الجهاز وتمكين حماية ويب.
 
 ## <a name="coexistence-with-multiple-vpn-profiles"></a>التعايش مع ملفات تعريف VPN متعددة
 
@@ -63,19 +63,19 @@ ms.locfileid: "63571683"
 
 ## <a name="battery-consumption"></a>استهلاك البطارية
 
-لكي نوفر لك الحماية في كل الأوقات من التهديدات المستندة إلى الويب، يجب تشغيل Microsoft Defender ل Endpoint في الخلفية في كل الأوقات. قد يؤدي ذلك إلى زيادة بسيطة في الاستهلاك الإجمالي للبطارية لجهازك. في حال كنت ترى استنزافا كبيرا للبطارية، يرجى [إرسال ملاحظاتك](ios-troubleshoot.md#send-in-app-feedback) وسنتحقق من ذلك.
+لكي نوفر لك الحماية في كل الأوقات من التهديدات المستندة إلى الويب، يجب Microsoft Defender لنقطة النهاية في الخلفية في كل الأوقات. قد يؤدي ذلك إلى زيادة بسيطة في الاستهلاك الإجمالي للبطارية لجهازك. في حال كنت ترى استنزافا كبيرا للبطارية، يرجى [إرسال ملاحظاتك](ios-troubleshoot.md#send-in-app-feedback) وسنتحقق من ذلك.
 
-كذلك، في تطبيق الإعدادات، يعرض iOS استخدام البطارية للتطبيقات المرئية للمستخدم لمدة معينة من الوقت فقط. يتم استخدام البطارية بواسطة التطبيقات المعروضة على الشاشة لمدة الوقت هذه فقط ويحسبها نظام iOS استنادا إلى العديد من العوامل بما في ذلك CPU واستخدام الشبكة. يستخدم Microsoft Defender ل Endpoint VPN محلي/حلقي في الخلفية للتحقق من حركة مرور الويب لأي مواقع ويب أو اتصالات ضارة. تمر حزم الشبكة من أي تطبيق بهذا الاختيار، مما يؤدي إلى حساب استخدام بطارية Microsoft Defender ل Endpoint بشكل غير دقيق. إن استهلاك البطارية الفعلي ل Microsoft Defender لنقطة النهاية أقل مما هو مبين على صفحة البطارية الإعدادات على الجهاز.
+كذلك، في تطبيق الإعدادات، يعرض iOS استخدام البطارية للتطبيقات المرئية للمستخدم لمدة معينة من الوقت فقط. يتم استخدام البطارية بواسطة التطبيقات المعروضة على الشاشة لمدة الوقت هذه فقط ويحسبها نظام iOS استنادا إلى العديد من العوامل بما في ذلك CPU واستخدام الشبكة. Microsoft Defender لنقطة النهاية استخدام VPN محلي/حلقي في الخلفية للتحقق من حركة مرور الويب لأي مواقع ويب أو اتصالات ضارة. تمر حزم الشبكة من أي تطبيق بهذا الاختيار، مما يؤدي إلى حساب استخدام بطارية Microsoft Defender لنقطة النهاية بشكل غير دقيق. استهلاك البطارية الفعلي Microsoft Defender لنقطة النهاية أقل مما هو موضح على صفحة البطارية الإعدادات على الجهاز.
 
 تجدر الإشارة إلى أن VPN المستخدمة هي VPN محلية وبخلاف VPN التقليدية، لا يتم إرسال حركة مرور الشبكة خارج الجهاز.
 
 ## <a name="data-usage"></a>استخدام البيانات
 
-يستخدم Microsoft Defender لنقطة النهاية VPN محلية/تكرارية للتحقق من حركة مرور الويب لأي مواقع ويب أو اتصالات ضارة. نظرا لهذا السبب، يمكن حساب استخدام بيانات نقطة النهاية من Microsoft Defender بشكل غير دقيق. كما لاحظنا أنه إذا كان الجهاز على شبكة الجوال فقط، فإن استخدام البيانات الذي يتم ابلاجه بواسطة موفر الخدمة قريب جدا من الاستهلاك الفعلي، بينما في تطبيق الإعدادات، تعرض Apple البيانات الفعلية المستهلكة من 1.5x إلى 2x.
+Microsoft Defender لنقطة النهاية استخدام VPN محلي/تكراري للتحقق من حركة مرور الويب لأي مواقع ويب أو اتصالات ضارة. وبسبب هذا السبب، Microsoft Defender لنقطة النهاية حساب استخدام البيانات بشكل غير دقيق. كما لاحظنا أنه إذا كان الجهاز على شبكة الجوال فقط، فإن استخدام البيانات الذي يتم ابلاجه بواسطة موفر الخدمة قريب جدا من الاستهلاك الفعلي، بينما في تطبيق الإعدادات، تعرض Apple البيانات الفعلية المستهلكة من 1.5x إلى 2x.
 
 لدينا ملاحظات مماثلة مع خدمات VPN الأخرى أيضا وقد قمنا ببلاحة Apple بذلك.
 
-بالإضافة إلى ذلك، من المهم أن يكون Microsoft Defender لنقطة النهاية منتهي الصلاحية مع خدماتنا الخلفية لتوفير حماية أفضل.
+بالإضافة إلى ذلك، من المهم Microsoft Defender لنقطة النهاية أن تكون على أحدث المعلومات مع خدماتنا الخلفية لتوفير حماية أفضل.
 
 ## <a name="report-unsafe-site"></a>الإبلاغ عن موقع غير آمن
 
@@ -83,12 +83,12 @@ ms.locfileid: "63571683"
 
 ## <a name="malicious-site-detected"></a>تم الكشف عن موقع ضار
 
-يحميك Microsoft Defender for Endpoint من التصيد الاحتيالي أو الهجمات الأخرى المستندة إلى الويب. إذا تم الكشف عن موقع ضار، يتم حظر الاتصال ويرسل تنبيه إلى مدخل Microsoft 365 Defender المؤسسة. يتضمن التنبيه اسم مجال الاتصال وعنوان IP البعيد وتفاصيل الجهاز.
+Microsoft Defender لنقطة النهاية يحميك من التصيد الاحتيالي أو الهجمات الأخرى المستندة إلى الويب. إذا تم الكشف عن موقع ضار، يتم حظر الاتصال ويرسل تنبيه إلى مدخل Microsoft 365 Defender المؤسسة. يتضمن التنبيه اسم مجال الاتصال وعنوان IP البعيد وتفاصيل الجهاز.
 
 بالإضافة إلى ذلك، يتم عرض إعلام على جهاز iOS. يؤدي الضغط على الإعلام إلى فتح الشاشة التالية للمستخدم لمراجعة التفاصيل.
 
 > [!div class="mx-imgBorder"]
-> ![صورة موقع تم الإبلاغ عن أنه إعلام غير آمن.](images/ios-phish-alert.png)
+> :::image type="content" source="images/ios-phish-alert.png" alt-text="تم الإبلاغ عن الموقع على أنه إعلام غير آمن" lightbox="images/ios-phish-alert.png":::
 
 ## <a name="device-not-seen-on-the-defender-for-endpoint-console-after-onboarding"></a>لم يتم رؤية الجهاز على وحدة تحكم Defender for Endpoint بعد التكوين.
 
@@ -99,11 +99,11 @@ ms.locfileid: "63571683"
 
 ## <a name="data-and-privacy"></a>البيانات والخصوصية
 
-للحصول على تفاصيل حول البيانات التي يتم تجميعها والخصوصية، راجع [معلومات الخصوصية - Microsoft Defender ل Endpoint على نظام التشغيل iOS](ios-privacy.md).
+للحصول على تفاصيل حول البيانات التي يتم تجميعها والخصوصية، راجع [معلومات الخصوصية - Microsoft Defender لنقطة النهاية على iOS](ios-privacy.md).
 
 ## <a name="connectivity-issue-on-cellular-network"></a>مشكلة الاتصال على شبكة الجوال
 
-إذا كنت تواجه مشاكل في الاتصال بالإنترنت على شبكة الجوال، فتحقق مما إذا كان Microsoft Defender ل Endpoint قد تم تمكين بيانات شبكة الجوال: افتح تطبيق الإعدادات > MS Defender > تأكد من تمكين "بيانات شبكة الجوال" ل MS Defender.
+إذا كنت تواجه مشاكل في الاتصال بالإنترنت على شبكة الجوال، فتحقق مما إذا كان Microsoft Defender لنقطة النهاية قد تم تمكين بيانات شبكة الجوال: افتح تطبيق الإعدادات > MS Defender > تأكد من تمكين "بيانات شبكة الجوال" ل MS Defender.
 
 إذا كنت لا تزال لديك مشاكل في الاتصال، فتحقق مما إذا كان تشغيل/إيقاف تشغيل وضع الطيران يساعد على حل المشكلة. إذا استمرت المشكلة، [أرسل لنا السجلات](ios-troubleshoot.md#send-in-app-feedback).
 

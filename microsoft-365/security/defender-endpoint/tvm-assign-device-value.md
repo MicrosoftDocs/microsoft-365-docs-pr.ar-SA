@@ -1,7 +1,7 @@
 ---
 title: تعيين قيمة الجهاز - إدارة المخاطر والثغرات الأمنية
 description: تعرف على كيفية تعيين قيمة منخفضة أو عادية أو عالية لجهاز لمساعدتك على التمييز بين أولويات الأصول.
-keywords: Microsoft Defender لقيمة جهاز نقطة النهاية، إدارة المخاطر والثغرات الأمنية جهاز، أجهزة ذات قيمة عالية، درجة التعرض لقيمة الجهاز
+keywords: Microsoft Defender لنقطة النهاية قيمة الجهاز، إدارة المخاطر والثغرات الأمنية الجهاز، الأجهزة ذات القيم العالية، درجة التعرض لقيمة الجهاز
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cb8c0bd0870ea240e64c33dfac2fd6c00156def8
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: ff6d61e02ff923cc9406412c81e9a67799e6880a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63573352"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477204"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>تعيين قيمة الجهاز - إدارة المخاطر والثغرات الأمنية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [التهديدات إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -59,10 +59,11 @@ ms.locfileid: "63573352"
 
 2. حدد **قيمة الجهاز** من ثلاث نقاط إلى جانب شريط الإجراءات في أعلى الصفحة.
 
-    ![مثال لقيمة الجهاز المنسدلة.](images/tvm-device-value-dropdown.png)
+   :::image type="content" source="images/tvm-device-value-dropdown.png" alt-text="خيار قيمة الجهاز" lightbox="images/tvm-device-value-dropdown.png":::
 
 3. ستظهر منتحلة من خلال قيمة الجهاز الحالية ومعناها. راجع قيمة الجهاز واختر الجهاز الأكثر ملائمة لجهازك.
-![مثال لقيمة الجهاز من خلال flyout.](images/tvm-device-value-flyout.png)
+
+:::image type="content" source="images/tvm-device-value-flyout.png" alt-text="صفحة قيمة الجهاز" lightbox="images/tvm-device-value-flyout.png":::
 
 ## <a name="how-device-value-impacts-your-exposure-score"></a>كيفية تأثير قيمة الجهاز على درجة التعرض للضوء
 

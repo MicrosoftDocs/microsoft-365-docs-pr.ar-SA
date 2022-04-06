@@ -13,16 +13,22 @@ f1.keywords:
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: e697d9caf2b35dd0dedb9632b968cb095b792520
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 60847c3455c65ebc4393950c766f2c4d0c3165ef
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595027"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634306"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>تغيير محفوظات Microsoft Managed Desktop المستندات
 
 تسرد هذه المقالة المقالات الجديدة والمحدثة في Microsoft Managed Desktop [الوثائق](index.yml). تم إدراج إضافات أو تصحيحات المواد في المقالات "محدثة"، ولا يتم إدراج تصحيحات بسيطة مثل تصحيح الأخطاء الكاتبة أو النمط أو مشاكل التنسيق. يمكنك دائما عرض محفوظات الالتزامات المحددة (بما في ذلك تفاصيل أي تغييرات) من خلال زيارة إعادة الاكتتاب [في](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop) GitHub.
+
+## <a name="april-2022"></a>أبريل 2022
+
+مقالة جديدة أو تم تغييرها | الوصف
+--- | ---
+| [الفرق](get-started/teams.md) | القسم Microsoft Intune التغييرات المحدثة |
 
 ## <a name="march-2022"></a>مارس 2022
 

@@ -1,7 +1,7 @@
 ---
 title: التخطيط لنهاية الدعم والإصدارات البرمجية
 description: اكتشف إصدارات البرامج والبرامج التي لم تعد معتمدة ولن تتلقى تحديثات الأمان وخطط لها.
-keywords: إدارة المخاطر والثغرات الأمنية Microsoft Defender ل Endpoint tvm وتوصية الأمان عبر الإنترنت وتوصية الأمان القابلة للتنفيذ
+keywords: إدارة المخاطر والثغرات الأمنية Microsoft Defender لنقطة النهاية أمان tvm وتوصية أمان الإنترنت والتوصيات المتعلقة بالأمان القابل للتنفيذ
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 65842d0bd56308b6a5e5476f84c089b63a04987b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 3997e2cb372a2cbbbdb0d8e9b51c5b57bd38c7aa
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63583202"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476676"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>التخطيط لإصدارات برامج نهاية الدعم والبرامج باستخدام إدارة المخاطر والثغرات الأمنية
 
@@ -29,7 +29,7 @@ ms.locfileid: "63583202"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [التهديدات إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -47,11 +47,11 @@ ms.locfileid: "63583202"
 1. من القائمة إدارة المخاطر والثغرات الأمنية، انتقل إلى [**توصيات الأمان**](tvm-security-recommendation.md).
 2. انتقل إلى **لوحة عوامل التصفية** وابحث عن مقطع العلامات. حدد واحدا أو أكثر من خيارات علامة EOS. ثم **تطبيق**.
 
-    ![علامات لقطة شاشة تظهر برامج EOS، إصدارات EOS، إصدارات EOS القادمة.](images/tvm-eos-tag.png)
+   :::image type="content" source="images/tvm-eos-tag.png" alt-text="برامج EOS، إصدارات EOS، إصدارات EOS القادمة" lightbox="images/tvm-eos-tag.png":::
 
 3. سترى قائمة بالتوصيات ذات الصلة بالبرمجيات التي تم إنهاء دعمها أو إصدارات البرامج التي تنتهي الدعم أو الإصدارات ذات نهاية الدعم القادمة. كما تظهر هذه العلامات في [صفحة مخزون](tvm-software-inventory.md) البرامج.
 
-    ![التوصيات باستخدام علامة EOS.](images/tvm-eos-tags-column.png)
+   :::image type="content" source="images/tvm-eos-tags-column.png" alt-text="علامة التوصيات EOS" lightbox="images/tvm-eos-tags-column.png":::
 
 ## <a name="list-of-versions-and-dates"></a>قائمة بالإصدارات والتواريخ
 
@@ -59,15 +59,15 @@ ms.locfileid: "63583202"
 
 1. ستظهر رسالة في النشرة من خلال توصيات الأمان للبرامج ذات الإصدارات التي وصلت إلى نهاية الدعم، أو ستصل إلى نهاية الدعم قريبا.
 
-    ![لقطة شاشة لاارتباط توزيع الإصدار.](images/eos-upcoming-eos.png)
+   :::image type="content" source="images/eos-upcoming-eos.png" alt-text="ارتباط توزيع الإصدار" lightbox="images/eos-upcoming-eos.png":::
 
 2. حدد ارتباط **توزيع الإصدار** الذي تريد الانتقال إليه في صفحة التنقل لأسفل للبرنامج. هناك، يمكنك رؤية قائمة بالإصدارات التي تمت تصفيتها باستخدام علامات تحددها على أنها نهاية الدعم أو نهاية الدعم القادمة.
 
-    ![لقطة شاشة لصفحة التنقل لأسفل للبرنامج مع انتهاء برنامج الدعم.](images/software-drilldown-eos.png)
+   :::image type="content" source="images/software-drilldown-eos.png" alt-text="صفحة التنقل لأسفل للبرنامج مع تفاصيل نهاية برنامج الدعم" lightbox="images/software-drilldown-eos.png":::
 
 3. حدد أحد الإصدارات في الجدول لفتحه. على سبيل المثال، الإصدار 10.0.18362.1. ستظهر منتحلة من خلال نهاية تاريخ الدعم.
 
-    ![لقطة شاشة لنهاية تاريخ الدعم.](images/version-eos-date.png)
+   :::image type="content" source="images/version-eos-date.png" alt-text="عرض تاريخ انتهاء الدعم" lightbox="images/version-eos-date.png":::
 
 بمجرد تحديد إصدارات البرامج والبرامج المعرضة للخطر بسبب حالة انتهاء الدعم الخاصة بها، يجب أن تقرر ما إذا كنت تريد تحديثها أو إزالتها من مؤسستك. يؤدي القيام بذلك إلى تقليل تعرض مؤسستك لنقاط الضعف والتهديدات المستمرة المتقدمة.
 

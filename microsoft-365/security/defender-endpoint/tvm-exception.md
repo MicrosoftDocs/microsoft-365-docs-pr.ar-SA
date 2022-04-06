@@ -1,7 +1,7 @@
 ---
 title: إنشاء استثناءات لتوصيات الأمان وعرضها - إدارة المخاطر والثغرات الأمنية
 description: إنشاء استثناءات لتوصيات الأمان ومراقبتها في إدارة المخاطر والثغرات الأمنية.
-keywords: إصلاح Microsoft Defender ل Endpoint tvm و Microsoft Defender ل Endpoint tvm و إدارة المخاطر والثغرات الأمنية و threat & إدارة الثغرات الأمنية و threat & إدارة الثغرات الأمنية و tvm remediation intune و sccm الخاص ب إصلاح tvm
+keywords: Microsoft Defender لنقطة النهاية، Microsoft Defender لنقطة النهاية tvm، إدارة المخاطر والثغرات الأمنية، & إدارة الثغرات الأمنية، & إدارة الثغرات الأمنية المعالجة، المعالجة بالتلفزيون intune، sccm المعالجة بالتلفزيون
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3986d44027824f2ba9ca508567d518cce270450
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 00d7afd9daec71a14d4b789d1d6dcfe5eaf07d83
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63575775"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477182"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>إنشاء استثناءات لتوصيات الأمان وعرضها - إدارة المخاطر والثغرات الأمنية
 
@@ -29,7 +29,7 @@ ms.locfileid: "63575775"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [التهديدات إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,19 +43,19 @@ ms.locfileid: "63575775"
 
 يمكن للمستخدمين الذين لديهم أذونات "التعامل مع الاستثناءات" فقط إدارة الاستثناءات (بما في ذلك إنشاء أو إلغاء). [تعرف على المزيد حول أدوار RBAC](user-roles.md).
 
-![عرض إذن معالجة الاستثناء.](images/tvm-exception-permissions.png)
+:::image type="content" source="images/tvm-exception-permissions.png" alt-text="إذن معالجة الاستثناء" lightbox="images/tvm-exception-permissions.png":::
 
 ## <a name="create-an-exception"></a>إنشاء استثناء
 
 حدد توصية أمان تريد إنشاء استثناء لها، ثم حدد **خيارات الاستثناء** وملء النموذج.
 
-![إظهار موقع زر "خيارات الاستثناء" في منار توصيات الأمان.](images/tvm-exception-options.png)
+:::image type="content" source="images/tvm-exception-options.png" alt-text="موقع الزر &quot;خيارات الاستثناء&quot; في منتحل توصيات الأمان" lightbox="images/tvm-exception-options.png":::
 
 ### <a name="exception-by-device-group"></a>استثناء حسب مجموعة الأجهزة
 
 تطبيق الاستثناء على كل مجموعات الأجهزة الحالية أو اختيار مجموعات أجهزة معينة. لن يتم تضمين مجموعات الأجهزة المستقبلية في الاستثناء. لن يتم عرض مجموعات الأجهزة التي لديها استثناء بالفعل في القائمة. إذا حددت مجموعات أجهزة معينة فقط، ستتغير حالة التوصية من "نشط" إلى "استثناء جزئي". ستتغير الحالة إلى "استثناء كامل" إذا حددت كل مجموعات الأجهزة.
 
-![إظهار منسدلة لمجموعة الأجهزة.](images/tvm-exception-device-group-500.png)
+:::image type="content" source="images/tvm-exception-device-group-500.png" alt-text="المجموعة المنسدلة &quot;الجهاز&quot;" lightbox="images/tvm-exception-device-group-500.png":::
 
 #### <a name="filtered-views"></a>طرق العرض التي تمت تصفيتها
 
@@ -63,27 +63,27 @@ ms.locfileid: "63575775"
 
 هذا هو الزر الذي تريد تصفيته حسب مجموعة الأجهزة على أي من صفحات إدارة المخاطر والثغرات الأمنية:
 
-![إظهار عامل تصفية مجموعات الأجهزة المحددة.](images/tvm-selected-device-groups.png)
+:::image type="content" source="images/tvm-selected-device-groups.png" alt-text="عامل تصفية مجموعات الأجهزة المحددة" lightbox="images/tvm-selected-device-groups.png":::
 
 طريقة عرض الاستثناء مع مجموعات الأجهزة التي تمت تصفيتها:
 
-![إظهار القائمة المنسدلة لمجموعة الأجهزة التي تمت تصفيتها.](images/tvm-exception-device-filter500.png)
+:::image type="content" source="images/tvm-exception-device-filter500.png" alt-text="القائمة المنسدلة لمجموعة الأجهزة التي تمت تصفيتها" lightbox="images/tvm-exception-device-filter500.png":::
 
 #### <a name="large-number-of-device-groups"></a>عدد كبير من مجموعات الأجهزة
 
 إذا كانت مؤسستك لديها أكثر من 20 مجموعة أجهزة، فحدد **تحرير** بجانب خيار مجموعة الأجهزة التي تمت تصفيتها.
 
-![إظهار كيفية تحرير أعداد كبيرة من المجموعات.](images/tvm-exception-edit-groups.png)
+:::image type="content" source="images/tvm-exception-edit-groups.png" alt-text="إجراء تحرير أعداد كبيرة من المجموعات" lightbox="images/tvm-exception-edit-groups.png":::
 
 ستظهر القائمة من خلال القائمة التي يمكنك البحث فيها واختيار مجموعات الأجهزة التي تريد تضمينها. حدد أيقونة علامة الاختيار أسفل بحث لتحديد/إلغاء تحديد الكل.
 
-![إظهار مجموعة أجهزة كبيرة من حولها.](images/tvm-exception-device-group-flyout-400.png)
+:::image type="content" source="images/tvm-exception-device-group-flyout-400.png" alt-text="مجموعة الأجهزة الكبيرة" lightbox="images/tvm-exception-device-group-flyout-400.png":::
 
 ### <a name="global-exceptions"></a>الاستثناءات العالمية
 
 إذا كانت لديك أذونات المسؤول العام، يمكنك إنشاء استثناء عام وإلغائه. يؤثر ذلك **على** كل مجموعات الأجهزة الحالية والمستقبلية في مؤسستك، ولن يتمكن من تغييره سوى المستخدم الذي له إذن مماثل. ستتغير حالة التوصية من "نشط" إلى "استثناء كامل".
 
-![إظهار خيار الاستثناء العام.](images/tvm-exception-global.png)
+:::image type="content" source="images/tvm-exception-global.png" alt-text="خيار الاستثناء العام" lightbox="images/tvm-exception-global.png":::
 
 بعض الأمور التي يجب تذكرها:
 
@@ -107,7 +107,7 @@ ms.locfileid: "63575775"
 
  حدد استثناء لفتح منزه مع مزيد من التفاصيل. ستضم مجموعة الاستثناءات لكل جهاز قائمة بكل مجموعة أجهزة يغطيها الاستثناء، والتي يمكنك تصديرها. يمكنك أيضا عرض التوصية ذات الصلة أو إلغاء الاستثناء.
 
-![إظهار علامة التبويب "استثناءات" في صفحة "المعالجة".](images/tvm-exception-view.png)
+:::image type="content" source="images/tvm-exception-view.png" alt-text="علامة التبويب &quot;استثناءات&quot; في صفحة &quot;المعالجة&quot;" lightbox="images/tvm-exception-view.png":::
 
 ## <a name="how-to-cancel-an-exception"></a>كيفية إلغاء استثناء
 
@@ -115,25 +115,25 @@ ms.locfileid: "63575775"
 
 لإلغاء الاستثناء لكل مجموعات الأجهزة أو استثناء عام، حدد الزر إلغاء **الاستثناء لكل مجموعات** الأجهزة. لن تتمكن من إلغاء الاستثناءات إلا لمجموعات الأجهزة التي تملك أذونات لها.
 
-![زر الإلغاء.](images/tvm-exception-cancel.png)
+:::image type="content" source="images/tvm-exception-cancel.png" alt-text="الزر &quot;إلغاء الأمر&quot;" lightbox="images/tvm-exception-cancel.png":::
 
 ### <a name="cancel-the-exception-for-a-specific-device-group"></a>إلغاء الاستثناء لمجموعة أجهزة معينة
 
 حدد مجموعة الأجهزة المحددة لإلغاء الاستثناء الخاص بها. ستظهر من خلال منير لمجموعة الأجهزة، كما يمكنك تحديد **إلغاء الاستثناء**.
 
-![إظهار كيفية تحديد مجموعة أجهزة معينة.](images/tvm-exception-device-group-hover.png)
+:::image type="content" source="images/tvm-exception-device-group-hover.png" alt-text="إجراء تحديد مجموعة أجهزة معينة" lightbox="images/tvm-exception-device-group-hover.png":::
 
 ## <a name="view-impact-after-exceptions-are-applied"></a>عرض التأثير بعد تطبيق الاستثناءات
 
 في صفحة الأمان التوصيات، حدد تخصيص **الأعمدة** وحدد المربعات للأجهزة المعرضة **(** بعد الاستثناءات) والتأثير **(بعد الاستثناءات)**.
 
-![إظهار خيارات تخصيص الأعمدة.](images/tvm-after-exceptions.png)
+:::image type="content" source="images/tvm-after-exceptions.png" alt-text="خيارات تخصيص الأعمدة" lightbox="images/tvm-after-exceptions.png":::
 
 يعرض عمود الأجهزة المعرضة (بعد الاستثناءات) الأجهزة المتبقية التي لا تزال عرضة لنقاط الضعف بعد تطبيق الاستثناءات. تتضمن مبررات الاستثناءات التي تؤثر على التعرض 'التحكم من جهة خارجية' و'تخفيف بديل'. لا تقلل التبريرات الأخرى من التعرض لجهاز، ولا تزال تعتبر مكشوفة.
 
 يظهر التأثير (بعد الاستثناءات) التأثير المتبقي على درجة التعرض للضوء أو الدرجة الآمنة بعد تطبيق الاستثناءات. تتضمن مبررات الاستثناءات التي تؤثر على النقاط "تحكم جهة خارجية" و"تخفيف بديل". لا تقلل التبريرات الأخرى من التعرض لجهاز، وبالتالي لا تتغير درجة التعرض للضوء والنتيجة الآمنة.
 
-![إظهار الأعمدة في الجدول.](images/tvm-after-exceptions-table.png)
+:::image type="content" source="images/tvm-after-exceptions-table.png" alt-text="الأعمدة في الجدول" lightbox="images/tvm-after-exceptions-table.png":::
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

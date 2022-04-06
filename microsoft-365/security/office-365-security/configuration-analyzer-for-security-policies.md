@@ -19,20 +19,20 @@ ms.custom: ''
 description: يمكن للمسؤولين التعرف على كيفية استخدام محلل التكوين للعثور على سياسات الأمان الموجودة أسفل الإعدادات في الحماية القياسية والحماية تقيد في سياسات الأمان المحددة مسبقا وإصلاحها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0acdf6d300984c00bb1b1b060d3e36562983ebca
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 459f44f29b89b2bbca6aa0f6847d0b4636647be6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63569538"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477050"
 ---
-# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>محلل التكوين لنهج الحماية في EOP و Microsoft Defender Office 365
+# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>محلل التكوين لنهج الحماية في EOP Microsoft Defender لـ Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 يوفر محلل التكوين في مدخل Microsoft 365 Defender موقع مركزي للعثور على سياسات الأمان وإصلاحها حيث توجد الإعدادات أسفل إعدادات الحماية القياسية وملف تعريف الحماية الصارم في سياسات الأمان التي تم تعيينها [مسبقا](preset-security-policies.md).
@@ -44,15 +44,15 @@ ms.locfileid: "63569538"
   - [سياسات مكافحة البرامج الضارة](configure-anti-malware-policies.md).
   - [سياسات مكافحة التصيد الاحتيالي ل EOP](set-up-anti-phishing-policies.md#spoof-settings).
 
-- **Microsoft Defender Office 365**: يشمل ذلك المؤسسات التي Microsoft 365 E5 اشتراكات الوظائف الإضافية أو Defender Office 365 الإضافية:
-  - سياسات مكافحة التصيد الاحتيالي في Microsoft Defender Office 365، والتي تتضمن:
+- **Microsoft Defender لـ Office 365:** يشمل ذلك المؤسسات التي Microsoft 365 E5 اشتراكات Defender لـ Office 365 الإضافية:
+  - سياسات مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365، والتي تتضمن:
     - الإعدادات [المنتحلة نفسها](set-up-anti-phishing-policies.md#spoof-settings) المتوفرة في سياسات مكافحة التصيد الاحتيالي في EOP.
     - [إعدادات انتحال](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [عتبات التصيد الاحتيالي المتقدمة](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
   - [خزينة الارتباطات.](set-up-safe-links-policies.md)
   - [خزينة المرفقات](set-up-safe-attachments-policies.md).
 
-يتم وصف قيم إعداد النهج القياسي والتقيدي المستخدمة كخطوط أساسية في الإعدادات المستحسنة ل [EOP و Microsoft Defender Office 365 الأمان](recommended-settings-for-eop-and-office365.md).
+يتم وصف قيم إعداد النهج القياسي والتقيدي المستخدمة كخطوط أساسية في الإعدادات المستحسنة [ل EOP Microsoft Defender لـ Office 365 الأمان](recommended-settings-for-eop-and-office365.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
@@ -85,15 +85,15 @@ ms.locfileid: "63569538"
 
 بشكل افتراضي، يتم فتح محلل التكوين على علامة **التبويب توصيات** قياسية. يمكنك التبديل إلى علامة **التبويب توصيات** صارمة. الإعدادات والتخطيط والإجراءات هي نفسها في كلتا علامات التبويب.
 
-![الإعدادات والتوصيات في محلل التكوين.](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+:::image type="content" source="../../media/configuration-analyzer-settings-and-recommendations-view.png" alt-text="طريقة الإعدادات والتوصيات في محلل التكوين" lightbox="../../media/configuration-analyzer-settings-and-recommendations-view.png":::
 
 يعرض المقطع الأول من علامة التبويب عدد الإعدادات في كل نوع من أنواع النهج التي تحتاج إلى تحسين مقارنة بالحماية القياسية أو الحماية تقيد. أنواع السياسات هي:
 
 - **مكافحة البريد العشوائي**
 - **مكافحة التصيد الاحتيالي**
 - **مكافحة البرامج الضارة**
-- **خزينة المرفقات** (إذا كان اشتراكك يتضمن Microsoft Defender Office 365)
-- **خزينة الارتباطات** (إذا كان اشتراكك يتضمن Microsoft Defender Office 365)
+- **خزينة المرفقات** (إذا كان اشتراكك يتضمن Microsoft Defender لـ Office 365)
+- **خزينة الارتباطات** (إذا كان اشتراكك يتضمن Microsoft Defender لـ Office 365)
 
 إذا لم يتم عرض نوع نهج أو رقم، فإن كل النهج من هذا النوع تفي بإعدادات الحماية القياسية أو الصارم الموصى بها.
 
@@ -148,4 +148,4 @@ ms.locfileid: "63569538"
 
 لتصفية النتائج **حسب قيمة معينة** تم تعديلها بواسطة أو **تعيين اسم** **أو نوع،** استخدم **المربع** بحث.
 
-![تحليل انحراف التكوين وعرض المحفوظات في محلل التكوين.](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
+:::image type="content" source="../../media/configuration-analyzer-configuration-drift-analysis-view.png" alt-text="تحليل الانجراف في التكوين وعرض المحفوظات في محلل التكوين" lightbox="../../media/configuration-analyzer-configuration-drift-analysis-view.png":::

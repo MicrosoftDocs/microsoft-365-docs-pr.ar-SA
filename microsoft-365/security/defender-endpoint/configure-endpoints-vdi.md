@@ -1,7 +1,7 @@
 ---
 title: أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة
-description: نشر حزمة التكوين على جهاز البنية الأساسية لسطح المكتب الظاهري (VDI) بحيث يتم تشغيلها في خدمة Microsoft Defender for Endpoint.
-keywords: تكوين جهاز البنية الأساسية لسطح المكتب الظاهري (VDI)، vdi، إدارة الأجهزة، تكوين Microsoft Defender لنقطة النهاية، نقاط النهاية
+description: نشر حزمة التكوين على جهاز البنية الأساسية لسطح المكتب الظاهري (VDI) بحيث يتم Microsoft Defender لنقطة النهاية الخدمة.
+keywords: تكوين جهاز البنية الأساسية لسطح المكتب الظاهري (VDI)، vdi، إدارة الأجهزة، تكوين Microsoft Defender لنقطة النهاية نقاط النهاية
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,19 +18,24 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 02/14/2022
 ms.technology: mde
-ms.openlocfilehash: 7342f368063c2c9024c4942c33a2e41f28eebd36
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: e292c2f1e0d01e51e3962b71a940927078ab95ad
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63583181"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634702"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة في Microsoft 365 Defender
+
+البنية الأساسية لسطح المكتب الظاهري (VDI) هو مفهوم البنية الأساسية ل IT الذي يسمح للمستخدمين بالوصول إلى مثيلات أسطح المكتب الظاهرية للمؤسسات من أي جهاز تقريبا (مثل الكمبيوتر الشخصي أو الهاتف الذكي أو الكمبيوتر اللوحي)، مما يلغي الحاجة إلى أن توفر المؤسسة للمستخدمين الأجهزة الفعلية. يقلل استخدام أجهزة VDI من التكلفة حيث لم تعد أقسام المعلومات مسؤولة عن إدارة نقاط النهاية الفعلية وإصلاحها واستبدالها. يمكن للمستخدمين المخولا الوصول إلى نفس خوادم الشركة وملفاتها وتطبيقاتها وخدماتها من أي جهاز معتمد من خلال عميل أو مستعرض آمن لسطح المكتب.
+
+مثل أي نظام آخر في بيئة تكنولوجيا المعلومات، يجب أن يكون لديهم أيضا حل الكشف عن نقطة النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) والحماية من الفيروسات للحماية من التهديدات ولهجمات متقدمة.
+
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - أجهزة البنية الأساسية لسطح المكتب الظاهرية (VDI)
 - Windows 10، Windows 11، Windows Server 2019، Windows Server 2022، Windows Server 2008R2/2012R2/2016
@@ -38,25 +43,27 @@ ms.locfileid: "63583181"
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **VDI الثابتة** -  [يتم التعامل مع](configure-endpoints.md) تشغيل تشغيل جهاز VDI ثابت في Microsoft Defender لنقطة النهاية بالطريقة نفسها التي يتم بها تشغيل جهاز فعلي، مثل كمبيوتر سطح المكتب أو الكمبيوتر المحمول. يمكن استخدام نهج إدارة نقاط النهاية من Microsoft والأساليب الأخرى ل متن جهاز ثابت. في Microsoft 365 Defender، (https://security.microsoft.com)ضمن التكهين، حدد أسلوب التكهين المفضل لديك، واتبع الإرشادات الخاصة بهذا النوع. 
+  > **VDI الثابتة** -  [يتم التعامل مع Microsoft Defender لنقطة النهاية جهاز VDI](configure-endpoints.md) ثابت في الكمبيوتر بالطريقة نفسها التي يتم بها تشغيل جهاز فعلي، مثل كمبيوتر سطح المكتب أو الكمبيوتر المحمول. يمكن استخدام نهج إدارة نقاط النهاية من Microsoft والأساليب الأخرى ل متن جهاز ثابت. في Microsoft 365 Defender، (https://security.microsoft.com)ضمن التكهين، حدد أسلوب التكهين المفضل لديك، واتبع الإرشادات الخاصة بهذا النوع. 
 
 ## <a name="onboarding-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>تشغيل أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة
 
 يدعم Defender ل Endpoint التكديس غير الدائم لجلسة VDI.
 
-قد تكون هناك تحديات مقترنة عند تكديس VDIs. فيما يلي تحديات نموذجية لهذا السيناريو:
+قد تكون هناك تحديات مقترنة عند تكديس مثيلات VDI. فيما يلي تحديات نموذجية لهذا السيناريو:
 
 - التكوين المبكر لجلسة قصيرة، يجب أن يتم ا متنها إلى Defender لنقطة النهاية قبل توفيرها الفعلي.
 - تتم إعادة استخدام اسم الجهاز عادة لجلسات العمل الجديدة.
 
-يمكن أن تظهر أجهزة VDI في مدخل Defender for Endpoint كما يلي:
+في بيئة VDI، يمكن أن يكون لمثيلات VDI عمر قصير. يمكن أن تظهر أجهزة VDI في مدخل Defender for Endpoint كما يلي:
 
-- إدخال واحد لكل جهاز.
+
+- إدخال مدخل واحد لكل مثيل من مثيلات VDI. إذا تم بالفعل تهيئة مثيل VDI Microsoft Defender لنقطة النهاية ثم تم حذفه في مرحلة ما ثم تم إعادة إنشائه بنفس اسم المضيف، لن يتم إنشاء كائن جديد يمثل مثيل VDI هذا في المدخل. 
+
 
   > [!NOTE]
   > في هذه الحالة *، يجب تكوين* اسم الجهاز نفسه عند إنشاء جلسة العمل، على سبيل المثال باستخدام ملف إجابة غير معتين.
 
-- إدخالات متعددة لكل جهاز - إدخال لكل جلسة عمل.
+- إدخالات متعددة لكل جهاز - واحدة لكل مثيل VDI.
 
 سترشدك الخطوات التالية عبر أجهزة VDI التي تقوم ب التكديس، كما ستسلط الضوء على خطوات الإدخالات الفردية والمتعددة.
 
@@ -83,12 +90,12 @@ ms.locfileid: "63583181"
     2. إذا كنت تقوم بتنفيذ إدخال واحد لكل جهاز، انسخ كل من Onboard-NonPersistentMachine.ps1 و WindowsDefenderATPOnboardingScript.cmd.
 
     > [!NOTE]
-    > إذا لم تشاهد المجلد، `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` فقد يكون مخفيا. ستحتاج إلى اختيار الخيار **إظهار الملفات والمجلدات** المخفية من مستكشف الملفات.
+    > إذا لم تشاهد المجلد، `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` فقد يكون مخفيا. ستحتاج إلى اختيار الخيار إظهار **الملفات والمجلدات** المخفية من مستكشف الملفات.
 
-3. افتح نافذة محرر نهج المجموعة المحلية وانتقل إلى **تكوين** \>  \> الكمبيوتر Windows الإعدادات **بدء تشغيل** \> **البرامج النصية**.
+3. افتح نافذة محرر نهج المجموعة المحلي وانتقل إلى **تكوين** \>  \> الكمبيوتر Windows الإعدادات **بدء تشغيل** \> **البرامج النصية**.
 
    > [!NOTE]
-   > يمكن أيضا استخدام نهج مجموعة المجالات لتكديس أجهزة VDI غير الثابتة.
+   > قد نهج المجموعة المجال أيضا لتكديس أجهزة VDI غير الثابتة.
 
 4. استنادا إلى الأسلوب الذي تريد تنفيذه، اتبع الخطوات المناسبة:
     - للحصول على إدخال واحد لكل جهاز:
@@ -115,7 +122,7 @@ ms.locfileid: "63583181"
 ## <a name="for-downlevel-skus-windows-server-2008-r2"></a>بالنسبة إلى SKUs على المستوى Windows Server 2008 R2)
 
 > [!NOTE]
-> تنطبق هذه الإرشادات لإصدارات خوادم Windows الأخرى أيضا إذا كنت تقوم بتشغيل Microsoft Defender السابق لنقطة النهاية ل Windows Server 2016 و Windows Server 2012 R2 الذي يتطلب MMA. توجد إرشادات الترحيل إلى الحل الموحد الجديد في سيناريوهات [ترحيل الخادم في Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/server-migration).
+> تنطبق هذه الإرشادات لإصدارات خوادم Windows الأخرى أيضا إذا كنت تقوم بتشغيل الإصدار Microsoft Defender لنقطة النهاية السابق ل Windows Server 2016 و Windows Server 2012 R2 الذي يتطلب MMA. توجد إرشادات الترحيل إلى الحل الموحد الجديد في سيناريوهات ترحيل الخادم [في Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > يكون السجل التالي ذا صلة فقط عندما يكون الهدف هو تحقيق 'إدخال واحد لكل جهاز'.
@@ -178,8 +185,8 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 5. يمكنك إعادة ازاله الصورة الذهبية/الرئيسية كما تريد عادة.
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
-- [أجهزة Windows باستخدام "نهج المجموعة"](configure-endpoints-gp.md)
+- [أجهزة Windows باستخدام نهج المجموعة](configure-endpoints-gp.md)
 - [أجهزة Windows التي تستخدم Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [أجهزة Windows الأجهزة باستخدام أدوات إدارة أجهزة المحمول](configure-endpoints-mdm.md)
+- [أجهزة Windows باستخدام أدوات الأجهزة المحمولة إدارة الجهاز المحمول](configure-endpoints-mdm.md)
 - [أجهزة Windows باستخدام برنامج نصي محلي](configure-endpoints-script.md)
-- [استكشاف مشاكل تشغيل نقطة النهاية وإصلاحها في Microsoft Defender](troubleshoot-onboarding.md)
+- [استكشاف مشاكل Microsoft Defender لنقطة النهاية في الحافظة وإصلاحها](troubleshoot-onboarding.md)

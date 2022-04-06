@@ -1,7 +1,7 @@
 ---
 title: التبديل إلى Microsoft Defender لنقطة النهاية - التحضير
 description: استعد للتبديل إلى Microsoft Defender لنقطة النهاية. قم بتحديث أجهزتك وتكوين اتصالات الشبكة.
-keywords: الترحيل، Microsoft Defender ل Endpoint، أفضل الممارسات
+keywords: الترحيل، Microsoft Defender لنقطة النهاية أفضل الممارسات
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -23,21 +23,21 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: d9d122c9d114aa135eb2a82e1168eabec2aeec7b
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: aa0bd45c1765e2aa794e00e437bf08a63d1d742f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "63578570"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476720"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>التبديل إلى Microsoft Defender لنقطة النهاية - المرحلة 1: التحضير
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| ![المرحلة 1: التحضير.](images/phase-diagrams/prepare.png)<br/>المرحلة 1: التحضير | [![المرحلة الثانية: إعداد](images/phase-diagrams/setup.png)](switch-to-mde-phase-2.md)<br/>[المرحلة الثانية: إعداد](switch-to-mde-phase-2.md) | [![المرحلة 3: Onboard](images/phase-diagrams/onboard.png)](switch-to-mde-phase-3.md)<br/>[المرحلة 3: Onboard](switch-to-mde-phase-3.md) |
+| ![المرحلة 1: التحضير.](images/phase-diagrams/prepare.png#lightbox)<br/>المرحلة 1: التحضير | [![المرحلة الثانية: إعداد](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[المرحلة الثانية: إعداد](switch-to-mde-phase-2.md) | [![المرحلة 3: Onboard](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[المرحلة 3: Onboard](switch-to-mde-phase-3.md) |
 |--|--|--|
 |*أنت هنا!*| | |
 
@@ -74,7 +74,7 @@ ms.locfileid: "63578570"
 |Android|[التحقق & تحديث إصدار Android](https://support.google.com/android/answer/7680439)|
 |Linux|[Linux 101: تحديث النظام](https://www.linux.com/training-tutorials/linux-101-updating-your-system)|
 
-## <a name="get-microsoft-defender-for-endpoint"></a>الحصول على Microsoft Defender لنقطة النهاية
+## <a name="get-microsoft-defender-for-endpoint"></a>الحصول Microsoft Defender لنقطة النهاية
 
 الآن وقد قمت بتحديث أجهزة مؤسستك، الخطوة التالية هي الحصول على Defender for Endpoint وتعيين التراخيص والتأكد من توفير الخدمة.
 

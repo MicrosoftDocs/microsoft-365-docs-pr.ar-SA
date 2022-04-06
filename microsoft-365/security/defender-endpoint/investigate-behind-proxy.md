@@ -1,6 +1,6 @@
 ---
 title: التحقق من أحداث الاتصال التي تحدث خلف نيات إعادة توجيه
-description: تعرف على كيفية استخدام مراقبة مستوى HTTP المتقدمة من خلال حماية الشبكة في Microsoft Defender ل Endpoint، مما يؤدي إلى سطوح هدف حقيقي بدلا من وكيل.
+description: تعرف على كيفية استخدام مراقبة متقدمة لمستوى HTTP من خلال حماية الشبكة في Microsoft Defender لنقطة النهاية، مما يؤدي إلى سطوح هدف حقيقي، بدلا من وكيل.
 keywords: الوكيل، حماية الشبكة، الوكيل إعادة توجيه، أحداث الشبكة، التدقيق، الحظر، أسماء المجالات، المجال
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,19 +15,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c0a2bdab641f0289975f1d8475627d3066ecf1f8
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 580f41c24d6d78fb9e5ac7e20eb80e6ae78a505b
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63572356"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469790"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>التحقق من أحداث الاتصال التي تحدث خلف نيات إعادة توجيه
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatemachines-abovefoldlink)
@@ -58,13 +58,13 @@ ms.locfileid: "63572356"
 
 عند تشغيل حماية الشبكة، سترى أنه على المخطط الزمني لجهاز ما، سيبقى عنوان IP يمثل الوكيل، بينما يظهر العنوان الهدف الحقيقي.
 
-![صورة أحداث الشبكة على المخطط الزمني للجهاز.](images/atp-proxy-investigation.png)
+:::image type="content" source="images/atp-proxy-investigation.png" alt-text="أحداث الشبكة على المخطط الزمني للجهاز" lightbox="images/atp-proxy-investigation.png":::
 
 تتوفر الآن الأحداث الأخرى التي يتم تشغيلها بواسطة طبقة حماية الشبكة لسطح أسماء المجالات الحقيقية حتى خلف وكيل.
 
 معلومات الحدث:
 
-![صورة حدث شبكة واحد.](images/atp-proxy-investigation-event.png)
+:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="عناوين URL لحدث شبكة واحد" lightbox="images/atp-proxy-investigation-event.png":::
 
 ## <a name="hunt-for-connection-events-using-advanced-hunting"></a>البحث عن أحداث الاتصال باستخدام الصيد المتقدم
 
@@ -78,7 +78,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-![صورة استعلام بحث متقدم.](images/atp-proxy-investigation-ah.png)
+:::image type="content" source="images/atp-proxy-investigation-ah.png" alt-text="استعلام البحث المتقدم" lightbox="images/atp-proxy-investigation-ah.png":::
 
 يمكنك أيضا تصفية الأحداث المرتبطة بالاتصال بالوكيل نفسه.
 

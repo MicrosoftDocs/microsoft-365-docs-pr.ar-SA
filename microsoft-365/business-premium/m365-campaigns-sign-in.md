@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: سجل الدخول إلى Microsoft 365. حماية أعمالك أو ممارساتك أو حملتك من تهديدات الأمان الإلكتروني إلى البريد الإلكتروني والبيانات والتواصل.
-ms.openlocfilehash: c8f1c8e0ad9715bd50c38920b8a2687a96b88915
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: da371abd17906ea53242c8679cf1d3c4f9b69861
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63580039"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634042"
 ---
 # <a name="sign-in-to-microsoft-365-business-premium"></a>سجل الدخول إلى Microsoft 365 Business Premium
 
@@ -37,11 +37,17 @@ ms.locfileid: "63580039"
 إذا قمت Microsoft 365، أنت المسؤول Microsoft 365. فيما يلي كيفية تسجيل الدخول:
 
 1. ابحث عن اسم المستخدم وكلمة المرور التي أرسلناها إلى عنوان البريد الإلكتروني الذي منحتنا إياه في الخطوة 2 من [خطوات التسجيل](m365-campaigns-sign-up.md#steps-to-sign-up).
+
 2. في المستعرض، انتقل إلى مركز مسؤولي Microsoft 365 في <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
+
 3. اكتب اسم المستخدم وكلمة المرور. حدد **تسجيل الدخول**.
+
 4. في الجزء العلوي الأيمن من الصفحة، ابحث عن **عنصر التحكم Preview عند** التحكم. حدد **معاينة حتى** تتمكن من استخدام كل عناصر التحكم الموضحة في [الحماية من النتوء لحملتك](m365-campaigns-security-overview.md).
 
 ## <a name="for-staff"></a>للموظفين
 
-إعداد فريق العمل كما هو موضح في [إضافة مستخدمين](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json) يمكنك أيضا إعادة تعيين كلمات المرور وإعادة إرسالها على **الصفحة إضافة** مستخدمين.
+إعداد فريق العمل كما هو موضح في [إضافة مستخدمين](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json)
+
+يمكنك أيضا إعادة تعيين كلمات المرور وإعادة إرسالها على **الصفحة إضافة** مستخدمين.
+
 يمكن لجميع الموظفين تسجيل الدخول في <a href="https://office.com" target="_blank">https://Office.com</a>.

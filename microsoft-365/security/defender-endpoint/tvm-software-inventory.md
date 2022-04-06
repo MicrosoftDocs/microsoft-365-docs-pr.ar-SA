@@ -1,7 +1,7 @@
 ---
 title: مخزون البرامج في إدارة المخاطر والثغرات الأمنية
-description: تعرض صفحة مخزون البرامج ل Microsoft Defender لنقطة النهاية إدارة المخاطر والثغرات الأمنية عدد نقاط الضعف والثغرات التي تم الكشف عنها في البرامج.
-keywords: إدارة المخاطر والثغرات الأمنية Microsoft Defender ل Endpoint و Microsoft Defender لمخزون برامج نقطة النهاية و Microsoft Defender ل نقطة النهاية & إدارة الثغرات الأمنية و Microsoft Defender ل نقطة النهاية & إدارة الثغرات الأمنية  مخزون البرامج، Microsoft Defender ل Endpoint tvm، مخزون برامج tvm
+description: تعرض صفحة مخزون البرامج Microsoft Defender لنقطة النهاية الخاصة إدارة المخاطر والثغرات الأمنية عدد نقاط الضعف والنقاط الضعف التي تم اكتشافها في البرامج.
+keywords: إدارة المخاطر والثغرات الأمنية، Microsoft Defender لنقطة النهاية، Microsoft Defender لنقطة النهاية البرامج، Microsoft Defender لنقطة النهاية على & إدارة الثغرات الأمنية Microsoft Defender لنقطة النهاية، & إدارة الثغرات الأمنية مخزون البرامج، Microsoft Defender لنقطة النهاية من مخزون برامج tvm ومخزون برامج tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e6bf614730caa9060a334c0a01c2dfe64b24df78
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cbd4634e779fe2bf853aaf014b59b1e7e1c1928f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570472"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470032"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>مخزون البرامج - إدارة المخاطر والثغرات الأمنية
 
@@ -30,7 +30,7 @@ ms.locfileid: "63570472"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [التهديدات إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -47,7 +47,7 @@ ms.locfileid: "63570472"
 
 ## <a name="how-it-works"></a>كيفية عمل ذلك
 
-في مجال الاكتشاف، نحن نستفيد من مجموعة الإشارات نفسها المسؤولة عن الكشف وتقييم الضعف في Microsoft Defender لإمكانيات الكشف عن نقاط النهاية [والاستجابة لها](overview-endpoint-detection-response.md).
+في مجال الاكتشاف، نحن نستفيد من مجموعة الإشارات نفسها المسؤولة عن الكشف وتقييم الضعف في Microsoft Defender لنقطة النهاية الكشف [والاستجابة](overview-endpoint-detection-response.md).
 
 نظرا لأنه في الوقت الحقيقي، في غضون دقائق، سترى معلومات الثغرة الأمنية عند اكتشافها. يلتقط المحرك تلقائيا المعلومات من موجزات أمان متعددة. في الواقع، سترى ما إذا كان هناك برنامج معين متصل لحملة تهديدات مباشرة. كما يوفر أيضا ارتباط إلى تقرير تحليل المخاطر فور توفره.
 
@@ -58,7 +58,7 @@ ms.locfileid: "63570472"
 عرض البرامج على أجهزة معينة في صفحات الأجهزة الفردية من [قائمة الأجهزة](machines-view-overview.md).
 
 > [!NOTE]
-> إذا كنت تبحث عن برنامج باستخدام البحث العام ل Microsoft Defender ل Endpoint، فتأكد من وضع نقطة  تحتية بدلا من مسافة. على سبيل المثال، للحصول على أفضل نتائج البحث، ستكتب "windows_10" أو "windows_11" بدلا من "Windows 10" أو "Windows 11".
+> إذا كنت تبحث عن برنامج باستخدام Microsoft Defender لنقطة النهاية بحث شامل، فتأكد من وضع د أسفل أسفل بدلا من مسافة. على سبيل المثال، للحصول على أفضل نتائج البحث، ستكتب "windows_10" أو "windows_11" بدلا من "Windows 10" أو "Windows 11".
 
 ## <a name="software-inventory-overview"></a>نظرة عامة حول مخزون البرامج
 
@@ -66,7 +66,7 @@ ms.locfileid: "63570472"
 
 بشكل افتراضي، يتم تصفية طريقة العرض حسب **رمز المنتج (CPE): متوفر**. يمكنك أيضا تصفية طريقة عرض القائمة استنادا إلى نقاط الضعف الموجودة في البرنامج، والتهديدات المقترنة بها، والعلامات مثل ما إذا كان البرنامج قد وصل إلى نهاية الدعم أم لا.
 
-:::image type="content" alt-text="مثال على الصفحة المنتقل عليها لمخزون البرامج." source="images/software-inventory-page.png" lightbox="images/tvm-software-inventory.png":::
+:::image type="content" source="images/tvm-software-inventory.png" alt-text="الصفحة المنتقل الهاد إلى مخزون البرامج" lightbox="images/tvm-software-inventory.png":::
 
 حدد البرنامج الذي تريد التحقق منه. سيتم فتح لوحة منفتحة مع طريقة عرض أكثر ضغطا للمعلومات على الصفحة. يمكنك إما التعمق أكثر في التحقيق وتحديد **فتح** صفحة البرنامج، أو وضع علامة على أي حالات عدم تناسق تقنية عن طريق تحديد تقرير **غير دقة**.
 
@@ -74,7 +74,7 @@ ms.locfileid: "63570472"
 
 قد تكون البرامج غير المدعومة حاليا بواسطة & إدارة الثغرات الأمنية موجودة في صفحة مخزون البرامج. ونظرا لعدم دعمه، لن تتوفر سوى بيانات محدودة. التصفية حسب البرنامج غير المتوفر باستخدام الخيار "غير متوفر" في المقطع "ضعف".
 
-:::image type="content" alt-text="عامل تصفية البرامج غير معتمد." source="images/tvm-unsupported-software-filter.png" lightbox="images/tvm-unsupported-software-filter.png":::
+:::image type="content" source="images/tvm-unsupported-software-filter.png" alt-text="عامل تصفية البرامج غير الم معتمد" lightbox="images/tvm-unsupported-software-filter.png":::
 
 يشير ما يلي إلى أن البرامج غير معتمدة:
 
@@ -97,7 +97,7 @@ ms.locfileid: "63570472"
 
 حدد اسم برنامج لفتح الجزء المناير، وابحث عن المقطع الذي يسمى "دليل البرامج".
 
-:::image type="content" alt-text="مثال على دليل البرنامج Windows 10 من قائمة الأجهزة، يعرض مسار تسجيل أدلة البرامج." source="images/tvm-software-evidence.png" lightbox="images/tvm-software-evidence.png":::
+:::image type="content" source="images/tvm-software-evidence.png" alt-text="القائمة Windows 10 من قائمة الأجهزة" lightbox="images/tvm-software-evidence.png":::
 
 ## <a name="software-pages"></a>صفحات البرامج
 
@@ -117,7 +117,7 @@ ms.locfileid: "63570472"
   - الأجهزة التي تم تثبيت البرنامج فيها (إلى جانب اسم الجهاز والمجال OS والمزيد).
   - قائمة إصدارات البرامج (بما في ذلك عدد الأجهزة التي تم تثبيت الإصدار عليها وعدد الثغرات التي تم اكتشافها وأسماء الأجهزة المثبتة).
 
-    :::image type="content" alt-text="صفحة أمثلة البرامج Visual Studio 2017 مع تفاصيل البرنامج ونقاط الضعف والأجهزة التي يتم عرضها والمزيد." source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
+    :::image type="content" source="images/tvm-software-page-example.png" alt-text="يعرض Visual Studio 2017 مع تفاصيل البرنامج ونقاط الضعف والأجهزة التي يتم عرضها والمزيد" lightbox="images/tvm-software-page-example.png":::
 
 ## <a name="report-inaccuracy"></a>عدم دقة التقرير
 
@@ -142,4 +142,4 @@ ms.locfileid: "63570472"
 - [نظرة عامة إدارة الثغرات الأمنية المخاطر](next-gen-threat-and-vuln-mgt.md)
 - [توصيات الأمان](tvm-security-recommendation.md)
 - [المخطط الزمني للحدث](threat-and-vuln-mgt-event-timeline.md)
-- [عرض قائمة Microsoft Defender لأجهزة نقطة النهاية وتنظيمها](machines-view-overview.md)
+- [عرض قائمة Microsoft Defender لنقطة النهاية الأجهزة وتنظيمها](machines-view-overview.md)

@@ -1,7 +1,7 @@
 ---
 title: التحكم في الجهاز ل macOS
-description: تعرف على كيفية تكوين Microsoft Defender ل Endpoint على Mac لتقليل التهديدات من التخزين القابل للإزالة مثل أجهزة USB.
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، mac، الجهاز، التحكم، usb، قابل للإزالة، الوسائط
+description: تعرف على كيفية تكوين Microsoft Defender لنقطة النهاية Mac لتقليل التهديدات من التخزين القابل للإزالة مثل أجهزة USB.
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، جهاز، عنصر تحكم، usb، قابل للإزالة، وسائط
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -15,20 +15,20 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cb41b0bd3f185237055daa2d282f0a1d6975a49
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: fbe693272a2f2893dff5f8614f3f9eff301069fd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63569842"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477292"
 ---
 # <a name="device-control-for-macos"></a>التحكم في الجهاز ل macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -39,7 +39,7 @@ ms.locfileid: "63569842"
 
 > [!div class="checklist"]
 >
-> - استحقاق Microsoft Defender لنقطة النهاية (يمكن أن يكون تجريبيا)
+> - Microsoft Defender لنقطة النهاية الاستحقاق (يمكن أن يكون تجريبيا)
 > - الحد الأدنى من إصدار نظام التشغيل: macOS 11 أو إصدار أحدث
 > - الحد الأدنى للإصدار: 101.34.20
 
@@ -72,7 +72,7 @@ ms.locfileid: "63569842"
 
 عندما يتم فرض نهج التحكم في الجهاز الذي وضعته على جهاز (على سبيل المثال، يكون الوصول إلى جهاز وسائط قابل للإزالة مقيدا)، يتم عرض إعلام للمستخدم.
 
-![إعلام التحكم في الجهاز.](images/mac-device-control-notification.png)
+:::image type="content" source="images/mac-device-control-notification.png" alt-text="إعلام التحكم في الجهاز" lightbox="images/mac-device-control-notification.png":::
 
 عندما ينقر المستخدمون فوق هذا الإعلام، يتم فتح صفحة ويب في المستعرض الافتراضي. يمكنك تكوين عنوان URL الذي يتم فتحه عندما ينقر المستخدمون فوق الإعلام.
 
@@ -340,25 +340,26 @@ ms.locfileid: "63569842"
 1. قم بتوصيل جهاز USB الذي تريد البحث عن المعرف الخاص به.
 1. في قائمة المستوى الأعلى من macOS، حدد **حول هذا Mac**.
 
-    ![حول جهاز Mac هذا.](images/mac-device-control-lookup-1.png)
+   :::image type="content" source="images/mac-device-control-lookup-1.png" alt-text="صفحة حول جهاز Mac هذا" lightbox="images/mac-device-control-lookup-1.png":::
 
 1. حدد **تقرير النظام**.
 
-    ![تقرير النظام.](images/mac-device-control-lookup-2.png)
+   :::image type="content" source="images/mac-device-control-lookup-2.png" alt-text="تقرير النظام" lightbox="images/mac-device-control-lookup-2.png":::
 
 1. من العمود الأيمن، حدد **USB**.
 
-    ![عرض جميع أجهزة USB.](images/mac-device-control-lookup-3.png)
+   :::image type="content" source="images/mac-device-control-lookup-3.png" alt-text="طريقة عرض جميع أجهزة USB" lightbox="images/mac-device-control-lookup-3.png":::
+    
 
 1. ضمن **شجرة أجهزة USB**، انتقل إلى جهاز USB الذي قمت بتوصيله.
 
-    ![تفاصيل جهاز USB.](images/mac-device-control-lookup-4.png)
+   :::image type="content" source="images/mac-device-control-lookup-4.png" alt-text="تفاصيل جهاز USB" lightbox="images/mac-device-control-lookup-4.png":::
 
 1. يتم عرض "معرِّف المورد" و"معرِّف المنتج" و"الرقم التسلسلي". عند إضافة "معرِّف المورد" و"معرِّف المنتج" إلى نهج الوسائط القابلة للإزالة، يجب إضافة الجزء بعد .`0x` على سبيل المثال، في الصورة أدناه، يكون "مورد" `1000` هو "مورد" وم ID المنتج هو `090c`.
 
 #### <a name="discover-usb-devices-in-your-organization"></a>اكتشاف أجهزة USB في مؤسستك
 
-يمكنك عرض أحداث تغيير الصوت والدفع والتركيب التي تنشأ من أجهزة USB في Microsoft Defender للصيد المتقدم لنقطة النهاية. يمكن أن تكون هذه الأحداث مفيدة لتحديد نشاط استخدام مريب أو إجراء عمليات تحقيق داخلية.
+يمكنك عرض أحداث تغيير الصوت والفرز والتركيب التي تنشأ من أجهزة USB في Microsoft Defender لنقطة النهاية متقدمة. يمكن أن تكون هذه الأحداث مفيدة لتحديد نشاط استخدام مريب أو إجراء عمليات تحقيق داخلية.
 
 ```bash
 DeviceEvents
@@ -368,7 +369,7 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>نشر نهج التحكم في الجهاز
 
-يجب تضمين نهج التحكم في الجهاز بجانب إعدادات المنتج الأخرى، كما هو موضح في تعيين التفضيلات ل [Microsoft Defender ل Endpoint على macOS](mac-preferences.md).
+يجب تضمين نهج التحكم في الجهاز بجانب إعدادات المنتج الأخرى، كما هو موضح في تعيين تفضيلات Microsoft Defender لنقطة النهاية [macOS](mac-preferences.md).
 
 يمكن نشر ملف التعريف هذا باستخدام الإرشادات المدرجة في [نشر ملف تعريف التكوين](mac-preferences.md#configuration-profile-deployment).
 

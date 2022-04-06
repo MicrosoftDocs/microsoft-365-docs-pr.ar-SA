@@ -19,12 +19,12 @@ ms.custom: ''
 description: تعرف على متعقبات التهديدات، بما في ذلك "متعقبات الجديرة بالملاحظة" الجديدة، لمساعدة مؤسستك على البقاء على علم باخطار الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9015e94869db88be750ca522173a0dc6d55383e7
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: d9adc6cd356187a8dbbb35719ab9b8e96499c8bd
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632788"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468976"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>متعقبات التهديدات - جديدة و جديرة بالملاحظة
 
@@ -49,9 +49,9 @@ ms.locfileid: "64632788"
 
 :::image type="content" source="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png" alt-text="مثال حول معلومات الحملة في المستكشف" lightbox="../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png":::
 
-إن المتعقبات ليست سوى بعض الميزات الرائعة التي تحصل عليها Microsoft Defender لـ Office 365 [الخطة 2](office-365-ti.md). تتضمن "متعقبات التهديدات" المتعقبات الجديرة [بالملاحظة](#noteworthy-trackers) ومتعقبات الاتجاهات [والاستعلامات](#tracked-queries) المتعقبة [والاستعلامات المحفوظة](#saved-queries). [](#trending-trackers)
+إن المتعقبات ليست سوى بعض الميزات الرائعة التي تحصل عليها Microsoft Defender لـ Office 365 [الخطة 2](office-365-ti.md). تتضمن "متعقبات التهديدات" [متعقبات جديرة بالملاحظة](#noteworthy-trackers) ومتعقبات [الاتجاهات](#trending-trackers) [والاستعلامات](#tracked-queries) المتعقبة [والاستعلامات المحفوظة](#saved-queries).
 
-لعرض متعقبات <https://security.microsoft.com>التهديدات واستخدامها لمنظمتك، افتح مدخل Microsoft 365 Defender في ، واذهب إلى البريد الإلكتروني & **متعقب** \> التهديدات **للتعاون**. الانتقال مباشرة إلى صفحة تعقب **التهديدات** ، استخدم <https://security.microsoft.com/threattrackerv2>.
+لعرض متعقبات <https://security.microsoft.com>التهديدات واستخدامها لمنظمتك، افتح مدخل Microsoft 365 Defender في ، واذهب إلى البريد الإلكتروني & **متعقب** \> التهديدات **للتعاون**. الانتقال مباشرة إلى صفحة تعقب **التهديدات** ، استخدم <https://security.microsoft.com/threattracker>.
 
 > [!NOTE]
 > لاستخدام "متعقبات التهديدات"، يجب أن تكون مسؤولا عاما أو مسؤول أمان أو قارئ أمان. راجع [الأذونات في Microsoft 365 Defender المدخل](permissions-microsoft-365-security-center.md).
@@ -64,7 +64,7 @@ ms.locfileid: "64632788"
 
 ### <a name="trending-trackers"></a>متعقبات الاتجاهات
 
-تسلط متعقبات الاتجاهات (التي كانت تسمى سابقا الحملات) الضوء على التهديدات الجديدة التي تم تلقيها في البريد الإلكتروني الخاص مؤسستك في الأسبوع الماضي. توفر طريقة العرض "متعقبات الاتجاهات" تقييمات ديناميكية للتهديدات التي تشكلها رسائل البريد الإلكتروني التي تؤثر على بيئة Office 365 مؤسستك. تظهر طريقة العرض هذه اتجاهات البرامج الضارة على مستوى المستأجر، مع تحديد عائلات البرامج الضارة المتصاعدة أو المسطحة أو المتناقصة، مما يمنح المسؤولين معرفة أكثر عن التهديدات التي تتطلب مزيدا من الانتباه.
+تسلط متعقبات الاتجاهات (التي كانت تسمى سابقا الحملات) الضوء على التهديدات الجديدة التي تم تلقيها في البريد الإلكتروني الخاص مؤسستك في الأسبوع الماضي.
 
 :::image type="content" source="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png" alt-text="مثال عنصر واجهة مستخدم حملات البرامج الضارة الأكثر استخداما" lightbox="../../media/d2ccc1a0-2a1d-4e36-99b5-6766c207772f.png":::
 

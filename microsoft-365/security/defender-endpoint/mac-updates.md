@@ -1,7 +1,7 @@
 ---
-title: نشر تحديثات ل Microsoft Defender لنقطة النهاية على Mac
-description: يمكنك التحكم في تحديثات Microsoft Defender لنقطة النهاية على Mac في بيئات المؤسسات.
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، mac، التحديثات، النشر
+title: نشر التحديثات Microsoft Defender لنقطة النهاية Mac
+description: التحكم في التحديثات Microsoft Defender لنقطة النهاية Mac في بيئات المؤسسات.
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، التحديثات، النشر
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,32 +15,32 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ceff362daeb2054b6037ea0eecbeafbb9dbed4f3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 0b9ddf9693a242b3b8c466cfa1616b62c5eb73b9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63571515"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469284"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>نشر تحديثات ل Microsoft Defender ل Endpoint على macOS
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>نشر تحديثات Microsoft Defender لنقطة النهاية macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
 
-- [Microsoft Defender ل Endpoint على macOS](microsoft-defender-endpoint-mac.md)
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية على macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 تنشر Microsoft تحديثات البرامج بشكل منتظم لتحسين الأداء والأمان وتقديم ميزات جديدة.
 
-لتحديث Microsoft Defender ل Endpoint على macOS، يتم استخدام برنامج يسمى التحديث التلقائي ل Microsoft (MAU). بشكل افتراضي، يتحقق MAU تلقائيا من وجود تحديثات يوميا، ولكن يمكنك تغيير ذلك إلى أسبوعيا أو شهريا أو يدويا.
+لتحديث Microsoft Defender لنقطة النهاية macOS، يتم استخدام برنامج يسمى التحديث التلقائي ل Microsoft (MAU). بشكل افتراضي، يتحقق MAU تلقائيا من وجود تحديثات يوميا، ولكن يمكنك تغيير ذلك إلى أسبوعيا أو شهريا أو يدويا.
 
-![لقطة شاشة ل MAU.](images/MDATP-34-MAU.png)
+:::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
 
 إذا قررت نشر التحديثات باستخدام أدوات توزيع البرامج، يجب تكوين MAU للتحقق يدويا من وجود تحديثات البرامج. يمكنك نشر التفضيلات لتكوين كيفية و متى يتحقق MAU من وجود تحديثات ل Mac في مؤسستك.
 
@@ -48,7 +48,7 @@ ms.locfileid: "63571515"
 
 تتضمن MAU أداة سطر الأوامر، تسمى *msupdate*، تم تصميمها لمسؤولي تكنولوجيا المعلومات بحيث يكون لديهم تحكم أكثر دقة في وقت تطبيق التحديثات. يمكن العثور على إرشادات حول كيفية استخدام هذه الأداة في [تحديث Office for Mac باستخدام msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
 
-في MAU، معرف التطبيق ل Microsoft Defender ل Endpoint على macOS هو *WDAV00*. لتنزيل آخر التحديثات ل Microsoft Defender ل Endpoint وتثبيتها على macOS، قم بتنفيذ الأمر التالي من نافذة المحطة الطرفية:
+في MAU، معرف التطبيق الخاص Microsoft Defender لنقطة النهاية macOS هو *WDAV00*. لتنزيل آخر التحديثات وتثبيتها ل Microsoft Defender لنقطة النهاية macOS، قم بتنفيذ الأمر التالي من نافذة المحطة الطرفية:
 
 ```dos
 ./msupdate --install --apps wdav00
@@ -87,7 +87,7 @@ ms.locfileid: "63571515"
 |||
 
 > [!WARNING]
-> يغير هذا الإعداد القناة لجميع التطبيقات التي يتم تحديثها من خلال التحديث التلقائي ل Microsoft. لتغيير القناة ل Microsoft Defender for Endpoint على macOS `[channel-name]` فقط، نفذ الأمر التالي بعد استبدال القناة المطلوبة:
+> يغير هذا الإعداد القناة لجميع التطبيقات التي يتم تحديثها من خلال التحديث التلقائي ل Microsoft. لتغيير القناة فقط Microsoft Defender لنقطة النهاية macOS`[channel-name]`، نفذ الأمر التالي بعد استبدال القناة المطلوبة:
 >
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"

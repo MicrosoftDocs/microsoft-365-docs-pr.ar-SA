@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams
 description: كيفية Teams التثبيت على الأجهزة وتحديثها لاحقا
-keywords: سطح المكتب المدار من Microsoft، Microsoft 365، الخدمة، الوثائق، التطبيقات، تطبيقات خط العمل، تطبيقات LOB
+keywords: Microsoft Managed Desktop، Microsoft 365، الخدمة، الوثائق، التطبيقات، تطبيقات خط العمل، تطبيقات LOB
 ms.service: m365-md
 author: tiaraquan
 ms.localizationpriority: medium
@@ -10,12 +10,12 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: ITPro
-ms.openlocfilehash: 3dfdd9f5187fba9a1e19e56a4df24cf1f7eff44b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 469edf3e8ae856ea6e94bada8ffb9d6c97ba8b66
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63575388"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634460"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -23,20 +23,17 @@ ms.locfileid: "63575388"
 
 ## <a name="initial-deployment"></a>النشر الأولي
 
-لا يتضمن معظم موردي الأجهزة بعد Teams كجزء من صورهم. ينشر Microsoft Managed Desktop Teams على أجهزتك باستخدام Microsoft Intune. تم تثبيت حزمة Teams .msi [جميع](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) الأجهزة المدارة. تضمن .msi الحزمة أن جميع المستخدمين، الذين سجلوا الدخول إلى جهاز، Microsoft Teams جاهزين للاستخدام. عند انتهاء تثبيت الحزمة أولا، Teams تلقائيا وإضافة اختصار إلى سطح المكتب.
+لا يتضمن معظم موردي الأجهزة بعد Teams كجزء من صورهم. Microsoft Managed Desktop نشر Teams على أجهزتك باستخدام Microsoft Intune. تم تثبيت حزمة Teams .msi [جميع](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) الأجهزة المدارة. تضمن .msi الحزمة أن جميع المستخدمين، الذين سجلوا الدخول إلى جهاز، Microsoft Teams جاهزين للاستخدام. عند انتهاء تثبيت الحزمة أولا، Teams تلقائيا وإضافة اختصار إلى سطح المكتب.
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune التغييرات
 
-يضيف Microsoft Managed Desktop تطبيقين إلى مؤسسة Azure AD Microsoft Teams. يتم نشرها إلى عملاء 64 بت أو 32 بت حسب ملاءمة الجهاز:  
-
-- Modern Workplace - Teams Machine Wide Installer x64  
-- Modern Workplace - Teams Machine Wide Installer x32
+Microsoft Managed Desktop إلى Microsoft Teams المستأجر: Modern Workplace - Teams Machine Wide Installer x64  
 
 ## <a name="updates"></a>التحديثات
 
 Teams مسار تحديث منفصل من Microsoft 365 Apps for enterprise. يقوم عميل سطح المكتب بتحديث نفسه تلقائيا. Teams التحقق من وجود تحديثات كل بضع ساعات، وتنزيلها، ثم انتظار أن يكون الكمبيوتر معطلا قبل تثبيت التحديث بصمت.  
 
-لا Teams مجموعة منتجات microsoft للمسؤولين بالتحكم في التحديثات، لذلك يستخدم Microsoft Managed Desktop قناة التحديث [التلقائي القياسية](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating).
+لا Teams مجموعة منتجات المستخدمين للمسؤولين بالتحكم في التحديثات، Microsoft Managed Desktop تستخدم هذه المجموعة قناة [التحديث التلقائي القياسية](/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating).
 
 ### <a name="manually-updating-teams"></a>تحديث Teams
 

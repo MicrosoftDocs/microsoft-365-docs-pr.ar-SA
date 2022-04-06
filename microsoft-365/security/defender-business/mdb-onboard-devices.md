@@ -1,13 +1,13 @@
 ---
-title: الأجهزة المجهزة على Microsoft Defender for Business
-description: التعرف على خيارات االتعليم على الأجهزة في Microsoft Defender for Business
+title: الأجهزة المجهزة Microsoft Defender for Business
+description: تعرف على خيارات االتعلين على الجهاز في Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/01/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,17 +17,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 590810e7e8a5486816310da35968d6d9b3659330
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 78a8eaa5a9472a32c9615dfb7c7f5b08afe548ff
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63575950"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634724"
 ---
-# <a name="onboard-devices-to-microsoft-defender-for-business"></a>الأجهزة المجهزة على Microsoft Defender for Business
+# <a name="onboard-devices-to-microsoft-defender-for-business"></a>الأجهزة المجهزة Microsoft Defender for Business
 
 > [!IMPORTANT]
-> يتم طرح Microsoft Defender for Business Microsoft 365 Business Premium العملاء[](../../business-premium/index.md)، بدءا من 1 مارس 2022. يتم عرض Defender for Business لاشتراك مستقل في المعاينة، وسينتهى طرحه تدريجيا للعملاء وشركاء المعلومات الذين سجلوا هنا [](https://aka.ms/mdb-preview) لطلبه. تتضمن [المعاينة مجموعة أولية من السيناريوهات](mdb-tutorials.md#try-these-preview-scenarios)، وسنضيف القدرات بشكل منتظم.
+> Microsoft Defender for Business هذه Microsoft 365 Business Premium العملاء، بدءا من 1 [](../../business-premium/index.md) مارس 2022. يتم عرض Defender for Business لاشتراك مستقل في المعاينة، وسينتهى طرحه تدريجيا للعملاء وشركاء المعلومات الذين سجلوا هنا [](https://aka.ms/mdb-preview) لطلبه. تتضمن [المعاينة مجموعة أولية من السيناريوهات](mdb-tutorials.md#try-these-preview-scenarios)، وسنضيف القدرات بشكل منتظم.
 > 
 > تتعلق بعض المعلومات الواردة في هذه المقالة بالمنتجات/الخدمات التي تم إصدارها مسبقا التي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، للمعلومات المتوفرة هنا. 
 
@@ -38,13 +38,6 @@ ms.locfileid: "63575950"
 > الرجاء إجراء <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاع قصير حول Microsoft Defender for Business</a>. إننا نحب أن نستمع إلى هذه التكاتف!
 >
 
-## <a name="get-the-device-onboarding-guide"></a>الحصول على دليل تشغيل الجهاز
-
-استخدم الدليل والمعلومات التالية لاختيار الخيار الأفضل للشركة.
-
-[:::image type="content" source="media/mdb-device-onboarding.png" alt-text="لقطة شاشة لرسم تخطيطي ل &quot;إضافة جهاز&quot;":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) <br/>
-[PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) |  [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
-
 ## <a name="what-to-do"></a>ما يجب فعله
 
 1. [راجع خياراتك الخاصة بأجهزة التكهين](#device-onboarding-methods)، وحدد طريقة. 
@@ -52,7 +45,6 @@ ms.locfileid: "63575950"
    - [استخدام الالتحاق التلقائي للأجهزة Windows المسجلين بالفعل في إدارة نقاط النهاية من Microsoft](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
    - [استخدام برنامج نصي محلي ل Windows أو أجهزة macOS](#local-script-in-defender-for-business)
    - [استخدام إدارة نقاط النهاية من Microsoft على أجهزة Windows أو macOS أو الأجهزة المحمولة](#microsoft-endpoint-manager)
-   - [تعرف على كيفية إعداد الجهاز باستخدام تكوين أمان Microsoft Defender for Business](#microsoft-defender-for-business-security-configuration)
 
 2. [تشغيل اختبار الكشف على](#run-a-detection-test) الأجهزة المجهزة Windows حديثا.
 
@@ -68,18 +60,16 @@ ms.locfileid: "63575950"
 
 - **البرنامج النصي** المحلي ل Windows وأجهزة macOS إلى Defender for Business يدويا. يمكنك تشغيل ما يصل إلى 10 أجهزة في كل مرة باستخدام البرنامج النصي المحلي. لمعرفة المزيد، راجع [البرنامج النصي المحلي في Defender for Business](#local-script-in-defender-for-business).
 
-- **Microsoft Intune** أو **إدارة نقاط النهاية من Microsoft** على Windows وأجهزة macOS والأجهزة المحمولة. يمكنك تسجيل الأجهزة في إدارة نقاط النهاية، ثم إلحاق أجهزتك ب Defender for Business. [Microsoft 365 Business Premium](../../business-premium/index.md) العملاء بالفعل Microsoft Intune، وكل من [](/mem/intune/fundamentals/what-is-intune)Microsoft Intune الأجهزة المحمولة وإدارة الأجهزة المحمولة أصبحت الآن جزءا من إدارة نقاط النهاية[](/mem/intune/enrollment/device-enrollment). لاستخدام هذا الأسلوب[، راجع إدارة نقاط النهاية من Microsoft](#microsoft-endpoint-manager).
-
-- **تكوين أمان Microsoft Defender for Business** للأجهزة المجهزة مباشرة في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). لاستخدام هذا الخيار، يمكنك تكوين إعدادات معينة لتسهيل الاتصال بين Defender for Business إدارة نقاط النهاية. بعد ذلك، يمكنك تشغيل الأجهزة في Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) باستخدام حزمة تقوم بتحديدها وتنزيلها وتشغيلها على كل جهاز. يتم إنشاء الثقة بين الأجهزة، كما يتم دفع Azure Active Directory (Azure AD) ونهج أمان Defender for Business إلى الأجهزة. لمعرفة المزيد، راجع [تكوين أمان Microsoft Defender for Business](#microsoft-defender-for-business-security-configuration). 
+- **Microsoft Intune** أو **إدارة نقاط النهاية من Microsoft** على Windows وأجهزة macOS والأجهزة المحمولة. يمكنك تسجيل الأجهزة في إدارة نقاط النهاية، ثم إلحاق أجهزتك ب Defender for Business. [Microsoft 365 Business Premium](../../business-premium/index.md) العملاء بالفعل Microsoft Intune، وكل من [](/mem/intune/fundamentals/what-is-intune)Microsoft Intune والجوال إدارة الجهاز الآن جزءا من إدارة نقاط النهاية.[](/mem/intune/enrollment/device-enrollment) لاستخدام هذا الأسلوب[، راجع إدارة نقاط النهاية من Microsoft](#microsoft-endpoint-manager).
 
 > [!IMPORTANT]
-> إذا حدث خطأ ما وفشلت عملية التكعيب، فشاهد استكشاف الأخطاء وإصلاحها في [Microsoft Defender for Business](mdb-troubleshooting.yml).
+> إذا حدث خطأ ما وفشلت عملية التكعيب، [فشاهد Microsoft Defender for Business وإصلاحها](mdb-troubleshooting.yml).
 
 ## <a name="automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager"></a>الالتحاق التلقائي للأجهزة Windows المسجلين في إدارة نقاط النهاية من Microsoft
 
 ينطبق خيار التكهين التلقائي على Windows الأجهزة فقط. تتوفر ميزة التهيئة التلقائية إذا تم تحقيق الشروط التالية:
 
-- كانت شركتك تستخدم بالفعل إدارة نقاط النهاية من Microsoft أو Microsoft Intune أو إدارة أجهزة المحمول (MDM) في Microsoft Intune قبل أن حصلت على Defender for Business
+- كانت شركتك تستخدم بالفعل إدارة نقاط النهاية من Microsoft أو Microsoft Intune أو Mobile إدارة الجهاز (MDM) في Microsoft Intune قبل أن حصلت على Defender for Business
 
 - لديك بالفعل أجهزة Windows مسجلين في إدارة نقاط النهاية
 
@@ -88,7 +78,7 @@ ms.locfileid: "63575950"
 > [!TIP]
 > نوصي بتحديد الخيار "جميع الأجهزة التي تم تسجيلها". بهذه الطريقة، Windows تسجيل الأجهزة في إدارة نقاط النهاية لاحقا، سيتم إلحاقها في Defender for Business تلقائيا. بالإضافة إلى ذلك، إذا كنت تدير سياسات الأمان وإعداداته في إدارة نقاط النهاية، نوصي بالتبديل إلى مدخل Microsoft 365 Defender لإدارة أجهزتك ونهجك وإعداداتك. لمعرفة المزيد، راجع [اختيار مكان إدارة سياسات](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices) الأمان والأجهزة.
 
-لمعرفة المزيد حول الإعداد التلقائي، راجع الخطوة 2 في استخدام [المعالج لإعداد Microsoft Defender for Business](mdb-use-wizard.md).
+لمعرفة المزيد حول الإعداد التلقائي، راجع الخطوة 2 في [استخدام المعالج لإعداد](mdb-use-wizard.md) Microsoft Defender for Business.
 
 ## <a name="local-script-in-defender-for-business"></a>البرنامج النصي المحلي في Defender for Business
 
@@ -111,28 +101,9 @@ ms.locfileid: "63575950"
 
 ## <a name="microsoft-endpoint-manager"></a>إدارة نقاط النهاية من Microsoft
 
-إذا كنت تستخدم إدارة نقاط النهاية (الذي يتضمن Microsoft Intune وإدارة أجهزة المحمول)، قبل الحصول على Defender for Business، يمكنك الاستمرار في استخدام إدارة نقاط النهاية لضم أجهزة شركتك. باستخدام إدارة نقاط النهاية، يمكنك تشغيل أجهزة الكمبيوتر وأجهزة الكمبيوتر اللوحية والهواتف، بما في ذلك أجهزة iOS وAndroid.
+إذا كنت تستخدم إدارة نقاط النهاية (الذي يتضمن Microsoft Intune وجوال إدارة الجهاز)، قبل الحصول على Defender for Business، يمكنك الاستمرار في استخدام إدارة نقاط النهاية لضم أجهزة شركتك. باستخدام إدارة نقاط النهاية، يمكنك تشغيل أجهزة الكمبيوتر وأجهزة الكمبيوتر اللوحية والهواتف، بما في ذلك أجهزة iOS وAndroid.
 
 راجع [تسجيل الجهاز في Microsoft Intune](/mem/intune/enrollment/device-enrollment).
-
-## <a name="microsoft-defender-for-business-security-configuration"></a>تكوين أمان Microsoft Defender for Business
-
-> [!NOTE]
-> إذا كنت تستخدم بالفعل إدارة نقاط النهاية لإدارة أجهزتك ونهج الأمان، فتخطى هذه الطريقة، ثم راجع [إدارة نقاط النهاية من Microsoft بدلا من](#microsoft-endpoint-manager) ذلك.
-
-تم بناء تكوين أمان Microsoft Defender for Business على إمكانية تعرف باسم [إدارة الأمان ل Microsoft Defender ل Endpoint (معاينة)](/mem/intune/protect/mde-security-integration). يمكنك من إلحاق الأجهزة ب Defender for Business في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) دون الحاجة إلى تسجيل هذه الأجهزة بشكل كامل في إدارة نقاط النهاية من Microsoft مسبقا. 
-
-تمكنك هذه الطريقة من االأجهزة المجهزة وإدارة برامج الحماية من الفيروسات ونهج جدار الحماية في Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). إليك كيفية عمل كل ذلك:
-
-1. قم بتنزيل حزمة التكئب من مدخل Microsoft 365 Defender، ثم قم بتشغيل الحزمة على أجهزتك لتحميل هذه الأجهزة إلى Defender for Business.
-
-2. يعمل تشغيل الحزمة على إنشاء الثقة بين كل جهاز (إذا لم تكن الثقة موجودة بالفعل) و Azure Active Directory (Azure AD). 
-
-3. تتواصل الأجهزة مع إدارة نقاط النهاية باستخدام هوية Azure AD، كما يتم دفع سياسات الأمان في Defender for Business إلى الأجهزة.
-
-4. يمكنك عرض أجهزتك ونهجك في كل من مدخل Microsoft 365 Defender ومركز إدارة إدارة نقاط النهاية ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
-
-لاستخدام هذا الخيار، يجب تكوين إعدادات معينة مسبقا. لمعرفة المزيد، بما في ذلك المتطلبات الأساسية وأنظمت التشغيل المعتمدة، راجع [إدارة Microsoft Defender لنقطة النهاية على الأجهزة](/mem/intune/protect/mde-security-integration) التي تستخدم إدارة نقاط النهاية من Microsoft.
 
 ## <a name="run-a-detection-test"></a>تشغيل اختبار الكشف
 
@@ -174,7 +145,7 @@ ms.locfileid: "63575950"
 | نظام التشغيل | الإجراء |
 |---|---|
 | بالنسبة لنظام التشغيل | 1. انتقل إلى Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) ثم سجل الدخول.<br/><br/>2. في جزء التنقل، **اختر الإعدادات،** ثم اختر **نقاط النهاية**.<br/><br/>3. ضمن **إدارة الأجهزة**، اختر **إيقاف التشغيل**.<br/><br/>4. حدد نظام تشغيل **، مثل Windows 10 و11**، ثم ضمن **إيقاف** تشغيل جهاز، في المقطع أسلوب النشر، اختر **برنامج نصي محلي**. <br/><br/>5. في شاشة التأكيد، راجع المعلومات، ثم اختر **تنزيل** للمتابعة.<br/><br/>6. حدد **تنزيل حزمة إيقاف التشغيل**. نوصيك ب حفظ حزمة إيقاف التشغيل إلى محرك أقراص قابل للإزالة.<br/><br/>7. تشغيل البرنامج النصي على كل جهاز تريد إيقاف تشغيله.| 
-| macOS | 1. انتقل إلى **FinderApplications** > . <br/><br/>2. انقر بيمين فوق Microsoft Defender for Business، ثم اختر **نقل إلى سلة المهملات**. <br/><br/>--- أو --- <br/><br/> استخدم الأمر التالي: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.|
+| macOS | 1. انتقل إلى **FinderApplications** > . <br/><br/>2. انقر بضغطة Microsoft Defender for Business، ثم اختر **نقل إلى سلة المهملات**. <br/><br/>--- أو --- <br/><br/> استخدم الأمر التالي: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.|
 
 > [!IMPORTANT]
 > يؤدي إيقاف تشغيل الجهاز إلى إيقاف الأجهزة عن إرسال البيانات إلى Defender for Business. ومع ذلك، يتم الاحتفاظ بالبيانات التي تم تلقيها قبل الخروج لمدة تصل إلى ستة (6) أشهر.

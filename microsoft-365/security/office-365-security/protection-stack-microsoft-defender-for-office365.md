@@ -1,5 +1,5 @@
 ---
-title: مكدس الحماية من المخاطر خطوة بخطوة في Microsoft Defender Office 365
+title: مكدس الحماية من المخاطر خطوة بخطوة في Microsoft Defender لـ Office 365
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -10,23 +10,23 @@ ms.reviewer: gigarrub
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
-description: اتبع مسار رسالة واردة من خلال مكدس تصفية التهديدات في Microsoft Defender Office 365.
+description: اتبع مسار رسالة واردة من خلال مكدس تصفية التهديدات في Microsoft Defender لـ Office 365.
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 62d7ac9f13f59fce3b635f6d1dace2f22ee7f503
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e7be5c66e0ca3841a8bc4fd76555feaeafb1bd17
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683812"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469020"
 ---
-# <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>الحماية من المخاطر خطوة بخطوة في Microsoft Defender Office 365
+# <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>الحماية من المخاطر خطوة بخطوة في Microsoft Defender لـ Office 365
 
-يمكن تقسيم مكدس Office 365 Microsoft Defender للحماية أو التصفية إلى 4 مراحل، كما في هذه المقالة. وبشكل عام، يمر البريد الوارد عبر كل هذه المراحل قبل التسليم، ولكن المسار الفعلي الذي يتخذه البريد الإلكتروني يخضع لتكوين "Defender" الخاص Office 365 المؤسسة.
+يمكن Microsoft Defender لـ Office 365 الحماية أو التصفية المكدسة إلى 4 مراحل، كما في هذه المقالة. وبشكل عام، يمر البريد الوارد عبر كل هذه المراحل قبل التسليم، ولكن المسار الفعلي الذي يتخذه البريد الإلكتروني يخضع لتكوين Defender لـ Office 365 المؤسسة.
 
 > [!TIP]
-> ترقب حتى نهاية هذه المقالة للحصول على رسم موحد لجميع  المراحل ال 4 من Defender Office 365 الحماية!
+> ترقب حتى نهاية هذه المقالة للحصول على رسم موحد لجميع  المراحل ال 4 من Defender لـ Office 365 الحماية!
 
 ## <a name="phase-1---edge-protection"></a>المرحلة 1 - حماية Edge
 
@@ -34,7 +34,7 @@ ms.locfileid: "63683812"
 
 تم تصميم كتل Edge بحيث تكون تلقائية. في حالة وجود خطأ موجب، سيتم إعلام المرسلين وإعجابهم بكيفية معالجة المشكلة. يمكن أن تضمن الموصلات من الشركاء الموثوق بهم ذوي السمعة المحدودة إمكانية التسليم، أو يمكن وضع التجاوزات المؤقتة في مكانها عند تعيين نقاط نهاية جديدة.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="المرحلة 1 من التصفية في Defender for Office 365 هي Edge Protection.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="تصفية المرحلة 1 في Defender لـ Office 365" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png":::
 
 1. **يحمي تقييد** الشبكة Office 365 الأساسية والعملاء من هجمات رفض الخدمة (DOS) من خلال الحد من عدد الرسائل التي يمكن إرسالها بواسطة مجموعة معينة من البنية الأساسية.
 
@@ -52,7 +52,7 @@ ms.locfileid: "63683812"
 
 إن الميزات في المعلومات الاستخبارية للمرسلين مهمة جدا لصيد البريد العشوائي والرسائل المجمعة وال انتحال الشخصية والرسائل غير المصرح بها، كما أنها تؤثر أيضا على الكشف عن التصيد الاحتيالي. معظم هذه الميزات قابلة للتكوين بشكل فردي.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="المرحلة 2 من التصفية في Defender for Office 365 هي معلومات المرسل.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="المرحلة 2 من التصفية في Defender لـ Office 365 هي معلومات المرسل" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png":::
 
 1. **يتم رفع مشغلات** وتنبيهات الكشف عن اختراق الحساب عندما يكون للحساب سلوك غريب، متناسق مع اختراق. في بعض الحالات، يتم حظر حساب المستخدم ومنعه من إرسال أي رسائل بريد إلكتروني إضافية حتى يتم حل المشكلة بواسطة فريق عمليات الأمان في المؤسسة.
 
@@ -82,7 +82,7 @@ ms.locfileid: "63683812"
 
 في هذه المرحلة، يبدأ مكدس التصفية بمعالجة المحتويات المحددة للبريد، بما في ذلك الارتباطات التشعبية والمرفقات الخاصة به.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="المرحلة 3 من التصفية في MDO هي تصفية المحتوى.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="تصفية المرحلة 3 في MDO هي تصفية المحتوى" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png":::
 
 1. **تسمح قواعد** النقل (المعروفة أيضا بقواعد تدفق البريد أو Exchange النقل) للمسؤول لاتخاذ مجموعة واسعة من الإجراءات عند استففاء مجموعة واسعة من الشروط للرسالة. يتم تقييم كل الرسائل التي تتدفق عبر مؤسستك مقابل قواعد تدفق البريد /قواعد النقل التي تم تمكينها.
 
@@ -90,7 +90,7 @@ ms.locfileid: "63683812"
 
 3. تستخدم أيضا محركات مكافحة الفيروسات (AV) لتدوين كل المرفقات، بحيث يمكن أن يمنع حظر النوع  كل المرفقات من الأنواع التي يحددها المسؤول.
 
-4. كلما اكتشف Microsoft Defender for Office 365 مرفقا ضارا، تضاف هاشش الملف، ويشفر محتواه النشط، إلى Exchange Online Protection (EOP). **سيحظر حظر سمعة** المرفقات هذا الملف عبر كل Office 365 ونقاط النهاية ومن خلال مكالمات MSAV السحابية.
+4. كلما Microsoft Defender لـ Office 365 عن مرفق ضار، تضاف هاشش الملف ويشفر محتواه النشط إلى Exchange Online Protection (EOP). **سيحظر حظر سمعة** المرفقات هذا الملف عبر كل Office 365 ونقاط النهاية ومن خلال مكالمات MSAV السحابية.
 
 5. **يمكن أن يحدد نظام التكتلات الانعلامية** أن الملف مريب استنادا إلى أسلوب التسليم. عند العثور على مرفق مريب، تتوقف الحملة بالكامل مؤقتا، في حين يتم وضع الملف في وضع الحماية. إذا تبين أن الملف ضار، يتم حظر الحملة بأكملها.
 
@@ -100,7 +100,7 @@ ms.locfileid: "63683812"
 
 8. **يمكن أن يكشف أسلوب المحتوى** عن الرسائل المريبة استنادا إلى البنية وتردد الكلمات داخل نص الرسالة، باستخدام نماذج التعلم الآلي.
 
-9. **خزينة الحماية** للمرفقات كل مرفقات ل Defender Office 365 العملاء، باستخدام التحليل الديناميكي للكشف عن التهديدات التي لم يسبق أن رأيتها من قبل.
+9. **خزينة الحماية** للمرفقات كل مرفقات Defender لـ Office 365 العملاء، باستخدام التحليل الديناميكي للكشف عن التهديدات التي لم يسبق أن رأيتها من قبل.
 
 10. **تتعامل معالجة المحتوى** المرتبط مع كل ارتباط URL إلى ملف في رسالة بريد إلكتروني كمرفق، مع تحديد خانة اختيار غير متزامنة للملف في وقت التسليم.
 
@@ -110,9 +110,9 @@ ms.locfileid: "63683812"
 
 تتم المرحلة الأخيرة بعد تسليم البريد أو الملف، مع العمل على البريد في علب البريد والملفات والربطات المختلفة التي تظهر في العملاء مثل Microsoft Teams.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="المرحلة 4 من التصفية في Defender for Office 365 هي الحماية بعد التسليم.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="تصفية المرحلة 4 في Defender لـ Office 365 هي حماية ما بعد التسليم" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png":::
 
-1. **خزينة الارتباطات** هو Defender Office 365 الحماية من وقت النقر. يتم التفاف كل عنوان URL في كل رسالة ليشير إلى microsoft خزينة الارتباطات. عند النقر فوق عنوان URL، يتم تحديده مقابل أحدث سمعة، قبل إعادة توجيه المستخدم إلى الموقع الهدف. يتم تحديد عنوان URL بشكل غير متزامن لتحديث سمعته.
+1. **خزينة الارتباطات** Defender لـ Office 365 حماية وقت النقر. يتم التفاف كل عنوان URL في كل رسالة ليشير إلى microsoft خزينة الارتباطات. عند النقر فوق عنوان URL، يتم تحديده مقابل أحدث سمعة، قبل إعادة توجيه المستخدم إلى الموقع الهدف. يتم تحديد عنوان URL بشكل غير متزامن لتحديث سمعته.
 
 2. تقوم عملية الازدحام التلقائي **(ZAP)** بدون ساعة بالتصيد الاحتيالي بالكشف بأثر رجعي عن رسائل التصيد الاحتيالي الضارة التي تم تسليمها بالفعل إلى علب بريد Exchange Online البريد وتحييدها.
 
@@ -134,10 +134,10 @@ ms.locfileid: "63683812"
 
 يخضع الرسم التخطيطي النهائي (كما هو الأمر مع كل أجزاء الرسم التخطيطي التي يتم إنشاءه) للتغيير مع نمو المنتج *وتطويره*. وضع إشارة مرجعية على هذه الصفحة واستخدام **خيار** الملاحظات الذي ستجده في الأسفل إذا كنت بحاجة إلى السؤال بعد التحديثات. بالنسبة للسجلات، هذه هي المكدس مع كل المراحل بالترتيب:
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="يتم ترتيب كل مراحل التصفية في Defender for Office 365، من 1 إلى 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="كل مراحل التصفية بالترتيب Defender لـ Office 365، من 1 إلى 4" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png":::
 
 ## <a name="more-information"></a>معلومات إضافية
 
-هل تحتاج إلى إعداد Microsoft Defender Office 365 ***الآن** _؟ استخدم هذا المكدس_now*، مع هذه الخطوة [خطوة بخطوة](protect-against-threats.md) لبدء حماية مؤسستك.
+هل تحتاج إلى إعداد Microsoft Defender لـ Office 365 ***الآن** _؟ استخدم هذا المكدس_now*، مع هذه الخطوة [خطوة بخطوة](protect-against-threats.md) لبدء حماية مؤسستك.
 
 *شكرا خاصا من MSFTTracyP وفريق كتابة المستندات إلى جيوليان جاروبا لهذا المحتوى*.

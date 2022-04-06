@@ -16,24 +16,24 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 513432dfb24af89451c4d8290ce5fde0951819b9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2825bc87750dc9bb130e35f9a4997283e470f869
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63575047"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469878"
 ---
 # <a name="data-collection-for-advanced-troubleshooting-on-windows"></a>تجميع البيانات من أجل استكشاف الأخطاء وإصلاحها على Windows
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 عند التعاون في العمل مع محترفي دعم Microsoft، قد يطلب منك استخدام محلل العملاء لتجميع البيانات من أجل استكشاف الأخطاء وإصلاحها للسيناريوهات الأكثر تعقيدا. يدعم البرنامج النصي للمحلل معلمات أخرى لهذا الغرض ويمكنه تجميع مجموعة سجلات معينة استنادا إلى الأعراض التي تم ملاحظتها التي يجب التحقق منها.
 
 تشغيل '**MDEClientAnalyzer.cmd /?**' لرؤية قائمة المعلمات المتوفرة ووصفها:
 
-![صورة معلمات محلل العميل في سطر الأوامر.](images/d89a1c04cf8441e4df72005879871bd0.png)
+:::image type="content" source="images/d89a1c04cf8441e4df72005879871bd0.png" alt-text="معلمات MDEClientAnalyzer.cmd" lightbox="images/d89a1c04cf8441e4df72005879871bd0.png":::
 
 > [!NOTE]
 > عند استخدام أي معلمة متقدمة من معلمات استكشاف الأخطاء وإصلاحها، يستدعي المحلل أيضاMpCmdRun.exeلتجميع [ ](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) سجلات الدعم برنامج الحماية من الفيروسات من Microsoft Defender ذات الصلة.
@@ -69,7 +69,7 @@ ms.locfileid: "63575047"
 
 يمكن بدء المحلل وكل أعلام السيناريوهات أعلاه عن بعد عن طريق تشغيل 'RemoteMDEClientAnalyzer.cmd'، الذي يتم تجميعه أيضا في مجموعة أدوات المحلل:
 
-![صورة خط الأوامر مع معلومات المحلل.](images/57cab9d82d08f672a92bf9e748ac9572.png)
+:::image type="content" source="images/57cab9d82d08f672a92bf9e748ac9572.png" alt-text="معلمات RemoteMDEClientAnalyzer.cmd" lightbox="images/57cab9d82d08f672a92bf9e748ac9572.png":::
 
 > [!NOTE]
 >

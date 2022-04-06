@@ -15,12 +15,12 @@ ms.custom:
 description: يمكن للمسؤولين معرفة كيفية استخدام تصحيح معلومات حلقة البريد المحتملة في لوحة معلومات تدفق البريد في مركز التوافق & الأمان لتحديد حلقيات البريد وإصلاحها في المؤسسة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a80555f438ceb9431638e727ff0b84c3268ac1c1
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 5a74e7cc623dffd6bae6451f7488d8f630b607b2
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679687"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469130"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>إصلاح إمكانية معرفة حلقة البريد في مركز & الأمان
 
@@ -28,7 +28,7 @@ ms.locfileid: "63679687"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 تكون تكرارات البريد سيئة بسبب:
@@ -41,7 +41,7 @@ ms.locfileid: "63679687"
 
 تظهر هذه المعرفة فقط بعد الكشف عن الشرط (إذا لم يكن لديك أي تكرارات بريد، فلن ترى هذه المعرفة).
 
-![إصلاح بطء معرفة قواعد تدفق البريد في المنطقة المستحسنة من لوحة معلومات تدفق البريد.](../../media/mfi-fix-possible-mail-loop.png)
+:::image type="content" source="../../media/mfi-fix-possible-mail-loop.png" alt-text="نظرة ثاقبة حول إصلاح قواعد تدفق البريد البطيئة في المنطقة المستحسنة لك في لوحة معلومات تدفق البريد" lightbox="../../media/mfi-fix-possible-mail-loop.png":::
 
 عندما **تنقر فوق عرض التفاصيل على** عنصر واجهة المستخدم، تظهر عنصر منقط مع مزيد من المعلومات:
 
@@ -49,9 +49,9 @@ ms.locfileid: "63679687"
 - **عدد الرسائل**: يمكنك **النقر فوق عرض** الرسائل العينة للاطلاع على نتائج [](message-trace-scc.md) تتبع الرسائل لعينة من الرسائل التي تأثرت بهذه الحلقة.
 - **نوع المجال**" على سبيل المثال، موثوق أو غير موثوق.
 - **سجل MX**: قيم الأولوية والمضيف (**خادم** البريد) لسجل MX للمجال.
-- **السبب الحلقي** **وكيفية الإصلاح**: سنحدد السيناريوهات الأكثر شيوعا لحلقة البريد ونوفر الإجراءات الموصى بها لإصلاح التكرار الحلقي.
+- **Loop السبب وكيفية** **الإصلاح:** سنحدد السيناريوهات الأكثر شيوعا لحلقة البريد ونوفر الإجراءات الموصى بها لإصلاح التكرار الحلقي.
 
-![القائمة من القائمة من القائمة flyout لالتفاصيل التي تظهر بعد النقر فوق عرض التفاصيل في تصحيح رؤى حلقة البريد المحتملة.](../../media/mfi-fix-possible-mail-loop-details.png)
+:::image type="content" source="../../media/mfi-fix-possible-mail-loop-details.png" alt-text="القائمة flyout Details التي تظهر بعد النقر فوق عرض التفاصيل على تصحيح رؤى حلقة البريد المحتملة" lightbox="../../media/mfi-fix-possible-mail-loop-details.png":::
 
 ## <a name="see-also"></a>راجع أيضًا
 

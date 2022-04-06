@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: يمكن للمسؤولين معرفة كيفية عرض الرسائل المعزولة وإدارتها لجميع المستخدمين في Exchange Online Protection (EOP). يمكن للمسؤولين في المؤسسات التي تستخدم Microsoft Defender Office 365 إدارة الملفات المعزولة في SharePoint عبر الإنترنت OneDrive for Business و Microsoft Teams.
+description: يمكن للمسؤولين معرفة كيفية عرض الرسائل المعزولة وإدارتها لجميع المستخدمين في Exchange Online Protection (EOP). يمكن للمسؤولين في المؤسسات التي Microsoft Defender لـ Office 365 أيضا إدارة الملفات المعزولة في SharePoint عبر الإنترنت OneDrive for Business Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7787943ad16a3ae641b475b01b7e1dd8bb7f51d2
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 449886f6272c81f9947fd3e7ea869e565326578f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63568599"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469636"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>إدارة الرسائل والملفات المعزولة كمسؤول في EOP
 
@@ -32,7 +32,7 @@ ms.locfileid: "63568599"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 في Microsoft 365 المؤسسات التي بها علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، يحتفظ الفحص بالرسائل الخطيرة أو غير المرغوب فيها. لمزيد من المعلومات، راجع [رسائل البريد الإلكتروني المعزولة في EOP](quarantine-email-messages.md).
@@ -41,7 +41,7 @@ ms.locfileid: "63568599"
 
 بشكل افتراضي، يمكن للمسؤولين فقط إدارة الرسائل التي تم فحصها كبرامج ضارة أو تصيد احتيالي عالي الثقة أو نتيجة لقواعد تدفق البريد (المعروفة أيضا بقواعد النقل). ولكن يمكن للمسؤولين استخدام سياسات _الفحص_ لتعريف ما يسمح للمستخدمين به للرسائل المعزولة استنادا إلى سبب عزل الرسالة (للميزات المعتمدة). لمزيد من المعلومات، راجع [سياسات الفحص](quarantine-policies.md).
 
-يمكن للمسؤولين في المؤسسات التي تستخدم Microsoft Defender for Office 365 أيضا إدارة الملفات التي تم فحصها بواسطة [مرفقات خزينة](mdo-for-spo-odb-and-teams.md) ل SharePoint OneDrive Microsoft Teams.
+يمكن للمسؤولين في المؤسسات التي Microsoft Defender لـ Office 365 أيضا إدارة الملفات التي تم فحصها بواسطة [مرفقات خزينة](mdo-for-spo-odb-and-teams.md) لمرفقات SharePoint OneDrive Microsoft Teams.
 
 يمكنك عرض الرسائل المعزولة وإدارتها في مدخل Microsoft 365 Defender أو في PowerShell (Exchange Online PowerShell ل Microsoft 365 المؤسسات التي بها علب بريد في Exchange Online؛ EOP PowerShell مستقل ل المؤسسات التي ليس لها Exchange Online علب البريد).
 
@@ -63,7 +63,7 @@ ms.locfileid: "63568599"
   - توفر **أيضا مجموعة دور "** إدارة [المؤسسات Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) طريقة العرض فقط" إمكانية الوصول للقراءة فقط إلى الميزة.
   - <sup>\*</sup>يجب أيضا أن  يكون أعضاء مجموعة أدوار مسؤول الفحص في أدوار تعاون **البريد الإلكتروني &** في مدخل [Microsoft 365 Defender](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) أعضاء في مجموعة أدوار **"** إدارة النظافة" في [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) للقيام بإجراءات الفحص في Exchange Online PowerShell.
 
-- يتم الاحتفاظ بالرسائل المعزولة لفترة زمنية افتراضية استنادا إلى سبب عزلها. بعد انتهاء فترة الاستبقاء، يتم حذف الرسائل تلقائيا ولا يمكن استردادها. لمزيد من المعلومات، راجع [رسائل البريد الإلكتروني المعزولة في EOP و Defender Office 365](quarantine-email-messages.md).
+- يتم الاحتفاظ بالرسائل المعزولة لفترة زمنية افتراضية استنادا إلى سبب عزلها. بعد انتهاء فترة الاستبقاء، يتم حذف الرسائل تلقائيا ولا يمكن استردادها. لمزيد من المعلومات، راجع [رسائل البريد الإلكتروني المعزولة في EOP Defender لـ Office 365](quarantine-email-messages.md).
 
 ## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>استخدام مدخل Microsoft 365 Defender لإدارة رسائل البريد الإلكتروني المعزولة
 
@@ -110,7 +110,7 @@ ms.locfileid: "63568599"
      - **قاعدة النقل** (قاعدة تدفق البريد)
      - **مجمع**
      - **البريد العشوائي**
-     - **البرامج** الضارة: سياسات مكافحة البرامج الضارة في EOP أو خزينة المرفقات في Defender for Office 365. تشير **قيمة نوع** النهج إلى الميزة التي تم استخدامها.
+     - **البرامج** الضارة: سياسات مكافحة البرامج الضارة في EOP أو خزينة المرفقات في Defender لـ Office 365. تشير **قيمة نوع** النهج إلى الميزة التي تم استخدامها.
      - **التصيد** الاحتيالي: كان قرار تصفية  البريد العشوائي هو التصيد الاحتيالي أو الحماية من التصيد الاحتيالي فحص [الرسالة (إعدادات](set-up-anti-phishing-policies.md#spoof-settings) الانتحال أو [حماية الانتحال](set-up-anti-phishing-policies.
      - **التصيد الاحتيالي عالي الثقة**
    - **المستلم**: **جميع المستخدمين** أو **أنا فقط**. يمكن للمستخدمين إدارة الرسائل المعزولة المرسلة إليهم فقط.
@@ -141,7 +141,7 @@ ms.locfileid: "63568599"
 
 عند تحديد رسالة معزولة من القائمة، تتوفر المعلومات التالية في القائمة من خلال القائمة من القائمة من خلال التفاصيل التي تظهر.
 
-![منتحل التفاصيل لرسالة معزولة.](../../media/quarantine-message-details-flyout.png)
+:::image type="content" source="../../media/quarantine-message-details-flyout.png" alt-text="منتحل التفاصيل لرسالة معزولة" lightbox="../../media/quarantine-message-details-flyout.png":::
 
 - **معرف الرسالة**: المعرف الفريد العام للرسالة. متوفر في **حقل رأس الرسالة** في رأس الرسالة.
 - **عنوان المرسل**
@@ -152,7 +152,7 @@ ms.locfileid: "63568599"
 - **اسم النهج**
 - **عدد المستلمين**
 - **المستلمون**: إذا كانت الرسالة تحتوي على عدة مستلمين، يجب النقر فوق  معاينة الرسالة أو  عرض رأس الرسالة لرؤية قائمة المستلمين الكاملة.
-- **علامة المستلم**: لمزيد من المعلومات، راجع [علامات المستخدم في Microsoft Defender Office 365](user-tags.md).
+- **علامة المستلم**: لمزيد من المعلومات، راجع [علامات المستخدم في Microsoft Defender لـ Office 365](user-tags.md).
 - **تنتهي الصلاحية**: التاريخ/الوقت الذي سيتم فيه حذف الرسالة تلقائيا ونهاية من الفحص.
 - **تم إصدارها إلى**: كل عناوين البريد الإلكتروني (إن وجدت) التي تم إصدار الرسالة لها.
 - **لم يتم إصدارها بعد إلى**: كل عناوين البريد الإلكتروني (إن وجدت) التي لم يتم إصدار الرسالة لها بعد.
@@ -162,13 +162,13 @@ ms.locfileid: "63568599"
 > [!NOTE]
 > لتبقى في قائمة التفاصيل، ولكن غير الرسالة المعزولة التي تبحث عنها، استخدم السهمين لأعلى والسهم لأسفل في أعلى قائمة الطيران.
 >
-> ![السهمان لأعلى والسهم لأسفل في مناء التفاصيل لرسالة معزولة.](../../media/quarantine-message-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-up-down-arrows.png" alt-text="السهمان لأعلى والسهم لأسفل في مناء التفاصيل لرسالة معزولة" lightbox="../../media/quarantine-message-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-email"></a>اتخاذ إجراء بشأن البريد الإلكتروني المعزول
 
 بعد تحديد رسالة معزولة من القائمة، تتوفر الإجراءات التالية في القائمة من خلال التفاصيل:
 
-![الإجراءات المتوفرة في منتحل التفاصيل لرسالة معزولة.](../../media/quarantine-message-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-message-details-flyout-actions.png" alt-text="الإجراءات المتوفرة في مناء التفاصيل لرسالة معزولة" lightbox="../../media/quarantine-message-details-flyout-actions.png":::
 
 - ![أيقونة إصدار البريد الإلكتروني.](../../media/m365-cc-sc-check-mark-icon.png) **إصدار البريد**<sup>\*</sup> الإلكتروني: في جزء قائمة منطلقة الذي يظهر، قم بتكوين الخيارات التالية:
   - **إضافة مرسل إلى قائمة** السماح الخاصة بالمنظمة: حدد هذا الخيار لمنع عزل الرسائل الواردة من المرسل.
@@ -234,7 +234,7 @@ ms.locfileid: "63568599"
 > [!NOTE]
 > على جهاز محمول، لا يتوفر نص الوصف على أيقونات الإجراءات.
 >
-> ![تفاصيل رسالة معزولة مع تمييز الإجراءات المتوفرة.](../../media/quarantine-message-details-flyout-mobile-actions.png)
+> :::image type="content" source="../../media/quarantine-message-details-flyout-mobile-actions.png" alt-text="تفاصيل رسالة معزولة مع تمييز الإجراءات المتوفرة" lightbox="../../media/quarantine-message-details-flyout-mobile-actions.png":::
 >
 > يتم تلخيص الأيقونات بالترتيب والأوصاف المناظرة لها في الجدول التالي:
 >
@@ -253,7 +253,7 @@ ms.locfileid: "63568599"
 
 عند تحديد عدة رسائل معزولة في القائمة (ما يصل إلى 100) بالنقر في المنطقة الفارغة إلى يسار العمود الأول، تظهر القائمة المنسدل إجراءات  مجمعة حيث يمكنك اتخاذ الإجراءات التالية:
 
-![القائمة المنسدل "إجراءات مجمعة" للرسائل في الفحص.](../../media/quarantine-message-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-message-bulk-actions.png" alt-text="القائمة المنسدل &quot;إجراءات مجمعة&quot; للرسائل في الفحص" lightbox="../../media/quarantine-message-bulk-actions.png":::
 
 - ![أيقونة إصدار البريد الإلكتروني.](../../media/m365-cc-sc-check-mark-icon.png) **رسائل الإصدار**: يتم إصدار الرسائل لجميع المستلمين. في الصورة المستعرضة التي تظهر، يمكنك اختيار الخيارات التالية، وهي نفس الخيارات التي تظهر عند إصدار رسالة واحدة:
   - **إضافة مرسل إلى قائمة السماح الخاصة بالمنظمة**
@@ -272,12 +272,12 @@ ms.locfileid: "63568599"
 - ![أيقونة تنزيل البريد الإلكتروني.](../../media/m365-cc-sc-download-icon.png) **تنزيل الرسائل**
 - ![أيقونة إرسال فقط.](../../media/m365-cc-sc-create-icon.png) **إرسال فقط**
 
-## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>استخدم مدخل Microsoft 365 Defender لإدارة الملفات المعزولة في Defender for Office 365
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>استخدم مدخل Microsoft 365 Defender لإدارة الملفات المعزولة في Defender لـ Office 365
 
 > [!NOTE]
-> تتوفر إجراءات الملفات المعزولة في هذا القسم فقط لمشتركي Microsoft Defender Office 365 الخطة 1 أو الخطة 2.
+> تتوفر إجراءات الملفات المعزولة في هذا القسم فقط Microsoft Defender لـ Office 365 الخطة 1 أو الخطة 2.
 
-في المؤسسات التي Office 365 Defender for Office 365، يمكن للمسؤولين إدارة الملفات التي تم فحصها بواسطة مرفقات خزينة لمرفقات SharePoint OneDrive Microsoft Teams. لتمكين الحماية لهذه الملفات، راجع تشغيل خزينة المرفقات SharePoint OneDrive [Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+في المؤسسات التي Defender لـ Office 365، يمكن للمسؤولين إدارة الملفات التي تم فحصها بواسطة مرفقات خزينة للمرفقات SharePoint OneDrive و Microsoft Teams. لتمكين الحماية لهذه الملفات، راجع تشغيل خزينة المرفقات SharePoint OneDrive [Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>عرض الملفات المعزولة
 
@@ -312,7 +312,7 @@ ms.locfileid: "63568599"
 
 عندما تحدد ملفا معزولا من القائمة، تتوفر المعلومات التالية في القائمة من خلال القائمة من القائمة من خلال التفاصيل التي يتم فتحها:
 
-![منتحل التفاصيل لملف معزول.](../../media/quarantine-file-details-flyout.png)
+:::image type="content" source="../../media/quarantine-file-details-flyout.png" alt-text="منتحل التفاصيل لملف معزول" lightbox="../../media/quarantine-file-details-flyout.png":::
 
 - **اسم الملف**
 - **عنوان URL للملف**: URL الذي يعرف موقع الملف (على سبيل المثال، في SharePoint Online).
@@ -333,13 +333,13 @@ ms.locfileid: "63568599"
 > [!NOTE]
 > لتبقى في قائمة التفاصيل، ولكن غير الملف المعزول الذي تبحث عنه، استخدم السهمين لأعلى والسهم لأسفل في أعلى قائمة الطيران.
 >
-> ![السهمان لأعلى والسهم لأسفل في مناء التفاصيل لملف معزول.](../../media/quarantine-file-details-flyout-up-down-arrows.png)
+> :::image type="content" source="../../media/quarantine-file-details-flyout-up-down-arrows.png" alt-text="السهمان لأعلى والسهم لأسفل في مناء التفاصيل للملفات المعزولة" lightbox="../../media/quarantine-file-details-flyout-up-down-arrows.png":::
 
 ### <a name="take-action-on-quarantined-files"></a>اتخاذ إجراء بشأن الملفات المعزولة
 
 بعد تحديد ملف معزول من القائمة، تتوفر الإجراءات التالية في القائمة من خلال التفاصيل:
 
-![الإجراءات المتوفرة في معلومات التفاصيل من ملف معزول.](../../media/quarantine-file-details-flyout-actions.png)
+:::image type="content" source="../../media/quarantine-file-details-flyout-actions.png" alt-text="الإجراءات في مناء التفاصيل لملف معزول" lightbox="../../media/quarantine-file-details-flyout-actions.png":::
 
 - ![أيقونة ملف الإصدار.](../../media/m365-cc-sc-check-mark-icon.png) **ملف الإصدار**<sup>\*</sup>: في الجزء الذي يظهر من حولك، قم تشغيل ملفات التقارير إلى **Microsoft** أو إيقاف تشغيلها للتحليل، ثم انقر فوق **إصدار**.
 - ![أيقونة ملف الإصدار.](../../media/m365-cc-sc-check-mark-icon.png)
@@ -355,7 +355,7 @@ ms.locfileid: "63568599"
 
 عند تحديد عدة ملفات معزولة في القائمة (ما يصل إلى 100 ملف) بالنقر في المنطقة الفارغة إلى يسار عمود الموضوع، تظهر  القائمة المنسدل  إجراءات مجمعة حيث يمكنك اتخاذ الإجراءات التالية:
 
-![القائمة المنسدل "إجراءات مجمعة" للملفات الموجودة في الفحص.](../../media/quarantine-file-bulk-actions.png)
+:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="القائمة المنسدل &quot;إجراءات مجمعة&quot; للملفات الموجودة في الفحص" lightbox="../../media/quarantine-file-bulk-actions.png":::
 
 - ![أيقونة ملف الإصدار.](../../media/m365-cc-sc-check-mark-icon.png) **ملف الإصدار**: في الجزء الذي يظهر من حولك، قم تشغيل ملفات التقارير إلى **Microsoft** أو إيقاف تشغيلها للتحليل، ثم انقر فوق **إصدار**.
 - ![أيقونة حذف من الفحص.](../../media/m365-cc-sc-delete-icon.png) **حذف من الفحص**: بعد النقر فوق **نعم** في التحذير الذي يظهر، يتم حذف الملف على الفور.

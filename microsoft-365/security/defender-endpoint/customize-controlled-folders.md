@@ -15,17 +15,17 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b9af738d4b1f59705132a84239d06dc762447417
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 04e7617825a3e14eac541b296cbed9f4dd95e206
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683746"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469306"
 ---
 # <a name="customize-controlled-folder-access"></a>تخصيص الوصول إلى المجلدات الخاضعة للتحكم
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -49,7 +49,7 @@ ms.locfileid: "63683746"
 
 يمكنك أيضا تحديد أسهم الشبكة ومحركات الأقراص التي تم تعيينها. إن متغيرات البيئة و أحرف البدل معتمدة. للحصول على معلومات حول استخدام أحرف البدل، راجع استخدام أحرف البدل في اسم الملف ومسار [المجلد أو قوائم استثناءات الملحقات](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
-يمكنك استخدام تطبيق أمن Windows أو نهج المجموعة أو PowerShell cmdlets أو موفري خدمات تكوين إدارة أجهزة المحمول لإضافة المجلدات المحمية وإزالتها.
+يمكنك استخدام أمن Windows أو نهج المجموعة أو PowerShell cmdlets أو موفري خدمات تكوين إدارة أجهزة المحمول لإضافة المجلدات المحمية وإزالتها.
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>استخدام أمن Windows لحماية مجلدات إضافية
 
@@ -65,13 +65,13 @@ ms.locfileid: "63683746"
 
 6. حدد **إضافة مجلد محمي** واتبع المطالبات لإضافة مجلدات.
 
-### <a name="use-group-policy-to-protect-additional-folders"></a>استخدام "نهج المجموعة" لحماية مجلدات إضافية
+### <a name="use-group-policy-to-protect-additional-folders"></a>استخدام نهج المجموعة لحماية مجلدات إضافية
 
-1. على كمبيوتر إدارة نهج المجموعة، افتح [وحدة تحكم إدارة نهج المجموعة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true). 
+1. على كمبيوتر نهج المجموعة، افتح وحدة التحكم نهج المجموعة [الإدارة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true). 
 
-2. انقر ب الماوس الأيمن فوق كائن نهج المجموعة الذي تريد تكوينه، ثم حدد **تحرير**.
+2. انقر بضغطة نهج المجموعة فوق الكائن الذي تريد تكوينه، ثم حدد **تحرير**.
 
-3. في محرر **إدارة نهج المجموعة**، انتقل إلى **قوالب نهج** \> **تكوين** \> الكمبيوتر **الإدارية**.
+3. في محرر **نهج المجموعة،** انتقل إلى **القوالب** \> الإدارية **لنهج** \> تكوين **الكمبيوتر**.
 
 4. قم بتوسيع الشجرة Windows **مكونات برنامج الحماية من الفيروسات من Microsoft Defender** \>  \> Windows الوصول إلى المجلدات التي يتحكم **بها Defender Exploit Guard** \> **.** <br/>**ملاحظة**: في الإصدارات القديمة من Windows، قد ترى **برنامج الحماية من الفيروسات لـ Windows Defender بدلا من** **برنامج الحماية من الفيروسات من Microsoft Defender.**
 
@@ -90,7 +90,7 @@ ms.locfileid: "63683746"
     ```
 3. كرر الخطوة 2 لكل مجلد تريد حمايته. تكون المجلدات المحمية مرئية في تطبيق أمن Windows.
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="نافذة PowerShell مع عرض cmdlet.":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="نافذة PowerShell مع عرض cmdlet" lightbox="images/cfa-allow-folder-ps.png":::
 
 > [!IMPORTANT]
 > يتم `Add-MpPreference` استخدامها ل إلحاق التطبيقات أو إضافتها إلى القائمة وليس .`Set-MpPreference` سيكتم `Set-MpPreference` الكتابة فوق القائمة الموجودة باستخدام الأمر cmdlet.
@@ -120,13 +120,13 @@ ms.locfileid: "63683746"
 
 4. حدد **إضافة تطبيق مسموح** به واتبع المطالبات لإضافة تطبيقات.
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="إضافة زر تطبيق مسموح به.":::
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="الزر &quot;إضافة تطبيق مسموح به&quot;" lightbox="images/cfa-allow-app.png":::
 
-### <a name="use-group-policy-to-allow-specific-apps"></a>استخدام "نهج المجموعة" للسماح لتطبيقات معينة
+### <a name="use-group-policy-to-allow-specific-apps"></a>استخدام نهج المجموعة للسماح لتطبيقات معينة
 
-1. على جهاز إدارة نهج المجموعة، افتح وحدة تحكم إدارة [نهج](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true) المجموعة، وانقر بز الماوس الأيمن فوق كائن نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
+1. على جهاز نهج المجموعة، افتح وحدة التحكم نهج المجموعة [الإدارة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true)، وانقر ب الماوس الأيمن فوق نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
 
-2. في محرر **إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
+2. في نهج المجموعة **إدارة،** انتقل إلى **تكوين الكمبيوتر** وحدد **قوالب إدارية**.
 
 3. قم بتوسيع الشجرة Windows **مكونات برنامج الحماية من الفيروسات من Microsoft Defender** \>  \> Windows الوصول إلى المجلدات التي يتحكم **بها Defender Exploit Guard** \> **.**
 
@@ -149,7 +149,7 @@ ms.locfileid: "63683746"
 
    تابع الاستخدام `Add-MpPreference -ControlledFolderAccessAllowedApplications` لإضافة المزيد من التطبيقات إلى القائمة. ستظهر التطبيقات المضافة باستخدام الأمر cmdlet هذا في أمن Windows التطبيق.
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="PowerShell cmdlet للسماح للتطبيق.":::
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="Cmdlet في PowerShell للسماح بتطبيق" lightbox="images/cfa-allow-app-ps.png":::
 
 > [!IMPORTANT]
 > يتم `Add-MpPreference` استخدامها ل إلحاق التطبيقات بالقائمة أو إضافتها. سيكتم `Set-MpPreference` الكتابة فوق القائمة الموجودة باستخدام الأمر cmdlet.
@@ -160,14 +160,14 @@ ms.locfileid: "63683746"
 
 ## <a name="allow-signed-executable-files-to-access-protected-folders"></a>السماح للملفات القابلة للتنفيذ الموقعة بالوصول إلى المجلدات المحمية
 
-يمكن لمؤشرات شهادات وملفات Microsoft Defender لنقطة النهاية السماح للملفات القابلة للتنفيذ الموقعة بالوصول إلى المجلدات المحمية. للحصول على تفاصيل التنفيذ، راجع [إنشاء مؤشرات استنادا إلى الشهادات](indicator-certificates.md).
+Microsoft Defender لنقطة النهاية مؤشرات الشهادة والملفات إمكانية السماح للملفات القابلة للتنفيذ الموقعة بالوصول إلى المجلدات المحمية. للحصول على تفاصيل التنفيذ، راجع [إنشاء مؤشرات استنادا إلى الشهادات](indicator-certificates.md).
 
 > [!Note]
 > لا ينطبق ذلك على محركات البرمجة النصية، بما في ذلك Powershell
 
 ## <a name="customize-the-notification"></a>تخصيص الإعلام
 
-لمزيد من المعلومات حول تخصيص الإعلام عند تشغيل قاعدة وحظر تطبيق أو ملف، راجع تكوين إعلامات التنبيهات في [Microsoft Defender لنقطة النهاية](configure-email-notifications.md).
+لمزيد من المعلومات حول تخصيص الإعلام عند تشغيل قاعدة وحظر تطبيق أو ملف، راجع تكوين إعلامات التنبيه [في](configure-email-notifications.md) Microsoft Defender لنقطة النهاية.
 
 ## <a name="see-also"></a>راجع أيضًا
 

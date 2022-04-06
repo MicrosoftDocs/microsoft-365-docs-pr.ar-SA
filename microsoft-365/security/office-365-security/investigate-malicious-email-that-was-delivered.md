@@ -1,6 +1,6 @@
 ---
 title: التحقق من البريد الإلكتروني الضار الذي تم تسليمه في Microsoft 365، البحث عن البريد الإلكتروني الضار التحقيق فيه
-keywords: TIMailData-Inline، حادث الأمان، حادث، Microsoft Defender ل Endpoint PowerShell، البرامج الضارة للبريد الإلكتروني، المستخدمون المخادعون، التصيد الاحتيالي للبريد الإلكتروني، البرامج الضارة للبريد الإلكتروني، قراءة رؤوس البريد الإلكتروني، قراءة رؤوس البريد الإلكتروني، فتح رؤوس البريد الإلكتروني، الإجراءات الخاصة
+keywords: TIMailData-Inline، حادث الأمان، حادث، Microsoft Defender لنقطة النهاية PowerShell، البرامج الضارة للبريد الإلكتروني، المستخدمون المخادعون، التصيد الاحتيالي للبريد الإلكتروني، البرامج الضارة للبريد الإلكتروني، قراءة رؤوس البريد الإلكتروني، قراءة رؤوس البريد الإلكتروني، فتح رؤوس البريد الإلكتروني، الإجراءات الخاصة
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f3c992ad94d63b44d2f89acff6bb295728a0804
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 48deec7763981b10daf1d0c16cbef95d0e2dbaeb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681425"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476522"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>التحقق من البريد الإلكتروني الضار الذي تم تسليمه في Microsoft 365
 
@@ -34,10 +34,10 @@ ms.locfileid: "63681425"
 
 **ينطبق على:**
 
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[يمكنك Microsoft Defender for Office 365](defender-for-office-365.md) من التحقق من الأنشطة التي تعرض الأشخاص في مؤسستك للخطر، واتخاذ إجراء لحماية مؤسستك. على سبيل المثال، إذا كنت جزءا من فريق الأمان في مؤسستك، يمكنك البحث عن رسائل البريد الإلكتروني المريبة التي تم تسليمها التحقيق فيها. يمكنك القيام بذلك باستخدام "مستكشف [التهديدات" (أو الكشف في الوقت الحقيقي).](threat-explorer.md)
+[Microsoft Defender لـ Office 365](defender-for-office-365.md) إمكانية التحقق من الأنشطة التي تعرض الأشخاص في مؤسستك للخطر، واتخاذ إجراء لحماية مؤسستك. على سبيل المثال، إذا كنت جزءا من فريق الأمان في مؤسستك، يمكنك البحث عن رسائل البريد الإلكتروني المريبة التي تم تسليمها التحقيق فيها. يمكنك القيام بذلك باستخدام "مستكشف [التهديدات" (أو الكشف في الوقت الحقيقي).](threat-explorer.md)
 
 > [!NOTE]
 > الانتقال إلى مقالة المعالجة [هنا](remediate-malicious-email-delivered-office-365.md).
@@ -46,7 +46,7 @@ ms.locfileid: "63681425"
 
 تأكد من تلبية المتطلبات التالية:
 
-- لدى مؤسستك [Microsoft Defender Office 365](defender-for-office-365.md) [تعيين تراخيص](../../admin/manage/assign-licenses-to-users.md) للمستخدمين.
+- لمنظمتك [Microsoft Defender لـ Office 365](defender-for-office-365.md) تعيين تراخيص [للمستخدمين](../../admin/manage/assign-licenses-to-users.md).
 
 - [يتم تشغيل](../../compliance/turn-audit-log-search-on-or-off.md) تسجيل التدقيق لمنظمتك.
 
@@ -84,11 +84,11 @@ ms.locfileid: "63681425"
 
 2. في القائمة **عرض** ، اختر **البريد الإلكتروني** \> **الكل** من القائمة المنسدلة.
 
-    ![قائمة عرض مستكشف التهديدات والبريد الإلكتروني - البرامج الضارة والتصيد الاحتيالي والمرسلات وجميع خيارات البريد الإلكتروني، أيضا المحتوى - البرامج الضارة.](../../media/tp-InvestigateMalEmail-viewmenu.png)
+    :::image type="content" source="../../media/tp-InvestigateMalEmail-viewmenu.png" alt-text="القائمة المنسدل &quot;البرامج الضارة&quot;" lightbox="../../media/tp-InvestigateMalEmail-viewmenu.png":::
 
     طريقة *عرض البرامج* الضارة هي طريقة العرض الافتراضية حاليا، وتلتقط رسائل البريد الإلكتروني حيث يتم الكشف عن وجود خطر البرامج الضارة. تعمل *طريقة* عرض التصيد الاحتيالي بالطريقة نفسها، في حالة التصيد الاحتيالي.
 
-    ومع ذلك *، تسرد كل طريقة عرض* البريد الإلكتروني كل بريد تستلمه المؤسسة، سواء تم الكشف عن تهديدات أم لا. كما يمكنك أن تتصور، هذه بيانات كثيرة، ولهذا السبب تعرض طريقة العرض هذه عنصر نائب يطلب تطبيق عامل تصفية. (تتوفر طريقة العرض هذه فقط لعملاء Office 365 P2).)
+    ومع ذلك *، تسرد كل طريقة عرض* البريد الإلكتروني كل بريد تستلمه المؤسسة، سواء تم الكشف عن تهديدات أم لا. كما يمكنك أن تتصور، هذه بيانات كثيرة، ولهذا السبب تعرض طريقة العرض هذه عنصر نائب يطلب تطبيق عامل تصفية. (تتوفر طريقة العرض هذه فقط Defender لـ Office 365 P2.)
 
     *تظهر طريقة* عرض الواجبات المرسلة كل رسائل البريد المرسلة من قبل المسؤول أو المستخدم الذي تم إرسال تقرير به إلى Microsoft.
 
@@ -104,11 +104,11 @@ ms.locfileid: "63681425"
 
    التصفية المتقدمة هي إضافة رائعة لإمكانيات البحث. تسمح قيمة NOT **في عوامل تصفية** مجال المستلم والمرسل والمرسل  للمسؤولين بالتحقق من خلال استبعاد القيم.  هذا الخيار هو **لا يساوي أي تحديد** . يسمح هذا الخيار للمسؤولين باستبعاد علب البريد غير المرغوب فيها من عمليات البحث (على سبيل المثال، علب بريد التنبيهات علب بريد الرد الافتراضية)، وهو مفيد في الحالات التي يبحث فيها المسؤولون عن موضوع معين (على سبيل المثال، الانتباه) حيث لا يمكن تعيين المستلم إلى يساوي أيا من *: defaultMail@contoso.com*. هذه عملية بحث عن قيمة دقيقة.
 
-   ![المستلمون - 'لا يحتوي على أي من' عامل التصفية المتقدم.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-AdvancedFilter.png" alt-text="جزء المستلمون" lightbox="../../media/tp-InvestigateMalEmail-AdvancedFilter.png":::
 
    تساعد إضافة عامل تصفية الوقت إلى تاريخ البدء وتاريخ الانتهاء فريق الأمان على التنقل لأسفل بسرعة. أقصر مدة زمنية مسموح بها هي 30 دقيقة. إذا كان بإمكانك تضييق نطاق الإجراء المريب حسب الإطار الزمني (على سبيل المثال، حدث قبل 3 ساعات)، فإن هذا سيحد من السياق وسيساعد على تحديد المشكلة.
 
-   ![خيار التصفية حسب الساعات لتضييق حجم فرق أمان البيانات التي يجب أن ت المعالجة، ومدتها الأقصر هي 30 دقيقة.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
+   :::image type="content" source="../../media/tp-InvestigateMalEmail-FilterbyHours.png" alt-text="خيار التصفية حسب الساعات" lightbox="../../media/tp-InvestigateMalEmail-FilterbyHours.png":::
 
 6. **الحقول في "مستكشف** التهديدات": يعرض "مستكشف التهديدات" الكثير من معلومات البريد ذات الصلة ب الأمان مثل إجراء التسليم وموقع التسليم والتحرك الخاص والاتجاه والتجاوز وتهديد *URL*.  كما يسمح لفريق الأمان في مؤسستك بالتحقق بيقين أعلى.
 
@@ -190,8 +190,8 @@ ms.locfileid: "63681425"
 
 [إعادة معالجة البريد الإلكتروني الضار الذي تم تسليمه في Office 365](remediate-malicious-email-delivered-office-365.md)
 
-[Microsoft Defender Office 365](office-365-ti.md)
+[Microsoft Defender لـ Office 365](office-365-ti.md)
 
 [الحماية من التهديدات في Office 365](protect-against-threats.md)
 
-[عرض تقارير ل Defender for Office 365](view-reports-for-mdo.md)
+[عرض تقارير Defender لـ Office 365](view-reports-for-mdo.md)

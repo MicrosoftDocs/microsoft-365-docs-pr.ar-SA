@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 24cdf18ad510902a533834da2f3595acaa9b33d7
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: be2352ef44d8e9f7430cde39a71c7b7b1167a874
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595247"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634086"
 ---
 # <a name="web-content-filtering"></a>تصفية محتوى ويب
 
@@ -52,7 +52,7 @@ ms.locfileid: "64595247"
 
 قبل تجربة هذه الميزة، تأكد من تلبية المتطلبات التالية:
 
-- يتضمن اشتراكك أحد ما يلي: Windows 10 Enterprise E5، Microsoft 365 E5، الأمان في Microsoft 365 E5، Microsoft 365 E3 + الأمان في Microsoft 365 E5 الوظائف الإضافية أو Microsoft Defender لنقطة النهاية مستقل. 
+- يتضمن اشتراكك أحد ما يلي: Windows 10 Enterprise E5 أو Microsoft 365 E5 أو الأمان في Microsoft 365 E5 أو Microsoft 365 E3 أو Microsoft Defender لنقطة النهاية مستقل. 
 
 - يمكنك الوصول إلى Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">الإلكتروني</a>.
 

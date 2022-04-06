@@ -1,5 +1,5 @@
 ---
-title: بدء العمل باستخدام Microsoft Defender لخطة نقطة النهاية 1
+title: بدء العمل باستخدام Microsoft Defender لنقطة النهاية 1
 description: بدء استخدام Defender for Endpoint Plan 1. تعرف على كيفية استخدام Defender for Cloud وإدارة التنبيهات والأجهزة وعرض التقارير.
 search.appverid: MET150
 author: denisebmsft
@@ -17,17 +17,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: d4e585a7714bddc8c89de75ae49464da7bfe0305
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: c3e7f55a0dd8ad26f2b00b7e2d5840945e777a2a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63574628"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470318"
 ---
-# <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>بدء العمل باستخدام Microsoft Defender لخطة نقطة النهاية 1
+# <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>بدء العمل باستخدام Microsoft Defender لنقطة النهاية 1
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 يمكنك Microsoft 365 Defender المدخل ([https://security.microsoft.com](https://security.microsoft.com)) من عرض معلومات حول التهديدات المكتشفة، وإدارة التنبيهات والحوادث، واتخاذ أي إجراء مطلوب بشأن التهديدات المكتشفة، وإدارة الأجهزة. المدخل Microsoft 365 Defender هو المكان الذي يمكنك فيه بدء التفاعل مع قدرات الحماية من المخاطر التي تحصل عليها مع Defender for Endpoint Plan 1. تصف الأقسام التالية كيفية بدء العمل:
 
@@ -40,7 +40,7 @@ ms.locfileid: "63574628"
 
 المدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) هو المكان الذي يمكنك فيه عرض التنبيهات وإدارة الأجهزة وعرض التقارير. عند تسجيل الدخول إلى Microsoft 365 Defender، ستبدأ بالصفحة الرئيسية، كما هو موضح في الصورة التالية:
 
-:::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="Microsoft 365 Defender المدخل":::
+:::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="مدخل Microsoft 365 Defender" lightbox="../../media/mde-p1/m365-defender-portal.png":::
 
 توفر الصفحة الرئيسية لفريق الأمان لديك طريقة عرض مجمعة للتنبيهات، حالة الجهاز، والتهديدات التي تم الكشف عنها. تم إعداد Defender for Cloud بحيث يمكن لفريق عمليات الأمان العثور على المعلومات التي يبحث عنها بسرعة وسهولة.
 
@@ -51,11 +51,11 @@ ms.locfileid: "63574628"
 
 تتضمن الصفحة الرئيسية بطاقات، مثل بطاقة الأحداث النشطة المعروضة في الصورة التالية:
 
-:::image type="content" source="../../media/mde-p1/active-incidents-card.png" alt-text="بطاقة الأحداث النشطة":::
+:::image type="content" source="../../media/mde-p1/active-incidents-card.png" alt-text="بطاقة الأحداث النشطة" lightbox="../../media/mde-p1/active-incidents-card.png":::
 
 توفر لك البطاقة معلومات بنظرة سريعة، إلى جانب ارتباط أو زر يمكنك تحديده لعرض معلومات أكثر تفصيلا. في إشارة إلى بطاقة الأحداث النشطة كمثال، يمكننا تحديد عرض **كل** الأحداث للانتقال إلى قائمة الأحداث.
 
-:::image type="content" source="../../media/mde-p1/incidents.png" alt-text="قائمة الأحداث":::
+:::image type="content" source="../../media/mde-p1/incidents.png" alt-text="قائمة الأحداث" lightbox="../../media/mde-p1/incidents.png":::
 
 ### <a name="navigation-bar-makes-it-easy-to-find-alerts-the-action-center-and-more"></a>شريط التنقل يسهل العثور على التنبيهات ومركز الإجراءات والمزيد
 
@@ -76,8 +76,8 @@ ms.locfileid: "63574628"
 |  **نقاط النهاية** >  **تكوين & أساسية** >  **خطوط الأمان الأساسية** | إن خطوط الأمان الأساسية هي سياسات مكونة مسبقا ومجموعات من الإعدادات التي يمكن أن تساعدك على تطبيق إعدادات الأمان الموصى بها بكفاءة وفعالية. تتضمن الأساسات الإعدادات التي تستند إلى أفضل الممارسات الصناعية. يمكنك الاحتفاظ بإعداداتك الافتراضية أو تخصيص خطوط الأساس لتتناسب مع احتياجات مؤسستك. <br/><br/> لمعرفة المزيد، راجع [استخدام خطوط الأمان الأساسية لتكوين Windows 10 في Intune](/mem/intune/protect/security-baselines). |
 |  **نقاط النهاية** >  **تكوين & أساسية** >  **إدارة التكوين** | للانتقال إلى صفحة **إدارة تكوين** الجهاز، حيث يمكنك عرض معلومات حول الأجهزة المجهزة، واتخاذ خطوات لتهيئة المزيد من الأجهزة. |
 | **التقارير** | للانتقال إلى تقاريرك، مثل تقرير الحماية من المخاطر[](threat-protection-reports.md)، تقرير حماية الجهاز [](machine-reports.md)وتوافقه، تقرير [حماية ويب](web-protection-overview.md). |
-| **الصحة** | يتضمن ارتباطات إلى **مركز "صحة الخدمة****" و"الرسائل**".  |
-| **الصحة** >  **صحة الخدمة** | الانتقال إلى صفحة حالة الخدمة في مركز مسؤولي Microsoft 365. تمكنك هذه الصفحة من عرض حالة الصحة عبر جميع الخدمات المتوفرة مع اشتراكات مؤسستك.   |
+| **الصحة** | يتضمن ارتباطات **إلى Service health** **ومركز الرسائل**.  |
+| **الصحة** >  **Service health** | للانتقال إلى Service health في مركز مسؤولي Microsoft 365. تمكنك هذه الصفحة من عرض حالة الصحة عبر جميع الخدمات المتوفرة مع اشتراكات مؤسستك.   |
 | **الصحة** >  **مركز الرسائل** | الانتقال إلى مركز الرسائل في مركز مسؤولي Microsoft 365. يوفر مركز الرسائل معلومات حول التغييرات المخطط لها. تصف كل رسالة ما هو قادم، وكيفية تأثيرها على المستخدمين، وكيفية إدارة التغييرات. |  
 | **الأذونات & الأدوار** | يمكنك من منح الأذونات لاستخدام Microsoft 365 Defender الإلكتروني. يتم منح الأذونات من خلال الأدوار في Azure Active Directory (Azure AD). حدد دورا، ويظهر جزء منتف. تحتوي القائمة flyout على ارتباط إلى Azure AD حيث يمكنك إضافة أعضاء أو إزالتهم في مجموعة دور. <br/><br/> لمعرفة المزيد، راجع [إدارة الوصول إلى المدخل باستخدام عنصر تحكم الوصول المستند إلى الدور](rbac.md).  |
 | **الإعدادات** | الانتقال إلى الإعدادات العامة لمدخل Microsoft 365 Defender (مدرج ك **مركز** أمان) و Defender لنقطة النهاية (مدرج **كنقاط نهاية**). <br/><br/> لمعرفة المزيد[، راجع الإعدادات](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
@@ -94,7 +94,7 @@ ms.locfileid: "63574628"
 
 حدد حادثا لعرض تفاصيل حول الحادث. تتضمن التفاصيل التنبيهات التي تم تشغيلها، وكم عدد الأجهزة والمستخدمين المتأثرين، وتفاصيل أخرى. تعرض الصورة التالية مثالا التفاصيل الخاصة بالحادث.
 
-:::image type="content" source="../../media/mde-p1/single-incident.png" alt-text="تفاصيل الحادث":::
+:::image type="content" source="../../media/mde-p1/single-incident.png" alt-text="تفاصيل حادث" lightbox="../../media/mde-p1/single-incident.png":::
 
 استخدم **علامات** التبويب تنبيهات وأجهزة ومستخدمين لعرض مزيد من المعلومات، مثل التنبيهات التي تم تشغيلها والأجهزة المتأثرة وحسابات المستخدمين التي تأثرت. من هناك، يمكنك اتخاذ إجراءات استجابة يدوية، مثل عزل جهاز، وتوقف ملف وجرجرته، وما إلى ذلك.
 
@@ -105,11 +105,11 @@ ms.locfileid: "63574628"
 
 لعرض أجهزة مؤسستك وإدارتها، في شريط التنقل، ضمن **نقاط** النهاية، حدد **مخزون الجهاز**. سترى قائمة بالأجهزة كما هو موضح في الصورة التالية:
 
-:::image type="content" source="../../media/mde-p1/device-inventory.png" alt-text="مخزون الجهاز":::
+:::image type="content" source="../../media/mde-p1/device-inventory.png" alt-text="مخزون الجهاز" lightbox="../../media/mde-p1/device-inventory.png":::
 
 تتضمن القائمة الأجهزة التي تم إنشاء التنبيهات لها. بشكل افتراضي، تكون البيانات المعروضة لل 30 يوما الماضية، مع إدراج العناصر الأخيرة أولا. حدد جهازا لعرض مزيد من المعلومات حوله. يتم فتح جزء منتحل، كما هو موضح في الصورة التالية:
 
-:::image type="content" source="../../media/mde-p1/device-inventory-selecteddevice.png" alt-text="تفاصيل الجهاز المحددة":::
+:::image type="content" source="../../media/mde-p1/device-inventory-selecteddevice.png" alt-text="تفاصيل الجهاز المحددة" lightbox="../../media/mde-p1/device-inventory-selecteddevice.png":::
 
 يعرض جزء القائمة المنبهة التفاصيل، مثل أي تنبيهات نشطة للجهاز، ويتضمن ارتباطات لاتخاذ إجراء، مثل عزل جهاز.
 
@@ -139,7 +139,7 @@ ms.locfileid: "63574628"
 
 للوصول إلى تقرير الحماية من المخاطر، في Microsoft 365 Defender، اختر تقارير، ثم اختر **الحماية من المخاطر**. يعرض تقرير الحماية من المخاطر اتجاهات التنبيهات، الحالة، الفئات، والمزيد. يتم ترتيب طرق العرض في عمودين: **اتجاهات التنبيهات** حالة **التنبيه، كما** هو موضح في الصورة التالية:
 
-:::image type="content" source="../../media/mde-p1/threat-protection-report.png" alt-text="تقرير الحماية من المخاطر":::
+:::image type="content" source="../../media/mde-p1/threat-protection-report.png" alt-text="تقرير الحماية من المخاطر" lightbox="../../media/mde-p1/threat-protection-report.png":::
 
 قم بالتمرير لأسفل لرؤية كل طرق العرض في كل قائمة.
 
@@ -153,7 +153,7 @@ ms.locfileid: "63574628"
 
 للوصول إلى تقرير حالة الجهاز، في Microsoft 365 Defender، اختر تقارير، ثم اختر **حالة الجهاز**. يعرض تقرير حالة الجهاز حالة الحماية و مكافحة الفيروسات عبر الأجهزة في مؤسستك. على غرار تقرير الحماية من [المخاطر](#threat-protection-report)، يتم ترتيب طرق العرض في عمودين **: اتجاهات** الجهاز وملخص الجهاز، كما هو موضح في الصورة التالية:
 
-:::image type="content" source="../../media/mde-p1/device-health-report.png" alt-text="تقرير حول صحة الجهاز":::
+:::image type="content" source="../../media/mde-p1/device-health-report.png" alt-text="تقرير حول صحة الجهاز" lightbox="../../media/mde-p1/device-health-report.png":::
 
 قم بالتمرير لأسفل لرؤية كل طرق العرض في كل قائمة. بشكل افتراضي، تعرض طرق العرض في  العمود اتجاهات الجهاز بيانات لآخر 30 يوما، ولكن يمكنك تغيير طريقة عرض لعرض بيانات لآخر ثلاثة أشهر أو ستة أشهر أو نطاق وقت مخصص (ما يصل إلى 180 يوما). طرق **عرض ملخص** الجهاز هي لقطات ليوم العمل السابق.
 
@@ -164,7 +164,7 @@ ms.locfileid: "63574628"
 
 للوصول إلى تقرير حماية الجهاز، في Microsoft 365 Defender، اختر تقارير، ثم اختر **حماية ويب**. يعرض تقرير حماية ويب الاكتشافات مع مرور الوقت، مثل عناوين URL الضارة ومحاولات الوصول إلى عناوين URL المحظورة، كما هو موضح في الصورة التالية:
 
-:::image type="content" source="../../media/mde-p1/web-protection-report.png" alt-text="تقرير حماية ويب":::
+:::image type="content" source="../../media/mde-p1/web-protection-report.png" alt-text="تقرير حماية ويب" lightbox="../../media/mde-p1/web-protection-report.png":::
 
 قم بالتمرير لأسفل لرؤية كل طرق العرض في تقرير حماية الويب. تتضمن بعض طرق العرض ارتباطات تمكنك من عرض المزيد من التفاصيل وتكوين ميزات الحماية من المخاطر وحتى إدارة المؤشرات التي تعمل كالاستثناءات في Defender for Endpoint.
 
@@ -173,5 +173,5 @@ ms.locfileid: "63574628"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-- [إدارة Microsoft Defender لخطة نقطة النهاية 1](mde-p1-maintenance-operations.md)
+- [إدارة Microsoft Defender لنقطة النهاية 1](mde-p1-maintenance-operations.md)
 - [Microsoft Defender لنقطة النهاية](microsoft-defender-endpoint.md)

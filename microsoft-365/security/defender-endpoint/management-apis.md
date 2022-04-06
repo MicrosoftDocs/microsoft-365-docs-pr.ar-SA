@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 36975b55d8f26ae7788495543ae42922ea404c66
-ms.sourcegitcommit: 986ea76ecaceb5fe6b9616e553003e3c5b0df2e7
+ms.openlocfilehash: cc73531540222791eb39eeca74570f34ff78a1b7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "63583158"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469768"
 ---
 # <a name="overview-of-management-and-apis"></a>نظرة عامة على الإدارة و واجهات برمجة التطبيقات
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mgt-apis-abovefoldlink)
@@ -41,7 +41,7 @@ ms.locfileid: "63583158"
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>الوصول إلى نقطة النهاية والوصول إلى المدخل
 
-يتم دمج تهيئة الأجهزة بشكل كامل في إدارة نقاط النهاية من Microsoft و Microsoft Intune للأجهزة العميلة و Microsoft Defender للأجهزة الخادمة، مما يوفر تجربة كاملة من النهاية إلى النهاية من التكوين والنشر والمراقبة. بالإضافة إلى ذلك، يدعم Microsoft Defender ل Endpoint "نهج المجموعة" وأدوات  الأطراف الخارجية الأخرى المستخدمة لإدارة الأجهزة.
+يتم دمج تهيئة الأجهزة بشكل كامل في إدارة نقاط النهاية من Microsoft و Microsoft Intune للأجهزة العميلة و Microsoft Defender للأجهزة الخادمة، مما يوفر تجربة كاملة من النهاية إلى النهاية من التكوين والنشر والمراقبة. بالإضافة إلى ذلك، Microsoft Defender لنقطة النهاية هذه نهج المجموعة أدوات أخرى تستخدمها جهة خارجية لإدارة الأجهزة.
 
 يوفر Defender for Endpoint إمكانية التحكم الدقيقة في ما يمكن للمستخدمين الذين لديهم حق الوصول إلى المدخل رؤيته وفعله من خلال مرونة التحكم بالوصول المستند إلى الدور (RBAC). يدعم نموذج RBAC كل أنواع بنية فرق الأمان:
 
@@ -51,19 +51,19 @@ ms.locfileid: "63583158"
 
 ## <a name="available-apis"></a>واجهات برمجة التطبيقات المتوفرة
 
-تم بناء حل Microsoft Defender ل Endpoint أعلى النظام الأساسي الجاهز للتكامل.
+لقد Microsoft Defender لنقطة النهاية هذا الحل على أعلى النظام الأساسي الجاهز للتكامل.
 
 يعرض Defender for Endpoint الكثير من بياناته والإجراءات الخاصة به من خلال مجموعة من واجهات برمجة التطبيقات البرنامجية. ستمكنك واجهات برمجة التطبيقات هذه من أتمتة مهام سير العمل وابتعازها استنادا إلى قدرات Defender لنقطة النهاية.
 
-![صورة ل API المتوفرة والتكامل في Microsoft Defender لنقطة النهاية.](images/mdatp-apis.png)
+:::image type="content" source="images/mdatp-apis.png" alt-text="API المتوفرة والتكامل في Microsoft Defender لنقطة النهاية" lightbox="images/mdatp-apis.png":::
 
 يمكن تجميع واجهات برمجة التطبيقات ل Defender for Endpoint في ثلاثة:
 
-- واجهات برمجة تطبيقات Microsoft Defender لنقطة النهاية
+- Microsoft Defender لنقطة النهاية واجهات برمجة التطبيقات
 - API لتدفق البيانات الخام
 - تكامل SIEM
 
-## <a name="microsoft-defender-for-endpoint-apis"></a>واجهات برمجة تطبيقات Microsoft Defender لنقطة النهاية
+## <a name="microsoft-defender-for-endpoint-apis"></a>Microsoft Defender لنقطة النهاية واجهات برمجة التطبيقات
 
 يوفر Defender for Endpoint نموذج API الطبقات يعرض البيانات والإمكانات في نموذج منظم وواضح وسهل الاستخدام، يتم عرضه من خلال نموذج تخويل ومصادقة قياسي مستند إلى Azure AD يسمح بالوصول في سياق المستخدمين أو تطبيقات SaaS. تم تصميم نموذج API لكشف الكيانات والإمكانات في نموذج متناسق.
 
@@ -92,6 +92,6 @@ ms.locfileid: "63583158"
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
-- [الوصول إلى واجهات برمجة تطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md)
+- [الوصول إلى Microsoft Defender لنقطة النهاية برمجة التطبيقات](apis-intro.md)
 - [واجهات برمجة التطبيقات المعتمدة](exposed-apis-list.md)
 - [فرص الشريك التقني](partner-integration.md)

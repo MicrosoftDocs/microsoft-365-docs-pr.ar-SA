@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 30218ea9b3b5ecbec20fdbc3364546d25c80bcab
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 8334ce03bac5b7d4518433f83ab34d5f86e71339
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507503"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634152"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>استكشاف الأخطاء وإصلاحها عند التبديل إلى Microsoft Defender لنقطة النهاية
 
@@ -41,28 +41,8 @@ ms.locfileid: "64507503"
 
 لحل هذه المشكلة، اتبع الخطوات التالية:
 
-1. [قم بتعيين مفتاح التسجيل DisableAntiSpyware إلى false](#set-the-disableantispyware-registry-key-to-false).
-2. [أضف Microsoft Defender لنقطة النهاية إلى قائمة الاستثناء](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
-3. [تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي يدويا](#set-microsoft-defender-antivirus-to-passive-mode-manually).
-
-### <a name="set-the-disableantispyware-registry-key-to-false"></a>تعيين مفتاح تسجيل DisableAntiSpyware إلى خطأ
-
-تم [استخدام مفتاح تسجيل DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) في الماضي لتعطيل برنامج الحماية من الفيروسات من Microsoft Defender، ونشر منتج آخر من برامج الحماية من الفيروسات، مثل McAfee أو Symantec أو غيرها. **بشكل عام**`DisableAntiSpyware`، يجب ألا يكون لديك مفتاح التسجيل هذا على أجهزة Windows ونقاط النهاية؛ ومع ذلك، إذا قمت بتكوينها، فيما يلي كيفية تعيين قيمتها إلى خطأ:
-
-1. على جهاز Windows، افتح محرر السجل.
-
-2. انتقل إلى `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
-
-3. في هذا المجلد، ابحث عن إدخال DWORD يسمى **DisableAntiSpyware**.
-   - إذا لم تشاهد هذا الإدخال، تكون قد تم تعيينه.
-   - إذا رأيت **DisableAntiSpyware**، فاتابع إلى الخطوة 4.
-
-4. انقر ب الماوس الأيمن فوق DisableAntiSpyware DWORD، ثم اختر **تعديل**.
-
-5. قم بتعيين القيمة إلى `0`. (يحدد هذا الإجراء قيمة مفتاح التسجيل إلى *خطأ*.)
-
-> [!TIP]
-> لمعرفة المزيد حول مفتاح التسجيل هذا، راجع [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
+1. [أضف Microsoft Defender لنقطة النهاية إلى قائمة الاستثناء](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
+2. [تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي يدويا](#set-microsoft-defender-antivirus-to-passive-mode-manually).
 
 ### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>إضافة Microsoft Defender لنقطة النهاية إلى قائمة الاستثناء
 

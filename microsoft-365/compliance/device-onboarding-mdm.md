@@ -1,5 +1,5 @@
 ---
-title: أجهزة Windows 10 Windows 11 الأجهزة باستخدام أدوات إدارة أجهزة المحمول
+title: إلحاق أجهزة Windows 10 وأجهزة Windows 11 باستخدام أدوات إدارة الأجهزة المحمولة
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,20 +14,20 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: استخدم أدوات "إدارة أجهزة المحمول" لنشر حزمة التكوين على الأجهزة بحيث يتم تهيئة هذه الحزمة في الخدمة.
-ms.openlocfilehash: 578a1e06bf5f83f700c5db69ddc32a480d68b729
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+description: استخدم أدوات إدارة الجهاز المحمول لنشر حزمة التكوين على الأجهزة بحيث يتم تهيئةها للخدمة.
+ms.openlocfilehash: 9b329ccf86a2364c13ac72bd4348711d72c17ff5
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63578553"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634482"
 ---
-# <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>أجهزة Windows 10 Windows 11 الأجهزة باستخدام أدوات إدارة أجهزة المحمول
+# <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>إلحاق أجهزة Windows 10 وأجهزة Windows 11 باستخدام أدوات إدارة الأجهزة المحمولة
 
 **ينطبق على:**
 
 - [Microsoft 365 فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
-- [إدارة مخاطر Insider](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [إدارة المخاطر الداخلية](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 يمكنك استخدام حلول إدارة أجهزة المحمول (MDM) لتكوين الأجهزة. Microsoft 365 حماية المعلومات إلى دعم MDMs من خلال توفير OMA-URIs لإنشاء سياسات لإدارة الأجهزة.
 
@@ -39,12 +39,12 @@ ms.locfileid: "63578553"
 
 ## <a name="onboard-devices-using-microsoft-intune"></a>الأجهزة المجهزة باستخدام Microsoft Intune
 
-اتبع الإرشادات الواردة [من Intune](/intune/advanced-threat-protection).
-
+اتبع الإرشادات الواردة [من Intune](/mem/intune/protect/advanced-threat-protection-configure).
+ 
 > [!NOTE]
 > - يستخدم **نهج حالة الصحة** للأجهزة المجهزة خصائص للقراءة فقط ولا يمكن إصلاحها.
 
-## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>إيقاف تشغيل الأجهزة ومراقبتها باستخدام أدوات إدارة أجهزة المحمول
+## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>إيقاف تشغيل الأجهزة ومراقبتها باستخدام أدوات الأجهزة المحمولة إدارة الجهاز المحمول
 
 لأسباب تتعلق الأمان، ستنتهي صلاحية الحزمة المستخدمة في أجهزة Offboard بعد 30 يوما من تاريخ تنزيلها. سيتم رفض حزم إيقاف التشغيل منتهية الصلاحية المرسلة إلى جهاز. عند تنزيل حزمة إيقاف التشغيل، سيتم إعلامك بتاريخ انتهاء صلاحية الحزم، كما سيتم تضمينها في اسم الحزمة.
 
@@ -55,7 +55,7 @@ ms.locfileid: "63578553"
 
 2. في جزء التنقل **، حدد الإعدادات** >  **الإعادة الboardingOffboarding** > .
 
-3. في الحقل **أسلوب النشر**، حدد **إدارة أجهزة المحمول / Microsoft Intune**.
+3. في الحقل **أسلوب النشر**، حدد الأجهزة المحمولة إدارة الجهاز **/ Microsoft Intune**.
 
 4. انقر **فوق تنزيل الحزمة**، واحفظ .zip الملف.
 
@@ -69,7 +69,7 @@ ms.locfileid: "63578553"
     Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
     ```
 > [!NOTE]
-> إذا تم تكوين Microsoft Defender لنقطة النهاية بالفعل، يمكنك تشغيل إعداد  الجهاز ولم تعد الخطوة 6 مطلوبة.
+> إذا Microsoft Defender لنقطة النهاية تم تكوينه بالفعل، يمكنك **تشغيل** تهيئة الجهاز ولم تعد الخطوة 6 مطلوبة.
 
 > [!NOTE]
 > يستخدم **نهج حالة الصحة** للأجهزة غير المجهزة خصائص للقراءة فقط ولا يمكن إصلاحها.
@@ -78,7 +78,7 @@ ms.locfileid: "63578553"
 > يؤدي إيقاف التشغيل إلى إيقاف الجهاز عن إرسال بيانات المستشعر إلى المدخل ولكن سيتم الاحتفاظ بالبيانات من الجهاز، بما في ذلك الإشارة إلى أي تنبيهات لديه لمدة تصل إلى 6 أشهر.
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
-- [أجهزة Windows 10 باستخدام "نهج المجموعة"](device-onboarding-gp.md)
+- [أجهزة Windows 10 باستخدام نهج المجموعة](device-onboarding-gp.md)
 - [أجهزة Windows 10 التي تستخدم Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
 - [أجهزة Windows 10 باستخدام برنامج نصي محلي](device-onboarding-script.md)
 - [أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة](device-onboarding-vdi.md)

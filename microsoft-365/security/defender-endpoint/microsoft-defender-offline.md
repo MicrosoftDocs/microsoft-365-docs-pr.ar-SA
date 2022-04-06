@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 75179fc3daf8e375ace6cc4c1566abf1e18cdfaa
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: ccb65b865afdf2a0ec0210c3593daee1cb5c09b6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "63573880"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476830"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>تشغيل نتائج فحص Microsoft Defender في وضع عدم الاتصال ومراجعتها
 
@@ -28,8 +28,8 @@ ms.locfileid: "63573880"
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender في وضع عدم الاتصال أداة مسح البرامج الضارة التي تتيح لك تشغيل عملية فحص وتشغيلها من بيئة موثوق بها. يتم تشغيل الفحص من خارج نواة Windows العادية بحيث يمكن أن تستهدف البرامج الضارة التي تحاول تجاوز قوقعة Windows، مثل الفيروسات ومفاتحي الجذر التي تسبب إصابة سجل التشغيل الرئيسي (MBR) أو تتخطىه.
 
@@ -57,7 +57,7 @@ Microsoft Defender في وضع عدم الاتصال في Windows 10 Windows 11 
 Microsoft Defender في وضع عدم الاتصال آخر تحديثات الحماية المتوفرة على نقطة النهاية؛ يتم تحديثها كلما برنامج الحماية من الفيروسات لـ Windows Defender تحديثها.
 
 > [!NOTE]
-> قبل تشغيل الفحص دون اتصال، يجب أن تحاول تحديث حماية AV من Microsoft Defender. يمكنك فرض تحديث باستخدام "نهج المجموعة" أو على الرغم من ذلك، يمكنك عادة نشر التحديثات إلى نقاط النهاية، أو يمكنك تنزيل آخر تحديثات الحماية وتثبيتها [يدويا](https://www.microsoft.com/security/portal/definitions/adl.aspx) من مركز الحماية من البرامج الضارة لـ Microsoft.
+> قبل تشغيل الفحص دون اتصال، يجب أن تحاول تحديث حماية AV من Microsoft Defender. يمكنك فرض تحديث باستخدام نهج المجموعة أو يمكنك عادة نشر التحديثات إلى نقاط النهاية، أو يمكنك تنزيل آخر تحديثات الحماية وتثبيتها [يدويا](https://www.microsoft.com/security/portal/definitions/adl.aspx) من مركز الحماية من البرامج الضارة لـ Microsoft.
 
 راجع [الموضوع إدارة برنامج الحماية من الفيروسات من Microsoft Defender معلومات](manage-protection-updates-microsoft-defender-antivirus.md) الأمان للحصول على مزيد من المعلومات.
 
@@ -69,15 +69,15 @@ Microsoft Defender في وضع عدم الاتصال آخر تحديثات ال�
 
 يمكن أن تحدث المطالبة عبر إعلام، على غرار ما يلي:
 
-:::image type="content" source="../../media/notification.png" alt-text="إعلام لتشغيل Microsoft Defender في وضع عدم الاتصال.":::
+:::image type="content" source="../../media/notification.png" alt-text="إعلام لتشغيل Microsoft Defender في وضع عدم الاتصال" lightbox="../../media/notification.png":::
 
 سيتم أيضا إعلام المستخدم داخل Windows Defender.
 
-في إدارة التكوين، يمكنك تحديد حالة نقاط النهاية من خلال الانتقال إلى مراقبة > نظرة عامة > **حالة > Endpoint Protection حالة > System Center Endpoint Protection.**
+في Configuration Manager، يمكنك تحديد حالة نقاط النهاية من خلال الانتقال إلى > نظرة عامة > حالة > Endpoint Protection حالة > System Center Endpoint Protection **.**
 
 Microsoft Defender في وضع عدم الاتصال المسح الضوئي **ضمن حالة إصلاح** البرامج الضارة كما هو مطلوب الفحص **دون اتصال**.
 
-:::image type="content" source="../../media/sccm-wdo.png" alt-text="Microsoft Defender في وضع عدم الاتصال المسح الضوئي مطلوبا.":::
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="مؤشر فحص Microsoft Defender في وضع عدم الاتصال" lightbox="../../media/sccm-wdo.png":::
 
 ## <a name="configure-notifications"></a>تكوين الإعلامات
 

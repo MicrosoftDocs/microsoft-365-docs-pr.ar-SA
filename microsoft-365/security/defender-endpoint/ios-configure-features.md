@@ -1,7 +1,7 @@
 ---
 title: تكوين Microsoft Defender لنقطة النهاية على ميزات iOS
 description: يصف كيفية نشر Microsoft Defender لنقطة النهاية على ميزات iOS.
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، ios، تكوين، ميزات، ios
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، ios، تكوين، ميزات، ios
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,19 +15,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 85ddada93e20e36648fccdb0fe9b2b34ab473212
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: c52fac7c5680d8e5f814098410dc2e1993328d2f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681469"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476896"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>تكوين Microsoft Defender لنقطة النهاية على ميزات iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -37,13 +37,13 @@ ms.locfileid: "63681469"
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>الوصول الشرطي باستخدام Defender for Endpoint على iOS
 
-يمكن Microsoft Defender ل Endpoint على نظام التشغيل iOS مع Microsoft Intune و Azure Active Directory فرض توافق الأجهزة ونهج الوصول الشرطي استنادا إلى درجة مخاطر الجهاز. Defender for Endpoint هو حل الدفاع عن المخاطر عبر الأجهزة المحمولة (MTD) الذي يمكنك نشره للاستفادة من هذه الإمكانية عبر Intune.
+Microsoft Defender لنقطة النهاية على نظام iOS مع Microsoft Intune يعمل Azure Active Directory على تمكين فرض توافق الأجهزة ونهج الوصول الشرطي استنادا إلى درجة مخاطر الجهاز. Defender for Endpoint هو حل الدفاع عن المخاطر عبر الأجهزة المحمولة (MTD) الذي يمكنك نشره للاستفادة من هذه الإمكانية عبر Intune.
 
 لمزيد من المعلومات حول كيفية إعداد الوصول الشرطي باستخدام Defender لنقطة النهاية على iOS، راجع [Defender for Endpoint و Intune](/mem/intune/protect/advanced-threat-protection).
 
 ### <a name="jailbreak-detection-by-microsoft-defender-for-endpoint"></a>الكشف عن التسلل من قبل Microsoft Defender لنقطة النهاية
 
-لدى Microsoft Defender for Endpoint القدرة على الكشف عن الأجهزة غير المدارة والمدارة التي تم إلغاء اجتياجها. إذا تم الكشف عن وجود جهاز تم إلغاء غلقه، سيتم إرسال تنبيه عالي المخاطر إلى مدخل Microsoft 365 Defender وإذا تم إعداد "الوصول الشرطي" استنادا إلى درجة مخاطر الجهاز، سيتم حظر الجهاز من الوصول إلى بيانات الشركة.
+Microsoft Defender لنقطة النهاية على إمكانية الكشف عن الأجهزة غير المدارة والمدارة التي تم إلغاء إلغاء جنونها. إذا تم الكشف عن وجود جهاز تم إلغاء غلقه، سيتم إرسال تنبيه عالي المخاطر إلى مدخل Microsoft 365 Defender وإذا تم إعداد "الوصول الشرطي" استنادا إلى درجة مخاطر الجهاز، سيتم حظر الجهاز من الوصول إلى بيانات الشركة.
 
 ## <a name="web-protection-and-vpn"></a>Web Protection و VPN
 
@@ -54,54 +54,54 @@ ms.locfileid: "63681469"
 على الرغم من تمكينه بشكل افتراضي، قد تكون هناك بعض الحالات التي تتطلب منك تعطيل VPN. على سبيل المثال، تريد تشغيل بعض التطبيقات التي لا تعمل عند تكوين VPN. في مثل هذه الحالات، يمكنك اختيار تعطيل VPN من التطبيق على الجهاز باتباع الخطوات أدناه:
 
 1. على جهاز iOS، **افتح تطبيق الإعدادات**، وانقر فوق **عام** ثم على VPN أو اضغط **عليه**.
-1. انقر فوق الزر "i" ل Microsoft Defender لنقطة النهاية أو اضغط عليه.
+1. انقر فوق الزر "i" أو اضغط عليه Microsoft Defender لنقطة النهاية.
 1. قم بتبدل الاتصال **عند الطلب** لتعطيل VPN.
 
     > [!div class="mx-imgBorder"]
-    > ![تواصل مؤتمرات VPN عند الطلب.](images/ios-vpn-config.png)
+    > :::image type="content" source="images/ios-vpn-config.png" alt-text="الزر &quot;تبديل&quot; الخاص بخيار &quot;الاتصال VPN عند الطلب&quot;" lightbox="images/ios-vpn-config.png":::
 
 > [!NOTE]
-> لن تكون حماية الويب متوفرة عند تعطيل VPN. لإعادة تمكين حماية الويب، افتح تطبيق Microsoft Defender for Endpoint على الجهاز وانقر فوق **بدء VPN** أو اضغط عليه.
+> لن تكون حماية الويب متوفرة عند تعطيل VPN. لإعادة تمكين حماية الويب، افتح Microsoft Defender لنقطة النهاية على الجهاز وانقر فوق **بدء VPN** أو اضغط عليه.
 
 ## <a name="co-existence-of-multiple-vpn-profiles"></a>الوجود المشترك لملفات تعريف VPN متعددة
 
 لا يدعم Apple iOS العديد من الشبكات VPN على مستوى الجهاز لكي تكون نشطة في الوقت نفسه. على الرغم من أن ملفات تعريف VPN المتعددة يمكن أن تكون موجودة على الجهاز، إلا أن VPN واحد فقط يمكن أن يكون نشطا في كل مرة.
 
-## <a name="configure-microsoft-defender-for-endpoint-risk-signal-in-app-protection-policy-mam"></a>تكوين إشارة مخاطر Microsoft Defender لنقطة النهاية في نهج حماية التطبيق (MAM)
+## <a name="configure-microsoft-defender-for-endpoint-risk-signal-in-app-protection-policy-mam"></a>تكوين Microsoft Defender لنقطة النهاية المخاطر في نهج حماية التطبيق (MAM)
 
-يمكن تكوين Microsoft Defender لنقطة النهاية لإرسال إشارات التهديد التي سيتم استخدامها في "سياسات حماية التطبيقات" (APP، المعروفة أيضا ب MAM) على iOS/iPadOS. باستخدام هذه الإمكانية، يمكنك استخدام Microsoft Defender لنقطة النهاية لحماية الوصول إلى بيانات الشركة من الأجهزة غير المشتركة أيضا.
+Microsoft Defender لنقطة النهاية تكوين رسائل لإرسال إشارات التهديد التي سيتم استخدامها في "سياسات حماية التطبيقات" (APP، المعروفة أيضا باسم MAM) على iOS/iPadOS. باستخدام هذه الإمكانية، يمكنك استخدام Microsoft Defender لنقطة النهاية لحماية الوصول إلى بيانات الشركة من الأجهزة غير المشتركة أيضا.
 
-الخطوات اللازمة لإعداد سياسات حماية التطبيق باستخدام Microsoft Defender لنقطة النهاية هي كما يلي:
+الخطوات اللازمة لإعداد سياسات حماية التطبيقات باستخدام Microsoft Defender لنقطة النهاية هي كما يلي:
 
-1. قم بإعداد الاتصال من إدارة نقاط النهاية من Microsoft المستأجر ب Microsoft Defender ل Endpoint. في [مركز إدارة إدارة Microsoft Endpoint](https://go.microsoft.com/fwlink/?linkid=2109431) \>  \>، انتقل إلى موصلات إدارة المستأجر والرموز المميزة **ل Microsoft Defender لنقطة** النهاية (ضمن النظام الأساسي المتقاطع)  \> أو نقطة النهاية أمان **Microsoft Defender لنقطة** النهاية (ضمن الإعداد) ثم قم تشغيل تبديل القائمة ضمن نهج حماية التطبيقات **الإعدادات ل iOS**.
+1. قم بإعداد الاتصال من إدارة نقاط النهاية من Microsoft المستأجر Microsoft Defender لنقطة النهاية. في [مركز إدارة إدارة نقطة نهاية Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) \>  \>، انتقل إلى موصلات **إدارة المستأجر** والرموز المميزة Microsoft Defender لنقطة النهاية (ضمن النظام الأساسي المتقاطع) \> أو وحدة أمان نقطة **النهاية Microsoft Defender لنقطة النهاية** (ضمن إعداد) ثم قم تشغيل رموز تبديل ضمن **نهج حماية الإعدادات ل iOS**.
 1. حدد حفظ. من المفترض أن **ترى حالة الاتصال** تم تعيينها الآن إلى **تم التمكين**.
-1. إنشاء نهج حماية التطبيق: بعد اكتمال إعداد موصل نقطة النهاية ل Microsoft Defender  \>، انتقل إلى نهج حماية تطبيقات **التطبيقات (ضمن** النهج) لإنشاء نهج جديد أو تحديث نهج موجود.
+1. إنشاء نهج حماية التطبيق:  \> بعد اكتمال Microsoft Defender لنقطة النهاية الموصل، انتقل إلى تطبيقات **حماية التطبيقات** نهج التطبيق (ضمن نهج) لإنشاء نهج جديد أو تحديث نهج موجود.
 1. حدد النظام الأساسي **والتطبيقات وحماية البيانات وإعدادات متطلبات Access** التي تتطلبها مؤسستك لنصك.
 1. ضمن **شروط جهاز الإطلاق** \> **الشرطي**، ستجد الإعداد **الحد الأقصى المسموح به لمستوى تهديدات الجهاز**. يجب تكوين هذا إلى منخفض أو متوسط أو عال أو آمن. الإجراءات المتوفرة لك هي **حظر الوصول أو** **مسح البيانات**. قد ترى مربع حوار معلوماتي للتأكد من إعداد الموصل قبل أن يتم تطبيق هذا الإعداد. إذا تم إعداد الموصل بالفعل، فقد تتجاهل مربع الحوار هذا.
 1. يمكنك إنهاء الواجبات وحفظ النهج.
 
 لمزيد من التفاصيل حول MAM أو نهج حماية التطبيق، راجع إعدادات نهج [حماية تطبيق iOS](/mem/intune/apps/app-protection-policy-settings-ios).
 
-### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>نشر Microsoft Defender لنقطة النهاية ل MAM أو على الأجهزة غير المجهزة
+### <a name="deploying-microsoft-defender-for-endpoint-for-mam-or-on-unenrolled-devices"></a>نشر Microsoft Defender لنقطة النهاية MAM أو على الأجهزة غير التي تم نشرها
 
-يمكن Microsoft Defender ل Endpoint على نظام التشغيل iOS سيناريو نهج حماية التطبيقات وهو متوفر في متجر تطبيقات Apple.
+Microsoft Defender لنقطة النهاية على نظام iOS سيناريو نهج حماية التطبيقات وهو متوفر في متجر تطبيقات Apple.
 
 يجب على المستخدمين تثبيت أحدث إصدار من التطبيق مباشرة من متجر تطبيقات Apple.
 
 ## <a name="privacy-controls"></a>عناصر تحكم الخصوصية
 
 > [!IMPORTANT]
-> عناصر تحكم الخصوصية ل Microsoft Defender لنقطة النهاية على نظام التشغيل iOS في وضع المعاينة. تتعلق المعلومات التالية بالمنتج الذي تم إصداره مسبقا والذي قد يتم تعديله بشكل كبير قبل طرحه تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، فيما يتعلق بالمعلومات المتوفرة هنا.
+> عناصر تحكم الخصوصية Microsoft Defender لنقطة النهاية على نظام iOS في المعاينة. تتعلق المعلومات التالية بالمنتج الذي تم إصداره مسبقا والذي قد يتم تعديله بشكل كبير قبل طرحه تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، فيما يتعلق بالمعلومات المتوفرة هنا.
 
 ### <a name="configure-privacy-in-phish-alert-report"></a>تكوين الخصوصية في تقرير تنبيه التصيد الاحتيالي
 
-يمكن للعملاء الآن تمكين التحكم بالخصوصية في تقرير التصيد الاحتيالي المرسل بواسطة Microsoft Defender ل Endpoint على نظام التشغيل iOS. سيضمن ذلك عدم إرسال اسم المجال كجزء من تنبيه التصيد الاحتيالي كلما تم الكشف عن موقع ويب تصيد احتيالي وحظره بواسطة Microsoft Defender ل Endpoint.
+يمكن للعملاء الآن تمكين التحكم بالخصوصية في تقرير التصيد الاحتيالي المرسل بواسطة Microsoft Defender لنقطة النهاية على نظام iOS. سيضمن ذلك عدم إرسال اسم المجال كجزء من تنبيه التصيد الاحتيالي عند اكتشاف موقع ويب تصيد احتيالي وحظره من قبل Microsoft Defender لنقطة النهاية.
 
 استخدم الخطوات التالية لتمكين الخصوصية وليس تجميع اسم المجال كجزء من تقرير تنبيه التصيد الاحتيالي.
 
 1. في [إدارة نقاط النهاية من Microsoft مركز الإدارة واذهب](https://go.microsoft.com/fwlink/?linkid=2109431) إلى سياسات تكوين **تطبيقات** **AppsAddManaged** >  >  >  **الأجهزة**.
 1. قم امنح النهج اسما، النظام الأساسي > **iOS/iPadOS**، وحدد نوع ملف التعريف.
-1. حدد **Microsoft Defender ل Endpoint** ك التطبيق الهدف.
+1. حدد **Microsoft Defender لنقطة النهاية** ك التطبيق الهدف.
 1. في الإعدادات، حدد **استخدام** مصمم التكوين وأضف **DefenderExcludeURLInReport** كمفتاح ونوع القيمة **كقيمة منطقية**
    - لتمكين الخصوصية وليس تجميع اسم المجال، أدخل القيمة ك `true` وتعيين هذا النهج للمستخدمين. بشكل افتراضي، يتم تعيين هذه القيمة إلى `false`.
    - بالنسبة للمستخدمين الذين تم `true`تعيين المفتاح لديهم ك ، لن يحتوي تنبيه التصيد الاحتيالي على معلومات اسم المجال عند الكشف عن موقع ضار وحظره بواسطة Defender for Endpoint.
@@ -114,25 +114,25 @@ ms.locfileid: "63681469"
 لحماية بيانات الشركة من الوصول إليها على أجهزة iOS التي تم إلغاء تأمينها، نوصي بإعداد نهج التوافق التالي على Intune.
 
 > [!NOTE]
-> الكشف عن الكسر هو إمكانية يوفرها Microsoft Defender ل Endpoint على نظام التشغيل iOS. ومع ذلك، نوصي بإعداد هذا النهج كطبقة إضافية من الدفاع ضد سيناريوهات فُر من السجان.
+> الكشف عن التسلل من قبل أحد Microsoft Defender لنقطة النهاية على نظام iOS. ومع ذلك، نوصي بإعداد هذا النهج كطبقة إضافية من الدفاع ضد سيناريوهات فُر من السجان.
 
 اتبع الخطوات أدناه لإنشاء نهج توافق ضد الأجهزة التي تم إلغاء تأمينها.
 
 1. في [إدارة نقاط النهاية من Microsoft إدارة الأجهزة،](https://go.microsoft.com/fwlink/?linkid=2109431) انتقل إلى **نهج DevicesCompliance** ->  **إنشاء** ->  **نهج**. حدد "iOS/iPadOS" كنقر فوق **إنشاء**.
 
     > [!div class="mx-imgBorder"]
-    > ![إنشاء نهج.](images/ios-jb-policy.png)
+    > :::image type="content" source="images/ios-jb-policy.png" alt-text="علامة التبويب &quot;إنشاء نهج&quot;" lightbox="images/ios-jb-policy.png":::
 
 2. حدد اسما النهج، على سبيل المثال "نهج التوافق للانهاء من السجان".
 3. في صفحة إعدادات التوافق، انقر لتوسيع **المقطع حالة** الجهاز وانقر فوق **الحقل حظر** الأجهزة التي تم **إلغاء تأمينها** .
 
     > [!div class="mx-imgBorder"]
-    > ![نهج الإعدادات.](images/ios-jb-settings.png)
+    > :::image type="content" source="images/ios-jb-settings.png" alt-text="علامة التبويب &quot;إعدادات التوافق&quot;" lightbox="images/ios-jb-settings.png":::
 
-4. في المقطع **إجراء لعدم التوافق** ، حدد الإجراءات وفقا لمتطلباتك وحدد **التالي**.
+4. في المقطع **إجراءات لعدم التوافق** ، حدد الإجراءات وفقا لمتطلباتك وحدد **التالي**.
 
     > [!div class="mx-imgBorder"]
-    > ![إجراءات النهج.](images/ios-jb-actions.png)
+    > :::image type="content" source="images/ios-jb-actions.png" alt-text="علامة التبويب &quot;إجراءات لعدم التوافق&quot;" lightbox="images/ios-jb-actions.png":::
 
 5. في المقطع **الواجبات** ، حدد مجموعات المستخدمين التي تريد تضمينها لهذا النهج، ثم حدد **التالي**.
 6. في المقطع **مراجعة+إنشاء** ، تحقق من صحة كل المعلومات التي تم إدخالها، ثم حدد **إنشاء**.
@@ -155,7 +155,7 @@ ms.locfileid: "63681469"
 
 1. في [إدارة نقاط النهاية من Microsoft مركز الإدارة واذهب](https://go.microsoft.com/fwlink/?linkid=2109431) إلى سياسات تكوين **تطبيقات** **AppsAddManaged** >  >  >  **الأجهزة**.
 1. قم امنح النهج اسما، النظام الأساسي > **iOS/iPadOS**، وحدد نوع ملف التعريف.
-1. حدد **Microsoft Defender ل Endpoint** ك التطبيق الهدف.
+1. حدد **Microsoft Defender لنقطة النهاية** ك التطبيق الهدف.
 1. في الإعدادات، حدد **استخدام مصمم التكوين** وأضف **DefenderSendFeedback** كمفتاح ونوع القيمة ك **Boolean**
    - لإزالة قدرة المستخدمين النهائيين على تقديم الملاحظات، قم بتعيين القيمة ك `false` وتعيين هذا النهج للمستخدمين. بشكل افتراضي، يتم تعيين هذه القيمة إلى `true`. بالنسبة لعملاء الحكومة الأمريكية، يتم تعيين القيمة الافتراضية إلى "خطأ".
    - للمستخدمين الذين تم `true`تعيين المفتاح لديهم ك ، سيكون هناك خيار لإرسال بيانات الملاحظات إلى Microsoft ضمن التطبيق (القائمة > تعليمات & ملاحظاتك > إرسال ملاحظات إلى Microsoft)

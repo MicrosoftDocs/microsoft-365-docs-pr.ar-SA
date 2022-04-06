@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: عند إنشاء تسمية حساسية، يمكنك تلقائيا تعيين تسمية للملفات ورسائل البريد الإلكتروني، أو يمكنك مطالبة المستخدمين بتحديد التسمية التي توصي بها.
-ms.openlocfilehash: 80f3b5c69e482301dd8c4e926959087c7149a529
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 21ee443ba9bab0ac7071377befee5d6e6143a398
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499650"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634614"
 ---
-# <a name="apply-a-sensitivity-label-to-content-automatically"></a>تطبيق تسمية حساسية على المحتوى تلقائيا
+# <a name="apply-a-sensitivity-label-to-content-automatically"></a>تطبيق تسمية حساسية على المحتوى تلقائياً
 
 >*[Microsoft 365 إرشادات الترخيص لتوافق & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -275,18 +275,6 @@ ms.locfileid: "64499650"
 يتيح لك وضع المحاكاة أيضا زيادة نطاق نهج التسمية التلقائية تدريجيا قبل النشر. على سبيل المثال، قد تبدأ بموقع واحد، مثل موقع SharePoint، مع مكتبة مستندات واحدة. بعد ذلك، مع التغييرات المتكتيرة، قم بزيادة النطاق إلى مواقع متعددة، ثم إلى موقع آخر، مثل OneDrive.
 
 وأخيرا، يمكنك استخدام وضع المحاكاة لتوفير تقريب للوقت المطلوب لتشغيل نهج التسمية التلقائية، لمساعدتك على التخطيط لجدولة وقت تشغيله بدون وضع المحاكاة.
-
-#### <a name="deleted-onedrive-accounts-and-simulation-results"></a>الحسابات OneDrive المحذوفة ونتائج المحاكاة
-
-توقع وجود تعارضات محتملة في العرض في نتائج المحاكاة عند حذف OneDrive الحسابات التي لا تزال في مرحلة [الاستبقاء من عملية الحذف](/onedrive/retention-and-deletion#the-onedrive-deletion-process). على سبيل المثال، ترك أحد الموظفين المؤسسة وكان المدير لديه حق وصول مؤقت إلى ملفات المستخدم OneDrive المستخدم.
-
-في هذا السيناريو، إذا تم تحديد OneDrive بواسطة URL في نهج التسمية التلقائية، يتم تضمين الملفات المطابقة من حساب OneDrive المحذوفة في نتائج المحاكاة.
-
-ومع ذلك، إذا لم OneDrive عنوان URL، ولكن تم تضمينه مع **الإعداد** الافتراضي الكل:
-- عند تضمين SharePoint في النهج، يتم عرض الملفات المطابقة من OneDrive المحذوفة كعنصر SharePoint في نتائج المحاكاة.
-- عندما SharePoint في النهج، لا يتم تضمين الملفات المطابقة من OneDrive المحذوفة في نتائج المحاكاة.
-
-في جميع الحالات، يتم تسمية الملفات المطابقة حتى OneDrive حذف الحساب بشكل دائم. تنطبق تعارضات العرض المدرجة على نتائج المحاكاة فقط.
 
 ### <a name="creating-an-auto-labeling-policy"></a>إنشاء نهج تسمية تلقائية
 

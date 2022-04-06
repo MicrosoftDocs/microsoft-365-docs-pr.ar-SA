@@ -17,19 +17,19 @@ ms.date: 01/26/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 0ea2184720467b3756b5cde8c8973e8952d5b50c
-ms.sourcegitcommit: aac7e002ec6e10a41baa2d0bd38614b0ed471a70
+ms.openlocfilehash: 4962537e86010fceeb2845fdd6408270c97742dc
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63571615"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469746"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 برنامج الحماية من الفيروسات من Microsoft Defender في الإصدارات/الإصدارات التالية من Windows Server:
 
@@ -64,7 +64,7 @@ ms.locfileid: "63571615"
 إذا لم يكن GUI مثبتا على الخادم، وتريد تثبيته، إما معالج إضافة **أدوار** وميزات أو PowerShell cmdlets.
 
 > [!NOTE]
-> لا يتوفر هذا الخيار Windows Server 2012 R2. لمزيد من المعلومات، [راجع خيارات تثبيت Microsoft Defender لنقطة النهاية](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
+> لا يتوفر هذا الخيار Windows Server 2012 R2. لمزيد من المعلومات، راجع [خيارات تثبيت Microsoft Defender لنقطة النهاية](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 ### <a name="turn-on-the-gui-using-the-add-roles-and-features-wizard"></a>تشغيل واجهة المستخدم (GUI) باستخدام معالج "إضافة أدوار وميزات"
 
@@ -74,7 +74,7 @@ ms.locfileid: "63571615"
 
    في Windows Server 2016، يبدو معالج إضافة أدوار وميزات كما يلي:
 
-   ![إضافة أدوار ومعالج ميزات يعرض خيار GUI Windows Defender.](images/server-add-gui.png)
+   :::image type="content" source="images/server-add-gui.png" alt-text="يعرض معالج إضافة أدوار وميزات خيار GUI Windows Defender." lightbox="images/server-add-gui.png":::
 
    في Windows Server 2019 Windows Server 2022، يكون معالج إضافة **أدوار وميزات** مماثلا.
 
@@ -136,22 +136,22 @@ sc query state= all
 
 ## <a name="update-antimalware-security-intelligence"></a>تحديث معلومات الأمان لمكافحة البرامج الضارة
 
-للحصول على معلومات محدثة حول الأمان لمكافحة البرامج الضارة، يجب أن تكون Windows تحديث البرامج قيد التشغيل. إذا كنت تستخدم خدمة إدارة التحديثات، مثل خادم Windows Server Update Services (WSUS)، فتأكد من أنه تمت الموافقة على تحديثات برنامج الحماية من الفيروسات من Microsoft Defender معلومات الأمان لأجهزة الكمبيوتر التي تديرها.
+للحصول على معلومات محدثة حول أمان مكافحة البرامج الضارة، يجب أن Windows Update الخدمة قيد التشغيل. إذا كنت تستخدم خدمة إدارة التحديثات، مثل خادم Windows Server Update Services (WSUS)، فتأكد من أنه تمت الموافقة على تحديثات برنامج الحماية من الفيروسات من Microsoft Defender معلومات الأمان لأجهزة الكمبيوتر التي تديرها.
 
-بشكل افتراضي Windows لا يقوم Windows Update بتنزيل التحديثات وتثبيتها تلقائيا على Windows Server 2019 أو Windows Server 2022 أو Windows Server 2016. يمكنك تغيير هذا التكوين باستخدام أحد الأساليب التالية:
+بشكل افتراضي، Windows Update تنزيل التحديثات وتثبيتها تلقائيا على Windows Server 2019 أو Windows Server 2022 أو Windows Server 2016. يمكنك تغيير هذا التكوين باستخدام أحد الأساليب التالية:
 
 <br/><br/>
 
 | الأسلوب | الوصف |
 |---|---|
-| **Windows التحديث في** لوحة التحكم | **يؤدي تثبيت التحديثات تلقائيا** إلى تثبيت كل التحديثات تلقائيا، بما في ذلك Windows معلومات أمان Defender. <br/><br/> **تنزيل التحديثات ولكن** اسم السماح لي باختيار ما إذا كنت تريد تثبيتها Windows Defender بتنزيل تحديثات معلومات الأمان وتثبيتها تلقائيا، ولكن لا يتم تثبيت التحديثات الأخرى تلقائيا. |
-| **نهج المجموعة** | يمكنك إعداد Windows التحديث وإدارته باستخدام الإعدادات المتوفرة في نهج المجموعة، في المسار التالي: القوالب الإدارية **\Windows المكونات\Windows التحديث\** تكوين التحديثات التلقائية |
-| مفتاح **تسجيل AUOptions** | تسمح القيمتان التاليتان Windows Update بتنزيل تحديثات معلومات الأمان وتثبيتها تلقائيا: <br/><br/> **4** -  **تثبيت التحديثات تلقائيا**. ينتج عن هذه القيمة تثبيت كل التحديثات تلقائيا، بما في ذلك Windows معلومات أمان Defender. <br/><br/> **3** -  **قم بتنزيل التحديثات ولكن اسماني باختيار ما إذا كنت تريد تثبيتها أم لا**. تسمح هذه Windows Defender بتنزيل تحديثات معلومات الأمان وتثبيتها تلقائيا، ولكن لا يتم تثبيت التحديثات الأخرى تلقائيا. |
+| **Windows Update** في لوحة التحكم | **يؤدي تثبيت التحديثات تلقائيا** إلى تثبيت كل التحديثات تلقائيا، بما في ذلك Windows معلومات أمان Defender. <br/><br/> **تنزيل التحديثات ولكن** اسم السماح لي باختيار ما إذا كنت تريد تثبيتها Windows Defender بتنزيل تحديثات معلومات الأمان وتثبيتها تلقائيا، ولكن لا يتم تثبيت التحديثات الأخرى تلقائيا. |
+| **نهج المجموعة** | يمكنك إعداد Windows Update باستخدام الإعدادات المتوفرة في نهج المجموعة، في المسار التالي: القوالب الإدارية **\Windows المكونات\Windows Update\** تكوين التحديثات التلقائية |
+| مفتاح **تسجيل AUOptions** | تسمح القيمتان التاليتان Windows Update تنزيل تحديثات معلومات الأمان وتثبيتها تلقائيا: <br/><br/> **4** -  **تثبيت التحديثات تلقائيا**. ينتج عن هذه القيمة تثبيت كل التحديثات تلقائيا، بما في ذلك Windows معلومات أمان Defender. <br/><br/> **3** -  **قم بتنزيل التحديثات ولكن اسماني باختيار ما إذا كنت تريد تثبيتها أم لا**. تسمح هذه Windows Defender بتنزيل تحديثات معلومات الأمان وتثبيتها تلقائيا، ولكن لا يتم تثبيت التحديثات الأخرى تلقائيا. |
 
 لضمان الحفاظ على الحماية من البرامج الضارة، نوصي بتمكين الخدمات التالية:
 
 - إعداد تقرير بالأخطاء في Windows الخدمة
-- Windows التحديث
+- Windows Update الخدمة
 
 يسرد الجدول التالي خدمات برنامج الحماية من الفيروسات من Microsoft Defender والخدمات التابعة.
 
@@ -163,7 +163,7 @@ sc query state= all
 | Windows Defender Service (WinDefend) | `C:\Program Files\Windows Defender\MsMpEng.exe` | هذه هي الخدمة برنامج الحماية من الفيروسات من Microsoft Defender التي يجب تشغيلها في كل الأوقات.|
 | إعداد تقرير بالأخطاء في Windows الخدمة (Wersvc) | `C:\WINDOWS\System32\svchost.exe -k WerSvcGroup` | ترسل هذه الخدمة تقارير الأخطاء مرة أخرى إلى Microsoft. |
 | Windows Defender Firewall (MpsSvc) | `C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork` | نوصي بترك Windows جدار الحماية ل Defender ممكنة. |
-| Windows التحديث (Wuauserv) | `C:\WINDOWS\system32\svchost.exe -k netsvcs`| Windows تحديث الأمان للحصول على تحديثات الأمان وتحديثات محركات البرامج الضارة |
+| Windows Update (Wuauserv) | `C:\WINDOWS\system32\svchost.exe -k netsvcs`| Windows Update الحاجة للحصول على تحديثات معلومات الأمان وتحديثات مشغلات البرامج الضارة |
 
 ## <a name="submit-samples"></a>إرسال عينات
 
@@ -232,7 +232,7 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 ### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>هل تستخدم Windows Server 2012 R2 أو Windows Server 2016؟
 
-يمكنك الآن تشغيل برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي على Windows Server 2012 R2 Windows Server 2016. لمزيد من المعلومات، [راجع خيارات تثبيت Microsoft Defender لنقطة النهاية](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
+يمكنك الآن تشغيل برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي على Windows Server 2012 R2 Windows Server 2016. لمزيد من المعلومات، راجع [خيارات تثبيت Microsoft Defender لنقطة النهاية](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 <br/><br/>
 

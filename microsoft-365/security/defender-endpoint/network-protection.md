@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 7b9443cac6543ac14f6d94bd2809b5263be0a860
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4c922ef443dbe6e4a1b55159f2c27b35926ff886
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681821"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634438"
 ---
 # <a name="protect-your-network"></a>حماية الشبكة
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -43,7 +43,7 @@ ms.locfileid: "63681821"
 تعمل حماية الشبكة على توسيع الحماية في [حماية الويب](web-protection-overview.md) إلى مستوى نظام التشغيل. فهو يوفر وظائف حماية الويب في Edge إلى المستعرضات الأخرى المعتمدة والتطبيقات غير المستعرضة. بالإضافة إلى ذلك، توفر حماية الشبكة إمكانية رؤية مؤشرات اختراق (IOCs) وحظرها عند استخدامها مع الكشف عن نقطة النهاية [والاستجابة لها](overview-endpoint-detection-response.md). على سبيل المثال، تعمل حماية [الشبكة مع المؤشرات](manage-indicators.md) المخصصة التي يمكنك استخدامها لحظر مجالات أو أسماء مضيفة معينة.
 
 > [!TIP]
-> راجع موقع اختبار Microsoft Defender ل Endpoint [في demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) لمعرفة كيفية عمل حماية الشبكة.
+> راجع موقع Microsoft Defender لنقطة النهاية الاختبار [في demo.wd.microsoft.com لمعرفة](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) كيفية عمل حماية الشبكة.
 
 > [!NOTE]
 > تم إهمال موقع عرض Defender for Endpoint demo.wd.microsoft.com، وستزال في المستقبل.
@@ -68,11 +68,11 @@ ms.locfileid: "63681821"
 
 ## <a name="configuring-network-protection"></a>تكوين حماية الشبكة
 
-لمزيد من المعلومات حول كيفية تمكين حماية الشبكة، راجع **[تمكين حماية الشبكة](enable-network-protection.md)**. استخدم نهج المجموعة أو PowerShell أو MDM CSPs لتمكين حماية الشبكة وإدارتها في الشبكة.
+لمزيد من المعلومات حول كيفية تمكين حماية الشبكة، راجع **[تمكين حماية الشبكة](enable-network-protection.md)**. استخدم نهج المجموعة CSPs ل PowerShell أو MDM لتمكين حماية الشبكة وإدارتها في شبكتك.
 
 ## <a name="viewing-network-protection-events"></a>عرض أحداث حماية الشبكة
 
-تعمل حماية الشبكة بشكل أفضل مع [Microsoft Defender لنقطة](microsoft-defender-endpoint.md) النهاية، مما يوفر لك تقارير مفصلة حول أحداث الحماية من استغلالها وكتلها كجزء من سيناريوهات [التحقيق في التنبيهات](investigate-alerts.md).
+تعمل حماية الشبكة بشكل أفضل [مع](microsoft-defender-endpoint.md) Microsoft Defender لنقطة النهاية، مما يوفر لك إعداد تقارير مفصلة حول أحداث الحماية من استغلال البيانات وكتلها كجزء من [سيناريوهات التحقيق في التنبيهات](investigate-alerts.md).
 
 عندما تمنع حماية الشبكة الاتصال، يتم عرض إعلام من مركز الإجراءات. يمكن لفريق عمليات الأمان [تخصيص الإعلام](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) باستخدام تفاصيل المؤسسة ومعلومات الاتصال بها. بالإضافة إلى ذلك، يمكن تمكين قواعد الحد من الهجمات الفردية وتخصيصها لتتناسب مع أساليب معينة للمراقبة.
 
@@ -80,7 +80,7 @@ ms.locfileid: "63681821"
 
 ## <a name="review-network-protection-events-in-the-microsoft-365-defender-portal"></a>مراجعة أحداث حماية الشبكة في مدخل Microsoft 365 Defender
 
-يوفر Microsoft Defender ل Endpoint تقارير تفصيلية حول الأحداث والحظر كجزء من [سيناريوهات التحقيق في التنبيهات الخاصة به](investigate-alerts.md). يمكنك عرض هذه التفاصيل في Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) في قائمة انتظار التنبيهات [أو باستخدام](review-alerts.md) [الصيد المتقدم](advanced-hunting-overview.md). إذا كنت [تستخدم وضع التدقيق](audit-windows-defender.md)، يمكنك استخدام البحث المتقدم لمعرفة كيف ستؤثر إعدادات حماية الشبكة على بيئتك إذا تم تمكينها.
+Microsoft Defender لنقطة النهاية تقارير تفصيلية حول الأحداث والحظر كجزء من [سيناريوهات التحقيق في التنبيهات](investigate-alerts.md). يمكنك عرض هذه التفاصيل في Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) في قائمة انتظار التنبيهات [أو باستخدام](review-alerts.md) [الصيد المتقدم](advanced-hunting-overview.md). إذا كنت [تستخدم وضع التدقيق](audit-windows-defender.md)، يمكنك استخدام البحث المتقدم لمعرفة كيف ستؤثر إعدادات حماية الشبكة على بيئتك إذا تم تمكينها.
 
 فيما يلي استعلام مثال للصيد المتقدم:
 
@@ -89,7 +89,7 @@ DeviceNetworkEvents
 |where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
 ```
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>مراجعة أحداث حماية الشبكة في Windows الحدث
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>مراجعة أحداث حماية الشبكة في Windows عارض الأحداث
 
 يمكنك مراجعة سجل Windows الأحداث لرؤية الأحداث التي يتم إنشاؤها عند حظر (أو تدقيق) الوصول إلى IP أو مجال ضار:
 
@@ -142,7 +142,11 @@ DeviceNetworkEvents
 
 1. استخدم [تشغيل حماية الشبكة](enable-network-protection.md) واتبع الإرشادات لتطبيق نهجك.
 
-2. تنفيذ الأمر PowerShell التالي: `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+2. تنفيذ أوامر PowerShell التالية:
+  - `Set-MpPreference -EnableNetworkProtection Enabled`
+  - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
+  - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
+  - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
 ## <a name="network-protection-troubleshooting"></a>استكشاف الأخطاء وإصلاحها في حماية الشبكة
 
@@ -157,5 +161,5 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC
 ## <a name="see-also"></a>راجع أيضًا
 
 - [تقييم حماية](evaluate-network-protection.md) | قم بتنفيذ سيناريو سريع يوضح كيفية عمل الميزة، والأحداث التي سيتم إنشاؤها عادة.
-- [تمكين حماية](enable-network-protection.md) | استخدم نهج المجموعة أو PowerShell أو MDM CSPs لتمكين حماية الشبكة وإدارتها في الشبكة.
+- [تمكين حماية](enable-network-protection.md) | استخدم نهج المجموعة CSPs ل PowerShell أو MDM لتمكين حماية الشبكة وإدارتها في شبكتك.
 - [تكوين إمكانات الحد من سطح الهجوم في Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)

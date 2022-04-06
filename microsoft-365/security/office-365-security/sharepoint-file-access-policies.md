@@ -1,5 +1,5 @@
 ---
-title: سياسات المستندات الآمنة الموصى بها - Microsoft 365 للمؤسسات | Microsoftova dokumentacija
+title: سياسات المستندات الآمنة الموصى بها - Microsoft 365 للمؤسسات | Microsoft Docs
 description: يصف هذه المقالة سياسات توصيات Microsoft حول كيفية SharePoint الوصول إلى الملفات.
 ms.author: dansimp
 author: dansimp
@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 6effe1ffefaf7faeb90258163c539cdddcec2679
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 4425ee0a4ee9abb7c87be7ed45d9f5c94b84cdc6
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569986"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477006"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>توصيات النهج لتأمين SharePoint والملفات
 
-تصف هذه المقالة كيفية تنفيذ Confiança zero الموصى بها ونهج الوصول إلى الأجهزة والهوية لحماية SharePoint OneDrive for Business. يعتمد هذا الإرشاد على [الهوية المشتركة ونهج الوصول إلى الأجهزة](identity-access-policies.md).
+تصف هذه المقالة كيفية تنفيذ ثقة معدومة الهوية والوصول إلى الجهاز الموصى بها لحماية SharePoint OneDrive for Business. يعتمد هذا الإرشاد على [الهوية المشتركة ونهج الوصول إلى الأجهزة](identity-access-policies.md).
 
 تستند هذه التوصيات إلى ثلاثة مستويات مختلفة من الأمان والحماية لملفات SharePoint التي يمكن تطبيقها بالاستناد إلى مجموعة **احتياجاتك: نقطة** البداية والمؤسسة والأمان **المتخصص**.  يمكنك معرفة المزيد حول مستويات الأمان هذه، وأنظمت تشغيل العميل الموصى بها، المشار إليها بواسطة هذه التوصيات في [النظرة العامة](microsoft-365-policies-configurations.md).
 
@@ -60,7 +60,7 @@ ms.locfileid: "64569986"
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>استخدام القيود المفروضة على التطبيق في SharePoint
 
-إذا قمت بتنفيذ عناصر تحكم الوصول في SharePoint، يتم إنشاء سياسات الوصول الشرطي في Azure AD لإخبار Azure AD بفرض السياسات التي تقوم بتكوينها في SharePoint. بشكل افتراضي، ينطبق هذا النهج على جميع المستخدمين، ولكنه يؤثر فقط على الوصول إلى المواقع التي تحددها باستخدام PowerShell عند إنشاء عناصر التحكم بالوصول في SharePoint. يمكن أيضا تحديد نطاق النهج لمستخدمين معينين أو مجموعات أو مواقع معينة.
+إذا قمت بتنفيذ عناصر تحكم الوصول في SharePoint، فيجب إنشاء نهج الوصول الشرطي هذا في Azure AD لإخبار Azure AD بفرض النهج التي تقوم بتكوينها في SharePoint. ينطبق هذا النهج على جميع المستخدمين، ولكنه يؤثر فقط على الوصول إلى المواقع التي تحددها باستخدام PowerShell عند إنشاء عناصر التحكم بالوصول في SharePoint.
 
 لتكوين هذا النهج، راجع "حظر الوصول إلى مجموعات مواقع SharePoint مواقع OneDrive محددة أو تقييد الوصول إليها" في التحكم في الوصول من الأجهزة غير التي يتم التحكم [فيها](/sharepoint/control-access-from-unmanaged-devices).
 

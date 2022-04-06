@@ -1,7 +1,7 @@
 ---
 title: الحظر السلوكي للعميل
-description: الحظر السلوكي للعميل هو جزء من قدرات الحظر والاحتواء السلوكية في Microsoft Defender لنقطة النهاية
-keywords: حظر السلوك والحماية السريعة وسلوك العميل و Microsoft Defender ل Endpoint
+description: الحظر السلوكي للعميل هو جزء من قدرات الحظر السلوكي والاحتواء في Microsoft Defender لنقطة النهاية
+keywords: حظر السلوك والحماية السريعة وسلوك العميل Microsoft Defender لنقطة النهاية
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -16,17 +16,17 @@ ms.custom:
 - edr
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: c5a738584f1705365db1c4fad61f190a42d97660
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8da3f04af66568bbe79dd6a74c38b30a8a1ab891
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63572297"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470208"
 ---
 # <a name="client-behavioral-blocking"></a>الحظر السلوكي للعميل
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -35,7 +35,7 @@ ms.locfileid: "63572297"
 
 الحظر السلوكي للعميل هو أحد مكونات قدرات [الحظر والاحتواء](behavioral-blocking-containment.md) السلوكية في Defender for Endpoint. عند اكتشاف سلوكيات مريبة على الأجهزة (يشار إليها أيضا باسم العملاء أو نقاط النهاية)، يتم حظر التحف (مثل الملفات أو التطبيقات) وفحصها وتصفيها تلقائيا.
 
-:::image type="content" alt-text="حماية العميل والسحابة." source="images/pre-execution-and-post-execution-detection-engines.png" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
+:::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="حماية العميل والسحابة" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
 تعمل الحماية من الفيروسات بشكل أفضل عند إقرانها مع الحماية السحابية.
 

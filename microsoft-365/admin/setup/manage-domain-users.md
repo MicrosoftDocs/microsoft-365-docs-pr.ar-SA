@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: مزامنة المستخدمين الذين يتحكمون بالمجال مع Microsoft 365 للأعمال.
-ms.openlocfilehash: e49a3095cff77692e58d1b70ca1169dc8fd4802a
-ms.sourcegitcommit: bcea69bacd1b48827bd60af2880909593a1609a4
+ms.openlocfilehash: 6a00b76113a750f306ef6545f1b38fcf9f9b2202
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "63571995"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634526"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>مزامنة مستخدمي المجال Microsoft 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "63571995"
    
    - إذا انتهى مجال Active Directory ب لاحقة غير قابلة التوجيه مثل *.local* أو *.lan*، بدلا من لاحقة قابلة التوجيه عبر الإنترنت مثل *.com* أو *.org*، فاضبط لاحقة UPN الخاصة وحسابات المستخدمين المحلية أولا كما هو موضح في إعداد مجال غير قابل التوجيه لمزامنة [الدليل](../../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md). 
 
-**سيتأكد أيضا تشغيل IdFix** في الخطوة الرابعة (4) أدناه من أن Active Directory المحلي جاهز لمزامنة الدليل.
+**سيتأكد أيضا تشغيل IdFix** في الخطوة الرابعة (4) أدناه من أن Active Directory محلي جاهز لمزامنة الدليل.
 
 ## <a name="2-install-and-configure-azure-ad-connect"></a>2. تثبيت Azure AD وتكوينه الاتصال
 
@@ -68,4 +68,4 @@ ms.locfileid: "63571995"
 > [!NOTE]
 > هناك بعض الخطوات الإضافية لكتابة كلمة المرور خارج خانة الاختيار في Azure AD الاتصال. لمزيد من المعلومات، راجع [كيفية: تكوين كتابة كلمة المرور](/azure/active-directory/authentication/howto-sspr-writeback). 
 
-إذا كنت تريد أيضا إدارة أجهزة Windows 10 المنضمة إلى المجال، فا راجع تمكين [](manage-windows-devices.md) أجهزة Windows 10 المنضمة إلى المجال لكي تدار بواسطة Microsoft 365 Business Premium لإعداد Azure AD Join مختلط.
+إذا كنت تريد أيضا إدارة أجهزة Windows 10 المنضمة إلى المجال، فا راجع تمكين [](../../business-premium/m365bp-manage-windows-devices.md) أجهزة Windows 10 المنضمة إلى المجال لكي تدار بواسطة Microsoft 365 Business Premium لإعداد Azure AD Join مختلط.

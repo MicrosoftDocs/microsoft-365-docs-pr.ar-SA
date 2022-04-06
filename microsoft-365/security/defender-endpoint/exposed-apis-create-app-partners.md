@@ -1,7 +1,7 @@
 ---
 title: إنشاء تطبيق للوصول إلى Microsoft Defender لنقطة النهاية بدون مستخدم
 ms.reviewer: ''
-description: تعرف على كيفية تصميم تطبيق ويب للحصول على وصول برمجي إلى Microsoft Defender ل Endpoint بدون مستخدم.
+description: تعرف على كيفية تصميم تطبيق ويب للحصول على وصول برمجي Microsoft Defender لنقطة النهاية بدون مستخدم.
 keywords: apis، واجهة برمجة التطبيق الرسومية، apis المعتمدة، الممثل، التنبيهات، الجهاز، المستخدم، المجال، ip، ملف، البحث المتقدم، الاستعلام
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,20 +16,20 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2705eb4e3010a06c707ad071a907da90dc0ec1fc
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 454d385c66a0019ba6059a2b8038907dd630b443
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63575793"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469856"
 ---
-# <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>وصول الشريك عبر Microsoft Defender ل واجهات برمجة تطبيقات نقطة النهاية
+# <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>وصول الشريك عبر Microsoft Defender لنقطة النهاية واجهات برمجة التطبيقات
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:** 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -39,16 +39,16 @@ ms.locfileid: "63575793"
 
 تصف هذه الصفحة كيفية إنشاء تطبيق Azure Active Directory (Azure AD) للحصول على وصول برمجي إلى Microsoft Defender لنقطة النهاية نيابة عن العملاء.
 
-يعرض Microsoft Defender ل Endpoint الكثير من بياناته والإجراءات الخاصة به من خلال مجموعة من واجهات برمجة التطبيقات البرنامجية. ستساعدك واجهات برمجة التطبيقات هذه على أتمتة تدفقات العمل، كما ستساعدك على الابتكار استنادا إلى قدرات نقطة النهاية ل Microsoft Defender. يتطلب الوصول إلى API مصادقة OAuth2.0. لمزيد من المعلومات، راجع [رمز التخويل ل OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender لنقطة النهاية البيانات والإجراءات من خلال مجموعة من واجهات برمجة التطبيقات البرنامجية. ستساعدك واجهات برمجة التطبيقات هذه على أتمتة تدفقات العمل وابتعازها استنادا إلى Microsoft Defender لنقطة النهاية جديدة. يتطلب الوصول إلى API مصادقة OAuth2.0. لمزيد من المعلومات، راجع [رمز التخويل ل OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 بشكل عام، ستحتاج إلى اتخاذ الخطوات التالية لاستخدام واجهات برمجة التطبيقات:
 
 - إنشاء **تطبيق** Azure AD متعدد المستأجرين.
 - احصل على الإذن (الموافقة) من قبل مسؤول العملاء لتطبيقك للوصول إلى موارد Defender لنقطة النهاية التي يحتاج إليها.
 - احصل على رمز وصول مميز باستخدام هذا التطبيق.
-- استخدم الرمز المميز للوصول إلى Microsoft Defender ل API لنقطة النهاية.
+- استخدم الرمز المميز للوصول إلى Microsoft Defender لنقطة النهاية API.
 
-سترشدك الخطوات التالية إلى كيفية إنشاء تطبيق Azure AD والحصول على رمز وصول مميز إلى Microsoft Defender ل Endpoint والتحقق من صحة الرمز المميز.
+سترشدك الخطوات التالية إلى كيفية إنشاء تطبيق Azure AD والحصول على رمز وصول مميز Microsoft Defender لنقطة النهاية التحقق من صحة الرمز المميز.
 
 ## <a name="create-the-multi-tenant-app"></a>إنشاء تطبيق متعدد المستأجرين
 
@@ -56,7 +56,7 @@ ms.locfileid: "63575793"
 
 2. انتقل إلى **تسجيلات تطبيق Azure Active Directory** \>  \> **تسجيل جديد**.
 
-   ![صورة Microsoft Azure والتنقل إلى تسجيل التطبيق.](images/atp-azure-new-app2.png)
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="جزء التنقل إلى تسجيل التطبيق" lightbox="images/atp-azure-new-app2.png":::
 
 3. في نموذج التسجيل:
 
@@ -66,15 +66,15 @@ ms.locfileid: "63575793"
 
    - إعادة توجيه URI - اكتب: ويب، URI: https://portal.azure.com
 
-   ![صورة لتسجيل تطبيق شريك Microsoft Azure.](images/atp-api-new-app-partner.png)
+     :::image type="content" source="images/atp-api-new-app-partner.png" alt-text="صفحة تسجيل تطبيق شريك Microsoft Azure" lightbox="images/atp-api-new-app-partner.png":::
 
-4. اسمح لتطبيقك بالوصول إلى Microsoft Defender لنقطة النهاية وتعيينه بأقل مجموعة من الأذونات المطلوبة لإكمال التكامل.
+4. اسمح للتطبيق بالوصول إلى Microsoft Defender لنقطة النهاية وتعيينه بأقل مجموعة من الأذونات المطلوبة لإكمال التكامل.
 
    - في صفحة التطبيق، حدد أذونات **API** \>  \> إضافة أذونات واجهات برمجة التطبيقات التي تستخدمها > **نوع WindowsDefenderATP** وحدد على **WindowsDefenderATP**.
 
    - **ملاحظة**: *لا يظهر WindowsDefenderATP* في القائمة الأصلية. ابدأ بكتابة اسمه في مربع النص لكي يظهر.
 
-     ![إضافة إذن.](images/add-permission.png)
+     :::image type="content" source="images/add-permission.png" alt-text="الخيار &quot;إضافة إذن&quot;" lightbox="images/add-permission.png":::
 
 ### <a name="request-api-permissions"></a>طلب أذونات API
 
@@ -87,13 +87,13 @@ ms.locfileid: "63575793"
 
 1. اختر **تنبيه أذونات** \> **التطبيق.Read.all** > تحديد **على إضافة أذونات**
 
-   ![أذونات التطبيق.](images/application-permissions.png)
+   :::image type="content" source="images/application-permissions.png" alt-text="الخيار الذي يسمح بإضافة إذن" lightbox="images/application-permissions.png":::
 
 2. حدد **منح الموافقة**
 
    - **ملاحظة**: في كل مرة تقوم فيها بإضافة إذن، يجب أن تحدد عند منح **الموافقة** على الإذن الجديد لكي يتم التنفيذ.
 
-   ![صورة لمنح الأذونات.](images/grant-consent.png)
+   :::image type="content" source="images/grant-consent.png" alt-text="الخيار الذي يسمح بمنح الموافقة" lightbox="images/grant-consent.png":::
 
 3. أضف سرية إلى التطبيق.
 
@@ -101,17 +101,17 @@ ms.locfileid: "63575793"
 
     **هام**: بعد النقر فوق إضافة، **انسخ القيمة السرية التي تم إنشاؤها**. لن تتمكن من استرداده بعد المغادرة!
 
-    ![صورة لمفتاح إنشاء تطبيق.](images/webapp-create-key2.png)
+     :::image type="content" source="images/webapp-create-key2.png" alt-text="مفتاح إنشاء التطبيق" lightbox="images/webapp-create-key2.png":::
 
 4. اكتب "معرّف التطبيق":
 
    - على صفحة التطبيق، انتقل إلى **نظرة عامة** ونسخ المعلومات التالية:
 
-   ![صورة لم id التطبيق الذي تم إنشاؤه.](images/app-id.png)
+     :::image type="content" source="images/app-id.png" alt-text="إنشاء الم ID الخاص بتطبيق" lightbox="images/app-id.png":::
 
 5. أضف التطبيق إلى مستأجر العميل.
 
-   تحتاج إلى الموافقة على تطبيقك في كل مستأجر عميل تنوي استخدامه فيه. وذلك لأن تطبيقك يتفاعل مع تطبيق Microsoft Defender for Endpoint نيابة عن العميل.
+   تحتاج إلى الموافقة على تطبيقك في كل مستأجر عميل تنوي استخدامه فيه. وذلك لأن تطبيقك يتفاعل مع Microsoft Defender لنقطة النهاية نيابة عن العميل.
 
    يحتاج مستخدم مع **مسؤول** عام من مستأجر العميل إلى تحديد ارتباط الموافقة والموافقة على طلبك.
 
@@ -125,7 +125,7 @@ ms.locfileid: "63575793"
 
    بعد النقر فوق ارتباط الموافقة، سجل الدخول مع المسؤول العام لمستأجر العميل ووافق على التطبيق.
 
-   ![صورة الموافقة.](images/app-consent-partner.png)
+   :::image type="content" source="images/app-consent-partner.png" alt-text="الزر &quot;قبول&quot;" lightbox="images/app-consent-partner.png":::
 
    بالإضافة إلى ذلك، ستحتاج إلى أن تطلب من العميل الخاص بك الحصول على هويات المستأجر الخاصة به وحفظه لاستخدامه في المستقبل عند الحصول على الرمز المميز.
 
@@ -201,7 +201,7 @@ return $token
 - فتح نافذة أوامر
 - تعيين CLIENT_ID إلى "معرّف تطبيق Azure"
 - تعيين CLIENT_SECRET إلى سرية تطبيق Azure
-- تعيين TENANT_ID إلى "مستأجر Azure" الخاص للعميل الذي يريد استخدام التطبيق للوصول إلى تطبيق Microsoft Defender for Endpoint
+- تعيين TENANT_ID إلى "مستأجر Azure" للعميل الذي يريد استخدام التطبيق للوصول إلى Microsoft Defender لنقطة النهاية
 - تشغيل الأمر أدناه:
 
 ```curl
@@ -220,14 +220,14 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 
 - نسخ/لصق الرمز المميز الذي تحصل عليه في الخطوة السابقة في [JWT](https://jwt.ms) من أجل فك ترميزه
 - التحقق من صحة الحصول على مطالبة "أدوار" باستخدام الأذونات المطلوبة
-- في لقطة الشاشة أدناه، يمكنك رؤية رمز مميز تم فك تشفيره تم الحصول عليه من تطبيق مع أذونات متعددة ل Microsoft Defender لنقطة النهاية:
+- في لقطة الشاشة أدناه، يمكنك رؤية رمز مميز تم فك تشفيره تم الحصول عليه من تطبيق مع أذونات متعددة Microsoft Defender لنقطة النهاية:
 - المطالبة "tid" هي "مستأجر" الم ID الذي ينتمي إليه الرمز المميز.
 
-![صورة التحقق من صحة الرمز المميز.](images/webapp-decoded-token.png)
+:::image type="content" source="images/webapp-decoded-token.png" alt-text="صفحة التحقق من صحة الرمز المميز" lightbox="images/webapp-decoded-token.png":::
 
-## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>استخدام الرمز المميز للوصول إلى Microsoft Defender ل API لنقطة النهاية
+## <a name="use-the-token-to-access-microsoft-defender-for-endpoint-api"></a>استخدام الرمز المميز للوصول إلى Microsoft Defender لنقطة النهاية API
 
-- اختر واجهات برمجة التطبيقات التي تريد استخدامها، لمزيد من المعلومات، راجع [واجهات برمجة تطبيقات نقطة النهاية المعتمدة من Microsoft Defender](exposed-apis-list.md)
+- اختر واجهات برمجة التطبيقات التي تريد استخدامها، لمزيد من المعلومات، راجع واجهات برمجة التطبيقات [Microsoft Defender لنقطة النهاية](exposed-apis-list.md)
 - تعيين رأس التخويل في طلب Http الذي ترسله إلى "حامل {token}" (حامل هو نظام التخويل)
 - وقت انتهاء صلاحية الرمز المميز هو ساعة واحدة (يمكنك إرسال أكثر من طلب واحد بنفس الرمز المميز)
 
@@ -247,5 +247,5 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [واجهات برمجة تطبيقات نقطة النهاية المدعومة من Microsoft Defender](exposed-apis-list.md)
-- [الوصول إلى Microsoft Defender لنقطة النهاية نيابة عن مستخدم](exposed-apis-create-app-nativeapp.md)
+- [واجهات Microsoft Defender لنقطة النهاية برمجة التطبيقات المعتمدة](exposed-apis-list.md)
+- [الوصول Microsoft Defender لنقطة النهاية نيابة عن مستخدم](exposed-apis-create-app-nativeapp.md)

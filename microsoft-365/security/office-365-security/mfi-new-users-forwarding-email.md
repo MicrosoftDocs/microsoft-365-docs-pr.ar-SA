@@ -13,12 +13,12 @@ description: يمكن للمسؤولين معرفة كيفية استخدام م
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 35ec1573096ecce392979cba11c6e55b1a1adcce
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 7e7f97f2f246be609db813f1d42ef6aed6a152a9
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681755"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470252"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>إعادة توجيه المستخدمين الجدد رؤى البريد الإلكتروني في مركز & الأمان
 
@@ -26,7 +26,7 @@ ms.locfileid: "63681755"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 من المريب أن تبدأ حسابات المستخدمين الجدد في مؤسستك فجأة في إعادة توجيه رسائل البريد الإلكتروني إلى مجالات خارجية.
@@ -35,11 +35,11 @@ ms.locfileid: "63681755"
 
 تظهر هذه المعرفة فقط عند اكتشاف المشكلة، كما تظهر على صفحة [تقرير إعادة](view-mail-flow-reports.md#forwarding-report) توجيه.
 
-![يقوم المستخدمون الجدد ب إعادة توجيه تحليلات البريد الإلكتروني.](../../media/mfi-new-users-forwarding-email.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email.png" alt-text="نظرة ثاقبة حول إعادة توجيه البريد الإلكتروني للمستخدمين الجدد" lightbox="../../media/mfi-new-users-forwarding-email.png":::
 
 عند النقر فوق عنصر واجهة المستخدم، تظهر عنصر واجهة مستخدم حيث يمكنك العثور على مزيد من التفاصيل حول الرسائل التي تم إعادة توجيهها، بما في ذلك ارتباط [](#forwarding-modifications-report) إلى تقرير تعديلات إعادة توجيه كما هو موضح لاحقا في هذه المقالة.
 
-![تفاصيل قائمة منتحلة تظهر بعد النقر فوق إعادة توجيه المستخدمين الجدد رؤى البريد الإلكتروني.](../../media/mfi-new-users-forwarding-email-details.png)
+:::image type="content" source="../../media/mfi-new-users-forwarding-email-details.png" alt-text="قائمة التفاصيل التي تظهر بعد النقر فوق نظرة ثاقبة حول إعادة توجيه البريد الإلكتروني للمستخدمين الجدد" lightbox="../../media/mfi-new-users-forwarding-email-details.png":::
 
 يمكنك أيضا الوصول إلى صفحة التفاصيل هذه عند تحديد المعرفة الدقيقة بعد النقر فوق عرض الكل في  منطقة أهم & **توصيات** **في (** \> لوحة **معلومات التقارير أو** <https://protection.office.com/insightdashboard>).
 
@@ -67,11 +67,11 @@ ms.locfileid: "63681755"
 
 - **إظهار البيانات ل: مستخدمو إعادة توجيه جدد**:
 
-  ![يعرض مستخدمو إعادة توجيه جدد في تقرير تعديلات إعادة توجيه.](../../media/forwarding-modifications-report-new-forwarding-users.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarding-users.png" alt-text="طريقة عرض مستخدمي إعادة توجيه جديدة في تقرير &quot;إعادة توجيه التعديلات&quot;" lightbox="../../media/forwarding-modifications-report-new-forwarding-users.png":::
 
 - **إظهار البيانات ل: مجالات إعادة توجيه جديدة**:
 
-  ![طريقة عرض المجالات الجديدة التي تم إعادة توجيهها في تقرير تعديلات إعادة توجيه.](../../media/forwarding-modifications-report-new-forwarded-domains.png)
+    :::image type="content" source="../../media/forwarding-modifications-report-new-forwarded-domains.png" alt-text="طريقة عرض المجالات الجديدة التي تم إعادة توجيهها في تقرير تعديلات إعادة توجيه" lightbox="../../media/forwarding-modifications-report-new-forwarded-domains.png":::
 
 إذا نقرت فوق **عوامل التصفية** في طريقة عرض التقرير، يمكنك تحديد نطاق تاريخ مع **تاريخ البدء** **وتاريخ الانتهاء**.
 
@@ -109,7 +109,7 @@ ms.locfileid: "63681755"
 - **تاريخ البدء**
 - **توصية**: من هنا، يمكنك النقر فوق الارتباط لإدارة المستخدم في مركز مسؤولي Microsoft 365.
 
-![تفاصيل من خارج جدول التفاصيل ل طريقة عرض المستخدمين إعادة توجيه جديدة في تقرير تعديلات إعادة توجيه.](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
+  :::image type="content" source="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png" alt-text="من خارج &quot;التفاصيل&quot; من جدول التفاصيل ل طريقة عرض المستخدمين &quot;إعادة توجيه جديدة&quot; في تقرير &quot;إعادة توجيه التعديلات&quot;" lightbox="../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png":::
 
 للعودة إلى طريقة عرض التقارير، انقر فوق **عرض التقرير**.
 

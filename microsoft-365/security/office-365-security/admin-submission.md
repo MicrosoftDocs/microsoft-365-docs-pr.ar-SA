@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: يمكن للمسؤولين التعرف على كيفية استخدام مدخل عمليات الإرسال في مدخل Microsoft 365 Defender لإرسال رسائل البريد الإلكتروني المريبة ورسائل البريد الاحتيالي ورسائل البريد الإلكتروني غير المرغوب فيها والبريد العشوائي وغيرها من الرسائل الضارة الأخرى، بالإضافة إلى عناوين URL ومرفقات البريد الإلكتروني إلى Microsoft لإعادة مغامرتها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34d608a6ea114fff8005069f3dc2ddc79c4be45e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d0d699c3344cc16f3e15996139f1d2d8b608ba50
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682626"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64477138"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>استخدام مدخل عمليات الإرسال لإرسال رسائل البريد العشوائي والتصيد الاحتيالي عناوين URL والملفات المشتبه بها إلى Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "63682626"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 
 
 في Microsoft 365 المؤسسات التي Exchange Online علب بريدها، يمكن للمسؤولين استخدام مدخل الواجبات المرسلة في مدخل Microsoft 365 Defender لإرسال رسائل البريد الإلكتروني، ومواعيد URL، والمرفقات إلى Microsoft للمسح الضوئي.
@@ -84,7 +84,7 @@ ms.locfileid: "63682626"
 
 3. حدد **المنسدل وضع علامة باسم** وإعلامه، ثم حدد لا توجد أي تهديدات تم **العثور عليها في** \> **التصيد الاحتيالي** أو البريد **الإلكتروني غير الهام**.
 
-   :::image type="content" alt-text="إرسال رسائل من المدخل." source="../../media/unified-submission-user-reported-message.png" lightbox="../../media/unified-submission-user-reported-message.png":::
+   :::image type="content" source="../../media/unified-submission-user-reported-message.png" alt-text="صفحة الواجبات المرسلة" lightbox="../../media/unified-submission-user-reported-message.png":::
 
 سيتم وضع علامة على الرسالة التي تم إعلامها كإيجابية خطأ أو سالبة خطأ. يتم إرسال إعلام بالبريد الإلكتروني تلقائيا من داخل المدخل إلى المستخدم الذي قام بالتبليغ عن الرسالة.
 
@@ -108,7 +108,7 @@ ms.locfileid: "63682626"
 5. عند الانتهاء، انقر فوق **إرسال**.
 
     > [!div class="mx-imgBorder"]
-    > ![مثال إرسال عنوان URL جديد.](../../media/submission-flyout-email.png)
+    > :::image type="content" source="../../media/submission-flyout-email.png" alt-text="عملية إرسال عنوان URL جديد" lightbox="../../media/submission-flyout-email.png":::
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>إرسال عنوان URL مشتبه به إلى Microsoft
 
@@ -125,7 +125,7 @@ ms.locfileid: "63682626"
 4. عند الانتهاء، انقر فوق **إرسال**.
 
     > [!div class="mx-imgBorder"]
-    > ![مثال إرسال بريد إلكتروني جديد.](../../media/submission-url-flyout.png)
+    > :::image type="content" source="../../media/submission-url-flyout.png" alt-text="عملية إرسال البريد الإلكتروني الجديد" lightbox="../../media/submission-url-flyout.png":::
 
 ### <a name="submit-a-suspected-email-attachment-to-microsoft"></a>إرسال مرفق بريد إلكتروني مشتبه به إلى Microsoft
 
@@ -142,7 +142,7 @@ ms.locfileid: "63682626"
 4. عند الانتهاء، انقر فوق **إرسال**.
 
     > [!div class="mx-imgBorder"]
-    > ![مثال إرسال مرفق جديد.](../../media/submit-email-attachment-for-analysis.png)
+    > :::image type="content" source="../../media/submission-file-flyout.png" alt-text="عملية إرسال المرفق الجديد" lightbox="../../media/submission-file-flyout.png":::
 
 > [!NOTE]
 > إذا استبدلت تصفية البرامج الضارة مرفقات الرسالة بملف "تنبيه البرامج الضارةText.txt، يجب إرسال الرسالة الأصلية من الفحص التي تحتوي على المرفقات الأصلية. لمزيد من المعلومات حول الفحص وكيفية إصدار الرسائل التي بها برامج ضارة إيجابية خاطئة، راجع إدارة الرسائل والملفات التي تم فحصها [كمسؤول](manage-quarantined-messages-and-files.md).
@@ -178,7 +178,7 @@ ms.locfileid: "63682626"
      عند الانتهاء، انقر فوق **تطبيق**.
 
      > [!div class="mx-imgBorder"]
-     > ![خيارات تخصيص الأعمدة الجديدة لمواد إرسال المسؤول.](../../media/submit-admin-submissios-customize-columns.png)
+     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="خيارات العمود &quot;تخصيص جديد&quot; لمواد إرسال المسؤول" lightbox="../../media/admin-submission-customize-columns.png":::
 
    - لتصفية الإدخالات، انقر فوق **تصفية**. عوامل التصفية المتوفرة هي:
      - **تاريخ إرسال**: **تاريخ البدء** **وتاريخ الانتهاء**.
@@ -195,7 +195,7 @@ ms.locfileid: "63682626"
      عند الانتهاء، انقر فوق **تطبيق**.
 
      > [!div class="mx-imgBorder"]
-     > ![خيارات تصفية جديدة لمواد إرسال المسؤول.](../../media/submit-admin-submissions-view-filters.png)
+     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="خيارات &quot;تصفية جديدة&quot; لمواد إرسال المسؤول" lightbox="../../media/admin-submission-filters.png":::
 
    - لتضمين الإدخالات، **انقر فوق تجميع** وحدد إحدى القيم التالية من القائمة المنسدلة:
      - **بلا**
@@ -263,7 +263,7 @@ ms.locfileid: "63682626"
      عند الانتهاء، انقر فوق **تطبيق**.
 
      > [!div class="mx-imgBorder"]
-     > ![خيارات تصفية جديدة لمواد إرسال المستخدمين.](../../media/submit-user-submissions-view-filters.png)
+     > :::image type="content" source="../../media/admin-submission-reported-messages.png" alt-text="خيارات &quot;تصفية جديدة&quot; لمواد إرسال المستخدمين" lightbox="../../media/admin-submission-reported-messages.png":::
 
    - لتضمين الإدخالات، **انقر فوق تجميع** وحدد إحدى القيم التالية من القائمة المنسدلة:
      - **بلا**
@@ -298,4 +298,4 @@ ms.locfileid: "63682626"
 - **تشغيل التحقيق**
 
 > [!div class="mx-imgBorder"]
-> ![خيارات جديدة على الزر إجراء.](../../media/admin-submission-main-action-button.png)
+> :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="الخيارات &quot;جديد&quot; على الزر &quot;إجراء&quot;" lightbox="../../media/admin-submission-main-action-button.png":::

@@ -1,6 +1,6 @@
 ---
 title: تشغيل حماية الشبكة
-description: تمكين حماية الشبكة باستخدام إدارة التكوين وإدارة التكوين أو نهج المجموعة أو PowerShell أو الأجهزة المحمولة.
+description: تمكين حماية الشبكة باستخدام نهج المجموعة أو PowerShell أو Mobile إدارة الجهاز Configuration Manager.
 keywords: حماية الشبكة، استغلالات، موقع ويب ضار، ip، مجال، مجالات، تمكين، تشغيل
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,20 +15,20 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: b21b2f2a69ab9a85f1f5003104969364ae9c6e78
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 4c3b74179294d0b028dd07c3a6f4f28e844237d3
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63571575"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469922"
 ---
 # <a name="turn-on-network-protection"></a>تشغيل حماية الشبكة
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -56,15 +56,14 @@ ms.locfileid: "63571575"
    - 1، أو **على**
    - 2، أو **وضع** التدقيق
 
-    :::image type="content" alt-text="مفتاح تسجيل حماية الشبكة." source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
-    
-    
+    :::image type="content" source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" alt-text="مفتاح تسجيل حماية الشبكة" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
+
 ## <a name="enable-network-protection"></a>تمكين حماية الشبكة
 
 تمكين حماية الشبكة باستخدام أي من هذه الأساليب:
 
 - [PowerShell](#powershell)
-- [إدارة أجهزة المحمول (MDM)](#mobile-device-management-mdm)
+- [الأجهزة إدارة الجهاز (MDM)](#mobile-device-management-mdm)
 - [إدارة نقاط النهاية من Microsoft](#microsoft-endpoint-manager)
 - [نهج المجموعة](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
@@ -120,9 +119,9 @@ ms.locfileid: "63571575"
 
     *-أو-*
 
-    على كمبيوتر إدارة نهج المجموعة المنضم إلى المجال، افتح وحدة [](https://technet.microsoft.com/library/cc731212.aspx)تحكم إدارة نهج المجموعة، وانقر بيمين فوق كائن نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
+    على كمبيوتر إدارة نهج المجموعة مجال، افتح وحدة التحكم في الإدارة نهج المجموعة، وانقر بيمين فوق نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.[](https://technet.microsoft.com/library/cc731212.aspx)
 
-2. في محرر **إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
+2. في نهج المجموعة **إدارة،** انتقل إلى **تكوين الكمبيوتر** وحدد **قوالب إدارية**.
 
 3. قم بتوسيع الشجرة Windows **مكونات برنامج الحماية من الفيروسات من Microsoft Defender** \>  \> **Windows حماية شبكة Defender Exploit Guard**\>.
 
@@ -135,7 +134,7 @@ ms.locfileid: "63571575"
     - **وضع التدقيق** - إذا قام مستخدم بزيارة عنوان IP ضار أو مجال ضار، سيتم تسجيل حدث في Windows الأحداث. ومع ذلك، لن يتم حظر المستخدم من زيارة العنوان.
 
    > [!IMPORTANT]
-   > لتمكين حماية الشبكة بشكل كامل، يجب تعيين الخيار "نهج المجموعة" إلى  "تمكين" وتحديد "حظر" أيضا في القائمة المنسدلة "خيارات".
+   > لتمكين حماية الشبكة بشكل كامل، يجب تعيين نهج المجموعة "تمكين" وتحديد "حظر"  أيضا في القائمة المنسدلة "خيارات".
 
 تأكد من تمكين حماية الشبكة على كمبيوتر محلي باستخدام محرر السجل:
 
@@ -150,7 +149,7 @@ ms.locfileid: "63571575"
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. افتح وحدة التحكم Configuration Manager.
+1. افتح وحدة Configuration Manager التحكم.
 
 2. انتقل إلى الأصول **والتوافق** > **، Endpoint Protection** >  **Windows Defender Exploit Guard**. 
 
@@ -170,7 +169,7 @@ ms.locfileid: "63571575"
 
 
 > [!IMPORTANT]
-> بمجرد نشر نهج "حماية استغلال" من "إدارة التكوين"، لن تتم إزالة إعدادات "حماية استغلال" من العملاء إذا قمت بإزالة النشر. `Delete not supported` يتم تسجيله في سجل ExploitGuardHandler.log الخاص ب عميل Configuration Manager إذا قمت بإزالة نشر "حماية استغلال" العميل. <!--CMADO8538577-->
+> بمجرد نشر نهج "حماية استغلال" من Configuration Manager، لن تتم إزالة إعدادات "حماية استغلال" من العملاء إذا قمت بإزالة النشر. `Delete not supported`يتم تسجيله في Configuration Manager ExploitGuardHandler.log الخاص للعميل إذا قمت بإزالة نشر "حماية استغلال العميل". <!--CMADO8538577-->
 > يمكن تشغيل البرنامج النصي التالي من PowerShell ضمن سياق النظام لإزالة هذه الإعدادات:<!--CMADO9907132-->
 >
 > ```powershell

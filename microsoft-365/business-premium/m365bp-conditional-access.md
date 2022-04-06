@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على كيفية مساعدة إعدادات الأمان الافتراضية في حماية مؤسستك من الهجمات ذات الصلة بالهوية من خلال توفير إعدادات أمان تم تكوينها مسبقا Microsoft 365 Business Premium.
-ms.openlocfilehash: dfd0d3edff541d828b70d383641aaf66c93826b6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 9684dc2be113d6f511f1a84e8865ac04a6881ecc
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63705133"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634658"
 ---
 # <a name="turn-on-security-defaults-for-microsoft-365-business-premium"></a>تشغيل إعدادات الأمان الافتراضية Microsoft 365 Business Premium
 
@@ -76,9 +76,13 @@ ms.locfileid: "63705133"
 إذا كنت تريد استخدام "الوصول الشرطي" لتكوين سياسات مكافئة لتلك التي تم تمكينها بواسطة إعدادات الأمان الافتراضية، فاستعرض الدليلين التاليين خطوة بخطوة:
 
 - [طلب MFA للمسؤولين](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+
 - [يتطلب MFA لإدارة Azure](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+
 - [حظر المصادقة القديمة](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+
 - [طلب MFA لجميع المستخدمين](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+
 - [يتطلب تسجيل Azure AD MFA](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - يتطلب Azure AD Identity Protection، الذي هو جزء من Azure Active Directory Premium P2
 
 لمعرفة المزيد حول الوصول الشرطي، راجع [ما هو الوصول الشرطي؟](/azure/active-directory/conditional-access/overview) لمزيد من المعلومات حول إنشاء نهج الوصول الشرطي، راجع [إنشاء نهج وصول شرطي](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).

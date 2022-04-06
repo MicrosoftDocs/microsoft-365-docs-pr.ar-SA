@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: قم بتخصيص صفحة تسجيل الدخول الخاصة بك مع إشعار الخصوصية ولموافقة Microsoft 365.
-ms.openlocfilehash: 003853e0577b2c23fc8240d2b19918c3235eade8
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8beff76721ce622d5e1943aea1c16fda90b052f1
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63583801"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634680"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>تخصيص صفحة تسجيل الدخول باستخدام إشعار الخصوصية ولموافقة
 
@@ -42,8 +42,11 @@ ms.locfileid: "63583801"
 العناصر التي يمكنك تحديثها هي:
 
 - **نص صفحة تسجيل الدخول** مكان سهل لإضافة بيان الخصوصية و الموافقة.
+
 - صورة خلفية صفحة تسجيل الدخول
+
 - شعار الشعار
+
 - تلميح اسم المستخدم
 
 للحصول على أمثلة على إشعارات الخصوصية وإشعارات الموافقة، راجع إلحاق A في البحث عن أجهزة الكمبيوتر وضبطها والحصول على أدلة إلكترونية في ["التحقيقات الجنائية](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)".

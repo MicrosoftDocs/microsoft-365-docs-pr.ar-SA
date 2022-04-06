@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 741450f2573e0d750a1d3de5012f97cf16a0780d
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: e2a8f7166e1fa3a05b95b1a48dbf91b30ef34224
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569081"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470362"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-endpoint-plan-1"></a>إعداد الخطة Microsoft Defender لنقطة النهاية 1 وتكوينها
 
@@ -53,10 +53,10 @@ ms.locfileid: "64569081"
 
 | المتطلب | الوصف |
 |:---|:---|
-| متطلبات الترخيص | Defender for Endpoint الخطة 1 |
+| متطلبات الترخيص | Defender for Endpoint Plan 1 (يشار إليه سابقا Microsoft Defender لنقطة النهاية Lite)|
 | متطلبات المستعرض | Microsoft Edge <br/> الإصدار 11 من Internet Explorer <br/> Google Chrome |
 | أنظمة التشغيل | Windows 10 الإصدار 1709 أو الإصدارات الأحدث <br/>macOS: 11.5 (Big Sur) أو 10.15.7 (Catalina) أو 10.14.6 (Mojave) <br/>iOS <br/>نظام التشغيل Android  |
-| Datacenter | أحد مواقع مراكز البيانات التالية: <br/>- الاتحاد الأوروبي <br/>- المملكة المتحدة <br/>- Estados Unidos |
+| Datacenter | أحد مواقع مراكز البيانات التالية: <br/>- الاتحاد الأوروبي <br/>- المملكة المتحدة <br/>- الولايات المتحدة |
 
 
 ## <a name="plan-your-deployment"></a>التخطيط للنشر
@@ -119,8 +119,8 @@ ms.locfileid: "64569081"
 
 |نظام تشغيل نقطة النهاية | أساليب ال متنبها|
 |---|---|
-| Windows 10 | [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة نقاط النهاية من Microsoft/ Mobile Enhedshåndtering](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [برامج VDI النصية](configure-endpoints-vdi.md)  |
-| macOS | [البرامج النصية المحلية](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [الأجهزة 裝置管理](mac-install-with-other-mdm.md) |
+| Windows 10 | [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة نقاط النهاية من Microsoft/Mobile إدارة الأجهزة](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [برامج VDI النصية](configure-endpoints-vdi.md)  |
+| macOS | [البرامج النصية المحلية](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [الأجهزة إدارة الجهاز](mac-install-with-other-mdm.md) |
 | iOS |[مستند إلى التطبيق](ios-install.md) |
 | Android | [إدارة نقاط النهاية من Microsoft](android-intune.md) |
 
@@ -385,22 +385,22 @@ ms.locfileid: "64569081"
 9. على علامة **التبويب مراجعة + إنشاء** ، راجع إعدادات النهج، ثم اختر **إنشاء**.
 
 > [!TIP]
-> تكون إعدادات جدار الحماية مفصلة وقد تبدو معقدة. راجع أفضل [الممارسات لتكوين جدار](/windows/security/threat-protection/windows-firewall/best-practices-configuring) الحماية Windows Defender.
+> تكون إعدادات جدار الحماية مفصلة وقد تبدو معقدة. راجع أفضل [الممارسات لتكوين جدار الحماية Windows Defender](/windows/security/threat-protection/windows-firewall/best-practices-configuring).
 
 ### <a name="application-control"></a>عنصر تحكم التطبيق
 
-Windows Defender التحكم في التطبيقات (WDAC) Windows نقاط النهاية من خلال السماح بتشغيل التطبيقات والعمليات الموثوق بها فقط. استخدمت معظم المؤسسات نشرا مرحيا ل WDAC. وهذا يعني أن معظم المؤسسات لا يتم طرح WDAC عبر Windows نقاط النهاية في بادئ الأمر. في الواقع، استنادا إلى ما إذا كانت نقاط نهاية Windows في مؤسستك مدارة بشكل كامل أو مدارة بشكل خفيف أو نقاط نهاية "إحضار جهازك الخاص"، يمكنك نشر WDAC على كل نقاط النهاية أو على بعض نقاط النهاية.
+Windows Defender Application Control (WDAC) على حماية نقاط نهاية Windows من خلال السماح بتشغيل التطبيقات والعمليات الموثوق بها فقط. استخدمت معظم المؤسسات نشرا مرحيا ل WDAC. وهذا يعني أن معظم المؤسسات لا يتم طرح WDAC عبر Windows نقاط النهاية في بادئ الأمر. في الواقع، استنادا إلى ما إذا كانت نقاط نهاية Windows في مؤسستك مدارة بشكل كامل أو مدارة بشكل خفيف أو نقاط نهاية "إحضار جهازك الخاص"، يمكنك نشر WDAC على كل نقاط النهاية أو على بعض نقاط النهاية.
 
 للمساعدة في تخطيط نشر WDAC، راجع الموارد التالية:
 
 - [التحكم في التطبيق Windows](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 
-- [Windows Defender قرارات تصميم نهج التحكم في التطبيقات](/windows/security/threat-protection/windows-defender-application-control/understand-windows-defender-application-control-policy-design-decisions)
+- [Windows نهج التحكم في تطبيقات Defender](/windows/security/threat-protection/windows-defender-application-control/understand-windows-defender-application-control-policy-design-decisions)
 
-- [Windows Defender "التحكم في التطبيق" في سيناريوهات مختلفة: أنواع الأجهزة](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
+- [Windows "التحكم في تطبيق Defender" في سيناريوهات مختلفة: أنواع الأجهزة](/windows/security/threat-protection/windows-defender-application-control/types-of-devices)
 
 ## <a name="next-steps"></a>الخطوات التالية
 
 الآن وقد مرت بعملية الإعداد والتكوين، فإن الخطوة التالية هي بدء استخدام Defender for Endpoint. 
 
-- [Első lépések مع Defender for Endpoint الخطة 1](mde-plan1-getting-started.md)
+- [بدء العمل مع Defender for Endpoint الخطة 1](mde-plan1-getting-started.md)

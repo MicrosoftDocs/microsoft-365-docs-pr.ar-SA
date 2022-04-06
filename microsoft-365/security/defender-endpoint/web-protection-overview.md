@@ -1,6 +1,6 @@
 ---
 title: حماية ويب
-description: تعرف على حماية الويب في Microsoft Defender ل Endpoint وكيفية حماية مؤسستك
+description: تعرف على حماية الويب في Microsoft Defender لنقطة النهاية وكيفية حماية مؤسستك
 keywords: حماية الويب، الحماية من المخاطر على الويب، استعراض الويب، الأمان، التصيد الاحتيالي، البرامج الضارة، استغلال، مواقع الويب، حماية الشبكة، Edge، Internet Explorer، Chrome، Firefox، مستعرض ويب، مواقع الويب الضارة
 search.appverid: met150
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d21fdd481ade59ca869d5cfe086e537c0c431228
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 7883ef4c7bc06c08e199af871902b26d8e46ac5e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63572311"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476566"
 ---
 # <a name="web-protection"></a>حماية ويب
 
@@ -28,8 +28,8 @@ ms.locfileid: "63572311"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -38,9 +38,9 @@ ms.locfileid: "63572311"
 
 ## <a name="about-web-protection"></a>حول حماية الويب
 
-إن حماية الويب في Microsoft Defender ل Endpoint هي إمكانية ت تشكل الحماية [](web-threat-protection.md)من تهديدات الويب وتصفية محتوى ويب [والمؤشرات المخصصة](manage-indicators.md). [](web-content-filtering.md) تتيح لك حماية الويب حماية أجهزتك من تهديدات الويب وتساعدك على تنظيم المحتوى غير المرغوب فيه. يمكنك العثور على تقارير حماية ويب في Microsoft 365 Defender من خلال الذهاب إلى **تقارير > ويب**.
+حماية الويب في Microsoft Defender لنقطة النهاية هي إمكانية ت تشكل الحماية من تهديدات الويب وتصفية محتوى ويب [والمؤشرات المخصصة](manage-indicators.md).[](web-threat-protection.md)[](web-content-filtering.md) تتيح لك حماية الويب حماية أجهزتك من تهديدات الويب وتساعدك على تنظيم المحتوى غير المرغوب فيه. يمكنك العثور على تقارير حماية ويب في Microsoft 365 Defender من خلال الذهاب إلى **تقارير > ويب**.
 
-:::image type="content" alt-text="صورة لكل بطاقات حماية الويب." source="images/web-protection.png" lightbox="images/web-protection.png":::
+:::image type="content" source="images/web-protection.png" alt-text="بطاقات حماية الويب" lightbox="images/web-protection.png":::
 
 ### <a name="web-threat-protection"></a>الحماية من المخاطر على الويب
 
@@ -73,7 +73,7 @@ ms.locfileid: "63572311"
 تتضمن تصفية محتوى ويب ما يلي:
 
 - يتم منع المستخدمين من الوصول إلى مواقع الويب في الفئات المحظورة، سواء كانوا يستعرضون في الموقع أو خارجها.
-- يمكنك بسهولة نشر سياسات متنوعة لمجموعات مختلفة من المستخدمين باستخدام مجموعات الأجهزة المعرفة في إعدادات التحكم بالوصول المستند إلى الدور في [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/rbac).
+- يمكنك بسهولة نشر سياسات متنوعة لمجموعات مختلفة من المستخدمين باستخدام مجموعات الأجهزة المعرفة في إعدادات التحكم بالوصول Microsoft Defender لنقطة النهاية المستندة إلى [الدور](/microsoft-365/security/defender-endpoint/rbac).
 - يمكنك الوصول إلى تقارير الويب في الموقع المركزي نفسه، مع إمكانية الرؤية عبر الكتل الفعلية واستخدام الويب.
 
 لمزيد من المعلومات، راجع [تصفية محتوى ويب](web-content-filtering.md).
@@ -82,7 +82,7 @@ ms.locfileid: "63572311"
 
 ت مكون حماية الويب من المكونات التالية، المدرجة حسب ترتيب الأسبقية. يتم فرض كل مكون من هذه المكونات بواسطة عميل SmartScreen في Microsoft Edge ومن قبل عميل Network Protection في كل المستعرضات والعمليات الأخرى.
 
-- المؤشرات المخصصة (IP/URL ونهج Microsoft Defender for Cloud Apps)
+- المؤشرات المخصصة (IP/URL Microsoft Defender for Cloud Apps)
   - السماح
   - تحذير
   - حظر
@@ -94,7 +94,7 @@ ms.locfileid: "63572311"
 - تصفية محتوى ويب (WCF)
 
 > [!NOTE]
-> ينشئ Microsoft Defender for Cloud Apps حاليا مؤشرات عناوين URL المحظورة فقط.
+> Microsoft Defender for Cloud Apps حاليا مؤشرات عناوين URL المحظورة فقط.
 
 يرتبط ترتيب الأسبقية بالترتيب الذي يتم به تقييم عنوان URL أو IP. على سبيل المثال، إذا كان لديك نهج تصفية محتوى ويب، يمكنك إنشاء استثناءات من خلال مؤشرات IP/URL مخصصة. مؤشرات اختراق مخصصة (IoC) أعلى في ترتيب الأسبقية من كتل WCF.
 
@@ -119,7 +119,7 @@ ms.locfileid: "63572311"
 
 في كل سيناريوهات حماية الويب، يمكن استخدام SmartScreen و Network Protection معا لضمان الحماية عبر كل من المستعرضات والعمليات الأولى وال الجهة الخارجية. يتم بناء SmartScreen مباشرة في Microsoft Edge، بينما تراقب "حماية الشبكة" حركة المرور في المستعرضات والعمليات الخاصة ب جهة خارجية. يوضح الرسم التخطيطي أدناه هذا المفهوم. هذا الرسم التخطيطي للعملاء الذين يعملون معا لتوفير تغطية متعددة للمستعرض/التطبيق دقيق لجميع ميزات حماية ويب (المؤشرات، تهديدات الويب، تصفية المحتوى).
 
-:::image type="content" alt-text="استخدام SmartScreen وحماية الشبكة معا." source="../../media/web-protection-protect-browsers.png" lightbox="../../media/web-protection-protect-browsers.png":::
+:::image type="content" source="../../media/web-protection-protect-browsers.png" alt-text="استخدام SmartScreen و&quot;حماية الشبكة&quot; معا" lightbox="../../media/web-protection-protect-browsers.png":::
 
 ## <a name="troubleshoot-endpoint-blocks"></a>استكشاف كتل نقاط النهاية وإصلاحها
 
@@ -171,17 +171,17 @@ DeviceEvents
 إذا قام مستخدم بزيارة صفحة ويب تشكل خطرا من البرامج الضارة أو التصيد الاحتيالي أو أي تهديدات أخرى على الويب، سيشغل Microsoft Edge صفحة حظر تقرأ "تم إعلام هذا الموقع بأنه غير آمن" إلى جانب المعلومات ذات الصلة بالخطر.
 
 > [!div class="mx-imgBorder"]
-> ![الصفحة المحظورة بواسطة Microsoft Edge.](../../media/web-protection-malicious-block.png)
+> :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="الصفحة المحظورة بواسطة Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
 
 إذا تم حظرها بواسطة WCF أو مؤشر مخصص، تظهر صفحة حظر في Microsoft Edge تخبر المستخدم بأن هذا الموقع تم حظره من قبل المؤسسة.
 
 > [!div class="mx-imgBorder"]
-> ![الصفحة التي حظرتها مؤسستك.](../../media/web-protection-indicator-blockpage.png)
+> :::image type="content" source="../../media/web-protection-indicator-blockpage.png" alt-text="الصفحة التي حظرتها مؤسستك" lightbox="../../media/web-protection-indicator-blockpage.png":::
 
 على أي حال، لا يتم عرض صفحات الحظر في مستعرضات  الأطراف الخارجية، وسيرى المستخدم صفحة "فشل الاتصال الآمن" إلى جانب إعلام منسدل. استنادا إلى النهج المسؤول عن الحظر، سيشاهد المستخدم رسالة مختلفة في الإعلام المنبثق. على سبيل المثال، ستعرض تصفية محتوى الويب الرسالة 'تم حظر هذا المحتوى'.
 
 > [!div class="mx-imgBorder"]
-> ![صفحة تم حظرها بواسطة WCF.](../../media/web-protection-np-block.png)
+> :::image type="content" source="../../media/web-protection-np-block.png" alt-text="الصفحة المحظورة بواسطة WCF" lightbox="../../media/web-protection-np-block.png":::
 
 ## <a name="report-false-positives"></a>الإبلاغ عن إيجابيات خاطئة
 
@@ -189,7 +189,7 @@ DeviceEvents
 
 بالنسبة إلى WCF، يمكنك النزاع على فئة مجال. انتقل إلى **علامة التبويب** المجالات لتقارير WCF، ثم انقر فوق **تقرير عدم الدقة**. سيتم فتح منتفتحة. تعيين أولوية الحادث وتوفير بعض التفاصيل الإضافية، مثل الفئة المقترحة. لمزيد من المعلومات حول كيفية تشغيل WCF وكيفية النزاع على الفئات، راجع [تصفية محتوى ويب](web-content-filtering.md).
 
-لمزيد من المعلومات حول كيفية إرسال الإيجابيات/السلبيات الخاطئة، راجع [عنوان الإيجابيات/السلبيات الخاطئة في Microsoft Defender لنقطة النهاية](defender-endpoint-false-positives-negatives.md).
+لمزيد من المعلومات حول كيفية إرسال الإيجابيات/السلبيات الخاطئة، راجع [العنوان الموجبة/](defender-endpoint-false-positives-negatives.md)السالبة الخاطئة في Microsoft Defender لنقطة النهاية.
 
 ## <a name="related-information"></a>المعلومات ذات الصلة
 

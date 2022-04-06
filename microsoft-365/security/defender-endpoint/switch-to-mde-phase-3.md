@@ -21,14 +21,14 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 03/28/2022
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 1397c34e8e4a7f1fcb20df192409bd57bc50f40b
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: 4f387ae01af51292667f810176970f3607b489b3
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507110"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64634394"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>التبديل إلى Microsoft Defender لنقطة النهاية - المرحلة 3: Onboard
 
@@ -37,7 +37,7 @@ ms.locfileid: "64507110"
 - [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| [![المرحلة 1: التحضير3.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[المرحلة 1: التحضير](switch-to-mde-phase-1.md) | [![المرحلة الثانية: إعداد](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[المرحلة الثانية: إعداد](switch-to-mde-phase-2.md) | ![المرحلة 3: Onboard](images/phase-diagrams/onboard.png#lightbox)<br/>المرحلة 3: Onboard |
+| [![المرحلة 1: التحضير3.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[المرحلة 1: التحضير](switch-to-mde-phase-1.md) | [![المرحلة 2: إعداد](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[المرحلة 2: إعداد](switch-to-mde-phase-2.md) | ![المرحلة 3: التجهيز للاستخدام](images/phase-diagrams/onboard.png#lightbox)<br/>المرحلة 3: التجهيز للاستخدام |
 |--|--|--|
 || |*أنت هنا!* |
 
@@ -80,15 +80,11 @@ ms.locfileid: "64507110"
 | iOS | [إدارة نقاط النهاية من Microsoft](ios-install.md)     |
 |Android  | [إدارة نقاط النهاية من Microsoft](android-intune.md)  | 
 
-
 (<a id="fn1">1</a>) Windows Server 2016 و Windows Server 2012 R2 إلى ال متنها باستخدام الإرشادات الموجودة في [خوادم Windows على اللوحة](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
-
 
 ## <a name="run-a-detection-test"></a>تشغيل اختبار الكشف
 
 للتحقق من اتصال أجهزتك المجهزة بشكل صحيح ب Defender for Endpoint، يمكنك تشغيل اختبار الكشف.
-
-<br/><br/>
 
 |نظام التشغيل|إرشادات|
 |---|---|
@@ -102,8 +98,6 @@ ms.locfileid: "64507110"
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>تأكد من برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي على نقاط النهاية
 
 الآن وقد تم تشغيل نقاط النهاية إلى Defender for Endpoint، فإن الخطوة التالية هي التأكد من أن برنامج الحماية من الفيروسات من Microsoft Defender قيد التشغيل في الوضع السلبي. يمكنك استخدام أحد الأساليب العديدة، كما هو موضح في الجدول التالي:
-
-<br/><br/>
 
 |الأسلوب|ما يجب فعله|
 |---|---|
@@ -120,12 +114,12 @@ ms.locfileid: "64507110"
 
 لتعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي على Windows Server أو الإصدار 1803 أو الأحدث أو Windows Server 2019 أو Windows Server 2022، اتبع الخطوات التالية:
 
-1. افتح محرر السجل، ثم انتقل إلى:
-
-   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+1. افتح محرر السجل، ثم انتقل إلى `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. قم بتحرير (أو إنشاء) إدخال DWORD يسمى **ForceDefenderPassiveMode**، وحدد الإعدادات التالية:
+
    - تعيين قيمة DWORD إلى **1**.
+
    - ضمن **الأساس**، حدد **ست عشري**.
 
 > [!NOTE]
@@ -146,6 +140,7 @@ ms.locfileid: "64507110"
 هناك نوعان من التحديثات المتعلقة بإبقاء برنامج الحماية من الفيروسات من Microsoft Defender محدثة:
 
 - تحديثات معلومات الأمان
+
 - تحديثات المنتج
 
 للحصول على التحديثات، اتبع الإرشادات في إدارة برنامج الحماية من الفيروسات من Microsoft Defender [الأساسية وتطبيق الأساسات](manage-updates-baselines-microsoft-defender-antivirus.md).
@@ -155,6 +150,7 @@ ms.locfileid: "64507110"
 إذا كان لديك في هذه المرحلة:
 
 - تم تعيين أجهزة مؤسستك إلى Defender for Endpoint، و
+
 - برنامج الحماية من الفيروسات من Microsoft Defender تم تثبيته وتمكينه،
 
 بعد ذلك، الخطوة التالية هي إلغاء تثبيت حل الحماية من الفيروسات والحماية من البرامج الضارة ونقطة النهاية غير من Microsoft. عند إلغاء تثبيت الحل غير الخاص ب Microsoft، برنامج الحماية من الفيروسات من Microsoft Defender التبديل من الوضع السلبي إلى الوضع النشط. في معظم الحالات، يحدث هذا تلقائيا. 
@@ -169,7 +165,9 @@ ms.locfileid: "64507110"
 الآن بعد أن قمت بالتكوين في Defender for Endpoint، ثم قمت ب إلغاء تثبيت الحل السابق غير الخاص ب Microsoft، فإن الخطوة التالية هي التأكد من أن Defender for Endpoint يعمل بشكل صحيح. وتتمثل إحدى الطرق الجيدة لتنفيذ هذه المهمة في زيارة موقع سيناريوهات العرض التوضيحي ل Defender for Endpoint ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)). جرب سيناريو عرض توضيحي واحدا أو أكثر على تلك الصفحة، بما في ذلك ما يلي على الأقل:
 
 - الحماية التي يتم تسليمها من السحابة
+
 - التطبيقات التي يحتمل أن تكون غير مرغوب فيها (PUA)
+
 - حماية الشبكة (NP)
 
 > [!NOTE]
@@ -180,4 +178,5 @@ ms.locfileid: "64507110"
 **تهانينا**! لقد أكملت عملية [الترحيل إلى Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
 - [تفضل بزيارة لوحة معلومات عمليات الأمان](security-operations-dashboard.md) في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
+
 - [إدارة Defender لنقطة النهاية، نشر الترحيل](manage-mde-post-migration.md).

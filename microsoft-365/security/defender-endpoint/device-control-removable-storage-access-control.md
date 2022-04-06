@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender للتحكم في الوصول إلى التخزين القابل للإزالة لجهاز نقطة النهاية، وسائط التخزين القابلة للإزالة
-description: معلومات حول Microsoft Defender لنقطة النهاية
+title: Microsoft Defender لنقطة النهاية التحكم في الوصول إلى التخزين القابل للإزالة في الجهاز، وسائط التخزين القابلة للإزالة
+description: تجول حول Microsoft Defender لنقطة النهاية
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,23 +15,23 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 03/18/2022
-ms.openlocfilehash: def22b83dc5c84a3b222d4e50f2d2dce8d5d36ef
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8b17fc31e4a25ad66fdb51114d7931f7d934a226
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682736"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64470296"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>عنصر تحكم الوصول إلى التخزين القابل للإزالة من Microsoft Defender للتحكم في جهاز نقطة النهاية
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender لنقطة النهاية التحكم في الوصول إلى التخزين القابل للإزالة على الجهاز
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> تتوفر الآن إدارة نهج المجموعة وإدارة نهج Intune OMA-URI/Custom Policy لهذا المنتج بشكل عام (4.18.2106): راجع مدونة المجتمع التقني: حماية السعة التخزينية والطابعة القابلة للإزالة باستخدام [Microsoft Defender ل Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
+> تتوفر نهج المجموعة إدارة المنتجات وإدارة نهج Intune OMA-URI/Custom Policy لهذا المنتج بشكل عام (4.18.2106): راجع مدونة المجتمع التقني: حماية السعة التخزينية والطابعة القابلة [للإزالة](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806) باستخدام Microsoft Defender لنقطة النهاية.
 
 
-يمكنك Microsoft Defender للتحكم في الوصول إلى التخزين القابل للإزالة من Microsoft Defender للتحكم في جهاز نقطة النهاية من القيام ب المهمة التالية:
+Microsoft Defender لنقطة النهاية التحكم في الوصول إلى التخزين القابل للإزالة في الجهاز من القيام ب المهمة التالية:
 
 - التدقيق والسماح بالوصول للقراءة أو الكتابة أو التنفيذ إلى مساحة تخزين قابلة للإزالة مع استثناء أو بدونه أو منعه
 
@@ -44,7 +44,7 @@ ms.locfileid: "63682736"
 |الدعم المستند إلى المستخدم|نعم|
 |دعم يستند إلى جهاز|نعم|
 
-|الإمكانية|الوصف|النشر من خلال Intune|النشر من خلال نهج المجموعة|
+|الإمكانية|الوصف|النشر من خلال Intune|النشر عبر نهج المجموعة|
 |---|---|---|---|
 |إنشاء مجموعة وسائط قابلة للإزالة|يسمح لك بإنشاء مجموعة وسائط قابلة لإعادة الإزالة|الخطوة 1 في المقطع، [نهج النشر عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 1 في المقطع، [نهج النشر عبر نهج المجموعة](#deploying-policy-via-group-policy)|
 |إنشاء النهج|يسمح لك بإنشاء نهج لفرض كل مجموعة وسائط قابلة للإزالة|الخطوة 2 في المقطع، [نهج النشر عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوات 2 و3 في المقطع، [نهج النشر عبر نهج المجموعة](#deploying-policy-via-group-policy) |
@@ -62,11 +62,7 @@ ms.locfileid: "63682736"
 
 - **4.18.2107 أو** إصدار لاحق: إضافة دعم Windows Portable Device (WPD) (للأجهزة المحمولة، مثل الأجهزة اللوحية)، إضافة AccountName إلى [أدوات البحث المتقدمة](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
-- **4.18.2111** أو إصدار أحدث: إضافة "تمكين التحكم بالوصول إلى التخزين القابل للإزالة أو تعطيله"، "التنفيذ الافتراضي"، وقت تحديث نهج جهاز العميل عبر PowerShell، معلومات الملف
-
-- **4.18.2201 أو** أي وقت لاحق: دعم نسخة من ملف مكتوب للتخزين المسموح به من خلال OMA-URI
-
-:::image type="content" source="images/powershell.png" alt-text="واجهة PowerShell.":::
+:::image type="content" source="images/powershell.png" alt-text="واجهة PowerShell" lightbox="images/powershell.png":::
 
 > [!NOTE]
 > لا يحتاج أمن Windows أي من مكونات التخزين إلى أن يكون نشطا حيث يمكنك تشغيل "التحكم بالوصول إلى التخزين القابل للإزالة" بشكل مستقل أمن Windows التخزين.
@@ -102,7 +98,7 @@ ms.locfileid: "63682736"
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>سيناريوهات "التحكم بالوصول إلى التخزين" الشائعة القابلة للإزالة
 
-لمساعدتك على التعرف على Microsoft Defender ل "التحكم بالوصول إلى التخزين القابل للإزالة لنقطة النهاية"، قمنا بوضع بعض السيناريوهات الشائعة لمتابعتها.
+لمساعدتك على التعرف على Microsoft Defender لنقطة النهاية الوصول إلى التخزين القابل للإزالة، قمنا بوضع بعض السيناريوهات الشائعة لمتابعتها.
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>السيناريو 1: منع الوصول للكتابة والتنفيذ إلى الكل مع السماح ببرنامس USBs معينة معتمدة
 
@@ -140,19 +136,19 @@ ms.locfileid: "63682736"
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>نشر نهج وإدارته عبر نهج المجموعة
 
-تمكنك ميزة التحكم بالوصول إلى التخزين القابلة للإزالة من تطبيق النهج عبر نهج المجموعة على المستخدم أو الجهاز أو كليهما.
+تمكنك ميزة التحكم بالوصول إلى التخزين القابلة للإزالة من تطبيق النهج عبر نهج المجموعة على أي من المستخدمين أو الجهازين أو كليهما.
 
 ### <a name="licensing"></a>الترخيص
 
 قبل بدء استخدام "التحكم بالوصول إلى التخزين القابل للإزالة"، يجب تأكيد اشتراكك Microsoft 365 [التخزين](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). للوصول إلى عنصر تحكم الوصول إلى التخزين القابل للإزالة واستخدامه، يجب أن يكون لديك Microsoft 365 E3 أو Microsoft 365 E5.
 
-### <a name="deploying-policy-via-group-policy"></a>نهج النشر عبر نهج المجموعة
+### <a name="deploying-policy-via-group-policy"></a>نشر نهج عبر نهج المجموعة
 
 1. ادمج كافة المجموعات ضمن `<Groups>` `</Groups>` ملف xml واحد.
 
     توضح الصورة التالية مثال السيناريو 1: منع الوصول للكتابة وتنفيذه [إلى الكل ولكن مع السماح ببرنامجات US معينة](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs) معتمدة.
 
-    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="تعرض الشاشة إعدادات التكوين التي تسمح بأجهزة USBs معينة معتمدة على الأجهزة.":::
+    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="إعدادات التكوين التي تسمح بأجهزة USBs معينة معتمدة على الأجهزة" lightbox="images/prevent-write-access-allow-usb.png":::
 
 2. قم بدمج كل القواعد الموجودة في `<PolicyRules>` `</PolicyRules>` ملف xml واحد.
 
@@ -162,15 +158,15 @@ ms.locfileid: "63682736"
 
     توضح الصورة التالية استخدام خاصية SID، ومثال على السيناريو 1: منع الوصول للكتابة وتنفيذه إلى الكل مع السماح ببرنامج [USBs معين معتمد](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
-    :::image type="content" source="images/usage-sid-property.png" alt-text="تعرض الشاشة رمزا يشير إلى استخدام سمة الخاصية SID.":::
+    :::image type="content" source="images/usage-sid-property.png" alt-text="التعليمة البرمجية التي تشير إلى استخدام سمة الخاصية SID" lightbox="images/usage-sid-property.png":::
 
-3. احفظ ملفات XML الأساسية والمجموعة على مجلد مشاركة الشبكة وضع مسار مجلد مشاركة الشبكة في  إعداد نهج **المجموعة:** \>  \> قوالب تكوين الكمبيوتر الإدارية **Windows مكونات** \> \> برنامج الحماية من الفيروسات من Microsoft Defender **التحكم** في الجهاز: 'تعريف عنصر تحكم الجهاز **مجموعات النهج'** **و'تعريف قواعد نهج التحكم في الجهاز'**.
+3. احفظ ملفات XML الأساسية والمجموعة على مجلد مشاركة الشبكة وضع مسار مجلد مشاركة الشبكة في إعداد نهج المجموعة: **قوالب** \>  \> تكوين الكمبيوتر الإدارية Windows **مكونات** \> **برنامج الحماية من الفيروسات من Microsoft Defender** \> **التحكم في الجهاز**: **"تعريف مجموعات نهج التحكم في الجهاز"** و **"تعريف قواعد نهج التحكم في الجهاز".**
 
    إذا لم تتمكن من العثور على تكوين النهج UX في نهج المجموعة، يمكنك تنزيل ملفات [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) و [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) عن طريق تحديد **Raw** ثم **حفظ باسم**.
 
    - يجب أن يكون الجهاز الهدف قادرا على الوصول إلى مشاركة الشبكة للحصول على النهج. ومع ذلك، بمجرد قراءة النهج، لن يعود اتصال مشاركة الشبكة مطلوبا، حتى بعد إعادة تشغيل الجهاز.
 
-    :::image type="content" source="images/device-control.png" alt-text="شاشة التحكم في الجهاز.":::
+    :::image type="content" source="images/device-control.png" alt-text="شاشة &quot;التحكم في الجهاز&quot;" lightbox="images/device-control.png":::
 
 4. فرض افتراضي: يسمح لك بتعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج. على سبيل المثال، لديك نهج فقط (إما رفض أو السماح) لإزالةMediaDevices، ولكن ليس لديك أي نهج ل CdRomDevices أو WpdDevices، كما يمكنك تعيين رفض افتراضي من خلال هذا النهج، سيتم حظر الوصول للقراءة/الكتابة/التنفيذ إلى CdRomDevices أو WpdDevices.
 
@@ -191,7 +187,7 @@ ms.locfileid: "63682736"
     
     يمكنك نشر هذا مع AccessMask و Option المناسبين - راجع الخطوة 2 أعلاه.
 
-    :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="نهج المجموعة - تعيين locaiton لدلليل الملف":::
+    :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="نهج المجموعة - تعيين locaiton للحصول على دليل ملف":::
 
 ## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>نشر نهج وإدارته عبر Intune OMA-URI
 
@@ -227,7 +223,7 @@ ms.locfileid: "63682736"
 
     - نوع البيانات: سلسلة (ملف XML)
 
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="ملف xml لنوع بيانات STRING.":::
+      :::image type="content" source="images/xml-data-type-string.png" alt-text="الحقل &quot;نوع البيانات&quot; في الصفحة &quot;إضافة صف&quot;" lightbox="images/xml-data-type-string.png":::
 
 2. لكل نهج، قم أيضا بإنشاء OMA-URI:
 
@@ -284,7 +280,7 @@ ms.locfileid: "63682736"
 
 (*قريبا!*) ستتوفر هذه الإمكانية في مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>). انتقل إلى **نهج الحد** >  من **الحد من Surface SecurityAtack** > **.** اختر **النظام الأساسي: Windows 10 واللاحقة** باستخدام **ملف التعريف: التحكم في الجهاز**.
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>عرض بيانات التحكم في الوصول إلى التخزين القابلة للإزالة في Microsoft Defender لنقطة النهاية
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>عرض بيانات التحكم في الوصول إلى مساحة التخزين القابلة للإزالة في Microsoft Defender لنقطة النهاية
 
 يعرض [Microsoft 365 Defender المدخل](https://security.microsoft.com/advanced-hunting) الأحداث التي يتم تشغيلها بواسطة عنصر تحكم الوصول إلى التخزين القابل للإزالة من الجهاز. للوصول إلى Microsoft 365 الأمان، يجب أن يكون لديك الاشتراك التالي:
 
@@ -311,37 +307,14 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
-```kusto
-//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
-DeviceEvents
-| where ActionType contains "RemovableStorageFileEvent"
-| extend parsed=parse_json(AdditionalFields)
-| extend Policy = tostring(parsed.Policy) 
-| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
-| extend MediaClassName = tostring(parsed.ClassName)
-| extend MediaInstanceId = tostring(parsed.InstanceId)
-| extend MediaName = tostring(parsed.MediaName)
-| extend MediaProductId = tostring(parsed.ProductId) 
-| extend MediaVendorId = tostring(parsed.VendorId) 
-| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
-| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
-| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, 
-    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
-    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
-    FileName, FolderPath, FileSize, FileEvidenceLocation,
-    AdditionalFields
-| order by Timestamp desc
-```
-    
-:::image type="content" source="images/block-removable-storage.png" alt-text="الشاشة التي تصف انسداد مساحة التخزين القابلة للإزالة.":::
+:::image type="content" source="images/block-removable-storage.png" alt-text="حجب مساحة التخزين القابلة للإزالة" lightbox="images/block-removable-storage.png":::
 
 ## <a name="frequently-asked-questions"></a>الأسئلة المتكررة
 
 
 ### <a name="how-to-generate-guid-for-group-idpolicyrule-identry-id"></a>كيفية إنشاء GUID لم Id/PolicyRule Id/Entry Id؟
 
-يمكنك إنشاء GUID من خلال مصدر مفتوح عبر الإنترنت أو من خلال PowerShell - [كيفية إنشاء GUID من خلال PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?msclkid=c1398a25a6d911ec9c888875fa1f24f5&view=powershell-7.2)
+يمكنك إنشاء GUID عبر الإنترنت مصدر مفتوح أو من خلال PowerShell - [كيفية إنشاء GUID من خلال PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?msclkid=c1398a25a6d911ec9c888875fa1f24f5&view=powershell-7.2)
     
 ![صورة](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
     
@@ -355,13 +328,13 @@ DeviceEvents
 
 2. قد يكون السبب الآخر هو عدم تنسيق ملف XML بشكل صحيح، على سبيل المثال، عدم استخدام تنسيق العلامات الصحيح للعلامة "&" في ملف XML، أو قد يضيف محرر النص علامة ترتيب (BOM) 0xEF 0xBB 0xBF في بداية الملفات، مما يؤدي إلى عدم عمل تحليل XML. أحد الحلول البسيطة هو تنزيل [نموذج الملف](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (حدد **الخام** ثم **حفظ باسم**) ثم قم بتحديثه.
 
-3. إذا كنت تقوم بنشر النهج وإدارته عبر نهج المجموعة، فالرجاء التأكد من دمج كل النهج في ملف XML واحد ضمن عقدة أصل تسمى PolicyRules وكل المجموعة في ملف XML واحد ضمن عقدة أصل تسمى المجموعات؛ إذا كنت تدير من خلال Intune، فاحتفظ ب ملف نهج واحد XML، والشيء نفسه، ملف XML واحد في المجموعة.
+3. إذا كنت تقوم بنشر النهج وإدارته عبر نهج المجموعة، فالرجاء التأكد من دمج كل النهج في ملف XML واحد ضمن عقدة أصل تسمى PolicyRules وكل المجموعة في ملف XML واحد ضمن عقدة أصل تسمى المجموعات؛ وإذا كنت تديره من خلال Intune، فاحتفظ ب ملف نهج واحد XML، وهو نفس الملف، ملف XML واحد لمجموعة واحدة.
     
 إذا كنت لا تزال لا تعمل، فقد ترغب في الاتصال بنا ومشاركة سيارة الدعم من خلال تشغيل cmd مع المسؤول: "٪programfiles٪\Windows Defender\MpCmdRun.exe" -GetFiles
 
-### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>لا يوجد تكوين UX ل "تعريف مجموعات نهج التحكم في الجهاز" و"تعريف قواعد نهج التحكم في الجهاز" في نهج المجموعة
+### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>لا يوجد تكوين ل UX ل "تعريف مجموعات نهج التحكم في الجهاز" و"تعريف قواعد نهج التحكم في الجهاز" على نهج المجموعة
 
-لا نقوم ب دعم تكوين نهج المجموعة UX، ولكن لا يزال بإمكانك الحصول على ملفات adml و admx ذات الصلة بالنقر فوق "الخام" و"حفظ باسم" في ملفات [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) و [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) .
+لا يتم دعم UX لتكوين نهج المجموعة، ولكن لا يزال بإمكانك الحصول على ملفات adml و admx ذات الصلة بالنقر فوق "الخام" و"حفظ باسم" في ملفات [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) و [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx).
 
 ### <a name="how-can-i-know-whether-the-latest-policy-has-been-deployed-to-the-target-machine"></a>كيف يمكنني معرفة ما إذا تم نشر النهج الأخير على الجهاز الهدف؟
 

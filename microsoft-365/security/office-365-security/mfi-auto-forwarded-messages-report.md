@@ -13,12 +13,12 @@ description: يمكن للمسؤولين التعرف على تقرير الرس
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 05ad934fbc7736c0cfbb86f7411a2ca73705112f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 4603e7d895c847513a41dc52764070f970a50d15
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680149"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64476368"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>نظرة ثاقبة على الرسائل التي تم إعادة توجيهها بشكل تلقائي في مركز & الأمان
 
@@ -26,12 +26,12 @@ ms.locfileid: "63680149"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **تعرض رؤى** الرسائل التي تم إعادة توجيهها تلقائيا [](mail-flow-insights-v2.md) في لوحة معلومات تدفق البريد [](https://protection.office.com) في مركز التوافق & الأمان معلومات حول الرسائل التي يتم إعادة توجيهها تلقائيا من مؤسستك إلى المستلمين في المجالات الخارجية.
 
-![عنصر واجهة مستخدم الرسائل التي تم إعادة توجيهها بشكل تلقائي في مركز & الأمان.](../../media/mfi-auto-forwarded-messages.png)
+:::image type="content" source="../../media/mfi-auto-forwarded-messages.png" alt-text="عنصر واجهة المستخدم تحديدا رسائل إعادة توجيه تلقائية في مركز & الأمان" lightbox="../../media/mfi-auto-forwarded-messages.png":::
 
 ## <a name="auto-forwarded-messages-details"></a>تفاصيل الرسائل التي تم إعادة توجيهها بشكل تلقائي
 
@@ -52,7 +52,7 @@ ms.locfileid: "63680149"
   - **المستخدمون الجدد (الأسبوع الماضي)**
   - ارتباط إلى [تقرير إعادة توجيه التعديلات](mfi-new-users-forwarding-email.md#forwarding-modifications-report) للحصول على مزيد من التفاصيل.
 
-![منتحل تفاصيل تقرير الرسائل التي تم إعادة توجيهها بشكل تلقائي في مركز & الأمان.](../../media/mfi-auto-forwarded-messages-details.png)
+:::image type="content" source="../../media/mfi-auto-forwarded-messages-details.png" alt-text="عنصر واجهة مستخدم الرسائل التي تم إعادة توجيهها بشكل تلقائي في مركز & الأمان" lightbox="../../media/mfi-auto-forwarded-messages-details.png":::
 
 ## <a name="insights"></a>Insights
 

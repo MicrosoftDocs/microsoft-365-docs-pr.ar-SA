@@ -1,6 +1,6 @@
 ---
-title: تكامل VPN ل Microsoft Defender for Identity في Microsoft 365 Defender
-description: تعرف على كيفية تجميع معلومات المحاسبة من خلال دمج VPN ل Microsoft Defender for Identity في Microsoft 365 Defender
+title: Microsoft Defender for Identity VPN في Microsoft 365 Defender
+description: تعرف على كيفية تجميع معلومات المحاسبة من خلال دمج VPN Microsoft Defender for Identity في Microsoft 365 Defender
 ms.date: 06/07/2021
 ms.topic: how-to
 author: dcurwin
@@ -9,12 +9,12 @@ ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 59ab309b4d5cbab971c161ee1b8a4abefe93be69
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: a5c45ecda43b32e37f7309b9a2de33810d60bd15
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683022"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469152"
 ---
 # <a name="defender-for-identity-vpn-integration-in-microsoft-365-defender"></a>Defender for Identity VPN integration in Microsoft 365 Defender
 
@@ -23,7 +23,7 @@ ms.locfileid: "63683022"
 - Microsoft 365 Defender
 - Defender for Identity
 
-تشرح هذه المقالة كيفية دمج VPN مع [Microsoft Defender for Identity](/defender-for-identity) [في](/microsoft-365/security/defender/overview-security-center) Microsoft 365 Defender.
+تشرح هذه المقالة كيفية دمج [VPN مع Microsoft Defender for Identity](/defender-for-identity) في [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
 >[!IMPORTANT]
 >كجزء من Microsoft 365 Defender، تغيرت بعض <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>الخيارات والتفاصيل من موقعها في مدخل Defender for Identity. الرجاء قراءة التفاصيل أدناه لاكتشاف مكان العثور على كل من الميزات المألوفة والميزات الجديدة.
@@ -60,11 +60,11 @@ ms.locfileid: "63683022"
 1. انقر ب الماوس الأيمن فوق اسم الخادم وحدد **خصائص**.
 1. في علامة **التبويب أمان** ، ضمن **موفر المحاسبة**، حدد **RADIUS Accounting** وحدد **تكوين**.
 
-    ![إعداد نصف القطر.](../../media/defender-identity/radius-setup.png)
+   :::image type="content" source="../../media/defender-identity/radius-setup.png" alt-text="إعداد نصف القطر" lightbox="../../media/defender-identity/radius-setup.png":::
 
 1. في النافذة **إضافة خادم نصف** قطري، اكتب اسم **الخادم** [!INCLUDE [Product short](includes/product-short.md)] للمستشعر الأقرب (الذي لديه اتصال الشبكة). للتوفر العالي، يمكنك إضافة أدوات [!INCLUDE [Product short](includes/product-short.md)] استشعار إضافية كخادمات نصف قطرية. ضمن **المنفذ**، تأكد من تكوين الإعداد الافتراضي ل 1813. حدد **تغيير** وا اكتب سلسلة سرية مشتركة جديدة من الأحرف alphanumeric. دون السلسلة السرية المشتركة الجديدة حيث ستحتاج إلى تعبئتها لاحقا أثناء [!INCLUDE [Product short](includes/product-short.md)] التكوين. حدد المربع **إرسال حساب نصف** قطري عند تشغيل الرسائل ومحاسبتها وحدد **موافق** على كل مربعات الحوار المفتوحة.
 
-    ![إعداد VPN.](../../media/defender-identity/vpn-set-accounting.png)
+   :::image type="content" source="../../media/defender-identity/vpn-set-accounting.png" alt-text="إعداد VPN" lightbox="../../media/defender-identity/vpn-set-accounting.png":::
 
 ## <a name="configure-vpn-in-defender-for-identity"></a>تكوين VPN في Defender for Identity
 
@@ -74,12 +74,12 @@ ms.locfileid: "63683022"
 
 1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>، **انتقل إلى الإعدادات** ثم **الهويات**.
 
-    ![انتقل إلى الإعدادات، ثم الهويات.](../../media/defender-identity/settings-identities.png)
+   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="الخيار &quot;الهويات&quot; ضمن عنصر القائمة &quot;إعدادات&quot;" lightbox="../../media/defender-identity/settings-identities.png":::
 
 1. حدد **VPN**.
 1. حدد **تمكين محاسبة نصف القطر**، وا اكتب **السرية المشتركة** التي قمت بتكوينها مسبقا على خادم VPN RRAS. ثم حدد **حفظ**.
 
-    ![تكامل VPN.](../../media/defender-identity/vpn-integration.png)
+   :::image type="content" source="../../media/defender-identity/vpn-integration.png" alt-text="تكامل VPN" lightbox="../../media/defender-identity/vpn-integration.png":::
 
 بعد تمكين ذلك، ستستمع جميع أدوات استشعار Defender for Identity إلى المنفذ 1813 للأحداث المحاسبية نصف القطر، ويكتمل إعداد VPN الخاص بك.
 

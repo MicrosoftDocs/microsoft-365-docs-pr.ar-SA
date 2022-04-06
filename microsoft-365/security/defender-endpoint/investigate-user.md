@@ -15,20 +15,20 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: feebff9361f1504e94069e82a3de87a2e1d95c0c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 76b0b7405c8dc1c434fbc9f991903b25d8b9d4f4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63569895"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469328"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>التحقق من حساب مستخدم في Microsoft Defender لنقطة النهاية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -48,16 +48,16 @@ ms.locfileid: "63569895"
 
 عند التحقق من كيان حساب مستخدم، سترى:
 
-- تفاصيل حساب المستخدم وتنبيهات Microsoft Defender for Identity والأجهزة التي تم تسجيل دخولها، ودورها، ونوع تسجيل الدخول، وتفاصيل أخرى
+- تفاصيل حساب المستخدم Microsoft Defender for Identity تنبيهات المستخدم والأجهزة التي تم تسجيل دخولها، ودورها، ونوع تسجيل الدخول، وتفاصيل أخرى
 - نظرة عامة على الأحداث وأجهزة المستخدم
 - التنبيهات ذات الصلة بهذا المستخدم
 - الملحوظة في المؤسسة (الأجهزة التي سجلت دخولها إلى)
 
-![صورة لصفحة تفاصيل كيان حساب المستخدم.](images/atp-user-details-view.png)
+:::image type="content" source="images/atp-user-details-view.png" alt-text="صفحة تفاصيل كيان حساب المستخدم" lightbox="images/atp-user-details-view.png":::
 
 ### <a name="user-details"></a>تفاصيل المستخدم
 
-يوفر  جزء تفاصيل المستخدم على اليمين معلومات حول المستخدم، مثل الأحداث المفتوحة ذات الصلة والتنبيهات النشطة واسم SAM وSED وتنبيهات Microsoft Defender for Identity وعدد الأجهزة التي تم تسجيل دخول المستخدم إليها، عندما كان المستخدم أول من شاهد آخر مرة، وأنواع تسجيل الدخول ودوره. استنادا إلى ميزات التكامل التي قمت بتمكينها، سترى تفاصيل أخرى. على سبيل المثال، إذا قمت Skype تكامل الأعمال، فسوف تتمكن من الاتصال بالمستخدم من المدخل. يحتوي **قسم تنبيهات AZure ATP** على ارتباط سيأخذك إلى صفحة Microsoft Defender for Identity، إذا قمت بتمكين ميزة Microsoft Defender for Identity، وكانت هناك تنبيهات ذات صلة بالمستخدم. ستزود صفحة Microsoft Defender for Identity المزيد من المعلومات حول التنبيهات.
+يوفر  جزء تفاصيل المستخدم على اليمين معلومات حول المستخدم، مثل الأحداث المفتوحة ذات الصلة، والتنبيهات النشطة، واسم SAM، وSED، وتنبيهات Microsoft Defender for Identity، وعدد الأجهزة التي تم تسجيل دخول المستخدم إليها، وعندما يكون المستخدم هو الأول والأخير الذي تم رؤيته، ودوره، وأنواع تسجيل الدخول. استنادا إلى ميزات التكامل التي قمت بتمكينها، سترى تفاصيل أخرى. على سبيل المثال، إذا قمت Skype تكامل الأعمال، فسوف تتمكن من الاتصال بالمستخدم من المدخل. يحتوي **قسم تنبيهات AZure ATP** على ارتباط سيأخذك إلى صفحة Microsoft Defender for Identity، إذا قمت بتمكين ميزة Microsoft Defender for Identity، وكانت هناك تنبيهات ذات صلة بالمستخدم. ستزود Microsoft Defender for Identity المزيد من المعلومات حول التنبيهات.
 
 > [!NOTE]
 > ستحتاج إلى تمكين التكامل على كل من Microsoft Defender for Identity و Defender ل Endpoint لاستخدام هذه الميزة. في Defender for Endpoint، يمكنك تمكين هذه الميزة في الميزات المتقدمة. لمزيد من المعلومات حول كيفية تمكين الميزات المتقدمة، راجع [تشغيل الميزات المتقدمة](advanced-features.md).
@@ -101,9 +101,9 @@ ms.locfileid: "63569895"
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
-- [عرض قائمة انتظار تنبيهات نقطة النهاية في Microsoft Defender وتنظيمها](alerts-queue.md)
-- [إدارة تنبيهات Microsoft Defender لنقطة النهاية](manage-alerts.md)
-- [التحقق من تنبيهات نقطة النهاية ل Microsoft Defender](investigate-alerts.md)
+- [عرض قائمة انتظار تنبيهات Microsoft Defender لنقطة النهاية وتنظيمها](alerts-queue.md)
+- [إدارة Microsoft Defender لنقطة النهاية التنبيهات](manage-alerts.md)
+- [التحقق Microsoft Defender لنقطة النهاية التنبيهات](investigate-alerts.md)
 - [التحقق من ملف مقترن بتنبيه Defender لنقطة النهاية](investigate-files.md)
 - [التحقق من الأجهزة في القائمة "Defender for Endpoint Devices"](investigate-machines.md)
 - [التحقق من عنوان IP مقترن بتنبيه Defender لنقطة النهاية](investigate-ip.md)
