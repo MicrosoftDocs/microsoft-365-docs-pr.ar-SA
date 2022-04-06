@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 25cdc0610f11d1bcd7e8c27faa1cdc9453677d51
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 233c9993c8cd5978bcdfcbb54db8b9688c3ac056
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63572235"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500024"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>استجابة للحوادث مع Microsoft 365 Defender
 
@@ -73,7 +73,7 @@ Microsoft 365 الخدمات والتطبيقات تنبيهات عندما تك
 
 يعرض تحديد اسم حادث ملخصا للحادث ويوفر إمكانية الوصول إلى علامات التبويب بمعلومات إضافية. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="مثال لصفحة الملخص لحادث في مدخل Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="صفحة الملخص لحادث في مدخل Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 علامات التبويب الإضافية لحادث ما هي:
 
@@ -113,7 +113,7 @@ Microsoft 365 الخدمات والتطبيقات تنبيهات عندما تك
 
 فيما يلي مثال على سير العمل للاستجابة للحوادث في Microsoft 365 باستخدام Microsoft 365 Defender الإلكتروني.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="مثال لسير عمل استجابة لحادث Microsoft 365." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="مثال لسير عمل استجابة لحادث Microsoft 365 Defender المدخل." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
 
 بشكل مستمر، حدد أحداث الأولوية العليا لتحليلها وحلها في قائمة انتظار الأحداث واستعدها للاستجابة. هذه مجموعة من:
 
@@ -153,7 +153,7 @@ Microsoft 365 الخدمات والتطبيقات تنبيهات عندما تك
 
 فيما يلي مثال لعمليات الأمان (SecOps) Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="مثال لعمليات الأمان Microsoft 365 Defender." lightbox="../../media/incidents-overview/incidents-example-operations.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="مثال لعمليات الأمان Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
 
 يمكن أن تتضمن المهام اليومية:
 
@@ -215,7 +215,7 @@ Microsoft 365 الخدمات والتطبيقات تنبيهات عندما تك
     - **تضمين اسم المؤسسة في البريد الإلكتروني** - حدد ما إذا كنت تريد ظهور اسم مؤسستك في إعلام البريد الإلكتروني.
     - **قم بتضمين ارتباط مدخل** خاص بالمستأجر - حدد ما إذا كنت تريد إضافة ارتباط بمحدد المستأجر في إعلام البريد الإلكتروني للوصول إلى Microsoft 365 مستأجر معين.
 
-    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="إعدادات الإعلامات الخاصة بإعلامات البريد الإلكتروني للحوادث." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
+    :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="صفحة إعدادات الإعلامات الخاصة بإعلامات البريد الإلكتروني للحوادث في مدخل Microsoft 365 Defender." lightbox="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png":::
 
 5. حدد **التالي**. في صفحة **المستلمون** ، أضف عناوين البريد الإلكتروني التي ستتلقى إعلامات الحادث. حدد **إضافة** بعد كتابة كل عنوان بريد إلكتروني جديد. لاختبار الإعلامات والتأكد من تلقي المستلمين لها في علبة الوارد، حدد **إرسال بريد إلكتروني اختباري**. 
 6. حدد **التالي**. في صفحة **قاعدة المراجعة** ، راجع إعدادات القاعدة، ثم حدد **إنشاء قاعدة**. سيبدأ المستلمون بتلقي إعلامات الأحداث عبر البريد الإلكتروني استنادا إلى الإعدادات.

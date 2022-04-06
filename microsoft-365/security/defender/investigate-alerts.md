@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 41583a89abc3418799263dc46643fbe06a07e818
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: c09a3880a9f117d0ce5ce6e5edf3736192fc9c95
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712829"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499848"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>التحقق من التنبيهات في Microsoft 365 Defender
 
@@ -45,15 +45,15 @@ ms.locfileid: "63712829"
 
 تعرض **قائمة انتظار التنبيهات** مجموعة التنبيهات الحالية. يمكنك الوصول إلى قائمة انتظار التنبيهات من & **تنبيهات** > التنبيهات عند التشغيل السريع [Microsoft 365 Defender المدخل](https://go.microsoft.com/fwlink/p/?linkid=2077139).
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="مثال على قائمة انتظار التنبيهات في مدخل Microsoft 365 Defender":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="مقطع التنبيهات في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png":::
 
-تظهر التنبيهات من حلول أمان Microsoft المختلفة مثل Microsoft Defender ل Endpoint و Microsoft Defender Office 365 Microsoft 365 Defender هنا.
+تظهر التنبيهات من حلول أمان Microsoft المختلفة مثل Microsoft Defender لنقطة النهاية Microsoft Defender لـ Office 365 Microsoft 365 Defender هنا.
 
 بشكل افتراضي، تعرض قائمة انتظار التنبيهات في Microsoft 365 Defender الجديد وتنبيهات التقدم من آخر 30 يوما. يوجد التنبيه الأخير في أعلى القائمة حتى تتمكن من رؤيته أولا. 
 
 من قائمة انتظار التنبيهات الافتراضية، يمكنك تحديد **تصفية** لرؤية جزء عامل التصفية، الذي يمكنك تحديد مجموعة فرعية من التنبيهات منه. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="مثال ل جزء عوامل التصفية  الانتظار للتنبيهات في مدخل Microsoft 365 Defender":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="القسم عوامل التصفية في Microsoft 365 Defender المدخل." lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png":::
 
 يمكنك تصفية التنبيهات وفقا لهذه المعايير:
 
@@ -63,9 +63,9 @@ ms.locfileid: "63712829"
 - الكيانات (الأصول التي تم التأثير عليها)
 - حالة التحقيق التلقائي
 
-## <a name="required-roles-for-defender-for-office-365-alerts"></a>الأدوار المطلوبة ل Defender لتنبيهات Office 365
+## <a name="required-roles-for-defender-for-office-365-alerts"></a>الأدوار المطلوبة لتنبيهات Defender لـ Office 365
 
-ستحتاج إلى أي من الأدوار التالية للوصول إلى Microsoft Defender Office 365 تنبيهات:
+ستحتاج إلى الحصول على أي من الأدوار التالية للوصول إلى Microsoft Defender لـ Office 365 التنبيهات:
 
 - بالنسبة للأدوار العامة ل Azure Active Directory (Azure AD):
 
@@ -91,7 +91,9 @@ ms.locfileid: "63712829"
 
 لرؤية صفحة التنبيه الرئيسية، حدد اسم التنبيه. فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="مثال لصفحة التفاصيل الخاصة بتنبيه في مدخل Microsoft 365 Defender":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="تفاصيل تنبيه في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png":::
+
+يمكنك أيضا تحديد الإجراء **فتح صفحة التنبيه الرئيسي** من **جزء إدارة التنبيهات** .
 
 تتألف صفحة التنبيه من هذه المقاطع: 
 
@@ -102,7 +104,7 @@ ms.locfileid: "63712829"
 
 ### <a name="alert-sources"></a>مصادر التنبيهات
 
-Microsoft 365 Defender تأتي التنبيهات من حلول مثل Microsoft Defender ل Endpoint و Microsoft Defender ل Office 365 و Microsoft Defender لتطبيقات السحابة و الوظائف الإضافية الخاصة بحوكمة التطبيق ل Microsoft Defender لتطبيقات السحابة. قد تلاحظ تنبيهات ذات أحرف معببة مسبقا في التنبيه. يوفر الجدول التالي إرشادات لمساعدتك على فهم تعيين مصادر التنبيه استنادا إلى الحرف المزدخم مسبقا على التنبيه.
+Microsoft 365 Defender التنبيهات من حلول مثل Microsoft Defender لنقطة النهاية، Microsoft Defender لـ Office 365، Microsoft Defender for Cloud Apps، والإدارة الإضافية لإدارة التطبيق Microsoft Defender for Cloud Apps. قد تلاحظ تنبيهات ذات أحرف معببة مسبقا في التنبيه. يوفر الجدول التالي إرشادات لمساعدتك على فهم تعيين مصادر التنبيه استنادا إلى الحرف المزدخم مسبقا على التنبيه.
 
 > [!NOTE]
 > - إن GUIDs المزدخمة خاصة فقط ب التجارب الموحدة مثل قائمة انتظار التنبيهات الموحدة وصفحة التنبيهات الموحدة والتحري الموحد والحادث الموحد.
@@ -110,10 +112,10 @@ Microsoft 365 Defender تأتي التنبيهات من حلول مثل Microsof
 
 | مصدر التنبيه | حرف معبب مسبقا |
 | :---|:--- |
-| Microsoft Defender Office 365 | `fa{GUID}` <br> على سبيل المثال:`fa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender لـ Office 365 | `fa{GUID}` <br> على سبيل المثال:`fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender لنقطة النهاية | `da` أو `ed` لتنبيهات الكشف المخصصة <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> على سبيل المثال:`aa123a456b-c789-1d2e-12f1g33h445h6i` |
-| Microsoft Defender لتطبيقات السحابة |`ca{GUID}` <br> على سبيل المثال:`ca123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender for Cloud Apps |`ca{GUID}` <br> على سبيل المثال:`ca123a456b-c789-1d2e-12f1g33h445h6i` |
 
 ### <a name="analyze-affected-assets"></a>تحليل الأصول المتأثرة
 
@@ -138,7 +140,7 @@ Microsoft 365 Defender تأتي التنبيهات من حلول مثل Microsof
 
 لإدارة تنبيه، حدد **إدارة** التنبيه في قسم تفاصيل التلخيص في صفحة التنبيه. للحصول على تنبيه واحد، فيما يلي مثال على جزء **إدارة التنبيهات** .
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="مثال ل جزء &quot;إدارة التنبيهات&quot; في مدخل Microsoft 365 Defender":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="القسم &quot;إدارة التنبيه&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
 
 يتيح **لك جزء** "إدارة التنبيهات" عرض أو تحديد:
 
@@ -157,7 +159,7 @@ Microsoft 365 Defender تأتي التنبيهات من حلول مثل Microsof
 - تعليق على التنبيه.
 
 > [!NOTE]
-> إحدى الطرق لإدارة تنبيهاتها من خلال استخدام العلامات. يتم طرح إمكانية وضع العلامات ل Microsoft Defender Office 365 تدريجيا وهي حاليا في وضع المعاينة. <br>
+> إحدى الطرق لإدارة تنبيهاتها من خلال استخدام العلامات. يتم طرح إمكانية وضع العلامات Microsoft Defender لـ Office 365 تدريجيا وهي حاليا في وضع المعاينة. <br>
 > حاليا، يتم تطبيق أسماء العلامات المعدلة على التنبيهات التي تم إنشاؤها *بعد* التحديث فقط. لن تعكس التنبيهات التي تم إنشاؤها قبل التعديل اسم العلامة المحدث. 
 
 لإدارة مجموعة *تنبيهات* مماثلة لتنبيه معين، حدد عرض تنبيهات  مماثلة في المربع **INSIGHT** في مقطع تفاصيل الملخص في صفحة التنبيه.
@@ -194,9 +196,9 @@ Microsoft 365 Defender تأتي التنبيهات من حلول مثل Microsof
 
 إذا كان كل منهما صحيحا، فإن SecOps يصادف التنبيه على أنه سفر شرعي ويحله. يتم نشر إعلام في Microsoft Teams بعد حل التنبيه.
 
-### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>الاتصال Power Automate Microsoft Defender لتطبيقات السحابة
+### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>الاتصال Power Automate Microsoft Defender for Cloud Apps
 
-لإنشاء التنفيذ التلقائي، ستحتاج إلى رمز API مميز قبل أن تتمكن من Power Automate Microsoft Defender لتطبيقات السحابة.
+لإنشاء التنفيذ التلقائي، ستحتاج إلى رمز API مميز قبل أن تتمكن من Power Automate Microsoft Defender for Cloud Apps.
 
 1. انقر **الإعدادات**، وحدد **ملحقات الأمان**، ثم انقر فوق **إضافة** رمز مميز في علامة التبويب **رموز API المميزة**.
 

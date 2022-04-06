@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: تعرف على كيفية تطبيق تسمية حساسية على نموذج في SharePoint Syntex.
-ms.openlocfilehash: 624b441084b418d2bcfc3ab6b623da0f5a969fe8
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: 189db9314e01a52618890daf6b0e5d4e81317de9
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63583297"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681689"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>تطبيق تسمية حساسية على نموذج في Microsoft SharePoint Syntex
 
@@ -26,7 +26,7 @@ ms.locfileid: "63583297"
 
 تسمح لك تسميات الحساسية بتطبيق التشفير على المستندات التي تحددها نماذجك. على سبيل المثال، تريد أن يحدد النموذج الخاص بك ليس فقط أي مستندات مالية تحتوي على أرقام حسابات بنكية أو أرقام بطاقات ائتمان يتم تحميلها إلى مكتبة المستندات، ولكن أيضا لتطبيق تسمية الحساسية التي تم تكوينها مع إعدادات التشفير لتقييد الأشخاص الذين يمكنهم الوصول إلى هذا المحتوى وكيفية استخدامه. SharePoint Syntex النماذج الجديدة قواعد [ترتيب](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) التسميات ولا ت الكتابة فوق تسمية موجودة تم تطبيقها يدويا من قبل المستخدم على الملف. 
 
-يمكنك تطبيق تسمية حساسية موجودة مسبقا على النموذج من خلال إعدادات النموذج على الصفحة الرئيسية للنموذج. يجب أن تكون التسمية منشورة بالفعل لتكون متوفرة للاختيار من إعدادات النموذج.
+يمكنك تطبيق تسمية حساسية موجودة مسبقا على النموذج من خلال إعدادات النموذج على الصفحة الرئيسية للنموذج. يجب أن تكون التسمية منشورة بالفعل لتكون متوفرة للاختيار من إعدادات النموذج. تنطبق التسميات Office ملفات Word (.docx) PowerPoint (.pptx) Excel (.xlsx). 
 
 > [!Important]
 > لكي تتوفر تسميات الحساسية لتطبيقها على نماذج فهم المستندات، يجب إنشاؤها ونشرها [في مركز Microsoft 365 التوافق](../admin/security-and-compliance/set-up-compliance.md).

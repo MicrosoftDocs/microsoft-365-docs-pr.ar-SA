@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: يمكن للمسؤولين التعرف على كيفية استخدام مدخل عمليات الإرسال في مدخل Microsoft 365 Defender لإرسال رسائل البريد الإلكتروني المريبة ورسائل البريد الاحتيالي ورسائل البريد الإلكتروني غير المرغوب فيها والبريد العشوائي وغيرها من الرسائل الضارة الأخرى، بالإضافة إلى عناوين URL ومرفقات البريد الإلكتروني إلى Microsoft لإعادة مغامرتها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a897ba6973dfba86e3d0628088bad419c61c04c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 34d608a6ea114fff8005069f3dc2ddc79c4be45e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63566758"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682626"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>استخدام مدخل عمليات الإرسال لإرسال رسائل البريد العشوائي والتصيد الاحتيالي عناوين URL والملفات المشتبه بها إلى Microsoft
 
@@ -51,10 +51,10 @@ ms.locfileid: "63566758"
 
 - يمكنك فتح Microsoft 365 Defender في <https://security.microsoft.com/>. الانتقال مباشرة إلى صفحة **"الواجبات** المرسلة"، استخدم <https://security.microsoft.com/reportsubmission>.
 
-- لإرسال الرسائل والملفات إلى Microsoft، يجب أن تكون عضوا في إحدى مجموعات الدور التالية:
+- لإرسال الرسائل والملفات إلى Microsoft، يجب أن يكون لديك أحد الأدوار التالية:
   - **مسؤول الأمان** أو **قارئ الأمان** في [Microsoft 365 Defender الإلكتروني](permissions-microsoft-365-security-center.md).
   
-    تجدر الإشارة إلى أن العضوية في مجموعة الدور هذه مطلوبة [](#view-user-submissions-to-microsoft) لعرض إرسالات المستخدمين إلى علبة البريد المخصصة كما هو موضح لاحقا في هذه المقالة.
+    تجدر الإشارة إلى أن أحد هذه الأدوار مطلوب لعرض [](#view-user-submissions-to-microsoft) إرسالات المستخدمين إلى علبة البريد المخصصة كما هو موضح لاحقا في هذه المقالة.
 
 - يمكن للمسؤولين إرسال رسائل قديمة مثل 30 يوما إذا كانت لا تزال متوفرة في علبة البريد ولم يتم إزالتها من قبل المستخدم أو مسؤول آخر.
 

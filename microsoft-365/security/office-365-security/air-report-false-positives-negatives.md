@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 98164fd42a0ed2e2d79e2319823363057d15e7d3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4b1de0e19cbf241936aa02f957cdd0920f2a580a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63567464"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682472"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>كيفية الإبلاغ عن الإيجابيات/السلبيات الخاطئة في قدرات الاستجابة والتحريات التلقائية
 
@@ -68,15 +68,10 @@ ms.locfileid: "63567464"
 
 باستخدام "مستكشف التهديدات"، يمكن لفريق عمليات الأمان العثور على رسالة بريد إلكتروني متأثرة بما تم اتخاذه من إجراء والتراجع عن الإجراء.
 
-<br>
-
-****
-
 |السيناريو|خيارات التراجع|التعرف على المزيد|
 |---|---|---|
 |تم توجيه رسالة بريد إلكتروني إلى مجلد البريد الإلكتروني غير الهام الخاص بالمستخدم|<ul><li>نقل الرسالة إلى مجلد "العناصر المحذوفة" الخاص بالمستخدم</li><li>نقل الرسالة إلى علبة وارد المستخدم</li><li>حذف الرسالة</li></ul>|[البحث عن البريد الإلكتروني الضار الذي تم تسليمه في Office 365](investigate-malicious-email-that-was-delivered.md)|
 |تم فحص رسالة بريد إلكتروني أو ملف|<ul><li>تحرير البريد الإلكتروني أو الملف</li><li> حذف البريد الإلكتروني أو الملف</li></ul>|[إدارة الرسائل المعزولة كمسؤول](manage-quarantined-messages-and-files.md)|
-|
 
 ### <a name="undo-an-action-in-the-action-center"></a>التراجع عن إجراء في مركز الإجراءات
 

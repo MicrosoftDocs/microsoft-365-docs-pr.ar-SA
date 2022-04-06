@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2837b6009c143ea724d8c13d2548eeeca80e431d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 827b22ea2fb5e0864157dfae6748aa97ee4baf29
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63574288"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499936"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>الخطوة 2. إعادة معالجة أول حادث
 
@@ -42,7 +42,7 @@ Microsoft 365 Defender العديد من إجراءات الإصلاح التي 
 
 ## <a name="actions-on-devices"></a>الإجراءات على الأجهزة
 
-- **عزل الجهاز** - يمنع هذا النشاط على الفور كل عمليات نقل البيانات على الشبكة (الإنترنت وداخلها) لتقليل انتشار البرامج الضارة والسماح للمحللين بمواصلة التحليل من دون أن يتمكن أي ممثل ضار من متابعة الهجوم. الاتصال الوحيد المسموح به هو بسحابة خدمة Microsoft Defender for Identity حتى يمكن ل Microsoft Defender for Identity متابعة مراقبة الجهاز. 
+- **عزل الجهاز** - يمنع هذا النشاط على الفور كل عمليات نقل البيانات على الشبكة (الإنترنت وداخلها) لتقليل انتشار البرامج الضارة والسماح للمحللين بمواصلة التحليل من دون أن يتمكن أي ممثل ضار من متابعة الهجوم. الاتصال الوحيد المسموح به هو Microsoft Defender for Identity السحابة للخدمة حتى Microsoft Defender for Identity متابعة مراقبة الجهاز. 
 - **تقييد تنفيذ التطبيق** - لتقييد تشغيل أحد التطبيقات، يتم تطبيق نهج تكامل التعليمات البرمجية الذي يسمح بتشغيل الملفات فقط إذا تم توقيعها بواسطة شهادة صادرة عن Microsoft. يمكن أن تساعد طريقة التقييد هذه في منع المتطفل من التحكم في الأجهزة الم اختراقها وإجراء المزيد من الأنشطة الضارة.
 - **تشغيل فحص الحماية** من الفيروسات - يمكن تشغيل برنامج الحماية من الفيروسات من Microsoft Defender المسح الضوئي إلى جانب حلول الحماية من الفيروسات الأخرى، سواء كان Defender Antivirus هو حل الحماية من الفيروسات النشط أم لا. إذا كان منتج مورد برنامج الحماية من الفيروسات آخر هو حل الحماية الأساسي لنقطة النهاية، يمكنك تشغيل Defender Antivirus في الوضع السلبي.
 - **بدء التحقيق التلقائي** - يمكنك بدء تحقيق تلقائي لأغراض عامة جديدة على الجهاز. أثناء تشغيل التحقيق، سيتم إضافة أي تنبيه آخر تم إنشاؤه من الجهاز إلى تحقيق تلقائي جار حتى اكتمال هذا التحقيق. بالإضافة إلى ذلك، إذا تم رؤية الخطر نفسه على أجهزة أخرى، تضاف هذه الأجهزة إلى التحقيق.
@@ -64,11 +64,11 @@ Microsoft 365 Defender العديد من إجراءات الإصلاح التي 
 3. تأكد من عزل الملف الضار من SharePoint
 4. التحقق من نقاط النهاية التي تأثرت بالبرامج الضارة
 5. إعادة إنشاء الأنظمة
-6. التحقق من تنبيهات Microsoft Defender لتطبيقات السحابة المماثلة للمستخدمين الآخرين
+6. التحقق من تنبيهات Microsoft Defender for Cloud Apps للمستخدمين الآخرين
 7. إنشاء مؤشر مخصص في Microsoft Defender لنقطة النهاية لحظر عنوان IP ل Tor
-8. يمكنك إنشاء إجراء حوكمة في Microsoft Defender for Cloud Apps لهذا النوع من التنبيهات مثل التنبيهات الموضحة في الصورة التالية:
+8. إنشاء إجراء حوكمة في Microsoft Defender for Cloud Apps لهذا النوع من التنبيهات مثل تلك المعروضة في الصورة التالية:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="مثال على إجراءات الإدارة في مدخل Microsoft Defender for Cloud Apps.":::
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="إجراءات الإدارة في مدخل Microsoft Defender for Cloud Apps" lightbox="../../media/first-incident-remediate/first-incident-mcas-governance.png":::
 
 يمكن تطبيق معظم إجراءات الإصلاح وتعقبها في Microsoft 365 Defender.
 
@@ -85,7 +85,7 @@ Microsoft 365 Defender العديد من إجراءات الإصلاح التي 
 
 فيما يلي مثال على ذلك.
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="مثال على Power Automate التنفيذ التلقائي للعمليات المخصصة."::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="تدفق عمليات Power Automate عمليات مخصصة بشكل تلقائي" lightbox="../../media/first-incident-remediate/first-incident-power-automate.png"::: 
  
 يمكن أيضا إنشاء دفاتر [تشغيل أثناء مراجعة](first-incident-post.md) ما بعد الحادث لإنشاء إجراءات إصلاح من الحوادث التي تم حلها. 
 

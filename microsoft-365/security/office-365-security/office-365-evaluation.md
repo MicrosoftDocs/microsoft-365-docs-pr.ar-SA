@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a00dc92383e71d105faf0975468e47bc38ed60e
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: 0f5d82e9baaca7209f8a91a7f1984aa38e3102e6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "63577063"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681733"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>تقييم Microsoft Defender Office 365
 
@@ -92,10 +92,6 @@ ms.locfileid: "63577063"
 
 الأدوار التالية مطلوبة:
 
-<br>
-
-****
-
 |مهمة|الدور (في Exchange Online)|
 |---|---|
 |الحصول على تجربة مجانية أو شراء Microsoft Defender Office 365 (الخطة 2)|دور مسؤول الفوترة أو دور المسؤول العام|
@@ -103,7 +99,6 @@ ms.locfileid: "63577063"
 |تحرير نهج التقييم|دور المجالات البعيدة والمقببولة؛ دور مسؤول الأمان|
 |حذف نهج التقييم|دور المجالات البعيدة والمقببولة؛ دور مسؤول الأمان |
 |عرض تقرير التقييم|دور مسؤول الأمان أو دور قارئ الأمان|
-|
 
 ### <a name="enhanced-filtering-for-connectors"></a>تصفية محسنة للموصلات
 

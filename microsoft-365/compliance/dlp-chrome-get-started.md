@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: التحضير لملحق التوافق من Microsoft ونشره.
-ms.openlocfilehash: 5ffd04ee0b89c2e920f55c3e6fbefbab4c82983e
-ms.sourcegitcommit: db2ed146b46ade9ea62eed9cb8efff5fea7a35e6
+ms.openlocfilehash: 1c4c0a79f65f8a58ed30a9170256ef93b2bb4cef
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "64481375"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681799"
 ---
 # <a name="get-started-with-microsoft-compliance-extension"></a>بدء العمل باستخدام ملحق التوافق من Microsoft
 
@@ -42,7 +42,7 @@ ms.locfileid: "64481375"
 - [التعرف على منع فقدان البيانات في نقطة النهاية](endpoint-dlp-learn-about.md)
 - [بدء استخدام منع فقدان بيانات نقطة النهاية](endpoint-dlp-getting-started.md)
 - [أدوات وأساليب التكهين للأجهزة Windows 10 الأجهزة](device-onboarding-overview.md)
-- [تكوين إعدادات اتصال الإنترنت ووكيل الجهاز حماية البيانات](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
+- [تكوين إعدادات اتصال الإنترنت ووكيل الجهاز لحماية المعلومات](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 - [استخدام منع فقدان البيانات في نقطة النهاية](endpoint-dlp-using.md)
 
 ### <a name="skusubscriptions-licensing"></a>ترخيص SKU/الاشتراكات
@@ -60,7 +60,7 @@ ms.locfileid: "64481375"
 
 - يجب أن تكون المؤسسة مرخصة ل Endpoint DLP
 - يجب أن تعمل أجهزتك Windows 10 x64 1809 أو أي وقت لاحق.
-- يجب أن يكون إصدار عميل مكافحة البرامج الضارة للجهاز هو 4.18.2202.x أو إصدار أحدث. تحقق من الإصدار الحالي عن **طريق** أمن Windows التطبيق، **وحدد** الإعدادات، ثم حدد **حول**.
+- يجب أن يكون إصدار عميل مكافحة البرامج الضارة للجهاز هو 4.18.2101.9 أو إصدار أحدث. تحقق من الإصدار الحالي عن **طريق** أمن Windows التطبيق، **وحدد** الإعدادات، ثم حدد **حول**.
 
 
 ### <a name="permissions"></a>الأذونات
@@ -81,22 +81,22 @@ ms.locfileid: "64481375"
 
 فيما يلي قائمة بأدوار حماية البيانات في Microsoft (MIP) في المعاينة. لمعرفة المزيد حولها، راجع [الأدوار في مركز & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- حماية البيانات المسؤول
-- حماية البيانات محلل
-- حماية البيانات العمل
-- حماية البيانات قارئ الشاشة
+- مسؤول حماية المعلومات
+- محلل حماية المعلومات
+- حماية المعلوماتمحقق
+- قارئ حماية المعلومات
 
 فيما يلي قائمة مجموعات دور MIP التي تكون في المعاينة. لمعرفة المزيد حول، راجع [مجموعات الدور في مركز & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
-- حماية البيانات
-- حماية البيانات المسؤولين
-- حماية البيانات المحللون
-- حماية البيانات نواة
-- حماية البيانات القراء
+- حماية المعلومات
+- مسؤولو حماية المعلومات
+- محللو حماية المعلومات
+- الباحثون عن حماية المعلومات
+- قراء حماية المعلومات
 
 ### <a name="overall-installation-workflow"></a>سير عمل التثبيت الكلي
 
-إن نشر ملحق التوافق من Microsoft عملية متعددة المراحل. يمكنك اختيار التثبيت على جهاز واحد في كل مرة، أو استخدام إدارة نقاط النهاية من Microsoft أو نهج المجموعة عمليات النشر على مستوى المؤسسة.
+إن نشر ملحق التوافق من Microsoft عملية متعددة المراحل. يمكنك اختيار التثبيت على جهاز واحد في كل مرة، أو استخدام إدارة نقاط النهاية من Microsoft المجموعة أو نهج المجموعة للنشر على مستوى المؤسسة.
 
 1. [تحضير أجهزتك](#prepare-your-devices).
 2. [الإعداد الأساسي المفرد للجهاز](#basic-setup-single-machine-selfhost)
@@ -115,19 +115,46 @@ ms.locfileid: "64481375"
 1. استخدم الإجراءات في هذه المواضيع لتكهين أجهزتك:
     1. [بدء استخدام منع فقدان بيانات نقطة النهاية](endpoint-dlp-getting-started.md)
     1. [أجهزة Windows 10 Windows 11 الأجهزة](device-onboarding-overview.md)
-    1. [تكوين إعدادات اتصال الإنترنت ووكيل الجهاز حماية البيانات](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
+    1. [تكوين إعدادات اتصال الإنترنت ووكيل الجهاز لحماية المعلومات](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 
 ### <a name="basic-setup-single-machine-selfhost"></a>الإعداد الأساسي المفرد للجهاز
 
 هذا هو الأسلوب المستحسن.
 
-1. انتقل إلى [ملحق التوافق من Microsoft - سوق Chrome الإلكتروني (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+1. سجل الدخول إلى الكمبيوتر Windows 10 الذي تريد تثبيت ملحق التوافق ل Microsoft عليه، ثم قم بتشغيل البرنامج النصي PowerShell هذا كمسؤول.
 
-2. ثبت الملحق باستخدام الإرشادات الموجودة على سوق Chrome الإلكتروني.
+   ```powershell
+   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+   ```
+
+2. انتقل إلى [ملحق التوافق من Microsoft - سوق Chrome الإلكتروني (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+
+3. ثبت الملحق باستخدام الإرشادات الموجودة على سوق Chrome الإلكتروني.
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>النشر باستخدام إدارة نقاط النهاية من Microsoft
 
 استخدم أسلوب الإعداد هذا للنشر على مستوى المؤسسة.
+
+##### <a name="enabling-required-registry-value-via-microsoft-endpoint-manager"></a>تمكين قيمة السجل المطلوبة عبر إدارة نقاط النهاية من Microsoft
+
+1. إنشاء برنامج نصي PowerShell بالمحتويات التالية:
+
+    ```powershell
+    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+    ```
+
+2. سجل الدخول إلى إدارة نقاط النهاية من Microsoft [الإدارة](https://endpoint.microsoft.com).
+
+3. انتقل إلى **DevicesScripts**  >  وحدد **إضافة**.
+
+4. استعرض بحثا عن موقع البرنامج النصي الذي تم إنشاؤه عند مطالبتك بذلك.
+
+5. حدد الإعدادات التالية:
+    1. تشغيل هذا البرنامج النصي باستخدام بيانات اعتماد تسجيل الدخول: لا
+    1. فرض التحقق من توقيع البرنامج النصي: لا
+    1. تشغيل البرنامج النصي في مضيف PowerShell بالبت 64 بت: نعم
+
+6. حدد مجموعات الأجهزة المناسبة وطبق النهج.
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>إدارة نقاط النهاية من Microsoft فرض خطوات التثبيت
 
@@ -159,11 +186,43 @@ ms.locfileid: "64481375"
 
 ### <a name="deploy-using-group-policy"></a>النشر باستخدام نهج المجموعة
 
-إذا كنت لا تريد استخدام إدارة نقاط النهاية من Microsoft، يمكنك استخدام سياسات المجموعة لنشر ملحق التوافق من Microsoft عبر مؤسستك.
+إذا كنت لا تريد استخدام إدارة نقاط النهاية من Microsoft، يمكنك استخدام سياسات المجموعة لنشر ملحق التوافق من Microsoft عبر مؤسستك
+
+1. يجب أن تكون أجهزتك قابلة للإدارة عبر "نهج المجموعة"، ويجب استيراد جميع أجهزة Chrome ADMX إلى المتجر المركزي لنهاء المجموعة. للحصول على مزيد من المعلومات، [راجع كيفية إنشاء](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) المتجر المركزي للقالب الإدارية لن نهج المجموعة وإدارته في Windows.
+
+2. إنشاء برنامج نصي PowerShell باستخدام الأمر PowerShell هذا:
+
+    ```powershell
+    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+    ```
+
+3. افتح وحدة **تحكم إدارة نهج المجموعة** وانتقل إلى الوحدة التنظيمية (OU).
+
+4. انقر بضغطة زر الماوس الأيمن وحدد **إنشاء GPO في هذا المجال وربطه هنا**. عند المطالبة، قم بتعيين اسم وصفي لكائن نهج المجموعة هذا (GPO) والانتهاء من إنشائه.
+
+5. انقر بضغطة زر الماوس الأيمن فوق GPO وحدد **تحرير**.
+
+6. انتقل إلى **لوحة تكوين الكمبيوتر** >  >  **لوحة التحكم الإعدادات** >  **المهام التي تم جدولتها**.
+
+7. قم بإنشاء مهمة فورية جديدة عن طريق تحديد النقر ب الماوس الأيمن وتحديد **مهمة** **NewImmediate** >  (على الأقل Windows 7).
+
+8. امنح المهمة اسما & الوصف.
+
+9. اختر الحساب المقابل لتشغيل المهمة الفورية، على سبيل المثال هيئة NT
+
+10. حدد **تشغيل مع أعلى امتيازات**.
+
+11. تكوين نهج Windows 10.
+
+12. في علامة **التبويب إجراءات** ، حدد الإجراء **بدء برنامج**.
+
+13. أدخل المسار إلى البرنامج/البرنامج النصي الذي تم إنشاؤه في الخطوة 1.
+
+14. حدد **تطبيق**.
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>إضافة ملحق Chrome إلى القائمة "تثبيت القوة"
 
-1. في محرر نهج المجموعة، انتقل إلى OU.
+1. في محرر إدارة نهج المجموعة، انتقل إلى OU.
 
 2. توسيع المسار التالي **تكوين الكمبيوتر/** > **المستخدمPoliciesAdministrative** >  **templates** >  >  الإداريةالقالب **الإداريةGoogleGoogle** >  **ChromeExtensions** > . قد يختلف هذا المسار وفقا لتكوينك.
 

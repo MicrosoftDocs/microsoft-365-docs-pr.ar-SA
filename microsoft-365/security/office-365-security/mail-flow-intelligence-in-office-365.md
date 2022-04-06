@@ -15,12 +15,13 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: يمكن للمسؤولين التعرف على رموز الخطأ المقترنة مع تسليم الرسائل باستخدام الموصلات (المعروفة أيضا بذكاء تدفق البريد).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 57d8a9ec9bb40961ecf0b53f52198bde00e8bc03
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 2536120dfc336145ec9fdba1db34a8da1f56c1b4
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63565902"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680985"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>معلومات تدفق البريد في EOP
 

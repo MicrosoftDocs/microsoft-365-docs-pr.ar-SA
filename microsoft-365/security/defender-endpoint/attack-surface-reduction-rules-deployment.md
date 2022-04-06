@@ -1,7 +1,7 @@
 ---
 title: متطلبات نشر قواعد ASR
 description: يوفر نظرة عامة وإرشادات المتطلبات الأساسية حول نشر قواعد تقليل مساحة الهجوم (ASR).
-keywords: نشر قواعد الحد من الهجمات على سطح الهجوم ونشر ASR وتمكين قواعد asr وتكوين ASR ونظام منع اقتحام المضيف وقواعد الحماية وقواعد مكافحة الهجمات وقواعد مكافحة استغلالها واستغلالها وقواعد منع Microsoft Defender لنقطة النهاية وتكوين قواعد ASR
+keywords: نشر قواعد تقليل مساحة الهجوم ونشر ASR وتمكين قواعد asr وتكوين ASR ونظام منع اقتحام المضيف وقواعد الحماية وقواعد مكافحة استغلالها وقواعد مكافحة استغلالها واستغلالها وقواعد منع الإصابة و Microsoft Defender ل Endpoint وتكوين قواعد ASR
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,18 +20,18 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 4703867449877a35d6621b76072b9420a0cdbdec
-ms.sourcegitcommit: 0ae89b71b202aceabd5061f0d5b46d030d93e931
+ms.openlocfilehash: 37eb6edb32c78df7ae23fe7cb52b249f81ca18b3
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64520540"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682163"
 ---
 # <a name="asr-rules-deployment-prerequisites"></a>متطلبات نشر قواعد ASR
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-أسطح الهجمات هي كل الأماكن التي تكون فيها مؤسستك عرضة للهجمات ولهجمات الإنترنت. تتضمن أسطح الهجمات في مؤسستك كل الأماكن التي يمكن أن يعرض فيها مهاجم أجهزة مؤسستك أو شبكاتها للخطر. يعني تقليل سطح الهجوم حماية أجهزة مؤسستك وشبكة الاتصال بها، مما يترك للمهاجمين طرقا أقل للهجوم. يمكن أن يساعد تكوين قواعد تقليل مستوى الهجوم (ASR) — واحدة من العديد من ميزات الأمان الموجودة في Microsoft Defender لنقطة النهاية —
+أسطح الهجمات هي كل الأماكن التي تكون فيها مؤسستك عرضة للهجمات ولهجمات الإنترنت. تتضمن أسطح الهجمات في مؤسستك كل الأماكن التي يمكن أن يعرض فيها مهاجم أجهزة مؤسستك أو شبكاتها للخطر. يعني تقليل سطح الهجوم حماية أجهزة مؤسستك وشبكة الاتصال بها، مما يترك للمهاجمين طرقا أقل للهجوم. يمكن أن يساعدك تكوين قواعد تقليل مستوى الهجوم (ASR) — واحدة من العديد من ميزات الأمان الموجودة في Microsoft Defender for Endpoint — في مساعدتك.
 
 تستهدف قواعد ASR سلوكيات برامج معينة، مثل:
 
@@ -46,9 +46,9 @@ ms.locfileid: "64520540"
 >[!IMPORTANT]
 >يوفر هذا الدليل صورا وأمثلة لمساعدتك على تحديد كيفية تكوين قواعد ASR؛ قد لا تعكس هذه الصور والأمثلة أفضل خيارات التكوين  بيئتك.
 
-قبل البدء، راجع نظرة [عامة](overview-attack-surface-reduction.md) حول الحد من سطح الهجوم، و إلغاء غموض قواعد الحد من سطح الهجوم [- الجزء 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) للحصول على معلومات تأسيسية. لفهم مجالات التغطية والتأثير المحتمل، تعرف على مجموعة قواعد ASR الحالية؛ راجع [مرجع قواعد تقليل مساحة الهجوم](attack-surface-reduction-rules-reference.md).  أثناء التعرف على مجموعة قواعد ASR، دون تعيينات GUID لكل قاعدة؛ راجع: [قواعد ASR ومصفوفة GUIDs](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix).
+قبل البدء، راجع نظرة [عامة](overview-attack-surface-reduction.md) حول الحد من سطح الهجوم، و إلغاء غموض قواعد الحد من سطح الهجوم [- الجزء 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) للحصول على معلومات تأسيسية. لفهم مجالات التغطية والتأثير المحتمل، تعرف على مجموعة قواعد ASR الحالية؛ راجع [مرجع قواعد تقليل مساحة الهجوم](attack-surface-reduction-rules-reference.md).
 
-قواعد ASR هي قدرة واحدة فقط لإمكانيات الحد من سطح الهجوم ضمن Microsoft Defender لنقطة النهاية. سيدخل هذا المستند في مزيد من التفاصيل حول نشر قواعد ASR بفعالية لإيقاف التهديدات المتقدمة مثل برامج الفدية الضارة التي يتم تشغيلها من قبل الإنسان وغيرها من التهديدات.  
+قواعد ASR هي قدرة واحدة فقط من إمكانات تقليل مساحة الهجوم ضمن Microsoft Defender لنقطة النهاية. سيدخل هذا المستند في مزيد من التفاصيل حول نشر قواعد ASR بفعالية لإيقاف التهديدات المتقدمة مثل برامج الفدية الضارة التي يتم تشغيلها من قبل الإنسان وغيرها من التهديدات.  
 
 ### <a name="rules-by-category"></a>القواعد حسب الفئة
 
@@ -74,12 +74,12 @@ ms.locfileid: "64520540"
 - Azure Active Directory
 - Microsoft Endpoint Management (MEM)
 - Windows 10 Windows 11 الأجهزة
-- Microsoft Defender لنقطة النهاية E5 أو Windows E5
+- تراخيص Microsoft Defender ل Endpoint E5 أو Windows E5
 
 للاستفادة بشكل كامل من قواعد ASR وإعداد التقارير، نوصي باستخدام Microsoft 365 Defender E5 أو Windows E5 و A5. تعرف على المزيد: [الحد الأدنى لمتطلبات Microsoft Defender لنقطة النهاية](minimum-requirements.md).
 
 >[!Note]
->هناك أساليب متعددة لتكوين قواعد ASR. يمكن تكوين قواعد ASR باستخدام: إدارة نقاط النهاية من Microsoft (MEM) و PowerShell و نهج المجموعة و Microsoft System Center Configuration Manager (SCCM) و MEM OMA-URI.
+>هناك أساليب متعددة لتكوين قواعد ASR. يمكن تكوين قواعد ASR باستخدام: إدارة نقاط النهاية من Microsoft (MEM) و PowerShell و Group Policy و Microsoft System Center Configuration Manager (SCCM) و MEM OMA-URI.
 >إذا كنت تستخدم تكوين بنية أساسية مختلفا عما هو مدرج لمتطلبات البنية _الأساسية (أعلاه_ )، يمكنك معرفة المزيد حول نشر قواعد الحد من سطح الهجوم باستخدام تكوينات أخرى هنا: تمكين قواعد الحد من سطح [الهجوم](enable-attack-surface-reduction.md).  
 
 ### <a name="asr-rules-dependencies"></a>تبعيات قواعد ASR
@@ -122,10 +122,10 @@ ms.locfileid: "64520540"
 وكما هو حال أي تنفيذ جديد على نطاق واسع قد يؤثر على عمليات خط العمل، من المهم أن تكون أسلوبيا في التخطيط والتنفيذ. نظرا للإمكانات القوية لقواعد ASR في منع البرامج الضارة، من الضروري التخطيط الدقيق لهذه القواعد ونشرها لضمان عملها بشكل أفضل لمسيرات عمل العملاء الفريدة. للعمل في بيئتك، تحتاج إلى تخطيط قواعد ASR واختبارها وتطبيقها وتشغيلها بعناية.  
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="مراحل نشر قواعد ASR" lightbox="images/asr-rules-deployment-phases.png":::
+> ![مراحل نشر قواعد ASR](images/asr-rules-deployment-phases.png)
 
 >[!Note]
->للعملاء الذين يستخدمون HIPS غير Microsoft ويتحولون إلى قواعد الحد من سطح الهجوم في Microsoft Defender لنقطة النهاية: تنصح Microsoft العملاء بتشغيل حل HIPS جنبا إلى جنب مع نشر قواعد ASR الخاصة بهم حتى اللحظة التي تقوم فيها بالتحويل من التدقيق إلى وضع الحظر. ضع في اعتبارك أنه يجب عليك التواصل مع مورد الحماية من الفيروسات التابع لأي جهة خارجية للحصول على توصيات الاستثناء.  
+>للعملاء الذين يستخدمون HIPS غير Microsoft ويتحولون إلى قواعد الحد من هجوم نقطة النهاية ل Microsoft Defender: تنصح Microsoft العملاء بتشغيل حل HIPS جنبا إلى جنب مع نشر قواعد ASR الخاصة بهم حتى اللحظة التي تقوم فيها بالتحول من وضع التدقيق إلى وضع الحظر. ضع في اعتبارك أنه يجب عليك التواصل مع مورد الحماية من الفيروسات التابع لأي جهة خارجية للحصول على توصيات الاستثناء.  
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>مواضيع إضافية في مجموعة النشر هذه
 

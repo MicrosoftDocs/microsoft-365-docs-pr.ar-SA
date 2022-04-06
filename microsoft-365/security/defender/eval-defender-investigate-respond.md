@@ -1,6 +1,6 @@
 ---
 title: التحقق والاستجابة باستخدام Microsoft 365 Defender في بيئة تجريبية
-description: يمكنك إعداد عمليات محاكاة الهجمات في Microsoft 365 Defender تجريبية أو تجربة تجربة حل الأمان المصمم لتعليم المستخدمين حماية الأجهزة والهوية والبيانات والتطبيقات.
+description: يمكنك إعداد عمليات محاكاة الهجمات في Microsoft 365 Defender تجريبية أو بيئة تجريبية لتجرب حل الأمان المصمم لتعليم المستخدمين حماية الأجهزة والهوية والبيانات والتطبيقات.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a32b6dc2fafb80905c4cba44b79fc24b7e6a3187
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: b382b1cd096f57f5667db7661b1ef4b69acc1451
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568607"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499892"
 ---
 # <a name="step-6-investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>الخطوة 6. التحقق والاستجابة باستخدام Microsoft 365 Defender في بيئة تجريبية
 

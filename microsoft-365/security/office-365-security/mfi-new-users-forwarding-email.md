@@ -12,12 +12,13 @@ ms.assetid: ''
 description: يمكن للمسؤولين معرفة كيفية استخدام معلومات المستخدمين الجدد حول إعادة توجيه البريد الإلكتروني في مركز التوافق & الأمان للتحقق من وقت إعادة توجيه الرسائل للمستخدمين في مؤسساتهم إلى مجالات جديدة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0e5ec29849c50f8d012de1886e997b67f1f191ee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 35ec1573096ecce392979cba11c6e55b1a1adcce
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63576871"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681755"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>إعادة توجيه المستخدمين الجدد رؤى البريد الإلكتروني في مركز & الأمان
 

@@ -8,12 +8,13 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
-ms.openlocfilehash: 072654e8047989552d86f4030e420078e4ae1cc2
-ms.sourcegitcommit: 542e6b5d12a8d400c3b9be44d849676845609c5f
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 59695ba5940bfa062e681ced172844f80ece045d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "63583292"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682318"
 ---
 # <a name="defender-for-identity-security-alerts-in-microsoft-365-defender"></a>تنبيهات أمان Defender for Identity في Microsoft 365 Defender
 

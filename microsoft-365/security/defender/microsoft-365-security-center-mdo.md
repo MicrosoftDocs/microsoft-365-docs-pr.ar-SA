@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender Office 365 في Microsoft 365 Defender
+title: Microsoft Defender لـ Office 365 في Microsoft 365 Defender
 description: تعرف على التغييرات من مركز & الأمان إلى Microsoft 365 Defender.
-keywords: Microsoft 365 الأمان، بدء استخدام Microsoft 365 Defender، Microsoft Defender ل Office 365، Microsoft Defender ل Endpoint، MDO، MDE، جزء واحد من الزجاج، مدخل أمان جديد، مدخل أمان جديد ل Defender
+keywords: Microsoft 365 الأمان، بدء استخدام Microsoft 365 Defender، Microsoft Defender لـ Office 365، Microsoft Defender لنقطة النهاية، MDO، MDE، جزء واحد من الزجاج، مدخل أمان جديد، جديد مدخل الأمان
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,20 +17,20 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: c38054e55442a01d8e659ab4281e4790f57c7755
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: a42805ea9b803818bd538e24a3fa626a00dac348
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "63570445"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499826"
 ---
-# <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender Office 365 في Microsoft 365 Defender
+# <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender لـ Office 365 في Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **ينطبق على:**
 - [Microsoft 365 Defender](microsoft-365-defender.md)
-- [Microsoft Defender Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
+- [Microsoft Defender لـ Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 ## <a name="quick-reference"></a>مرجع سريع
 
@@ -72,11 +72,11 @@ ms.locfileid: "63570445"
 
 باستخدام الحل Microsoft 365 Defender الموحد، يمكنك جمع إشارات الخطر معا وتحديد النطاق الكامل للتهديد وتأثيره، وكيفية تأثيره حاليا على المؤسسة.
 
-:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="صورة Microsoft 365 Defender متقاربة.":::
+:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="تجربة Microsoft 365 Defender متقاربة" lightbox="../../media/M365-defender-converge-experience.png":::
 
-يحمي Office 365 حماية مؤسستك من التهديدات الضارة التي تفرضها رسائل البريد الإلكتروني والربط (عناوين URL) وأدوات التعاون.
+Defender لـ Office 365 مؤسستك من التهديدات الضارة التي تفرضها رسائل البريد الإلكتروني والربط (عناوين URL) وأدوات التعاون.
 
-:::image type="content" source="../../media/Defender-for-O365.png" alt-text="صورة ل Defender Office 365.":::
+:::image type="content" source="../../media/Defender-for-O365.png" alt-text="مدخل Defender لـ Office 365" lightbox="../../media/Defender-for-O365.png":::
 
 ### <a name="incidents-and-alerts"></a>الأحداث والتنبيهات
 
@@ -85,7 +85,7 @@ ms.locfileid: "63570445"
 - [معرفة المزيد حول "التحريات"](incidents-overview.md)
 - [معرفة المزيد حول إدارة التنبيهات](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-![شريط "التنبيهات والإجراءات" السريع.](../../media/converge-1-alerts-and-actions.png)
+:::image type="content" source="../../media/converge-1-alerts-and-actions.png" alt-text="شريط &quot;التنبيهات والإجراءات&quot; السريع في مدخل Microsoft 365 Defender" lightbox="../../media/converge-1-alerts-and-actions.png":::
 
 ### <a name="hunting"></a>الصيد
 
@@ -93,7 +93,7 @@ ms.locfileid: "63570445"
 
 [يمكن إنشاء قواعد الكشف](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) المخصصة من استعلامات البحث المتقدمة لمساعدتك على المراقبة الاستباقية للأحداث التي قد تكون حالة من نشاط الخرق والأجهزة التي تم تكوينها بشكل خاطئ.
 
-فيما يلي [مثال حول الصيد المتقدم](advanced-hunting-example.md) في Microsoft Defender Office 365.
+فيما يلي [مثال على الصيد المتقدم](advanced-hunting-example.md) في Microsoft Defender لـ Office 365.
 
 ### <a name="action-center"></a>مركز الإجراءات
 
@@ -105,7 +105,7 @@ ms.locfileid: "63570445"
 
 احصل على معلومات عن المخاطر من الباحثين الخبراء في مجال الأمان في Microsoft. تساعد تحليلات المخاطر فرق الأمان على أن تكون أكثر فعالية عند مواجهة التهديدات الناشئة. تتضمن تحليلات المخاطر ما يلي:
 
-- عمليات الكشف وتخفيف المخاطر المتعلقة بالبريد الإلكتروني من Microsoft Defender Office 365. هذا بالإضافة إلى بيانات نقطة النهاية المتوفرة بالفعل من Microsoft Defender لنقطة النهاية.
+- عمليات الكشف وتخفيف المخاطر المتعلقة بالبريد الإلكتروني Microsoft Defender لـ Office 365. هذا بالإضافة إلى بيانات نقطة النهاية المتوفرة بالفعل من Microsoft Defender لنقطة النهاية.
 - طريقة عرض الأحداث ذات الصلة بالتهديات.
 - تجربة محسنة لتحديد المعلومات القابلة للتنفيذ واستخدامها بسرعة في التقارير.
 
@@ -117,7 +117,7 @@ ms.locfileid: "63570445"
 
 تعقب التهديدات التي تواجه البريد الإلكتروني للمستخدمين وتعقب الحملات والمزيد. إذا استخدمت "مركز & الأمان"، فهذا سيكون مألوفا.
 
-:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="قائمة البدء السريع لبريد إلكتروني & Collab (أو MSDO)، على الجانب الأيمن من Microsoft 365 Defender.":::
+:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="قائمة البدء السريع لبريد إلكتروني & Collab (أو MSDO)، في جزء التنقل الأيسر في مدخل Microsoft 365 Defender" lightbox="../../media/converge-3-email-and-collab-new.png":::
 
 #### <a name="email-entity-page"></a>صفحة كيان البريد الإلكتروني
 
@@ -127,11 +127,11 @@ ms.locfileid: "63570445"
 
 عرض التقارير وتغيير الإعدادات وتعديل أدوار المستخدمين.
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="قائمة البدء السريع Microsoft 365 Defender وإعداد التقارير، على الجانب الأيمن من Microsoft 365 Defender المدخل.":::
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="قائمة البدء السريع لأذونات Microsoft 365 Defender وإعداد التقارير، في جزء التنقل الأيسر في مدخل Microsoft 365 Defender" lightbox="../../media/converge-4-access-and-reporting-new.png":::
 
 > [!NOTE]
 > يضمن DomainKeys Identified Mail (DKIM) أن أنظمة البريد الإلكتروني الوجهة تثق بالرسائل المرسلة من مجالك المخصص.
-> بالنسبة ل Defender Office 365 المستخدمين، يمكنك الآن إدارة *مفاتيح DKIM* وتدويرها  عبر Microsoft 365 Defender:   <https://security.microsoft.com/threatpolicy>، \> \> \> \> أو الانتقال إلى القسم قواعد نهج & نهج المخاطر الخاصة بقواعد النهج" **DKIM**.
+> بالنسبة Defender لـ Office 365 المستخدمين، يمكنك  الآن إدارة *مفاتيح DKIM* وتدويرها عبر Microsoft 365 Defender: <https://security.microsoft.com/threatpolicy>،  \>  \> \> \> أو الانتقال إلى القسم قواعد نهج & نهج المخاطر **للقواعد DKIM**.
 >
 > لمزيد من المعلومات، راجع [استخدام DKIM للتحقق من صحة البريد الإلكتروني الصادر المرسل من مجالك المخصص](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email).
 
@@ -145,7 +145,7 @@ ms.locfileid: "63570445"
 
 |المنطقة|وصف التغيير|
 |---|---|
-|[التحقيق](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|يجمع قدرات AIR في [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) [و Defender for Endpoint](../defender-endpoint/automated-investigations.md). باستخدام هذه التحديثات والتحسينات، سيكون فريق عمليات الأمان قادرا على عرض تفاصيل حول عمليات البحث التلقائية والإجراءات الإصلاحية عبر البريد الإلكتروني ومحتوى التعاون وحسابات المستخدمين والأجهزة، كل ذلك في مكان واحد.|
+|[التحقيق](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|تجمع قدرات AIR [معا في Defender لـ Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) [و Defender ل Endpoint](../defender-endpoint/automated-investigations.md). باستخدام هذه التحديثات والتحسينات، سيكون فريق عمليات الأمان قادرا على عرض تفاصيل حول عمليات البحث التلقائية والإجراءات الإصلاحية عبر البريد الإلكتروني ومحتوى التعاون وحسابات المستخدمين والأجهزة، كل ذلك في مكان واحد.|
 |[قائمة انتظار التنبيهات](../../compliance/alert-policies.md)|يتضمن **الجزء "** عرض التنبيهات" في "مركز & الأمان" الآن ارتباطات إلى Microsoft 365 Defender. انقر فوق الارتباط **فتح صفحة** التنبيه Microsoft 365 Defender فتحها. يمكنك الوصول إلى **الصفحة عرض التنبيهات** بالنقر فوق أي تنبيه Office 365 في قائمة انتظار التنبيهات.|
 |[التدريب على محاكاة الهجمات](../office-365-security/attack-simulation-training-insights.md)|استخدم التدريب على محاكاة الهجمات لتشغيل سيناريوهات هجوم واقعية في مؤسستك. يمكن أن تساعد هذه الهجمات المحاكاة على تدريب القوة العاملة لديك قبل أن يؤثر هجوم حقيقي على مؤسستك. يتضمن التدريب على محاكاة الهجمات المزيد من الخيارات والتقارير المحسنة وتدفقات التدريب المحسنة للمساعدة في تسهيل تسليم سيناريوهات محاكاة الهجمات والتدريب عليها وإدارتها.|
 |
@@ -162,16 +162,16 @@ ms.locfileid: "63570445"
 راجع أيضا قسم **المعلومات** ذات الصلة في أسفل هذه المقالة.
 
 > [!IMPORTANT]
-> يجمع <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender بين</a> ميزات الأمان في <https://securitycenter.windows.com>و <https://protection.office.com>. ومع ذلك، سيعتمد ما تراه على اشتراكك. إذا كان لديك Microsoft Defender ل Office 365 الخطة 1 أو 2 فقط، فاشتراكات مستقلة، على سبيل المثال، لن ترى القدرات حول الأمان لنقاط النهاية ولن يرى عملاء الخطة 1 في الخطة Office 1 عناصر مثل Threat Analytics.
+> يجمع <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender بين</a> ميزات الأمان في <https://securitycenter.windows.com>و <https://protection.office.com>. ومع ذلك، سيعتمد ما تراه على اشتراكك. إذا كان لديك Microsoft Defender لـ Office 365 الخطة 1 أو 2، على سبيل المثال، لا ترى القدرات حول الأمان لنقاط النهاية و Defender ل Office لن يرى عملاء الخطة 1 عناصر مثل Threat Analytics.
 
 > [!TIP]
-> سيتم تضمين Exchange Online Protection (EOP) في Microsoft 365 Defender، حيث إن EOP هو عنصر أساسي في Defender for Office 365.
+> سيتم تضمين Exchange Online Protection (EOP) في Microsoft 365 Defender، حيث إن EOP عنصر أساسي في Defender لـ Office 365.
 
 ## <a name="microsoft-365-defender-home-page"></a>Microsoft 365 Defender الصفحة الرئيسية
 
 تسطح الصفحة الرئيسية للمدخل معلومات تلخيص مهمة حول حالة أمان بيئة Microsoft 365 الخاصة بك.
 
-باستخدام **الجولة الإرشادية** ، يمكنك القيام بجولة سريعة على نقطة النهاية أو البريد الإلكتروني & صفحات التعاون. لاحظ أن ما تراه هنا يعتمد على ما إذا كان لديك ترخيص ل Defender for Office 365 و/أو Defender ل Endpoint.
+باستخدام **الجولة الإرشادية** ، يمكنك القيام بجولة سريعة على نقطة النهاية أو البريد الإلكتروني & صفحات التعاون. تجدر الإشارة إلى أن ما تراه هنا يعتمد على ما إذا كان لديك ترخيص Defender لـ Office 365 و/أو Defender ل Endpoint.
 
 كما يتضمن أيضا ارتباط إلى مركز & الأمان من أجل المقارنة. الارتباط الأخير هو إلى صفحة **ما الجديد** التي تصف التحديثات الأخيرة.
 

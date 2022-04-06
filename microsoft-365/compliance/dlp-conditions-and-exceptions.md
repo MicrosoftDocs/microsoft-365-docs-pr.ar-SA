@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: التعرف على شروط نهج dlp والاستثناءات
-ms.openlocfilehash: 771674b82e50987397fc1ae754f0b96719a04ae5
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: 9b735d139950399fb80e9063e7d9fdd1176c2d2b
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63572971"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64500046"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>شروط نهج DLP والاستثناءات والإجراءات
 
@@ -154,7 +154,7 @@ Set-PolicyConfig –SenderAddressLocation Envelope
 |مع الأهمية|الشرط: *WithImportance* <br/> استثناء: *ExceptIfWithImportance*|الأهمية|الرسائل التي تم وضع علامة عليها بمستوى الأهمية المحدد.|
 |تحتوي مجموعة أحرف المحتوى على كلمات|الشرط: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*|مجموعات الأحرف|الرسائل التي لها أي من أسماء مجموعة الأحرف المحددة.|
 |تم تجاوز المرسل|الشرط: *HasSenderOverride* <br/> استثناء: *ExceptIfHasSenderOverride*|n/a|الرسائل التي اختار فيها المرسل تجاوز نهج منع فقدان البيانات (DLP). لمزيد من المعلومات حول سياسات DLP، راجع [التعرف على منع فقدان البيانات](./dlp-learn-about-dlp.md)|
-|تطابقات نوع الرسالة|الشرط: *MessageTypeMatches* <br/> استثناء: *ExceptIfMessageTypeMatches*|MessageType|رسائل من النوع المحدد.|
+|تطابقات نوع الرسالة|الشرط: *MessageTypeMatches* <br/> استثناء: *ExceptIfMessageTypeMatches*|MessageType|رسائل من النوع المحدد. **ملاحظة**: أنواع الرسائل المتوفرة هي الرد التلقائي، إعادة توجيه تلقائي، مشفر (S/MIME)، التقويم، الأذونات التي يتم التحكم بها (إدارة الحقوق)، البريد الصوتي، موقع، إيصال القراءة، طلب الموافقة. |
 |حجم الرسالة أكبر من أو يساوي|الشرط: *MessageSizeOver* <br/> استثناء: *ExceptIfMessageSizeOver*|`Size`|الرسائل التي يكون فيها الحجم الإجمالي (الرسالة بالإضافة إلى المرفقات) أكبر من القيمة المحددة أو مساويا لها. **ملاحظة**: يتم تقييم حدود أحجام الرسائل في علب البريد قبل قواعد تدفق البريد. سيتم رفض رسالة كبيرة جدا لعلبة بريد قبل أن تتمكن قاعدة بهذا الشرط من العمل على الرسالة.|
 |
 
@@ -177,7 +177,7 @@ Set-PolicyConfig –SenderAddressLocation Envelope
 |إضافة مدير المرسل كمستلم|AddRecipients|الخاصية الأولى: *AddedManagerAction*</br>الخاصية الثانية: *الحقل*|يضيف مدير المرسل إلى الرسالة كنوع المستلم المحدد (إلى، نسخة مرسلة)، أو يعيد توجيه الرسالة إلى مدير المرسل من دون إعلام المرسل أو المستلم. يعمل هذا الإجراء فقط إذا تم تعريف سمة إدارة المرسل في Active Directory. تستخدم هذه المعلمة بناء الجملة: @{AddManagerAsRecipientType = "<To \|Cc \|Bcc>"}|
 الموضوع المبلل|PrependSubject|سلسلة|يضيف النص المحدد إلى بداية الحقل الموضوع للرسالة. فكر في استخدام مسافة أو نقطتين (:) الحرف الأخير من النص المحدد لتمييزه عن نص الموضوع الأصلي.</br>لمنع إضافة السلسلة نفسها إلى الرسائل التي تحتوي بالفعل على النص في الموضوع (على سبيل المثال، الردود)، أضف الاستثناء "يحتوي الموضوع على كلمات" (ExceptIfSubjectContainsWords) للقاعدة.|
 |تطبيق إخلاء المسؤولية ل HTML|تطبيقHtmlDisclaimer|الخاصية الأولى: *نص*</br>الخاصية الثانية: *الموقع*</br>الخاصية الثالثة: *إجراء استرداد*|تطبيق إخلاء المسؤولية المحدد ل HTML على الموقع المطلوب للرسالة.</br>تستخدم هذه المعلمة بناء الجملة: @{ Text = " " ; Location = <Prepend prepend \|>; BackAction = <التفاف \|تجاهل \|رفض> }|
-|إزالة تشفير الرسائل من Office 365 وحماية الحقوق|RemoveRMSTemplate|n/a|إزالة Office 365 التشفير المطبق على رسالة بريد إلكتروني|
+|إزالة Office 365 تشفير الرسائل وحماية الحقوق|RemoveRMSTemplate|n/a|إزالة Office 365 التشفير المطبق على رسالة بريد إلكتروني|
 |تسليم الرسالة إلى الفحص المستضاف |_الفحص_|n/a| هذا الإجراء موجود حاليا في **المعاينة العامة**. أثناء هذه المرحلة، ستظهر رسائل البريد الإلكتروني المعزولة بواسطة نهج DLP نوع النهج ك ExchangeTransportRule.</br> تسليم الرسالة إلى الفحص في EOP. لمزيد من المعلومات، راجع [رسائل البريد الإلكتروني المعزولة في EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
 |
 

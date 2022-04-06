@@ -13,12 +13,13 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: توفر Microsoft تعليمات ل EOP في مجموعة متنوعة من الأماكن والأساليب بما في ذلك الدعم الذاتي والدعم المساعدة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4db5851edcbb4daa2a0be1fa36770b7bb2d4b94
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 080a61b0ed20843d5962f1901b8d8fece73d8f4b
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "63568554"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681029"
 ---
 # <a name="help-and-support-for-eop"></a>تعليمات ودعم EOP
 
@@ -77,8 +78,6 @@ ms.locfileid: "63568554"
 
 توفر Microsoft أرقام هواتف محلية أو مجانية لدعم المنتجات حول العالم. توفر العديد من مراكز الدعم هذه المساعدة بلغتك المحلية أثناء ساعات العمل أو باللغة الإنجليزية 24 ساعة يوميا، كل يوم. إذا لم يكن موقعك مدرجا أدناه، فاستخدم الوكيل الافتراضي كما هو موضح أعلاه للعثور على رقم هاتف الدعم المحلي.
 
-****
-
 |البلد أو المنطقة|أسئلة ما قبل الشراء والأسئلة حول الفوترة|أسئلة الدعم التقني|
 |---|---|---|
 |البرازيل|مجاني: 08007621146 <br> محلي: 1147001999|نفس|
@@ -89,7 +88,6 @@ ms.locfileid: "63568554"
 |إسبانيا|مجاني: 900 814 197 <br> محلي: 912 718 160|نفس|
 |المملكة المتحدة|مجاني: 0800 032 6417 <br> محلي: 0203 450 6455|نفس|
 |الولايات المتحدة الأمريكية|مجاني: 1-877-913-2707|مجاني: 1-800-865-9408|
-|
 
 ## <a name="for-more-information-about-eop-documentation"></a>لمزيد من المعلومات حول وثائق EOP
 

@@ -17,12 +17,12 @@ ms.collection:
 description: يمكن للمسؤولين التعرف على كيفية تكوين إعدادات البريد الإلكتروني غير الهام في Exchange Online البريد. يتوفر العديد من هذه الإعدادات للمستخدمين في Outlook أو Outlook على ويب.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d3a55b1f49430d3c2a61b0db44e3ce8f8a060093
-ms.sourcegitcommit: 3140e2866de36d57a27d27f70d47e8167c9cc907
+ms.openlocfilehash: 9e2db8fc6c88e3945081d3b2800aa5ea9cd57a11
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "63568448"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682450"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>تكوين إعدادات البريد الإلكتروني غير الهام على علب Exchange Online البريد
 
@@ -65,17 +65,12 @@ ms.locfileid: "63568448"
 
 تتضمن مجموعة القوائم الآمنة في علبة بريد قائمة خزينة المرسلين، وقائمة خزينة المستلمين، وقائمة المرسلون المحظورون. بشكل افتراضي، يمكن للمستخدمين تكوين مجموعة القوائم الآمنة على علبة البريد الخاصة بهم في Outlook أو Outlook على ويب. يمكن للمسؤولين استخدام المعلمات المقابلة في **الأمر cmdlet Set-MailboxJunkEmailConfiguration** لتكوين مجموعة القوائم الآمنة على علبة بريد المستخدم. يتم وصف هذه المعلمات في الجدول التالي.
 
-<br>
-
-****
-
 |معلمة على Set-MailboxJunkEmailConfiguration|Outlook على ويب الإعداد|
 |---|---|
 |_BlockedSendersAndDomains_|**نقل البريد الإلكتروني من هؤلاء المرسلين أو المجالات إلى مجلد البريد الإلكتروني غير الهام**|
 |_ContactsTrusted_|**الثقة بالبريد الإلكتروني من جهات الاتصال الخاصة بي**|
 |_TrustedListsOnly_|**الثقة بالبريد الإلكتروني فقط من العناوين خزينة المرسلين والمجالات خزينة البريدية**|
 |_TrustedSendersAndDomains_<sup>\*</sup>|**عدم نقل البريد الإلكتروني من هؤلاء المرسلين إلى مجلد البريد الإلكتروني غير الهام**|
-|
 
 <sup>\*</sup>**ملاحظات**:
 

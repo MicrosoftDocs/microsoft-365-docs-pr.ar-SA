@@ -1,7 +1,7 @@
 ---
 title: الكشف عن نقطة النهاية والاستجابة لها في وضع الحظر
 description: التعرف على الكشف عن تهديدات نقاط النهاية والرد عليها في وضع الحظر
-keywords: Microsoft Defender لنقطة النهاية أو mde أو الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر أو حظر الوضع السلبي
+keywords: Microsoft Defender لنقطة النهاية، mde، الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر، حظر الوضع السلبي
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -18,17 +18,17 @@ ms.custom:
 ms.date: 03/18/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 151fb8de088531b9a9f053fc2b5d3c433055e21f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 6e6bf499ab348d05cba237fa69b205cb495dccb0
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473112"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681051"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>الكشف عن نقطة النهاية والاستجابة (الكشف التلقائي والاستجابة على النقط النهائية) في وضع الحظر
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -48,18 +48,18 @@ ms.locfileid: "64473112"
 
 الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر مع [المخاطر & إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md). سيحصل فريق الأمان في مؤسستك على توصية أمان [](tvm-security-recommendation.md) الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر إذا لم يتم تمكينه بالفعل.
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="توصية تشغيل الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر" lightbox="images/edrblockmode-TVMrecommendation.png":::
+:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="توصية حول تشغيل الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر.":::
 
 > [!TIP]
-> للحصول على أفضل حماية، تأكد من **[نشر Microsoft Defender لنقطة النهاية الأساسية](configure-machines-security-baseline.md)**.
+> للحصول على أفضل حماية، تأكد من **[نشر Microsoft Defender لخط أساسيات نقطة النهاية](configure-machines-security-baseline.md)**.
 
 ## <a name="what-happens-when-something-is-detected"></a>ماذا يحدث عند اكتشاف شيء ما؟
 
-عند الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر، والكشف عن أي حركة ضارة، Microsoft Defender لنقطة النهاية وتوسط هذه المشكلة. سيشاهد فريق عمليات الأمان حالة الكشف على أنها "تم **الحظر**" أو "[](respond-machine-alerts.md#check-activity-details-in-action-center)منع" في مركز الإجراءات، مدرجة ك إجراءات مكتملة.
+عند الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر، والكشف عن حركة ضارة، يمنع Microsoft Defender لنقطة النهاية هذه الأداة ويديرها. سيشاهد فريق عمليات الأمان حالة الكشف على أنها "تم **الحظر**" أو "[](respond-machine-alerts.md#check-activity-details-in-action-center)منع" في مركز الإجراءات، مدرجة ك إجراءات مكتملة.
 
 تعرض الصورة التالية مثيلا للبرامج غير المرغوب فيها التي تم الكشف عنها الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر:
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="الكشف الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر" lightbox="images/edr-in-block-mode-detection.png":::
+:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر عن شيء ما.":::
 
 
 ## <a name="enable-edr-in-block-mode"></a>تمكين الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر
@@ -93,7 +93,7 @@ ms.locfileid: "64473112"
 |---|---|
 |الأذونات|يجب تعيين دور المسؤول العام أو مسؤول الأمان في [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). لمزيد من المعلومات، راجع [الأذونات الأساسية](basic-permissions.md).|
 |نظام التشغيل|يجب أن تعمل الأجهزة على أحد الإصدارات التالية من Windows: <br/>- Windows 11 <br/>- Windows 10 (كل الإصدارات)<br/>- Windows Server 2022 <br/>- Windows Server 2019<br/>- Windows Server أو الإصدار 1803 أو الأحدث<br/>- Windows Server 2016 Windows Server 2012 R2 (باستخدام حل العميل الموحد [الجديد](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview))<sup>[[1](#fn1)]</sup>  |
-|Microsoft Defender لنقطة النهاية|يجب أن تكون الأجهزة مجهزه في Defender لنقطة النهاية. راجع المقالات التالية: <br/>- [الحد الأدنى لمتطلبات Microsoft Defender لنقطة النهاية](minimum-requirements.md)<br/>- [الأجهزة المجهزة وتكوين Microsoft Defender لنقطة النهاية](onboard-configure.md)<br/>- [إعادة Windows إلى خدمة Defender for Endpoint](configure-server-endpoints.md)<br/>- [وظائف Windows Server 2012 R2 و2016 الجديدة في الحل الموحد الحديث (معاينة)](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) |
+|Microsoft Defender لنقطة النهاية|يجب أن تكون الأجهزة مجهزه في Defender لنقطة النهاية. راجع المقالات التالية: <br/>- [الحد الأدنى لمتطلبات Microsoft Defender لنقطة النهاية](minimum-requirements.md)<br/>- [الأجهزة المجهزة وتكوين قدرات نقطة النهاية ل Microsoft Defender](onboard-configure.md)<br/>- [إعادة Windows إلى خدمة Defender for Endpoint](configure-server-endpoints.md)<br/>- [وظائف Windows Server 2012 R2 و2016 الجديدة في الحل الموحد الحديث (معاينة)](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) |
 |برنامج الحماية من الفيروسات من Microsoft Defender|يجب أن يكون برنامج الحماية من الفيروسات من Microsoft Defender الأجهزة مثبتة ومفعلة في الوضع النشط أو الوضع السلبي. [تأكد برنامج الحماية من الفيروسات من Microsoft Defender في وضع نشط أو غير نشط](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode).|
 |الحماية التي يتم تسليمها من السحابة|برنامج الحماية من الفيروسات من Microsoft Defender تكوين مثل هذه الحماية التي يتم [تسليمها من السحابة](enable-cloud-protection-microsoft-defender-antivirus.md).|
 |برنامج الحماية من الفيروسات من Microsoft Defender أساسي|يجب أن تكون الأجهزة م تاريخا. لتأكيد الأمر، باستخدام PowerShell، يمكنك تشغيل أمر cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) كمسؤول. في **السطر AMProductVersion** ، يجب أن ترى **4.18.2001.10** أو أعلى. <p> لمعرفة المزيد، [راجع إدارة برنامج الحماية من الفيروسات من Microsoft Defender الأساسية وتطبيق الأساسات](manage-updates-baselines-microsoft-defender-antivirus.md).|
@@ -102,7 +102,7 @@ ms.locfileid: "64473112"
 (<a id="fn1">1</a>) راجع [هل الكشف التلقائي والاستجابة على النقط النهائية وضع الحظر المعتمد على Windows Server 2016 Windows Server 2012 R2؟](#is-edr-in-block-mode-supported-on-windows-server-2016-and-windows-server-2012-r2)
 
 > [!IMPORTANT]
-> للحصول على أفضل قيمة حماية، تأكد من تكوين حل الحماية من الفيروسات لتلقي التحديثات العادية والميزات الأساسية، ومن تكوين [استثناءاتك](configure-exclusions-microsoft-defender-antivirus.md). الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر الاستثناءات المعرفة برنامج الحماية من الفيروسات من Microsoft Defender، وليس المؤشرات المعرفة ل [](manage-indicators.md) Microsoft Defender لنقطة النهاية.
+> للحصول على أفضل قيمة حماية، تأكد من تكوين حل الحماية من الفيروسات لتلقي التحديثات العادية والميزات الأساسية، ومن تكوين [استثناءاتك](configure-exclusions-microsoft-defender-antivirus.md). الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر الاستثناءات المعرفة برنامج الحماية من الفيروسات من Microsoft Defender، وليس المؤشرات المعرفة ل Microsoft Defender لنقطة النهاية.[](manage-indicators.md)
 
 ## <a name="frequently-asked-questions"></a>الأسئلة المتكررة
 
@@ -137,11 +137,11 @@ ms.locfileid: "64473112"
 بالنسبة لنقاط النهاية التي Windows 10 أو Windows 11 أو Windows Server أو الإصدار 1803 أو الإصدارات الأحدث أو Windows Server 2019 أو Windows Server 2022 عند برنامج الحماية من الفيروسات من Microsoft Defender  في الوضع النشط، يتم استخدامه ك برنامج الحماية من الفيروسات الأساسي على الجهاز. عند التشغيل في الوضع السلبي، برنامج الحماية من الفيروسات من Microsoft Defender منتج الحماية من الفيروسات الأساسي. في هذه الحالة، لا يتم معالجة التهديدات برنامج الحماية من الفيروسات من Microsoft Defender في الوقت الحقيقي.
 
 > [!NOTE]
-> برنامج الحماية من الفيروسات من Microsoft Defender تشغيل الجهاز في الوضع السلبي فقط عند تشغيل الجهاز Microsoft Defender لنقطة النهاية.
+> برنامج الحماية من الفيروسات من Microsoft Defender تشغيل الجهاز في الوضع السلبي فقط عندما يكون الجهاز مدرجا في Microsoft Defender ل Endpoint.
 
 لمزيد من المعلومات، [راجع برنامج الحماية من الفيروسات من Microsoft Defender التوافق](microsoft-defender-antivirus-compatibility.md).
 
-### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>كيف أعمل تأكد برنامج الحماية من الفيروسات من Microsoft Defender في وضع نشط أو غير نشط؟
+### <a name="how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode"></a>كيف يمكنني تأكيد وجود برنامج الحماية من الفيروسات من Microsoft Defender نشط أو غير نشط؟
 
 لتأكيد ما إذا كان برنامج الحماية من الفيروسات من Microsoft Defender قيد التشغيل في وضع نشط أو غير نشط، يمكنك استخدام موجه الأوامر أو PowerShell على جهاز يعمل Windows.
 
@@ -150,7 +150,7 @@ ms.locfileid: "64473112"
 |PowerShell|1. حدد قائمة البدء، `PowerShell`وابدأ الكتابة ، ثم افتح Windows PowerShell في النتائج.<br/><br/>2. اكتب `Get-MpComputerStatus`.<br/><br/>3. في قائمة النتائج، في الصف **AMRunningMode** ، ابحث عن إحدى القيم التالية:<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>لمعرفة المزيد، راجع [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
 |موجه الأوامر|1. حدد قائمة البدء، وابدأ `Command Prompt`الكتابة ، ثم افتح Windows موجه الأوامر في النتائج.<br/><br/>2. اكتب `sc query windefend`.<br/><br/>3. في قائمة النتائج، في صف **STATE** ، تأكد من تشغيل الخدمة. |
 
-### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>كيف أعمل تأكيد أن الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر يتم تشغيلها برنامج الحماية من الفيروسات من Microsoft Defender في الوضع غير النشط؟
+### <a name="how-do-i-confirm-that-edr-in-block-mode-is-turned-on-with-microsoft-defender-antivirus-in-passive-mode"></a>كيف يمكنني تأكيد تشغيل الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر مع برنامج الحماية من الفيروسات من Microsoft Defender في الوضع غير النشط؟
 
 يمكنك استخدام PowerShell لتأكيد تشغيل الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر برنامج الحماية من الفيروسات من Microsoft Defender في الوضع غير النشط.
 

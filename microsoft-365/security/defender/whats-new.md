@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: edaa7398b8d3213479c9b81af248b928f7b3f3e0
-ms.sourcegitcommit: f8267a0860de62dbd53ebb8a151a8e71a8ccda6a
+ms.openlocfilehash: aebf7a82a886540374176c06535e9f0097e73a03
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63571576"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499804"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>ما الجديد في Microsoft 365 Defender
 
@@ -40,12 +40,18 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 لمزيد من المعلومات حول أحدث ما في منتجات أمان Microsoft Defender الأخرى، راجع:
 
-- [ما الجديد في Microsoft Defender for Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
-- [ما الجديد في Microsoft Defender ل Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
+- [ما الجديد في Microsoft Defender لـ Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
+- [ما الجديد في Microsoft Defender لنقطة النهاية](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [ما الجديد في Microsoft Defender for Identity](/defender-for-identity/whats-new)
-- [ما الجديد في Microsoft Defender لتطبيقات السحابة](/cloud-app-security/release-notes)
+- [ما الجديد في Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 يمكنك أيضا الحصول على تحديثات المنتجات والإعلامات المهمة من خلال [مركز الرسائل](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
+
+
+
+## <a name="march-2022"></a>مارس 2022
+
+- (Preview) تم تحسين قائمة انتظار الأحداث باستخدام العديد من الميزات المصممة لمساعدتك على إجراء التحريات. تتضمن التحسينات قدرات مثل القدرة على البحث عن الأحداث حسب المعرف أو الاسم، وتحديد نطاق وقت مخصص، وغيرها.
 
 ## <a name="december-2021"></a>ديسمبر 2021
 
@@ -63,15 +69,15 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="september-2021"></a>سبتمبر 2021
 
-- (GA) يتوفر Microsoft Defender Office 365 بيانات الحدث في Microsoft 365 Defender برمجة تطبيقات الأحداث المتدفقة. يمكنك الاطلاع على توفر أنواع الأحداث ووضعها في أنواع Microsoft 365 Defender [في دفق API](supported-event-types.md).
-- (GA) يتوفر Microsoft Defender Office 365 المتوفرة في عملية الصيد المتقدمة بشكل عام.
+- (GA) Microsoft Defender لـ Office 365 بيانات الحدث المتوفرة في Microsoft 365 Defender الأحداث المتدفقة. يمكنك الاطلاع على توفر أنواع الأحداث ووضعها في أنواع Microsoft 365 Defender [في دفق API](supported-event-types.md).
+- (GA) Microsoft Defender لـ Office 365 البيانات المتوفرة في الصيد المتقدم متوفرة الآن بشكل عام.
 - (GA) تعيين الأحداث والتنبيهات إلى حسابات المستخدمين
 
   يمكنك تعيين حادث، وجميع التنبيهات المقترنة به، إلى حساب مستخدم من تعيين إلى **:** في الجزء إدارة الحادث لحادث أو جزء  إدارة التنبيه من تنبيه.
 
 ## <a name="august-2021"></a>أغسطس 2021
 
-- (Preview) Microsoft Defender Office 365 البيانات المتوفرة في البحث المتقدم
+- (Preview) Microsoft Defender لـ Office 365 البيانات المتوفرة في البحث المتقدم
 
   يمكن أن توفر الأعمدة الجديدة في جداول البريد الإلكتروني مزيدا من المعرفة حول التهديدات المستندة إلى البريد الإلكتروني من أجل إجراء المزيد من التحريات المعمقة باستخدام الصيد المتقدم. يمكنك الآن تضمين العمود `AuthenticationDetails` في [EmailEvents](./advanced-hunting-emailevents-table.md)`FileSize` وفي [EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md)`ThreatTypes` `DetectionMethods` وفي [EmailPostDeliveryEvents](./advanced-hunting-emailpostdeliveryevents-table.md) الجداول.
 
@@ -121,11 +127,11 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 - Microsoft 365 Defender
 
-  يتوفر الآن [Microsoft 365 Defender](https://security.microsoft.com) المدخل المحسن. تجمع هذه التجربة الجديدة بين Defender for Endpoint و Defender for Office 365 و Defender for Identity والمزيد في مدخل واحد. هذا هو المنزل الجديد لإدارة عناصر التحكم في الأمان. [تعرف على الجديد](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
+  يتوفر الآن [Microsoft 365 Defender](https://security.microsoft.com) المدخل المحسن. تجمع هذه التجربة الجديدة بين Defender for Endpoint Defender لـ Office 365 و Defender for Identity والمزيد في مدخل واحد. هذا هو المنزل الجديد لإدارة عناصر التحكم في الأمان. [تعرف على الجديد](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 - [Microsoft 365 Defender تحليل المخاطر](threat-analytics.md)
 
-  تساعدك تحليلات المخاطر على الاستجابة للهجمات النشطة وتقليل تأثيرها. يمكنك أيضا التعرف على محاولات الهجمات التي حظرتها الحلول Microsoft 365 Defender واتخاذ إجراءات وقائية تخفف من خطر التعرض للضوء بشكل أكبر وتزيد من مرونة. كجزء من تجربة الأمان الموحدة، تتوفر الآن تحليلات المخاطر ل Microsoft Defender ل Endpoint و Microsoft Defender Office تراخيص E5.
+  تساعدك تحليلات المخاطر على الاستجابة للهجمات النشطة وتقليل تأثيرها. يمكنك أيضا التعرف على محاولات الهجمات التي حظرتها الحلول Microsoft 365 Defender واتخاذ إجراءات وقائية تخفف من خطر التعرض للضوء بشكل أكبر وتزيد من مرونة. كجزء من تجربة الأمان الموحدة، تتوفر الآن تحليلات المخاطر Microsoft Defender لنقطة النهاية و Microsoft Defender Office تراخيص E5.
 
 ## <a name="march-2021"></a>مارس 2021
 
@@ -133,8 +139,3 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
   يمكنك العثور على معلومات حول الأحداث في تطبيقات وخدمات سحابية متنوعة تغطيها Microsoft Cloud App Security. يتضمن هذا الجدول أيضا المعلومات المتوفرة مسبقا في `AppFileEvents` الجدول.
 
-## <a name="february-2021"></a>2021 فبراير عام
-
-- (Preview) المدخل المحسن Microsoft 365 Defender [(https://security.microsoft.com)](https://security.microsoft.com) متوفر الآن في المعاينة العامة. تجمع هذه التجربة الجديدة Defender for Endpoint و Defender Office 365 إلى المركز. [تعرف على المزيد حول ما تم تغييره](microsoft-365-defender.md#the-microsoft-365-defender-portal).
-
-- **[(معاينة) Microsoft 365 Defender واجهات](api-overview.md)** برمجة التطبيقات - ستمكنك واجهات برمجة التطبيقات Microsoft 365 Defender المستوى الأعلى من أتمتة مهام سير العمل استنادا إلى الحادث المشترك وجداول الصيد المتقدمة.

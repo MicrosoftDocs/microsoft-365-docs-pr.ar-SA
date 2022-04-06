@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: b708d7aa993bdcd74b6fe00f633e3f7933ff04b8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 6ab6ff7c043dcceacfbb07d0f6fec5e974999204
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63572951"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682428"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>توصيات النهج لتأمين البريد الإلكتروني
 
@@ -55,7 +55,6 @@ ms.locfileid: "63572951"
 |**Enterprise**|[تتطلب MFA عندما تكون مخاطر تسجيل الدخول *منخفضة* أو *متوسطة* أو *عالية*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|تضمين Exchange Online في تعيين تطبيقات السحابة|
 ||[يتطلب أجهزة كمبيوتر وأجهزة *محمولة* متوافقة](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|تضمين Exchange Online في قائمة تطبيقات السحابة|
 |**أمان متخصص**|[*طلب* MFA دائما](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|تضمين Exchange Online في تعيين تطبيقات السحابة|
-|
 
 ## <a name="block-activesync-clients"></a>حظر عملاء ActiveSync
 

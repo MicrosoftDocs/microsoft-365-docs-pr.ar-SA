@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: يمكن للمسؤولين تمكين دعم تسمية الحساسية لملفات Word Excel PowerPoint في SharePoint OneDrive.
-ms.openlocfilehash: 08c3daab9195e98c3b099255f1e7fb38a2324c33
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 12180dcc748764b1d73f6ad8a5c0ef7c77cd2b27
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63567195"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499958"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>تمكين تسميات الحساسية لملفات Office في SharePoint OneDrive
 
@@ -67,7 +67,7 @@ ms.locfileid: "63567195"
 
 ## <a name="requirements"></a>المتطلبات
 
-تعمل هذه الإمكانات الجديدة [مع تسميات الحساسية](sensitivity-labels.md) فقط. إذا كان لديك حاليا تسميات Azure Information Protection، فقام أولا بترحيلها إلى تسميات الحساسية حتى تتمكن من تمكين هذه الميزات للملفات الجديدة التي تقوم بتحميلها. للحصول على الإرشادات، [راجع كيفية ترحيل تسميات Azure Information Protection إلى تسميات الحساسية الموحدة](/azure/information-protection/configure-policy-migrate-labels).
+تعمل هذه الإمكانات الجديدة [مع تسميات الحساسية](sensitivity-labels.md) فقط. إذا كان لديك حاليا حماية البيانات Azure، فقام أولا بترحيلها إلى تسميات الحساسية حتى تتمكن من تمكين هذه الميزات للملفات الجديدة التي تقوم بتحميلها. للحصول على الإرشادات، راجع [كيفية ترحيل تسميات azure حماية البيانات إلى تسميات الحساسية الموحدة](/azure/information-protection/configure-policy-migrate-labels).
 
 استخدم إصدار تطبيق المزامنة من OneDrive 19.002.0121.0008 أو إصدار أحدث في Windows والإصدار 19.002.0107.0008 أو إصدار أحدث على Mac. تم إصدار هذين الإصدارين في 28 يناير 2019، ويتم إصدارهما حاليا لجميع الرنينات. لمزيد من المعلومات، راجع OneDrive [ملاحظات الإصدار](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). بعد تمكين تسميات الحساسية لملفات Office في SharePoint و OneDrive، تتم مطالبة المستخدمين الذين يديرون إصدارا قديما من تطبيق المزامنة بتحديثه.
 
@@ -77,9 +77,9 @@ ms.locfileid: "63567195"
 
     بالنسبة إلى هذه الملفات، يمكنك إما تطبيق تسمية بدون تشفير بحيث يمكن فتحها لاحقا في Office على الويب، أو توجيه المستخدمين لفتح الملفات في تطبيقات سطح المكتب الخاصة بهم. لا تتأثر الملفات التي تم تسميتها وتشفيرها في Office على الويب فقط.
 
-- SharePoint OneDrive تطبيق تسميات الحساسية تلقائيا على الملفات الموجودة التي قمت بتشفيرها بالفعل باستخدام تسميات Azure Information Protection. بدلا من ذلك، لكي تعمل الميزات بعد تمكين تسميات الحساسية لملفات Office في SharePoint OneDrive، أكمل هذه المهام:
+- SharePoint OneDrive تطبيق تسميات الحساسية تلقائيا على الملفات الموجودة التي قمت بتشفيرها بالفعل باستخدام تسميات azure حماية البيانات. بدلا من ذلك، لكي تعمل الميزات بعد تمكين تسميات الحساسية لملفات Office في SharePoint OneDrive، أكمل هذه المهام:
 
-    1. تأكد من ترحيل [تسميات Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) إلى تسميات الحساسية ونشرها من مركز التوافق في Microsoft 365.[](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)
+    1. تأكد من ترحيل تسميات [azure حماية البيانات](/azure/information-protection/configure-policy-migrate-labels) إلى تسميات الحساسية ونشرها من مركز التوافق في Microsoft 365.[](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)
     2. قم بتنزيل الملفات الملصقات ثم قم بتحميلها إلى موقعها الأصلي في SharePoint أو OneDrive.
 
 - SharePoint لا OneDrive معالجة الملفات المشفرة عندما يكون للتسمية التي تطبق التشفير أي من عمليات التكوين [التالية للتشفير](encryption-sensitivity-labels.md#configure-encryption-settings):
@@ -93,7 +93,7 @@ ms.locfileid: "63567195"
 
 - إذا تم تسمية مستند أثناء سحبه في SharePoint، [](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)فلن يعرض عمود الحساسية في مكتبة المستندات اسم التسمية حتى يتم إيداع المستند وفتحه في SharePoint.
 
-- إذا تم تنزيل مستند مسمي ومشفر من SharePoint أو OneDrive بواسطة تطبيق أو خدمة تستخدم اسم خدمة أساسي، ثم يتم تحميلها مرة أخرى باستخدام تسمية تطبق إعدادات تشفير مختلفة، سيفشل التحميل. سيناريو مثال على ذلك هو أن يغير Microsoft Defender for Cloud Apps تسمية حساسية على ملف من سري  إلى سري للغاية، أو من **سري** إلى **عام**.
+- إذا تم تنزيل مستند مسمي ومشفر من SharePoint أو OneDrive بواسطة تطبيق أو خدمة تستخدم اسم خدمة أساسي، ثم يتم تحميلها مرة أخرى باستخدام تسمية تطبق إعدادات تشفير مختلفة، سيفشل التحميل. سيناريو مثال على Microsoft Defender for Cloud Apps تغيير تسمية حساسية على ملف من سري إلى سري للغاية، أو  من **سري** إلى **عام**.
     
     لا يفشل التحميل إذا كان التطبيق أو الخدمة يقوم أولا بتشغيل [الأمر cmdlet Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile)، كما هو موضح في المقطع إزالة [](#remove-encryption-for-a-labeled-document) التشفير لمستند مسمي. أو قبل التحميل، يتم حذف الملف الأصلي أو يتم تغيير اسم الملف.
 
@@ -190,11 +190,9 @@ ms.locfileid: "63567195"
 
 على سبيل المثال: يمكنك إنشاء تسمية حساسية جديدة تطبق التشفير ونشرها، وهي تظهر بسرعة كبيرة في تطبيق سطح المكتب للمستخدم. يطبق المستخدم هذه التسمية على مستند ثم يقوم بتحميلها إلى SharePoint أو OneDrive. إذا لم يتم إكمال النسخ المتماثل للتسمية للخدمة، فلن يتم تطبيق الإمكانات الجديدة على هذا المستند عند التحميل. ونتيجة لذلك، لن يتم إرجاع المستند في البحث أو عن eDiscovery ولا يمكن فتح المستند في Office على الويب.
 
-يتم تكرار التغييرات التالية في غضون ساعة واحدة: تسميات الحساسية الجديدة والمحذوفة، وإعدادات نهج تسمية الحساسية التي تتضمن التسميات الموجودة في النهج.
+لمزيد من المعلومات حول توقيت التسميات، راجع متى يجب توقع أن يتم وضع تسميات جديدة والتغييرات [حيز التنفيذ](create-sensitivity-labels.md#when-to-expect-new-labels-and-changes-to-take-effect).
 
-يتم تكرار التغييرات التالية في غضون 24 ساعة: التغييرات في إعدادات تسمية الحساسية لتسميات موجودة.
-
-وبما أن تأخير التكرار لا يكون سوى ساعة واحدة لتسميات الحساسية الجديدة، فمن غير المحتمل أن تخوض السيناريو في المثال. ولكن كضمان، نوصي بنشر تسميات جديدة لبضعة مستخدمين اختباريين أولا، وانتظر لمدة ساعة، ثم تحقق من سلوك التسمية على SharePoint OneDrive. كخطوة أخيرة، اجعل التسمية متوفرة لمزيد من المستخدمين إما بإضافة المزيد من المستخدمين إلى نهج التسمية الموجود، أو إضافة التسمية إلى نهج تسمية موجود للمستخدمين القياسيين. في الوقت الذي يرى فيه المستخدمون القياسيون التسمية، فقد تم مزامنتها SharePoint OneDrive.
+كضمان، نوصي بنشر تسميات جديدة لبضعة مستخدمين اختباريين أولا، وانتظر لمدة ساعة واحدة على الأقل، ثم تحقق من سلوك التسمية على SharePoint OneDrive. انتظر يوما على الأقل قبل جعل التسمية متوفرة لمزيد من المستخدمين إما بإضافة المزيد من المستخدمين إلى نهج التسمية الموجود، أو إضافة التسمية إلى نهج تسمية موجود للمستخدمين القياسيين. عندما يرى المستخدمون القياسيون التسمية، تكون قد تزامنت بالفعل SharePoint OneDrive.
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint إدارة حقوق استخدام المعلومات (IRM) وتسميات الحساسية
 
@@ -215,7 +213,6 @@ SharePoint إدارة حقوق استخدام المعلومات [(IRM)](set-up-
 - إذا قمت بتمكين أي من إعدادات مكتبة IRM الإضافية، والتي تتضمن منع المستخدمين من تحميل المستندات التي لا تدعم IRM، يتم فرض هذه الإعدادات.
 
 باستخدام هذا السلوك، يمكنك أن تتأكد من حماية جميع ملفات pdf Office من الوصول غير المصرح به إذا تم تنزيلها، حتى لو لم يتم تسميتها. ومع ذلك، لن تستفيد الملفات الملصقات التي يتم تحميلها من الإمكانات الجديدة.
-
 
 ## <a name="search-for-documents-by-sensitivity-label"></a>البحث عن المستندات حسب تسمية الحساسية
 
@@ -245,7 +242,7 @@ InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
 
 ## <a name="remove-encryption-for-a-labeled-document"></a>إزالة التشفير لمستند مسمي
 
-قد تكون هناك حالات نادرة يحتاج فيها مسؤول SharePoint إلى إزالة التشفير من مستند مخزن في SharePoint. يمكن لأي مستخدم لديه حق [](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) استخدام إدارة الحقوق في التصدير أو التحكم الكامل المعين له لذلك المستند إزالة التشفير الذي تم تطبيقه بواسطة خدمة Azure Rights Management من Azure Information Protection. على سبيل المثال، يمكن للمستخدمين الذين لديهم أي من حقوق الاستخدام هذه استبدال تسمية تطبق التشفير بتسمية بدون تشفير. يمكن [للمستخدم الفهار](/azure/information-protection/configure-super-users) أيضا تنزيل الملف وحفظ نسخة محلية بدون التشفير.
+قد تكون هناك حالات نادرة يحتاج فيها مسؤول SharePoint إلى إزالة التشفير من مستند مخزن في SharePoint. يمكن لأي مستخدم لديه حق [](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) استخدام إدارة الحقوق في التصدير أو التحكم الكامل المعين له لهذا المستند إزالة التشفير الذي تم تطبيقه بواسطة خدمة Azure Rights Management من Azure حماية البيانات. على سبيل المثال، يمكن للمستخدمين الذين لديهم أي من حقوق الاستخدام هذه استبدال تسمية تطبق التشفير بتسمية بدون تشفير. يمكن [للمستخدم الفهار](/azure/information-protection/configure-super-users) أيضا تنزيل الملف وحفظ نسخة محلية بدون التشفير.
 
 كبديل، يمكن للمسؤول [العام أو المسؤول SharePoint](/sharepoint/sharepoint-admin-role) تشغيل الأمر [cmdlet Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile)، الذي يزيل كل من تسمية الحساسية والتشفير. يتم تشغيل أمر cmdlet هذا حتى إذا لم يكن لدى المسؤول أذونات الوصول إلى الموقع أو الملف، أو إذا كانت خدمة Azure Rights Management غير متوفرة.
 
@@ -261,7 +258,7 @@ Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Mark
 
 - تم تطبيق التشفير بواسطة تسمية حساسية مع إعدادات التشفير المعرفة من قبل المسؤول (إعدادات تعيين الأذونات [الآن](encryption-sensitivity-labels.md#assign-permissions-now) التسمية). [تشفير المفتاح المزدوج](encryption-sensitivity-labels.md#double-key-encryption) غير معتمد لهذا الأمر cmdlet.
 
-تتم إضافة نص التبرير إلى [](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) حدث التدقيق لتسمية الحساسية التي تمت إزالتها من الملف، كما يتم تسجيل إجراء فك التشفير في تسجيل استخدام الحماية ل [Azure Information Protection](/azure/information-protection/log-analyze-usage).
+تتم إضافة نص التبرير إلى [](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) حدث التدقيق لتسمية الحساسية [التي تمت إزالتها](/azure/information-protection/log-analyze-usage) من الملف، كما يتم تسجيل إجراء فك التشفير في تسجيل استخدام الحماية ل Azure حماية البيانات.
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>كيفية تعطيل تسميات الحساسية SharePoint OneDrive (إلغاء الاشتراك)
 

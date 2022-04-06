@@ -10,12 +10,12 @@ ms.author: tiaraquan
 manager: dougeby
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: badf2d65f2b29e265a1312cb1d5f4802a44f3cb3
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8457331f0895c66d1aa0ad54cfc43cd001a9bd9e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63572964"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681073"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>إصلاح المشاكل التي تم العثور عليها بواسطة أداة تقييم الجهوزية
 
@@ -68,7 +68,7 @@ ms.locfileid: "63572964"
 
 | النتيجة  | المعنى |
 | ----- | ----- |
-| غير جاهز | لديك نهج وصول شرطي واحد على الأقل يستهدف جميع المستخدمين. <br><br> أثناء التسجيل، سنستبعد حسابات خدمات سطح المكتب المدار من Microsoft من سياسات الوصول الشرطي ذات الصلة وسنطبق سياسات وصول شرطي جديدة لتقييد الوصول إلى هذه الحسابات. <br><br> بعد التسجيل، يمكنك مراجعة نهج الوصول الشرطي لسطح المكتب المدار من Microsoft في إدارة نقاط النهاية من Microsoft. لمزيد من المعلومات حول حسابات الخدمات هذه، راجع [إجراءات التشغيل القياسية](../service-description/operations-and-monitoring.md#standard-operating-procedures). |
+| غير جاهز | لديك نهج وصول شرطي واحد على الأقل يستهدف جميع المستخدمين. <br><br> أثناء التسجيل، سنحاول استثناء حسابات خدمات سطح المكتب المدار من Microsoft من سياسات الوصول الشرطي ذات الصلة وتطبيق سياسات وصول شرطي جديدة لتقييد الوصول إلى هذه الحسابات. ومع ذلك، إذا لم ينجح الأمر، فقد يتسبب ذلك في حدوث أخطاء أثناء تجربة التسجيل. للحصول على أفضل الممارسات، أنشئ واجبا يستهدف مجموعة Azure AD معينة لا تتضمن حسابات خدمة سطح المكتب المدار من Microsoft. <br><br> بعد التسجيل، يمكنك مراجعة نهج الوصول الشرطي لسطح المكتب المدار من Microsoft في إدارة نقاط النهاية من Microsoft. لمزيد من المعلومات حول حسابات الخدمات هذه، راجع [إجراءات التشغيل القياسية](../service-description/operations-and-monitoring.md#standard-operating-procedures). |
 | استشارات | لديك سياسات وصول شرطي قد تمنع Microsoft Managed Desktop من إدارة خدمة Microsoft Managed Desktop. <br><br> أثناء التسجيل، سنستبعد حسابات خدمات سطح المكتب المدار من Microsoft من سياسات الوصول الشرطي ذات الصلة وسنطبق سياسات وصول شرطي جديدة لتقييد الوصول إلى هذه الحسابات. <br><br> لمزيد من المعلومات حول حسابات الخدمات هذه، راجع [إجراءات التشغيل القياسية](../service-description/operations-and-monitoring.md#standard-operating-procedures). |
 | الخطأ | لا يوجد في دور مسؤول Intune أذونات كافية لهذا الاختيار. ستحتاج أيضا إلى تعيين أدوار Azure AD هذه لتشغيل هذا الاختيار: <ul><li>قارئ الأمان</li><li>مسؤول الأمان</li><li>مسؤول الوصول الشرطي</li><li>القارئ العام</li><li>مسؤول الأجهزة</li></ul>
 ### <a name="device-compliance-policies"></a>سياسات توافق الأجهزة

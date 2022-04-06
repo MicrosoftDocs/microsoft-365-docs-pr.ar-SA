@@ -17,12 +17,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 8a8de691ff08b50b56c34ed9e779cc97d48c5fcd
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 0bf6a6ecf48889228391688e41fb79070c3194a1
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755836"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682207"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>تكوين قدرات خبراء المخاطر في Microsoft وإدارتها من خلال Microsoft 365 Defender
 
@@ -52,15 +52,15 @@ ms.locfileid: "63755836"
 
 2. حدد **تطبيق**.
 
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="صفحة خبراء المخاطر في Microsoft الإعدادات في مدخل Microsoft 365 Defender" lightbox="../../media/mte/mte-collaboratewithmte.png":::
+    ![صورة خبراء المخاطر في Microsoft الإعدادات.](../../media/mte/mte-collaboratewithmte.png)
 
 3. أدخل اسمك وعنوان بريدك الإلكتروني حتى تتمكن Microsoft من الاتصال بك حول التطبيق.
 
-    :::image type="content" source="../../media/mte/mte-apply.png" alt-text="صفحة خبراء المخاطر في Microsoft التطبيق في مدخل Microsoft 365 Defender" lightbox="../../media/mte/mte-apply.png":::
-  
+    ![صورة خبراء المخاطر في Microsoft التطبيق.](../../media/mte/mte-apply.png)
+
 4. اقرأ [بيان الخصوصية،](https://privacy.microsoft.com/en-us/privacystatement) ثم حدد **إرسال** عندما تنتهي. ستتلقى رسالة بريد إلكتروني ترحيبية بمجرد الموافقة على طلبك.
 
-    :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="تأكيد خبراء المخاطر في Microsoft التطبيق في مدخل Microsoft 365 Defender" lightbox="../../media/mte/mte-applicationconfirmation.png":::
+    ![صورة لتأكيد خبراء المخاطر في Microsoft التطبيق.](../../media/mte/mte-applicationconfirmation.png)
 
 5. بعد تلقي البريد الإلكتروني الترحيبي، ستبدأ تلقائيا بتلقي إعلامات الهجمات المستهدفة.
 
@@ -105,13 +105,13 @@ ms.locfileid: "63755836"
 
 2. من القائمة العلوية، حدد **؟ استشر خبير التهديدات**.
 
-    :::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="قائمة خبراء المخاطر في Microsoft &quot;خبراء عند الطلب&quot; من القائمة في مدخل Microsoft 365 Defender" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
+    ![صورة خبراء المخاطر في Microsoft "خبراء عند الطلب" من القائمة.](../../media/mte/incidents-action-mte-highlighted.png)
 
     سيتم فتح شاشة منتحلة.
 
     سيشير الرأس إلى ما إذا كنت في اشتراك تجريبي أو اشتراكا كاملا خبراء المخاطر في Microsoft - اشتراك الخبراء عند الطلب.
 
-    :::image type="content" source="../../media/mte/mte-trial.png" alt-text="شاشة الاشتراك التجريبي خبراء المخاطر في Microsoft &quot;خبراء عند الطلب&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/mte/mte-trial.png":::
+    ![صورة لشاشة خبراء المخاطر في Microsoft "خبراء عند الطلب" التجريبي.](../../media/mte/mte-trial.png)
 
     سيتم **ملء حقل موضوع** "التحقيق" بالفعل بالارتباط إلى الصفحة ذات الصلة لطلبك.
 

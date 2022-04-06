@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 747f8e389b90e20aad7162277b3e62b0a80ae3c7
-ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+ms.openlocfilehash: 4429226eaebc254676fac5589a2a25ca51acdeb6
+ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "63569862"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64499914"
 ---
 # <a name="get-started-with-microsoft-365-defender"></a>بدء العمل باستخدام Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ Microsoft 365 Defender تجربة موحدة حيث يمكنك مراقبة ال
 
 سواء كنت تستخدم مجموعة منتجات الأمان من Microsoft أو ملما بسير العمل الفردي، سيرشدك هذا الموضوع في الخطوات البسيطة التي تحتاج إلى اتخاذها للبدء باستخدام Microsoft 365 Defender.
 
-![صورة للبدء باستخدام Microsoft 365 Defender الخطوات.](../../media/mtp/get-started-m365d.png)
+:::image type="content" source="../../media/mtp/get-started-m365d.png" alt-text="الخطوات اللازمة للبدء باستخدام مدخل Microsoft 365 Defender" lightbox="../../media/mtp/get-started-m365d.png":::
 
 بشكل عام، ستحتاج إلى اتخاذ الخطوات التالية للبدء:
 
@@ -58,6 +58,6 @@ Microsoft 365 Defender تجربة موحدة حيث يمكنك مراقبة ال
 | الإمكانية | الوصف |
 | ------ | ------ |
 | Microsoft Defender لنقطة النهاية | مجموعة حماية نقاط النهاية التي تم إنشاؤها حول أدوات الاستشعار السلوكية القوية وتحليلات السحابة وذكاء المخاطر |
-|Microsoft Defender Office 365 | حماية متقدمة لتطبيقاتك وبياناتك في Office 365، بما في ذلك البريد الإلكتروني وأدوات التعاون الأخرى |
+|Microsoft Defender لـ Office 365 | حماية متقدمة لتطبيقاتك وبياناتك في Office 365، بما في ذلك البريد الإلكتروني وأدوات التعاون الأخرى |
 | Microsoft Defender for Identity | الدفاع ضد التهديدات المتقدمة والهويات المخلة والمتطفلين الضارين باستخدام إشارات Active Directory المرتبطة |
-| Microsoft Defender لتطبيقات السحابة | التعرف على التهديدات الإلكترونية ومكافحتها عبر خدمات السحابة الخاصة ب Microsoft و الجهة الخارجية |
+| Microsoft Defender for Cloud Apps | التعرف على التهديدات الإلكترونية ومكافحتها عبر خدمات السحابة الخاصة ب Microsoft و الجهة الخارجية |

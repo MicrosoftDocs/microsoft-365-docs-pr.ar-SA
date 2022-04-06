@@ -19,18 +19,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 14dfd8bd911be9eb3932f7664225532e493e8a80
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 929ecd109d110c9a4578b39fbc69ed65c0b7d116
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465366"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682604"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>تمكين قواعد الحد من سطح الهجوم
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -58,7 +58,7 @@ ms.locfileid: "64465366"
 - [حماية التسليم السحابي](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) في (تتطلب بعض القواعد ذلك)
 - Windows 10 Enterprise E5 أو E3
 
-على الرغم من أن قواعد تقليل مساحة الهجوم لا تتطلب ترخيص [Windows E5](/windows/deployment/deploy-enterprise-licenses)، مع ترخيص Windows E5، إلا أنك ستحصل على قدرات إدارة متقدمة بما في ذلك المراقبة والتحليلات ومسير العمل المتوفرة في Defender for Endpoint، بالإضافة إلى قدرات إعداد التقارير والتكوين <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">في مدخل Microsoft 365 Defender</a>. لا تتوفر هذه الإمكانات المتقدمة مع ترخيص E3، ولكن لا يزال بإمكانك استخدام عارض الأحداث لمراجعة أحداث قواعد الحد من سطح الهجوم.
+على الرغم من أن قواعد تقليل مساحة الهجوم لا تتطلب ترخيص [Windows E5](/windows/deployment/deploy-enterprise-licenses)، مع ترخيص Windows E5، إلا أنك ستحصل على قدرات إدارة متقدمة بما في ذلك المراقبة والتحليلات ومسير العمل المتوفرة في Defender for Endpoint، بالإضافة إلى قدرات إعداد التقارير والتكوين <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">في مدخل Microsoft 365 Defender</a>. لا تتوفر هذه الإمكانات المتقدمة مع ترخيص E3، ولكن لا يزال بإمكانك استخدام "عارض الأحداث" لمراجعة أحداث قواعد الحد من سطح الهجوم.
 
 تحتوي كل قاعدة ASR على أحد الإعدادات الأربعة:
 
@@ -70,7 +70,7 @@ ms.locfileid: "64465366"
 > [!IMPORTANT]
 > حاليا، وضع التحذير غير معتمد في ثلاث قواعد ASR عند تكوين قواعد ASR في إدارة نقاط النهاية من Microsoft (MEM). لمعرفة المزيد، راجع [الحالات التي يكون فيها وضع التحذير غير معتمد](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported).
 
-نوصي باستخدام قواعد ASR مع ترخيص Windows E5 (أو ترخيص SKU مماثل) للاستفادة من قدرات المراقبة وإعداد التقارير المتقدمة المتوفرة في [Microsoft Defender لنقطة النهاية](microsoft-defender-endpoint.md) (Defender for Endpoint). ومع ذلك، إذا كان لديك ترخيص آخر، مثل Windows Professional أو Windows E3 لا يتضمن قدرات متقدمة على المراقبة وإعداد التقارير، يمكنك تطوير أدوات المراقبة وإعداد التقارير الخاصة بك أعلى الأحداث التي يتم إنشاؤها في كل نقطة نهاية عند تشغيل قواعد ASR (على سبيل المثال، إعادة توجيه الحدث).
+نوصي باستخدام قواعد ASR مع ترخيص Windows E5 (أو ترخيص SKU مماثل) للاستفادة من قدرات التقارير والمراقبة المتقدمة المتوفرة في [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). ومع ذلك، إذا كان لديك ترخيص آخر، مثل Windows Professional أو Windows E3 لا يتضمن قدرات متقدمة على المراقبة وإعداد التقارير، يمكنك تطوير أدوات المراقبة وإعداد التقارير الخاصة بك أعلى الأحداث التي يتم إنشاؤها في كل نقطة نهاية عند تشغيل قواعد ASR (على سبيل المثال، إعادة توجيه الحدث).
 
 > [!TIP]
 > لمعرفة المزيد حول Windows، راجع Windows 10 الترخيص واحصل على دليل [](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) الترخيص [Windows 10.](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
@@ -78,12 +78,12 @@ ms.locfileid: "64465366"
 يمكنك تمكين قواعد الحد من سطح الهجوم باستخدام أي من هذه الأساليب:
 
 - [Microsoft Intune](#intune)
-- [الأجهزة إدارة الجهاز (MDM)](#mdm)
+- [إدارة أجهزة المحمول (MDM)](#mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [نهج المجموعة](#group-policy)
 - [PowerShell](#powershell)
 
-يوصى بإدارة مستوى المؤسسة مثل Intune أو إدارة نقاط النهاية من Microsoft. ست الكتابة فوق أي إعدادات نهج المجموعة أو PowerShell عند بدء التشغيل على مستوى المؤسسة.
+يوصى بإدارة مستوى المؤسسة مثل Intune أو إدارة نقاط النهاية من Microsoft. ست الكتابة فوق أي نهج مجموعة متضاربة أو إعدادات PowerShell عند بدء التشغيل على مستوى المؤسسة.
 
 ## <a name="exclude-files-and-folders-from-asr-rules"></a>استبعاد الملفات والمجلدات من قواعد ASR
 
@@ -158,7 +158,7 @@ ms.locfileid: "64465366"
 1. افتح إدارة نقاط النهاية من Microsoft إدارة (MEM). في القائمة **الصفحة** الرئيسية، انقر فوق  **الأجهزة**، وحدد **ملفات تعريف التكوين**، ثم انقر **فوق إنشاء ملف تعريف**.
 
    > [!div class="mx-imgBorder"]
-   >  :::image type="content" source="images/mem01-create-profile.png" alt-text="الصفحة &quot;إنشاء ملف تعريف&quot; في مدخل إدارة نقاط النهاية من Microsoft مركز الإدارة" lightbox="images/mem01-create-profile.png":::
+   > ![MEM إنشاء ملف تعريف.](images/mem01-create-profile.png)
 
 2. في **إنشاء ملف تعريف**، في القائمتين المنسدتين التاليتين، حدد ما يلي:
 
@@ -169,17 +169,17 @@ ms.locfileid: "64465366"
    حدد **مخصص**، ثم حدد **إنشاء**.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem02-profile-attributes.png" alt-text="سمات ملف تعريف القاعدة في مدخل إدارة نقاط النهاية من Microsoft مركز الإدارة" lightbox="images/mem02-profile-attributes.png":::
+   > ![سمات ملف تعريف قاعدة MEM.](images/mem02-profile-attributes.png)
 
 3. يتم فتح أداة القالب المخصص إلى الخطوة **1 أساسيات**. في **1 أساسيات**، في **الاسم**، اكتب اسما للقالب، وفي الوصف يمكنك  كتابة وصف (اختياري).
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem03-1-basics.png" alt-text="السمات الأساسية في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft الإلكتروني" lightbox="images/mem03-1-basics.png":::
+   > ![سمات MEM الأساسية.](images/mem03-1-basics.png)
 
 4. انقر فوق **التالي**. يتم **فتح إعدادات تكوين الخطوة 2** . بالنسبة إلى OMA-URI الإعدادات، انقر فوق **إضافة**. يظهر خياران الآن: **إضافة** **وتصدير.**
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="إعدادات التكوين في مدخل إدارة نقاط النهاية من Microsoft مركز الإدارة" lightbox="images/mem04-2-configuration-settings.png":::
+   > ![إعدادات تكوين MEM.](images/mem04-2-configuration-settings.png)
 
 5. انقر **فوق إضافة** مرة أخرى. يتم **فتح إضافة صف OMA-URI الإعدادات**. في **إضافة صف**، قم بما يلي:
 
@@ -195,7 +195,7 @@ ms.locfileid: "64465366"
      - 6 : التحذير (تمكين قاعدة ASR مع السماح للمستخدم بتجاوز الحظر)
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="تكوين OMA URI في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft OMA" lightbox="images/mem05-add-row-oma-uri.png":::
+   > ![تكوين MEM OMA URI.](images/mem05-add-row-oma-uri.png)
 
 6. حدد **حفظ**. **يتم إغلاق** إضافة صف. في **مخصص**، حدد **التالي**. في الخطوة **3 علامات النطاق**، تكون علامات النطاق اختيارية. القيام بوا واحد من الخطوات التالية:
 
@@ -209,7 +209,7 @@ ms.locfileid: "64465366"
    - **إضافة جميع الأجهزة**
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem06-4-assignments.png" alt-text="الواجبات في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/mem06-4-assignments.png":::
+   > ![تعيينات MEM.](images/mem06-4-assignments.png)
 
 8. في **المجموعات المستبعدة**، حدد أي مجموعات تريد استبعادها من هذه القاعدة، ثم حدد **التالي**.
 
@@ -220,12 +220,12 @@ ms.locfileid: "64465366"
    - في **القيمة**، أدخل نطاق القيمة أو القيمة المعمول بها
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="قواعد إمكانية التطبيق في مدخل إدارة نقاط النهاية من Microsoft مركز الإدارة" lightbox="images/mem07-5-applicability-rules.png":::
+   > ![قواعد إمكانية تطبيق MEM.](images/mem07-5-applicability-rules.png)
 
 10. حدد **التالي**. في الخطوة **6 مراجعة + إنشاء**، راجع الإعدادات والمعلومات التي حددتها وأدخلها، ثم حدد **إنشاء**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mem08-6-review-create.png" alt-text="الخيار &quot;مراجعة وإنشاء&quot; في مدخل إدارة نقاط النهاية من Microsoft مركز الإدارة" lightbox="images/mem08-6-review-create.png":::
+    > ![مراجعة MEM وإنشاءه.](images/mem08-6-review-create.png)
 
     > [!NOTE]
     > القواعد نشطة وتحيا في غضون دقائق.
@@ -282,11 +282,11 @@ ms.locfileid: "64465366"
 ### <a name="group-policy"></a>نهج المجموعة
 
 > [!WARNING]
-> إذا كنت تدير أجهزة الكمبيوتر والأجهزة باستخدام Intune أو Configuration Manager أو أي نظام أساسي آخر للإدارة على مستوى المؤسسة، فإن برنامج الإدارة سي الكتابة فوق أي إعدادات نهج المجموعة عند بدء التشغيل.
+> إذا كنت تدير أجهزة الكمبيوتر والأجهزة باستخدام Intune أو Configuration Manager أو أي نظام أساسي آخر للإدارة على مستوى المؤسسة، فإن برنامج الإدارة سي الكتابة فوق أي إعدادات تعارض في "نهج المجموعة" عند بدء التشغيل.
 
-1. على الكمبيوتر نهج المجموعة، افتح وحدة التحكم في إدارة نهج المجموعة، [](https://technet.microsoft.com/library/cc731212.aspx)وانقر ب الماوس الأيمن فوق نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
+1. على كمبيوتر إدارة نهج المجموعة، افتح وحدة تحكم إدارة [نهج](https://technet.microsoft.com/library/cc731212.aspx) المجموعة، وانقر بيمين فوق كائن نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
 
-2. في نهج المجموعة **إدارة،** انتقل إلى **تكوين الكمبيوتر** وحدد **قوالب إدارية**.
+2. في محرر **إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
 
 3. قم بتوسيع الشجرة Windows **مكوناتها برنامج الحماية من الفيروسات من Microsoft Defender** \>  \> **الحماية من مخاطر الهجمات من Microsoft Defender** \> **الحد من سطح الهجوم**.
 
@@ -297,7 +297,7 @@ ms.locfileid: "64465366"
    - 2 : التدقيق (تقييم كيفية تأثير قاعدة ASR على مؤسستك إذا تم تمكينها)
    - 6 : التحذير (تمكين قاعدة ASR مع السماح للمستخدم بتجاوز الحظر)
 
-   :::image type="content" source="images/asr-rules-gp.png" alt-text="قواعد ASR في نهج المجموعة" lightbox="images/asr-rules-gp.png":::
+   :::image type="content" source="images/asr-rules-gp.png" alt-text="قواعد ASR في &quot;نهج المجموعة&quot;.":::
 
 5. لاستبعاد الملفات والمجلدات من قواعد ASR، حدد الإعداد استبعاد  الملفات والمسارات من قواعد تقليل مساحة الهجوم، ثم قم بتعيين الخيار إلى **ممكن**. حدد **إظهار** وأدخل كل ملف أو مجلد في **العمود اسم** القيمة. أدخل **0** في عمود **القيمة** لكل عنصر.
 
@@ -312,7 +312,7 @@ ms.locfileid: "64465366"
 > يظهر إعداد الخيار معرف من قبل المستخدم في الشكل التالي.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-user-defined.png" alt-text="الخيار &quot;تمكين&quot; لأمن بيانات الاعتماد" lightbox="images/asr-user-defined.png":::
+> ![تمكين ASR "معرف من قبل المستخدم"](images/asr-user-defined.png)
 
 1. اكتب **powershell** في قائمة البدء، وانقر بضغطة **Windows PowerShell وحدد** **تشغيل كمسؤول**.
 

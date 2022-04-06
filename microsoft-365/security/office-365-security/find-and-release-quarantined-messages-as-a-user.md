@@ -20,12 +20,12 @@ ms.custom:
 description: يمكن للمستخدمين معرفة كيفية عرض الرسائل المعزولة وإدارتها في Exchange Online Protection (EOP) التي كان من المفترض أن يتم تسليمها لهم.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1cfdd441cff8481ef1ec7ea5ef3cabc54f062694
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 35aa801d0d981f68de5c62a1928e1f85d82ee95d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63568555"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63682384"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>البحث عن الرسائل المعزولة وإطلاقها كمستخدم في EOP
 
@@ -39,10 +39,6 @@ ms.locfileid: "63568555"
 في Microsoft 365 المؤسسات التي بها علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، يحتفظ الفحص بالرسائل الخطيرة أو غير المرغوب فيها. لمزيد من المعلومات، راجع [الفحص في EOP](quarantine-email-messages.md).
 
 بصفتك مستخدما عاديا (وليس كمسؤول)، يتم وصف الإمكانات الافتراضية المتوفرة لك كمستلم لرسالة معزولة في الجدول التالي:
-
-<br>
-
-****
 
 |سبب الفحص|عرض|Release|حذف|
 |---|:---:|:---:|:---:|
@@ -64,7 +60,6 @@ ms.locfileid: "63568555"
 |خزينة المرفقات SharePoint OneDrive و Microsoft Teams التي تعزل الملفات الضارة كبرامج ضارة.||||
 |**قواعد تدفق البريد (قواعد النقل)**||||
 |قواعد تدفق البريد التي تعزل رسائل البريد الإلكتروني.||||
-|
 
 _تحدد سياسات الفحص_ ما يسمح للمستخدمين به للرسائل المعزولة استنادا إلى سبب عزل الرسالة في [الميزات المعتمدة](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). تفرض سياسات الفحص الافتراضية القدرات التاريخية كما هو موضح في الجدول السابق. يمكن للمسؤولين إنشاء سياسات الفحص المخصصة التي تحدد قدرات أقل تقييدا أو أكثر تقييدا للمستخدمين في الميزات المعتمدة وتطبيقها. لمزيد من المعلومات، راجع [سياسات الفحص](quarantine-policies.md).
 
