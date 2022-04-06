@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5cd7c8da3b4d22600293959bdcb47a783a8569c3
-ms.sourcegitcommit: cde34d38bdfb6335b980f1c48c6b218da6a64bf8
+ms.openlocfilehash: 337f9a94b651adffc7360cb88b3d68c9c8167c0a
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "63578137"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468094"
 ---
 # <a name="the-analyst-report-in-threat-analytics"></a>تقرير المحلل في تحليلات المخاطر
 
@@ -28,14 +28,14 @@ ms.locfileid: "63578137"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 يتضمن [كل تقرير تحليلي للتهديدات](threat-analytics.md) مقاطع ديناميكية وقسما مكتوبا شاملا يسمى _تقرير المحلل_. للوصول إلى هذا المقطع، افتح التقرير حول الخطر المتعقب وحدد علامة **التبويب تقرير** المحلل.
 
-![صورة لقسم تقرير المحلل في تقرير تحليل المخاطر.](images/ta-analyst-report-small.png)
+:::image type="content" source="images/ta-analyst-report-small.png" alt-text="قسم تقرير المحلل في تقرير تحليل المخاطر" lightbox="images/ta-analyst-report-small.png":::
 
 _مقطع "تقرير المحلل" في تقرير تحليل المخاطر_
 
@@ -78,14 +78,14 @@ _مقطع "تقرير المحلل" في تقرير تحليل المخاطر_
 
 ### <a name="antivirus-detections"></a>الكشف عن الفيروسات
 
-تتوفر هذه الاكتشافات على الأجهزة [التي برنامج الحماية من الفيروسات من Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) تشغيلها. عند حدوث هذه الاكتشافات على الأجهزة التي تم تشغيلها في Microsoft Defender ل Endpoint، فإنها تقوم أيضا بتشغيل تنبيهات تضيء المخططات في التقرير.
+تتوفر هذه الاكتشافات على الأجهزة [التي برنامج الحماية من الفيروسات من Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) تشغيلها. وعندما تحدث هذه الاكتشافات على الأجهزة التي تم Microsoft Defender لنقطة النهاية عليها، فإنها تؤدي أيضا إلى تشغيل تنبيهات تضيء المخططات في التقرير.
 
 > [!NOTE]
 > يسرد تقرير **المحلل أيضا** الاكتشافات العامة التي يمكن أن تحدد مجموعة واسعة من التهديدات، بالإضافة إلى المكونات أو السلوكيات الخاصة بالخطر المتعقب. لا تعكس هذه الاكتشافات العامة في المخططات.
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>تنبيهات الكشف عن نقاط النهاية والاستجابة (الكشف التلقائي والاستجابة على النقط النهائية)
 
-الكشف التلقائي والاستجابة على النقط النهائية تنبيهات الأجهزة المجهزة [في Microsoft Defender لنقطة النهاية](onboard-configure.md). تعتمد هذه التنبيهات بشكل عام على إشارات الأمان التي يجمعها مستشعر نقطة النهاية من Microsoft Defender وإمكانيات نقاط النهاية الأخرى (مثل الحماية من الفيروسات وحماية الشبكة والحماية من العبث) التي تعمل كمصادر إشارة فعالة.
+الكشف التلقائي والاستجابة على النقط النهائية تنبيهات الأجهزة المجهزة [Microsoft Defender لنقطة النهاية.](onboard-configure.md) تعتمد هذه التنبيهات بشكل عام على إشارات الأمان التي يجمعها مستشعر Microsoft Defender لنقطة النهاية وإمكانيات نقاط النهاية الأخرى (مثل الحماية من الفيروسات وحماية الشبكة والحماية من العبث) التي تعمل كمصادر إشارات فعالة.
 
 مثل قائمة الكشف عن برامج الحماية من الفيروسات، تم تصميم الكشف التلقائي والاستجابة على النقط النهائية تنبيهات جديدة ل وضع علامة عامة على سلوك مريب قد لا يكون مقترن بالخطر المتعقب. في مثل هذه الحالات، سيحدد التقرير التنبيه بوضوح على أنه "عام" ولا يؤثر على أي من المخططات في التقرير.
 

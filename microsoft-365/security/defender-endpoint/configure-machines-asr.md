@@ -1,7 +1,7 @@
 ---
 title: تحسين عمليات نشر قاعدة ASR واكتشافها
 description: تحسين قواعد الحد من الهجمات (ASR) لتحديد عمليات استغلال البرامج الضارة النموذجية ومنعها.
-keywords: onboard, Intune management, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, attack surface reduction, ASR, security baseline
+keywords: onboard, Intune management, Microsoft Defender لنقطة النهاية, Microsoft Defender, Windows Defender, attack surface reduction, ASR, security baseline
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,20 +15,20 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bd5b88c5d43f2ec20c200ee55458e2ef204775ae
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: d2bf9a6fa1f874e7d550d0d0f7a42742a07665eb
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63570456"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468248"
 ---
 # <a name="optimize-asr-rule-deployment-and-detections"></a>تحسين عمليات نشر قاعدة ASR واكتشافها
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
@@ -36,7 +36,7 @@ ms.locfileid: "63570456"
 [تحدد قواعد الحد من سطح الهجوم (ASR)](./attack-surface-reduction.md) عمليات استغلال البرامج الضارة النموذجية وتمنعها. فهي تتحكم في وقت تشغيل التعليمات البرمجية الضارة المحتملة وكيفية تشغيلها. على سبيل المثال، يمكنهم منع JavaScript أو VBScript من بدء تشغيل قابل للتنفيذ تم تنزيله، وحظر مكالمات Win32 API من وحدات Office الماكرو، وحظر العمليات التي يتم تشغيلها من محركات أقراص USB.
 
 
-:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="بطاقة إدارة سطح الهجوم.":::
+:::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="بطاقة إدارة سطح الهجوم" lightbox="../../media/attack-surface-mgmt.png":::
 <br>
 *بطاقة إدارة سطح الهجوم*
 
@@ -48,7 +48,7 @@ ms.locfileid: "63570456"
 
 حدد **الانتقال إلى إدارة سطح الهجوم** \> **تقارير** \> الحد من سطح **الهجوم قواعد** \> **إضافة استثناءات**. من هناك، يمكنك الانتقال إلى مقاطع أخرى من Microsoft 365 Defender المدخل.
 
-![علامة التبويب "إضافة استثناءات" في صفحة قواعد تقليل مساحة الهجوم Microsoft 365 Defender المدخل.](images/secconmgmt_asr_m365exlusions.png)<br>
+:::image type="content" source="images/secconmgmt_asr_m365exlusions.png" alt-text="علامة التبويب &quot;إضافة استثناءات&quot; في صفحة قواعد الحد من سطح الهجوم في مدخل Microsoft 365 Defender" lightbox="images/secconmgmt_asr_m365exlusions.png":::<br>
 علامة ***التبويب "إضافة استثناءات**" في صفحة قواعد تقليل مساحة الهجوم في Microsoft 365 Defender مدخل*
 
 > [!NOTE]
@@ -59,5 +59,5 @@ ms.locfileid: "63570456"
 **المواضيع ذات الصلة**
 
 * [التأكد من تكوين أجهزتك بشكل صحيح](configure-machines.md)
-* [الحصول على الأجهزة المجهزة في Microsoft Defender لنقطة النهاية](configure-machines-onboarding.md)
-* [مراقبة التوافق مع خط أساسي أمان نقطة النهاية ل Microsoft Defender](configure-machines-security-baseline.md)
+* [الحصول على الأجهزة المجهزة Microsoft Defender لنقطة النهاية](configure-machines-onboarding.md)
+* [مراقبة التوافق مع Microsoft Defender لنقطة النهاية الأساسي](configure-machines-security-baseline.md)

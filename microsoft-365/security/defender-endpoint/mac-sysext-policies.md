@@ -1,7 +1,7 @@
 ---
 title: ملفات تعريف التكوين الجديدة ل macOS Catalina والإصدارات الأحدث من macOS
 description: يصف هذا الموضوع التغييرات التي يجب إدخالها للاستفادة من ملحقات النظام، التي تكون بديلا لملحقات kernel على macOS Catalina والإصدارات الأحدث من macOS.
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، mac، kernel، النظام، الملحقات، catalina
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، kernel، النظام، الملحقات، catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,27 +18,27 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0cdf60708e84b0972099330d48f19b22d26766ba
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 53194aac16091b9afd9559b4f372c2d436c198bf
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63570722"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64474696"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>ملفات تعريف التكوين الجديدة ل macOS Catalina والإصدارات الأحدث من macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-بالمحاذاة مع تطور macOS، نقوم بإعداد Microsoft Defender ل Endpoint على تحديث macOS الذي يعتمد ملحقات النظام بدلا من ملحقات kernel. لن ينطبق هذا التحديث إلا على macOS Catalina (10.15.4) والإصدارات الأحدث من macOS.
+في محاذاة مع تطور macOS، نقوم بإعداد Microsoft Defender لنقطة النهاية على تحديث macOS الذي يعتمد ملحقات النظام بدلا من ملحقات kernel. لن ينطبق هذا التحديث إلا على macOS Catalina (10.15.4) والإصدارات الأحدث من macOS.
 
-إذا قمت بنشر Microsoft Defender ل Endpoint على macOS في بيئة مدارة (من خلال JAMF أو Intune أو حل MDM آخر)، فيجب نشر ملفات تعريف تكوين جديدة. يؤدي الفشل في القيام بهذه الخطوات إلى الحصول على المستخدمين لمطالبات الموافقة لتشغيل هذه المكونات الجديدة.
+إذا قمت بنشر Microsoft Defender لنقطة النهاية macOS في بيئة مدارة (من خلال JAMF أو Intune أو حل MDM آخر)، فيجب نشر ملفات تعريف تكوين جديدة. يؤدي الفشل في القيام بهذه الخطوات إلى الحصول على المستخدمين لمطالبات الموافقة لتشغيل هذه المكونات الجديدة.
 
 ## <a name="jamf"></a>JAMF
 
@@ -54,25 +54,25 @@ ms.locfileid: "63570722"
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
 
-    ![لقطة شاشة لملحقات النظام المعتمدة.](images/mac-approved-system-extensions.png)
+    :::image type="content" source="images/mac-approved-system-extensions.png" alt-text=" صفحة ملحقات النظام المعتمدة" lightbox="images/mac-approved-system-extensions.png":::
 
 ### <a name="privacy-preferences-policy-control"></a>التحكم في نهج تفضيلات الخصوصية
 
-أضف تحميل JAMF التالي لمنح "الوصول إلى القرص الكامل" إلى ملحق أمان نقطة نهاية نقطة النهاية ل Microsoft Defender. هذا النهج هو أحد المتطلبات الأساسية لتشغيل الملحق على جهازك.
+أضف تحميل JAMF التالي لمنح "الوصول إلى القرص الكامل" Microsoft Defender لنقطة النهاية "ملحق أمان نقطة النهاية". هذا النهج هو أحد المتطلبات الأساسية لتشغيل الملحق على جهازك.
 
 1. حدد **خيارات التحكم** \> **في نهج تفضيلات الخصوصية**.
 2. استخدم `com.microsoft.wdav.epsext` **كمعرف وكنوع** `Bundle ID` **مجموعة.**
 3. تعيين متطلب التعليمات البرمجية إلى `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 4. تعيين **التطبيق أو الخدمة إلى** **SystemPolicyAllFiles** والوصول إلى **السماح**.
 
-    ![التحكم في نهج تفضيلات الخصوصية.](images/mac-system-extension-privacy.png)
+   :::image type="content" source="images/mac-system-extension-privacy.png" alt-text=" عنصر القائمة &quot;التحكم في نهج تفضيلات الخصوصية&quot;" lightbox="images/mac-system-extension-privacy.png":::
 
 ### <a name="network-extension-policy"></a>نهج ملحق الشبكة
 
-كجزء من قدرات الكشف عن نقاط النهاية والاستجابة لها، يفحص Microsoft Defender ل Endpoint على نظام التشغيل macOS حركة مرور مآخذ التوصيل ويعيد Microsoft 365 Defender المدخل. يسمح النهج التالي لملحق الشبكة بتنفيذ هذه الوظيفة.
+كجزء من قدرات الكشف عن نقاط النهاية والاستجابة، Microsoft Defender لنقطة النهاية macOS على حركة مرور مآخذ التوصيل ويعيد الإبلاغ عن هذه المعلومات Microsoft 365 Defender المدخل. يسمح النهج التالي لملحق الشبكة بتنفيذ هذه الوظيفة.
 
 > [!NOTE]
-> لا تملك JAMF دعما مضمنا لنهج تصفية المحتوى، وهي شرط أساسي لتمكين ملحقات الشبكة التي يثبتها Microsoft Defender ل Endpoint على macOS على الجهاز. علاوة على ذلك، تغير JAMF في بعض الأحيان محتوى السياسات التي يتم نشرها.
+> لا تملك JAMF دعما مضمنا لنهج تصفية المحتوى، وهي شرط أساسي لتمكين تثبيت ملحقات الشبكة Microsoft Defender لنقطة النهاية على macOS على الجهاز. علاوة على ذلك، تغير JAMF في بعض الأحيان محتوى السياسات التي يتم نشرها.
 > وعلى هذا النحو، توفر الخطوات التالية حلا بديل يتضمن توقيع ملف تعريف التكوين.
 
 1. احفظ المحتوى التالي على جهازك باستخدام `com.microsoft.network-extension.mobileconfig` محرر نص:
@@ -193,7 +193,7 @@ ms.locfileid: "63570722"
    |com.microsoft.wdav.netext|UBF8T346G9|
    |||
 
-   ![لقطة شاشة لملفات تعريف تكوين النظام.](images/mac-system-extension-intune2.png)
+   :::image type="content" source="images/mac-system-extension-intune2.png" alt-text=" صفحة ملفات تعريف تكوين النظام" lightbox="images/mac-system-extension-intune2.png":::
 
 5. في علامة `Assignments` التبويب، قم بتعيين ملف التعريف هذا إلى جميع المستخدمين & **كافة الأجهزة**.
 6. راجع ملف تعريف التكوين هذا وأنشئه.
@@ -315,7 +315,7 @@ sysext.xml: OK
 3. افتح ملف تعريف التكوين ثم قم **بتحميل** sysext.xml. تم إنشاء هذا الملف في الخطوة السابقة.
 4. حدد **موافق**.
 
-    ![ملحق النظام في لقطة شاشة Intune.](images/mac-system-extension-intune.png)
+   :::image type="content" source="images/mac-system-extension-intune.png" alt-text=" ملحق النظام في صفحة Intune" lightbox="images/mac-system-extension-intune.png":::
 
 5. في علامة `Assignments` التبويب، قم بتعيين ملف التعريف هذا إلى جميع المستخدمين & **كافة الأجهزة**.
 6. راجع ملف تعريف التكوين هذا وأنشئه.

@@ -11,25 +11,25 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: يمكن للمسؤولين معرفة كيفية إنشاء تحميلات مخصصة لتدريب محاكاة الهجمات في Microsoft Defender Office 365 الخطة 2.
+description: يمكن للمسؤولين معرفة كيفية إنشاء تحميلات مخصصة لتدريب محاكاة الهجمات في Microsoft Defender لـ Office 365 2.
 ms.technology: mdo
-ms.openlocfilehash: d670236aa81f4b5086263a75bbeceb8ca7e1e25f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8aa81a1940e564e9877af6a1848ff439aea58d8e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679753"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468490"
 ---
-# <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>إنشاء تحميلات مخصصة لتدريب محاكاة الهجمات في Defender for Office 365
+# <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>إنشاء تحميلات مخصصة لتدريب محاكاة الهجمات في Defender لـ Office 365
 
-**ينطبق على** [Microsoft Defender Office 365 2](defender-for-office-365.md)
+**ينطبق على Microsoft Defender لـ Office 365** [2](defender-for-office-365.md)
 
-في التدريب على محاكاة الهجمات _، تكون_ الحمولة هي رسالة البريد الإلكتروني التصيد الاحتيالي و صفحات الويب التي يتم تقديمها للمستخدمين في عمليات المحاكاة. يوفر التدريب على محاكاة الهجمات في Microsoft 365 E5 Microsoft Defender for Office 365 الخطة 2 كتالوج تحميل مضمن قوي لتقنيات الهندسة الاجتماعية المتوفرة. ومع ذلك، قد ترغب في إنشاء تحميلات مخصصة تعمل بشكل أفضل لمنظمتك.
+في التدريب على محاكاة الهجمات _، تكون_ الحمولة هي رسالة البريد الإلكتروني التصيد الاحتيالي و صفحات الويب التي يتم تقديمها للمستخدمين في عمليات المحاكاة. يوفر التدريب على محاكاة الهجمات Microsoft 365 E5 أو Microsoft Defender لـ Office 365 الخطة 2 كتالوج تحميل مضمن قوي لتقنيات الهندسة الاجتماعية المتوفرة. ومع ذلك، قد ترغب في إنشاء تحميلات مخصصة تعمل بشكل أفضل لمنظمتك.
 
 تصف هذه المقالة كيفية إنشاء التحميلات الخاصة بك في التدريب على محاكاة الهجمات. يمكنك إنشاء تحميلات مخصصة في المواقع التالية:
 
 - علامة **التبويب تحميلات**: في Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى البريد الإلكتروني & **التدريب** \>  \> على محاكاة الهجمات **على علامة التبويب** تحميلات. الانتقال مباشرة إلى علامة التبويب **تحميلات**، استخدم <https://security.microsoft.com/attacksimulator?viewid=payload>.
-- أثناء إنشاء المحاكاة: يمكنك إنشاء تحميلات مخصصة على الصفحة **تحديد** تحميل (الصفحة الثالثة) من معالج إنشاء المحاكاة. لمزيد من المعلومات، راجع [محاكاة هجوم تصيد احتيالي في Defender for Office 365](attack-simulation-training.md).
+- أثناء إنشاء المحاكاة: يمكنك إنشاء تحميلات مخصصة على الصفحة **تحديد** تحميل (الصفحة الثالثة) من معالج إنشاء المحاكاة. لمزيد من المعلومات، راجع [محاكاة هجوم تصيد احتيالي في Defender لـ Office 365](attack-simulation-training.md).
 
 للحصول على معلومات حول بدء التدريب على محاكاة الهجمات، راجع [بدء استخدام التدريب على محاكاة الهجمات](attack-simulation-training-get-started.md).
 
@@ -147,7 +147,7 @@ ms.locfileid: "63679753"
       - **إدراج اسم**: القيمة المضافة في نص الرسالة هي `${userName}`.
       - **إدراج بريد** إلكتروني: القيمة المضافة في نص الرسالة هي `${emailAddress}`.
 
-      ![قسم رسالة البريد الإلكتروني على الصفحة تكوين التحميل في معالج إنشاء التحميل في التدريب على محاكاة الهجمات في Microsoft Defender Office 365.](../../media/attack-sim-training-payloads-configure-payload-email-message.png)
+      :::image type="content" source="../../media/attack-sim-training-payloads-configure-payload-email-message.png" alt-text="قسم رسالة البريد الإلكتروني على الصفحة تكوين التحميل في معالج إنشاء التحميل في التدريب على محاكاة الهجمات في Microsoft Defender لـ Office 365" lightbox="../../media/attack-sim-training-payloads-configure-payload-email-message.png":::
 
       **عنصر تحكم ارتباط التصيد** الاحتيالي: يتوفر عنصر التحكم هذا فقط إذا قمت بتحديد "تجميع بيانات الاعتماد" أو "ارتباط في مرفق" أو "**عنوان URL** بواسطة محرك الأقراص" على **صفحة "تحديد التقنية**". استخدم عنصر التحكم هذا لإدراج عنوان URL الذي حددته مسبقا في مقطع **ارتباط التصيد** الاحتيالي.
 
@@ -204,7 +204,7 @@ ms.locfileid: "63679753"
 
   إذا حددت موضوع رسالة البريد الإلكتروني أو نص الرسالة كمحدد للمؤشر، يتوفر زر تحديد نص. انقر فوق هذا الزر لتحديد النص في موضوع الرسالة أو النص الأساسي للرسالة حيث تريد ظهور المؤشر. عند الانتهاء، انقر فوق **تحديد**.
 
-  ![موقع النص المحدد في نص الرسالة لإضافة إلى مؤشر في معالج إنشاء التحميل في التدريب على محاكاة الهجمات.](../../media/attack-sim-training-payloads-add-indicators-select-location.png)
+  :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="موقع النص المحدد في نص الرسالة المطلوب إضافته إلى مؤشر في معالج إنشاء التحميل في التدريب على محاكاة الهجمات" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
   - **وصف المؤشر**: يمكنك قبول الوصف الافتراضي للمؤشر، أو يمكنك تخصيصه.
 
@@ -232,7 +232,7 @@ ms.locfileid: "63679753"
 
 عند الانتهاء، انقر فوق **إرسال**. على صفحة التأكيد التي تظهر، انقر فوق **تم**.
 
-![راجع صفحة التحميل في التدريب على محاكاة الهجمات Microsoft 365 Defender المدخل.](../../media/attack-sim-training-payloads-review-payload.png)
+:::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="صفحة مراجعة التحميل في التدريب على محاكاة الهجمات في مدخل Microsoft 365 Defender" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
 
 > [!IMPORTANT]
 > ستحمل الحمولات التي أنشأتها القيمة **Tenant** **للممتلكات المصدر** . عند إنشاء عمليات محاكاة وتحديد تحميلات، تأكد من عدم تصفية مستأجر **القيمة** **المصدر**.

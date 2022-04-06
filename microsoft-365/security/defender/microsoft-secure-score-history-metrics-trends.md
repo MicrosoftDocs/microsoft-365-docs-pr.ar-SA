@@ -1,7 +1,7 @@
 ---
-title: تعقب سجل Microsoft Secure Score و تحقيق الأهداف
-description: احصل على معلومات متعمقة حول النشاط الذي يؤثر على "نقاط Microsoft الآمنة". اكتشف الاتجاهات وحدد الأهداف.
-keywords: نقاط آمنة من microsoft، نقاط آمنة، نقاط آمنة في Office 365، نقاط أمان microsoft، Microsoft 365 Defender مدخل، إجراءات التحسين
+title: تعقب محفوظات نقاط الأمان من Microsoft وتحقيق الأهداف
+description: احصل على رؤى حول النشاط الذي أثر على درجة أمان Microsoft. اكتشف الاتجاهات وحدد الأهداف.
+keywords: نقاط microsoft الآمنة، درجة الأمان، درجة office 365 الآمنة، درجة أمان microsoft، مدخل Microsoft 365 Defender، إجراءات التحسين
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -21,70 +21,70 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d740ab4fb999697edc9ce7c8f662f6d5c6681fdf
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 03a7a070d574ec18a12c3e70d5cef20d2161490b
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500486"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663743"
 ---
-# <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>تعقب سجل Microsoft Secure Score و تحقيق الأهداف
+# <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>تعقب محفوظات نقاط الأمان من Microsoft وتحقيق الأهداف
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Secure Score](microsoft-secure-score.md) هو قياس لوضعية الأمان في المؤسسة، مع رقم أعلى يشير إلى المزيد من إجراءات التحسين التي تم اتخاذها. يمكن العثور عليه في https://security.microsoft.com/securescore مدخل Microsoft 365 Defender[.](microsoft-365-defender.md#the-microsoft-365-defender-portal)
+[Microsoft Secure Score](microsoft-secure-score.md) هو قياس لوضع الأمان للمؤسسة، مع عدد أعلى يشير إلى المزيد من إجراءات التحسين التي تم اتخاذها. يمكن العثور عليه في https://security.microsoft.com/securescore مدخل [Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
-## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>الحصول على معلومات متعمقة حول النشاط الذي يؤثر على نقاطك
+## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>اكتساب رؤى حول النشاط الذي أثر على درجاتك
 
-عرض رسم بياني لسجلات مؤسستك مع مرور الوقت في علامة **التبويب** محفوظات.
+اعرض رسما بيانيا لنتيجة مؤسستك بمرور الوقت في علامة التبويب « **History** ».
 
-يوجد أسفل الرسم البياني قائمة بكل الإجراءات التي تم اتخاذها في النطاق الزمني المحدد وسماتها، مثل النقاط والفئة الناتجة. يمكنك تخصيص نطاق تاريخ وتصفية حسب الفئة.
+أسفل الرسم البياني توجد قائمة بجميع الإجراءات المتخذة في النطاق الزمني المحدد وسماتها، مثل النقاط والفئة الناتجة. يمكنك تخصيص نطاق تاريخ والتصفية حسب الفئة.
 
 :::image type="content" source="../../media/secure-score/secure-score-history-activity.png" alt-text="مثال على الصفحة التي تصف محفوظات النشاط في مدخل Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-history-activity.png":::
 
-إذا قمت بتحديد إجراء التحسين المقترن بنشاط ما، ستظهر القائمة من القائمة المن القائمة من القائمة flyout الكاملة للتحسين.
+إذا حددت إجراء التحسين المقترن بنشاط ما، فستظهر القائمة المنبثقة لإجراء التحسين الكامل.
 
-لعرض كل المحفوظات الخاصة ب إجراء التحسين المحدد هذا، حدد ارتباط المحفوظات في flyout.
+لعرض كافة المحفوظات لإجراء التحسين المحدد هذا، حدد ارتباط المحفوظات في القائمة المنبثقة.
 
-:::image type="content" source="../../media/secure-score/secure-score-history-flyout.png" alt-text="جزء المحفوظات المتعلق بعمل التحسين في مدخل Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-history-flyout.png":::
+:::image type="content" source="../../media/secure-score/secure-score-history-flyout.png" alt-text="جزء المحفوظات فيما يتعلق بإجراء التحسين في مدخل Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-history-flyout.png":::
 
-## <a name="discover-trends-and-set-goals"></a>اكتشاف الاتجاهات وحدد الأهداف
+## <a name="discover-trends-and-set-goals"></a>اكتشاف الاتجاهات وتعيين الأهداف
 
-في علامة **التبويب المقاييس &** الاتجاهات، هناك العديد من الرسوم البيانية والمخططات لتمنحك رؤية أكثر في الاتجاهات والأهداف المحددة. يمكنك تعيين نطاق التاريخ للصفحة الكاملة للمرئيات. تتضمن المرئيات:
+في علامة التبويب **"Metrics & trends** "، هناك العديد من الرسوم البيانية والمخططات لمنحك رؤية أكثر للاتجاهات وتعيين الأهداف. يمكنك تعيين نطاق التاريخ للصفحة بأكملها من المرئيات. تتضمن المرئيات ما يلي:
 
-* **منطقة "نقاط آمنة** " الخاصة بك - مخصصة استنادا إلى أهداف المؤسسة وتعريفات نطاقات النقاط الجيدة، أو الجيدة، أو غير الصالحة.
-* **اتجاه الانحدار** - مخطط زمني للنقاط التي تم انحدارها بسبب تغييرات التكوين أو المستخدم أو الجهاز.  
-* **اتجاه المقارنة** - كيفية مقارنة "نقاط آمنة" في مؤسستك مع الآخرين مع مرور الوقت. يمكن أن تتضمن طريقة العرض هذه خطوطا تمثل متوسط نقاط المؤسسات ذات عدد مقاعد مماثل وعرض مقارنة مخصص يمكنك تعيينه.
-* **اتجاه قبول المخاطر** - مخطط زمني لتنفيذ إجراءات التحسين تم وضع علامة عليه على أنه "تم قبول المخاطر".
-* **تغييرات الدرجات** - عدد النقاط التي تم تحقيقها والنقاط التي تم تراجعها والتغييرات التي تم إدخالها على نقاطك في نطاق التاريخ المحدد.
+* **منطقة النقاط الآمنة الخاصة بك** - مخصصة استنادا إلى أهداف مؤسستك وتعريفة نطاقات نقاط جيدة وجيدة وسيئة.
+* **اتجاه الانحدار** - مخطط زمني للنقاط التي انحدار بسبب تغييرات التكوين أو المستخدم أو الجهاز.  
+* **اتجاه المقارنة** - كيفية مقارنة نقاط الأمان لمؤسستك مع نقاط الآخرين بمرور الوقت. يمكن أن تتضمن طريقة العرض هذه خطوطا تمثل متوسط درجة المؤسسات ذات عدد مقاعد مماثل وعرض مقارنة مخصص يمكنك تعيينه.
+* **اتجاه قبول المخاطر** - تم وضع علامة "قبول المخاطرة" على المخطط الزمني لإجراءات التحسين.
+* **نقاط التغييرات** - عدد النقاط التي تم تحقيقها، والنقاط المتراجعة، والتغييرات على درجاتك في نطاق التاريخ المحدد.
 
-### <a name="compare-your-score-to-organizations-like-yours"></a>مقارنة نقاطك بمنظمات مثل مؤسستك
+### <a name="compare-your-score-to-organizations-like-yours"></a>مقارنة درجاتك بالمنظمات مثل مؤسستك
 
-هناك مكانان لمعرفة كيفية مقارنة نقاطك مع المؤسسات المشابهة لسجلاتك.
+هناك مكانان لمعرفة كيفية مقارنة درجاتك بالمنظمات المشابهة لدرجتك.
 
-#### <a name="comparison-bar-chart"></a>مخطط شريطي مقارنة
+#### <a name="comparison-bar-chart"></a>مخطط شريطي للمقارنة
 
-يتوفر مخطط المقارنة الشريطي على علامة التبويب **نظرة** عامة. مرر فوق المخطط لعرض فرصة النتيجة والنتيجة. 
+يتوفر المخطط الشريطي للمقارنة على علامة التبويب **"نظرة عامة** ". مرر مؤشر الماوس فوق المخطط لعرض فرصة النقاط والنتيجة. 
 
-:::image type="content" source="../../media/secure-score/secure-score-comparison-bar.png" alt-text="مثال على الرسم البياني الشريطي لعشرات المؤسسات المماثلة في مدخل Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-comparison-bar.png":::
+:::image type="content" source="../../media/secure-score/secure-score-comparison-bar.png" alt-text="مثال على الرسم البياني الشريطي لدرجات المؤسسة المتشابهة في مدخل Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-comparison-bar.png":::
 
-يتم إخفاء هوية بيانات المقارنة حتى لا نعرف بالضبط المستأجرين الآخرين في هذا الخلط.
+يتم إخفاء هوية بيانات المقارنة حتى لا نعرف بالضبط المستأجرين الآخرين في هذا المزيج.
 
-![رسم بياني شريطي لحرز نتائج مماثلة في المؤسسة.](../../media/secure-score/secure-score-comparison-screenshot.png)
+![رسم بياني شريطي لدرجات المؤسسة المماثلة.](../../media/secure-score/secure-score-comparison-screenshot.png)
 
 #### <a name="comparison-trend"></a>اتجاه المقارنة
 
-في علامة **التبويب المقاييس & الاتجاهات** ، يمكنك عرض كيفية مقارنة "نقاط آمنة" في مؤسستك مع الآخرين مع مرور الوقت.
+في علامة التبويب **"Metrics & trends** "، اعرض كيف تقارن درجة الأمان الخاصة بمؤسستك ب "نقاط الأمان" الخاصة بالمؤسسات بمرور الوقت.
 
-:::image type="content" source="../../media/secure-score/secure-score-comparison-trend.png" alt-text="مثال على رسم بياني لخط نقاط مؤسسة مماثلة مع مرور الوقت في Microsoft 365 Defender المدخل" lightbox="../../media/secure-score/secure-score-comparison-trend.png":::
+:::image type="content" source="../../media/secure-score/secure-score-comparison-trend.png" alt-text="مثال على رسم بياني خطي لدرجات المؤسسة المتشابهة بمرور الوقت في مدخل Microsoft 365 Defender" lightbox="../../media/secure-score/secure-score-comparison-trend.png":::
 
-## <a name="we-want-to-hear-from-you"></a>نريد أن نستمع منك
+## <a name="we-want-to-hear-from-you"></a>نريد أن نستمع إليك
 
-إذا كانت لديك أي مشاكل، فأعلمنا بذلك من خلال النشر في مجتمع الأمان [والخصوصية & التوافق](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . نحن نراقب المجتمع وسنوفر المساعدة.
+إذا كان لديك أي مشاكل، فقم بإعلامنا من خلال النشر في مجتمع [الأمان والخصوصية & التوافق](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . نحن نراقب المجتمع وسنقدم المساعدة.
 
 ## <a name="related-resources"></a>الموارد ذات الصلة
 
-- [نظرة عامة حول Microsoft Secure Score](microsoft-secure-score.md)
+- [نظرة عامة على نقاط الأمان من Microsoft](microsoft-secure-score.md)
 - [تقييم وضعية الأمان](microsoft-secure-score-improvement-actions.md)
-- [ما هو قادم](microsoft-secure-score-whats-coming.md)
-- [ما الجديد](microsoft-secure-score-whats-new.md)
+- [ما الجديد](microsoft-secure-score-whats-coming.md)
+- [أحدث الميزات](microsoft-secure-score-whats-new.md)

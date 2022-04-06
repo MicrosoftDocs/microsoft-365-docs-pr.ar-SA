@@ -1,7 +1,7 @@
 ---
 title: كيفية جدولة عمليات الفحص باستخدام Microsoft Defender لنقطة النهاية (Linux)
 description: تعرف على كيفية جدولة وقت فحص تلقائي Microsoft Defender لنقطة النهاية (Linux) لحماية أصول مؤسستك بشكل أفضل.
-keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، linux، المسح الضوئي، برنامج الحماية من الفيروسات، microsoft defender لنقطة النهاية (linux)
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، linux، عمليات الفحص، مكافحة الفيروسات، microsoft Defender لنقطة النهاية (linux)
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,28 +14,28 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 05e8fccc200b39a606fa67a857631e215c8d4b1c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 706284ed0adf49c4da6357b6bb8217d5a14268e1
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467610"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64663479"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>جدولة عمليات الفحص باستخدام Microsoft Defender لنقطة النهاية (Linux)
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-لتشغيل فحص ل Linux، راجع [الأوامر المعتمدة](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
+لتشغيل فحص لنظام Linux، راجع [الأوامر المدعومة](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
 
-لدى Linux (و Unix) أداة تسمى **crontab** (مماثلة لجدول المهام) لكي تتمكن من تشغيل المهام المجدولة.
+لدى Linux (و Unix) أداة تسمى **crontab** (مشابهة لمجدول المهام) لتكون قادرة على تشغيل المهام المجدولة.
 
 ## <a name="pre-requisite"></a>المتطلبات الأساسية
 
 > [!NOTE]
-> للحصول على قائمة بكل المناطق الزمنية، يمكنك تشغيل الأمر التالي: `timedatectl list-timezones`<br>
-> أمثلة عن المنطقة الزمنية:
+> للحصول على قائمة بجميع المناطق الزمنية، قم بتشغيل الأمر التالي: `timedatectl list-timezones`<br>
+> أمثلة على المناطق الزمنية:
 >
 > - `America/Los_Angeles`
 > - `America/New_York`
@@ -46,19 +46,19 @@ ms.locfileid: "64467610"
 
 استخدم الأوامر التالية:
 
-### <a name="backup-crontab-entries"></a>إدخالات الكرونتاب الاحتياطية
+### <a name="backup-crontab-entries"></a>إدخالات crontab احتياطية
 
 ```bash
 sudo crontab -l > /var/tmp/cron_backup_200919.dat
 ```
 
 > [!NOTE]
-> أين 200919 == YRMMDD
+> حيث 200919 == YRMMDD
 
 > [!TIP]
 > قم بذلك قبل التحرير أو الإزالة.
 
-لتحرير الماكرونتاب، وإضافة مهمة جديدة كمستخدم جذر:
+لتحرير الجدول، وإضافة مهمة جديدة كمستخدم جذر:
 
 ```bash
 sudo crontab -e
@@ -84,7 +84,7 @@ CRON_TZ=America/Los_Angeles
 ```
 
 > [!NOTE]
-> في هذا المثال، قمنا بتعيينه إلى 00 دقيقة، 2 صباحا. (الساعة بتنسيق 24 ساعة)، أي يوم من الشهر، أي شهر، في أيام السبت. مما يعني أنه سيتم تشغيل أيام السبت الساعة 2:00 صباحا. Pacific (UTC -8).
+> في هذا المثال، قمنا بتعيينه إلى 00 دقيقة، 2 ص. (الساعة بتنسيق 24 ساعة)، أي يوم من الشهر، أي شهر، في أيام السبت. مما يعني أنه سيتم تشغيله يوم السبت في الساعة 2:00 ص. المحيط الهادئ (UTC -8).
 
 اضغط على "Esc"
 
@@ -97,7 +97,7 @@ CRON_TZ=America/Los_Angeles
 
 :::image type="content" source="../../media/linux-mdatp-1.png" alt-text="صفحة linux mdatp" lightbox="../../media/linux-mdatp-1.png":::
 
-#### <a name="to-inspect-cron-job-runs"></a>لفحص تشغيل وظيفة كرون
+#### <a name="to-inspect-cron-job-runs"></a>لفحص تشغيل مهمة cron
 
 ```bash
 sudo grep mdatp /var/log/cron
@@ -109,7 +109,7 @@ sudo grep mdatp /var/log/cron
 sudo nano mdatp_cron_job.log
 ```
 
-## <a name="for-those-who-use-ansible-chef-or-puppet"></a>بالنسبة لهؤلاء الذين يستخدمون Ansible أو Chef أو
+## <a name="for-those-who-use-ansible-chef-or-puppet"></a>لأولئك الذين يستخدمون Ansible أو Chef أو Puppet
 
 استخدم الأوامر التالية:
 
@@ -127,19 +127,19 @@ cron resource
 ```bash
 
 ```
-راجع <https://docs.chef.io/resources/cron/> لمزيد من المعلومات.
+لمزيد <https://docs.chef.io/resources/cron/> من المعلومات.
 
-### <a name="to-set-cron-jobs-in-puppet"></a>لتعيين مهام cron في "مهى"
+### <a name="to-set-cron-jobs-in-puppet"></a>لتعيين مهام cron في Puppet
 
 ```bash
 Resource Type: cron
 ```
 
-راجع <https://puppet.com/docs/puppet/5.5/types/cron.html> لمزيد من المعلومات.
+لمزيد <https://puppet.com/docs/puppet/5.5/types/cron.html> من المعلومات.
 
-الأتمتة مع "نظام التشغيل": مهام Cron والمهام المجدولة
+الأتمتة باستخدام Puppet: مهام Cron والمهام المجدولة
 
-راجع [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) لمزيد من المعلومات.
+لمزيد [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) من المعلومات.
 
 ## <a name="additional-information"></a>معلومات إضافية
 
@@ -149,19 +149,19 @@ Resource Type: cron
 man crontab
 ```
 
-### <a name="to-get-a-list-of-crontab-file-of-the-current-user"></a>للحصول على قائمة ملف crontab للمستخدم الحالي
+### <a name="to-get-a-list-of-crontab-file-of-the-current-user"></a>للحصول على قائمة بالملف الجدولي للمستخدم الحالي
 
 ```bash
 crontab -l
 ```
 
-### <a name="to-get-a-list-of-crontab-file-of-another-user"></a>للحصول على قائمة ملف crontab لمستخدم آخر
+### <a name="to-get-a-list-of-crontab-file-of-another-user"></a>للحصول على قائمة بملف جدولي لمستخدم آخر
 
 ```bash
 crontab -u username -l
 ```
 
-### <a name="to-backup-crontab-entries"></a>لنسخ إدخالات crontab احتياطيا
+### <a name="to-backup-crontab-entries"></a>للنسخ الاحتياطي للإدخالات الجدولية
 
 ```bash
 crontab -l > /var/tmp/cron_backup.dat
@@ -170,47 +170,47 @@ crontab -l > /var/tmp/cron_backup.dat
 > [!TIP]
 > قم بذلك قبل التحرير أو الإزالة.
 
-### <a name="to-restore-crontab-entries"></a>لاستعادة إدخالات الكرونتاب
+### <a name="to-restore-crontab-entries"></a>لاستعادة الإدخالات الجدولية
 
 ```bash
 crontab /var/tmp/cron_backup.dat
 ```
 
-### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>لتحرير الكرونتاب وإضافة مهمة جديدة كمستخدم جذر
+### <a name="to-edit-the-crontab-and-add-a-new-job-as-a-root-user"></a>لتحرير crontab وإضافة مهمة جديدة كمستخدم جذر
 
 ```bash
 sudo crontab -e
 ```
 
-### <a name="to-edit-the-crontab-and-add-a-new-job"></a>لتحرير الكرونتاب وإضافة مهمة جديدة
+### <a name="to-edit-the-crontab-and-add-a-new-job"></a>لتحرير crontab وإضافة مهمة جديدة
 
 ```bash
 crontab -e
 ```
 
-### <a name="to-edit-other-users-crontab-entries"></a>لتحرير إدخالات crontab الخاصة ب مستخدم آخر
+### <a name="to-edit-other-users-crontab-entries"></a>لتحرير إدخالات crontab الخاصة بالمستخدم الآخر
 
 ```bash
 crontab -u username -e
 ```
 
-### <a name="to-remove-all-crontab-entries"></a>لإزالة كل إدخالات crontab
+### <a name="to-remove-all-crontab-entries"></a>لإزالة كافة الإدخالات الجدولية
 
 ```bash
 crontab -r
 ```
 
-### <a name="to-remove-other-users-crontab-entries"></a>لإزالة إدخالات crontab الخاصة ب مستخدم آخر
+### <a name="to-remove-other-users-crontab-entries"></a>لإزالة إدخالات crontab الخاصة بالمستخدم الآخر
 
 ```bash
 crontab -u username -r
 ```
 
-### <a name="explanation"></a>شرح
+### <a name="explanation"></a>تفسير
 
-+—————- دقيقة (قيم: 0 - 59) (أحرف خاصة: ، - * /)  <br>
-| +————- (قيم: 0 - 23) (أحرف خاصة: ، - * /) <br>
-| | +———- من الشهر (قيم: 1 - 31) (أحرف خاصة: ، - * / L W C)  <br>
-| | | +——- شهر (قيم: 1 - 12) (أحرف خاصة: ,- * / )  <br>
-| | | | +—- يوم من الأسبوع (القيم: 0 - 6) (الأحد=0 أو 7) (أحرف خاصة: ، - * / L W C) <br>
-| | | | | الأمر *****لتنفيذه
++—————- دقيقة (القيم: 0 - 59) (الأحرف الخاصة: ، \- \* /)  <br>
+| +————- ساعة (القيم: 0 - 23) (الأحرف الخاصة: ، \- \* /) <br>
+| | +———- يوم من الشهر (القيم: 1 - 31) (الأحرف الخاصة: ، \- \* / L W C)  <br>
+| | | +——- شهر (القيم: 1 - 12) (الأحرف الخاصة: ، \- \* / )  <br>
+| | | | +—- يوم من الأسبوع (القيم: 0 - 6) (الأحد=0 أو 7) (الأحرف الخاصة: ، \- \* / L W C) <br>
+| | | | |****الأمر المطلوب تنفيذه

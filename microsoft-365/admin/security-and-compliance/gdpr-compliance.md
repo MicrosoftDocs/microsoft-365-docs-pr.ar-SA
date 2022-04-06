@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: تعرف على Microsoft 365 يمكن أن يساعدك Microsoft 365 للأعمال في عملية القانون العام لحماية البيانات (GDPR).
-ms.openlocfilehash: 7c8a2c402e362ede4eb9b2f4ec221dd8556052db
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
+ms.openlocfilehash: d5c24fe2f2295e99798fcc5382dc284cec01d385
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403622"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632394"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>GDPR مبسط: دليل للشركات الصغيرة
 
@@ -134,7 +134,7 @@ ms.locfileid: "64403622"
 
 #### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365 الميزات التي يمكن أن تساعدك
 
-يمكنك استخدام ["إعداد ميزات التوافق"](set-up-compliance.md) للمساعدة في حماية المعلومات الحساسة الخاصة بأعمالك. يمكن أن تساعدك إدارة التوافق على بدء العمل على الفور! على سبيل المثال، يمكنك [إعداد نهج DLP](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) يستخدم قالب [GDPR](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
+يمكنك استخدام ["إعداد ميزات التوافق"](../../business-premium/m365bp-set-up-compliance.md) للمساعدة في حماية المعلومات الحساسة الخاصة بأعمالك. يمكن أن تساعدك إدارة التوافق على بدء العمل على الفور! على سبيل المثال، يمكنك [إعداد نهج DLP](/microsoft-365/compliance/create-a-dlp-policy-from-a-template) يستخدم قالب [GDPR](/microsoft-365/compliance/what-the-dlp-policy-templates-include#general-data-protection-regulation-gdpr).
 
 ### <a name="step-5-keep-documentation-on-your-data-processing-activities"></a>الخطوة 5: الاحتفاظ بالوثائق المتعلقة بأنشطة معالجة البيانات
 

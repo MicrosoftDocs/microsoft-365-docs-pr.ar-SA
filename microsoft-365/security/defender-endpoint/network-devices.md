@@ -17,19 +17,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2affbe19484348a511487930d034da6799ca348c
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: f6092800de89ebfdeed35230b1ade296e0396a85
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "63579540"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468766"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>اكتشاف جهاز الشبكة إدارة الثغرات الأمنية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [التهديدات إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,13 +40,13 @@ ms.locfileid: "63579540"
 
 تتوفر إمكانات اكتشاف الشبكة في قسم مخزون الجهاز  في Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> التحكم.
 
-سيتم استخدام جهاز Microsoft Defender المعين لنقطة النهاية على كل مقطع شبكة لإجراء عمليات فحص دورية مصدق عليها من أجهزة الشبكة التي تم تكوينها مسبقا. بمجرد اكتشافها، توفر قدرات إدارة المخاطر والثغرات الأمنية Defender ل Endpoint مهام سير عمل متكاملة لتأمين مفاتيح التبديل والموجهات ووحدات تحكم WLAN وجدران الحماية وبوابات VPN التي تم اكتشافها.
+سيتم استخدام Microsoft Defender لنقطة النهاية معين على كل مقطع شبكة لإجراء عمليات فحص دورية مصدق عليها من أجهزة الشبكة التي تم تكوينها مسبقا. بمجرد اكتشافها، توفر قدرات إدارة المخاطر والثغرات الأمنية Defender ل Endpoint مهام سير عمل متكاملة لتأمين مفاتيح التبديل والموجهات ووحدات تحكم WLAN وجدران الحماية وبوابات VPN التي تم اكتشافها.
 
 بعد اكتشاف أجهزة الشبكة وتصنيفها، سيكون بمقدور مسؤولي الأمان تلقي أحدث توصيات الأمان ومراجعة نقاط الضعف التي تم اكتشافها مؤخرا على أجهزة الشبكة التي تم نشرها عبر مؤسساتهم.
 
 ## <a name="approach"></a>النهج
 
-لا يتم إدارة أجهزة الشبكة كنقاط نهاية قياسية نظرا لأن Defender for Endpoint لا يوجد به مستشعر مضمن في أجهزة الشبكة نفسها. تتطلب هذه الأنواع من الأجهزة نهجا بدون وكيل حيث سيحصل الفحص عن بعد على المعلومات الضرورية من الأجهزة. استنادا إلى طبولوجيا الشبكة وخصائصها، يقوم جهاز واحد أو عدد قليل من الأجهزة المجهزة في Microsoft Defender ل Endpoint بإجراء عمليات فحص مصدق عليها من أجهزة الشبكة باستخدام SNMP (للقراءة فقط).
+لا يتم إدارة أجهزة الشبكة كنقاط نهاية قياسية نظرا لأن Defender for Endpoint لا يوجد به مستشعر مضمن في أجهزة الشبكة نفسها. تتطلب هذه الأنواع من الأجهزة نهجا بدون وكيل حيث سيحصل الفحص عن بعد على المعلومات الضرورية من الأجهزة. استنادا إلى طبولوجيا الشبكة وخصائصها، يقوم جهاز واحد أو بعض الأجهزة المجهزة في Microsoft Defender لنقطة النهاية بإجراء عمليات فحص مصدق عليها من أجهزة الشبكة باستخدام SNMP (للقراءة فقط).
 
 سيكون هناك نوعان من الأجهزة يجب تذكرها:
 
@@ -108,7 +108,7 @@ ms.locfileid: "63579540"
 2. قم بتنزيل الماسح الضوئي للشبكة وتثبيته على جهاز تقييم Defender لنقطة النهاية المعين.
 
     > [!div class="mx-imgBorder"]
-    > ![زر تنزيل الماسح الضوئي.](images/assessment-jobs-download-scanner.png)
+    > :::image type="content" source="images/assessment-jobs-download-scanner.png" alt-text="الزر &quot;تنزيل الماسح الضوئي&quot;" lightbox="images/assessment-jobs-download-scanner.png":::
 
 ## <a name="network-scanner-installation--registration"></a>تثبيت الماسح الضوئي للشبكة & التسجيل
 
@@ -132,7 +132,7 @@ ms.locfileid: "63579540"
 لمنع تكرار الأجهزة في مخزون أجهزة الشبكة، تأكد من تكوين كل عنوان IP مرة واحدة فقط عبر أجهزة تقييم متعددة.
 
 > [!div class="mx-imgBorder"]
-> ![الزر "إضافة مهمة تقييم الشبكة".](images/assessment-jobs-add.png)
+> :::image type="content" source="images/assessment-jobs-add.png" alt-text="الزر &quot;إضافة مهمة تقييم الشبكة&quot;" lightbox="images/assessment-jobs-add.png":::
 
 إضافة خطوات مهمة تقييم الشبكة:
 
@@ -162,7 +162,7 @@ ms.locfileid: "63579540"
 سيتم عرض الأجهزة التي تم اكتشافها حديثا ضمن علامة التبويب أجهزة **الشبكة** الجديدة في **صفحة مخزون** الجهاز. قد يستغرق الأمر ما يصل إلى ساعتين بعد إضافة مهمة تقييم حتى يتم تحديث الأجهزة.
 
 > [!div class="mx-imgBorder"]
-> ![قسم أجهزة الشبكة في مخزون الجهاز.](images/assessment-jobs-device-inventory.png)
+> :::image type="content" source="images/assessment-jobs-device-inventory.png" alt-text="المقطع &quot;أجهزة الشبكة&quot; في مخزون الجهاز" lightbox="images/assessment-jobs-device-inventory.png":::
 
 ## <a name="troubleshooting"></a>استكشاف الأخطاء وإصلاحها
 

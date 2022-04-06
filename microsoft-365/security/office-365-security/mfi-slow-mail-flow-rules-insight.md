@@ -16,12 +16,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على كيفية استخدام معلومات إصلاح قواعد تدفق البريد البطيئة في مركز التوافق & الأمان لتحديد قواعد تدفق البريد غير الفعالة أو المعطلة (المعروفة أيضا بقواعد النقل) وإصلاحها في مؤسساتهم.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af6d727f84cdaaed1b7f7558313ac7d080a13c93
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 30dda2b890df9f33fbc9af04b5821fb24593a335
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681513"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468380"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>إصلاح بطء معرفة قواعد تدفق البريد في مركز & الأمان
 
@@ -29,7 +29,7 @@ ms.locfileid: "63681513"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 قد تؤدي قواعد تدفق البريد غير الفعالة (المعروفة أيضا بقواعد النقل) إلى حدوث تأخيرات في تدفق البريد لمنظمتك. تقدم هذه النظرة المتعمقة تقارير حول قواعد تدفق البريد التي تؤثر على تدفق البريد في مؤسستك. تتضمن أمثلة هذه الأنواع من القواعد ما يلي:
@@ -44,7 +44,7 @@ ms.locfileid: "63681513"
 
 يمكنك استخدام هذا الإعلام لمساعدتك على تحديد قواعد تدفق البريد وضبطها للمساعدة في تقليل تأخيرات تدفق البريد.
 
-![إصلاح بطء معرفة قواعد تدفق البريد في المنطقة المستحسنة من لوحة معلومات تدفق البريد.](../../media/mfi-fix-slow-mail-flow-rules.png)
+:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules.png" alt-text="نظرة ثاقبة حول إصلاح قواعد تدفق البريد البطيئة في المنطقة المستحسنة لك في لوحة معلومات تدفق البريد" lightbox="../../media/mfi-fix-slow-mail-flow-rules.png":::
 
 عندما **تنقر فوق عرض التفاصيل على** عنصر واجهة المستخدم، تظهر عنصر منقط مع مزيد من المعلومات:
 
@@ -53,7 +53,7 @@ ms.locfileid: "63681513"
 - **متوسط الوقت المنفق على كل رسالة**
 - **الوقت الوسطي المنقضي على رسالة**: القيمة المتوسطة التي تفصل النصف العلوي عن النصف السفلي من بيانات الوقت.
 
-![القائمة من خلال القائمة من القائمة المنافقة لالتفاصيل التي تظهر بعد النقر فوق عرض التفاصيل في تصحيح بطء تدفق البريد.](../../media/mfi-fix-slow-mail-flow-rules-details.png)
+:::image type="content" source="../../media/mfi-fix-slow-mail-flow-rules-details.png" alt-text="القائمة flyout Details التي تظهر بعد النقر فوق عرض التفاصيل على القائمة الدقيقة إصلاح قواعد تدفق البريد البطيئة" lightbox="../../media/mfi-fix-slow-mail-flow-rules-details.png":::
 
 لمزيد من المعلومات حول الشروط والاستثناءات في قواعد تدفق البريد، راجع شروط قاعدة [تدفق البريد والاستثناءات (الشروط](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)) في Exchange Online.
 

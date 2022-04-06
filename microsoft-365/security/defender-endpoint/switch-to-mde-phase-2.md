@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 11/30/2021
+ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 79c56345177b84cd6acbfa6c9a694ab56bc76c1c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5dd5c78c366a708104b4662be86d71056d6a726a
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466642"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632700"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>التبديل إلى Microsoft Defender لنقطة النهاية - المرحلة 2: الإعداد
 
@@ -35,7 +35,7 @@ ms.locfileid: "64466642"
 - [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![المرحلة 1: التحضير.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[المرحلة 1: التحضير](switch-to-mde-phase-1.md)|![المرحلة 2: إعداد.](images/phase-diagrams/setup.png#lightbox)<br/>المرحلة الثانية: إعداد|[![المرحلة 3: Onboard3.](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[المرحلة 3: Onboard](switch-to-mde-phase-3.md)|
+|[![المرحلة 1: التحضير.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[المرحلة 1: التحضير](switch-to-mde-phase-1.md)|![المرحلة 2: إعداد.](images/phase-diagrams/setup.png#lightbox)<br/>المرحلة 2: إعداد|[![المرحلة 3: Onboard3.](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[المرحلة 3: التجهيز للاستخدام](switch-to-mde-phase-3.md)|
 |---|---|---|
 ||*أنت هنا!*||
 
@@ -52,34 +52,14 @@ ms.locfileid: "64466642"
 في إصدارات معينة من Windows، برنامج الحماية من الفيروسات من Microsoft Defender إلغاء تثبيته أو تعطيله عند تثبيت حل مكافحة الفيروسات/مكافحة البرامج الضارة غير التابع ل Microsoft. عندما يتم Windows نقاط النهاية قيد التشغيل إلى Defender for Endpoint، برنامج الحماية من الفيروسات من Microsoft Defender تشغيلها في الوضع السلبي إلى جانب حل برنامج الحماية من الفيروسات غير Microsoft. لمعرفة المزيد، راجع [الحماية من الفيروسات باستخدام Defender ل Endpoint](microsoft-defender-antivirus-compatibility.md#antivirus-protection-without-defender-for-endpoint).
 
 بينما تقوم بالتبديل إلى Defender for Endpoint، قد تحتاج إلى اتخاذ خطوات معينة لإعادة تثبيت أو تمكين برنامج الحماية من الفيروسات من Microsoft Defender. يصف الجدول التالي ما يجب فعله على العملاء Windows الخوادم.
-<br/> <br/>
 
 |نوع نقطة النهاية|ما يجب فعله|
 |---|---|
-|Windows العملاء (مثل نقاط النهاية التي يتم تشغيلها Windows 10 Windows 11)|بشكل عام، لا تحتاج إلى اتخاذ أي إجراء للعملاء Windows (ما لم برنامج الحماية من الفيروسات من Microsoft Defender تثبيت). إليك السبب: <br/><br/> برنامج الحماية من الفيروسات من Microsoft Defender أن يكون مثبتا، ولكن من المرجح أن يكون معطلا في هذه المرحلة من عملية الترحيل. <br/><br/> عند تثبيت حل مكافحة الفيروسات/مكافحة البرامج الضارة من Microsoft ولم يتم بعد إعادة تشغيل العملاء في Defender for Endpoint، يتم تعطيل برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا. <br/><br/> في وقت لاحق، عندما يتم تشغيل نقاط نهاية العميل في Defender for Endpoint، إذا كانت نقاط النهاية هذه تقوم بتشغيل حل برنامج الحماية من الفيروسات غير Microsoft، برنامج الحماية من الفيروسات من Microsoft Defender وضع غير سلبي. <br/><br/> إذا تم إلغاء تثبيت حل الحماية من الفيروسات غير التابع ل Microsoft، برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع النشط تلقائيا.|
-|Windows الخادمة|على Windows Server، ستحتاج إلى إعادة تثبيت برنامج الحماية من الفيروسات من Microsoft Defender، ثم تعيينه إلى الوضع السلبي يدويا. على Windows، عند تثبيت برنامج مكافحة الفيروسات/مكافحة البرامج الضارة من Microsoft، برنامج الحماية من الفيروسات من Microsoft Defender إلى جانب حل مكافحة الفيروسات غير Microsoft. في هذه الحالات، يتم برنامج الحماية من الفيروسات من Microsoft Defender أو إلغاء تثبيته يدويا. <br/><br/> لإعادة تثبيت أو تمكين برنامج الحماية من الفيروسات من Microsoft Defender على Windows الخادم، يمكنك تنفيذ المهام التالية: <br/>- [تعيين DisableAntiSpyware إلى false على Windows Server](#set-disableantispyware-to-false-on-windows-server) (إذا لزم الأمر فقط)<br/>- [إعادة تثبيت برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server 2016](#re-enable-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [إعادة تثبيت برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server أو الإصدار 1803 أو إصدار أحدث](#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي على Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>إذا كنت تواجه مشاكل في إعادة تثبيت أو إعادة تمكين برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server، فشاهد استكشاف الأخطاء وإصلاحها: برنامج الحماية من الفيروسات من Microsoft Defender يتم إلغاء [تثبيتها Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
+|Windows العملاء (مثل نقاط النهاية التي يتم تشغيلها Windows 10 Windows 11)|بشكل عام، لا تحتاج إلى اتخاذ أي إجراء للعملاء Windows (ما لم برنامج الحماية من الفيروسات من Microsoft Defender تثبيت). بشكل عام برنامج الحماية من الفيروسات من Microsoft Defender يجب أن يكون مثبتا، ولكن من المرجح أن يكون معطلا في هذه المرحلة من عملية الترحيل. <br/><br/> عند تثبيت حل مكافحة الفيروسات/مكافحة البرامج الضارة من Microsoft ولم يتم بعد إعادة تشغيل العملاء في Defender for Endpoint، يتم تعطيل برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا. في وقت لاحق، عندما يتم تشغيل نقاط نهاية العميل في Defender for Endpoint، إذا كانت نقاط النهاية هذه تقوم بتشغيل حل برنامج الحماية من الفيروسات غير Microsoft، برنامج الحماية من الفيروسات من Microsoft Defender وضع غير سلبي. <br/><br/> إذا تم إلغاء تثبيت حل الحماية من الفيروسات غير التابع ل Microsoft، برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع النشط تلقائيا.|
+|Windows الخادمة|على Windows Server، ستحتاج إلى إعادة تثبيت برنامج الحماية من الفيروسات من Microsoft Defender، ثم تعيينه إلى الوضع السلبي يدويا. على Windows، عند تثبيت برنامج مكافحة الفيروسات/مكافحة البرامج الضارة من Microsoft، برنامج الحماية من الفيروسات من Microsoft Defender إلى جانب حل مكافحة الفيروسات غير Microsoft. في هذه الحالات، يتم برنامج الحماية من الفيروسات من Microsoft Defender أو إلغاء تثبيته يدويا. <br/><br/> لإعادة تثبيت أو تمكين برنامج الحماية من الفيروسات من Microsoft Defender على Windows الخادم، يمكنك تنفيذ المهام التالية: <br/>- [إعادة تثبيت برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server 2016](#re-enable-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [إعادة تثبيت برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server أو الإصدار 1803 أو إصدار أحدث](#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي على Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>إذا كنت تواجه مشاكل في إعادة تثبيت أو إعادة تمكين برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server، فشاهد استكشاف الأخطاء وإصلاحها: برنامج الحماية من الفيروسات من Microsoft Defender يتم إلغاء [تثبيتها Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
 
 > [!TIP]
 > لمعرفة المزيد حول برنامج الحماية من الفيروسات من Microsoft Defender التي لا تستخدم الحماية من الفيروسات من Microsoft، [راجع برنامج الحماية من الفيروسات من Microsoft Defender التوافق](microsoft-defender-antivirus-compatibility.md).
-
-### <a name="set-disableantispyware-to-false-on-windows-server"></a>تعيين DisableAntiSpyware إلى false على Windows Server
-
-تم [استخدام مفتاح تسجيل DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) في الماضي لتعطيل برنامج الحماية من الفيروسات من Microsoft Defender، ونشر منتج آخر من برامج الحماية من الفيروسات، مثل McAfee أو Symantec أو غيرها. **بشكل عام**`DisableAntiSpyware`، يجب ألا يكون لديك مفتاح التسجيل هذا على أجهزة Windows ونقاط النهاية؛ ومع ذلك، إذا قمت بتكوينها، فيما يلي كيفية تعيين قيمتها إلى خطأ:
-
-1. على جهاز Windows، افتح محرر السجل.
-
-2. انتقل إلى `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
-
-3. في هذا المجلد، ابحث عن إدخال DWORD يسمى **DisableAntiSpyware**.
-   - إذا لم تشاهد هذا الإدخال، تكون قد تم تعيينه.
-   - إذا رأيت **DisableAntiSpyware**، فاتابع إلى الخطوة 4.
-
-4. انقر ب الماوس الأيمن فوق DisableAntiSpyware DWORD، ثم اختر **تعديل**.
-
-5. قم بتعيين القيمة إلى `0`. (يحدد هذا الإجراء قيمة مفتاح التسجيل إلى *خطأ*.)
-
-> [!TIP]
-> لمعرفة المزيد حول مفتاح التسجيل هذا، راجع [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
 
 ### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-2016"></a>إعادة تمكين برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server 2016
 
@@ -91,13 +71,12 @@ ms.locfileid: "64466642"
 
 3. أعد تشغيل الجهاز.
 
-
 ### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later"></a>إعادة تمكين برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server أو الإصدار 1803 أو الإصدارات الأحدث
 
 > [!IMPORTANT]
 > ينطبق الإجراء التالي فقط على نقاط النهاية أو الأجهزة التي تعمل بالإصدارات التالية من Windows:
-> - Windows Server 2019
 > - Windows Server 2022
+> - Windows Server 2019
 > - Windows Server، الإصدار 1803 (الوضع الأساسي فقط)
 
 1. كمسؤول محلي على الخادم، افتح Windows PowerShell.
@@ -128,15 +107,12 @@ ms.locfileid: "64466642"
 > [!TIP]
 > يمكنك الآن تشغيل برنامج الحماية من الفيروسات من Microsoft Defender في الوضع غير النشط على Windows Server 2012 R2 و2016. لمزيد من المعلومات، راجع [خيارات تثبيت Microsoft Defender لنقطة النهاية](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
-1. افتح محرر السجل، ثم انتقل إلى
-
-   ```text
-   Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
-   ```
+1. افتح محرر السجل، ثم انتقل إلى `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. قم بتحرير (أو إنشاء) إدخال DWORD يسمى **ForceDefenderPassiveMode**، وحدد الإعدادات التالية:
 
    - تعيين قيمة DWORD إلى **1**.
+
    - ضمن **الأساس**، حدد **ست عشري**.
 
 > [!NOTE]
@@ -149,7 +125,6 @@ ms.locfileid: "64466642"
 ## <a name="configure-defender-for-endpoint"></a>تكوين Defender لنقطة النهاية
 
 تتضمن هذه الخطوة من عملية الترحيل تكوين برنامج الحماية من الفيروسات من Microsoft Defender نقاط النهاية. نوصي باستخدام Intune؛ ومع ذلك، يمكنك استخدام أي من الأساليب المدرجة في الجدول التالي:
-<br/><br/>
 
 |الأسلوب|ما يجب فعله|
 |---|---|
@@ -178,8 +153,7 @@ ms.locfileid: "64466642"
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>إضافة الحل الموجود إلى قائمة استثناءات برنامج الحماية من الفيروسات من Microsoft Defender
 
-أثناء هذه الخطوة من عملية الإعداد، يمكنك إضافة الحل الموجود إلى برنامج الحماية من الفيروسات من Microsoft Defender الاستثناء. يمكنك الاختيار من بين عدة أساليب لإضافة الاستثناءات برنامج الحماية من الفيروسات من Microsoft Defender، كما هو مذكور في الجدول التالي:
-<br/><br/>
+أثناء هذه الخطوة من عملية الإعداد، يمكنك إضافة الحل الموجود إلى برنامج الحماية من الفيروسات من Microsoft Defender الاستثناء. يمكنك الاختيار من بين عدة أساليب لإضافة الاستثناءات برنامج الحماية من الفيروسات من Microsoft Defender، كما هو مذكور في الجدول التالي: 
 
 |الأسلوب|ما يجب فعله|
 |---|---|
@@ -196,14 +170,16 @@ ms.locfileid: "64466642"
 ضع النقاط التالية في الاعتبار:
 
 - *تستثني استثناءات المسارات* ملفات معينة وأي ملفات يمكن الوصول إليها.
+
 - *تستثني استثناءات* العملية أي عملية تلامسها، ولكنها لا تستبعد العملية نفسها.
+
 - سرد استثناءات العملية باستخدام مسارها الكامل وليس باسمها فقط. (أسلوب الاسم فقط أقل أمانا.)
+
 - إذا قمت سرد كل عملية قابلة للتنفيذ (.exe) ك استثناء مسار واستبعاد عملية، يتم استبعاد العملية وأي شيء تلمسه.
 
 ## <a name="set-up-your-device-groups-device-collections-and-organizational-units"></a>إعداد مجموعات الأجهزة ومجموعات الأجهزة ووحدات المؤسسة
 
 تمكن مجموعات الأجهزة ومجموعات الأجهزة ووحدات المؤسسة فريق الأمان من إدارة سياسات الأمان وتعيينها بكفاءة وفعالية. يصف الجدول التالي كل مجموعة من هذه المجموعات وكيفية تكوينها. قد لا تستخدم مؤسستك أنواع المجموعات الثلاثة كلها.
-<br/><br/>
 
 |نوع المجموعة|ما يجب فعله|
 |---|---|

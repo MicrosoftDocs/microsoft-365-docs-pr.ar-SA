@@ -27,18 +27,22 @@ search.appverid:
 - MOE150
 - BEA160
 description: عند شراء Microsoft 365 Business Standard، يكون لديك خيار استخدام مجال تملكه، أو شراء مجال أثناء التسجيل.
-ms.openlocfilehash: 51f88847a1e0ca04e216044172dbacf572fb82e3
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 791f719f50809f2aa178ca2ab72471aea534e111
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63568079"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64638016"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>إعداد Microsoft 365 Business Standard باستخدام مجال جديد أو موجود
 
 عند شراء Microsoft 365 Business Standard، يكون لديك خيار إضافة مجال تملكه أو شراء مجال. اطلع على [التسجيل للحصول على Microsoft 365 Business Standard اشتراك](../simplified-signup/signup-business-standard.md).
 
 في هذه المقالة، سنتحدث معك عبر خطوات إضافة مجال موجود خاص بك بالفعل أو شراء مجال جديد. إذا اشتريت مجالا جديدا عند تسجيل الدخول، تم إعداد مجالك، كما يمكنك الانتقال إلى إضافة مستخدمين [وتعيين تراخيص](#add-users-and-assign-licenses).
+
+## <a name="set-up-microsoft-365-for-business"></a>إعداد Microsoft 365 للأعمال
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 ## <a name="before-you-begin"></a>قبل البدء
 
@@ -84,7 +88,7 @@ ms.locfileid: "63568079"
   
 1. يكشف معالج الإعداد عادة عن جهة التسجيل ويمنحك ارتباط إلى إرشادات مفصلة خطوة بخطوة لتحديث سجلات NS في موقع جهة التسجيل على الويب. وإذا لم يحدث ذلك، فغير أسماء الخدمات لإعداد [Office 365 جهة تسجيل المجالات](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
-    - إذا كان لديك سجلات DNS موجودة، على سبيل المثال موقع ويب موجود، ولكن مضيف DNS تم تمكينه للاتصال المجال، فاختر **إضافة سجلات لي**.[](/office365/admin/get-help-with-domains/domain-connect) في الصفحة **اختيار الخدمات** عبر الإنترنت، اقبل كل الإعدادات الافتراضية، واختر التالي، واختر **تخويل** على صفحة مضيف DNS.
+    - إذا كان لديك سجلات DNS موجودة، على سبيل المثال موقع ويب موجود، ولكن مضيف DNS تم تمكينه للاتصال المجال، فاختر **إضافة سجلات لي**.[](/office365/admin/get-help-with-domains/domain-connect) في **الصفحة اختيار خدمات الإنترنت**، اقبل كل الإعدادات الافتراضية، واختر التالي، واختر تخويل على  صفحة مضيف DNS.
     - إذا كان لديك سجلات DNS موجودة مع مضيفي DNS آخرين (غير ممكن للاتصال بالمجال)، فسوف تحتاج إلى إدارة سجلات DNS الخاصة بك للتأكد من أن الخدمات الموجودة تبقى متصلة. لمزيد [من المعلومات، راجع أساسيات](/office365/admin/get-help-with-domains/dns-basics) المجال.
 
 2. اتبع الخطوات الواردة في المعالج، وسوف يتم إعداد البريد الإلكتروني والخدمات الأخرى لك.

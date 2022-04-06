@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint لعملاء الحكومة الأمريكية
-description: تعرف على Microsoft Defender لنقطة النهاية المتوفرة لعملاء الحكومة الأمريكية
-keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender for Endpoint, endpoint, dod
+title: Microsoft Defender لنقطة النهاية عملاء الحكومة الأمريكية
+description: تعرف على Microsoft Defender لنقطة النهاية المتوفرة لعملاء الحكومة الأمريكية وإمكانياتها
+keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender لنقطة النهاية, endpoint, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,20 +16,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 03d4d22bdce9f18b4883437215ea5cba50b3868e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b6c9594112e347439945d3c21f61f9272edb935f
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681337"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507356"
 ---
-# <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender for Endpoint لعملاء الحكومة الأمريكية
+# <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender لنقطة النهاية عملاء الحكومة الأمريكية
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-يستخدم Microsoft Defender for Endpoint لعملاء الحكومة الأمريكية، المضمنين في بيئة Azure US Government، نفس التقنيات الأساسية مثل Defender for Endpoint في Azure Commercial.
+Microsoft Defender لنقطة النهاية عملاء الحكومة الأمريكية، المضمنين في بيئة Azure US Government، نفس التقنيات الأساسية مثل Defender for Endpoint في Azure Commercial.
 
 يتوفر هذا العرض لعملاء سحابة القطاع الحكومي سحابة القطاع الحكومي العالية و DoD وهو يستند إلى نفس الإصدار التجاري من المنع والكشف والتحري والوساطة. ومع ذلك، هناك بعض الاختلافات في توفر الإمكانات لهذا العرض.
 
@@ -38,7 +38,7 @@ ms.locfileid: "63681337"
 
 ## <a name="licensing-requirements"></a>متطلبات الترخيص
 
-يتطلب Microsoft Defender for Endpoint لعملاء الحكومة الأمريكية أحد عروض الترخيص الكلي التالية من Microsoft:
+Microsoft Defender لنقطة النهاية عملاء الحكومة الأمريكية أحد عروض الترخيص الكلي التالية من Microsoft:
 
 ### <a name="desktop-licensing"></a>ترخيص سطح المكتب
 
@@ -50,7 +50,7 @@ ms.locfileid: "63681337"
 |---|---|---|
 |Microsoft 365 سحابة القطاع الحكومي G5|Microsoft 365 E5 ل سحابة القطاع الحكومي High|Microsoft 365 G5 ل DOD|
 |Microsoft 365 G5 Security سحابة القطاع الحكومي|Microsoft 365 G5 Security سحابة القطاع الحكومي High|Microsoft 365 أمان G5 ل DOD|
-|Microsoft Defender ل Endpoint - سحابة القطاع الحكومي|Microsoft Defender ل Endpoint for سحابة القطاع الحكومي High|Microsoft Defender لنقطة النهاية ل DOD|
+|Microsoft Defender لنقطة النهاية - سحابة القطاع الحكومي|Microsoft Defender لنقطة النهاية ل سحابة القطاع الحكومي High|Microsoft Defender لنقطة النهاية ل DOD|
 |Windows 10 Enterprise E5 سحابة القطاع الحكومي|Windows 10 Enterprise E5 سحابة القطاع الحكومي High|Windows 10 Enterprise E5 ل DOD|
 |
 
@@ -62,13 +62,13 @@ ms.locfileid: "63681337"
 
 |سحابة القطاع الحكومي|سحابة القطاع الحكومي High|DoD|
 |---|---|---|
-|Microsoft Defender ل Endpoint Server سحابة القطاع الحكومي|Microsoft Defender ل Endpoint Server for سحابة القطاع الحكومي High|Microsoft Defender ل Endpoint Server ل DOD|
+|Microsoft Defender لنقطة النهاية Server سحابة القطاع الحكومي|Microsoft Defender لنقطة النهاية Server سحابة القطاع الحكومي High|Microsoft Defender لنقطة النهاية Server ل DOD|
 |Microsoft Defender للخوادم|Microsoft Defender للخوادم - Government|Microsoft Defender للخوادم - Government|
 |
 
 ## <a name="portal-urls"></a>عناوين URL المدخل
 
-فيما يلي عناوين URL لمدخل Microsoft Defender لنقطة النهاية لعملاء الحكومة الأمريكية:
+فيما يلي عناوين url Microsoft Defender لنقطة النهاية الإلكتروني لعملاء الحكومة الأمريكية:
 
 <br />
 
@@ -81,7 +81,7 @@ ms.locfileid: "63681337"
 |DoD|<https://security.microsoft.us>|
 |
 > [!NOTE]
-> إذا كنت عميلا سحابة القطاع الحكومي وفي عملية الانتقال من Microsoft Defender for Endpoint التجاري https://transition.security.microsoft.com إلى سحابة القطاع الحكومي، فاستخدم للوصول إلى بيانات Microsoft Defender التجارية ل Endpoint.
+> إذا كنت عميلا سحابة القطاع الحكومي وفي عملية الانتقال من Microsoft Defender لنقطة النهاية التجارية https://transition.security.microsoft.com إلى سحابة القطاع الحكومي، فاستخدم للوصول إلى Microsoft Defender لنقطة النهاية التجارية.
 
 ## <a name="endpoint-versions"></a>إصدارات نقطة النهاية
 
@@ -154,7 +154,8 @@ Windows Server 2008 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم](images
 
 |جدول بيانات قائمة المجالات| الوصف|
 |---|---|
-| قائمة URL ل Microsoft Defender لنقطة النهاية لعملاء Gov/سحابة القطاع الحكومي/DoD | جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS لعملاء Gov/سحابة القطاع الحكومي/DoD. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|Microsoft Defender لنقطة النهاية URL للعملاء التجاريين| جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS للعملاء التجاريين. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender لنقطة النهاية URL ل Gov/سحابة القطاع الحكومي/DoD | جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS لعملاء Gov/سحابة القطاع الحكومي/DoD. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 لمزيد من المعلومات، راجع [تكوين إعدادات](configure-proxy-internet.md) اتصال الإنترنت ووكيل الجهاز.
 
@@ -196,7 +197,7 @@ Windows Server 2008 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم](images
 |تصفية محتوى ويب|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|
   
 
-هذه هي الميزات والثغرات المعروفة ل [Mobile Threat Defense (Microsoft Defender ل Endpoint على Android & iOS)](mtd.md):
+هذه هي الميزات والثغرات المعروفة ل [Mobile Threat Defense (Microsoft Defender لنقطة النهاية على Android & iOS)](mtd.md):
 
 <br />
 

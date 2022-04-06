@@ -1,5 +1,5 @@
 ---
-title: الخطوة 3. إعداد سياسات التوافق للأجهزة التي تعمل باستخدام Intune
+title: الخطوة 3. إعداد نهج التوافق للأجهزة باستخدام Intune
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -7,7 +7,7 @@ f1.keywords:
 - Intune device compliance policy
 manager: dougeby
 audience: ITPro
-description: تعرف على كيفية إنشاء سياسات توافق الجهاز التي تحدد الحد الأدنى من المتطلبات لجهاز للوصول إلى بيئتك.
+description: تعرف على كيفية إنشاء نهج توافق الجهاز التي تحدد الحد الأدنى من متطلبات الجهاز للوصول إلى بيئتك.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
@@ -17,39 +17,39 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 7e55ad6bf1d1cb7d95e43cb23b9c74decc8548df
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: f93642984ecb2439ab6e4ad484ea4f6f3303c0ce
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "63570902"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651356"
 ---
-# <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>الخطوة 3. إعداد سياسات التوافق للأجهزة التي تعمل باستخدام Intune
+# <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>الخطوة 3. إعداد نهج التوافق للأجهزة باستخدام Intune
 
-يوفر لك تسجيل الأجهزة في الإدارة القدرة على تحقيق المزيد من الأمان والتحكم في البيانات في بيئتك. [الخطوة 2. يمكنك تسجيل الأجهزة في تفاصيل](manage-devices-with-intune-enroll.md) الإدارة حول كيفية تنفيذ ذلك باستخدام Intune و Autopilot. تغطي هذه المقالة الخطوة التالية، وهي تكوين سياسات توافق الأجهزة. 
+يتيح لك تسجيل الأجهزة في Intune القدرة على تحقيق قدر أكبر من الأمان والتحكم في البيانات في بيئتك. [الخطوة 2. تسجيل الأجهزة في تفاصيل Intune](manage-devices-with-intune-enroll.md) كيفية إنجاز ذلك باستخدام Intune. تتناول هذه المقالة الخطوة التالية، وهي تكوين نهج توافق الجهاز. 
 
 ![خطوات إدارة الأجهزة](../media/devices/intune-mdm-step-2.png#lightbox)
 
-أنت تريد التأكد من أن الأجهزة التي تصل إلى تطبيقاتك وبياناتك تلبي الحد الأدنى من المتطلبات، على سبيل المثال، إنها كلمة مرور أو محمية بدبوس ونظام التشغيل مقتر. إن سياسات التوافق هي الطريقة لتحديد المتطلبات التي يجب أن تلبيها الأجهزة. تستخدم MEM سياسات التوافق هذه لتوضع علامة على الجهاز كمتوافق أو غير متوافق يتم تمرير هذه الحالة الثنائية إلى Azure AD الذي يمكنه استخدام هذه الحالة في قواعد الوصول الشرطي للسماح لجهاز بالوصول إلى الموارد أو منعه. 
+تريد التأكد من أن الأجهزة التي تصل إلى تطبيقاتك وبياناتك تلبي الحد الأدنى من المتطلبات، على سبيل المثال، إنها محمية بكلمة مرور أو محمية بواسطة الدبوس ونظام التشغيل محدث. نهج التوافق هي الطريقة لتحديد المتطلبات التي يجب أن تفي بها الأجهزة. تستخدم MEM نهج التوافق هذه لوضع علامة على جهاز على أنه متوافق أو غير متوافق، يتم تمرير هذه الحالة الثنائية إلى Azure AD الذي يمكنه استخدام هذه الحالة في قواعد الوصول المشروط للسماح لجهاز أو منعه من الوصول إلى الموارد. 
 
-## <a name="configuring-device-compliance-policies"></a>تكوين سياسات توافق الأجهزة
+## <a name="configuring-device-compliance-policies"></a>تكوين نهج توافق الجهاز
 
-يتم تنسيق هذه الإرشادات بشكل كبير مع هوية الصفر الموثوق بها ونهج [الوصول إلى الجهاز الموصى بها](../security/office-365-security/microsoft-365-policies-configurations.md).
+وينسق هذا التوجيه بإحكام مع [نهج الهوية ثقة معدومة والوصول إلى الجهاز](../security/office-365-security/microsoft-365-policies-configurations.md) الموصى بها.
 
-يوضح هذا الرسم التوضيحي مكان توافق عمل تحديد نهج التوافق مع مجموعة النهج الموصى بها من الصفر. 
+يسلط هذا الرسم التوضيحي الضوء على مكان ملاءمة عمل تحديد نهج التوافق مع مجموعة النهج العامة ثقة معدومة الموصى بها. 
 
-[![نهج الوصول إلى الأجهزة وهوية الثقة الصفرية](../media/devices/identity-device-define-compliance.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/devices/identity-device-define-compliance.png)
+[![ثقة معدومة نهج الوصول إلى الهوية والجهاز](../media/devices/identity-device-define-compliance.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/devices/identity-device-define-compliance.png)
 
-في هذا الرسم التوضيحي، فإن تعريف سياسات توافق الأجهزة هو تبعية لتحقيق مستوى الحماية الموصى به ضمن إطار عمل الثقة الصفرية. 
+في هذا التوضيح، يعد تحديد نهج توافق الأجهزة تبعية لتحقيق المستوى الموصى به من الحماية داخل إطار عمل ثقة معدومة. 
 
-لتكوين سياسات توافق الأجهزة، استخدم الإرشادات والإعدادات الموصى بها والموصوفة في هوية الصفر الثقة ونهج [الوصول إلى الجهاز](../security/office-365-security/microsoft-365-policies-configurations.md). يرتبط الجدول أدناه مباشرة بتعليمات تكوين هذه السياسات في Intune، بما في ذلك الإعدادات الموصى بها لكل نظام أساسي.
+لتكوين نهج توافق الجهاز، استخدم الإرشادات والإعدادات الموصى بها المحددة في [ثقة معدومة نهج الوصول إلى الأجهزة والهوية](../security/office-365-security/microsoft-365-policies-configurations.md). يرتبط الجدول أدناه مباشرة بإرشادات تكوين هذه النهج في Intune، بما في ذلك الإعدادات الموصى بها لكل نظام أساسي.
 
 
 |السياسات |معلومات إضافية  |الترخيص |
 |---------|---------|---------|
-|[تعريف سياسات توافق الأجهزة ](../security/office-365-security/identity-access-policies.md#define-device-compliance-policies)   |  نهج واحد لكل نظام أساسي       |  Microsoft 365 E3 أو E5       |
+|[تحديد نهج توافق الجهاز ](../security/office-365-security/identity-access-policies.md#define-device-compliance-policies)   |  نهج واحد لكل نظام أساسي       |  Microsoft 365 E3 أو E5       |
 |  |         |         |
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-انتقل إلى [الخطوة 4. يتطلب أجهزة سليمة ومتوافقة](manage-devices-with-intune-require-compliance.md) للحصول على إرشادات حول كيفية إنشاء قاعدة الوصول الشرطي في Azure AD.
+انتقل إلى [الخطوة 4. طلب أجهزة سليمة ومتوافقة](manage-devices-with-intune-require-compliance.md) للحصول على إرشادات حول كيفية إنشاء قاعدة الوصول المشروط في Azure AD.

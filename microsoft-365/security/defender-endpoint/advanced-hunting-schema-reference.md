@@ -15,19 +15,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 290d302f815de38c4cd84f417118205ed6504fe2
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 2e45a4ae78d0beb9bc57b72a59b9cf1376ac7da7
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63570700"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468336"
 ---
 # <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>فهم مخطط الصيد المتقدم في Microsoft Defender لنقطة النهاية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
@@ -41,14 +41,14 @@ ms.locfileid: "63570700"
 
 - **وصف الجداول**: نوع البيانات المضمنة في الجدول ومصدر تلك البيانات.
 - **الأعمدة**: كل الأعمدة في الجدول.
-- **أنواع الإجراءات**: القيم المحتملة في العمود `ActionType` التي تمثل أنواع الأحداث التي يدعمها الجدول. يتم توفير هذا فقط للجداول التي تحتوي على معلومات الحدث.
+- **أنواع الإجراءات**: القيم المحتملة في العمود `ActionType` التي تمثل أنواع الأحداث التي يدعمها الجدول. يتم توفير هذه القيم فقط للجداول التي تحتوي على معلومات الحدث.
 - **نموذج استعلام**: استعلامات نموذجية تتميز بكيفية استخدام الجدول.
 
 ### <a name="access-the-schema-reference"></a>الوصول إلى مرجع المخطط
 
 للوصول بسرعة إلى مرجع المخطط، حدد الإجراء **عرض** المرجع بجانب اسم الجدول في تمثيل المخطط. يمكنك أيضا تحديد **مرجع المخطط** للبحث عن جدول.
 
-![صورة تعرض كيفية الوصول إلى مرجع المخطط داخل المدخل.](images/ah-reference.png)
+:::image type="content" source="images/ah-reference.png" alt-text="صفحة الصيد المتقدمة" lightbox="images/ah-reference.png":::
 
 ## <a name="learn-the-schema-tables"></a>تعرف على جداول المخططات
 
@@ -81,9 +81,9 @@ ms.locfileid: "63570700"
 |
 
 > [!TIP]
-> استخدم [الصيد](/microsoft-365/security/defender/advanced-hunting-overview) المتقدم في Microsoft 365 Defender للبحث عن التهديدات باستخدام البيانات من Defender for Endpoint و Microsoft Defender for Office 365 و Microsoft Defender for Cloud Apps و Microsoft Defender for Identity. [قم Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
+> استخدام [الصيد المتقدم في](/microsoft-365/security/defender/advanced-hunting-overview) Microsoft 365 Defender للبحث عن التهديدات باستخدام البيانات من Defender ل Endpoint، Microsoft Defender لـ Office 365، Microsoft Defender for Cloud Apps، و Microsoft Defender for Identity. [قم Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
 
-تعرف على المزيد حول كيفية نقل مهام سير عمل الصيد المتقدمة من Microsoft Defender ل Endpoint إلى Microsoft 365 Defender في ترحيل استعلامات الصيد المتقدمة من [Microsoft Defender ل Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
+تعرف على المزيد حول كيفية نقل مهام سير عمل الصيد المتقدمة من Microsoft Defender لنقطة النهاية إلى Microsoft 365 Defender في ترحيل [استعلامات](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde) الصيد المتقدمة من Microsoft Defender لنقطة النهاية.
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

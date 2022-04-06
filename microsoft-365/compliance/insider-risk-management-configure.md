@@ -1,5 +1,5 @@
 ---
-title: بدء العمل مع إدارة مخاطر insider
+title: بدء استخدام إدارة المخاطر الداخلية
 description: تكوين إدارة مخاطر insider في مؤسستك.
 keywords: Microsoft 365، إدارة مخاطر insider، وإدارة المخاطر، والتوافق
 ms.localizationpriority: medium
@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: cdd368e7e78458067b9f363d41f7931ac5a2c0cd
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 05375332df6542cd87e986bba68ef7c6753f8e36
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754201"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64637951"
 ---
-# <a name="get-started-with-insider-risk-management"></a>بدء العمل مع إدارة مخاطر insider
+# <a name="get-started-with-insider-risk-management"></a>بدء استخدام إدارة المخاطر الداخلية
 
 استخدم سياسات إدارة مخاطر insider لتحديد الأنشطة وأدوات الإدارة ذات المخاطر للعمل على تنبيهات المخاطر في مؤسستك. أكمل الخطوات التالية لإعداد المتطلبات الأساسية وتكوين نهج إدارة مخاطر insider.
 
@@ -36,9 +36,9 @@ ms.locfileid: "63754201"
 
 قبل البدء في إدارة مخاطر insider، يجب تأكيد اشتراكك في [Microsoft 365 وأي من](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) الوظائف الإضافية. للوصول إلى إدارة مخاطر insider واستخدامها، يجب أن يكون لدى مؤسستك أحد الاشتراكات أو الوظائف الإضافية التالية:
 
-- Microsoft 365 E5/A5/G5 (إصدار مدفوع أو تجريبي)
-- Microsoft 365 E3/A3/G3 اشتراك + Microsoft 365 E5/A5/G5 Compliance الإضافية
-- Microsoft 365 E3/A3/G3 اشتراك + Microsoft 365 E5/A5/G5 Insider لإدارة المخاطر
+- Microsoft 365 E5/A5/F5/G5 (إصدار مدفوع أو تجريبي)
+- Microsoft 365 E3/A3/F3/G3 + Microsoft 365 E5/A5/F5/G5 Compliance الإضافية
+- Microsoft 365 E3/A3/F3/G3 + Microsoft 365 E5/A5/F5/G5 Insider إدارة المخاطر
 - Office 365 E3 اشتراك + Enterprise Mobility و Security E3 + التوافق في Microsoft 365 E5 الإضافية
 
 يجب تعيين أحد التراخيص أعلاه للمستخدمين المضمنين في سياسات إدارة مخاطر insider.
@@ -223,11 +223,11 @@ ms.locfileid: "63754201"
 
 ### <a name="configure-microsoft-defender-for-endpoint-optional"></a>تكوين Microsoft Defender لنقطة النهاية (اختياري)
 
-[Microsoft Defender ل Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) هو نظام أساسي لأمن نقطة نهاية المؤسسة تم تصميمه لمساعدة شبكات المؤسسات على منع التهديدات المتقدمة والكشف عنها والتحقق منها والاستجابة لها. لكي تتمكن من رؤية الانتهاكات الأمنية بشكل أفضل في مؤسستك، يمكنك استيراد تنبيهات Defender لنقطة النهاية وتصفيتها عن الأنشطة المستخدمة في النهج التي تم إنشاؤها من قوالب نهج انتهاك أمان إدارة مخاطر insider.
+[Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) هو نظام أساسي لأمن نقطة نهاية المؤسسة مصمم لمساعدة شبكات المؤسسات على منع التهديدات المتقدمة والكشف عنها والتحقق منها والاستجابة لها. لكي تتمكن من رؤية الانتهاكات الأمنية بشكل أفضل في مؤسستك، يمكنك استيراد تنبيهات Defender لنقطة النهاية وتصفيتها عن الأنشطة المستخدمة في النهج التي تم إنشاؤها من قوالب نهج انتهاك أمان إدارة مخاطر insider.
 
-إذا قمت بإنشاء سياسات انتهاك الأمان، ستحتاج إلى تكوين Microsoft Defender ل Endpoint في مؤسستك وتمكين Defender for Endpoint لتكامل إدارة مخاطر insider في مركز أمان Defender لاستيراد تنبيهات انتهاك الأمان. لمزيد من المعلومات حول المتطلبات، راجع المقالة [الحد الأدنى من متطلبات Microsoft Defender لنقطة](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) النهاية.
+إذا قمت بإنشاء سياسات انتهاك الأمان، ستحتاج إلى Microsoft Defender لنقطة النهاية في مؤسستك وتمكين Defender for Endpoint لتكامل إدارة مخاطر insider في مركز أمان Defender لاستيراد تنبيهات انتهاك الأمان. لمزيد من المعلومات حول المتطلبات، راجع الحد [الأدنى لمتطلبات Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) المقالة.
 
-راجع المقالة [تكوين الميزات المتقدمة في مقالة Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) للحصول على إرشادات خطوة بخطوة لتكوين Defender ل Endpoint لتكامل إدارة مخاطر insider. بعد تكوين Microsoft Defender لنقطة النهاية، قم بالعودة إلى خطوات التكوين هذه.
+راجع المقالة [تكوين الميزات المتقدمة في مقالة Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) للحصول على إرشادات خطوة بخطوة لتكوين Defender ل Endpoint لتكامل إدارة مخاطر insider. بعد تكوين Microsoft Defender لنقطة النهاية، ارجع إلى خطوات التكوين هذه.
 
 ## <a name="step-5-required-configure-insider-risk-settings"></a>الخطوة 5 (مطلوبة): تكوين إعدادات مخاطر insider
 
@@ -247,7 +247,7 @@ ms.locfileid: "63754201"
     - [استثناءات أنواع الملفات](insider-risk-management-settings.md#file-type-exclusions)
     - [الحد الأدنى لعدد الأحداث اليومية لتعزيز درجة النشاط غير المعتاد](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [مستوى مستوى صوت التنبيه](insider-risk-management-settings.md#alert-volume)
-    - [حالة تنبيه Microsoft Defender لنقطة النهاية](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
+    - [Microsoft Defender لنقطة النهاية حالة التنبيه](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [إعدادات المجال](insider-risk-management-settings.md#domains)
 6. في الصفحة **تصدير التنبيهات**، يمكنك تصدير معلومات تنبيهات مخاطر insider باستخدام Office 365 واجهات برمجة التطبيقات للإدارة إذا لزم الأمر.
 7. في صفحة **مجموعات المستخدمين ذات** الأولوية، أنشئ مجموعة مستخدم ذات أولوية وأضف مستخدمين إذا لم يتم إنشاؤهم في **الخطوة 3**.

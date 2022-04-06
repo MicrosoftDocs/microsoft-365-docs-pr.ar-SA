@@ -1,5 +1,5 @@
 ---
-title: الخطوة 6. مراقبة مخاطر الأجهزة وتوافقها مع خطوط الأمان الأساسية
+title: الخطوة 6. مراقبة مخاطر الأجهزة وتوافقها مع أساسات الأمان
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -9,7 +9,7 @@ f1.keywords:
 - deploy security baselines
 manager: dougeby
 audience: ITPro
-description: تعرف على كيفية Microsoft Intune إلى Defender for Endpoint ومراقبة مخاطر الجهاز كشرط للوصول.
+description: تعرف على كيفية توصيل Microsoft Intune ب Defender لنقطة النهاية ومراقبة مخاطر الجهاز كشرط للوصول.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
@@ -20,68 +20,70 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: f58611f555b022b69211e39f149effef925dde17
-ms.sourcegitcommit: 23166424125b80b2d615643f394a3c023cba641d
+ms.openlocfilehash: e64006873c3419b9c6d93d3b367a5753f5478738
+ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "63572078"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64651400"
 ---
-# <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>الخطوة 6. مراقبة مخاطر الأجهزة وتوافقها مع خطوط الأمان الأساسية
+# <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>الخطوة 6. مراقبة مخاطر الأجهزة وتوافقها مع أساسات الأمان
 
-بعد نشر مؤسستك ل Microsoft Defender ل Endpoint، يمكنك الحصول على مزيد من الرؤى والحماية لأجهزتك من خلال Microsoft Intune مع Defender for Endpoint. بالنسبة للأجهزة المحمولة، يشمل ذلك القدرة على مراقبة مخاطر الجهاز كشرط للوصول. بالنسبة Windows الأجهزة، يمكنك مراقبة توافق هذه الأجهزة مع خطوط الأمان الأساسية. 
+بعد نشر مؤسستك Microsoft Defender لنقطة النهاية، يمكنك الحصول على رؤى وحماية أكبر لأجهزتك من خلال دمج Microsoft Intune مع Defender لنقطة النهاية. بالنسبة إلى الأجهزة المحمولة، يشمل ذلك القدرة على مراقبة مخاطر الجهاز كشرط للوصول. بالنسبة للأجهزة Windows، يمكنك مراقبة توافق هذه الأجهزة مع أساسيات الأمان. 
 
-![رسم توضيحي ل Defender for Endpoint Microsoft Intune Endpoint](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
+ملاحظة: يتضمن نشر Microsoft Defender لنقطة النهاية نقاط نهاية الإلحاق. لمزيد من المعلومات حول إلحاق الأجهزة Microsoft 365 capabilties، راجع [تسجيل الأجهزة مقابل أجهزة الإلحاق](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices).  
+
+![Defender لنقطة النهاية والتوضيح Microsoft Intune التكامل](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
 في هذا الرسم التوضيحي:
-- يزيد Microsoft Defender ل Endpoint إلى حد كبير من مستوى تقدم الحماية من المخاطر للأجهزة. 
-- في Microsoft Intune تسمح لك الميزة "حماية التطبيقات" بتعيين "سياسات حماية التطبيقات" وإدارة الأجهزة (بما في ذلك تغييرات التكوين)، يراقب Defender for Endpoint أجهزتك باستمرار للتحكم في التهديدات ويمكنه اتخاذ إجراء تلقائي لإدارة الهجمات. 
-- يمكنك استخدام Intune للأجهزة المجهزة ل Defender لنقطة النهاية. عند القيام بذلك، يمكنك أيضا تمكين هذه الأجهزة للعمل مع منع فقدان Microsoft 365 نقطة النهاية (نقطة النهاية DLP).
+- Microsoft Defender لنقطة النهاية إلى حد كبير من تطوير الحماية من التهديدات للأجهزة. 
+- بينما يسمح لك Microsoft Intune بتعيين نهج حماية التطبيقات وإدارة الأجهزة (بما في ذلك تغييرات التكوين)، يراقب Defender for Endpoint أجهزتك باستمرار للتهديدات ويمكنه اتخاذ إجراء تلقائي لمعالجة الهجمات. 
+- يمكنك استخدام Intune لإلحاق الأجهزة ب Defender لنقطة النهاية. عند القيام بذلك، فإنك تقوم أيضا بتمكين هذه الأجهزة للعمل مع قدرات التوافق Microsoft 365، بما في ذلك منع فقدان بيانات نقطة النهاية (DLP).
 
 تتضمن هذه المقالة الخطوات التالية:
 - الاتصال Microsoft Intune إلى Defender لنقطة النهاية
 - مراقبة مخاطر الجهاز
-- مراقبة التوافق مع خطوط الأمان الأساسية
+- مراقبة الامتثال لخطوط الأمان الأساسية
 
-إذا لم يتم إعداد Defender for Endpoint بالفعل، فاعمل مع مسؤول الحماية من المخاطر لإعداد [التقييم وبيئة التجربة](../security/defender/eval-defender-endpoint-overview.md). يمكنك العمل مع مجموعة التجريبية لتجرب الإمكانات في هذه المقالة.
+إذا لم يتم إعداد Defender لنقطة النهاية بالفعل، فاعمل مع مسؤول الحماية من التهديدات [لإعداد بيئة التقييم والإصدار التجريبي](../security/defender/eval-defender-endpoint-overview.md). يمكنك العمل مع مجموعة الإصدار التجريبي لتجربة القدرات في هذه المقالة.
 
 ## <a name="connect-microsoft-intune-to-defender-for-endpoint"></a>الاتصال Microsoft Intune إلى Defender لنقطة النهاية
 
-يمكنك تكوين تكامل Microsoft Intune مع Defender for Endpoint بطريقة بسيطة. استخدم هذه المقالة: [تكوين Microsoft Defender ل Endpoint في Intune](/mem/intune/protect/advanced-threat-protection-configure). 
+يعد تكوين تكامل Microsoft Intune مع Defender لنقطة النهاية أمرا بسيطا. استخدم هذه [المقالة: تكوين Microsoft Defender لنقطة النهاية في Intune](/mem/intune/protect/advanced-threat-protection-configure). 
 
-![الاتصال Intune إلى Microsoft Defender ل Endpoint](../media/devices/connect-intune-to-microsoft-defender.png#lightbox)
+![الاتصال Intune إلى Microsoft Defender لنقطة النهاية](../media/devices/connect-intune-to-microsoft-defender.png#lightbox)
 
 ## <a name="monitor-device-risk-as-a-condition-for-access"></a>مراقبة مخاطر الجهاز كشرط للوصول
 
-مع نشر Microsoft Defender ل Endpoint، يمكنك الاستفادة من إشارات خطر التهديدات. يسمح لك ذلك بحظر الوصول إلى الأجهزة استنادا إلى درجة المخاطر الخاصة بها. توصي Microsoft بالسماح بالوصول إلى الأجهزة ذات درجة المخاطر المتوسطة أو أدناه.
+مع نشر Microsoft Defender لنقطة النهاية، يمكنك الاستفادة من إشارات مخاطر التهديد. يسمح لك هذا بحظر الوصول إلى الأجهزة استنادا إلى درجة المخاطر الخاصة بها. توصي Microsoft بالسماح بالوصول إلى الأجهزة التي تحتوي على درجة مخاطر متوسطة أو أقل.
 
-بالنسبة لنظامي التشغيل Android وiOS/iPadOS، يمكن استخدام إشارات التهديدات ضمن "سياسات حماية التطبيق" (APP). للحصول على معلومات حول تكوين هذا، راجع [إنشاء نهج حماية التطبيق وتعيينه لتعيين مستوى مخاطر الجهاز](/mem/intune/protect/advanced-threat-protection-configure).
+بالنسبة لنظامي التشغيل Android وiOS/iPadOS، يمكن استخدام إشارات التهديد ضمن نهج حماية التطبيقات (APP). للحصول على معلومات حول تكوين هذا، راجع [إنشاء نهج حماية التطبيق وتعيينه لتعيين مستوى مخاطر الجهاز](/mem/intune/protect/advanced-threat-protection-configure).
 
-لكل الأنظمة الأساسية، يمكنك تعيين مستوى المخاطر في سياسات توافق الأجهزة الموجودة. راجع [إنشاء نهج التوافق وتعيينه لتعيين مستوى مخاطر الجهاز](/mem/intune/protect/advanced-threat-protection-configure).
+بالنسبة إلى جميع الأنظمة الأساسية، يمكنك تعيين مستوى المخاطر في نهج توافق الأجهزة الحالية. راجع [إنشاء نهج التوافق وتعيينه لتعيين مستوى مخاطر الجهاز](/mem/intune/protect/advanced-threat-protection-configure).
 
-## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>نشر خطوط الأمان الأساسية ومراقبة التوافق مع هذه الإعدادات
+## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>نشر خطوط الأمان الأساسية ومراقبة الامتثال لهذه الإعدادات
 
 ينطبق على: Windows 10، Windows 11
 
-المقالة، [الخطوة 5. نشر ملفات تعريف التكوين](manage-devices-with-intune-configuration-profiles.md)، يوصي ببدء استخدام ملفات تعريف التكوين باستخدام خطوط الأمان الأساسية المتوفرة Windows 10 Windows 11. يتضمن Microsoft Defender لنقطة النهاية أيضا خطوط أساسية أمان توفر إعدادات تحسن كل عناصر التحكم في الأمان في مكدس Defender لنقطة النهاية، بما في ذلك إعدادات الكشف عن تهديدات نقاط النهاية والرد عليها (الكشف التلقائي والاستجابة على النقط النهائية). ويتم أيضا نشر هذه باستخدام Microsoft Intune.
+المقالة، [الخطوة 5. نشر ملفات تعريف التكوين](manage-devices-with-intune-configuration-profiles.md)، توصي ببدء استخدام ملفات تعريف التكوين باستخدام خطوط الأمان الأساسية، المتوفرة Windows 10 Windows 11. تتضمن Microsoft Defender لنقطة النهاية أيضا أساسيات الأمان التي توفر إعدادات تعمل على تحسين جميع عناصر التحكم في الأمان في مكدس Defender لنقطة النهاية، بما في ذلك إعدادات الكشف عن تهديدات نقاط النهاية والرد عليها ( الكشف التلقائي والاستجابة على النقط النهائية). كما يتم توزيعها باستخدام Microsoft Intune.
 
-وبشكل مثالي، يتم نشر الأجهزة المضمنة في Defender for Endpoint كلا الخطين الأساسيين: أساس أمان Windows Intune لتأمين Windows أولا ثم الأساس أمان Defender for Endpoint الطبقات في الأعلى لتكوين عناصر تحكم أمان Defender for Endpoint بشكل مثالي.
+من الناحية المثالية، يتم نشر الأجهزة المضمنة في Defender لنقطة النهاية على حد سواء الأساسين: Windows أساس أمان Intune لتأمين Windows أولا ثم أساس أمان Defender لنقطة النهاية الطبقات العليا لتكوين عناصر تحكم أمان Defender لنقطة النهاية على النحو الأمثل.
 
-للاستفادة من أحدث البيانات حول المخاطر والمخاطر وتقليل التعارضات مع تطور الأساسات، طبق دائما الإصدارات الأخيرة من الأساسات عبر جميع المنتجات بمجرد إصدارها. 
+للاستفادة من أحدث البيانات حول المخاطر والتهديدات وتقليل التعارضات مع تطور الخطوط الأساسية، طبق دائما أحدث إصدارات الخطوط الأساسية عبر جميع المنتجات بمجرد إصدارها. 
 
-باستخدام Defender لنقطة النهاية، يمكنك مراقبة التوافق مع هذه الأساسات. 
+باستخدام Defender لنقطة النهاية، يمكنك مراقبة التوافق مع هذه الخطوط الأساسية. 
 
-![البطاقة الخاصة بمراقبة التوافق مع خطوط الأمان الأساسية](../media/devices/secconmgmt-baseline-card.png#lightbox)
+![بطاقة مراقبة الامتثال لأساسيات الأمان](../media/devices/secconmgmt-baseline-card.png#lightbox)
 
-لنشر خطوط الأمان الأساسية ومراقبة التوافق مع هذه الإعدادات، استخدم الخطوات في هذا الجدول.
+لنشر خطوط أساس الأمان ومراقبة التوافق مع هذه الإعدادات، استخدم الخطوات الواردة في هذا الجدول.
 
 
-|الخطوة  |الوصف  |
+|خطوه  |الوصف  |
 |---------|---------|
-|1     |راجع المفاهيم الأساسية وقارن بين Microsoft Defender لنقطة النهاية Windows أساسيات أمان Intune. <br><br>راجع [زيادة التوافق مع Microsoft Defender لأساس أمان نقطة النهاية](../security/defender-endpoint/configure-machines-security-baseline.md) للتعرف على التوصيات.<br><br>راجع [استخدام خطوط الأمان الأساسية لتكوين Windows في Intune ](/mem/intune/protect/security-baselines) لمراجعة قائمة خطوط الأمان الأساسية المتوفرة وكيفية تفادي التعارضات.         |
-|2     |  نشر Windows أساسيات الأمان ل Intune. ربما تكون قد أنجزت ذلك بالفعل إذا اتبعت الإرشادات في [الخطوة 5. نشر ملفات تعريف التكوين](manage-devices-with-intune-configuration-profiles.md).        |
-|3    |  نشر إعدادات الأساس ل Defender لنقطة النهاية ل Intune. راجع [إدارة ملفات تعريف](/mem/intune/protect/security-baselines-configure) خط الأمان Microsoft Intune لإنشاء ملف التعريف واختيار إصدار الأساس.<br><br>يمكنك أيضا اتباع الإرشادات هنا: [مراجعة وتعيين أساس أمان Microsoft Defender لنقطة النهاية](../security/defender-endpoint/configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline).     |
-|4     | في Defender for Endpoint، راجع بطاقة [أساس الأمان على إدارة تكوين الجهاز](../security/defender-endpoint/configure-machines.md).          |
+|1     |راجع المفاهيم الرئيسية وقارن بين Microsoft Defender لنقطة النهاية وخطوط أمان Intune Windows. <br><br>راجع [زيادة التوافق مع أساس الأمان Microsoft Defender لنقطة النهاية](../security/defender-endpoint/configure-machines-security-baseline.md) لمعرفة التوصيات.<br><br>راجع [استخدام خطوط أساس الأمان لتكوين أجهزة Windows في Intune ](/mem/intune/protect/security-baselines) لمراجعة قائمة أساسيات الأمان المتوفرة وكيفية تجنب التعارضات.         |
+|2     |  نشر إعدادات أساس الأمان Windows ل Intune. ربما تكون قد أنجزت ذلك بالفعل إذا اتبعت الإرشادات الواردة في [الخطوة 5. نشر ملفات تعريف التكوين](manage-devices-with-intune-configuration-profiles.md).        |
+|3    |  نشر إعدادات خط أساس Defender لنقطة النهاية ل Intune. راجع [إدارة ملفات تعريف أساس الأمان في Microsoft Intune](/mem/intune/protect/security-baselines-configure) لإنشاء ملف التعريف واختيار إصدار الأساس.<br><br>يمكنك أيضا اتباع الإرشادات هنا: [مراجعة أساس الأمان Microsoft Defender لنقطة النهاية وتعيينه](../security/defender-endpoint/configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline).     |
+|4     | في Defender لنقطة النهاية، راجع [بطاقة أساس الأمان على إدارة تكوين الجهاز](../security/defender-endpoint/configure-machines.md).          |
 | | |
 
 ## <a name="next-steps"></a>الخطوات التالية

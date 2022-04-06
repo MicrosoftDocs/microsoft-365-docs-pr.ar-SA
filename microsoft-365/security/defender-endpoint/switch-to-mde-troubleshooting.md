@@ -1,6 +1,6 @@
 ---
 title: استكشاف الأخطاء وإصلاحها عند التبديل إلى Microsoft Defender لنقطة النهاية
-description: تعرف على كيفية استكشاف الأخطاء وإصلاحها عند التبديل إلى Microsoft Defender لنقطة النهاية.
+description: تعرف على كيفية استكشاف المشاكل وإصلاحها عند التبديل إلى Microsoft Defender لنقطة النهاية.
 keywords: الترحيل، windows defender، حماية نقاط النهاية المتقدمة، الحماية من الفيروسات، الحماية من البرامج الضارة، الوضع السلبي، الوضع النشط، استكشاف الأخطاء وإصلاحها
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,24 +16,24 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 01/11/2022
+ms.date: 03/28/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 180adaff84f4154034d8bda04b6a6cbf6ceadc2e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 30218ea9b3b5ecbec20fdbc3364546d25c80bcab
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680443"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507503"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>استكشاف الأخطاء وإصلاحها عند التبديل إلى Microsoft Defender لنقطة النهاية
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-توفر هذه المقالة معلومات حول استكشاف الأخطاء وإصلاحها لمسؤولي الأمان الذين يعانون من مشاكل عند التبديل من حل حماية نقطة نهاية غير Microsoft إلى Microsoft Defender ل Endpoint.
+توفر هذه المقالة معلومات حول استكشاف الأخطاء وإصلاحها لمسؤولي الأمان الذين يعانون من مشاكل عند التبديل من حل حماية نقطة نهاية غير Microsoft إلى حل Microsoft Defender لنقطة النهاية.
 
 ## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>برنامج الحماية من الفيروسات من Microsoft Defender يتم إلغاء تثبيته على Windows Server
 
@@ -80,7 +80,7 @@ ms.locfileid: "63680443"
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-manually"></a>تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي يدويا
 
-على Windows Server 2019 أو Windows Server أو الإصدار 1803 أو الأحدث أو Windows Server 2016 أو Windows Server 2012 R2، يجب تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي يدويا. يساعد هذا الإجراء على منع حدوث مشاكل بسبب تثبيت منتجات الحماية من الفيروسات المتعددة على خادم. يمكنك تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي باستخدام PowerShell أو نهج المجموعة أو مفتاح التسجيل.
+على Windows Server 2019 أو Windows Server أو الإصدار 1803 أو الأحدث أو Windows Server 2016 أو Windows Server 2012 R2، يجب تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي يدويا. يساعد هذا الإجراء على منع حدوث مشاكل بسبب تثبيت منتجات الحماية من الفيروسات المتعددة على خادم. يمكنك تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي باستخدام PowerShell أو نهج المجموعة أو مفتاح تسجيل.
 
 يمكنك تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي عن طريق تعيين مفتاح التسجيل التالي:
 
@@ -96,6 +96,21 @@ ms.locfileid: "63680443"
 > لكي يعمل الوضع السلبي على نقاط النهاية التي تعمل Windows Server 2016 و Windows Server 2012 R2، يجب أن يتم تشغيل نقاط النهاية هذه باستخدام الإرشادات الموجودة في خوادم Windows[.](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)
 
 لمزيد من المعلومات، راجع برنامج الحماية من الفيروسات من Microsoft Defender [على Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+
+## <a name="microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode"></a>برنامج الحماية من الفيروسات من Microsoft Defender تبدو عالقة في الوضع غير النشط
+
+إذا برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي، ف قم بتعيينه إلى الوضع النشط يدويا باتباع الخطوات التالية:
+
+1. على جهاز Windows، افتح "محرر السجل" كمسؤول.
+
+2. انتقل إلى `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+
+3. قم بتعيين أو **تعريف REG_DWORD** يسمى `ForceDefenderPassiveMode`، ثم قم بتعيين قيمته إلى `0`.
+
+4. إعادة تشغيل الجهاز.
+
+> [!IMPORTANT]
+> إذا كنت لا تزال تواجه مشكلة في برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع النشط بعد اتباع هذا الإجراء، [فاتصل بالدعم](../../admin/get-help-support.md).
 
 ## <a name="i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016"></a>أواجه مشكلة في إعادة تمكين برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server 2016
 

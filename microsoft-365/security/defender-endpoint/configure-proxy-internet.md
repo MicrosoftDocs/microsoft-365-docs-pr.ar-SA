@@ -1,6 +1,6 @@
 ---
 title: تكوين إعدادات اتصال الإنترنت ووكيل الجهاز
-description: قم بتكوين وكيل Microsoft Defender لإعدادات الإنترنت ووكيل نقطة النهاية لتمكين الاتصال بالخدمة السحابية.
+description: قم بتكوين Microsoft Defender لنقطة النهاية الوكيل والإنترنت لتمكين الاتصال بالخدمة السحابية.
 keywords: تكوين، وكيل، الإنترنت، اتصال الإنترنت، الإعدادات، إعدادات الوكيل، الشبكة، winhttp، خادم الوكيل
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,19 +18,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d687273a3029f3de080f06f328d4d40853142353
-ms.sourcegitcommit: 9f0e84835121ce6228fdc69182c24be7ad1cb20e
+ms.openlocfilehash: cf68afff79a2d719435e9df3d53400584f162618
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63570159"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507334"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>تكوين إعدادات اتصال الإنترنت ووكيل الجهاز
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
@@ -81,13 +81,13 @@ ms.locfileid: "63570159"
 
   قم بتعيينه **إلى تمكين** وحدد **تعطيل استخدام الوكيل المصادق عليه**.
 
-  ![صورة لإعداد نهج المجموعة1.](images/atp-gpo-proxy1.png)
+  :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="جزء نهج المجموعة الإعداد1" lightbox="images/atp-gpo-proxy1.png":::
 
 - **القوالب الإدارية > Windows مكونات >** البيانات وبناءات المعاينة > تكوين تجارب المستخدمين المتصلة وبيانات بيانات الاستخدام:
 
   تكوين الوكيل.
 
-  ![صورة لإعداد نهج المجموعة2.](images/atp-gpo-proxy2.png)
+  :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="جزء نهج المجموعة setting2" lightbox="images/atp-gpo-proxy2.png":::
 
 
 | نهج المجموعة | مفتاح التسجيل | إدخال السجل | القيمة |
@@ -99,13 +99,13 @@ ms.locfileid: "63570159"
 
 برنامج الحماية من الفيروسات من Microsoft Defender [الحماية التي يتم توفيرها](cloud-protection-microsoft-defender-antivirus.md) عبر السحابة حماية فورية وأتمتة من التهديدات الجديدة والناشئة. تجدر الإشارة إلى أن الاتصال مطلوب للمؤشرات [المخصصة عندما يكون](manage-indicators.md) Defender Antivirus هو الحل النشط لمكافحة البرامج الضارة. على [الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر](edr-in-block-mode.md) حل أساسي لمكافحة البرامج الضارة عند استخدام حل غير Microsoft.
 
-تكوين الوكيل الثابت باستخدام نهج المجموعة المتوفر في القوالب الإدارية:
+تكوين الوكيل الثابت باستخدام نهج المجموعة المتوفرة في القوالب الإدارية:
 
 1. **القوالب الإدارية > Windows مكونات > برنامج الحماية من الفيروسات من Microsoft Defender > تعريف الخادم الوكيل للاتصال بالشبكة**. 
 
 2. قم **بتعيينه إلى Enabled** وحدد الخادم الوكيل. ملاحظة، يجب أن يحتوي عنوان URL على http:// أو https://. للحصول على الإصدارات المعتمدة https://، راجع [إدارة برنامج الحماية من الفيروسات من Microsoft Defender التحديثات](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-   :::image type="content" source="images/proxy-server-mdav.png" alt-text="الخادم الوكيل برنامج الحماية من الفيروسات من Microsoft Defender.":::
+   :::image type="content" source="images/proxy-server-mdav.png" alt-text="الخادم الوكيل برنامج الحماية من الفيروسات من Microsoft Defender" lightbox="images/proxy-server-mdav.png":::
 
 3. ضمن مفتاح التسجيل، `HKLM\Software\Policies\Microsoft\Windows Defender`يحدد النهج قيمة `ProxyServer` السجل REG_SZ. 
 
@@ -121,7 +121,7 @@ ms.locfileid: "63570159"
 >
 > لأغراض مرونة ولطبيعة الحماية التي يتم تسليمها من السحابة في الوقت الحقيقي، برنامج الحماية من الفيروسات من Microsoft Defender ذاكرة التخزين المؤقت لأخير وكيل عمل معروف. تأكد من أن حل الوكيل لا يقوم بإجراء فحص SSL. سيقطع هذا الاتصال السحابي الآمن. 
 >
-> برنامج الحماية من الفيروسات من Microsoft Defender استخدام الوكيل الثابت للاتصال Windows التحديث أو Microsoft Update لتنزيل التحديثات. بدلا من ذلك، سيستخدم وكيلا على مستوى النظام إذا تم تكوينه لاستخدام Windows التحديث، أو مصدر التحديث الداخلي الذي تم تكوينه وفقا للت ترتيب الاحتياطي [الذي تم تكوينه](manage-protection-updates-microsoft-defender-antivirus.md). 
+> برنامج الحماية من الفيروسات من Microsoft Defender استخدام الوكيل الثابت للاتصال Windows Update أو Microsoft Update لتنزيل التحديثات. بدلا من ذلك، سيستخدم وكيلا على مستوى النظام إذا تم تكوينه لاستخدام Windows Update أو مصدر التحديث الداخلي الذي تم تكوينه وفقا للت ترتيب الاحتياطي [الذي تم تكوينه](manage-protection-updates-microsoft-defender-antivirus.md). 
 >
 > إذا لزم الأمر، يمكنك استخدام القوالب الإدارية > Windows مكونات > برنامج الحماية من الفيروسات من Microsoft Defender > تعريف المؤتمرات التلقائية للوكيل **(pac.)** للاتصال بالشبكة. إذا كنت بحاجة إلى إعداد تكوينات متقدمة مع عدة وكيلين، فاستخدم القوالب الإدارية > Windows **مكونات > برنامج الحماية من الفيروسات من Microsoft Defender > تعريف** العناوين لتجاوز الخادم الوكيل ومنع برنامج الحماية من الفيروسات من Microsoft Defender استخدام خادم وكيل لتلك الوجهات. 
 >
@@ -166,7 +166,7 @@ netsh winhttp reset proxy
 
 راجع [بناء جملة أوامر Netsh والسياقات وتنسيق لمعرفة](/windows-server/networking/technologies/netsh/netsh-contexts) المزيد.
 
-## <a name="enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server"></a>تمكين الوصول إلى عناوين URL لخدمة Microsoft Defender لنقطة النهاية في الخادم الوكيل
+## <a name="enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server"></a>تمكين الوصول إلى Microsoft Defender لنقطة النهاية URL للخدمة في الخادم الوكيل
 
 بشكل افتراضي، إذا كان الوكيل أو جدار الحماية يمنع كل حركة المرور بشكل افتراضي ويسمح فقط بمجالات معينة، أضف المجالات المدرجة في الورقة القابلة للتنزيل إلى قائمة المجالات المسموح بها.
 
@@ -174,14 +174,13 @@ netsh winhttp reset proxy
 
 <br>
 
-**** 
 |جدول بيانات قائمة المجالات| الوصف|
 |---|---|
-|قائمة URL ل Microsoft Defender لنقطة النهاية للعملاء التجاريين| جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS للعملاء التجاريين. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| قائمة URL ل Microsoft Defender لنقطة النهاية لعملاء Gov/سحابة القطاع الحكومي/DoD | جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS لعملاء Gov/سحابة القطاع الحكومي/DoD. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|Microsoft Defender لنقطة النهاية URL للعملاء التجاريين| جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS للعملاء التجاريين. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender لنقطة النهاية URL ل Gov/سحابة القطاع الحكومي/DoD | جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS لعملاء Gov/سحابة القطاع الحكومي/DoD. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 إذا تم تمكين فحص HTTPS (فحص SSL) للوكيل أو جدار الحماية، فاستبعد المجالات المدرجة في الجدول أعلاه من فحص HTTPS.
-في جدار الحماية، افتح كل عناوين URL حيث العمود الجغرافي هو WW. بالنسبة للصفوف التي لا يكون العمود الجغرافي فيها "WW"، افتح عناوين URL إلى موقع البيانات المحدد. للتحقق من إعداد موقع البيانات، راجع التحقق من موقع تخزين البيانات وتحديث إعدادات استبقاء البيانات [ل Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/data-retention-settings).
+في جدار الحماية، افتح كل عناوين URL حيث العمود الجغرافي هو WW. بالنسبة للصفوف التي لا يكون العمود الجغرافي فيها "WW"، افتح عناوين URL إلى موقع البيانات المحدد. للتحقق من إعداد موقع البيانات، راجع التحقق من موقع تخزين البيانات وتحديث إعدادات استبقاء البيانات [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/data-retention-settings).
 
 > [!NOTE]
 > Windows الأجهزة التي تعمل بالإصدار 1803 أو الاحتياجات السابقة`settings-win.data.microsoft.com`.  <br>
@@ -210,7 +209,7 @@ netsh winhttp reset proxy
 |*.azure-automation.net|المنفذ 443|الصادر|نعم|
 
 > [!NOTE]
-> *تنطبق متطلبات الاتصال هذه على Microsoft Defender السابق لنقطة نهاية Windows Server 2016، Windows Server 2012 R2 الذي يتطلب MMA. توجد إرشادات لتكوين أنظمة التشغيل هذه بالحل الموحد الجديد في خوادم [Onboard Windows](configure-server-endpoints.md)، أو الترحيل إلى الحل الموحد الجديد في سيناريوهات ترحيل [الخادم في Microsoft Defender ل Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> *تنطبق متطلبات الاتصال هذه على Microsoft Defender لنقطة النهاية السابق Windows Server 2016، Windows Server 2012 R2 الذي يتطلب MMA. توجد إرشادات لتكهين أنظمة التشغيل هذه بالحل الموحد الجديد في [خوادم](configure-server-endpoints.md) Windows أو الترحيل إلى الحل الموحد الجديد في سيناريوهات ترحيل الخادم [في Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > كحل مستند إلى السحابة، يمكن أن يتغير نطاق IP. من المستحسن الانتقال إلى إعداد حل DNS.
@@ -225,9 +224,9 @@ netsh winhttp reset proxy
 
 3. يمكنك تشغيل TestCloudConnection.exe من "C:\Program Files\Microsoft Monitoring Agent\Agent" للتحقق من الاتصال، والحصول على عناوين URL المطلوبة لمساحة العمل المحددة.
 
-4. تحقق من قائمة عناوين URL الخاصة بنقطة النهاية ل Microsoft Defender للحصول على قائمة المتطلبات الكاملة لم والمنطقة (راجع جدول بيانات عناوين URL [للخدمة](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
+4. تحقق من Microsoft Defender لنقطة النهاية عناوين URL للحصول على قائمة المتطلبات الكاملة لم والمنطقة (راجع جدول بيانات عناوين URL [للخدمة](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
 
-    ![صورة المسؤول في Windows PowerShell.](images/admin-powershell.png)
+   :::image type="content" source="images/admin-powershell.png" alt-text="المسؤول في Windows PowerShell" lightbox="images/admin-powershell.png":::
 
 يمكن استبدال أحرف البدل (\*) \*المستخدمة في .ods.opinsights.azure.com \*و .oms.opinsights.azure.com \*و .agentsvc.azure-automation.net نقاط نهاية URL بمحددات "مساحة العمل". إن "معرّف مساحة العمل" خاص ببيئة ومساحة العمل. يمكن العثور عليه في قسم "التكهين" للمستأجر داخل Microsoft 365 Defender المدخل.
 
@@ -236,11 +235,11 @@ netsh winhttp reset proxy
 > [!NOTE]
 > في حالة التكهين عبر Microsoft Defender for Cloud، يمكن استخدام مساحات عمل متعددة. ستحتاج إلى تنفيذ إجراء TestCloudConnection.exe على الجهاز المعمل من كل مساحة عمل (لتحديد ما إذا كانت هناك أي تغييرات على عناوين URL *.blob.core.windows.net بين مساحات العمل).
 
-## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>التحقق من اتصال العميل مع عناوين URL لخدمة Microsoft Defender لنقطة النهاية
+## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>التحقق من اتصال العميل Microsoft Defender لنقطة النهاية URL للخدمة
 
 تحقق من اكتمال تكوين الوكيل بنجاح. يمكن ل WinHTTP بعد ذلك اكتشاف الخادم الوكيل في بيئتك والتواصل معه، ومن ثم سيسمح الخادم الوكيل ب نقل البيانات إلى عناوين URL لخدمة Defender for Endpoint.
 
-1. قم [بتنزيل أداة محلل عميل Microsoft Defender لنقطة](https://aka.ms/mdeanalyzer) النهاية إلى الكمبيوتر الشخصي، حيث يتم تشغيل أداة استشعار Defender لنقطة النهاية. بالنسبة للخوادم على المستوى الراقي، يمكنك استخدام إصدار المعاينة الأخير لتنزيل [أداة Microsoft Defender for Endpoint Client Analyzer Beta](https://aka.ms/BetaMDEAnalyzer).
+1. قم [بتنزيل Microsoft Defender لنقطة النهاية "محلل العملاء"](https://aka.ms/mdeanalyzer) على الكمبيوتر الشخصي، حيث يتم تشغيل أداة استشعار Defender لنقطة النهاية. بالنسبة للخوادم على المستوى الهادأ، استخدم إصدار المعاينة الأخير متوفرا لتنزيل أداة محلل Microsoft Defender لنقطة النهاية [Beta](https://aka.ms/BetaMDEAnalyzer).
 
 2. استخراج محتويات MDEClientAnalyzer.zip على الجهاز.
 
@@ -286,6 +285,6 @@ netsh winhttp reset proxy
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 
-- [استخدم إعدادات نهج المجموعة لتكوين برنامج الحماية من الفيروسات من Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
+- [استخدم نهج المجموعة الإعدادات لتكوين برنامج الحماية من الفيروسات من Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md)
 - [أجهزة Windows](configure-endpoints.md)
-- [استكشاف مشاكل تشغيل نقطة النهاية وإصلاحها في Microsoft Defender](troubleshoot-onboarding.md)
+- [استكشاف مشاكل Microsoft Defender لنقطة النهاية في الحافظة وإصلاحها](troubleshoot-onboarding.md)

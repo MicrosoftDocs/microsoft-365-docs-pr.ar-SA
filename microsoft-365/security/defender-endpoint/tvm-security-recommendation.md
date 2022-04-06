@@ -1,7 +1,7 @@
 ---
 title: توصيات الأمان حسب إدارة المخاطر والثغرات الأمنية
 description: الحصول على توصيات أمان قابلة للتنفيذ ذات أولوية حسب التهديدات، واحتمالية انتهاكها، والقيمة، في إدارة المخاطر والثغرات الأمنية.
-keywords: إدارة المخاطر والثغرات الأمنية Microsoft Defender ل Endpoint tvm وتوصية الأمان عبر الإنترنت وتوصية الأمان القابلة للتنفيذ
+keywords: إدارة المخاطر والثغرات الأمنية Microsoft Defender لنقطة النهاية أمان tvm وتوصية أمان الإنترنت والتوصيات المتعلقة بالأمان القابل للتنفيذ
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 57c1909ff54fea6b9151e212f465abb75bab48f8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e7ff7a98e8550996068686b5b0805ea3a72cd6ae
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63575812"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468556"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>توصيات الأمان - إدارة المخاطر والثغرات الأمنية
 
@@ -29,7 +29,7 @@ ms.locfileid: "63575812"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [التهديدات إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +40,7 @@ ms.locfileid: "63575812"
 تتضمن كل توصية أمان خطوات إصلاح قابلة للتنفيذ. للمساعدة في إدارة المهام، يمكن أيضا إرسال التوصية باستخدام Microsoft Intune Microsoft Endpoint Configuration Manager. عندما يتغير مشهد التهديدات، تتغير التوصية أيضا عندما تجمع المعلومات بشكل مستمر من بيئتك.
 
 > [!TIP]
-> للحصول على رسائل بريد إلكتروني حول أحداث ثغرة أمنية جديدة، راجع تكوين إعلامات البريد الإلكتروني لثغرة أمنية [في Microsoft Defender ل Endpoint](configure-vulnerability-email-notifications.md)
+> للحصول على رسائل بريد إلكتروني حول أحداث ثغرة أمنية جديدة، راجع تكوين إعلامات البريد الإلكتروني للثغرات [الأمنية في Microsoft Defender لنقطة النهاية](configure-vulnerability-email-notifications.md)
 
 ## <a name="how-it-works"></a>كيفية عمل ذلك
 
@@ -70,7 +70,8 @@ ms.locfileid: "63575812"
 
 في يوم معين كمسؤول أمان، يمكنك الاطلاع على لوحة معلومات إدارة المخاطر والثغرات الأمنية لمشاهدة درجة التعرض [](tvm-dashboard-insights.md) جنبا إلى جنب مع ["نقاط Microsoft الآمنة للأجهزة](tvm-microsoft-secure-score-devices.md)".[](tvm-exposure-score.md) الهدف **هو تقليل تعرض** مؤسستك للنقاط الأمنية وزيادة أمان الأجهزة في مؤسستك لكي تكون  أكثر مرونة في مواجهة هجمات تهديدات الأمن الإلكتروني. يمكن أن تساعدك قائمة توصيات الأمان العليا على تحقيق هذا الهدف.
 
-![مثال على بطاقة توصيات الأمان العليا، مع أربع توصيات أمان.](images/top-security-recommendations350.png)
+:::image type="content" source="images/top-security-recommendations350.png" alt-text="بطاقة توصيات الأمان العليا" lightbox="images/top-security-recommendations350.png":::
+
 
 تتضمن أهم توصيات الأمان قائمة بفرص التحسين التي تم تحديد أولوياتها استنادا إلى العوامل المهمة المذكورة في القسم السابق - التهديد، احتمالية الانتهاك، والقيمة. سيأخذك تحديد توصية إلى صفحة توصيات الأمان مع مزيد من التفاصيل.
 
@@ -81,9 +82,9 @@ ms.locfileid: "63575812"
 يتغير لون الرسم البياني **للأجهزة** المعرضة مع تغير الاتجاه. إذا كان عدد الأجهزة التي يتم عرضها في ارتفاع، يتغير اللون إلى اللون الأحمر. إذا كان هناك انخفاض في عدد الأجهزة التي يتم عرضها، سيتغير لون الرسم البياني إلى أخضر.
 
 > [!NOTE]
-> يعرض إدارة الثغرات الأمنية المخاطر والأجهزة التي كانت تستخدم منذ ما يصل إلى **30 يوما**. يختلف ذلك عن باقي Microsoft Defender لنقطة النهاية، حيث إذا لم يكن الجهاز يستخدم منذ أكثر من 7 أيام في حالة "غير نشط".
+> يعرض إدارة الثغرات الأمنية المخاطر والأجهزة التي كانت تستخدم منذ ما يصل إلى **30 يوما**. يختلف ذلك عن باقي Microsoft Defender لنقطة النهاية، حيث إذا لم يكن الجهاز يستخدم لأكثر من 7 أيام في حالة "غير نشط".
 
-![مثال على الصفحة المنتقلة للحصول على توصيات الأمان.](images/tvmsecrec-updated.png)
+:::image type="content" source="images/tvmsecrec-updated.png" alt-text="الصفحة المنتقلة للحصول على توصيات الأمان" lightbox="images/tvmsecrec-updated.png":::
 
 ### <a name="icons"></a>الأيقونات
 
@@ -97,7 +98,7 @@ ms.locfileid: "63575812"
 
 حدد توصية الأمان التي تريد التحقيق فيها أو المعالجة.
 
-:::image type="content" alt-text="مثال لصفحة منتحلة لتوصيات الأمان." source="images/secrec-flyouteolsw.png" lightbox="images/secrec-flyouteolsw.png":::
+:::image type="content" source="images/secrec-flyouteolsw.png" alt-text="صفحة من حولاء توصيات الأمان" lightbox="images/secrec-flyouteolsw.png":::
 
 من الصورة المستعرضة، يمكنك اختيار أي من الخيارات التالية:
 
@@ -140,7 +141,7 @@ ms.locfileid: "63575812"
 
 حدد توصية أمان تريد إنشاء استثناء لها، ثم حدد **خيارات الاستثناء**.
 
-![إظهار موقع زر "خيارات الاستثناء" في منار توصيات الأمان.](images/tvm-exception-options.png)
+:::image type="content" source="images/tvm-exception-options.png" alt-text="الزر &quot;خيارات الاستثناءات&quot; في &quot;منتحل توصيات الأمان&quot;" lightbox="images/tvm-exception-options.png":::
 
 قم بتعبئة النموذج وإرساله. لعرض كل الاستثناءات (الحالية والضنية)، انتقل إلى صفحة "[](tvm-remediation.md)المعالجة" ضمن القائمة "**إدارة** الثغرات" & وحدد علامة التبويب "استثناءات".  تعرف على المزيد حول كيفية إنشاء [استثناء](tvm-exception.md#create-an-exception)
 
@@ -152,7 +153,7 @@ ms.locfileid: "63575812"
 
 2. حدد النقاط الثلاث إلى جانب توصية الأمان التي تريد الإبلاغ بها، ثم حدد **الإبلاغ عن عدم الدقة**.
 
-    ![إظهار مكان وجود الزر "عدم دقة التقرير" في منتدي توصيات الأمان.](images/report-inaccuracy500.png)
+   :::image type="content" source="images/report-inaccuracy500.png" alt-text="الزر &quot;عدم دقة التقرير&quot;" lightbox="images/report-inaccuracy500.png":::
 
 3. من جزء القائمة المنسدلة، حدد الفئة غير الدقيقة من القائمة المنسدلة، ثم قم بتعبئة عنوان بريدك الإلكتروني، وتفاصيل حول عدم الدقة.
 

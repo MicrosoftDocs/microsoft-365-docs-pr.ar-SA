@@ -24,17 +24,17 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: تعرف على كيفية التحقق من صحة Microsoft 365 Business Premium حماية التطبيق في أجهزة Android أو iOS.
-ms.openlocfilehash: 85d98a4741299327c0e88735cb9593e129fdc929
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b760b49c59d8033e4587cedd67f024f983547179
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63575055"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64632438"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>التحقق من صحة إعدادات حماية التطبيق على أجهزة Android أو iOS
 
 > [!NOTE]
-> يتم طرح Microsoft Defender for Business Microsoft 365 Business Premium العملاء، بدءا من 1 مارس 2022. يوفر هذا العرض ميزات أمان إضافية للأجهزة. [تعرف على المزيد حول Defender for Business](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business هذه Microsoft 365 Business Premium العملاء، بدءا من 1 مارس 2022. يوفر هذا العرض ميزات أمان إضافية للأجهزة. [تعرف على المزيد حول Defender for Business](../../security/defender-business/mdb-overview.md).
 
 اتبع الإرشادات الواردة في الأقسام التالية للتحقق من صحة إعدادات حماية التطبيق على أجهزة Android أو iOS.
   
@@ -42,7 +42,7 @@ ms.locfileid: "63575055"
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>التحقق من أن إعدادات حماية التطبيق تعمل على أجهزة المستخدمين
 
-بعد تعيين [تكوينات التطبيقات لأجهزة Android](app-protection-settings-for-android-and-ios.md) لحماية التطبيقات، يمكنك اتباع هذه الخطوات للتحقق من عمل الإعدادات التي اخترتها. 
+بعد تعيين [إعدادات حماية التطبيقات لأجهزة Android أو iOS](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md) لحماية التطبيقات، يمكنك اتباع هذه الخطوات للتحقق من عمل الإعدادات التي اخترتها. 
   
 أولا، تأكد من أن النهج ينطبق على التطبيق الذي ستعمل على التحقق من صحته.
   
@@ -129,9 +129,9 @@ ms.locfileid: "63575055"
   
 ## <a name="ios"></a>iOS
   
-### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>التحقق من أن إعدادات حماية التطبيق تعمل على أجهزة المستخدمين
+### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>التحقق من أن حماية التطبيقات الإعدادات تعمل على أجهزة المستخدم
 
-بعد تعيين [تكوينات التطبيقات لأجهزة iOS](app-protection-settings-for-android-and-ios.md) لحماية التطبيقات، يمكنك اتباع هذه الخطوات للتحقق من عمل الإعدادات التي اخترتها. 
+بعد تعيين [تكوينات التطبيقات لأجهزة iOS](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md) لحماية التطبيقات، يمكنك اتباع هذه الخطوات للتحقق من عمل الإعدادات التي اخترتها. 
   
 أولا، تأكد من أن النهج ينطبق على التطبيق الذي ستعمل على التحقق من صحته.
   

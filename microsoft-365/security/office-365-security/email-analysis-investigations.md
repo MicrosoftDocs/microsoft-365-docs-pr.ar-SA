@@ -1,5 +1,5 @@
 ---
-title: تحليل البريد الإلكتروني في التحقيق مع Microsoft Defender Office 365
+title: تحليل البريد الإلكتروني في التحريات Microsoft Defender لـ Office 365
 f1.keywords:
 - NOCSH
 author: dansimp
@@ -15,28 +15,28 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: الاستجابة التلقائية للحوادث، التحقيق، المعالجة، الحماية من المخاطر
-description: تعرف على كيفية عمل تحليل البريد الإلكتروني في التحقيقات في Microsoft Defender Office 365.
+description: تعرف على كيفية عمل تحليل البريد الإلكتروني في Microsoft Defender لـ Office 365.
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5737a2d1974805dc55b85b7ff8f4117cbc1da898
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 49a244e948da14e328ab3db64dc495ab6e5d6dd4
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63573996"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468006"
 ---
-# <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>تحليل البريد الإلكتروني في التحقيق مع Microsoft Defender Office 365
+# <a name="email-analysis-in-investigations-for-microsoft-defender-for-office-365"></a>تحليل البريد الإلكتروني في التحريات Microsoft Defender لـ Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
-- [Microsoft Defender Office 365 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-أثناء إجراء التحقيق التلقائي للتنبيهات، يقوم Microsoft Defender for Office 365 بتحليل البريد الإلكتروني الأصلي للتهديدات ويحدد رسائل البريد الإلكتروني الأخرى المرتبطة بالبريد الإلكتروني الأصلي وجزء محتمل من هجوم. هذا التحليل مهم لأن هجمات البريد الإلكتروني نادرا ما تتكون من رسالة بريد إلكتروني واحدة.
+أثناء إجراء التحقيق التلقائي للتنبيهات، يقوم Microsoft Defender لـ Office 365 بتحليل البريد الإلكتروني الأصلي للتهديدات ويحدد رسائل البريد الإلكتروني الأخرى المرتبطة بالبريد الإلكتروني الأصلي وجزء محتمل من هجوم. هذا التحليل مهم لأن هجمات البريد الإلكتروني نادرا ما تتكون من رسالة بريد إلكتروني واحدة.
 
 يحدد تحليل البريد الإلكتروني الخاص بالتحري التلقائي مجموعات البريد الإلكتروني باستخدام السمات من البريد الإلكتروني الأصلي إلى الاستعلام عن رسائل البريد الإلكتروني المرسلة والمستلمة من قبل مؤسستك. يشبه ذلك محلل عمليات الأمان الذي يتعقب رسائل البريد الإلكتروني ذات الصلة في "المستكشف" أو "البحث المتقدم". يتم استخدام عدة استعلامات لتحديد رسائل البريد الإلكتروني المطابقة لأن المهاجمين عادة ما يتحولون إلى معلمات البريد الإلكتروني لتجنب الكشف عن الأمان. يقوم تحليل نظام المجموعات بإجراء هذه الاختبارات لتحديد كيفية التعامل مع رسائل البريد الإلكتروني المتدخلة في التحقيق:
 
@@ -74,7 +74,7 @@ ms.locfileid: "63573996"
 
 تعرض الآن الدلائل المستندة إلى البريد الإلكتروني في علامة **التبويب دليل والاستجابة** لحادث ما المعلومات التالية.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="مثال على معلومات تحليل البريد الإلكتروني في الدليل والاستجابة." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="معلومات تحليل البريد الإلكتروني في الدليل والاستجابة" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
 
 من الاستدعاءات مرقمة في الشكل:
 
@@ -91,7 +91,7 @@ ms.locfileid: "63573996"
 
 بالنسبة إلى مجموعات البريد الإلكتروني أو البريد الإلكتروني  في علامة تبويب الكيانات  لحادث، تعني "منع" عدم وجود رسائل بريد إلكتروني ضارة في علبة البريد لهذا العنصر (البريد أو نظام المجموعة). فيما يلي مثال على ذلك.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="مثال على رسالة بريد إلكتروني تم منعها." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="بريد إلكتروني تم منعه." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
 
 في هذا المثال، البريد الإلكتروني ضار ولكن ليس في علبة بريد.
 

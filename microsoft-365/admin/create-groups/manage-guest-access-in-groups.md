@@ -21,21 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
-description: تعرف على كيفية إضافة ضيوف إلى مجموعة Microsoft 365، وعرض المستخدمين الضيوف، واستخدام PowerShell للتحكم في وصول الضيوف.
-ms.openlocfilehash: 99c0a9f46abfffe56f8c751ca614287181f39a5d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: تعرف على كيفية إضافة ضيوف إلى مجموعة Microsoft 365 وعرض الضيوف واستخدام PowerShell للتحكم في وصول الضيوف.
+ms.openlocfilehash: ea5986c4b9e0c5124abc581f9ed35391e0885633
+ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63569136"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64637929"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>إدارة وصول الضيف في Microsoft 365 المجموعات
 
 بشكل افتراضي، يتم تشغيل Microsoft 365 وصول الضيوف لمجموعاتك لمنظمتك. يمكن للمسؤولين التحكم في السماح للضيوف بالوصول إلى المجموعات لمنظمتهم بكاملها أو للمجموعات الفردية.
 
-عند تشغيلها، يمكن لأعضاء المجموعة دعوة المستخدمين الضيوف إلى مجموعة Microsoft 365 عبر Outlook ويب. يتم إرسال الدعوات إلى مالك المجموعة للموافقة عليها.
+عند تشغيلها، يمكن لأعضاء المجموعة دعوة ضيوف إلى مجموعة Microsoft 365 عبر Outlook ويب. يتم إرسال الدعوات إلى مالك المجموعة للموافقة عليها.
 
-بعد الموافقة، يضاف المستخدم الضيف إلى الدليل والمجموعة.
+بعد الموافقة، يضاف الضيف إلى الدليل والمجموعة.
 
 > [!Note]
 > Yammer شبكات Enterprise في الوضع الأصلي أو الاتحاد [الأوروبي Geo](/yammer/manage-security-and-compliance/manage-data-compliance) لا تدعم ضيوف الشبكة.
@@ -50,9 +50,9 @@ ms.locfileid: "63569136"
 
 إذا كنت تريد تمكين وصول الضيف أو تعطيله في المجموعات، يمكنك القيام بذلك في <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**المجموعات**</a>.
 
-1. في مركز الإدارة، انتقل إلى **إظهار** \>  \> كل الإعدادات **المؤسسة** وعلى علامة التبويب خدمات، حدد Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**المجموعات**</a>.
+1. في مركز الإدارة، انتقل إلى **إظهار** \>  \> كل الإعدادات **المؤسسة** وعلى علامة التبويب **خدمات**، حدد مجموعات Microsoft 365.<a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank"></a>
   
-2. في صفحة **Microsoft 365** المجموعات، اختر ما إذا كنت تريد السماح للأشخاص من خارج مؤسستك بالوصول إلى موارد المجموعة أو السماح لمالكي المجموعات بإضافة أشخاص من خارج مؤسستك إلى المجموعات.
+2. في صفحة **مجموعات Microsoft 365**، اختر ما إذا كنت تريد السماح للأشخاص من خارج مؤسستك بالوصول إلى موارد المجموعة أو السماح لمالكي المجموعة بإضافة أشخاص من خارج مؤسستك إلى المجموعات.
 
 ## <a name="add-guests-to-a-microsoft-365-group-from-the-admin-center"></a>إضافة ضيوف إلى مجموعة Microsoft 365 من مركز الإدارة
 
@@ -72,7 +72,7 @@ ms.locfileid: "63569136"
 
 ## <a name="related-content"></a>المحتوى ذي الصلة
 
-[حظر المستخدمين الضيوف من مجموعة](../../solutions/per-group-guest-access.md) معينة (مقالة)\
+[حظر الضيوف من مجموعة معينة](../../solutions/per-group-guest-access.md) (مقالة)\
 [إدارة عضوية المجموعة في مركز مسؤولي Microsoft 365](add-or-remove-members-from-groups.md) (مقالة)\
 [مراجعات الوصول إلى Azure Active Directory](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (مقالة)\
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (مقالة)

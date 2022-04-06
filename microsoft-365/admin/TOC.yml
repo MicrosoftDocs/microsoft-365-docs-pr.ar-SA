@@ -1,19 +1,19 @@
-- name: مركز مسؤولي Microsoft 365 المساعدة
+- name: تعليمات مركز مسؤولي تطبيقات Microsoft 365
   href: index.yml
   items:
     - name: أهم 20 مقالة من مقالات تعليمات المسؤول
       href: top-m365-admin-articles.yml
     - name: مكتبة فيديو تدريب المسؤول
       href: admin-video-library.yml
-    - name: بدء العمل
+    - name: بدء الاستخدام
       items:
         - name: التسجيل
           href: admin-overview/sign-up-for-office-365.md
-        - name: حاول شراء Microsoft 365
+        - name: تجربة اشتراك Microsoft 365 أو شرائه
           href: ../commerce/try-or-buy-microsoft-365.md
         - name: التخطيط لإعداد Microsoft 365 للأعمال
           href: setup/plan-your-setup.md
-        - name: التسجيل للحصول على Microsoft 365 Business Premium
+        - name: تعرّف على المزيد وقم بالتسجيل للحصول على Microsoft 365 Business Premium.
           items:
             - name: التسجيل
               href: ../business/sign-up.md
@@ -21,39 +21,39 @@
               href: ../business/set-up.md
             - name: Microsoft 365 Business Premium (فيديو)
               href: admin-overview/what-is-microsoft-365.md
-        - name: التسجيل للحصول على Microsoft 365 Business Standard
+        - name: تعرّف على المزيد وقم بالتسجيل للحصول على Microsoft 365 Business Standard.
           items:
-            - name: التسجيل للحصول على Microsoft 365 Business Standard
+            - name: تعرّف على المزيد وقم بالتسجيل للحصول على Microsoft 365 Business Standard.
               href: ../admin/simplified-signup/signup-business-standard.md
             - name: إعداد Microsoft 365 Business Standard
               href: ../admin/setup/setup-business-standard.md
-            - name: دعوة المستخدمين Microsoft 365 Business Standard
+            - name: قم بدعوة المستخدمين إلى Microsoft 365 Business Standard
               href: ../admin/simplified-signup/admin-invite-business-standard.md
-            - name: قبول دعوة بالبريد الإلكتروني Microsoft 365 Business Standard
+            - name: قبول دعوة بالبريد الإلكتروني لـ Microsoft 365 Business Standard
               href: ../admin/simplified-signup/user-invite-business-standard.md
             - name: قبول دعوة بالبريد الإلكتروني إلى مؤسسة اشتراك Microsoft 365 Business Standard باستخدام حساب Outlook أو Yahoo أو Gmail أو حساب آخر
               href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
             - name: ترحيل البيانات إلى اشتراكي في Microsoft 365 Business Standard
               href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: التسجيل في Microsoft Apps للأعمال
+        - name: قم بالتسجيل في Microsoft Apps للأعمال
           items:
-            - name: التسجيل للحصول على Microsoft 365 Apps for business
+            - name: قم بالتسجيل في تطبيقات Microsoft 365 للأعمال
               href: setup/signup--apps-business.md
-            - name: إعداد Microsoft 365 Apps for business
+            - name: إعداد Microsoft 365 Apps للأعمال.
               href: setup/setup-apps-for-business.md
         - name: إعداد Microsoft 365 Business Basic
           items:
             - name: Microsoft 365 Business Basic
               href: setup/setup-business-basic.md
-        - name: استكشاف الصفحة والمعالج "إعداد"
+        - name: استكشاف صفحة "إعداد" والمعالج
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: تأمين Windows 10 الكمبيوتر
+        - name: تأمين أجهزة كمبيوتر تعمل بنظام التشغيل Windows 10
           href: setup/secure-win-10-pcs.md
         - name: تنزيل البرامج ومفاتيح المنتج
           href: setup/download-software-licenses-csp.md
-        - name: تثبيت Office التطبيق
+        - name: تثبيت تطبيقات Office
           href: setup/install-applications.md
-        - name: إعداد أجهزة windows
+        - name: إعداد أجهزة Windows
           href: setup/set-up-windows-devices.md
         - name: إعداد الأجهزة المحمولة
           href: setup/set-up-mobile-devices.md
@@ -63,13 +63,13 @@
           href: setup/files-to-onedrive.md
         - name: نقل الملفات إلى SharePoint (فيديو)
           href: setup/files-to-sharepoint.md
-        - name: ترحيل البيانات إلى Microsoft 365
+        - name: ترحيل بياناتك إلى Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: طرح Teams
           href: /microsoftteams/how-to-roll-out-teams?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
         - name: تدريب التطبيق للجميع
           href: 'https://support.microsoft.com/training'
-        - name: ما هو الاشتراك الذي لدي؟
+        - name: ما نوع الاشتراك الذي أستخدمه؟
           href: admin-overview/what-subscription-do-i-have.md
         - name: تخصيص صفحة تسجيل الدخول
           href: setup/customize-sign-in-page.md
@@ -79,37 +79,35 @@
           items:
             - name: مزامنة مستخدمي المجال Microsoft 365
               href: setup/manage-domain-users.md
-            - name: تمكين إدارة الأجهزة Windows 10 المجال
-              href: setup/manage-windows-devices.md
             - name: الوصول إلى الموارد من جهاز Azure AD المنضم
               href: setup/access-resources.md
-    - name: نظرة عامة على مركز مسؤولي Microsoft 365
+    - name: نظرة عامة حول مركز مسؤولي Microsoft 365
       items:
-        - name: نظرة عامة حول مركز الإدارة
+        - name: نظرة عامة حول مركز المسؤول
           href: admin-overview/admin-center-overview.md
-        - name: حول أدوار المسؤولين
+        - name: معلومات حول أدوار المسؤول
           href: add-users/about-admin-roles.md
         - name: تطبيق المسؤول على الأجهزة المحمولة
           href: admin-overview/admin-mobile-app.md
-        - name: ما الجديد في مركز الإدارة
+        - name: ما الجديد في مركز المسؤول
           href: whats-new-in-preview.md
-        - name: البحث في مركز مسؤولي Microsoft 365
+        - name: البحث في مركز مسؤولي Microsoft 365.
           href: manage/search-in-the-mac.md
-        - name: البقاء على أهى المعلومات حول التغييرات
+        - name: ابق على اطلاع على التغييرات
           href: manage/stay-on-top-of-updates.md
         - name: إدارة مستأجرين متعددين
           href: multi-tenant/manage.md
-    - name: Office 365 التي يتم تشغيلها بواسطة 21Vianet
+    - name: Office 365 المُشغل بواسطة 21Vianet
       items:
-        - name: حول Office 365 التي يتم تشغيلها بواسطة 21Vianet
+        - name: Office 365 المشغل بواسطة نقاط نهاية 21Vianet
           href: services-in-china/services-in-china.md
-        - name: تنزيل تطبيق Office ل Android for Office 365 التي يتم تشغيلها بواسطة 21Vianet
+        - name: تنزيل تطبيق Office لـ Android for Office 365 التي يتم تشغيلها بواسطة 21Vianet
           href: services-in-china/download-office-app-for-Android.md
-        - name: تنزيل تطبيق Office ل iOS for Office 365 التي يتم تشغيلها بواسطة 21Vianet
+        - name: تنزيل تطبيق Office لـ iOS for Office 365 التي يتم تشغيلها بواسطة 21Vianet
           href: services-in-china/download-office-app-for-iOS.md
         - name: تطبيق على Fapiao
           href: services-in-china/apply-for-a-fapiao.md
-        - name: دعم Azure Information Protection
+        - name: دعم حماية المعلومات في Azure
           href: services-in-china/parity-between-azure-information-protection.md
     - name: إدارة المستخدمين والمجموعات وكلمات المرور
       items:
@@ -117,13 +115,13 @@
           items:
             - name: إضافة المستخدمين
               href: add-users/add-users.md
-            - name: إضافة موظف جديد
+            - name: إضافة مستخدم جديد
               href: add-users/add-new-employee.md
             - name: تعيين تراخيص للمستخدمين
               href: manage/assign-licenses-to-users.md
             - name: تعيين أدوار المسؤولين
               href: add-users/assign-admin-roles.md
-            - name: اخطاء تعيين التراخيص من المستخدمين
+            - name: أخطاء تعيين التراخيص من المستخدمين
               href: manage/remove-licenses-from-users.md
             - name: المستخدمون الضيوف
               href: add-users/about-guest-users.md
@@ -131,7 +129,7 @@
               href: create-groups/manage-guest-access-in-groups.md
             - name: تغيير اسم المستخدم وعنوان البريد الإلكتروني
               href: add-users/change-a-user-name-and-email-address.md
-            - name: استعادة مستخدم
+            - name: استعادة حساب مستخدم
               href: add-users/restore-user.md
             - name: إنشاء قالب لإضافة مستخدمين
               href: add-users/create-and-use-a-template-to-add-users.md
@@ -141,17 +139,17 @@
           items:
             - name: نظرة عامة
               href: add-users/remove-former-employee.md
-            - name: الخطوة 1. منع موظف من تسجيل الدخول وحظر الوصول إلى Microsoft 365 الخدمات
+            - name: الخطوة 1. منع موظف من تسجيل الدخول وحظر الوصول إلى خدمات Microsoft 365
               href: add-users/remove-former-employee-step-1.md
             - name: الخطوة 2. حفظ محتويات علبة بريد موظف سابق
               href: add-users/remove-former-employee-step-2.md
-            - name: الخطوة 3. مسح الجهاز المحمول الخاص بالموظف السابق وحظره
+            - name: الخطوة 3. مسح بيانات الجهاز المحمول لموظف سابق وحظره
               href: add-users/remove-former-employee-step-3.md
-            - name: الخطوة 4. إعادة توجيه بريد إلكتروني لموظف سابق إلى موظف آخر أو تحويله إلى علبة بريد مشتركة
+            - name: الخطوة 4. إعادة توجيه البريد الإلكتروني من موظف سابق إلى موظف آخر أو تحويله إلى علبة بريد مشتركة
               href: add-users/remove-former-employee-step-4.md
-            - name: الخطوة 5. منح موظف آخر حق الوصول OneDrive Outlook البيانات
+            - name: الخطوة 5. منح موظف آخر وصولاً إلى بيانات OneDrive وOutlook
               href: add-users/remove-former-employee-step-5.md
-            - name: الخطوة 6. إزالة Microsoft 365 من موظف سابق
+            - name: الخطوة 6. إزالة ترخيص Microsoft 365 من موظف سابق
               href: add-users/remove-former-employee-step-6.md
             - name: الخطوة 7. حذف حساب مستخدم لموظف سابق
               href: add-users/remove-former-employee-step-7.md
@@ -167,7 +165,7 @@
               href: create-groups/explain-groups-knowledge-worker.md
             - name: إدارة المجموعات
               href: create-groups/manage-groups.md
-            - name: إضافة أعضاء المجموعة أو إزالتهم
+            - name: إضافة أعضاء للمجموعة أو إزالتهم
               href: create-groups/add-or-remove-members-from-groups.md
             - name: استعادة مجموعة محذوفة
               href: create-groups/restore-deleted-group.md
@@ -177,9 +175,9 @@
           items:
             - name: إعادة تعيين كلمات المرور
               href: add-users/reset-passwords.md
-            - name: السماح للمستخدمين بإعادة تعيين كلمات المرور
+            - name: انقر هنا من أجل السماح للمستخدمين بإعادة تعيين كلمات المرور.
               href: add-users/let-users-reset-passwords.md
-            - name: تعيين كلمات المرور حتى لا تنتهي صلاحيتها أبدا
+            - name: تعيين كلمات المرور حتى لا تنتهي صلاحيتها أبداً
               href: add-users/set-password-to-never-expire.md
             - name: إعادة إرسال كلمات مرور المستخدمين
               href: add-users/resend-user-password.md
@@ -191,11 +189,11 @@
       items:
         - name: حول إعدادات البريد الإلكتروني للمستخدم
           href: email/office-365-user-email-settings.md
-        - name: إضافة اسم بريد إلكتروني مستعار آخر لمستخدم
+        - name: إضافة اسم مستعار لعنوان بريد إلكتروني آخر خاص بمستخدم
           href: email/add-another-email-alias-for-a-user.md
         - name: استخدام مجالك المخصص
           href: email/change-email-address.md
-        - name: ترحيل البريد الإلكتروني وجهات الاتصال إلى Microsoft 365
+        - name: ترحيل البريد الإلكتروني والتقويم وجهات الاتصال إلى Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: إنشاء تواقيع وإعارات إخلاء المسؤولية
           href: setup/create-signatures-and-disclaimers.md
@@ -241,46 +239,46 @@
           items:
             - name: تغيير أسماء الخدمات لدى أي مضيف DNS
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
-            - name: إنشاء سجلات DNS لدى أي مضيف DNS
+            - name: إنشاء سجلات DNS في أي موفر استضافة DNS
               href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
         - name: استكشاف مشاكل المجال وإصلاحها
           href: get-help-with-domains/find-and-fix-issues.md
     - name: إدارة البيانات والخدمات
       items:
-        - name: مراقبة Microsoft 365 باستخدام التقارير
+        - name: مراقبة نشاط Microsoft 365 باستخدام التقارير
           href: activity-reports/activity-reports.md
         - name: Microsoft Productivity Score - نظرة عامة
           href: productivity/productivity-score.md
           items:
-            - name: التعاون في المحتوى
+            - name: التعاون في العمل على المحتوى
               href: productivity/content-collaboration.md
-            - name: الاتصال
+            - name: اتصال
               href: productivity/communication.md
-            - name: التنقل
+            - name: إمكانية الحركة
               href: productivity/mobility.md
             - name: العمل الجماعي
               href: productivity/teamwork.md
             - name: الاجتماعات
               href: productivity/meetings.md
-            - name: Microsoft 365 Apps الصحية
+            - name: حالة صحة Microsoft 365 Apps
               href: productivity/apps-health.md
-            - name: تحليلات نقطة النهاية
+            - name: تحليلات نقاط النهاية
               href: /mem/analytics/productivity-score
         - name: تغيير معلومات جهة اتصال مؤسستك
           href: manage/change-address-contact-and-more.md
-        - name: تحديث معلومات جهة اتصال المسؤول
+        - name: قم بتحديث معلومات الاتصال بالمسؤول
           href: manage/update-phone-number-and-email-address.md
-        - name: تخصيص مُطلق التطبيق
+        - name: تخصيص مشغّل التطبيق
           href: manage/customize-the-app-launcher.md
-        - name: تثبيت التطبيقات على "مطلق التطبيقات" الخاص بالستخدمين
+        - name: تثبيت التطبيقات في مشغل تطبيقات المستخدمين
           href: manage/pin-apps-to-app-launcher.md
         - name: ترقية المستخدمين إلى أحدث التطبيقات
           href: setup/upgrade-users-to-latest-office-client.md
-        - name: التطبيقات المتكاملة
+        - name: تطبيقات متكاملة
           href: manage/test-and-deploy-microsoft-365-apps.md
-        - name: النشر المركزي ل الوظائف الإضافية
+        - name: النشر المركزي للوظائف الإضافية
           items:
-            - name: متطلبات النشر المركزي ل الوظائف الإضافية
+            - name: متطلبات النشر المركزي للوظائف الإضافية
               href: manage/centralized-deployment-of-add-ins.md
             - name: استخدام الوظائف الإضافية في مركز الإدارة
               href: manage/manage-deployment-of-add-ins.md
@@ -290,11 +288,11 @@
               href: manage/centralized-deployment-faq.yml
         - name: إدارة أخبار الصناعة
           href: manage/manage-industry-news.md
-        - name: إدارة Office البرامج النصية
+        - name: إدارة إعدادات برامج Office النصية
           href: manage/manage-office-scripts-settings.md
         - name: البحث عن شريك أو بائع جديد
           href: manage/find-your-partner-or-reseller.md
-        - name: إدارة ملاحظات Microsoft لمنظمتك
+        - name: إدارة برنامج الحماية من الفيروسات من Microsoft Defender لمؤسستك
           href: /admin/manage/manage-feedback-ms-org.md
         - name: إعداد خيارات الإصدار
           href: manage/release-options-in-office-365.md
@@ -308,7 +306,7 @@
               href: usage-analytics/enable-usage-analytics.md
             - name: الحصول على أحدث إصدار من تحليلات الاستخدام
               href: usage-analytics/get-the-latest-version-of-usage-analytics.md
-            - name: التنقل في التقارير واستخدامها
+            - name: عرض التقارير واستخدامها
               href: usage-analytics/navigate-and-utilize-reports.md
             - name: حول المستخدمين النشطين في تقارير الاستخدام
               href: usage-analytics/active-user-in-usage-reports.md
@@ -320,7 +318,7 @@
               href: usage-analytics/usage-analytics-data-model.md
             - name: استكشاف أخطاء تحليلات الاستخدام وإصلاحها
               href: usage-analytics/usage-analytics-errors.md
-        - name: Microsoft 365 تكامل الدعم مع دليل تكوين ServiceNow
+        - name: دعم Microsoft 365 التكامل مع دليل تكوين ServiceNow
           items:
             - name: نظرة عامة على التكوين
               href: manage/servicenow-overview.md
@@ -332,7 +330,7 @@
               href: manage/servicenow-testing-the-configuration.md
             - name: استكشاف الأخطاء وإصلاحها
               href: manage/servicenow-troubleshooting.md
-    - name: إدارة الاشتراكات والمفوترة
+    - name: إدارة الاشتراكات والتراخيص
       href: ../commerce/index.yml
     - name: تأمين مؤسستك
       items:
@@ -340,81 +338,71 @@
           href: security-and-compliance/secure-your-business-data.md
         - name: المصادقة متعددة العوامل Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
-        - name: إعداد المصادقة متعددة العوامل
+        - name: إعداد مصادقة متعددة العوامل
           href: security-and-compliance/set-up-multi-factor-authentication.md
-        - name: إدارة حسابات الأولوية ومراقبتها
+        - name: إدارة الحسابات ذات الأولوية ومراقبتها
           href: setup/priority-accounts.md
         - name: تشغيل عطل جلسة العمل
           href: manage/idle-session-timeout-web-apps.md
         - name: تمكين المصادقة الحديثة Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: المتطلبات الأساسية لحماية البيانات
-          href: security-and-compliance/pre-requisites-for-data-protection.md
+          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection.md
         - name: زيادة الحماية من المخاطر
           href: security-and-compliance/increase-threat-protection.md
         - name: التهديدات التي كشف عنها برنامج الحماية من الفيروسات من Microsoft Defender
           href: security-and-compliance/threats-detected-defender-av.md
         - name: مراجعة التهديدات التي تم الكشف عنها واتخاذ إجراء
           href: security-and-compliance/review-threats-take-action.md
-        - name: إعداد ميزات التوافق
-          href: security-and-compliance/set-up-compliance.md
-        - name: نقاط آمنة
+        - name: إعداد نُهج التوافق
+          href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
+        - name: درجة الأمان
           href: /microsoft-365/security/defender/microsoft-secure-score
-        - name: دليل لتوافق القانون العام لحماية لحماية القانون العام (GDPR)
+        - name: دليل لتوافق القانون العام لحماية القانون العام (GDPR)
           href: security-and-compliance/gdpr-compliance.md
     - name: إدارة الأجهزة وبيانات التطبيق
       items:
         - name: أساليب حماية بيانات الجهاز والتطبيق
           href: devices/choose-device-security.md
-        - name: Microsoft Intune الوثائق
+        - name: الوثائق في Microsoft Intune
           href: /mem/intune/
         - name: عرض السياسات والأجهزة وتحريرها
-          href: devices/view-policies-and-devices.md
+          href: /microsoft-365/business-premium/view-policies-and-devices.md
         - name: إزالة بيانات الشركة
-          href: devices/remove-company-data.md
+          href: /microsoft-365/business-premium/m365bp-remove-company-data.md
         - name: إعادة تعيين الأجهزة إلى إعدادات المصنع
           href: devices/reset-devices-to-factory-settings.md
         - name: ميزات حماية الخريطة لإعدادات Intune
-          href: devices/map-protection-features-to-intune-settings.md
-        - name: دول الجهاز
+          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings.md
+        - name: حالات الجهاز
           href: devices/device-states.md
-        - name: إعدادات حماية التطبيقات Windows 10 الكمبيوتر الشخصي
+        - name: حماية التطبيقات الإعدادات الخاصة Windows 10 الكمبيوتر الشخصي
           href: devices/protection-settings-for-windows-10-devices.md
-        - name: تعيين إعدادات حماية التطبيق لنظامي التشغيل Android و iOS
-          href: devices/app-protection-settings-for-android-and-ios.md
-          items:
-            - name: التحقق من صحة الإعدادات على Android أو iOS
-              href: devices/validate-settings-on-android-or-ios.md
-        - name: تحرير إعدادات حماية الجهاز أو إنشائها Windows 10 الكمبيوتر الشخصي
-          href: devices/protection-settings-for-windows-10-pcs.md
-          items:
-            - name: التحقق من صحة الإعدادات على Windows 10 الكمبيوتر الشخصي
-              href: devices/validate-settings-on-windows-10-pcs.md
+        - name: التحقق من صحة الإعدادات على Android أو iOS
+          href: devices/validate-settings-on-android-or-ios.md
+        - name: التحقق من صحة الإعدادات على Windows 10 الكمبيوتر الشخصي
+          href: devices/validate-settings-on-windows-10-pcs.md
         - name: Autopilot
           items:
-            - name: إضافة أجهزة Autopilot وملف التعريف
-              href: devices/add-autopilot-devices-and-profile.md
             - name: إنشاء ملفات تعريف AutoPilot وتحريرها
-              href: devices/create-and-edit-autopilot-profiles.md
+              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles.md
             - name: إنشاء أجهزة AutoPilot وتحريرها
               href: devices/create-and-edit-autopilot-devices.md
-            - name: إعدادات ملف تعريف AutoPilot
-              href: devices/autopilot-profile-settings.md
-        - name: Microsoft 365 وثائق المؤسسة
+        - name: موارد ووثائق Microsoft 365 للمؤسسات
           href: ../enterprise/index.yml
-        - name: التنقل والأمان الأساسيان
+        - name: أساسيات التنقل والأمان
           items:
             - name: نظرة عامة على التنقل والأمان الأساسيين
               href: basic-mobility-security/overview.md
-            - name: مقارنة التنقل والأمان الأساسيين و Intune
+            - name: مقارنة أساسيات التنقل والأمان وIntune
               href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
             - name: إمكانات التنقل والأمان الأساسيين
               href: basic-mobility-security/capabilities.md
             - name: إعداد التنقل والأمان الأساسيين
               href: basic-mobility-security/set-up.md
-            - name: إنشاء سياسات أمان الجهاز
+            - name: إنشاء نُهج أمان الجهاز
               href: basic-mobility-security/create-device-security-policies.md
-            - name: إنشاء شهادة APNs للأجهزة التي تعمل ب iOS
+            - name: إنشاء شهادة APNs للأجهزة التي تعمل بـ iOS
               href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
             - name: إدارة إعدادات الوصول إلى الجهاز
               href: basic-mobility-security/manage-device-access-settings.md
@@ -426,7 +414,7 @@
               href: basic-mobility-security/enroll-your-mobile-device.md
             - name: الخصوصية والأمان
               href: basic-mobility-security/privacy-and-security.md
-            - name: الأسئلة المتكررة
+            - name: الأسئلة الشائعة
               href: basic-mobility-security/frequently-asked-questions.yml
             - name: مسح الأجهزة المحمولة
               href: basic-mobility-security/wipe-mobile-device.md
@@ -434,27 +422,27 @@
               href: basic-mobility-security/turn-off.md
             - name: استكشاف الأخطاء وإصلاحها
               href: basic-mobility-security/troubleshoot.md
-    - name: التبديل من Google Workspace إلى M365
+    - name: التبديل من مساحة عمل Google إلى Microsoft 365
       items:
         - name: نظرة عامة
           href: moveto-microsoft-365/move-from-google-workspace-overview.md
         - name: التسجيل في Microsoft 365
           href: admin-overview/sign-up-for-office-365.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
-        - name: إعداد Microsoft 365 ترحيل Google
+        - name: إعداد Microsoft 365 لترحيل Google
           href: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
-        - name: إعداد سياسات الأمان للأجهزة Windows الأجهزة
+        - name: إعداد سياسات الأمان لأجهزة Windows
           href: setup/secure-win-10-pcs.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
-        - name: إضافة مجال Google Workspace
+        - name: إضافة مجال لمساحة عمل Google
           href: moveto-microsoft-365/add-google-domain.md
-        - name: تثبيت Office وتطبيقات Microsoft Teams
+        - name: تثبيت تطبيقات Office و Microsoft Teams
           href: setup/install-applications.md?toc=/microsoft-365/admin/moveto-microsoft-365/toc.json&bc=/microsoft-365/admin/moveto-microsoft-365/breadcrumb/toc.json
         - name: ترحيل البريد الإلكتروني والتقويم وجهات الاتصال إلى Microsoft 365
           href: moveto-microsoft-365/migrate-email.md
-        - name: الاتصال مجالك Microsoft 365
+        - name: توصيل مجالك بـ Microsoft 365
           href: moveto-microsoft-365/connect-domain-tom365.md
-        - name: استخدام إدارة الترحيل لنقل بيانات الجميع
+        - name: استخدام مدير الترحيل لنقل بيانات الجميع
           href: moveto-microsoft-365/migrate-files-migration-manager.md
-        - name: إلغاء Google Workspace
+        - name: إلغاء مساحة عمل Google
           href: moveto-microsoft-365/cancel-google.md
     - name: العمل مع العملاء
       items:
@@ -470,7 +458,7 @@
           href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
     - name: استكشاف الأخطاء وإصلاحها
       href: /office/troubleshoot/
-    - name: الاتصال بالدعم
+    - name: الاتصال بقسم الدعم
       href: get-help-support.md
     - name: دليل التنقل
       href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json

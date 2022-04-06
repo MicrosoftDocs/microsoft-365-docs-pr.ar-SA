@@ -16,18 +16,18 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5ad0d64ff2f296d0e8282afb02cbe7fc2bb21470
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1c5177946ff3d54ab64c78e9013a8e0c07b0fd11
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63574250"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468116"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>برنامج الحماية من الفيروسات من Microsoft Defender في أمن Windows التطبيق
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 في Windows 10 الإصدار 1703 والإصدارات الأحدث، Windows Defender جزءا من أمن Windows.
 
@@ -36,17 +36,17 @@ ms.locfileid: "63574250"
 > [!IMPORTANT]
 > لا يعمل تعطيل أمن Windows التطبيق على تعطيل برنامج الحماية من الفيروسات من Microsoft Defender أو [Windows Defender.](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) يتم تعطيل هذه البرامج تلقائيا عند تثبيت منتج برنامج الحماية من الفيروسات أو جدار الحماية التابع لجهات خارجية ومستمر في التحديث.
 >
-> إذا قمت بتعطيل خدمة تطبيق أمن Windows، أو قمت بتكوين إعدادات نهج المجموعة المقترنة بها لمنع بدء تشغيلها أو تشغيلها، فقد يعرض تطبيق أمن Windows معلومات مهترفة أو غير دقيقة حول أي من منتجات الحماية من الفيروسات أو جدار الحماية التي قمت بتثبيتها على الجهاز.
+> إذا قمت بتعطيل خدمة تطبيق أمن Windows، أو قمت بتكوين إعدادات نهج المجموعة المقترنة بها لمنع بدء تشغيلها أو تشغيلها، فقد يعرض تطبيق أمن Windows معلومات مهزومة أو غير دقيقة حول أي من منتجات الحماية من الفيروسات أو جدار الحماية التي قمت بتثبيتها على الجهاز.
 > وقد يمنع ذلك أيضا برنامج الحماية من الفيروسات من Microsoft Defender من تمكين نفسه إذا كان لديك برنامج مكافحة الفيروسات قديم أو قديم من جهة خارجية، أو إذا قمت ب إلغاء تثبيت أي منتجات برنامج الحماية من الفيروسات من جهة خارجية ربما قمت بتثبيتها مسبقا.
 > سيؤدي ذلك إلى تقليل حماية جهازك بشكل ملحوظ وقد يؤدي إلى إصابة البرامج الضارة.
 
 راجع المقالة [أمن Windows للحصول](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) على مزيد من المعلومات حول ميزات Windows الأخرى التي يمكن مراقبتها في التطبيق.
 
-تطبيق أمن Windows هو واجهة عميل على Windows 10 الإصدار 1703 والإصدارات الأحدث. لا يتم استخدام Microsoft 365 Defender ويب لمراجعة [Microsoft Defender ل Endpoint وإدارته](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+تطبيق أمن Windows هو واجهة عميل على Windows 10 الإصدار 1703 والإصدارات الأحدث. لا يتم استخدام Microsoft 365 Defender ويب لمراجعة [Microsoft Defender لنقطة النهاية.](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>مراجعة إعدادات الحماية من الفيروسات والتهديدات في تطبيق أمن Windows
 
-:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="إعدادات الحماية من الفيروسات والتهديدات في أمن Windows التطبيق.":::
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="إعدادات الحماية من الفيروسات والتهديدات في أمن Windows التطبيق" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
 1. افتح أمن Windows عن طريق النقر فوق أيقونة الدرع في شريط المهام أو البحث في قائمة **البدء عن أمن Windows**.
 
@@ -55,7 +55,7 @@ ms.locfileid: "63574250"
 تصف الأقسام التالية كيفية تنفيذ بعض المهام الأكثر شيوعا عند مراجعة الحماية من المخاطر التي توفرها برنامج الحماية من الفيروسات من Microsoft Defender في أمن Windows التطبيق.
 
 > [!NOTE]
-> إذا تم تكوين هذه الإعدادات ونشرها باستخدام "نهج المجموعة"، ستكون الإعدادات الموضحة في هذا المقطع باللون الرمادي وغير متوفرة للاستخدام على نقاط النهاية الفردية. يجب نشر التغييرات التي يتم إدخالها من خلال "كائن نهج المجموعة" أولا على نقاط النهاية الفردية قبل أن يتم تحديث الإعداد في Windows الإعدادات. يصف [الموضوع تكوين تفاعل المستخدم مع](configure-end-user-interaction-microsoft-defender-antivirus.md) برنامج الحماية من الفيروسات من Microsoft Defender كيفية تكوين إعدادات تجاوز النهج المحلي.
+> إذا تم تكوين هذه الإعدادات ونشرها باستخدام نهج المجموعة، ستكون الإعدادات الموضحة في هذا القسم باللون الرمادي وغير متوفرة للاستخدام على نقاط النهاية الفردية. يجب نشر التغييرات التي يتم إدخالها نهج المجموعة كائن على نقاط نهاية فردية قبل تحديث الإعداد في Windows الإعدادات. يصف [الموضوع تكوين تفاعل المستخدم مع](configure-end-user-interaction-microsoft-defender-antivirus.md) برنامج الحماية من الفيروسات من Microsoft Defender كيفية تكوين إعدادات تجاوز النهج المحلي.
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>تشغيل فحص باستخدام تطبيق أمن Windows
 
@@ -67,7 +67,7 @@ ms.locfileid: "63574250"
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>مراجعة إصدار تحديث معلومات الأمان وتنزيل التحديثات الأخيرة في تطبيق أمن Windows
 
-:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="رقم إصدار معلومات الأمان.":::
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="رقم إصدار معلومات الأمان" lightbox="../../media/wdav-wdsc-defs.png":::
 
 1. افتح أمن Windows من خلال البحث في قائمة البدء ل *الأمان*، **ثم تحديد أمن Windows**.
 

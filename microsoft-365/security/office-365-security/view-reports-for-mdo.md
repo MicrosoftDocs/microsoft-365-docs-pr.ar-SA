@@ -1,5 +1,5 @@
 ---
-title: عرض Defender لتقارير Office 365
+title: عرض Defender لـ Office 365 التقارير
 f1.keywords:
 - CSH
 ms.author: chrisda
@@ -16,27 +16,27 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: يمكن للمسؤولين التعرف على كيفية البحث عن تقارير Office 365 المتوفرة في مدخل Microsoft 365 Defender واستخدامها.
+description: يمكن للمسؤولين معرفة كيفية البحث عن Defender لـ Office 365 المتوفرة في مدخل Microsoft 365 Defender الإلكتروني واستخدامها.
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: de0dd5b7c0466a722a788ee3fe4e6c843d70f5eb
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: bcc77aaac71c8f8b4c3d3635b596a56ac12a3d7d
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680963"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507480"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>عرض تقارير Office 365 في مدخل Microsoft 365 Defender
+# <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>عرض Defender لـ Office 365 في مدخل Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-يحتوي Microsoft Defender ل Office 365 المؤسسات (على سبيل المثال، اشتراكات Microsoft 365 E5 أو Microsoft Defender ل Office 365 الخطة 1 أو Microsoft Defender ل الوظائف الإضافية Office 365 الخطة 2) على مجموعة متنوعة من التقارير ذات الصلة بالامن. إذا كانت لديك [الأذونات اللازمة](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)، يمكنك عرض هذه التقارير وتنزيلها في Microsoft 365 Defender المدخل.
+Microsoft Defender لـ Office 365 المؤسسات (على سبيل المثال، Microsoft 365 E5 اشتراكات أو Microsoft Defender لـ Office 365 الخطة 1 أو Microsoft Defender لـ Office 365 الإضافية "الخطة 2") على مجموعة متنوعة من التقارير ذات الصلة ب الأمان. إذا كانت لديك [الأذونات اللازمة](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)، يمكنك عرض هذه التقارير وتنزيلها في Microsoft 365 Defender المدخل.
 
 ## <a name="view-and-download-reports"></a>عرض التقارير وتنزيلها
 
@@ -50,11 +50,11 @@ ms.locfileid: "63680963"
 
 1. في Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى **تقارير** >  **& تقارير** \> **التعاون للتنزيل**. الانتقال مباشرة إلى صفحة **التقارير للتنزيل** ، استخدم <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
-![إرسال & إلى صفحة تقارير التعاون في Microsoft 365 Defender الإلكتروني.](../../media/email-collaboration-download-reports.png)
+:::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="صفحة تقارير & البريد الإلكتروني في مدخل Microsoft 365 Defender الإلكتروني" lightbox="../../media/email-collaboration-download-reports.png":::
 
 > [!NOTE]
 >
-> يتم وصف تقارير أمان البريد الإلكتروني التي لا تتطلب استخدام Defender Office 365 في عرض تقارير أمان البريد الإلكتروني [في مدخل Microsoft 365 Defender الإلكتروني](view-email-security-reports.md).
+> يتم وصف تقارير أمان البريد الإلكتروني التي لا Defender لـ Office 365 في عرض تقارير أمان البريد الإلكتروني في Microsoft 365 Defender [المدخل](view-email-security-reports.md).
 >
 > توجد التقارير المرتبطة بتدفق البريد الآن في Exchange إدارة البريد (EAC). لمزيد من المعلومات حول هذه التقارير، راجع تقارير تدفق البريد [في مركز Exchange الجديد](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
@@ -78,7 +78,8 @@ ms.locfileid: "63680963"
 
 في صفحة **البريد & تقارير** التعاون، ابحث عن تقرير زمن إرسال البريد، ثم انقر فوق **عرض التفاصيل**. للذهاب مباشرة إلى التقرير، استخدم <https://security.microsoft.com/mailLatencyReport>.
 
-![عنصر واجهة مستخدم تقرير زمن & البريد الإلكتروني في صفحة تقارير التعاون.](../../media/mail-latency-report-widget.png)
+
+:::image type="content" source="../../media/mail-latency-report-widget.png" alt-text="عنصر واجهة مستخدم تقرير زمن زمن إرسال البريد على صفحة تقارير & البريد الإلكتروني" lightbox="../../media/mail-latency-report-widget.png":::
 
 في صفحة **تقرير زمن** إرسال البريد، تتوفر علامات التبويب التالية في صفحة تقرير زمن زمن **إرسال** البريد:
 
@@ -88,47 +89,50 @@ ms.locfileid: "63680963"
 
 بغض النظر عن علامة التبويب التي تحددها، يعرض المخطط الرسائل المنظمة في الفئات التالية:
 
-- **زمن زمن تسليم البريد**
-- **عمليات التسلل**
+- **الإجمالي**
+- **التهجير**
 
 عند مرورك فوق فئة في المخطط، يمكنك رؤية تصنيف تفصيلي ل زمن زمن الوصول في كل فئة.
 
-![طريقة عرض القيم المئوية ال 50 من تقرير زمن إرسال البريد.](../../media/mail-latency-report-50th-percentile-view.png)
+:::image type="content" source="../../media/mail-latency-report-50th-percentile-view.png" alt-text="طريقة عرض القيم المئوية ال 50 للتقرير &quot;زمن إرسال البريد&quot;" lightbox="../../media/mail-latency-report-50th-percentile-view.png":::
 
 إذا نقرت فوق **تصفية**، يمكنك تصفية كل من المخطط جدول التفاصيل حسب القيم التالية:
 
 - **التاريخ (UTC)**: **تاريخ البدء** **وتاريخ الانتهاء**
 - **طريقة عرض الرسالة**: إحدى القيم التالية:
   - **كافة الرسائل**
-  - **الرسائل التي تحتوي على مرفقات أو عناوين URL**
-  - **الرسائل المهينة**
+  - **الرسائل المرتوبة**: إحدى القيم التالية:
+    - **التوصيل المضمر**: يتضمن الرسائل التي يتم اختبارها بالكامل قبل التسليم.
+    - **التشوه غير المتزامن**
 
 عند الانتهاء من تكوين عوامل التصفية، انقر فوق **تطبيق** عوامل التصفية أو إلغاء الأمر أو **مسحها**.
 
 في جدول التفاصيل أسفل المخطط، تتوفر المعلومات التالية:
 
 - **التاريخ (UTC)**
-- **القيم المئوية**: **50** أو **90** أو **99**
+- **زمن زمن التأخر**
 - **عدد الرسائل**
-- **زمن زمن زمن التأخر الكلي**
+- **النسبة المئوية 50**
+- **النسبة المئوية 90**
+- **النسبة المئوية 99**
 
 على صفحة التقرير الرئيسي، الأيقونة ![تصدير.](../../media/m365-cc-sc-download-icon.png) **[الزر](view-email-security-reports.md#export-report)** "تصدير" متوفر.
 
 ## <a name="threat-protection-status-report"></a>تقرير حالة الحماية من المخاطر
 
-تقرير **حالة** الحماية من المخاطر هو طريقة عرض واحدة تجمع معلومات حول المحتوى الضار والبريد الإلكتروني الضار الذي تم الكشف عنه وحظره بواسطة [Exchange Online Protection (](exchange-online-protection-overview.md)EOP) و Microsoft Defender Office 365. لمزيد من المعلومات، راجع [تقرير حالة الحماية من المخاطر](view-email-security-reports.md#threat-protection-status-report).
+تقرير **حالة الحماية من** المخاطر هو طريقة عرض واحدة تجمع معلومات حول المحتوى الضار والبريد الإلكتروني الضار الذي تم اكتشافه وحظره بواسطة [Exchange Online Protection (](exchange-online-protection-overview.md)EOP) Microsoft Defender لـ Office 365. لمزيد من المعلومات، راجع [تقرير حالة الحماية من المخاطر](view-email-security-reports.md#threat-protection-status-report).
 
 ## <a name="top-senders-and-recipients-report"></a>تقرير أهم المرسلين والمستلمين
 
-يظهر **تقرير أهم المرسلين** والمستلمين أهم المستلمين ل EOP و Defender Office 365 الحماية. لمزيد من المعلومات، راجع [تقرير أهم المرسلين والمستلمين](view-email-security-reports.md#top-senders-and-recipients-report).
+يظهر **تقرير أهم المرسلين** والمستلمين أهم المستلمين ل EOP Defender لـ Office 365 الحماية. لمزيد من المعلومات، راجع [تقرير أهم المرسلين والمستلمين](view-email-security-reports.md#top-senders-and-recipients-report).
 
 ## <a name="url-protection-report"></a>تقرير حماية URL
 
-يوفر **تقرير حماية URL** طرق عرض ملخصة واتجاهات للتهديدات التي تم الكشف عنها والإجراءات التي تم اتخاذها على نقرات URL كجزء من خزينة [الارتباطات](safe-links.md). لن ينقر هذا التقرير فوق بيانات من المستخدمين حيث خزينة نهج الارتباطات المطبق عليه الخيار عدم تعقب  نقرات المستخدم محددا.
+يوفر **تقرير حماية URL** طرق عرض ملخصة واتجاهات للتهديدات التي تم الكشف عنها والإجراءات التي تم اتخاذها على نقرات URL كجزء من خزينة [الارتباطات](safe-links.md). لن ينقر هذا التقرير فوق بيانات من المستخدمين حيث خزينة نهج الارتباطات عندما لا يكون الخيار تعقب نقرات المستخدم محددا.
 
 لعرض التقرير، افتح مدخل Microsoft 365 Defender [،](https://security.microsoft.com) واذهب  \> إلى تقارير البريد الإلكتروني & **البريد** \> الإلكتروني & **تقارير التعاون**. في صفحة **البريد & تقارير التعاون،** ابحث عن **صفحة حماية URL** ، ثم انقر فوق **عرض التفاصيل**. للذهاب مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
-![عنصر واجهة مستخدم تقرير حماية URL على صفحة & البريد الإلكتروني والتعاون.](../../media/url-protection-report-widget.png)
+:::image type="content" source="../../media/url-protection-report-widget.png" alt-text="عنصر واجهة مستخدم تقرير حماية URL على صفحة تقارير & البريد الإلكتروني" lightbox="../../media/url-protection-report-widget.png":::
 
 يتم وصف طرق العرض المتوفرة على صفحة تقرير حماية **URL** في الأقسام التالية.
 
@@ -137,7 +141,7 @@ ms.locfileid: "63680963"
 
 ### <a name="view-data-by-url-click-protection-action"></a>إجراء الحماية من النقر فوق URL لعرض البيانات حسب عنوان URL
 
-![طريقة عرض إجراء الحماية للنقر فوق URL في تقرير حماية URL.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+:::image type="content" source="../../media/url-threat-protection-report-url-click-protection-action-view.png" alt-text="طريقة العرض تحديدا إجراء حماية النقر فوق عنوان URL في تقرير حماية URL" lightbox="../../media/url-threat-protection-report-url-click-protection-action-view.png":::
 
 تظهر **طريقة عرض البيانات حسب URL** طريقة عرض إجراء الحماية بالنقر فوق URL عدد نقرات URL التي ينقر عليها المستخدمون في المؤسسة ونتائج النقر:
 
@@ -180,7 +184,7 @@ ms.locfileid: "63680963"
 
 ### <a name="view-data-by-url-click-by-application"></a>عرض البيانات حسب عنوان URL النقر حسب التطبيق
 
-![انقر فوق URL حسب طريقة عرض التطبيق في تقرير حماية URL.](../../media/url-threat-protection-report-url-click-by-application-view.png)
+:::image type="content" source="../../media/url-threat-protection-report-url-click-by-application-view.png" alt-text="طريقة عرض إجراء الحماية للنقر فوق URL في تقرير حماية URL" lightbox="../../media/url-threat-protection-report-url-click-by-application-view.png":::
 
 تعرض **طريقة عرض البيانات بواسطة URL** بالنقر حسب التطبيق عدد نقرات URL حسب التطبيقات التي تدعم خزينة الارتباطات:
 
@@ -213,8 +217,8 @@ ms.locfileid: "63680963"
 
 |تقرير|الموضوع|
 |---|---|
-|**المستكشف** (Microsoft Defender Office 365 الخطة 2) أو الكشف في الوقت **الحقيقي (Microsoft** Defender Office 365 الخطة 1)|[مستكشف التهديدات (والكشف في الوقت الحقيقي)](threat-explorer.md)|
-|تقارير أمان البريد الإلكتروني التي لا تتطلب استخدام Defender Office 365|[عرض تقارير أمان البريد الإلكتروني في مدخل Microsoft 365 Defender الإلكتروني](view-email-security-reports.md)|
+|**المستكشف** (Microsoft Defender لـ Office 365 2) **أو الكشف في** الوقت الحقيقي (Microsoft Defender لـ Office 365 الخطة 1)|[مستكشف التهديدات (والكشف في الوقت الحقيقي)](threat-explorer.md)|
+|تقارير أمان البريد الإلكتروني التي لا تتطلب Defender لـ Office 365|[عرض تقارير أمان البريد الإلكتروني في مدخل Microsoft 365 Defender الإلكتروني](view-email-security-reports.md)|
 |تقارير تدفق البريد في Exchange إدارة البريد (EAC)|[تقارير تدفق البريد في مركز إدارة Exchange الجديد](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 
 Cmdlets لتقارير PowerShell:
@@ -229,7 +233,7 @@ Cmdlets لتقارير PowerShell:
 |حالة تدفق البريد|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |المستخدمون المنتحلون|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>ما هي الأذونات المطلوبة لعرض تقارير Office 365 الخاصة؟
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>ما هي الأذونات المطلوبة لعرض Defender لـ Office 365 التقارير؟
 
 لعرض التقارير الموضحة في هذه المقالة واستخدامها، يجب أن تكون عضوا في إحدى مجموعات الدور التالية في مدخل Microsoft 365 Defender:
 
@@ -244,7 +248,7 @@ Cmdlets لتقارير PowerShell:
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>ماذا لو لم تعرض التقارير البيانات؟
 
-إذا لم تكن ترى البيانات في تقارير defender for Office 365، فتحقق مرة أخرى من إعداد سياساتك بشكل صحيح. يجب أن يكون [لدى خزينة](set-up-safe-links-policies.md) لديك خزينة الارتباطات ونهج [](set-up-safe-attachments-policies.md) المرفقات المعرفة لكي يكون Defender Office 365 الحماية في مكانه. راجع أيضا [الحماية من البريد العشوائي والبرامج الضارة](anti-spam-and-anti-malware-protection.md).
+إذا لم تكن ترى البيانات في تقارير Defender لـ Office 365، فتحقق مرة أخرى من إعداد سياساتك بشكل صحيح. يجب أن يكون [لدى مؤسستك خزينة الارتباطات](set-up-safe-links-policies.md) خزينة الارتباطات [](set-up-safe-attachments-policies.md) المحددة لكي Defender لـ Office 365 حماية المرفقات في مكانها. راجع أيضا [الحماية من البريد العشوائي والبرامج الضارة](anti-spam-and-anti-malware-protection.md).
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

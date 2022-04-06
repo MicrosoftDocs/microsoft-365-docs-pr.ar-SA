@@ -9,9 +9,9 @@
           href: mdb-simplified-configuration.md
         - name: مقارنة الخطط للشركات الصغيرة والمتوسطة الحجم
           href: compare-mdb-m365-plans.md
-        - name: التكامل مع Microsoft 365 المنارة
+        - name: التكامل مع Microsoft 365 Lighthouse
           href: mdb-lighthouse-integration.md
-    - name: بدء العمل
+    - name: بدء الاستخدام
       items:
         - name: الحصول على Defender for Business
           href: get-defender-business.md
@@ -19,7 +19,7 @@
           href: mdb-use-wizard.md
         - name: بدء استخدام المدخل
           href: mdb-get-started.md
-        - name: عرض لوحة إدارة الثغرات الأمنية المعلومات
+        - name: عرض لوحة معلومات إدارة الثغرات الأمنية
           href: mdb-view-tvm-dashboard.md
         - name: تجربة البرامج التعليمية والمحاكاة
           href: mdb-tutorials.md
@@ -33,15 +33,15 @@
           href: mdb-roles-permissions.md
         - name: الخطوة 3 - إعداد إعلامات البريد الإلكتروني
           href: mdb-email-notifications.md
-        - name: الخطوة 4 - أجهزة الألواح
+        - name: الخطوة 4 - إلحاق الأجهزة
           href: mdb-onboard-devices.md
-        - name: الخطوة 5 - تكوين سياسات الأمان
+        - name: الخطوة 5 - تكوين نهج الأمان
           href: mdb-configure-security-settings.md
     - name: عرض التهديدات المكتشفة والاستجابة لها
       items:
         - name: عرض الأحداث وإدارتها
           href: mdb-view-manage-incidents.md
-        - name: الاستجابة للتهديدات وتخفيفها
+        - name: الاستجابة للتهديدات وتخفيف آثارها
           href: mdb-respond-mitigate-threats.md
         - name: مراجعة إجراءات المعالجة
           href: mdb-review-remediation-actions.md
@@ -51,13 +51,13 @@
       items:
         - name: عرض السياسات وتحريرها وإنشاءها
           href: mdb-view-edit-create-policies.md
-        - name: طلب النهج
+        - name: ترتيب السياسة
           href: mdb-policy-order.md
         - name: إعدادات حماية الجيل التالي
           href: mdb-next-gen-configuration-settings.md
         - name: إعدادات جدار الحماية
           href: mdb-firewall.md
-        - name: إدارة القواعد لنهج جدار الحماية
+        - name: إدارة القواعد لسياسات جدار الحماية
           href: mdb-custom-rules-firewall.md
     - name: إدارة الأجهزة
       items:
@@ -65,15 +65,15 @@
           href: mdb-manage-devices.md
         - name: إنشاء مجموعات الأجهزة
           href: mdb-create-edit-device-groups.md
-    - name: معلومات مرجعية
+    - name: معلومات المرجع
       items:
         - name: كيفية الحصول على المساعدة أو الاتصال بالدعم
           href: mdb-get-help.md
-        - name: الأسئلة المتكررة
+        - name: الأسئلة الشائعة
           href: mdb-faq.yml
         - name: استكشاف الأخطاء وإصلاحها
           href: mdb-troubleshooting.yml
         - name: Microsoft 365 Business Premium
-          href: /microsoft-365/business-premium
-        - name: Microsoft 365 المنارة
+          href: /microsoft-365/business-premium/
+        - name: Microsoft 365 Lighthouse
           href: /microsoft-365/lighthouse/m365-lighthouse-overview

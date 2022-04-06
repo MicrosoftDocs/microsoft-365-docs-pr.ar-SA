@@ -1,5 +1,5 @@
 ---
-title: نظرة عامة Microsoft 365 المنارة
+title: نظرة عامة على Microsoft 365 Lighthouse
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -17,22 +17,22 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: بالنسبة إلى موفري الخدمات المدارة (MSPs)، تعرف على Microsoft 365 منارة تساعدك على تأمين مستأجري العملاء وإدارتهم في موقع واحد.
-ms.openlocfilehash: 88b6a3b1afff0905458f5ade7e4e91136b2c9d38
-ms.sourcegitcommit: 584b4757f715a3eedf748858461c568f45137438
+ms.openlocfilehash: fde2ee27692b1d8fb53d46077cf58deb6d9a0550
+ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63575591"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64645045"
 ---
-# <a name="overview-of-microsoft-365-lighthouse"></a>نظرة عامة Microsoft 365 المنارة
+# <a name="overview-of-microsoft-365-lighthouse"></a>نظرة عامة على Microsoft 365 Lighthouse
 
-Microsoft 365 المنارة هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين الأجهزة والبيانات والمستخدمين وإدارتهم على نطاق واسع لعملاء الشركات الصغيرة والمتوسطة الحجم (SMB) الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3. 
+Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين الأجهزة والبيانات والمستخدمين وإدارتهم على نطاق واسع لعملاء الشركات الصغيرة والمتوسطة الحجم الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. 
 
-تبسط "المنارة" عملية Microsoft 365 Business Premium المستأجرين Microsoft 365 E3 من خلال التوصية باساسيات تكوين الأمان المصممة خصيصا لعملاء SMB وتوفير طرق عرض متعددة المستأجرين عبر كل بيئات العملاء. باستخدام "المنارة"، يمكن لمزدبير MSPs توسيع نطاق إدارة عملائهم والتركيز على ما هو أكثر أهمية، والعثور بسرعة على المخاطر والتحقق من صحتها، واتخاذ الإجراءات اللازمة للوصول بعملائهم إلى حالة سليمة وآمنة.
+تبسط "المنارة" عملية التهيئة لمستأجري Microsoft 365 Business Premium Microsoft 365 E3 و Windows 365 Business من خلال التوصية باساسيات تكوين الأمان المصممة خصيصا لعملاء SMB وتوفير طرق عرض متعددة المستأجرين عبر كل بيئات العملاء. باستخدام "المنارة"، يمكن لمزدبير MSPs توسيع نطاق إدارة عملائهم والتركيز على ما هو أكثر أهمية، والعثور بسرعة على المخاطر والتحقق من صحتها، واتخاذ الإجراءات اللازمة للوصول بعملائهم إلى حالة سليمة وآمنة.
 
-لا تقترن أي تكاليف إضافية باستخدام "المنارة" لإدارة Microsoft 365 والأجهزة المتصلة. تتوفر المنارة لميزة MSPs المسجلين في برنامج Cloud Solution Provider (CSP) وخدمة عملاء SMB الذين Microsoft 365 Business Premium اشتراك Microsoft 365 E3 اشتراك.
+لا تقترن أي تكاليف إضافية باستخدام "المنارة" لإدارة Microsoft 365 والأجهزة المتصلة. تتوفر المنارة ل MSPs المسجلين في برنامج Cloud Solution Provider (CSP) وخدمة عملاء SMB الذين Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business اشتراك.
 
-استخدام المنارة من قبل شركاء قناة Microsoft CSP الذين لديهم عملاء يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 معتمد. يشمل ذلك شركاء CSP الذين يباشرون التعامل مباشرة مع Microsoft وأولئك الذين يباشرون العمل من خلال موفر غير مباشر (موزع). 
+يتم دعم استخدام "المنارة" من قبل شركاء قناة Microsoft CSP الذين لديهم عملاء يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. يشمل ذلك شركاء CSP الذين يباشرون التعامل مباشرة مع Microsoft وأولئك الذين يباشرون العمل من خلال موفر غير مباشر (موزع). 
 
 > [!IMPORTANT] 
 > لاستخدام المنارة، يجب على MSPs ومستأجري العملاء تلبية المتطلبات المذكورة في Microsoft 365 [المنارة](m365-lighthouse-requirements.md).     
@@ -68,4 +68,4 @@ Microsoft 365 المنارة هو مدخل مسؤول يساعد موفري ال
 [Microsoft 365 نظرة عامة على صفحة مستأجري المنارة](m365-lighthouse-tenants-page-overview.md) (مقالة)   
 [Microsoft 365 نظرة عامة على توافق جهاز المنارة](m365-lighthouse-device-compliance-page-overview.md) (مقالة)   
 [Microsoft 365 الأسئلة الشائعة حول المنارة](m365-lighthouse-faq.yml) (مقالة)   
-[Microsoft Defender for Business](../security/defender-business/index.yml) (صفحة الارتباط)
+[Microsoft Defender for Business](../security/defender-business/index.yml) (صفحة ارتباط)

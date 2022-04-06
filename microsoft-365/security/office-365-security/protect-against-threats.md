@@ -1,5 +1,5 @@
 ---
-title: الحماية من التهديدات في Microsoft Defender ل Office 365، مكافحة البرامج الضارة، مكافحة التصيد الاحتيالي، مكافحة البريد العشوائي، ارتباطات خزينة، مرفقات خزينة، إزالة تلقائية لمدة ساعة (ZAP)، تكوين أمان MDO
+title: الحماية من التهديدات في Microsoft Defender لـ Office 365، مكافحة البرامج الضارة، مكافحة التصيد الاحتيالي، مكافحة البريد العشوائي، ارتباطات خزينة، مرفقات خزينة، إزالة تلقائية لمدة ساعة (ZAP)، تكوين أمان MDO
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,12 +20,12 @@ description: يمكن للمسؤولين التعرف على الحماية من
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 280cbd310742ecfe31ac8b565d285f7b464d3e24
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e5a0be5171a2de07792cd259dc6547046d7c1630
+ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683834"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "64507157"
 ---
 # <a name="protect-against-threats"></a>الحماية من التهديدات
 
@@ -33,15 +33,15 @@ ms.locfileid: "63683834"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-إليك دليل البدء السريع الذي يكسر تكوين Defender Office 365 إلى أجزاء. إذا كنت تستخدم ميزات الحماية من المخاطر في Office 365، لست متأكدا من المكان الذي يجب البدء منه، أو إذا تعلمت أفضل طريقة يمكنك القيام بها، فاستخدم هذه الإرشادات كقائمة اختيار ونقطة بداية.
+إليك دليل البدء السريع الذي يكسر تكوين Defender لـ Office 365 إلى أجزاء. إذا كنت تستخدم ميزات الحماية من المخاطر في Office 365، لست متأكدا من المكان الذي يجب البدء منه، أو إذا تعلمت أفضل طريقة يمكنك القيام بها، فاستخدم هذه الإرشادات كقائمة اختيار ونقطة بداية.
 
 > [!IMPORTANT]
 > **يتم تضمين الإعدادات** الأولية الموصى بها لكل نوع من النهج؛ ومع ذلك، تتوفر العديد من الخيارات، كما يمكنك ضبط الإعدادات لتلبية احتياجات مؤسستك المحددة. اسمح ب 30 دقيقة تقريبا لكي تعمل سياساتك أو تغييراتك في مركز البيانات.
 >
-> لتخطي التكوين اليدوي لمعظم السياسات في Defender for Office 365، يمكنك استخدام سياسات الأمان المحددة مسبقا على المستوى القياسي أو الصارم. لمزيد من المعلومات، راجع [سياسات الأمان التي تم الإعداد المسبق لها في EOP و Microsoft Defender Office 365](preset-security-policies.md).
+> لتخطي التكوين اليدوي لمعظم Defender لـ Office 365، يمكنك استخدام سياسات الأمان المحددة مسبقا على المستوى القياسي أو الصارم. لمزيد من المعلومات، راجع [إعدادات مسبقة لنهج الأمان في EOP Microsoft Defender لـ Office 365](preset-security-policies.md).
 
 ## <a name="requirements"></a>المتطلبات
 
@@ -50,7 +50,7 @@ ms.locfileid: "63683834"
 يتم تضمين ميزات الحماية من المخاطر في كل اشتراكات *Microsoft أو* Office 365 اشتراكات أخرى؛ ومع ذلك، تحتوي بعض الاشتراكات على ميزات متقدمة. يسرد الجدول أدناه ميزات الحماية المضمنة في هذه المقالة مع الحد الأدنى لمتطلبات الاشتراك.
 
 > [!TIP]
-> لاحظ أن الخطوات التي تتجاوز التوجيهات اللازمة ل تشغيل التدقيق،  تبدأ في مكافحة البرامج الضارة، و مكافحة التصيد الاحتيالي، و مكافحة البريد العشوائي، التي يتم وضع علامة عليها كجزء من Office 365 Exchange Online Protection (**EOP**). قد يبدو هذا الأمر غريبا في مقالة Defender for Office 365، حتى تتذكر أن (**Defender for Office 365**) يحتوي على EOP ويبني عليه.
+> لاحظ أن الخطوات التي تتجاوز التوجيهات اللازمة ل تشغيل التدقيق،  تبدأ في مكافحة البرامج الضارة، و مكافحة التصيد الاحتيالي، و مكافحة البريد العشوائي، التي يتم وضع علامة عليها كجزء من Office 365 Exchange Online Protection (**EOP**). قد يبدو ذلك غريبا في مقالة Defender لـ Office 365، حتى **تتذكر (Defender لـ Office 365**) يحتوي على EOP ويبني عليه.
 
 |نوع الحماية|متطلبات الاشتراك|
 |---|---|
@@ -58,11 +58,11 @@ ms.locfileid: "63683834"
 |الحماية من البرامج الضارة|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |الحماية من التصيد الاحتيالي|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |الحماية من البريد العشوائي|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|الحماية من عناوين URL والملفات الضارة في البريد الإلكتروني Office المستندات (خزينة ارتباطات خزينة المرفقات)|[Microsoft Defender Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|الحماية من عناوين URL والملفات الضارة في البريد الإلكتروني Office المستندات (خزينة ارتباطات خزينة المرفقات)|[Microsoft Defender لـ Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>الأدوار والأذونات
 
-لتكوين Defender Office 365، يجب أن يتم تعيين دور مناسب لك. أطلع على الجدول أدناه للأدوار التي يمكنها القيام بهذه الإجراءات.
+لتكوين Defender لـ Office 365، يجب أن يتم تعيين دور مناسب لك. أطلع على الجدول أدناه للأدوار التي يمكنها القيام بهذه الإجراءات.
 
 |مجموعة الدور أو الدور|مكان معرفة المزيد|
 |---|---|
@@ -97,13 +97,13 @@ ms.locfileid: "63683834"
 
 للحصول على إرشادات مفصلة لتكوين سياسات مكافحة البرامج الضارة، راجع تكوين سياسات مكافحة البرامج الضارة [في EOP](configure-anti-malware-policies.md).
 
-## <a name="part-2---anti-phishing-protection-in-eop-and-defender-for-office-365"></a>الجزء 2 - الحماية من التصيد الاحتيالي في EOP و Defender Office 365
+## <a name="part-2---anti-phishing-protection-in-eop-and-defender-for-office-365"></a>الجزء 2 - الحماية من التصيد الاحتيالي في EOP Defender لـ Office 365
 
-[تتوفر الحماية من التصيد](anti-phishing-protection.md) الاحتيالي في الاشتراكات التي تتضمن [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). تتوفر الحماية المتقدمة من التصيد الاحتيالي في [Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+[تتوفر الحماية من التصيد](anti-phishing-protection.md) الاحتيالي في الاشتراكات التي تتضمن [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description). تتوفر الحماية المتقدمة من التصيد الاحتيالي [في Defender لـ Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-لمزيد من المعلومات حول الإعدادات الموصى بها لنهج مكافحة التصيد الاحتيالي، راجع إعدادات نهج مكافحة التصيد الاحتيالي في [EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) وإعدادات نهج مكافحة التصيد الاحتيالي في [Microsoft Defender Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
+لمزيد من المعلومات حول الإعدادات المستحسنة لنهج مكافحة التصيد الاحتيالي، راجع إعدادات نهج مكافحة التصيد الاحتيالي في [EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) وإعدادات نهج مكافحة التصيد الاحتيالي في [Microsoft Defender لـ Office 365.](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)
 
-يصف الإجراء التالي كيفية تكوين نهج مكافحة التصيد الاحتيالي الافتراضي. الإعدادات التي تتوفر فقط في Defender for Office 365 تم وضع علامة واضحة عليها.
+يصف الإجراء التالي كيفية تكوين نهج مكافحة التصيد الاحتيالي الافتراضي. الإعدادات التي تتوفر فقط في Defender لـ Office 365 تم وضع علامة واضحة عليها.
 
 1. افتح صفحة **مكافحة التصيد** الاحتيالي في Microsoft 365 Defender في <https://security.microsoft.com/antiphishing>.
 
@@ -139,11 +139,11 @@ ms.locfileid: "63683834"
 
      عند الانتهاء، انقر فوق **حفظ**.
 
-   <sup>\*</sup>يتوفر هذا الإعداد فقط في Defender for Office 365.
+   <sup>\*</sup>يتوفر هذا الإعداد فقط في Defender لـ Office 365.
 
 4. انقر **فوق حفظ** ثم فوق **إغلاق**
 
-للحصول على إرشادات مفصلة حول تكوين سياسات مكافحة التصيد الاحتيالي، راجع تكوين سياسات مكافحة التصيد الاحتيالي في [EOP](configure-anti-phishing-policies-eop.md) وتكوين سياسات مكافحة التصيد الاحتيالي في [Microsoft Defender Office 365](configure-mdo-anti-phishing-policies.md).
+للحصول على إرشادات مفصلة لتكوين سياسات مكافحة التصيد الاحتيالي، راجع تكوين سياسات مكافحة التصيد الاحتيالي في [EOP](configure-anti-phishing-policies-eop.md) وتكوين سياسات مكافحة التصيد الاحتيالي في [Microsoft Defender لـ Office 365.](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>الجزء 3 - الحماية من البريد العشوائي في EOP
 
@@ -186,18 +186,18 @@ ms.locfileid: "63683834"
 
 للحصول على إرشادات مفصلة حول تكوين سياسات مكافحة البريد العشوائي، راجع تكوين سياسات مكافحة البريد العشوائي [في EOP](configure-your-spam-filter-policies.md).
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>الجزء 4 - الحماية من عناوين URL والملفات الضارة (خزينة والمرفقات خزينة في Defender for Office 365)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>الجزء 4 - الحماية من عناوين URL والملفات الضارة (خزينة والمرفقات خزينة في Defender لـ Office 365)
 
-تتوفر الحماية بنقرة واحدة من عناوين URL والملفات الضارة في الاشتراكات التي تتضمن [Microsoft Defender Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). يتم إعداده من خلال خزينة [المرفقات](safe-attachments.md) [خزينة الارتباطات](safe-links.md).
+تتوفر الحماية بنقرة واحدة من عناوين URL والملفات الضارة في الاشتراكات [التي تتضمن Microsoft Defender لـ Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). يتم إعداده من خلال خزينة [المرفقات](safe-attachments.md) [خزينة الارتباطات](safe-links.md).
 
-### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>خزينة المرفقات في Microsoft Defender Office 365
+### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>خزينة المرفقات في Microsoft Defender لـ Office 365
 
 لمزيد من المعلومات حول الإعدادات الموصى بها خزينة المرفقات، راجع .[ خزينة إعدادات المرفقات](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
 1. افتح خزينة **المرفقات** في مدخل Microsoft 365 Defender في <https://security.microsoft.com/safeattachmentv2>.
 
 2. في صفحة **خزينة** المرفقات، انقر فوق إعدادات عام، ثم قم بتكوين الإعدادات التالية على قائمة منتحلة التي تظهر:
-   - **قم تشغيل Defender Office 365 SharePoint** OneDrive و Microsoft Teams: تشغيل هذا الإعداد (![تشغيل).](../../media/scc-toggle-on.png)).
+   - **قم Defender لـ Office 365 SharePoint** OneDrive و Microsoft Teams: تشغيل هذا الإعداد (![تشغيل).](../../media/scc-toggle-on.png)).
 
      > [!IMPORTANT]
      > **قبل تشغيل خزينة** مرفقات SharePoint OneDrive و Microsoft Teams، تحقق من أن تسجيل التدقيق تم تحويله إلى مؤسستك. يتم هذا الإجراء عادة من قبل شخص لديه دور "سجلات التدقيق" المعين في Exchange Online. لمزيد من المعلومات، راجع [تشغيل البحث في سجل التدقيق أو إيقاف تشغيله](../../compliance/turn-audit-log-search-on-or-off.md)!
@@ -230,11 +230,11 @@ ms.locfileid: "63683834"
 
 للحصول على إرشادات مفصلة حول خزينة المرفقات والإعدادات العامة للمرفقات خزينة المرفقات، راجع المواضيع التالية:
 
-- [إعداد خزينة المرفقات في Microsoft Defender Office 365](set-up-safe-attachments-policies.md)
+- [إعداد خزينة المرفقات في Microsoft Defender لـ Office 365](set-up-safe-attachments-policies.md)
 - [قم خزينة المرفقات SharePoint OneDrive و Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md)
 - [أمان المستندات في Microsoft 365 E5](safe-docs.md)
 
-### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>خزينة الارتباطات في Microsoft Defender Office 365
+### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>خزينة الارتباطات في Microsoft Defender لـ Office 365
 
 لمزيد من المعلومات حول الإعدادات الموصى بها خزينة الارتباطات، راجع [خزينة الارتباطات](recommended-settings-for-eop-and-office365.md#safe-links-settings).
 
@@ -255,16 +255,20 @@ ms.locfileid: "63683834"
      - **الاسم**: أدخل شيئا فريدا ووصفيا.
      - **الوصف**: أدخل وصفا اختياريا.
    - **صفحة المستخدمون** والمجالات: نظرا لأن هذا هو النهج الأول الذي يجب عليك القيام به وتريد على المرجح تكبير نطاق التغطية، [](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) فكر في إدخال المجالات المقبولة في **المربع** المجالات. وبخلاف ذلك، يمكنك **استخدام المربعين** المستخدمون والمجموعات للحصول على تحكم أكثر تفردا. يمكنك تحديد استثناءات عن طريق تحديد استبعاد هؤلاء المستخدمين والمجموعات **والمجالات** وأدخل القيم.
-   - **صفحة إعدادات الحماية** :
-     - **حدد الإجراء الخاص عناوين URL غير المعروفة** التي قد تكون ضارة في الرسائل: تشغيل هذا **الإعداد**.
-     - **حدد الإجراء الخاص ب عناوين URL** غير معروفة أو يحتمل أن تكون ضارة Microsoft Teams: تشغيل هذا **الإعداد**. في مارس 2020، يتوفر هذا الإعداد في Preview وهو متوفر أو يعمل فقط لأعضاء برنامج Microsoft Teams اعتماد التقنيات (TAP).
-     - **تطبيق مسح URL في الوقت الحقيقي بحثا عن الارتباطات** والربطات المريبة التي تشير إلى الملفات: حدد هذا الإعداد (تشغيل).
+   - **عنوان & انقر فوق صفحة إعدادات الحماية** :
+     - **إجراء على عناوين URL الضارة المحتملة ضمن مقطع رسائل البريد** الإلكتروني:
+       - **في: خزينة الارتباطات إلى** قائمة الارتباطات المعروفة والضارة عندما ينقر المستخدمون فوق الارتباطات في البريد الإلكتروني: حدد الإعداد الخاص به (تشغيل).
+       - **تطبيق خزينة ارتباطات إلى رسائل البريد الإلكتروني المرسلة داخل المؤسسة**: حدد هذا الإعداد (تشغيل).
+       - **تطبيق مسح URL في الوقت الحقيقي بحثا عن الارتباطات** والربطات المريبة التي تشير إلى الملفات: حدد هذا الإعداد (تشغيل).
        - **انتظر حتى اكتمال فحص URL قبل تسليم الرسالة**: حدد هذا الإعداد (تشغيل).
-     - **تطبيق خزينة ارتباطات إلى رسائل البريد الإلكتروني المرسلة داخل المؤسسة**: حدد هذا الإعداد (تشغيل).
-     - **عدم تعقب نقرات المستخدم**: تحقق من أن هذا الإعداد غير محدد (تم إيقاف تشغيله).
-     - **لا تدع المستخدمين ينقرون فوق عنوان URL الأصلي**: تحقق من تشغيل هذا الإعداد (محدد).
-     - عرض العلامة التجارية لمنظمتك على صفحات الإعلامات **والتحذيرات:** يكون تحديد هذا الإعداد (تشغيل هذا الإعداد) ذا معنى فقط بعد اتباع الإرشادات الواردة في [تخصيص Microsoft 365](../../admin/setup/customize-your-organization-theme.md) لمنظمتك لتحميل شعار الشركة.
-     - **لا تعيد كتابة عناوين URL التالية**: لا توجد توصيات محددة لهذا الإعداد. لمزيد من المعلومات، راجع "عدم إعادة كتابة قوائم [عناوين URL التالية" في خزينة الارتباطات.](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
+       - **لا تعيد كتابة عناوين URL، قم بالتحقق خزينة ارتباطات API** فقط: تحقق من أن هذا الإعداد غير محدد (إيقاف التشغيل).
+     - **لا تعيد كتابة عناوين URL التالية في البريد الإلكتروني**: لا توجد توصيات محددة لهذا الإعداد. لمزيد من المعلومات، راجع "عدم إعادة كتابة قوائم [عناوين URL التالية" في خزينة الارتباطات.](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
+     - **إجراء عناوين URL التي قد تكون ضارة في Microsoft Teams**:
+       - ***في: خزينة التحقق** من قائمة الارتباطات المعروفة والضارة عندما ينقر المستخدمون فوق الارتباطات في Microsoft Teams: حدد هذا الإعداد (تشغيل).
+     - **انقر فوق المقطع إعدادات الحماية** :
+       - **تعقب نقرات المستخدم**: تحقق من تحديد هذا الإعداد (تم تشغيله).
+       - **السماح للمستخدمين بالنقر عبر عنوان URL الأصلي**: إيقاف تشغيل هذا الإعداد (غير محدد).
+       - عرض العلامة التجارية لمنظمتك على صفحات الإعلامات **والتحذيرات:** يكون تحديد هذا الإعداد (تشغيل هذا الإعداد) ذا معنى فقط بعد اتباع الإرشادات الواردة في [تخصيص Microsoft 365](../../admin/setup/customize-your-organization-theme.md) لمنظمتك لتحميل شعار الشركة.
    - **صفحة الإعلامات** :
      - **ما الذي ترغب في إعلام المستخدمين به؟** مقطع: بشكل اختياري، يمكنك تحديد **استخدام نص إعلام مخصص** لإدخال نص إعلام مخصص لاستخدامه. يمكنك أيضا تحديد **استخدام المترجم من Microsoft الترجمة التلقائية** لترجمة نص الإعلام المخصص إلى لغة المستخدم. بخلاف ذلك، **اترك استخدام نص الإعلام الافتراضي** محددا.
 
@@ -272,8 +276,8 @@ ms.locfileid: "63683834"
 
 للحصول على إرشادات مفصلة لتكوين خزينة الارتباطات والإعدادات العامة ل خزينة الارتباطات، راجع المواضيع التالية:
 
-- [إعداد خزينة الارتباطات في Microsoft Defender Office 365](set-up-safe-links-policies.md)
-- [تكوين الإعدادات خزينة ارتباطات في Microsoft Defender Office 365](configure-global-settings-for-safe-links.md)
+- [إعداد خزينة الارتباطات في Microsoft Defender لـ Office 365](set-up-safe-links-policies.md)
+- [تكوين الإعدادات خزينة ارتباطات في Microsoft Defender لـ Office 365](configure-global-settings-for-safe-links.md)
 
 ### <a name="now-set-up-alerts-for-detected-files-in-sharepoint-online-or-onedrive-for-business"></a>قم الآن بإعداد تنبيهات للملفات التي تم الكشف عنها في SharePoint Online أو OneDrive for Business
 
@@ -312,7 +316,7 @@ ms.locfileid: "63683834"
 > عند الانتهاء من التكوين، استخدم هذه الارتباطات لبدء التحقيق في حمل العمل:
 >
 > - [تقرير حالة الحماية من المخاطر](view-email-security-reports.md#threat-protection-status-report)
-> - [استخدم مدخل Microsoft 365 Defender لإدارة الملفات المعزولة في Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+> - [استخدم مدخل Microsoft 365 Defender لإدارة الملفات المعزولة في Defender لـ Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 > - [ما يجب فعله عند العثور على ملف ضار في SharePoint أو OneDrive أو Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 > - [إدارة الرسائل والملفات المعزولة كمسؤول في Microsoft 365](manage-quarantined-messages-and-files.md)
 
@@ -322,6 +326,6 @@ ms.locfileid: "63683834"
 
 |ما يجب فعله|الموارد لمعرفة المزيد|
 |---|---|
-|تعرف على كيفية عمل ميزات الحماية من المخاطر لمنظمتك من خلال عرض التقارير|[تقارير أمان البريد الإلكتروني](view-email-security-reports.md) <p> [تقارير Microsoft Defender Office 365](view-reports-for-mdo.md) <p> [مستكشف التهديدات](threat-explorer.md)|
+|تعرف على كيفية عمل ميزات الحماية من المخاطر لمنظمتك من خلال عرض التقارير|[تقارير أمان البريد الإلكتروني](view-email-security-reports.md) <p> [تقارير Microsoft Defender لـ Office 365](view-reports-for-mdo.md) <p> [مستكشف التهديدات](threat-explorer.md)|
 |مراجعة سياسات الحماية من المخاطر ومراجعتها بشكل دوري حسب الحاجة|[نقاط آمنة](../defender/microsoft-secure-score.md) <p> [Microsoft 365 ميزات الاستجابة والتحري عن المخاطر](./office-365-ti.md)|
 |مشاهدة الميزات الجديدة وتحديثات الخدمة|[خيارات الإصدار القياسي والمستهدف](../../admin/manage/release-options-in-office-365.md) <p> [مركز الرسائل](../../admin/manage/message-center.md) <p> [خارطة طريق Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [أوصاف الخدمة](/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

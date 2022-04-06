@@ -1,8 +1,8 @@
 ---
-title: نشر Microsoft Defender ل Endpoint على Linux يدويا
+title: نشر Microsoft Defender لنقطة النهاية على Linux يدويا
 ms.reviewer: ''
-description: يصف كيفية نشر Microsoft Defender ل Endpoint على Linux يدويا من سطر الأوامر.
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، linux، التثبيت، النشر، إزالة التثبيت، الملل، غير مقبول، linux، redhat، ubuntu، debian، sles، suse، centos، fedora، amazon linux 2
+description: يصف كيفية نشر Microsoft Defender لنقطة النهاية على Linux يدويا من سطر الأوامر.
+keywords: microsoft, defender, Microsoft Defender لنقطة النهاية, linux, installation, deploy, deploy, uninstall,ible, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,26 +16,26 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da05d702a2cb074ece2fec74371e7b5f560cb1ed
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: 4d66dad57fa7b045062a0300327b76030c33dfab
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63575797"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64468160"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>نشر Microsoft Defender ل Endpoint على Linux يدويا
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>نشر Microsoft Defender لنقطة النهاية على Linux يدويا
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 
-تصف هذه المقالة كيفية نشر Microsoft Defender ل Endpoint على Linux يدويا. يتطلب النشر الناجح إكمال كل المهام التالية:
+تصف هذه المقالة كيفية نشر Microsoft Defender لنقطة النهاية على Linux يدويا. يتطلب النشر الناجح إكمال كل المهام التالية:
 
   - [المتطلبات الأساسية ومتطلبات النظام](#prerequisites-and-system-requirements)
   - [تكوين مستودع برامج Linux](#configure-the-linux-software-repository)
@@ -48,7 +48,7 @@ ms.locfileid: "63575797"
 
 ## <a name="prerequisites-and-system-requirements"></a>المتطلبات الأساسية ومتطلبات النظام
 
-قبل البدء، راجع [Microsoft Defender ل Endpoint على Linux](microsoft-defender-endpoint-linux.md) للحصول على وصف للمتطلبات الأساسية ومتطلبات النظام الخاصة بالإصدار الحالي للبرنامج.
+قبل البدء، راجع Microsoft Defender لنقطة النهاية [على Linux](microsoft-defender-endpoint-linux.md) للحصول على وصف للمتطلبات الأساسية ومتطلبات النظام للإصدار الحالي للبرنامج.
 
 > [!WARNING]
 > تتطلب ترقية نظام التشغيل إلى إصدار رئيسي جديد بعد تثبيت المنتج إعادة تثبيت المنتج. تحتاج إلى إلغاء [](linux-resources.md#uninstall) تثبيت Defender for Endpoint الموجود على Linux، وترقية نظام التشغيل، ثم إعادة تكوين Defender ل Endpoint على Linux باتباع الخطوات أدناه.
@@ -105,7 +105,7 @@ ms.locfileid: "63575797"
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
     ```
 
-    أو إذا كنت ترغب في استكشاف الميزات الجديدة على الأجهزة المحددة، فقد ترغب في نشر Microsoft Defender ل Endpoint على Linux إلى *قناة insiders fast* :
+    أو إذا كنت ترغب في استكشاف الميزات الجديدة على الأجهزة المحددة، فقد ترغب في نشر Microsoft Defender لنقطة النهاية Linux إلى *قناة insiders fast*:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/insiders-fast.repo
@@ -131,7 +131,7 @@ ms.locfileid: "63575797"
    > [!TIP]
    > استخدم الأمر SPident لتحديد المعلومات ذات الصلة للنظام بما في ذلك الإصدار *[الإصدار]*.
 
-   على سبيل المثال، إذا كنت تقوم بتشغيل SLES 12 وترغب في نشر Microsoft Defender ل Endpoint على Linux من *قناة prod* :
+   على سبيل المثال، إذا كنت تقوم بتشغيل SLES 12 وترغب في نشر Microsoft Defender لنقطة النهاية على Linux من قناة *prod*:
 
    ```bash
    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
@@ -169,7 +169,7 @@ ms.locfileid: "63575797"
    > [!TIP]
    > استخدم الأمر hostnamectl لتحديد المعلومات ذات الصلة للنظام بما في ذلك الإصدار *[الإصدار]*.
 
-   على سبيل المثال، إذا كنت تقوم بتشغيل Ubuntu 18.04 وترغب في نشر Microsoft Defender ل Endpoint على Linux من *قناة prod* :
+   على سبيل المثال، إذا كنت تقوم بتشغيل Ubuntu 18.04 وترغب في نشر Microsoft Defender لنقطة النهاية على Linux من *قناة prod*:
 
    ```bash
    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
@@ -304,7 +304,7 @@ ms.locfileid: "63575797"
 2. في القائمة المنسدلة الأولى، حدد **Linux Server** كنمع التشغيل. في القائمة المنسدلة الثانية، حدد **برنامج نصي محلي** كطريقة نشر.
 3. حدد **تنزيل حزمة التكهيل**. احفظ الملف WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender شاشة المدخل.](images/portal-onboarding-linux.png)
+   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="تنزيل حزمة التكهيل في مدخل Microsoft 365 Defender" lightbox="images/portal-onboarding-linux.png":::
 
 4. من موجه الأوامر، تحقق من أن لديك الملف، واستخرج محتويات الأرشيف:
 
@@ -460,7 +460,7 @@ Options:
     sudo yum-config-manager --disable packages-microsoft-com-fast-prod
     ```
 
-1. إعادة نشر Microsoft Defender ل Endpoint على Linux باستخدام "قناة الإنتاج".
+1. إعادة نشر Microsoft Defender لنقطة النهاية على Linux باستخدام "قناة الإنتاج".
 
 ## <a name="uninstallation"></a>إلغاء التثبيت
 

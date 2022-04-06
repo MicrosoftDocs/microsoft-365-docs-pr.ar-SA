@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: تعرف على كيفية مراجعة التهديدات التي تم اكتشافها بواسطة برنامج الحماية من الفيروسات من Microsoft Defender على Windows 10 الخاصة بك.
-ms.openlocfilehash: e0e0613ad7805b8c4bde221aa2192c788fb75106
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c836554445f56a9a915885d55a4490c6bb5bd1a9
+ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63578456"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "64633204"
 ---
 # <a name="review-detected-threats-and-take-action"></a>مراجعة التهديدات التي تم الكشف عنها واتخاذ إجراء
 
@@ -117,6 +117,6 @@ ms.locfileid: "63578456"
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[أفضل 10 طرق لتأمين Microsoft 365 خطط الأعمال](secure-your-business-data.md)
+[أفضل 10 طرق لتأمين Microsoft 365 خطط الأعمال](../../admin/security-and-compliance/secure-your-business-data.md)
 
-[نظرة عامة حول Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) (يتم طرح Defender for Business Microsoft 365 Business Premium العملاء، بدءا من 1 مارس 2022)
+[نظرة عامة Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) (يتم طرح Defender for Business Microsoft 365 Business Premium العملاء، بدءا من 1 مارس 2022)
