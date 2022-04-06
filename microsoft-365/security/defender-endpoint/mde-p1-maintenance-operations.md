@@ -1,6 +1,6 @@
 ---
-title: إدارة Microsoft Defender لنقطة النهاية 1
-description: الاحتفاظ ب Defender لخطة نقطة النهاية 1 وتحديثها. يمكنك إدارة الإعدادات والحصول على التحديثات ومعالجة الإيجابيات/السلبيات الخاطئة.
+title: إدارة Microsoft Defender لنقطة النهاية الخطة 1
+description: صيانة وتحديث Defender لنقطة النهاية الخطة 1. إدارة الإعدادات والحصول على التحديثات ومعالجة الإيجابيات/السلبيات الخاطئة.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -14,19 +14,19 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5217cf3f8b61c4e5bc24dfc205fb78c5bde5a3b5
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 417dd33eed846e45453464e63ff403374ce224dc
+ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466620"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64667395"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>إدارة Microsoft Defender لنقطة النهاية 1
+# <a name="manage-microsoft-defender-for-endpoint-plan-1"></a>إدارة Microsoft Defender لنقطة النهاية الخطة 1
 
 **ينطبق على**
-- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-بينما تستخدم Defender for Endpoint Plan 1 في مؤسستك، يمكن لفريق الأمان اتخاذ خطوات معينة للحفاظ على حل الأمان. عندما يجمع فريق الأمان خطة الصيانة والعمليات، تأكد من تضمين الأنشطة التالية على الأقل:
+أثناء استخدام Defender لنقطة النهاية الخطة 1 في مؤسستك، يمكن لفريق الأمان اتخاذ خطوات معينة للحفاظ على حل الأمان الخاص بك. بينما يجمع فريق الأمان خطة الصيانة والعمليات، تأكد من تضمين الأنشطة التالية على الأقل:
 
 - [إدارة معلومات الأمان وتحديثات المنتجات](#manage-security-intelligence-and-product-updates)
 - [ضبط وضبط Defender لنقطة النهاية](#fine-tune-and-adjust-defender-for-endpoint)
@@ -34,27 +34,27 @@ ms.locfileid: "64466620"
 
 ## <a name="manage-security-intelligence-and-product-updates"></a>إدارة معلومات الأمان وتحديثات المنتجات
 
-من المهم برنامج الحماية من الفيروسات من Microsoft Defender أحدث المعلومات للحماية من البرامج الضارة وتقنيات الهجوم الجديدة. تصدر Microsoft تحديثات منتظمة لذكاء الأمان والحماية من الفيروسات والحماية من البرامج الضارة. يتم تنظيم التحديثات في فئتين: 
+يعد تحديث برنامج الحماية من الفيروسات من Microsoft Defender أمرا بالغ الأهمية للحماية من البرامج الضارة الجديدة وتقنيات الهجوم. تصدر Microsoft تحديثات منتظمة للذكاء الأمني ومكافحة الفيروسات والحماية من البرامج الضارة. يتم تنظيم التحديثات في فئتين: 
 
 - تحديثات معلومات الأمان
 - تحديثات المنتج 
 
-لإدارة معلومات الأمان وتحديثات المنتجات، راجع إدارة برنامج الحماية من الفيروسات من Microsoft Defender [الأساسية وتطبيق الأساسات](manage-updates-baselines-microsoft-defender-antivirus.md).
+لإدارة معلومات الأمان وتحديثات المنتجات، راجع [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## <a name="fine-tune-and-adjust-defender-for-endpoint"></a>ضبط وضبط Defender لنقطة النهاية
 
-يوفر لك Defender for Endpoint الكثير من خيارات التكوين والمرونة. يمكنك ضبط إعداداتك وضبطها لتتناسب مع احتياجات مؤسستك. على سبيل المثال، يمكنك استخدام إدارة نقاط النهاية من Microsoft نهج المجموعة وأساليب أخرى لإدارة إعدادات أمان نقطة النهاية. 
+يوفر لك Defender لنقطة النهاية الكثير من المرونة وخيارات التكوين. يمكنك ضبط إعداداتك وضبطها لتلائم احتياجات مؤسستك. على سبيل المثال، يمكنك استخدام إدارة نقاط النهاية من Microsoft نهج المجموعة وأساليب أخرى لإدارة إعدادات أمان نقطة النهاية. 
 
 لمعرفة المزيد، راجع [إدارة Defender لنقطة النهاية](manage-mde-post-migration.md).
 
 ## <a name="address-false-positivesnegatives"></a>معالجة الإيجابيات/السلبيات الخاطئة
 
-إن الإيجابيات الخاطئة هي عملية يدوية، مثل ملف أو عملية، تم اكتشافها كضارة، على الرغم من أنها ليست في الواقع خطرا. السلبية الخاطئة هي كيان لم يتم اكتشافه كخطر، على الرغم من أنه في الواقع. يمكن أن تحدث الإيجابيات/السلبيات الخاطئة مع أي حل لحماية نقطة النهاية، بما في ذلك Defender لنقطة النهاية. ومع ذلك، هناك خطوات يمكنك اتخاذها لمعالجة هذه الأنواع من المشاكل وضبط الحل، كما هو مبين في الصورة التالية:
+الإيجابية الخاطئة هي أداة، مثل ملف أو عملية، تم الكشف عنها على أنها ضارة، على الرغم من أنها ليست في الواقع تهديدا. السالب الخاطئ هو كيان لم يتم اكتشافه كتهديد، على الرغم من أنه في الواقع. يمكن أن تحدث الإيجابيات/السلبيات الخاطئة مع أي حل حماية نقطة النهاية، بما في ذلك Defender لنقطة النهاية. ومع ذلك، هناك خطوات يمكنك اتخاذها لمعالجة هذه الأنواع من المشكلات وضبط الحل الخاص بك، كما هو مبين في الصورة التالية:
 
-:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="نظرة عامة حول معالجة الإيجابيات والسلبيات الخاطئة" lightbox="../../media/defender-endpoint/false-positives-overview.png":::
+:::image type="content" source="../../media/defender-endpoint/false-positives-overview.png" alt-text="نظرة عامة على عملية الإيجابيات والسلبيات الخاطئة" lightbox="../../media/defender-endpoint/false-positives-overview.png":::
 
-إذا كنت ترى موجبة/سالبة خاطئة في Defender for Endpoint، فحدد العنوان [الموجبة/](defender-endpoint-false-positives-negatives.md)السالبة الخاطئة في Microsoft Defender لنقطة النهاية.
+إذا كنت ترى إيجابيات/سلبيات خاطئة في Defender لنقطة النهاية، فراجع [النتائج الإيجابية/السلبيات الخاطئة للعنوان في Microsoft Defender لنقطة النهاية](defender-endpoint-false-positives-negatives.md).
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-- [تعرف على الجديد في Microsoft Defender لنقطة النهاية](whats-new-in-microsoft-defender-endpoint.md)
+- [اطلع على أحدث الميزات في Microsoft Defender لنقطة النهاية](whats-new-in-microsoft-defender-endpoint.md)

@@ -1,8 +1,8 @@
 ### YamlMime:FAQ
 metadata:
-  title: الأسئلة المتكررة حول تقليل مساحة الهجوم
-  description: يمكنك العثور على إجابات على الأسئلة التي يتم طرحها بشكل متكرر حول قواعد الحد من الهجمات على سطح نقطة النهاية ل Microsoft Defender.
-  keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
+  title: الأسئلة المتداولة حول تقليل الأجزاء المعرضة للهجوم (الأسئلة المتداولة)
+  description: ابحث عن إجابات للأسئلة المتداولة حول قواعد تقليل الأجزاء المعرضة للهجوم Microsoft Defender لنقطة النهاية.
+  keywords: قواعد تقليل الأجزاء المعرضة للهجوم، asr، hips، نظام منع الاختراق المضيف، قواعد الحماية، مكافحة الاستغلال، مكافحة الاستغلال، الاستغلال، منع العدوى، microsoft defender لنقطة النهاية
   ms.pagetype: security
   ms.prod: m365-security
   ms.mktglfcycl: manage
@@ -18,223 +18,227 @@ metadata:
   ms.technology: mde
   ms.collection: m365-security-compliance
   ms.date: 1/18/2022
-  ms.openlocfilehash: fbdeee9b98a0c9a3309cf0d18436fb8508afc060
-  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+  ms.openlocfilehash: 7c37f4f971ea603be2bf523568c03c84f669951c
+  ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 03/20/2022
-  ms.locfileid: "63683768"
-title: الأسئلة المتكررة حول تقليل مساحة الهجوم
+  ms.lasthandoff: 04/06/2022
+  ms.locfileid: "64667153"
+title: الأسئلة المتداولة حول تقليل الأجزاء المعرضة للهجوم (الأسئلة المتداولة)
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
   **ينطبق على:**
 
-  - [Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/?linkid=2154037)
+  - [مشكلات الأداء في Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/?linkid=2154037)
 
   - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 sections:
 - name: تم التجاهل
   questions:
   - question: >
-      هل تقليل مساحة الهجوم (ASR) جزء من Windows؟
+      Is attack surface reduction (ASR) part of Windows?
     answer: >
-      كانت ASR في الأصل ميزة في مجموعة ميزات حماية استغلال استغلال التي تم تقديمها ك تحديث رئيسي برنامج الحماية من الفيروسات من Microsoft Defender، Windows 10 الإصدار 1709. برنامج الحماية من الفيروسات من Microsoft Defender هو المكون الأصلي لمكافحة البرامج الضارة Windows. ومع ذلك، لا تتوفر مجموعة ميزات ASR الكاملة إلا Windows ترخيص المؤسسة. لاحظ أيضا أنه يتم إدارة استثناءات قواعد ASR بشكل منفصل عن برنامج الحماية من الفيروسات من Microsoft Defender استثناءات.
+      ASR was originally a feature of the suite of exploit guard features introduced as a major update to Microsoft Defender Antivirus, in Windows 10, version 1709. Microsoft Defender Antivirus is the native antimalware component of Windows. However, the full ASR feature-set is only available with a Windows enterprise license. Also note that ASR rule exclusions are managed separately from Microsoft Defender Antivirus exclusions.
   - question: >
-      هل أحتاج إلى ترخيص مؤسسة لتشغيل قواعد ASR؟
+      Do I need to have an enterprise license to run ASR rules?
     answer: >
-      يتم دعم المجموعة الكاملة من قواعد ASR وميزاته فقط إذا كان لديك ترخيص مؤسسة Windows 10 أو Windows 11. قد يعمل عدد محدود من القواعد بدون ترخيص مؤسسة. إذا كان Microsoft 365 Business، برنامج الحماية من الفيروسات من Microsoft Defender كحل الأمان الأساسي، ومكن القواعد من خلال PowerShell. استخدام ASR بدون ترخيص مؤسسة غير معتمد رسميا ولن تتمكن من استخدام الإمكانات الكاملة ل ASR.
+      The full set of ASR rules and features is only supported if you have an enterprise license for Windows 10 or Windows 11. A limited number of rules may work without an enterprise license. If you have Microsoft 365 Business, set Microsoft Defender Antivirus as your primary security solution, and enable the rules through PowerShell. Using ASR without an enterprise license isn't officially supported and you won't be able to use the full capabilities of ASR.
 
 
-      لمعرفة المزيد حول Windows، راجع Windows 10 الترخيص واحصل على دليل [](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) الترخيص [Windows 10.](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
+      To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
   - question: >
-      هل ASR مدعوم إذا كان لدي ترخيص E3؟
+      Is ASR supported if I have an E3 license?
     answer: >
-      نعم. ASR معتمد Windows Enterprise E3 والأعلى.
+      Yes. ASR is supported for Windows Enterprise E3 and above.
   - question: >
-      ما الميزات المعتمدة مع ترخيص E5؟
+      Which features are supported with an E5 license?
     answer: >
-      يتم أيضا دعم كل القواعد المعتمدة مع E3 مع E5.
+      All of the rules supported with E3 are also supported with E5.
 
 
-      يضيف E5 تكاملا أكبر مع Defender for Endpoint. باستخدام E5، يمكنك عرض التنبيهات في الوقت الحقيقي، وضبط استثناءات القواعد، وتكوين قواعد ASR، وعرض قوائم تقارير الأحداث.
+      E5 adds greater integration with Defender for Endpoint. With E5, you can view alerts in real-time, fine-tune rule exclusions, configure ASR rules, and view lists of event reports.
   - question: >
-      ما هي قواعد ASR المدعمة حاليا؟
+      What are the currently supported ASR rules?
     answer: >
-      يدعم ASR حاليا كل القواعد أدناه.
+      ASR currently supports all of the rules below.
   - question: >
-      ما هي القواعد التي يجب تمكينها؟ الكل، أو هل يمكنني تشغيل القواعد الفردية؟
+      What rules to enable? All, or can I turn on individual rules?
     answer: >
-      لمساعدتك على معرفة ما هو الأفضل بيئة، نوصي بتمكين قواعد ASR في [وضع التدقيق](audit-windows-defender.md). باستخدام هذا النهج، ستحدد التأثير المحتمل على مؤسستك. على سبيل المثال، تطبيقات خط العمل.
+      To help you figure out what's best for your environment, we recommended that you enable ASR rules in [audit mode](audit-windows-defender.md). With this approach, you'll determine the possible affect to your organization. For example, your line-of-business applications.
   - question: >
-      كيف تعمل استثناءات قواعد ASR؟
+      How do ASR rules exclusions work?
     answer: >
-      بالنسبة لقواعد ASR، إذا أضفت استثناء واحدا، سيؤثر ذلك على كل قاعدة من قواعد ASR.
+      For ASR rules, if you add one exclusion, it will affect every ASR rule.
 
 
-      تدعم استثناءات قواعد ASR أحرف البدل والمسارات والمتغيرات البيئة. لمزيد من المعلومات حول كيفية استخدام أحرف البدل في قواعد ASR، راجع تكوين الاستثناءات والتحقق من صحتها [استنادا إلى ملحق الملف وموقع المجلد](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
+      ASR rules exclusions support wildcards, paths, and environmental variables. For more information on how to use wildcards in ASR rules, see [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
 
 
-      كن على علم بالعناصر التالية حول استثناءات قواعد ASR (بما في ذلك أحرف البدل والحسد. المتغيرات):
+      Be aware of the following items about ASR rules exclusions (including wildcards and env. variables):
 
 
-      - تكون استثناءات قواعد ASR مستقلة عن برنامج الحماية من الفيروسات من Microsoft Defender استثناءات قواعد ASR
+      - ASR rules exclusions are independent from Microsoft Defender Antivirus exclusions
 
-      - لا يمكن استخدام أحرف البدل لتعريف حرف محرك أقراص
+      - Wildcards cannot be used to define a drive letter
 
-      - إذا كنت تريد \*استثناء أكثر من مجلد واحد، في مسار، فاستخدم مثيلات متعددة من \ للإشارة إلى مجلدات متداخلة متعددة (على سبيل المثال، c:\Folder\*\*\Test)
+      - If you want to exclude more than one folder, in a path, use multiple instances of \*\ to indicate multiple nested folders (for example, c:\Folder\*\*\Test)
 
-      - Microsoft Endpoint Configuration Manager *لا تدعم* أحرف البدل (* أو ?)
+      - Microsoft Endpoint Configuration Manager *does not* support wildcards (* or ?)
 
-      - إذا كنت تريد استثناء ملف، يحتوي على أحرف عشوائية (إنشاء ملف تلقائي)، يمكنك استخدام الرمز '؟' (على سبيل المثال، C:\Folder\fileversion?.docx)
+      - If you want to exclude a file, that contains random characters (automated file generation), you can use the '?' symbol (for example, C:\Folder\fileversion?.docx)
 
-      - لا تدعم استثناءات ASR في "نهج المجموعة" علامات الاقتباس (سيعالج المحرك المسار الطويل والمساحات وما إلى ذلك، وبالتالي لا حاجة إلى استخدام علامات الاقتباس)
+      - ASR exclusions in Group Policy don't support quotes (the engine will natively handle long path, spaces, etc., so there's no need to use quotes)
 
-      - يتم تشغيل قواعد ASR ضمن حساب NT AUTHORITY\SYSTEM، لذلك تقتصر المتغيرات البيئة على متغيرات الجهاز.
+      - ASR rules run under NT AUTHORITY\SYSTEM account, so environmental variables are limited to machine variables.
   - question: >
-      كيف يمكنني معرفة ما أحتاج إلى استبعاده؟
+      How do I know what I need to exclude?
     answer: >
-      ستتفرع عن قواعد ASR المختلفة تدفقات حماية مختلفة. فكر دائما في ما تحميه قاعدة ASR التي تقوم بتكوينها، وكيفية تحريك تدفق التنفيذ الفعلي.
+      Different ASR rules will have different protection flows. Always think about what the ASR rule you are configuring protects against, and how the actual execution flow pans out.
 
 
-      مثال: يمكن أن تكون عملية حظر سرقة بيانات الاعتماد من النظام الفرعي لسلطات الأمان المحلية في **Windows** القراءة مباشرة من عملية النظام الفرعي لسلطات الأمان المحلية (LSASS) خطرا على الأمان، لأنها قد تعرض بيانات اعتماد الشركة.
+      Example:
+
+      **Block credential stealing from the Windows local security authority subsystem**
+
+      Reading directly from Local Security Authority Subsystem (LSASS) process can be a security risk, since it might expose corporate credentials.
 
 
-      تمنع هذه القاعدة العمليات غير الملوثة من الوصول المباشر إلى ذاكرة LSAS. كلما حاولت إحدى العملية استخدام الدالة OpenProcess() للوصول إلى LSASS، مع حق الوصول PROCESS_VM_READ، ستحظر القاعدة هذا الوصول بشكل خاص.
+      This rule prevents untrusted processes from having direct access to LSASS memory. Whenever a process tries to use the OpenProcess() function to access LSASS, with an access right of PROCESS_VM_READ, the rule will  specifically block that access right.
 
 
-      :::image type="content" source="images/asrfaq1.png" alt-text="حظر بيانات الاعتماد سرقة LSASS":::
+      :::image type="content" source="images/asrfaq1.png" alt-text="block credential stealing LSASS":::
 
 
-      بالنظر إلى المثال أعلاه، إذا كان عليك بالفعل إنشاء استثناء لعملية حظر حق الوصول، فقد تؤدي إضافة اسم الملف مع المسار الكامل إلى استبعاده من الحظر وبعد السماح بالوصول إلى ذاكرة عملية LSASS. تعني القيمة 0 أن قواعد ASR ستتجاهل هذا الملف/العملية ولن تمنع/تدقق فيها.
+      Looking at the above example, if you really had to create an exception for the process that the access right was blocked, adding the filename along with full path would exclude it from being blocked and after allowed to access LSASS process memory. The value of 0 means that ASR rules will ignore this file/process and not block/audit it.
 
 
-      :::image type="content" source="images/asrfaq2.png" alt-text="استبعاد ملفات asr":::
+      :::image type="content" source="images/asrfaq2.png" alt-text="exclude files asr":::
   - question: >
-      ما هي القواعد التي توصي Microsoft بتمكينها؟
+      What are the rules Microsoft recommends enabling?
     answer: >
-      نوصي بتمكين كل قاعدة ممكنة. ومع ذلك، هناك بعض الحالات التي لا يجب عليك فيها تمكين قاعدة. على سبيل المثال، لا نوصي بتمكين إنشاءات عمليات الحظر التي تنشأ من قاعدة أوامر PSExec و WMI، إذا كنت تستخدم Microsoft Endpoint Configuration Manager (أو إدارة تكوين مركز النظام - SCCM) لإدارة نقاط النهاية.
+      We recommend enabling every possible rule. However, there are some cases where you shouldn't enable a rule. For example, we don't recommend enabling the Block process creations originating from PSExec and WMI commands rule, if you're using Microsoft Endpoint Configuration Manager (or, System Center Configuration Manager - SCCM) to manage your endpoints.
 
 
-      نوصي بشدة بقراءة كل معلومات و/أو تحذيرات خاصة بالقاعدة، والتي تتوفر في [الوثائق العامة](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
+      We highly recommend you that you read each rule-specific information and/or warnings, which are available in our
 
-      يمتد عبر أعمدة الحماية المتعددة، مثل Office وبيانات الاعتماد والنصية والبريد الإلكتروني وغير ذلك. يتم دعم جميع قواعد ASR، باستثناء استمرارية الحظر عبر حدث WMI، في Windows 1709 واللاحقة:
+      [public documentation](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
+       spanning across multiple pillars of protection, like Office, Credentials, Scripts, E-Mail, etc. All ASR rules, except for Block persistence through WMI event subscription, are supported on Windows 1709 and later:
 
+      * [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
 
-      * [حظر إساءة استخدام برامج التشغيل الموقعة المعرضة للاستغلال](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
+      * [Block executable content from email client and webmail](attack-surface-reduction-rules-reference.md#block-executable-content-from-email-client-and-webmail)
 
-      * [حظر المحتوى القابل للتنفيذ من عميل البريد الإلكتروني والبريد الإلكتروني](attack-surface-reduction-rules-reference.md#block-executable-content-from-email-client-and-webmail)
+      * [Block all Office applications from creating child processes](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes)
 
-      * [حظر جميع Office من إنشاء عمليات الأطفال](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes)
+      * [Block Office applications from creating executable content](attack-surface-reduction-rules-reference.md#block-office-applications-from-creating-executable-content)
 
-      * [حظر Office من إنشاء محتوى قابل للتنفيذ](attack-surface-reduction-rules-reference.md#block-office-applications-from-creating-executable-content)
+      * [Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes)
 
-      * [حظر Office من إدخال التعليمات البرمجية في عمليات أخرى](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes)
+      * [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
 
-      * [حظر JavaScript أو VBScript من بدء تشغيل المحتوى القابل للتنفيذ الذي تم تنزيله](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
+      * [Block execution of potentially obfuscated scripts](attack-surface-reduction-rules-reference.md#block-execution-of-potentially-obfuscated-scripts)
 
-      * [حظر تنفيذ البرامج النصية التي يحتمل أن تكون غير مهية](attack-surface-reduction-rules-reference.md#block-execution-of-potentially-obfuscated-scripts)
+      * [Block Win32 API calls from Office macro](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros)
 
-      * [حظر مكالمات Win32 API من Office ماكرو](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros)
+      * [Use advanced protection against ransomware](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware)
 
-      * [استخدام الحماية المتقدمة من برامج الفدية الضارة](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware)
+      * [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe)
 
-      * [حظر سرقة بيانات الاعتماد من Windows فرعي لسلطات](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) الأمان المحلية (lsass.exe)
+      * [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)
 
-      * [إنشاءات عملية الحظر التي تنشأ من أوامر PSExec و WMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)
+      * [Block untrusted and unsigned processes that run from USB](attack-surface-reduction-rules-reference.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
 
-      * [حظر العمليات غير الملوثة وغير الموقعة التي يتم تشغيلها من USB](attack-surface-reduction-rules-reference.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
+      * [Block executable files from running unless they meet a prevalence, age, or trusted list criteria](attack-surface-reduction-rules-reference.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
 
-      * [حظر الملفات القابلة للتنفيذ من التشغيل إلا إذا كانت تلبي معايير قائمة ذات عمر أو عمر أو قائمة موثوق بها](attack-surface-reduction-rules-reference.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
+      * [Block Office communication applications from creating child processes](attack-surface-reduction-rules-reference.md#block-office-communication-application-from-creating-child-processes)
 
-      * [منع Office الاتصالات من إنشاء عمليات الطفل](attack-surface-reduction-rules-reference.md#block-office-communication-application-from-creating-child-processes)
+      * [Block Adobe Reader from creating child processes](attack-surface-reduction-rules-reference.md#block-adobe-reader-from-creating-child-processes)
 
-      * [منع Adobe Reader من إنشاء عمليات الأطفال](attack-surface-reduction-rules-reference.md#block-adobe-reader-from-creating-child-processes)
-
-      * [حظر الثبات عبر اشتراك حدث WMI](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
+      * [Block persistence through WMI event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
   - question: >
-      هل يتم تمكين النظام الفرعي لسلطات الأمان المحلية بشكل افتراضي؟
+      Is Local security authority subsystem enabled by default?
     answer: >
-      ستتغير الحالة الافتراضية لقاعدة تقليل مساحة الهجوم (ASR) "حظر سرقة بيانات الاعتماد من نظام فرعي لسلطات الأمان المحلية في Windows (lsass.exe)") من غير تكوين إلى "تكوين" وسيتغير  الوضع الافتراضي إلى **حظر**. ستبقى كل قواعد ASR الأخرى في حالتها الافتراضية: **لم يتم تكوينها**. تم بالفعل تضمين منطق تصفية إضافي في القاعدة لتقليل إعلامات المستخدم. يمكن للعملاء تكوين القاعدة إلى الأوضاع **تدقيق** أو تحذير  أو تعطيل، والتي ستتجاوز الوضع الافتراضي. وظيفة هذه القاعدة هي نفسها، سواء تم تكوين القاعدة في الوضع الافتراضي، أو إذا قمت بتمكين وضع الحظر يدويا.  
+      The default state for the Attack Surface Reduction (ASR) rule "Block credential stealing from the Windows local security authority subsystem (lsass.exe)" will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.
   - question: >
-      ما هي بعض التوصيات الجيدة للبدء باستخدام ASR؟
+      What are some good recommendations for getting started with ASR?
     answer: >
-      اختبر كيفية تأثير قواعد ASR على مؤسستك قبل تمكينها من خلال تشغيل قواعد ASR في وضع التدقيق لفترة زمنية قصيرة. أثناء تشغيل القواعد في وضع التدقيق، يمكنك تحديد أي تطبيقات لخط العمل قد يتم حظرها بشكل غير صحيح، واستبعادها من ASR.
+      Test how ASR rules will impact your organization before enabling them by running ASR rules in audit mode for a brief period of time. While you are running the rules in audit mode, you can identify any line-of-business applications that might get blocked erroneously, and exclude them from ASR.
 
 
-      يجب على المؤسسات الكبيرة أن تفكر في طرح قواعد ASR في "الرنين"، من خلال التدقيق وتمكين القواعد في مجموعات فرعية من الأجهزة على نطاق أوسع بشكل متزايد. يمكنك ترتيب أجهزة مؤسستك في حلقات باستخدام Intune أو أداة إدارة نهج المجموعة.
+      Larger organizations should consider rolling out ASR rules in "rings," by auditing and enabling rules in increasingly broader subsets of devices. You can arrange your organization's devices into rings by using Intune or a Group Policy management tool.
   - question: >
-      ما المدة التي يجب اختبار قاعدة ASR في وضع التدقيق قبل تمكينها؟
+      How long should I test an ASR rule in audit mode before enabling it?
     answer: >
-      احتفظ بالقاعدة في وضع التدقيق لمدة 30 يوما للحصول على أساس جيد لكيفية عمل القاعدة بمجرد أن تنشط في مؤسستك. أثناء فترة التدقيق، يمكنك تحديد أي تطبيقات لخط العمل قد يتم حظرها بواسطة القاعدة، وتكوين القاعدة لاستبعادها.
+      Keep the rule in audit mode for about 30 days to get a good baseline for how the rule will operate once it goes live throughout your organization. During the audit period, you can identify any line-of-business applications that might get blocked by the rule, and configure the rule to exclude them.
   - question: >
-      إنني أقوم بالتبديل من حل أمان جهة خارجية إلى Defender for Endpoint. هل هناك طريقة "سهلة" لتصدير القواعد من حل أمان آخر إلى ASR؟
+      I'm making the switch from a third-party security solution to Defender for Endpoint. Is there an "easy" way to export rules from another security solution to ASR?
     answer: >
-      في معظم الحالات، من الأسهل والأفضل البدء بتوصيات الأساس المقترحة بواسطة [Defender for Endpoint](/windows/security/threat-protection) بدلا من محاولة استيراد القواعد من حل أمان آخر. بعد ذلك، استخدم أدوات مثل وضع التدقيق والمراقبة والتحليلات لتكوين الحل الجديد ليتناسب مع احتياجاتك الفريدة.
+      In most cases, it's easier and better to start with the baseline recommendations suggested by [Defender for Endpoint](/windows/security/threat-protection) than to attempt to import rules from another security solution. Then, use tools such as audit mode, monitoring, and analytics to configure your new solution to suit your unique needs.
 
 
-      سيحمي التكوين الافتراضي لمعظم قواعد ASR، مع حماية Defender for Endpoint في الوقت الحقيقي، من عدد كبير من حالات استغلال نقاط الضعف.
+      The default configuration for most ASR rules, combined with Defender for Endpoint's real-time protection, will protect against a large number of exploits and vulnerabilities.
 
 
-      من داخل Defender for Endpoint، يمكنك تحديث الدفاعات باستخدام مؤشرات مخصصة، للسماح ببعض سلوكيات البرامج وحظرها. يسمح ASR أيضا ببعض التخصيص للقواعد، في شكل استثناءات الملفات والمجلدات. كقاعدة عامة، من الأفضل تدقيق قاعدة لفترة زمنية وتكوين استثناءات لأي تطبيقات خط عمل قد يتم حظرها.
+      From within Defender for Endpoint, you can update your defenses with custom indicators, to allow and block certain software behaviors. ASR also allows for some customization of rules, in the form of file and folder exclusions. As a general rule, it is best to audit a rule for a period of time, and configure exclusions for any line-of-business applications that might get blocked.
   - question: >
-      هل تدعم ASR استثناءات الملفات أو المجلدات التي تتضمن متغيرات النظام و أحرف البدل في المسار؟
+      Does ASR support file or folder exclusions that include system variables and wildcards in the path?
     answer: >
-      نعم. راجع استبعاد الملفات والمجلدات من قواعد [ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) للحصول على مزيد من التفاصيل حول استبعاد الملفات أو المجلدات من قواعد ASR، وتكوين الاستثناءات [](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) والتحقق من صحتها استنادا إلى ملحق الملف وموقع المجلد للحصول على مزيد من المعلومات حول استخدام متغيرات النظام و أحرف البدل في مسارات الملفات المستبعدة.
+      Yes. See [Excluding files and folders from ASR rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for more details on excluding files or folders from ASR rules, and [Configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for more on using system variables and wildcards in excluded file paths.
   - question: >
-      هل تغطي قواعد ASR جميع التطبيقات بشكل افتراضي؟
+      Do ASR rules cover all applications by default?
     answer: >
-      يعتمد ذلك على القاعدة. تغطي معظم قواعد ASR سلوك المنتجات والخدمات Microsoft Office مثل Word أو Excel أو PowerPoint أو OneNote أو Outlook. بعض قواعد ASR، مثل *حظر* تنفيذ البرامج النصية التي يحتمل أن تكون مهية، أكثر عمومية في النطاق.
+      It depends on the rule. Most ASR rules cover the behavior of Microsoft Office products and services, such as Word, Excel, PowerPoint, and OneNote, or Outlook. Certain ASR rules, such as *Block execution of potentially obfuscated scripts*, are more general in scope.
   - question: >
-      هل تدعم ASR حلول الأمان الخاصة ب جهة خارجية؟
+      Does ASR support third-party security solutions?
     answer: >
-      تستخدم ASR برنامج الحماية من الفيروسات من Microsoft Defender لحظر التطبيقات. لا يمكن تكوين ASR لاستخدام حل أمان آخر للحظر في الوقت نفسه.
+      ASR uses Microsoft Defender Antivirus to block applications. It is not possible to configure ASR to use another security solution for blocking at this time.
   - question: >
-      لدي ترخيص E5 وتمكين بعض قواعد ASR بالتزامن مع Defender for Endpoint. هل من الممكن عدم إظهار حدث ASR على الإطلاق في المخطط الزمني لحدث Defender for Endpoint؟
+      I have an E5 license and enabled some ASR rules in conjunction with Defender for Endpoint. Is it possible for an ASR event to not show up at all in Defender for Endpoint's event timeline?
     answer: >
-      كلما تم تشغيل إعلام محليا بواسطة قاعدة ASR، يتم أيضا إرسال تقرير حول الحدث إلى مدخل Defender for Endpoint. إذا كنت تواجه مشكلة في العثور على الحدث، يمكنك تصفية المخطط الزمني للأحداث باستخدام مربع البحث. يمكنك أيضا عرض أحداث ASR بزيارة **الانتقال** إلى إدارة سطح الهجوم، من أيقونة إدارة  التكوين في شريط المهام Defender for Cloud. تتضمن صفحة إدارة سطح الهجوم علامة تبويب للكشف عن التقارير، تتضمن قائمة كاملة من أحداث قواعد ASR التي تم الإبلاغ عنها إلى Defender for Endpoint.
+      Whenever a notification is triggered locally by an ASR rule, a report on the event is also sent to the Defender for Endpoint portal. If you're having trouble finding the event, you can filter the events timeline using the search box. You can also view ASR events by visiting **Go to attack surface management**, from the **Configuration management** icon in the Defender for Cloud taskbar. The attack surface management page includes a tab for report detections, which includes a full list of ASR rule events reported to Defender for Endpoint.
   - question: >
-      لقد طبقت قاعدة باستخدام GPO. الآن عندما أحاول التحقق من خيارات الفهرسة للقاعدة في Microsoft Outlook، تظهر رسالة تفيد "تم رفض الوصول".
+      I applied a rule using GPO. Now when I try to check the indexing options for the rule in Microsoft Outlook, I get a message stating, 'Access denied'.
     answer: >
-      حاول فتح خيارات الفهرسة مباشرة من Windows 10 أو Windows 11.
+      Try opening the indexing options directly from Windows 10 or Windows 11.
 
 
-      1. حدد **الأيقونة** بحث على Windows المهام.
+      1. Select the **Search** icon on the Windows taskbar.
 
 
-      1. أدخل **خيارات الفهرسة** في مربع البحث.
+      1. Enter **Indexing options** into the search box.
   - question: >
-      هل المعايير المستخدمة بواسطة القاعدة"حظر الملفات القابلة للتنفيذ من التشغيل ما لم تكن تلبي معيارا عاما أو عاما أو قائمة موثوقا بها"، يمكن تكوينها من قبل المسؤول؟
+      Are the criteria used by the rule, "Block executable files from running unless they meet a prevalence, age, or trusted list criterion," configurable by an admin?
     answer: >
-      لا. يتم الاحتفاظ بالمعايير التي تستخدمها هذه القاعدة بواسطة الحماية السحابية من Microsoft، لإبقاء القائمة الموثوق بها مواكبا باستمرار للبيانات التي يتم تجميعها من جميع أنحاء العالم. لا يمكن للمسؤولين المحليين الكتابة لتغيير هذه البيانات. إذا كنت تبحث عن تكوين هذه القاعدة لتصممها لمؤسستك، يمكنك إضافة تطبيقات معينة إلى قائمة الاستثناءات لمنع تشغيل القاعدة.
+      No. The criteria used by this rule are maintained by Microsoft cloud protection, to keep the trusted list constantly up to date with data gathered from around the world. Local admins do not have write access to alter this data. If you are looking to configure this rule to tailor it for your enterprise, you can add certain applications to the exclusions list to prevent the rule from being triggered.
   - question: >
-      لقد مكنت قاعدة ASR ، 'حظر الملفات القابلة للتنفيذ من التشغيل ما لم تكن تلبي معيارا عاما أو عاما أو قائمة موثوقا بها'. بعد مرور بعض الوقت، تم تحديث جزء من البرنامج، والقاعدة تمنعه الآن، على الرغم من أنه لم يتم ذلك من قبل. هل حدث خطأ ما؟
+      I enabled the ASR rule, 'Block executable files from running unless they meet a prevalence, age, or trusted list criterion'. After some time, I updated a piece of software, and the rule is now blocking it, even though it didn't before. Did something go wrong?
     answer: >
-      تعتمد هذه القاعدة على كل تطبيق له سمعة معروفة، يتم قياسها حسب حالة الشمولية أو العمر أو التضمين في قائمة التطبيقات الموثوق بها. يتم تحديد قرار القاعدة بحظر تطبيق أو السماح به في النهاية من خلال تقييم الحماية السحابية من Microsoft لهذه المعايير.
+      This rule relies upon each application having a known reputation, as measured by prevalence, age, or inclusion on a list of trusted apps. The rule's decision to block or allow an application is ultimately determined by Microsoft cloud protection's assessment of these criteria.
 
 
-      عادة، يمكن للحماية السحابية تحديد أن إصدارا جديدا من تطبيق ما مشابه بما يكفي للإصدارات السابقة التي لا تحتاج إلى إعادة تحديدها بشكل مطول. ومع ذلك، قد يستغرق بناء سمعة التطبيق بعد تبديل الإصدارات بعض الوقت، لا سيما بعد تحديث رئيسي. في هذه الأثناء، يمكنك إضافة التطبيق إلى قائمة الاستثناءات، لمنع هذه القاعدة من حظر التطبيقات المهمة. إذا كنت تقوم بتحديث الإصدارات الجديدة من التطبيقات والعمل عليها بشكل متكرر، فقد تختار بدلا من ذلك تشغيل هذه القاعدة في وضع التدقيق.
+      Usually, cloud protection can determine that a new version of an application is similar enough to previous versions that it does not need to be reassessed at length. However, it might take some time for the app to build reputation after switching versions, particularly after a major update. In the meantime, you can add the application to the exclusions list, to prevent this rule from blocking important applications. If you are frequently updating and working with new versions of applications, you may opt instead to run this rule in audit mode.
   - question: >
-      لقد مكنت مؤخرا قاعدة ASR، 'حظر سرقة بيانات الاعتماد من النظام الفرعي لسلطات الأمان المحلية في Windows (lsass.exe)'، وأتلقى عددا كبيرا من الإعلامات. ماذا يحدث؟
+      I recently enabled the ASR rule, 'Block credential stealing from the Windows local security authority subsystem (lsass.exe)', and I am getting a large number of notifications. What is going on?
     answer: >
-      لا يشير الإعلام الذي يتم إنشاؤه بواسطة هذه القاعدة بالضرورة إلى نشاط ضار؛ ومع ذلك، لا تزال هذه القاعدة مفيدة لحظر النشاط الضار، نظرا لأن البرامج الضارة غالبا ما تستهدف lsass.exe الوصول غير المقصود إلى الحسابات. تخزن lsass.exe بيانات اعتماد المستخدم في الذاكرة بعد تسجيل المستخدم دخوله. Windows بيانات الاعتماد هذه للتحقق من صحة المستخدمين وتطبيق سياسات الأمان المحلية.
+      A notification generated by this rule does not necessarily indicate malicious activity; however, this rule is still useful for blocking malicious activity, since malware often targets lsass.exe to gain illicit access to accounts. The lsass.exe process stores user credentials in memory after a user has logged in. Windows uses these credentials to validate users and apply local security policies.
 
 
-      ونظرا لأن العديد من العمليات المشروعة خلال يوم نموذجي ستتصل lsass.exe بيانات الاعتماد، فقد تكون هذه القاعدة صاخبة بشكل خاص. إذا تسبب تطبيق شرعي معروف في إنشاء هذه القاعدة لعدد زائد من الإعلامات، يمكنك إضافتها إلى قائمة الاستثناء. ستولد معظم قواعد ASR الأخرى عددا أقل نسبيا من الإعلامات، مقارنة بهذه الإعلامات، نظرا لأن الاتصال lsass.exe هو نموذجي للعمل العادي للعديد من التطبيقات.
+      Because many legitimate processes throughout a typical day will be calling on lsass.exe for credentials, this rule can be especially noisy. If a known legitimate application causes this rule to generate an excessive number of notifications, you can add it to the exclusion list. Most other ASR rules will generate a relatively smaller number of notifications, in comparison to this one, since calling on lsass.exe is typical of many applications' normal functioning.
   - question: >
-      هل من الجيد تمكين القاعدة، 'حظر سرقة بيانات الاعتماد من النظام الفرعي لسلطات Windows المحلية (lsass.exe)'، إلى جانب حماية LSA؟
+      Is it a good idea to enable the rule, 'Block credential stealing from the Windows local security authority subsystem (lsass.exe)', alongside LSA protection?
     answer: >
-      لن يوفر تمكين هذه القاعدة حماية إضافية إذا تم تمكين [حماية LSA](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) أيضا. تعمل كل من القاعدة وحماية LSA بالطريقة نفسها إلى حد كبير، لذا فإن تشغيل كليهما في الوقت نفسه سيكون زائدا عن الحاجة. ومع ذلك، قد لا تتمكن في بعض الأحيان من تمكين حماية LSA. في هذه الحالات، يمكنك تمكين هذه القاعدة لتوفير حماية مماثلة من البرامج الضارة التي تستهدف lsass.exe.
+      Enabling this rule will not provide additional protection if you have [LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) enabled as well. Both the rule and LSA protection work in much the same way, so having both running at the same time would be redundant. However, sometimes you may not be able to enable LSA protection. In those cases, you can enable this rule to provide equivalent protection against malware that target lsass.exe.
   - question: >
-      راجع أيضًا
+      See also
     answer: >-
-      * [نظرة عامة حول الحد من سطح الهجوم](attack-surface-reduction.md)
+      * [Attack surface reduction overview](attack-surface-reduction.md)
 
-      * [تقييم قواعد الحد من سطح الهجوم](evaluate-attack-surface-reduction.md)
+      * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 
-      * [نشر قواعد تقليل مساحة الهجوم الخطوة 3: تنفيذ قواعد ASR](attack-surface-reduction-rules-deployment-implement.md)
+      * [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
 
-      * [تمكين قواعد الحد من سطح الهجوم](enable-attack-surface-reduction.md)
+      * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 
-      * [توافق البرامج برنامج الحماية من الفيروسات من Microsoft Defender مع برامج الحماية من الفيروسات/البرامج الضارة الأخرى](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+      * [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

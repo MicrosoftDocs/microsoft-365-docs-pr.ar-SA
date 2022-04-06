@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: be2352ef44d8e9f7430cde39a71c7b7b1167a874
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 2535845c52285b1ce28fbe142709089778503c09
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634086"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64469570"
 ---
 # <a name="web-content-filtering"></a>تصفية محتوى ويب
 
@@ -52,7 +52,7 @@ ms.locfileid: "64634086"
 
 قبل تجربة هذه الميزة، تأكد من تلبية المتطلبات التالية:
 
-- يتضمن اشتراكك أحد ما يلي: Windows 10 Enterprise E5 أو Microsoft 365 E5 أو الأمان في Microsoft 365 E5 أو Microsoft 365 E3 أو Microsoft Defender لنقطة النهاية مستقل. 
+- يتضمن اشتراكك أحد ما يلي: Windows 10 Enterprise E5، Microsoft 365 E5، الأمان في Microsoft 365 E5، Microsoft 365 E3 + الأمان في Microsoft 365 E5 الوظائف الإضافية أو Microsoft Defender لنقطة النهاية مستقل. 
 
 - يمكنك الوصول إلى Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">الإلكتروني</a>.
 
@@ -203,9 +203,9 @@ ms.locfileid: "64634086"
 
 ### <a name="url-category-lookup"></a>البحث عن فئة URL
 
-لتحديد فئة موقع ويب، يمكنك استخدام وظيفة البحث في URL المتوفرة على Microsoft 365 Defender (<https://security.microsoft.com>) ضمن **بحث نقاط** \> **النهاية**. في نتائج البحث في URL، تظهر فئة تصفية محتوى الويب ضمن **تفاصيل عنوان URL/المجال**. إذا لم تظهر نتيجة الفئة، فلا يتم تعيين عنوان URL حاليا إلى فئة تصفية محتوى ويب موجودة.
+لتحديد فئة موقع ويب، يمكنك استخدام وظيفة البحث في URL المتوفرة على Microsoft 365 Defender (<https://security.microsoft.com>) ضمن **بحث نقاط** \> **النهاية**. في نتائج البحث في URL، تظهر فئة تصفية محتوى الويب ضمن **تفاصيل عنوان URL/المجال**. يمكن للمسؤولين أيضا النزاع على فئة المجال مباشرة من هذه الصفحة، كما هو موضح في الصورة التالية. إذا لم تظهر نتيجة الفئة، فلا يتم تعيين عنوان URL حاليا إلى فئة تصفية محتوى ويب موجودة.
 
-<!---:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="The web content filtering category lookup results" lightbox="../../media/web-content-filtering-category-lookup.png":::--->
+:::image type="content" source="../../media/web-content-filtering-category-lookup.png" alt-text="نتائج البحث لفئة تصفية محتوى الويب" lightbox="../../media/web-content-filtering-category-lookup.png":::
 
 ## <a name="web-content-filtering-cards-and-details"></a>بطاقات تصفية محتوى ويب وتفاصيله
 
