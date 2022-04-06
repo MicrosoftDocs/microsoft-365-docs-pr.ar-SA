@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: 91cd06188a8337f3d0df0b9c67d7c98e389e4351
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: a156b2a4514c3dfa090bcf43285abfbcfaa1f46e
+ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466730"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "63583048"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>مراجعة التنبيهات في Microsoft Defender لنقطة النهاية
 
@@ -30,7 +30,7 @@ ms.locfileid: "64466730"
 
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-managealerts-abovefoldlink)
 
@@ -53,19 +53,19 @@ ms.locfileid: "64466730"
 
 - تم منعه: تم تجنب الإجراء المريب الذي تم محاولة القيام به. على سبيل المثال، لم يتم كتابة ملف على القرص أو تنفيذه.
 
-  :::image type="content" source="images/detstat-prevented.png" alt-text="الصفحة التي تعرض منع التهديدات" lightbox="images/detstat-prevented.png":::
+  ![تم منع صفحة تنبيه تعرض التهديدات.](images/detstat-prevented.png)
 
 - تم الحظر: تم تنفيذ سلوك مريب ثم تم حظره. على سبيل المثال، تم تنفيذ عملية، ولكن نظرا لأنها أظهرت في وقت لاحق سلوكيات مريبة، تم إنهاء العملية.
 
-  :::image type="content" source="images/detstat-blocked.png" alt-text="الصفحة التي تعرض حظر خطر" lightbox="images/detstat-blocked.png":::
+  ![صفحة تنبيه تظهر أنه تم حظر التهديدات.](images/detstat-blocked.png)
 
 - تم الكشف عن: تم الكشف عن هجوم وربما لا يزال نشطا.
 
-  :::image type="content" source="images/detstat-detected.png" alt-text="الصفحة التي تعرض الكشف عن خطر" lightbox="images/detstat-detected.png":::
+  ![تم اكتشاف صفحة تنبيه تعرض التهديدات.](images/detstat-detected.png)
 
 بعد ذلك، يمكنك أيضا مراجعة  تفاصيل التحقيق التلقائي في جزء تفاصيل التنبيه، لمعرفة الإجراءات التي تم اتخاذها بالفعل، بالإضافة إلى قراءة وصف التنبيه حول الإجراءات الموصى بها.
 
-:::image type="content" source="images/alert-air-and-alert-description.png" alt-text="جزء التفاصيل مع تمييز وصف التنبيه وأقسام التحقيق التلقائي" lightbox="images/alert-air-and-alert-description.png":::
+![قصاصة جزء التفاصيل مع تمييز وصف التنبيه وأقسام التحقيق التلقائي.](images/alert-air-and-alert-description.png)
 
 تتضمن المعلومات الأخرى المتوفرة في جزء التفاصيل عند فتح التنبيه تقنيات MITRE ومصدرها وتفاصيل سياقية إضافية.
 
@@ -75,11 +75,11 @@ ms.locfileid: "64466730"
 
 - **بالنسبة للأجهزة**، سيعرض جزء التفاصيل معلومات حول الجهاز نفسه، مثل المجال ونظام التشغيل وIP. تتوفر أيضا التنبيهات النشطة والمستخدمين الذين سجلوا دخولهم على هذا الجهاز. يمكنك اتخاذ إجراء فوري عن طريق عزل الجهاز أو تقييد تنفيذ التطبيق أو تشغيل فحص الحماية من الفيروسات. بدلا من ذلك، يمكنك تجميع حزمة تحقيق أو بدء تحقيق تلقائي أو الانتقال إلى صفحة الجهاز للتحقق من وجهة نظر الجهاز.
 
-   :::image type="content" source="images/device-page-details.png" alt-text="جزء التفاصيل عند تحديد جهاز" lightbox="images/device-page-details.png":::
+   ![قصاصة جزء التفاصيل عند تحديد جهاز.](images/device-page-details.png)
 
 - بالنسبة **للمستخدمين**، سيعرض جزء التفاصيل معلومات تفصيلية حول المستخدم، مثل اسم SAM و SID الخاص بالمستخدم، بالإضافة إلى أنواع تسجيلات تسجيل الوصول التي ينفذها هذا المستخدم وأي تنبيهات أو أحداث متعلقة به. يمكنك تحديد *فتح صفحة المستخدم* لمواصلة التحقيق من وجهة نظر هذا المستخدم.
 
-   :::image type="content" source="images/user-page-details.png" alt-text="جزء التفاصيل عند تحديد مستخدم" lightbox="images/user-page-details.png":::
+   ![قصاصة جزء التفاصيل عند تحديد مستخدم.](images/user-page-details.png)
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

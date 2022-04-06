@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تصف هذه المقالة كيفية إعداد التدقيق المتقدم لكي تتمكن من إجراء عمليات التحقيق في الطب الشرعي عند اختراق حسابات المستخدمين أو التحقيق في أحداث أخرى ذات صلة بالامن.
-ms.openlocfilehash: dafe53161e04f28f2f5e4ff8dcfa71bab6c1a1f1
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 34ae98eaafcc3eeb3d6a25a457f017999b8c6078
+ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754584"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "63583284"
 ---
 # <a name="set-up-advanced-audit-in-microsoft-365"></a>إعداد التدقيق المتقدم في Microsoft 365
 
@@ -49,7 +49,9 @@ ms.locfileid: "63754584"
 
    سيبدأ تسجيل سجلات التدقيق ل MailItemsAccessed و Send في غضون 24 ساعة. يجب تنفيذ الخطوة 3 لبدء تسجيل حدثين آخرين للتدقيق المتقدم: SearchQueryInitiatedExchange و SearchQueryInitiatedSharePoint.
 
-أيضا، إذا قمت بتخصيص إجراءات علب البريد التي تم تسجيلها في علب بريد المستخدمين أو علب البريد المشتركة، فلن يتم تلقائيا تدقيق أي أحداث تدقيق متقدم جديدة تم إصدارها بواسطة Microsoft على علب البريد هذه. للحصول على معلومات حول تغيير إجراءات علبة البريد التي يتم تدقيقها لكل نوع تسجيل دخول، راجع المقطع "تغيير إجراءات علبة البريد أو استعادتها التي تم تسجيلها بشكل افتراضي" في [إدارة تدقيق علبة البريد](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
+بالنسبة إلى المؤسسات التي تقوم بتعيين تراخيص لمجموعات من المستخدمين باستخدام الترخيص المستند إلى المجموعة، يجب إيقاف تشغيل تعيين الترخيص ل Microsoft 365 تدقيق متقدم للمجموعة. بعد حفظ التغييرات، تحقق من Microsoft 365 إيقاف تشغيل التدقيق المتقدم للمجموعة. ثم قم ب تشغيل تعيين الترخيص للمجموعة مرة أخرى. للحصول على إرشادات حول الترخيص المستند إلى المجموعة، راجع [تعيين تراخيص للمستخدمين حسب عضوية المجموعة في Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
+
+أيضا، إذا قمت بتخصيص إجراءات علب البريد التي تم تسجيلها في علب بريد المستخدمين أو علب البريد المشتركة، لن يتم تلقائيا تدقيق أي أحداث تدقيق متقدم جديدة تم إصدارها بواسطة Microsoft على علب البريد هذه. للحصول على معلومات حول تغيير إجراءات علبة البريد التي يتم تدقيقها لكل نوع تسجيل دخول، راجع المقطع "تغيير إجراءات علبة البريد أو استعادتها التي تم تسجيلها بشكل افتراضي" في [إدارة تدقيق علبة البريد](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 
 ## <a name="step-2-enable-advanced-audit-events"></a>الخطوة 2: تمكين أحداث التدقيق المتقدم
 

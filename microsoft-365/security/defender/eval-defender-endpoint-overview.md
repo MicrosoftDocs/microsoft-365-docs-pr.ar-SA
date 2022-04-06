@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 05dbf222762837f2916a76cc5b183a99cd981101
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 24600644e08bdc2b0a208d68d6da1078543bd2bd
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755111"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63583355"
 ---
 # <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>الخطوة 4. تقييم نظرة عامة حول Microsoft Defender لنقطة النهاية
 
@@ -41,7 +41,7 @@ ms.locfileid: "63755111"
 
 استخدم الخطوات التالية لتمكين Microsoft Defender لنقطة النهاية وتدياره.
 
-:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-steps.png" alt-text="خطوات إضافة Microsoft Defender لنقطة النهاية إلى بيئة تقييم Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-steps.png":::
+![خطوات لإضافة Microsoft Defender لنقطة النهاية إلى بيئة تقييم Defender.](../../media/defender/m365-defender-endpoint-eval-steps.png)
 
 
 يصف الجدول التالي الخطوات في الرسم التوضيحي.
@@ -50,4 +50,6 @@ ms.locfileid: "63755111"
 |---------|---------|
 | [الخطوة 1. مراجعة متطلبات البنية والمفاهيم الأساسية](eval-defender-endpoint-architecture.md)    | فهم بنية Defender لنقطة النهاية والإمكانات المتوفرة لك.       |
 |[الخطوة 2. تمكين بيئة التقييم](eval-defender-endpoint-enable-eval.md)     |   اتبع الخطوات اللازمة لإعداد بيئة التقييم.      |
-|[الخطوة 3. إعداد التجربة ](eval-defender-endpoint-pilot.md)    |    تحقق من المجموعة التجريبية، و تشغيل عمليات المحاكاة، واصبح على دراية بالميزات الرئيسية لوحات المعلومات. |
+|[الخطوة 3. إعداد التجربة ](eval-defender-endpoint-pilot.md)    |    تحقق من المجموعة التجريبية، و تشغيل عمليات المحاكاة، واصبح على دراية بالميزات الرئيسية لوحات المعلومات.     |
+
+

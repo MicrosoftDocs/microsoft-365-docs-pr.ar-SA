@@ -6,7 +6,7 @@ metadata:
   author: SKjerland
   manager: scotv
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.prod: microsoft-365-lighthouse
   ms.localizationpriority: medium
   ms.collection:
@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: بالنسبة إلى موفري الخدمات المدارة (MSPs) Microsoft 365 المنارة، احصل على إجابات على الأسئلة المتكررة (الأسئلة المتكررة) حول Microsoft 365 المنارة.
-  ms.openlocfilehash: 746ec9210e517921d1c2145c9e87f0d339a67758
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: 4dcd34b00aed7a28edb2e8ad9b2519940c90fcef
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63574376"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63680765"
 title: Microsoft 365 المنارة الأسئلة المتكررة (الأسئلة المتكررة)
 summary: >
   تحتوي هذه المقالة على إجابات على الأسئلة المتكررة (الأسئلة المتكررة) حول Microsoft 365 المنارة.

@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 search.appverid:
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: بالنسبة إلى عناوين IP الوجهة وعناوين URL Microsoft 365 المرور، استخدم قائمة المقالات هذه لنقاط نهاية الإنترنت لسحابات Microsoft 365 مختلفة.
-ms.openlocfilehash: ba2cb102bfee3ab49a563b0816b754788dec1015
-ms.sourcegitcommit: 59b1b0abfde30a8f2d8210b696aac3dc9183544e
+ms.openlocfilehash: 29b9d720209eee66103ceca9384fc8d18c1621ae
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "63570004"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681535"
 ---
 # <a name="microsoft-365-endpoints"></a>Microsoft 365 نقاط النهاية
 

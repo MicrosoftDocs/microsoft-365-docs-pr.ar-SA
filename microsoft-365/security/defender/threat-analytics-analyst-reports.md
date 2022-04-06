@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 364e83d03da53f5e6ffa8cecda4847e13c38f60e
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: e29ccfc963c0bfc2e730744a131a5c9485c72e42
+ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499474"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63583154"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>فهم تقرير المحلل في تحليلات المخاطر في Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "64499474"
 
 يتضمن [كل تقرير تحليلي للتهديدات](threat-analytics.md) مقاطع ديناميكية وقسما مكتوبا شاملا يسمى _تقرير المحلل_. للوصول إلى هذا المقطع، افتح التقرير حول الخطر المتعقب وحدد علامة **التبويب تقرير** المحلل.
 
-:::image type="content" source="../../media/threat-analytics/ta_analystreport_mtp.png" alt-text="قسم تقرير المحلل في تقرير تحليل المخاطر" lightbox="../../media/threat-analytics/ta_analystreport_mtp.png":::
+![صورة لقسم تقرير المحلل في تقرير تحليل المخاطر.](../../media/threat-analytics/ta_analystreport_mtp.png)
 
 _مقطع "تقرير المحلل" في تقرير تحليل المخاطر_
 
@@ -80,20 +80,20 @@ _مقطع "تقرير المحلل" في تقرير تحليل المخاطر_
 
 ### <a name="antivirus-detections"></a>الكشف عن الفيروسات
 
-تتوفر هذه الاكتشافات على الأجهزة [التي برنامج الحماية من الفيروسات من Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) تشغيلها. وعندما تحدث هذه الاكتشافات على الأجهزة التي تم Microsoft Defender لنقطة النهاية عليها، فإنها تؤدي أيضا إلى تشغيل تنبيهات تضيء المخططات في التقرير.
+تتوفر هذه الاكتشافات على الأجهزة [التي برنامج الحماية من الفيروسات من Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) تشغيلها. عند حدوث هذه الاكتشافات على الأجهزة التي تم تشغيلها في Microsoft Defender ل Endpoint، فإنها تقوم أيضا بتشغيل تنبيهات تضيء المخططات في التقرير.
 
 >[!NOTE]
 >يسرد تقرير **المحلل أيضا** الاكتشافات العامة التي يمكن أن تحدد مجموعة واسعة من التهديدات، بالإضافة إلى المكونات أو السلوكيات الخاصة بالخطر المتعقب. لا تعكس هذه الاكتشافات العامة في المخططات.
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>تنبيهات الكشف عن نقاط النهاية والاستجابة (الكشف التلقائي والاستجابة على النقط النهائية)
 
-الكشف التلقائي والاستجابة على النقط النهائية تنبيهات الأجهزة المجهزة [Microsoft Defender لنقطة النهاية.](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure) تعتمد هذه التنبيهات بشكل عام على إشارات الأمان التي يجمعها مستشعر Microsoft Defender لنقطة النهاية وإمكانيات نقاط النهاية الأخرى، مثل برنامج الحماية من الفيروسات وحماية الشبكة والحماية من التلاعب، التي تعمل كمصادر إشارات فعالة.
+الكشف التلقائي والاستجابة على النقط النهائية تنبيهات الأجهزة المجهزة [في Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). تعتمد هذه التنبيهات بشكل عام على إشارات الأمان التي يجمعها مستشعر نقطة النهاية من Microsoft Defender وإمكانيات نقاط النهاية الأخرى، مثل الحماية من الفيروسات وحماية الشبكة والحماية من العبث، التي تعمل كمصادر إشارة فعالة.
 
 مثل قائمة الكشف عن برامج الحماية من الفيروسات، تم تصميم الكشف التلقائي والاستجابة على النقط النهائية تنبيهات جديدة ل وضع علامة عامة على سلوك مريب قد لا يكون مقترن بالخطر المتعقب. في مثل هذه الحالات، سيحدد التقرير التنبيه بوضوح على أنه "عام" ولا يؤثر على أي من المخططات في التقرير.
 
 ### <a name="email-related-detections-and-mitigations"></a>عمليات الكشف وتخفيف المخاطر ذات الصلة بالبريد الإلكتروني
 
-يتم تضمين عمليات الكشف وتخفيف Microsoft Defender لـ Office 365 البريد الإلكتروني في تقارير المحللين بالإضافة إلى بيانات نقطة النهاية المتوفرة بالفعل من Microsoft Defender لنقطة النهاية.
+يتم تضمين عمليات الكشف وتخفيف المخاطر المتعلقة بالبريد الإلكتروني من Microsoft Defender for Office 365 في تقارير المحللين بالإضافة إلى بيانات نقطة النهاية المتوفرة بالفعل من Microsoft Defender لنقطة النهاية.
 
 توفر لك معلومات محاولة منع البريد الإلكتروني معلومات حول ما إذا كانت مؤسستك هدفا للتهديد الذي تم مواجهةه في تقرير المحلل حتى لو تم حظر الهجوم بشكل فعال قبل التسليم أو تم تسليمه إلى مجلد البريد غير الهام.
 
@@ -106,7 +106,7 @@ _مقطع "تقرير المحلل" في تقرير تحليل المخاطر_
 تم استفسارات الصيد المتقدمة في تقارير المحللين من قبل محللي Microsoft وهي جاهزة للتشغيل في محرر استعلام الصيد [المتقدم](https://security.microsoft.com/advanced-hunting). يمكنك أيضا استخدام الاستعلامات لإنشاء قواعد [الكشف المخصصة](custom-detection-rules.md) التي تقوم بتشغيل التنبيهات للمطابقات المستقبلية.
 
 >[!NOTE]
-> تتوفر تحليلات المخاطر [أيضا في Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). ومع ذلك، فهو لا يوفر تكامل البيانات بين Microsoft Defender Office Microsoft Defender لنقطة النهاية التي Microsoft 365 Defender التحليلات للتهديدات.
+> تتوفر تحليلات التهديدات أيضا في [Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). ومع ذلك، فهو لا يوفر تكامل البيانات بين Microsoft Defender for Office و Microsoft Defender لنقطة النهاية Microsoft 365 Defender التحليلات للتهديدات.
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

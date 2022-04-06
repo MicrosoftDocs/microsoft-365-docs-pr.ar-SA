@@ -1,7 +1,7 @@
 ---
-title: معمل تقييم Microsoft Defender لنقطة النهاية
-description: تعرف على قدرات Microsoft Defender لنقطة النهاية، وكيفية تشغيل عمليات محاكاة الهجمات، وتعرف على كيفية منع التهديدات والكشف عنها وكيفية إصلاحها.
-keywords: تقييم Microsoft Defender ل Endpoint والتقييم والمختبر والمحاكاة و windows 10 و windows server 2019 ومعمل التقييم
+title: Microsoft Defender لنقطة النهاية التقييم
+description: تعرف على Microsoft Defender لنقطة النهاية، وتشغيل عمليات محاكاة الهجمات، وتعرف على كيفية منع التهديدات والكشف عنها وكيفية إصلاحها.
+keywords: تقييم Microsoft Defender لنقطة النهاية والتقييم والمختبر والمحاكاة و windows 10 و windows server 2019 ومعمل التقييم
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,26 +16,26 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 11927ccd5b132a0ecb3e1a42ddc4622bd5b0d9af
-ms.sourcegitcommit: 726a72f135358603c2fde3f4067d834536e6deb2
+ms.openlocfilehash: 2b4c1cd9c37921fbb54633c0fc1bf2e42d308081
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63578094"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472870"
 ---
-# <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>معمل تقييم Microsoft Defender لنقطة النهاية
+# <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender لنقطة النهاية التقييم
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 قد يكون إجراء تقييم شامل لمنتج الأمان عملية معقدة تتطلب بيئة مرهقة وتكوين جهاز قبل إجراء محاكاة هجوم شامل. ويضاف إلى التعقيد تحدي تعقب مكان انعكاس أنشطة المحاكاة والتنبيهات والنتائج أثناء التقييم.
 
-تم تصميم معمل تقييم Microsoft Defender لنقطة النهاية لإزالة تعقيدات تكوين الجهاز والبيئة بحيث يمكنك التركيز على تقييم إمكانات النظام الأساسي وتشغيل عمليات المحاكاة ورؤية ميزات المنع والكشف والتقويم قيد التنفيذ.
+تم تصميم Microsoft Defender لنقطة النهاية تقييم البيانات لإزالة تعقيدات تكوين الجهاز والبيئة بحيث يمكنك التركيز على تقييم إمكانات النظام الأساسي وتشغيل عمليات المحاكاة ورؤية ميزات منع الفيروسات والكشف عنها وميزات المعالجة قيد التنفيذ.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUM]
 
@@ -51,7 +51,7 @@ ms.locfileid: "63578094"
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-ستحتاج إلى تلبية [متطلبات الترخيص](minimum-requirements.md#licensing-requirements) أو الوصول التجريبي إلى Microsoft Defender ل Endpoint للوصول إلى معمل التقييم.
+ستحتاج إلى تلبية [متطلبات الترخيص](minimum-requirements.md#licensing-requirements) أو الحصول على حق الوصول التجريبي Microsoft Defender لنقطة النهاية الوصول إلى معمل التقييم.
 
 يجب أن يكون **لديك أذونات إدارة إعدادات الأمان** من أجل:
 
@@ -82,22 +82,22 @@ ms.locfileid: "63578094"
 
 1. في جزء التنقل، حدد تقييم & **التعليمية** \> معمل **التقييم، ثم** حدد **إعداد المعمل**.
 
-    :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="صورة لصفحة الترحيب في معمل التقييم.":::
+   :::image type="content" source="../../media/evaluationtutormenu.png" alt-text="صفحة الترحيب في معمل التقييم" lightbox="../../media/evaluationtutormenu.png":::
 
 2. استنادا إلى احتياجات التقييم، يمكنك اختيار إعداد بيئة ذات أجهزة أقل لفترة أطول أو أكثر لفترة زمنية أقصر. حدد تكوين المعمل المفضل لديك ثم حدد **التالي**.
 
-    ![صورة خيارات تكوين المعمل.](images/lab-creation-page.png)
+    :::image type="content" source="images/lab-creation-page.png" alt-text="خيارات تكوين المعمل" lightbox="images/lab-creation-page.png":::
 
 3. (اختياري) يمكنك اختيار تثبيت محاكي التهديدات في المعمل.
 
-    ![صورة لعامل محاكي التثبيت.](images/install-agent.png)
+    :::image type="content" source="images/install-agent.png" alt-text="صفحة وكيل محاكي التثبيت" lightbox="images/install-agent.png":::
 
    > [!IMPORTANT]
    > ستحتاج أولا إلى قبول الشروط وبيانات مشاركة المعلومات وتقديم الموافقة عليها.
 
 4. حدد وكيل محاكاة التهديدات الذي تريد استخدامه وأدخل التفاصيل الخاصة بك. يمكنك أيضا اختيار تثبيت محاكي التهديدات في وقت لاحق. إذا اخترت تثبيت وكلاء محاكاة التهديدات أثناء إعداد المعمل، فسوف تستمتع بستفيدية تثبيتهم بسهولة على الأجهزة التي تضيفها.
 
-    ![صورة لصفحة الملخص.](images/lab-setup-summary.png)
+   :::image type="content" source="images/lab-setup-summary.png" alt-text="صفحة الملخص" lightbox="images/lab-setup-summary.png":::
 
 5. راجع الملخص وحدد **معمل الإعداد**.
 
@@ -134,7 +134,9 @@ ms.locfileid: "63578094"
 
 1. من لوحة المعلومات، حدد **إضافة جهاز**.
 
-2. اختر نوع الجهاز الذي تريد إضافته. يمكنك اختيار إضافة Windows 10 و Windows 11 و Windows Server 2019 و Windows Server 2016 و Linux (Ubuntu). 
+2. اختر نوع الجهاز الذي تريد إضافته. يمكنك اختيار إضافة Windows 10 و Windows 11 و Windows Server 2019 و Windows Server 2016 و Linux (Ubuntu).
+
+   :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="إعداد المعمل مع خيارات الجهاز" lightbox="../../media/add-machine-optionsnew.png":::
 
    > [!NOTE]
    > إذا حدث خطأ ما في عملية إنشاء الجهاز، سيتم إعلامك وستحتاج إلى إرسال طلب جديد. إذا فشل إنشاء الجهاز، لن يتم حسابه مقابل الحصة النسبية الإجمالية المسموح بها.
@@ -144,13 +146,14 @@ ms.locfileid: "63578094"
    > [!NOTE]
    > يتم عرض كلمة المرور مرة واحدة فقط. تأكد من حفظه لاستخدامه لاحقا.
 
-    :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="صورة الجهاز الذي تم إضافته مع تفاصيل الاتصال.":::
+    :::image type="content" source="../../media/add-machine-eval-lab-new.png" alt-text="الجهاز الذي تم إضافته مع تفاصيل الاتصال" lightbox="../../media/add-machine-eval-lab-new.png":::
 
 4. يبدأ إعداد الجهاز. قد يستغرق ذلك ما يصل إلى 30 دقيقة تقريبا.
 
 5. راجع حالة أجهزة الاختبار، ومستويات المخاطر والتعرض للضوء، حالة عمليات تثبيت المحاكي من خلال تحديد علامة **التبويب** الأجهزة.
 
-    ![صورة ل علامة تبويب الأجهزة.](images/machines-tab.png)
+   :::image type="content" source="images/machines-tab.png" alt-text="علامة تبويب الأجهزة" lightbox="images/machines-tab.png":::
+    
 
    > [!TIP]
    > في عمود **حالة المحاكي** ، يمكنك مرر فوق أيقونة المعلومات لمعرفة حالة تثبيت عامل.
@@ -162,7 +165,7 @@ ms.locfileid: "63578094"
 
 1. من لوحة معلومات معمل التقييم، حدد **طلب المزيد من الأجهزة**.
 
-   ![صورة لطلب المزيد من الأجهزة.](images/request-more-devices.png)
+   :::image type="content" source="images/request-more-devices.png" alt-text="خيار طلب المزيد من الأجهزة" lightbox="images/request-more-devices.png":::
 
 2. اختر التكوين الخاص بك.
 3. أرسل الطلب.
@@ -196,11 +199,10 @@ ms.locfileid: "63578094"
 
 1. الاتصال إلى جهازك وتشغيل محاكاة هجوم عن **طريق تحديد الاتصال**.
 
-    ![صورة لزر الاتصال للأجهزة الاختبارية.](images/test-machine-table.png)
+    :::image type="content" source="images/test-machine-table.png" alt-text="زر الاتصال للأجهزة الاختبارية" lightbox="images/test-machine-table.png":::
 
 
-2. بالنسبة **Windows الأجهزة**: احفظ ملف RDP واطلقه عن **طريق تحديد الاتصال**.<br> 
-    ![صورة لاتصال سطح المكتب البعيد.](images/remote-connection.png)
+   :::image type="content" source="images/remote-connection.png" alt-text="شاشة اتصال سطح المكتب البعيد" lightbox="images/remote-connection.png":::
 
     بالنسبة **إلى أجهزة Linux**: ستحتاج إلى استخدام عميل SSH محلي الأمر الذي تم توفيره. 
 
@@ -208,13 +210,13 @@ ms.locfileid: "63578094"
     > [!NOTE]
     > إذا لم يكن لديك نسخة من كلمة المرور المحفوظة أثناء الإعداد الأولي، يمكنك إعادة تعيين كلمة المرور عن طريق تحديد إعادة تعيين كلمة **المرور من القائمة** :
     >
-    > ![صورة لإعادة تعيين كلمة المرور.](images/reset-password-test-machine.png)
+    > :::image type="content" source="images/reset-password-test-machine.png" alt-text="الخيار &quot;إعادة تعيين كلمة المرور&quot;" lightbox="images/reset-password-test-machine.png":::
     >
     > سيغير الجهاز الحالة إلى "تنفيذ إعادة تعيين كلمة المرور"، ثم سيتم تقديم كلمة المرور الجديدة في غضون دقائق قليلة.
 
 3. أدخل كلمة المرور التي تم عرضها أثناء خطوة إنشاء الجهاز.
 
-   ![صورة نافذة لإدخال بيانات الاعتماد.](images/enter-password.png)
+   :::image type="content" source="images/enter-password.png" alt-text="الشاشة التي تقوم بإدخال بيانات الاعتماد عليها" lightbox="images/enter-password.png":::
 
 4. تشغيل عمليات محاكاة الهجمات بنفسك على الجهاز.
 
@@ -222,7 +224,7 @@ ms.locfileid: "63578094"
 
 إذا اخترت تثبيت أي من محاكي التهديدات المعتمدة أثناء إعداد المعمل، يمكنك تشغيل عمليات المحاكاة المضمنة على أجهزة معامل التقييم.
 
-إن تشغيل عمليات محاكاة التهديدات باستخدام الأنظمة الأساسية الخاصة ب جهة خارجية هو طريقة جيدة لتقييم قدرات نقطة النهاية ل Microsoft Defender ضمن حدود بيئة المعمل.
+يشكل تشغيل عمليات محاكاة التهديدات باستخدام الأنظمة الأساسية الخاصة ب جهة خارجية طريقة جيدة لتقييم Microsoft Defender لنقطة النهاية داخل بيئة المعمل.
 
 > [!NOTE]
 >
@@ -235,7 +237,7 @@ ms.locfileid: "63578094"
 
 2. حدد محاكي تهديدات.
 
-    ![صورة تحديد محاكي التهديدات.](images/select-simulator.png)
+   :::image type="content" source="images/select-simulator.png" alt-text="تحديد محاكي التهديدات" lightbox="images/select-simulator.png":::
 
 3. اختر محاكاة أو ابحث في معرض المحاكاة للاستعراض عبر عمليات المحاكاة المتوفرة.
 
@@ -249,15 +251,15 @@ ms.locfileid: "63578094"
 
 6. عرض تقدم عملية محاكاة عن طريق تحديد علامة **التبويب عمليات المحاكاة** . عرض حالة المحاكاة والتنبيهات النشطة وتفاصيل أخرى.
 
-    ![صورة ل علامة تبويب عمليات المحاكاة.](images/simulations-tab.png)
+   :::image type="content" source="images/simulations-tab.png" alt-text="علامة التبويب &quot;عمليات محاكاة&quot;" lightbox="images/simulations-tab.png":::
 
-بعد تشغيل عمليات المحاكاة، نشجعك على السير عبر شريط التقدم في المعمل واستكشاف **Microsoft Defender ل Endpoint** الذي تم تشغيله من خلال إجراء عملية تحقيق وبحث تلقائية. اطلع على الإثباتات التي تم تجميعها وتحليلها بواسطة الميزة.
+بعد تشغيل عمليات المحاكاة، نشجعك على السير عبر شريط التقدم في المعمل واستكشاف Microsoft Defender لنقطة النهاية إجراء عملية تحقيق **وبحث تلقائية**. اطلع على الإثباتات التي تم تجميعها وتحليلها بواسطة الميزة.
 
 البحث عن أدلة الهجوم من خلال البحث المتقدم باستخدام لغة الاستعلام الغنية وفحص بيانات التعقب الخام وفحص بعض التهديدات على مستوى العالم الموثقة في تحليلات المخاطر.
 
 ## <a name="simulation-gallery"></a>معرض المحاكاة
 
-لقد عمل Microsoft Defender for Endpoint على شراكة مع العديد من الأنظمة الأساسية لمحاكاة التهديدات لتمنحك إمكانية الوصول المناسبة لاختبار إمكانات النظام الأساسي مباشرة من داخل المدخل.
+Microsoft Defender لنقطة النهاية شراكة مع العديد من الأنظمة الأساسية لمحاكاة التهديدات من أجل منح لك إمكانية الوصول المناسبة لاختبار إمكانات النظام الأساسي مباشرة من داخل المدخل.
 
 اشاهد كل عمليات المحاكاة المتوفرة عن طريق الذهاب إلى  **كتالوج عمليات** المحاكاة والبرامج التعليمية \> **من القائمة**  .
 
@@ -265,21 +267,21 @@ ms.locfileid: "63578094"
 
 يمكنك بسهولة تشغيل أي محاكاة متوفرة مباشرة من الكتالوج.
 
-![صورة لكتالوج عمليات المحاكاة.](images/simulations-catalog.png)
+:::image type="content" source="images/simulations-catalog.png" alt-text="كتالوج عمليات المحاكاة" lightbox="images/simulations-catalog.png":::
 
 تأتي كل محاكاة مع وصف مفصل لسيناريوهات الهجوم ومراجع مثل تقنيات هجوم MITRE المستخدمة ونموذج استعلامات البحث المتقدم التي تقوم بتشغيلها.
 
 **أمثلة:**
 
-![صورة تفاصيل وصف المحاكاة1.](images/simulation-details-aiq.png)
+:::image type="content" source="images/simulation-details-aiq.png" alt-text="مثال على تفاصيل وصف المحاكاة لأساليب الثبات" lightbox="images/simulation-details-aiq.png":::
 
-![صورة تفاصيل وصف المحاكاة2.](images/simulation-details-sb.png)
+:::image type="content" source="images/simulation-details-sb.png" alt-text="تفاصيل وصف المحاكاة ل APT29" lightbox="images/simulation-details-sb.png":::
 
 ## <a name="evaluation-report"></a>تقرير التقييم
 
 تلخص تقارير المعمل نتائج عمليات المحاكاة التي أجريت على الأجهزة.
 
-![صورة تقرير التقييم.](images/eval-report.png)
+:::image type="content" source="images/eval-report.png" alt-text="تقرير التقييم" lightbox="images/eval-report.png":::
 
 بنظرة سريعة، سوف تتمكن بسرعة من رؤية:
 
@@ -296,4 +298,4 @@ ms.locfileid: "63578094"
 
 أعلمنا رأيك عن طريق تحديد **تقديم ملاحظات**.
 
-![صورة لتقديم الملاحظات.](images/send-us-feedback-eval-lab.png)
+:::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="صفحة الملاحظات" lightbox="images/send-us-feedback-eval-lab.png":::

@@ -1,5 +1,5 @@
 ---
-title: إدارة Microsoft Defender لنقطة النهاية التنبيهات
+title: إدارة تنبيهات Microsoft Defender لنقطة النهاية
 description: يمكنك تغيير حالة التنبيهات وإنشاء قواعد منع لإخفاء التنبيهات وإرسال التعليقات ومراجعة محفوظات التغيير للتنبيهات الفردية باستخدام القائمة إدارة التنبيهات.
 keywords: إدارة التنبيهات، والإدارة، والتنبيهات، الحالة، جديد، يتم حله، حل التنبيهات، منع، الضغط، القواعد، السياق، المحفوظات، التعليقات، التغييرات
 ms.prod: m365-security
@@ -14,20 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 83e7bd2cc46469cb6a5a6bc8c29a8d21dba20b7f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5e0cde3a8a852fab426c1e0bf0290f9785aa0b40
+ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466180"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "63583049"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-alerts"></a>إدارة Microsoft Defender لنقطة النهاية التنبيهات
+# <a name="manage-microsoft-defender-for-endpoint-alerts"></a>إدارة تنبيهات Microsoft Defender لنقطة النهاية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -39,7 +39,7 @@ ms.locfileid: "64466180"
 
 إن تحديد تنبيه في أي من هذين المكانين سيجلب جزء **إدارة التنبيهات**.
 
-:::image type="content" source="images/atp-alerts-selected.png" alt-text="جزء إدارة التنبيهات و قائمة انتظار التنبيهات" lightbox="images/atp-alerts-selected.png":::
+![صورة ل جزء إدارة التنبيهات والتنبيهات في قائمة الانتظار.](images/atp-alerts-selected.png)
 
 ## <a name="link-to-another-incident"></a>الارتباط بحادث آخر
 
@@ -131,10 +131,10 @@ ms.locfileid: "64466180"
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
 - [إدارة قواعد القمع](manage-suppression-rules.md)
-- [عرض قائمة انتظار تنبيهات Microsoft Defender لنقطة النهاية وتنظيمها](alerts-queue.md)
-- [التحقق Microsoft Defender لنقطة النهاية التنبيهات](investigate-alerts.md)
+- [عرض قائمة انتظار تنبيهات نقطة النهاية في Microsoft Defender وتنظيمها](alerts-queue.md)
+- [التحقق من تنبيهات نقطة النهاية ل Microsoft Defender](investigate-alerts.md)
 - [التحقق من ملف مقترن بتنبيه Microsoft Defender لنقطة النهاية](investigate-files.md)
-- [التحقق من الأجهزة في Microsoft Defender لنقطة النهاية الأجهزة](investigate-machines.md)
-- [التحقق من عنوان IP المقترن بتنبيه Microsoft Defender لنقطة النهاية الإنترنت](investigate-ip.md)
+- [التحقق من الأجهزة في قائمة أجهزة نقطة النهاية ل Microsoft Defender](investigate-machines.md)
+- [التحقق من عنوان IP مقترن بتنبيه Microsoft Defender لنقطة النهاية](investigate-ip.md)
 - [التحقق من مجال مقترن بتنبيه Microsoft Defender لنقطة النهاية](investigate-domain.md)
 - [التحقق من حساب مستخدم في Microsoft Defender لنقطة النهاية](investigate-user.md)

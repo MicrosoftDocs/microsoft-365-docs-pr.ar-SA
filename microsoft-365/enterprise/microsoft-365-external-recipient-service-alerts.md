@@ -1,7 +1,7 @@
 ---
 title: تنبيهات خدمة المستلمين الخارجيين
-ms.author: kvice
-author: kelleyvice-msft
+ms.author: markjjo
+author: markjjo
 manager: scotv
 ms.date: ''
 audience: Admin
@@ -19,18 +19,18 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: استخدم تنبيهات خدمة المستلمين الخارجيين لمراقبة علب البريد الموقوقة التي تصل إلى الحصة النسبية لعلبة البريد.
-ms.openlocfilehash: 8db8e090ec5430f13153bc3edf5b3315c041d9cf
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 931be51ee51bd5557633415004eed9a1c7e77888
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64567995"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63705213"
 ---
 # <a name="service-alerts-for-messages-pending-delivery-to-external-recipients-in-exchange-online-monitoring"></a>تنبيهات الخدمة للرسائل المعلقة للتسليم إلى المستلمين الخارجيين في Exchange Online مراقبة
 
 تبلغ تنبيهات الخدمة المسؤولين عن وضع البريد في قائمة انتظار للمستلمين الخارجيين خارج Exchange Online. قد تتطلب هذه التنبيهات إجراءات إصلاح خارج Microsoft، ولكن يمكنها أن توفر لك المعلومات اللازمة لإعادة المعالجة.
 
-يتم عرض تنبيهات الخدمة هذه في مركز مسؤولي Microsoft 365. لعرض تنبيهات الخدمة هذه، انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> >  >  حالة Estado de funcionamento dos serviços **Exchange Online** ثم انقر فوق **علامة التبويب مشاكل** نشطة. اسم تنبيهات الخدمة هذه هو "قائمة انتظار الرسائل إلى مستلمين خارجيين فوق الحدود".
+يتم عرض تنبيهات الخدمة هذه في مركز مسؤولي Microsoft 365. لعرض تنبيهات الخدمة هذه، انتقل إلى **حالة HealthService** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Exchange Online**</a> >  **ثم انقر** فوق **علامة التبويب مشاكل** نشطة. اسم تنبيهات الخدمة هذه هو "قائمة انتظار الرسائل إلى مستلمين خارجيين فوق الحدود".
 
 ![تنبيه الخدمة للرسائل المعلقة للتسليم إلى المستلمين الخارجيين المعروضة في Exchange Online لوحة معلومات المراقبة.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts1.png)
 

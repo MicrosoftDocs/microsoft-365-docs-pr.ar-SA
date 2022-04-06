@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8d2812f9f2e1100a923dc5f9bb22a9b6df218a78
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3ff4317fc195a175a2b622c13ea4683a5e010b1c
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63567910"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680698"
 ---
 # <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>حلول التقارير المخصصة أو حلول التقارير من جهة خارجية ل Microsoft Defender Office 365
 
@@ -44,7 +44,6 @@ ms.locfileid: "63567910"
 |[بدء العمل باستخدام Office 365 واجهات برمجة التطبيقات للإدارة](/office/office-365-management-api/get-started-with-office-365-management-apis)|تستخدم Office 365 API لإدارة التطبيق Azure AD لتوفير خدمات مصادقة لتطبيقك للوصول إلى Microsoft 365 البيانات. اتبع الخطوات في هذه المقالة لإعداد هذا الأمر.|
 |[Office 365 API لنشاط الإدارة](/office/office-365-management-api/office-365-management-activity-api-reference)|يمكنك استخدام واجهة برمجة Office 365 نشاط الإدارة لاسترداد معلومات حول المستخدم والمسؤول والإجراءات والأحداث المتعلقة بالإدارة والإدارة والسياسات من سجلات أنشطة Microsoft 365 و Azure AD. اقرأ هذه المقالة لمعرفة المزيد حول كيفية عمل ذلك.|
 |[Office 365 مخطط API لنشاط الإدارة](/office/office-365-management-api/office-365-management-activity-api-schema)|يمكنك الحصول على نظرة عامة حول المخطط [Common](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) وم المخطط [Defender Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) والرد على التهديدات والتحري للتعرف على أنواع معينة من البيانات المتوفرة من خلال Office 365 API لنشاط الإدارة.|
-|
 
 ## <a name="see-also"></a>راجع أيضًا
 

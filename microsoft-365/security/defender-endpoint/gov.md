@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b9a083404da3ad4edc3ccf2f88e1c459dc6f08e2
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 03d4d22bdce9f18b4883437215ea5cba50b3868e
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63570711"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681337"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender for Endpoint لعملاء الحكومة الأمريكية
 
@@ -118,8 +118,8 @@ Windows 7 SP1 Enterprise (Legacy) <sup>3</sup>|![نعم.](images/svg/check-yes.s
 Windows 7 SP1 Pro (Legacy) <sup>3</sup>|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 Linux|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 macOS|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
-Android|![لا.](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير
-iOS|![لا.](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير
+Android|![نعم.](images/svg/check-yes.svg) <br /> معاينة عامة|![نعم](images/svg/check-yes.svg) <br /> معاينة عامة|![نعم](images/svg/check-yes.svg) <br /> معاينة عامة
+iOS|![نعم.](images/svg/check-yes.svg) <br /> معاينة عامة|![نعم](images/svg/check-yes.svg) <br /> معاينة عامة|![نعم](images/svg/check-yes.svg) <br /> معاينة عامة
 |
 
 > [!NOTE]
@@ -194,3 +194,23 @@ Windows Server 2008 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم](images
 |اكتشاف الشبكة|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
 |التقارير: التحكم في الجهاز، حماية الجهاز، جدار الحماية|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|
 |تصفية محتوى ويب|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|
+  
+
+هذه هي الميزات والثغرات المعروفة ل [Mobile Threat Defense (Microsoft Defender ل Endpoint على Android & iOS)](mtd.md):
+
+<br />
+
+****
+
+|اسم الميزة|سحابة القطاع الحكومي|سحابة القطاع الحكومي High|DoD|
+|---|:---:|:---:|:---:|
+|حماية ويب (مؤشرات مكافحة التصيد الاحتيالي والمخصصة)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
+|الحماية من البرامج الضارة (Android-only)|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|
+|الكشف عن الكسر (iOS-Only)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
+|الوصول الشرطي/تشغيل شرطي|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
+|دعم MAM|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
+|عناصر تحكم الخصوصية|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
+|إدارة المخاطر والنقاط الضعف (TVM)|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|
+|تصفية محتوى ويب|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|![لا](images/svg/check-no.svg) في التطوير|
+  
+

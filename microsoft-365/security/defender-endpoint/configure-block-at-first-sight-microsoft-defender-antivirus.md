@@ -15,19 +15,19 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c955ab15640a8c3154e14ba0201946e109f832a9
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 48a411d836669a47479daa68a83a96c3e65b949f
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63578187"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64473222"
 ---
 # <a name="turn-on-block-at-first-sight"></a>تشغيل الحظر من النظرة الأولى
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 تصف هذه المقالة ميزة مكافحة الفيروسات/مكافحة البرامج الضارة المعروفة باسم "الحظر من النظرة الأولى"، كما تصف كيفية تمكين الحظر من النظرة الأولى لمنظمتك.
 
@@ -50,10 +50,10 @@ ms.locfileid: "63578187"
 
 برنامج الحماية من الفيروسات من Microsoft Defender تقنيات الكشف والمنع المتعددة لتقديم حماية دقيقة وذكية وفي الوقت الحقيقي.
 
-![قائمة بمحركات MICROSOFT Defender AV.](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="قائمة بمحركات AV ل Microsoft Defender" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
 
 > [!TIP]
-> لمعرفة المزيد، راجع (مدونة) التعرف على التقنيات المتقدمة في جوهر [Microsoft Defender لحماية الجيل التالي من نقطة النهاية](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+> لمعرفة المزيد، راجع (مدونة) التعرف على التقنيات المتقدمة في [Microsoft Defender لنقطة النهاية حماية الجيل التالي](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 
 ## <a name="a-few-things-to-know-about-block-at-first-sight"></a>بعض الأمور التي يجب معرفتها حول الحظر من النظرة الأولى
 
@@ -83,7 +83,7 @@ ms.locfileid: "63578187"
    - **ملحق الوقت لمسح الملفات بواسطة السحابة**: 50
    - **مطالبة المستخدمين قبل الإرسال النموذجي**: إرسال كل البيانات دون المطالبة
 
-   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="كتلة Intune config من النظرة الأولى.":::
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="كتلة Intune config من النظرة الأولى" lightbox="../../media/intune-block-at-first-sight.png":::
 
 4. احفظ إعداداتك.
 
@@ -108,18 +108,18 @@ ms.locfileid: "63578187"
    - **مستوى الحماية التي يتم تسليمها من السحابة**: عال
    - **برنامج الحماية من الفيروسات من Microsoft Defender ممتدة بالثواني**: 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="حظر إعدادات النظرة الأولى في إدارة نقاط النهاية.":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="حظر إعدادات النظرة الأولى في مدخل إدارة نقاط النهاية من Microsoft" lightbox="images/endpointmgr-antivirus-cloudprotection.png":::
 
 4. يمكنك تطبيق برنامج الحماية من الفيروسات من Microsoft Defender التعريف على مجموعة، مثل جميع المستخدمين أو **جميع الأجهزة** أو **جميع المستخدمين والأجهزة**.
 
-## <a name="turn-on-block-at-first-sight-with-group-policy"></a>تشغيل الحظر من النظرة الأولى باستخدام "نهج المجموعة"
+## <a name="turn-on-block-at-first-sight-with-group-policy"></a>تشغيل الحظر من النظرة الأولى باستخدام نهج المجموعة
 
 > [!NOTE]
 > نوصي باستخدام Intune أو إدارة نقاط النهاية من Microsoft تشغيل الحظر من النظرة الأولى.
 
-1. على كمبيوتر إدارة نهج المجموعة، افتح وحدة تحكم إدارة [نهج](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) المجموعة، وانقر بيمين فوق كائن نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
+1. على الكمبيوتر نهج المجموعة، افتح وحدة التحكم في إدارة نهج المجموعة، [](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))وانقر ب الماوس الأيمن فوق نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
 
-2. باستخدام محرر **إدارة نهج المجموعة**، انتقل إلى **قوالب** \>  \> تكوين الكمبيوتر الإدارية Windows **مكونات** \>  \> برنامج الحماية من الفيروسات من Microsoft Defender **الخرائط**.
+2. باستخدام نهج المجموعة **إدارة الكمبيوتر**، انتقل إلى **قوالب** \>  \> تكوين الكمبيوتر الإدارية Windows **مكونات** \>  \> برنامج الحماية من الفيروسات من Microsoft Defender **الخرائط**.
 
 3. في المقطع الخرائط، انقر نقرا مزدوجا فوق **تكوين ميزة 'الحظر عند** النظرة الأولى'، ثم قم بتعيينها إلى **تمكين**، ثم حدد **موافق**.
 
@@ -128,7 +128,7 @@ ms.locfileid: "63578187"
 
 4. في المقطع MAPS، انقر نقرا مزدوجا فوق إرسال نماذج الملفات عندما يكون إجراء **المزيد** من التحليل مطلوبا، ثم قم بتعيينها إلى **تمكين**. ضمن **إرسال عينات الملفات عند الحاجة** إلى إجراء المزيد من التحليلات، حدد **إرسال كل العينات**، ثم حدد **موافق**.
 
-5. يمكنك إعادة نشر "كائن نهج المجموعة" عبر الشبكة كما تفعل عادة.
+5. يمكنك إعادة نشر نهج المجموعة عبر الشبكة كما تفعل عادة.
 
 ## <a name="confirm-block-at-first-sight-is-enabled-on-individual-client-devices"></a>تأكيد تمكين الحظر من النظرة الأولى على أجهزة العميل الفردية
 
@@ -138,14 +138,14 @@ ms.locfileid: "63578187"
 
 2. حدد **الحماية & الفيروسات**، ثم ضمن **إعدادات** الحماية من & الفيروسات، حدد إدارة **الإعدادات.**
 
-   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="لقطة شاشة لتسمية إعدادات الحماية من & الفيروسات في تطبيق أمن Windows":::
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="تسمية إعدادات الحماية & الفيروسات في تطبيق أمن Windows" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
 3. تأكد من **تشغيل كل من الحماية المقدمة من** السحابة **ونموذج** الإرسال التلقائي.
 
 > [!NOTE]
 >
-> - إذا تم تكوين إعدادات المتطلبات الأساسية ونشرها باستخدام "نهج المجموعة"، ستكون الإعدادات الموضحة في هذا المقطع باللون الرمادي وغير متوفرة للاستخدام على نقاط النهاية الفردية.
-> - يجب نشر التغييرات التي يتم إدخالها من خلال "كائن نهج المجموعة" أولا على نقاط النهاية الفردية قبل أن يتم تحديث الإعداد في Windows الإعدادات.
+> - إذا تم تكوين إعدادات المتطلبات الأساسية ونشرها باستخدام نهج المجموعة، ستكون الإعدادات الموضحة في هذا القسم باللون الرمادي وغير متوفرة للاستخدام على نقاط النهاية الفردية.
+> - يجب نشر التغييرات التي يتم إدخالها نهج المجموعة كائن على نقاط نهاية فردية قبل تحديث الإعداد في Windows الإعدادات.
 
 ## <a name="validate-block-at-first-sight-is-working"></a>التحقق من صحة الكتلة من النظرة الأولى تعمل
 
@@ -181,11 +181,11 @@ ms.locfileid: "63578187"
 
 6. راجع الإعدادات واحفظها.
 
-### <a name="turn-off-block-at-first-sight-with-group-policy"></a>إيقاف تشغيل الحظر من النظرة الأولى باستخدام "نهج المجموعة"
+### <a name="turn-off-block-at-first-sight-with-group-policy"></a>إيقاف تشغيل الحظر من النظرة الأولى باستخدام نهج المجموعة
 
-1. على كمبيوتر إدارة نهج المجموعة، افتح وحدة تحكم إدارة [نهج](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) المجموعة، وانقر بيمين فوق كائن نهج المجموعة الذي تريد تكوينه، ثم حدد **تحرير**.
+1. على جهاز نهج المجموعة، افتح وحدة التحكم في الإدارة نهج المجموعة، [](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))وانقر ب الماوس الأيمن فوق نهج المجموعة الذي تريد تكوينه، ثم حدد **تحرير**.
 
-2. باستخدام **محرر إدارة نهج المجموعة** ، انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
+2. باستخدام نهج المجموعة **الإدارة،** انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
 
 3. قم بتوسيع الشجرة **عبر Windows من برنامج الحماية من الفيروسات من Microsoft Defender** \>  \> **الخرائط**.
 

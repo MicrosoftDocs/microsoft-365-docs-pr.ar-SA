@@ -15,19 +15,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: be22c80e51551b5de2a2aeed2f0dff0db9a8481f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: da5add0e1f37a813e6962accbc391be6efba1cb1
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63575462"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472980"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>تكوين الاستثناءات والتحقق من صحتها استنادا إلى ملحق الملف وموقع المجلد
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
 يمكنك تحديد الاستثناءات برنامج الحماية من الفيروسات من Microsoft Defender التي تنطبق على عمليات الفحص المجدولة، [](schedule-antivirus-scans.md)والفحص عند الطلب، [](run-scan-microsoft-defender-antivirus.md)والحماية والمراقبة في الوقت الحقيقي [دائما](configure-real-time-protection-microsoft-defender-antivirus.md). **بشكل عام، يجب ألا تحتاج إلى تطبيق الاستثناءات**. إذا كنت بحاجة إلى تطبيق الاستثناءات، يمكنك الاختيار من بين عدة أنواع مختلفة:
@@ -36,8 +36,8 @@ ms.locfileid: "63575462"
 - [استثناءات الملفات التي يتم فتحها بواسطة العمليات](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> برنامج الحماية من الفيروسات من Microsoft Defender لا تنطبق الاستثناءات على إمكانيات نقاط النهاية الأخرى ل Microsoft Defender، بما في ذلك [الكشف عن تهديدات نقاط النهاية والرد عليها ( الكشف التلقائي والاستجابة على النقط النهائية)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)، وقواعد تقليل مساحة الهجوم [(ASR)،](/microsoft-365/security/defender-endpoint/attack-surface-reduction) [والوصول المتحكم به إلى المجلدات](/microsoft-365/security/defender-endpoint/controlled-folders). لا تزال الملفات التي تستبعدها باستخدام الأساليب الموضحة في هذه المقالة تؤدي إلى تشغيل الكشف التلقائي والاستجابة على النقط النهائية والكشف الأخرى.
-> لاستبعاد الملفات على نطاق واسع، أضفها إلى مؤشرات Microsoft Defender لنقطة [النهاية المخصصة](/microsoft-365/security/defender-endpoint/manage-indicators).
+> برنامج الحماية من الفيروسات من Microsoft Defender لا تنطبق الاستثناءات على إمكانيات Microsoft Defender لنقطة النهاية الأخرى، بما في ذلك [الكشف عن تهديدات نقاط النهاية والرد عليها ( الكشف التلقائي والاستجابة على النقط النهائية)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)، وقواعد تقليل مساحة الهجوم [(ASR)،](/microsoft-365/security/defender-endpoint/attack-surface-reduction) [والوصول المتحكم به إلى المجلدات](/microsoft-365/security/defender-endpoint/controlled-folders). لا تزال الملفات التي تستبعدها باستخدام الأساليب الموضحة في هذه المقالة تؤدي إلى تشغيل الكشف التلقائي والاستجابة على النقط النهائية والكشف الأخرى.
+> لاستبعاد الملفات على نطاق واسع، أضفها إلى Microsoft Defender لنقطة النهاية [المخصصة](/microsoft-365/security/defender-endpoint/manage-indicators).
 
 ## <a name="before-you-begin"></a>قبل البدء...
 
@@ -77,7 +77,7 @@ ms.locfileid: "63575462"
 
 - تنطبق الاستثناءات على [عمليات الفحص](scheduled-catch-up-scans-microsoft-defender-antivirus.md) المجدولة، [](run-scan-microsoft-defender-antivirus.md)والفحص عند الطلب، والحماية [](configure-real-time-protection-microsoft-defender-antivirus.md)في الوقت الحقيقي، ولكن ليس عبر Defender for Endpoint. لتحديد الاستثناءات عبر Defender for Endpoint، استخدم [المؤشرات المخصصة](manage-indicators.md).
 
-- بشكل افتراضي، سيتم دمج التغييرات المحلية التي يتم إدخالها على القوائم (بواسطة المستخدمين الذين لديهم امتيازات المسؤول، بما في ذلك التغييرات التي تم إدخالها على PowerShell و WMI) مع القوائم كما تم تعريفها (ونشرها) بواسطة نهج المجموعة أو إدارة التكوين أو Intune. تأخذ قوائم نهج المجموعة الأسبقية عند وجود تعارضات. بالإضافة إلى ذلك، تكون تغييرات قائمة الاستثناء التي تم إدخالها باستخدام "نهج المجموعة" مرئية في [أمن Windows التطبيق](microsoft-defender-security-center-antivirus.md).
+- بشكل افتراضي، سيتم دمج التغييرات المحلية التي يتم إدخالها على القوائم (بواسطة المستخدمين الذين لديهم امتيازات المسؤول، بما في ذلك التغييرات التي تم إدخالها على PowerShell و WMI) مع القوائم كما تم تعريفها (ونشرها) بواسطة نهج المجموعة أو Configuration Manager أو Intune. وتأخذ نهج المجموعة القوائم الأسبقية عند وجود تعارضات. بالإضافة إلى ذلك، تكون تغييرات قائمة الاستثناء نهج المجموعة مرئية في [أمن Windows التطبيق](microsoft-defender-security-center-antivirus.md).
 
 - للسماح بتغييرات محلية لتجاوز إعدادات النشر المدار، قم بتكوين كيفية دمج قوائم الاستثناءات المعرفة محليا [و عموميا](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists).
 
@@ -92,18 +92,18 @@ ms.locfileid: "63575462"
 - [تكوين إعدادات تقييد الجهاز في Microsoft Intune](/intune/device-restrictions-configure)
 - [برنامج الحماية من الفيروسات من Microsoft Defender إعدادات تقييد الجهاز Windows 10 Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
-### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>استخدام "إدارة التكوين" لتكوين اسم الملف أو المجلد أو استثناءات ملحقات الملفات
+### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>استخدام Configuration Manager لتكوين اسم الملف أو المجلد أو استثناءات ملحقات الملفات
 
 راجع [كيفية إنشاء سياسات](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) مكافحة البرامج الضارة ونشرها: إعدادات الاستثناء للحصول على تفاصيل حول إدارة نقاط النهاية من Microsoft (الفرع الحالي).
 
-### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>استخدام "نهج المجموعة" لتكوين استثناءات ملحقات الملفات أو المجلدات
+### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>استخدام نهج المجموعة لتكوين استثناءات ملحقات الملفات أو المجلدات
 
 > [!NOTE]
 > إذا قمت بتحديد مسار مؤهل بالكامل لملف، يتم استبعاد هذا الملف فقط. إذا تم تعريف مجلد في الاستثناء، يتم استبعاد كل الملفات والمجلدات الفرعية ضمن هذا المجلد.
 
-1. على كمبيوتر إدارة نهج المجموعة، افتح وحدة تحكم إدارة [نهج](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) المجموعة، وانقر بيمين فوق كائن نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
+1. على الكمبيوتر نهج المجموعة، افتح وحدة التحكم في إدارة نهج المجموعة، [](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))وانقر ب الماوس الأيمن فوق نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
 
-2. في محرر **إدارة نهج المجموعة** ، انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
+2. في نهج المجموعة **الإدارة،** انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
 
 3. قم بتوسيع الشجرة Windows **مكونات برنامج الحماية من الفيروسات من Microsoft Defender** \>  \> **الاستثناءات**.
 
@@ -301,9 +301,9 @@ ExclusionPath
 - [أمن Windows التطبيق](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> سيتم عرض تغييرات قائمة الاستثناء التي تم **إدخالها** باستخدام "نهج المجموعة" في القوائم في [أمن Windows التطبيق](microsoft-defender-security-center-antivirus.md).
+> سيتم عرض تغييرات القائمة نهج المجموعة **في** القوائم في [أمن Windows التطبيق](microsoft-defender-security-center-antivirus.md).
 >
-> لن تظهر التغييرات أمن Windows التطبيق **في** قوائم نهج المجموعة.
+> لن تظهر التغييرات أمن Windows التطبيق **في** نهج المجموعة.
 
 إذا كنت تستخدم PowerShell، يمكنك استرداد القائمة باستخدام طريقتين:
 
@@ -334,7 +334,7 @@ Get-MpPreference
 
 في المثال التالي، يتم `ExclusionExtension` تمييز العناصر المضمنة في القائمة:
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="إخراج PowerShell ل Get-MpPreference.":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="إخراج PowerShell ل Get-MpPreference" lightbox="../../media/wdav-powershell-get-exclusions-variable.png":::
 
 لمزيد من المعلومات، راجع [استخدام Cmdlets في PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) لتكوين برنامج الحماية من الفيروسات من Microsoft Defender [cmdlets و Defender Antivirus وتشغيلها](/powershell/module/defender/).
 
@@ -350,7 +350,7 @@ $WDAVprefs.ExclusionPath
 
 في المثال التالي، يتم تقسيم القائمة إلى أسطر جديدة لكل استخدام ل `Add-MpPreference` cmdlet:
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="يعرض إخراج PowerShell الإدخالات فقط في قائمة الاستثناء.":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="يعرض إخراج PowerShell الإدخالات في قائمة الاستثناء فقط" lightbox="../../media/wdav-powershell-get-exclusions-variable.png":::
 
 لمزيد من المعلومات، راجع [استخدام Cmdlets في PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) لتكوين برنامج الحماية من الفيروسات من Microsoft Defender [cmdlets و Defender Antivirus وتشغيلها](/powershell/module/defender/).
 

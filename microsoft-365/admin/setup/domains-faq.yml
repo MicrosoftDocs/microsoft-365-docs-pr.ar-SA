@@ -7,7 +7,7 @@ metadata:
   author: efrene
   manager: scotv
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: o365-administration
   ms.localizationpriority: medium
   ms.collection:
@@ -26,12 +26,12 @@ metadata:
   - GEA150
   ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
   description: تعرف على المزيد حول المجالات (مجال onmicrosoft ومجال النقل) من خلال العثور على إجابات لأسئلتك في الأسئلة الشائعة.
-  ms.openlocfilehash: 6b99f8d2d6b976add06dea9382a22d0e1a0a2b6c
-  ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+  ms.openlocfilehash: 77aecfc77e65939c799e67a3a5cb2f83f357237f
+  ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 03/08/2022
-  ms.locfileid: "63572988"
+  ms.lasthandoff: 03/20/2022
+  ms.locfileid: "63680587"
 title: الأسئلة الشائعة حول المجالات
 summary: "\n\nتحتوي هذه المقالة على إجابات على الأسئلة التي يتم طرحها بشكل متكرر حول المجالات في Microsoft 365.\n\nإذا لم تتمكن من العثور على إجابة على سؤالك، فدعنا نعرف ذلك من خلال ترك تعليق وسنضيفه إلى القائمة.\n"
 sections:

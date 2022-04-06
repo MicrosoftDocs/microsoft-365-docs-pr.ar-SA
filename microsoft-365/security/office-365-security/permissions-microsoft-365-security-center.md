@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 74e9f6e0ae60b322ed4ec50c5b1a9db278dbb2e6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 4e819a9de9d5ccd66caab4bc13d8b11c1a95ab03
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63574327"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681711"
 ---
 # <a name="permissions-in-the-microsoft-365-defender-portal"></a>الأذونات في مدخل Microsoft 365 Defender
 
@@ -77,10 +77,6 @@ ms.locfileid: "63574327"
 
 لمزيد من المعلومات، راجع [عرض أدوار المسؤولين وتعيينها في Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 
-<br>
-
-****
-
 |الدور|الوصف|
 |---|---|
 |**المسؤول العام**|الوصول إلى جميع الميزات الإدارية في Microsoft 365 الخدمات. يمكن للمسؤولين العامين فقط تعيين أدوار المسؤولين الآخرين. لمزيد من المعلومات، راجع [المسؤول العام / مسؤول الشركة](/azure/active-directory/roles/permissions-reference#global-administrator--company-administrator).|
@@ -92,7 +88,6 @@ ms.locfileid: "63574327"
 |**القارئ العام**|إصدار القراءة فقط من **دور المسؤول** العام. عرض كل الإعدادات والمعلومات الإدارية عبر Microsoft 365. لمزيد من المعلومات، راجع [القارئ العام](/azure/active-directory/roles/permissions-reference#global-reader).|
 |**مسؤول محاكاة الهجمات**|إنشاء جميع جوانب محاكاة الهجمات وإدارتها، و تشغيل/جدولة محاكاة، ومراجعة نتائج المحاكاة.[](attack-simulation-training.md) لمزيد من المعلومات، راجع [مسؤول محاكاة الهجمات](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator).|
 |**كاتب تحميل الهجوم**|قم بإنشاء تحميلات الهجوم ولكن ليس في الواقع تشغيلها أو جدولتها. لمزيد من المعلومات، راجع ["كاتب تحميل الهجوم](/azure/active-directory/roles/permissions-reference#attack-payload-author)".|
-|
 
 ### <a name="email--collaboration-roles-in-the-microsoft-365-defender-portal"></a>استخدام & الإلكتروني في مدخل Microsoft 365 Defender الإلكتروني
 

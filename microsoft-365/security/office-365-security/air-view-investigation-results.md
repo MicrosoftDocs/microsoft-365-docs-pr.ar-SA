@@ -19,12 +19,12 @@ description: أثناء إجراء تحقيق تلقائي في Microsoft 365، 
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54b9389d323c1e775b50bf63beaa33b0c4b0cae6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bf9fe34a88444d9d8ec6dccf4b22a507e55dfb00
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63566262"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680787"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>تفاصيل ونتائج التحقيق التلقائي في Microsoft 365
 
@@ -41,10 +41,6 @@ ms.locfileid: "63566262"
 
 تشير حالة التحقيق إلى تقدم التحليلات والإجراءات. ومع تشغيل التحقيق، تتغير الحالة للإشارة إلى ما إذا كان قد تم العثور على تهديدات، وما إذا تمت الموافقة على الإجراءات.
 
-<br>
-
-****
-
 |الحالة|الوصف|
 |---|---|
 |**البدء**|تم تشغيل التحقيق والانتظار لبدء تشغيله.|
@@ -58,7 +54,6 @@ ms.locfileid: "63566262"
 |**فشل**|اركض محلل تحقيق واحد على الأقل في مشكلة حيث لم يتم إكماله بشكل صحيح. <p> **ملاحظة** إذا فشل التحقيق بعد الموافقة على إجراءات المعالجة، فقد تكون إجراءات المعالجة قد نجحت. عرض تفاصيل التحقيق.|
 |**في قائمة الانتظار حسب "الوتد"**|يتم حاليا وضع التحقيق في قائمة انتظار. عند اكتمال التحريات الأخرى، تبدأ التحقيقات في قائمة الانتظار. يساعد التكتل على تجنب أداء الخدمة الرديئة.  <p> **تلميح**: يمكن أن تحد الإجراءات المعلقة من عدد التحريات الجديدة التي يمكن تشغيلها. تأكد من [الموافقة على (أو رفض) الإجراءات المعلقة](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
 |**تم إنهاؤه عن طريق "التدويل"**|إذا تم وضع التحقيق في قائمة الانتظار لفترة طويلة جدا، فإنه يتوقف. <p> **تلميح**: يمكنك [بدء التحقيق من "مستكشف التهديدات](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)".|
-|
 
 ## <a name="view-details-of-an-investigation"></a>عرض تفاصيل التحقيق
 

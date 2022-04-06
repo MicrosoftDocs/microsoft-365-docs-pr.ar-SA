@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إنشاء تحميلات مخصصة لتدريب محاكاة الهجمات في Microsoft Defender Office 365 الخطة 2.
 ms.technology: mdo
-ms.openlocfilehash: df939ac031035f8771314bc1941bf44535d65610
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: d670236aa81f4b5086263a75bbeceb8ca7e1e25f
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63569743"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63679753"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>إنشاء تحميلات مخصصة لتدريب محاكاة الهجمات في Defender for Office 365
 
@@ -174,10 +174,6 @@ ms.locfileid: "63569743"
 
 - **اسم المؤشر** **وموقع المؤشر**: هذه القيم مرتبطة. يعتمد المكان الذي يمكنك وضع المؤشر فيه على المؤشر نفسه. يتم وصف القيم المتوفرة في الجدول التالي:
 
-  <br>
-
-  ****
-
   |اسم المؤشر|موقع المؤشر|
   |---|---|
   |**نوع المرفق**|نص الرسالة|
@@ -203,7 +199,6 @@ ms.locfileid: "63569743"
   |**تصميم أو تنسيق غير مهني المظهر**|نص الرسالة|
   |**ارتباط تشعبي ل URL**|نص الرسالة|
   |**أنت مميز**|نص الرسالة|
-  |
   
   يتم تكاتف هذه القائمة لتحتوي على الدلائل الأكثر شيوعا التي تظهر في رسائل التصيد الاحتيالي.
 

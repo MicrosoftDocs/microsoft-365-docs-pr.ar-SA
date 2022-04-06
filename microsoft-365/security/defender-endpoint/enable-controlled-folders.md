@@ -16,20 +16,20 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: d8ff1b5946ccdcbc35a219bc0e656c2e23d6f3ea
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b62ff851cbee58cf3b29a2b4dde6fb1b6107dd85
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63573829"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472804"
 ---
 # <a name="enable-controlled-folder-access"></a>تمكين الوصول إلى المجلدات الخاضعة للتحكم
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -40,14 +40,14 @@ ms.locfileid: "63573829"
 
 - [أمن Windows التطبيق *](#windows-security-app)
 - [إدارة نقاط النهاية من Microsoft](#endpoint-manager)
-- [إدارة أجهزة المحمول (MDM)](#mobile-device-management-mdm)
+- [الأجهزة إدارة الجهاز (MDM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [نهج المجموعة](#group-policy)
 - [PowerShell](#powershell)
 
 [يسمح لك](evaluate-controlled-folder-access.md) وضع التدقيق باختبار كيفية عمل الميزة (ومراجعة الأحداث) دون التأثير على الاستخدام العادي للجهاز.
 
-ستتجاوز إعدادات نهج المجموعة التي تعطل دمج قائمة المسؤولين المحليين إعدادات الوصول إلى المجلدات التي يتم التحكم بها. كما أنها تتجاوز المجلدات المحمية والتطبيقات المسموح بها التي يحددها المسؤول المحلي من خلال الوصول المتحكم به إلى المجلدات. تتضمن هذه السياسات ما يلي:
+نهج المجموعة الإعدادات التي تعطل دمج قائمة المسؤولين المحليين إلى تجاوز إعدادات الوصول إلى المجلدات التي يتم التحكم بها. كما أنها تتجاوز المجلدات المحمية والتطبيقات المسموح بها التي يحددها المسؤول المحلي من خلال الوصول المتحكم به إلى المجلدات. تتضمن هذه السياسات ما يلي:
 
 - برنامج الحماية من الفيروسات من Microsoft Defender **تكوين سلوك دمج المسؤول المحلي في القوائم**
 - System Center Endpoint Protection **السماح للمستخدمين بإضافة استثناءات وتجاوزات**
@@ -65,7 +65,7 @@ ms.locfileid: "63573829"
 > [!NOTE]
 > *لا يتوفر هذا الأسلوب على Windows Server 2012R2 أو 2016.
 > 
-> إذا تم تكوين الوصول المتحكم به للمجلدات باستخدام نهج المجموعة أو PowerShell أو MDM CSPs، ستتغير الحالة في تطبيق أمن Windows بعد إعادة تشغيل الجهاز.
+> إذا تم تكوين الوصول المتحكم به للمجلدات باستخدام نهج المجموعة CSPs أو PowerShell أو MDM، ستتغير الحالة في تطبيق أمن Windows بعد إعادة تشغيل الجهاز.
 > إذا تم تعيين الميزة إلى **وضع التدقيق** باستخدام أي من هذه الأدوات، أمن Windows التطبيق الحالة ك **إيقاف تشغيل**.
 > إذا كنت تحمي بيانات ملف تعريف المستخدم، نوصي بأن يكون ملف تعريف المستخدم على محرك Windows الافتراضي.
 
@@ -94,7 +94,7 @@ ms.locfileid: "63573829"
     > [!NOTE]
     > أحرف البدل معتمدة للتطبيقات، ولكن ليس للمجلدات. لا يتم حماية المكاتب الفرعية. ستستمر التطبيقات المسموح بها في تشغيل الأحداث حتى تتم إعادة تشغيلها.
 
-## <a name="mobile-device-management-mdm"></a>إدارة أجهزة المحمول (MDM)
+## <a name="mobile-device-management-mdm"></a>الأجهزة إدارة الجهاز (MDM)
 
 استخدم [موفر خدمة تكوين ./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) (CSP) للسماح للتطبيقات بإجراء تغييرات على المجلدات المحمية.
 
@@ -117,9 +117,9 @@ ms.locfileid: "63573829"
 
 ## <a name="group-policy"></a>نهج المجموعة
 
-1. على جهاز إدارة نهج المجموعة، افتح وحدة تحكم إدارة [نهج](https://technet.microsoft.com/library/cc731212.aspx) المجموعة، وانقر بز الماوس الأيمن فوق كائن نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
+1. على جهاز نهج المجموعة، افتح وحدة التحكم نهج المجموعة [الإدارة](https://technet.microsoft.com/library/cc731212.aspx)، وانقر ب الماوس الأيمن فوق نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
 
-2. في محرر **إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
+2. في نهج المجموعة **إدارة،** انتقل إلى **تكوين الكمبيوتر** وحدد **قوالب إدارية**.
 
 3. قم بتوسيع الشجرة Windows **مكونات > برنامج الحماية من الفيروسات من Microsoft Defender > Windows Defender Exploit Guard > الوصول إلى المجلدات الخاضعة للتحكم**.
 
@@ -130,10 +130,10 @@ ms.locfileid: "63573829"
    - **حظر تعديل القرص فقط** - سيتم تسجيل المحاولات التي تقوم بها تطبيقات غير صحيحة للكتابة في قطاعات الأقراص في Windows الحدث. يمكن العثور على هذه السجلات في **سجلات** \> التطبيقات والخدمات ل Microsoft \> \> Windows Windows Defender \> \> التشغيلية 1123.
    - **تعديل القرص** للتدقيق فقط - سيتم تسجيل محاولات الكتابة إلى قطاعات القرص المحمية فقط في سجل أحداث Windows  (ضمن **سجلات** \> التطبيقات والخدمات **Microsoft** \> **Windows** \> **Windows Defender** \> \> التشغيلية 1124). لن يتم تسجيل محاولات تعديل الملفات أو حذفها في المجلدات المحمية.
 
-      ![لقطة شاشة لخيار "تمكين نهج المجموعة" و"وضع التدقيق" المحدد في المنسدل.](../../media/cfa-gp-enable.png)
+    :::image type="content" source="../../media/cfa-gp-enable.png" alt-text="الخيار &quot;تمكين نهج المجموعة&quot; و&quot;وضع التدقيق&quot; المحدد" lightbox="../../media/cfa-gp-enable.png":::
 
 > [!IMPORTANT]
-> لتمكين الوصول إلى المجلدات التي تم التحكم فيها بشكل كامل، يجب تعيين الخيار نهج  المجموعة إلى تمكين وتحديد **حظر** في القائمة المنسدلة خيارات.
+> لتمكين الوصول إلى المجلدات التي يتم التحكم فيها بشكل كامل، يجب تعيين نهج المجموعة إلى تمكين وتحديد  **حظر** في القائمة المنسدلة خيارات.
 
 ## <a name="powershell"></a>PowerShell
 

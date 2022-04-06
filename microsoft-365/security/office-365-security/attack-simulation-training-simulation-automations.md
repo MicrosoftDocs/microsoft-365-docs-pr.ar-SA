@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: يمكن للمسؤولين التعرف على كيفية إنشاء عمليات محاكاة تلقائية تحتوي على تقنيات ومحملات معينة يتم تشغيلها عند تنفيذ الشروط المحددة في Microsoft Defender Office 365 2.
 ms.technology: mdo
-ms.openlocfilehash: 327091706ed7c8c2a6f1f1180af7888ed67c1a57
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 3ad24a8b6d2be18fb7ef5fd49be7f2197b3be3a7
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63575116"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680941"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>عمليات المحاكاة التلقائية للتدريب على محاكاة الهجمات
 
@@ -230,15 +230,10 @@ ms.locfileid: "63575116"
 
 - **تحديد تفضيل الصفحة المنتقلة**: تعتمد القيم المتوفرة على التحديدات السابقة في الصفحة [تحديد](#select-payloads) التحميلات كما هو موضح في الجدول التالي:
 
-  <br>
-
-  ****
-
   |التحديد على الصفحة "تحديد الحمولات"|القيم المتوفرة لتحديد تفضيلات الصفحة المنتقلة|
   |---|---|
   |تحديد يدويا|استخدام الصفحة المنتقل الإفتراضية الافتراضية إلى Microsoft <p> إنشاء الصفحة المنتقل الهابوطة الخاصة بك <p> استخدام عنوان URL مخصص <p> **ملاحظة**: لا **تتوفر قيمة استخدام عنوان URL** مخصص إذا قمت مسبقا بتحديد مرفق البرامج الضارة  أو الارتباط بالبرامج الضارة في [الصفحة تحديد تقنيات الهندسة](#select-one-or-more-social-engineering-techniques) الاجتماعية.|
   |عشوائي|استخدام الصفحة المنتقل الإفتراضية الافتراضية إلى Microsoft|
-  |
 
   يتم وصف **قيم** تفضيلات الصفحة المنتقلة إلى تحديد المتوفرة والإعدادات المقترنة بها في القائمة التالية:
 

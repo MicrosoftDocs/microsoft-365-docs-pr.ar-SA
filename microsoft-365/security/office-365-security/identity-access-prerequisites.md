@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 1dbcfbff2a45cd3dfbc453f84eaa73e178174aee
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 445cb497abfaa0e7e4322268a761aafbaa0e31d6
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63577025"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680897"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>العمل المتطلب الأساسي لتطبيق هوية الصفرية ونهج الوصول إلى الجهاز
 
@@ -54,7 +54,6 @@ ms.locfileid: "63577025"
 |[تمكين حماية هوية Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection). تمكنك Azure AD Identity Protection من الكشف عن نقاط الضعف المحتملة التي تؤثر على هويات مؤسستك وتكوين نهج المعالجة التلقائية إلى مخاطر تسجيل الدخول المنخفضة والمتوسطة والأعلى ومخاطر المستخدم.||Microsoft 365 E5 أو Microsoft 365 E3 باستخدام الوظائف الإضافية أمان E5|
 |**تمكين المصادقة** [الحديثة Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) و Skype for Business [Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). المصادقة الحديثة هي أحد المتطلبات الأساسية لاستخدام المصادقة MFA. يتم تمكين المصادقة الحديثة بشكل افتراضي لعملاء Office 2016 و2019 SharePoint OneDrive for Business.||Microsoft 365 E3 أو E5|
 |[تمكين تقييم الوصول المستمر](microsoft-365-continuous-access-evaluation.md) ل Azure AD. ينهي تقييم الوصول المستمر جلسات المستخدم النشطة بشكل استباقي ويفرض تغييرات نهج المستأجر في الوقت الحقيقي تقريبا.||Microsoft 365 E3 أو E5|
-|
 
 ## <a name="recommended-client-configurations"></a>تكوينات العميل المستحسنة
 
@@ -87,7 +86,6 @@ ms.locfileid: "63577025"
 |**Android**|Outlook ل Android|[الأحدث](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2019 و2016|
 |**Linux**|غير معتمد||
-|
 
 ### <a name="recommended-client-platforms-when-securing-documents"></a>الأنظمة الأساسية للعميل الموصى بها عند تأمين المستندات
 
@@ -101,7 +99,6 @@ ms.locfileid: "63577025"
 |iOS|معتمد|معتمد|معتمد|معتمد|N/A|
 |macOS|معتمد|معتمد|N/A|N/A|غير معتمد|
 |Linux|غير معتمد|غير معتمد|غير معتمد|غير معتمد|غير معتمد|
-|
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 دعم العملاء
 

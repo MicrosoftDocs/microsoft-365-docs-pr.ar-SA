@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3179ab18ab27bb41f5c0b1577d73ff48b3470b98
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 85ddada93e20e36648fccdb0fe9b2b34ab473212
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63572331"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681469"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>تكوين Microsoft Defender لنقطة النهاية على ميزات iOS
 
@@ -143,6 +143,24 @@ ms.locfileid: "63572331"
 
 > [!NOTE]
 > يدعم Defender ل Endpoint على نظام iOS إنشاء مؤشرات مخصصة فقط عناوين IP وعناوين URL/المجالات.
+
+## <a name="configure-option-to-send-in-app-feedback"></a>الخيار "تكوين" لإرسال الملاحظات داخل التطبيق 
+
+أصبح لدى العملاء الآن خيار تكوين القدرة على إرسال بيانات الملاحظات إلى Microsoft ضمن تطبيق Defender for Endpoint. تساعد بيانات الملاحظات Microsoft على تحسين المنتجات وإصلاح المشاكل.
+
+> [!NOTE]
+> بالنسبة لعملاء السحابة في الولايات المتحدة، يتم تعطيل تجميع بيانات **الملاحظات بشكل** افتراضي. 
+
+استخدم الخطوات التالية لتكوين الخيار لإرسال بيانات الملاحظات إلى Microsoft:
+
+1. في [إدارة نقاط النهاية من Microsoft مركز الإدارة واذهب](https://go.microsoft.com/fwlink/?linkid=2109431) إلى سياسات تكوين **تطبيقات** **AppsAddManaged** >  >  >  **الأجهزة**.
+1. قم امنح النهج اسما، النظام الأساسي > **iOS/iPadOS**، وحدد نوع ملف التعريف.
+1. حدد **Microsoft Defender ل Endpoint** ك التطبيق الهدف.
+1. في الإعدادات، حدد **استخدام مصمم التكوين** وأضف **DefenderSendFeedback** كمفتاح ونوع القيمة ك **Boolean**
+   - لإزالة قدرة المستخدمين النهائيين على تقديم الملاحظات، قم بتعيين القيمة ك `false` وتعيين هذا النهج للمستخدمين. بشكل افتراضي، يتم تعيين هذه القيمة إلى `true`. بالنسبة لعملاء الحكومة الأمريكية، يتم تعيين القيمة الافتراضية إلى "خطأ".
+   - للمستخدمين الذين تم `true`تعيين المفتاح لديهم ك ، سيكون هناك خيار لإرسال بيانات الملاحظات إلى Microsoft ضمن التطبيق (القائمة > تعليمات & ملاحظاتك > إرسال ملاحظات إلى Microsoft)
+1. انقر **فوق التالي** ثم قم بتعيين ملف التعريف هذا إلى الأجهزة/المستخدمين المستهدفين.
+
 
 ## <a name="report-unsafe-site"></a>الإبلاغ عن موقع غير آمن
 

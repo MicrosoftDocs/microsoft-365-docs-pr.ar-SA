@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 255618508559e989a356ab404429bc4d87bfe2c6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e265fd09fa7442b24868ad7f001701ef567e32bd
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63579968"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63681557"
 ---
 # <a name="continuous-access-evaluation-for-microsoft-365"></a>تقييم الوصول المستمر Microsoft 365
 
@@ -76,10 +76,6 @@ ms.locfileid: "63579968"
 
 تدعم Microsoft 365 التالية حاليا تقييم الوصول المستمر من خلال الاستماع إلى الأحداث من Azure AD.
 
-<br>
-
-****
-
 |نوع التنفيذ|Exchange|SharePoint|الفرق|
 |---|---|---|---|
 |**الأحداث الهامة:**||||
@@ -87,7 +83,6 @@ ms.locfileid: "63579968"
 |مخاطر المستخدم|معتمد|غير معتمد|غير معتمد|
 |**تقييم نهج الوصول الشرطي:**||||
 |نهج موقع عنوان IP|معتمد|معتمد\*|معتمد|
-|
 
 \*SharePoint Office الوصول إلى مستعرض الويب على فرض نهج IP الفوري من خلال تمكين الوضع الصارم. بدون وضع صارم، تكون مدة وصول الرمز المميز ساعة واحدة.
 

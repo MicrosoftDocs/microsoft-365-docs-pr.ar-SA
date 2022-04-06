@@ -1,5 +1,5 @@
 ---
-title: اختر حماية البيانات في Microsoft (MIP) المضمنة لتطبيقات Office عبر الوظائف الإضافية Azure حماية البيانات (AIP)
+title: اختر حماية البيانات في Microsoft (MIP) المضمنة لتطبيقات Office عبر الوظائف الإضافية Azure Information Protection (AIP)
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: عند استخدام عميل التسمية الموحد حماية البيانات Azure (AIP)، يمكنك فهم فوائد استخدام التسميات المضمنة لتطبيقات Office بدلا من الوظائف الإضافية AIP.
-ms.openlocfilehash: 38aee57720f38793f4f61cc871a9bee556e28690
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+description: عند استخدام عميل التسمية الموحد لحماية معلومات Azure (AIP)، يمكنك فهم فوائد استخدام التسميات المضمنة لتطبيقات Office بدلا من الوظائف الإضافية AIP.
+ms.openlocfilehash: 88849422d295cc7caf2eb39837f7f1bb82b7a378
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498594"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63704723"
 ---
 # <a name="why-choose-mip-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>لماذا اختر تسمية MIP المضمنة عبر الوظائف الإضافية AIP لتطبيقات Office
 
 >*[Microsoft 365 إرشادات الترخيص لتوافق & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-عند استخدام تسميات الحساسية في Microsoft 365 Apps على أجهزة كمبيوتر Windows، يكون لديك خيار استخدام التسميات المضمنة في تطبيقات Office، أو إضافة من عميل التسمية الموحد ل [Azure حماية البيانات (AIP](/azure/information-protection/rms-client/aip-clientv2)).[](sensitivity-labels.md) 
+عند استخدام تسميات الحساسية في Microsoft 365 Apps على أجهزة كمبيوتر Windows، يكون لديك خيار استخدام التسميات المضمنة في تطبيقات Office، أو إضافة إضافية من عميل التسمية الموحد لحماية معلومات [Azure (AIP](/azure/information-protection/rms-client/aip-clientv2)).[](sensitivity-labels.md) 
 
 تشكل التسميات المضمنة حجر الزاوية لنشر [حماية البيانات في Microsoft (MIP)](information-protection-solution.md) لأن تقنية التسمية هذه تمتد عبر الأنظمة الأساسية (Windows و macOS و iOS و Android و الويب)، بالإضافة إلى تطبيقات وخدمات Microsoft وغيرها. تم أيضا تصميم التسميات المضمنة للعمل مع إمكانات MIP الأخرى، مثل تصنيف البيانات ومنع فقدان البيانات (DLP).
 
@@ -38,7 +38,7 @@ ms.locfileid: "64498594"
 
 عند الاحتفاظ ب عميل AIP مثبتا ولكن معطلا في تطبيقات Office، تبقى الإمكانات الأخرى الخاصة ب عميل AIP معتمدة:
 
-- خيارات النقر بضغطة مستكشف الملفات للمستخدمين لتطبيق التسميات على كل أنواع الملفات.
+- خيارات النقر بضغطة زر الماوس الأيمن في "مستكشف الملفات" للمستخدمين لتطبيق التسميات على كل أنواع الملفات.
 
 - عارض لعرض الملفات المشفرة للنص أو الصور أو مستندات PDF.
 
@@ -46,9 +46,9 @@ ms.locfileid: "64498594"
 
 - ماسح ضوئي لاكتشاف المعلومات الحساسة المخزنة في مخازن البيانات المحلية، ثم تسمية هذا المحتوى اختياريا.
 
-لمزيد من المعلومات حول هذه الإمكانات التي تتجاوز Office التطبيقات، راجع دليل مسؤول عميل التسمية حماية البيانات [Azure](/azure/information-protection/rms-client/clientv2-admin-guide) من وثائق AIP.
+لمزيد من المعلومات حول هذه الإمكانات التي تتجاوز Office التطبيقات، راجع دليل مسؤول تسمية عميل [Azure](/azure/information-protection/rms-client/clientv2-admin-guide) الموحد لحماية المعلومات من وثائق AIP.
 
-بشكل مستقل عن التسميات، يمكنك الاستمرار في استخدام وحدة [AIPService](/powershell/module/aipservice) PowerShell النمطية لإدارة خدمة التشفير على مستوى المستأجر. على سبيل المثال، قم بتكوين وصول مستخدم فائق عندما تحتاج إلى إزالة التشفير لاسترداد البيانات، وتعقب المستندات التي تم فتحها بواسطة عميل AIP وإبطالها، وتكوين فترة صلاحية استخدام الترخيص للوصول دون اتصال. لمزيد من المعلومات، راجع [إدارة الحماية من Azure حماية البيانات باستخدام PowerShell](/azure/information-protection/administer-powershell).
+بشكل مستقل عن التسميات، يمكنك الاستمرار في استخدام وحدة [AIPService](/powershell/module/aipservice) PowerShell النمطية لإدارة خدمة التشفير على مستوى المستأجر. على سبيل المثال، قم بتكوين وصول مستخدم فائق عندما تحتاج إلى إزالة التشفير لاسترداد البيانات، وتعقب المستندات التي تم فتحها بواسطة عميل AIP وإبطالها، وتكوين فترة صلاحية استخدام الترخيص للوصول دون اتصال. لمزيد من المعلومات، راجع [إدارة الحماية من حماية معلومات Azure باستخدام PowerShell](/azure/information-protection/administer-powershell).
 
 ## <a name="decide-whether-to-use-built-in-labeling-for-office-apps-or-the-aip-add-in"></a>تحديد ما إذا كنت تريد استخدام التسميات المضمنة لتطبيقات Office أو الوظائف الإضافية AIP
 
@@ -57,7 +57,7 @@ ms.locfileid: "64498594"
 - لن يتم دعم أي ميزات تسمية جديدة.
 - الوظائف الإضافية أقل استقرارا لأنها قد تتضارب مع الوظائف الإضافية الأخرى التي قد تؤدي إلى تعليق Office أو تعطلها أو تعطيلها تلقائيا.
 - وكواد إضافية، يتم تشغيلها ببطء أكبر، ويمكن تعطيلها من قبل المستخدمين لتجاوز متطلبات التسمية.
-- تتطلب أي إصلاحات أخطاء إعادة تثبيت عميل Azure حماية البيانات.
+- تتطلب أي إصلاحات أخطاء إعادة تثبيت عميل Azure Information Protection.
 - تختلف تجربة وضع التسميات للمستخدمين قليلا عن التسميات المضمنة التي لدى المستخدمين على أجهزتهم الأخرى (macOS و iOS و Android) وعند استخدامهم Office على الويب. يمكن أن يزيد هذا الفرق تكاليف التدريب والدعم.
 - هناك ميزات جديدة Office التي تم إصدارها ولا يتم دعمها إلا بواسطة التسميات المضمنة، وتنمو القائمة في كل الأوقات.[](#features-supported-only-by-built-in-labeling-for-office-apps)
 
@@ -71,7 +71,7 @@ ms.locfileid: "64498594"
 يتم دعم بعض الميزات فقط بواسطة التسميات المضمنة لتطبيقات Office، ولن يتم دعمها بواسطة الوظائف الإضافية AIP. وتتضمن هذه الخيارات:
 
 - للتسمية التلقائية والموصى بها:
-    - الوصول إلى خدمات التصنيف الذكية التي تتضمن [تصنيفات](classifier-learn-about.md) قابلة للتدريب ومطابقة دقيقة للبيانات [(EDM)](sit-learn-about-exact-data-match-based-sits.md) [وكيانات مسماة](named-entities-learn.md)
+    - الوصول إلى خدمات التصنيف الذكية التي تتضمن [تصنيفات](classifier-learn-about.md) قابلة للتدريب ومطابقة البيانات الدقيقة [(EDM)](sit-learn-about-exact-data-match-based-sits.md) [والكيانات المسماة](named-entities-learn.md)
     - الكشف عن المعلومات الحساسة مع كتابة المستخدمين
     - في Word، يمكن للمستخدمين مراجعة المحتوى الحساس المعرف وإزالته
 - بالنسبة إلى التسميات التي تسمح للمستخدمين بتعيين أذونات، يمكن منح أذونات مختلفة (قراءة أو تغيير) للمستخدمين أو المجموعات
@@ -88,7 +88,7 @@ ms.locfileid: "64498594"
 
 ## <a name="how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps"></a>كيفية تعطيل الوظائف الإضافية AIP لاستخدام التسميات المضمنة لتطبيقات Office
 
-عند تثبيت عميل AIP لتوسيع التسميات إلى ما هو أبعد من تطبيقات Office ولكنك تريد منع تحميل الوظائف الإضافية للعميل في تطبيقات Office، استخدم قائمة إعداد نهج المجموعة ل الوظائف الإضافية المدارة كما هو موثق في عدم تحميل الوظائف الإضافية بسبب  إعدادات نهج المجموعة لبرامج [Office 2013 و Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
+عند تثبيت عميل AIP لتوسيع التسميات إلى ما هو أبعد من تطبيقات Office ولكنك تريد منع تحميل الوظائف الإضافية للعميل في تطبيقات Office، استخدم قائمة إعداد نهج المجموعة ل الوظائف الإضافية المدارة كما هو موثق في عدم تحميل  الوظائف الإضافية بسبب إعدادات نهج المجموعة لبرامج [Office 2013 و Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
 بالنسبة لتطبيقات Windows Office التي تدعم التسميات المضمنة، استخدم تكوين Microsoft Word 2016 و Excel 2016 و PowerPoint 2016 و Outlook 2016، وحدد المعرف البرنامجي التالي (ProgID) للعميل AIP **، ثم قم بتعيين الخيار إلى 0: تكون الوظائف الإضافية معطلة دائما (تم حظرها)**
 
@@ -100,12 +100,12 @@ ms.locfileid: "64498594"
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-نشر هذا الإعداد باستخدام نهج المجموعة أو باستخدام خدمة Office [السحابية](/DeployOffice/overview-office-cloud-policy-service).
+نشر هذا الإعداد باستخدام "نهج المجموعة"، أو باستخدام خدمة Office [السحابية](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!IMPORTANT]
 > إذا كنت تستخدم إعداد نهج المجموعة استخدم ميزة الحساسية في **Office** لتطبيق تسميات الحساسية وعرضها ثم قم بتعيينها إلى **1**، فهناك بعض الحالات التي قد لا تزال فيها الوظائف الإضافية AIP تحمل في تطبيقات Office. منع تحميل الوظائف الإضافية في كل تطبيق يمنع حدوث ذلك.
 
-بدلا من ذلك، يمكنك تعطيل أو إزالة ميزة **Microsoft Azure** حماية البيانات Office الإضافية من Word Excel و PowerPoint و Outlook. هذا الأسلوب مناسب لكمبيوتر واحد، واختبار مخصص. للحصول على الإرشادات، راجع عرض الوظائف الإضافية وإدارتها وتثبيتها [في Office البرامج](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d).
+بدلا من ذلك، يمكنك تعطيل أو إزالة ميزة الحماية من المعلومات من **Microsoft Azure** Office من Word Excel و PowerPoint و Outlook. هذا الأسلوب مناسب لكمبيوتر واحد، واختبار مخصص. للحصول على الإرشادات، راجع عرض الوظائف الإضافية وإدارتها وتثبيتها [في Office البرامج](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d).
 
 أيا كان الأسلوب الذي تختاره، يتم تطبيق التغييرات عند Office تشغيل التطبيقات.
 

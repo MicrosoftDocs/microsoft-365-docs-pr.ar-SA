@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3034c6020c3d7d04164e37beb1c1186e9aa30958
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 16654281adf5ca6f31ea2d29aab3387d39424cb1
+ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499100"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63583259"
 ---
 # <a name="responding-to-your-first-incident"></a>الاستجابة للحادث الأول
 
@@ -52,7 +52,7 @@ ms.locfileid: "64499100"
 
 ## <a name="next-step"></a>الخطوة التالية
 
-:::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="الخيار &quot;إعادة المعالجة&quot; في &quot;الاستجابة إلى صفحة الحادث الأولى&quot;" lightbox="../../media/first-incident-overview/first-incident-path.png":::
+[![قم بإعداد مؤسستك Microsoft 365 المستأجر.](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
 
 تأكد من أن مؤسستك Microsoft 365 المستأجر [مستعدا لمعالجة الحوادث](first-incident-prepare.md).
 
@@ -64,7 +64,7 @@ ms.locfileid: "64499100"
 - [التحقيق في الأحداث](investigate-incidents.md)
 - [إدارة الأحداث](manage-incidents.md)
 
-مزيد من الأمثلة على الاستجابات الأولى للحوادث:
+أمثلة إضافية على الاستجابات الأولى للحوادث:
 
 - [البريد الإلكتروني التصيد الاحتيالي](first-incident-path-phishing.md)
 - [هجوم قاعدة الهوية](first-incident-path-identity.md)

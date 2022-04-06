@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 98d2ee2394e4384fbf8d7b2b3832d11a847b8521
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: d81d33a01802ebdf8ef0ea67a9ee74fc69b79384
+ms.sourcegitcommit: 8423f47fce3905a48db9daefe69c21c841da43a0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755160"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63583360"
 ---
 # <a name="step-1-create-the-microsoft-365-defender-evaluation-environment-for-greater-cyber-security"></a>الخطوة 1. إنشاء Microsoft 365 Defender التقييم لمزيد من الأمان عبر الإنترنت
 
@@ -54,15 +54,15 @@ ms.locfileid: "63755160"
 2. حدد **خدمات الشراء** من قائمة التنقل.
 3. قم بالتمرير لأسفل Office 365 المقطع **وحدد زر** التفاصيل ضمن Office 365 E5 الترخيص.
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="الزر &quot;تفاصيل&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/mdo-eval/2_mdo-eval-license-details.png":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="المقطع Office 365 على زر تفاصيل للنقر فوقه.":::
 
 4. حدد **بدء ارتباط تجريبي** مجاني.
 
-   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="زر البدء التجريبي المجاني في مدخل Microsoft 365 Defender" lightbox="../../media/mdo-eval/3-m365-purchase-button.png":::
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="انقر فوق &quot;بدء الإصدار التجريبي المجاني&quot; (هناك رسوم تبلغ 35 دولارا).":::
 
 5. أكد طلبك وانقر فوق **الزر تجربة** الآن.
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="الزر &quot;تجربة الآن&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/mdo-eval/4_mdo-trial-order.png":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="يوجد زر &quot;جرب الآن&quot; في لوحة &quot;سحب، تأكد من طلبك&quot; (للحصول على Office 365 E5 تجريبي لمدة شهر ل 25 مستخدما).":::
 
 ## <a name="go-to-the-next-step"></a>الانتقال إلى الخطوة التالية
 

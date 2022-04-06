@@ -19,12 +19,12 @@ ms.custom:
 description: استخدم لوحة معلومات الأمان الجديدة لمراجعة Office 365 الحماية من المخاطر، وعرض تنبيهات الأمان والعمل عليها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 977fc897ecee859648fb1097e573cd0a8289768e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 1f9706a92cf07f23656e6865fe69f11b04d58544
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63566537"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680509"
 ---
 # <a name="security-dashboard-in-the-security--compliance-center"></a>لوحة معلومات الأمان في مركز & الأمان
 
@@ -54,14 +54,9 @@ ms.locfileid: "63566537"
 
 تعتمد المعلومات التي ستشاهدها في ملخص إدارة المخاطر على ما يتضمنه اشتراكك. يصف الجدول التالي المعلومات المضمنة Office 365 E3 Office 365 E5.
 
-<br>
-
-****
-
 |Office 365 E3|Office 365 E5|
 |---|---|
 |رسائل البرامج الضارة المحظورة<br>رسائل التصيد الاحتيالي المحظورة<br>الرسائل التي تم إعلام المستخدمين بها<br><br><br><br>|رسائل البرامج الضارة المحظورة<br>رسائل التصيد الاحتيالي المحظورة<br>الرسائل التي تم إعلام المستخدمين بها<br>البرامج الضارة التي تم حظرها في اليوم الصفري<br>تم الكشف عن رسائل التصيد الاحتيالي المتقدمة<br>عناوين URL الضارة المحظورة|
-|
 
 لعرض عنصر واجهة مستخدم ملخص إدارة المخاطر أو الوصول إليه، يجب أن يكون لديك الأذونات لعرض Defender Office 365 التقارير. لمعرفة المزيد، راجع [ما الأذونات المطلوبة لعرض Defender Office 365 التقارير؟](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
@@ -73,15 +68,10 @@ ms.locfileid: "63566537"
 
 تعتمد التفاصيل على ما إذا Microsoft 365 اشتراكك يتضمن [Exchange Online Protection (](exchange-online-protection-overview.md)EOP) مع [Microsoft Defender Office 365](defender-for-office-365.md).
 
-<br>
-
-****
-
 |إذا كان اشتراكك يتضمن...|سترى هذه التفاصيل|
 |---|---|
 |EOP ولكن ليس Microsoft Defender Office 365|البريد الإلكتروني الضار الذي تم اكتشافه وحظره بواسطة EOP.<p> راجع [تقرير حالة الحماية من المخاطر (EOP).](view-email-security-reports.md#threat-protection-status-report)|
 |Microsoft Defender Office 365|تم الكشف عن المحتوى الضار والبريد الإلكتروني الضار وحظره بواسطة EOP و Defender Office 365 <p> العدد المجمع لرسائل البريد الإلكتروني الفريدة التي تحتوي على محتوى ضار تم حظره بواسطة محرك الحماية [](zero-hour-auto-purge.md)من البرامج الضارة، وميزة إزالة تلقائية لمدة ساعة واحدة، و Defender لميزات Office 365 (بما في ذلك [ارتباطات خزينة](safe-links.md) ومرفقات [خزينة](safe-attachments.md) و"مكافحة التصيد الاحتيالي" في [Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> راجع [تقرير حالة الحماية من المخاطر](view-reports-for-mdo.md#threat-protection-status-report).|
-|
 
 لعرض عنصر واجهة مستخدم حالة الحماية من المخاطر أو الوصول إليه، يجب أن يكون لديك الأذونات لعرض Defender Office 365 التقارير. لمعرفة المزيد، راجع [ما الأذونات المطلوبة لعرض "Defender" Office 365 التقارير؟](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
@@ -93,17 +83,12 @@ ms.locfileid: "63566537"
 
 يتم حساب المقاييس كما هو موضح في الجدول التالي:
 
-<br>
-
-****
-
 |متري|كيفية حسابه|
 |---|---|
 |الرسائل الممسوحة ضوئيا|عدد رسائل البريد الإلكتروني الممسوحة ضوئيا مضروبة في عدد المستلمين|
 |تم إيقاف التهديدات|عدد رسائل البريد الإلكتروني المحددة على أنها تحتوي على برامج ضارة مضروبة في عدد المستلمين|
 |تم حظره بواسطة [Defender Office 365](defender-for-office-365.md)|عدد رسائل البريد الإلكتروني التي حظرها Defender for Office 365 مضروبا في عدد المستلمين|
 |تمت الإزالة بعد التسليم|عدد الرسائل التي تمت إزالتها [بواسطة إزالة تلقائية لمدة ساعة (ZAP)](zero-hour-auto-purge.md) مضروبا في عدد المستلمين|
-|
 
 ## <a name="malware"></a>البرامج الضارة
 

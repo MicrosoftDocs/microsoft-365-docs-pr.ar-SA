@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: aab02ec260f0131ab32d28834152f50b84abce21
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: 6c012b97c3d318e18dda9eb7eaee4336058b792d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "63568303"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680465"
 ---
 # <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -75,7 +75,7 @@ ms.locfileid: "63568303"
 
 | الإعداد | القيمة الافتراضية | الوصف
 | ------ | ------ | ------ |
-| تمكين حفظ كلمات المرور إلى مدير كلمة المرور | معطل | يتم تعطيل مدير كلمة المرور بشكل افتراضي. إذا كنت تريد تمكين هذه الميزة، فطلب طلب دعم ويمكن لمهندسي الخدمة تمكين الإعداد في بيئتك. |
+| تمكين حفظ كلمات المرور إلى مدير كلمة المرور | معطل | يتم تعطيل مدير كلمة المرور بشكل افتراضي. إذا كنت ترغب في تمكين هذه الميزة، فلف طلب دعم ويمكن للمهندسين لدينا تمكين الإعداد في بيئتك. |
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>وضع Internet Explorer في Microsoft Edge
 

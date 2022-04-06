@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 84893d7f015ec354bc27ac706c00e864705a42e5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 55a620343aa7cda05def64acc9027925aaa96a1e
+ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63569910"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64472584"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>تقرير الحماية من المخاطر في Microsoft Defender لنقطة النهاية
 
@@ -27,7 +27,7 @@ ms.locfileid: "63569910"
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -36,7 +36,7 @@ ms.locfileid: "63569910"
 
 تم تنظيم لوحة المعلومات في قسمين:
 
-![صورة تقرير الحماية من المخاطر.](images/threat-protection-reports.png)
+:::image type="content" source="images/threat-protection-reports.png" alt-text="تقرير الحماية من المخاطر" lightbox="images/threat-protection-reports.png":::
 
 مقطع|الوصف
 ---|---
@@ -69,7 +69,7 @@ ms.locfileid: "63569910"
 
 يتم إعداد التقرير من بطاقات تعرض سمات التنبيه التالية:
 
-- **مصادر الكشف**: تعرض معلومات حول أدوات الاستشعار وتقنيات الكشف التي توفر البيانات التي يستخدمها Microsoft Defender ل Endpoint ل تشغيل التنبيهات.
+- **مصادر الكشف**: تعرض معلومات حول أدوات الاستشعار وتقنيات الكشف التي توفر البيانات التي تستخدمها Microsoft Defender لنقطة النهاية تشغيل التنبيهات.
 - **فئات التهديدات**: تعرض هذه الفئة أنواع التهديدات أو أنشطة الهجوم التي كانت تؤدي إلى تشغيل التنبيهات، مما يشير إلى مناطق التركيز المحتملة لعمليات الأمان.
 - **الخطورة**: تظهر مستوى خطورة التنبيهات، مما يشير إلى التأثير المحتمل الجماعي للتهديدات التي تواجه مؤسستك ومستوى الاستجابة المطلوب لمعالجتها.
 - **الحالة**: تظهر حالة دقة التنبيهات، مما يشير إلى فعالية استجابات التنبيهات اليدوية والاستجابة التلقائية (إذا تم تمكينها).

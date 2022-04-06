@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة إلى موفري الخدمات المدارة (MSPs) Microsoft 365 المنارة، احصل على تعليمات حول استكشاف أخطاء رسائل الخطأ ومشاكلها وحلها.
-ms.openlocfilehash: 957177dd20817f9b3d5fbc378f22b19eeaef1f7f
-ms.sourcegitcommit: 601ab9ad2b624e3b5e04eed927a08884c885c72a
+ms.openlocfilehash: e39eea66222852d8f331aa6bc68b386bea3da763
+ms.sourcegitcommit: a216617d6ff27fe7d3089a047fbeaac5d72fd25c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403663"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63705433"
 ---
 # <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>استكشاف المشاكل ورسائل الخطأ وحلها في Microsoft 365 المنارة
 
@@ -53,14 +53,11 @@ ms.locfileid: "64403663"
 
 **السبب:** لا يلبي مستأجرو العملاء المعايير التالية:
 
-  - يجب أن يكون قد تم إعداد (DAP) مفوض لموفر الخدمة المدارة (MSP) لكي يتمكن من إدارة مستأجر العميل*
-  - يجب أن يكون لديك ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business ترخيص
+  - يجب أن يكون قد تم إعداد امتيازات المسؤول المفوض (DAP) أو امتيازات المسؤول المفوض (GDAP) لموفر الخدمة المدارة (MSP)
+  - يجب أن يكون لديك ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 واحد على الأقل
   - يجب ألا يكون هناك أكثر من 1000 مستخدم مرخص 
 
-**الحل:** يصف الجدول التالي مختلف حالة المستأجر التي تتطلب إجراء ويشرح كيفية حلها.
-
-*امتيازات المسؤول المفوض (DAP) مطلوبة لتكئب العملاء على المنارة. نوصي أيضا بإنشاء امتيازات المسؤول المفوض (GDAP) مع العملاء لتمكين وصول مفوض أكثر أمانا. بينما يكون DAP و GDAP مترابطين، فإن GDAP سيكون له الأسبقية للعملاء حيث يكون النموذجان في مكانهما. قريبا، سيتمكن العملاء الذين لا يوجد معهم سوى GDAP (بدون DAP) من التمكن من الوصول إلى المنارة.<br><br>
-
+**الحل:** يصف الجدول التالي مختلف حالة المستأجر التي تتطلب إجراء ويشرح كيفية حلها.<br><br>
 
 | الحالة | الوصف | الدقة |
 |--|--|--|

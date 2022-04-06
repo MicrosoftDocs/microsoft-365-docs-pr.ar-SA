@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebcfea808e64c89772f36fb22f5dfd75e6e8e27f
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 805f857a95fab03f8356c5162db1509122e7250a
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63569912"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680809"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender ل Endpoint على Linux
 
@@ -40,6 +40,9 @@ ms.locfileid: "63569912"
 > من المرجح أن يؤدي تشغيل منتجات حماية نقاط نهاية أخرى من جهة خارجية إلى جانب Microsoft Defender for Endpoint على Linux إلى مشاكل في الأداء وتأثيرات جانبية غير متوقعة. إذا كانت الحماية من نقطة نهاية غير Microsoft من المتطلبات المطلقة في بيئتك، يمكنك مع ذلك الاستفادة من وظيفة Defender for Endpoint على Linux الكشف التلقائي والاستجابة على النقط النهائية بأمان بعد تكوين وظيفة الحماية من الفيروسات للتشغيل في الوضع "غير [النشط](linux-preferences.md#enforcement-level-for-antivirus-engine)".
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>كيفية تثبيت Microsoft Defender ل Endpoint على Linux
+
+يتضمن Microsoft Defender ل Endpoint for Linux قدرات مكافحة البرامج الضارة الكشف عن تهديدات نقاط النهاية والرد عليها (الكشف التلقائي والاستجابة على النقط النهائية). 
+
 
 ### <a name="prerequisites"></a>المتطلبات الأساسية
 

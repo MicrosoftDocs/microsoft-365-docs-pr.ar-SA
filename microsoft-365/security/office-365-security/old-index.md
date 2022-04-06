@@ -16,12 +16,12 @@ ms.collection:
 description: الأمان في Office 365، من EOP إلى Defender Office 365 1 و2، وتكوينات أمان قياسية مقابل صارمة، والمزيد. تعرف على ما لديك وتعرف على كيفية تأمين خصائصك.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbcdf83423b8a6d4e40f34a96282059b44c9df3e
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 688fe6bf984da77c7d53e647ec52b412e053852d
+ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63573866"
+ms.lasthandoff: 03/20/2022
+ms.locfileid: "63680543"
 ---
 # <a name="office-365-security"></a>Office 365 الأمان
 
@@ -54,7 +54,6 @@ Office 365 بناء الأمان على الحماية الأساسية التي
 |EOP|Microsoft Defender Office 365 P1|Microsoft Defender Office 365 P2|
 |---|---|---|
 |يمنع الهجمات المعروفة واسعة النطاق والمستندة إلى مستوى الصوت.|يحمي البريد الإلكتروني والتعاون من البرامج الضارة والتصيد الاحتيالي والبريد الإلكتروني للأعمال الذي لا يحدث أي اختراق.|يضيف عمليات التحقيق والصيد والاستجابة بعد الانتهاك، بالإضافة إلى التنفيذ التلقائي والمحاكاة (للتدريب).|
-|
 
 ولكن فيما يتعلق بالهندسة، فلنبدأ بالتفكير في كل قطعة كطبقات تراكمية من الأمان، كل منها مع تأكيد أمان. من هذا النوع:
 
@@ -92,7 +91,6 @@ Office 365 بناء الأمان على الحماية الأساسية التي
 |منع/الكشف|التحقق|الاستجابة|
 |---|---|---|
 |تتضمن التقنيات:<ul><li>البريد العشوائي</li><li>التصيد الاحتيالي</li><li>البرامج الضارة</li><li>البريد المجمع</li><li>المعلومات المنتحلة</li><li>الكشف عن انتحال</li><li>عزل المسؤول</li><li>إرسالات المسؤول والمستخدم للإيجابيات الخاطئة والسلبيات الخاطئة</li><li>السماح/الحظر ل عناوين URL والملفات</li><li>التقارير</li></ul>|<li>البحث في سجل التدقيق</li><li>تتبع الرسائل</li>|<li>إزالة تلقائية لمدة ساعة (ZAP)</li><li>تحسين القوائم "السماح" و"الحظر" واختبارها</li>|
-|
 
 إذا كنت تريد البحث في EOP، **[فابحث عن هذه المقالة](exchange-online-protection-overview.md)**.
 
@@ -132,7 +130,6 @@ Office 365 بناء الأمان على الحماية الأساسية التي
 |Defender for Office 365 1|Defender for Office 365 2|
 |---|---|
 |قدرات التكوين والحماية والكشف: <ul><li>[خزينة المرفقات](safe-attachments.md)</li><li>[الارتباطات الآمنة](safe-links.md)</li><li>[خزينة المرفقات SharePoint OneDrive و Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[الحماية من التصيد الاحتيالي في Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[الكشف في الوقت الحقيقي](threat-explorer.md)</li></ul>|Defender for Office 365 الخطة 1 <p> --- بالإضافة إلى --- <p> إمكانات التنفيذ التلقائي، والتحري، والوساطة، والتعليم: <ul><li>[متعقبات التهديدات](threat-trackers.md)</li><li>[مستكشف التهديدات](threat-explorer.md)</li><li>[إجراء عمليات التحقيق والاستجابة التلقائية](office-365-air.md)</li><li>[محاكي الهجوم](attack-simulator.md)</li></ul>|
-|
 
 - Microsoft Defender Office 365 الخطة 2 مضمنة في Office 365 E5 Office 365 A5 Microsoft 365 E5.
 
