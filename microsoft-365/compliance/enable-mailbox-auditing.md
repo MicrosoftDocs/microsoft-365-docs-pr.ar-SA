@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: يتم تشغيل تسجيل تدقيق علبة البريد بشكل افتراضي في Microsoft 365 (يسمى أيضا تدقيق علبة البريد الافتراضية أو تدقيق علبة البريد بشكل افتراضي). وهذا يعني أنه يتم تسجيل بعض الإجراءات التي يقوم بها مالكو علب البريد والمفوضون والمسؤولين تلقائيا في سجل تدقيق علبة البريد، حيث يمكنك البحث عن الأنشطة التي يتم تنفيذها على علبة البريد.
-ms.openlocfilehash: 1f566ee46520047e1bc125e505d53911fb07c912
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 9b3c08850ff0cce14fdce13d496642239e817096
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705330"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714318"
 ---
 # <a name="manage-mailbox-auditing"></a>إدارة تدقيق علبة البريد
 
@@ -62,10 +62,6 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 يعرض الجدول التالي أنواع علب البريد المعتمدة حاليا بواسطة تدقيق علبة البريد بشكل افتراضي:
 
-<br>
-
-****
-
 |نوع علبة البريد|دعم|
 |---|:---:|
 |علب بريد المستخدمين|![علامة الاختيار.](../media/checkmark.png)|
@@ -73,7 +69,6 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |علب بريد المجموعة Microsoft 365|![علامة الاختيار.](../media/checkmark.png)|
 |علب بريد الموارد||
 |علب بريد المجلدات العامة||
-|
 
 ## <a name="logon-types-and-mailbox-actions"></a>أنواع تسجيل الدخول وإجراءات علبة البريد
 
@@ -98,10 +93,6 @@ Get-OrganizationConfig | Format-List AuditDisabled
 - تشير العلامة النجمية ( <sup>\*</sup> ) بعد علامة الاختيار إلى تسجيل إجراء علبة البريد بشكل افتراضي لنوع تسجيل الدخول.
 - تذكر أن المسؤول الذي لديه إذن الوصول الكامل إلى علبة بريد يعتبر مفوضا.
 
-<br>
-
-****
-
 |إجراء علبة البريد|الوصف|المشرف|المفوض|مالك|
 |---|---|:---:|:---:|:---:|
 |**AddFolderPermissions**|على الرغم من قبول هذه القيمة كإجراء علبة بريد، إلا أنها مضمنة بالفعل في إجراء **UpdateFolderPermissions** ولا يتم تدقيقها بشكل منفصل. بمعنى آخر، لا تستخدم هذه القيمة.||||
@@ -111,15 +102,15 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**FolderBind**|تم الوصول إلى مجلد علبة البريد. يتم تسجيل هذا الإجراء أيضا عندما يفتح المسؤول أو المفوض علبة البريد. <br/><br/> **ملاحظة**: يتم دمج سجلات التدقيق لإجراءات ربط المجلدات التي ينفذها المفوضون. يتم إنشاء سجل تدقيق واحد للوصول إلى المجلدات الفردية خلال فترة 24 ساعة.|![علامة الاختيار.](../media/checkmark.png)|![علامة الاختيار.](../media/checkmark.png)||
 |**HardDelete**|تمت إزالة رسالة من مجلد العناصر القابلة للاسترداد.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|قام المستخدم بتسجيل الدخول إلى علبة البريد الخاصة به.|||![علامة اختيار](../media/checkmark.png)|
-|**MailItemsAccessed**|**ملاحظة**: تتوفر هذه القيمة لمستخدمي الاشتراك في الوظائف الإضافية E5 أو E5 Compliance فقط. لمزيد من المعلومات، راجع [إعداد التدقيق المتقدم في Microsoft 365](set-up-advanced-audit.md). <p> يتم الوصول إلى بيانات البريد بواسطة بروتوكولات البريد والعملاء.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
-|**MessageBind**|**ملاحظة**: لا تتوفر هذه القيمة إلا لمستخدمي E3 (المستخدمين الذين ليس لديهم اشتراكات في الوظائف الإضافية E5 أو E5 Compliance). <p> تم عرض رسالة في جزء المعاينة أو فتحها من قبل مسؤول.|![علامة اختيار](../media/checkmark.png)|||
+|**MailItemsAccessed**|**ملاحظة**: تتوفر هذه القيمة لمستخدمي الاشتراك في الوظائف الإضافية E5 أو E5 Compliance فقط. لمزيد من المعلومات، راجع [إعداد التدقيق المتقدم في Microsoft 365](set-up-advanced-audit.md). <br/><br/> يتم الوصول إلى بيانات البريد بواسطة بروتوكولات البريد والعملاء.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
+|**MessageBind**|**ملاحظة**: لا تتوفر هذه القيمة إلا لمستخدمي E3 (المستخدمين الذين ليس لديهم اشتراكات في الوظائف الإضافية E5 أو E5 Compliance). <br/><br/> تم عرض رسالة في جزء المعاينة أو فتحها من قبل مسؤول.|![علامة اختيار](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|على الرغم من قبول هذه القيمة كإجراء علبة بريد، إلا أنها مضمنة بالفعل في إجراء **UpdateFolderPermissions** ولا يتم تدقيقها بشكل منفصل. بمعنى آخر، لا تستخدم هذه القيمة.||||
 |**نقل**|تم نقل رسالة إلى مجلد آخر.|![علامة الاختيار.](../media/checkmark.png)|![علامة اختيار](../media/checkmark.png)|![علامة اختيار](../media/checkmark.png)|
 |**MoveToDeletedItems**|تم حذف رسالة ونقلها إلى مجلد العناصر المحذوفة.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
 |**تسجيل الحذف**|تم حذف عنصر مسمى كسجل مبدئيا (تم نقله إلى مجلد العناصر القابلة للاسترداد). لا يمكن حذف العناصر المسماة كسجلات بشكل دائم (تمت إزالتها من مجلد العناصر القابلة للاسترداد).|![علامة الاختيار.](../media/checkmark.png)|![علامة اختيار](../media/checkmark.png)|![علامة اختيار](../media/checkmark.png)|
 |**RemoveFolderPermissions**|على الرغم من قبول هذه القيمة كإجراء علبة بريد، إلا أنها مضمنة بالفعل في إجراء **UpdateFolderPermissions** ولا يتم تدقيقها بشكل منفصل. بمعنى آخر، لا تستخدم هذه القيمة.||||
-|**SearchQueryInitiated**|**ملاحظة**: تتوفر هذه القيمة لمستخدمي الاشتراك في الوظائف الإضافية E5 أو E5 Compliance فقط. لمزيد من المعلومات، راجع [إعداد التدقيق المتقدم في Microsoft 365](set-up-advanced-audit.md). <p> يستخدم الشخص Outlook (Windows أو Mac أو iOS أو Android أو Outlook على ويب) أو تطبيق البريد Windows 10 للبحث عن العناصر في علبة بريد.|||![علامة اختيار](../media/checkmark.png)|
-|**ارسال**|**ملاحظة**: تتوفر هذه القيمة لمستخدمي الاشتراك في الوظائف الإضافية E5 أو E5 Compliance فقط. لمزيد من المعلومات، راجع [إعداد التدقيق المتقدم في Microsoft 365](set-up-advanced-audit.md). <p> يرسل المستخدم رسالة بريد إلكتروني أو يرد على رسالة بريد إلكتروني أو يعيد توجيه رسالة بريد إلكتروني.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>||![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
+|**SearchQueryInitiated**|**ملاحظة**: تتوفر هذه القيمة لمستخدمي الاشتراك في الوظائف الإضافية E5 أو E5 Compliance فقط. لمزيد من المعلومات، راجع [إعداد التدقيق المتقدم في Microsoft 365](set-up-advanced-audit.md). <br/><br/> يستخدم الشخص Outlook (Windows أو Mac أو iOS أو Android أو Outlook على ويب) أو تطبيق البريد Windows 10 للبحث عن العناصر في علبة بريد.|||![علامة اختيار](../media/checkmark.png)|
+|**ارسال**|**ملاحظة**: تتوفر هذه القيمة لمستخدمي الاشتراك في الوظائف الإضافية E5 أو E5 Compliance فقط. لمزيد من المعلومات، راجع [إعداد التدقيق المتقدم في Microsoft 365](set-up-advanced-audit.md). <br/><br/> يرسل المستخدم رسالة بريد إلكتروني أو يرد على رسالة بريد إلكتروني أو يعيد توجيه رسالة بريد إلكتروني.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>||![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|تم إرسال رسالة باستخدام إذن SendAs. وهذا يعني أن مستخدما آخر أرسل الرسالة كما لو كانت من مالك علبة البريد.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|تم إرسال رسالة باستخدام إذن SendOnBehalf. وهذا يعني أن مستخدما آخر أرسل الرسالة نيابة عن مالك علبة البريد. تشير الرسالة إلى المستلم الذي تم إرسال الرسالة بالنيابة عنه وإلى الشخص الذي أرسل الرسالة بالفعل.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|تم حذف رسالة بشكل دائم أو حذفها من مجلد "العناصر المحذوفة". يتم نقل العناصر المحذوفة مبدئيا إلى مجلد العناصر القابلة للاسترداد.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
@@ -128,7 +119,6 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**UpdateComplianceTag**|يتم تطبيق تسمية استبقاء مختلفة على عنصر بريد (يمكن أن يكون للعنصر تسمية استبقاء واحدة فقط معينة له).|![علامة الاختيار.](../media/checkmark.png)|![علامة اختيار](../media/checkmark.png)|![علامة اختيار](../media/checkmark.png)|
 |**UpdateFolderPermissions**|تم تغيير إذن مجلد. تتحكم أذونات المجلد في المستخدمين في مؤسستك في إمكانية الوصول إلى المجلدات الموجودة في علبة البريد والرسائل الموجودة في تلك المجلدات.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateInboxRules**|تمت إضافة قاعدة علبة الوارد أو إزالتها أو تغييرها. يتم استخدام قواعد علبة الوارد لمعالجة الرسائل في علبة الوارد الخاصة بالمستخدم استنادا إلى الشروط المحددة واتخاذ إجراءات عند استيفاء شروط القاعدة، مثل نقل رسالة إلى مجلد محدد أو حذف رسالة.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
-|
 
 > [!IMPORTANT]
 > إذا قمت بتخصيص إجراءات علبة البريد للتدقيق لأي نوع تسجيل دخول *قبل* تمكين تدقيق علبة البريد بشكل افتراضي في مؤسستك، يتم الاحتفاظ بالإعدادات المخصصة على علبة البريد ولا تتم الكتابة فوقها بواسطة إجراءات علبة البريد الافتراضية كما هو موضح في هذا القسم. لإعادة إجراءات علبة بريد التدقيق إلى قيمها الافتراضية (التي يمكنك القيام بها في أي وقت)، راجع القسم ["استعادة إجراءات علبة البريد الافتراضية](#restore-the-default-mailbox-actions) " لاحقا في هذه المقالة.
@@ -141,10 +131,6 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 تذكر أن المسؤول الذي لديه إذن الوصول الكامل إلى علبة بريد مجموعة Microsoft 365 يعتبر مفوضا.
 
-<br>
-
-****
-
 |إجراء علبة البريد|الوصف|المشرف|المفوض|مالك|
 |---|---|:---:|:---:|:---:|
 |**إنشاء**|إنشاء عنصر تقويم. لا يتم تدقيق إنشاء رسالة أو إرسالها أو تلقيها.|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>||
@@ -154,7 +140,6 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**SendOnBehalf**|تم إرسال رسالة باستخدام إذن SendOnBehalf.|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|تم حذف رسالة بشكل دائم أو حذفها من مجلد "العناصر المحذوفة". يتم نقل العناصر المحذوفة مبدئيا إلى مجلد العناصر القابلة للاسترداد.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
 |**تحديث**|تم تغيير رسالة أو أي من خصائصها.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
-|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>التحقق من تسجيل إجراءات علبة البريد الافتراضية لكل نوع تسجيل دخول
 
@@ -342,13 +327,13 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
   - تمكين تدقيق علبة البريد يدويا على علب البريد الفردية (قم بتشغيل الأمر، `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`). بعد القيام بذلك، يمكنك استخدام عمليات البحث في سجل التدقيق في مركز التوافق في Microsoft 365 أو عبر واجهة برمجة تطبيقات نشاط الإدارة Office 365.
 
     > [!NOTE]
-    > إذا كان تدقيق علبة البريد يبدو أنه تم تمكينه بالفعل على علبة البريد، ولكن عمليات البحث لا ترجع أي نتائج، فقم بتغيير قيمة المعلمة _AuditEnabled_ إلى `$false` ثم العودة إلى `$true`.
+    > إذا كان تدقيق علبة البريد يبدو أنه تم تمكينه بالفعل على علبة البريد، ولكن عمليات البحث لا ترجع أي نتائج، فقم بتغيير قيمة المعلمة *AuditEnabled* إلى `$false` ثم العودة إلى `$true`.
 
   - استخدم cmdlets التالية في Exchange Online PowerShell:
     - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) للبحث في سجل تدقيق علبة البريد لمستخدمين محددين.
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) للبحث في سجل تدقيق علبة البريد لمستخدمين محددين وإرسال النتائج عبر البريد الإلكتروني إلى المستلمين المحددين.
 
-  - استخدم <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange (EAC)</a> في Exchange Online لتنفيذ الإجراءات التالية:
+  - استخدم مركز إدارة Exchange (EAC) في Exchange Online لتنفيذ الإجراءات التالية:
     - [تصدير سجلات تدقيق علبة البريد](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
     - [تشغيل تقرير الوصول إلى علبة بريد غير المالك](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 

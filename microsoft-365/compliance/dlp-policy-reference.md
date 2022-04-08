@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: مكون نهج DLP ومرجع التكوين
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: d6bc24f313d1998979a460bcd41e87ccbe8abc5c
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 169fb93f7343fd038af9e7b8ae789dabc871c6aa
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704912"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64713988"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>مرجع نهج تفادي فقدان البيانات
 
@@ -202,8 +202,6 @@ ms.locfileid: "64704912"
 - القاعدة 4: عدم الإنفاذ
 
 يتم تقييم جميع القواعد الأخرى ولكن لا يتم فرض إجراءاتها. ستظهر سجلات التدقيق القاعدة الأكثر تقييدا المطبقة على الملف. إذا كان هناك أكثر من قاعدة واحدة تتطابق وتكون مقيدة بنفس القدر، فإن أولوية النهج والقاعدة تحكم القاعدة التي سيتم تطبيقها على الملف.
-
-بالنسبة لنقاط النهاية، يمكنك تكوين الإجراءات التي يتخذها DLP لجميع الأنشطة المدعومة في قاعدة واحدة لمجموعة معينة من شروط التضمين.
 
 ### <a name="conditions"></a>الظروف
 
