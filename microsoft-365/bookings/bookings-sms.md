@@ -1,5 +1,5 @@
 ---
-title: تكوين إعلامات نصية قصيرة SMS وتذكيرات في Microsoft Bookings
+title: تكوين إعلامات نصية وتذكيرات SMS في Microsoft Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -7,49 +7,49 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
-description: تعرف على كيفية تكوين إعلامات نصية قصيرة SMS للعملاء والعملاء والشركاء في Microsoft Bookings.
-ms.openlocfilehash: 2aac74b89e5d83c4dec0840a7bb423a271e5eb5d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: تعرف على كيفية تكوين إعلامات نصية SMS للعملاء والعملاء والشركاء في Microsoft Bookings.
+ms.openlocfilehash: 46f58081bc9df799323c0c5e85253d4593d9c3c7
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570839"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64715242"
 ---
-# <a name="configure-sms-text-notifications-and-reminders-in-microsoft-bookings"></a>تكوين إعلامات نصية قصيرة SMS وتذكيرات في Microsoft Bookings
+# <a name="configure-sms-text-notifications-and-reminders-in-microsoft-bookings"></a>تكوين إعلامات نصية وتذكيرات SMS في Microsoft Bookings
 
-باستخدام Microsoft Bookings، يمكنك إعداد إعلامات نصية قصيرة SMS لكي يتم إرسالها إلى الشخص الذي يحجز موعدا. يمكنك إعداد إعلامات SMS في Bookings في تطبيق Bookings على الويب أو تطبيق Bookings في Teams. يمكن للحضور أو العملاء أو الشركاء أيضا الاشتراك في تلقي إعلامات SMS أو رفضها على صفحة الحجز ذاتية الخدمة. يمكنهم أيضا رفض تلقي إعلامات SMS عن طريق الرد **على STOP** إلى المرسل.
+> [!NOTE]
+> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
 
-ستتضمن إعلامات SMS ارتباط Teams اجتماع لمواعيد الحجز الظاهرية.
+باستخدام Microsoft Bookings، يمكنك إعداد إعلامات نصية SMS لإرسالها إلى الشخص الذي يحجز موعدا. يمكنك إعداد إعلامات SMS في Bookings في تطبيق الويب Bookings أو تطبيق Bookings في Teams. يمكن للحضور أو العملاء أو الشركاء أيضا الاشتراك في تلقي إعلامات SMS أو عدم تلقيها على صفحة حجز الخدمة الذاتية. يمكنهم أيضا رفض تلقي إعلامات SMS عن طريق الرد **على STOP** إلى المرسل.
+
+ستتضمن إعلامات SMS ارتباط اجتماع Teams لمواعيد الحجز الظاهري.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-يحتاج الحضور أو العملاء أو الشركاء إلى رقم هاتف صالح للولايات المتحدة أو كندا قبل تلقي إعلامات SMS.
+يحتاج الحضور أو العملاء أو الشركاء إلى رقم هاتف صالح في الولايات المتحدة أو كندا قبل أن يتمكنوا من تلقي إعلامات SMS.
 
 ## <a name="configure-sms-notification-in-microsoft-bookings"></a>تكوين إعلام SMS في Microsoft Bookings
 
-> [!IMPORTANT]
-> سيبقى لدى Microsoft Bookings إعلامات SMS غير محدودة للعملاء الذين لديهم تراخيص Bookings حتى 30 أبريل 2022. مع الاقتراب من نهاية فترة الترقية، سنوفر تفاصيل إضافية حول متطلبات الترخيص.
+يمكنك تكوين إعلام SMS في Bookings بطريقتين:
 
-يمكنك تكوين إعلام SMS في Bookings بعدة طرق:
+- في تطبيق الويب Bookings، اتبع الخطوات لتمكين **إعلامات الرسائل النصية** في ["تحديد عروض الخدمة" في موضوع Bookings](define-service-offerings.md).
 
-- في تطبيق Bookings على الويب، اتبع الخطوات لتمكين **إعلامات** الرسائل النصية في الموضوع تعريف عروض الخدمة [في Bookings](define-service-offerings.md) .
+- في تطبيق Booking في Teams، انتقل إلى **الإعدادات** >  **Appointment typeAdd** >  **appointment type** وحدد **Send them text messages**.
 
-- في تطبيق Booking في Teams، **انتقل** >  إلى الإعدادات **Appointment** **typeAdd** >  نوع الموعد وحدد **إرسال رسائل نصية إليهم**.
-
-## <a name="tracking-and-metrics-for-sms-notifications"></a>تعقب إعلامات SMS ومقاييسها
+## <a name="tracking-and-metrics-for-sms-notifications"></a>التعقب والمقاييس لإعلامات SMS
 
 > [!NOTE]
-> يجب أن تكون مسؤول Teams لمشاهدة بيانات Teams والحجوزات على Teams الإدارة.
+> يجب أن تكون مسؤولا Teams لرؤية Teams والبيانات Bookings على مركز إدارة Teams.
 
-يمكنك تعقب البيانات الأساسية على استخدام إعلامات SMS في مؤسستك في Teams الإدارة. تتضمن تقارير الاستخدام بيانات مثل الوقت والتاريخ المرسلين، رقم الأصل، نوع الرسالة، نوع الحدث، حالة التسليم. يمكنك استخدام بيانات بيانات استخدام إعلامات SMS خلال الفترة الترويجية للمساعدة في التنبؤ بإشعارات SMS وموازنتها بعد 1 مايو 2022.
+يمكنك تعقب البيانات الرئيسية عند استخدام إعلامات SMS في مؤسستك في مركز إدارة Teams. تتضمن تقارير الاستخدام بيانات مثل الوقت والتاريخ المرسل ورقم الأصل ونوع الرسالة ونوع الحدث وحالة التسليم. يمكنك استخدام بيانات تتبع الاستخدام لإعلامات SMS خلال الفترة الترويجية للمساعدة في التنبؤ بإشعارات SMS ووضع ميزانية لها بعد 1 مايو 2022.
 
-1. في مركز إدارة Teams، **تظهر إعلامات الرسائل النصية SMS ل الزيارات الظاهرية**.
+1. في مركز إدارة Teams، **إشعارات الرسائل القصيرة للزيارات الظاهرية**.
 
-2. في صفحة **& التحليلات،** حدد استخدام إعلامات SMS.
+2. في صفحة **تقارير & التحليلات** ، حدد استخدام إعلامات SMS.
 
-    :::image type="content" source="../media/analytics-reporting.png" alt-text="لقطة شاشة: صفحة تحليلات الإعلامات النصية SMS وإعداد التقارير في Teams إدارة":::
+    :::image type="content" source="../media/analytics-reporting.png" alt-text="لقطة شاشة: SMS text notifications Analytics and reporting page in the Teams admin center":::
 
-المحتوى ذي الصلة
+محتوى ذي صلة
 
 [Microsoft Bookings](bookings-overview.md)\
 [تشغيل Microsoft Bookings أو إيقاف تشغيله](turn-bookings-on-or-off.md)\

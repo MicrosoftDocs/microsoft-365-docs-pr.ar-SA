@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 f1.keywords:
 - enroll devices into management
-- enroll devices with Intune
+- enroll devices to Intune
 - Intune mobile device platforms
 manager: dougeby
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 177c21b46357ca890994751b9f4d7597a57c6b64
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: 98c98298b5bb6728a0f8526e0406fb1fe02654f0
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651268"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64704703"
 ---
 # <a name="step-2-enroll-devices-to-intune"></a>الخطوة 2. تسجيل الأجهزة في Intune
 
@@ -47,7 +47,7 @@ ms.locfileid: "64651268"
 
 ## <a name="ios-and-ipados-enrollment"></a>تسجيل iOS وiPadOS
 
-بالنسبة للأجهزة المملوكة للمستخدم (BYOD)، يمكنك السماح للمستخدمين بتسجيل أجهزتهم الشخصية لإدارة Intune باستخدام إحدى الطرق التالية.
+بالنسبة للأجهزة المملوكة للمستخدم (BYOD)، يمكنك السماح للمستخدمين بتسجيل أجهزتهم الشخصية في Intune باستخدام إحدى الطرق التالية.
 - تسجيل الجهاز هو ما قد تعتقد أنه تسجيل BYOD نموذجي. فهو يوفر للمسؤولين مجموعة واسعة من خيارات الإدارة.
 - تسجيل المستخدم هو عملية تسجيل أكثر انسيابية توفر للمسؤولين مجموعة فرعية من خيارات إدارة الأجهزة. هذه الميزة قيد المعاينة حاليا.
 

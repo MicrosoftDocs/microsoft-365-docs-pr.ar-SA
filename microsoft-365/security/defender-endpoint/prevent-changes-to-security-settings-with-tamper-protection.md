@@ -17,16 +17,16 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 01/18/2022
+ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 3ccda70af88b8e99afde125311b074025242646a
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a9092ebb941806324646fffd86dd00b54fa87cc6
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667417"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714956"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>حماية إعدادات الأمان باستخدام الحماية من العبث
 
@@ -37,24 +37,22 @@ ms.locfileid: "64667417"
 
 تتوفر الحماية من العبث بالأجهزة التي تقوم بتشغيل أحد الإصدارات التالية من Windows:
 
-- Windows 10
 - Windows 11
-- Windows 10 Enterprise متعددة الجلسات
 - Windows 11 Enterprise متعددة الجلسات 
-- Windows Server 2019
+- Windows 10
+- Windows 10 Enterprise متعددة الجلسات
 - Windows Server 2022
+- Windows Server 2019
 - Windows Server، الإصدار 1803 أو أحدث
 - Windows Server 2016‏
 - Windows Server 2012 R2
 
 > [!NOTE]
-> تتوفر الحماية من العبث في Windows Server 2012 R2 للأجهزة التي تم إلحاقها باستخدام حزمة الحلول الموحدة الحديثة. لمزيد من المعلومات، راجع [الوظائف الجديدة في الحل الموحد الحديث Windows Server 2012 R2 و2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> تتوفر الحماية من العبث في Windows Server 2012 R2 للأجهزة التي تم إلحاقها Microsoft Defender لنقطة النهاية باستخدام حزمة الحلول الموحدة الحديثة. لمزيد من المعلومات، راجع [الوظائف الجديدة في الحل الموحد الحديث Windows Server 2012 R2 و2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
 ## <a name="overview"></a>نظرة عامة
 
-أثناء بعض أنواع الهجمات الإلكترونية، تحاول الجهات الفاعلة السيئة تعطيل ميزات الأمان، مثل الحماية من الفيروسات، على أجهزتك. ترغب الجهات الفاعلة السيئة في تعطيل ميزات الأمان الخاصة بك لتسهيل الوصول إلى بياناتك، أو لتثبيت البرامج الضارة، أو استغلال بياناتك وهويتك وأجهزتك بطريقة أخرى. تساعد الحماية من العبث بالبيانات على منع حدوث هذه الأنواع من الأشياء.
-
-مع الحماية من العبث، يتم منع التطبيقات الضارة من اتخاذ إجراءات مثل:
+أثناء بعض أنواع الهجمات الإلكترونية، تحاول الجهات الفاعلة السيئة تعطيل ميزات الأمان، مثل الحماية من الفيروسات، على أجهزتك. ترغب الجهات الفاعلة السيئة في تعطيل ميزات الأمان الخاصة بك لتسهيل الوصول إلى بياناتك، أو لتثبيت البرامج الضارة، أو استغلال بياناتك وهويتك وأجهزتك بطريقة أخرى. تساعد الحماية من العبث بالبيانات على منع حدوث هذه الأنواع من الأشياء. مع الحماية من العبث، يتم منع التطبيقات الضارة من اتخاذ إجراءات مثل:
 
 - تعطيل الحماية من الفيروسات والتهديدات
 - تعطيل الحماية في الوقت الحقيقي
@@ -76,8 +74,6 @@ ms.locfileid: "64667417"
 
 ### <a name="what-do-you-want-to-do"></a>ماذا تريد أن تفعل؟
 
-<br/><br/>
-
 |لتنفيذ هذه المهمة...|راجع هذا المقطع...|
 |---|---|
 |إدارة الحماية من العبث عبر المستأجر <p> استخدام مدخل Microsoft 365 Defender لتشغيل الحماية من العبث أو إيقاف تشغيلها|[إدارة الحماية من العبث بمؤسستك باستخدام Microsoft 365 Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal)|
@@ -88,16 +84,16 @@ ms.locfileid: "64667417"
 |مراجعة توصيات الأمان|[مراجعة توصيات الأمان](#review-your-security-recommendations)|
 |مراجعة قائمة الأسئلة المتداولة (الأسئلة المتداولة)|[استعراض الأسئلة المتداولة](#view-information-about-tampering-attempts)|
 
-اعتمادا على الأسلوب أو أداة الإدارة التي تستخدمها لتمكين الحماية من العبث، قد تكون هناك تبعية على الحماية التي توفرها السحابة.
+## <a name="potential-dependency-on-cloud-protection"></a>الاعتماد المحتمل على حماية السحابة  
+  
+اعتمادا على الأسلوب أو أداة الإدارة التي تستخدمها لتمكين الحماية من العبث، قد يكون هناك تبعية على [الحماية التي توفرها السحابة](cloud-protection-microsoft-defender-antivirus.md) ويشار إليها أيضا باسم حماية السحابة، أو خدمة الحماية المتقدمة من Microsoft (MAPS).
 
 يوفر الجدول التالي تفاصيل حول الأساليب والأدوات والتبعيات.
 
-<br/><br/>
-
-|كيفية تمكين الحماية من العبث|الاعتماد على الحماية المقدمة من السحابة (MAPS)|
+| كيفية تمكين الحماية من العبث | الاعتماد على حماية السحابة |
 |---|---|
 |Microsoft Intune|لا|
-|Microsoft Endpoint Configuration Manager + إرفاق المستأجر|لا|
+|Microsoft Endpoint Configuration Manager مع إرفاق المستأجر|لا|
 |مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))|نعم|
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>إدارة الحماية من العبث بمؤسستك باستخدام مدخل Microsoft 365 Defender
@@ -105,11 +101,8 @@ ms.locfileid: "64667417"
 يمكن تشغيل الحماية من العبث بالمستأجر أو إيقاف تشغيله باستخدام مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). فيما يلي بعض النقاط التي يجب وضعها في الاعتبار:
 
 - حاليا، يتم تشغيل خيار إدارة الحماية من العبث في مدخل Microsoft 365 Defender بشكل افتراضي لعمليات النشر الجديدة. بالنسبة إلى عمليات النشر الحالية، تتوفر الحماية من العبث بالبيانات على أساس الاشتراك. للاشتراك، في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، اختر **الإعدادات** \> **Endpoints** **Advanced features** \> \> **Advanced Protection**.
-
 - عند استخدام مدخل Microsoft 365 Defender لإدارة الحماية من العبث، لن تحتاج إلى استخدام Intune أو أسلوب إرفاق المستأجر.
-
 - عند إدارة الحماية من العبث في مدخل Microsoft 365 Defender، يتم تطبيق الإعداد على نطاق المستأجر، مما يؤثر على جميع أجهزتك التي تعمل Windows 10، Windows 10 Enterprise جلسات متعددة، Windows 11، Windows 11 Enterprise  Windows Server 2012 R2 أو Windows Server 2016 أو Windows Server 2019 أو Windows Server 2022 متعددة الجلسات. لضبط الحماية من العبث (مثل الحماية من العبث ببعض الأجهزة ولكن مع إيقاف تشغيلها للآخرين)، استخدم [إما إدارة نقاط النهاية من Microsoft](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager) أو [Configuration Manager مع إرفاق المستأجر](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
-
 - إذا كانت لديك بيئة مختلطة، فإن إعدادات الحماية من العبث التي تم تكوينها في Intune لها الأسبقية على الإعدادات التي تم تكوينها في مدخل Microsoft 365 Defender.
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-365-defender-portal"></a>متطلبات إدارة الحماية من العبث في مدخل Microsoft 365 Defender
@@ -118,12 +111,12 @@ ms.locfileid: "64667417"
 
 - يجب أن تقوم أجهزة Windows بتشغيل أحد الإصدارات التالية من Windows:
   
-  - Windows 10
   - Windows 11
-  - Windows 10 Enterprise متعددة الجلسات
   - Windows 11 Enterprise متعددة الجلسات 
-  - Windows Server 2019
+  - Windows 10
+  - Windows 10 Enterprise متعددة الجلسات
   - Windows Server 2022
+  - Windows Server 2019
   - Windows Server، الإصدار 1803 أو أحدث
   - Windows Server 2016‏
   - Windows Server 2012 R2
@@ -131,10 +124,12 @@ ms.locfileid: "64667417"
 لمزيد من المعلومات حول الإصدارات، راجع [Windows 10 معلومات الإصدار](/windows/release-health/release-information).
 
 - يجب إلحاق أجهزتك [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/onboarding).
-
 - يجب أن تستخدم أجهزتك إصدار `4.18.2010.7` النظام الأساسي لمكافحة البرامج الضارة (أو أعلى) وإصدار `1.1.17600.5` محرك مكافحة البرامج الضارة (أو أعلى). ([إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](manage-updates-baselines-microsoft-defender-antivirus.md).)
-
 - يجب تشغيل [الحماية المقدمة من السحابة](enable-cloud-protection-microsoft-defender-antivirus.md).
+
+> [!NOTE]
+> عند تمكين الحماية من العبث عبر مدخل Microsoft 365 Defender، تكون الحماية المقدمة من السحابة مطلوبة، بحيث يمكن التحكم في الحالة الممكنة للحماية من العبث.  
+> بدءا من تحديث نوفمبر 2021 (إصدار `4.18.2111.5`النظام الأساسي)، إذا لم يتم تشغيل الحماية المقدمة من السحابة لجهاز ويتم تشغيل الحماية من العبث في مدخل Microsoft 365 Defender، فسيتم تشغيل الحماية المقدمة من السحابة تلقائيا لهذا الجهاز إلى جانب الحماية من العبث.   
 
 ### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-365-defender-portal"></a>تشغيل الحماية من العبث (أو إيقاف تشغيلها) في مدخل Microsoft 365 Defender
 
@@ -153,15 +148,10 @@ ms.locfileid: "64667417"
 ### <a name="requirements-for-managing-tamper-protection-in-endpoint-manager"></a>متطلبات إدارة الحماية من العبث في إدارة نقاط النهاية
 
 - يجب إلحاق أجهزتك [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/onboarding).
-
 - يجب أن يكون لديك [الأذونات المناسبة المعينة](/microsoft-365/security/defender-endpoint/assign-portal-access) ، مثل المسؤول العام أو مسؤول الأمان أو عمليات الأمان.
-
 - تستخدم مؤسستك [إدارة نقاط النهاية من Microsoft لإدارة الأجهزة](/mem/endpoint-manager-getting-started). (إدارة نقاط النهاية من Microsoft (MEM) مطلوبة؛ يتم تضمين MEM في Microsoft 365 E3/E5، Enterprise Mobility + Security E3/E5، Microsoft 365 Business Premium، Microsoft 365 F1/F3، Microsoft 365  G3/G5 الحكومية، وتراخيص التعليم المقابلة.)
-
 - يجب أن تكون أجهزة Windows قيد التشغيل Windows 11 أو Windows 10 [1709](/windows/release-health/status-windows-10-1709) أو [1803](/windows/release-health/status-windows-10-1803) أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) أو أحدث. (لمزيد من المعلومات حول الإصدارات، راجع [Windows 10 معلومات الإصدار](/windows/release-health/release-information).)
-
 - يجب أن تستخدم الأمان Windows مع تحديث [معلومات الأمان](https://www.microsoft.com/wdsi/definitions) إلى الإصدار 1.287.60.0 (أو أعلى).
-
 - يجب أن تستخدم أجهزتك إصدار النظام الأساسي 4.18.1906.3 (أو أعلى) وإصدار `1.1.15500.X` محرك مكافحة البرامج الضارة (أو أعلى). ([إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](manage-updates-baselines-microsoft-defender-antivirus.md).)
 
 ### <a name="turn-tamper-protection-on-or-off-in-microsoft-endpoint-manager"></a>تشغيل الحماية من العبث (أو إيقاف تشغيلها) في إدارة نقاط النهاية من Microsoft
@@ -207,9 +197,7 @@ ms.locfileid: "64667417"
 > [!NOTE]
 > تحاول كتل الحماية من العبث بتعديل إعدادات برنامج الحماية من الفيروسات من Microsoft Defender من خلال السجل.
 >
-> للمساعدة في التأكد من أن الحماية من العبث لا تتداخل مع منتجات الأمان غير التابعة ل Microsoft أو البرامج النصية لتثبيت المؤسسة التي تعدل هذه الإعدادات، انتقل إلى **أمن Windows** وتحديث **معلومات الأمان** إلى الإصدار 1.287.60.0 أو الإصدارات الأحدث. (راجع [تحديثات معلومات الأمان](https://www.microsoft.com/wdsi/definitions).)
->
-> بمجرد إجراء هذا التحديث، تستمر الحماية من العبث بحماية إعدادات التسجيل، وتحاول السجلات تعديلها دون إرجاع الأخطاء.
+> للمساعدة في التأكد من أن الحماية من العبث لا تتداخل مع منتجات الأمان غير التابعة ل Microsoft أو البرامج النصية لتثبيت المؤسسة التي تعدل هذه الإعدادات، انتقل إلى **أمن Windows** وتحديث **معلومات الأمان** إلى الإصدار 1.287.60.0 أو الإصدارات الأحدث. (راجع [تحديثات معلومات الأمان](https://www.microsoft.com/wdsi/definitions).) بمجرد إجراء هذا التحديث، تستمر الحماية من العبث بحماية إعدادات التسجيل، وتحاول السجلات تعديلها دون إرجاع الأخطاء.
 
 إذا كنت مستخدما منزليا، أو لم تكن خاضعا لإعدادات يديرها فريق أمان، يمكنك استخدام تطبيق أمن Windows لإدارة الحماية من العبث بالبيانات. يجب أن يكون لديك أذونات المسؤول المناسبة على جهازك لتغيير إعدادات الأمان، مثل الحماية من العبث بالبيانات.
 
@@ -259,13 +247,10 @@ ms.locfileid: "64667417"
 
 ### <a name="on-which-versions-of-windows-can-i-configure-tamper-protection"></a>ما هي إصدارات Windows التي يمكنني تكوين الحماية من العبث بها؟
 
-Windows 10 OS [1709](/windows/release-health/status-windows-10-1709) أو [1803](/windows/release-health/status-windows-10-1803) أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) أو أحدث مع [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint).
-  
-Windows 10 Enterprise متعددة الجلسات
-
-Windows 11
-
-Windows 11 Enterprise متعددة الجلسات
+- Windows 11
+- Windows 11 Enterprise متعددة الجلسات
+- Windows 10 OS [1709](/windows/release-health/status-windows-10-1709) أو [1803](/windows/release-health/status-windows-10-1803) أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) أو أحدث مع [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint).
+- Windows 10 Enterprise متعددة الجلسات
   
 إذا كنت تستخدم Configuration Manager، الإصدار 2006، مع إرفاق المستأجر، يمكن توسيع الحماية من العبث بالإنترنت إلى Windows Server 2012 R2، Windows Server 2016، Windows Server 2019، Windows Server 2022. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
 
@@ -329,8 +314,6 @@ Windows 11 Enterprise متعددة الجلسات
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[المساعدة في تأمين أجهزة الكمبيوتر Windows باستخدام Endpoint Protection Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
-
-[الحصول على نظرة عامة على Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint)
-
-[معاً بشكل أفضل: برنامج الحماية من الفيروسات من Microsoft Defender Microsoft Defender لنقطة النهاية](why-use-microsoft-defender-antivirus.md)
+- [المساعدة في تأمين أجهزة الكمبيوتر Windows باستخدام Endpoint Protection Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [الحصول على نظرة عامة على Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint)
+- [معاً بشكل أفضل: برنامج الحماية من الفيروسات من Microsoft Defender Microsoft Defender لنقطة النهاية](why-use-microsoft-defender-antivirus.md)

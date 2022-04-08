@@ -1,5 +1,5 @@
 ---
-title: تنفيذ نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)
+title: تمكين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)
 description: يوفر إرشادات لتنفيذ نشر قواعد تقليل الأجزاء المعرضة للهجوم.
 keywords: نشر قواعد تقليل الأجزاء المعرضة للهجوم، ونشر ASR، وتمكين قواعد asr، وتكوين ASR، ونظام منع الاختراق المضيف، وقواعد الحماية، وقواعد مكافحة الاستغلال، وقواعد مكافحة الاستغلال، وقواعد الاستغلال، وقواعد منع العدوى، Microsoft Defender لنقطة النهاية، وتكوين قواعد ASR
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 675d881c3737b67cfdc0207be85285f71455d65c
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 19e654c979428e25d1365cbab5b6f75b39adbdb3
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666955"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705505"
 ---
-# <a name="step-3-implement-asr-rules"></a>الخطوة 3: تنفيذ قواعد ASR
+# <a name="enable-attack-surface-reduction-asr-rules"></a>تمكين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)
 
 يؤدي تنفيذ قواعد تقليل الأجزاء المعرضة للهجوم (ASR) إلى نقل حلقة الاختبار الأولى إلى حالة وظيفية ممكنة.
 
@@ -131,10 +131,12 @@ ms.locfileid: "64666955"
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>مواضيع إضافية في مجموعة النشر هذه
 
-[متطلبات أساسية لنشر قواعد ASR](attack-surface-reduction-rules-deployment.md)
+[نظرة عامة على نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[الخطوة 1: تخطيط نشر قواعد ASR](attack-surface-reduction-rules-deployment-plan.md)
+[تخطيط نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[الخطوة 2: اختبار قواعد ASR](attack-surface-reduction-rules-deployment-test.md)
+[قواعد اختبار تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
-[الخطوة 4: تشغيل قواعد ASR](attack-surface-reduction-rules-deployment-operationalize.md)
+[تشغيل قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
+
+[مرجع قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-reference.md)

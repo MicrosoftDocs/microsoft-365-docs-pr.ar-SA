@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcc4ed070e900f9df892abb58cd05cdad2dca619
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 5f04933d54bf02732fea34df25b25e3996e23932
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687000"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705067"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux
 
@@ -48,6 +48,10 @@ ms.locfileid: "64687000"
 
 - الوصول إلى مدخل Microsoft 365 Defender
 - توزيع Linux باستخدام [مدير النظام](https://systemd.io/)
+
+  >[!NOTE]
+  >يدعم توزيع Linux باستخدام مدير النظام، باستثناء RHEL/CentOS 6.x كلا من SystemV و Upstart.
+
 - خبرة على مستوى المبتدئين في البرمجة النصية ل Linux و BASH
 - الامتيازات الإدارية على الجهاز (في حالة النشر اليدوي)
 

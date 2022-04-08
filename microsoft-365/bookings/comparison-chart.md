@@ -1,5 +1,5 @@
 ---
-title: 'مخطط المقارنة: Bookings web app مقابل Bookings Teams App'
+title: 'مخطط المقارنة: Bookings تطبيق ويب مقابل تطبيق Bookings Teams'
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,33 +8,36 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
-description: مخطط مقارنة يعرض اختلافات الميزات بين تطبيق Bookings على الويب Teams تطبيق Bookings.
-ms.openlocfilehash: cd253c41eafe3a478e6a2f12bf94977f81688347
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: مخطط مقارنة يعرض اختلافات الميزات بين تطبيق الويب Bookings وتطبيق Bookings Teams.
+ms.openlocfilehash: a7f853157378916ade7035898b149a92c8818636
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63572911"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64715154"
 ---
-# <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>مخطط المقارنة: Bookings web app مقابل Bookings Teams App
+# <a name="comparison-chart-bookings-web-app-vs-bookings-teams-app"></a>مخطط المقارنة: Bookings تطبيق ويب مقابل تطبيق Bookings Teams
 
-يتيح تطبيق Bookings في Teams للمدراء معالجة مهامهم الرئيسية وتغيير بعض الإعدادات. ومع ذلك، يتضمن الويب Bookings الميزات والإعدادات المتقدمة التي لم تتوفر بعد في Teams التطبيق.
+> [!NOTE]
+> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
 
-Teams إضافة ميزات التطبيق في كل الأوقات وسنستمر في تحديث هذه القائمة. راجع القسم **هل تتوفر كل وظائف تطبيق Bookings Web الأصلي في Microsoft Teams؟** في الأسئلة [الشائعة](bookings-faq.yml) للحصول على مزيد من التفاصيل.
+يتيح تطبيق Bookings في Teams للمجدولين معالجة مهامهم الرئيسية وتغيير بعض الإعدادات. ومع ذلك، يتضمن موقع ويب Bookings ميزات وإعدادات متقدمة غير متوفرة بعد في تطبيق Teams.
 
-| الميزة | تطبيق Bookings على الويب | تطبيق Bookings Teams |
+تتم إضافة Teams ميزات التطبيق طوال الوقت وسنستمر في تحديث هذه القائمة. راجع **القسم "هل تتوفر كل وظائف تطبيق ويب Bookings الأصلي في Microsoft Teams؟** في [الأسئلة المتداولة](bookings-faq.yml) للحصول على مزيد من التفاصيل.
+
+| ميزه | تطبيق ويب Bookings | تطبيق Bookings Teams |
 |:---|:---|:---|
 | إنشاء تقويمات حجز جديدة | نعم | نعم |
 | إضافة فريق العمل وإزالته من تقويم الحجز | نعم | نعم |
 | إنشاء أنواع مواعيد جديدة | نعم | نعم |
 | جدولة الحجوزات عبر الإنترنت | نعم | نعم |
 | تحرير تفاصيل العمل | نعم | نعم |
-| إضافة فريق عمل مع أذونات "الضيف" للأشخاص من خارج المؤسسة | نعم | لا |
-| جدولة الحجوزات شخصيا أو بدون اتصال | نعم | لا |
-| جدولة حجوزات المجموعات أو حجوزات العملاء المتعددين | نعم | لا |
-| تعيين شعار للأعمال | نعم | لا |
+| إضافة أعضاء فريق العمل الذين لديهم أذونات الضيف للأشخاص من خارج مؤسستك | نعم | لا |
+| جدولة الحجوزات الشخصية أو غير المتصلة | نعم | لا |
+| جدولة حجوزات المجموعات أو العملاء المتعددين | نعم | لا |
+| تعيين شعار لأعمالك | نعم | لا |
 | تعيين ساعات العمل | نعم | لا |
 | نشر صفحة جدولة الخدمة الذاتية | نعم | لا |
 | إدارة جهات اتصال العملاء | نعم | لا |
-| تعيين إجازة للموظفين | نعم | لا |
+| تعيين وقت الإجازة للموظفين | نعم | لا |
 | طريقة عرض قائمة الانتظار المجدولة | لا | نعم |

@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a5ffc97c6b2cfd1016da1f218ab2a16c153a5528
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a39a0a55592ba8f76403f9e8d9aaf7416cb35228
+ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666273"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64714230"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>فهم إعدادات تكوين الجيل التالي في Microsoft Defender for Business
 
@@ -88,7 +88,7 @@ ms.locfileid: "64666273"
 | [فحص ملفات الشبكة](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | بشكل افتراضي، لا يتم تمكين [AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) ، ولا يتم مسح ملفات الشبكة ضوئيا. |
 | [مسح رسائل البريد الإلكتروني ضوئيا](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | بشكل افتراضي، لا يتم تمكين [AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) ، ولا يتم مسح رسائل البريد الإلكتروني ضوئيا. |
 | [عدد الأيام (0-90) للحفاظ على البرامج الضارة المعزولة](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | بشكل افتراضي، [يتم تعيين DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) هذا الإعداد إلى صفر (0) أيام. لا تتم إزالة البيانات الاصطناعية في العزل تلقائيا.  |
-| [إرسال موافقة العينات](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | بشكل افتراضي، [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) هو et لإرسال عينات آمنة تلقائيا. تتضمن `.bat`أمثلة العينات الآمنة والملفات `.dll``.scr`والملفات `.exe` التي لا تحتوي على معلومات تعريف شخصية (PII). إذا كان الملف يحتوي على PII، يتلقى المستخدم طلبا للسماح لنموذج الإرسال بالمتابعة.<br/><br/>[تعرف على المزيد حول حماية السحابة وعينة الإرسال](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
+| [إرسال موافقة العينات](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | بشكل افتراضي، يتم تعيين [SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) لإرسال عينات آمنة تلقائيا. تتضمن `.bat`أمثلة العينات الآمنة والملفات `.dll``.scr`والملفات `.exe` التي لا تحتوي على معلومات تعريف شخصية (PII). إذا كان الملف يحتوي على PII، يتلقى المستخدم طلبا للسماح لنموذج الإرسال بالمتابعة.<br/><br/>[تعرف على المزيد حول حماية السحابة وعينة الإرسال](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
 | [مسح محركات الأقراص القابلة للإزالة ضوئيا](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) | بشكل افتراضي، يتم تكوين [AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) لمسح محركات الأقراص القابلة للإزالة، مثل محركات أقراص USB الإبهام على الأجهزة.<br/><br/>[تعرف على المزيد حول إعدادات نهج مكافحة البرامج الضارة](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#list-of-antimalware-policy-settings)   |
 | [تشغيل وقت الفحص السريع اليومي](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) | بشكل افتراضي، يتم تعيين [ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) إلى 2:00 ص.<br/><br/>[تعرف على المزيد حول إعدادات الفحص](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).   |
 | [التحقق من وجود تحديثات التوقيع قبل تشغيل الفحص](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) | بشكل افتراضي، يتم تكوين [CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan) للتحقق من تحديثات معلومات الأمان قبل تشغيل عمليات مسح الحماية من الفيروسات/الحماية من البرامج الضارة.<br/><br/>[تعرف على المزيد حول إعدادات الفحص](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) [وتحديثات معلومات الأمان](../defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus.md#security-intelligence-updates).   |

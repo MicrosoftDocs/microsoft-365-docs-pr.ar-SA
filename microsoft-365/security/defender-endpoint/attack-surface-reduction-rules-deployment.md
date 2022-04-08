@@ -1,5 +1,5 @@
 ---
-title: متطلبات أساسية لنشر قواعد ASR
+title: نظرة عامة على نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)
 description: يوفر نظرة عامة وإرشادات المتطلبات الأساسية حول نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR).
 keywords: نشر قواعد تقليل الأجزاء المعرضة للهجوم، ونشر ASR، وتمكين قواعد asr، وتكوين ASR، ونظام منع الاختراق المضيف، وقواعد الحماية، وقواعد مكافحة الاستغلال، وقواعد مكافحة الاستغلال، وقواعد الاستغلال، وقواعد منع العدوى، Microsoft Defender لنقطة النهاية، وتكوين قواعد ASR
 search.product: eADQiWindows 10XVcnh
@@ -20,16 +20,14 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 0180bfcef9d478dcf8e334a180ea3df993585e00
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 8743d13939e73e25cefd08724d9a2f8d5a7fa410
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666405"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705527"
 ---
-# <a name="asr-rules-deployment-prerequisites"></a>متطلبات أساسية لنشر قواعد ASR
-
-## <a name="before-you-begin"></a>قبل البدء
+# <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>نظرة عامة على نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)
 
 الأسطح المعرضة للهجوم هي جميع الأماكن التي تكون فيها مؤسستك عرضة للتهديدات الإلكترونية والهجمات. تتضمن الأسطح الهجومية لمؤسستك جميع الأماكن التي يمكن للمهاجم فيها اختراق أجهزة مؤسستك أو شبكاتها. إن تقليل مساحة الهجوم يعني حماية أجهزة مؤسستك وشبكتها، ما يترك للمهاجمين طرقا أقل للهجوم. يمكن أن يساعد تكوين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)، وهي واحدة من العديد من ميزات الأمان الموجودة في Microsoft Defender لنقطة النهاية.
 
@@ -40,6 +38,8 @@ ms.locfileid: "64666405"
 - السلوكيات التي لا تحدثها التطبيقات عادة أثناء العمل اليومي العادي
 
 من خلال تقليل أسطح الهجوم المختلفة، يمكنك المساعدة في منع حدوث الهجمات في المقام الأول.
+
+## <a name="before-you-begin"></a>قبل البدء
 
 في أثناء إعدادك الأولي، من الضروري أن تفهم قدرات الأنظمة التي ستضعها. سيساعدك فهم القدرات على تحديد قواعد ASR الأكثر أهمية لحماية مؤسستك. بالإضافة إلى ذلك، هناك العديد من المتطلبات الأساسية التي يجب عليك حضورها تحضيرا لنشر ASR.
 
@@ -129,13 +129,13 @@ ms.locfileid: "64666405"
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>مواضيع إضافية في مجموعة النشر هذه
 
-[المرحلة 1: الخطة](attack-surface-reduction-rules-deployment-plan.md)
+[قواعد اختبار تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
-[المرحلة الثانية: اختبار](attack-surface-reduction-rules-deployment-test.md)
+[تمكين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 
-[المرحلة 3: التنفيذ](attack-surface-reduction-rules-deployment-implement.md)
+[تشغيل قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[المرحلة 4: التشغيل](attack-surface-reduction-rules-deployment-operationalize.md)
+[مرجع قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-reference.md)
 
 ## <a name="reference"></a>المرجع
 
@@ -155,7 +155,7 @@ ms.locfileid: "64666405"
 
 [استخدام قواعد تقليل الأجزاء المعرضة للهجوم لمنع إصابة البرامج الضارة](attack-surface-reduction.md)
 
-[تمكين قواعد تقليل الأجزاء المعرضة للهجوم](enable-attack-surface-reduction.md)
+[تمكين قواعد تقليل الأجزاء المعرضة للهجوم - تكوينات بديلة](enable-attack-surface-reduction.md)
 
 [مرجع قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-reference.md)
 

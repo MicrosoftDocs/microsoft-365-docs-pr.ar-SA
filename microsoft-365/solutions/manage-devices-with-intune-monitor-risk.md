@@ -20,38 +20,32 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: e64006873c3419b9c6d93d3b367a5753f5478738
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: b8f15212916566e169efa63556b897600f7092a3
+ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651400"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "64705221"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>الخطوة 6. مراقبة مخاطر الأجهزة وتوافقها مع أساسات الأمان
 
 بعد نشر مؤسستك Microsoft Defender لنقطة النهاية، يمكنك الحصول على رؤى وحماية أكبر لأجهزتك من خلال دمج Microsoft Intune مع Defender لنقطة النهاية. بالنسبة إلى الأجهزة المحمولة، يشمل ذلك القدرة على مراقبة مخاطر الجهاز كشرط للوصول. بالنسبة للأجهزة Windows، يمكنك مراقبة توافق هذه الأجهزة مع أساسيات الأمان. 
 
-ملاحظة: يتضمن نشر Microsoft Defender لنقطة النهاية نقاط نهاية الإلحاق. لمزيد من المعلومات حول إلحاق الأجهزة Microsoft 365 capabilties، راجع [تسجيل الأجهزة مقابل أجهزة الإلحاق](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices).  
+يتضمن نشر Microsoft Defender لنقطة النهاية نقاط نهاية الإلحاق. إذا كنت تستخدم Intune لنقاط النهاية الملحقة (مستحسن)، فقد قمت بالفعل بتوصيل Microsoft Intune ب Defender لنقطة النهاية. إذا استخدمت أسلوبا مختلفا لإلحاق نقاط النهاية ب Defender لنقطة النهاية، فراجع [تكوين Microsoft Defender لنقطة النهاية في Intune](/mem/intune/protect/advanced-threat-protection-configure) للتأكد من إعداد اتصال خدمة إلى خدمة بين Intune و Microsoft Defender لنقطة النهاية. 
+
 
 ![Defender لنقطة النهاية والتوضيح Microsoft Intune التكامل](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
 في هذا الرسم التوضيحي:
 - Microsoft Defender لنقطة النهاية إلى حد كبير من تطوير الحماية من التهديدات للأجهزة. 
 - بينما يسمح لك Microsoft Intune بتعيين نهج حماية التطبيقات وإدارة الأجهزة (بما في ذلك تغييرات التكوين)، يراقب Defender for Endpoint أجهزتك باستمرار للتهديدات ويمكنه اتخاذ إجراء تلقائي لمعالجة الهجمات. 
-- يمكنك استخدام Intune لإلحاق الأجهزة ب Defender لنقطة النهاية. عند القيام بذلك، فإنك تقوم أيضا بتمكين هذه الأجهزة للعمل مع قدرات التوافق Microsoft 365، بما في ذلك منع فقدان بيانات نقطة النهاية (DLP).
+- يمكنك توصيل Microsoft Intune ب Defender لنقطة النهاية لمراقبة مخاطر الجهاز والامتثال لأساسيات الأمان.
 
 تتضمن هذه المقالة الخطوات التالية:
-- الاتصال Microsoft Intune إلى Defender لنقطة النهاية
 - مراقبة مخاطر الجهاز
 - مراقبة الامتثال لخطوط الأمان الأساسية
 
 إذا لم يتم إعداد Defender لنقطة النهاية بالفعل، فاعمل مع مسؤول الحماية من التهديدات [لإعداد بيئة التقييم والإصدار التجريبي](../security/defender/eval-defender-endpoint-overview.md). يمكنك العمل مع مجموعة الإصدار التجريبي لتجربة القدرات في هذه المقالة.
-
-## <a name="connect-microsoft-intune-to-defender-for-endpoint"></a>الاتصال Microsoft Intune إلى Defender لنقطة النهاية
-
-يعد تكوين تكامل Microsoft Intune مع Defender لنقطة النهاية أمرا بسيطا. استخدم هذه [المقالة: تكوين Microsoft Defender لنقطة النهاية في Intune](/mem/intune/protect/advanced-threat-protection-configure). 
-
-![الاتصال Intune إلى Microsoft Defender لنقطة النهاية](../media/devices/connect-intune-to-microsoft-defender.png#lightbox)
 
 ## <a name="monitor-device-risk-as-a-condition-for-access"></a>مراقبة مخاطر الجهاز كشرط للوصول
 
@@ -84,7 +78,7 @@ ms.locfileid: "64651400"
 |2     |  نشر إعدادات أساس الأمان Windows ل Intune. ربما تكون قد أنجزت ذلك بالفعل إذا اتبعت الإرشادات الواردة في [الخطوة 5. نشر ملفات تعريف التكوين](manage-devices-with-intune-configuration-profiles.md).        |
 |3    |  نشر إعدادات خط أساس Defender لنقطة النهاية ل Intune. راجع [إدارة ملفات تعريف أساس الأمان في Microsoft Intune](/mem/intune/protect/security-baselines-configure) لإنشاء ملف التعريف واختيار إصدار الأساس.<br><br>يمكنك أيضا اتباع الإرشادات هنا: [مراجعة أساس الأمان Microsoft Defender لنقطة النهاية وتعيينه](../security/defender-endpoint/configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline).     |
 |4     | في Defender لنقطة النهاية، راجع [بطاقة أساس الأمان على إدارة تكوين الجهاز](../security/defender-endpoint/configure-machines.md).          |
-| | |
+
 
 ## <a name="next-steps"></a>الخطوات التالية
 انتقل إلى [الخطوة 7. تنفيذ DLP مع قدرات حماية المعلومات على نقاط النهاية](manage-devices-with-intune-dlp-mip.md).
