@@ -25,12 +25,12 @@ ms.custom:
 search.appverid: MET150
 description: أضف تخزين الملفات في اشتراكك في Microsoft 365. باستخدام مساحة تخزين إضافية للملفات، يمكنك تخزين المزيد من المحتوى في SharePoint.
 ms.date: 04/02/2021
-ms.openlocfilehash: 687233ed91e358c3f48332a0b07aa3213734b71b
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: da66bac2bde52f5bcd899b73e5927008b40227dc
+ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731516"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64737474"
 ---
 # <a name="add-more-sharepoint-storage-to-your-subscription"></a>إضافة المزيد من مساحة التخزين SharePoint إلى اشتراكك
 
@@ -96,8 +96,8 @@ ms.locfileid: "64731516"
 - Office 365 Enterprise E5
 - Office 365 A3 (هيئة التدريس)
 - Office 365 A5 (هيئة التدريس)
-- Office على الويب مع خطة SharePoint 1
-- Office على الويب مع خطة SharePoint 2
+- Office på nettet مع خطة SharePoint 1
+- Office på nettet مع خطة SharePoint 2
 - SharePoint الخطة 1 عبر الإنترنت
 - SharePoint الخطة 2 عبر الإنترنت
 - Microsoft 365 Business Basic
@@ -112,4 +112,4 @@ ms.locfileid: "64731516"
 
 ## <a name="related-content"></a>محتوى ذي صلة
 
-[إدارة حدود تخزين الموقع](/sharepoint/manage-site-collection-storage-limits) (مقالة)
+[إدارة حدود تخزين الموقع](/sharepoint/manage-site-collection-storage-limits) (مقالة)\

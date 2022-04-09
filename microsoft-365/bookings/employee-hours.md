@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: تعيين ساعات عمل الموظفين والتوفر في Microsoft Bookings.
-ms.openlocfilehash: 533cf3075c01753061f153d6dcf16bdb02bfa5a3
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: f87a5f13ace9689cd838942e6558529659671238
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714780"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747259"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>ساعات عمل الموظفين في Microsoft Bookings
 
@@ -27,19 +27,19 @@ ms.locfileid: "64714780"
 
 إذا كنت تريد حجز إجازة لأعضاء فريق العمل حتى لا يتمكن العملاء من حجزها أثناء خروجهم من المكتب، فراجع [جدولة عمليات إغلاق العمل والإجازة ووقت العطل](schedule-closures-time-off-vacation.md) للحصول على الإرشادات.
 
-## <a name="customize-employee-working-hours"></a>تخصيص ساعات عمل الموظفين
+## <a name="watch-set-employee-working-hours"></a>المراقبة: تعيين ساعات عمل الموظف
 
 شاهد هذا الفيديو أو اتبع الخطوات أدناه لتعيين ساعات عمل الموظف.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
+## <a name="customize-employee-working-hours"></a>تخصيص ساعات عمل الموظفين
+
 1. في Microsoft 365، حدد مشغل التطبيق، ثم حدد **Bookings**.
 
-1. اختر تقويمك. 
+1. اختر تقويمك.
 
 1. في جزء التنقل، حدد **"فريق العمل**"، ثم حدد عضو فريق العمل الذي تريد تعيين ساعاته.
-
-   ![صورة لشاشة فريق العمل Bookings مع تمييز الاسم.](../media/bookings-staff-name-highlight.png)
 
 1. ضمن ساعات العمل، قم بإلغاء تحديد خانة الاختيار **"استخدام ساعات العمل** ".
 

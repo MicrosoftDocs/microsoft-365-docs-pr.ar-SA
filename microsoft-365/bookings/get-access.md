@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: تعرف على كيفية الوصول إلى ميزة Bookings في Microsoft 365.
-ms.openlocfilehash: e399540711cdf0f5e9556ac1ac8aeed32d00db52
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: fd81b64916b1798982470ad8e6aa6e28b0a14fdf
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714252"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746734"
 ---
 # <a name="get-access-to-microsoft-bookings"></a>الوصول إلى Microsoft Bookings
 
@@ -33,7 +33,7 @@ ms.locfileid: "64714252"
 
 1. إذا لم تكن هذه هي المرة الأولى على هذه الصفحة، يمكنك تحديد تقويم حجز آخر أو إجراء بحث عن تقويم حجز آخر.
 
-2. أدخل اسم عملك ونوع عملك وحدد **"متابعة**".
+1. أدخل اسم عملك ونوع عملك وحدد **"متابعة**".
 
 أنت الآن جاهز لإعداد Bookings لمؤسستك. يمكنك الوصول إلى صفحة Bookings بهذا [الارتباط](https://outlook.office.com/bookings/onboarding)، من مشغل التطبيق أو من office.com. استخدم المواضيع التالية لمتابعة إعداد ميزات Bookings.
 

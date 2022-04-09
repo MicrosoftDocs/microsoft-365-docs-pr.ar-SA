@@ -1,6 +1,6 @@
 ---
-title: عرض إعدادات الأمان وتحريرها في Microsoft Defender for Business
-description: تكوين سياسات الأمان في Microsoft Defender for Business
+title: عرض إعدادات الأمان وتحريرها في Microsoft Defender für Unternehmen
+description: تكوين نهج الأمان في Microsoft Defender für Unternehmen
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,163 +17,158 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 54592b20b5b6471d26c4673492566451ae5ec0de
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 3d6ef3a7bc3ae9b7556041cedc88df354421f885
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63572104"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746481"
 ---
-# <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>عرض إعدادات ونهج الأمان وتحريرها في Microsoft Defender for Business
+# <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>عرض نهج الأمان وإعداداتك وتحريرها في Microsoft Defender für Unternehmen
 
 > [!IMPORTANT]
-> يتم طرح Microsoft Defender for Business Microsoft 365 Business Premium العملاء[](../../business-premium/index.md)، بدءا من 1 مارس 2022. يتم عرض Defender for Business لاشتراك مستقل في المعاينة، وسينتهى طرحه تدريجيا للعملاء وشركاء المعلومات الذين سجلوا هنا [](https://aka.ms/mdb-preview) لطلبه. تتضمن [المعاينة مجموعة أولية من السيناريوهات](mdb-tutorials.md#try-these-preview-scenarios)، وسنضيف القدرات بشكل منتظم.
+> يتم طرح Microsoft Defender für Unternehmen [للعملاء Microsoft 365 Business Premium](../../business-premium/index.md)، بدءا من 1 مارس 2022. يتم معاينة Defender for Business باعتباره اشتراكا مستقلا، وسيتم طرحه تدريجيا للعملاء وشركاء تكنولوجيا المعلومات الذين [يقومون بالتسجيل هنا](https://aka.ms/mdb-preview) لطلبه. تتضمن المعاينة [مجموعة أولية من السيناريوهات](mdb-tutorials.md#try-these-preview-scenarios)، وسنضيف القدرات بانتظام.
 > 
-> تتعلق بعض المعلومات الواردة في هذه المقالة بالمنتجات/الخدمات التي تم إصدارها مسبقا التي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، للمعلومات المتوفرة هنا. 
+> تتعلق بعض المعلومات الواردة في هذه المقالة بالنواتج/الخدمات التي تم إصدارها مسبقا والتي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، للمعلومات المقدمة هنا. 
 
 ## <a name="overview"></a>نظرة عامة
 
-بعد أن قمت بضبط أجهزة شركتك في Microsoft Defender for Business، تكون الخطوة التالية هي عرض سياسات الأمان والإعدادات وتحريرها إذا لزم الأمر. تتضمن سياسات الأمان ما يلي:
+بعد إلحاق أجهزة شركتك Microsoft Defender für Unternehmen، تكون خطوتك التالية هي عرض نهج الأمان وإعداداتك وتحريرها إذا لزم الأمر. تتضمن نهج الأمان التي يجب تكوينها ما يلي:
 
-- **[سياسات حماية الجيل التالي](#view-or-edit-your-next-generation-protection-policies)**، التي تحدد الحماية من الفيروسات والحماية من البرامج الضارة للأجهزة الخاصة بالشركة
+- **[نهج الحماية من الجيل التالي](#view-or-edit-your-next-generation-protection-policies)**، التي تحدد الحماية من الفيروسات والحماية من البرامج الضارة لأجهزة شركتك
+- **[حماية جدار الحماية والقواعد](#view-or-edit-your-firewall-policies-and-custom-rules)**، التي تحدد نسبة استخدام الشبكة المسموح لها بالتدفق من أو إلى أجهزة شركتك
+- **[تصفية محتوى الويب](#set-up-web-content-filtering)**، والتي تمنع الأشخاص من زيارة مواقع ويب معينة (URLs) استنادا إلى فئات، مثل محتوى البالغين أو المسؤولية القانونية.
 
-- **[حماية جدار الحماية وقواعده](#view-or-edit-your-firewall-policies-and-custom-rules)**، التي تحدد حركة مرور الشبكة المسموح بتدفقها إلى أجهزة الشركة أو منها
+في Defender for Business، يتم تطبيق نهج الأمان على الأجهزة من خلال [مجموعات الأجهزة](mdb-create-edit-device-groups.md#what-is-a-device-group). 
 
-- **[تصفية محتوى ويب](#set-up-web-content-filtering)**، مما يمنع الأشخاص من زيارة مواقع ويب معينة (عناوين URL) استنادا إلى فئات، مثل محتوى البالغين أو المسؤولية القانونية.
+بالإضافة إلى نهج الأمان، يمكنك [عرض الإعدادات وتحريرها](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal)، مثل المنطقة الزمنية التي يجب استخدامها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، وما إذا كنت تريد تلقي ميزات المعاينة عند توفرها.
 
-في Defender for Business، يتم تطبيق سياسات الأمان على الأجهزة من خلال [مجموعات الأجهزة](mdb-create-edit-device-groups.md#what-is-a-device-group). 
-
-بالإضافة إلى سياسات الأمان، يمكنك عرض الإعدادات وتحريرها، مثل المنطقة الزمنية التي يجب استخدامها في مدخل Microsoft 365 Defender ([](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal)[https://security.microsoft.com](https://security.microsoft.com))، وما إذا كنت تريد تلقي ميزات المعاينة عندما تصبح متوفرة.
-
-استخدم هذه المقالة كدليل لإدارة سياسات الأمان وإعداداتك.
+استخدم هذه المقالة كدليل لإدارة نهج الأمان وإعداداتك.
 
 ## <a name="what-to-do"></a>ما يجب فعله
 
-1. [اختر المكان الذي يمكنك فيه إدارة سياسات الأمان والأجهزة](#choose-where-to-manage-security-policies-and-devices).
+1. [اختر مكان إدارة نهج الأمان والأجهزة](#choose-where-to-manage-security-policies-and-devices).
 
-2. [عرض سياسات حماية الجيل التالي أو تحريرها](#view-or-edit-your-next-generation-protection-policies).
+2. [عرض نهج الحماية من الجيل التالي أو تحريرها](#view-or-edit-your-next-generation-protection-policies).
 
-3. [عرض سياسات جدار الحماية والقواعد المخصصة أو تحريرها](#view-or-edit-your-firewall-policies-and-custom-rules).
+3. [عرض نهج جدار الحماية والقواعد المخصصة أو تحريرها](#view-or-edit-your-firewall-policies-and-custom-rules).
 
-4. [إعداد تصفية محتوى الويب](#set-up-web-content-filtering).
+4. [إعداد تصفية محتوى ويب](#set-up-web-content-filtering).
 
-5. [عرض الإعدادات الأخرى وتحريرها في Microsoft 365 Defender المدخل](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
+5. [عرض إعدادات أخرى وتحريرها في مدخل Microsoft 365 Defender](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
 
-6. [تابع إلى الخطوات التالية](#next-steps).
+6. [تابع إلى خطواتك التالية](#next-steps).
 
 >
 > **هل لديك دقيقة؟**
-> الرجاء إجراء <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاع قصير حول Microsoft Defender for Business</a>. إننا نحب أن نستمع إلى هذه التكاتف!
+> يرجى الاطلاع <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">على استطلاعنا القصير حول Microsoft Defender für Unternehmen</a>. يسعدنا أن نستمع إليك!
 >
 
-## <a name="choose-where-to-manage-security-policies-and-devices"></a>اختيار مكان إدارة سياسات الأمان والأجهزة
+## <a name="choose-where-to-manage-security-policies-and-devices"></a>اختيار مكان إدارة نهج الأمان والأجهزة
 
-يتميز Defender for Business [بعملية تكوين مبسطة](mdb-simplified-configuration.md) تساعد على تبسيط عملية الإعداد والتكوين. إذا حددت عملية التكوين المبسطة، يمكنك عرض سياسات الأمان وإدارتها في مدخل Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)). ومع ذلك، لست مقتصرا على هذا الخيار. إذا كنت تستخدم إدارة نقاط النهاية من Microsoft (الذي يتضمن Microsoft Intune)، يمكنك الاستمرار في استخدام إدارة نقاط النهاية.
+يتميز Defender for Business [بعملية تكوين مبسطة](mdb-simplified-configuration.md) تساعد على تبسيط عملية الإعداد والتكوين. إذا قمت بتحديد عملية التكوين المبسطة، يمكنك عرض نهج الأمان الخاصة بك وإدارتها في مدخل Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)). ومع ذلك، لا تقتصر على هذا الخيار. إذا كنت تستخدم Microsoft Endpoint Manager (والتي تتضمن Microsoft Intune)، يمكنك الاستمرار في استخدام Endpoint Manager.
 
-يمكن أن يساعدك الجدول التالي في اختيار مكان إدارة سياسات الأمان والأجهزة. <br/><br/>
+يمكن أن يساعدك الجدول التالي في اختيار مكان إدارة نهج الأمان والأجهزة. <br/><br/>
 
 | الخيار | الوصف |
 |:---|:---|
-| **استخدام Microsoft 365 Defender (***مستحسن*) | يمكن Microsoft 365 Defender المدخل ([https://security.microsoft.com/](https://security.microsoft.com/)) الخاص بك في مكان واحد لإدارة أجهزة الشركة ونهج الأمان وإعدادات الأمان. يمكنك الوصول إلى سياسات الأمان وإعداداتك[، واستخدام](mdb-view-tvm-dashboard.md) لوحة معلومات إدارة & الثغرات، وعرض الأحداث وإدارتها كلها في مكان واحد[](mdb-view-manage-incidents.md). <br/><br/>إذا كنت تستخدم إدارة نقاط النهاية من Microsoft، فإن الأجهزة التي قمت ب متنها إلى Defender for Business ونهج الأمان الخاصة بك مرئية في إدارة نقاط النهاية. لمعرفة المزيد، راجع المقالات التالية:<br/><br/>- [الإعدادات الافتراضية ل Defender for Business إدارة نقاط النهاية من Microsoft](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [جدار الحماية في Microsoft Defender for Business](mdb-firewall.md)   |
-| **استخدام إدارة نقاط النهاية من Microsoft** | إذا كانت شركتك تستخدم إدارة نقاط النهاية (التي تتضمن Microsoft Intune) لإدارة سياسات الأمان، يمكنك الاستمرار في استخدام إدارة نقاط النهاية لإدارة الأجهزة ونهج الأمان. لمعرفة المزيد، راجع [إدارة أمان الجهاز باستخدام سياسات أمان نقاط النهاية في Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>إذا قررت التبديل إلى عملية التكوين المبسطة في [Defender for Business](mdb-simplified-configuration.md)، فسوف يتم مطالبتك بحذف أي نهج أمان موجودة في إدارة نقاط النهاية لتجنب تعارضات النهج في [وقت لاحق.](mdb-troubleshooting.yml) |
+| **استخدام مدخل Microsoft 365 Defender** (*مستحسن*) | يمكن أن يكون مدخل Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/)) هو متجرك الوحيد لإدارة أجهزة شركتك ونهج الأمان وإعدادات الأمان. يمكنك الوصول إلى نهج الأمان وإعداداتك، واستخدام [لوحة معلومات إدارة المخاطر & الثغرات](mdb-view-tvm-dashboard.md) الأمنية، [وعرض الحوادث وإدارتها](mdb-view-manage-incidents.md) كلها في مكان واحد. <br/><br/>إذا كنت تستخدم Microsoft Endpoint Manager، فإن الأجهزة التي قمت بإلحاقها ب Defender for Business ونهج الأمان الخاصة بك مرئية في Endpoint Manager. لمعرفة المزيد، راجع المقالات التالية:<br/><br/>- [الإعدادات الافتراضية ل Defender for Business Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [جدار الحماية في Microsoft Defender für Unternehmen](mdb-firewall.md)   |
+| **استخدام Microsoft Endpoint Manager** | إذا كانت شركتك تستخدم بالفعل Endpoint Manager (والتي تتضمن Microsoft Intune) لإدارة نهج الأمان، يمكنك الاستمرار في استخدام Endpoint Manager لإدارة الأجهزة ونهج الأمان. لمعرفة المزيد، راجع [إدارة أمان الجهاز باستخدام نهج أمان نقطة النهاية في Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>إذا قررت التبديل إلى [عملية التكوين المبسطة في Defender for Business](mdb-simplified-configuration.md)، فستتم مطالبتك بحذف أي نهج أمان موجودة في Endpoint Manager لتجنب [تعارضات النهج](mdb-troubleshooting.yml) لاحقا. |
 
 > [!IMPORTANT]
-> إذا كنت تدير سياسات الأمان في مدخل Microsoft 365 Defender، يمكنك عرض هذه إدارة نقاط النهاية، المدرجة كنهج الحماية من الفيروسات أو جدار الحماية. عند عرض نهج جدار الحماية في إدارة نقاط النهاية، سترى نهجين مدرجين: نهج لحماية جدار الحماية، وآخر للقواعد المخصصة.
+> إذا كنت تدير نهج الأمان في مدخل Microsoft 365 Defender، يمكنك *عرض* هذه النهج في Endpoint Manager، المدرجة كنهج الحماية من الفيروسات أو جدار الحماية. عند عرض نهج جدار الحماية في Endpoint Manager، سترى نهجين مدرجين: نهج لحماية جدار الحماية، والآخر للقواعد المخصصة.
 
-## <a name="view-or-edit-your-next-generation-protection-policies"></a>عرض سياسات حماية الجيل التالي أو تحريرها
+## <a name="view-or-edit-your-next-generation-protection-policies"></a>عرض نهج الحماية من الجيل التالي أو تحريرها
 
-استنادا إلى ما إذا كنت تستخدم Microsoft 365 Defender أو إدارة نقاط النهاية من Microsoft لإدارة سياسات حماية الجيل التالي، استخدم أحد الإجراءات في الجدول التالي: <br/><br/>
+استنادا إلى ما إذا كنت تستخدم مدخل Microsoft 365 Defender أو Microsoft Endpoint Manager لإدارة نهج الحماية من الجيل التالي، استخدم أحد الإجراءات في الجدول التالي: <br/><br/>
 
-| المدخل | الإجراء |
+| المدخل | الاجراء |
 |:---|:---|
-| Microsoft 365 Defender المدخل ([https://security.microsoft.com](https://security.microsoft.com)) | 1. انتقل إلى Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، ثم سجل الدخول. <br/><br/>2. في جزء التنقل، اختر **تكوين الجهاز**. يتم تنظيم النهج حسب نظام التشغيل ونوع النهج.<br/><br/>3. حدد علامة تبويب نظام التشغيل (مثل Windows **العملاء**).<br/><br/>4. قم **بتوسيع حماية الجيل التالي** لعرض قائمة سياساتك.<br/><br/>5. حدد نهج لعرض مزيد من التفاصيل حول النهج. بإجراء تغييرات أو لمعرفة المزيد حول إعدادات النهج، راجع المقالات التالية: <br/>- [عرض سياسات الجهاز أو تحريرها](mdb-view-edit-policies.md)<br/>- [فهم إعدادات تكوين الجيل التالي](mdb-next-gen-configuration-settings.md)  |
-| إدارة نقاط النهاية من Microsoft إدارة ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) | 1. انتقل إلى [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ثم سجل الدخول. أنت الآن في مركز إدارة إدارة نقاط النهاية من Microsoft.<br/><br/>2. حدد **أمان نقطة النهاية**.<br/><br/>3. حدد **برنامج الحماية من** الفيروسات لعرض سياساتك في هذه الفئة. <br/><br/>للحصول على المساعدة في إدارة إعدادات الأمان في إدارة نقاط النهاية من Microsoft، ابدأ بإدارة أمان نقطة النهاية [في Microsoft Intune](/mem/intune/protect/endpoint-security). |
+| مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) | 1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، وسجل الدخول. <br/><br/>2. في جزء التنقل، اختر **تكوين الجهاز**. يتم تنظيم النهج حسب نظام التشغيل ونوع النهج.<br/><br/>3. حدد علامة تبويب نظام التشغيل (مثل **Windows العملاء**).<br/><br/>4. قم بتوسيع **حماية الجيل التالي** لعرض قائمة النهج.<br/><br/>5. حدد نهجا لعرض مزيد من التفاصيل حول النهج. لإجراء تغييرات أو لمعرفة المزيد حول إعدادات النهج، راجع المقالات التالية: <br/>- [عرض نهج الجهاز أو تحريرها](mdb-view-edit-policies.md)<br/>- [فهم إعدادات تكوين الجيل التالي](mdb-next-gen-configuration-settings.md)  |
+| مركز إدارة Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) | 1. انتقل إلى [https://endpoint.microsoft.com](https://endpoint.microsoft.com) وسجل الدخول. أنت الآن في مركز إدارة Microsoft Endpoint Manager.<br/><br/>2. حدد **أمان نقطة النهاية**.<br/><br/>3. حدد **برنامج الحماية من الفيروسات** لعرض النهج الخاصة بك في تلك الفئة. <br/><br/>للحصول على المساعدة في إدارة إعدادات الأمان في Microsoft Endpoint Manager، ابدأ [بإدارة أمان نقطة النهاية في Microsoft Intune](/mem/intune/protect/endpoint-security). |
 
-## <a name="view-or-edit-your-firewall-policies-and-custom-rules"></a>عرض سياسات جدار الحماية والقواعد المخصصة أو تحريرها
+## <a name="view-or-edit-your-firewall-policies-and-custom-rules"></a>عرض نهج جدار الحماية والقواعد المخصصة أو تحريرها
 
-استنادا إلى ما إذا كنت تستخدم Microsoft 365 Defender أو إدارة نقاط النهاية من Microsoft لإدارة حماية جدار الحماية، استخدم أحد الإجراءات في الجدول التالي: <br/><br/>
+استنادا إلى ما إذا كنت تستخدم مدخل Microsoft 365 Defender أو Microsoft Endpoint Manager لإدارة حماية جدار الحماية، استخدم أحد الإجراءات في الجدول التالي: <br/><br/>
 
-| المدخل | الإجراء |
+| المدخل | الاجراء |
 |:---|:---|
-| Microsoft 365 Defender المدخل ([https://security.microsoft.com](https://security.microsoft.com)) | 1. انتقل إلى Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، ثم سجل الدخول. <br/><br/>2. في جزء التنقل، اختر **تكوين الجهاز**. يتم تنظيم النهج حسب نظام التشغيل ونوع النهج.<br/><br/>3. حدد علامة تبويب نظام التشغيل (مثل Windows **العملاء**).<br/><br/>4. قم **بتوسيع جدار** الحماية لعرض قائمة سياساتك.<br/><br/>5. حدد نهج لعرض مزيد من التفاصيل حول النهج. بإجراء تغييرات أو لمعرفة المزيد حول إعدادات النهج، راجع المقالات التالية: <br/>- [عرض سياسات الجهاز أو تحريرها](mdb-view-edit-policies.md)<br/>- [إعدادات جدار الحماية](mdb-firewall.md)<br/>- [إدارة القواعد المخصصة لنهج جدار الحماية](mdb-custom-rules-firewall.md)  |
-| إدارة نقاط النهاية من Microsoft إدارة ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) | 1. انتقل إلى [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ثم سجل الدخول. أنت الآن في مركز إدارة إدارة نقاط النهاية من Microsoft.<br/><br/>2. حدد **أمان نقطة النهاية**.<br/><br/>3. حدد **جدار الحماية** لعرض سياساتك في هذه الفئة. يتم سرد القواعد المخصصة المعرفة لحماية جدار الحماية كنهج منفصلة.<br/><br/>للحصول على المساعدة في إدارة إعدادات الأمان في إدارة نقاط النهاية من Microsoft، ابدأ بإدارة أمان نقطة النهاية [في Microsoft Intune](/mem/intune/protect/endpoint-security). |
+| مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) | 1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، وسجل الدخول. <br/><br/>2. في جزء التنقل، اختر **تكوين الجهاز**. يتم تنظيم النهج حسب نظام التشغيل ونوع النهج.<br/><br/>3. حدد علامة تبويب نظام التشغيل (مثل **Windows العملاء**).<br/><br/>4. قم بتوسيع **جدار الحماية** لعرض قائمة النهج.<br/><br/>5. حدد نهجا لعرض مزيد من التفاصيل حول النهج. لإجراء تغييرات أو لمعرفة المزيد حول إعدادات النهج، راجع المقالات التالية: <br/>- [عرض نهج الجهاز أو تحريرها](mdb-view-edit-policies.md)<br/>- [إعدادات جدار الحماية](mdb-firewall.md)<br/>- [إدارة القواعد المخصصة لنهج جدار الحماية](mdb-custom-rules-firewall.md)  |
+| مركز إدارة Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) | 1. انتقل إلى [https://endpoint.microsoft.com](https://endpoint.microsoft.com) وسجل الدخول. أنت الآن في مركز إدارة Microsoft Endpoint Manager.<br/><br/>2. حدد **أمان نقطة النهاية**.<br/><br/>3. حدد **جدار الحماية** لعرض النهج الخاصة بك في تلك الفئة. يتم سرد القواعد المخصصة التي تم تعريفها لحماية جدار الحماية كنهج منفصلة.<br/><br/>للحصول على المساعدة في إدارة إعدادات الأمان في Microsoft Endpoint Manager، ابدأ [بإدارة أمان نقطة النهاية في Microsoft Intune](/mem/intune/protect/endpoint-security). |
 
-## <a name="set-up-web-content-filtering"></a>إعداد تصفية محتوى الويب
+## <a name="set-up-web-content-filtering"></a>إعداد تصفية محتوى ويب
 
-تمكن تصفية محتوى ويب فريق الأمان من تعقب إمكانية الوصول إلى مواقع الويب وتنظيمها استنادا إلى فئات المحتوى الخاصة بها، مثل:
+تمكن تصفية محتوى الويب فريق الأمان من تعقب الوصول إلى مواقع الويب وتنظيمه استنادا إلى فئات المحتوى الخاصة به، مثل:
 
-- محتوى البالغين: المواقع ذات الصلة بالمجامع أو الجماع أو العري أو المواد الإباحية أو المواد الصريحة جنسيا أو العنف
+- محتوى البالغين: المواقع ذات الصلة بالهواة أو الوثب أو العري أو المواد الإباحية أو المواد الصريحة من الناحية الجنسية أو أعمال الجنس
 
-- نطاق ترددي عال: تنزيل المواقع أو مواقع مشاركة الصور أو مضيفي النظير إلى النظير
+- النطاق الترددي العالي: تنزيل المواقع أو مواقع مشاركة الصور أو مضيفي نظير إلى نظير
 
-- المسؤولية القانونية: المواقع التي تتضمن صور إساءة معاملة الأطفال، أو الترويج لأنشطة غير قانونية، أو تعزيز الانتحال أو الغش في المدرسة، أو التي تعزز الأنشطة الضارة
+- المسؤولية القانونية: المواقع التي تتضمن صور إساءة معاملة الأطفال، أو الترويج للأنشطة غير القانونية، أو تعزيز المسؤولية القانونية أو خداع المدرسة، أو التي تعزز الأنشطة الضارة
 
-- الترفيه: المواقع التي توفر غرف محادثة مستندة إلى الويب أو الألعاب عبر الإنترنت أو البريد الإلكتروني المستند إلى الويب أو الشبكات الاجتماعية
+- الترفيه: المواقع التي توفر غرف المحادثة المستندة إلى الويب أو الألعاب عبر الإنترنت أو البريد الإلكتروني المستند إلى الويب أو الشبكات الاجتماعية
 
-- غير تصنيف: المواقع التي ليس لها محتوى أو المواقع المسجلة حديثا
+- غير مصنف: المواقع التي لا تحتوي على محتوى أو المسجلة حديثا
 
-لا تكون كل مواقع الويب الموجودة في هذه الفئات ضارة، ولكنها قد تسبب مشاكل للشركة بسبب لوائح التوافق أو استخدام النطاق الترددي أو مشاكل أخرى. بالإضافة إلى ذلك، يمكنك إنشاء نهج للتدقيق فقط للحصول على فهم أفضل حول ما إذا كان يجب على فريق الأمان حظر أي فئات موقع ويب.
+ليست كل مواقع الويب في هذه الفئات ضارة، ولكنها قد تشكل مشكلة لشركتك بسبب لوائح التوافق أو استخدام النطاق الترددي أو مخاوف أخرى. بالإضافة إلى ذلك، يمكنك إنشاء نهج للتدقيق فقط للحصول على فهم أفضل لما إذا كان يجب على فريق الأمان حظر أي فئات لموقع ويب.
 
-تتوفر تصفية محتوى ويب على مستعرضات الويب الرئيسية، مع الكتل التي يتم تنفيذها بواسطة Windows Defender SmartScreen (Microsoft Edge) وحماية الشبكة (Chrome وFirefox وSواهم وأوبرا). لمزيد من المعلومات، راجع [المتطلبات الأساسية لتصفية محتوى الويب](../defender-endpoint/web-content-filtering.md#prerequisites).
+تتوفر تصفية محتوى الويب على مستعرضات الويب الرئيسية، مع الكتل التي يتم تنفيذها بواسطة Windows Defender SmartScreen (Microsoft Edge) وحماية الشبكة (Chrome وFirefox وFirefox وFireed و Opera). لمزيد من المعلومات، راجع [المتطلبات الأساسية لتصفية محتوى الويب](../defender-endpoint/web-content-filtering.md#prerequisites).
 
-### <a name="to-set-up-web-content-filtering"></a>لإعداد تصفية محتوى الويب
+### <a name="to-set-up-web-content-filtering"></a>لإعداد تصفية محتوى ويب
 
-1. في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)**)، اختر الإعدادات** >  **تصفية المحتوىWeb** > **+ إضافة نهج**.
+1. في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، اختر **الإعدادات** >  **Web content filtering** > **+ Add policy**.
 
-2. حدد اسما ووصفا لن نهجك.
+2. حدد اسما ووصفا لنهجك.
 
-3. حدد الفئات التي تريد حظرها. استخدم أيقونة التوسع لتوسيع كل فئة أصل بالكامل وتحديد فئات محتوى ويب معينة.
+3. حدد فئات لحظرها. استخدم أيقونة التوسيع لتوسيع كل فئة أصل بالكامل وتحديد فئات محتوى ويب معينة.
 
-   لإعداد نهج التدقيق فقط الذي لا يمنع أي مواقع ويب، لا تحدد أي فئات.
+   لإعداد نهج للتدقيق فقط لا يمنع أي مواقع ويب، لا تحدد أي فئات.
 
-   لا تحدد **غير محدد**.
+   لا تحدد **"غير مصنف".**
 
-4. حدد نطاق النهج عن طريق تحديد مجموعات الأجهزة لتطبيق النهج. سيتم منع الأجهزة الموجودة في مجموعات الأجهزة المحددة فقط من الوصول إلى مواقع الويب في الفئات المحددة.
+4. حدد نطاق النهج عن طريق تحديد مجموعات الأجهزة لتطبيق النهج. سيتم منع الأجهزة في مجموعات الأجهزة المحددة فقط من الوصول إلى مواقع الويب في الفئات المحددة.
 
-5. راجع الملخص واحفظ النهج. قد يستغرق تحديث النهج ساعتين تقريبا لتطبيقه على أجهزتك المحددة.
+5. راجع الملخص واحفظ النهج. قد يستغرق تحديث النهج ما يصل إلى ساعتين لتطبيقه على أجهزتك المحددة.
 
 > [!TIP]
-> لمعرفة المزيد حول تصفية محتوى الويب، راجع [تصفية محتوى ويب](../defender-endpoint/web-content-filtering.md).
+> لمعرفة المزيد حول تصفية محتوى ويب، راجع [تصفية محتوى ويب](../defender-endpoint/web-content-filtering.md).
 
 ## <a name="view-and-edit-other-settings-in-the-microsoft-365-defender-portal"></a>عرض الإعدادات الأخرى وتحريرها في مدخل Microsoft 365 Defender
 
-بالإضافة إلى سياسات الأمان المطبقة على الأجهزة، هناك إعدادات أخرى يمكنك عرضها وتحريرها في Defender for Business. على سبيل المثال، يمكنك تحديد المنطقة الزمنية التي يجب استخدامها، كما يمكنك تشغيل الأجهزة (أو إيقاف تشغيلها). 
+بالإضافة إلى نهج الأمان التي يتم تطبيقها على الأجهزة، هناك إعدادات أخرى يمكنك عرضها وتحريرها في Defender for Business. على سبيل المثال، يمكنك تحديد المنطقة الزمنية التي يجب استخدامها، ويمكنك إلحاق (أو إلغاء إلحاق) الأجهزة. 
 
 > [!NOTE]
-> قد ترى إعدادات في المستأجر أكبر من تلك المذكورة في هذه المقالة. تسلط هذه المقالة الضوء على أهم الإعدادات التي يجب مراجعتها في Defender for Business.
+> قد ترى المزيد من الإعدادات في المستأجر أكثر مما هو مدرج في هذه المقالة. تسلط هذه المقالة الضوء على أهم الإعدادات التي يجب مراجعتها في Defender for Business.
 
-### <a name="settings-to-review-for-defender-for-business"></a>الإعدادات مراجعة ل Defender for Business
+### <a name="settings-to-review-for-defender-for-business"></a>الإعدادات المراجعة ل Defender for Business
 
-يصف الجدول التالي الإعدادات التي تريد عرضها (والتحرير إذا لزم الأمر) في Defender for Business.
+يصف الجدول التالي الإعدادات لعرض (وإذا لزم الأمر، تحرير) في Defender for Business.
 
 <br/><br/>
 
-| الفئة | الإعداد | الوصف |
+| الفئة | اعداد | الوصف |
 |:---|:---|:---|
-| **مركز الأمان** | **المنطقة الزمنية** | حدد المنطقة الزمنية التي سيتم استخدامها في التواريخ والأزمنة المعروضة في الأحداث، والتهديدات المكتشفة، والتحري التلقائي & المعالجة. يمكنك إما استخدام UTC أو المنطقة الزمنية المحلية (*مستحسن*).  |
-| **Microsoft 365 Defender** | **الحساب** | اشاهد التفاصيل، مثل مكان تخزين بياناتك وم ID المستأجر وم ID الخاص بك للمؤسسة (المؤسسة). |
-| **Microsoft 365 Defender**  | **ميزات المعاينة**  | قم تشغيل ميزات المعاينة لتجرب الميزات القادمة والإمكانات الجديدة. يمكنك أن تكون من بين أول من يمكنه معاينة الميزات الجديدة وتقديم الملاحظات. |
-| **نقاط النهاية**  | **إعلامات البريد الإلكتروني** | إعداد قواعد إعلام البريد الإلكتروني أو تحريرها. عند اكتشاف نقاط الضعف أو إنشاء تنبيه، سيتلقى المستلمون المحددون في قواعد إعلام البريد الإلكتروني رسالة بريد إلكتروني. [تعرف على المزيد حول إعلامات البريد الإلكتروني](mdb-email-notifications.md). |
-| **نقاط النهاية**   | **إدارة الأجهزة** >  **الboarding** | الأجهزة المجهزة ل Defender for Business باستخدام برنامج نصي قابل للتنزيل. لمعرفة المزيد، راجع [الأجهزة المجهزة على Microsoft Defender for Business](mdb-onboard-devices.md).   |  
-| **نقاط النهاية**  |  **إدارة الأجهزة** >  **إيقاف التشغيل** | أجهزة Offboard (إزالة) من Defender for Business. عند إيقاف تشغيل جهاز، لن يرسل البيانات إلى Defender for Business، ولكن يتم الاحتفاظ بالبيانات التي تم تلقيها قبل إيقاف التشغيل. لمعرفة المزيد، راجع [إيقاف تشغيل جهاز](mdb-onboard-devices.md#offboarding-a-device).  |
+| **مركز الأمان** | **المنطقة الزمنية** | حدد المنطقة الزمنية التي سيتم استخدامها للتواريخ والأوقات المعروضة في الحوادث والتهديدات المكتشفة والتحقيق التلقائي & المعالجة. يمكنك إما استخدام التوقيت العالمي المتفق عليه أو المنطقة الزمنية المحلية (*مستحسن*).  |
+| **Microsoft 365 Defender** | **حساب** | عرض التفاصيل، مثل مكان تخزين بياناتك ومعرف المستأجر ومعرف مؤسستك (المؤسسة). |
+| **Microsoft 365 Defender**  | **ميزات المعاينة**  | قم بتشغيل ميزات المعاينة لتجربة الميزات القادمة والقدرات الجديدة. يمكنك أن تكون من بين أول من يقوم بمعاينة الميزات الجديدة وتقديم الملاحظات. |
+| **النهايه**  | **إعلامات البريد الإلكتروني** | إعداد قواعد إعلام البريد الإلكتروني أو تحريرها. عند اكتشاف الثغرات الأمنية أو إنشاء تنبيه، سيتلقى المستلمون المحددون في قواعد إعلام البريد الإلكتروني رسالة بريد إلكتروني. [تعرف على المزيد حول إعلامات البريد الإلكتروني](mdb-email-notifications.md). |
+| **النهايه**   | **إدارة** >  الأجهزة **الإلحاق** | إلحاق الأجهزة ب Defender for Business باستخدام برنامج نصي قابل للتنزيل. لمعرفة المزيد، راجع [إلحاق الأجهزة Microsoft Defender für Unternehmen](mdb-onboard-devices.md).   |  
+| **النهايه**  |  **إدارة** >  الأجهزة **إيقاف الإلحاق** | إيقاف تشغيل (إزالة) الأجهزة من Defender for Business. عند إيقاف تشغيل جهاز، فإنه لم يعد يرسل البيانات إلى Defender for Business، ولكن يتم الاحتفاظ بالبيانات التي تم تلقيها قبل الإلحاق. لمعرفة المزيد، راجع ["إيقاف تشغيل الجهاز](mdb-onboard-devices.md#offboarding-a-device)".  |
 
-### <a name="access-your-settings-in-the-microsoft-365-defender-portal"></a>الوصول إلى الإعدادات في مدخل Microsoft 365 Defender
+### <a name="access-your-settings-in-the-microsoft-365-defender-portal"></a>الوصول إلى إعداداتك في مدخل Microsoft 365 Defender
 
-1. انتقل إلى Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/))، ثم سجل الدخول.
+1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com/](https://security.microsoft.com/))، وسجل الدخول.
 
-2. حدد **الإعدادات**، ثم حدد فئة (مثل مركز الأمان أو **Microsoft 365 Defender أو** **نقاط النهاية**).
+2. حدد **الإعدادات**، ثم حدد فئة (مثل **مركز الأمان** **أو Microsoft 365 Defender** أو **نقاط النهاية**).
 
-3. في قائمة الإعدادات، حدد عنصر لعرضه أو تحريره.
+3. في قائمة الإعدادات، حدد عنصرا لعرضه أو تحريره.
 
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-تابع إلى واحدة أو أكثر من المهام التالية:
+تابع إلى مهمة واحدة أو أكثر من المهام التالية:
 
-- [بدء استخدام Microsoft Defender for Business](mdb-get-started.md)
-
-- [إدارة الأجهزة في Microsoft Defender for Business](mdb-manage-devices.md)
-
-- [عرض الأحداث وإدارتها في Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
-- [عرض أو تحرير السياسات في Microsoft Defender for Business](mdb-view-edit-policies.md)
+- [بدء استخدام Microsoft Defender für Unternehmen](mdb-get-started.md)
+- [إدارة الأجهزة في Microsoft Defender für Unternehmen](mdb-manage-devices.md)
+- [عرض الحوادث وإدارتها في Microsoft Defender für Unternehmen](mdb-view-manage-incidents.md)
+- [عرض النهج أو تحريرها في Microsoft Defender für Unternehmen](mdb-view-edit-policies.md)

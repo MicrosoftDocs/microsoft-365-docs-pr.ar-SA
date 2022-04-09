@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: اتبع هذه الإرشادات لإنشاء موعد وتعيين موظف من خلال تطبيق Microsoft Bookings.
-ms.openlocfilehash: d30d9ba7fe00305ef370a554fc53ebebc5b5d284
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 0428c697def774a67384b14c4d9b2c48e2851794
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715308"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747237"
 ---
 # <a name="create-a-manual-booking"></a>إنشاء حجز يدوي
 
@@ -25,7 +25,7 @@ ms.locfileid: "64715308"
 
 1. في Microsoft 365، حدد مشغل التطبيق، ثم حدد **Bookings**.
 
-   ![صورة Bookings في مشغل التطبيق.](../media/bookings-applauncher.png)
+    :::image type="content" source="../media/bookings-applauncher.png" alt-text="Bookings في مشغل التطبيق.":::
 
 1. في جزء التنقل، حدد **"الحجز الجديد** **للتقويم**\>".
 
@@ -49,4 +49,4 @@ ms.locfileid: "64715308"
 
    فيما يلي مثال على البريد الإلكتروني للتذكير الذي سيتلقىه العميل:
 
-:::image type="content" source="../media/bookings-confirmed-email.png" alt-text="لقطة شاشة: مثال على تأكيد البريد الإلكتروني من حجز يدوي":::
+   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="لقطة شاشة: مثال على تأكيد البريد الإلكتروني من حجز يدوي":::

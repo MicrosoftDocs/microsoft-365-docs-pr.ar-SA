@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: اتبع هذه الإرشادات لإنشاء صفحة "معلومات حولنا"، بما في ذلك اسم العمل والعنوان ورقم الهاتف وعنوان URL لموقع الويب والشعار وساعات العمل في Microsoft Bookings.
-ms.openlocfilehash: 9931a5c00147a6f6b9b0cd4ef9550d783b8771fd
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 5d0505b0b23515bef0bdcc94206d8f3b856479c4
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715330"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746843"
 ---
 # <a name="enter-your-business-information"></a>إدخال معلومات العمل
 
@@ -25,7 +25,7 @@ ms.locfileid: "64715330"
 
 سيتم عرض المعلومات التي توفرها هنا على الصفحة التي يستخدمها العملاء والعملاء لحجز المواعيد (المعروفة باسم صفحة الحجز) وفي الرسائل والتذكيرات المرسلة إليهم بواسطة Bookings. وفيما يلي مثال على هذه المعلومات في صفحة الحجز.
 
-   ![صورة لمثال صفحة معلومات العمل في Microsoft Bookings.](../media/bookings-business-info.png)
+   ![صورة لمثال صفحة معلومات العمل في Microsoft Bookings.](../media/bookings-business-info-2.png)
 
 > [!NOTE]
 > للبدء، راجع ["الحصول على حق الوصول إلى Microsoft Bookings](get-access.md)". لتشغيل Bookings أو إيقاف تشغيلها، راجع [تشغيل Bookings أو إيقاف تشغيلها لمؤسستك](turn-bookings-on-or-off.md).
@@ -34,7 +34,7 @@ ms.locfileid: "64715330"
 
 1. في Microsoft 365، حدد مشغل التطبيق، ثم حدد **Bookings**.
 
-1. في جزء التنقل، حدد **معلومات calendarBusiness**  ->  في الجزء الأيمن.
+1. في جزء التنقل، حدد **معلومات calendarBusiness**  >  في الجزء الأيمن.
 
 1. في قسم **التفاصيل الأساسية**، أدخل اسم عملك وعنوانك ورقم هاتفك الذي تريد استخدامه لتقويم Bookings.
 
@@ -66,11 +66,11 @@ ms.locfileid: "64715330"
 
 1. حدد **+** لإنشاء صف جديد ل الخميس.
 
-   ![صورة لواجهة مستخدم ساعات العمل.](../media/bookings-split-shift.png)
+   ![صورة لواجهة مستخدم ساعات العمل.](../media/bookings-split-shift-1.png)
 
 1. في الصف الجديد، حدد 2:30 مساء. لوقت البدء و6:00 مساء لوقت الانتهاء.
 
-   ![صورة لواجهة مستخدم ساعات العمل مع الساعات المضافة.](../media/bookings-split-shift-hours.png)
+   ![صورة لواجهة مستخدم ساعات العمل مع الساعات المضافة.](../media/bookings-split-shift-hours-1.png)
 
 1. حدد "حفظ".
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 description: استخدم هذه الصفحة لإنشاء قائمة فريق العمل وإدارة تفاصيل أعضاء فريق العمل مثل الاسم ورقم الهاتف وعنوان البريد الإلكتروني.
-ms.openlocfilehash: 2df48efe321a91c1eb2df712e954033eb28357aa
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ca938acf4bfb567d366c7ffd684e8bce8c9eea74
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713922"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746778"
 ---
 # <a name="add-staff-to-bookings"></a>إضافة فريق عمل إلى Bookings
 
@@ -58,7 +58,7 @@ ms.locfileid: "64713922"
 
     على سبيل المثال، إذا كان لدى أحد أعضاء فريق العمل اجتماع فريق أو موعد شخصي مجدول في الساعة 3 مساء يوم الأربعاء، فسيظهر Bookings أن عضو فريق العمل غير متوفر ليتم حجزه في تلك الفترة الزمنية. سيظهر هذا الوقت مشغولا أو مبدئيا في طريقة عرض التقويم Bookings، كما هو موضح في المثال أدناه.
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="طريقة عرض لتقويم Bookings.":::
+    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="طريقة عرض لتقويم Bookings.":::
 
 > [!IMPORTANT]
 > نوصي بشدة بترك هذا الإعداد قيد التشغيل (يتم تشغيله بشكل افتراضي) لتجنب الحجوزات المزدوجة وتحسين توفر أعضاء فريق العمل.

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 21dbcdebbb640e15ef4023c0bf0cfdaf4739fdb7
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: d943f91685e3ee9d6bf12c3a47fbf68e5966dc9d
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64686936"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738496"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>استخدام الاستعلامات المشتركة في التتبع المتقدم
 
@@ -77,6 +77,7 @@ ms.locfileid: "64686936"
 
 :::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="الاستعلام الجديد الذي على وشك الحفظ في مدخل Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
+يتم تجميع استعلامات المجتمع في مجلدات مثل *الحملات*، *والتجميع*، *والتهرب الدفاعي*، وما إلى ذلك. يتم توفير مزيد من المعلومات حول الاستعلام كتعليقات سطرية في الاستعلام نفسه. 
 
 >[!tip]
 >يوفر باحثو أمان Microsoft أيضا استعلامات تتبع متقدمة يمكنك استخدامها لتحديد الأنشطة والمؤشرات المرتبطة بالتهديدات الناشئة. يتم توفير هذه الاستعلامات كجزء من تقارير [تحليلات المخاطر](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) في Microsoft 365 Defender.

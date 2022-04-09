@@ -406,7 +406,7 @@
 ### [الكشف عن نقطة النهاية والاستجابة لها]()
 #### [نظرة عامة حول الكشف عن نقطة النهاية والاستجابة](overview-endpoint-detection-response.md)
 #### [لوحة معلومات عمليات الأمان](security-operations-dashboard.md)
-#### [إرسال ملفات مريبة](admin-submissions-mde.md)
+#### [إرسال ملفات](admin-submissions-mde.md)
 #### [قائمة انتظار الأحداث]()
 ##### [عرض قائمة انتظار الأحداث وتنظيمها](view-incidents-queue.md)
 ##### [إدارة الأحداث](manage-incidents.md)

@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: إرشادات لإدخال معلومات عروض الخدمة، بما في ذلك اسم الخدمة ووصفها وموقعها ومدتها وأسعارها. يمكنك أيضا وضع علامة على الموظفين المؤهلين لتوفير الخدمة.
-ms.openlocfilehash: 7d4bd5d8e75610785176f8c527576b0609cf71a4
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 576babc8a1cc64734c3d11f761b3b848d3fb2639
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714384"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64746656"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>تحديد عروض الخدمة في Bookings
 
@@ -89,8 +89,6 @@ ms.locfileid: "64714384"
 
 4. في صفحة **خيارات التوفر** ، يمكنك الاطلاع على الخيارات التي حددتها من **صفحة Booking** لنهج الجدولة ومدى توفر فريق العمل لديك. لمزيد من المعلومات، راجع [تعيين نهج الجدولة](set-scheduling-policies.md).
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="مثال على تعيين الحد الأقصى للحضور في Bookings.":::
-
 5. **السعر الافتراضي**  هذا هو السعر الذي سيتم عرضه على صفحة Self-Service. إذا **لم يتم تحديد السعر** ، فلن يظهر أي سعر أو مرجع للتكلفة أو التسعير.
 
 6. **تلاحظ** يظهر هذا الحقل في حدث الحجز للموظفين الذين تم حجزهم، بالإضافة إلى الحدث الذي يظهر على علامة التبويب "التقويم" في تطبيق الويب Bookings.
@@ -101,7 +99,7 @@ ms.locfileid: "64714384"
 
 8. في صفحة **التذكيرات والتأكيدات** ، يمكنك إعداد التذكيرات والإعلامات التي ترسلها. يتم إرسال التذكيرات والإعلامات إلى العملاء أو أعضاء فريق العمل أو كليهما، في وقت محدد قبل الموعد. يمكن إنشاء رسائل متعددة لكل موعد، وفقا لتفضيلاتك.
 
-   :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="رسالة بريد إلكتروني لتأكيد من Bookings.":::
+   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="رسالة بريد إلكتروني لتأكيد من Bookings.":::
 
    يمكنك تضمين أي نص إضافي تريده هنا، مثل معلومات حول إعادة الجدولة أو ما يجب على العملاء إحضاره للموعد. فيما يلي مثال على النص المخصص الذي تمت إضافته إلى رسالة التأكيد الإلكتروني الأصلية، كما يظهر في **حقل "معلومات إضافية" ل "تأكيد البريد الإلكتروني** ":
 

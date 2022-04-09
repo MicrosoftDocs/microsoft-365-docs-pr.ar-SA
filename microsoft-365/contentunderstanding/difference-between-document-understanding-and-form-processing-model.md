@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: تعرف على الاختلافات الرئيسية بين نموذج فهم المستند ونموذج معالجة النموذج.
-ms.openlocfilehash: ee51b60b69bc2ec489f074a73555cbc6f1a17143
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a3f36adbf261ef290aada8efe1c0643ee1ce570f
+ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664624"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64738400"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>الاختلافات بين فهم المستندات ونماذج معالجة النماذج 
 
@@ -85,6 +85,7 @@ ms.locfileid: "64664624"
 | تكلفة المعاملات | يستخدم أرصدة الذكاء الاصطناعي Builder.<br>يمكن شراء الأرصدة على دفعات من 1M.<br>يتم تضمين أرصدة 1M عند شراء أكثر من 300 ترخيص SharePoint Syntex.<br>سوف تسمح أرصدة 1M بمعالجة 2000 صفحة ملف.<br>| N/A |
 | القدرات | يستخدم بيئة Power Platform الافتراضية (البيئات المخصصة مع قاعدة بيانات Dataverse المدعومة). | لا توجد قيود على السعة.|
 | اللغات المدعومة| دعم اللغة لأكثر من [73 لغة](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | تعمل النماذج على جميع لغات الأبجدية اللاتينية. بالإضافة إلى الإنجليزية: الألمانية والسويدية والفرنسية والإسبانية والإيطالية والبرتغالية.|
+
 
 ## <a name="see-also"></a>انظر أيضاً
 

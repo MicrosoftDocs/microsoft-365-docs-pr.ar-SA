@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: قم بتغيير نسق اللون لصفحة الحجز في تطبيق Microsoft Bookings.
-ms.openlocfilehash: 4fd33d39c9fda4588d24b51a70d589965fece28f
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: bd6c3fc601800cdfca93e9e1a6adc494df1bd67e
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713878"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747149"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>تخصيص صفحة الحجز ونشرها
 
@@ -37,7 +37,7 @@ ms.locfileid: "64713878"
 
     تبدو صفحة الحجز الداخلية كما يلي:
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="صفحة Bookings.":::
+    :::image type="content" source="media/bookings-internal-page-1.png" alt-text="صفحة Bookings.":::
 
 - **التحكم في الوصول إلى صفحة الحجز: لن يسمح طلب حساب Microsoft 365 من مؤسستي لحجز** تحديد هذا الخيار إلا لأولئك الأشخاص داخل مؤسستك بعرض صفحتك أو حجز أي خدمات. يتم تخويل الوصول إلى الصفحة عبر عمليات التحقق من بيانات الاعتماد للتأكد من أن الزائر ينتمي إلى حساب داخل المستأجر.
 
@@ -55,7 +55,7 @@ ms.locfileid: "64713878"
 
 بمجرد نشر صفحة الحجز، سيرى العملاء صفحة الحجز حيث يمكنهم حجز المواعيد معك. تبدو صفحة الحجز التي تواجه العميل كما يلي:
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="صفحة الحجز التي تواجه العميل.":::
+:::image type="content" source="media/bookings-self-service-2.png" alt-text="صفحة الحجز التي تواجه العميل.":::
 
 ## <a name="publish-the-booking-page"></a>نشر صفحة الحجز
 
@@ -75,4 +75,4 @@ ms.locfileid: "64713878"
 
 ## <a name="unpublish-the-booking-page"></a>إلغاء نشر صفحة الحجز
 
- - لإلغاء نشر صفحة الحجز، انتقل إلى صفحة Booking وحدد **إلغاء النشر**.
+لإلغاء نشر صفحة الحجز، انتقل إلى صفحة Booking وحدد **إلغاء النشر**.

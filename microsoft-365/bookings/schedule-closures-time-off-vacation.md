@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: قم بجدولة عمليات إغلاق المكتب وإجازة الموظفين من تقويم Bookings بحيث يتم وضع علامة على الموظفين على أنهم غير متاحين للحجوزات خلال الأوقات المحددة.
-ms.openlocfilehash: 138079643c9fbc86918a071f935ebe96d7989e68
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 1f20a28fa56f57680c547981f1c4d8357d75728e
+ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714758"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "64747281"
 ---
 # <a name="schedule-business-closures-time-off-and-vacation-time"></a>جدولة عمليات إغلاق العمل والإجازة ووقت العطلة
 
@@ -23,9 +23,11 @@ ms.locfileid: "64714758"
 
 في بعض الأحيان، قد ترغب في إغلاق شركتك للعطلات أو أحداث الفريق، أو سيحتاج موظفوك إلى إجازة عندما يمرضون أو في عطلة أو لا يتوفرون لأسباب أخرى. يمكنك جدولة إجازة من تقويم Microsoft Bookings، ولن يكون الموظف متوفرا للحجوزات خلال الوقت المحدد. بمجرد إعادة فتح الشركة أو عودة الموظفين إلى العمل، سيتم إدراج الجميع في صفحة الحجز وفقا لساعات عملهم المحددة.
 
-شاهد هذا الفيديو أو اتبع الخطوات أدناه لجدولة عمليات إغلاق العمل أو إيقاف تشغيل الموظف.
+## <a name="watch-enter-business-hours-and-time-off-for-employees"></a>المراقبة: أدخل ساعات العمل والإجازة للموظفين
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TxDC]
+
+جدولة عمليات إغلاق العمل أو إيقاف تشغيل الموظف.
 
 ## <a name="schedule-ad-hoc-business-closures"></a>جدولة عمليات إغلاق الأعمال المخصصة
 
@@ -35,7 +37,7 @@ ms.locfileid: "64714758"
 
 1. في جزء التنقل العلوي، حدد **"إضافة إجازة**".
 
-   ![صورة Bookings زر طريقة عرض التقويم ووقت الإيقاف.](../media/bookings-calendar-timeoff.png)
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings زر طريقة عرض التقويم ووقت الإجازة.":::
 
 1. املأ التفاصيل، بما في ذلك العنوان وتاريخ البدء والانتهاء والأوقات والموقع والملاحظات الإضافية.
 
@@ -53,13 +55,13 @@ ms.locfileid: "64714758"
 
 1. في Microsoft 365، حدد مشغل التطبيق، ثم حدد **Bookings**.
 
-   ![صورة مشغل التطبيق.](../media/bookings-applauncher.png)
+   :::image type="content" source="../media/bookings-applauncher.png" alt-text="مشغل التطبيق.":::
 
 1. اختر تقويمك.
 
 1. في جزء التنقل العلوي، حدد **"إضافة إجازة**".
 
-   ![صورة Bookings زر طريقة عرض التقويم ووقت الإيقاف.](../media/bookings-calendar-timeoff.png)
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings زر طريقة عرض التقويم ووقت الإجازة.":::
 
 1. املأ التفاصيل، بما في ذلك العنوان وتاريخ البدء والانتهاء والأوقات والموقع والمزيد من الملاحظات. إذا كان الموظف سيختفي ليوم كامل أو لعدة أيام، فحدد **حدث اليوم كله**.
 
