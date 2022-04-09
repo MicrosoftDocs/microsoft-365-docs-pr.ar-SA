@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 15b540f9993e8f2163f464379aca9496bec4cca7
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 70f75fd5986a5d837e33b3caf0b7cb23239ddce5
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665371"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64731581"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>الاستجابة للحوادث باستخدام Microsoft 365 Defender
 
@@ -37,9 +37,6 @@ ms.locfileid: "64665371"
 
 **ينطبق على:**
 - Microsoft 365 Defender
-
-> هل تريد تجربة Microsoft 365 Defender؟ يمكنك [تقييمه في بيئة معملية](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) أو [تشغيل مشروعك التجريبي في الإنتاج](m365d-pilot.md?ocid=cx-evalpilot).
->
 
 الحادث في Microsoft 365 Defender هو مجموعة من التنبيهات المرتبطة والبيانات المرتبطة التي تشكل قصة الهجوم.
 

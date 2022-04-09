@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: b8f15212916566e169efa63556b897600f7092a3
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 9000a56bb0bf4819f4fc2e9bf7553a19772efe66
+ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705221"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64730869"
 ---
 # <a name="step-6-monitor-device-risk-and-compliance-to-security-baselines"></a>الخطوة 6. مراقبة مخاطر الأجهزة وتوافقها مع أساسات الأمان
 
@@ -51,9 +51,9 @@ ms.locfileid: "64705221"
 
 مع نشر Microsoft Defender لنقطة النهاية، يمكنك الاستفادة من إشارات مخاطر التهديد. يسمح لك هذا بحظر الوصول إلى الأجهزة استنادا إلى درجة المخاطر الخاصة بها. توصي Microsoft بالسماح بالوصول إلى الأجهزة التي تحتوي على درجة مخاطر متوسطة أو أقل.
 
-بالنسبة لنظامي التشغيل Android وiOS/iPadOS، يمكن استخدام إشارات التهديد ضمن نهج حماية التطبيقات (APP). للحصول على معلومات حول تكوين هذا، راجع [إنشاء نهج حماية التطبيق وتعيينه لتعيين مستوى مخاطر الجهاز](/mem/intune/protect/advanced-threat-protection-configure).
+بالنسبة لنظامي التشغيل Android وiOS/iPadOS، يمكن استخدام إشارات التهديد ضمن نهج حماية التطبيقات (APP). للحصول على معلومات حول تكوين هذا، راجع [إنشاء نهج حماية التطبيق وتعيينه لتعيين مستوى مخاطر الجهاز](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
 
-بالنسبة إلى جميع الأنظمة الأساسية، يمكنك تعيين مستوى المخاطر في نهج توافق الأجهزة الحالية. راجع [إنشاء نهج التوافق وتعيينه لتعيين مستوى مخاطر الجهاز](/mem/intune/protect/advanced-threat-protection-configure).
+بالنسبة إلى جميع الأنظمة الأساسية، يمكنك تعيين مستوى المخاطر في نهج توافق الأجهزة الحالية. راجع [إنشاء نهج وصول مشروط](/mem/intune/protect/advanced-threat-protection-configure#create-a-conditional-access-policy).
 
 ## <a name="deploy-security-baselines-and-monitor-compliance-to-these-settings"></a>نشر خطوط الأمان الأساسية ومراقبة الامتثال لهذه الإعدادات
 

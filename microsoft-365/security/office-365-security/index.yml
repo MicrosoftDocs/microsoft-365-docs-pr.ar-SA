@@ -1,0 +1,129 @@
+### YamlMime:Landing
+title: دليل Microsoft Defender لـ Office 365
+summary: تعرف على حلول الأمان القوية في Defender لـ Office 365 لحماية البريد الإلكتروني وأدوات التعاون بشكل أفضل.
+metadata:
+  title: وثائق الأمان Microsoft Defender لـ Office 365
+  description: تعرف على حلول الأمان القوية في Defender لـ Office 365 لحماية البريد الإلكتروني وأدوات التعاون بشكل أفضل.
+  services: office-365-security-compliance
+  ms.prod: m365-security
+  ms.technology: mdo
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
+  author: mjcaparas
+  ms.author: macapara
+  ms.date: 04/13/2021
+  ms.localizationpriority: high
+  ms.openlocfilehash: 531e7466c831bef63d29bf7c33ad7bd9de9c3587
+  ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 04/07/2022
+  ms.locfileid: "64705154"
+landingContent:
+- title: Defender لـ Office 365 & Exchange Online Protection
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: نظرة عامة على Office 365 Security
+      url: overview.md
+    - text: الإعداد باستخدام نهج الأمان المعينة مسبقا في EOP وDefender لـ Office 365
+      url: preset-security-policies.md
+- title: بدء استخدام Defender لـ Office 365
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: الحماية من التهديدات
+      url: protect-against-threats.md
+    - text: نهج الأمان التي تم تعيينها مسبقا في EOP و Microsoft Defender لـ Office 365
+      url: preset-security-policies.md
+    - text: أحدث الميزات في Microsoft Defender لـ Office 365
+      url: whats-new-in-defender-for-office-365.md
+- title: تقييم Defender لـ Office 365
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: تجربة Defender لـ Office 365
+      url: try-microsoft-defender-for-office-365.md
+    - text: الترحيل إلى Defender لـ Office 365
+      url: migrate-to-defender-for-office-365.md
+- title: إعداد حماية مصادقة البريد الإلكتروني
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: إعداد SPF للمساعدة في منع الانتحال
+      url: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+    - text: استخدام DKIM للتحقق من صحة البريد الإلكتروني الصادر المرسل من مجالك المخصص
+      url: use-dkim-to-validate-outbound-email.md
+    - text: استخدام DMARC للتحقق من صحة البريد الإلكتروني
+      url: use-dmarc-to-validate-email.md
+- title: إعداد Exchange Online Protection
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: نظرة عامة على Exchange Online Protection
+      url: exchange-online-protection-overview.md
+    - text: الإعدادات الموصى بها لـ EOP والأمان Microsoft Defender لـ Office 365 للإعداد
+      url: recommended-settings-for-eop-and-office365.md
+- title: منع
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: تكوين مستأجر Microsoft 365 لزيادة الأمان
+      url: tenant-wide-setup-for-increased-security.md
+    - text: محلل التكوين في EOP و Defender لـ Office 365
+      url: configuration-analyzer-for-security-policies.md
+    - text: الحصول على رؤى من خلال التدريب على محاكاة الهجومات
+      url: attack-simulation-training-insights.md
+- title: الكشف عن
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: قواعد تدفق البريد (قواعد النقل) في Exchange Online.
+      url: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
+    - text: متعقب المخاطر
+      url: threat-trackers.md
+    - text: التقارير الذكية والرؤى في مركز توافق & الأمان
+      url: reports-and-insights-in-security-and-compliance.md
+- title: تحقيق
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: طرق العرض في مستكشف التهديدات والكشف في الوقت الحقيقي
+      url: threat-explorer-views.md
+    - text: طرق عرض الحملة في Microsoft Defender لـ Office 365
+      url: campaigns.md
+    - text: التحقيق في البريد الإلكتروني الضار الذي تم تسليمه في Office 365
+      url: investigate-malicious-email-that-was-delivered.md
+    - text: عرض تقارير Defender لـ Office 365
+      url: view-reports-for-mdo.md
+- title: التحقيق في EOP
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: إعداد التقارير وتتبع الرسائل في EOP
+      url: reporting-and-message-trace-in-exchange-online-protection.md
+    - text: عرض سجل تدقيق المسؤول
+      url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
+- title: استجابة
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: معالجة البريد الإلكتروني الضار الذي تم تسليمه في Office 365
+      url: remediate-malicious-email-delivered-office-365.md
+    - text: الاستجابة إلى حساب بريد إلكتروني تم اختراقه
+      url: responding-to-a-compromised-email-account.md
+    - text: معالجة قواعد Outlook وهجمات إدخال النماذج المخصصة
+      url: detect-and-remediate-outlook-rules-forms-attack.md
+    - text: إرسال الإيجابيات الخاطئة/السلبيات الخاطئة
+      url: admin-submission.md
+- title: أتمتة
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: كيفية عمل التحقيق والاستجابة التلقائية (AIR) في Defender لـ Office 365
+      url: automated-investigation-response-office.md
+    - text: بدء الاستخدام مع AIR في Defender لـ Office 365
+      url: office-365-air.md
+    - text: معالجة حسابات المستخدمين المخترقة باستخدام AIR
+      url: address-compromised-users-quickly.md
