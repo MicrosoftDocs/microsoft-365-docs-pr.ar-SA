@@ -1,16 +1,24 @@
-- name: M365 Office LTI
+- name: Microsoft 365 LTI
   href: index.md
-- name: عمليات تكامل اللوحة
+- name: إدارة Microsoft OneLTI
+  href: manage-microsoft-one-lti.md
+- name: عمليات تكامل Canvas
   items:
-    - name: استخدام Microsoft OneDrive LTI مع اللوحة
+    - name: استخدام Microsoft OneDrive LTI مع Canvas
       href: onedrive-lti.md
-    - name: استخدام Microsoft Teams مع اللوحة
+    - name: استخدام Microsoft Teams Classes مع Canvas
       href: teams-classes-with-canvas.md
-    - name: استخدام Microsoft Teams الاجتماعات مع اللوحة
+    - name: استخدام اجتماعات Microsoft Teams مع Canvas
       href: teams-meetings-with-canvas.md
-- name: عمليات تكامل Blackboard
+- name: تكاملات Blackboard
   items:
     - name: استخدام Microsoft OneDrive LTI مع Blackboard
       href: onedrive-lti-blackboard.md
-    - name: استخدام Microsoft Teams مع Blackboard تعرف على Ultra
+    - name: استخدام Microsoft Teams Classes مع Blackboard Learn Ultra
       href: teams-classes-with-blackboard.md
+- name: تكاملات Moodle
+  items:
+    - name: إعداد المكون الإضافي لـ Moodle وتكوينه
+      href: moodle-plugin-configuration.md
+    - name: استخدام Microsoft Teams Classes واجتماعاته مع Moodle
+      href: teams-classes-meetings-with-moodle.md

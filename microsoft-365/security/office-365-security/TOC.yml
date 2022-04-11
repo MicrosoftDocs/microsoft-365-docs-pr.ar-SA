@@ -218,6 +218,12 @@
           href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
     - name: تحقيق
       items:
+        - name: دليل عمليات الأمان Defender لـ Office 365
+          items:
+            - name: دليل عمليات الأمان Defender لـ Office 365
+              href: mdo-sec-ops-guide.md
+            - name: إدارة الحوادث والتنبيهات من Defender لـ Office 365 في Microsoft 365 Defender
+              href: mdo-sec-ops-manage-incidents-and-alerts.md
         - name: طرق عرض مستكشف المخاطر
           href: threat-explorer-views.md
         - name: طرق عرض الحملة
