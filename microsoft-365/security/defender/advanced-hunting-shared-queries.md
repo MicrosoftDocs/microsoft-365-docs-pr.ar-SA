@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d943f91685e3ee9d6bf12c3a47fbf68e5966dc9d
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 2e86d733304eeaa0e5e16f3ce1bfde87c21258d4
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738496"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64761595"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>استخدام الاستعلامات المشتركة في التتبع المتقدم
 
@@ -39,7 +39,7 @@ ms.locfileid: "64738496"
 ضمن علامة التبويب "استعلامات" في التتبع المتقدم، يمكنك العثور على القوائم المنسدلة **للاستعلامات المشتركة** **والاستعلامات الخاصة بي** **واستعلامات المجتمع**. يمكنك تحديد سهم متجه لأسفل لتوسيع قائمة.
 
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="معلومات الاستعلامات المشتركة في مدخل Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="الاستعلامات المشتركة والاستعلامات الخاصة بي واستعلامات المجتمع في مدخل Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
 
 
 
@@ -63,7 +63,7 @@ ms.locfileid: "64738496"
 ## <a name="delete-or-rename-a-query"></a>حذف استعلام أو إعادة تسميته
 1. حدد النقاط الثلاث إلى يمين استعلام تريد إعادة تسميته أو حذفه.
 
-    :::image type="content" source="../../media/shared-query-3.png" alt-text="خيارات استعلام مشترك في صفحة التتبع المتقدم في مدخل Microsoft 365 Defender" lightbox="../../media/shared-query-3.png":::
+    :::image type="content" source="../../media/advanced-hunting-del-save-query.png" alt-text="إعادة تسمية استعلام أو حذفه في صفحة التتبع المتقدم في مدخل Microsoft 365 Defender" lightbox="../../media/advanced-hunting-del-save-query.png":::
 
 2. حدد **"حذف** " وتأكد من الحذف. أو حدد **"إعادة تسمية"** وقم بتوفير اسم جديد للاستعلام.
 
@@ -75,7 +75,7 @@ ms.locfileid: "64738496"
 
 يمكنك بسهولة العثور على هذه الاستعلامات في القائمة المنسدلة **استعلامات المجتمع** أيضا.
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="الاستعلام الجديد الذي على وشك الحفظ في مدخل Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="استعلامات المجتمع المنظمة حسب المجلد في مدخل Microsoft 365 Defender" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
 يتم تجميع استعلامات المجتمع في مجلدات مثل *الحملات*، *والتجميع*، *والتهرب الدفاعي*، وما إلى ذلك. يتم توفير مزيد من المعلومات حول الاستعلام كتعليقات سطرية في الاستعلام نفسه. 
 

@@ -1,5 +1,5 @@
 ---
-title: الموارد لمساعدتك على تلبية المتطلبات التنظيمية لإدارة المعلومات وإدارة السجلات
+title: موارد لمساعدتك على تلبية المتطلبات التنظيمية لإدارة المعلومات وإدارة السجلات
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,46 +14,46 @@ ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: موارد لمساعدتك على تلبية المتطلبات التنظيمية لإدارة المعلومات والسجلات.
-ms.openlocfilehash: 92f266b18e1aad236958ff97b03ffd5c316f4d05
-ms.sourcegitcommit: 19e16b16f144159b55bb4c544403e3642b69e335
+description: موارد لمساعدتك على تلبية المتطلبات التنظيمية لإدارة المعلومات وإدارة السجلات.
+ms.openlocfilehash: d5f0c2d405d35147a7868635520521134d0ee8f0
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63569074"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759800"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>المتطلبات التنظيمية لإدارة المعلومات وإدارة السجلات
 
->*[Microsoft 365 إرشادات الترخيص لتوافق & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-استخدم الموارد في هذه الصفحة لمساعدتك على تلبية المتطلبات التنظيمية الخاصة بإدارة المعلومات وإدارة السجلات في Microsoft 365. يركز كل قسم من هذا المستند على لائحة واحدة أو أكثر ذات صلة ويتضمن أي إرشادات موجودة أو تقييم من جهة خارجية حول كيفية تكوين Microsoft 365 للمساعدة في تلبية المتطلبات الموضحة.
+استخدم الموارد الموجودة في هذه الصفحة لمساعدتك على تلبية متطلبات تنظيمية محددة لإدارة المعلومات وإدارة السجلات في Microsoft 365. يركز كل قسم من هذا المستند على واحد أو أكثر من اللوائح ذات الصلة ويتضمن أي إرشادات موجودة أو تقييم جهة خارجية لكيفية تكوين Microsoft 365 للمساعدة في المتطلبات الموضحة.
 
-تتوفر هذه الموارد للتنزيل من صفحة موارد حماية البيانات وال الأسئلة [الشائعة](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) والمسودات البيضاء في Service Trust Portal.
+تتوفر هذه الموارد للتنزيل من صفحة ["موارد حماية البيانات" و"الأسئلة المتداولة" و"المستندات التقنية"](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) في Service Trust Portal.
 
 ## <a name="new-zealand-public-records-act"></a>قانون السجلات العامة في نيوزيلندا
 
-**دعم التزامات قانون** السجلات العامة في نيوزيلندا مع Microsoft 365  - [تنزيل التقييم](https://aka.ms/NZPRA)
+**دعم التزامات الامتثال لقانون السجلات العامة في نيوزيلندا مع تقييم Microsoft 365** -  [Download](https://aka.ms/NZPRA)
 
-أحمال العمل القابلة للتطبيق: SharePoint OneDrive و Teams و Exchange
+أحمال العمل القابلة للتطبيق: SharePoint، OneDrive، Teams، Exchange
 
-تم إصدار هذا التقرير في يناير 2021، وقد تم إصداره في شراكة مع Microsoft نيوزيلندا لتقييم قدرات خدمات Microsoft 365 لتسجيل السجلات الإلكترونية وتخزينها وإدارتها، كما هو محدد في: 
+تم إصدار هذا التقرير في يناير 2021 بالشراكة مع Microsoft New Zealand لتقييم قدرات خدمات Microsoft 365 لتسجيل متطلبات السجلات الإلكترونية وتخزينها وإدارتها، كما هو محدد من قبل: 
 
-- قانون السجلات العامة في نيوزيلندا 2005، الذي يحدد إرشادات الاحتفاظ بالمحفوظات العامة وأرشفة السلطة المحلية في نيوزيلندا.
+- قانون السجلات العامة في نيوزيلندا لعام 2005، الذي يحدد إرشادات للحفاظ على المحفوظات العامة وأرشيفات السلطة المحلية في نيوزيلندا.
 
-يساعدك هذا التقرير على فهم كيفية تحقيق جوانب النظام في قانون السجلات العامة في نيوزيلندا 2005 (PRA) عند استخدام Microsoft 365.
+يساعدك هذا التقرير على فهم كيفية إمكانية تحقيق جوانب النظام في قانون السجلات العامة في نيوزيلندا لعام 2005 (PRA) عند استخدام Microsoft 365.
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17a-4(f) وFINRA 4511(c) و CFTC 1.31(c)-(d)
 
-**تقييم Cohasset - Microsoft 365 - قاعدة SEC 17a-4(f) -** -  تخزين غير قابل لتخزين SharePoint و OneDrive و Teams و Exchange و Skype [تنهدم التقييم](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+**Cohasset Assessment - Microsoft 365 - SEC Rule 17a-4(f) - تخزين غير قابل للتغيير SharePoint، OneDrive، Teams، Exchange، وتقييم Skype** -  [Download](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-أحمال العمل القابلة للتطبيق: SharePoint OneDrive و Teams و Exchange و Skype for Business
+أحمال العمل القابلة للتطبيق: SharePoint، OneDrive، Teams، Exchange، Skype for Business
 
-تم إصدار هذا التقرير في نوفمبر 2020، وقد تم إصداره في شراكة مع Cohasset Associates, Inc. (Cohasset) لتقييم إمكانات خدمات Microsoft 365 لتسجيل السجلات الإلكترونية وتخزينها وإدارتها، كما هو محدد من خلال:  
+تم إصدار هذا التقرير في نوفمبر 2020 بالشراكة مع Cohasset Associates, Inc. (Cohasset) لتقييم قدرات خدمات Microsoft 365 لتسجيل المتطلبات الخاصة بالسجلات الإلكترونية وتخزينها وإدارتها، كما هو محدد من قبل:  
 
-- الأوراق المالية Exchange (SEC) في 17 CFR240.17a-4(f)، التي تنظم أعضاء البورصة أو التوسط أو البورصة.  
+- الأوراق المالية و عمولة Exchange (SEC) في 17 CFR - 240.17a-4(f)، والتي تنظم أعضاء البورصة أو الوسطاء أو البائعين.  
 
-- القاعدة 4511(c) الخاصة بهيئة تنظيم الصناعة المالية (FINRA)، التي يتم تأجيلها إلى متطلبات التنسيق وال وسائط قاعدة SEC 17a-4(f).  
+- القاعدة 4511(c) من هيئة تنظيم الصناعة المالية (FINRA)، والتي ترجأ إلى متطلبات التنسيق والوسائط للقاعدة SEC 17a-4(f).  
 
-- متطلبات السجلات الإلكترونية المستندة إلى المبادئ الخاصة ب "لجنة تداول السلع المستقبلية( CFTC) في 17 CFR1.31(c)-(d).
+- متطلبات السجلات الإلكترونية المستندة إلى المبادئ من عمولة تداول السلع المستقبلية (CFTC) في 17 CFR - 1.31(c)-(d).
 
-رأي Cohasset هو أنه عند تكوين ميزات التوافق بشكل صحيح وتطبيقها بعناية وإدارتها كما هو موضح في تقريرها، تفي خدمات Microsoft 365 التي تم تقييمها بالمتطلبات الخمسة المتعلقة بالتسجيل والتخزين غير القابل لإعادة الكتابة للسجلات الإلكترونية وغير القابل لإعادة الكتابة.
+والرأي الوارد من Cohasset هو أنه عندما يتم تكوين ميزات التوافق بشكل صحيح وتطبيقها بعناية وإدارتها كما هو موضح في تقريرها، تلبي خدمات Microsoft 365 المقدرة المتطلبات الخمسة المتعلقة بتسجيل السجلات الإلكترونية وتخزينها غير القابل لإعادة الكتابة وغير القابل للمسح.

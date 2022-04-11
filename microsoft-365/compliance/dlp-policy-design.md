@@ -15,95 +15,94 @@ ms.collection:
 search.appverid:
 - MET150
 description: تعرف على كيفية تصميم نهج منع فقدان البيانات (DLP)
-ms.openlocfilehash: 14e9fbb5efd20ddcf3d0a47da41a0cce89c88cee
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: af09197784607dd6c8f8d939f4d091b365d51799
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63574721"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760592"
 ---
 # <a name="design-a-data-loss-prevention-policy"></a>تصميم نهج منع فقدان البيانات
 
-يؤدي أخذ الوقت لتصميم نهج قبل تنفيذه إلى الوصول إلى النتائج المطلوبة بشكل أسرع، ومع وجود عدد أقل من المشاكل غير المقصودة، مقارنة بإنشاء النهج ثم الضبط حسب الإصدار التجريبي والخطأ فقط. سيساعدك توثيق تصميمات النهج أيضا في الاتصالات ومراجعات النهج والاستعراضات وإصلاحها وضبطها بشكل أكبر.
+سيؤدي تخصيص الوقت اللازم لتصميم نهج قبل تنفيذه إلى الحصول على النتائج المرجوة بشكل أسرع، وبمشكلات أقل غير مقصودة، مقارنة بإنشائه ثم ضبطه عن طريق التجربة والخطأ فقط. سيساعدك أيضا توثيق تصميمات النهج في الاتصالات ومراجعات النهج واستكشاف الأخطاء وإصلاحها والمزيد من الضبط.
 
 <!--, but excessive tuning to get the intended results can be time consuming.
 
  if you have to do a lot of tuning to get a policy to yield the intended results can be time consuming .-->
 
-إذا كنت من Microsoft 365 DLP، فمن المفيد استخدام هذه المقالات قبل البدء في تصميم نهج:
+إذا كنت جديدا على Microsoft 365 DLP، فمن المفيد العمل من خلال هذه المقالات قبل البدء في تصميم نهج:
 
-- [تعرف على منع فقدان](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) البيانات - تعرفك هذه المقالة على مجال منع فقدان البيانات وتطبيق Microsoft ل DLP
-- [التخطيط لمنع فقدان البيانات (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - من خلال العمل من خلال هذه المقالة، يمكنك:
-    - [تحديد المساهمين](dlp-overview-plan-for-dlp.md#identify-stakeholders)
-    - [وصف فئات المعلومات الحساسة لحمايتها](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
-    - [تعيين الأهداف والاستراتيجية](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
-- [مرجع نهج منع فقدان](dlp-policy-reference.md#data-loss-prevention-policy-reference) البيانات - تقدم هذه المقالة كل مكونات نهج DLP وكيفية تأثير كل منها على سلوك النهج
+- [تعرف على منع فقدان البيانات](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) - تعرفك هذه المقالة على ضابط منع فقدان البيانات وتنفيذ Microsoft ل DLP
+- [التخطيط لمنع فقدان البيانات (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - من خلال العمل من خلال هذه المقالة سوف:
+  - [تحديد أصحاب المصلحة](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+  - [وصف فئات المعلومات الحساسة التي يجب حمايتها](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+  - [تعيين الأهداف والاستراتيجية](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+- [مرجع نهج تفادي فقدان البيانات](dlp-policy-reference.md#data-loss-prevention-policy-reference) - تقدم هذه المقالة جميع مكونات نهج DLP وكيف يؤثر كل منها على سلوك النهج
 
-## <a name="policy-design-overview"></a>نظرة عامة حول تصميم النهج
+## <a name="policy-design-overview"></a>نظرة عامة على تصميم النهج
 
-[يتعلق تصميم نهج في](#policy-design-process) معظمه بتعريف احتياجات عملك بوضوح[](#define-intent-for-the-policy)، وتوثيقها في بيان هدف النهج، ثم تعيين هذه الاحتياجات لتكوين [النهج](#map-business-needs-to-policy-configuration). سوف تستخدم القرارات التي اتخذتها في مرحلة التخطيط لإعلامك ببعض قرارات تصميم النهج. 
+يتعلق [تصميم نهج](#policy-design-process) في الغالب [بتحديد احتياجات عملك بوضوح، وتوثيقها في بيان هدف النهج](#define-intent-for-the-policy)، ثم [تعيين تلك الاحتياجات لتكوين النهج](#map-business-needs-to-policy-configuration). ستستخدم القرارات التي اتخذتها في مرحلة التخطيط لإعلام بعض قرارات تصميم النهج.
 
-### <a name="define-intent-for-the-policy"></a>تعريف الهدف من النهج 
+### <a name="define-intent-for-the-policy"></a>تحديد الهدف للنهج
 
-يجب أن تتمكن من تلخيص هدف العمل لكل نهج لديك في بيان واحد. سيدفع تطوير هذا البيان المحادثات في مؤسستك، وعندما يتم تبيانها بالكامل، فإن هذا البيان يربط النهج مباشرة لغرض عمل ويوفر خارطة طريق لتصميم النهج. ستساعدك الخطوات الموجودة في المقالة خطة منع فقدان البيانات [(DLP)](dlp-overview-plan-for-dlp.md#overview-of-planning-process) على بدء بيان هدف النهج.  
+يجب أن تكون قادرا على تلخيص هدف العمل لكل نهج لديك في بيان واحد. سيؤدي تطوير هذا البيان إلى دفع المحادثات في مؤسستك، وعند الانتهاء من صياغة هذا البيان بشكل كامل، يربط هذا البيان مباشرة السياسة لغرض عمل ويوفر مخططا لتصميم النهج. ستساعدك الخطوات الواردة في مقالة [خطة منع فقدان البيانات (DLP)](dlp-overview-plan-for-dlp.md#overview-of-planning-process) على البدء في بيان هدف النهج الخاص بك.
 
-تذكر من نظرة [عامة حول تكوين نهج DLP](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) أن كل نهج DLP تتطلب منك:
+تذكر من [نظرة عامة على تكوين نهج DLP](dlp-learn-about-dlp.md#dlp-policy-configuration-overview) أن جميع نهج DLP تتطلب منك:
 
 - اختر ما تريد مراقبته
 - اختر المكان الذي تريد مراقبته
-- اختيار الشروط التي يجب مطابقتها لكي يتم تطبيق نهج على عنصر
-- اختر الإجراء الذي يجب اتخاذه عند استففاء شروط النهج 
+- اختيار الشروط التي يجب مطابقتها لتطبيق نهج على عنصر
+- اختر الإجراء الذي يجب اتخاذه عند استيفاء شروط النهج
 
-على سبيل المثال، إليك المسودة الأولى الوهمية لبيان الهدف الذي يوفر إجابات لجميع الأسئلة الأربعة: 
+على سبيل المثال، إليك مسودة أولى وهمية لبيان الهدف الذي يوفر إجابات على جميع الأسئلة الأربعة:
 
-*"نحن مؤسسة تستند إلى الولايات المتحدة، ونحتاج إلى الكشف عن Office مستندا تحتوي على معلومات العناية الصحية الحساسة التي تغطيها HIPPA المخزنة في OneDrive/SharePoint والحماية من تلك المعلومات التي يتم مشاركتها في رسائل الدردشة والقناة في Teams وتقييد الجميع من مشاركتها مع جهات خارجية غير مصرح بها".* 
+*"نحن مؤسسة مقرها الولايات المتحدة، ونحتاج إلى الكشف عن المستندات Office التي تحتوي على معلومات الرعاية الصحية الحساسة التي تغطيها HIPPA والمخزنة في OneDrive/SharePoint والحماية من تلك المعلومات التي تتم مشاركتها في Teams رسائل الدردشة والقنوات وتقييد الجميع من مشاركتها مع جهات خارجية غير مصرح بها".*
 
-بينما تقوم بتطوير تصميم نهج، من المرجح أن تقوم بتعديل العبارة وتوسيعها.
+أثناء تطوير تصميم نهج، من المحتمل أن تقوم بتعديل العبارة وتوسيعها.
 
-### <a name="map-business-needs-to-policy-configuration"></a>تعيين احتياجات الأعمال إلى تكوين النهج
+### <a name="map-business-needs-to-policy-configuration"></a>تخطيط احتياجات الأعمال لتكوين النهج
 
-فلنقطع المثال على مسودة البيان ونرسم خريطة له على نقاط تكوين نهج DLP.
+دعونا نقسم مثال بيان المسودة إلى أسفل ونضبطه إلى نقاط تكوين نهج DLP.
 
-|بيان  |تم الرد على سؤال التكوين ورسم خريطة التكوين  |
+|بيان  |تمت الإجابة عن سؤال التكوين وتعيين التكوين  |
 |---------|---------|
-| "نحن مؤسسة تستند إلى الولايات المتحدة، ونحتاج إلى الكشف عن Office تحتوي على معلومات الرعاية الصحية الحساسة التي تغطيها HIPPA...  |- **ما يجب مراقبته**: Office المستندات، استخدم قالب قانون التأمين الصحي [(HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) الأميركي </br>- شروط التطابق **: (** تم تكوينه مسبقا ولكن قابل للتحرير) - يحتوي العنصر على رقم SSN و"وكالة مكافحة المخدرات" (DEA) والتصنيف الدولي ل "المرض" (ICD-9-CM) والتصنيف الدولي ل "مواصفة" (ICD-10-CM)، حيث يتم مشاركة المحتوى مع أشخاص من خارج المؤسسة  </br> - دفع المحادثات لتوضيح عتبة المشغل للكشف مثل مستويات الثقة، [وعد](dlp-policy-reference.md#content-contains) المثيلات (يسمى التسامح مع التسريب).[](sensitive-information-type-learn-about.md#more-on-confidence-levels)|
-|... المخزنة في OneDrive/SharePoint والحماية من تلك المعلومات التي يتم مشاركتها Teams رسائل الدردشة والقناة... |- **مكان المراقبة**: [تحديد](dlp-policy-reference.md#locations) الموقع عن طريق OneDrive مواقع SharePoint ومواقع Teams الدردشة/القناة أو مجموعات التوزيع أو استبعادها. |
-|... وتقييد الجميع من مشاركة هذه العناصر مع جهات خارجية غير مصرح بها"."  | - **الإجراءات التي يجب اتخاذها**: [يمكنك إضافة](dlp-policy-reference.md#actions) *تقييد الوصول أو تشفير المحتوى في Microsoft 365 المواقع* </br> - دفع المحادثة حول الإجراءات التي يجب اتخاذها عند تشغيل نهج ما بما في ذلك إجراءات الحماية مثل قيود المشاركة، والإجراءات المتعلقة بالوعي مثل الإعلامات والتنبيهات، والإجراءات المتعلقة بتمكين المستخدم مثل السماح بتجاوز المستخدم لأي إجراء حظر |
+| "نحن مؤسسة مقرها الولايات المتحدة، ونحتاج إلى الكشف عن Office المستندات التي تحتوي على معلومات الرعاية الصحية الحساسة التي تغطيها HIPPA...  |- **ما يجب مراقبته**: Office المستندات، استخدم قالب [قانون التأمين الصحي (HIPAA) في الولايات المتحدة](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) </br>- **شروط المطابقة**: (تم تكوينه مسبقا ولكن قابل للتحرير) - يحتوي العنصر على رقم SSN وCED Enforcement Agency (DEA) للولايات المتحدة، والتصنيف الدولي للأدوية (ICD-9-CM)، والتصنيف الدولي الأمراض (ICD-10-CM)، تتم مشاركة المحتوى مع أشخاص من خارج مؤسستي  </br> - يدفع المحادثات لتوضيح حد التشغيل للكشف مثل [مستويات الثقة](sensitive-information-type-learn-about.md#more-on-confidence-levels)، [وعدد المثيلات](dlp-policy-reference.md#content-contains) (يسمى التسامح مع التسرب).|
+|... التي يتم تخزينها في OneDrive/SharePoint والحماية من تلك المعلومات التي تتم مشاركتها Teams رسائل الدردشة والقنوات... |- **مكان المراقبة**: [تحديد نطاق الموقع](dlp-policy-reference.md#locations) عن طريق تضمين مواقع OneDrive ومواقع SharePoint أو استبعادها Teams حسابات الدردشة/القناة أو مجموعات التوزيع. |
+|... وتقييد الجميع من مشاركة هذه العناصر مع جهات خارجية غير مصرح بها"."  | - **الإجراءات التي يجب اتخاذها**: [يمكنك إضافة](dlp-policy-reference.md#actions) *تقييد الوصول أو تشفير المحتوى في مواقع Microsoft 365* </br> - يدفع المحادثة حول الإجراءات التي يجب اتخاذها عند تشغيل نهج، بما في ذلك إجراءات الحماية مثل قيود المشاركة، وإجراءات الوعي مثل الإعلامات والتنبيهات، وإجراءات تمكين المستخدم مثل السماح لتجاوز المستخدم لإجراء حظر |
 
-لا يغطي هذا المثال كل نقاط تكوين نهج DLP، بل يجب توسيعه. ولكن يجب أن تفكر في الاتجاه الصحيح بينما تقوم بتطوير بيانات هدف نهج DLP الخاصة بك.
+لا يغطي هذا المثال جميع نقاط التكوين لنهج DLP، بل يجب توسيعه. ولكن يجب أن تحصل على التفكير في الاتجاه الصحيح في أثناء تطوير بيانات هدف نهج DLP الخاصة بك.
 
 > [!IMPORTANT]
-> ضع في اعتبارك أن الموقع (المواقع) الذي تختاره يؤثر على ما إذا كان يمكنك استخدام أنواع المعلومات الحساسة وتسميات الحساسية وتسميات الاستبقاء بالإضافة إلى الإجراءات المتوفرة. راجع مرجع [نهج منع فقدان البيانات](dlp-policy-reference.md#data-loss-prevention-policy-reference).
+> ضع في اعتبارك أن الموقع (المواقع) التي تختارها تؤثر على ما إذا كان يمكنك استخدام أنواع المعلومات الحساسة وتسميات الحساسية وتسميات الاستبقاء بالإضافة إلى الإجراءات المتوفرة. راجع [مرجع نهج تفادي فقدان البيانات](dlp-policy-reference.md#data-loss-prevention-policy-reference).
 
 ## <a name="policy-design-process"></a>عملية تصميم النهج
 
-1. أكمل الخطوات في:
-    1. [التخطيط لمنع فقدان البيانات (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - من خلال العمل من خلال هذه المقالة، يمكنك:
-        1. [تحديد المساهمين](dlp-overview-plan-for-dlp.md#identify-stakeholders)
-        1. [وصف فئات المعلومات الحساسة لحمايتها](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
-        1. [تعيين الأهداف والاستراتيجية](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
-        1. [تعريف خطة نشر النهج](dlp-overview-plan-for-dlp.md#policy-deployment)
+1. أكمل الخطوات الواردة في [خطة منع فقدان البيانات (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - من خلال العمل من خلال هذه المقالة، سوف تتمكن مما يلي:
+   1. [تحديد المساهمين](dlp-overview-plan-for-dlp.md#identify-stakeholders)
+   1. [وصف فئات المعلومات الحساسة التي يجب حمايتها](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
+   1. [تعيين الأهداف والاستراتيجية](dlp-overview-plan-for-dlp.md#set-goals-and-strategy)
+   1. [تحديد خطة نشر النهج](dlp-overview-plan-for-dlp.md#policy-deployment)
 
-1. تعرف [على مرجع نهج](dlp-policy-reference.md#data-loss-prevention-policy-reference) منع فقدان البيانات بحيث تفهم كل مكونات نهج DLP وكيفية تأثير كل منها على سلوك النهج.
+2. تعرف على [مرجع نهج تفادي فقدان البيانات](dlp-policy-reference.md#data-loss-prevention-policy-reference) بحيث تفهم جميع مكونات نهج DLP وكيف يؤثر كل منها على سلوك النهج.
 
-1. تعرف على ما [تتضمنه قوالب نهج DLP](what-the-dlp-policy-templates-include.md#what-the-dlp-policy-templates-include).
+3. تعرف على [ما تتضمنه قوالب نهج DLP](what-the-dlp-policy-templates-include.md#what-the-dlp-policy-templates-include).
 
-1. تطوير بيان هدف النهج مع المساهمين الأساسيين. راجع المثال السابق في هذه المقالة.
+4. قم بتطوير بيان هدف النهج الخاص بك مع المساهمين الرئيسيين. راجع المثال السابق في هذه المقالة.
 
-1. حدد كيفية تناسب هذا النهج مع استراتيجية نهج DLP الشاملة.
+5. حدد كيفية ملاءمة هذا النهج لاستراتيجية نهج DLP الشاملة.
 
-> [!IMPORTANT]
-> لا يمكن إعادة تسمية السياسات بمجرد إنشائها. إذا كان عليك إعادة تسمية نهج، يتعين عليك إنشاء نهج جديد بالاسم المطلوب و إيقاف النهج القديم. لذلك، قرر بنية التسمية التي ستستخدمها كل سياساتك الآن. 
+   > [!IMPORTANT]
+   > لا يمكن إعادة تسمية النهج بمجرد إنشائها. إذا كان عليك إعادة تسمية نهج، فسيتعين عليك إنشاء نهج جديد بالاسم المطلوب وتقاعد النهج القديم. لذا حدد بنية التسمية التي ستستخدمها جميع نهجك الآن.
 
 6. تعيين العناصر في بيان هدف النهج إلى خيارات التكوين.
 
-7. تحديد قالب النهج الذي ستبدأ منه أو المعرف مسبقا أو المخصص.
+7. حدد قالب النهج الذي ستبدأ منه، معرفا مسبقا أو مخصصا.
 
-8. انتقل إلى القالب واجمع كل المعلومات المطلوبة قبل إنشاء النهج. من المرجح أن تجد أن هناك بعض نقاط التكوين التي لم يتم تناولها في بيان هدف النهج. هذا جيد. ارجع إلى المساهمين لكي تلب متطلبات أي نقاط تكوين مفقودة. 
+8. انتقل إلى القالب وقم بتجميع كافة المعلومات المطلوبة قبل إنشاء النهج. من المحتمل أن تجد أن هناك بعض نقاط التكوين التي لا تغطيها بيان هدف النهج الخاص بك. هذا جيد. ارجع إلى المساهمين لحل متطلبات أي نقاط تكوين مفقودة.
 
-9. توثيق تكوين كل إعدادات النهج ومراجعتها مع المساهمين. يمكنك إعادة استخدام بيان هدف النهج لتعيين نقاط التكوين، التي أصبحت الآن مكتملة بالكامل.
+9. توثيق تكوين جميع إعدادات النهج ومراجعتها مع المساهمين. يمكنك إعادة استخدام تعيين بيان هدف النهج الخاص بك لنقاط التكوين، والتي تم دمجها الآن بالكامل.
 
-10. [أنشئ نهج](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) مسودة وارجع إلى خطة [نشر النهج](dlp-overview-plan-for-dlp.md#policy-deployment) .
+10. [إنشاء مسودة](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) نهج والرجوع إلى خطة [نشر النهج](dlp-overview-plan-for-dlp.md#policy-deployment) .
 
 <!--## Policy design examples
 
@@ -134,11 +133,11 @@ ms.locfileid: "63574721"
 
 
 - whether the protective actions you need are supported throught the associated location or if you need to compromise to extend coverage
-    - also usefule for identifying the most restrictive actions available 
+    - also usefule for identifying the most restrictive actions available
     - (we shouldn't mention here that the "content contains" condition is the primary staple for a DLP policy and should be utilized as a starting point for policy creation. The other workload-specific conditions can be ustilized as an extended or granular control of company's DLP policy. Useful for when "too much" data is being restricted and known sensitive data typically falls under certain conditions.)
     - (We can mention here that their quantitative goal such as "protect X% of data across all locations while maintaining x productivity" can be monitored throught alerts or reports. If protection is too high of working against their established goals, they can come back to policy and tweak their conditions/actions)
-- Finally, you should have a union of what, hwo and when to be covered which will easily map to generating a live policy via Microsoft DLP. 
-- 
+- Finally, you should have a union of what, hwo and when to be covered which will easily map to generating a live policy via Microsoft DLP.
+-
 5. At this stage you should asses how you should start this policy. ***LINK OUT TO DEPLOYING A POLICY COVERED IN THE PLANNING TOPIC TOO***
     - Test: your company is very large, conservative or the actions established are pretty restrictive
     - Test w/ notifications: same as above, but you get to test out investigation cadence or volume
@@ -165,11 +164,10 @@ Here are some examples of more detailed policy intent statement to configuration
 
 -->
 
-
 ## <a name="see-also"></a>انظر أيضاً
 
-- [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [التعرّف على تفادي فقدان البيانات](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [التخطيط لمنع فقدان البيانات (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
-- [مرجع نهج منع فقدان البيانات](dlp-policy-reference.md#data-loss-prevention-policy-reference)
-- [مرجع تلميحات نهج منع فقدان البيانات](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
+- [مرجع نهج تفادي فقدان البيانات](dlp-policy-reference.md#data-loss-prevention-policy-reference)
+- [تلميحات حول نهج تفادي فقد البيانات (DLP)](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
 - [إنشاء نهج DLP واختباره وضبطه](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)

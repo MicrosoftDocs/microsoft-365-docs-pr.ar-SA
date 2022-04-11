@@ -1,5 +1,5 @@
 ---
-title: إنشاء نهج نوع معلومات حساسة باستخدام تشفير الرسائل من Office 365
+title: إنشاء نهج نوع معلومات حساسة باستخدام تشفير الرسائل Office 365
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -16,28 +16,28 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: تعرف على كيفية إنشاء نهج نوع معلومات حساسة لم المؤسسة باستخدام تشفير الرسائل من Office 365.
+description: تعرف على كيفية إنشاء نهج نوع معلومات حساس لمؤسستك باستخدام Office 365 تشفير الرسائل.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 8978b1f9faae2e96fa1940bf7663855ec3bb61da
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: a12c3c559fdd9dcc7bd142e5ee7d58d777211bc7
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63565940"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64759402"
 ---
-# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>إنشاء نهج نوع معلومات حساسة لمنظمتك باستخدام تشفير الرسائل
+# <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>إنشاء نهج نوع معلومات حساسة لمؤسستك باستخدام تشفير الرسائل
 
-يمكنك استخدام Exchange تدفق البريد الإلكتروني أو منع فقدان البيانات (DLP) لإنشاء نهج نوع معلومات حساسة باستخدام تشفير الرسائل من Office 365. لإنشاء قاعدة تدفق Exchange البريد الإلكتروني، يمكنك استخدام Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">إدارة (EAC)</a> أو PowerShell.
+يمكنك استخدام قواعد تدفق البريد Exchange أو منع فقدان البيانات (DLP) لإنشاء نهج نوع معلومات حساسة باستخدام تشفير الرسائل Office 365. لإنشاء قاعدة تدفق بريد Exchange، يمكنك استخدام <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange (EAC)</a> أو PowerShell.
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>لإنشاء النهج باستخدام قواعد تدفق البريد في EAC
 
-سجل الدخول إلى Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">إدارة البريد واذهب</a> إلى **تدفق** **البريدRules** > . في صفحة القواعد، أنشئ قاعدة تنطبق على تشفير الرسائل من Office 365. يمكنك إنشاء قاعدة استنادا إلى شروط مثل وجود كلمات أساسية معينة أو أنواع معلومات حساسة في الرسالة أو المرفق.
+سجل الدخول إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a> وانتقل إلى **Mail** **flowRules** > . في صفحة "القواعد"، أنشئ قاعدة تطبق Office 365 تشفير الرسائل. يمكنك إنشاء قاعدة استنادا إلى شروط مثل وجود كلمات أساسية معينة أو أنواع معلومات حساسة في الرسالة أو المرفق.
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>لإنشاء النهج باستخدام قواعد تدفق البريد في PowerShell
 
-استخدم حساب العمل أو المؤسسة الدراسية الذي لديه أذونات المسؤول العام في مؤسستك، وابدأ جلسة عمل Windows PowerShell واتصل Exchange Online. للحصول على الإرشادات، [راجع الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). استخدم Set-IRMConfiguration New-TransportRule cmdlets لإنشاء النهج.
+استخدم حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العمومي في مؤسستك، وابدأ جلسة عمل Windows PowerShell وقم بالاتصال Exchange Online. للحصول على الإرشادات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). استخدم Set-IRMConfiguration و cmdlets New-TransportRule لإنشاء النهج.
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>مثال على قاعدة تدفق البريد التي تم إنشاؤها باستخدام PowerShell
 
@@ -45,11 +45,11 @@ ms.locfileid: "63565940"
 
 - رقم توجيه ABA
 - رقم بطاقة الائتمان
-- رقم وكالة مكافحة المخدرات (DEA)
+- رقم وكالة إنفاذ مكافحة الأدوية (DEA)
 - الولايات المتحدة / المملكة المتحدة رقم جواز السفر
-- رقم الحساب البنكي الأميركي
-- رقم تعريف الممول الفردي (ITIN)
-- رقم الضمان الاجتماعي (SSN) الأميركي
+- رقم الحساب البنكي الأمريكي
+- رقم تعريف هوية الأفراد في الولايات المتحدة (ITIN)
+- رقم الضمان الاجتماعي (SSN) في الولايات المتحدة
 
 ```powershell
 Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
@@ -60,23 +60,23 @@ New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -S
 
 ## <a name="how-recipients-access-attachments"></a>كيفية وصول المستلمين إلى المرفقات
 
-بعد أن تقوم Microsoft بتشفير رسالة، يمكن للمستلمين الوصول غير المقيد إلى المرفقات عند الوصول إلى البريد الإلكتروني المشفر وفتحه.
+بعد أن تقوم Microsoft بتشفير رسالة، يكون لدى المستلمين وصول غير مقيد إلى المرفقات عند الوصول إلى البريد الإلكتروني المشفر وفتحه.
 
 ## <a name="to-prepare-for-this-change"></a>للتحضير لهذا التغيير
 
-قد ترغب في تحديث أي وثائق ومواد تدريبية قابلة للتطبيق للمستخدم النهائي لإعداد الأشخاص في مؤسستك لهذا التغيير. شارك هذه تشفير الرسائل من Office 365 الموارد مع المستخدمين لديك حسب الاقتضاء:
+قد ترغب في تحديث أي وثائق مستخدم نهائي قابلة للتطبيق ومواد تدريبية لإعداد الأشخاص في مؤسستك لهذا التغيير. شارك موارد تشفير الرسائل Office 365 هذه مع المستخدمين حسب الاقتضاء:
 
-- [إرسال رسائل مشفرة وعرضها والرد عليها في Outlook الكمبيوتر الشخصي](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
-- [Microsoft 365 الأساسيات: Office تشفير الرسائل](https://youtu.be/CQR0cG_iEUc)
+- [إرسال الرسائل المشفرة وعرضها والرد عليها في Outlook للكمبيوتر الشخصي](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+- [فيديو Microsoft 365 Essentials: تشفير الرسائل Office](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>عرض هذه التغييرات في سجل التدقيق
 
-Microsoft 365 هذا النشاط ويجعله متوفرا للمسؤولين. العملية هي 'New-TransportRule' و قصاصة من إدخال تدقيق عينة من البحث في سجل التدقيق في الأمان & مركز التوافق أدناه:
+Microsoft 365 تدقيق هذا النشاط وإتاحته للمسؤولين. العملية هي "New-TransportRule" ومقتطف من إدخال تدقيق عينة من البحث في سجل التدقيق في Security & Compliance Center أدناه:
 
 ```text
-*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"…etc.*
+*{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"...etc.*
 ```
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>لتعطيل نهج أنواع المعلومات الحساسة أو تخصيصه
 
-بمجرد إنشاء قاعدة تدفق البريد في Exchange، يمكنك تعطيل القاعدة أو تحريرها عن طريق الذهاب [](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) إلى **تدفق** >  **البريدالقاعدة** في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a> وتعطيل القاعدة "تشفير رسائل البريد الإلكتروني الحساسة الصادرة (خارج قاعدة المربع *)*".
+بمجرد إنشاء قاعدة تدفق البريد Exchange، يمكنك [تعطيل القاعدة أو تحريرها](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) عن طريق الانتقال إلى **Mail** **flowRules** >  في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a> وتعطيل القاعدة "*تشفير رسائل البريد الإلكتروني الحساسة الصادرة (قاعدة خارج المربع)*".

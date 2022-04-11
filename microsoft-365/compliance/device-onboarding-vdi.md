@@ -13,139 +13,139 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: نشر حزمة التكوين على جهاز البنية الأساسية لسطح المكتب الظاهري (VDI) بحيث يتم Microsoft 365 خدمة منع فقدان البيانات في نقطة النهاية.
-ms.openlocfilehash: 00804c93022f21715e3604eeb45c22caa4745f91
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: نشر حزمة التكوين على جهاز البنية الأساسية لسطح المكتب الظاهري (VDI) بحيث يتم إلحاقها بخدمة منع فقدان بيانات نقطة النهاية Microsoft 365.
+ms.openlocfilehash: 6bfb0f69198afbcc9d2949d583e151631cc7953b
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682141"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760614"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>أجهزة البنية الأساسية لسطح المكتب الظاهري غير الثابتة
+# <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>إلحاق أجهزة البنية الأساسية لسطح المكتب الظاهري غير الثابتة
 
 **ينطبق على:**
 
-- [Microsoft 365 فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
-- [إدارة مخاطر Insider](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Microsoft 365 منع فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
+- [إدارة المخاطر الداخلية](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-- أجهزة البنية الأساسية لسطح المكتب الظاهرية (VDI)
+- أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI)
 
 > [!WARNING]
-> Microsoft 365 دعم منع فقدان بيانات نقطة النهاية Windows الظاهري لسطح المكتب الافتراضي على سيناريوهات جلسة عمل واحدة. سيناريوهات جلسات العمل المتعددة Windows سطح المكتب الظاهري غير معتمدة حاليا.
+> Microsoft 365 دعم منع فقدان بيانات نقطة النهاية لسطح المكتب الظاهري Windows يدعم سيناريوهات جلسة عمل واحدة. سيناريوهات جلسات متعددة على Windows Virtual Desktop غير معتمدة حاليا.
 
-## <a name="onboard-vdi-devices"></a>أجهزة VDI المجهزة
+## <a name="onboard-vdi-devices"></a>إلحاق أجهزة VDI
 
-Microsoft 365 تشغيل جلسة عمل البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة.
+يدعم Microsoft 365 تهيئة جلسة عمل البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة.
 
 > [!NOTE]
-> لتكديس جلسات VDI غير الثابتة، يجب أن تكون أجهزة VDI على Windows 10 1809 أو أعلى.
+> لإلحاق جلسات VDI غير الثابتة، يجب أن تكون أجهزة VDI في Windows 10 1809 أو أعلى.
 
-قد تكون هناك تحديات مقترنة عند تكديس VDIs. فيما يلي تحديات نموذجية لهذا السيناريو:
+قد تكون هناك تحديات مرتبطة عند إلحاق VDIs. فيما يلي تحديات نموذجية لهذا السيناريو:
 
-- التكهين المبكر الفوري لجلسات العمل القصيرة، والتي يجب أن يتم Microsoft 365 قبل توفيرها الفعلي.
-- تتم إعادة استخدام اسم الجهاز عادة لجلسات العمل الجديدة.
+- الإلحاق المبكر الفوري لجلسات قصيرة الأجل، والتي يجب إلحاقها Microsoft 365 قبل التوفير الفعلي.
+- عادة ما يعاد استخدام اسم الجهاز لجلسات عمل جديدة.
 
-يمكن أن تظهر أجهزة VDI في Microsoft 365 التوافق كما يلي:
+يمكن أن تظهر أجهزة VDI في مركز التوافق Microsoft 365 كما يلي:
 
 - إدخال واحد لكل جهاز.
-تجدر الإشارة إلى أنه في هذه الحالة، يجب تكوين اسم الجهاز نفسه عند إنشاء جلسة العمل، على سبيل المثال باستخدام ملف إجابة غير ملاحظ.
-- إدخالات متعددة لكل جهاز - إدخال لكل جلسة عمل.
+لاحظ أنه في هذه الحالة، يجب تكوين *نفس* اسم الجهاز عند إنشاء جلسة العمل، على سبيل المثال باستخدام ملف إجابات غير المراقب.
+- إدخالات متعددة لكل جهاز - واحد لكل جلسة عمل.
 
-سترشدك الخطوات التالية عبر أجهزة VDI التي تقوم ب التكديس، كما ستسلط الضوء على خطوات الإدخالات الفردية والمتعددة.
+ستوجهك الخطوات التالية خلال إلحاق أجهزة VDI وستسلط الضوء على خطوات الإدخالات الفردية والمضاعفة.
 
 > [!WARNING]
-> بالنسبة إلى البيئات التي تكون فيها تكوينات الموارد منخفضة، قد يبطئ إجراء تشغيل VDI عملية إعداد الجهاز.
+> بالنسبة للبيئات التي توجد فيها تكوينات موارد منخفضة، قد يؤدي إجراء تمهيد VDI إلى إبطاء عملية إلحاق الجهاز.
 
-1. احصل على حزمة تكوين VDI .zip ملف (*DeviceCompliancePackage.zip*) من [مركز التوافق من Microsoft](https://compliance.microsoft.com).
+1. احصل على ملف .zip حزمة تكوين VDI (*DeviceCompliancePackage.zip*) من [مركز توافق Microsoft](https://compliance.microsoft.com).
 
-2. في جزء التنقل **، حدد الإعدادات** >  **التأليف onboardingOnboarding** > .
+2. في جزء التنقل، حدد **الإعدادات** >  **Device onboardingOnboarding** > .
 
-3. في الحقل **أسلوب النشر** ، حدد **برامج VDI النصية لتكديس** نقاط النهاية غير الثابتة.
+3. في حقل **أسلوب النشر** ، حدد **البرامج النصية لإلحاق VDI لنقاط النهاية غير الثابتة**.
 
-4. انقر **فوق تنزيل الحزمة** واحفظ .zip الملف.
+4. انقر فوق **"تنزيل الحزمة** " واحفظ ملف .zip.
 
-5. انسخ الملفات من مجلد DeviceCompliancePackage الذي تم استخراجه من ملف .zip إلى `golden` الصورة ضمن المسار `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
+5. انسخ الملفات من مجلد DeviceCompliancePackage المستخرج من ملف .zip إلى `golden` الصورة أسفل المسار `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
 
-6. إذا كنت لا تنفذ إدخالا واحدا لكل جهاز، انسخ DeviceComplianceOnboardingScript.cmd.
+6. إذا كنت لا تنفذ إدخالا واحدا لكل جهاز، فنسسخ DeviceComplianceOnboardingScript.cmd.
 
-7. إذا كنت تقوم بتنفيذ إدخال واحد لكل جهاز، انسخ كل من Onboard-NonPersistentMachine.ps1 و DeviceComplianceOnboardingScript.cmd.
+7. إذا كنت تقوم بتنفيذ إدخال واحد لكل جهاز، فانسخ كل من Onboard-NonPersistentMachine.ps1 وDeviceComplianceOnboardingScript.cmd.
 
     > [!NOTE]
-    > إذا لم تشاهد المجلد، `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` فقد يكون مخفيا. ستحتاج إلى اختيار الخيار **إظهار الملفات والمجلدات** المخفية من مستكشف الملفات.
+    > إذا لم تتمكن من `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` رؤية المجلد، فقد يكون مخفيا. ستحتاج إلى اختيار الخيار **"إظهار الملفات والمجلدات المخفية**" من مستكشف الملفات.
 
-8. افتح نافذة محرر نهج المجموعة المحلية وانتقل إلى **تكوين** >  **الكمبيوتر** >  Windows الإعدادات **ScriptsStartup** > .
+8. افتح نافذة محرر نهج المجموعة محلي وانتقل إلى **تكوين** >  الكمبيوتر **Windows الإعدادات** >  **ScriptsStartup** > .
 
    > [!NOTE]
-   > يمكن أيضا استخدام نهج مجموعة المجالات لتكديس أجهزة VDI غير الثابتة.
+   > يمكن أيضا استخدام نهج المجموعة المجال لإلحاق أجهزة VDI غير الثابتة.
 
 9. استنادا إلى الأسلوب الذي تريد تنفيذه، اتبع الخطوات المناسبة:
 
-   **إدخال واحد لكل جهاز**
+   **لإدخال واحد لكل جهاز**
 
-   حدد علامة **التبويب البرامج النصية في PowerShell**، ثم انقر فوق **إضافة (Windows** سيفتح المستكشف مباشرة في المسار حيث نسخت البرنامج النصي لالإضافة سابقا). انتقل إلى البرنامج النصي ل PowerShell الذي تم إعادة ا `Onboard-NonPersistentMachine.ps1`متنه.
+   حدد علامة التبويب **PowerShell Scripts**، ثم انقر فوق **"إضافة**" (Windows سيفتح المستكشف مباشرة في المسار حيث نسخت البرنامج النصي للإلحاق سابقا). انتقل إلى إعداد البرنامج النصي `Onboard-NonPersistentMachine.ps1`PowerShell.
 
-   **بالنسبة إلى إدخالات متعددة لكل جهاز**:
+   **للإدخالات المتعددة لكل جهاز**:
 
-   حدد علامة **التبويب** البرامج النصية، ثم **انقر فوق إضافة** (Windows سيفتح المستكشف مباشرة في المسار الذي نسخت فيه البرنامج النصي لالإضافة سابقا). انتقل إلى البرنامج النصي ل bash الخاص باللوح `DeviceComplianceOnboardingScript.cmd`.
+   حدد علامة التبويب **"البرامج النصية**"، ثم انقر فوق **"إضافة**" (Windows سيفتح المستكشف مباشرة في المسار حيث نسخت البرنامج النصي للإلحاق سابقا). انتقل إلى البرنامج النصي `DeviceComplianceOnboardingScript.cmd`bash الإلحاق.
 
-10. اختبر الحل الخاص بك:
-    1. إنشاء تجمع باستخدام جهاز واحد.
-    1. سجل دخولك إلى الجهاز.
-    1. سجل خروجك من الجهاز.
-    1. سجل دخولك إلى جهاز مع مستخدم آخر.
-    1. **للحصول على إدخال واحد لكل جهاز**: تحقق من إدخال واحد فقط في مركز حماية Microsoft Defender.
+10. اختبار الحل الخاص بك:
+    1. إنشاء تجمع مع جهاز واحد.
+    1. تسجيل الدخول إلى الجهاز.
+    1. تسجيل الخروج من الجهاز.
+    1. تسجيل الدخول إلى الجهاز مع مستخدم آخر.
+    1. **لإدخال واحد لكل جهاز**: تحقق من إدخال واحد فقط في مركز حماية Microsoft Defender.
        **للحصول على إدخالات متعددة لكل جهاز**: تحقق من إدخالات متعددة في مركز حماية Microsoft Defender.
 
-11. انقر **فوق قائمة الأجهزة** في جزء التنقل.
+11. انقر فوق **قائمة الأجهزة** في جزء التنقل.
 
-12. استخدم وظيفة البحث بإدخال اسم الجهاز وحدد **الجهاز** كنوع بحث.
+12. استخدم دالة البحث عن طريق إدخال اسم الجهاز وحدد **الجهاز** كنوع بحث.
 
 ## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>تحديث صور البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة
 
-من أفضل الممارسات، نوصي باستخدام أدوات توفير الخدمة دون اتصال لتصحيح الصور الذهبية.
+كأفضل ممارسة، نوصي باستخدام أدوات الخدمة دون اتصال لتصحيح الصور الذهبية.
 
-على سبيل المثال، يمكنك استخدام الأوامر أدناه لتثبيت تحديث بينما تظل الصورة دون اتصال:
+على سبيل المثال، يمكنك استخدام الأوامر أدناه لتثبيت تحديث بينما تظل الصورة غير متصلة:
 
-```console
+```DOS
 DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"
 DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
 DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
-لمزيد من المعلومات حول أوامر DISM والخدمة دون اتصال، الرجاء الرجوع إلى المقالات أدناه:
+لمزيد من المعلومات حول أوامر DISM والخدمة دون اتصال، يرجى الرجوع إلى المقالات أدناه:
 
 - [تعديل صورة Windows باستخدام DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [خيارات إدارة الصور Command-Line DISM](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [تصغر حجم 'متجر المكونات' في صورة غير متصلة Windows](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [خيارات Command-Line إدارة صور DISM](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+- [تصغير حجم مخزن المكونات في صورة Windows غير متصل](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
-إذا لم تكن الخدمة دون اتصال خيارا قابلا للتطبيق لبيئة VDI غير الثابتة، يجب اتخاذ الخطوات التالية لضمان التناسق وصحة المستشعر:
+إذا لم تكن الخدمة دون اتصال خيارا قابلا للتطبيق لبيئة VDI غير الثابتة، يجب اتخاذ الخطوات التالية لضمان التناسق وحماية جهاز الاستشعار:
 
-1. بعد تشغيل الصورة الذهبية لخدمتها أو تصحيحها عبر الإنترنت، قم بتشغيل برنامج نصي خارج التشغيل Microsoft 365 مستشعر مراقبة الجهاز. لمزيد من المعلومات، راجع [أجهزة Offboard باستخدام برنامج نصي محلي](device-onboarding-script.md#offboard-devices-using-a-local-script).
+1. بعد تشغيل الصورة الذهبية لخدمة عبر الإنترنت أو تصحيحها، قم بتشغيل برنامج نصي لإلغاء الإلحاق لإيقاف تشغيل مستشعر مراقبة الجهاز Microsoft 365. لمزيد من المعلومات، راجع [أجهزة Offboard باستخدام برنامج نصي محلي](device-onboarding-script.md#offboard-devices-using-a-local-script).
 
-2. تأكد من إيقاف المستشعر عن طريق تشغيل الأمر أدناه في نافذة CMD:
+2. تأكد من إيقاف جهاز الاستشعار عن طريق تشغيل الأمر أدناه في نافذة CMD:
 
-   ```console
+   ```DOS
    sc query sense
    ```
 
 3. خدمة الصورة حسب الحاجة.
 
-4. شغل الأوامر أدناه باستخدام PsExec.exe ( https://download.sysinternals.com/files/PSTools.zip) التي يمكن تنزيلها من لتنظيف محتويات مجلد الإنترنت التي قد تكون المستشعر قد تراكمت منذ التشغيل:
+4. قم بتشغيل الأوامر أدناه باستخدام PsExec.exe (التي يمكن تنزيلها من https://download.sysinternals.com/files/PSTools.zip) أجل تنظيف محتويات المجلد الإلكتروني التي قد يكون جهاز الاستشعار قد تراكم منذ التشغيل:
 
-    ```console
+    ```DOS
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 
-5. إعادة ختم الصورة الذهبية كما لو كنت تقوم بذلك عادة.
+5. أعد إغلاق الصورة الذهبية كما تفعل عادة.
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
-- [أجهزة Windows 10 Windows 11 باستخدام "نهج المجموعة"](device-onboarding-gp.md)
-- [أجهزة Windows 10 وأجهزة Windows 11 باستخدام Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
-- [أجهزة Windows 10 Windows 11 الأجهزة باستخدام أدوات إدارة أجهزة المحمول](device-onboarding-mdm.md)
-- [أجهزة Windows 10 وأجهزة Windows 11 باستخدام برنامج نصي محلي](device-onboarding-script.md)
-- [استكشاف مشاكل توفير الحماية المتقدمة من المخاطر ل Microsoft Defender وإصلاحها](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [إلحاق أجهزة Windows 10 وأجهزة Windows 11 باستخدام نهج المجموعة](device-onboarding-gp.md)
+- [إلحاق الأجهزة Windows 10 وأجهزة Windows 11 باستخدام Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [إلحاق أجهزة Windows 10 وأجهزة Windows 11 باستخدام أدوات إدارة الأجهزة المحمولة](device-onboarding-mdm.md)
+- [إلحاق أجهزة Windows 10 وأجهزة Windows 11 باستخدام برنامج نصي محلي](device-onboarding-script.md)
+- [استكشاف أخطاء الحماية المتقدمة من التهديدات في Microsoft Defender وإصلاحها](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: هناك العديد من أنواع المعلومات الحساسة الجاهزة للاستخدام في نهج DLP. تسرد هذه المقالة كل أنواع المعلومات الحساسة هذه وتعرض ما يبحث عنه نهج DLP عند اكتشاف كل نوع.
-ms.openlocfilehash: 298b756a1cdfd63406992c18bf8281375f7f9370
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 69c47a717b63f8d9ac4e30f3b97fd228399bf21c
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746503"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760384"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>تعريفات كيان نوع المعلومات الحساسة
 
@@ -32,10 +32,10 @@ ms.locfileid: "64746503"
 
 > [!NOTE]
 > تعيين مستوى الثقة (مرتفع/متوسط/منخفض) برقم دقة (قيمة رقمية من 1 إلى 100)
+>
 > - ثقة منخفضة: 65 أو أقل
 > - الثقة المتوسطة: 75
 > - ثقة عالية: 85
-
 
 ## <a name="aba-routing-number"></a>رقم توجيه ABA
 
@@ -52,7 +52,6 @@ ms.locfileid: "64746503"
 - واصلة اختيارية
 - رقم
 
-
 ### <a name="checksum"></a>المجموع الاختباري
 
 نعم
@@ -60,10 +59,12 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع النهج بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، في حدود 300 حرف:
+
 - تبحث الدالة Func_aba_routing عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_ABA_Routing.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة Func_aba_routing عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -99,7 +100,6 @@ ms.locfileid: "64746503"
 - التوجيه #
 - RTN
 
-
 ## <a name="all-full-names"></a>كافة الأسماء الكاملة
 
 جميع الأسماء الكاملة هي كيان مسمى مجمع. يكشف عن الأسماء الكاملة للأشخاص من جميع البلدان/المناطق المدعومة، والتي تشمل أستراليا والصين واليابان والولايات المتحدة والبلدان في الاتحاد الأوروبي. استخدم SIT هذا للكشف عن كافة التطابقات المحتملة للأسماء الكاملة.
@@ -120,9 +120,9 @@ ms.locfileid: "64746503"
 
 يطابق هذا الكيان المسمى SIT الأسماء الشخصية التي قد يحددها الإنسان كاسم بثقة عالية. على سبيل المثال، إذا تم العثور على سلسلة تتكون من اسم معين وتبعها اسم عائلة، فسيتم إجراء تطابق بثقة عالية. ويستخدم ثلاثة موارد أساسية:
 
--   قاموس للأسماء المحددة.
--   قاموس بأسماء العائلة.
--   أنماط كيفية تشكيل الأسماء.
+- قاموس للأسماء المحددة.
+- قاموس بأسماء العائلة.
+- أنماط كيفية تشكيل الأسماء.
 
 تختلف الموارد الثلاثة لكل بلد.  ستؤدي السلاسل *UnityVia إلى* إجراء تطابق. تمنح أسماء العائلة/الأسماء المعطاة الشائعة ثقة أعلى من الأسماء النادرة. ومع ذلك، يسمح النمط أيضا بالتطابقات الجزئية. إذا تم العثور على اسم معين من القاموس متبوعا باسم عائلة غير موجود في القاموس، فسيتم تشغيل تطابق جزئي. على سبيل المثال، قد يؤدي *جمعاء ريشارد إلى* إجراء تطابق جزئي. تمنح التطابقات الجزئية ثقة أقل.
 
@@ -159,7 +159,6 @@ ms.locfileid: "64746503"
 - السويدية
 - التركية
 
-
 ## <a name="all-medical-terms-and-conditions"></a>جميع الشروط والأحكام الطبية
 
 جميع الشروط والأحكام الطبية هي كيان مسمى مجمع يكشف عن الشروط الطبية والحالات الطبية. يكشف عن مصطلحات اللغة الإنجليزية فقط. استخدم SIT هذا للكشف عن جميع التطابقات المحتملة للشروط والأحكام الطبية.
@@ -188,7 +187,7 @@ ms.locfileid: "64746503"
 
 يحتوي هذا الكيان المسمى المجمع SIT على SITs الفردية هذه.
 
-- مصطلحات اختبار الدم 
+- مصطلحات اختبار الدم
 - أنواع الأدوية
 - الامراض
 - أسماء الأدوية العامة
@@ -198,7 +197,6 @@ ms.locfileid: "64746503"
 - التخصصات الطبية
 - الإجراءات الجراحية
 - أسماء أدوية العلامة التجارية
-
 
 ## <a name="all-physical-addresses"></a>كافة العناوين الفعلية
 
@@ -220,10 +218,10 @@ ms.locfileid: "64746503"
 
 تم تصميم مطابقة عناوين الشارع لمطابقة السلاسل التي قد يحددها الإنسان كعنوان شارع. للقيام بذلك، فإنه يستخدم العديد من الموارد الأساسية:
 
--   قاموس للمناطق والتجمعات والتجمعات.
--   قاموس للاحقات الشارع، مثل الطريق أو الشارع أو الشارع.
--   أنماط الرموز البريدية.
--   أنماط تنسيقات العناوين.
+- قاموس للمناطق والتجمعات والتجمعات.
+- قاموس للاحقات الشارع، مثل الطريق أو الشارع أو الشارع.
+- أنماط الرموز البريدية.
+- أنماط تنسيقات العناوين.
 
 تختلف الموارد لكل بلد. الموارد الأساسية هي أنماط تنسيقات العناوين المستخدمة في بلد معين. يتم اختيار تنسيقات مختلفة للتأكد من مطابقة أكبر عدد ممكن من العناوين. تسمح هذه التنسيقات بالمرونة، على سبيل المثال، قد يحذف العنوان الرمز البريدي أو يحذف اسم بلدة أو يحتوي على شارع بدون لاحقة شارع. في جميع الحالات، يتم استخدام هذه التطابقات لزيادة ثقة المطابقة.
 
@@ -303,7 +301,6 @@ ms.locfileid: "64746503"
 - السويدية
 - التركية
 
-
 ## <a name="argentina-national-identity-dni-number"></a>رقم الهوية الوطنية للارجنتين (DNI)
 
 ### <a name="format"></a>تنسيق
@@ -313,6 +310,7 @@ ms.locfileid: "64746503"
 ### <a name="pattern"></a>نمط
 
 ثمانية أرقام:
+
 - رقمين
 - فترة اختيارية
 - ثلاثة أرقام
@@ -326,6 +324,7 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_argentina_national_id عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_argentina_national_id.
 
@@ -353,7 +352,6 @@ ms.locfileid: "64746503"
 - registro nacional de las personas
 - rnp
 
-
 ## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>مفتاح التعريف الضريبي الفريد في الأرجنتين (CUIT/CUIL)
 
 ### <a name="format"></a>تنسيق
@@ -363,6 +361,7 @@ ms.locfileid: "64746503"
 ### <a name="pattern"></a>نمط
 
 11 رقما بشرطة:
+
 - رقمان في 20 أو 23 أو 24 أو 27 أو 30 أو 33 أو 34
 - واصلة (-)
 - ثمانية أرقام
@@ -376,10 +375,12 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_Argentina_Unique_Tax_Key` عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية منها `Keyword_Argentina_Unique_Tax_Key` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_Argentina_Unique_Tax_Key` عن المحتوى الذي يطابق النمط.
 
 ```xml
@@ -401,7 +402,7 @@ ms.locfileid: "64746503"
 
 - Clave Unica de Identificacion Tributaria
 - CUIT
-- تعليمة برمجية فريدة لتحديد هوية العمالة 
+- تعليمة برمجية فريدة لتحديد هوية العمالة
 - Clave Única de Identificación Tributaria
 - رمز تعريف تعريف فريد للعمليات
 - CUIL
@@ -436,7 +437,6 @@ ms.locfileid: "64746503"
 - Número de Identificación Fiscal
 - número de contribuyente
 
-
 ## <a name="australia-bank-account-number"></a>رقم الحساب البنكي في أستراليا
 
 ### <a name="format"></a>تنسيق
@@ -448,6 +448,7 @@ ms.locfileid: "64746503"
 رقم الحساب من 6 إلى 10 أرقام.
 
 رقم فرع ولاية أستراليا المصرفي:
+
 - ثلاثة أرقام
 - واصلة
 - ثلاثة أرقام
@@ -459,11 +460,13 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_australia_bank_account_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_australia_bank_account_number.
 - يبحث التعبير العادي Regex_australia_bank_account_number_bsb عن المحتوى الذي يطابق النمط.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_australia_bank_account_number عن المحتوى الذي يتطابق مع النمط.
 
 - تم العثور على كلمة أساسية من Keyword_australia_bank_account_number.
@@ -501,7 +504,6 @@ ms.locfileid: "64746503"
 - الأسماء الكاملة
 - الوكاله
 
-
 ## <a name="australia-business-number"></a>رقم العمل في أستراليا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
@@ -535,10 +537,12 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_australian_business_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_australian_business_number.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_australian_business_number عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -565,7 +569,6 @@ ms.locfileid: "64746503"
 - ايه
 - رجل أعمال #
 
-
 ## <a name="australia-company-number"></a>رقم شركة أستراليا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
@@ -590,7 +593,6 @@ ms.locfileid: "64746503"
 - مساحة
 - ثلاثة أرقام
 
-
 ### <a name="checksum"></a>المجموع الاختباري
 
 نعم
@@ -598,10 +600,12 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_Australian_Company_Number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_Australian_Company_Number.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة Func_Australian_Company_Number عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -627,7 +631,6 @@ ms.locfileid: "64746503"
 - لا للشركة الأسترالية
 - لا للشركة الأسترالية #
 - رقم الشركة الأسترالية
-
 
 ## <a name="australia-drivers-license-number"></a>رقم رخصة القيادة في أستراليا
 
@@ -659,6 +662,7 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_australia_drivers_license_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_australia_drivers_license_number.
 - لم يتم العثور على كلمة أساسية من Keyword_australia_drivers_license_number_exclusions.
@@ -780,7 +784,6 @@ ms.locfileid: "64746503"
 - رخصة القيادة #
 - تراخيص القيادة #
 
-
 ## <a name="australia-medical-account-number"></a>رقم الحساب الطبي في أستراليا
 
 ### <a name="format"></a>تنسيق
@@ -790,6 +793,7 @@ ms.locfileid: "64746503"
 ### <a name="pattern"></a>نمط
 
 من 10 إلى 11 رقما:
+
 - الرقم الأول في النطاق من 2 إلى 6
 - الرقم التاسع هو خانة اختيار
 - الرقم العاشر هو رقم المشكلة
@@ -802,10 +806,10 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_australian_medical_account_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_Australia_Medical_Account_Number.
 - يمر المجموع الاختباري.
-
 
 ```xml
   <!-- Australia Medical Account Number -->
@@ -831,7 +835,6 @@ ms.locfileid: "64746503"
 - الخدمة المحلية
 - الرعايه الطبيه
 
-
 ## <a name="australia-passport-number"></a>رقم جواز سفر أستراليا
 
 ### <a name="format"></a>تنسيق
@@ -850,10 +853,12 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير `Regex_australia_passport_number` العادي عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية منها `Keyword_australia_passport_number` .
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - يبحث التعبير `Regex_australia_passport_number` العادي عن المحتوى الذي يطابق النمط.
 
 ```xml
@@ -891,14 +896,12 @@ ms.locfileid: "64746503"
 - مستند السفر
 - الجهة المصدرة
 
-
-## <a name="australia-physical-addresses"></a>العناوين المادية في أستراليا 
+## <a name="australia-physical-addresses"></a>العناوين المادية في أستراليا
 
 الكشف عن الأنماط المتعلقة بالعنوان الفعلي من أستراليا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
 
 ### <a name="confidence-level"></a>مستوى الثقة
 المتوسطه
-
 
 ## <a name="australia-tax-file-number"></a>رقم ملف الضريبة في أستراليا
 
@@ -909,6 +912,7 @@ ms.locfileid: "64746503"
 ### <a name="pattern"></a>نمط
 
 عادة ما يتم عرض الأرقام من ثمانية إلى تسعة مع مسافات كما يلي:
+
 - ثلاثة أرقام
 - مساحة اختيارية
 - ثلاثة أرقام
@@ -922,6 +926,7 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_australian_tax_file_number عن المحتوى الذي يتطابق مع النمط.
 - لم يتم العثور على كلمة أساسية من Keyword_Australia_Tax_File_Number أو Keyword_number_exclusions.
 - يمر المجموع الاختباري.
@@ -950,7 +955,6 @@ ms.locfileid: "64746503"
 - رقم ملف الضريبة
 - tfn
 
-
 ## <a name="austria-drivers-license-number"></a>رقم رخصة القيادة في النمسا
 
 ### <a name="format"></a>تنسيق
@@ -969,8 +973,8 @@ ms.locfileid: "64746503"
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
-- يبحث التعبير  `Regex_austria_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_austria_eu_driver's_license_number` تم العثور عليها.
+- يبحث التعبير `Regex_austria_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_austria_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Austria Driver's License Number -->
@@ -1086,7 +1090,7 @@ ms.locfileid: "64746503"
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -1108,7 +1112,6 @@ ms.locfileid: "64746503"
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_austria_eu_drivers_license_number"></a>s_license_number Keywords_austria_eu_driver
 
 - فهررشين
@@ -1117,10 +1120,10 @@ ms.locfileid: "64746503"
 - Führerscheinnummer
 - Führerscheinnummern
 
-
 ## <a name="austria-identity-card"></a>بطاقة هوية النمسا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -1135,7 +1138,7 @@ ms.locfileid: "64746503"
 
 24 حرفا:
 
--  22 حرفا (غير حساسة لحالة الأحرف) أو أرقام أو خطوط مائلة عكسية أو شرطة مائلة للأمام أو علامات الجمع
+- 22 حرفا (غير حساسة لحالة الأحرف) أو أرقام أو خطوط مائلة عكسية أو شرطة مائلة للأمام أو علامات الجمع
 
 - حرفان (غير حساسين لحالة الأحرف) أو أرقام أو شرطة مائلة عكسية أو شرطة مائلة للأمام أو علامات الجمع أو علامات التساوي
 
@@ -1147,8 +1150,8 @@ ms.locfileid: "64746503"
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
-- يبحث التعبير  `Regex_austria_eu_national_id_card` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_austria_eu_national_id_card` .
+- يبحث التعبير `Regex_austria_eu_national_id_card` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_austria_eu_national_id_card` .
 
 ```xml
       <!-- Austria Identity Card -->
@@ -1167,7 +1170,6 @@ ms.locfileid: "64746503"
 - رقم الهوية
 - المعرف الوطني
 - personalausweis republik österreich
-
 
 ## <a name="austria-passport-number"></a>رقم جواز سفر النمسا
 
@@ -1190,13 +1192,15 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_austria_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_austria_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_austria_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_austria_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date1` العادي عن التاريخ بالتنسيق DD.MM.YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_austria_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_austria_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_austria_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_austria_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Austria Passport Number -->
@@ -1252,7 +1256,6 @@ ms.locfileid: "64746503"
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="austria-physical-addresses"></a>العناوين المادية في النمسا
 
 يكشف هذا الكيان المسمى غير الملغى عن الأنماط المتعلقة بالعنوان الفعلي من النمسا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -1260,7 +1263,6 @@ ms.locfileid: "64746503"
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="austria-social-security-number"></a>رقم الضمان الاجتماعي في النمسا
 
@@ -1283,11 +1285,13 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_austria_eu_ssn_or_equivalent` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_austria_eu_ssn_or_equivalent` .
+
+- تبحث الدالة `Func_austria_eu_ssn_or_equivalent` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_austria_eu_ssn_or_equivalent` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_austria_eu_ssn_or_equivalent` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_austria_eu_ssn_or_equivalent` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Austria Social Security Number -->
@@ -1334,7 +1338,6 @@ ms.locfileid: "64746503"
 - versicherungsnummer
 - zdveno zavarovanje
 
-
 ## <a name="austria-tax-identification-number"></a>رقم التعريف الضريبي في النمسا
 
 ### <a name="format"></a>تنسيق
@@ -1358,11 +1361,13 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_austria_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_austria_eu_tax_file_number` .
+
+- تبحث الدالة `Func_austria_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_austria_eu_tax_file_number` .
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
-- تبحث الدالة  `Func_austria_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_austria_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Austria Tax Identification Number -->
@@ -1402,10 +1407,10 @@ ms.locfileid: "64746503"
 - القصدير #
 - رقم الضريبة
 
-
 ## <a name="austria-value-added-tax"></a>ضريبة القيمة المضافة في النمسا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -1438,10 +1443,12 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_Austria_Value_Added_Tax عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_Austria_Value_Added_Tax.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_Austria_Value_Added_Tax عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -1476,7 +1483,6 @@ ms.locfileid: "64746503"
 - رقم عمودي
 - رقم uid
 
-
 ## <a name="azure-documentdb-auth-key"></a>مفتاح مصادقة Azure DocumentDB
 
 ### <a name="format"></a>تنسيق
@@ -1498,6 +1504,7 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي CEP_Regex_AzureDocumentDBAuthKey عن المحتوى الذي يتطابق مع النمط.
 - لا يعثر التعبير العادي CEP_CommonExampleKeywords على محتوى يطابق النمط.
 
@@ -1529,7 +1536,6 @@ ms.locfileid: "64746503"
 - الاختبارات.<!--no-hyperlink-->كوم
 - s-int.<!--no-hyperlink-->صافي
 
-
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>سلسلة اتصال قاعدة بيانات Azure IAAS وسلسلة اتصال azure SQL
 
 ### <a name="format"></a>تنسيق
@@ -1559,6 +1565,7 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي CEP_Regex_AzureConnectionString عن المحتوى الذي يتطابق مع النمط.
 - لا يعثر التعبير العادي CEP_CommonExampleKeywords على محتوى يطابق النمط.
 
@@ -1590,7 +1597,6 @@ ms.locfileid: "64746503"
 - الاختبارات.<!--no-hyperlink-->كوم
 - s-int.<!--no-hyperlink-->صافي
 
-
 ## <a name="azure-iot-connection-string"></a>سلسلة اتصال Azure IoT
 
 ### <a name="format"></a>تنسيق
@@ -1620,6 +1626,7 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي CEP_Regex_AzureIoTConnectionString عن المحتوى الذي يتطابق مع النمط.
 - لا يعثر التعبير العادي CEP_CommonExampleKeywords على محتوى يطابق النمط.
 
@@ -1651,7 +1658,6 @@ ms.locfileid: "64746503"
 - الاختبارات.<!--no-hyperlink-->كوم
 - s-int.<!--no-hyperlink-->صافي
 
-
 ## <a name="azure-publish-setting-password"></a>كلمة مرور إعداد نشر Azure
 
 ### <a name="format"></a>تنسيق
@@ -1671,9 +1677,9 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي CEP_Regex_AzurePublishSettingPasswords عن المحتوى الذي يتطابق مع النمط.
 - لا يعثر التعبير العادي CEP_CommonExampleKeywords على محتوى يطابق النمط.
-
 
 ```xml
 <!--Azure Publish Setting Password-->
@@ -1703,7 +1709,6 @@ ms.locfileid: "64746503"
 - الاختبارات.<!--no-hyperlink-->كوم
 - s-int.<!--no-hyperlink-->صافي
 
-
 ## <a name="azure-redis-cache-connection-string"></a>سلسلة اتصال ذاكرة التخزين المؤقت ل Azure Redis
 
 ### <a name="format"></a>تنسيق
@@ -1728,6 +1733,7 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي CEP_Regex_AzureRedisCacheConnectionString عن المحتوى الذي يتطابق مع النمط.
 - لا يعثر التعبير العادي CEP_CommonExampleKeywords على محتوى يطابق النمط.
 
@@ -1759,7 +1765,6 @@ ms.locfileid: "64746503"
 - الاختبارات.<!--no-hyperlink-->كوم
 - s-int.<!--no-hyperlink-->صافي
 
-
 ## <a name="azure-sas"></a>Azure SAS
 
 ### <a name="format"></a>تنسيق
@@ -1783,6 +1788,7 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي CEP_Regex_AzureSAS عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -1823,6 +1829,7 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي CEP_Regex_AzureServiceBusConnectionString عن المحتوى الذي يتطابق مع النمط.
 - لا يعثر التعبير العادي CEP_CommonExampleKeywords على محتوى يطابق النمط.
 
@@ -1854,7 +1861,6 @@ ms.locfileid: "64746503"
 - الاختبارات.<!--no-hyperlink-->كوم
 - s-int.<!--no-hyperlink-->صافي
 
-
 ## <a name="azure-storage-account-key"></a>مفتاح حساب تخزين Azure
 
 ### <a name="format"></a>تنسيق
@@ -1882,6 +1888,7 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي CEP_Regex_AzureStorageAccountKey عن المحتوى الذي يتطابق مع النمط.
 - لا يعثر التعبير العادي CEP_AzureEmulatorStorageAccountFilter على محتوى يطابق النمط.
 - لا يعثر التعبير العادي CEP_CommonExampleKeywords على محتوى يطابق النمط.
@@ -1921,7 +1928,6 @@ ms.locfileid: "64746503"
 - الاختبارات.<!--no-hyperlink-->كوم
 - s-int.<!--no-hyperlink-->صافي
 
-
 ## <a name="azure-storage-account-key-generic"></a>مفتاح حساب Azure Storage (عام)
 
 ### <a name="format"></a>تنسيق
@@ -1941,6 +1947,7 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي CEP_Regex_AzureStorageAccountKeyGeneric عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -1951,7 +1958,6 @@ ms.locfileid: "64746503"
   </Pattern>
 </Entity>
 ```
-
 
 ## <a name="belgium-drivers-license-number"></a>رقم رخصة القيادة في بلجيكا
 
@@ -1970,7 +1976,8 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_belgium_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+
+- يبحث التعبير `Regex_belgium_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_belgium_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
@@ -2087,7 +2094,7 @@ ms.locfileid: "64746503"
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -2123,7 +2130,6 @@ ms.locfileid: "64746503"
 - permis de conduire
 - numéro permis conduire
 
-
 ## <a name="belgium-national-number"></a>الرقم الوطني في بلجيكا
 
 ### <a name="format"></a>تنسيق
@@ -2133,6 +2139,7 @@ ms.locfileid: "64746503"
 ### <a name="pattern"></a>نمط
 
 11 رقما بالإضافة إلى المحددات:
+
 - ستة أرقام وفترتان اختياريتان بالتنسيق YY. MM.DD لتاريخ الميلاد
 - محدد اختياري من نقطة، شرطة، مسافة
 - ثلاثة أرقام متتالية (فردية للذكور، حتى للإناث)
@@ -2146,11 +2153,13 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_belgium_national_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_belgium_national_number.
 - يمر المجموع الاختباري.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة Func_belgium_national_number عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -2228,7 +2237,6 @@ ms.locfileid: "64746503"
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="belgium-passport-number"></a>رقم جواز سفر بلجيكا
 
 ### <a name="format"></a>تنسيق
@@ -2246,13 +2254,15 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
  يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_belgium_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_belgium_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_belgium_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_belgium_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date2` العادي عن التاريخ بالتنسيق DD MM YY أو كلمة أساسية من `Keywords_eu_passport_date` أو `Keywords_belgium_eu_passport_number` تم العثور عليها
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_belgium_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_belgium_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_belgium_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_belgium_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Belgium Passport Number -->
@@ -2313,7 +2323,6 @@ ms.locfileid: "64746503"
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="belgium-physical-addresses"></a>عناوين فعلية لبلكيا
 
 يكتشف هذا الكيان المسمى غير الملغى الأنماط المتعلقة بالعناوين الفعلية من بلجيكا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -2322,10 +2331,10 @@ ms.locfileid: "64746503"
 
 المتوسطه
 
-
 ## <a name="belgium-value-added-tax-number"></a>رقم الضريبة للقيمة المضافة في بلجيكا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -2356,10 +2365,12 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_belgium_value_added_tax_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_belgium_value_added_tax_number.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_belgium_value_added_tax_number عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -2389,7 +2400,6 @@ ms.locfileid: "64746503"
 - Btw #
 - ضريبه القيمه المضافه #
 
-
 ## <a name="blood-test-terms"></a>مصطلحات اختبار الدم
 
 يكشف هذا الكيان المسمى غير المفكك عن المصطلحات المتعلقة باختبارات الدم، مثل *hCG*. وهو يدعم مصطلحات اللغة الإنجليزية فقط. كما أنها مضمنة في [جميع الشروط والأحكام الطبية](#all-medical-terms-and-conditions) المجمعة المسماة ENTITY SIT.
@@ -2406,7 +2416,6 @@ ms.locfileid: "64746503"
 
 عاليه
 
-
 ## <a name="brazil-cpf-number"></a>رقم CPF في البرازيل
 
 ### <a name="format"></a>تنسيق
@@ -2416,6 +2425,7 @@ ms.locfileid: "64746503"
 ### <a name="pattern"></a>نمط
 
 تنسيق:
+
 - ثلاثة أرقام
 - فترة زمنية
 - ثلاثة أرقام
@@ -2425,6 +2435,7 @@ ms.locfileid: "64746503"
 - رقمان يتم التحقق من رقمين
 
 منسق:
+
 - 11 رقما يتم فيها التحقق من الرقمين الأخيرين
 
 ### <a name="checksum"></a>المجموع الاختباري
@@ -2434,11 +2445,13 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_brazil_cpf عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_brazil_cpf.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_brazil_cpf عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -2469,7 +2482,6 @@ ms.locfileid: "64746503"
 - Inscrição
 - Receita
 
-
 ## <a name="brazil-legal-entity-number-cnpj"></a>رقم الكيان القانوني البرازيلي (CNPJ)
 
 ### <a name="format"></a>تنسيق
@@ -2497,11 +2509,13 @@ ms.locfileid: "64746503"
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_brazil_cnpj عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_brazil_cnpj.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_brazil_cnpj عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -2542,7 +2556,6 @@ ms.locfileid: "64746503"
 - Inscrição
 - Empresa
 
-
 ## <a name="brazil-national-identification-card-rg"></a>بطاقة تعريف البرازيل الوطنية (RG)
 
 ### <a name="format"></a>تنسيق
@@ -2554,6 +2567,7 @@ Registro de Identidade (RIC) (تنسيق جديد): 11 رقما
 ### <a name="pattern"></a>نمط
 
 Registro غيرال (تنسيق قديم):
+
 - رقمين
 - فترة زمنية
 - ثلاثة أرقام
@@ -2563,6 +2577,7 @@ Registro غيرال (تنسيق قديم):
 - رقم واحد هو خانة اختيار
 
 Registro de Identidade (RIC) (تنسيق جديد):
+
 - 10 أرقام
 - واصلة
 - رقم واحد هو خانة اختيار
@@ -2574,10 +2589,10 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_brazil_rg عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_brazil_rg.
 - يمر المجموع الاختباري.
-
 
 ```xml
       <!-- Brazil National ID Card (RG) -->
@@ -2601,7 +2616,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - registrogeral
 - RG (هذه الكلمة الأساسية حساسة لحالة الأحرف)
 - RIC (هذه الكلمة الأساسية حساسة لحالة الأحرف)
-
 
 ## <a name="brazil-physical-addresses"></a>العناوين المادية في البرازيل
 
@@ -2628,8 +2642,9 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_bulgaria_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_bulgaria_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_bulgaria_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_bulgaria_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Bulgaria Driver's License Number -->
@@ -2745,7 +2760,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -2775,7 +2790,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - шофьорска книжка
 - шофьорски книжки
 
-
 ## <a name="bulgaria-passport-number"></a>رقم جواز سفر بلغاريا
 
 ### <a name="format"></a>تنسيق
@@ -2793,13 +2807,15 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_bulgaria_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_bulgaria_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_bulgaria_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_bulgaria_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date1` العادي عن التاريخ بالتنسيق DD.MM.YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_bulgaria_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_bulgaria_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_bulgaria_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_bulgaria_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Bulgaria Passport Number -->
@@ -2850,7 +2866,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="bulgaria-physical-addresses"></a>العناوين المادية لبلغاريا
 
 يكشف هذا الكيان المسمى غير الملغى عن الأنماط المتعلقة بالعنوان الفعلي من بلغاريا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -2861,6 +2876,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 
 ## <a name="bulgaria-uniform-civil-number"></a>الرقم المدني الموحد لبلغاريا
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -2887,11 +2903,13 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_bulgaria_eu_national_id_card` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_bulgaria_eu_national_id_card` .
+
+- تبحث الدالة `Func_bulgaria_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_bulgaria_eu_national_id_card` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_bulgaria_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_bulgaria_eu_national_id_card` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Bulgaria Uniform Civil Number -->
@@ -2957,7 +2975,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - униформгражданскиid #
 - униформгражданскине. #
 
-
 ## <a name="canada-bank-account-number"></a>رقم الحساب البنكي في كندا
 
 ### <a name="format"></a>تنسيق
@@ -2969,6 +2986,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 رقم الحساب البنكي في كندا هو 7 أو 12 رقما.
 
 رقم النقل لحساب كندا البنكي هو:
+
 - خمسة أرقام
 - واصلة
 - ثلاثة أرقام OR
@@ -2982,11 +3000,13 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_canada_bank_account_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_canada_bank_account_number.
 - يبحث التعبير العادي Regex_canada_bank_account_transit_number عن المحتوى الذي يتطابق مع النمط.
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_canada_bank_account_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_canada_bank_account_number.
 
@@ -3031,7 +3051,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - معلومات مصرفية
 - الإيداع المباشر
 
-
 ## <a name="canada-drivers-license-number"></a>رقم رخصة القيادة في كندا
 
 ### <a name="format"></a>تنسيق
@@ -3041,6 +3060,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="pattern"></a>نمط
 
 أنماط مختلفة تغطي:
+
 - البرتا
 - مقاطعة بريتامبيا البريطانية
 - مانيتوبا
@@ -3059,6 +3079,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_[province_name]_drivers_license_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_[province_name]_drivers_license_name.
 - تم العثور على كلمة أساسية من Keyword_canada_drivers_license.
@@ -3259,7 +3280,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - بطاقات التعريف #
 - تحديد #
 
-
 ## <a name="canada-health-service-number"></a>رقم خدمة الصحة في كندا
 
 ### <a name="format"></a>تنسيق
@@ -3277,6 +3297,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_canada_health_service_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_canada_health_service_number.
 
@@ -3306,7 +3327,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - تعويض العمال
 - الاعاقه
 
-
 ## <a name="canada-passport-number"></a>رقم جواز سفر كندا
 
 ### <a name="format"></a>تنسيق
@@ -3324,6 +3344,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_canada_passport_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_canada_passport_number أو Keyword_passport.
 
@@ -3374,7 +3395,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - PasseportNon
 - Passeportn °
 
-
 ## <a name="canada-personal-health-identification-number-phin"></a>رقم التعريف الصحي الشخصي لكندا (PHIN)
 
 ### <a name="format"></a>تنسيق
@@ -3392,6 +3412,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_canada_phin عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمتين أساسيتين على الأقل من Keyword_canada_phin أو Keyword_canada_provinces.
 
@@ -3445,7 +3466,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - جزيرة أدوارد الاميرة
 - كندا
 
-
 ## <a name="canada-physical-addresses"></a>العناوين الفعلية لكندا
 
 يكشف هذا الكيان المسمى غير المضني عن الأنماط المتعلقة بالعنوان الفعلي من كندا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -3453,7 +3473,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="canada-social-insurance-number"></a>رقم التأمين الاجتماعي في كندا
 
@@ -3464,6 +3483,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="pattern"></a>نمط
 
 تنسيق:
+
 - ثلاثة أرقام
 - واصلة أو مسافة
 - ثلاثة أرقام
@@ -3479,6 +3499,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_canadian_sin عن المحتوى الذي يتطابق مع النمط.
 - على الأقل نمطان من الأنماط التالية:
     - تم العثور على كلمة أساسية من Keyword_sin.
@@ -3487,6 +3508,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_unformatted_canadian_sin عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_sin.
 - يمر المجموع الاختباري.
@@ -3538,7 +3560,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - عيد ميلاد
 - تاريخ الميلاد
 
-
 ## <a name="chile-identity-card-number"></a>رقم بطاقة هوية تشيلي
 
 ### <a name="format"></a>تنسيق
@@ -3548,6 +3569,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="pattern"></a>نمط
 
 من سبعة إلى ثمانية أرقام بالإضافة إلى المحددات:
+
 - رقم إلى رقمين
 - فترة اختيارية
 - ثلاثة أرقام
@@ -3563,11 +3585,13 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_chile_id_card عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_chile_id_card.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_chile_id_card عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -3625,7 +3649,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - R.U.T
 - R.U.N
 
-
 ## <a name="china-resident-identity-card-prc-number"></a>رقم بطاقة هوية مقيمة في الصين (PRC)
 
 ### <a name="format"></a>تنسيق
@@ -3635,6 +3658,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="pattern"></a>نمط
 
 18 رقما:
+
 - ستة أرقام هي رمز عنوان
 - ثمانية أرقام في نموذج YYYYMMDD، وهي تاريخ الميلاد
 - ثلاثة أرقام هي رمز طلب
@@ -3647,11 +3671,13 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_china_resident_id عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_china_resident_id.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_china_resident_id عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -3683,7 +3709,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - 居民 身份證
 - 鑑定
 
-
 ## <a name="credit-card-number"></a>رقم بطاقة الائتمان
 
 ### <a name="format"></a>تنسيق
@@ -3701,14 +3726,16 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_credit_card عن المحتوى الذي يتطابق مع النمط.
 - أحد الإجراءات التالية صحيح:
-    - تم العثور على كلمة أساسية من Keyword_cc_verification.
-    - تم العثور على كلمة أساسية من Keyword_cc_name.
-    - تبحث الدالة Func_expiration_date عن تاريخ بتنسيق التاريخ الصحيح.
+  - تم العثور على كلمة أساسية من Keyword_cc_verification.
+  - تم العثور على كلمة أساسية من Keyword_cc_name.
+  - تبحث الدالة Func_expiration_date عن تاريخ بتنسيق التاريخ الصحيح.
 - يمر المجموع الاختباري.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة Func_credit_card عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -3833,6 +3860,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - بطاقة ائتمان
 - Cc #
 - نسخة#:
+
 - تاريخ انتهاء الصلاحية
 - تاريخ exp
 - تاريخ انتهاء الصلاحية
@@ -3988,7 +4016,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - 中国银联
 - 银联
 
-
 ## <a name="croatia-drivers-license-number"></a>رقم رخصة القيادة في كرواتيا
 
 ### <a name="format"></a>تنسيق
@@ -4007,7 +4034,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
-- يبحث التعبير  `Regex_croatia_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- يبحث التعبير `Regex_croatia_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_croatia_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
@@ -4124,7 +4151,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -4146,14 +4173,13 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_croatia_eu_drivers_license_number"></a>s_license_number Keywords_croatia_eu_driver
 
 - vozaصka dozvola
 - voza rangke dozvole
 
-
 ## <a name="croatia-identity-card-number"></a>رقم بطاقة هوية كرواتية
+
 يتم تضمين هذا الكيان في نوع المعلومات الحساسة لرقم التعريف الوطني للاتحاد الأوروبي. وهي متوفرة ككيان مستقل لنوع المعلومات الحساسة.
 
 ### <a name="format"></a>تنسيق
@@ -4171,6 +4197,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_croatia_id_card عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_croatia_id_card.
 
@@ -4217,7 +4244,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="croatia-passport-number"></a>رقم جواز سفر بورتواني
 
 ### <a name="format"></a>تنسيق
@@ -4235,13 +4261,15 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_croatia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_croatia_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_croatia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_croatia_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date1` العادي عن التاريخ بالتنسيق DD.MM.YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_croatia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_croatia_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_croatia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_croatia_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Croatia Passport Number -->
@@ -4266,6 +4294,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
         </Pattern>
       </Entity>
 ```
+
 ### <a name="keywords"></a>الكلمات الرئيسيه
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
@@ -4296,6 +4325,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="pattern"></a>نمط
 
 11 رقما:
+
 - 10 أرقام
 - الرقم الأخير هو خانة اختيار
 
@@ -4306,11 +4336,13 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_croatia_oib_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_croatia_eu_tax_file_number.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_croatia_oib_number عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -4360,7 +4392,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="croatia-physical-addresses"></a>عناوين مادية لكرواتيا
 
 يكشف هذا الكيان المسمى غير المحمل عنايات عن الأنماط المتعلقة بالعنوان الفعلي من كرواتيا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -4368,7 +4399,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="cyprus-drivers-license-number"></a>رقم ترخيص برامج التشغيل في البرنامج الرئيسي
 
@@ -4387,8 +4417,9 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_cyprus_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_cyprus_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_cyprus_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_cyprus_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Cyprus Driver's License Number -->
@@ -4504,7 +4535,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -4532,10 +4563,10 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - αριθμό άδειας οδήγησης
 - άδειες οδήγησης
 
-
 ## <a name="cyprus-identity-card"></a>بطاقة هوية للسينية
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -4557,8 +4588,9 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_cyprus_eu_national_id_card` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_cyprus_eu_national_id_card` .
+
+- يبحث التعبير `Regex_cyprus_eu_national_id_card` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_cyprus_eu_national_id_card` .
 
 ```xml
       <!-- Cyprus Identity Card -->
@@ -4581,7 +4613,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - رقم المعرف الشخصي
 - ταυτοτητασ
 
-
 ## <a name="cyprus-passport-number"></a>رقم جواز سفر سفر قبطي
 
 ### <a name="format"></a>تنسيق
@@ -4599,13 +4630,15 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_cyprus_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_cyprus_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_cyprus_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_cyprus_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_cyprus_eu_passport_date` العادي عن التاريخ بالتنسيق DD/MM/YYYY أو تم العثور على كلمة أساسية منه `Keywords_cyprus_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_cyprus_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_cyprus_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_cyprus_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_cyprus_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Cyprus Passport Number -->
@@ -4665,7 +4698,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - تنتهي الصلاحية في
 - تم الإصدار في
 
-
 ## <a name="cyprus-physical-addresses"></a>العناوين المادية للسينية
 
 يكشف هذا الكيان المسمى غير الملغى عن الأنماط المتعلقة بالعنوان الفعلي من أداة «المعالجة الفعلية». كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -4675,7 +4707,9 @@ Registro de Identidade (RIC) (تنسيق جديد):
 المتوسطه
 
 ## <a name="cyprus-tax-identification-number"></a>رقم التعريف الضريبي للسريبة
+
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -4701,11 +4735,13 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_cyprus_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_cyprus_eu_tax_file_number` .
+
+- تبحث الدالة `Func_cyprus_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_cyprus_eu_tax_file_number` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_cyprus_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_cyprus_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Cyprus Tax Identification Number -->
@@ -4750,7 +4786,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - φορολογική ταυτότητα
 - φορολογικού κωδικού
 
-
 ## <a name="czech-drivers-license-number"></a>رقم رخصة القيادة التشيكية
 
 ### <a name="format"></a>تنسيق
@@ -4773,8 +4808,9 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_czech_republic_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_czech_republic_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_czech_republic_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_czech_republic_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4890,7 +4926,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -4919,7 +4955,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - îíslo řidiîského průkazu
 - îísla řidiskůkazů
 
-
 ## <a name="czech-passport-number"></a>رقم جواز السفر التشيكي
 
 ### <a name="format"></a>تنسيق
@@ -4937,13 +4972,15 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_czech_republic_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_czech_republic_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_czech_republic_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_czech_republic_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date1` العادي عن التاريخ بالتنسيق DD.MM.YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_czech_republic_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_czech_republic_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_czech_republic_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_czech_republic_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Czech Republic Passport Number -->
@@ -4997,21 +5034,24 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="czech-personal-identity-number"></a>رقم الهوية الشخصية التشيكية
 
 ### <a name="format"></a>تنسيق
 
-تسعة أرقام مع شرطة مائلة للأمام اختيارية (تنسيق قديم) 10 أرقام مع شرطة مائلة للأمام اختيارية (تنسيق جديد)
+تسعة أرقام مع شرطة مائلة للأمام اختيارية (تنسيق قديم)
+
+10 أرقام مع شرطة مائلة للأمام اختيارية (تنسيق جديد)
 
 ### <a name="pattern"></a>نمط
 
 تسعة أرقام (تنسيق قديم):
+
 - ستة أرقام تمثل تاريخ الميلاد
 - شرطة مائلة للأمام اختيارية
 - ثلاثة أرقام
 
 10 أرقام (تنسيق جديد):
+
 - ستة أرقام تمثل تاريخ الميلاد
 - شرطة مائلة للأمام اختيارية
 - أربعة أرقام حيث الرقم الأخير هو خانة اختيار
@@ -5097,7 +5137,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - القصدير #
 - رقم تعريف فريد
 
-
 ## <a name="czech-republic-physical-addresses"></a>العناوين المادية للتشيك
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من جمهورية تشيكيا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -5123,8 +5162,9 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_denmark_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_denmark_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_denmark_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_denmark_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Denmark Driver's License Number -->
@@ -5240,7 +5280,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -5267,7 +5307,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - kørekort
 - kørekortnummer
 
-
 ## <a name="denmark-passport-number"></a>رقم جواز سفر الدانمارك
 
 ### <a name="format"></a>تنسيق
@@ -5285,13 +5324,15 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_denmark_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_denmark_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_denmark_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_denmark_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date2` العادي عن التاريخ بالتنسيق DD MM YY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_denmark_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_denmark_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_denmark_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_denmark_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Denmark Passport Number -->
@@ -5344,7 +5385,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="denmark-personal-identification-number"></a>رقم التعريف الشخصي للدانمرك
 
 ### <a name="format"></a>تنسيق
@@ -5354,6 +5394,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="pattern"></a>نمط
 
 10 أرقام:
+
 - ستة أرقام بتنسيق DD ولاي، وهي تاريخ الميلاد
 - مسافة اختيارية أو واصلة اختيارية
 - أربعة أرقام حيث الرقم النهائي هو خانة اختيار
@@ -5365,11 +5406,13 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Func_denmark_eu_tax_file_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_denmark_id.
 - يمر المجموع الاختباري.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - يبحث التعبير العادي Func_denmark_eu_tax_file_number عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -5461,7 +5504,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - sygesikringsnr
 - sygesikringsnummer
 
-
 ## <a name="denmark-physical-addresses"></a>عناوين الدانمارك المادية
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من الدانمارك. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -5470,7 +5512,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 
 المتوسطه
 
-
 ## <a name="diseases"></a>الامراض
 
 يكشف هذا الكيان المسمى غير الملغى عن النص الذي يطابق أسماء الأمراض، مثل *مرض السكري*. وهو يدعم مصطلحات اللغة الإنجليزية فقط. كما أنها مضمنة في [جميع الشروط والأحكام الطبية](#all-medical-terms-and-conditions) المجمعة المسماة ENTITY SIT.
@@ -5478,7 +5519,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="confidence-level"></a>مستوى الثقة
 
 عاليه
-
 
 ## <a name="drug-enforcement-agency-dea-number"></a>رقم وكالة إنفاذ مكافحة الأدوية (DEA)
 
@@ -5489,6 +5529,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="pattern"></a>نمط
 
 يجب أن يتضمن النمط كل ما يلي:
+
 - حرف واحد (غير حساس لحالة الأحرف) من هذه المجموعة من الأحرف المحتملة: A/B/F/G/M/P/R، وهو رمز مسجل
 - حرف واحد (غير حساس لحالة الأحرف)، وهو الحرف الأول من اسم عائلة المسجل أو رقمه '9'
 - سبعة أرقام، آخرها رقم الاختيار
@@ -5500,11 +5541,13 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_dea_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من `Keyword_dea_number`
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_dea_number عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -5537,7 +5580,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - إدارة إنفاذ مكافحة الأدوية
 - وكالة إنفاذ مكافحة الأدوية
 
-
 ## <a name="estonia-drivers-license-number"></a>رقم رخصة القيادة الإستونية
 
 ### <a name="format"></a>تنسيق
@@ -5558,8 +5600,9 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_estonia_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_estonia_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_estonia_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_estonia_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Estonia Driver's License Number -->
@@ -5675,7 +5718,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -5704,7 +5747,6 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - رقم juhiloa
 - جهوبوبا
 
-
 ## <a name="estonia-passport-number"></a>رقم جواز السفر الإستوني
 
 ### <a name="format"></a>تنسيق
@@ -5722,13 +5764,15 @@ Registro de Identidade (RIC) (تنسيق جديد):
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_estonia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_estonia_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_estonia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_estonia_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date1` العادي عن التاريخ بالتنسيق DD.MM.YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_estonia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_estonia_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_estonia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_estonia_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Estonia Passport Number -->
@@ -5778,10 +5822,10 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="estonia-personal-identification-code"></a>رمز التعريف الشخصي الإستوني
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -5808,11 +5852,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_estonia_eu_national_id_card` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_estonia_eu_national_id_card` .
+
+- تبحث الدالة `Func_estonia_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_estonia_eu_national_id_card` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_estonia_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_estonia_eu_national_id_card` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Estonia Personal Identification Code -->
@@ -5866,7 +5912,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="estonia-physical-addresses"></a>العناوين المادية في  الإستونية
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من استونيا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -5874,7 +5919,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="eu-debit-card-number"></a>رقم بطاقة خصم الاتحاد الأوروبي
 
@@ -5893,6 +5937,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_eu_debit_card عن المحتوى الذي يتطابق مع النمط.
 - واحد على الأقل مما يلي صحيح:
     - تم العثور على كلمة أساسية من Keyword_eu_debit_card.
@@ -6225,7 +6270,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - vto
 - válido hasta
 
-
 ## <a name="eu-drivers-license-number"></a>رقم رخصة القيادة في الاتحاد الأوروبي
 
 هذه الكيانات موجودة في رقم رخصة القيادة في الاتحاد الأوروبي وهي أنواع معلومات حساسة.
@@ -6259,7 +6303,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - [السويد](#sweden-drivers-license-number)
 - [بريطانيا.](#uk-drivers-license-number)
 
-
 ## <a name="eu-national-identification-number"></a>رقم التعريف الوطني للاتحاد الأوروبي
 
 هذه الكيانات موجودة في رقم التعريف الوطني للاتحاد الأوروبي وهي أنواع معلومات حساسة.
@@ -6291,7 +6334,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - [سلوفينيا](#slovenia-unique-master-citizen-number)
 - [إسبانيا](#spain-dni)
 - [بريطانيا.](#uk-national-insurance-number-nino)
-
 
 ## <a name="eu-passport-number"></a>رقم جواز سفر الاتحاد الأوروبي
 
@@ -6326,7 +6368,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - [السويد](#sweden-passport-number)
 - [رقم جواز سفر الولايات المتحدة/المملكة المتحدة](#usuk-passport-number)
 
-
 ## <a name="eu-social-security-number-or-equivalent-identification"></a>رقم الضمان الاجتماعي في الاتحاد الأوروبي أو التعريف المكافئ
 
 هذه هي الكيانات الموجودة في رقم الضمان الاجتماعي للاتحاد الأوروبي أو التعريف المكافئ وهي أنواع معلومات حساسة.
@@ -6344,7 +6385,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - [البرتغال](#portugal-citizen-card-number)
 - [إسبانيا](#spain-social-security-number-ssn)
 - [السويد](#sweden-national-id)
-
 
 ## <a name="eu-tax-identification-number"></a>رقم التعريف الضريبي للاتحاد الأوروبي
 
@@ -6379,7 +6419,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - [السويد](#sweden-tax-identification-number)
 - [بريطانيا.](#uk-unique-taxpayer-reference-number)
 
-
 ## <a name="finland-drivers-license-number"></a>رقم رخصة القيادة في فنلندا
 
 ### <a name="format"></a>تنسيق
@@ -6402,8 +6441,9 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_finland_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_finland_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_finland_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_finland_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Finland Driver's License Number -->
@@ -6519,7 +6559,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -6541,7 +6581,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_finland_eu_drivers_license_number"></a>s_license_number Keywords_finland_eu_driver
 
 - ajokortti
@@ -6554,10 +6593,10 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - ajokortit
 - ajokortin numerot
 
-
 ## <a name="finland-european-health-insurance-number"></a>رقم التأمين الصحي الأوروبي ل فنلندا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -6583,6 +6622,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث Regex_Finland_European_Health_Insurance_Number regex عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من Keyword_Finland_European_Health_Insurance_Number.
 
@@ -6615,7 +6655,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - suomen sairausvakuutuskortti
 - terveyskortti
 
-
 ## <a name="finland-national-id"></a>المعرف الوطني ل فنلندا
 
 ### <a name="format"></a>تنسيق
@@ -6625,6 +6664,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="pattern"></a>نمط
 
 يجب أن يتضمن النمط كل ما يلي:
+
 - ستة أرقام بتنسيق DD ولاي، وهي تاريخ الميلاد
 - علامة القرن (إما '-' أو '+' أو 'a')
 - رقم التعريف الشخصي المكون من ثلاثة أرقام
@@ -6637,11 +6677,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_finnish_national_id عن المحتوى الذي يطابق النمط
 - تم العثور على كلمة أساسية من Keyword_finnish_national_id
 - تمريرات المجموع الاختباري
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_finnish_national_id عن المحتوى الذي يطابق النمط
 - تمريرات المجموع الاختباري
 
@@ -6708,7 +6750,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - verotunniste
 - verotunnus
 
-
 ## <a name="finland-passport-number"></a>رقم جواز سفر فنلندا
 
 يتوفر هذا الكيان في نوع المعلومات الحساسة "رقم جواز سفر الاتحاد الأوروبي" ويتوفر ككيان مستقل لنوع المعلومات الحساسة.
@@ -6717,7 +6758,9 @@ eesti kodaniku passi number passinumbrid document number document document no do
 تركيبة من تسعة أحرف وأرقام
 
 ### <a name="pattern"></a>نمط
+
 تركيبة من تسعة أحرف وأرقام:
+
 - حرفان (غير حساس لحالة الأحرف)
 - سبعة أرقام
 
@@ -6728,11 +6771,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير `Regex_finland_passport_number` العادي عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keyword_finland_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date1` العادي عن التاريخ بالتنسيق DD.MM.YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير `Regex_finland_passport_number` العادي عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keyword_finland_passport_number` تم العثور عليها.
 
@@ -6789,7 +6834,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="finland-physical-addresses"></a>عناوين فنلندا المادية
 
 يكتشف هذا الكيان المسمى غير الملغى الأنماط المتعلقة بالعنوان الفعلي من فنلندا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -6797,7 +6841,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="france-drivers-license-number"></a>رقم رخصة القيادة في فرنسا
 
@@ -6818,6 +6861,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_french_drivers_license عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_french_drivers_license.
 
@@ -6932,7 +6976,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -6960,10 +7004,10 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - أرقام التراخيص
 - numéros de licence
 
-
 ## <a name="france-health-insurance-number"></a>رقم التأمين الصحي في فرنسا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -6984,7 +7028,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - مساحة اختيارية
 - رقم
 
-
 ### <a name="checksum"></a>المجموع الاختباري
 
 لا
@@ -6992,6 +7035,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث Regex_France_Health_Insurance_Number regex عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من Keyword_France_Health_Insurance_Number.
 
@@ -7012,7 +7056,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - carte vitale
 - carte d'assuré social
 
-
 ## <a name="france-national-id-card-cni"></a>بطاقة المعرف الوطنية الفرنسية (CNI)
 
 ### <a name="format"></a>تنسيق
@@ -7030,6 +7073,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - يبحث التعبير العادي Regex_france_cni عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_france_eu_national_id_card.
 
@@ -7059,7 +7103,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - numéro d'assurance maladie
 - numéro de carte vitale
 
-
 ## <a name="france-passport-number"></a>رقم جواز سفر فرنسا
 
 يتوفر هذا الكيان في نوع المعلومات الحساسة لرقم جواز سفر الاتحاد الأوروبي. كما أنها متوفرة ككيان مستقل لنوع المعلومات الحساسة.
@@ -7071,6 +7114,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="pattern"></a>نمط
 
 تسعة أرقام وأحرف:
+
 - رقمين
 - حرفان (غير حساس لحالة الأحرف)
 - خمسة أرقام
@@ -7082,14 +7126,15 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_fr_passport` عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_france_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date3` العادي عن التاريخ بالتنسيق DD MM YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_fr_passport` عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_france_eu_passport_number` تم العثور عليها.
-
 
 ```xml
     <!-- France Passport Number -->
@@ -7152,7 +7197,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="france-physical-addresses"></a>عناوين فرنسا الفعلية
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من فرنسا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -7160,7 +7204,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="france-social-security-number-insee"></a>رقم الضمان الاجتماعي (INSEE) في فرنسا
 
@@ -7171,8 +7214,11 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="pattern"></a>نمط
 
 يجب أن تتطابق مع أحد النمطين:
-- 13 رقما متبوعا بمسافة متبوعة برقمين<br/>
-او
+
+- 13 رقما متبوعا بمسافة متبوعة برقمين
+
+  او
+
 - 15 رقما متتاليا
 
 ### <a name="checksum"></a>المجموع الاختباري
@@ -7182,11 +7228,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_french_insee` عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من Keyword_fr_insee.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_french_insee أو Func_fr_insee عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -7237,7 +7285,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - رمز الضمان الاجتماعي
 - رقم التأمين الاجتماعي
 
-
 ## <a name="france-tax-identification-number"></a>رقم التعريف الضريبي في فرنسا
 
 ### <a name="format"></a>تنسيق
@@ -7259,7 +7306,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - مسافة (اختياري)
 - ثلاثة خانات اختيار رقمية
 
-
 ### <a name="checksum"></a>المجموع الاختباري
 
 نعم
@@ -7267,11 +7313,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_france_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_france_eu_tax_file_number` .
+
+- تبحث الدالة `Func_france_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_france_eu_tax_file_number` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_france_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_france_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- France Tax Identification Number (numéro SPI.) -->
@@ -7313,10 +7361,10 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="france-value-added-tax-number"></a>رقم الضريبة للقيمة المضافة في فرنسا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -7348,10 +7396,12 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_france_value_added_tax_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_france_value_added_tax_number.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_france_value_added_tax_number عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -7381,7 +7431,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - numéro de tva
 - numéro d'identification en
 
-
 ## <a name="generic-medication-names"></a>أسماء الأدوية العامة
 
 يكتشف هذا الكيان المسمى غير المحمل باسم أسماء الأدوية المعممة، مثل *الأكيتمينوفين*. وهو يدعم مصطلحات اللغة الإنجليزية فقط. كما أنها مضمنة في [جميع الشروط والأحكام الطبية](#all-medical-terms-and-conditions) المجمعة المسماة ENTITY SIT.
@@ -7389,7 +7438,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="confidence-level"></a>مستوى الثقة
 
 عاليه
-
 
 ## <a name="germany-drivers-license-number"></a>رقم رخصة القيادة في ألمانيا
 
@@ -7402,6 +7450,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="pattern"></a>نمط
 
 11 رقما وحرفا (غير حساس لحالة الأحرف):
+
 - رقم أو حرف
 - رقمين
 - ستة أرقام أو أحرف
@@ -7415,6 +7464,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_german_drivers_license عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_german_drivers_license_number.
 - يمر المجموع الاختباري.
@@ -7444,9 +7494,9 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - führerscheinnummer
 - عدد الفوهررساتشيين
 - fuehrerscheinnummer
-- führerschein- 
-- fuhrerschein- 
-- fuehrerschein- 
+- führerschein-
+- fuhrerschein-
+- fuehrerschein-
 - führerscheinnummernr
 - fuhrerscheinnummernr
 - fuehrerscheinnummernr
@@ -7560,7 +7610,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -7580,7 +7630,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - رخصة القيادة
 - dlno
 
-
 ## <a name="germany-identity-card-number"></a>رقم بطاقة الهوية في ألمانيا
 
 ### <a name="format"></a>تنسيق
@@ -7598,6 +7647,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - d/D اختياري
 
 من 1 أبريل 1987 حتى 31 أكتوبر 2010:
+
 - 10 أرقام
 
 ### <a name="checksum"></a>المجموع الاختباري
@@ -7607,34 +7657,36 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_german_id_card_with_check` عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية منها `Keyword_germany_id_card` .
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي عن `Regex_germany_id_card` المحتوى الذي يطابق النمط (9 أحرف بدون خانة اختيار تم إصدارها قبل 2010 أو 10 أرقام تم إصدارها في 2010).
 - تم العثور على كلمة أساسية من Keyword_germany_id_card.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة `Func_german_id_card_with_check` عن المحتوى الذي يطابق النمط.
 - يمر المجموع الاختباري.
 
-
 ```xml
       <!-- Germany Identity Card Number -->
-      <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" patternsProximity="300" recommendedConfidence="75"> 
+      <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-         <IdMatch idRef="Regex_germany_id_card" /> 
-         <Match idRef="Keyword_germany_id_card" /> 
+         <IdMatch idRef="Regex_germany_id_card" />
+         <Match idRef="Keyword_germany_id_card" />
         </Pattern>
-        <Version minEngineVersion="15.20.4545.000"> 
+        <Version minEngineVersion="15.20.4545.000">
           <Pattern confidenceLevel="85">
            <IdMatch idRef="Func_german_id_card_with_check" />
-            <Match idRef="Keyword_germany_id_card" /> 
-          </Pattern> 
+            <Match idRef="Keyword_germany_id_card" />
+          </Pattern>
           <Pattern confidenceLevel="65">
-           <IdMatch idRef="Func_german_id_card_with_check" /> 
-          </Pattern> 
+           <IdMatch idRef="Func_german_id_card_with_check" />
+          </Pattern>
         </Version>
       </Entity>
 ```
@@ -7657,7 +7709,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - persönliche identifikationsnummer
 - persönliche-id-nummer
 
-
 ## <a name="germany-passport-number"></a>رقم جواز سفر ألمانيا
 
 ### <a name="format"></a>تنسيق
@@ -7678,15 +7729,18 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_german_passport_checksum` عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من `Keyword_german_passport` أو `Keywords_eu_passport_number_common` تم العثور عليها.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_german_passport` عن المحتوى الذي يتطابق مع نمط الأحرف التسعة (بدون خانة اختيار الرقم والاختياري d/D).
 - تم العثور على كلمة أساسية من `Keyword_german_passport` أو `Keywords_eu_passport_number_common` تم العثور عليها.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة `Func_german_passport_checksum` عن المحتوى الذي يطابق النمط.
 - يمر المجموع الاختباري.
 
@@ -7742,7 +7796,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - رقم جواز سفر
 - أرقام جواز السفر
 
-
 ## <a name="germany-physical-addresses"></a>عناوين ألمانيا الفعلية
 
 يكتشف هذا الكيان المسمى غير الملغى الأنماط المتعلقة بالعنوان الفعلي من ألمانيا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -7750,7 +7803,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="germany-tax-identification-number"></a>رقم التعريف الضريبي في ألمانيا
 
@@ -7778,11 +7830,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_germany_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_germany_eu_tax_file_number` .
+
+- تبحث الدالة `Func_germany_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_germany_eu_tax_file_number` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_germany_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_germany_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Germany Tax Identification Number -->
@@ -7825,10 +7879,10 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - زين
 - zinnnummer
 
-
 ## <a name="germany-value-added-tax-number"></a>رقم ضريبة القيمة المضافة في ألمانيا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -7859,10 +7913,12 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_germany_value_added_tax_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_germany_value_added_tax_number.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_germany_value_added_tax_number عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -7889,7 +7945,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - mehrwertsteuer identifikationsnummer
 - mehrwertsteuer nummer
 
-
 ## <a name="greece-drivers-license-number"></a>رقم رخصة القيادة في اليونان
 
 يتم تضمين هذا الكيان في نوع المعلومات الحساسة لرقم رخصة القيادة في الاتحاد الأوروبي. كما أنها متوفرة ككيان مستقل لنوع المعلومات الحساسة.
@@ -7909,8 +7964,9 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_greece_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_greece_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_greece_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_greece_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Greece Driver's License Number -->
@@ -8026,7 +8082,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -8048,14 +8104,12 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_greece_eu_drivers_license_number"></a>s_license_number Keywords_greece_eu_driver
 
 - δεια οδήγησης
 - Adeia odigisis
 - Άδεια οδήγησης
 - Δίπλωμα οδήγησης
-
 
 ## <a name="greece-national-id-card"></a>بطاقة المعرف الوطنية في اليونان
 
@@ -8066,11 +8120,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="pattern"></a>نمط
 
 سبعة أحرف وأرقام (تنسيق قديم):
+
 - حرف واحد (أي حرف من الأبجدية اليونانية)
 - شرطة
 - ستة أرقام
 
 ثمانية أحرف وأرقام (تنسيق جديد):
+
 - حرفان يقع حرفهما العلوي في كل من الحروف الأبجدية اليونانية واللاتينية (ABEZHIKMNOPTYX)
 - شرطة
 - ستة أرقام
@@ -8082,10 +8138,12 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_greece_id_card عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_greece_id_card.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - يبحث التعبير العادي Regex_greece_id_card عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -8114,7 +8172,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - ταυτότητα
 - ταυτότητας
 
-
 ## <a name="greece-passport-number"></a>رقم جواز سفر اليونان
 
 ### <a name="format"></a>تنسيق
@@ -8132,13 +8189,15 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_greece_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_greece_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_greece_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_greece_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_greece_eu_passport_date` العادي عن التاريخ بالتنسيق DD MMM YY (مثال - 28 أغسطس 19) أو تم العثور على كلمة أساسية منه `Keywords_greece_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_greece_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_greece_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_greece_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_greece_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Greece Passport Number -->
@@ -8185,7 +8244,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - αριθμούς διαβατηρίου
 - αριθμός διαβατηριο
 
-
 ## <a name="greece-physical-addresses"></a>عناوين مادية في اليونان
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من اليونان. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -8197,6 +8255,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ## <a name="greece-social-security-number-amka"></a>رقم الضمان الاجتماعي في اليونان (AMKA)
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -8220,11 +8279,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_greece_eu_ssn` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_greece_eu_ssn_or_equivalent` .
+
+- تبحث الدالة `Func_greece_eu_ssn` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_greece_eu_ssn_or_equivalent` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_greece_eu_ssn` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_greece_eu_ssn` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Greece Social Security Number (AMKA) -->
@@ -8252,10 +8313,10 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - a.m.k.a.
 - Αριθμού Μητρώου Κοινωνικής Ασφάλισης
 
-
 ## <a name="greece-tax-identification-number"></a>رقم التعريف الضريبي في اليونان
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -8278,8 +8339,8 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
-- يبحث التعبير  `Regex_greece_eu_tax_file_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_greece_eu_tax_file_number` .
+- يبحث التعبير `Regex_greece_eu_tax_file_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_greece_eu_tax_file_number` .
 
 ```xml
       <!-- Greek Tax Identification Number -->
@@ -8322,7 +8383,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - τον αριθμό φορολογικού μητρώου
 - φορολογικού μητρώου νο
 
-
 ## <a name="hong-kong-identity-card-hkid-number"></a>رقم بطاقة هوية هونغ كونغ (HKID)
 
 ### <a name="format"></a>تنسيق
@@ -8332,6 +8392,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="pattern"></a>نمط
 
 تركيبة من 8-9 أحرف:
+
 - 1-2 حرف (غير حساس لحالة الأحرف)
 - ستة أرقام
 - مساحة اختيارية
@@ -8344,11 +8405,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_hong_kong_id_card عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_hong_kong_id_card.
 - يمر المجموع الاختباري.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة Func_hong_kong_id_card عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -8407,7 +8470,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - 香港特別行政區非永久性居民身分證
 - 香港特別行政區非永久性居民身分証
 
-
 ## <a name="hungary-drivers-license-number"></a>رقم رخصة القيادة في المجر
 
 ### <a name="format"></a>تنسيق
@@ -8429,8 +8491,8 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
-- يبحث التعبير  `Regex_hungary_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_hungary_eu_driver's_license_number` تم العثور عليها.
+- يبحث التعبير `Regex_hungary_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_hungary_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
@@ -8545,7 +8607,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -8567,13 +8629,11 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_hungary_eu_drivers_license_number"></a>s_license_number Keywords_hungary_eu_driver
 
 - vezetoi engedely
 - vezetői engedély
 - vezetői engedélyek
-
 
 ## <a name="hungary-passport-number"></a>رقم جواز سفر المجر
 
@@ -8592,13 +8652,15 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_hungary_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_hungary_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_hungary_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_hungary_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_hungary_eu_passport_date` العادي عن التاريخ بالتنسيق DD MMM/MMM YY (مثال - 01 MÁR/MAR 12) أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_hungary_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_hungary_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_hungary_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_hungary_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Hungary Passport Number -->
@@ -8649,10 +8711,10 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="hungary-personal-identification-number"></a>رقم التعريف الشخصي في المجر
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -8680,12 +8742,12 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
-- تبحث الدالة  `Func_hungary_eu_national_id_card` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_hungary_eu_national_id_card` .
+- تبحث الدالة `Func_hungary_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_hungary_eu_national_id_card` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
-- تبحث الدالة  `Func_hungary_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+- تبحث الدالة `Func_hungary_eu_national_id_card` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Hungary Personal Identification Number -->
@@ -8716,7 +8778,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - személyazonosító igazolvány
 - személyi igazolvány
 
-
 ## <a name="hungary-physical-addresses"></a>العناوين المادية في المجر
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من المجر. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -8724,7 +8785,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="hungary-social-security-number-taj"></a>رقم الضمان الاجتماعي في المجر (TAJ)
 
@@ -8744,12 +8804,12 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
-- تبحث الدالة  `Func_hungary_eu_ssn_or_equivalent` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_hungary_eu_ssn_or_equivalent` .
+- تبحث الدالة `Func_hungary_eu_ssn_or_equivalent` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_hungary_eu_ssn_or_equivalent` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
-- تبحث الدالة  `Func_hungary_eu_ssn_or_equivalent` عن المحتوى الذي يطابق النمط.
+- تبحث الدالة `Func_hungary_eu_ssn_or_equivalent` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Hungarian Social Security Number (TAJ) -->
@@ -8786,10 +8846,10 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - áfa szám
 - magyar áfa szám
 
-
 ## <a name="hungary-tax-identification-number"></a>رقم التعريف الضريبي في المجر
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -8816,12 +8876,12 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
-- تبحث الدالة  `Func_hungary_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_hungary_eu_tax_file_number` .
+- تبحث الدالة `Func_hungary_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_hungary_eu_tax_file_number` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
-- تبحث الدالة  `Func_hungary_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تبحث الدالة `Func_hungary_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Hungary Tax Identification Number -->
@@ -8868,10 +8928,10 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - القصدير #
 - رقم ضريبة القيمة المضافة
 
-
 ## <a name="hungary-value-added-tax-number"></a>رقم الضريبة للقيمة المضافة في المجر
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -8934,7 +8994,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - hozzáadottérték adó
 - áfa szám
 
-
 ## <a name="iceland-physical-addresses"></a>عناوين آيسلندا المادية
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من أيسلندا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -8951,7 +9010,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 عاليه
 
-
 ## <a name="india-drivers-license-number"></a>رقم رخصة القيادة في الهند
 
 ### <a name="format"></a>تنسيق
@@ -8961,6 +9019,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="pattern"></a>نمط
 
 15 حرفا أو رقما:
+
 - حرفان يشيران إلى رمز الحالة
 - مسافة اختيارية أو شرطة اختيارية
 - رقمان يشيران إلى رمز المدينة
@@ -8976,12 +9035,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير `Regex_india_driving_license` العادي عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية منها `Keywords_eu_driver's_license_number_common` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير `Regex_india_driving_license` العادي عن المحتوى الذي يطابق النمط.
 
+- يبحث التعبير `Regex_india_driving_license` العادي عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- India Driver's License Number -->
@@ -9097,7 +9157,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -9119,8 +9179,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - dlno
 - رقم dl
 
-
-
 ## <a name="india-gst-number"></a>رقم GST في الهند
 
 ### <a name="format"></a>تنسيق
@@ -9130,9 +9188,10 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="pattern"></a>نمط
 
 15 حرفا أو رقما:
+
 - رقمان يمثلان رمز حالة صالح
 - مسافة اختيارية أو شرطة اختيارية
-- عشرة أحرف تمثل رقم الحساب الدائم (PAN) 
+- عشرة أحرف تمثل رقم الحساب الدائم (PAN)
 - حرف واحد أو رقم واحد
 - مسافة اختيارية أو شرطة اختيارية
 - حرف واحد 'z' أو 'Z'
@@ -9146,12 +9205,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_india_gst_number` عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية منها `Keyword_india_gst_number` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة `Func_india_gst_number` عن المحتوى الذي يطابق النمط.
 
+- تبحث الدالة `Func_india_gst_number` عن المحتوى الذي يطابق النمط.
 
 ```xml
     <!-- India GST number  -->
@@ -9175,7 +9235,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - ضريبة السلع والخدمات
 - ضريبة السلع والخدمات
 
-
 ## <a name="india-permanent-account-number-pan"></a>رقم الحساب الدائم في الهند (PAN)
 
 ### <a name="format"></a>تنسيق
@@ -9185,6 +9244,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="pattern"></a>نمط
 
 10 أحرف أو أرقام:
+
 - ثلاثة أحرف (غير حساسة لحالة الأحرف)
 - حرف في C وP وH وF وA وT وB وL وJ وG (غير حساس لحالة الأحرف)
 - رسالة
@@ -9198,12 +9258,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_india_permanent_account_number عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من Keyword_india_permanent_account_number.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
-- يبحث التعبير العادي Regex_india_permanent_account_number عن المحتوى الذي يطابق النمط.
 
+- يبحث التعبير العادي Regex_india_permanent_account_number عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- India Permanent Account Number -->
@@ -9236,6 +9297,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="pattern"></a>نمط
 
 12 رقما:
+
 - رقم ليس 0 أو 1
 - ثلاثة أرقام
 - مسافة اختيارية أو شرطة اختيارية
@@ -9250,6 +9312,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_india_aadhaar عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_india_aadhar.
 - يمر المجموع الاختباري.
@@ -9281,7 +9344,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - आधार
 - uidai
 
-
 ## <a name="india-voter-id-card"></a>بطاقة هوية المقترعين في الهند
 
 ### <a name="format"></a>تنسيق
@@ -9291,6 +9353,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="pattern"></a>نمط
 
 10 أحرف أو أرقام:
+
 - ثلاثة أحرف
 - سبعة أرقام
 
@@ -9301,12 +9364,13 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير `Regex_india_voter_id_card` العادي عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية منها `Keyword_india_voter_id_card` .
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
-- يبحث التعبير `Regex_india_voter_id_card` العادي عن المحتوى الذي يطابق النمط.
 
+- يبحث التعبير `Regex_india_voter_id_card` العادي عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- India Voter Id Card  -->
@@ -9334,7 +9398,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - ECI
 - فاصلة الانتخابات
 
-
 ## <a name="indonesia-identity-card-ktp-number"></a>رقم بطاقة هوية إندونيسيا (KTP)
 
 ### <a name="format"></a>تنسيق
@@ -9344,6 +9407,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 ### <a name="pattern"></a>نمط
 
 16 رقما:
+
 - رمز المقاطعة المكون من رقمين
 - فترة زمنية (اختيارية)
 - رمز المدينة أو رمز المدينة المكون من رقمين
@@ -9482,7 +9546,6 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 None
 
-
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>التصنيف الدولي الأمراض (ICD-10-CM)
 
 ### <a name="format"></a>تنسيق
@@ -9500,10 +9563,12 @@ None
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تم العثور على كلمة أساسية من Dictionary_icd_10_updated.
 - تم العثور على كلمة أساسية من Dictionary_icd_10_codes.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تم العثور على كلمة أساسية من Dictionary_icd_10_ محدثة.
 
 ```xml
@@ -9525,7 +9590,6 @@ Any term from the Dictionary_icd_10_updated keyword dictionary, which is based o
 
 أي مصطلح من قاموس الكلمات الأساسية Dictionary_icd_10_codes، والذي يستند إلى [التصنيف الدولي للمرضى، المراجعة العاشرة، التعديل الإكلينيكي (ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) يبحث هذا النوع عن رموز التأمين فقط، وليس الوصف.
 
-
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>التصنيف الدولي الأمراض (ICD-9-CM)
 
 ### <a name="format"></a>تنسيق
@@ -9543,10 +9607,12 @@ Any term from the Dictionary_icd_10_updated keyword dictionary, which is based o
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تم العثور على كلمة أساسية من Dictionary_icd_9_updated.
 - تم العثور على كلمة أساسية من Dictionary_icd_9_codes.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تم العثور على كلمة أساسية من Dictionary_icd_9_updated.
 
 ```xml
@@ -9586,19 +9652,22 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 بالنسبة إلى IPv6، يتمتع نهج DLP بثقة عالية بأنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_ipv6_address عن المحتوى الذي يتطابق مع النمط.
 - لم يتم العثور على كلمة أساسية من Keyword_ipaddress.
 
 بالنسبة إلى IPv4، يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_ipv4_address عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من Keyword_ipaddress.
 
 بالنسبة إلى IPv6، يتمتع نهج DLP بثقة عالية بأنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_ipv6_address عن المحتوى الذي يتطابق مع النمط.
 - لم يتم العثور على كلمة أساسية من Keyword_ipaddress.
 
 ```xml
-    <!-- IP Address --> 
+    <!-- IP Address -->
     <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Regex_ipv6_address" />
@@ -9631,7 +9700,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - بروتوكول الإنترنت
 - IP-כתובת ה
 
-
 ## <a name="ip-address-v4"></a>عنوان IP v4
 
 ### <a name="format"></a>تنسيق
@@ -9640,7 +9708,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 ### <a name="pattern"></a>نمط
 
-
 ### <a name="checksum"></a>المجموع الاختباري
 
 لا
@@ -9648,15 +9715,16 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير `Regex_ipv4_address` العادي عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية منها `Keyword_ipaddress` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير `Regex_ipv4_address` العادي عن المحتوى الذي يطابق النمط.
 
-
 ```xml
-      <!-- IP Address v4--> 
+      <!-- IP Address v4-->
       <Entity id="a7dd5e5f-e7f9-4626-a2c6-86a8cb6830d2" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Regex_ipv4_address" />
@@ -9678,7 +9746,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - بروتوكول الإنترنت
 - IP-כתובת ה
 
-
 ## <a name="ip-address-v6"></a>عنوان IP v6
 
 ### <a name="format"></a>تنسيق
@@ -9687,7 +9754,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 ### <a name="pattern"></a>نمط
 
-
 ### <a name="checksum"></a>المجموع الاختباري
 
 لا
@@ -9695,12 +9761,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير `Regex_ipv6_address` العادي عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية منها `Keyword_ipaddress` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير `Regex_ipv6_address` العادي عن المحتوى الذي يطابق النمط.
 
+- يبحث التعبير `Regex_ipv6_address` العادي عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- IP Address v6-->
@@ -9725,7 +9792,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - بروتوكول الإنترنت
 - IP-כתובת ה
 
-
 ## <a name="ireland-drivers-license-number"></a>رقم رخصة القيادة في أيرلندا
 
 ### <a name="format"></a>تنسيق
@@ -9747,8 +9813,8 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
-- يبحث التعبير  `Regex_ireland_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_ireland_eu_driver's_license_number` تم العثور عليها.
+- يبحث التعبير `Regex_ireland_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_ireland_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Ireland Driver's License Number -->
@@ -9864,7 +9930,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -9885,7 +9951,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - dl no
 - dlno
 - رقم dl
-
 
 #### <a name="keywords_ireland_eu_drivers_license_number"></a>s_license_number Keywords_ireland_eu_driver
 
@@ -9912,13 +9977,15 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_ireland_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_ireland_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_ireland_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_ireland_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_ireland_eu_passport_date` العادي عن التاريخ بالتنسيق DD MMM/MMM YYYY (مثال - 01 BEA/MAY 1988) أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_ireland_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_ireland_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_ireland_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_ireland_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Ireland Passport Number -->
@@ -9974,24 +10041,27 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="ireland-personal-public-service-pps-number"></a>رقم الخدمة العامة الشخصية (PPS) في أيرلندا
 
 ### <a name="format"></a>تنسيق
 
 التنسيق القديم (حتى 31 ديسمبر 2012):
+
 - سبعة أرقام متبوعة بأحرف من 1 إلى 2
 
 تنسيق جديد (1 يناير 2013 وبعده):
+
 - سبعة أرقام متبوعة بحرفين
 
 ### <a name="pattern"></a>نمط
 
 التنسيق القديم (حتى 31 ديسمبر 2012):
+
 - سبعة أرقام
 - حرف إلى حرفين (غير حساس لحالة الأحرف)
 
 تنسيق جديد (1 يناير 2013 وبعده):
+
 - سبعة أرقام
 - حرف (غير حساس لحالة الأحرف) وهو رقم فحص أبجدي
 - حرف اختياري في النطاق A-I أو "W"
@@ -10003,11 +10073,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_ireland_pps عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_ireland_eu_national_id_card.
 - يمر المجموع الاختباري.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة Func_ireland_pps عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -10071,7 +10143,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="ireland-physical-addresses"></a>عناوين أيرلندا المادية
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من أيرلندا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -10079,7 +10150,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="israel-bank-account-number"></a>رقم الحساب البنكي في إسرائيل
 
@@ -10090,6 +10160,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="pattern"></a>نمط
 
 تنسيق:
+
 - رقمين
 - شرطة
 - ثلاثة أرقام
@@ -10097,6 +10168,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - ثمانية أرقام
 
 منسق:
+
 - 13 رقما متتاليا
 
 ### <a name="checksum"></a>المجموع الاختباري
@@ -10106,6 +10178,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_israel_bank_account_number عن محتوى يطابق النمط.
 - تم العثور على كلمة أساسية من Keyword_israel_bank_account_number.
 
@@ -10130,7 +10203,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم الحساب
 - מספר חשבון בנק
 
-
 ## <a name="israel-national-identification-number"></a>رقم التعريف الوطني في إسرائيل
 
 ### <a name="format"></a>تنسيق
@@ -10148,6 +10220,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_israeli_national_id_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_Israel_National_ID.
 - يمر المجموع الاختباري.
@@ -10168,23 +10241,22 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 #### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
--   מספר זהות
--   מספר זיה וי
--   מספר זיהוי ישר אלי      
--   זהותישר אלית
--   هو ية اسرائيل ية عدد
--   هوية إسرائ يلية
--   رقم الهوية
--   عدد هوية فريدة من نوعها
--   رقم المعرف #
--   رقم المعرف
--   لا هوية        
--   رقم الهوية #
--   رقم الهوية
--   israeliidentitynumber       
--   المعرف الشخصي
--   معرف فريد  
-
+- מספר זהות
+- מספר זיה וי
+- מספר זיהוי ישר אלי
+- זהותישר אלית
+- هو ية اسرائيل ية عدد
+- هوية إسرائ يلية
+- رقم الهوية
+- عدد هوية فريدة من نوعها
+- رقم المعرف #
+- رقم المعرف
+- لا هوية
+- رقم الهوية #
+- رقم الهوية
+- israeliidentitynumber
+- المعرف الشخصي
+- معرف فريد
 
 ## <a name="italy-drivers-license-number"></a>رقم رخصة القيادة في إيطاليا
 
@@ -10197,6 +10269,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="pattern"></a>نمط
 
 تركيبة مكونة من 10 أحرف وأرقام:
+
 - حرف واحد (غير حساس لحالة الأحرف)
 - الحرف "A" أو "V" (غير حساس لحالة الأحرف)
 - سبعة أرقام
@@ -10209,6 +10282,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير `Regex_italy_drivers_license_number` العادي عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keyword_italy_drivers_license_number` تم العثور عليها.
 
@@ -10326,7 +10400,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -10356,9 +10430,9 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - patenti di guida
 - guida للبراءة
 
-
 ## <a name="italy-fiscal-code"></a>الرمز المالي في إيطاليا
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -10372,6 +10446,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="pattern"></a>نمط
 
 تركيبة مكونة من 16 حرفا من الأحرف والأرقام:
+
 - ثلاثة أحرف تتوافق مع الأحرف الساكنة الثلاثة الأولى في اسم العائلة
 - ثلاثة أحرف تتوافق مع الأحرف الساكنة الأولى والثالثة والرابعة في الاسم الأول
 - رقمان يتوافقان مع الأرقام الأخيرة من سنة الميلاد
@@ -10387,11 +10462,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_italy_eu_national_id_card` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_italy_eu_national_id_card` .
+
+- تبحث الدالة `Func_italy_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_italy_eu_national_id_card` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_italy_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_italy_eu_national_id_card` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Italy Fiscal Code -->
@@ -10443,7 +10520,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="italy-passport-number"></a>رقم جواز سفر إيطاليا
 
 ### <a name="format"></a>تنسيق
@@ -10464,13 +10540,15 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_italy_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_italy_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_italy_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_italy_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_italy_eu_passport_date` العادي عن التاريخ بالتنسيق DD MMM/MMM YYYY (مثال - 01 GEN/JAN 1988) أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_italy_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_italy_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_italy_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_italy_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Italy Passport Number -->
@@ -10526,7 +10604,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="italy-physical-addresses"></a>العناوين الفعلية في إيطاليا
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من إيطاليا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -10535,10 +10612,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 المتوسطه
 
-
 ## <a name="italy-value-added-tax-number"></a>رقم ضريبة القيمة المضافة في إيطاليا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -10565,10 +10642,12 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_italy_value_added_tax_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_italy_value_added_tax_number.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_italy_value_added_tax_number عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -10594,7 +10673,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - Iva
 - Iva #
 
-
 ## <a name="japan-bank-account-number"></a>رقم الحساب البنكي الياباني
 
 ### <a name="format"></a>تنسيق
@@ -10604,8 +10682,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="pattern"></a>نمط
 
 رقم الحساب البنكي:
+
 - سبعة أو ثمانية أرقام
 - رمز فرع الحساب البنكي:
+
 - أربعة أرقام
 - مسافة أو شرطة (اختياري)
 - ثلاثة أرقام
@@ -10617,13 +10697,16 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_jp_bank_account عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_jp_bank_account.
 - أحد الإجراءات التالية صحيح:
+
 - تبحث الدالة Func_jp_bank_account_branch_code عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_jp_bank_branch_code.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_jp_bank_account عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_jp_bank_account.
 
@@ -10715,6 +10798,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_jp_drivers_license_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_jp_drivers_license_number.
 
@@ -10768,10 +10852,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - 免許証 #
 - 免許 #
 
-
 ## <a name="japan-my-number---corporate"></a>رقم هاتفي في اليابان - الشركة
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -10796,10 +10880,12 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_japanese_my_number_corporate عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_japanese_my_number_corporate.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_japanese_my_number_corporate عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -10830,10 +10916,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - 法人番号
 - 指定通知書
 
-
 ## <a name="japan-my-number---personal"></a>رقم هاتفي في اليابان - شخصي
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -10861,10 +10947,12 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_japanese_my_number_personal عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_japanese_my_number_personal.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة Func_japanese_my_number_personal عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -10895,7 +10983,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - 個人識別ナンバー
 - 通知カード
 
-
 ## <a name="japan-passport-number"></a>رقم جواز سفر اليابان
 
 ### <a name="format"></a>تنسيق
@@ -10913,6 +11000,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_jp_passport عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_jp_passport.
 
@@ -10945,7 +11033,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - 旅券番号♯
 - 旅券ナンバー
 
-
 ## <a name="japan-residence-card-number"></a>رقم بطاقة الإقامة في اليابان
 
 ### <a name="format"></a>تنسيق
@@ -10955,6 +11042,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="pattern"></a>نمط
 
 12 حرفا ورقما:
+
 - حرفان (غير حساس لحالة الأحرف)
 - ثمانية أرقام
 - حرفان (غير حساس لحالة الأحرف)
@@ -10966,6 +11054,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_jp_residence_card_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_jp_residence_card_number.
 
@@ -11007,6 +11096,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_jp_resident_registration_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_jp_resident_registration_number.
 
@@ -11035,7 +11125,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - 登録番号
 - 外国人登録証
 
-
 ## <a name="japan-social-insurance-number-sin"></a>رقم التأمين الاجتماعي الياباني (SIN)
 
 ### <a name="format"></a>تنسيق
@@ -11045,6 +11134,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="pattern"></a>نمط
 
 من 7 إلى 12 رقما:
+
 - أربعة أرقام
 - واصلة (اختيارية)
 - ستة أرقام OR
@@ -11057,10 +11147,12 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_jp_sin عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_jp_sin.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_jp_sin_pre_1997 عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_jp_sin.
 
@@ -11101,7 +11193,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - 厚生年金
 - 厚生年金被保険者整理番号
 
-
 ## <a name="lab-test-terms"></a>مصطلحات الاختبار المعملي
 
 يكشف هذا الكيان المسمى غير المملوء عن المصطلحات المتعلقة باختبارات المعمل، مثل *أداة مكافحة الاختراق C-peptide*. وهو يدعم مصطلحات اللغة الإنجليزية فقط. كما أنها مضمنة في [جميع الشروط والأحكام الطبية](#all-medical-terms-and-conditions) المجمعة المسماة ENTITY SIT.
@@ -11109,7 +11200,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="confidence-level"></a>مستوى الثقة
 
 عاليه
-
 
 ## <a name="latvia-drivers-license-number"></a>رقم رخصة القيادة في لاتفيا
 
@@ -11131,8 +11221,9 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_latvia_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_latvia_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_latvia_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_latvia_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Latvia Driver's License Number -->
@@ -11248,7 +11339,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -11270,13 +11361,11 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>s_license_number Keywords_latvia_eu_driver
 
 - autovadjatja apliecultba
 - autovadjatja apliecultbas
 - vad predictionja apliecja
-
 
 ## <a name="latvia-passport-number"></a>رقم جواز سفر لاتفيا
 
@@ -11298,13 +11387,15 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_latvia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_latvia_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_latvia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_latvia_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date1` العادي عن التاريخ بالتنسيق DD.MM.YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_latvia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_latvia_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_latvia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_latvia_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Latvia Passport Number -->
@@ -11359,7 +11450,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="latvia-personal-code"></a>رمز لاتفيا الشخصي
 
 ### <a name="format"></a>تنسيق
@@ -11391,11 +11481,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_latvia_eu_national_id_card` أو regex `Regex_latvia_eu_national_id_card_new_format` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_latvia_eu_national_id_card` .
+
+- تبحث الدالة `Func_latvia_eu_national_id_card` أو regex `Regex_latvia_eu_national_id_card_new_format` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_latvia_eu_national_id_card` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_latvia_eu_national_id_card` أو regex `Regex_latvia_eu_national_id_card_new_format` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_latvia_eu_national_id_card` أو regex `Regex_latvia_eu_national_id_card_new_format` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Latvia Personal Code -->
@@ -11491,7 +11583,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - القصدير #
 - رقم المصوت
 
-
 ## <a name="latvia-physical-addresses"></a>عناوين لاتفيا المادية
 
 يكتشف هذا الكيان المسمى غير المفكك الأنماط المتعلقة بالعنوان الفعلي من لاتفيا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -11500,15 +11591,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 المتوسطه
 
-
 ## <a name="liechtenstein-physical-addresses"></a>عناوين ليشتاندا المادية
 
-يكشف هذا الكيان المسمى غير المكتظ بالأنماط المتعلقة بالعنوان الفعلي من ليشتاندا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT. 
+يكشف هذا الكيان المسمى غير المكتظ بالأنماط المتعلقة بالعنوان الفعلي من ليشتاندا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
 
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="lifestyles-that-relate-to-medical-conditions"></a>أنماط الحياة التي تتعلق بالظروف الطبية
 
@@ -11517,7 +11606,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="confidence-level"></a>مستوى الثقة
 
 عاليه
-
 
 ## <a name="lithuania-drivers-license-number"></a>رقم رخصة القيادة في ليتوانا
 
@@ -11536,8 +11624,9 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_lithuania_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_lithuania_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_lithuania_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_lithuania_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Lithuania Driver's License Number -->
@@ -11653,7 +11742,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -11675,17 +11764,16 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>s_license_number Keywords_lithuania_eu_driver
 
 - vairuotojo paėjimas
 - vairuotojo paėjimo numeris
 - vairuotojo paėjimo numeriai
 
-
 ## <a name="lithuania-personal-code"></a>رمز ليتواني الشخصي
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -11712,11 +11800,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_lithuania_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_lithuania_eu_tax_file_number` .
+
+- تبحث الدالة `Func_lithuania_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_lithuania_eu_tax_file_number` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_lithuania_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_lithuania_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Lithuania Personal Code -->
@@ -11772,7 +11862,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم هوية فريد
 - uniqueidentityno #
 
-
 ## <a name="lithuania-physical-addresses"></a>عناوين ليتوانية فعلية
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من ليتوانا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -11780,7 +11869,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="lithuania-passport-number"></a>رقم جواز سفر ليتوانا
 
@@ -11799,13 +11887,15 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_lithuania_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_lithuania_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_lithuania_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_lithuania_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date3` العادي عن التاريخ بالتنسيق DD MM YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_lithuania_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_lithuania_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_lithuania_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_lithuania_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Lithuania Passport Number -->
@@ -11857,7 +11947,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="luxemburg-drivers-license-number"></a>رقم رخصة القيادة في أوسمبورغ
 
 ### <a name="format"></a>تنسيق
@@ -11875,8 +11964,9 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_luxemburg_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_luxemburg_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_luxemburg_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_luxemburg_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Luxemburg Driver's License Number -->
@@ -11992,7 +12082,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -12014,7 +12104,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>s_license_number Keywords_luxemburg_eu_driver
 
 - fahrerlaubnis
@@ -12023,6 +12112,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>رقم التعريف الوطني في أوسيمبورغ (الأشخاص الطبيعيون)
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -12047,12 +12137,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_luxemburg_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_luxemburg_eu_national_id_card` .
+
+- تبحث الدالة `Func_luxemburg_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_luxemburg_eu_national_id_card` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_luxemburg_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
 
+- تبحث الدالة `Func_luxemburg_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Luxemburg National Identification Number (Natural persons) -->
@@ -12096,7 +12187,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - هوية فريدة
 - مفتاح فريد #
 
-
 ## <a name="luxemburg-national-identification-number-non-natural-persons"></a>رقم التعريف الوطني في أوسمبيرغ (أشخاص غير طبيعيين)
 
 ### <a name="format"></a>تنسيق
@@ -12123,11 +12213,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_luxemburg_eu_tax_file_number_non_natural` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_luxemburg_eu_tax_file_number` .
+
+- تبحث الدالة `Func_luxemburg_eu_tax_file_number_non_natural` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_luxemburg_eu_tax_file_number` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_luxemburg_eu_tax_file_number_non_natural` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_luxemburg_eu_tax_file_number_non_natural` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Luxemburg National Identification Number (Non-natural persons) -->
@@ -12188,7 +12280,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - زين
 - zinnzahl
 
-
 ## <a name="luxemburg-passport-number"></a>رقم جواز سفر Unityemburg
 
 ### <a name="format"></a>تنسيق
@@ -12206,13 +12297,15 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_luxemburg_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_luxemburg_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_luxemburg_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_luxemburg_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date3` العادي عن التاريخ بالتنسيق DD MM YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_luxemburg_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_luxemburg_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_luxemburg_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_luxemburg_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Luxemburg Passport Number -->
@@ -12275,7 +12368,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="luxemburg-physical-addresses"></a>عناوين Unityemburg المادية
 
 يكشف هذا الكيان المسمى غير المختلط عن الأنماط المتعلقة بالعنوان الفعلي من Unityemburg. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -12283,7 +12375,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="malaysia-identification-card-number"></a>رقم بطاقة تعريف ماليزيا
 
@@ -12294,6 +12385,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="pattern"></a>نمط
 
 12 رقما:
+
 - ستة أرقام بالتنسيق YYMMDD، وهي تاريخ الميلاد
 - شرطة (اختياري)
 - رمز مكان الميلاد المكون من حرفين
@@ -12308,6 +12400,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_malaysia_id_card_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_malaysia_id_card_number.
 
@@ -12351,7 +12444,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - nric
 - بطاقة التعريف الشخصية
 
-
 ## <a name="malta-drivers-license-number"></a>رقم رخصة القيادة للمتجر
 
 ### <a name="format"></a>تنسيق
@@ -12375,8 +12467,9 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_malta_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_malta_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_malta_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_malta_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Malta Driver's License Number -->
@@ -12492,7 +12585,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -12514,16 +12607,15 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_malta_eu_drivers_license_number"></a>s_license_number Keywords_malta_eu_driver
 
 - liċenzja tas-radiqan
 - liċenzji tas-azurewieq
 
-
 ## <a name="malta-identity-card-number"></a>رقم بطاقة هوية الهويات في مالطا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -12548,11 +12640,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_malta_eu_national_id_card` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_malta_eu_national_id_card` .
+
+- يبحث التعبير `Regex_malta_eu_national_id_card` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_malta_eu_national_id_card` .
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
-- يبحث التعبير  `Regex_malta_eu_national_id_card` العادي عن المحتوى الذي يطابق النمط.
+
+- يبحث التعبير `Regex_malta_eu_national_id_card` العادي عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Malta Identity Card Number -->
@@ -12586,7 +12680,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم هوية فريد
 - uniqueidentityno #
 
-
 ## <a name="malta-passport-number"></a>رقم جواز سفر الحيوانات
 
 ### <a name="format"></a>تنسيق
@@ -12604,13 +12697,15 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_malta_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_malta_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_malta_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_malta_eu_passport_number` تم العثور عليها.
 - تم العثور على كلمة أساسية من `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_malta_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_malta_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_malta_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_malta_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Malta Passport Number -->
@@ -12659,7 +12754,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="malta-physical-addresses"></a>عناوين مادية في  الاحتياجات الخاصة
 
 يكشف هذا الكيان المسمى غير الملغى عن الأنماط المتعلقة بالعنوان الفعلي من أداة معالجة الرسومات. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -12668,15 +12762,16 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 المتوسطه
 
-
 ## <a name="malta-tax-identification-number"></a>رقم التعريف الضريبي في دائرة الضرائب
 
 ### <a name="format"></a>تنسيق
 
 بالنسبة إلى المواطنين المالطيين:
+
 - سبعة أرقام وحرف واحد في النمط المحدد
 
 المواطنين غير المالطيين والكيانات المالطية:
+
 - تسعة أرقام
 
 ### <a name="pattern"></a>نمط
@@ -12697,11 +12792,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- regex  `Regex_malta_eu_tax_file_number`  أو `Regex_malta_eu_tax_file_number_non_maltese_national` البحث عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_malta_eu_tax_file_number` .
+
+- regex `Regex_malta_eu_tax_file_number`  أو `Regex_malta_eu_tax_file_number_non_maltese_national` البحث عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_malta_eu_tax_file_number` .
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
-- regex  `Regex_malta_eu_tax_file_number` أو `Regex_malta_eu_tax_file_number_non_maltese_national` البحث عن المحتوى الذي يطابق النمط.
+
+- regex `Regex_malta_eu_tax_file_number` أو `Regex_malta_eu_tax_file_number_non_maltese_national` البحث عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Malta Tax ID Number -->
@@ -12793,11 +12890,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_mbi_card` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keyword_mbi_card` .
+
+- يبحث التعبير `Regex_mbi_card` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keyword_mbi_card` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_mbi_card` العادي عن المحتوى الذي يطابق النمط.
+
+- يبحث التعبير `Regex_mbi_card` العادي عن المحتوى الذي يطابق النمط.
 
 ```xml
     <!-- Medicare Beneficiary Identifier (MBI) card -->
@@ -12824,7 +12923,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم الرعاية المستفيدة من medicare
 - الرعاية الصحية غير المستفيدة #
 
-
 ## <a name="mexico-unique-population-registry-code-curp"></a>رمز سجل المحتوى الفريد في المكسيك (CURP)
 
 ### <a name="format"></a>تنسيق
@@ -12848,11 +12946,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_mexico_population_registry_code` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keyword_mexico_population_registry_code` .
+
+- تبحث الدالة `Func_mexico_population_registry_code` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keyword_mexico_population_registry_code` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_mexico_population_registry_code` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_mexico_population_registry_code` عن المحتوى الذي يطابق النمط.
 
 ```xml
     <!-- Mexico Unique Population Registry Code (CURP) -->
@@ -12873,7 +12973,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - Clave Única de Registro de Población
 - Clave Unica de Registro de Poblacion
-- رمز تسجيل المحتوى الفريد 
+- رمز تسجيل المحتوى الفريد
 - رمز محتوى فريد
 - CURP
 - المعرف الشخصي
@@ -12890,7 +12990,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - claveunica
 - clavepersonalIdentidad
 
-
 ## <a name="netherlands-citizens-service-bsn-number"></a>رقم خدمة المواطنين الهولنديين (BSN)
 
 ### <a name="format"></a>تنسيق
@@ -12900,6 +12999,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="pattern"></a>نمط
 
 ثمانية تسعة أرقام:
+
 - ثلاثة أرقام
 - مسافة (اختياري)
 - ثلاثة أرقام
@@ -12913,6 +13013,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_netherlands_bsn عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_netherlands_bsn.
 - يمر المجموع الاختباري.
@@ -12953,7 +13054,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم هوية فريد
 - uniqueidentityno #
 
-
 ## <a name="netherlands-drivers-license-number"></a>رقم رخصة القيادة في هولندا
 
 ### <a name="format"></a>تنسيق
@@ -12971,8 +13071,9 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_netherlands_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_netherlands_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_netherlands_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_netherlands_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Netherlands Driver's License Number -->
@@ -13088,7 +13189,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -13110,7 +13211,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_netherlands_eu_drivers_license_number"></a>s_license_number Keywords_netherlands_eu_driver
 
 - permis de conduire
@@ -13119,7 +13219,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - rijbewijzen
 - rijbewijs nummer
 - عدد rijbewijs
-
 
 ## <a name="netherlands-passport-number"></a>رقم جواز سفر هولندا
 
@@ -13138,13 +13237,15 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_netherlands_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_netherlands_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_netherlands_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_netherlands_eu_passport_number` تم العثور عليها.
 - يبحث التعبير العادي عن `Regex_netherlands_eu_passport_date` التاريخ بالتنسيق DD MMM/MMM YYYY (مثال - 26 MAA/MAR 2012)
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_netherlands_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_netherlands_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_netherlands_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_netherlands_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Netherlands Passport Number -->
@@ -13189,7 +13290,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - paspoortnummer
 - paspoort nr
 
-
 ## <a name="netherlands-physical-addresses"></a>العناوين المادية في هولندا
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من هولندا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -13198,10 +13298,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 المتوسطه
 
-
 ## <a name="netherlands-tax-identification-number"></a>رقم التعريف الضريبي في هولندا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -13223,11 +13323,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_netherlands_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_netherlands_eu_tax_file_number` .
+
+- تبحث الدالة `Func_netherlands_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_netherlands_eu_tax_file_number` .
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
-- تبحث الدالة  `Func_netherlands_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_netherlands_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Netherlands Tax Identification Number -->
@@ -13282,10 +13384,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="netherlands-value-added-tax-number"></a>رقم الضريبة للقيمة المضافة في هولندا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -13315,10 +13417,12 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_netherlands_value_added_tax_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_netherlands_value_added_tax_number.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_netherlands_value_added_tax_number عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -13345,10 +13449,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - btw nûmer
 - btw-nummer
 
-
 ## <a name="new-zealand-bank-account-number"></a>رقم الحساب البنكي في نيوزيلندا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -13379,10 +13483,12 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_new_zealand_bank_account_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_new_zealand_bank_account_number.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_new_zealand_bank_account_number عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -13408,10 +13514,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - bank_acct_branch
 - bank_acct_nbr
 
-
 ## <a name="new-zealand-drivers-license-number"></a>رقم رخصة القيادة في نيوزيلندا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -13436,10 +13542,12 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_newzealand_driver_license_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_newzealand_driver_license_number.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة Func_newzealand_driver_license_number عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -13524,10 +13632,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - اتحاد السيارات nz
 - اتحاد السيارات في نيوزيلندا
 
-
 ## <a name="new-zealand-inland-revenue-number"></a>رقم إيرادات نيوزيلندا الداخلية
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -13555,10 +13663,12 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_new_zealand_inland_revenue_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_new_zealand_inland_revenue_number.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_new_zealand_inland_revenue_number عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -13585,7 +13695,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم ird
 - رقم الإيرادات الداخلية
 
-
 ## <a name="new-zealand-ministry-of-health-number"></a>وزارة الصحة في نيوزيلندا
 
 ### <a name="format"></a>تنسيق
@@ -13604,11 +13713,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_new_zealand_ministry_of_health_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_nz_terms.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_new_zealand_ministry_of_health_number عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -13635,7 +13746,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - NHI #
 - الفهرس الصحي الوطني #
 
-
 ## <a name="new-zealand-physical-addresses"></a>العناوين المادية في نيوزيلندا
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من نيوزيلندا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -13644,10 +13754,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 المتوسطه
 
-
 ## <a name="new-zealand-social-welfare-number"></a>رقم الرعاية الاجتماعية في نيوزيلندا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -13675,10 +13785,12 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_newzealand_social_welfare_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_newzealand_social_welfare_number.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة Func_newzealand_social_welfare_number عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -13705,7 +13817,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم الرعاية الاجتماعية
 - swn #
 
-
 ## <a name="norway-identification-number"></a>رقم تعريف النرويج
 
 ### <a name="format"></a>تنسيق
@@ -13715,6 +13826,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="pattern"></a>نمط
 
 11 رقما:
+
 - ستة أرقام بتنسيق DD ولاي، وهي تاريخ الميلاد
 - رقم فردي مكون من ثلاثة أرقام
 - خانتا اختيار رقميتان
@@ -13726,11 +13838,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_norway_id_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_norway_id_number.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_norway_id_numbe عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -13758,7 +13872,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم الشخص
 - Fødselsnummer
 
-
 ## <a name="norway-physical-addresses"></a>العناوين المادية في النرويج
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من النرويج. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -13766,7 +13879,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="philippines-unified-multi-purpose-identification-number"></a>رقم تعريف موحد متعدد الأغراض في الفليبين
 
@@ -13777,6 +13889,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="pattern"></a>نمط
 
 12 رقما:
+
 - أربعة أرقام
 - واصلة
 - سبعة أرقام
@@ -13790,6 +13903,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_philippines_unified_id عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من Keyword_philippines_id.
 
@@ -13811,7 +13925,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - معرف UMID
 - بطاقة الهوية
 - معرف Pinag-isang Multi-Layunin
-
 
 ## <a name="poland-drivers-license-number"></a>رقم رخصة القيادة في بولندا
 
@@ -13836,8 +13949,9 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_poland_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_poland_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_poland_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_poland_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Poland Driver's License Number -->
@@ -13953,7 +14067,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -13975,12 +14089,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_poland_eu_drivers_license_number"></a>s_license_number Keywords_poland_eu_driver
 
 - prawo jazdy
 - prawa jazdy
-
 
 ## <a name="poland-identity-card"></a>بطاقة هوية في بولندا
 
@@ -13999,6 +14111,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_polish_national_id عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_polish_national_id_passport_number.
 - يمر المجموع الاختباري.
@@ -14025,7 +14138,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - Dowód Tożsamości
 - داو. Os.
 
-
 ## <a name="poland-national-id-pesel"></a>المعرف الوطني في بولندا (PESEL)
 
 ### <a name="format"></a>تنسيق
@@ -14045,11 +14157,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_pesel_identification_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_pesel_identification_number.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_pesel_identification_number عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -14080,7 +14194,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - البسل
 - tożsamości narodowej
 
-
 ## <a name="poland-passport-number"></a>رقم جواز سفر بولندا
 
 يتم تضمين كيان نوع المعلومات الحساسة هذا في نوع المعلومات الحساسة لرقم جواز سفر الاتحاد الأوروبي. كما أنها متوفرة ككيان مستقل لنوع المعلومات الحساسة.
@@ -14100,17 +14213,20 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_polish_passport_number_v2` عن المحتوى الذي يطابق النمط.
 - يمر المجموع الاختباري.
 - تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keyword_polish_national_passport_number` تم العثور عليها.
 - تم العثور على كلمة أساسية منها `Keywords_eu_passport_date` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_polish_passport_number_v2` عن المحتوى الذي يطابق النمط.
 - يمر المجموع الاختباري.
 - تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keyword_polish_national_passport_number` تم العثور عليها.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة `Func_polish_passport_number_v2` عن المحتوى الذي يطابق النمط.
 - يمر المجموع الاختباري.
 
@@ -14169,7 +14285,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="poland-physical-addresses"></a>العناوين المادية لبولاندا
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من بولندا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -14178,10 +14293,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 المتوسطه
 
-
 ## <a name="poland-regon-number"></a>رقم REGON في بولندا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -14208,10 +14323,12 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_polish_regon_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_polish_regon_number.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة Func_polish_regon_number عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -14245,10 +14362,10 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - numerstatystyczny #
 - رقم #
 
-
 ## <a name="poland-tax-identification-number"></a>رقم التعريف الضريبي في بولندا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -14270,9 +14387,9 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_poland_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_poland_eu_tax_file_number` .
 
+- تبحث الدالة `Func_poland_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_poland_eu_tax_file_number` .
 
 ```xml
       <!-- Poland Tax Identification Number -->
@@ -14316,7 +14433,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - vatid
 - vatno #
 
-
 ## <a name="portugal-citizen-card-number"></a>رقم بطاقة المواطنين البرتغاليين
 
 ### <a name="format"></a>تنسيق
@@ -14334,6 +14450,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_portugal_citizen_card عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_portugal_citizen_card.
 
@@ -14369,7 +14486,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - número do documento
 - رقم bi في البرتغال
 
-
 ## <a name="portugal-drivers-license-number"></a>رقم رخصة القيادة البرتغالية
 
 ### <a name="format"></a>تنسيق
@@ -14379,6 +14495,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="pattern"></a>نمط
 
 النمط 1: حرفان متبوعا ب 5/6 بأحرف خاصة:
+
 - حرفان (غير حساس لحالة الأحرف)
 - واصلة
 - خمسة أرقام أو ستة أرقام
@@ -14386,12 +14503,12 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم واحد
 
 النمط 2: حرف واحد متبوعا ب 6/8 أرقام بأحرف خاصة:
+
 - حرف واحد (غير حساس لحالة الأحرف)
 - واصلة
 - ستة أو ثمانية أرقام
 - مساحة
 - رقم واحد
-
 
 ### <a name="checksum"></a>المجموع الاختباري
 
@@ -14400,8 +14517,9 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_portugal_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_portugal_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_portugal_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_portugal_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Portugal Driver's License Number -->
@@ -14517,7 +14635,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -14539,7 +14657,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_portugal_eu_drivers_license_number"></a>s_license_number Keywords_portugal_eu_driver
 
 - carteira de motorista
@@ -14552,7 +14669,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - permissão condução
 - ترخيص Condução Portugal
 - carta de condução
-
 
 ## <a name="portugal-passport-number"></a>رقم جواز سفر البرتغال
 
@@ -14574,13 +14690,15 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_portugal_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_portugal_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_portugal_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_portugal_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date1` العادي عن التاريخ بالتنسيق DD.MM.YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_portugal_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_portugal_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_portugal_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_portugal_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Portugal Passport Number -->
@@ -14639,7 +14757,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="portugal-physical-addresses"></a>العناوين المادية البرتغالية
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من البرتغال. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -14647,7 +14764,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="portugal-tax-identification-number"></a>رقم التعريف الضريبي في البرتغال
 
@@ -14670,11 +14786,13 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_portugal_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_portugal_eu_tax_file_number` .
+
+- تبحث الدالة `Func_portugal_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_portugal_eu_tax_file_number` .
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
-- تبحث الدالة  `Func_portugal_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_portugal_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Portugal Tax Identification Number -->
@@ -14716,7 +14834,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="romania-drivers-license-number"></a>رقم رخصة القيادة في رومانيا
 
 ### <a name="format"></a>تنسيق
@@ -14726,6 +14843,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="pattern"></a>نمط
 
 حرف واحد متبوعا بثمانية أرقام:
+
 - حرف واحد (غير حساس لحالة الأحرف) أو رقم
 - ثمانية أرقام
 
@@ -14736,8 +14854,9 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_romania_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_romania_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_romania_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_romania_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Romania Driver's License Number -->
@@ -14853,7 +14972,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -14884,7 +15003,6 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 - permisele أداة المساعدة
 - permis أداة المساعدة
 
-
 ## <a name="romania-passport-number"></a>رقم جواز سفر رومانيا
 
 ### <a name="format"></a>تنسيق
@@ -14902,13 +15020,15 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_romania_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_romania_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_romania_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_romania_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_romania_eu_passport_date` العادي عن التاريخ بالتنسيق DD MMM/MMM YY (مثال- 01 فبراير/فبراير 10) أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_romania_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_romania_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_romania_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_romania_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Romania Passport Number -->
@@ -14958,10 +15078,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="romania-personal-numeric-code-cnp"></a>تعليمة برمجية رقمية شخصية في رومانيا (CNP)
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -14986,11 +15106,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_romania_eu_national_id_card` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_romania_eu_national_id_card` .
+
+- تبحث الدالة `Func_romania_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_romania_eu_national_id_card` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_romania_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_romania_eu_national_id_card` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Romania Personal Numerical Code (CNP) -->
@@ -15058,7 +15180,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - uniqueidentityno #
 - uniqueidentityno
 
-
 ## <a name="romania-physical-addresses"></a>عناوين مادية في رومانيا
 
 يكشف هذا الكيان المسمى غير الملغى عن الأنماط المتعلقة بالعنوان الفعلي من رومانيا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -15067,10 +15188,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 المتوسطه
 
-
 ## <a name="russia-passport-number-domestic"></a>رقم جواز سفر روسيا محليا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -15098,6 +15219,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث Regex_Russian_Passport_Number_Domestic regex عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من Keyword_Russian_Passport_Number.
 
@@ -15130,10 +15252,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - номер паспорта
 - номерпаспорта #
 
-
 ## <a name="russia-passport-number-international"></a>رقم جواز سفر روسيا الدولي
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -15159,6 +15281,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث Regex_Russian_Passport_Number_International regex عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من Keyword_Russian_Passport_Number.
 
@@ -15191,7 +15314,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - номер паспорта
 - номерпаспорта #
 
-
 ## <a name="saudi-arabia-national-id"></a>المعرف الوطني للسعودية
 
 ### <a name="format"></a>تنسيق
@@ -15209,6 +15331,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_saudi_arabia_national_id عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_saudi_arabia_national_id.
 
@@ -15233,7 +15356,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - رقم المعرف
 - الوطنية الهوية بطاقة رقم
 
-
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>رقم بطاقة هوية التسجيل الوطنية في سنغافورة (NRIC)
 
 ### <a name="format"></a>تنسيق
@@ -15243,6 +15365,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 - تسعة أحرف وأرقام:
+
 - الحرف "F" أو "G" أو "M" أو "S" أو "T" (غير حساس لحالة الأحرف)
 - سبعة أرقام
 - رقم اختيار أبجدي
@@ -15254,11 +15377,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_singapore_nric عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_singapore_nric.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_singapore_nric عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -15288,7 +15413,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - 身份证
 - 身份證
 
-
 ## <a name="slovakia-drivers-license-number"></a>رقم رخصة القيادة السلوفاكية
 
 ### <a name="format"></a>تنسيق
@@ -15309,8 +15433,9 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_slovakia_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_slovakia_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_slovakia_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_slovakia_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Slovakia Driver's License Number -->
@@ -15426,7 +15551,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -15448,14 +15573,12 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver s_license_number
 
 - vodisksksk preukaz
 - vodiské preukazy
 - vodiského preukazu
 - vodiskskskch preukazov
-
 
 ## <a name="slovakia-passport-number"></a>رقم جواز سفر بورتوفا
 
@@ -15474,13 +15597,15 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_slovakia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_slovakia_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_slovakia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_slovakia_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date1` العادي عن التاريخ بالتنسيق DD.MM.YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_slovakia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_slovakia_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_slovakia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_slovakia_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Slovakia Passport Number -->
@@ -15534,10 +15659,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="slovakia-personal-number"></a>الرقم الشخصي ل لمزوفا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -15562,11 +15687,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_slovakia_eu_national_id_card` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_slovakia_eu_national_id_card` .
+
+- تبحث الدالة `Func_slovakia_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_slovakia_eu_national_id_card` .
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
-- تبحث الدالة  `Func_slovakia_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_slovakia_eu_national_id_card` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Slovakia Personal Number -->
@@ -15631,7 +15758,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="slovakia-physical-addresses"></a>العناوين المادية ل لمزوفا
 
 يكشف هذا الكيان المسمى غير الملغى عن الأنماط المتعلقة بالعنوان الفعلي من تلقائيا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -15639,7 +15765,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="slovenia-drivers-license-number"></a>رقم رخصة القيادة السلوفينية
 
@@ -15658,8 +15783,9 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_slovenia_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_slovenia_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_slovenia_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_slovenia_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Slovenia Driver's License Number -->
@@ -15775,7 +15901,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -15805,7 +15931,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - ztevilka voznijakega dovoljenja
 - številke vozniških dovoljenj
 
-
 ## <a name="slovenia-passport-number"></a>رقم جواز السفر السلوفيني
 
 ### <a name="format"></a>تنسيق
@@ -15827,13 +15952,15 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_slovenia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_slovenia_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_slovenia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_slovenia_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_eu_passport_date1` العادي عن التاريخ بالتنسيق DD.MM.YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_slovenia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_slovenia_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_slovenia_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_slovenia_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Slovenia Passport Number -->
@@ -15888,7 +16015,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="slovenia-physical-addresses"></a>العناوين المادية السلوفينية
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من  السلوفينية. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -15897,10 +16023,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 المتوسطه
 
-
 ## <a name="slovenia-tax-identification-number"></a>رقم التعريف الضريبي السلوفيني
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -15924,11 +16050,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_slovenia_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_slovenia_eu_tax_file_number` .
+
+- تبحث الدالة `Func_slovenia_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_slovenia_eu_tax_file_number` .
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
-- تبحث الدالة  `Func_slovenia_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_slovenia_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Slovenia Tax Identification Number -->
@@ -15969,10 +16097,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="slovenia-unique-master-citizen-number"></a>رقم مواطن رئيسي فريد في  السلوفينية
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -15999,11 +16127,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_slovenia_eu_national_id_card` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_slovenia_eu_national_id_card` .
+
+- تبحث الدالة `Func_slovenia_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_slovenia_eu_national_id_card` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_slovenia_eu_national_id_card` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_slovenia_eu_national_id_card` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Slovenia Unique Master Citizen Number -->
@@ -16048,7 +16178,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - uniqueidentityno #
 - uniqueidentityno #
 
-
 ## <a name="south-africa-identification-number"></a>رقم تعريف جنوب أفريقيا
 
 ### <a name="format"></a>تنسيق
@@ -16058,6 +16187,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 13 رقما:
+
 - ستة أرقام بالتنسيق YYMMDD، وهي تاريخ الميلاد
 - أربعة أرقام
 - مؤشر المواطنين المؤلف من رقم واحد
@@ -16071,6 +16201,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_south_africa_identification_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_south_africa_identification_number.
 - يمر المجموع الاختباري.
@@ -16093,7 +16224,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - معرف
 - تحديد
 
-
 ## <a name="south-korea-resident-registration-number"></a>رقم التسجيل المقيم في كوريا الجنوبية
 
 ### <a name="format"></a>تنسيق
@@ -16103,6 +16233,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 13 رقما:
+
 - ستة أرقام بالتنسيق YYMMDD، وهي تاريخ الميلاد
 - واصلة
 - رقم واحد يحدده القرن والجنس
@@ -16117,11 +16248,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_south_korea_resident_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_south_korea_resident_number.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_south_korea_resident_number عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -16148,10 +16281,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - RRN
 - 주민등록번호
 
-
 ## <a name="spain-dni"></a>DNI أسبانيا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -16177,12 +16310,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- الدالة  `Func_spain_eu_DL_and_NI_number_citizen` أو `Func_spain_eu_DL_and_NI_number_foreigner` البحث عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_spain_eu_national_id_card"` .
+
+- الدالة `Func_spain_eu_DL_and_NI_number_citizen` أو `Func_spain_eu_DL_and_NI_number_foreigner` البحث عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_spain_eu_national_id_card"` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- الدالة  `Func_spain_eu_DL_and_NI_number_citizen` أو `Func_spain_eu_DL_and_NI_number_foreigner` البحث عن المحتوى الذي يطابق النمط.
 
+- الدالة `Func_spain_eu_DL_and_NI_number_citizen` أو `Func_spain_eu_DL_and_NI_number_foreigner` البحث عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Spain DNI -->
@@ -16230,7 +16364,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - رقم هوية فريد
 - معرف فريد #
 
-
 ## <a name="spain-drivers-license-number"></a>رقم رخصة القيادة الإسبانية
 
 ### <a name="format"></a>تنسيق
@@ -16251,11 +16384,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- الدالة  `Func_spain_eu_DL_and_NI_number_citizen` أو `Func_spain_eu_DL_and_NI_number_foreigner` البحث عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_spain_eu_driver's_license_number` تم العثور عليها.
+
+- الدالة `Func_spain_eu_DL_and_NI_number_citizen` أو `Func_spain_eu_DL_and_NI_number_foreigner` البحث عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_spain_eu_driver's_license_number` تم العثور عليها.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- الدالة  `Func_spain_eu_DL_and_NI_number_citizen` أو `Func_spain_eu_DL_and_NI_number_foreigner` البحث عن المحتوى الذي يطابق النمط.
+
+- الدالة `Func_spain_eu_DL_and_NI_number_citizen` أو `Func_spain_eu_DL_and_NI_number_foreigner` البحث عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Spain Driver's License Number -->
@@ -16384,7 +16519,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -16406,7 +16541,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_spain_eu_drivers_license_number"></a>s_license_number Keywords_spain_eu_driver
 
 - permiso de deción
@@ -16421,7 +16555,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - carnet de
 - />صفحة/>
 - رنينسيا مانيخو
-
 
 ## <a name="spain-passport-number"></a>رقم جواز سفر إسبانيا
 
@@ -16444,13 +16577,15 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_spain_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_spain_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_spain_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_spain_eu_passport_number` تم العثور عليها.
 - يبحث التعبير `Regex_spain_eu_passport_date` العادي عن التاريخ بالتنسيق DD-MM-YYYY أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_spain_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_passport_number` أو `Keywords_spain_eu_passport_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_spain_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_spain_eu_passport_number` تم العثور عليها.
 
 ```xml
       <!-- Spain Passport Number -->
@@ -16511,7 +16646,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="spain-physical-addresses"></a>العناوين الفعلية في أسبانيا
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من إسبانيا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -16520,9 +16654,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 المتوسطه
 
-
 ## <a name="spain-social-security-number-ssn"></a>رقم الضمان الاجتماعي الإسباني (SSN)
-
 
 ### <a name="format"></a>تنسيق
 
@@ -16531,6 +16663,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 من 11 إلى 12 رقما:
+
 - رقمين
 - شرطة مائلة للأمام (اختيارية)
 - من سبعة إلى ثمانية أرقام
@@ -16544,11 +16677,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_spanish_social_security_number عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
-- - تم العثور على كلمة أساسية منها  `Keywords_spain_eu_ssn_or_equivalent` .
+- - تم العثور على كلمة أساسية منها `Keywords_spain_eu_ssn_or_equivalent` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_spanish_social_security_number عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -16576,10 +16711,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - رقم الضمان الاجتماعي
 - número de la seguridad social
 
-
 ## <a name="spain-tax-identification-number"></a>رقم التعريف الضريبي الإسباني
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -16628,11 +16763,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- الدالة  `Func_spain_eu_tax_file_number` أو `Func_spain_eu_DL_and_NI_number_citizen` البحث عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_spain_eu_tax_file_number` .
+
+- الدالة `Func_spain_eu_tax_file_number` أو `Func_spain_eu_DL_and_NI_number_citizen` البحث عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_spain_eu_tax_file_number` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- الدالة  `Func_spain_eu_tax_file_number` أو `Func_spain_eu_DL_and_NI_number_citizen` البحث عن المحتوى الذي يطابق النمط.
+
+- الدالة `Func_spain_eu_tax_file_number` أو `Func_spain_eu_DL_and_NI_number_citizen` البحث عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Spain Tax Identification Number -->
@@ -16687,7 +16824,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="sql-server-connection-string"></a>سلسلة اتصال SQL Server
 
 ### <a name="format"></a>تنسيق
@@ -16711,6 +16847,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي CEP_Regex_SQLServerConnectionString عن المحتوى الذي يتطابق مع النمط.
 - لم يتم العثور على كلمة أساسية من CEP_GlobalFilter.
 - لا يعثر التعبير العادي CEP_PasswordPlaceHolder على محتوى يطابق النمط.
@@ -16764,7 +16901,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - الاختبارات.<!--no-hyperlink-->كوم
 - s-int.<!--no-hyperlink-->صافي
 
-
 ## <a name="surgical-procedures"></a>الإجراءات الجراحية
 
 يكشف هذا الكيان المسمى غير المكتظ بالمصطلحات المتعلقة بالإجراءات الطبية، مثل *الإلحاق*.  وهو يدعم مصطلحات اللغة الإنجليزية فقط. كما أنها مضمنة في [جميع الشروط والأحكام الطبية](#all-medical-terms-and-conditions) المجمعة المسماة ENTITY SIT.
@@ -16772,7 +16908,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="confidence-level"></a>مستوى الثقة
 
 عاليه
-
 
 ## <a name="sweden-drivers-license-number"></a>رقم رخصة القيادة في السويد
 
@@ -16795,8 +16930,9 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- يبحث التعبير  `Regex_sweden_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية من  `Keywords_eu_driver's_license_number` أو `Keywords_sweden_eu_driver's_license_number` تم العثور عليها.
+
+- يبحث التعبير `Regex_sweden_eu_driver's_license_number` العادي عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية من `Keywords_eu_driver's_license_number` أو `Keywords_sweden_eu_driver's_license_number` تم العثور عليها.
 
 ```xml
       <!-- Sweden Driver's License Number -->
@@ -16912,7 +17048,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -16934,7 +17070,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - dlno
 - رقم dl
 
-
 #### <a name="keywords_sweden_eu_drivers_license_number"></a>s_license_number Keywords_sweden_eu_driver
 
 - ajokortti
@@ -16944,11 +17079,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - lic برنامج التشغيل.
 - körkort
 - numărul permisnani de أداة إزالة الأدبر
--  שאָפער דערלויבעניש נומער
+- שאָפער דערלויבעניש נומער
 - förare lic.
--  דריווערס דערלויבעניש
+- דריווערס דערלויבעניש
 - körkortsnummer
-
 
 ## <a name="sweden-national-id"></a>المعرف الوطني للسويد
 
@@ -16959,6 +17093,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 10 أو 12 رقما ومحدد اختياري:
+
 - رقمان (اختياري)
 - ستة أرقام بتنسيق التاريخ YYMMDD
 - محدد "-" أو "+" (اختياري)
@@ -16971,14 +17106,15 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_swedish_national_identifier` عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من `Keywords_swedish_national_identifier`
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_swedish_national_identifier` عن المحتوى الذي يطابق النمط.
 - يمر المجموع الاختباري.
-
 
 ```xml
     <!-- Sweden National ID -->
@@ -17014,7 +17150,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - رقم الشخص
 - skatteidentifikationsnummer
 
-
 ## <a name="sweden-passport-number"></a>رقم جواز سفر السويد
 
 ### <a name="format"></a>تنسيق
@@ -17032,14 +17167,15 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_sweden_passport_number عن المحتوى الذي يتطابق مع النمط.
 - كلمة أساسية من `Keywords_eu_passport_number` أو `Keyword_sweden_passport` تم العثور عليها.
 - يبحث التعبير `Regex_sweden_eu_passport_date` العادي عن تاريخ بتنسيق DD MMM/MMM YY (01 JAN/JAN 12) أو تم العثور على كلمة أساسية منه `Keywords_eu_passport_date` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_sweden_passport_number عن المحتوى الذي يتطابق مع النمط.
 - كلمة أساسية من `Keywords_eu_passport_number` أو `Keyword_sweden_passport` تم العثور عليها.
-
 
 ```xml
     <!-- Sweden Passport Number -->
@@ -17107,7 +17243,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - تاريخ المشكلة
 - تاريخ انتهاء الصلاحية
 
-
 ## <a name="sweden-physical-addresses"></a>عناوين فعلية في السويد
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من السويد. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -17116,10 +17251,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 المتوسطه
 
-
 ## <a name="sweden-tax-identification-number"></a>رقم التعريف الضريبي في السويد
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -17148,11 +17283,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_sweden_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_sweden_eu_tax_file_number` .
+
+- تبحث الدالة `Func_sweden_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_sweden_eu_tax_file_number` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_sweden_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+
+- تبحث الدالة `Func_sweden_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
 
 ```xml
       <!-- Sweden Tax Identification Number -->
@@ -17199,7 +17336,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="swift-code"></a>رمز SWIFT
 
 ### <a name="format"></a>تنسيق
@@ -17209,6 +17345,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 أربعة أحرف متبوعة ب 5-31 حرفا أو رقما:
+
 - رمز بنكي مكون من أربعة أحرف (غير حساس لحالة الأحرف)
 - مساحة اختيارية
 - 4-28 حرفا أو رقما (رقم الحساب البنكي الأساسي (BBAN))
@@ -17222,6 +17359,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_swift عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من Keyword_swift.
 
@@ -17259,7 +17397,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - le numéro de swift
 - swift numéro d'acheminement
 - le numéro BIC
-- # <a name="bic"></a>BIC
+- \# BIC
 - code identificateur de deque
 - SWIFTコード
 - SWIFT番号
@@ -17273,7 +17411,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - 金融機関コード
 - 銀行コード
 
-
 ## <a name="switzerland-physical-addresses"></a>العناوين المادية في سويسرا
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من سويسرا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -17282,10 +17419,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 المتوسطه
 
-
 ## <a name="switzerland-ssn-ahv-number"></a>رقم SSN AHV في سويسرا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -17315,10 +17452,12 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_swiss_social_security_number_ahv عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keywords_swiss_social_security_number_ahv.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_swiss_social_security_number_ahv عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -17357,7 +17496,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - معرف تعريف الموظفين
 - numéro de sécurité sociale
 
-
 ## <a name="taiwan-national-identification-number"></a>رقم التعريف الوطني التايواني
 
 ### <a name="format"></a>تنسيق
@@ -17367,6 +17505,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 حرف واحد (باللغة الإنجليزية) متبوعا بتسعة أرقام:
+
 - حرف واحد (باللغة الإنجليزية، غير حساس لحالة الأحرف)
 - الرقم "1" أو "2"
 - ثمانية أرقام
@@ -17378,11 +17517,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_taiwanese_national_id عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_taiwanese_national_id.
 - يمر المجموع الاختباري.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_taiwanese_national_id عن المحتوى الذي يتطابق مع النمط.
 - يمر المجموع الاختباري.
 
@@ -17418,7 +17559,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - 簽名或蓋章
 - 簽章
 
-
 ## <a name="taiwan-passport-number"></a>رقم جواز سفر تايوان
 
 ### <a name="format"></a>تنسيق
@@ -17428,10 +17568,12 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 ### <a name="pattern"></a>نمط
 رقم جواز السفر البيومتري:
+
 - الحرف "3"
 - ثمانية أرقام
 
 رقم جواز السفر غير البيومتري:
+
 - تسعة أرقام
 
 ### <a name="checksum"></a>المجموع الاختباري
@@ -17441,6 +17583,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_taiwan_passport عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_taiwan_passport.
 
@@ -17467,7 +17610,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - 中華民國護照
 - Zhînghuá Mínguó hùzhào
 
-
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>رقم الشهادة المقيمة في تايوان (ARC/TARC)
 
 ### <a name="format"></a>تنسيق
@@ -17477,6 +17619,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 10 أحرف ورقم:
+
 - حرفان (غير حساس لحالة الأحرف)
 - ثمانية أرقام
 
@@ -17487,6 +17630,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_taiwan_resident_certificate عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_taiwan_resident_certificate.
 
@@ -17516,7 +17660,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - 外僑居留證
 - 台灣地區居留證
 
-
 ## <a name="thai-population-identification-code"></a>رمز تعريف السكان التايلاندي
 
 ### <a name="format"></a>تنسيق
@@ -17526,6 +17669,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 13 رقما:
+
 - الرقم الأول ليس صفرا أو تسعة
 - 12 رقما
 
@@ -17536,10 +17680,12 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_Thai_Citizen_Id عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_Thai_Citizen_Id.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_Thai_Citizen_Id عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -17583,10 +17729,12 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_Turkish_National_Id عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_Turkish_National_Id.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_Turkish_National_Id عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -17611,7 +17759,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - Vatandaılık numarası
 - Vatandaılık no
 
-
 ## <a name="turkey-physical-addresses"></a>العناوين المادية لتركيا
 
 يكشف هذا الكيان المسمى غير المفكك عن الأنماط المتعلقة بالعنوان الفعلي من تركيا. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -17620,7 +17767,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 المتوسطه
 
-
 ## <a name="types-of-medication"></a>أنواع الأدوية
 
 يكشف هذا الكيان المسمى غير المكتظ بأسماء الأدوية، مثل *الأدوية.*  وهو يدعم مصطلحات اللغة الإنجليزية فقط. كما أنها مضمنة في [جميع الشروط والأحكام الطبية](#all-medical-terms-and-conditions) المجمعة المسماة ENTITY SIT.
@@ -17628,7 +17774,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="confidence-level"></a>مستوى الثقة
 
 عاليه
-
 
 ## <a name="uk-drivers-license-number"></a>بريطانيا. رقم رخصة القيادة
 
@@ -17639,6 +17784,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 18 حرفا ورقما:
+
 - خمسة أحرف (غير حساسة لحالة الأحرف) أو الرقم "9" بدلا من حرف.
 - رقم واحد.
 - خمسة أرقام بتنسيق التاريخ MMDDY لتاريخ الميلاد. يتم زيادة الحرف السابع بمقدار 50 إذا كان برنامج التشغيل أنثى؛ على سبيل المثال، من 51 إلى 62 بدلا من 01 إلى 12.
@@ -17652,11 +17798,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_uk_drivers_license` عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية منها `Keywords_eu_driver's_license_number` .
 - يمر المجموع الاختباري.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة `Func_uk_drivers_license` عن المحتوى الذي يطابق النمط.
 - يمر المجموع الاختباري.
 
@@ -17774,7 +17922,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - تراخيص القيادة #
 - رخصة القيادة #
 - تراخيص القيادة #
-- رخصة القيادة 
+- رخصة القيادة
 - رخصة القيادة
 - dlno #
 - محرك lic
@@ -17796,7 +17944,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - dlno
 - رقم dl
 
-
 ## <a name="uk-electoral-roll-number"></a>بريطانيا. رقم لفة
 
 ### <a name="format"></a>تنسيق
@@ -17814,6 +17961,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_uk_electoral عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_uk_electoral.
 
@@ -17838,7 +17986,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - سجل السجلات
 - لفة
 
-
 ## <a name="uk-national-health-service-number"></a>بريطانيا. رقم خدمة الصحة الوطنية
 
 ### <a name="format"></a>تنسيق
@@ -17848,6 +17995,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 من 10 إلى 17 رقما:
+
 - إما 3 أو 10 أرقام
 - مساحة
 - ثلاثة أرقام
@@ -17861,6 +18009,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_uk_nhs_number عن المحتوى الذي يتطابق مع النمط.
 - أحد الإجراءات التالية صحيح:
     - تم العثور على كلمة أساسية من Keyword_uk_nhs_number.
@@ -17906,7 +18055,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - تاريخ الميلاد
 - تاريخ الميلاد
 
-
 ## <a name="uk-national-insurance-number-nino"></a>بريطانيا. رقم التأمين الوطني (NINO)
 
 يتم تضمين كيان نوع المعلومات الحساسة هذا في نوع المعلومات الحساسة لرقم التعريف الوطني للاتحاد الأوروبي. كما أنها متوفرة ككيان مستقل لنوع المعلومات الحساسة.
@@ -17942,10 +18090,12 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_uk_nino عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_uk_nino.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_uk_nino عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -17985,7 +18135,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - الطمأنينة الوطنية #
 - رقم الأرقام الوطنية
 
-
 ## <a name="uk-physical-addresses"></a>بريطانيا. العناوين الفعلية
 
 يكشف هذا الكيان المسمى غير الملغى عن الأنماط المتعلقة بالعنوان الفعلي من المملكة المتحدة. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -17994,11 +18143,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 المتوسطه
 
-
-
 ## <a name="uk-unique-taxpayer-reference-number"></a>بريطانيا. رقم مرجع فريد ل "مرجع ما بعد الإسناد"
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -18008,7 +18156,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="format"></a>تنسيق
 
 10 أرقام بدون مسافات ومحددات
-
 
 ### <a name="pattern"></a>نمط
 
@@ -18021,8 +18168,9 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
-- تبحث الدالة  `Func_uk_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
-- تم العثور على كلمة أساسية منها  `Keywords_uk_eu_tax_file_number` .
+
+- تبحث الدالة `Func_uk_eu_tax_file_number` عن المحتوى الذي يطابق النمط.
+- تم العثور على كلمة أساسية منها `Keywords_uk_eu_tax_file_number` .
 
 ```xml
       <!-- U.K. Unique Taxpayer Reference Number -->
@@ -18056,7 +18204,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - رقم الصفيح
 - القصدير #
 
-
 ## <a name="us-bank-account-number"></a>رقم الحساب البنكي الأمريكي
 
 ### <a name="format"></a>تنسيق
@@ -18074,6 +18221,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث التعبير العادي Regex_usa_bank_account_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_usa_Bank_Account.
 
@@ -18119,7 +18267,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - رقم Acct للخصم.
 - رقم حساب الخصم.
 
-
 ## <a name="us-drivers-license-number"></a>رقم رخصة القيادة الأمريكية
 
 ### <a name="format"></a>تنسيق
@@ -18129,6 +18276,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 يعتمد على الولاية - على سبيل المثال، نيويورك:
+
 - ستتطابق تسعة أرقام منسقة مثل ddd ddd ddd.
 - لن تتطابق تسعة أرقام مثل dddddddd.
 
@@ -18139,11 +18287,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_new_york_drivers_license_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_[state_name]_drivers_license_name.
 - تم العثور على كلمة أساسية من Keyword_us_drivers_license.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة Func_new_york_drivers_license_number عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_[state_name]_drivers_license_name.
 - تم العثور على كلمة أساسية من Keyword_us_drivers_license_abbreviations.
@@ -18267,12 +18417,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - بطاقة التعريف #
 - بطاقات التعريف #
 
-
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
 - اختصار الحالة (على سبيل المثال، "NY")
 - اسم الولاية (على سبيل المثال، "نيويورك")
-
 
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>رقم التعريف الفردي للولايات المتحدة (ITIN)
 
@@ -18283,6 +18431,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 تنسيق:
+
 - الرقم "9"
 - رقمين
 - مسافة أو شرطة
@@ -18292,6 +18441,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - أربعة أرقام
 
 منسق:
+
 - الرقم "9"
 - رقمين
 - a "7" أو "8"
@@ -18304,14 +18454,17 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_formatted_itin عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_itin.
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_unformatted_itin عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من Keyword_itin.
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - تبحث الدالة Func_formatted_itin أو Func_unformatted_itin عن المحتوى الذي يتطابق مع النمط.
 
 ```xml
@@ -18351,7 +18504,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - سيارة أجرة
 - أجهزة فردية
 
-
 ## <a name="us-physical-addresses"></a>العناوين الفعلية في الولايات المتحدة
 
 يكشف هذا الكيان المسمى غير الملغى عن الأنماط المتعلقة بالعنوان الفعلي من الولايات المتحدة. كما أنها مضمنة في [كافة العناوين المادية](#all-physical-addresses) المجمعة المسماة ENTITY SIT.
@@ -18359,7 +18511,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="confidence-level"></a>مستوى الثقة
 
 المتوسطه
-
 
 ## <a name="us-social-security-number-ssn"></a>رقم الضمان الاجتماعي (SSN) في الولايات المتحدة
 
@@ -18373,6 +18524,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 تبحث أربع دالات عن SSNs في أربعة أنماط مختلفة:
+
 - Func_ssn البحث عن شبكات SSN ذات تنسيق قوي ما قبل 2011 تم تنسيقها بشرطات أو مسافات (ddd-dddd OR ddd ddd)
 - Func_unformatted_ssn البحث عن شبكات SSN ذات تنسيق قوي ما قبل 2011 غير منسقة كتسع أرقام متتالية (dddddddd)
 - Func_randomized_formatted_ssn البحث عن SSNs ما بعد 2011 التي تم تنسيقها بشرطات أو مسافات (ddd-dddd OR ddd dddd)
@@ -18385,17 +18537,19 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة `Func_ssn` عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية منها `Keyword_ssn` .
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_unformatted_ssn' عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية منها `Keyword_ssn` .
 
 سياسة DLP لديها ثقة منخفضة في أنه تم الكشف عن هذا النوع من المعلومات الحساسة إذا، في حدود 300 حرف:
+
 - الدالة `Func_randomized_formatted_ssn` أو `Func_randomized_unformatted_ssn` البحث عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية منها `Keyword_ssn` .
-
 
 ```xml
 <!-- U.S. Social Security Number (SSN) -->
@@ -18436,7 +18590,6 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - SS #
 - SSID
 
-
 ## <a name="usuk-passport-number"></a>الولايات المتحدة/المملكة المتحدة رقم جواز السفر
 
 ### <a name="format"></a>تنسيق
@@ -18455,11 +18608,13 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_usa_uk_passport عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_uk_eu_passport_number` تم العثور عليها.
 - تم العثور على كلمة أساسية من `Keywords_eu_passport_date`
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - تبحث الدالة Func_usa_uk_passport عن المحتوى الذي يتطابق مع النمط.
 - تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_uk_eu_passport_number` تم العثور عليها.
 
@@ -18504,10 +18659,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - جواز سفر بريطاني
 - جواز سفر المملكة المتحدة
 
-
 ## <a name="ukraine-passport-domestic"></a>جواز سفر محلي في بورتوانا
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -18529,6 +18684,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث Regex_Ukraine_Passport_Domestic regex عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من Keyword_Ukraine_Passport_Domestic.
 
@@ -18553,10 +18709,10 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - номер паспорта
 - персональний
 
-
 ## <a name="ukraine-passport-international"></a>جواز سفر نيازكي دولي
 
 يتوفر نوع المعلومات الحساسة هذا للاستخدام فقط في:
+
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
 - إدارة المعلومات
@@ -18570,6 +18726,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="pattern"></a>نمط
 
 نمط أبجدي رقمي مكون من ثمانية أحرف:
+
 - حرفان أو رقمان
 - ستة أرقام
 
@@ -18580,6 +18737,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 ### <a name="definition"></a>تعريف
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
+
 - يبحث Regex_Ukraine_Passport_International regex عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من Keyword_Ukraine_Passport_International.
 
@@ -18602,5 +18760,3 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - لا يوجد جواز سفر
 - паспорт України
 - номер паспорта
-
-

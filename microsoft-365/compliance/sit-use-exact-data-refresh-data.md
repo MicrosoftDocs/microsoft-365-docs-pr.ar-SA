@@ -1,5 +1,5 @@
 ---
-title: تحديث ملف جدول مصدر معلومات متطابق تماما مع البيانات الحساسة
+title: تحديث ملف جدول مصدر المعلومات غير الحساسة للبيانات الدقيق
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,39 +15,39 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: تحديث ملف جدول مصدر المعلومات الحساس.
+description: تحديث ملف جدول مصدر المعلومات الحساسة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 347ff88391a19cb3d8688b1142e524a163159b6f
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: fe72fac43d3cc9a568d8aa1c5d985d34f8477a4d
+ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63575917"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64760834"
 ---
-# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>تحديث البيانات بدقة تتطابق مع ملف جدول مصدر المعلومات الحساس 
+# <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>تحديث ملف جدول مصدر المعلومات الحساسة لتطابق البيانات الدقيقة 
 
-يمكنك تحديث قاعدة بيانات المعلومات الحساسة حتى 5 مرات كل 24 ساعة. يجب إعادة البحث عن جدول مصدر المعلومات الحساس وتحميله.
+يمكنك تحديث قاعدة بيانات المعلومات الحساسة حتى 5 مرات كل 24 ساعة. سيتعين عليك إعادة تشغيل جدول مصدر المعلومات الحساسة وتحميله.
 
-1. يمكنك إعادة تصدير البيانات الحساسة إلى تطبيق، مثل Microsoft Excel، وحفظ الملف بتنسيق .csv بتنسيق .tsv أو تنسيق توجيه (|) المحدد. احتفظ بنفس اسم الملف والموقع الذي استخدمته عندما قمت مسبقا بتفيش الملف وتحميله. راجع تصدير [بيانات المصدر](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) للحصول على معلومات دقيقة تتطابق مع نوع المعلومات الحساسة المستندة إلى البيانات للحصول على تفاصيل حول تصدير البيانات الحساسة والحصول عليها في التنسيق الصحيح.
+1. أعد تصدير البيانات الحساسة إلى تطبيق، مثل Microsoft Excel، واحفظ الملف بتنسيق .csv أو تنسيق .tsv أو توجيه (|) المحدد. احتفظ بنفس اسم الملف والموقع الذي استخدمته عند تجزئة الملف وتحميله مسبقا. راجع [، تصدير البيانات المصدر لمطابقة البيانات الدقيقة استنادا إلى نوع المعلومات الحساسة](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) للحصول على تفاصيل حول تصدير البيانات الحساسة والحصول عليها في التنسيق الصحيح.
 
       > [!NOTE]
-      > إذا لم تكن هناك أي تغييرات على البنية (أسماء الحقول) لملف جدول مصدر المعلومات الحساس، فلن تحتاج إلى إجراء أي تغييرات على ملف مخطط قاعدة البيانات عند تحديث البيانات. ولكن إذا كان عليك إجراء تغييرات، فتأكد من تحرير مخطط قاعدة البيانات وحزمة القواعد وفقا لذلك. راجع، [إدارة مخطط مطابقة البيانات الدقيقة](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) لخطوات تحرير مخطط أو إزالته. راجع، [إنشاء بيانات دقيقة تتطابق مع نوع/حزمة](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) قاعدة المعلومات الحساسة لخطوات تحرير حزمة قاعدة/قاعدة/قاعدة EDM أو تحريرها.
+      > إذا لم تكن هناك أي تغييرات على البنية (أسماء الحقول) لملف جدول مصدر المعلومات الحساسة، فلن تحتاج إلى إجراء أي تغييرات على ملف مخطط قاعدة البيانات عند تحديث البيانات. ولكن إذا كان عليك إجراء تغييرات، فتأكد من تحرير مخطط قاعدة البيانات وحزمة القواعد وفقا لذلك. راجع [، إدارة مخطط مطابقة البيانات الدقيقة](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) للخطوات لتحرير مخطط أو إزالته. انظر، [قم بإنشاء بيانات مطابقة دقيقة لنوع/حزمة قاعدة المعلومات الحساسة](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) للخطوات لتحرير حزمة EDM SIT/rule أو إزالتها.
 
-2. استخدم الإجراءات الواردة في ["](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) هاش" وحمّل جدول مصدر المعلومات الحساس لكي تتطابق البيانات بدقة مع أنواع المعلومات الحساسة لتحميل ملف مصدر جدول المعلومات الحساس.
+2. استخدم الإجراءات في [التجزئة وقم بتحميل جدول مصدر المعلومات الحساسة لتطابق أنواع المعلومات الحساسة بدقة مع البيانات](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) لتحميل ملف مصدر جدول المعلومات الحساسة.
 
-2. يمكنك استخدام ["جدول المهام](/windows/desktop/TaskSchd/task-scheduler-start-page) " لأتمتة "هاش" وتحميل جدول مصدر المعلومات الحساس لكي تتطابق البيانات [بدقة مع إجراء أنواع المعلومات الحساسة](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) . يمكنك جدولة المهام باستخدام عدة أساليب:
+3. يمكنك استخدام ["جدول المهام"](/windows/desktop/TaskSchd/task-scheduler-start-page) لأتمتة [التجزئة وتحميل جدول مصدر المعلومات الحساسة لإجراء أنواع المعلومات الحساسة المطابقة تماما للبيانات](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) . يمكنك جدولة المهام باستخدام عدة أساليب:
 
-   |الأسلوب|ما يجب فعله|
+   |الاسلوب|ما يجب فعله|
    |---|---|
-   |Windows PowerShell|راجع [وثائق ScheduledTasks](/powershell/module/scheduledtasks/) [ومثال برنامج PowerShell النصي](#example-powershell-script-for-task-scheduler) في هذه المقالة|
-   |API لجدولة المهام|راجع [وثائق "جدول المهام](/windows/desktop/TaskSchd/using-the-task-scheduler) "|
-   |Windows المستخدم|في Windows، انقر فوق **بدء**، ثم اكتب جدول المهام. بعد ذلك، في قائمة النتائج، انقر ب زر الماوس الأيمن فوق **جدول المهام**، **واختر تشغيل كمسؤول**.|
+   |Windows PowerShell|راجع وثائق [ScheduledTasks](/powershell/module/scheduledtasks/) [ومثال البرنامج النصي PowerShell](#example-powershell-script-for-task-scheduler) في هذه المقالة|
+   |واجهة برمجة تطبيقات مجدول المهام|راجع وثائق ["جدولة المهام"](/windows/desktop/TaskSchd/using-the-task-scheduler)|
+   |واجهة مستخدم Windows|في Windows، انقر فوق **"بدء"** واكتب "جدولة المهام". بعد ذلك، في قائمة النتائج، انقر بزر الماوس الأيمن فوق **"جدولة المهام"**، واختر **"تشغيل" كمسؤول**.|
 
-### <a name="example-powershell-script-for-task-scheduler"></a>مثال برنامج PowerShell النصي لجدول المهام 
+### <a name="example-powershell-script-for-task-scheduler"></a>مثال على برنامج PowerShell النصي لمجدول المهام 
 
-يتضمن هذا القسم مثالا عن برنامج PowerShell النصي الذي يمكنك استخدامه لجدولة مهامك لتقحم البيانات وتحميل البيانات المقسمة:
+يتضمن هذا القسم مثالا على برنامج PowerShell النصي الذي يمكنك استخدامه لجدولة مهامك لتجزئة البيانات وتحميل البيانات المقسمة:
 
-#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>جدولة عملية التهشح والتحميل في خطوة مدمجة
+#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>جدولة التجزئة وتحميلها في خطوة مجمعة
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -82,7 +82,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>جدولة التهشح وتحميله كلخطوات المنفصلة
+#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>جدولة التجزئة وتحميلها كخطوات منفصلة
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
