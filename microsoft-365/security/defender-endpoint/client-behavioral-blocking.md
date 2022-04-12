@@ -1,7 +1,7 @@
 ---
 title: الحظر السلوكي للعميل
 description: الحظر السلوكي للعميل هو جزء من قدرات الحظر السلوكي والاحتواء في Microsoft Defender لنقطة النهاية
-keywords: حظر السلوك والحماية السريعة وسلوك العميل Microsoft Defender لنقطة النهاية
+keywords: الحظر السلوكي، والحماية السريعة، وسلوك العميل، Microsoft Defender لنقطة النهاية
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -16,66 +16,80 @@ ms.custom:
 - edr
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 8da3f04af66568bbe79dd6a74c38b30a8a1ab891
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f19e354a23af03abd905591993197ff8f484ceff
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470208"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788381"
 ---
 # <a name="client-behavioral-blocking"></a>الحظر السلوكي للعميل
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- برنامج الحماية من الفيروسات من Microsoft Defender
 
-> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
+**منصه**
+- بالنسبة لنظام التشغيل
+
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>نظرة عامة
 
-الحظر السلوكي للعميل هو أحد مكونات قدرات [الحظر والاحتواء](behavioral-blocking-containment.md) السلوكية في Defender for Endpoint. عند اكتشاف سلوكيات مريبة على الأجهزة (يشار إليها أيضا باسم العملاء أو نقاط النهاية)، يتم حظر التحف (مثل الملفات أو التطبيقات) وفحصها وتصفيها تلقائيا.
+الحظر السلوكي للعميل هو أحد مكونات [قدرات الحظر السلوكي والاحتواء](behavioral-blocking-containment.md) في Defender لنقطة النهاية. كما يتم الكشف عن السلوكيات المشبوهة على الأجهزة (يشار إليها أيضا باسم العملاء أو نقاط النهاية)، يتم حظر البيانات الاصطناعية (مثل الملفات أو التطبيقات) والتحقق منها ومعالجتها تلقائيا.
 
-:::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="حماية العميل والسحابة" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
+:::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="حماية السحابة والعميل" lightbox="images/pre-execution-and-post-execution-detection-engines.png":::
 
-تعمل الحماية من الفيروسات بشكل أفضل عند إقرانها مع الحماية السحابية.
+تعمل الحماية من الفيروسات بشكل أفضل عند إقرانها بحماية السحابة.
 
 ## <a name="how-client-behavioral-blocking-works"></a>كيفية عمل الحظر السلوكي للعميل
 
-[برنامج الحماية من الفيروسات من Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) الكشف عن سلوك مريب، أو تعليمات برمجية ضارة، أو هجمات بدون ملفات أو داخل الذاكرة، والمزيد على جهاز. عند الكشف عن سلوكيات مريبة، برنامج الحماية من الفيروسات من Microsoft Defender أجهزة العرض هذه السلوكيات المريبة وأشجار العمليات الخاصة بها إلى خدمة الحماية السحابية. يميز التعلم الآلي بين التطبيقات الضارة والسلوكيات الجيدة في المللي ثانية، ويصنف كل قطعة فنية. في الوقت الحقيقي تقريبا، بمجرد أن يتم العثور على أداة ضار، سيتم حظرها على الجهاز.
+[يمكن برنامج الحماية من الفيروسات من Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md) الكشف عن السلوك المشبوه، والتعليمات البرمجية الضارة، والهجمات بدون ملف وفي الذاكرة، والمزيد على الجهاز. عند الكشف عن السلوكيات المشبوهة، برنامج الحماية من الفيروسات من Microsoft Defender مراقبة وإرسال هذه السلوكيات المشبوهة وأشجار العمليات الخاصة بها إلى خدمة حماية السحابة. يميز التعلم الآلي بين التطبيقات الضارة والسلوكيات الجيدة في غضون مللي ثانية، ويصنف كل أداة. في الوقت الحقيقي تقريبا، بمجرد العثور على البيانات الاصطناعية لتكون ضارة، يتم حظرها على الجهاز.
 
-كلما تم اكتشاف سلوك مريب، يتم إنشاء تنبيه[](alerts-queue.md)، وهو مرئي في أثناء الكشف عن الهجوم وتوقفه، يتم تشغيل التنبيهات، مثل "تنبيه الوصول الأولي"، وظهرت في مدخل [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) (سابقا Microsoft 365 Defender).
+كلما تم الكشف عن سلوك مريب، يتم إنشاء [تنبيه](alerts-queue.md) ويكون مرئيا أثناء الكشف عن الهجوم وتوقفه؛ يتم تشغيل التنبيهات، مثل "تنبيه الوصول الأولي"، وتظهر في [مدخل Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender) (سابقا Microsoft 365 Defender).
 
-يعد الحظر السلوكي للعميل فعالا لأنه لا يساعد فقط على منع بدء أي هجوم، بل يمكن أن يساعد في إيقاف هجوم بدأ تنفيذه. ومع حظر [حلقة](feedback-loop-blocking.md) الملاحظات (إمكانية أخرى للحظر السلوكي والاحتواء)، يتم منع الهجمات على الأجهزة الأخرى في مؤسستك.
+الحظر السلوكي للعميل فعال لأنه لا يساعد فقط على منع بدء الهجوم، بل يمكن أن يساعد في إيقاف الهجوم الذي بدأ تنفيذه. ومع [حظر حلقة الملاحظات](feedback-loop-blocking.md) (إمكانية أخرى للحظر السلوكي والاحتواء)، يتم منع الهجمات على الأجهزة الأخرى في مؤسستك.
 
-## <a name="behavior-based-detections"></a>الاكتشافات المستندة إلى السلوك
+## <a name="behavior-based-detections"></a>عمليات الكشف المستندة إلى السلوك
 
-يتم تسمية الاكتشافات المستندة إلى السلوك وفقا ل [MITRE ATT&مصفوفة CK للمؤسسات](https://attack.mitre.org/matrices/enterprise). تساعد اصطلاحات التسمية في تحديد مرحلة الهجوم حيث تم ملاحظة السلوك الضار:
+تتم تسمية عمليات الكشف المستندة إلى السلوك وفقا [لمصفوفة MITRE ATT&CK ل Enterprise](https://attack.mitre.org/matrices/enterprise). يساعد اصطلاح التسمية في تحديد مرحلة الهجوم التي تمت فيها ملاحظة السلوك الضار:
 
-|تكتيك|اسم خطر الكشف|
+|تكتيك|اسم التهديد للكشف|
 |---|---|
 |الوصول الأولي|`Behavior:Win32/InitialAccess.*!ml`|
-|التنفيذ|`Behavior:Win32/Execution.*!ml`|
-|الاستمرار|`Behavior:Win32/Persistence.*!ml`|
-|تصاعد الامتيازات|`Behavior:Win32/PrivilegeEscalation.*!ml`|
-|التجنب الدفاعي|`Behavior:Win32/DefenseEvasion.*!ml`|
+|تنفيذ|`Behavior:Win32/Execution.*!ml`|
+|استمرار|`Behavior:Win32/Persistence.*!ml`|
+|تصعيد الامتيازات|`Behavior:Win32/PrivilegeEscalation.*!ml`|
+|التهرب الدفاعي|`Behavior:Win32/DefenseEvasion.*!ml`|
 |الوصول إلى بيانات الاعتماد|`Behavior:Win32/CredentialAccess.*!ml`|
 |اكتشاف|`Behavior:Win32/Discovery.*!ml`|
-|الحركة اللاحقة|`Behavior:Win32/LateralMovement.*!ml`|
-|المجموعة|`Behavior:Win32/Collection.*!ml`|
+|الحركة الجانبية|`Behavior:Win32/LateralMovement.*!ml`|
+|جمع|`Behavior:Win32/Collection.*!ml`|
 |الأمر والتحكم|`Behavior:Win32/CommandAndControl.*!ml`|
-|Exfiltration|`Behavior:Win32/Exfiltration.*!ml`|
-|التأثير|`Behavior:Win32/Impact.*!ml`|
-|غير تصنيف|`Behavior:Win32/Generic.*!ml`|
+|النقل غير المصرح به|`Behavior:Win32/Exfiltration.*!ml`|
+|اثر|`Behavior:Win32/Impact.*!ml`|
+|غير مصنف|`Behavior:Win32/Generic.*!ml`|
 
 > [!TIP]
-> لمعرفة المزيد حول التهديدات المحددة، راجع **[نشاط التهديدات العالمية الأخير](https://www.microsoft.com/wdsi/threats)**.
+> لمعرفة المزيد حول تهديدات محددة، راجع **[نشاط التهديد العالمي الأخير](https://www.microsoft.com/wdsi/threats)**.
 
 ## <a name="configuring-client-behavioral-blocking"></a>تكوين الحظر السلوكي للعميل
 
-إذا كانت مؤسستك تستخدم Defender for Endpoint، يتم تمكين الحظر السلوكي للعميل بشكل افتراضي. ومع ذلك، للاستفادة من جميع إمكانيات Defender لنقطة النهاية، بما [](behavioral-blocking-containment.md)في ذلك الحظر السلوكي والاحتواء، تأكد من تمكين الميزات التالية وإمكانيات Defender لنقطة النهاية وتكوينها:
+إذا كانت مؤسستك تستخدم Defender لنقطة النهاية، يتم تمكين الحظر السلوكي للعميل بشكل افتراضي. ومع ذلك، للاستفادة من جميع قدرات Defender لنقطة النهاية، بما في ذلك [الحظر السلوكي والاحتواء](behavioral-blocking-containment.md)، تأكد من تمكين الميزات والقدرات التالية ل Defender لنقطة النهاية وتكوينها:
 
-- [Defender لخط أساسيات نقطة النهاية](configure-machines-security-baseline.md)
-- [الأجهزة المجهزة إلى Defender لنقطة النهاية](onboard-configure.md)
+- [Defender لأساسيات نقطة النهاية](configure-machines-security-baseline.md)
+- [الأجهزة التي تم إلحاقها ب Defender لنقطة النهاية](onboard-configure.md)
 - [الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر](edr-in-block-mode.md)
-- [الحد من سطح الهجوم](attack-surface-reduction.md)
-- [حماية الجيل التالي](configure-microsoft-defender-antivirus-features.md) (الحماية من الفيروسات والحماية من البرامج الضارة وإمكانيات الحماية من المخاطر الأخرى)
+- [قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction.md)
+- [حماية الجيل التالي](configure-microsoft-defender-antivirus-features.md) (الحماية من الفيروسات والبرامج الضارة وغيرها من قدرات الحماية من التهديدات)
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender في وضع عدم الاتصال في Windows
-description: يمكنك استخدام Microsoft Defender في وضع عدم الاتصال مباشرة من برنامج الحماية من الفيروسات لـ Windows Defender التطبيق. يمكنك أيضا إدارة كيفية نشره في شبكتك.
-keywords: مسح ضوئي، ومدافع، وغير متصل
+description: يمكنك استخدام Microsoft Defender في وضع عدم الاتصال مباشرة من تطبيق برنامج الحماية من الفيروسات لـ Windows Defender. يمكنك أيضا إدارة كيفية توزيعه في شبكتك.
+keywords: المسح الضوئي، والمدافع، دون اتصال
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ccb65b865afdf2a0ec0210c3593daee1cb5c09b6
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: ea7d316a7fc31724466dcd459ed72792cea817fd
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476830"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787677"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>تشغيل نتائج فحص Microsoft Defender في وضع عدم الاتصال ومراجعتها
 
@@ -28,116 +28,130 @@ ms.locfileid: "64476830"
 
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- برنامج الحماية من الفيروسات من Microsoft Defender
 
-Microsoft Defender في وضع عدم الاتصال أداة مسح البرامج الضارة التي تتيح لك تشغيل عملية فحص وتشغيلها من بيئة موثوق بها. يتم تشغيل الفحص من خارج نواة Windows العادية بحيث يمكن أن تستهدف البرامج الضارة التي تحاول تجاوز قوقعة Windows، مثل الفيروسات ومفاتحي الجذر التي تسبب إصابة سجل التشغيل الرئيسي (MBR) أو تتخطىه.
+**منصات**
+- بالنسبة لنظام التشغيل
 
-يمكنك استخدام Microsoft Defender في وضع عدم الاتصال إذا كنت تشك في وجود إصابة بالبرامج الضارة، أو إذا كنت تريد تأكيد تنظيف كامل لنقطة النهاية بعد انتشار البرامج الضارة.
+Microsoft Defender في وضع عدم الاتصال هي أداة فحص مكافحة البرامج الضارة التي تتيح لك تشغيل وتشغيل فحص من بيئة موثوق بها. يتم تشغيل الفحص من خارج نواة Windows العادية حتى تتمكن من استهداف البرامج الضارة التي تحاول تجاوز Windows shell، مثل الفيروسات و rootkits التي تسبب الفيروسات أو الكتابة فوق سجل التمهيد الرئيسي (MBR).
 
-في Windows 10 Windows 11، Microsoft Defender في وضع عدم الاتصال تشغيل التطبيق بنقرة واحدة مباشرة [من أمن Windows التطبيق](microsoft-defender-security-center-antivirus.md). في الإصدارات السابقة من Windows، كان على المستخدم تثبيت Microsoft Defender في وضع عدم الاتصال إلى وسائط قابلة للتمهيد، وإعادة تشغيل نقطة النهاية، وتحميل الوسائط القابلة للتمهيد.
+يمكنك استخدام Microsoft Defender في وضع عدم الاتصال إذا كنت تشك في وجود إصابة بالبرامج الضارة، أو إذا كنت تريد تأكيد تنظيف شامل لنقطة النهاية بعد انتشار البرامج الضارة.
 
-## <a name="prerequisites-and-requirements"></a>المتطلبات والمتطلبات
+في Windows 10 Windows 11، يمكن تشغيل Microsoft Defender في وضع عدم الاتصال بنقرة واحدة مباشرة من [تطبيق أمن Windows](microsoft-defender-security-center-antivirus.md). في الإصدارات السابقة من Windows، كان على المستخدم تثبيت Microsoft Defender في وضع عدم الاتصال إلى وسائط قابلة للتمهيد، وإعادة تشغيل نقطة النهاية، وتحميل الوسائط القابلة للتمهيد.
 
-Microsoft Defender في وضع عدم الاتصال في Windows 10 Windows 11 متطلبات الأجهزة نفسها التي Windows 10.
+## <a name="prerequisites-and-requirements"></a>المتطلبات الأساسية والمتطلبات
 
-لمزيد من المعلومات حول Windows 10 ومتطلبات Windows 11، راجع المواضيع التالية:
+Microsoft Defender في وضع عدم الاتصال في Windows 10 Windows 11 لها نفس متطلبات الأجهزة مثل Windows 10.
+
+لمزيد من المعلومات حول متطلبات Windows 10 Windows 11، راجع المواضيع التالية:
 
 - [الحد الأدنى لمتطلبات الأجهزة](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 
 - [إرشادات مكونات الأجهزة](/windows-hardware/design/component-guidelines/components)
 
 > [!NOTE]
-> Microsoft Defender في وضع عدم الاتصال غير معتمد على الأجهزة التي ARM المعالجات أو على Windows المخزنة للخادم.
+> Microsoft Defender في وضع عدم الاتصال غير معتمد على الأجهزة التي تحتوي على معالجات ARM، أو على Windows Server Stock Keeping Units.
 
-لتشغيل Microsoft Defender في وضع عدم الاتصال من نقطة النهاية، يجب تسجيل دخول المستخدم باستخدام امتيازات المسؤول.
+لتشغيل Microsoft Defender في وضع عدم الاتصال من نقطة النهاية، يجب تسجيل دخول المستخدم بامتيازات المسؤول.
 
-## <a name="microsoft-defender-offline-updates"></a>Microsoft Defender في وضع عدم الاتصال التحديثات
+## <a name="microsoft-defender-offline-updates"></a>تحديثات Microsoft Defender في وضع عدم الاتصال
 
-Microsoft Defender في وضع عدم الاتصال آخر تحديثات الحماية المتوفرة على نقطة النهاية؛ يتم تحديثها كلما برنامج الحماية من الفيروسات لـ Windows Defender تحديثها.
+تستخدم Microsoft Defender في وضع عدم الاتصال أحدث تحديثات الحماية المتوفرة على نقطة النهاية؛ ويتم تحديثها كلما تم تحديث برنامج الحماية من الفيروسات لـ Windows Defender.
 
 > [!NOTE]
-> قبل تشغيل الفحص دون اتصال، يجب أن تحاول تحديث حماية AV من Microsoft Defender. يمكنك فرض تحديث باستخدام نهج المجموعة أو يمكنك عادة نشر التحديثات إلى نقاط النهاية، أو يمكنك تنزيل آخر تحديثات الحماية وتثبيتها [يدويا](https://www.microsoft.com/security/portal/definitions/adl.aspx) من مركز الحماية من البرامج الضارة لـ Microsoft.
+> قبل تشغيل الفحص دون اتصال، يجب محاولة تحديث حماية Microsoft Defender AV. يمكنك إما فرض تحديث باستخدام نهج المجموعة أو مع ذلك تقوم عادة بنشر التحديثات إلى نقاط النهاية، أو يمكنك تنزيل أحدث تحديثات الحماية وتثبيتها يدويا من [مركز الحماية من البرامج الضارة لـ Microsoft](https://www.microsoft.com/security/portal/definitions/adl.aspx).
 
-راجع [الموضوع إدارة برنامج الحماية من الفيروسات من Microsoft Defender معلومات](manage-protection-updates-microsoft-defender-antivirus.md) الأمان للحصول على مزيد من المعلومات.
+راجع موضوع ["إدارة تحديثات معلومات الأمان برنامج الحماية من الفيروسات من Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md)" للحصول على مزيد من المعلومات.
 
 ## <a name="usage-scenarios"></a>سيناريوهات الاستخدام
 
-في Windows 10، الإصدار 1607، يمكنك فرض الفحص دون اتصال يدويا. بدلا من ذلك، إذا Windows Defender Microsoft Defender في وضع عدم الاتصال يجب تشغيله، سيطالب المستخدم في نقطة النهاية.
+في Windows 10، الإصدار 1607، يمكنك فرض فحص دون اتصال يدويا. بدلا من ذلك، إذا حدد Windows Defender أن Microsoft Defender في وضع عدم الاتصال يحتاج إلى التشغيل، فسيطالب المستخدم بنقطة النهاية.
 
-سيتم أيضا الكشف عن الحاجة إلى إجراء فحص دون اتصال إدارة نقاط النهاية من Microsoft إذا كنت تستخدمه لإدارة نقاط النهاية.
+سيتم أيضا الكشف عن الحاجة إلى إجراء فحص دون اتصال في إدارة نقاط النهاية من Microsoft إذا كنت تستخدمه لإدارة نقاط النهاية الخاصة بك.
 
 يمكن أن تحدث المطالبة عبر إعلام، على غرار ما يلي:
 
 :::image type="content" source="../../media/notification.png" alt-text="إعلام لتشغيل Microsoft Defender في وضع عدم الاتصال" lightbox="../../media/notification.png":::
 
-سيتم أيضا إعلام المستخدم داخل Windows Defender.
+سيتم إعلام المستخدم أيضا داخل عميل Windows Defender.
 
-في Configuration Manager، يمكنك تحديد حالة نقاط النهاية من خلال الانتقال إلى > نظرة عامة > حالة > Endpoint Protection حالة > System Center Endpoint Protection **.**
+في Configuration Manager، يمكنك تحديد حالة نقاط النهاية من خلال الانتقال إلى حالة **> System Center Endpoint Protection > المراقبة > حالة > Endpoint Protection الأمان**.
 
-Microsoft Defender في وضع عدم الاتصال المسح الضوئي **ضمن حالة إصلاح** البرامج الضارة كما هو مطلوب الفحص **دون اتصال**.
+تتم الإشارة إلى عمليات المسح الضوئي Microsoft Defender في وضع عدم الاتصال ضمن **حالة معالجة البرامج الضارة** كما **يتطلب الفحص دون اتصال**.
 
-:::image type="content" source="../../media/sccm-wdo.png" alt-text="مؤشر فحص Microsoft Defender في وضع عدم الاتصال" lightbox="../../media/sccm-wdo.png":::
+:::image type="content" source="../../media/sccm-wdo.png" alt-text="مؤشر الفحص بحثا عن Microsoft Defender في وضع عدم الاتصال" lightbox="../../media/sccm-wdo.png":::
 
 ## <a name="configure-notifications"></a>تكوين الإعلامات
 
-Microsoft Defender في وضع عدم الاتصال تكوين الإعلامات في إعداد النهج نفسه الذي يتم تكوينه في إعلامات Microsoft Defender AV الأخرى.
+يتم تكوين إعلامات Microsoft Defender في وضع عدم الاتصال في نفس إعداد النهج مثل إعلامات Microsoft Defender AV الأخرى.
 
-لمزيد من المعلومات حول الإعلامات في Windows Defender، راجع الموضوع تكوين الإعلامات التي [تظهر على نقاط](configure-notifications-microsoft-defender-antivirus.md) النهاية.
+لمزيد من المعلومات حول الإعلامات في Windows Defender، راجع [تكوين الإعلامات التي تظهر في موضوع نقاط النهاية](configure-notifications-microsoft-defender-antivirus.md).
 
 ## <a name="run-a-scan"></a>تشغيل فحص
 
 > [!IMPORTANT]
-> قبل استخدام Microsoft Defender في وضع عدم الاتصال، تأكد من حفظ أي ملفات ثم إيقاف تشغيل البرامج. يستغرق تشغيل Microsoft Defender في وضع عدم الاتصال المسح الضوئي حوالي 15 دقيقة. سيعاد تشغيل نقطة النهاية عند اكتمال الفحص. يتم إجراء الفحص خارج بيئة Windows التشغيل العادية. ستبدو واجهة المستخدم مختلفة عن عملية المسح الضوئي العادية التي ينفذها Windows Defender. بعد اكتمال الفحص، سيتم إعادة تشغيل نقطة النهاية Windows بشكل طبيعي.
+> قبل استخدام Microsoft Defender في وضع عدم الاتصال، تأكد من حفظ أي ملفات وإيقاف تشغيل البرامج. يستغرق فحص Microsoft Defender في وضع عدم الاتصال حوالي 15 دقيقة للتشغيل. سيعيد تشغيل نقطة النهاية عند اكتمال الفحص. يتم إجراء الفحص خارج بيئة التشغيل Windows المعتادة. ستظهر واجهة المستخدم مختلفة عن الفحص العادي الذي يتم إجراؤه بواسطة Windows Defender. بعد اكتمال الفحص، ستتم إعادة تشغيل نقطة النهاية وسيتم تحميل Windows بشكل طبيعي.
 
-يمكنك تشغيل عملية فحص Microsoft Defender في وضع عدم الاتصال باستخدام ما يلي:
+يمكنك تشغيل فحص Microsoft Defender في وضع عدم الاتصال مع ما يلي:
 
 - PowerShell
-- Windows إدارة الأجهزة (WMI)
+- Windows Management Instrumentation (WMI)
 - تطبيق أمن Windows
 
 
 
-### <a name="use-powershell-cmdlets-to-run-an-offline-scan"></a>استخدام PowerShell cmdlets لتشغيل فحص غير متصل
+### <a name="use-powershell-cmdlets-to-run-an-offline-scan"></a>استخدام PowerShell cmdlets لتشغيل فحص دون اتصال
 
-استخدم cmdlets التالية:
+استخدم أوامر cmdlet التالية:
 
 ```PowerShell
 Start-MpWDOScan
 ```
 
-راجع [استخدام Cmdlets في PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) لتكوين الأمرين [cmdlets](/powershell/module/defender/) برنامج الحماية من الفيروسات من Microsoft Defender و Defender Antivirus وتشغيلها للحصول على مزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender.
+راجع [استخدام أوامر Cmdlets PowerShell لتكوين وتشغيل أوامر](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlets لبرنامج الحماية من الفيروسات](/powershell/module/defender/) برنامج الحماية من الفيروسات من Microsoft Defender و Defender لمزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender.
 
-### <a name="use-windows-management-instruction-wmi-to-run-an-offline-scan"></a>استخدام Windows إدارة الملفات (WMI) لتشغيل فحص غير متصل
+### <a name="use-windows-management-instruction-wmi-to-run-an-offline-scan"></a>استخدام Windows Management Instruction (WMI) لتشغيل فحص دون اتصال
 
-استخدم [**الفئة MSFT_MpWDOScan**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) لتشغيل فحص غير متصل.
+استخدم فئة [**MSFT_MpWDOScan**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) لتشغيل فحص دون اتصال.
 
-سيتم تشغيل قصاصة البرامج النصية التالية في WMI على الفور Microsoft Defender في وضع عدم الاتصال، مما يؤدي إلى إعادة تشغيل نقطة النهاية وتشغيل الفحص دون اتصال، ثم إعادة التشغيل Windows.
+ستقوم القصاصة البرمجية التالية لبرنامج WMI النصي بتشغيل فحص Microsoft Defender في وضع عدم الاتصال على الفور، مما سيؤدي إلى إعادة تشغيل نقطة النهاية وتشغيل الفحص دون اتصال، ثم إعادة التشغيل والتمهيد إلى Windows.
 
 ```console
 wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start
 ```
 
-لمزيد من المعلومات، راجع ما يلي:
+راجع ما يلي للحصول على مزيد من المعلومات:
 
-- [Windows واجهات برمجة التطبيقات ل Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [واجهات برمجة تطبيقات Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-### <a name="use-the-windows-defender-security-app-to-run-an-offline-scan"></a>استخدام تطبيق Windows Defender Security لتشغيل فحص غير متصل
+### <a name="use-the-windows-defender-security-app-to-run-an-offline-scan"></a>استخدام تطبيق Windows Defender Security لتشغيل فحص دون اتصال
 
-1. افتح أمن Windows عن طريق النقر فوق أيقونة الدرع في شريط المهام أو البحث في قائمة البدء ل **Defender for Cloud**.
+1. افتح تطبيق أمن Windows بالنقر فوق أيقونة الدرع في شريط المهام أو البحث في قائمة البدء **ل Defender for Cloud**.
 
-2. انقر فوق **لوحة الحماية &** الفيروسات (أو أيقونة الدرع على شريط القوائم الأيسر) ثم فوق **تسمية الفحص** المتقدم:
+2. انقر فوق التجانب **"فيروس & الحماية من التهديدات** " (أو أيقونة الدرع على شريط القوائم الأيسر) ثم تسمية **المسح المتقدم** :
 
-3. حدد **Microsoft Defender في وضع عدم الاتصال المسح الضوئي ثم** انقر فوق **مسح ضوئي الآن**.
+3. حدد **Microsoft Defender في وضع عدم الاتصال الفحص** وانقر فوق **المسح الضوئي الآن**.
 
     > [!NOTE]
-    > في Windows 10، الإصدار 1607، يمكن تشغيل الفحص دون اتصال من **ضمن Windows الإعدادات** \> تحديث **&** \> **أمان Windows Defender** أو من عميل Windows Defender.
+    > في Windows 10، الإصدار 1607، يمكن تشغيل الفحص دون اتصال من ضمن **Windows الإعدادات** \> **تحديث & Windows Defender** \> أو من عميل Windows Defender.
 
 ## <a name="review-scan-results"></a>مراجعة نتائج الفحص
 
-Microsoft Defender في وضع عدم الاتصال يتم إدراج نتائج الفحص في قسم [محفوظات الفحص أمن Windows التطبيق](microsoft-defender-security-center-antivirus.md).
+Microsoft Defender في وضع عدم الاتصال سيتم سرد نتائج الفحص في [قسم محفوظات الفحص لتطبيق أمن Windows](microsoft-defender-security-center-antivirus.md).
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 
-- [تخصيص نتائج الفحص والمراجعة وبدءها ومراجعتها](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [تخصيص نتائج عمليات الفحص والمعالجة وبدءها ومراجعتها](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10](microsoft-defender-antivirus-in-windows-10.md)

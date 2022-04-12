@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 04cedfa951387274261c3a7a064cf11a4b97db62
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 076b445a6ac129c1debd7cba813798f51aa6f86b
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731450"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789019"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>إدارة مصادر تحديثات برنامج الحماية من الفيروسات من Microsoft Defender الحماية
 
@@ -30,6 +30,10 @@ ms.locfileid: "64731450"
 
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- برنامج الحماية من الفيروسات من Microsoft Defender
+
+**منصات**
+- بالنسبة لنظام التشغيل
 
 <a id="protection-updates"></a>
 <!-- this has been used as anchor in VDI content -->
@@ -280,6 +284,16 @@ SignatureDefinitionUpdateFileSharesSource
 
     > [!NOTE]
     > لا تقم بإضافة المجلد x64 (أو x86) في المسار. تضيفها عملية mpcmdrun.exe تلقائيا.
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 

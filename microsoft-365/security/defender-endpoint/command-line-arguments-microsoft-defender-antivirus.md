@@ -1,7 +1,7 @@
 ---
 title: استخدم سطر الأوامر لإدارة برنامج الحماية من الفيروسات من Microsoft Defender
-description: قم برنامج الحماية من الفيروسات من Microsoft Defender المسح الضوئي وتكوين حماية الجيل التالي باستخدام أداة مساعدة مخصصة لخط الأوامر.
-keywords: تشغيل فحص windows defender، تشغيل مسح الحماية من الفيروسات من سطر الأوامر، تشغيل فحص windows defender من سطر الأوامر، mpcmdrun، defender
+description: قم بتشغيل عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender وتكوين حماية الجيل التالي باستخدام أداة مساعدة مخصصة لسطر الأوامر.
+keywords: تشغيل فحص windows Defender، وتشغيل فحص مكافحة الفيروسات من سطر الأوامر، وتشغيل فحص windows Defender من سطر الأوامر، mpcmdrun، Defender
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,23 +15,27 @@ ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f7ae9c9d0986463b6d6368edd0dac050600e3373
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 97f818469f9da2616ca5ca2839ddf29ea227b85f
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "63573883"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789723"
 ---
-# <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>تكوين وإدارة برنامج الحماية من الفيروسات من Microsoft Defender باستخدام mpcmdrun.exe سطر الأوامر
+# <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>تكوين برنامج الحماية من الفيروسات من Microsoft Defender وإدارتها باستخدام أداة سطر الأوامر mpcmdrun.exe
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- برنامج الحماية من الفيروسات من Microsoft Defender 
 
-يمكنك تنفيذ دالات متنوعة في برنامج الحماية من الفيروسات من Microsoft Defender باستخدام أداة **سطر الأوامر المخصصة** mpcmdrun.exe. تكون هذه الأداة المساعدة مفيدة عندما تريد أتمتة برنامج الحماية من الفيروسات من Microsoft Defender المهام. يمكنك العثور على الأداة المساعدة في `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. تشغيله من موجه أوامر.
+**منصات**
+- بالنسبة لنظام التشغيل
+
+يمكنك تنفيذ وظائف مختلفة في برنامج الحماية من الفيروسات من Microsoft Defender باستخدام أداة سطر الأوامر المخصصة **mpcmdrun.exe**. هذه الأداة المساعدة مفيدة عندما تريد أتمتة المهام برنامج الحماية من الفيروسات من Microsoft Defender. يمكنك العثور على الأداة المساعدة في `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. قم بتشغيله من موجه الأوامر.
 
 > [!TIP]
-> قد تحتاج إلى فتح إصدار على مستوى المسؤول من موجه الأوامر. عند البحث عن **موجه الأوامر** على قائمة البدء، اختر **تشغيل كمسؤول**. إذا كنت تقوم بتشغيل إصدار نظام أساسي محدث من Microsoft Defender لمكافحة البرامج الضارة، فتابع `MpCmdRun` التشغيل من الموقع التالي: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`. لمزيد من المعلومات حول النظام الأساسي لمكافحة البرامج الضارة، راجع برنامج الحماية من الفيروسات من Microsoft Defender [الأساسية والتحديثات](manage-updates-baselines-microsoft-defender-antivirus.md).
+> قد تحتاج إلى فتح إصدار على مستوى المسؤول لمطالبة الأوامر. عند البحث عن **موجه الأوامر** على قائمة البدء، اختر **"تشغيل كمسؤول**". إذا كنت تقوم بتشغيل إصدار نظام أساسي محدث من Microsoft Defender لمكافحة البرامج الضارة، فقم بتشغيله `MpCmdRun` من الموقع التالي: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`. لمزيد من المعلومات حول النظام الأساسي لمكافحة البرامج الضارة، راجع [برنامج الحماية من الفيروسات من Microsoft Defender التحديثات والأساسات](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 تستخدم الأداة المساعدة MpCmdRun بناء الجملة التالي:
 
@@ -45,27 +49,27 @@ MpCmdRun.exe [command] [-options]
 MpCmdRun.exe -Scan -ScanType 2
 ```
 
-في مثالنا، تبدأ الأداة المساعدة MpCmdRun فحصا كاملا لمكافحة الفيروسات على الجهاز.
+في مثالنا، تبدأ الأداة المساعدة MpCmdRun عملية فحص مكافحة الفيروسات الكاملة على الجهاز.
 
-## <a name="commands"></a>الأوامر
+## <a name="commands"></a>الاوامر
 
-|الأمر|الوصف|
+|الامر|الوصف|
 |---|---|
-|`-?`**أو** `-h`|عرض جميع الخيارات المتوفرة لأداة MpCmdRun|
-|`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|فحص البرامج الضارة. قيم **ل ScanType** هي:<p>**0** افتراضي، وفقا لتكوينك<p>**1** فحص سريع<p>**2** فحص كامل<p>**3** ملف وفحص مخصص للد الدليل.<p>يتم تشغيل وحدة المعالجة المركزية وفقا لتكوينات النهج|
-|`-Trace [-Grouping #] [-Level #]`|بدء تتبع التشخيص|
-|`-GetFiles [-SupportLogLocation <path>]`|تجمع معلومات الدعم. راجع "[تجميع البيانات التشخيصية](collect-diagnostic-data.md)"|
-|`-GetFilesDiagTrack`|تماما مثل `-GetFiles`، ولكن الإخراجات إلى مجلد DiagTrack المؤقت|
+|`-?`**او** `-h`|عرض كافة الخيارات المتوفرة لأداة MpCmdRun|
+|`-Scan [-ScanType [<value>]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]`|عمليات الفحص بحثا عن برامج ضارة. قيم **ScanType** هي:<p>**0** افتراضي، وفقا للتكوين الخاص بك<p>**فحص سريع 1**<p>**فحص كامل 2**<p>**3** فحص مخصص لملفات ودلائل.<p>يتم تشغيل CpuThrottling وفقا لتكوينات النهج|
+|`-Trace [-Grouping #] [-Level #]`|بدء التتبع التشخيصي|
+|`-GetFiles [-SupportLogLocation <path>]`|يجمع معلومات الدعم. راجع "[تجميع البيانات التشخيصية](collect-diagnostic-data.md)"|
+|`-GetFilesDiagTrack`|مثل `-GetFiles`، ولكن المخرجات إلى مجلد DiagTrack المؤقت|
 |`-RemoveDefinitions [-All]`|استعادة معلومات الأمان المثبتة إلى نسخة احتياطية سابقة أو إلى المجموعة الافتراضية الأصلية|
 |`-RemoveDefinitions [-DynamicSignatures]`|إزالة معلومات الأمان التي تم تنزيلها ديناميكيا فقط|
 |`-RemoveDefinitions [-Engine]`|استعادة المحرك المثبت السابق|
 |`-SignatureUpdate [-UNC \|-MMPC]`|التحقق من وجود تحديثات جديدة لذكاء الأمان|
-|`-Restore  [-ListAll \|[[-Name <name>] [-All] \|[-FilePath <filePath>]] [-Path <path>]]`|استعادة عنصر (عناصر) معزولة أو قوائم بها|
-|`-AddDynamicSignature [-Path]`|تحميل معلومات الأمان الديناميكية|
-|`-ListAllDynamicSignatures`|تسرد معلومات الأمان الديناميكية التي تم تحميلها|
-|`-RemoveDynamicSignature [-SignatureSetID]`|إزالة معلومات الأمان الديناميكية|
-|`-CheckExclusion -path <path>`|التحقق مما إذا كان المسار مستبعدا أم لا|
-|`-ValidateMapsConnection`|تتحقق من أن شبكتك يمكنها التواصل مع برنامج الحماية من الفيروسات من Microsoft Defender السحابية. لن يعمل هذا الأمر إلا على Windows 10 الإصدار 1703 أو الإصدارات الأحدث.|
+|`-Restore  [-ListAll \|[[-Name <name>] [-All] \|[-FilePath <filePath>]] [-Path <path>]]`|استعادة العنصر (العناصر) المعزولة أو سردها|
+|`-AddDynamicSignature [-Path]`|تحميل التحليل الذكي للأمان الديناميكي|
+|`-ListAllDynamicSignatures`|سرد التحليل الذكي للأمان الديناميكي الذي تم تحميله|
+|`-RemoveDynamicSignature [-SignatureSetID]`|إزالة التحليل الذكي للأمان الديناميكي|
+|`-CheckExclusion -path <path>`|التحقق من استبعاد مسار|
+|`-ValidateMapsConnection`|يتحقق من إمكانية اتصال شبكتك بخدمة السحابة برنامج الحماية من الفيروسات من Microsoft Defender. سيعمل هذا الأمر على Windows 10 أو الإصدار 1703 أو الإصدارات الأحدث فقط.|
 
 ## <a name="common-errors-in-running-commands-via-mpcmdrunexe"></a>الأخطاء الشائعة في تشغيل الأوامر عبر mpcmdrun.exe
 
@@ -73,15 +77,25 @@ MpCmdRun.exe -Scan -ScanType 2
 
 |رسالة خطأ|السبب المحتمل|
 |---|---|
-|**فشل التحقق من صحةMapsConnection (800106BA)** **أو 0x800106BA**|تم برنامج الحماية من الفيروسات من Microsoft Defender الخدمة. تمكين الخدمة والمحاولة مرة أخرى. إذا كنت بحاجة إلى مساعدة لإعادة تمكين برنامج الحماية من الفيروسات من Microsoft Defender، فشاهد إعادة [تثبيت/تمكين برنامج الحماية من الفيروسات من Microsoft Defender نقاط النهاية](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> **تلميح**: في Windows 10 1909 أو أكثر، Windows Server 2019 أو الإصدارات الأقدم، كانت الخدمة تسمى *برنامج الحماية من الفيروسات لـ Windows Defender*.|
-|**0x80070667**|تقوم بتشغيل الأمر من `-ValidateMapsConnection` كمبيوتر يعمل Windows 10 1607 أو إصدار أقدم، أو Windows Server 2016 أو إصدار أقدم. تشغيل الأمر من جهاز Windows 10 1703 أو إصدار أحدث، أو Windows Server 2019 أو أحدث.|
-|**لا يتم التعرف على MpCmdRun على أنه أمر داخلي أو خارجي أو برنامج يمكن تشغيله أو ملف دفعة.**|يجب تشغيل الأداة إما من `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` أو (حيث `2012.4-0` قد تختلف نظرا لأن تحديثات النظام الأساسي شهرية باستثناء مارس)|
-|**فشل التحقق من صحةMapsConnection في إنشاء اتصال ب MAPS (hr=80070005 httpcode=450)**|تم محاولة الأمر باستخدام امتيازات غير كافية. استخدم موجه الأوامر (cmd.exe) كمسؤول.|
-|**فشل التحقق من صحةMapsConnection في إنشاء اتصال ب MAPS (hr=80070006 httpcode=451)**|يقوم جدار الحماية بحظر الاتصال أو إجراء فحص SSL.|
-|**فشل التحقق من صحةMapsConnection في إنشاء اتصال ب MAPS (hr=80004005 httpcode=450)**|المشاكل المحتملة المتعلقة بالشبكة، مثل مشاكل حل الاسم|
-|**فشل التحقق من صحةMapsConnection في إنشاء اتصال ب MAPS (hr=0x80508015**|يقوم جدار الحماية بحظر الاتصال أو إجراء فحص SSL.|
-|**فشل التحقق من صحةMapsConnection في إنشاء اتصال ب MAPS (hr=800722F0D**|يقوم جدار الحماية بحظر الاتصال أو إجراء فحص SSL.|
-|**فشل التحقق من صحةMapsConnection في إنشاء اتصال ب MAPS (hr=80072EE7 httpcode=451)**|يقوم جدار الحماية بحظر الاتصال أو إجراء فحص SSL.|
+|**فشل ValidateMapsConnection (800106BA)** أو **0x800106BA**|تم تعطيل خدمة برنامج الحماية من الفيروسات من Microsoft Defender. تمكين الخدمة والمحاولة مرة أخرى. إذا كنت بحاجة إلى مساعدة في إعادة تمكين برنامج الحماية من الفيروسات من Microsoft Defender، فراجع [إعادة تثبيت/تمكين برنامج الحماية من الفيروسات من Microsoft Defender على نقاط النهاية](switch-to-mde-phase-2.md#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).<p> **تلميح**: في Windows 10 1909 أو إصدار أقدم، Windows Server 2019 أو إصدار أقدم، كانت الخدمة تسمى سابقا *برنامج الحماية من الفيروسات لـ Windows Defender*.|
+|**0x80070667**|تقوم بتشغيل `-ValidateMapsConnection` الأمر من كمبيوتر Windows 10 الإصدار 1607 أو إصدار أقدم، أو Windows Server 2016 أو إصدار أقدم. قم بتشغيل الأمر من جهاز Windows 10 الإصدار 1703 أو أحدث أو Windows Server 2019 أو أحدث.|
+|**لا يتم التعرف على MpCmdRun كأوامر داخلية أو خارجية أو برنامج قابل للتشغيل أو ملف دفعي.**|يجب تشغيل الأداة من أي `%ProgramFiles%\Windows Defender` منهما أو `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` (حيث `2012.4-0` قد تختلف لأن تحديثات النظام الأساسي شهرية باستثناء مارس)|
+|**فشل ValidateMapsConnection في تأسيس اتصال بالخرائط (hr=80070005 httpcode=450)**|تمت محاولة الأمر باستخدام امتيازات غير كافية. استخدم موجه الأوامر (cmd.exe) كمسؤول.|
+|**فشل ValidateMapsConnection في تأسيس اتصال بالخرائط (hr=80070006 httpcode=451)**|جدار الحماية يمنع الاتصال أو يجري فحص SSL.|
+|**فشل ValidateMapsConnection في تأسيس اتصال بالخرائط (hr=80004005 httpcode=450)**|المشاكل المحتملة المتعلقة بالشبكة، مثل مشاكل تحليل الاسم|
+|**فشل ValidateMapsConnection في تأسيس اتصال بالخرائط (hr=0x80508015**|جدار الحماية يمنع الاتصال أو يجري فحص SSL.|
+|**فشل ValidateMapsConnection في إنشاء اتصال بالخرائط (hr=800722F0D**|جدار الحماية يمنع الاتصال أو يجري فحص SSL.|
+|**فشل ValidateMapsConnection في تأسيس اتصال بالخرائط (hr=80072EE7 httpcode=451)**|جدار الحماية يمنع الاتصال أو يجري فحص SSL.|
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>راجع أيضًا
 

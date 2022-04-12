@@ -1,7 +1,7 @@
 ---
-title: نظرة عامة حول حماية الجيل التالي في Microsoft Defender لنقطة النهاية
-description: احصل على نظرة عامة حول حماية الجيل التالي في Microsoft Defender لنقطة النهاية. تعزيز محيط الأمان للشبكة باستخدام حماية الجيل التالي المصممة لالتقاط جميع أنواع التهديدات الناشئة.
-keywords: برنامج الحماية من الفيروسات من Microsoft Defender، windows defender، مكافحة البرامج الضارة، الفيروسات، البرامج الضارة، التهديدات، الكشف، الحماية، الأمان
+title: نظرة عامة على حماية الجيل التالي في Microsoft Defender لنقطة النهاية
+description: احصل على نظرة عامة حول حماية الجيل التالي في Microsoft Defender لنقطة النهاية. تعزيز محيط الأمان لشبكتك باستخدام حماية الجيل التالي المصممة لالتقاط جميع أنواع التهديدات الناشئة.
+keywords: برنامج الحماية من الفيروسات من Microsoft Defender، windows defender، مكافحة البرامج الضارة، الفيروسات، البرامج الضارة، التهديد، الكشف، الحماية، الأمان
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,42 +15,58 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 94f920d298c5b74eff39290ced4ccdc58031ac0f
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 71cfbfe44525d67362ad7acc2c9d063ef0bb9ffd
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63583342"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790339"
 ---
 # <a name="next-generation-protection-overview"></a>نظرة عامة حول حماية الجيل التالي
 
 **ينطبق على**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-يتضمن Microsoft Defender ل Endpoint حماية الجيل التالي لتعزيز محيط الأمان للشبكة. تم تصميم حماية الجيل التالي لالتقاط جميع أنواع التهديدات الناشئة. بالإضافة إلى برنامج الحماية من الفيروسات من Microsoft Defender، تتضمن خدمات حماية الجيل التالي القدرات التالية:
+- برنامج الحماية من الفيروسات من Microsoft Defender
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- [الحماية من](configure-protection-features-microsoft-defender-antivirus.md) الفيروسات المستندة إلى السلوك والحماية من الفيروسات في الوقت الحقيقي، والتي تتضمن الفحص المستمر باستخدام مراقبة سلوك الملفات و العملية وغيرها من عمليات البحث (المعروفة أيضا بالحماية في الوقت *الحقيقي*). ويتضمن أيضا الكشف عن التطبيقات التي تعتبر غير آمنة وحظرها، ولكن قد لا يتم الكشف عنها كبرامج ضارة.
-- [الحماية التي يتم توفيرها في السحابة](cloud-protection-microsoft-defender-antivirus.md)، والتي تتضمن الكشف الفوري عن التهديدات الجديدة والناشئة وحظرها.
-- [تحديثات المنتجات](manage-updates-baselines-microsoft-defender-antivirus.md) والحماية المخصصة، التي تتضمن التحديثات المتعلقة بإبقاء برنامج الحماية من الفيروسات من Microsoft Defender محدثة.
+**منصات**
+- بالنسبة لنظام التشغيل
+
+تتضمن Microsoft Defender لنقطة النهاية حماية الجيل التالي لتعزيز محيط الأمان لشبكتك. تم تصميم حماية الجيل التالي لالتقاط جميع أنواع التهديدات الناشئة. بالإضافة إلى برنامج الحماية من الفيروسات من Microsoft Defender، تتضمن خدمات الحماية من الجيل التالي القدرات التالية:
+
+- [الحماية من الفيروسات المستندة إلى السلوك والاستباقية والحماية من الفيروسات في الوقت الحقيقي](configure-protection-features-microsoft-defender-antivirus.md)، والتي تتضمن فحصا دائما باستخدام مراقبة سلوك الملفات والعمليات وغيرها من الأساليب الاستعلائية (المعروفة أيضا باسم *الحماية في الوقت الحقيقي*). كما يتضمن الكشف عن التطبيقات التي تعتبر غير آمنة وحظرها، ولكن قد لا يتم اكتشافها على أنها برامج ضارة.
+- [الحماية التي توفرها السحابة](cloud-protection-microsoft-defender-antivirus.md)، والتي تتضمن الكشف الفوري عن التهديدات الجديدة والناشئة ومنعها.
+- [حماية مخصصة وتحديثات للمنتجات](manage-updates-baselines-microsoft-defender-antivirus.md)، والتي تتضمن تحديثات متعلقة بالحفاظ على تحديث برنامج الحماية من الفيروسات من Microsoft Defender.
 
 > [!TIP]
-> يتم تضمين حماية الجيل التالي في كل من Microsoft Defender لخطة نقطة النهاية 1 الخطة 2. [تعرف على المزيد حول "Defender" ل "الخطة 1" و"الخطة 2"](defender-endpoint-plan-1-2.md)
+> يتم تضمين حماية الجيل التالي في كل من Microsoft Defender لنقطة النهاية الخطة 1 والخطة 2. [تعرف على المزيد حول Defender لنقطة النهاية الخطة 1 والخطة 2](defender-endpoint-plan-1-2.md)
 
-## <a name="try-a-demo"></a>جرب عرض توضيحي!
+## <a name="try-a-demo"></a>جرب عرضا توضيحيا!
 
-تفضل بزيارة [موقع العرض التوضيحي ل Microsoft Defender for Endpoint](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) على الويب لتأكيد عمل ميزات الحماية التالية واستكشافها باستخدام سيناريوهات العرض التوضيحي:
+تفضل بزيارة [موقع العرض التوضيحي Microsoft Defender لنقطة النهاية](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) لتأكيد عمل ميزات الحماية التالية واستكشافها باستخدام سيناريوهات العرض التوضيحي:
 
-- الحماية التي يتم تسليمها من السحابة
-- الحماية من الحظر من النظرة الأولى (BAFS)
-- حماية التطبيقات (PUA) التي يحتمل أن تكون غير مرغوب فيها
-
-> [!NOTE]
-> تم إهمال موقع عرض Defender for Endpoint demo.wd.microsoft.com، وستزال في المستقبل.
-
-## <a name="configure-next-generation-protection-services"></a>تكوين خدمات حماية الجيل التالي
-
-للحصول على معلومات حول كيفية تكوين خدمات حماية الجيل التالي، راجع تكوين برنامج الحماية من الفيروسات من Microsoft Defender [الإضافية](configure-microsoft-defender-antivirus-features.md).
+- الحماية المقدمة من السحابة
+- حظر الحماية من الوهلة الأولى (BAFS)
+- حماية التطبيقات غير المرغوب فيها (PUA)
 
 > [!NOTE]
-> التكوين والإدارة متشابهان إلى حد كبير في Windows الخادم كما هو Windows العملاء. ومع ذلك، هناك بعض الاختلافات. 
+> تم إهمال الموقع التجريبي ل Defender لنقطة النهاية في demo.wd.microsoft.com وستتم إزالته في المستقبل.
+
+## <a name="configure-next-generation-protection-services"></a>تكوين خدمات الحماية من الجيل التالي
+
+للحصول على معلومات حول كيفية تكوين خدمات الحماية من الجيل التالي، راجع [تكوين ميزات برنامج الحماية من الفيروسات من Microsoft Defender](configure-microsoft-defender-antivirus-features.md).
+
+> [!NOTE]
+> التكوين والإدارة هو إلى حد كبير نفس في Windows Server كما هو الحال في عملاء Windows. ومع ذلك، هناك بعض الاختلافات. 
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+

@@ -1,7 +1,7 @@
 ---
-title: الأخطاء الشائعة التي يجب تجنبها عند تعريف الاستثناءات
-description: تجنب الأخطاء الشائعة عند تحديد الاستثناءات برنامج الحماية من الفيروسات من Microsoft Defender المسح الضوئي.
-keywords: الاستثناءات والملفات والملحقات ونوع الملف واسم المجلد واسم الملف والفحص
+title: الأخطاء الشائعة التي يجب تجنبها عند تحديد الاستثناءات
+description: تجنب الأخطاء الشائعة عند تحديد استثناءات عمليات المسح الضوئي برنامج الحماية من الفيروسات من Microsoft Defender.
+keywords: الاستثناءات، والملفات، والملحق، ونوع الملف، واسم المجلد، واسم الملف، والمسح الضوئي
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,27 +16,33 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/19/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 73234fd929406da475455baf21fbbf463216c660
-ms.sourcegitcommit: 2b9d40e888ff2f2b3385e2a90b50d719bba1e653
+ms.openlocfilehash: b5dc8832839c86fee98e9f27264b70e6a63f380c
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "63570223"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790691"
 ---
-# <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>الأخطاء الشائعة التي يجب تجنبها عند تعريف الاستثناءات
+# <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>الأخطاء الشائعة التي يجب تجنبها عند تحديد الاستثناءات
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- برنامج الحماية من الفيروسات من Microsoft Defender 
 
-يمكنك تحديد قائمة استثناء للعناصر التي لا تريد برنامج الحماية من الفيروسات من Microsoft Defender مسحها ضوئيا. قد تحتوي هذه العناصر المستبعدة على تهديدات تجعل جهازك عرضة للتأثر. تصف هذه المقالة بعض الأخطاء الشائعة التي يجب تجنبها عند تعريف الاستثناءات.
+**منصات**
+- بالنسبة لنظام التشغيل
+- ماك
+- ينكس
 
-قبل تحديد قوائم الاستثناء، راجع التوصيات [تعريف الاستثناءات](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
+يمكنك تحديد قائمة استبعاد للعناصر التي لا تريد برنامج الحماية من الفيروسات من Microsoft Defender فحصها. يمكن أن تحتوي هذه العناصر المستبعدة على تهديدات تجعل جهازك عرضة للخطر. تصف هذه المقالة بعض الأخطاء الشائعة التي يجب تجنبها عند تعريف الاستثناءات.
 
-## <a name="excluding-certain-trusted-items"></a>استبعاد عناصر موثوق بها معينة
+قبل تحديد قوائم الاستبعاد، راجع [التوصيات لتعريف الاستثناءات](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
-يجب عدم استبعاد بعض الملفات أو أنواع الملفات أو المجلدات أو العمليات من المسح الضوئي على الرغم من أنك تثق بها على أنها غير ضارة.
+## <a name="excluding-certain-trusted-items"></a>استبعاد بعض العناصر الموثوق بها
 
-لا تحدد الاستثناءات لمواقع المجلدات وملحقات الملفات والعمليات المدرجة في المقاطع التالية:
+يجب عدم استبعاد بعض الملفات أو أنواع الملفات أو المجلدات أو العمليات من الفحص على الرغم من أنك تثق بها لتكون غير ضارة.
+
+لا تقم بتعريف الاستثناءات لمواقع المجلدات وملحقات الملفات والعمليات المدرجة في الأقسام التالية:
 - مواقع المجلدات
 - ملحقات الملفات
 - العمليات
@@ -75,9 +81,9 @@ ms.locfileid: "63570223"
 
 `C:\Users\*`
 
-`C:\Users\<UserProfileName>\AppData\Local\Temp\`**لاحظ الاستثناء التالي ل SharePoint**: استثني `C:\Users\ServiceAccount\AppData\Local\Temp` عند استخدام [الحماية من](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9) الفيروسات على مستوى الملف في SharePoint.
+`C:\Users\<UserProfileName>\AppData\Local\Temp\`**لاحظ الاستثناء التالي SharePoint**: قم باستبعاد `C:\Users\ServiceAccount\AppData\Local\Temp` عند استخدام [الحماية من الفيروسات على مستوى الملف في SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
 
-`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`**لاحظ الاستثناء التالي ل SharePoint**: استثني `C:\Users\Default\AppData\Local\Temp` عند استخدام [الحماية من](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9) الفيروسات على مستوى الملف في SharePoint.
+`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`**لاحظ الاستثناء التالي SharePoint**: قم باستبعاد `C:\Users\Default\AppData\Local\Temp` عند استخدام [الحماية من الفيروسات على مستوى الملف في SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
 
 `%Windir%\Prefetch`
 
@@ -100,7 +106,7 @@ ms.locfileid: "63570223"
 
 `C:\Windows\Temp\*`
 
-#### <a name="linux-and-macos-platforms"></a>الأنظمة الأساسية ل Linux و macOS
+#### <a name="linux-and-macos-platforms"></a>أنظمة Linux وmacOS الأساسية
 
 `/`
 
@@ -267,7 +273,7 @@ ms.locfileid: "63570223"
 
 `windbg.exe`
 
-#### <a name="linux-and-macos-platforms"></a>الأنظمة الأساسية ل Linux و macOS
+#### <a name="linux-and-macos-platforms"></a>أنظمة Linux وmacOS الأساسية
 
 `bash`
 
@@ -280,18 +286,28 @@ ms.locfileid: "63570223"
 `zsh`
 
 > [!NOTE]
-> يمكنك اختيار `.gif`استبعاد أنواع الملفات، مثل ، `.jpg`أو ، `.jpeg`أو إذا `.png` كانت بيئتك لديها برنامج حديث ومحدث مع نهج تحديث صارم لمعالجة أي نقاط ضعف.
+> يمكنك اختيار استبعاد أنواع الملفات، مثل `.gif`، `.jpg``.jpeg`أو `.png` إذا كانت بيئتك تحتوي على برنامج حديث ومحدث مع نهج تحديث صارم للتعامل مع أي ثغرات أمنية.
 
-## <a name="using-just-the-file-name-in-the-exclusion-list"></a>استخدام اسم الملف فقط في قائمة الاستثناء
+## <a name="using-just-the-file-name-in-the-exclusion-list"></a>استخدام اسم الملف فقط في قائمة الاستبعاد
 
 قد يكون للبرامج الضارة نفس اسم الملف الذي تثق به وتريد استبعاده من الفحص. لذلك، لتجنب استبعاد البرامج الضارة المحتملة من الفحص، استخدم مسارا مؤهلا بالكامل إلى الملف الذي تريد استبعاده بدلا من استخدام اسم الملف فقط. على سبيل المثال، إذا كنت تريد الاستبعاد `Filename.exe` من الفحص، فاستخدم المسار الكامل إلى الملف، مثل `C:\program files\contoso\Filename.exe`.
 
-## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>استخدام قائمة استثناء واحدة لأحمال عمل خوادم متعددة
+## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>استخدام قائمة استبعاد واحدة لأحمال عمل خادم متعددة
 
-لا تستخدم قائمة استثناء واحدة لتعريف استثناءات لأحمال عمل خوادم متعددة. تقسيم الاستثناءات لأحمال العمل المختلفة للتطبيقات أو الخدمات إلى قوائم استثناءات متعددة. على سبيل المثال، يجب أن تختلف قائمة الاستثناء الخاصة بأحمال عمل خادم IIS عن قائمة الاستثناء الخاصة SQL Server العمل.
+لا تستخدم قائمة استبعاد واحدة لتعريف الاستثناءات لأحمال عمل خادم متعددة. تقسيم الاستثناءات لأحمال عمل التطبيقات أو الخدمات المختلفة إلى قوائم استثناء متعددة. على سبيل المثال، يجب أن تكون قائمة الاستبعاد لحمل عمل IIS Server مختلفة عن قائمة الاستبعاد لحمل العمل SQL Server.
 
-## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>استخدام متغيرات البيئة غير الصحيحة ك أحرف بدل في اسم الملف ومسار المجلد أو قوائم استثناءات الملحقات
+## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>استخدام متغيرات البيئة غير الصحيحة كأحرف بدل في اسم الملف ومسار المجلد أو قوائم استبعاد الملحق
 
-برنامج الحماية من الفيروسات من Microsoft Defender تشغيل الخدمة في سياق النظام باستخدام حساب LocalSystem، مما يعني أنها تحصل على معلومات من متغير بيئة النظام، وليس من متغير بيئة المستخدم. يقتصر استخدام متغيرات البيئة ك أحرف بدل في قوائم الاستثناء على متغيرات النظام وتلك المطبقة على العمليات التي يتم تشغيلها ك حساب NT AUTHORITY\SYSTEM. لذلك، لا تستخدم متغيرات بيئة المستخدمين ك أحرف بدل عند برنامج الحماية من الفيروسات من Microsoft Defender استثناءات المجلدات و العملية. راجع الجدول ضمن [متغيرات بيئة النظام](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) للحصول على قائمة كاملة من متغيرات بيئة النظام.
+تعمل برنامج الحماية من الفيروسات من Microsoft Defender Service في سياق النظام باستخدام حساب LocalSystem، ما يعني أنها تحصل على معلومات من متغير بيئة النظام، وليس من متغير بيئة المستخدم. يقتصر استخدام متغيرات البيئة كحرف بدل في قوائم الاستبعاد على متغيرات النظام وتلك التي تنطبق على العمليات التي تعمل كحساب NT AUTHORITY\SYSTEM. لذلك، لا تستخدم متغيرات بيئة المستخدم كأحرف بدل عند إضافة استثناءات برنامج الحماية من الفيروسات من Microsoft Defender المجلد والعمليات. راجع الجدول ضمن [متغيرات بيئة النظام](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) للحصول على قائمة كاملة بمتغيرات بيئة النظام.
 
-راجع [استخدام أحرف البدل](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) في اسم الملف ومسار المجلد أو قوائم استثناءات الملحقات للحصول على معلومات حول كيفية استخدام أحرف البدل في قوائم الاستثناء.
+راجع [استخدام أحرف البدل في اسم الملف ومسار المجلد أو قوائم استثناء الملحق](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) للحصول على معلومات حول كيفية استخدام أحرف البدل في قوائم الاستبعاد.
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)

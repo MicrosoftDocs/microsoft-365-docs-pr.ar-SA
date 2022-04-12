@@ -1,7 +1,7 @@
 ---
-title: تكوين برنامج الحماية من الفيروسات من Microsoft Defender WMI
-description: تعرف على كيفية تكوين إعدادات برنامج الحماية من الفيروسات من Microsoft Defender وإدارتها باستخدام برامج WMI النصية لاسترداد إعدادات Microsoft Defender لنقطة النهاية وتعديلها وتحديثها.
-keywords: wmi، البرامج النصية، أدوات إدارة windows، التكوين
+title: تكوين برنامج الحماية من الفيروسات من Microsoft Defender باستخدام WMI
+description: تعرف على كيفية تكوين وإدارة برنامج الحماية من الفيروسات من Microsoft Defender باستخدام البرامج النصية WMI لاسترداد الإعدادات وتعديلها وتحديثها في Microsoft Defender لنقطة النهاية.
+keywords: wmi، والبرامج النصية، وأدوات إدارة Windows، والتكوين
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -17,33 +17,47 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c8057a971576d5511440ac009acd6eab55b302e9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a525deb526f61f8500f42cc918380fdfa9c52861
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63575471"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787590"
 ---
-# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>استخدم Windows أدوات الإدارة (WMI) لتكوين وإدارة برنامج الحماية من الفيروسات من Microsoft Defender
+# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>استخدم Windows Management Instrumentation (WMI) لتكوين وإدارة برنامج الحماية من الفيروسات من Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- برنامج الحماية من الفيروسات من Microsoft Defender
 
-Windows أدوات الإدارة (WMI) هي واجهة النصية التي تسمح لك باسترداد الإعدادات وتعديلها وتحديثها.
+**منصات**
+- بالنسبة لنظام التشغيل
+
+Windows Management Instrumentation (WMI) هي واجهة برمجة نصية تسمح لك باسترداد إعدادات وتعديلها وتحديثها.
 
 اقرأ المزيد حول WMI في [مكتبة إدارة نظام شبكة مطوري Microsoft](/windows/win32/wmisdk/wmi-start-page).
 
-برنامج الحماية من الفيروسات من Microsoft Defender عدد من فئات WMI المحددة التي يمكن استخدامها لتنفيذ معظم الدالات نفسها مثل "نهج المجموعة" وأدوات الإدارة الأخرى. العديد من الفئات مماثلة ل [Defender for Cloud PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md).
+يحتوي برنامج الحماية من الفيروسات من Microsoft Defender على عدد من فئات WMI المحددة التي يمكن استخدامها لتنفيذ معظم الوظائف نفسها مثل نهج المجموعة وأدوات الإدارة الأخرى. العديد من الفئات مماثلة [ل Defender for Cloud PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md).
 
-[تسرد مكتبة مراجع Windows Defender WMIv2 فئات WMI](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) المتوفرة برنامج الحماية من الفيروسات من Microsoft Defender، وتتضمن برامج نصية على سبيل المثال.
+تسرد [مكتبة مرجع موفر MSDN Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) فئات WMI المتوفرة برنامج الحماية من الفيروسات من Microsoft Defender، وتتضمن أمثلة على البرامج النصية.
 
-ستؤثر التغييرات التي يتم إدخالها على WMI على الإعدادات المحلية في نقطة النهاية حيث يتم نشر التغييرات أو إجراءها. وهذا يعني أن عمليات نشر النهج باستخدام نهج المجموعة أو Microsoft Endpoint Configuration Manager أو Microsoft Intune الكتابة فوق التغييرات التي يتم إدخالها باستخدام WMI. 
+ستؤثر التغييرات التي تم إجراؤها باستخدام WMI على الإعدادات المحلية على نقطة النهاية حيث يتم نشر التغييرات أو إجراؤها. وهذا يعني أن عمليات نشر النهج باستخدام نهج المجموعة أو Microsoft Endpoint Configuration Manager أو Microsoft Intune يمكن الكتابة فوق التغييرات التي تم إجراؤها باستخدام WMI. 
 
-يمكنك [تكوين الإعدادات التي يمكن تجاوزها محليا باستخدام تجاوز النهج المحلي](configure-local-policy-overrides-microsoft-defender-antivirus.md).
+يمكنك [تكوين الإعدادات التي يمكن تجاوزها محليا مع تجاوز النهج المحلي](configure-local-policy-overrides-microsoft-defender-antivirus.md).
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

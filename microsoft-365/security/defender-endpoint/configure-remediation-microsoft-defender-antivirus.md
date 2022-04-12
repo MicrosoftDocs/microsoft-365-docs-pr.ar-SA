@@ -1,7 +1,7 @@
 ---
 title: تكوين المعالجة برنامج الحماية من الفيروسات من Microsoft Defender الكشف
-description: تكوين ما برنامج الحماية من الفيروسات من Microsoft Defender القيام به عند الكشف عن وجود خطر، ومدى الوقت الذي يجب الاحتفاظ بالملفات المعزولة في مجلد الفحص
-keywords: المعالجة، الإصلاح، الإزالة، التهديدات، الفحص، الفحص، الاستعادة
+description: تكوين ما يجب أن تفعله برنامج الحماية من الفيروسات من Microsoft Defender عند الكشف عن تهديد، ومدة الاحتفاظ بالملفات المعزولة في مجلد العزل
+keywords: المعالجة، الإصلاح، الإزالة، التهديدات، العزل، الفحص، الاستعادة
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -16,65 +16,79 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 182e0b39c1a9c7795fbdd716fc2e260d06d5c451
-ms.sourcegitcommit: dfa9f28a5a5055a9530ec82c7f594808bf28d0dc
+ms.openlocfilehash: 257a3bfc4fc9dcb6353bb158bc3cd4296891ae76
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "63571611"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790141"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>تكوين المعالجة برنامج الحماية من الفيروسات من Microsoft Defender الكشف
 
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- برنامج الحماية من الفيروسات من Microsoft Defender
 
-عندما برنامج الحماية من الفيروسات من Microsoft Defender عملية فحص، فإنه يحاول معالجة التهديدات التي تم الكشف عنها أو إزالتها. يمكنك تكوين كيفية برنامج الحماية من الفيروسات من Microsoft Defender معالجة بعض التهديدات، وما إذا كان يجب إنشاء نقطة استعادة قبل المعالجة، ومتى يجب إزالة التهديدات.
+**منصات**
+- بالنسبة لنظام التشغيل
 
-تصف هذه المقالة كيفية تكوين هذه الإعدادات باستخدام "نهج المجموعة"، ولكن يمكنك أيضا استخدام [Microsoft Endpoint Configuration Manager Microsoft Intune.](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) [](/intune/device-restrictions-configure)
+عندما يقوم برنامج الحماية من الفيروسات من Microsoft Defender بتشغيل عملية فحص، فإنه يحاول معالجة التهديدات التي تم اكتشافها أو إزالتها. يمكنك تكوين كيفية معالجة برنامج الحماية من الفيروسات من Microsoft Defender لتهديدات معينة، وما إذا كان يجب إنشاء نقطة استعادة قبل المعالجة، ومتى يجب إزالة التهديدات.
 
-يمكنك أيضا استخدام [فئة`Set-MpPreference` PowerShell cmdlet](/powershell/module/defender/set-mppreference) أو [`MSFT_MpPreference` WMI](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) لتكوين هذه الإعدادات.
+تصف هذه المقالة كيفية تكوين هذه الإعدادات باستخدام نهج المجموعة، ولكن يمكنك أيضا استخدام [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) [Microsoft Intune](/intune/device-restrictions-configure).
+
+يمكنك أيضا استخدام [`Set-MpPreference` فئة PowerShell cmdlet](/powershell/module/defender/set-mppreference) أو [`MSFT_MpPreference` WMI](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) لتكوين هذه الإعدادات.
 
 ## <a name="configure-remediation-options"></a>تكوين خيارات المعالجة
 
-1. على كمبيوتر إدارة نهج المجموعة، افتح وحدة تحكم إدارة [نهج](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) المجموعة، وانقر بيمين فوق كائن نهج المجموعة الذي تريد تكوينه وانقر فوق **تحرير**.
+1. على كمبيوتر إدارة نهج المجموعة، افتح [وحدة تحكم إدارة نهج المجموعة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))، وانقر بزر الماوس الأيمن فوق العنصر نهج المجموعة الذي تريد تكوينه وانقر فوق **"تحرير**".
 
-2. في محرر **إدارة نهج المجموعة** ، انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
+2. في **نهج المجموعة انتقل محرر الإدارة** إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
 
-3. قم بتوسيع الشجرة Windows **مكونات برنامج الحماية من الفيروسات من Microsoft Defender** \> **.**
+3. قم بتوسيع الشجرة إلى **مكونات** \> Windows **برنامج الحماية من الفيروسات من Microsoft Defender**.
 
-4. باستخدام الجدول أدناه، حدد موقع، ثم قم بتحرير النهج كما هو مطلوب.
+4. باستخدام الجدول أدناه، حدد موقعا، ثم قم بتحرير النهج حسب الحاجة.
 
 5. حدد **موافق**.
 
 <br/><br/>
 
-|الموقع|الإعداد|الوصف|الإعداد الافتراضي (إذا لم يتم تكوينه)|
+|موقع|اعداد|الوصف|الإعداد الافتراضي (إذا لم يتم تكوينه)|
 |---|---|---|---|
-|المسح الضوئي|إنشاء نقطة استعادة النظام|سيتم إنشاء نقطة استعادة النظام كل يوم قبل محاولة التنظيف أو الفحص|معطل|
-|المسح الضوئي|تشغيل إزالة العناصر من مجلد محفوظات الفحص|تحديد عدد الأيام التي يجب الاحتفاظ فيها بالعناصر في محفوظات الفحص|30 يوماً|
-|الجذر|إيقاف تشغيل المعالجة الروتينية|يمكنك تحديد ما إذا برنامج الحماية من الفيروسات من Microsoft Defender معالجة التهديدات تلقائيا، أو إذا كان يجب أن تسأل مستخدم نقطة النهاية عما يجب فعله.|معطل (يتم معالجة التهديدات تلقائيا)|
-|الفحص|تكوين إزالة العناصر من مجلد "الفحص"|تحديد عدد الأيام التي يجب فيها الاحتفاظ بالعناصر في الفحص قبل إزالتها|90 يوما|
-|التهديدات|تحديد مستويات تنبيهات التهديدات التي يجب عدم اتخاذ إجراء افتراضي عند الكشف عنها|يتم تعيين كل خطر يتم اكتشافه بواسطة برنامج الحماية من الفيروسات من Microsoft Defender إلى مستوى خطر (منخفض أو متوسط أو عال أو شديد). يمكنك استخدام هذا الإعداد لتعريف كيفية معالجة جميع التهديدات لكل مستوى من مستويات التهديدات (معزولة أو إزالتها أو تجاهلها)|غير قابل للتطبيق|
-|التهديدات|تحديد التهديدات التي يجب عدم اتخاذ إجراء افتراضي عليها عند الكشف عنها|حدد كيفية معالجة تهديدات معينة (باستخدام "معرّف التهديدات" الخاص بها). يمكنك تحديد ما إذا كان يجب فحص الخطر المحدد أو إزالته أو تجاهله|غير قابل للتطبيق|
+|المسح الضوئي|إنشاء نقطة استعادة النظام|سيتم إنشاء نقطة استعادة النظام كل يوم قبل محاولة التنظيف أو الفحص|ذوي الاحتياجات الخاصه|
+|المسح الضوئي|تشغيل إزالة العناصر من مجلد محفوظات الفحص|تحديد عدد الأيام التي يجب الاحتفاظ بها في محفوظات الفحص|30 يوماً|
+|الجذر|إيقاف تشغيل المعالجة الروتينية|يمكنك تحديد ما إذا كان برنامج الحماية من الفيروسات من Microsoft Defender معالجة التهديدات تلقائيا، أو ما إذا كان يجب أن يطلب من مستخدم نقطة النهاية ما يجب فعله.|معطل (تتم معالجة التهديدات تلقائيا)|
+|العزل|تكوين إزالة العناصر من مجلد العزل|تحديد عدد الأيام التي يجب الاحتفاظ بها في العزل قبل إزالتها|90 يوما|
+|التهديدات|تحديد مستويات التنبيه للمخاطر التي لا يجب اتخاذ إجراء افتراضي عند الكشف عنها|يتم تعيين مستوى التهديد لكل تهديد يتم اكتشافه بواسطة برنامج الحماية من الفيروسات من Microsoft Defender (منخفض أو متوسط أو مرتفع أو شديد). يمكنك استخدام هذا الإعداد لتحديد كيفية معالجة جميع التهديدات لكل مستوى من مستويات التهديد (عزلها أو إزالتها أو تجاهلها)|غير قابل للتطبيق|
+|التهديدات|تحديد التهديدات التي لا ينبغي اتخاذ إجراء افتراضي عليها عند الكشف عنها|حدد كيفية معالجة التهديدات المحددة (باستخدام معرف التهديد الخاص بها). يمكنك تحديد ما إذا كان يجب عزل التهديد المحدد أو إزالته أو تجاهله|غير قابل للتطبيق|
 
 > [!IMPORTANT]
-> برنامج الحماية من الفيروسات من Microsoft Defender عن الملفات التي تستند إلى العديد من العوامل وتتوسطها. في بعض الأحيان، يتطلب إكمال المعالجة إعادة تمهيد. حتى لو تم تحديد عملية الكشف لاحقا على أنها إيجابية خاطئة، يجب إكمال عملية إعادة التشغيل لضمان اكتمال كل خطوات الإصلاح الإضافية.
+> برنامج الحماية من الفيروسات من Microsoft Defender الكشف عن الملفات ومعالجتها استنادا إلى العديد من العوامل. في بعض الأحيان، يتطلب إكمال المعالجة إعادة التشغيل. حتى إذا تم تحديد الكشف لاحقا على أنه إيجابي زائف، يجب إكمال إعادة التشغيل لضمان اكتمال جميع خطوات المعالجة الإضافية.
 >
-> إذا كنت واثقا برنامج الحماية من الفيروسات من Microsoft Defender ملف تم فحصه استنادا إلى إيجابية خاطئة، يمكنك استعادة الملف من الفحص بعد إعادة تشغيل الجهاز. راجع [استعادة الملفات المعزولة في برنامج الحماية من الفيروسات من Microsoft Defender](restore-quarantined-files-microsoft-defender-antivirus.md).
+> إذا كنت متأكدا من برنامج الحماية من الفيروسات من Microsoft Defender عزل ملف استنادا إلى إيجابية خاطئة، يمكنك استعادة الملف من العزل بعد إعادة تشغيل الجهاز. راجع [استعادة الملفات المعزولة في برنامج الحماية من الفيروسات من Microsoft Defender](restore-quarantined-files-microsoft-defender-antivirus.md).
 >
-> لتجنب هذه المشكلة في المستقبل، يمكنك استبعاد الملفات من عمليات الفحص. راجع [تكوين الاستثناءات والتحقق من صحتها برنامج الحماية من الفيروسات من Microsoft Defender المسح الضوئي](configure-exclusions-microsoft-defender-antivirus.md).
+> لتجنب هذه المشكلة في المستقبل، يمكنك استبعاد الملفات من عمليات الفحص. راجع [تكوين الاستثناءات والتحقق من صحتها لإجراء عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md).
 
-راجع [أيضا تكوين عمليات](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) المسح الكامل المجدولة برنامج الحماية من الفيروسات من Microsoft Defender المعالجة المطلوبة للحصول على مزيد من الإعدادات ذات الصلة بالتعديلات.
+راجع أيضا [تكوين عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender الكاملة المجدولة المطلوبة](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) للمعالجة للحصول على المزيد من الإعدادات المتعلقة بالمعالجة.
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [تكوين خيارات برنامج الحماية من الفيروسات من Microsoft Defender ضوئية](configure-advanced-scan-types-microsoft-defender-antivirus.md)
-- [تكوين عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender مجدولة](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [قم بتكوين خيارات فحص Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+- [تكوين عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender المجدولة](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [تكوين عمليات فحص عند برنامج الحماية من الفيروسات من Microsoft Defender عند الطلب](run-scan-microsoft-defender-antivirus.md)
 - [تكوين الإعلامات التي تظهر على نقاط النهاية](configure-notifications-microsoft-defender-antivirus.md)
-- [تكوين تفاعل المستخدم برنامج الحماية من الفيروسات من Microsoft Defender المستخدم](configure-end-user-interaction-microsoft-defender-antivirus.md)
-- [تخصيص نتائج عمليات المسح برنامج الحماية من الفيروسات من Microsoft Defender والوساطة وبدءها ومراجعتها](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [تكوين تفاعل برنامج الحماية من الفيروسات من Microsoft Defender للمستخدم النهائي](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [تخصيص نتائج عمليات الفحص والمعالجة برنامج الحماية من الفيروسات من Microsoft Defender وبدءها ومراجعتها](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10](microsoft-defender-antivirus-in-windows-10.md)

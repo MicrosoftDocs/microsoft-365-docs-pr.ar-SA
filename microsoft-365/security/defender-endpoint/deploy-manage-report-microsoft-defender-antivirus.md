@@ -1,6 +1,6 @@
 ---
-title: نشر المعلومات وإدارتها برنامج الحماية من الفيروسات من Microsoft Defender
-description: يمكنك نشر وإدارة برنامج الحماية من الفيروسات من Microsoft Defender Intune أو Microsoft Endpoint Configuration Manager أو نهج المجموعة أو PowerShell أو WMI
+title: نشر وإدارة والإبلاغ عن برنامج الحماية من الفيروسات من Microsoft Defender
+description: يمكنك نشر وإدارة برنامج الحماية من الفيروسات من Microsoft Defender باستخدام Intune أو Microsoft Endpoint Configuration Manager أو نهج المجموعة أو PowerShell أو WMI
 keywords: النشر والإدارة والتحديث والحماية برنامج الحماية من الفيروسات من Microsoft Defender
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,56 +16,71 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1ce212bf01b8c464760192a4bbd6355498d19c3c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 4e0d249f7805c47be55ec42f3362ca1952c20ca3
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63579556"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788491"
 ---
-# <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>نشر المعلومات وإدارتها برنامج الحماية من الفيروسات من Microsoft Defender
+# <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>نشر وإدارة والإبلاغ عن برنامج الحماية من الفيروسات من Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- برنامج الحماية من الفيروسات من Microsoft Defender 
 
-يمكنك نشر المعلومات وإدارتها برنامج الحماية من الفيروسات من Microsoft Defender من خلال عدد من الطرق.
+**منصات**
+- بالنسبة لنظام التشغيل
 
-نظرا لأن برنامج الحماية من الفيروسات من Microsoft Defender العميل مثبت كجزء أساسي من Windows 10 Windows 11، لا يتم تطبيق النشر التقليدي للعميل على نقاط النهاية.
+يمكنك نشر برنامج الحماية من الفيروسات من Microsoft Defender وإدارتها وإعداد تقرير بشأنها بعدة طرق.
 
-ومع ذلك، في معظم الحالات، ما زلت بحاجة إلى تمكين خدمة الحماية على نقاط النهاية باستخدام Microsoft Intune أو Microsoft Endpoint Configuration Manager أو Microsoft Defender for Cloud أو كائنات نهج المجموعة، الموضحة في الجدول التالي.
+نظرا إلى تثبيت عميل برنامج الحماية من الفيروسات من Microsoft Defender كجزء أساسي من Windows 10 Windows 11، لا ينطبق النشر التقليدي للعميل على نقاط النهاية الخاصة بك.
+
+ومع ذلك، في معظم الحالات، ستظل بحاجة إلى تمكين خدمة الحماية على نقاط النهاية الخاصة بك باستخدام Microsoft Intune أو Microsoft Endpoint Configuration Manager أو Microsoft Defender for Cloud أو كائنات نهج المجموعة، والتي يتم وصفها في الجدول التالي.
 
 سترى أيضا ارتباطات إضافية ل:
 
-- إدارة برنامج الحماية من الفيروسات من Microsoft Defender، بما في ذلك إدارة تحديثات المنتجات والحماية
-- إعداد التقارير برنامج الحماية من الفيروسات من Microsoft Defender الحماية
+- إدارة حماية برنامج الحماية من الفيروسات من Microsoft Defender، بما في ذلك إدارة تحديثات المنتجات والحماية
+- الإبلاغ عن حماية برنامج الحماية من الفيروسات من Microsoft Defender
 
 > [!IMPORTANT]
-> في معظم الحالات، Windows 10 أو Windows 11 تعطيل برنامج الحماية من الفيروسات من Microsoft Defender إذا تم العثور على منتج آخر من برنامج الحماية من الفيروسات قيد التشغيل ومجدد. يجب تعطيل منتجات الحماية من الفيروسات الخاصة ب جهة خارجية أو إلغاء تثبيتها قبل برنامج الحماية من الفيروسات من Microsoft Defender تعمل. إذا قمت ب إعادة تمكين منتجات الحماية من الفيروسات أو تثبيتها من جهة خارجية، Windows 10 أو Windows 11 تلقائيا برنامج الحماية من الفيروسات من Microsoft Defender.
+> في معظم الحالات، سيعطل Windows 10 أو Windows 11 برنامج الحماية من الفيروسات من Microsoft Defender إذا عثر على منتج آخر من منتجات مكافحة الفيروسات قيد التشغيل ومحدث. يجب تعطيل منتجات مكافحة الفيروسات لجهة خارجية أو إلغاء تثبيتها قبل أن تعمل برنامج الحماية من الفيروسات من Microsoft Defender. إذا قمت بإعادة تمكين منتجات الحماية من الفيروسات لجهة خارجية أو تثبيتها، Windows 10 أو Windows 11 تعطيل برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا.
 
-أداة|خيارات النشر (<a href="#fn2" id="ref2">2</a>)|خيارات الإدارة (التكوين على مستوى الشبكة ونشر النهج أو الأساس) ([3](#fn3))|خيارات إعداد التقارير
+أداة|خيارات النشر (<a href="#fn2" id="ref2">2</a>)|خيارات الإدارة (التكوين على مستوى الشبكة والنهج أو توزيع الأساس) ([3](#fn3))|خيارات إعداد التقارير
 ---|---|---|---
 Microsoft Intune|[إضافة إعدادات حماية نقطة النهاية في Intune](/intune/endpoint-protection-configure)|[تكوين إعدادات تقييد الجهاز في Intune](/intune/device-restrictions-configure)| [استخدام وحدة تحكم Intune لإدارة الأجهزة](/intune/device-management)
-إدارة نقاط النهاية من Microsoft ([1](#fn1))|استخدم [Endpoint Protection دور نظام موقع النقاط][] و[تمكين Endpoint Protection إعدادات العميل المخصصة][]|مع [سياسات مكافحة البرامج الضارة الافتراضية والمخصصة][] و[إدارة العميل][]|باستخدام مساحة العمل الافتراضية [مراقبة إدارة التكوين][] و[تنبيهات البريد الإلكتروني][]
-نهج المجموعة و Active Directory (المجال المنضم)|استخدم "كائن نهج المجموعة" لنشر تغييرات التكوين وضمان برنامج الحماية من الفيروسات من Microsoft Defender تمكينها.|استخدم كائنات نهج المجموعة (GPOs) ل [تكوين خيارات التحديث برنامج الحماية من الفيروسات من Microsoft Defender][] و[تكوين Windows Defender][]|لا تتوفر تقارير نقطة النهاية مع "نهج المجموعة". يمكنك إنشاء قائمة ب [سياسات المجموعة لتحديد ما إذا لم يتم تطبيق أي إعدادات أو سياسات][]
-PowerShell|النشر باستخدام نهج المجموعة أو Microsoft Endpoint Configuration Manager أو يدويا على نقاط النهاية الفردية.|استخدم الأمرين cmdlets [Set-MpPreference] و[Update-MpSignature] المتوفرين في الوحدة النمطية Defender.|استخدم [Get-cmdlets المناسبة المتوفرة في الوحدة النمطية Defender][]
-Windows أدوات الإدارة|النشر باستخدام نهج المجموعة أو Microsoft Endpoint Configuration Manager أو يدويا على نقاط النهاية الفردية.|استخدم [أسلوب المجموعة للفئة MSFT_MpPreference][] و[أسلوب التحديث للفئة MSFT_MpSignature][]|استخدم الفئة [MSFT_MpComputerStatus][] وطريقة الحصول على الفئات المقترنة في [Windows Defender WMIv2 Provider][]
-Microsoft Azure|نشر Microsoft Antimalware ل Azure في مدخل Azure، باستخدام Visual Studio جهاز ظاهري، أو [باستخدام Azure PowerShell cmdlets](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios). يمكنك أيضا [تثبيت حماية نقطة النهاية في Microsoft Defender for Cloud*](/azure/security-center/security-center-install-endpoint-protection)|تكوين [Microsoft Antimalware للآلات الظاهرية والخدمات السحابية باستخدام Azure PowerShell cmdlets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) [أو استخدام نماذج التعليمات البرمجية](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|استخدم [Microsoft Antimalware للآلات الظاهرية والخدمات السحابية مع Azure PowerShell cmdlets](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) لتمكين المراقبة. يمكنك أيضا مراجعة تقارير الاستخدام في Azure Active Directory لتحديد نشاط مريب، بما في ذلك تقرير [الأجهزة التي ربما أصيبت][] وتكوين أداة SIEM للتقرير عن [أحداث برنامج الحماية من الفيروسات من Microsoft Defender][] وإضافة هذه الأداة ك تطبيق في AAD (دليل Azure النشط).
+إدارة نقاط النهاية من Microsoft ([1](#fn1))|استخدم [دور نظام نقطة Endpoint Protection][] و[تمكين Endpoint Protection مع إعدادات العميل المخصصة][]|مع [نهج مكافحة البرامج الضارة الافتراضية والمخصصة][] و[إدارة العميل][]|مع مساحة عمل المراقبة الافتراضية [Configuration Manager][] و[تنبيهات البريد الإلكتروني][]
+نهج المجموعة وActive Directory (مرتبط بالمجال)|استخدم عنصر نهج المجموعة لنشر تغييرات التكوين والتأكد من تمكين برنامج الحماية من الفيروسات من Microsoft Defender.|استخدم كائنات نهج المجموعة (GPOs) ل [تكوين خيارات التحديث برنامج الحماية من الفيروسات من Microsoft Defender][] و[تكوين ميزات Windows Defender][]|تقارير نقطة النهاية غير متوفرة مع نهج المجموعة. يمكنك إنشاء قائمة ب [نهج المجموعة لتحديد ما إذا لم يتم تطبيق أي إعدادات أو نهج][]
+PowerShell|النشر باستخدام نهج المجموعة أو Microsoft Endpoint Configuration Manager أو يدويا على نقاط النهاية الفردية.|استخدم أوامر cmdlets [Set-MpPreference] و[Update-MpSignature] المتوفرة في الوحدة النمطية Defender.|استخدم [Get- cmdlets المناسبة المتوفرة في الوحدة النمطية Defender][]
+Windows Management Instrumentation|النشر باستخدام نهج المجموعة أو Microsoft Endpoint Configuration Manager أو يدويا على نقاط النهاية الفردية.|استخدم الأسلوب [Set method of the MSFT_MpPreference class][] و[Update method of the MSFT_MpSignature class][]|استخدم الفئة [MSFT_MpComputerStatus][] وطريقة الحصول على الفئات المقترنة في [Windows Defender WMIv2 Provider][]
+Microsoft Azure|نشر Microsoft Antimalware ل Azure في [مدخل Azure، باستخدام تكوين الجهاز الظاهري Visual Studio، أو باستخدام أوامر Cmdlets Azure PowerShell](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios). يمكنك أيضا [تثبيت حماية نقطة النهاية في Microsoft Defender for Cloud*](/azure/security-center/security-center-install-endpoint-protection)|تكوين [Microsoft Antimalware للأجهزة الظاهرية والخدمات السحابية مع أوامر Cmdlets Azure PowerShell](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) أو [استخدام نماذج التعليمات البرمجية](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)|استخدم [Microsoft Antimalware للأجهزة الظاهرية والخدمات السحابية مع أوامر Cmdlets Azure PowerShell](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets) لتمكين المراقبة. يمكنك أيضا مراجعة تقارير الاستخدام في Azure Active Directory لتحديد النشاط المشبوه، بما في ذلك تقرير [ربما الأجهزة المصابة][] وتكوين أداة SIEM للإبلاغ عن [أحداث برنامج الحماية من الفيروسات من Microsoft Defender][] وإضافة هذه الأداة كتطبيق في AAD (دليل Azure النشط).
 
-1. <span id="fn1" />يختلف توفر بعض الدالات والميزات، لا سيما المتعلقة بالحماية التي توفرها السحابة، بين إدارة نقاط النهاية من Microsoft (الفرع الحالي) System Center 2012 إدارة التكوين. في هذه المكتبة، ركزنا على Windows 10 و Windows 11 و Windows Server 2016 و إدارة نقاط النهاية من Microsoft (الفرع الحالي). راجع [استخدام الحماية التي توفرها السحابة من Microsoft برنامج الحماية من الفيروسات من Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) جدول يصف الاختلافات الرئيسية. [(العودة إلى الجدول)](#ref2)
+1. <span id="fn1" />يختلف توفر بعض الوظائف والميزات، خاصة المتعلقة بالحماية المقدمة من السحابة، بين إدارة نقاط النهاية من Microsoft (الفرع الحالي) ومركز النظام 2012 Configuration Manager. في هذه المكتبة، ركزنا على Windows 10 Windows 11 Windows Server 2016 و إدارة نقاط النهاية من Microsoft (الفرع الحالي). راجع [استخدام الحماية التي توفرها السحابة من Microsoft في برنامج الحماية من الفيروسات من Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) لجدول يصف الاختلافات الرئيسية. [(العودة إلى الجدول)](#ref2)
 
-2. <span id="fn2" />في Windows 10 Windows 11، برنامج الحماية من الفيروسات من Microsoft Defender مكون متوفر بدون تثبيت أو نشر عميل أو خدمة إضافية. سيتم تمكينها تلقائيا عندما يتم إلغاء تثبيت منتجات الحماية من الفيروسات الخاصة بأي جهة خارجية أو تكون غير م تاريخها (باستثناء Windows Server 2016). وبالتالي، فإن النشر التقليدي غير مطلوب. يشير النشر هنا إلى التأكد من برنامج الحماية من الفيروسات من Microsoft Defender المكون المتوفر والممكن على نقاط النهاية أو الخوادم. [(العودة إلى الجدول)](#ref2)
+2. <span id="fn2" />في Windows 10 Windows 11، برنامج الحماية من الفيروسات من Microsoft Defender هو مكون متوفر دون تثبيت أو نشر عميل أو خدمة إضافية. سيتم تمكينه تلقائيا عندما تكون منتجات مكافحة الفيروسات التابعة لجهة خارجية إما غير مثبتة أو قديمة (باستثناء Windows Server 2016). وبالتالي، فإن النشر التقليدي غير مطلوب. يشير النشر هنا إلى ضمان توفر مكون برنامج الحماية من الفيروسات من Microsoft Defender وتمكينه على نقاط النهاية أو الخوادم. [(العودة إلى الجدول)](#ref2)
 
-3. <span id="fn3" />يتم أيضا وصف تكوين الميزات والحماية، بما في ذلك تكوين تحديثات المنتجات والحماية، في المقطع تكوين برنامج الحماية من الفيروسات من Microsoft Defender [في](configure-notifications-microsoft-defender-antivirus.md) هذه المكتبة. [(العودة إلى الجدول)](#ref2)
+3. <span id="fn3" />يتم وصف تكوين الميزات والحماية، بما في ذلك تكوين تحديثات المنتج والحماية، في قسم [تكوين ميزات برنامج الحماية من الفيروسات من Microsoft Defender](configure-notifications-microsoft-defender-antivirus.md) في هذه المكتبة. [(العودة إلى الجدول)](#ref2)
 
 ## <a name="in-this-section"></a>في هذا القسم
 
 الموضوع | الوصف
 ---|---
-[نشر الحماية برنامج الحماية من الفيروسات من Microsoft Defender وتمكينها](deploy-microsoft-defender-antivirus.md) | بينما يكون العميل مثبتا كجزء أساسي من Windows 10 أو Windows 11، ولا ينطبق النشر التقليدي، لا يزال عليك تمكين العميل على نقاط النهاية باستخدام Microsoft Endpoint Configuration Manager أو Microsoft Intune أو كائنات نهج المجموعة.
-[إدارة برنامج الحماية من الفيروسات من Microsoft Defender الأساسية وتطبيقها](manage-updates-baselines-microsoft-defender-antivirus.md) | هناك جزءان لتحديث برنامج الحماية من الفيروسات من Microsoft Defender: تحديث العميل على نقاط النهاية (تحديثات المنتجات)، وتحديث معلومات الأمان (تحديثات الحماية). يمكنك تحديث معلومات الأمان بعدد من الطرق، Microsoft Endpoint Configuration Manager نهج المجموعة و PowerShell و WMI.
-[مراقبة البيانات برنامج الحماية من الفيروسات من Microsoft Defender الحماية](report-monitor-microsoft-defender-antivirus.md) | يمكنك استخدام Microsoft Intune أو Microsoft Endpoint Configuration Manager أو تحديث التوافق ل Microsoft Operations Management Suite أو منتج SIEM من جهة خارجية (من خلال استهلاك سجلات أحداث Windows) لمراقبة حالة الحماية وإنشاء تقارير حول حماية نقطة النهاية.
+[نشر الحماية برنامج الحماية من الفيروسات من Microsoft Defender وتمكينها](deploy-microsoft-defender-antivirus.md) | بينما يتم تثبيت العميل كجزء أساسي من Windows 10 أو Windows 11، ولا ينطبق النشر التقليدي، ستظل بحاجة إلى تمكين العميل على نقاط النهاية باستخدام Microsoft Endpoint Configuration Manager أو Microsoft Intune أو نهج المجموعة الكائنات.
+[إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](manage-updates-baselines-microsoft-defender-antivirus.md) | هناك جزأان لتحديث برنامج الحماية من الفيروسات من Microsoft Defender: تحديث العميل على نقاط النهاية (تحديثات المنتج)، وتحديث معلومات الأمان (تحديثات الحماية). يمكنك تحديث معلومات الأمان بعدة طرق، باستخدام Microsoft Endpoint Configuration Manager نهج المجموعة وPowerShell وWMI.
+[مراقبة الحماية برنامج الحماية من الفيروسات من Microsoft Defender وإعداد تقرير بشأنها](report-monitor-microsoft-defender-antivirus.md) | يمكنك استخدام Microsoft Intune أو Microsoft Endpoint Configuration Manager أو الوظيفة الإضافية Update Compliance لمجموعة إدارة عمليات Microsoft أو منتج SIEM تابع لجهة خارجية (عن طريق استهلاك سجلات أحداث Windows) لمراقبة حالة الحماية وإنشاء تقارير حول حماية نقطة النهاية.
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+    

@@ -1,7 +1,7 @@
 ---
 title: معالجة الإيجابيات/السلبيات الخاطئة في Microsoft Defender لنقطة النهاية
 description: تعرف على كيفية التعامل مع الإيجابيات الخاطئة أو السلبيات الخاطئة في Microsoft Defender لنقطة النهاية.
-keywords: برنامج الحماية من الفيروسات، الاستثناء، الاستثناء، Microsoft Defender ل Endpoint، خطأ موجب، سالب خطأ، ملف تم حظره، عنوان URL المحظور
+keywords: مكافحة الفيروسات، استثناء، استثناء، Microsoft Defender لنقطة النهاية، إيجابية خاطئة، سلبية خاطئة، ملف محظور، url محظور
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -23,12 +23,12 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 214aafec22e26e5c69b40021eecb185a8dbfcbb2
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d7477c2006acd04008e6cb56cb22261a4db4a92b
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681623"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64789899"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>معالجة الإيجابيات/السلبيات الخاطئة في Microsoft Defender لنقطة النهاية
 
@@ -36,426 +36,440 @@ ms.locfileid: "63681623"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- برنامج الحماية من الفيروسات من Microsoft Defender
 
-في حلول حماية نقاط النهاية، تكون الموجبة الخاطئة كيانا، مثل ملف أو عملية، تم اكتشافه وتحديده على أنه ضار، على الرغم من أن الكيان ليس في الواقع خطرا. السلبية الخاطئة هي كيان لم يتم اكتشافه كخطر، على الرغم من أنه في الواقع ضار. يمكن أن تحدث الإيجابيات/السلبيات الخاطئة مع أي حل للحماية من المخاطر، بما في ذلك [Microsoft Defender لنقطة النهاية](microsoft-defender-endpoint.md).
+**منصات**
+- بالنسبة لنظام التشغيل
 
-![تعريف السلبيات والموجبة الخاطئة في Defender لنقطة النهاية.](images/false-positives-overview.png)
+في حلول حماية نقطة النهاية، فإن الإيجابية الخاطئة هي كيان، مثل ملف أو عملية، تم اكتشافه وتحديده على أنه ضار، على الرغم من أن الكيان ليس في الواقع تهديدا. السالب الخاطئ هو كيان لم يتم الكشف عنه كتهديد، على الرغم من أنه في الواقع ضار. يمكن أن تحدث الإيجابيات/السلبيات الخاطئة مع أي حل للحماية من التهديدات، بما [في ذلك Microsoft Defender لنقطة النهاية](microsoft-defender-endpoint.md).
 
-لحسن الحظ، يمكن اتخاذ خطوات لمعالجة هذه الأنواع من المشاكل وتقليلها. إذا رأيت موجبة/سالبة خاطئة في Microsoft 365 Defender، يمكن [](/microsoft-365/security/defender/microsoft-365-defender)لعمليات الأمان اتخاذ خطوات لمعالجتها باستخدام العملية التالية:
+:::image type="content" source="images/false-positives-overview.png" alt-text="تعريف الإيجابيات والسلبيات الخاطئة في مدخل Microsoft Defender لنقطة النهاية" lightbox="images/false-positives-overview.png":::
+
+لحسن الحظ، يمكن اتخاذ خطوات لمعالجة هذه الأنواع من المشكلات وتقليلها. إذا كنت ترى إيجابيات/سلبيات خاطئة في [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)، يمكن لعمليات الأمان اتخاذ خطوات لمعالجتها باستخدام العملية التالية:
 
 1. [مراجعة التنبيهات وتصنيفها](#part-1-review-and-classify-alerts)
-2. [مراجعة إجراءات الإصلاح التي تم اتخاذها](#part-2-review-remediation-actions)
+2. [مراجعة إجراءات المعالجة التي تم اتخاذها](#part-2-review-remediation-actions)
 3. [مراجعة الاستثناءات وتحديدها](#part-3-review-or-define-exclusions)
 4. [إرسال كيان للتحليل](#part-4-submit-a-file-for-analysis)
-5. [مراجعة إعدادات الحماية من المخاطر وضبطها](#part-5-review-and-adjust-your-threat-protection-settings)
+5. [مراجعة إعدادات الحماية من التهديدات وضبطها](#part-5-review-and-adjust-your-threat-protection-settings)
 
-يمكنك الحصول على المساعدة إذا كانت لا تزال لديك مشاكل في الإيجابيات/السلبيات الخاطئة بعد تنفيذ المهام الموضحة في هذه المقالة. راجع [هل ما زلت بحاجة إلى المساعدة؟](#still-need-help)
+يمكنك الحصول على المساعدة إذا كانت لا تزال لديك مشاكل تتعلق بإيجابيات/سلبيات خاطئة بعد تنفيذ المهام الموضحة في هذه المقالة. هل [لا تزال بحاجة إلى المساعدة؟](#still-need-help)
 
-![خطوات لمعالجة الإيجابيات والسلبيات الخاطئة.](images/false-positives-step-diagram.png)
+:::image type="content" source="images/false-positives-step-diagram.png" alt-text="خطوات معالجة الإيجابيات والسلبيات الخاطئة" lightbox="images/false-positives-step-diagram.png":::
 
 > [!NOTE]
-> تم تعيين هذه المقالة ك إرشادات لمشغلي الأمان والمسؤولين عن الأمان الذين يستخدمون [Microsoft Defender لنقطة النهاية](microsoft-defender-endpoint.md).
+> تم إعداد هذه المقالة كإرشادات لمشغلي الأمان ومسؤولي الأمان الذين يستخدمون [Microsoft Defender لنقطة النهاية](microsoft-defender-endpoint.md).
 
 ## <a name="part-1-review-and-classify-alerts"></a>الجزء الأول: مراجعة التنبيهات وتصنيفها
 
-إذا رأيت [تنبيها](alerts.md) تم تشغيله بسبب اكتشاف شيء ما كضار أو مريب لم يكن من المفترض أن يحدث، يمكنك منع التنبيه لذلك الكيان. يمكنك أيضا منع التنبيهات التي ليست بالضرورة إيجابية خاطئة، ولكنها غير مهم. نوصي بتصنيف التنبيهات أيضا.
+إذا رأيت [تنبيها](alerts.md) تم تشغيله لأنه تم الكشف عن شيء ما على أنه ضار أو مريب لم يكن من المفترض أن يكون، يمكنك منع التنبيه لهذا الكيان. يمكنك أيضا منع التنبيهات التي ليست بالضرورة إيجابيات خاطئة، ولكنها غير موجبة. نوصي بتصنيف التنبيهات أيضا.
 
-تساعدك إدارة التنبيهات وتصنيف الإيجابيات الحقيقية/الخاطئة على تدريب حل الحماية من المخاطر، كما يمكنها تقليل عدد الإيجابيات الخاطئة أو السلبيات الخاطئة مع مرور الوقت. يساعد أيضا اتخاذ هذه الخطوات على تقليل الضوضاء في لوحة معلومات عمليات الأمان بحيث يمكن لفريق الأمان التركيز على عناصر العمل ذات الأولوية الأعلى.
+تساعد إدارة التنبيهات وتصنيف الإيجابيات الصحيحة/الخاطئة على تدريب حل الحماية من التهديدات ويمكن أن تقلل من عدد الإيجابيات الخاطئة أو السلبيات الخاطئة بمرور الوقت. يساعد اتخاذ هذه الخطوات أيضا على تقليل الضوضاء في لوحة معلومات عمليات الأمان بحيث يمكن لفريق الأمان التركيز على عناصر العمل ذات الأولوية الأعلى.
 
-### <a name="determine-whether-an-alert-is-accurate"></a>تحديد ما إذا كان التنبيه دقيقا أم لا
+### <a name="determine-whether-an-alert-is-accurate"></a>تحديد ما إذا كان التنبيه دقيقا
 
-قبل أن تقوم بتصنيف تنبيه أو منعه، حدد ما إذا كان التنبيه دقيقا أو موجبا خطأ أو غير جيد.
+قبل تصنيف تنبيه أو منعه، حدد ما إذا كان التنبيه دقيقا أو إيجابيا زائفا أو ضارا.
 
-1. انتقل إلى Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) ثم سجل الدخول.
+1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) وسجل الدخول.
 
 2. في جزء التنقل، اختر **قائمة انتظار التنبيهات**.
 
-3. حدد تنبيها للحصول على مزيد من التفاصيل حول التنبيه. (راجع [مراجعة التنبيهات في Microsoft Defender ل Endpoint](review-alerts.md).)
+3. حدد تنبيها للحصول على مزيد من التفاصيل حول التنبيه. (راجع [تنبيهات المراجعة في Microsoft Defender لنقطة النهاية](review-alerts.md).)
 
-4. استنادا إلى حالة التنبيه، يمكنك اتخاذ الخطوات الموضحة في الجدول التالي:
+4. استنادا إلى حالة التنبيه، اتبع الخطوات الموضحة في الجدول التالي:
 
    |حالة التنبيه|ما يجب فعله|
    |---|---|
-   |التنبيه دقيق|قم بتعيين التنبيه، ثم [تحقق منه أكثر](investigate-alerts.md) .|
-   |التنبيه موجب بشكل خاطئ|1. [تصنيف التنبيه](#classify-an-alert) كإيجابية خاطئة.<br/><br/>2. [منع التنبيه](#suppress-an-alert).<br/><br/>3. [إنشاء مؤشر ل](#indicators-for-microsoft-defender-for-endpoint) Microsoft Defender لنقطة النهاية.<br/><br/>4. [إرسال ملف إلى Microsoft لتحليله](#part-4-submit-a-file-for-analysis).|
-   |التنبيه دقيق، ولكنه غير مهم (غير مهم)|[صنف التنبيه على](#classify-an-alert) أنه إيجابي حقيقي، ثم [قم بمنع التنبيه](#suppress-an-alert).|
+   |التنبيه دقيق|قم بتعيين التنبيه، ثم [تحقق منه](investigate-alerts.md) بشكل أكبر.|
+   |التنبيه إيجابي خطأ|1. [تصنيف التنبيه](#classify-an-alert) على أنه إيجابية خاطئة.<br/><br/>2. [منع التنبيه](#suppress-an-alert).<br/><br/>3. [إنشاء مؤشر](#indicators-for-microsoft-defender-for-endpoint) Microsoft Defender لنقطة النهاية.<br/><br/>4. [إرسال ملف إلى Microsoft للتحليل](#part-4-submit-a-file-for-analysis).|
+   |التنبيه دقيق، ولكنه غير مهم (غير مهم)|[تصنيف التنبيه](#classify-an-alert) على أنه إيجابي حقيقي، ثم [منع التنبيه](#suppress-an-alert).|
 
 ### <a name="classify-an-alert"></a>تصنيف تنبيه
 
-يمكن تصنيف التنبيهات كإيجابيات خاطئة أو إيجابية حقيقية في Microsoft 365 Defender. يساعد تصنيف التنبيهات على تدريب Microsoft Defender لنقطة النهاية بحيث ترى مع مرور الوقت تنبيهات صحيحة وتنبيهات خاطئة أقل.
+يمكن تصنيف التنبيهات على أنها إيجابيات خاطئة أو إيجابيات حقيقية في Microsoft 365 Defender. يساعد تصنيف التنبيهات على تدريب Microsoft Defender لنقطة النهاية بحيث، مع مرور الوقت، سترى المزيد من التنبيهات الصحيحة وتنبيهات خاطئة أقل.
 
-1. انتقل إلى Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) ثم سجل الدخول.
+1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) وسجل الدخول.
 
 2. حدد **قائمة انتظار التنبيهات**، ثم حدد تنبيها.
 
-3. للتنبيه المحدد، حدد **إجراءات** \> **إدارة التنبيه**. يفتح جزء منتفط.
+3. بالنسبة للتنبيه المحدد، حدد **تنبيه "إدارة** **الإجراءات**\>". يتم فتح جزء قائمة منبثقة.
 
-4. في المقطع **إدارة التنبيه** ، حدد إما **تنبيه True** أو **تنبيه خطأ**. (استخدم **تنبيه خطأ** لتصنيف موجبة خاطئة.)
+4. في قسم **"إدارة التنبيه** "، حدد إما **التنبيه "صواب"** أو **"تنبيه خطأ**". (استخدم **تنبيه False** لتصنيف إيجابية خاطئة.)
 
 > [!TIP]
-> لمزيد من المعلومات حول منع التنبيهات، راجع [إدارة تنبيهات نقطة النهاية ل Microsoft Defender](/microsoft-365/security/defender-endpoint/manage-alerts). وإذا كانت مؤسستك تستخدم خادم معلومات الأمان وإدارة الأحداث (SIEM)، فتأكد من تحديد قاعدة منع هناك أيضا.
+> لمزيد من المعلومات حول منع التنبيهات، راجع [إدارة التنبيهات Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/manage-alerts). وإذا كانت مؤسستك تستخدم خادم إدارة معلومات الأمان والأحداث (SIEM)، فتأكد من تعريف قاعدة منع هناك أيضا.
 
 ### <a name="suppress-an-alert"></a>منع تنبيه
 
-إذا كانت لديك تنبيهات إما إيجابية خاطئة أو كانت إيجابية حقيقية ولكن للأحداث غير المحدثة، يمكنك منع هذه التنبيهات في Microsoft 365 Defender. يساعد منع التنبيهات على تقليل الضوضاء في لوحة معلومات عمليات الأمان.
+إذا كانت لديك تنبيهات إما إيجابية خاطئة أو إيجابية صحيحة ولكن للأحداث غير المتوقعة، يمكنك منع هذه التنبيهات في Microsoft 365 Defender. يساعد منع التنبيهات على تقليل الضوضاء في لوحة معلومات عمليات الأمان.
 
-1. انتقل إلى Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) ثم سجل الدخول.
+1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) وسجل الدخول.
 
 2. في جزء التنقل، حدد **قائمة انتظار التنبيهات**.
 
-3. حدد تنبيها تريد منعه **لفتح جزء التفاصيل** .
+3. حدد تنبيها تريد منعه لفتح جزء **التفاصيل** الخاص به.
 
-4. في **جزء التفاصيل** ، اختر الحذف (**...**)، ثم **قم بإنشاء قاعدة منع**.
+4. في جزء **التفاصيل** ، اختر علامة الحذف (**...**)، ثم **أنشئ قاعدة منع**.
 
-5. حدد كل الإعدادات لقاعدة القمع، ثم اختر **حفظ**.
+5. حدد كل الإعدادات لقاعدة المنع، ثم اختر **"حفظ**".
 
 > [!TIP]
-> هل تحتاج إلى مساعدة في قواعد القمع؟ راجع [منع تنبيه وإنشاء قاعدة منع جديدة](/microsoft-365/security/defender-endpoint/manage-alerts#suppress-an-alert-and-create-a-new-suppression-rule).
+> هل تحتاج إلى المساعدة في قواعد المنع؟ راجع [منع تنبيه وإنشاء قاعدة منع جديدة](/microsoft-365/security/defender-endpoint/manage-alerts#suppress-an-alert-and-create-a-new-suppression-rule).
 
 ## <a name="part-2-review-remediation-actions"></a>الجزء الثاني: مراجعة إجراءات المعالجة
 
-[يتم اتخاذ إجراءات](manage-auto-investigation.md#remediation-actions) المعالجة، مثل إرسال ملف إلى الفحص أو إيقاف عملية، على الكيانات (مثل الملفات) التي يتم الكشف عنها كتهيدات. تحدث أنواع متعددة من إجراءات الإصلاح تلقائيا من خلال إجراء عمليات برنامج الحماية من الفيروسات من Microsoft Defender:
+يتم اتخاذ [إجراءات المعالجة](manage-auto-investigation.md#remediation-actions)، مثل إرسال ملف إلى العزل أو إيقاف عملية، على الكيانات (مثل الملفات) التي يتم الكشف عنها كتهديدات. تحدث عدة أنواع من إجراءات المعالجة تلقائيا من خلال التحقيق التلقائي برنامج الحماية من الفيروسات من Microsoft Defender:
 
 - عزل ملف
 - إزالة مفتاح تسجيل
-- اقتل عملية
+- إنهاء عملية
 - إيقاف خدمة
 - تعطيل برنامج تشغيل
 - إزالة مهمة مجدولة
 
-تحدث إجراءات أخرى، مثل بدء فحص الحماية من الفيروسات أو تجميع حزمة التحقيق، يدويا أو من خلال [الاستجابة المباشرة](live-response.md). لا يمكن التراجع عن الإجراءات التي تم اتخاذها من خلال الاستجابة المباشرة.
+تحدث إجراءات أخرى، مثل بدء فحص مكافحة الفيروسات أو جمع حزمة تحقيق، يدويا أو من خلال [Live Response](live-response.md). لا يمكن التراجع عن الإجراءات التي تم اتخاذها من خلال الاستجابة المباشرة.
 
-بعد مراجعة التنبيهات، تكون الخطوة التالية هي [مراجعة إجراءات المعالجة](manage-auto-investigation.md). إذا تم اتخاذ أي إجراءات نتيجة لإيجابيات خاطئة، يمكنك التراجع عن معظم أنواع إجراءات المعالجة. على وجه التحديد، يمكنك:
+بعد مراجعة التنبيهات، تكون خطوتك التالية هي [مراجعة إجراءات المعالجة](manage-auto-investigation.md). إذا تم اتخاذ أي إجراءات نتيجة للإيجابيات الخاطئة، يمكنك التراجع عن معظم أنواع إجراءات المعالجة. على وجه التحديد، يمكنك:
 
-- [استعادة ملف معزول من مركز الإجراءات](#restore-a-quarantined-file-from-the-action-center)
-- [التراجع عن إجراءات متعددة في الوقت نفسه](#undo-multiple-actions-at-one-time)
-- [إزالة ملف من الفحص عبر أجهزة متعددة](#remove-a-file-from-quarantine-across-multiple-devices). و
+- [استعادة ملف تم عزله من مركز الصيانة](#restore-a-quarantined-file-from-the-action-center)
+- [التراجع عن إجراءات متعددة في وقت واحد](#undo-multiple-actions-at-one-time)
+- [إزالة ملف من العزل عبر أجهزة متعددة](#remove-a-file-from-quarantine-across-multiple-devices). و
 - [استعادة ملف من الفحص](#restore-file-from-quarantine)
 
-عندما تنتهي من مراجعة الإجراءات التي تم اتخاذها والتراجع عنها نتيجة لإيجابيات خاطئة، تابع لمراجعة الاستثناءات أو [تعريفها](#part-3-review-or-define-exclusions).
+عند الانتهاء من مراجعة الإجراءات التي تم اتخاذها نتيجة لإيجابيات خاطئة والتراجع عنها، تابع [لمراجعة الاستثناءات أو تعريفها](#part-3-review-or-define-exclusions).
 
 ### <a name="review-completed-actions"></a>مراجعة الإجراءات المكتملة
 
-1. في جزء التنقل الأيسر من Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">،</a> انقر فوق **مركز الإجراءات**.
+1. في جزء التنقل الأيمن من <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، انقر فوق **"مركز الصيانة**".
 
-2. حدد علامة **التبويب** محفوظات لعرض قائمة الإجراءات التي تم اتخاذها.
+2. حدد علامة التبويب " **محفوظات** " لعرض قائمة بالإجراءات التي تم اتخاذها.
 
-3. حدد أحد العناصر لعرض مزيد من التفاصيل حول إجراء الإصلاح الذي تم اتخاذه.
+3. حدد عنصرا لعرض مزيد من التفاصيل حول إجراء المعالجة الذي تم اتخاذه.
 
-### <a name="restore-a-quarantined-file-from-the-action-center"></a>استعادة ملف معزول من مركز الإجراءات
+### <a name="restore-a-quarantined-file-from-the-action-center"></a>استعادة ملف تم عزله من مركز الصيانة
 
-1. في جزء التنقل الأيسر من مدخل Microsoft 365 Defender، انقر فوق **مركز الإجراءات**.
+1. في جزء التنقل الأيمن من مدخل Microsoft 365 Defender، انقر فوق **"مركز الصيانة**".
 
-2. على علامة **التبويب** محفوظات، حدد إجراء تريد التراجع عنه.
+2. في علامة التبويب " **محفوظات** "، حدد إجراء تريد التراجع عنه.
 
-3. في جزء منتحل، حدد **تراجع**. إذا لم يتم التراجع عن الإجراء باستخدام هذا الأسلوب، لن ترى زر **تراجع** . (لمعرفة المزيد، راجع [التراجع عن الإجراءات المكتملة](manage-auto-investigation.md#undo-completed-actions).)
+3. في جزء القائمة المنبثقة، حدد **"تراجع**". إذا تعذر التراجع عن الإجراء باستخدام هذا الأسلوب، فلن يظهر زر **"تراجع** ". (لمعرفة المزيد، راجع [التراجع عن الإجراءات المكتملة](manage-auto-investigation.md#undo-completed-actions).)
 
-### <a name="undo-multiple-actions-at-one-time"></a>التراجع عن إجراءات متعددة في الوقت نفسه
+### <a name="undo-multiple-actions-at-one-time"></a>التراجع عن إجراءات متعددة في وقت واحد
 
-1. في جزء التنقل الأيسر من Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">،</a> انقر فوق **مركز الإجراءات**.
+1. في جزء التنقل الأيمن من <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، انقر فوق **"مركز الصيانة**".
 
-2. على علامة **التبويب** محفوظات، حدد الإجراءات التي تريد التراجع عنها.
+2. في علامة التبويب " **محفوظات** "، حدد الإجراءات التي تريد التراجع عنها.
 
-3. في الجزء على الجانب الأيسر من الشاشة، حدد **تراجع**.
+3. في الجزء الموجود على الجانب الأيسر من الشاشة، حدد **"تراجع".**
 
-### <a name="remove-a-file-from-quarantine-across-multiple-devices"></a>إزالة ملف من الفحص عبر أجهزة متعددة
+### <a name="remove-a-file-from-quarantine-across-multiple-devices"></a>إزالة ملف من العزل عبر أجهزة متعددة
 
 > [!div class="mx-imgBorder"]
-> ![ملف الفحص.](images/autoir-quarantine-file-1.png)
+> :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="ملف العزل" lightbox="images/autoir-quarantine-file-1.png":::
 
-1. في جزء التنقل الأيسر من Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">،</a> انقر فوق **مركز الإجراءات**.
+1. في جزء التنقل الأيمن من <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، انقر فوق **"مركز الصيانة**".
 
-2. على علامة **التبويب** محفوظات، حدد ملفا يحتوي على ملف الفحص الخاص بنوع **الإجراء**.
+2. في علامة التبويب " **محفوظات** "، حدد ملفا يحتوي على **ملف عزل** نوع الإجراء.
 
-3. في الجزء على الجانب الأيسر من الشاشة، حدد **تطبيق على X المزيد من** مثيلات هذا الملف، ثم حدد **تراجع**.
+3. في الجزء الموجود على الجانب الأيسر من الشاشة، حدد **تطبيق على X المزيد من مثيلات هذا الملف**، ثم حدد **"تراجع".**
 
 ### <a name="restore-file-from-quarantine"></a>استعادة ملف من الفحص
 
-يمكنك التراجع عن ملف وإزالته من الفحص إذا حددت أنه نظيف بعد إجراء تحقيق. تشغيل الأمر التالي على كل جهاز تم فحص الملف فيه.
+يمكنك العودة إلى الحالة السابقة وإزالة ملف من العزل إذا كنت قد قررت أنه نظيف بعد التحقيق. قم بتشغيل الأمر التالي على كل جهاز حيث تم عزل الملف.
 
-1. افتح موجه سطر أوامر مرتفعا على الجهاز:
+1. افتح موجه سطر أوامر غير مقيد على الجهاز:
 
-   1. انتقل إلى **ابدأ** وا اكتب _cmd_.
-   2. انقر ب الماوس **الأيمن فوق موجه الأوامر** وحدد **تشغيل كمسؤول**.
+   1. انتقل إلى **شاشة البدء** واكتب _cmd_.
+   2. انقر بزر الماوس الأيمن فوق **موجه الأوامر** وحدد **"تشغيل كمسؤول**".
 
-2. أدخل الأمر التالي، ثم اضغط على **Enter**:
+2. أدخل الأمر التالي، ثم اضغط على **مفتاح الإدخال Enter**:
 
     ```console
     "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
     ```
 
     > [!IMPORTANT]
-    > في بعض السيناريوهات، قد يظهر **ThreatName** ك `EUS:Win32/CustomEnterpriseBlock!cl`. سيستعيد Defender for Endpoint جميع الملفات المخصصة المحظورة التي تم فحصها على هذا الجهاز في آخر 30 يوما.
+    > في بعض السيناريوهات، قد يظهر **ThreatName** ك `EUS:Win32/CustomEnterpriseBlock!cl`. سيقوم Defender لنقطة النهاية باستعادة كافة الملفات المحظورة المخصصة التي تم عزلها على هذا الجهاز في آخر 30 يوما.
     >
-    > قد لا يكون الملف الذي تم فحصه كخطر محتمل على الشبكة قابلا لاسترداده. إذا حاول مستخدم استعادة الملف بعد الفحص، فقد لا يمكن الوصول إلى هذا الملف. قد يعود سبب ذلك إلى أن النظام لم يعد لديه بيانات اعتماد الشبكة للوصول إلى الملف. عادة ما يكون ذلك نتيجة تسجيل دخول مؤقت إلى نظام أو مجلد مشترك وانتهاء صلاحية رموز الوصول المميزة.
+    > قد لا يكون الملف الذي تم عزله كتهديد محتمل للشبكة قابلا للاسترداد. إذا حاول مستخدم استعادة الملف بعد العزل، فقد لا يمكن الوصول إلى هذا الملف. قد يرجع ذلك إلى أن النظام لم يعد لديه بيانات اعتماد الشبكة للوصول إلى الملف. عادة ما يكون ذلك نتيجة لتسجيل الدخول المؤقت إلى نظام أو مجلد مشترك وانتهت صلاحية الرموز المميزة للوصول.
 
-3. في الجزء على الجانب الأيسر من الشاشة، حدد **تطبيق على X المزيد من** مثيلات هذا الملف، ثم حدد **تراجع**.
+3. في الجزء الموجود على الجانب الأيسر من الشاشة، حدد **تطبيق على X المزيد من مثيلات هذا الملف**، ثم حدد **"تراجع".**
 
 ## <a name="part-3-review-or-define-exclusions"></a>الجزء 3: مراجعة الاستثناءات أو تعريفها
 
-الاستثناء هو كيان، مثل ملف أو URL، تحدده استثناء من إجراءات المعالجة. لا يزال من الممكن الكشف عن الكيان المستبعد، ولكن لا يتم اتخاذ أي إجراءات إصلاح على هذا الكيان. أي أنه لن يتم إيقاف الملف أو العملية التي تم الكشف عنها أو إرسالها إلى الفحص أو إزالتها أو تغييرها بطريقة أخرى بواسطة Microsoft Defender لنقطة النهاية.
+الاستثناء هو كيان، مثل ملف أو عنوان URL، تحدده استثناء لإجراءات المعالجة. لا يزال من الممكن الكشف عن الكيان المستبعد، ولكن لا يتم اتخاذ أي إجراءات معالجة على هذا الكيان. أي أنه لن يتم إيقاف الملف أو العملية المكتشفة أو إرسالها إلى العزل أو إزالتها أو تغييرها بواسطة Microsoft Defender لنقطة النهاية.
 
 لتعريف الاستثناءات عبر Microsoft Defender لنقطة النهاية، قم بتنفيذ المهام التالية:
 
-- [تعريف الاستثناءات برنامج الحماية من الفيروسات من Microsoft Defender](#exclusions-for-microsoft-defender-antivirus)
-- [إنشاء مؤشرات "السماح" ل Microsoft Defender لنقطة النهاية](#indicators-for-microsoft-defender-for-endpoint)
+- [تحديد استثناءات برنامج الحماية من الفيروسات من Microsoft Defender](#exclusions-for-microsoft-defender-antivirus)
+- [إنشاء مؤشرات "السماح" Microsoft Defender لنقطة النهاية](#indicators-for-microsoft-defender-for-endpoint)
 
 > [!NOTE]
-> برنامج الحماية من الفيروسات من Microsoft Defender استثناءات الحماية من الفيروسات فقط، وليس عبر إمكانيات Microsoft Defender الأخرى لنقطة النهاية. لاستبعاد الملفات على نطاق واسع، استخدم الاستثناءات [برنامج الحماية من الفيروسات من Microsoft Defender والمؤشرات](/microsoft-365/security/defender-endpoint/manage-indicators) المخصصة ل Microsoft Defender ل Endpoint.
+> تنطبق استثناءات برنامج الحماية من الفيروسات من Microsoft Defender فقط على الحماية من الفيروسات، وليس عبر قدرات Microsoft Defender لنقطة النهاية الأخرى. لاستبعاد الملفات على نطاق واسع، استخدم الاستثناءات برنامج الحماية من الفيروسات من Microsoft Defender [والمؤشرات المخصصة](/microsoft-365/security/defender-endpoint/manage-indicators) Microsoft Defender لنقطة النهاية.
 
-تصف الإجراءات في هذا القسم كيفية تعريف الاستثناءات والمؤشرات.
+تصف الإجراءات الواردة في هذا القسم كيفية تحديد الاستثناءات والمؤشرات.
 
-### <a name="exclusions-for-microsoft-defender-antivirus"></a>الاستثناءات برنامج الحماية من الفيروسات من Microsoft Defender
+### <a name="exclusions-for-microsoft-defender-antivirus"></a>استثناءات برنامج الحماية من الفيروسات من Microsoft Defender
 
-بشكل عام، يجب ألا تحتاج إلى تعريف الاستثناءات برنامج الحماية من الفيروسات من Microsoft Defender. تأكد من تحديد الاستثناءات بشكل لا يتجزأ، ومن تضمين الملفات والمجلدات والعمليات والملفات التي تم فتحها في عملية فقط، مما يؤدي إلى نتائج إيجابية خاطئة. بالإضافة إلى ذلك، تأكد من مراجعة الاستثناءات المعرفة بشكل منتظم. نوصي [باستخدام إدارة نقاط النهاية من Microsoft لتعريف](/mem/endpoint-manager-overview) استثناءات برنامج الحماية من الفيروسات أو تحريرها؛ ومع ذلك، يمكنك استخدام أساليب أخرى، مثل نهج [المجموعة (راجع](/azure/active-directory-domain-services/manage-group-policy) إدارة [Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md).
+بشكل عام، يجب ألا تحتاج إلى تحديد استثناءات برنامج الحماية من الفيروسات من Microsoft Defender. تأكد من تحديد الاستثناءات بشكل لا يضاهى، ومن تضمين الملفات والمجلدات والعمليات والملفات المفتوحة للعملية فقط التي تؤدي إلى نتائج إيجابية خاطئة. بالإضافة إلى ذلك، تأكد من مراجعة الاستثناءات المحددة بانتظام. نوصي باستخدام [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview) لتعريف استثناءات الحماية من الفيروسات أو تحريرها؛ ومع ذلك، يمكنك استخدام أساليب أخرى، مثل [نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) (راجع [إدارة Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md).
 
 > [!TIP]
-> هل تحتاج إلى مساعدة في استثناءات برنامج الحماية من الفيروسات؟ راجع [تكوين الاستثناءات والتحقق من صحتها برنامج الحماية من الفيروسات من Microsoft Defender المسح الضوئي](configure-exclusions-microsoft-defender-antivirus.md).
+> هل تحتاج إلى مساعدة في استثناءات برنامج الحماية من الفيروسات؟ راجع [تكوين الاستثناءات والتحقق من صحتها لإجراء عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md).
 
-#### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>استخدام إدارة نقاط النهاية من Microsoft لإدارة استثناءات الحماية من الفيروسات (بالنسبة إلى السياسات الموجودة)
+#### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>استخدام إدارة نقاط النهاية من Microsoft لإدارة استثناءات مكافحة الفيروسات (للنهج الموجودة)
 
-1. انتقل إلى إدارة نقاط النهاية من Microsoft إدارة (<https://endpoint.microsoft.com>) ثم سجل الدخول.
+1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com>) وسجل الدخول.
 
-2. اختر **الحماية من الفيروسات لنقطة** \> النهاية، ثم حدد نهج موجود. (إذا لم يكن لديك نهج موجود، أو إذا كنت تريد إنشاء نهج جديد، فاتخطي [إلى الإجراء التالي](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
+2. اختر برنامج **الحماية من الفيروسات** **لأمان** \> نقطة النهاية، ثم حدد نهجا موجودا. (إذا لم يكن لديك نهج موجود، أو إذا كنت تريد إنشاء نهج جديد، فانتقل إلى [الإجراء التالي](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
 
-3. اختر **خصائص**، وب **المجاورة لإعدادات التكوين**، اختر **تحرير**.
+3. اختر **"خصائص**"، وإلى جانب **إعدادات "التكوين"**، اختر **"تحرير**".
 
-4. قم **برنامج الحماية من الفيروسات من Microsoft Defender الاستثناءات** ثم حدد استثناءاتك.
+4. قم **بتوسيع برنامج الحماية من الفيروسات من Microsoft Defender الاستثناءات** ثم حدد الاستثناءات الخاصة بك.
 
-5. اختر **مراجعة + حفظ**، ثم اختر **حفظ**.
+5. اختر **"مراجعة + حفظ**"، ثم اختر **"حفظ**".
 
-#### <a name="use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions"></a>استخدام إدارة نقاط النهاية من Microsoft لإنشاء نهج جديد لمكافحة الفيروسات مع استثناءات
+#### <a name="use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions"></a>استخدام إدارة نقاط النهاية من Microsoft لإنشاء نهج الحماية من الفيروسات جديد مع استثناءات
 
-1. انتقل إلى إدارة نقاط النهاية من Microsoft إدارة (<https://endpoint.microsoft.com>) ثم سجل الدخول.
+1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com>) وسجل الدخول.
 
-2. اختر **أمان نقطة النهاية** \> **Antivirus** \> **+ إنشاء نهج**.
+2. اختر **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
 
-3. حدد نظام أساسي (مثل Windows 10 **واللاحقة** أو **macOS** **أو Windows 10 Windows Server**).
+3. حدد نظاما أساسيا (مثل **Windows 10 والإي وقت لاحق** أو **macOS** أو **Windows 10 وخادم Windows**).
 
-4. بالنسبة **لملف** التعريف **، حدد برنامج الحماية من الفيروسات من Microsoft Defender الاستثناءات**، ثم اختر **إنشاء**.
+4. بالنسبة **لملف التعريف**، حدد **برنامج الحماية من الفيروسات من Microsoft Defender الاستثناءات**، ثم اختر **"إنشاء**".
 
-5. حدد اسما ووصفا لملف التعريف، ثم اختر **التالي**.
+5. حدد اسما ووصفا لملف التعريف، ثم اختر **"التالي**".
 
-6. على علامة **التبويب إعدادات التكوين** ، حدد استثناءات برنامج الحماية من الفيروسات، ثم اختر **التالي**.
+6. في علامة التبويب **"إعدادات التكوين"** ، حدد استثناءات برنامج الحماية من الفيروسات، ثم اختر **"التالي**".
 
-7. على علامة **التبويب علامات** النطاق، إذا كنت تستخدم علامات النطاق في مؤسستك، فحدد علامات النطاق الخاصة النهج الذي تقوم بإنشاءه. (راجع [علامات النطاق](/mem/intune/fundamentals/scope-tags).)
+7. في علامة التبويب **"Scope tags** "، إذا كنت تستخدم علامات النطاق في مؤسستك، فحدد علامات النطاق للنهج الذي تقوم بإنشائه. (راجع [علامات النطاق](/mem/intune/fundamentals/scope-tags).)
 
-8. على علامة **التبويب** الواجبات، حدد المستخدمين والمجموعات التي يجب تطبيق النهج عليها، ثم اختر **التالي**. (إذا كنت بحاجة إلى مساعدة في التعيينات، فشاهد تعيين ملفات تعريف المستخدمين والجهاز [في Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+8. في علامة التبويب **"الواجبات** "، حدد المستخدمين والمجموعات التي يجب تطبيق نهجك عليها، ثم اختر **"التالي**". (إذا كنت بحاجة إلى مساعدة في التعيينات، فراجع [تعيين ملفات تعريف المستخدمين والجهاز في Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
-9. على علامة **التبويب مراجعة + إنشاء** ، راجع الإعدادات، ثم اختر **إنشاء**.
+9. في علامة التبويب **"مراجعة + إنشاء** "، راجع الإعدادات، ثم اختر **"إنشاء**".
 
-### <a name="indicators-for-microsoft-defender-for-endpoint"></a>مؤشرات ل Microsoft Defender لنقطة النهاية
+### <a name="indicators-for-microsoft-defender-for-endpoint"></a>مؤشرات Microsoft Defender لنقطة النهاية
 
-[تمكن المؤشرات](/microsoft-365/security/defender-endpoint/manage-indicators) (على وجه التحديد، مؤشرات اختراق أو IoCs) فريق عمليات الأمان من تحديد الكشف عن الكيانات ومنعها واستبعادها. على سبيل المثال، يمكنك تحديد ملفات معينة لحذفها من عمليات الفحص والإجراءات الإصلاحية في Microsoft Defender لنقطة النهاية. أو، يمكن استخدام المؤشرات لإنشاء تنبيهات لبعض الملفات أو عناوين IP أو عناوين URL.
+تمكن [المؤشرات](/microsoft-365/security/defender-endpoint/manage-indicators) (وتحديدا مؤشرات التسوية أو IoCs) فريق عمليات الأمان من تحديد الكشف عن الكيانات ومنعها واستبعادها. على سبيل المثال، يمكنك تحديد ملفات معينة ليتم حذفها من عمليات الفحص وإجراءات المعالجة في Microsoft Defender لنقطة النهاية. أو، يمكن استخدام المؤشرات لإنشاء تنبيهات لبعض الملفات أو عناوين IP أو عناوين URL.
 
-لتحديد الكيانات كالاستثناءات ل Microsoft Defender لنقطة النهاية، قم بإنشاء مؤشرات "السماح" لتلك الكيانات. تنطبق مؤشرات "السماح" هذه في Microsoft Defender ل Endpoint على حماية [](microsoft-defender-antivirus-in-windows-10.md)الجيل الكشف عن تهديدات نقاط النهاية والرد عليها والتثجيل [](overview-endpoint-detection-response.md)التلقائي & [المعالجة](/microsoft-365/security/defender-endpoint/automated-investigations).
+لتحديد الكيانات كاستثناءات Microsoft Defender لنقطة النهاية، قم بإنشاء مؤشرات "السماح" لتلك الكيانات. تنطبق مؤشرات "السماح" هذه في Microsoft Defender لنقطة النهاية على [الحماية من الجيل التالي](microsoft-defender-antivirus-in-windows-10.md)[، الكشف عن تهديدات نقاط النهاية والرد عليها](overview-endpoint-detection-response.md)، [والتحقيق التلقائي & المعالجة](/microsoft-365/security/defender-endpoint/automated-investigations).
 
-يمكن إنشاء مؤشرات "السماح" ل:
+يمكن إنشاء مؤشرات "السماح" من أجل:
 
 - [الملفات](#indicators-for-files)
 - [عناوين IP وعناوين URL والمجالات](#indicators-for-ip-addresses-urls-or-domains)
 - [شهادات التطبيق](#indicators-for-application-certificates)
 
-![الرسم التخطيطي لأنواع المؤشرات.](images/false-positives-indicators.png)
+:::image type="content" source="images/false-positives-indicators.png" alt-text="أنواع المؤشرات" lightbox="images/false-positives-indicators.png":::
 
 #### <a name="indicators-for-files"></a>مؤشرات الملفات
 
-عند [إنشاء مؤشر "السماح"](/microsoft-365/security/defender-endpoint/indicator-file) لملف، مثل ملف قابل للتنفيذ، يساعد ذلك على منع حظر الملفات التي تستخدمها مؤسستك. يمكن أن تتضمن الملفات ملفات قابلة للتنفيذ (PE) قابلة للنقل، مثل ملفات `.exe` `.dll` وملفات.
+عند [إنشاء مؤشر "السماح" لملف، مثل ملف قابل للتنفيذ](/microsoft-365/security/defender-endpoint/indicator-file)، يساعد على منع حظر الملفات التي تستخدمها مؤسستك. يمكن أن تتضمن الملفات الملفات القابلة للتنفيذ المحمولة (PE)، مثل `.exe` والملفات `.dll` .
 
-قبل إنشاء مؤشرات للملفات، تأكد من تلبية المتطلبات التالية:
+قبل إنشاء مؤشرات للملفات، تأكد من استيفاء المتطلبات التالية:
 
-- برنامج الحماية من الفيروسات من Microsoft Defender مع تمكين الحماية المستندة إلى السحابة (راجع [إدارة الحماية المستندة إلى السحابة](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
-- إصدار عميل مكافحة البرامج الضارة هو 4.18.1901.x أو إصدار أحدث
+- تم تكوين برنامج الحماية من الفيروسات من Microsoft Defender مع تمكين الحماية المستندة إلى السحابة (راجع [إدارة الحماية المستندة إلى السحابة](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
+- إصدار عميل مكافحة البرامج الضارة هو 4.18.1901.x أو أحدث
 - يتم تشغيل الأجهزة Windows 10 أو الإصدار 1703 أو الإصدارات الأحدث أو Windows 11؛ Windows Server 2016 أو Windows Server 2019 أو Windows Server 2022
-- تم [تشغيل ميزة الحظر أو السماح](/microsoft-365/security/defender-endpoint/advanced-features)
+- [تم تشغيل ميزة الحظر أو السماح](/microsoft-365/security/defender-endpoint/advanced-features)
 
-#### <a name="indicators-for-ip-addresses-urls-or-domains"></a>مؤشرات عناوين IP أو عناوين URL أو المجالات
+#### <a name="indicators-for-ip-addresses-urls-or-domains"></a>مؤشرات لعناوين IP أو عناوين URL أو المجالات
 
-عند إنشاء [مؤشر "السماح" عنوان IP أو URL](/microsoft-365/security/defender-endpoint/indicator-ip-domain) أو المجال، يساعد ذلك على منع حظر المواقع أو عناوين IP التي تستخدمها مؤسستك.
+عند [إنشاء مؤشر "السماح" لعنوان IP أو URL أو المجال](/microsoft-365/security/defender-endpoint/indicator-ip-domain)، فإنه يساعد على منع حظر المواقع أو عناوين IP التي تستخدمها مؤسستك.
 
-قبل إنشاء مؤشرات عناوين IP أو عناوين URL أو المجالات، تأكد من تلبية المتطلبات التالية:
+قبل إنشاء مؤشرات لعناوين IP أو عناوين URL أو المجالات، تأكد من استيفاء المتطلبات التالية:
 
-- يتم تمكين حماية الشبكة في Defender for Endpoint في وضع الحظر (راجع [تمكين حماية الشبكة](/microsoft-365/security/defender-endpoint/enable-network-protection))
-- إصدار عميل مكافحة البرامج الضارة هو 4.18.1906.x أو إصدار أحدث
+- يتم تمكين حماية الشبكة في Defender لنقطة النهاية في وضع الحظر (راجع [تمكين حماية الشبكة](/microsoft-365/security/defender-endpoint/enable-network-protection))
+- إصدار عميل مكافحة البرامج الضارة هو 4.18.1906.x أو أحدث
 - يتم تشغيل الأجهزة Windows 10 أو الإصدار 1709 أو الإصدارات الأحدث أو Windows 11
 
-يتم تشغيل مؤشرات الشبكة المخصصة في [Microsoft 365 Defender.](/microsoft-365/security/defender/microsoft-365-defender) لمعرفة المزيد، راجع [الميزات المتقدمة](/microsoft-365/security/defender-endpoint/advanced-features).
+يتم تشغيل مؤشرات الشبكة المخصصة في [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender). لمعرفة المزيد، راجع [الميزات المتقدمة](/microsoft-365/security/defender-endpoint/advanced-features).
 
 #### <a name="indicators-for-application-certificates"></a>مؤشرات شهادات التطبيق
 
-عند إنشاء [مؤشر "السماح"](/microsoft-365/security/defender-endpoint/indicator-certificates) لشهادة تطبيق، يساعد ذلك على منع حظر التطبيقات، مثل التطبيقات التي تم تطويرها داخليا، التي تستخدمها مؤسستك. `.CER` أو `.PEM` تكون ملحقات الملفات معتمدة.
+عند [إنشاء مؤشر "السماح" لشهادة تطبيق](/microsoft-365/security/defender-endpoint/indicator-certificates)، فإنه يساعد على منع حظر التطبيقات، مثل التطبيقات المطورة داخليا، التي تستخدمها مؤسستك. `.CER` أو `.PEM` ملحقات الملفات معتمدة.
 
-قبل إنشاء مؤشرات لشهادات التطبيق، تأكد من تلبية المتطلبات التالية:
+قبل إنشاء مؤشرات لشهادات التطبيق، تأكد من استيفاء المتطلبات التالية:
 
-- برنامج الحماية من الفيروسات من Microsoft Defender مع تمكين الحماية المستندة إلى السحابة (راجع [إدارة الحماية المستندة إلى السحابة](deploy-manage-report-microsoft-defender-antivirus.md)
-- إصدار عميل مكافحة البرامج الضارة هو 4.18.1901.x أو إصدار أحدث
+- تم تكوين برنامج الحماية من الفيروسات من Microsoft Defender مع تمكين الحماية المستندة إلى السحابة (راجع [إدارة الحماية المستندة إلى السحابة](deploy-manage-report-microsoft-defender-antivirus.md)
+- إصدار عميل مكافحة البرامج الضارة هو 4.18.1901.x أو أحدث
 - يتم تشغيل الأجهزة Windows 10 أو الإصدار 1703 أو الإصدارات الأحدث أو Windows 11؛ Windows Server 2016 أو Windows Server 2019 أو Windows Server 2022
-- تعريفات الحماية من الفيروسات والتهديدات مُتعدة
+- تعريفات الحماية من الفيروسات والتهديدات محدثة
 
 > [!TIP]
-> عند إنشاء مؤشرات، يمكنك تعريفها واحدا بعد آخر، أو استيراد عناصر متعددة في وقت واحد. ضع في اعتبارك أن هناك حد 15000 مؤشر لمستأجر واحد. وقد تحتاج إلى جمع تفاصيل معينة أولا، مثل معلومات تفصيل الملف. تأكد من مراجعة المتطلبات الأساسية قبل [إنشاء المؤشرات](manage-indicators.md).
+> عند إنشاء مؤشرات، يمكنك تعريفها واحدا تلو الآخر، أو استيراد عناصر متعددة في وقت واحد. ضع في اعتبارك أن هناك حدا يبلغ 15000 مؤشر لمستأجر واحد. وقد تحتاج إلى جمع تفاصيل معينة أولا، مثل معلومات تجزئة الملف. تأكد من مراجعة المتطلبات الأساسية قبل [إنشاء المؤشرات](manage-indicators.md).
 
-## <a name="part-4-submit-a-file-for-analysis"></a>الجزء 4: إرسال ملف لتحليله
+## <a name="part-4-submit-a-file-for-analysis"></a>الجزء 4: إرسال ملف للتحليل
 
-يمكنك إرسال الكيانات، مثل الملفات والكشف بدون ملفات، إلى Microsoft لتحليلها. يقوم الباحثون في مجال الأمان من Microsoft بتحليل كل الواجبات المرسلة، وتساعد نتائجها في إعلام Microsoft Defender بقدرات الحماية من المخاطر في نقطة النهاية. عند تسجيل الدخول إلى موقع الإرسال، يمكنك تعقب الواجبات المرسلة.
+يمكنك إرسال كيانات، مثل الملفات وعمليات الكشف بدون ملفات، إلى Microsoft للتحليل. يحلل باحثو الأمان في Microsoft جميع عمليات الإرسال، وتساعد نتائجهم في إعلام Microsoft Defender لنقطة النهاية قدرات الحماية من التهديدات. عند تسجيل الدخول إلى موقع الإرسال، يمكنك تعقب عمليات الإرسال.
 
-### <a name="submit-a-file-for-analysis"></a>إرسال ملف لتحليله
+### <a name="submit-a-file-for-analysis"></a>إرسال ملف للتحليل
 
-إذا كان لديك ملف تم اكتشافه عن طريق الخطأ على أنه ضار أو تم تفويه، فاتبع هذه الخطوات لإرسال الملف لتحليله.
+إذا كان لديك ملف تم اكتشافه بشكل خاطئ على أنه ضار أو فائت، فاتبع هذه الخطوات لإرسال الملف للتحليل.
 
-1. راجع الإرشادات هنا: [إرسال الملفات لتحليلها](/windows/security/threat-protection/intelligence/submission-guide).
+1. راجع الإرشادات هنا: [إرسال الملفات للتحليل](/windows/security/threat-protection/intelligence/submission-guide).
 
-2. تفضل بزيارة [التحليل الذكي لمخاطر الأمان من Microsoft إرسال الملفات](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission)وأقدم الملف (الملفات).
+2. تفضل بزيارة [موقع إرسال التحليل الذكي لمخاطر الأمان من Microsoft](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission)وأرسل ملفك).
 
-### <a name="submit-a-fileless-detection-for-analysis"></a>إرسال كشف بدون ملفات لتحليله
+### <a name="submit-a-fileless-detection-for-analysis"></a>إرسال الكشف بدون ملف للتحليل
 
-إذا تم اكتشاف شيء ما كبرامج ضارة `Mpsupport.cab` استنادا إلى السلوك، ولم يكن لديك ملف، يمكنك إرسال الملف لتحليله. يمكنك الحصول *على ملف.cab* باستخدام أداة الحماية من البرامج الضارة من Microsoft Command-Line المساعدة (MPCmdRun.exe) على Windows 10 أو Windows 11.
+إذا تم الكشف عن شيء ما على أنه برامج ضارة استنادا إلى السلوك، ولم يكن لديك ملف، يمكنك إرسال `Mpsupport.cab` الملف للتحليل. يمكنك الحصول على ملف *.cab* باستخدام أداة الأداة المساعدة Command-Line للحماية من البرامج الضارة من Microsoft (MPCmdRun.exe) على Windows 10 أو Windows 11.
 
-1. انتقل إلى ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`، ثم قم بتشغيل `MpCmdRun.exe` كمسؤول.
+1. انتقل إلى ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`، ثم قم بتشغيله `MpCmdRun.exe` كمسؤول.
 
-2. اكتب `mpcmdrun.exe -GetFiles`، ثم اضغط على **Enter**.
+2. اكتب `mpcmdrun.exe -GetFiles`، ثم اضغط على **مفتاح الإدخال Enter**.
 
-   يتم .cab ملف يحتوي على سجلات تشخيص متنوعة. يتم تحديد موقع الملف في إخراج موجه الأوامر. بشكل افتراضي، يكون الموقع هو `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab`.
+   يتم إنشاء ملف .cab يحتوي على سجلات تشخيص مختلفة. يتم تحديد موقع الملف في إخراج موجه الأوامر. بشكل افتراضي، يكون الموقع `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab`.
 
-3. راجع الإرشادات هنا: [إرسال الملفات لتحليلها](/windows/security/threat-protection/intelligence/submission-guide).
+3. راجع الإرشادات هنا: [إرسال الملفات للتحليل](/windows/security/threat-protection/intelligence/submission-guide).
 
-4. تفضل بزيارة [التحليل الذكي لمخاطر الأمان من Microsoft إرسال الملفات](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission)وأقدم .cab الخاصة بك.
+4. تفضل بزيارة [موقع إرسال التحليل الذكي لمخاطر الأمان من Microsoft](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission)وأرسل ملفات .cab.
 
 ### <a name="what-happens-after-a-file-is-submitted"></a>ماذا يحدث بعد إرسال ملف؟
 
-يتم فحص إرسالك على الفور بواسطة أنظمتنا ليمنحك التحديد الأخير حتى قبل أن يبدأ المحلل في معالجة قضيتك. من المحتمل أن يكون قد تم إرسال ملف ومعالجتها من قبل محلل. في هذه الحالات، يتم تحديد ذلك بسرعة.
+يتم فحص عمليات الإرسال الخاصة بك على الفور بواسطة أنظمتنا لمنحك أحدث قرار حتى قبل أن يبدأ المحلل في معالجة حالتك. من المحتمل أن يكون قد تم بالفعل إرسال ملف ومعالجتها من قبل محلل. وفي هذه الحالات، يتم اتخاذ قرار بسرعة.
 
-بالنسبة إلى عمليات الإرسال التي لم تتم معالجتها بالفعل، يتم تحديد أولوياتها للتحليل كما يلي:
+بالنسبة إلى عمليات الإرسال التي لم تتم معالجتها بالفعل، يتم ترتيب أولوياتها للتحليل كما يلي:
 
-- يتم إعطاء أولوية أعلى للملفات الشائعة التي قد تؤثر على أعداد كبيرة من أجهزة الكمبيوتر.
-- يتم منح العملاء المصادق عليه، لا سيما عملاء المؤسسات الذين لهم "هوية ضمان البرنامج" [(SAIDs)](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx) صالحة، أولوية أعلى.
-- يتم منح الواجبات المرسلة التي تم وضع علامة لها على أنها ذات أولوية عالية من قبل حاملي علامة 'SAID' انتباها فوريا.
+- يتم إعطاء أولوية أعلى للملفات الشائعة التي يحتمل أن تؤثر على أعداد كبيرة من أجهزة الكمبيوتر.
+- يتم إعطاء العملاء المصادق عليهم، وخاصة عملاء المؤسسات الذين يستخدمون [معرفات ضمان البرامج (SAIDs)](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx) الصالحة، أولوية أعلى.
+- يتم إعطاء عمليات الإرسال التي تم وضع علامة عليها على أنها ذات أولوية عالية من قبل أصحاب SAID اهتماما فوريا.
 
-للتحقق من وجود تحديثات تتعلق بالتقديم، سجل الدخول إلى موقع التحليل الذكي لمخاطر الأمان من Microsoft [الإرسال](https://www.microsoft.com/wdsi/filesubmission).
+للتحقق من وجود تحديثات تتعلق بإرسالك، سجل الدخول إلى [موقع إرسال التحليل الذكي لمخاطر الأمان من Microsoft](https://www.microsoft.com/wdsi/filesubmission).
 
 > [!TIP]
-> لمعرفة المزيد، راجع [إرسال الملفات لتحليلها](/windows/security/threat-protection/intelligence/submission-guide#how-does-microsoft-prioritize-submissions).
+> لمعرفة المزيد، راجع ["إرسال الملفات" للتحليل](/windows/security/threat-protection/intelligence/submission-guide#how-does-microsoft-prioritize-submissions).
 
-## <a name="part-5-review-and-adjust-your-threat-protection-settings"></a>الجزء 5: مراجعة إعدادات الحماية من المخاطر وضبطها
+## <a name="part-5-review-and-adjust-your-threat-protection-settings"></a>الجزء 5: مراجعة إعدادات الحماية من التهديدات وضبطها
 
-يوفر Microsoft Defender لنقطة النهاية مجموعة واسعة من الخيارات، بما في ذلك القدرة على ضبط الإعدادات للميزات والإمكانات المختلفة. إذا كنت تواجه الكثير من الإيجابيات الخاطئة، فتأكد من مراجعة إعدادات الحماية من المخاطر في مؤسستك. قد تحتاج إلى إجراء بعض التعديلات على:
+يوفر Microsoft Defender لنقطة النهاية مجموعة واسعة من الخيارات، بما في ذلك القدرة على ضبط الإعدادات لمختلف الميزات والقدرات. إذا كنت تحصل على العديد من الإيجابيات الخاطئة، فتأكد من مراجعة إعدادات الحماية من التهديدات في مؤسستك. قد تحتاج إلى إجراء بعض التعديلات على:
 
-- [الحماية التي يتم تسليمها من السحابة](#cloud-delivered-protection)
+- [الحماية المقدمة من السحابة](#cloud-delivered-protection)
 - [المعالجة للتطبيقات التي يحتمل أن تكون غير مرغوب فيها](#remediation-for-potentially-unwanted-applications)
-- [المعالجة والتحري التلقائي](#automated-investigation-and-remediation)
+- [التحقيق التلقائي والمعالجة](#automated-investigation-and-remediation)
 
-### <a name="cloud-delivered-protection"></a>الحماية التي يتم تسليمها من السحابة
+### <a name="cloud-delivered-protection"></a>الحماية المقدمة من السحابة
 
-تحقق من مستوى الحماية التي تم تسليمها من السحابة برنامج الحماية من الفيروسات من Microsoft Defender. بشكل افتراضي، يتم تعيين الحماية التي يتم تسليمها بواسطة السحابة إلى لم يتم تكوينها، والتي تتوافق مع مستوى عادي من الحماية لمعظم المؤسسات. إذا تم تعيين الحماية التي تم تسليمها من السحابة إلى تفاوت عال أو عال **+** أو صفري، فقد تواجه عددا أكبر من الإيجابيات الخاطئة.
+تحقق من مستوى الحماية المقدمة من السحابة للحصول على برنامج الحماية من الفيروسات من Microsoft Defender. بشكل افتراضي، يتم تعيين الحماية المقدمة من السحابة إلى **غير مكونة**، والتي تتوافق مع مستوى عادي من الحماية لمعظم المؤسسات. إذا تم تعيين الحماية التي توفرها السحابة إلى تسامح **عال** أو **مرتفع أو** **صفري**، فقد تواجه عددا أعلى من الإيجابيات الخاطئة.
 
 > [!TIP]
-> لمعرفة المزيد حول تكوين الحماية التي تم تسليمها من السحابة، راجع [تحديد مستوى الحماية التي يتم تسليمها من السحابة](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
+> لمعرفة المزيد حول تكوين الحماية التي توفرها السحابة، راجع [تحديد مستوى الحماية المقدمة من السحابة](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
 
-نوصي [باستخدام إدارة نقاط النهاية من Microsoft لتحرير](/mem/endpoint-manager-overview) إعدادات الحماية التي تم تسليمها من السحابة أو تعيينها؛ ومع ذلك، يمكنك استخدام أساليب أخرى، مثل نهج [المجموعة (راجع](/azure/active-directory-domain-services/manage-group-policy) إدارة [Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md).
+نوصي باستخدام [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview) لتحرير إعدادات الحماية التي توفرها السحابة أو تعيينها؛ ومع ذلك، يمكنك استخدام أساليب أخرى، مثل [نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) (راجع [إدارة Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md).
 
-#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>استخدام إدارة نقاط النهاية من Microsoft لمراجعة إعدادات الحماية التي تم تسليمها من السحابة وتحريرها (بالنسبة إلى السياسات الموجودة)
+#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>استخدام إدارة نقاط النهاية من Microsoft لمراجعة إعدادات الحماية المقدمة من السحابة وتحريرها (للنهج الحالية)
 
-1. انتقل إلى إدارة نقاط النهاية من Microsoft إدارة (<https://endpoint.microsoft.com>) ثم سجل الدخول.
+1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com>) وسجل الدخول.
 
-2. اختر **الحماية من الفيروسات لنقطة** \> **النهاية** ثم حدد نهج موجود. (إذا لم يكن لديك نهج موجود، أو إذا كنت تريد إنشاء نهج جديد، فاتخطي [إلى الإجراء التالي](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
+2. اختر برنامج **الحماية من الفيروسات** **لأمان** \> نقطة النهاية ثم حدد نهجا موجودا. (إذا لم يكن لديك نهج موجود، أو إذا كنت تريد إنشاء نهج جديد، فانتقل إلى [الإجراء التالي](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
 
-3. ضمن **إدارة**، حدد **خصائص**. بعد ذلك، إلى بجانب **إعدادات التكوين،** اختر **تحرير**.
+3. ضمن **"إدارة**"، حدد **"خصائص**". بعد ذلك، إلى جانب **إعدادات التكوين**، اختر **"تحرير**".
 
-4. قم **بتوسيع الحماية السحابية**، وراجع الإعداد الحالي في صف مستوى الحماية الذي يتم تسليمه **من السحابة** . نوصي بإعداد الحماية التي يتم تسليمها من السحابة إلى لم يتم تكوينها، مما يوفر حماية قوية مع تقليل فرص الحصول على إيجابيات خاطئة.
+4. قم بتوسيع **حماية السحابة**، ومراجعة الإعداد الحالي في صف **مستوى الحماية المقدمة من السحابة** . نوصي بتعيين الحماية المقدمة من السحابة إلى **غير مكونة**، ما يوفر حماية قوية مع تقليل فرص الحصول على إيجابيات خاطئة.
 
-5. اختر **مراجعة + حفظ**، ثم **حفظ**.
+5. اختر **"مراجعة + حفظ**"، ثم **"حفظ**".
 
-#### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>استخدام إدارة نقاط النهاية من Microsoft لتعيين إعدادات الحماية التي يتم تسليمها من السحابة (لنهاء جديد)
+#### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>استخدام إدارة نقاط النهاية من Microsoft لتعيين إعدادات الحماية المقدمة من السحابة (لنهج جديد)
 
-1. انتقل إلى إدارة نقاط النهاية من Microsoft إدارة (<https://endpoint.microsoft.com>) ثم سجل الدخول.
+1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com>) وسجل الدخول.
 
-2. اختر **أمان نقطة النهاية** \> **Antivirus** \> **+ إنشاء نهج**.
+2. اختر **Endpoint security** \> **Antivirus** \> **+ Create policy**.
 
-3. بالنسبة **إلى النظام** الأساسي، حدد خيارا، ثم بالنسبة إلى ملف التعريف، حدد برنامج الحماية **من الفيروسات** أو برنامج الحماية من الفيروسات من Microsoft Defender (يعتمد الخيار المحدد على ما قمت بتحديده ل **Platform**.) ثم اختر **إنشاء**.
+3. بالنسبة للنظام **الأساسي**، حدد خيارا، ثم **لملف التعريف**، حدد **برنامج الحماية من الفيروسات** أو **برنامج الحماية من الفيروسات من Microsoft Defender** (يعتمد الخيار المحدد على ما حددته للنظام **الأساسي**.) ثم اختر **"إنشاء**".
 
-4. على **علامة التبويب أساسيات** ، حدد اسما ووصفا النهج. ثم اختر **التالي**.
+4. في علامة التبويب **"Basics** "، حدد اسما ووصفا للنهج. ثم اختر **"التالي**".
 
-5. على علامة **التبويب إعدادات التكوين** ، قم بتوسيع **الحماية السحابية**، وحدد الإعدادات التالية:
+5. في علامة التبويب **"إعدادات التكوين"** ، قم بتوسيع **حماية السحابة**، وحدد الإعدادات التالية:
 
-   - تعيين **تشغيل الحماية التي يتم تسليمها من السحابة** إلى **نعم**.
-   - تعيين **مستوى الحماية التي تم تسليمها من السحابة** إلى **لم يتم تكوينه**. (يوفر هذا المستوى مستوى حماية قويا بشكل افتراضي مع تقليل فرص الحصول على إيجابيات خاطئة.)
+   - قم **بتعيين تشغيل الحماية المقدمة من السحابة** إلى **"نعم**".
+   - تعيين **مستوى الحماية المقدمة من السحابة** إلى **غير مكون**. (يوفر هذا المستوى مستوى قويا من الحماية بشكل افتراضي مع تقليل فرص الحصول على إيجابيات خاطئة.)
 
-6. على علامة **التبويب علامات النطاق** ، إذا كنت تستخدم علامات النطاق في مؤسستك، فحدد علامات نطاق النهج. (راجع [علامات النطاق](/mem/intune/fundamentals/scope-tags).)
+6. في علامة التبويب **"Scope tags** "، إذا كنت تستخدم علامات النطاق في مؤسستك، فحدد علامات النطاق للنهج. (راجع [علامات النطاق](/mem/intune/fundamentals/scope-tags).)
 
-7. على علامة **التبويب** الواجبات، حدد المستخدمين والمجموعات التي يجب تطبيق النهج عليها، ثم اختر **التالي**. (إذا كنت بحاجة إلى مساعدة في التعيينات، فشاهد تعيين ملفات تعريف المستخدمين والجهاز [في Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+7. في علامة التبويب **"الواجبات** "، حدد المستخدمين والمجموعات التي يجب تطبيق نهجك عليها، ثم اختر **"التالي**". (إذا كنت بحاجة إلى مساعدة في التعيينات، فراجع [تعيين ملفات تعريف المستخدمين والجهاز في Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
-8. على علامة **التبويب مراجعة + إنشاء** ، راجع الإعدادات، ثم اختر **إنشاء**.
+8. في علامة التبويب **"مراجعة + إنشاء** "، راجع الإعدادات، ثم اختر **"إنشاء**".
 
 ### <a name="remediation-for-potentially-unwanted-applications"></a>المعالجة للتطبيقات التي يحتمل أن تكون غير مرغوب فيها
 
-التطبيقات التي يحتمل أن تكون غير مرغوب فيها (PUA) هي فئة من البرامج التي يمكن أن تتسبب في تشغيل الأجهزة ببطء أو عرض إعلانات غير متوقعة أو تثبيت برامج أخرى قد تكون غير متوقعة أو غير مرغوب فيها. تتضمن أمثلة PUA البرامج الإعلانية وبرامج تجميع البرامج وبرامج التجنب التي تختلف سلوكها مع منتجات الأمان. على الرغم من أن PUA لا يعتبر برامج ضارة، فإن بعض أنواع البرامج هي PUA استنادا إلى سلوكها وسمعة هذه البرامج.
+التطبيقات التي يحتمل أن تكون غير مرغوب فيها (PUA) هي فئة من البرامج التي يمكن أن تتسبب في تشغيل الأجهزة ببطء أو عرض إعلانات غير متوقعة أو تثبيت برامج أخرى قد تكون غير متوقعة أو غير مرغوب فيها. تتضمن أمثلة PUA البرامج الإعلانية وبرامج التجميع وبرامج التهرب التي تتصرف بشكل مختلف مع منتجات الأمان. على الرغم من أن PUA لا يعتبر برامج ضارة، فإن بعض أنواع البرامج تعتمد على سلوكها وسمعتها.
 
 > [!TIP]
-> لمعرفة المزيد حول PUA، راجع الكشف عن التطبيقات [التي يحتمل أن تكون غير مرغوب فيها وحظرها](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+> لمعرفة المزيد حول PUA، راجع [الكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها وحظرها](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
-استنادا إلى التطبيقات التي تستخدمها مؤسستك، قد تحصل على نتائج إيجابية خاطئة نتيجة لإعدادات حماية PUA. إذا لزم الأمر، يمكنك تشغيل حماية PUA في وضع التدقيق لبعض الوقت، أو تطبيق حماية PUA على مجموعة فرعية من الأجهزة في مؤسستك. يمكن تكوين حماية PUA للمستعرض Microsoft Edge ول برنامج الحماية من الفيروسات من Microsoft Defender.
+استنادا إلى التطبيقات التي تستخدمها مؤسستك، قد تحصل على إيجابيات خاطئة نتيجة لإعدادات حماية PUA. إذا لزم الأمر، ففكر في تشغيل حماية PUA في وضع التدقيق لفترة من الوقت، أو طبق حماية PUA على مجموعة فرعية من الأجهزة في مؤسستك. يمكن تكوين حماية PUA للمستعرض Microsoft Edge ول برنامج الحماية من الفيروسات من Microsoft Defender.
 
-نوصي [باستخدام إدارة نقاط النهاية من Microsoft لتحرير](/mem/endpoint-manager-overview) إعدادات حماية PUA أو تعيينها؛ ومع ذلك، يمكنك استخدام أساليب أخرى، مثل نهج [المجموعة (راجع](/azure/active-directory-domain-services/manage-group-policy) إدارة [Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md).
+نوصي باستخدام [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview) لتحرير إعدادات حماية PUA أو تعيينها؛ ومع ذلك، يمكنك استخدام أساليب أخرى، مثل [نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) (راجع [إدارة Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md).
 
 #### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>استخدام إدارة نقاط النهاية من Microsoft لتحرير حماية PUA (لملفات تعريف التكوين الموجودة)
 
-1. انتقل إلى إدارة نقاط النهاية من Microsoft إدارة (<https://endpoint.microsoft.com>) ثم سجل الدخول.
+1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com>) وسجل الدخول.
 
-2. اختر **ملفات تعريف** \> **تكوين الأجهزة**، ثم حدد نهج موجود. (إذا لم يكن لديك نهج موجود، أو إذا كنت تريد إنشاء نهج جديد، فاتخطي [إلى الإجراء التالي](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
+2. اختر **ملفات تعريف تكوين** **الأجهزة**\>، ثم حدد نهجا موجودا. (إذا لم يكن لديك نهج موجود، أو إذا كنت تريد إنشاء نهج جديد، فانتقل إلى [الإجراء التالي](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
 
-3. ضمن **إدارة**، اختر **خصائص**، ثم إلى بجانب **إعدادات التكوين**، اختر **تحرير**.
+3. ضمن **"إدارة**"، اختر **"خصائص**"، ثم إلى جانب **إعدادات التكوين**، اختر **"تحرير**".
 
-4. على علامة **التبويب إعدادات التكوين**، قم بالتمرير لأسفل ثم قم **برنامج الحماية من الفيروسات من Microsoft Defender**.
+4. في علامة التبويب **"إعدادات التكوين"**، قم بالتمرير لأسفل ثم قم بتوسيع **برنامج الحماية من الفيروسات من Microsoft Defender**.
 
-5. تعيين **كشف التطبيقات التي قد تكون غير مرغوب فيها** إلى **تدقيق**. (يمكنك إيقاف تشغيله، ولكن باستخدام وضع التدقيق، ستكون قادرا على رؤية عمليات الكشف.)
+5. تعيين **الكشف عن التطبيقات غير المرغوب فيها** إلى **التدقيق**. (يمكنك إيقاف تشغيله، ولكن باستخدام وضع التدقيق، ستتمكن من رؤية عمليات الكشف.)
 
-6. اختر **مراجعة + حفظ**، ثم اختر **حفظ**.
+6. اختر **"مراجعة + حفظ**"، ثم اختر **"حفظ**".
 
 #### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>استخدام إدارة نقاط النهاية من Microsoft لتعيين حماية PUA (لملف تعريف تكوين جديد)
 
-1. انتقل إلى إدارة نقاط النهاية من Microsoft إدارة (<https://endpoint.microsoft.com>) ثم سجل الدخول.
+1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com>) وسجل الدخول.
 
-2. اختر **ملفات تعريف** \> **تكوين الأجهزة** \> **+ إنشاء ملف تعريف**.
+2. اختر **ملفات تعريف** \> تكوين **الأجهزة** \> **+ إنشاء ملف تعريف**.
 
-3. بالنسبة إلى **النظام الأساسي**، **اختر Windows 10 واللاحقة**، وبالنسبة لملف **التعريف**، حدد **قيود الجهاز**.
+3. بالنسبة إلى **النظام الأساسي**، اختر **Windows 10 والإصدارات الأحدث**، وبالنسبة إلى **ملف التعريف**، حدد **قيود الجهاز**.
 
-4. على علامة **التبويب أساسيات** ، حدد اسما ووصفا لنهائك. ثم اختر **التالي**.
+4. في علامة التبويب **"Basics** "، حدد اسما ووصفا للنهج الخاص بك. ثم اختر **"التالي**".
 
-5. على علامة **التبويب إعدادات التكوين**، قم بالتمرير لأسفل ثم قم **برنامج الحماية من الفيروسات من Microsoft Defender**.
+5. في علامة التبويب **"إعدادات التكوين"**، قم بالتمرير لأسفل ثم قم بتوسيع **برنامج الحماية من الفيروسات من Microsoft Defender**.
 
-6. قم **بتعيين كشف التطبيقات التي قد تكون غير مرغوب فيها** إلى **تدقيق**، ثم اختر **التالي**. (يمكنك إيقاف تشغيل حماية PUA، ولكن باستخدام وضع التدقيق، ستكون قادرا على رؤية عمليات الكشف.)
+6. قم بتعيين **"الكشف عن التطبيقات غير المرغوب فيها** " إلى **"التدقيق**"، ثم اختر **"التالي**". (يمكنك إيقاف تشغيل حماية PUA، ولكن باستخدام وضع التدقيق، ستتمكن من رؤية عمليات الكشف.)
 
-7. على علامة **التبويب** الواجبات، حدد المستخدمين والمجموعات التي يجب تطبيق النهج عليها، ثم اختر **التالي**. (إذا كنت بحاجة إلى مساعدة في التعيينات، فشاهد تعيين ملفات تعريف المستخدمين والجهاز [في Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+7. في علامة التبويب **"الواجبات** "، حدد المستخدمين والمجموعات التي يجب تطبيق نهجك عليها، ثم اختر **"التالي**". (إذا كنت بحاجة إلى مساعدة في التعيينات، فراجع [تعيين ملفات تعريف المستخدمين والجهاز في Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
 
-8. على علامة **التبويب قواعد إمكانية** التطبيق، حدد إصدارات نظام التشغيل أو الإصدارات لتضمينها أو استبعادها من النهج. على سبيل المثال، يمكنك تعيين النهج الذي سيتم تطبيقه على كل الأجهزة في إصدارات معينة من Windows 10. ثم اختر **التالي**.
+8. في علامة التبويب " **قواعد التطبيق"** ، حدد إصدارات نظام التشغيل أو الإصدارات لتضمينها أو استبعادها من النهج. على سبيل المثال، يمكنك تعيين النهج الذي سيتم تطبيقه على جميع الأجهزة إصدارات معينة من Windows 10. ثم اختر **"التالي**".
 
-9. على علامة **التبويب مراجعة + إنشاء** ، راجع الإعدادات، ثم اختر **إنشاء**.
+9. في علامة التبويب **"مراجعة + إنشاء** "، راجع الإعدادات، ثم اختر **"إنشاء**".
 
-### <a name="automated-investigation-and-remediation"></a>المعالجة والتحري التلقائي
+### <a name="automated-investigation-and-remediation"></a>التحقيق التلقائي والمعالجة
 
-[تم تصميم قدرات](automated-investigations.md) الإصلاح والتحري التلقائي (AIR) لفحص التنبيهات واتخاذ إجراء فوري لحل الخروقات. عند تشغيل التنبيهات، و تشغيل التحقيق التلقائي، يتم إنشاء قرار لكل قطعة من الإثباتات التي يتم التحقق منها. قد تكون *الأحكام ضارة أو* *مريبة* أو *لا يمكن العثور على أي تهديدات*.
+تم تصميم قدرات [التحقيق والمعالجة التلقائية](automated-investigations.md) (AIR) لفحص التنبيهات واتخاذ إجراءات فورية لحل الخروقات. مع تشغيل التنبيهات، وإجراء تحقيق تلقائي، يتم إصدار حكم لكل قطعة من الأدلة التي يتم التحقيق فيها. يمكن أن تكون الأحكام *ضارة* أو *مريبة* أو *لم يتم العثور على أي تهديدات*.
 
-استنادا إلى [مستوى التنفيذ التلقائي](/microsoft-365/security/defender-endpoint/automation-levels) الذي تم تعيينه لمنظمتك وإعدادات الأمان الأخرى، يتم اتخاذ إجراءات المعالجة على عمليات الإصلاح التي تعتبر *ضارة أو* *مريبة*. في بعض الحالات، تحدث إجراءات المعالجة تلقائيا؛ في حالات أخرى، يتم اتخاذ إجراءات المعالجة يدويا أو فقط عند موافقة فريق عمليات الأمان.
+اعتمادا على [مستوى التشغيل التلقائي](/microsoft-365/security/defender-endpoint/automation-levels) المعين لمؤسستك وإعدادات الأمان الأخرى، يتم اتخاذ إجراءات المعالجة على البيانات الاصطناعية التي تعتبر *ضارة* أو *مريبة*. في بعض الحالات، تحدث إجراءات المعالجة تلقائيا؛ في حالات أخرى، يتم اتخاذ إجراءات المعالجة يدويا أو فقط عند موافقة فريق عمليات الأمان.
 
-- [تعرف على المزيد حول مستويات التنفيذ التلقائي](/microsoft-365/security/defender-endpoint/automation-levels)؛ وبعد ذلك
-- [تكوين قدرات AIR في Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation).
+- [تعرف على المزيد حول مستويات التشغيل التلقائي](/microsoft-365/security/defender-endpoint/automation-levels)؛ وبعد ذلك
+- [تكوين قدرات AIR في Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation).
 
 > [!IMPORTANT]
-> نوصي باستخدام *التنفيذ التلقائي الكامل* للتحري والوساطة التلقائية. لا ت إيقاف تشغيل هذه الإمكانات بسبب إيجابية خاطئة. بدلا من ذلك، استخدم [مؤشرات "السماح"](#indicators-for-microsoft-defender-for-endpoint) لتعريف الاستثناءات، واحتفظ بتعيين المعالجة والاستع المعالجة التلقائية لاتخاذ الإجراءات المناسبة تلقائيا. يساعد [اتباع هذا الإرشاد](automation-levels.md#levels-of-automation) على تقليل عدد التنبيهات التي يجب على فريق عمليات الأمان معالجتها.
+> نوصي باستخدام *التشغيل التلقائي الكامل* للتحقيق التلقائي والمعالجة. لا توقف تشغيل هذه القدرات بسبب إيجابية خاطئة. بدلا من ذلك، استخدم [مؤشرات "السماح" لتعريف الاستثناءات](#indicators-for-microsoft-defender-for-endpoint)، واحتفظ بتعيين التحقيق والمعالجة التلقائيين لاتخاذ الإجراءات المناسبة تلقائيا. يساعد اتباع [هذه الإرشادات](automation-levels.md#levels-of-automation) على تقليل عدد التنبيهات التي يجب على فريق عمليات الأمان التعامل معها.
 
 ## <a name="still-need-help"></a>هل ما زلت بحاجة إلى المساعدة؟
 
-إذا كنت قد عملت على كل الخطوات في هذه المقالة ولا تزال بحاجة إلى المساعدة، فاتصل ب الدعم التقني.
+إذا كنت قد عملت على جميع الخطوات الواردة في هذه المقالة وكنت لا تزال بحاجة إلى المساعدة، فاتصل بالدعم التقني.
 
-1. انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> تسجيل الدخول.
+1. انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> وسجل الدخول.
 
-2. في الزاوية العلوية اليسرى، حدد علامة استفهام (**؟**)، ثم حدد **دعم Microsoft**.
+2. في الزاوية العلوية اليسرى، حدد علامة الاستفهام (**؟**)، ثم حدد **دعم Microsoft**.
 
-3. في نافذة **مساعد الدعم** ، قم بوصف المشكلة، ثم أرسل رسالتك. من هناك، يمكنك فتح طلب خدمة.
+3. في نافذة **مساعد الدعم** ، صف مشكلتك، ثم أرسل رسالتك. من هناك، يمكنك فتح طلب خدمة.
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md) 
 
 ## <a name="see-also"></a>راجع أيضًا
 
 [إدارة Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md)
 
-[نظرة عامة Microsoft 365 Defender المدخل](/microsoft-365/security/defender-endpoint/use)
+[نظرة عامة على مدخل Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)

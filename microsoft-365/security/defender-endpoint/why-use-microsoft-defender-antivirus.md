@@ -1,7 +1,7 @@
 ---
 title: لماذا يجب عليك استخدام برنامج الحماية من الفيروسات من Microsoft Defender مع Microsoft Defender لنقطة النهاية
 description: للحصول على أفضل النتائج، استخدم برنامج الحماية من الفيروسات من Microsoft Defender مع عروض Microsoft الأخرى.
-keywords: windows defender، برنامج الحماية من الفيروسات، av التابع جهة خارجية
+keywords: windows defender، برنامج الحماية من الفيروسات، av تابع لجهة خارجية
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4a63d8fe8b042c6c532673c61ad98aae8a4ae833
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: afb8a113ca6257164524027dacd9ce38765e5812
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569059"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790295"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-microsoft-defender-for-endpoint"></a>معاً بشكل أفضل: برنامج الحماية من الفيروسات من Microsoft Defender Microsoft Defender لنقطة النهاية
 
@@ -29,31 +29,45 @@ ms.locfileid: "64569059"
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- برنامج الحماية من الفيروسات من Microsoft Defender
 
-برنامج الحماية من الفيروسات من Microsoft Defender هو مكون حماية الجيل التالي من [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) (Microsoft Defender لنقطة النهاية).
+**منصات**
+- بالنسبة لنظام التشغيل
 
-على الرغم من أنه يمكنك استخدام حل برنامج الحماية من الفيروسات Microsoft Defender لنقطة النهاية Microsoft، هناك فوائد لاستخدام برنامج الحماية من الفيروسات من Microsoft Defender مع Defender for Endpoint. ليس فقط برنامج الحماية من الفيروسات من Microsoft Defender برنامج الحماية من الفيروسات من الجيل التالي ممتازا، ولكن أيضا مدمجا مع قدرات Defender لنقطة النهاية الأخرى[](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)، مثل الكشف عن تهديدات نقاط النهاية والرد عليها والتحليل والتحري التلقائي [](/microsoft-365/security/defender-endpoint/automated-investigations) ، يمكنك الحصول على حماية أفضل يتم تنسيقها عبر المنتجات والخدمات.
+برنامج الحماية من الفيروسات من Microsoft Defender هو مكون حماية الجيل التالي [من Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) (Microsoft Defender لنقطة النهاية).
+
+على الرغم من أنه يمكنك استخدام حل الحماية من الفيروسات غير التابع ل Microsoft مع Microsoft Defender لنقطة النهاية، هناك مزايا لاستخدام برنامج الحماية من الفيروسات من Microsoft Defender مع Defender لنقطة النهاية. لا يعد برنامج الحماية من الفيروسات من Microsoft Defender حل الحماية من الفيروسات من الجيل التالي ممتازا فحسب، بل إلى جانب قدرات Defender for Endpoint الأخرى، مثل [الكشف عن تهديدات نقاط النهاية والرد عليها](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) [والتحقيق التلقائي والمعالجة](/microsoft-365/security/defender-endpoint/automated-investigations) ، يمكنك الحصول على حماية أفضل يتم تنسيقها عبر المنتجات والخدمات.
 
 ## <a name="11-reasons-to-use-microsoft-defender-antivirus-together-with-microsoft-defender-for-endpoint"></a>11 سبب لاستخدام برنامج الحماية من الفيروسات من Microsoft Defender مع Microsoft Defender لنقطة النهاية
 
-|#|الميزة|ما سبب أهمية ذلك|
+|#|ميزه|ما أهمية ذلك|
 |--|--|--|
-|1|مشاركة إشارة برنامج الحماية من الفيروسات|تشارك تطبيقات Microsoft وخدماتها الإشارات عبر مؤسستك، مما يوفر نظام أساسي واحد أقوى. راجع [Insights من تقييم MITRE ATT&المستند إلى CK Microsoft Defender لنقطة النهاية](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).|
-|2|تحليلات التهديدات والنتيجة الخاصة بك للأجهزة|برنامج الحماية من الفيروسات من Microsoft Defender تجميع بيانات النظام الأساسية [المستخدمة بواسطة تحليلات](/microsoft-365/security/defender-endpoint/threat-analytics) التهديدات و["نقاط Microsoft الآمنة للأجهزة](/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices)". يوفر ذلك لفريق الأمان في مؤسستك معلومات ذات معنى، مثل التوصيات والفرص لتحسين وضعية الأمان في مؤسستك.|
-|3|الأداء|Microsoft Defender لنقطة النهاية مصممة للعمل مع برنامج الحماية من الفيروسات من Microsoft Defender، بحيث تحصل على أداء أفضل عند استخدام هذه العروض معا. [تقييم برنامج الحماية من الفيروسات من Microsoft Defender](evaluate-microsoft-defender-antivirus.md) [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/evaluate-mde).|
-|4|تفاصيل حول البرامج الضارة المحظورة|تتوفر المزيد من التفاصيل والإجراءات للبرامج الضارة المحظورة مع برنامج الحماية من الفيروسات من Microsoft Defender Microsoft Defender لنقطة النهاية. [فهم البرامج الضارة & الأخرى](/windows/security/threat-protection/intelligence/understanding-malware).|
-|5|حماية الشبكة|يمكن لفريق الأمان في مؤسستك حماية شبكتك من خلال حظر عناوين URL وعناوين IP معينة. [حماية الشبكة](/microsoft-365/security/defender-endpoint/network-protection).|
-|6|حظر الملفات|يمكن لفريق الأمان في مؤسستك حظر ملفات معينة. [إيقاف الملفات وفحصها في الشبكة](/microsoft-365/security/defender-endpoint/respond-file-alerts#stop-and-quarantine-files-in-your-network).|
-|7|تقليل مساحة الهجوم|يمكن لفريق الأمان في مؤسستك تقليل نقاط الضعف (أسطح الهجمات)، مما يمنح المهاجمين طرقا أقل لتنفيذ الهجمات. يستخدم الحد من سطح الهجوم الحماية السحابية لعدد من القواعد. [احصل على نظرة عامة حول تقليل مساحة الهجوم](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction).|
-|8|أحداث التدقيق|تتوفر إشارات أحداث التدقيق في [الكشف عن تهديدات نقاط النهاية والرد عليها المتوفرة](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response). (لا تتوفر هذه الإشارات مع حلول مكافحة الفيروسات غير المتوفرة من Microsoft.)|
-|9|البيانات الجغرافية|وفقا للمواصفات 270001 ISO واستبقاء البيانات، يتم توفير البيانات الجغرافية وفقا لسيادتها الجغرافية المحددة في مؤسستك. راجع [عروض التوافق: معايير إدارة أمان المعلومات ISO/IEC 27001:2013](/microsoft-365/compliance/offering-iso-27001).|
-|10|استرداد الملف عبر OneDrive|إذا كنت تستخدم برنامج الحماية من الفيروسات من Microsoft Defender مع Office 365، وكان جهازك [](/Office365/Enterprise)مهاجما بواسطة برامج الفدية الضارة، فإن ملفاتك محمية ويمكن استردادها. [OneDrive استعادة الملفات Windows Defender برامج الفدية الضارة خطوة أخرى](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
-|11|الدعم التقني|باستخدام Microsoft Defender لنقطة النهاية مع برنامج الحماية من الفيروسات من Microsoft Defender، لديك شركة واحدة يمكنك الاتصال بها للحصول على الدعم التقني. [استكشاف مشاكل الخدمة وإصلاحها](/microsoft-365/security/defender-endpoint/troubleshoot-mdatp) ومراجعة [سجلات الأحداث ورموز الأخطاء باستخدام برنامج الحماية من الفيروسات من Microsoft Defender](troubleshoot-microsoft-defender-antivirus.md).|
+|1|مشاركة إشارة الحماية من الفيروسات|تشترك تطبيقات Microsoft وخدماتها في الإشارات عبر مؤسسة المؤسسة، ما يوفر نظاما أساسيا واحدا أقوى. راجع [Insights من التقييم المستند إلى MICROSOFT DEFENDER لنقطة النهاية MITRE ATT&CK](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).|
+|2|تحليلات المخاطر والدرجات الخاصة بك للأجهزة|يجمع برنامج الحماية من الفيروسات من Microsoft Defender بيانات النظام الأساسية المستخدمة من قبل [تحليلات التهديدات وMicrosoft](/microsoft-365/security/defender-endpoint/threat-analytics) [Secure Score للأجهزة](/microsoft-365/security/defender-endpoint/tvm-microsoft-secure-score-devices). وهذا يوفر لفريق الأمان في مؤسستك معلومات أكثر جدوى، مثل التوصيات والفرص لتحسين الوضع الأمني لمؤسستك.|
+|3|الاداء|تم تصميم Microsoft Defender لنقطة النهاية للعمل مع برنامج الحماية من الفيروسات من Microsoft Defender، بحيث تحصل على أداء أفضل عند استخدام هذه العروض معا. [تقييم برنامج الحماية من الفيروسات من Microsoft Defender](evaluate-microsoft-defender-antivirus.md) [Microsoft Defender لنقطة النهاية.](/microsoft-365/security/defender-endpoint/evaluate-mde)|
+|4|تفاصيل حول البرامج الضارة المحظورة|تتوفر المزيد من التفاصيل والإجراءات للبرامج الضارة المحظورة مع برنامج الحماية من الفيروسات من Microsoft Defender Microsoft Defender لنقطة النهاية. [فهم البرامج الضارة & التهديدات الأخرى](/windows/security/threat-protection/intelligence/understanding-malware).|
+|5|حماية الشبكة|يمكن لفريق الأمان في مؤسستك حماية شبكتك عن طريق حظر عناوين URL وعناوين IP معينة. [حماية شبكتك](/microsoft-365/security/defender-endpoint/network-protection).|
+|6|حظر الملفات|يمكن لفريق الأمان في مؤسستك حظر ملفات معينة. [إيقاف الملفات وعزلها في شبكتك](/microsoft-365/security/defender-endpoint/respond-file-alerts#stop-and-quarantine-files-in-your-network).|
+|7|تقليل الأجزاء المعرضة للهجوم|يمكن لفريق الأمان في مؤسستك تقليل الثغرات الأمنية الخاصة بك (أسطح الهجوم)، ما يمنح المهاجمين طرقا أقل لتنفيذ الهجمات. يستخدم تقليل الأجزاء المعرضة للهجوم حماية السحابة لعدد من القواعد. [احصل على نظرة عامة على تقليل الأجزاء المعرضة للهجوم](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction).|
+|8|تدقيق الأحداث|تتوفر إشارات أحداث التدقيق في [قدرات الكشف عن تهديدات نقاط النهاية والرد عليها](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response). (لا تتوفر هذه الإشارات مع حلول الحماية من الفيروسات غير التابعة ل Microsoft.)|
+|9|البيانات الجغرافية|وفقا 270001 ISO واستبقاء البيانات، يتم توفير البيانات الجغرافية وفقا للسيادة الجغرافية المحددة لمؤسستك. راجع [عروض التوافق: ISO/IEC 27001:2013 معايير إدارة أمان المعلومات](/microsoft-365/compliance/offering-iso-27001).|
+|10|استرداد الملفات عبر OneDrive|إذا كنت تستخدم برنامج الحماية من الفيروسات من Microsoft Defender مع [Office 365](/Office365/Enterprise)، وتم مهاجمة جهازك بواسطة برامج الفدية الضارة، فإن ملفاتك محمية وقابلة للاسترداد. [OneDrive استعادة الملفات Windows Defender اتخاذ الحماية من برامج الفدية الضارة خطوة أخرى](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
+|11|الدعم التقني|باستخدام Microsoft Defender لنقطة النهاية مع برنامج الحماية من الفيروسات من Microsoft Defender، لديك شركة واحدة للاتصال بالدعم التقني. [استكشاف مشاكل الخدمة وإصلاحها](/microsoft-365/security/defender-endpoint/troubleshoot-mdatp) [ومراجعة سجلات الأحداث ورموز الخطأ باستخدام برنامج الحماية من الفيروسات من Microsoft Defender](troubleshoot-microsoft-defender-antivirus.md).|
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
 
 ## <a name="learn-more"></a>التعرف على المزيد
 
 [مشكلات الأداء في Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
-[إدارة & المخاطر](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+[إدارة الثغرات الأمنية & المخاطر](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)

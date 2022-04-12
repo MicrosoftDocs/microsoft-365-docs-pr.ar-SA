@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 5b71134f9a7d33880e9762701e825c3fbf708f6b
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 5c3724989db1bd8e6389b8a70ba591ce4e109390
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705066"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787699"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>فهم واستخدام قدرات تقليل الأجزاء المعرضة للهجوم
 
@@ -35,6 +35,10 @@ ms.locfileid: "64705066"
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- برنامج الحماية من الفيروسات من Microsoft Defender
+
+**منصات**
+- بالنسبة لنظام التشغيل
 
 > [!TIP]
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -114,9 +118,9 @@ ms.locfileid: "64705066"
 
 يتم تعريف قواعد تقليل الأجزاء المعرضة للهجوم (ASR) مسبقا لتقوية الأسطح الهجومية الشائعة المعروفة. هناك العديد من الأساليب التي يمكنك استخدامها لتنفيذ قواعد تقليل الأجزاء المعرضة للهجوم. يتم توثيق الأسلوب المفضل في مواضيع نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR) التالية:
 
-- [نظرة عامة على نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment.md)
+- [نظرة عامة على دليل نشر قواعد الحد من سطح الهجوم (ASR)](attack-surface-reduction-rules-deployment.md)
 - [تخطيط نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-plan.md)
-- [قواعد اختبار تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md)
+- [اختبار قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md)
 - [تمكين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 - [تشغيل قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
@@ -294,14 +298,14 @@ ms.locfileid: "64705066"
 |:---|:---|
 | [العزل المستند إلى الأجهزة](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | حماية سلامة النظام والحفاظ عليها عند بدء تشغيله وأثناء تشغيله. التحقق من سلامة النظام من خلال الإثبات المحلي والبعيد. استخدم عزل الحاوية Microsoft Edge للمساعدة في الحماية من مواقع الويب الضارة. |
 | [التحكم في التطبيق](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | استخدم التحكم في التطبيق بحيث يجب أن تكتسب تطبيقاتك الثقة من أجل التشغيل. |
-| [الوصول إلى المجلدات الخاضعة للتحكم](controlled-folders.md) | المساعدة في منع التطبيقات الضارة أو المشبوهة (بما في ذلك البرامج الضارة لتشفير الملفات من برامج الفدية الضارة) من إجراء تغييرات على الملفات في مجلدات النظام الرئيسية (يتطلب برنامج الحماية من الفيروسات من Microsoft Defender) |
-| [حماية الشبكة](network-protection.md) | توسيع نطاق الحماية لنسبة استخدام الشبكة والاتصال على أجهزة مؤسستك. (يتطلب برنامج الحماية من الفيروسات من Microsoft Defender) |
+| [الوصول إلى المجلدات الخاضعة للتحكم](controlled-folders.md) | المساعدة في منع التطبيقات الضارة أو المشبوهة (بما في ذلك البرامج الضارة لتشفير الملفات من برامج الفدية الضارة) من إجراء تغييرات على الملفات في مجلدات النظام الرئيسية (يتطلب برنامج الحماية من الفيروسات من Microsoft Defender). |
+| [حماية الشبكة](network-protection.md) | توسيع نطاق الحماية لنسبة استخدام الشبكة والاتصال على أجهزة مؤسستك. (يتطلب برنامج الحماية من الفيروسات من Microsoft Defender). |
 | [الحماية من استغلال](exploit-protection.md) | المساعدة في حماية أنظمة التشغيل والتطبيقات التي تستخدمها مؤسستك من الاستغلال. تعمل الحماية من الاستغلال أيضا مع حلول مكافحة الفيروسات من الجهات الخارجية. |
 | [عنصر تحكم الجهاز](device-control-report.md) | يحمي من فقدان البيانات من خلال مراقبة الوسائط المستخدمة على الأجهزة والتحكم فيها، مثل التخزين القابل للإزالة ومحركات أقراص USB، في مؤسستك. |
-| [دليل نشر قواعد الحد من سطح الهجوم (ASR)](attack-surface-reduction-rules-deployment.md) | تقديم معلومات النظرة العامة والمتطلبات الأساسية لنشر قواعد تقليل الأجزاء المعرضة للهجوم |
-| [تخطيط نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-plan.md) | سرد الخطوات الموصى بها لنشر قواعد تقليل الأجزاء المعرضة للهجوم |
-| [قواعد اختبار تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md) | يوفر خطوات لاستخدام وضع التدقيق لاختبار قواعد تقليل الأجزاء المعرضة للهجوم. |
-| [تمكين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-implement.md) | إظهار خطوات نقل قواعد تقليل الأجزاء المعرضة للهجوم من وضع الاختبار (التدقيق) إلى الوضع النشط والممكن (حظر) |
+| [دليل نشر قواعد الحد من سطح الهجوم (ASR)](attack-surface-reduction-rules-deployment.md) | يقدم معلومات النظرة العامة والمتطلبات الأساسية لنشر قواعد تقليل الأجزاء المعرضة للهجوم. |
+| [تخطيط نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-plan.md) | يسرد الخطوات الموصى بها لتوزيع قواعد تقليل الأجزاء المعرضة للهجوم. |
+| [اختبار قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md) | يوفر خطوات لاستخدام وضع التدقيق لاختبار قواعد تقليل الأجزاء المعرضة للهجوم. |
+| [تمكين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-implement.md) | يعرض خطوات نقل قواعد تقليل الأجزاء المعرضة للهجوم من وضع الاختبار (التدقيق) إلى الوضع النشط والممكن (حظر). |
 | [تشغيل قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-operationalize.md) | يوفر معلومات حول أنشطة المراجعة والصيانة اليومية. |
-| [مرجع قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-reference.md) | يوفر تفاصيل حول كل قاعدة تقليل الأجزاء المعرضة للهجوم. |
+| [مرجع قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-reference.md) | يوفر تفاصيل حول كل قاعدة تقليل الأجزاء المعرضة للهجوم. |
 | [قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction.md) | تقليل الثغرات الأمنية (أسطح الهجوم) في تطبيقاتك باستخدام قواعد ذكية تساعد على إيقاف البرامج الضارة. (يتطلب برنامج الحماية من الفيروسات من Microsoft Defender). |

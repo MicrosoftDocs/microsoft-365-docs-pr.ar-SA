@@ -1,7 +1,7 @@
 ---
-title: جدولة عمليات مسح الفيروسات باستخدام PowerShell
-description: جدولة عمليات مسح الفيروسات باستخدام PowerShell
-keywords: فحص سريع، فحص كامل، برنامج الحماية من الفيروسات، جدول، PowerShell
+title: جدولة عمليات فحص مكافحة الفيروسات باستخدام PowerShell
+description: جدولة عمليات فحص مكافحة الفيروسات باستخدام PowerShell
+keywords: المسح الضوئي السريع، الفحص الكامل، مكافحة الفيروسات، الجدول الزمني، PowerShell
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,24 +16,28 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e1cbdd156306d7cc2ee41fd85baadb1fa51cf1ac
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8961428acee5d166b0cdad4982aa5f9ed48020af
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63578263"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788821"
 ---
-# <a name="schedule-antivirus-scans-using-powershell"></a>جدولة عمليات مسح الفيروسات باستخدام PowerShell
+# <a name="schedule-antivirus-scans-using-powershell"></a>جدولة عمليات فحص مكافحة الفيروسات باستخدام PowerShell
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- برنامج الحماية من الفيروسات من Microsoft Defender
 
-تصف هذه المقالة كيفية تكوين عمليات الفحص المجدولة باستخدام Cmdlets في PowerShell. لمعرفة المزيد حول عمليات الفحص المجدولة وأنواع الفحص، راجع تكوين عمليات المسح السريع أو [برنامج الحماية من الفيروسات من Microsoft Defender الكامل المجدولة](schedule-antivirus-scans.md). 
+**منصات**
+- بالنسبة لنظام التشغيل
+
+تصف هذه المقالة كيفية تكوين عمليات الفحص المجدولة باستخدام PowerShell cmdlets. لمعرفة المزيد حول جدولة عمليات الفحص وأنواع الفحص، راجع [تكوين عمليات الفحص السريعة أو الكاملة المجدولة برنامج الحماية من الفيروسات من Microsoft Defender](schedule-antivirus-scans.md). 
 
 ## <a name="use-powershell-cmdlets-to-schedule-scans"></a>استخدام PowerShell cmdlets لجدولة عمليات الفحص
 
-استخدم cmdlets التالية:
+استخدم أوامر cmdlet التالية:
 
 ```PowerShell
 Set-MpPreference -ScanParameters
@@ -43,38 +47,48 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 
 ```
 
-لمزيد من المعلومات، راجع [استخدام PowerShell cmdlets لتكوين برنامج الحماية من الفيروسات من Microsoft Defender cmdlets في PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) وتشغيلها للحصول على مزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender.[](/powershell/module/defender/)
+لمزيد من المعلومات، راجع [استخدام أوامر Cmdlets PowerShell لتكوين وتشغيل أوامر](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlets برنامج الحماية من الفيروسات من Microsoft Defender و Defender Antivirus](/powershell/module/defender/) لمزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender.
 
-## <a name="powershell-cmdlets-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>PowerShell cmdlets لجدولة عمليات الفحص عند عدم استخدام نقطة نهاية
+## <a name="powershell-cmdlets-for-scheduling-scans-when-an-endpoint-is-not-in-use"></a>PowerShell cmdlets لجدولة عمليات الفحص عندما لا تكون نقطة النهاية قيد الاستخدام
 
-استخدم cmdlets التالية:
+استخدم أوامر cmdlet التالية:
 
 ```PowerShell
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-لمزيد من المعلومات، راجع [استخدام Cmdlets في PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) لتكوين برنامج الحماية من الفيروسات من Microsoft Defender [cmdlets و Defender Antivirus وتشغيلها](/powershell/module/defender/).
+لمزيد من المعلومات، راجع [استخدام أوامر Cmdlets PowerShell لتكوين وتشغيل برنامج الحماية من الفيروسات من Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) [وSmdlets لبرنامج الحماية من الفيروسات من Defender](/powershell/module/defender/).
 
 > [!NOTE]
-> عند جدولة عمليات الفحص لأزمنة لا تكون فيها نقاط النهاية في وضع الاستخدام، فإن عمليات الفحص لا تشرف تكوين "وحدة المعالجة المركزية(CPU) وستستفيد بشكل كامل من الموارد المتوفرة لإكمال عملية الفحص بأسرع وقت ممكن.
+> عند جدولة عمليات الفحص لأوقات عدم استخدام نقاط النهاية، لا تحترم عمليات الفحص تكوين تقييد وحدة المعالجة المركزية وستستفيد استفادة كاملة من الموارد المتاحة لإكمال الفحص في أسرع وقت ممكن.
 
 ## <a name="powershell-cmdlets-for-scheduling-scans-to-complete-remediation"></a>PowerShell cmdlets لجدولة عمليات الفحص لإكمال المعالجة
 
-استخدم cmdlets التالية:
+استخدم أوامر cmdlet التالية:
 
 ```PowerShell
 Set-MpPreference -RemediationScheduleDay
 Set-MpPreference -RemediationScheduleTime
 ```
 
-راجع [استخدام Cmdlets في PowerShell](use-powershell-cmdlets-microsoft-defender-antivirus.md) لتكوين الأمرين [cmdlets](/powershell/module/defender/) برنامج الحماية من الفيروسات من Microsoft Defender و Defender Antivirus وتشغيلها للحصول على مزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender.
+راجع [استخدام أوامر Cmdlets PowerShell لتكوين وتشغيل أوامر](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlets لبرنامج الحماية من الفيروسات](/powershell/module/defender/) برنامج الحماية من الفيروسات من Microsoft Defender و Defender لمزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender.
 
 ## <a name="powershell-cmdlets-for-scheduling-daily-scans"></a>PowerShell cmdlets لجدولة عمليات الفحص اليومية
 
-استخدم cmdlets التالية:
+استخدم أوامر cmdlet التالية:
 
 ```PowerShell
 Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
-لمزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender، راجع استخدام [الأمرين cmdlets في PowerShell لتكوين](use-powershell-cmdlets-microsoft-defender-antivirus.md) برنامج الحماية من الفيروسات من Microsoft Defender [cmdlets و Defender Antivirus وتشغيلها](/powershell/module/defender/).
+لمزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender، راجع [استخدام PowerShell cmdlets لتكوين وتشغيل أوامر](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlets برنامج الحماية من الفيروسات من Microsoft Defender و Defender Antivirus](/powershell/module/defender/).
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)

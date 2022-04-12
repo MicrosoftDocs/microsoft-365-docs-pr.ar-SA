@@ -15,22 +15,25 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/07/2022
+ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 346f806129afc30ec5543c99bce3709af60cee73
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 48ab00c97559ecbbfe430b89c3742b8914c224ba
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64730629"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788469"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية
 
 **ينطبق على:**
 - [Microsoft Defender لنقطة النهاية الخطط 1 و2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
+
+**منصات**
+- بالنسبة لنظام التشغيل
 
 يعد تحديث برنامج الحماية من الفيروسات من Microsoft Defender أمرا بالغ الأهمية لضمان حصول أجهزتك على أحدث التقنيات والميزات اللازمة للحماية من البرامج الضارة الجديدة وتقنيات الهجوم. تأكد من تحديث الحماية من الفيروسات، حتى إذا كانت برنامج الحماية من الفيروسات من Microsoft Defender قيد التشغيل في [الوضع السلبي](microsoft-defender-antivirus-compatibility.md). هناك نوعان من التحديثات المتعلقة بالحفاظ على تحديث برنامج الحماية من الفيروسات من Microsoft Defender:
 
@@ -88,7 +91,7 @@ ms.locfileid: "64730629"
 <summary>مارس-2022 (النظام الأساسي: 4.18.2203.5 | المحرك: 1.1.19100.5)</summary>
 
 &ensp;إصدار تحديث معلومات الأمان: **1.361.1449.0**<br/>
-&ensp;تم الإصدار بتاريخ: **7 مارس 2022**<br/>
+&ensp;تم الإصدار بتاريخ: **7 أبريل 2022**<br/>
 &ensp;النظام الأساسي: **4.18.2203.5**<br/>
 &ensp;المحرك: **1.1.19100.5**<br/>
 &ensp;مرحلة الدعم: **تحديثات الأمان والتحديثات الهامة**<br/>
@@ -987,3 +990,13 @@ ms.locfileid: "64730629"
 |[إدارة التحديثات التلقائية المستندة إلى الحدث](manage-event-based-updates-microsoft-defender-antivirus.md) | يمكنك تعيين تحديثات الحماية ليتم تنزيلها عند بدء التشغيل أو بعد أحداث حماية معينة تم تسليمها بواسطة السحابة. |
 |[إدارة التحديثات للأجهزة المحمولة والأجهزة الظاهرية (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| يمكنك تحديد إعدادات، مثل ما إذا كان يجب أن تحدث تحديثات على طاقة البطارية، والتي تكون مفيدة بشكل خاص للأجهزة المحمولة والأجهزة الظاهرية. |
 | [تحديث Microsoft Defender لنقطة النهاية لأداة استشعار الكشف التلقائي والاستجابة على النقط النهائية](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | يمكنك تحديث أداة استشعار الكشف التلقائي والاستجابة على النقط النهائية (MsSense.exe) المضمنة في حزمة الحلول الموحدة Microsoft Defender لنقطة النهاية الجديدة التي تم إصدارها في عام 2021.   |
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)

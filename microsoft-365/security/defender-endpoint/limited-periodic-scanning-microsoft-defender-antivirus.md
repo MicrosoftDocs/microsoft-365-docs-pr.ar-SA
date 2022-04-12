@@ -1,7 +1,7 @@
 ---
-title: تمكين ميزة المسح برنامج الحماية من الفيروسات من Microsoft Defender الدورية المحدودة
-description: يسمح لك الفحص الدوري المحدود باستخدام برنامج الحماية من الفيروسات من Microsoft Defender بالإضافة إلى موفري AV المثبتة الآخرين
-keywords: lps، محدود، دوري، مسح ضوئي، مسح ضوئي، توافق، طرف ثالث، آخر av، تعطيل
+title: تمكين ميزة فحص برنامج الحماية من الفيروسات من Microsoft Defender الدوري المحدود
+description: يتيح لك الفحص الدوري المحدود استخدام برنامج الحماية من الفيروسات من Microsoft Defender بالإضافة إلى موفري AV المثبتين الآخرين
+keywords: lps, limited, periodic, scan, scaning, compatibility, 3rd party, other av, disable
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1ba846402bb2ee447ee5f38ff035c119bdc28fc1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5201366ee003efab1edd5a0a536c45db4ec7aabc
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467676"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64788887"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>استخدام الفحص الدوري المحدود في برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -29,30 +29,44 @@ ms.locfileid: "64467676"
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- برنامج الحماية من الفيروسات من Microsoft Defender
 
-الفحص الدوري المحدود هو نوع خاص من الكشف عن المخاطر والوساطة التي يمكن تمكينها عند تثبيت منتج آخر من برامج الحماية من الفيروسات على جهاز Windows 10 أو Windows 11 آخر.
+**منصات**
+- بالنسبة لنظام التشغيل
 
-يمكن تمكينه فقط في بعض الحالات. لمزيد من المعلومات حول الفحص الدوري المحدود وكيفية عمل برنامج الحماية من الفيروسات من Microsoft Defender مع منتجات الحماية من الفيروسات الأخرى، راجع برنامج الحماية من الفيروسات من Microsoft Defender [التوافق](microsoft-defender-antivirus-compatibility.md).
+الفحص الدوري المحدود هو نوع خاص من الكشف عن التهديدات والمعالجة التي يمكن تمكينها عند تثبيت منتج آخر من مكافحة الفيروسات على جهاز Windows 10 أو Windows 11.
 
-**لا توصي Microsoft باستخدام هذه الميزة في بيئات المؤسسات. هذه ميزة مخصصة بشكل أساسي للمستهلكين.** تستخدم هذه الميزة مجموعة فرعية محدودة من قدرات برنامج الحماية من الفيروسات من Microsoft Defender للكشف عن البرامج الضارة، ولن تتمكن من الكشف عن معظم البرامج الضارة والبرامج التي يحتمل أن تكون غير مرغوب فيها. كما ستكون قدرات الإدارة وإعداد التقارير محدودة. توصي Microsoft المؤسسات باختيار حل الحماية من الفيروسات الأساسي واستخدامه حصريا.
+ولا يمكن تمكينه إلا في حالات معينة. لمزيد من المعلومات حول الفحص الدوري المحدود وكيفية عمل برنامج الحماية من الفيروسات من Microsoft Defender مع منتجات مكافحة الفيروسات الأخرى، راجع [توافق برنامج الحماية من الفيروسات من Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
+
+**لا توصي Microsoft باستخدام هذه الميزة في بيئات المؤسسة. هذه ميزة مخصصة بشكل أساسي للمستهلكين.** تستخدم هذه الميزة فقط مجموعة فرعية محدودة من قدرات برنامج الحماية من الفيروسات من Microsoft Defender للكشف عن البرامج الضارة، ولن تكون قادرة على الكشف عن معظم البرامج الضارة والبرامج التي يحتمل أن تكون غير مرغوب فيها. كما ستكون قدرات الإدارة وإعداد التقارير محدودة. توصي Microsoft المؤسسات باختيار حل الحماية من الفيروسات الأساسي واستخدامه حصريا.
 
 ## <a name="how-to-enable-limited-periodic-scanning"></a>كيفية تمكين الفحص الدوري المحدود
 
-بشكل افتراضي، برنامج الحماية من الفيروسات من Microsoft Defender البرنامج نفسه على جهاز Windows 10 أو جهاز Windows 11 إذا لم يكن هناك منتج آخر من برنامج الحماية من الفيروسات مثبتا، أو إذا كان المنتج الآخر غير منتهي الصلاحية أو منتهيا الصلاحية أو لا يعمل بشكل صحيح.
+بشكل افتراضي، سيمكن برنامج الحماية من الفيروسات من Microsoft Defender نفسه على جهاز Windows 10 أو جهاز Windows 11 إذا لم يكن هناك منتج آخر لمكافحة الفيروسات مثبت، أو إذا كان المنتج الآخر قديما أو منتهيا الصلاحية أو لا يعمل بشكل صحيح.
 
-إذا برنامج الحماية من الفيروسات من Microsoft Defender، ستظهر الخيارات العادية لتكوينه على هذا الجهاز:
+إذا تم تمكين برنامج الحماية من الفيروسات من Microsoft Defender، فستظهر الخيارات المعتادة لتكوينه على هذا الجهاز:
 
-:::image type="content" source="images/vtp-wdav.png" alt-text="يعرض أمن Windows خيارات Microsoft Defender AV، بما في ذلك خيارات الفحص والإعدادات وخيارات التحديث" lightbox="images/vtp-wdav.png":::
+:::image type="content" source="images/vtp-wdav.png" alt-text="يعرض تطبيق أمن Windows خيارات Microsoft Defender AV، بما في ذلك خيارات الفحص والإعدادات وخيارات التحديث" lightbox="images/vtp-wdav.png":::
 
-إذا تم تثبيت منتج آخر من برامج الحماية من الفيروسات ويعمل بشكل صحيح، برنامج الحماية من الفيروسات من Microsoft Defender تعطيل نفسه. سيغير أمن Windows التطبيق قسم الحماية من المخاطر &  الفيروسات لإظهار حالة المنتج AV وتوفير ارتباط لخيارات تكوين المنتج.
+إذا تم تثبيت منتج آخر من برامج الحماية من الفيروسات ويعمل بشكل صحيح، فسيعطل برنامج الحماية من الفيروسات من Microsoft Defender نفسه. سيقوم تطبيق أمن Windows بتغيير قسم **الحماية من التهديدات & الفيروسات** لإظهار حالة منتج AV، وتوفير ارتباط إلى خيارات تكوين المنتج.
 
-أسفل أي من منتجات AV الخاصة بأي جهة خارجية، سيظهر ارتباط جديد ك **برنامج الحماية من الفيروسات من Microsoft Defender إضافية**. سيتم توسيع النقر فوق هذا الارتباط لإظهار زر تبديل الذي يمكن الفحص الدوري المحدود. لاحظ أن الخيار الدوري المحدود هو تبديل لتمكين الفحص الدوري أو تعطيله. 
+أسفل أي منتجات AV لجهة خارجية، سيظهر ارتباط جديد **كخيارات برنامج الحماية من الفيروسات من Microsoft Defender**. سيؤدي النقر فوق هذا الارتباط إلى توسيع لإظهار التبديل الذي يمكن الفحص الدوري المحدود. لاحظ أن الخيار الدوري المحدود هو تبديل لتمكين المسح الدوري أو تعطيله. 
 
-يؤدي تمرير المفتاح إلى **تشغيل** إلى إظهار خيارات MICROSOFT Defender AV القياسية أسفل منتج AV الخاص ب جهة خارجية. سيظهر خيار الفحص الدوري المحدود في أسفل الصفحة.
+سيؤدي تمرير مفتاح التبديل إلى **"تشغيل** " إلى إظهار خيارات Microsoft Defender AV القياسية أسفل منتج AV الخاص بالجهة الخارجية. سيظهر خيار الفحص الدوري المحدود في أسفل الصفحة.
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 
 - [تكوين الحماية السلوكية، والحماية التحليلية، والحماية في الوقت الحقيقي](configure-protection-features-microsoft-defender-antivirus.md)
 - [برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)

@@ -1,7 +1,7 @@
 ---
 title: تقييم برنامج الحماية من الفيروسات من Microsoft Defender
-description: يمكن للشركات من جميع الأحجام استخدام هذا الدليل لتقييم واختبار الحماية التي يوفرها برنامج الحماية من الفيروسات من Microsoft Defender في Windows.
-keywords: برنامج الحماية من الفيروسات من Microsoft Defender، حماية السحابة، السحابة، الحماية من البرامج الضارة، الأمان، الحماية، الحماية، التقييم، الاختبار، الحماية، المقارنة، الحماية في الوقت الحقيقي
+description: يمكن للشركات من جميع الأحجام استخدام هذا الدليل لتقييم واختبار الحماية التي تقدمها برنامج الحماية من الفيروسات من Microsoft Defender في Windows.
+keywords: برنامج الحماية من الفيروسات من Microsoft Defender، حماية السحابة، السحابة، الحماية من البرامج الضارة، الأمان، Defender، التقييم، الاختبار، الحماية، المقارنة، الحماية في الوقت الحقيقي
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4dd25a599f144a60bfd2ebeb3e9bb8b1876bd3c6
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 8c7ced9c85ec7c6075b44970d25e34ba5594404e
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63575476"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64787589"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>تقييم برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -28,37 +28,52 @@ ms.locfileid: "63575476"
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-استخدم هذا الدليل لتحديد مدى برنامج الحماية من الفيروسات من Microsoft Defender تحميك من الفيروسات والبرامج الضارة والتطبيقات التي يحتمل أن تكون غير مرغوب فيها.
+- برنامج الحماية من الفيروسات من Microsoft Defender
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+**منصات**
+- بالنسبة لنظام التشغيل
+
+استخدم هذا الدليل لتحديد مدى حماية برنامج الحماية من الفيروسات من Microsoft Defender لك من الفيروسات والبرامج الضارة والتطبيقات التي يحتمل أن تكون غير مرغوب فيها.
 
 > [!TIP]
->يمكنك أيضا زيارة موقع العرض التوضيحي ل Microsoft Defender for Endpoint على [](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) demo.wd.microsoft.com للتأكد من أن الميزات التالية تعمل وترى كيفية عملها:
+>يمكنك أيضا زيارة موقع العرض التوضيحي Microsoft Defender لنقطة النهاية في [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) لتأكيد عمل الميزات التالية ومعرفة كيفية عملها:
 >
-> - الحماية التي يتم تسليمها من السحابة
+> - الحماية المقدمة من السحابة
 > - التعلم السريع (بما في ذلك الحظر من النظرة الأولى)
 > - حظر التطبيقات غير المرغوب فيها
 
 > [!NOTE]
-> تم إهمال موقع عرض Defender for Endpoint demo.wd.microsoft.com، وستزال في المستقبل.
+> تم إهمال الموقع التجريبي ل Defender لنقطة النهاية في demo.wd.microsoft.com وستتم إزالته في المستقبل.
 
-كما تشرح ميزات حماية الجيل التالي برنامج الحماية من الفيروسات من Microsoft Defender المتوفرة لكل من المؤسسات الصغيرة والكبيرة، وكيفية زيادة الكشف عن البرامج الضارة وحمايتها عبر شبكتك.
+وهو يشرح ميزات الحماية من الجيل التالي المهمة برنامج الحماية من الفيروسات من Microsoft Defender المتاحة لكل من الشركات الصغيرة والكبيرة، وكيف تزيد من الكشف عن البرامج الضارة وحمايتها عبر شبكتك.
 
-يمكنك اختيار تكوين كل إعداد وتقييمه بشكل مستقل، أو الكل في وقت واحد. لقد قمنا بتضمين إعدادات مماثلة استنادا إلى سيناريوهات التقييم النموذجية، ونتضمن إرشادات لاستخدام PowerShell لتمكين الإعدادات.
+يمكنك اختيار تكوين وتقييم كل إعداد بشكل مستقل، أو كل ذلك في وقت واحد. لقد قمنا بتجميع إعدادات مماثلة استنادا إلى سيناريوهات التقييم النموذجية، وقمنا بتضمين إرشادات لاستخدام PowerShell لتمكين الإعدادات.
 
 يتوفر الدليل بتنسيق PDF للعرض دون اتصال:
 
 - [تنزيل الدليل بتنسيق PDF](https://www.microsoft.com/download/details.aspx?id=54795)
 
-يمكنك أيضا تنزيل PowerShell لتمكين كل الإعدادات الموضحة في الدليل تلقائيا. يمكنك الحصول على البرنامج النصي إلى جانب تنزيل PDF أعلاه، أو بشكل فردي من معرض PowerShell:
+يمكنك أيضا تنزيل PowerShell الذي سيمكن جميع الإعدادات الموضحة في الدليل تلقائيا. يمكنك الحصول على البرنامج النصي إلى جانب تنزيل PDF أعلاه، أو بشكل فردي من معرض PowerShell:
 
 - [تنزيل البرنامج النصي PowerShell لتكوين الإعدادات تلقائيا](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings)
 
 > [!IMPORTANT]
-> الدليل مخصص حاليا لتقييم جهاز واحد برنامج الحماية من الفيروسات من Microsoft Defender. قد لا يكون تمكين كل الإعدادات في هذا الدليل مناسبا للنشر في العالم الحقيقي.
+> الدليل مخصص حاليا لتقييم برنامج الحماية من الفيروسات من Microsoft Defender أحادية الجهاز. قد لا يكون تمكين جميع الإعدادات في هذا الدليل مناسبا للتوزيع في العالم الحقيقي.
 >
-> للحصول على أحدث التوصيات لنشر ومراقبة العالم الحقيقي برنامج الحماية من الفيروسات من Microsoft Defender عبر الشبكة، راجع [نشر](deploy-manage-report-microsoft-defender-antivirus.md) برنامج الحماية من الفيروسات من Microsoft Defender.
+> للحصول على أحدث التوصيات لنشر ومراقبة برنامج الحماية من الفيروسات من Microsoft Defender في العالم الحقيقي عبر شبكة، راجع [Deploy برنامج الحماية من الفيروسات من Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md).
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

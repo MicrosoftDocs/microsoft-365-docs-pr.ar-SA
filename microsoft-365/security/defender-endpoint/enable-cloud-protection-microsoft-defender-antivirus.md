@@ -1,7 +1,7 @@
 ---
-title: تشغيل الحماية السحابية في برنامج الحماية من الفيروسات من Microsoft Defender
-description: قم تشغيل الحماية السحابية للاستفادة من ميزات الحماية السريعة والمتقدمة.
-keywords: برنامج الحماية من الفيروسات من Microsoft Defender، مكافحة البرامج الضارة، الأمان، السحابة، الحظر من النظرة الأولى
+title: تشغيل حماية السحابة في برنامج الحماية من الفيروسات من Microsoft Defender
+description: تشغيل حماية السحابة للاستفادة من ميزات الحماية السريعة والمتقدمة.
+keywords: برنامج الحماية من الفيروسات من Microsoft Defender، ومكافحة البرامج الضارة، والأمان، والسحابة، والحظر من النظرة الأولى
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,150 +15,163 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 78f992e20ee0c0c2505777295ca3ba34a5c4ea66
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 95269837e4ad26b4928a2ff82df65a259c707290
+ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470626"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64790647"
 ---
-# <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>تشغيل الحماية السحابية في برنامج الحماية من الفيروسات من Microsoft Defender
+# <a name="turn-on-cloud-protection-in-microsoft-defender-antivirus"></a>تشغيل حماية السحابة في برنامج الحماية من الفيروسات من Microsoft Defender
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-[توفر الحماية السحابية برنامج الحماية من الفيروسات من Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) حماية دقيقة وفي الوقت الحقيقي وذكية. يجب تمكين الحماية السحابية بشكل افتراضي؛ ومع ذلك، يمكنك تكوين الحماية السحابية لتتناسب مع احتياجات مؤسستك.
+**منصات**
+- بالنسبة لنظام التشغيل
 
-## <a name="methods-to-configure-cloud-protection"></a>أساليب لتكوين الحماية السحابية
+توفر [حماية السحابة في برنامج الحماية من الفيروسات من Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md) حماية دقيقة وفي الوقت الحقيقي وذكية. يجب تمكين حماية السحابة بشكل افتراضي؛ ومع ذلك، يمكنك تكوين حماية السحابة لتناسب احتياجات مؤسستك.
 
-يمكنك تشغيل برنامج الحماية من الفيروسات من Microsoft Defender السحابة أو إيقاف تشغيلها باستخدام إحدى الطرق العديدة:
+## <a name="methods-to-configure-cloud-protection"></a>أساليب تكوين حماية السحابة
 
-- إدارة نقاط النهاية من Microsoft، الذي يتضمن Microsoft Intune Configuration Manager
+يمكنك تشغيل حماية السحابة برنامج الحماية من الفيروسات من Microsoft Defender أو إيقاف تشغيلها باستخدام إحدى الطرق المتعددة:
+
+- إدارة نقاط النهاية من Microsoft، الذي يتضمن Microsoft Intune و Configuration Manager
 - نهج المجموعة
 - PowerShell cmdlets
 
-يمكنك أيضا تشغيل الحماية السحابية أو إيقاف تشغيلها على نقاط النهاية الفردية باستخدام أمن Windows التطبيق. 
+يمكنك أيضا تشغيل حماية السحابة أو إيقاف تشغيلها على نقاط النهاية الفردية باستخدام تطبيق أمن Windows. 
 
-لمزيد من المعلومات حول متطلبات اتصال الشبكة المحددة لضمان إمكانية اتصال نقاط النهاية الخاصة بك لخدمة الحماية السحابية، راجع تكوين اتصالات [الشبكة والتحقق من صحتها](configure-network-connections-microsoft-defender-antivirus.md).
+لمزيد من المعلومات حول متطلبات اتصال الشبكة المحددة لضمان إمكانية اتصال نقاط النهاية بخدمة حماية السحابة، راجع [تكوين اتصالات الشبكة والتحقق من صحتها](configure-network-connections-microsoft-defender-antivirus.md).
 
 > [!NOTE]
-> في Windows 10 Windows 11، لا فرق بين خيارات إعداد التقارير الأساسية وخيارات التقارير المتقدمة الموضحة في  هذه المقالة. هذا هو التمييز القديم، وسينتج عن اختيار أي من الإعدادين مستوى الحماية السحابي نفسه. لا يوجد اختلاف في نوع المعلومات التي تمت مشاركتها أو مقدارها. لمزيد من المعلومات حول ما نجمعه، راجع بيان [خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=521839).
+> في Windows 10 Windows 11، لا يوجد فرق بين خيارات إعداد التقارير **الأساسية** **والمتقدمة** الموضحة في هذه المقالة. هذا تمييز قديم واختيار أي من الإعدادين سيؤدي إلى نفس مستوى الحماية السحابية. لا يوجد فرق في نوع المعلومات التي تتم مشاركتها أو مقدارها. لمزيد من المعلومات حول ما نجمعه، راجع [بيان خصوصية Microsoft](https://go.microsoft.com/fwlink/?linkid=521839).
 
-## <a name="use-intune-to-turn-on-cloud-protection"></a>استخدام Intune ل تشغيل الحماية السحابية
+## <a name="use-intune-to-turn-on-cloud-protection"></a>استخدام Intune لتشغيل حماية السحابة
 
-1. انتقل إلى إدارة نقاط النهاية من Microsoft إدارة ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) ثم سجل الدخول.
+1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) وسجل الدخول.
 
-2. في الجزء **الصفحة** الرئيسية، حدد **تكوين الجهاز > ملفات التعريف**.
+2. في الجزء **"الشريط الرئيسي** "، حدد **تكوين الجهاز > ملفات التعريف**.
 
-3. حدد نوع **ملف تعريف قيود** الجهاز الذي تريد تكوينه. إذا كنت بحاجة إلى إنشاء **نوع ملف تعريف** جديد لقيود الجهاز، فشاهد تكوين إعدادات تقييد الجهاز [في](/intune/device-restrictions-configure) Microsoft Intune.
+3. حدد نوع ملف تعريف **قيود الجهاز** الذي تريد تكوينه. إذا كنت بحاجة إلى إنشاء نوع ملف تعريف جديد **لقيود الجهاز**، فراجع [تكوين إعدادات تقييد الجهاز في Microsoft Intune](/intune/device-restrictions-configure).
 
-4. حدد **إعدادات** \> **تكوين الخصائص: تحرير برنامج الحماية من الفيروسات من Microsoft Defender**\>.
+4. حدد **إعدادات تكوين الخصائص**  \>: تحرير \> **برنامج الحماية من الفيروسات من Microsoft Defender**.
 
-5. على مفتاح **تبديل الحماية التي تم تسليمها في** السحابة، حدد **تمكين**.
+5. في مفتاح الحماية المقدم من **السحابة** ، حدد **«Enable»**.
 
-6. في **المنسدلة مطالبة المستخدمين قبل إرسال** العينة، حدد **إرسال كل البيانات تلقائيا**.
+6. في **"مطالبة المستخدمين" قبل نموذج الإرسال** المنسدلة، حدد **"إرسال كافة البيانات تلقائيا**".
 
-لمزيد من المعلومات حول ملفات تعريف أجهزة Intune، بما في ذلك كيفية إنشاء إعداداتها وتكوينها، راجع ما هي Microsoft Intune [ملفات تعريف الأجهزة؟](/intune/device-profiles)
+لمزيد من المعلومات حول ملفات تعريف أجهزة Intune، بما في ذلك كيفية إنشاء إعداداتها وتكوينها، راجع [ما هي ملفات تعريف الأجهزة Microsoft Intune؟](/intune/device-profiles)
 
-## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-protection"></a>استخدام إدارة نقاط النهاية من Microsoft تشغيل الحماية السحابية
+## <a name="use-microsoft-endpoint-manager-to-turn-on-cloud-protection"></a>استخدام إدارة نقاط النهاية من Microsoft لتشغيل حماية السحابة
 
-1. انتقل إلى إدارة نقاط النهاية من Microsoft إدارة ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) ثم سجل الدخول.
+1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) وسجل الدخول.
 
-2. اختر **الحماية من الفيروسات لنقطة** \> **النهاية**.
+2. اختر برنامج **الحماية من الفيروسات** **لأمان** \> نقطة النهاية.
 
-3. حدد ملف تعريف برنامج الحماية من الفيروسات. (إذا لم يكن لديك ملف تعريف بعد، أو إذا كنت تريد إنشاء ملف تعريف جديد، فشاهد تكوين إعدادات تقييد الجهاز [في](/intune/device-restrictions-configure) Microsoft Intune.
+3. حدد ملف تعريف برنامج الحماية من الفيروسات. (إذا لم يكن لديك ملف تعريف بعد، أو إذا كنت تريد إنشاء ملف تعريف جديد، فراجع [تكوين إعدادات تقييد الجهاز في Microsoft Intune](/intune/device-restrictions-configure).
 
-4. حدد **خصائص**. بعد ذلك، إلى بجانب **إعدادات التكوين،** اختر **تحرير**.
+4. تحديد **الخصائص**. بعد ذلك، إلى جانب **إعدادات التكوين**، اختر **"تحرير**".
 
-5. قم **بتوسيع الحماية السحابية**، ثم **في قائمة مستوى** الحماية التي تم تسليمها في السحابة، حدد أحد ما يلي:
-   - **عال**: تطبيق مستوى عال من الكشف.
-   - **مرتفع بالإضافة** إلى: يستخدم المستوى **العالي** ويطبق المزيد من تدابير الحماية (قد يؤثر على أداء العميل).
-   - **عدم التسامح** إطلاقا: حظر جميع القابلة للتنفيذ غير المعروفة.
+5. قم بتوسيع **حماية السحابة**، ثم في قائمة **مستوى الحماية المقدمة من السحابة** ، حدد أحد الإجراءات التالية:
+   - **عال**: يطبق مستوى قويا من الكشف.
+   - **علامة الجمع العالية**: يستخدم المستوى **العالي** ويطبق المزيد من مقاييس الحماية (قد يؤثر على أداء العميل).
+   - **عدم التسامح:** يحظر كافة الملفات التنفيذية غير المعروفة.
 
-6. حدد **مراجعة + حفظ**، ثم اختر **حفظ**.
+6. حدد **Review + save**، ثم اختر **"حفظ**".
 
-لمزيد من المعلومات حول Microsoft Endpoint Configuration Manager، راجع كيفية إنشاء سياسات الحماية من البرامج الضارة [ونشرها: خدمة الحماية من السحابة](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service).
+لمزيد من المعلومات حول تكوين Microsoft Endpoint Configuration Manager، راجع [كيفية إنشاء نهج مكافحة البرامج الضارة ونشرها: خدمة حماية السحابة](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service).
 
-## <a name="use-group-policy-to-turn-on-cloud-protection"></a>استخدام نهج المجموعة تشغيل الحماية السحابية
+## <a name="use-group-policy-to-turn-on-cloud-protection"></a>استخدام نهج المجموعة لتشغيل حماية السحابة
 
-1. على جهاز نهج المجموعة، افتح وحدة التحكم نهج المجموعة [الإدارة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))، وانقر ب الماوس الأيمن فوق نهج المجموعة الذي تريد تكوينه وحدد **تحرير**.
+1. على جهاز إدارة نهج المجموعة، افتح [وحدة تحكم إدارة نهج المجموعة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))، وانقر بزر الماوس الأيمن فوق العنصر نهج المجموعة الذي تريد تكوينه وحدد **"تحرير**".
 
-2. في نهج المجموعة **إدارة،** انتقل إلى **تكوين الكمبيوتر**.
+2. في **محرر إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر**.
 
 3. حدد **القوالب الإدارية**.
 
-4. توسيع الشجرة Windows **مكوناتها** >  برنامج الحماية من الفيروسات من Microsoft Defender > **الخرائط**
+4. توسيع الشجرة إلى **مكونات** >  Windows **برنامج الحماية من الفيروسات من Microsoft Defender > MAPS**
 
     > [!NOTE]
-    > تكون إعدادات الخرائط مساوية للحماية التي يتم تسليمها من السحابة.
+    > إعدادات MAPS تساوي الحماية المقدمة من السحابة.
 
-5. انقر نقرا **مزدوجا فوق الانضمام إلى خرائط Microsoft**. تأكد من تشغيل الخيار ثم تعيينه إلى **الخرائط** الأساسية أو **الخرائط المتقدمة**. حدد **موافق**.
+5. انقر نقرا مزدوجا فوق **الانضمام إلى Microsoft MAPS**. تأكد من تشغيل الخيار وتعيينه إلى **"الخرائط الأساسية"** أو **"الخرائط المتقدمة**". حدد **موافق**.
 
-    يمكنك اختيار إرسال معلومات أساسية أو إضافية حول البرامج التي تم الكشف عنها:
+    يمكنك اختيار إرسال معلومات أساسية أو إضافية حول البرامج المكتشفة:
 
-    - الخرائط الأساسية: سترسل العضوية الأساسية معلومات أساسية إلى Microsoft حول البرامج الضارة والبرامج التي يحتمل أن تكون غير مرغوب فيها التي تم الكشف عنها على جهازك. تتضمن المعلومات من أين يأتي البرنامج (مثل عناوين URL والمسارات الجزئية)، والإجراءات التي تم اتخاذها لحل الخطر، وما إذا كانت الإجراءات قد نجحت أم لا.
+    - الخرائط الأساسية: سترسل العضوية الأساسية معلومات أساسية إلى Microsoft حول البرامج الضارة والبرامج غير المرغوب فيها التي تم اكتشافها على جهازك. تتضمن المعلومات المكان الذي جاء منه البرنامج (مثل عناوين URL والمسارات الجزئية)، والإجراءات التي تم اتخاذها لحل التهديد، وما إذا كانت الإجراءات ناجحة.
 
-    - الخرائط المتقدمة: بالإضافة إلى المعلومات الأساسية، سترسل العضوية المتقدمة معلومات مفصلة حول البرامج الضارة والبرامج التي يحتمل أن تكون غير مرغوب فيها، بما في ذلك المسار الكامل إلى البرنامج ومعلومات مفصلة حول كيفية تأثر البرنامج بجهازك.
+    - الخرائط المتقدمة: بالإضافة إلى المعلومات الأساسية، سترسل العضوية المتقدمة معلومات مفصلة حول البرامج الضارة والبرامج التي يحتمل أن تكون غير مرغوب فيها، بما في ذلك المسار الكامل للبرنامج، ومعلومات مفصلة حول كيفية تأثير البرنامج على جهازك.
 
-6. انقر نقرا **مزدوجا فوق إرسال نماذج الملفات عندما يكون إجراء المزيد من التحليل مطلوبا**. تأكد من تعيين الخيار الأول إلى **تمكين** ومن تعيين الخيارات الأخرى على أي من الخيارين:
+6. انقر نقرا مزدوجا فوق **إرسال نماذج الملفات عند الحاجة إلى مزيد من التحليل**. تأكد من تعيين الخيار الأول إلى **"ممكن"** ومن تعيين الخيارات الأخرى إلى أي مما يلي:
 
    - **إرسال عينات آمنة** (1)
-   - **إرسال كل العينات** (3)
+   - **إرسال كافة العينات** (3)
 
    >[!NOTE]
-   > يعني **الخيار إرسال عينات آمنة** (1) أنه سيتم إرسال معظم العينات تلقائيا. وستبقى الملفات التي من المرجح أن تحتوي على معلومات شخصية مطالبة وستتطلب تأكيدا إضافيا.
-   > سيخفض تعيين الخيار **المطالبة** دوما (0) حالة حماية الجهاز. يعني تعيينه إلى **عدم إرسال** (2) أن ميزة الحظر [](configure-block-at-first-sight-microsoft-defender-antivirus.md) عند النظرة الأولى Microsoft Defender لنقطة النهاية لن تعمل.
+   > يعني خيار **إرسال عينات آمنة** (1) أنه سيتم إرسال معظم العينات تلقائيا. ستظل الملفات التي من المحتمل أن تحتوي على معلومات شخصية مطالبة وتتطلب تأكيدا إضافيا.
+   > سيؤدي تعيين الخيار إلى **المطالبة الدائمة** (0) إلى خفض حالة حماية الجهاز. يعني تعيينه إلى **"عدم الإرسال أبدا**" (2) أن ميزة ["حظر عند النظرة الأولى](configure-block-at-first-sight-microsoft-defender-antivirus.md)" Microsoft Defender لنقطة النهاية لن تعمل.
 
 7. حدد **موافق**.
 
-## <a name="use-powershell-cmdlets-to-turn-on-cloud-protection"></a>استخدام PowerShell cmdlets ل تشغيل الحماية السحابية
+## <a name="use-powershell-cmdlets-to-turn-on-cloud-protection"></a>استخدام PowerShell cmdlets لتشغيل حماية السحابة
 
-يمكن ل cmdlets التالية تشغيل الحماية السحابية:
+يمكن ل cmdlets التالية تشغيل حماية السحابة:
 
 ```PowerShell
 Set-MpPreference -MAPSReporting Advanced
 Set-MpPreference -SubmitSamplesConsent SendAllSamples
 ```
 
-لمزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender، راجع استخدام [PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) لتكوين وتشغيل برنامج الحماية من الفيروسات من Microsoft Defender و [ برنامج الحماية من الفيروسات من Microsoft Defender cmdlets](/powershell/module/defender/). [نهج CSP - كما أن Defender](/windows/client-management/mdm/policy-csp-defender) لديه المزيد من المعلومات بشكل خاص على [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
+لمزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender، راجع [استخدام PowerShell cmdlets لتكوين وتشغيل برنامج الحماية من الفيروسات من Microsoft Defender و](use-powershell-cmdlets-microsoft-defender-antivirus.md) [ برنامج الحماية من الفيروسات من Microsoft Defender cmdlets](/powershell/module/defender/). [النهج CSP - كما أن Defender](/windows/client-management/mdm/policy-csp-defender) لديه المزيد من المعلومات على وجه التحديد على [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
 
 > [!IMPORTANT]
-> يمكنك تعيين **-SubmitSamplesConsent** إلى `SendSafeSamples` (الإعداد الافتراضي أو الموصى به) `NeverSend`أو أو `AlwaysPrompt`. يعني `SendSafeSamples` الإعداد أنه سيتم إرسال معظم العينات تلقائيا. ستنتج عن الملفات التي من المرجح أن تحتوي على معلومات شخصية مطالبة للمتابعة وستتطلب تأكيدا.
-> يخفض `NeverSend` `AlwaysPrompt` الإعدادان و مستوى حماية الجهاز. علاوة على ذلك، يعني `NeverSend` الإعداد أن ميزة [الحظر](configure-block-at-first-sight-microsoft-defender-antivirus.md) عند النظرة الأولى Microsoft Defender لنقطة النهاية لن تعمل.
+> يمكنك تعيين **-SubmitSamplesConsent** إلى `SendSafeSamples` (الإعداد الافتراضي أو الموصى به) `NeverSend`أو أو `AlwaysPrompt`. يعني `SendSafeSamples` الإعداد أنه سيتم إرسال معظم العينات تلقائيا. ستؤدي الملفات التي من المحتمل أن تحتوي على معلومات شخصية إلى مطالبة بالمتابعة وستتطلب تأكيدا.
+> `AlwaysPrompt` وتخفض `NeverSend` الإعدادات مستوى الحماية للجهاز. علاوة على ذلك، `NeverSend` يعني الإعداد أن ميزة ["حظر عند النظرة الأولى](configure-block-at-first-sight-microsoft-defender-antivirus.md)" Microsoft Defender لنقطة النهاية لن تعمل.
 
-## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-protection"></a>استخدام Windows إدارة البيانات (WMI) ل تشغيل الحماية السحابية
+## <a name="use-windows-management-instruction-wmi-to-turn-on-cloud-protection"></a>استخدام Windows Management Instruction (WMI) لتشغيل حماية السحابة
 
-استخدم [**الأسلوب Set** للفئة **MSFT_MpPreference**](/previous-versions/windows/desktop/defender/set-msft-mppreference) للخصائص التالية:
+استخدم [أسلوب **Set** للفئة **MSFT_MpPreference**](/previous-versions/windows/desktop/defender/set-msft-mppreference) للخصائص التالية:
 
 ```WMI
 MAPSReporting
 SubmitSamplesConsent
 ```
 
-لمزيد من المعلومات حول المعلمات المسموح بها، راجع Windows [واجهات برمجة التطبيقات ل Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+لمزيد من المعلومات حول المعلمات المسموح بها، راجع [واجهات برمجة التطبيقات Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>تشغيل الحماية السحابية على العملاء الفرديين باستخدام أمن Windows
+## <a name="turn-on-cloud-protection-on-individual-clients-with-the-windows-security-app"></a>تشغيل حماية السحابة على العملاء الفرديين باستخدام تطبيق أمن Windows
 
 > [!NOTE]
-> إذا تم تعيين تجاوز تكوين الإعداد المحلي للإبلاغ عن إعداد **microsoft MAPS** نهج المجموعة إلى معطل، سيكون إعداد الحماية المستند إلى السحابة في Windows الإعدادات  رمادي اللون وغير متوفر. يجب نشر التغييرات التي يتم إدخالها نهج المجموعة كائن على نقاط نهاية فردية قبل تحديث الإعداد في Windows الإعدادات.
+> إذا تم تعيين الإعداد **"تكوين الإعداد المحلي" للإبلاغ عن إعداد نهج المجموعة Microsoft MAPS** إلى **"معطل**"، فسيكون إعداد **الحماية المستند إلى السحابة** في Windows الإعدادات رمادي اللون وغير متوفر. يجب أولا نشر التغييرات التي تم إجراؤها من خلال كائن نهج المجموعة إلى نقاط النهاية الفردية قبل تحديث الإعداد في Windows الإعدادات.
 
-1. افتح أمن Windows عن طريق تحديد أيقونة الدرع في شريط المهام، أو البحث في قائمة **البدء عن أمن Windows**.
+1. افتح تطبيق أمن Windows عن طريق تحديد أيقونة الدرع في شريط المهام، أو عن طريق البحث في قائمة البدء عن **أمن Windows**.
 
-2. حدد لوحة **الحماية من &** الفيروسات (أو أيقونة الدرع على شريط القوائم الأيسر)، ثم ضمن إدارة الإعدادات،  حدد **& الحماية من المخاطر**.
+2. حدد لوحة **الحماية من التهديدات & الفيروسات** (أو أيقونة الدرع على شريط القوائم الأيسر)، ثم ضمن **"إدارة الإعدادات** "، حدد **إعدادات الحماية من الفيروسات & التهديدات**.
 
-   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="إعدادات الحماية & الفيروسات" lightbox="../../media/wdav-protection-settings-wdsc.png":::
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="إعدادات الحماية من التهديدات & الفيروسات" lightbox="../../media/wdav-protection-settings-wdsc.png":::
 
-3. تأكد من **تبديل** عمليات الإرسال النموذجي "الحماية المستندة إلى السحابة **" و** "الإرسال التلقائي" إلى **تشغيل**.
+3. تأكد من تبديل **الحماية المستندة إلى السحابة** **وإرسال العينة التلقائي** إلى **تشغيل**.
 
    > [!NOTE]
-   > إذا تم تكوين نموذج إرسال تلقائي باستخدام نهج المجموعة سيكون الإعداد رمادي اللون وغير متوفر.
+   > إذا تم تكوين الإرسال التلقائي للعينة مع نهج المجموعة فسيكون الإعداد رمادي اللون وغير متوفر.
+
+> [!TIP]
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
+> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>راجع أيضًا
 
 - [استخدام الحماية السحابية من Microsoft في برنامج الحماية من الفيروسات من Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
 
-- [كيفية إنشاء سياسات الحماية من البرامج الضارة ونشرها: خدمة الحماية من السحابة](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
+- [كيفية إنشاء نهج مكافحة البرامج الضارة ونشرها: خدمة حماية السحابة](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
 
 - [استخدم PowerShell cmdlets لإدارة برنامج الحماية من الفيروسات من Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md)
