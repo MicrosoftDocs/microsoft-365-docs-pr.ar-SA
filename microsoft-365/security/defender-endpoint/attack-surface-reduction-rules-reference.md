@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 49ee543e68ed9f54b0009efeb90bddc9de29c091
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 1eee7e482423e2292e9fe9db42333db481d44175
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761384"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783746"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>مرجع قواعد تقليل الأجزاء المعرضة للهجوم
 
@@ -45,7 +45,7 @@ ms.locfileid: "64761384"
 
 ## <a name="supported-operating-systems"></a>أنظمة التشغيل المدعومة
 
-يسرد الجدول التالي أنظمة التشغيل المدعومة للقواعد التي تم إصدارها حاليا للتوفر العام. يتم سرد القواعد بترتيب أبجدي.
+يسرد الجدول التالي أنظمة التشغيل المدعومة للقواعد التي تم إصدارها حاليا للتوفر العام. يتم سرد القواعد بترتيب أبجدي في هذا الجدول.
 
 > [!Note]
 >
@@ -53,26 +53,26 @@ ms.locfileid: "64761384"
 >
 > تتوفر قواعد تقليل الأجزاء المعرضة للهجوم في Windows&nbsp; Server2012R2&nbsp;&nbsp; وserver2016&nbsp; Windows&nbsp; للأجهزة التي تم إلحاقها باستخدام حزمة الحلول الموحدة الحديثة. لمزيد من المعلومات، راجع [الوظائف الجديدة في الحل الموحد الحديث Windows Server 2012 R2 و2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-| اسم القاعدة|&nbsp;Windows 10 | &nbsp;Windows Server 2019 | &nbsp;Windows Server | &nbsp;Windows Server 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server 2012R2&nbsp;<sup> [[1, 2](#fn1)]<sup></sup> |
+| اسم القاعدة|Windows 10 | Windows Server 2019 | &nbsp;Windows Server | Windows Server 2016 <sup>[[1, 2](#fn1)]<sup></sup> | Windows Server 2012&nbsp; R2 <sup>[[1، 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| [حظر إساءة استخدام برامج التشغيل الموقعة المعرضة للخطر](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> الإصدار 1803 (قناة نصف سنوية) أو إصدار أحدث |  Y | Y |
-| [حظر Adobe Reader من إنشاء عمليات تابعة](#block-adobe-reader-from-creating-child-processes) | إصدار Y 1809 أو إصدار أحدث | Y | Y |  Y | Y |
-| [حظر كافة تطبيقات Office من إنشاء عمليات تابعة](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y |  Y | Y |
-| [حظر سرقة بيانات الاعتماد من النظام الفرعي لمرجع الأمان المحلي Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> الإصدار 1803 أو الإصدارات الأحدث | Y  | Y |  Y | Y |
+| [حظر إساءة استخدام برامج التشغيل الموقعة المعرضة للخطر](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> الإصدار 1803 (قناة نصف سنوية) أو إصدار أحدث | Y | Y |
+| [حظر Adobe Reader من إنشاء عمليات تابعة](#block-adobe-reader-from-creating-child-processes) | إصدار Y 1809 أو إصدار أحدث | Y | Y | Y | Y |
+| [حظر كافة تطبيقات Office من إنشاء عمليات تابعة](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y | Y | Y |
+| [حظر سرقة بيانات الاعتماد من النظام الفرعي لمرجع الأمان المحلي Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> الإصدار 1803 أو الإصدارات الأحدث | Y | Y | Y | Y |
 | [حظر المحتوى القابل للتنفيذ من عميل البريد الإلكتروني والبريد الإلكتروني](#block-executable-content-from-email-client-and-webmail) | Y | Y | Y | Y | Y |
-| [حظر تشغيل الملفات القابلة للتنفيذ إلا إذا كانت تفي بمعيار الانتشار أو العمر أو القائمة الموثوق بها](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y <br> الإصدار 1803 أو الإصدارات الأحدث | Y | Y |  Y | Y |
-| [حظر تنفيذ البرامج النصية التي يحتمل أن تكون مشتتة](#block-execution-of-potentially-obfuscated-scripts) | Y | Y  | Y | Y | Y |
-| [حظر JavaScript أو VBScript من بدء تشغيل المحتوى القابل للتنفيذ الذي تم تنزيله](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y | Y  | N | N |
+| [حظر تشغيل الملفات القابلة للتنفيذ إلا إذا كانت تفي بمعيار الانتشار أو العمر أو القائمة الموثوق بها](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y <br> الإصدار 1803 أو الإصدارات الأحدث | Y | Y | Y | Y |
+| [حظر تنفيذ البرامج النصية التي يحتمل أن تكون مشتتة](#block-execution-of-potentially-obfuscated-scripts) | Y | Y | Y | Y | Y |
+| [حظر JavaScript أو VBScript من بدء تشغيل المحتوى القابل للتنفيذ الذي تم تنزيله](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y | Y | N | N |
 | [حظر تطبيقات Office من إنشاء محتوى قابل للتنفيذ](#block-office-applications-from-creating-executable-content) | Y | Y | Y | Y | Y |
-| [حظر تطبيقات Office من إدخال التعليمات البرمجية في عمليات أخرى](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y  | Y |  Y | Y |
+| [حظر تطبيقات Office من إدخال التعليمات البرمجية في عمليات أخرى](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y | Y | Y | Y |
 | [حظر تطبيق اتصال Office من إنشاء عمليات تابعة](#block-office-communication-application-from-creating-child-processes) | Y | Y | Y | Y | Y |
-| [حظر الثبات من خلال اشتراك حدث WMI](#block-persistence-through-wmi-event-subscription) <br> \*_استثناءات الملفات والمجلدات غير معتمدة._ | Y <br> الإصدار 1903 (النسخة 18362) أو أحدث | Y | Y <br> الإصدار 1903 (النسخة 18362) أو أحدث |  N | N |
-| [حظر عمليات الإنشاء التي تنشأ من أوامر PSExec وWMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> الإصدار 1803 أو الإصدارات الأحدث | Y | Y  |  Y | Y |
-| [حظر العمليات غير الموثوق بها وغير الموقعة التي يتم تشغيلها من USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y |  Y | Y |
+| [حظر الثبات من خلال اشتراك حدث WMI](#block-persistence-through-wmi-event-subscription) <br> \*_استثناءات الملفات والمجلدات غير معتمدة._ | Y <br> الإصدار 1903 (النسخة 18362) أو أحدث | Y | Y <br> الإصدار 1903 (النسخة 18362) أو أحدث | N | N |
+| [حظر عمليات الإنشاء التي تنشأ من أوامر PSExec وWMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> الإصدار 1803 أو الإصدارات الأحدث | Y | Y | Y | Y |
+| [حظر العمليات غير الموثوق بها وغير الموقعة التي يتم تشغيلها من USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y | Y | Y |
 | [حظر استدعاءات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office](#block-win32-api-calls-from-office-macros) | Y | Y | Y | N | N |
 | [استخدام الحماية المتقدمة من برامج الفدية الضارة](#use-advanced-protection-against-ransomware) | Y <br> الإصدار 1803 أو الإصدارات الأحدث | Y | Y | Y | Y |
 
-(<a id="fn1">1</a>) يشير إلى الحل الحديث الموحد لخادم Windows 2012 و2016. لمزيد من المعلومات، راجع [إلحاق Windows الخوادم بخدمة Defender لنقطة النهاية](configure-server-endpoints.md).
+(<a id="fn1">1</a>) يشير إلى الحل الموحد الحديث لخادم Windows 2012 و2016. لمزيد من المعلومات، راجع [إلحاق Windows الخوادم بخدمة Defender لنقطة النهاية](configure-server-endpoints.md).
 
 (<a id="fn1">2</a>) بالنسبة إلى Windows&nbsp; Server 2016 و Windows&nbsp; Server 2012R2&nbsp;، فإن الإصدار الأدنى المطلوب من Microsoft Endpoint Configuration Manager هو الإصدار 2111.
 

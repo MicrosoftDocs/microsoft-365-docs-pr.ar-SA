@@ -21,12 +21,12 @@ ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: a9092ebb941806324646fffd86dd00b54fa87cc6
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: ccf72b1f7e5625f3b3b9599a50d734a7316b8659
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714956"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780248"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>حماية إعدادات الأمان باستخدام الحماية من العبث
 
@@ -48,7 +48,8 @@ ms.locfileid: "64714956"
 - Windows Server 2012 R2
 
 > [!NOTE]
-> تتوفر الحماية من العبث في Windows Server 2012 R2 للأجهزة التي تم إلحاقها Microsoft Defender لنقطة النهاية باستخدام حزمة الحلول الموحدة الحديثة. لمزيد من المعلومات، راجع [الوظائف الجديدة في الحل الموحد الحديث Windows Server 2012 R2 و2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> تتوفر الحماية من العبث في Windows Server 2012 R2 للأجهزة التي تم إلحاقها باستخدام حزمة الحلول الموحدة الحديثة. لمزيد من المعلومات، راجع [إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+
 
 ## <a name="overview"></a>نظرة عامة
 
@@ -174,7 +175,7 @@ ms.locfileid: "64714956"
 إذا كنت تستخدم [الإصدار 2006 من Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)، يمكنك إدارة إعدادات الحماية من العبث بالبيانات على Windows 10، Windows 10 Enterprise متعددة الجلسات، Windows 11، Windows 11 Enterprise متعددة الجلسات، Windows  Server 2012 R2 و Windows Server 2016 و Windows Server 2019 و Windows Server 2022 باستخدام أسلوب يسمى *إرفاق المستأجر*. يتيح لك إرفاق المستأجر مزامنة أجهزة Configuration Manager المحلية فقط في مركز إدارة إدارة نقاط النهاية من Microsoft، ثم تقديم نهج تكوين أمان نقطة النهاية إلى المجموعات المحلية & الأجهزة.
 
 > [!NOTE]
-> يمكن استخدام الإجراء لتوسيع الحماية من العبث بالأجهزة التي تعمل Windows 10، Windows 10 Enterprise متعددة الجلسات، Windows 11، Windows 11 Enterprise متعددة الجلسات، Windows Server 2019، Windows Server 2022. تأكد من مراجعة المتطلبات الأساسية والمعلومات الأخرى في الموارد المذكورة في هذا الإجراء.
+> يمكن استخدام الإجراء لتوسيع الحماية من العبث بالأجهزة التي تعمل Windows 10، Windows 10 Enterprise متعددة الجلسات، Windows 11، Windows 11 Enterprise متعددة الجلسات، Windows Server 2019، Windows Server 2022. تأكد من مراجعة المتطلبات الأساسية والمعلومات الأخرى في الموارد المذكورة في هذا الإجراء. بالنسبة Windows Server 2012 R2 الذي يقوم بتشغيل [الإصدار 2203 من Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2203) للحل الحديث والموحد.
 
 1. إعداد إرفاق المستأجر. لمعرفة المزيد، راجع [بدء الاستخدام: إنشاء نهج أمان نقطة النهاية ونشرها من مركز الإدارة](/mem/configmgr/tenant-attach/endpoint-security-get-started).
 
@@ -211,9 +212,9 @@ ms.locfileid: "64714956"
 
 3. تعيين **"الحماية من العبث"** إلى **"تشغيل** " أو **"إيقاف تشغيل**".
 
-## <a name="are-you-using-windows-server-2016-or-windows-version-1709-1803-or-1809"></a>هل تستخدم Windows Server 2016 أو Windows الإصدار 1709 أو 1803 أو 1809؟
+## <a name="are-you-using-windows-server-2012-r2-2016-or-windows-version-1709-1803-or-1809"></a>هل تستخدم Windows Server 2012 R2 أو 2016 أو Windows الإصدار 1709 أو 1803 أو 1809؟
 
-إذا كنت تستخدم Windows Server 2016 أو Windows 10 الإصدار 1709 أو 1803 أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)، فلن ترى **الحماية من العبث** في تطبيق أمن Windows. بدلا من ذلك، يمكنك استخدام PowerShell لتحديد ما إذا كانت الحماية من العبث ممكنة.
+إذا كنت تستخدم Windows Server 2012 R2 باستخدام الحل الموحد الحديث، Windows Server 2016 أو Windows 10 الإصدار 1709 أو 1803 أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)، فلن ترى **الحماية من العبث** في تطبيق أمن Windows. بدلا من ذلك، يمكنك استخدام PowerShell لتحديد ما إذا كانت الحماية من العبث ممكنة.
 
 على Windows Server 2016، لن يعكس تطبيق الإعدادات بدقة حالة الحماية في الوقت الحقيقي عند تمكين الحماية من العبث.
 

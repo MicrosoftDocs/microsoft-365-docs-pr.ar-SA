@@ -1,5 +1,5 @@
 ---
-title: الاتصال سجلات DNS في web.com Microsoft 365
+title: الاتصال سجلات DNS في web.com إلى Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -21,338 +21,338 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: تعرف على كيفية التحقق من مجالك بإعداد سجلات DNS للبريد الإلكتروني Skype for Business عبر الإنترنت وخدمات أخرى في web.com Microsoft.
-ms.openlocfilehash: 612c22b518402fccaf9ced76b2506aa15c0e89f6
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+description: تعرف على كيفية التحقق من مجالك وإعداد سجلات DNS للبريد الإلكتروني Skype for Business Online وخدمات أخرى في web.com ل Microsoft.
+ms.openlocfilehash: 621364bdc0b2e9a2868084f0cb0b8eb8ef61c5b0
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568401"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780270"
 ---
-# <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>الاتصال سجلات DNS في web.com Microsoft 365
+# <a name="connect-your-dns-records-at-webcom-to-microsoft-365"></a>الاتصال سجلات DNS في web.com إلى Microsoft 365
 
- **[تحقق من الأسئلة الشائعة](../setup/domains-faq.yml)** حول المجالات إذا لم تعثر على ما تبحث عنه.
+ **[تحقق من الأسئلة المتداولة حول المجالات](../setup/domains-faq.yml)** إذا لم تعثر على ما تبحث عنه.
 
-إذا web.com موفر استضافة DNS، فاتبع الخطوات الواردة في هذه المقالة للتحقق من مجالك ول إعداد سجلات DNS للبريد الإلكتروني Skype for Business عبر الإنترنت وما إلى ذلك.
+إذا كان web.com هو موفر استضافة DNS، فاتبع الخطوات الواردة في هذه المقالة للتحقق من مجالك وإعداد سجلات DNS للبريد الإلكتروني Skype for Business Online وما إلى ذلك.
 
 بعد إضافة هذه السجلات في web.com، سيتم إعداد مجالك للعمل مع خدمات Microsoft.
 
 > [!NOTE]
-> يستغرق عادة الأمر حوالي 15 دقيقة حتى يتم إدخال تغييرات DNS. ومع ذلك، قد يستغرق تحديث نظام DNS على الإنترنت وقتا أطول أحيانا. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فشاهد استكشاف الأخطاء وإصلاحها بعد تغيير اسم المجال أو [سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
+> عادة ما تستغرق تغييرات DNS حوالي 15 دقيقة لتدخل حيز التنفيذ. ومع ذلك، قد يستغرق التحديث الذي أجريته عبر نظام DNS على الإنترنت وقتا أطول في بعض الأحيان. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فراجع [استكشاف المشكلات وإصلاحها بعد تغيير اسم المجال أو سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="change-your-domains-nameserver-ns-records"></a>تغيير سجلات أسماء (NS) لمجالك
+## <a name="change-your-domains-nameserver-ns-records"></a>تغيير سجلات خوادم الأسماء (NS) لمجالك
 
 > [!IMPORTANT]
-> يجب تنفيذ هذا الإجراء لدى جهة تسجيل المجالات حيث اشتريت مجالك وسجلته.
+> يجب تنفيذ هذا الإجراء لدى جهة تسجيل المجالات حيث قمت بشراء مجالك وتسجيله.
 
-عند التسجيل للحصول على web.com، أضفت مجالا باستخدام web.com **الإعداد** .
+عند التسجيل للحصول على web.com، أضفت مجالا باستخدام عملية **إعداد** web.com.
 
-للتحقق من سجلات DNS وإنشاءها لمجالك في Microsoft، ستحتاج أولا إلى تغيير أسماء الخدمات لدى جهة تسجيل المجالات بحيث تستخدم web.com أسماء المستخدمين.
+للتحقق من سجلات DNS وإنشاءها لمجالك في Microsoft، تحتاج أولا إلى تغيير خوادم الأسماء لدى جهة تسجيل المجالات بحيث تستخدم خوادم الأسماء web.com.
 
 لتغيير خوادم أسماء مجالك في موقع جهة تسجيل المجالات على ويب بنفسك، اتبع الخطوات التالية.
 
-1. ابحث عن المنطقة على موقع جهة تسجيل المجالات على ويب حيث يمكنك تحرير أسماء أسماء مجالاتك.
+1. ابحث عن المنطقة الموجودة على موقع جهة تسجيل المجالات على ويب حيث يمكنك تحرير خوادم الأسماء لمجالك.
 
-2. يمكنك إما إنشاء سجلين من سجلات أسماء الخدمة باستخدام القيم الموجودة في الجدول التالي، أو تحرير سجلات خدمات أسماء موجودة بحيث تتطابق مع هذه القيم.
+2. يمكنك إما إنشاء سجلين لخوادم الأسماء باستخدام القيم الموجودة في الجدول التالي، أو تحرير سجلات خوادم الأسماء الموجودة بحيث تتطابق مع هذه القيم.
 
-    |النوع|القيمة|
+    |نوع|قيمه|
     |---|---|
-    |أول اسمserver|استخدم قيمة nameserver التي توفرها web.com.|
-    |خدمات الاسم الثاني|استخدم قيمة nameserver التي توفرها web.com.|
+    |خادم الأسماء الأول|استخدم قيمة خادم الأسماء التي توفرها web.com.|
+    |خادم الأسماء الثاني|استخدم قيمة خادم الأسماء التي توفرها web.com.|
 
     > [!TIP]
-    > يجب استخدام سجلي خادم اسم على الأقل. إذا كان هناك أي خوادم أسماء أخرى مدرجة، يجب حذفها.
+    > يجب استخدام سجلين على الأقل لخادم الأسماء. إذا كان هناك أي خوادم أسماء أخرى مدرجة، يجب حذفها.
 
-3. احفظ تغييراتك.
+3. احفظ التغييرات التي أجريتها.
 
 > [!NOTE]
-> قد تستغرق تحديثات سجلات خدمة الاسم ما يصل إلى عدة ساعات للتحديث عبر نظام DNS على الإنترنت. بعد ذلك، سيتم تعيين البريد الإلكتروني والخدمات الأخرى من Microsoft للعمل مع مجالك.
+> قد تستغرق تحديثات سجل خوادم الأسماء ما يصل إلى عدة ساعات للتحديث عبر نظام DNS الخاص بالإنترنت. بعد ذلك، سيتم تعيين البريد الإلكتروني والخدمات الأخرى من Microsoft للعمل مع مجالك.
 
-## <a name="add-a-txt-record-for-verification"></a>إضافة سجل TXT للتحقق من صحة
+## <a name="add-a-txt-record-for-verification"></a>إضافة سجل TXT للتحقق
 
 قبل استخدام مجالك مع Microsoft، يجب أن نتأكد من أنك تملكه. تثبت قدرتك على تسجيل الدخول إلى حسابك لدى جهة تسجيل المجالات وإنشاء سجل DNS لشركة Microsoft أنك تملك المجال.
 
 > [!NOTE]
-> يتم استخدام هذا السجل فقط للتحقق من أنك تملك مجالك؛ ولا يؤثر على أي شيء آخر. يمكنك حذفه لاحقا، إذا أردت ذلك.
+> يتم استخدام هذا السجل فقط للتحقق من ملكيتك لمجالك؛ لا يؤثر على أي شيء آخر. يمكنك حذفه لاحقا، إذا أردت ذلك.
 
-1. للبدء، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). سجل الدخول أولا.
+1. لبدء الاستخدام، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). تسجيل الدخول أولا.
 
-1. في الصفحة المنتقل عليها، حدد **أسماء المجالات**.
+1. في الصفحة المنتقل إليها، حدد **"أسماء المجالات**".
 
-1. ضمن **إجراءات**، حدد النقاط الثلاث، ثم حدد **إدارة** في القائمة المنسدل.
+1. ضمن **"Actions"**، حدد النقاط الثلاث، ثم حدد **"إدارة** " في القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد إدارة من القائمة المنسدل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد &quot;إدارة&quot; من القائمة المنسدلة.":::
 
-1. قم بالتمرير للأسفل لتحديد **أدوات متقدمة**، وب **المجاورة لسجلات DNS المتقدمة**، حدد **إدارة**.
+1. قم بالتمرير لأسفل لتحديد **"أدوات متقدمة**"، وإلى جانب **سجلات DNS المتقدمة**، حدد **MANAGE**.
 
-    قد تحتاج إلى تحديد **متابعة** للوصول إلى الصفحة إدارة سجلات DNS المتقدمة.
+    قد تحتاج إلى تحديد **"متابعة** " للوصول إلى صفحة "إدارة سجلات DNS المتقدمة".
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى بجانب سجلات DNS المتقدمة، حدد إدارة.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى جانب سجلات DNS المتقدمة، حدد MANAGE.":::
 
-1. في الصفحة إدارة سجلات DNS المتقدمة، حدد **+ إضافة سجل**.
+1. في صفحة إدارة سجلات DNS المتقدمة، حدد **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + إضافة سجل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + ADD RECORD.":::
 
-1. ضمن **النوع**، حدد **TXT** من القائمة المنسدل.
+1. ضمن **النوع**، حدد **TXT** من القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="حدد TXT من القائمة المنسدل النوع.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="حدد TXT من القائمة المنسدلة &quot;النوع&quot;.":::
 
-1. حدد القيم من الجدول التالي أو قم بنسخها ولصقها.
+1. حدد القيم من الجدول التالي أو انسخها والصقها.
 
-    |يشير إلى|قيمة TXT|TTL|
+    |يشير|قيمة TXT|TTL|
     |---|---|:----|
-    |@|MS=*msXXXXXXXX* <br/> **ملاحظة:** هذا مثال. استخدم قيمة **الوجهة أو نقاط العنوان** المحددة هنا، من الجدول. [如何实现 العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|ساعة واحدة|
+    |@|MS=*msXXXXXXXXXX* <br/> **ملاحظه:** هذا مثال. استخدم قيمة **الوجهة أو نقاط العنوان** المحددة هنا، من الجدول. [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|ساعة واحدة|
 
-1. حدد **إضافة**.
+1. حدد **ADD**.
 
     انتظر بضع دقائق قبل التحقق من سجل TXT الجديد، بحيث يمكن تحديث السجل الذي أنشأته للتو عبر الإنترنت.
 
-الآن وقد أضفت السجل إلى موقع جهة تسجيل المجالات، سوف تعود إلى Microsoft وتطلب السجل. عندما تعثر Microsoft على سجل TXT الصحيح، يتم التحقق من مجالك.
+الآن بعد أن أضفت السجل إلى موقع جهة تسجيل المجالات، ستعود إلى Microsoft وتطالب بالسجل. عندما تعثر Microsoft على سجل TXT الصحيح، يتم التحقق من مجالك.
 
 للتحقق من السجل في Microsoft 365:
 
-1. في مركز الإدارة، انتقل **إلى الإعدادات** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**المجالات**</a>.
+1. في مركز الإدارة، انتقل إلى **الإعدادات** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 
-1. في صفحة المجالات، حدد المجال الذي تتحقق منه، ثم حدد **بدء الإعداد**.
+1. في صفحة "المجالات"، حدد المجال الذي تتحقق منه، ثم حدد **"بدء الإعداد**".
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="حدد بدء الإعداد.":::
 
 1. حدد **متابعة**.
 
-1. في صفحة **التحقق من المجال** ، حدد **التحقق**.
+1. في صفحة **«Verify domain** »، حدد **«Verify»**.
 
 > [!NOTE]
-> يستغرق عادة الأمر حوالي 15 دقيقة حتى يتم إدخال تغييرات DNS. ومع ذلك، قد يستغرق تحديث نظام DNS على الإنترنت وقتا أطول أحيانا. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فشاهد استكشاف الأخطاء وإصلاحها بعد تغيير اسم المجال أو [سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
+> عادة ما تستغرق تغييرات DNS حوالي 15 دقيقة لتدخل حيز التنفيذ. ومع ذلك، قد يستغرق التحديث الذي أجريته عبر نظام DNS على الإنترنت وقتا أطول في بعض الأحيان. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فراجع [استكشاف المشكلات وإصلاحها بعد تغيير اسم المجال أو سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>إضافة سجل MX بحيث يتم إرسال البريد الإلكتروني لمجالك إلى Microsoft
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>إضافة سجل MX حتى يصل البريد الإلكتروني لمجالك إلى Microsoft
 
-1. للبدء، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). سجل الدخول أولا.
+1. لبدء الاستخدام، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). تسجيل الدخول أولا.
 
-1. في الصفحة المنتقل عليها، حدد **أسماء المجالات**.
+1. في الصفحة المنتقل إليها، حدد **"أسماء المجالات**".
 
-1. ضمن **إجراءات**، حدد النقاط الثلاث، ثم حدد **إدارة** في القائمة المنسدل.
+1. ضمن **"Actions"**، حدد النقاط الثلاث، ثم حدد **"إدارة** " في القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد إدارة من القائمة المنسدل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد &quot;إدارة&quot; من القائمة المنسدلة.":::
 
-1. قم بالتمرير للأسفل لتحديد **أدوات متقدمة**، وب **المجاورة لسجلات DNS المتقدمة**، حدد **إدارة**.
+1. قم بالتمرير لأسفل لتحديد **"أدوات متقدمة**"، وإلى جانب **سجلات DNS المتقدمة**، حدد **MANAGE**.
 
-    قد تحتاج إلى تحديد **متابعة** للوصول إلى الصفحة إدارة سجلات DNS المتقدمة.
+    قد تحتاج إلى تحديد **"متابعة** " للوصول إلى صفحة "إدارة سجلات DNS المتقدمة".
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى بجانب سجلات DNS المتقدمة، حدد إدارة.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى جانب سجلات DNS المتقدمة، حدد MANAGE.":::
 
-1. في الصفحة إدارة سجلات DNS المتقدمة، حدد **+ إضافة سجل**.
+1. في صفحة إدارة سجلات DNS المتقدمة، حدد **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + إضافة سجل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + ADD RECORD.":::
 
-1. ضمن **النوع**، حدد **MX** من القائمة المنسدل.
+1. ضمن **النوع**، حدد **MX** من القائمة المنسدلة.
 
-1. حدد القيم من الجدول التالي أو قم بنسخها ولصقها.
+1. حدد القيم من الجدول التالي أو انسخها والصقها.
 
-    |يشير إلى|خادم البريد|الأولوية|TTL|
+    |يشير إلى|خادم البريد|الاولويه|TTL|
     |---|---|---|---|
-    |@|*\<domain-key\>*.mail.protection.outlook.com <br/> **ملاحظة:** احصل على *\<domain-key\>* من مركز إدارة Microsoft. [如何实现 العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|لمزيد من المعلومات حول الأولوية، راجع [ما هي أولوية MX؟](../setup/domains-faq.yml) <br/> 1|ساعة واحدة|
+    |@|*\<domain-key\>*.mail.protection.outlook.com <br/> **ملاحظه:** احصل على معلوماتك *\<domain-key\>* من مركز إدارة Microsoft. [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|لمزيد من المعلومات حول الأولوية، راجع [ما هي أولوية MX؟](../setup/domains-faq.yml) <br/> 1|ساعة واحدة|
 
-1. حدد **إضافة**.
+1. حدد **ADD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-mx-add.png" alt-text="حدد إضافة.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-mx-add.png" alt-text="حدد ADD.":::
 
-1. إذا كان هناك أي سجلات MX أخرى، فاحذفها كلها عن طريق تحديد أداة التحرير، ثم **حذف** لكل سجل.
+1. إذا كان هناك أي سجلات MX أخرى، فاحذفها كلها عن طريق تحديد أداة التحرير، ثم **احذف** لكل سجل.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-edit.png" alt-text="حدد تحرير.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-edit.png" alt-text="حدد &quot;تحرير&quot;.":::
 
 ## <a name="add-the-cname-record-required-for-microsoft"></a>إضافة سجل CNAME المطلوب ل Microsoft
 
-1. للبدء، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). سجل الدخول أولا.
+1. لبدء الاستخدام، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). تسجيل الدخول أولا.
 
-1. في الصفحة المنتقل عليها، حدد **أسماء المجالات**.
+1. في الصفحة المنتقل إليها، حدد **"أسماء المجالات**".
 
-1. ضمن **إجراءات**، حدد النقاط الثلاث، ثم حدد **إدارة** في القائمة المنسدل.
+1. ضمن **"Actions"**، حدد النقاط الثلاث، ثم حدد **"إدارة** " في القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد إدارة من القائمة المنسدل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد &quot;إدارة&quot; من القائمة المنسدلة.":::
 
-1. قم بالتمرير للأسفل لتحديد **أدوات متقدمة**، وب **المجاورة لسجلات DNS المتقدمة**، حدد **إدارة**.
+1. قم بالتمرير لأسفل لتحديد **"أدوات متقدمة**"، وإلى جانب **سجلات DNS المتقدمة**، حدد **MANAGE**.
 
-    قد تحتاج إلى تحديد **متابعة** للوصول إلى الصفحة إدارة سجلات DNS المتقدمة.
+    قد تحتاج إلى تحديد **"متابعة** " للوصول إلى صفحة "إدارة سجلات DNS المتقدمة".
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى بجانب سجلات DNS المتقدمة، حدد إدارة.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى جانب سجلات DNS المتقدمة، حدد MANAGE.":::
 
-1. في الصفحة إدارة سجلات DNS المتقدمة، حدد **+ إضافة سجل**.
+1. في صفحة إدارة سجلات DNS المتقدمة، حدد **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + إضافة سجل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + ADD RECORD.":::
 
-1. ضمن **النوع**، حدد **CNAME** من القائمة المنسدل.
+1. ضمن **النوع**، حدد **CNAME** من القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname.png" alt-text="حدد CNAME من القائمة المنسدل النوع.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname.png" alt-text="حدد CNAME من القائمة المنسدلة &quot;النوع&quot;.":::
 
-1. حدد القيم من الجدول التالي أو قم بنسخها ولصقها.
+1. حدد القيم من الجدول التالي أو انسخها والصقها.
 
     |يشير إلى|اسم المضيف|الاسم المستعار إلى|TTL|
     |---|---|---|---|
-    |مضيف آخر|autodiscover|autodiscover.outlook.com|ساعة واحدة|
+    |مضيف آخر|Autodiscover|autodiscover.outlook.com|ساعة واحدة|
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="اكتب قيم CNAME أو انسخها واللصق بها في النافذة.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="اكتب قيم CNAME أو انسخها والصقها في النافذة.":::
 
-1. حدد **إضافة**.
+1. حدد **ADD**.
 
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>إضافة سجل TXT ل SPF للمساعدة في منع البريد الإلكتروني العشوائي
 
 > [!IMPORTANT]
-> لا يمكن أن يكون لديك أكثر من سجل TXT واحد ل SPF لمجال. إذا كان مجالك لديه أكثر من سجل SPF واحد، فسوف تحصل على أخطاء البريد الإلكتروني، بالإضافة إلى مشاكل التسليم وتصنيف البريد العشوائي. إذا كان لديك سجل SPF لمجالك، فلا تنشئ سجلا جديدا ل Microsoft. بدلا من ذلك، أضف قيم Microsoft المطلوبة إلى السجل الحالي بحيث يكون لديك *سجل SPF* واحد يتضمن مجموعتي القيم.
+> لا يمكن أن يكون لديك أكثر من سجل TXT واحد ل SPF لمجال. إذا كان مجالك يحتوي على أكثر من سجل SPF واحد، فستحصل على أخطاء البريد الإلكتروني، بالإضافة إلى مشاكل في التسليم وتصنيف البريد العشوائي. إذا كان لديك بالفعل سجل SPF لمجالك، فلا تنشئ سجلا جديدا ل Microsoft. بدلا من ذلك، أضف قيم Microsoft المطلوبة إلى السجل الحالي بحيث يكون لديك سجل SPF *واحد* يتضمن مجموعتي القيم.
 
-1. للبدء، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). سجل الدخول أولا.
+1. لبدء الاستخدام، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). تسجيل الدخول أولا.
 
-1. في الصفحة المنتقل عليها، حدد **أسماء المجالات**.
+1. في الصفحة المنتقل إليها، حدد **"أسماء المجالات**".
 
-1. ضمن **إجراءات**، حدد النقاط الثلاث، ثم حدد **إدارة** في القائمة المنسدل.
+1. ضمن **"Actions"**، حدد النقاط الثلاث، ثم حدد **"إدارة** " في القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد إدارة من القائمة المنسدل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد &quot;إدارة&quot; من القائمة المنسدلة.":::
 
-1. قم بالتمرير للأسفل لتحديد **أدوات متقدمة**، وب **المجاورة لسجلات DNS المتقدمة**، حدد **إدارة**.
+1. قم بالتمرير لأسفل لتحديد **"أدوات متقدمة**"، وإلى جانب **سجلات DNS المتقدمة**، حدد **MANAGE**.
 
-    قد تحتاج إلى تحديد **متابعة** للوصول إلى الصفحة إدارة سجلات DNS المتقدمة.
+    قد تحتاج إلى تحديد **"متابعة** " للوصول إلى صفحة "إدارة سجلات DNS المتقدمة".
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى بجانب سجلات DNS المتقدمة، حدد إدارة.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى جانب سجلات DNS المتقدمة، حدد MANAGE.":::
 
-1. في الصفحة إدارة سجلات DNS المتقدمة، حدد **+ إضافة سجل**.
+1. في صفحة إدارة سجلات DNS المتقدمة، حدد **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + إضافة سجل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + ADD RECORD.":::
 
-1. ضمن **النوع**، حدد **TXT** من القائمة المنسدل.
+1. ضمن **النوع**، حدد **TXT** من القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="حدد TXT من القائمة المنسدل النوع.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="حدد TXT من القائمة المنسدلة &quot;النوع&quot;.":::
 
-1. حدد القيم من الجدول التالي أو قم بنسخها ولصقها.
+1. حدد القيم من الجدول التالي أو انسخها والصقها.
 
     |يشير إلى|قيمة TXT|TTL|
     |---|---|---|
-    |@|v=spf1 include:spf.protection.outlook.com -all <br/> **ملاحظة:** نوصي بنسخ هذا الإدخال ولصقه، بحيث تبقى كل التباعدات صحيحة.|ساعة واحدة|
+    |@|v=spf1 include:spf.protection.outlook.com -all <br/> **ملاحظه:** نوصي بنسخ هذا الإدخال ولصقه، بحيث يبقى كل التباعد صحيحا.|ساعة واحدة|
 
-1. حدد **إضافة**.
+1. حدد **ADD**.
 
 ## <a name="advanced-option-skype-for-business"></a>الخيار المتقدم: Skype for Business
 
-حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمؤتمرات عبر الهاتف ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. Skype 4 سجلات: سجلان SRV للاتصالات بين المستخدمين، وسجلين CNAME من أجل تسجيل الدخول وربط المستخدمين بالخدمة.
+حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمكالمات الجماعية ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى 4 سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلان CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
 
 ### <a name="add-the-two-required-srv-records"></a>إضافة سجلي SRV المطلوبين
 
-1. للبدء، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). سجل الدخول أولا.
+1. لبدء الاستخدام، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). تسجيل الدخول أولا.
 
-1. في الصفحة المنتقل عليها، حدد **أسماء المجالات**.
+1. في الصفحة المنتقل إليها، حدد **"أسماء المجالات**".
 
-1. ضمن **إجراءات**، حدد النقاط الثلاث، ثم حدد **إدارة** في القائمة المنسدل.
+1. ضمن **"Actions"**، حدد النقاط الثلاث، ثم حدد **"إدارة** " في القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد إدارة من القائمة المنسدل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد &quot;إدارة&quot; من القائمة المنسدلة.":::
 
-1. قم بالتمرير للأسفل لتحديد **أدوات متقدمة**، وب **المجاورة لسجلات DNS المتقدمة**، حدد **إدارة**.
+1. قم بالتمرير لأسفل لتحديد **"أدوات متقدمة**"، وإلى جانب **سجلات DNS المتقدمة**، حدد **MANAGE**.
 
-    قد تحتاج إلى تحديد **متابعة** للوصول إلى الصفحة إدارة سجلات DNS المتقدمة.
+    قد تحتاج إلى تحديد **"متابعة** " للوصول إلى صفحة "إدارة سجلات DNS المتقدمة".
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى بجانب سجلات DNS المتقدمة، حدد إدارة.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى جانب سجلات DNS المتقدمة، حدد MANAGE.":::
 
-1. في الصفحة إدارة سجلات DNS المتقدمة، حدد **+ إضافة سجل**.
+1. في صفحة إدارة سجلات DNS المتقدمة، حدد **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + إضافة سجل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + ADD RECORD.":::
 
-1. ضمن **النوع**، حدد **SRV** من القائمة المنسدل.
+1. ضمن **النوع**، حدد **SRV** من القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-srv.png" alt-text="حدد SRV من القائمة المنسدل النوع.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-srv.png" alt-text="حدد SRV من القائمة المنسدلة &quot;النوع&quot;.":::
 
-1. حدد القيم من الجدول التالي أو قم بنسخها ولصقها.
+1. حدد القيم من الجدول التالي أو انسخها والصقها.
 
-    |النوع|الخدمة|البروتوكول|الوزن|المنفذ|الهدف|الأولوية|TTL|
+    |نوع|الخدمة|البروتوكول|الوزن|منفذ|الهدف|الاولويه|TTL|
     |---|---|---|---|---|---|---|---|
-    |SRV|_sip|TLS|100|443|sipdir.online.lync.com <br/> **لا يمكن أن تنتهي هذه القيمة بفترة (.)**|1|ساعة واحدة|
-    |SRV|_sipfederationtls|TCP|100|5061|sipfed.online.lync.com <br/> **لا يمكن أن تنتهي هذه القيمة بفترة (.)**|1|ساعة واحدة|
+    |SRV|_sip|TLS|100|443|sipdir.online.lync.com <br/> **لا يمكن أن تنتهي هذه القيمة بنقطة (.)**|1|ساعة واحدة|
+    |SRV|_sipfederationtls|TCP|100|5061|sipfed.online.lync.com <br/> **لا يمكن أن تنتهي هذه القيمة بنقطة (.)**|1|ساعة واحدة|
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-srv-add.png" alt-text="اكتب القيم من الجدول أو انسخها واللصق فيها في نافذة سجل SRV.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-srv-add.png" alt-text="اكتب القيم من الجدول أو انسخها والصقها في نافذة سجل SRV.":::
 
-1. حدد **إضافة**.
+1. حدد **ADD**.
 
 1. أضف سجل SRV الآخر عن طريق نسخ القيم من الصف الثاني من الجدول.
 
 > [!NOTE]
-> يستغرق عادة الأمر حوالي 15 دقيقة حتى يتم إدخال تغييرات DNS. ومع ذلك، قد يستغرق تحديث نظام DNS على الإنترنت وقتا أطول أحيانا. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فشاهد البحث عن المشاكل وإصلاحها بعد إضافة مجالك أو [سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
+> عادة ما تستغرق تغييرات DNS حوالي 15 دقيقة لتدخل حيز التنفيذ. ومع ذلك، قد يستغرق التحديث الذي أجريته عبر نظام DNS على الإنترنت وقتا أطول في بعض الأحيان. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فراجع [البحث عن المشاكل وإصلاحها بعد إضافة مجالك أو سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-### <a name="add-the-two-required-cname-records"></a>إضافة سجلي CNAME المطلوبين
+### <a name="add-the-two-required-cname-records-for-skype-for-business"></a>إضافة سجلي CNAME المطلوبين Skype for Business
 
-1. للبدء، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). سجل الدخول أولا.
+1. لبدء الاستخدام، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). تسجيل الدخول أولا.
 
-1. في الصفحة المنتقل عليها، حدد **أسماء المجالات**.
+1. في الصفحة المنتقل إليها، حدد **"أسماء المجالات**".
 
-1. ضمن **إجراءات**، حدد النقاط الثلاث، ثم حدد **إدارة** في القائمة المنسدل.
+1. ضمن **"Actions"**، حدد النقاط الثلاث، ثم حدد **"إدارة** " في القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد إدارة من القائمة المنسدل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد &quot;إدارة&quot; من القائمة المنسدلة.":::
 
-1. قم بالتمرير للأسفل لتحديد **أدوات متقدمة**، وب **المجاورة لسجلات DNS المتقدمة**، حدد **إدارة**.
+1. قم بالتمرير لأسفل لتحديد **"أدوات متقدمة**"، وإلى جانب **سجلات DNS المتقدمة**، حدد **MANAGE**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى بجانب سجلات DNS المتقدمة، حدد إدارة.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى جانب سجلات DNS المتقدمة، حدد MANAGE.":::
 
-    قد تحتاج إلى تحديد **متابعة** للوصول إلى الصفحة إدارة سجلات DNS المتقدمة.
+    قد تحتاج إلى تحديد **"متابعة** " للوصول إلى صفحة "إدارة سجلات DNS المتقدمة".
 
-1. في الصفحة إدارة سجلات DNS المتقدمة، حدد **+ إضافة سجل**.
+1. في صفحة إدارة سجلات DNS المتقدمة، حدد **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + إضافة سجل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + ADD RECORD.":::
 
-1. ضمن **النوع**، حدد **CNAME** من القائمة المنسدل.
+1. ضمن **النوع**، حدد **CNAME** من القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname.png" alt-text="حدد CNAME من القائمة المنسدل النوع.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname.png" alt-text="حدد CNAME من القائمة المنسدلة &quot;النوع&quot;.":::
 
-1. حدد القيم من الجدول التالي أو قم بنسخها ولصقها.
+1. حدد القيم من الجدول التالي أو انسخها والصقها.
 
-    |النوع|يشير إلى|اسم المضيف|الاسم المستعار إلى|TTL|
+    |نوع|يشير إلى|اسم المضيف|الاسم المستعار إلى|TTL|
     |---|---|---|---|---|
-    |CNAME|مضيف آخر|sip|sipdir.online.lync.com <br/> **لا يمكن أن تنتهي هذه القيمة بفترة (.)**|ساعة واحدة|
-    |CNAME|مضيف آخر|lyncdiscover|webdir.online.lync.com <br/> **لا يمكن أن تنتهي هذه القيمة بفترة (.)**|ساعة واحدة|
+    |CNAME|مضيف آخر|المسبار|sipdir.online.lync.com <br/> **لا يمكن أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
+    |CNAME|مضيف آخر|lyncdiscover|webdir.online.lync.com <br/> **لا يمكن أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="اكتب قيم CNAME أو انسخها واللصق بها في النافذة.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="اكتب قيم CNAME أو انسخها والصقها في النافذة.":::
 
-1. حدد **إضافة**.
+1. حدد **ADD**.
 
 1. أضف سجل CNAME الآخر عن طريق نسخ القيم من الصف الثاني من الجدول.
 
 > [!NOTE]
-> يستغرق عادة الأمر حوالي 15 دقيقة حتى يتم إدخال تغييرات DNS. ومع ذلك، قد يستغرق تحديث نظام DNS على الإنترنت وقتا أطول أحيانا. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فشاهد استكشاف الأخطاء وإصلاحها بعد تغيير اسم المجال أو [سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
+> عادة ما تستغرق تغييرات DNS حوالي 15 دقيقة لتدخل حيز التنفيذ. ومع ذلك، قد يستغرق التحديث الذي أجريته عبر نظام DNS على الإنترنت وقتا أطول في بعض الأحيان. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فراجع [استكشاف المشكلات وإصلاحها بعد تغيير اسم المجال أو سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>الخيار المتقدم: Intune و Mobile 裝置管理 for Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>الخيار المتقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
 
-تساعدك هذه الخدمة على تأمين الأجهزة المحمولة التي تتصل مجالك وإدارتها عن بعد. يحتاج 裝置管理 المحمول إلى سجلي CNAME حتى يمكن للمستخدمين تسجيل الأجهزة في الخدمة.
+تساعدك هذه الخدمة على تأمين الأجهزة المحمولة التي تتصل بمجالك وإدارتها عن بعد. يحتاج إدارة الجهاز الجوال إلى سجلين CNAME حتى يتمكن المستخدمون من تسجيل الأجهزة في الخدمة.
 
-### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>إضافة سجلي CNAME المطلوبين للهواتف 裝置管理
+### <a name="add-the-two-required-cname-records-for-mobile-device-management"></a>إضافة سجلي CNAME المطلوبين ل Mobile إدارة الجهاز
 
-1. للبدء، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). سجل الدخول أولا.
+1. لبدء الاستخدام، انتقل إلى صفحة المجالات في web.com باستخدام [هذا الارتباط](https://checkout.web.com/manage-it/index.jsp). تسجيل الدخول أولا.
 
-1. في الصفحة المنتقل عليها، حدد **أسماء المجالات**.
+1. في الصفحة المنتقل إليها، حدد **"أسماء المجالات**".
 
-1. ضمن **إجراءات**، حدد النقاط الثلاث، ثم حدد **إدارة** في القائمة المنسدل.
+1. ضمن **"Actions"**، حدد النقاط الثلاث، ثم حدد **"إدارة** " في القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد إدارة من القائمة المنسدل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="حدد &quot;إدارة&quot; من القائمة المنسدلة.":::
 
-1. قم بالتمرير للأسفل لتحديد **أدوات متقدمة**، وب **المجاورة لسجلات DNS المتقدمة**، حدد **إدارة**.
+1. قم بالتمرير لأسفل لتحديد **"أدوات متقدمة**"، وإلى جانب **سجلات DNS المتقدمة**، حدد **MANAGE**.
 
-    قد تحتاج إلى تحديد **متابعة** للوصول إلى الصفحة إدارة سجلات DNS المتقدمة.
+    قد تحتاج إلى تحديد **"متابعة** " للوصول إلى صفحة "إدارة سجلات DNS المتقدمة".
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى بجانب سجلات DNS المتقدمة، حدد إدارة.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="إلى جانب سجلات DNS المتقدمة، حدد MANAGE.":::
 
-1. في الصفحة إدارة سجلات DNS المتقدمة، حدد **+ إضافة سجل**.
+1. في صفحة إدارة سجلات DNS المتقدمة، حدد **+ ADD RECORD**.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + إضافة سجل.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="حدد + ADD RECORD.":::
 
-1. ضمن **النوع**، حدد **CNAME** من القائمة المنسدل.
+1. ضمن **النوع**، حدد **CNAME** من القائمة المنسدلة.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname.png" alt-text="حدد CNAME من القائمة المنسدل النوع.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname.png" alt-text="حدد CNAME من القائمة المنسدلة &quot;النوع&quot;.":::
 
-1. حدد القيم من الجدول التالي أو قم بنسخها ولصقها.
+1. حدد القيم من الجدول التالي أو انسخها والصقها.
 
-    |النوع|يشير إلى|اسم المضيف|الاسم المستعار إلى|TTL|
+    |نوع|يشير إلى|اسم المضيف|الاسم المستعار إلى|TTL|
     |---|---|---|---|---|
-    |CNAME|مضيف آخر|enterpriseregistration|enterpriseregistration.windows.net <br/> **لا يمكن أن تنتهي هذه القيمة بفترة (.)**|ساعة واحدة|
-    |CNAME|مضيف آخر|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com <br/> **لا يمكن أن تنتهي هذه القيمة بفترة (.)**|ساعة واحدة|
+    |CNAME|مضيف آخر|تسجيل المؤسسة|enterpriseregistration.windows.net <br/> **لا يمكن أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
+    |CNAME|مضيف آخر|تسجيل المؤسسة|enterpriseenrollment-s.manage.microsoft.com <br/> **لا يمكن أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="اكتب قيم CNAME أو انسخها واللصق فيها من الجدول في النافذة.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="اكتب قيم CNAME أو انسخها والصقها من الجدول في النافذة.":::
 
-1. حدد **إضافة**.
+1. حدد **ADD**.
 
 1. أضف سجل CNAME الآخر عن طريق نسخ القيم من الصف الثاني من الجدول.
 
 > [!NOTE]
-> يستغرق عادة الأمر حوالي 15 دقيقة حتى يتم إدخال تغييرات DNS. ومع ذلك، قد يستغرق تحديث نظام DNS على الإنترنت وقتا أطول أحيانا. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فشاهد استكشاف الأخطاء وإصلاحها بعد تغيير اسم المجال أو [سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
+> عادة ما تستغرق تغييرات DNS حوالي 15 دقيقة لتدخل حيز التنفيذ. ومع ذلك، قد يستغرق التحديث الذي أجريته عبر نظام DNS على الإنترنت وقتا أطول في بعض الأحيان. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فراجع [استكشاف المشكلات وإصلاحها بعد تغيير اسم المجال أو سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).

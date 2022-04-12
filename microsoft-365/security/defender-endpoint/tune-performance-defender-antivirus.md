@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7d24fe9a20c54a24a9c3406c66c1c591790bafc5
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 34bf757ee545d45f7faccdefaf1e8aa57e9cb961
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667373"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783436"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>محلل الأداء برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -56,14 +56,14 @@ ms.locfileid: "64667373"
 1. تشغيل الأمر التالي لبدء التسجيل:
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
- 
+
     حيث `-RecordTo` تحدد المعلمة موقع المسار الكامل الذي يتم فيه حفظ ملف التتبع. لمزيد من المعلومات حول cmdlet، راجع [برنامج الحماية من الفيروسات من Microsoft Defender cmdlets](/powershell/module/defender).
 
 2. إذا كانت هناك عمليات أو خدمات يعتقد أنها تؤثر على الأداء، فكرر الحالة من خلال تنفيذ المهام ذات الصلة.
 
 3. اضغط على **ENTER** لإيقاف التسجيل وحفظه، أو **Ctrl+C** لإلغاء التسجيل.
 
-4. تحليل النتائج باستخدام معلمة محلل `Get-MpPerformanceReport`الأداء. على سبيل المثال، عند تنفيذ الأمر `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`، يتم تزويد المستخدم بقائمة من أفضل عشرة عمليات مسح ضوئي لأعلى 3 ملفات تؤثر على الأداء. 
+4. تحليل النتائج باستخدام معلمة محلل `Get-MpPerformanceReport`الأداء. على سبيل المثال، عند تنفيذ الأمر `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`، يتم تزويد المستخدم بقائمة من أفضل عشرة عمليات مسح ضوئي لأعلى 3 ملفات تؤثر على الأداء.
 
 لمزيد من المعلومات حول معلمات سطر الأوامر وخياراته، راجع [New-MpPerformanceRecording](#new-mpperformancerecording) و [Get-MpPerformanceReport](#get-mpperformancereport).
 
@@ -72,7 +72,7 @@ ms.locfileid: "64667373"
 
 ### <a name="performance-tuning-data-and-information"></a>بيانات ضبط الأداء ومعلوماته
 
-استنادا إلى الاستعلام، سيتمكن المستخدم من عرض البيانات لحسابات الفحص والمدة (الإجمالي/الحد الأدنى/المتوسط/الحد الأقصى/الوسيط)، والمسار، والعملية، وسبب الفحص. تظهر الصورة أدناه نموذج الإخراج لاستعلام بسيط لأعلى 10 ملفات لتأثير الفحص. 
+استنادا إلى الاستعلام، سيتمكن المستخدم من عرض البيانات لحسابات الفحص والمدة (الإجمالي/الحد الأدنى/المتوسط/الحد الأقصى/الوسيط)، والمسار، والعملية، وسبب الفحص. تظهر الصورة أدناه نموذج الإخراج لاستعلام بسيط لأعلى 10 ملفات لتأثير الفحص.
 
 :::image type="content" source="images/example-output.png" alt-text="مثال على الإخراج لاستعلام TopFiles أساسي" lightbox="images/example-output.png":::
 
@@ -92,6 +92,7 @@ ms.locfileid: "64667373"
 - **للتحويل**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
 ### <a name="requirements"></a>الاحتياجات
+
 يحتوي برنامج الحماية من الفيروسات من Microsoft Defender محلل الأداء على المتطلبات الأساسية التالية:
 
 - الإصدارات Windows المعتمدة: Windows 10 و Windows 11 وخادم Windows 2016 وما فوق
@@ -99,11 +100,11 @@ ms.locfileid: "64667373"
 - إصدار PowerShell: PowerShell الإصدار 5.1، PowerShell ISE، Remote PowerShell (4.18.2201.10+)، PowerShell 7.x (4.18.2201.10+)
 
 ## <a name="powershell-reference"></a>مرجع PowerShell
-هناك اثنان من أوامر Cmdlets PowerShell الجديدة المستخدمة لضبط أداء برنامج الحماية من الفيروسات من Microsoft Defender: 
+
+هناك اثنان من أوامر Cmdlets PowerShell الجديدة المستخدمة لضبط أداء برنامج الحماية من الفيروسات من Microsoft Defender:
 
 - [New-MpPerformanceRecording](#new-mpperformancerecording)
 - [Get-MpPerformanceReport](#get-mpperformancereport)
-
 
 ### <a name="new-mpperformancerecording"></a>New-MpPerformanceRecording
 
@@ -116,6 +117,7 @@ New-MpPerformanceRecording -RecordTo <String >
 ```
 
 #### <a name="description-new-mpperformancerecording"></a>الوصف: New-MpPerformanceRecording
+
 `New-MpPerformanceRecording` يجمع cmdlet تسجيل أداء عمليات المسح الضوئي برنامج الحماية من الفيروسات من Microsoft Defender. تحتوي تسجيلات الأداء هذه على أحداث عملية Microsoft-Antimalware-Engine وNT kernel ويمكن تحليلها بعد التجميع باستخدام [Get-MpPerformanceReport](#get-mpperformancereport) cmdlet.
 
 يوفر أمر cmdlet هذا `New-MpPerformanceRecording` نظرة ثاقبة على الملفات الإشكالية التي يمكن أن تسبب تدهورا في أداء برنامج الحماية من الفيروسات من Microsoft Defender. يتم توفير هذه الأداة "AS IS"، ولا تهدف إلى تقديم اقتراحات حول الاستثناءات. يمكن أن تقلل الاستثناءات من مستوى الحماية على نقاط النهاية الخاصة بك. وينبغي تعريف الاستثناءات، إن وجدت، بحذر.
@@ -125,7 +127,7 @@ New-MpPerformanceRecording -RecordTo <String >
 > [!IMPORTANT]
 > يتطلب أمر cmdlet هذا امتيازات مسؤول مرتفعة.
 
-**إصدارات نظام التشغيل المدعومة**
+**إصدارات نظام التشغيل المدعومة**:
 
 Windows الإصدار 10 والإصدارات الأحدث.
 
@@ -154,24 +156,26 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 #### <a name="parameters-new-mpperformancerecording"></a>المعلمات: New-MpPerformanceRecording
 
 ##### <a name="-recordto"></a>-RecordTo
+
 تحديد الموقع الذي سيتم فيه حفظ تسجيل أداء Microsoft Defender Antimalware.
 
 ```yaml
 Type: String
 Position: Named
 Default value: None
-Accept pipeline input: False 
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-##### <a name="-session"></a>-جلسة عمل 
+##### <a name="-session"></a>-جلسة عمل
+
 تحديد كائن PSSession الذي سيتم فيه إنشاء تسجيل أداء برنامج الحماية من الفيروسات من Microsoft Defender وحفظه. عند استخدام هذه المعلمة، تشير المعلمة RecordTo إلى المسار المحلي على الجهاز البعيد. متوفر مع إصدار نظام Defender الأساسي 4.18.2201.10.
 
 ```yaml
 Type: PSSession[]
 Position: 0
 Default value: None
-Accept pipeline input: False 
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -186,10 +190,10 @@ Get-MpPerformanceReport    [-Path] <String>
 [-TopScans <Int32>]
 [-TopFiles  <Int32>
     [-TopScansPerFile <Int32>]
-    [-TopProcessesPerFile  <Int32>  
+    [-TopProcessesPerFile  <Int32>
         [-TopScansPerProcessPerFile <Int32>]
     ]
-] 
+]
 [-TopExtensions  <Int32>
     [-TopScansPerExtension <Int32>]
     [-TopProcessesPerExtension <Int32>
@@ -198,7 +202,7 @@ Get-MpPerformanceReport    [-Path] <String>
     [-TopFilesPerExtension  <Int32>
         [-TopScansPerFilePerExtension <Int32>]
         ]
-    ] 
+    ]
 ]
 [-TopProcesses  <Int32>
     [-TopScansPerProcess <Int32>]
@@ -213,13 +217,14 @@ Get-MpPerformanceReport    [-Path] <String>
 ```
 
 #### <a name="description-get-mpperformancereport"></a>الوصف: Get-MpPerformanceReport
+
 `Get-MpPerformanceReport` يقوم cmdlet بتحليل تسجيل أداء برنامج الحماية من الفيروسات من Microsoft Defender تم جمعه مسبقا ([New-MpPerformanceRecording](#new-mpperformancerecording)) ويبلغ عن مسارات الملفات وملحقات الملفات والعمليات التي تسبب أكبر تأثير عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender.
 
 يوفر محلل الأداء نظرة ثاقبة على الملفات الإشكالية التي يمكن أن تسبب تدهورا في أداء برنامج الحماية من الفيروسات من Microsoft Defender. يتم توفير هذه الأداة "AS IS" ولا تهدف إلى تقديم اقتراحات حول الاستثناءات. يمكن أن تقلل الاستثناءات من مستوى الحماية على نقاط النهاية الخاصة بك. وينبغي تعريف الاستثناءات، إن وجدت، بحذر.
 
 لمزيد من المعلومات حول محلل الأداء، راجع [محلل الأداء](/windows-hardware/test/wpt/windows-performance-analyzer) المستندات.
 
-**إصدارات نظام التشغيل المدعومة**
+**إصدارات نظام التشغيل المدعومة**:
 
 Windows الإصدار 10 والإصدارات الأحدث.
 
@@ -228,19 +233,19 @@ Windows الإصدار 10 والإصدارات الأحدث.
 
 #### <a name="examples-get-mpperformancereport"></a>أمثلة: Get-MpPerformanceReport
 
-##### <a name="example-1-single-query"></a>مثال 1: استعلام مفرد 
+##### <a name="example-1-single-query"></a>مثال 1: استعلام مفرد
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:20
 ```
 
-##### <a name="example-2-multiple-queries"></a>مثال 2: استعلامات متعددة 
+##### <a name="example-2-multiple-queries"></a>مثال 2: استعلامات متعددة
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10
 ```
 
-##### <a name="example-3-nested-queries"></a>مثال 3: الاستعلامات المتداخلة 
+##### <a name="example-3-nested-queries"></a>مثال 3: الاستعلامات المتداخلة
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensionsPerProcess:3 -TopScansPerExtensionPerProcess:3
@@ -255,17 +260,19 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:10
 #### <a name="parameters-get-mpperformancereport"></a>المعلمات: Get-MpPerformanceReport
 
 ##### <a name="-minduration"></a>-MinDuration
+
 تحديد الحد الأدنى للمدة الزمنية لأي فحص أو إجمالي مدد الفحص للملفات والملحقات والعمليات المضمنة في التقرير؛ يقبل قيما مثل  **0.1234567sec** أو **0.1234ms** أو **0.1us** أو TimeSpan صالح.
 
 ```yaml
 Type: String
 Position: Named
 Default value: None
-Accept pipeline input: False 
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ##### <a name="-path"></a>-المسار
+
 تحديد المسار (المسارات) إلى موقع واحد أو أكثر.
 
 ```yaml
@@ -276,7 +283,8 @@ Accept pipeline input: True
 Accept wildcard characters: False
 ```
 
-### <a name="-topextensions"></a>-TopExtensions 
+### <a name="-topextensions"></a>-TopExtensions
+
 تحديد عدد الملحقات العلوية إلى الإخراج، التي تم فرزها حسب "المدة".
 
 ```yaml
@@ -287,7 +295,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess 
+### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess
+
 تحديد عدد الملحقات العلوية التي يجب إخراجها لكل عملية علوية، تم فرزها حسب "المدة".
 
 ```yaml
@@ -299,8 +308,8 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfiles"></a>-TopFiles
-يطلب تقرير الملفات العليا ويحدد عدد الملفات العليا التي يجب إخراجها، والتي تم فرزها حسب "المدة".
 
+يطلب تقرير الملفات العليا ويحدد عدد الملفات العليا التي يجب إخراجها، والتي تم فرزها حسب "المدة".
 
 ```yaml
 Type: Int32
@@ -310,9 +319,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfilesperextension"></a>-TopFilesPerExtension 
-تحديد عدد الملفات العلوية التي يجب إخراجها لكل ملحق علوي، تم فرزها حسب "المدة".
+### <a name="-topfilesperextension"></a>-TopFilesPerExtension
 
+تحديد عدد الملفات العلوية التي يجب إخراجها لكل ملحق علوي، تم فرزها حسب "المدة".
 
 ```yaml
 Type: Int32
@@ -323,6 +332,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
+
 تحديد عدد الملفات العلوية التي يجب إخراجها لكل عملية علوية، تم فرزها حسب "المدة".
 
 ```yaml
@@ -334,6 +344,7 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topprocesses"></a>-TopProcesses
+
 يطلب تقرير العمليات العليا ويحدد عدد العمليات العليا التي يجب إخراجها، والتي تم فرزها حسب "المدة".
 
 ```yaml
@@ -344,9 +355,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension 
-تحديد عدد العمليات العليا التي يجب إخراجها لكل ملحق علوي، تم فرزها حسب "المدة".
+### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension
 
+تحديد عدد العمليات العليا التي يجب إخراجها لكل ملحق علوي، تم فرزها حسب "المدة".
 
 ```yaml
 Type: Int32
@@ -356,10 +367,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-
 ### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
-تحديد عدد العمليات العليا التي يجب إخراجها لكل ملف علوي، تم فرزها حسب "المدة".
 
+تحديد عدد العمليات العليا التي يجب إخراجها لكل ملف علوي، تم فرزها حسب "المدة".
 
 ```yaml
 Type: Int32
@@ -370,9 +380,9 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscans"></a>-TopScans
+
 يطلب تقرير المسح الأعلى ويحدد عدد عمليات الفحص العليا إلى الإخراج، والتي تم فرزها حسب "المدة".
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -380,12 +390,11 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-
 
 ### <a name="-topscansperextension"></a>-TopScansPerExtension
+
 تحديد عدد عمليات الفحص العلوية لإخراج كل ملحق علوي، تم فرزها حسب "المدة".
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -394,11 +403,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess
 
-### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess 
 تحديد عدد عمليات الفحص العلوية لإخراج كل ملحق علوي لكل عملية علوية، تم فرزها حسب "المدة".
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -406,12 +414,11 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-
 
 ### <a name="-topscansperfile"></a>-TopScansPerFile
+
 تحديد عدد عمليات الفحص العلوية لإخراج كل ملف علوي، تم فرزه حسب "المدة".
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -420,10 +427,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension 
+### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension
+
 تحديد عدد عمليات الفحص العلوية لإخراج كل ملف علوي لكل ملحق علوي، تم فرزه حسب "المدة".
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -432,11 +439,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess
 
-### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess 
 تحديد عدد عمليات الفحص العلوية للإخراج لكل ملف علوي لكل عملية علوية، تم فرزها حسب "المدة".
 
-
 ```yaml
 Type: Int32
 Position: Named
@@ -445,10 +451,9 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### <a name="-topscansperprocess"></a>-TopScansPerProcess
 
-### <a name="-topscansperprocess"></a>-TopScansPerProcess 
 تحديد عدد عمليات الفحص العليا لإخراج كل عملية علوية في تقرير العمليات العليا، التي تم فرزها حسب "المدة".
-
 
 ```yaml
 Type: Int32
@@ -459,8 +464,8 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
-تحديد عدد عمليات الفحص العلوية للإخراج لكل عملية علوية لكل ملحق علوي، تم فرزها حسب "المدة".
 
+تحديد عدد عمليات الفحص العلوية للإخراج لكل عملية علوية لكل ملحق علوي، تم فرزها حسب "المدة".
 
 ```yaml
 Type: Int32
@@ -471,8 +476,8 @@ Accept wildcard characters: False
 ```
 
 ### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
-تحديد عدد عمليات الفحص العلوية للإخراج لكل عملية علوية لكل ملف علوي، تم فرزها حسب "المدة".
 
+تحديد عدد عمليات الفحص العلوية للإخراج لكل عملية علوية لكل ملف علوي، تم فرزها حسب "المدة".
 
 ```yaml
 Type: Int32

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: f8f6865bc65662cbbfd5a9276d95abc405f5a64b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: dfe5567edbe86279ad5a5b0645cb3ea6c54c1174
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664227"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783597"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>تمكين قواعد تقليل الأجزاء المعرضة للهجوم
 
@@ -93,7 +93,7 @@ ms.locfileid: "64664227"
 
 > [!IMPORTANT]
 > يمكن أن يؤدي استبعاد الملفات أو المجلدات إلى تقليل الحماية التي توفرها قواعد ASR بشكل كبير. سيتم السماح بتشغيل الملفات المستبعدة، ولن يتم تسجيل أي تقرير أو حدث.
-> إذا كانت قواعد ASR تكشف عن الملفات التي تعتقد أنه لا ينبغي الكشف عنها، يجب [عليك استخدام وضع التدقيق أولا لاختبار القاعدة](evaluate-attack-surface-reduction.md).
+> إذا كانت قواعد ASR تكشف عن الملفات التي تعتقد أنه لا ينبغي الكشف عنها، يجب [عليك استخدام وضع التدقيق أولا لاختبار القاعدة](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit).
 
 يمكنك تحديد ملفات أو مجلدات فردية (باستخدام مسارات المجلدات أو أسماء الموارد المؤهلة بالكامل)، ولكن لا يمكنك تحديد القواعد التي تنطبق عليها الاستثناءات. يتم تطبيق الاستبعاد فقط عند بدء تشغيل التطبيق أو الخدمة المستبعدة. على سبيل المثال، إذا أضفت استثناء لخدمة تحديث قيد التشغيل بالفعل، فستستمر خدمة التحديث في تشغيل الأحداث حتى يتم إيقاف الخدمة وإعادة تشغيلها.
 

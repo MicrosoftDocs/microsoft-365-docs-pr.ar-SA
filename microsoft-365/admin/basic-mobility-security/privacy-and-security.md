@@ -1,5 +1,5 @@
 ---
-title: الخصوصية والأمان في التنقل والأمان الأساسيين
+title: الخصوصية والأمان في Basic Mobility and Security
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,16 +13,16 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: بعد تنشيط "التنقل والأمان الأساسيين"، يمكنك إنشاء سياسات إدارة أجهزة المحمول.
-ms.openlocfilehash: 288ffe44610a68193ca6d96543e97a02e334f57d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: بعد تنشيط Basic Mobility and Security، يمكنك إنشاء نهج إدارة أجهزة المحمول.
+ms.openlocfilehash: 713cedb61c8519cf735b47fafa1e58c33170e683
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63569026"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780717"
 ---
-# <a name="privacy-and-security-in-basic-mobility-and-security"></a>الخصوصية والأمان في التنقل والأمان الأساسيين
+# <a name="privacy-and-security-in-basic-mobility-and-security"></a>الخصوصية والأمان في Basic Mobility and Security
 
-إن Basic Mobility and Security هي خدمة مستندة إلى السحابة Microsoft Intune تساعدك على إدارة الأجهزة المحمولة وتأمينها في مؤسستك. بعد تنشيط "التنقل والأمان الأساسيين"، يمكنك إنشاء سياسات إدارة أجهزة المحمول. يمكن بعد ذلك نشر هذه السياسات على الأجهزة المحمولة التي تم تسجيلها من قبل مستخدمين Microsoft 365 مرخصين في مؤسستك.
+Basic Mobility and Security هي خدمة مستندة إلى السحابة تعمل بواسطة Microsoft Intune تساعدك على إدارة الأجهزة المحمولة وتأمينها في مؤسستك. بعد تنشيط Basic Mobility and Security، يمكنك إنشاء نهج إدارة أجهزة المحمول. يمكن بعد ذلك نشر هذه النهج على الأجهزة المحمولة التي تم تسجيلها من قبل المستخدمين المرخصين Microsoft 365 في مؤسستك.
 
-Microsoft Intune إلى Microsoft 365 معلومات حول حالة توافق كل جهاز مدار، ثم يمكنك إنشاء تقارير تظهر ما إذا كانت الأجهزة المدارة في مؤسستك متوافقة استنادا إلى السياسات التي تم تعيينها. لمعرفة المزيد حول التزام Microsoft بالخصوصية والأمان، راجع  [مركز الثقةMicrosoft](https://www.microsoft.com/trust-center).
+Microsoft Intune إرسال معلومات إلى Microsoft 365 حول حالة التوافق لكل جهاز مدار، ثم يمكنك إنشاء تقارير توضح ما إذا كانت الأجهزة المدارة في مؤسستك متوافقة بناء على النهج التي تم تعيينها. لمعرفة المزيد حول التزام Microsoft بالخصوصية والأمان، راجع [مركز توثيق Microsoft](https://www.microsoft.com/trust-center).

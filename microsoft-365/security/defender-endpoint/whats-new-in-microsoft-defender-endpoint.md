@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06018eb69e369b06425c9db1f63f22ff97f15eac
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a3294529a9b86fdc9bdb83de6a3296c9f0d6507d
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664469"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782820"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>ما الجديد في Microsoft Defender لنقطة النهاية
 
@@ -50,7 +50,7 @@ ms.locfileid: "64664469"
 لمزيد من المعلومات حول أحدث الميزات في منتجات أمان Microsoft Defender الأخرى، راجع:
 
 - [الجديد في Microsoft 365 Defender](../defender/whats-new.md)
-- [ما الجديد في Microsoft Defender لـ Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
+- [أحدث الميزات في Microsoft Defender لـ Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
 - [ما الجديد في Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [ما الجديد في Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
@@ -60,6 +60,8 @@ ms.locfileid: "64664469"
 - [ما الجديد في Defender لنقطة النهاية على iOS](ios-whatsnew.md)
 - [ما الجديد في Defender لنقطة النهاية على Linux](linux-whatsnew.md)
 
+## <a name="march-2022"></a>مارس 2022
+- [الإعداد المحدث وتماثل الميزات ل Windows Server 2012 R2 و Windows Server 2016)](configure-server-endpoints.md)<br/> حزمة الحلول الموحدة الجديدة متاحة الآن بشكل عام وتجعل من السهل إلحاق الخوادم عن طريق إزالة التبعيات وخطوات التثبيت. بالإضافة إلى ذلك، تأتي حزمة الحلول الموحدة هذه مع العديد من تحسينات الميزات الجديدة.
 
 ## <a name="january-2022"></a>يناير 2022
 

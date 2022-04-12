@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3103ab5332045da58609b048d637da30d287ed10
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 0a6f53b0723d7f3e9b4761aa83238e618d947e55
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666559"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783414"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>استكشاف المشكلات وإصلاحها على Microsoft Defender لنقطة النهاية على Android
 
@@ -144,24 +144,25 @@ ms.locfileid: "64666559"
 
 إذا واجه مستخدم مشكلة لم تتم معالجتها بالفعل في الأقسام أعلاه أو تعذر عليه حلها باستخدام الخطوات المدرجة، يمكن للمستخدم تقديم **ملاحظات داخل التطبيق** إلى جانب **البيانات التشخيصية**. يمكن لفريقنا بعد ذلك التحقق من السجلات لتوفير الحل الصحيح. يمكن للمستخدمين اتباع هذه الخطوات للقيام بنفس الشيء:
 
-1.  افتح **تطبيق MDE** على جهازك وانقر فوق **أيقونة ملف التعريف** في الزاوية العلوية اليمنى.
+1. افتح **تطبيق MDE** على جهازك وانقر فوق **أيقونة ملف التعريف** في الزاوية العلوية اليمنى.
 
     :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="أيقونة ملف التعريف في مدخل Microsoft Defender لنقطة النهاية" lightbox="images/select-profile-icon-1.jpg":::
 
-2.  حدد "تعليمات & الملاحظات".
+2. حدد "تعليمات & الملاحظات".
 
     :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="الخيار &quot;تعليمات & الملاحظات&quot; الذي يمكن تحديده في مدخل Microsoft Defender لنقطة النهاية" lightbox="images/selecthelpandfeedback2.png":::
 
-3.  حدد "إرسال ملاحظات إلى Microsoft".
+3. حدد "إرسال ملاحظات إلى Microsoft".
 
     :::image type="content" alt-text="تحديد إرسال ملاحظات إلى Microsoft" source="images/send-feedback-to-microsoft-3.jpg":::
 
-4.  اختر من الخيارات المحددة. للإبلاغ عن مشكلة، حدد "أريد الإبلاغ عن مشكلة".
+4. اختر من الخيارات المحددة. للإبلاغ عن مشكلة، حدد "أريد الإبلاغ عن مشكلة".
 
     :::image type="content" source="images/report-issue-4.jpg" alt-text="الخيار &quot;أريد الإبلاغ عن مشكلة&quot;" lightbox="images/report-issue-4.jpg":::
 
-5.  قم بتوفير تفاصيل المشكلة التي تواجهها وتحقق من "إرسال البيانات التشخيصية". نوصي بالتحقق من "تضمين عنوان بريدك الإلكتروني" حتى يتمكن الفريق من الوصول إليك مرة أخرى باستخدام حل أو متابعة.
+5. قم بتوفير تفاصيل المشكلة التي تواجهها وتحقق من "إرسال البيانات التشخيصية". نوصي بالتحقق من "تضمين عنوان بريدك الإلكتروني" حتى يتمكن الفريق من الوصول إليك مرة أخرى باستخدام حل أو متابعة.
 
     :::image type="content" source="images/finalsubmit5.png" alt-text="الجزء الذي يمكنك فيه إضافة التفاصيل وإرفاق البيانات التشخيصية" lightbox="images/finalsubmit5.png":::
 
-6.  انقر فوق "إرسال" لإرسال الملاحظات بنجاح.
+6. انقر فوق "إرسال" لإرسال الملاحظات بنجاح.
+

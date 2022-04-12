@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: تعرف على كيفية الحصول على تقرير استخدام مستعرض Microsoft باستخدام لوحة معلومات تقارير Microsoft 365 في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: 32f834874e17376bc1b6fb2188c36f2959f504bf
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 29b4161b9bb6cbc509d6541e13fa9222628534b4
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738233"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64782006"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>تقارير Microsoft 365 في مركز الإدارة - استخدام مستعرض Microsoft
 

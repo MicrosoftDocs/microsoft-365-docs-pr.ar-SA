@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: التنقل الأساسي والأمان جزء من خطط Microsoft 365.
-ms.openlocfilehash: 0c1c61181d7e8bd5eb0ee000e29285c32a454692
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 36190be6345188503e7ba5147b72918a342aba73
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713834"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781172"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>الاختيار بين التنقل الأساسي والأمان أو Intune
 
@@ -86,20 +86,20 @@ ms.locfileid: "64713834"
 مع Intune لديك مجموعة الإجراءات التالية:
 
 - [إعادة تعيين Autopilot](/mem/autopilot/windows-autopilot-reset) (Windows فقط)
-- استرداد   [مفتاح Bitlocker](https://support.microsoft.com/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) (Windows فقط)
+- [استرداد مفتاح Bitlocker](https://support.microsoft.com/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6) (Windows فقط)
 - [استخدام مسح الجهاز أو إيقافه أو إلغاء تسجيله يدويا](/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
-- [تعطيل تأمين](/mem/intune/remote-actions/device-activation-lock-disable)  التنشيط (iOS فقط)
-- [بداية جديدة](/mem/intune/remote-actions/device-fresh-start)  (Windows فقط)
-- [فحص](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)  كامل (Windows 10 فقط)
-- [تحديد موقع الجهاز](/mem/intune/remote-actions/device-locate)  (iOS فقط)
-- [الوضع](/mem/intune/remote-actions/device-lost-mode)  المفقود (iOS فقط)- [المسح السريع](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 فقط)
+- [تعطيل تأمين التنشيط](/mem/intune/remote-actions/device-activation-lock-disable) (iOS فقط)
+- [بداية جديدة](/mem/intune/remote-actions/device-fresh-start) (Windows فقط)
+- [الفحص الكامل](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 فقط)
+- [تحديد موقع الجهاز](/mem/intune/remote-actions/device-locate) (iOS فقط)
+- [الوضع المفقود](/mem/intune/remote-actions/device-lost-mode) (iOS فقط)- [الفحص السريع](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) (Windows 10 فقط)
 - [التحكم عن بعد لنظام التشغيل Android](/mem/intune/remote-actions/teamviewer-support)
 - [تأمين عن بعد](/mem/intune/remote-actions/device-remote-lock)
 - [إعادة تسمية الجهاز](/mem/intune/remote-actions/device-rename)
-- إعادة [تعيين إعادة تشغيل](/mem/intune/remote-actions/device-restart)  [رمز المرور](/mem/intune/remote-actions/device-passcode-reset) (Windows فقط)
+- إعادة [تعيين إعادة تشغيل](/mem/intune/remote-actions/device-restart) [رمز المرور](/mem/intune/remote-actions/device-passcode-reset) (Windows فقط)
 - [تحديث Windows Defender Security Intelligence](https://www.microsoft.com/en-us/wdsi/defenderupdates) (Windows فقط)
 - [إعادة تعيين رمز PIN Windows 10](/windows/security/identity-protection/hello-for-business/hello-feature-pin-reset) (Windows فقط)
-- [إرسال إعلامات](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)  مخصصة (Android وiOS iPad OS)
+- [إرسال إعلامات مخصصة](/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device) (Android وiOS iPad OS)
 - [مزامنة الجهاز](/mem/intune/remote-actions/device-sync)
 
 لمزيد من المعلومات حول إجراءات Intune، راجع [وثائق Microsoft Intune](/mem/intune/).

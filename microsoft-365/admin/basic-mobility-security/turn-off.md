@@ -13,46 +13,46 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: قم بإزالة المجموعات أو النهج من أجل إيقاف تشغيل "التنقل والأمان الأساسيين".
-ms.openlocfilehash: ff3fe72e1ca3a6445aa29ac18404aae139a70f8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: إزالة المجموعات أو النهج لإيقاف تشغيل Basic Mobility and Security.
+ms.openlocfilehash: c3c82c040e688977a68e06639e87c8f733bc8c38
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63572917"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64780754"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>إيقاف تشغيل التنقل والأمان الأساسيين
 
-ول إيقاف تشغيل "التنقل والأمان الأساسيين" بشكل فعال، يمكنك إزالة مجموعات من الأشخاص المعرفة بواسطة مجموعات الأمان من سياسات إدارة الأجهزة، أو إزالة النهج نفسها.
+لإيقاف تشغيل Basic Mobility and Security بشكل فعال، يمكنك إزالة مجموعات من الأشخاص المعرفة بواسطة مجموعات الأمان من نهج إدارة الأجهزة، أو إزالة النهج نفسها.
 
-- يمكنك إزالة مجموعات المستخدمين عن طريق إزالة مجموعات أمان المستخدمين من سياسات الأجهزة التي أنشأتها.
+- قم بإزالة مجموعات المستخدمين عن طريق إزالة مجموعات أمان المستخدم من نهج الجهاز التي أنشأتها.
 
-- قم بتعطيل التنقل والأمان الأساسيين للجميع عن طريق إزالة كل سياسات الأجهزة الأساسية الخاصة بالتنقل والأمان.
+- تعطيل التنقل الأساسي والأمان للجميع عن طريق إزالة جميع نهج الأجهزة الأساسية للتنقل والأمان.
 
-تعمل هذه الخيارات على إزالة فرض التنقل والأمان الأساسي للأجهزة في مؤسستك. لسوء الحظ، لا يمكنك ببساطة "إلغاء توفير" التنقل والأمان الأساسيين بعد إعداده.
+تزيل هذه الخيارات تطبيق Basic Mobility and Security للأجهزة في مؤسستك. لسوء الحظ، لا يمكنك ببساطة "إلغاء التوفير" Basic Mobility and Security بعد إعداده.
 
 > [!IMPORTANT]
-> كن على دراية بالتأثر على أجهزة المستخدمين عند إزالة مجموعات أمان المستخدمين من السياسات أو إزالة السياسات نفسها. على سبيل المثال، قد تتم إزالة ملفات تعريف البريد الإلكتروني ورسائل البريد الإلكتروني المخزنة مؤقتا، استنادا إلى الجهاز. لمزيد من المعلومات، راجع   [ما الذي يحدث عند حذف نهج أو إزالة مستخدم من النهج؟](../../admin/basic-mobility-security/create-device-security-policies.md)
+> كن على دراية بالتأثير على أجهزة المستخدمين عند إزالة مجموعات أمان المستخدمين من النهج أو إزالة النهج نفسها. على سبيل المثال، قد تتم إزالة ملفات تعريف البريد الإلكتروني ورسائل البريد الإلكتروني المخزنة مؤقتا، اعتمادا على الجهاز. لمزيد من المعلومات، راجع [ماذا يحدث عند حذف نهج أو إزالة مستخدم من النهج؟](../../admin/basic-mobility-security/create-device-security-policies.md)
 
-## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>إزالة مجموعات أمان المستخدمين من سياسات الأجهزة الأساسية للتنقل والأمان
+## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>إزالة مجموعات أمان المستخدم من نهج الأجهزة الأساسية للتنقل والأمان
 
-1. في المستعرض، اكتب: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. في نوع المستعرض: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
 
-2. حدد نهج جهاز، وحدد **تحرير نهج**.
+2. حدد نهج الجهاز، وحدد **تحرير النهج**.
 
-3. في صفحة  **النشر** ، حدد **إزالة**.
+3. في صفحة **النشر** ، حدد **"إزالة**".
 
-4. ضمن   **مجموعات،** حدد مجموعة أمان.
+4. ضمن **المجموعات**، حدد مجموعة أمان.
 
-5. حدد  **إزالة**، وحدد **حفظ**.
+5. حدد **"إزالة**"، وحدد **"حفظ**".
 
-## <a name="remove-basic-mobility-and-security-device-policies"></a>إزالة سياسات الأجهزة الأساسية للتنقل والأمان
+## <a name="remove-basic-mobility-and-security-device-policies"></a>إزالة نهج الأجهزة الأساسية للتنقل والأمان
 
-1. في المستعرض، اكتب: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. في نوع المستعرض: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
 
-2. حدد نهج جهاز، ثم حدد  **حذف نهج**.
+2. حدد نهج الجهاز، ثم حدد **"حذف النهج**".
 
-3. في مربع الحوار تحذير، حدد **نعم**.
+3. في مربع الحوار "تحذير"، حدد **"نعم**".
 
 > [!NOTE]
-> للحصول على مزيد من الخطوات لإزالة حظر الأجهزة إذا كانت أجهزة المؤسسة لا تزال في حالة حظر، راجع منشور المدونة إزالة التحكم بالوصول [من](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934) Mobile Device Management لـ Office 365.
+> لمزيد من الخطوات لإلغاء حظر الأجهزة إذا كانت أجهزة مؤسستك لا تزال في حالة حظر، راجع منشور [المدونة "إزالة التحكم بالوصول" من Mobile Device Management لـ Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).

@@ -1,5 +1,5 @@
 ---
-title: مركز مسؤولي Microsoft 365 Viva Insights الأنشطة
+title: تقارير نشاط مركز مسؤولي Microsoft 365 Viva Insights
 ms.author: efrene
 author: efrene
 manager: scotv
@@ -17,34 +17,34 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: تعرف على كيفية الحصول على Microsoft 365 Apps تقرير الاستخدام ل Viva Insights في لوحة معلومات تقارير Microsoft 365 في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: bb7f36c1db632fc1745c9dbe8f63f9e6f20909b4
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: تعرف على كيفية الحصول على تقرير Microsoft 365 Apps للاستخدام لنشاط Viva Insights في لوحة معلومات تقارير Microsoft 365 في مركز مسؤولي Microsoft 365.
+ms.openlocfilehash: c0b19871db61f37585384766d4e44ccb602a661b
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63705273"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781304"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>Microsoft 365 التقارير في مركز الإدارة - نشاط viva Insights
+# <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>تقارير Microsoft 365 في مركز الإدارة - نشاط Viva Insights
 
-كمسؤول Microsoft 365، تعرض لك لوحة معلومات التقارير نظرة عامة حول النشاط عبر منتجات مختلفة في مؤسستك. تمكنك من التنقل للحصول على معرفة أكثر تحديدا حول الأنشطة الخاصة بكل منتج. اطلع على تقارير النشاط في مركز مسؤولي Microsoft 365. 
+كمسؤول Microsoft 365، تعرض لك لوحة معلومات التقارير نظرة عامة على النشاط عبر منتجات مختلفة في مؤسستك. يمكنك من التنقل للحصول على رؤية أكثر دقة حول الأنشطة الخاصة بكل منتج. اطلع على تقارير النشاط في مركز مسؤولي Microsoft 365. 
 
-على سبيل المثال، يمكنك فهم اعتماد Viva Insights من خلال النظر إلى المستخدمين النشطين. بالإضافة إلى ذلك، يمكنك العثور على دليل نشر لزيادة تعزيز الاعتماد في مؤسستك.
+على سبيل المثال، يمكنك فهم اعتماد Viva Insights من خلال النظر إلى المستخدمين النشطين. بالإضافة إلى ذلك، يمكنك العثور على دليل نشر لتعزيز الاعتماد في مؤسستك.
 
-## <a name="how-do-i-get-to-the-to-the-viva-insights-activity-report"></a>كيف يمكنني الوصول إلى تقرير نشاط Viva Insights؟
+## <a name="how-do-i-get-to-the-to-the-viva-insights-activity-report"></a>كيف أعمل الوصول إلى تقرير نشاط Viva Insights؟
 
-1. في مركز الإدارة، انتقل إلى **صفحة استخدام** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">التقارير.</a> 
-2. ابحث **عن نشاط Viva Insights.**
+1. في مركز الإدارة، انتقل إلى صفحة <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">استخدام</a> **التقارير**\>. 
+2. البحث عن **نشاط Viva Insights**.
 
-## <a name="interpret-the-microsoft-365-apps-usage-report"></a>تفسير Microsoft 365 Apps الاستخدام 
+## <a name="interpret-the-microsoft-365-apps-usage-report"></a>تفسير تقرير استخدام Microsoft 365 Apps 
 
-يمكنك الاطلاع على نشاط Viva Insights المستخدم من خلال الاطلاع على مخطط  **المستخدمين النشطة**. يمكن عرض Insights Viva النشط للاتجاهات على مدار آخر 7 أيام أو 30 يوما أو 90 يوما أو 180 يوما.  
+يمكنك الحصول على طريقة عرض لنشاط Viva Insights الخاص بالمستخدم من خلال النظر إلى **مخطط المستخدمين النشطين**. يمكن عرض مخطط المستخدم النشط Viva Insights للاتجاهات على مدار آخر 7 أيام أو 30 يوما أو 90 يوما أو 180 يوما.  
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Apps استخدام Viva Insights.](../../media/viva-insights-chart.png)
+> ![تقرير استخدام Microsoft 365 Apps مع Viva Insights.](../../media/viva-insights-chart.png)
 
-**المستخدمون النشطون** هم المستخدمون الذين شاركوا مع ميزة Viva واحدة Insights على الأقل في ذلك اليوم. يشمل ذلك المشاركة لأكثر من 20 ثانية على أي بريد إلكتروني في Viva Insight، أو النقر فوق أي إجراء أو اتخاذ إجراء على أي من لوحات معلومات ويب Insights أو تصفح تطبيق Viva Insights في Teams أو Outlook الإضافية أو لوحات معلومات الويب. 
+**المستخدمون النشطون** هم المستخدمون الذين تفاعلوا مع ميزة Viva Insights واحدة على الأقل في ذلك اليوم. يشمل ذلك أكثر من 20 ثانية على أي بريد إلكتروني من Viva Insight، أو النقر فوق أي Insights أو اتخاذ إجراء للتصفح، أو زيارة تطبيق Viva Insights في Teams أو Outlook الوظائف الإضافية أو لوحات معلومات الويب. 
 
-## <a name="view-the-viva-insights-deployment-guide"></a>عرض دليل Insights Viva
-يمكنك النقر فوق **تحسين اعتماد Viva Insights** لعرض [دليل Insights Viva](/viva/insights/personal/setup/deployment-guide).
+## <a name="view-the-viva-insights-deployment-guide"></a>عرض دليل نشر Viva Insights
+يمكنك النقر فوق **"تعزيز اعتماد Viva Insights**" لعرض [دليل نشر Viva Insights](/viva/insights/personal/setup/deployment-guide).
 

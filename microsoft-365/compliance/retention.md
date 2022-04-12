@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على نهج الاستبقاء وتسميات الاستبقاء التي تساعدك على الاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه.
-ms.openlocfilehash: 61bd82e3b4012e7e191971faf768cf8d7cbba4f2
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: e14c438858d5e57dca6ecab0573014171a0c6fb7
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758630"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783304"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>التعرف على نهج الاستبقاء وتسميات الاستبقاء
 
@@ -502,7 +502,7 @@ ms.locfileid: "64758630"
 
   - إذا تم تطبيق نهج الاستبقاء ضمنيا على علبة بريد وكان إجراء الاستبقاء الذي تم تكوينه هو الاحتفاظ به، يستمر تطبيق نهج الاستبقاء ولا تصبح علبة البريد غير النشطة مؤهلة أبدا للحذف التلقائي. عندما لا يتم تطبيق إجراء الاستبقاء بسبب انتهاء فترة الاستبقاء، يمكن لمسؤول Exchange الآن [حذف علبة البريد غير النشطة يدويا](delete-an-inactive-mailbox.md)
 
-        An implicit retention policy requires a static policy scope with the **All recipients** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
+    يتطلب نهج الاستبقاء الضمني نطاقا ثابتا للنهج مع تكوين **كافة المستلمين** (للبريد الإلكتروني Exchange) أو **كافة المجموعات** (مجموعات Microsoft 365).
 
     لمزيد من المعلومات حول علب البريد غير النشطة التي تم تطبيق نهج الاستبقاء عليها، راجع [علب البريد غير النشطة واستبقاء Microsoft 365](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 

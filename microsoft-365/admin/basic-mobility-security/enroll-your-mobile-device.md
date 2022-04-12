@@ -1,5 +1,5 @@
 ---
-title: تسجيل جهازك المحمول باستخدام "التنقل والأمان الأساسي"
+title: تسجيل جهازك المحمول باستخدام Basic Mobility and Security
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,66 +18,66 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 - MET150
-description: قبل أن تتمكن من Microsoft 365 الخدمات مع جهازك، قد تحتاج أولا إلى تسجيله في التنقل والأمان الأساسيين Microsoft 365.
-ms.openlocfilehash: bc937442be852862172b4ef747d757df4785f880
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: قبل أن تتمكن من استخدام خدمات Microsoft 365 مع جهازك، قد تحتاج أولا إلى تسجيلها في Basic Mobility and Security for Microsoft 365.
+ms.openlocfilehash: 714102cf252e4dc483794f4e4280420256bfb0c3
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63570069"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64781128"
 ---
-# <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>تسجيل جهازك المحمول باستخدام "التنقل والأمان الأساسي"
+# <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>تسجيل جهازك المحمول باستخدام Basic Mobility and Security
 
-استخدام الهاتف والكمبيوتر اللوحي والأجهزة المحمولة الأخرى للعمل طريقة رائعة للبقاء على اطلاع على مشاريع الأعمال والعمل عليها أثناء وجودك خارج المكتب. قبل أن تتمكن من Microsoft 365 الخدمات مع جهازك، قد تحتاج أولا إلى تسجيله في أساسيات التنقل والأمان Microsoft 365 باستخدام Microsoft Intune Company Portal.
+يعد استخدام الهاتف والكمبيوتر اللوحي والأجهزة المحمولة الأخرى للعمل طريقة رائعة للبقاء على اطلاع على مشاريع العمل والعمل عليها أثناء وجودك بعيدا عن المكتب. قبل أن تتمكن من استخدام خدمات Microsoft 365 مع جهازك، قد تحتاج أولا إلى تسجيلها في Basic Mobility and Security Microsoft 365 باستخدام Microsoft Intune Company Portal.
 
-تختار المؤسسات التنقل والأمان الأساسيين بحيث يمكن للموظفين استخدام أجهزتهم المحمولة للوصول بشكل آمن إلى البريد الإلكتروني للعمل والتقويمات والمستندات بينما تعمل الشركة على تأمين البيانات المهمة وتلبي متطلبات التوافق الخاصة بهم.لمعرفة المزيد، راجع [نظرة عامة على التنقل والأمان الأساسيين Microsoft 365](overview.md). لمزيد من المعلومات، راجع  [ما هي المعلومات التي يمكن لمنظمتي رؤياها عند تسجيل جهازي؟](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
+تختار المؤسسات Basic Mobility and Security بحيث يمكن للموظفين استخدام أجهزتهم المحمولة للوصول بأمان إلى البريد الإلكتروني والتقويمات والمستندات الخاصة بالعمل بينما تقوم الشركة بتأمين البيانات المهمة وتلبية متطلبات التوافق الخاصة بهم. لمعرفة المزيد، راجع [نظرة عامة على التنقل الأساسي والأمان Microsoft 365](overview.md). لمزيد من المعلومات، راجع [المعلومات التي يمكن لمؤسستي رؤيتها عند تسجيل جهازي؟](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 > [!IMPORTANT]
-> عند تسجيل جهازك في أساسيات التنقل والأمان Microsoft 365، قد يطلب منك إعداد كلمة مرور، إلى جانب السماح بخيار مسح الجهاز في مؤسسة العمل. يمكن تنفيذ عملية مسح بيانات الجهاز من مركز مسؤولي Microsoft 365، <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank"></a>على سبيل المثال، لإزالة كل البيانات من الجهاز إذا تم إدخال كلمة المرور بشكل غير صحيح عدة مرات أو إذا تم خرق شروط الاستخدام.
+> عند تسجيل جهازك في Basic Mobility and Security for Microsoft 365، قد يطلب منك إعداد كلمة مرور، إلى جانب السماح للخيار الذي يسمح لمؤسسة العمل بمسح الجهاز. يمكن إجراء مسح للجهاز من <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>، على سبيل المثال، لإزالة كافة البيانات من الجهاز إذا تم إدخال كلمة المرور بشكل غير صحيح عدة مرات أو إذا تم قطع شروط الاستخدام.
 
-## <a name="supported-devices"></a>الأجهزة المعتمدة
+## <a name="supported-devices"></a>الأجهزة المدعومة
 
-تعمل خدمة التنقل والأمان Microsoft 365 التي تستضيفها خدمة Intune مع معظم الأجهزة المحمولة وليس كلها. يتم دعم ما يلي مع أساسيات التنقل والأمان:
+تعمل ميزة التنقل الأساسي والأمان Microsoft 365 المستضافة بواسطة خدمة Intune مع معظم الأجهزة المحمولة وليس جميعها. يتم دعم ما يلي مع Basic Mobility and Security:
 
-- iOS
+- دائره الرقابه الداخليه
 
-- Android
+- الروبوت
 
-- Windows 8.1 Windows 10 (الهاتف الكمبيوتر الشخصي)
+- Windows 8.1 و Windows 10 (الهاتف والكمبيوتر الشخصي)
 
-إذا لم يكن جهازك مدرجا أعلاه، وكان عليك استخدامه مع أساسيات التنقل والأمان، فاتصل بمسؤول العمل أو المؤسسة الدراسية.
+إذا لم يكن جهازك مدرجا أعلاه، وكنت بحاجة إلى استخدامه مع Basic Mobility and Security، فاتصل بمسؤول العمل أو المؤسسة التعليمية.
 
 > [!TIP]
-> إذا كنت تواجه مشكلة في تسجيل جهازك، فشاهد  [استكشاف الأخطاء](troubleshoot.md) الأساسية في التنقل والأمان.
+> إذا كنت تواجه مشكلة في تسجيل جهازك، فراجع [استكشاف أخطاء التنقل والأمان الأساسيين وإصلاحها](troubleshoot.md).
 
-## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>إعداد جهازك المحمول باستخدام Intune و"التنقل والأمان الأساسي"
+## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>إعداد جهازك المحمول باستخدام Intune و Basic Mobility and Security
 
-تمكن Intune Company Portal من إدارة الجهاز بواسطة Microsoft 365 الأساسية والتنقل والأمان.
+يتيح Intune Company Portal إدارة الجهاز بواسطة Microsoft 365 و Basic Mobility and Security.
 
 ### <a name="iphone-or-ipad"></a>iPhone أو iPad
 
 > [!TIP]
 > لن تتمكن من إرسال البريد الإلكتروني وتلقيه حتى تكمل هذه الخطوة.
 
-انتقل إلى Apple App Store، ثم قم بتنزيل Intune Company Portal.
+انتقل إلى App Store Apple، وقم بتنزيل Intune Company Portal وتثبيتها.
 
-للاتصال بهاتف iOS أو الكمبيوتر اللوحي وتكوينه باستخدام مدخل الشركة Office 365، راجع إعداد وصول جهاز [iOS إلى موارد الشركة](/mem/intune/user-help/enroll-your-device-in-intune-ios).
+لتوصيل وتكوين هاتف أو كمبيوتر لوحي يعمل بنظام التشغيل iOS باستخدام مدخل الشركة Office 365، راجع [إعداد وصول جهاز iOS إلى موارد شركتك](/mem/intune/user-help/enroll-your-device-in-intune-ios).
 
 ### <a name="android-phone-or-tablet"></a>هاتف أو كمبيوتر لوحي يعمل بنظام Android
 
 > [!TIP]
 > لن تتمكن من إرسال البريد الإلكتروني وتلقيه حتى تكمل هذه الخطوة.
 
-انتقل إلى متجر Google Play، ثم قم بتنزيل Intune Company Portal.
+انتقل إلى متجر Google Play، وقم بتنزيل Intune Company Portal وتثبيته.
 
-لتوصيل هاتف أو كمبيوتر لوحي يعمل بنظام Android وتكوينه باستخدام مدخل الشركة Microsoft 365، راجع تسجيل جهازك [باستخدام](/mem/intune/user-help/enroll-device-android-company-portal) Company Portal.
+للاتصال بالهاتف أو الكمبيوتر اللوحي الذي يعمل بنظام Android وتكوينه باستخدام مدخل الشركة Microsoft 365، راجع [تسجيل جهازك باستخدام Company Portal](/mem/intune/user-help/enroll-device-android-company-portal).
 
-### <a name="windows-81-and-windows-10"></a>Windows 8.1 Windows 10
+### <a name="windows-81-and-windows-10"></a>Windows 8.1 و Windows 10
 
-انتقل إلى Microsoft Store، ثم قم بتنزيل Intune Company Portal
+انتقل إلى Microsoft Store، وقم بتنزيل Intune Company Portal وتثبيته
 
-للاتصال بالهاتف أو Windows الشخصي وتكوينه باستخدام مدخل الشركة Microsoft 365، راجع Windows [تسجيل الجهاز في Intune Company Portal](/intune-user-help/windows-enrollment-company-portal).
+لتوصيل الهاتف أو الكمبيوتر الشخصي Windows وتكوينه باستخدام مدخل الشركة Microsoft 365، راجع [Windows تسجيل الجهاز في Intune Company Portal](/intune-user-help/windows-enrollment-company-portal).
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-بعد تسجيل جهازك في "التنقل والأمان الأساسي"، يمكنك بدء استخدام تطبيقات Office على جهازك لاستخدام البريد الإلكتروني والتقويم وجهات الاتصال والمستندات.
+بعد تسجيل جهازك في Basic Mobility and Security، يمكنك البدء في استخدام تطبيقات Office على جهازك للعمل مع البريد الإلكتروني والتقويم وجهات الاتصال والمستندات.

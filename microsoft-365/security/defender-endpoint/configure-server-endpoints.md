@@ -1,7 +1,7 @@
 ---
-title: خوادم Windows إلى Microsoft Defender لنقطة النهاية الخدمة
-description: يتم Windows على الخوادم بحيث يمكنهم إرسال بيانات المستشعر إلى Microsoft Defender لنقطة النهاية المستشعر.
-keywords: خادم onboard، الخادم، 2012r2، 2016، 2019، تهيئة الخادم، إدارة الأجهزة، تكوين خوادم Microsoft Defender لنقطة النهاية، خوادم Microsoft Defender لنقطة النهاية، خوادم Microsoft Defender لنقطة النهاية الخوادم
+title: إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية
+description: إلحاق خوادم Windows بحيث يمكنها إرسال بيانات جهاز الاستشعار إلى أداة استشعار Microsoft Defender لنقطة النهاية.
+keywords: خادم الإلحاق، الخادم، 2012r2، 2016، 2019، إلحاق الخادم، إدارة الأجهزة، تكوين خوادم Microsoft Defender لنقطة النهاية، إلحاق خوادم Microsoft Defender لنقطة النهاية، إلحاق Microsoft Defender لنقطة النهاية ملقمات
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 14c759cd243b8da9f338b777e430d4de9f735fc1
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: f6e1efe1a5c5f87e0a71c5e96b28498a6faf296c
+ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498902"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64783722"
 ---
-# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>خوادم Windows إلى Microsoft Defender لنقطة النهاية الخدمة
+# <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,215 +34,193 @@ ms.locfileid: "64498902"
 - Windows Server 2012 R2
 - Windows Server 2016‏
 - Windows Server Semi-Annual Enterprise Channel
-- Windows Server 2019 واللاحقة
-- Windows الأساسي ل Server 2019
+- Windows Server 2019 والإي وقت لاحق
+- إصدار Windows Server 2019 الأساسي
 - Windows Server 2022
-- [Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [مشكلات الأداء في Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
 
-> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
+يقوم Defender لنقطة النهاية بتوسيع الدعم ليشمل أيضا نظام التشغيل Windows Server. يوفر هذا الدعم قدرات متقدمة للكشف عن الهجمات والتحقيق فيها بسلاسة من خلال وحدة التحكم Microsoft 365 Defender. يوفر دعم Windows Server رؤية أعمق لأنشطة الخادم، وتغطية الكشف عن هجوم النواة والذاكرة، وتمكين إجراءات الاستجابة.
 
-يوسع Defender for Endpoint الدعم ليشمل أيضا نظام Windows Server. يوفر هذا الدعم قدرات متقدمة للكشف عن الهجمات والتحري عنها بسلاسة من خلال Microsoft 365 Defender التحكم. يوفر الدعم Windows Server معلومات أكثر عمقا حول أنشطة الخادم، والتغطية للكشف عن هجمات kernel والذاكرة، كما يمكن إجراءات الاستجابة.
+يصف هذا الموضوع كيفية إلحاق خوادم Windows معينة Microsoft Defender لنقطة النهاية.
 
-يصف هذا الموضوع كيفية تشغيل خوادم Windows معينة Microsoft Defender لنقطة النهاية.
+للحصول على إرشادات حول كيفية تنزيل أمن Windows الأساسات للخوادم Windows [واستخدامها، راجع أمن Windows الأساسات](/windows/device-security/windows-security-baselines).
 
-للحصول على إرشادات حول كيفية تنزيل أمن Windows الأساسية Windows، راجع أمن Windows [الأساسية](/windows/device-security/windows-security-baselines).
+## <a name="windows-server-onboarding-overview"></a>نظرة عامة على إلحاق Windows Server
 
-## <a name="windows-server-onboarding-overview"></a>Windows نظرة عامة حول ا متنبأ الخادم
+ستحتاج إلى إكمال الخطوات العامة التالية لإلحاق الخوادم بنجاح.
 
-ستحتاج إلى إكمال الخطوات العامة التالية لترك الخدمة للخوادم بنجاح.
+:::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="رسم توضيحي لتدفق الإلحاق لخوادم Windows والأجهزة Windows 10" lightbox="images/server-onboarding-tools-methods.png":::
 
-:::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="رسم توضيحي لتدفق التكاتف للخوادم Windows والأجهزة Windows 10 الأخرى" lightbox="images/server-onboarding-tools-methods.png":::
+**Windows Server 2012 R2 وserver Windows 2016**
 
-**Windows Server 2012 R2 Windows Server 2016 (Preview)**
-
->[!IMPORTANT]
-> ستحتاج إلى تشغيل ميزات المعاينة في قسم نقاط النهاية في Microsoft 365 Defender لاستخدام هذه الوظيفة. انتقل إلى [Microsoft 365 Defender > الإعدادات > نقاط النهاية > الميزات المتقدمة](https://security.microsoft.com/preferences2/integration) و تشغيل ميزات المعاينة.
-
-- تنزيل حزم التثبيت والتركيب
+- تنزيل حزم التثبيت والإلحاق
 - تطبيق حزمة التثبيت
-- اتبع خطوات الboarding للأداة المقابلة
+- اتبع خطوات الإلحاق للأداة المقابلة
 
-**Windows Server Semi-Annual Enterprise Channel Windows Server 2019**
+**Windows Server Semi-Annual Enterprise Channel and Windows Server 2019**
 
-- تنزيل حزمة الboarding
-- اتبع خطوات الboarding للأداة المقابلة
+- تنزيل حزمة الإلحاق
+- اتبع خطوات الإلحاق للأداة المقابلة
 
 >[!IMPORTANT]
->لكي تكون مؤهلا لشراء Microsoft Defender لنقطة النهاية Server SKU، يجب أن تكون قد اشتريت بالفعل حدا أدنى مدمجا لأي من تراخيص الاشتراك التالية أو Windows E5/A5 أو Microsoft 365 E5/A5 أو الأمان في Microsoft 365 E5 اشتراك.  لمزيد من المعلومات حول الترخيص، راجع [شروط المنتج](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).  
+>لكي تكون مؤهلا لشراء Microsoft Defender لنقطة النهاية Server SKU، يجب أن تكون قد اشتريت بالفعل ما لا يقل عن أي مما يلي، Windows E5/A5 أو Microsoft 365 E5/A5 أو تراخيص اشتراك الأمان في Microsoft 365 E5.  لمزيد من المعلومات حول الترخيص، راجع [شروط المنتج](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).  
 
 
 
-### <a name="new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview"></a>وظائف Windows Server 2012 R2 و2016 الجديدة في الحل الموحد الحديث (معاينة)
+### <a name="new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution"></a>وظائف Windows Server 2012 R2 و2016 الجديدة في الحل الموحد الحديث
 
-يتطلب التنفيذ السابق ل Windows Server 2012 R2 Windows Server 2016 استخدام Microsoft Monitoring Agent (MMA).
+يتطلب التنفيذ السابق Windows Server 2012 R2 وserver Windows 2016 استخدام عامل مراقبة Microsoft (MMA).
 
-تسهل حزمة الحل الموحد الجديدة من تشغيل الخوادم من خلال إزالة التبعيات والخطوات اللازمة للتثبيت. بالإضافة إلى ذلك، تأتي حزمة الحلول الموحدة هذه مع التحسينات الرئيسية التالية:
+تسهل حزمة الحلول الموحدة الجديدة إلحاق الخوادم عن طريق إزالة التبعيات وخطوات التثبيت. بالإضافة إلى ذلك، تأتي حزمة الحلول الموحدة هذه مع التحسينات الرئيسية التالية:
 
-- [برنامج الحماية من الفيروسات من Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows) [مع حماية الجيل التالي](/microsoft-365/security/defender-endpoint/next-generation-protection) Windows Server 2012 R2
-- [قواعد تقليل مساحة الهجوم (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)
+- [برنامج الحماية من الفيروسات من Microsoft Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows) مع [حماية الجيل التالي](/microsoft-365/security/defender-endpoint/next-generation-protection) لخادم Windows 2012 R2
+- [قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)
 - [حماية الشبكة](/microsoft-365/security/defender-endpoint/network-protection)
-- [الوصول إلى المجلدات الخاضعة للتحكم](/microsoft-365/security/defender-endpoint/controlled-folders)
-- [حظر التطبيقات (PUA) غير المرغوب فيها](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
+- [الوصول إلى المجلد الذي يتم التحكم فيه](/microsoft-365/security/defender-endpoint/controlled-folders)
+- [حظر التطبيق غير المرغوب فيه (PUA)](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [قدرات الكشف المحسنة](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
-- [إمكانات الاستجابة الموسعة](/microsoft-365/security/defender-endpoint/respond-machine-alerts) على الأجهزة [والملفات](/microsoft-365/security/defender-endpoint/respond-file-alerts)
+- [قدرات الاستجابة الموسعة](/microsoft-365/security/defender-endpoint/respond-machine-alerts) على الأجهزة [والملفات](/microsoft-365/security/defender-endpoint/respond-file-alerts)
 - [الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر](/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 - [الاستجابة المباشرة](/microsoft-365/security/defender-endpoint/live-response)
-- [التحقيق والرد التلقائي (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
-- [الحماية من العبث](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
+- [التحقيق التلقائي والاستجابة (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
+- [الحماية من العبث بالبيانات](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
 
-استنادا إلى الخادم الذي تقوم بتركيبه، يتم تثبيت الحل الموحد برنامج الحماية من الفيروسات من Microsoft Defender و/أو الكشف التلقائي والاستجابة على النقط النهائية المستشعر. يشير الجدول التالي إلى المكون الذي تم تثبيته وما هو مضمن بشكل افتراضي.
+استنادا إلى الخادم الذي تقوم بإلحاقه، يقوم الحل الموحد بتثبيت برنامج الحماية من الفيروسات من Microsoft Defender و/أو أداة استشعار الكشف التلقائي والاستجابة على النقط النهائية. يشير الجدول التالي إلى المكون المثبت وما هو مضمن بشكل افتراضي.
 
 |إصدار الخادم|AV|الكشف التلقائي والاستجابة على النقط النهائية|
 |----|----|----|
 |Windows Server 2012 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم.](images/svg/check-yes.svg)|
 |Windows Server 2016‏|مضمن|![نعم.](images/svg/check-yes.svg)|
-|Windows Server 2019 أو أي وقت لاحق|مضمن|مضمن|
+|Windows Server 2019 أو إصدار أحدث|مضمن|مضمن|
 
-إذا سبق لك أن قمت بتكحيل الخوادم باستخدام MMA، فاتبع الإرشادات المتوفرة في ترحيل [الخادم](server-migration.md) للترحيل إلى الحل الجديد.
+إذا كنت قد قمت مسبقا بإلحاق الخوادم باستخدام MMA، فاتبع الإرشادات المتوفرة في [ترحيل الخادم](server-migration.md) للرحل إلى الحل الجديد.
 
->[!NOTE]
->أثناء وجود طريقة التكميل هذه Windows Server 2012 R2 و Windows Server 2016 في وضع المعاينة، يمكنك اختيار الاستمرار في استخدام أسلوب الإستخدام السابق باستخدام Microsoft Monitoring Agent (MMA). لمزيد من المعلومات، راجع تثبيت نقاط النهاية [وتكوينها باستخدام MMA](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma).
+#### <a name="known-issues-and-limitations-in-the-new-unified-solution-package-for-windows-server-2012-r2-and-2016"></a>المشاكل والقيود المعروفة في حزمة الحلول الموحدة الجديدة لخادم Windows 2012 R2 و2016
 
-#### <a name="known-issues-and-limitations-on-the-new-unified-solution-package-for-windows-server-2012-r2-and-2016"></a>المشاكل والقيود المعروفة في حزمة الحلول الموحدة الجديدة Windows Server 2012 R2 و2016
+تنطبق التفاصيل التالية على حزمة الحلول الموحدة الجديدة لخادم Windows 2012 R2 و2016:
 
-تنطبق المحددات التالية على حزمة الحلول الموحدة الجديدة Windows Server 2012 R2 و2016:
-
-- تأكد من تلبية متطلبات الاتصال كما هو محدد في تمكين الوصول [Microsoft Defender لنقطة النهاية عناوين URL للخدمة في الخادم](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) الوكيل. وهي مكافئة لتلك الخاصة Windows Server 2019. 
-- نحن نعمل على التحقق من مشكلة في اتصال Windows Server 2012 R2 بالسحابة عند استخدام TelemetryProxyServer الثابت ولا يمكن الوصول إلى عناوين URL لقائمة إلغاء الشهادة (CRL) من سياق حساب النظام. إن التخفيف الفوري هو إما استخدام خيار وكيل بديل يوفر مثل هذا الاتصال، أو تكوين الوكيل نفسه عبر إعداد WinInet في سياق حساب النظام.
-- في السابق، كان استخدام وكيل مراقبة Microsoft (MMA) على Windows Server 2016 وما يليه يسمح لبوابة OMS / Log Analytics بتوفير الاتصال بالخدمات السحابية ل Defender. الحل الجديد، مثل Microsoft Defender لنقطة النهاية على Windows Server 2019 و Windows Server 2022 و Windows 10، لا يدعم هذه البوابة.
-
-- على Windows Server 2016، تحقق من أن برنامج الحماية من الفيروسات من Microsoft Defender تم تثبيته، وهو نشط وم التحديث. يمكنك تنزيل أحدث إصدار من النظام الأساسي وتثبيته باستخدام Windows Update. بدلا من ذلك، قم بتنزيل حزمة التحديث يدويا من [كتالوج Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) أو [من MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
-- على Windows Server 2012 R2، لا توجد واجهة مستخدم برنامج الحماية من الفيروسات من Microsoft Defender. بالإضافة إلى ذلك، تسمح واجهة المستخدم Windows Server 2016 فقط للعمليات الأساسية. لتنفيذ عمليات على جهاز محليا، يمكنك الرجوع إلى إدارة Microsoft Defender لنقطة النهاية [باستخدام PowerShell و WMI MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). ونتيجة لذلك، قد لا تعمل الميزات التي تعتمد بشكل خاص على تفاعل المستخدم، مثل المكان الذي يتم فيه مطالبة المستخدم لاتخاذ قرار أو تنفيذ مهمة معينة، كما هو متوقع. من المستحسن تعطيل واجهة المستخدم أو عدم تمكينها ولا يتطلب تفاعل المستخدم على أي خادم مدار حيث قد يؤثر على إمكانية الحماية.
-- لا تتوفر كل قواعد تقليل مساحة الهجوم على كل أنظمة التشغيل. راجع [قواعد تقليل مساحة الهجوم (ASR](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)).
-- لتمكين ["حماية الشبكة"](/microsoft-365/security/defender-endpoint/network-protection)، يلزم تكوين إضافي:
+- تأكد من تلبية متطلبات الاتصال كما هو محدد في [تمكين الوصول إلى عناوين URL للخدمة Microsoft Defender لنقطة النهاية في الخادم الوكيل](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). وهي مكافئة لتلك الخاصة بخادم Windows 2019. 
+- نحن نعمل على التحقق من مشكلة في اتصال Windows Server 2012 R2 بالسحابة عند استخدام TelemetryProxyServer الثابت ولا يمكن الوصول إلى عناوين URL لقائمة إبطال الشهادات (CRL) من سياق حساب SYSTEM. التخفيف الفوري هو إما استخدام خيار وكيل بديل يوفر مثل هذا الاتصال، أو تكوين نفس الوكيل عبر إعداد WinInet على سياق حساب SYSTEM.
+- في السابق، كان استخدام عامل مراقبة Microsoft (MMA) على Windows Server 2016 وما يلي يسمح لبوابة OMS / Log Analytics لتوفير الاتصال بخدمات سحابة Defender. الحل الجديد، مثل Microsoft Defender لنقطة النهاية على Windows Server 2019، Windows Server 2022، Windows 10، لا يدعم هذه البوابة.
+- على Windows Server 2016، تحقق من أن برنامج الحماية من الفيروسات من Microsoft Defender مثبت، وأنه نشط ومحدث. يمكنك تنزيل أحدث إصدار من النظام الأساسي وتثبيته باستخدام Windows Update. بدلا من ذلك، قم بتنزيل حزمة التحديث يدويا من [كتالوج تحديث Microsoft](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) أو من [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
+- على Windows Server 2012 R2، لا توجد واجهة مستخدم برنامج الحماية من الفيروسات من Microsoft Defender. بالإضافة إلى ذلك، تسمح واجهة المستخدم على Windows Server 2016 فقط بالعمليات الأساسية. لتنفيذ العمليات على جهاز محليا، راجع [إدارة Microsoft Defender لنقطة النهاية باستخدام PowerShell وWMI MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). ونتيجة لذلك، قد لا تعمل الميزات التي تعتمد بشكل خاص على تفاعل المستخدم، مثل المكان الذي تتم مطالبة المستخدم فيه لاتخاذ قرار أو تنفيذ مهمة معينة، كما هو متوقع. يوصى بتعطيل واجهة المستخدم أو عدم تمكينها ولا يتطلب تفاعل المستخدم على أي خادم مدار لأنه قد يؤثر على إمكانية الحماية.
+- لا تتوفر جميع قواعد تقليل الأجزاء المعرضة للهجوم على جميع أنظمة التشغيل. راجع [قواعد تقليل الأجزاء المعرضة للهجوم (ASR](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules)).
+- لتمكين [Network Protection](/microsoft-365/security/defender-endpoint/network-protection)، يلزم تكوين إضافي:
   - `Set-MpPreference -EnableNetworkProtection Enabled`
   - `Set-MpPreference -AllowNetworkProtectionOnWinServer 1`
   - `Set-MpPreference -AllowNetworkProtectionDownLevel 1`
   - `Set-MpPreference -AllowDatagramProcessingOnWinServer 1`
 
-  بالإضافة إلى ذلك، من المستحسن إجراء اختبار الأداء في بيئتك على الأجهزة التي بها نسبة كبيرة من حركة مرور الشبكة قبل تمكين هذه الإمكانية على نطاق واسع. قد تحتاج إلى حساب استهلاك موارد إضافي.
-- على Windows Server 2012 R2، قد لا يتم ملء أحداث الشبكة في المخطط الزمني. تتطلب هذه المشكلة إصدار Windows Update كجزء من مجموعة [12 أكتوبر 2021 الشهرية (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
-- إن ترقيات نظام التشغيل غير معتمدة. إيقاف التشغيل ثم إلغاء التثبيت قبل الترقية.
-- لا يتم دعم الاستثناءات  التلقائية لأدوار الخادم على Windows Server 2012 R2؛ ومع ذلك، فإن الاستثناءات المضمنة لملفات نظام التشغيل هي استثناءات. لمزيد من المعلومات حول إضافة الاستثناءات، راجع توصيات فحص الفيروسات لأجهزة الكمبيوتر الخاصة بالمؤسسات التي تعمل بالإصدارات المدعمة [حاليا من](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc) Windows.
-- في الوقت الحالي، إذا اخترت إيقاف تشغيل الحل الحديث الموحد وإبعاد تثبيت مستشعر الكشف التلقائي والاستجابة على النقط النهائية المستند إلى MMA `MsSenseS.exe` السابق، فقد تواجه أعطال متكررة. 
-
-كحل بديل، قم بإزالة مفاتيح التسجيل التالية إذا كانت موجودة:
-- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\fdedb2b8-61e4-4a7e-8b15-abf214a08fcc`
-- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\c60418cc-7e07-400f-ae3b-d521c5dbd96f`
-
-يمكنك استخدام الأوامر التالية:
-
-```cmd
-reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security /v fdedb2b8-61e4-4a7e-8b15-abf214a08fcc /f
-reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security /v c60418cc-7e07-400f-ae3b-d521c5dbd96f /f
-```
-لا حاجة إلى إعادة التشغيل.
-
-
-<a name="integration-with-azure-defender"></a>
+  بالإضافة إلى ذلك، على الأجهزة التي تحتوي على كمية كبيرة من نسبة استخدام الشبكة، يوصى بشدة باختبار الأداء في بيئتك قبل تمكين هذه الإمكانية على نطاق واسع. قد تحتاج إلى حساب استهلاك الموارد الإضافية.
+- على Windows Server 2012 R2، قد لا يتم ملء أحداث الشبكة في المخطط الزمني. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
+- ترقيات نظام التشغيل غير معتمدة. قم بإلغاء التثبيت بعد ذلك قبل الترقية.
+- الاستثناءات التلقائية *لأدوار الخادم* غير معتمدة على Windows Server 2012 R2؛ ومع ذلك، فإن الاستثناءات المضمنة لملفات نظام التشغيل متوفرة. لمزيد من المعلومات حول إضافة استثناءات، راجع [توصيات فحص الفيروسات لأجهزة كمبيوتر المؤسسة التي تعمل حاليا بإصدارات معتمدة من Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
+- على الأجهزة التي تمت ترقيتها من الحل السابق المستند إلى MMA ومستشعر الكشف التلقائي والاستجابة على النقط النهائية هو إصدار (معاينة) أقدم من 10.8047.22439.1056، قد يؤدي إلغاء تثبيت والعودة إلى الحل المستند إلى MMA إلى حدوث أعطال. 
+- التكامل مع Microsoft Defender for Cloud / Microsoft Defender للخوادم للتنبيه والنشر التلقائي أو الترقية غير متوفر بعد. بينما يمكنك تثبيت الحل الجديد يدويا على هذه الأجهزة، لن يتم عرض أي تنبيهات في Microsoft Defender for Cloud.
 
 ## <a name="integration-with-microsoft-defender-for-cloud"></a>التكامل مع Microsoft Defender for Cloud
 
-Microsoft Defender لنقطة النهاية الدمج بسلاسة مع Microsoft Defender for Cloud. يمكنك تشغيل الخوادم تلقائيا، وظهور الخوادم التي يراقبها Azure Defender في Defender for Endpoint، وإجراء عمليات تحقيق تفصيلية كعميل Microsoft Defender for Cloud.
+يتكامل Microsoft Defender لنقطة النهاية بسلاسة مع Microsoft Defender for Cloud. يمكنك إلحاق الخوادم تلقائيا، وظهور الخوادم التي يراقبها Azure Defender في Defender لنقطة النهاية، وإجراء تحقيقات مفصلة كعميل Microsoft Defender for Cloud.
 
 لمزيد من المعلومات، راجع [التكامل مع Microsoft Defender for Cloud](azure-server-integration.md).
 
 > [!NOTE]
-> بالنسبة Windows Server 2012 R2 و2016 الذي يعمل بمعاينة الحل الموحد الحديثة، لا يتوفر التكامل مع Microsoft Defender for Cloud / Microsoft Defender للخوادم للتنبيه والنشر التلقائي حتى الآن. على الرغم من أنه يمكنك تثبيت الحل الجديد يدويا على هذه الأجهزة، لن يتم عرض أي تنبيهات في Microsoft Defender for Cloud.
+> بالنسبة Windows Server 2012 R2 و2016 الذي يقوم بتشغيل الحل الموحد الحديث، لا يتوفر التكامل مع Microsoft Defender for Cloud / Microsoft Defender للخوادم للتنبيه والنشر التلقائي أو الترقية بعد. بينما يمكنك تثبيت الحل الجديد يدويا على هذه الأجهزة، لن يتم عرض أي تنبيهات في Microsoft Defender for Cloud.
 
 > [!NOTE]
-> - تم توسيع التكامل بين Microsoft Defender للخوادم Microsoft Defender لنقطة النهاية لدعم Windows Server 2022 و Windows [Server 2019 و Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview) .
-> - تم تعطيل مراقبة نقطة نهاية الخادم باستخدام هذا التكامل Office 365 سحابة القطاع الحكومي العملاء.
+> - تم توسيع التكامل بين Microsoft Defender للخوادم Microsoft Defender لنقطة النهاية لدعم Windows Server 2022 [و Windows Server 2019 و Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+> - تم تعطيل مراقبة نقطة نهاية الخادم باستخدام هذا التكامل للعملاء Office 365 سحابة القطاع الحكومي.
 
-## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 Windows Server 2016
-
-> [!NOTE]
-> أثناء وجود طريقة التكميل هذه Windows Server 2012 R2 و Windows Server 2016 في وضع المعاينة، يمكنك اختيار الاستمرار في استخدام أسلوب الإستخدام السابق باستخدام Microsoft Monitoring Agent (MMA). لمزيد من المعلومات، راجع تثبيت نقاط النهاية [وتكوينها باستخدام MMA](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma).
+## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 وserver Windows 2016
 
 ### <a name="prerequisites"></a>المتطلبات الأساسية
 
-**المتطلبات الأساسية Windows Server 2012 R2**
+**المتطلبات الأساسية لخادم Windows 2012 R2**
 
-إذا قمت بتحديث الأجهزة بالكامل بأحدث حزمة [مجموعة شهرية،](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) فلا **توجد أي متطلبات** أساسية إضافية.
+إذا قمت بتحديث أجهزتك بالكامل بأحدث [حزمة مجموعة شهرية](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) ، **فلا توجد متطلبات** أساسية إضافية.
 
-ستتحقق حزمة المثبت مما إذا كانت المكونات التالية مثبتة بالفعل عبر تحديث:
+ستتحقق حزمة المثبت مما إذا كانت المكونات التالية قد تم تثبيتها بالفعل عبر تحديث:
 
-- [التحديث لتجربة العملاء و بيانات التشخيص](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
-- [تحديث "وقت تشغيل C العام" في Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
+- [تحديث لتجربة العملاء وبيانات تتبع الاستخدام التشخيصية](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
+- [تحديث لوقت تشغيل Universal C في Windows](https://support.microsoft.com/topic/update-for-universal-c-runtime-in-windows-c0514201-7fe6-95a3-b0a5-287930f3560c)
 
-**المتطلبات الأساسية Windows Server 2016** 
+**المتطلبات الأساسية لخادم Windows 2016** 
 
-إلى جانب تحديث الجهاز بالكامل باستخدام التحديث التراكمي الأخير (LCU)، تحقق من أن برنامج الحماية من الفيروسات من Microsoft Defender مثبتا، نشطا ومحدثا. يمكنك تنزيل أحدث إصدار من النظام الأساسي وتثبيته باستخدام Windows Update. بدلا من ذلك، قم بتنزيل حزمة التحديث يدويا من [كتالوج Microsoft Update](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) أو [من MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64). 
+يجب تثبيت تحديث مكدس الخدمة (SSU) من 14 سبتمبر 2021 أو الإصدارات الأحدث.  يجب تثبيت التحديث التراكمي الأخير (LCU) من 20 سبتمبر 2018 أو أحدث.  يوصى بتثبيت أحدث SSU وLCU المتوفرة على الخادم.  
 
+يجب تثبيت ميزة برنامج الحماية من الفيروسات من Microsoft Defender وتشغيل الإصدار 4.18.2109.6 أو إصدار أحدث.  يمكنك تنزيل أحدث إصدار من النظام الأساسي وتثبيته باستخدام Windows Update. بدلا من ذلك، قم بتنزيل حزمة التحديث يدويا من [كتالوج تحديث Microsoft](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) أو من [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
+
+**المتطلبات الأساسية للعمل باستخدام حلول أمان الجهات الخارجية**
+
+إذا كنت تنوي استخدام حل مكافحة البرامج الضارة التابع لجهة خارجية، فستحتاج إلى تشغيل برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل. يجب أن تتذكر التعيين إلى الوضع السلبي أثناء عملية التثبيت والإلحاق.
+
+
+**حزمة التحديث Microsoft Defender لنقطة النهاية على Windows Server 2012 R2 و2016**
 > [!NOTE]
-> من أجل تحديث الإصدار المضمن من Windows Defender بنجاح، الذي لديه رقم إصدار يبدأ ب 4.10، إلى النظام الأساسي الأخير المتوفر، يجب تطبيق تحديث مكدس الخدمة بالإضافة إلى التحديث التراكمي الأخير (LCU) المساوي أو الأحدث من 20 سبتمبر 2018— KB4457127 (إصدار نظام التشغيل 14393.2515).
-
-**المتطلبات الأساسية لتشغيل حلول الأمان الخاصة ب جهة خارجية**
-
-إذا كنت تنوي استخدام حل مكافحة البرامج الضارة من جهة خارجية، فسوف تحتاج إلى تشغيل برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي. يجب عليك تذكر تعيين الوضع السلبي أثناء عملية التثبيت والتركيب.
-
-**حزمة تحديث جديدة Microsoft Defender لنقطة النهاية على Windows Server 2012 R2 و2016**
-
-لتلقي تحسينات المنتج العادية وإصلاحات لمكون استشعار الكشف التلقائي والاستجابة على النقط النهائية، تأكد من Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) أو الموافقة عليه. بالإضافة إلى ذلك، لإبقاء مكونات الحماية محدثة، راجع إدارة برنامج الحماية من الفيروسات من Microsoft Defender الأساسية [وتطبيق الأساسات](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
-
-### <a name="onboarding-steps-summary"></a>ملخص خطوات الboarding
-
-- الخطوة 1: [تنزيل حزم التثبيت والتركيب](#step-1-download-installation-and-onboarding-packages)
-- الخطوة 2: [تطبيق حزمة التثبيت والتركيب](#step-2-apply-the-installation-and-onboarding-package)
-- الخطوة 3: [إكمال خطوات الboarding](#step-3-complete-the-onboarding-steps) 
+> إذا كنت تقوم بتثبيت Microsoft Defender لنقطة النهاية على الخوادم باستخدام McAfee Endpoint Security (ENS) أو VirusScan Enterprise (VSE)، فقد تحتاج إلى تحديث إصدار النظام الأساسي McAfee لضمان عدم إزالة برنامج الحماية من الفيروسات من Microsoft Defender أو تعطيلها. لمزيد من المعلومات بما في ذلك أرقام الإصدارات المحددة المطلوبة، راجع [مقالة McAfee Knowledge Center](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
 
 
-### <a name="step-1-download-installation-and-onboarding-packages"></a>الخطوة 1: تنزيل حزم التثبيت والتركيب
 
-ستحتاج إلى تنزيل حزم التثبيت **والتركيب** من المدخل.
+لتلقي تحسينات وإصلاحات منتظمة للمنتج لمكون مستشعر الكشف التلقائي والاستجابة على النقط النهائية، تأكد من تطبيق أو الموافقة على Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277). بالإضافة إلى ذلك، للحفاظ على تحديث مكونات الحماية، راجع [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
+
+### <a name="onboarding-steps-summary"></a>ملخص خطوات الإلحاق
+
+- الخطوة 1: [تنزيل حزم التثبيت والإلحاق](#step-1-download-installation-and-onboarding-packages)
+- الخطوة 2: [تطبيق حزمة التثبيت والإلحاق](#step-2-apply-the-installation-and-onboarding-package)
+- الخطوة 3: [إكمال خطوات الإلحاق](#step-3-complete-the-onboarding-steps) 
+
+
+### <a name="step-1-download-installation-and-onboarding-packages"></a>الخطوة 1: تنزيل حزم التثبيت والإلحاق
+
+ستحتاج إلى تنزيل حزم **التثبيت** **والإلحاق** من المدخل.
 
 > [!div class="mx-imgBorder"]
-> ![صورة لوحة معلومات الboarding](images/install-agent-onboard.png)
+> ![صورة لوحة معلومات الإلحاق](images/install-agent-onboard.png)
 
 
    > [!NOTE]
-   > على Windows Server 2012R2، برنامج الحماية من الفيروسات من Microsoft Defender تثبيت حزمة التثبيت وسيبقى نشطا إلا إذا قمت بتعيينه إلى الوضع السلبي. على Windows Server 2016، برنامج الحماية من الفيروسات من Microsoft Defender تثبيت ميزة (راجع التبديل إلى [MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) أولا وتحديثها بالكامل قبل بدء التثبيت.
+   > على Windows Server 2012R2، سيتم تثبيت برنامج الحماية من الفيروسات من Microsoft Defender بواسطة حزمة التثبيت وستكون نشطة إلا إذا قمت بتعيينها إلى الوضع السلبي. في Windows Server 2016، يجب تثبيت برنامج الحماية من الفيروسات من Microsoft Defender كميزة (راجع [التبديل إلى MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) أولا وتحديثها بالكامل قبل متابعة التثبيت.
    > 
-   > إذا كنت تقوم بتشغيل حل غير Microsoft لمكافحة البرامج الضارة، فتأكد من إضافة استثناءات ل برنامج الحماية من الفيروسات من Microsoft Defender (من قائمة عمليات [Microsoft Defender](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) هذه على علامة التبويب عمليات Defender) إلى الحل غير الخاص ب Microsoft قبل التثبيت.  من المستحسن أيضا إضافة حلول أمان غير Microsoft إلى قائمة استثناءات Defender Antivirus.
+   > إذا كنت تقوم بتشغيل حل مكافحة البرامج الضارة غير التابع ل Microsoft، فتأكد من إضافة استثناءات برنامج الحماية من الفيروسات من Microsoft Defender ([من هذه القائمة من عمليات Microsoft Defender على علامة التبويب "عمليات Defender"](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)) إلى الحل غير التابع ل Microsoft قبل التثبيت.  يوصى أيضا بإضافة حلول أمان غير أمنية من Microsoft إلى قائمة استبعاد Defender Antivirus.
 
 
-تحتوي **حزمة التثبيت** على ملف MSI الذي يثبت Microsoft Defender لنقطة النهاية.
+تحتوي **حزمة التثبيت** على ملف MSI يقوم بتثبيت عامل Microsoft Defender لنقطة النهاية.
 
-تحتوي **حزمة التكهين** على الملفات التالية:
+تحتوي **حزمة الإلحاق على** الملفات التالية:
 
 - `OptionalParamsPolicy` - يحتوي على الإعداد الذي يمكن مجموعة العينة
-- `WindowsDefenderATPOnboardingScript.cmd` - يحتوي على البرنامج النصي ل الboarding
+- `WindowsDefenderATPOnboardingScript.cmd` - يحتوي على البرنامج النصي الإلحاقي
 
 استخدم الخطوات التالية لتنزيل الحزم: 
 
-1. في Microsoft 365 Defender، انتقل إلى الإعدادات > إدارة الجهاز > **في الحافظة**.
+1. في Microsoft 365 Defender، انتقل إلى **الإعدادات > إدارة الجهاز > الإلحاق**.
 
 2. حدد **Windows Server 2012 R2 و2016**.
 
-3. حدد **تنزيل حزمة التثبيت** واحفظ الملف .msi. 
+3. حدد **تنزيل حزمة التثبيت** واحفظ ملف .msi. 
  
-4. حدد **تنزيل حزمة التكهيل** واحفظ الملف .zip.
+4. حدد **تنزيل حزمة الإلحاق** واحفظ ملف .zip.
 
-5. ثبت حزمة التثبيت باستخدام أي من الخيارات لتثبيت برنامج الحماية من الفيروسات من Microsoft Defender. يتطلب التثبيت أذونات إدارية.
+5. تثبيت حزمة التثبيت باستخدام أي من الخيارات لتثبيت برنامج الحماية من الفيروسات من Microsoft Defender. يتطلب التثبيت أذونات إدارية.
 
 
 
-### <a name="step-2-apply-the-installation-and-onboarding-package"></a>الخطوة 2: تطبيق حزمة التثبيت والتركيب
-في هذه الخطوة، سيتم تثبيت مكونات المنع والكشف المطلوبة قبل تهيئة جهازك في بيئة Microsoft Defender لنقطة النهاية السحابة، لتحضير الجهاز للتركيب. تأكد من [أن كل المتطلبات](#prerequisites) الأساسية قد تم تحقيقها. 
+### <a name="step-2-apply-the-installation-and-onboarding-package"></a>الخطوة 2: تطبيق حزمة التثبيت والإلحاق
+في هذه الخطوة، ستقوم بتثبيت مكونات الوقاية والكشف المطلوبة قبل إلحاق جهازك ببيئة السحابة Microsoft Defender لنقطة النهاية، لإعداد الجهاز للإلحاق. تأكد من استيفاء جميع [المتطلبات الأساسية](#prerequisites) . 
 
    > [!NOTE]
-   > برنامج الحماية من الفيروسات من Microsoft Defender سيتم تثبيته وسيبقى نشطا إلا إذا قمت بتعيينه إلى الوضع السلبي. 
+   > سيتم تثبيت برنامج الحماية من الفيروسات من Microsoft Defender وستكون نشطة إلا إذا قمت بتعيينها إلى الوضع السلبي. 
 
 #### <a name="options-to-install-the-microsoft-defender-for-endpoint-packages"></a>خيارات لتثبيت حزم Microsoft Defender لنقطة النهاية
 
-في المقطع السابق، قمت بتنزيل حزمة تثبيت. تحتوي حزمة التثبيت على المثبت لجميع مكونات Microsoft Defender لنقطة النهاية. 
+في القسم السابق، قمت بتنزيل حزمة تثبيت. تحتوي حزمة التثبيت على المثبت لكافة مكونات Microsoft Defender لنقطة النهاية. 
 
-يمكنك استخدام أي من الخيارات التالية لتثبيت الوكيل:
-- [تثبيت باستخدام سطر الأوامر](#install-microsoft-defender-for-endpoint-using-the-command-line)
+يمكنك استخدام أي من الخيارات التالية لتثبيت العامل:
+- [التثبيت باستخدام سطر الأوامر](#install-microsoft-defender-for-endpoint-using-the-command-line)
 - [التثبيت باستخدام برنامج نصي](#install-microsoft-defender-for-endpoint-using-a-script)
-- [تطبيق حزم التثبيت والتركيب باستخدام نهج المجموعة](#apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy)
+- [تطبيق حزم التثبيت والإلحاق باستخدام نهج المجموعة](#apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy)
 
 ##### <a name="install-microsoft-defender-for-endpoint-using-the-command-line"></a>تثبيت Microsoft Defender لنقطة النهاية باستخدام سطر الأوامر
 استخدم حزمة التثبيت من الخطوة السابقة لتثبيت Microsoft Defender لنقطة النهاية. 
@@ -254,163 +232,165 @@ Microsoft Defender لنقطة النهاية الدمج بسلاسة مع Micros
 Msiexec /i md4ws.msi /quiet
 ```
 
-إلغاء التثبيت، تأكد من إيقاف تشغيل الجهاز أولا باستخدام البرنامج النصي المناسب ل offboarding. بعد ذلك، لوحة التحكم \> البرامج \> والميزات لتنفيذ إلغاء التثبيت.
+لإلغاء التثبيت، تأكد من إلغاء إلحاق الجهاز أولا باستخدام البرنامج النصي المناسب لإلغاء الإلحاق. ثم استخدم لوحة التحكم \> البرامج \> والميزات لتنفيذ إلغاء التثبيت.
 
-بدلا من ذلك، يمكنك تشغيل أمر إلغاء التثبيت التالي  إلغاء تثبيت Microsoft Defender لنقطة النهاية:
+بدلا من ذلك، قم بتشغيل أمر إلغاء التثبيت التالي لإلغاء تثبيت Microsoft Defender لنقطة النهاية:
 
 ```console
 Msiexec /x md4ws.msi /quiet
 ```
 
-يجب استخدام الحزمة نفسها التي استخدمتها للتركيب لكي ينجح الأمر أعلاه.
+يجب استخدام نفس الحزمة التي استخدمتها للتثبيت حتى ينجح الأمر أعلاه.
 
-يمنع `/quiet` مفتاح التبديل كل الإعلامات.
+يمنع `/quiet` مفتاح التبديل كافة الإعلامات.
 
 > [!NOTE]
-> برنامج الحماية من الفيروسات من Microsoft Defender الانتقال تلقائيا إلى الوضع السلبي. يمكنك اختيار تعيين برنامج الحماية من الفيروسات من Microsoft Defender لتشغيله في الوضع السلبي إذا كنت تقوم بتشغيل حل مكافحة الفيروسات/مكافحة البرامج الضارة من Microsoft. بالنسبة إلى عمليات تثبيت سطر الأوامر`FORCEPASSIVEMODE=1`، يحدد الاختياري على الفور برنامج الحماية من الفيروسات من Microsoft Defender المكون إلى الوضع "غير النشط" لتجنب التداخل. بعد ذلك، للتأكد من أن برنامج الحماية من الفيروسات ل Defender يظل في الوضع السلبي بعد التكحيل لدعم قدرات مثل الكشف التلقائي والاستجابة على النقط النهائية Block، قم بتعيين مفتاح التسجيل "ForceDefenderPassiveMode".
+> لا تنتقل برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا إلى الوضع الخامل. يمكنك اختيار تعيين برنامج الحماية من الفيروسات من Microsoft Defender للتشغيل في الوضع الخامل إذا كنت تقوم بتشغيل حل الحماية من الفيروسات/الحماية من البرامج الضارة غير التابع ل Microsoft. بالنسبة لتثبيتات سطر الأوامر، يقوم الخياري `FORCEPASSIVEMODE=1` بتعيين المكون برنامج الحماية من الفيروسات من Microsoft Defender على الفور إلى الوضع السلبي لتجنب التداخل. بعد ذلك، لضمان بقاء Defender Antivirus في الوضع السلبي بعد الإعداد لدعم قدرات مثل الكشف التلقائي والاستجابة على النقط النهائية Block، قم بتعيين مفتاح التسجيل "ForceDefenderPassiveMode".
 
-يوفر الدعم Windows Server معلومات أكثر عمقا حول أنشطة الخادم، والتغطية للكشف عن هجمات kernel والذاكرة، كما يمكن إجراءات الاستجابة.
+يوفر دعم Windows Server رؤية أعمق لأنشطة الخادم، وتغطية الكشف عن هجوم النواة والذاكرة، وتمكين إجراءات الاستجابة.
 
 ##### <a name="install-microsoft-defender-for-endpoint-using-a-script"></a>تثبيت Microsoft Defender لنقطة النهاية باستخدام برنامج نصي
 
-يمكنك استخدام البرنامج [النصي للمثبت](server-migration.md#installer-script) للمساعدة في أتمتة التثبيت، إلغاء التثبيت، والتركيب. لمزيد من المعلومات، راجع الإرشادات الموجودة في المقطع التالي لاستخدام البرنامج النصي مع نهج المجموعة.
+يمكنك استخدام [البرنامج النصي المثبت](server-migration.md#installer-script) للمساعدة في أتمتة التثبيت وإلغاء التثبيت والإلحاق. لمزيد من المعلومات، راجع الإرشادات الواردة في القسم التالي لاستخدام البرنامج النصي مع نهج المجموعة.
 
-##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>تطبيق Microsoft Defender لنقطة النهاية التثبيت وحزم التركيب باستخدام نهج المجموعة
+##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>تطبيق حزم التثبيت والإلحاق Microsoft Defender لنقطة النهاية باستخدام نهج المجموعة
 
-1. إنشاء نهج مجموعة: <br> افتح نهج المجموعة [إدارة](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) البيانات (GPMC)، وانقر بضغطة نهج المجموعة فوق  العناصر التي تريد تكوينها وانقر فوق **جديد**. أدخل اسم "مجموعة العناصر" الجديدة في مربع الحوار الذي يتم عرضه وانقر فوق **موافق**.
+1. إنشاء نهج مجموعة: <br> افتح [وحدة تحكم إدارة نهج المجموعة](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC)، وانقر بزر الماوس الأيمن **فوق نهج المجموعة العناصر** التي تريد تكوينها وانقر فوق **"جديد**". أدخل اسم عنصر نهج المجموعة الجديد في مربع الحوار المعروض وانقر فوق **"موافق**".
 
-2. افتح نهج المجموعة [إدارة](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) البيانات (GPMC)، وانقر بز الماوس الأيمن فوق نهج المجموعة كائن (GPO) الذي تريد تكوينه وانقر فوق **تحرير**.
+2. افتح [وحدة تحكم إدارة نهج المجموعة](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC)، وانقر بزر الماوس الأيمن فوق الكائن نهج المجموعة (GPO) الذي تريد تكوينه وانقر فوق **"تحرير**".
 
-3. في نهج المجموعة **إدارة،** انتقل إلى **تكوين** الكمبيوتر، ثم **التفضيلات**، ثم **إعدادات لوحة التحكم**.
+3. في **نهج المجموعة Management Editor**، انتقل إلى **تكوين الكمبيوتر**، ثم **التفضيلات**، ثم **إعدادات لوحة التحكم**.
 
-4. انقر بز الماوس الأيمن فوق **المهام المجدولة**، وأشير إلى **جديد**، ثم انقر فوق مهمة فورية (على الأقل **Windows 7)**.
+4. انقر بزر الماوس الأيمن فوق **المهام المجدولة**، وأشر إلى **"جديد**"، ثم انقر فوق **"مهمة فورية" (Windows 7 على الأقل).**
 
-5. في نافذة **المهمة** التي تفتح، انتقل إلى علامة **التبويب عام** . ضمن **خيارات الأمان،** انقر **فوق تغيير المستخدم أو المجموعة** وا اكتب النظام، ثم انقر **فوق التحقق من الأسماء** ثم **موافق**. يظهر NT AUTHORITY\SYSTEM ك حساب المستخدم الذي سيتم تشغيل المهمة عليه.
+5. في النافذة **"مهمة** " التي يتم فتحها، انتقل إلى علامة التبويب **"عام** ". ضمن **خيارات الأمان** ، انقر فوق **"تغيير المستخدم أو المجموعة** " واكتب "نظام" ثم انقر فوق **"التحقق من الأسماء** " ثم " **موافق**". يظهر NT AUTHORITY\SYSTEM كحساب المستخدم الذي سيتم تشغيل المهمة عليه.
 
-6. حدد **تشغيل ما إذا كان المستخدم قد سجل دخوله** أم لا وحدد خانة الاختيار **تشغيل بأعلى** امتيازات.
+6. حدد **"تشغيل" سواء تم تسجيل دخول المستخدم أم لا** وحدد خانة الاختيار **"تشغيل بامتيازات أعلى** ".
 
-7. في الحقل الاسم، اكتب اسما مناسبا للمهمة المجدولة (على سبيل المثال، Defender لنشر نقطة النهاية).
+7. في حقل "الاسم"، اكتب اسما مناسبا للمهمة المجدولة (على سبيل المثال، Defender for Endpoint Deployment).
 
-8. انتقل إلى علامة **التبويب** إجراءات وحدد **جديد...** تأكد من **تحديد بدء** برنامج في **حقل** الإجراء. يقوم [البرنامج النصي المثبت](server-migration.md#installer-script) بمعالجة عملية التثبيت، ثم تنفيذ خطوة التركيب مباشرة بعد اكتمال التثبيت. حدد *C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe* ثم قم بتوفير الوسيطات:
+8. انتقل إلى علامة التبويب **"إجراءات** " وحدد **"جديد"...** تأكد **من تحديد "بدء برنامج** " في الحقل **"إجراء** ". يعالج [البرنامج النصي المثبت](server-migration.md#installer-script) التثبيت، وينفذ على الفور خطوة الإلحاق بعد اكتمال التثبيت. حدد *C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe* ثم قم بتوفير الوسيطات:
 
     ```console
      -ExecutionPolicy RemoteSigned \\servername-or-dfs-space\share-name\install.ps1 -OnboardingScript \\servername-or-dfs-space\share-name\windowsdefenderatponboardingscript.cmd
     ```  
 
      >[!NOTE]
-    >إذا كنت بحاجة إلى استكشاف مشاكل تثبيت الوكيل وإصلاحها، ف أضف '-etl -log' إلى install.ps1 البرنامج النصي.
+    >إذا كنت بحاجة إلى استكشاف مشكلات تثبيت العامل وإصلاحها، فإضافة '-etl -log' إلى معلمات البرنامج النصي install.ps1.
     >
-    >إعداد نهج التنفيذ الموصى به هو `Allsigned`. يتطلب هذا الأمر استيراد شهادة توقيع البرنامج النصي إلى مخزن الناشرين الموثوق بهم في الكمبيوتر المحلي إذا كان البرنامج النصي قيد التشغيل ك SYSTEM في نقطة النهاية.
+    >إعداد نهج التنفيذ الموصى به هو `Allsigned`. يتطلب هذا استيراد شهادة توقيع البرنامج النصي إلى مخزن الناشرين الموثوق بهم للكمبيوتر المحلي إذا كان البرنامج النصي قيد التشغيل ك SYSTEM على نقطة النهاية.
 
-    استبدل \\servername-or-dfs-space\share-name بمسار UNC، باستخدام اسم المجال المؤهل بالكامل (FQDN) *لخادم الملفاتinstall.ps1* المشترك. يجب وضع md4ws.msi حزمة المثبت في الدليل نفسه.  تأكد أيضا من أن أذونات مسار UNC تسمح بالوصول للقراءة إلى حساب الكمبيوتر الذي يتم تثبيت النظام الأساسي له.
+    استبدل \\servername-or-dfs-space\share-name بمسار UNC، باستخدام اسم المجال المؤهل بالكامل لخادم الملفات (FQDN)، لملف *install.ps1* المشترك. يجب وضع حزمة المثبت md4ws.msi في نفس الدليل.  تأكد أيضا من أن أذونات مسار UNC تسمح بالوصول للقراءة إلى حساب الكمبيوتر الذي يقوم بتثبيت النظام الأساسي.
 
    
 
-    بالنسبة إلى السيناريوهات التي تريد برنامج الحماية من الفيروسات من Microsoft Defender فيها مع حلول مكافحة البرامج الضارة غير الخاصة ب Microsoft، أضف المعلمة $Passive لتعيين الوضع السلبي أثناء التثبيت.
+    بالنسبة للسيناريوهات التي تريد أن يتعايش فيها برنامج الحماية من الفيروسات من Microsoft Defender مع حلول مكافحة البرامج الضارة غير الخاصة ب Microsoft، أضف المعلمة $Passive لتعيين الوضع الخامل أثناء التثبيت.
 
-9. حدد **موافق** وأغلق أي نوافذ GPMC مفتوحة.
+9. حدد **"موافق** " وأغلق أي نوافذ GPMC مفتوحة.
 
-10. لربط "مجموعة وحدات المجموعة" بوحدة تنظيم (OU)، انقر بز الماوس الأيمن وحدد ربط "مجموعة" **موجودة**. في مربع الحوار الذي يتم عرضه، حدد نهج المجموعة الذي تريد ربطه. انقر فوق **موافق**.
+10. لربط عنصر نهج المجموعة بوحدة تنظيم (OU)، انقر بزر الماوس الأيمن وحدد **"ربط عنصر نهج المجموعة" الموجود**. في مربع الحوار الذي يتم عرضه، حدد العنصر نهج المجموعة الذي تريد ربطه. انقر فوق **موافق**.
 
-للحصول على إعدادات تكوين إضافية، راجع [تكوين إعدادات مجموعة](configure-endpoints-gp.md#configure-sample-collection-settings) العينة وإعدادات التكوين [المستحسنة الأخرى](configure-endpoints-gp.md#other-recommended-configuration-settings).
+للحصول على إعدادات تكوين إضافية، راجع [تكوين إعدادات مجموعة العينة وإعدادات](configure-endpoints-gp.md#configure-sample-collection-settings) [التكوين المستحسنة الأخرى](configure-endpoints-gp.md#other-recommended-configuration-settings).
 
-### <a name="step-3-complete-the-onboarding-steps"></a>الخطوة 3: إكمال خطوات الboarding
+### <a name="step-3-complete-the-onboarding-steps"></a>الخطوة 3: إكمال خطوات الإلحاق
 
-لا تنطبق الخطوات التالية إلا إذا كنت تستخدم حل مكافحة البرامج الضارة من جهة خارجية. ستحتاج إلى تطبيق الإعدادات التالية برنامج الحماية من الفيروسات من Microsoft Defender وضع غير سلبي. تحقق من تكوينه بشكل صحيح:
+لا تنطبق الخطوات التالية إلا إذا كنت تستخدم حلا تابعا لجهة خارجية لمكافحة البرامج الضارة. ستحتاج إلى تطبيق إعداد الوضع الخامل برنامج الحماية من الفيروسات من Microsoft Defender التالي. تحقق من تكوينه بشكل صحيح:
 
-1. تعيين إدخال السجل التالي:
-    - المسار: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-    - الاسم: `ForceDefenderPassiveMode`
-    - اكتب: `REG_DWORD`
-    - القيمة: `1`
+1. تعيين إدخال التسجيل التالي:
+    - مسار: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+    - اسم: `ForceDefenderPassiveMode`
+    - نوع: `REG_DWORD`
+    - قيمه: `1`
 
-       :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="نتيجة التحقق من الوضع السلبي" lightbox="images/atp-verify-passive-mode.png":::
+       :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="نتيجة التحقق من الوضع الخامل" lightbox="images/atp-verify-passive-mode.png":::
 > [!IMPORTANT]
 >
-> - عند استخدام Microsoft Defender for Cloud لمراقبة الخوادم، يتم تلقائيا إنشاء مستأجر Defender for Endpoint (في الولايات المتحدة للمستخدمين الأميركيين، وفي الاتحاد الأوروبي للمستخدمين الأوروبيين، وفي المملكة المتحدة لمستخدمي المملكة المتحدة).
-يتم تخزين البيانات التي يقوم Defender for Endpoint بتجميعها في الموقع الجغرافي للمستأجر كما هو محدد أثناء توفيرها.
-> - إذا كنت تستخدم Defender ل Endpoint قبل استخدام Microsoft Defender for Cloud، سيتم تخزين بياناتك في الموقع الذي حددته عند إنشاء المستأجر الخاص بك حتى لو قمت بالدمج مع Microsoft Defender for Cloud في وقت لاحق.
-> - بمجرد تكوينها، لا يمكنك تغيير الموقع الذي تم تخزين البيانات فيه. إذا كنت بحاجة إلى نقل بياناتك إلى موقع آخر، يجب الاتصال بدعم Microsoft لإعادة تعيين المستأجر.
-> - تقوم حزمة "Windows Server 2019" و"Windows Server 2022 إدارة نقاط النهاية من Microsoft" حاليا بشحن برنامج نصي. لمزيد من المعلومات حول كيفية نشر البرامج النصية في Configuration Manager، راجع [الحزم والبرامج في](/configmgr/apps/deploy-use/packages-and-programs) Configuration Manager.
-> - البرنامج النصي المحلي مناسب لإثبات المبدأ ولكن لا يجب استخدامه لنشر الإنتاج. لنشر الإنتاج، نوصي باستخدام نهج المجموعة أو Microsoft Endpoint Configuration Manager.
+> - عند استخدام Microsoft Defender for Cloud لمراقبة الخوادم، يتم إنشاء مستأجر Defender لنقطة النهاية تلقائيا (في الولايات المتحدة لمستخدمي الولايات المتحدة، وفي الاتحاد الأوروبي للمستخدمين الأوروبيين، وفي المملكة المتحدة لمستخدمي المملكة المتحدة).
+يتم تخزين البيانات التي يجمعها Defender لنقطة النهاية في الموقع الجغرافي للمستأجر كما هو محدد أثناء التوفير.
+> - إذا كنت تستخدم Defender لنقطة النهاية قبل استخدام Microsoft Defender for Cloud، فسيتم تخزين بياناتك في الموقع الذي حددته عند إنشاء المستأجر الخاص بك حتى إذا قمت بالتكامل مع Microsoft Defender for Cloud في وقت لاحق.
+> - بمجرد التكوين، لا يمكنك تغيير الموقع حيث يتم تخزين بياناتك. إذا كنت بحاجة إلى نقل بياناتك إلى موقع آخر، فستحتاج إلى الاتصال بدعم Microsoft لإعادة تعيين المستأجر.
+> - تقوم حزمة الإلحاق ل Windows Server 2019 و Windows Server 2022 حتى إدارة نقاط النهاية من Microsoft حاليا بشحن برنامج نصي. لمزيد من المعلومات حول كيفية نشر البرامج النصية في Configuration Manager، راجع [الحزم والبرامج في Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
+> - البرنامج النصي المحلي مناسب لإثبات المبدأ ولكن لا ينبغي استخدامه لتوزيع الإنتاج. لنشر الإنتاج، نوصي باستخدام نهج المجموعة أو Microsoft Endpoint Configuration Manager.
 
 
 
-## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel Windows Server 2019 Windows Server 2022
+## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 و Windows Server 2022
 
-تقوم حزمة التكهين Windows Server 2019 Windows Server 2022 حتى إدارة نقاط النهاية من Microsoft حاليا بشحن برنامج نصي. لمزيد من المعلومات حول كيفية نشر البرامج النصية في Configuration Manager، راجع [الحزم والبرامج في](/configmgr/apps/deploy-use/packages-and-programs) Configuration Manager.
+حزمة الإلحاق ل Windows Server 2019 وserver Windows 2022 من خلال إدارة نقاط النهاية من Microsoft تقوم حاليا بشحن برنامج نصي. لمزيد من المعلومات حول كيفية نشر البرامج النصية في Configuration Manager، راجع [الحزم والبرامج في Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 
-### <a name="download-package"></a>تنزيل الحزمة
+### <a name="download-package"></a>حزمة التنزيل
 
-1. في Microsoft 365 Defender، انتقل إلى الإعدادات > إدارة الجهاز > **في الحافظة**.
+1. في Microsoft 365 Defender، انتقل إلى **الإعدادات > إدارة الجهاز > الإلحاق**.
 
 2. حدد **Windows Server 1803 و2019**.
 
-3. حدد **تنزيل الحزمة**. احفظه WindowsDefenderATPOnboardingPackage.zip.
+3. حدد **حزمة التنزيل**. احفظه WindowsDefenderATPOnboardingPackage.zip.
 
-4. اتبع الخطوات المتوفرة في [القسم إكمال خطوات التكهين](#step-3-complete-the-onboarding-steps) .
+4. اتبع الخطوات [الواردة في القسم "إكمال خطوات الإلحاق](#step-3-complete-the-onboarding-steps) ".
 
 
-## <a name="verify-the-onboarding-and-installation"></a>التحقق من التركيب والتركيب
+## <a name="verify-the-onboarding-and-installation"></a>التحقق من الإلحاق والتثبيت
 
-تحقق من برنامج الحماية من الفيروسات من Microsoft Defender Microsoft Defender لنقطة النهاية قيد التشغيل.
+تحقق من تشغيل برنامج الحماية من الفيروسات من Microsoft Defender Microsoft Defender لنقطة النهاية.
 
-## <a name="run-a-detection-test-to-verify-onboarding"></a>تشغيل اختبار الكشف للتحقق من ال
+## <a name="run-a-detection-test-to-verify-onboarding"></a>تشغيل اختبار الكشف للتحقق من الإلحاق
 
-بعد تشغيل الجهاز، يمكنك أن تختار تشغيل اختبار الكشف للتحقق من أن الجهاز مواد بشكل صحيح للخدمة. لمزيد من المعلومات، راجع [تشغيل اختبار الكشف على جهاز Microsoft Defender لنقطة النهاية جديد](run-detection-test.md).
+بعد إلحاق الجهاز، يمكنك اختيار تشغيل اختبار الكشف للتحقق من أن الجهاز تم إلحاقه بشكل صحيح للخدمة. لمزيد من المعلومات، راجع [تشغيل اختبار الكشف على جهاز Microsoft Defender لنقطة النهاية تم إلحاقه حديثا](run-detection-test.md).
 
 > [!NOTE]
-> تشغيل برنامج الحماية من الفيروسات من Microsoft Defender غير مطلوب ولكن من المستحسن. إذا كان منتج مورد برنامج الحماية من الفيروسات آخر هو حل الحماية الأساسي لنقطة النهاية، يمكنك تشغيل Defender Antivirus في الوضع السلبي. يمكنك فقط تأكيد تشغيل الوضع السلبي بعد التحقق من أن Microsoft Defender لنقطة النهاية استشعار (SENSE) قيد التشغيل.
+> تشغيل برنامج الحماية من الفيروسات من Microsoft Defender غير مطلوب ولكن يوصى به. إذا كان منتج مورد الحماية من الفيروسات آخر هو حل حماية نقطة النهاية الأساسي، يمكنك تشغيل Defender Antivirus في الوضع السلبي. يمكنك فقط تأكيد تشغيل الوضع السلبي بعد التحقق من تشغيل أداة استشعار Microsoft Defender لنقطة النهاية (SENSE).
 
-1. تشغيل الأمر التالي للتحقق من تثبيت برنامج الحماية من الفيروسات من Microsoft Defender:
+1. قم بتشغيل الأمر التالي للتحقق من تثبيت برنامج الحماية من الفيروسات من Microsoft Defender:
 
     >[!NOTE]
-    >لا يلزم إجراء خطوة التزيين هذه إلا إذا كنت تستخدم برنامج الحماية من الفيروسات من Microsoft Defender كحل نشط لمكافحة البرامج الضارة.
+    >هذه الخطوة للتنشيط مطلوبة فقط إذا كنت تستخدم برنامج الحماية من الفيروسات من Microsoft Defender كحل مكافحة البرامج الضارة النشط.
 
     `sc.exe query Windefend`
 
 
-    إذا كانت النتيجة 'الخدمة المحددة غير موجودة كخدمة مثبتة'، ستحتاج إلى تثبيت برنامج الحماية من الفيروسات من Microsoft Defender. 
+    إذا كانت النتيجة هي "الخدمة المحددة غير موجودة كخدمة مثبتة"، فستحتاج إلى تثبيت برنامج الحماية من الفيروسات من Microsoft Defender. 
 
 
-    للحصول على معلومات حول كيفية استخدام نهج المجموعة لتكوين برنامج الحماية من الفيروسات من Microsoft Defender وإدارتها على خوادم Windows، راجع استخدام إعدادات نهج المجموعة لتكوين وإدارة [ برنامج الحماية من الفيروسات من Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
+    للحصول على معلومات حول كيفية استخدام نهج المجموعة لتكوين وإدارة برنامج الحماية من الفيروسات من Microsoft Defender على خوادم Windows، راجع [استخدام إعدادات نهج المجموعة لتكوين وإدارة برنامج الحماية من الفيروسات من Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
 
-2. تشغيل الأمر التالي للتحقق من أن Microsoft Defender لنقطة النهاية قيد التشغيل:
+2. قم بتشغيل الأمر التالي للتحقق من تشغيل Microsoft Defender لنقطة النهاية:
 
     `sc.exe query sense`
 
-    يجب أن تظهر النتيجة أنها قيد التشغيل. إذا واجهت مشاكل تتعلق بالتكدث، فشاهد استكشاف الأخطاء في [الرصيد وإصلاحها](troubleshoot-onboarding.md).
+    يجب أن تظهر النتيجة أنها قيد التشغيل. إذا واجهت مشاكل في الإلحاق، فراجع [استكشاف أخطاء الإلحاق وإصلاحها](troubleshoot-onboarding.md).
 
 ## <a name="run-a-detection-test"></a>تشغيل اختبار الكشف
 
-اتبع الخطوات في [تشغيل اختبار الكشف](run-detection-test.md) على جهاز تم إعداده حديثا للتحقق من أن الخادم يعمل على إعداد تقرير إلى Defender لخدمة نقطة النهاية.
+اتبع الخطوات في [تشغيل اختبار الكشف على جهاز تم إلحاقه حديثا](run-detection-test.md) للتحقق من أن الخادم يقوم بالإبلاغ إلى Defender لخدمة نقطة النهاية.
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-بعد تهيئة الأجهزة للخدمة بنجاح، ستحتاج إلى تكوين المكونات الفردية للخدمة Microsoft Defender لنقطة النهاية. اتبع [أمر الاعتماد](prepare-deployment.md#adoption-order) لكي تسترشد في تمكين المكونات المختلفة.
+بعد إلحاق الأجهزة إلى الخدمة بنجاح، ستحتاج إلى تكوين المكونات الفردية Microsoft Defender لنقطة النهاية. اتبع [أمر الاعتماد](prepare-deployment.md#adoption-order) ليتم إرشاده حول تمكين المكونات المختلفة.
 
-## <a name="offboard-windows-servers"></a>إيقاف تشغيل Windows الخادم
+## <a name="offboard-windows-servers"></a>إيقاف تشغيل خوادم Windows
 
-يمكنك إيقاف تشغيل Windows Server 2012 R2 و Windows Server 2016 و Windows Server (SAC) و Windows Server 2019 و Windows Server 2019 Core بالطريقة نفسها المتوفرة للأجهزة العميلة ل Windows 10.
+يمكنك إيقاف تشغيل Windows Server 2012 R2، Windows Server 2016، Windows Server (SAC)، Windows Server 2019، وإصدار Windows Server 2019 Core بنفس الطريقة المتوفرة لأجهزة العميل Windows 10.
 
-- [أجهزة إيقاف التشغيل التي تستخدم نهج المجموعة](configure-endpoints-gp.md#offboard-devices-using-group-policy)
-- [أجهزة إيقاف التشغيل التي تستخدم Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
-- [إيقاف تشغيل الأجهزة ومراقبتها باستخدام أدوات الأجهزة المحمولة إدارة الجهاز المحمول](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
-- [أجهزة إيقاف التشغيل باستخدام برنامج نصي محلي](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+- [إيقاف تشغيل الأجهزة باستخدام نهج المجموعة](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [إيقاف تشغيل الأجهزة باستخدام Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [إيقاف تشغيل الأجهزة ومراقبتها باستخدام أدوات إدارة الجهاز الأجهزة المحمولة](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [إيقاف تشغيل الأجهزة باستخدام برنامج نصي محلي](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
-بالنسبة إلى Windows الخادم الأخرى، لديك خياران ل Windows خوادم من الخدمة:
+بعد إلغاء الإلحاق، يمكنك المتابعة لإلغاء تثبيت حزمة الحلول الموحدة على Windows Server 2012 R2 و Windows Server 2016.
+
+بالنسبة إلى إصدارات خادم Windows الأخرى، لديك خياران لإلغاء إلحاق خوادم Windows من الخدمة:
 
 - إلغاء تثبيت عامل MMA
 - إزالة تكوين مساحة عمل Defender لنقطة النهاية
 
 > [!NOTE]
-> تنطبق إرشادات إيقاف التشغيل هذه لإصدارات خوادم Windows الأخرى أيضا إذا كنت تقوم بتشغيل الإصدار Microsoft Defender لنقطة النهاية السابق ل Windows Server 2016 و Windows Server 2012 R2 الذي يتطلب MMA. توجد إرشادات الترحيل إلى الحل الموحد الجديد في سيناريوهات ترحيل الخادم [في Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/server-migration).
+> تنطبق إرشادات إلغاء الإلحاق هذه لإصدارات خادم Windows الأخرى أيضا إذا كنت تقوم بتشغيل Microsoft Defender لنقطة النهاية السابقة لخادم Windows 2016 وخادم Windows 2012 R2 الذي يتطلب MMA. توجد إرشادات الترحيل إلى الحل الموحد الجديد في [سيناريوهات ترحيل الخادم في Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/server-migration).
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
 - [الإصدارات السابقة من Windows](onboard-downlevel.md)
-- [أجهزة Windows 10 الأجهزة](configure-endpoints.md)
+- [إلحاق أجهزة Windows 10](configure-endpoints.md)
 - [الأجهزة غير المجهزة Windows](configure-endpoints-non-windows.md)
 - [تكوين إعدادات الوكيل والاتصال بالإنترنت](configure-proxy-internet.md)
-- [تشغيل اختبار الكشف على جهاز جديد ل Defender for Endpoint](run-detection-test.md)
-- [استكشاف الأخطاء وإصلاحها Microsoft Defender لنقطة النهاية في الحافظة](troubleshoot-onboarding.md)
+- [تشغيل اختبار الكشف على جهاز Defender لنقطة النهاية الذي تم إلحاقه حديثا](run-detection-test.md)
+- [استكشاف أخطاء إلحاق Microsoft Defender لنقطة النهاية وإصلاحها](troubleshoot-onboarding.md)
