@@ -9,12 +9,12 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: ad9cb5e69585f0c014050b51b719e539111cf9fa
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 8c8d79313ee858ebcac8754b96046b517a3f614a
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687174"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64835963"
 ---
 # <a name="shared-devices"></a>الأجهزة المشتركة
 
@@ -31,7 +31,7 @@ ms.locfileid: "64687174"
 
 ## <a name="when-to-use-shared-device-mode"></a>متى تستخدم وضع الجهاز المشترك
 
-أي حالة يقوم فيها المستخدمون بتغيير الأجهزة بشكل متكرر.
+استخدم وضع الجهاز المشترك في الحالات التي يقوم فيها المستخدمون بتغيير الأجهزة بشكل متكرر.
 
 على سبيل المثال، قد يكون صرافو البنك في موقع واحد يديرون الإيداعات، ولكن ينتقلون إلى مكتب خلفي لمساعدة العملاء في الحصول على رهن. في كل موقع من هذه المواقع، يقوم الجهاز بتشغيل تطبيقات مختلفة ويتم تحسينه لهذه المهام، على الرغم من استخدامها من قبل عدة أشخاص.
 
@@ -41,15 +41,33 @@ ms.locfileid: "64687174"
 
 وضع الجهاز المشترك ليس خيارا جيدا في هذه الحالات:
 
-- عندما تحتاج ملفات المستخدم إلى تخزينها محليا بدلا من تخزينها في السحابة
-- إذا كانت تجربة المستخدم يجب أن تكون مختلفة للمستخدمين المختلفين على الجهاز
-- إذا كانت مجموعة التطبيقات التي يحتاجها كل مستخدم تختلف اختلافا كبيرا
+- عندما تحتاج ملفات المستخدم إلى تخزينها محليا بدلا من تخزينها في السحابة.
+- إذا كانت تجربة المستخدم تحتاج إلى أن تكون مختلفة للمستخدمين المختلفين على الجهاز.
+- إذا كانت مجموعة التطبيقات التي يحتاجها كل مستخدم تختلف اختلافا كبيرا.
 
-## <a name="register-new-devices-in-shared-device-mode"></a>تسجيل أجهزة جديدة في وضع الجهاز المشترك
+## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile-in-microsoft-managed-desktop"></a>تسجيل أجهزة جديدة باستخدام ملف تعريف وضع النشر الذاتي Windows Autopilot في Microsoft Managed Desktop
 
-بدءا من عام 2203، سواء كنت أنت أو شريك تتعامل مع تسجيل الجهاز، يمكنك اختيار استخدام ملف تعريف [وضع النشر الذاتي Windows Autopilot](/mem/autopilot/self-deploying) في Microsoft Managed Desktop.
+سواء كنت أنت أو شريك تتعامل مع تسجيل الجهاز، يمكنك اختيار استخدام ملف تعريف [وضع النشر الذاتي Windows Autopilot](/mem/autopilot/self-deploying) في Microsoft Managed Desktop.
 
-إذا كنت تقوم بتسجيل الأجهزة بنفسك، يجب استيراد أجهزة جديدة إلى جزء أجهزة Windows Autopilot.
+### <a name="before-you-begin"></a>قبل البدء
+
+راجع متطلبات وضع النشر الذاتي Windows Autopilot:
+
+> [!IMPORTANT]
+> لا يمكنك إعادة تسجيل جهاز تلقائيا من خلال Autopilot بعد التوزيع الأولي في وضع النشر الذاتي. بدلا من ذلك، احذف سجل الجهاز في [مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431). لحذف سجل الجهاز من مركز الإدارة، حدد **أجهزة DevicesAll**  >  > حدد الأجهزة التي تريد حذفها > **حذف**.  لمزيد من المعلومات، راجع [تحديثات تجربة تسجيل الدخول والنشر Windows Autopilot](https://techcommunity.microsoft.com/t5/intune-customer-success/updates-to-the-windows-autopilot-sign-in-and-deployment/ba-p/2848452).
+
+#### <a name="trusted-platform-module"></a>وحدة النظام الأساسي الموثوق بها
+
+يستخدم وضع النشر الذاتي جهاز TPM 2.0 الخاص بالجهاز لمصادقة الجهاز في مستأجر Azure Active Directory للمؤسسة. لذلك، لا يمكن للأجهزة التي لا تحتوي على TPM 2.0 استخدام هذا الوضع. يجب أن تدعم الأجهزة أيضا إثبات جهاز وحدة النظام الأساسي الموثوق بها. يجب أن تفي جميع أجهزة Windows الجديدة بهذه المتطلبات. تتطلب عملية إثبات وحدة النظام الأساسي الموثوق بها أيضا الوصول إلى مجموعة من عناوين URL HTTPS الفريدة لكل موفر TPM. لمزيد من المعلومات، راجع إدخال وضع النشر الذاتي ل Autopilot والتزويد المسبق ل Autopilot في [متطلبات الشبكات](/mem/autopilot/self-deploying#requirements). لمزيد من المعلومات حول متطلبات برنامج autopilot Windows، راجع [Windows متطلبات برنامج Autopilot](/mem/autopilot/software-requirements).
+
+> [!TIP]
+> إذا حاولت نشر وضع النشر الذاتي على جهاز لا يحتوي على دعم TPM 2.0 أو أنه على جهاز ظاهري، فستفشل العملية عند التحقق من الجهاز باستخدام الخطأ التالي: 0x800705B4 خطأ المهلة (لا يتم دعم الأجهزة الظاهرية TPMs ل Hyper-V). لاحظ أيضا أن Windows 10 الإصدار 1903 أو الإصدارات الأحدث مطلوب لاستخدام وضع النشر الذاتي بسبب المشاكل المتعلقة بشهادة جهاز وحدة النظام الأساسي الموثوق بها في Windows 10 الإصدار 1809. نظرا لأن Windows 10 Enterprise 2019 LTSC يستند إلى الإصدار 1809 من Windows 10، فإن وضع النشر الذاتي غير معتمد أيضا على Windows 10 Enterprise LTSC 2019.
+>
+> لمزيد من المعلومات حول المشكلات الأخرى المعروفة ومراجعة الحلول، راجع [Windows المشاكل المعروفة في Autopilot](/mem/autopilot/known-issues) واستكشاف [أخطاء استيراد جهاز Autopilot وتسجيله وإصلاحها](/mem/autopilot/troubleshoot-device-enrollment).
+
+### <a name="steps-to-register-devices-to-use-the-windows-autopilot-self-deploying-mode-profile"></a>خطوات تسجيل الأجهزة لاستخدام ملف تعريف وضع النشر الذاتي Windows Autopilot
+
+إذا كنت تقوم بتسجيل الأجهزة بنفسك، يجب استيراد أجهزة جديدة إلى جزء أجهزة autopilot Windows.
 
 **لاستيراد أجهزة جديدة إلى جزء أجهزة Windows Autopilot:**
 
@@ -76,7 +94,7 @@ ms.locfileid: "64687174"
 
 ### <a name="device-storage"></a>تخزين الجهاز
 
-يجب أن يتم نسخ بيانات مستخدمي الأجهزة المشتركة احتياطيا إلى السحابة حتى تتمكن من متابعتهم إلى أجهزة أخرى. بمجرد تسجيل الأجهزة في وضع الجهاز المشترك، تأكد من تمكين ميزات إعادة توجيه [الملفات عند الطلب](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) OneDrive [والمجلدات المعروفة](/onedrive/redirect-known-folders). يقلل هذا الأسلوب من تأثير كل ملف تعريف مستخدم على تخزين الجهاز. تحذف الأجهزة الموجودة في وضع الجهاز المشترك ملفات تعريف المستخدمين تلقائيا إذا انخفضت مساحة القرص المجانية إلى أقل من 25٪. تتم جدولة هذا النشاط في منتصف الليل في التوقيت المحلي للجهاز، ما لم يصبح التخزين محدودا للغاية.
+يجب أن يقوم مستخدمو الأجهزة المشتركة بنسخ بياناتهم احتياطيا على السحابة حتى تتمكن من متابعتهم إلى أجهزة أخرى. بمجرد تسجيل الأجهزة في وضع الجهاز المشترك، تأكد من تمكين ميزات إعادة توجيه [الملفات عند الطلب](https://support.microsoft.com/office/save-disk-space-with-onedrive-files-on-demand-for-windows-10-0e6860d3-d9f3-4971-b321-7092438fb38e#:~:text=%20Turn%20on%20Files%20On-Demand%20%201%20Make,files%20as%20you%20use%20them%20box.%20More%20) في OneDrive [والمجلدات المعروفة](/onedrive/redirect-known-folders). يقلل هذا الأسلوب من تأثير كل ملف تعريف مستخدم على تخزين الجهاز. تحذف الأجهزة الموجودة في وضع الجهاز المشترك ملفات تعريف المستخدمين تلقائيا إذا انخفضت مساحة القرص المجانية إلى أقل من 25٪. تتم جدولة هذا النشاط في منتصف الليل في التوقيت المحلي للجهاز، ما لم يصبح التخزين محدودا للغاية.
 
 Microsoft Managed Desktop تستخدم [SharedPC](/mem/intune/configuration/shared-user-device-settings-windows) CSP للقيام بهذه العمليات، لذا تأكد من أنك لا تستخدم موفري خدمة العملاء هذه بنفسك.
 

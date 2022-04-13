@@ -6,7 +6,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+ms.localizationpriority: high
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 596616328a02182b39c67f58137d43ab626e1756
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: cc2032c547cbd9c75a73da2f47f7baed21e7438e
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823301"
+ms.locfileid: "64835920"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية
 
@@ -134,7 +134,7 @@ ms.locfileid: "64823301"
 - تحسين إخراج نسبة استخدام الشبكة عندما تكون خدمة SmartScreen غير قابلة للوصول 
 - تحسينات الاتصال للعملاء الذين يستخدمون وكلاء مع متطلبات المصادقة
 - تم تصحيح خطأ تحديث جهاز VDI ل "مشاركة الملفات" على الشبكة 
-- يدعم الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر الآن استهداف الجهاز متعدد المستويات باستخدام موفري خدمة العملاء الجدد. راجع [الكشف عن نقطة النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) في وضع الحظر](edr-in-block-mode.md).
+- يدعم الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر الآن استهداف الأجهزة متعدد المستويات مع موفري خدمة العملاء الجدد. راجع [الكشف عن نقطة النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) في وضع الحظر](edr-in-block-mode.md).
 
 ### <a name="known-issues"></a>المشاكل المعروفة
 

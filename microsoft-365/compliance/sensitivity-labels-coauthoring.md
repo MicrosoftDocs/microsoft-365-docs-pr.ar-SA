@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: قم بتشغيل إعداد يمكن التأليف المشترك والحفظ التلقائي في تطبيقات سطح المكتب للمستندات المسماة والمشتفرة في SharePoint OneDrive.
-ms.openlocfilehash: baa2236915d37917e4ed69e5356db31262795d57
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
+ms.openlocfilehash: 0fee934af5e2dfb01c681c9b2e415ef538312367
+ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687196"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64836095"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>تمكين التأليف المشترك للملفات المشفرة بتسميات الحساسية
 
@@ -74,7 +74,7 @@ ms.locfileid: "64687196"
 - يجب تمكين تسميات الحساسية [لملفات Office في SharePoint OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) للمستأجر. إذا لم تكن هذه الميزة ممكنة بالفعل، فسيتم تمكينها تلقائيا عند تحديد الإعداد لتشغيل التأليف المشترك للملفات التي تحتوي على تسميات الحساسية.
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: الحد الأدنى للإصدار 2107 من خيار التحديث الحالي أو خيار التحديث الشهري للمؤسسة، أو الحد الأدنى للإصدار 2202 من قناة المؤسسة Semi-Annual
+    - **Windows**: الحد الأدنى للإصدار 2107 من خيار التحديث الحالي أو قناة المؤسسة الشهرية، أو الحد الأدنى للإصدار 2202 من Semi-Annual قناة المؤسسة (معاينة)
     - **macOS**: الإصدار الأدنى 16.51
     - **iOS**: الآن في المعاينة عند [الاشتراك](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) مع الحد الأدنى للإصدار 2.58
     - **Android**: الآن في المعاينة عند [الاشتراك](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) باستخدام الحد الأدنى للإصدار 16.0.14931
