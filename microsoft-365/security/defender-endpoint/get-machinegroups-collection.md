@@ -1,7 +1,7 @@
 ---
-title: الحصول على API مجموعة مجموعات RBAC على جهاز
-description: تعرف على كيفية استخدام API للحصول على مجموعة KB لاسترداد مجموعة من مجموعات أجهزة RBAC في Microsoft Defender لنقطة النهاية.
-keywords: apis، api للرسم البياني، apis المعتمدة، الحصول على، RBAC، مجموعة
+title: الحصول على واجهة برمجة تطبيقات مجموعة مجموعات أجهزة RBAC
+description: تعرف على كيفية استخدام واجهة برمجة تطبيقات مجموعة Get KB لاسترداد مجموعة من مجموعات أجهزة RBAC في Microsoft Defender لنقطة النهاية.
+keywords: واجهة برمجة التطبيقات، واجهة برمجة تطبيقات الرسم البياني، واجهة برمجة التطبيقات المدعومة، get، RBAC، المجموعة
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,23 +17,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
 ms.custom: api
-ms.openlocfilehash: 699a7e2738f1e0c89977bd152832f45935a06387
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 528b80b3c40fd7df853190788abb347ed90a82e4
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63570508"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64825157"
 ---
-# <a name="get-kb-collection-api"></a>الحصول على API مجموعة KB
+# <a name="get-kb-collection-api"></a>الحصول على واجهة برمجة تطبيقات مجموعة KB
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:** 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -48,25 +48,25 @@ ms.locfileid: "63570508"
 ## <a name="http-request"></a>طلب HTTP
 
 ```http
-GET /testwdatppreview/machinegroups
+GET https://graph.microsoft.com/testwdatppreview/machinegroups
 ```
 
-## <a name="request-headers"></a>طلب رؤوس
+## <a name="request-headers"></a>عناوين الطلبات
 
-رأس|القيمة
+راس|قيمه
 :---|:---
 التخويل | حامل {token}. **مطلوب**.
-نوع المحتوى | application/json
+نوع المحتوى | تطبيق/json
 
-## <a name="request-body"></a>طلب الحصول على "هيئة"
+## <a name="request-body"></a>نص الطلب
 
-فارغ
+فارغه
 
-## <a name="response"></a>الاستجابة
+## <a name="response"></a>استجابه
 
-إذا نجح - 200 موافق.
+إذا نجحت - 200 موافق.
 
-## <a name="example"></a>مثال
+## <a name="example"></a>المثال
 
 ### <a name="request"></a>طلب
 
@@ -80,8 +80,8 @@ Content-type: application/json
 ### <a name="response-example"></a>مثال على الاستجابة
 
 فيما يلي مثال على الاستجابة.
-يحتوي "معرّف الحقل" على " **معرّف** مجموعة الأجهزة" ويساوي " **rbacGroupId** " الحقل في معلومات الأجهزة.
-يتم **إلغاء تجميع** الحقل فقط لمجموعة واحدة لكل الأجهزة التي لم يتم تعيينها إلى أي مجموعة. هذه المجموعة كالعادة لها اسم "مجموعة غير معينة".
+يحتوي معرف الحقل على **معرف** مجموعة الأجهزة ومساوي ل **rbacGroupId** للحقل في معلومات الأجهزة.
+الحقل **غير المجمع** صحيح فقط لمجموعة واحدة لكافة الأجهزة التي لم يتم تعيينها إلى أي مجموعة. هذه المجموعة كالمعتاد لها اسم "UnassignedGroup".
 
 ```http
 HTTP/1.1 200 OK

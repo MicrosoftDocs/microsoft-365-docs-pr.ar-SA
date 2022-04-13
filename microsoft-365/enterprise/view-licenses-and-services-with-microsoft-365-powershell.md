@@ -1,5 +1,5 @@
 ---
-title: عرض Microsoft 365 والخدمات باستخدام PowerShell
+title: عرض Microsoft 365 التراخيص والخدمات باستخدام PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,34 +19,99 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: يشرح كيفية استخدام PowerShell لعرض معلومات حول خطط الترخيص والخدمات والتراخيص المتوفرة في Microsoft 365 مؤسستك.
-ms.openlocfilehash: 3b90596c68e3beadcc2b33ef59ff9c3503b84f8a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: يشرح كيفية استخدام PowerShell لعرض معلومات حول خطط الترخيص والخدمات والتراخيص المتوفرة في مؤسستك Microsoft 365.
+ms.openlocfilehash: 8b5ff01f15e4dea7a44b423609b6533cc5729a5f
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63575303"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823883"
 ---
-# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>عرض Microsoft 365 والخدمات باستخدام PowerShell
+# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>عرض Microsoft 365 التراخيص والخدمات باستخدام PowerShell
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
-يتكون Microsoft 365 الاشتراك من العناصر التالية:
+يتكون كل اشتراك Microsoft 365 من العناصر التالية:
 
-- **خطط الترخيص** تعرف أيضا بخطط الترخيص أو Microsoft 365 أخرى. تحدد خطط الترخيص Microsoft 365 المتوفرة للمستخدمين. قد Microsoft 365 الاشتراك خطط ترخيص متعددة. قد يكون أحد أمثلة خطة الترخيص Microsoft 365 E3.
+- **خطط الترخيص** تعرف هذه أيضا بخطط الترخيص أو خطط Microsoft 365. تحدد خطط الترخيص خدمات Microsoft 365 المتوفرة للمستخدمين. قد يحتوي اشتراكك في Microsoft 365 على خطط ترخيص متعددة. ومن الأمثلة على خطة الترخيص Microsoft 365 E3.
     
-- **الخدمات** تعرف أيضا بخطط الخدمة. الخدمات هي Microsoft 365 والميزات والإمكانات المتوفرة في كل خطة ترخيص، على سبيل المثال، Exchange Online Microsoft 365 Apps for enterprise (التي كانت تسمى سابقا Office 365 ProPlus). يمكن أن يكون لدى المستخدمين تراخيص متعددة تم تعيينها لهم من خطط ترخيص مختلفة تمنح حق الوصول إلى خدمات مختلفة.
+- **خدمات** تعرف هذه أيضا بخطط الخدمة. الخدمات هي المنتجات والميزات والقدرات Microsoft 365 المتوفرة في كل خطة ترخيص، على سبيل المثال، Exchange Online Microsoft 365 Apps for enterprise (المسمى سابقا Office 365 ProPlus). يمكن أن يكون لدى المستخدمين تراخيص متعددة معينة لهم من خطط ترخيص مختلفة تمنح حق الوصول إلى خدمات مختلفة.
     
-- **التراخيص** تحتوي كل خطة ترخيص على عدد التراخيص التي اشتريتها. يمكنك تعيين تراخيص للمستخدمين حتى يمكنهم استخدام Microsoft 365 التي تم تعريفها بواسطة خطة الترخيص. يتطلب كل حساب مستخدم ترخيصا واحدا على الأقل من خطة ترخيص واحدة حتى يمكنهم تسجيل الدخول Microsoft 365 واستخدام الخدمات.
+- **التراخيص** تحتوي كل خطة ترخيص على عدد التراخيص التي اشتريتها. يمكنك تعيين تراخيص للمستخدمين حتى يتمكنوا من استخدام خدمات Microsoft 365 التي تم تعريفها بواسطة خطة الترخيص. يتطلب كل حساب مستخدم ترخيصا واحدا على الأقل من خطة ترخيص واحدة حتى يتمكنوا من تسجيل الدخول إلى Microsoft 365 واستخدام الخدمات.
     
-يمكنك استخدام PowerShell Microsoft 365 لعرض تفاصيل حول خطط الترخيص والتراخيص والخدمات المتوفرة في Microsoft 365 مؤسستك. لمزيد من المعلومات حول المنتجات والميزات والخدمات المتوفرة في اشتراكات Office 365 مختلفة، راجع Office 365 [خيارات الخطة](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
+يمكنك استخدام PowerShell Microsoft 365 لعرض تفاصيل حول خطط الترخيص والتراخيص والخدمات المتوفرة في مؤسستك Microsoft 365. لمزيد من المعلومات حول المنتجات والميزات والخدمات المتوفرة في اشتراكات Office 365 مختلفة، راجع [Office 365 خيارات الخطة](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>استخدام وحدة Azure Active Directory PowerShell Graph النمطية
+## <a name="use-the-microsoft-graph-powershell-sdk"></a>استخدام Microsoft Graph PowerShell SDK
 
-أولا، [اتصل Microsoft 365 المستأجر](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+أولا، [اتصل بمستأجر Microsoft 365](/graph/powershell/get-started#authentication).
+
+تتطلب قراءة خطط ترخيص الاشتراك نطاق أذونات Organization.Read.All أو أحد الأذونات الأخرى المدرجة في [الصفحة المرجعية "List subscribedSkus" Graph API](/graph/api/subscribedsku-list).
+
+```powershell
+Connect-Graph -Scopes Organization.Read.All
+```
+
+لعرض معلومات موجزة حول خطط الترخيص الحالية والتراخيص المتوفرة لكل خطة، قم بتشغيل هذا الأمر:
   
-لعرض معلومات ملخصة حول خطط الترخيص الحالية والتراخيص المتوفرة لكل خطة، يمكنك تشغيل هذا الأمر:
+```powershell
+Get-MgSubscribedSku | Select -Property Sku*, ConsumedUnits -ExpandProperty PrepaidUnits | Format-List
+```
+
+تحتوي النتائج على:
+  
+- **SkuPartNumber:** إظهار خطط الترخيص المتوفرة لمؤسستك. على سبيل المثال، `ENTERPRISEPACK` هو اسم خطة الترخيص Office 365 Enterprise E3.
+    
+- **تمكين:** عدد التراخيص التي اشتريتها لخطة ترخيص معينة.
+    
+- **العناصر المستهلكة:** عدد التراخيص التي قمت بتعيينها للمستخدمين من خطة ترخيص معينة.
+    
+لعرض تفاصيل حول خدمات Microsoft 365 المتوفرة في جميع خطط الترخيص، قم أولا بعرض قائمة بخطط الترخيص.
+
+```powershell
+Get-MgSubscribedSku
+```
+
+بعد ذلك، قم بتخزين معلومات خطط الترخيص في متغير.
+
+```powershell
+$licenses = Get-MgSubscribedSku
+```
+
+بعد ذلك، اعرض الخدمات في خطة ترخيص معينة.
+
+```powershell
+$licenses[<index>].ServicePlans
+```
+
+\<index> هو عدد صحيح يحدد رقم صف خطة الترخيص من عرض `Get-MgSubscribedSku | Select SkuPartNumber` الأمر، ناقص 1.
+
+على سبيل المثال، إذا كان عرض `Get-MgSubscribedSku | Select SkuPartNumber` الأمر هو التالي:
+
+```powershell
+SkuPartNumber
+-------------
+WIN10_VDA_E5
+EMSPREMIUM
+ENTERPRISEPREMIUM
+FLOW_FREE
+```
+
+ثم الأمر لعرض الخدمات لخطة ترخيص ENTERPRISEPREMIUM هو:
+
+```powershell
+$licenses[2].ServicePlans
+```
+
+ENTERPRISEPREMIUM هو الصف الثالث. لذلك، قيمة الفهرس هي (3 - 1)، أو 2.
+
+للحصول على قائمة كاملة بخطط الترخيص (المعروفة أيضا باسم أسماء المنتجات)، وخطط الخدمة المضمنة، وأسماءها المألوفة المقابلة، راجع [أسماء المنتجات ومعرفات خطة الخدمة للترخيص](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>استخدام Azure Active Directory PowerShell للوحدة النمطية Graph
+
+أولا، [اتصل بمستأجر Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+  
+لعرض معلومات موجزة حول خطط الترخيص الحالية والتراخيص المتوفرة لكل خطة، قم بتشغيل هذا الأمر:
   
 ```powershell
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
@@ -54,13 +119,13 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 تحتوي النتائج على:
   
-- **SkuPartNumber:** يعرض خطط الترخيص المتوفرة لمنظمتك. على سبيل المثال`ENTERPRISEPACK`، هو اسم خطة الترخيص Office 365 Enterprise E3.
+- **SkuPartNumber:** إظهار خطط الترخيص المتوفرة لمؤسستك. على سبيل المثال، `ENTERPRISEPACK` هو اسم خطة الترخيص Office 365 Enterprise E3.
     
-- **تم التمكين:** عدد التراخيص التي اشتريتها لخطة ترخيص معينة.
+- **تمكين:** عدد التراخيص التي اشتريتها لخطة ترخيص معينة.
     
-- **ConsumedUnits:** عدد التراخيص التي قمت بتعيينها إلى مستخدمين من خطة ترخيص معينة.
+- **العناصر المستهلكة:** عدد التراخيص التي قمت بتعيينها للمستخدمين من خطة ترخيص معينة.
     
-لعرض تفاصيل حول Microsoft 365 المتوفرة في كل خطط الترخيص، اعرض أولا قائمة بخطط الترخيص.
+لعرض تفاصيل حول خدمات Microsoft 365 المتوفرة في جميع خطط الترخيص، قم أولا بعرض قائمة بخطط الترخيص.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
@@ -78,7 +143,7 @@ $licenses = Get-AzureADSubscribedSku
 $licenses[<index>].ServicePlans
 ```
 
-\<index> هو عدد صحيح يحدد رقم الصف لخطة الترخيص `Get-AzureADSubscribedSku | Select SkuPartNumber` من عرض الأمر، ناقص 1.
+\<index> هو عدد صحيح يحدد رقم صف خطة الترخيص من عرض `Get-AzureADSubscribedSku | Select SkuPartNumber` الأمر، ناقص 1.
 
 على سبيل المثال، إذا كان عرض `Get-AzureADSubscribedSku | Select SkuPartNumber` الأمر هو التالي:
 
@@ -91,51 +156,51 @@ ENTERPRISEPREMIUM
 FLOW_FREE
 ```
 
-بعد ذلك، يكون الأمر لعرض الخدمات لخطة ترخيص ENTERPRISEPREMIUM هو:
+ثم الأمر لعرض الخدمات لخطة ترخيص ENTERPRISEPREMIUM هو:
 
 ```powershell
 $licenses[2].ServicePlans
 ```
 
-ENTERPRISEPREMIUM هو الصف الثالث. وبالتالي، تكون قيمة الفهرس (3 - 1) أو 2.
+ENTERPRISEPREMIUM هو الصف الثالث. لذلك، قيمة الفهرس هي (3 - 1)، أو 2.
 
-للحصول على قائمة كاملة بخطط الترخيص (المعروفة أيضا باسم أسماء المنتجات) وخطط الخدمة المضمنة الخاصة بها وأسماءها المناسبة، راجع أسماء المنتجات ومعرفات خطط [الخدمة للترخيص](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+للحصول على قائمة كاملة بخطط الترخيص (المعروفة أيضا باسم أسماء المنتجات)، وخطط الخدمة المضمنة، وأسماءها المألوفة المقابلة، راجع [أسماء المنتجات ومعرفات خطة الخدمة للترخيص](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>استخدم الوحدة Microsoft Azure Active Directory النمطية Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>استخدام الوحدة النمطية Microsoft Azure Active Directory Windows PowerShell
 
-أولا، [اتصل Microsoft 365 المستأجر](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+أولا، [اتصل بمستأجر Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 >[!Note]
->يتوفر برنامج PowerShell النصي الذي يأتمتة الإجراءات الموضحة في هذا الموضوع. وبشكل خاص، يتيح لك البرنامج النصي عرض الخدمات وتعطيلها في Microsoft 365، بما في ذلك Sway. لمزيد من المعلومات، راجع [تعطيل الوصول إلى Sway باستخدام PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md).
+>يتوفر برنامج نصي PowerShell يقوم بأتمتة الإجراءات الموضحة في هذا الموضوع. على وجه التحديد، يتيح لك البرنامج النصي عرض الخدمات وتعطيلها في مؤسستك Microsoft 365، بما في ذلك Sway. لمزيد من المعلومات، راجع [تعطيل الوصول إلى Sway باستخدام PowerShell](disable-access-to-sway-with-microsoft-365-powershell.md).
 >
     
-لعرض معلومات ملخصة حول خطط الترخيص الحالية والتراخيص المتوفرة لكل خطة، يمكنك تشغيل الأمر التالي:
+لعرض معلومات موجزة حول خطط الترخيص الحالية والتراخيص المتوفرة لكل خطة، قم بتشغيل الأمر التالي:
   
 ```powershell
 Get-MsolAccountSku
 ```
 
 >[!Note]
->لا يدعم PowerShell Core الوحدة النمطية Microsoft Azure Active Directory النمطية Windows PowerShell النمطية و cmdlets مع **Msol** في اسمها. لمواصلة استخدام هذه cmdlets، يجب تشغيلها من Windows PowerShell.
+>لا يدعم PowerShell Core الوحدة النمطية Microsoft Azure Active Directory لوحدة Windows PowerShell و cmdlets مع **Msol** باسمها. لمتابعة استخدام أوامر cmdlets هذه، يجب تشغيلها من Windows PowerShell.
 >
 
 تحتوي النتائج على المعلومات التالية:
   
-- **AccountSkuId:** إظهار خطط الترخيص المتوفرة لمنظمتك باستخدام بناء الجملة `<CompanyName>:<LicensingPlan>`.  _\<CompanyName>_ هي القيمة التي قدمتها عند التسجيل في Microsoft 365، وهي قيمة فريدة لمنظمتك. القيمة _\<LicensingPlan>_ هي نفسها للجميع. على سبيل المثال`litwareinc:ENTERPRISEPACK`، في القيمة ، `litwareinc`يكون اسم الشركة ، `ENTERPRISEPACK`واسم خطة الترخيص ، وهو اسم النظام Office 365 Enterprise E3.
+- **AccountSkuId:** إظهار خطط الترخيص المتوفرة لمؤسستك باستخدام بناء الجملة `<CompanyName>:<LicensingPlan>`.  _\<CompanyName>_ هي القيمة التي قدمتها عند التسجيل في Microsoft 365، وهي فريدة لمؤسستك. _\<LicensingPlan>_ القيمة هي نفسها للجميع. على سبيل المثال، في القيمة`litwareinc:ENTERPRISEPACK`، يكون اسم `litwareinc`الشركة، واسم `ENTERPRISEPACK`خطة الترخيص، وهو اسم النظام Office 365 Enterprise E3.
     
 - **ActiveUnits:** عدد التراخيص التي اشتريتها لخطة ترخيص معينة.
     
-- **WarningUnits:** عدد التراخيص في خطة ترخيص لم تقم بتجديدها، وستنتهي صلاحيتها بعد فترة السماح التي مدتها 30 يوما.
+- **WarningUnits:** Number of licenses in a licensing plan that you haven't renewed, and that will expire after the 30-day grace period.
     
-- **ConsumedUnits:** عدد التراخيص التي قمت بتعيينها إلى مستخدمين من خطة ترخيص معينة.
+- **العناصر المستهلكة:** عدد التراخيص التي قمت بتعيينها للمستخدمين من خطة ترخيص معينة.
     
-لعرض تفاصيل حول Microsoft 365 المتوفرة في كل خطط الترخيص، يمكنك تشغيل الأمر التالي:
+لعرض تفاصيل حول خدمات Microsoft 365 المتوفرة في جميع خطط الترخيص، قم بتشغيل الأمر التالي:
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-يعرض الجدول التالي Microsoft 365 الجديدة وأسماءها مألوفة للخدمات الأكثر شيوعا. قد تكون قائمة خطط الخدمة الخاصة بك مختلفة. 
+يعرض الجدول التالي خطط خدمة Microsoft 365 وأسماءها المألوفة للخدمات الأكثر شيوعا. قد تكون قائمة خطط الخدمة الخاصة بك مختلفة. 
   
 |**خطة الخدمة**|**الوصف**|
 |:-----|:-----|
@@ -143,15 +208,15 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(التي كانت تسمى سابقا Office 365 ProPlus)*  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(المسمى سابقا Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
-| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online 2  <br/> |
+| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online الخطة 2  <br/> |
    
-للحصول على قائمة كاملة بخطط الترخيص (المعروفة أيضا باسم أسماء المنتجات) وخطط الخدمة المضمنة الخاصة بها وأسماءها المناسبة، راجع أسماء المنتجات ومعرفات خطط [الخدمة للترخيص](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+للحصول على قائمة كاملة بخطط الترخيص (المعروفة أيضا باسم أسماء المنتجات)، وخطط الخدمة المضمنة، وأسماءها المألوفة المقابلة، راجع [أسماء المنتجات ومعرفات خطة الخدمة للترخيص](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
-لعرض تفاصيل حول Microsoft 365 المتوفرة في خطة ترخيص معينة، استخدم بناء الجملة التالي.
+لعرض تفاصيل حول خدمات Microsoft 365 المتوفرة في خطة ترخيص معينة، استخدم بناء الجملة التالي.
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
@@ -165,8 +230,8 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[إدارة Microsoft 365 المستخدمين والتراخيص والمجموعات باستخدام PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[إدارة حسابات المستخدمين والتراخيص والمجموعات Microsoft 365 باستخدام PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
 [إدارة Microsoft 365 باستخدام PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[بدء العمل باستخدام PowerShell Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[بدء استخدام PowerShell ل Microsoft 365](getting-started-with-microsoft-365-powershell.md)

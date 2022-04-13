@@ -1,5 +1,5 @@
 ---
-title: عرض المستخدمين المرخصين وغير المرخصين Microsoft 365 مع PowerShell
+title: عرض مستخدمي Microsoft 365 المرخصين وغير المرخصين باستخدام PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,61 +19,119 @@ ms.custom:
 - PowerShell
 - seo-marvel-apr2020
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: تشرح هذه المقالة كيفية استخدام PowerShell لعرض حسابات المستخدمين المرخصة وغير المرخصة Microsoft 365 المستخدمين.
-ms.openlocfilehash: 015cb63fd692131d77799fe30fc94c6214bb01d3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: تشرح هذه المقالة كيفية استخدام PowerShell لعرض حسابات المستخدمين Microsoft 365 المرخصة وغير المرخصة.
+ms.openlocfilehash: 1be54b20d3b50985fea8eb665a1b6098a26aa703
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63575297"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823620"
 ---
-# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>عرض المستخدمين المرخصين وغير المرخصين Microsoft 365 مع PowerShell
+# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>عرض مستخدمي Microsoft 365 المرخصين وغير المرخصين باستخدام PowerShell
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
-قد يكون لدى حسابات المستخدمين في مؤسستك Microsoft 365 بعض التراخيص المتوفرة المعينة لها أو كلها أو لا يتم تعيينها لها من خطط الترخيص المتوفرة في مؤسستك. يمكنك استخدام PowerShell Microsoft 365 للعثور بسرعة على المستخدمين المرخصين وغير المرخصين في مؤسستك.
+قد تحتوي حسابات المستخدمين في مؤسستك Microsoft 365 على بعض التراخيص المتوفرة المعينة إليها من خطط الترخيص المتوفرة في مؤسستك أو كلها أو لا تحتوي على أي منها. يمكنك استخدام PowerShell Microsoft 365 للعثور بسرعة على المستخدمين المرخصين وغير المرخصين في مؤسستك.
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>استخدام وحدة Azure Active Directory PowerShell Graph النمطية
+## <a name="use-the-microsoft-graph-powershell-sdk"></a>استخدام Microsoft Graph PowerShell SDK
 
-أولا، [اتصل Microsoft 365 المستأجر](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+أولا، [اتصل بمستأجر Microsoft 365](/graph/powershell/get-started#authentication).
+
+تتطلب قراءة خصائص المستخدم بما في ذلك تفاصيل الترخيص نطاق أذونات User.Read.All أو أحد الأذونات الأخرى المدرجة في [الصفحة المرجعية "Get a user" Graph API](/graph/api/user-get).
+
+نطاق أذونات Organization.Read.All مطلوب لقراءة التراخيص المتوفرة في المستأجر.
+
+```powershell
+Connect-Graph -Scopes User.Read.All, Organization.Read.All
+```
+
+لعرض تفاصيل الترخيص لحساب مستخدم معين، قم بتشغيل الأمر التالي:
+  
+```powershell
+Get-MgUserLicenseDetail -UserId "<user sign-in name (UPN)>"
+```
+
+على سبيل المثال:
+
+```powershell
+Get-MgUserLicenseDetail -UserId "belindan@litwareinc.com"
+```
+
+لعرض قائمة بجميع حسابات المستخدمين في مؤسستك التي لم يتم تعيين أي خطة ترخيص لها (مستخدمين غير مرخصين)، قم بتشغيل الأمر التالي:
+  
+```powershell
+Get-MgUser -Filter 'assignedLicenses/$count eq 0' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
+
+Write-Host "Found $unlicensedUserCount unlicensed users."
+```
+
+لعرض قائمة بجميع حسابات المستخدمين الأعضاء (باستثناء الضيوف) في مؤسستك التي لم يتم تعيين أي من خطط الترخيص الخاصة بك (المستخدمين غير المرخصين)، قم بتشغيل الأمر التالي:
+  
+```powershell
+Get-MgUser -Filter "assignedLicenses/`$count eq 0 and userType eq 'Member'" -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
+
+Write-Host "Found $unlicensedUserCount unlicensed users (excluding guests)."
+```
+
+لعرض قائمة بجميع حسابات المستخدمين في مؤسستك التي تم تعيينها لأي من خطط الترخيص (المستخدمين المرخصين)، قم بتشغيل الأمر التالي:
+  
+```powershell
+Get-MgUser -Filter 'assignedLicenses/$count ne 0' -ConsistencyLevel eventual -CountVariable licensedUserCount -All -Select UserPrincipalName,DisplayName,AssignedLicenses | Format-Table -Property UserPrincipalName,DisplayName,AssignedLicenses
+
+Write-Host "Found $licensedUserCount licensed users."
+```
+
+لعرض قائمة بكل حسابات المستخدمين في مؤسستك التي تم تعيين ترخيص E5 لها، قم بتشغيل الأمر التالي:
+
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+
+Get-MgUser -Filter "assignedLicenses/any(x:x/skuId eq $($e5sku.SkuId) )" -ConsistencyLevel eventual -CountVariable e5licensedUserCount -All
+
+Write-Host "Found $e5licensedUserCount E5 licensed users."
+```
+
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>استخدام Azure Active Directory PowerShell للوحدة النمطية Graph
+
+أولا، [اتصل بمستأجر Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
  
-لعرض قائمة بكل حسابات المستخدمين في مؤسستك التي لم يتم تعيين أي خطط ترخيص لها (المستخدمون غير المرخصين)، قم بتشغيل الأمر التالي:
+لعرض قائمة بجميع حسابات المستخدمين في مؤسستك التي لم يتم تعيين أي خطة ترخيص لها (مستخدمين غير مرخصين)، قم بتشغيل الأمر التالي:
   
 ```powershell
 Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
-لعرض قائمة بكل حسابات المستخدمين في مؤسستك التي تم تعيينها لأي من خطط الترخيص (المستخدمون المرخصون)، قم بتشغيل الأمر التالي:
+لعرض قائمة بجميع حسابات المستخدمين في مؤسستك التي تم تعيينها لأي من خطط الترخيص (المستخدمين المرخصين)، قم بتشغيل الأمر التالي:
   
 ```powershell
 Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].SkuId ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }
 ```
 
 >[!Note]
->لتضمين جميع المستخدمين في اشتراكك، استخدم `Get-AzureAdUser -All $true` الأمر.
+>لإدراج جميع المستخدمين في اشتراكك، استخدم `Get-AzureAdUser -All $true` الأمر.
 >
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>استخدم الوحدة Microsoft Azure Active Directory النمطية Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>استخدام الوحدة النمطية Microsoft Azure Active Directory Windows PowerShell
 
-أولا، [اتصل Microsoft 365 المستأجر](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+أولا، [اتصل بمستأجر Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-لعرض قائمة بكل حسابات المستخدمين ووضع الترخيص الخاص بهم في مؤسستك، يمكنك تشغيل الأمر التالي في PowerShell:
+لعرض قائمة بجميع حسابات المستخدمين وحالة الترخيص الخاصة بهم في مؤسستك، قم بتشغيل الأمر التالي في PowerShell:
   
 ```powershell
 Get-MsolUser -All
 ```
 
 >[!Note]
->لا يدعم PowerShell Core الوحدة النمطية Microsoft Azure Active Directory النمطية Windows PowerShell النمطية و cmdlets مع **Msol** في اسمها. لمواصلة استخدام هذه cmdlets، يجب تشغيلها من Windows PowerShell.
+>لا يدعم PowerShell Core الوحدة النمطية Microsoft Azure Active Directory لوحدة Windows PowerShell و cmdlets مع **Msol** باسمها. لمتابعة استخدام أوامر cmdlets هذه، يجب تشغيلها من Windows PowerShell.
 >
 
-لعرض قائمة بكل حسابات المستخدمين غير مرخصين في مؤسستك، يمكنك تشغيل الأمر التالي:
+لعرض قائمة بكل حسابات المستخدمين غير المرخصين في مؤسستك، قم بتشغيل الأمر التالي:
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-لعرض قائمة بكل حسابات المستخدمين المرخص لهم في مؤسستك، يمكنك تشغيل الأمر التالي:
+لعرض قائمة بكل حسابات المستخدمين المرخص لهم في مؤسستك، قم بتشغيل الأمر التالي:
   
 ```powershell
 Get-MsolUser -All | where {$_.isLicensed -eq $true}
@@ -81,8 +139,8 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[إدارة Microsoft 365 المستخدمين والتراخيص والمجموعات باستخدام PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[إدارة حسابات المستخدمين والتراخيص والمجموعات Microsoft 365 باستخدام PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
 [إدارة Microsoft 365 باستخدام PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[بدء العمل باستخدام PowerShell Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[بدء استخدام PowerShell ل Microsoft 365](getting-started-with-microsoft-365-powershell.md)

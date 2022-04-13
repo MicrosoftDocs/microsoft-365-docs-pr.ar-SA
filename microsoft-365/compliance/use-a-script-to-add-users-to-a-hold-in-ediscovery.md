@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: تعرف على كيفية تشغيل برنامج نصي لإضافة علب بريد & OneDrive for Business مواقع إلى قائمة احتجاز جديدة مقترنة بحالة eDiscovery في مركز التوافق في Microsoft 365.
-ms.openlocfilehash: a678649ebd15a34bdfe5765449d41feae1b14901
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 10a605b422178e5006d8a027a697ca6745f82b98
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761230"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824477"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>استخدام برنامج نصي لإضافة مستخدمين إلى قائمة احتجاز في حالة eDiscovery الأساسية
 
@@ -47,7 +47,7 @@ ms.locfileid: "64761230"
 
 - يجب أن تكون عضوا في مجموعة دور eDiscovery Manager في مركز التوافق في Microsoft 365 ومسؤول SharePoint Online لتشغيل البرنامج النصي في الخطوة 3. لمزيد من المعلومات، راجع [تعيين أذونات eDiscovery في Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
 
-- يمكن إضافة 1000 علبة بريد و100 موقع كحد أقصى إلى قائمة احتجاز مقترنة بحالة eDiscovery في مركز التوافق في Microsoft 365. بافتراض أن كل مستخدم تريد وضعه قيد الاحتجاز لديه موقع OneDrive for Business، يمكنك إضافة 100 مستخدم كحد أقصى إلى قائمة احتجاز باستخدام البرنامج النصي في هذه المقالة.
+- يمكن إضافة 1000 علبة بريد و100 موقع كحد أقصى إلى قائمة احتجاز مقترنة بحالة eDiscovery الأساسية في مركز التوافق في Microsoft 365. بافتراض أن كل مستخدم تريد وضعه قيد الاحتجاز لديه موقع OneDrive for Business، يمكنك إضافة 100 مستخدم كحد أقصى إلى قائمة احتجاز باستخدام البرنامج النصي في هذه المقالة.
 
 - تأكد من حفظ قائمة المستخدمين الذين تقوم بإنشائها في الخطوة 2 والبرامج النصية في الخطوة 3 إلى المجلد نفسه. وهذا سيجعل من السهل تشغيل البرنامج النصي.
 

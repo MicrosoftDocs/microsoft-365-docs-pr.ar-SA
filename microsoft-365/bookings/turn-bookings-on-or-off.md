@@ -10,12 +10,12 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: تعرف على كيفية الوصول إلى Microsoft Bookings في Microsoft 365.
-ms.openlocfilehash: a2ab25b3b187ba45dfe460991b91e77d70a2bb70
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 28398faba7c21b6d3cce84063934268dad11fd64
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715264"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823069"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>تشغيل Microsoft Bookings أو إيقاف تشغيله
 
@@ -33,7 +33,7 @@ ms.locfileid: "64715264"
 
 1. سجل الدخول إلى مركز مسؤولي Microsoft 365 كمسؤول عام.
 
-2. في مركز الإدارة، انتقل إلى  **الإعدادات** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**إعدادات المؤسسة**</a>.
+2. في مركز الإدارة، انتقل إلى إعدادات **الإعدادات** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org**</a>.
 
 3. حدد خانة الاختيار **للسماح لمؤسستك باستخدام Bookings** لتمكين Bookings لمؤسستك أو تعطيلها.
 

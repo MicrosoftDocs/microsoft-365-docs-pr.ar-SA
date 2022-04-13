@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6e1efe1a5c5f87e0a71c5e96b28498a6faf296c
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: f06ed934f1ba1a24ba16fe3919d37e10526a3a2f
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783722"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823839"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية
 
@@ -183,7 +183,7 @@ ms.locfileid: "64783722"
    > [!NOTE]
    > على Windows Server 2012R2، سيتم تثبيت برنامج الحماية من الفيروسات من Microsoft Defender بواسطة حزمة التثبيت وستكون نشطة إلا إذا قمت بتعيينها إلى الوضع السلبي. في Windows Server 2016، يجب تثبيت برنامج الحماية من الفيروسات من Microsoft Defender كميزة (راجع [التبديل إلى MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) أولا وتحديثها بالكامل قبل متابعة التثبيت.
    > 
-   > إذا كنت تقوم بتشغيل حل مكافحة البرامج الضارة غير التابع ل Microsoft، فتأكد من إضافة استثناءات برنامج الحماية من الفيروسات من Microsoft Defender ([من هذه القائمة من عمليات Microsoft Defender على علامة التبويب "عمليات Defender"](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)) إلى الحل غير التابع ل Microsoft قبل التثبيت.  يوصى أيضا بإضافة حلول أمان غير أمنية من Microsoft إلى قائمة استبعاد Defender Antivirus.
+   > إذا كنت تقوم بتشغيل حل مكافحة البرامج الضارة غير التابع ل Microsoft، فتأكد من إضافة استثناءات برنامج الحماية من الفيروسات من Microsoft Defender ([من هذه القائمة من عمليات Microsoft Defender على علامة التبويب "عمليات Defender"](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)) إلى الحل غير التابع ل Microsoft قبل التثبيت.  يوصى أيضا بإضافة حلول أمان غير أمنية من Microsoft إلى قائمة استبعاد Defender Antivirus.
 
 
 تحتوي **حزمة التثبيت** على ملف MSI يقوم بتثبيت عامل Microsoft Defender لنقطة النهاية.

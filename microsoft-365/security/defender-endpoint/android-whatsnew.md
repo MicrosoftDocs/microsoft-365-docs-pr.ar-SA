@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 48d6ef27e71f89f6a81ac3c77ea17cf60dc90ee1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 95c4d77014e31c748cc4bd6662a148810c01f79a
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664557"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64825179"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>أحدث الميزات في Microsoft Defender لنقطة النهاية على Android
 
@@ -31,9 +31,18 @@ ms.locfileid: "64664557"
 
 هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+>[!NOTE]
+>لم يعد Microsoft Defender مدعوما للإصدارات التي تقل عن 1.0.3011.0302. يطلب من المستخدمين الترقية إلى أحدث الإصدارات للحفاظ على أمان أجهزتهم.
+للتحديث، يمكن للمستخدمين استخدام الخطوات التالية:
+>1. في ملف تعريف العمل، انتقل إلى متجر التشغيل المدار.
+>2. اضغط على أيقونة ملف التعريف في الزاوية العلوية اليسرى وحدد "إدارة التطبيقات والجهاز".
+>3. حدد موقع MDE ضمن التحديثات المتوفرة وحدد التحديث.
+>
+>إذا واجهت أي مشاكل، [أرسل ملاحظات داخل التطبيق](/security/defender-endpoint/android-support-signin#send-in-app-feedback).
+
 ## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-play-store"></a>Microsoft Defender لنقطة النهاية أصبح الآن Microsoft Defender في متجر Play
 
-Microsoft Defender لنقطة النهاية متوفر الآن في **Microsoft Defender** في متجر التشغيل. مع هذا التحديث، سيكون التطبيق متوفرا كمعاينة **للمستهلكين في منطقة الولايات المتحدة** - استنادا إلى كيفية تسجيل الدخول إلى التطبيق باستخدام حساب العمل أو الحساب الشخصي الخاص بك، سيكون لديك حق الوصول إلى ميزات Microsoft Defender لنقطة النهاية أو ميزات Microsoft Defender للأفراد. الرجاء مراجعة [هذه المدونة](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) للحصول على مزيد من التفاصيل.
+Microsoft Defender لنقطة النهاية متوفر الآن في **Microsoft Defender** في متجر التشغيل. مع هذا التحديث، سيكون التطبيق متوفرا كمعاينة **للمستهلكين في منطقة الولايات المتحدة** - استنادا إلى كيفية تسجيل الدخول إلى التطبيق باستخدام حساب العمل أو الحساب الشخصي الخاص بك، سيكون لديك حق الوصول إلى ميزات Microsoft Defender لنقطة النهاية أو ميزات Microsoft Defender للأفراد. الرجاء مراجعة [هذه المدونة](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) للحصول على مزيد من التفاصيل.
 
 ## <a name="threat-and-vulnerability-management"></a>إدارة المخاطر والثغرات الأمنية
 

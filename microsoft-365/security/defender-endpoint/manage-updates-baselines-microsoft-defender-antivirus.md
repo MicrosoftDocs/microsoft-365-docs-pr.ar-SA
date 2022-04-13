@@ -19,12 +19,12 @@ ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 48ab00c97559ecbbfe430b89c3742b8914c224ba
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 596616328a02182b39c67f58137d43ab626e1756
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788469"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823301"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية
 
@@ -75,7 +75,7 @@ ms.locfileid: "64788469"
 > - تسرد هذه المقالة التغييرات المضمنة في قناة الإصدارات الموسعة. [اطلع على أحدث إصدار للقناة الواسعة هنا](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 > - لمعرفة المزيد حول عملية الإطلاق التدريجي، وللاطلع على مزيد من المعلومات حول الإصدار التالي، راجع [إدارة عملية الإطلاق التدريجي لتحديثات Microsoft Defender](manage-gradual-rollout.md).
 > - لمعرفة المزيد حول تحديثات التحليل الذكي للأمان، راجع [تحديثات معلومات الأمان برنامج الحماية من الفيروسات من Microsoft Defender والبرامج الضارة الأخرى من Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).
-> - إذا كنت تبحث عن قائمة بعمليات Microsoft Defender، **[فقم بتنزيل مصنف mde-urls](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)**، ثم حدد ورقة عمل **عمليات Microsoft Defender** . يسرد مصنف mde-urls أيضا الخدمات وعناوين URL المقترنة بها التي يجب أن تكون شبكتك قادرة على الاتصال بها، كما هو موضح في [تمكين الوصول إلى عناوين URL للخدمة Microsoft Defender لنقطة النهاية في الخادم الوكيل](configure-proxy-internet.md).
+> - إذا كنت تبحث عن قائمة بعمليات Microsoft Defender، **[فقم بتنزيل مصنف mde-urls](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**، ثم حدد ورقة عمل **عمليات Microsoft Defender** . يسرد مصنف mde-urls أيضا الخدمات وعناوين URL المقترنة بها التي يجب أن تكون شبكتك قادرة على الاتصال بها، كما هو موضح في [تمكين الوصول إلى عناوين URL للخدمة Microsoft Defender لنقطة النهاية في الخادم الوكيل](configure-proxy-internet.md).
 
 ## <a name="monthly-platform-and-engine-versions"></a>إصدارات النظام الأساسي والمحرك الشهرية
 

@@ -1,5 +1,5 @@
 ---
-title: تعيين Microsoft 365 جديدة إلى حسابات المستخدمين باستخدام PowerShell
+title: تعيين تراخيص Microsoft 365 لحسابات المستخدمين باستخدام PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -21,43 +21,192 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: في هذه المقالة، تعرف على كيفية استخدام PowerShell لتعيين ترخيص Microsoft 365 للمستخدمين غير المرخصين.
-ms.openlocfilehash: b9f076e4856820d9f10e4cf92718dd6ddd3971c5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 72ad30cb3c8a36a78b3f95699c775b96d959b542
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63569966"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823025"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>تعيين Microsoft 365 جديدة إلى حسابات المستخدمين باستخدام PowerShell
+# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>تعيين تراخيص Microsoft 365 لحسابات المستخدمين باستخدام PowerShell
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
-لا يمكن للمستخدمين استخدام أي Microsoft 365 حتى يتم تعيين ترخيص لحسابهم من خطة ترخيص. يمكنك استخدام PowerShell لتعيين التراخيص بسرعة إلى حسابات غير مرخصة. 
+لا يمكن للمستخدمين استخدام أي خدمات Microsoft 365 حتى يتم تعيين ترخيص من خطة ترخيص لحسابهم. يمكنك استخدام PowerShell لتعيين التراخيص بسرعة للحسابات غير المرخصة. 
 
-يجب أولا تعيين موقع إلى حسابات المستخدمين. إن تحديد موقع هو جزء مطلوب لإنشاء حساب مستخدم جديد في [مركز مسؤولي Microsoft 365.](../admin/add-users/add-users.md) 
+يجب أولا تعيين موقع لحسابات المستخدمين. يعد تحديد موقع جزءا مطلوبا لإنشاء حساب مستخدم جديد في [مركز مسؤولي Microsoft 365](../admin/add-users/add-users.md). 
 
-بشكل افتراضي، لا يتم تحديد موقع للحسابات التي تم مزامنتها من خدمات مجال Active Directory المحلية. يمكنك تكوين موقع لهذه الحسابات من:
+لا يكون للحسابات التي تمت مزامنتها من Active Directory محلي Domain Services موقع محدد بشكل افتراضي. يمكنك تكوين موقع لهذه الحسابات من:
 
 - مركز مسؤولي Microsoft 365
- - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
- - مدخل [Azure](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**مستخدمو Active Directory** >  **>** حساب المستخدم > **ProfileContact** >  **infoCountry** >  أو المنطقة).
+- [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
+- مدخل [Microsoft Azure](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active DirectoryUsers** >  > حساب المستخدم > **ProfileContact** >  **infoCountry** >  أو المنطقة).
 
 >[!Note]
->[تعرف على كيفية تعيين تراخيص إلى حسابات المستخدمين](../admin/manage/assign-licenses-to-users.md) باستخدام مركز مسؤولي Microsoft 365. للحصول على قائمة بالموارد الإضافية، راجع [إدارة المستخدمين والمجموعات](/admin).
+>[تعرف على كيفية تعيين تراخيص لحسابات المستخدمين](../admin/manage/assign-licenses-to-users.md) باستخدام مركز مسؤولي Microsoft 365. للحصول على قائمة بالموارد الإضافية، راجع [إدارة المستخدمين والمجموعات](/admin).
 >
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>استخدام وحدة Azure Active Directory PowerShell Graph النمطية
+## <a name="use-the-microsoft-graph-powershell-sdk"></a>استخدام Microsoft Graph PowerShell SDK
 
-أولا، [اتصل Microsoft 365 المستأجر](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+أولا، [اتصل بمستأجر Microsoft 365](/graph/powershell/get-started#authentication).
+
+يتطلب تعيين تراخيص لمستخدم وإزالتها نطاق أذونات User.ReadWrite.All أو أحد الأذونات الأخرى المدرجة في [الصفحة المرجعية "تعيين ترخيص" Graph واجهة برمجة التطبيقات](/graph/api/user-assignlicense).
+
+نطاق أذونات Organization.Read.All مطلوب لقراءة التراخيص المتوفرة في المستأجر.
+
+```powershell
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
+
+`Get-MgSubscribedSku` قم بتشغيل الأمر لعرض خطط الترخيص المتوفرة وعدد التراخيص المتوفرة في كل خطة في مؤسستك. عدد التراخيص المتوفرة في كل خطة هو ActiveUnitsWarningUnitsConsumedUnits -  - . لمزيد من المعلومات حول خطط الترخيص والتراخيص والخدمات، راجع [عرض التراخيص والخدمات باستخدام PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
+
+للبحث عن الحسابات غير المرخصة في مؤسستك، قم بتشغيل هذا الأمر.
+
+```powershell
+Get-MgUser -Filter 'assignedLicenses/$count eq 0' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
+```
+
+يمكنك فقط تعيين التراخيص لحسابات المستخدمين التي تم تعيين **الخاصية UsageLocation** إلى رمز بلد ISO 3166-1 alpha-2 صالح. على سبيل المثال، الولايات المتحدة للولايات المتحدة، وFR ل فرنسا. لا تتوفر بعض خدمات Microsoft 365 في بلدان معينة. لمزيد من المعلومات، راجع ["حول قيود الترخيص](https://go.microsoft.com/fwlink/p/?LinkId=691730)".
+
+للبحث عن حسابات لا تحتوي على قيمة **UsageLocation** ، قم بتشغيل هذا الأمر.
+
+```powershell
+Get-MgUser -Select Id,DisplayName,Mail,UserPrincipalName,UsageLocation,UserType | where { $_.UsageLocation -eq $null -and $_.UserType -eq 'Member' }
+```
+
+لتعيين قيمة **UsageLocation** على حساب، قم بتشغيل هذا الأمر.
+
+```powershell
+$userUPN="<user sign-in name (UPN)>"
+$userLoc="<ISO 3166-1 alpha-2 country code>"
+
+Update-MgUser -UserId $userUPN -UsageLocation $userLoc
+```
+
+على سبيل المثال:
+
+```powershell
+Update-MgUser -UserId "belindan@litwareinc.com" -UsageLocation US
+```
+
+إذا كنت تستخدم **Get-MgUser** cmdlet دون استخدام المعلمة **-All** ، يتم إرجاع أول 100 حساب فقط.
+
+### <a name="assigning-licenses-to-user-accounts"></a>تعيين تراخيص لحسابات المستخدمين
+
+لتعيين ترخيص لمستخدم، استخدم الأمر التالي في PowerShell.
+  
+```powershell
+Set-MgUserLicense -UserId $userUPN -AddLicenses @{SkuId = "<SkuId>"} -RemoveLicenses @()
+```
+
+يعين هذا المثال ترخيصا من خطة ترخيص **SPE_E5** (Microsoft 365 E5) للمستخدم غير المرخص **litwareinc.com\@**:
+  
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+Set-MgUserLicense -UserId "belindan@litwareinc.com" -AddLicenses @{SkuId = $e5Sku.SkuId} -RemoveLicenses @()
+```
+
+يعين هذا المثال **SPE_E5** (Microsoft 365 E5) و **EMSPREMIUM** (ENTERPRISE MOBILITY + SECURITY E5) إلى المستخدم **beefrontn\@ litwareinc.com**:
+  
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+$e5EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
+$addLicenses = @(
+    @{SkuId = $e5Sku.SkuId},
+    @{SkuId = $e5EmsSku.SkuId}
+)
+
+Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
+```
+
+يعين هذا المثال **SPE_E5** (Microsoft 365 E5) مع إيقاف تشغيل خدمات **MICROSOFTBOOKINGS** (Microsoft Bookings **) LOCKBOX_ENTERPRISE (** Customer LockBox):
+  
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+$disabledPlans = $e5Sku.ServicePlans | `
+    Where ServicePlanName -in ("LOCKBOX_ENTERPRISE", "MICROSOFTBOOKINGS") | `
+    Select -ExpandProperty ServicePlanId
+
+$addLicenses = @(
+    @{
+        SkuId = $e5Sku.SkuId
+        DisabledPlans = $disabledPlans
+    }
+)
+
+Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
+```
+
+يقوم هذا المثال بتحديث مستخدم **باستخدام SPE_E5** (Microsoft 365 E5) وإيقاف تشغيل خطط خدمة Sway ونماذج مع ترك الخطط المعطلة الموجودة للمستخدم في حالته الحالية:
+  
+```powershell
+$userLicense = Get-MgUserLicenseDetail -UserId "belinda@fdoau.onmicrosoft.com"
+$userDisabledPlans = $userLicense.ServicePlans | `
+    Where ProvisioningStatus -eq "Disabled" | `
+    Select -ExpandProperty ServicePlanId
+
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+$newDisabledPlans = $e5Sku.ServicePlans | `
+    Where ServicePlanName -in ("SWAY", "FORMS_PLAN_E5") | `
+    Select -ExpandProperty ServicePlanId
+
+$disabledPlans = ($userDisabledPlans + $newDisabledPlans) | Select -Unique
+
+$addLicenses = @(
+    @{
+        SkuId = $e5Sku.SkuId
+        DisabledPlans = $disabledPlans
+    }
+)
+
+Set-MgUserLicense -UserId "belinda@litwareinc.onmicrosoft.com" -AddLicenses $addLicenses -RemoveLicenses @()
+```
+
+### <a name="assign-licenses-to-a-user-by-copying-the-license-assignment-from-another-user"></a>تعيين التراخيص لمستخدم عن طريق نسخ تعيين الترخيص من مستخدم آخر
+
+يعين هذا المثال **jamesp\@ litwareinc.com** بنفس خطة الترخيص التي تم تطبيقها على **behakn\@ litwareinc.com**:
+
+```powershell
+$mgUser = Get-MgUser -UserId "belindan@litwareinc.com"
+Set-MgUserLicense -UserId "jamesp@litwareinc.com" -AddLicenses $mgUser.AssignedLicenses -RemoveLicenses @()
+```
+
+### <a name="move-a-user-to-a-different-subscription-license-plan"></a>نقل مستخدم إلى اشتراك مختلف (خطة ترخيص)
+
+يقوم هذا المثال بترقية مستخدم من خطة ترخيص **SPE_E3** (Microsoft 365 E3) إلى خطة ترخيص **SPE_E5** (Microsoft 365 E5):
+
+```powershell
+$e3Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E3'
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+
+# Unassign E3
+Set-MgUserLicense -UserId "belindan@litwareinc.com" -AddLicenses @{} -RemoveLicenses @($e3Sku.SkuId)
+# Assign E5
+Set-MgUserLicense -UserId "belindan@litwareinc.com" -AddLicenses @{SkuId = $e5Sku.SkuId} -RemoveLicenses @()
+```
+
+يمكنك التحقق من التغيير في الاشتراك لحساب المستخدم باستخدام هذا الأمر.
+
+```powershell
+Get-MgUserLicenseDetail -UserId "belindan@litwareinc.com"
+```
+
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>استخدام Azure Active Directory PowerShell للوحدة النمطية Graph
+
+>[!Note]
+>من المقرر إيقاف Set-AzureADUserLicense cmdlet. الرجاء ترحيل البرامج النصية الخاصة بك إلى أمر cmdlet Set-MgUserLicense SDK ل Microsoft Graph كما هو موضح أعلاه. لمزيد من المعلومات، راجع [ترحيل تطبيقاتك للوصول إلى واجهات برمجة تطبيقات إدارة التراخيص من Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
+>
+
+أولا، [اتصل بمستأجر Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 
-بعد ذلك، سرد خطط الترخيص للمستأجر باستخدام هذا الأمر.
+بعد ذلك، قم بإدراج خطط الترخيص للمستأجر باستخدام هذا الأمر.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-بعد ذلك، احصل على اسم تسجيل الدخول للحساب الذي تريد إضافة ترخيص له، المعروف أيضا بالاسم الرئيسي للمستخدم (UPN).
+بعد ذلك، احصل على اسم تسجيل الدخول للحساب الذي تريد إضافة ترخيص إليه، والمعروف أيضا باسم اسم المستخدم الأساسي (UPN).
 
 بعد ذلك، تأكد من تعيين موقع استخدام لحساب المستخدم.
 
@@ -73,7 +222,7 @@ $userLoc="<ISO 3166-1 alpha-2 country code>"
 Set-AzureADUser -ObjectID $userUPN -UsageLocation $userLoc
 ```
 
-وأخيرا، حدد اسم تسجيل الدخول للمستخدم واسم خطة الترخيص و قم بتشغيل هذه الأوامر.
+وأخيرا، حدد اسم تسجيل دخول المستخدم واسم خطة الترخيص وقم بتشغيل هذه الأوامر.
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -85,27 +234,29 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>استخدم الوحدة Microsoft Azure Active Directory النمطية Windows PowerShell
-
-تجدر الإشارة إلى أننا سنبدأ في إهمال هذه الوحدة النمطية عندما تتوفر وظيفة هذه الوحدة النمطية في وحدة [Azure Active Directory PowerShell](/powershell/azuread/v2/azureactivedirectory) Graph النمطية الجديدة. ننصح العملاء الذين يستخدمون برامج PowerShell النصية الجديدة باستخدام الوحدة النمطية الجديدة بدلا من هذه الوحدة النمطية.
-
-أولا، [اتصل Microsoft 365 المستأجر](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
-
-تشغيل الأمر `Get-MsolAccountSku` لعرض خطط الترخيص المتوفرة وعدد التراخيص المتوفرة في كل خطة في مؤسستك. عدد التراخيص المتوفرة في كل خطة هو ActiveUnitsWarningUnitsConsumedUnits -  - . لمزيد من المعلومات حول خطط الترخيص والتراخيص والخدمات، راجع عرض التراخيص [والخدمات باستخدام PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>استخدام الوحدة النمطية Microsoft Azure Active Directory Windows PowerShell
 
 >[!Note]
->لا يدعم PowerShell Core الوحدة النمطية Microsoft Azure Active Directory النمطية Windows PowerShell النمطية و cmdlets مع **Msol** في اسمها. لمواصلة استخدام هذه cmdlets، يجب تشغيلها من Windows PowerShell.
+>من المقرر إيقاف أوامر cmdlets Set-MsolUserLicense New-MsolUser (-LicenseAssignment). الرجاء ترحيل البرامج النصية الخاصة بك إلى أمر cmdlet Set-MgUserLicense SDK ل Microsoft Graph كما هو موضح أعلاه. لمزيد من المعلومات، راجع [ترحيل تطبيقاتك للوصول إلى واجهات برمجة تطبيقات إدارة التراخيص من Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
 >
 
-للعثور على الحسابات غير مرخصة في مؤسستك، يمكنك تشغيل هذا الأمر.
+أولا، [اتصل بمستأجر Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+`Get-MsolAccountSku` قم بتشغيل الأمر لعرض خطط الترخيص المتوفرة وعدد التراخيص المتوفرة في كل خطة في مؤسستك. عدد التراخيص المتوفرة في كل خطة هو ActiveUnitsWarningUnitsConsumedUnits -  - . لمزيد من المعلومات حول خطط الترخيص والتراخيص والخدمات، راجع [عرض التراخيص والخدمات باستخدام PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).
+
+>[!Note]
+>لا يدعم PowerShell Core الوحدة النمطية Microsoft Azure Active Directory لوحدة Windows PowerShell و cmdlets مع **Msol** باسمها. لمتابعة استخدام أوامر cmdlets هذه، يجب تشغيلها من Windows PowerShell.
+>
+
+للبحث عن الحسابات غير المرخصة في مؤسستك، قم بتشغيل هذا الأمر.
 
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-يمكنك فقط تعيين التراخيص إلى حسابات المستخدمين التي تم تعيين الخاصية **UsageLocation** لها إلى رمز بلد ISO 3166-1 alpha-2 صالح. على سبيل المثال، الولايات المتحدة الأمريكية و FR لفرنسا. بعض Microsoft 365 الخدمات غير متوفرة في بلدان معينة. لمزيد من المعلومات، راجع [حول قيود الترخيص](https://go.microsoft.com/fwlink/p/?LinkId=691730).
+يمكنك فقط تعيين التراخيص لحسابات المستخدمين التي تم تعيين **الخاصية UsageLocation** إلى رمز بلد ISO 3166-1 alpha-2 صالح. على سبيل المثال، الولايات المتحدة للولايات المتحدة، وFR ل فرنسا. لا تتوفر بعض خدمات Microsoft 365 في بلدان معينة. لمزيد من المعلومات، راجع ["حول قيود الترخيص](https://go.microsoft.com/fwlink/p/?LinkId=691730)".
     
-للعثور على حسابات لا تملك قيمة **UsageLocation** ، يمكنك تشغيل هذا الأمر.
+للبحث عن حسابات لا تحتوي على قيمة **UsageLocation** ، قم بتشغيل هذا الأمر.
 
 ```powershell
 Get-MsolUser -All | where {$_.UsageLocation -eq $null}
@@ -123,9 +274,9 @@ Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 ```
     
-إذا كنت تستخدم **الأمر Cmdlet Get-MsolUser** بدون استخدام **المعلمة -All** ، يتم إرجاع أول 500 حساب فقط.
+إذا كنت تستخدم **Get-MsolUser** cmdlet دون استخدام المعلمة **-All** ، يتم إرجاع أول 500 حساب فقط.
 
-### <a name="assigning-licenses-to-user-accounts"></a>تعيين التراخيص إلى حسابات المستخدمين
+### <a name="assigning-licenses-to-user-accounts"></a>تعيين تراخيص لحسابات المستخدمين
     
 لتعيين ترخيص لمستخدم، استخدم الأمر التالي في PowerShell.
   
@@ -133,7 +284,7 @@ Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-يعين هذا المثال ترخيصا من خطة ترخيص **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) إلى **belindan\@** المستخدم غير المرخص litwareinc.com:
+يعين هذا المثال ترخيصا من خطة ترخيص **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) للمستخدم غير المرخص **litwareinc.com\@**:
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -146,10 +297,10 @@ Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLi
 ```
   
 >[!Note]
->لا يمكنك تعيين تراخيص متعددة لمستخدم من خطة الترخيص نفسها. إذا لم يكن لديك ما يكفي من التراخيص المتوفرة، يتم تعيين التراخيص للمستخدمين بالترتيب الذي يتم إرجاعه بواسطة أمر cmdlet **Get-MsolUser** حتى نهاية التراخيص المتوفرة.
+>لا يمكنك تعيين تراخيص متعددة لمستخدم من خطة الترخيص نفسها. إذا لم يكن لديك ما يكفي من التراخيص المتوفرة، يتم تعيين التراخيص للمستخدمين بالترتيب الذي يتم إرجاعها به بواسطة **Get-MsolUser** cmdlet حتى نفاد التراخيص المتوفرة.
 >
 
-يعين هذا المثال التراخيص من خطة ترخيص **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) إلى جميع المستخدمين غير المرخصين:
+يعين هذا المثال تراخيص من خطة ترخيص **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) لجميع المستخدمين غير المرخصين:
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -161,19 +312,19 @@ Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwa
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
-## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>نقل مستخدم إلى اشتراك آخر (خطة ترخيص) باستخدام وحدة Azure Active Directory PowerShell Graph النمطية
+## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>نقل مستخدم إلى اشتراك مختلف (خطة ترخيص) باستخدام Azure Active Directory PowerShell للوحدة النمطية Graph
 
-أولا، [اتصل Microsoft 365 المستأجر](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+أولا، [اتصل بمستأجر Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
-بعد ذلك، احصل على اسم تسجيل الدخول لحساب المستخدم الذي تريد تبديل الاشتراكات له، المعروف أيضا بالاسم الرئيسي للمستخدم (UPN).
+بعد ذلك، احصل على اسم تسجيل الدخول لحساب المستخدم الذي تريد تبديل الاشتراكات له، والمعروف أيضا باسم المستخدم الأساسي (UPN).
 
-بعد ذلك، سرد الاشتراكات (خطط الترخيص) للمستأجر باستخدام هذا الأمر.
+بعد ذلك، قم بإدراج الاشتراكات (خطط الترخيص) للمستأجر باستخدام هذا الأمر.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-بعد ذلك، سرد الاشتراكات التي لدى حساب المستخدم حاليا باستخدام هذه الأوامر.
+بعد ذلك، قم بإدراج الاشتراكات التي يحتوي عليها حساب المستخدم حاليا باستخدام هذه الأوامر.
 
 ```powershell
 $userUPN="<user account UPN>"
@@ -182,9 +333,9 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-تحديد الاشتراك الذي لدى المستخدم حاليا (اشتراك FROM) والاشتراك الذي ينتقل المستخدم له (اشتراك TO).
+تحديد الاشتراك الذي يمتلكه المستخدم حاليا (اشتراك FROM) والاشتراك الذي ينتقل إليه المستخدم (اشتراك TO).
 
-وأخيرا، حدد اسمي الاشتراكين TO و FROM (أرقام جزء SKU) ثم قم بتشغيل هذه الأوامر.
+وأخيرا، حدد أسماء اشتراكات TO و FROM (أرقام أجزاء SKU) وقم بتشغيل هذه الأوامر.
 
 ```powershell
 $subscriptionFrom="<SKU part number of the current subscription>"
@@ -215,4 +366,4 @@ $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq
   
 [إدارة Microsoft 365 باستخدام PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[بدء العمل باستخدام PowerShell Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[بدء استخدام PowerShell ل Microsoft 365](getting-started-with-microsoft-365-powershell.md)

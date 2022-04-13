@@ -1,5 +1,5 @@
 ---
-title: إزالة Microsoft 365 من حسابات المستخدمين باستخدام PowerShell
+title: إزالة تراخيص Microsoft 365 من حسابات المستخدمين باستخدام PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,35 +19,87 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: يشرح كيفية استخدام PowerShell لإزالة Microsoft 365 التي تم تعيينها مسبقا للمستخدمين.
-ms.openlocfilehash: 4aa40b4405dda07eea34151bd2fddcde0030e8b8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: يشرح كيفية استخدام PowerShell لإزالة تراخيص Microsoft 365 التي تم تعيينها مسبقا للمستخدمين.
+ms.openlocfilehash: c3317c651c561da4c8650e45ba3b64a135a1f6ce
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63569572"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823135"
 ---
-# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>إزالة Microsoft 365 من حسابات المستخدمين باستخدام PowerShell
+# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>إزالة تراخيص Microsoft 365 من حسابات المستخدمين باستخدام PowerShell
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
 >[!Note]
 >[تعرف على كيفية إزالة التراخيص من حسابات المستخدمين](../admin/manage/remove-licenses-from-users.md) باستخدام مركز مسؤولي Microsoft 365. للحصول على قائمة بالموارد الإضافية، راجع [إدارة المستخدمين والمجموعات](/admin).
 >
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>استخدام وحدة Azure Active Directory PowerShell Graph النمطية
+## <a name="use-the-microsoft-graph-powershell-sdk"></a>استخدام Microsoft Graph PowerShell SDK
 
-أولا، [اتصل Microsoft 365 المستأجر](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+أولا، [اتصل بمستأجر Microsoft 365](/graph/powershell/get-started#authentication).
 
-بعد ذلك، سرد خطط الترخيص للمستأجر باستخدام هذا الأمر.
+يتطلب تعيين تراخيص لمستخدم وإزالتها نطاق أذونات User.ReadWrite.All أو أحد الأذونات الأخرى المدرجة في [الصفحة المرجعية "تعيين ترخيص" Graph واجهة برمجة التطبيقات](/graph/api/user-assignlicense).
+
+نطاق أذونات Organization.Read.All مطلوب لقراءة التراخيص المتوفرة في المستأجر.
+
+```powershell
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
+
+لعرض معلومات خطة الترخيص في مؤسستك، راجع المواضيع التالية:
+
+- [عرض التراخيص والخدمات باستخدام PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
+
+- [عرض تفاصيل ترخيص الحساب والخدمة باستخدام PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
+
+### <a name="removing-licenses-from-user-accounts"></a>إزالة التراخيص من حسابات المستخدمين
+
+لإزالة التراخيص من حساب مستخدم موجود، استخدم بناء الجملة التالي:
+  
+```powershell
+Set-MgUserLicense -UserId "<Account>" -RemoveLicenses @("<AccountSkuId1>") -AddLicenses @{}
+```
+
+يزيل هذا المثال خطة ترخيص **SPE_E5** (Microsoft 365 E5) من **BelindaN@litwareinc.com** المستخدم:
+
+```powershell
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+Set-MgUserLicense -UserId "belindan@litwareinc.com" -RemoveLicenses @($e5Sku.SkuId) -AddLicenses @{}
+```
+
+لإزالة كافة التراخيص من مجموعة من المستخدمين المرخصين الحاليين، استخدم بناء الجملة التالي:
+
+```powershell
+$licensedUsers = Get-MgUser -Filter 'assignedLicenses/$count ne 0' `
+    -ConsistencyLevel eventual -CountVariable licensedUserCount -All `
+    -Select UserPrincipalName,DisplayName,AssignedLicenses
+
+foreach($user in $licensedUsers)
+{
+    $licencesToRemove = $user.AssignedLicenses | Select -ExpandProperty SkuId
+    $user = Set-MgUserLicense -UserId $user.UserPrincipalName -RemoveLicenses $licencesToRemove -AddLicenses @{} 
+}
+```
+
+هناك طريقة أخرى لتحرير ترخيص وهي حذف حساب المستخدم. لمزيد من المعلومات، راجع [حذف حسابات المستخدمين واستعادتها باستخدام PowerShell](delete-and-restore-user-accounts-with-microsoft-365-powershell.md).
+
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>استخدام Azure Active Directory PowerShell للوحدة النمطية Graph
+
+>من المقرر إيقاف Set-AzureADUserLicense cmdlet. الرجاء ترحيل البرامج النصية الخاصة بك إلى أمر cmdlet Set-MgUserLicense SDK ل Microsoft Graph كما هو موضح أعلاه. لمزيد من المعلومات، راجع [ترحيل تطبيقاتك للوصول إلى واجهات برمجة تطبيقات إدارة التراخيص من Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
+>
+
+أولا، [اتصل بمستأجر Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+
+بعد ذلك، قم بإدراج خطط الترخيص للمستأجر باستخدام هذا الأمر.
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-بعد ذلك، احصل على اسم تسجيل الدخول للحساب الذي تريد إزالة ترخيص له، المعروف أيضا بالاسم الرئيسي للمستخدم (UPN).
+بعد ذلك، احصل على اسم تسجيل الدخول للحساب الذي تريد إزالة ترخيص له، والمعروف أيضا باسم المستخدم الأساسي (UPN).
 
-وأخيرا، حدد أسماء خطط تسجيل الدخول والترخيص للمستخدم، وأزل <" و">" ثم قم بتشغيل هذه الأوامر.
+وأخيرا، حدد أسماء خطة تسجيل الدخول والترخيص للمستخدم، وقم بإزالة الأحرف "<" و">"، ثم قم بتشغيل هذه الأوامر.
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -57,7 +109,7 @@ $License.RemoveLicenses = (Get-AzureADSubscribedSku | Where-Object -Property Sku
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $license
 ```
 
-لإزالة كل التراخيص لحساب مستخدم معين، حدد اسم تسجيل الدخول للمستخدم، وأزل حرفي "<" و">" ثم قم بتشغيل هذه الأوامر.
+لإزالة كافة التراخيص لحساب مستخدم معين، حدد اسم تسجيل دخول المستخدم، وقم بإزالة الأحرف "<" و">"، ثم قم بتشغيل هذه الأوامر.
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -79,9 +131,13 @@ if($userList.Count -ne 0) {
 }
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>استخدم الوحدة Microsoft Azure Active Directory النمطية Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>استخدام الوحدة النمطية Microsoft Azure Active Directory Windows PowerShell
 
-أولا، [اتصل Microsoft 365 المستأجر](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+>[!Note]
+>من المقرر إيقاف أوامر cmdlets Set-MsolUserLicense New-MsolUser (-LicenseAssignment). الرجاء ترحيل البرامج النصية الخاصة بك إلى أمر cmdlet Set-MgUserLicense SDK ل Microsoft Graph كما هو موضح أعلاه. لمزيد من المعلومات، راجع [ترحيل تطبيقاتك للوصول إلى واجهات برمجة تطبيقات إدارة التراخيص من Microsoft Graph](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
+>
+
+أولا، [اتصل بمستأجر Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
    
 لعرض معلومات خطة الترخيص (**AccountSkuID**) في مؤسستك، راجع المواضيع التالية:
     
@@ -89,7 +145,7 @@ if($userList.Count -ne 0) {
     
   - [عرض تفاصيل ترخيص الحساب والخدمة باستخدام PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
     
-إذا كنت تستخدم **الأمر Cmdlet Get-MsolUser** بدون استخدام _المعلمة -All_ ، يتم إرجاع أول 500 حساب فقط.
+إذا كنت تستخدم **Get-MsolUser** cmdlet دون استخدام المعلمة _-All_ ، يتم إرجاع أول 500 حساب فقط.
     
 ### <a name="removing-licenses-from-user-accounts"></a>إزالة التراخيص من حسابات المستخدمين
 
@@ -100,20 +156,20 @@ Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1
 ```
 
 >[!Note]
->لا يدعم PowerShell Core الوحدة النمطية Microsoft Azure Active Directory النمطية Windows PowerShell النمطية و cmdlets مع **Msol** في اسمها. لمواصلة استخدام هذه cmdlets، يجب تشغيلها من Windows PowerShell.
+>لا يدعم PowerShell Core الوحدة النمطية Microsoft Azure Active Directory لوحدة Windows PowerShell و cmdlets مع **Msol** باسمها. لمتابعة استخدام أوامر cmdlets هذه، يجب تشغيلها من Windows PowerShell.
 >
 
-يزيل هذا المثال **ترخيص litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) من حساب المستخدم BelindaN@litwareinc.com.
+يزيل هذا المثال ترخيص **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) من حساب المستخدم BelindaN@litwareinc.com.
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
 >[!Note]
->لا يمكنك استخدام `Set-MsolUserLicense` الأمر cmdlet لإلغاء تعيين المستخدمين من *التراخيص الملغاة* . يجب القيام بذلك بشكل فردي لكل حساب مستخدم في مركز مسؤولي Microsoft 365.
+>لا يمكنك استخدام `Set-MsolUserLicense` cmdlet لإلغاء تعيين المستخدمين من التراخيص *التي تم إلغاؤها* . يجب القيام بذلك بشكل فردي لكل حساب مستخدم في مركز مسؤولي Microsoft 365.
 >
 
-لإزالة كل التراخيص من مجموعة من المستخدمين المرخصين، استخدم أحد الأساليب التالية:
+لإزالة كافة التراخيص من مجموعة من المستخدمين المرخصين الحاليين، استخدم أيا من الأساليب التالية:
   
 - **تصفية الحسابات استنادا إلى سمة حساب موجودة** للقيام بذلك، استخدم بناء الجملة التالي:
     
@@ -125,7 +181,7 @@ Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveL
 }
 ```
 
-يزيل هذا المثال كل التراخيص من كل حسابات المستخدمين في قسم المبيعات في الولايات المتحدة.
+يزيل هذا المثال كافة التراخيص من جميع حسابات المستخدمين في قسم المبيعات في الولايات المتحدة.
     
 ```powershell
 $userArray = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
@@ -135,9 +191,9 @@ Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveL
 }
 ```
 
-- **استخدام قائمة حسابات معينة لترخيص معين** للقيام بذلك، تنفيذ الخطوات التالية:
+- **استخدام قائمة بحسابات معينة لترخيص معين** للقيام بذلك، نفذ الخطوات التالية:
     
-1. إنشاء ملف نصي يحتوي على حساب واحد على كل سطر على هذا السطر وحفظه:
+1. إنشاء ملف نصي يحتوي على حساب واحد على كل سطر وحفظه كما يلي:
     
   ```powershell
 akol@contoso.com
@@ -154,7 +210,7 @@ kakers@contoso.com
   Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "<AccountSkuId1>","<AccountSkuId2>"...
   }
   ```
-يزيل هذا المثال ترخيص **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) من حسابات المستخدمين المعرفة في الملف النصي C:\my Documents\Accounts.txt.
+يزيل هذا المثال ترخيص **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) من حسابات المستخدمين المعرفة في الملف النصي C:\My Documents\Accounts.txt.
     
   ```powershell
   $x=Get-Content "C:\My Documents\Accounts.txt"
@@ -164,7 +220,7 @@ kakers@contoso.com
   }
   ```
 
-لإزالة كل التراخيص من كل حسابات المستخدمين الموجودة، استخدم بناء الجملة التالي:
+لإزالة كافة التراخيص من جميع حسابات المستخدمين الموجودة، استخدم بناء الجملة التالي:
   
 ```powershell
 $userArray = Get-MsolUser -All | where {$_.isLicensed -eq $true}
@@ -178,8 +234,8 @@ Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveL
   
 ## <a name="see-also"></a>راجع أيضًا
 
-[إدارة Microsoft 365 المستخدمين والتراخيص والمجموعات باستخدام PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[إدارة حسابات المستخدمين والتراخيص والمجموعات Microsoft 365 باستخدام PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
 [إدارة Microsoft 365 باستخدام PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[بدء العمل باستخدام PowerShell Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[بدء استخدام PowerShell ل Microsoft 365](getting-started-with-microsoft-365-powershell.md)

@@ -1,5 +1,5 @@
 ---
-title: متطلبات Microsoft 365 المنارة
+title: متطلبات Microsoft 365 Lighthouse
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -15,53 +15,54 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: بالنسبة لموفري الخدمات المدارة (MSPs)، احصل على قائمة بالمتطلبات لاستخدام Microsoft 365 المنارة.
-ms.openlocfilehash: 51dd2404f03dc58d5975a37c386ba9c8f1333763
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: بالنسبة لموفري الخدمات المدارة (MSPs)، احصل على قائمة بالمتطلبات لاستخدام Microsoft 365 Lighthouse.
+ms.openlocfilehash: d5f04c39cbce9726fefa4b410be63cd5ee4e959d
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63579666"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64823663"
 ---
-# <a name="requirements-for-microsoft-365-lighthouse"></a>متطلبات Microsoft 365 المنارة
+# <a name="requirements-for-microsoft-365-lighthouse"></a>متطلبات Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على حماية الأجهزة والبيانات والمستخدمين وإدارتها على نطاق واسع لعملاء الشركات الصغيرة والمتوسطة الحجم (SMB).  
+Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع لعملاء الأعمال الصغيرة والمتوسطة الحجم (SMB).
 
-يجب أن يكون MSPs مسجلا في برنامج Cloud Solution Provider (CSP) ك بائع غير مباشر أو شريك فاتورة مباشرة لاستخدام المنارة.  
+يجب تسجيل MSPs في برنامج Cloud Solution Provider (CSP) كبائعين غير مباشرين أو شريك Direct Bill لاستخدام Lighthouse.
 
-بالإضافة إلى ذلك، يجب أن يكون كل مستأجر عميل MSP مؤهلا ل "المنارة" من خلال تلبية المتطلبات التالية: 
- 
-- امتيازات المسؤول المفوض (DAP) أو امتيازات المسؤول المفوض (GDAP) الخاصة ب MSP 
-- ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 واحد على الأقل 
-- أقل من 1000 مستخدم مرخص  
+بالإضافة إلى ذلك، يجب أن يكون كل مستأجر عميل MSP مؤهلا ل Lighthouse من خلال تلبية المتطلبات التالية:
 
-## <a name="requirements-for-enablingdevice-management"></a>متطلبات تمكين إدارة الأجهزة
+- يجب أن يكون قد تم إعداد الوصول المفوض لموفر الخدمة المدارة (MSP) لكي يتمكن من إدارة مستأجر العميل*
+- يجب أن يكون لديك ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business واحد على الأقل
+- يجب ألا يكون لديك أكثر من 1000 مستخدم مرخص
 
-لعرض أجهزة مستأجر العميل على صفحات إدارة الأجهزة، يجب أن يقوم MSP بما يلي:
+*مطلوب امتيازات المسؤول المفوض (DAP) لإلحاق العملاء إلى Lighthouse. نوصي أيضا بإنشاء امتيازات المسؤول المفوض متعدد المستويات (GDAP) مع عملائك لتمكين الوصول المفوض بشكل أكثر أمانا. في حين أن DAP وGDAP يتعايشان، فإن GDAP سيكون له الأسبقية للعملاء حيث يوجد كلا النموذجين. قريبا، سيتمكن العملاء الذين يعانون من GDAP فقط (وبدون DAP) من الإلحاق ب Lighthouse.
 
-- تسجيل جميع أجهزة العملاء في إدارة نقاط النهاية من Microsoft (MEM).لمزيد من المعلومات، راجع [تسجيل الأجهزة في Microsoft Intune](/mem/intune/enrollment/).
-- تعيين سياسات التوافق إلى جميع أجهزة العملاء.لمزيد من المعلومات، راجع [إنشاء نهج توافق في Microsoft Intune](/mem/intune/protect/create-compliance-policy). 
+## <a name="requirements-for-enabling-device-management"></a>متطلبات تمكين إدارة الجهاز
 
-## <a name="requirements-for-enabling-usermanagement"></a>متطلبات تمكين إدارة المستخدمين 
+لعرض أجهزة مستأجر العميل على صفحات إدارة الأجهزة، يجب على موفر الخدمات المشتركة (MSP) ما يلي:
 
-لكي تظهر بيانات العملاء في تقارير على صفحات إدارة المستخدمين، بما في ذلك المستخدمون الخطرون والمصادقة متعددة العوامل وإعادة تعيين كلمة المرور، يجب أن يكون لدى مستأجري العملاء تراخيص Azure Active Directory Premium P1 أو إصدار لاحق. يتم تضمين azure AD Premium P1 مع Microsoft 365 Business Premium Microsoft 365 E3.   
+- تسجيل جميع أجهزة العملاء في إدارة نقاط النهاية من Microsoft (MEM). لمزيد من المعلومات، راجع [تسجيل الأجهزة في Microsoft Intune](/mem/intune/enrollment/).
+- تعيين نهج التوافق لجميع أجهزة العملاء. لمزيد من المعلومات، راجع [إنشاء نهج توافق في Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
-## <a name="requirements-for-enablingthreat-management"></a>متطلبات تمكين إدارة المخاطر 
+## <a name="requirements-for-enabling-user-management"></a>متطلبات تمكين إدارة المستخدم
 
-لعرض أجهزة مستأجري العملاء والتهديدات على صفحات إدارة المخاطر، يجب تسجيل جميع أجهزة مستأجري العملاء في إدارة نقاط النهاية من Microsoft (MEM) وحمايتهم عن طريق تشغيل برنامج الحماية من الفيروسات من Microsoft Defender.  
+لكي تظهر بيانات العميل في التقارير على صفحات إدارة المستخدم، بما في ذلك المستخدمين المعرضين للمخاطر والمصادقة متعددة العوامل وإعادة تعيين كلمة المرور، يجب أن يكون لدى مستأجري العملاء تراخيص ل Azure Active Directory Premium P1 أو أحدث. يتم تضمين Azure AD Premium P1 مع Microsoft 365 Business Premium Microsoft 365 E3.
 
-لمزيد من المعلومات، راجع [تسجيل الأجهزة في Microsoft Intune](/mem/intune/enrollment/).  
+## <a name="requirements-for-enabling-threat-management"></a>متطلبات تمكين إدارة التهديدات
 
-برنامج الحماية من الفيروسات من Microsoft Defender جزء من نظام Windows، كما أنه يتم تمكينه بشكل افتراضي على الأجهزة التي تعمل Windows 10.  
+لعرض أجهزة المستأجر العميل والتهديدات على صفحات إدارة التهديدات، يجب عليك تسجيل جميع أجهزة مستأجر العميل في إدارة نقاط النهاية من Microsoft (MEM) وحمايتها عن طريق تشغيل برنامج الحماية من الفيروسات من Microsoft Defender.
 
-> [!NOTE] 
-> إذا كنت تستخدم حلا من برامج الحماية من الفيروسات غير Microsoft وليس برنامج الحماية من الفيروسات من Microsoft Defender، برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا. عندما تقوم ب إلغاء تثبيت حل مكافحة الفيروسات برنامج الحماية من الفيروسات من Microsoft Defender Microsoft، يتم تنشيط البرنامج تلقائيا لحماية Windows من التهديدات.    
+لمزيد من المعلومات، راجع [تسجيل الأجهزة في Microsoft Intune](/mem/intune/enrollment/).
 
-## <a name="related-content"></a>المحتوى ذي الصلة
+برنامج الحماية من الفيروسات من Microsoft Defender هو جزء من نظام التشغيل Windows ويتم تمكينه بشكل افتراضي على الأجهزة التي تعمل Windows 10.
 
-[تكوين Microsoft 365 مدخل المنارة](m365-lighthouse-configure-portal-security.md) (مقالة)\
-[Microsoft 365 نظرة عامة حول توافق جهاز المنارة](m365-lighthouse-device-compliance-page-overview.md) (مقالة)\
-[Microsoft 365 نظرة عامة على صفحة مستخدمي المنارة](m365-lighthouse-users-page-overview.md) (مقالة)\
-[Microsoft 365 نظرة عامة حول إدارة المخاطر في المنارة](m365-lighthouse-threat-management-page-overview.md) (مقالة)\
-[Microsoft 365 الأسئلة الشائعة حول المنارة](m365-lighthouse-faq.yml)  (مقالة)
+> [!NOTE]
+> إذا كنت تستخدم حل الحماية من الفيروسات غير التابع ل Microsoft وليس برنامج الحماية من الفيروسات من Microsoft Defender، يتم تعطيل برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا. عند إلغاء تثبيت حل الحماية من الفيروسات غير التابع ل Microsoft، يتم تنشيط برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا لحماية أجهزة Windows من التهديدات.
 
+## <a name="related-content"></a>محتوى ذي صلة
+
+[تكوين أمان مدخل Lighthouse Microsoft 365](m365-lighthouse-configure-portal-security.md) (مقالة)\
+[Microsoft 365 نظرة عامة على صفحة توافق جهاز Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (مقالة)\
+[Microsoft 365 نظرة عامة على صفحة مستخدمي Lighthouse](m365-lighthouse-users-page-overview.md) (مقالة)\
+[نظرة عامة على صفحة إدارة المخاطر Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (مقالة)\
+[الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)

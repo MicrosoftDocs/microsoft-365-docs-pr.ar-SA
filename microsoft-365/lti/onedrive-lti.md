@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: إنشاء الواجبات ووضع الدرجات عليها، وإنشاء محتوى الدورة التدريبية وتنسيقه، والتعاون في العمل على الملفات في الوقت الحقيقي باستخدام تطبيق التشغيل التفاعلي الجديد لأدوات Microsoft OneDrive Learning ل Canvas.
-ms.openlocfilehash: ce02be23d98d1dc54ae02a21f9bf1678d06c3d8f
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 5de027c9d7606ebe546a8dc8e087b91da7f0400e
+ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747215"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64824553"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>دمج Microsoft OneDrive LTI مع Canvas
 
@@ -30,6 +30,7 @@ ms.locfileid: "64747215"
 - يجب عدم حظر العناصر المنبثقة Microsoft OneDrive.
 
 > [!NOTE]
+>
 > - لا يتم تمكين ملفات تعريف الارتباط بشكل افتراضي في وضع التصفح المتخفي لمستعرض Chrome، وستحتاج إلى تمكينها.
 > - يعمل Microsoft OneDrive LTI في الوضع الخاص في مستعرض Microsoft Edge. تأكد من عدم حظر ملفات تعريف الارتباط (التي يتم تمكينها بشكل افتراضي).
 
@@ -39,25 +40,25 @@ ms.locfileid: "64747215"
 > يجب أن يكون الشخص الذي يقوم بهذا التكامل مسؤولا عن Canvas ومسؤولا عن مستأجر Microsoft 365.
 
 1. تسجيل الدخول إلى <a href="https://onedrivelti.microsoft.com/admin" target="_blank">مدخل تسجيل Microsoft OneDrive LTI</a>
-1. حدد الزر " **موافقة المسؤول** " واقبل الأذونات.
+2. حدد الزر " **موافقة المسؤول** " واقبل الأذونات.
 
-> [!CAUTION]
-> إذا لم يتم تنفيذ هذه الخطوة، فإن الخطوة التالية ستعطيك خطأ، ولن تتمكن من اتخاذ هذه الخطوة لمدة ساعة بمجرد حصولك على الخطأ.
+   > [!CAUTION]
+   > إذا لم يتم تنفيذ هذه الخطوة، فإن الخطوة التالية ستعطيك خطأ، ولن تتمكن من اتخاذ هذه الخطوة لمدة ساعة بمجرد حصولك على الخطأ.
 
 3. حدد الزر **"إنشاء مستأجر LTI جديد** ". في صفحة تسجيل LTI، حدد **Canvas** في القائمة المنسدلة وأدخل عنوان URL الأساسي لمثيل Canvas.
 
-> [!NOTE]
-> إذا كان مثيل Canvas الخاص بك، على سبيل المثال، https://contoso.test.instructure.com](https://contoso.test.instructure.com)، يجب إدخال عنوان URL الكامل.
+   > [!NOTE]
+   > إذا كان مثيل Canvas الخاص بك، على سبيل المثال، `https://contoso.test.instructure.com`يجب إدخال عنوان URL الكامل.
 
-:::image type="content" source="media/OneDrive-LTI-07.png" alt-text="صفحة إدارة مستأجر LTI، مع حقل منسدلة لاختيار النظام الأساسي للمستهلك LTI وحقل نص URL.":::
+   :::image type="content" source="media/OneDrive-LTI-07.png" alt-text="صفحة إدارة مستأجر LTI، مع حقل منسدلة لاختيار النظام الأساسي للمستهلك LTI وحقل نص URL.":::
 
 4. انسخ JSON عن طريق تحديد الزر **"نسخ** " (أيقونة على اليمين تعرض صفحتين فوق بعضهما البعض). سيتم استخدام هذا لإنشاء المفتاح في Canvas.
 
-:::image type="content" source="media/OneDrive-LTI-08.png" alt-text="صورة تعرض زر النسخ الذي سيقوم بنسخ نص JSON المعروض وإتاحته لإنشاء المفتاح في Canvas.":::
+   :::image type="content" source="media/OneDrive-LTI-08.png" alt-text="صورة تعرض زر النسخ الذي سيقوم بنسخ نص JSON المعروض وإتاحته لإنشاء المفتاح في Canvas.":::
 
 5. سجل الدخول إلى مثيل Canvas كمسؤول وحدد **"مفاتيح المطور"** من القائمة الموجودة على الجانب الأيمن من الصفحة. من القائمة المنسدلة، قم بإنشاء مفتاح مطور عن طريق اختيار **مفتاح LTI** من القائمة المنسدلة في أعلى يمين الصفحة.
 
-:::image type="content" source="media/OneDrive-LTI-14.png" alt-text="لقطة شاشة تعرض شريط التنقل الأيسر مع تحديد &quot;Developer Keys&quot;، وتحديد إدخال مفتاح LTI من القائمة المنسدلة على يمين الصفحة.":::
+   :::image type="content" source="media/OneDrive-LTI-14.png" alt-text="لقطة شاشة تعرض شريط التنقل الأيسر مع تحديد &quot;Developer Keys&quot;، وتحديد إدخال مفتاح LTI من القائمة المنسدلة على يمين الصفحة.":::
 
 6. في صفحة "Configure"، في القائمة المنسدلة " **Method** "، حدد **"لصق JSON** " كأسلوب والصق نص JSON الذي نسخته في الخطوة 4 في حقل النص الذي يظهر.
 
@@ -68,11 +69,11 @@ ms.locfileid: "64747215"
 
 7. احفظ المفتاح، ويصبح متوفرا في Canvas في حالة **إيقاف التشغيل** . قم **بتشغيل** المفتاح وانسخ المفتاح المعطى في عمود **"التفاصيل** " لاستخدامه في الخطوة التالية.
 
-:::image type="content" source="media/OneDrive-LTI-19.png" alt-text="صفحة Canvas مع تعيين المفتاح في حالة إيقاف التشغيل. يجب تشغيل المفتاح وسيحتاج إلى نسخه من عمود التفاصيل في هذه الصفحة.":::
+   :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="صفحة Canvas مع تعيين المفتاح في حالة إيقاف التشغيل. يجب تشغيل المفتاح وسيحتاج إلى نسخه من عمود التفاصيل في هذه الصفحة.":::
 
 8. ارجع إلى مدخل تسجيل Microsoft OneDrive LTI والصق المفتاح في حقل **معرف عميل Canvas**. حدد **"التالي** " عندما تصبح جاهزا.
 
-:::image type="content" source="media/OneDrive-LTI-20.png" alt-text="صفحة تسجيل مستأجر LTI، التي تعرض نص JSON ومربع النص الذي يجب نسخ المفتاح إليه.":::
+   :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="صفحة تسجيل مستأجر LTI، التي تعرض نص JSON ومربع النص الذي يجب نسخ المفتاح إليه.":::
 
 9. راجع التغييرات واحفظها. سيتم عرض رسالة عند التسجيل الناجح.
 10. يمكن أيضا مراجعة تفاصيل التسجيل عن طريق تحديد الزر **View LTI Tenants** على الصفحة الرئيسية.
