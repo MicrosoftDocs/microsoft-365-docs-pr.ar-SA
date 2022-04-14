@@ -66,7 +66,7 @@
               href: eval-defender-endpoint-enable-eval.md
             - name: الإصدار التجريبي لـ Microsoft Defender لنقطة النهاية
               href: eval-defender-endpoint-pilot.md
-        - name: الخطوة 5. Microsoft Defender for Cloud Apps
+        - name: الخطوة 5. Microsoft Defender لتطبيقات السحابة
           items:
             - name: نظرة عامة
               href: eval-defender-mcas-overview.md
@@ -84,7 +84,7 @@
               href: eval-defender-investigate-respond-simulate-attack.md
             - name: تجربة الإمكانات
               href: eval-defender-investigate-respond-additional.md
-        - name: الخطوة 7. ترقية الإصدار التجريبي إلى الإنتاج
+        - name: الخطوة 7. ترقية الإصدار التجريبي إلى إصدار الإنتاج
           href: eval-defender-promote-to-production.md
     - name: بدء الاستخدام
       items:
@@ -108,8 +108,6 @@
               href: microsoft-secure-score-improvement-actions.md
             - name: تعقب سجل درجاتك وتحقيق الأهداف
               href: microsoft-secure-score-history-metrics-trends.md
-            - name: ما الجديد
-              href: microsoft-secure-score-whats-coming.md
             - name: ما الجديد
               href: microsoft-secure-score-whats-new.md
         - name: حماية نقاط النهاية
@@ -332,9 +330,9 @@
           href: integrate-microsoft-365-defender-secops.md
         - name: الخطوة 1. الجهازية للعمليات
           href: integrate-microsoft-365-defender-secops-plan.md
-        - name: الخطوة 2. تقييم الجهازية باستخدام ثقة معدومة
+        - name: الخطوة 2. تقييم الجاهزية باستخدام ثقة معدومة
           href: integrate-microsoft-365-defender-secops-readiness.md
-        - name: الخطوة 3. التكامل مع خدمات SOC
+        - name: الخطوة 3. التكامل مع خدمات SOC الخاصة بك
           href: integrate-microsoft-365-defender-secops-services.md
         - name: الخطوة 4. الأدوار والمسؤوليات ولمراقبة
           href: integrate-microsoft-365-defender-secops-roles.md
