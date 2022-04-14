@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f06ed934f1ba1a24ba16fe3919d37e10526a3a2f
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 1709597d10b140124501fd0dc7349e8fc4342bb6
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823839"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841758"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية
 
@@ -102,7 +102,8 @@ ms.locfileid: "64823839"
 تنطبق التفاصيل التالية على حزمة الحلول الموحدة الجديدة لخادم Windows 2012 R2 و2016:
 
 - تأكد من تلبية متطلبات الاتصال كما هو محدد في [تمكين الوصول إلى عناوين URL للخدمة Microsoft Defender لنقطة النهاية في الخادم الوكيل](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). وهي مكافئة لتلك الخاصة بخادم Windows 2019. 
-- نحن نعمل على التحقق من مشكلة في اتصال Windows Server 2012 R2 بالسحابة عند استخدام TelemetryProxyServer الثابت ولا يمكن الوصول إلى عناوين URL لقائمة إبطال الشهادات (CRL) من سياق حساب SYSTEM. التخفيف الفوري هو إما استخدام خيار وكيل بديل يوفر مثل هذا الاتصال، أو تكوين نفس الوكيل عبر إعداد WinInet على سياق حساب SYSTEM.
+- لقد حددنا مشكلة في اتصال Windows Server 2012 R2 بالسحابة عند استخدام TelemetryProxyServer الثابت **ولا** يمكن الوصول إلى عناوين URL لقائمة إبطال الشهادات (CRL) من سياق حساب SYSTEM. التخفيف الفوري هو إما استخدام خيار وكيل بديل ("على مستوى النظام") يوفر مثل هذا الاتصال، أو تكوين نفس الوكيل عبر إعداد WinInet على سياق حساب SYSTEM.
+بدلا من ذلك، استخدم الإرشادات المتوفرة في [الحل البديل لمشكلة معروفة في TelemetryProxyServer على الأجهزة غير المتصلة](#workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines) لتثبيت شهادة كحل بديل.
 - في السابق، كان استخدام عامل مراقبة Microsoft (MMA) على Windows Server 2016 وما يلي يسمح لبوابة OMS / Log Analytics لتوفير الاتصال بخدمات سحابة Defender. الحل الجديد، مثل Microsoft Defender لنقطة النهاية على Windows Server 2019، Windows Server 2022، Windows 10، لا يدعم هذه البوابة.
 - على Windows Server 2016، تحقق من أن برنامج الحماية من الفيروسات من Microsoft Defender مثبت، وأنه نشط ومحدث. يمكنك تنزيل أحدث إصدار من النظام الأساسي وتثبيته باستخدام Windows Update. بدلا من ذلك، قم بتنزيل حزمة التحديث يدويا من [كتالوج تحديث Microsoft](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) أو من [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
 - على Windows Server 2012 R2، لا توجد واجهة مستخدم برنامج الحماية من الفيروسات من Microsoft Defender. بالإضافة إلى ذلك، تسمح واجهة المستخدم على Windows Server 2016 فقط بالعمليات الأساسية. لتنفيذ العمليات على جهاز محليا، راجع [إدارة Microsoft Defender لنقطة النهاية باستخدام PowerShell وWMI MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). ونتيجة لذلك، قد لا تعمل الميزات التي تعتمد بشكل خاص على تفاعل المستخدم، مثل المكان الذي تتم مطالبة المستخدم فيه لاتخاذ قرار أو تنفيذ مهمة معينة، كما هو متوقع. يوصى بتعطيل واجهة المستخدم أو عدم تمكينها ولا يتطلب تفاعل المستخدم على أي خادم مدار لأنه قد يؤثر على إمكانية الحماية.
@@ -116,9 +117,21 @@ ms.locfileid: "64823839"
   بالإضافة إلى ذلك، على الأجهزة التي تحتوي على كمية كبيرة من نسبة استخدام الشبكة، يوصى بشدة باختبار الأداء في بيئتك قبل تمكين هذه الإمكانية على نطاق واسع. قد تحتاج إلى حساب استهلاك الموارد الإضافية.
 - على Windows Server 2012 R2، قد لا يتم ملء أحداث الشبكة في المخطط الزمني. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
 - ترقيات نظام التشغيل غير معتمدة. قم بإلغاء التثبيت بعد ذلك قبل الترقية.
-- الاستثناءات التلقائية *لأدوار الخادم* غير معتمدة على Windows Server 2012 R2؛ ومع ذلك، فإن الاستثناءات المضمنة لملفات نظام التشغيل متوفرة. لمزيد من المعلومات حول إضافة استثناءات، راجع [توصيات فحص الفيروسات لأجهزة كمبيوتر المؤسسة التي تعمل حاليا بإصدارات معتمدة من Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
-- على الأجهزة التي تمت ترقيتها من الحل السابق المستند إلى MMA ومستشعر الكشف التلقائي والاستجابة على النقط النهائية هو إصدار (معاينة) أقدم من 10.8047.22439.1056، قد يؤدي إلغاء تثبيت والعودة إلى الحل المستند إلى MMA إلى حدوث أعطال. 
-- التكامل مع Microsoft Defender for Cloud / Microsoft Defender للخوادم للتنبيه والنشر التلقائي أو الترقية غير متوفر بعد. بينما يمكنك تثبيت الحل الجديد يدويا على هذه الأجهزة، لن يتم عرض أي تنبيهات في Microsoft Defender for Cloud.
+- الاستثناءات التلقائية **لأدوار الخادم** غير معتمدة على Windows Server 2012 R2؛ ومع ذلك، فإن الاستثناءات المضمنة لملفات نظام التشغيل متوفرة. لمزيد من المعلومات حول إضافة استثناءات، راجع [توصيات فحص الفيروسات لأجهزة كمبيوتر المؤسسة التي تعمل حاليا بإصدارات معتمدة من Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
+- على الأجهزة التي تمت ترقيتها من الحل السابق المستند إلى MMA ومستشعر الكشف التلقائي والاستجابة على النقط النهائية هو إصدار (معاينة) أقدم من 10.8047.22439.1056، قد يؤدي إلغاء تثبيت والعودة إلى الحل المستند إلى MMA إلى حدوث أعطال. إذا كنت تستخدم إصدار المعاينة هذا، فالرجاء التحديث باستخدام KB5005292.
+- لنشر الحل الجديد وإلحاقه باستخدام إدارة نقاط النهاية من Microsoft، يتطلب هذا حاليا إنشاء حزمة. لمزيد من المعلومات حول كيفية نشر البرامج والبرامج النصية في Configuration Manager، راجع [الحزم والبرامج في Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs). MECM 2107 مع مجموعة الإصلاح العاجل أو الأحدث مطلوب لدعم إدارة تكوين النهج باستخدام عقدة Endpoint Protection.
+
+## <a name="workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines"></a>حل بديل لمشكلة معروفة في TelemetryProxyServer على الأجهزة غير المتصلة
+
+وصف المشكلة: عند استخدام إعداد TelemetryProxyServer لتحديد وكيل لاستخدامه من قبل مكون الكشف التلقائي والاستجابة على النقط النهائية Microsoft Defender لنقطة النهاية، على الأجهزة التي ليس لديها طريقة أخرى للوصول إلى عنوان URL لقائمة إبطال الشهادة (CRL)، ستؤدي الشهادة المتوسطة المفقودة إلى الكشف التلقائي والاستجابة على النقط النهائية أداة الاستشعار بعدم الاتصال بخدمة السحابة بنجاح.
+
+السيناريو المتأثر: -Microsoft Defender لنقطة النهاية مع رقم إصدار Sense 10.8048.22439.1065 أو إصدارات المعاينة السابقة التي تعمل على Windows Server 2012 R2 -باستخدام تكوين وكيل TelemetryProxyServer؛ لا تتأثر الأساليب الأخرى
+
+الحل:
+1. تأكد من تشغيل الجهاز للإصدار 10.8048.22439.1065 أو إصدار أحدث إما عن طريق التثبيت باستخدام أحدث حزمة متوفرة من صفحة الإلحاق، أو عن طريق تطبيق KB5005292.
+2. تنزيل الشهادة وإلغاء ضغطها من https://github.com/microsoft/mdefordownlevelserver/blob/main/InterCA.zip
+3. استيراد الشهادة إلى مخزن "المراجع المصدقة المتوسطة" الموثوق به على الكمبيوتر المحلي.
+يمكنك استخدام الأمر PowerShell: Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine\Ca
 
 ## <a name="integration-with-microsoft-defender-for-cloud"></a>التكامل مع Microsoft Defender for Cloud
 
@@ -127,7 +140,7 @@ ms.locfileid: "64823839"
 لمزيد من المعلومات، راجع [التكامل مع Microsoft Defender for Cloud](azure-server-integration.md).
 
 > [!NOTE]
-> بالنسبة Windows Server 2012 R2 و2016 الذي يقوم بتشغيل الحل الموحد الحديث، لا يتوفر التكامل مع Microsoft Defender for Cloud / Microsoft Defender للخوادم للتنبيه والنشر التلقائي أو الترقية بعد. بينما يمكنك تثبيت الحل الجديد يدويا على هذه الأجهزة، لن يتم عرض أي تنبيهات في Microsoft Defender for Cloud.
+> بالنسبة Windows Server 2012 R2 و2016 الذي يقوم بتشغيل الحل الموحد الحديث، لا يتوفر التكامل مع Microsoft Defender for Cloud / Microsoft Defender للخوادم للنشر التلقائي أو الترقية بعد لجميع الخطط. يمكنك تثبيت الحل الجديد يدويا على هذه الأجهزة، أو استخدام Microsoft Defender للخادم P1 لاختبار الحل الجديد. مزيد من المعلومات في [New Defender لخطط الخوادم](/azure/defender-for-cloud/release-notes#new-defender-for-servers-plans).
 
 > [!NOTE]
 > - تم توسيع التكامل بين Microsoft Defender للخوادم Microsoft Defender لنقطة النهاية لدعم Windows Server 2022 [و Windows Server 2019 و Windows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
@@ -148,20 +161,17 @@ ms.locfileid: "64823839"
 
 **المتطلبات الأساسية لخادم Windows 2016** 
 
-يجب تثبيت تحديث مكدس الخدمة (SSU) من 14 سبتمبر 2021 أو الإصدارات الأحدث.  يجب تثبيت التحديث التراكمي الأخير (LCU) من 20 سبتمبر 2018 أو أحدث.  يوصى بتثبيت أحدث SSU وLCU المتوفرة على الخادم.  
-
-يجب تثبيت ميزة برنامج الحماية من الفيروسات من Microsoft Defender وتشغيل الإصدار 4.18.2109.6 أو إصدار أحدث.  يمكنك تنزيل أحدث إصدار من النظام الأساسي وتثبيته باستخدام Windows Update. بدلا من ذلك، قم بتنزيل حزمة التحديث يدويا من [كتالوج تحديث Microsoft](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) أو من [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
+- يجب تثبيت تحديث مكدس الخدمة (SSU) من 14 سبتمبر 2021 أو الإصدارات الأحدث.  
+- يجب تثبيت التحديث التراكمي الأخير (LCU) من 20 سبتمبر 2018 أو أحدث.  يوصى بتثبيت أحدث SSU وLCU المتوفرة على الخادم.  - يجب تمكين/تثبيت ميزة برنامج الحماية من الفيروسات من Microsoft Defender وتحديثها. يمكنك تنزيل أحدث إصدار من النظام الأساسي وتثبيته باستخدام Windows Update. بدلا من ذلك، قم بتنزيل حزمة التحديث يدويا من [كتالوج تحديث Microsoft](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) أو من [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
 
 **المتطلبات الأساسية للعمل باستخدام حلول أمان الجهات الخارجية**
 
 إذا كنت تنوي استخدام حل مكافحة البرامج الضارة التابع لجهة خارجية، فستحتاج إلى تشغيل برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل. يجب أن تتذكر التعيين إلى الوضع السلبي أثناء عملية التثبيت والإلحاق.
 
-
-**حزمة التحديث Microsoft Defender لنقطة النهاية على Windows Server 2012 R2 و2016**
 > [!NOTE]
 > إذا كنت تقوم بتثبيت Microsoft Defender لنقطة النهاية على الخوادم باستخدام McAfee Endpoint Security (ENS) أو VirusScan Enterprise (VSE)، فقد تحتاج إلى تحديث إصدار النظام الأساسي McAfee لضمان عدم إزالة برنامج الحماية من الفيروسات من Microsoft Defender أو تعطيلها. لمزيد من المعلومات بما في ذلك أرقام الإصدارات المحددة المطلوبة، راجع [مقالة McAfee Knowledge Center](https://kc.mcafee.com/corporate/index?page=content&id=KB88214).
 
-
+**حزمة التحديث Microsoft Defender لنقطة النهاية على Windows Server 2012 R2 و2016**
 
 لتلقي تحسينات وإصلاحات منتظمة للمنتج لمكون مستشعر الكشف التلقائي والاستجابة على النقط النهائية، تأكد من تطبيق أو الموافقة على Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277). بالإضافة إلى ذلك، للحفاظ على تحديث مكونات الحماية، راجع [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
@@ -170,7 +180,6 @@ ms.locfileid: "64823839"
 - الخطوة 1: [تنزيل حزم التثبيت والإلحاق](#step-1-download-installation-and-onboarding-packages)
 - الخطوة 2: [تطبيق حزمة التثبيت والإلحاق](#step-2-apply-the-installation-and-onboarding-package)
 - الخطوة 3: [إكمال خطوات الإلحاق](#step-3-complete-the-onboarding-steps) 
-
 
 ### <a name="step-1-download-installation-and-onboarding-packages"></a>الخطوة 1: تنزيل حزم التثبيت والإلحاق
 
@@ -314,9 +323,7 @@ Msiexec /x md4ws.msi /quiet
 
 
 
-## <a name="windows-server-semi-annual-enterprise-channel-and-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 و Windows Server 2022
-
-حزمة الإلحاق ل Windows Server 2019 وserver Windows 2022 من خلال إدارة نقاط النهاية من Microsoft تقوم حاليا بشحن برنامج نصي. لمزيد من المعلومات حول كيفية نشر البرامج النصية في Configuration Manager، راجع [الحزم والبرامج في Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
+## <a name="windows-server-semi-annual-enterprise-channel-sac-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual Enterprise Channel (SAC) Windows Server 2019 و Windows Server 2022
 
 ### <a name="download-package"></a>حزمة التنزيل
 

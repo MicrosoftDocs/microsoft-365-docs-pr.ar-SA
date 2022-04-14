@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea689ca87d5d72204ba5621a59ca4fe43047ef52
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 32baee17e01aa4223124e21b7d20c219c0dc4b7f
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783216"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841852"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender لنقطة النهاية لعملاء الحكومة الأمريكية
 
@@ -212,6 +212,5 @@ Windows Server 2008 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم](images
 |دعم MAM|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
 |عناصر التحكم في الخصوصية|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
 |إدارة المخاطر والثغرات الأمنية (TVM)|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|
-|تصفية محتوى ويب|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|
   
 

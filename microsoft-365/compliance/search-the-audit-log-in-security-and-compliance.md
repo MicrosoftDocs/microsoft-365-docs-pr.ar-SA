@@ -21,12 +21,12 @@ description: استخدم مركز التوافق في Microsoft 365 للبحث 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: edf5bfd91313c621707d1bdc35074bfe7fe9585c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 1a10bf738562f8fd9a263252d4a56eddf8acee9d
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759910"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841940"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>البحث في سجل التدقيق في مركز التوافق
 
@@ -128,29 +128,7 @@ ms.locfileid: "64759910"
 
 - Azure Active Directory (Azure AD) هي خدمة الدليل Microsoft 365. يحتوي سجل التدقيق الموحد على أنشطة المستخدم والمجموعة والتطبيق والمجال والدليل التي يتم تنفيذها في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a> أو في مدخل إدارة Azure. للحصول على قائمة كاملة بأحداث Azure AD، راجع [أحداث تقرير تدقيق Azure Active Directory](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
-- قد يستغرق الأمر ما يصل إلى 30 دقيقة أو حتى 24 ساعة بعد وقوع حدث ما حتى يتم إرجاع سجل التدقيق المطابق في نتائج البحث في سجل التدقيق. يعرض الجدول التالي الوقت المستغرق للخدمات المختلفة في Microsoft 365.
-
-  |خدمة أو ميزة Microsoft 365|30 دقيقة|24 ساعة|
-  |---|:---:|:---:|
-  |Defender لذكاء Microsoft 365 والتهديدات|![علامة الاختيار.](../media/checkmark.png)||
-  |Azure Active Directory (أحداث تسجيل دخول المستخدم)||![علامة الاختيار.](../media/checkmark.png)|
-  |Azure Active Directory (أحداث المسؤول)||![علامة الاختيار.](../media/checkmark.png)|
-  |منع فقدان البيانات|![علامة الاختيار.](../media/checkmark.png)||
-  |Dynamics 365 CRM||![علامة الاختيار.](../media/checkmark.png)|
-  |eDiscovery|![علامة الاختيار.](../media/checkmark.png)||
-  |Exchange Online|![علامة الاختيار.](../media/checkmark.png)||
-  |Microsoft Power Automate||![علامة الاختيار.](../media/checkmark.png)|
-  |Microsoft Stream|![علامة الاختيار.](../media/checkmark.png)||
-  |Microsoft Teams|![علامة الاختيار.](../media/checkmark.png)||
-  |تطبيقات الطاقة||![علامة الاختيار.](../media/checkmark.png)|
-  |Power BI|![علامة الاختيار.](../media/checkmark.png)||
-  |مركز التوافق في Microsoft 365|![علامة الاختيار.](../media/checkmark.png)||
-  |تسميات الحساسية||![علامة الاختيار.](../media/checkmark.png)|
-  |SharePoint Online و OneDrive for Business|![علامة الاختيار.](../media/checkmark.png)||
-  |Workplace Analytics|![علامة الاختيار.](../media/checkmark.png)||
-  |Yammer||![علامة الاختيار.](../media/checkmark.png)|
-  |Microsoft Forms|![علامة الاختيار.](../media/checkmark.png)||
-  ||||
+- لا تضمن Microsoft وقتا محددا بعد وقوع حدث ما لإرجاع سجل التدقيق المطابق في نتائج البحث في سجل التدقيق. بالنسبة للخدمات الأساسية (مثل Exchange، SharePoint، OneDrive، Teams)، يكون توفر سجل التدقيق عادة من 60 إلى 90 دقيقة بعد وقوع الحدث. بالنسبة للخدمات الأخرى، قد يكون توفر سجل التدقيق أطول. ومع ذلك، قد تحدث بعض المشكلات التي لا يمكن تجنبها (مثل انقطاع الخادم) خارج خدمة التدقيق التي تؤخر توفر سجلات التدقيق. لهذا السبب، لا تلتزم Microsoft بوقت معين.
 
 - لا يتم تمكين تسجيل التدقيق ل Power BI بشكل افتراضي. للبحث عن أنشطة Power BI في سجل التدقيق، يجب تمكين التدقيق في مدخل مسؤول Power BI. للحصول على الإرشادات، راجع قسم "سجلات التدقيق" في [مدخل مسؤول Power BI](/power-bi/service-admin-portal#audit-logs).
 

@@ -9,12 +9,12 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
-ms.openlocfilehash: 8c8d79313ee858ebcac8754b96046b517a3f614a
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 5cb1f14f8f9dc8c645621c1a12c651db8a790b71
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835963"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841928"
 ---
 # <a name="shared-devices"></a>الأجهزة المشتركة
 
@@ -45,7 +45,7 @@ ms.locfileid: "64835963"
 - إذا كانت تجربة المستخدم تحتاج إلى أن تكون مختلفة للمستخدمين المختلفين على الجهاز.
 - إذا كانت مجموعة التطبيقات التي يحتاجها كل مستخدم تختلف اختلافا كبيرا.
 
-## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile-in-microsoft-managed-desktop"></a>تسجيل أجهزة جديدة باستخدام ملف تعريف وضع النشر الذاتي Windows Autopilot في Microsoft Managed Desktop
+## <a name="register-new-devices-using-the-windows-autopilot-self-deploying-mode-profile"></a>تسجيل أجهزة جديدة باستخدام ملف تعريف وضع النشر الذاتي Windows Autopilot
 
 سواء كنت أنت أو شريك تتعامل مع تسجيل الجهاز، يمكنك اختيار استخدام ملف تعريف [وضع النشر الذاتي Windows Autopilot](/mem/autopilot/self-deploying) في Microsoft Managed Desktop.
 

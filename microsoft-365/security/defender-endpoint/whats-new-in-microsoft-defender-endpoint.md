@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3294529a9b86fdc9bdb83de6a3296c9f0d6507d
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 6fb2b8c3e1466c52d707538f46643580c72a6fbf
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782820"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841891"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>ما الجديد في Microsoft Defender لنقطة النهاية
 
@@ -60,7 +60,7 @@ ms.locfileid: "64782820"
 - [ما الجديد في Defender لنقطة النهاية على iOS](ios-whatsnew.md)
 - [ما الجديد في Defender لنقطة النهاية على Linux](linux-whatsnew.md)
 
-## <a name="march-2022"></a>مارس 2022
+## <a name="april-2022"></a>أبريل 2022
 - [الإعداد المحدث وتماثل الميزات ل Windows Server 2012 R2 و Windows Server 2016)](configure-server-endpoints.md)<br/> حزمة الحلول الموحدة الجديدة متاحة الآن بشكل عام وتجعل من السهل إلحاق الخوادم عن طريق إزالة التبعيات وخطوات التثبيت. بالإضافة إلى ذلك، تأتي حزمة الحلول الموحدة هذه مع العديد من تحسينات الميزات الجديدة.
 
 ## <a name="january-2022"></a>يناير 2022

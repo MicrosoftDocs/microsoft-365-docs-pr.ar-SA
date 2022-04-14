@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 99ed659ceae21901deb1625c0b9e65a9a82ea1b4
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: abaca30b4de2638b0c1f7d0522b96fac469760a9
+ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704725"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64841807"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>تغيير المحفوظات لوثائق Microsoft Managed Desktop
 
@@ -28,7 +28,7 @@ ms.locfileid: "64704725"
 
 مقالة جديدة أو تم تغييرها | الوصف
 --- | ---
-| [الأجهزة المشتركة](service-description/shared-devices.md) | إضافة تسجيل أجهزة جديدة في قسم الوضع المشترك |
+| [الأجهزة المشتركة](service-description/shared-devices.md) | إضافة تسجيل أجهزة جديدة باستخدام ملف تعريف وضع النشر الذاتي Windows Autopilot |
 | [الفرق](get-started/teams.md) | قسم تغييرات Microsoft Intune المحدثة |
 
 ## <a name="march-2022"></a>مارس 2022
