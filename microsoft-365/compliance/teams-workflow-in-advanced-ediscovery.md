@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: تعرف على كيفية الاحتفاظ بالمحتوى وجمعه ومراجعته وتصديره من Microsoft Teams في Advanced eDiscovery.
-ms.openlocfilehash: ecd114f9ea68cefb03e55453176a0c8b323620cc
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 90c3ece3f6e8218771da9dbbb88fe5c32d9d7d94
+ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758784"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64847004"
 ---
 # <a name="advanced-ediscovery-workflow-for-content-in-microsoft-teams"></a>سير عمل Advanced eDiscovery للمحتوى في Microsoft Teams
 
@@ -298,6 +298,10 @@ ms.locfileid: "64758784"
 - تتضمن الأعمدة المفيدة التي تساعدك على مراجعة محتوى Teams **الحفظ** **والمستلمين** **ونوع الملف** أو **نوع الرسالة**.
 
 - استخدم [عوامل التصفية](review-set-search.md) للخصائص المرتبطة Teams لعرض محتوى Teams بسرعة. هناك عوامل تصفية لمعظم خصائص بيانات التعريف الموضحة في القسم السابق.
+
+## <a name="deleting-teams-chat-messages"></a>حذف رسائل دردشة Teams
+
+يمكنك استخدام Advanced eDiscovery وMicrosoft Graph Explorer للاستجابة لحوادث انسكاب البيانات، عند إصدار محتوى يحتوي على معلومات سرية أو ضارة من خلال رسائل دردشة Teams. يمكن للمسؤولين في مؤسستك البحث عن رسائل الدردشة وحذفها في Microsoft Teams. قد يساعدك ذلك على إزالة المعلومات الحساسة أو المحتوى غير المناسب في رسائل الدردشة Teams. لمزيد من المعلومات، راجع [البحث عن رسائل الدردشة وإزالةها في Teams](search-and-delete-Teams-chat-messages.md).
 
 ## <a name="reference-guide"></a>دليل مرجعي
 
