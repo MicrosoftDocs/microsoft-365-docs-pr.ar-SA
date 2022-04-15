@@ -171,6 +171,8 @@
               href: create-groups/restore-deleted-group.md
             - name: إدارة وصول الضيف إلى المجموعات
               href: create-groups/manage-guest-access-in-groups.md
+            - name: إدارة الفرق والمجموعات التي لا مالك لها
+              href: create-groups/ownerless-groups-teams.md
         - name: كلمات المرور
           items:
             - name: إعادة تعيين كلمات المرور
