@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: تعرف على كيفية فهم المستندات في Microsoft SharePoint Syntex.
-ms.openlocfilehash: 639decf383e534253b014366d9d8c51a83a76675
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 385d981f1f8db22ec7d18c79734bde5a8fc3739d
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822727"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882473"
 ---
 # <a name="document-understanding-overview-in-microsoft-sharepoint-syntex"></a>نظرة عامة على فهم المستندات في Microsoft SharePoint Syntex
 
@@ -124,7 +124,7 @@ ms.locfileid: "64822727"
 - الإيطالية
 - الإسبانية
 
-## <a name="see-also"></a>انظر أيضاً
+## <a name="see-also"></a>راجع أيضًا
 
 [إنشاء مصنف](create-a-classifier.md)
 

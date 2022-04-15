@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على كيفية الحصول على تقرير نشاط المستخدم Microsoft Teams والحصول على رؤى حول نشاط Teams في مؤسستك.
-ms.openlocfilehash: a5261261a1a1cb7b2039b646c3dbbd92c5f43688
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: cbd9bdb73dc69da5e36e0fb9c3ff2ff15b5269a4
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781644"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882253"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365 التقارير في مركز الإدارة - Microsoft Teams نشاط المستخدم
 
@@ -71,7 +71,7 @@ ms.locfileid: "64781644"
 |الاجتماعات التي تمت مشاركتها متكررة مجدولة  <br/> |عدد الاجتماعات المتكررة التي شارك فيها المستخدم خلال الفترة الزمنية المحددة.  <br/> |
 |مرخص  <br/> |حدد إذا كان المستخدم مرخصا لاستخدام Teams. <br/>|
 |نشاط آخر  <br/>|المستخدم نشط ولكنه قام بأنشطة أخرى غير أنواع الإجراءات المعروضة في التقرير (إرسال رسائل القناة ورسائل الدردشة أو الرد عليها، أو جدولة المكالمات والاجتماعات أو المشاركة فيها 1:1). إجراءات الأمثلة هي عندما يغير المستخدم حالة Teams أو رسالة الحالة Teams أو يفتح منشور "رسالة القناة" ولكنه لا يرد.  <br/>|
-|اجتماعات غير مصنفة <br/>|تلك التي لا يمكن تصنيفها على أنها جدول زمني أو متكررة أو مخصصة. وهي قصيرة العدد ولا يمكن تحديدها في الغالب بسبب معلومات تتبع الاستخدام التي تم التلاعب بها. |
+
 
 ## <a name="make-the-user-specific-data-anonymous"></a>جعل البيانات الخاصة بالمستخدم مجهولة
 

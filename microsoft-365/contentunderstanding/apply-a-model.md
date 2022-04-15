@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: تعرف على كيفية تطبيق نموذج منشور على مكتبة مستندات SharePoint في Microsoft SharePoint Syntex.
-ms.openlocfilehash: 6be3a1b0badaecf1196545c313adcce51f3d2b55
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: a3c1ca971853234bb4b203d8b1b3e40aec7c1d7d
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738472"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882385"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>تطبيق نموذج فهم المستند في Microsoft SharePoint Syntex
 
@@ -137,7 +137,7 @@ ms.locfileid: "64738472"
 
 [!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
 
-## <a name="see-also"></a>انظر أيضاً
+## <a name="see-also"></a>راجع أيضًا
 
 [إنشاء مصنف](create-a-classifier.md)
 

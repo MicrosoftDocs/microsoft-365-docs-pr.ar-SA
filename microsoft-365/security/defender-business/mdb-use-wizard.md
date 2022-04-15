@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
+ms.date: 04/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 1f128a48e8ee2939b4bfcc270c110e0ec63d6ebe
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 697dfc567eb2719a6e81a7b57df321ba2af40911
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862577"
+ms.locfileid: "64882297"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>استخدام معالج الإعداد في Microsoft Defender for Business
 
@@ -36,6 +36,11 @@ ms.locfileid: "64862577"
 > **هل لديك دقيقة؟**
 > يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
 >
+
+> [!TIP]
+> استخدام معالج الإعداد اختياري. يمكنك اختيار العمل من خلال عملية الإعداد والتكوين يدويا. للتعرّف على المزيد، اطلع على:
+> - [ماذا يحدث إذا لم أستخدم المعالج؟](#what-happens-if-i-dont-use-the-wizard)
+> - [كيفية إعداد Microsoft Defender for Business وتكوينها](mdb-setup-configuration.md)
 
 ## <a name="how-to-start-the-setup-wizard"></a>كيفية بدء تشغيل معالج الإعداد
 
@@ -64,7 +69,7 @@ ms.locfileid: "64862577"
 
    [تعرف على المزيد حول الأدوار والأذونات](mdb-roles-permissions.md). 
 
-2. **إعداد إعلامات البريد الإلكتروني**. في هذه الخطوة، يمكنك إعداد إعلامات البريد الإلكتروني لفريق الأمان. بعد ذلك، عند إنشاء تنبيه أو اكتشاف ثغرة أمنية جديدة، لن يتعلق الأمر بفريق الأمان الخاص بك حتى لو كان بعيدا عن مكتبه. [تعرف على المزيد حول إعلامات البريد الإلكتروني](mdb-email-notifications.md). 
+2. **إعداد إعلامات البريد الإلكتروني**. في هذه الخطوة، يمكنك إعداد إعلامات البريد الإلكتروني لفريق الأمان. بعد ذلك، عند إنشاء تنبيه أو اكتشاف ثغرة أمنية جديدة، لن يقوم فريق الأمان الخاص بك بذلك حتى لو كان بعيدا عن مكتبه. [تعرف على المزيد حول إعلامات البريد الإلكتروني](mdb-email-notifications.md). 
 
 3. **إعداد أجهزة Windows وتكوينها**. في هذه الخطوة، يمكنك إلحاق أجهزة Windows الخاصة بشركتك إلى Defender for Business بسرعة. يساعد إلحاق الأجهزة على الفور على حماية هذه الأجهزة من اليوم الأول. 
 

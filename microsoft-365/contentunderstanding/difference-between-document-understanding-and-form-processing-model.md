@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: تعرف على الاختلافات الرئيسية بين نموذج فهم المستند ونموذج معالجة النموذج.
-ms.openlocfilehash: a3f36adbf261ef290aada8efe1c0643ee1ce570f
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: f6fe6e821e41b47bcce6ef157d971245fdd072b8
+ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738400"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64882275"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>الاختلافات بين فهم المستندات ونماذج معالجة النماذج 
 
@@ -87,7 +87,7 @@ ms.locfileid: "64738400"
 | اللغات المدعومة| دعم اللغة لأكثر من [73 لغة](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support). | تعمل النماذج على جميع لغات الأبجدية اللاتينية. بالإضافة إلى الإنجليزية: الألمانية والسويدية والفرنسية والإسبانية والإيطالية والبرتغالية.|
 
 
-## <a name="see-also"></a>انظر أيضاً
+## <a name="see-also"></a>راجع أيضًا
 
 [تدريب: تحسين أداء الأعمال باستخدام الذكاء الاصطناعي Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
