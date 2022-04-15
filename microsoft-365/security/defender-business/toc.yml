@@ -15,12 +15,12 @@
       items:
         - name: الحصول على Defender for Business
           href: get-defender-business.md
+        - name: إضافة مستخدمين وتعيين التراخيص
+          href: mdb-add-users.md
+        - name: تفضّل بزيارة مدخل Microsoft 365 Defender
+          href: mdb-get-started.md
         - name: استخدام معالج الإعداد
           href: mdb-use-wizard.md
-        - name: بدء استخدام المدخل
-          href: mdb-get-started.md
-        - name: عرض لوحة معلومات إدارة الثغرات الأمنية
-          href: mdb-view-tvm-dashboard.md
         - name: تجربة البرامج التعليمية والمحاكاة
           href: mdb-tutorials.md
     - name: إعداد Defender for Business وتكوينه
@@ -39,6 +39,8 @@
           href: mdb-configure-security-settings.md
     - name: عرض التهديدات المكتشفة والاستجابة لها
       items:
+        - name: عرض لوحة معلومات إدارة الثغرات الأمنية
+          href: mdb-view-tvm-dashboard.md
         - name: عرض الأحداث وإدارتها
           href: mdb-view-manage-incidents.md
         - name: الاستجابة للتهديدات وتخفيف آثارها
@@ -65,6 +67,8 @@
           href: mdb-manage-devices.md
         - name: إنشاء مجموعات الأجهزة
           href: mdb-create-edit-device-groups.md
+        - name: إيقاف تشغيل الأجهزة
+          href: mdb-offboard-devices.md
     - name: معلومات المرجع
       items:
         - name: كيفية الحصول على المساعدة أو الاتصال بالدعم

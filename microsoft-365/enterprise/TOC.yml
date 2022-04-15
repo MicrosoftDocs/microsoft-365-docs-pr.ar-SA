@@ -375,12 +375,18 @@
       items:
         - name: استعد
           href: configure-services-and-applications.md
+        - name: التعاون الخارجي
+          href: external-guest-access.md
         - name: Exchange Online
           href: /Exchange/exchange-online
         - name: SharePoint
           href: /sharepoint/sharepoint-online
         - name: Microsoft Teams
           href: /MicrosoftTeams/Teams-overview
+        - name: الاجتماعات والمؤتمرات
+          href: /microsoftteams/deploy-meetings-microsoft-teams-landing-page
+        - name: ترحيل صوت Teams
+          href: /microsoftteams/cloud-voice-landing-page
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
         - name: تنشيط إدارة الحقوق
@@ -400,7 +406,7 @@
         - name: SharePoint
           href: /sharepoint/introduction
         - name: Microsoft Teams
-          href: /microsoftteams/upgrade-monitor-quality
+          href: /microsoftteams/manage-teams-overview
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
         - name: الأداء والضبط
