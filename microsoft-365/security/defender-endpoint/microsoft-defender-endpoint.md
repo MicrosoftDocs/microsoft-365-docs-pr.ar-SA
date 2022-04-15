@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender لنقطة النهاية
-description: Microsoft Defender ل Endpoint هو نظام أساسي لأمن نقطة نهاية المؤسسة يساعد على الدفاع ضد التهديدات الثابتة المتقدمة.
-keywords: مقدمة حول Microsoft Defender ل Endpoint، مقدمة حول Microsoft Defender لنقطة النهاية، الأمان عبر الإنترنت، التهديدات الثابتة المتقدمة، أمان المؤسسة، أداة الاستشعار السلوكية الآلية، الأمان السحابي، التحليلات، المعلومات المتعلقة بالتهجم، الحد من سطح الهجوم، حماية الجيل التالي، التحقيق التلقائي والتحلي، خبراء المخاطر من Microsoft، نقاط آمنة، عمليات البحث المتقدمة، Microsoft 365 Defender، مكافحة التهديدات الإلكترونية
+title: Microsoft Defender for Endpoint
+description: Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان نقطة نهاية المؤسسة يساعد على الدفاع ضد التهديدات المستمرة المتقدمة.
+keywords: مقدمة إلى Microsoft Defender لنقطة النهاية، مقدمة إلى Microsoft Defender لنقطة النهاية، والأمن السيبراني، والتهديدات المستمرة المتقدمة، وأمان المؤسسة، والمستشعر السلوكي للجهاز، وأمان السحابة، والتحليلات، والتحليل الذكي للمخاطر، وتقليل الأجزاء المعرضة للهجوم، وحماية الجيل التالي، والتحقيق الآلي والمعالجة، وخبراء التهديد من Microsoft، والنتيجة الآمنة، والتتبع المتقدم، Microsoft 365 Defender، وتتبع التهديدات الإلكترونية
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,49 +17,49 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c4308c203093d2170cc1a6316db824ee9935363f
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 3a67d73475301096df8be691f2c5e0dc6db23db8
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63583209"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862181"
 ---
-# <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender لنقطة النهاية
+# <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [مشكلات الأداء في Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Defender ل Endpoint هو نظام أساسي لأمن نقطة نهاية المؤسسة تم تصميمه لمساعدة شبكات المؤسسات على منع التهديدات المتقدمة والكشف عنها والتحقق منها والاستجابة لها.
+Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان نقطة نهاية المؤسسة مصمم لمساعدة شبكات المؤسسة على منع التهديدات المتقدمة واكتشافها والتحقيق فيها والاستجابة لها.
 
 > [!TIP]
-> قريبا، سيتوفر Microsoft Defender لنقطة النهاية في خطتين. تصف هذه المقالة الميزات والإمكانات المضمنة في Microsoft Defender لخطة نقطة النهاية 2. [تعرف على المزيد حول Microsoft Defender لخطة نقطة النهاية 1 الخطة 2](defender-endpoint-plan-1-2.md).
+> قريبا، ستتوفر Microsoft Defender لنقطة النهاية في خطتين. تصف هذه المقالة الميزات والقدرات المضمنة في Microsoft Defender لنقطة النهاية الخطة 2. [تعرف على المزيد حول Microsoft Defender لنقطة النهاية الخطة 1 والخطة 2](defender-endpoint-plan-1-2.md).
 > 
 
 <p><p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
-يستخدم Defender for Endpoint مجموعة التقنيات التالية المضمنة في Windows 10 والخدمات السحابية القوية من Microsoft:
+يستخدم Defender لنقطة النهاية المجموعة التالية من التكنولوجيا المضمنة في Windows 10 وخدمة السحابة القوية من Microsoft:
 
-- أدوات الاستشعار السلوكية لنقطة **النهاية: تقوم** أدوات الاستشعار هذه، المضمنة في Windows 10، بتجميع الإشارات السلوكية من نظام التشغيل وترسل بيانات المستشعر هذه إلى مثيل Microsoft Defender لنقطة النهاية الخاص والمعزول والسحابي.
+- **أجهزة الاستشعار السلوكية لنقطة النهاية**: مضمنة في Windows 10، تجمع أجهزة الاستشعار هذه الإشارات السلوكية وتعالجها من نظام التشغيل وترسل بيانات المستشعر هذه إلى مثيل السحابة الخاص والمعزول Microsoft Defender لنقطة النهاية.
 
-- تحليلات أمان السحابة **: الاستفادة** من البيانات الكبيرة وتعلم الأجهزة وبصريات Microsoft الفريدة عبر النظام البيئي ل Windows ومنتجات السحابة الخاصة بالمؤسسات (مثل Office 365) والأصول عبر الإنترنت، تتم ترجمة الإشارات السلوكية إلى تحليلات واكتشافات واستجابات مستحسنة للتهديدات المتقدمة.
+- **تحليلات أمان السحابة**: تتم ترجمة الاستفادة من البيانات الضخمة وتعلم الأجهزة وبصريات Microsoft الفريدة عبر النظام البنائي Windows والمنتجات السحابية للمؤسسات (مثل Office 365) والأصول عبر الإنترنت والإشارات السلوكية إلى رؤى واكتشافات واستجابات موصى بها للتهديدات المتقدمة.
 
-- المعلومات المتعلقة بالخطر **: التي** يتم إنشاؤها بواسطة صائدي Microsoft وفرق الأمان وزيادة المعلومات المتعلقة بالخطر التي يوفرها الشركاء، تمكن المعلومات المتعلقة بخطر المخاطر Defender for Endpoint من تحديد أدوات وتقنيات وإجراءات المهاجمين، كما تمكنهم من إنشاء تنبيهات عند ملاحظتها في بيانات المستشعر المجمعة.
+- **التحليل الذكي للمخاطر**: تم إنشاؤه بواسطة متتبعي Microsoft، وفرق الأمان، وزيادة التحليل الذكي للمخاطر الذي يوفره الشركاء، ويمكن التحليل الذكي للمخاطر Defender لنقطة النهاية من تحديد أدوات المهاجم وتقنياته وإجراءاته، وإنشاء تنبيهات عند ملاحظتها في بيانات المستشعر المجمعة.
 
 <center><h2>Microsoft Defender لنقطة النهاية</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>إدارة & المخاطر</b></center></a></td>
-<td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>الحد من سطح الهجوم</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>إدارة الثغرات الأمنية & المخاطر</b></center></a></td>
+<td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>تقليل الأجزاء المعرضة للهجوم</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>حماية الجيل التالي</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>الكشف عن نقطة النهاية والاستجابة لها</b></a></center></td>
-<td><center><a href="#ai"><img src="images/air-icon.png" alt="Automated investigation and remediation"><br> <b>المعالجة والتحري التلقائي</b></a></center></td>
+<td><center><a href="#ai"><img src="images/air-icon.png" alt="Automated investigation and remediation"><br> <b>التحقيق التلقائي والمعالجة</b></a></center></td>
 <td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>خبراء المخاطر في Microsoft</b></a></center></td>
 </tr>
 <tr>
@@ -77,89 +77,92 @@ Microsoft Defender ل Endpoint هو نظام أساسي لأمن نقطة نها
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0]
 
 > [!TIP]
->
-> - تعرف على التحسينات الأخيرة في Defender for Endpoint: ما [الجديد في Microsoft Defender لنقطة النهاية](whats-new-in-microsoft-defender-endpoint.md).
-> - أظهر Microsoft Defender ل Endpoint قدرات الكشف والبصريات الرائدة في تقييم MITRE الأخير. اقرأ: [Insights من تقييم MITRE ATT&المستند إلى CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - تعرف على أحدث التحسينات في Defender لنقطة النهاية: [ما الجديد في Microsoft Defender لنقطة النهاية](whats-new-in-microsoft-defender-endpoint.md).
+> - أظهرت Microsoft Defender لنقطة النهاية البصريات الرائدة في الصناعة وقدرات الكشف في تقييم MITRE الأخير. قراءة: [Insights من التقييم المستند إلى MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+
+
+>[!IMPORTANT]
+>قد تختلف القدرات على الأنظمة الأساسية غير Windows عن تلك الخاصة Windows. لمزيد من المعلومات حول القدرات المتوفرة للأنظمة الأساسية غير Windows، راجع [Microsoft Defender لنقطة النهاية للأنظمة الأساسية غير Windows](/security/defender-endpoint/non-windows).
 
 <a name="tvm"></a>
 
-**[إدارة & المخاطر](next-gen-threat-and-vuln-mgt.md)**
+**[إدارة الثغرات الأمنية & المخاطر](next-gen-threat-and-vuln-mgt.md)**
 
-تستخدم هذه الإمكانية المضمنة نهجا مستندا إلى المخاطر يقوم على تغيير اللعبة لاكتشاف نقاط الضعف والتضمينات الخاطئة وتحديد أولوياتها وتصفية نقاط النهاية.
+تستخدم هذه الإمكانية المضمنة نهجا مستندا إلى المخاطر لتغيير اللعبة لاكتشاف الثغرات الأمنية في نقطة النهاية والتكوينات الخاطئة وتحديد أولوياتها ومعالجتها.
 
 <a name="asr"></a>
 
-**[الحد من سطح الهجوم](overview-attack-surface-reduction.md)**
+**[قواعد تقليل الأجزاء المعرضة للهجوم](overview-attack-surface-reduction.md)**
 
-توفر مجموعة إمكانات تقليل مساحة الهجوم خط الدفاع الأول في المكدس. ومن خلال ضمان تعيين إعدادات التكوين بشكل صحيح وتطبيق أساليب التخفيف من المخاطر، تقاوم الإمكانات الهجمات واستغلالها. تتضمن مجموعة الإمكانات [هذه أيضا حماية](network-protection.md) الشبكة [وحماية](web-protection-overview.md) الويب، التي تنظم الوصول إلى عناوين IP والمجالات وعناوين URL الضارة.
+توفر مجموعة تقليل الأجزاء المعرضة للهجوم من القدرات خط الدفاع الأول في المكدس. من خلال ضمان تعيين إعدادات التكوين بشكل صحيح وتطبيق تقنيات التخفيف من الاستغلال، تقاوم القدرات الهجمات واستغلالها. تتضمن هذه المجموعة من القدرات أيضا [حماية الشبكة](network-protection.md) [وحماية الويب](web-protection-overview.md)، والتي تنظم الوصول إلى عناوين IP والمجالات وعناوين URL الضارة.
 
 <a name="ngp"></a>
 
 **[حماية الجيل التالي](next-generation-protection.md)**
 
-لمزيد من تعزيز محيط الأمان للشبكة، يستخدم Microsoft Defender ل Endpoint حماية الجيل التالي المصممة لالتقاط جميع أنواع التهديدات الناشئة.
+لزيادة تعزيز محيط الأمان لشبكتك، تستخدم Microsoft Defender لنقطة النهاية حماية الجيل التالي المصممة لالتقاط جميع أنواع التهديدات الناشئة.
 
 <a name="edr"></a>
 
 **[الكشف عن نقطة النهاية والاستجابة لها](overview-endpoint-detection-response.md)**
 
-يتم وضع قدرات الكشف عن نقاط النهاية والاستجابة لها في مكانها للكشف عن التهديدات المتقدمة التي قد تكون جعلتها تنهي أول عمودين من أعمدة الأمان والاستجابة لها والاستجابة لها. [يوفر الصيد المتقدم](advanced-hunting-overview.md) أداة بحث عن تهديدات تستند إلى استعلام تتيح لك العثور على الخروقات بشكل استباقي وإنشاء عمليات كشف مخصصة.
+يتم وضع قدرات الكشف عن نقطة النهاية والاستجابة لها للكشف عن التهديدات المتقدمة التي قد تكون تجاوزت أول ركيزتين أمنيتين والتحقيق فيها والاستجابة لها. يوفر [التتبع المتقدم](advanced-hunting-overview.md) أداة تتبع المخاطر المستندة إلى الاستعلام التي تتيح لك العثور على الاختراقات بشكل استباقي وإنشاء عمليات كشف مخصصة.
 
 <a name="ai"></a>
 
-**[المعالجة والتحري التلقائي](automated-investigations.md)**
+**[التحقيق التلقائي والمعالجة](automated-investigations.md)**
 
-بالتزامن مع القدرة على الاستجابة بسرعة للهجمات المتقدمة، يوفر Microsoft Defender ل Endpoint إمكانات المعالجة والتدقيق التلقائي التي تساعد على تقليل حجم التنبيهات بالدقائق على نطاق واسع.
+إلى جانب القدرة على الاستجابة السريعة للهجمات المتقدمة، يوفر Microsoft Defender لنقطة النهاية قدرات التحقيق والمعالجة التلقائية التي تساعد على تقليل حجم التنبيهات في دقائق على نطاق واسع.
 
 <a name="ss"></a>
 
 **[Microsoft Secure Score للأجهزة](tvm-microsoft-secure-score-devices.md)**
 
-يتضمن Defender for Endpoint Microsoft Secure Score للأجهزة لمساعدتك على تقييم حالة الأمان لشبكة المؤسسة بشكل ديناميكي، وتحديد الأنظمة غير المحمية، واتخاذ الإجراءات الموصى بها لتحسين الأمان العام لمؤسستك.
+يتضمن Defender لنقطة النهاية نقاط أمان Microsoft للأجهزة لمساعدتك على تقييم حالة الأمان لشبكة المؤسسة ديناميكيا، وتحديد الأنظمة غير المحمية، واتخاذ الإجراءات الموصى بها لتحسين الأمان العام لمؤسستك.
 
 <a name="mte"></a>
 
 **[خبراء المخاطر في Microsoft](microsoft-threat-experts.md)**
 
-توفر خدمة البحث عن المخاطر المدارة الجديدة في Microsoft Defender ل Endpoint إمكانية الاصطلاح الاستباقي وتحديد الأولويات وسياق إضافي ورؤى إضافية تمكن مراكز عمليات الأمان (SOCs) من التعرف على التهديدات والاستجابة لها بسرعة ودقة.
+توفر خدمة تتبع التهديدات المدارة الجديدة في Microsoft Defender لنقطة النهاية التتبع الاستباقي وتحديد الأولويات والسياق الإضافي والرؤى التي تمكن مراكز عمليات الأمان (SOCs) من تحديد التهديدات والاستجابة لها بسرعة ودقة.
 
 > [!IMPORTANT]
-> يحتاج Defender لعملاء Endpoint إلى التقدم بطلب للحصول على خدمة البحث عن خبراء المخاطر في Microsoft المخاطر المدارة للحصول على إعلامات استباقية حول الهجمات المستهدفة والتعاون مع الخبراء عند الطلب. الخبراء عند الطلب هي خدمة الوظائف الإضافية. يتم دائما تضمين إعلامات الهجمات المستهدفة بعد أن يتم قبولك في خدمة خبراء المخاطر في Microsoft المخاطر المدارة.
+> يحتاج عملاء Defender لنقطة النهاية إلى التقدم بطلب لخدمة تتبع التهديدات المدارة خبراء المخاطر في Microsoft للحصول على إعلامات استباقية بالهجوم المستهدف والتعاون مع الخبراء عند الطلب. الخبراء عند الطلب هي خدمة إضافية. يتم تضمين إعلامات الهجوم المستهدف دائما بعد قبولك في خبراء المخاطر في Microsoft خدمة تتبع التهديدات المدارة.
 >
-> إذا لم تكن مسجلا بعد وتحب  \>  \>  \> تجربة مزاياه، فاذهب إلى الإعدادات الميزات المتقدمة العامة **خبراء المخاطر في Microsoft لتطبيقها**. بمجرد قبولك، ستحصل على مزايا إعلامات الهجمات المستهدفة، وستبدأ تجربة لمدة 90 يوما من الخبراء عند الطلب. اتصل بممثل Microsoft للحصول على اشتراك خبراء عند الطلب الكامل.
+> إذا لم تكن مسجلا بعد وترغب في تجربة فوائده، فانتقل إلى **الإعدادات** \> **الميزات** \> المتقدمة **العامة** \> **خبراء المخاطر في Microsoft** لتطبيقها. بمجرد قبولك، ستحصل على مزايا إعلامات الهجوم المستهدف، وستبدأ تجربة لمدة 90 يوما من الخبراء عند الطلب. اتصل بممثل Microsoft للحصول على اشتراك الخبراء عند الطلب الكامل.
 
 <a name="apis"></a>
 
 **[التكوين والإدارة المركزيان، واجهات برمجة التطبيقات](management-apis.md)**
 
-ادمج Microsoft Defender ل Endpoint في مهام سير العمل الموجودة.
+دمج Microsoft Defender لنقطة النهاية في مهام سير العمل الموجودة.
 
 <a name="mtp"></a>
 
 **[التكامل مع حلول Microsoft](threat-protection-integration.md)**
 
-يتكامل Defender for Endpoint مباشرة مع حلول Microsoft المختلفة، بما في ذلك:
+يتكامل Defender لنقطة النهاية مباشرة مع حلول Microsoft المختلفة، بما في ذلك:
 
 - Microsoft Defender for Cloud
 - Microsoft Sentinel
 - Intune
-- Microsoft Defender لتطبيقات السحابة
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
-- Microsoft Defender Office
+- Microsoft Defender for Office
 - Skype for Business
 
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)**
 
-باستخدام Microsoft 365 Defender، يشكل Defender for Endpoint وحلول أمان Microsoft المتنوعة مجموعة موحدة من برامج الدفاع الخاصة بالمؤسسات قبل الخرق وبعده تتكامل بشكل أصلي عبر نقاط النهاية والهوية والبريد الإلكتروني والتطبيقات للكشف عن الهجمات المعقدة ومنعها التحقيق فيها والرد عليها تلقائيا.
+باستخدام Microsoft 365 Defender، يشكل Defender لنقطة النهاية وحلول أمان Microsoft المختلفة مجموعة دفاع موحدة لما قبل الخرق وما بعده تتكامل أصلا عبر نقطة النهاية والهوية والبريد الإلكتروني والتطبيقات للكشف عن الهجمات المتطورة ومنعها والتحقيق فيها والاستجابة لها تلقائيا.
 
 
-## <a name="training-for-security-analysts"></a>تدريب لمحللين الأمان
+## <a name="training-for-security-analysts"></a>تدريب لمحللين أمنيين
 
-باستخدام مسار التعلم هذا من Microsoft Learn، يمكنك فهم Defender for Endpoint وكيفية المساعدة في منع التهديدات والكشف عنها والتحقق منها والاستجابة لها عبر نقاط النهاية في مؤسستك – أجهزتك وأنظمتك.
+باستخدام مسار التعلم هذا من Microsoft Learn، يمكنك فهم Defender لنقطة النهاية وكيف يمكن أن يساعد في منع التهديدات واكتشافها والتحقيق فيها والاستجابة لها عبر نقاط نهاية مؤسستك - أجهزتك وأنظمتك.
 
 |التدريب:|الكشف عن الهجمات الإلكترونية والاستجابة لها باستخدام Microsoft 365 Defender|
 |---|---|
-|![Microsoft 365 Defender التدريب.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|إن Defender ل Endpoint هو حل أمان لنقطة النهاية يوفر إدارة الثغرات الأمنية وحماية نقاط النهاية الكشف عن تهديدات نقاط النهاية والرد عليها والدفاع عن تهديدات الأجهزة المحمولة والخدمات المدارة في نظام أساسي واحد موحد.<p> 2 ساعة و25 دقيقة - Learning - 9 وحدات|
+|![أيقونة التدريب Microsoft 365 Defender.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Defender لنقطة النهاية هو حل أمان نقطة النهاية الذي يوفر إدارة الثغرات الأمنية وحماية نقطة النهاية الكشف عن تهديدات نقاط النهاية والرد عليها والحماية من التهديدات المتنقلة والخدمات المدارة في نظام أساسي واحد وموحد.<p> 2 ساعة و25 دقيقة - مسار Learning - 9 وحدات نمطية|
 
 > [!div class="nextstepaction"]
-> [ابدأ >](/learn/paths/defender-endpoint-fundamentals/)
+> [بدء >](/learn/paths/defender-endpoint-fundamentals/)

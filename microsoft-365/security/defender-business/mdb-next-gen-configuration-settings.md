@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,33 +16,29 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a39a0a55592ba8f76403f9e8d9aaf7416cb35228
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: eee272798be5396ad9ad15177fcd29a0180bc448
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714230"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862709"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>فهم إعدادات تكوين الجيل التالي في Microsoft Defender for Business
 
-> [!IMPORTANT]
-> يتم طرح Microsoft Defender for Business [للعملاء Microsoft 365 Business Premium](../../business-premium/index.md)، بدءا من 1 مارس 2022. يتم معاينة Defender for Business باعتباره اشتراكا مستقلا، وسيتم طرحه تدريجيا للعملاء وشركاء تكنولوجيا المعلومات الذين [يقومون بالتسجيل هنا](https://aka.ms/mdb-preview) لطلبه. تتضمن المعاينة [مجموعة أولية من السيناريوهات](mdb-tutorials.md#try-these-preview-scenarios)، وسنضيف القدرات بانتظام.
-> 
-> تتعلق بعض المعلومات الواردة في هذه المقالة بالنواتج/الخدمات التي تم إصدارها مسبقا والتي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، للمعلومات المقدمة هنا. 
+> [!NOTE]
+> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 تتضمن حماية الجيل التالي في Defender for Business الحماية القوية من الفيروسات والحماية من البرامج الضارة. تم تصميم نهجك الافتراضية لحماية أجهزتك والمستخدمين دون إعاقة الإنتاجية؛ ومع ذلك، يمكنك أيضا تخصيص نهجك لتناسب احتياجات عملك. وإذا كنت تستخدم إدارة نقاط النهاية من Microsoft، يمكنك استخدام ذلك لإدارة نهج الأمان الخاصة بك.
 
 **تصف هذه المقالة**:
 
 - [إعدادات وخيارات الحماية من الجيل التالي](#next-generation-protection-settings-and-options)
-
 - [إعدادات أخرى تم تكوينها مسبقا في Defender for Business](#other-preconfigured-settings-in-defender-for-business) 
-
 - [الإعدادات الافتراضية ل Defender for Business إدارة نقاط النهاية من Microsoft](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
 
 ## <a name="next-generation-protection-settings-and-options"></a>إعدادات وخيارات الحماية من الجيل التالي
 
-يسرد الجدول التالي الإعدادات والخيارات:<br/><br/>
+يسرد الجدول التالي الإعدادات والخيارات:
 
 | اعداد | الوصف |
 |:---|:---|
@@ -69,17 +65,13 @@ ms.locfileid: "64714230"
 تم تكوين إعدادات الأمان التالية مسبقا في Defender for Business:
 
 - تم تشغيل المسح الضوئي لمحركات الأقراص القابلة للإزالة ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning))
-
 - لا تحتوي عمليات الفحص السريع اليومية على وقت محدد مسبقا ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime))
-
 - يتم التحقق من تحديثات معلومات الأمان قبل تشغيل فحص مكافحة الفيروسات ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
-
 - يتم إجراء عمليات التحقق من معلومات الأمان كل أربع ساعات ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
 ## <a name="defender-for-business-default-settings-and-microsoft-endpoint-manager"></a>الإعدادات الافتراضية ل Defender for Business إدارة نقاط النهاية من Microsoft
 
 يصف الجدول التالي الإعدادات التي تم تكوينها مسبقا ل Defender for Business وكيف تتوافق هذه الإعدادات مع ما قد تراه في إدارة نقاط النهاية من Microsoft (أو Microsoft Intune). إذا كنت تستخدم [عملية التكوين المبسطة في Defender for Business](mdb-simplified-configuration.md) (معاينة)، فلن تحتاج إلى تحرير هذه الإعدادات.
-<br/><br/>
 
 | اعداد  | الوصف  |
 |---------|---------|
@@ -98,16 +90,12 @@ ms.locfileid: "64714230"
 ## <a name="next-steps"></a>الخطوات التالية
 
 - [عرض الحوادث وإدارتها في Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [الاستجابة للتهديدات وتخفيفها في Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [مراجعة إجراءات المعالجة في مركز الصيانة](mdb-review-remediation-actions.md)
 
 
 ## <a name="see-also"></a>راجع أيضًا
 
 - [زيارة مدخل Microsoft 365 Defender](mdb-get-started.md)
-
 - [إدارة إعدادات جدار الحماية في Microsoft Defender for Business](mdb-custom-rules-firewall.md)
-
 - [نهج موفر الخدمات المشتركة ( CSP ) - Defender](/windows/client-management/mdm/policy-csp-defender)

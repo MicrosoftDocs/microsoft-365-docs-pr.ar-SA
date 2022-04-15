@@ -14,16 +14,16 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 03/16/2022
+ms.date: 04/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d7e2acf9c0935dcabcace974db009f3c13c6e2ed
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 4f579d3d22b553b764149c8b13538ceae1da44d8
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789349"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862873"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>التوافق برنامج الحماية من الفيروسات من Microsoft Defender مع منتجات الأمان الأخرى
 
@@ -149,22 +149,31 @@ ms.locfileid: "64789349"
 > [!IMPORTANT]
 > تم تصميم الجدول التالي ليكون إعلاميا فقط. **لا توقف تشغيل القدرات**، مثل الحماية في الوقت الحقيقي أو الحماية المقدمة من السحابة أو الفحص الدوري المحدود إذا كنت تستخدم برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي، أو إذا كنت تستخدم [الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر](edr-in-block-mode.md) ، التي تعمل في الخلفية للكشف عن ومعالجة البيانات الاصطناعية الضارة التي تم الكشف عنها بعد الاختراق.
 
- | حمايه | برنامج الحماية من الفيروسات من Microsoft Defender <br/>(*الوضع النشط*) | برنامج الحماية من الفيروسات من Microsoft Defender <br/>(*الوضع السلبي*) | برنامج الحماية من الفيروسات من Microsoft Defender <br/>(*معطل أو غير مثبت*) | [الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر](edr-in-block-mode.md) | 
- |:---|:---|:---|:---|:---| 
- | [الحماية في الوقت الحقيقي](configure-real-time-protection-microsoft-defender-antivirus.md) | نعم | راجع <sup>[الملاحظة [4](#fn4)]</sup> | لا | لا | 
- | [الحماية المقدمة من السحابة](enable-cloud-protection-microsoft-defender-antivirus.md) | نعم | لا  | لا | لا | 
- | [حماية الشبكة](network-protection.md)  | نعم | لا | لا | لا | 
- | [قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction.md)  | نعم | لا | لا  | لا | 
- | [توفر الفحص الدوري المحدود](limited-periodic-scanning-microsoft-defender-antivirus.md) | لا | لا | نعم | لا | 
- | [معلومات مسح الملفات والكشف عنها](review-scan-results-microsoft-defender-antivirus.md) | نعم | نعم<sup>[[5](#fn5)]</sup> | لا | نعم | 
- | [معالجة المخاطر](configure-remediation-microsoft-defender-antivirus.md) | نعم | راجع <sup>[الملاحظة [6](#fn6)]</sup> | لا | نعم | 
- | [تحديثات معلومات الأمان](manage-updates-baselines-microsoft-defender-antivirus.md) | نعم | نعم | لا | نعم | 
+| حمايه | برنامج الحماية من الفيروسات من Microsoft Defender <br/>(*الوضع النشط*) | برنامج الحماية من الفيروسات من Microsoft Defender <br/>(*الوضع السلبي*) | برنامج الحماية من الفيروسات من Microsoft Defender <br/>(*معطل أو غير مثبت*) | [الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر](edr-in-block-mode.md) | 
+|:---|:---|:---|:---|:---| 
+| [الحماية في الوقت الحقيقي](configure-real-time-protection-microsoft-defender-antivirus.md) | نعم | راجع <sup>[الملاحظة [4](#fn4)]</sup> | لا | لا | 
+| [الحماية المقدمة من السحابة](enable-cloud-protection-microsoft-defender-antivirus.md) | نعم | لا  | لا | لا | 
+| [حماية الشبكة](network-protection.md)  | نعم | لا | لا | لا | 
+| [قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction.md)  | نعم | لا | لا  | لا | 
+| [توفر الفحص الدوري المحدود](limited-periodic-scanning-microsoft-defender-antivirus.md) | لا | لا | نعم | لا | 
+| [معلومات مسح الملفات والكشف عنها](review-scan-results-microsoft-defender-antivirus.md) | نعم | نعم<sup>[[5](#fn5)]</sup> | لا | نعم | 
+| [معالجة المخاطر](configure-remediation-microsoft-defender-antivirus.md) | نعم | راجع <sup>[الملاحظة [6](#fn6)]</sup> | لا | نعم | 
+| [تحديثات معلومات الأمان](manage-updates-baselines-microsoft-defender-antivirus.md) | نعم | نعم <sup>[[7](#fn7)]</sup> | لا | نعم <sup>[[7](#fn7)]</sup> | 
+| [منع فقدان البيانات](../../compliance/endpoint-dlp-learn-about.md) | نعم | نعم | لا | لا |
+| [الوصول إلى المجلدات الخاضعة للتحكم](controlled-folders.md) | نعم |لا | لا | لا |
+| [تصفية محتوى ويب](web-content-filtering.md) | نعم | راجع <sup>[الملاحظة [8](#fn8)]</sup> | لا | لا |
+| [عنصر تحكم الجهاز](device-control-report.md) | نعم | نعم | لا | لا |
+| [حماية PUA](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | نعم | لا | لا | لا |
 
 (<a id="fn4">4</a>) بشكل عام، عندما تكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل، لا توفر الحماية في الوقت الحقيقي أي حظر أو فرض، على الرغم من تمكينها وفي الوضع السلبي.
 
 (<a id="fn5">5</a>) عندما يكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل، لا تتم جدولة عمليات الفحص.
 
 (<a id="fn6">6</a>) عندما يكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل، فإنه لا يعالج التهديدات. ومع ذلك، يمكن معالجة التهديدات من خلال [الكشف عن نقطة النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) في وضع الحظر](edr-in-block-mode.md). في هذه الحالة، قد ترى تنبيهات تظهر برنامج الحماية من الفيروسات من Microsoft Defender كمصدر، حتى عندما يكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل.
+
+(<a id="fn7">7</a>) يتم التحكم في إيقاع تحديث معلومات الأمان بواسطة إعدادات Windows Update فقط. تعمل مجدولات التحديث الخاصة ب Defender (يوميا/أسبوعيا في وقت محدد، تستند إلى الفاصل الزمني) فقط عندما يكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع النشط. يتم تجاهلها في الوضع السلبي.
+
+(<a id="fn8">8</a>) عندما تكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل، تعمل تصفية محتوى الويب فقط مع مستعرض Microsoft Edge. 
 
 > [!NOTE]
 > Microsoft 365 تستمر الحماية [من فقدان بيانات نقطة النهاية](/microsoft-365/compliance/endpoint-dlp-learn-about) في العمل بشكل طبيعي عندما يكون برنامج الحماية من الفيروسات من Microsoft Defender في وضع نشط أو سلبي.

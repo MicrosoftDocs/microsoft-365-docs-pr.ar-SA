@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-endpointprotect
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41f47720582f715e6c5d28276ddd87777e9669d5
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: e308b1c1d8c26a4ec3d6b3044501ffe1ce92e1c7
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783370"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862863"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>نشر Microsoft Defender لنقطة النهاية في الحلقات
 
@@ -42,7 +42,7 @@ ms.locfileid: "64783370"
 
 ## <a name="new-deployments"></a>عمليات نشر جديدة
 
-:::image type="content" source="images/deployment-rings.png" alt-text="حلقات التوزيع" lightbox="images/deployment-rings.png":::
+:::image type="content" source="images/deployment-rings.png" alt-text="حلقات التوزيع." lightbox="images/deployment-rings.png":::
 
 النهج المستند إلى الحلقة هو طريقة لتحديد مجموعة من نقاط النهاية لإلحاقها والتحقق من استيفاء معايير معينة قبل المتابعة لنشر الخدمة على مجموعة أكبر من الأجهزة. يمكنك تحديد معايير الخروج لكل حلقة والتأكد من أنها مستوفية قبل الانتقال إلى الحلقة التالية.
 
@@ -52,16 +52,11 @@ ms.locfileid: "64783370"
 
 **الجدول 1**:
 
-<br>
-
-****
-
 |حلقة التوزيع|الوصف|
 |---|---|
 |تقييم|الحلقة 1: تحديد 50 نظاما لاختبار الإصدار التجريبي|
 |التجريبيه|الحلقة 2: تحديد نقاط النهاية 50-100 التالية في بيئة الإنتاج|
 |النشر الكامل|الحلقة 3: طرح الخدمة لبقية البيئة بزيادات أكبر|
-|
 
 ### <a name="exit-criteria"></a>معايير الإنهاء
 
@@ -82,13 +77,13 @@ ms.locfileid: "64783370"
 
 يعرض الجدول التالي نقاط النهاية المدعومة والأداة المقابلة التي يمكنك استخدامها لإلحاق الأجهزة للخدمة.
 
-| نقطه النهايه     | أداة النشر                       |
-|--------------|------------------------------------------|
-| **بالنسبة لنظام التشغيل**  |  [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br> ملاحظة: إذا كنت تريد نشر أكثر من 10 أجهزة في بيئة إنتاج، فاستخدم أسلوب نهج المجموعة بدلا من ذلك أو الأدوات المعتمدة الأخرى المدرجة أدناه.<br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة الأجهزة إدارة نقاط النهاية من Microsoft/ الهاتف الجوال](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [البرامج النصية ل VDI](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
-| **ماك**    | [البرنامج النصي المحلي](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [PRO JAMF](mac-install-with-jamf.md) <br> [إدارة الجهاز الجوال](mac-install-with-other-mdm.md) |
-| **Linux Server** | [البرنامج النصي المحلي](linux-install-manually.md) <br> [دميه](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-| **دائره الرقابه الداخليه**      | [إدارة نقاط النهاية من Microsoft](ios-install.md)                                |
-| **الروبوت**  | [إدارة نقاط النهاية من Microsoft](android-intune.md)               |
+|نقطه النهايه|أداة النشر|
+|---|---|
+|**بالنسبة لنظام التشغيل**|[البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br> ملاحظة: إذا كنت تريد نشر أكثر من 10 أجهزة في بيئة إنتاج، فاستخدم أسلوب نهج المجموعة بدلا من ذلك أو الأدوات المعتمدة الأخرى المدرجة أدناه.<br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة الأجهزة إدارة نقاط النهاية من Microsoft/ الهاتف الجوال](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [البرامج النصية ل VDI](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)|
+|**ماك**|[البرنامج النصي المحلي](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [PRO JAMF](mac-install-with-jamf.md) <br> [إدارة الجهاز الجوال](mac-install-with-other-mdm.md)|
+|**Linux Server**|[البرنامج النصي المحلي](linux-install-manually.md) <br> [دميه](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+|**دائره الرقابه الداخليه**|[إدارة نقاط النهاية من Microsoft](ios-install.md)|
+|**الروبوت**|[إدارة نقاط النهاية من Microsoft](android-intune.md)|
 
 ### <a name="full-deployment"></a>النشر الكامل
 
@@ -96,9 +91,9 @@ ms.locfileid: "64783370"
 
 استخدم المواد التالية لتحديد بنية Microsoft Defender لنقطة النهاية المناسبة التي تلائم مؤسستك.
 
-|**البند**|**الوصف**|
-|:-----|:-----|
-|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="استراتيجية نشر Microsoft Defender لنقطة النهاية" lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)\| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)   | تساعدك المواد المعمارية على تخطيط التوزيع الخاص بك للبنى التالية: <ul><li> السحابة الأصلية </li><li> الإدارة المشتركة </li><li> محلي</li><li>التقييم والإلحاق المحلي</li></ul>
+|البند|الوصف|
+|---|---|
+|[:::image type="content" source="images/mde-deployment-strategy.png" alt-text="استراتيجية نشر Microsoft Defender لنقطة النهاية." lightbox="images/mde-deployment-strategy.png":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)|تساعدك المواد المعمارية على تخطيط التوزيع الخاص بك للبنى التالية: <ul><li> السحابة الأصلية </li><li> الإدارة المشتركة </li><li> محلي</li><li>التقييم والإلحاق المحلي</li></ul>|
 
 ## <a name="existing-deployments"></a>عمليات النشر الموجودة
 
@@ -120,8 +115,7 @@ ms.locfileid: "64783370"
 
 يحدد اختيار القناة نوع التحديثات التي يتم تقديمها لجهازك ومعدل تكرارها. الأجهزة في Beta هي أول الأجهزة التي تتلقى التحديثات والميزات الجديدة، متبوعة لاحقا بالمعاينة وأخيرا الحالية.
 
-:::image type="content" source="images/insider-rings.png" alt-text="حلقات Insider" lightbox="images/insider-rings.png":::
-
+:::image type="content" source="images/insider-rings.png" alt-text="الحلقات الداخلية." lightbox="images/insider-rings.png":::
 
 لمعاينة الميزات الجديدة وتقديم ملاحظات مبكرة، يوصى بتكوين بعض الأجهزة في مؤسستك لاستخدام الإصدار بيتا أو المعاينة.
 

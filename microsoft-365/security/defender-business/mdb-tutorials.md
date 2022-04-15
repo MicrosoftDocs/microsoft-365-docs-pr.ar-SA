@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 98ead4a77c275e0e4aeeab90e87e0b468a9b7bb8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 42d7acb4512928a32ac99c486a231d7891102208
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665965"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861323"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>البرامج التعليمية والمحاكاة في Microsoft Defender for Business
 
@@ -34,18 +34,16 @@ ms.locfileid: "64665965"
 
 >
 > **هل لديك دقيقة؟**
-> يرجى الاطلاع <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">على استطلاعنا القصير حول Microsoft Defender for Business</a>. يسعدنا أن نستمع إليك!
+> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
 >
 
 ## <a name="try-these-preview-scenarios"></a>جرب سيناريوهات المعاينة هذه
 
-يلخص الجدول التالي العديد من السيناريوهات التي يجب تجربتها باستخدام Defender for Business. 
-<br/><br/>
-
+يلخص الجدول التالي العديد من السيناريوهات التي يجب تجربتها باستخدام Defender for Business:
 
 | السيناريو  | الوصف  |
 |---------|---------|
-| إلحاق الأجهزة باستخدام برنامج نصي محلي <br/>(*ليس لنشر الإنتاج*)     | في Defender for Business، يمكنك إلحاق ما يصل إلى عشرة Windows 10 و11 جهازا باستخدام برنامج نصي تقوم بتنزيله وتشغيله على كل جهاز. مناسب لتقييم كيفية عمل Defender for Business في بيئتك، ينشئ البرنامج النصي ثقة مع Azure Active Directory (Azure AD) ويسجل الجهاز مع Microsoft Intune. لمعرفة المزيد، راجع [البرنامج النصي المحلي في Defender for Business](mdb-onboard-devices.md#local-script-in-defender-for-business).         |
+| إلحاق الأجهزة باستخدام برنامج نصي محلي <br/>(*ليس لنشر الإنتاج*)     | في Defender for Business، يمكنك إلحاق ما يصل إلى عشرة Windows 10 و11 جهازا باستخدام برنامج نصي تقوم بتنزيله وتشغيله على كل جهاز. مناسب لتقييم كيفية عمل Defender for Business في بيئتك، ينشئ البرنامج النصي ثقة مع Azure Active Directory (Azure AD) ويسجل الجهاز مع Microsoft Intune. لمعرفة المزيد، راجع [إلحاق الأجهزة Microsoft Defender for Business](mdb-onboard-devices.md).         |
 | إلحاق الأجهزة باستخدام Microsoft Intune     | إذا كنت تستخدم بالفعل Microsoft Intune قبل الحصول على Defender لنقطة النهاية، يمكنك الاستمرار في استخدام Microsoft Intune لإلحاق الأجهزة. جرب إلحاق أجهزة macOS وiOS وAndroid باستخدام Microsoft Intune. لمعرفة المزيد، راجع [تسجيل الجهاز في Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | تحرير نهج الأمان     | إذا كنت تدير نهج الأمان في Defender for Business، فاستخدم صفحة **تكوين الجهاز** لعرض النهج وتحريرها. لمعرفة المزيد، راجع [عرض النهج أو تحريرها في Microsoft Defender for Business](mdb-view-edit-policies.md).        |
 | تنفيذ هجوم محاكاة   | تتوفر العديد من البرامج التعليمية والمحاكاة في Defender for Business. تم تصميم هذه البرامج التعليمية والمحاكاة لتوضح لك مباشرة كيف يمكن أن تعمل ميزات الحماية من التهديدات في Defender for Business لشركتك. لتجربة برنامج تعليمي واحد أو أكثر، راجع [البرامج التعليمية الموصى بها Microsoft Defender for Business](#recommended-tutorials-for-defender-for-business).         |
@@ -55,8 +53,6 @@ ms.locfileid: "64665965"
 ## <a name="recommended-tutorials-for-defender-for-business"></a>البرامج التعليمية الموصى بها ل Defender for Business
 
 يصف الجدول التالي البرامج التعليمية الموصى بها لعملاء Defender for Business:
-<br/><br/>
-
 
 | تعليمي  | الوصف  |
 |---------|---------|
@@ -84,9 +80,6 @@ ms.locfileid: "64665965"
 ## <a name="next-steps"></a>الخطوات التالية
 
 - [إدارة الأجهزة في Microsoft Defender for Business](mdb-manage-devices.md)
-
 - [عرض الحوادث وإدارتها في Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [الاستجابة للتهديدات وتخفيفها في Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [مراجعة إجراءات المعالجة في مركز الصيانة](mdb-review-remediation-actions.md)

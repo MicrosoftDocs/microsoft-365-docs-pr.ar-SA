@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/08/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: cf4c209fa274c106c56da59fce78c97ec39839f1
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b1dbe79aadea39bfc737ae9f5457715b669cc79b
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783788"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861807"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>مقارنة Microsoft Defender for Business ب Microsoft 365 Business Premium
 
@@ -37,7 +37,7 @@ ms.locfileid: "64783788"
 
 >
 > **هل لديك دقيقة؟**
-> يرجى الاطلاع <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">على استطلاعنا القصير حول Microsoft Defender for Business</a>. يسعدنا أن نستمع إليك!
+> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
 >
 
 **استخدم هذه المقالة ل**:
@@ -77,27 +77,35 @@ ms.locfileid: "64783788"
 
 |الميزة/القدرة|[Defender for Business](mdb-overview.md)<br/>(مستقل؛ قيد المعاينة حاليا)|[Defender for Endpoint الخطة 1](../defender-endpoint/defender-endpoint-plan-1.md)|[Defender لنقطة النهاية الخطة 2](../defender-endpoint/microsoft-defender-endpoint.md)|
 |---|---|---|---|
-|[الإدارة المركزية](../defender-endpoint/manage-atp-post-migration.md) <sup>[[1](#fn1)]</sup>|نعم|نعم|نعم|
+|[الإدارة المركزية](../defender-endpoint/manage-atp-post-migration.md) |نعم <sup>[[1](#fn1)]</sup>|نعم|نعم|
 |[تكوين العميل المبسط](mdb-simplified-configuration.md)|نعم|لا|لا|
 |[التهديدات وإدارة الثغرات الأمنية](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|نعم|لا|نعم|
 |[قدرات تقليل الأجزاء المعرضة للهجوم](../defender-endpoint/overview-attack-surface-reduction.md)|نعم|نعم|نعم|
 |[حماية الجيل التالي](../defender-endpoint/next-generation-protection.md)|نعم|نعم|نعم|
 |[الكشف عن نقطة النهاية والاستجابة لها](../defender-endpoint/overview-endpoint-detection-response.md)|نعم <sup>[[2](#fn2)]</sup>|لا|نعم|
-|[التحقيق التلقائي والاستجابة](../defender-endpoint/automated-investigations.md)|نعم <sup>[[2](#fn2)]</sup>|لا|نعم|
-|[تتبع التهديدات](../defender-endpoint/advanced-hunting-overview.md) واستبقاء البيانات لمدة ستة أشهر <sup>[[3](#fn3)]</sup>|لا|لا|نعم|
-|[تحليلات المخاطر](../defender-endpoint/threat-analytics.md)|نعم <sup>[[2](#fn2)]</sup>|لا|نعم|
-|[دعم عبر الأنظمة الأساسية](../defender-endpoint/minimum-requirements.md) <br/>(Windows وmacOS وiOS وAndroid OS)|نعم <sup>[[4](#fn4)]</sup>|نعم|نعم|
+|[التحقيق التلقائي والاستجابة](../defender-endpoint/automated-investigations.md)|نعم <sup>[[3](#fn3)]</sup>|لا|نعم|
+|[تتبع التهديدات](../defender-endpoint/advanced-hunting-overview.md) واستبقاء البيانات لمدة ستة أشهر |لا <sup>[[4](#fn4)]</sup>|لا|نعم|
+|[تحليلات المخاطر](../defender-endpoint/threat-analytics.md)|نعم <sup>[[5](#fn5)]</sup>|لا|نعم|
+|[دعم عبر الأنظمة الأساسية](../defender-endpoint/minimum-requirements.md) <br/>(Windows وmacOS وiOS وAndroid OS)|نعم <sup>[[6](#fn6)]</sup>|نعم|نعم|
 |[خبراء المخاطر في Microsoft](../defender-endpoint/microsoft-threat-experts.md)|لا|لا|نعم|
 |واجهات برمجة التطبيقات الخاصة بالشركاء|نعم|نعم|نعم|
 |[تكامل Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(لعرض حوادث الأمان عبر مستأجري العملاء)|نعم|لا|لا|
 
-(<a id="fn1">1</a>) إلحاق الأجهزة وإدارتها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) أو باستخدام أداة أخرى، مثل إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
+(<a id="fn1">1</a>) إلحاق الأجهزة وإدارتها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) أو باستخدام إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
-(<a id="fn2">2</a>) تم تحسين هذه القدرات للشركات الصغيرة والمتوسطة الحجم.
+(<a id="fn2">2</a>) تتضمن قدرات الكشف عن نقاط النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) في Defender for Business الكشف المستند إلى السلوك والأنواع الأربعة التالية من إجراءات الاستجابة اليدوية: 
+- تشغيل مسح الحماية من الفيروسات
+- عزل الجهاز
+- إيقاف ملف وعزله
+- إضافة مؤشر لحظر ملف أو السماح به
 
-(<a id="fn3">3</a>) لا توجد علامة تبويب خط زمني في Defender for Business.
+(<a id="fn3">3</a>) في Defender for Business، يتم تشغيل التحقيق التلقائي والاستجابة بشكل افتراضي، على نطاق المستأجر. إذا أوقفت تشغيل التحقيق التلقائي والاستجابة، فإنه يؤثر على الحماية في الوقت الحقيقي. راجع [إعدادات المراجعة للميزات المتقدمة](mdb-configure-security-settings.md#review-settings-for-advanced-features).  
 
-(<a id="fn4">4</a>) أثناء برنامج المعاينة، يتم دعم Windows أجهزة العميل في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)).
+(<a id="fn4">4</a>) لا توجد طريقة عرض للمخطط الزمني في Defender for Business.
+
+(<a id="fn5">5</a>) في Defender for Business، يتم تحسين تحليلات التهديدات للشركات الصغيرة والمتوسطة الحجم.
+
+(<a id="fn6">6</a>) أثناء برنامج المعاينة، يتم دعم Windows أجهزة العميل للإلحاق في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). يمكنك استخدام أسلوب البرنامج النصي المحلي. راجع [الأجهزة الملحقة Microsoft Defender for Business](mdb-onboard-devices.md).
 
 ## <a name="next-steps"></a>الخطوات التالية
 

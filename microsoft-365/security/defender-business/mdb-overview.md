@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -18,19 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 0d291f4da7c44a57d12516be364fc36bbb771356
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 93db141d60353c5e3581298a67383718bdf4fe54
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664931"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862555"
 ---
 # <a name="overview-of-microsoft-defender-for-business"></a>نظرة عامة على Microsoft Defender for Business
 
-> [!IMPORTANT]
-> يتم طرح Microsoft Defender for Business [للعملاء Microsoft 365 Business Premium](../../business-premium/index.md)، بدءا من 1 مارس 2022. يتم معاينة Defender for Business باعتباره اشتراكا مستقلا، وسيتم طرحه تدريجيا للعملاء وشركاء تكنولوجيا المعلومات الذين [يقومون بالتسجيل هنا](https://aka.ms/mdb-preview) لطلبه. تتضمن المعاينة [مجموعة أولية من السيناريوهات](mdb-tutorials.md#try-these-preview-scenarios)، وسنضيف القدرات بانتظام.
-> 
-> تتعلق بعض المعلومات الواردة في هذه المقالة بالنواتج/الخدمات التي تم إصدارها مسبقا والتي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، للمعلومات المقدمة هنا. 
+> [!NOTE]
+> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 Microsoft Defender for Business هو حل أمان نقطة نهاية جديد تم تصميمه خصيصا للأعمال الصغيرة والمتوسطة الحجم (ما يصل إلى 300 موظف). باستخدام حل أمان نقطة النهاية هذا، تكون أجهزة شركتك محمية بشكل أفضل من برامج الفدية الضارة والبرامج الضارة والتصيد الاحتيالي والتهديدات الأخرى. 
 
@@ -44,7 +42,7 @@ Microsoft Defender for Business هو حل أمان نقطة نهاية جديد 
 
 >
 > **هل لديك دقيقة؟**
-> يرجى الاطلاع <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">على استطلاعنا القصير حول Microsoft Defender for Business</a>. يسعدنا أن نستمع إليك!
+> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
 >
 
 باستخدام Defender for Business، يمكنك المساعدة في حماية الأجهزة والبيانات التي تستخدمها شركتك مع:
@@ -81,5 +79,4 @@ Microsoft Defender for Business هو حل أمان نقطة نهاية جديد 
 ## <a name="next-steps"></a>الخطوات التالية
 
 - [تعرف على المزيد حول عملية التكوين المبسطة في Microsoft Defender for Business](mdb-simplified-configuration.md)
-
 - [تعرف على كيفية الحصول على Microsoft Defender for Business](get-defender-business.md)

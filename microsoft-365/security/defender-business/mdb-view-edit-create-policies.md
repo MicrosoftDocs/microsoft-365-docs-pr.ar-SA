@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,35 +17,30 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6f8ad1bd1f77bd3e53a1686674984155a7dc8525
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ba7f6846809009b8bb9df258b8ac18536a910b6d
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665085"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64862115"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>عرض النهج أو تحريرها في Microsoft Defender for Business
 
-> [!IMPORTANT]
-> يتم طرح Microsoft Defender for Business [للعملاء Microsoft 365 Business Premium](../../business-premium/index.md)، بدءا من 1 مارس 2022. يتم معاينة Defender for Business باعتباره اشتراكا مستقلا، وسيتم طرحه تدريجيا للعملاء وشركاء تكنولوجيا المعلومات الذين [يقومون بالتسجيل هنا](https://aka.ms/mdb-preview) لطلبه. تتضمن المعاينة [مجموعة أولية من السيناريوهات](mdb-tutorials.md#try-these-preview-scenarios)، وسنضيف القدرات بانتظام.
-> 
-> تتعلق بعض المعلومات الواردة في هذه المقالة بالنواتج/الخدمات التي تم إصدارها مسبقا والتي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، للمعلومات المقدمة هنا. 
+> [!NOTE]
+> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 في Microsoft Defender for Business، يتم تكوين إعدادات الأمان من خلال النهج التي يتم تطبيقها على الأجهزة. للمساعدة في تبسيط تجربة الإعداد والتكوين، يتضمن Defender for Business نهج تم تكوينها مسبقا للمساعدة في حماية أجهزة شركتك بمجرد إلحاقها. يمكنك استخدام النهج الافتراضية أو تحرير النهج أو إنشاء نهج خاصة بك.
 
 **تصف هذه المقالة كيفية**:
 
 - [الحصول على نظرة عامة على نهجك الافتراضية](#default-policies-in-defender-for-business)
-
 - [عرض النهج الموجودة](#view-your-existing-policies)
-
 - [تحرير نهج موجود](#edit-an-existing-policy)
-
 - [إنشاء نهج جديد](#create-a-new-policy)
 
 >
 > **هل لديك دقيقة؟**
-> يرجى الاطلاع <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">على استطلاعنا القصير حول Microsoft Defender for Business</a>. يسعدنا أن نستمع إليك!
+> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
 >
 
 ## <a name="default-policies-in-defender-for-business"></a>النهج الافتراضية في Defender for Business
@@ -53,7 +48,6 @@ ms.locfileid: "64665085"
 في Defender for Business، هناك نوعان رئيسيان من النهج لحماية أجهزة شركتك:
 
 - **نهج الحماية من الجيل التالي**، التي تحدد كيفية تكوين برنامج الحماية من الفيروسات من Microsoft Defender وميزات الحماية من التهديدات الأخرى
-
 - **نهج جدار الحماية**، التي تحدد نسبة استخدام الشبكة المسموح لها بالتدفق من وإلى أجهزة شركتك
 
 
@@ -138,11 +132,7 @@ ms.locfileid: "64665085"
 اختر مهمة واحدة أو أكثر من المهام التالية:
 
 - [إدارة الأجهزة](mdb-manage-devices.md)
-
 - [إنشاء نهج جديد في Microsoft Defender for Business](mdb-create-new-policy.md)
-
 - [عرض الحوادث وإدارتها في Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [الاستجابة للتهديدات وتخفيفها في Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [مراجعة إجراءات المعالجة في مركز الصيانة](mdb-review-remediation-actions.md)

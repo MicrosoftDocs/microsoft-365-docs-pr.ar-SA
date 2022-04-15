@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 03/15/2022
+ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,19 +16,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: fb506a1d2cc28329f9d6ef9975a10b0661379bb9
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 77c2042ace89a133b9be8995ef817c1fe3766a07
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664601"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861389"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>جدار الحماية في Microsoft Defender for Business
 
-> [!IMPORTANT]
-> يتم طرح Microsoft Defender for Business [للعملاء Microsoft 365 Business Premium](../../business-premium/index.md)، بدءا من 1 مارس 2022. يتم معاينة Defender for Business باعتباره اشتراكا مستقلا، وسيتم طرحه تدريجيا للعملاء وشركاء تكنولوجيا المعلومات الذين [يقومون بالتسجيل هنا](https://aka.ms/mdb-preview) لطلبه. تتضمن المعاينة [مجموعة أولية من السيناريوهات](mdb-tutorials.md#try-these-preview-scenarios)، وسنضيف القدرات بانتظام.
-> 
-> تتعلق بعض المعلومات الواردة في هذه المقالة بالنواتج/الخدمات التي تم إصدارها مسبقا والتي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، للمعلومات المقدمة هنا. 
+> [!NOTE]
+> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 يتضمن Microsoft Defender for Business قدرات جدار الحماية مع [جدار حماية Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). تساعد حماية جدار الحماية على تأمين الأجهزة باستخدام القواعد التي تحدد نسبة استخدام الشبكة المسموح لها بإدخالها أو تدفقها من الأجهزة. 
 
@@ -37,12 +35,11 @@ ms.locfileid: "64664601"
 **تصف هذه المقالة**:
 
 - [إعدادات جدار الحماية الافتراضية في Defender for Business](#default-firewall-settings-in-defender-for-business)
-
 - [إعدادات جدار الحماية التي يمكنك تكوينها في Defender for Business](#firewall-settings-you-can-configure-in-defender-for-business)
 
 >
 > **هل لديك دقيقة؟**
-> يرجى الاطلاع <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">على استطلاعنا القصير حول Microsoft Defender for Business</a>. يسعدنا أن نستمع إليك!
+> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
 >
 
 ## <a name="default-firewall-settings-in-defender-for-business"></a>إعدادات جدار الحماية الافتراضية في Defender for Business
@@ -57,7 +54,7 @@ ms.locfileid: "64664601"
 
 ## <a name="firewall-settings-you-can-configure-in-defender-for-business"></a>إعدادات جدار الحماية التي يمكنك تكوينها في Defender for Business
 
-تتضمن Microsoft Defender for Business حماية جدار الحماية من خلال جدار حماية Windows Defender. يسرد الجدول التالي الإعدادات التي يمكن تكوينها لحماية جدار الحماية في Microsoft Defender for Business. <br/><br/>
+تتضمن Microsoft Defender for Business حماية جدار الحماية من خلال جدار حماية Windows Defender. يسرد الجدول التالي الإعدادات التي يمكن تكوينها لحماية جدار الحماية في Microsoft Defender for Business.
 
 | اعداد | الوصف |
 |--|--|
@@ -69,11 +66,7 @@ ms.locfileid: "64664601"
 ## <a name="next-steps"></a>الخطوات التالية
 
 - [إدارة إعدادات جدار الحماية في Microsoft Defender for Business](mdb-custom-rules-firewall.md)
-
 - [تعرف على المزيد حول جدار حماية Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
-
 - [عرض الحوادث وإدارتها في Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
 - [الاستجابة للتهديدات وتخفيفها في Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
 - [مراجعة إجراءات المعالجة في مركز الصيانة](mdb-review-remediation-actions.md)

@@ -1,5 +1,5 @@
 ---
-title: الحصول على تعليمات ودعم ل Microsoft Defender for Business
+title: الحصول على التعليمات والدعم Microsoft Defender for Business
 f1.keywords: NOCSH
 ms.author: deniseb
 author: denisebmsft
@@ -16,33 +16,30 @@ search.appverid: MET150
 ms.reviewer: inbadian, shlomiakirav
 description: تعرف على كيفية الحصول على المساعدة أو الاتصال بالدعم في Microsoft Defender for Business
 ms.date: 02/24/2022
-ms.openlocfilehash: 28168b8d25146bfca6f029c39bc648b5ad73bb3d
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 5ebdca65d5a23474480ecf20c7189568cf4c3949
+ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63575174"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64861399"
 ---
-# <a name="get-help-and-support-for-microsoft-defender-for-business"></a>الحصول على تعليمات ودعم ل Microsoft Defender for Business
+# <a name="get-help-and-support-for-microsoft-defender-for-business"></a>الحصول على التعليمات والدعم Microsoft Defender for Business
 
-> [!IMPORTANT]
-> يتم طرح Microsoft Defender for Business Microsoft 365 Business Premium العملاء[](../../business-premium/index.md)، بدءا من 1 مارس 2022. يتم عرض Defender for Business لاشتراك مستقل في المعاينة، وسينتهى طرحه تدريجيا للعملاء وشركاء المعلومات الذين سجلوا هنا [](https://aka.ms/mdb-preview) لطلبه. تتضمن [المعاينة مجموعة أولية من السيناريوهات](mdb-tutorials.md#try-these-preview-scenarios)، وسنضيف القدرات بشكل منتظم.
-> 
-> تتعلق بعض المعلومات الواردة في هذه المقالة بالمنتجات/الخدمات التي تم إصدارها مسبقا التي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، للمعلومات المتوفرة هنا. 
+> [!NOTE]
+> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
-## <a name="get-help-and-support"></a>الحصول على المساعدة والدعم
+## <a name="get-help-and-support"></a>الحصول على التعليمات والدعم
 
-إذا كنت بحاجة إلى مساعدة في استخدام Microsoft Defender for Business، فحدد أيقونة التعليمات (؟) في الزاوية العلوية اليسرى من الشاشة. اكتب سؤالك أو المشكلة. سيتم سرد العديد من الخيارات، مثل الإجابات السريعة أو مقالات المساعدة.
+إذا كنت بحاجة إلى مساعدة في Microsoft Defender for Business، فحدد أيقونة التعليمات (؟) في الزاوية العلوية اليسرى من الشاشة. اكتب سؤالك أو مشكلتك. سيتم سرد العديد من الخيارات، مثل الإجابات السريعة أو مقالات التعليمات.
 
-إذا لم تتمكن من رؤية الإجابة على سؤالك، يمكنك فتح تذكرة دعم.
+إذا لم تتمكن من رؤية الإجابة على سؤالك، فيمكنك فتح تذكرة دعم.
 
 >
 > **هل لديك دقيقة؟**
-> الرجاء إجراء <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاع قصير حول Microsoft Defender for Business</a>. إننا نحب أن نستمع إلى هذه التكاتف!
+> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
 >
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [Microsoft Defender for Business - الأسئلة والأجوبة التي يتم طرحها بشكل متكرر](mdb-faq.yml)
-
-- [استكشاف الأخطاء وإصلاحها في Microsoft Defender for Business](mdb-troubleshooting.yml) 
+- [Microsoft Defender for Business - الأسئلة والأجوبة المتداولة](mdb-faq.yml)
+- [استكشاف الأخطاء وإصلاحها Microsoft Defender for Business](mdb-troubleshooting.yml) 
