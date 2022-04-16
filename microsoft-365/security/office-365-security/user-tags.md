@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين التعرف على كيفية تحديد مجموعات معينة من المستخدمين الذين لديهم علامات مستخدم في Microsoft Defender لـ Office 365 الخطة 2. تتوفر تصفية العلامات عبر التنبيهات والتقارير والتحقيقات في Microsoft Defender لـ Office 365 لتحديد المستخدمين المعلمين بسرعة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9da17b2dfb20746bb48b1ba737968873d4151595
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 1f045e5dcb590c36fd0f3768c472057b07b12b21
+ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731603"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "64891809"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>علامات المستخدم في Microsoft Defender لـ Office 365
 
@@ -41,12 +41,13 @@ ms.locfileid: "64731603"
 - [التنبيهات](alerts.md)
 - [نهج التنبيه المخصصة](../../compliance/alert-policies.md#viewing-alerts)
 - [مستكشف التهديدات والكشف في الوقت الحقيقي](threat-explorer.md)
+- [تقرير المستخدم الذي تم اختراقه](view-email-security-reports.md#compromised-users-report)
 - [صفحة كيان البريد الإلكتروني](mdo-email-entity-page.md#other-innovations)
 - [تقرير حالة الحماية من التهديدات](view-email-security-reports.md#threat-protection-status-report)
 - [محاكاة الهجوم](attack-simulation-training.md#target-users)
 - [طرق عرض الحملة](campaigns.md)
 - [عمليات إرسال المسؤول والمستخدم](admin-submission.md)
-- [الحجر الصحي](quarantine.md)
+- [العزل](quarantine.md)
 - بالنسبة إلى الحسابات ذات الأولوية، يمكنك استخدام [مشاكل البريد الإلكتروني لتقرير الحسابات ذات الأولوية](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) في مركز إدارة Exchange (EAC).
 
 تشرح هذه المقالة كيفية تكوين علامات المستخدم في مدخل Microsoft 365 Defender. لا توجد أوامر cmdlets في مدخل Microsoft 365 Defender لإدارة علامات المستخدم.
@@ -146,4 +147,4 @@ ms.locfileid: "64731603"
 
 ## <a name="more-information"></a>معلومات إضافية
 
-- [تكوين حسابات الأولوية ومراجعتها في Microsoft Defender لـ Office 365](configure-review-priority-account.md)
+[تكوين حسابات الأولوية ومراجعتها في Microsoft Defender لـ Office 365](configure-review-priority-account.md)

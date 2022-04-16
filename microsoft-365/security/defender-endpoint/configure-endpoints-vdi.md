@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 02/14/2022
+ms.date: 04/15/2022
 ms.technology: mde
-ms.openlocfilehash: fe86b09588f08a05183de146092b50b5cb530d0e
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 78d22772ccc9713b968347de5dee4c3a9699fe26
+ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825003"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "64891855"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>إلحاق أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة في Microsoft 365 Defender
 
@@ -146,7 +146,7 @@ ms.locfileid: "64825003"
 
 مع القدرة على نشر التحديثات بسهولة إلى الأجهزة الظاهرية التي تعمل في VDIs، قمنا بتقصير هذا الدليل للتركيز على كيفية الحصول على التحديثات على أجهزتك بسرعة وسهولة. لم تعد بحاجة إلى إنشاء الصور الذهبية وإغلاقها على أساس دوري، حيث يتم توسيع التحديثات إلى وحدات البت المكونة الخاصة بها على الخادم المضيف ثم تنزيلها مباشرة إلى الجهاز الظاهري عند تشغيله.
 
-لمزيد من المعلومات، اتبع الإرشادات الواردة في [دليل النشر برنامج الحماية من الفيروسات من Microsoft Defender في بيئة البنية الأساسية لسطح المكتب الظاهري (VDI](/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)).
+لمزيد من المعلومات، اتبع الإرشادات الواردة في [دليل النشر برنامج الحماية من الفيروسات من Microsoft Defender في بيئة البنية الأساسية لسطح المكتب الظاهري (VDI](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)).
 
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
