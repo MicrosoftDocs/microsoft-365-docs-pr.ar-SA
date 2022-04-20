@@ -1,5 +1,5 @@
 ---
-title: إدارة التحريات القانونية في Microsoft 365
+title: إدارة التحقيقات القانونية في Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,62 +16,62 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: استخدم حالات eDiscovery في مركز التوافق في Microsoft 365 لإدارة التحقيق القانوني في مؤسستك.
-ms.openlocfilehash: fc4e89645ef1912c33ab89ec190c87dc9c8a8965
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: استخدم حالات eDiscovery في مدخل توافق Microsoft Purview لإدارة التحقيق القانوني لمؤسستك.
+ms.openlocfilehash: d218c7d624da837e685929d95e515687f54897ef
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63566319"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64931972"
 ---
-# <a name="manage-legal-investigations-in-microsoft-365"></a>إدارة التحريات القانونية في Microsoft 365
+# <a name="manage-legal-investigations-in-microsoft-365"></a>إدارة التحقيقات القانونية في Microsoft 365
 
-لدى المؤسسات أسباب كثيرة للاستجابة إلى حالة قانونية تتعلق بموظفين تنفيذيين معينين أو موظفين آخرين في مؤسستك. قد يتضمن ذلك البحث بسرعة والاحتفاظ بمعلومات إضافية خاصة بالتحقيق في البريد الإلكتروني والمستندات ومحادثات المراسلة الفورية ومواقع المحتوى الأخرى التي يستخدمها الأشخاص في مهام العمل اليومية. يمكنك تنفيذ هذه الأنشطة والعديد من الأنشطة المشابهة الأخرى باستخدام أدوات حالة eDiscovery في مركز الأمان والتوافق.
+لدى المؤسسات العديد من الأسباب للاستجابة لحالة قانونية تتعلق ببعض المديرين التنفيذيين أو الموظفين الآخرين في مؤسستك. قد يتضمن ذلك العثور على مزيد من المعلومات الخاصة بالتحقيق والاحتفاظ بها بسرعة في البريد الإلكتروني والمستندات ومحادثات المراسلة الفورية ومواقع المحتويات الأخرى التي يستخدمها الأشخاص في مهام العمل اليومية الخاصة بهم. يمكنك تنفيذ هذه الأنشطة والعديد من الأنشطة المماثلة الأخرى باستخدام أدوات حالة eDiscovery في مركز الأمان والتوافق.
   
-**هل تريد معرفة كيفية إدارة Microsoft لتحريات eDiscovery؟** إليك [ورقة تقنية بيضاء](https://go.microsoft.com/fwlink/?linkid=852161) يمكنك تنزيلها تشرح كيفية استخدام أدوات البحث والتحري نفسها لإدارة سير عمل eDiscovery الداخلي.
+**هل تريد معرفة كيفية إدارة Microsoft للتحقيقات في eDiscovery؟** فيما يلي [مستند تقني تقني](https://go.microsoft.com/fwlink/?linkid=852161) يمكنك تنزيله يشرح كيفية استخدام نفس أدوات البحث والتحقيق لإدارة سير عمل eDiscovery الداخلي.
 
-## <a name="manage-legal-investigations-with-ediscovery-cases"></a>إدارة التحقيق القانوني مع حالات eDiscovery
+## <a name="manage-legal-investigations-with-ediscovery-cases"></a>إدارة التحقيقات القانونية مع حالات eDiscovery
 
-تسمح لك حالات eDiscovery بالتحكم في الأشخاص الذين يمكنهم إنشاء حالات eDiscovery والوصول إليها وإدارتها في مؤسستك. استخدم الحالات لإضافة الأعضاء والتحكم في أنواع الإجراءات التي يمكنهم تنفيذها، وضع وضع الانتظار على مواقع المحتويات ذات الصلة بقضيتك القانونية، واستخدام أداة البحث في المحتوى للبحث في المواقع المحتفظ بها عن المحتوى الذي قد يكون مستجيبا لقضيتك. بعد ذلك، يمكنك أيضا تصدير هذه النتائج وتنزيلها لمزيد من التحقيق من قبل المراجعين الخارجيين.
+تتيح لك حالات eDiscovery التحكم في الأشخاص الذين يمكنهم إنشاء حالات eDiscovery والوصول إليها وإدارتها في مؤسستك. استخدم الحالات لإضافة أعضاء والتحكم في أنواع الإجراءات التي يمكنهم تنفيذها، ووضع قائمة احتجاز على مواقع المحتوى ذات الصلة بقضية قانونية، واستخدام أداة البحث في المحتوى للبحث في المواقع المحتفظ بها عن المحتوى الذي قد يستجيب لحالتك. ثم يمكنك أيضا تصدير هذه النتائج وتنزيلها لمزيد من التحقيق من قبل المراجعين الخارجيين.
   
-- [يمكنك إدارة سير عمل eDiscovery بإنشاء](./get-started-core-ediscovery.md) حالات eDiscovery واستخدامها لكل تحقيق قانوني يجب على مؤسستك القيام به.
+- [إدارة سير عمل eDiscovery الخاص بك](./get-started-core-ediscovery.md) عن طريق إنشاء حالات eDiscovery واستخدامها لكل تحقيق قانوني يجب على مؤسستك القيام به.
 
-- [قم بتعيين أذونات eDiscovery](assign-ediscovery-permissions.md) للتحكم في الأشخاص الذين يمكنهم إنشاء حالات eDiscovery وإدارتها في مؤسستك.
+- [تعيين أذونات eDiscovery](assign-ediscovery-permissions.md) للتحكم في الأشخاص الذين يمكنهم إنشاء حالات eDiscovery وإدارتها في مؤسستك.
 
-- [قم بإعداد حدود التوافق](set-up-compliance-boundaries.md) للتحكم في مواقع محتوى المستخدم التي يمكن لمديري eDiscovery البحث فيها.
+- [إعداد حدود التوافق](set-up-compliance-boundaries.md) للتحكم في مواقع محتوى المستخدم التي يمكن لمديري eDiscovery البحث فيها.
 
-- [ابحث عن المحتوى](search-for-content.md) في مؤسستك.
+- [ابحث عن محتوى](search-for-content.md) في مؤسستك.
 
 ### <a name="use-scripts-for-advanced-scenarios"></a>استخدام البرامج النصية للسيناريوهات المتقدمة
 
-مثل القسم السابق الذي أدرج البرامج النصية لسيناريوهات البحث في المحتوى، قمنا أيضا بإنشاء بعض برامج الأمان & مركز التوافق PowerShell لمساعدتك على إدارة حالات eDiscovery.
+مثل القسم السابق الذي أدرج البرامج النصية لسيناريوهات البحث في المحتوى، أنشأنا أيضا بعض البرامج النصية ل Security & Compliance Center PowerShell لمساعدتك على إدارة حالات eDiscovery.
   
-- [أنشئ تقرير الاستمرار في eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md) يحتوي على معلومات حول كل حالات الاحتفاظ المقترنة ب eDiscovery في مؤسستك.
+- [إنشاء تقرير احتجاز eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md) يحتوي على معلومات حول كافة عمليات الاحتجاز المقترنة بحالات eDiscovery في مؤسستك.
 
-- [أضف علب البريد OneDrive مواقع](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) لقائمة المستخدمين إلى قائمة eDiscovery.
+- [إضافة علب بريد ومواقع OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) لقائمة مستخدمين إلى قائمة احتجاز eDiscovery.
   
-## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>إدارة التحريات القانونية باستخدام Advanced eDiscovery في Microsoft 365
+## <a name="manage-legal-investigations-with-the-ediscovery-premium-solution-in-microsoft-365"></a>إدارة التحقيقات القانونية باستخدام حل eDiscovery (Premium) في Microsoft 365
 
-يعتمد Advanced eDiscovery في Microsoft 365 على قدرات eDiscovery والتحليلات الموجودة في Office 365. يوفر هذا الحل الجديد *، Advanced eDiscovery*، سير عمل شامل للمحافظة على المحتوى الذي يستجيب إلى التحريات الداخلية والخارجية في مؤسستك وجمعه ومراجعته وتحليله وتصديره. كما يتيح أيضا للفرق القانونية إدارة سير عمل إعلام الاحتجاز القانوني بالكامل للتواصل مع اطباء الوصاية المشاركين في قضية ما.
+يعتمد حل Microsoft Purview eDiscovery (Premium) في Microsoft 365 على قدرات eDiscovery والتحليلات الموجودة في Office 365. يوفر هذا الحل الجديد، *المسمى eDiscovery (Premium)*، سير عمل شامل للاحتفاظ بالمحتوى الذي يستجيب للتحقيقات الداخلية والخارجية لمؤسستك وجمعه ومراجعته وتحليله وتصديره. كما يتيح للفرق القانونية إدارة سير عمل إعلام الاحتجاز القانوني بأكمله للتواصل مع أمناء الحفظ المعنيين بقضية ما.
 
-Advanced eDiscovery اشتراك E5 Microsoft 365 أو Office 365 المؤسسة. لمزيد من المعلومات حول الترخيص، راجع [إعداد](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses) Advanced eDiscovery.
+يتطلب eDiscovery (Premium) اشتراك E5 Microsoft 365 أو مؤسسة Office 365. لمزيد من المعلومات حول الترخيص، راجع [إعداد eDiscovery (Premium).](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)
 
-فيما يلي نظرة عامة سريعة حول سير العمل المضمن في Advanced eDiscovery. لمزيد من المعلومات، راجع [إدارة سير Advanced eDiscovery العمل](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
+فيما يلي نظرة عامة سريعة على سير العمل المضمن في eDiscovery (Premium). لمزيد من المعلومات، راجع [إدارة سير عمل eDiscovery (Premium](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)).
 
-- [أنشئ حالة للبدء](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) .
+- [إنشاء حالة](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) للبدء.
 
-- [يمكنك إدارة](managing-custodians.md) التغذية عن طريق إضافتهم إلى حالة ووضع قيد الاحتجاز القانوني على المحتوى في علبة البريد الخاصة بهم، OneDrive حسابهم، Microsoft Teams أعضاء فيها.
+- [يمكنك إدارة أمناء الحفظ](managing-custodians.md) عن طريق إضافتهم إلى قضية ووضع محتوى في علبة بريدهم، وحساب OneDrive، Microsoft Teams أعضاء فيها.
 
-- [يمكنك إدارة](managing-custodian-communications.md) الاتصالات مع اطباء التكاتف من خلال أتمتة عملية إعلام الاحتجاز القانوني.
+- [إدارة الاتصالات](managing-custodian-communications.md) مع أمناء الحفظ من خلال أتمتة عملية إعلام الاحتجاز القانوني.
 
-- [فهرسة البيانات الفهرسة](processing-data-for-case.md) وإصلاح أخطاء الفهرسة حتى تتمكن من تجميع البيانات بشكل فعال من أجل إجراء التحريات.
+- [فهرسة بيانات الوصي](processing-data-for-case.md) وإصلاح أخطاء الفهرسة حتى تتمكن من جمع البيانات بشكل فعال للتحقيقات الخاصة بك.
 
-- [تجميع بيانات](collecting-data-for-ediscovery.md) حالة [وإضافتها إلى مجموعة مراجعة لمزيد](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) من التحقيق.
+- [جمع البيانات](collecting-data-for-ediscovery.md) لحالة [وإضافتها إلى مجموعة مراجعة](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) لمزيد من التحقيق.
 
-- [عرض](view-documents-in-review-set.md) [المستندات وبيانات](review-set-search.md) الاستعلامات [والعناصر](tagging-documents.md) ذات العلامات في مجموعة مراجعة.
+- [عرض](view-documents-in-review-set.md) المستندات وبيانات [الاستعلام](review-set-search.md) وعناصر [العلامات](tagging-documents.md) في مجموعة مراجعة.
 
 - [تحليل بيانات الحالة](analyzing-data-in-review-set.md) باستخدام أدوات التحليلات المتقدمة.
 
-- [تصدير بيانات حالة الدعوى](exporting-data-ediscover20.md) لمراجعتها من قبل مستشار خارجي.
+- [تصدير بيانات الحالة](exporting-data-ediscover20.md) للمراجعة من قبل مستشار خارجي.
 
-- [إدارة المهام الطويلة في](managing-jobs-ediscovery20.md) Advanced eDiscovery.
+- [إدارة المهام طويلة الأمد](managing-jobs-ediscovery20.md) في eDiscovery (Premium).

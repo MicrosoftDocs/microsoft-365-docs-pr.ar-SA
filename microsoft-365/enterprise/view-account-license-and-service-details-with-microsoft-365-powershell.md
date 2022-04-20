@@ -19,12 +19,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: يشرح كيفية استخدام PowerShell لتحديد خدمات Microsoft 365 التي تم تعيينها للمستخدمين.
-ms.openlocfilehash: 2789026e2e22bbae3e84e91ada7ad21af2252f03
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 7e5724acbff571825f1496db5d59e04e11ba3a67
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823949"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915984"
 ---
 # <a name="view-microsoft-365-account-license-and-service-details-with-powershell"></a>عرض ترخيص حساب Microsoft 365 وتفاصيل الخدمة باستخدام PowerShell
 
@@ -41,7 +41,7 @@ ms.locfileid: "64823949"
 تتطلب قراءة خصائص المستخدم بما في ذلك تفاصيل الترخيص نطاق أذونات User.Read.All أو أحد الأذونات الأخرى المدرجة في [الصفحة المرجعية "Get a user" Graph API](/graph/api/user-get).
 
 ```powershell
-Connect-Graph -Scopes User.Read.All
+Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 ```
 
 بعد ذلك، قم بإدراج خطط الترخيص للمستأجر باستخدام هذا الأمر.

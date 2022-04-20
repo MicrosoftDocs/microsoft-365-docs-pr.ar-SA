@@ -11,19 +11,19 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: تعرف على كيفية إعداد موصل واستخدامه في مركز التوافق في Microsoft 365 لاستيراد البيانات وأرشفتها من Skype for Business إلى Microsoft 365.
-ms.openlocfilehash: fc31371717425c06c08cf43a25a2422c1a235060
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: تعرف على كيفية إعداد موصل واستخدامه في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من Skype for Business إلى Microsoft 365.
+ms.openlocfilehash: 406c8db8a28303657b6c475bf826ee501c9e7620
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759070"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937180"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>إعداد موصل وأرشفة بيانات Skype for Business
 
-استخدم موصل Veritas في مركز التوافق في Microsoft 365 لاستيراد البيانات وأرشفتها من النظام الأساسي Skype for Business إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر Veritas [موصلا Skype for Business](https://www.veritas.com/en/au/insights/merge1/skype-for-business) تم تكوينه لالتقاط العناصر من مصدر بيانات الجهات الخارجية (بشكل منتظم) واستيراد هذه العناصر إلى Microsoft 365. يحول الموصل المحتوى مثل الرسائل بين المستخدمين والدردشات الثابتة ورسائل المؤتمر من Skype for Business إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
+استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من النظام الأساسي Skype for Business إلى علب بريد المستخدمين في مؤسسة Microsoft 365. يوفر Veritas [موصلا Skype for Business](https://www.veritas.com/en/au/insights/merge1/skype-for-business) تم تكوينه لالتقاط العناصر من مصدر بيانات الجهات الخارجية (بشكل منتظم) واستيراد هذه العناصر إلى Microsoft 365. يحول الموصل المحتوى مثل الرسائل بين المستخدمين والدردشات الثابتة ورسائل المؤتمر من Skype for Business إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
 
-بعد تخزين البيانات Skype for Business في علب بريد المستخدمين، يمكنك تطبيق ميزات التوافق Microsoft 365 مثل احتجاز التقاضي وeDiscovery ونهج الاستبقاء وتسميات الاستبقاء. يمكن أن يساعد استخدام موصل Skype for Business لاستيراد البيانات وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
+بعد تخزين البيانات Skype for Business في علب بريد المستخدمين، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي وeDiscovery ونهج الاستبقاء وتسميات الاستبقاء. يمكن أن يساعد استخدام موصل Skype for Business لاستيراد البيانات وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
 
 ## <a name="overview-of-archiving-skype-for-business-data"></a>نظرة عامة على أرشفة بيانات Skype for Business
 
@@ -35,7 +35,7 @@ ms.locfileid: "64759070"
 
 2. مرة واحدة كل 24 ساعة، يتم نسخ عناصر Skype for Business إلى موقع Veritas Merge1. يقوم الموصل أيضا بتحويل عناصر Skype for Business إلى تنسيق رسالة بريد إلكتروني.
 
-3. يتصل موصل Skype for Business الذي تقوم بإنشائه في مركز التوافق في Microsoft 365 بموقع Veritas Merge1 كل يوم، وينقل محتوى Skype for Business إلى موقع تخزين Azure آمن في سحابة Microsoft.
+3. يتصل موصل Skype for Business الذي تقوم بإنشائه في مدخل التوافق بموقع Veritas Merge1 كل يوم، وينقل محتوى Skype for Business إلى موقع تخزين Azure آمن في سحابة Microsoft.
 
 4. يستورد الموصل العناصر المحولة إلى علب بريد مستخدمين محددين باستخدام قيمة خاصية *البريد الإلكتروني* لتعيين المستخدم التلقائي كما هو موضح في [الخطوة 3](#step-3-map-users-and-complete-the-connector-setup). يتم إنشاء مجلد فرعي في مجلد علبة الوارد المسمى **Skype for Business** في علب بريد المستخدمين، ويتم استيراد العناصر إلى هذا المجلد. يقوم الموصل بذلك باستخدام قيمة خاصية *"البريد الإلكتروني* ". يحتوي كل عنصر Skype for Business على هذه الخاصية، التي يتم ملؤها بعنوان البريد الإلكتروني لكل مشارك في العنصر.
 
@@ -43,13 +43,13 @@ ms.locfileid: "64759070"
 
 - إنشاء حساب Merge1 لموصلات Microsoft. للقيام بذلك، اتصل بدعم [عملاء Veritas](https://www.veritas.com/form/requestacall/ms-connectors-contact.html). تحتاج إلى تسجيل الدخول إلى هذا الحساب عند إنشاء الموصل في الخطوة 1.
 
-- يجب تعيين دور مسؤول موصل البيانات للمستخدم الذي يقوم بإنشاء موصل Skype for Business في الخطوة 1 (وإكماله في الخطوة 3). هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مركز التوافق في Microsoft 365. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور مسؤول موصل البيانات، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع المقطع "إنشاء مجموعة أدوار مخصصة" في ["الأذونات" في مركز التوافق في Microsoft 365](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- يجب تعيين دور مسؤول موصل البيانات للمستخدم الذي يقوم بإنشاء موصل Skype for Business في الخطوة 1 (وإكماله في الخطوة 3). هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل التوافق. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور مسؤول موصل البيانات، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع قسم "إنشاء مجموعة أدوار مخصصة" في [الأذونات في مدخل توافق Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- موصل بيانات Veritas هذا في المعاينة العامة في بيئات سحابة القطاع الحكومي في Microsoft 365 سحابة حكومة الولايات المتحدة. قد تتضمن تطبيقات وخدمات الجهات الخارجية تخزين بيانات العملاء الخاصة بمؤسستك وإرسالها ومعالجتها على أنظمة تابعة لجهات خارجية خارج البنية الأساسية Microsoft 365 وبالتالي لا تغطيها التزامات الامتثال وحماية البيانات Microsoft 365. لا تقدم Microsoft أي تمثيل يشير إلى أن استخدام هذا المنتج للاتصال بتطبيقات الجهات الخارجية يعني أن تطبيقات الجهات الخارجية هذه متوافقة مع FEDRAMP.
+- موصل بيانات Veritas هذا في المعاينة العامة في بيئات سحابة القطاع الحكومي في Microsoft 365 سحابة حكومة الولايات المتحدة. قد تتضمن تطبيقات وخدمات الجهات الخارجية تخزين بيانات العملاء في مؤسستك وإرسالها ومعالجتها على أنظمة تابعة لجهات خارجية خارج البنية الأساسية Microsoft 365 وبالتالي لا تغطيها التزامات Microsoft Purview وحماية البيانات. لا تقدم Microsoft أي تمثيل يشير إلى أن استخدام هذا المنتج للاتصال بتطبيقات الجهات الخارجية يعني أن تطبيقات الجهات الخارجية هذه متوافقة مع FEDRAMP.
 
 ## <a name="step-1-set-up-the-skype-for-business-connector"></a>الخطوة 1: إعداد موصل Skype for Business
 
-الخطوة الأولى هي الوصول إلى صفحة **موصلات البيانات** في مركز التوافق في Microsoft 365 وإنشاء موصل لبيانات Skype for Business.
+الخطوة الأولى هي الوصول إلى صفحة **موصلات البيانات** في مدخل التوافق وإنشاء موصل لبيانات Skype for Business.
 
 1. انتقل إلى <https://compliance.microsoft.com> **موصلات البيانات وانقر فوقها** >  **Skype for Business**.
 
@@ -65,11 +65,11 @@ ms.locfileid: "64759070"
 
 الخطوة الثانية هي تكوين موصل Skype for Business على موقع Veritas Merge1. للحصول على معلومات حول كيفية تكوين موصل Skype for Business، راجع [Merge1 دليل مستخدم موصلات الجهات الخارجية](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Skype%20for%20Business%20%20User%20Guide.pdf).
 
-بعد النقر فوق **"حفظ & إنهاء**"، يتم عرض صفحة **تعيين المستخدم** في معالج الموصل في مركز التوافق في Microsoft 365.
+بعد النقر فوق **"حفظ & إنهاء**"، يتم عرض صفحة **تعيين المستخدم** في معالج الموصل في مدخل التوافق.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>الخطوة 3: تعيين المستخدمين وإكمال إعداد الموصل
 
-لتعيين المستخدمين وإكمال إعداد الموصل في مركز التوافق في Microsoft 365، اتبع الخطوات التالية:
+لتعيين المستخدمين وإكمال إعداد الموصل في مدخل التوافق، اتبع الخطوات التالية:
 
 1. في **خريطة Skype for Business المستخدمين Microsoft 365 صفحة المستخدمين**، قم بتمكين تعيين المستخدم تلقائيا. تتضمن عناصر Skype for Business خاصية تسمى *"البريد الإلكتروني*"، والتي تحتوي على عناوين بريد إلكتروني للمستخدمين في مؤسستك. إذا كان بإمكان الموصل إقران هذا العنوان بمستخدم Microsoft 365، يتم استيراد العناصر إلى علبة بريد هذا المستخدم.
 
@@ -77,7 +77,7 @@ ms.locfileid: "64759070"
 
 ## <a name="step-4-monitor-the-skype-for-business-connector"></a>الخطوة 4: مراقبة موصل Skype for Business
 
-بعد إنشاء موصل Skype for Business، يمكنك عرض حالة الموصل في مركز التوافق في Microsoft 365.
+بعد إنشاء موصل Skype for Business، يمكنك عرض حالة الموصل في مدخل التوافق.
 
 1. انتقل إلى <https://compliance.microsoft.com/> **موصلات البيانات وانقر فوقها** في جزء التنقل الأيمن.
 

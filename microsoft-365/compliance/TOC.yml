@@ -1,24 +1,24 @@
-- name: التوافق في Microsoft 365
+- name: Microsoft Purview
   href: index.yml
-- name: الجديد في التوافق في Microsoft 365
+- name: الجديد في Microsoft Purview
   href: whats-new.md
 - name: الإصدارات التجريبية للتوافق
   items:
-    - name: حول التجربة المجانية لتوافق Microsoft 365
+    - name: حول الإصدار التجريبي المجاني لبرنامج Microsoft Purview
       href: compliance-easy-trials.md
-    - name: حول الإصدار التجريبي المجاني لتقييمات Microsoft Compliance Manager المتميزة
+    - name: حول الإصدار التجريبي المجاني من تقييمات Microsoft Purview Compliance Manager المتميزة
       href: compliance-easy-trials-compliance-manager-assessments.md
 - name: بدء الاستخدام
   items:
-    - name: المهام السريعة للبدء باستخدام التوافق
+    - name: مهام سريعة لبدء استخدام Microsoft Purview
       href: compliance-quick-tasks.md
-    - name: كتالوج حلول Microsoft 365
+    - name: كتالوج حلول Microsoft Purview
       href: microsoft-365-solution-catalog.md
-    - name: مركز التوافق في Microsoft 365
+    - name: مدخل توافق Microsoft Purview
       href: microsoft-365-compliance-center.md
-    - name: الأذونات في مركز التوافق في Microsoft 365
+    - name: الأذونات في مدخل التوافق لـ Microsoft Purview
       href: microsoft-365-compliance-center-permissions.md
-    - name: إعادة توجيه المستخدمين إلى مركز التوافق في Microsoft 365
+    - name: إعادة توجيه المستخدمين إلى مركز التوافق في Microsoft Purview
       href: microsoft-365-compliance-center-redirection.md
     - name: استخدام اشتراك Azure Active Directory المجاني
       href: use-your-free-azure-ad-subscription-in-office-365.md
@@ -216,7 +216,7 @@
       href: use-content-search-to-search-third-party-data-that-was-imported.md
 - name: إدارة مخاطر Insider
   items:
-    - name: حلول مخاطر Microsoft 365 Insider
+    - name: حلول مخاطر Microsoft Purview
       href: insider-risk-solution-overview.md
     - name: توافق الاتصالات
       items:
@@ -304,9 +304,9 @@
   items:
     - name: معرفة بياناتك، وحماية بياناتك، ومنع فقدان البيانات
       href: information-protection.md
-    - name: نشر حل MIP
+    - name: نشر حل حماية المعلومات
       href: information-protection-solution.md
-    - name: التسميات والسياسات الافتراضية حماية البيانات في Microsoft
+    - name: التسميات والسياسات الافتراضية لحماية بياناتك
       href: mip-easy-trials.md
     - name: أنواع المعلومات الحساسة
       items:
@@ -396,7 +396,7 @@
       items:
         - name: التعرّف على تسميات الحساسية
           href: sensitivity-labels.md
-        - name: لماذا اختر تسمية حماية المعلومات في Microsoft المضمنة لتطبيقات Office
+        - name: سبب اختيار التسمية المضمنة لتطبيقات Office
           href: sensitivity-labels-aip.md
         - name: بدء استخدام تسميات الحساسية
           href: get-started-with-sensitivity-labels.md
@@ -428,7 +428,7 @@
           href: office-365-service-encryption.md
         - name: مفتاح العميل
           items:
-            - name: مفتاح العميل في Microsoft 365
+            - name: تشفير الخدمة باستخدام مفتاح عميل Microsoft Purview
               href: customer-key-overview.md
             - name: إعداد مفتاح العميل Microsoft 365
               href: customer-key-set-up.md
@@ -441,27 +441,27 @@
         - name: تشفير البريد الإلكتروني
           href: email-encryption.md
           items:
-            - name: تشفير رسائل Office 365 (OME)
+            - name: تشفير الرسائل
               href: ome.md
-            - name: إعداد قدرات تشفير Office 365 الرسائل الجديدة
+            - name: إعداد تشفير الرسائل من Microsoft Purview
               href: set-up-new-message-encryption-capabilities.md
-            - name: تعريف قواعد تدفق البريد لتشفير رسائل البريد الإلكتروني في Office 365
+            - name: تحديد قواعد تدفق البريد لتشفير رسائل البريد الإلكتروني
               href: define-mail-flow-rules-to-encrypt-email.md
             - name: إضافة العلامة التجارية لمنظمتك إلى الرسائل المشفرة
               href: add-your-organization-brand-to-encrypted-messages.md
-            - name: إنشاء نهج نوع معلومات حساسة لمنظمتك باستخدام تشفير رسائل Office 365
+            - name: إنشاء نهج نوع معلومات حساسة لمنظمتك باستخدام تشفير رسائل Microsoft Purview
               href: ome-sensitive-info-types.md
-            - name: إدارة تشفير رسائل Office 365
+            - name: إدارة تشفير الرسائل
               href: manage-office-365-message-encryption.md
-            - name: تشفير الرسائل المتقدم من Office 365
+            - name: تشفير متقدم للرسائل
               href: ome-advanced-message-encryption.md
-            - name: تعيين تاريخ انتهاء صلاحية للبريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Office 365
+            - name: تعيين تاريخ انتهاء صلاحية للبريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Microsoft Purview
               href: ome-advanced-expiration.md
-            - name: إبطال البريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Office 365
+            - name: إبطال البريد الإلكتروني المشفر بواسطة تشفير رسائل Microsoft Purview
               href: revoke-ome-encrypted-mail.md
-            - name: مقارنة إصدارات OME
+            - name: مقارنة إصدارات تشفير الرسائل
               href: ome-version-comparison.md
-            - name: الأسئلة الشائعة حول تشفير الرسائل من Office 365
+            - name: الأسئلة المتداولة حول تشفير الرسائل
               href: ome-faq.yml
             - name: كيف تؤمّن Exchange Online أسرار بريدك الإلكتروني
               href: exchange-online-secures-email-secrets.md
@@ -501,7 +501,7 @@
               href: endpoint-dlp-learn-about.md
             - name: تعرّف على نهج منع فقدان البيانات الافتراضي في Microsoft Teams (معاينة)
               href: dlp-teams-default-policy.md
-            - name: تعرف على الماسح الضوئي المحلي لتفادي فقدان البيانات في Microsoft 365
+            - name: تعرّف على الماسح الضوئي المحلي لمنع فقدان البيانات
               href: dlp-on-premises-scanner-learn.md
             - name: التعرّف على ملحق التوافق من Microsoft
               href: dlp-chrome-learn-about.md
@@ -525,7 +525,7 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: إنشاء نهج DLP واختباره وضبطه
               href: create-test-tune-dlp-policy.md
-            - name: بدء استخدام الماسح الضوئي المحلي لمنع فقدان البيانات في Microsoft 365
+            - name: ابدأ باستخدام الماسح الضوئي المحلي لمنع فقدان البيانات
               href: dlp-on-premises-scanner-get-started.md
             - name: للحصول على متطلبات إضافية لنشر Endpoint DLP، راجع البدء في تفادي فقدان البيانات على الأجهزة.
               href: endpoint-dlp-getting-started.md
@@ -543,7 +543,7 @@
               href: dlp-microsoft-teams.md
             - name: استخدام تفادي فقدان البيانات في نقطة النهاية
               href: endpoint-dlp-using.md
-            - name: استخدم الماسح الضوئي المحلي لمنع فقدان البيانات في Microsoft 365
+            - name: استخدم الماسح الضوئي المحلي لمنع فقدان البيانات
               href: dlp-on-premises-scanner-use.md
             - name: استخدام الإعلامات وتلميحات النهج في نهج DLP
               href: use-notifications-and-policy-tips.md
@@ -569,10 +569,10 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: تلميحات حول نهج تفادي فقد البيانات (DLP)
               href: dlp-policy-tips-reference.md
-- name: إدارة المعلومات والسجلات
+- name: إدارة دورة حياة البيانات والسجلات
   items:
     - name: تحكم بياناتك
-      href: manage-information-governance.md
+      href: manage-data-governance.md
     - name: فهم الاحتفاظ بالبيانات وحذفها
       items:
         - name: التعرّف على نهج الاستبقاء البيانات
@@ -593,16 +593,16 @@
           href: retention-settings.md
         - name: حدود الاستبقاء والحذف
           href: retention-limits.md
-    - name: إدارة المعلومات
+    - name: إدارة دورة حياة البيانات
       items:
-        - name: التعرّف على إدارة المعلومات
-          href: information-governance.md
-        - name: بدء استخدام إدارة المعلومات
-          href: get-started-with-information-governance.md
+        - name: تعرّف على إدارة دورة حياة البيانات
+          href: data-lifecycle-management.md
+        - name: بدء استخدام إدارة دورة حياة البيانات
+          href: get-started-with-data-lifecycle-management.md
         - name: إنشاء نهج استبقاء
           href: create-retention-policies.md
         - name: استخدام تسميات الاستبقاء للاستثناءات
-          href: create-retention-labels-information-governance.md
+          href: create-retention-labels-data-lifecycle-management.md
         - name: أرشفة بيانات علبة البريد
           items:
             - name: التعرّف على علب بريد الأرشيف
@@ -673,7 +673,7 @@
           href: disposition.md
 - name: إدارة eDiscovery
   items:
-    - name: Microsoft 365 eDiscovery
+    - name: حلول Microsoft Purview eDiscovery
       href: ediscovery.md
     - name: البحث عن المحتوى
       items:
@@ -742,9 +742,9 @@
               href: create-report-on-and-delete-multiple-content-searches.md
             - name: نسخ عملية بحث
               href: clone-a-content-search.md
-    - name: eDiscovery الأساسي
+    - name: eDiscovery (قياسي)
       items:
-        - name: بدء استخدام eDiscovery الأساسي
+        - name: بدء استخدام eDiscovery (قياسي)
           href: get-started-core-ediscovery.md
         - name: إنشاء مواعيد لـ eDiscovery
           href: create-ediscovery-holds.md
@@ -754,7 +754,7 @@
           href: export-content-in-core-ediscovery.md
         - name: إغلاق حالة وإعادة فتحها وحذفها
           href: close-reopen-delete-core-ediscovery-cases.md
-        - name: مرجع eDiscovery الأساسي
+        - name: مرجع eDiscovery (قياسي)
           items:
             - name: حدود البحث في eDiscovery
               href: limits-for-content-search.md
@@ -800,19 +800,19 @@
               href: configure-edge-to-export-search-results.md
             - name: البحث عن أنشطة eDiscovery في سجل التدقيق
               href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: eDiscovery المتقدم
+    - name: eDiscovery (Premium)
       items:
         - name: نظرة عامة
           href: overview-ediscovery-20.md
-        - name: إعداد eDiscovery المتقدم
+        - name: إعداد eDiscovery (Premium)
           href: get-started-with-advanced-ediscovery.md
-        - name: إنشاء Advanced eDiscovery حالات
+        - name: إنشاء حالات eDiscovery (Premium)
           items:
             - name: إنشاء حالة وإدارتها
               href: create-and-manage-advanced-ediscoveryv2-case.md
             - name: استخدام تنسيق حالة جديدة
               href: advanced-ediscovery-new-case-format.md
-        - name: سير عمل eDiscovery المتقدم لمحتوى Teams
+        - name: سير عمل eDiscovery (Premium) لمحتوى Teams
           href: teams-workflow-in-advanced-ediscovery.md
         - name: إدارة المتحكمين ومصادر البيانات غير المهينة
           href: managing-custodians.md
@@ -933,9 +933,9 @@
               href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
             - name: تكوين إعدادات البحث والتحليلات
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
-        - name: مرجع eDiscovery المتقدم
+        - name: مرجع eDiscovery (Premium)
           items:
-            - name: حدود eDiscovery المتقدم
+            - name: حدود eDiscovery (Premium)
               href: limits-ediscovery20.md
             - name: أنواع الملفات المعتمدة
               href: supported-filetypes-ediscovery20.md

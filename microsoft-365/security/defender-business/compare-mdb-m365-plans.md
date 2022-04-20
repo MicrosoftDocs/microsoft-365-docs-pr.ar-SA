@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: b1dbe79aadea39bfc737ae9f5457715b669cc79b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: e32018f52f3a45624fcf07ae03e44c662a594297
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861807"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64916304"
 ---
 # <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>مقارنة Microsoft Defender for Business ب Microsoft 365 Business Premium
 
@@ -64,7 +64,7 @@ ms.locfileid: "64861807"
 |[حماية الجيل التالي](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (الحماية من الفيروسات والحماية من البرامج الضارة)|نعم<br/>- يتم تضمين برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10 والإي وقت لاحق|نعم <br/>- يتم تضمين برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10 والإي وقت لاحق<br/>- نهج الحماية من الجيل التالي للأجهزة التي تم إلحاقها|
 |[قواعد تقليل الأجزاء المعرضة للهجوم](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(قواعد ASR في Windows 10 أو الأحدث وحماية جدار الحماية)|نعم|نعم|
 |[الكشف عن نقطة النهاية والاستجابة لها](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(إجراءات الكشف والاستجابة اليدوية المستندة إلى السلوك)|نعم|نعم|
-|[التحقيق التلقائي والاستجابة](../defender-endpoint/automated-investigations.md)|نعم|نعم|
+|[التحقيق التلقائي والاستجابة (AIR)](../defender-endpoint/automated-investigations.md)|نعم|نعم|
 |[التهديدات وإدارة الثغرات الأمنية](../defender-endpoint/tvm-dashboard-insights.md)|نعم|نعم|
 |الإدارة المركزية وإعداد التقارير|نعم|نعم|
 |[واجهات برمجه التطبيقات](../defender-endpoint/apis-intro.md) <br/>(للتكامل مع التطبيقات المخصصة أو حلول التقارير)|نعم|نعم|
@@ -73,9 +73,9 @@ ms.locfileid: "64861807"
 
 يوفر Defender for Business قدرات على مستوى المؤسسة من Defender لنقطة النهاية للشركات الصغيرة والمتوسطة الحجم.
 
-يقارن الجدول التالي ميزات الأمان وإمكانياته في Defender for Business بخطط Microsoft Defender لنقطة النهاية 1 و2.
+يقارن الجدول التالي ميزات الأمان وإمكانياته في Defender for Business بعروض المؤسسة، Microsoft Defender لنقطة النهاية الخطط 1 و2.
 
-|الميزة/القدرة|[Defender for Business](mdb-overview.md)<br/>(مستقل؛ قيد المعاينة حاليا)|[Defender for Endpoint الخطة 1](../defender-endpoint/defender-endpoint-plan-1.md)|[Defender لنقطة النهاية الخطة 2](../defender-endpoint/microsoft-defender-endpoint.md)|
+|الميزة/القدرة|[Defender for Business](mdb-overview.md)<br/>(مستقل؛ قيد المعاينة حاليا)|[Defender for Endpoint الخطة 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(لعملاء المؤسسات) |[Defender لنقطة النهاية الخطة 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(لعملاء المؤسسات) |
 |---|---|---|---|
 |[الإدارة المركزية](../defender-endpoint/manage-atp-post-migration.md) |نعم <sup>[[1](#fn1)]</sup>|نعم|نعم|
 |[تكوين العميل المبسط](mdb-simplified-configuration.md)|نعم|لا|لا|
@@ -83,7 +83,7 @@ ms.locfileid: "64861807"
 |[قدرات تقليل الأجزاء المعرضة للهجوم](../defender-endpoint/overview-attack-surface-reduction.md)|نعم|نعم|نعم|
 |[حماية الجيل التالي](../defender-endpoint/next-generation-protection.md)|نعم|نعم|نعم|
 |[الكشف عن نقطة النهاية والاستجابة لها](../defender-endpoint/overview-endpoint-detection-response.md)|نعم <sup>[[2](#fn2)]</sup>|لا|نعم|
-|[التحقيق التلقائي والاستجابة](../defender-endpoint/automated-investigations.md)|نعم <sup>[[3](#fn3)]</sup>|لا|نعم|
+|[التحقيق التلقائي والاستجابة (AIR)](../defender-endpoint/automated-investigations.md)|نعم <sup>[[3](#fn3)]</sup>|لا|نعم|
 |[تتبع التهديدات](../defender-endpoint/advanced-hunting-overview.md) واستبقاء البيانات لمدة ستة أشهر |لا <sup>[[4](#fn4)]</sup>|لا|نعم|
 |[تحليلات المخاطر](../defender-endpoint/threat-analytics.md)|نعم <sup>[[5](#fn5)]</sup>|لا|نعم|
 |[دعم عبر الأنظمة الأساسية](../defender-endpoint/minimum-requirements.md) <br/>(Windows وmacOS وiOS وAndroid OS)|نعم <sup>[[6](#fn6)]</sup>|نعم|نعم|

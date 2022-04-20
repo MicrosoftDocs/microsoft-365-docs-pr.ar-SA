@@ -1,5 +1,5 @@
 ---
-title: العمل على معالجة الأخطاء في Advanced eDiscovery
+title: العمل على معالجة الأخطاء في eDiscovery (Premium)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,26 +17,26 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: نظرة عامة حول معالجة نماذج مختلفة من البيانات في Advanced eDiscovery.
-ms.openlocfilehash: 9f44593983256079150ad48954c5f1883f836083
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: نظرة عامة حول معالجة أشكال مختلفة من البيانات في eDiscovery (Premium).
+ms.openlocfilehash: 043e1b2b023fdd4e379116109069674515153524
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63565932"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64936302"
 ---
-# <a name="work-with-processing-errors-in-advanced-ediscovery"></a>العمل على معالجة الأخطاء في Advanced eDiscovery
+# <a name="work-with-processing-errors-in-ediscovery-premium"></a>العمل على معالجة الأخطاء في eDiscovery (Premium)
 
-*المعالجة هي* عملية تحديد الملفات وتوسيع المستندات والمرفقات المضمنة واستخراج النص و التعرف البصري على الأحرف (OCR) لملفات الصور والفهرسة اللاحقة لهذا المحتوى.  
+*المعالجة* هي عملية تعريف الملفات وتوسيع المستندات والمرفقات المضمنة واستخراج النص والتعرف البصري على الحروف (OCR) لملفات الصور والفهرسة اللاحقة لهذا المحتوى.  
 
-عندما تضيف لعناصر مفهرسة ومصادر بيانات غير مهيأة إلى حالة على علامة  التبويب مصادر، تتم معالجة كل العناصر المفهرسة جزئيا من Microsoft 365 لجعلها قابلة للبحث بشكل كامل. وبالمثل، عندما تتم إضافة المحتوى إلى مجموعة مراجعة من مصادر Microsoft 365 وغير Microsoft 365 البيانات، تتم معالجة هذا المحتوى أيضا.
+عند إضافة أمناء الحفظ ومصادر البيانات غير الوصية إلى حالة على علامة التبويب **"المصادر**"، تتم معالجة جميع العناصر المفهرسة جزئيا من Microsoft 365 لجعلها قابلة للبحث بالكامل. وبالمثل، عند إضافة المحتوى إلى مجموعة مراجعة من مصادر البيانات Microsoft 365 وغير Microsoft 365، تتم معالجة هذا المحتوى أيضا.
 
-توفر **علامة التبويب** معالجة في Advanced eDiscovery معلومات حول حالة الفهرسة المتقدمة لسيناريوهات معالجة مختلفة.
+توفر علامة التبويب **"معالجة**" في eDiscovery (Premium) نظرة ثاقبة على حالة الفهرسة المتقدمة لسيناريوهات المعالجة المختلفة.
 
 لمزيد من المعلومات، راجع المقالات التالية:
 
-- [الفهرسة المتقدمة للبيانات غير الهامة](indexing-custodian-data.md)
+- [الفهرسة المتقدمة لبيانات الوصي](indexing-custodian-data.md)
 
-- [تصحيح الأخطاء عند معالجة البيانات](error-remediation-when-processing-data-in-advanced-ediscovery.md)
+- [معالجة الخطأ عند معالجة البيانات](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [تصحيح خطأ عنصر واحد](single-item-error-remediation.md)

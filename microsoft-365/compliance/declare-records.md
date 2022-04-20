@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: الإعلان عن السجلات باستخدام تسميات الاستبقاء.
-ms.openlocfilehash: 228ce06cbc646f60703443a00492693019dfa0b8
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 23dd6c61d9da787eecd2e1fa825fe338d961d1d1
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836117"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911444"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>تعريف السجلات باستخدام تسميات الاستبقاء
 
@@ -69,7 +69,7 @@ ms.locfileid: "64836117"
 
 للحصول على الإرشادات الكاملة:
 
-- [إنشاء تسميات استبقاء وتطبيقها في التطبيقات](create-apply-retention-labels.md)
+- [نشر تسميات الاستبقاء وتطبيقها في التطبيقات](create-apply-retention-labels.md)
 
 - [تطبيق تسمية استبقاء على المحتوى تلقائيا](apply-retention-labels-automatically.md) (غير معتمد للسجلات التنظيمية)
 

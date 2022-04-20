@@ -1,0 +1,279 @@
+### YamlMime:Hub
+title: موارد ووثائق Microsoft 365 للمؤسسات
+summary: ابحث عن الحلول والسيناريوهات والموارد التي تحتاجها لبدء استخدام Microsoft 365 لأعمالك أو مؤسستك. تتضمن Microsoft 365 خدمات مثل Teams SharePoint، Microsoft 365 Apps مثل Outlook وWord وExcel وPowerPoint.
+brand: m365
+metadata:
+  title: موارد ووثائق Microsoft 365 للمؤسسات
+  description: ابحث عن الحلول والسيناريوهات والموارد التي تحتاجها لبدء استخدام Microsoft 365، بما في ذلك Office، لأعمالك أو مؤسستك.
+  ms.service: o365-solutions
+  ms.topic: hub-page
+  ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
+  author: samanro
+  ms.author: samanro
+  ms.date: 06/08/2021
+  ms.localizationpriority: high
+  ms.openlocfilehash: 7e2e2fc3b0e35675338c54f930189e1ac94599f1
+  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 04/19/2022
+  ms.locfileid: "64934148"
+highlightedContent:
+  items:
+  - title: إعداد البنية الأساسية للعمل المختلط
+    itemType: how-to-guide
+    url: solutions/empower-people-to-work-remotely.md
+  - title: التعلّم عن بُعد باستخدام Microsoft Teams
+    itemType: get-started
+    url: /MicrosoftTeams/remote-learning-edu
+  - title: بناء مهاراتك باستخدام Microsoft Learn
+    itemType: learn
+    url: /learn/m365/
+  - title: ابدأ مشروعك الصغير مع Microsoft 365
+    itemType: quickstart
+    url: business-video/index.yml
+productDirectory:
+  title: حلول وسيناريوهات Microsoft 365
+  items:
+  - title: حلول Microsoft 365
+    imageSrc: https://docs.microsoft.com/office/media/icons/secure-document-blue.svg
+    links:
+    - url: solutions/empower-people-to-work-remotely.md
+      text: إعداد البنية الأساسية للعمل المختلط
+    - url: solutions/setup-secure-collaboration-with-teams.md
+      text: إعداد التعاون الآمن
+    - url: solutions/deploy-threat-protection.md
+      text: نشر الحماية من التهديدات
+    - url: solutions/information-protection-deploy.md
+      text: نشر حماية المعلومات للوائح خصوصية البيانات
+    - url: business-premium/index.md
+      text: Microsoft 365 للشركات والحملات الصغيرة
+  - title: الاجتماع والتواصل
+    imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
+    links:
+    - url: /sharepoint/corporate-communications-overview
+      text: الاتصالات التنظيمية
+    - url: /MicrosoftTeams/quick-start-meetings-live-events
+      text: الاجتماعات والأحداث المباشرة في Microsoft Teams
+    - url: solutions/deploy-voice.md
+      text: تخطيط ونشر حل صوتي من Teams
+    - url: /MicrosoftTeams/business-voice/whats-business-voice
+      text: Microsoft 365 Business Voice
+    - url: /MicrosoftTeams/cloud-voice-landing-page
+      text: حلول هاتفية من Microsoft
+  - title: التعاون مع الفريق
+    imageSrc: https://docs.microsoft.com/office/media/icons/users-people.svg
+    links:
+    - url: solutions/collaborate-with-people-outside-your-organization.md
+      text: تكوين مشاركة خارجية
+    - url: /sharepoint/intelligent-internet-overview
+      text: إنشاء شبكة إنترانت ذكية في SharePoint
+    - url: /sharepoint/deploy-file-collaboration
+      text: التعاون على الملفات في SharePoint
+    - url: /onedrive/plan-onedrive-enterprise
+      text: دليل OneDrive للمؤسسات
+    - url: solutions/collaboration-governance-overview.md
+      text: إدارة التعاون
+  - title: موارد التصميم
+    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
+    links:
+    - url: solutions/productivity-illustrations.md
+      text: صور توضيحية لإنتاجية Microsoft 365
+    - url: solutions/cloud-architecture-models.md
+      text: نماذج هندسة سحابة Microsoft
+    - url: solutions/design-principles.md
+      text: مبادئ تصميم هندسة المؤسسات
+    - url: solutions/infographics-for-users.md
+      text: مخططات بيانية للمعلومات خاصة بالمستخدمين
+    - url: solutions/architecture-icons-templates.md
+      text: أيقونات الهندسة وقوالبها
+  - title: تأمين مؤسستك
+    imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
+    links:
+    - url: security/top-security-tasks-for-remote-work.md
+      text: أهم مهام فرق الأمان لدعم العمل من المنزل
+    - url: solutions/configure-teams-three-tiers-protection.md
+      text: تكوين المستويات الثلاثة من الحماية باستخدام Microsoft Teams
+    - url: security/defender/get-started.md
+      text: بدء العمل باستخدام Microsoft 365 Defender
+    - url: security/defender-endpoint/deployment-phases.md
+      text: نشر Microsoft Defender لنقطة النهاية
+    - url: security/office-365-security/defender-for-office-365.md
+      text: نشر Microsoft Defender لـ Office 365
+    - url: security/office-365-security/microsoft-365-policies-configurations.md
+      text: تكوين حماية الوصول إلى الجهاز والهوية
+  - title: حماية المعلومات الخاصة بك والامتثال للوائح
+    imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
+    links:
+    - url: compliance/insider-risk-solution-overview.md
+      text: حلول المخاطر الداخلية في Microsoft Purview
+    - url: compliance/compliance-quick-tasks.md
+      text: المهام السريعة لبدء استخدام Microsoft Purview
+    - url: compliance/information-protection.md
+      text: إدارة حماية المعلومات
+    - url: compliance/manage-data-governance.md
+      text: إدارة المعلومات
+    - url: compliance/auditing-solutions-overview.md
+      text: حلول التدقيق
+    - url: compliance/overview-ediscovery-20.md
+      text: eDiscovery (Premium)
+  - title: نشر وإدارة أجهزة الكمبيوتر المكتبية والأجهزة الخاصة بك
+    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+    links:
+    - url: /DeployOffice/plan-microsoft-365-apps
+      text: نشر تطبيقات Microsoft 365
+    - url: /windows/deployment/
+      text: نشر Windows 10
+    - url: ./managed-desktop/index.yml
+      text: جهاز سطح المكتب المدار من Microsoft
+    - url: /mem/intune/fundamentals/what-is-intune
+      text: إدارة الأجهزة باستخدام Microsoft Intune
+  - title: ترحيل بياناتك إلى Microsoft 365
+    imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+    links:
+    - url: /MicrosoftTeams/journey-skypeforbusiness-teams
+      text: الترحيل إلى Microsoft Teams
+    - url: /sharepointmigration/migrate-to-sharepoint-online
+      text: ترحيل المحتوى إلى SharePoint وOneDrive وTeams
+    - url: /Exchange/mailbox-migration/mailbox-migration
+      text: ترحيل حسابات بريد إلكتروني متعددة إلى Microsoft 365
+  - title: حلول حمل العمل وسيناريوهاته
+    imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
+    links:
+    - url: solutions/financial-services-secure-collaboration.md
+      text: أمان الخدمات المالية وتوافقها
+    - url: solutions/energy-secure-collaboration.md
+      text: أمان الخدمات المساعدة والطاقة وتوافقها
+    - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+      text: Teams للرعاية الصحية
+    - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
+      text: Teams للتعليم
+    - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
+      text: Teams للقطاع الحكومي
+    - url: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
+      text: دعم العاملين في القطاع الحكومي البعيدين باستخدام Microsoft Teams
+additionalContent:
+  sections:
+  - title: جميع التطبيقات والخدمات
+    summary: وثائق لجميع التطبيقات والمنتجات المضمنة في Microsoft 365.
+    items:
+    - title: Microsoft 365
+      summary: إعداد خدمات Microsoft 365 وإدارتها لمؤسستك.
+      links:
+      - text: مركز مسؤولي Microsoft 365
+        url: admin/index.yml
+      - text: Microsoft 365 Business Premium
+        url: business/index.yml
+      - text: Microsoft 365 للمؤسسات
+        url: enterprise/index.yml
+      - text: Microsoft Purview
+        url: compliance/index.yml
+      - text: الأمان في Microsoft 365
+        url: security/index.yml
+      - text: جهاز سطح المكتب المدار من Microsoft
+        url: managed-desktop/index.yml
+      - text: استكشاف الأخطاء وإصلاحها والدعم
+        url: /office/troubleshoot
+    - title: Microsoft Teams
+      links:
+      - text: وثائق المسؤول
+        url: /MicrosoftTeams/Teams-overview
+      - text: الأمان والتوافق في Teams
+        url: /MicrosoftTeams/security-compliance-overview
+      - text: الترقية من Skype for Business إلى Teams
+        url: /MicrosoftTeams/journey-skypeforbusiness-teams
+      - text: المزيد من >
+        url: /MicrosoftTeams
+    - title: نشر Office
+      links:
+      - text: تطبيقات Microsoft 365
+        url: /DeployOffice/plan-microsoft-365-apps
+      - text: Office for Mac
+        url: /DeployOffice/mac
+      - text: Office LTSC 2021
+        url: /DeployOffice/ltsc2021/overview
+      - text: المزيد من >
+        url: /DeployOffice
+    - title: SharePoint
+      links:
+      - text: SharePoint في Microsoft 365
+        url: /sharepoint/sharepoint-online
+      - text: بناء جملة SharePoint
+        url: contentunderstanding/index.md
+      - text: SharePoint Server
+        url: /sharepoint/sharepoint-server
+      - text: مختلط
+        url: /sharepoint/hybrid/hybrid
+      - text: مرجع PowerShell لـ SharePoint
+        url: /powershell/sharepoint
+      - text: المزيد من >
+        url: /sharepoint
+    - title: OneDrive
+      links:
+      - text: تخطيط ونشر وإدارة
+        url: /onedrive/onedrive
+      - text: المزيد من OneDrive >
+        url: /onedrive
+    - title: Outlook وExchange
+      links:
+      - text: Outlook لنظامي التشغيل iOS وAndroid
+        url: https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/
+      - text: Exchange Online
+        url: /Exchange/exchange-online
+      - text: المزيد من Exchange >
+        url: /Exchange
+    - title: Planner وProject
+      links:
+      - text: تعليمات مسؤول Planner
+        url: /office365/planner
+      - text: Project للويب
+        url: /project-for-the-web/projectforweb-admin-home
+      - text: المزيد من Project >
+        url: /Project
+    - title: Microsoft Viva
+      links:
+      - text: موضوعات Microsoft Viva
+        url: /microsoft-365/knowledge/
+      - text: نتائج تحليلات Microsoft Viva
+        url: /insights/viva-teams-app
+      - text: اتصالات Microsoft Viva
+        url: /sharepoint/viva-connections
+      - text: تعلّم Microsoft Viva
+        url: /microsoft-365/learning/
+      - text: المزيد من Microsoft Viva >
+        url: /microsoft-365/viva/
+    - title: المزيد من التطبيقات والخدمات
+      links:
+      - text: Microsoft Bookings
+        url: bookings/index.yml
+      - text: Microsoft Kaizala
+        url: /Kaizala
+      - text: Microsoft Stream
+        url: /stream/
+      - text: Yammer
+        url: /yammer/yammer-landing-page
+      - text: Skype for Business
+        url: /skypeforbusiness
+      - text: خادم Office عبر الإنترنت
+        url: /officeonlineserver
+  - title: الإرشادات والموارد ذات الصلة
+    items:
+    - title: المطورون
+      summary: ابحث عن البرامج التعليمية والمراجع والموارد الأخرى للمطورين في مركز المطورون Microsoft 365.
+      url: https://developer.microsoft.com/microsoft-365
+    - title: المستخدمون النهائيون
+      summary: ابحث عن محتوى التدريب والكيفية والتعليمات لمستخدمي Microsoft 365 على support.microsoft.com.
+      url: https://support.microsoft.com/microsoft-365
+    - title: تكنولوجيا المعلومات التعليمية
+      summary: تعرّف على كيفية إطلاق العنان للإبداع، وتعزيز العمل الجماعي، واكتساب تجربة آمنة وبسيطة مع Microsoft 365 Education.
+      url: /education
+    - title: المعلمون
+      summary: ابحث عن محتوى التدريب والكيفية والتعليمات للمعلمين الذين يستخدمون Microsoft 365 Education.
+      url: https://support.microsoft.com/education
+    - title: المجتمع التقني
+      summary: انضم إلى مجتمع Microsoft 365 التقني لمشاركة التجارب والمشاركة والتعلم من الخبراء.
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
+    - title: محتوى المجتمع Microsoft 365
+      summary: ابحث عن الحلول وإرشادات السيناريو للمستخدمين Microsoft 365 كما ساهم في ذلك مجتمع محترفي تكنولوجيا المعلومات والمسؤولين.
+      url: /microsoft-365/community/

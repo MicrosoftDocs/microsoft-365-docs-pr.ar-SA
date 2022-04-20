@@ -1,5 +1,5 @@
 ---
-title: استخدام برنامج نصي لإضافة مستخدمين إلى قائمة احتجاز في حالة eDiscovery الأساسية
+title: استخدام برنامج نصي لإضافة مستخدمين إلى قائمة احتجاز في حالة eDiscovery (قياسي)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -21,17 +21,17 @@ ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: تعرف على كيفية تشغيل برنامج نصي لإضافة علب بريد & OneDrive for Business مواقع إلى قائمة احتجاز جديدة مقترنة بحالة eDiscovery في مركز التوافق في Microsoft 365.
-ms.openlocfilehash: 10a605b422178e5006d8a027a697ca6745f82b98
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: تعرف على كيفية تشغيل برنامج نصي لإضافة علب بريد & OneDrive for Business مواقع إلى قائمة احتجاز جديدة مقترنة بحالة eDiscovery في مدخل توافق Microsoft Purview.
+ms.openlocfilehash: 8835e853825786668ba1b7617078d899c0773779
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824477"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64934504"
 ---
-# <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>استخدام برنامج نصي لإضافة مستخدمين إلى قائمة احتجاز في حالة eDiscovery الأساسية
+# <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>استخدام برنامج نصي لإضافة مستخدمين إلى قائمة احتجاز في حالة eDiscovery (قياسي)
 
-يوفر Security & Compliance Center PowerShell أوامر cmdlets تتيح لك أتمتة المهام التي تستغرق وقتا طويلا المتعلقة بإنشاء حالات eDiscovery وإدارتها. حاليا، يستغرق استخدام حالة eDiscovery الأساسية في مركز التوافق في Microsoft 365 لوضع عدد كبير من مواقع محتوى الوصي قيد الاحتجاز وقتا وإعدادا. على سبيل المثال، قبل إنشاء قائمة احتجاز، يجب عليك جمع عنوان URL لكل موقع OneDrive for Business تريد وضعه قيد الاحتجاز. ثم لكل مستخدم تريد وضعه قيد الاحتجاز، يجب إضافة علبة بريده وموقع OneDrive for Business الخاص به إلى قائمة الاحتجاز. يمكنك استخدام البرنامج النصي في هذه المقالة لأتمتة هذه العملية.
+يوفر Security & Compliance Center PowerShell أوامر cmdlets تتيح لك أتمتة المهام التي تستغرق وقتا طويلا المتعلقة بإنشاء حالات eDiscovery وإدارتها. حاليا، يستغرق استخدام حالة Microsoft Purview eDiscovery (Standard) في مدخل الامتثال ل Microsoft Purview لوضع عدد كبير من مواقع محتوى الوصي قيد الاحتجاز وقتا وإعدادا. على سبيل المثال، قبل إنشاء قائمة احتجاز، يجب عليك جمع عنوان URL لكل موقع OneDrive for Business تريد وضعه قيد الاحتجاز. ثم لكل مستخدم تريد وضعه قيد الاحتجاز، يجب إضافة علبة بريده وموقع OneDrive for Business الخاص به إلى قائمة الاحتجاز. يمكنك استخدام البرنامج النصي في هذه المقالة لأتمتة هذه العملية.
   
 يطالبك البرنامج النصي باسم مجال "الموقع الخاص بي" الخاص بالمؤسسة (على سبيل المثال، `contoso` في عنوان URL https://contoso-my.sharepoint.com)، واسم حالة eDiscovery الحالية، واسم قائمة الاحتجاز الجديدة المقترنة بالحالة، وقائمة عناوين البريد الإلكتروني للمستخدمين الذين تريد وضعهم قيد الاحتجاز، واستعلام بحث لاستخدامه إذا كنت تريد إنشاء قائمة احتجاز مستندة إلى استعلام. ثم يحصل البرنامج النصي على عنوان URL لموقع OneDrive for Business لكل مستخدم في القائمة، ويقوم بإنشاء قائمة الاحتجاز الجديدة، ثم يضيف علبة البريد وموقع OneDrive for Business لكل مستخدم في القائمة إلى قائمة الاحتجاز. يقوم البرنامج النصي أيضا بإنشاء ملفات السجل التي تحتوي على معلومات حول قائمة الاحتجاز الجديدة.
   
@@ -45,9 +45,9 @@ ms.locfileid: "64824477"
   
 ## <a name="before-you-add-users-to-a-hold"></a>قبل إضافة مستخدمين إلى قائمة احتجاز
 
-- يجب أن تكون عضوا في مجموعة دور eDiscovery Manager في مركز التوافق في Microsoft 365 ومسؤول SharePoint Online لتشغيل البرنامج النصي في الخطوة 3. لمزيد من المعلومات، راجع [تعيين أذونات eDiscovery في Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
+- يجب أن تكون عضوا في مجموعة دور eDiscovery Manager في مدخل التوافق ومسؤول SharePoint Online لتشغيل البرنامج النصي في الخطوة 3. لمزيد من المعلومات، راجع [تعيين أذونات eDiscovery في مركز التوافق & للأمان Office 365](assign-ediscovery-permissions.md).
 
-- يمكن إضافة 1000 علبة بريد و100 موقع كحد أقصى إلى قائمة احتجاز مقترنة بحالة eDiscovery الأساسية في مركز التوافق في Microsoft 365. بافتراض أن كل مستخدم تريد وضعه قيد الاحتجاز لديه موقع OneDrive for Business، يمكنك إضافة 100 مستخدم كحد أقصى إلى قائمة احتجاز باستخدام البرنامج النصي في هذه المقالة.
+- يمكن إضافة 1000 علبة بريد و100 موقع كحد أقصى إلى قائمة احتجاز مقترنة بحالة eDiscovery في مدخل التوافق. بافتراض أن كل مستخدم تريد وضعه قيد الاحتجاز لديه موقع OneDrive for Business، يمكنك إضافة 100 مستخدم كحد أقصى إلى قائمة احتجاز باستخدام البرنامج النصي في هذه المقالة.
 
 - تأكد من حفظ قائمة المستخدمين الذين تقوم بإنشائها في الخطوة 2 والبرامج النصية في الخطوة 3 إلى المجلد نفسه. وهذا سيجعل من السهل تشغيل البرنامج النصي.
 
@@ -93,7 +93,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 - **استعلام البحث عن قائمة احتجاز مستندة إلى استعلام:** يمكنك إنشاء قائمة احتجاز مستندة إلى استعلام بحيث يتم وضع المحتوى الذي يفي بمعايير البحث المحددة فقط قيد الاحتجاز. لوضع كل المحتوى قيد الاحتجاز، ما عليك سوى الضغط على **مفتاح الإدخال Enter** عندما تتم مطالبتك باستعلام بحث.
 
-- **تشغيل قائمة الاحتجاز أم لا:** يمكنك تشغيل البرنامج النصي مؤقتا بعد إنشائه أو يمكنك أن تجعل البرنامج النصي ينشئ قائمة الاحتجاز دون تمكينه. إذا لم يكن البرنامج النصي قيد الانتظار، يمكنك تشغيله لاحقا في مركز التوافق في Microsoft 365 أو عن طريق تشغيل أوامر PowerShell التالية:
+- **تشغيل قائمة الاحتجاز أم لا:** يمكنك تشغيل البرنامج النصي مؤقتا بعد إنشائه أو يمكنك أن تجعل البرنامج النصي ينشئ قائمة الاحتجاز دون تمكينه. إذا لم يكن البرنامج النصي قيد الانتظار، يمكنك تشغيله لاحقا في مدخل التوافق أو عن طريق تشغيل أوامر PowerShell التالية:
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -114,7 +114,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 " "
 write-host "***********************************************"
 write-host "   Security & Compliance Center PowerShell  " -foregroundColor yellow -backgroundcolor darkgreen
-write-host "   Core eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
+write-host "   eDiscovery (Standard) cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
 write-host "***********************************************"
 " "
 # Connect to SCC PowerShell using modern authentication
@@ -283,7 +283,7 @@ Write-host "Script complete!" -foregroundColor Yellow
 
 4. أدخل المعلومات التي يطالبك البرنامج النصي بها.
 
-   يتصل البرنامج النصي ب Security & Compliance Center PowerShell، ثم ينشئ قائمة الاحتجاز الجديدة في حالة eDiscovery ويضيف علب البريد OneDrive for Business للمستخدمين في القائمة. يمكنك الانتقال إلى الحالة على صفحة **eDiscovery** في مركز التوافق في Microsoft 365 لعرض قائمة الاحتجاز الجديدة.
+   يتصل البرنامج النصي ب Security & Compliance Center PowerShell، ثم ينشئ قائمة الاحتجاز الجديدة في حالة eDiscovery ويضيف علب البريد OneDrive for Business للمستخدمين في القائمة. يمكنك الانتقال إلى الحالة على صفحة **eDiscovery** في مدخل التوافق لعرض قائمة الاحتجاز الجديدة.
 
 بعد الانتهاء من تشغيل البرنامج النصي، يقوم بإنشاء ملفات السجل التالية، ويحفظها في المجلد حيث يوجد البرنامج النصي.
   

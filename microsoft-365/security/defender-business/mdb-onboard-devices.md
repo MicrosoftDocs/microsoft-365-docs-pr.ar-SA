@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
+ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ba816430521db2848273a4f7c6ca7d1a61703690
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 77eb8c0aa4d0ebd78788e9701e4933788af2e46c
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862248"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915896"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>إلحاق الأجهزة Microsoft Defender for Business
 
@@ -41,7 +41,6 @@ ms.locfileid: "64862248"
 1. حدد علامة التبويب لنظام التشغيل: 
 
    - عملاء Windows
-   - خادم Windows (معاينة)
    - أجهزة كمبيوتر macOS
    - الأجهزة المحمولة
 
@@ -56,6 +55,7 @@ ms.locfileid: "64862248"
 اختر أحد الخيارات التالية لإلحاق أجهزة العميل Windows إلى Defender for Business:
 
 - [البرنامج النصي المحلي](#local-script-for-windows-clients) (لإعداد الأجهزة يدويا في مدخل Microsoft 365 Defender)
+- [نهج المجموعة](#group-policy-for-windows-clients)
 - [إدارة نقاط النهاية من Microsoft](#endpoint-manager-for-windows-clients) (مضمن في [Microsoft 365 Business Premium](../../business-premium/index.md))
 
 
@@ -81,6 +81,10 @@ ms.locfileid: "64862248"
 7. اكتب موقع ملف البرنامج النصي. على سبيل المثال، إذا قمت بنسخ الملف إلى مجلد سطح المكتب، فستكتب `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`، ثم اضغط على مفتاح الإدخال Enter (أو حدد **"موافق**").
 
 8. بعد تشغيل البرنامج النصي، تابع [إلى تشغيل اختبار الكشف](#running-a-detection-test-on-a-windows-client).
+
+### <a name="group-policy-for-windows-clients"></a>نهج المجموعة لعملاء Windows
+
+إذا كنت تفضل استخدام نهج المجموعة لإلحاق عملاء Windows، فاتبع الإرشادات الواردة في [الأجهزة Windows الملحقة باستخدام نهج المجموعة](../defender-endpoint/configure-endpoints-gp.md). تصف هذه المقالة خطوات الإلحاق Microsoft Defender لنقطة النهاية؛ ومع ذلك، فإن خطوات الإلحاق ب Defender for Business متشابهة.
 
 ### <a name="endpoint-manager-for-windows-clients"></a>إدارة نقاط النهاية لعملاء Windows
 
@@ -133,67 +137,6 @@ ms.locfileid: "64862248"
 بعد إلحاق أجهزة Windows ب Defender for Business، يمكنك تشغيل اختبار الكشف على جهاز Windows للتأكد من أن كل شيء يعمل بشكل صحيح.
 
 1. على جهاز Windows، أنشئ مجلدا: `C:\test-MDATP-test`.
-
-2. افتح موجه الأوامر كمسؤول.
-
-3. في نافذة موجه الأوامر، قم بتشغيل أمر PowerShell التالي:
-
-   ```powershell
-   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
-   ```
-
-بعد تشغيل الأمر، سيتم إغلاق نافذة موجه الأوامر تلقائيا. إذا نجحت، سيتم وضع علامة على اختبار الكشف كمكتمل، وسيظهر تنبيه جديد في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) للجهاز الذي تم إلحاقه حديثا في حوالي 10 دقائق.
-
-## <a name="view-a-list-of-onboarded-devices"></a>عرض قائمة بالأجهزة التي تم إلحاقها
-
-لعرض قائمة الأجهزة التي تم إلحاقها ب Defender for Business، في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، في جزء التنقل، ضمن **نقاط النهاية**، اختر **Device invetory**.
-
-## <a name="next-steps"></a>الخطوات التالية
-
-- إذا كان لديك أجهزة أخرى لإلحاقها، فحدد علامة التبويب التي تتوافق مع نظام التشغيل على الأجهزة [(Windows العملاء أو Windows Server أو macOS أو الأجهزة المحمولة](#what-to-do))، واتبع الإرشادات الواردة في علامة التبويب هذه.
-- إذا انتهيت من إلحاق الأجهزة، فانضم إلى [الخطوة 5: تكوين إعدادات الأمان والنهج في Microsoft Defender for Business](mdb-configure-security-settings.md)
-- راجع [بدء استخدام Microsoft Defender for Business](mdb-get-started.md).
-
-## <a name="windows-server"></a>[**Windows Server**](#tab/WindowsServerEndpoints)
-
-## <a name="windows-server-preview"></a>خادم Windows (معاينة)
-
-يمكنك إلحاق جهاز خادم Windows باستخدام برنامج نصي محلي. 
-
-> [!IMPORTANT]
-> القدرة على إلحاق نقاط نهاية الخادم Windows قيد المعاينة حاليا.
-
-1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، وسجل الدخول.
-
-2. في جزء التنقل، اختر **الإعدادات** >  **Endpoints**، ثم ضمن **إدارة الجهاز**، اختر **"إلحاق".**
-
-3. حدد نظام تشغيل، مثل **Windows Server 1803 و2019 و2022**، ثم في قسم **أسلوب النشر**، اختر **البرنامج النصي المحلي**. 
-
-   إذا حددت **Windows Server 2012 R2 و2016**، فستتوفر لديك حزمتان لتنزيلهما وتشغيلهما: حزمة تثبيت وحزمة إلحاق. تحتوي حزمة التثبيت على ملف MSI يقوم بتثبيت عامل Microsoft Defender for Business. تحتوي حزمة الإلحاق على البرنامج النصي لإلحاق نقطة نهاية خادم Windows إلى Defender for Business. 
-
-4. حدد **تنزيل حزمة الإلحاق**. نوصي بحفظ حزمة الإلحاق إلى محرك أقراص قابل للإزالة.
-
-   إذا قمت بتحديد **Windows Server 2012 R2 و2016**، فحدد أيضا **تنزيل حزمة التثبيت**، واحفظها في محرك أقراص قابل للإزالة
-
-5. في نقطة نهاية Windows Server، قم باستخراج محتويات حزمة (حزم) التثبيت/الإلحاق إلى موقع، مثل مجلد سطح المكتب. يجب أن يكون لديك ملف باسم `WindowsDefenderATPLocalOnboardingScript.cmd`. 
-
-   إذا كنت تقوم بإلحاق Windows Server 2012 R2 أو Windows Server 2016، فقم باستخراج حزمة التثبيت أولا.
-
-6. افتح موجه الأوامر كمسؤول.
-
-7. إذا كنت تقوم بإلحاق Windows Server 2012R2 أو Windows Server 2016، فقم بتشغيل الأمر التالي: `Msiexec /i md4ws.msi /quiet`. 
-
-   إذا كنت تقوم بإلحاق Windows Server 1803 أو 2019 أو 2022، فتخطى هذه الخطوة وانتقل إلى الخطوة 8.
-
-8. اكتب موقع ملف البرنامج النصي. على سبيل المثال، إذا قمت بنسخ الملف إلى مجلد سطح المكتب، فستكتب `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`، ثم اضغط على مفتاح الإدخال Enter (أو حدد **"موافق**").
-
-9. المتابعة [إلى تشغيل اختبار الكشف على Windows Server](#running-a-detection-test-on-windows-server)
-
-### <a name="running-a-detection-test-on-windows-server"></a>تشغيل اختبار الكشف على Windows Server
-
-بعد إلحاق نقطة نهاية Windows Server ب Defender for Business، يمكنك تشغيل اختبار الكشف للتأكد من أن كل شيء يعمل بشكل صحيح.
-
-1. على جهاز Windows Server، أنشئ مجلدا: `C:\test-MDATP-test`.
 
 2. افتح موجه الأوامر كمسؤول.
 

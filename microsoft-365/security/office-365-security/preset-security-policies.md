@@ -16,12 +16,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية تطبيق إعدادات النهج القياسية والضيقة عبر ميزات الحماية Exchange Online Protection (EOP) Microsoft Defender لـ Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2a74fce0242f0206218d6f7f2f13e61d9f0a3b6f
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 01fd969461b47b0208dcfd20ff608e829b6a3336
+ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847062"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64915962"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>نهج الأمان التي تم تعيينها مسبقا في EOP و Microsoft Defender لـ Office 365
 
@@ -29,7 +29,7 @@ ms.locfileid: "64847062"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender لـ Office 365 الخطة 1 والخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 توفر نهج الأمان المعينة مسبقا موقعا مركزيا لتطبيق كل نهج البريد العشوائي والبرامج الضارة والتصيد الاحتيالي الموصى بها على المستخدمين في وقت واحد. إعدادات النهج غير قابلة للتكوين. بدلا من ذلك، يتم تعيينها من قبلنا وتستند إلى ملاحظاتنا وتجاربنا في مراكز البيانات لتحقيق التوازن بين الحفاظ على المحتوى الضار بعيدا عن المستخدمين وتجنب الاضطرابات غير الضرورية.
@@ -81,6 +81,9 @@ ms.locfileid: "64847062"
   - [نهج مكافحة البرامج الضارة](configure-anti-malware-policies.md) **المسماة Standard Preset Security Policy** **ونهج أمان مقيد مسبق الإعداد**.
   - [نهج مكافحة التصيد الاحتيالي EOP](set-up-anti-phishing-policies.md#spoof-settings) **المسماة نهج أمان قياسي مسبق الإعداد** **ونهج أمان مقيد مسبق الإعداد** (إعدادات الانتحال).
 
+  > [!NOTE]
+  > نهج البريد العشوائي الصادرة ليست جزءا من نهج الأمان التي تم إعدادها مسبقا. يحمي نهج البريد العشوائي الصادر الافتراضي تلقائيا أعضاء نهج الأمان التي تم تعيينها مسبقا. أو يمكنك إنشاء نهج بريد عشوائي صادر مخصصة لتخصيص الحماية لأعضاء نهج الأمان التي تم تعيينها مسبقا. لمزيد من المعلومات، راجع [تكوين تصفية البريد العشوائي الصادر في EOP](configure-the-outbound-spam-policy.md).
+
 - **نهج Microsoft Defender لـ Office 365**: يشمل ذلك المؤسسات التي لها اشتراكات Microsoft 365 E5 أو Defender لـ Office 365 الوظائف الإضافية:
   - نهج مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365 **المسماة Standard Preset Security Policy** و **Strict Preset Security Policy**، والتي تتضمن:
     - نفس [إعدادات الانتحال](set-up-anti-phishing-policies.md#spoof-settings) المتوفرة في نهج مكافحة التصيد الاحتيالي EOP.
@@ -124,7 +127,7 @@ ms.locfileid: "64847062"
 
   لمزيد من المعلومات، راجع [الأذونات في Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **ملاحظة**: إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات _والأذونات_ المطلوبة للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع ["حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md)".
+  **ملاحظة**: إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات _والأذونات_ المطلوبة للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>استخدام مدخل Microsoft 365 Defender لتعيين نهج أمان محددة مسبقا وقياسية للمستخدمين
 

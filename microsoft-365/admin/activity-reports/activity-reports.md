@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: احصل على تقرير دوري حول كيفية استخدام الأشخاص في مؤسستك لخدمات Microsoft 365 والتنقل في كل مخطط للحصول على مزيد من الرؤى.
-ms.openlocfilehash: 224ed6ffb0fa44280f1b83d3a0f440d1a8571557
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 63684384f8f9d496767ef66ee6628653945ad8c9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738323"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935928"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365 التقارير في مركز الإدارة
 
@@ -94,9 +94,9 @@ ms.locfileid: "64738323"
 |[عمليات تنشيط Office](microsoft-office-activations-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[المستخدمون النشطون](active-users-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[مجموعات Microsoft 365](office-365-groups-ww.md)|نعم|نعم|نعم|نعم|نعم|
-|[استخدام Microsoft 365 应用版](microsoft365-apps-usage-ww.md)|نعم|نعم|لا[^1]|لا[^1]|نعم
-|[نشاط المستخدم OneDrive Entreprise](onedrive-for-business-activity-ww.md)|نعم|نعم|نعم|نعم|نعم|
-|[استخدام OneDrive Entreprise](onedrive-for-business-usage-ww.md)|نعم|نعم|نعم|نعم|نعم|
+|[استخدام Microsoft 365 Apps](microsoft365-apps-usage-ww.md)|نعم|نعم|لا[^1]|لا[^1]|نعم
+|[نشاط المستخدم OneDrive for Business](onedrive-for-business-activity-ww.md)|نعم|نعم|نعم|نعم|نعم|
+|[استخدام OneDrive for Business](onedrive-for-business-usage-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[استخدام موقع SharePoint](sharepoint-site-usage-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[نشاط SharePoint](sharepoint-activity-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[نشاط المستخدم Microsoft Teams](microsoft-teams-user-activity-preview.md)|نعم|نعم|نعم|نعم|N/A[^2]|
@@ -111,7 +111,7 @@ ms.locfileid: "64738323"
 |[نشاط منظم لمؤتمر Skype for Business Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|نعم|نعم|لا[^1]|لا[^1]|نعم|
 |[Skype for Business نشاط المشاركين في المؤتمر عبر الإنترنت](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|نعم|نعم|لا[^1]|لا[^1]|نعم|
 |[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|نعم|نعم|لا[^1]|لا[^1]|نعم|
-|[نشاط Viva Təhsil](viva-learning-activity.md)|نعم|N/A|N/A|N/A|N/A|
+|[نشاط Viva Learning](viva-learning-activity.md)|نعم|N/A|N/A|N/A|N/A|
 |[نشاط Viva Insights](viva-insights-activity.md)|نعم|نعم|N/A|N/A|N/A|
 
 [^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
@@ -152,7 +152,7 @@ ms.locfileid: "64738323"
   
 3. قم بإلغاء تحديد عبارة **عرض أسماء المستخدمين والمجموعة والموقع المخفيين في كافة التقارير**، ثم احفظ التغييرات.  
   
-سيستغرق الأمر بضع دقائق حتى تسري هذه التغييرات على التقارير في لوحة معلومات التقارير. ينطبق هذا الإعداد أيضا على تقارير استخدام Microsoft 365 في [Microsoft Graph](/graph/api/resources/report) [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) [وتقارير الاستخدام في مركز إدارة Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). يعد إظهار معلومات المستخدم القابلة للتعريف حدثا مسجلا في سجل تدقيق مركز التوافق في Microsoft 365.   
+سيستغرق الأمر بضع دقائق حتى تسري هذه التغييرات على التقارير في لوحة معلومات التقارير. ينطبق هذا الإعداد أيضا على تقارير استخدام Microsoft 365 في [Microsoft Graph](/graph/api/resources/report) [وPower BI](/microsoft-365/admin/usage-analytics/usage-analytics) [وتقارير الاستخدام في مركز إدارة Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). إظهار معلومات المستخدم القابلة للتعريف هو حدث مسجل في سجل تدقيق مدخل الامتثال ل Microsoft Purview.   
 
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>ماذا يحدث لبيانات الاستخدام عند إغلاق حساب مستخدم؟
@@ -161,7 +161,7 @@ ms.locfileid: "64738323"
   
 ومع ذلك، عند تحديد يوم معين، لمدة تصل إلى 28 يوما من التاريخ الحالي، يعرض التقرير استخدام المستخدم لذلك اليوم في جدول "تفاصيل المستخدم".
   
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [التقارير في الأمان &amp; مركز التوافق](../../compliance/reports-in-security-and-compliance.md) (مقالة)\
 [Microsoft 365 تحليلات الاستخدام](../usage-analytics/usage-analytics.md) (مقالة)\

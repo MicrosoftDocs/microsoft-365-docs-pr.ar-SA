@@ -2,17 +2,25 @@
   href: index.yml
 - name: نظرة عامة
   items:
-    - name: ما هو Test Base؟
+    - name: ما هي قاعدة الاختبار؟
       href: overview.md
-- name: Quickstarts
+- name: قوالب التشغيل السريع
   items:
-    - name: إنشاء حساب أساس اختباري
+    - name: إنشاء حساب قاعدة الاختبار
       href: createAccount.md
+    - name: اختبار التطبيق الخاص بك على قاعدة الاختبار
+      items:
+        - name: نظرة عامة
+          href: testoverview.md
+        - name: حزمة اختبار الثنائيات في قاعدة الاختبار
+          href: testapplication.md
+        - name: اختبر تطبيق Intune الخاص بك على قاعدة الاختبار
+          href: testintuneapplication.md
+        - name: قم بتحميل حزمة قاعدة الاختبار الخاصة بك (Zip)
+          href: uploadApplication.md
     - name: إنشاء حزمة
       href: buildpackage.md
-    - name: تحميل حزمة
-      href: uploadApplication.md
-    - name: Upload الثنائيات & التبعيات
+    - name: تحميل الثنائيات والتبعيات
       href: binaries.md
     - name: تعيين مهام الاختبار
       href: testtask.md
@@ -24,17 +32,17 @@
       href: contentguideline.md
     - name: قواعد التطبيق/الاختبار
       href: rules.md
-- name: أدلة إرشادية
+- name: دليل الإرشادات
   items:
     - name: اختبار تطبيق الخادم
       href: server.md
     - name: الاختبار الوظيفي
       href: functional.md
-    - name: التحقق من صحة تحديث الميزة
+    - name: التحقق من صحة تحديث الميزات
       href: feature.md
     - name: تحليل انحدار الذاكرة
       href: memory.md
-    - name: تحليل انحدار CPU
+    - name: تحليل انحدار وحدة المعالجة المركزية
       href: cpu.md
     - name: SDK & API
       href: sdkapi.md

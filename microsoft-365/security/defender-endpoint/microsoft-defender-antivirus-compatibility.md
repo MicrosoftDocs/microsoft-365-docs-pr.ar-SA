@@ -18,21 +18,21 @@ ms.date: 04/14/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 4f579d3d22b553b764149c8b13538ceae1da44d8
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 6d0e9b00e7044145f7ca03d492a5bd32e726c38d
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862873"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911435"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>التوافق برنامج الحماية من الفيروسات من Microsoft Defender مع منتجات الأمان الأخرى
 
 **ينطبق على:**
 
 - برنامج الحماية من الفيروسات من Microsoft Defender
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -108,7 +108,7 @@ ms.locfileid: "64862873"
 
   يمكنك تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي عن طريق تعيين مفتاح التسجيل التالي:
 - مسار: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- اسم: `ForceDefenderPassiveMode`
+- الاسم: `ForceDefenderPassiveMode`
 - نوع: `REG_DWORD`
 - قيمه: `1`
 
@@ -158,7 +158,7 @@ ms.locfileid: "64862873"
 | [توفر الفحص الدوري المحدود](limited-periodic-scanning-microsoft-defender-antivirus.md) | لا | لا | نعم | لا | 
 | [معلومات مسح الملفات والكشف عنها](review-scan-results-microsoft-defender-antivirus.md) | نعم | نعم<sup>[[5](#fn5)]</sup> | لا | نعم | 
 | [معالجة المخاطر](configure-remediation-microsoft-defender-antivirus.md) | نعم | راجع <sup>[الملاحظة [6](#fn6)]</sup> | لا | نعم | 
-| [تحديثات معلومات الأمان](manage-updates-baselines-microsoft-defender-antivirus.md) | نعم | نعم <sup>[[7](#fn7)]</sup> | لا | نعم <sup>[[7](#fn7)]</sup> | 
+| [تحديثات التحليل الذكي لمخاطر الأمان](manage-updates-baselines-microsoft-defender-antivirus.md) | نعم | نعم <sup>[[7](#fn7)]</sup> | لا | نعم <sup>[[7](#fn7)]</sup> | 
 | [منع فقدان البيانات](../../compliance/endpoint-dlp-learn-about.md) | نعم | نعم | لا | لا |
 | [الوصول إلى المجلدات الخاضعة للتحكم](controlled-folders.md) | نعم |لا | لا | لا |
 | [تصفية محتوى ويب](web-content-filtering.md) | نعم | راجع <sup>[الملاحظة [8](#fn8)]</sup> | لا | لا |
@@ -193,28 +193,28 @@ ms.locfileid: "64862873"
  | تطبيق أمن Windows |  1. على جهاز Windows، افتح تطبيق أمن Windows.<br/>2. حدد **الحماية من التهديدات & الفيروسات**.<br/>3. ضمن **حماية روبوت Who لي؟** حدد **"إدارة الموفرين**".<br/>4. في صفحة **موفري الأمان**، ضمن **برنامج الحماية من الفيروسات**، يجب أن ترى **برنامج الحماية من الفيروسات من Microsoft Defender قيد التشغيل**. | 
  | إدارة المهام |  1. على جهاز Windows، افتح تطبيق Task Manager.<br/>2. حدد علامة التبويب **"تفاصيل** ".<br/>3. ابحث عن **MsMpEng.exe** في القائمة. | 
  | Windows PowerShell <br/> (لتأكيد تشغيل برنامج الحماية من الفيروسات من Microsoft Defender) |  1. على جهاز Windows، افتح Windows PowerShell. <br/>2. قم بتشغيل PowerShell cmdlet التالية: `Get-Process`.<br/>3. راجع النتائج. يجب أن تشاهد **MsMpEng.exe** إذا تم تمكين برنامج الحماية من الفيروسات من Microsoft Defender. | 
- | Windows PowerShell <br/>(للتأكد من وجود حماية من الفيروسات) |  يمكنك استخدام [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).<br/>1. على جهاز Windows، افتح Windows PowerShell.<br/>2. تشغيل أوامر PowerShell cmdlet التالية:<br/> \|Get-MpComputerStatus حدد AMRunningMode <br/>3. راجع النتائج. يجب أن تشاهد إما **عادي** أو **خامل** إذا تم تمكين برنامج الحماية من الفيروسات من Microsoft Defender على نقطة النهاية.  | 
+ | Windows PowerShell <br/>(للتأكد من وجود حماية من الفيروسات) |  يمكنك استخدام [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).<br/>1. على جهاز Windows، افتح Windows PowerShell.<br/>2. تشغيل أوامر PowerShell cmdlet التالية:<br/> \|Get-MpComputerStatus حدد AMRunningMode <br/>3. راجع النتائج. يجب أن تشاهد وضع الحظر **العادي** أو **الخامل** أو **الكشف التلقائي والاستجابة على النقط النهائية** إذا تم تمكين برنامج الحماية من الفيروسات من Microsoft Defender على نقطة النهاية.  | 
  | موجه الأوامر |  1. على جهاز Windows، افتح موجه الأوامر.<br/>2. اكتب `sc query windefend`، ثم اضغط على مفتاح الإدخال Enter.<br/>3. راجع النتائج للتأكد من تشغيل برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي.  | 
 
 ## <a name="more-details-about-microsoft-defender-antivirus-states"></a>مزيد من التفاصيل حول حالات برنامج الحماية من الفيروسات من Microsoft Defender
 
 يصف الجدول في هذا القسم الحالات المختلفة التي قد تراها مع برنامج الحماية من الفيروسات من Microsoft Defender.
 
- |  الدوله  |  ماذا يحدث  | 
+ |  الدوله  |  ما يحدث  | 
  |:---|:---| 
  |  الوضع النشط  |  في الوضع النشط، يتم استخدام برنامج الحماية من الفيروسات من Microsoft Defender كتطبيق الحماية من الفيروسات على الجهاز. سيتم تطبيق الإعدادات التي تم تكوينها باستخدام Configuration Manager أو نهج المجموعة أو Microsoft Intune أو منتجات إدارة أخرى. يتم مسح الملفات ضوئيا، ومعالجة التهديدات، ويتم الإبلاغ عن معلومات الكشف في أداة التكوين (مثل Configuration Manager أو تطبيق برنامج الحماية من الفيروسات من Microsoft Defender على نقطة النهاية نفسها).  | 
- |  الوضع السلبي  |  في الوضع السلبي، لا يتم استخدام برنامج الحماية من الفيروسات من Microsoft Defender كتطبيق مكافحة الفيروسات، *ولا* تتم معالجة التهديدات بواسطة برنامج الحماية من الفيروسات من Microsoft Defender. ومع ذلك، يمكن معالجة التهديدات عن طريق [الكشف عن نقطة النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) في وضع الحظر](edr-in-block-mode.md). <br/><br/> يتم مسح الملفات ضوئيا بواسطة الكشف التلقائي والاستجابة على النقط النهائية، ويتم توفير التقارير للكشف عن التهديدات التي تتم مشاركتها مع خدمة Defender لنقطة النهاية. قد ترى تنبيهات تظهر برنامج الحماية من الفيروسات من Microsoft Defender كمصدر، حتى عندما يكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل. <br/><br/> عندما يكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل، لا يزال بإمكانك [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md)؛ ومع ذلك، لا يمكنك النقل برنامج الحماية من الفيروسات من Microsoft Defender في الوضع النشط إذا كان لدى أجهزتك منتج الحماية من الفيروسات غير Microsoft الذي يوفر الحماية في الوقت الحقيقي من البرامج الضارة. <br/><br/> للحصول على أفضل كفاءة في الدفاع والكشف في طبقات الأمان، تأكد من الحصول على تحديثات برنامج الحماية من الفيروسات ومكافحة البرامج الضارة، حتى إذا كان برنامج الحماية من الفيروسات من Microsoft Defender يعمل في الوضع السلبي. راجع [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> لاحظ أن الوضع الخامل معتمد فقط على Windows Server 2012 R2 & 2016 عندما يتم إلحاق الجهاز باستخدام [الحل الحديث الموحد](/microsoft-365/security/defender-endpoint/configure-server-endpoints).  | 
+ |  الوضع السلبي <br/><br/> او <br/><br/> وضع حظر الكشف التلقائي والاستجابة على النقط النهائية |  في الوضع السلبي، لا يتم استخدام برنامج الحماية من الفيروسات من Microsoft Defender كتطبيق مكافحة الفيروسات، *ولا* تتم معالجة التهديدات بواسطة برنامج الحماية من الفيروسات من Microsoft Defender. <br/><br/>يمكن معالجة التهديدات من خلال [الكشف عن نقطة النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) في وضع الحظر](edr-in-block-mode.md) عند التشغيل في وضع الحظر الكشف التلقائي والاستجابة على النقط النهائية، ومع ذلك. <br/><br/> يتم مسح الملفات ضوئيا بواسطة الكشف التلقائي والاستجابة على النقط النهائية، ويتم توفير التقارير للكشف عن التهديدات التي تتم مشاركتها مع خدمة Defender لنقطة النهاية. قد ترى تنبيهات تظهر برنامج الحماية من الفيروسات من Microsoft Defender كمصدر، حتى عندما يكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل. <br/><br/> عندما يكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل، لا يزال بإمكانك [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md)؛ ومع ذلك، لا يمكنك النقل برنامج الحماية من الفيروسات من Microsoft Defender في الوضع النشط إذا كان لدى أجهزتك منتج الحماية من الفيروسات غير Microsoft الذي يوفر الحماية في الوقت الحقيقي من البرامج الضارة. <br/><br/> للحصول على أفضل كفاءة في الدفاع والكشف في طبقات الأمان، تأكد من الحصول على تحديثات برنامج الحماية من الفيروسات ومكافحة البرامج الضارة، حتى إذا كان برنامج الحماية من الفيروسات من Microsoft Defender يعمل في الوضع السلبي. راجع [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> لاحظ أن الوضع الخامل معتمد فقط على Windows Server 2012 R2 & 2016 عندما يتم إلحاق الجهاز باستخدام [الحل الحديث الموحد](/microsoft-365/security/defender-endpoint/configure-server-endpoints).  | 
  |  ذوي الاحتياجات الخاصه <br/><br/> او <br/><br/> الغاء تثبيت  |  عند تعطيله أو إلغاء تثبيته، لا يتم استخدام برنامج الحماية من الفيروسات من Microsoft Defender كتطبيق الحماية من الفيروسات. لا يتم مسح الملفات ضوئيا ولا تتم معالجة التهديدات. <br/><br/> لا يوصى بتعطيل برنامج الحماية من الفيروسات من Microsoft Defender أو إلغاء تثبيتها بشكل عام؛ إذا أمكن، فاحتفظ برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل إذا كنت تستخدم حل مكافحة البرامج الضارة/الحماية من الفيروسات غير التابع ل Microsoft. <br/><br/> في الحالات التي يتم فيها تعطيل برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا، يمكن إعادة تمكينه تلقائيا إذا انتهت صلاحية منتج الحماية من الفيروسات/الحماية من البرامج الضارة غير التابع ل Microsoft أو توقف عن توفير الحماية في الوقت الحقيقي من الفيروسات أو البرامج الضارة أو التهديدات الأخرى. تساعد إعادة التمكين التلقائي برنامج الحماية من الفيروسات من Microsoft Defender على ضمان الحفاظ على الحماية من الفيروسات على نقاط النهاية الخاصة بك. <br/><br/> يمكنك أيضا استخدام [فحص دوري محدود](limited-periodic-scanning-microsoft-defender-antivirus.md)، والذي يعمل مع محرك برنامج الحماية من الفيروسات من Microsoft Defender للتحقق بشكل دوري من التهديدات إذا كنت تستخدم تطبيق الحماية من الفيروسات غير Microsoft.  | 
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> إذا كنت’ تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>راجع أيضًا
 

@@ -1,0 +1,64 @@
+### YamlMime:Landing
+title: قاعدة الاختبار لوثائق Microsoft 365
+summary: قاعدة الاختبار Microsoft 365 هي خدمة Azure تسهل الاختبار المستند إلى البيانات للتطبيقات. مدعوما بقوة البيانات والسحابة، فإنه يمكّن محترفي تكنولوجيا المعلومات من الاستفادة من الاختبار الذكي من أي مكان في العالم. سيساعدك على اختبار تطبيقاتك دون عناء، والالتزام بالوقت، ونفقات إعداد بيئات الاختبار المعقدة وصيانتها. والأهم من ذلك، ستمنحك إمكانية الوصول إلى تحديثات Windows الإصدار المسبق على الأجهزة الظاهرية الآمنة (VMs) والذكاء العالمي لتطبيقاتك.
+metadata:
+  title: وثائق قاعدة الاختبار لـ M365
+  description: قاعدة الاختبار Microsoft 365 هي خدمة Azure تسهل الاختبار المستند إلى البيانات للتطبيقات. مدعوما بقوة البيانات والسحابة، فإنه يمكّن محترفي تكنولوجيا المعلومات من الاستفادة من الاختبار الذكي من أي مكان في العالم.
+  ms.service: service
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: v-zhifufeng
+  ms.author: v-zhifufeng
+  ms.date: 03/29/2021
+  ms.openlocfilehash: e49550339e3be9dbd93844ee3a06c9bbe4cd0faa
+  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 04/19/2022
+  ms.locfileid: "64935950"
+landingContent:
+- title: حول قاعدة الاختبار
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ما هي قاعدة الاختبار؟
+      url: overview.md
+  - linkListType: get-started
+    links:
+    - text: إنشاء حساب قاعدة الاختبار
+      url: createAccount.md
+  - linkListType: tutorial
+    links:
+    - text: موارد إضافية
+      url: faq.md
+- title: بدء الاستخدام
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: إنشاء حساب قاعدة الاختبار
+      url: createAccount.md
+    - text: اختبار التطبيق الخاص بك على قاعدة الاختبار
+      url: testoverview.md
+    - text: إنشاء حزمة
+      url: buildpackage.md
+    - text: تحميل الثنائيات
+      url: binaries.md
+    - text: تعيين مهام الاختبار الخاصة بك
+      url: testtask.md
+    - text: اختر خيارات الاختبار
+      url: testoptions.md
+    - text: مراجعة التحديدات
+      url: review.md
+    - text: إرشادات حزمة الاختبار
+      url: contentguideline.md
+    - text: تحليل انحدار الذاكرة
+      url: memory.md
+    - text: تحليل انحدار وحدة المعالجة المركزية
+      url: cpu.md
+- title: الحصول على المراجع
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: الأسئلة المتداولة
+      url: faq.md

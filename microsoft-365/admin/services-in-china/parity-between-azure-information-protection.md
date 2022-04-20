@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: تعرف على المزيد حول Azure حماية البيانات (AIP) Office 365 المشغلة بواسطة 21Vianet وكيفية تكوينها للعملاء في الصين.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3b4906844c76293a1163d17d77b009528ef32f12
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 0f495139a807d4a0eeb3181626717c6d5061fc38
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782886"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64935204"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>دعم حماية البيانات Azure Office 365 المشغل بواسطة 21Vianet
 
@@ -62,7 +62,7 @@ ms.locfileid: "64782886"
 لتكوين AIP للعملاء في الصين:
 1. [تمكين إدارة الحقوق للمستأجر](#step-1-enable-rights-management-for-the-tenant).
 
-1. [أضف كيان خدمة المزامنة حماية البيانات في Microsoft](#step-2-add-the-microsoft-information-protection-sync-service-service-principal).
+1. [أضف Microsoft Purview حماية البيانات كيان خدمة المزامنة](#step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal).
 
 1. [تكوين تشفير DNS](#step-3-configure-dns-encryption).
 
@@ -86,9 +86,9 @@ ms.locfileid: "64782886"
 
 2. إذا كانت الحالة الوظيفية ، فشغل`Disabled``Enable-AipService`.
 
-### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>الخطوة 2: إضافة كيان خدمة مزامنة حماية البيانات في Microsoft
+### <a name="step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal"></a>الخطوة 2: إضافة Microsoft Purview حماية البيانات كيان خدمة المزامنة
 
-لا يتوفر كيان خدمة **حماية البيانات في Microsoft Sync Service** في مستأجري Azure China بشكل افتراضي، وهو مطلوب ل Azure حماية البيانات. إنشاء كيان هذه الخدمة يدويا عبر الوحدة النمطية Azure Az PowerShell.
+لا يتوفر كيان خدمة **مزامنة Microsoft Purview حماية البيانات** في مستأجري Azure China بشكل افتراضي، وهو مطلوب ل Azure حماية البيانات. إنشاء كيان هذه الخدمة يدويا عبر الوحدة النمطية Azure Az PowerShell.
 
 1. إذا لم تكن وحدة Azure Az مثبتة لديك، فقم بتثبيتها أو استخدم موردا حيث تأتي وحدة Azure Az مثبتة مسبقا، مثل [Azure Cloud Shell](/azure/cloud-shell/overview). لمزيد من المعلومات، راجع [تثبيت الوحدة النمطية Azure Az PowerShell](/powershell/azure/install-az-ps).
 
@@ -98,7 +98,7 @@ ms.locfileid: "64782886"
     Connect-azaccount -environmentname azurechinacloud
     ```
 
-1. إنشاء **كيان خدمة مزامنة حماية البيانات في Microsoft** يدويا باستخدام [cmdlet New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) ومعرف `870c4f2e-85b6-4d43-bdda-6ed9a579b725` التطبيق لخدمة المزامنة حماية البيانات في Microsoft:
+1. إنشاء **كيان خدمة مزامنة Microsoft Purview حماية البيانات** يدويا باستخدام [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet ومعرف `870c4f2e-85b6-4d43-bdda-6ed9a579b725` التطبيق ل Microsoft Purview حماية البيانات Sync Service:
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725

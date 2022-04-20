@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: فهم الإعدادات التي يمكنك تكوينها في نهج الاستبقاء أو نهج تسمية الاستبقاء للاحتفاظ بما تريده والتخلص مما لا تريده.
-ms.openlocfilehash: 0ec9ace6d2a2205996baed8cd64ca0e29ac83ed3
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 729c31935ee3ded04a12f7822a17082ef1b52c26
+ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836073"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64911501"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>الإعدادات الشائعة لنهج الاستبقاء ونهج تسمية الاستبقاء
 
@@ -33,7 +33,7 @@ ms.locfileid: "64836073"
 بالنسبة للسيناريوهات التي تدعم هذه النهج للاستبقاء، راجع:
 
 - [إنشاء نهج الاستبقاء وتكوينها](create-retention-policies.md).
-- [إنشاء تسميات استبقاء وتطبيقها في التطبيقات](create-apply-retention-labels.md)
+- [نشر تسميات الاستبقاء وتطبيقها في التطبيقات](create-apply-retention-labels.md)
 - [تطبيق تسمية استبقاء على المحتوى تلقائيا](apply-retention-labels-automatically.md)
 
 يتم شرح الإعدادات الخاصة بكل سيناريو في وثائق كل منها.
