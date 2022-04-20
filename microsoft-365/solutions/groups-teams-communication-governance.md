@@ -15,57 +15,57 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 recommendations: false
-description: تعرف على سيناريوهات التعاون في إدارة الاتصالات.
-ms.openlocfilehash: ace313ce20445aafc06b184a72cc45c2ce0118ef
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+description: تعرف على سيناريوهات التعاون في حوكمة الاتصالات.
+ms.openlocfilehash: 83dd8384acee2e4fc0de6ac2514533bf7d53c879
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "63575269"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64947462"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>حوكمة الاتصالات لسيناريوهات التعاون
 
-Microsoft 365 عدد من عناصر التحكم لمساعدتك على إدارة الاتصال في مؤسستك، بما في ذلك إعدادات المراسلة والاجتماعات. راجع هذه الخيارات وكيفية تعيينها لاحتياجات عملك وحساسية بياناتك ونطاق الأشخاص الذين يحتاج المستخدمون إلى التعاون معهم.
+يوفر Microsoft 365 عددا من عناصر التحكم لمساعدتك على التحكم في الاتصال في مؤسستك، بما في ذلك إعدادات المراسلة والاجتماعات. راجع هذه الخيارات وفكر في كيفية تعيينها لاحتياجات عملك، وحساسية بياناتك، ونطاق الأشخاص الذين يحتاج المستخدمون إلى التعاون معهم.
 
-يوفر الجدول التالي مرجعا سريعا لمراقبة الاتصالات المتوفرة في Microsoft 365. يتم توفير مزيد من المعلومات في الأقسام التالية.
+يوفر الجدول التالي مرجعا سريعا لعناصر تحكم الاتصالات المتوفرة في Microsoft 365. يتم توفير مزيد من المعلومات في الأقسام التالية.
 
 |الفئة|الوصف|المرجع|
 |:-------|:----------|:--------|
-|المراسلة|||
-||إدارة ما يمكن للمستخدمين القيام به أثناء المراسلة في Teams.|[إدارة سياسات المراسلة في Teams](/microsoftteams/messaging-policies-in-teams)|
-||التحكم في الأشخاص الذين يمكنهم بدء عمليات النشر والرد عليها في قناة.|[إعداد الإشراف على القناة وإدارتها في Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)|
+|المراسله|||
+||إدارة ما يمكن للمستخدمين القيام به أثناء المراسلة في Teams.|[إدارة نهج المراسلة في Teams](/microsoftteams/messaging-policies-in-teams)|
+||التحكم في الأشخاص الذين يمكنهم بدء المنشورات والرد عليها في قناة.|[إعداد الإشراف على القناة وإدارتها في Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)|
 |الاجتماعات|||
-||إدارة ما يمكن للمشاركين في الاجتماع القيام به.|[إدارة سياسات الاجتماعات في Teams](/microsoftteams/meeting-policies-in-teams)|
-||السماح للمستخدمين المجهولين بالانضمام إلى الاجتماعات أو منعهم.|[السماح للمستخدمين المجهولين بالانضمام إلى الاجتماعات](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
+||إدارة ما يمكن للمشاركين في الاجتماع القيام به.|[إدارة نهج الاجتماع في Teams](/microsoftteams/meeting-policies-in-teams)|
+||السماح للمستخدمين المجهولين بالانضمام إلى الاجتماعات أو منعهم منها.|[السماح للمستخدمين المجهولين بالانضمام إلى الاجتماعات](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
 |توافق الاتصالات|||
-||Surface والاستجابة للتواصل المهمل والمهمل|[توافق الاتصالات في Microsoft 365](../compliance/communication-compliance.md)|
+||السطح والاستجابة للاتصالات المهملة والإهمال|[توافق الاتصالات](../compliance/communication-compliance.md)|
 
-## <a name="messaging"></a>المراسلة
+## <a name="messaging"></a>المراسله
 
-يمكنك التحكم في ميزات مراسلة الدردشة والقناة - مثل تحرير الرسائل أو حذفها - المتوفرة للمستخدمين في Microsoft Teams باستخدام سياسات المراسلة. يمكنك إنشاء سياسات مختلفة لمستخدمين ومجموعات مختلفة.
+يمكنك التحكم في ميزات الدردشة ومراسلة القناة - مثل تحرير الرسائل أو حذفها - المتوفرة للمستخدمين في Microsoft Teams باستخدام نهج المراسلة. يمكنك إنشاء نهج مختلفة لمستخدمين ومجموعات مختلفة.
 
-[إدارة سياسات المراسلة في Teams](/microsoftteams/messaging-policies-in-teams)
+[إدارة نهج المراسلة في Teams](/microsoftteams/messaging-policies-in-teams)
 
-يمكنك التحكم في الأشخاص الذين يمكنهم بدء عمليات النشر الجديدة والرد على المنشورات في Teams عبر تكوين الإشراف على القناة.
+يمكنك التحكم في الأشخاص الذين يمكنهم بدء منشورات جديدة والرد على المنشورات في قناة Teams من خلال تكوين الإشراف على القناة.
 
 [إعداد الإشراف على القناة وإدارتها في Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)
 
 ## <a name="meetings"></a>الاجتماعات
 
-يمكنك التحكم في الميزات المتوفرة Teams الاجتماع، بما في ذلك الجدولة ومشاركة المحتوى والمشاركين ونهج الصوت والفيديو.
+يمكنك التحكم في الميزات المتوفرة Teams المشاركين في الاجتماع، بما في ذلك الجدولة ومشاركة المحتوى والمشاركين ونهج الصوت والفيديو.
 
-[إدارة سياسات الاجتماعات في Teams](/microsoftteams/meeting-policies-in-teams)
+[إدارة نهج الاجتماع في Teams](/microsoftteams/meeting-policies-in-teams)
 
-يمكنك التحكم في الانضمام المجهول Teams الاجتماعات التي تسمح لأي شخص له ارتباط إلى الاجتماع بالانضمام.
+يمكنك التحكم في الانضمام المجهول لاجتماعات Teams التي تسمح لأي شخص لديه ارتباط إلى الاجتماع بالانضمام.
 
 [السماح للمستخدمين المجهولين بالانضمام إلى الاجتماعات](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
 
 
 ## <a name="communication-compliance"></a>توافق الاتصالات
 
-يسمح لك توافق Microsoft 365 بمعاينة الاتصالات للغة مسيئة ومعلومات حساسة ومعلومات ذات صلة بالمعايير الداخلية والتنظيمية. يمكن مراقبة اتصالات الدردشة Yammer علب البريد ورسائل البريد الإلكتروني، مع إنشاء تنبيهات. باستخدام أدوات الإدارة، يمكنك التعرف بسرعة على الرسائل ذات تطابقات النهج واتخاذ إجراء بشأنها.
+يسمح لك توافق الاتصالات بفحص الاتصالات لمعرفة اللغة المسيئة والمعلومات الحساسة والمعلومات المتعلقة بالمعايير الداخلية والتنظيمية. يمكن مراقبة اتصالات الدردشة وعلب البريد ورسائل Yammer، ما يؤدي إلى إنشاء تنبيهات. باستخدام أدوات الإدارة، يمكنك تحديد الرسائل ذات تطابقات النهج واتخاذ إجراء بشأنها بسرعة.
 
-[توافق الاتصالات في Microsoft 365](../compliance/communication-compliance.md)
+[التعرّف على توافق الاتصالات](../compliance/communication-compliance.md)
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
@@ -73,6 +73,6 @@ Microsoft 365 عدد من عناصر التحكم لمساعدتك على إدا
 
 [إنشاء خطة حوكمة التعاون](collaboration-governance-first.md)
 
-[إدارة Microsoft Teams الإعدادات لمنظمتك](/microsoftteams/enable-features-office-365)
+[إدارة إعدادات Microsoft Teams لمؤسستك](/microsoftteams/enable-features-office-365)
 
-[إدارة Yammer البيانات](/yammer/manage-security-and-compliance/manage-data-compliance)
+[إدارة توافق البيانات Yammer](/yammer/manage-security-and-compliance/manage-data-compliance)

@@ -1,5 +1,5 @@
 ---
-title: إدارة الأشخاص الذين يمكنهم إنشاء Microsoft 365 المجموعات
+title: إدارة الأشخاص الذين يمكنهم إنشاء مجموعات Microsoft 365
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
-description: تعرف على كيفية التحكم في المستخدمين الذين يمكنهم Microsoft 365 المجموعات.
-ms.openlocfilehash: 4280b6859358580547302ccf9497e8cd1e7ed752
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: تعرف على كيفية التحكم في المستخدمين الذين يمكنهم إنشاء مجموعات Microsoft 365.
+ms.openlocfilehash: 992f5c62654f23f90f910f62dc3bb78199b949b0
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63569557"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64946913"
 ---
-# <a name="manage-who-can-create-microsoft-365-groups"></a>إدارة الأشخاص الذين يمكنهم إنشاء Microsoft 365 المجموعات
+# <a name="manage-who-can-create-microsoft-365-groups"></a>إدارة الأشخاص الذين يمكنهم إنشاء مجموعات Microsoft 365
 
-بشكل افتراضي، يمكن لجميع المستخدمين إنشاء مجموعات Microsoft 365 المستخدمين. هذا هو النهج الموصى به لأنه يسمح للمستخدمين ببدء التعاون دون الحاجة إلى المساعدة من تقنية المعلومات.
+بشكل افتراضي، يمكن لجميع المستخدمين إنشاء مجموعات Microsoft 365. هذا هو النهج الموصى به لأنه يسمح للمستخدمين بالبدء في التعاون دون الحاجة إلى مساعدة من تكنولوجيا المعلومات.
 
-إذا تطلب عملك تقييد الأشخاص الذين يمكنهم إنشاء مجموعات، يمكنك تقييد Microsoft 365 المجموعات لأعضاء مجموعة معينة Microsoft 365 مجموعة أو مجموعة أمان.
+إذا تطلب عملك تقييد الأشخاص الذين يمكنهم إنشاء مجموعات، يمكنك تقييد إنشاء مجموعات Microsoft 365 لأعضاء مجموعة Microsoft 365 معينة أو مجموعة أمان معينة.
 
-إذا كنت قلقا بشأن إنشاء المستخدمين لفرق أو مجموعات لا تتوافق مع معايير العمل، فنظر في مطالبة المستخدمين لإكمال دورة تدريبية ثم إضافتهم إلى مجموعة المستخدمين المسموح بهم.
+إذا كنت قلقا بشأن المستخدمين الذين ينشئون فرقا أو مجموعات لا تتوافق مع معايير عملك، ففكر في مطالبة المستخدمين بإكمال دورة تدريبية ثم إضافتهم إلى مجموعة المستخدمين المسموح لهم.
 
-عند تحديد الأشخاص الذين يمكنهم إنشاء مجموعة، يؤثر ذلك على كل الخدمات التي تعتمد على المجموعات للوصول إليها، بما في ذلك:
+عندما تحدد الأشخاص الذين يمكنهم إنشاء مجموعة، يؤثر ذلك على جميع الخدمات التي تعتمد على المجموعات للوصول، بما في ذلك:
 
 - Outlook
 - SharePoint
@@ -42,75 +42,75 @@ ms.locfileid: "63569557"
 - Microsoft Stream
 - Planner
 - Power BI (كلاسيكي)
-- Project ويب / المخطط
+- Project للويب / المخطط
 
-لن تمنع الخطوات في هذه المقالة أعضاء أدوار معينة من إنشاء المجموعات. Office 365 يمكن للمسؤولين العامين إنشاء المجموعات عبر مركز مسؤولي Microsoft 365 و Planner Exchange و SharePoint Online. يمكن لأدوار أخرى إنشاء مجموعات عبر وسائل محدودة، مدرجة أدناه.
+لن تمنع الخطوات الواردة في هذه المقالة أعضاء أدوار معينة من إنشاء مجموعات. Microsoft 365 يمكن للمسؤولين العموميين إنشاء مجموعات عبر مركز مسؤولي Microsoft 365 و Planner Exchange SharePoint، ولكن ليس مواقع أخرى مثل Teams. يمكن لأدوار أخرى إنشاء مجموعات Microsoft 365 عبر وسائل محدودة، مدرجة أدناه.
 
-- Exchange المسؤول: Exchange إدارة Azure AD
-- دعم من المستوى 1 الشريك: مركز مسؤولي Microsoft 365، Exchange إدارة، Azure AD
-- دعم من المستوى 2 الشريك: مركز مسؤولي Microsoft 365، Exchange إدارة، Azure AD
+- مسؤول Exchange: مركز إدارة Exchange، Azure AD
+- دعم الشريك من المستوى 1: مركز مسؤولي Microsoft 365، مركز إدارة Exchange، Azure AD
+- دعم الشريك من المستوى 2: مركز مسؤولي Microsoft 365، مركز إدارة Exchange، Azure AD
 - كتاب الدليل: Azure AD
-- SharePoint: SharePoint إدارة Azure AD
-- Teams الخدمة: Teams إدارة Azure AD
+- مسؤول SharePoint: مركز إدارة SharePoint، Azure AD
+- مسؤول خدمة Teams: مركز إدارة Teams، Azure AD
 - مسؤول المستخدم: مركز مسؤولي Microsoft 365، Azure AD
 
-إذا كنت عضوا في أحد هذه الأدوار، يمكنك إنشاء مجموعات Microsoft 365 للمستخدمين المقيدين، ثم تعيين المستخدم كمالك المجموعة.
+إذا كنت عضوا في أحد هذه الأدوار، يمكنك إنشاء مجموعات Microsoft 365 للمستخدمين المقيدين، ثم تعيين المستخدم كمالك للمجموعة.
 
 ## <a name="licensing-requirements"></a>متطلبات الترخيص
 
-لإدارة الأشخاص الذين ينشئون المجموعات، يحتاج الأشخاص التاليون إلى تعيين تراخيص Azure AD Premium لهم:
+لإدارة من يقوم بإنشاء المجموعات، يحتاج الأشخاص التاليون إلى تراخيص Premium Azure AD أو تراخيص Azure AD Basic EDU المعينة لهم:
 
-- المسؤول الذي قام بتكوين إعدادات إنشاء المجموعة هذه
+- المسؤول الذي يقوم بتكوين إعدادات إنشاء المجموعة هذه
 - أعضاء المجموعة المسموح لهم بإنشاء مجموعات
 
 > [!NOTE]
-> راجع [تعيين تراخيص أو إزالتها في مدخل Azure Active Directory](/azure/active-directory/fundamentals/license-users-groups) للحصول على مزيد من التفاصيل حول كيفية تعيين تراخيص Azure.
+> راجع [تعيين التراخيص أو إزالتها في مدخل Microsoft Azure Active Directory](/azure/active-directory/fundamentals/license-users-groups) للحصول على مزيد من التفاصيل حول كيفية تعيين تراخيص Azure.
 
-لا يحتاج الأشخاص التاليون إلى تراخيص Azure AD Premium تعيينها لهم:
+لا يحتاج الأشخاص التاليون إلى تراخيص Azure AD Premium أو Azure AD Basic EDU المعينة لهم:
 
-- الأشخاص الذين هم أعضاء Microsoft 365 المجموعات وليس لديهم القدرة على إنشاء مجموعات أخرى.
+- الأشخاص الأعضاء في مجموعات Microsoft 365 والذين ليس لديهم القدرة على إنشاء مجموعات أخرى.
 
 ## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>الخطوة 1: إنشاء مجموعة للمستخدمين الذين يحتاجون إلى إنشاء مجموعات Microsoft 365
 
-يمكن استخدام مجموعة واحدة فقط في مؤسستك للتحكم في الأشخاص القادرين على إنشاء المجموعات. ولكن، يمكنك تداخل المجموعات الأخرى كأعضاء في هذه المجموعة.
+يمكن استخدام مجموعة واحدة فقط في مؤسستك للتحكم في من يمكنه إنشاء مجموعات Microsoft 365. ولكن، يمكنك تداخل مجموعات أخرى كأعضاء في هذه المجموعة.
 
-لا يحتاج المسؤولون في الأدوار المذكورة أعلاه إلى أن يكونوا أعضاء في هذه المجموعة: حيث يحتفظون بقدرتهم على إنشاء مجموعات.
+لا يحتاج المسؤولون في الأدوار المذكورة أعلاه إلى أن يكونوا أعضاء في هذه المجموعة: فهم يحتفظون بقدرتهم على إنشاء مجموعات.
 
 1. في مركز الإدارة، انتقل إلى [صفحة المجموعات](https://admin.microsoft.com/adminportal/home#/groups).
 
-2. انقر فوق **إضافة مجموعة**.
+2. انقر فوق **"إضافة مجموعة**".
 
 3. اختر نوع المجموعة الذي تريده. تذكر اسم المجموعة! ستحتاج إليها لاحقا.
 
-4. قم بالانتهاء من إعداد المجموعة، وإضافة الأشخاص أو المجموعات الأخرى التي تريد أن تكون قادرة على إنشاء مجموعات في المؤسسة.
+4. قم بإنهاء إعداد المجموعة، وإضافة أشخاص أو مجموعات أخرى تريد تمكينهم من إنشاء مجموعات كأعضاء (وليس مالكين).
 
-للحصول على إرشادات مفصلة، راجع [إنشاء مجموعة أمان أو تحريرها أو حذفها في](../admin/email/create-edit-or-delete-a-security-group.md) مركز مسؤولي Microsoft 365.
+للحصول على إرشادات مفصلة، راجع [إنشاء مجموعة أمان أو تحريرها أو حذفها في مركز مسؤولي Microsoft 365](../admin/email/create-edit-or-delete-a-security-group.md).
 
 ## <a name="step-2-run-powershell-commands"></a>الخطوة 2: تشغيل أوامر PowerShell
 
-يجب استخدام إصدار المعاينة من [Azure Active Directory PowerShell ل Graph (AzureAD) (](/powershell/azure/active-directory/install-adv2)اسم الوحدة النمطية **AzureADPreview**) لتغيير إعداد وصول الضيف على مستوى المجموعة:
+يجب استخدام إصدار المعاينة من [Azure Active Directory PowerShell ل Graph (AzureAD)](/powershell/azure/active-directory/install-adv2) (اسم الوحدة النمطية **AzureADPreview**) لتغيير إعداد الوصول إلى الضيف على مستوى المجموعة:
 
-- إذا لم تقم بتثبيت أي إصدار من وحدة Azure AD PowerShell النمطية من قبل، فشاهد تثبيت وحدة [Azure AD النمطية](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) واتبع الإرشادات لتثبيت إصدار المعاينة العامة.
+- إذا لم تكن قد قمت بتثبيت أي إصدار من الوحدة النمطية Azure AD PowerShell من قبل، فراجع [تثبيت وحدة Azure AD النمطية](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) واتبع الإرشادات لتثبيت إصدار المعاينة العامة.
 
-- إذا كان لديك إصدار التوفر العام 2.0 من وحدة Azure AD PowerShell النمطية (AzureAD)، `Uninstall-Module AzureAD` فيجب إلغاء تثبيته عن طريق تشغيله في جلسة PowerShell، ثم تثبيت إصدار المعاينة عن طريق تشغيل `Install-Module AzureADPreview`.
+- إذا كان لديك إصدار التوفر العام 2.0 للوحدة النمطية Azure AD PowerShell (AzureAD)، يجب إلغاء تثبيته عن طريق التشغيل `Uninstall-Module AzureAD` في جلسة PowerShell، ثم تثبيت إصدار المعاينة عن طريق تشغيل `Install-Module AzureADPreview`.
 
-- إذا قمت بتثبيت إصدار المعاينة بالفعل، فتأكد `Install-Module AzureADPreview` من أنه أحدث إصدار من هذه الوحدة النمطية.
+- إذا قمت بالفعل بتثبيت إصدار المعاينة، فقم بتشغيله `Install-Module AzureADPreview` للتأكد من أنه أحدث إصدار من هذه الوحدة النمطية.
 
-انسخ البرنامج النصي أدناه إلى محرر نص، مثل المفكرة أو Windows PowerShell [ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
+انسخ البرنامج النصي أدناه إلى محرر نص، مثل المفكرة أو [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
-استبدل *\<GroupName\>* باسم المجموعة التي أنشأتها. على سبيل المثال:
+استبدل *\<GroupName\>* باسم المجموعة التي قمت بإنشائها. على سبيل المثال:
 
 `$GroupName = "Group Creators"`
 
 احفظ الملف GroupCreators.ps1.
 
-في نافذة PowerShell، انتقل إلى الموقع حيث حفظت الملف (اكتب "CD \<FileLocation\>").
+في نافذة PowerShell، انتقل إلى الموقع حيث قمت بحفظ الملف (اكتب "CD \<FileLocation\>").
 
-تشغيل البرنامج النصي بالكتابة:
+تشغيل البرنامج النصي عن طريق كتابة:
 
 `.\GroupCreators.ps1`
 
-سجل [الدخول باستخدام حساب المسؤول عند](../enterprise/connect-to-microsoft-365-powershell.md#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) مطالبتك بذلك.
+[وسجل الدخول باستخدام حساب المسؤول](../enterprise/connect-to-microsoft-365-powershell.md#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) عند المطالبة.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -143,28 +143,28 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 سيعرض السطر الأخير من البرنامج النصي الإعدادات المحدثة:
 
-![لقطة شاشة إخراج البرنامج النصي من PowerShell.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
+![لقطة شاشة لإخراج البرنامج النصي PowerShell.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
-إذا كنت تريد تغيير المجموعة التي يتم استخدامها في المستقبل، يمكنك إعادة تشغيل البرنامج النصي باسم المجموعة الجديدة.
+إذا كنت تريد في المستقبل تغيير المجموعة المستخدمة، يمكنك إعادة تشغيل البرنامج النصي باسم المجموعة الجديدة.
 
-إذا كنت تريد إيقاف تشغيل تقييد إنشاء المجموعة والسماح مرة أخرى لجميع المستخدمين بإنشاء مجموعات، فحدد $GroupName إلى "" $AllowGroupCreation إلى "True" ثم إعادة تشغيل البرنامج النصي.
+إذا كنت تريد إيقاف تشغيل تقييد إنشاء المجموعة والسماح مرة أخرى لكافة المستخدمين بإنشاء مجموعات، فقم بتعيين $GroupName إلى "" $AllowGroupCreation إلى "صواب" ثم أعد تشغيل البرنامج النصي.
 
 ## <a name="step-3-verify-that-it-works"></a>الخطوة 3: التحقق من عملها
 
-قد تستغرق التغييرات 30 دقيقة أو أكثر لكي يتم إدخالها حيز التنفيذ. يمكنك التحقق من الإعدادات الجديدة عبر القيام بما يلي:
+قد تستغرق التغييرات 30 دقيقة أو أكثر لتدخل حيز التنفيذ. يمكنك التحقق من الإعدادات الجديدة من خلال القيام بما يلي:
 
-1. سجل الدخول Microsoft 365 حساب مستخدم لشخص لا يجب أن يكون لديه القدرة على إنشاء مجموعات. وهذا يعني أنه ليس عضوا في المجموعة التي أنشأتها أو مسؤولا.
+1. سجل الدخول إلى Microsoft 365 باستخدام حساب مستخدم لشخص لا يجب أن يكون لديه القدرة على إنشاء مجموعات. أي أنها ليست عضوا في المجموعة التي أنشأتها أو المسؤول.
 
 2. حدد لوحة **Planner** .
 
-3. في Planner، حدد **خطة جديدة** في التنقل الأيسر لإنشاء خطة.
+3. في Planner، حدد **"خطة جديدة** " في جزء التنقل الأيمن لإنشاء خطة.
 
-4. يجب أن تظهر رسالة تعلمك بتعطيل الخطة وإنشاء المجموعة.
+4. يجب أن تتلقى رسالة تفيد بتعطيل إنشاء الخطة والمجموعة.
 
-جرب الإجراء نفسه مرة أخرى مع أحد أعضاء المجموعة.
+حاول الإجراء نفسه مرة أخرى مع عضو في المجموعة.
 
 > [!NOTE]
-> إذا لم يتمكن أعضاء المجموعة من إنشاء مجموعات، فتحقق من عدم حظرهم من خلال نهج [علبة بريد OWA](/powershell/module/exchange/set-owamailboxpolicy).
+> إذا لم يتمكن أعضاء المجموعة من إنشاء مجموعات، فتحقق من عدم حظرهم من خلال [نهج علبة بريد OWA](/powershell/module/exchange/set-owamailboxpolicy).
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
@@ -172,10 +172,10 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 [إنشاء خطة حوكمة التعاون](collaboration-governance-first.md)
 
-[بدء العمل مع Office 365 PowerShell](../enterprise/getting-started-with-microsoft-365-powershell.md)
+[بدء استخدام Office 365 PowerShell](../enterprise/getting-started-with-microsoft-365-powershell.md)
 
 [إعداد إدارة مجموعة الخدمة الذاتية في Azure Active Directory](/azure/active-directory/users-groups-roles/groups-self-service-management)
 
 [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-[Cmdlets في Azure Active Directory لتكوين إعدادات المجموعة](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
+[أوامر cmdlets Azure Active Directory لتكوين إعدادات المجموعة](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)

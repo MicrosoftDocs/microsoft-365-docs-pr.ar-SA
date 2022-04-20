@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ce78707ecd2a66a04bb2e44aeb39f6e48a269531
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 64d1284b315b7d565a924499ef5af2b815263dac
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825135"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945186"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>صور توضيحية لإنتاجية Microsoft 365
 
@@ -64,7 +64,7 @@ ms.locfileid: "64825135"
 
 | البند | الوصف |
 |:-----|:-----|
-|[![ملصق النموذج: Microsoft 365 قدرات حماية المعلومات والامتثال.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> الإنجليزية: [تنزيل كملف PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> اليابانية: [تنزيل كملف PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> تم التحديث في نوفمبر 2020|يتضمن: <ul><li>  حماية المعلومات ومنع فقدان البيانات في Microsoft</li><li>نهج الاستبقاء وتسميات الاستبقاء </li><li>عوائق المعلومات</li><li>توافق الاتصالات</li><li>مخاطر Insider</li><li>استيعاب بيانات الجهات الخارجية</li>|
+|[![ملصق النموذج: Microsoft 365 قدرات حماية المعلومات والامتثال.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> الإنجليزية: [تنزيل كملف PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> اليابانية: [تنزيل كملف PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> تم التحديث في نوفمبر 2020|يتضمن: <ul><li>  منع فقدان بيانات Microsoft Purview حماية البيانات وMicrosoft Purview</li><li>نهج الاستبقاء وتسميات الاستبقاء </li><li>عوائق المعلومات</li><li>توافق الاتصالات</li><li>مخاطر Insider</li><li>استيعاب بيانات الجهات الخارجية</li>|
 
 
 ## <a name="security-and-information-protection-for-multi-region-organizations"></a>الأمان حماية البيانات للمؤسسات متعددة المناطق

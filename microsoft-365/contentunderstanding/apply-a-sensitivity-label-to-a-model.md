@@ -1,5 +1,5 @@
 ---
-title: تطبيق تسمية حساسية على نموذج في Microsoft SharePoint Syntex
+title: تطبيق وصف الحساسية على نموذج في Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,71 +12,71 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 ms.localizationpriority: medium
-description: تعرف على كيفية تطبيق تسمية حساسية على نموذج في SharePoint Syntex.
-ms.openlocfilehash: a7e6ea878fd7fceb6b7496dbcfb90a50f3e8ce1e
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: تعرف على كيفية تطبيق وصف الحساسية على نموذج في SharePoint Syntex.
+ms.openlocfilehash: 4ab530fbd4a187f03617b01b6b9661332ad1a7d9
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64635076"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945594"
 ---
-# <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>تطبيق تسمية حساسية على نموذج في Microsoft SharePoint Syntex
+# <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>تطبيق وصف الحساسية على نموذج في Microsoft SharePoint Syntex
 
-يمكنك بسهولة تطبيق تسمية [حساسية](../compliance/sensitivity-labels.md) على نماذج فهم المستندات في Microsoft SharePoint Syntex. هذه الميزة غير متوفرة بعد لنماذج معالجة النماذج.
+يمكنك بسهولة تطبيق [وصف الحساسية](../compliance/sensitivity-labels.md) على نماذج فهم المستندات في Microsoft SharePoint Syntex. هذه الميزة غير متوفرة بعد لنماذج معالجة النماذج.
 
-تسمح لك تسميات الحساسية بتطبيق التشفير على المستندات التي تحددها نماذجك. على سبيل المثال، تريد أن يحدد النموذج الخاص بك ليس فقط أي مستندات مالية تحتوي على أرقام حسابات بنكية أو أرقام بطاقات ائتمان يتم تحميلها إلى مكتبة المستندات، ولكن أيضا لتطبيق تسمية الحساسية التي تم تكوينها مع إعدادات التشفير لتقييد الأشخاص الذين يمكنهم الوصول إلى هذا المحتوى وكيفية استخدامه. SharePoint Syntex النماذج الجديدة قواعد [ترتيب](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) التسميات ولا ت الكتابة فوق تسمية موجودة تم تطبيقها يدويا من قبل المستخدم على الملف. 
+تتيح لك تسميات الحساسية تطبيق التشفير على المستندات التي تحددها نماذجك. على سبيل المثال، تريد أن لا يحدد النموذج الخاص بك أي مستندات مالية تحتوي على أرقام حسابات بنكية أو أرقام بطاقات ائتمان يتم تحميلها إلى مكتبة المستندات فحسب، بل تريد أيضا تطبيق وصف الحساسية الذي تم تكوينه مع إعدادات التشفير لتقييد من يمكنه الوصول إلى هذا المحتوى وكيفية استخدامه. تحترم النماذج SharePoint Syntex قواعد [ترتيب التسمية](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) ولا تقوم أيضا بالكتابة فوق تسمية موجودة تم تطبيقها يدويا من قبل مستخدم على الملف. 
 
-يمكنك تطبيق تسمية حساسية موجودة مسبقا على النموذج من خلال إعدادات النموذج على الصفحة الرئيسية للنموذج. يجب أن تكون التسمية منشورة بالفعل لتكون متوفرة للاختيار من إعدادات النموذج. تنطبق التسميات Office ملفات Word (.docx) PowerPoint (.pptx) Excel (.xlsx). 
+يمكنك تطبيق وصف حساسية موجود مسبقا على النموذج الخاص بك من خلال إعدادات النموذج الخاص بك على الصفحة الرئيسية لنموذجك. يجب نشر التسمية مسبقا لتكون متوفرة للتحديد من إعدادات النموذج. تنطبق التسميات على ملفات Office ل Word (.docx) PowerPoint (.pptx) Excel (.xlsx). 
 
 > [!Important]
-> لكي تتوفر تسميات الحساسية لتطبيقها على نماذج فهم المستندات، يجب إنشاؤها ونشرها [في Microsoft 365 مركز التوافق](../compliance/microsoft-365-compliance-center.md).
+> لكي تتوفر أوصاف الحساسية لتطبيقها على نماذج فهم المستندات، يجب [إنشاؤها ونشرها في مدخل توافق Microsoft Purview](../admin/security-and-compliance/set-up-compliance.md).
 
-## <a name="add-a-sensitivity-label-to-a-document-understanding-model"></a>إضافة تسمية حساسية إلى نموذج فهم المستند
+## <a name="add-a-sensitivity-label-to-a-document-understanding-model"></a>إضافة وصف الحساسية إلى نموذج فهم المستند
 
 1. من الصفحة الرئيسية للنموذج، حدد **إعدادات النموذج**.
 
-   ![لقطة شاشة لصفحة "النماذج" مع تمييز الخيار "إعدادات النموذج".](../media/content-understanding/sensitivity-model-settings.png)
+   ![لقطة شاشة لصفحة النماذج مع تمييز خيار إعدادات النموذج.](../media/content-understanding/sensitivity-model-settings.png)
 
-2. في **جزء إعدادات** النموذج، في المقطع توافق،  حدد قائمة تسمية الحساسية لرؤية  قائمة تسميات الحساسية المتوفرة لتطبيقها على النموذج.
+2. في جزء **"Model settings** "، في قسم **"Compliance** "، حدد قائمة **وصف الحساسية** لمشاهدة قائمة أوصاف الحساسية المتوفرة لك لتطبيقها على النموذج.
 
-   ![لقطة شاشة ل جزء إعدادات النموذج تعرض قائمة تسمية الحساسية.](../media/content-understanding/sensitivity-model-settings-pane.png) 
+   ![لقطة شاشة لجزء إعدادات النموذج تعرض قائمة وصف الحساسية.](../media/content-understanding/sensitivity-model-settings-pane.png) 
 
-3. حدد تسمية الحساسية التي تريد تطبيقها على النموذج، ثم حدد **حفظ**.
+3. حدد وصف الحساسية الذي تريد تطبيقه على النموذج، ثم حدد **"حفظ**".
 
-بعد تطبيق تسمية الحساسية على النموذج، يمكنك تطبيقها على:
+بعد تطبيق وصف الحساسية على نموذجك، يمكنك تطبيقه على:
 
 - مكتبة مستندات جديدة
 - مكتبة المستندات التي تم تطبيق النموذج عليها بالفعل
  
-### <a name="apply-the-sensitivity-label-to-a-document-library-to-which-the-model-is-already-applied"></a>تطبيق تسمية الحساسية على مكتبة مستندات تم تطبيق النموذج عليها بالفعل
+### <a name="apply-the-sensitivity-label-to-a-document-library-to-which-the-model-is-already-applied"></a>تطبيق وصف الحساسية على مكتبة مستندات تم تطبيق النموذج عليها بالفعل
 
-إذا تم بالفعل تطبيق نموذج فهم المستند على مكتبة مستندات، يمكنك القيام بما يلي لمزامنة تحديث تسمية الحساسية لتطبيقه على مكتبة المستندات:
+إذا تم بالفعل تطبيق نموذج فهم المستند على مكتبة مستندات، يمكنك القيام بما يلي لمزامنة تحديث وصف الحساسية لتطبيقه على مكتبة المستندات:
 
-1. في الصفحة الرئيسية للنموذج، في المقطع  مكتبات بهذا النموذج، حدد مكتبة المستندات التي تريد تطبيق تحديث تسمية الحساسية عليها.
+1. في الصفحة الرئيسية للنموذج، في **مكتبات قسم النموذج هذا** ، حدد مكتبة المستندات التي تريد تطبيق تحديث وصف الحساسية عليها.
 
-2. حدد **مزامنة**.
+2. حدد **"مزامنة**".
 
-   ![لقطة شاشة تعرض المكتبات التي تحتوي على مقطع النموذج هذا مع تمييز "مزامنة".](../media/content-understanding/sensitivity-libraries-sync.png)
+   ![Screenshot showing Libraries with this model section with Sync highlighted.](../media/content-understanding/sensitivity-libraries-sync.png)
 
-بعد تطبيق التحديث ومزامنته مع النموذج، يمكنك تأكيد أنه قد تم تطبيقه من خلال القيام بالخطوات التالية:
+بعد تطبيق التحديث ومزامنته مع النموذج الخاص بك، يمكنك التأكد من أنه قد تم تطبيقه من خلال تنفيذ الخطوات التالية:
 
-1. في مركز المحتوى، في **قسم المكتبات** التي تحتوي على هذا النموذج، حدد المكتبة التي تم تطبيق النموذج المحدث عليها. 
+1. في مركز المحتوى، في **المكتبات التي تحتوي على قسم النموذج هذا** ، حدد المكتبة التي تم تطبيق النموذج المحدث عليها. 
 
 2. في طريقة عرض مكتبة المستندات، حدد أيقونة المعلومات للتحقق من خصائص النموذج.
 
-3. في القائمة **نماذج** نشطة، حدد النموذج المحدث.
+3. في قائمة **النماذج النشطة** ، حدد النموذج المحدث.
 
-4. في المقطع **تسمية الحساسية** ، سترى اسم تسمية الحساسية المطبقة.
+4. في قسم **وصف الحساسية** ، سترى اسم وصف الحساسية المطبقة.
 
-في صفحة عرض النموذج في مكتبة المستندات، سيتم عرض عمود تسمية حساسية جديد. بما أن النموذج يصنف الملفات التي يحددها على أنها تنتمي إلى نوع المحتوى الخاص به ويدرجها في طريقة عرض المكتبة،  سيعرض عمود تسمية الحساسية أيضا اسم تسمية الحساسية التي تم تطبيقها عليها من خلال النموذج.
+في صفحة عرض النموذج في مكتبة المستندات، سيتم عرض عمود **وصف الحساسية** الجديد. بينما يصنف نموذجك الملفات التي يحددها على أنها تنتمي إلى نوع المحتوى الخاص به ويسردها في طريقة عرض المكتبة، سيعرض عمود **وصف الحساسية** أيضا اسم وصف الحساسية الذي تم تطبيقه عليه من خلال النموذج.
 
-على سبيل المثال، سيتم أيضا تطبيق تسمية حساسية التشفير على كل المستندات المالية التي يحددها النموذج، مما يمنع الأشخاص غير المصرح لهم بالوصول إليها. إذا تم إجراء محاولة للوصول إلى الملف من مكتبة المستندات من قبل شخص غير مصرح به، سيتم عرض خطأ يقول إنه غير مسموح به بسبب تسمية الحساسية المطبقة.
+على سبيل المثال، ستطبق على جميع المستندات المالية التي يحددها نموذجك أيضا تسمية حساسية *التشفير* ، ما يمنع الوصول إليها من قبل أشخاص غير مصرح لهم. إذا تمت محاولة الوصول إلى الملف من مكتبة المستندات من قبل شخص غير مصرح به، فسيظهر خطأ يقول إنه غير مسموح به بسبب تسمية الحساسية المطبقة.
 
 <!---
 ## Add a sensitivity label to a form processing model
 
 > [!Important]
-> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft 365 Compliance Center](../business-premium/m365bp-set-up-compliance.md).
+> For sensitivity labels to be available to apply to your form processing model, they need to be [created and published in the Microsoft Purview compliance portal](../admin/security-and-compliance/set-up-compliance.md).
 
 You can either apply a sensitivity label to a form processing model when you are creating a model, or apply it to an existing model.
 
@@ -121,8 +121,8 @@ You can add a sensitivity label to an existing form processing model that you ow
 
 [تطبيق تسمية استبقاء](apply-a-retention-label-to-a-model.md)
 
-[إنشاء تصنيف](create-a-classifier.md)
+[إنشاء مصنف](create-a-classifier.md)
 
 [إنشاء مستخرج](create-an-extractor.md)
 
-[نظرة عامة حول فهم المستند](document-understanding-overview.md)
+[نظرة عامة على فهم المستند](document-understanding-overview.md)

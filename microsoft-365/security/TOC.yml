@@ -1,34 +1,34 @@
-- name: Microsoft 365 الأمان
+- name: الأمان في Microsoft 365
   href: index.yml
   expanded: true
   items:
-    - name: بدء العمل
+    - name: بدء الاستخدام
       items:
-        - name: Microsoft 365 نشر الثقة الصفرية
+        - name: خطة نشر الثقة المعدومة من Microsoft 365
           href: microsoft-365-zero-trust.md
         - name: أهم المهام لدعم العمل من المنزل
           href: top-security-tasks-for-remote-work.md
-    - name: تكوينات الوصول إلى الأجهزة وهوية الثقة الصفرية
+    - name: ثقة معدومة تكوينات الهوية والوصول إلى الجهاز
       items:
         - name: نظرة عامة
           href: ./office-365-security/microsoft-365-policies-configurations.md
         - name: عمل المتطلبات الأساسية
           href: ./office-365-security/identity-access-prerequisites.md
-        - name: ونهج الوصول إلى الأجهزة والهوية الشائعة
+        - name: نهج الوصول إلى الهوية والجهاز الشائعة
           href: ./office-365-security/identity-access-policies.md
-        - name: سياسات المستخدمين الضيوف والخارجيين
+        - name: نهج المستخدمين الضيوف والخارجيين
           href: ./office-365-security/identity-access-policies-guest-access.md
-        - name: سياسات الوصول Teams المستحسنة
+        - name: نهج الوصول Teams الموصى بها
           href: ./office-365-security/teams-access-policies.md
-        - name: سياسات الوصول Exchange المستحسنة
+        - name: نهج الوصول Exchange الموصى بها
           href: ./office-365-security/secure-email-recommended-policies.md
-        - name: سياسات الوصول SharePoint المستحسنة
+        - name: نهج الوصول SharePoint الموصى بها
           href: ./office-365-security/sharepoint-file-access-policies.md
-        - name: سياسات "Defender for Cloud Apps" المستحسنة لتطبيقات SaaS
+        - name: نهج Defender for Cloud Apps الموصى بها لتطبيقات SaaS
           href: ./office-365-security/mcas-saas-access-policies.md
-        - name: تقييم الوصول المستمر
+        - name: تقييم مستمر للوصول
           href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
-    - name: Microsoft 365 Defender المستندات
+    - name: المستندات Microsoft 365 Defender
       items:
         - name: Microsoft 365 Defender
           href: ./defender/index.yml
@@ -46,7 +46,7 @@
       href: ../enterprise/index.yml
     - name: Microsoft 365 للأعمال
       href: ./index.yml
-    - name: Microsoft 365 التوافق
+    - name: Microsoft Purview
       href: ../compliance/index.yml
-    - name: إدارة المحتوى النشط في Office المستندات
+    - name: إدارة المحتوى النشط في مستندات Office
       href: active-content-in-trusted-docs.md

@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: تصف هذه المقالة الحدود في حالة eDiscovery الأساسية في Microsoft 365.
-ms.openlocfilehash: 2d920fbe5973d07b7da656d6247038ab785bbe5c
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 67f15bb39ed75f40a8ef42747c0d4e2dfcb1297d
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822639"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64949598"
 ---
-# <a name="limits-in-core-ediscovery"></a>الحدود في Core eDiscovery
+# <a name="limits-in-ediscovery-standard"></a>الحدود في eDiscovery (قياسي)
 
-يسرد الجدول التالي حدود حالات eDiscovery الأساسية ويحتفظ بالحالة eDiscovery الأساسية. لمزيد من المعلومات حول Core eDiscovery، راجع [نظرة عامة على Core eDiscovery](./get-started-core-ediscovery.md).
+يسرد الجدول التالي حدود حالات eDiscovery الأساسية ويحتفظ بالحالة eDiscovery الأساسية. لمزيد من المعلومات حول Microsoft Purview eDiscovery (قياسي)، راجع [نظرة عامة على eDiscovery (Standard).](./get-started-core-ediscovery.md)
     
   | وصف الحد | الحد |
   |:-----|:-----|
@@ -44,4 +44,4 @@ ms.locfileid: "64822639"
    > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
    > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
-لمزيد من المعلومات حول الحدود المتعلقة بعمليات البحث والتصدير المقترنة بحالة eDiscovery الأساسية، راجع [حدود البحث في المحتوى و Core eDiscovery](limits-for-content-search.md).
+لمزيد من المعلومات حول الحدود المتعلقة بعمليات البحث والتصدير المقترنة بحالة eDiscovery (قياسي)، راجع [حدود البحث في المحتوى وeDiscovery (قياسي).](limits-for-content-search.md)

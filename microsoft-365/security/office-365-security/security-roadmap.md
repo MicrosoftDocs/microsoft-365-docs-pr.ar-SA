@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 خارطة طريق الأمان - أهم الأولويات
+title: مخطط الأمان Microsoft 365 - أهم الأولويات
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -16,75 +16,75 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
-description: أهم التوصيات الواردة من فريق الأمان عبر الإنترنت في Microsoft لتطبيق قدرات الأمان لحماية بيئة Microsoft 365 الخاصة بك.
+description: أهم التوصيات من فريق الأمان عبر الإنترنت في Microsoft لتنفيذ قدرات الأمان لحماية بيئة Microsoft 365 الخاصة بك.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7ffdcb8e6f1a3cb167ec3ce8d7ac5a9225b05356
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 6e6174da5a9cbac779c147fb0ea091080bf4338a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683220"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64945418"
 ---
-# <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>خارطة طريق الأمان - أهم الأولويات لأول 30 يوما أو 90 يوما أو أكثر
+# <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>مخطط الأمان - أهم الأولويات لأول 30 يوما و90 يوما وما بعدها
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-تتضمن هذه المقالة أهم التوصيات الواردة من فريق الأمان الإلكتروني في Microsoft لتطبيق قدرات الأمان لحماية بيئة Microsoft 365 الخاصة بك. تم تكييف هذه المقالة من جلسة عمل Microsoft Ignite — تأمين Microsoft 365 مثل أحد محترفي الأمان الإلكتروني: أهم الأولويات لأول [30 يوما أو 90](https://www.youtube.com/watch?v=luignzNyR-o) يوما أو أكثر. تم تطوير هذه الجلسة وقدمها كل من مارك سيمز ومات كيملهار، مهندسو الأمان الإلكتروني في Enterprise.
+تتضمن هذه المقالة أهم التوصيات من فريق الأمان عبر الإنترنت في Microsoft لتنفيذ قدرات الأمان لحماية بيئة Microsoft 365 الخاصة بك. تم تكييف هذه المقالة من جلسة عمل Microsoft Ignite — [Microsoft 365 آمنة مثل محترف الأمان عبر الإنترنت: أهم الأولويات لأول 30 يوما و90 يوما وما بعدها](https://www.youtube.com/watch?v=luignzNyR-o). تم تطوير هذه الجلسة وتقديمها من قبل Mark Simos و Matt Kemelhar، مهندسي الأمان السيبراني للمؤسسات.
 
 في هذه المقالة:
 
 - [نتائج المخطط](security-roadmap.md#Roadmap)
-- [30 يوما — فوز سريع قوي](security-roadmap.md#Thirdaydays)
+- [30 يوما — مكسب سريع قوي](security-roadmap.md#Thirdaydays)
 - [90 يوما — حماية محسنة](security-roadmap.md#Ninetydays)
-- [ما بعد](security-roadmap.md#Beyond)
+- [وراء](security-roadmap.md#Beyond)
 
 ## <a name="roadmap-outcomes"></a>نتائج المخطط
 <a name="Roadmap"> </a>
 
-يتم تنفيذ توصيات المخطط هذه على ثلاث مراحل بالترتيب المنطقي مع الأهداف التالية.
+يتم تنظيم توصيات المخطط هذه عبر ثلاث مراحل بترتيب منطقي مع الأهداف التالية.
 
-|إطار زمني|النتائج|
+|الإطار الزمني|نتائج|
 |---|---|
-|30 يوماً|التكوين السريع: <ul><li>الحماية الأساسية للمسؤول.</li><li>التسجيل والتحليلات.</li><li>الحماية الأساسية للهوية.</li></ul> <p> تكوين المستأجر. <p> إعداد المساهمين.|
-|90 يوما|الحماية المتقدمة: <ul><li>حسابات المسؤولين.</li><li>البيانات وحسابات المستخدمين.</li></ul> <p> الرؤية في التوافق، والتهديد، واحتياجات المستخدم. <p> تكييف وتنفيذ سياسات وحماية افتراضية.|
-|ما بعد|ضبط السياسات الأساسية و عناصر التحكم وتنقيحها. <p> توسيع نطاق الحماية ليشمل التبعيات في الموقع. <p> التكامل مع العمليات التجارية وعمليات الأمان (القانونية، وتهديدات insider، وما إلى ذلك).|
+|30 يوماً|التكوين السريع: <ul><li>الحماية الأساسية للمسؤول.</li><li>التسجيل والتحليلات.</li><li>الحماية الأساسية للهوية.</li></ul> <p> تكوين المستأجر. <p> إعداد أصحاب المصلحة.|
+|90 يوما|الحماية المتقدمة: <ul><li>حسابات المسؤول.</li><li>البيانات وحسابات المستخدمين.</li></ul> <p> الرؤية في التوافق، والتهديدات، واحتياجات المستخدم. <p> تكييف وتنفيذ السياسات والحماية الافتراضية.|
+|وراء|ضبط وتحسين السياسات وعناصر التحكم الرئيسية. <p> توسيع نطاق الحماية لتشمل التبعيات المحلية. <p> التكامل مع العمليات التجارية والأمنية (القانونية، والتهديدات الداخلية، وما إلى ذلك).|
 
-## <a name="30-days--powerful-quick-wins"></a>30 يوما — فوز سريع قوي
+## <a name="30-days--powerful-quick-wins"></a>30 يوما — مكسب سريع قوي
 <a name="Thirdaydays"> </a>
 
-يمكن تنفيذ هذه المهام بسرعة وتأثيرها المنخفض على المستخدمين.
+يمكن إنجاز هذه المهام بسرعة ولها تأثير منخفض على المستخدمين.
 
-|المنطقة|المهام|
+|منطقه|المهام|
 |---|---|
-|إدارة الأمان|<ul><li>تحقق من نقاط آمنة ولاحظ نقاطك الحالية (<https://security.microsoft.com/securescore>).</li><li>قم تشغيل تسجيل التدقيق Office 365. راجع [البحث في سجل التدقيق](../../compliance/search-the-audit-log-in-security-and-compliance.md).</li><li>[قم بتكوين Microsoft 365 لزيادة الأمان](tenant-wide-setup-for-increased-security.md).</li><li>راجع لوحات المعلومات والتقارير بشكل منتظم في Microsoft 365 Defender الإلكتروني و Defender for Cloud Apps.</li></ul>|
-|الحماية من المخاطر|[الاتصال Microsoft 365 Microsoft Defender لتطبيقات السحابة](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) لبدء المراقبة باستخدام سياسات الكشف عن المخاطر الافتراضية للسلوكيات الشذوذية. يستغرق إنشاء أساس للكشف عن الشذوذ سبعة أيام. <p>  تنفيذ حماية حسابات المسؤولين:<ul><li>استخدم حسابات المسؤول المخصصة لنشاط المسؤول.</li><li>فرض المصادقة متعددة العوامل (MFA) لحسابات المسؤولين.</li><li>استخدم [جهازا آمنا Windows نشاط](/windows-hardware/design/device-experiences/oem-highly-secure) المسؤول.</li></ul>|
-|إدارة الهوية والوصول|<ul><li>[تمكين حماية هوية Azure Active Directory](/azure/active-directory/active-directory-identityprotection-enable).</li><li>بالنسبة لبيئات الهوية المتحدة، فرض أمان الحساب (طول كلمة المرور والعمر والتعقيدات وما إلى ذلك).</li></ul>|
-|حماية المعلومات|مراجعة مثال على توصيات حماية المعلومات. تتطلب حماية المعلومات التنسيق عبر مؤسستك. بدء استخدام هذه الموارد:<ul><li>[Office 365 حماية المعلومات ل GDPR](/compliance/regulatory/gdpr)</li><li>[تكوين Teams من ثلاثة](../../solutions/configure-teams-three-tiers-protection.md) مستويات من الحماية (بما في ذلك المشاركة والتصنيف ومنع فقدان البيانات وحماية معلومات Azure)</li></ul>|
+|إدارة الأمان|<ul><li>تحقق من درجة الأمان ودون درجاتك الحالية (<https://security.microsoft.com/securescore>).</li><li>تشغيل تسجيل التدقيق Office 365. راجع [البحث في سجل التدقيق](../../compliance/search-the-audit-log-in-security-and-compliance.md).</li><li>[تكوين Microsoft 365 لزيادة الأمان](tenant-wide-setup-for-increased-security.md).</li><li>راجع لوحات المعلومات والتقارير بانتظام في مدخل Microsoft 365 Defender و Defender for Cloud Apps.</li></ul>|
+|الحماية من التهديدات|[الاتصال Microsoft 365 إلى Microsoft Defender for Cloud Apps](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) لبدء المراقبة باستخدام نهج الكشف عن التهديدات الافتراضية للسلوكيات الشاذة. يستغرق إنشاء خط أساسي للكشف عن الشذوذ سبعة أيام. <p>  تنفيذ الحماية لحسابات المسؤول:<ul><li>استخدام حسابات المسؤول المخصصة لنشاط المسؤول.</li><li>فرض المصادقة متعددة العوامل (MFA) لحسابات المسؤول.</li><li>استخدام [جهاز Windows آمن للغاية](/windows-hardware/design/device-experiences/oem-highly-secure) لنشاط المسؤول.</li></ul>|
+|إدارة الهوية والوصول|<ul><li>[تمكين Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection-enable).</li><li>بالنسبة لبيئات الهوية المتحدة، قم بفرض أمان الحساب (طول كلمة المرور والعمر والتعقيد وما إلى ذلك).</li></ul>|
+|حماية المعلومات|مراجعة مثال توصيات حماية المعلومات. تتطلب حماية المعلومات التنسيق عبر مؤسستك. ابدأ باستخدام هذه الموارد:<ul><li>[Office 365 حماية البيانات القانون العام لحماية البيانات (GDPR)](/compliance/regulatory/gdpr)</li><li>[تكوين Teams بثلاثة مستويات من الحماية](../../solutions/configure-teams-three-tiers-protection.md) (بما في ذلك المشاركة والتصنيف ومنع فقدان بيانات Microsoft Purview وAzure حماية البيانات)</li></ul>|
 
 ## <a name="90-days--enhanced-protections"></a>90 يوما — حماية محسنة
 <a name="Ninetydays"> </a>
 
-تستغرق هذه المهام وقتا أطول قليلا من أجل التخطيط لها وتنفيذها ولكنها تزيد كثيرا من وضعية الأمان.
+تستغرق هذه المهام وقتا أطول قليلا للتخطيط والتنفيذ ولكنها تزيد بشكل كبير من وضع الأمان الخاص بك.
 
-|المنطقة|مهمة|
+|منطقه|المهمه|
 |---|---|
-|إدارة الأمان|<ul><li>تحقق من "نقاط آمنة" للحصول على الإجراءات الموصى بها لبيئة (<https://security.microsoft.com/securescore>).</li><li>تابع مراجعة لوحات المعلومات والتقارير بشكل منتظم في Microsoft 365 Defender الإلكتروني و Defender for Cloud Apps وأدوات SIEM.</li><li>ابحث عن تحديثات البرامج ونفذها.</li><li>قم بإجراء عمليات محاكاة الهجمات لتصيد رسائل التصيد الاحتيالي، واستخدام كلمة المرور، وهجمات القوة الغاشمة باستخدام التدريب على محاكاة [الهجمات (](attack-simulation-training.md)المضمنة مع Office 365 [Threat Intelligence](office-365-ti.md).</li><li>ابحث عن مخاطر المشاركة من خلال مراجعة التقارير المضمنة في Defender for Cloud Apps (على علامة التبويب التحقق).</li><li>تحقق [من إدارة التوافق](../../compliance/compliance-manager.md) لمراجعة حالة اللوائح التي تنطبق على مؤسستك (مثل القانون العام لحماية المعلومات (GDPR) وNIST 800-171).</li></ul>|
-|الحماية من المخاطر|تنفيذ حماية محسنة للحسابات الإدارية: <ul><li>تكوين [محطات عمل Access المميزة](/security/compass/privileged-access-devices) (PAWs) لنشاط المسؤول.</li><li>تكوين [Azure AD إدارة الهويات المتميزة](/azure/active-directory/active-directory-privileged-identity-management-configure).</li><li>قم بتكوين أداة معلومات الأمان وإدارة الأحداث (SIEM) لتجميع بيانات التسجيل من Office 365 و Defender for Cloud Apps وخدمات أخرى، بما في ذلك AD FS. يخزن سجل التدقيق البيانات لمدة 90 يوما فقط. يتيح لك التقاط هذه البيانات في أداة SIEM تخزين البيانات لفترة أطول.</li></ul>|
-|إدارة الهوية والوصول|<ul><li>تمكين MFA وفرضها لجميع المستخدمين.</li><li>تنفيذ مجموعة من [الوصول الشرطي والسياسات ذات الصلة](microsoft-365-policies-configurations.md).</li></ul>|
-|حماية المعلومات| تكييف سياسات حماية المعلومات وتطبيقها. تتضمن هذه الموارد أمثلة: <ul><li>[Office 365 حماية المعلومات ل GDPR](/compliance/regulatory/gdpr)</li><li>[تكوين Teams من ثلاثة مستويات من الحماية](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> استخدم سياسات منع فقدان البيانات وأدوات المراقبة في Microsoft 365 البيانات المخزنة في Microsoft 365 (بدلا من Defender for Cloud Apps). <p> استخدم Defender for Cloud Apps Microsoft 365 ميزات التنبيه المتقدمة (غير منع فقدان البيانات).|
+|إدارة الأمان|<ul><li>تحقق من درجة الأمان للإجراءات الموصى بها للبيئة الخاصة بك (<https://security.microsoft.com/securescore>).</li><li>استمر في مراجعة لوحات المعلومات والتقارير بانتظام في مدخل Microsoft 365 Defender و Defender for Cloud Apps وأدوات SIEM.</li><li>ابحث عن تحديثات البرامج ونفذها.</li><li>إجراء عمليات محاكاة الهجوم للتصيد الاحتيالي الرمح، ورش كلمة المرور، والهجمات بكلمة مرور القوة الغاشمة باستخدام [تدريب محاكاة الهجوم](attack-simulation-training.md) (مضمن مع [Office 365 Threat Intelligence](office-365-ti.md).</li><li>ابحث عن مشاركة المخاطر من خلال مراجعة التقارير المضمنة في Defender for Cloud Apps (على علامة التبويب "التحقيق").</li><li>تحقق من [Compliance Manager](../../compliance/compliance-manager.md) لمراجعة حالة اللوائح التي تنطبق على مؤسستك (مثل GDPR، NIST 800-171).</li></ul>|
+|الحماية من التهديدات|تنفيذ الحماية المحسنة لحسابات المسؤولين: <ul><li>تكوين [محطات عمل الوصول المتميز](/security/compass/privileged-access-devices) (PAWs) لنشاط المسؤول.</li><li>تكوين [إدارة الهويات المتميزة Azure AD](/azure/active-directory/active-directory-privileged-identity-management-configure).</li><li>تكوين أداة إدارة معلومات الأمان والأحداث (SIEM) لجمع بيانات التسجيل من Office 365 و Defender for Cloud Apps وخدمات أخرى، بما في ذلك AD FS. يخزن سجل التدقيق البيانات لمدة 90 يوما فقط. يتيح لك تسجيل هذه البيانات في أداة SIEM تخزين البيانات لفترة أطول.</li></ul>|
+|إدارة الهوية والوصول|<ul><li>تمكين المصادقة متعددة العوامل (MFA) وفرضها لجميع المستخدمين.</li><li>تنفيذ مجموعة من [الوصول المشروط والنهج ذات الصلة](microsoft-365-policies-configurations.md).</li></ul>|
+|حماية المعلومات| تكييف نهج حماية المعلومات وتنفيذها. تتضمن هذه الموارد أمثلة: <ul><li>[Office 365 حماية البيانات القانون العام لحماية البيانات (GDPR)](/compliance/regulatory/gdpr)</li><li>[تكوين Teams مع ثلاثة مستويات من الحماية](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> استخدم نهج منع فقدان البيانات وأدوات المراقبة في Microsoft Purview للبيانات المخزنة في Microsoft 365 (بدلا من Defender for Cloud Apps). <p> استخدم Defender for Cloud Apps مع Microsoft 365 لميزات التنبيه المتقدمة (بخلاف منع فقدان البيانات).|
 
-## <a name="beyond"></a>ما بعد
+## <a name="beyond"></a>وراء
 <a name="Beyond"> </a>
 
-هذه هي تدابير أمان هامة يتم بنائها على العمل السابق.
+هذه هي تدابير الأمان الهامة التي تستند إلى العمل السابق.
 
-|المنطقة|مهمة|
+|منطقه|المهمه|
 |---|---|
-|إدارة الأمان|<ul><li>تابع التخطيط للتصرفات التالية باستخدام نقاط آمنة (<https://security.microsoft.com/securescore>).</li><li>تابع مراجعة لوحات المعلومات والتقارير بشكل منتظم في Microsoft 365 Defender الإلكتروني و Defender for Cloud Apps وأدوات SIEM.</li><li>تابع البحث عن تحديثات البرامج وتطبيقها.</li><li>ادمج eDiscovery في عمليات الاستجابة للتهديدات والقانونية.</li></ul>|
-|الحماية من المخاطر|<ul><li>تنفيذ [الوصول الآمن المتميز](/windows-server/identity/securing-privileged-access/securing-privileged-access) (SPA) لمكونات الهوية المحلي (AD، AD FS).</li><li>استخدم Defender for Cloud Apps لمراقبة تهديدات insider.</li><li>اكتشف الظل استخدام SaaS ل IT باستخدام Defender for Cloud Apps.</li></ul>|
-|إدارة الهوية والوصول|<ul><li>تحسين السياسات والعمليات التشغيلية.</li><li>استخدم Azure AD Identity Protection لتحديد تهديدات insider.</li></ul>|
-|حماية المعلومات|تحسين سياسات حماية المعلومات: <ul><li>Microsoft 365 أو Office 365 الحساسية ومنع فقدان البيانات (DLP) أو Azure Information Protection.</li><li>تنبيهات ونهج Defender for Cloud Apps.</li></ul>|
+|إدارة الأمان|<ul><li>تابع التخطيط للإجراءات التالية باستخدام درجة الأمان (<https://security.microsoft.com/securescore>).</li><li>استمر في مراجعة لوحات المعلومات والتقارير بانتظام في مدخل Microsoft 365 Defender و Defender for Cloud Apps وأدوات SIEM.</li><li>تابع البحث عن تحديثات البرامج وتنفيذها.</li><li>دمج eDiscovery في عمليات الاستجابة القانونية والتهديدات.</li></ul>|
+|الحماية من التهديدات|<ul><li>تنفيذ [الوصول المتميز الآمن](/windows-server/identity/securing-privileged-access/securing-privileged-access) (SPA) لمكونات الهوية المحلية (AD، AD FS).</li><li>استخدم Defender for Cloud Apps لمراقبة التهديدات الداخلية.</li><li>اكتشف استخدام Shadow IT SaaS باستخدام Defender for Cloud Apps.</li></ul>|
+|إدارة الهوية والوصول|<ul><li>تحسين السياسات والعمليات التشغيلية.</li><li>استخدم Azure AD Identity Protection لتحديد التهديدات الداخلية.</li></ul>|
+|حماية المعلومات|تحسين نهج حماية المعلومات: <ul><li>Microsoft 365 وصف الحساسية Office 365 والوقاية من فقدان البيانات (DLP) أو Azure حماية البيانات.</li><li>سياسات وتنبيهات Defender for Cloud Apps.</li></ul>|
 
-راجع أيضا: [كيفية الحد من الهجمات الإلكترونية السريعة مثل Petya وWannaCrypt](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/21/how-to-mitigate-rapid-cyberattacks-such-as-petya-and-wannacrypt/).
+راجع أيضا: [كيفية التخفيف من الهجمات الإلكترونية السريعة مثل Petya وWannaCrypt](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/21/how-to-mitigate-rapid-cyberattacks-such-as-petya-and-wannacrypt/).
