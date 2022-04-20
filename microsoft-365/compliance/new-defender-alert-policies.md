@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: نحن نصدر نهج تنبيه جديدة Microsoft Defender لـ Office 365. نقوم أيضا بتقاعد نهجي تنبيه موجودين تم استبدالهما بنهجين جديدين.
-ms.openlocfilehash: afdc547fc658b40c2eee7a92ef2043326e159b32
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 339d16f7cd4e481d408a13d2e738cdef9fc991bf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759468"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939620"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>نهج التنبيه الجديدة في Microsoft Defender لـ Office 365
 
@@ -97,7 +97,7 @@ ms.locfileid: "64759468"
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>ما عليك فعله للتحضير لهذه التغييرات
 
-ستحدد كيفية استخدام مؤسستك لهذه التنبيهات ما تحتاج إلى القيام به للتحضير. إذا قمت بتفعيل التنبيهات وكنت تستخدمها أو تستهلكها إما من خلال واجهة برمجة تطبيقات أو إعلام بالبريد الإلكتروني للتنبيه أو في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مركز التوافق في Microsoft 365</a> أو <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، فستحتاج إلى تعديل مهام سير العمل.
+ستحدد كيفية استخدام مؤسستك لهذه التنبيهات ما تحتاج إلى القيام به للتحضير. إذا قمت بتشغيل التنبيهات وكنت تستخدمها أو تستهلكها إما من خلال واجهة برمجة تطبيقات أو إعلام بالبريد الإلكتروني للتنبيه أو في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل توافق Microsoft Purview</a> أو <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، فستحتاج إلى تعديل مهام سير العمل الخاصة بك.
 
 **إذا لم تكن قد قمت بتفعيل هذه التنبيهات، يمكنك القيام بأحد الإجراءات التالية:**
 

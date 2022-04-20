@@ -1,5 +1,5 @@
 ---
-title: استخدام "البحث في المحتوى" للبحث عن البيانات المستوردة من جهة خارجية
+title: استخدام البحث عن المحتوى للبحث في البيانات المستوردة من جهة خارجية
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,39 +15,39 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: استخدم أداة eDiscovery للبحث في المحتوى للبحث عن العناصر المستوردة إلى علب البريد في Microsoft 365 من مصدر بيانات جهة خارجية عن طريق إنشاء استعلامات.
+description: استخدم أداة eDiscovery للبحث عن العناصر المستوردة إلى علب البريد في Microsoft 365 من مصدر بيانات تابع لجهة خارجية عن طريق إنشاء استعلامات.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 068a6e3164154129ba9148b41138d50c518042ed
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 29c033f7d31aca14b527aa6b7fd83d533a5875e7
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63566944"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939444"
 ---
-# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>استخدام "البحث في المحتوى" للبحث عن بيانات جهة خارجية تم استيرادها بواسطة موصل شريك مخصص
+# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>استخدام البحث عن المحتوى للبحث في بيانات الجهات الخارجية التي تم استيرادها بواسطة موصل شريك مخصص
 
-يمكنك استخدام أداة [eDiscovery](content-search.md) للبحث في المحتوى في مركز التوافق في Microsoft 365 للبحث عن العناصر المستوردة إلى علب البريد في Microsoft 365 من مصدر بيانات جهة خارجية. يمكنك إنشاء استعلام للبحث في كل عناصر البيانات التي تم استيرادها من جهة خارجية أو يمكنك إنشاء استعلام للبحث في عناصر بيانات خاصة ب جهة خارجية. يمكنك أيضا إنشاء نهج استبقاء مستند إلى استعلام أو قائمة احتجاز eDiscovery مستندة إلى استعلام للحفاظ على بيانات جهة خارجية.
+يمكنك استخدام [أداة البحث في المحتوى eDiscovery](content-search.md) في مدخل توافق Microsoft Purview للبحث عن العناصر المستوردة إلى علب البريد في Microsoft 365 من مصدر بيانات تابع لجهة خارجية. يمكنك إنشاء استعلام للبحث في كافة عناصر بيانات الجهات الخارجية المستوردة أو يمكنك إنشاء استعلام للبحث في عناصر بيانات خاصة بجهة خارجية. كما يمكنك أيضا إنشاء نهج استبقاء يستند إلى استعلام أو قائمة احتجاز eDiscovery مستندة إلى استعلام للاحتفاظ ببيانات الجهات الخارجية.
   
-لمزيد من المعلومات حول العمل مع شريك لاستيراد بيانات جهة خارجية وقائمة بأنواع بيانات الأطراف الخارجية التي يمكنك استيرادها إلى Microsoft 365، راجع العمل مع شريك لأرشفة بيانات جهة خارجية [في Office 365](work-with-partner-to-archive-third-party-data.md).
+لمزيد من المعلومات حول العمل مع شريك لاستيراد بيانات الجهات الخارجية وقائمة بأنواع بيانات الجهات الخارجية التي يمكنك استيرادها إلى Microsoft 365، راجع ["العمل مع شريك" لأرشفة بيانات الجهات الخارجية في Office 365](work-with-partner-to-archive-third-party-data.md).
 
 > [!IMPORTANT]
-> تنطبق الإرشادات الواردة في هذه المقالة فقط على بيانات جهة خارجية تم استيرادها بواسطة موصل شريك مخصص. لا تنطبق هذه المقالة على بيانات الأطراف الخارجية التي يتم استيرادها باستخدام موصلات البيانات الخاصة ب جهة [خارجية في مركز](archiving-third-party-data.md#third-party-data-connectors) التوافق من Microsoft.
+> تنطبق الإرشادات الواردة في هذه المقالة فقط على بيانات الجهات الخارجية التي تم استيرادها من قبل موصل شريك مخصص. لا تنطبق هذه المقالة على بيانات الجهات الخارجية التي يتم استيرادها باستخدام [موصلات البيانات التابعة لجهة خارجية](archiving-third-party-data.md#third-party-data-connectors) في مركز توافق Microsoft.
   
-## <a name="creating-a-query-to-search-all-third-party-data"></a>إنشاء استعلام للبحث في كل بيانات  الأطراف الخارجية
+## <a name="creating-a-query-to-search-all-third-party-data"></a>إنشاء استعلام للبحث في كافة بيانات الجهات الخارجية
 
-للبحث (أو وضع البيانات في وضع الانتظار) عن أي نوع من بيانات الأطراف الخارجية التي قمت `kind:externaldata` باستيرادها إلى Office 365، يمكنك استخدام زوج قيمة خاصية الرسالة في مربع الكلمة الأساسية للبحث في المحتوى أو عند إنشاء قائمة الانتظار المستندة إلى الاستعلام. على سبيل المثال، للبحث عن العناصر المستوردة من أي مصدر بيانات جهة خارجية واحتواء الكلمة "contoso" في الخاصية Subject الخاصة بالعنصر المستورد، يمكنك استخدام الاستعلام التالي: 
+للبحث عن (أو وضع قيد الاحتجاز) أي نوع من بيانات الجهات الخارجية التي قمت باستيرادها إلى Office 365، يمكنك استخدام `kind:externaldata` زوج قيمة خاصية الرسالة في مربع الكلمة الأساسية للبحث في المحتوى أو عند إنشاء قائمة احتجاز مستندة إلى استعلام. على سبيل المثال، للبحث عن عناصر مستوردة من أي مصدر بيانات تابع لجهة خارجية وتحتوي على الكلمة "contoso" في خاصية الموضوع للعنصر المستورد، يمكنك استخدام الاستعلام التالي: 
   
 ```powershell
 kind:externaldata AND subject:contoso
 ```
 
-يتضمن مثال استعلام الكلمة الأساسية السابق خاصية الموضوع. للحصول على قائمة بالخصائص الأخرى لعناصر بيانات الأطراف الخارجية التي يمكن تضمينها في استعلام الكلمة الأساسية، راجع القسم "مزيد من المعلومات" في العمل مع شريك لأرشفة بيانات جهة [خارجية في](work-with-partner-to-archive-third-party-data.md#more-information) Office 365.
+يتضمن مثال استعلام الكلمة الأساسية السابق خاصية الموضوع. للحصول على قائمة بالخصائص الأخرى لعناصر البيانات التابعة لجهة خارجية التي يمكن تضمينها في استعلام كلمة أساسية، راجع القسم "مزيد من المعلومات" في ["العمل مع شريك" لأرشفة بيانات الجهات الخارجية في Office 365](work-with-partner-to-archive-third-party-data.md#more-information).
   
-عند إنشاء استعلامات للبحث عن بيانات جهة خارجية مع الاستمرار عليها، يمكنك أيضا استخدام الشروط لتضييق نطاق نتائج البحث. لمزيد من المعلومات حول إنشاء استعلامات البحث في المحتوى، راجع [استعلامات الكلمات الأساسية وشروط البحث في البحث في المحتوى](keyword-queries-and-search-conditions.md).
+عند إنشاء استعلامات للبحث عن بيانات الجهات الخارجية والاحتفاظ بها، يمكنك أيضا استخدام الشروط لتضييق نطاق نتائج البحث. لمزيد من المعلومات حول إنشاء استعلامات البحث في المحتوى، راجع [استعلامات الكلمات الأساسية وشروط البحث في البحث عن المحتوى](keyword-queries-and-search-conditions.md).
   
-## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>إنشاء استعلام للبحث عن أنواع معينة من بيانات  الأطراف الخارجية
+## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>إنشاء استعلام للبحث في أنواع معينة من بيانات الجهات الخارجية
 
-بدلا من البحث في كل أنواع بيانات الجهة الخارجية، يمكنك إنشاء استعلامات تبحث فقط عن نوع معين من بيانات الجهة الخارجية باستخدام خاصية الرسالة التالية *:* زوج القيم في مربع الكلمة الأساسية للبحث في المحتوى:
+بدلا من البحث في كافة أنواع بيانات الجهات الخارجية، يمكنك إنشاء استعلامات تبحث فقط عن نوع محدد من بيانات الجهات الخارجية باستخدام خاصية الرسالة التالية *: زوج القيمة* في مربع الكلمة الأساسية للبحث في المحتوى:
   
 ```powershell
 itemclass:ipm.externaldata.<third-party data type>* 
@@ -59,66 +59,66 @@ itemclass:ipm.externaldata.<third-party data type>*
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-يسرد الجدول التالي  `itemclass:` أنواع بيانات الأطراف الخارجية التي يمكنك البحث عنها، والقيمة التي يجب استخدامها لخصخصة الرسالة للبحث عن هذا النوع من البيانات الخاصة ب جهة خارجية على وجه التحديد. لا يتحسس بناء جملة الاستعلام حالة التحسس. 
+يسرد الجدول التالي أنواع بيانات الجهات الخارجية التي يمكنك البحث فيها، والقيمة التي يجب استخدامها لخاصية  `itemclass:` الرسالة للبحث بشكل خاص عن هذا النوع من بيانات الجهات الخارجية. بناء جملة الاستعلام غير حساس لحالة الأحرف. 
   
-|**نوع بيانات جهة خارجية**|**القيمة للممتلكات `itemclass:`**|
+|**نوع بيانات جهة خارجية**|**قيمة الخاصية `itemclass:`**|
 |:-----|:-----|
-|AIM  <br/> | `ipm.externaldata.AIM*` <br/> |
-|الأميركية للانوثب  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
+|الهدف  <br/> | `ipm.externaldata.AIM*` <br/> |
+|المعرف الأمريكي  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
 |AOL مع Pivot Client  <br/> | `ipm.externaldata.Pivot.IM` <br/> |
-|Apple الحامض  <br/> | `ipm.externaldata.AppleJuice*` <br/> |
-|Ares  <br/> | `ipm.externaldata.Ares*` <br/> |
+|تفاحة فافة  <br/> | `ipm.externaldata.AppleJuice*` <br/> |
+|اريس  <br/> | `ipm.externaldata.Ares*` <br/> |
 |Axs Encrypted  <br/> | `ipm.externaldata.AxsEncrypted*` <br/> |
-|Axs Exchange  <br/> | `ipm.externaldata.AxsExchange*` <br/> |
-|Axs الأرشيف المحلي  <br/> | `ipm.externaldata.AxsLocalArchive*` <br/> |
+|Exchange Axs  <br/> | `ipm.externaldata.AxsExchange*` <br/> |
+|الأرشيف المحلي ل Axs  <br/> | `ipm.externaldata.AxsLocalArchive*` <br/> |
 |عنصر نائب ل Axs  <br/> | `ipm.externaldata.AxsPlaceHolder*` <br/> |
 |Axs Signed  <br/> | `ipm.externaldata.AxsSigned*` <br/> |
 |Bazaarvoice  <br/> | `ipm.externaldata.Bazaarvoice*` <br/> |
-|الدببة  <br/> | `ipm.externaldata.Bearshare*` <br/> |
-|BitTorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
-|Blackberry  <br/> | `ipm.externaldata.Blackberry*` <br/> |
-|سجلات المكالمات في BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
+|بيرشير  <br/> | `ipm.externaldata.Bearshare*` <br/> |
+|تورنت  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
+|بلاك بيري  <br/> | `ipm.externaldata.Blackberry*` <br/> |
+|سجلات مكالمات BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
 |BlackBerry Messenger  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
 |BlackBerry PIN  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |BlackBerry SMS  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |بلومبرغ  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
-|رسالة بلومبرغ  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
-|مراسلة بلومبرغ  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
-|المربع  <br/> | `ipm.externaldata.Box*` <br/> |
-|خادم حضور المراسلة الفورية &amp; في Cisco  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
+|رسالة Bloomberg  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
+|مراسلة بلومبيرغ  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
+|مربع  <br/> | `ipm.externaldata.Box*` <br/> |
+|خادم حالة حضور المراسلة الفورية &amp; في Cisco  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
-|CipherCloud for Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
-|مباشرة الاتصال  <br/> | `ipm.externaldata.DirectConnect*` <br/> |
-|Facebook  <br/> | `ipm.externaldata.Facebook*` <br/> |
+|CipherCloud ل Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
+|الاتصال المباشر  <br/> | `ipm.externaldata.DirectConnect*` <br/> |
+|ف يسبوك  <br/> | `ipm.externaldata.Facebook*` <br/> |
 |FastTrack  <br/> | `ipm.externaldata.FastTrack*` <br/> |
 |FXConnect  <br/> | `ipm.externaldata.FXConnect.chat` <br/> |
-|Flickr  <br/> | `ipm.externaldata.Flickr*` <br/> |
-|Gnutella  <br/> | `ipm.externaldata.Gnutella*` <br/> |
+|فل يكر  <br/> | `ipm.externaldata.Flickr*` <br/> |
+|نوتلا  <br/> | `ipm.externaldata.Gnutella*` <br/> |
 |Google+  <br/> | `ipm.externaldata.GooglePlus*` <br/> |
 |Google Talk  <br/> | `ipm.externaldata.GoogleTalk*` <br/> |
 |GoToMyPC  <br/> | `ipm.externaldata.GoToMyPC*` <br/> |
 |HipChat  <br/> | `ipm.externaldata.HipChat*` <br/> |
-|الوابسستر  <br/> | `ipm.externaldata.Hopster*` <br/> |
+|وثبة  <br/> | `ipm.externaldata.Hopster*` <br/> |
 |HubConnex  <br/> | `ipm.externaldata.HubConnex*` <br/> |
 |IBM Connections  <br/> | `ipm.externaldata.Connections*` <br/> |
 |IBM SameTime  <br/> | `ipm.externaldata.Sametime*` <br/> |
-|ICE Chat  <br/> | `ipm.externaldata.conversation.Ice Chat*` <br/> |
+|دردشة ICE  <br/> | `ipm.externaldata.conversation.Ice Chat*` <br/> |
 |Indii Messenger  <br/> | `ipm.externaldata.Indii*` <br/> |
-|إنستجرام  <br/> | `ipm.externaldata.Instagram*` <br/> |
+|اينستاجرام  <br/> | `ipm.externaldata.Instagram*` <br/> |
 |Instant Bloomberg  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |
 |InvestEdge  <br/> | `ipm.externaldata.InvestEdge*` <br/> |
-|IRC  <br/> | `ipm.externaldata.IRC*` <br/> |
+|الايرسي  <br/> | `ipm.externaldata.IRC*` <br/> |
 |Jive  <br/> | `ipm.externaldata.Jive*` <br/> |
 |JiveApiRetention  <br/> | `ipm.externaldata.JiveApiRetention*` <br/> |
 |JXTA  <br/> | `ipm.externaldata.JXTA*` <br/> |
 |LinkedIn  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
 |MFTP  <br/> | `ipm.externaldata.MFTP*` <br/> |
 |Microsoft UC  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
-|محاذاة للذهان  <br/> | `ipm.externaldata.MindAlign*` <br/> |
-|Mobile Guard  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
+|محاذاة للعقل  <br/> | `ipm.externaldata.MindAlign*` <br/> |
+|حماية الأجهزة المحمولة  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
 |MSN  <br/> | `ipm.externaldata.MSN*` <br/> |
-|MySpace  <br/> | `ipm.externaldata.MySpace*` <br/> |
-|NEONetwork  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
+|ماي سبيس  <br/> | `ipm.externaldata.MySpace*` <br/> |
+|الشبكات المناظرة على شبكة الإنترنت  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
 |OpenNap  <br/> | `ipm.externaldata.OpenNap*` <br/> |
 |Pinterest  <br/> | `ipm.externaldata.Pinterest*` <br/> |
 |Pivot  <br/> | `ipm.externaldata.Pivot*` <br/> |
@@ -127,19 +127,19 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Salesforce Chatter  <br/> | `ipm.externaldata.Chatter*` <br/> |
 |Skype for Business  <br/> | `ipm.externaldata.Skype*` <br/> |
 |Slack Enterprise Grid  <br/> | `ipm.externaldata.Slack.IM` <br/> |
-|SoftEther  <br/> | `ipm.externaldata.SoftEther*` <br/> |
+|اللينة  <br/> | `ipm.externaldata.SoftEther*` <br/> |
 |Squawker  <br/> | `ipm.externaldata.Squawker*` <br/> |
-|السيمفونية  <br/> | `ipm.externaldata.Symphony*` <br/> |
-|طومسون رويتر  <br/> | `ipm.externaldata.Reuters*` <br/> |
-| Thomson Reuters Eikon Messenger  <br/> | `ipm.externaldata.ReutersEikon*` <br/> |
-|Tor  <br/> | `ipm.externaldata.Tor*` <br/> |
+|Symphony  <br/> | `ipm.externaldata.Symphony*` <br/> |
+|ThomsonHomson  <br/> | `ipm.externaldata.Reuters*` <br/> |
+| ThomsonHomsonHoms Eikon Messenger  <br/> | `ipm.externaldata.ReutersEikon*` <br/> |
+|تور  <br/> | `ipm.externaldata.Tor*` <br/> |
 |TTT  <br/> | `ipm.externaldata.TTT*` <br/> |
 |Twitter  <br/> | `ipm.externaldata.Twitter*` <br/> |
-|دردشة UBS  <br/> | `ipm.externaldata.UBS*` <br/> |
+|UBS Chat  <br/> | `ipm.externaldata.UBS*` <br/> |
 |Vimeo  <br/> | `ipm.externaldata.Vimeo*` <br/> |
 |WinMX  <br/> | `ipm.externaldata.WinMX*` <br/> |
-|ويني  <br/> | `ipm.externaldata.Winny*` <br/> |
-|Yahoo!  <br/> | `ipm.externaldata.Yahoo!*` <br/> |
+|Winny  <br/> | `ipm.externaldata.Winny*` <br/> |
+|ياهو!  <br/> | `ipm.externaldata.Yahoo!*` <br/> |
 |Yammer  <br/> | `ipm.externaldata.Yammer*` <br/> |
-|أصفر جاكيت  <br/> | `ipm.externaldata.YellowJacket*` <br/> |
+|YellowJacket  <br/> | `ipm.externaldata.YellowJacket*` <br/> |
 |YouTube  <br/> | `ipm.externaldata.YouTube*` <br/> |

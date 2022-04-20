@@ -1,5 +1,5 @@
 ---
-title: الاختلافات بين نتائج بحث eDiscovery المقدرة والفعلية
+title: نتائج بحث eDiscovery المقدرة والفعلية
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,21 +19,21 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: فهم سبب اختلاف نتائج البحث المقدرة والفعلية في عمليات البحث التي يتم تشغيلها باستخدام أدوات eDiscovery في Office 365.
-ms.openlocfilehash: 5ec234ed698e621a629aecf7adf34fb675b29034
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b1e4ba4938e418d8364dfb06b24b6f7a58d6a463
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783832"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938148"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>الاختلافات بين نتائج بحث eDiscovery المقدرة والفعلية
 
 تنطبق هذه المقالة على عمليات البحث التي يمكنك تشغيلها باستخدام إحدى أدوات eDiscovery Microsoft 365 التالية: 
 
 - البحث عن المحتوى
-- eDiscovery الأساسي
+- eDiscovery (قياسي)
 
-عند تشغيل بحث eDiscovery، سترجع الأداة التي تستخدمها تقديرا لعدد العناصر (وحجمها الإجمالي) التي تطابق معايير البحث. على سبيل المثال، عند تشغيل عملية بحث في مركز التوافق في Microsoft 365، يتم عرض نتائج البحث المقدرة في صفحة القائمة المنبثقة للبحث المحدد.
+عند تشغيل بحث eDiscovery، سترجع الأداة التي تستخدمها تقديرا لعدد العناصر (وحجمها الإجمالي) التي تطابق معايير البحث. على سبيل المثال، عند تشغيل عملية بحث في مدخل توافق Microsoft Purview، يتم عرض نتائج البحث المقدرة على صفحة القائمة المنبثقة للبحث المحدد.
   
 ![تقدير النتائج المعروضة في صفحة القائمة المنبثقة للبحث.](../media/EstimatedSearchResults1.png)
   

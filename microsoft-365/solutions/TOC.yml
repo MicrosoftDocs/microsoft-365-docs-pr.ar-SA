@@ -25,7 +25,7 @@
           href: empower-people-to-work-remotely-security-compliance.md
         - name: الخطوة 4. نشر إدارة نقاط النهاية
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: الخطوة 5. نشر تطبيقات الإنتاجية وخدماتها
+        - name: 'الخطوة 5: نشر تطبيقات الإنتاجية وخدماتها'
           href: empower-people-to-work-remotely-teams-productivity-apps.md
         - name: الخطوة 6. تدريب العاملين
           href: empower-people-to-work-remotely-train-monitor-usage.md
@@ -39,13 +39,13 @@
           href: manage-devices-with-intune-enroll.md
         - name: الخطوة 3. إعداد نُهج التوافق
           href: manage-devices-with-intune-compliance-policies.md
-        - name: الخطوة 4. المطالبة بتوفير أجهزة سليمة ومتوافقة
+        - name: 'الخطوة 4: المطالبة بتوفير أجهزة سليمة ومتوافقة'
           href: manage-devices-with-intune-require-compliance.md
         - name: الخطوة 5. نشر ملفات تعريف الأجهزة
           href: manage-devices-with-intune-configuration-profiles.md
-        - name: الخطوة 6. مراقبة مخاطر الأجهزة وتوافقها مع أساسات الأمان
+        - name: 'الخطوة 6: مراقبة مخاطر الأجهزة وتوافقها مع أساسات الأمان'
           href: manage-devices-with-intune-monitor-risk.md
-        - name: الخطوة 7. تنفيذ تفادي فقدان البيانات (DLP) مع قدرات حماية المعلومات
+        - name: 'الخطوة 7: تنفيذ تفادي فقدان البيانات (DLP) مع قدرات حماية المعلومات'
           href: manage-devices-with-intune-dlp-mip.md
     - name: إعداد تعاون آمن مع Microsoft 365
       items:
@@ -111,7 +111,7 @@
           href: ransomware-protection-microsoft-365.md
         - name: الخطوة 1. تكوين أساسات الأمان
           href: ransomware-protection-microsoft-365-security-baselines.md
-        - name: الخطوة 2. نشر الكشف عن الهجمات والاستجابة لها
+        - name: 'الخطوة 2: نشر الكشف عن الهجمات والاستجابة لها'
           href: ransomware-protection-microsoft-365-attack-detection-response.md
         - name: الخطوة 3. حماية الهويات
           href: ransomware-protection-microsoft-365-identities.md
@@ -165,7 +165,7 @@
                   href: ../admin/add-users/remove-former-employee-step-2.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: الخطوة 3. مسح بيانات الجهاز المحمول لموظف سابق وحظره
                   href: ../admin/add-users/remove-former-employee-step-3.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-                - name: الخطوة 4. إعادة توجيه البريد الإلكتروني لموظف سابق إلى موظف آخر أو تحويله إلى علبة بريد مشتركة
+                - name: الخطوة 4. إعادة توجيه البريد الإلكتروني من موظف سابق إلى موظف آخر أو تحويله إلى علبة بريد مشتركة
                   href: ../admin/add-users/remove-former-employee-step-4.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
                 - name: الخطوة 5. منح موظف آخر وصولاً إلى بيانات OneDrive وOutlook
                   href: ../admin/add-users/remove-former-employee-step-5.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
@@ -306,13 +306,13 @@
           href: /onedrive/plan-onedrive-enterprise
     - name: التوافق
       items:
-        - name: حلول المخاطر الداخلية في Microsoft 365
+        - name: حلول المخاطر الداخلية في Microsoft Purview
           href: ../compliance/insider-risk-solution-overview.md
         - name: حلول التدقيق
           href: ../compliance/auditing-solutions-overview.md
         - name: حلول eDiscovery في Microsoft 365
           href: ../compliance/ediscovery.md
-        - name: eDiscovery المتقدم في Microsoft 365
+        - name: Microsoft Purview eDiscovery (Premium)
           href: ../compliance/overview-ediscovery-20.md
         - name: خطط العمل للتوافق التنظيمي
           items:

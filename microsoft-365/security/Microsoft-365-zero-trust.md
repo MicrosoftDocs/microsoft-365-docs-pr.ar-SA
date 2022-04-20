@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 879cbe33393158ee9e24107bbe042adc2f727ac6
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3b943569485ffaa96b33208c1c4bf0a491c23a95
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667197"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939466"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>خطة نشر الثقة المعدومة من Microsoft 365
 
@@ -115,18 +115,18 @@ Microsoft 365 Defender هو حل موسع للكشف والاستجابة (XDR) 
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>الخطوة 5. حماية البيانات الحساسة وإدارتها
 
-تنفيذ حماية البيانات في Microsoft (MIP) لمساعدتك على اكتشاف المعلومات الحساسة وتصنيفها وحمايتها أينما كانت تعيش أو تنتقل.
+تنفيذ حماية البيانات Microsoft Purview لمساعدتك على اكتشاف المعلومات الحساسة وتصنيفها وحمايتها أينما كانت تعيش أو تنتقل.
 
-يتم تضمين قدرات MIP مع التوافق Microsoft 365 ومنحك الأدوات اللازمة للتعرف على بياناتك وحماية بياناتك ومنع فقدان البيانات.
+يتم تضمين قدرات حماية البيانات Microsoft Purview مع Microsoft Purview وتعطيك الأدوات اللازمة للتعرف على بياناتك وحماية بياناتك ومنع فقدان البيانات.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="قدرات حماية المعلومات التي تحمي البيانات من خلال إنفاذ النهج" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 
 بينما يتم تمثيل هذا العمل في أعلى مكدس النشر الموضح سابقا في هذه المقالة، يمكنك بدء هذا العمل في أي وقت.
 
-يوفر حماية البيانات في Microsoft إطار عمل وعملية وقدرات يمكنك استخدامها لتحقيق أهداف عملك المحددة.
+يوفر Microsoft Purview حماية البيانات إطار عمل وعملية وإمكانيات يمكنك استخدامها لتحقيق أهداف عملك المحددة.
 
-:::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="إطار عمل حماية البيانات في Microsoft (MIP)" lightbox="../media/zero-trust/mip-solution-overview.png":::
+![Microsoft Purview حماية البيانات](../media/zero-trust/mip-solution-overview.png)
 
-لمزيد من المعلومات حول كيفية تخطيط حماية المعلومات ونشرها، راجع [**_نشر حل حماية البيانات في Microsoft_**](../compliance/information-protection-solution.md).
+لمزيد من المعلومات حول كيفية تخطيط ونشر حماية المعلومات، راجع [**_نشر حل حماية البيانات Microsoft Purview_**](../compliance/information-protection-solution.md). 
 
 إذا كنت تنشر حماية المعلومات للوائح خصوصية البيانات، فإن دليل الحل هذا يوفر إطار عمل موصى به للعملية بأكملها: [**_نشر حماية المعلومات للوائح خصوصية البيانات باستخدام Microsoft 365_**](../solutions/information-protection-deploy.md).

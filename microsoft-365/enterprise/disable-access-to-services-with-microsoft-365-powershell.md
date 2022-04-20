@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: في هذه المقالة، تعرف على كيفية استخدام PowerShell لتعطيل الوصول إلى خدمات Microsoft 365 للمستخدمين.
-ms.openlocfilehash: eeb3c8dc0057318550a956d0d0f4f916f4515fd4
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: d6754cc2de6208b9dc4bce03ef6477939f8d530a
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915852"
+ms.locfileid: "64939422"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>تعطيل الوصول إلى خدمات Microsoft 365 باستخدام PowerShell
 
@@ -118,7 +118,7 @@ User      Success            efb87545-963c-4e0d-99df-69c6916d9eb0 EXCHANGE_S_ENT
 
 للحصول على قائمة كاملة بخطط الترخيص (المعروفة أيضا باسم أسماء المنتجات)، وخطط الخدمة المضمنة، وأسماءها المألوفة المقابلة، راجع [أسماء المنتجات ومعرفات خطة الخدمة للترخيص](/azure/active-directory/users-groups-roles/licensing-service-plan-reference). (ابحث باستخدام ServicePlanId للبحث عن الاسم المألوف المقابل لخطة الخدمة).
 
-يعين المثال التالي **SPE_E5** (Microsoft 365 E5) مع إيقاف تشغيل خدمات **MICROSOFTBOOKINGS** (Microsoft Bookings **) LOCKBOX_ENTERPRISE (** Customer LockBox):
+يعين المثال التالي **SPE_E5** (Microsoft 365 E5) مع إيقاف تشغيل خدمات **MICROSOFTBOOKINGS** (Microsoft Bookings **) LOCKBOX_ENTERPRISE (** مربع تأمين العميل):
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: تعرف على كيفية تطبيق تسمية استبقاء على نموذج في SharePoint Syntex.
-ms.openlocfilehash: 17bfc0121d18f30b03cc42585cb214b649597ff6
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 281ff940377f033690f1ed1e7146c8aefe645bf1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882495"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64941798"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>تطبيق تسمية استبقاء على نموذج في SharePoint Syntex
 
@@ -36,7 +36,7 @@ ms.locfileid: "64882495"
 يمكنك تطبيق تسمية استبقاء موجودة مسبقا على النموذج الخاص بك من خلال إعدادات النموذج الخاص بك على الصفحة الرئيسية للنموذج الخاص بك. 
 
 > [!Important]
-> لكي تتوفر تسميات الاستبقاء لتطبيقها على نماذج فهم المستندات، يجب [إنشاؤها ونشرها](../compliance/file-plan-manager.md#create-retention-labels) في مركز التوافق في Microsoft 365.[](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels)
+> لكي تكون تسميات الاستبقاء متوفرة لتطبيقها على نماذج فهم المستندات، يجب [إنشاؤها ونشرها](../compliance/file-plan-manager.md#create-retention-labels) في مدخل [](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) توافق Microsoft Purview.
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>لإضافة تسمية استبقاء إلى نموذج فهم المستند
 
@@ -74,7 +74,7 @@ ms.locfileid: "64882495"
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>لإضافة تسمية استبقاء إلى نموذج معالجة نموذج
 
 > [!Important]
-> لكي تتوفر تسميات الاستبقاء لتطبيقها على نموذج معالجة النموذج، يجب [إنشاؤها ونشرها](../compliance/file-plan-manager.md#create-retention-labels) في مركز التوافق في Microsoft 365.[](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels)
+> لكي تكون تسميات الاستبقاء متوفرة لتطبيقها على نموذج معالجة النموذج، يجب [إنشاؤها ونشرها](../compliance/file-plan-manager.md#create-retention-labels) في مدخل [](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) توافق Microsoft Purview.
 
 يمكنك إما تطبيق تسمية استبقاء على نموذج معالجة النموذج عند إنشاء نموذج، أو تطبيقه على نموذج موجود.
 

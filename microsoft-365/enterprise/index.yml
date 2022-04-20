@@ -1,0 +1,80 @@
+### YamlMime:Hub
+title: موارد ووثائق Microsoft 365 للمؤسسات
+summary: أفضل تطبيقات الإنتاجية في فئتها مع خدمات سحابية ذكية تحول الطريقة التي تعمل بها.
+brand: m365
+metadata:
+  title: موارد ووثائق Microsoft 365 للمؤسسات
+  description: تعرّف على وثائق المنتجات والموارد المتاحة Microsoft 365 للمؤسسات لمحترفي تكنولوجيا المعلومات والعاملين في مجال المعلومات والشركاء.
+  services: service
+  ms.prod: microsoft-365-enterprise
+  ms.service: O365-seccomp
+  ms.topic: hub-page
+  ms.collection:
+  - M365-subscription-management
+  - Adm_TOC
+  author: robmazz
+  ms.author: robmazz
+  ms.date: 07/28/2020
+  ms.openlocfilehash: 4096920e940152fc75ed473b6ef9bc70cfd1171d
+  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 04/19/2022
+  ms.locfileid: "64937620"
+highlightedContent:
+  items:
+  - title: التعرّف على Microsoft 365 للمؤسسة
+    itemType: get-started
+    url: microsoft-365-overview.md
+  - title: تسريع عملية النشر باستخدام FastTrack
+    itemType: quickstart
+    url: https://www.microsoft.com/fasttrack/microsoft-365
+  - title: تدريب مسؤولي ومسؤولي تكنولوجيا المعلومات لديك
+    itemType: learn
+    url: /learn/m365/
+conceptualContent:
+  title: الحصول على المساعدة بشأن Microsoft 365 للمؤسسات والموارد الأخرى
+  summary: استكشف إرشادات وميزات وخدمات نشر Microsoft 365 للمؤسسات.
+  items:
+  - title: نشر العناصر الرئيسية
+    links:
+    - url: deploy-identity-solution-overview.md
+      itemType: how-to-guide
+      text: تحديد البنية الأساسية للهوية
+    - url: /windows/deployment/
+      itemType: get-started
+      text: Windows 10 Enterprise
+    - url: /deployoffice/plan-microsoft-365-apps
+      itemType: deploy
+      text: Microsoft 365 Apps for enterprise
+    - url: /intune/fundamentals/planning-guide
+      itemType: deploy
+      text: Microsoft Intune
+  - title: إدارة Microsoft 365 للمؤسسات
+    links:
+    - url: /windows/deployment/update/
+      itemType: how-to-guide
+      text: Windows 10 Enterprise
+    - url: /deployoffice/overview-update-channels
+      itemType: concept
+      text: Microsoft 365 Apps for enterprise
+    - url: /intune/apps/app-management
+      itemType: get-started
+      text: التطبيقات مع Intune
+    - url: /office365/
+      itemType: get-started
+      text: خدمات Microsoft 365
+additionalContent:
+  sections:
+  - title: موارد إضافية
+    summary: تعرّف على المزيد حول ميزات وموارد Microsoft 365 الأخرى.
+    items:
+    - title: Microsoft Purview
+      summary: ساعد مؤسستك على تنظيم المعلومات والحماية من المخاطر والتوافق للمعايير القانونية أو التنظيمية.
+      url: ../compliance/index.yml
+    - title: الأمان في Microsoft 365
+      summary: حماية مؤسستك عبر أسطح الهجوم باستخدام خدمات وحلول أمان قوية.
+      url: ../security/index.yml
+    - title: المجتمع التقني Microsoft 365
+      summary: تواصل وتعاون مع النظراء والخبراء في مجتمع Microsoft Tech وشارك أفضل ممارسات Microsoft 365.
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

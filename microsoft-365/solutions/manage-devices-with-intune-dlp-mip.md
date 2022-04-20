@@ -21,19 +21,19 @@ ms.collection:
 ms.custom: ''
 keywords: ''
 description: تنفيذ DLP نقطة النهاية من خلال العمل مع فريق حماية المعلومات والحوكمة لإنشاء نهج DLP لمؤسستك.
-ms.openlocfilehash: ab0be14f0a20f35044489e7f3ad0ba3f60180bcd
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 3670dd7e204562d2974ae815babe541c608bfacf
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705176"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943206"
 ---
 # <a name="step-7-implement-data-loss-prevention-dlp-with-information-protection-capabilities"></a>الخطوة 7. تنفيذ تفادي فقدان البيانات (DLP) مع قدرات حماية المعلومات
 
 
-إذا كانت مؤسستك تستخدم Microsoft 365 حماية البيانات وقد وضعت الوقت لفهم بياناتك وتطوير مخطط حساسية البيانات وتطبيق المخطط، فقد تكون مستعدا لتوسيع عناصر هذا المخطط إلى نقاط النهاية باستخدام نهج منع فقدان البيانات (DLP). 
+إذا كانت مؤسستك قد وضعت بالفعل الوقت لفهم بياناتك، وتطوير مخطط حساسية البيانات، وتطبيق المخطط، فقد تكون مستعدا لتوسيع عناصر هذا المخطط إلى نقاط النهاية باستخدام نهج منع فقدان البيانات (DLP) من Microsoft Purview. 
 
-ينطبق حاليا منع فقدان بيانات نقطة النهاية من Microsoft (DLP لنقطة النهاية) على:
+ينطبق منع فقدان بيانات نقطة النهاية (DLP لنقطة النهاية) حاليا على:
 - Windows 10، Windows 11
 - ماك
 
@@ -53,6 +53,6 @@ ms.locfileid: "64705176"
 
 |خطوه  |الوصف  |
 |---------|---------|
-|1     |  [تعرف على Microsoft 365 منع فقدان بيانات نقطة النهاية](../compliance/endpoint-dlp-learn-about.md).        |
-|2     | إلحاق الأجهزة ل DLP لنقطة النهاية. إذا قمت بإلحاق الأجهزة Microsoft Defender لنقطة النهاية، يتم بالفعل إلحاق أجهزتك بتوافق Microsoft 365، بما في ذلك DLP لنقطة النهاية. إذا لم يتم إلحاق أجهزتك ب Defender لنقطة النهاية، فراجع [بدء استخدام منع فقدان بيانات نقطة النهاية](../compliance/endpoint-dlp-getting-started.md) للحصول على الإرشادات. لمزيد من المعلومات حول كيفية عمل الإلحاق، راجع [تسجيل الأجهزة مقابل أجهزة الإلحاق](manage-devices-with-intune-overview.md#enrolling-devices-vs-onboarding-devices)|
+|1     |  [تعرف على منع فقدان بيانات نقطة النهاية](../compliance/endpoint-dlp-learn-about.md).        |
+|2     | تمكين الأجهزة ل DLP لنقطة النهاية. إذا قمت بإلحاق الأجهزة Microsoft Defender لنقطة النهاية، يتم تمكين أجهزتك بالفعل ل DLP لنقطة النهاية. إذا لم يتم إلحاق أجهزتك ب Defender لنقطة النهاية، فراجع [بدء استخدام منع فقدان بيانات نقطة النهاية](../compliance/endpoint-dlp-getting-started.md) للحصول على الإرشادات.|
 |3     |   اعمل مع فريق حماية المعلومات والحوكمة لتحديد النهج واختبارها وضبطها. وهذا يشمل مراقبة النتائج. راجع هذه الموارد:<br>- [استخدام منع فقدان بيانات نقطة النهاية](../compliance/endpoint-dlp-using.md)<br>- [عرض التقارير لمنع فقدان البيانات](../compliance/view-the-dlp-reports.md)      |

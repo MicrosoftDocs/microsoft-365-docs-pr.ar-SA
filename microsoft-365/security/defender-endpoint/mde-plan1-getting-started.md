@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: 68315c6cf7947c2d42e58e34b4496e0ef790c8b0
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d332cbf32f5423fb16abb158f9a30a18c2391a22
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665481"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64939334"
 ---
 # <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>بدء استخدام Microsoft Defender لنقطة النهاية الخطة 1
 
@@ -81,7 +81,7 @@ ms.locfileid: "64665481"
 | **الصحه** >  **مركز الرسائل** | الانتقال إلى مركز الرسائل في مركز مسؤولي Microsoft 365. يوفر مركز الرسائل معلومات حول التغييرات المخطط لها. تصف كل رسالة ما هو قادم، وكيف قد يؤثر على المستخدمين، وكيفية إدارة التغييرات. |  
 | **الأذونات & الأدوار** | يمكنك من منح أذونات لاستخدام مدخل Microsoft 365 Defender. يتم منح الأذونات من خلال الأدوار في Azure Active Directory (Azure AD). حدد دورا، ويظهر جزء قائمة منبثقة. تحتوي القائمة المنبثقة على ارتباط إلى Azure AD حيث يمكنك إضافة أعضاء أو إزالتهم في مجموعة أدوار. <br/><br/> لمعرفة المزيد، راجع [إدارة الوصول إلى المدخل باستخدام التحكم في الوصول المستند إلى الدور](rbac.md).  |
 | **الإعدادات** | الانتقال إلى الإعدادات العامة لمدخل Microsoft 365 Defender (المدرج في **مركز الأمان**) و Defender لنقطة النهاية (المدرجة **كنقاط نهاية**). <br/><br/> لمعرفة المزيد، راجع [الإعدادات](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
-| **المزيد من الموارد** | يعرض قائمة بالمزيد من المداخل والمراكز، مثل Azure Active Directory مركز التوافق في Microsoft 365. <br/><br/> لمعرفة المزيد، راجع [بوابات أمان Microsoft ومراكز الإدارة](../defender/portals.md). |
+| **موارد إضافية** | يعرض قائمة بالمزيد من المداخل والمراكز، مثل Azure Active Directory ومدخل الامتثال ل Microsoft Purview. <br/><br/> لمعرفة المزيد، راجع [بوابات أمان Microsoft ومراكز الإدارة](../defender/portals.md). |
 
 > [!TIP]
 > لمعرفة المزيد، راجع [نظرة عامة على مدخل Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).

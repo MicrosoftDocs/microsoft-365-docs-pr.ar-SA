@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: يمكن أن يساعدك التنقل الأساسي والأمان على تأمين أجهزتك المحمولة وإدارتها.
-ms.openlocfilehash: 78cfa4582aa2e25a3b47a12d2e067082e8b41d07
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b0e303af27d731cf3dba3af13019b3b993e52bfe
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781216"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64937752"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>إمكانات التنقل والأمان الأساسيين
 
@@ -230,11 +230,11 @@ ms.locfileid: "64781216"
 
 ## <a name="remotely-wipe-a-mobile-device"></a>مسح جهاز محمول عن بعد
 
-في حالة فقدان جهاز أو سرقته، يمكنك إزالة البيانات التنظيمية الحساسة والمساعدة في منع الوصول إلى موارد المؤسسة Microsoft 365 عن طريق إجراء مسح من مركز التوافق & الأمان > **إدارة** **منع** >  فقدان البيانات. يمكنك إجراء مسح انتقائي لإزالة بيانات المؤسسة فقط أو مسح كامل لحذف كافة المعلومات من جهاز واستعادتها إلى إعدادات المصنع الخاصة به.
+في حالة فقدان جهاز أو سرقته، يمكنك إزالة البيانات التنظيمية الحساسة والمساعدة في منع الوصول إلى موارد المؤسسة Microsoft 365 عن طريق إجراء مسح من **إدارة** **منع** >  فقدان بيانات مدخل **Microsoft Purview** > . يمكنك إجراء مسح انتقائي لإزالة بيانات المؤسسة فقط أو مسح كامل لحذف كافة المعلومات من جهاز واستعادتها إلى إعدادات المصنع الخاصة به.
 
 لمزيد من المعلومات، راجع [مسح جهاز محمول في Basic Mobility and Security](wipe-mobile-device.md).
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [نظرة عامة على Basic Mobility and Security for Microsoft 365](overview.md) (article)\
 [إنشاء نهج أمان الجهاز في Basic Mobility and Security](create-device-security-policies.md) (مقالة)

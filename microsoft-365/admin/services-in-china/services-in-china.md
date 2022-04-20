@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: تعرف على المزيد حول Office 365 المشغلة بواسطة 21Vianet المصممة لتلبية احتياجات خدمات السحابة الآمنة والموثوق بها والقابلة للتطوير في الصين.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7608be301accfb99e03683240108be5eaa7529a6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 16b40c0cb03d14915ccb89f7d34be5110b4c0849
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782622"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64938917"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 المُشغل بواسطة 21Vianet
 
@@ -42,7 +42,7 @@ ms.locfileid: "64782622"
 
  **تابعنا على WeChat**
 
-افحص رمز الاستجابة السريعة هذا لمتابعتها على WeChat واحصل على آخر التحديثات Office 365 المشغلة بواسطة 21Vianet.
+امسح شفرة الاستجابة السريعة لمتابعتنا على WeChat واحصل على آخر تحديثات لتشغيل Office 365 بواسطة 21Vianet.
 
 ![فحص رمز الاستجابة السريعة هذا لتتبعنا على WeChat.](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
 
@@ -174,7 +174,7 @@ ms.locfileid: "64782622"
 |مشاركة التقويم|يدعم Exchange 2013 SP1 وأكبر تكوين مشاركة تقويم الإنترنت يدويا مع Exchange أو المؤسسات Exchange Online الأخرى المحلية. لمزيد من التفاصيل حول تكوين هذه الميزة يدويا، راجع [تمكين نشر تقويم إنترنت](/exchange/enable-internet-calendar-publishing-exchange-2013-help).|
 مشاركة بيانات جهات الاتصال Exchange على أجهزة Apple المحمولة إلى Apple iCloud.|يتم تمكين هذا الإعداد/الميزة بشكل افتراضي. يجب على المسؤولين إيقاف تشغيل هذه الميزة للمساعدة في منع المستخدمين من مشاركة بيانات Exchange خارج مؤسستك.|
 |تشفير البريد الإلكتروني المستضاف Exchange|غير متوفر.|
-|تشفير الرسائل Office 365|قريباً.|
+|تشفير رسائل Microsoft Purview|قريباً.|
 
 ## <a name="office"></a>Office
 
@@ -235,7 +235,7 @@ ms.locfileid: "64782622"
 
 للحصول على التفاصيل والإرشادات، راجع [طلبات موضوع البيانات (DSR) الخاصة ب GDPR](https://www.trustcenter.cn/privacy/gdpr-office365.mdl).
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [جرب اشتراك Microsoft 365 للأعمال أو اشتره](../../commerce/try-or-buy-microsoft-365.md) (مقالة)\
 [دعم حماية البيانات Azure Office 365 المشغل بواسطة 21Vianet](parity-between-azure-information-protection.md) (مقالة)\

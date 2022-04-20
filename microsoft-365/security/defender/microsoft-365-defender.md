@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c97338121d38650116540564441f3b37051bf05f
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 99549ba8077d966c4d5649e144fa0259f9178629
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731174"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64944338"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -176,7 +176,7 @@ Microsoft 365 Defender هي مجموعة دفاع موحدة لما قبل ال�
 
 :::image type="content" source="../../media/converged-roles-5.png" alt-text="أدوار نقاط النهاية & المجموعات المعروضة في صفحة أدوار & الأذونات" lightbox="../../media/converged-roles-5.png":::
 
-يتم تكوين الوصول إلى Microsoft 365 Defender باستخدام أدوار Azure AD العمومية أو باستخدام أدوار مخصصة. بالنسبة إلى Defender لنقطة النهاية، راجع [تعيين وصول المستخدم إلى مدخل Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/assign-portal-access). للحصول على Defender لـ Office 365، راجع [الأذونات في مركز التوافق في Microsoft 365 Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
+يتم تكوين الوصول إلى Microsoft 365 Defender باستخدام أدوار Azure AD العمومية أو باستخدام أدوار مخصصة. بالنسبة إلى Defender لنقطة النهاية، راجع [تعيين وصول المستخدم إلى مدخل Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/assign-portal-access). للحصول على Defender لـ Office 365، راجع [الأذونات في مدخل توافق Microsoft Purview Microsoft 365 Defender](../office-365-security/permissions-microsoft-365-compliance-security.md).
 
 - تعرف على المزيد حول كيفية [إدارة الوصول إلى Microsoft 365 Defender](m365d-permissions.md)
 - تعرف على المزيد حول كيفية [إنشاء أدوار مخصصة](custom-roles.md) في Microsoft 365 Defender

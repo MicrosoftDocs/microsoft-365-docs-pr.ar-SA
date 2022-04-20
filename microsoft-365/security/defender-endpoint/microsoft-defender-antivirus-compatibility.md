@@ -14,16 +14,16 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 04/14/2022
+ms.date: 04/19/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6d0e9b00e7044145f7ca03d492a5bd32e726c38d
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: 08f9f3e127246b361cd76000967ae22991335338
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911435"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64943436"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>التوافق برنامج الحماية من الفيروسات من Microsoft Defender مع منتجات الأمان الأخرى
 
@@ -176,7 +176,7 @@ ms.locfileid: "64911435"
 (<a id="fn8">8</a>) عندما تكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل، تعمل تصفية محتوى الويب فقط مع مستعرض Microsoft Edge. 
 
 > [!NOTE]
-> Microsoft 365 تستمر الحماية [من فقدان بيانات نقطة النهاية](/microsoft-365/compliance/endpoint-dlp-learn-about) في العمل بشكل طبيعي عندما يكون برنامج الحماية من الفيروسات من Microsoft Defender في وضع نشط أو سلبي.
+> تستمر الحماية [من فقدان بيانات نقطة النهاية](/microsoft-365/compliance/endpoint-dlp-learn-about) في العمل بشكل طبيعي عندما يكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع النشط أو الخامل.
 
 ## <a name="important-notes"></a>ملاحظات هامة
 
@@ -194,7 +194,6 @@ ms.locfileid: "64911435"
  | إدارة المهام |  1. على جهاز Windows، افتح تطبيق Task Manager.<br/>2. حدد علامة التبويب **"تفاصيل** ".<br/>3. ابحث عن **MsMpEng.exe** في القائمة. | 
  | Windows PowerShell <br/> (لتأكيد تشغيل برنامج الحماية من الفيروسات من Microsoft Defender) |  1. على جهاز Windows، افتح Windows PowerShell. <br/>2. قم بتشغيل PowerShell cmdlet التالية: `Get-Process`.<br/>3. راجع النتائج. يجب أن تشاهد **MsMpEng.exe** إذا تم تمكين برنامج الحماية من الفيروسات من Microsoft Defender. | 
  | Windows PowerShell <br/>(للتأكد من وجود حماية من الفيروسات) |  يمكنك استخدام [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus).<br/>1. على جهاز Windows، افتح Windows PowerShell.<br/>2. تشغيل أوامر PowerShell cmdlet التالية:<br/> \|Get-MpComputerStatus حدد AMRunningMode <br/>3. راجع النتائج. يجب أن تشاهد وضع الحظر **العادي** أو **الخامل** أو **الكشف التلقائي والاستجابة على النقط النهائية** إذا تم تمكين برنامج الحماية من الفيروسات من Microsoft Defender على نقطة النهاية.  | 
- | موجه الأوامر |  1. على جهاز Windows، افتح موجه الأوامر.<br/>2. اكتب `sc query windefend`، ثم اضغط على مفتاح الإدخال Enter.<br/>3. راجع النتائج للتأكد من تشغيل برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي.  | 
 
 ## <a name="more-details-about-microsoft-defender-antivirus-states"></a>مزيد من التفاصيل حول حالات برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -221,4 +220,4 @@ ms.locfileid: "64911435"
 - [برنامج الحماية من الفيروسات من Microsoft Defender على عملاء Windows](microsoft-defender-antivirus-in-windows-10.md)
 - [برنامج الحماية من الفيروسات من Microsoft Defender على خادم Windows](microsoft-defender-antivirus-on-windows-server.md)
 - [الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر](edr-in-block-mode.md)
-- [تعرف على Microsoft 365 منع فقدان بيانات نقطة النهاية](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [التعرّف على تفادي فقدان بيانات نقطة النهاية](/microsoft-365/compliance/endpoint-dlp-learn-about)

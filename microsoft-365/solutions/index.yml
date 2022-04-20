@@ -1,0 +1,157 @@
+### YamlMime:Landing
+title: مركز الحلول والهندسة من Microsoft 365
+summary: يجمع مركز الحلول والبنية هذا التوجيه الفني الذي تحتاجه لفهم حلول Microsoft 365 المتكاملة وتخطيطها وتنفيذها لتخطيط موارد المؤسسة والتعاون الحديث الأمان والمتوافق.
+metadata:
+  title: مركز الحلول والهندسة من Microsoft 365
+  description: سيمكنك مركز المساعدة هذا من التعرّف على تدريب تكنولوجيا المعلومات وكيفية تصميم الحل والبنية المناسبة لمؤسستك.
+  ms.service: o365-solutions
+  ms.topic: landing-page
+  ms.collection:
+  - m365-security-compliance
+  author: samanro
+  ms.author: samanro
+  manager: bcarter
+  audience: ITPro
+  ms.date: 03/23/2022
+  ms.localizationpriority: high
+  ms.openlocfilehash: 49a8bfe703c1d68fcf4a63ac8dd07f9fadd8da63
+  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 04/19/2022
+  ms.locfileid: "64939027"
+landingContent:
+- title: إرشادات الحلول التأسيسية
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: إعداد البنية الأساسية للعمل المختلط
+      url: empower-people-to-work-remotely.md
+    - text: إعداد تعاون آمن مع Microsoft 365
+      url: setup-secure-collaboration-with-teams.md
+    - text: نشر الحماية من برامج الفدية الضارة
+      url: ransomware-protection-microsoft-365.md
+    - text: نشر حماية المعلومات للوائح خصوصية البيانات
+      url: information-protection-deploy.md
+    - text: Microsoft 365 للشركات والحملات الصغيرة
+      url: ../business-premium/index.md
+- title: الرسوم التوضيحية المعمارية ومبادئ التصميم
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: نماذج هندسة سحابة Microsoft
+      url: cloud-architecture-models.md
+    - text: صور توضيحية لإنتاجية Microsoft 365
+      url: productivity-illustrations.md
+    - text: مبادئ التصميم
+      url: design-principles.md
+    - text: مخططات بيانية للمعلومات خاصة بالمستخدمين
+      url: infographics-for-users.md
+    - text: أيقونات الهندسة وقوالبها
+      url: architecture-icons-templates.md
+- title: إرشادات حلول الإدارة والترحيل
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: إدارة المستأجر
+      url: tenant-management-overview.md
+    - text: إزالة موظف سابق
+      url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: ترحيل مشاركات الملفات إلى Microsoft 365
+      url: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: إرشادات حلول الاجتماعات والاتصالات
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: تخطيط ونشر حل Teams Voice
+      url: deploy-voice.md
+  - linkListType: overview
+    links:
+    - text: الاتصال التنظيمي
+      url: /sharepoint/corporate-communications-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: إرشادات حل العمل الجماعي والتعاون
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: إدارة عقود شركتك
+      url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md
+  - linkListType: overview
+    links:
+    - text: إنترانت ذكي
+      url: /sharepoint/intelligent-internet-overview
+    - text: إدارة التعاون
+      url: collaboration-governance-overview.md
+    - text: التعاون في الملفات
+      url: /sharepoint/deploy-file-collaboration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: إرشادات OneDrive للمؤسسات
+      url: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: إرشادات حل التوافق
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: حلول المخاطر من الداخل
+      url: ../compliance/insider-risk-solution-overview.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: حلول التدقيق
+      url: ../compliance/auditing-solutions-overview.md
+    - text: eDiscovery (Premium)
+      url: ../compliance/overview-ediscovery-20.md
+  - linkListType: reference
+    links:
+    - text: ISO - خطة العمل المستحسنة
+      url: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: NIST - خطة العمل المستحسنة
+      url: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: CCPA - خطة العمل المستحسنة
+      url: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: القانون العام لحماية البيانات (GDPR) - خطة العمل المستحسنة
+      url: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+- title: إرشادات حل الأمان
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: أهم مهام فرق الأمان لدعم العمل من المنزل
+      url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: أمان Microsoft 365 لصانعي القرار في الأعمال (BDMs)
+      url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: تكوينات الوصول إلى الأجهزة والهويات
+      url: ../security/office-365-security/microsoft-365-policies-configurations.md
+    - text: نشر Microsoft Defender لنقطة النهاية
+      url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
+    - text: تقييم Microsoft 365 Defender
+      url: ../security/defender-endpoint/deployment-phases.md
+    - text: توصيات الأمان للحسابات ذات الأولوية
+      url: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+    - text: تقييم Microsoft 365 Defender
+      url: ../security/defender-endpoint/deployment-phases.md
+  - linkListType: how-to-guide
+    links:
+    - text: قم بالتبديل من حل حماية نقطة نهاية غير تابع لـ Microsoft إلى Microsoft Defender لنقطة النهاية
+      url: ../security/defender-endpoint/switch-to-mde-overview.md
+    - text: معالجة الإيجابيات/السلبيات الخاطئة في Microsoft Defender لنقطة النهاية
+      url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
+- title: موارد حمل العمل
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: دراسات حالة Contoso
+      url: contoso-case-study-solutions.md
+  - linkListType: tutorial
+    links:
+    - text: دلائل معمل الاختبار
+      url: test-lab-guides-overview-solutions.md
+- title: إرشادات خاصة بالمجال
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: أمان الخدمات المالية وتوافقها
+      url: financial-services-secure-collaboration.md
+    - text: أمان الخدمات المساعدة والطاقة وتوافقها
+      url: energy-secure-collaboration.md
+    - text: Teams للرعاية الصحية
+      url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Teams للتعليم
+      url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Teams للقطاع الحكومي
+      url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: دعم العاملين في القطاع الحكومي البعيدين باستخدام Teams
+      url: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
