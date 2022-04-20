@@ -1,5 +1,5 @@
 ---
-title: استخدام الكيانات المسماة في سياسات منع فقدان البيانات (معاينة)
+title: استخدام الكيانات المسماة في نهج DLP
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,30 +16,22 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: استخدم هذه الإجراءات للاستفادة من الكيانات المسماة في نهج منع فقدان البيانات
-ms.openlocfilehash: 9b3a8899ef4b64c682289e29df19648a00d4f048
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 108b21e7c5a6708a01a712dcd44788f489df0e73
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665151"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971572"
 ---
-# <a name="use-named-entities-in-your-data-loss-prevention-policies-preview"></a>استخدام الكيانات المسماة في سياسات منع فقدان البيانات (معاينة)
+# <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>استخدام الكيانات المسماة في نهج منع فقدان البيانات
 
-> [!IMPORTANT]
-> يتم طرح ميزة الكيانات المسماة وستظهر في المستأجر الخاص بك عندما تكون متوفرة لك. تحقق منها في مستكشف المحتوى وفي تدفق تأليف نهج منع فقدان البيانات (DLP). 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-اقرأ من خلال [التعرف على الكيانات المسماة (معاينة)](named-entities-learn.md) قبل البدء في استخدامها.
+اقرأ [من خلال التعرف على الكيانات المسماة](named-entities-learn.md) قبل البدء في استخدامها.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
 ### <a name="skusubscriptions-licensing"></a>ترخيص SKU/الاشتراكات
-
-يجب أن يكون لديك أحد هذه الاشتراكات
-
-- حماية البيانات والحوكمة
-- التوافق في Microsoft 365 E5
-- Office 365 E5
-- Microsoft 365 E5
 
 للحصول على تفاصيل الترخيص الكامل، راجع [وصف الخدمة](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
 
@@ -55,10 +47,10 @@ ms.locfileid: "64665151"
 - مواقع SharePoint
 - حسابات OneDrive
 - Teams رسائل الدردشة والقنوات
-- الأجهزة (Windows 10 أجهزة نقطة النهاية)
+- الأجهزة (Windows 10 و11 جهاز نقطة نهاية)
+- علب بريد Exchange
 
 لا يتم دعم SITs للكيان المسمى والنهج المحسنة من أجل:
-
 
 - المستودعات المحلية
 - Power BI
@@ -69,55 +61,76 @@ ms.locfileid: "64665151"
 
 ## <a name="workloads-and-services-that-support-named-entities"></a>أحمال العمل والخدمات التي تدعم الكيانات المسماة
 
-
-- يدعم **Microsoft 3655 eDiscovery** استخدام الكيانات المسماة في خدمات الركيزة.
-- **يدعم Microsoft Defender for Cloud Apps** استخدام الكيانات المسماة في نهج Defender for Cloud Apps.
+- **يدعم Microsoft 365 eDiscovery** استخدام الكيانات المسماة في خدمات الركيزة.
+- يدعم **Microsoft Defender for Cloud Apps** استخدام الكيانات المسماة في نهج Defender for Cloud Apps في مدخل تطبيقات Defender for Cloud.
 - تدعم **Insider Risk Management** استخدام الكيانات المسماة في خدمات الركيزة.
+- تدعم **إدارة السجلات** استخدام الكيانات المسماة.
+- تدعم **أنواع المعلومات الحساسة لمطابقة البيانات الدقيقة** استخدام الكيانات المسماة.
 <!--- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
 - **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.-->
  
 ### <a name="unified-dlp"></a>DLP موحد
 
-|حمل العمل/الخدمات  |دعم المعاينة العامة للكيانات المسماة  |
+|حمل العمل/الخدمات  |دعم الكيانات المسماة  |
 |---------|---------|
 |تلميح نهج عملاء Office Win32    |غير معتمد  |
 |تلميح نهج عملاء Office WAC    |دعم         |
 |تلميح نهج OWA     |غير معتمد         |
 |تلميح نهج Outlook     |غير معتمد |
-|نقاط النهاية (أجهزة Windows 10)     |دعم  |
-|قواعد النقل Exchange     |غير معتمد |
+|نقاط النهاية (Windows 10 و11 جهازا)     |دعم  |
+|قواعد النقل Exchange     |دعم |
 |OneDrive for Business البيانات الثابتة     |دعم         |
 |بيانات SharePoint Online الثابتة     |دعم         |
 |Teams البيانات الثابتة     |دعم         |
-|بيانات رسائل البريد الإلكتروني الثابتة     |غير معتمد         |
+|بيانات رسائل البريد الإلكتروني الثابتة     |مدعومة للمستأجرين باستخدام خطة خدمة الخصوصية         |
 |Microsoft Defender for Cloud Apps     |دعم         |
 
 ### <a name="autolabeling"></a>التسمية التلقائية
 
-|حمل العمل/الخدمات |دعم المعاينة العامة للكيانات المسماة  |
+|حمل العمل/الخدمات |دعم الكيانات المسماة  |
 |---------|---------|
 |Office عملاء Win32 دون اتصال   |معتمد، يجب على المستخدم تحديد التسمية وتطبيقها يدويا |
 |عملاء Office Win32 عبر الإنترنت عبر الإنترنت|مدعوم بنظام الثقة القديم |
 |Outlook عبر الإنترنت   |مدعوم بنظام الثقة القديم  |
 |عميل Office WAC     |دعم |
 |OWA     |دعم |
-|نقل Exchange     |غير معتمد |
+|نقل Exchange     |دعم |
 |OneDrive for Business البيانات الثابتة     |دعم |
 |بيانات SharePoint Online الثابتة|دعم|
 |الماسح الضوئي ل Azure حماية البيانات (AIP)|غير معتمد|
 
 ## <a name="known-issues"></a>المشاكل المعروفة
 
-|المساله  |اثر  |
+|مشكلة  |اثر  |
 |---------|---------|
 |تلميحات نهج DLP (عملاء OWA، Outlook، Office Win32)     |   ستؤدي تلميحات النهج مع شرط الكيان إلى "عدم المطابقة"      |
 | دعم اللغة الآسيوية لاسم الشخص (الصينية واليابانية والكورية)    | الكيانات المسماة المعتمدة لمجموعة الأحرف المستندة إلى اللاتينية فقط (أي أن kanji غير معتمد) لاسم الشخص        |
 |المستودعات المحلية    | غير معتمد كعبء عمل|
+|Power BI (معاينة) | غير معتمد
 
 <!--|Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |-->
 
+## <a name="best-practices-for-using-named-entity-sits"></a>أفضل الممارسات لاستخدام كيانات SITs المسماة
+
+فيما يلي بعض الممارسات التي يمكنك استخدامها عند إنشاء نهج يستخدم كيانا مسمى SIT أو تحريره.
+
+- استخدم عدد المثيلات المنخفضة (من ثلاثة إلى خمسة) عندما تبحث عن البيانات الموجودة في جدول بيانات والكلمة الأساسية المطلوبة من قبل SIT لتلك البيانات موجودة فقط في رأس العمود. على سبيل المثال، لنفترض أنك تبحث عن أرقام الضمان الاجتماعي الأمريكية، وتحدث الكلمة الأساسية `Social Security Number` فقط في رأس العمود. نظرا إلى أن القيم (الدليل القاطع) موجودة في الخلايا أدناه، فمن المحتمل أن تكون المثيلات القليلة الأولى فقط قريبة بما يكفي من الكلمة الأساسية التي سيتم اكتشافها.  
+
+- إذا كنت تستخدم كيانا مسمى SIT، مثل "كافة الأسماء الكاملة"، للمساعدة في العثور على أرقام الضمان الاجتماعي الأمريكية، فاستخدم عدد أكبر من المثيلات مثل 10 أو 50. ثم عندما يتم الكشف عن أسماء الأشخاص وSSNs معا، فمن المرجح أن تحصل على إيجابيات حقيقية.
+
+- يمكنك استخدام [محاكاة التسمية التلقائية](apply-sensitivity-label-automatically.md#learn-about-simulation-mode) لاختبار دقة وحدات SITs المسماة. قم بتشغيل محاكاة باستخدام وحدة مسماة SIT لمعرفة العناصر التي تتطابق مع النهج. باستخدام هذه المعلومات، يمكنك ضبط الدقة عن طريق ضبط عدد المثيلات ومستويات الثقة في النهج المخصصة أو شروط القالب المحسنة. يمكنك تكرار عمليات المحاكاة حتى تكون الدقة هي المكان الذي تريدها فيه، قبل نشر نهج DLP أو سياسة التسمية التلقائية التي تحتوي على كيانات مسماة في الإنتاج. فيما يلي نظرة عامة على التدفق:
+
+1. حدد SIT أو مجموعة من SITs التي تريد اختبارها في وضع المحاكاة، إما مخصصة أو منسوخة ومحررة.
+1. تحديد وصف الحساسية أو إنشاؤه ليتم تطبيقه عندما يعثر نهج التسمية التلقائية على تطابق في Exchange أو مواقع SharePoint أو حسابات OneDrive.
+1. إنشاء نهج وصف تلقائي للحساسية يستخدم SIT من الخطوة 1 ومع نفس الشروط والاستثناءات التي سيتم استخدامها في نهج DLP الخاص بك
+1. تشغيل محاكاة النهج
+1. عرض النتائج
+1. ضبط SIT أو النهج وعدد المثيلات ومستويات الثقة لتقليل الإيجابيات الخاطئة.
+1. كرر حتى تحصل على نتائج الدقة التي تريدها.
+
+
 ## <a name="for-further-information"></a>لمزيد من المعلومات
-<!-- - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)-->
-- [تعرف على الكيانات المسماة (معاينة).](named-entities-learn.md)
+- [تعريفات كيان نوع المعلومات الحساسة](sensitive-information-type-entity-definitions.md)
+- [تعرف على الكيانات المسماة](named-entities-learn.md).
 - [إنشاء نهج DLP واختباره وضبطه](create-test-tune-dlp-policy.md)
 - [إنشاء نهج DLP من قالب](create-a-dlp-policy-from-a-template.md)

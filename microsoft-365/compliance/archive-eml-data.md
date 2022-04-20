@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات EML وأرشفتها من Veritas إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: c4c4043baf8f58405923bf5ac1bc69c6293a4f52
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9ba4cc4772e93b85e856bb68850ba682352e9f5f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938698"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993524"
 ---
 # <a name="set-up-a-connector-to-archive-eml-data"></a>إعداد موصل أرشفة بيانات EML
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد بيانات EML وأرشفتها إلى علب بريد المستخدمين في مؤسستك Microsoft 365. EML هو ملحق الملف لرسالة بريد إلكتروني محفوظة في ملف. يحول الموصل محتوى عنصر من تنسيق المصدر إلى تنسيق رسالة بريد إلكتروني ثم يستورد العنصر إلى علبة بريد مستخدم.
 

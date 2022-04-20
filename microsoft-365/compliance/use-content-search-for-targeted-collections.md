@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: استخدم البحث في المحتوى في مدخل توافق Microsoft Purview لتنفيذ مجموعة مستهدفة، والتي تبحث عن عناصر في علبة بريد معينة أو مجلد موقع معين.
-ms.openlocfilehash: b01197ebc942b13f1b3806d2ad3b5a564b609098
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9638a0870f1d97d2bcea73215509d269576c4ecd
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947044"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991765"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>استخدام البحث عن المحتوى للمجموعات المستهدفة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 لا توفر أداة البحث في المحتوى في مدخل توافق Microsoft Purview طريقة مباشرة في واجهة المستخدم للبحث في مجلدات معينة في علب بريد Exchange أو SharePoint ومواقع OneDrive for Business. ومع ذلك، من الممكن البحث في مجلدات معينة (تسمى *مجموعة مستهدفة*) عن طريق تحديد خاصية معرف المجلد للبريد الإلكتروني أو المسار (DocumentLink) للمواقع في بناء جملة استعلام البحث الفعلي. يعد استخدام "البحث عن المحتوى" لتنفيذ مجموعة مستهدفة مفيدا عندما تكون واثقا من وجود العناصر التي تستجيب لحالة أو عناصر مميزة في علبة بريد معينة أو مجلد موقع معين. يمكنك استخدام البرنامج النصي في هذه المقالة للحصول على معرف المجلد لمجلدات علبة البريد أو المسار (DocumentLink) للمجلدات الموجودة على موقع SharePoint OneDrive for Business. ثم يمكنك استخدام معرف المجلد أو المسار في استعلام بحث لإرجاع العناصر الموجودة في المجلد.
 

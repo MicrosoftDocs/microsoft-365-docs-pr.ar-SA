@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: يمكنك إضافة مصادر بيانات غير احتجازية إلى حالة eDiscovery (Premium) ووضع قيد الاحتجاز على مصدر البيانات. تتم إعادة فهرسة مصادر البيانات غير الاحتجازية، لذلك تتم إعادة معالجة أي محتوى تم وضع علامة عليه على أنه مفهرس جزئيا لجعله قابلا للبحث بشكل كامل وسريع.
-ms.openlocfilehash: cc093b60de055fe8b762f6c141921cd274233af2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2f5825f514dfc8f99fc7a6006d1fd30028515c7b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945902"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991875"
 ---
 # <a name="add-non-custodial-data-sources-to-an-ediscovery-premium-case"></a>إضافة مصادر بيانات غير احتجازية إلى حالة eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 في حالات Microsoft Purview eDiscovery (Premium)، فإنه لا يلبي دائما احتياجاتك لربط مصدر بيانات Microsoft 365 مع أمين في هذه الحالة. ولكن قد لا تزال بحاجة إلى إقران تلك البيانات بحالة بحيث يمكنك البحث فيها وإضافتها إلى مجموعة مراجعة وتحليلها ومراجعتها. تسمى الميزة في eDiscovery (Premium) *مصادر البيانات غير الاحتجازية* وتتيح لك إضافة بيانات إلى حالة دون الحاجة إلى إقرانها بوصي. كما يطبق نفس وظيفة eDiscovery (Premium) على البيانات غير الاحتجازية المتوفرة للبيانات المرتبطة بالوصي. اثنان من الأشياء الأكثر فائدة التي يمكنك تطبيقها على البيانات غير الاحتجازية هما وضعها قيد الاحتجاز ومعالجتها باستخدام [الفهرسة المتقدمة](indexing-custodian-data.md).
 

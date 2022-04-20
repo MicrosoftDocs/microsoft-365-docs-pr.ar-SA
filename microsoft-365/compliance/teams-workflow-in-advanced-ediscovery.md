@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: تعرف على كيفية الاحتفاظ بالمحتوى وجمعه ومراجعته وتصديره من Microsoft Teams في eDiscovery (Premium).
-ms.openlocfilehash: 21f6149d8a1c1114ab0d2d293af710690f74c6e5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4dc516037e1ccad41c7ed93f280d698ca6bd164c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948386"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991897"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>سير عمل eDiscovery (Premium) للمحتوى في Microsoft Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 توفر هذه المقالة مجموعة شاملة من الإجراءات والإرشادات وأفضل الممارسات لاستخدام Microsoft Purview eDiscovery (Premium) للاحتفاظ بالمحتوى وجمعه ومراجعته وتصديره من Microsoft Teams. الهدف من هذه المقالة هو مساعدتك على تحسين سير عمل eDiscovery لمحتوى Teams.
 
@@ -301,7 +303,7 @@ ms.locfileid: "64948386"
 
 ## <a name="deleting-teams-chat-messages"></a>حذف رسائل دردشة Teams
 
-يمكنك استخدام Advanced eDiscovery وMicrosoft Graph Explorer للاستجابة لحوادث انسكاب البيانات، عند إصدار محتوى يحتوي على معلومات سرية أو ضارة من خلال رسائل دردشة Teams. يمكن للمسؤولين في مؤسستك البحث عن رسائل الدردشة وحذفها في Microsoft Teams. قد يساعدك ذلك على إزالة المعلومات الحساسة أو المحتوى غير المناسب في رسائل الدردشة Teams. لمزيد من المعلومات، راجع [البحث عن رسائل الدردشة وإزالةها في Teams](search-and-delete-Teams-chat-messages.md).
+يمكنك استخدام eDiscovery (Premium) وMicrosoft Graph Explorer للاستجابة لحوادث انسكاب البيانات، عند إصدار محتوى يحتوي على معلومات سرية أو ضارة من خلال رسائل الدردشة Teams. يمكن للمسؤولين في مؤسستك البحث عن رسائل الدردشة وحذفها في Microsoft Teams. قد يساعدك ذلك على إزالة المعلومات الحساسة أو المحتوى غير المناسب في رسائل الدردشة Teams. لمزيد من المعلومات، راجع [البحث عن رسائل الدردشة وإزالةها في Teams](search-and-delete-Teams-chat-messages.md).
 
 ## <a name="reference-guide"></a>دليل مرجعي
 

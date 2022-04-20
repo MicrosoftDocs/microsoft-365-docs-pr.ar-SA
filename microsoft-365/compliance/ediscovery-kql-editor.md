@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: يمكنك استخدام محرر KQL لتكوين استعلامات البحث eDiscovery في البحث عن المحتوى وeDiscovery (قياسي) وeDiscovery (Premium).
-ms.openlocfilehash: f1339b064c736d19bb428f812429cf0620cb3f53
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cbd7adb02c926477fd81568ed950ebd16110c79b
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949950"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993787"
 ---
 # <a name="use-the-kql-editor-to-build-search-queries"></a>استخدام محرر KQL لإنشاء استعلامات البحث
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 توفر تجربة استعلام KQL الجديدة في البحث في أدوات Microsoft 365 eDiscovery ملاحظات وإرشادات عند إنشاء استعلامات البحث في البحث عن المحتوى وMicrosoft Purview eDiscovery (قياسي) وeDiscovery (Premium). عند كتابة الاستعلامات في المحرر، فإنه يوفر الإكمال التلقائي للخصائص والشروط المعتمدة القابلة للبحث ويوفر قوائم بالقيم المعتمدة للخصائص والشروط القياسية. على سبيل المثال، إذا حددت `kind` خاصية البريد الإلكتروني في الاستعلام، فسيقدم المحرر قائمة بالقيم المعتمدة التي يمكنك تحديدها. يعرض محرر KQL أيضا أخطاء الاستعلام المحتملة في الوقت الحقيقي التي يمكنك إصلاحها قبل تشغيل البحث. والأفضل من ذلك كله، يمكنك لصق الاستعلامات المعقدة مباشرة في المحرر دون الحاجة إلى إنشاء استعلامات يدويا باستخدام الكلمات الأساسية وبطاقات الشروط في منشئ الشروط القياسي.
   

@@ -19,14 +19,16 @@ description: استخدم أداة إدارة الوصي (Premium) eDiscovery ل
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 35b622e00caeeca78c85849f03b3a21f8a28b443
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e2de6209e08d6e8dd6f853724f26d026aec1c33f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943502"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993699"
 ---
 # <a name="view-custodian-audit-activity"></a>عرض نشاط التدقيق الخاص بالأمين
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 هل تحتاج إلى العثور على ما إذا كان المستخدم قد عرض مستندا معينا أو قام بإزالة عنصر من علبة بريده؟ تم دمج Microsoft Purview eDiscovery (Premium) الآن مع أداة البحث في سجل التدقيق الموجودة في مدخل توافق Microsoft Purview. باستخدام هذه التجربة المضمنة، يمكنك استخدام أداة إدارة الوصي على eDiscovery (Premium) لتسهيل التحقيق الخاص بك من خلال الوصول بسهولة إلى النشاط والبحث عنه للأمناء ضمن حالتك.
 

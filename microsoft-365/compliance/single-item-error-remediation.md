@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: يمكنك إصلاح خطأ معالجة في مستند في مجموعة مراجعة في eDiscovery (Premium) دون الحاجة إلى اتباع عملية معالجة الخطأ المجمع.
-ms.openlocfilehash: fa4a595a967935241e67b9a88ed158c789075102
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d3b90f0f2d396b6304bb85b46bc5b018802101eb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935643"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993985"
 ---
 # <a name="single-item-error-remediation-in-ediscovery-premium"></a>معالجة خطأ عنصر واحد في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تمنح معالجة الخطأ مستخدمي Microsoft Purview eDiscovery (Premium) القدرة على تصحيح مشكلات البيانات التي تمنع eDiscovery (Premium) من معالجة المحتوى بشكل صحيح. على سبيل المثال، لا يمكن معالجة الملفات المحمية بكلمة مرور لأن هذه الملفات مؤمنة أو مشفرة. في السابق، كان بإمكانك معالجة الأخطاء بشكل مجمع فقط باستخدام [سير العمل هذا](error-remediation-when-processing-data-in-advanced-ediscovery.md). ولكن في بعض الأحيان، لا يكون من المنطقي معالجة الأخطاء في ملفات متعددة عندما تكون غير متأكد مما إذا كان أي من هذه الملفات يستجيب للحالة التي تحقق فيها. قد لا يكون من المنطقي أيضا معالجة الأخطاء قبل أن يكون لديك فرصة لمراجعة بيانات تعريف الملف (مثل موقع الملف أو من لديه حق الوصول) لمساعدتك على اتخاذ قرارات مقدما حول الاستجابة. ميزة جديدة تسمى *معالجة خطأ عنصر واحد* تمنح مديري eDiscovery القدرة على عرض بيانات تعريف الملفات مع خطأ معالجة، وإذا لزم الأمر، قم بمعالجة الخطأ مباشرة في مجموعة المراجعة. تناقش المقالة كيفية تحديد الملفات وتجاهلها ومعالجتها مع معالجة الأخطاء في مجموعة مراجعة.
 

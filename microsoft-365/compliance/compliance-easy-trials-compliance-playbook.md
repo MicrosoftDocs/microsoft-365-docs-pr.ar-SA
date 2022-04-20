@@ -1,5 +1,5 @@
 ---
-title: دليل المبادئ التجريبي لحلول التوافق Microsoft 365
+title: دليل المبادئ التجريبي لحلول Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -14,26 +14,28 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: دليل المبادئ التجريبي لحلول التوافق Microsoft 365.
-ms.openlocfilehash: 8c5456344a97a0cfc4564c228eeba20067682070
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: دليل المبادئ التجريبي لحلول Microsoft Purview.
+ms.openlocfilehash: 5136ceb33f4fb09345ee942b8d411d14952befc5
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759159"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952765"
 ---
-# <a name="trial-playbook-microsoft-365-compliance-solutions"></a>دليل المبادئ التجريبي: حلول التوافق Microsoft 365
+# <a name="trial-playbook-microsoft-purview-solutions"></a>دليل المبادئ التجريبي: حلول Microsoft Purview
 
-مرحبا بك في دليل المبادئ التجريبي لحلول التوافق Microsoft 365. سيساعدك دليل المبادئ هذا على تحقيق أقصى استفادة من الإصدار التجريبي المجاني لمدة 90 يوما من خلال مساعدتك على اكتشاف قدرات قوية وشاملة لمنتجات التوافق والأمان Microsoft 365.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+مرحبا بك في دليل المبادئ التجريبي لحلول Microsoft Purview. سيساعدك دليل المبادئ هذا على تحقيق أقصى استفادة من الإصدار التجريبي المجاني لمدة 90 يوما من خلال مساعدتك على اكتشاف قدرات قوية وشاملة لمنتجات Microsoft Purview والأمان.
 
 ستساعدك تجربة كل حل على اتخاذ قرارات مستنيرة لتلبية احتياجات الامتثال لمؤسستك.
 
 ميزات:
 
-- [التدقيق المتقدم](#advanced-audit)
+- [التدقيق (Premium)](#audit-premium)
 - [توافق الاتصالات](#communication-compliance)
 - [إدارة التوافق](#compliance-manager)
-- [منع فقدان البيانات](#data-loss-prevention)
+- [منع فقدان بيانات Microsoft Purview](#data-loss-prevention)
 - [eDiscovery](#ediscovery)
 - [حماية البيانات](#information-protection)
 - [Insider Risk Management](#insider-risk-management)
@@ -44,48 +46,48 @@ ms.locfileid: "64759159"
 - [تقييمات متميزة ل Compliance Manager](#compliance-manager-premium-assessments)
 - [Microsoft Priva Privacy Risk Management وطلبات حقوق موضوع Microsoft Priva](#microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests)
 
-## <a name="compliance-actions-with-microsoft-365"></a>إجراءات التوافق مع Microsoft 365
+## <a name="compliance-actions-with-microsoft-purview"></a>إجراءات التوافق مع Microsoft Purview
 
 ابدأ بتجربة حلول التوافق من Microsoft بسهولة وسرعة دون تغيير بيانات التعريف الخاصة بمؤسستك. اعتمادا على أولوياتك، يمكنك البدء بأي من مجالات الحل هذه لرؤية القيمة الفورية. فيما يلي خمسة مخاوف تنظيمية قصوى كما هو موضح من قبل عملائنا والحلول الموصى بها للبدء بها.
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="إجراءات التوافق مع Microsoft 365":::
 
-## <a name="advanced-audit"></a>التدقيق المتقدم
+## <a name="audit-premium"></a>التدقيق (Premium)
 
 **إجراء التحقيقات**
 
-يساعد التدقيق المتقدم المؤسسات على إجراء تحقيقات الطب الشرعي والتوافق من خلال زيادة استبقاء سجل التدقيق المطلوب لإجراء تحقيق، وتوفير الوصول إلى الأحداث الهامة التي تساعد في تحديد نطاق التسوية، وتوفير وصول أسرع إلى واجهة برمجة تطبيقات نشاط الإدارة Office 365.
+يساعد Microsoft Purview Audit (Premium) المؤسسات على إجراء تحقيقات الطب الشرعي والتوافق من خلال زيادة استبقاء سجل التدقيق المطلوب لإجراء تحقيق، وتوفير الوصول إلى الأحداث الهامة التي تساعد في تحديد نطاق التسوية، وتوفير وصول أسرع إلى واجهة برمجة تطبيقات نشاط الإدارة Office 365.
 
-### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>الخطوة 1: [تطبيق ترخيص E5 على كل مستخدم ترغب في إنشاء أحداث E5 له](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users)
+### <a name="step-1-apply-the-e5-license-to-each-user-for-which-youd-like-to-generate-e5-events"></a>الخطوة 1: [تطبيق ترخيص E5 على كل مستخدم ترغب في إنشاء أحداث E5 له](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users)
 
 > [!TIP]
 > أفضل الممارسات التجريبية: اليوم 1
 
-تتطلب ميزات التدقيق المتقدمة مثل القدرة على تسجيل الأحداث الهامة مثل MailItemsAccessed و Send ترخيص E5 مناسبا تم تعيينه للمستخدمين. بالإضافة إلى ذلك، يجب تمكين تطبيق/خدمة التدقيق المتقدم لهؤلاء المستخدمين.
+تتطلب ميزات التدقيق (Premium) مثل القدرة على تسجيل الأحداث الهامة مثل MailItemsAccessed و Send ترخيص E5 مناسبا تم تعيينه للمستخدمين. بالإضافة إلى ذلك، يجب تمكين تطبيق/خدمة التدقيق المتقدم لهؤلاء المستخدمين.
 
-إعداد التدقيق المتقدم للمستخدمين - للتحقق من تعيين تطبيق التدقيق المتقدم للمستخدمين، [نفذ الخطوات التالية لكل مستخدم](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users).
+إعداد التدقيق (Premium) للمستخدمين - للتحقق من تعيين تطبيق التدقيق المتقدم للمستخدمين، [نفذ الخطوات التالية لكل مستخدم](set-up-advanced-audit.md#step-1-set-up-audit-premium-for-users).
 
-1. تمكين أحداث التدقيق المتقدمة - [تمكين SearchQueryInitiatedExchange و SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) لتدقيقها لكل مستخدم في [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. تمكين أحداث التدقيق (Premium) - [تمكين SearchQueryInitiatedExchange و SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-audit-premium-events) لتدقيقها لكل مستخدم في [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 1. إعداد نهج استبقاء التدقيق - [إنشاء نهج استبقاء سجل تدقيق إضافية](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) لتلبية متطلبات عمليات الأمان الخاصة بمؤسستك وفرق تكنولوجيا المعلومات والتوافق.
-1. البحث عن أحداث التدقيق المتقدم - [البحث عن أحداث التدقيق المتقدم الهامة](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) والأنشطة الأخرى عند إجراء التحقيقات الجنائية.
+1. البحث عن أحداث التدقيق (Premium) - [البحث عن أحداث التدقيق (Premium) الهامة](set-up-advanced-audit.md#step-4-search-for-audit-premium-events) والأنشطة الأخرى عند إجراء التحقيقات الجنائية.
 
 ### <a name="step-2-create-new-audit-log-policies-to-specify-how-long-to-retain-audit-logs-in-your-org-for-activities-performed-by-users-and-define-priority-levels-for-your-policies"></a>الخطوة 2: [إنشاء نهج سجل تدقيق جديدة لتحديد مدة الاحتفاظ بسجلات التدقيق في مؤسستك للأنشطة التي يقوم بها المستخدمون وتحديد مستويات الأولوية لنهجك](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)
 
 > [!TIP]
 > أفضل الممارسات التجريبية: إنشاء خلال أول 30 يوما
 
-تعد نهج استبقاء سجل التدقيق جزءا من قدرات التدقيق المتقدم الجديدة في Microsoft 365. يتيح لك نهج استبقاء سجل التدقيق تحديد مدة الاحتفاظ بسجلات التدقيق في مؤسستك.
+تعد نهج استبقاء سجل التدقيق جزءا من قدرات التدقيق (Premium) الجديدة في Microsoft 365. يتيح لك نهج استبقاء سجل التدقيق تحديد مدة الاحتفاظ بسجلات التدقيق في مؤسستك.
 
 1. قبل إنشاء نهج استبقاء سجل التدقيق – [الأمور الأساسية التي يجب معرفتها](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) قبل إنشاء النهج الخاص بك.
 1. [إنشاء نهج استبقاء سجل التدقيق](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [إدارة نهج استبقاء سجل التدقيق في مركز التوافق في Microsoft 365](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-microsoft-365-compliance-center) - يتم سرد نهج استبقاء سجل التدقيق في علامة تبويب نهج استبقاء التدقيق (تسمى أيضا لوحة المعلومات). يمكنك استخدام لوحة المعلومات لعرض نهج استبقاء التدقيق وتحريرها وحذفها.
+1. [إدارة نهج استبقاء سجل التدقيق في مدخل توافق Microsoft Purview](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - يتم سرد نهج استبقاء سجل التدقيق في علامة تبويب نهج استبقاء التدقيق (تسمى أيضا لوحة المعلومات). يمكنك استخدام لوحة المعلومات لعرض نهج استبقاء التدقيق وتحريرها وحذفها.
 1. إنشاء نهج استبقاء سجل التدقيق وإدارتها على PowerShell - يمكنك أيضا استخدام Security & Compliance Center PowerShell [لإنشاء نهج استبقاء سجل التدقيق وإدارتها](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). أحد أسباب استخدام PowerShell هو إنشاء نهج لنوع سجل أو نشاط غير متوفر في واجهة المستخدم.
 
 ## <a name="communication-compliance"></a>توافق الاتصالات
 
 **تحديد انتهاكات سياسة قواعد السلوك والتصرف وفقا لها**
 
-يساعدك توافق الاتصالات على تحديد انتهاكات الاتصال بذكاء لدعم بيئة عمل متوافقة وسليمة من خلال مساعدتك في اكتشاف الرسائل غير المناسبة، والتحقيق في انتهاكات النهج المحتملة، واتخاذ خطوات للمعالجة.
+يساعدك Microsoft Purview Communication Compliance على تحديد انتهاكات الاتصالات بذكاء لدعم بيئة عمل متوافقة وسليمة من خلال مساعدتك في اكتشاف الرسائل غير المناسبة، والتحقيق في انتهاكات النهج المحتملة، واتخاذ خطوات للمعالجة.
 
 ### <a name="step-1-enable-permissions-for-communication-compliance"></a>الخطوة 1: [تمكين الأذونات للامتثال للاتصالات](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
@@ -113,7 +115,7 @@ ms.locfileid: "64759159"
 
 **إدارة التوافق التنظيمي بسهولة**
 
-يمكن أن يساعدك Compliance Manager طوال رحلة الامتثال الخاصة بك، بدءا من جرد مخاطر حماية البيانات إلى إدارة تعقيدات تنفيذ عناصر التحكم، والبقاء على اطلاع دائم باللوائح والشهادات، وإعداد التقارير إلى المراجعين.
+يمكن أن يساعدك Microsoft Purview Compliance Manager طوال رحلة الامتثال الخاصة بك، بدءا من جرد مخاطر حماية البيانات إلى إدارة تعقيدات تنفيذ عناصر التحكم، والبقاء على اطلاع دائم باللوائح والشهادات، وإعداد التقارير إلى المراجعين.
 
 ### <a name="step-1-get-to-know-compliance-manager"></a>الخطوة 1: [التعرف على Compliance Manager](compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
 
@@ -171,7 +173,7 @@ ms.locfileid: "64759159"
 
 **حماية البيانات الحساسة**
 
-للامتثال لمعايير الأعمال ولوائح الصناعة، تحتاج المؤسسات إلى حماية المعلومات الحساسة لمنع الكشف غير المقصود. إعداد نهج منع فقدان البيانات لتحديد المعلومات الحساسة ومراقبتها وحمايتها تلقائيا عبر Microsoft 365.
+للامتثال لمعايير الأعمال ولوائح الصناعة، تحتاج المؤسسات إلى حماية المعلومات الحساسة لمنع الكشف غير المقصود. قم بإعداد نهج منع فقدان البيانات من Microsoft Purview لتحديد المعلومات الحساسة ومراقبتها وحمايتها تلقائيا عبر Microsoft 365.
 
 ### <a name="step-1-protect-data-loss-on-teams-locations"></a>الخطوة 1: [حماية فقدان البيانات على مواقع Teams](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
 
@@ -192,7 +194,7 @@ ms.locfileid: "64759159"
 تسمح لك DLP لنقطة النهاية من Microsoft بمراقبة أجهزة Windows 10 والكشف عن وقت استخدام العناصر الحساسة ومشاركتها.
 
 1. إعداد نقاط النهاية - تأكد من أن أجهزة Windows 10 وmacOS التي تخطط لنشر DLP لنقطة النهاية [لتلبية هذه المتطلبات](endpoint-dlp-getting-started.md)
-1. [إلحاق الأجهزة بإدارة الجهاز](endpoint-dlp-getting-started.md)  - يجب تمكين مراقبة الجهاز وإلحاق نقاط النهاية قبل أن تتمكن من مراقبة العناصر الحساسة وحمايتها على الجهاز. يتم تنفيذ كلا الإجراءين في مدخل التوافق Microsoft 365.
+1. [إلحاق الأجهزة بإدارة الجهاز](endpoint-dlp-getting-started.md)  - يجب تمكين مراقبة الجهاز وإلحاق نقاط النهاية قبل أن تتمكن من مراقبة العناصر الحساسة وحمايتها على الجهاز. يتم تنفيذ كلا الإجراءين في مدخل توافق Microsoft Purview.
    - السيناريو 1 – [إلحاق الأجهزة](endpoint-dlp-getting-started.md) التي لم يتم إلحاقها بعد.
    - السيناريو 2 - [تم نشر Microsoft Defender لنقطة النهاية بالفعل وهناك نقاط نهاية تقوم بالإبلاغ فيها](endpoint-dlp-getting-started.md). ستظهر كل نقاط النهاية هذه في قائمة الأجهزة المدارة.
 1. [تكوين نهج DLP الافتراضي للأجهزة](mip-easy-trials.md#dlp-for-devices) أو [تحديد نهج DLP جديد للأجهزة](endpoint-dlp-learn-about.md).
@@ -210,7 +212,7 @@ ms.locfileid: "64759159"
       - [منع الوصول الخارجي إلى المستندات الحساسة](dlp-microsoft-teams.md#prevent-external-access-to-sensitive-documents)
       - [الحصول على تلميحات النهج للمساعدة في تعليم المستخدمين والإرشادات لتخصيص تلميحات النهج](dlp-microsoft-teams.md#policy-tips-help-educate-users)
    - الأجهزة: التبديل من التدقيق فقط إلى الحظر
-1. [تكوين وعرض التنبيهات لنهج منع فقدان البيانات - Microsoft 365 | التوافق Microsoft Docs](dlp-configure-view-alerts-policies.md)
+1. [تكوين وعرض التنبيهات لنهج منع فقدان البيانات - Microsoft Purview | Microsoft Docs](dlp-configure-view-alerts-policies.md)
 
 ## <a name="ediscovery"></a>eDiscovery
 
@@ -243,7 +245,7 @@ ms.locfileid: "64759159"
 
 للسماح للأشخاص في مؤسستك ببدء إنشاء الحالات واستخدامها، يجب تكوين الإعدادات العمومية التي تنطبق على جميع الحالات في مؤسستك. في هذا الوقت، يكون الإعداد العمومي الوحيد هو **الكشف عن امتيازات الوكيل والعميل** (ستتوفر المزيد من الإعدادات العمومية في المستقبل).
 
-1. [إعداد Advanced eDiscovery – الإعدادات العمومية](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-advanced-ediscovery)
+1. [إعداد Advanced eDiscovery – الإعدادات العمومية](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [تكوين إعدادات البحث والتحليلات](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
 1. [إدارة المهام في Advanced eDiscovery](managing-jobs-ediscovery20.md)
 
@@ -262,7 +264,7 @@ ms.locfileid: "64759159"
 
 ### <a name="step-5-optional-learn-about-content-search-tool"></a>الخطوة 5 (اختيارية): [التعرف على أداة البحث في المحتوى](search-for-content.md)
 
-استخدم أداة البحث عن المحتوى في مركز التوافق في Microsoft 365 للعثور بسرعة على البريد الإلكتروني في علب بريد Exchange والمستندات في مواقع SharePoint ومواقع OneDrive ومحادثات المراسلة الفورية في Skype for Business. يمكنك استخدام أداة البحث عن المحتوى للبحث عن رسائل البريد الإلكتروني والمستندات ومحادثات المراسلة الفورية في أدوات التعاون مثل Microsoft Teams مجموعات Microsoft 365.
+استخدم أداة البحث عن المحتوى في مدخل توافق Microsoft Purview للعثور بسرعة على البريد الإلكتروني في علب بريد Exchange والمستندات في مواقع SharePoint ومواقع OneDrive ومحادثات المراسلة الفورية في Skype for Business. يمكنك استخدام أداة البحث عن المحتوى للبحث عن رسائل البريد الإلكتروني والمستندات ومحادثات المراسلة الفورية في أدوات التعاون مثل Microsoft Teams مجموعات Microsoft 365.
 
 - [معرفة المزيد حول Advanced eDiscovery البحث](search-for-content.md#search-for-content)
 
@@ -270,14 +272,14 @@ ms.locfileid: "64759159"
 
 **اكتشاف المعلومات الحساسة وتصنيفها وحمايتها**
 
-نفذ تسميات حماية البيانات في Microsoft والحساسية، لمساعدتك على اكتشاف المحتوى الحساس وتصنيفه وحمايته أينما كان يقيم أو ينتقل.
+قم بتنفيذ microsoft Purview حماية البيانات وتسميات الحساسية، لمساعدتك على اكتشاف المحتوى الحساس وتصنيفه وحمايته أينما كان يقيم أو ينتقل.
 
 ### <a name="step-1-start-your-information-protection-trial"></a>الخطوة 1: [بدء الإصدار التجريبي لحماية المعلومات](mip-easy-trials.md)
 
 > [!TIP]
 > أفضل الممارسات التجريبية: اليوم 1
 
-يمكن للعملاء المؤهلين تنشيط التسميات والنهج الافتراضية حماية البيانات في Microsoft. عند تمكين التكوين الافتراضي في الإصدار التجريبي، سيستغرق تكوين جميع النهج للمستأجر الخاص بك حوالي دقيقتين وما يصل إلى 24 ساعة لمشاهدة نتائج هذه النهج الافتراضية.
+يمكن للعملاء المؤهلين تنشيط التسميات والنهج الافتراضية ل Microsoft Purview حماية البيانات. عند تمكين التكوين الافتراضي في الإصدار التجريبي، سيستغرق تكوين جميع النهج للمستأجر الخاص بك حوالي دقيقتين وما يصل إلى 24 ساعة لمشاهدة نتائج هذه النهج الافتراضية.
 
 اختيار التكوين الافتراضي، بنقرة واحدة، يتم تكوين ما يلي تلقائيا:
 
@@ -356,7 +358,7 @@ ms.locfileid: "64759159"
 
 **أتمتة جدول الاستبقاء للسجلات الهامة للأعمال**
 
-استخدم ميزات إدارة السجلات المتكاملة لأتمتة جدول الاستبقاء للسجلات التنظيمية القانونية والسجلات الهامة للأعمال. احصل على دعم دورة حياة المحتوى الكامل، من الإنشاء إلى التعاون، وإعلان السجل، والاستبقاء، والتصرف.
+استخدم ميزات إدارة سجلات Microsoft Purview المتكاملة لأتمتة جدول الاستبقاء للسجلات التنظيمية القانونية والسجلات الهامة للأعمال. احصل على دعم دورة حياة المحتوى الكامل، من الإنشاء إلى التعاون، وإعلان السجل، والاستبقاء، والتصرف.
 
 ### <a name="step-1-dynamically-target-retention-policies-with-adaptive-policy-scopes"></a>الخطوة 1: استهداف نهج الاستبقاء ديناميكيا باستخدام نطاقات النهج التكيفي
 
@@ -418,7 +420,7 @@ ms.locfileid: "64759159"
 
 [مزيد من المعلومات حول إصدار التقييمات المتميزة ل Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
 
-[دليل المبادئ التجريبي: التقييمات المتميزة ل Microsoft Compliance Manager](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+[دليل المبادئ التجريبي: التقييمات المتميزة ل Microsoft Purview Compliance Manager](compliance-easy-trials-compliance-manager-assessment-playbook.md)
 
 ### <a name="microsoft-priva-privacy-risk-management-and-microsoft-priva-subject-rights-requests"></a>Microsoft Priva Privacy Risk Management وطلبات حقوق موضوع Microsoft Priva
 
@@ -432,7 +434,7 @@ ms.locfileid: "64759159"
 
 ## <a name="additional-resources"></a>موارد إضافية
 
-**ما هو مضمن**: للحصول على قائمة كاملة من حلول التوافق Microsoft 365 والميزات المدرجة حسب مستوى المنتج، اعرض [مصفوفة الميزة](https://go.microsoft.com/fwlink/?linkid=2139145).
+**ما هو مضمن**: للحصول على قائمة كاملة من حلول وميزات Microsoft Purview المدرجة حسب مستوى المنتج، اعرض [مصفوفة الميزة](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 **مكتبة المحتويات التقنية للأمان من Microsoft**: استكشف هذه المكتبة للعثور على إرشادات تفاعلية ومحتوى تعليمي آخر ذي صلة باحتياجاتك. [تفضل بزيارة المكتبة](/security).
 

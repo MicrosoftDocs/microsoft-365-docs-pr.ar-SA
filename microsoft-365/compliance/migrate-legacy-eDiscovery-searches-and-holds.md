@@ -15,21 +15,23 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 5de25b0b1385e709a818b1ff797910ec4ee4ddfc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 28f110c6b236721debdb5585263dd835f2a5a658
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949620"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993129"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>ترحيل عمليات بحث eDiscovery القديمة وحتفظ بها إلى مدخل التوافق
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يوفر مدخل توافق Microsoft Purview تجربة محسنة لاستخدام eDiscovery، بما في ذلك: الموثوقية الأعلى والأداء الأفضل والعديد من الميزات المصممة لسير عمل eDiscovery بما في ذلك الحالات لتنظيم المحتوى حسب المسألة ومجموعات المراجعة لمراجعة المحتوى والتحليلات للمساعدة في احصاء البيانات للمراجعة مثل التجميع شبه المكرر ومؤشرات ترابط البريد الإلكتروني وتحليل النسق والترميز التنبؤي.
 
 لمساعدة العملاء على الاستفادة من الوظائف الجديدة والمحسنة، توفر هذه المقالة إرشادات أساسية حول كيفية ترحيل عمليات البحث In-Place eDiscovery وسحبها من <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a> إلى مدخل التوافق.
 
 > [!NOTE]
-> نظرا لوجود العديد من السيناريوهات المختلفة، توفر هذه المقالة إرشادات عامة لانتقال عمليات البحث وحفظها في حالة eDiscovery الأساسية في مدخل التوافق. استخدام حالات eDiscovery ليست مطلوبة دائما، ولكنها تضيف طبقة إضافية من الأمان من خلال السماح لك بتعيين أذونات للتحكم في من لديه حق الوصول إلى حالات eDiscovery في مؤسستك.
+> نظرا لوجود العديد من السيناريوهات المختلفة، توفر هذه المقالة إرشادات عامة لانتقال عمليات البحث والحفظ إلى حالة eDiscovery (قياسي) في مدخل التوافق. استخدام حالات eDiscovery ليست مطلوبة دائما، ولكنها تضيف طبقة إضافية من الأمان من خلال السماح لك بتعيين أذونات للتحكم في من لديه حق الوصول إلى حالات eDiscovery في مؤسستك.
 
 ## <a name="before-you-begin"></a>قبل البدء
 

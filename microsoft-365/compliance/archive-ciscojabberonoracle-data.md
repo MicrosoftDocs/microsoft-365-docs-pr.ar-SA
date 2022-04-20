@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل واستخدامه في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من Cisco Jabber على Oracle إلى Microsoft 365.
-ms.openlocfilehash: 7668defd3ef7157da185de7e51ef97e3127e67a4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 33714412db56066b25a1bda03fb4a92c6c64f917
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946671"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992645"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-oracle-data"></a>إعداد موصل أرشفة Cisco Jabber على بيانات Oracle
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من Cisco Jabber على النظام الأساسي Oracle إلى علب بريد المستخدمين في مؤسسة Microsoft 365. يوفر Veritas [Cisco Jabber على](https://www.veritas.com/insights/merge1/jabber) موصل Oracle الذي تم تكوينه لالتقاط العناصر من مصدر بيانات الجهات الخارجية (بشكل منتظم) واستيراد هذه العناصر إلى Microsoft 365. يحول الموصل المحتوى مثل الملفات وعمليات الملفات والتعليقات والمحتوى المشترك من Cisco Jabber على Oracle إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
 

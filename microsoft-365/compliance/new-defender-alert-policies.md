@@ -19,14 +19,16 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: نحن نصدر نهج تنبيه جديدة Microsoft Defender لـ Office 365. نقوم أيضا بتقاعد نهجي تنبيه موجودين تم استبدالهما بنهجين جديدين.
-ms.openlocfilehash: 339d16f7cd4e481d408a13d2e738cdef9fc991bf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 78f359e273054b7b103fc61bbee9b1555ad843da
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939620"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991941"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>نهج التنبيه الجديدة في Microsoft Defender لـ Office 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يقدم Microsoft Defender لـ Office 365 نهج تنبيه جديدة ومحسنة تتعلق بالكشف عن ما بعد التسليم. ويشمل ذلك تحسينات على أدلة مبادئ الاستجابة & التحقيق التلقائي (AIR) المرتبطة بها. بالإضافة إلى ذلك، نقوم بتعديل تصنيف الخطورة لستة نهج تنبيه افتراضية لمواءمة التنبيهات التي تم إنشاؤها بواسطة هذه النهج بشكل أفضل مع تأثيرها على مؤسستك.
 

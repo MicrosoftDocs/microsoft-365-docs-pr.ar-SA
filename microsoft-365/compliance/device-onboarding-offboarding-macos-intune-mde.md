@@ -1,5 +1,5 @@
 ---
-title: أجهزة macOS المجهزة للأجهزة التي تعمل باللوح واللوح في حلول التوافق Microsoft Intune Microsoft Defender لعملاء نقطة النهاية (معاينة)
+title: إلحاق أجهزة macOS وإلحاقها بحلول التوافق باستخدام Microsoft Intune لعملاء Microsoft Defender لنقطة النهاية
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,84 +13,86 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: تعرف على كيفية تشغيل أجهزة macOS أو إيقاف تشغيلها في Microsoft 365 التوافق باستخدام Microsoft Intune لعملاء MDE (معاينة)
-ms.openlocfilehash: 6cc4362e924f291c6a8396bff342c6f628e33be3
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: تعرف على كيفية إلحاق أجهزة macOS وإلحاقها بحلول Microsoft Purview باستخدام Microsoft Intune لعملاء MDE
+ms.openlocfilehash: c6b374ad3c35ba3441e82412d9897132006d0559
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63570875"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952831"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview"></a>أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في حلول التوافق باستخدام Intune لعملاء نقطة النهاية ل Microsoft Defender (معاينة)
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>إلحاق أجهزة macOS وإلحاقها في حلول التوافق باستخدام Intune لعملاء Microsoft Defender لنقطة النهاية
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
-> استخدم هذا ***الإجراء إذا قمت*** بنشر Microsoft Defender لنقطة النهاية (MDE) على أجهزة macOS
+> استخدم هذا الإجراء ***إذا قمت*** بنشر Microsoft Defender لنقطة النهاية (MDE) على أجهزة macOS
 
 **ينطبق على:**
 
-- العملاء الذين نشروا MDE على أجهزة macOS الخاصة بهم.
-- [Microsoft 365 فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
-- [إدارة مخاطر Insider](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- العملاء الذين تم نشر MDE على أجهزة macOS الخاصة بهم.
+- [منع فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
+- [إدارة المخاطر الداخلية](insider-risk-management.md)
 
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-- تأكد من أن [أجهزة macOS مجهزه في Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) ومسجلة [في Company Portal التطبيق](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
-- تأكد من إمكانية [الوصول إلى إدارة نقاط النهاية من Microsoft](https://endpoint.microsoft.com/#home)
+- تأكد من [إلحاق أجهزة macOS في Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) وتسجيلها في [تطبيق Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
+- تأكد من أن لديك حق الوصول إلى [مركز إدارة نقاط النهاية من Microsoft](https://endpoint.microsoft.com/#home)
 - هذا يدعم إصدار macOS Catalina 10.15 والإصدارات الأحدث
 - تثبيت مستعرض v95+ Edge على أجهزة macOS 
 
-## <a name="onboard-macos-devices-into-microsoft-365-compliance-solutions-using-microsoft-intune"></a>أجهزة macOS المجهزة Microsoft 365 التوافق باستخدام Microsoft Intune
+## <a name="onboard-macos-devices-into-microsoft-purview-solutions-using-microsoft-intune"></a>إلحاق أجهزة macOS في حلول Microsoft Purview باستخدام Microsoft Intune
 
-استخدم هذه الخطوات ل متن جهاز macOS في حلول التوافق إذا تم نشر MDE له بالفعل.
+استخدم هذه الخطوات لإلحاق جهاز macOS في حلول التوافق إذا كان قد تم نشر MDE عليه بالفعل.
 
 1. ستحتاج إلى هذه الملفات لهذا الإجراء.
 
-|الملف المطلوب ل |المصدر |
+|الملف المطلوب ل |مصدر |
 |---------|---------|
-|إمكانية وصول ذوي الاحتياجات الخاصة |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
+|امكانيه الوصول |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 الوصول الكامل إلى القرص     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 
 > [!TIP]
-> يمكنك تنزيل *ملفات .mobileconfig* بشكل فردي أو في [ملف واحد مدمج](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) يحتوي على:
+> يمكنك تنزيل ملفات *.mobileconfig* بشكل فردي أو في [ملف واحد مدمج](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) يحتوي على:
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 > 
 >
->إذا تم تحديث أي من هذه الملفات الفردية، ستحتاج إلى تنزيل الملف المدمج مرة أخرى أو الملف المحدث المفرد كل على حدة.
+>إذا تم تحديث أي من هذه الملفات الفردية، فستحتاج إلى تنزيل الملف المدمج مرة أخرى أو الملف المحدث الفردي بشكل فردي.
 
 ### <a name="create-system-configuration-profiles"></a>إنشاء ملفات تعريف تكوين النظام
 
-1. افتح إدارة نقاط النهاية من Microsoft النملفات تعريف تكوين **في** **الوسط** >  > .
+1. افتح **ملفات تعريف إدارة نقاط النهاية من Microsoft** **centerDevicesConfiguration** >  > .
 
 1. اختر: **إنشاء ملف تعريف**. 
 
-1. اختر:
-    1. **Platform = macOS**
-    1. **نوع ملف التعريف = القوالب**
+1. اختيار:
+    1. **النظام الأساسي = macOS**
+    1. **نوع ملف التعريف = قوالب**
     1. **اسم القالب = مخصص**
 
-1. اختر **إنشاء**
+1. اختر **"إنشاء"**
 
-1. اختر اسما لملف التعريف، مثل *AccessibilityformacOS* في هذا المثال. اختر **التالي**.
+1. اختر اسما لملف التعريف، مثل *AccessibilityformacOS* في هذا المثال. اختر **"التالي**".
 
-1. اختر **ملف accessibility.mobileconfig** الذي قمت بتنزيلها في الخطوة 1 كملف ملف تعريف التكوين.
+1. اختر ملف **accessibility.mobileconfig** الذي قمت بتنزيله في الخطوة 1 كملف ملف تعريف التكوين.
 
-1. اختر **التالي**
+1. اختر **"التالي"**
 
-1. على علامة **التبويب** الواجبات، أضف المجموعة التي تريد نشر هذه التكوينات لها واختر **التالي**.
+1. في علامة التبويب **"الواجبات"** ، أضف المجموعة التي تريد توزيع هذه التكوينات إليها واختر **"التالي**".
 
-1. راجع الإعدادات **واختر إنشاء** لنشر التكوين.
+1. راجع الإعدادات واختر **"إنشاء** " لنشر التكوين.
 
-1. افتح **ملفات تعريف تكوين** >  **الأجهزة**، يجب أن ترى ملفات التعريف التي تم إنشاؤها هناك.
+1. افتح **ملفات تعريف DevicesConfiguration** > ، يجب أن تشاهد ملفات التعريف التي تم إنشاؤها هناك.
 
-1. في الصفحة **ملفات تعريف** التكوين، اختر ملف التعريف الذي أنشأته للتو، في هذا المثال *AccessibilityformacOS* واختر حالة الجهاز  لرؤية قائمة الأجهزة حالة نشر ملف تعريف التكوين.
+1. في صفحة **ملفات تعريف التكوين** ، اختر ملف التعريف الذي أنشأته للتو، في هذا المثال *AccessibilityformacOS* واختر **حالة الجهاز** لعرض قائمة بالأجهزة وحالة نشر ملف تعريف التكوين.
 
 ### <a name="update-configuration-profiles"></a>تحديث ملفات تعريف التكوين
 
-1. قم بتحديث ملف تعريف الوصول الكامل الموجود باستخدام **ملف fulldisk.mobileconfig** .
+1. تحديث ملف تعريف الوصول إلى القرص الكامل الموجود مع ملف **fulldisk.mobileconfig** .
 
-1. تحديث ملف تعريف تفضيلات MDE الخارجية باستخدام هذه القيم
+1. تحديث ملف تعريف تفضيلات MDE مع هذه القيم
    
 ```xml
 <key>features</key>
@@ -105,11 +107,11 @@ ms.locfileid: "63570875"
 ## <a name="offboard-macos-devices-using-intune"></a>إيقاف تشغيل أجهزة macOS باستخدام Intune
 
 > [!IMPORTANT]
-> يؤدي إيقاف التشغيل إلى إيقاف الجهاز عن إرسال بيانات المستشعر إلى المدخل ولكن سيتم الاحتفاظ بالبيانات من الجهاز، بما في ذلك الإشارة إلى أي تنبيهات لديه لمدة تصل إلى 6 أشهر.
+> يؤدي إلغاء الإلحاق إلى توقف الجهاز عن إرسال بيانات جهاز الاستشعار إلى المدخل ولكن سيتم الاحتفاظ بالبيانات من الجهاز، بما في ذلك الإشارة إلى أي تنبيهات كان قد تم الاحتفاظ بها لمدة تصل إلى 6 أشهر.
 
-1. في **إدارة نقاط النهاية من Microsoft،** افتح **ملفات تعريف تكوين** >  **الأجهزة**، يجب أن ترى ملفات التعريف التي تم إنشاؤها هناك.
+1. في **مركز إدارة نقاط النهاية من Microsoft**، افتح **ملفات تعريف DevicesConfiguration** > ، يجب أن تشاهد ملفات التعريف التي تم إنشاؤها هناك.
 
-2. في الصفحة **ملفات تعريف التكوين** ، اختر ملف تعريف تفضيلات MDE.
+2. في صفحة **ملفات تعريف التكوين** ، اختر ملف تعريف تفضيلات MDE.
 
 1. إزالة هذه الإعدادات:
    

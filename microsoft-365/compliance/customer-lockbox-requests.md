@@ -18,20 +18,22 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: تعرف على طلبات مربع تأمين العميل التي تسمح لك بالتحكم في كيفية وصول مهندس دعم Microsoft إلى بياناتك عندما تواجه مشكلة.
-ms.openlocfilehash: 8f875f485830d59af733c6c76a5a3d297bedb2cc
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: cf9a2a6d682ca87e97986389f640a536775ca014
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759932"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953815"
 ---
-# <a name="customer-lockbox-in-office-365"></a>مربع تأمين العميل في Office 365
+# <a name="microsoft-purview-customer-lockbox"></a>مربع تأمين عميل Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 توفر هذه المقالة إرشادات التوزيع والتكوين ل Customer Lockbox. يدعم مربع تأمين العميل طلبات الوصول إلى البيانات في Exchange Online SharePoint Online OneDrive for Business Teams. للتوصية بدعم الخدمات الأخرى، أرسل طلبا في [مدخل الملاحظات](https://feedbackportal.microsoft.com).
 
-للاطلاع على خيارات ترخيص المستخدمين للاستفادة من عروض التوافق Microsoft 365، راجع [إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+للاطلاع على خيارات ترخيص المستخدمين للاستفادة من عروض Microsoft Purview، راجع [إرشادات الترخيص Microsoft 365 للأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-يضمن Customer Lockbox عدم تمكن Microsoft من الوصول إلى المحتوى الخاص بك للقيام بعمليات الخدمة دون موافقتك الصريحة. ينقلك مربع تأمين العميل إلى عملية سير عمل الموافقة التي تستخدمها Microsoft لضمان أن الطلبات المعتمدة فقط تسمح بالوصول إلى المحتوى الخاص بك. لمعرفة المزيد حول عملية سير عمل Microsoft، راجع [إدارة الوصول المتميز في Microsoft 365](privileged-access-management-solution-overview.md).
+يضمن Customer Lockbox عدم تمكن Microsoft من الوصول إلى المحتوى الخاص بك للقيام بعمليات الخدمة دون موافقتك الصريحة. ينقلك مربع تأمين العميل إلى عملية سير عمل الموافقة التي تستخدمها Microsoft لضمان أن الطلبات المعتمدة فقط تسمح بالوصول إلى المحتوى الخاص بك. لمعرفة المزيد حول عملية سير عمل Microsoft، راجع [إدارة الوصول المتميز](privileged-access-management-solution-overview.md).
 
 في بعض الأحيان، يساعد مهندسو Microsoft في استكشاف المشكلات التي تنشأ عن الخدمة وإصلاحها. عادة ما يقوم المهندسون بإصلاح المشكلات باستخدام أدوات تتبع الاستخدام وتصحيح الأخطاء الشاملة التي تمتلكها Microsoft لخدماتها. ومع ذلك، تتطلب بعض الحالات من مهندس Microsoft الوصول إلى المحتوى الخاص بك لتحديد السبب الجذري وإصلاح المشكلة. يتطلب مربع تأمين العميل من المهندس طلب الوصول منك كخطوة أخيرة في سير عمل الموافقة. يمنحك هذا الخيار الموافقة على طلب مؤسستك أو رفضه، وتوفير التحكم بالوصول المباشر إلى المحتوى الخاص بك.
 
@@ -102,17 +104,17 @@ ms.locfileid: "64759932"
     ![رفض طلبات مربع تأمين العميل.](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> استخدم Set-AccessToCustomerDataRequest cmdlet للموافقة على طلبات مربع تأمين العملاء Microsoft 365 التي تتحكم في الوصول إلى بياناتك من قبل مهندسي دعم Microsoft أو رفضها أو إلغاؤها. لمزيد من المعلومات، راجع [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
+> استخدم Set-AccessToCustomerDataRequest cmdlet للموافقة على طلبات Microsoft Purview Customer Lockbox التي تتحكم في الوصول إلى بياناتك من قبل مهندسي دعم Microsoft أو رفضها أو إلغائها. لمزيد من المعلومات، راجع [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
 
 ## <a name="auditing-customer-lockbox-requests"></a>تدقيق طلبات مربع تأمين العميل
 
-يتم تسجيل سجلات التدقيق التي تتوافق مع طلبات مربع تأمين العميل في سجل تدقيق Microsoft 365. يمكنك الوصول إلى هذه السجلات باستخدام [أداة البحث في سجل التدقيق](search-the-audit-log-in-security-and-compliance.md) في مركز التوافق في Microsoft 365. يتم أيضا تسجيل الإجراءات المتعلقة بقبول أو رفض طلب مربع تأمين العميل والإجراءات التي يقوم بها مهندسو Microsoft (عند الموافقة على طلبات الوصول) في سجل التدقيق. يمكنك البحث عن سجلات التدقيق هذه ومراجعتها.
+يتم تسجيل سجلات التدقيق التي تتوافق مع طلبات مربع تأمين العميل في سجل تدقيق Microsoft 365. يمكنك الوصول إلى هذه السجلات باستخدام [أداة البحث في سجل التدقيق](search-the-audit-log-in-security-and-compliance.md) في مدخل توافق Microsoft Purview. يتم أيضا تسجيل الإجراءات المتعلقة بقبول أو رفض طلب مربع تأمين العميل والإجراءات التي يقوم بها مهندسو Microsoft (عند الموافقة على طلبات الوصول) في سجل التدقيق. يمكنك البحث عن سجلات التدقيق هذه ومراجعتها.
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>البحث في سجل التدقيق عن النشاط المتعلق بطلبات مربع تأمين العميل
 
-قبل أن تتمكن من استخدام سجل التدقيق لتعقب طلبات مربع تأمين العميل، هناك بعض الخطوات التي تحتاج إلى اتخاذها لإعداد تسجيل التدقيق، بما في ذلك تعيين أذونات للبحث في سجل التدقيق. لمزيد من المعلومات، راجع [إعداد التدقيق الأساسي في Microsoft 365](set-up-basic-audit.md). بمجرد الانتهاء من الإعداد، استخدم هذه الخطوات لإنشاء استعلام البحث في سجل التدقيق لإرجاع سجلات التدقيق المتعلقة ب Customer Lockbox:
+قبل أن تتمكن من استخدام سجل التدقيق لتعقب طلبات مربع تأمين العميل، هناك بعض الخطوات التي تحتاج إلى اتخاذها لإعداد تسجيل التدقيق، بما في ذلك تعيين أذونات للبحث في سجل التدقيق. لمزيد من المعلومات، راجع [إعداد تدقيق Microsoft Purview (قياسي).](set-up-basic-audit.md) بمجرد الانتهاء من الإعداد، استخدم هذه الخطوات لإنشاء استعلام البحث في سجل التدقيق لإرجاع سجلات التدقيق المتعلقة ب Customer Lockbox:
 
-1. انتقل إلى <https://compliance.microsoft.com>.
+1. الانتقال إل <https://compliance.microsoft.com>
   
 2. سجل الدخول باستخدام حساب تم تعيين الأذونات المناسبة له للبحث في سجل التدقيق.
 
@@ -159,7 +161,7 @@ ms.locfileid: "64759932"
 
 ### <a name="use-powershell-to-search-and-export-audit-records"></a>استخدام PowerShell للبحث عن سجلات التدقيق وتصديرها
 
-بديل لاستخدام أداة البحث في التدقيق في مركز التوافق في Microsoft 365 هو تشغيل [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet في Exchange Online PowerShell. تتمثل إحدى مزايا استخدام PowerShell في أنه يمكنك البحث على وجه التحديد عن أنشطة **Set-AccessToCustomerDataRequest** أو الأنشطة التي يقوم بها مهندسو Microsoft المتعلقة بطلب مربع تأمين العميل.
+بديل لاستخدام أداة البحث في التدقيق في مدخل توافق Microsoft Purview هو تشغيل [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet في Exchange Online PowerShell. تتمثل إحدى مزايا استخدام PowerShell في أنه يمكنك البحث على وجه التحديد عن أنشطة **Set-AccessToCustomerDataRequest** أو الأنشطة التي يقوم بها مهندسو Microsoft المتعلقة بطلب مربع تأمين العميل.
 
 بعد [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)، قم بتشغيل أحد الأوامر التالية. استبدل العناصر النائبة لنطاق تاريخ معين.
 

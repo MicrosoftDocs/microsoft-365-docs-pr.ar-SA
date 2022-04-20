@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل واستخدامه في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من Skype for Business إلى Microsoft 365.
-ms.openlocfilehash: 406c8db8a28303657b6c475bf826ee501c9e7620
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 510eea94519b6f2278b9319da8c37b683639680c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937180"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992403"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-data"></a>إعداد موصل وأرشفة بيانات Skype for Business
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من النظام الأساسي Skype for Business إلى علب بريد المستخدمين في مؤسسة Microsoft 365. يوفر Veritas [موصلا Skype for Business](https://www.veritas.com/en/au/insights/merge1/skype-for-business) تم تكوينه لالتقاط العناصر من مصدر بيانات الجهات الخارجية (بشكل منتظم) واستيراد هذه العناصر إلى Microsoft 365. يحول الموصل المحتوى مثل الرسائل بين المستخدمين والدردشات الثابتة ورسائل المؤتمر من Skype for Business إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
 

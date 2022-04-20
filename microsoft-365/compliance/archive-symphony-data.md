@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد البيانات وأرشفتها من Veritas Symphony إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: 119d5b34d32cd193d4ab5e89d6e435c3fc24a574
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dbff83ca244ca24fdd1a42f0929ec3e43f84b4d1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938544"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992329"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data"></a>إعداد موصل أرشفة بيانات السيمفونية
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات السيمفونية وأرشفتها إلى علب بريد المستخدمين في مؤسستك Microsoft 365. السيمفونية هي منصة المراسلة والتعاون المستخدمة في صناعة الخدمات المالية. يوفر Veritas موصل بيانات [Symphony](https://globanet.com/symphony) في مدخل التوافق الذي يمكنك تكوينه لالتقاط العناصر من مصدر بيانات الجهات الخارجية (بشكل منتظم) ثم استيراد هذه العناصر إلى علب بريد المستخدمين. يحول الموصل محتوى عنصر من حساب السيمفونية إلى تنسيق رسالة بريد إلكتروني ثم يستورد العنصر إلى علبة بريد في Microsoft 365.
 

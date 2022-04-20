@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: استخدم ميزة البحث والإزالة في مدخل توافق Microsoft Purview للبحث عن رسالة بريد إلكتروني وحذفها من جميع علب البريد في مؤسستك.
-ms.openlocfilehash: 23eeff8078dbd7ab65b0bddb9684aa81d65aab94
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 67a1c6758a5030897afbde07a0803cad348eca0c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936236"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993641"
 ---
 # <a name="search-for-and-delete-email-messages"></a>البحث عن رسائل البريد الإلكتروني وحذفها
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **هذه المقالة مخصصة للمسؤولين. هل تحاول العثور على عناصر في علبة البريد تريد حذفها؟ راجع [البحث عن رسالة أو عنصر باستخدام "البحث السريع](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**".
 

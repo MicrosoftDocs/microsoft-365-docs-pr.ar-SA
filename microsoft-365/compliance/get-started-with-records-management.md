@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: هل تحتاج إلى حل لإدارة السجلات Microsoft 365 الذي يدير محتوى عالي القيمة للالتزامات القانونية أو التجارية أو التنظيمية، ولكن لست متأكدا من مكان البدء؟ اقرأ بعض الإرشادات العملية للبدء.
-ms.openlocfilehash: 02c16f9d1a9d42f59cf8bc27bdee38bcc2d10d73
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: e73cb1a118235082978ee93efcdb77f5e5135f8c
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911379"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971462"
 ---
 # <a name="get-started-with-records-management"></a>بدء العمل باستخدام إدارة السجلات
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -44,21 +46,19 @@ ms.locfileid: "64911379"
     - [نشر تسميات الاستبقاء وتطبيقها في التطبيقات](create-apply-retention-labels.md)
     - [تطبيق تسمية استبقاء على المحتوى تلقائيا](apply-retention-labels-automatically.md)
 
-بشكل مستقل عن هذه **الخطوات، استخدم الموصلات لاستيراد وأرشفة بيانات الجهات الخارجية** التي تتضمن بيانات من منصات وسائل التواصل الاجتماعي وأنظمة المراسلة الفورية وأنظمة التعاون الأساسية للمستندات. عند استيراد هذه البيانات إلى علب البريد عبر الإنترنت، فإنها لا تدعم إدارة السجلات من التوافق Microsoft 365 فحسب، بل تدعم أيضا حلول التوافق الأخرى مثل توافق الاتصالات وإدارة المخاطر الداخلية وeDiscovery. لمزيد من المعلومات، راجع ["التعرف على موصلات بيانات الجهات الخارجية](archiving-third-party-data.md)".
-
 ## <a name="subscription-and-licensing-requirements"></a>متطلبات الاشتراك والترخيص
 
 يدعم عدد من الاشتراكات المختلفة إدارة السجلات وتعتمد متطلبات الترخيص للمستخدمين على الميزات التي تستخدمها.
 
-للاطلاع على خيارات ترخيص المستخدمين للاستفادة من ميزات التوافق Microsoft 365، راجع [إرشادات الترخيص Microsoft 365 للأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). للحصول على إدارة السجلات، راجع قسم [إدارة السجلات](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) وتنزيل PDF ذي الصلة لمتطلبات الترخيص على مستوى الميزات.
+للاطلاع على خيارات ترخيص المستخدمين للاستفادة من ميزات Microsoft Purview، راجع [إرشادات ترخيص Microsoft 365 للأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). للحصول على إدارة السجلات، راجع قسم [إدارة سجلات Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management) وتنزيل PDF ذي الصلة لمتطلبات الترخيص على مستوى الميزات.
 
 ## <a name="permissions"></a>الأذونات
 
-يحتاج أعضاء فريق التوافق المسؤول عن إدارة السجلات إلى أذونات <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مركز التوافق في Microsoft 365</a>. بشكل افتراضي، يمكن لمسؤول المستأجر (المسؤول العام) الوصول إلى هذا الموقع ويمكنه منح مسؤولي الامتثال والأشخاص الآخرين حق الوصول دون منحهم جميع أذونات مسؤول المستأجر. لمنح أذونات لهذه الإدارة المحدودة، نوصي بإضافة مستخدمين إلى مجموعة دور مسؤول **إدارة السجلات** ، والتي تمنح أذونات لكافة الميزات المتعلقة بإدارة السجلات، بما [في ذلك مراجعة الترتيب والتحقق](disposition.md).
+يحتاج أعضاء فريق التوافق المسؤول عن إدارة السجلات إلى أذونات <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">لمدخل الامتثال ل Microsoft Purview</a>. بشكل افتراضي، يمكن لمسؤول المستأجر (المسؤول العام) الوصول إلى هذا الموقع ويمكنه منح مسؤولي الامتثال والأشخاص الآخرين حق الوصول دون منحهم جميع أذونات مسؤول المستأجر. لمنح أذونات لهذه الإدارة المحدودة، نوصي بإضافة مستخدمين إلى مجموعة دور مسؤول **إدارة السجلات** ، والتي تمنح أذونات لكافة الميزات المتعلقة بإدارة السجلات، بما [في ذلك مراجعة الترتيب والتحقق](disposition.md).
 
 بالنسبة لدور للقراءة فقط، يمكنك إنشاء مجموعة أدوار جديدة وإضافة دور **View-Only Record Management** إلى هذه المجموعة.
 
-للحصول على إرشادات لإضافة مستخدمين إلى الأدوار الافتراضية أو إنشاء مجموعات الأدوار الخاصة بك، راجع [الأذونات في مركز التوافق في Microsoft 365](microsoft-365-compliance-center-permissions.md).
+للحصول على إرشادات لإضافة مستخدمين إلى الأدوار الافتراضية أو إنشاء مجموعات الأدوار الخاصة بك، راجع [الأذونات في مدخل توافق Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 هذه الأذونات مطلوبة فقط لإنشاء وتكوين وتطبيق تسميات الاستبقاء التي تعلن عن السجلات وإدارة الترتيب. لا يتطلب الشخص الذي يقوم بتكوين هذه التسميات الوصول إلى المحتوى.
 
@@ -67,7 +67,7 @@ ms.locfileid: "64911379"
 استخدم الجدول التالي لمساعدتك على تعيين متطلبات عملك إلى السيناريوهات التي تدعمها إدارة السجلات.
 
 > [!TIP]
-> هل تحتاج إلى الامتثال للوائح صناعة معينة؟ تحقق من [المتطلبات التنظيمية لإدارة المعلومات وإدارة السجلات](retention-regulatory-requirements.md) للحصول على إرشادات خاصة بالوائح.
+> هل تحتاج إلى الامتثال للوائح صناعة معينة؟ تحقق من [المتطلبات التنظيمية لإدارة دورة حياة البيانات وإدارة السجلات](retention-regulatory-requirements.md) للحصول على إرشادات خاصة بالوائح.
 
 |أريد...|الوثائق|
 |----------------|---------------|

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل TeleMessage لاستيراد بيانات SMS و MMS وأرشفتها من AT&T Mobile Network. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft Purview حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: 8c038769ef7330788badfaa8a0a40a00c0730a13
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 87b933117fae134572ccf4a152a83ec4165b1caf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950710"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992755"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>إعداد موصل إلى أرشفة بيانات AT&T SMS/MMS
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل TeleMessage في مدخل توافق Microsoft Purview لاستيراد بيانات SMS و MMS وأرشفتها من AT&T Mobile Network. بعد إعداد موصل وتكوينه، فإنه يتصل بشبكة AT&T في مؤسستك مرة واحدة كل يوم، ويستورد بيانات SMS و MMS إلى علب البريد في Microsoft Purview.
 

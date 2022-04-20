@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات ServiceNow وأرشفتها من Veritas إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: 21775200f318612ba8f79d6c783713f759d04452
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3a8859fad4b15d0e9cf4ce50701da64c2c6100b6
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946496"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992667"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data"></a>إعداد موصل إلى أرشفة بيانات ServiceNow
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من النظام الأساسي ServiceNow إلى علب بريد المستخدمين في مؤسسة Microsoft 365. يوفر Veritas موصل [ServiceNow](https://globanet.com/servicenow/) الذي يلتقط العناصر من مصدر بيانات الجهات الخارجية ويستورد هذه العناصر إلى Microsoft 365. يحول الموصل المحتوى مثل الرسائل المباشرة والمرفقات والمنشورات من ServiceNow إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

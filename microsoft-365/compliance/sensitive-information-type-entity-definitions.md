@@ -19,14 +19,16 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: هناك العديد من أنواع المعلومات الحساسة الجاهزة للاستخدام في نهج DLP. تسرد هذه المقالة كل أنواع المعلومات الحساسة هذه وتعرض ما يبحث عنه نهج DLP عند اكتشاف كل نوع.
-ms.openlocfilehash: 69c47a717b63f8d9ac4e30f3b97fd228399bf21c
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 6074082812853469e0513d67ec68519eb2a89563
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760384"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970648"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>تعريفات كيان نوع المعلومات الحساسة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تسرد هذه المقالة كافة تعريفات كيان نوع المعلومات الحساسة. يوضح كل تعريف ما يبحث عنه نهج DLP للكشف عن كل نوع. لمعرفة المزيد حول أنواع المعلومات الحساسة، راجع [أنواع المعلومات الحساسة](sensitive-information-type-learn-about.md)
 
@@ -130,12 +132,12 @@ ms.locfileid: "64760384"
 
 ### <a name="supported-languages"></a>اللغات المدعومة
 
-- الإنكليزية
+- الإنجليزية
 - البلغارية
 - الصينية
 - الكرواتية
 - التشيكية
-- الدانماركية
+- الدانمركية
 - الإستونية
 - الفنلندية
 - الفرنسية
@@ -149,7 +151,7 @@ ms.locfileid: "64760384"
 - الليتوانية
 - المالطية
 - الهولندية
-- النرويجية ‏
+- النرويجية
 - البولندية
 - البرتغالية
 - الرومانية
@@ -225,7 +227,7 @@ ms.locfileid: "64760384"
 
 تختلف الموارد لكل بلد. الموارد الأساسية هي أنماط تنسيقات العناوين المستخدمة في بلد معين. يتم اختيار تنسيقات مختلفة للتأكد من مطابقة أكبر عدد ممكن من العناوين. تسمح هذه التنسيقات بالمرونة، على سبيل المثال، قد يحذف العنوان الرمز البريدي أو يحذف اسم بلدة أو يحتوي على شارع بدون لاحقة شارع. في جميع الحالات، يتم استخدام هذه التطابقات لزيادة ثقة المطابقة.
 
-تم تصميم الأنماط لمطابقة العناوين الفردية، وليس المواقع العامة. لذلك لن تتطابق سلاسل مثل *Redmond أو WA 98052* أو *Main Street، Albuquerque* .
+تم تصميم الأنماط لمطابقة العناوين الفردية، وليس المواقع العامة. لذلك لن تتطابق سلاسل مثل *Redmond أو WA 98052* أو *Main Street أو Albuquerque* .
 
 ### <a name="contains"></a>يحتوي
 
@@ -272,12 +274,12 @@ ms.locfileid: "64760384"
 
 ### <a name="supported-languages"></a>اللغات المدعومة
 
-- الإنكليزية
+- الإنجليزية
 - البلغارية
 - الصينية
 - الكرواتية
 - التشيكية
-- الدانماركية
+- الدانمركية
 - الإستونية
 - الفنلندية
 - الفرنسية
@@ -291,7 +293,7 @@ ms.locfileid: "64760384"
 - الليتوانية
 - المالطية
 - الهولندية
-- النرويجية ‏
+- النرويجية
 - البولندية
 - البرتغالية
 - الرومانية
@@ -510,7 +512,7 @@ ms.locfileid: "64760384"
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -575,7 +577,7 @@ ms.locfileid: "64760384"
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -1126,7 +1128,7 @@ ms.locfileid: "64760384"
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -1413,7 +1415,7 @@ ms.locfileid: "64760384"
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -2337,7 +2339,7 @@ ms.locfileid: "64760384"
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -2879,7 +2881,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -3202,7 +3204,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 - رخصة القيادة
 - رخص القيادة
 - Permis de Conduire
-- معرف
+- id
 - معرفات
 - رقم بطاقة idcard
 - أرقام بطاقات idcard
@@ -3728,7 +3730,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 يتمتع نهج DLP بثقة عالية بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 
 - تبحث الدالة Func_credit_card عن المحتوى الذي يتطابق مع النمط.
-- أحد الإجراءات التالية صحيح:
+- أحد الشروط التالية صحيح:
   - تم العثور على كلمة أساسية من Keyword_cc_verification.
   - تم العثور على كلمة أساسية من Keyword_cc_name.
   - تبحث الدالة Func_expiration_date عن تاريخ بتنسيق التاريخ الصحيح.
@@ -4569,7 +4571,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -4712,7 +4714,7 @@ Registro de Identidade (RIC) (تنسيق جديد):
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -5828,7 +5830,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -6277,22 +6279,22 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - [النمسا](#austria-drivers-license-number)
 - [بلجيكا](#belgium-drivers-license-number)
 - [بلغاريا](#bulgaria-drivers-license-number)
-- [كرواتيا](#croatia-drivers-license-number)
+- [جمهورية كرواتيا](#croatia-drivers-license-number)
 - [قبرص](#cyprus-drivers-license-number)
 - [التشيكية](#czech-drivers-license-number)
 - [الدانمارك](#denmark-drivers-license-number)
-- [إستونيا](#estonia-drivers-license-number)
-- [فنلندا](#finland-drivers-license-number)
+- [جمهورية إستونيا](#estonia-drivers-license-number)
+- [جمهورية فنلندا](#finland-drivers-license-number)
 - [فرنسا](#france-drivers-license-number)
 - [ألمانيا](#germany-drivers-license-number)
 - [اليونان](#greece-drivers-license-number)
-- [المجر](#hungary-drivers-license-number)
+- [هنغاريا](#hungary-drivers-license-number)
 - [أيرلندا](#ireland-drivers-license-number)
 - [إيطاليا](#italy-drivers-license-number)
-- [لاتفيا](#latvia-drivers-license-number)
-- [لتوانيا](#lithuania-drivers-license-number)
+- [جمهورية لاتفيا](#latvia-drivers-license-number)
+- [جمهورية ليتوانيا](#lithuania-drivers-license-number)
 - [لوكسمبورغ](#luxemburg-drivers-license-number)
-- [مالطا](#malta-drivers-license-number)
+- [جمهورية مالطا](#malta-drivers-license-number)
 - [هولندا](#netherlands-drivers-license-number)
 - [بولندا](#poland-drivers-license-number)
 - [البرتغال](#portugal-drivers-license-number)
@@ -6310,22 +6312,22 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - [النمسا](#austria-identity-card)
 - [بلجيكا](#belgium-national-number)
 - [بلغاريا](#bulgaria-uniform-civil-number)
-- [كرواتيا](#croatia-identity-card-number)
+- [جمهورية كرواتيا](#croatia-identity-card-number)
 - [قبرص](#cyprus-identity-card)
 - [التشيكية](#czech-personal-identity-number)
 - [الدانمارك](#denmark-personal-identification-number)
-- [إستونيا](#estonia-personal-identification-code)
-- [فنلندا](#finland-national-id)
+- [جمهورية إستونيا](#estonia-personal-identification-code)
+- [جمهورية فنلندا](#finland-national-id)
 - [فرنسا](#france-national-id-card-cni)
 - [ألمانيا](#germany-identity-card-number)
 - [اليونان](#greece-national-id-card)
-- [المجر](#hungary-personal-identification-number)
+- [هنغاريا](#hungary-personal-identification-number)
 - [أيرلندا](#ireland-personal-public-service-pps-number)
 - [إيطاليا](#italy-fiscal-code)
-- [لاتفيا](#latvia-personal-code)
-- [لتوانيا](#lithuania-personal-code)
+- [جمهورية لاتفيا](#latvia-personal-code)
+- [جمهورية ليتوانيا](#lithuania-personal-code)
 - [لوكسمبورغ](#luxemburg-national-identification-number-natural-persons)
-- [مالطا](#malta-identity-card-number)
+- [جمهورية مالطا](#malta-identity-card-number)
 - [هولندا](#netherlands-citizens-service-bsn-number)
 - [بولندا](#poland-national-id-pesel)
 - [البرتغال](#portugal-citizen-card-number)
@@ -6342,22 +6344,22 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - [النمسا](#austria-passport-number)
 - [بلجيكا](#belgium-passport-number)
 - [بلغاريا](#bulgaria-passport-number)
-- [كرواتيا](#croatia-passport-number)
+- [جمهورية كرواتيا](#croatia-passport-number)
 - [قبرص](#cyprus-passport-number)
 - [التشيكية](#czech-passport-number)
 - [الدانمارك](#denmark-passport-number)
-- [إستونيا](#estonia-passport-number)
-- [فنلندا](#finland-passport-number)
+- [جمهورية إستونيا](#estonia-passport-number)
+- [جمهورية فنلندا](#finland-passport-number)
 - [فرنسا](#france-passport-number)
 - [ألمانيا](#germany-passport-number)
 - [اليونان](#greece-passport-number)
-- [المجر](#hungary-passport-number)
+- [هنغاريا](#hungary-passport-number)
 - [أيرلندا](#ireland-passport-number)
 - [إيطاليا](#italy-passport-number)
-- [لاتفيا](#latvia-passport-number)
-- [لتوانيا](#lithuania-passport-number)
+- [جمهورية لاتفيا](#latvia-passport-number)
+- [جمهورية ليتوانيا](#lithuania-passport-number)
 - [لوكسمبورغ](#luxemburg-passport-number)
-- [مالطا](#malta-passport-number)
+- [جمهورية مالطا](#malta-passport-number)
 - [هولندا](#netherlands-passport-number)
 - [بولندا](#poland-passport-number)
 - [البرتغال](#portugal-passport-number)
@@ -6370,18 +6372,18 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 ## <a name="eu-social-security-number-or-equivalent-identification"></a>رقم الضمان الاجتماعي في الاتحاد الأوروبي أو التعريف المكافئ
 
-هذه هي الكيانات الموجودة في رقم الضمان الاجتماعي للاتحاد الأوروبي أو التعريف المكافئ وهي أنواع معلومات حساسة.
+هذه الكيانات موجودة في رقم الضمان الاجتماعي للاتحاد الأوروبي أو تعريف مكافئ وهي أنواع معلومات حساسة.
 
 - [النمسا](#austria-social-security-number)
 - [بلجيكا](#belgium-national-number)
-- [كرواتيا](#croatia-personal-identification-oib-number)
+- [جمهورية كرواتيا](#croatia-personal-identification-oib-number)
 - [التشيكية](#czech-personal-identity-number)
 - [الدانمارك](#denmark-personal-identification-number)
-- [فنلندا](#finland-national-id)
+- [جمهورية فنلندا](#finland-national-id)
 - [فرنسا](#france-social-security-number-insee)
 - [ألمانيا](#germany-identity-card-number)
 - [اليونان](#greece-national-id-card)
-- [المجر](#hungary-social-security-number-taj)
+- [هنغاريا](#hungary-social-security-number-taj)
 - [البرتغال](#portugal-citizen-card-number)
 - [إسبانيا](#spain-social-security-number-ssn)
 - [السويد](#sweden-national-id)
@@ -6393,22 +6395,22 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - [النمسا](#austria-tax-identification-number)
 - [بلجيكا](#belgium-national-number)
 - [بلغاريا](#bulgaria-uniform-civil-number)
-- [كرواتيا](#croatia-identity-card-number)
+- [جمهورية كرواتيا](#croatia-identity-card-number)
 - [قبرص](#cyprus-tax-identification-number)
 - [التشيكية](#czech-personal-identity-number)
 - [الدانمارك](#denmark-personal-identification-number)
-- [إستونيا](#estonia-personal-identification-code)
-- [فنلندا](#finland-national-id)
+- [جمهورية إستونيا](#estonia-personal-identification-code)
+- [جمهورية فنلندا](#finland-national-id)
 - [فرنسا](#france-tax-identification-number)
 - [ألمانيا](#germany-tax-identification-number)
 - [اليونان](#greece-tax-identification-number)
-- [المجر](#hungary-tax-identification-number)
+- [هنغاريا](#hungary-tax-identification-number)
 - [أيرلندا](#ireland-personal-public-service-pps-number)
 - [إيطاليا](#italy-fiscal-code)
-- [لاتفيا](#latvia-personal-code)
-- [لتوانيا](#lithuania-personal-code)
+- [جمهورية لاتفيا](#latvia-personal-code)
+- [جمهورية ليتوانيا](#lithuania-personal-code)
 - [لوكسمبورغ](#luxemburg-national-identification-number-non-natural-persons)
-- [مالطا](#malta-tax-identification-number)
+- [جمهورية مالطا](#malta-tax-identification-number)
 - [هولندا](#netherlands-tax-identification-number)
 - [بولندا](#poland-tax-identification-number)
 - [البرتغال](#portugal-tax-identification-number)
@@ -6599,7 +6601,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -7010,7 +7012,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -7367,7 +7369,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -7634,7 +7636,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 ### <a name="format"></a>تنسيق
 
-منذ 1 نوفمبر 2010: من تسعة إلى أحد عشر حرفا ورقما
+منذ 1 نوفمبر 2010: من تسعة إلى 11 حرفا ورقما
 
 من 1 أبريل 1987 حتى 31 أكتوبر 2010: 10 أرقام
 
@@ -7885,7 +7887,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -8258,7 +8260,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -8319,7 +8321,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -8717,7 +8719,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -8852,7 +8854,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -8934,7 +8936,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -9469,38 +9471,38 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - Az
 - بكالوريوس
 - be
-- Bg
+- bg
 - الهرسك
 - الفصل
 - Cr
 - قبرصي
 - تشيكوسلوفاكيا
-- دي
+- de
 - Dk
 - القيام بذلك
 - Ee
-- داط
+- es
 - fi
 - fo
-- الاب
+- fr
 - غيغابايت
 - جنرال الكتريك
 - غي
-- Gl
+- gl
 - غرام
-- ساعه
-- هو
+- hr
+- hu
 - اي
 - ايل
 - is
-- إنه
+- it
 - كيلوواط
 - Kz
 - رطل
 - لي
-- الملازم
+- lt
 - لو
-- Lv
+- lv
 - Mc
 - Md
 - أنا
@@ -9508,19 +9510,19 @@ eesti kodaniku passi number passinumbrid document number document document no do
 - السيد
 - طن متري
 - مو
-- Nl
-- لا
-- رر
-- حزب العمال
-- ريال عماني
+- nl
+- no
+- pl
+- pt
+- ro
 - Rs
 - Sa
 - حد ذاته
 - سي
-- كورونا
+- sk
 - ن خ
 - تينيسي
-- ار
+- tr
 - Vg
 
 ### <a name="checksum"></a>المجموع الاختباري
@@ -10435,7 +10437,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -10618,7 +10620,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -10858,7 +10860,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -10922,7 +10924,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -11776,7 +11778,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -12115,7 +12117,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -12618,7 +12620,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -13304,7 +13306,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -13390,7 +13392,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -13455,7 +13457,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -13520,7 +13522,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -13638,7 +13640,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -13760,7 +13762,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -14299,7 +14301,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -14368,7 +14370,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -15084,7 +15086,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -15194,7 +15196,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -15258,7 +15260,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -15665,7 +15667,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -16029,7 +16031,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -16103,7 +16105,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -16221,7 +16223,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - بطاقة الهوية
-- معرف
+- المعرّف
 - تحديد
 
 ## <a name="south-korea-resident-registration-number"></a>رقم التسجيل المقيم في كوريا الجنوبية
@@ -16287,7 +16289,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -16717,7 +16719,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -17257,7 +17259,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -17425,7 +17427,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -18149,7 +18151,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -18278,7 +18280,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 يعتمد على الولاية - على سبيل المثال، نيويورك:
 
 - ستتطابق تسعة أرقام منسقة مثل ddd ddd ddd.
-- لن تتطابق تسعة أرقام مثل dddddddd.
+- لن تتطابق تسعة أرقام مثل ddddddd.
 
 ### <a name="checksum"></a>المجموع الاختباري
 
@@ -18325,7 +18327,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 - DLS
 - CDL
 - CDLS
-- معرف
+- المعرّف
 - معرفات
 - DL #
 - DLS #
@@ -18665,7 +18667,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 
@@ -18715,7 +18717,7 @@ numărul pașaportporti numarul pandaportporti numerele pașaportporti Pașaport
 
 - نهج منع فقدان البيانات
 - نهج التوافق مع الاتصالات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - إدارة السجلات
 - Microsoft Defender for Cloud Apps
 

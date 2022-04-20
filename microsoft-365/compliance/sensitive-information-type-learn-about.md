@@ -16,16 +16,18 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: تقدم هذه المقالة نظرة عامة على أنواع المعلومات الحساسة وكيفية اكتشافها للمعلومات الحساسة مثل الضمان الاجتماعي أو بطاقة الائتمان أو أرقام الحسابات المصرفية لتحديد العناصر الحساسة
-ms.openlocfilehash: aef78c5ab3348b7a0b00a649f94fa5e50a99a397
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0e154e0ee578b9a182cb7cd5b43cafba466f9bcd
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760306"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971340"
 ---
 # <a name="learn-about-sensitive-information-types"></a>التعرّف على أنواع المعلومات الحساسة
 
-تحديد وتصنيف العناصر الحساسة الخاضعة لتحكم مؤسستك هو الخطوة الأولى في [ضابط حماية البيانات](./information-protection.md).  يوفر Microsoft 365 ثلاث طرق لتحديد العناصر بحيث يمكن تصنيفها:
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+تحديد وتصنيف العناصر الحساسة الخاضعة لتحكم مؤسستك هو الخطوة الأولى في [ضابط حماية البيانات](./information-protection.md).  يوفر Microsoft Purview ثلاث طرق لتحديد العناصر بحيث يمكن تصنيفها:
 
 - يدويا من قبل المستخدمين
 - التعرف التلقائي على الأنماط، مثل أنواع المعلومات الحساسة
@@ -37,7 +39,7 @@ ms.locfileid: "64760306"
 
 ## <a name="sensitive-information-types-are-used-in"></a>يتم استخدام أنواع المعلومات الحساسة في
 
-- [نهج منع فقدان البيانات](dlp-learn-about-dlp.md)
+- [نهج منع فقدان البيانات في Microsoft Purview](dlp-learn-about-dlp.md)
 - [تسميات الحساسية](sensitivity-labels.md)
 - [تسميات الاستبقاء](retention.md)
 - [إدارة المخاطر الداخلية](insider-risk-management.md)
@@ -53,7 +55,7 @@ ms.locfileid: "64760306"
 
 ### <a name="named-entity-sensitive-information-types"></a>أنواع المعلومات الحساسة للكيان المسمى
 
-تظهر SITs للكيان المسمى أيضا في وحدة تحكم التوافق بشكل افتراضي. تكتشف أسماء الأشخاص والعناوين المادية والأحكام والشروط الطبية. لا يمكن تحريرها أو نسخها. راجع، [تعرف على الكيانات المسماة (معاينة)](named-entities-learn.md#learn-about-named-entities-preview) لمزيد من المعلومات. تأتي  SITs للكيان المسمى في نوعين:
+تظهر SITs للكيان المسمى أيضا في وحدة تحكم التوافق بشكل افتراضي. تكتشف أسماء الأشخاص والعناوين المادية والأحكام والشروط الطبية. لا يمكن تحريرها أو نسخها. راجع، [تعرف على الكيانات المسماة ](named-entities-learn.md#learn-about-named-entities) لمزيد من المعلومات. تأتي  SITs للكيان المسمى في نوعين:
 
 **غير مجمع**
 
@@ -172,9 +174,8 @@ ms.locfileid: "64760306"
 - **استخدام PowerShell** - يمكنك إعداد أنواع المعلومات الحساسة المخصصة باستخدام PowerShell. على الرغم من أن هذا الأسلوب أكثر تعقيدا من استخدام واجهة المستخدم، إلا أن لديك المزيد من خيارات التكوين. راجع [إنشاء نوع معلومات حساسة مخصص في Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 > [!NOTE]
-> تتوفر مستويات الثقة المحسنة للاستخدام الفوري ضمن "منع فقدان البيانات" لخدمات Microsoft 365، حماية البيانات في Microsoft لخدمات Microsoft 365، وتوافق الاتصالات، وحوكمة المعلومات، وإدارة السجلات.
-> يدعم Microsoft 365 حماية البيانات الآن لغات مجموعة أحرف البايت المزدوجة ل:
->
+> تتوفر مستويات الثقة المحسنة للاستخدام الفوري داخل خدمات منع فقدان البيانات في Microsoft Purview وحماية المعلومات وتوافق الاتصالات وإدارة دورة حياة البيانات وإدارة السجلات.
+> يدعم حماية البيانات الآن لغات مجموعة أحرف مزدوجة البايت ل:
 > - الصينية (المبسطة)
 > - الصينية (التقليدية)
 > - الكورية

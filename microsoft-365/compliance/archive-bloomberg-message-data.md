@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل بيانات لاستيراد البيانات وأرشفتها من أداة البريد الإلكتروني لرسالة بلومبيرغ في Microsoft 365. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: 497e0e5e3f99c5776d872ef522107cb29ba0fd33
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 781378ba30ccb7db44191764e050277fa4a239aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938742"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992799"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>إعداد موصل أرشفة بيانات رسالة بلومبيرغ
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل بيانات في مدخل توافق Microsoft Purview لاستيراد بيانات البريد الإلكتروني للخدمات المالية وأرشفتها من أداة التعاون [في رسالة بلومبيرغ](https://www.bloomberg.com/professional/product/collaboration/) . بعد إعداد موصل وتكوينه، فإنه يتصل بموقع FTP الآمن (SFTP) الخاص بمؤسستك مرة واحدة كل يوم، ويستورد عناصر البريد الإلكتروني إلى علب البريد في Microsoft 365.
 

@@ -20,14 +20,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على توسيع حلول Microsoft Purview باستخدام موصلات بيانات تابعة لجهة خارجية وMicrosoft Graph واجهات برمجة التطبيقات.
-ms.openlocfilehash: e61cd2dfa8121a0925cc89fd5373569d9697936a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9d2c3235a29e2d25e24656a4ff94216cde925b6c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942744"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992249"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>إمكانية توسعة Microsoft Purview وMicrosoft Priva
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تساعد حلول Microsoft Purview المؤسسات على تقييم مخاطر الامتثال الخاصة بها بذكاء، وتحكم البيانات الحساسة وتحميها، وتستجيب بفعالية للمتطلبات التنظيمية. يعد Microsoft Purview غنيا بسيناريوهات قابلية التوسع ويمكن المؤسسات من تكييف حلول الامتثال وتوسيعها ودمجها وتسريعها ودعمها.
 

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44d09eefb065ee204dd90980dfe710d6b3ddb88e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d97442fc2c3767a30c1ea98dc4a1ee7a38e56b45
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666779"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64970990"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>عرض تقارير أمان البريد الإلكتروني في مدخل Microsoft 365 Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "64666779"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender لـ Office 365 الخطة 1 والخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 تتوفر مجموعة متنوعة من التقارير في مدخل Microsoft 365 Defender لمساعدتك على <https://security.microsoft.com> معرفة كيفية حماية ميزات أمان البريد الإلكتروني، مثل ميزات مكافحة البريد العشوائي والبرامج الضارة في Microsoft 365 مؤسستك. إذا كان لديك [الأذونات اللازمة](#what-permissions-are-needed-to-view-these-reports)، يمكنك عرض هذه التقارير وتنزيلها كما هو موضح في هذه المقالة.
@@ -50,7 +50,7 @@ ms.locfileid: "64666779"
 
 |تقرير مهمل و cmdlets مهملة|تقرير جديد و cmdlets|معرف مركز الرسائل|تاريخ|
 |---|---|:---:|:---:|
-|**تتبع عنوان URL** <p> Get-URLTrace|[تقرير حماية URL](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|يونيو 2021|
+|**تعقب عناوين URL** <p> Get-URLTrace|[تقرير حماية URL](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|يونيو 2021|
 |**تقرير البريد الإلكتروني المرسل والمستلم** <p> Get-MailTrafficReport <br> Get-MailDetailReport|[تقرير حالة الحماية من التهديدات](#threat-protection-status-report) <br> [تقرير حالة تدفق البريد](#mailflow-status-report) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|يونيو 2021|
 |**إعادة توجيه التقرير** <p> لا توجد أوامر cmdlets|[تقرير الرسائل التي تمت إعادة توجيهها تلقائيا في EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <p> لا توجد أوامر cmdlets|MC250533|يونيو 2021|
 |**تقرير أنواع ملفات خزينة المرفقات** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|يونيو 2021|
@@ -109,7 +109,6 @@ ms.locfileid: "64666779"
 في صفحة **تقرير قاعدة النقل Exchange**، يتم وصف المخططات والبيانات المتوفرة في المقاطع التالية.
 > [!NOTE]
 > يتوفر الآن **تقرير قاعدة النقل Exchange** في EAC. لمزيد من المعلومات، راجع [Exchange تقرير قاعدة النقل في EAC الجديد](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
-
 
 ### <a name="chart-breakdown-by-direction"></a>تصنيف المخطط حسب الاتجاه
 
@@ -192,7 +191,7 @@ ms.locfileid: "64666779"
 في صفحة **تقرير حالة تدفق البريد** ، يتم تحديد علامة التبويب **"النوع** " بشكل افتراضي. يعرض المخطط المعلومات التالية لنطاق التاريخ المحدد:
 
 - **البريد الجيد**: البريد الإلكتروني الذي تم تحديد أنه ليس بريدا عشوائيا أو يسمح به المستخدم أو نهج المؤسسة.
-- **مجموع**
+- **الإجمالي**
 - **البرامج الضارة**: البريد الإلكتروني الذي تم حظره كبرايات ضارة بواسطة عوامل تصفية مختلفة.
 - **البريد الإلكتروني للتصيد الاحتيالي**: البريد الإلكتروني المحظور للتصيد الاحتيالي بواسطة عوامل تصفية مختلفة.
 - **البريد العشوائي**: البريد الإلكتروني المحظور كبرم عشوائي بواسطة عوامل تصفية مختلفة.
@@ -353,7 +352,7 @@ ms.locfileid: "64666779"
 - **تمرير**
 - **تفشل**
 - **SoftPass**
-- **بلا**
+- **None**
 - **الاخري**
 
 عند المرور فوق يوم (نقطة بيانات) في المخطط، يمكنك معرفة عدد الرسائل المخادعة التي تم اكتشافها ولماذا.
@@ -365,7 +364,7 @@ ms.locfileid: "64666779"
   - **تمرير**
   - **تفشل**
   - **SoftPass**
-  - **بلا**
+  - **None**
   - **الاخري**
 - **نوع الانتحال**: **داخلي** **وخارجي**
 
@@ -478,7 +477,7 @@ ms.locfileid: "64666779"
 - **نوع النهج**:
   - **الكل**
   - **مكافحة البرامج الضارة**
-  - **مرفقات خزينة**
+  - **مرفقات آمنة**
   - **مكافحة التصيد الاحتيالي**
   - **مكافحة البريد العشوائي**
   - **قاعدة تدفق البريد** (قاعدة النقل)
@@ -541,7 +540,7 @@ ms.locfileid: "64666779"
 - **نوع النهج**:
   - **الكل**
   - **مكافحة البرامج الضارة**
-  - **مرفقات خزينة**
+  - **مرفقات آمنة**
   - **مكافحة التصيد الاحتيالي**
   - **مكافحة البريد العشوائي**
   - **قاعدة تدفق البريد** (قاعدة النقل)
@@ -592,7 +591,7 @@ ms.locfileid: "64666779"
 - **نوع النهج**:
   - **الكل**
   - **مكافحة البرامج الضارة**
-  - **مرفقات خزينة**
+  - **مرفقات آمنة**
   - **مكافحة التصيد الاحتيالي**
   - **مكافحة البريد العشوائي**
   - **قاعدة تدفق البريد** (قاعدة النقل)
@@ -648,7 +647,7 @@ ms.locfileid: "64666779"
 - **نوع النهج**:
   - **الكل**
   - **مكافحة البرامج الضارة**
-  - **مرفقات خزينة**
+  - **مرفقات آمنة**
   - **مكافحة التصيد الاحتيالي**
   - **مكافحة البريد العشوائي**
   - **قاعدة تدفق البريد** (قاعدة النقل)
@@ -716,7 +715,7 @@ ms.locfileid: "64666779"
 - **نوع النهج**:
   - **الكل**
   - **مكافحة البرامج الضارة**
-  - **مرفقات خزينة**
+  - **مرفقات آمنة**
   - **مكافحة التصيد الاحتيالي**
   - **مكافحة البريد العشوائي**
   - **قاعدة تدفق البريد** (قاعدة النقل)
@@ -742,7 +741,7 @@ ms.locfileid: "64666779"
 - **علبة البريد المستضافة: العناصر المحذوفة**
 - **اعاده توجيه**
 - **الخادم المحلي: تم التسليم**
-- **الحجر الصحي**
+- **العزل**
 - **فشل التسليم**
 - **انخفض**
 
@@ -789,7 +788,7 @@ ms.locfileid: "64666779"
 - **نوع النهج**:
   - **الكل**
   - **مكافحة البرامج الضارة**
-  - **مرفقات خزينة**
+  - **مرفقات آمنة**
   - **مكافحة التصيد الاحتيالي**
   - **مكافحة البريد العشوائي**
   - **قاعدة تدفق البريد** (قاعدة النقل)
@@ -1028,7 +1027,7 @@ ms.locfileid: "64666779"
 
 لتجميع الإدخالات، انقر فوق **"تجميع"** وحدد إحدى القيم التالية من القائمة المنسدلة:
 
-- **بلا**
+- **None**
 - **السبب**
 - **المرسل**
 - **تم الإبلاغ عنها من قبل**
@@ -1068,7 +1067,7 @@ ms.locfileid: "64666779"
 
 لمزيد من المعلومات، راجع [الأذونات في مدخل Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**ملاحظة**: إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات المطلوبة في مدخل Microsoft 365 Defender _والأذونات_ للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع ["حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md)".
+**ملاحظة**: إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات المطلوبة في مدخل Microsoft 365 Defender _والأذونات_ للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>ماذا لو لم تعرض التقارير البيانات؟
 

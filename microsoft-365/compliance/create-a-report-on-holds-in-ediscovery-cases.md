@@ -20,14 +20,16 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية إنشاء تقرير يحتوي على معلومات حول كافة قوائم الاحتجاز المقترنة بحالات eDiscovery.
-ms.openlocfilehash: b0460b725359e2953c0a27b517a362327ae504f5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 98cdad3d125fbeab9afd9d7d99b572e5f0bf7386
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946452"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993195"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>استخدام برنامج نصي لإنشاء تقرير حول قوائم الاحتجاز في حالات eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتيح البرنامج النصي في هذه المقالة لمسؤولي eDiscovery ومديري eDiscovery إنشاء تقرير يحتوي على معلومات حول جميع قوائم الاحتجاز المقترنة بحالات Core وeDiscovery (Premium) في مدخل الامتثال ل Microsoft Purview. يحتوي التقرير على معلومات مثل اسم الحالة المقترنة باحتجاز، ومواقع المحتوى الموضوعة قيد الاحتجاز، وما إذا كان الاحتجاز مستندا إلى الاستعلام. إذا كانت هناك حالات لا تحتوي على أي قوائم احتجاز، فسينشئ البرنامج النصي تقريرا إضافيا بقائمة من الحالات دون احتجاز.
 

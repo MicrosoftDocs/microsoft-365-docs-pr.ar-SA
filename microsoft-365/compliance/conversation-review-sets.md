@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على ميزة الإضافة إلى المحادثة في Microsoft Purview eDiscovery (Premium) (تسمى مؤشر ترابط المحادثة) لإعادة بناء محادثات الدردشة ومراجعتها وتصديرها في مجموعات Microsoft Teams والمجموعات Yammer.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9bfd87de95449ab30b8a33c9f7f96db458e809d1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c3cd05ab340775a7a923b9e4a0f66c3abaf559cb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950258"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993261"
 ---
 # <a name="conversation-threading-in-ediscovery-premium"></a>مؤشر ترابط المحادثة في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تعد المراسلة الفورية طريقة ملائمة لطرح الأسئلة أو مشاركة الأفكار أو التواصل بسرعة عبر الجماعات المستهدفة الكبيرة. نظرا لأن منصات المراسلة الفورية، مثل Microsoft Teams ومجموعات Yammer، تصبح أساسية لتعاون المؤسسة، يجب على المؤسسات تقييم كيفية معالجة سير عمل eDiscovery لهذه الأشكال الجديدة من الاتصال والتعاون.
 

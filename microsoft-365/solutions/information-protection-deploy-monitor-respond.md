@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: استخدم سياسات التدقيق والتنبيه وطلبات موضوع البيانات لمراقبة أحداث البيانات الشخصية والاستجابة لها.
-ms.openlocfilehash: 5f4dd6a59ae361cbef042bfc3587203b34620746
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 730eb42fdf6aed66f5beac69621981848ffa6510
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945330"
+ms.locfileid: "64953316"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>مراقبة أحداث خصوصية البيانات في مؤسستك والاستجابة لها
 
@@ -67,7 +67,7 @@ ms.locfileid: "64945330"
 
 - [تدقيق موحد](../compliance/search-the-audit-log-in-security-and-compliance.md)
 - [تدقيق علبة البريد](../compliance/enable-mailbox-auditing.md)
-- [تدقيق متقدم](../compliance/advanced-audit.md)
+- [التدقيق (Premium)](../compliance/advanced-audit.md)
 - [نُهج التنبيهات](../compliance/alert-policies.md)
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>طلبات موضوع البيانات من أجل القانون العام لحماية البيانات (GDPR) وCCPA

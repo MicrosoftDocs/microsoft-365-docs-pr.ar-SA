@@ -19,14 +19,16 @@ description: استكشاف أخطاء Azure AzCopy وإصلاحها عند تح
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: ed9910df4da310034320ea030c8b5da1c5918e52
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ff8f69e6efeab3e0f0e9d8ee2f739caaa40d7c85
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943480"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991787"
 ---
 # <a name="troubleshoot-azcopy-in-ediscovery-premium"></a>استكشاف أخطاء AzCopy وإصلاحها في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند تحميل البيانات أو المستندات غير Microsoft 365 لمعالجة الأخطاء في Microsoft Purview eDiscovery (Premium)، توفر واجهة المستخدم أمر Azure AzCopy الذي يحتوي على معلمات مع موقع تخزين الملفات التي تريد تحميلها وموقع تخزين Azure الذي سيتم تحميل الملفات إليه. لتحميل المستندات، يمكنك نسخ هذا الأمر ثم تشغيله في موجه الأوامر على الكمبيوتر المحلي.  تعرض لقطة الشاشة التالية مثالا لأمر AzCopy:
 

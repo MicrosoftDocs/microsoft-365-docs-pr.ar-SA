@@ -1,5 +1,5 @@
 ---
-title: قائمة قوالب Microsoft Compliance Manager
+title: قائمة قوالب Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,24 +16,26 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: يوفر Microsoft Compliance Manager قوالب لإنشاء تقييمات تتوافق مع اللوائح والمعايير والقوانين الوطنية والإقليمية والصناعية.
-ms.openlocfilehash: 484363636906bbf599a18b3cf6d3484d53177e75
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: يوفر Microsoft Purview Compliance Manager قوالب لإنشاء تقييمات تتماشى مع اللوائح والمعايير والقوانين الوطنية والإقليمية والصناعية.
+ms.openlocfilehash: cc07d7aa6fc385fc1066f35c8d20bbe7e2152b93
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760990"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971484"
 ---
 # <a name="compliance-manager-templates-list"></a>قائمة قوالب إدارة التوافق
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **في هذه المقالة:** عرض القائمة الشاملة **للقوالب** المتوفرة لإنشاء التقييمات في Compliance Manager.
 
 > [!IMPORTANT]
-> تعتمد قوالب التقييم المتوفرة لمؤسستك على اتفاقية الترخيص الخاصة بك. [مراجعة التفاصيل](compliance-manager-templates.md#template-availability-and-licensing).
+> تعتمد قوالب التقييم المتوفرة لمؤسستك على اتفاقية الترخيص الخاصة بك. [راجع التفاصيل](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="overview"></a>نظرة عامة
 
-يوفر [Microsoft Compliance Manager](compliance-manager.md) مجموعة شاملة من القوالب لإنشاء التقييمات. يمكن أن تساعد هذه القوالب مؤسستك على الامتثال للمتطلبات الوطنية والإقليمية والمتطلبات الخاصة بالصناعة التي تحكم جمع البيانات واستخدامها.
+يوفر [Microsoft Purview Compliance Manager](compliance-manager.md) مجموعة شاملة من القوالب لإنشاء التقييمات. يمكن أن تساعد هذه القوالب مؤسستك على الامتثال للمتطلبات الوطنية والإقليمية والمتطلبات الخاصة بالصناعة التي تحكم جمع البيانات واستخدامها.
 
 تتم إضافة القوالب إلى Compliance Manager مع سن قوانين ولوائح جديدة. يحدث Compliance Manager أيضا قوالبه عند تغيير القوانين أو اللوائح الأساسية. تعرف على المزيد حول كيفية [مراجعة التحديثات وقبولها](compliance-manager-assessments.md#accept-updates-to-assessments).
 

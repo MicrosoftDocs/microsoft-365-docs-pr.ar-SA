@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل TeleMessage لاستيراد بيانات SMS و MMS وأرشفتها من شبكة الجرس. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: ad1426d6e0aa52a23719d024e4cad649baad3db4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dc23e3788958270712bab493cd0364a80a0377f9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937246"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992777"
 ---
 # <a name="set-up-a-connector-to-archive-bell-network-data"></a>إعداد موصل أرشفة بيانات شبكة الجرس
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل TeleMessage في مدخل توافق Microsoft Purview لاستيراد وأرشفة رسائل خدمة المراسلة القصيرة (SMS) وخدمة المراسلة متعددة الوسائط (MMS) من شبكة الجرس. بعد إعداد موصل وتكوينه، يتصل بشبكة الجرس الخاصة بمؤسستك مرة واحدة كل يوم، ويستورد رسائل SMS و MMS إلى علب البريد في Microsoft 365.
 

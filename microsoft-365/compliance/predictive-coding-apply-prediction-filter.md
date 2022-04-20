@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: استخدم عامل تصفية نقاط التنبؤ لعرض العناصر التي تم توقع نموذج ترميز تنبؤي لها على أنها ذات صلة أو غير ذات صلة.
-ms.openlocfilehash: 261c77031eb0831db11878c2ce0c573eb3b9db6e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ab97c91196456b69f7f420ccd317747f638b4ee5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942282"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993063"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>تطبيق عامل تصفية نقاط التنبؤ على مجموعة مراجعة (معاينة)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بعد إنشاء نموذج ترميز تنبؤي في Microsoft Purview eDiscovery (Premium) وتدريبه إلى النقطة التي يكون فيها مستقرا، يمكنك تطبيق عامل تصفية نقاط التنبؤ لعرض عناصر مجموعة المراجعة التي حددها النموذج ذات صلة (أو غير ذات صلة). عند إنشاء نموذج، يتم أيضا إنشاء عامل تصفية نقاط التنبؤ المطابق. يمكنك استخدام عامل التصفية هذا لعرض العناصر المعينة لنتيجة تنبؤ ضمن نطاق محدد. بشكل عام، يتم تعيين درجات التنبؤ بين **0** **و.5** إلى العناصر التي توقعها النموذج غير ذات صلة. العناصر المعينة درجات التنبؤ بين **.5** **و1.0** هي عناصر توقعها النموذج ذات صلة.
 

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد البيانات وأرشفتها من Veritas Slack eDiscovery إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: b6c5f398e1f8966b11a3f9cd4c0e4732fc4b5eff
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f8a8f785c61bd1ddfea6c0c0cf69c5719b4f9aaf
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940610"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992271"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>إعداد موصل أرشفة بيانات Slack eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد بيانات الجهات الخارجية وأرشفتها من الوسائط الاجتماعية والمراسلة الفورية وأنظمة التعاون الأساسية للمستندات إلى علب البريد في مؤسستك Microsoft 365. يوفر Veritas موصل [Slack](https://globanet.com/slack/) الذي تم تكوينه لالتقاط العناصر من مصدر بيانات الجهات الخارجية (بشكل منتظم) ثم استيراد هذه العناصر إلى Microsoft 365. يسحب Slack الرسائل والملفات من Slack API ويحولها إلى تنسيق رسالة بريد إلكتروني ثم يستورد العنصر إلى علب بريد المستخدمين.
 

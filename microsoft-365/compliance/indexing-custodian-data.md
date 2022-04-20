@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: عند إضافة أمين إلى حالة eDiscovery (Premium)، تتم إعادة معالجة أي محتوى يعتبر مفهرسا جزئيا لجعله قابلا للبحث بالكامل.
-ms.openlocfilehash: 3c6f0079f87dbc4711fed7d776204c287d5b5865
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8b7dbbb13b9a667a7b5a50a5535634414c0caec5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931968"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993611"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>الفهرسة المتقدمة لبيانات الوصي
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند إضافة أمين إلى حالة eDiscovery (Premium)، يعاد فهرسة أي محتوى يعتبر مفهرسا جزئيا أو به أخطاء فهرسة. تسمى عملية إعادة الفهرسة هذه *الفهرسة المتقدمة*. هناك العديد من الأسباب التي تجعل المحتوى مفهرسا جزئيا أو يحتوي على أخطاء فهرسة. يتضمن ذلك ملفات الصور أو وجود صور في ملف أو أنواع ملفات غير معتمدة أو حدود فهرسة بحجم الملف. بالنسبة لملفات SharePoint، يتم وضع علامة على الفهرسة المتقدمة فقط على العناصر على أنها مفهرسة جزئيا أو تحتوي على أخطاء فهرسة. في Exchange، لا يتم وضع علامة على رسائل البريد الإلكتروني التي تحتوي على مرفقات صور على أنها مفهرسة جزئيا أو بها أخطاء فهرسة. وهذا يعني أنه لن تتم إعادة فهرسة هذه الملفات بواسطة عملية الفهرسة المتقدمة.
 

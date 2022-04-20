@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل بيانات لاستيراد بيانات سجلات الرعاية الصحية الإلكترونية (EHR) من نظام الرعاية الصحية الخاص بهم إلى Microsoft 365. يتيح لك ذلك استخدام بيانات EHR في نهج إدارة المخاطر الداخلية لمساعدتك على اكتشاف نشاط وصول غير مصرح به إلى بيانات المرضى من قبل موظفيك.
-ms.openlocfilehash: dfb02e5f6fb8625d31554c6dbc11179b1dddb6c2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b1745d8f91253132748fe08d724386d2e6633a4c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949708"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993151"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>إعداد موصل لاستيراد بيانات تدقيق EHR للرعاية الصحية (معاينة)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك إعداد موصل بيانات في مدخل توافق Microsoft Purview لاستيراد بيانات التدقيق لنشاط المستخدم في نظام سجلات الرعاية الصحية الإلكترونية (EHR) الخاص بمؤسستك. يتضمن تدقيق البيانات من نظام EHR للرعاية الصحية بيانات للأحداث المتعلقة بالوصول إلى سجلات صحة المريض. يمكن استخدام بيانات تدقيق EHR للرعاية الصحية من قبل [حل إدارة المخاطر الداخلية](insider-risk-management.md) Microsoft 365 للمساعدة في حماية مؤسستك من الوصول غير المصرح به إلى معلومات المريض.
 

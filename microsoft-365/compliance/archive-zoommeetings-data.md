@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد البيانات وأرشفتها من اجتماعات تكبير/تصغير Veritas إلى Microsoft 365. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: f8239b1c624712b1eafe0bdce7250143c80610a5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e31f6a4af31f150143ba5e44e57c198756547f93
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934896"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993283"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>إعداد موصل أرشفة بيانات اجتماعات التكبير/التصغير
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من اجتماعات التكبير/التصغير إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر Veritas موصل [اجتماعات التكبير/التصغير](https://globanet.com/zoom/) الذي تم تكوينه لالتقاط العناصر من مصدر بيانات الجهات الخارجية (بشكل منتظم) واستيراد هذه العناصر إلى Microsoft 365. يحول الموصل محتوى الاجتماعات (بما في ذلك الدردشات والملفات المسجلة وبيانات التعريف) من حساب اجتماعات التكبير/التصغير إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: تعرف على العناصر غير المفهرسة في Exchange SharePoint التي يمكنك تضمينها في بحث eDiscovery الذي تقوم بتشغيله في مدخل توافق Microsoft Purview.
-ms.openlocfilehash: 3e4f9521151755f97f3ad4b824c763f3ab5d807f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b88e7d0f6651ecaa31849343db066295af1f5e84
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932034"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993085"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>العناصر المفهرسة جزئيا في eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتضمن بحث Microsoft Purview eDiscovery الذي تقوم بتشغيله من مدخل توافق Microsoft Purview العناصر المفهرسة جزئيا في نتائج البحث المقدرة عند تشغيل عملية بحث. العناصر المفهرسة جزئيا هي Exchange عناصر علبة البريد والمستندات على SharePoint ومواقع OneDrive for Business التي لم تتم فهرستها بشكل كامل للبحث لسبب ما. في Exchange، يحتوي العنصر المفهرس جزئيا عادة على ملف (من نوع ملف لا يمكن فهرسته) مرفق برسالة بريد إلكتروني. فيما يلي بعض الأسباب الأخرى التي تجعل العناصر لا يمكن فهرستها للبحث ويتم إرجاعها كعناصر مفهرسة جزئيا عند تشغيل بحث eDiscovery:
   

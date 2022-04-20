@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية استخدام أداة إدارة الوصي في eDiscovery (Premium) لإدارة البيانات لحالة قانونية.
-ms.openlocfilehash: 75655b48cf0061879edf5ea559712daa29ce4893
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0c529b339c79789072cf160916db8c21acff7d86
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948430"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992183"
 ---
 # <a name="work-with-custodians-and-non-custodial-data-sources-in-ediscovery-premium"></a>العمل مع أمناء الحفظ ومصادر البيانات غير الاحتجازية في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عندما تستجيب مؤسسة ما للتحقيق القانوني، يستند سير العمل حول تحديد المحتوى المحتمل أن يكون ذا صلة والحفاظ عليه وجمعه إلى الأشخاص في المؤسسة الذين هم أمناء على البيانات ذات الصلة. في eDiscovery، يطلق على هؤلاء الأفراد اسم *أمناء البيانات* (أو *أمناء الحفظ* فقط) ويتم تعريفهم على أنه "الأشخاص الذين لديهم تحكم إداري في مستند أو ملف إلكتروني". على سبيل المثال، قد يكون أمين رسالة البريد الإلكتروني مالك علبة البريد التي تحتوي على الرسالة ذات الصلة.
 

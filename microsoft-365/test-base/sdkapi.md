@@ -1,6 +1,6 @@
 ---
-title: اختبار API & SDK
-description: اختبار API & SDK
+title: واجهة برمجة تطبيقات قاعدة الاختبار & SDK
+description: واجهة برمجة تطبيقات قاعدة الاختبار & SDK
 search.appverid: MET150
 author: mansipatel-usl
 ms.author: mapatel
@@ -14,104 +14,102 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: f7e5edeeac79b417bcb41f8607c46fc8894ea4fc
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 14bfa8711d5cff46b8cce02950c087844384b9f9
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63583719"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953771"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>إدارة المورد باستخدام SDK & واجهات برمجة التطبيقات
-التنفيذ التلقائي هو أحد الجوانب الأساسية لتطوير التطوير التطويري والتطوير التطويري ل DevOps. هل تبحث عن إدارة Test Base Microsoft 365 الموارد والحصول على نتائج الاختبار برمجيا ودمجها مع أدوات CI لدينا؟ يمكن أن تساعدك واجهات برمجة التطبيقات الأساسية للاختبار/SDK على تحقيق كل هذه الأشياء والمزيد! 
 
-تمكن واجهات برمجة التطبيقات/SDK هذه محترفي تكنولوجيا المعلومات ومطوري التطبيقات من القيام ب: 
-- إدارة حسابات Test Base، بما في ذلك إنشاء وتحديث و إيقاف التشغيل. 
-- إدارة حزم التطبيقات، بما في ذلك إنشاء حزمة وتحديثها وحذفها وتنزيلها. 
-- احصل على ملخص الاختبار ونتائج الاختبارات المفصلة ونتائج التحليل. تتضمن نتيجة التحليل تحليل انحدار CPU وتحليل استخدام CPU وتحليل انحدار الذاكرة وتحليل استخدام الذاكرة. 
-- قم بتنزيل نتائج الاختبار وتسجيل فيديو تنفيذ الاختبار.  
+الأتمتة هي جانب رئيسي من DevOps وتطوير التطوير السريع. هل تبحث عن إدارة قاعدة الاختبار لموارد Microsoft 365، والحصول على نتائج الاختبار برمجيا، ودمجها مع أدوات التكامل المستمر لدينا؟ يمكن أن تساعدك واجهات برمجة تطبيقات قاعدة الاختبار/SDK على تحقيق كل هذه وأكثر!
 
-اطلع على المخطط التفصيلي خطوة بخطوة أدناه لمعرفة كيفية الوصول إلى هذه الإمكانية الجديدة في Test Base Microsoft 365 الخدمة.
+تمكن واجهات برمجة التطبيقات/SDK هذه محترفي تكنولوجيا المعلومات ومطوري التطبيقات من:
 
-## <a name="a-step-by-step-example-of-test-base-account-creation-by-using-python-sdk"></a>مثال خطوة بخطوة لإنشاء حساب Test Base باستخدام Python SDK
+- إدارة حسابات قاعدة الاختبار، بما في ذلك الإنشاء والتحديث والإلحاق.
+- إدارة حزم التطبيقات، بما في ذلك إنشاء حزمة وتحديثها وحذفها وتنزيلها.
+- احصل على ملخص الاختبار ونتائج الاختبار التفصيلية ونتائج التحليل. تتضمن نتيجة التحليل تحليل انحدار وحدة المعالجة المركزية وتحليل استخدام وحدة المعالجة المركزية وتحليل انحدار الذاكرة وتحليل استخدام الذاكرة.
+- تنزيل نتائج الاختبار وتسجيل فيديو تنفيذ الاختبار.
 
-1. المتطلبات الأساسية: 
+راجع المخطط التفصيلي المفصل خطوة بخطوة أدناه لمعرفة كيفية الوصول إلى هذه الإمكانية الجديدة في قاعدة الاختبار لخدمة Microsoft 365.
 
-- تثبيت أدناه المكونات المطلوبة: 
+## <a name="a-step-by-step-example-of-test-base-account-creation-by-using-python-sdk"></a>مثال خطوة بخطوة على إنشاء حساب قاعدة الاختبار باستخدام Python SDK
 
-    [حساب Azure مع اشتراك نشط](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) إذا لم يكن لديك اشتراك<br>
-    [Python 2.7+ أو 3.6+](https://www.python.org/downloads)<br>
-    [واجهة azure Command-Line (CLI)](/cli/azure/install-azure-cli) <br>
+1. المتطلبات الأساسية:
 
-- تثبيت حزم المكتبة باستخدام تثبيت النقطة من وحدة التحكم 
+   - التثبيت أدناه المكونات المطلوبة:
 
-```
-pip install azure-identity 
-pip install azure-mgmt-testbase
-```
+     - [حساب Azure مع اشتراك نشط](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) إذا لم يكن لديك اشتراك
+     - [Python 2.7+ أو 3.6+](https://www.python.org/downloads)
+     - [واجهة Command-Line Azure (CLI)](/cli/azure/install-azure-cli)
 
-- المصادقة في بيئة dev 
+   - تثبيت حزم المكتبة باستخدام تثبيت pip من وحدة التحكم
 
-عند تصحيح الأخطاء وتنفيذ التعليمات البرمجية محليا، من المعتاد أن يستخدم المطورون حساباتهم الخاصة لمصادقة المكالمات إلى خدمات Azure. تدعم حزمة azure-identity المصادقة من خلال Azure CLI لتبسيط عملية التطوير المحلي. تسجيل الدخول إلى Azure CLI، قم بتشغيل ```az login ```. في نظام به مستعرض ويب افتراضي، سيطلق Azure CLI المستعرض لمصادقة المستخدم. 
+     ```console
+     pip install azure-identity
+     pip install azure-mgmt-testbase
+     ```
 
-تحقق [من كيفية مصادقة تطبيقات Python باستخدام خدمات Azure| مستندات Microsoft ولطرق](/azure/developer/python/azure-sdk-authenticate) [https://pypi.org/project/azure-identity/](https://pypi.org/project/azure-identity/) المصادقة المعتمدة الأخرى. 
+   - المصادقة في بيئة التطوير
 
- - قم بإنشاء مجموعة موارد باستخدام الاسم المطلوب الذي سيتم استخدامه في الخطوات التالية. 
+     عند تصحيح أخطاء التعليمات البرمجية وتنفيذها محليا، من المعتاد للمطورين استخدام حساباتهم الخاصة لمصادقة المكالمات إلى خدمات Azure. تدعم حزمة azure-identity المصادقة من خلال Azure CLI لتبسيط التطوير المحلي. لتسجيل الدخول إلى Azure CLI، قم بتشغيل `az login`. على نظام مع مستعرض ويب افتراضي، سيقوم Azure CLI بتشغيل المستعرض لمصادقة مستخدم.
 
-2. تغطي قصاصة التعليمات البرمجية أدناه التدفق لإنشاء حساب Test Base بما في ذلك 
+     تحقق من [كيفية مصادقة تطبيقات Python مع خدمات Azure| Microsoft Docs](/azure/developer/python/azure-sdk-authenticate) وأساليب <https://pypi.org/project/azure-identity/> المصادقة المعتمدة الأخرى.
 
-- طلب بيانات الاعتماد عبر Azure CLI للتفاعل مع Azure 
-- تهيي عميل Test Base SDK باستخدام بيانات الاعتماد وم ID الاشتراك للعمليات اللاحقة 
-- استدعاء begin_create من test_base_accounts لإنشاء حساب Test Base 
+   - إنشاء مجموعة موارد بالاسم المطلوب الذي سيتم استخدامه في الخطوات التالية.
 
-انسخ التعليمة البرمجية إلى بيئة تطوير Python، واستبدل "id الاشتراك" بم ID اشتراك Azure و"مورد-مجموعة-اسم" مع مجموعة الموارد التي أنشأتها أعلاه. 
+2. تغطي القصاصة البرمجية أدناه التدفق لإنشاء حساب قاعدة الاختبار بما في ذلك
 
- 
-```python
+   - طلب بيانات الاعتماد عبر Azure CLI للتفاعل مع Azure
+   - تهيئة عميل Test Base SDK باستخدام بيانات الاعتماد ومعرف الاشتراك للعمليات اللاحقة
+   - استدعاء begin_create من نموذج test_base_accounts لإنشاء حساب قاعدة الاختبار
 
-from azure.identity import AzureCliCredential
-from azure.mgmt.testbase import TestBase
-from azure.mgmt.testbase.models import TestBaseAccountResource
-from azure.mgmt.testbase.models import TestBaseAccountSKU
+   انسخ التعليمات البرمجية إلى بيئة تطوير Python، واستبدل "subscription-id" بمعرف اشتراك Azure و"resource-group-name" بمجموعة الموارد التي أنشأتها أعلاه.
 
-# requesting token from Azure CLI for request
-# For other authentication approaches, please see: https://pypi.org/project/azure-identity/
-credential = AzureCliCredential()
-subscription_id = "<subscription-id>"
-resource_group = "<resource-group-name>"
-testBaseAccount_name = "contoso-testbaseAccount"
-testBaseAccount_location = "global"
-sku_name = "S0"
-sku_tier = "Standard"
-sku_locations = {"global"}
+   ```python
+   from azure.identity import AzureCliCredential
+   from azure.mgmt.testbase import TestBase
+   from azure.mgmt.testbase.models import TestBaseAccountResource
+   from azure.mgmt.testbase.models import TestBaseAccountSKU
 
-# Create client
-testBase_client = TestBase(credential, subscription_id)
+   # requesting token from Azure CLI for request
+   # For other authentication approaches, please see: https://pypi.org/project/azure-identity/
+   credential = AzureCliCredential()
+   subscription_id = "<subscription-id>"
+   resource_group = "<resource-group-name>"
+   testBaseAccount_name = "contoso-testbaseAccount"
+   testBaseAccount_location = "global"
+   sku_name = "S0"
+   sku_tier = "Standard"
+   sku_locations = {"global"}
+  
+   # Create client
+   testBase_client = TestBase(credential, subscription_id)
+  
+   # Create sku for test base account
+   sku = TestBaseAccountSKU(name=sku_name, tier=sku_tier, locations=sku_locations)
+  
+   # Create test base account
+   parameters = TestBaseAccountResource(location=testBaseAccount_location, sku=sku)
+   testBaseAccount = testBase_client.test_base_accounts.begin_create(resource_group, testBaseAccount_name, parameters).result()
+   print("Create test base account:\n{}".format(testBaseAccount))
+   ```
 
-# Create sku for test base account
-sku = TestBaseAccountSKU(name=sku_name, tier=sku_tier, locations=sku_locations)
+## <a name="learn-more"></a>التعرف على المزيد
 
-# Create test base account
-parameters = TestBaseAccountResource(location=testBaseAccount_location, sku=sku)
-testBaseAccount = testBase_client.test_base_accounts.begin_create(resource_group, testBaseAccount_name, parameters).result()
-print("Create test base account:\n{}".format(testBaseAccount))
+تحقق من الارتباطات أدناه لمعرفة المزيد من التفاصيل حول SDK & API.
 
-```
-
-
-## <a name="learn-more"></a>التعرف على المزيد 
-
-تحقق من الارتباطات أدناه لمعرفة المزيد من التفاصيل حول SDK & API. 
-
-**اشتراك Azure** 
+**اشتراك Azure**:
 
 - [حساب Azure مع اشتراك نشط](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup)
 
-**Python SDK** 
+**Python SDK**:
 
-- [Test Base Python SDK Documentation](/python/api/overview/azure/mgmt-testbase-readme)
-- [نموذج Test Base Python SDK](https://aka.ms/testbase-sample-py)
-- [نمط استخدام Azure العام ل Python SDK](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
+- [اختبار وثائق Python SDK الأساسية](/python/api/overview/azure/mgmt-testbase-readme)
+- [نموذج اختبار Python SDK الأساسي](https://aka.ms/testbase-sample-py)
+- [نمط الاستخدام العام ل Azure ل Python SDK](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
 
-**REST API**  
+**واجهة برمجة تطبيقات REST**:
 
-- [وثائق REST API](https://aka.ms/testbase-api)  
+- [وثائق واجهة برمجة تطبيقات REST](https://aka.ms/testbase-api)

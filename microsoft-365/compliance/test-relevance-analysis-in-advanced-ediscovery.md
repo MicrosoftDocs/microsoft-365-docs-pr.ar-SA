@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: تعرف على كيفية استخدام علامة التبويب "اختبار" بعد حساب Batch في eDiscovery (Premium) لاختبار الجودة الإجمالية للمعالجة ومقارنتها والتحقق من صحتها.
-ms.openlocfilehash: 7e4541aa2309b6209537931160bf351d22ee8eb7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e568552501a07c74e7500a1041e69f4994668cd2
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935489"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991853"
 ---
 # <a name="test-relevance-analysis-in-ediscovery-premium"></a>اختبار تحليل الصلة في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 تمكنك علامة التبويب "اختبار" في Microsoft Purview eDiscovery (Premium) من اختبار الجودة الإجمالية للمعالجة ومقارنتها والتحقق من صحتها. يتم إجراء هذه الاختبارات بعد حساب Batch. بوضع علامة على الملفات في المجموعة، يصدر خبير الحكم النهائي بشأن ما إذا كان كل ملف تم وضع علامة عليه ذا صلة بالقضية.
   

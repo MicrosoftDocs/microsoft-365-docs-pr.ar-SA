@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: استخدم eDiscovery وأدوات البحث لإدارة حدث انسكاب البيانات في مؤسستك والاستجابة له.
-ms.openlocfilehash: e9e81ae81c344bfc8773174c8650a1808faddd5e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 875c63f264e750603c4ad8a0b5bf1df2b6e45217
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948056"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993217"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>سلسلة حلول eDiscovery: سيناريو انسكاب البيانات - البحث والإزالة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  **ما هو انسكاب البيانات ولماذا يجب أن تهتم؟** يتم انسكاب البيانات عند إصدار مستند سري في بيئة غير موثوق بها. عند الكشف عن حادث انسكاب البيانات، من المهم تقييم حجم ومواقع الانسكاب بسرعة، وفحص أنشطة المستخدم حوله، ثم إزالة البيانات الممدة بشكل دائم من النظام.
   

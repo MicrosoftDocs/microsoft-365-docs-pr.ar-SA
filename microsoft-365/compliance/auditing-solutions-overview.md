@@ -1,5 +1,5 @@
 ---
-title: حلول التدقيق في Microsoft 365
+title: حلول تدقيق Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 description: تعرف على كيفية تدقيق أنشطة المستخدمين والمسؤولين في مؤسستك Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ab97dc632aeaf13109380fb9a5586594c63ebaa
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c7c6461868ee212e6b332181b9dea1560ce49558
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949046"
+ms.locfileid: "64953728"
 ---
-# <a name="auditing-solutions-in-microsoft-365"></a>حلول التدقيق في Microsoft 365
+# <a name="auditing-solutions-in-microsoft-purview"></a>حلول التدقيق في Microsoft Purview
 
-توفر حلول التدقيق Microsoft 365 حلا متكاملا لمساعدة المؤسسات على الاستجابة الفعالة للأحداث الأمنية والتحقيقات الجنائية والتحقيقات الداخلية والتزامات الامتثال. يتم تسجيل الآلاف من عمليات المستخدم والمسؤول التي يتم تنفيذها في العشرات من خدمات وحلول Microsoft 365 وتسجيلها والاحتفاظ بها في سجل التدقيق الموحد لمؤسستك. يمكن البحث في سجلات التدقيق لهذه الأحداث من قبل عمليات الأمان، والمسؤولين عن تكنولوجيا المعلومات، وفرق المخاطر الداخلية، والامتثال والتحريين القانونيين في مؤسستك. توفر هذه الإمكانية رؤية للأنشطة التي يتم تنفيذها عبر مؤسستك Microsoft 365.
+توفر حلول تدقيق Microsoft Purview حلا متكاملا لمساعدة المؤسسات على الاستجابة الفعالة للأحداث الأمنية والتحقيقات الجنائية والتحقيقات الداخلية والتزامات الامتثال. يتم تسجيل الآلاف من عمليات المستخدم والمسؤول التي يتم تنفيذها في العشرات من خدمات وحلول Microsoft 365 وتسجيلها والاحتفاظ بها في سجل التدقيق الموحد لمؤسستك. يمكن البحث في سجلات التدقيق لهذه الأحداث من قبل عمليات الأمان، والمسؤولين عن تكنولوجيا المعلومات، وفرق المخاطر الداخلية، والامتثال والتحريين القانونيين في مؤسستك. توفر هذه الإمكانية رؤية للأنشطة التي يتم تنفيذها عبر مؤسستك Microsoft 365.
 
-## <a name="microsoft-365-auditing-solutions"></a>حلول التدقيق في Microsoft 365
+## <a name="microsoft-purview-auditing-solutions"></a>حلول تدقيق Microsoft Purview
 
 يوفر Microsoft Purview حلين للتدقيق: التدقيق (قياسي) والتدقيق (Premium).
 
@@ -94,7 +94,7 @@ ms.locfileid: "64949046"
 
 ## <a name="licensing-requirements"></a>متطلبات الترخيص
 
-تحدد الأقسام التالية متطلبات الترخيص للتدقيق (القياسي) والتدقيق (Premium). يتم تضمين وظيفة التدقيق (القياسي) مع التدقيق المتقدم.
+تحدد الأقسام التالية متطلبات الترخيص للتدقيق (القياسي) والتدقيق (Premium). يتم تضمين وظيفة التدقيق (القياسي) مع التدقيق (Premium).
 
 ### <a name="audit-standard"></a>التدقيق (قياسي)
 
@@ -126,9 +126,9 @@ ms.locfileid: "64949046"
 - اشتراك Office 365 Enterprise E5
 - اشتراك Office 365 Education A5
 
-## <a name="set-up-microsoft-365-auditing-solutions"></a>إعداد حلول تدقيق Microsoft 365
+## <a name="set-up-microsoft-purview-auditing-solutions"></a>إعداد حلول تدقيق Microsoft Purview
 
-لبدء استخدام حلول التدقيق في Microsoft 365، راجع إرشادات الإعداد التالية.
+لبدء استخدام حلول التدقيق في Microsoft Purview، راجع إرشادات الإعداد التالية.
 
 ### <a name="set-up-audit-standard"></a>إعداد التدقيق (قياسي)
 

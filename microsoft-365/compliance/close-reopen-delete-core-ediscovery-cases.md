@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: تصف هذه المقالة كيفية إدارة حالات eDiscovery (قياسي). يشمل ذلك إغلاق حالة، وإعادة فتح حالة مغلقة، وحذف حالة.
-ms.openlocfilehash: 3ceb23f3ec215f3e9a7e5db036e71e5fe2842191
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ee18a169ace43f03a0407b87c8ae70705af2f43c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940346"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992359"
 ---
 # <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>إغلاق حالة eDiscovery (قياسي) وإعادة فتحها وحذفها
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تصف هذه المقالة كيفية إغلاق حالات Microsoft Purview eDiscovery (القياسية) وإعادة فتحها وحذفها في Microsoft 365.
 

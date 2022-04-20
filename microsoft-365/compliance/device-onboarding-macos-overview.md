@@ -1,5 +1,5 @@
 ---
-title: أجهزة macOS المجهزة في Microsoft 365 عامة (معاينة)
+title: تهيئة أجهزة macOS في نظرة عامة على Microsoft 365
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,95 +13,97 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: تعرف على كيفية وضع أجهزة macOS في حلول التوافق
-ms.openlocfilehash: 783179ae749ac7cd6de671435927ba5bbdbdacad
-ms.sourcegitcommit: 9d563faeaa50b59b0b468dbb373d886e5270f58e
+description: التعرف على إلحاق أجهزة macOS في حلول التوافق
+ms.openlocfilehash: 6cc3323a94ee609c3c6674c12eb99fad3f18f3b4
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64387004"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64952700"
 ---
-# <a name="onboard-macos-devices-into-microsoft-365-overview-preview"></a>أجهزة macOS المجهزة في Microsoft 365 عامة (معاينة)
+# <a name="onboard-macos-devices-into-microsoft-365-overview"></a>تهيئة أجهزة macOS في نظرة عامة على Microsoft 365
 
-يمكن تكدس أجهزة MacOS في Microsoft 365 التوافق باستخدام إما Intune أو JAMF Pro. تختلف إجراءات التكهين استنادا إلى حل الإدارة الذي تستخدمه. إذا تم بالفعل استخدام أجهزة macOS في Microsoft Defender لنقطة النهاية (MDE)، فهناك خطوات أقل. راجع [الخطوات التالية](#next-steps) للحصول على ارتباطات إلى الإجراءات المناسبة لك.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+يمكن إلحاق أجهزة MacOS في حلول Microsoft Purview باستخدام إما Intune أو JAMF Pro. تختلف إجراءات الإلحاق استنادا إلى حل الإدارة الذي تستخدمه. إذا تم بالفعل إلحاق أجهزة macOS في Microsoft Defender لنقطة النهاية (MDE)، فهناك خطوات أقل. راجع [الخطوات التالية](#next-steps) للحصول على ارتباطات للإجراءات المناسبة لك.
 
 **ينطبق على:**
 
 - [منع فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
-- [إدارة مخاطر Insider](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [إدارة المخاطر الداخلية](insider-risk-management.md)
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-قبل بدء استخدام Endpoint DLP على أجهزة macOS (Catalina 10.15 أو أي وقت لاحق)، يجب أن تطلع نفسك على المقالات التالية:
+قبل البدء باستخدام DLP لنقطة النهاية على أجهزة macOS (Catalina 10.15 أو أحدث)، يجب أن تتعرف على هذه المقالات:
 
-- [التعرف على منع فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
-- [بدء استخدام منع فقدان بيانات نقطة النهاية](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
+- [التعرّف على تفادي فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md)
+- [للحصول على متطلبات إضافية لنشر Endpoint DLP، راجع البدء في تفادي فقدان البيانات على الأجهزة.](endpoint-dlp-getting-started.md)
 
-إذا لم تكن ملما باستخدام DLP على الإطلاق، يجب عليك التعرف على هذه المقالات أيضا:
+إذا لم تكن على دراية ب DLP على الإطلاق، يجب أن تتعرف على هذه المقالات أيضا:
 
-- [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [التعرّف على تفادي فقدان البيانات](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [التخطيط لمنع فقدان البيانات (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
-- [مرجع نهج منع فقدان البيانات](dlp-policy-reference.md#data-loss-prevention-policy-reference)
+- [مرجع نهج تفادي فقدان البيانات](dlp-policy-reference.md#data-loss-prevention-policy-reference)
 
-إذا لم تكن ملما باستخدام Insider Risk، يجب أن تألف استخدام هذه المقالات:
+إذا لم تكن على دراية ب Insider Risk، يجب أن تتعرف على هذه المقالات:
 
- - [إدارة مخاطر Insider](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
- - [التخطيط لإدارة مخاطر insider](insider-risk-management-plan.md#plan-for-insider-risk-management)
+ - [إدارة المخاطر الداخلية](insider-risk-management.md)
+ - [خطة لإدارة المخاطر الداخلية](insider-risk-management-plan.md#plan-for-insider-risk-management)
 
-يجب أن تكون أجهزة macOS مدارة بالفعل من خلال Intune أو JAMF Pro.
+يجب أن تتم إدارة أجهزة macOS بالفعل من خلال Pro Intune أو JAMF.
  
-- للالتحاق في Intune، راجع دليل النشر: إدارة أجهزة [macOS في](/mem/intune/fundamentals/deployment-guide-platform-macos) Microsoft Intune تسجيل [جهاز Mac](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp) باستخدام Intune Company Portal. 
-- للتركيب في JAMF Pro، راجع دليل مسؤولي [JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) و [JAMF Pro دليل التكوين والتثبيت ل Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
+- لإلحاق Intune، راجع [دليل النشر: إدارة أجهزة macOS في Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) [وتسجيل جهاز Mac باستخدام Intune Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
+- للإلحاق ب JAMF Pro راجع، [دليل مسؤولي PRO JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) و [JAMF Pro دليل التثبيت والتكوين ل Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
 - تثبيت مستعرض v95+ Edge على أجهزة macOS 
 
 ## <a name="licensing-guidance"></a>إرشادات الترخيص
 
-راجع، [Microsoft 365 إرشادات الترخيص لحماية المعلومات](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+راجع Microsoft 365 [إرشادات الترخيص لحماية المعلومات](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ## <a name="activities-that-can-be-restricted-on-macos"></a>الأنشطة التي يمكن تقييدها على macOS 
 
-بمجرد أن يتم تشغيل جهاز macOS في Microsoft 365 التوافق، يمكنك مراقبة هذه الإجراءات وتقييدها باستخدام سياسات منع فقدان البيانات (DLP).
+بمجرد إلحاق جهاز macOS في حلول Microsoft Purview، يمكنك مراقبة هذه الإجراءات وتقييدها باستخدام نهج منع فقدان البيانات (DLP).
 
-**النسخ إلى وسائط USB** قابلة للإزالة – عند فرضها، يمنع هذا الإجراء نسخ الملفات المحمية أو نقلها أو نقلها من جهاز نقطة نهاية إلى وسائط USB قابلة للإزالة 
+**النسخ إلى وسائط USB القابلة للإزالة** – عند فرضها، يحظر هذا الإجراء نسخ الملفات المحمية أو نقلها أو نقلها من جهاز نقطة النهاية إلى وسائط USB القابلة للإزالة أو تدقيقها 
 
-**النسخ إلى مشاركة** الشبكة – عند فرض هذا الإجراء، يمنع عملية نسخ الملفات المحمية أو نقلها أو يدقق فيها من جهاز نقطة نهاية إلى أي مشاركة على الشبكة 
+**النسخ إلى مشاركات الشبكة** – عند فرضه، يحظر هذا الإجراء نسخ الملفات المحمية أو نقلها من جهاز نقطة النهاية إلى أي مشاركة شبكة أو يحذر منها أو يدقق فيها 
 
-**الطباعة** – عند فرضها، يتم حظر هذا الإجراء أو تحذيره أو تدقيقه عند طباعة الملفات المحمية من جهاز نقطة نهاية 
+**الطباعة** – عند فرضه، يحظر هذا الإجراء أو يحذر أو يدقق عند طباعة الملفات المحمية من جهاز نقطة النهاية 
 
-**نسخ إلى الحافظة** – عند فرضها، يمنع هذا الإجراء البيانات الموجودة في ملف محمي يتم نسخها إلى الحافظة على جهاز نقطة نهاية أو يحذر منها أو يدقق فيها 
+**نسخ إلى الحافظة** – عند فرضه، يقوم هذا الإجراء بحظر أو تحذير أو تدقيق البيانات في ملف محمي يتم نسخه إلى حافظة على جهاز نقطة النهاية 
 
-**Upload** السحابة – تمنع عمليات الإجراء هذه أو تحذر أو تدققها عندما يتم منع الملفات المحمية من تحميلها أو السماح بتحميلها إلى الخدمات السحابية استنادا إلى قائمة المجالات المسموح بها/غير المسموح بها في الإعدادات العامة. عند تعيين هذا الإجراء للتحذير أو الحظر، يتم حظر المستعرضات الأخرى (المعرفة في قائمة المستعرضات غير المحظورة ضمن الإعدادات العامة) من الوصول إلى الملف. 
+**Upload إلى السحابة** – يحظر هذا الإجراء الملفات المحمية أو يحذر منها أو يدققها عندما يتم منع تحميل الملفات المحمية أو يسمح بتحميلها إلى الخدمات السحابية استنادا إلى قائمة المجالات المسموح بها/غير المسموح بها في الإعدادات العمومية. عند تعيين هذا الإجراء للتحذير أو الحظر، يتم حظر المستعرضات الأخرى (المعرفة في قائمة المستعرضات غير مسموح بها ضمن الإعدادات العمومية) من الوصول إلى الملف. 
 
-الوصول إليها بواسطة تطبيقات غير مسموح **بها – عند** فرضها، يمنع هذا الإجراء التطبيقات الموجودة في قائمة التطبيقات غير المدينة (كما هو محدد في الإعدادات العامة) من الوصول إلى الملفات المحمية على جهاز نقطة نهاية. نماذج السيناريوهات 
+**يتم الوصول إليها بواسطة التطبيقات غير مسموح بها** – عند فرضه، يمنع هذا الإجراء التطبيقات الموجودة في قائمة التطبيقات غير مسموح بها (كما هو محدد في الإعدادات العمومية) من الوصول إلى الملفات المحمية على جهاز نقطة النهاية. نماذج السيناريوهات 
 
-## <a name="onboarding-devices-into-device-management"></a>تشغيل الأجهزة في إدارة الأجهزة
+## <a name="onboarding-devices-into-device-management"></a>إلحاق الأجهزة بإدارة الأجهزة
 
-يجب تمكين مراقبة الجهاز وإلوحاء نقاط النهاية قبل أن تتمكن من مراقبة العناصر الحساسة على جهاز وحمايتها. يتم كلا هذين الإجراءات في مدخل Microsoft 365 التوافق.
+يجب تمكين مراقبة الجهاز وإلحاق نقاط النهاية قبل أن تتمكن من مراقبة العناصر الحساسة وحمايتها على الجهاز. يتم تنفيذ كلا الإجراءين في مدخل توافق Microsoft Purview.
 
-عندما تريد أن تقوم بتركب الأجهزة التي لم يتم تشغيلها بعد، يمكنك تنزيل البرنامج النصي المناسب ونشره على تلك الأجهزة. <!--Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).-->
+عندما تريد إلحاق الأجهزة التي لم يتم إلحاقها بعد، ستقوم بتنزيل البرنامج النصي المناسب ونشره على تلك الأجهزة. <!--Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).-->
 
 <!--If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list.-->
 
-1. افتح صفحة [مركز التوافق ل Microsoft](https://compliance.microsoft.com) **الإعدادات** **واختر تمكين مراقبة الجهاز**.
+1. افتح صفحة **الإعدادات** [مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com) واختر **تمكين مراقبة الجهاز**.
 
    > [!NOTE]
-   > على الرغم من أن تمكين تشغيل الجهاز يستغرق عادة حوالي 60 ثانية، يرجى السماح بما يصل إلى 30 دقيقة قبل التفاعل مع دعم Microsoft.
+   > على الرغم من أن تمكين إلحاق الجهاز يستغرق عادة حوالي 60 ثانية، يرجى السماح بما يصل إلى 30 دقيقة قبل التعامل مع دعم Microsoft.
 
-2. افتح صفحة إعدادات مركز التوافق واختر **تشغيل مراقبة أجهزة macOS**.
+2. افتح صفحة إعدادات مركز التوافق واختر **تشغيل مراقبة جهاز macOS**.
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-إن وضع الأجهزة في Microsoft 365 حلول التوافق مطلوب لتلقي بيانات استخدام أدوات استشعار DLP وفرض سياسات منع فقدان البيانات. 
+يلزم إدخال الأجهزة في حلول Microsoft Purview من أجل تلقي بيانات تتبع الاستخدام لأداة استشعار DLP وفرض نهج منع فقدان البيانات. 
 
 الموضوع | الوصف
 :---|:---
-|[أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في Microsoft 365 التوافق باستخدام Intune (معاينة)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|بالنسبة إلى أجهزة macOS التي يتم إدارتها من خلال Intune
-|[أجهزة macOS التي تعمل باللوح واللوح خارجها في حلول التوافق باستخدام Intune لعملاء Microsoft Defender لنقطة النهاية (معاينة)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |بالنسبة إلى أجهزة macOS التي يتم إدارتها من خلال Intune Microsoft Defender لنقطة النهاية (MDE) التي تم نشرها عليها
-|[أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في Microsoft 365 التوافق باستخدام JAMF Pro (معاينة)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | بالنسبة إلى أجهزة macOS التي يتم إدارتها من خلال JAMF Pro
-|[أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في حلول التوافق باستخدام JAMF Pro لعملاء Microsoft Defender لنقطة النهاية (معاينة)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|بالنسبة إلى أجهزة macOS التي يتم إدارتها من خلال PRO JAMF التي تم نشرها Microsoft Defender لنقطة النهاية (MDE) عليها
+|[إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام Intune](device-onboarding-offboarding-macos-intune.md)|لأجهزة macOS التي تتم إدارتها من خلال Intune
+|[إلحاق أجهزة macOS وإلحاقها في حلول التوافق باستخدام Intune لعملاء Microsoft Defender لنقطة النهاية](device-onboarding-offboarding-macos-intune-mde.md) |لأجهزة macOS التي تتم إدارتها من خلال Intune والتي تم توزيع Microsoft Defender لنقطة النهاية (MDE) إليها
+|[إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | لأجهزة macOS التي تتم إدارتها من خلال JAMF Pro
+|[إلحاق أجهزة macOS وإلحاقها بحلول التوافق باستخدام PRO JAMF لعملاء Microsoft Defender لنقطة النهاية](device-onboarding-offboarding-macos-jamfpro-mde.md)|لأجهزة macOS التي تتم إدارتها من خلال PRO JAMF والتي تم توزيع Microsoft Defender لنقطة النهاية (MDE) عليها
 
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
-- [استخدام منع فقدان البيانات في نقطة النهاية](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
+- [استخدام تفادي فقدان البيانات في نقطة النهاية](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
 - [مصفوفة الدعم لتلميحات نهج DLP عبر تطبيقات Microsoft](dlp-policy-tips-reference.md#support-matrix-for-dlp-policy-tips-across-microsoft-apps)

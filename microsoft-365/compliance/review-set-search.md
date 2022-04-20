@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية إنشاء استعلام وتشغيله في مجموعة مراجعة لتنظيم المحتوى لمراجعة أكثر كفاءة في حالة Microsoft Purview eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ead066428d5c2404da5bf863ad428784b3c3a30c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: aad8cd7461c795f8ecba03edab76e81e8384430d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936280"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64991919"
 ---
 # <a name="query-and-filter-content-in-a-review-set"></a>الاستعلام وتصفية المحتوى في مجموعة مراجعة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 في معظم الحالات، سيكون من المفيد التعمق في المحتوى في مجموعة المراجعة وتنظيمه لتسهيل مراجعة أكثر كفاءة. يساعدك استخدام عوامل التصفية والاستعلامات في مجموعة مراجعة على التركيز على مجموعة فرعية من المستندات التي تفي بمعايير المراجعة.
 

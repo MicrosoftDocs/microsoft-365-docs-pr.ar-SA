@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: تعرف على كيفية إعداد المسؤولين واستخدام موصل أصلي لاستيراد بيانات Twitter إلى Microsoft 365.
-ms.openlocfilehash: d025de04060184a6bd39fcef5ab68acdde65bc01
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 95a6a3abd9bed908172ea41b33e4fd60376bea01
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940544"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993502"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>إعداد موصل Microsoft أرشفة بيانات Twitter (معاينة)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصلا في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من Twitter إلى Microsoft 365. بعد إعداد الموصل وتكوينه، يتصل بحساب Twitter الخاص بمؤسستك (على أساس مجدول)، ويحول محتوى عنصر إلى تنسيق رسالة بريد إلكتروني، ثم يستورد هذه العناصر إلى علبة بريد في Microsoft 365.
 

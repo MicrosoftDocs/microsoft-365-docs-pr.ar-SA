@@ -18,14 +18,16 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية إدارة العناصر المفهرسة جزئيا (تسمى أيضا العناصر غير المفهرسة) من Exchange SharePoint OneDrive for Business داخل مؤسستك.
-ms.openlocfilehash: 8dd5235027a4563ad868d8ebe28c8dab50fb6376
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0cab31f56576cac9cbe7b51ea2cdceb49aff6db9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944756"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993107"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>التحقق من العناصر المفهرسة جزئيا في eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتضمن بحث eDiscovery الذي تقوم بتشغيله من مدخل توافق Microsoft Purview تلقائيا عناصر مفهرسة جزئيا في نتائج البحث المقدرة عند تشغيل عملية بحث. العناصر المفهرسة جزئيا هي Exchange عناصر علبة البريد والمستندات على SharePoint ومواقع OneDrive for Business التي لم تتم فهرستها بشكل كامل للبحث لسبب ما. تمت فهرسة معظم رسائل البريد الإلكتروني ومستندات الموقع بنجاح لأنها تقع ضمن [حدود الفهرسة لرسائل البريد الإلكتروني](limits-for-content-search.md#indexing-limits-for-email-messages). ومع ذلك، قد تتجاوز بعض العناصر حدود الفهرسة هذه، وسيتم فهرستها جزئيا. فيما يلي أسباب أخرى لعدم إمكانية فهرسة العناصر للبحث وإرجاعها كعناصر مفهرسة جزئيا عند تشغيل بحث eDiscovery:
   

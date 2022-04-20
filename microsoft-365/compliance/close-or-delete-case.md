@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على ما يحدث عند إغلاق التحقيق أو الدعوى القانونية المدعومة من قبل حالة Microsoft Purview eDiscovery (Premium) أو حذفها.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c3ea769fe6c1e01a14e6a552170da8421a03cf07
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 45bf34450b430d7d33316fe0e6c6a21d12be2937
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940412"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993239"
 ---
 # <a name="close-or-delete-an-ediscovery-premium-case"></a>إغلاق حالة eDiscovery (Premium) أو حذفها
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند اكتمال الدعوى القانونية أو التحقيق المدعوم من قبل حالة Microsoft Purview eDiscovery (Premium)، يمكنك إغلاق حالة أو حذفها. يمكنك أيضا إعادة فتح حالة مغلقة.
 

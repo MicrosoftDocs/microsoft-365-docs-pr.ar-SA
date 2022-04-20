@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: تكوين إعدادات Microsoft Purview eDiscovery (Premium) التي تنطبق على كل مجموعة المراجعة في حالة ما. يتضمن ذلك إعدادات التحليلات والتعرف البصري على الحروف.
-ms.openlocfilehash: f6cae054f111aa3aa4f8c7d4ab3c3323ce0498ff
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c5b542f224e35a6505dca9cbfacb5f1095fa2dbe
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949664"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64992293"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>تكوين إعدادات البحث والتحليلات في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك تكوين الإعدادات لكل حالة Microsoft Purview eDiscovery (Premium) للتحكم في الوظائف التالية.
 

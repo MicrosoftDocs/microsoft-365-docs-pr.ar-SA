@@ -1,5 +1,5 @@
 ---
-title: إلحاق أجهزة macOS وإلحاقها في حلول التوافق Microsoft 365 باستخدام PRO JAMF (معاينة)
+title: إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام JAMF Pro
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,32 +13,34 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: تعرف على كيفية إلحاق أجهزة macOS وإلحاقها بحلول التوافق Microsoft 365 باستخدام PRO JAMF (معاينة)
-ms.openlocfilehash: 44e57e482c08b486563200010671b5c79329f7b2
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: تعرف على كيفية إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام JAMF Pro
+ms.openlocfilehash: bf15868b865afa80146df2b16199caf360a55ce2
+ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783810"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64953416"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview"></a>إلحاق أجهزة macOS وإلحاقها في حلول التوافق Microsoft 365 باستخدام PRO JAMF (معاينة)
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام JAMF Pro
 
-يمكنك استخدام PRO JAMF لإلحاق أجهزة macOS في حلول التوافق Microsoft 365 مثل منع فقدان بيانات نقطة النهاية.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+يمكنك استخدام PRO JAMF لإلحاق أجهزة macOS في حلول Microsoft Purview مثل منع فقدان بيانات نقطة النهاية.
 
 > [!IMPORTANT]
 > استخدم هذا الإجراء إذا ***لم يكن*** لديك Microsoft Defender لنقطة النهاية (MDE) منشورة على أجهزة macOS
 
 **ينطبق على:**
 
-- [Microsoft 365 منع فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
-- [إدارة المخاطر الداخلية](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [منع فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
+- [إدارة المخاطر الداخلية](insider-risk-management.md)
 
 ## <a name="before-you-begin"></a>قبل البدء
 
 - تأكد من [إدارة أجهزة macOS من خلال JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) ومقترنة بهوية (انضم Azure AD إلى UPN) من خلال JAMF الاتصال أو Intune.
 - تثبيت مستعرض v95+ Edge على أجهزة macOS
 
-## <a name="onboard-devices-into-microsoft-365-compliance-solutions-using-jamf-pro"></a>إلحاق الأجهزة بحلول التوافق Microsoft 365 باستخدام PRO JAMF
+## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>إلحاق الأجهزة في حلول Microsoft Purview باستخدام JAMF Pro
 
 1. ستحتاج إلى هذه الملفات لهذا الإجراء.
 
@@ -80,7 +82,7 @@ ms.locfileid: "64783810"
 ### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>إنشاء ملف تعريف تكوين Pro JAMF لحزمة الإلحاق
 
 1. إنشاء ملف تعريف تكوين جديد في PRO JAMF. راجع [دليل مسؤولي PRO JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). استخدم هذه القيم:
-    - اسم: `MDATP onboarding for macOS`
+    - الاسم: `MDATP onboarding for macOS`
     - وصف: `MDATP EDR onboarding for macOS`
     - الفئه: `none`
     - طريقة التوزيع: `install automatically`
@@ -105,7 +107,7 @@ ms.locfileid: "64783810"
 > يجب استخدام ***com.microsoft.wdav** _ كقيمة مجال التفضيل. يستخدم Microsoft Defender لنقطة النهاية هذا الاسم و_ *_com.microsoft.wdav.ext_** لتحميل إعداداته المدارة.
 
 1. إنشاء ملف تعريف تكوين جديد في PRO JAMF. راجع [دليل مسؤولي PRO JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). استخدم هذه القيم:
-    - اسم: `MDATP MDAV configuration settings`
+    - الاسم: `MDATP MDAV configuration settings`
     - الوصف: اترك هذا فارغا
     - الفئه: `none`
     - طريقة التوزيع: `install automatically`
@@ -133,7 +135,7 @@ ms.locfileid: "64783810"
 ### <a name="create-and-deploy-a-configuration-profile-for-microsoft-autoupdate-mau"></a>إنشاء ملف تعريف تكوين ونشره ل Microsoft AutoUpdate (MAU)
 
 1. إنشاء ملف تكوين PRO JAMF باستخدام **com.microsoft.autoupdate2.plist**. راجع [دليل مسؤولي PRO JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). استخدم هذه القيم:
-    - اسم: `MDATP MDAV MAU settings`
+    - الاسم: `MDATP MDAV MAU settings`
     - وصف: `Microsoft AutoUPdate settings for MDATP for macOS`
     - الفئه: `none`
     - طريقة التوزيع: `install automatically`
@@ -164,7 +166,7 @@ ms.locfileid: "64783810"
 ### <a name="create-and-deploy-a-configuration-profile-for-system-extensions"></a>إنشاء ملف تعريف تكوين ونشره لملحقات النظام
 
 1. إنشاء ملف تكوين Pro JAMF باستخدام الإجراءات في [دليل مسؤولي PRO JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). استخدم هذه القيم:
-    - اسم: `MDATP MDAV System Extensions`
+    - الاسم: `MDATP MDAV System Extensions`
     - وصف: `MDATP system extensions`
     - الفئه: `none`
     - طريقة التوزيع: `install automatically`

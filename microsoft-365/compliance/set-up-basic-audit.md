@@ -20,14 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: تصف هذه المقالة كيفية إعداد التدقيق (قياسي) حتى تتمكن من البدء في البحث عن أنشطة التدقيق التي يقوم بها المستخدمون والمسؤولين في مؤسستك.
-ms.openlocfilehash: 93245abfc4f57b22d6db715103f93428487a648d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 15e72d1b2899799f432cdc717352cf53a0a370e4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936038"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64993721"
 ---
 # <a name="set-up-microsoft-purview-audit-standard"></a>إعداد تدقيق Microsoft Purview (قياسي)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتيح لك تدقيق Microsoft Purview (قياسي) في Microsoft 365 البحث عن سجلات التدقيق بحثا عن الأنشطة التي يتم تنفيذها في خدمات Microsoft 365 المختلفة من قبل المستخدمين والمسؤولين. نظرا لتمكين التدقيق (القياسي) بشكل افتراضي لمعظم المؤسسات Microsoft 365 والمؤسسات Office 365، هناك بعض الأشياء التي تحتاج إلى القيام بها قبل أن تتمكن أنت والآخرون في مؤسستك من البحث في سجل التدقيق.
 
