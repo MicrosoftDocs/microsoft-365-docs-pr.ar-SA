@@ -16,16 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم تنسيق الحالة الجديد في eDiscovery (Premium) حتى تتمكن من إضافة المزيد من العناصر لمراجعة المجموعات والاستفادة من الحدود المتزايدة الأخرى والوظائف الجديدة.
-ms.openlocfilehash: 6c3e9f86cac5424ae9d9610a9c715c2f86563f64
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 55a5fdc2493fe046ebb8952fcbcb382750f511a5
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993546"
+ms.locfileid: "64973410"
 ---
 # <a name="use-the-new-case-format-in-ediscovery-premium"></a>استخدام تنسيق الحالة الجديد في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تستخدم المزيد من المؤسسات حل eDiscovery (Premium) في Microsoft Purview لعمليات eDiscovery الهامة. ويشمل ذلك الاستجابة للطلبات التنظيمية والتحقيقات والتقاضي. مع زيادة استخدام eDiscovery (Premium)، فإن أحد متطلبات العميل الشائعة هو توسيع إجمالي كمية المحتوى التي يمكن إدارتها في حالة eDiscovery واحدة (Premium). للمساعدة في استيعاب الزيادات الكبيرة في حجم الحالة، لكل من إجمالي حجم البيانات والعدد الإجمالي للعناصر، يمكنك الآن اختيار تنسيق الحالة الجديدة عند إنشاء حالة eDiscovery (Premium).  
 

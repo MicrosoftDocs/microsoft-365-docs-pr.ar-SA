@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: حدد لوائح خصوصية البيانات والسيناريوهات ذات الصلة واستعدادك وأنواع المعلومات الحساسة الموجودة في بيئة Microsoft 365 الخاصة بك.
-ms.openlocfilehash: 967c64dee2d99f41b3c2a1b6a193730dcd75811a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e2d87599315e7bb43b289d74b5f192b29aecd965
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947506"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973463"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>تقييم مخاطر خصوصية البيانات وتحديد العناصر الحساسة باستخدام Microsoft 365
 
@@ -190,7 +190,7 @@ ms.locfileid: "64947506"
 
 تتضمن هذه الخطوة تحديد أنواع معلومات حساسة معينة تخضع لضوابط تنظيمية محددة، بالإضافة إلى حدوثها في بيئة Microsoft 365 الخاصة بك.
 
-يمكن أن يكون البحث عن محتوى في بيئتك يحتوي على شخصية مهمة هائلة، والتي تتضمن في السابق مزيجا من استخدام البحث عن التوافق وeDiscovery Advanced eDiscovery وDLP والتدقيق.
+يمكن أن يكون البحث عن محتوى في بيئتك يحتوي على شخصية مهمة هائلة، والتي تتضمن في السابق مزيجا من استخدام Compliance Search وeDiscovery وeDiscovery (Premium) وDLP والتدقيق.
 
 باستخدام حل **تصنيف البيانات** الجديد في مدخل توافق Microsoft Purview، أصبح هذا أسهل بكثير مع قدرة [مستكشف المحتوى](../compliance/data-classification-content-explorer.md) ، التي تعمل مع أنواع المعلومات الحساسة المضمنة أو المخصصة، بما في ذلك تلك المتعلقة بالبيانات الشخصية.
 

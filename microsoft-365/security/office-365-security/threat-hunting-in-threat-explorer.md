@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bcbacc886c57257e5c4b067b278c7736ae403390
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d8515ce2bccb90478f11fa4a1813c7cb4ab7fb7d
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945506"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973828"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>تتبع التهديدات في مستكشف المخاطر Microsoft Defender لـ Office 365
 
@@ -35,7 +35,6 @@ ms.locfileid: "64945506"
 
 > [!NOTE]
 > هذا جزء من سلسلة من **3 مقالات** حول **مستكشف التهديدات (Explorer)** **وأمان البريد الإلكتروني** **واكتشافات المستكشف في الوقت الحقيقي** (مثل الاختلافات بين الأدوات والأذونات اللازمة لتشغيلها). المقالتان الآخرتان في هذه السلسلة هما [أمان البريد الإلكتروني باستخدام مستكشف التهديدات](email-security-in-microsoft-defender.md) [ومستكشف التهديدات والكشف في الوقت الحقيقي](real-time-detections.md).
-
 
 **ينطبق على**
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
@@ -69,7 +68,6 @@ ms.locfileid: "64945506"
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/sender-drop-down.png" alt-text="الزر &quot;المرسل&quot; في مستكشف التهديدات" lightbox="../../media/sender-drop-down.png":::
-
 
 يمكن التفكير في تحسين التركيز في المستكشف أو الكشف في الوقت الحقيقي في الطبقات. الأول هو **View**. ويمكن اعتبار الثانية *تركيزا تمت تصفيته*. على سبيل المثال، يمكنك سحب الخطوات التي اتخذتها للعثور على تهديد عن طريق تسجيل قراراتك مثل هذا: للعثور على المشكلة في Explorer، **اخترت طريقة عرض البرامج الضارة مع تركيز عامل تصفية المستلم**. وهذا يجعل سحب خطواتك أسهل.
 

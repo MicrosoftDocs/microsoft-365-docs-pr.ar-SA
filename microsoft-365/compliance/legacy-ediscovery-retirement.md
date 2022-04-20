@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: سيتم إيقاف In-Place eDiscovery و In-Place e Hold (وPowerShell cmdlets المقابلة) في Exchange Online في النصف الأول من عام 2020. يتم أيضا إيقاف Search-Mailbox cmdlet وMicrosoft Purview eDiscovery (Premium) الإصدار 1.0 خلال نفس الفترة الزمنية.
-ms.openlocfilehash: 228827ec405165bf8308d89fba350eb2192f6723
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0a5a5c5a22aefbb0ad5abe6846915e1da653ee6b
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936588"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973256"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>تقاعد أدوات eDiscovery القديمة
 
@@ -102,7 +102,7 @@ ms.locfileid: "64936588"
 <tr class="odd">
 <td>البحث والتصدير باستمرار لأغراض قانونية</td>
 <td>حالات eDiscovery (قياسي) في مدخل التوافق </td>
-<td><p>يوفر استخدام قدرات حالات eDiscovery الأساسية التماثل الوظيفي In-Place eDiscovery و In-Place e Holds. يتضمن ذلك ما يلي:</p>
+<td><p>يوفر استخدام قدرات حالات eDiscovery (Standard) التماثل الوظيفي In-Place eDiscovery وeDiscovery In-Place Holds. يتضمن ذلك ما يلي:</p>
 <ul>
 <li>
 <p>توسيع نطاق البحث لملايين المواقع</p>
@@ -208,9 +208,9 @@ ms.locfileid: "64936588"
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancecase"><span class="underline">*-ComplianceCase</span></a></p>
 <p> </p></td>
-<td><p>تعمل cmdlets ComplianceSearch و ComplianceSearchAction معا لمساعدتك في البحث عن المحتوى وتصديره. يمكنك إنشاء بحث جديد وعرض تقدير البحث باستخدام أوامر cmdlets <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> . ثم يمكنك استخدام <strong>New-ComplianceSearchAction</strong> cmdlet لتصدير نتائج البحث. سيظل عليك استخدام أداة eDiscovery الأساسية في مدخل التوافق لتنزيل نتائج البحث هذه إلى الكمبيوتر المحلي.</p>
+<td><p>تعمل cmdlets ComplianceSearch و ComplianceSearchAction معا لمساعدتك في البحث عن المحتوى وتصديره. يمكنك إنشاء بحث جديد وعرض تقدير البحث باستخدام أوامر cmdlets <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> . ثم يمكنك استخدام <strong>New-ComplianceSearchAction</strong> cmdlet لتصدير نتائج البحث. ستظل بحاجة إلى استخدام أداة eDiscovery (Standard) في مدخل التوافق لتنزيل نتائج البحث هذه إلى الكمبيوتر المحلي.</p>
 <p>
-<p><strong>ملاحظه:</strong> إذا كنت تستخدم أوامر cmdlet لإنشاء عمليات بحث غير مقترنة بحالة eDiscovery أساسية، فسيتم وضع عمليات البحث هذه على صفحة <strong>البحث في المحتوى</strong> في مدخل التوافق.</p></td>
+<p><strong>ملاحظه:</strong> إذا كنت تستخدم أوامر cmdlet لإنشاء عمليات بحث غير مقترنة بحالة eDiscovery (قياسي)، فسيتم وضع عمليات البحث هذه على صفحة <strong>البحث في المحتوى</strong> في مدخل التوافق.</p></td>
 </tr>
 <tr class="even">
 <td>الاحتفاظ بالمحتوى في علبة بريد</td>
@@ -286,7 +286,7 @@ ms.locfileid: "64936588"
 <td><p><a href="/powershell/module/exchange/get-compliancesearch"><span class="underline">*-ComplianceSearch</span></a></p>
 <p><a href="/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-ComplianceSearchAction</span></a></p>
 <p></a></p></td>
-<td><p>تعمل cmdlets ComplianceSearch و ComplianceSearchAction معا لمساعدتك في البحث عن المحتوى وتصديره. يمكنك إنشاء بحث جديد وعرض تقدير البحث باستخدام أوامر cmdlets <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> . ثم يمكنك استخدام الأمر <strong>New-ComplianceSearchAction -Export</strong> لتصدير نتائج البحث. سيظل عليك استخدام أداة eDiscovery الأساسية في مدخل التوافق لتنزيل نتائج البحث هذه إلى الكمبيوتر المحلي.</p></p>
+<td><p>تعمل cmdlets ComplianceSearch و ComplianceSearchAction معا لمساعدتك في البحث عن المحتوى وتصديره. يمكنك إنشاء بحث جديد وعرض تقدير البحث باستخدام أوامر cmdlets <strong>New-</strong>, <strong>Get-</strong>, and <strong>Start-ComplianceSearch</strong> . ثم يمكنك استخدام الأمر <strong>New-ComplianceSearchAction -Export</strong> لتصدير نتائج البحث. ستظل بحاجة إلى استخدام أداة eDiscovery (Standard) في مدخل التوافق لتنزيل نتائج البحث هذه إلى الكمبيوتر المحلي.</p></p>
 </td>
 </tr>
 <tr class="even">
@@ -342,7 +342,7 @@ ms.locfileid: "64936588"
 
 ## <a name="ediscovery-premium-v10"></a>eDiscovery (Premium) الإصدار 1.0
 
-eDiscovery (Premium) v1.0, which is the version of eDiscovery (Premium) available in a core eDiscovery case by clicking **Switch to eDiscovery (Premium)**, is being retired. تم استبدال وظائفه بحل [eDiscovery الجديد (Premium)](./ediscovery.md) في مدخل التوافق.
+يتم إيقاف eDiscovery (Premium) الإصدار 1.0، وهو إصدار eDiscovery (Premium) المتوفر في حالة eDiscovery (قياسي) بالنقر فوق **التبديل إلى eDiscovery (Premium).** تم استبدال وظائفه بحل [eDiscovery الجديد (Premium)](./ediscovery.md) في مدخل التوافق.
 
 لتحديد ما إذا كانت مؤسستك تستخدم eDiscovery (Premium) الإصدار 1.0:
 

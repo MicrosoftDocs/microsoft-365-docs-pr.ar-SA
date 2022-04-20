@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: استخدم أداة eDiscovery للبحث في المحتوى في مركز التوافق للبحث عن المحتوى في خدمات Microsoft 365 مختلفة.
-ms.openlocfilehash: 374a9ce119c0e4563c14ae4eda15ce562dc8643d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f5d8a398f36c1ab3c0f83234718346e8dd20434e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938368"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994491"
 ---
 # <a name="create-a-content-search"></a>إنشاء بحث في المحتوى
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك استخدام أداة البحث في المحتوى eDiscovery في مدخل توافق Microsoft Purview للبحث عن محتوى موضعي مثل البريد الإلكتروني والمستندات ومحادثات المراسلة الفورية في مؤسستك. استخدم هذه الأداة للبحث عن المحتوى في مصادر البيانات Microsoft 365 المستندة إلى السحابة هذه:
   

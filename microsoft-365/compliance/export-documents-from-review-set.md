@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية تحديد المحتوى وتصديره من مجموعة مراجعة eDiscovery (Premium) للعروض التقديمية أو المراجعات الخارجية.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f0366843cab17092f3690992aa0cff5205414f86
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3335c0bf15a57da7b3857b8503c6aaaeca2f303a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948716"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995395"
 ---
 # <a name="export-documents-from-a-review-set-in-ediscovery-premium"></a>تصدير المستندات من مجموعة مراجعة في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يسمح التصدير للمستخدمين بتخصيص المحتوى المضمن في حزمة التنزيل عند تصدير مستند من مجموعة مراجعة في eDiscovery (Premium).
 

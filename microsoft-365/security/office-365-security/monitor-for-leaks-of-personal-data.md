@@ -19,17 +19,16 @@ search.appverid:
 description: تعرف على ثلاث أدوات يمكنك استخدامها لمراقبة تسرب البيانات الشخصية.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b16e96e85d6ee154912535ecf0bac4ac5ba6fac
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 13b8aa5699c3d4031a364ceaf62b70e6b7236fda
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947748"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972970"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>مراقبة تسرب البيانات الشخصية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 هناك العديد من الأدوات التي يمكن استخدامها لمراقبة استخدام البيانات الشخصية ونقلها. يصف هذا الموضوع ثلاث أدوات تعمل بشكل جيد.
 

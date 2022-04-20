@@ -1,5 +1,5 @@
 ---
-title: تكوين Microsoft 365 EDiscovery متعددة الجغرافيا
+title: تكوين eDiscovery متعدد المواقع الجغرافية لـ Microsoft 365
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -12,32 +12,32 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
-description: تعرف على كيفية استخدام المعلمة Region لتكوين eDiscovery للاستخدام في مواقع الأقمار الصناعية في Microsoft 365 Multi-Geo.
-ms.openlocfilehash: b0366470984abbdc0ed0b3e407ca8ef6b5a5743f
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: تعرف على كيفية استخدام معلمة المنطقة لتكوين eDiscovery للاستخدام في مواقع الأقمار الصناعية في Microsoft 365 Multi-Geo.
+ms.openlocfilehash: 6160087006e77de085f6a28614b95d1136890fd3
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63576905"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973278"
 ---
-# <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 eDiscovery متعدد الجغرافيا
+# <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 تكوين eDiscovery متعدد المناطق الجغرافية
 
-[Advanced eDiscovery](../compliance/overview-ediscovery-20.md) هذه الإمكانات مسؤول eDiscovery متعدد الجغرافيا للبحث في كل الجغرافيا دون الحاجة إلى استخدام عامل تصفية أمان "المنطقة". يتم تصدير البيانات إلى مثيل Azure للموقع المركزي للمستأجر الجغرافي المتعدد. يحدث الأمر نفسه عند تطبيق احتجاز على شخص غير مطبق، ومع ذلك، لن تظهر إحصائيات الاحتجاز داخل الاحتجاز بدون عامل تصفية الأمان "المنطقة". لا تعني إحصائيات الاستمرار التي تظهر 0 فشل الاستمرار طالما أن حالة الانتظار تظهر على (ناجحة).
+تسمح [قدرات eDiscovery (Premium)](../compliance/overview-ediscovery-20.md) لمسؤول eDiscovery متعدد المناطق الجغرافية بالبحث في جميع المناطق الجغرافية دون الحاجة إلى استخدام عامل تصفية أمان "المنطقة". يتم تصدير البيانات إلى مثيل Azure للموقع المركزي للمستأجر متعدد المناطق الجغرافية. يحدث الشيء نفسه مع تطبيق الاحتجاز على الوصي، ومع ذلك، فإن إحصائيات الاحتجاز داخل قائمة الاحتجاز لن تظهر دون عامل تصفية الأمان "المنطقة". لا تعني إحصائيات الاحتجاز التي تظهر 0 فشل قائمة الاحتجاز طالما أن حالة الاحتجاز تظهر قيد التشغيل (ناجح).
 
-بدون قدرات eDiscovery المتقدمة، سيكون مدير eDiscovery أو مسؤول مستأجر متعدد الجغرافيا قادرا على إدارة eDiscovery فقط في الموقع المركزي لذلك المستأجر. لدعم القدرة على إدارة eDiscovery لمواقع الأقمار الصناعية، تتوفر معلمة جديدة لتصفية أمان التوافق تسمى "المنطقة" عبر PowerShell. يمكن استخدام هذه المعلمة من قبل المستأجرين الذين يوجد موقعهم المركزي في أمريكا الشمالية أو أوروبا أو آسيا والمحيط الهادئ. Advanced eDiscovery للمستأجرين الذين لا يوجد موقعهم المركزي في أمريكا الشمالية أو أوروبا أو آسيا والمحيط الهادئ والذين يحتاجون إلى تنفيذ eDiscovery عبر مواقع الأقمار الصناعية الجغرافية. 
+بدون قدرات eDiscovery (Premium)، سيتمكن مدير eDiscovery أو مسؤول مستأجر متعدد المناطق الجغرافية من إجراء eDiscovery فقط في الموقع المركزي لذلك المستأجر. لدعم القدرة على إجراء eDiscovery لمواقع الأقمار الصناعية، تتوفر معلمة عامل تصفية أمان امتثال جديدة تسمى "المنطقة" عبر PowerShell. يمكن استخدام هذه المعلمة من قبل المستأجرين الذين يوجد موقعهم المركزي في أمريكا الشمالية أو أوروبا أو آسيا والمحيط الهادئ. يوصى باستخدام eDiscovery (Premium) للمستأجرين الذين لا يوجد موقعهم المركزي في أمريكا الشمالية أو أوروبا أو آسيا والمحيط الهادئ ويحتاجون إلى تنفيذ eDiscovery عبر المواقع الجغرافية للأقمار الصناعية. 
 
-يجب على المسؤول العام ل Microsoft 365 تعيين أذونات eDiscovery Manager للسماح للآخرين بتنفيذ eDiscovery وتعيين معلمة "المنطقة" في عامل تصفية أمان التوافق المعمول به لتحديد المنطقة الخاصة بإجراء eDiscovery كمواقف أقمار صناعية، وإلا، لن يتم تنفيذ eDiscovery لموقع القمر الصناعي. يتم دعم عامل تصفية أمان "المنطقة" واحد فقط لكل مستخدم، لذا يجب أن تكون كل المناطق داخل عامل تصفية الأمان نفسه.
+يجب على المسؤول العام Microsoft 365 تعيين أذونات eDiscovery Manager للسماح للآخرين بتنفيذ eDiscovery وتعيين معلمة "Region" في عامل تصفية أمان التوافق المعمول به لتحديد المنطقة لإجراء eDiscovery كموقع قمر صناعي، وإلا فلن يتم تنفيذ eDiscovery لموقع القمر الصناعي. يتم دعم عامل تصفية أمان "المنطقة" واحد فقط لكل مستخدم، لذلك يجب أن تكون جميع المناطق داخل نفس عامل تصفية الأمان.
 
-عند تعيين دور eDiscovery Manager أو المسؤول لموقع قمر صناعي معين، لن يتمكن مدير eDiscovery أو المسؤول إلا من تنفيذ إجراءات البحث في eDiscovery مقابل مواقع SharePoint ومواقع OneDrive الموجودة في موقع القمر الصناعي هذا. إذا حاول مدير eDiscovery أو المسؤول البحث SharePoint مواقع OneDrive خارج موقع القمر الصناعي المحدد، لن يتم إرجاع أي نتائج. أيضا، عندما يقوم eDiscovery Manager أو مسؤول موقع القمر الصناعي بتشغيل عملية تصدير، يتم تصدير البيانات إلى مثيل Azure لهذه المنطقة. يساعد ذلك المؤسسات على البقاء في حالة التوافق من خلال عدم السماح بتصدير المحتوى عبر الحدود الخاضعة للرقابة.
+عند تعيين دور eDiscovery Manager أو Administrator لموقع قمر صناعي معين، سيتمكن مدير eDiscovery أو المسؤول فقط من تنفيذ إجراءات البحث eDiscovery مقابل مواقع SharePoint ومواقع OneDrive الموجودة في موقع الأقمار الصناعية هذا. إذا حاول مدير eDiscovery أو مسؤول البحث في مواقع SharePoint أو OneDrive خارج موقع الأقمار الصناعية المحدد، فلن يتم إرجاع أي نتائج. أيضا، عندما يقوم مدير eDiscovery أو المسؤول لموقع قمر صناعي بتشغيل تصدير، يتم تصدير البيانات إلى مثيل Azure لتلك المنطقة. يساعد هذا المؤسسات على البقاء في حالة امتثال من خلال عدم السماح بتصدير المحتوى عبر الحدود الخاضعة للرقابة.
 
 > [!NOTE]
-> إذا كان من الضروري أن يقوم eDiscovery Manager بالبحث عبر مواقع أقمار SharePoint، يجب إنشاء حساب مستخدم آخر لمدير eDiscovery الذي يحدد موقع القمر الصناعي البديل حيث تقع مواقع OneDrive أو SharePoint.
+> إذا كان من الضروري أن يبحث مدير eDiscovery عبر مواقع أقمار صناعية متعددة SharePoint، فسيلزم إنشاء حساب مستخدم آخر ل eDiscovery Manager الذي يحدد موقع الأقمار الصناعية البديل حيث توجد مواقع OneDrive أو SharePoint.
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-لتعيين عامل تصفية أمان التوافق للمنطقة:
+لتعيين عامل تصفية أمان التوافق لمنطقة:
 
-1. [الاتصال Microsoft 365 أمان & مركز التوافق PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [الاتصال إلى Microsoft 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. استخدم بناء الجملة التالي:
 
@@ -51,4 +51,4 @@ ms.locfileid: "63576905"
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-راجع [مقالة New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) لمزيد من المعلمات بناء الجملة.
+راجع [مقالة New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) للحصول على معلمات بناء جملة إضافية.

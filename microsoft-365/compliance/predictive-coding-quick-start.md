@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: تعرف على كيفية البدء باستخدام وحدة الترميز التنبؤية في eDiscovery (Premium). ترشدك هذه المقالة خلال العملية الشاملة لاستخدام الترميز التنبؤي لتحديد المحتوى في مجموعة المراجعة الأكثر صلة بالتحقيق الخاص بك.
-ms.openlocfilehash: 449ef5446ee5a4da87081774037c9b5e2a8d440d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dc4edcb6affa7ccfd6a915839ef84b0d453fcfca
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942304"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996141"
 ---
 # <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>بداية سريعة: الترميز التنبؤي في eDiscovery (Premium) (معاينة)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تقدم هذه المقالة بداية سريعة لاستخدام الترميز التنبؤي في Microsoft Purview eDiscovery (Premium). تستخدم وحدة الترميز التنبؤية قدرات ذكية للتعلم الآلي لمساعدتك في اكتشاف كميات كبيرة من محتوى الحالة غير ذي صلة بالتحقيق الخاص بك. يتم تحقيق ذلك من خلال إنشاء نماذج الترميز التنبؤية الخاصة بك وتدريبها التي تساعدك على تحديد أولويات العناصر الأكثر صلة للمراجعة.
 

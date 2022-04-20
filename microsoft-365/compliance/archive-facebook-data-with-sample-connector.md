@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: تعرف على كيفية إعداد & استخدام موصل في مدخل توافق Microsoft Purview لاستيراد بيانات أرشفة & من صفحات Facebook Business إلى Microsoft 365.
-ms.openlocfilehash: 6db2bd474cd2920b4b067563377bbe85084aeeaf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 58d1f0efd26d892a4bf206c71dc5ee55c653abfb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947220"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994931"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>إعداد موصل أرشفة بيانات Facebook (معاينة)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصلا في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من صفحات Facebook Business إلى Microsoft 365. بعد إعداد الموصل وتكوينه، يتصل بصفحة Facebook Business (على أساس مجدول)، ويحول محتوى عناصر Facebook إلى تنسيق رسالة بريد إلكتروني، ثم يستورد هذه العناصر إلى علبة بريد في Microsoft 365.
 

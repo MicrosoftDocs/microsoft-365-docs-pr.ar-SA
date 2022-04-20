@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: إضافة تنبيهات النشاط وإدارتها في مدخل توافق Microsoft Purview بحيث يرسل لك Microsoft 365 إعلامات بالبريد الإلكتروني عندما يقوم المستخدمون بأنشطة معينة
-ms.openlocfilehash: 7826a09bff1dd17febc3f621b50ed32129e21a37
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 43991eaf0f80957b0d72a2f16a2021f24194f2d6
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946474"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995019"
 ---
 # <a name="create-activity-alerts"></a>إنشاء تنبيهات النشاط
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك إنشاء تنبيه نشاط سيرسل إليك إعلاما بالبريد الإلكتروني عندما يقوم المستخدمون بأنشطة معينة في Office 365. تشبه تنبيهات النشاط البحث عن الأحداث في سجل التدقيق، باستثناء أنه سيتم إرسال رسالة بريد إلكتروني إليك عند حدوث حدث لنشاط أنشأت تنبيها له.
 

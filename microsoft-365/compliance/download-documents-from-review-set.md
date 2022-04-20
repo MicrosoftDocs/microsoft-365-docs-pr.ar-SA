@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية تحديد المحتوى وتنزيله من مجموعة مراجعة في eDiscovery (Premium) للعروض التقديمية أو المراجعات الخارجية.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 112b9d976d1e2bd2e9a956718184654f046357d1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 32d05b8fa39700971b4c39a1a39963d8b49e18b8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949972"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994469"
 ---
 # <a name="download-selected-documents-from-a-review-set"></a>تنزيل المستندات المحددة من مجموعة مراجعة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يوفر التنزيل طريقة بسيطة لتنزيل المحتوى من مجموعة مراجعة بتنسيق أصلي. تستخدم أداة التنزيل في eDiscovery (Premium) ميزات نقل البيانات في المستعرض. ستظهر مطالبة مستعرض عندما يكون التنزيل جاهزا. يتم الضغط على الملفات التي تم تنزيلها باستخدام هذا الأسلوب في ملف حاوية وستحتوي على ملفات على مستوى العنصر. وهذا يعني أنه إذا قمت بتحديد تنزيل مرفق، فستتلقى رسالة البريد الإلكتروني مع تضمين المرفق. وبالمثل، إذا قمت بتصدير جدول بيانات Excel مضمن في مستند Word، يتم تضمين مستند Word وجداول بيانات Excel المضمنة في التنزيل. عند تنزيل العناصر، يتم الاحتفاظ بخاصية "البيانات المعدلة الأخيرة" ويمكن عرضها كخاصية ملف.
 

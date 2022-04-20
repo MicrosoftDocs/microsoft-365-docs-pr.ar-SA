@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: استخدم سير عمل الاتصالات في eDiscovery (Premium) لتعقب حالة إعلامات الاحتجاز القانوني وتحديثها وإعادة إرسالها إذا لزم الأمر.
-ms.openlocfilehash: 3e0ab93b469d2ae80d9416137425b7f2876442c1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 83e5331aaea59893f06cfa0629d627e500cfe1b1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946122"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996163"
 ---
 # <a name="manage-hold-notifications"></a>إدارة إعلامات الانتظار
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بعد بدء سير عمل إعلام الاحتجاز القانوني، يمكنك استخدام سير عمل الاتصالات في Microsoft Purview eDiscovery (Premium) لتعقب حالة اتصالاتك. تحتوي علامة التبويب Communications على قائمة بكافة الإعلامات داخل حالة eDiscovery (Premium). يمكنك الاطلاع على تفاصيل مثل عدد أمناء الحفظ الذين تم تعيينهم أو الذين أقروا بالإشعار.
 

@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: تعرف على كيفية إعداد موصل واستخدامه في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من Cisco Jabber على PostgreSQL إلى Microsoft 365.
-ms.openlocfilehash: 42c0af8274a29a162af7dc0023ce57e78ef7704f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2e573bcc6c39e9188ec09f05190c124bd904ef98
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946693"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996317"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-postgresql-data"></a>إعداد موصل أرشفة Cisco Jabber على بيانات PostgreSQL
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من النظام الأساسي Cisco Jabber إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر Veritas [Cisco Jabber على موصل PostgreSQL](https://www.veritas.com/insights/merge1/jabber) الذي تم تكوينه لالتقاط العناصر من مصدر بيانات الجهات الخارجية (بشكل منتظم) واستيراد هذه العناصر إلى Microsoft 365. يحول الموصل المحتوى مثل الرسائل والدردشات والمحتوى المشترك من Cisco Jabber على PostgreSQL إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
 

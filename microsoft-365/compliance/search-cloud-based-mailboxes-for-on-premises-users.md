@@ -18,14 +18,16 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: يمكن للمسؤولين استخدام أدوات eDiscovery في Microsoft 365 للبحث عن بيانات الدردشة Teams وتصديرها للمستخدمين المحليين في توزيع مختلط Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b77a5178237e7ae25f710c8cc9574449f67a4f2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e1f15922e84a68538e20ccb3ad0030bd5c2bd5f1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945858"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995349"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>البحث عن Teams الدردشة للمستخدمين في الموقع
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 إذا كان لدى مؤسستك توزيع مختلط Exchange (أو تقوم مؤسستك بمزامنة مؤسسة Exchange محلية مع Office 365) وتمكين Microsoft Teams، يمكن للمستخدمين المحليين استخدام تطبيق الدردشة Teams للمراسلة الفورية. بالنسبة للمستخدم المستند إلى السحابة، يتم حفظ بيانات Teams الدردشة (تسمى أيضا *دردشات 1x1 أو 1xN*) في علبة البريد الأساسية المستندة إلى السحابة. عندما يستخدم مستخدم محلي تطبيق الدردشة Teams، لا يمكن تخزين رسائل الدردشة الخاصة به في علبة البريد الأساسية، الموجودة محليا. للتغلب على هذا القيد، أصدرت Microsoft ميزة جديدة حيث يتم إنشاء منطقة تخزين مستندة إلى السحابة بحيث يمكنك استخدام أدوات eDiscovery للبحث عن بيانات الدردشة Teams وتصديرها للمستخدمين المحليين.
   

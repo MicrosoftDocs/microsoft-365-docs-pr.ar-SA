@@ -18,14 +18,16 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: في هذه المقالة، ستتعلم كيفية تصدير سجلات سجل التدقيق وتكوينها وعرضها Microsoft 365.
-ms.openlocfilehash: ed9844ac7a5b7dc62b4d0ba8eb7311f76d28aace
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9403ead4c7fd6bd27bcc3848d367749e00beed3c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948738"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994381"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>تصدير سجلات سجل التدقيق وتكوينها وعرضها
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بعد البحث في سجل التدقيق وتنزيل نتائج البحث إلى ملف CSV، يحتوي الملف على عمود يسمى **AuditData**، والذي يحتوي على معلومات إضافية حول كل حدث. يتم تنسيق البيانات الموجودة في هذا العمود ككائن JSON، والذي يحتوي على خصائص متعددة تم تكوينها *كأزواج خصائص:قيم* مفصولة بفواصل. يمكنك استخدام ميزة تحويل JSON في محرر Power Query في Excel لتقسيم كل خاصية في كائن JSON في عمود **AuditData** إلى أعمدة متعددة بحيث يكون لكل خاصية عمودها الخاص. يتيح لك ذلك الفرز والتصفية على واحدة أو أكثر من هذه الخصائص، والتي يمكن أن تساعدك على تحديد موقع بيانات التدقيق المحددة التي تبحث عنها بسرعة.
 

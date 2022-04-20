@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم أداة الاستيراد المجمع لإضافة العديد من أمناء الحفظ ومصادر البيانات المرتبطة بهم بسرعة إلى حالة في Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: 7913c8674dc5560539196f34e323f05955a6850e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a6ad413c65b3b8afaa0cbf10df1a595730914405
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950346"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994501"
 ---
 # <a name="import-custodians-to-an-ediscovery-premium-case"></a>استيراد أمناء حفظ إلى حالة eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بالنسبة لحالات Microsoft Purview eDiscovery (Premium) التي تتضمن العديد من أمناء الحفظ، يمكنك استيراد العديد من أمناء الحفظ في وقت واحد باستخدام ملف CSV الذي يحتوي على المعلومات اللازمة لإضافتهم إلى حالة ما. ستتحقق أداة أمناء الاستيراد أيضا من صحة ملف CSV قبل إنشاء مهمة الاستيراد. وهذا يعني أنه يمكنك إصلاح أي أخطاء في ملف CSV بدلا من الانتظار حتى تكتمل مهمة الاستيراد قبل تعلم أن هناك أخطاء تمنع إضافة الوصي إلى الحالة.
 

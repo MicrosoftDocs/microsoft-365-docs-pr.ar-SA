@@ -1,5 +1,5 @@
 ---
-title: إنشاء التقييمات وإدارتها في Microsoft Compliance Manager
+title: إنشاء التقييمات وإدارتها في Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,15 +16,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: قم بإنشاء تقييمات في Microsoft Compliance Manager لمساعدتك على تلبية متطلبات اللوائح والشهادات المهمة لمؤسستك.
-ms.openlocfilehash: 9fbea59eae103e2ce9715fda6c7b7a97d38eb855
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: قم بإنشاء تقييمات في Microsoft Purview Compliance Manager لمساعدتك على تلبية متطلبات اللوائح والشهادات المهمة لمؤسستك.
+ms.openlocfilehash: 841d48951eebf0d04bf5c97a708a250218b44c65
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759004"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972552"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>إنشاء التقييمات وإدارتها في Compliance Manager
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **في هذه المقالة:** تعرف على كيفية تخصيص Compliance Manager لمؤسستك من خلال إنشاء **التقييمات** وإدارتها. ترشدك هذه المقالة إلى كيفية إنشاء التقييمات، وكيفية تنظيمها في **مجموعات**، والعمل مع **عناصر التحكم**، وقبول **التحديثات**، وتصدير **تقارير** التقييم.
 
@@ -35,7 +37,7 @@ ms.locfileid: "64759004"
 يتم سرد جميع التقييمات في علامة تبويب التقييمات في Compliance Manager. تعرف على المزيد حول [كيفية تصفية طريقة عرض التقييمات وتفسير حالات الحالة](compliance-manager-setup.md#assessments-page).
 
 > [!IMPORTANT]
-> تعتمد القوالب المتوفرة لمؤسستك لإنشاء التقييمات على اتفاقية الترخيص الخاصة بك. [مراجعة تفاصيل الترخيص](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> تعتمد القوالب المتوفرة لمؤسستك لإنشاء التقييمات على اتفاقية الترخيص الخاصة بك. [مراجعة تفاصيل الترخيص](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="data-protection-baseline-default-assessment"></a>التقييم الافتراضي ل "أساس حماية البيانات"
 

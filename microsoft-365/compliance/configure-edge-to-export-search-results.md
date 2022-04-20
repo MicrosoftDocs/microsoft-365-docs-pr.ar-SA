@@ -1,5 +1,5 @@
 ---
-title: استخدم أداة تصدير eDiscovery في Microsoft Edge
+title: استخدام أداة تصدير eDiscovery في Microsoft Edge
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,47 +12,49 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: يجب تمكين ClickOnce من استخدام أحدث إصدار من Microsoft Edge لتنزيل نتائج البحث من البحث في المحتوى و eDiscovery في مركز الأمان والتوافق.
-ms.openlocfilehash: bd42ebffce326e4abe4943ff4187fc2bd960ff65
-ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+description: يجب تمكين دعم ClickOnce لاستخدام أحدث إصدار من Microsoft Edge لتنزيل نتائج البحث من البحث في المحتوى وeDiscovery في مركز الأمان والتوافق.
+ms.openlocfilehash: cd20a35a0a6ee2518667d21fadbca4577342de36
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "63566150"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995767"
 ---
-# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>استخدم أداة تصدير eDiscovery في Microsoft Edge
+# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>استخدام أداة تصدير eDiscovery في Microsoft Edge
 
-نتيجة التغييرات الأخيرة التي تم إدخالها على الإصدار الأحدث من Microsoft Edge، ClickOnce يتم تمكين الدعم بشكل افتراضي. لمواصلة استخدام أداة تصدير eDiscovery لتنزيل نتائج بحث المحتوى أو بحث eDiscovery، ستحتاج إما إلى استخدام [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) أو تمكين دعم ClickOnce في أحدث إصدار من Microsoft Edge.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-## <a name="enable-clickonce-support-in-microsoft-edge"></a>تمكين ClickOnce في Microsoft Edge
+نتيجة للتغييرات الأخيرة في أحدث إصدار من Microsoft Edge، لم يعد دعم ClickOnce ممكنا بشكل افتراضي. لمتابعة استخدام أداة التصدير eDiscovery لتنزيل نتائج البحث في المحتوى أو eDiscovery، تحتاج إما إلى استخدام [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) أو تمكين دعم ClickOnce في أحدث إصدار من Microsoft Edge.
 
-1. في Microsoft Edge، **انتقل إلى edge://flags/#edge-click-once**.
+## <a name="enable-clickonce-support-in-microsoft-edge"></a>تمكين دعم ClickOnce في Microsoft Edge
 
-2. إذا تم تعيين القيمة الموجودة إلى **افتراضي** أو **معطل** في القائمة المنسدلة، فغيرها إلى **تمكين**.
+1. في Microsoft Edge، انتقل إلى **edge://flags/#edge-click-once**.
 
-   ![حدد تمكين من القائمة المنسدلة.](../media/ClickOnceimage1.png)
+2. إذا تم تعيين القيمة الموجودة إلى **"افتراضي"** أو **"معطل"** في القائمة المنسدلة، فقم بتغييرها إلى **"ممكن".**
 
-3. قم بالتمرير لأسفل إلى أسفل نافذة المستعرض وانقر فوق **إعادة تشغيل** لإعادة تشغيل Edge.
+   ![حدد ممكن من القائمة المنسدلة.](../media/ClickOnceimage1.png)
 
-   ![انقر فوق إعادة تشغيل.](../media/ClickOnceimage2.png)
+3. قم بالتمرير لأسفل إلى أسفل نافذة المستعرض وانقر فوق **"إعادة تشغيل** " لإعادة تشغيل Edge.
 
-**ملاحظة:** يمكن أن تستخدم المؤسسات "نهج المجموعة" لتعطيل ClickOnce الدعم. للتحقق مما إذا كان هناك نهج تنظيمي ClickOnce الدعم، **انتقل إلى edge://policy**. تظهر لقطة الشاشة التالية أنه ClickOnce في المؤسسة بكاملها. إذا تم تعيين قيمة النهج هذه إلى **خطأ**، ستحتاج إلى الاتصال بمسؤول في مؤسستك.
+   ![انقر فوق "إعادة التشغيل".](../media/ClickOnceimage2.png)
 
-![قائمة سياسات المؤسسة في Edge.](../media/ClickOnceimage3.png)
+**ملاحظه:** يمكن للمؤسسات استخدام نهج المجموعة لتعطيل دعم ClickOnce. للتحقق مما إذا كان هناك نهج تنظيمي لدعم ClickOnce، انتقل إلى **edge://policy**. تظهر لقطة الشاشة التالية تمكين ClickOnce عبر المؤسسة بأكملها. إذا تم تعيين قيمة النهج هذه إلى **خطأ**، فستحتاج إلى الاتصال بمسؤول في مؤسستك.
+
+![قائمة نهج Edge التنظيمية.](../media/ClickOnceimage3.png)
 
 ## <a name="install-and-run-the-ediscovery-export-tool"></a>تثبيت أداة تصدير eDiscovery وتشغيلها
 
-1. انقر **فوق تنزيل النتائج** على صفحة النشرة من خلال عملية تصدير في البحث في المحتوى أو حالة eDiscovery.
+1. انقر فوق **"تنزيل النتائج** " على صفحة القائمة المنبثقة لتصدير في "البحث في المحتوى" أو حالة eDiscovery.
 
-   ![انقر فوق تنزيل النتائج على صفحة النشرة flyout لتنزيل نتائج البحث.](../media/ClickOnceExport1.png)
+   ![انقر فوق "تنزيل النتائج" على صفحة القائمة المنبثقة لتنزيل نتائج البحث.](../media/ClickOnceExport1.png)
 
-2. سيتم مطالبتك بتأكيد على بدء تشغيل الأداة، انقر فوق **فتح**.
+2. ستتم مطالبتك بتأكيد لبدء تشغيل الأداة، انقر فوق **"فتح**".
 
-   ![انقر فوق فتح لفتح أداة تصدير eDiscovery.](../media/ClickOnceimage4.png)
+   ![انقر فوق "فتح" لبدء تشغيل "أداة تصدير eDiscovery".](../media/ClickOnceimage4.png)
 
-   إذا لم تكن أداة تصدير eDiscovery مثبتة، سيتم مطالبتك بتحذير أمان، 
+   إذا لم يتم تثبيت أداة تصدير eDiscovery، فستتم مطالبتك بتحذير أمان، 
 
-   ![انقر فوق تثبيت لتثبيت أداة تصدير eDiscovery.](../media/ClickOnceimage5.png)
+   ![انقر فوق "تثبيت" لتثبيت "أداة تصدير eDiscovery".](../media/ClickOnceimage5.png)
 
 3. انقر فوق **تثبيت**. بعد تثبيتها، سيتم تشغيل أداة التصدير تلقائيا.
 
@@ -60,4 +62,4 @@ ms.locfileid: "63566150"
 
 - [تصدير نتائج البحث في المحتوى](export-search-results.md)
 
-- [كيفية تمكين علامة التجربة في Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
+- [كيفية تمكين علامات التجربة في Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)

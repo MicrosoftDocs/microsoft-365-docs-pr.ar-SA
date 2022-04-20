@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: استخدم لوحة معلومات Microsoft Purview eDiscovery (Premium) لمجموعات المراجعة لتحليل مجموعتك بسرعة لتحديد الاتجاهات أو الإحصائيات الرئيسية التي ستساعدك على تطوير استراتيجية المراجعة.
-ms.openlocfilehash: 8814bbf645686529aec43f710519c1bd4891c1b3
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1412df381fff228c37052a6d75113c3a4c4cfcba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943096"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995877"
 ---
 # <a name="ediscovery-premium-dashboard-for-review-sets"></a>لوحة معلومات eDiscovery (Premium) لمجموعات المراجعة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 في بعض الحالات في Microsoft Purview eDiscovery (Premium)، قد يكون لديك عدد كبير من المستندات ورسائل البريد الإلكتروني التي تحتاج إلى مراجعة. قبل بدء عملية المراجعة، قد تحتاج إلى تحليل مجموعة العمل الخاصة بك بسرعة لتحديد الاتجاهات أو الإحصائيات الرئيسية التي ستساعدك على تطوير استراتيجية المراجعة الخاصة بك. للقيام بذلك، يمكنك استخدام لوحة معلومات eDiscovery (Premium) لمجموعات المراجعة لتحليل مجموعتك بسرعة.
 

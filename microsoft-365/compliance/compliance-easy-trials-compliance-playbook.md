@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: دليل المبادئ التجريبي لحلول Microsoft Purview.
-ms.openlocfilehash: 5136ceb33f4fb09345ee942b8d411d14952befc5
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 4544e07baa5b8d2b89991d9a31c84a2d7cefb7f8
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952765"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973762"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>دليل المبادئ التجريبي: حلول Microsoft Purview
 
@@ -225,9 +225,9 @@ ms.locfileid: "64952765"
 > [!TIP]
 > أفضل الممارسات التجريبية: اليوم 1
 
-للوصول إلى Advanced eDiscovery أو إضافته كعضو في حالة Advanced eDiscovery، يجب تعيين الأذونات المناسبة للمستخدم.
+للوصول إلى eDiscovery (Premium) أو لإضافته كعضو في حالة eDiscovery (Premium)، يجب تعيين الأذونات المناسبة للمستخدم.
 
-1. [إعداد Advanced eDiscovery – تعيين أذونات eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
+1. [إعداد eDiscovery (Premium) – تعيين أذونات eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
 1. [إضافة أعضاء أو إزالتهم من حالة](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 ### <a name="step-2-required-create-a-case"></a>الخطوة 2 (مطلوبة): إنشاء حالة
@@ -235,9 +235,9 @@ ms.locfileid: "64952765"
 > [!TIP]
 > أفضل الممارسات التجريبية: إنشاء خلال أول 30 يوما
 
-تستخدم المزيد من المؤسسات الحل Advanced eDiscovery في Microsoft 365 لعمليات eDiscovery الهامة. ويشمل ذلك الاستجابة للطلبات التنظيمية والتحقيقات والتقاضي.
+تستخدم المزيد من المؤسسات حل eDiscovery (Premium) في Microsoft 365 لعمليات eDiscovery الهامة. ويشمل ذلك الاستجابة للطلبات التنظيمية والتحقيقات والتقاضي.
 
-1. إدارة Advanced eDiscovery – [تعرف على كيفية تكوين Advanced eDiscovery وإدارة الحالات باستخدام مركز توافق & الأمان وإدارة سير عمل في Advanced eDiscovery وتحليل نتائج البحث Advanced eDiscovery](/learn/modules/manage-advanced-ediscovery).
+1. إدارة eDiscovery (Premium) – [تعرف على كيفية تكوين eDiscovery (Premium)، وإدارة الحالات باستخدام Security & Compliance Center، وإدارة سير عمل في eDiscovery (Premium)، وتحليل نتائج البحث eDiscovery (Premium](/learn/modules/manage-advanced-ediscovery)).
 1. [إنشاء حالة eDiscovery باستخدام تنسيق الحالة الجديد ل Advance eDiscovery](advanced-ediscovery-new-case-format.md)
 1. [إغلاق حالة أو حذفها](close-or-delete-case.md) - عند اكتمال الدعوى القانونية أو التحقيق، يمكنك إغلاقها أو حذفها. يمكنك أيضا إعادة فتح حالة مغلقة.
 
@@ -245,9 +245,9 @@ ms.locfileid: "64952765"
 
 للسماح للأشخاص في مؤسستك ببدء إنشاء الحالات واستخدامها، يجب تكوين الإعدادات العمومية التي تنطبق على جميع الحالات في مؤسستك. في هذا الوقت، يكون الإعداد العمومي الوحيد هو **الكشف عن امتيازات الوكيل والعميل** (ستتوفر المزيد من الإعدادات العمومية في المستقبل).
 
-1. [إعداد Advanced eDiscovery – الإعدادات العمومية](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
+1. [إعداد eDiscovery (Premium) – الإعدادات العمومية](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [تكوين إعدادات البحث والتحليلات](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
-1. [إدارة المهام في Advanced eDiscovery](managing-jobs-ediscovery20.md)
+1. [إدارة المهام في eDiscovery (Premium)](managing-jobs-ediscovery20.md)
 
 ### <a name="step-4-optional-compliance-boundaries"></a>الخطوة 4 (اختيارية): [حدود التوافق](set-up-compliance-boundaries.md)
 
@@ -266,7 +266,7 @@ ms.locfileid: "64952765"
 
 استخدم أداة البحث عن المحتوى في مدخل توافق Microsoft Purview للعثور بسرعة على البريد الإلكتروني في علب بريد Exchange والمستندات في مواقع SharePoint ومواقع OneDrive ومحادثات المراسلة الفورية في Skype for Business. يمكنك استخدام أداة البحث عن المحتوى للبحث عن رسائل البريد الإلكتروني والمستندات ومحادثات المراسلة الفورية في أدوات التعاون مثل Microsoft Teams مجموعات Microsoft 365.
 
-- [معرفة المزيد حول Advanced eDiscovery البحث](search-for-content.md#search-for-content)
+- [تعرف على المزيد حول البحث في eDiscovery (Premium)](search-for-content.md#search-for-content)
 
 ## <a name="information-protection"></a>حماية البيانات
 

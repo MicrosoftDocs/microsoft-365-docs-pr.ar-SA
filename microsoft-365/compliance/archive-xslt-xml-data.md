@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات XSLT/XML وأرشفتها من Veritas في Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: e1537bce351c2dd98286f82e134cb5779742b1f2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 92932e3e18c8f43c46cf71e43ec02306d78a2f60
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936874"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995723"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>إعداد موصل إلى أرشفة بيانات XSLT/XML
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من مصدر صفحة ويب إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر لك Veritas [موصل XSLT/XML](https://globanet.com/xslt-xml) الذي يسمح للتطوير السريع للملفات التي تم إنشاؤها باستخدام XSLT (تحويلات لغة ورقة الأنماط الموسعة) لتحويل ملفات XML إلى تنسيقات ملفات أخرى (مثل HTML أو النص) يمكن استيرادها إلى Microsoft 365. يحول الموصل محتوى عنصر من مصدر XSLT/XML إلى تنسيق رسالة بريد إلكتروني ثم يستورد العنصر المحول إلى علب بريد Microsoft 365.
 

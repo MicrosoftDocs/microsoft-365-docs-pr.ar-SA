@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إنشاء نموذج ترميز تنبؤي في eDiscovery (Premium). هذه هي الخطوة الأولى في استخدام قدرات التعلم الآلي في eDiscovery (Premium) لمساعدتك في تحديد المحتوى ذي الصلة وغير ذي الصلة في مجموعة مراجعة.
-ms.openlocfilehash: 86fc72ae73faf25184c5b137a0e433af8125eb54
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f5636defbd4bc004a4732ff1d956f8b879daea2d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942260"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994029"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>إنشاء نموذج ترميز تنبؤي (معاينة)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 الخطوة الأولى في استخدام قدرات التعلم الآلي للترميز التنبؤي في eDiscovery (Premium) هي إنشاء نموذج ترميز تنبؤي. بعد إنشاء نموذج، يمكنك تدريبه على تحديد المحتوى ذي الصلة وغير ذي الصلة في مجموعة مراجعة.
 

@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية استخدام معالجة الأخطاء لتصحيح مشكلات البيانات في eDiscovery (Premium) التي قد تمنع المعالجة المناسبة للمحتوى.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d1331e595f661e1e69f114058579ab9163074b41
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1f56ad34cb295103178c5f244ccd78d7ad3757b0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932167"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994535"
 ---
 # <a name="error-remediation-when-processing-data"></a>معالجة الخطأ عند معالجة البيانات
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تسمح معالجة الخطأ لمسؤولي eDiscovery بالقدرة على تصحيح مشكلات البيانات التي تمنع Microsoft Purview eDiscovery (Premium) من معالجة المحتوى بشكل صحيح. على سبيل المثال، لا يمكن معالجة الملفات المحمية بكلمة مرور لأن الملفات مؤمنة أو مشفرة. باستخدام معالجة الأخطاء، يمكن لمسؤولي eDiscovery تنزيل الملفات التي بها مثل هذه الأخطاء، وإزالة الحماية بكلمة المرور، ثم تحميل الملفات التي تمت معالجتها.
 

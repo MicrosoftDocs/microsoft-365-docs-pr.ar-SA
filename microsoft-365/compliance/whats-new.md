@@ -1,5 +1,5 @@
 ---
-title: ما الجديد في Microsoft Purview
+title: الجديد في Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: سواء كان ذلك بإضافة حلول جديدة إلى مركز الامتثال، أو تحديث الميزات الحالية استنادا إلى ملاحظاتك، أو طرح وثائق جديدة ومحدثة، Microsoft 365 يساعدك على البقاء على اطلاع على مشهد الامتثال المتغير باستمرار. تعرف على ما كنا عليه حتى هذا الشهر.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5c1e48f1cd9d4a73e703e4d5d93d6d1354d57366
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: b5f231abfbfe943f0b2ab0cf33a14267f0940820
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953706"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972464"
 ---
-# <a name="whats-new-in-microsoft-purview"></a>ما الجديد في Microsoft Purview
+# <a name="whats-new-in-microsoft-purview"></a>الجديد في Microsoft Purview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "64953706"
 
 | **الاسم السابق** | **اسم جديد** | **الوصف** |
 |:----------------|:-------------|:----------------|
-| التدقيق المتقدم Microsoft 365 | تدقيق Microsoft Purview (Premium) | توفر حلول التدقيق حلا متكاملا لمساعدة المؤسسات على الاستجابة الفعالة للأحداث الأمنية والتحقيقات الجنائية والتحقيقات الداخلية والتزامات الامتثال. لمعرفة المزيد، راجع [التدقيق المتقدم ل Microsoft Purview (Premium).](advanced-audit.md) |
+| التدقيق المتقدم Microsoft 365 <br><br> التدقيق الأساسي Microsoft 365 | تدقيق Microsoft Purview (Premium) <br><br> تدقيق Microsoft Purview (قياسي)| توفر حلول التدقيق حلا متكاملا لمساعدة المؤسسات على الاستجابة الفعالة للأحداث الأمنية والتحقيقات الجنائية والتحقيقات الداخلية والتزامات الامتثال. لمعرفة المزيد، راجع [Microsoft Purview Advanced Audit (Premium)](advanced-audit.md) [وMicrosoft Purview Advanced Audit (Standard).](set-up-basic-audit.md) |
 | توافق الاتصالات Microsoft 365 | توافق الاتصالات مع Microsoft Purview | يساعد توافق الاتصالات على تقليل المخاطر من خلال مساعدتك على اكتشاف إجراءات المعالجة والتقاطها واتخاذها بسرعة لقنوات اتصالات الشركة وانتهاكات النهج. لمعرفة المزيد، راجع [Microsoft Purview Communication Compliance](communication-compliance-solution-overview.md). |
 | Microsoft Compliance Manager | Microsoft Purview Compliance Manager | يمكن أن يساعدك Compliance Manager طوال رحلة الامتثال الخاصة بك، بدءا من جرد مخاطر حماية البيانات إلى إدارة تعقيدات تنفيذ عناصر التحكم، والبقاء على اطلاع دائم باللوائح والشهادات، وإعداد التقارير إلى المراجعين. لمعرفة المزيد، راجع [Microsoft Purview Compliance Manager](compliance-manager.md). |
 | مفتاح العميل Microsoft 365 | مفتاح عميل Microsoft Purview | يوفر Customer Key حماية إضافية ضد عرض البيانات من قبل أنظمة أو موظفين غير مصرح لهم، ويكمل تشفير قرص BitLocker في مراكز بيانات Microsoft. لمعرفة المزيد، راجع [مفتاح عميل Microsoft Purview](customer-key-overview.md). |
@@ -61,19 +61,19 @@ ms.locfileid: "64953706"
 | حواجز المعلومات Microsoft 365 | حواجز معلومات Microsoft Purview | تعد حواجز المعلومات حلا يقيد الاتصال والتعاون بين أشخاص معينين داخل مؤسستك لحماية المعلومات الداخلية. لمعرفة المزيد، راجع [حواجز معلومات Microsoft Purview](information-barriers-solution-overview.md). |
 | حماية البيانات في Microsoft | Microsoft Purview حماية البيانات | تساعدك حماية المعلومات على اكتشاف المعلومات الحساسة وتصنيفها وحمايتها أينما كانت تعيش أو تنتقل. لمعرفة المزيد، راجع [microsoft Purview حماية البيانات](information-protection.md). |
 | حوكمة المعلومات في Microsoft | إدارة دورة حياة بيانات Microsoft Purview | توفر لك إدارة دورة حياة البيانات الأدوات والقدرات للاحتفاظ بالمحتوى الذي تحتاج إليه للاحتفاظ بالمحتوى الذي لا تريده وحذفه. لمعرفة المزيد، راجع [إدارة دورة حياة بيانات Microsoft Purview](data-lifecycle-management.md). |
-| Microsoft 365 Insider Risk Management | Microsoft Purview Insider Risk Management | تستخدم إدارة المخاطر الداخلية النطاق الكامل للخدمة ومؤشرات الجهات الخارجية لمساعدتك على تحديد نشاط المستخدم المحفوفة بالمخاطر وفرزه والعمل عليه بسرعة. لمعرفة المزيد، راجع [Microsoft Purview Insider Risk Management](insider-risk-management.md). |
+| Microsoft 365 Insider Risk Management | إدارة المخاطر الداخلية في Microsoft Purview | تستخدم إدارة المخاطر الداخلية النطاق الكامل للخدمة ومؤشرات الجهات الخارجية لمساعدتك على تحديد نشاط المستخدم المحفوفة بالمخاطر وفرزه والعمل عليه بسرعة. لمعرفة المزيد، راجع [Microsoft Purview Insider Risk Management](insider-risk-management.md). |
 | تشفير الرسائل Office 365 | تشفير رسائل Microsoft Purview | باستخدام تشفير الرسائل، يمكن لمؤسستك إرسال رسائل البريد الإلكتروني المشفرة وتلقيها بين أشخاص داخل مؤسستك وخارجها. لمعرفة المزيد، راجع [تشفير رسائل "Microsoft Purview](ome.md)". |
-| إدارة الوصول المتميز في Microsoft 365 | Microsoft Purview Privileged Access Management | تساعد إدارة الوصول المتميز على حماية مؤسستك من الخروقات وتساعد على تلبية أفضل ممارسات التوافق من خلال الحد من الوصول الدائم إلى البيانات الحساسة أو الوصول إلى إعدادات التكوين الهامة. لمعرفة المزيد، راجع [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md). |
+| إدارة الوصول المتميز في Microsoft 365 | إدارة الوصول المتميز لـ Microsoft Purview | تساعد إدارة الوصول المتميز على حماية مؤسستك من الخروقات وتساعد على تلبية أفضل ممارسات التوافق من خلال الحد من الوصول الدائم إلى البيانات الحساسة أو الوصول إلى إعدادات التكوين الهامة. لمعرفة المزيد، راجع [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md). |
 | موصلات بيانات Microsoft | موصلات بيانات Microsoft Purview | يتيح Microsoft 365 للمسؤولين استخدام موصلات البيانات لاستيراد البيانات غير الخاصة ب Microsoft وأرشفتها، وبيانات الجهات الخارجية من أنظمة الوسائط الاجتماعية وأنظمة المراسلة الفورية وأنظمة التعاون الأساسية للمستندات، إلى علب البريد في مؤسستك Microsoft 365. لمعرفة المزيد، راجع [موصلات بيانات Microsoft Purview](compliance-extensibility.md). |
-| eDiscovery المتقدم في Microsoft 365 | microsoft Purview eDiscovery Premium | الاكتشاف الإلكتروني، أو eDiscovery، هو عملية تحديد وتقديم المعلومات الإلكترونية التي يمكن استخدامها كدليل في الحالات القانونية. لمعرفة المزيد، راجع [microsoft Purview eDiscovery Premium](overview-ediscovery-20.md). |
-| مركز التوافق في Microsoft 365 | مدخل الامتثال ل Microsoft Purview | مدخل المسؤول للوصول إلى الحلول وكتالوج الحلول داخل مجموعة التوافق في Microsoft 365 E5. لمعرفة المزيد، راجع مدخل [توافق Microsoft Purview](microsoft-365-compliance-center.md). |
+| eDiscovery المتقدم في Microsoft 365 <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (قياسي) | الاكتشاف الإلكتروني، أو eDiscovery، هو عملية تحديد وتقديم المعلومات الإلكترونية التي يمكن استخدامها كدليل في الحالات القانونية. لمعرفة المزيد، راجع [Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md) [وMicrosoft Purview eDiscovery (Standard).](get-started-core-ediscovery.md) |
+| مركز التوافق في Microsoft 365 | مدخل توافق Microsoft Purview | مدخل المسؤول للوصول إلى الحلول وكتالوج الحلول داخل مجموعة التوافق في Microsoft 365 E5. لمعرفة المزيد، راجع مدخل [توافق Microsoft Purview](microsoft-365-compliance-center.md). |
 
 ## <a name="february-2022"></a>فبراير 2022
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [إدارة قوالب الاتصالات الوصية في Advanced eDiscovery](advanced-ediscovery-communications-library.md) - يمكن لمديري eDiscovery الآن إنشاء قوالب اتصالات الوصي التي يمكن استخدامها في أي حالة Advanced eDiscovery في المؤسسة.
-- [إدارة مسؤولي الإصدار في Advanced eDiscovery](advanced-ediscovery-issuing-officers.md) - يمكن لمديري eDiscovery إضافة قائمة بالمسؤولين عن الإصدار الذين يمكن تعيينهم إلى الاتصالات الوصية في أي حالة Advanced eDiscovery في المؤسسة.
+- [إدارة قوالب الاتصالات الوصية في eDiscovery (Premium)](advanced-ediscovery-communications-library.md) - يمكن لمديري eDiscovery الآن إنشاء قوالب اتصالات الوصي التي يمكن استخدامها في أي حالة eDiscovery (Premium) في المؤسسة.
+- [إدارة مسؤولي الإصدار في eDiscovery (Premium)](advanced-ediscovery-issuing-officers.md) - يمكن لمديري eDiscovery إضافة قائمة بالمسؤولين عن الإصدار الذين يمكن تعيينهم إلى الاتصالات الوصية في أي حالة eDiscovery (Premium) في المؤسسة.
 
 ### <a name="data-lifecycle-management-and-records-management"></a>إدارة دورة حياة البيانات وإدارة السجلات
 
@@ -120,7 +120,7 @@ ms.locfileid: "64953706"
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [سير عمل Advanced eDiscovery للمحتوى في Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) - تم تحديثه بدليل مرجعي سريع جديد قابل للتنزيل لإدارة محتوى Teams في Advanced eDiscovery
+- [سير عمل eDiscovery (Premium) للمحتوى في Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) - محدث بدليل مرجعي سريع جديد قابل للتنزيل لإدارة محتوى Teams في eDiscovery (Premium)
 
 ### <a name="data-lifecycle-management"></a>إدارة دورة حياة البيانات
 
@@ -159,7 +159,7 @@ ms.locfileid: "64953706"
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [استخدم تنسيق الحالة الجديدة في Advanced eDiscovery](advanced-ediscovery-new-case-format.md) تم إصدار تنسيق حالة جديدة للتوفر العام وإعادة تسميته من "تنسيق حالة كبيرة"
+- [استخدم تنسيق الحالة الجديدة بتنسيق eDiscovery (Premium)](advanced-ediscovery-new-case-format.md) الجديد الذي تم إصداره للتوفر العام وإعادة تسميته من "تنسيق حالة كبيرة"
 
 ### <a name="retention-and-records-management"></a>إدارة الاستبقاء والسجلات
 - النشر: إعدادات إدارة السجلات الجديدة التي تتحكم في إمكانية حذف العناصر المسماة في SharePoint OneDrive من قبل المستخدمين. في السابق، كانت تسميات الاستبقاء التي تم تكوينها للاحتفاظ بالمحتوى والتي لم تضع علامة على العناصر كسجلات تمنع المستخدمين من حذف المحتوى المسمى في SharePoint عندما كان هذا الإجراء مسموحا به في OneDrive. لمزيد من المعلومات، راجع [كيفية عمل الاستبقاء SharePoint OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
@@ -213,8 +213,8 @@ ms.locfileid: "64953706"
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [جمع مرفقات السحابة في Advanced eDiscovery](advanced-ediscovery-cloud-attachments.md) بالإضافة إلى جمع أحدث إصدار من مرفق سحابي، يمكنك جمع الإصدار الذي تمت مشاركته في رسالة بريد إلكتروني أو Teams محادثة محادثة؛ يتم تمكين جمع الإصدار المشترك من خلال القدرة الجديدة على تطبيق تسمية استبقاء تلقائيا على مرفقات السحابة.
-- [قم بإعداد الإصدارات التاريخية في Advanced eDiscovery](advanced-ediscovery-historical-versions.md) وظائف جديدة تقوم بفهرسة كافة إصدارات المستندات المخزنة على موقع SharePoint للبحث؛ وهذا يعني أنه يتم إرجاع إصدارات المستندات التي تحتوي على محتوى يتطابق مع استعلام مجموعة في نتائج البحث.
+- [جمع مرفقات السحابة في eDiscovery (Premium)](advanced-ediscovery-cloud-attachments.md) بالإضافة إلى جمع أحدث إصدار من مرفق سحابة، يمكنك جمع الإصدار الذي تمت مشاركته في رسالة بريد إلكتروني أو محادثة دردشة Teams؛ يتم تمكين جمع الإصدار المشترك من خلال القدرة الجديدة لتطبيق تسمية استبقاء تلقائيا على مرفقات السحابة.
+- [قم بإعداد الإصدارات التاريخية في وظائف eDiscovery (Premium)](advanced-ediscovery-historical-versions.md) الجديدة التي تقوم بفهرسة كافة إصدارات المستندات المخزنة على موقع SharePoint للبحث؛ وهذا يعني أنه يتم إرجاع إصدارات المستندات التي تحتوي على محتوى يتطابق مع استعلام المجموعة في نتائج البحث.
 
 ### <a name="encryption"></a>التشفير
 
@@ -275,7 +275,7 @@ ms.locfileid: "64953706"
 
 ### <a name="ediscovery"></a>eDiscovery
 
-- [استخدم محرر KQL لإنشاء معاينة عامة للاستعلامات البحثية](ediscovery-kql-editor.md) لطريقة جديدة لإنشاء استعلامات البحث في البحث في المحتوى و Core eDiscovery Advanced eDiscovery؛ يوفر محرر KQL الإكمال التلقائي للخصائص والشروط المدعومة القابلة للبحث ويعرض قوائم القيم المعتمدة للخصائص والشروط القياسية؛ كما يوفر محرر KQL الكشف عن الأخطاء والاقتراحات لإصلاحات الأخطاء المحتملة في استعلامات البحث
+- [استخدم محرر KQL لإنشاء معاينة عامة للاستعلامات البحثية](ediscovery-kql-editor.md) لطريقة جديدة لإنشاء استعلامات البحث في البحث في المحتوى وeDiscovery (قياسي) وeDiscovery (Premium)؛ يوفر محرر KQL الإكمال التلقائي للخصائص والشروط المعتمدة القابلة للبحث ويعرض قوائم القيم المعتمدة للخصائص والشروط القياسية؛ كما يوفر محرر KQL الكشف عن الأخطاء واقتراحات لإصلاحات الأخطاء المحتملة في استعلامات البحث
 
 ### <a name="information-barriers"></a>عوائق المعلومات
 

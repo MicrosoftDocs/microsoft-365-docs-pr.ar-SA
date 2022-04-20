@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات Salesforce Chatter وأرشفتها من Veritas إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: 695702d33817fce96cd54e7abf646e1687834f0d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bfaf6de15da6707f9ce5a3ff15c255e8a605af87
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950600"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994579"
 ---
 # <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>إعداد موصل أرشفة بيانات Salesforce Chatter
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من النظام الأساسي Salesforce Chatter إلى علب بريد المستخدمين في مؤسسة Microsoft 365. يوفر Veritas موصل [Salesforce Chatter](http://globanet.com/chatter/) الذي يلتقط العناصر من مصدر بيانات الجهات الخارجية ويستورد هذه العناصر إلى Microsoft 365. يحول الموصل المحتوى مثل الدردشات والمرفقات والمنشورات من Salesforce Chater إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
 

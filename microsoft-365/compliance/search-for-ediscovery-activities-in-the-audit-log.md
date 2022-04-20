@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: تعرف على الأحداث التي يتم تسجيلها عندما يقوم المستخدمون المعينون لأذونات eDiscovery بتنفيذ مهام البحث في المحتوى وeDiscovery (قياسي) وeDiscovery (Premium) في مدخل توافق Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 519347ed8f074fc15c8618f6ceb84159314c5915
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1e21fcff71d050e09a60a6708678d46f2b894bdc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941820"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995855"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>البحث عن أنشطة eDiscovery في سجل التدقيق
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتم تسجيل البحث عن المحتوى والأنشطة ذات الصلة ب eDiscovery (ل Microsoft Purview eDiscovery (Standard) وMicrosoft Purview eDiscovery (Premium)) التي يتم تنفيذها في مدخل توافق Microsoft Purview أو عن طريق تشغيل أوامر PowerShell cmdlets المقابلة في سجل التدقيق. يتم تسجيل الأحداث عندما يقوم المسؤولون أو مديرو eDiscovery (أو أي مستخدم معين لأذونات eDiscovery) بتنفيذ المهام التالية للبحث عن المحتوى وeDiscovery (القياسي) في مدخل التوافق:
   

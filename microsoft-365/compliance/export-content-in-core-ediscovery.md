@@ -18,14 +18,16 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: يصف كيفية تصدير المحتوى وتنزيله من حالة eDiscovery (قياسي) في Microsoft 365.
-ms.openlocfilehash: a0ea33d599ed609c24cf63f1df4c68b882364b1b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2a63d22c8b4cb20e2c0f1317a8496e1cf517b2da
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937950"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995437"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>تصدير المحتوى من حالة eDiscovery (قياسي)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بعد تشغيل عملية بحث مقترنة بحالة Microsoft Purview eDiscovery (Standard) بنجاح، يمكنك تصدير نتائج البحث. عند تصدير نتائج البحث، يتم تنزيل عناصر علبة البريد في ملفات PST أو كرسائل فردية. عند تصدير محتوى من مواقع SharePoint OneDrive for Business، يتم تصدير نسخ من مستندات Office الأصلية ومستندات أخرى. يتم أيضا تصدير ملف Results.csv يحتوي على معلومات حول كل عنصر يتم تصديره وملف بيان (بتنسيق XML) يحتوي على معلومات حول كل نتيجة بحث.
   

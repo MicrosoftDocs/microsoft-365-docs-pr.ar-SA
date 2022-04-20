@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات SMS و MMS وأرشفتها من TeleMessage Enterprise Number Archiver. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft Purview حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: f1353e0140e1411d2cac79fc4d59043046df302d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b3f429af6caa4d650688b27f5157a212e348ffe8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944096"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995041"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>إعداد موصل أرشفة بيانات رقم المؤسسة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل TeleMessage في مدخل توافق Microsoft Purview لاستيراد وأرشفة رسائل خدمة المراسلة القصيرة (SMS) وخدمة المراسلة متعددة الوسائط (MMS) ورسائل الدردشة وتسجيلات المكالمات الصوتية وسجلات المكالمات الصوتية من أرشيف أرقام المؤسسة. بعد إعداد موصل وتكوينه، يتصل بحساب TeleMessage الخاص بمؤسستك مرة واحدة كل يوم ويستورد بيانات اتصالات الهاتف المحمول للموظفين باستخدام TeleMessage Enterprise Number Archiver إلى علب البريد في Microsoft 365.
 

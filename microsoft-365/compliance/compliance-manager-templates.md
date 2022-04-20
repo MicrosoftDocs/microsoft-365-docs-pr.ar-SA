@@ -1,5 +1,5 @@
 ---
-title: العمل مع قوالب التقييم في Microsoft Compliance Manager
+title: العمل مع قوالب التقييم في Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,20 +17,22 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: فهم كيفية استخدام القوالب وإدارتها لإنشاء التقييمات في Microsoft Compliance Manager. إنشاء قوالب وتعديلها باستخدام ملف Excel منسق.
-ms.openlocfilehash: 0dc28eb3058e3b929da47d947b29c7ba7be41111
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: فهم كيفية استخدام وإدارة القوالب لإنشاء التقييمات في Microsoft Purview Compliance Manager. إنشاء قوالب وتعديلها باستخدام ملف Excel منسق.
+ms.openlocfilehash: 009b2d742ab135abcde7c3ab73f9ec15c05c8f29
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758982"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972772"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>التعرف على قوالب التقييم في Compliance Manager
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **في هذه المقالة:** فهم **كيفية عمل القوالب** **وكيفية إدارتها** من صفحة قوالب التقييم. احصل على إرشادات **لإنشاء** قوالب جديدة **، وتوسيع القوالب** الموجودة **وتعديلها**، **وتنسيق بيانات القالب باستخدام Excel**، وتصدير **تقارير** القوالب.
 
 > [!IMPORTANT]
-> تعتمد قوالب التقييم المتوفرة لمؤسستك على اتفاقية الترخيص الخاصة بك. [راجع التفاصيل](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> تعتمد قوالب التقييم المتوفرة لمؤسستك على اتفاقية الترخيص الخاصة بك. [راجع التفاصيل](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="templates-overview"></a>نظرة عامة على القوالب
 
@@ -78,7 +80,7 @@ ms.locfileid: "64758982"
 
 لتجربة القوالب المتميزة قبل إجراء عملية شراء، يمكنك أيضا الحصول على إصدارات تجريبية من التراخيص. تعد التراخيص التجريبية مناسبة لما يصل إلى 25 قالبا لمدة 90 يوما. بمجرد الحصول على الترخيص التجريبي، يجب أن تصبح القوالب متوفرة في المستأجر الخاص بك في غضون 48 ساعة.
 
-إذا كانت مؤسستك تملك ترخيصا تجاريا ل Compliance Manager، يمكنك معرفة كيفية بدء الإصدار التجريبي في [حول الإصدار التجريبي المجاني للتقييمات المتميزة ل Microsoft Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
+إذا كانت مؤسستك تملك ترخيصا تجاريا ل Compliance Manager، يمكنك معرفة كيفية بدء الإصدار التجريبي في [حول الإصدار التجريبي المجاني للتقييمات المتميزة ل Microsoft Purview Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
 
 إذا كانت مؤسستك تحت ترخيص سحابة القطاع الحكومي أو DOD، فاختر رابط الإصدار التجريبي المناسب لمؤسستك:
 

@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على كيفية الوصول إلى الإحصائيات والتقارير واستخدامها لمسودات المجموعات والمجموعات التي تم الالتزام بها لمجموعة مراجعة في Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: 12152e0b81df6c61732fda068c593a91578861ee
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 140a6aa2ac0a0ebbff7cf2ab2ee8618cd45cdf07
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940302"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995745"
 ---
 # <a name="collection-statistics-and-reports-in-microsoft-purview-ediscovery-premium"></a>جمع الإحصائيات والتقارير في Microsoft Purview eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بعد إنشاء مجموعة مسودات، يمكنك عرض إحصائيات حول العناصر التي تم استردادها، مثل مواقع المحتوى التي تحتوي على معظم العناصر التي تطابق معايير البحث وعدد العناصر التي تم إرجاعها بواسطة استعلام البحث. يمكنك أيضا معاينة مجموعة فرعية من النتائج.
 

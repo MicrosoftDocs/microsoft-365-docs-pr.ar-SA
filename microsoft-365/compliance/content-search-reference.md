@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: تحتوي هذه المقالة على معلومات مرجعية حول أداة البحث في المحتوى eDiscovery في مدخل توافق Microsoft Purview لمساعدتك على معرفة التفاصيل العديدة حول البحث في المحتوى.
-ms.openlocfilehash: 1e1b64583769bbfc815f6b8635e5334936a3b3b7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 72088b1a1bd2e3f3ba2c38ee827c6eb46b7c893a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938434"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995701"
 ---
 # <a name="feature-reference-for-content-search"></a>مرجع الميزة للبحث في المحتوى
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تصف هذه المقالة ميزات البحث في المحتوى ووظائفه.
 

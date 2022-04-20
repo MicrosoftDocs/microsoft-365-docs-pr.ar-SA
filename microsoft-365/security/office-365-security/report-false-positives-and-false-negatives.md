@@ -13,12 +13,12 @@ ms.collection:
 description: تعرف على كيفية الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة في Outlook باستخدام ميزة "رسالة التقرير".
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f2181df44f8d193f8c19c508451733773bd20708
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 8f52b4d085c13f2e1e1a48c2a8a12e6782f13960
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473493"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974092"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة في Outlook
 
@@ -26,70 +26,69 @@ ms.locfileid: "64473493"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> إذا كنت مسؤول في مؤسسة Microsoft 365 بها علب بريد Exchange Online، فإننا ننصحك باستخدام صفحة "الواجبات المرسلة" في Microsoft 365 Defender المدخل. لمزيد من المعلومات، راجع [استخدام مدخل](admin-submission.md) عمليات الإرسال لإرسال ملفات البريد العشوائي والتصيد الاحتيالي عناوين URL والملفات المشتبه بها إلى Microsoft.
+> إذا كنت مسؤولا في مؤسسة Microsoft 365 مع علب بريد Exchange Online، نوصي باستخدام صفحة **عمليات الإرسال** في مدخل Microsoft 365 Defender. لمزيد من المعلومات، راجع [استخدام مدخل عمليات الإرسال لإرسال البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft](admin-submission.md).
 
-في مؤسسات Microsoft 365 التي بها علب بريد في علب بريد Exchange Online أو علب بريد المحلية باستخدام المصادقة الحديثة المختلطة، يمكنك إرسال إيجابيات خاطئة (بريد إلكتروني جيد تم حظره أو إرساله إلى مجلد غير هام) وسلبيات خاطئة (بريد إلكتروني غير مرغوب فيه أو تصيد احتيالي تم تسليمه إلى علبة الوارد) إلى Exchange Online Protection (EOP).
+في Microsoft 365 المؤسسات التي تحتوي على علب بريد في Exchange Online أو علب البريد المحلية باستخدام المصادقة الحديثة المختلطة، يمكنك إرسال إيجابيات خاطئة (بريد إلكتروني جيد تم حظره أو إرساله إلى مجلد غير هام) وسلبيات خاطئة (بريد إلكتروني غير مرغوب فيه أو تصيد احتيالي تم تسليمه إلى علبة الوارد) إلى Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
-- للحصول على أفضل تجربة إرسال للمستخدم، استخدم الوظائف الإضافية "رسالة التقرير" أو "الإبلاغ عن التصيد الاحتيالي".
+- للحصول على أفضل تجربة إرسال للمستخدم، استخدم الوظيفة الإضافية "رسالة التقرير" أو الوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي".
 
-- تعمل الوظائف الإضافية "رسالة التقرير" والرسالة الإضافية "الإبلاغ عن التصيد الاحتيالي" Outlook في كل الأنظمة الأساسية (Outlook على ويب و iOS وAndroid وسطح المكتب).
+- تعمل الوظيفة الإضافية "رسالة التقرير" والوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي" Outlook في جميع الأنظمة الأساسية (Outlook على ويب وiOS وAndroid وسطح المكتب).
 
-- إذا كنت أحد المسؤولين في مؤسسة Exchange Online علب البريد، فاستخدم مدخل الواجبات المرسلة في مدخل Microsoft 365 Defender. لمزيد من المعلومات، راجع [استخدام إرسال المسؤول لإرسال](admin-submission.md) ملفات البريد العشوائي والتصيد الاحتيالي عناوين URL والملفات المشتبه بها إلى Microsoft.
+- إذا كنت مسؤولا في مؤسسة بها علب بريد Exchange Online، فاستخدم مدخل عمليات الإرسال في مدخل Microsoft 365 Defender. لمزيد من المعلومات، راجع ["استخدام إرسال المسؤول" لإرسال رسائل البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft](admin-submission.md).
 
-- يمكنك تكوين لإرسال الرسائل مباشرة إلى Microsoft أو علبة بريد تحددها أو كليهما. لمزيد من المعلومات، راجع [سياسات إرسال المستخدم.](user-submission.md)
+- يمكنك التكوين لإرسال رسائل مباشرة إلى Microsoft أو علبة بريد تحددها أو كليهما. لمزيد من المعلومات، راجع [نهج عمليات إرسال المستخدم](user-submission.md).
 
-- لمزيد من المعلومات حول كيفية الحصول على "رسالة التقرير" أو الوظائف الإضافية "الإبلاغ عن التصيد الاحتيالي" وتمكينها، راجع تمكين "رسالة التقرير" أو الوظائف الإضافية "الإبلاغ عن التصيد [الاحتيالي](enable-the-report-message-add-in.md)".
+- لمزيد من المعلومات حول كيفية الحصول على الوظيفة الإضافية "رسالة التقرير" أو الوظائف الإضافية "تصيد التقرير" وتمكينها، راجع [تمكين "رسالة التقرير" أو الوظائف الإضافية "الإبلاغ عن التصيد الاحتيالي](enable-the-report-message-add-in.md)".
 
-- لمزيد من المعلومات حول إرسال رسائل إلى Microsoft، راجع [الإبلاغ عن الرسائل والملفات إلى Microsoft](report-junk-email-messages-to-microsoft.md).
+- لمزيد من المعلومات حول الإبلاغ عن الرسائل إلى Microsoft، راجع ["إرسال تقارير عن الرسائل والملفات إلى Microsoft](report-junk-email-messages-to-microsoft.md)".
 
 ### <a name="turn-off-the-built-in-reporting-experience"></a>إيقاف تشغيل تجربة إعداد التقارير المضمنة
 
-لا نوصي باستخدام تجربة إعداد التقارير المضمنة في Outlook لأنه لا يمكن استخدام نهج [إرسال المستخدم](./user-submission.md). نوصي باستخدام الوظائف الإضافية "الإبلاغ عن رسالة" أو "الإبلاغ عن التصيد الاحتيالي" بدلا من ذلك.
+لا نوصي بتجربة إعداد التقارير المضمنة في Outlook لأنه لا يمكن استخدام [نهج إرسال المستخدم](./user-submission.md). نوصي باستخدام الوظيفة الإضافية "رسالة التقرير" أو الوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي" بدلا من ذلك.
 
-يجب عليك تعيين الأذونات لكي تتمكن من تشغيل cmdlet هذا. للعثور على الأذونات المطلوبة لتشغيل أي cmdlet أو معلمة في مؤسستك، راجع البحث عن الأذونات المطلوبة لتشغيل أي Exchange [cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
+يجب عليك تعيين الأذونات لكي تتمكن من تشغيل cmdlet هذا. للعثور على الأذونات المطلوبة لتشغيل أي cmdlet أو معلمة في مؤسستك، راجع [البحث عن الأذونات المطلوبة لتشغيل أي Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
 
-قم بتشغيل الأمر PowerShell التالي لتعطيل تجربة إعداد التقارير المضمنة في Outlook على ويب:
+قم بتشغيل أمر PowerShell التالي لتعطيل تجربة إعداد التقارير المضمنة في Outlook على ويب:
 
 ```powershell
 Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
 ```
 
-
 ## <a name="use-the-report-message-feature"></a>استخدام ميزة "رسالة التقرير"
 
 ### <a name="report-junk-and-phishing-messages"></a>الإبلاغ عن رسائل البريد الإلكتروني غير الهام والتصيد الاحتيالي
 
-للرسائل في علبة الوارد أو أي مجلد بريد إلكتروني آخر باستثناء البريد الإلكتروني غير الهام، استخدم الطريقة التالية للتقارير حول رسائل البريد العشوائي والتصيد الاحتيالي:
+بالنسبة للرسائل الموجودة في علبة الوارد أو أي مجلد بريد إلكتروني آخر باستثناء البريد الإلكتروني غير الهام، استخدم الطريقة التالية للإبلاغ عن رسائل البريد العشوائي والتصيد الاحتيالي:
 
-1. حدد المزيد **من** الإجراءات في الزاوية العلوية اليسرى من الرسالة المحددة، وحدد الإبلاغ عن رسالة من القائمة  المنسدلة، **ثم حدد البريد** الإلكتروني غير الهام أو **التصيد الاحتيالي**.
+1. حدد **المزيد من الإجراءات** التي يتم حذفها في الزاوية العلوية اليسرى من الرسالة المحددة، وحدد **"تقرير الرسالة"** من القائمة المنسدلة، ثم حدد **"غير هام"** أو **"تصيد احتيالي**".
 
-   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="أيقونة المزيد من الإجراءات" lightbox="../../media/report-message-more-actions.png":::
+   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="أيقونة الإجراءات الإضافية" lightbox="../../media/report-message-more-actions.png":::
 
-   :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="الخيار &quot;البريد الإلكتروني غير الهام والتصيد الاحتيالي&quot; في جزء &quot;رسالة التقرير&quot;" lightbox="../../media/report-message-junk-phishing.png":::
+   :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="الخيار &quot;البريد غير الهام والتصيد الاحتيالي&quot; في جزء &quot;رسالة التقرير&quot;" lightbox="../../media/report-message-junk-phishing.png":::
 
 2. سيتم إرسال الرسائل المحددة إلى Microsoft لتحليلها و:
-   - تم نقلها إلى مجلد البريد الإلكتروني غير الهام إذا تم إرسال التقارير عنها كبريد عشوائي.
-   - محذوف إذا تم إعلامه بالتصيد الاحتيالي.
+   - يتم نقلها إلى مجلد البريد الإلكتروني غير الهام إذا تم الإبلاغ عنها كبريد عشوائي.
+   - يتم حذفها إذا تم الإبلاغ عنها على أنها تصيد احتيالي.
 
-### <a name="report-messages-that-are-not-junk"></a>الإبلاغ عن الرسائل غير المرغوب فيها
+### <a name="report-messages-that-are-not-junk"></a>الإبلاغ عن الرسائل غير الهامة
 
-1. حدد المزيد **من** الإجراءات في الزاوية العلوية اليسرى من الرسالة المحددة، وحدد الإبلاغ عن رسالة من القائمة  المنسدلة، ثم حدد **ليس غير هام**.
+1. حدد علامات الحذف " **المزيد من الإجراءات** " في الزاوية العلوية اليسرى من الرسالة المحددة، وحدد **"تقرير الرسالة** " من القائمة المنسدلة، ثم حدد **"ليس غير هام**".
 
    :::image type="content" source="../../media/report-message-more-actions.png" alt-text="الأيقونة التي توفر المزيد من الإجراءات" lightbox="../../media/report-message-more-actions.png":::
 
-   :::image type="content" source="../../media/report-message-not-junk.png" alt-text="الخيار &quot;ليس بريدا غير هام&quot; ضمن جزء &quot;رسالة التقرير&quot;" lightbox="../../media/report-message-not-junk.png":::
+   :::image type="content" source="../../media/report-message-not-junk.png" alt-text="الخيار &quot;ليس غير هام&quot; ضمن جزء &quot;رسالة التقرير&quot;" lightbox="../../media/report-message-not-junk.png":::
 
-2. سيتم إرسال الرسالة المحددة إلى Microsoft لتحليلها، كما سيتم نقلها إلى علبة الوارد أو أي مجلد محدد آخر.
+2. سيتم إرسال الرسالة المحددة إلى Microsoft لتحليلها ونقلها إلى علبة الوارد أو أي مجلد محدد آخر.
 
-## <a name="view-and-review-reported-messages"></a>عرض الرسائل التي تم إرسالها ومراجعتها
+## <a name="view-and-review-reported-messages"></a>عرض الرسائل التي تم الإبلاغ عنها ومراجعتها
 
-لمراجعة الرسائل التي يقوم المستخدمون بلتقاريرها إلى Microsoft، تتوفر لديك هذه الخيارات:
+لمراجعة الرسائل التي يبلغها المستخدمون إلى Microsoft، تتوفر لديك هذه الخيارات:
 
-- استخدم **صفحة** الواجبات المرسلة في Microsoft 365 Defender المدخل. لمزيد من المعلومات، راجع [عرض إرسالات المستخدمين إلى Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
-- إنشاء قاعدة تدفق بريد (تعرف أيضا باسم قاعدة النقل) لإرسال نسخ من الرسائل التي تم إرسالها. للحصول على الإرشادات، راجع [استخدام قواعد تدفق البريد لمعرفة ما يقوم المستخدمون بالإبلاغ عنه إلى Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
+- استخدم صفحة **عمليات الإرسال** في مدخل Microsoft 365 Defender. لمزيد من المعلومات، راجع [عرض عمليات إرسال المستخدم إلى Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
+- إنشاء قاعدة تدفق بريد (تعرف أيضا باسم قاعدة النقل) لإرسال نسخ من الرسائل التي تم الإبلاغ عنها. للحصول على الإرشادات، راجع [استخدام قواعد تدفق البريد للاطلاع على المستخدمين الذين يقومون بالإبلاغ إلى Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).

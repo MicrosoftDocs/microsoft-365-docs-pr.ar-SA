@@ -20,14 +20,16 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: إنشاء نهج التنبيه في مدخل توافق Microsoft Purview أو مدخل Microsoft 365 Defender لمراقبة التهديدات المحتملة وفقدان البيانات ومشكلات الأذونات.
-ms.openlocfilehash: ad7099ddcbc99fd6cf852b1bb7f564c0caf444a7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: beecaf86a013480e0c5546e07189e8be5b622b17
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944250"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995899"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>نهج التنبيه في Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك استخدام نهج التنبيه ولوحة معلومات التنبيه في مدخل توافق Microsoft Purview أو مدخل Microsoft 365 Defender لإنشاء نهج التنبيه ثم عرض التنبيهات التي تم إنشاؤها عندما يقوم المستخدمون بتنفيذ أنشطة تتطابق مع شروط نهج التنبيه. هناك العديد من نهج التنبيه الافتراضية التي تساعدك على مراقبة الأنشطة مثل تعيين امتيازات المسؤول في Exchange Online وهجمات البرامج الضارة وحملات التصيد الاحتيالي ومستويات غير عادية من عمليات حذف الملفات والمشاركة الخارجية.
 
@@ -64,7 +66,7 @@ ms.locfileid: "64944250"
 
 لعرض نهج التنبيه وإنشاءها:
 
-### <a name="microsoft-purview-compliance-portal"></a>مدخل الامتثال ل Microsoft Purview
+### <a name="microsoft-purview-compliance-portal"></a>مدخل توافق Microsoft Purview
 
 انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق</a>، ثم حدد **نهج** **PoliciesAlertAlert** >  > .
 
@@ -186,7 +188,7 @@ ms.locfileid: "64944250"
 
 لعرض التنبيهات:
 
-### <a name="microsoft-purview-compliance-portal"></a>مدخل الامتثال ل Microsoft Purview
+### <a name="microsoft-purview-compliance-portal"></a>مدخل توافق Microsoft Purview
 
  انتقل إلى <https://compliance.microsoft.com> **التنبيهات ثم حددها**. بدلا من ذلك، يمكنك الانتقال مباشرة إلى <https://compliance.microsoft.com/compliancealerts>.
 

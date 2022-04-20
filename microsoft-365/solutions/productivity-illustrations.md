@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 64d1284b315b7d565a924499ef5af2b815263dac
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0aee30dff19f6d1127e63d14fa69e5d72232e305
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945186"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972522"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>صور توضيحية لإنتاجية Microsoft 365
 
@@ -47,7 +47,7 @@ ms.locfileid: "64945186"
 |:-----|:-----|
 |[![صورة مصغرة للملف البياني للمعلومات للمجموعات.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> محدث في مايو 2020|توضح هذه الرسوم التوضيحية بالتفصيل الأنواع المختلفة من المجموعات، وكيفية إنشاء هذه المجموعات وإدارتها، وبعض توصيات الحوكمة.
 
-## <a name="migrate-to-microsoft-365"></a>الترحيل إلى Microsoft 365
+## <a name="migrate-to-microsoft-365"></a>ترحيل بياناتك إلى Microsoft 365
 
 توفر Microsoft أدوات ترحيل مشاركات ملفات الشبكة المحلية ومواقع SharePoint Server Microsoft 365 مع التركيز على حماية المحتوى وضمان أمانه أثناء الترحيل. توضح هذه المجموعة من الرسوم التوضيحية الأساليب المختلفة المتاحة لنقل المحتوى إلى SharePoint Teams OneDrive وكيفية تدفق البيانات عبر العملية.
 
@@ -107,13 +107,13 @@ Recommended Zero Trust capabilities for protecting identities and devices that a
 --> 
 <a name="BKMK_ediscovery"></a>
 
-## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>تصميم Advanced eDiscovery في Microsoft 365
+## <a name="ediscovery-premium-architecture-in-microsoft-365"></a>بنية eDiscovery (Premium) في Microsoft 365
 
-Advanced eDiscovery سير العمل الشامل وتدفق البيانات، بما في ذلك داخل بيئات Microsoft 365 متعددة المناطق الجغرافية.
+سير عمل eDiscovery (Premium) من طرف إلى طرف وتدفق البيانات، بما في ذلك داخل Microsoft 365 بيئات متعددة المناطق الجغرافية.
 
 | البند | الوصف |
 |:-----|:-----|
-|[![ملصق النموذج: تصميم Advanced eDiscovery في Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [عرض كصورة](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [تنزيل بتنسيق PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> تم التحديث في أكتوبر 2020|يتضمن: <ul><li>  سير عمل شامل في بيئة واحدة</li><li>سير عمل من طرف إلى طرف في بيئة Microsoft 365 متعددة المناطق الجغرافية </li><li>تدفق البيانات الشاملة التي تدعم سير عمل EDRM</li> |
+|[![ملصق النموذج: تصميم eDiscovery (Premium) في Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [عرض كصورة](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [تنزيل بتنسيق PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> تم التحديث في أكتوبر 2020|يتضمن: <ul><li>  سير عمل شامل في بيئة واحدة</li><li>سير عمل من طرف إلى طرف في بيئة Microsoft 365 متعددة المناطق الجغرافية </li><li>تدفق البيانات الشاملة التي تدعم سير عمل EDRM</li> |
 
 ## <a name="microsoft-telephony-solutions"></a>حلول الهتفية من Microsoft
 

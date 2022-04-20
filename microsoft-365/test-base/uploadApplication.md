@@ -14,18 +14,20 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 9ee299c0972ed4e286e5a660f5082dd5632167e4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cd0d463e234c439d8b57576375fd6a91e512f753
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934258"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995253"
 ---
-# <a name="upload-your-test-base-package-zip"></a>Upload حزمة قاعدة الاختبار (Zip) 
+# <a name="upload-your-test-base-package-zip"></a>قم بتحميل حزمة قاعدة الاختبار الخاصة بك (Zip) 
 
-في صفحة مدخل قاعدة الاختبار، انتقل إلى خيار **الحزمة الجديدة Upload** على شريط التنقل الأيمن كما هو موضح أدناه:
+في صفحة مدخل قاعدة الاختبار، انتقل إلى خيار **الحزمة الجديدة** على شريط التنقل الأيمن، ثم انقر فوق **تجربة التحميل القديمة** لتمكين تجربة التحميل Zip كما هو موضح أدناه:
 
-:::image type="content" alt-text="Upload حزمة جديدة." source="Media/Upload-New-Package.png" lightbox="Media/Upload-New-Package.png":::
+:::image type="content" alt-text="Upload حزمة جديدة." source="Media/testapplication01.png" lightbox="Media/testapplication01.png":::
+
+:::image type="content" alt-text="تطبيق العملية." source="Media/testapplication21.png" lightbox="Media/testapplication21.png":::
 
 بعد ذلك، اتبع الخطوات أدناه لتحميل حزمة جديدة.
 

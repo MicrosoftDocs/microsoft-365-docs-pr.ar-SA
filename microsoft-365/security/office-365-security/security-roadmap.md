@@ -19,17 +19,16 @@ ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: أهم التوصيات من فريق الأمان عبر الإنترنت في Microsoft لتنفيذ قدرات الأمان لحماية بيئة Microsoft 365 الخاصة بك.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e6174da5a9cbac779c147fb0ea091080bf4338a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3b39edc8adbe16d7f085ca9fec9f30d45f484838
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945418"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64974246"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>مخطط الأمان - أهم الأولويات لأول 30 يوما و90 يوما وما بعدها
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 تتضمن هذه المقالة أهم التوصيات من فريق الأمان عبر الإنترنت في Microsoft لتنفيذ قدرات الأمان لحماية بيئة Microsoft 365 الخاصة بك. تم تكييف هذه المقالة من جلسة عمل Microsoft Ignite — [Microsoft 365 آمنة مثل محترف الأمان عبر الإنترنت: أهم الأولويات لأول 30 يوما و90 يوما وما بعدها](https://www.youtube.com/watch?v=luignzNyR-o). تم تطوير هذه الجلسة وتقديمها من قبل Mark Simos و Matt Kemelhar، مهندسي الأمان السيبراني للمؤسسات.
 

@@ -15,16 +15,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 28f110c6b236721debdb5585263dd835f2a5a658
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 07740a6569f67b04db22351f4b4e1214ccfbc787
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993129"
+ms.locfileid: "64973696"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>ترحيل عمليات بحث eDiscovery القديمة وحتفظ بها إلى مدخل التوافق
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يوفر مدخل توافق Microsoft Purview تجربة محسنة لاستخدام eDiscovery، بما في ذلك: الموثوقية الأعلى والأداء الأفضل والعديد من الميزات المصممة لسير عمل eDiscovery بما في ذلك الحالات لتنظيم المحتوى حسب المسألة ومجموعات المراجعة لمراجعة المحتوى والتحليلات للمساعدة في احصاء البيانات للمراجعة مثل التجميع شبه المكرر ومؤشرات ترابط البريد الإلكتروني وتحليل النسق والترميز التنبؤي.
 

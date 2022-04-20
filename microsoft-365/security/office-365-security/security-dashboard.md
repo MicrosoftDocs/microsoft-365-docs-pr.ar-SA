@@ -1,5 +1,5 @@
 ---
-title: نظرة عامة حول لوحة معلومات الأمان
+title: نظرة عامة على لوحة معلومات الأمان
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -16,118 +16,117 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: استخدم لوحة معلومات الأمان الجديدة لمراجعة Office 365 الحماية من المخاطر، وعرض تنبيهات الأمان والعمل عليها.
+description: استخدم لوحة معلومات الأمان الجديدة لمراجعة Office 365 حالة الحماية من التهديدات، وعرض تنبيهات الأمان والعمل عليها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4bc9d813732c4c67531aeb47a673111d62bbf417
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: defda5c112cf29cb944b502f442cf0e721a32676
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475730"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64971727"
 ---
-# <a name="security-dashboard-in-the-security--compliance-center"></a>لوحة معلومات الأمان في مركز & الأمان
+# <a name="security-dashboard-in-the-security--compliance-center"></a>لوحة معلومات الأمان في مركز توافق & الأمان
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+## <a name="basic-functions-and-how-to-open-security-dashboard"></a>الوظائف الأساسية وكيفية فتح لوحة معلومات الأمان
 
-## <a name="basic-functions-and-how-to-open-security-dashboard"></a>الدالات الأساسية وكيفية فتح لوحة معلومات الأمان
-
-يمكن مركز & الأمان في <https://protection.office.com> مؤسستك من إدارة حماية البيانات والتوافق. إذا افترضنا أن لديك الأذونات اللازمة، تمكنك لوحة معلومات الأمان من مراجعة حالة الحماية من المخاطر، بالإضافة إلى عرض تنبيهات الأمان والتصرف بشأنها.
+يمكن مركز توافق & الأمان في <https://protection.office.com> مؤسستك من إدارة حماية البيانات والامتثال. بافتراض أن لديك الأذونات اللازمة، تمكنك لوحة معلومات الأمان من مراجعة حالة الحماية من التهديدات، بالإضافة إلى عرض تنبيهات الأمان والعمل عليها.
 
 شاهد الفيديو للحصول على نظرة عامة، ثم اقرأ هذه المقالة لمعرفة المزيد.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
 
-استنادا إلى ما يتضمنه اشتراك مؤسستك، تتضمن لوحة معلومات الأمان العديد من عناصر واجهة المستخدم، مثل ملخص إدارة المخاطر، حالة الحماية من المخاطر، الكشف عن التهديدات الأسبوعية العالمية، البرامج الضارة، والمزيد، كما هو موضح في الأقسام التالية.
+استنادا إلى ما يتضمنه اشتراك مؤسستك، تتضمن لوحة معلومات الأمان العديد من عناصر واجهة المستخدم، مثل ملخص إدارة المخاطر وحالة الحماية من التهديدات واكتشافات التهديدات الأسبوعية العالمية والبرامج الضارة والمزيد، كما هو موضح في الأقسام التالية.
 
-لعرض لوحة معلومات الأمان في مركز & الأمان، انتقل إلى لوحة **معلومات إدارة** \> **المخاطر**. الانتقال مباشرة إلى لوحة معلومات الأمان، استخدم <https://protection.office.com/searchandinvestigation/dashboard>.
+لعرض لوحة معلومات الأمان في مركز توافق & الأمان، انتقل إلى **لوحة معلومات** **إدارة** \> التهديدات. للانتقال مباشرة إلى لوحة معلومات الأمان، استخدم <https://protection.office.com/searchandinvestigation/dashboard>.
 
 > [!NOTE]
-> يجب أن تكون مسؤولا عاما أو مسؤول أمان أو قارئ أمان لعرض لوحة معلومات الأمان. تتطلب بعض عناصر واجهة المستخدم أذونات إضافية لعرضها. لمعرفة المزيد، راجع [الأذونات في مركز & الأمان](permissions-in-the-security-and-compliance-center.md)[.
+> يجب أن تكون مسؤولا عاما أو مسؤول أمان أو قارئ أمان لعرض لوحة معلومات الأمان. تتطلب بعض عناصر واجهة المستخدم أذونات إضافية لعرضها. لمعرفة المزيد، راجع ["الأذونات" في مركز توافق & الأمان](permissions-in-the-security-and-compliance-center.md)[.
 
 ## <a name="threat-management-summary"></a>ملخص إدارة المخاطر
 
-يخبرك عنصر واجهة مستخدم ملخص إدارة المخاطر بنظرة سريعة حول كيفية حماية مؤسستك من التهديدات خلال الأيام السبعة (7) الماضية.
+يخبرك عنصر واجهة مستخدم ملخص إدارة المخاطر بنظرة سريعة حول كيفية حماية مؤسستك من التهديدات خلال الأيام السبعة الماضية (7).
 
-:::image type="content" source="../../media/SecDash-ThreatMgmtSummary.png" alt-text="لوحة معلومات الأمان - عنصر واجهة مستخدم ملخص إدارة المخاطر" lightbox="../../media/SecDash-ThreatMgmtSummary.png":::
+:::image type="content" source="../../media/SecDash-ThreatMgmtSummary.png" alt-text="لوحة معلومات الأمان - عنصر واجهة مستخدم ملخص إدارة التهديدات" lightbox="../../media/SecDash-ThreatMgmtSummary.png":::
 
 تعتمد المعلومات التي ستشاهدها في ملخص إدارة المخاطر على ما يتضمنه اشتراكك. يصف الجدول التالي المعلومات المضمنة Office 365 E3 Office 365 E5.
 
 |Office 365 E3|Office 365 E5|
 |---|---|
-|رسائل البرامج الضارة المحظورة<br>رسائل التصيد الاحتيالي المحظورة<br>الرسائل التي تم إعلام المستخدمين بها<br><br><br><br>|رسائل البرامج الضارة المحظورة<br>رسائل التصيد الاحتيالي المحظورة<br>الرسائل التي تم إعلام المستخدمين بها<br>البرامج الضارة التي تم حظرها في اليوم الصفري<br>تم الكشف عن رسائل التصيد الاحتيالي المتقدمة<br>عناوين URL الضارة المحظورة|
+|تم حظر رسائل البرامج الضارة<br>رسائل التصيد الاحتيالي محظورة<br>الرسائل التي أبلغ عنها المستخدمون<br><br><br><br>|تم حظر رسائل البرامج الضارة<br>رسائل التصيد الاحتيالي محظورة<br>الرسائل التي أبلغ عنها المستخدمون<br>تم حظر البرامج الضارة في اليوم الصفري<br>تم الكشف عن رسائل تصيد احتيالي متقدمة<br>عناوين URL الضارة محظورة|
 
-لعرض عنصر واجهة مستخدم ملخص إدارة المخاطر أو الوصول إليه، يجب أن تكون لديك الأذونات لعرض Defender لـ Office 365 التقارير. لمعرفة المزيد، راجع [ما الأذونات المطلوبة لعرض Defender لـ Office 365 التقارير؟](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
+لعرض عنصر واجهة مستخدم ملخص إدارة المخاطر أو الوصول إليه، يجب أن يكون لديك أذونات لعرض تقارير Defender لـ Office 365. لمعرفة المزيد، راجع [الأذونات المطلوبة لعرض تقارير Defender لـ Office 365؟](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
-## <a name="threat-protection-status"></a>حالة الحماية من المخاطر
+## <a name="threat-protection-status"></a>حالة الحماية من التهديدات
 
-يعرض عنصر واجهة مستخدم حالة الحماية من المخاطر فعالية الحماية من المخاطر من خلال طريقة عرض متصاعدة ومفصلة من التصيد الاحتيالي والبرامج الضارة.
+يظهر عنصر واجهة مستخدم حالة الحماية من التهديدات فعالية الحماية من التهديدات مع عرض مفصل ومتجه للتصيد الاحتيالي والبرامج الضارة.
 
-:::image type="content" source="../../media/tpswidget.png" alt-text="عنصر واجهة مستخدم حالة الحماية من المخاطر" lightbox="../../media/tpswidget.png":::
+:::image type="content" source="../../media/tpswidget.png" alt-text="عنصر واجهة مستخدم حالة الحماية من التهديدات" lightbox="../../media/tpswidget.png":::
 
-تعتمد التفاصيل على ما إذا كان Microsoft 365 يتضمن [Exchange Online Protection (](exchange-online-protection-overview.md)EOP) مع أو [بدون](defender-for-office-365.md) Microsoft Defender لـ Office 365.
+تعتمد التفاصيل على ما إذا كان اشتراكك في Microsoft 365 يتضمن [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) مع [Microsoft Defender لـ Office 365 أو بدونها](defender-for-office-365.md).
 
 |إذا كان اشتراكك يتضمن...|سترى هذه التفاصيل|
 |---|---|
-|EOP ولكن ليس Microsoft Defender لـ Office 365|البريد الإلكتروني الضار الذي تم اكتشافه وحظره بواسطة EOP.<p> راجع [تقرير حالة الحماية من المخاطر (EOP).](view-email-security-reports.md#threat-protection-status-report)|
-|Microsoft Defender لـ Office 365|تم الكشف عن المحتوى الضار والبريد الإلكتروني الضار وحظره بواسطة EOP Defender لـ Office 365 <p> العدد المجمع لرسائل البريد الإلكتروني الفريدة التي تحتوي على محتوى ضار تم حظره بواسطة محرك الحماية [](zero-hour-auto-purge.md)من البرامج الضارة وميزات إزالة تلقائية لمدة ساعة وميزات Defender لـ Office 365 (بما في ذلك [ارتباطات خزينة](safe-links.md) ومرفقات [خزينة](safe-attachments.md) و مكافحة التصيد الاحتيالي [في Defender لـ Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> راجع [تقرير حالة الحماية من المخاطر](view-reports-for-mdo.md#threat-protection-status-report).|
+|EOP ولكن ليس Microsoft Defender لـ Office 365|البريد الإلكتروني الضار الذي تم اكتشافه وحظره بواسطة EOP.<p> راجع [تقرير حالة الحماية من التهديدات (EOP).](view-email-security-reports.md#threat-protection-status-report)|
+|Microsoft Defender لـ Office 365|المحتوى الضار والبريد الإلكتروني الضار الذي تم اكتشافه وحظره بواسطة EOP و Defender لـ Office 365 <p> العدد المجمع لرسائل البريد الإلكتروني الفريدة مع محتوى ضار محظور بواسطة محرك مكافحة البرامج الضارة، [والإزالة التلقائية لمدة صفر ساعة](zero-hour-auto-purge.md)، وميزات Defender لـ Office 365 (بما في ذلك [الارتباطات خزينة](safe-links.md) [والمرفقات خزينة](safe-attachments.md) [ومكافحة التصيد الاحتيالي في Defender لـ Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). <p> راجع [تقرير حالة الحماية من التهديدات](view-reports-for-mdo.md#threat-protection-status-report).|
 
-لعرض عنصر واجهة مستخدم حالة الحماية من المخاطر أو الوصول إليه، يجب أن تكون لديك الأذونات لعرض Defender لـ Office 365 التقارير. لمعرفة المزيد، راجع [ما الأذونات المطلوبة لعرض Defender لـ Office 365 التقارير؟](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
+لعرض عنصر واجهة مستخدم حالة الحماية من التهديدات أو الوصول إليه، يجب أن يكون لديك أذونات لعرض تقارير Defender لـ Office 365. لمعرفة المزيد، راجع [الأذونات المطلوبة لعرض تقارير Defender لـ Office 365؟](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
-## <a name="global-weekly-threat-detections"></a>الكشف عن المخاطر الأسبوعية العالمية
+## <a name="global-weekly-threat-detections"></a>عمليات الكشف الأسبوعية العالمية عن التهديدات
 
-يعرض عنصر واجهة مستخدم الكشف عن المخاطر الأسبوعية العالمية عدد التهديدات التي تم اكتشافها في رسائل البريد الإلكتروني خلال الأيام السبعة الماضية (7).
+يظهر عنصر واجهة مستخدم Global Weekly Threat Detections عدد التهديدات التي تم اكتشافها في رسائل البريد الإلكتروني على مدار الأيام السبعة الماضية (7) أيام.
 
-:::image type="content" source="../../media/globalweeklythreatdetections.png" alt-text="عنصر واجهة مستخدم الكشف عن المخاطر الأسبوعية العالمية" lightbox="../../media/globalweeklythreatdetections.png":::
+:::image type="content" source="../../media/globalweeklythreatdetections.png" alt-text="عنصر واجهة مستخدم Global Weekly Threat Detections" lightbox="../../media/globalweeklythreatdetections.png":::
 
 يتم حساب المقاييس كما هو موضح في الجدول التالي:
 
 |متري|كيفية حسابه|
 |---|---|
-|الرسائل الممسوحة ضوئيا|عدد رسائل البريد الإلكتروني الممسوحة ضوئيا مضروبة في عدد المستلمين|
-|تم إيقاف التهديدات|عدد رسائل البريد الإلكتروني المحددة على أنها تحتوي على برامج ضارة مضروبة في عدد المستلمين|
-|تم حظره [بواسطة Defender لـ Office 365](defender-for-office-365.md)|عدد رسائل البريد الإلكتروني التي تم حظرها Defender لـ Office 365 مضروبا في عدد المستلمين|
-|تمت الإزالة بعد التسليم|عدد الرسائل التي تمت إزالتها [بواسطة إزالة تلقائية لمدة ساعة (ZAP)](zero-hour-auto-purge.md) مضروبا في عدد المستلمين|
+|الرسائل الممسوحة ضوئيا|عدد رسائل البريد الإلكتروني التي تم مسحها ضوئيا مضروبة في عدد المستلمين|
+|تم إيقاف التهديدات|عدد رسائل البريد الإلكتروني التي تم تحديدها على أنها تحتوي على برامج ضارة مضروبة في عدد المستلمين|
+|محظور بواسطة [Defender لـ Office 365](defender-for-office-365.md)|عدد رسائل البريد الإلكتروني المحظورة بواسطة Defender لـ Office 365 مضروبة في عدد المستلمين|
+|تمت الإزالة بعد التسليم|عدد الرسائل التي تمت إزالتها بواسطة [الإزالة التلقائية بدون ساعة (ZAP)](zero-hour-auto-purge.md) مضروبة في عدد المستلمين|
 
-## <a name="malware"></a>البرامج الضارة
+## <a name="malware"></a>البرامج الضاره
 
-تظهر عناصر واجهة مستخدم البرامج الضارة تفاصيل حول اتجاهات البرامج الضارة وأنواع عائلة البرامج الضارة على مدار الأيام السبعة (7) الماضية.
+تعرض عناصر واجهة المستخدم للبرامج الضارة تفاصيل حول اتجاهات البرامج الضارة وأنواع عائلة البرامج الضارة على مدى الأيام السبعة الماضية (7) أيام.
 
 :::image type="content" source="../../media/malwarewidgetatpe5.png" alt-text="اتجاهات البرامج الضارة وأنواع العائلة" lightbox="../../media/malwarewidgetatpe5.png":::
 
 ## <a name="insights"></a>Insights
 
-Insights المشاكل الأساسية التي يجب عليك مراجعتها، بل تتضمن أيضا توصيات والإجراءات التي يجب التفكير فيها.
+Insights ليس فقط المشكلات الرئيسية التي يجب مراجعتها، بل تتضمن أيضا توصيات وإجراءات يجب مراعاتها.
 
-:::image type="content" source="../../media/smartinsights.png" alt-text="الرؤى الذكية" lightbox="../../media/smartinsights.png":::
+:::image type="content" source="../../media/smartinsights.png" alt-text="نتائج التحليلات الذكية" lightbox="../../media/smartinsights.png":::
 
-على سبيل المثال، قد ترى أنه يتم تسليم رسائل البريد الإلكتروني التصيد الاحتيالي لأن بعض المستخدمين قد عطلوا خيارات البريد غير الهام. لمعرفة المزيد حول كيفية عمل الرؤى، راجع التقارير والأفكار [في مركز](reports-and-insights-in-security-and-compliance.md) التوافق & الأمان.
+على سبيل المثال، قد ترى أنه يتم تسليم رسائل البريد الإلكتروني للتصيد الاحتيالي لأن بعض المستخدمين قاموا بتعطيل خيارات البريد غير الهام الخاصة بهم. لمعرفة المزيد حول كيفية عمل الرؤى، راجع [التقارير والرؤى في مركز التوافق & الأمان](reports-and-insights-in-security-and-compliance.md).
 
 ## <a name="threat-investigation-and-response"></a>التحقيق في التهديدات والاستجابة لها
 
-إذا كان اشتراك مؤسستك يتضمن Microsoft Defender لـ Office 365 [2](office-365-ti.md)، فإن لوحة معلومات الأمان تحتوي على قسم يتضمن أدوات متقدمة للتحري عن المخاطر والاستجابة لها. تتضمن هذه الأدوات [قدرات الاستجابة والتحري التلقائية](automated-investigation-response-office.md). يمكن أن تكون الاستجابة والتحريات التلقائية مفيدة في سيناريوهات مثل معالجة حسابات المستخدمين [التي تم اختراقها بسرعة](address-compromised-users-quickly.md).
+إذا كان اشتراك مؤسستك يتضمن [Microsoft Defender لـ Office 365 الخطة 2](office-365-ti.md)، فإن "لوحة معلومات الأمان" تحتوي على قسم يتضمن أدوات متقدمة للتحقيق في التهديدات والاستجابة لها. وتشمل هذه الأدوات [قدرات التحقيق والاستجابة التلقائية](automated-investigation-response-office.md). يمكن أن يكون التحقيق التلقائي والاستجابة مفيدين في سيناريوهات مثل [معالجة حسابات المستخدمين المخترقة بسرعة](address-compromised-users-quickly.md).
 
-لمعرفة المزيد، راجع [بدء استخدام الاستجابة والتحري التلقائي (AIR) في Office 365](office-365-air.md).
+لمعرفة المزيد، راجع [بدء استخدام التحقيق التلقائي والاستجابة (AIR) في Office 365](office-365-air.md).
 
 ## <a name="trends"></a>الاتجاهات
 
-يوجد بالقرب من أسفل لوحة معلومات الأمان قسم **الاتجاهات** ، الذي يلخص اتجاهات تدفق البريد الإلكتروني لمنظمتك. توفر التقارير معلومات حول البريد الإلكتروني المصنف كبريد عشوائي، والبرامج الضارة، ومحاولات التصيد الاحتيالي، والبريد الإلكتروني الجيد. انقر فوق لوحة لعرض معلومات أكثر تفصيلا في التقرير.
+يوجد بالقرب من أسفل لوحة معلومات الأمان قسم **"الاتجاهات** "، الذي يلخص اتجاهات تدفق البريد الإلكتروني لمؤسستك. توفر التقارير معلومات حول البريد الإلكتروني المصنف على أنه بريد عشوائي، والبرامج الضارة، ومحاولات التصيد الاحتيالي، والبريد الإلكتروني الجيد. انقر فوق لوحة لعرض معلومات أكثر تفصيلا في التقرير.
 
-:::image type="content" source="../../media/trends.png" alt-text="القسم &quot;الاتجاهات&quot; الذي يلخص اتجاهات تدفق البريد الإلكتروني في المؤسسة" lightbox="../../media/trends.png":::
+:::image type="content" source="../../media/trends.png" alt-text="قسم &quot;الاتجاهات&quot; الذي يلخص اتجاهات تدفق البريد الإلكتروني للمؤسسة" lightbox="../../media/trends.png":::
 
-وإذا كان اشتراك مؤسستك يتضمن [Defender لـ Office 365 2](office-365-ti.md)، سيكون لديك أيضا تقرير تنبيهات إدارة المخاطر الأخيرة في هذا القسم الذي يمكن  فريق الأمان من عرض تنبيهات الأمان ذات الأولوية العالية واتخاذ إجراء بشأنها.
+وإذا كان اشتراك مؤسستك يتضمن [Defender لـ Office 365 الخطة 2](office-365-ti.md)، فسيكون لديك أيضا تقرير **تنبيهات إدارة التهديدات الأخيرة** في هذا القسم الذي يمكن فريق الأمان من عرض تنبيهات الأمان ذات الأولوية العالية واتخاذ إجراء بشأنها.
 
-لعرض عنصر واجهة مستخدم البريد الإلكتروني المرسل والمستلم أو الوصول إليه، يجب أن يكون لديك الأذونات لعرض Defender لـ Office 365 الواردة. لمعرفة المزيد، راجع [ما الأذونات المطلوبة لعرض Defender لـ Office 365 التقارير؟](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
+لعرض عنصر واجهة مستخدم "البريد الإلكتروني المرسل" و"المستلم" أو الوصول إليه، يجب أن يكون لديك أذونات لعرض تقارير Defender لـ Office 365. لمعرفة المزيد، راجع [الأذونات المطلوبة لعرض تقارير Defender لـ Office 365؟](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports).
 
-لعرض عنصر واجهة مستخدم تنبيهات إدارة المخاطر الأخيرة أو الوصول إليه، يجب أن يكون لديك الأذونات لعرض التنبيهات. لمعرفة المزيد، راجع [أذونات RBAC المطلوبة لعرض التنبيهات](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
+لعرض عنصر واجهة مستخدم "تنبيهات إدارة المخاطر الأخيرة" أو الوصول إليه، يجب أن يكون لديك أذونات لعرض التنبيهات. لمعرفة المزيد، راجع [أذونات RBAC المطلوبة لعرض التنبيهات](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts).
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 
-[عرض تقارير أمان البريد الإلكتروني في مركز & الأمان](view-email-security-reports.md)
+[عرض تقارير أمان البريد الإلكتروني في مركز توافق & الأمان](view-email-security-reports.md)
 
 [عرض تقارير Microsoft Defender لـ Office 365](view-reports-for-mdo.md)
 
-[Defender لـ Office 365](defender-for-office-365.md)
+[دليل إعداد Microsoft Defender لـ Office 365](defender-for-office-365.md)
 
-[Office 365 الاستجابة والتحري عن المخاطر](office-365-ti.md)
+[Office 365 التحقيق والاستجابة للمخاطر](office-365-ti.md)

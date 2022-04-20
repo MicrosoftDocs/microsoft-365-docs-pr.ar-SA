@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: يمكن للمسؤول معرفة كيفية استيراد ملفات PST بشكل مجمع إلى علب بريد Microsoft 365 عن طريق نسخ ملفات PST إلى محرك أقراص ثابت ثم شحنها إلى Microsoft.
-ms.openlocfilehash: 53022477b034c0620177b00c0c171c8d6c36e250
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d2255a01c49e3837365735e1c3300b7f6b34c42c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934632"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995987"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>استخدام شحن محرك الأقراص لاستيراد ملفات PST لمؤسستك
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **هذه المقالة مخصصة للمسؤولين. هل تحاول استيراد ملفات PST إلى علبة البريد الخاصة بك؟ راجع [استيراد البريد الإلكتروني وجهات الاتصال والتقويم من ملف pst. Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    

@@ -22,14 +22,16 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على خصائص البريد الإلكتروني والمستند التي يمكنك البحث عنها باستخدام أدوات البحث eDiscovery في Microsoft 365.
-ms.openlocfilehash: 09c939f7d92bf06a9eab89d8ac45fec78bd424a8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f00d257a558d252ca0176166d42d02cd72dad0aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936632"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995371"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>استعلامات الكلمات الأساسية وشروط البحث في eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تصف هذه المقالة خصائص البريد الإلكتروني والمستند التي يمكنك البحث فيها في عناصر البريد الإلكتروني ومحادثات الدردشة Microsoft Teams في Exchange Online والمستندات المخزنة على مواقع SharePoint OneDrive for Business باستخدام أدوات البحث eDiscovery في مدخل توافق Microsoft Purview. يتضمن ذلك البحث عن المحتوى، وMicrosoft Purview eDiscovery (قياسي)، وMicrosoft Purview eDiscovery (Premium) (عمليات البحث في eDiscovery في eDiscovery (Premium) تسمى *المجموعات*). يمكنك أيضا استخدام **\*cmdlets -ComplianceSearch** في Security & Compliance Center PowerShell للبحث عن هذه الخصائص. تصف المقالة أيضا:
 

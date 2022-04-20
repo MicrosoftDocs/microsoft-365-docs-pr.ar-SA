@@ -1,5 +1,5 @@
 ---
-title: إعادة توجيه المستخدمين من Office 365 الأمان والتوافق إلى مركز التوافق في Microsoft 365
+title: إعادة توجيه المستخدمين من مركز الأمان والتوافق Office 365 إلى مدخل توافق Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,38 +9,40 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: تعرف على إعادة توجيه المستخدمين تلقائيا من مستخدمي Office 365 الأمان والتوافق إلى مركز التوافق في Microsoft 365.
+description: تعرف على إعادة التوجيه التلقائي للمستخدمين من مستخدمي مركز الأمان والتوافق Office 365 إلى مدخل توافق Microsoft Purview.
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 668891df31636a4975eea4bbaa12d83a8c042f24
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: b65f2521afd3802274a9c6e605ced16a66c0a76d
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63571699"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972979"
 ---
-# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>إعادة توجيه المستخدمين من Office 365 الأمان والتوافق إلى مركز التوافق في Microsoft 365
+# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-purview-compliance-portal"></a>إعادة توجيه المستخدمين من مركز الأمان والتوافق Office 365 إلى مدخل توافق Microsoft Purview
 
-تشرح هذه المقالة كيفية عمل إعادة التوجيه التلقائي للمستخدمين الذين الوصول إلى حلول التوافق من Office 365 الأمان والتوافق (protection.office.com) إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مركز التوافق في Microsoft 365</a>.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+تشرح هذه المقالة كيفية عمل إعادة التوجيه التلقائي للمستخدمين الذين يصلون إلى حلول التوافق من Office 365 مركز الأمان والتوافق (protection.office.com) إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل توافق Microsoft Purview</a>.
 
 ## <a name="what-to-expect"></a>ما يجب توقعه
 
-يتم تمكين إعادة التوجيه التلقائي بشكل افتراضي لجميع المستخدمين الذين الوصول إلى الحلول ذات الصلة بالتوافق في Office 365 الأمان والتوافق (protection.office.com):
+يتم تمكين إعادة التوجيه التلقائي بشكل افتراضي لجميع المستخدمين الذين يصلون إلى الحلول المتعلقة بالامتثال في Office 365 الأمان والتوافق (protection.office.com):
 
-- [Advanced eDiscovery](overview-ediscovery-20.md)
+- [eDiscovery (Premium)](overview-ediscovery-20.md)
 - [توافق الاتصالات](communication-compliance.md)
-- [البحث في المحتوى](search-for-content.md)
-- [eDiscovery الأساسي](get-started-core-ediscovery.md)
+- [البحث عن المحتوى](search-for-content.md)
+- [eDiscovery (قياسي)](get-started-core-ediscovery.md)
 - [تصنيف البيانات](data-classification-overview.md)
-- [منع فقدان البيانات (DLP)](dlp-learn-about-dlp.md)
+- [Microsoft Purview Data Loss Prevention (DLP)](dlp-learn-about-dlp.md)
 - [طلبات موضوع البيانات](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)
-- [إدارة المعلومات](manage-information-governance.md)
+- [إدارة المعلومات](manage-data-governance.md)
 - [إدارة السجلات](records-management.md)
 
-يتم توجيه المستخدمين تلقائيا إلى حلول التوافق نفسها في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مركز التوافق في Microsoft 365.</a>
+يتم توجيه المستخدمين تلقائيا إلى نفس حلول التوافق في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق</a>.
 
-لا تمكن هذه الميزة و عناصر التحكم المقترنة إعادة التوجيه التلقائي لمميزات الأمان ل Microsoft Defender Office 365. لتمكين إعادة توجيه ميزات الأمان، راجع إعادة توجيه الحسابات من [Microsoft Defender Office 365 إلى Microsoft 365 Defender للحصول](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) على التفاصيل.
+لا تمكن هذه الميزة وعناصر التحكم المقترنة إعادة التوجيه التلقائي لميزات الأمان Microsoft Defender لـ Office 365. لتمكين إعادة التوجيه لميزات الأمان، راجع [إعادة توجيه الحسابات من Microsoft Defender لـ Office 365 إلى مدخل Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) للحصول على التفاصيل.
 
 ## <a name="related-information"></a>المعلومات ذات الصلة
 
-- [مركز التوافق في Microsoft 365 عامة](/microsoft-365/compliance/microsoft-365-compliance-center)
+- [نظرة عامة على مدخل الامتثال ل Microsoft Purview](/microsoft-365/compliance/microsoft-365-compliance-center)

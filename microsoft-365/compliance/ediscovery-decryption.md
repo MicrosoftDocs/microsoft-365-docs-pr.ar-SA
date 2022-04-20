@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية معالجة أدوات eDiscovery Microsoft 365 للمستندات المشفرة المرفقة برسائل البريد الإلكتروني والمخزنة في SharePoint Online و OneDrive for Business.
-ms.openlocfilehash: 91eef14c1cb4dc91657a1d9a26ab00b1eb6f6d92
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e010ef1ff169467b442e137bc31d3640aa5a8cb4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948760"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994427"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>فك التشفير في أدوات eDiscovery Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يعد التشفير جزءا مهما من استراتيجية حماية الملفات وحماية المعلومات. تستخدم المؤسسات من جميع الأنواع تقنية التشفير لحماية المحتوى الحساس داخل مؤسستها والتأكد من أن الأشخاص المناسبين فقط لديهم حق الوصول إلى هذا المحتوى.
 

@@ -16,14 +16,16 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: اقرأ توصيات إعداد التدريب على الصلة في eDiscovery (Premium) لتسجيل الملفات حسب أهميتها وإنشاء نتائج تحليلية.
-ms.openlocfilehash: 66afbb3b8e7d8c2a4e266aa7fb63dc8434f9c8a6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f1a4f1ca9ad9fbf2b63439d463e83723dc2a0e0a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946012"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994843"
 ---
 # <a name="manage-relevance-setup-in-ediscovery-premium-classic"></a>إدارة إعداد الصلة في eDiscovery (Premium) (كلاسيكي)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > يتطلب Microsoft Purview eDiscovery (Premium) Office 365 E3 باستخدام الوظيفة الإضافية "التوافق المتقدم" أو اشتراك E5 لمؤسستك. إذا لم تكن لديك هذه الخطة وتريد تجربة eDiscovery (Premium)، يمكنك [التسجيل للحصول على إصدار تجريبي من Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

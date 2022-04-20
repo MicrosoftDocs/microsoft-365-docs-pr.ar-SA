@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل بيانات CellTrust SL2 واستخدامه لاستيراد بيانات اتصالات الجوال وأرشفتها.
-ms.openlocfilehash: 286546950c29732e1d33738ffbe7a74f2f6dcca2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a4cbfc9dccd2541de0a9dca1a3791d5f213aa73d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940676"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996383"
 ---
 # <a name="archive-data-from-celltrust-sl2-to-microsoft-365"></a>أرشفة البيانات من CellTrust SL2 إلى Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يلتقط CellTrust SL2 بيانات اتصالات الهاتف المحمول ويتكامل مع تقنيات الأرشفة الرائدة لتلبية متطلبات الاكتشاف الإلكتروني للوائح مثل FINRA وHIPA و FOIA وTCPA. يقوم SL2 Data Connector باستيراد عناصر اتصالات الجوال إلى Microsoft 365. تصف هذه المقالة عملية دمج SL2 مع Microsoft 365 باستخدام CellTrust SL2 Data Connector للأرشفة. يفترض إكمال هذه العملية أنك اشتركت في خدمة CellTrust SL2 وأنك على دراية ببنية SL2. للحصول على معلومات حول CellTrust SL2، راجع <https://www.celltrust.com>.
 

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: يتم تشغيل تسجيل تدقيق علبة البريد بشكل افتراضي في Microsoft 365 (يسمى أيضا "تدقيق علبة البريد الافتراضي" أو "تدقيق علبة البريد بشكل افتراضي"). يعني هذا التكوين أن بعض الإجراءات التي يقوم بها مالكو علب البريد والمفوضون والمسؤولين يتم تسجيلها تلقائيا في سجل تدقيق علبة البريد، حيث يمكنك البحث عن الأنشطة التي يتم تنفيذها على علبة البريد.
-ms.openlocfilehash: bb8170b603bc72459e3bbd55fa256df188f42f65
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: d5d966cf4d5b7c58c15df4ce8d4039331ebca8c4
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952875"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64972618"
 ---
 # <a name="manage-mailbox-auditing"></a>إدارة تدقيق علبة البريد
 
@@ -83,7 +83,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 - **المسؤول**:
   - يتم البحث في علبة البريد باستخدام إحدى أدوات Microsoft eDiscovery التالية:
     - البحث عن المحتوى في مركز التوافق.
-    - eDiscovery أو Advanced eDiscovery في مركز التوافق.
+    - eDiscovery أو eDiscovery (Premium) في مركز التوافق.
     - In-Place eDiscovery في Exchange Online.
   - يتم الوصول إلى علبة البريد باستخدام محرر MAPI Microsoft Exchange Server.
 

@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: ابحث عن محتوى قد يكون ذا صلة بحالة eDiscovery (قياسي).
-ms.openlocfilehash: d97acf066914a7dee0059f27aa0127efe52ea5f3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 00a7c7bdd565a5fc184281fa467db3c56b1c6288
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971594"
+ms.locfileid: "64995327"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>البحث عن محتوى في حالة eDiscovery (قياسي)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بعد إنشاء حالة Microsoft Purview eDiscovery (قياسي) ووضع الأشخاص المعنيين بالحالة قيد الاحتجاز، يمكنك إنشاء عملية بحث واحدة أو أكثر وتشغيلها بحثا عن محتوى ذي صلة بالحالة. لا يتم سرد عمليات البحث المقترنة بحالة eDiscovery (Standard) في صفحة **البحث في المحتوى** في مدخل توافق Microsoft Purview. يتم سرد عمليات البحث هذه في صفحة **عمليات البحث** في حالة eDiscover الأساسية المقترنة بعمليات البحث. وهذا يعني أيضا أنه لا يمكن الوصول إلى عمليات البحث المقترنة بحالة إلا من قبل أعضاء الحالة.
 

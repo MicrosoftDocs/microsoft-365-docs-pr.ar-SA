@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل TeleMessage لاستيراد بيانات SMS و MMS وأرشفتها من شبكة Verizon في Microsoft 365. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: 5df1adad87c9995caeed4e090a7db0e7fbdf7566
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: efa310c17441db67eed31d729daa28dd34755538
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936962"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994953"
 ---
 # <a name="set-up-a-connector-to-archive-verizon-network-data"></a>إعداد موصل أرشفة بيانات شبكة Verizon
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل TeleMessage في مدخل توافق Microsoft Purview لاستيراد بيانات خدمة المراسلة القصيرة (SMS) وخدمة المراسلة متعددة الوسائط (MMS) وأرشفتها من شبكة Verizon. بعد إعداد موصل وتكوينه، يتصل بشبكة Verizon الخاصة بمؤسستك مرة واحدة كل يوم ويستورد بيانات SMS و MMS إلى علب البريد في Microsoft 365.
 

@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: عند إجراء تحليل eDiscovery (Premium)، يقوم مؤشر ترابط البريد الإلكتروني بتحليل محادثة بريد إلكتروني وفصل كل رسالة إلى فئات مختلفة.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 51cc9ce09f1f2c9c95c3ab5a7f2175516c9ed199
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f2cdd3a10250a256179ce3fe959a88e0cbef01ba
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948694"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995481"
 ---
 # <a name="email-threading-in-ediscovery-premium"></a>مؤشر ترابط البريد الإلكتروني في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ضع في اعتبارك محادثة بريد إلكتروني جارية منذ فترة. في معظم الحالات، ستتضمن الرسالة الأخيرة في مؤشر ترابط البريد الإلكتروني محتويات كافة الرسائل السابقة. لذلك، فإن مراجعة الرسالة الأخيرة ستعطي سياقا كاملا للمحادثة التي حدثت في مؤشر الترابط. تحدد مؤشرات ترابط البريد الإلكتروني هذه الرسائل بحيث يمكن للمراجعين مراجعة جزء صغير من المستندات المجمعة دون فقدان أي سياق.
 

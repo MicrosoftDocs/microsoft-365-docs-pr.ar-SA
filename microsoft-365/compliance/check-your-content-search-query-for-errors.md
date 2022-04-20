@@ -16,14 +16,16 @@ search.appverid:
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
 description: تعرف على كيفية اكتشاف الأخطاء والأخطاء الكتابية في استعلام الكلمة الأساسية لعمليات البحث في eDiscovery قبل تشغيل البحث.
-ms.openlocfilehash: 440cd9c54d839173e8eeb6022a840f90305a1a92
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dd09efd162ce8647fecbd7d5c4740588ada4a396
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938522"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996261"
 ---
 # <a name="check-your-search-query-for-errors"></a>التحقق من أخطاء استعلام البحث
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 فيما يلي قائمة بالأحرف غير المعتمدة التي نتحقق منها في استعلامات البحث عن المحتوى وMicrosoft Purview eDiscovery (قياسي). غالبا ما تكون الأحرف غير المعتمدة مخفية، وعادة ما تسبب خطأ في البحث أو ترجع نتائج غير مقصودة.
   

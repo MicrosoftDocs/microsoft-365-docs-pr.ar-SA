@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل TeleMessage لاستيراد بيانات SMS و MMS وأرشفتها من شبكة O2 للأجهزة المحمولة في Microsoft 365. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: 5e802aab643fc795191344f22512f073bd1785fc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: eb8bec7aa81963d9bdd1617f022a9352378d8f08
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944074"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994601"
 ---
 # <a name="set-up-a-connector-to-archive-o2-network-data"></a>إعداد موصل إلى أرشفة بيانات شبكة O2
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل TeleMessage في مدخل توافق Microsoft Purview لاستيراد وأرشفة رسائل خدمة المراسلة القصيرة (SMS) والمكالمات الصوتية من شبكة O2 للأجهزة المحمولة. بعد إعداد موصل وتكوينه، يتصل بشبكة O2 الخاصة بمؤسستك مرة واحدة كل يوم، ويستورد الرسائل القصيرة والمكالمات الصوتية إلى علب البريد في Microsoft 365.
 

@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم المجموعات في eDiscovery (Premium) للبحث عن المحتوى المرتبط بحالتك أو التحقيق وجمعه.
-ms.openlocfilehash: 8831508260d48dc270a5e4b7a15cecf894656ff6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f57748d54bc177812fd89eca13252311d4ab269f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940258"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996229"
 ---
 # <a name="learn-about-collections-in-ediscovery-premium"></a>تعرف على المجموعات في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عندما تواجه المؤسسات جمع الاتصالات والمحتوى الذي قد يكون ذا صلة بالتحقيق أو التقاضي المحتمل، فإنها تواجه تحديا كبيرا في أفضل الظروف. في مكان العمل الحديث اليوم، يتيح حجم المحتوى وتنوعه وسرعته الابتكار والعمل عن بعد، مع توسيع متطلبات وعملية إدارة مجموعات تحقيقات eDiscovery.
 

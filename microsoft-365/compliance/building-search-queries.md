@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: استخدم الكلمات الأساسية والشروط لتضييق نطاق البحث عند البحث عن البيانات باستخدام eDiscovery (Premium) في Microsoft 365.
-ms.openlocfilehash: 7a3c3747e38667eca40032511209af964ffb165a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cceac6974bacb066201120ac4972393f2323353c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950324"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994997"
 ---
 # <a name="build-search-queries-for-collections-in-ediscovery-premium"></a>إنشاء استعلامات البحث للمجموعات في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند تكوين استعلام البحث عند إنشاء [مجموعة](collections-overview.md) في حالة eDiscovery (Premium)، يمكنك استخدام الكلمات الأساسية للعثور على محتوى وشروط محددة لتضييق نطاق البحث لإرجاع العناصر الأكثر صلة بالتحقيق القانوني.
 

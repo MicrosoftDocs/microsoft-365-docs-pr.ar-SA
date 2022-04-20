@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: احصل على أحدث ما في العزل المستند إلى الأجهزة. منع الهجمات الحالية والناشئة مثل المهاجمات أو الارتباطات الضارة من تعطيل إنتاجية الموظفين وأمان المؤسسة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8e24b61b7f800b7c27a57bcec5c127adb032bf5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 98d23a814ac2af8d9dedc4f163923e67c9ca7dc2
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939246"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973234"
 ---
 # <a name="application-guard-for-office-for-admins"></a>حماية التطبيقات Office للمسؤولين
 
@@ -39,7 +39,7 @@ ms.locfileid: "64939246"
 
 ### <a name="minimum-software-requirements"></a>الحد الأدنى لمتطلبات البرامج
 
-* **Windows**: إصدار Windows 10 Enterprise، إصدار 2004 (20H1) من Client Build 19041 أو إصدار أحدث. جميع إصدارات Windows 11 مدعومة. 
+* **Windows**: إصدار Windows 10 Enterprise، إصدار 2004 (20H1) من Client Build 19041 أو إصدار أحدث. جميع إصدارات Windows 11 مدعومة.
 * **Office**: Office خيار التحديث الحالي وقناة المؤسسة الشهرية، النسخة 2011 16.0.13530.10000 أو الإصدارات الأحدث. Office Semi-Annual قناة المؤسسة، الإصدار 2108 أو الإصدارات الأحدث. يتم دعم كل من الإصدارين 32 بت و64 بت من Office.
 * **حزمة التحديث**: Windows 10 تحديث الأمان الشهري التراكمي [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
@@ -124,7 +124,6 @@ ms.locfileid: "64939246"
 
 يدعم Office النهج التالية لتمكينك من تكوين قدرات Application Guard Office. يمكن تكوين هذه النهج من خلال نهج المجموعة أو من خلال [خدمة نهج السحابة Office](/DeployOffice/overview-office-cloud-policy-service).
 
-
 > [!NOTE]
 > يمكن أن يؤدي تكوين هذه النهج إلى تعطيل بعض الوظائف للملفات المفتوحة في Application Guard Office.
 
@@ -198,7 +197,7 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي للأما
 
 ## <a name="limitations-and-considerations"></a>القيود والاعتبارات
 
-* حماية التطبيقات Office هو وضع محمي يعزل المستندات غير الموثوق بها بحيث لا يمكنهم الوصول إلى موارد الشركة الموثوق بها والإنترانت وهوية المستخدم والملفات العشوائية على الكمبيوتر. ونتيجة لذلك، إذا حاول مستخدم الوصول إلى ميزة لها تبعية على هذا الوصول، مثل إدراج صورة من ملف محلي على القرص، فسيفشل الوصول وينتج مطالبة تشبه المثال التالي. لتمكين مستند غير موثوق به للوصول إلى الموارد الموثوق بها، يجب على المستخدمين إزالة حماية Application Guard من المستند. 
+* حماية التطبيقات Office هو وضع محمي يعزل المستندات غير الموثوق بها بحيث لا يمكنهم الوصول إلى موارد الشركة الموثوق بها والإنترانت وهوية المستخدم والملفات العشوائية على الكمبيوتر. ونتيجة لذلك، إذا حاول مستخدم الوصول إلى ميزة لها تبعية على هذا الوصول، مثل إدراج صورة من ملف محلي على القرص، فسيفشل الوصول وينتج مطالبة تشبه المثال التالي. لتمكين مستند غير موثوق به للوصول إلى الموارد الموثوق بها، يجب على المستخدمين إزالة حماية Application Guard من المستند.
 
   :::image type="content" source="../../media/ag09-confirm.png" alt-text="مربع الحوار الذي يوضح رسالة الأمان وحالة الميزة" lightbox="../../media/ag09-confirm.png":::
 
@@ -206,7 +205,7 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي للأما
   > ننصح المستخدمين بإزالة الحماية فقط إذا كانوا يثقون بالملف ومصدره أو من أين جاء.
 
 * عندما يتم تخزين مستند غير موثوق به في موقع موثوق به، يتم توريث الثقة من الموقع بواسطة المستند. عادة ما يتم تعريف التخزين السحابي للمؤسسة كموقع موثوق به.
-  
+
 * يتم تعطيل المحتوى النشط في المستندات مثل وحدات الماكرو وعناصر تحكم ActiveX في Application Guard Office. يحتاج المستخدمون إلى إزالة حماية Application Guard لتمكين المحتوى النشط.
 
 * يتم فتح الملفات غير الموثوق بها من مشاركات الشبكة أو الملفات المشتركة من OneDrive أو OneDrive for Business أو SharePoint Online من مؤسسة مختلفة للقراءة فقط في Application Guard. يمكن للمستخدمين حفظ نسخة محلية من هذه الملفات لمواصلة العمل في الحاوية أو إزالة الحماية للعمل مباشرة مع الملف الأصلي.
@@ -242,4 +241,4 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي للأما
 * ملفات CSV و HTML غير معتمدة حاليا.
 * لا يعمل Application Guard ل Office حاليا مع وحدات التخزين المضغوطة NTFS. إذا كنت ترى خطأ "ERROR_VIRTUAL_DISK_LIMITATION" يرجى محاولة إلغاء ضغط وحدة التخزين.
 * قد تؤدي التحديثات إلى .NET إلى فشل فتح الملفات في Application Guard. كحل بديل، يمكن للمستخدمين إعادة تشغيل جهازهم عند حدوث هذا الفشل. تعرف على المزيد حول المشكلة في [تلقي رسالة خطأ عند محاولة فتح حماية التطبيقات لـ Windows Defender أو بيئة الاختبار المعزولة في Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
-* الرجاء الاطلاع [على الأسئلة المتداولة - حماية التطبيقات من Microsoft Defender للحصول على معلومات إضافية.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 
+* الرجاء الاطلاع [على الأسئلة المتداولة - حماية التطبيقات من Microsoft Defender للحصول على معلومات إضافية.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard)

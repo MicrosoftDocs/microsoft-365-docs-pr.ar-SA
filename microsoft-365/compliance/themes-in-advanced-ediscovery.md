@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: استخدم النسق في eDiscovery (Premium) لتنظيم مجموعات المراجعة من خلال العثور على النسق السائد في كل مستند.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e019c103114630411a7d13ae619827a2e83a890c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8067048c1dedeb6c70a887ec1fb41094bad35666
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991743"
+ms.locfileid: "64970372"
 ---
 # <a name="themes-in-ediscovery-premium"></a>النسق في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 كيف يكتب الشخص مستندا؟ عادة ما تبدأ بأفكار واحدة أو أكثر تريد توصيلها في المستند، وتؤلف باستخدام كلمات تتماشى مع الأفكار. كلما كانت الفكرة أكثر شيوعا، كلما كانت الكلمات المرتبطة بتلك الفكرة أكثر شيوعا. وهذا يعلمك بكيفية استخدام الأشخاص المستندات أيضا. الشيء المهم الذي يجب فهمه من قراءة المستند هو الأفكار التي يحاول المستند نقلها، والأفكار التي تظهر أين، وما هي العلاقات بين الأفكار.
 

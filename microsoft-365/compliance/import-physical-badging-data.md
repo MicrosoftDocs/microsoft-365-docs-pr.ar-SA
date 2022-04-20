@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: يمكن للمسؤولين إعداد موصل بيانات لاستيراد البيانات من نظام الريش الفعلي لمؤسستهم إلى Microsoft 365. يتيح لك هذا استخدام هذه البيانات في نهج إدارة المخاطر الداخلية لمساعدتك على اكتشاف الوصول إلى المباني المادية الخاصة بك من قبل مستخدمين محددين قد يشير إلى تهديد داخلي محتمل لمؤسستك.
-ms.openlocfilehash: 7b6161cfc8f712082303641f9da7345edf5e24df
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: a55874b9f920919c16a094d32c4edcde394600d4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937928"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994865"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>إعداد موصل لاستيراد بيانات البادئة الفعلية (معاينة)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك إعداد موصل بيانات في مدخل توافق Microsoft Purview لاستيراد بيانات التالفة المادية، مثل أحداث الوصول الفعلي الأولية للموظف أو أي تنبيهات وصول فعلية تم إنشاؤها بواسطة نظام التالفة الخاص بمؤسستك. أمثلة على نقاط الوصول المادية هي إدخال إلى مبنى أو إدخال إلى غرفة الخادم أو مركز البيانات. يمكن استخدام بيانات التالفة المادية من قبل [حل إدارة المخاطر الداخلية](insider-risk-management.md) Microsoft 365 للمساعدة في حماية مؤسستك من الأنشطة الضارة أو سرقة البيانات داخل مؤسستك.
 

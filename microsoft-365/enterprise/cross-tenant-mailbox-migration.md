@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: c66c0c60002b67642a2cf8eb8e1a66dc5db140ff
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: 00ded796cb0fc8878b3eee3f656afac426cd0f35
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651422"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64973982"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>ترحيل علبة بريد عبر المستأجرين (معاينة)
 
@@ -644,7 +644,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
       | الاسم                                             |
       | ------------------------------------------------ |
-      | Advanced eDiscovery Storage (500 غيغابايت)             |
+      | تخزين eDiscovery (Premium) (500 غيغابايت)             |
       | صندوق تأمين بيانات العملاء                                 |
       | منع فقدان البيانات                             |
       | Exchange Enterprise CAL Services (EOP، DLP)      |
@@ -669,7 +669,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
       | Microsoft Bookings                               |
       | مركز أعمال Microsoft                        |
       | Microsoft MyAnalytics (كامل)                     |
-      | Office 365 Advanced eDiscovery                   |
+      | Office 365 eDiscovery (Premium)                   |
       | Microsoft Defender لـ Office 365 (الخطة 1)       |
       | Microsoft Defender لـ Office 365 (الخطة 2)       |
       | Office 365 Privileged Access Management          |

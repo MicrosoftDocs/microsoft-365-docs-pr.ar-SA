@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل BlackBerry DataParser 17a-4 واستخدامه لاستيراد بيانات BlackBerry وأرشفتها في Microsoft 365.
-ms.openlocfilehash: c0818b1a9d7d16debbeb2be799d4a8717ada6f74
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b75d91db9458a31156e9508cc2ddb8cc0da46076
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941006"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995789"
 ---
 # <a name="set-up-a-connector-to-archive-blackberry-data"></a>إعداد موصل أرشفة بيانات BlackBerry
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم [BlackBerry DataParser](https://www.17a-4.com/BlackBerry-dataparser/) من 17a-4 LLC لاستيراد بيانات مؤسسة BlackBerry وأرشفتها إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يتضمن DataParser موصل BlackBerry الذي تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول موصل BlackBerry DataParser بيانات BlackBerry إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

@@ -17,14 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: تعرف على كيفية إعداد موصل مخصص لاستيراد بيانات الجهات الخارجية من مصادر البيانات مثل Salesforce Chatter أو Yahoo Messenger أو Yammer.
-ms.openlocfilehash: 72159d88cdeb8c573f1a71342ca7cbd015099568
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: eb557f43b97f343c45a7eaf21268ac6218d2e1c0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944492"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64995305"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>العمل مع شريك لأرشفة بيانات جهة خارجية
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك العمل مع شريك Microsoft لاستيراد البيانات وأرشفتها من مصدر بيانات تابع لجهة خارجية إلى Microsoft 365. يمكن أن يوفر لك الشريك موصلا مخصصا تم تكوينه لاستخراج العناصر من مصدر بيانات الجهات الخارجية (بشكل منتظم) ثم استيراد هذه العناصر. يحول موصل الشريك محتوى عنصر من مصدر البيانات إلى تنسيق رسالة بريد إلكتروني ثم يخزن العناصر في علب البريد. بعد استيراد بيانات الجهات الخارجية، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي وeDiscovery In-Place والأرشفة والتدقيق Microsoft 365 نهج الاستبقاء على هذه البيانات.
 

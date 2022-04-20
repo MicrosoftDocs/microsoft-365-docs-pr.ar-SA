@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات Red tail Speak وأرشفتها من Veritas إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: af568495cd7ee8b1bf003da71a4582462fbd5c4c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 46b9646fee78fa0589a9af41db35cf79a71e508f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950622"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994557"
 ---
 # <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>إعداد موصل أرشفة بيانات Redtail Speak
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من Redtail Speak إلى علب بريد المستخدمين في مؤسسة Microsoft 365. يوفر لك Veritas موصل [Redtail Speak](https://globanet.com/redtail/) الذي تم تكوينه لالتقاط العناصر من خادم SFTP الخاص بمؤسستك حيث يتم تلقي العناصر من Redtail. يحول الموصل المحتوى من Redtail Speak إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
 

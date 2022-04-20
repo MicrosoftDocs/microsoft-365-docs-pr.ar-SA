@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: تصدير المستندات في مجموعة مراجعة إلى حساب Azure Storage ثم استخدام Azure Storage Explorer لتنزيلها إلى كمبيوتر محلي.
-ms.openlocfilehash: babac7d0289eee2384c12acfe05223bfceba1ce1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c8709fe1540393164e00222b728b10d5f809012
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934830"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64994887"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>تصدير المستندات في مجموعة مراجعة إلى حساب Azure Storage
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند تصدير المستندات من مجموعة مراجعة في حالة eDiscovery (Premium)، لديك خيار تصديرها إلى حساب تخزين Azure تديره مؤسستك. إذا كنت تستخدم هذا الخيار، يتم تحميل المستندات إلى موقع تخزين Azure. بعد تصديرها، يمكنك الوصول إلى المستندات (وتنزيلها إلى كمبيوتر محلي أو موقع آخر) باستخدام Azure Storage Explorer. توفر هذه المقالة إرشادات حول كيفية تصدير المستندات إلى حساب Azure Storage واستخدام Azure Storage Explorer للاتصال بموقع تخزين Azure لتنزيل المستندات المصدرة. لمزيد من المعلومات حول Azure Storage Explorer، راجع [استخدام Azure Storage Explorer](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer).
 
