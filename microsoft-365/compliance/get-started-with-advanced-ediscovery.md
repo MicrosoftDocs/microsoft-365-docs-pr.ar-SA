@@ -20,14 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: تصف هذه المقالة كيفية إعداد eDiscovery (Premium) حتى تتمكن من البدء في إنشاء الحالات وإدارتها. كما يصف اشتراكات Microsoft المطلوبة والترخيص. بعد إكمال بعض الخطوات السريعة، تصبح أداة eDiscovery (Premium) جاهزة للاستخدام.
-ms.openlocfilehash: 29805066c2db26aca6992dc34ad8bf8c0966ceb7
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dff99ab432ce5f2380a6fd5a81e855c946146c8c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939906"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997703"
 ---
 # <a name="set-up-microsoft-purview-ediscovery-premium"></a>إعداد Microsoft Purview eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يوفر Microsoft Purview eDiscovery (Premium) سير عمل شامل للاحتفاظ بالبيانات التي تستجيب للتحقيقات الداخلية والخارجية لمؤسستك وجمعها ومراجعتها وتحليلها وتصديرها. لا توجد حاجة لنشر eDiscovery (Premium)، ولكن هناك بعض المهام الأساسية التي يجب على مسؤول تكنولوجيا المعلومات ومدير eDiscovery إكمالها قبل أن تتمكن مؤسستك من البدء في إنشاء حالات eDiscovery (Premium) واستخدامها لإدارة التحقيقات الخاصة بك.
 

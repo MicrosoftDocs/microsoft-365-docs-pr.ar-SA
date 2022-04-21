@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: تعرف على كيفية تصفية البيانات باستخدام ميزة الاستيراد الذكية في خدمة الاستيراد Microsoft 365 عند استيراد ملفات PST إلى Microsoft 365.
-ms.openlocfilehash: 2b948352a3aff64dc06486a8380b9c81f7f5c020
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dc60baf45be97e438875e0b045d9e8f3b6208d3f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948584"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997901"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>تصفية البيانات عند استيراد ملفات PST
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم ميزة الاستيراد الذكي الجديدة في خدمة الاستيراد Microsoft 365 لتصفية العناصر الموجودة في ملفات PST التي يتم استيرادها فعليا إلى علب البريد الهدف. إليك كيفية عملها:
   

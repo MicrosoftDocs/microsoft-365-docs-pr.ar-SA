@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: يمكنك تغيير الحجم الافتراضي لملفات PST التي يتم تنزيلها إلى الكمبيوتر عند تصدير نتائج بحث eDiscovery.
-ms.openlocfilehash: 7ba11dbb24af46c72321f2f0f514aa4a40616e4b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c7c78bc23599f55529898b4677d7833d567741f5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950280"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000147"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>تغيير حجم ملفات PST عند تصدير نتائج بحث eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند استخدام أداة eDiscovery Export لتصدير نتائج البريد الإلكتروني للبحث في eDiscovery من أدوات Microsoft eDiscovery المختلفة، يكون الحجم الافتراضي لملف PST الذي يمكن تصديره 10 غيغابايت. إذا كنت تريد تغيير هذا الحجم الافتراضي، يمكنك تحرير سجل Windows على الكمبيوتر الذي تستخدمه لتصدير نتائج البحث. أحد أسباب القيام بذلك هو أن ملف PST يمكن احتوائه على الوسائط القابلة للإزالة، مثل قرص DVD أو قرص مضغوط أو محرك أقراص USB. 
   

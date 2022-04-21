@@ -22,14 +22,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
 description: تعرف على كيفية تشغيل برنامج نصي لإضافة علب بريد & OneDrive for Business مواقع إلى قائمة احتجاز جديدة مقترنة بحالة eDiscovery في مدخل توافق Microsoft Purview.
-ms.openlocfilehash: 8835e853825786668ba1b7617078d899c0773779
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 70ec2481e8fa352be47544cd2fe6a772c2fbb325
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934504"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000873"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>استخدام برنامج نصي لإضافة مستخدمين إلى قائمة احتجاز في حالة eDiscovery (قياسي)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يوفر Security & Compliance Center PowerShell أوامر cmdlets تتيح لك أتمتة المهام التي تستغرق وقتا طويلا المتعلقة بإنشاء حالات eDiscovery وإدارتها. حاليا، يستغرق استخدام حالة Microsoft Purview eDiscovery (Standard) في مدخل الامتثال ل Microsoft Purview لوضع عدد كبير من مواقع محتوى الوصي قيد الاحتجاز وقتا وإعدادا. على سبيل المثال، قبل إنشاء قائمة احتجاز، يجب عليك جمع عنوان URL لكل موقع OneDrive for Business تريد وضعه قيد الاحتجاز. ثم لكل مستخدم تريد وضعه قيد الاحتجاز، يجب إضافة علبة بريده وموقع OneDrive for Business الخاص به إلى قائمة الاحتجاز. يمكنك استخدام البرنامج النصي في هذه المقالة لأتمتة هذه العملية.
   

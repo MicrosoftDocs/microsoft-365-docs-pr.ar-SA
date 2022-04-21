@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: ''
-ms.openlocfilehash: 37c0ae081223f321c87cafa18d0acbbbc6adb511
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3335e437a659eab984943adda31abdb344908c1c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942128"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997629"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>تدريب نموذج ترميز تنبؤي (معاينة)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بعد إنشاء نموذج ترميز تنبؤي في Microsoft Purview eDiscovery (Premium)، فإن الخطوة التالية هي إجراء جولة التدريب الأولى لتدريب النموذج على المحتوى ذي الصلة وغير ذي الصلة في مجموعة المراجعة. بعد إكمال الجولة الأولى من التدريب، يمكنك إجراء دورات تدريبية لاحقة لتحسين قدرة النموذج على التنبؤ بالمحتوى ذي الصلة وغير ذي الصلة.
 

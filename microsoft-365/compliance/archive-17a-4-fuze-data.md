@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل 17a-4 Fuze DataParser واستخدامه لاستيراد بيانات Fuze وأرشفتها في Microsoft 365.
-ms.openlocfilehash: a1acd9462aa3497d3717219787cb9b9cd8f15cc3
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7eab97532a7bbd45d61baed40c35e7b37bddfa62
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940852"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998287"
 ---
 # <a name="set-up-a-connector-to-archive-fuze-data"></a>إعداد موصل إلى أرشفة بيانات التعليق
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم [Fuze DataParser](https://www.17a-4.com/fuze-dataparser/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من Fuze إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يتضمن DataParser موصل Fuze الذي تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يقوم موصل Fuze DataParser بتحويل بيانات Fuze إلى تنسيق رسالة بريد إلكتروني ثم استيراد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

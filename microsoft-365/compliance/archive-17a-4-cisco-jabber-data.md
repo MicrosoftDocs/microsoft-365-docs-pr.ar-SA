@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل Cisco Jabber DataParser 17a-4 واستخدامه لاستيراد بيانات Cisco Jabber وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 104d56b819f594e88aa478e6df817bf3c8f008a9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 580294c4c05307c18458012d2789f481baaf4584
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940940"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998375"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>إعداد موصل أرشفة بيانات Cisco Jabber
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم [Cisco Jabber DataParser](https://www.17a-4.com/jabber-dataparser/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من Cisco Jabber إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يتضمن DataParser موصل Cisco Jabber الذي تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول موصل Cisco Jabber DataParser بيانات Cisco Jabber إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

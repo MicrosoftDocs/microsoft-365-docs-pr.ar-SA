@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: تسمح لك نهج الاحتجاز In-Place والتقاضي والاحتفاظ Microsoft 365 بالحفاظ على محتوى علبة البريد لتلبية متطلبات التوافق التنظيمي ومتطلبات eDiscovery.
-ms.openlocfilehash: a088407277f7ebced3aa69ee9ff807913f9b0c85
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4c3c7b7be98959011473eeafc85f40b19be82fdc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942106"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998476"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>الحفاظ على نسخة مخفية ومستلمي مجموعة التوزيع الموسعة ل eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 تسمح لك قوائم احتجاز التقاضي والاحتفاظ ب eDiscovery [ونهج الاستبقاء Microsoft 365](./retention.md) (التي تم إنشاؤها في مدخل توافق Microsoft Purview) بالحفاظ على محتوى علبة البريد لتلبية متطلبات التوافق التنظيمي وeDiscovery. يتم تضمين معلومات حول المستلمين الذين تتم معالجتها مباشرة في الحقلين "إلى" و"نسخة" من الرسالة في كل الرسائل بشكل افتراضي. ولكن قد تتطلب مؤسستك القدرة على البحث عن تفاصيل حول جميع مستلمي الرسالة وإعادة إنتاجها. يتضمن ذلك:
   

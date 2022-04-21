@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: يصف كيفية البدء باستخدام eDiscovery (قياسي) في Microsoft Purview. بعد تعيين أذونات eDiscovery وإنشاء حالة، يمكنك إضافة أعضاء وإنشاء قوائم احتجاز eDiscovery، ثم البحث عن المحتوى ذي الصلة بالتحقيق وتصديره.
-ms.openlocfilehash: 90470d0128fd15bf295b1c8fa2cd15ef6d5cc384
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3619a3097567251d012594831081f0929d5ca80e
+ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994139"
+ms.locfileid: "64972398"
 ---
 # <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>بدء استخدام eDiscovery (قياسي) في Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يوفر Microsoft Purview eDiscovery (قياسي) في Microsoft Purview أداة eDiscovery أساسية يمكن للمؤسسات استخدامها للبحث عن المحتوى وتصديره في Microsoft 365 Office 365. يمكنك أيضا استخدام eDiscovery (قياسي) لوضع قائمة احتجاز eDiscovery على مواقع المحتوى، مثل علب بريد Exchange ومواقع SharePoint وحسابات OneDrive Microsoft Teams. لا توجد حاجة لنشر eDiscovery (قياسي)، ولكن هناك بعض المهام الأساسية التي يتعين على مسؤول تكنولوجيا المعلومات ومدير eDiscovery إكمالها قبل أن تتمكن مؤسستك من البدء في استخدام eDiscovery (قياسي) للبحث عن المحتوى وتصديره والحفاظ عليه.
 

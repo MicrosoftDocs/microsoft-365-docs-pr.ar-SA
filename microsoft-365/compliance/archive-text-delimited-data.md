@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد البيانات المحددة بالنص وأرشفتها من Veritas إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: b7772143bef1f6b00d17f05c4bff76ba8692d7ee
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b2039c3b850f7d266425d464235b62d0ce4a78ad
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942964"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997203"
 ---
 # <a name="set-up-a-connector-to-archive-text-delimited-data"></a>إعداد موصل إلى أرشفة البيانات المحددة بالنص
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات المحددة بالنص وأرشفتها إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر Veritas [موصلا محددا بنص](https://globanet.com/text-delimited) تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية (بشكل منتظم) واستيراد هذه العناصر إلى Microsoft 365. يحول الموصل المحتوى من مصدر البيانات المحدد بالنص إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
 

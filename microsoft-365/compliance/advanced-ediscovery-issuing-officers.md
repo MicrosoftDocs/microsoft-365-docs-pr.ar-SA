@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: يمكنك إضافة مسؤولي إصدار على مستوى المؤسسة في eDiscovery (Premium) بحيث يمكن إضافتهم إلى أي اتصال احتجازي في أي حالة في مؤسستك.
-ms.openlocfilehash: 076e6ea8b8dbef18c6c34221937a039fc43fad75
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f82d5359a90e21203c2ff882ceb831cc1630e008
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942986"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000543"
 ---
 # <a name="manage-issuing-officers-in-ediscovery-premium"></a>إدارة مسؤولي الإصدار في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عندما تقوم أنت أو الآخرون بإنشاء إعلام احتجاز أو نوع آخر من الاتصالات التي يتم إرسالها إلى مستخدم يكون وصيا في حالة ما، يجب عليك تحديد مسؤول إصدار. يتم إرسال الإشعار إلى أمين الحفظ نيابة عن المسؤول المحدد. على سبيل المثال، قد يكون مساعد قانوني في مؤسستك مسؤولا عن إنشاء إشعارات الاحتجاز وإرسالها إلى أمناء الحفظ في حالة ما. في هذا السيناريو، يمكن أن يحدد المساعد القانوني وكيلا في المؤسسة كمسؤول إصدار. روبوت Who يمكن تحديده كمسؤول إصدار؟ هناك نوعان من المستخدمين الذين يمكن اختيارهم كمسؤول إصدار للاتصال الوصي:
 

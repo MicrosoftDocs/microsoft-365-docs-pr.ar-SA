@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: قائمة بأنواع الملفات المعتمدة في Microsoft 365 eDiscovery (Premium)، بما في ذلك أنواع ملفات الصور المعتمدة من قبل وظيفة التعرف البصري على الحروف في eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce0d44a2d3e887c6278af1ed9a35039c74d6a0a9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 95adaf84f5281b943720be595b0e0e4aababd91f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934566"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996735"
 ---
 # <a name="supported-file-types-in-ediscovery-premium"></a>أنواع الملفات المعتمدة في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يدعم Microsoft Purview eDiscovery (Premium) العديد من أنواع الملفات على العديد من المستويات المختلفة. يتم وصف أنواع ملفات الدعم في الجداول التالية في هذه المقالة. لم يتم إنهاء هذه القائمة، وسنضيف أنواع ملفات جديدة بينما نواصل اختبار التحقق من الصحة. تشير هذه الجداول إلى ما إذا كان نوع الملف معتمدا لاستخراج النص (والتعرف البصري على الحروف أو استخراج نص التعرف البصري على الحروف لملفات الصور)، ويمكن عرضه في العارض الأصلي وأيضا دعم في العارض "تعليق توضيحي" في eDiscovery (Premium).
 

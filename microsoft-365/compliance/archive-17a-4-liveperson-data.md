@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل 17a-4 LivePerson Conversational Cloud DataParser واستخدامه لاستيراد بيانات LivePerson Conversational Cloud وأرشفتها في Microsoft 365.
-ms.openlocfilehash: a2d439f581be5f08ff5695dd25962d010537aaaf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 215818fec6dc186e20e19fcf247193a0616676eb
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945032"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998059"
 ---
 # <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data"></a>إعداد موصل أرشفة بيانات LivePerson Conversational Cloud
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم [LivePerson Conversational Cloud DataParser](https://www.17a-4.com/liveperson-dataparser/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من LivePerson Conversational Cloud إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يتضمن DataParser موصل LivePerson Conversational Cloud الذي تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول موصل LivePerson Conversational Cloud DataParser البيانات إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

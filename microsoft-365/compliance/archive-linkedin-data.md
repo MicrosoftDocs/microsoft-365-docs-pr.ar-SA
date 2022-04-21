@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: تعرف على كيفية إعداد المسؤولين & استخدام موصل أصلي لاستيراد البيانات من صفحة شركة LinkedIn إلى Microsoft 365.
-ms.openlocfilehash: de39d0e3e95164a39f9aed1a227ab15f6e4fd7d6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4def1c8946c8b09f1ba543762026572ceb229b6
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937224"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998033"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>إعداد موصل أرشفة بيانات LinkedIn
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصلا في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من صفحات LinkedIn Company. بعد إعداد موصل وتكوينه، فإنه يتصل بحساب صفحة LinkedIn Company المحددة مرة واحدة كل 24 ساعة. يحول الموصل الرسائل المنشورة إلى صفحة الشركة إلى رسالة بريد إلكتروني، ثم يستورد هذه العناصر إلى علبة بريد في Microsoft 365.
 

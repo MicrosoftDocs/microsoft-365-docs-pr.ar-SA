@@ -17,14 +17,16 @@ ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
 description: قم بتحرير Windows Registry على الكمبيوتر المحلي لتعطيل التقارير عند تصدير نتائج البحث عن المحتوى من مدخل توافق Microsoft Purview.
-ms.openlocfilehash: d1b305f1d6ce0aba835d21695e59a4166ec96b7a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 5cd6816807af1b6da4fc8c41e7cdde7bc7f07d66
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936808"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000081"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>تعطيل التقارير عند تصدير نتائج البحث في المحتوى
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند استخدام أداة eDiscovery Export لتصدير نتائج البحث عن المحتوى في مدخل توافق Microsoft Purview، تقوم الأداة تلقائيا بإنشاء تقريرين يحتويان على معلومات إضافية حول المحتوى الذي تم تصديره وتصديرهما. هذه التقارير هي ملف Results.csv وملف Manifest.xml (راجع [الأسئلة المتداولة حول تعطيل قسم تقارير التصدير](#frequently-asked-questions-about-disabling-export-reports) في هذا الموضوع للحصول على أوصاف مفصلة لهذه التقارير). نظرا لأن هذه الملفات يمكن أن تكون كبيرة جدا، يمكنك تسريع وقت التنزيل وتوفير مساحة على القرص عن طريق منع تصدير هذه الملفات. يمكنك القيام بذلك عن طريق تغيير Windows Registry على الكمبيوتر الذي تستخدمه لتصدير نتائج البحث. إذا كنت تريد تضمين التقارير في وقت لاحق، يمكنك تحرير إعداد التسجيل. 
   

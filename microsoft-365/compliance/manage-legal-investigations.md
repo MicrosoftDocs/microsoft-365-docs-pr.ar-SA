@@ -17,14 +17,16 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: استخدم حالات eDiscovery في مدخل توافق Microsoft Purview لإدارة التحقيق القانوني لمؤسستك.
-ms.openlocfilehash: d218c7d624da837e685929d95e515687f54897ef
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 28dead35cce2102cfd826fa1505cdd620e4a1b25
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931972"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999767"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>إدارة التحقيقات القانونية في Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 لدى المؤسسات العديد من الأسباب للاستجابة لحالة قانونية تتعلق ببعض المديرين التنفيذيين أو الموظفين الآخرين في مؤسستك. قد يتضمن ذلك العثور على مزيد من المعلومات الخاصة بالتحقيق والاحتفاظ بها بسرعة في البريد الإلكتروني والمستندات ومحادثات المراسلة الفورية ومواقع المحتويات الأخرى التي يستخدمها الأشخاص في مهام العمل اليومية الخاصة بهم. يمكنك تنفيذ هذه الأنشطة والعديد من الأنشطة المماثلة الأخرى باستخدام أدوات حالة eDiscovery في مركز الأمان والتوافق.
   

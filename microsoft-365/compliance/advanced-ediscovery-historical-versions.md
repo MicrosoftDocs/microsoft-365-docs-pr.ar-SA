@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: استخدم الإصدارات التاريخية في eDiscovery (Premium) لجمع المحتوى من جميع إصدارات المستندات المخزنة في SharePoint OneDrive.
-ms.openlocfilehash: e73429744958698f275d33b52cc50805c274ef13
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ebd706aa122da2f875adb0c210db8cb3a0c8ab10
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943074"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000609"
 ---
 # <a name="set-up-historical-versions-in-ediscovery-premium-preview"></a>إعداد الإصدارات التاريخية في eDiscovery (Premium) (معاينة)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تتيح ميزة الإصدارات التاريخية في eDiscovery (Premium) لمديري eDiscovery في مؤسستك البحث عن المحتوى وجمعه من جميع إصدارات المستندات المخزنة في SharePoint Online و OneDrive for Business. ثم يمكنك إضافة هذا المحتوى إلى مجموعة مراجعة للتحليل والمراجعة. يساعدك ذلك في العثور على محتوى ومراجعته من إصدار معين من مستند قد يكون ذا صلة بحالة أو تحقيق، حتى لو لم يتضمن الإصدار الأخير من المستند نفسه المعلومات ذات الصلة.
 

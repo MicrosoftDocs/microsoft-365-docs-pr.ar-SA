@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: تتيح لك العلامات الذكية تطبيق قدرات التعلم الآلي عند مراجعة المحتوى في حالة eDiscovery (Premium). استخدم مجموعات العلامات الذكية لعرض نتائج نماذج الكشف عن التعلم الآلي، مثل نموذج امتياز الوكيل والعميل.
-ms.openlocfilehash: 9fd4a53df00bcb096a885ed311e4fb4ed365725e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1adea2404192b9e715ad021f70ba07f7e64a89d5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934610"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999729"
 ---
 # <a name="set-up-smart-tags-in-ediscovery-premium"></a>إعداد العلامات الذكية في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكن أن تساعدك قدرات التعلم الآلي (ML) في Microsoft Purview eDiscovery (Premium) على جعل عملية اتخاذ القرار أكثر كفاءة عند مراجعة مستندات الحالة في مجموعة مراجعة. العلامات الذكية هي طريقة لجلب قدرات التعلم الآلي إلى حيث يتم تسجيل القرارات: عند وضع علامات على المستندات أثناء المراجعة. عند إنشاء مجموعة علامات ذكية، يتم عرض القرارات الناتجة عن نموذج التعلم الآلي الذي قمت بإقرانه بمجموعة العلامات الذكية بشكل مسطر مع العلامات في مجموعة العلامات. يساعد هذا في رؤية معلومات نتائج التعلم الآلي سطريا عند مراجعة مستندات معينة.
 

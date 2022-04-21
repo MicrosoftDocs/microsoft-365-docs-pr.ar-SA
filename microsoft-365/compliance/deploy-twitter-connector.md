@@ -16,14 +16,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: يمكن للمسؤولين إعداد موصل أصلي لاستيراد بيانات Twitter وأرشفتها Microsoft 365. بعد استيراد هذه البيانات إلى Microsoft 365، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة إدارة بيانات Twitter الخاصة بمؤسستك.
-ms.openlocfilehash: e1ae371d59ef21955612c89b9e0bffc5c24d5950
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6bf801d7c3443385ee0a2656753dcf069ac6aebc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950192"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997131"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>نشر موصل أرشفة بيانات Twitter
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تحتوي هذه المقالة على عملية مفصلة خطوة بخطوة لنشر موصل يستخدم خدمة استيراد Office 365 لاستيراد البيانات من حساب Twitter الخاص بمؤسستك إلى Microsoft 365. للحصول على نظرة عامة عالية المستوى لهذه العملية وقائمة بالمتطلبات الأساسية المطلوبة لنشر موصل Twitter، راجع [إعداد موصل لأرشفة بيانات Twitter ](archive-twitter-data-with-sample-connector.md).
 

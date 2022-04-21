@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: تعرف على الحدود السارية لميزات البحث في المحتوى وeDiscovery (القياسي) في مدخل توافق Microsoft Purview.
-ms.openlocfilehash: 53ecc3ceb879bc72040c5525e6bacc8d9802c5c9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8cba04c7ed3257d5a168d7754b2964eb4aa97b0d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944712"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999026"
 ---
 # <a name="limits-for-ediscovery-search"></a>حدود للبحث في eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتم تطبيق حدود مختلفة على أدوات البحث eDiscovery في مدخل توافق Microsoft Purview. يتضمن ذلك عمليات البحث التي يتم تشغيلها على صفحة **البحث في المحتوى** وعمليات البحث المقترنة بحالة eDiscovery على صفحة **eDiscovery (قياسي** ). وتساعد هذه الحدود على الحفاظ على صحة الخدمات المقدمة للمؤسسات وجودتها. هناك أيضا حدود تتعلق بفهرسة رسائل البريد الإلكتروني في Exchange Online للبحث. لا يمكنك تعديل حدود عمليات البحث في eDiscovery أو فهرسة البريد الإلكتروني، ولكن يجب أن تكون على علم بها حتى تتمكن من أخذ هذه الحدود في الاعتبار عند التخطيط لعمليات البحث في eDiscovery وتشغيلها واستكشاف الأخطاء وإصلاحها.
 

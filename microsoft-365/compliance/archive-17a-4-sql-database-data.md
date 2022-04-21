@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل DataParser 17a-4 SQL واستخدامه لاستيراد بيانات SQL وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 7f1c3d919150ce48e0ecb3ab40a1434dff77ced9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 5583b47276a6f8c5e48add47f3743c4792abd83c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937268"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996631"
 ---
 # <a name="set-up-a-connector-to-archive-sql-data"></a>إعداد موصل وأرشفة بيانات SQL
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم [SQL DataParser](https://www.17a-4.com/sql-dataparser/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من قاعدة بيانات SQL إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يتضمن DataParser موصلا SQL تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يقوم موصل SQL DataParser بتحويل البيانات SQL إلى تنسيق رسالة بريد إلكتروني ثم استيراد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

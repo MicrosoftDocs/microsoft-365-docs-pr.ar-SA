@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل 17a-4 Skype for Business Server DataParser واستخدامه لاستيراد بيانات Skype for Business Server وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 7b004068e255d5972a978d4e9650e9207a2da117
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8a7c8e7b2d59aeabc2f21207d5b3ce2eb3d524e9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937686"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997527"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data"></a>إعداد موصل وأرشفة بيانات Skype for Business Server
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم [Skype Server DataParser](https://www.17a-4.com/skype-server-dataparser/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من Skype for Business Server إلى علب بريد المستخدمين في مؤسسة Microsoft 365. يتضمن DataParser موصلا Skype for Business تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يقوم موصل Skype for Business Server DataParser بتحويل بيانات Skype for Business Server إلى تنسيق رسالة بريد إلكتروني ثم استيراد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

@@ -21,14 +21,16 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية استيراد بيانات الجهات الخارجية وأرشفتها من منصات وسائل التواصل الاجتماعي ومنصات المراسلة الفورية وأنظمة التعاون الأساسية للمستندات إلى علب بريد Microsoft 365.
-ms.openlocfilehash: 0588ab242f2d198c486b7ce0318939e204076421
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 820c4e2fb92720940a8b4f207d43aea649ef16e7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934940"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997241"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>التعرّف على الموصلات لبيانات الأطراف الخارجية
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتيح Microsoft 365 للمسؤولين استخدام موصلات البيانات لاستيراد البيانات غير الخاصة ب Microsoft وأرشفتها، وبيانات الجهات الخارجية من أنظمة الوسائط الاجتماعية وأنظمة المراسلة الفورية وأنظمة التعاون الأساسية للمستندات، إلى علب البريد في مؤسستك Microsoft 365. تتمثل إحدى الفوائد الأساسية لاستخدام موصلات البيانات لاستيراد بيانات الجهات الخارجية وأرشفتها في Microsoft 365 في أنه يمكنك تطبيق حلول Microsoft Purview المختلفة على البيانات بعد استيرادها. يساعدك ذلك على التأكد من أن بيانات مؤسستك غير التابعة ل Microsoft تتوافق مع اللوائح والمعايير التي تؤثر على مؤسستك.
 

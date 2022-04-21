@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: يمكنك إضافة قوالب اتصالات الوصي (مثل قالب لإعلامات الاحتجاز) في eDiscovery (Premium) حتى يمكن استخدامها في أي حالة في مؤسستك.
-ms.openlocfilehash: be8311a9687eb4edb9cc44e15264808a2a05a69a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9ac944a3d845a770e35a84adcdc2f1f1dbefd172
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945142"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000587"
 ---
 # <a name="manage-custodian-communications-templates-in-ediscovery-premium"></a>إدارة قوالب الاتصالات الوصية في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عندما تقوم أنت أو مستخدمون آخرون بإنشاء إعلام احتجاز أو أنواع أخرى من اتصالات الوصي، كان عليك إنشاء مستند الاتصال من البداية باستخدام محرر الاتصالات على علامة التبويب **Communications** في حالة eDiscovery (Premium). لقد أصدرنا الآن ميزة جديدة تتيح لك إنشاء قوالب اتصالات يمكن استخدامها لإنشاء الاتصالات في أي حال في مؤسستك. بعد إنشاء قوالب الاتصالات، تكون متوفرة لاستخدامها في حالة ما. وهذا يعني أن المساعدين القانونيين أو المستخدمين الآخرين الذين ينشئون اتصالات الوصي ليس عليهم البدء من البداية لإنشاء إعلام. بدلا من ذلك، يمكنهم تحديد قالب لإنشاء الإعلام الذي يتم إرساله إلى أمين.
 

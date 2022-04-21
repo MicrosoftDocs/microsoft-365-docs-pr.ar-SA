@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: قم بإعداد موصل واستخدامه في مدخل توافق Microsoft Purview لاستيراد بيانات WeChat وأرشفتها في Microsoft 365.
-ms.openlocfilehash: e504c9fd3440e0ccc232e91838ef52577b1552be
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8d87cbaf25396dc9af1497737450126e90b54a7a
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942810"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997197"
 ---
 # <a name="set-up-a-connector-to-archive-wechat-data"></a>إعداد موصل أرشفة بيانات WeChat
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل TeleMessage في مدخل توافق Microsoft Purview لاستيراد مكالمات WeChat و WeCom والدردشات والمرفقات والملفات والرسائل التي تم استدعاها وأرشفتها. بعد إعداد موصل وتكوينه، فإنه يتصل بحساب TeleMessage الخاص بمؤسستك، ويستورد اتصالات الهاتف المحمول للموظفين باستخدام TeleMessage WeChat Archiver إلى علب البريد في Microsoft 365.
 

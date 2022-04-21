@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: نظرة عامة حول معالجة أشكال مختلفة من البيانات في eDiscovery (Premium).
-ms.openlocfilehash: 043e1b2b023fdd4e379116109069674515153524
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e55d4c3554015adf1135086f23db6566d4bf132d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936302"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998959"
 ---
 # <a name="work-with-processing-errors-in-ediscovery-premium"></a>العمل على معالجة الأخطاء في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 *المعالجة* هي عملية تعريف الملفات وتوسيع المستندات والمرفقات المضمنة واستخراج النص والتعرف البصري على الحروف (OCR) لملفات الصور والفهرسة اللاحقة لهذا المحتوى.  
 

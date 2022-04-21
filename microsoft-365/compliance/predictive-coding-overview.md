@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: تستخدم وحدة الترميز التنبؤي الجديدة في eDiscovery (Premium) التعلم الآلي لتحليل العناصر في مجموعة مراجعة للتنبؤ بالعناصر ذات الصلة بحالتك أو التحقيق.
-ms.openlocfilehash: 2cf8541e3ca3928b1206eb824c21e21e49c4caa9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7d45c995fafe5b802713e101ad36a362ab77fa37
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936544"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998981"
 ---
 # <a name="learn-about-predictive-coding-in-ediscovery-premium-preview"></a>تعرف على الترميز التنبؤي في eDiscovery (Premium) (معاينة)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تستخدم وحدة الترميز التنبؤية في eDiscovery (Premium) قدرات التعلم الآلي الذكية لمساعدتك على تقليل كمية المحتوى المطلوب مراجعته. يساعدك الترميز التنبؤي على تقليل كميات كبيرة من محتوى الحالة وإحصاءها إلى مجموعة ذات صلة من العناصر التي يمكنك تحديد أولوياتها للمراجعة. يتم تحقيق ذلك عن طريق إنشاء نماذج الترميز التنبؤية الخاصة بك وتدريبها التي تساعدك على تحديد أولويات مراجعة العناصر الأكثر صلة في مجموعة مراجعة.
 

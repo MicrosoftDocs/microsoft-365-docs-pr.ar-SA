@@ -18,14 +18,16 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: استخدم البرنامج النصي PowerShell في هذه المقالة لنسخ بحث محتوى موجود بسرعة في مركز التوافق في Office 365 أو Microsoft 365.
-ms.openlocfilehash: 782620d3693f4659c135d2a52aa7062a490a7cd0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 82994bcc87b76efe21bb1c68877b2bb8a5926424
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940478"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998651"
 ---
 # <a name="clone-a-content-search"></a>استنساخ البحث في المحتوى
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 قد يستغرق إنشاء "البحث في المحتوى" في مركز التوافق في Office 365 أو Microsoft 365 الذي يبحث في العديد من علب البريد أو SharePoint ومواقع OneDrive for Business بعض الوقت. يمكن أيضا أن يكون تحديد المواقع المراد البحث فيها عرضة للأخطاء إذا أخطأت في كتابة عنوان URL. لتجنب هذه المشاكل، يمكنك استخدام البرنامج النصي Windows PowerShell في هذه المقالة لاستنساخ بحث محتوى موجود بسرعة. عند استنساخ بحث، يتم إنشاء بحث جديد (باسم مختلف) يحتوي على نفس الخصائص (مثل مواقع المحتوى واستعلام البحث) مثل البحث الأصلي. ثم يمكنك تحرير البحث الجديد عن طريق تغيير استعلام الكلمة الأساسية أو نطاق التاريخ وتشغيله.
   

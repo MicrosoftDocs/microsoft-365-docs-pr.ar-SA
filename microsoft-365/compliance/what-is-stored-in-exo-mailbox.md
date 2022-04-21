@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: يتم تخزين المحتوى الذي تنتجه التطبيقات المستندة إلى السحابة في Microsoft 365 أو إقرانه بعلبة بريد Exchange Online للمستخدم. يمكن البحث في هذا المحتوى باستخدام أدوات Microsoft eDiscovery.
-ms.openlocfilehash: b37295783883d689acc34dbff88e5a94186eb4a6
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b5e8434f5345cda8ef4f637b3dff2d3cf704f748
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947836"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000785"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>المحتوى المخزن في علب بريد Exchange Online ل eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتم استخدام علبة بريد في Exchange Online بشكل أساسي لتخزين العناصر المتعلقة بالبريد الإلكتروني مثل الرسائل وعناصر التقويم والمهام والملاحظات. ولكن هذا يتغير مع تخزين المزيد من التطبيقات المستندة إلى السحابة لبياناتها في علبة بريد المستخدم. تتمثل إحدى ميزات تخزين البيانات في علبة بريد في أنه يمكنك استخدام أدوات البحث في البحث عن المحتوى وMicrosoft Purview eDiscovery (قياسي) وMicrosoft Purview eDiscovery (Premium) للبحث عن البيانات وعرضها وتصديرها من هذه التطبيقات المستندة إلى السحابة. يتم تخزين البيانات من بعض هذه التطبيقات في مجلدات مخفية موجودة في شجرة فرعية غير أحرف (غير IPM) في علبة البريد. قد لا يتم تخزين البيانات من التطبيقات الأخرى المستندة إلى السحابة _في_ علبة البريد، ولكنها _مقترنة بعلبة_ البريد، ويتم إرجاعها في عمليات البحث (إذا تطابقت تلك البيانات مع استعلام البحث). بغض النظر عما إذا كانت البيانات المستندة إلى السحابة مخزنة في علبة بريد مستخدم أو مقترنة بها، لا تكون البيانات عادة مرئية في عميل البريد الإلكتروني عندما يفتح المستخدم علبة بريده.
 

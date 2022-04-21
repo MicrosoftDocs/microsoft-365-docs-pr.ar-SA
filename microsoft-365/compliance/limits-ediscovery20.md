@@ -16,14 +16,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على حدود الحالة وحدود الفهرسة وحدود البحث السارية لحل eDiscovery (Premium) في Microsoft 365.
-ms.openlocfilehash: 599f57ab863ab6d82140fa473624916bd2f26ac1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 07977b80ba0ce55c6d0e6b179955cfa959eaa5c8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942502"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999751"
 ---
 # <a name="limits-in-ediscovery-premium"></a>الحدود في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تصف هذه المقالة الحدود في حل Microsoft Purview eDiscovery (Premium) في Microsoft 365.
 

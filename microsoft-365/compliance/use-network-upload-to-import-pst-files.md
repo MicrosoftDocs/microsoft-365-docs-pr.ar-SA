@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'للمسؤولين: تعرف على كيفية استخدام تحميل الشبكة لاستيراد ملفات PST متعددة بشكل مجمع إلى علب بريد المستخدمين في Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8d63b83f8052fdd3ce973bba15df72ee4c7d6989
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 10a0b2e076c3a8d4fc6910e16ba89c3ce75d2d2d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935424"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999792"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>استخدم تحميل الشبكة لاستيراد ملفات PST الخاصة بالمؤسسة إلى Microsoft 365
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > هذه المقالة مخصصة للمسؤولين. هل تحاول استيراد ملفات PST إلى علبة البريد الخاصة بك؟ راجع [استيراد البريد الإلكتروني وجهات الاتصال والتقويم من ملف pst. Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)

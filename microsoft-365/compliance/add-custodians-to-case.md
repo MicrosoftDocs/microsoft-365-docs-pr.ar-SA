@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية استخدام أداة إدارة الوصي المضمنة في Microsoft Purview eDiscovery (Premium) لتنسيق مهام سير العمل وتحديد مصادر البيانات ذات الصلة في حالة ما.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7da45eca9e57ef64c9272c89e24c21a20dc5af80
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 46277524f616e91e89e9bccce1fdd3c3109b3d86
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935797"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999465"
 ---
 # <a name="add-custodians-to-an-ediscovery-premium-case"></a>إضافة أمناء حفظ إلى حالة eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم أداة إدارة الوصي المضمنة في Microsoft Purview eDiscovery (Premium) لتنسيق مهام سير العمل الخاصة بك حول إدارة أمناء الحفظ وتحديد مصادر البيانات ذات الصلة والحفظ المرتبطة بالحالة. عند إضافة وصي، يمكن للنظام التعرف تلقائيا على علبة بريده Exchange وحسابه OneDrive for Business ووضعه قيد الاحتجاز. أثناء عملية اكتشاف التحقيق الخاص بك، قد تحدد أيضا مصادر بيانات أخرى (مثل علب البريد أو المواقع أو Teams) التي قام الوصي بالوصول إليها أو المساهمة فيها. في هذه الحالة، يمكنك استخدام أداة إدارة الوصي لربط مصادر البيانات هذه بوصي محدد. بعد إضافة أمناء حفظ إلى حالة وإقران مصدر بيانات آخر معهم، يمكنك الاحتفاظ بالبيانات والبحث في البيانات الاحتجازية بسرعة.
 

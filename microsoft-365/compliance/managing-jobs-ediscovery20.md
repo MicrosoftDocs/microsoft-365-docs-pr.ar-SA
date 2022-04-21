@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: تساعدك وظائف eDiscovery (Premium) على تعقب حالة العمليات طويلة الأمد المتعلقة بتنفيذ مهام eDiscovery (Premium) المختلفة.
-ms.openlocfilehash: 2c82b79458d59dd1176857cf37943c7676ad38a2
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: ab1b6cf45805a0d67492a5d386670f139b24f5e1
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935599"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998475"
 ---
 # <a name="manage-jobs-in-ediscovery-premium"></a>إدارة المهام في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 فيما يلي قائمة بالوظائف (التي عادة ما تكون عمليات طويلة الأمد) التي يتم تعقبها على علامة التبويب **"المهام"** لحالة في Microsoft Purview eDiscovery (Premium). يتم تشغيل هذه المهام بواسطة إجراءات المستخدم عند استخدام الحالات وإدارتها.
 

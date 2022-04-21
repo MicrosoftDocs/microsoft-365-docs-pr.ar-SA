@@ -18,14 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: يوفر تدقيق Microsoft Purview (Premium) قدرات تدقيق جديدة لمساعدة مؤسستك في التحقيقات الجنائية والتوافقية.
-ms.openlocfilehash: 51add6560c12994470f5a6ad96fce5c3f293f4f7
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 4f936977c71a933dd05e5c0b2e0d2111b03bc8f7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972816"
+ms.locfileid: "64999487"
 ---
 # <a name="microsoft-purview-audit-premium"></a>تدقيق Microsoft Purview (Premium)
+
+> [!TIP]
+> *هل تعلم أنه يمكنك تجربة الإصدارات المتميزة من جميع حلول Microsoft Purview التسعة مجانا؟* استخدم تجربة حلول Purview لمدة 90 يوما لاستكشاف مدى قدرة قدرات Purview القوية على مساعدة مؤسستك على تلبية احتياجات التوافق الخاصة بها. يمكن للعملاء Microsoft 365 E3 Office 365 E3 البدء الآن في [مركز تجارب مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). تعرف على تفاصيل حول [الأشخاص الذين يمكنهم التسجيل وشروط الإصدار التجريبي](compliance-easy-trials.md).
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 توفر [وظيفة التدقيق](search-the-audit-log-in-security-and-compliance.md) في Microsoft Purview للمؤسسات إمكانية رؤية العديد من أنواع الأنشطة التي تم تدقيقها عبر العديد من الخدمات المختلفة في Microsoft 365. يساعد تدقيق Microsoft Purview (Premium) المؤسسات على إجراء تحقيقات الطب الشرعي والتوافق من خلال زيادة استبقاء سجل التدقيق المطلوب لإجراء تحقيق، وتوفير الوصول إلى الأحداث الهامة (باستخدام البحث في سجل التدقيق في مدخل توافق Microsoft Purview وواجهة برمجة تطبيقات نشاط الإدارة Office 365) التي تساعد في تحديد نطاق التسوية، والوصول بشكل أسرع إلى Office 365 Management Activity API.
 

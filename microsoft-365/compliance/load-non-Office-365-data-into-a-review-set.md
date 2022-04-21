@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: تعرف على كيفية استيراد بيانات غير Microsoft 365 إلى مجموعة مراجعة للتحليل في حالة eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9d27e2d1e306c189aa28a2c331a60c5b4d0c5dc
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d7167f85760d0c1cc05e130413dbcdae9e0e3973
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944734"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996845"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>تحميل البيانات غير Microsoft 365 في مجموعة مراجعة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 لا توجد كل المستندات التي تحتاج إلى تحليلها في Microsoft Purview eDiscovery (Premium) في Microsoft 365. باستخدام ميزة استيراد البيانات غير Microsoft 365 في eDiscovery (Premium)، يمكنك تحميل المستندات غير الموجودة في Microsoft 365 إلى مجموعة مراجعة. توضح لك هذه المقالة كيفية إحضار المستندات غير Microsoft 365 إلى eDiscovery (Premium) للتحليل.
 

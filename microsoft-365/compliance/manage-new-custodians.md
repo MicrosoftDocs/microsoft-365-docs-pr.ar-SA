@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية عرض التفاصيل والتحرير والتحرير المجمع لقائمة أمناء الحفظ في حالة eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 905773ac500a394b4a2394eb221e23a51a5c197e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2ab30e1343acd4718f80f816abc6ef850acf7215
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942480"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996823"
 ---
 # <a name="manage-custodians-in-an-ediscovery-premium-case"></a>إدارة أمناء الحفظ في حالة eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تحتوي صفحة **أمناء الحفظ** على علامة تبويب **مصادر البيانات** في حالة Microsoft Purview eDiscovery (Premium) على قائمة بجميع أمناء الحفظ الذين تمت إضافتهم إلى الحالة. بعد إضافة أمناء حفظ إلى حالة، يتم جمع تفاصيل حول كل أمين تلقائيا من Azure Active Directory ويمكن عرضها في eDiscovery (Premium).
 

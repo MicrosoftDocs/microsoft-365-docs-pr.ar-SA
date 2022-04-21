@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد البيانات وأرشفتها من موصل Teams Webex في Veritas في Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: 1aa1a0ddd94aa2308c4884921138b12b0c152bab
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6b879e62d2c94d9b61c47674be364927ea9dc1cc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64942854"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999311"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data"></a>إعداد موصل إلى أرشفة بيانات Teams Webex
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من Teams Webex إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر Veritas موصل [Teams Webex](https://globanet.com/webex-teams/) الذي تم تكوينه لالتقاط عناصر اتصال Teams Webex واستيرادها إلى Microsoft 365. يحول الموصل المحتوى من Teams Webex، مثل الدردشات 1:1 ومحادثات المجموعة ومحادثات القناة والمرفقات من حساب Teams Webex الخاص بمؤسستك، إلى تنسيق رسالة بريد إلكتروني ثم استيراد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
 

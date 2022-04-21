@@ -18,14 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: يمكنك إنشاء احتجاز مقترن بحالة eDiscovery (قياسي) في Microsoft 365 للحفاظ على المحتوى ذي الصلة بالتحقيق أو الدعوى القانونية.
-ms.openlocfilehash: 4448c9b8a55466c0cf626deff6e69acd247a5814
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 87a75923ccc270e7b9802ae5d366dd2930a84d82
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64938258"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001225"
 ---
 # <a name="create-an-ediscovery-hold"></a>إنشاء قائمة احتجاز eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك استخدام حالة Microsoft Purview eDiscovery (Standard) لإنشاء قوائم احتجاز للاحتفاظ بالمحتوى الذي قد يكون ذا صلة بالحالة. يمكنك وضع قائمة احتجاز على علب بريد Exchange وحسابات OneDrive for Business للأشخاص الذين تحقق منهم في هذه الحالة. يمكنك أيضا وضع قائمة احتجاز على علب البريد والمواقع المقترنة ب Microsoft Teams ومجموعات Office 365 ومجموعات Yammer. عند وضع مواقع المحتوى قيد الاحتجاز، يتم الاحتفاظ بالمحتوى حتى تقوم بإزالة موقع المحتوى من قائمة الاحتجاز أو حتى تحذف قائمة الاحتجاز.
 

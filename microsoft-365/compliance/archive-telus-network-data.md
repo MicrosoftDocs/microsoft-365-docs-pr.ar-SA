@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل TeleMessage لاستيراد بيانات SMS وأرشفتها من شبكة TELUS في Microsoft 365. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: 4fec855f4b2d9b066e670655a8b708877b1741ca
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: d35f14d5987f0230f17313902d0f451eedacb104
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937158"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000455"
 ---
 # <a name="set-up-a-connector-to-archive-telus-network-data"></a>إعداد موصل أرشفة بيانات شبكة TELUS
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل TeleMessage في مدخل توافق Microsoft Purview لاستيراد بيانات خدمة المراسلة القصيرة (SMS) وأرشفتها من شبكة TELUS الخاصة بمؤسستك. بعد إعداد موصل وتكوينه، يتصل بشبكة TELUS الخاصة بمؤسستك مرة واحدة كل يوم، ويستورد بيانات SMS إلى علب البريد في Microsoft 365.
 

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد وأرشفة بيانات FX من Veritas إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: 1c72c47da5c18b0688dafd73f4d1bb78d8bee48b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 619da77841c3366489b128db56c29c42c0256380
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950640"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999355"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-fx-data"></a>إعداد موصل أرشفة بيانات FX ل "Fx"
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من النظام الأساسي ل "Fx" إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر لك Veritas [موصلا لExexEds](https://globanet.com/reuters-fx/) الذي تم تكوينه لالتقاط العناصر من مصدر بيانات الجهات الخارجية (على أساس منتظم) ثم استيراد هذه العناصر إلى Microsoft 365. يقوم الموصل بتحويل العملات وأسعار FX من حساب "Fx" في "Fx" إلى تنسيق رسالة بريد إلكتروني ثم استيراد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
 

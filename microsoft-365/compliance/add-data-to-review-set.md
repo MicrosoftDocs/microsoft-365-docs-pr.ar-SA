@@ -18,14 +18,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية إضافة نتائج البحث أو عينات نتائج البحث هذه إلى مجموعة مراجعة حالة eDiscovery (Premium).
-ms.openlocfilehash: 7b754aa09390d041de44cd2e82ed9d1f93eede7e
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: d41697f18360b277b060dd537020f9e04ef341ec
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973740"
+ms.locfileid: "64997725"
 ---
 # <a name="add-search-results-to-a-review-set"></a>إضافة نتائج البحث إلى مجموعة مراجعة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عندما تكون راضيا عن نتائج البحث وكنت جاهزا لمراجعة نتائج البحث هذه وتحليلها، يمكنك إضافتها إلى مجموعة مراجعة في هذه الحالة. كما يسهل نسخ البيانات الأصلية إلى مجموعة المراجعة عملية المراجعة والتحليل من خلال تزويدك بأدوات التحليلات المتقدمة مثل الكشف عن النسق والكشف شبه المكرر وتحديد مؤشر ترابط البريد الإلكتروني. يمكنك أيضا إضافة بيانات من مصادر بيانات غير Microsoft 365 إلى مجموعة مراجعة بحيث يمكنك مراجعة تلك البيانات بالإضافة إلى البيانات التي تجمعها من Microsoft 365.
 

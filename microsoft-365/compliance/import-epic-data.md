@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل بيانات لاستيراد بيانات سجلات الرعاية الصحية الإلكترونية (EHR) من نظام Epic الخاص بمؤسستك إلى Microsoft 365. يتيح لك ذلك استخدام بيانات Epic EHR في نهج إدارة المخاطر الداخلية لمساعدتك على اكتشاف نشاط وصول غير مصرح به إلى بيانات المرضى من قبل موظفيك.
-ms.openlocfilehash: ce1e56d61d7930d5f604f52edc68cf480f6daa1a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1dfcedbc6242f16ce476dddd642567bef69c966f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932012"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000125"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>إعداد موصل لاستيراد بيانات تدقيق Epic EHR (معاينة)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك إعداد موصل بيانات في مدخل توافق Microsoft Purview لاستيراد سجلات التدقيق لنشاط المستخدم في نظام Epic Electronic Healthcare Records (EHR) الخاص بمؤسستك. تتضمن سجلات التدقيق من نظام Epic EHR سجلات للأحداث المتعلقة بالوصول إلى سجلات صحة المريض. يمكن استخدام سجلات تدقيق EHR الملحمية بواسطة [حل إدارة المخاطر الداخلية](insider-risk-management.md) Microsoft 365 للمساعدة في حماية مؤسستك من الوصول غير المصرح به إلى معلومات المريض.
 

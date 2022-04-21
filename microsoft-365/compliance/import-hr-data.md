@@ -15,14 +15,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: يمكن للمسؤولين إعداد موصل بيانات لاستيراد بيانات الموظفين من نظام الموارد البشرية (HR) لمؤسستهم إلى Microsoft 365. يتيح لك ذلك استخدام بيانات الموارد البشرية في نهج إدارة المخاطر الداخلية لمساعدتك على اكتشاف نشاط مستخدمين محددين قد يشكل تهديدا داخليا لمؤسستك.
-ms.openlocfilehash: e1539661c987de8642639df777602fbcf05bdcc4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 81ee1ae3841c4b30f7159d344a195d924d49030c
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944800"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999949"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>إعداد موصل لاستيراد بيانات الموارد البشرية
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك إعداد موصل بيانات في مدخل توافق Microsoft Purview لاستيراد بيانات الموارد البشرية (HR) المتعلقة بأحداث مثل توابع المستخدم أو تغيير في مستوى وظيفة المستخدم. يمكن بعد ذلك استخدام بيانات الموارد البشرية من قبل [حل إدارة المخاطر من الداخل](insider-risk-management.md) لإنشاء مؤشرات المخاطر التي يمكن أن تساعدك على تحديد النشاط الضار المحتمل أو سرقة البيانات من قبل المستخدمين داخل مؤسستك.
 

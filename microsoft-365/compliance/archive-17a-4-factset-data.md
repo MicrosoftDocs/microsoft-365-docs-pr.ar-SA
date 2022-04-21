@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل 17a-4 FactSet DataParser واستخدامه لاستيراد بيانات FactSet وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 71f0ddfedb5fa3fb075ce55acaf42a95c3344e16
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c191cb1e25716bc4f4d0d948a5a0d863c55607ac
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940914"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998331"
 ---
 # <a name="set-up-a-connector-to-archive-factset-data"></a>إعداد موصل أرشفة بيانات FactSet
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم [FactSet DataParser](https://www.17a-4.com/factset-dataparser/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من النظام الأساسي FactSet إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يتضمن DataParser موصل FactSet الذي تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول موصل FactSet DataParser بيانات FactSet إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

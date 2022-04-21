@@ -20,14 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: تصف هذه المقالة كيفية إنشاء حالات Microsoft Purview eDiscovery (Premium) وإدارتها. الخطوة الأولى هي إنشاء حالة والبدء في استخدام ميزات ووظائف eDiscovery (Premium).
-ms.openlocfilehash: fb14c5ce7f1ffca6216e8d592c5cc1c7ff2802ce
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 294a07c2f43559943482c3e17c98289f41dff7bc
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946408"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999267"
 ---
 # <a name="create-and-manage-an-ediscovery-premium-case"></a>إنشاء حالة eDiscovery (Premium) وإدارتها
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بعد إعداد Microsoft Purview eDiscovery (Premium) [وتعيين أذونات لمديري eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) في مؤسستك الذين سيديرون الحالات، فإن الخطوة التالية هي إنشاء حالة وإدارتها.
 

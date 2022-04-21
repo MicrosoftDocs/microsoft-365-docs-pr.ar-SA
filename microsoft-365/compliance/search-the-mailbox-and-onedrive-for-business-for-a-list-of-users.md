@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: استخدم البحث عن المحتوى والبرامج النصية في هذه المقالة للبحث في علب البريد ومواقع OneDrive for Business لمجموعة من المستخدمين.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14c518c4450b01e387f84b4211da8d0eb346fe7a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1bbfc26c2193c1bf31e081b8ded9e2e2baf56743
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949256"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998805"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>استخدام البحث عن المحتوى للبحث في علبة البريد وموقع OneDrive for Business عن قائمة المستخدمين
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يوفر Security & Compliance Center PowerShell عددا من أوامر cmdlets التي تتيح لك أتمتة المهام ذات الصلة ب eDiscovery التي تستغرق وقتا طويلا. حاليا، يستغرق إنشاء بحث في المحتوى في مدخل توافق Microsoft Purview للبحث في عدد كبير من مواقع محتوى الوصي وقتا وإعدادا. قبل إنشاء عملية بحث، يجب عليك جمع عنوان URL لكل موقع OneDrive for Business ثم إضافة كل علبة بريد وموقع OneDrive for Business إلى البحث. في الإصدارات المستقبلية، سيكون من الأسهل القيام بذلك في مدخل التوافق. حتى ذلك الحين، يمكنك استخدام البرنامج النصي في هذه المقالة لأتمتة هذه العملية. يطالبك هذا البرنامج النصي باسم مجال MySite الخاص بالمؤسسة (على سبيل المثال، **contoso** في عنوان URL `https://contoso-my.sharepoint.com`) وقائمة بعناوين البريد الإلكتروني للمستخدم واسم البحث عن المحتوى الجديد واستعلام البحث المطلوب استخدامه. يحصل البرنامج النصي على عنوان URL OneDrive for Business لكل مستخدم في القائمة، ثم يقوم بإنشاء "بحث المحتوى" وبدء تشغيله للبحث في علبة البريد وموقع OneDrive for Business لكل مستخدم في القائمة، باستخدام استعلام البحث الذي توفره.
   

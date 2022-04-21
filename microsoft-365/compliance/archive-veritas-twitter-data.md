@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات Twitter وأرشفتها من Veritas إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني وeDiscovery ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: bb632448a2acab4e776a3d608659c165dfd6be9f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7b6e26696796c75764900123b5babbd47def4631
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935072"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000390"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>إعداد موصل أرشفة بيانات Twitter (معاينة)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من النظام الأساسي Twitter إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر Veritas موصل [Twitter](https://www.veritas.com/insights/merge1/twitter) الذي تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول الموصل محتوى مثل التغريدات وإعادة الweets والتعليقات من Twitter إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

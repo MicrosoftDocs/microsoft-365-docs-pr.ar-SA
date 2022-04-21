@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل Cisco Webex DataParser 17a-4 واستخدامه لاستيراد بيانات Cisco Webex وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 57a991f4a6d808dbcd22cb1d3466f10417e8d8e9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 67cd7007d19ba37b20da4ea961e3ec16e3b63840
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944118"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64996581"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-webex-data"></a>إعداد موصل أرشفة بيانات Cisco Webex
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم [Cisco Webex DataParser](https://www.17a-4.com/webex-dataparser/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من النظام الأساسي Cisco Cisco Webex إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يتضمن DataParser موصل Cisco Webex الذي تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول موصل Cisco Webex DataParser بيانات Cisco Webex إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

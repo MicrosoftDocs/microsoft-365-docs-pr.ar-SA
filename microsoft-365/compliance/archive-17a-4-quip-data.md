@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل Quip DataParser 17a-4 واستخدامه لاستيراد بيانات Quip وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 7379c092b6d00c023198636fd022ef65e5b17724
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 233f4eba5a93c4176bd2ed11de965030f66d63ca
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947330"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999421"
 ---
 # <a name="set-up-a-connector-to-archive-quip-data"></a>إعداد موصل أرشفة بيانات Quip
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم [Quip DataParser](https://www.17a-4.com/quip-dataparser/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من Quip إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يتضمن DataParser موصل Quip الذي تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول موصل Quip DataParser بيانات Quip إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

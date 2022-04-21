@@ -16,14 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: بعد إنشاء مجموعة مسودات والتكرار عليها، يمكنك تثبيتها بمجموعة مراجعة. عند تثبيت مجموعة مسودات، تتم إضافة العناصر التي تم تجميعها إلى مجموعة المراجعة في الحالة. بعد أن تكون العناصر التي تم تجميعها في مجموعة المراجعة، يمكنك تحليلها ومراجعتها وتصديرها.
-ms.openlocfilehash: 5637d97020d7fb086914a6debdaffc8050772828
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f908d17d804487cd5e7e93085e418f9a94915c8e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940280"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997923"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-ediscovery-premium"></a>تثبيت مجموعة مسودات إلى مجموعة مراجعة في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عندما تكون راضيا عن العناصر التي جمعتها في مجموعة مسودات وتكون جاهزا لتحليلها ووضع علامة عليها ومراجعتها، يمكنك إضافة مجموعة إلى مجموعة مراجعة في هذه الحالة. عند تثبيت مجموعة مسودات بمجموعة مراجعة، يتم نسخ العناصر المجمعة من موقع المحتوى الأصلي في Microsoft 365 إلى مجموعة مراجعة. مجموعة المراجعة هي موقع تخزين Azure آمن توفره Microsoft في سحابة Microsoft.
 

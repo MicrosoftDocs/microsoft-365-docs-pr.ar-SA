@@ -21,14 +21,16 @@ description: استخدم مدخل توافق Microsoft Purview للبحث في 
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: f35bfbbe299495e912d018bd00615964f883031e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6c0f26bbda2ba28b98fc80b80ce4a520d9fb39c3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936258"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998893"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>البحث في سجل التدقيق في مركز التوافق
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 هل تحتاج إلى العثور على ما إذا كان المستخدم قد عرض مستندا معينا أو قام بإزالة عنصر من علبة بريده؟ إذا كان الأمر كذلك، يمكنك استخدام أداة البحث في سجل التدقيق في مدخل توافق Microsoft Purview للبحث في سجل التدقيق الموحد لعرض نشاط المستخدم والمسؤول في مؤسستك. يتم تسجيل الآلاف من عمليات المستخدم والمسؤول التي يتم تنفيذها في العشرات من خدمات وحلول Microsoft 365 وتسجيلها والاحتفاظ بها في سجل التدقيق الموحد لمؤسستك. يمكن للمستخدمين في مؤسستك استخدام أداة البحث في سجل التدقيق للبحث عن سجلات التدقيق لهذه العمليات وعرضها وتصديرها (إلى ملف CSV).
 

@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد وأرشفة بيانات "التعامل مع عمليات المتابعة" من Veritas إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: 75b44a6ed76908a566edf8cb39c27f25788ce2c1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bbcc148b3e7176975be5e4e5624202a170c90f28
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64950688"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999333"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>إعداد موصل إلى أرشفة بيانات التعامل مع أجهزة ليناشئ أجهزة كمبيوتر
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل الامتثال ل Microsoft Purview لاستيراد البيانات وأرشفتها من النظام الأساسي "التعامل مع العملاء" إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر لك Veritas [موصلا](https://globanet.com/reuters-dealing/) للتعامل مع العملاء تم تكوينه لالتقاط العناصر من مصدر بيانات الجهات الخارجية (بشكل منتظم) ثم استيراد هذه العناصر إلى Microsoft 365. يقوم الموصل بتحويل اتصالات "التعامل" من حساب "التعامل مع" إلى تنسيق رسالة بريد إلكتروني ثم استيراد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
 

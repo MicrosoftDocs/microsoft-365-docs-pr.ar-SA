@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
+ms.date: 04/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: cf6a74bbde2e32ae047f97a7198b7f263e91b048
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 75c3df32bb3103ad818524da0972567d3fd11cc8
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862687"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000675"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>متطلبات Microsoft Defender for Business
 
@@ -53,7 +53,7 @@ ms.locfileid: "64862687"
 | حسابات المستخدمين | يتم إنشاء حسابات المستخدمين في مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/><br/>يتم تعيين تراخيص Microsoft Defender for Business في مركز مسؤولي Microsoft 365<br/><br/>للحصول على تعليمات حول هذه المهمة، راجع [إضافة مستخدمين وتعيين التراخيص](mdb-add-users.md). |
 | الأذونات  | للتسجيل للحصول على Microsoft Defender for Business، يجب أن تكون مسؤولا عاما.<br/><br/>للوصول إلى مدخل Microsoft 365 Defender، يجب أن يكون لدى المستخدمين أحد [الأدوار التالية في Azure AD](mdb-roles-permissions.md) المعين: <br/>- قارئ الأمان<br/>- مسؤول الأمان<br/>- المسؤول العام<br/><br/>لمعرفة المزيد، راجع [الأدوار والأذونات في Microsoft Defender for Business](mdb-roles-permissions.md). |
 | متطلبات المستعرض | Microsoft Edge أو Google Chrome |
-| نظام التشغيل | لإدارة الأجهزة في Microsoft Defender for Business، يجب أن تعمل أجهزتك بأحد أنظمة التشغيل التالية: <br/>- Windows 10 Business أو أحدث <br/>- Windows 10 Professional أو إصدار أحدث <br/>- Windows 10 Enterprise أو أحدث <br/><br/>تأكد من تثبيت [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) . <br/><br/>إذا كنت تدير بالفعل الأجهزة في Microsoft Intune (أو إدارة نقاط النهاية من Microsoft)، يمكنك إلحاق هذه الأجهزة ب Defender for Business.<br/><br/>القدرة على إلحاق نقاط النهاية التي تعمل Windows Server 2012 R2 والإي وقت لاحق قيد المعاينة حاليا. |
+| نظام التشغيل | لإدارة الأجهزة في Microsoft Defender for Business، يجب أن تعمل أجهزتك بأحد أنظمة التشغيل التالية: <br/>- Windows 10 Business أو أحدث <br/>- Windows 10 Professional أو إصدار أحدث <br/>- Windows 10 Enterprise أو أحدث <br/>- macOS (الإصدارات الثلاثة الأحدث مدعومة)<br/><br/>تأكد من تثبيت [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) . <br/><br/>إذا كنت تدير بالفعل الأجهزة في Microsoft Intune (أو إدارة نقاط النهاية من Microsoft)، يمكنك إلحاق هذه الأجهزة ب Defender for Business. |
 
 > [!NOTE]
 > يتم استخدام [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) لإدارة أذونات المستخدم ومجموعات الأجهزة. يتم تضمين Azure AD في اشتراك Defender for Business. 

@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: تعرف على كيفية أتمتة مهام البحث في المحتوى مثل إنشاء عمليات البحث وتشغيل التقارير باستخدام Security & Compliance Center PowerShell.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06ea7655348851cbd457b527a3ee36f72d78e562
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: c6e84641fef819503349803cdd54d5aaa860fc50
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936852"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000213"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>إنشاء عدة عمليات بحث في المحتوى وإعداد تقرير بشأنها وحذفها
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  غالبا ما يكون إنشاء عمليات البحث عن الاكتشاف والإبلاغ عنها بسرعة خطوة مهمة في eDiscovery والتحقيقات عندما تحاول التعرف على البيانات الأساسية وثراء عمليات البحث وجودتها. لمساعدتك على القيام بذلك، يوفر Security & Compliance Center PowerShell مجموعة من أوامر cmdlets لأتمتة مهام البحث عن المحتوى التي تستغرق وقتا طويلا. توفر هذه البرامج النصية طريقة سريعة وسهلة لإنشاء عدد من عمليات البحث، ثم تشغيل تقارير نتائج البحث المقدرة التي يمكن أن تساعدك في تحديد كمية البيانات المعنية. يمكنك أيضا استخدام البرامج النصية لإنشاء إصدارات مختلفة من عمليات البحث لمقارنة النتائج التي ينتجها كل منها. يمكن أن تساعدك هذه البرامج النصية على تحديد بياناتك ومعالجتها بسرعة وكفاءة.
 

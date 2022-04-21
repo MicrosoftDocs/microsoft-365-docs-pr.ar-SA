@@ -16,14 +16,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: يمكن للمسؤولين إعداد موصل أصلي لاستيراد صفحات Facebook Business وأرشفتها Microsoft 365. بعد استيراد هذه البيانات إلى Microsoft 365، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة إدارة بيانات Facebook الخاصة بمؤسستك.
-ms.openlocfilehash: 126b4af3887632df5c8f83eac8e20fe5d88c8608
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b58b3f1707a8c3bb52aa7fc5ebc9c359ef9a8a97
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64949168"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998761"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>نشر موصل أرشفة بيانات صفحات Facebook Business
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تحتوي هذه المقالة على العملية خطوة بخطوة لنشر موصل يستخدم خدمة استيراد Office 365 لاستيراد البيانات من صفحات Facebook Business إلى Microsoft 365. للحصول على نظرة عامة عالية المستوى حول هذه العملية وقائمة بالمتطلبات الأساسية المطلوبة لنشر موصل Facebook، راجع [إعداد موصل لأرشفة بيانات Facebook](archive-facebook-data-with-sample-connector.md).
 

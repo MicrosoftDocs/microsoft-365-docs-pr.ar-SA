@@ -20,14 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 description: يقدم Microsoft Purview ثلاث أدوات eDiscovery يمكنك استخدامها للبحث عن المحتوى الموجود في مواقع مختلفة وتصديره مثل علب بريد Exchange ومواقع SharePoint OneDrive for Business مجموعات Microsoft 365 Microsoft Teams و Skype for Business المحادثات. يوفر eDiscovery (قياسي) وeDiscovery (Premium) العديد من الميزات الإضافية لمساعدتك على إدارة التحقيقات الخاصة بك.
-ms.openlocfilehash: efa7f12ec20377713598edc54f032e7c2a27d706
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4c146e2eea1c0c462491444102365cb5c611e78d
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932211"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001137"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>حلول Microsoft Purview eDiscovery
+
+> [!TIP]
+> *هل تعلم أنه يمكنك تجربة الإصدارات المتميزة من جميع حلول Microsoft Purview التسعة مجانا؟* استخدم تجربة حلول Purview لمدة 90 يوما لاستكشاف مدى قدرة قدرات Purview القوية على مساعدة مؤسستك على تلبية احتياجات التوافق الخاصة بها. يمكن للعملاء Microsoft 365 E3 Office 365 E3 البدء الآن في [مركز تجارب مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). تعرف على تفاصيل حول [الأشخاص الذين يمكنهم التسجيل وشروط الإصدار التجريبي](compliance-easy-trials.md).
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 الاكتشاف الإلكتروني، أو eDiscovery، هو عملية تحديد وتقديم المعلومات الإلكترونية التي يمكن استخدامها كدليل في الحالات القانونية. يمكنك استخدام أدوات eDiscovery في Microsoft Purview للبحث عن المحتوى في فرق Exchange Online، OneDrive for Business، SharePoint Online، Microsoft Teams، مجموعات Microsoft 365، Yammer. يمكنك البحث في علب البريد والمواقع في البحث eDiscovery نفسه، ثم تصدير نتائج البحث. يمكنك استخدام حالات Microsoft Purview eDiscovery (القياسية) لتحديد المحتوى الموجود في علب البريد والمواقع والاحتفاظ به وتصديره. إذا كان لدى مؤسستك اشتراك Office 365 E5 أو Microsoft 365 E5 (أو اشتراكات E5 الإضافية ذات الصلة)، يمكنك إدارة أمناء الحفظ وتحليل المحتوى باستخدام حل Microsoft Purview eDiscovery (Premium) الغني بالميزات في Microsoft 365.
 

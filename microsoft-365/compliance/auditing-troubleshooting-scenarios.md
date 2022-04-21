@@ -19,14 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: تعرف على كيفية استخدام أداة البحث في سجل التدقيق Microsoft 365 للمساعدة في استكشاف مشكلات الدعم الشائعة لحسابات البريد الإلكتروني وإصلاحها.
-ms.openlocfilehash: add354058a9e6e3d114c97a2932ff0302a27e272
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dd82c735411592a3cfa7cb79ae4d1ce6f97798b4
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946540"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997989"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>البحث في سجل التدقيق للتحقق من مشكلات الدعم الشائعة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تصف هذه المقالة كيفية استخدام أداة البحث في سجل التدقيق لمساعدتك في التحقق من مشاكل الدعم الشائعة. يتضمن ذلك استخدام سجل التدقيق من أجل:
 

@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 description: تعرف على حل eDiscovery (Premium) في Microsoft Purview. توفر هذه المقالة نظرة عامة على eDiscovery (Premium) في Microsoft Purview، وهي أداة تساعدك على إدارة التحقيقات الداخلية والخارجية. كما أنها تقوم بتدوين أسباب العمل لاستخدام eDiscovery (Premium) لإدارة التحقيقات القانونية الخاصة بك.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7283adbf179f2d3dd04f45e2be808043e86ff88f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1a26d1abe9965ad71383a6d07e277999d85e31ef
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64932056"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999069"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>نظرة عامة على Microsoft Purview eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يعتمد حل Microsoft Purview eDiscovery (Premium) على قدرات Microsoft eDiscovery والتحليلات الموجودة. يوفر eDiscovery (Premium) سير عمل من طرف إلى طرف للاحتفاظ بالمحتوى الذي يستجيب للتحقيقات الداخلية والخارجية لمؤسستك وجمعه وتحليله ومراجعته وتصديره. كما يتيح للفرق القانونية إدارة سير عمل إعلام الاحتجاز القانوني بأكمله للتواصل مع أمناء الحفظ المعنيين بقضية ما.
 

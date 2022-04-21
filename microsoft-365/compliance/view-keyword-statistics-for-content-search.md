@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 description: تعرف على كيفية استخدام ميزة إحصائيات البحث لعرض إحصائيات عمليات البحث وعمليات البحث في المحتوى المقترنة بحالة eDiscovery (قياسي) في مدخل توافق Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e057a6e4997240dbaa4b9b7975274c5f3eab7589
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 5d35616823988562b3b075e7a513c8a98a4e3281
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947088"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000807"
 ---
 # <a name="view-statistics-for-ediscovery-search-results"></a>عرض إحصائيات نتائج بحث eDiscovery
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بعد إنشاء بحث في المحتوى أو بحث مقترن بحالة Microsoft Purview eDiscovery (قياسي) وتشغيله، يمكنك عرض إحصائيات حول نتائج البحث المقدرة. يتضمن ذلك ملخصا لنتائج البحث (على غرار ملخص نتائج البحث المقدرة المعروضة في صفحة قائمة البحث المنبثقة)، وإحصائيات الاستعلام مثل عدد مواقع المحتوى التي تحتوي على عناصر تطابق استعلام البحث، وهوية مواقع المحتوى التي تحتوي على العناصر الأكثر تطابقا.
   

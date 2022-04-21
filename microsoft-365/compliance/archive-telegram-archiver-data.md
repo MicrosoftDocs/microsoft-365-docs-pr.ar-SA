@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل TeleMessage لاستيراد بيانات اتصالات Telegram وأرشفتها في Microsoft 365. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: b18d05fa697f3d23e57444d5757d14dff7acfc23
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 6bee4eb9be5cf8c0d2719f391d89e268c5041b7f
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947110"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997439"
 ---
 # <a name="set-up-a-connector-to-archive-telegram-communications-data"></a>إعداد موصل إلى أرشفة بيانات اتصالات Telegram
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل TeleMessage في مدخل توافق Microsoft Purview لاستيراد وأرشفة دردشات Telegram والمرفقات والملفات والرسائل والمكالمات المحذوفة. بعد إعداد موصل وتكوينه، يتصل بحساب TeleMessage الخاص بمؤسستك، ويستورد اتصالات الهاتف المحمول للموظفين باستخدام Telegram Archiver إلى علب البريد في Microsoft 365.
 

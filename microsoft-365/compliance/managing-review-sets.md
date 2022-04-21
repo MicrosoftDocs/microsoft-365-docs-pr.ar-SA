@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية إدارة مجموعات المراجعة حتى تتمكن من تحليل البيانات والاستعلام عنها وعرضها ووضع علامة عليها وتصديرها في حالة eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 60e43d4d4983dd5171ed38f26096fba979c0f98c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 64970cb3302c47dbab394b974bf1df8358ad3755
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935577"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999025"
 ---
 # <a name="manage-review-sets-in-ediscovery-premium"></a>إدارة مجموعات المراجعة في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 مجموعات المراجعة هي مجموعة ثابتة من المستندات حيث يمكنك تحليل البيانات والاستعلام عنها وعرضها ووضع علامة عليها وتصديرها في حالة ما. لمزيد من المعلومات حول تنفيذ هذه المهام، راجع:
 

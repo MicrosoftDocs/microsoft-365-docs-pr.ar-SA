@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: eDiscovery (Premium) يجعل من السهل إدارة سير عمل إعلام الاحتجاز القانوني حول إخطار أمناء الحفظ في التحقيقات القانونية.
-ms.openlocfilehash: 9ee915cc9955b343d76ae1314c27a86421d37332
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bf47522809b61e377abffd742b9a4d84f7b650aa
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944646"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998541"
 ---
 # <a name="work-with-communications-in-ediscovery-premium"></a>العمل مع الاتصالات في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يسمح Microsoft Purview eDiscovery (Premium) للأقسام القانونية بتبسيط عملياتها حول تعقب إشعارات الاحتجاز القانوني وتوزيعها. تمكن أداة اتصالات الوصي الإدارات القانونية من إدارة عملية الاحتجاز القانوني بأكملها وأتمتتها، بدءا من الإعلامات الأولية، إلى التذكيرات، والتصعيدات، كل ذلك في موقع واحد.
 

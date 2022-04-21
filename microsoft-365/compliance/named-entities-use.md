@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: استخدم هذه الإجراءات للاستفادة من الكيانات المسماة في نهج منع فقدان البيانات
-ms.openlocfilehash: 108b21e7c5a6708a01a712dcd44788f489df0e73
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 6b00c45b95436e2425aedadd57a178fcb01ab50e
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971572"
+ms.locfileid: "65000983"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>استخدام الكيانات المسماة في نهج منع فقدان البيانات
 
@@ -83,7 +83,7 @@ ms.locfileid: "64971572"
 |بيانات SharePoint Online الثابتة     |دعم         |
 |Teams البيانات الثابتة     |دعم         |
 |بيانات رسائل البريد الإلكتروني الثابتة     |مدعومة للمستأجرين باستخدام خطة خدمة الخصوصية         |
-|Microsoft Defender for Cloud Apps     |دعم         |
+<!--|Microsoft Defender for Cloud Apps     |دعم         |-->
 
 ### <a name="autolabeling"></a>التسمية التلقائية
 

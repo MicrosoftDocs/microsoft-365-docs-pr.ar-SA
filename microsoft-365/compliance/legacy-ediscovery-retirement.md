@@ -14,14 +14,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: سيتم إيقاف In-Place eDiscovery و In-Place e Hold (وPowerShell cmdlets المقابلة) في Exchange Online في النصف الأول من عام 2020. يتم أيضا إيقاف Search-Mailbox cmdlet وMicrosoft Purview eDiscovery (Premium) الإصدار 1.0 خلال نفس الفترة الزمنية.
-ms.openlocfilehash: 0a5a5c5a22aefbb0ad5abe6846915e1da653ee6b
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 19809b96574bf8d703264e0bedaada10f177ef31
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973256"
+ms.locfileid: "64999182"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>تقاعد أدوات eDiscovery القديمة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > تمت إزالة وظائف أدوات eDiscovery القديمة الموضحة في هذه المقالة إما من خدمة Microsoft 365 أو لا تزال متوفرة، ولكن لم تعد معتمدة. يمكن إزالة أي وظيفة لا تزال متوفرة دون إشعار. إذا كنت لا تزال تستخدم أيا من هذه الأدوات القديمة، ففكر في الترحيل إلى أدوات eDiscovery في مدخل توافق Microsoft Purview أو أحد البدائل الموضحة في هذه المقالة.

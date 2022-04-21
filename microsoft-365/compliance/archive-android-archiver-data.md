@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل TeleMessage لاستيراد الرسائل القصيرة ورسائل MMS والمكالمات الصوتية وأرشفتها من الهواتف المحمولة التي تعمل بنظام Android. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: 5edf3766b31d5d9171ff726f2c720aba36d88cae
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 30c6784c4a724f38c4f1e6e0e8ad81cf9c1b93cd
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946781"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997485"
 ---
 # <a name="set-up-a-connector-to-archive-android-mobile-data"></a>إعداد موصل أرشفة بيانات الأجهزة المحمولة التي تعمل بنظام Android
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل TeleMessage في مدخل توافق Microsoft Purview لاستيراد الرسائل القصيرة ورسائل MMS والمكالمات الصوتية وسجلات المكالمات وأرشفتها من الهواتف الجوالة التي تعمل بنظام Android وأرشفتها. بعد إعداد موصل وتكوينه، يتصل بحساب TeleMessage الخاص بمؤسستك مرة واحدة كل يوم، ويستورد اتصالات الهاتف المحمول للموظفين باستخدام TeleMessage Android Archiver إلى علب البريد في Microsoft 365.
 

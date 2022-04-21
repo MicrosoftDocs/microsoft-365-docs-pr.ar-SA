@@ -21,14 +21,16 @@ ms.collection:
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: يمكن للمسؤول معرفة كيفية استخدام تدقيق المشاركة في سجل تدقيق Microsoft 365 لتحديد الموارد المشتركة مع مستخدمين من خارج المؤسسة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7643dfae2e7e9fa871976cfe92bdf7028e756d3e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 785fdd2628a1e0bea9fd0361e7843939bf7b84a3
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934478"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64999663"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>استخدام تدقيق المشاركة في سجل التدقيق
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 المشاركة هي نشاط رئيسي في SharePoint Online و OneDrive for Business، وتستخدم على نطاق واسع في المؤسسات. يمكن للمسؤولين استخدام تدقيق المشاركة في سجل التدقيق لتحديد كيفية استخدام المشاركة في مؤسستهم. 
   

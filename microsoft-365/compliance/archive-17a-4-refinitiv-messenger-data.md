@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل 17a-4 Refinitiv Eikon Messenger DataParser واستخدامه لاستيراد هذه البيانات وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 090d658e5b18f639848a4ce3c2635865207a8833
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 444c31df6a247d40855235b3d0de4c98b76c6d30
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940698"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997615"
 ---
 # <a name="set-up-a-connector-to-archive-refinitiv-eikon-messenger-data"></a>إعداد موصل أرشفة بيانات Refinitiv Eikon Messenger
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم [Refinitiv Eikon Messenger DataParser](https://www.17a-4.com/refinitiv-messenger-dataparser/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من Refinitiv Eikon Messenger إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يتضمن DataParser موصل Refinitiv Eikon Messenger الذي تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول موصل Refinitiv Eikon Messenger DataParser بيانات Refinitiv Eikon Messenger إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

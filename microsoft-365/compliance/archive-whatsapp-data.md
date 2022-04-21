@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل TeleMessage لاستيراد بيانات WhatsApp وأرشفتها في Microsoft 365. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: 507927fb2dd19eb9c1bef745db8e85e1d4e017e8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: e473e9a83bd035209cbc2cb07aa3fb93386e47d9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934918"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65000433"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>إعداد موصل أرشفة بيانات WhatsApp
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل TeleMessage في مدخل توافق Microsoft Purview لاستيراد استدعاءات WhatsApp والدردشات والمرفقات والملفات والرسائل المحذوفة وأرشفتها. بعد إعداد موصل وتكوينه، يتصل بحساب TeleMessage الخاص بمؤسستك مرة واحدة كل يوم، ويستورد اتصالات الهاتف المحمول للموظفين باستخدام TeleMessage WhatsApp الهاتف Archiver أو TeleMessage WhatsApp Cloud Archiver إلى علب البريد في Microsoft 365.
 

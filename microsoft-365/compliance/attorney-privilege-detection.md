@@ -16,14 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: استخدم نموذج الكشف عن امتيازات الوكيل والعميل لاستخدام الكشف المستند إلى التعلم الآلي للمحتوى المتميز عند مراجعة المحتوى في حالة Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: ce5cabad4a5487f6e18c1054f5c4d143bac4325e
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 477b741cf617179ffd9eb1a4c38230faf5a0fce0
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947154"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64997264"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>إعداد الكشف عن امتيازات الوكيل والعميل في eDiscovery (Premium)
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتمثل أحد الجوانب الرئيسية والمكلفة لمرحلة المراجعة لأي عملية eDiscovery في مراجعة المستندات للحصول على محتوى مميز. يوفر Microsoft Purview eDiscovery (Premium) الكشف القائم على التعلم الآلي للمحتوى المتميز لجعل هذه العملية أكثر كفاءة. تسمى هذه الميزة *الكشف عن امتيازات الوكيل والعميل*.
 

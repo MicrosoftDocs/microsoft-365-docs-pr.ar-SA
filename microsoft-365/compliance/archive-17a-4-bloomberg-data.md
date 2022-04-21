@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل 17a-4 Bloomberg DataParser واستخدامه لاستيراد بيانات بلومبيرغ وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 59fa3d24fd8493dfa6f564d5acd721421d124114
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7160d55a7870f636b7d45f6d87e0254507dd58e9
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64940984"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "64998397"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-data"></a>إعداد موصل أرشفة بيانات بلومبيرغ
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم [Bloomberg DataParser](https://www.17a-4.com/Bloomberg-dataparser/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من Bloomberg إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يتضمن DataParser موصل Bloomberg الذي تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول موصل Bloomberg DataParser بيانات بلومبيرغ إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 
