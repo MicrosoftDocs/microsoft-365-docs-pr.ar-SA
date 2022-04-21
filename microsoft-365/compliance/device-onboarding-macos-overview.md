@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: التعرف على إلحاق أجهزة macOS في حلول التوافق
-ms.openlocfilehash: 6cc3323a94ee609c3c6674c12eb99fad3f18f3b4
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 09a35e47a237639a722047b11c24f9b2d09cf51d
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952700"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65014969"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>تهيئة أجهزة macOS في نظرة عامة على Microsoft 365
 
@@ -54,7 +54,16 @@ ms.locfileid: "64952700"
  
 - لإلحاق Intune، راجع [دليل النشر: إدارة أجهزة macOS في Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) [وتسجيل جهاز Mac باستخدام Intune Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - للإلحاق ب JAMF Pro راجع، [دليل مسؤولي PRO JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) و [JAMF Pro دليل التثبيت والتكوين ل Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
-- تثبيت مستعرض v95+ Edge على أجهزة macOS 
+<!--- Install the v95+ Edge browser on your macOS devices--> 
+
+### <a name="supported-browsers"></a>المستعرضات المدعومة
+
+تدعم نقطة النهاية DLP هذه المستعرضات على macOS Catalina 10.15 أو أعلى:
+
+- Microsoft Edge (أحدث إصدار)
+- Safari (أحدث إصدار، macOS فقط)
+- Chrome (أحدث إصدار)
+- Firefox (أحدث إصدار)
 
 ## <a name="licensing-guidance"></a>إرشادات الترخيص
 

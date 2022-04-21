@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: في هذه المقالة، ستتعرف على أفضل الممارسات لمشاركة الملفات والمجلدات مع مستخدمين غير مصادقين.
-ms.openlocfilehash: ca6b75ba036aac826d657c8c907b512fe9d1f87a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 43db59e0380f99a2312fd803970a73013445504a
+ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948364"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65015035"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>أفضل الممارسات لمشاركة الملفات والمجلدات مع مستخدمين غير مصادقين
 
@@ -47,6 +47,8 @@ ms.locfileid: "64948364"
 1. ضمن **اختيار خيارات انتهاء الصلاحية والأذونات لارتباطات "أي شخص**"، حدد **خانة الاختيار "يجب أن تنتهي صلاحية هذه الارتباطات خلال عدة أيام** ".</br>
    ![Screenshot of SharePoint organization-level Anyone link expiration settings.](../media/sharepoint-organization-anyone-link-expiration.png)
 1. اكتب عددا من الأيام في المربع، ثم انقر فوق **"حفظ**".
+
+إذا قمت بتغيير وقت انتهاء الصلاحية، فستحتفظ الارتباطات الموجودة بوقت انتهاء الصلاحية الحالي إذا كان الإعداد الجديد أطول، أو سيتم تحديثه إلى الإعداد الجديد إذا كان الإعداد الجديد أقصر.
 
 لتعيين تاريخ انتهاء صلاحية ارتباطات "أي شخص" على موقع معين
 
@@ -101,7 +103,7 @@ ms.locfileid: "64948364"
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>منع المشاركة غير المصادق عليها للمحتوى الحساس
 
-يمكنك استخدام [منع فقدان بيانات Microsoft Purview (DLP)](../compliance/dlp-learn-about-dlp.md) لمنع المشاركة غير المصادق عليها للمحتوى الحساس. يمكن أن يتخذ منع فقدان البيانات إجراء استنادا إلى وصف حساسية الملف أو تسمية الاستبقاء أو المعلومات الحساسة في الملف نفسه.
+يمكنك استخدام [Microsoft Purview Data Loss Prevention (DLP)](../compliance/dlp-learn-about-dlp.md) لمنع المشاركة غير المصادق عليها للمحتوى الحساس. يمكن أن يتخذ منع فقدان البيانات إجراء استنادا إلى وصف حساسية الملف أو تسمية الاستبقاء أو المعلومات الحساسة في الملف نفسه.
 
 لإنشاء قاعدة DLP
 1. في مركز إدارة Microsoft Purview، انتقل إلى [صفحة منع فقدان البيانات](https://compliance.microsoft.com/datalossprevention).

@@ -20,14 +20,16 @@ description: تعيين الأذونات المطلوبة لتنفيذ المه�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 1f19c43e65993652628703f002b9537c71066013
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3fef13fe96297b426dda4d72231846a99fb03179
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946518"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001357"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>تعيين أذونات eDiscovery في مدخل التوافق
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 إذا كنت تريد أن يستخدم الأشخاص أيا من [الأدوات ذات الصلة ب eDiscovery](ediscovery.md) في مدخل توافق Microsoft Purview، يجب عليك تعيين الأذونات المناسبة لهم. أسهل طريقة للقيام بذلك هي إضافة الشخص مجموعة الأدوار المناسبة في صفحة **الأذونات** في مركز التوافق. يصف هذا الموضوع الأذونات المطلوبة لتنفيذ مهام eDiscovery.
   

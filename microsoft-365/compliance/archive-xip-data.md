@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات مصدر XIP وأرشفتها من Veritas إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: ffce448dfa6e768a89a6b34fabef1abd2446504f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 06309397db05034e3df3263efa30a5cca5a78682
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64936940"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001473"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>إعداد موصل أرشفة بيانات مصدر XIP
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من النظام الأساسي المصدر ل XIP إلى علب بريد المستخدمين في مؤسسة Microsoft 365. يوفر Veritas موصل [XIP](https://globanet.com/xip/) يسمح باستخدام ملف XIP لاستيراد العناصر إلى Microsoft 365. يشبه ملف XIP ملف ZIP، ولكنه يسمح باستخدام توقيع رقمي. يتم التحقق من التوقيع الرقمي بواسطة Veritas Merge 1 قبل استخراج ملف مصدر XIP. يحول الموصل المحتوى من ملف مصدر XIP إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

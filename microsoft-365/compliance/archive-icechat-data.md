@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد البيانات وأرشفتها من أداة ICE Chat إلى Microsoft 365. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: 51c79127894f506f2f0f59a9c883f1b4c4bb5f24
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 55af0567fc5cb8dbdeb571209fb7d9f863561900
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937312"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001687"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>إعداد موصل أرشفة بيانات دردشة ICE
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]الخامس
 
 استخدم موصلا أصليا في مدخل توافق Microsoft Purview لاستيراد بيانات دردشة الخدمات المالية وأرشفتها من أداة التعاون في دردشة ICE. بعد إعداد موصل وتكوينه، يتصل بموقع FTP الآمن ل ICE Chat (SFTP) الخاص بمؤسستك مرة واحدة كل يوم، ويحول محتوى رسائل الدردشة إلى تنسيق رسالة بريد إلكتروني، ثم يستورد هذه العناصر إلى علب البريد في Microsoft 365.
 

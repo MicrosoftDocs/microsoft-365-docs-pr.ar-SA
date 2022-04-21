@@ -19,14 +19,16 @@ search.appverid:
 - MET150
 description: تعرف على كيفية تدقيق أنشطة المستخدمين والمسؤولين في مؤسستك Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7c6461868ee212e6b332181b9dea1560ce49558
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: ee11ee5e02ee4342921776124813b71cf4468ad7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953728"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001401"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>حلول التدقيق في Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 توفر حلول تدقيق Microsoft Purview حلا متكاملا لمساعدة المؤسسات على الاستجابة الفعالة للأحداث الأمنية والتحقيقات الجنائية والتحقيقات الداخلية والتزامات الامتثال. يتم تسجيل الآلاف من عمليات المستخدم والمسؤول التي يتم تنفيذها في العشرات من خدمات وحلول Microsoft 365 وتسجيلها والاحتفاظ بها في سجل التدقيق الموحد لمؤسستك. يمكن البحث في سجلات التدقيق لهذه الأحداث من قبل عمليات الأمان، والمسؤولين عن تكنولوجيا المعلومات، وفرق المخاطر الداخلية، والامتثال والتحريين القانونيين في مؤسستك. توفر هذه الإمكانية رؤية للأنشطة التي يتم تنفيذها عبر مؤسستك Microsoft 365.
 

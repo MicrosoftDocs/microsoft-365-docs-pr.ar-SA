@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: مكتبة فيديو تدريب المسؤول
-summary: تعرف على كيفية إعداد وإدارة Microsoft 365 العمل من خلال مقاطع فيديو قصيرة.
+summary: تعرف على كيفية إعداد وإدارة Microsoft 365 لأعمالك باستخدام مقاطع فيديو قصيرة.
 metadata:
   title: مكتبة فيديو تدريب المسؤول
-  description: تعرف على كيفية إعداد وإدارة Microsoft 365 العمل من خلال مقاطع فيديو قصيرة.
+  description: تعرف على كيفية إعداد وإدارة Microsoft 365 لأعمالك باستخدام مقاطع فيديو قصيرة.
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: landing-page
@@ -11,12 +11,12 @@ metadata:
   ms.author: efrene
   ms.date: 03/31/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 9d9a9515cf9bda34d49cd927e0b59e90fa0c79ed
-  ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+  ms.openlocfilehash: 036a15099420afbc356b1ae795e0f60cf5a81a7d
+  ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 04/04/2022
-  ms.locfileid: "64633184"
+  ms.lasthandoff: 04/21/2022
+  ms.locfileid: "65014925"
 landingContent:
 - title: بدء الاستخدام
   linkLists:
@@ -24,7 +24,7 @@ landingContent:
     links:
     - text: ما هو Microsoft 365
       url: admin-overview/what-is-microsoft-365.md
-    - text: نظرة عامة حول الإعداد
+    - text: نظرة عامة على الإعداد
       url: setup/plan-your-setup.md
     - text: اختيار اشتراك
       url: admin-overview/sign-up-for-office-365.md
@@ -36,21 +36,21 @@ landingContent:
       url: admin-overview/sign-up-for-office-365.md
     - text: إعداد الخدمة
       url: setup/business-set-up.md
-    - text: أجهزة Windows 10 آمنة
+    - text: أجهزة كمبيوتر Windows 10 آمنة
       url: setup/secure-win-10-pcs.md
 - title: إعداد الجهاز
   linkLists:
   - linkListType: video
     links:
-    - text: الاتصال الكمبيوتر الشخصي Microsoft 365
+    - text: الاتصال أجهزة الكمبيوتر إلى Microsoft 365
       url: setup/set-up-windows-devices.md
-    - text: تثبيت Microsoft Office التطبيق
+    - text: تثبيت تطبيقات Microsoft Office
       url: setup/install-applications.md
     - text: إعداد Outlook للبريد الإلكتروني
       url: setup/setup-outlook.md
     - text: استيراد البريد وإعادة توجيهه
       url: setup/migrate-email-and-contacts-admin.md
-    - text: نقل ملفاتك إلى OneDrive
+    - text: نقل الملفات إلى OneDrive
       url: setup/files-to-onedrive.md
     - text: نقل ملفات الشركة إلى SharePoint
       url: setup/files-to-sharepoint.md
@@ -58,13 +58,13 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: الحصول على تطبيق الأجهزة المحمولة "المسؤول"
+    - text: الحصول على تطبيق Admin للأجهزة المحمولة
       url: admin-overview/admin-mobile-app.md
-- title: Business Voice
+- title: صوت العمل
   linkLists:
   - linkListType: video
     links:
-    - text: ما هو صوت العمل؟
+    - text: ما هو Business Voice؟
       url: /microsoftteams/business-voice/whats-business-voice
     - text: إعداد صوت العمل
       url: /microsoftteams/business-voice/set-up-overview
@@ -78,7 +78,7 @@ landingContent:
       url: admin-overview/admin-center-overview.md
     - text: إنشاء توقيع على مستوى الشركة
       url: setup/create-signatures-and-disclaimers.md
-    - text: العمل على تقرير الاستخدام
+    - text: التصرف وفقا لتقرير الاستخدام
       url: activity-reports/activity-reports.md
     - text: إضافة مجال آخر
       url: setup/add-domain.md
@@ -88,7 +88,7 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: إعادة تعيين كلمات مرور المستخدمين
+    - text: إعادة تعيين كلمات مرور المستخدم
       url: add-users/reset-passwords.md
     - text: إعداد إعادة تعيين كلمة مرور الخدمة الذاتية
       url: add-users/let-users-reset-passwords.md
@@ -102,11 +102,11 @@ landingContent:
       url: add-users/change-a-user-name-and-email-address.md
     - text: نقل المستخدمين إلى اشتراك مختلف
       url: ../commerce/try-or-buy-microsoft-365.md
-- title: إدارة التراخيص والمفوترة
+- title: إدارة التراخيص والفوترة
   linkLists:
   - linkListType: video
     links:
-    - text: عرض الفاتورة أو تنزيلها أو طباعتها
+    - text: عرض فاتورتك أو تنزيلها أو طباعتها
       url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
     - text: شراء تراخيص جديدة
       url: ../commerce/licenses/buy-licenses.md
@@ -118,23 +118,23 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: أجهزة Windows 10 Pro آمنة
+    - text: تأمين أجهزة Windows 10 Pro
       url: /microsoft-365/business-premium/m365bp-secure-windows-devices.md
-    - text: تأمين Office على iOS
+    - text: تأمين تطبيقات Office على iOS
       url: /business-premium/m365bp-app-protection-settings-for-android-and-ios.md
-- title: توافق & الأمان
+- title: التوافق & الأمان
   linkLists:
   - linkListType: video
     links:
-    - text: نظرة عامة Microsoft 365 Business Premium الأمان
+    - text: نظرة عامة على أمان Microsoft 365 Business Premium
       url: security-and-compliance/secure-your-business-data.md
     - text: (جديد!) Microsoft Defender for Business
       url: /microsoft-365/security/defender-business/index.yml
-    - text: تأمين حسابات الموظفين باستخدام MFA
+    - text: تأمين حسابات الموظفين باستخدام المصادقة متعددة العوامل
       url: security-and-compliance/set-up-multi-factor-authentication.md
     - text: تشغيل الكشف عن البرامج الضارة
       url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#raise-the-level-of-protection-against-malware-in-mail
-    - text: إنشاء قواعد البريد الإلكتروني لفيروسات الفدية الضارة
+    - text: إنشاء قواعد البريد الإلكتروني لبرنامج الفدية الضارة
       url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-ransomware
     - text: إعداد مكافحة التصيد الاحتيالي
       url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-your-email-from-phishing-attacks
@@ -142,7 +142,7 @@ landingContent:
       url: security-and-compliance/increase-threat-protection.md
     - text: إدارة الارتباطات الآمنة
       url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
-    - text: منع فقدان البيانات
+    - text: تفادي فقدان البيانات
       url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
     - text: إنشاء تسميات الحساسية
       url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
@@ -150,21 +150,21 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: الحصول على المساعدة أو الدعم
+    - text: الحصول على التعليمات أو الدعم
       url: get-help-support.md
     - text: الإعداد السريع للموظف
       url: ../business-video/employee-quick-setup.md
-- title: التبديل من Google Workspace إلى M365
+- title: التبديل من مساحة عمل Google إلى Microsoft 365
   linkLists:
   - linkListType: video
     links:
-    - text: إعداد Microsoft 365 ترحيل Google Workspace
-      url: /moveto-microsoft-365/set-up-microsoft-365-forgoogle
+    - text: إعداد Microsoft 365 ترحيل مساحة عمل Google
+      url: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
     - text: إضافة مجال Google Workspace إلى Microsoft 365
-      url: /moveto-microsoft-365/add-google-domain
-    - text: ترحيل البريد الإلكتروني والتقويم الخاصين بالعمل من Google Workspace
-      url: /moveto-microsoft-365/migrate-email
-    - text: الاتصال مجالك Microsoft 365 للأعمال
-      url: /moveto-microsoft-365/connect-domain-tom365
-    - text: ترحيل ملفات Google إلى Microsoft 365 للأعمال باستخدام إدارة الترحيل
-      url: /moveto-microsoft-365/migrate-files-migration-manager
+      url: moveto-microsoft-365/add-google-domain.md
+    - text: ترحيل البريد الإلكتروني والتقويم للأعمال من Google Workspace
+      url: moveto-microsoft-365/migrate-email.md
+    - text: الاتصال مجالك إلى Microsoft 365 للأعمال
+      url: moveto-microsoft-365/connect-domain-tom365.md
+    - text: ترحيل ملفات Google إلى Microsoft 365 للأعمال باستخدام Migration Manager
+      url: moveto-microsoft-365/migrate-files-migration-manager.md

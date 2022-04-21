@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات التقاط صفحة ويب وأرشفتها من Veritas في Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: 549af03a794c132bc11901618a60185722f24907
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4ba343d8c1a06f8c1eaf88189cae5e013a76414
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935028"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001511"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>إعداد موصل أرشفة بيانات صفحة ويب
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من صفحات الويب إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر Veritas موصل [التقاط صفحة ويب](https://globanet.com/webpage-capture) يلتقط صفحات ويب معينة (وأي ارتباطات على تلك الصفحات) في موقع ويب محدد أو مجال بأكمله. يحول الموصل محتوى صفحة الويب إلى تنسيق ملف PDF أو PNG أو ملف مخصص ثم يرفق الملفات المحولة برسالة بريد إلكتروني ثم يستورد عناصر البريد الإلكتروني هذه إلى علب بريد المستخدمين في Microsoft 365.
 

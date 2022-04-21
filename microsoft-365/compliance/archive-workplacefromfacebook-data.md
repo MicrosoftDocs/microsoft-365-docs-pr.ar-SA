@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد البيانات وأرشفتها من Workplace من Facebook، والتي تتم أرشفتها على موقع Veritas's Merge1، إلى Microsoft 365. يتطلب إعداد موصل العمل مع Veritas يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: 888697c6b5e340ebe82cd9466a260dc046622ee1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0dbd1bfaeea6a42db03793941b1fea894ee391b5
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943920"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001445"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>إعداد موصل إلى أرشفة مكان العمل من بيانات Facebook
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من Workplace من Facebook إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر Veritas [مساحة عمل من](https://globanet.com/workplace/) موصل Facebook الذي تم تكوينه لالتقاط العناصر من مصدر بيانات الجهات الخارجية (بشكل منتظم) واستيراد هذه العناصر إلى Microsoft 365. يحول الموصل المحتوى مثل الدردشات والمرفقات والمنشورات ومقاطع الفيديو من Workplace إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 

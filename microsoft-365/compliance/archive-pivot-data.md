@@ -12,14 +12,16 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات Pivot وأرشفتها من Veritas في Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: f592f21faa895fb6c4f094bd4fc2d6b93dca5fcd
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 7719dabb59180d6c3dc579c02fbc76b0d77ec1a7
+ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935621"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "65001643"
 ---
 # <a name="set-up-a-connector-to-archive-pivot-data"></a>إعداد موصل أرشفة بيانات Pivot
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم موصل Veritas في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من النظام الأساسي Pivot إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر لك Veritas موصل [Pivot](https://globanet.com/pivot/) الذي تم تكوينه لالتقاط العناصر من مصدر بيانات الجهات الخارجية (بشكل منتظم) ثم استيراد هذه العناصر إلى Microsoft 365. Pivot هو نظام أساسي للمراسلة الفورية يسمح بالتعاون مع المشاركين في السوق المالية. يحول الموصل عناصر مثل رسائل الدردشة، من حسابات Pivot الخاصة بالمستخدمين إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 
