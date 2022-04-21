@@ -1,12 +1,12 @@
 - name: Microsoft Purview
   href: index.yml
-- name: الجديد في Microsoft Purview
+- name: أحدث الميزات في Microsoft Purview
   href: whats-new.md
 - name: الإصدارات التجريبية للتوافق
   items:
-    - name: حول الإصدار التجريبي المجاني لبرنامج Microsoft Purview
+    - name: حول الإصدار التجريبي المجاني لـ Microsoft Purview
       href: compliance-easy-trials.md
-    - name: حول الإصدار التجريبي المجاني من تقييمات Microsoft Purview Compliance Manager المتميزة
+    - name: حول الإصدار التجريبي المجاني من Microsoft Purview Compliance Manager التقييمات المتميزة
       href: compliance-easy-trials-compliance-manager-assessments.md
 - name: بدء الاستخدام
   items:
@@ -16,9 +16,9 @@
       href: microsoft-365-solution-catalog.md
     - name: مدخل توافق Microsoft Purview
       href: microsoft-365-compliance-center.md
-    - name: الأذونات في مدخل التوافق لـ Microsoft Purview
+    - name: الأذونات في مدخل توافق Microsoft Purview
       href: microsoft-365-compliance-center-permissions.md
-    - name: إعادة توجيه المستخدمين إلى مركز التوافق في Microsoft Purview
+    - name: إعادة توجيه المستخدمين إلى مركز توافق Microsoft Purview
       href: microsoft-365-compliance-center-redirection.md
     - name: استخدام اشتراك Azure Active Directory المجاني
       href: use-your-free-azure-ad-subscription-in-office-365.md
@@ -44,15 +44,15 @@
           href: device-onboarding-vdi.md
     - name: أجهزة macOS على اللوحة (معاينة)
       items:
-        - name: نظرة عامة على أجهزة macOS المدمجة في Microsoft 365 (معاينة)
+        - name: نظرة عامة على أجهزة macOS الملحقة في Microsoft 365
           href: device-onboarding-macos-overview.md
-        - name: أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في حلول التوافق باستخدام Microsoft Intune (معاينة)
+        - name: أجهزة macOS التي يتم إلحاقها أو إلغاء إلحاقها في حلول التوافق باستخدام Microsoft Intune
           href: device-onboarding-offboarding-macos-intune.md
-        - name: أجهزة macOS الداخلية والخارجية في حلول التوافق باستخدام Intune for Microsoft Defender لعملاء نقطة النهاية (معاينة)
+        - name: أجهزة macOS التي يتم إلحاقها أو إلغاء إلحاقها في حلول التوافق باستخدام Intune لـ Microsoft Defender لعملاء نقطة النهاية
           href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: أجهزة macOS التي يتم تشغيلها أو إيقاف تشغيلها في حلول التوافق باستخدام JAMF Pro (معاينة)
+        - name: أجهزة macOS التي يتم إلحاقها أو إلغاء إلحاقها في حلول التوافق باستخدام JAMF Pro
           href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: أجهزة macOS الداخلية والخارجية في حلول التوافق باستخدام JAMF Pro for Microsoft Defender لعملاء نقطة النهاية (معاينة)
+        - name: أجهزة macOS التي يتم إلحاقها أو إلغاء إلحاقها في حلول التوافق باستخدام JAMF Pro لـ Microsoft Defender لعملاء نقطة النهاية
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: إدارة الموصلات لبيانات الأطراف الخارجية
   items:
@@ -216,7 +216,7 @@
       href: use-content-search-to-search-third-party-data-that-was-imported.md
 - name: إدارة مخاطر Insider
   items:
-    - name: حلول مخاطر Microsoft Purview
+    - name: حلول مخاطر الداخلية في Microsoft Purview
       href: insider-risk-solution-overview.md
     - name: توافق الاتصالات
       items:
@@ -304,7 +304,7 @@
   items:
     - name: معرفة بياناتك، وحماية بياناتك، ومنع فقدان البيانات
       href: information-protection.md
-    - name: نشر حل حماية المعلومات
+    - name: استخدام حل لحماية المعلومات
       href: information-protection-solution.md
     - name: التسميات والسياسات الافتراضية لحماية بياناتك
       href: mip-easy-trials.md
@@ -443,13 +443,13 @@
           items:
             - name: تشفير الرسائل
               href: ome.md
-            - name: إعداد تشفير الرسائل من Microsoft Purview
+            - name: إعداد تشفير رسائل Microsoft Purview
               href: set-up-new-message-encryption-capabilities.md
             - name: تحديد قواعد تدفق البريد لتشفير رسائل البريد الإلكتروني
               href: define-mail-flow-rules-to-encrypt-email.md
             - name: إضافة العلامة التجارية لمنظمتك إلى الرسائل المشفرة
               href: add-your-organization-brand-to-encrypted-messages.md
-            - name: إنشاء نهج نوع معلومات حساسة لمنظمتك باستخدام تشفير رسائل Microsoft Purview
+            - name: إنشاء نهج نوع للمعلومات الحساسة لمنظمتك باستخدام تشفير رسائل Microsoft Purview
               href: ome-sensitive-info-types.md
             - name: إدارة تشفير الرسائل
               href: manage-office-365-message-encryption.md
@@ -457,7 +457,7 @@
               href: ome-advanced-message-encryption.md
             - name: تعيين تاريخ انتهاء صلاحية للبريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Microsoft Purview
               href: ome-advanced-expiration.md
-            - name: إبطال البريد الإلكتروني المشفر بواسطة تشفير رسائل Microsoft Purview
+            - name: إبطال البريد الإلكتروني المشفر بواسطة تشفير رسائل Microsoft Purview المتقدم
               href: revoke-ome-encrypted-mail.md
             - name: مقارنة إصدارات تشفير الرسائل
               href: ome-version-comparison.md
@@ -503,7 +503,7 @@
               href: dlp-teams-default-policy.md
             - name: تعرّف على الماسح الضوئي المحلي لمنع فقدان البيانات
               href: dlp-on-premises-scanner-learn.md
-            - name: التعرّف على ملحق التوافق من Microsoft
+            - name: التعرّف على ملحق Microsoft Purview
               href: dlp-chrome-learn-about.md
             - name: التعرّف على لوحة معلومات تنبيهات تفادي فقدان البيانات
               href: dlp-alerts-dashboard-learn.md
@@ -531,7 +531,7 @@
               href: endpoint-dlp-getting-started.md
             - name: تكوين إعدادات اتصال الإنترنت ووكيل الجهاز حماية البيانات
               href: device-onboarding-configure-proxy.md
-            - name: بدء العمل باستخدام ملحق التوافق من Microsoft
+            - name: بدء العمل باستخدام ملحق Microsoft Purview
               href: dlp-chrome-get-started.md
             - name: بدء استخدام لوحة معلومات تنبيهات تفادي فقدان البيانات
               href: dlp-alerts-dashboard-get-started.md
@@ -985,11 +985,11 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: إدارة نهج التدقيق والتنبيه
   items:
-    - name: حلول التدقيق في Microsoft 365
+    - name: حلول التدقيق في Microsoft Purview
       href: auditing-solutions-overview.md
-    - name: التدقيق الأساسي
+    - name: التدقيق (قياسي)
       items:
-        - name: إعداد التدقيق الأساسي
+        - name: إعداد التدقيق (قياسي)
           href: set-up-basic-audit.md
         - name: البحث في سجل التدقيق
           href: search-the-audit-log-in-security-and-compliance.md
@@ -1013,15 +1013,15 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: الأسئلة المتداولة حول واجهة برمجة تطبيقات Office 365 Management Activity واستكشاف الأخطاء وإصلاحها
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: التدقيق المتقدم
+    - name: التدقيق (Premium)
       items:
-        - name: نظرة عامة على التدقيق المتقدم
+        - name: نظرة عامة على التدقيق (Premium)
           href: advanced-audit.md
-        - name: إعداد التدقيق المتقدم
+        - name: إعداد التدقيق (Premium)
           href: set-up-advanced-audit.md
         - name: إدارة سياسات استبقاء سجل التدقيق
           href: audit-log-retention-policies.md
-        - name: استخدام التدقيق المتقدم للتحقق من الحسابات المخترقة
+        - name: استخدام التدقيق (Premium) للتحقق من الحسابات المخترقة
           href: mailitemsaccessed-forensics-investigations.md
     - name: تدقيق علبة البريد
       href: enable-mailbox-auditing.md

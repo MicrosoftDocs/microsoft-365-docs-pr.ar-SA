@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: مستندات Microsoft Purview
-summary: إذا كانت مؤسستك بحاجة إلى التوافق للمعايير القانونية أو التنظيمية، فابدأ هنا للتعرّف على التوافق في Microsoft Purview.
+summary: إذا كانت مؤسستك بحاجة إلى الامتثال لمعايير قانونية أو تنظيمية، فابدأ هنا للتعرف على التوافق في Microsoft Purview.
 metadata:
   title: مستندات Microsoft Purview
-  description: تحتوي هذه الصفحة على ارتباطات لبعض المواضيع المهمة المتعلقة بميزات Microsoft Purview. ابدأ هنا للتعرّف على التوافق في Microsoft 365.
+  description: تحتوي هذه الصفحة على روابط لبعض المواضيع المهمة المتعلقة بميزات Microsoft Purview. ابدأ هنا للتعرف على التوافق في Microsoft 365.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -14,14 +14,14 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   ms.localizationpriority: high
-  ms.openlocfilehash: cc558fa8a9ae3c04a9ce9796233aafc8f2fa79f5
-  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+  ms.openlocfilehash: 3b86087d8f8fea8e9b3b143f7e38997d07fca3ec
+  ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
   ms.translationtype: HT
   ms.contentlocale: ar-SA
   ms.lasthandoff: 04/19/2022
-  ms.locfileid: "64934676"
+  ms.locfileid: "64953338"
 landingContent:
-- title: إدارة حوكمة & حماية المعلومات
+- title: إدارة حماية المعلومات والحوكمة
   linkLists:
   - linkListType: overview
     links:
@@ -29,21 +29,21 @@ landingContent:
       url: information-protection.md#know-your-data
     - text: حماية بياناتك
       url: information-protection.md#protect-your-data
-    - text: تفادي فقدان البيانات
+    - text: منع فقدان البيانات
       url: information-protection.md#prevent-data-loss
     - text: تحكم بياناتك
       url: manage-data-governance.md
-    - text: 'مسار Learning: إدارة حماية المعلومات والحوكمة'
+    - text: 'مسار التعلم: إدارة حماية المعلومات والحوكمة'
       url: /learn/paths/m365-compliance-information
 - title: إدارة مخاطر Insider
   linkLists:
   - linkListType: overview
     links:
-    - text: إدارة المخاطر الداخلية في Microsoft Purview
+    - text: إدارة المخاطر الداخلية لـ Microsoft Purview
       url: insider-risk-management.md
-    - text: توافق الاتصالات مع Microsoft Purview
+    - text: توافق الاتصالات لـ Microsoft Purview
       url: communication-compliance.md
-    - text: حواجز معلومات Microsoft Purview
+    - text: موانع إبلاغ المعلومات في Microsoft Purview
       url: information-barriers.md
     - text: إدارة الوصول المتميز لـ Microsoft Purview
       url: privileged-access-management-overview.md
@@ -53,35 +53,35 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft Purview eDiscovery (Premium)
+    - text: الاكتشاف الإلكتروني لـ Microsoft Purview (Premium)
       url: overview-ediscovery-20.md
-    - text: Microsoft Purview eDiscovery (قياسي)
+    - text: الاكتشاف الإلكتروني لـ Microsoft Purview (قياسي)
       url: ./get-started-core-ediscovery.md
     - text: البحث عن المحتوى
       url: search-for-content.md
-    - text: التدقيق
-      url: search-the-audit-log-in-security-and-compliance.md
-- title: بدء العمل باستخدام توافق الاتصالات
+    - text: حلول تدقيق Microsoft Purview
+      url: auditing-solutions-overview.md
+- title: بدء استخدام التوافق التنظيمي
   linkLists:
   - linkListType: get-started
     links:
     - text: إدارة التوافق
       url: compliance-manager.md
-    - text: خطة إجراء التوافق للناتج العام لحماية البيانات (GDPR)
+    - text: خطة إجراءات الامتثال للقانون العام لحماية البيانات (GDPR)
       url: /compliance/regulatory/gdpr-action-plan
-    - text: خطة إجراء التوافق لـ ISO
+    - text: خطة إجراءات الامتثال لـ ISO
       url: /compliance/regulatory/iso-action-plan
-    - text: خطة إجراء التوافق لـ NIST
+    - text: خطة إجراءات الامتثال لـ NIST
       url: /compliance/regulatory/nist-action-plan
-- title: نشر حلول التوافق
+- title: استخدام حلول التوافق
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: تأمين البيانات باستخدام ثقة معدومة
+    - text: تأمين البيانات باستخدام الثقة المعدومة
       url: /security/zero-trust/data
-    - text: نشر حل حماية البيانات لـ Microsoft Purview
+    - text: استخدام حل حماية بيانات Microsoft Purview
       url: information-protection-solution.md
     - text: نشر حماية المعلومات للوائح خصوصية البيانات
       url: ../solutions/information-protection-deploy.md
-    - text: رسومات توضيحية لحماية المعلومات والامتثال
+    - text: رسومات توضيحية لحماية المعلومات والتوافق
       url: ../solutions/productivity-illustrations.md#microsoft-365-information-protection-and-compliance-capabilities
