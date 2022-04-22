@@ -1,5 +1,5 @@
 ---
-title: عرض المستخدمين الخطرين وإدارتهم
+title: عرض المستخدمين المعرضين للمخاطر وإدارتها في Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية عرض المستخدمين المعرضين للمخاطر وإدارتهم.
-ms.openlocfilehash: 0b7567404b909927a80b69184299baae131f8eb7
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: dad86fedeb27f13752bcd1c07efd0d51aa33cf2a
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824257"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022922"
 ---
-# <a name="view-and-manage-risky-users"></a>عرض المستخدمين الخطرين وإدارتهم
+# <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>عرض المستخدمين المعرضين للمخاطر وإدارتها في Microsoft 365 Lighthouse
 
 تجمع Microsoft وتحلل تريليونات من إشارات تسجيل دخول المستخدم كل يوم. يتم استخدام هذه الإشارات للمساعدة في إنشاء أنماط سلوك تسجيل دخول مستخدم جيدة وتحديد محاولات تسجيل الدخول المحتملة المحفوفة بالمخاطر. تستخدم Azure Active Directory (Azure AD) Identity Protection هذه الإشارات لمراجعة محاولات تسجيل دخول المستخدم واتخاذ إجراء إذا كان هناك نشاط مريب.
 
@@ -44,7 +44,7 @@ ms.locfileid: "64824257"
 
 - يجب أن يكون لدى مستأجر العميل ترخيص Premium Azure AD لكل مستخدم. لمزيد من المعلومات حول التراخيص التي تدعم Azure AD Identity Protection، راجع [ما هي Identity Protection؟](/azure/active-directory/identity-protection/overview-identity-protection)
 
-- يجب أن يكون مستأجر العميل نشطا داخل Microsoft 365 Lighthouse. لتحديد ما إذا كان المستأجر نشطا، راجع [Microsoft 365 نظرة عامة على صفحة مستأجري Lighthouse](m365-lighthouse-tenant-list-overview.md).
+- يجب أن يكون مستأجر العميل نشطا داخل Microsoft 365 Lighthouse. لتحديد ما إذا كان المستأجر نشطا، راجع [نظرة عامة على صفحة Windows 365 (أجهزة الكمبيوتر السحابية) في Microsoft 365 Lighthouse](m365-lighthouse-tenant-list-overview.md).
 
 ## <a name="review-detected-risks-and-take-action"></a>مراجعة المخاطر المكتشفة واتخاذ إجراء
 
@@ -87,7 +87,7 @@ ms.locfileid: "64824257"
 > [!NOTE]
 > إذا كانت المؤسسة التي تديرها تملك ترخيص Azure AD Premium P2، فمن المستحسن تمكين نهج الوصول المشروط المستندة إلى المخاطر الخاصة بالمستخدم. لمزيد من المعلومات، راجع [الوصول المشروط: الوصول المشروط المستند إلى مخاطر المستخدم](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user).
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 [البرنامج التعليمي: استخدام عمليات الكشف عن المخاطر لتسجيل دخول المستخدم لتشغيل مصادقة Azure AD متعددة العوامل أو تغييرات كلمة المرور](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (مقالة)\
 [ما المقصود بالمخاطرة؟](/azure/active-directory/identity-protection/concept-identity-protection-risks) (مقال) /
 [معالجة المخاطر وإلغاء حظر المستخدمين](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock) (مقالة)

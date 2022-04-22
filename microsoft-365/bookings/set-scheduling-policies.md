@@ -1,5 +1,5 @@
 ---
-title: تعيين نهج الجدولة
+title: تعيين نهج الجدولة Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: تعرف على كيفية تعيين نهج الجدولة لأعمالك. تتضمن نهج الجدولة طول المواعيد، بالإضافة إلى أوقات العميل المتوقع والإلغاء المقبولة.
-ms.openlocfilehash: 8093a1c207a418f5d73e7e748727a4da93546a5a
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 1acf3ab71f1e3eca5257fc8b7a4ab677162afe39
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714274"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022394"
 ---
 # <a name="set-your-scheduling-policies"></a>تعيين نهج الجدولة
 

@@ -1,5 +1,5 @@
 ---
-title: ساعات عمل الموظفين في Microsoft Bookings
+title: ساعات عمل الموظفين - Microsoft Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: تعيين ساعات عمل الموظفين والتوفر في Microsoft Bookings.
-ms.openlocfilehash: f87a5f13ace9689cd838942e6558529659671238
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: ce248e964552b8e1258dbad999f865874ef898e2
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747259"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023316"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>ساعات عمل الموظفين في Microsoft Bookings
 
@@ -49,7 +49,7 @@ ms.locfileid: "64747259"
 
 1. حدد **+** لإضافة محددات وقت البدء والانتهاء.
 
-1. حدد "حفظ".
+1. حدد حفظ.
 
 ## <a name="set-an-employees-days-off"></a>تعيين أيام إجازات الموظف
 

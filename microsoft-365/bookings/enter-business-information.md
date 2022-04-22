@@ -1,5 +1,5 @@
 ---
-title: إدخال معلومات العمل
+title: أدخل معلومات العمل Bookings
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: اتبع هذه الإرشادات لإنشاء صفحة "معلومات حولنا"، بما في ذلك اسم العمل والعنوان ورقم الهاتف وعنوان URL لموقع الويب والشعار وساعات العمل في Microsoft Bookings.
-ms.openlocfilehash: 5d0505b0b23515bef0bdcc94206d8f3b856479c4
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 5dc8fa157d6ce53231ece9d8d70eb772218ac5dd
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746843"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022504"
 ---
 # <a name="enter-your-business-information"></a>إدخال معلومات العمل
 
@@ -54,7 +54,7 @@ ms.locfileid: "64746843"
 
 بشكل افتراضي، يتم تعيين ساعات العمل في تطبيق Bookings إلى 8 ص. إلى 5 مساء، من الاثنين إلى الجمعة. يتم توفير الأوقات بزيادات قدرها 15 دقيقة. يستخدم تطبيق Bookings الساعة 12 ساعة.
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
 ### <a name="how-to-set-hours-for-a-split-shift"></a>كيفية تعيين ساعات وردية منقسمة
 
@@ -72,7 +72,7 @@ ms.locfileid: "64746843"
 
    ![صورة لواجهة مستخدم ساعات العمل مع الساعات المضافة.](../media/bookings-split-shift-hours-1.png)
 
-1. حدد "حفظ".
+1. حدد حفظ.
 
     عندما ينتقل العميل إلى صفحة الحجز الخاصة بك، سيرى أن عملك مغلق من 1 إلى 2:30 يوم الخميس.
 
@@ -86,4 +86,4 @@ ms.locfileid: "64746843"
 
    ![صورة لزر تحميل الصورة.](../media/bookings-upload-photo.png)
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.

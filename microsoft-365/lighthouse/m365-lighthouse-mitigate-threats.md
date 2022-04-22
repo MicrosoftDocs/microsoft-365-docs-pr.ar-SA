@@ -1,5 +1,5 @@
 ---
-title: تخفيف التهديدات باستخدام برنامج الحماية من الفيروسات من Microsoft Defender
+title: التخفيف من التهديدات في Microsoft 365 Lighthouse باستخدام برنامج الحماية من الفيروسات من Microsoft Defender
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على التخفيف من التهديدات باستخدام برنامج الحماية من الفيروسات من Microsoft Defender.
-ms.openlocfilehash: 428370ce5e49bba0bc9489143864f9b88b2e8c3f
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: da8a10b1ffc1932a6b4f84447028d2fa9b865e64
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824323"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023646"
 ---
-# <a name="mitigate-threats-with-microsoft-defender-antivirus"></a>تخفيف التهديدات باستخدام برنامج الحماية من الفيروسات من Microsoft Defender
+# <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>التخفيف من التهديدات في Microsoft 365 Lighthouse باستخدام برنامج الحماية من الفيروسات من Microsoft Defender
 
 يتيح Microsoft 365 Lighthouse للشركاء التحقيق في التهديدات وتخفيفها عبر جميع المستأجرين. يمكنك أيضا بدء عمليات فحص مكافحة الفيروسات على الأجهزة، والتأكد من حصول الأجهزة على آخر التحديثات برنامج الحماية من الفيروسات من Microsoft Defender، ومراجعة الإجراءات المعلقة بعد عمليات فحص مكافحة الفيروسات. لا تدعم Lighthouse سوى الأجهزة التي تعمل Windows 10 أو أحدث.
 
@@ -127,10 +127,10 @@ ms.locfileid: "64824323"
 
 يمكنك أيضا إعادة تشغيل أجهزة متعددة عن طريق تحديد خانة الاختيار الموجودة بجانب كل اسم جهاز في القائمة ثم تحديد **"إعادة تشغيل الجهاز**".
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (مقالة)\
-[نظرة عامة على صفحة إدارة المخاطر](m365-lighthouse-threat-management-page-overview.md) (مقالة)\
+[نظرة عامة على صفحة إدارة المخاطر في Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (مقالة)\
 [إنشاء نهج توافق في Microsoft Intune](/mem/intune/protect/create-compliance-policy) (المقالة)\
 [تشغيل برنامج الحماية من الفيروسات من Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows) (مقالة)\
 [التحليل الذكي لمخاطر الأمان من Microsoft](https://www.microsoft.com/wdsi/threats) (صفحة ويب)

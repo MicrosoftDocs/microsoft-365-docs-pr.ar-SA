@@ -1,5 +1,5 @@
 ---
-title: إدارة قائمة المستأجرين
+title: إدارة قائمة المستأجرين في Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية إدارة قائمة المستأجرين.
-ms.openlocfilehash: 2f9d38bad24d20c53a1bafe44b1b831369957b71
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: b4bffcfd5b8962253e68938a956949ca8470f818
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824367"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022416"
 ---
-# <a name="manage-your-tenant-list"></a>إدارة قائمة المستأجرين
+# <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>إدارة قائمة المستأجرين في Microsoft 365 Lighthouse
 
 لمساعدتك في إدارة قائمة المستأجرين في Microsoft 365 Lighthouse، يمكنك تطبيق علامات مخصصة على المستأجرين. يمكن استخدام هذه العلامات لتنظيم المستأجرين ويمكن أن تساعدك أيضا في تصفية طرق العرض الحالية والرؤى المتوفرة لمجموعات المستأجرين ذات الصلة. يمكنك إدارة علاماتك من صفحة المستأجرين. بمجرد الإنشاء والتعيين، يمكنك تصفية البيانات داخل صفحات المستأجرين والمستخدمين والأجهزة وإدارة المخاطر Windows 365 استنادا إلى علامة.
 
@@ -49,7 +49,7 @@ ms.locfileid: "64824367"
 
 4. أدخل اسما ووصفا.
 
-5. حدد **"حفظ**".
+5. حدد **حفظ**.
 
 ## <a name="edit-a-tag"></a>تحرير علامة
 
@@ -61,7 +61,7 @@ ms.locfileid: "64824367"
 
 4. تحرير الاسم و/أو الوصف حسب الحاجة.
 
-5. حدد **"حفظ**".
+5. حدد **حفظ**.
 
 ## <a name="assign-a-tag"></a>تعيين علامة
 
@@ -104,6 +104,6 @@ ms.locfileid: "64824367"
 
 بعد إنشاء العلامات وتعيينها، يمكنك استخدامها لتصفية المستأجرين. انتقل إلى أي من الصفحات الأخرى (المستخدمون أو الأجهزة أو إدارة المخاطر أو Windows 365) وحدد علامة واحدة أو أكثر من عامل تصفية المستأجر. يمكنك إنشاء علامات جديدة لدعم طرق عرض معينة استنادا إلى كل صفحة.
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
-[التسجيل للحصول على Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (مقالة) [Microsoft 365 نظرة عامة على صفحة توافق جهاز Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (مقالة) [Microsoft 365 الأسئلة المتداولة حول Lighthouse](m365-lighthouse-faq.yml) (مقالة)
+[التسجيل للحصول على Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (مقالة) [نظرة عامة على صفحة توافق الجهاز في Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (مقالة) [Microsoft 365 الأسئلة المتداولة حول Lighthouse](m365-lighthouse-faq.yml) (مقالة)

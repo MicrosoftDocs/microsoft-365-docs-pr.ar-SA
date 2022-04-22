@@ -1,5 +1,5 @@
 ---
-title: عرض حالة خدمة المستأجر
+title: عرض حماية خدمة المستأجر في Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية عرض حماية خدمة المستأجر.
-ms.openlocfilehash: 5c15e004108606ce00a90e0fa3d675d00806b430
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: c5cfed4449fbdbb6cb63bc80dfd8e23ca4d5c4bb
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822705"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023602"
 ---
-# <a name="view-tenant-service-health"></a>عرض حالة خدمة المستأجر
+# <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>عرض حماية خدمة المستأجر في Microsoft 365 Lighthouse
 
 يمكنك عرض حالة الخدمة للمستأجرين الذين تديرهم في Microsoft 365 Lighthouse. تتضمن Service health أحداثا ونصائح للعديد من الخدمات، بما في ذلك خدمات الهوية Microsoft Intune وAzure Active Directory (Azure AD) وخدمات السحابة لإدارة أجهزة المحمول (MDM). يمكنك أيضا معرفة عدد المستأجرين المدارين الذين يتأثرون بالحوادث. على سبيل المثال، إذا كان أحد المستأجرين يواجه مشاكل، يمكنك التحقق من صفحة Service health لتحديد ما إذا كانت مشكلة معروفة تتعلق بحل قيد التقدم أو ما إذا كان التغيير الأخير قد يؤثر عليها. قد يوفر لك ذلك الوقت لاستكشاف الأخطاء وإصلاحها وتقليل مكالمات الدعم.
 
@@ -59,7 +59,7 @@ ms.locfileid: "64822705"
 
 في علامة التبويب **"المستأجرون المتأثرون** "، يمكنك تصدير قائمة بالمستأجرين المتأثرين إلى ملف قيم مفصولة بفواصل (.csv) حتى تتمكن من مشاركتها مع فرق الدعم.
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [كيفية التحقق من صحة الخدمة Microsoft 365](/microsoft-365/enterprise/view-service-health) (مقالة)\
 [المشاكل المعروفة في Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (مقالة)

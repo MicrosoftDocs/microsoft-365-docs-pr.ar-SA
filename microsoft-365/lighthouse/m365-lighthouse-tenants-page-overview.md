@@ -1,5 +1,5 @@
 ---
-title: نظرة عامة على صفحة مستأجري Microsoft 365 Lighthouse
+title: نظرة عامة على صفحة المستأجرين في Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على صفحة المستأجرين.
-ms.openlocfilehash: 44111d62a9b8df9bf3b05ddbaa9cb4f3937159a4
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 7b8e26ddbe68059a9c5ecf4d5e396fd11c49be71
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823510"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023272"
 ---
-# <a name="microsoft-365-lighthouse-tenants-page-overview"></a>نظرة عامة على صفحة مستأجري Microsoft 365 Lighthouse
+# <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>نظرة عامة على صفحة المستأجرين في Microsoft 365 Lighthouse
 
 يتيح لك Microsoft 365 Lighthouse إدارة حسابات المستأجرين عن طريق تحديد **المستأجرين** في جزء التنقل الأيمن لفتح صفحة المستأجرين. تحتوي صفحة المستأجرين على قائمة بجميع المستأجرين. يمكنك تحديد مستأجر لعرض معلومات مفصلة بما في ذلك تفاصيل جهة الاتصال وحالة النشر.
 
@@ -70,7 +70,7 @@ ms.locfileid: "64823510"
 
 ## <a name="tenant-tags"></a>علامات المستأجر
 
-للمساعدة في تنظيم المستأجرين وتصفية طرق العرض الموجودة بسهولة، يمكنك إنشاء العلامات وتعيينها إلى المستأجرين. لمعرفة المزيد، راجع [إدارة قائمة المستأجرين](m365-lighthouse-manage-tenant-list.md).
+للمساعدة في تنظيم المستأجرين وتصفية طرق العرض الموجودة بسهولة، يمكنك إنشاء العلامات وتعيينها إلى المستأجرين. لمعرفة المزيد، راجع [إدارة قائمة المستأجرين في Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md).
 
 > [!NOTE]
 > يمكنك إنشاء ما يصل إلى 30 علامة عبر جميع المستأجرين.
@@ -131,10 +131,10 @@ ms.locfileid: "64823510"
 - **تحديث:** حدد لاسترداد أحدث بيانات خطوة النشر.
 - **البحث:** أدخل الكلمات الأساسية لتحديد موقع خطوة نشر معينة بسرعة في القائمة.
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (مقالة)\
 [الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)\
-[إدارة قائمة المستأجرين](m365-lighthouse-manage-tenant-list.md) (مقالة)\
-[نظرة عامة حول استخدام الخطوط الأساسية لنشر تكوينات المستأجر القياسية](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (المقالة)\
+[إدارة قائمة المستأجرين في Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md) (مقالة)\
+[نظرة عامة حول استخدام Microsoft 365 أساسيات Lighthouse لنشر تكوينات المستأجر القياسية](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (المقالة)\
 [نشر خطوط الأساس Microsoft 365 Lighthouse](m365-lighthouse-deploy-baselines.md) (مقالة)

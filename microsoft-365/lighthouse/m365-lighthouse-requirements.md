@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs)، احصل على قائمة بالمتطلبات لاستخدام Microsoft 365 Lighthouse.
-ms.openlocfilehash: d5f04c39cbce9726fefa4b410be63cd5ee4e959d
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 06d5c5bb0de76ecc8ba9fc28677f480f5f4d5561
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823663"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023250"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>متطلبات Microsoft 365 Lighthouse
 
@@ -59,10 +59,10 @@ Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخد
 > [!NOTE]
 > إذا كنت تستخدم حل الحماية من الفيروسات غير التابع ل Microsoft وليس برنامج الحماية من الفيروسات من Microsoft Defender، يتم تعطيل برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا. عند إلغاء تثبيت حل الحماية من الفيروسات غير التابع ل Microsoft، يتم تنشيط برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا لحماية أجهزة Windows من التهديدات.
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [تكوين أمان مدخل Lighthouse Microsoft 365](m365-lighthouse-configure-portal-security.md) (مقالة)\
-[Microsoft 365 نظرة عامة على صفحة توافق جهاز Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (مقالة)\
-[Microsoft 365 نظرة عامة على صفحة مستخدمي Lighthouse](m365-lighthouse-users-page-overview.md) (مقالة)\
-[نظرة عامة على صفحة إدارة المخاطر Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (مقالة)\
+[نظرة عامة على صفحة توافق الجهاز في Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article)\
+[نظرة عامة على صفحة المستخدمين في Microsoft 365 Lighthouse](m365-lighthouse-users-page-overview.md) (مقالة)\
+[نظرة عامة على صفحة إدارة المخاطر في Microsoft 365 Lighthouse](m365-lighthouse-threat-management-page-overview.md) (مقالة)\
 [الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)

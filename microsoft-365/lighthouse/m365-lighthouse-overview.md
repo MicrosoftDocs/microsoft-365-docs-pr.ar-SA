@@ -16,56 +16,56 @@ ms.custom:
 - M365-Lighthouse
 - intro-overview
 search.appverid: MET150
-description: بالنسبة إلى موفري الخدمات المدارة (MSPs)، تعرف على Microsoft 365 منارة تساعدك على تأمين مستأجري العملاء وإدارتهم في موقع واحد.
-ms.openlocfilehash: fde2ee27692b1d8fb53d46077cf58deb6d9a0550
-ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
+description: بالنسبة لموفري الخدمات المدارة (MSPs)، تعرف على كيفية مساعدة Microsoft 365 Lighthouse في تأمين مستأجري العملاء وإدارتهم في موقع واحد.
+ms.openlocfilehash: 96ae7647107a1be89d9fe4d800374ce8a8970cb8
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64645045"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023624"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>نظرة عامة على Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين الأجهزة والبيانات والمستخدمين وإدارتهم على نطاق واسع لعملاء الشركات الصغيرة والمتوسطة الحجم الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. 
+Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع لعملاء الأعمال الصغيرة والمتوسطة الحجم (SMB) الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. 
 
-تبسط "المنارة" عملية التهيئة لمستأجري Microsoft 365 Business Premium Microsoft 365 E3 و Windows 365 Business من خلال التوصية باساسيات تكوين الأمان المصممة خصيصا لعملاء SMB وتوفير طرق عرض متعددة المستأجرين عبر كل بيئات العملاء. باستخدام "المنارة"، يمكن لمزدبير MSPs توسيع نطاق إدارة عملائهم والتركيز على ما هو أكثر أهمية، والعثور بسرعة على المخاطر والتحقق من صحتها، واتخاذ الإجراءات اللازمة للوصول بعملائهم إلى حالة سليمة وآمنة.
+تعمل Lighthouse على تبسيط إعداد المستأجرين Microsoft 365 Business Premium Microsoft 365 E3 Windows 365 Business من خلال التوصية بخطوط أساسية لتكوين الأمان مصممة خصيصا لعملاء SMB وتوفير طرق عرض متعددة المستأجرين عبر جميع بيئات العملاء. مع Lighthouse، يمكن ل MSPs توسيع نطاق إدارة عملائها، والتركيز على ما هو أكثر أهمية، والبحث عن المخاطر والتحقيق فيها بسرعة، واتخاذ إجراءات لجعل عملائهم في حالة سليمة وآمنة.
 
-لا تقترن أي تكاليف إضافية باستخدام "المنارة" لإدارة Microsoft 365 والأجهزة المتصلة. تتوفر المنارة ل MSPs المسجلين في برنامج Cloud Solution Provider (CSP) وخدمة عملاء SMB الذين Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business اشتراك.
+لا ترتبط أي تكاليف إضافية باستخدام Lighthouse لإدارة خدمات Microsoft 365 والأجهزة المتصلة. تتوفر Lighthouse ل MSPs المسجلين في برنامج Cloud Solution Provider (CSP) وتخدم عملاء SMB مع اشتراك Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business.
 
-يتم دعم استخدام "المنارة" من قبل شركاء قناة Microsoft CSP الذين لديهم عملاء يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. يشمل ذلك شركاء CSP الذين يباشرون التعامل مباشرة مع Microsoft وأولئك الذين يباشرون العمل من خلال موفر غير مباشر (موزع). 
+يتم دعم استخدام Lighthouse من قبل شركاء قناة Microsoft CSP الذين لديهم عملاء يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. يشمل ذلك معالجة شركاء موفر الخدمات المشتركة (CSP) مباشرة مع Microsoft وتلك المعاملات من خلال موفر غير مباشر (موزع). 
 
 > [!IMPORTANT] 
-> لاستخدام المنارة، يجب على MSPs ومستأجري العملاء تلبية المتطلبات المذكورة في Microsoft 365 [المنارة](m365-lighthouse-requirements.md).     
+> لاستخدام Lighthouse، يجب أن تفي MSPs ومستأجرو العملاء بالمتطلبات المدرجة في [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).     
 
-لمزيد من المعلومات حول برنامج CSP، راجع نظرة عامة Cloud Solution Provider [البرنامج](/partner-center/csp-overview).
+لمزيد من المعلومات حول برنامج CSP، راجع [نظرة عامة على برنامج Cloud Solution Provider](/partner-center/csp-overview).
 
 > [!NOTE]  
-> يساعد عرض مماثل، Azure Lighthouse، موفري الخدمات على تقديم خدمات مدارة لخدمات Azure باستخدام أدوات إدارة شاملة وقوية مضمنة في نظام Azure الأساسي. لمعرفة المزيد، راجع [ما هو منارة Azure؟](/azure/lighthouse/overview)   
+> يساعد العرض المماثل، Azure Lighthouse، موفري الخدمات على تقديم الخدمات المدارة لخدمات Azure باستخدام أدوات إدارة شاملة وقوية مدمجة في منصة Azure. لمعرفة المزيد، راجع [ما هو Azure Lighthouse؟](/azure/lighthouse/overview)   
 
-## <a name="watch-what-is-microsoft-365-lighthouse"></a>شاهد: ما هو Microsoft 365 المنارة؟
+## <a name="watch-what-is-microsoft-365-lighthouse"></a>شاهد: ما هو Microsoft 365 Lighthouse؟
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4QVMP]
 
-## <a name="microsoft-365-lighthouse-benefits"></a>Microsoft 365 المنارة
+## <a name="microsoft-365-lighthouse-benefits"></a>مزايا Microsoft 365 Lighthouse
 
-تساعد "المنارة" MSPs على تأمين وإدارة Microsoft 365 ونقاط النهاية المتصلة على نطاق واسع من خلال:
+يساعد Lighthouse موفري الخدمات السحابية على تأمين وإدارة خدمات Microsoft 365 ونقاط النهاية المتصلة على نطاق واسع من خلال:
 
-- توفير رحلات نشر المستأجر بحيث يمكن للتقنيين اتباع مجموعة متناسقة من الخطوات لتأمين مستأجري العملاء وتكوينهم. 
-- استخدام أساس أمان SMB افتراضي يستخدم أفضل الممارسات التي تستهدف مستأجري الشركات الصغيرة والمتوسطة الحجم. 
-- توفير تحليلات متعددة المستأجرين حول توافق الأجهزة للحصول على طريقة عرض واضحة حول كيفية تقييم الأجهزة عبر كل المؤسسات، وأدوات لمقارنة نهج، والإعدادات العلوية التي لم يتم التحقق من وجودها. 
+- توفير رحلات نشر المستأجر حتى يتمكن الفنيون من اتباع مجموعة متسقة من الخطوات لتأمين وتكوين مستأجري العملاء. 
+- استخدام أساس أمان SMB افتراضي يحدد أفضل الممارسات المستهدفة لمستأجري الأعمال الصغيرة والمتوسطة الحجم. 
+- توفير رؤى متعددة المستأجرين حول توافق الجهاز للحصول على عرض واضح لكيفية تقييم الأجهزة عبر جميع المؤسسات، وأدوات مقارنة النهج، والإعدادات العليا التي لا يتم تلبيتها. 
 - تبسيط المهام الشائعة مثل إعادة تعيين كلمة مرور.
-- تكوين المصادقة متعددة العوامل وإعادة تعيين كلمة المرور للخدمة الذاتية، بما في ذلك الأدوات للمساعدة على اعتماد المستخدمين. 
-- الفهم والحماية من تسجيل الدخول الخطر.
-- إدارة التهديدات على أجهزة Windows 10 من خلال توفير تفاصيل حول التهديدات التي كشف عنها Microsoft 365 Defender والإجراءات التي يجب اتخاذها لحل المشاكل وإبقاء الأجهزة مواكبا لها.
-- توفير معلومات حول Microsoft 365 الخدمات والاستشارات التي تؤثر على مستأجري العملاء الذين يديرونها.
+- تكوين المصادقة متعددة العوامل وإعادة تعيين كلمة مرور الخدمة الذاتية، بما في ذلك أدوات للمساعدة في اعتماد المستخدمين. 
+- فهم عمليات تسجيل الدخول المحفوفة بالمخاطر وحمايتها.
+- إدارة التهديدات على الأجهزة Windows 10 من خلال توفير تفاصيل حول التهديدات التي تم اكتشافها بواسطة Microsoft 365 Defender والإجراءات التي يجب اتخاذها لحل المشكلات وإبقاء الأجهزة محدثة.
+- توفير رؤى حول أحداث الخدمة Microsoft 365 والنصائح التي تؤثر على مستأجري العملاء الذين يديرونها.
 
 > [!NOTE] 
-> لمزيد من المعلومات حول كيفية التسجيل، راجع [التسجيل للحصول على Microsoft 365 المنارة](m365-lighthouse-sign-up.md).
+> لمزيد من المعلومات حول كيفية التسجيل، راجع [التسجيل للحصول على Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-## <a name="related-content"></a>المحتوى ذي الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
-[التسجيل للحصول على Microsoft 365 المنارة](m365-lighthouse-sign-up.md) (مقالة)  
-[Microsoft 365 نظرة عامة على صفحة مستأجري المنارة](m365-lighthouse-tenants-page-overview.md) (مقالة)   
-[Microsoft 365 نظرة عامة على توافق جهاز المنارة](m365-lighthouse-device-compliance-page-overview.md) (مقالة)   
-[Microsoft 365 الأسئلة الشائعة حول المنارة](m365-lighthouse-faq.yml) (مقالة)   
+[التسجيل للحصول على Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (مقال)  
+[نظرة عامة على صفحة المستأجرين في Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (مقالة)   
+[نظرة عامة على صفحة توافق الجهاز في Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (مقالة)   
+[الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)   
 [Microsoft Defender for Business](../security/defender-business/index.yml) (صفحة ارتباط)

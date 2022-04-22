@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: احصل على نظرة عامة حول Microsoft 365 مركز الرسائل ودوره في تعقب الميزات الجديدة والمتغيرة والإعلانات المهمة الأخرى.
-ms.openlocfilehash: 6fabb66407eb21dc97880eaf2532b89ce02f9281
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2d2f76d401e68fb7494cd74b169bcfe6cd6e6758
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935270"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022900"
 ---
 # <a name="message-center"></a>مركز الرسائل
 
@@ -270,7 +270,7 @@ ms.locfileid: "64935270"
 
 تصل الكثير من المعلومات القابلة للتنفيذ حول التغييرات التي يتم إجراؤها على خدمات Microsoft 365 إلى مركز الرسائل Microsoft 365. قد يكون من الصعب تعقب التغييرات التي تتطلب المهام التي يجب تنفيذها ومتى ومن ين وتعقب كل مهمة حتى الاكتمال. قد ترغب أيضا في تدوين ملاحظة عن شيء ما ووضع علامة عليه للتحقق منه لاحقا. يمكنك القيام بكل هذا وأكثر عند مزامنة رسائلك من مركز مسؤولي Microsoft 365 إلى Microsoft Planner. لمزيد من المعلومات، راجع [تعقب مهام مركز الرسائل في Planner](/office365/planner/track-message-center-tasks-planner).
 
-للحصول على نظرة عامة حول مركز الرسائل، راجع [مركز الرسائل في Microsoft 365](message-center.md). أو لمعرفة كيفية تعيين تفضيلات اللغة لتمكين الترجمة الآلية لمنشورات مركز الرسائل، راجع [ترجمة اللغة لمنشورات مركز الرسائل](language-translation-for-message-center-posts.md). إذا كنت ترغب في برمجة طريقة بديلة للحصول على معلومات حماية الخدمة في الوقت الحقيقي واتصالات مركز الرسائل، فالرجاء الرجوع إلى [العمل باستخدام واجهة برمجة تطبيقات اتصالات الخدمة في Microsoft Graph](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta).
+للحصول على نظرة عامة حول مركز الرسائل، راجع [مركز الرسائل في Microsoft 365](message-center.md). أو لمعرفة كيفية تعيين تفضيلات اللغة لتمكين الترجمة الآلية لمنشورات مركز الرسائل، راجع [ترجمة اللغة لمنشورات مركز الرسائل](language-translation-for-message-center-posts.md). إذا كنت ترغب في برمجة طريقة بديلة للحصول على معلومات حماية الخدمة في الوقت الحقيقي واتصالات مركز الرسائل، فراجع [العمل باستخدام واجهة برمجة تطبيقات اتصالات الخدمة في Microsoft Graph](/graph/api/resources/service-communications-api-overview).
 
 ## <a name="unsubscribe-from-message-center-emails"></a>إلغاء الاشتراك من رسائل البريد الإلكتروني في مركز الرسائل
 

@@ -1,5 +1,5 @@
 ---
-title: استكشاف المشاكل ورسائل الخطأ وحلها في Microsoft 365 Lighthouse
+title: استكشاف أخطاء رسائل الخطأ ومشاكلها في Microsoft 365 Lighthouse وإصلاحها
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,15 +15,15 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، احصل على المساعدة في استكشاف أخطاء رسائل الخطأ ومشاكلها وحلها.
-ms.openlocfilehash: 1126db76129a0f3cf6b65921a6e731f02d7311d3
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، احصل على المساعدة في استكشاف أخطاء رسائل الخطأ والمشاكل وإصلاحها.
+ms.openlocfilehash: 3da40291742ae85ef897aeceae0def27aca8abe2
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824059"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023206"
 ---
-# <a name="troubleshoot-and-resolve-problems-and-error-messages-in-microsoft-365-lighthouse"></a>استكشاف المشاكل ورسائل الخطأ وحلها في Microsoft 365 Lighthouse
+# <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>استكشاف أخطاء رسائل الخطأ ومشاكلها في Microsoft 365 Lighthouse وإصلاحها
 
 تصف هذه المقالة رسائل الخطأ والمشاكل التي قد تواجهها أثناء استخدام Microsoft 365 Lighthouse وتوفر خطوات استكشاف الأخطاء وإصلاحها التي يمكنك اتخاذها لحلها.
 
@@ -132,7 +132,7 @@ ms.locfileid: "64824059"
 
 إذا كانت البيانات لا تزال لا تظهر على صفحات توافق الجهاز وإدارة المخاطر بعد اتباع إرشادات الحل، فاتصل بقسم الدعم. لمزيد من المعلومات، راجع [الحصول على التعليمات والدعم Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [المشاكل المعروفة في Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (مقالة)\
 [الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)\

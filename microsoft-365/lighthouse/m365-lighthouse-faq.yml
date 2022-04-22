@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Microsoft 365 المنارة الأسئلة المتكررة (الأسئلة المتكررة)
+  title: الأسئلة المتداولة حول Microsoft 365 Lighthouse (الأسئلة المتداولة)
   f1.keywords: NOCSH
   ms.author: sharik
   author: SKjerland
@@ -16,81 +16,81 @@ metadata:
   - AdminSurgePortfolio
   - M365-Lighthouse
   search.appverid: MET150
-  description: بالنسبة إلى موفري الخدمات المدارة (MSPs) Microsoft 365 المنارة، احصل على إجابات على الأسئلة المتكررة (الأسئلة المتكررة) حول Microsoft 365 المنارة.
-  ms.openlocfilehash: 34b47e6a8834502db2a9598a425fa3bca123cdaa
-  ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
+  description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، احصل على إجابات للأسئلة المتداولة (الأسئلة المتداولة) حول Microsoft 365 Lighthouse.
+  ms.openlocfilehash: 608fcf1ff8015968660354a1420a132e90ce4d54
+  ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 04/05/2022
-  ms.locfileid: "64645191"
-title: Microsoft 365 المنارة الأسئلة المتكررة (الأسئلة المتكررة)
+  ms.lasthandoff: 04/21/2022
+  ms.locfileid: "65023228"
+title: الأسئلة المتداولة حول Microsoft 365 Lighthouse (الأسئلة المتداولة)
 summary: >
-  تحتوي هذه المقالة على إجابات على الأسئلة المتكررة (الأسئلة المتكررة) حول Microsoft 365 المنارة.
+  تحتوي هذه المقالة على إجابات للأسئلة المتداولة (الأسئلة المتداولة) حول Microsoft 365 Lighthouse.
 
 
-  إذا لم تتمكن من العثور على إجابة على سؤالك، فدعنا نعرف ذلك من خلال ترك تعليق وسنضيفه إلى هذه المقالة.
+  إذا لم تتمكن من العثور على إجابة على سؤالك، فأخبرنا بذلك من خلال ترك تعليق وسنضيفه إلى هذه المقالة.
 sections:
 - name: تم التجاهل
   questions:
-  - question: What is Microsoft 365 Lighthouse?
+  - question: ما هو Microsoft 365 Lighthouse؟
     answer: >
-      Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business. Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments. For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
-  - question: What's the difference between Microsoft 365 Lighthouse and Azure Lighthouse?
+      Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع لعملاء الأعمال الصغيرة والمتوسطة الحجم (SMB) الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. تعمل Lighthouse على تبسيط إلحاق المستأجرين من خلال التوصية بخطوط أساسية لتكوين الأمان مصممة خصيصا ل SMBs وتوفير طرق عرض متعددة المستأجرين عبر جميع بيئات العملاء. لمزيد من المعلومات، راجع [نظرة عامة على Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+  - question: ما الفرق بين Microsoft 365 Lighthouse وAzure Lighthouse؟
     answer: >
-      Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
-  - question: How much does Microsoft 365 Lighthouse cost?
+      يركز Microsoft 365 Lighthouse على خدمات Microsoft 365 بدلا من خدمات Azure. في حين أن Azure Lighthouse مضمن في مدخل Azure ويسمح لشركاء تكنولوجيا المعلومات بإدارة مستأجرين متعددين ل Azure، فإن Microsoft 365 Lighthouse عبارة عن مدخل مستقل يساعد MSPs على إدارة العديد من Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business  مستأجرو العملاء. لمزيد من المعلومات حول Microsoft 365 Lighthouse، راجع [نظرة عامة على Microsoft 365 Lighthouse](m365-lighthouse-overview.md). لمزيد من المعلومات حول Azure Lighthouse، راجع [ما هو Azure Lighthouse؟](/azure/lighthouse/overview)
+  - question: كم تبلغ تكلفة Microsoft 365 Lighthouse؟
     answer: >
-      No additional costs are associated with using Lighthouse to manage Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business services and connected devices. Lighthouse is available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. Note that indirect providers are not currently supported by Lighthouse. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
-  - question: What are the requirements to use Microsoft 365 Lighthouse?
+      لا ترتبط أي تكاليف إضافية باستخدام Lighthouse لإدارة خدمات Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business والأجهزة المتصلة. تتوفر خدمة Lighthouse ل MSPs التي تخدم الشركات الصغيرة والمتوسطة الحجم ولها علاقة Cloud Solution Provider (CSP) مع عملائها. لاحظ أن الموفرين غير المباشرين غير مدعومين حاليا من Lighthouse. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: ما هي متطلبات استخدام Microsoft 365 Lighthouse؟
     answer: >
-      For a list of current requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
-  - question: In which countries and regions is Microsoft 365 Lighthouse available?
+      للحصول على قائمة بالمتطلبات الحالية، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: في أي من البلدان والمناطق يتوفر Microsoft 365 Lighthouse؟
     answer: >
-      Lighthouse is available in all countries where Microsoft 365 is available, except China and Palestinian Authority. However, features in Lighthouse such as device management and threat management rely on Microsoft Intune, and user management relies on Azure Active Directory (Azure AD), and Intune and Azure AD may not be available in certain countries and regions. For a complete list of Microsoft 365, Azure AD, and Intune availability, see [International availability](https://www.microsoft.com/microsoft-365/business/international-availability).
+      تتوفر Lighthouse في جميع البلدان التي يتوفر فيها Microsoft 365، باستثناء الصين والسلطة الوطنية. ومع ذلك، تعتمد الميزات في Lighthouse مثل إدارة الأجهزة وإدارة التهديدات على Microsoft Intune، وتعتمد إدارة المستخدم على Azure Active Directory (Azure AD)، وقد لا تتوفر Intune وAzure AD في بعض البلدان والمناطق. للحصول على قائمة كاملة بتوفر Microsoft 365 وAzure AD وIntune، راجع [التوفر الدولي](https://www.microsoft.com/microsoft-365/business/international-availability).
 
 
-      Lighthouse is not available in national clouds.
-  - question: How do I sign up for Microsoft 365 Lighthouse?
+      Lighthouse غير متوفر في السحب الوطنية.
+  - question: كيف أعمل التسجيل في Microsoft 365 Lighthouse؟
     answer: >
-      To sign up for Lighthouse, you'll need to be registered with the CSP program. We're currently unable to support indirect providers. For instructions on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). To learn more about the CSP program, see the [Cloud Solution Provider program overview](/partner-center/csp-overview).
-  - question: I finished signing up, so why don't I see any customer tenant data?
+      للتسجيل في Lighthouse، ستحتاج إلى التسجيل في برنامج CSP. يتعذر علينا حاليا دعم الموفرين غير المباشرين. للحصول على إرشادات حول كيفية التسجيل، راجع [التسجيل للحصول على Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). لمعرفة المزيد حول برنامج CSP، راجع [نظرة عامة على برنامج Cloud Solution Provider](/partner-center/csp-overview).
+  - question: لقد انتهيت من التسجيل، فلماذا لا أرى أي بيانات مستأجر عميل؟
     answer: >
-      It can take up to 48 hours for customer tenant data to load within Lighthouse. If it's been more than 48 hours since you completed onboarding, please reach out to our Support team for help. You'll need to let them know when you completed onboarding and provide any relevant screenshots and logs. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
-  - question: Why do I see data for some customer tenants but not others?
-    answer: "For customer tenant data to show up in Lighthouse, MSPs must establish delegated access to manage the customer tenant. Delegated Admin Privileges (DAP) is required to onboard customers to Lighthouse. We recommend establishing Granular Delegated Admin Privileges (GDAP) with your customers to enable more secure delegated access. See [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) for additional details on which delegated and partner tenant roles are recommended to use Lighthouse. While DAP and GDAP coexist, GDAP will take precedence for customers where both models are in place. Soon, customers with just GDAP (and no DAP) will be able to onboard to Lighthouse. For more information on delegated access, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business license and no more than 1000 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Microsoft 365 Lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md).  \n"
-  - question: What if I don't want to see certain tenants in Microsoft 365 Lighthouse?
+      قد يستغرق تحميل بيانات مستأجر العميل داخل Lighthouse ما يصل إلى 48 ساعة. إذا مر أكثر من 48 ساعة على إكمال الإلحاق، فالرجاء التواصل مع فريق الدعم للحصول على المساعدة. ستحتاج إلى إعلامهم عند الانتهاء من الإلحاق وتوفير أي لقطات شاشة وسجلات ذات صلة. لمزيد من المعلومات، راجع [الحصول على التعليمات والدعم Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+  - question: لماذا أرى بيانات لبعض مستأجري العملاء ولكن ليس للآخرين؟
+    answer: "لكي تظهر بيانات مستأجر العميل في Lighthouse، يجب على MSPs إنشاء وصول مفوض لإدارة مستأجر العميل. مطلوب امتيازات المسؤول المفوض (DAP) لإلحاق العملاء إلى Lighthouse. نوصي بإنشاء امتيازات المسؤول المفوض متعدد المستويات (GDAP) مع عملائك لتمكين الوصول المفوض الأكثر أمانا. راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) للحصول على تفاصيل إضافية حول أدوار المستأجرين المفوضين والشركاء المستحسنة لاستخدام Lighthouse. في حين أن DAP وGDAP يتعايشان، فإن GDAP سيكون له الأسبقية للعملاء حيث يوجد كلا النموذجين. قريبا، سيتمكن العملاء الذين يعانون من GDAP فقط (وبدون DAP) من الإلحاق ب Lighthouse. لمزيد من المعلومات حول الوصول المفوض، راجع [طلب علاقة موزع مع عميل في مركز الشركاء](/partner-center/request-a-relationship-with-a-customer). يجب أن يكون لدى المستأجرين أيضا ترخيص واحد على الأقل Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business ولا يزيد عن 1000 مستخدم مرخص في المستأجر. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) [ونظرة عامة على صفحة المستأجرين في Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).  \n"
+  - question: ماذا لو كنت لا أريد رؤية مستأجرين معينين في Microsoft 365 Lighthouse؟
     answer: >
-      If you don't want to see certain tenants and their data in Lighthouse, you can inactivate those tenants. To inactivate a tenant, follow these steps:
+      إذا كنت لا تريد رؤية مستأجرين معينين وبياناتهم في Lighthouse، يمكنك تعطيل هؤلاء المستأجرين. لإلغاء تنشيط مستأجر، اتبع الخطوات التالية:
 
 
-      1. Select **Tenants** from the left navigation pane to open the **Tenants** page.
+      1. حدد **المستأجرين** من جزء التنقل الأيمن لفتح صفحة **المستأجرين** .
 
-      1. Find the tenant that you want to inactivate, select the three dots next to the tenant name, and then select **Inactivate tenant**.
+      1. ابحث عن المستأجر الذي تريد تعطيله، وحدد النقاط الثلاث الموجودة بجانب اسم المستأجر، ثم حدد **"Inactivate tenant**".
 
-      1. In the confirmation message that appears, select **Confirm** to inactivate the tenant.
+      1. في رسالة التأكيد التي تظهر، حدد **"تأكيد** " لإلغاء تنشيط المستأجر.
           > [!NOTE]
-          > Once you inactivate a tenant, you can't take action on the tenant until inactivation is complete. It may take up to 48 hours for inactivation to complete.
+          > بمجرد تنشيط المستأجر، لا يمكنك اتخاذ إجراء على المستأجر حتى يكتمل التنشيط. قد يستغرق إكمال إلغاء التنشيط ما يصل إلى 48 ساعة.
 
-      To learn more about tenants, see [Microsoft 365 Lighthouse tenants page overview](m365-lighthouse-tenants-page-overview.md).
-  - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business?
+      لمعرفة المزيد حول المستأجرين، راجع [Microsoft 365 نظرة عامة على صفحة مستأجري Lighthouse](m365-lighthouse-tenants-page-overview.md).
+  - question: هل سيعمل Microsoft 365 Lighthouse إذا كان لدى مستأجري العملاء اشتراكات أخرى إلى جانب Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business؟
     answer: >
-      Lighthouse helps you manage customer tenants that have Microsoft 365 Business Premium, Microsoft 365 E3, or Windows 365 Business licenses in place for their users. For users in customer tenants who don't have these licenses, Lighthouse functionality will be limited. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
-  - question: How do I qualify to manage customer Cloud PCs in Microsoft 365 Lighthouse?
+      تساعدك Lighthouse على إدارة مستأجري العملاء الذين لديهم تراخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business في مكانها لمستخدميهم. بالنسبة للمستخدمين في مستأجري العملاء الذين ليس لديهم هذه التراخيص، ستكون وظائف Lighthouse محدودة. على سبيل المثال، إذا كان المستخدم يفتقد ترخيصا يتضمن Intune، فلن تتوفر أجهزة هذا المستخدم وحالة توافق الجهاز وحالة التهديدات؛ وإذا كان المستخدم يفتقد ترخيصا يتضمن Azure AD P1، فلن تكون كلمة مرور هذا المستخدم وإدارة تسجيل الدخول متوفرة. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: كيف أعمل مؤهل لإدارة أجهزة الكمبيوتر السحابية للعملاء في Microsoft 365 Lighthouse؟
     answer: >
-      If you meet the requirements to use Lighthouse, then you're qualified to manage customer Cloud PCs in Lighthouse. For a list of current requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
-  - question: Where can I purchase Windows 365 (Cloud PC) licenses for my customers?
+      إذا كنت تستوفي متطلبات استخدام Lighthouse، فأنت مؤهل لإدارة أجهزة الكمبيوتر السحابية للعميل في Lighthouse. للحصول على قائمة بالمتطلبات الحالية، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+  - question: أين يمكنني شراء تراخيص Windows 365 (Cloud PC) لعملائي؟
     answer: >
-      You can purchase Windows 365 licenses through all available Microsoft commercial sales channels. One license purchased is equivalent to the purchase of one Cloud PC. Currently, each user can be assigned only one Cloud PC of the same SKU type, but they can be assigned multiple Cloud PCs if they are of different SKU types. To compare Windows 365 plans and pricing, see [Get the Windows 365 Cloud PC that’s right for you](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
-  - question: How do I get help and support?
+      يمكنك شراء تراخيص Windows 365 من خلال جميع قنوات مبيعات Microsoft التجارية المتوفرة. ترخيص واحد تم شراؤه يعادل شراء كمبيوتر سحابي واحد. حاليا، يمكن تعيين كمبيوتر سحابي واحد فقط لكل مستخدم من نفس نوع SKU، ولكن يمكن تعيين عدة أجهزة كمبيوتر سحابية إذا كانت من أنواع SKU مختلفة. لمقارنة Windows 365 الخطط والتسعير، راجع [الحصول على الكمبيوتر السحابي لـ Windows 365 المناسب لك](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
+  - question: كيف أعمل الحصول على المساعدة والدعم؟
     answer: >
-      In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane. From here you can access self-help articles or contact support. For more information about help and support options, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
-  - question: Where can I submit feedback and ideas?
+      في Lighthouse، حدد **؟** في أعلى المدخل لفتح جزء **التعليمات** . من هنا يمكنك الوصول إلى مقالات التعليمات الذاتية أو الاتصال بالدعم. لمزيد من المعلومات حول خيارات المساعدة والدعم، راجع [الحصول على التعليمات والدعم Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+  - question: أين يمكنني إرسال الملاحظات والأفكار؟
     answer: >-
-      Your feedback matters and is important to us! There are a few different ways for you to submit feedback:
+      ملاحظاتك مهمة ومهمة بالنسبة لنا! هناك بعض الطرق المختلفة لإرسال الملاحظات:
 
 
-      - Go to the [Microsoft 365 Lighthouse Feedback page](https://aka.ms/m365lighthouseuservoice). You can start conversations about Lighthouse and Windows 365 features, post questions for other partners or Microsoft employees, provide feedback and feature ideas, and more.
+      - انتقل إلى [صفحة Microsoft 365 Lighthouse Feedback](https://aka.ms/m365lighthouseuservoice). يمكنك بدء محادثات حول Lighthouse وميزات Windows 365 ونشر الأسئلة للشركاء الآخرين أو موظفي Microsoft وتقديم الملاحظات وأفكار الميزات والمزيد.
 
-      - Select the Feedback icon in the upper-right corner of Lighthouse.
+      - حدد أيقونة "ملاحظات" في الزاوية العلوية اليسرى من Lighthouse.
 
-      - Respond to the occasional (not more than once a month) pop-up window in Lighthouse that asks you to provide feedback.
+      - الاستجابة للنافذة المنبثقة العرضية (لا تزيد عن مرة واحدة في الشهر) في Lighthouse التي تطلب منك تقديم الملاحظات.

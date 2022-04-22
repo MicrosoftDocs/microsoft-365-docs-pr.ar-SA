@@ -1,5 +1,5 @@
 ---
-title: بحث عن المستخدمين
+title: البحث عن مستخدمين في Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,14 +16,14 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية البحث عن المستخدمين.
-ms.openlocfilehash: 7f38335893a7c6de359bd68df8bd74d7ea77ec97
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 60b6f0c2da3ab7c26c1473c17856e10366c3e3ed
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823532"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65022790"
 ---
-# <a name="search-for-users"></a>بحث عن المستخدمين
+# <a name="search-for-users-in-microsoft-365-lighthouse"></a>البحث عن مستخدمين في Microsoft 365 Lighthouse
 
 يتيح لك Microsoft 365 Lighthouse البحث عن مستخدم معين عبر جميع المستأجرين النشطين. يتيح لك ذلك العثور على مستخدم بسرعة دون الحاجة إلى التنقل بين مستأجرين مختلفين.
 
@@ -37,10 +37,10 @@ ms.locfileid: "64823532"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-بمجرد العثور على المستخدم، يمكنك إعادة تعيين كلمة المرور الخاصة به أو حظر حسابه. لمزيد من المعلومات، راجع [إعادة تعيين كلمة مرور المستخدم](m365-lighthouse-reset-user-password.md) أو [حظر تسجيل دخول المستخدم](m365-lighthouse-block-user-signin.md).
+بمجرد العثور على المستخدم، يمكنك إعادة تعيين كلمة المرور الخاصة به أو حظر حسابه. لمزيد من المعلومات، راجع [إعادة تعيين كلمة مرور المستخدم](m365-lighthouse-reset-user-password.md) أو [حظر تسجيل دخول المستخدم Microsoft 365 Lighthouse](m365-lighthouse-block-user-signin.md).
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [إدارة حسابات المستخدمين Microsoft 365](../enterprise/manage-microsoft-365-accounts.md) (مقالة)\
 [إعادة تعيين كلمة مرور المستخدم](m365-lighthouse-reset-user-password.md) (مقالة)\
-[حظر تسجيل دخول المستخدم](m365-lighthouse-block-user-signin.md) (مقال)
+[حظر تسجيل دخول المستخدم Microsoft 365 Lighthouse](m365-lighthouse-block-user-signin.md) (مقالة)

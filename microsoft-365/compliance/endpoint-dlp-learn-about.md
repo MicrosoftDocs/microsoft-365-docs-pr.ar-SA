@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'يؤدي منع فقدان بيانات نقطة النهاية إلى توسيع مراقبة أنشطة الملفات وإجراءات الحماية لتلك الملفات إلى نقاط النهاية. يتم عرض الملفات في حلول التوافق '
-ms.openlocfilehash: e84d2de72e05991a7d8374a2e5214df90fb939d9
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 76649559b1110c02f29584afdfb7e48f57a41f1e
+ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953294"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65023360"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>التعرّف على تفادي فقدان بيانات نقطة النهاية
 
@@ -95,7 +95,7 @@ ms.locfileid: "64953294"
 
 تراقب نقطة النهاية DLP النشاط استنادا إلى نوع MIME، لذلك سيتم تسجيل الأنشطة حتى إذا تم تغيير ملحق الملف.
 
-### <a name="file-types-preview"></a>أنواع الملفات (معاينة)
+### <a name="file-types"></a>أنواع الملفات
 
 أنواع الملفات هي تجميع لتنسيقات الملفات التي تستخدم لحماية مهام سير عمل أو مجالات عمل معينة. يمكنك استخدام نوع ملف واحد أو أكثر كشروط في نهج DLP.
 
@@ -107,7 +107,7 @@ ms.locfileid: "64953294"
 |ارشيف  |أدوات أرشفة الملفات وضغطها | .zip و.zipx و .rar و.7z و.tar و.gz        |
 |البريد الالكتروني    |Outlook |pst. وost. و.msg         |
 
-### <a name="file-extensions-preview"></a>ملحقات الملفات (معاينة)
+### <a name="file-extensions"></a>ملحقات الملفات
 
 إذا لم تغطي أنواع الملفات ملحقات الملفات التي تحتاج إلى إدراجها كشرط في نهج، يمكنك استخدام ملحقات الملفات مفصولة بفواصل بدلا من ذلك.
 
