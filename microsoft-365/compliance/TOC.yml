@@ -42,7 +42,7 @@
           href: device-onboarding-script.md
         - name: أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة
           href: device-onboarding-vdi.md
-    - name: أجهزة macOS على اللوحة (معاينة)
+    - name: إلحاق أجهزة macOS
       items:
         - name: إلحاق أجهزة macOS في نظرة عامة على Microsoft 365
           href: device-onboarding-macos-overview.md
