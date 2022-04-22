@@ -12,7 +12,7 @@
       items:
         - name: نظرة عامة
           href: testoverview.md
-        - name: حزمة اختبار الثنائيات في قاعدة الاختبار
+        - name: اختبار الملف الثنائي الخاص بك على قاعدة الاختبار
           href: testapplication.md
         - name: اختبر تطبيق Intune الخاص بك على قاعدة الاختبار
           href: testintuneapplication.md
