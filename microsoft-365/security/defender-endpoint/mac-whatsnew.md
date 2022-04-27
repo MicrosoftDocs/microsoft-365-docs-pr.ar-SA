@@ -15,22 +15,29 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: d36d05a4abe36ffe63e53eb8e164e248755de0ec
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 104bc9f10838be782ea70e3efe567ddee714d0a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665899"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100204"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>أحدث الميزات في Microsoft Defender لنقطة النهاية على Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1016415-20122032164150"></a>101.64.15 (20.122032.16415.0)
+
+- تم إصلاح التراجع الذي تم تقديمه في الإصدار 101.61.69 حيث تظهر أيقونة قائمة الحالة أحيانا أيقونة خطأ، على الرغم من أنه لم يكن هناك أي إجراء مطلوب من المستخدم النهائي
+- تم `conflicting_applications` تحسين الحقل `mdatp health` لإظهار أحدث 10 عمليات فقط وكذلك لتضمين أسماء العمليات. وهذا يسهل تحديد العمليات التي يحتمل أن تتعارض مع Microsoft Defender لنقطة النهاية for Mac.
+- تم إصلاح خطأ حيث `mdatp device-control removable-media policy list` تم عرض معرف المورد ومعرف المنتج كأرقام عشرية بدلا من رقم سداسي عشري
+- تحسينات الأداء & إصلاحات الأخطاء الأخرى
 
 ## <a name="1016169-20122022161690"></a>101.61.69 (20.122022.16169.0)
 

@@ -16,12 +16,12 @@ ms.collection:
 description: يمكن للمسؤولين معرفة كيفية تكوين السماح في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad2a55d19f60bf310b62ac13dfbe2563709673d2
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ad2ef693848b664be6ec9b48cc4fc320a8b4b9c2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970869"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090133"
 ---
 # <a name="add-allows-in-the-tenant-allowblock-list"></a>تسمح الإضافة في قائمة السماح/الحظر للمستأجر
 
@@ -117,7 +117,7 @@ ms.locfileid: "64970869"
    - **نوع الانتحال**: حدد إحدى القيم التالية:
      - **داخلي**: المرسل المخادع موجود في مجال ينتمي إلى مؤسستك ( [مجال مقبول](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **خارجي**: المرسل المخادع موجود في مجال خارجي.
-   - **الإجراء**: حدد **السماح** أو **الحظر**.
+   - **الإجراء**: حدد **السماح**.
 
 4. عند الانتهاء، انقر فوق **"إضافة**".
 

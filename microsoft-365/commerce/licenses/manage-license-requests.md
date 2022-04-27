@@ -19,13 +19,13 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid: MET150
 description: تعرف على كيفية مراجعة طلبات الترخيص والموافقة عليها أو رفضها من المستخدمين لاشتراكك في Microsoft 365 للأعمال.
-ms.date: 06/07/2021
-ms.openlocfilehash: cc1d03717cbdf0ce8768c630044990363feded8a
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.date: 04/22/2022
+ms.openlocfilehash: 802b84445c83c2831e5fd88598cc00fb8b0ab867
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841819"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098681"
 ---
 # <a name="manage-license-requests"></a>إدارة طلبات الترخيص
 
@@ -41,7 +41,7 @@ ms.locfileid: "64841819"
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-يجب أن تكون مسؤولا عموميا لتنفيذ المهام الواردة في هذه المقالة. لمزيد من المعلومات، راجع ["حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md)".
+يجب أن تكون مسؤولا عموميا لتنفيذ المهام الواردة في هذه المقالة. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="use-your-own-request-process"></a>استخدام عملية الطلب الخاصة بك
 
@@ -53,7 +53,7 @@ ms.locfileid: "64841819"
 1. في مركز الإدارة، انتقل إلى صفحة <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > ، ثم حدد علامة التبويب **"طلبات**".
 2. حدد **"استخدام عملية الطلب الموجودة" بدلا من ذلك**.
 3. في الجزء الأيسر، في مربع **الرسالة** ، اكتب الرسالة التي تريد أن يراها المستخدمون عندما يطلبون ترخيصا. إذا كنت تريد أيضا تضمين ارتباط إلى نهج المؤسسة أو وثائق أخرى، أدخل عنوان URL في **مربع النص "ارتباط إلى الوثائق" (اختياري** ).
-4. حدد **"حفظ**".
+4. حدد **حفظ**.
 
 عند العودة إلى قائمة **الطلبات** ، سترى الرسالة التي **تستخدمها لعملية طلب الترخيص الخاصة بك**. لإجراء تغييرات على الرسالة المرسلة إلى المستخدمين، حدد **"استخدام عملية الطلب الموجودة" بدلا من ذلك**.
 
@@ -62,7 +62,7 @@ ms.locfileid: "64841819"
 1. في مركز الإدارة، انتقل إلى صفحة <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a> > ، ثم حدد علامة التبويب **"طلبات**".
 2. حدد **"استخدام عملية الطلب الموجودة" بدلا من ذلك**.
 3. في الجزء الأيسر، قم بإلغاء تحديد خانة الاختيار **"استخدام عملية طلب المؤسسة** ".
-4. حدد **"حفظ**".
+4. حدد **حفظ**.
 
 ## <a name="approve-or-deny-a-license-request"></a>الموافقة على طلب ترخيص أو رفضه
 
@@ -77,7 +77,7 @@ ms.locfileid: "64841819"
 9. أغلق الجزء الأيمن.
     يتلقى المستخدمون رسالة بريد إلكتروني تفيد بأنه تمت الموافقة على طلبهم أو رفضه.
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [تعيين تراخيص للمستخدمين](../../admin/manage/assign-licenses-to-users.md) (مقالة)\
 [نقل المستخدمين إلى اشتراك مختلف](../subscriptions/move-users-different-subscription.md) (مقالة)\

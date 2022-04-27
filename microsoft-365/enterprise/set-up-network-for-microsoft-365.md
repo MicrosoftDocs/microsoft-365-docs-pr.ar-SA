@@ -2,7 +2,7 @@
 title: إعداد الشبكة Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/19/2019
 audience: ITPro
 ms.topic: landing-page
@@ -19,75 +19,75 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: يمكنك العثور على ارتباطات إلى مقالات تتضمن معلومات لمساعدتك على إعداد الشبكة Microsoft 365، بما في ذلك نظرة عامة حول اتصال الشبكة وقائمة نقاط النهاية.
-ms.openlocfilehash: c6dbc4362648b3695c23f363c0e6925ead97bacb
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: ابحث عن ارتباطات إلى مقالات تحتوي على معلومات لمساعدتك في إعداد شبكتك Microsoft 365، بما في ذلك نظرة عامة على اتصال الشبكة وقائمة بنقاط النهاية.
+ms.openlocfilehash: 8651fa23983cddf243081248bf1e03fb067232e2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680831"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092834"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>إعداد الشبكة Microsoft 365
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
-جزء هام من Microsoft 365 هو التأكد من إعداد اتصالات الشبكة والإنترنت للوصول المحسن. يختلف تكوين الشبكة المحلية للوصول إلى سحابة برامج كخدمة (SaaS) موزعة بشكل عام عن الشبكة التقليدية التي تم تحسينها لحركة المرور إلى مراكز البيانات المحلية واتصال إنترنت مركزي. 
+يتمثل جزء مهم من إعداد Microsoft 365 في التأكد من إعداد اتصالات الشبكة والإنترنت للوصول الأمثل. يختلف تكوين الشبكة المحلية للوصول إلى سحابة البرامج كخدمة (SaaS) الموزعة عالميا عن الشبكة التقليدية التي تم تحسينها لنسبة استخدام الشبكة إلى مراكز البيانات المحلية واتصال الإنترنت المركزي. 
 
-استخدم هذه المقالات لفهم الاختلافات الرئيسية وتعديل أجهزة الحواف وأجهزة الكمبيوتر العميلة الشبكة المحلية للحصول على أفضل أداء للمستخدمين في الموقع.
+استخدم هذه المقالات لفهم الاختلافات الرئيسية وتعديل أجهزة الحافة وأجهزة الكمبيوتر العميلة والشبكة المحلية للحصول على أفضل أداء للمستخدمين المحليين.
 
-## <a name="how-microsoft-365-networking-works"></a>كيفية Microsoft 365 الشبكة
+## <a name="how-microsoft-365-networking-works"></a>كيفية عمل Microsoft 365 الشبكات
 
 راجع هذه المقالات للحصول على نظرة عامة حول الاتصال Microsoft 365:
 
-- [Microsoft 365 عامة حول اتصال الشبكة](microsoft-365-networking-overview.md)
-- [Microsoft 365 الاتصال بالشبكة](microsoft-365-network-connectivity-principles.md)
-- [تقييم Microsoft 365 الشبكة](assessing-network-connectivity.md)
+- [نظرة عامة على اتصال الشبكة Microsoft 365](microsoft-365-networking-overview.md)
+- [مبادئ اتصال الشبكة Microsoft 365](microsoft-365-network-connectivity-principles.md)
+- [تقييم اتصال الشبكة Microsoft 365](assessing-network-connectivity.md)
 
-للحصول على نصيحة حول تحسين الأداء، راجع [تخطيط](network-planning-and-performance.md) الشبكة وتحسين الأداء Microsoft 365.
+للحصول على إرشادات حول تحسين الأداء، راجع [تخطيط الشبكة وضبط الأداء Microsoft 365](network-planning-and-performance.md).
 
-## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>دعم Microsoft 365 الشبكة كمورد معدات الشبكة
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>دعم Microsoft 365 الشبكات كمورد معدات الشبكة
 
-إذا كنت مورد معدات الشبكة، فالانضمام إلى [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md). قم بالتسجيل في البرنامج Office 365 مبادئ اتصال الشبكة في المنتجات والحلول. 
+إذا كنت مورد معدات الشبكة، فانضم إلى [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md). سجل في البرنامج لإنشاء مبادئ اتصال الشبكة Office 365 في منتجاتك وحلولك. 
 
-## <a name="office-365-endpoints"></a>Office 365 نقاط النهاية
+## <a name="office-365-endpoints"></a>نقاط نهاية Office 365
 
-نقاط النهاية هي مجموعة عناوين IP الوجهة وأسماء مجالات DNS وعناوين URL Office 365 البيانات على الإنترنت. 
+نقاط النهاية هي مجموعة عناوين IP الوجهة وأسماء مجالات DNS وعناوين URL لنسبة استخدام الشبكة Office 365 على الإنترنت. 
 
-لتحسين الأداء Office 365 المستندة إلى السحابة، تحتاج بعض نقاط النهاية إلى معالجة خاصة بواسطة مستعرضات العميل والأجهزة في شبكة edge. تتضمن هذه الأجهزة جدران الحماية، وSSL Break وفحص أجهزة فحص الحزم وأجهزة منع فقدان البيانات.
+لتحسين الأداء Office 365 الخدمات المستندة إلى السحابة، تحتاج بعض نقاط النهاية إلى معالجة خاصة من قبل مستعرضات العميل والأجهزة الموجودة في شبكة edge. تتضمن هذه الأجهزة جدران الحماية وSSL Break وأجهزة فحص وفحص حزم البيانات وأنظمة منع فقدان البيانات.
 
-راجع [إدارة Office 365 نقاط النهاية](managing-office-365-endpoints.md) للحصول على التفاصيل.
+راجع [إدارة نقاط نهاية Office 365](managing-office-365-endpoints.md) للحصول على التفاصيل.
 
-توجد حاليا خمس Office 365 مختلفة. يأخذك هذا الجدول إلى قائمة نقاط النهاية لكل منها.
+هناك حاليا خمس سحب Office 365 مختلفة. ينقلك هذا الجدول إلى قائمة نقاط النهاية لكل منها.
 
-| نقاط النهاية | الوصف |
+| النهايه | الوصف |
 |:-------|:-----|
-| [نقاط النهاية في جميع أنحاء العالم](urls-and-ip-address-ranges.md) | نقاط النهاية لاشتراكات Office 365، التي تتضمن اشتراكات الولايات المتحدة سحابة القطاع الحكومي (سحابة القطاع الحكومي). |
-| [نقاط نهاية DoD الخاصة ب Government DoD في الولايات المتحدة](microsoft-365-u-s-government-dod-endpoints.md) | نقاط النهاية لاشتراكات وزارة الدفاع الأمريكية (DoD). |
-| [نقاط نهاية عالية سحابة القطاع الحكومي حكومية في الولايات المتحدة](microsoft-365-u-s-government-gcc-high-endpoints.md) | نقاط النهاية لاشتراكات الولايات المتحدة سحابة القطاع الحكومي العالية (سحابة القطاع الحكومي العالية). |
-| [Office 365 التي يتم تشغيلها بواسطة نقاط نهاية 21Vianet](urls-and-ip-address-ranges-21vianet.md) | يتم تشغيل نقاط النهاية Office 365 21Vianet، والتي تم تصميمها لتلبية احتياجات Office 365 في الصين. |
+| [نقاط النهاية في جميع أنحاء العالم](urls-and-ip-address-ranges.md) | نقاط النهاية لاشتراكات Office 365 في جميع أنحاء العالم، والتي تتضمن سحابة القطاع الحكومي الولايات المتحدة (سحابة القطاع الحكومي). |
+| [نقاط نهاية DoD لحكومة الولايات المتحدة](microsoft-365-u-s-government-dod-endpoints.md) | نقاط النهاية لاشتراكات وزارة الدفاع الأمريكية (DoD). |
+| [نقاط نهاية GCC High لحكومة الولايات المتحدة](microsoft-365-u-s-government-gcc-high-endpoints.md) | نقاط النهاية للولايات المتحدة سحابة القطاع الحكومي اشتراكات عالية (سحابة القطاع الحكومي عالية). |
+| [Office 365 المشغل بواسطة نقاط نهاية 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Office 365 تشغيل نقاط النهاية بواسطة 21Vianet، والتي تم تصميمها لتلبية احتياجات Office 365 في الصين. |
 |||
 
-لأتمتة الحصول على أحدث قائمة بنقاط النهاية لسحابة Office 365، راجع عنوان [IP Office 365 IP وخدمة URL على الويب](microsoft-365-ip-web-service.md).
+لأتمتة الحصول على أحدث قائمة بنقاط النهاية لسحابتك Office 365، راجع [عنوان IP Office 365 وخدمة ويب URL](microsoft-365-ip-web-service.md).
 
-للحصول على نقاط نهاية إضافية، راجع المقالات التالية:
+للحصول على نقاط نهاية إضافية، راجع هذه المقالات:
 
-- [نقاط النهاية الإضافية غير المضمنة في خدمة ويب](additional-office365-ip-addresses-and-urls.md)
+- [نقاط النهاية الإضافية غير مضمنة في خدمة ويب](additional-office365-ip-addresses-and-urls.md)
 - [طلبات الشبكة في Office 2016 for Mac](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-microsoft-365-networking"></a>مواضيع إضافية Microsoft 365 الشبكة
+## <a name="additional-topics-for-microsoft-365-networking"></a>مواضيع إضافية للشبكات Microsoft 365
 
-راجع هذه المقالات للحصول على مواضيع متخصصة في Microsoft 365 الشبكة:
+راجع هذه المقالات للمواضيع المتخصصة في Microsoft 365 الشبكات:
 
 - [شبكات تسليم المحتوى](content-delivery-networks.md)
-- [دعم IPv6 في Office 365 الخدمات](ipv6-support.md)
+- [دعم IPv6 في خدمات Office 365](ipv6-support.md)
 - [دعم NAT مع Office 365](nat-support-with-microsoft-365.md)
 
-## <a name="expressroute-for-microsoft-365"></a>ExpressRoute Microsoft 365
+## <a name="expressroute-for-microsoft-365"></a>ExpressRoute ل Microsoft 365
 
-راجع هذه المقالات للحصول على معلومات حول استخدام ExpressRoute Office 365 المرور:
+راجع هذه المقالات للحصول على معلومات حول استخدام ExpressRoute لنسبة استخدام الشبكة Office 365:
 
-- [Azure ExpressRoute Office 365](azure-expressroute.md)
+- [Azure ExpressRoute ل Office 365](azure-expressroute.md)
 - [تنفيذ ExpressRoute Office 365](implementing-expressroute.md)
-- [تخطيط الشبكة باستخدام ExpressRoute Office 365](network-planning-with-expressroute.md)
-- [التوجيه باستخدام ExpressRoute Office 365](routing-with-expressroute.md)
+- [تخطيط الشبكة باستخدام ExpressRoute لـ Office 365](network-planning-with-expressroute.md)
+- [التوجيه باستخدام ExpressRoute لـ Office 365](routing-with-expressroute.md)

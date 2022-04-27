@@ -2,8 +2,8 @@
 title: إعداد موصل إلى أرشفة بيانات ServiceNow 17a-4 DataParser في Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل ServiceNow DataParser 17a-4 واستخدامه لاستيراد بيانات ServiceNow وأرشفتها في Microsoft 365.
-ms.openlocfilehash: de899dff29f91002259701b79b3ae6119fa1df66
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 418fae03d57042f816c397bd08c6f2a0d753e57a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997549"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100908"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-servicenow"></a>إعداد موصل أرشفة البيانات من ServiceNow
 

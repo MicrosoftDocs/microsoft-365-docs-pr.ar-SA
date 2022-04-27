@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: يساعد Microsoft Purview Compliance Manager المؤسسات على تبسيط تقييمات المخاطر وأتمتتها، ويقترح الإجراءات الموصى بها للمساعدة في معالجة المخاطر.
-ms.openlocfilehash: 1d5f036b8bc97da431ed6e41017d59e01db749a4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: deb3c3755a8afbab0071b8f829da620676f926ff
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997087"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078232"
 ---
 # <a name="microsoft-purview-compliance-manager"></a>Microsoft Purview Compliance Manager
 
@@ -41,7 +41,7 @@ ms.locfileid: "64997087"
 شاهد الفيديو أدناه لمعرفة كيف يمكن أن يساعد Compliance Manager في تبسيط كيفية إدارة مؤسستك للامتثال:
 <br>
 <br>
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VdoO]
 
 يساعد Compliance Manager على تبسيط الامتثال وتقليل المخاطر من خلال توفير:
 

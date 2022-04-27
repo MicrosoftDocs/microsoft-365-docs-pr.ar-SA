@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 recommendations: false
 description: التعرف على شروط واستثناءات نهج dlp
-ms.openlocfilehash: f4a3521d0e5aab73cc16d97e0aea9c5830d9ddec
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: cd252002f2fcef3e3935dd44b1333e801bcba46d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762046"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090440"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>شروط نهج DLP والاستثناءات والإجراءات
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تحدد الشروط والاستثناءات في نهج DLP العناصر الحساسة التي يتم تطبيق النهج عليها. تحدد الإجراءات ما يحدث كنتيجة لاستيفاء شرط الاستثناء.
 
@@ -68,8 +70,8 @@ Set-PolicyConfig -SenderAddressLocation Envelope
 
 |شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Microsoft 365 PowerShell|نوع الخاصية|وصف|
 |---|---|---|---|
-|المرسل هو|الشرط: *من* <br/><br/> استثناء: *ExceptIfFrom*|عناوين|الرسائل التي يتم إرسالها بواسطة علب البريد المحددة أو مستخدمي البريد أو جهات اتصال البريد أو مجموعات Microsoft 365 المحددة في المؤسسة.|
-|المرسل عضو في |*FromMemberOf* <br/><br/> *ExceptIfFromMemberOf*|عناوين|الرسائل التي يتم إرسالها من قبل عضو في مجموعة التوزيع المحددة أو مجموعة الأمان الممكنة للبريد أو مجموعة Microsoft 365.|
+|المرسل هو|الشرط: *من* <br/><br/> استثناء: *ExceptIfFrom*|العناوين|الرسائل التي يتم إرسالها بواسطة علب البريد المحددة أو مستخدمي البريد أو جهات اتصال البريد أو مجموعات Microsoft 365 المحددة في المؤسسة.|
+|المرسل عضو في |*FromMemberOf* <br/><br/> *ExceptIfFromMemberOf*|العناوين|الرسائل التي يتم إرسالها من قبل عضو في مجموعة التوزيع المحددة أو مجموعة الأمان الممكنة للبريد أو مجموعة Microsoft 365.|
 |عنوان IP للمرسل هو|الشرط: *SenderIPRanges*<br/><br/> الاستثناء: *ExceptIfSenderIPRanges*|عناوين IPAddressRanges|الرسائل التي يتطابق فيها عنوان IP الخاص بالمرسل مع عنوان IP المحدد، أو يقع ضمن نطاق عنوان IP المحدد.|
 |يحتوي عنوان المرسل على كلمات|الشرط: *FromAddressContainsWords* <br/><br/> الاستثناء: *ExceptIfFromAddressContainsWords*|الكلمات|الرسائل التي تحتوي على الكلمات المحددة في عنوان البريد الإلكتروني للمرسل.|
 |يتطابق عنوان المرسل مع الأنماط|الشرط: *FromAddressMatchesPatterns* <br/><br/> الاستثناء: *ExceptFromAddressMatchesPatterns*|انماط|الرسائل التي يحتوي فيها عنوان البريد الإلكتروني للمرسل على أنماط نصية تتطابق مع التعبيرات العادية المحددة.|
@@ -82,11 +84,11 @@ Set-PolicyConfig -SenderAddressLocation Envelope
 
 |شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Microsoft 365 PowerShell|نوع الخاصية|وصف|
 |---|---|---|---|
-|المستلم هو|الشرط: *SentTo* <br/><br/> استثناء: *ExceptIfSentTo*|عناوين|الرسائل التي يكون فيها أحد المستلمين هو علبة البريد المحددة أو مستخدم البريد أو جهة اتصال البريد في المؤسسة. يمكن أن يكون المستلمون في الحقول **"إلى"** أو **"نسخة**" أو **"نسخة مخفية"** في الرسالة.|
+|المستلم هو|الشرط: *SentTo* <br/><br/> استثناء: *ExceptIfSentTo*|العناوين|الرسائل التي يكون فيها أحد المستلمين هو علبة البريد المحددة أو مستخدم البريد أو جهة اتصال البريد في المؤسسة. يمكن أن يكون المستلمون في الحقول **"إلى"** أو **"نسخة**" أو **"نسخة مخفية"** في الرسالة.|
 |مجال المستلم هو|الشرط: *RecipientDomainIs* <br/><br/> الاستثناء: *ExceptIfRecipientDomainIs*|Domainname|الرسائل التي يتطابق فيها مجال عنوان البريد الإلكتروني للمستلم مع القيمة المحددة.|
 |يحتوي عنوان المستلم على كلمات|الشرط: *AnyOfRecipientAddressContainsWords* <br/><br/> الاستثناء: *ExceptIfAnyOfRecipientAddressContainsWords*|الكلمات|الرسائل التي تحتوي على الكلمات المحددة في عنوان البريد الإلكتروني للمستلم. <br/><br/>**ملاحظة**: لا يأخذ هذا الشرط في الاعتبار الرسائل المرسلة إلى عناوين وكيل المستلم. وهو يتطابق فقط مع الرسائل التي يتم إرسالها إلى عنوان البريد الإلكتروني الأساسي للمستلم.|
 |يتطابق عنوان المستلم مع الأنماط|الشرط: *AnyOfRecipientAddressMatchesPatterns* <br/><br/> الاستثناء: *ExceptIfAnyOfRecipientAddressMatchesPatterns*|انماط|الرسائل التي يحتوي فيها عنوان البريد الإلكتروني للمستلم على أنماط نصية تتطابق مع التعبيرات العادية المحددة. <br/><br/> **ملاحظة**: لا يأخذ هذا الشرط في الاعتبار الرسائل المرسلة إلى عناوين وكيل المستلم. وهو يتطابق فقط مع الرسائل التي يتم إرسالها إلى عنوان البريد الإلكتروني الأساسي للمستلم.|
-|تم الإرسال إلى عضو في|الشرط: *SentToMemberOf* <br/><br/> الاستثناء: *ExceptIfSentToMemberOf*|عناوين|الرسائل التي تحتوي على مستلمين أعضاء في مجموعة التوزيع المحددة أو مجموعة الأمان الممكنة للبريد أو مجموعة Microsoft 365. يمكن أن تكون المجموعة في الحقول **"إلى"** أو **"نسخة**" أو **"نسخة مخفية"** في الرسالة.|
+|تم الإرسال إلى عضو في|الشرط: *SentToMemberOf* <br/><br/> الاستثناء: *ExceptIfSentToMemberOf*|العناوين|الرسائل التي تحتوي على مستلمين أعضاء في مجموعة التوزيع المحددة أو مجموعة الأمان الممكنة للبريد أو مجموعة Microsoft 365. يمكن أن تكون المجموعة في الحقول **"إلى"** أو **"نسخة**" أو **"نسخة مخفية"** في الرسالة.|
 |تتضمن الخصائص المحددة للمستلم أيا من هذه الكلمات |*RecipientADAttributeContainsWords* <br/><br/> *ExceptIfRecipientADAttributeContainsWords*|الخاصية الأولى: `ADAttribute` <br/><br/> الخاصية الثانية: `Words`|الرسائل التي تحتوي فيها سمة Active Directory المحددة لمستلم على أي من الكلمات المحددة. <br/><br/> لاحظ أن سمة **البلد** تتطلب قيمة رمز البلد المكون من حرفين (على سبيل المثال، DE ل ألمانيا).|
 |تتطابق الخصائص المحددة للمستلم مع أنماط النص هذه |*RecipientADAttributeMatchesPatterns* <br/><br/> *ExceptIfRecipientADAttributeMatchesPatterns*|الخاصية الأولى: `ADAttribute` <br/><br/> الخاصية الثانية: `Patterns`|الرسائل التي تحتوي فيها سمة Active Directory المحددة لمستلم على نقوش نصية تتطابق مع التعبيرات العادية المحددة.|
 
@@ -94,11 +96,12 @@ Set-PolicyConfig -SenderAddressLocation Envelope
 
 |شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Microsoft 365 PowerShell|نوع الخاصية|وصف|
 |---|---|---|---|
-|يحتوي الموضوع على كلمات أو عبارات|الشرط: *SubjectContainsWords* <br/><br/> الاستثناء: *ExceptIf SubjectContainsWords*|الكلمات|الرسائل التي تحتوي على الكلمات المحددة في الحقل "الموضوع".|
-|أنماط مطابقة الموضوع|الشرط: *SubjectMatchesPatterns* <br/><br/> الاستثناء: *ExceptIf SubjectMatchesPatterns*|انماط|الرسائل التي يحتوي فيها حقل الموضوع على نقوش نصية تتطابق مع التعبيرات العادية المحددة.|
-|يحتوي المحتوى على|الشرط: *ContentContainsSensitiveInformation* <br/><br/> استثناء *باستثناء ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|الرسائل أو المستندات التي تحتوي على معلومات حساسة كما هو محدد بواسطة نهج منع فقدان البيانات (DLP).|
-|نمط مطابقة الموضوع أو النص الأساسي|الشرط: *SubjectOrBodyMatchesPatterns* <br/><br/> الاستثناء: *ExceptIfSubjectOrBodyMatchesPatterns*|انماط|الرسائل التي يحتوي فيها حقل الموضوع أو النص الأساسي للرسالة على نقوش نصية تتطابق مع التعبيرات العادية المحددة.|
-|يحتوي الموضوع أو النص الأساسي على كلمات|الشرط: *SubjectOrBodyContainsWords* <br/><br/> الاستثناء: *ExceptIfSubjectOrBodyContainsWords*|الكلمات|الرسائل التي تحتوي على الكلمات المحددة في حقل الموضوع أو نص الرسالة|
+|يحتوي الموضوع على كلمات أو عبارات|الشرط: *SubjectContainsWords* <br/> الاستثناء: *ExceptIf SubjectContainsWords*|الكلمات|الرسائل التي تحتوي على الكلمات المحددة في الحقل "الموضوع".|
+|أنماط مطابقة الموضوع|الشرط: *SubjectMatchesPatterns* <br/> الاستثناء: *ExceptIf SubjectMatchesPatterns*|انماط|الرسائل التي يحتوي فيها حقل الموضوع على نقوش نصية تتطابق مع التعبيرات العادية المحددة.|
+|يحتوي المحتوى على|الشرط: *ContentContainsSensitiveInformation* <br/> استثناء *باستثناء ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|الرسائل أو المستندات التي تحتوي على معلومات حساسة كما هو محدد بواسطة نهج منع فقدان البيانات (DLP) من Microsoft Purview.|
+|نمط مطابقة الموضوع أو النص الأساسي|الشرط: *SubjectOrBodyMatchesPatterns* <br/> الاستثناء: *ExceptIfSubjectOrBodyMatchesPatterns*|انماط|الرسائل التي يحتوي فيها حقل الموضوع أو النص الأساسي للرسالة على نقوش نصية تتطابق مع التعبيرات العادية المحددة.|
+|يحتوي الموضوع أو النص الأساسي على كلمات|الشرط: *SubjectOrBodyContainsWords* <br/> الاستثناء: *ExceptIfSubjectOrBodyContainsWords*|الكلمات|الرسائل التي تحتوي على الكلمات المحددة في حقل الموضوع أو نص الرسالة|
+|
 
 ### <a name="attachments"></a>المرفقات
 
@@ -140,14 +143,13 @@ Set-PolicyConfig -SenderAddressLocation Envelope
 |---|---|---|---|
 |تعيين رأس الصفحة|تعيين رأس الصفحة|الخاصية الأولى: *اسم الرأس* <br/><br/> الخاصية الثانية: *قيمة الرأس*|تحدد المعلمة SetHeader إجراء لقاعدة DLP التي تضيف أو تعدل حقل رأس وقيمة في رأس الرسالة. تستخدم هذه المعلمة بناء الجملة "HeaderName:HeaderValue". يمكنك تحديد أسماء رؤوس متعددة وأزواج قيم مفصولة بفواصل|
 |إزالة الرأس|إزالة رأس الصفحة|الخاصية الأولى: *MessageHeaderField*<br/><br/> الخاصية الثانية: *سلسلة*|تحدد المعلمة RemoveHeader إجراء لقاعدة DLP التي تزيل حقل رأس من رأس الرسالة. تستخدم هذه المعلمة بناء الجملة "HeaderName" أو "HeaderName:HeaderValue". يمكنك تحديد أسماء رؤوس متعددة أو أسماء رؤوس وأزواج قيم مفصولة بفواصل|
-|إعادة توجيه الرسالة إلى مستخدمين محددين|*RedirectMessageTo*|عناوين|إعادة توجيه الرسالة إلى المستلمين المحددين. لا يتم تسليم الرسالة إلى المستلمين الأصليين، ولا يتم إرسال أي إعلام إلى المرسل أو المستلمين الأصليين.|
+|إعادة توجيه الرسالة إلى مستخدمين محددين|*RedirectMessageTo*|العناوين|إعادة توجيه الرسالة إلى المستلمين المحددين. لا يتم تسليم الرسالة إلى المستلمين الأصليين، ولا يتم إرسال أي إعلام إلى المرسل أو المستلمين الأصليين.|
 |إعادة توجيه الرسالة للموافقة على مدير المرسل|معتدله|الخاصية الأولى: *ModerateMessageByManager*<br/><br/> الخاصية الثانية: *منطقية*|تحدد المعلمة Moderate إجراء لقاعدة DLP التي ترسل رسالة البريد الإلكتروني إلى مشرف. تستخدم هذه المعلمة بناء الجملة: @{ModerateMessageByManager = <$true \|$false>;|
 |إعادة توجيه الرسالة للموافقة على موافقين محددين|معتدله|الخاصية الأولى: *ModerateMessageByUser*<br/><br/>الخاصية الثانية: *العناوين*|تحدد المعلمة Moderate إجراء لقاعدة DLP التي ترسل رسالة البريد الإلكتروني إلى مشرف. تستخدم هذه المعلمة بناء الجملة: @{ ModerateMessageByUser = @("emailaddress1","emailaddress2",..."emailaddressN")}|
 |إضافة مستلم|AddRecipients|الخاصية الأولى: *الحقل*<br/><br/>الخاصية الثانية: *العناوين*|إضافة مستلم واحد أو أكثر إلى الحقل "إلى/نسخة/نسخة مخفية" من الرسالة. تستخدم هذه المعلمة بناء الجملة: @{<AddToRecipients \<CopyTo \| BlindCopyTo\> = "emailaddress"}|
 |إضافة مدير المرسل كمستلم|AddRecipients|الخاصية الأولى: *AddedManagerAction*<br/><br/>الخاصية الثانية: *الحقل*|إضافة مدير المرسل إلى الرسالة كنوع المستلم المحدد (إلى، نسخة، نسخة مخفية)، أو إعادة توجيه الرسالة إلى مدير المرسل دون إعلام المرسل أو المستلم. يعمل هذا الإجراء فقط إذا تم تعريف سمة إدارة المرسل في Active Directory. تستخدم هذه المعلمة بناء الجملة: @{AddManagerAsRecipientType = "\<To \| Cc \| Bcc\>"}|
 موضوع مسبق|PrependSubject|سلسلة|إضافة النص المحدد إلى بداية حقل الموضوع للرسالة. ضع في اعتبارك استخدام مسافة أو نقطتين (:) كحرف أخير من النص المحدد لتمييزه عن نص الموضوع الأصلي.<br/><br/>لمنع إضافة السلسلة نفسها إلى الرسائل التي تحتوي بالفعل على النص في الموضوع (على سبيل المثال، الردود)، أضف الاستثناء "يحتوي الموضوع على كلمات" (ExceptIfSubjectContainsWords) إلى القاعدة.|
 |تطبيق إخلاء مسؤولية HTML|ApplyHtmlDisclaimer|الخاصية الأولى: *نص*<br/><br/>الخاصية الثانية: *الموقع*<br/><br/>الخاصية الثالثة: *إجراء احتياطي*|تطبيق إخلاء مسؤولية HTML المحدد على الموقع المطلوب للرسالة.<br/><br/>تستخدم هذه المعلمة بناء الجملة: @{ Text = " " ; الموقع = \<Append \| Prepend\>; FallbackAction = \<Wrap \| Ignore \| Reject\> }|
-|إزالة تشفير الرسائل وحماية الحقوق Office 365|RemoveRMSTemplate|n/a|إزالة تشفير Office 365 المطبقة على رسالة بريد إلكتروني|
+|إزالة تشفير الرسائل وحماية الحقوق|RemoveRMSTemplate|n/a|إزالة تشفير الرسائل المطبقة على رسالة بريد إلكتروني|
 |تسليم الرسالة إلى العزل المستضاف |*العزل*|n/a| هذا الإجراء قيد **المعاينة العامة** حاليا. أثناء هذه المرحلة، ستظهر رسائل البريد الإلكتروني المعزولة بواسطة نهج DLP نوع النهج ك ExchangeTransportRule.<br/><br/> تسليم الرسالة إلى العزل في EOP. لمزيد من المعلومات، راجع [رسائل البريد الإلكتروني المعزولة في EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
-
-<!--|Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: <br/><br/>- **Replace** all matches in the subject with the replacement text <br/><br/>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. <br/><br/>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject. See ModifySubject parameter in, /powershell/module/exchange/new-dlpcompliancerule|-->
+|تعديل الموضوع|ModifySubject|PswsHashTable | إزالة نص من سطر الموضوع يطابق نمطا معينا واستبداله بنص مختلف. راجع المثال أدناه. يمكنك: <br/><br/>- **استبدال** كافة التطابقات في الموضوع بالنص البديل <br/><br/>- **إلحاق** لإزالة كافة التطابقات في الموضوع وإدراج النص البديل في نهاية الموضوع. <br/><br/>- **قبل** إزالة كافة التطابقات وإدراج النص البديل في بداية الموضوع. راجع معلمة ModifySubject في، /powershell/module/exchange/new-dlpcompliancerule|

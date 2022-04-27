@@ -2,8 +2,8 @@
 title: ضمان الخدمة في مركز توافق & الأمان
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: قم بتنزيل عمليات تدقيق الجهات الخارجية، واكتشف كيف تحافظ Microsoft على أمان بيانات العملاء، وتعرف على كيفية التوافق مع ISO وHIAA وFINRA و FedRAMP عند استخدام Office 365.
-ms.openlocfilehash: fb9fcf5f7a5b954c26f93fa55ed5135b5a31aa9e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8247eee98d9c039e05aca2b621881f56b59c2ee5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64991831"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077835"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>ضمان الخدمة في مركز توافق & الأمان
 

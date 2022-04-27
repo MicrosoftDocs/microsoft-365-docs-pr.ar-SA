@@ -16,12 +16,12 @@ ms.collection:
 description: يمكن للمسؤولين معرفة كيفية تكوين الكتل في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ea87a29d93c43b89bcfb482d185bd4b397dcc5b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 60038a2b82ea452ed921d16042cb81d4f0e023a9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862445"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100644"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>إضافة كتل في قائمة السماح/الحظر للمستأجر
 
@@ -29,7 +29,7 @@ ms.locfileid: "64862445"
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender لـ Office 365 الخطة 1 والخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## <a name="use-the-microsoft-365-defender-portal"></a>استخدام مدخل Microsoft 365 Defender 
@@ -115,9 +115,11 @@ ms.locfileid: "64862445"
    - **نوع الانتحال**: حدد إحدى القيم التالية:
      - **داخلي**: المرسل المخادع موجود في مجال ينتمي إلى مؤسستك ( [مجال مقبول](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
      - **خارجي**: المرسل المخادع موجود في مجال خارجي.
-   - **الإجراء**: حدد **السماح** أو **الحظر**.
+   - **الإجراء**: حدد **كتلة**.
 
 4. عند الانتهاء، انقر فوق **"إضافة**".
+> [!NOTE]
+> سيتم حظر رسائل البريد الإلكتروني الواردة من هؤلاء المرسلين على أنها *تصيد احتيالي*. 
 
 ## <a name="use-powershell"></a>استخدام PowerShell
 

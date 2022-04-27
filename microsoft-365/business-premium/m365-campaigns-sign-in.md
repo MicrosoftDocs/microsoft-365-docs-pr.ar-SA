@@ -1,14 +1,14 @@
 ---
-title: سجل الدخول إلى Microsoft 365
+title: تسجيل الدخول إلى Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: v-kcirillo
+author: cirilk
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -22,32 +22,43 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: سجل الدخول إلى Microsoft 365. حماية أعمالك أو ممارساتك أو حملتك من تهديدات الأمان الإلكتروني إلى البريد الإلكتروني والبيانات والتواصل.
-ms.openlocfilehash: da371abd17906ea53242c8679cf1d3c4f9b69861
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: سجل الدخول إلى Microsoft 365. قم بحماية عملك أو تدريبك أو حملتك من تهديدات الأمان عبر الإنترنت للبريد الإلكتروني والبيانات والاتصالات.
+ms.openlocfilehash: 4203abe638c15978ac4acd753fdeb6a83ba5920d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634042"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099840"
 ---
-# <a name="sign-in-to-microsoft-365-business-premium"></a>سجل الدخول إلى Microsoft 365 Business Premium
+# <a name="sign-in-to-microsoft-365-business-premium"></a>تسجيل الدخول إلى Microsoft 365 Business Premium
 
-## <a name="for-business-or-campaign-admins"></a>لمسؤولي الأعمال أو الحملات
+## <a name="for-business-or-campaign-admins"></a>لمسؤولي الأعمال أو الحملة
 
-إذا قمت Microsoft 365، أنت المسؤول Microsoft 365. فيما يلي كيفية تسجيل الدخول:
+إذا قمت بالتسجيل للحصول على Microsoft 365 للحملات (أو Microsoft 365 Business Premium)، فأنت مسؤول Microsoft 365 (يشار إليه أيضا باسم المسؤول العام). فيما يلي كيفية تسجيل الدخول:
 
-1. ابحث عن اسم المستخدم وكلمة المرور التي أرسلناها إلى عنوان البريد الإلكتروني الذي منحتنا إياه في الخطوة 2 من [خطوات التسجيل](m365-campaigns-sign-up.md#steps-to-sign-up).
+1. ابحث عن اسم المستخدم وكلمة المرور التي أرسلناها إلى عنوان البريد الإلكتروني الذي استخدمته عند [التسجيل للحصول على Microsoft 365 للحملات](m365-campaigns-sign-up.md).
 
 2. في المستعرض، انتقل إلى مركز مسؤولي Microsoft 365 في <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
 3. اكتب اسم المستخدم وكلمة المرور. حدد **تسجيل الدخول**.
 
-4. في الجزء العلوي الأيمن من الصفحة، ابحث عن **عنصر التحكم Preview عند** التحكم. حدد **معاينة حتى** تتمكن من استخدام كل عناصر التحكم الموضحة في [الحماية من النتوء لحملتك](m365-campaigns-security-overview.md).
+4. في الجزء العلوي الأيسر من الصفحة، ابحث عن **المعاينة على** عنصر التحكم. حدد **"معاينة** " حتى تتمكن من استخدام جميع عناصر التحكم الموضحة في [الحماية من المخاطر لحملتك](m365-campaigns-security-overview.md).
 
 ## <a name="for-staff"></a>للموظفين
 
-إعداد فريق العمل كما هو موضح في [إضافة مستخدمين](../admin/add-users/add-users.md?toc=%2fmicrosoft-365%2fcampaigns%2ftoc.json)
+يمكن للمستخدمين الذين تمت إضافتهم إلى اشتراكك في Microsoft 365 for Campaigns (أو Microsoft 365 Business Premium) تسجيل الدخول باتباع الخطوات التالية:
 
-يمكنك أيضا إعادة تعيين كلمات المرور وإعادة إرسالها على **الصفحة إضافة** مستخدمين.
+1. الانتقال إل <a href="https://office.com" target="_blank">https://Office.com</a>
 
-يمكن لجميع الموظفين تسجيل الدخول في <a href="https://office.com" target="_blank">https://Office.com</a>.
+2. سجل الدخول باستخدام اسم المستخدم وكلمة المرور للحساب. سيكون لدى المستخدمين هذه المعلومات في البريد الإلكتروني الذي يجب أن يتلقوه عند إضافتهم كمستخدمين. إذا لم يتمكنوا من العثور على البريد الإلكتروني، فراجع [أنني شاركت دعوة بالبريد الإلكتروني ولكن المستخدم لم يتلق البريد الإلكتروني](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
+
+> [!TIP]
+> امنح فريق العمل ارتباطا إلى [دليل الإعداد السريع للموظف](../admin/setup/employee-quick-setup.md). يرشدهم الدليل عبر تسجيل الدخول والحصول على تطبيقات Office وحفظ الملفات ونسخها ومشاركتها.
+
+## <a name="next-steps"></a>الخطوات التالية
+
+1. [تخصيص صفحة تسجيل الدخول باستخدام إشعار الخصوصية والموافقة](m365-customize-sign-in.md)
+
+2. [استخدام العملية الإرشادية للإعداد الأساسي](m365bp-setup.md#use-the-guided-process-for-basic-setup)
+
+3. [إعداد قدرات الأمان الخاصة بك](m365bp-security-overview.md).

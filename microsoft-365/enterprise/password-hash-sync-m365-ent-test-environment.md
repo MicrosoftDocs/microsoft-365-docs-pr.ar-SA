@@ -1,10 +1,10 @@
 ---
-title: مزامنة كلمة المرور لبيئة اختبار Microsoft 365 المرور
+title: مزامنة تجزئة كلمة المرور لبيئة اختبار Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 05/26/2020
 audience: ITPro
 ms.topic: article
@@ -18,75 +18,75 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: 'ملخص: تكوين مزامنة كلمة المرور وشرحها و تسجيل الدخول لبيئة Microsoft 365 الاختبار.'
-ms.openlocfilehash: 746a0e1112df6ebf99569bfed58d08d0a4519d7a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 'ملخص: تكوين وشرح مزامنة تجزئة كلمة المرور وتسجيل الدخول لبيئة اختبار Microsoft 365.'
+ms.openlocfilehash: 91d4de08382149b5089f0c06295e77965ea022cf
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63566491"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093800"
 ---
-# <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>مزامنة كلمة المرور لبيئة اختبار Microsoft 365 المرور
+# <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>مزامنة تجزئة كلمة المرور لبيئة اختبار Microsoft 365
 
-*يمكن استخدام دليل Test Lab هذا Microsoft 365 لبيئات الاختبار Office 365 Enterprise المؤسسة.*
+*يمكن استخدام دليل مختبر الاختبار هذا لكل من Microsoft 365 لبيئات اختبار المؤسسة Office 365 Enterprise.*
 
-تستخدم العديد من المؤسسات مزامنة Azure AD الاتصال وكلمة المرور لمزامنة مجموعة الحسابات في غابة خدمات مجال Active Directory (AD DS) المحلية إلى مجموعة الحسابات في مستأجر Azure AD لاشتراك Microsoft 365. 
+تستخدم العديد من المؤسسات الاتصال Azure AD ومزامنة تجزئة كلمة المرور لمزامنة مجموعة الحسابات في مجموعة خدمات المجال Active Directory محلي (AD DS) إلى مجموعة الحسابات في مستأجر Azure AD لاشتراكها Microsoft 365. 
 
-تصف هذه المقالة كيفية إضافة مزامنة كلمة المرور إلى Microsoft 365 الاختبار، مما يؤدي إلى هذا التكوين:
+تصف هذه المقالة كيف يمكنك إضافة مزامنة تجزئة كلمة المرور إلى بيئة الاختبار Microsoft 365، ما يؤدي إلى هذا التكوين:
   
-![المؤسسة التي تم محاكاتها مع بيئة اختبار مزامنة كلمة المرور.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![المؤسسة المحاكاة مع بيئة اختبار مزامنة تجزئة كلمة المرور.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
 يتضمن إعداد بيئة الاختبار هذه ثلاث مراحل:
-- [المرحلة 1: إنشاء Microsoft 365 اختبار المؤسسة التي تم محاكاتها](#phase-1-create-the-microsoft-365-simulated-enterprise-test-environment)
+- [المرحلة 1: إنشاء بيئة اختبار المؤسسة المحاكاة Microsoft 365](#phase-1-create-the-microsoft-365-simulated-enterprise-test-environment)
 - [المرحلة الثانية: إنشاء مجال testlab وتسجيله](#phase-2-create-and-register-the-testlab-domain)
-- [المرحلة 3: تثبيت Azure AD الاتصال APP1](#phase-3-install-azure-ad-connect-on-app1)
+- [المرحلة 3: تثبيت الاتصال Azure AD على APP1](#phase-3-install-azure-ad-connect-on-app1)
     
 > [!TIP]
-> للحصول على خريطة مرئية لكل المقالات في Microsoft 365 دليل اختبار المؤسسة، انتقل إلى Microsoft 365 [دليل اختبار المؤسسة](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> للحصول على خريطة مرئية لجميع المقالات في Microsoft 365 لمكدس دليل مختبر اختبار المؤسسة، انتقل إلى [Microsoft 365 لمكدس دليل مختبر اختبار المؤسسة](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
-## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>المرحلة 1: إنشاء Microsoft 365 اختبار المؤسسة التي تم محاكاتها
+## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>المرحلة 1: إنشاء بيئة اختبار المؤسسة المحاكاة Microsoft 365
 
-اتبع الإرشادات الموجودة في [تكوين قاعدة المؤسسة المحاكاة Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). يبدو التكوين الناتج كما يلي:
+اتبع الإرشادات في [تكوين قاعدة المؤسسة المحاكاة Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). يبدو التكوين الناتج كما يلي:
   
-![تكوين قاعدة المؤسسة الذي تم محاكاته.](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
+![تكوين قاعدة المؤسسة المحاكاة.](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
 يتكون هذا التكوين من:
   
-- اشتراك Microsoft 365 E5 تجريبي أو مدفوع.
-- إنترانت مؤسسة مبسطة متصلة بالإنترنت، تتكون من أجهزة DC1 و APP1 و CLIENT1 الظاهرية في شبكة Azure الظاهرية. DC1 هي وحدة تحكم مجال ل testlab.<اسم *مجالك* العام> AD DS.
+- اشتراك تجريبي أو مدفوع Microsoft 365 E5.
+- إنترانت مؤسسة مبسطة متصلة بالإنترنت، تتكون من أجهزة DC1 وAPP1 و CLIENT1 الظاهرية في شبكة Azure الظاهرية. DC1 هي وحدة تحكم بالمجال ل testlab.<*اسم مجالك العام*> مجال AD DS.
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>المرحلة الثانية: إنشاء مجال testlab وتسجيله
 
-في هذه المرحلة، أضف مجال DNS عام، ثم أضفه إلى اشتراكك.
+في هذه المرحلة، أضف مجال DNS عاما، ثم أضفه إلى اشتراكك.
 
-أولا، اعمل مع موفر تسجيل DNS العام لإنشاء اسم مجال DNS عام جديد يستند إلى اسم مجالك الحالي، ثم قم بإضافته إلى اشتراكك. نوصي باستخدام **testlab.<*مجالك العام*>**. على سبيل المثال، إذا كان اسم مجالك العام **<span>contoso.com</span>**، أضف اسم المجال العام: **<span>testlab.contoso.com</span>**.
+أولا، العمل مع موفر تسجيل DNS العام لإنشاء اسم مجال DNS عام جديد يستند إلى اسم مجالك الحالي، ثم إضافته إلى اشتراكك. نوصي باستخدام **اسم testlab.<*مجالك*> العام**. على سبيل المثال، إذا كان اسم مجالك العام **<span>contoso.com</span>**، أضف اسم المجال العام: **<span>testlab.contoso.com</span>**.
   
-بعد ذلك، أضف **testlab.<*مجالك*>** العام إلى Microsoft 365 التجريبي أو المدفوع من خلال إجراء عملية تسجيل المجال. يتكون ذلك من إضافة سجلات DNS إضافية إلى **testlab.<*مجالك*>** العام. لمزيد من المعلومات، راجع [إضافة مجال Microsoft 365](../admin/setup/add-domain.md).
+بعد ذلك، أضف **testlab.<مجال *مجالك*> العام** إلى اشتراكك التجريبي أو المدفوع Microsoft 365 من خلال الانتقال إلى عملية تسجيل المجال. يتكون هذا من إضافة سجلات DNS إضافية إلى **testlab.<*مجالك*> العام**. لمزيد من المعلومات، راجع [إضافة مجال إلى Microsoft 365](../admin/setup/add-domain.md).
 
 يبدو التكوين الناتج كما يلي:
   
-![تسجيل اسم مجال testlab.](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+![تسجيل اسم مجال testlab الخاص بك.](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
 يتكون هذا التكوين من:
 
-- يتم Microsoft 365 E5 تجريبي أو مدفوع باستخدام اختبار مجال DNS.<اسم مجالك العام> تسجيله.
-- إنترانت مؤسسة مبسطة متصلة بالإنترنت، تتكون من أجهزة DC1 و APP1 و CLIENT1 الظاهرية على شبكة فرعية لشبكة Azure الظاهرية.
+- > تسجيل اشتراك تجريبي أو مدفوع Microsoft 365 E5 مع اختبار مجال DNS.<*اسم مجالك العام*.
+- إنترانت مؤسسة مبسطة متصلة بالإنترنت، تتكون من أجهزة DC1 وAPP1 و CLIENT1 الظاهرية على شبكة فرعية لشبكة Azure الظاهرية.
 
-لاحظ كيف أن testlab.<*اسم مجالك* العام> الآن:
+لاحظ كيف أصبح testlab.<*اسم مجالك العام*> الآن:
 
-- معتمدة بواسطة سجلات DNS العامة.
-- مسجل في Microsoft 365 اشتراكاتك.
+- معتمدة من سجلات DNS العامة.
+- مسجل في اشتراكاتك Microsoft 365.
 - مجال AD DS على إنترانت المحاكاة.
      
-## <a name="phase-3-install-azure-ad-connect-on-app1"></a>المرحلة 3: تثبيت Azure AD الاتصال APP1
+## <a name="phase-3-install-azure-ad-connect-on-app1"></a>المرحلة 3: تثبيت الاتصال Azure AD على APP1
 
-في هذه المرحلة، قم بتثبيت أداة Azure AD الاتصال على APP1 وتكوينها، ثم تحقق من عملها.
+في هذه المرحلة، قم بتثبيت أداة الاتصال Azure AD وتكوينها على APP1، ثم تحقق من أنها تعمل.
   
-أولا، قم بتثبيت Azure AD وتكوينه الاتصال APP1.
+أولا، قم بتثبيت وتكوين الاتصال Azure AD على APP1.
 
-1. من مدخل [Azure،](https://portal.azure.com) سجل الدخول باستخدام حساب المسؤول العام، ثم اتصل ب APP1 باستخدام حساب TESTLABUser1\\.
+1. من [مدخل Microsoft Azure](https://portal.azure.com)، سجل الدخول باستخدام حساب المسؤول العام، ثم اتصل ب APP1 باستخدام حساب TESTLABUser1\\.
     
-2. من سطح المكتب ل APP1، افتح موجه أوامر على مستوى المسؤول Windows PowerShell، ثم قم بتشغيل هذه الأوامر لتعطيل الأمان المحسن ل Internet Explorer:
+2. من سطح المكتب APP1، افتح موجه أوامر Windows PowerShell على مستوى المسؤول، ثم قم بتشغيل هذه الأوامر لتعطيل أمان Internet Explorer المحسن:
     
    ```powershell
    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
@@ -94,60 +94,60 @@ ms.locfileid: "63566491"
    Stop-Process -Name Explorer -Force
    ```
 
-3. من شريط المهام، حدد **Internet Explorer** واذهب إلى [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
+3. من شريط المهام، حدد **Internet Explorer** وانتقل إلى [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
     
-4. في صفحة Microsoft Azure Active Directory الاتصال، حدد **تنزيل**، ثم حدد **تشغيل**.
+4. في صفحة Microsoft Azure Active Directory الاتصال، حدد **"تنزيل"**، ثم حدد **"تشغيل**".
     
-5. في صفحة **مرحبا بك في Azure AD الاتصال**، حدد **أوافق**، ثم حدد **متابعة**.
+5. في صفحة **"Welcome to Azure AD الاتصال**"، حدد **"أوافق**"، ثم حدد **"Continue**".
     
-6. في صفحة **Express الإعدادات**، حدد **استخدام الإعدادات المعبرة**.
+6. في صفحة **express الإعدادات**، حدد **"Use express settings**".
     
-7. على الصفحة **الاتصال Azure AD**، أدخل اسم حساب المسؤول العام في اسم المستخدم، وأدخل  كلمة المرور الخاصة به في كلمة المرور، ثم حدد **التالي**.
+7. في **الاتصال إلى صفحة Azure AD**، أدخل اسم حساب المسؤول العام في **اسم المستخدم،** وأدخل كلمة المرور الخاصة به في **كلمة المرور**، ثم حدد **"التالي**".
     
-8. في الصفحة **الاتصال AD DS**، أدخل **TESTLABUser1\\** في اسم المستخدم، وأدخل  كلمة المرور الخاصة به في كلمة المرور، ثم حدد **التالي**.
+8. في صفحة **الاتصال إلى AD DS**، أدخل **TESTLABUser1\\** في **اسم المستخدم،** وأدخل كلمة المرور الخاصة به في **كلمة المرور**، ثم حدد **"التالي**".
     
-9. في الصفحة **جاهز لتكوين** ، حدد **تثبيت**.
+9. في الصفحة **"جاهز للتكوين"** ، حدد **"تثبيت**".
     
-10. في الصفحة **اكتمال التكوين** ، حدد **إنهاء**.
+10. في صفحة **"Configuration complete** "، حدد **"Exit**".
     
 11. في Internet Explorer، انتقل إلى مركز مسؤولي Microsoft 365 ([https://portal.microsoft.com](https://portal.microsoft.com)).
     
-12. في جزء التنقل الأيسر، حدد **المستخدمون > المستخدمون النشطون**.
+12. في جزء التنقل الأيمن، حدد **"المستخدمون > المستخدمون النشطون**".
     
-    لاحظ الحساب المسمى **User1**. هذا الحساب من مجال TESTLAB AD DS وهو دليل على عمل مزامنة الدليل.
+    لاحظ الحساب المسمى **User1**. هذا الحساب من مجال TESTLAB AD DS وهو دليل على أن مزامنة الدليل قد عملت.
     
 13. حدد حساب **User1** ، ثم حدد **التراخيص والتطبيقات**.
     
-14. في **تراخيص المنتجات**، حدد موقعك (إذا لزم الأمر)، **Office 365 E5** ترخيص المنتج، ثم **قم بتمكين** Microsoft 365 E5 الترخيص. 
+14. في **تراخيص المنتجات**، حدد موقعك (إذا لزم الأمر)، وقم بتعطيل ترخيص **Office 365 E5**، ثم قم بتمكين ترخيص **Microsoft 365 E5**. 
 
-15. حدد **حفظ** في أسفل الصفحة، ثم حدد **إغلاق**.
+15. حدد **"حفظ** " في أسفل الصفحة، ثم حدد **"إغلاق**".
     
-بعد ذلك، اختبر إمكانية تسجيل الدخول إلى اشتراكك باستخدام user1@testlab **.<>** اسم مجالك اسم المستخدم لحساب User1:
+بعد ذلك، اختبر القدرة على تسجيل الدخول إلى اشتراكك باستخدام **user1@testlab.<اسم مستخدم *اسم*> المجال** لحساب User1:
 
-1. من APP1، سجل الخروج، ثم سجل الدخول مرة أخرى، هذه المرة حدد حسابا مختلفا.
+1. من APP1، سجل الخروج، ثم سجل الدخول مرة أخرى، هذه المرة مع تحديد حساب مختلف.
 
-2. عند مطالبتك باسم مستخدم وكلمة مرور، حدد user1@testlab **.<*اسم*>** المجال وكلمة مرور User1. يجب أن تقوم بنجاح تسجيل الدخول كمستخدم1.
+2. عند مطالبتك باسم مستخدم وكلمة مرور، حدد **user1@testlab.<*اسم*> مجالك** وكلمة مرور User1. يجب تسجيل الدخول بنجاح كمستخدم1.
  
-لاحظ أنه على الرغم من أن User1 لديه أذونات مسؤول المجال لمجال TESTLAB AD DS، إلا أنه ليس مسؤولا عاما. وبالتالي، لن ترى أيقونة **المسؤول** كخيار. 
+لاحظ أنه على الرغم من أن User1 لديه أذونات مسؤول المجال لمجال TESTLAB AD DS، إلا أنه ليس مسؤولا عاما. لذلك، لن ترى أيقونة **المسؤول** كخيار. 
 
 يبدو التكوين الناتج كما يلي:
 
-![المؤسسة التي تم محاكاتها مع بيئة اختبار مزامنة كلمة المرور.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![المؤسسة المحاكاة مع بيئة اختبار مزامنة تجزئة كلمة المرور.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
 يتكون هذا التكوين من: 
   
-- Microsoft 365 E5 أو Office 365 E5 اشتراكات تجريبية أو مدفوعة باستخدام مجال DNS TESTLAB.<*اسم* مجالك> مسجل.
-- إنترانت مؤسسة مبسطة متصلة بالإنترنت، تتكون من أجهزة DC1 و APP1 و CLIENT1 الظاهرية على شبكة فرعية لشبكة Azure الظاهرية. يتم تشغيل الاتصال Azure AD على APP1 لمزامنة مجال TESTLAB AD DS بشكل دوري مع مستأجر Azure AD لاشتراكك Microsoft 365.
-- تم مزامنة حساب User1 في مجال TESTLAB AD DS مع مستأجر Azure AD.
+- Microsoft 365 E5 أو Office 365 E5 الاشتراكات التجريبية أو المدفوعة مع مجال DNS TESTLAB.<*> تسجيل اسم مجالك*.
+- إنترانت مؤسسة مبسطة متصلة بالإنترنت، تتكون من أجهزة DC1 وAPP1 و CLIENT1 الظاهرية على شبكة فرعية لشبكة Azure الظاهرية. يتم تشغيل الاتصال Azure AD على APP1 لمزامنة مجال TESTLAB AD DS بشكل دوري مع مستأجر Azure AD لاشتراكك في Microsoft 365.
+- تمت مزامنة حساب User1 في مجال TESTLAB AD DS مع مستأجر Azure AD.
 
 ## <a name="next-step"></a>الخطوة التالية
 
-استكشف [ميزات الهوية الإضافية](m365-enterprise-test-lab-guides.md#identity) وإمكانياتها في بيئة الاختبار.
+استكشف ميزات [وإمكانات الهوية](m365-enterprise-test-lab-guides.md#identity) الإضافية في بيئة الاختبار الخاصة بك.
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[Microsoft 365 دليل اختبار المؤسسة](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 لدلائل مختبر اختبار المؤسسة](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 نظرة عامة حول المؤسسة](microsoft-365-overview.md)
+[نظرة عامة حول Microsoft 365 للمؤسسات](microsoft-365-overview.md)
 
-[Microsoft 365 وثائق المؤسسة](/microsoft-365-enterprise/)
+[موارد ووثائق Microsoft 365 للمؤسسات](/microsoft-365-enterprise/)

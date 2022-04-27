@@ -2,8 +2,8 @@
 title: العمل على معالجة الأخطاء في eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: نظرة عامة حول معالجة أشكال مختلفة من البيانات في eDiscovery (Premium).
-ms.openlocfilehash: e55d4c3554015adf1135086f23db6566d4bf132d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cefacd8fc4039e820a4fa899eb16f3cefdb22a87
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998959"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090884"
 ---
 # <a name="work-with-processing-errors-in-ediscovery-premium"></a>العمل على معالجة الأخطاء في eDiscovery (Premium)
 

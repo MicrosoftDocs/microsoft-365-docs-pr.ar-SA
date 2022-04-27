@@ -20,14 +20,6 @@
           href: uploadApplication.md
     - name: إنشاء حزمة
       href: buildpackage.md
-    - name: تحميل الثنائيات والتبعيات
-      href: binaries.md
-    - name: تعيين مهام الاختبار
-      href: testtask.md
-    - name: تعيين خيارات الاختبار
-      href: testoptions.md
-    - name: مراجعة
-      href: review.md
     - name: إرشادات الحزمة
       href: contentguideline.md
     - name: قواعد التطبيق/الاختبار

@@ -2,8 +2,8 @@
 title: إعداد موصل لاستيراد بيانات البادئة الفعلية
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: يمكن للمسؤولين إعداد موصل بيانات لاستيراد البيانات من نظام الريش الفعلي لمؤسستهم إلى Microsoft 365. يتيح لك هذا استخدام هذه البيانات في نهج إدارة المخاطر الداخلية لمساعدتك على اكتشاف الوصول إلى المباني المادية الخاصة بك من قبل مستخدمين محددين قد يشير إلى تهديد داخلي محتمل لمؤسستك.
-ms.openlocfilehash: a55874b9f920919c16a094d32c4edcde394600d4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 96017d6477f914c799fecbe834abdac22917bfaa
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994865"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077968"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>إعداد موصل لاستيراد بيانات البادئة الفعلية (معاينة)
 

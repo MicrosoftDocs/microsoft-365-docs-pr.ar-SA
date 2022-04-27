@@ -2,8 +2,8 @@
 title: زيادة الحصة النسبية للعناصر القابلة للاسترداد لعلب البريد في الانتظار
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: قم بتمكين علبة بريد الأرشيف وقم بتشغيل التوسيع التلقائي للأرشفة لزيادة حجم مجلد العناصر القابلة للاسترداد لعل بريد في Microsoft 365.
-ms.openlocfilehash: 68ef8cfe1751ed5822d99edf9e7efeb4bd3766f2
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: a05851f1019405a495a7b909bf4a8d096227163d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999883"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100782"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>زيادة الحصة النسبية للعناصر القابلة للاسترداد لعلب البريد في الانتظار
 

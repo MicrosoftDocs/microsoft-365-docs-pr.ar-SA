@@ -13,24 +13,23 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.date: 02/27/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e8c2b464b7a4559ba316826400cfd0ad308d8786
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 4db7b8f13f1f4860d8cd88f6dec0ff588a89ab41
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790207"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098901"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>تكوين الاستثناءات والتحقق من صحتها استنادا إلى ملحق الملف وموقع المجلد
 
 **ينطبق على:**
 
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 يمكنك تحديد استثناءات برنامج الحماية من الفيروسات من Microsoft Defender التي تنطبق على [عمليات الفحص المجدولة](schedule-antivirus-scans.md)، [والمسح حسب الطلب](run-scan-microsoft-defender-antivirus.md)، [والحماية والمراقبة في الوقت الحقيقي دائما](configure-real-time-protection-microsoft-defender-antivirus.md). **بشكل عام، يجب ألا تحتاج إلى تطبيق الاستثناءات**. إذا كنت بحاجة إلى تطبيق الاستثناءات، يمكنك الاختيار من بين عدة أنواع مختلفة:
@@ -57,7 +56,7 @@ ms.locfileid: "64790207"
 
 يسرد الجدول التالي بعض الأمثلة على الاستثناءات استنادا إلى ملحق الملف وموقع المجلد.
 
-|الاستبعاد|امثله|قائمة الاستبعاد|
+|الاستبعاد|أمثلة|قائمة الاستبعاد|
 |---|---|---|
 |أي ملف ذي ملحق معين|جميع الملفات ذات الملحق المحدد، في أي مكان على الجهاز. <p> بناء جملة صالح: `.test` و `test`|استثناءات الملحق|
 |أي ملف ضمن مجلد معين|كافة الملفات الموجودة `c:\test\sample` ضمن المجلد|استثناءات الملفات والمجلدات|
@@ -107,7 +106,7 @@ ms.locfileid: "64790207"
 
 2. في **نهج المجموعة انتقل محرر الإدارة** إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
 
-3. قم بتوسيع الشجرة إلى **مكونات** \> Windows **برنامج الحماية من الفيروسات من Microsoft Defender** \> **الاستثناءات**.
+3. قم بتوسيع الشجرة إلى **مكونات** \> Windows **برنامج الحماية من الفيروسات لـ Windows Defender** \> **الاستثناءات**.
 
 4. افتح إعداد **"استثناءات المسار"** للتحرير، وأضف الاستثناءات.
     1. تعيين الخيار إلى **ممكن**.
@@ -204,7 +203,7 @@ ExclusionPath
 
 <br/><br/>
 
-|بدل|امثله|
+|بدل|أمثلة|
 |---|---|
 |`*` (علامة نجمية) <p> في **تضمينات اسم الملف وملحق الملف**، تحل العلامة النجمية محل أي عدد من الأحرف، وتنطبق فقط على الملفات الموجودة في المجلد الأخير المعرف في الوسيطة. <p> في **استثناءات المجلد**، تحل العلامة النجمية محل مجلد واحد. استخدم مضاعفا `*` مع شرطة مائلة `\` للمجلدات للإشارة إلى مجلدات متعددة متداخلة. بعد مطابقة عدد المجلدات المسماة وبطاقة البدل، يتم أيضا تضمين كافة المجلدات الفرعية.|`C:\MyData\*.txt` يتضمن `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` يتضمن أي ملف في `C:\somepath\Archives\Data` ومجلداته الفرعية `C:\somepath\Authorized\Data` ومجلداته الفرعية <p> `C:\Serv\*\*\Backup` يتضمن أي ملف في `C:\Serv\Primary\Denied\Backup` ومجلداته الفرعية ومجلداته `C:\Serv\Secondary\Allowed\Backup` الفرعية|
 |`?` (علامة استفهام)  <p> في **تضمينات اسم الملف وملحق الملف**، تحل علامة الاستفهام محل حرف واحد، وتنطبق فقط على الملفات الموجودة في المجلد الأخير المعرف في الوسيطة. <p> في **استثناءات المجلد**، تحل علامة الاستفهام محل حرف واحد في اسم مجلد. بعد مطابقة عدد المجلدات المسماة وبطاقة البدل، يتم أيضا تضمين كافة المجلدات الفرعية.|`C:\MyData\my?.zip` يتضمن `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` يتضمن أي ملف في `C:\somepath\P\Data` ومجلداته الفرعية  <p> `C:\somepath\test0?\Data` سيتضمن أي ملف في `C:\somepath\test01\Data` ومجلداته الفرعية|
@@ -380,14 +379,14 @@ $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt"
 يمكنك أيضا نسخ السلسلة إلى ملف نصي فارغ ومحاولة حفظها باسم الملف أو في المجلد الذي تحاول استبعاده.
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> إذا كنت’ تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>راجع أيضًا
 

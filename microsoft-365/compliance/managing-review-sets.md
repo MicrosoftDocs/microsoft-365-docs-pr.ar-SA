@@ -2,8 +2,8 @@
 title: إدارة مجموعات المراجعة في eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية إدارة مجموعات المراجعة حتى تتمكن من تحليل البيانات والاستعلام عنها وعرضها ووضع علامة عليها وتصديرها في حالة eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 64970cb3302c47dbab394b974bf1df8358ad3755
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d81bfa83126210bcaf80fe05b89b26a091e4192f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999025"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078834"
 ---
 # <a name="manage-review-sets-in-ediscovery-premium"></a>إدارة مجموعات المراجعة في eDiscovery (Premium)
 

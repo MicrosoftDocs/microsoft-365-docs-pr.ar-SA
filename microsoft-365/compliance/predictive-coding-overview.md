@@ -2,8 +2,8 @@
 title: وحدة ترميز تنبؤية ل eDiscovery (Premium) (معاينة)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: تستخدم وحدة الترميز التنبؤي الجديدة في eDiscovery (Premium) التعلم الآلي لتحليل العناصر في مجموعة مراجعة للتنبؤ بالعناصر ذات الصلة بحالتك أو التحقيق.
-ms.openlocfilehash: 7d45c995fafe5b802713e101ad36a362ab77fa37
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cc0db62b4ec7d632dae70347aaba5644138bcdce
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998981"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100754"
 ---
 # <a name="learn-about-predictive-coding-in-ediscovery-premium-preview"></a>تعرف على الترميز التنبؤي في eDiscovery (Premium) (معاينة)
 

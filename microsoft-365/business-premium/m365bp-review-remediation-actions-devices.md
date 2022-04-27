@@ -1,6 +1,6 @@
 ---
 title: مراجعة إجراءات المعالجة في Microsoft 365 Business Premium
-description: تعرف على كيفية عرض المعالجة التي تم اتخاذها تلقائيا أو التي تنتظر الموافقة في مركز الإجراءات
+description: تعرف على كيفية عرض المعالجة التي تم اتخاذها تلقائيا أو التي تنتظر الموافقة في مركز الصيانة
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -10,51 +10,53 @@ ms.topic: how-to
 ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 160cef2ec7691fbc9debad809b20461a0d3efe23
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: df99f73275e0aa83216bd1de101638dee628f0f2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63705533"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091886"
 ---
 # <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>مراجعة إجراءات المعالجة في Microsoft 365 Business Premium
 
-مع اكتشاف التهديدات، يتم تشغيل إجراءات المعالجة. وفقا للتهديدات الخاصة وكيفية تكوين إعدادات الأمان، قد يتم اتخاذ إجراءات المعالجة تلقائيا أو عند الموافقة فقط. تتضمن أمثلة إجراءات الإصلاح إرسال ملف إلى الفحص، وتوقف عملية من التشغيل، وإزالة مهمة مجدولة. يتم تعقب جميع إجراءات الإصلاح في مركز الإجراءات، الموجود في [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
+حسنا، لقد اكتشفت خرقا أمنيا، ولكن ماذا تفعل؟ يعتمد ذلك على طبيعة ذلك. 
 
-:::image type="content" source="../media/defender-business/mdb-actioncenter.png" alt-text="لقطة شاشة لمركز الإجراءات في M365.":::
+تتضمن أمثلة إجراءات المعالجة إرسال ملف إلى العزل أو إيقاف تشغيل عملية أو إزالة مهمة مجدولة بالكامل. يتم تعقب جميع إجراءات المعالجة في مركز الصيانة، الموجود في [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
+
+:::image type="content" source="../media/defender-business/mdb-actioncenter.png" alt-text="لقطة شاشة لمركز الصيانة في M365.":::
 
 **تصف هذه المقالة**:
 
-- [كيفية استخدام مركز الإجراءات](#how-to-use-your-action-center)
+- [كيفية استخدام مركز الصيانة](#how-to-use-your-action-center)
 
 - [أنواع إجراءات المعالجة](#types-of-remediation-actions)
 
 
-## <a name="how-to-use-your-action-center"></a>كيفية استخدام مركز الإجراءات
+## <a name="how-to-use-your-action-center"></a>كيفية استخدام مركز الصيانة
 
-1. انتقل إلى Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، ثم سجل الدخول.
+1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، وسجل الدخول.
 
-2. في جزء التنقل، اختر **مركز الإجراءات**.
+2. في جزء التنقل، اختر **مركز الصيانة**.
 
-3. حدد علامة **التبويب معلق** لعرض (أو رفض) أي إجراءات معلقة والموافقة عليها. يمكن أن تنشأ مثل هذه الإجراءات من الحماية من الفيروسات/الحماية من البرامج الضارة أو عمليات التحقيق التلقائية أو أنشطة الاستجابة اليدوية أو جلسات الاستجابة المباشرة.
+3. حدد علامة التبويب **"معلق** " لعرض أي إجراءات معلقة والموافقة عليها (أو رفضها). يمكن أن تنشأ هذه الإجراءات من الحماية من الفيروسات/الحماية من البرامج الضارة أو التحقيقات التلقائية أو أنشطة الاستجابة اليدوية أو جلسات الاستجابة المباشرة.
 
-4. حدد علامة **التبويب** محفوظات لعرض قائمة الإجراءات المكتملة. 
+4. حدد علامة التبويب " **محفوظات** " لعرض قائمة بالإجراءات المكتملة. 
 
 ## <a name="types-of-remediation-actions"></a>أنواع إجراءات المعالجة
 
-يتضمن اشتراكك عدة أنواع مختلفة من إجراءات المعالجة للتهديدات التي تم الكشف عنها. تتضمن هذه الإجراءات إجراءات الاستجابة اليدوية والإجراءات التالية للتحري التلقائي والإجراءات المباشرة للاستجابة.
+يتضمن اشتراكك عدة أنواع مختلفة من إجراءات المعالجة للتهديدات المكتشفة. تتضمن هذه الإجراءات إجراءات الاستجابة اليدوية، والإجراءات التي تلي التحقيق التلقائي، وإجراءات الاستجابة المباشرة.
 
-يسرد الجدول التالي إجراءات الإصلاح المتوفرة:
+يسرد الجدول التالي إجراءات المعالجة المتوفرة:
 
-| المصدر  | الإجراءات  |
+| مصدر  | الاجراءات  |
 |---------|---------|
-| [عمليات التحقيق التلقائية](../security/defender-endpoint/automated-investigations.md)      | - عزل ملف <br/>- إزالة مفتاح تسجيل <br/>- اقتل عملية <br/>- إيقاف خدمة <br/>- تعطيل برنامج تشغيل <br/>- إزالة مهمة مجدولة        |
-| [إجراءات الاستجابة اليدوية](../security/defender-endpoint/respond-machine-alerts.md)   | - تشغيل مسح الحماية من الفيروسات <br/>- عزل الجهاز <br/>- إيقاف وفحص <br/>- إضافة مؤشر لحظر ملف أو السماح به       |
-| [الاستجابة المباشرة](../security/defender-endpoint/live-response.md)   | - تجميع بيانات الطب الشرعي <br/>- تحليل ملف <br/>- تشغيل برنامج نصي <br/>- إرسال كيان مريب إلى Microsoft لتحليله <br/>- إعادة وسائط ملف <br/>- البحث بشكل استباقي عن التهديدات         |
+| [التحقيقات التلقائية](../security/defender-endpoint/automated-investigations.md)      | - عزل ملف <br/>- إزالة مفتاح التسجيل <br/>- إنهاء عملية <br/>- إيقاف خدمة <br/>- تعطيل برنامج تشغيل <br/>- إزالة مهمة مجدولة        |
+| [إجراءات الاستجابة اليدوية](../security/defender-endpoint/respond-machine-alerts.md)   | - تشغيل فحص مكافحة الفيروسات <br/>- عزل الجهاز <br/>- الإيقاف والعزل <br/>- إضافة مؤشر لحظر ملف أو السماح به       |
+| [الاستجابة المباشرة](../security/defender-endpoint/live-response.md)   | - جمع البيانات الجنائية <br/>- تحليل ملف <br/>- تشغيل برنامج نصي <br/>- إرسال كيان مريب إلى Microsoft للتحليل <br/>- معالجة ملف <br/>- البحث بشكل استباقي عن التهديدات         |

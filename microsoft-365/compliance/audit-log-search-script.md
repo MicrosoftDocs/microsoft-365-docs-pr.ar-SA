@@ -2,8 +2,8 @@
 title: استخدام برنامج PowerShell النصي للبحث في سجل التدقيق
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: استخدم برنامج PowerShell النصي الذي يقوم بتشغيل Search-UnifiedAuditLog cmdlet في Exchange Online للبحث في سجل التدقيق. تم تحسين هذا البرنامج النصي لإرجاع مجموعة كبيرة من سجلات التدقيق في كل مرة تقوم فيها بتشغيله. يقوم البرنامج النصي بتصدير هذه السجلات إلى ملف CSV الذي يمكنك عرضه أو تحويله باستخدام Power Query في Excel.
-ms.openlocfilehash: 00edbeb18bc882cf9113e80321b29d84ed43114c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8799f1a4ddf2ef7dd536ccb3e6e70a4b731b4cd6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000235"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100842"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>استخدام برنامج PowerShell النصي للبحث في سجل التدقيق
 

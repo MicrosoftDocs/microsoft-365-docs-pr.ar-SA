@@ -14,24 +14,24 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 73afd0751e34fbb020019e6f28056c9f2a935c07
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 3c517d9adcdc2181b43c430a92be3de9ac889dd6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788579"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65101106"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>محلل الأداء برنامج الحماية من الفيروسات من Microsoft Defender
 
 **ينطبق على**
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
-**ما هو محلل الأداء برنامج الحماية من الفيروسات من Microsoft Defender؟**
+## <a name="what-is-microsoft-defender-antivirus-performance-analyzer"></a>ما هو محلل الأداء برنامج الحماية من الفيروسات من Microsoft Defender؟
 
 في بعض الحالات، قد تحتاج إلى ضبط أداء برنامج الحماية من الفيروسات من Microsoft Defender في أثناء فحص ملفات ومجلدات معينة. محلل الأداء هو أداة سطر أوامر PowerShell التي تساعد على تحديد الملفات وملحقات الملفات والعمليات التي قد تسبب مشكلات في الأداء على نقاط النهاية الفردية. يمكن استخدام هذه المعلومات لتقييم مشكلات الأداء بشكل أفضل وتطبيق إجراءات المعالجة.
 
@@ -74,28 +74,30 @@ ms.locfileid: "64788579"
 > [!NOTE]
 > عند تشغيل تسجيل، إذا تلقيت رسالة الخطأ "لا يمكن بدء تسجيل الأداء لأن مسجل الأداء Windows قيد التسجيل بالفعل"، فشغل الأمر التالي لإيقاف التتبع الموجود باستخدام الأمر الجديد: **wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
-### <a name="performance-tuning-data-and-information"></a>بيانات ضبط الأداء ومعلوماته
+## <a name="performance-tuning-data-and-information"></a>بيانات ضبط الأداء ومعلوماته
 
 استنادا إلى الاستعلام، سيتمكن المستخدم من عرض البيانات لحسابات الفحص والمدة (الإجمالي/الحد الأدنى/المتوسط/الحد الأقصى/الوسيط)، والمسار، والعملية، وسبب الفحص. تظهر الصورة أدناه نموذج الإخراج لاستعلام بسيط لأعلى 10 ملفات لتأثير الفحص.
 
 :::image type="content" source="images/example-output.png" alt-text="مثال على الإخراج لاستعلام TopFiles أساسي" lightbox="images/example-output.png":::
 
-### <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>وظائف إضافية: التصدير والتحويل إلى CSV وJSON
+## <a name="additional-functionality-exporting-and-converting-to-csv-and-json"></a>وظائف إضافية: التصدير والتحويل إلى CSV وJSON
 
 يمكن أيضا تصدير نتائج محلل الأداء وتحويلها إلى ملف CSV أو JSON.
 للحصول على أمثلة تصف عملية "التصدير" و"التحويل" من خلال نماذج التعليمات البرمجية، انظر أدناه.
 
-#### <a name="for-csv"></a>ل CSV
+### <a name="for-csv"></a>ل CSV
 
 - **للتصدير**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | Export-CSV -Path:.\Repro-Install-Scans.csv -Encoding:UTF8 -NoTypeInformation`
 
 - **للتحويل**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:100). TopScans | ConvertTo-Csv -NoTypeInformation`
 
-#### <a name="for-json"></a>ل JSON
+### <a name="for-json"></a>ل JSON
 
 - **للتحويل**: `(Get-MpPerformanceReport -Path:.\Repro-Install.etl -Topscans:1000). TopScans | ConvertTo-Json -Depth:1`
 
-### <a name="requirements"></a>الاحتياجات
+لضمان إخراج قابل للقراءة آليا للتصدير مع أنظمة معالجة البيانات الأخرى، يوصى باستخدام المعلمة -Raw للحصول على MpPerformanceReport. راجع أدناه للحصول على التفاصيل
+
+## <a name="requirements"></a>الاحتياجات
 
 يحتوي برنامج الحماية من الفيروسات من Microsoft Defender محلل الأداء على المتطلبات الأساسية التالية:
 
@@ -157,6 +159,12 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 
 يجمع الأمر أعلاه تسجيل أداء على Server02 (كما هو محدد بواسطة الوسيطة $s لجلسة عمل المعلمة) ويحفظه في المسار المحدد: **C:\LocalPathOnServer02\trace.etl** على Server02.
 
+##### <a name="example-3-collect-a-performance-recording-in-non-interactive-mode"></a>مثال 3: جمع تسجيل أداء في وضع غير تفاعلي
+```powershell
+New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60 
+```
+يجمع الأمر أعلاه تسجيل أداء للمدة بالثوان المحددة بواسطة المعلمة -Seconds. يوصى بذلك للمستخدمين الذين يقومون بإجراء مجموعات دفعات لا تتطلب أي تفاعل أو مطالبة.
+
 #### <a name="parameters-new-mpperformancerecording"></a>المعلمات: New-MpPerformanceRecording
 
 ##### <a name="-recordto"></a>-RecordTo
@@ -179,6 +187,17 @@ Accept wildcard characters: False
 Type: PSSession[]
 Position: 0
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+##### <a name="-seconds"></a>-ثوان
+تحديد مدة تسجيل الأداء بالثوان. يوصى بذلك للمستخدمين الذين يقومون بإجراء مجموعات دفعات لا تتطلب أي تفاعل أو مطالبة.
+
+```yaml
+Type: Int32
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -218,6 +237,7 @@ Get-MpPerformanceReport    [-Path] <String>
     [-TopScansPerFilePerProcess <Int32>]
 ]
 [-MinDuration <String>]
+[-Raw]
 ```
 
 #### <a name="description-get-mpperformancereport"></a>الوصف: Get-MpPerformanceReport
@@ -260,6 +280,12 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensio
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
 ```
+##### <a name="example-5-using--raw-parameter"></a>مثال 5: استخدام المعلمة -Raw
+
+```powershell
+Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
+```
+استخدام -Raw في الأمر أعلاه يحدد أن الإخراج يجب أن يكون قابلا للقراءة الآلية ويمكن تحويله بسهولة إلى تنسيقات التسلسل مثل JSON
 
 #### <a name="parameters-get-mpperformancereport"></a>المعلمات: Get-MpPerformanceReport
 
@@ -286,8 +312,19 @@ Default value: None
 Accept pipeline input: True
 Accept wildcard characters: False
 ```
+##### <a name="-raw"></a>-Raw
 
-### <a name="-topextensions"></a>-TopExtensions
+تحديد أن إخراج تسجيل الأداء يجب أن يكون قابلا للقراءة الآلية وقابلا للتحويل بسهولة إلى تنسيقات التسلسل مثل JSON (على سبيل المثال، عبر الأمر تحويل إلى JSON). يوصى بذلك للمستخدمين المهتمين بمعالجة الدفعات مع أنظمة معالجة البيانات الأخرى. 
+
+```yaml
+Type: <SwitchParameter>
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+##### <a name="-topextensions"></a>-TopExtensions
 
 تحديد عدد الملحقات العلوية إلى الإخراج، التي تم فرزها حسب "المدة".
 
@@ -299,7 +336,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess
+##### <a name="-topextensionsperprocess"></a>-TopExtensionsPerProcess
 
 تحديد عدد الملحقات العلوية التي يجب إخراجها لكل عملية علوية، تم فرزها حسب "المدة".
 
@@ -311,7 +348,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfiles"></a>-TopFiles
+##### <a name="-topfiles"></a>-TopFiles
 
 يطلب تقرير الملفات العليا ويحدد عدد الملفات العليا التي يجب إخراجها، والتي تم فرزها حسب "المدة".
 
@@ -323,7 +360,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfilesperextension"></a>-TopFilesPerExtension
+##### <a name="-topfilesperextension"></a>-TopFilesPerExtension
 
 تحديد عدد الملفات العلوية التي يجب إخراجها لكل ملحق علوي، تم فرزها حسب "المدة".
 
@@ -335,7 +372,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
+##### <a name="-topfilesperprocess"></a>-TopFilesPerProcess
 
 تحديد عدد الملفات العلوية التي يجب إخراجها لكل عملية علوية، تم فرزها حسب "المدة".
 
@@ -347,7 +384,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocesses"></a>-TopProcesses
+##### <a name="-topprocesses"></a>-TopProcesses
 
 يطلب تقرير العمليات العليا ويحدد عدد العمليات العليا التي يجب إخراجها، والتي تم فرزها حسب "المدة".
 
@@ -359,7 +396,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension
+##### <a name="-topprocessesperextension"></a>-TopProcessesPerExtension
 
 تحديد عدد العمليات العليا التي يجب إخراجها لكل ملحق علوي، تم فرزها حسب "المدة".
 
@@ -371,7 +408,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
+##### <a name="-topprocessesperfile"></a>-TopProcessesPerFile
 
 تحديد عدد العمليات العليا التي يجب إخراجها لكل ملف علوي، تم فرزها حسب "المدة".
 
@@ -383,7 +420,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscans"></a>-TopScans
+##### <a name="-topscans"></a>-TopScans
 
 يطلب تقرير المسح الأعلى ويحدد عدد عمليات الفحص العليا إلى الإخراج، والتي تم فرزها حسب "المدة".
 
@@ -395,7 +432,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperextension"></a>-TopScansPerExtension
+##### <a name="-topscansperextension"></a>-TopScansPerExtension
 
 تحديد عدد عمليات الفحص العلوية لإخراج كل ملحق علوي، تم فرزها حسب "المدة".
 
@@ -407,7 +444,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess
+##### <a name="-topscansperextensionperprocess"></a>-TopScansPerExtensionPerProcess
 
 تحديد عدد عمليات الفحص العلوية لإخراج كل ملحق علوي لكل عملية علوية، تم فرزها حسب "المدة".
 
@@ -419,7 +456,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfile"></a>-TopScansPerFile
+##### <a name="-topscansperfile"></a>-TopScansPerFile
 
 تحديد عدد عمليات الفحص العلوية لإخراج كل ملف علوي، تم فرزه حسب "المدة".
 
@@ -431,7 +468,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension
+##### <a name="-topscansperfileperextension"></a>-TopScansPerFilePerExtension
 
 تحديد عدد عمليات الفحص العلوية لإخراج كل ملف علوي لكل ملحق علوي، تم فرزه حسب "المدة".
 
@@ -443,7 +480,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess
+##### <a name="-topscansperfileperprocess"></a>-TopScansPerFilePerProcess
 
 تحديد عدد عمليات الفحص العلوية للإخراج لكل ملف علوي لكل عملية علوية، تم فرزها حسب "المدة".
 
@@ -455,7 +492,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocess"></a>-TopScansPerProcess
+##### <a name="-topscansperprocess"></a>-TopScansPerProcess
 
 تحديد عدد عمليات الفحص العليا لإخراج كل عملية علوية في تقرير العمليات العليا، التي تم فرزها حسب "المدة".
 
@@ -467,7 +504,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
+##### <a name="-topscansperprocessperextension"></a>-TopScansPerProcessPerExtension
 
 تحديد عدد عمليات الفحص العلوية للإخراج لكل عملية علوية لكل ملحق علوي، تم فرزها حسب "المدة".
 
@@ -479,7 +516,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
+##### <a name="-topscansperprocessperfile"></a>-TopScansPerProcessPerFile
 
 تحديد عدد عمليات الفحص العلوية للإخراج لكل عملية علوية لكل ملف علوي، تم فرزها حسب "المدة".
 
@@ -490,12 +527,14 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-> [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
-> - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+
+## <a name="additional-resources"></a>موارد إضافية
+
+إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+
+- [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+- [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+- [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+- [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
+- [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
+- [تكوين Defender لنقطة النهاية على ميزات](android-configure.md)-  Android [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)

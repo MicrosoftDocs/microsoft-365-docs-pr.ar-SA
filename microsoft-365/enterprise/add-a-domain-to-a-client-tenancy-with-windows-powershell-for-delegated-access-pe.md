@@ -1,8 +1,8 @@
 ---
-title: إضافة مجال إلى إيجار عميل مع Windows PowerShell DAP
+title: إضافة مجال إلى إيجار عميل باستخدام Windows PowerShell لشركاء DAP
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,63 +19,63 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'ملخص: استخدم PowerShell Microsoft 365 لإضافة اسم مجال بديل إلى مستأجر عميل موجود.'
-ms.openlocfilehash: 1a121407ebe242747a693084289e972e56e1cbee
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: c4dcdb34f9065009ccaa77d23222601506b537b5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63569385"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099027"
 ---
-# <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>إضافة مجال إلى إيجار عميل Windows PowerShell لشركاء إذن الوصول المفوض (DAP)
+# <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>إضافة مجال إلى إيجار عميل باستخدام Windows PowerShell لشركاء إذن الوصول المفوض (DAP)
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
-يمكنك إنشاء مجالات جديدة وإقرانها مع إيجار العميل باستخدام PowerShell Microsoft 365 أسرع من استخدام مركز مسؤولي Microsoft 365.
+يمكنك إنشاء مجالات جديدة وإقرانها بإجارة العميل مع PowerShell Microsoft 365 أسرع من استخدام مركز مسؤولي Microsoft 365.
 
-شركاء إذن الوصول المفوض (DAP) هم شركاء Syndication وموفرو حلول السحابة (CSP). فهي غالبا ما تكون موفري شبكة أو اتصالات لشركات أخرى. كما يمكنهم Microsoft 365 اشتراكاتهم في عروض الخدمات الخاصة بهم للعملاء. عند بيعهم لاشتراك Microsoft 365، يتم منحهم تلقائيا أذونات الإدارة بالنيابة عن (AOBO) إلى أذونات العميل بحيث يمكنهم إدارة أذونات العميل والتقارير بشأنها.
+شركاء إذن الوصول المفوض (DAP) هم شركاء موفري حلول السحابة (CSP) وSyndication. وهي غالبا ما تكون موفرة للشبكات أو الاتصالات لشركات أخرى. وهي تقوم بتجميع اشتراكات Microsoft 365 في عروض الخدمة لعملائها. عندما يبيعون اشتراكا Microsoft 365، يتم منحهم تلقائيا أذونات الإدارة نيابة عن (AOBO) إلى إيجارات العميل حتى يتمكنوا من إدارة إيجارات العميل والإبلاغ عنها.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
-تتطلب الإجراءات في هذا الموضوع الاتصال الاتصال [Microsoft 365 PowerShell](connect-to-microsoft-365-powershell.md).
+تتطلب منك الإجراءات الواردة في هذا الموضوع الاتصال [الاتصال Microsoft 365 باستخدام PowerShell](connect-to-microsoft-365-powershell.md).
 
 تحتاج أيضا إلى بيانات اعتماد مسؤول المستأجر الشريك.
 
 تحتاج أيضا إلى المعلومات التالية:
 
-- أنت بحاجة إلى اسم المجال المؤهل بالكامل (FQDN) الذي يريده العميل.
+- تحتاج إلى اسم المجال المؤهل بالكامل (FQDN) الذي يريده العميل.
 
-- أنت بحاجة إلى **TenantId الخاص للعميل**.
+- تحتاج إلى **TenantId** الخاص بالعميل.
 
-- يجب أن تكون FQDN مسجلة لدى جهة تسجيل خدمة أسماء مجالات الإنترنت (DNS)، مثل GoDaddy. لمزيد من المعلومات حول كيفية تسجيل اسم مجال بشكل عام، راجع [كيفية شراء اسم مجال](../admin/get-help-with-domains/buy-a-domain-name.md).
+- يجب تسجيل FQDN لدى جهة تسجيل خدمة أسماء مجالات الإنترنت (DNS)، مثل GoDaddy. لمزيد من المعلومات حول كيفية تسجيل اسم مجال بشكل عام، راجع [كيفية شراء اسم مجال](../admin/get-help-with-domains/buy-a-domain-name.md).
 
-- يجب أن تعرف كيفية إضافة سجل TXT إلى منطقة DNS المسجلة لدى جهة تسجيل DNS. لمزيد من المعلومات حول كيفية إضافة سجل TXT، راجع [إضافة سجلات DNS لتوصيل مجالك](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). إذا لم تكن هذه الإجراءات تعمل من أجلك، ستحتاج إلى العثور على الإجراءات الخاصة جهة تسجيل DNS.
+- تحتاج إلى معرفة كيفية إضافة سجل TXT إلى منطقة DNS المسجلة لسجل DNS. لمزيد من المعلومات حول كيفية إضافة سجل TXT، راجع [إضافة سجلات DNS لتوصيل مجالك](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). إذا لم تعمل هذه الإجراءات نيابة عنك، فستحتاج إلى العثور على الإجراءات الخاصة بسجل DNS.
 
 ## <a name="create-domains"></a>إنشاء مجالات
 
- من المرجح \<domain>أن يطلب منك عملاؤك إنشاء مجالات إضافية لاقرانها بأوجارهم لأنهم لا يرغبون في أن يكون مجال onmicrosoft.com الافتراضي المجال الأساسي الذي يمثل هويات شركاتهم للعالم. يرحلك هذا الإجراء من خلال إنشاء مجال جديد مقترن بأوجار العميل.
+ من المحتمل أن يطلب منك عملاؤك إنشاء مجالات إضافية لإقرانها بإجارتهم لأنهم لا يريدون أن يكون مجال .onmicrosoft.com الافتراضي \<domain>المجال الأساسي الذي يمثل هويات الشركة الخاصة بهم للعالم. يرشدك هذا الإجراء خلال إنشاء مجال جديد مقترن بإجرة العميل.
 
 > [!NOTE]
-> لتنفيذ بعض هذه العمليات، يجب تعيين حساب مسؤول الشريك الذي تقوم تسجيل الدخول باستخدامه إلى الإدارة الكاملة  لإعداد تعيين الوصول الإداري  إلى الشركات التي تدعمها والمعثر عليه في تفاصيل حساب المسؤول في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>. لمزيد من المعلومات حول إدارة أدوار مسؤولي الشركاء، راجع [الشركاء: عرض الإدارة المفوضة](https://go.microsoft.com/fwlink/p/?LinkId=532435).
+> لتنفيذ بعض هذه العمليات، يجب تعيين حساب المسؤول الشريك الذي تسجل الدخول باستخدامه إلى **الإدارة الكاملة** لتعيين **الوصول الإداري إلى الشركات التي تدعمها التي تم** العثور عليها في تفاصيل حساب المسؤول في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>. لمزيد من المعلومات حول إدارة أدوار الشركاء، راجع [الشركاء: تقديم الإدارة المفوضة](https://go.microsoft.com/fwlink/p/?LinkId=532435).
 
 ### <a name="create-the-domain-in-azure-active-directory"></a>إنشاء المجال في Azure Active Directory
 
-ينشئ هذا الأمر المجال في Azure Active Directory ولكنه لا يقوم بربطه بالمجال المسجل بشكل عام. يأتي ذلك عندما تثبت أنك تملك المجال المسجل بشكل عام في Microsoft Microsoft 365 للمؤسسات.
+ينشئ هذا الأمر المجال في Azure Active Directory ولكنه لا يقوم بإقرانه بالمجال المسجل بشكل عام. يأتي ذلك عندما تثبت أنك تملك المجال المسجل علنا لدى Microsoft Microsoft 365 للمؤسسات.
 
 ```powershell
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 ```
 
 > [!NOTE]
-> لا يدعم PowerShell Core الوحدة النمطية Microsoft Azure Active Directory النمطية Windows PowerShell النمطية و cmdlets مع **Msol** في اسمها. لمواصلة استخدام هذه cmdlets، يجب تشغيلها من Windows PowerShell.
+> لا يدعم PowerShell Core الوحدة النمطية Microsoft Azure Active Directory لوحدة Windows PowerShell و cmdlets مع **Msol** باسمها. لمتابعة استخدام أوامر cmdlets هذه، يجب تشغيلها من Windows PowerShell.
 
-### <a name="get-the-data-for-the-dns-txt-verification-record"></a>الحصول على بيانات سجل التحقق من TXT ل DNS
+### <a name="get-the-data-for-the-dns-txt-verification-record"></a>الحصول على بيانات سجل التحقق من DNS TXT
 
- Microsoft 365 إنشاء البيانات المحددة التي تحتاج إلى وضعها في سجل التحقق من TXT ل DNS. للحصول على البيانات، يمكنك تشغيل هذا الأمر.
+ ستقوم Microsoft 365 بإنشاء البيانات المحددة التي تحتاج إلى وضعها في سجل التحقق من DNS TXT. للحصول على البيانات، قم بتشغيل هذا الأمر.
 
 ```powershell
 Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
 ```
 
-سيمنحك ذلك إخراجا مثل:
+سيمنحك هذا الإخراج مثل:
 
  `Label: domainname.com`
 
@@ -88,15 +88,15 @@ Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of
 
 ### <a name="add-a-txt-record-to-the-publically-registered-dns-zone"></a>إضافة سجل TXT إلى منطقة DNS المسجلة بشكل عام
 
-قبل Microsoft 365 قبول حركة المرور الموجهة إلى اسم المجال المسجل بشكل عام، يجب أن تثبت أنك تملك أذونات المسؤول وأن لديك أذونات المسؤول للمجال. تثبت أنك تملك المجال من خلال إنشاء سجل TXT في المجال. لا يفعل سجل TXT أي شيء في مجالك، ويمكن حذفه بعد إنشاء ملكيتك للمجال. لإنشاء سجلات TXT، اتبع الإجراءات في [إضافة سجلات DNS لتوصيل مجالك](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). إذا لم تكن هذه الإجراءات تعمل معك، تحتاج إلى العثور على الإجراءات الخاصة جهة تسجيل DNS.
+قبل أن تبدأ Microsoft 365 في قبول نسبة استخدام الشبكة التي يتم توجيهها إلى اسم المجال المسجل بشكل عام، يجب إثبات ملكيتك وأن لديك أذونات المسؤول للمجال. يمكنك إثبات ملكيتك للمجال عن طريق إنشاء سجل TXT في المجال. لا يقوم سجل TXT بأي شيء في مجالك، ويمكن حذفه بعد تأسيس ملكيتك للمجال. لإنشاء سجلات TXT، اتبع الإجراءات في [إضافة سجلات DNS لتوصيل مجالك](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). إذا لم تعمل هذه الإجراءات نيابة عنك، فستحتاج إلى العثور على الإجراءات الخاصة بسجل DNS.
 
-تأكد من نجاح إنشاء سجل TXT عبر nslookup. اتبع بناء الجملة هذا.
+تأكيد الإنشاء الناجح لسجل TXT عبر nslookup. اتبع بناء الجملة هذا.
 
 ```console
 nslookup -type=TXT <FQDN of registered domain>
 ```
 
-سيمنحك ذلك إخراجا مثل:
+سيمنحك هذا الإخراج مثل:
 
  `Non-authoritative answer:`
 
@@ -104,21 +104,21 @@ nslookup -type=TXT <FQDN of registered domain>
 
  `text=MS=ms########`
 
-### <a name="validate-domain-ownership-in-microsoft-365"></a>التحقق من ملكية المجال في Microsoft 365
+### <a name="validate-domain-ownership-in-microsoft-365"></a>التحقق من صحة ملكية المجال في Microsoft 365
 
-في هذه الخطوة الأخيرة، تحقق Microsoft 365 أنك تملك المجال المسجل بشكل عام. بعد هذه الخطوة، Microsoft 365 قبول حركة المرور التي تم توجيهها إلى اسم المجال الجديد. لإكمال عملية إنشاء المجال وتسجيله، تشغيل هذا الأمر.
+في هذه الخطوة الأخيرة، يمكنك التحقق من صحة Microsoft 365 أنك تملك المجال المسجل بشكل عام. بعد هذه الخطوة، ستبدأ Microsoft 365 في قبول نسبة استخدام الشبكة التي تم توجيهها إلى اسم المجال الجديد. لإكمال عملية إنشاء المجال وتسجيله، قم بتشغيل هذا الأمر.
 
 ```powershell
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
-لن يرجع هذا الأمر أي إخراج، لذا لتأكيد عمل ذلك، يمكنك تشغيل هذا الأمر.
+لن يرجع هذا الأمر أي إخراج، لذا للتأكد من أن هذا يعمل، قم بتشغيل هذا الأمر.
 
 ```powershell
 Get-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
-سيرجع هذا شيئا مثل هذا
+سيؤدي هذا إلى إرجاع شيء مثل هذا
 
 ```console
 Name                   Status      Authentication

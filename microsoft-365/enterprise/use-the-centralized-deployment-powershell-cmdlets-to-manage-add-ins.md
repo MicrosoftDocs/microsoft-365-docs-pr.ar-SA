@@ -2,7 +2,7 @@
 title: استخدام أوامر PowerShell cmdlets للتوزيع المركزي لإدارة الوظائف الإضافية
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
@@ -19,17 +19,17 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: استخدم أوامر PowerShell cmdlets للتوزيع المركزي لمساعدتك في نشر الوظائف الإضافية Office للمؤسسة Microsoft 365 وإدارتها.
-ms.openlocfilehash: 9f9a3e36c6e1c76d99d8abb7dc47f97a04541322
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+description: استخدم أوامر PowerShell cmdlets للتوزيع المركزي لمساعدتك على نشر الوظائف الإضافية Office وإدارتها لمؤسستك Microsoft 365.
+ms.openlocfilehash: 07e0f69cd95bc1553adea96242bf44eb9f1217f1
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824729"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078475"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>استخدام أوامر PowerShell cmdlets للتوزيع المركزي لإدارة الوظائف الإضافية
 
-بصفتك مسؤولا عاما Microsoft 365، يمكنك نشر الوظائف الإضافية Office للمستخدمين عبر ميزة "النشر المركزي" (راجع ["نشر Office الوظائف الإضافية" في مركز الإدارة](../admin/manage/manage-deployment-of-add-ins.md). بالإضافة إلى نشر الوظائف الإضافية Office عبر مركز مسؤولي Microsoft 365، يمكنك أيضا استخدام Microsoft PowerShell. تثبيت [الوحدة النمطية لنشر Add-In O365 المركزية Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
+بصفتك مسؤولا عاما Microsoft 365، يمكنك نشر الوظائف الإضافية Office للمستخدمين عبر ميزة "النشر المركزي" (راجع ["نشر Office الوظائف الإضافية" في مركز الإدارة](../admin/manage/manage-deployment-of-add-ins.md). بالإضافة إلى نشر Office الوظائف الإضافية عبر مركز مسؤولي Microsoft 365، يمكنك أيضا استخدام Microsoft PowerShell. تثبيت [الوحدة النمطية لنشر Add-In O365 المركزية Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
 
 بعد تنزيل الوحدة النمطية، افتح نافذة Windows PowerShell عادية وقم بتشغيل cmdlet التالي:
 

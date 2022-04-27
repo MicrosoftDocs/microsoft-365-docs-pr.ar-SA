@@ -2,7 +2,7 @@
 title: تنشيط إدارة الحقوق في مركز الإدارة
 ms.author: krowley
 author: kccross
-manager: laurawi
+manager: scotv
 ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
@@ -16,27 +16,27 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
-description: كيفية تنشيط خدمة إدارة الحقوق واستخدامها مع Microsoft 365.
-ms.openlocfilehash: 7f063b8d4258c261d1791900375fa0492d494e59
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: كيفية تنشيط خدمة "إدارة الحقوق" واستخدامها مع Microsoft 365.
+ms.openlocfilehash: f670de1e8bb5e7b46acaa180e0d875628d364ae9
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63569625"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099049"
 ---
 # <a name="activate-rights-management-in-the-admin-center"></a>تنشيط إدارة الحقوق في مركز الإدارة
 
-يجب تنشيط خدمة إدارة الحقوق (RMS) قبل أن تتمكن من استخدام ميزات إدارة حقوق استخدام المعلومات (IRM) الخاصة Microsoft 365 والخدمات. بعد تنشيط RMS، يمكن لمنظمتك البدء في حماية المستندات ورسائل البريد الإلكتروني المهمة باستخدام Azure RMS. يمكن أن يحمي حل حماية المعلومات هذا كل أنواع الملفات ويتكامل مع تطبيقات العميل مثل Excel و Microsoft Word وغيرها و Exchange Online و SharePoint Online، و الخوادم مثل Microsoft Exchange و Microsoft SharePoint.
+يجب تنشيط خدمة إدارة الحقوق (RMS) قبل أن تتمكن من استخدام ميزات إدارة حقوق استخدام المعلومات (IRM) لتطبيقات وخدمات Microsoft 365. بعد تنشيط RMS، يمكن لمؤسستك البدء في حماية المستندات الهامة ورسائل البريد الإلكتروني باستخدام Azure RMS. يمكن أن يحمي حل حماية المعلومات هذا جميع أنواع الملفات ويتكامل مع تطبيقات العميل مثل Excel Microsoft Word وغيرها، Exchange Online و SharePoint Online، وخوادم مثل Microsoft Exchange وMicrosoft SharePoint.
   
 > [!TIP]
-> إذا لم تكن متأكدا مما إذا كنت بحاجة إلى إدارة الحقوق، فتحقق مما إذا كانت مؤسستك تواجه مشكلة أو متطلبات عمل [واحدة أو أكثر](/azure/information-protection/what-is-azure-rms#business-problems-solved-by-azure-rights-management). 
+> إذا لم تكن متأكدا مما إذا كنت بحاجة إلى "إدارة الحقوق"، فتحقق مما إذا كانت مؤسستك تواجه [مشكلة](/azure/information-protection/what-is-azure-rms#business-problems-solved-by-azure-rights-management) أو متطلبات عمل واحدة أو أكثر. 
   
 استخدم هذه الارتباطات للحصول على مزيد من المعلومات حول RMS:
   
-- لمعرفة المزيد حول RMS، راجع [ما هو Azure Rights Management](/rights-management/understand-explore/what-is-azure-rms).
+- لمعرفة المزيد حول RMS، راجع [ما هي إدارة حقوق Azure](/rights-management/understand-explore/what-is-azure-rms).
 
-- إذا كنت جديدا في RMS، فشاهد [نظرة عامة حول إدارة حقوق Azure](/rights-management/understand-explore/azure-rights-management).
+- إذا كنت جديدا على RMS، فراجع [نظرة عامة على إدارة حقوق Azure](/rights-management/understand-explore/azure-rights-management).
 
-- للحصول على نظرة عامة حول خطوات النشر، راجع خريطة طريق نشر [Azure Rights Management](/rights-management/plan-design/deployment-roadmap).
+- للحصول على نظرة عامة على خطوات النشر، راجع [مخطط طريق توزيع Azure Rights Management](/rights-management/plan-design/deployment-roadmap).
 
-- للحصول على إرشادات حول تنشيط RMS Microsoft 365، راجع تنشيط خدمة [الحماية من Azure Information Protection](/azure/information-protection/activate-service).
+- للحصول على إرشادات حول تنشيط RMS Microsoft 365، راجع [تنشيط خدمة الحماية من Azure حماية البيانات](/azure/information-protection/activate-service).

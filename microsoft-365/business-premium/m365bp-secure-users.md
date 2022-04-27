@@ -1,14 +1,14 @@
 ---
-title: كيفية تأثير توصيات الأمان على المستخدمين
+title: كيف يساعد Microsoft 365 Business Premium عملك
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,63 +23,70 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: تعرف على كيفية تأثير توصيات الأمان Microsoft 365 Business Premium على المستخدمين وحماية بياناتك.
-ms.openlocfilehash: 5704e4c6b0675e8d69ffb2a81b8b6d7bf57bb0b4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: تعرف على كيفية مساعدة Microsoft 365 Business Premium شركتك في الإنتاجية والأمان.
+ms.openlocfilehash: f9501ce8a478af45d8d1b79db1411575636eda36
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63704983"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098098"
 ---
-# <a name="how-security-recommendations-affect-your-users"></a>كيفية تأثير توصيات الأمان على المستخدمين
+# <a name="how-microsoft-365-business-premium-helps-your-business"></a>كيف يساعد Microsoft 365 Business Premium عملك
 
-تجعل توصيات الأمان Microsoft 365 في هذا الحل من الصعب على المتسللين الوصول إلى بيئتك. المبادلات هي أن المستخدمين يجب أن يكونوا على علم بكيفية العمل ضمن هذه البيئة الأكثر أمانا. ندرك أن هناك حاجة إلى القليل من التحلي بالصبر الإضافي، ولكن من المفيد الحفاظ على حماية مؤسستك.
+Microsoft 365 Business Premium هو حل فعال من حيث التكلفة يمكن الشركات الصغيرة والمتوسطة الحجم من العمل بشكل أكثر كفاءة وأمانا من ذي قبل. تصف هذه المقالة كيف يمكن Microsoft 365 Business Premium مساعدة شركتك، وتتضمن هذه الأقسام:
 
-:::image type="content" source="media/m365-democracy-users.png" alt-text="رسم توضيحي يلخص النقاط الرئيسية للأجهزة.":::
+- [فيديو: أفضل 5 مزايا Microsoft 365 Business Premium](#video-top-5-benefits-of-microsoft-365-business-premium)
+- [الإنتاجية وقدرات الأمان المتقدمة](#productivity-and-security) التي تمكنك من إدارة أعمالك بشكل أكثر أمانا، وعبر الأجهزة، ومن أي مكان تقريبا
+- [موارد لتدريب فريقك وجميع الموظفين](#resources-to-train-your-users) على كيفية العمل بشكل منتج مع الحفاظ على بيئة أكثر أمانا
+- [دليل التهديدات الرقمية القابل للتنزيل](#download-the-digital-threats-guide) الذي يصف أنواعا مختلفة من التهديدات وكيفية الحماية منها في عملك اليومي
+- [الخطوات التالية](#next-steps)
 
-## <a name="use-secure-email-practices"></a>استخدام ممارسات البريد الإلكتروني الآمنة
+## <a name="video-top-5-benefits-of-microsoft-365-business-premium"></a>فيديو: أفضل 5 مزايا Microsoft 365 Business Premium
 
-يجب أن يكون جميع المستخدمين على علم ب ممارسات البريد الإلكتروني هذه واستخدامها للمساعدة في الحفاظ على أمان بريدهم الإلكتروني:
+شاهد الفيديو التالي لمعرفة كيف تساعد Microsoft 365 Business Premium شركتك على أن تكون أكثر إنتاجية وأمانا: <p>
 
-- قم بإعداد البريد الإلكتروني لاستخدام المصادقة متعددة العوامل مع تطبيق المصادقة.
-- تحقق من رسائل البريد الإلكتروني المشروعة وابحث عن تلميحات الأمان من التصيد الاحتيالي المتقدم في Defender Office 365 الحماية.
-- افتح الارتباطات والمرفقات الآمنة فقط، كما تم التحقق خزينة الارتباطات خزينة المرفقات.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
-تعرف على المزيد [حول المصادقة متعددة العوامل](m365bp-multifactor-authentication.md) [والتصيد الاحتيالي وهجمة أخرى](m365-campaigns-phishing-and-attacks.md).
+> [!TIP]
+> لمزيد من المعلومات، راجع [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
 
-قم [بتنزيل رسم بياني للمعلومات](m365-campaigns-protect-campaign-infographic.md) مع تلميحات لك ولأعضاء فريقك.
+## <a name="productivity-and-security"></a>الإنتاجية والأمان
 
-## <a name="set-up-iphones-and-android-devices"></a>إعداد أجهزة iPhone وAndroid
+تتضمن Microsoft 365 Business Premium تطبيقات الإنتاجية Office المفضلة لديك وأدوات التعاون مثل Microsoft Teams وحلول الأمان والهوية وإدارة الأجهزة على مستوى المؤسسة. باستخدام Microsoft 365 Business Premium، يمكنك تشغيل أعمالك بشكل أكثر أمانا، عبر الأجهزة، ومن أي مكان تقريبا. تتضمن Microsoft 365 Business Premium ما يلي:
 
-يحتاج جميع المستخدمين الذين تضيفهم إلى بيئتك إلى بضع دقائق لإعداد [أجهزة iPhone وأجهزة Android](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) للعمل بأمان:
+- **Windows 10 و11 ترقيات Pro** لأجهزة Windows الخاصة بشركتك
+- **Office التطبيقات**، مثل Word Excel PowerPoint، التي يمكنك تثبيتها على أجهزة الكمبيوتر (Windows وMac)، وعلى أجهزتك المحمولة (Windows وiOS وAndroid). يمكنك أيضا الحصول على Publisher والوصول إلى أجهزة Windows.
+- **Microsoft Teams Outlook Exchange** للبريد الإلكتروني والتقويمات والاجتماعات والتعاون
+- **SharePoint OneDrive** لتخزين ملفات العمل وإدارتها
+- **حماية متطورة من التهديدات** مثل التصيد الاحتيالي والبرامج الضارة والحماية من برامج الفدية الضارة
+- **ميزات التوافق والخصوصية** لحماية الوصول إلى المعلومات الحساسة لعملائك والتحكم فيها
+- **قدرات إدارة الأجهزة** التي تمكن فريق الأمان من المساعدة في الحفاظ على تحديث أجهزة الكمبيوتر وأجهزة الكمبيوتر اللوحية والهواتف وتأمينها
 
-- قم بإعداد الأجهزة لاستخدام المصادقة متعددة العوامل مع تطبيق المصادقة.
-- استخدم تطبيقات Microsoft للجوال، بما في ذلك Outlook Mobile و Word OneDrive وتطبيقات Microsoft الأخرى من متجر التطبيقات. تطبيقات البريد الأصلية المضمنة على أجهزة iPhone وAndroid غير معتمدة. 
-- يتطلب رقم تعريف شخصي (PIN) للمستخدمين لإلغاء تأمين أ جهازهم.
+> [!TIP]
+> لمزيد من المعلومات التفصيلية حول ما تم تضمينه في Microsoft 365 Business Premium، راجع [Microsoft 365 مجموعات اشتراكات المستخدمين للشركات الصغيرة والمتوسطة الحجم](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
-بعد إعداد هذه الإعدادات، سيطلب من المستخدمين استخدام تطبيق المصادقة عند الوصول إلى بيانات مؤسستك على هذه الأجهزة، بما في ذلك البريد.
+## <a name="resources-to-train-your-users"></a>موارد لتدريب المستخدمين
 
-## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>الاحتفاظ ب أجهزة Mac المزدوجة Windows 10 الكمبيوتر الشخصي الجديدة
+تجعل توصيات الأمان المقدمة في هذه المكتبة من الصعب جدا على المهاجمين عبر الإنترنت الوصول إلى بيئتك. ومع ذلك، يتضمن جزء مهم من استراتيجية الأمان الخاصة بك تدريب المستخدمين&mdash; الأشخاص في شركتك الذين يستخدمون أنظمتك بانتظام. يمكن للمستخدمين المساعدة في أن يكونوا خط دفاعك الأمامي. يحتاج الجميع إلى معرفة كيفية العمل بشكل منتج مع الحفاظ على بيئة أكثر أمانا. 
 
-من المهم أيضا أن يقوم المستخدمون بإبقاء جهاز العمل الأساسي الخاص بهم مواكبا لأهم المعلومات:
+تتوفر الموارد لمساعدة جميع الأشخاص في مؤسستك على:
 
-- قم بتثبيت الإصدارات الأخيرة من Office سطح المكتب واحتفظ بهذه التحديثات محدثة، عند مطالبتك بذلك.
-- ابق على مستجدات نظام التشغيل، مثل Windows التحديثات.
+- [حماية الأجهزة](m365bp-devices-overview.md)
+- [استخدام البريد الإلكتروني بشكل أكثر أمانا](m365bp-protect-email-overview.md)
+- [التعاون ومشاركة المعلومات بشكل أكثر أمانا](m365bp-collaborate-share-securely.md)
 
-بالنسبة [للأجهزة غير Windows 10 وأجهزة Mac](m365bp-protect-pcs-macs.md)، تقع على عاتق المستخدمين مسؤولية ضمان تمكين ميزات الأمان الأساسية.
+استخدم التوصيات الموجودة في هذه المكتبة لمساعدة المستخدمين على أن يكونوا منتجين وأكثر أمانا في عملهم.
 
-**تمكين قدرات الأمان الأساسية على أجهزة BYOD Windows 10 وأجهزة Mac**
+## <a name="download-the-digital-threats-guide"></a>تنزيل دليل التهديدات الرقمية
 
-|**Windows 10**|**Mac**|
-|:-----|:------|
-|تشغيل حماية جهاز BitLocker<p><p> التأكد Windows استمرار "Defender" في العمل <p>تشغيل جدار Windows الحماية| استخدام FileVault لتشفير قرص Mac <p><p>استخدام برنامج حماية من الفيروسات موثوق به <p>تشغيل حماية جدار الحماية|
+يصف دليل التهديدات الرقمية لدينا أنواعا مختلفة من التهديدات وما يمكنك أنت وموظفيك القيام به للحماية من هذه التهديدات. قم بتنزيل هذا الدليل المرئي لك ولفريقك:
 
-لمعرفة المزيد حول هذه التوصيات، راجع حماية حسابك [وأجهزتك من المتسللين والبرامج الضارة](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
+[:::image type="content" source="media/m365bp-whatuserscandotosecure.png" alt-text="صورة مصغرة لدليل قابل للتنزيل.":::](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf)
 
-## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>التعاون في Microsoft Teams OneDrive و SharePoint عبر الإنترنت وأدوات أخرى
+[PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) |  [PowerPoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
 
-قد يميل المستخدمون إلى مشاركة ملفات مؤسستك وتخزينها في أماكن أخرى غير Microsoft 365. Microsoft 365 من السهل التعاون في العمل ومشاركته بأمان قدر الإمكان. يمكنك مشاركة [الملفات ومقاطع الفيديو](share-files-and-videos.md) مباشرة من Microsoft Teams OneDrive وتدفق وحتى من داخل ملف. تساعد المشاركة من ضمن هذه الأدوات على منع تسريب البيانات. يمكنك إضافة حماية إضافية للبيانات الحساسة لمنع المشاركة خارج مؤسستك.
+## <a name="next-steps"></a>الخطوات التالية
 
-## <a name="set-up-managed-windows-10-devices"></a>إعداد أجهزة Windows 10 مدارة
+1. احصل على [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) أو [Microsoft 365 للحملات](get-microsoft-365-campaigns.md) الإعلانية.
 
-نوصي بأن يستخدم أهم أعضاء فريق العمل لديك الأجهزة Windows 10 التي تديرها. سنعرض لك كيفية [إدارة هذه الأجهزة وتأمينها](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). يضمن ذلك أن أعضاء فريق العمل الذين هم الهدف الأعلى قيمة للمتسللين يتلقون الحماية الأكبر.
+2. [ابدأ عملية الإعداد](m365bp-setup-overview.md).

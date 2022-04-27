@@ -2,8 +2,8 @@
 title: حلول تدقيق Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: تعرف على كيفية تدقيق أنشطة المستخدمين والمسؤولين في مؤسستك Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee11ee5e02ee4342921776124813b71cf4468ad7
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cc70060872c9f416120e859673ad9a3799322048
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001401"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100864"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>حلول التدقيق في Microsoft Purview
 
@@ -59,7 +59,7 @@ ms.locfileid: "65001401"
 
 - **الاحتفاظ بسجل التدقيق لمدة 90 يوما**. عند تنفيذ نشاط مدقق من قبل مستخدم أو مسؤول، يتم إنشاء سجل تدقيق وتخزينه في سجل التدقيق لمؤسستك. في Audit (Standard)، يتم الاحتفاظ بالسجلات لمدة 90 يوما، ما يعني أنه يمكنك البحث عن الأنشطة التي حدثت خلال الأشهر الثلاثة الماضية.
 
-### <a name="audit-premium"></a>التدقيق (Premium)
+### <a name="audit-premium"></a>التدقيق (متميز)
 
 يعتمد التدقيق (Premium) على قدرات التدقيق (القياسي) من خلال توفير نهج استبقاء سجل التدقيق، والاحتفاظ بسجلات التدقيق لفترة أطول، والأحداث الهامة عالية القيمة، والوصول إلى النطاق الترددي الأعلى إلى واجهة برمجة تطبيقات نشاط الإدارة Office 365.
 
@@ -77,7 +77,7 @@ ms.locfileid: "65001401"
 
 يقارن الجدول التالي القدرات الرئيسية المتوفرة في التدقيق (القياسي) والتدقيق (Premium). يتم تضمين كافة وظائف التدقيق (القياسي) في التدقيق (Premium).
 
-|القدره|التدقيق (قياسي)|التدقيق (Premium)|
+|القدره|التدقيق (قياسي)|التدقيق (متميز)|
 |:------|:-------------|:-------------|
 |ممكن بشكل افتراضي|![دعم.](../media/check-mark.png)|![دعم.](../media/check-mark.png)|
 |الآلاف من أحداث التدقيق القابلة للبحث|![دعم.](../media/check-mark.png)|![دعم.](../media/check-mark.png)|
@@ -113,7 +113,7 @@ ms.locfileid: "65001401"
 - اشتراك Office 365 Education A1
 - اشتراك Office 365 Education A3
 
-### <a name="audit-premium"></a>التدقيق (Premium)
+### <a name="audit-premium"></a>التدقيق (متميز)
 
 - اشتراك Microsoft 365 Enterprise E5
 - Microsoft 365 Enterprise اشتراك E3 + الوظيفة الإضافية التوافق في Microsoft 365 E5
@@ -146,7 +146,7 @@ ms.locfileid: "65001401"
 
 للحصول على إرشادات أكثر تفصيلا، راجع [إعداد التدقيق (قياسي).](set-up-basic-audit.md)
 
-### <a name="set-up-audit-premium"></a>إعداد التدقيق (Premium)
+### <a name="set-up-audit-premium"></a>إعداد التدقيق (متميز)
 
 إذا كان لدى مؤسستك اشتراك يدعم التدقيق (Premium)، فنفذ الخطوات التالية لإعداد القدرات الإضافية واستخدامها في Audit (Premium).
 

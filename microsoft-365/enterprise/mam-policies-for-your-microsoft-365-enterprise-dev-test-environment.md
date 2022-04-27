@@ -1,10 +1,10 @@
 ---
-title: سياسات توافق الأجهزة لبيئة Microsoft 365 اختبار المؤسسة
+title: نهج توافق الجهاز Microsoft 365 لبيئة اختبار المؤسسة
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
@@ -13,71 +13,71 @@ ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: استخدم دليل Test Lab هذا لإضافة سياسات توافق أجهزة Intune Microsoft 365 بيئة اختبار المؤسسة.
-ms.openlocfilehash: ec73211a21e9e064b729b93d9e88b7c5c69b21fe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: استخدم دليل مختبر الاختبار هذا لإضافة نهج توافق جهاز Intune إلى Microsoft 365 لبيئة اختبار المؤسسة.
+ms.openlocfilehash: 3037ca846fe74fb8de51c78799e69c510821a034
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63566687"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099444"
 ---
-# <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>سياسات توافق الأجهزة لبيئة Microsoft 365 اختبار المؤسسة
+# <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>نهج توافق الجهاز Microsoft 365 لبيئة اختبار المؤسسة
 
-*يمكن استخدام دليل Test Lab هذا فقط Microsoft 365 لبيئات اختبار المؤسسة.*
+*يمكن استخدام دليل مختبر الاختبار هذا فقط Microsoft 365 لبيئات اختبار المؤسسة.*
 
-تصف هذه المقالة كيفية إضافة نهج توافق جهاز Intune للأجهزة Windows 10 والأجهزة Microsoft 365 Apps for enterprise إلى Microsoft 365 اختبار المؤسسة.
+تصف هذه المقالة كيفية إضافة نهج توافق جهاز Intune للأجهزة Windows 10 Microsoft 365 Apps for enterprise إلى Microsoft 365 لبيئة اختبار المؤسسة.
 
 تتضمن إضافة نهج توافق جهاز Intune مرحلتين:
-- [المرحلة 1: إنشاء Microsoft 365 بيئة اختبار المؤسسة](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [المرحلة الثانية: إنشاء نهج توافق الأجهزة للأجهزة Windows 10 الأجهزة](#phase-2-create-a-device-compliance-policy-for-windows-10-devices)
+- [المرحلة 1: إنشاء Microsoft 365 لبيئة اختبار المؤسسة](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [المرحلة 2: إنشاء نهج توافق الجهاز للأجهزة Windows 10](#phase-2-create-a-device-compliance-policy-for-windows-10-devices)
 
-![اختبار دليل المعمل لسحابة Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![اختبار دلائل المختبر لسحابة Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> للحصول على خريطة مرئية لكل المقالات في Microsoft 365 دليل اختبار المؤسسة، انتقل إلى Microsoft 365 [دليل اختبار المؤسسة](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> للحصول على خريطة مرئية لجميع المقالات في Microsoft 365 لمكدس دليل مختبر اختبار المؤسسة، انتقل إلى [Microsoft 365 لمكدس دليل مختبر اختبار المؤسسة](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>المرحلة 1: إنشاء Microsoft 365 بيئة اختبار المؤسسة
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>المرحلة 1: إنشاء Microsoft 365 لبيئة اختبار المؤسسة
 
-إذا كنت تريد تكوين سياسات MAM بطريقة خفيفة فقط باستخدام الحد الأدنى من المتطلبات، فاتبع الإرشادات الموجودة في [تكوين الأساس الخفيف](lightweight-base-configuration-microsoft-365-enterprise.md).
+إذا كنت ترغب في تكوين نهج MAM بطريقة خفيفة الوزن فقط مع الحد الأدنى من المتطلبات، فاتبع الإرشادات في [التكوين الأساسي الخفيف](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-إذا كنت تريد تكوين سياسات MAM في مؤسسة محاكاة، فاتبع الإرشادات الواردة في [المصادقة المرورية](pass-through-auth-m365-ent-test-environment.md).
+إذا كنت ترغب في تكوين نهج MAM في مؤسسة محاكاة، فاتبع الإرشادات في [المصادقة التمريرية](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> لا يتطلب اختبار الترخيص التلقائي وعضوية المجموعة بيئة اختبار المؤسسة المحاكاة، التي تتضمن إنترانت محاكاة متصلة بالإنترنت ومزامنة الدليل الغابات خدمات مجال Active Directory (AD DS). يتم توفيره هنا كخيار بحيث يمكنك اختبار الترخيص التلقائي وعضوية المجموعة واختباره في بيئة تمثل مؤسسة نموذجية.
+> لا يتطلب اختبار الترخيص التلقائي وعضوية المجموعة بيئة اختبار المؤسسة المحاكاة، والتي تتضمن محاكاة إنترانت متصلة بالإنترنت ومزامنة الدليل لمجموعة خدمات مجال Active Directory (AD DS). يتم توفيره هنا كخيار بحيث يمكنك اختبار الترخيص التلقائي وعضوية المجموعة وتجربة ذلك في بيئة تمثل مؤسسة نموذجية.
 >  
 
-## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>المرحلة الثانية: إنشاء نهج توافق الأجهزة للأجهزة Windows 10 الأجهزة
+## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>المرحلة 2: إنشاء نهج توافق الجهاز للأجهزة Windows 10
 
-في هذه المرحلة، يمكنك إنشاء نهج توافق الأجهزة للأجهزة Windows 10 الأجهزة. تستخدم هذه المرحلة Microsoft Intune مركز إدارة إدارة نقاط النهاية من Microsoft لإضافة مجموعة [](https://go.microsoft.com/fwlink/?linkid=2109431) وإنشاء نهج توافق.
+في هذه المرحلة، يمكنك إنشاء نهج توافق الجهاز للأجهزة Windows 10. تستخدم هذه المرحلة Microsoft Intune [ومركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) لإضافة مجموعة وإنشاء نهج توافق.
 
-1. انتقل [إلى مركز مسؤولي Microsoft 365،](https://admin.microsoft.com) سجل الدخول إلى اشتراكك في Microsoft 365 الاختبار باستخدام حساب المسؤول العام، وحدد إدارة نقاط النهاية <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">مركز الإدارة</a>.
+1. انتقل إلى [مركز مسؤولي Microsoft 365](https://admin.microsoft.com)، وسجل الدخول إلى اشتراك مختبر الاختبار Microsoft 365 باستخدام حساب المسؤول العام، وحدد <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">مركز إدارة إدارة نقاط النهاية</a>.
 
-    إذا تم عرض رسالة مماثلة  لرسالة لم تقم بتمكين إدارة الأجهزة بعد، فحدد Intune كمرجع MDM. للحصول على الخطوات المحددة، راجع [تعيين هيئة إدارة أجهزة المحمول](/mem/intune/fundamentals/mdm-authority-set).
+    إذا كانت هناك رسالة مشابهة **لرسالة لم تقم بتمكين إدارة الجهاز بعد** ، فحدد Intune كمرجع إدارة أجهزة الهواتف المحمولة. للحصول على الخطوات [المحددة، راجع تعيين هيئة إدارة الأجهزة المحمولة](/mem/intune/fundamentals/mdm-authority-set).
 
-    يركز إدارة نقاط النهاية إدارة التطبيق على إدارة الأجهزة وإدارة التطبيقات. للحصول على جولة في مركز الإدارة هذا، راجع [البرنامج التعليمي: معاينة Intune في](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) إدارة نقاط النهاية من Microsoft.
+    يركز مركز إدارة إدارة نقاط النهاية على إدارة الأجهزة وإدارة التطبيقات. للحصول على جولة في مركز الإدارة هذا، راجع [البرنامج التعليمي: معاينة Intune في إدارة نقاط النهاية من Microsoft](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
 
-2. في **المجموعات**، أضف **مجموعة أمان Microsoft 365** أو مجموعة أمان جديدة  **Windows 10** مستخدمو الأجهزة المدارة، مع **نوع العضوية المعينة**. في الخطوات التالية، ستعين نهج التوافق لهذه المجموعة. 
+2. في **المجموعات**، أضف **Microsoft 365** جديدة أو مجموعة **أمان** باسم **مستخدمي جهاز Windows 10 المدارة**، مع نوع **عضوية معين**. في الخطوات التالية، ستقوم بتعيين نهج التوافق الخاص بك إلى هذه المجموعة. 
 
-    للحصول على الخطوات المحددة، للحصول على معلومات Microsoft 365  أو مجموعات الأمان،  راجع [إضافة مجموعات لتنظيم المستخدمين والأجهزة](/mem/intune/fundamentals/groups-add).
+    للحصول على الخطوات المحددة، للحصول على معلومات حول **Microsoft 365** أو مجموعات **الأمان**، راجع [إضافة مجموعات لتنظيم المستخدمين والأجهزة](/mem/intune/fundamentals/groups-add).
 
-3. في **الأجهزة**، أنشئ Windows 10 التوافق. قم بتعيين هذا **النهج إلى مجموعة** مستخدمي الأجهزة المدارة Windows 10 التي أنشأتها.
+3. في **الأجهزة**، قم بإنشاء نهج توافق Windows 10. قم بتعيين هذا النهج إلى مجموعة **مستخدمي الأجهزة المدارة Windows 10** التي أنشأتها.
 
-    في نهجك، يمكنك حظر كلمات المرور البسيطة، أو طلب جدار حماية، أو طلب تشغيل خدمة الحماية من البرامج الضارة من Microsoft Defender، والمزيد. يتضمن نهج التوافق عادة الإعدادات الأساسية أو الحد الأدنى الذي يجب أن يتضمنه كل جهاز.
+    في النهج الخاص بك، يمكنك حظر كلمات المرور البسيطة، وتتطلب جدار حماية، وتتطلب تشغيل خدمة Microsoft Defender Antimalware، وأكثر من ذلك. يتضمن نهج التوافق عادة الإعدادات الأساسية، أو الحد الأدنى الذي يجب أن يحتوي عليه كل جهاز.
 
-    للحصول على الخطوات المحددة، للحصول على معلومات حول إعدادات التوافق المتوفرة التي يمكنك تكوينها، راجع استخدام سياسات التوافق لتعيين قواعد للأجهزة [التي تديرها](/mem/intune/protect/device-compliance-get-started).
+    للحصول على الخطوات المحددة، للحصول على معلومات حول إعدادات التوافق المتوفرة التي يمكنك تكوينها، راجع [استخدام نهج التوافق لتعيين قواعد للأجهزة التي تديرها](/mem/intune/protect/device-compliance-get-started).
 
-عند الانتهاء، يكون لديك نهج توافق الجهاز لاختبار الأعضاء في مجموعة مستخدمي الأجهزة **المدارة** Windows 10 الأجهزة.
+عند الانتهاء، لديك نهج توافق الجهاز لاختبار الأعضاء في مجموعة **مستخدمي الأجهزة Windows 10 المدارة**.
   
 ## <a name="next-step"></a>الخطوة التالية
 
-استكشف [ميزات وإمكانيات](m365-enterprise-test-lab-guides.md#mobile-device-management) إدارة أجهزة المحمول الإضافية في بيئة الاختبار.
+استكشف ميزات [وقدرات إضافية لإدارة أجهزة المحمول](m365-enterprise-test-lab-guides.md#mobile-device-management) في بيئة الاختبار الخاصة بك.
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[Microsoft 365 دليل اختبار المؤسسة](m365-enterprise-test-lab-guides.md).
+[Microsoft 365 لدلائل مختبر اختبار المؤسسة](m365-enterprise-test-lab-guides.md).
   
-[تسجيل أجهزة iOS وAndroid في Microsoft 365 بيئة اختبار المؤسسة](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[تسجيل أجهزة iOS وAndroid في Microsoft 365 لبيئة اختبار المؤسسة](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
-[Microsoft 365 نظرة عامة حول المؤسسة](microsoft-365-overview.md)
+[نظرة عامة حول Microsoft 365 للمؤسسات](microsoft-365-overview.md)
 
 [Enterprise Mobility + Security (EMS)](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)

@@ -1,8 +1,8 @@
 ---
-title: موارد لمساعدتك على الترقية من خوادم Office 2010 والعملاء
+title: موارد لمساعدتك على الترقية من خوادم وعملاء Office 2010
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,50 +21,50 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: ابدأ التخطيط للترقية من Office 2010 وتطبيقات العميل، حيث ينتهي الدعم قريبا ولا تتوفر اتفاقيات الدعم المخصصة.
+description: ابدأ في التخطيط للترقية من خوادم Office 2010 وتطبيقات العميل، حيث ينتهي الدعم قريبا ولا تتوفر اتفاقيات الدعم المخصصة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2211df824335e0c9172f21e8ac02c45b72e19c51
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 9a27787a3b00f9a77e563c65a9d5bf68ce188b35
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63568821"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099092"
 ---
-# <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>موارد لمساعدتك على الترقية من خوادم Office 2010 والعملاء
+# <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>موارد لمساعدتك على الترقية من خوادم وعملاء Office 2010
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
-Office 2010 Exchange 2010 إلى انتهاء الدعم في **13 أكتوبر 2020**.
+وصل Office 2010 و Exchange 2010 إلى نهاية دعمهما في **13 أكتوبر 2020**.
 
-SharePoint 2010 Project Server 2010 إلى انتهاء الدعم في **13 أبريل 2021**.
+SharePoint 2010 و Project Server 2010 سوف يصلان إلى نهاية دعمهما في **13 أبريل 2021**.
 
 أثناء التخطيط للترقية، فكر في الانتقال إلى Microsoft 365.
 
-- Microsoft 365 خدمات مستندة إلى السحابة لمنتجات خوادم Office 2010، مثل Exchange Server و SharePoint Server وخدمات مثل Teams OneDrive for Business.
+- يحتوي Microsoft 365 على خدمات مستندة إلى السحابة لمنتجات خادم Office 2010، مثل Exchange Server وخادم SharePoint، وخدمات، مثل Teams OneDrive for Business.
 
-- Microsoft 365 Apps for enterprise (Office 365 ProPlus سابقا)، المضمنة مع Microsoft 365 E3 و E5، هي مجموعة تطبيقات عميل Office التي تقوم بتثبيتها على جهازك المحلي. يتم تحديثها بميزات الأمان والإنتاجية الجديدة بشكل منتظم من سحابة Microsoft.
+- Microsoft 365 Apps for enterprise (المسمى سابقا *Office 365 ProPlus*)، المضمنة مع Microsoft 365 E3 وE5، هي مجموعة تطبيقات العميل Office التي تقوم بتثبيتها على جهازك المحلي. يتم تحديثها بميزات إنتاجية وأمان جديدة بانتظام من سحابة Microsoft.
 
-للحصول على ملخص مرئي حول خيارات الترقية وا الترحيل والانتقال إلى السحابة لعملاء Office 2010 وخادم Windows 7، راجع نهاية [ملصق الدعم](../downloads/Office2010Windows7EndOfSupport.pdf).
+للحصول على ملخص مرئي لخيارات الترقية والترحيل والانتقال إلى السحابة لعملاء وخوادم Office 2010 Windows 7، راجع [نهاية ملصق الدعم](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![انتهاء الدعم لعملاء Office 2010 وملصقات Windows 7.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![نهاية دعم عملاء وخوادم Office 2010 وملصق Windows 7.](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-يلخص هذا الملصق الذي من صفحة واحدة المسارات المختلفة التي يمكنك اتخاذها لمعالجة Office عميل وخادم 2010 Windows 7 من الوصول إلى نهاية الدعم. يتم تمييز المسارات المفضلة ودعم الخيارات في Microsoft 365 Enterprise.
+يلخص هذا الملصق المكون من صفحة واحدة المسارات المختلفة التي يمكنك اتباعها للتعامل مع منتجات العميل والخادم Office 2010 Windows 7 من الوصول إلى نهاية الدعم. يتم تمييز المسارات المفضلة ودعم الخيارات في Microsoft 365 Enterprise.
 
-يمكنك أيضا تنزيل [هذا](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) الملصق وطباعته بتنسيق حرف أو قانوني أو جدولي (11 × 17).
+يمكنك أيضا [تنزيل](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) هذا الملصق وطباعته بتنسيق حرفي أو قانوني أو جدولي (11 × 17).
 
-## <a name="office-2010-client-and-server-upgrade-planning"></a>Office عميل وخادم 2010
+## <a name="office-2010-client-and-server-upgrade-planning"></a>تخطيط ترقية العميل والخادم Office 2010
 
-|لهذا المنتج|مع تاريخ انتهاء الدعم هذا|الاطلاع على هذا المورد|
+|لهذا المنتج|مع تاريخ نهاية الدعم هذا|راجع هذا المورد|
 |---|---|---|
 |Office 2010 (بما في ذلك Word 2010 و Excel 2010 و PowerPoint 2010 و Outlook 2010)|13 أكتوبر 2020 |[ مخطط نهاية دعم Office 2010](/DeployOffice/office-2010-end-support-roadmap)|
-|Exchange Server 2010|13 أكتوبر 2020|[Exchange نهاية الدعم في 2010](exchange-2010-end-of-support.md)|
+|Exchange Server 2010|13 أكتوبر 2020|[مخطط نهاية الدعم Exchange 2010](exchange-2010-end-of-support.md)|
 |SharePoint 2010 أو SharePoint Server 2010|13 أبريل 2021|[الترقية من SharePoint 2010](upgrade-from-sharepoint-2010.md)|
-|Project Server 2010|13 أبريل 2021|[Project نهاية دعم خادم 2010](project-server-2010-end-of-support.md)|
+|Project Server 2010|13 أبريل 2021|[مخطط نهاية الدعم Project Server 2010](project-server-2010-end-of-support.md)|
 |Lync Server 2010|13 أبريل 2021|[التخطيط للترقية إلى Skype for Business Server](/skypeforbusiness/plan-your-deployment/upgrade)|
 
 ## <a name="im-a-home-user-what-do-i-do"></a>أنا مستخدم منزلي. ماذا أفعل؟
 
-إذا كنت تستخدم Office وتطبيقات 2010 في المنزل، فشاهد [هذه المعلومات](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
+إذا كنت تستخدم منتجات وتطبيقات Office 2010 في المنزل، فراجع [هذه المعلومات](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
@@ -72,4 +72,4 @@ SharePoint 2010 Project Server 2010 إلى انتهاء الدعم في **13 أ�
 
 [نهج دورة حياة دعم Microsoft](/lifecycle/)
 
-[التخطيط للترقية من Office 2007 أو Office 2010 والعملاء](plan-upgrade-previous-versions-office.md)
+[التخطيط للترقية من خوادم وعملاء Office 2007 أو Office 2010](plan-upgrade-previous-versions-office.md)

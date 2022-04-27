@@ -2,8 +2,8 @@
 title: تجميع مرفقات السحابة في eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: 04/05/2022
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم المجموعات في Microsoft Purview eDiscovery (Premium) لجمع مرفقات السحابة للمراجعة في تحقيق أو حالة.
-ms.openlocfilehash: 1dd48f343f9df43edf8553e73395d756eb6713a4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4a9db59f8e8b997cdd04934c9dac161369964229
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000697"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094108"
 ---
 # <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium-preview"></a>تجميع مرفقات السحابة في Microsoft Purview eDiscovery (Premium) (معاينة)
 

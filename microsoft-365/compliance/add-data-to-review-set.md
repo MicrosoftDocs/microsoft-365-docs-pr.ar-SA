@@ -2,8 +2,8 @@
 title: إضافة نتائج البحث إلى مجموعة مراجعة
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية إضافة نتائج البحث أو عينات نتائج البحث هذه إلى مجموعة مراجعة حالة eDiscovery (Premium).
-ms.openlocfilehash: d41697f18360b277b060dd537020f9e04ef341ec
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cda1a7fcf33a5fc1b299fd2d66f7241ab1cef229
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997725"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100952"
 ---
 # <a name="add-search-results-to-a-review-set"></a>إضافة نتائج البحث إلى مجموعة مراجعة
 

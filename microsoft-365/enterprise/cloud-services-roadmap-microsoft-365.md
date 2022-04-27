@@ -1,10 +1,10 @@
 ---
-title: خارطة طريق الخدمات السحابية Microsoft 365
+title: مخطط خدمات السحابة Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
@@ -12,26 +12,26 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: المخطط لإعداد خدمات السحابة Microsoft 365.
-ms.openlocfilehash: a4c097841729c61201e74c203931c0465153d313
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: خارطة الطريق لإعداد خدمات السحابة الخاصة بك Microsoft 365.
+ms.openlocfilehash: 166db75078b8c0b3cd55d896f7fc1af9f2a00176
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634878"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092988"
 ---
-# <a name="cloud-services-roadmap-for-microsoft-365"></a>خارطة طريق الخدمات السحابية Microsoft 365
+# <a name="cloud-services-roadmap-for-microsoft-365"></a>مخطط خدمات السحابة Microsoft 365
 
-للحصول على مزايا الإبداع والعمل الجماعي والإنتاجية Microsoft 365 للمؤسسات، انتشر الخدمات السحابية الأكثر ملاءمة لاحتياجات مؤسستك.
+للحصول على مزايا الإبداع والعمل الجماعي والإنتاجية Microsoft 365 للمؤسسة، قم بنشر الخدمات السحابية التي تناسب احتياجات مؤسستك بشكل أفضل.
 
-إذا كان لديك عمليات نشر موجودة تستند إلى الخادم ل Exchange أو SharePoint أو Skype for Business وتريد ترحيل مؤسستك بالكامل إلى Microsoft 365 للمؤسسة، فشاهد خارطة طريق برنامج العميل [وخادم البرنامج](client-server-software-roadmap-microsoft-365.md). يتضمن هذا المخطط Microsoft Office العميل، ومنتجات Office الخادم المحلية، والأجهزة المستندة إلى microsoft Windows المحلية.
+إذا كانت لديك عمليات نشر موجودة تستند إلى الخادم Exchange أو SharePoint أو Skype for Business وتريد ترحيل مؤسستك بأكملها إلى Microsoft 365 للمؤسسة، فراجع [مخطط برنامج العميل والخادم](client-server-software-roadmap-microsoft-365.md). تتضمن هذه خارطة الطريق منتجات العميل Microsoft Office ومنتجات Office Server المحلية والأجهزة المستندة إلى microsoft Windows.
 
 ## <a name="deploy"></a>النشر
 
-لنشر خدمات السحابة:
+لنشر خدمات السحابة الخاصة بك:
 
-- [احصل على خدماتك جاهزة](configure-services-and-applications.md)
-- [ترحيل البيانات في الموقع إلى Microsoft 365](migrate-data-to-office-365.md)
+- [تجهيز خدماتك](configure-services-and-applications.md)
+- [ترحيل البيانات المحلية إلى Microsoft 365](migrate-data-to-office-365.md)
 - إعداد خدمات السحابة للمستخدمين
   - [Exchange Online](/Exchange/exchange-online)
   - [SharePoint](/sharepoint/sharepoint-online)
@@ -53,14 +53,14 @@ ms.locfileid: "64634878"
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [تنفيذ ضبط الأداء لخدمات السحابة](tune-microsoft-365-performance.md)
 
-## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>كيف تقوم Microsoft بالخدمات السحابية Microsoft 365
+## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>كيف تقوم Microsoft بخدمات السحابة Microsoft 365
 
-للحصول على معلومات حول كيفية نشر Microsoft IT لخدمات السحابة أو إدارتها Microsoft 365 السحابية:
+للحصول على معلومات حول كيفية نشر Microsoft IT للخدمات السحابية أو إدارتها Microsoft 365:
 
 1. انتقل إلى [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).
-2. حدد **البحث في المحتوى**.
-3. ضمن **تحسين النتائج**، حدد **PRO** ضمن **الحضور**، ثم ضمن **المنتج**، حدد خدمة سحابية.
+2. حدد **محتوى البحث**.
+3. ضمن **"تنقيح النتائج"**، حدد **Pro تكنولوجيا المعلومات** ضمن **الجماعة المستهدفة**، ثم ضمن **"المنتج**"، حدد خدمة سحابية.
 
 ## <a name="next-step"></a>الخطوة التالية
 
-ابدأ تنفيذ خدمات السحابة. للحصول على الإرشادات، [راجع تكوين Microsoft 365 Enterprise والتطبيقات](configure-services-and-applications.md).
+ابدأ تنفيذ خدمات السحابة. للحصول على إرشادات، راجع [تكوين خدمات وتطبيقات Microsoft 365 Enterprise](configure-services-and-applications.md).

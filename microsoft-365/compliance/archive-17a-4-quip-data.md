@@ -2,8 +2,8 @@
 title: إعداد موصل أرشفة بيانات Quip في Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل Quip DataParser 17a-4 واستخدامه لاستيراد بيانات Quip وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 233f4eba5a93c4176bd2ed11de965030f66d63ca
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 42ca24e72afbb6d588a08c07f7b0547692f1bdab
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999421"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091842"
 ---
 # <a name="set-up-a-connector-to-archive-quip-data"></a>إعداد موصل أرشفة بيانات Quip
 

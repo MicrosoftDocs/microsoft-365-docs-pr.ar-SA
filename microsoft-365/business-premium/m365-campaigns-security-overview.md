@@ -1,14 +1,14 @@
 ---
-title: حماية أمان لحملتك أو أعمالك
+title: رفع حماية الأمان لحملتك أو أعمالك
 f1.keywords:
 - NOCSH
 ms.author: samanro
 author: samanro
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,25 +23,30 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: تعرف على كيفية حماية حملتك الإعلانية أو أعمالك من خلال زيادة أمانك باستخدام Microsoft 365.
-ms.openlocfilehash: 608bb3c6be6821c6127ae42ce294b4c20fa13ca5
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: تعرف على كيفية حماية حملتك أو أعمالك من خلال زيادة أمانك باستخدام Microsoft 365.
+ms.openlocfilehash: 7579101d89ae013eea14a1677c6d1fdcd62f3d91
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634218"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099862"
 ---
-# <a name="bump-up-security-protection-for-your-campaign-or-business"></a>حماية أمان لحملتك أو أعمالك
+# <a name="bump-up-security-protection-for-your-campaign-or-business"></a>رفع حماية الأمان لحملتك أو أعمالك
 
 
 ## <a name="overview"></a>نظرة عامة 
-شاهد هذا الفيديو لمعرفة كيف يمكنك حماية حملتك الإعلانية أو أعمالك:
+
+هذه هي مهمتك الأولى، وكما تعلم، فإن التهديدات المحتملة للمؤسسة عديدة، ومن كل اتجاه. حتى أثناء قراءة هذا، يحاول المهاجمون الضارون اختراق طريقهم عبر دفاعاتك باستخدام البرامج الضارة وهجمات الفدية الضارة والتصيد الاحتيالي.
+
+مهمة التخطي قبلك هي تأمين جميع الحسابات في مؤسستك. اتبع الإرشادات الواردة في هذا القسم بعناية. سيساعدك ذلك بشكل كبير.
+
+ابدأ بمشاهدة هذا الفيديو للحصول على صورة شاملة حول كيفية حماية حملتك أو أعمالك:
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
 
 
-ثم اتبع الخطوات التالية:
+ثم اتخذ الخطوات التالية من أجل:
 
 - [الحماية من البرامج الضارة والتهديدات الأخرى](m365bp-increase-protection.md)
 

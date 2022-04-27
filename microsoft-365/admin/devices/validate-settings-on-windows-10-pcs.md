@@ -1,5 +1,5 @@
 ---
-title: التحقق من صحة إعدادات حماية التطبيقات Windows 10 الكمبيوتر الشخصي
+title: التحقق من صحة إعدادات حماية التطبيقات لأجهزة الكمبيوتر Windows 10
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -26,46 +26,46 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: تعرف على كيفية التحقق من أن Microsoft 365 حماية تطبيقات الأعمال قد تم تطبيقها على أجهزة Windows 10 الخاصة بك.
-ms.openlocfilehash: 47c220b36050376d1eddf7d83435f175e00f88cb
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: تعرف على كيفية التحقق من أن إعدادات حماية تطبيق Microsoft 365 للأعمال قد تم تفعيلها على أجهزة Windows 10 للمستخدمين.
+ms.openlocfilehash: c107741d87c63472310352b58872ec0b6ecc1d4d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64633272"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090652"
 ---
-# <a name="validate-device-protection-settings-for-windows-10-pcs"></a>التحقق من صحة إعدادات حماية الجهاز Windows 10 الكمبيوتر الشخصي
+# <a name="validate-device-protection-settings-for-windows-10-pcs"></a>التحقق من صحة إعدادات حماية الجهاز لأجهزة الكمبيوتر Windows 10
 
 > [!NOTE]
-> Microsoft Defender for Business هذه Microsoft 365 Business Premium العملاء، بدءا من 1 مارس 2022. يوفر هذا العرض ميزات أمان إضافية للأجهزة. [تعرف على المزيد حول Defender for Business](../../security/defender-business/mdb-overview.md).
+> يتم طرح Microsoft Defender for Business للعملاء Microsoft 365 Business Premium، بدءا من 1 مارس 2022. يوفر هذا العرض ميزات أمان إضافية للأجهزة. [تعرف على المزيد حول Defender for Business](../../security/defender-business/mdb-overview.md).
 
-## <a name="verify-that-windows-10-device-policies-are-set"></a>التحقق من Windows 10 تعيين سياسات الأجهزة
+## <a name="verify-that-windows-10-device-policies-are-set"></a>تحقق من تعيين نهج الجهاز Windows 10
 
-بعد [إعداد نهج الجهاز](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md)، قد يستغرق الأمر بضع ساعات حتى يتم تطبيق النهج على أجهزة المستخدمين. يمكنك تأكيد أن هذه السياسات قد تم تطبيقها من خلال Windows الإعدادات الشاشات على أجهزة المستخدمين. ونظرا لعدم تمكن المستخدمين من تعديل إعدادات Windows Update برنامج الحماية من الفيروسات من Microsoft Defender على أجهزتهم Windows 10، سيتم وضع العديد من الخيارات باللون الرمادي.
+بعد [إعداد نهج الجهاز](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md)، قد يستغرق تطبيق النهج على أجهزة المستخدمين ما يصل إلى بضع ساعات. يمكنك التأكد من أن النهج قد تم تفعيلها من خلال النظر إلى مختلف شاشات Windows الإعدادات على أجهزة المستخدمين. نظرا لأن المستخدمين لن يتمكنوا من تعديل الإعدادات Windows Update وإعدادات برنامج الحماية من الفيروسات من Microsoft Defender على أجهزة Windows 10 الخاصة بهم، فستظهر العديد من الخيارات باللون الرمادي.
   
-1. انتقل **إلى الإعدادات** \> **تحديث Windows Update &amp;** \>  \> **خيارات** إعادة التشغيل وتأكد من أن كل الإعدادات باللون الرمادي. 
-    
-    ![كل خيارات إعادة التشغيل باللون الرمادي.](../../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
-  
-2. انتقل إلى **الإعدادات** \> **تحديث Windows Update &amp;** \>  \> **خيارات** متقدمة وتأكد من أن كل الإعدادات باللون الرمادي. 
-    
-    ![Windows خيارات التحديثات المتقدمة باللون الرمادي.](../../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
-  
-3. انتقل إلى **الإعدادات** \> **تحديث Windows Update &amp;** \>  \> **خيارات** \> متقدمة **اختر كيفية تسليم التحديثات**.
-    
-    تأكد من أنه يمكنك رؤية الرسالة (باللون الأحمر) بأن بعض الإعدادات مخفية أو مدارة بواسطة مؤسستك، وأن كل الخيارات تظهر باللون الرمادي.
-    
-    ![اختر كيفية تسليم التحديثات صفحة تشير إلى أن الإعدادات مخفية أو مدارة بواسطة مؤسستك.](../../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
-  
-4. لفتح مركز Windows Defender،  \> **&amp;** \> انتقل إلى الإعدادات تحديث الأمان Windows **Defender** \> انقر فوق فتح Windows حماية مؤشر ترابط الفيروسات في **مركز** \> **&amp;** \> **&amp; حماية حماية الفيروسات من الفيروسات**. 
-    
-5. تحقق من أن كل الخيارات باللون الرمادي. 
-    
-    ![يتم وضع إعدادات الحماية من الفيروسات والتهديدات باللون الرمادي.](../../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
-  
-## <a name="related-content"></a>المحتوى ذي الصلة
+1. انتقل إلى **الإعدادات** \> **خيارات "تحديث &amp; الأمان** \> **" Windows Update** \> **"إعادة التشغيل**" وتأكد من أن كافة الإعدادات باللون الرمادي.
 
-[Microsoft 365 ووثائق الأعمال ومواردها](/admin)
+    ![تظهر كل خيارات إعادة التشغيل باللون الرمادي.](../../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+  
+2. انتقل إلى **الإعدادات** \> **تحديث &amp; الأمان** \> **Windows Update** \> **خيارات متقدمة** وتأكد من أن كافة الإعدادات باللون الرمادي.
 
-[تعيين تكوينات الأجهزة Windows 10 PCsTop](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
+    ![Windows خيارات التحديثات المتقدمة كلها باللون الرمادي.](../../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+  
+3. انتقل إلى **الإعدادات** \> **تحديث &amp; الأمان** \> **Windows Update** \> **خيارات** \> متقدمة **اختر كيفية تسليم التحديثات**.
+
+    تأكد من أنه يمكنك رؤية الرسالة (باللون الأحمر) التي تفيد بأن بعض الإعدادات مخفية أو مدارة من قبل مؤسستك، وأن جميع الخيارات باللون الرمادي.
+
+    ![اختر كيفية تسليم التحديثات للصفحة التي تشير إلى أن الإعدادات مخفية أو مدارة من قبل مؤسستك.](../../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
+  
+4. لفتح مركز أمان Windows Defender، انتقل إلى **الإعدادات** \> **تحديث &amp; الأمان** \> **Windows** انقر فوق "فتح \> **Windows مركز** \> حماية **فيروسات &amp;** Defender" **ضمن إعدادات الحماية من تهديدات الفيروسات&amp;**.\>
+
+5. تحقق من أن جميع الخيارات باللون الرمادي.
+
+    ![تظهر إعدادات الحماية من الفيروسات والتهديدات باللون الرمادي.](../../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
+  
+## <a name="related-content"></a>المحتويات ذات الصلة
+
+[Microsoft 365 لوثائق وموارد الأعمال](/admin)
+
+[تعيين تكوينات الجهاز لطرق Windows 10 PCsTop](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
  [10 لتأمين Microsoft 365 لخطط الأعمال](../../admin/security-and-compliance/secure-your-business-data.md)

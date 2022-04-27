@@ -2,8 +2,8 @@
 title: إعداد موصل وأرشفة بيانات صفحة ويب في Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات التقاط صفحة ويب وأرشفتها من Veritas في Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: f4ba343d8c1a06f8c1eaf88189cae5e013a76414
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1e8fdc71a2d37a80488db4d2a62ae1ab77aeb123
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001511"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094064"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>إعداد موصل أرشفة بيانات صفحة ويب
 

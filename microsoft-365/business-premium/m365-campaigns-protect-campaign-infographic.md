@@ -1,14 +1,14 @@
 ---
-title: 'رسم بياني للمعلومات: المساعدة في حماية حملتك'
+title: 'مخطط بياني للمعلومات: المساعدة في حماية حملتك'
 f1.keywords:
 - NOCSH
 ms.author: samanro
 author: samanro
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,17 +24,17 @@ search.appverid:
 - MET150
 - MOE150
 description: ما يمكنك فعله للمساعدة في حماية حملتك من الهجمات الرقمية.
-ms.openlocfilehash: 531dd980054d407f10ab0bc8d8e24dc6a7fdd9f9
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 508387313ebe0cb7255073f73d7b646f2fa12a2f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63570954"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099972"
 ---
-# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>رسم بياني للمعلومات: المساعدة في حماية نفسك لحملتك من التهديدات الرقمية
+# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>مخطط بياني للمعلومات: المساعدة في حماية نفسك وحملتك من التهديدات الرقمية
 
-يمكن تنزيل الارتباطات PowerPoint و PDF وطباعتها بتنسيق tabloid (يعرف أيضا بدفتر الأستاذ أو 11 × 17 أو A3).
+يمكن تنزيل الارتباطات التالية PowerPoint وPDF وطباعتها بتنسيق tabloid (المعروف أيضا باسم دفتر الأستاذ أو 11 × 17 أو A3).
 
-[![صورة لتأمين المساعدة في حماية رسم معلومات الحملة.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[![صورة لتأمين المساعدة في حماية رسم معلومات حملتك.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) |  [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)

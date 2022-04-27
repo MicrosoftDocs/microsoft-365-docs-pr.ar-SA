@@ -1,7 +1,7 @@
 ---
-title: تعرف على لغة استعلام الصيد المتقدمة في Microsoft 365 Defender
-description: إنشاء استعلام البحث عن المخاطر الأول وتعرف على العوامل الشائعة والجوانب الأخرى للغة استعلام الصيد المتقدم
-keywords: الصيد المتقدم، وصيد التهديدات، والصيد عبر الإنترنت، و Microsoft 365 Defender، و microsoft 365، و m365، و البحث، والاستعلام، واللغة، والتعلم، والاستعلام الأول، والتعقب، والأحداث، والتعقب، والكشف المخصص، والم المخطط، و kusto، و عوامل التشغيل، وأنواع البيانات، وتنزيل powershell، مثال الاستعلام
+title: تعرف على لغة استعلام التتبع المتقدمة في Microsoft 365 Defender
+description: إنشاء استعلام التتبع للمخاطر الأول والتعرف على عوامل التشغيل الشائعة والجوانب الأخرى للغة استعلام التتبع المتقدمة
+keywords: التتبع المتقدم، وتتبع التهديدات، وتتبع التهديدات عبر الإنترنت، Microsoft 365 Defender، وmicrosoft 365، وm365، والبحث، والاستعلام، واللغة، والتعلم، والاستعلام الأول، وبيانات تتبع الاستخدام، والأحداث، وبيانات تتبع الاستخدام، والكشف المخصص، والمخطط، وkusto، وعوامل التشغيل، وأنواع البيانات، وتنزيل powershell، مثال الاستعلام
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,33 +20,33 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7092b4ed30400fb559751d4d939801c1982407f8
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 5e474505eecca0c42aa919b42364a1ad54c27e17
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "63570180"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094715"
 ---
-# <a name="learn-the-advanced-hunting-query-language"></a>تعرف على لغة استعلام الصيد المتقدمة
+# <a name="learn-the-advanced-hunting-query-language"></a>تعلم لغة استعلام التتبع المتقدمة
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **ينطبق على:**
 - Microsoft 365 Defender
-- Microsoft Defender لنقطة النهاية
+- Microsoft Defender for Endpoint
 
-يستند الصيد المتقدم إلى لغة [استعلام Kusto](/azure/kusto/query/). يمكنك استخدام عوامل تشغيل وعبارات Kusto لإنشاء استعلامات تحدد موقع المعلومات في مخطط [متخصص](advanced-hunting-schema-tables.md). 
+يعتمد التتبع المتقدم على [لغة استعلام Kusto](/azure/kusto/query/). يمكنك استخدام عوامل تشغيل وعبارات Kusto لإنشاء استعلامات تحدد موقع المعلومات في [مخطط](advanced-hunting-schema-tables.md) متخصص. 
 
-شاهد هذا الفيديو القصير للتعرف على بعض أساسيات لغة استعلام Kusto.
+شاهد هذا الفيديو القصير لمعرفة بعض أساسيات لغة استعلام Kusto.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
  
-لفهم هذه المفاهيم بشكل أفضل، ادير الاستعلام الأول.
+لفهم هذه المفاهيم بشكل أفضل، قم بتشغيل الاستعلام الأول.
 
-## <a name="try-your-first-query"></a>تجربة الاستعلام الأول
+## <a name="try-your-first-query"></a>جرب استعلامك الأول
 
-في Microsoft 365 Defender، انتقل إلى **البحث لتشغيل** الاستعلام الأول. استخدم المثال التالي: 
+في مدخل Microsoft 365 Defender، انتقل إلى **التتبع** لتشغيل الاستعلام الأول. استخدم المثال التالي: 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -68,29 +68,29 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-**[تشغيل هذا الاستعلام في البحث المتقدم](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
+**[تشغيل هذا الاستعلام في التتبع المتقدم](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
-### <a name="describe-the-query-and-specify-the-tables-to-search"></a>وصف الاستعلام وتحديد الجداول التي تريد البحث عنها
-لقد تم إضافة تعليق قصير إلى بداية الاستعلام لوصف ما هو من أجله. يساعد هذا التعليق إذا قررت لاحقا حفظ الاستعلام ومشاركته مع الآخرين في مؤسستك. 
+### <a name="describe-the-query-and-specify-the-tables-to-search"></a>وصف الاستعلام وتحديد الجداول التي تريد البحث فيها
+تمت إضافة تعليق قصير إلى بداية الاستعلام لوصف ما هو مخصص له. يساعد هذا التعليق إذا قررت لاحقا حفظ الاستعلام ومشاركته مع الآخرين في مؤسستك. 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
 ```
 
-يبدأ الاستعلام نفسه عادة باسم جدول متبوع بعدة عناصر تبدأ بالانبوب (`|`). في هذا المثال، نبدأ بإنشاء اتحاد من جدولين  `DeviceProcessEvents` `DeviceNetworkEvents`، و ، وإضافة عناصر منقطة حسب الحاجة.
+عادة ما يبدأ الاستعلام نفسه باسم جدول متبوعا بعدة عناصر تبدأ بمسار (`|`). في هذا المثال، نبدأ بإنشاء اتحاد من جدولين، و`DeviceNetworkEvents`، `DeviceProcessEvents` وإضافة عناصر piped حسب الحاجة.
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>تعيين النطاق الزمني
-إن العنصر الأول الذي يتم الوصول به إلى نقاط هو عامل تصفية الوقت الذي تم تحديد نطاقه إلى الأيام السبعة السابقة. يساعد تحديد النطاق الزمني على ضمان أداء الاستعلامات بشكل جيد، وإرجاع نتائج يمكن إدارتها، و عدم المهلة.
+العنصر الأول الذي يتم تحريكه هو عامل تصفية الوقت الذي تم تحديد نطاقه إلى الأيام السبعة السابقة. يساعد تحديد النطاق الزمني على ضمان أداء الاستعلامات بشكل جيد، وإرجاع نتائج يمكن إدارتها، ولا مهلة.
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
 ### <a name="check-specific-processes"></a>التحقق من عمليات معينة
-يتبع النطاق الزمني مباشرة البحث عن أسماء ملفات المعالجة التي تمثل تطبيق PowerShell.
+يتبع النطاق الزمني على الفور عملية بحث عن أسماء ملفات المعالجة التي تمثل تطبيق PowerShell.
 
 ```kusto
 // Pivoting on PowerShell processes
@@ -98,7 +98,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="search-for-specific-command-strings"></a>البحث عن سلاسل أوامر معينة
-بعد ذلك، سيبحث الاستعلام عن السلاسل في أسطر الأوامر التي يتم استخدامها عادة لتنزيل الملفات باستخدام PowerShell.
+بعد ذلك، يبحث الاستعلام عن سلاسل في سطور الأوامر التي تستخدم عادة لتنزيل الملفات باستخدام PowerShell.
 
 ```kusto
 // Suspicious commands
@@ -113,7 +113,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="customize-result-columns-and-length"></a>تخصيص أعمدة النتائج وطولها 
-الآن بعد أن حدد الاستعلام بوضوح البيانات التي تريد تحديد موقعها، يمكنك تحديد شكل النتائج. `project` إرجاع أعمدة معينة، `top` وحصر عدد النتائج. تساعد عوامل التشغيل هذه على ضمان تنسيق النتائج بشكل جيد وكبيرة إلى حد ما وسهلة المعالجة.
+الآن بعد أن حدد الاستعلام البيانات التي تريد تحديد موقعها بوضوح، يمكنك تحديد شكل النتائج. `project` إرجاع أعمدة معينة، والحد `top` من عدد النتائج. تساعد عوامل التشغيل هذه في ضمان أن النتائج منسقة بشكل جيد وكبيرة إلى حد معقول وسهلة المعالجة.
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -121,73 +121,84 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-حدد **تشغيل الاستعلام** لرؤية النتائج.
+حدد **"تشغيل الاستعلام** " لمشاهدة النتائج.
 
 >[!TIP]
->يمكنك عرض نتائج الاستعلام كمخططات وضبط عوامل التصفية بسرعة. للحصول على الإرشادات [، اقرأ حول استخدام نتائج الاستعلام](advanced-hunting-query-results.md)
+>يمكنك عرض نتائج الاستعلام كمخططات وضبط عوامل التصفية بسرعة. للحصول على إرشادات، [اقرأ حول استخدام نتائج الاستعلام](advanced-hunting-query-results.md)
 
-## <a name="learn-common-query-operators"></a>تعرف على عوامل تشغيل الاستعلامات الشائعة
+## <a name="learn-common-query-operators"></a>تعرف على عوامل تشغيل الاستعلام الشائعة
 
-لقد قمت للتو بتشغيل الاستعلام الأول لديك وفكرة عامة حول مكوناته. لقد حان الوقت للتراجع قليلا وتعرف على بعض الأساسيات. تدعم لغة استعلام Kusto المستخدمة بواسطة الصيد المتقدم مجموعة من العوامل، بما في ذلك العوامل الشائعة التالية.
+لقد قمت بتشغيل استعلامك الأول ولديك فكرة عامة عن مكوناته. حان الوقت للتراجع قليلا وتعلم بعض الأساسيات. تدعم لغة استعلام Kusto المستخدمة من قبل التتبع المتقدم مجموعة من عوامل التشغيل، بما في ذلك العوامل الشائعة التالية.
 
-| عامل التشغيل | الوصف والاستخدام |
+| المشغل | الوصف والاستخدام |
 |--|--|
-| `where` | تصفية جدول إلى المجموعة الفرعية للصفوف التي تفي بالتكريس. |
-| `summarize` | إنتاج جدول يجمع محتوى جدول الإدخال. |
-| `join` | يمكنك دمج صفوف جدولين لتشكيل جدول جديد من خلال مطابقة قيم الأعمدة المحددة من كل جدول. |
+| `where` | تصفية جدول إلى مجموعة فرعية من الصفوف التي تلبي دالة تقييم. |
+| `summarize` | إنشاء جدول يجمع محتوى جدول الإدخال. |
+| `join` | دمج صفوف جدولين لتشكيل جدول جديد عن طريق مطابقة قيم العمود (الأعمدة) المحددة من كل جدول. |
 | `count` | إرجاع عدد السجلات في مجموعة سجلات الإدخال. |
-| `top` | إرجاع أول سجلات N تم فرزها حسب الأعمدة المحددة. |
-| `limit` | الرجوع إلى عدد الصفوف المحدد. |
-| `project` | حدد الأعمدة لتضمينها وإعادة تسميتها أو إسقاطها وإدراج أعمدة محسبة جديدة. |
-| `extend` | إنشاء أعمدة محسوبة و إلحاقها مجموعة النتائج. |
-| `makeset` |  إرجاع صفيف ديناميكي (JSON) لمجموعة القيم المميزة التي يأخذها Expr في المجموعة. |
-| `find` | ابحث عن الصفوف التي تتطابق مع أحد الإعدادات عبر مجموعة من الجداول. |
+| `top` | إرجاع السجلات N الأولى التي تم فرزها حسب الأعمدة المحددة. |
+| `limit` | العودة إلى العدد المحدد من الصفوف. |
+| `project` | حدد الأعمدة لتضمينها وإعادة تسميتها أو إسقاطها وإدراج أعمدة محسوبة جديدة. |
+| `extend` | إنشاء أعمدة محسوبة وإلحاقها بمجموعة النتائج. |
+| `makeset` |  إرجاع صفيف ديناميكي (JSON) من مجموعة القيم المميزة التي يأخذها Expr في المجموعة. |
+| `find` | ابحث عن صفوف تتطابق مع دالة تقييم عبر مجموعة من الجداول. |
 
-لرؤية مثال مباشر على عوامل التشغيل هذه، يمكنك تشغيلها من القسم **بدء** العمل في عملية الصيد المتقدمة.
+لمشاهدة مثال مباشر على عوامل التشغيل هذه، قم بتشغيلها من قسم **بدء الاستخدام** في التتبع المتقدم.
 
 ## <a name="understand-data-types"></a>فهم أنواع البيانات
 
-يدعم الصيد المتقدم أنواع بيانات Kusto، بما في ذلك الأنواع الشائعة التالية:
+يدعم التتبع المتقدم أنواع بيانات Kusto، بما في ذلك الأنواع الشائعة التالية:
 
 | نوع البيانات | الآثار المترتبة على الوصف والاستعلام |
 |--|--|
-| `datetime` | تمثل معلومات البيانات والوقت عادة الamps الزمنية للحدث. [الاطلاع على تنسيقات التاريخ المعتمدة](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
-| `string` | سلسلة أحرف في UTF-8 محاطة بين علامات اقتباس مفردة (`'`) أو علامات اقتباس مزدوجة (`"`). [قراءة المزيد حول السلاسل](/azure/data-explorer/kusto/query/scalar-data-types/string) |
-| `bool` | يدعم نوع البيانات هذا `true` الحالات أو `false` يدعمها. [الاطلاع على الحرفيات و عوامل التشغيل المعتمدة](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `datetime` | تمثل البيانات ومعلومات الوقت عادة الطوابع الزمنية للحدث. [الاطلاع على تنسيقات التاريخ المعتمدة](/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | سلسلة الأحرف في UTF-8 محاطة بعلامات اقتباس مفردة (`'`) أو علامات اقتباس مزدوجة (`"`). [قراءة المزيد حول السلاسل](/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | يعتمد `true` نوع البيانات هذا أو `false` الحالات. [الاطلاع على القيم الحرفية وعوامل التشغيل المعتمدة](/azure/data-explorer/kusto/query/scalar-data-types/bool) |
 | `int` | عدد صحيح 32 بت  |
 | `long` | عدد صحيح 64 بت |
 
-لمعرفة المزيد حول أنواع البيانات هذه، [اقرأ حول أنواع بيانات كستو عددية](/azure/data-explorer/kusto/query/scalar-data-types/).
+لمعرفة المزيد حول أنواع البيانات هذه، [اقرأ عن أنواع بيانات Kusto العددية](/azure/data-explorer/kusto/query/scalar-data-types/).
 
-## <a name="get-help-as-you-write-queries"></a>الحصول على تعليمات عند كتابة الاستعلامات
+## <a name="get-help-as-you-write-queries"></a>الحصول على المساعدة أثناء كتابة الاستعلامات
 استفد من الوظائف التالية لكتابة الاستعلامات بشكل أسرع:
-- **"الاقتراح التلقائي"**، بينما تكتب الاستعلامات، يوفر البحث المتقدم اقتراحات من IntelliSense. 
-- **شجرة المخططات**— تمثيل مخطط يتضمن قائمة الجداول والأعمدة الخاصة بها إلى جانب منطقة العمل. لمزيد من المعلومات، مرر فوق عنصر. انقر نقرا مزدوجا فوق عنصر لإدراجه في محرر الاستعلام.
-- **[مرجع المخطط —](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** مرجع داخل المدخل مع أوصاف الأعمدة والأعمدة بالإضافة إلى أنواع الأحداث المعتمدة (`ActionType` القيم) والاستعلامات العينة
+- **Autosuggest** — أثناء كتابة الاستعلامات، يوفر التتبع المتقدم اقتراحات من IntelliSense. 
+- **شجرة المخطط** — يتم توفير تمثيل مخطط يتضمن قائمة الجداول والأعمدة الخاصة بها إلى جانب منطقة العمل. لمزيد من المعلومات، مرر مؤشر الماوس فوق عنصر. انقر نقرا مزدوجا فوق عنصر لإدراجه في محرر الاستعلام.
+- **[مرجع المخطط](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** - مرجع في المدخل مع أوصاف الجدول والأعمدة بالإضافة إلى أنواع الأحداث المعتمدة (`ActionType` القيم) واستعلامات العينة
 
-## <a name="work-with-multiple-queries-in-the-editor"></a>استخدام استعلامات متعددة في المحرر
+## <a name="work-with-multiple-queries-in-the-editor"></a>العمل مع استعلامات متعددة في المحرر
 يمكنك استخدام محرر الاستعلام لتجربة استعلامات متعددة. لاستخدام استعلامات متعددة:
 
-- افصل كل استعلام باستخدام سطر فارغ.
-- ضع المؤشر على أي جزء من الاستعلام لتحديد ذلك الاستعلام قبل تشغيله. سيتم تشغيل الاستعلام المحدد فقط. لتشغيل استعلام آخر، حرك المؤشر وفقا لذلك وحدد **تشغيل الاستعلام**.
+- افصل كل استعلام بسطر فارغ.
+- ضع المؤشر على أي جزء من الاستعلام لتحديد هذا الاستعلام قبل تشغيله. سيؤدي ذلك إلى تشغيل الاستعلام المحدد فقط. لتشغيل استعلام آخر، انقل المؤشر وفقا لذلك وحدد **"تشغيل الاستعلام**".
 
-:::image type="content" source="../../media/learn-work-with-multiple.png" alt-text="مثال لتنفيذ استعلامات متعددة في صفحة **استعلام جديد** في Microsoft 365 Defender" lightbox="../../media/learn-work-with-multiple.png":::
+:::image type="content" source="../../media/multiple-queries.png" alt-text="مثال على تنفيذ استعلامات متعددة في صفحة **New query** في مدخل Microsoft 365 Defender" lightbox="../../media/multiple-queries.png":::
+
+للحصول على مساحة عمل أكثر كفاءة، يمكنك أيضا استخدام علامات تبويب متعددة في نفس صفحة التتبع. حدد **استعلاما جديدا** لفتح علامة تبويب للاستعلام الجديد.
+
+:::image type="content" source="../../media/multitab.png" alt-text="مثال على تنفيذ استعلامات متعددة في صفحة **New query** في مدخل Microsoft 365 Defender" lightbox="../../media/multitab.png":::
+
+يمكنك بعد ذلك تشغيل استعلامات مختلفة دون فتح علامة تبويب مستعرض جديدة. 
+
+:::image type="content" source="../../media/multitab-examples.png" alt-text="مثال على تنفيذ استعلامات متعددة في صفحة **New query** في مدخل Microsoft 365 Defender" lightbox="../../media/multitab-examples.png":::
+
+>[!NOTE] 
+> تخاطر بفقدان الاستعلامات غير المحفوظة إذا فتحت علامة تبويب مستعرض جديدة لاستعلام جديد.
 
 ## <a name="use-sample-queries"></a>استخدام استعلامات نموذجية
 
-يوفر **القسم بدء** استخدام بعض الاستعلامات البسيطة باستخدام عوامل التشغيل الشائع استخدامها. حاول تشغيل هذه الاستعلامات وأجري تعديلات صغيرة عليها.
+يوفر قسم **"بدء الاستخدام"** بعض الاستعلامات البسيطة باستخدام عوامل التشغيل شائعة الاستخدام. حاول تشغيل هذه الاستعلامات وإجراء تعديلات صغيرة عليها.
 
-:::image type="content" source="../../media/get-started-section.png" alt-text="المقطع **بدء استخدام** في صفحة ***أدوات الصيد المتقدمة** في مدخل Microsoft 365 Defender" lightbox="../../media/get-started-section.png":::
+:::image type="content" source="../../media/get-started-section.png" alt-text="قسم **Getting started** في صفحة **Advanced hunting** في مدخل Microsoft 365 Defender" lightbox="../../media/get-started-section.png":::
 
 >[!NOTE]
->وبصرف النظر عن نماذج الاستعلامات الأساسية، يمكنك أيضا الوصول إلى الاستعلامات [المشتركة](advanced-hunting-shared-queries.md) لسيناريوهات محددة لتعقب المخاطر. استكشف الاستعلامات المشتركة على الجانب الأيمن من الصفحة أو مستودع GitHub [الاستعلام.](https://aka.ms/hunting-queries)
+>وبصرف النظر عن نماذج الاستعلام الأساسية، يمكنك أيضا الوصول إلى [الاستعلامات المشتركة](advanced-hunting-shared-queries.md) لسيناريوهات محددة للبحث عن التهديدات. استكشف الاستعلامات المشتركة على الجانب الأيمن من الصفحة أو [مستودع استعلام GitHub](https://aka.ms/hunting-queries).
 
 ## <a name="access-query-language-documentation"></a>وثائق لغة استعلام Access
 
-لمزيد من المعلومات حول لغة استعلام Kusto و عوامل التشغيل المعتمدة، راجع [وثائق لغة استعلام Kusto](/azure/kusto/query/).
+لمزيد من المعلومات حول لغة استعلام Kusto وعوامل التشغيل المدعومة، راجع [وثائق لغة الاستعلام Kusto](/azure/kusto/query/).
 
 >[!NOTE]
->قد لا تتوفر بعض الجداول في هذه المقالة في Microsoft Defender for Endpoint. [قم Microsoft 365 Defender](m365d-enable.md) للبحث عن التهديدات باستخدام المزيد من مصادر البيانات. يمكنك نقل مهام سير عمل الصيد المتقدمة من Microsoft Defender ل Endpoint إلى Microsoft 365 Defender باتباع الخطوات الواردة في ترحيل استعلامات الصيد المتقدمة من [Microsoft Defender ل Endpoint](advanced-hunting-migrate-from-mde.md).
+>قد لا تتوفر بعض الجداول في هذه المقالة في Microsoft Defender لنقطة النهاية. [قم بتشغيل Microsoft 365 Defender](m365d-enable.md) للبحث عن التهديدات باستخدام المزيد من مصادر البيانات. يمكنك نقل مهام سير عمل التتبع المتقدمة من Microsoft Defender لنقطة النهاية إلى Microsoft 365 Defender باتباع الخطوات الواردة في [ترحيل استعلامات التتبع المتقدمة من Microsoft Defender لنقطة النهاية](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 - [نظرة عامة متقدمة حول الصيد](advanced-hunting-overview.md)

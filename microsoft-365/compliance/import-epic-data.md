@@ -2,8 +2,8 @@
 title: إعداد موصل لاستيراد بيانات Epic EHR
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل بيانات لاستيراد بيانات سجلات الرعاية الصحية الإلكترونية (EHR) من نظام Epic الخاص بمؤسستك إلى Microsoft 365. يتيح لك ذلك استخدام بيانات Epic EHR في نهج إدارة المخاطر الداخلية لمساعدتك على اكتشاف نشاط وصول غير مصرح به إلى بيانات المرضى من قبل موظفيك.
-ms.openlocfilehash: 1dfcedbc6242f16ce476dddd642567bef69c966f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 55f33358af7b53dc6042fce94b1ddc92e9f130fa
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000125"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078016"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>إعداد موصل لاستيراد بيانات تدقيق Epic EHR (معاينة)
 

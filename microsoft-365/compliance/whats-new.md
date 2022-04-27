@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: سواء كان ذلك بإضافة حلول جديدة إلى مركز الامتثال، أو تحديث الميزات الحالية استنادا إلى ملاحظاتك، أو طرح وثائق جديدة ومحدثة، Microsoft 365 يساعدك على البقاء على اطلاع على مشهد الامتثال المتغير باستمرار. تعرف على ما كنا عليه حتى هذا الشهر.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b5f231abfbfe943f0b2ab0cf33a14267f0940820
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: b79015ce0ca55bf9a74b6acac8f38f09b9e5e984
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972464"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100512"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>الجديد في Microsoft Purview
 
@@ -52,21 +52,73 @@ ms.locfileid: "64972464"
 | **الاسم السابق** | **اسم جديد** | **الوصف** |
 |:----------------|:-------------|:----------------|
 | التدقيق المتقدم Microsoft 365 <br><br> التدقيق الأساسي Microsoft 365 | تدقيق Microsoft Purview (Premium) <br><br> تدقيق Microsoft Purview (قياسي)| توفر حلول التدقيق حلا متكاملا لمساعدة المؤسسات على الاستجابة الفعالة للأحداث الأمنية والتحقيقات الجنائية والتحقيقات الداخلية والتزامات الامتثال. لمعرفة المزيد، راجع [Microsoft Purview Advanced Audit (Premium)](advanced-audit.md) [وMicrosoft Purview Advanced Audit (Standard).](set-up-basic-audit.md) |
-| توافق الاتصالات Microsoft 365 | توافق الاتصالات مع Microsoft Purview | يساعد توافق الاتصالات على تقليل المخاطر من خلال مساعدتك على اكتشاف إجراءات المعالجة والتقاطها واتخاذها بسرعة لقنوات اتصالات الشركة وانتهاكات النهج. لمعرفة المزيد، راجع [Microsoft Purview Communication Compliance](communication-compliance-solution-overview.md). |
+| توافق الاتصالات Microsoft 365 | توافق الاتصالات لـ Microsoft Purview | يساعد توافق الاتصالات على تقليل المخاطر من خلال مساعدتك على اكتشاف إجراءات المعالجة والتقاطها واتخاذها بسرعة لقنوات اتصالات الشركة وانتهاكات النهج. لمعرفة المزيد، راجع [Microsoft Purview Communication Compliance](communication-compliance-solution-overview.md). |
 | Microsoft Compliance Manager | Microsoft Purview Compliance Manager | يمكن أن يساعدك Compliance Manager طوال رحلة الامتثال الخاصة بك، بدءا من جرد مخاطر حماية البيانات إلى إدارة تعقيدات تنفيذ عناصر التحكم، والبقاء على اطلاع دائم باللوائح والشهادات، وإعداد التقارير إلى المراجعين. لمعرفة المزيد، راجع [Microsoft Purview Compliance Manager](compliance-manager.md). |
 | مفتاح العميل Microsoft 365 | مفتاح عميل Microsoft Purview | يوفر Customer Key حماية إضافية ضد عرض البيانات من قبل أنظمة أو موظفين غير مصرح لهم، ويكمل تشفير قرص BitLocker في مراكز بيانات Microsoft. لمعرفة المزيد، راجع [مفتاح عميل Microsoft Purview](customer-key-overview.md). |
 | Office 365 Customer Lockbox | مربع تأمين عميل Microsoft Purview | يضمن Customer Lockbox عدم تمكن Microsoft من الوصول إلى المحتوى الخاص بك للقيام بعمليات الخدمة دون موافقتك الصريحة. ينقلك مربع تأمين العميل إلى عملية سير عمل الموافقة التي تستخدمها Microsoft لضمان أن الطلبات المعتمدة فقط تسمح بالوصول إلى المحتوى الخاص بك. لمعرفة المزيد، راجع [Microsoft Purview Customer Lockbox](customer-lockbox-requests.md). |
 | منع فقدان البيانات | منع فقدان بيانات Microsoft Purview | يساعد DLP على حماية البيانات الحساسة وتقليل المخاطر من خلال منع المستخدمين من مشاركة تلك البيانات بشكل غير مناسب مع الأشخاص الذين لا ينبغي أن تكون لديهم. لمعرفة المزيد، راجع [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md). |
 | تشفير المفتاح المزدوج Microsoft 365 | تشفير المفتاح المزدوج ل Microsoft Purview | يستخدم تشفير المفتاح المزدوج (DKE) مفتاحين معا للوصول إلى المحتوى المحمي. تخزن Microsoft مفتاحا واحدا في Microsoft Azure، وتحتفظ بالمفتاح الآخر. لمعرفة المزيد، راجع [تشفير المفتاح المزدوج ل Microsoft Purview](double-key-encryption.md) |
-| حواجز المعلومات Microsoft 365 | حواجز معلومات Microsoft Purview | تعد حواجز المعلومات حلا يقيد الاتصال والتعاون بين أشخاص معينين داخل مؤسستك لحماية المعلومات الداخلية. لمعرفة المزيد، راجع [حواجز معلومات Microsoft Purview](information-barriers-solution-overview.md). |
+| حواجز المعلومات Microsoft 365 | موانع إبلاغ المعلومات في Microsoft Purview | تعد حواجز المعلومات حلا يقيد الاتصال والتعاون بين أشخاص معينين داخل مؤسستك لحماية المعلومات الداخلية. لمعرفة المزيد، راجع [حواجز معلومات Microsoft Purview](information-barriers-solution-overview.md). |
 | حماية البيانات في Microsoft | Microsoft Purview حماية البيانات | تساعدك حماية المعلومات على اكتشاف المعلومات الحساسة وتصنيفها وحمايتها أينما كانت تعيش أو تنتقل. لمعرفة المزيد، راجع [microsoft Purview حماية البيانات](information-protection.md). |
 | حوكمة المعلومات في Microsoft | إدارة دورة حياة بيانات Microsoft Purview | توفر لك إدارة دورة حياة البيانات الأدوات والقدرات للاحتفاظ بالمحتوى الذي تحتاج إليه للاحتفاظ بالمحتوى الذي لا تريده وحذفه. لمعرفة المزيد، راجع [إدارة دورة حياة بيانات Microsoft Purview](data-lifecycle-management.md). |
-| Microsoft 365 Insider Risk Management | إدارة المخاطر الداخلية في Microsoft Purview | تستخدم إدارة المخاطر الداخلية النطاق الكامل للخدمة ومؤشرات الجهات الخارجية لمساعدتك على تحديد نشاط المستخدم المحفوفة بالمخاطر وفرزه والعمل عليه بسرعة. لمعرفة المزيد، راجع [Microsoft Purview Insider Risk Management](insider-risk-management.md). |
+| Microsoft 365 Insider Risk Management | إدارة المخاطر الداخلية لـ Microsoft Purview | تستخدم إدارة المخاطر الداخلية النطاق الكامل للخدمة ومؤشرات الجهات الخارجية لمساعدتك على تحديد نشاط المستخدم المحفوفة بالمخاطر وفرزه والعمل عليه بسرعة. لمعرفة المزيد، راجع [Microsoft Purview Insider Risk Management](insider-risk-management.md). |
 | تشفير الرسائل Office 365 | تشفير رسائل Microsoft Purview | باستخدام تشفير الرسائل، يمكن لمؤسستك إرسال رسائل البريد الإلكتروني المشفرة وتلقيها بين أشخاص داخل مؤسستك وخارجها. لمعرفة المزيد، راجع [تشفير رسائل "Microsoft Purview](ome.md)". |
 | إدارة الوصول المتميز في Microsoft 365 | إدارة الوصول المتميز لـ Microsoft Purview | تساعد إدارة الوصول المتميز على حماية مؤسستك من الخروقات وتساعد على تلبية أفضل ممارسات التوافق من خلال الحد من الوصول الدائم إلى البيانات الحساسة أو الوصول إلى إعدادات التكوين الهامة. لمعرفة المزيد، راجع [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md). |
 | موصلات بيانات Microsoft | موصلات بيانات Microsoft Purview | يتيح Microsoft 365 للمسؤولين استخدام موصلات البيانات لاستيراد البيانات غير الخاصة ب Microsoft وأرشفتها، وبيانات الجهات الخارجية من أنظمة الوسائط الاجتماعية وأنظمة المراسلة الفورية وأنظمة التعاون الأساسية للمستندات، إلى علب البريد في مؤسستك Microsoft 365. لمعرفة المزيد، راجع [موصلات بيانات Microsoft Purview](compliance-extensibility.md). |
-| eDiscovery المتقدم في Microsoft 365 <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (قياسي) | الاكتشاف الإلكتروني، أو eDiscovery، هو عملية تحديد وتقديم المعلومات الإلكترونية التي يمكن استخدامها كدليل في الحالات القانونية. لمعرفة المزيد، راجع [Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md) [وMicrosoft Purview eDiscovery (Standard).](get-started-core-ediscovery.md) |
+| eDiscovery المتقدم في Microsoft 365 <br><br> Microsoft 365 Core eDiscovery | الاكتشاف الإلكتروني لـ Microsoft Purview (Premium) <br><br> الاكتشاف الإلكتروني لـ Microsoft Purview (قياسي) | الاكتشاف الإلكتروني، أو eDiscovery، هو عملية تحديد وتقديم المعلومات الإلكترونية التي يمكن استخدامها كدليل في الحالات القانونية. لمعرفة المزيد، راجع [Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md) [وMicrosoft Purview eDiscovery (Standard).](get-started-core-ediscovery.md) |
 | مركز التوافق في Microsoft 365 | مدخل توافق Microsoft Purview | مدخل المسؤول للوصول إلى الحلول وكتالوج الحلول داخل مجموعة التوافق في Microsoft 365 E5. لمعرفة المزيد، راجع مدخل [توافق Microsoft Purview](microsoft-365-compliance-center.md). |
+
+## <a name="march-2022"></a>مارس 2022
+
+### <a name="communication-compliance"></a>توافق الاتصالات
+
+- [التحقيق في تنبيهات التوافق مع الاتصالات ومعالجتها](communication-compliance-investigate-remediate.md) - إرشادات تمت إزالتها لطريقة عرض التعليق التوضيحي المهملة.
+
+### <a name="compliance-manager"></a>إدارة التوافق
+
+- [العمل مع إجراءات التحسين](compliance-manager-improvement-actions.md)، [بدء استخدام Compliance Manager](compliance-manager-setup.md) - إضافة معلومات حول المزيد من إجراءات التحسين التي يمكن مراقبتها واختبارها تلقائيا ("تقييم الامتثال المستمر")؛ وهذا يتضمن قدرات جديدة لأصل حالة اختبار إجراء ما إلى حالة إجراء آخر.
+
+### <a name="data-classification"></a>تصنيف البيانات
+
+- [بدء الاستخدام مع مستكشف المحتوى](data-classification-content-explorer.md) - تمت إضافة إرشادات Teams، ويشير قسم الترخيص إلى أوصاف الخدمة.
+
+### <a name="data-lifecycle-management-and-records-management"></a>إدارة دورة حياة البيانات وإدارة السجلات
+
+- نهج [الاستبقاء Yammer](create-retention-policies.md#retention-policy-for-yammer-locations) متاحة الآن بشكل عام (GA).
+- دعم القنوات المشتركة، قيد المعاينة حاليا. عند تكوين نهج استبقاء لموقع رسالة القناة Teams، ترث أي قنوات مشتركة إعدادات الاستبقاء من فريقها الأصل.
+- [حدود لكل مستأجر للتخلص من المحتوى](retention-limits.md#maximum-number-of-items-for-disposition).
+
+### <a name="data-loss-prevention"></a>منع فقدان البيانات
+
+- [منع فقدان البيانات Microsoft Teams](dlp-microsoft-teams.md) - المعاينة العامة لمحتوى قنوات مشاركة Teams.
+- [بدء استخدام ملحق التوافق من Microsoft](dlp-chrome-get-started.md) - المعاينة العامة لمجموعات التطبيقات المقيدة، وإزالة إرشادات مفتاح التسجيل، والتكوين ممكن الآن بشكل افتراضي.
+- [تكوين إعدادات منع فقدان بيانات نقطة النهاية](dlp-configure-endpoint-settings.md) - جديد للمعاينة العامة لمجموعات التطبيقات المقيدة.
+- [مرجع نهج منع فقدان البيانات](dlp-policy-reference.md) - محدث للمعاينة العامة لمجموعات التطبيقات المقيدة.
+- [ابدأ في منع فقدان البيانات ل Power BI](dlp-powerbi-get-started.md) - جديد للمعاينة العامة.
+
+### <a name="insider-risk-management"></a>إدارة المخاطر الداخلية
+
+- [البدء في إدارة المخاطر الداخلية](insider-risk-management-configure.md) - إضافة مهام جديدة لإرشادات الإجراءات الموصى بها.
+- [ابدأ بإعدادات إدارة المخاطر الداخلية](insider-risk-management-settings.md) - تحديثات جديدة لميزات الإعلامات وتنبيهات البريد الإلكتروني، وتحديثات جديدة لإعلامات التحليلات.
+
+### <a name="microsoft-information-protection"></a>حماية البيانات في Microsoft
+
+- [دعم ملاحظات إصدار مجموعة أحرف البايت المزدوجة](mip-dbcs-relnotes.md) - تمت إضافة إرشادات لنظام التشغيل macOS.
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [تكوين إعدادات Priva](/privacy/priva/priva-settings) - معلومات توضيحية محدثة حول فترات استبقاء البيانات لطلبات حقوق الموضوع؛ إضافة تفاصيل حول إدارة علامات مراجعة البيانات وتطبيقها لطلبات حقوق الموضوع.
+- [إنشاء طلب حقوق الموضوع](/privacy/priva/subject-rights-requests-create) - إضافة تفاصيل حول تحسين عمليات البحث واختيار الشروط والسمات؛ إضافة معلومات حول الوظائف الجديدة التي تتيح للمستخدمين تحديد كافة إصدارات عناصر SharePoint في بحثهم (مقابل الإعداد الافتراضي، الذي يرجع فقط الإصدار الحالي من عناصر SharePoint).
+- [مراجعة البيانات لطلب حقوق الموضوع](/privacy/priva/subject-rights-requests-data-review) - إضافة تفاصيل في الخطوة 3 لمراجعة العناصر أثناء مرحلة مراجعة البيانات، بما في ذلك وضع علامة على الملفات على أنها تضمين/استبعاد، وإضافة تعليقات توضيحية إلى الملفات لتطبيق عمليات المراجعة، وتطبيق العلامات، وإدخال الملاحظات.
+- [إنشاء تقارير واستيفاء طلب حقوق الموضوع](/privacy/priva/subject-rights-requests-reports) - إضافة تفاصيل حول كيفية فهم التقارير؛ توضيح وقت إنشاء حزمة تصدير وكيفية العمل مع محتوياتها؛ إضافة معلومات حول سجلات التدقيق وتقارير الملفات ذات العلامات وفترات الاستبقاء لبيانات وتقارير SRR.
+
+### <a name="sensitivity-labels"></a>تسميات الحساسية
+
+- [أوصاف الحساسية Teams](sensitivity-labels-teams-groups-sites.md):
+  - دعم القنوات المشتركة، قيد المعاينة حاليا. إذا كان لدى الفريق أي قنوات مشتركة، فإنه يرث تلقائيا إعدادات وصف الحساسية من فريقه الأصل، ولا يمكن إزالة هذه التسمية أو استبدالها بتسمية مختلفة.
+  - دعم القوالب، المدرجة سابقا على أنها [غير معتمدة مع واجهات برمجة التطبيقات Teams Graph وPowerShell cmdlets]( /microsoftteams/sensitivity-labels#limitations).  
+- للتدقيق في Word Excel PowerPoint على الويب، يتم الآن نشر نص الضبط بالكامل.
+- يتم الآن تطبيق تسمية افتراضية على المستندات الموجودة ل Word Excel PowerPoint على الويب بالكامل.
 
 ## <a name="february-2022"></a>فبراير 2022
 
@@ -109,7 +161,7 @@ ms.locfileid: "64972464"
 
 - دعم [مجموعات الأدوار والأدوار](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels) الجديدة، الآن في المعاينة.
 - [قدرات مراقبة](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) جديدة لنهج التسمية التلقائية.
-- يتم الآن طرح: تسمية افتراضية للمستندات الموجودة في خيار التحديث الحالي (معاينة)، ونص ضبط Office على الويب.
+- الطرح الآن: التسمية الافتراضية للمستندات الموجودة، ونص الضبط Office على الويب.
 - تم الإعلان عنه لقناة Enterprise Semi-Annual يوليو مع الإصدار 2202+: التأليف المشترك والتدقيق Outlook.
 
 ## <a name="december-2021"></a>ديسمبر 2021

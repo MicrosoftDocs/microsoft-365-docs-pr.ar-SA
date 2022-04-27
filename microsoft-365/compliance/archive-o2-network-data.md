@@ -2,8 +2,8 @@
 title: إعداد موصل أرشفة بيانات شبكة O2 في Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/06/2022
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل TeleMessage لاستيراد بيانات SMS و MMS وأرشفتها من شبكة O2 للأجهزة المحمولة في Microsoft 365. يتيح لك ذلك أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: eb8bec7aa81963d9bdd1617f022a9352378d8f08
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 525420c3c838cdab677c08f07910bd709b774715
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994601"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077536"
 ---
 # <a name="set-up-a-connector-to-archive-o2-network-data"></a>إعداد موصل إلى أرشفة بيانات شبكة O2
 

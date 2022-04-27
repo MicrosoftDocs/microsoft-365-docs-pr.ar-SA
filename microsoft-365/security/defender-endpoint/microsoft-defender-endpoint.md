@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3a67d73475301096df8be691f2c5e0dc6db23db8
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 77766c153582f519aa0ba9853d18c216092747bc
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862181"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092294"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -81,8 +81,8 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان
 > - أظهرت Microsoft Defender لنقطة النهاية البصريات الرائدة في الصناعة وقدرات الكشف في تقييم MITRE الأخير. قراءة: [Insights من التقييم المستند إلى MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 
->[!IMPORTANT]
->قد تختلف القدرات على الأنظمة الأساسية غير Windows عن تلك الخاصة Windows. لمزيد من المعلومات حول القدرات المتوفرة للأنظمة الأساسية غير Windows، راجع [Microsoft Defender لنقطة النهاية للأنظمة الأساسية غير Windows](/security/defender-endpoint/non-windows).
+> [!IMPORTANT]
+> قد تختلف القدرات على الأنظمة الأساسية غير Windows عن تلك الخاصة Windows. لمزيد من المعلومات حول القدرات المتوفرة للأنظمة الأساسية غير Windows، راجع [Microsoft Defender لنقطة النهاية للأنظمة الأساسية غير Windows](/microsoft-365/security/defender-endpoint/non-windows).
 
 <a name="tvm"></a>
 
@@ -153,7 +153,7 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان
 
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)**
 
-باستخدام Microsoft 365 Defender، يشكل Defender لنقطة النهاية وحلول أمان Microsoft المختلفة مجموعة دفاع موحدة لما قبل الخرق وما بعده تتكامل أصلا عبر نقطة النهاية والهوية والبريد الإلكتروني والتطبيقات للكشف عن الهجمات المتطورة ومنعها والتحقيق فيها والاستجابة لها تلقائيا.
+من خلال Microsoft 365 Defender و Defender for Endpoint وحلول أمان Microsoft المختلفة، يمكنك تشكيل مجموعة دفاع موحدة لما قبل الخرق وما بعده تتكامل أصلا عبر نقطة النهاية والهوية والبريد الإلكتروني والتطبيقات للكشف عن الهجمات المتطورة ومنعها والتحقيق فيها والاستجابة لها تلقائيا.
 
 
 ## <a name="training-for-security-analysts"></a>تدريب لمحللين أمنيين

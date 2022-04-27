@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - GEA150
 description: تعرف على كيفية الحصول على تقرير استخدام مستعرض Microsoft باستخدام لوحة معلومات تقارير Microsoft 365 في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: 29b4161b9bb6cbc509d6541e13fa9222628534b4
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 5515c00b5c7fc64a6f0295bdce724e5b798fb018
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782006"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078310"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>تقارير Microsoft 365 في مركز الإدارة - استخدام مستعرض Microsoft
 
-تعرض لك لوحة معلومات تقارير Microsoft 365 نظرة عامة على النشاط عبر المنتجات في مؤسستك. يمكنك من التعمق في تقارير مستوى المنتج الفردية لمنحك نظرة ثاقبة أكثر دقة حول الأنشطة داخل كل منتج. اطلع [على موضوع نظرة عامة على التقارير](activity-reports.md). في تقرير استخدام مستعرض Microsoft، يمكنك الحصول على رؤى حول Internet Explorer الإصدار القديم من Microsoft Edge واستخدام Microsoft Edge جديد. يستند إعداد تقارير الاستخدام إلى Microsoft 365 خدمات الإنترنت الوصول إليها باستخدام مستعرض Microsoft.
+تعرض لك لوحة معلومات تقارير Microsoft 365 نظرة عامة على النشاط عبر المنتجات في مؤسستك. يمكنك من التعمق في تقارير مستوى المنتج الفردية لمنحك نظرة ثاقبة أكثر دقة حول الأنشطة داخل كل منتج. اطلع [على موضوع نظرة عامة على التقارير](activity-reports.md). في تقرير استخدام مستعرض Microsoft، يمكنك الحصول على رؤى حول Internet Explorer الإصدار القديم من Microsoft Edge واستخدام Microsoft Edge جديد. يستند إعداد تقارير الاستخدام إلى Microsoft 365 خدمات الإنترنت الوصول باستخدام مستعرض Microsoft على أي جهاز يستخدم حساب Microsoft 365.
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>كيفية الوصول إلى تقرير استخدام مستعرض Microsoft
 
