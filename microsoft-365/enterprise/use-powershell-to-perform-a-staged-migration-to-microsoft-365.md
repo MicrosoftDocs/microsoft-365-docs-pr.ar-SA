@@ -1,8 +1,8 @@
 ---
-title: استخدم PowerShell لتنفيذ عملية ترحيل مرحلي Microsoft 365
+title: استخدم PowerShell لإجراء ترحيل مرحلي إلى Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
@@ -17,55 +17,55 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: تعرف على كيفية استخدام PowerShell لنقل المحتوى من نظام البريد الإلكتروني المصدر مع مرور الوقت باستخدام الترحيل Microsoft 365.
-ms.openlocfilehash: 562dcb8f32a0cd2b8452f2145dcb608dac353e2f
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+description: تعرف على كيفية استخدام PowerShell لنقل المحتوى من نظام بريد إلكتروني مصدر بمرور الوقت باستخدام ترحيل مرحلي إلى Microsoft 365.
+ms.openlocfilehash: 872ae883728e1c20a6233e14e56bda804e757590
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "63576904"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091952"
 ---
-# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>استخدم PowerShell لتنفيذ عملية ترحيل مرحلي Microsoft 365
+# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>استخدم PowerShell لإجراء ترحيل مرحلي إلى Microsoft 365
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
-يمكنك ترحيل محتويات علب بريد المستخدمين من نظام البريد الإلكتروني المصدر Microsoft 365 مع مرور الوقت باستخدام الترحيل المرحلة.
+يمكنك ترحيل محتويات علب بريد المستخدمين من نظام بريد إلكتروني مصدر إلى Microsoft 365 بمرور الوقت باستخدام ترحيل مرحلي.
 
-تريك هذه المقالة المهام المتدخلة في عملية ترحيل البريد الإلكتروني على مراحل باستخدام Exchange Online PowerShell. يقدم لك الموضوع [، ما تحتاج إلى معرفته حول](/Exchange/mailbox-migration/what-to-know-about-a-staged-migration) الترحيل المراحلي للبريد الإلكتروني، نظرة عامة حول عملية الترحيل. عندما ترتاح في استخدام محتويات هذه المقالة، استخدم هذه المقالة لبدء عملية تهجر علب البريد من نظام بريد إلكتروني إلى آخر.
+ترشدك هذه المقالة خلال المهام المتضمنة في ترحيل البريد الإلكتروني المرحلي باستخدام Exchange Online PowerShell. يوفر لك الموضوع، [الذي تحتاج إلى معرفته حول الترحيل المرحلي للبريد الإلكتروني](/Exchange/mailbox-migration/what-to-know-about-a-staged-migration)، نظرة عامة على عملية الترحيل. عندما تتعرف على محتويات هذه المقالة، استخدم هذه المقالة لبدء ترحيل علب البريد من نظام بريد إلكتروني إلى آخر.
 
 > [!NOTE]
-> يمكنك أيضا استخدام مركز إدارة Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">لتنفيذ</a> الترحيل المراحلي. راجع [تنفيذ عملية ترحيل مرحلي للبريد الإلكتروني Microsoft 365](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration).
+> يمكنك أيضا استخدام <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a> لإجراء الترحيل المرحلي. راجع [إجراء ترحيل مرحلي للبريد الإلكتروني إلى Microsoft 365](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
-الوقت المقدر لإكمال هذه المهمة: 2-5 دقائق لإنشاء دفعة ترحيل. بعد بدء دفعة الترحيل، ستختلف مدة الترحيل استنادا إلى عدد علب البريد في الدفعة وحجم كل علبة بريد و سعة الشبكة المتوفرة. للحصول على معلومات حول عوامل أخرى تؤثر على الوقت المستغرق لترحيل علب البريد Microsoft 365، راجع [أداء الترحيل](/Exchange/mailbox-migration/office-365-migration-best-practices).
+الوقت المقدر لإكمال هذه المهمة: 2-5 دقائق لإنشاء دفعة ترحيل. بعد بدء دفعة الترحيل، ستختلف مدة الترحيل استنادا إلى عدد علب البريد في الدفعة وحجم كل علبة بريد وسعة الشبكة المتوفرة. للحصول على معلومات حول العوامل الأخرى التي تؤثر على المدة التي يستغرقها ترحيل علب البريد إلى Microsoft 365، راجع ["أداء الترحيل](/Exchange/mailbox-migration/office-365-migration-best-practices)".
 
-يجب تعيين أذونات لك قبل تنفيذ هذا الإجراء أو الإجراءات. لمعرفة الأذونات التي تحتاج إليها، راجع إدخال "الترحيل" في الموضوع [أذونات المستلمين](/exchange/recipients-permissions-exchange-2013-help) .
+يجب تعيين أذونات لك قبل أن تتمكن من تنفيذ هذا الإجراء أو الإجراءات. للاطلاع على الأذونات التي تحتاجها، راجع إدخال "الترحيل" في موضوع ["أذونات المستلمين](/exchange/recipients-permissions-exchange-2013-help) ".
 
-لاستخدام Exchange Online Cmdlets في PowerShell، ستحتاج إلى تسجيل الدخول واستيراد cmdlets إلى جلسة Windows PowerShell المحلية. راجع [الاتصال Exchange Online استخدام PowerShell البعيد](/powershell/exchange/connect-to-exchange-online-powershell) للحصول على الإرشادات.
+لاستخدام Exchange Online PowerShell cmdlets، تحتاج إلى تسجيل الدخول واستيراد أوامر cmdlets إلى جلسة Windows PowerShell المحلية. راجع [الاتصال Exchange Online باستخدام PowerShell البعيد](/powershell/exchange/connect-to-exchange-online-powershell) للحصول على الإرشادات.
 
-للحصول على قائمة كاملة من أوامر الترحيل، راجع [أوامر cmdlets](/powershell/exchange/) الخاصة بالنقل وا الترحيل.
+للحصول على قائمة كاملة بأوامر الترحيل، راجع [أوامر cmdlets للتنقل والترحيل](/powershell/exchange/).
 
 ## <a name="migration-steps"></a>خطوات الترحيل
 
-### <a name="step-1-prepare-for-a-staged-migration"></a>الخطوة 1: التحضير لهجرة مرحلية
+### <a name="step-1-prepare-for-a-staged-migration"></a>الخطوة 1: الاستعداد لل ترحيل مرحلي
 
-قبل ترحيل علب البريد إلى Microsoft 365 الترحيل المراحلي، يجب إدخال بعض التغييرات على بيئة Exchange الخاصة بك.
+قبل ترحيل علب البريد إلى Microsoft 365 باستخدام ترحيل مرحلي، يجب إجراء بعض التغييرات على بيئة Exchange.
 
- **تكوين Outlook في** أي مكان على موقعك المحلي Exchange Server تستخدم خدمة ترحيل البريد الإلكتروني Outlook من أي مكان (المعروف أيضا باسم RPC عبر HTTP)، للاتصال ببريدك المحلي Exchange Server. للحصول على معلومات حول كيفية إعداد Outlook أي مكان Exchange Server 2007، Exchange 2003، راجع ما يلي:
+ **تكوين Outlook في أي مكان على Exchange Server** تستخدم خدمة ترحيل البريد الإلكتروني Outlook أي مكان (المعروف أيضا باسم RPC عبر HTTP)، للاتصال Exchange Server المحلية. للحصول على معلومات حول كيفية إعداد Outlook في أي مكان ل Exchange Server 2007، Exchange 2003، راجع ما يلي:
 
-- [Exchange 2007: كيفية تمكين Outlook أي مكان](/previous-versions/office/exchange-server-2007/bb123889(v=exchg.80))
+- [Exchange 2007: كيفية تمكين Outlook في أي مكان](/previous-versions/office/exchange-server-2007/bb123889(v=exchg.80))
 
-- [كيفية تكوين Outlook أي مكان باستخدام Exchange 2003](/previous-versions/office/exchange-server-2007/aa996922(v=exchg.80))
+- [كيفية تكوين Outlook في أي مكان باستخدام Exchange 2003](/previous-versions/office/exchange-server-2007/aa996922(v=exchg.80))
 
 > [!IMPORTANT]
-> يجب عليك استخدام شهادة صادرة عن مرجع ممصادقة موثوق به (CA) مع تكوين Outlook أي مكان. Outlook في أي مكان باستخدام شهادة موقعة ذاتيا. لمزيد من المعلومات، [راجع كيفية تكوين SSL Outlook أي مكان](/previous-versions/office/exchange-server-2007/aa995982(v=exchg.80)).
+> يجب استخدام شهادة صادرة عن مرجع مصدق موثوق به (CA) مع تكوين Outlook في أي مكان. لا يمكن تكوين Outlook في أي مكان باستخدام شهادة موقعة ذاتيا. لمزيد من المعلومات، راجع [كيفية تكوين SSL Outlook في أي مكان](/previous-versions/office/exchange-server-2007/aa995982(v=exchg.80)).
 
- **اختياري: تحقق من أنه** يمكنك الاتصال Exchange باستخدام Outlook في أي مكان جرب أحد الأساليب التالية لاختبار إعدادات الاتصال.
+ **اختياري: تحقق من إمكانية الاتصال بمؤسستك Exchange باستخدام Outlook في أي مكان** جرب أحد الأساليب التالية لاختبار إعدادات الاتصال.
 
-- استخدم Outlook من خارج شبكة الشركة للاتصال لعلبة بريدك المحلية Exchange البريد.
+- استخدم Outlook من خارج شبكة الشركة للاتصال بعلبة بريد Exchange المحلية.
 
-- استخدم [محلل الاتصال عن بعد من Microsoft](https://https://testconnectivity.microsoft.com/) لاختبار إعدادات الاتصال. استخدم Outlook أي مكان (RPC عبر HTTP) أو Outlook الاكتشاف التلقائي.
+- استخدم [Microsoft Remote Connectivity Analyzer](https://https://testconnectivity.microsoft.com/) لاختبار إعدادات الاتصال. استخدم اختبارات Outlook في أي مكان (RPC عبر HTTP) أو Outlook Autodiscover.
 
 - تشغيل الأوامر التالية في Exchange Online PowerShell:
 
@@ -77,50 +77,50 @@ ms.locfileid: "63576904"
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
- **تعيين الأذونات** يجب أن يكون لحساب المستخدم المحلي الذي تستخدمه للاتصال بمنظمة Exchange المحلية (تسمى أيضا مسؤول الترحيل) الأذونات اللازمة للوصول إلى علب البريد المحلية التي تريد ترحيلها إلى Microsoft 365. يتم استخدام حساب المستخدم هذا عند الاتصال لنظام البريد الإلكتروني الخاص بك عن طريق إنشاء نقطة نهاية ترحيل لاحقا في هذا الإجراء الخطوة [3: إنشاء نقطة نهاية ترحيل](#step-3-create-a-migration-endpoint).
+ **تعيين الأذونات** يجب أن يكون لحساب المستخدم المحلي الذي تستخدمه للاتصال بمؤسسة Exchange المحلية (التي تسمى أيضا مسؤول الترحيل) الأذونات اللازمة للوصول إلى علب البريد المحلية التي تريد ترحيلها إلى Microsoft 365. يتم استخدام حساب المستخدم هذا عند الاتصال بنظام البريد الإلكتروني الخاص بك عن طريق إنشاء نقطة نهاية ترحيل لاحقا في هذا الإجراء [الخطوة 3: إنشاء نقطة نهاية ترحيل](#step-3-create-a-migration-endpoint).
 
-لترحيل علب البريد، يجب أن يكون لدى المسؤول إحدى مجموعات الأذونات التالية:
+بترحيل علب البريد، يجب أن يكون لدى المسؤول إحدى مجموعات الأذونات التالية:
 
-- كن عضوا في مجموعة **"مسؤولو المجالات** " في Active Directory في المؤسسة المحلي.
+- كن عضوا في مجموعة **"مسؤولي المجال** " في Active Directory في المؤسسة المحلية.
 
-    أو
+    او
 
-- أن يتم تعيين إذن **FullAccess لكل** علبة بريد في الموقع وإذن **WriteProperty** لتعديل الخاصية **TargetAddress** على حسابات المستخدمين في الموقع.
+- يجب تعيين إذن **FullAccess** لكل علبة بريد محلية وإذن **WriteProperty** لتعديل **الخاصية TargetAddress** على حسابات المستخدمين المحلية.
 
-    أو
+    او
 
-- تعيين الإذن **"** تلقي ك" في قاعدة بيانات علبة البريد المحلية التي تخزن علب بريد المستخدمين والإذن **WriteProperty** لتعديل الخاصية **TargetAddress** على حسابات المستخدمين المحلية.
+- يجب تعيين إذن **"تلقي باسم** " على قاعدة بيانات علبة البريد المحلية التي تخزن علب بريد المستخدمين وإذن **WriteProperty** لتعديل **الخاصية TargetAddress** على حسابات المستخدمين المحلية.
 
-للحصول على إرشادات حول كيفية تعيين هذه الأذونات، راجع تعيين أذونات لترحيل علب البريد [إلى Microsoft 365](/Exchange/mailbox-migration/assign-permissions-for-migration).
+للحصول على إرشادات حول كيفية تعيين هذه الأذونات، راجع [تعيين أذونات ترحيل علب البريد إلى Microsoft 365](/Exchange/mailbox-migration/assign-permissions-for-migration).
 
- **تعطيل المراسلة الموحدة (UM)** إذا تم تشغيل UM لعلب البريد المحلية التي تقوم ب ترحيلها، ف قم إيقاف تشغيل UM قبل الترحيل. قم تشغيل UM لعلب البريد بعد اكتمال الترحيل. للحصول على خطوات حول كيفية القيام بذلك، يمكنك الاطلاع على المراسلة [الموحدة القابلة للانعقاد](/previous-versions/office/exchange-server-2007/bb124691(v=exchg.80)).
+ **تعطيل المراسلة الموحدة (UM)** إذا كانت المراسلة الموحدة قيد التشغيل لعلب البريد المحلية التي تقوم بترحيلها، فقم بإيقاف تشغيل المراسلة الموحدة قبل الترحيل. قم بتشغيل المراسلة الموحدة لعلب البريد بعد اكتمال الترحيل. للحصول على خطوات إرشادية، يمكنك الاطلاع [على المراسلة الموحدة القابلة للرؤى](/previous-versions/office/exchange-server-2007/bb124691(v=exchg.80)).
 
- **استخدم مزامنة الدليل لإنشاء مستخدمين جدد في Microsoft 365.** يمكنك استخدام مزامنة الدليل لإنشاء جميع المستخدمين في مؤسستك Microsoft 365.
+ **استخدم مزامنة الدليل لإنشاء مستخدمين جدد في Microsoft 365.** يمكنك استخدام مزامنة الدليل لإنشاء كافة المستخدمين المحليين في مؤسسة Microsoft 365.
 
-ستحتاج إلى ترخيص المستخدمين بعد إنشائهم. لديك 30 يوما لإضافة التراخيص بعد إنشاء المستخدمين. للحصول على خطوات لإضافة التراخيص، راجع [الخطوة 8: إكمال مهام ما بعد الترحيل](#step-8-complete-post-migration-tasks).
+تحتاج إلى ترخيص المستخدمين بعد إنشائهم. لديك 30 يوما لإضافة تراخيص بعد إنشاء المستخدمين. للحصول على خطوات لإضافة تراخيص، راجع [الخطوة 8: إكمال مهام ما بعد الترحيل](#step-8-complete-post-migration-tasks).
 
- يمكنك استخدام أداة Microsoft Azure Active Directory (Azure AD) أو Microsoft Azure AD Sync Services لمزامنة المستخدمين المحليين وإنشاءهم في Microsoft 365. بعد ترحيل علب البريد إلى Microsoft 365، يمكنك إدارة حسابات المستخدمين في مؤسستك المحلية، ومزامنتها مع Microsoft 365 الخاصة بك. لمزيد من المعلومات، راجع [تكامل البيانات](/previous-versions/azure/azure-services/jj573653(v=azure.100)) .
+ يمكنك استخدام أداة مزامنة Microsoft Azure Active Directory (Azure AD) أو Microsoft Azure AD Sync Services لمزامنة المستخدمين المحليين وإنشاءهم في Microsoft 365. بعد ترحيل علب البريد إلى Microsoft 365، يمكنك إدارة حسابات المستخدمين في مؤسستك المحلية، وتتم مزامنتها مع مؤسستك Microsoft 365. لمزيد من المعلومات، راجع [تكامل الدليل](/previous-versions/azure/azure-services/jj573653(v=azure.100)) .
 
-### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>الخطوة 2: إنشاء ملف CSV دفعة ترحيل مرحلة
+### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>الخطوة 2: إنشاء ملف CSV دفعة ترحيل مرحلي
 
-بعد تحديد المستخدمين الذين تريد ترحيل علب بريدهم المحلية إلى Microsoft 365، يمكنك استخدام ملف قيم مفصولة بفصول (CSV) لإنشاء دفعة ترحيل. يحتوي كل صف في ملف CSV Microsoft 365 يستخدمه المستخدم لتشغيل الترحيل، على معلومات حول علبة بريد في الموقع.
+بعد تحديد المستخدمين الذين تريد ترحيل علب البريد المحلية الخاصة بهم إلى Microsoft 365، يمكنك استخدام ملف قيمة مفصولة بفواصل (CSV) لإنشاء دفعة ترحيل. يحتوي كل صف في ملف CSV، الذي تستخدمه Microsoft 365 لتشغيل الترحيل، على معلومات حول علبة بريد محلية.
 
 > [!NOTE]
-> لا يوجد حد لعدد علب البريد التي يمكنك ترحيلها إلى Microsoft 365 الترحيل المرحلة. يمكن أن يحتوي ملف CSV الخاص بدفعة ترحيل على 2000 صف كحد أقصى. لترحيل أكثر من 2000 علبة بريد، قم بإنشاء ملفات CSV إضافية واستخدام كل ملف لإنشاء دفعة ترحيل جديدة.
+> لا يوجد حد لعدد علب البريد التي يمكنك ترحيلها إلى Microsoft 365 باستخدام ترحيل مرحلي. يمكن أن يحتوي ملف CSV دفعة ترحيل على 2000 صف كحد أقصى. لنقل أكثر من 2000 علبة بريد، قم بإنشاء ملفات CSV إضافية واستخدم كل ملف لإنشاء دفعة ترحيل جديدة.
 
- **السمات المعتمدة**
+ **السمات المدعومة**
 
-يدعم ملف CSV ل الترحيل المراحلي السمات الثلاث التالية. يتوافق كل صف في ملف CSV مع علبة بريد ويجب أن يحتوي على قيمة لكل سمة من هذه السمات.
+يدعم ملف CSV لل ترحيل مرحلي السمات الثلاث التالية. يتوافق كل صف في ملف CSV مع علبة بريد ويجب أن يحتوي على قيمة لكل من هذه السمات.
 
-|**السمة**|**الوصف**|**مطلوب؟**|
+|**السمه**|**الوصف**|**مطلوب؟**|
 |:-----|:-----|:-----|
-|EmailAddress  <br/> |يحدد عنوان البريد الإلكتروني SMTP الأساسي، على سبيل pilarp@contoso.com، لعلب البريد المحلية.  <br/> استخدم عنوان SMTP الأساسي لعلب البريد المحلية وليس لم تعريفات المستخدمين من Microsoft 365. على سبيل المثال، إذا كان المجال المسمى contoso.com ولكن مجال البريد الإلكتروني في Microsoft 365 يسمى service.contoso.com، يمكنك استخدام اسم مجال contoso.com عناوين البريد الإلكتروني في ملف CSV.  <br/> |مطلوب  <br/> |
-|كلمة المرور  <br/> |كلمة المرور التي سيتم تعيينها لعلبة بريد Microsoft 365 الجديدة. تنطبق أيضا أي قيود كلمات مرور يتم تطبيقها على Microsoft 365 المؤسسة على كلمات المرور المضمنة في ملف CSV.  <br/> |اختياري  <br/> |
-|ForceChangePassword  <br/> |يحدد ما إذا كان يجب على المستخدم تغيير كلمة المرور في المرة الأولى التي يقوم فيها تسجيل الدخول إلى علبة بريده الجديدة Microsoft 365 البريد. استخدم **True** أو **False** لقيمة هذه المعلمة. <br/> > [!NOTE]> إذا قمت بتنفيذ حل تسجيل الدخول الفردي (SSO) من خلال نشر خدمات اتحاد Active Directory (AD FS) أو أكثر في مؤسستك المحلية، فيجب استخدام **False** لقيمة السمة **ForceChangePassword** .          |اختياري  <br/> |
+|Emailaddress  <br/> |تحديد عنوان البريد الإلكتروني SMTP الأساسي، على سبيل المثال، pilarp@contoso.com، لعلب البريد المحلية.  <br/> استخدم عنوان SMTP الأساسي لعلب البريد المحلية وليس معرفات المستخدمين من Microsoft 365. على سبيل المثال، إذا تمت تسمية المجال المحلي contoso.com ولكن تمت تسمية مجال البريد الإلكتروني Microsoft 365 service.contoso.com، يمكنك استخدام اسم المجال contoso.com لعناوين البريد الإلكتروني في ملف CSV.  <br/> |مطلوب  <br/> |
+|كلمه المرور  <br/> |كلمة المرور التي سيتم تعيينها لعل بريد Microsoft 365 الجديد. تنطبق أيضا أي قيود على كلمة المرور يتم تطبيقها على مؤسسة Microsoft 365 على كلمات المرور المضمنة في ملف CSV.  <br/> |اختياري  <br/> |
+|ForceChangePassword  <br/> |تحديد ما إذا كان يجب على المستخدم تغيير كلمة المرور في المرة الأولى التي يقوم فيها بتسجيل الدخول إلى علبة بريد Microsoft 365 الجديدة. استخدم **True** أو **False** لقيمة هذه المعلمة. <br/> > [!NOTE]> إذا قمت بتنفيذ حل تسجيل الدخول الأحادي (SSO) عن طريق نشر خدمات الأمان المشترك لـ Active Directory (AD FS) أو أكبر في مؤسستك المحلية، يجب استخدام **False** لقيمة سمة **ForceChangePassword**.          |اختياري  <br/> |
 
  **تنسيق الملف CSV**
 
-في ما يلي مثال على تنسيق ملف CSV. في هذا المثال، يتم ترحيل ثلاث علب بريد المحلية إلى Microsoft 365.
+في ما يلي مثال على تنسيق ملف CSV. في هذا المثال، يتم ترحيل ثلاث علب بريد محلية إلى Microsoft 365.
 
 يسرد الصف الأول أو صف الرأس، من ملف CSV أسماء السمات أو الحقول المحددة في الصفوف التالية. يتم الفصل بين كل اسم من أسماء السمات بفاصلة.
 
@@ -131,20 +131,20 @@ tobyn@contoso.com,Pa$$w0rd,False
 briant@contoso.com,Pa$$w0rd,False
 ```
 
-يمثل كل صف أسفل صف الرأس مستخدما واحدا ويزوده بالمعلومات التي سيتم استخدامها لترحيل علبة بريد المستخدم. يجب أن تكون قيم السمات في كل صف بنفس ترتيب أسماء السمات في صف الرأس.
+يمثل كل صف أسفل صف الرأس مستخدما واحدا ويقدم المعلومات التي سيتم استخدامها في ترحيل علبة بريد المستخدم. يجب أن تكون قيم السمات في كل صف بنفس ترتيب أسماء السمات في صف الرأس.
 
-استخدم أي محرر نص أو تطبيق مثل Excel ، لإنشاء ملف CSV. احفظ الملف كملف .csv أو .txt.
+استخدم أي محرر نص، أو تطبيق مثل Excel، لإنشاء ملف CSV. احفظ الملف كملف .csv أو .txt.
 
 > [!NOTE]
-> إذا كان الملف CSV يحتوي على أحرف غير ASCII أو أحرف خاصة، فقم بحفظ ملف CSV بترميز UTF-8 أو بترميز Unicode آخر. استنادا إلى التطبيق، قد يكون حفظ ملف CSV باستخدام ترميز UTF-8 أو ترميز Unicode آخر أسهل عندما تطابق لغات النظام المحلية للكمبيوتر اللغة المستخدمة في ملف CSV.
+> إذا كان الملف CSV يحتوي على أحرف غير ASCII أو أحرف خاصة، فقم بحفظ ملف CSV بترميز UTF-8 أو بترميز Unicode آخر. اعتمادا على التطبيق، يمكن أن يكون حفظ ملف CSV مع ترميز UTF-8 أو ترميز Unicode آخر أسهل عندما تتطابق الإعدادات المحلية للنظام للكمبيوتر مع اللغة المستخدمة في ملف CSV.
 
 ### <a name="step-3-create-a-migration-endpoint"></a>الخطوة 3: إنشاء نقطة نهاية ترحيل
 
-لترحيل البريد الإلكتروني بنجاح، Microsoft 365 تحتاج إلى الاتصال ونظام البريد الإلكتروني المصدر والتواصل معه. للقيام بذلك، Microsoft 365 نقطة نهاية الترحيل. لإنشاء نقطة نهاية ترحيل Outlook أي مكان باستخدام PowerShell، ل الترحيل المراحلي، اتصل أولا [Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+لنقل البريد الإلكتروني بنجاح، يحتاج Microsoft 365 إلى الاتصال بنظام البريد الإلكتروني المصدر والتواصل معه. للقيام بذلك، يستخدم Microsoft 365 نقطة نهاية الترحيل. لإنشاء نقطة نهاية ترحيل Outlook في أي مكان باستخدام PowerShell، لل ترحيل مرحلي، [اتصل أولا Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
-للحصول على قائمة كاملة من أوامر الترحيل، راجع [أوامر cmdlets](/powershell/exchange/) الخاصة بالنقل وا الترحيل.
+للحصول على قائمة كاملة بأوامر الترحيل، راجع [أوامر cmdlets للتنقل والترحيل](/powershell/exchange/).
 
-لإنشاء نقطة نهاية ترحيل Outlook أي مكان تسمى "StagedEndpoint" في Exchange Online PowerShell، قم بتشغيل الأوامر التالية:
+لإنشاء نقطة نهاية ترحيل Outlook في أي مكان تسمى "StagedEndpoint" في Exchange Online PowerShell، قم بتشغيل الأوامر التالية:
 
 ```powershell
 $Credentials = Get-Credential
@@ -154,14 +154,14 @@ $Credentials = Get-Credential
 New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscover -EmailAddress administrator@contoso.com -Credentials $Credentials
 ```
 
-لمزيد من المعلومات حول **الأمر cmdlet ل New-MigrationEndpoint** ، [راجعNew-MigrationEndpoint](/powershell/module/exchange/new-migrationendpoint).
+لمزيد من المعلومات حول **New-MigrationEndpoint** cmdlet، [راجعNew-MigrationEndpoint](/powershell/module/exchange/new-migrationendpoint).
 
 > [!NOTE]
-> يمكن **استخدام الأمر cmdlet New-MigrationEndpoint** لتحديد قاعدة بيانات للخدمة لاستخدامها باستخدام **الخيار -TargetDatabase** . بخلاف ذلك، يتم تعيين قاعدة بيانات عشوائيا من موقع خدمات Active Directory Federation Services (AD FS) 2.0 حيث توجد علبة بريد الإدارة.
+> يمكن استخدام **New-MigrationEndpoint** cmdlet لتحديد قاعدة بيانات للخدمة لاستخدامها باستخدام خيار **-TargetDatabase** . وإلا، يتم تعيين قاعدة بيانات عشوائيا من موقع خدمات الأمان المشترك لـ Active Directory (AD FS) 2.0 حيث توجد علبة بريد الإدارة.
 
-#### <a name="verify-it-worked"></a>التحقق من عملها
+#### <a name="verify-it-worked"></a>تحقق من أنه يعمل
 
-في Exchange Online PowerShell، تشغيل الأمر التالي لعرض معلومات حول نقطة نهاية الترحيل "StagedEndpoint":
+في Exchange Online PowerShell، قم بتشغيل الأمر التالي لعرض معلومات حول نقطة نهاية الترحيل "StagedEndpoint":
 
 ```powershell
 Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,UseAutoDiscover,Max*
@@ -169,21 +169,21 @@ Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,U
 
 ### <a name="step-4-create-and-start-a-stage-migration-batch"></a>الخطوة 4: إنشاء دفعة ترحيل مرحلة وبدء تشغيلها
 
-يمكنك استخدام **الأمر cmdlet New-MigrationBatch** في Exchange Online PowerShell لإنشاء دفعة ترحيل ل الترحيل كلي. يمكنك إنشاء دفعة ترحيل وبدء تشغيلها تلقائيا من خلال بما في ذلك _معلمة التشغيل_ التلقائي. بدلا من ذلك، يمكنك إنشاء دفعة الترحيل ثم بدء تشغيلها يدويا بعد ذلك باستخدام **الأمر cmdlet Start-MigrationBatch** . ينشئ هذا المثال دفعة ترحيل تسمى "StagedBatch1" ويستخدم نقطة نهاية الترحيل التي تم إنشاؤها في الخطوة السابقة.
+يمكنك استخدام **New-MigrationBatch** cmdlet في Exchange Online PowerShell لإنشاء دفعة ترحيل لانتقال كلي. يمكنك إنشاء دفعة ترحيل وبدء تشغيلها تلقائيا عن طريق تضمين المعلمة _AutoStart_ . بدلا من ذلك، يمكنك إنشاء دفعة الترحيل ثم بدء تشغيلها يدويا بعد ذلك باستخدام **Start-MigrationBatch** cmdlet. ينشئ هذا المثال دفعة ترحيل تسمى "StagedBatch1" ويستخدم نقطة نهاية الترحيل التي تم إنشاؤها في الخطوة السابقة.
 
 ```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint -AutoStart
 ```
 
-ينشئ هذا المثال أيضا دفعة ترحيل تسمى "StagedBatch1" ويستخدم نقطة نهاية الترحيل التي تم إنشاؤها في الخطوة السابقة. نظرا لعدم  _تضمين_ معلمة التشغيل التلقائي، يجب بدء دفعة الترحيل يدويا على لوحة معلومات الترحيل أو باستخدام **الأمر cmdlet Start-MigrationBatch** . كما ذكر سابقا، يمكن أن توجد دفعة ترحيل كلي واحدة فقط في كل مرة.
+ينشئ هذا المثال أيضا دفعة ترحيل تسمى "StagedBatch1" ويستخدم نقطة نهاية الترحيل التي تم إنشاؤها في الخطوة السابقة. نظرا لعدم تضمين معلمة  _AutoStart_ ، يجب بدء دفعة الترحيل يدويا على لوحة معلومات الترحيل أو باستخدام **Start-MigrationBatch** cmdlet. كما ذكر سابقا، يمكن أن توجد دفعة ترحيل كلي واحدة فقط في كل مرة.
 
 ```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
 ```
 
-#### <a name="verify-it-worked"></a>التحقق من عملها
+#### <a name="verify-it-worked"></a>تحقق من أنه يعمل
 
-تشغيل الأمر التالي في Exchange Online PowerShell لعرض معلومات حول "StagedBatch1":
+قم بتشغيل الأمر التالي في Exchange Online PowerShell لعرض معلومات حول "StagedBatch1":
 
 ```powershell
 Get-MigrationBatch -Identity StagedBatch1 | Format-List
@@ -195,62 +195,62 @@ Get-MigrationBatch -Identity StagedBatch1 | Format-List
 Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 ```
 
-لمزيد من المعلومات حول **الأمر cmdlet Get-MigrationBatch** ، [راجعGet-MigrationBatch](/powershell/module/exchange/get-migrationbatch).
+لمزيد من المعلومات حول **Get-MigrationBatch** cmdlet، [راجعGet-MigrationBatch](/powershell/module/exchange/get-migrationbatch).
 
-### <a name="step-5-convert-on-premises-mailboxes-to-mail-enabled-users"></a>الخطوة 5: تحويل علب البريد المحلية إلى مستخدمين لتمكين البريد
+### <a name="step-5-convert-on-premises-mailboxes-to-mail-enabled-users"></a>الخطوة 5: تحويل علب البريد المحلية إلى مستخدمين ممكنين للبريد
 
-بعد ترحيل دفعة من علب البريد بنجاح، ستحتاج إلى طريقة تسمح للمستخدمين ب الوصول إلى بريدهم. لدى المستخدم الذي تم ترحيل علبة بريده الآن علبة بريد في الموقع و علبة بريد في Microsoft 365. سيتوقف المستخدمون الذين لديهم علبة بريد في Microsoft 365 تلقي بريد جديد في علبة البريد الخاصة بهم.
+بعد ترحيل دفعة من علب البريد بنجاح، تحتاج إلى طريقة ما للسماح للمستخدمين بلانتقال إلى بريدهم. لدى المستخدم الذي تم ترحيل علبة بريده الآن علبة بريد محلية وأخرى في Microsoft 365. سيتوقف المستخدمون الذين لديهم علبة بريد في Microsoft 365 عن تلقي بريد جديد في علبة البريد المحلية.
 
-نظرا لعدم انتهائك من الترحيلات، لست جاهزا بعد لتوجيه جميع المستخدمين Microsoft 365 بريدهم الإلكتروني. فماذا تفعل لهؤلاء الأشخاص الذين لديهم الاثنين؟ ما يمكنك فعله هو تغيير علب البريد المحلية التي قمت بترحيلها بالفعل إلى المستخدمين الممكنين للبريد. عند التغيير من علبة بريد إلى مستخدم يقوم بتمكين البريد، يمكنك توجيه المستخدم Microsoft 365 بريده الإلكتروني بدلا من الذهاب إلى علبة البريد الخاصة به في الموقع.
+نظرا لعدم الانتهاء من عمليات الترحيل، فأنت لست جاهزا بعد لتوجيه جميع المستخدمين إلى Microsoft 365 للبريد الإلكتروني الخاص بهم. فماذا تفعل لهؤلاء الأشخاص الذين لديهم كليهما؟ ما يمكنك القيام به هو تغيير علب البريد المحلية التي قمت بترحيلها بالفعل إلى المستخدمين الممكنين للبريد. عند التغيير من علبة بريد إلى مستخدم ممكن للبريد، يمكنك توجيه المستخدم إلى Microsoft 365 للبريد الإلكتروني بدلا من الانتقال إلى علبة البريد المحلية الخاصة به.
 
-هناك سبب آخر مهم لتحويل علب البريد المحلية إلى مستخدمين تم تمكين البريد له وهو الاحتفاظ عناوين الوكيل من علب بريد Microsoft 365 عن طريق نسخ عناوين الوكيل إلى المستخدمين الذين تم تمكين البريد لديهم. يتيح لك ذلك إدارة المستخدمين المستندين إلى السحابة من مؤسستك في الموقع باستخدام Active Directory. بالإضافة إلى ذلك، إذا قررت إلغاء تشغيل مؤسسة Exchange Server المحلية بعد ترحيل كل علب البريد إلى Microsoft 365، فإن عناوين الوكيل التي نسختها إلى المستخدمين الذين تم تمكينهم للبريد ستبقى في Active Directory الداخلي.
+هناك سبب مهم آخر لتحويل علب البريد المحلية إلى مستخدمين ممكنين للبريد وهو الاحتفاظ بعناوين الوكيل من علب بريد Microsoft 365 عن طريق نسخ عناوين الوكيل إلى المستخدمين الممكنين للبريد. يتيح لك ذلك إدارة المستخدمين المستندين إلى السحابة من مؤسستك المحلية باستخدام Active Directory. علاوة على ذلك، إذا قررت إيقاف تشغيل مؤسستك Exchange Server المحلية بعد ترحيل كل علب البريد إلى Microsoft 365، فستبقى عناوين الوكيل التي نسختها إلى المستخدمين الممكنين للبريد في Active Directory محلي.
 
 ### <a name="step-6-delete-a-staged-migration-batch"></a>الخطوة 6: حذف دفعة ترحيل مرحلي
 
- بعد نجاح ترحيل كل علب البريد في دفعة ترحيل، وتحويل علب البريد المحلية في الدفعة إلى مستخدمين تم تمكينهم للبريد، تكون جاهزا لحذف دفعة ترحيل مرحلي. تأكد من التحقق من إعادة توجيه البريد إلى Microsoft 365 البريد في دفعة الترحيل. عند حذف دفعة ترحيل مرحلي، تقوم خدمة الترحيل بتنظيف أي سجلات مرتبطة بدفعة الترحيل وحذف دفعة الترحيل.
+ بعد ترحيل كل علب البريد الموجودة في دفعة ترحيل بنجاح، وتحويل علب البريد المحلية في الدفعة إلى مستخدمين ممكنين للبريد، تصبح جاهزا لحذف دفعة ترحيل مرحلي. تأكد من إعادة توجيه البريد إلى علب بريد Microsoft 365 في دفعة الترحيل. عند حذف دفعة ترحيل مرحلي، تقوم خدمة الترحيل بتنظيف أي سجلات ذات صلة دفعة الترحيل وحذف دفعة الترحيل.
 
-لحذف دفعة الترحيل "StagedBatch1" Exchange Online PowerShell، قم بتشغيل الأمر التالي.
+لحذف دفعة الترحيل "StagedBatch1" في Exchange Online PowerShell، قم بتشغيل الأمر التالي.
 
 ```powershell
 Remove-MigrationBatch -Identity StagedBatch1
 ```
 
-لمزيد من المعلومات حول **الأمر cmdlet Remove-MigrationBatch** ، [راجعRemove-MigrationBatch](/powershell/module/exchange/remove-migrationbatch).
+لمزيد من المعلومات حول **Remove-MigrationBatch** cmdlet، [راجعRemove-MigrationBatch](/powershell/module/exchange/remove-migrationbatch).
 
-#### <a name="verify-it-worked"></a>التحقق من عملها
+#### <a name="verify-it-worked"></a>تحقق من أنه يعمل
 
-تشغيل الأمر التالي في Exchange Online PowerShell لعرض معلومات حول "IMAPBatch1":
+قم بتشغيل الأمر التالي في Exchange Online PowerShell لعرض معلومات حول "IMAPBatch1":
 
 ```powershell
 Get-MigrationBatch StagedBatch1
 ```
 
-سيرجع الأمر إما دفعة الترحيل التي لها حالة إزالة، أو سيرجع رسالة خطأ تفيد بأنه لا يمكن العثور على دفعة الترحيل، مع التحقق من حذف الدفعة.
+سيرجع الأمر إما دفعة الترحيل بحالة **إزالة**، أو سيرجع خطأ يفيد بتعذر العثور على دفعة الترحيل، مع التحقق من حذف الدفعة.
 
-لمزيد من المعلومات حول **الأمر cmdlet Get-MigrationBatch** ، [راجعGet-MigrationBatch](/powershell/module/exchange/get-migrationbatch).
+لمزيد من المعلومات حول **Get-MigrationBatch** cmdlet، [راجعGet-MigrationBatch](/powershell/module/exchange/get-migrationbatch).
 
-### <a name="step7-assign-licenses-to-microsoft-365-users"></a>الخطوة 7: تعيين التراخيص Microsoft 365 المستخدمين
+### <a name="step7-assign-licenses-to-microsoft-365-users"></a>الخطوة 7: تعيين تراخيص لمستخدمي Microsoft 365
 
-تنشيط Microsoft 365 حسابات المستخدمين للحسابات التي تم ترحيلها من خلال تعيين التراخيص. إذا لم يتم تعيين ترخيص، يتم تعطيل علبة البريد عند انتهاء فترة السماح (30 يوما). لتعيين ترخيص في مركز مسؤولي Microsoft 365، راجع تعيين تراخيص أو [عدم تعيينها](../admin/manage/assign-licenses-to-users.md).
+تنشيط Microsoft 365 حسابات المستخدمين للحسابات التي تم ترحيلها عن طريق تعيين التراخيص. إذا لم تقم بتعيين ترخيص، يتم تعطيل علبة البريد عند انتهاء فترة السماح (30 يوما). لتعيين ترخيص في مركز مسؤولي Microsoft 365، راجع [تعيين تراخيص أو إلغاء تعيينها](../admin/manage/assign-licenses-to-users.md).
 
 ### <a name="step-8-complete-post-migration-tasks"></a>الخطوة 8: إكمال مهام ما بعد الترحيل
 
-- **قم بإنشاء سجل DNS ل Autodiscover حتى يمكن للمستخدمين الوصول بسهولة إلى علب البريد الخاصة بهم.** بعد ترحيل كل علب البريد المحلية إلى Microsoft 365، يمكنك تكوين سجل DNS الاكتشاف التلقائي لمنظمتك في Microsoft 365 لتمكين المستخدمين من الاتصال بسهولة لعلب بريد Microsoft 365 الجديدة مع عملاء Outlook والأجهزة المحمولة. يجب أن يستخدم سجل DNS ل Autodiscover الجديد مساحة الاسم نفسها التي تستخدمها Microsoft 365 مؤسستك. على سبيل المثال، إذا كانت مساحة الاسم المستندة إلى السحابة cloud.contoso.com، يكون سجل DNS الذي تريد إنشاؤه في الاكتشاف التلقائي autodiscover.cloud.contoso.com.
+- **إنشاء سجل DNS الكشف التلقائي حتى يتمكن المستخدمون من الوصول بسهولة إلى علب بريدهم.** بعد ترحيل كل علب البريد المحلية إلى Microsoft 365، يمكنك تكوين سجل DNS للتحقق التلقائي لمؤسسة Microsoft 365 لتمكين المستخدمين من الاتصال بسهولة بعلب بريدهم Microsoft 365 الجديدة باستخدام عملاء Outlook والأجهزة المحمولة. يجب أن يستخدم سجل DNS الجديد للتحقق التلقائي مساحة الاسم نفسها التي تستخدمها لمؤسستك Microsoft 365. على سبيل المثال، إذا كانت مساحة الاسم المستندة إلى السحابة cloud.contoso.com، يكون سجل DNS للتحقق التلقائي الذي تحتاج إلى إنشائه autodiscover.cloud.contoso.com.
 
-    Microsoft 365 سجل CNAME لتطبيق خدمة الاكتشاف التلقائي للعملاء Outlook الجوال. يجب أن يحتوي سجل CNAME ل Autodiscover على المعلومات التالية:
+    يستخدم Microsoft 365 سجل CNAME لتنفيذ خدمة الكشف التلقائي لعملاء Outlook والأجهزة المحمولة. يجب أن يحتوي سجل CNAME للتحقق التلقائي على المعلومات التالية:
 
-  - **الاسم المستعار:** autodiscover
+  - **الاسم المستعار:** الكشف التلقائي
 
-  - **الهدف: autodiscover.outlook.com**
+  - **الهدف:** autodiscover.outlook.com
 
     لمزيد من المعلومات، راجع [إضافة سجلات DNS لتوصيل مجالك](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
-- **اسحب الخوادم Exchange في الموقع.** بعد التحقق من توجيه كل رسائل البريد الإلكتروني مباشرة إلى علب بريد Microsoft 365، ولم تعد بحاجة إلى الاحتفاظ بمنظمتك المحلية للبريد الإلكتروني أو عدم التخطيط لتطبيق حل SSO، يمكنك إزالة تثبيت Exchange من الخوادم وإزالة مؤسسة Exchange المحلية.
+- **إيقاف تشغيل خوادم Exchange المحلية.** بعد التحقق من توجيه جميع رسائل البريد الإلكتروني مباشرة إلى علب بريد Microsoft 365، ولم تعد بحاجة إلى الاحتفاظ بمؤسسة البريد الإلكتروني المحلية أو عدم التخطيط لتنفيذ حل SSO، يمكنك إلغاء تثبيت Exchange من خوادمك وإزالة مؤسستك Exchange المحلية.
 
     لمزيد من المعلومات، راجع ما يلي:
 
-  - [تعديل أو Exchange 2010](/previous-versions/office/exchange-server-2010/ee332361(v=exchg.141))
+  - [تعديل Exchange 2010 أو إزالته](/previous-versions/office/exchange-server-2010/ee332361(v=exchg.141))
 
-  - [كيفية إزالة Exchange 2007](/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))
+  - [كيفية إزالة مؤسسة Exchange 2007](/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))
 
   - [كيفية إلغاء تثبيت Exchange Server 2003](/previous-versions/tn-archive/bb125110(v=exchg.65))

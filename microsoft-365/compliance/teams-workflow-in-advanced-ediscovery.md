@@ -2,8 +2,8 @@
 title: سير عمل Teams في eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,14 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: تعرف على كيفية الاحتفاظ بالمحتوى وجمعه ومراجعته وتصديره من Microsoft Teams في eDiscovery (Premium).
-ms.openlocfilehash: 043cfb070c008b4c58e48df40dfbb069ca859edd
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 36bfcde1b2ee5ad9b088db008249cdeb1cf90eb4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972376"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092260"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>سير عمل eDiscovery (Premium) للمحتوى في Microsoft Teams
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 توفر هذه المقالة مجموعة شاملة من الإجراءات والإرشادات وأفضل الممارسات لاستخدام Microsoft Purview eDiscovery (Premium) للاحتفاظ بالمحتوى وجمعه ومراجعته وتصديره من Microsoft Teams. الهدف من هذه المقالة هو مساعدتك على تحسين سير عمل eDiscovery لمحتوى Teams.
 

@@ -2,8 +2,8 @@
 title: إعداد العلامات الذكية في eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: تتيح لك العلامات الذكية تطبيق قدرات التعلم الآلي عند مراجعة المحتوى في حالة eDiscovery (Premium). استخدم مجموعات العلامات الذكية لعرض نتائج نماذج الكشف عن التعلم الآلي، مثل نموذج امتياز الوكيل والعميل.
-ms.openlocfilehash: 1adea2404192b9e715ad021f70ba07f7e64a89d5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e9b791d632ea6a1a84472ac5ad00b4a45fea294d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999729"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095499"
 ---
 # <a name="set-up-smart-tags-in-ediscovery-premium"></a>إعداد العلامات الذكية في eDiscovery (Premium)
 

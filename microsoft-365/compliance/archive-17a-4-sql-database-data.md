@@ -2,8 +2,8 @@
 title: إعداد موصل وأرشفة بيانات SQL في Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل DataParser 17a-4 SQL واستخدامه لاستيراد بيانات SQL وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 5583b47276a6f8c5e48add47f3743c4792abd83c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 021f7882862933c6b7cf3c437788b63d722c804a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996631"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092470"
 ---
 # <a name="set-up-a-connector-to-archive-sql-data"></a>إعداد موصل وأرشفة بيانات SQL
 

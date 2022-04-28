@@ -2,8 +2,8 @@
 title: إعداد موصل أرشفة بيانات Slack في Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل Slack DataParser 17a-4 واستخدامه لاستيراد بيانات Slack وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 9157db405f37b53b8637c466e9d6d8050c5a325b
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d36fe8214202ff8ca25cfb995d51f93e3429eae5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996625"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092492"
 ---
 # <a name="set-up-a-connector-to-archive-slack-data"></a>إعداد موصل أرشفة بيانات Slack
 

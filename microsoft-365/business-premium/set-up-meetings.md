@@ -4,11 +4,11 @@ f1.keywords:
 - NOCSH
 ms.author: twerner
 author: twerner
-manager: scotv
+manager: dansimp
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -25,16 +25,18 @@ search.appverid:
 - MET150
 - MOE150
 description: إعداد اجتماعات عبر الإنترنت باستخدام Microsoft Teams.
-ms.openlocfilehash: d945d5526e3cdd06bc0a7c7a80ef7cff0160d07d
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 9ed624d8fe607f460d36eb391d801066b69f7141
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823091"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095133"
 ---
 # <a name="set-up-meetings"></a>إعداد الاجتماعات
 
-تتضمن الاجتماعات في Microsoft Teams الصوت والفيديو والمشاركة. ولأنهم متصلون بالإنترنت، سيكون لديك دائما مساحة اجتماع (دون الحاجة إلى غرفة أو البروجكتور!)، حتى لو كان موظفوك موزعين جغرافيا أو يعملون عن بعد. تعد Microsoft Teams الاجتماعات طريقة رائعة للاجتماع مع موظفيك داخل مؤسستك وخارجها. لا تحتاج إلى أن تكون عضوا في مؤسستك أو حتى أن يكون لديك حساب للانضمام إلى اجتماع. يمكنك جدولة الاجتماعات عبر الإنترنت وتشغيلها باستخدام Microsoft Teams. أثناء اجتماع، يمكنك مشاركة الشاشة ومشاركة الملفات وتعيين المهام والمزيد. يمكن أن تتضمن الحملات السياسية موظفين وتطوعات وضيوفا من خارج مؤسستك في الاجتماع. يمكن للشركات الصغيرة أو الممارسات أن تلتقي مع موظفيها، أو تلتقي بالعملاء أو الشركاء عبر Microsoft Teams.
+تأكد من استخدام أعضاء المؤسسة Microsoft Teams لجميع الاجتماعات. Teams ملفات الاجتماعات تتضمن الصوت والفيديو والمشاركة، ولأنها متصلة بالإنترنت، فهناك دائما مساحة اجتماعات ولا حاجة إلى غرفة بها البروجكتور! تعد Microsoft Teams الاجتماعات طريقة رائعة للاجتماع مع موظفيك داخل مؤسستك وخارجها. 
+
+باستخدام Teams، لا تحتاج إلى أن تكون عضوا في المؤسسة أو حتى أن يكون لديك حساب للانضمام إلى اجتماع. يمكنك جدولة الاجتماعات عبر الإنترنت وتشغيلها حيث يمكنك مشاركة الشاشة ومشاركة الملفات وتعيين المهام والمزيد. يمكن أن تتضمن الحملات السياسية الموظفين أو التطوع أو الضيوف خارج مؤسستك. يمكنك بسهولة الاجتماع مع العملاء أو الموظفين أو الشركاء عبر Microsoft Teams، وفي بيئة آمنة وخالية من القلق.
 
 [![رسم توضيحي لمستخدمين اثنين في اجتماع.](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
@@ -58,3 +60,9 @@ ms.locfileid: "64823091"
 تعرف على المزيد حول الاجتماع في Microsoft Teams:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]
+
+## <a name="next-objective"></a>الهدف التالي
+
+بعد تحقيق هدف المهمة هذا، تعلم [كيفية مشاركة الملفات ومقاطع الفيديو](share-files-and-videos.md) بأمان
+
+

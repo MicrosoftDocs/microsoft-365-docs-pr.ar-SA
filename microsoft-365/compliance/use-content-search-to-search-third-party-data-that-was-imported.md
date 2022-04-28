@@ -2,8 +2,8 @@
 title: استخدام البحث عن المحتوى للبحث في البيانات المستوردة من جهة خارجية
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: استخدم أداة eDiscovery للبحث عن العناصر المستوردة إلى علب البريد في Microsoft 365 من مصدر بيانات تابع لجهة خارجية عن طريق إنشاء استعلامات.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9a6a7bcdf0cbd7f14e20cc8400e5d834dc7da0a1
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 73967c8897ee0fd5143b8e15dfe8874fc0c85755
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000884"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095389"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>استخدام البحث عن المحتوى للبحث في بيانات الجهات الخارجية التي تم استيرادها بواسطة موصل شريك مخصص
 

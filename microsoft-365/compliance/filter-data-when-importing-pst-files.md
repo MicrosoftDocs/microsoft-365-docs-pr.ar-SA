@@ -2,8 +2,8 @@
 title: تصفية البيانات عند استيراد ملفات PST
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: تعرف على كيفية تصفية البيانات باستخدام ميزة الاستيراد الذكية في خدمة الاستيراد Microsoft 365 عند استيراد ملفات PST إلى Microsoft 365.
-ms.openlocfilehash: dc60baf45be97e438875e0b045d9e8f3b6208d3f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5ff78126f9e2d02181635433d7a94ede0e191c8d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997901"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099730"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>تصفية البيانات عند استيراد ملفات PST
 
@@ -70,7 +70,7 @@ ms.locfileid: "64997901"
   
 1. انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل توافق Microsoft Purview</a> وسجل الدخول باستخدام بيانات الاعتماد لحساب مسؤول في مؤسستك.
     
-2. في الجزء الأيمن من مدخل التوافق، انقر فوق **استيراد** **إدارة** \> المعلومات.
+2. في الجزء الأيمن من مدخل التوافق، انقر فوق **استيراد** إدارة \> **دورة حياة البيانات**.
     
     يتم سرد مهام الاستيراد لمؤسستك في علامة التبويب **"استيراد**". تشير القيمة **المكتملة "تحليل**" في عمود **"الحالة**" إلى مهام الاستيراد التي تم تحليلها بواسطة Microsoft 365 وهي جاهزة للاستيراد.
     

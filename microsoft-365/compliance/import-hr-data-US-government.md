@@ -2,8 +2,8 @@
 title: إعداد موصل لاستيراد بيانات الموارد البشرية إلى سحابة حكومة الولايات المتحدة
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: يمكن للمسؤولين في سحابة حكومة الولايات المتحدة إعداد موصل بيانات لاستيراد بيانات الموظفين من نظام الموارد البشرية (HR) لمؤسستهم إلى Microsoft 365. يتيح لك ذلك استخدام بيانات الموارد البشرية في نهج إدارة المخاطر الداخلية لمساعدتك على اكتشاف نشاط مستخدمين محددين قد يشكل تهديدا داخليا لمؤسستك.
-ms.openlocfilehash: 3f3873830caea109cf09987a21791bb299a4bdaf
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4404eb9cd70ed41616fa5ed9b775b55c4c59e192
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000015"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092366"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>إعداد موصل لاستيراد بيانات الموارد البشرية في حكومة الولايات المتحدة
 

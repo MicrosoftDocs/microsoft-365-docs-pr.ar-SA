@@ -2,8 +2,8 @@
 title: المحتوى المخزن في علب بريد Exchange Online
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: يتم تخزين المحتوى الذي تنتجه التطبيقات المستندة إلى السحابة في Microsoft 365 أو إقرانه بعلبة بريد Exchange Online للمستخدم. يمكن البحث في هذا المحتوى باستخدام أدوات Microsoft eDiscovery.
-ms.openlocfilehash: b5e8434f5345cda8ef4f637b3dff2d3cf704f748
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 113cbb9c386dab2339fa1b265b3443efe1ba91fd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000785"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091666"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes-for-ediscovery"></a>المحتوى المخزن في علب بريد Exchange Online ل eDiscovery
 

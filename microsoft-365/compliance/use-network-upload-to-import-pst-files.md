@@ -2,8 +2,8 @@
 title: استخدام تحميل الشبكة لاستيراد ملفات PST
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'للمسؤولين: تعرف على كيفية استخدام تحميل الشبكة لاستيراد ملفات PST متعددة بشكل مجمع إلى علب بريد المستخدمين في Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10a0b2e076c3a8d4fc6910e16ba89c3ce75d2d2d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cd025adb7100e6dff0d8cb97c195e851414afd81
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999792"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095411"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>استخدم تحميل الشبكة لاستيراد ملفات PST الخاصة بالمؤسسة إلى Microsoft 365
 
@@ -92,7 +92,7 @@ ms.locfileid: "64999792"
   
 1. انتقل إلى <https://compliance.microsoft.com> تسجيل الدخول باستخدام بيانات الاعتماد لحساب مسؤول في مؤسستك.
 
-2. في الجزء الأيمن من مدخل التوافق، انقر فوق **استيراد** **إدارة** \> المعلومات.
+2. في الجزء الأيمن من مدخل التوافق، انقر فوق **استيراد** إدارة \> **دورة حياة البيانات**.
 
     > [!NOTE]
     > يجب أن يتم تعيين الأذونات المناسبة لك للوصول إلى صفحة **الاستيراد** في مدخل التوافق. راجع المقطع **"قبل البدء** " للحصول على مزيد من المعلومات. 
@@ -260,7 +260,7 @@ azcopy.exe copy "https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&s
   
 1. انتقل إلى <https://compliance.microsoft.com> تسجيل الدخول باستخدام بيانات الاعتماد لحساب مسؤول في مؤسستك.
 
-2. في الجزء الأيمن من مدخل التوافق، انقر فوق **حوكمة المعلومات > استيراد**.
+2. في الجزء الأيمن من مدخل التوافق، انقر فوق **إدارة دورة حياة البيانات > استيراد**.
 
 3. على علامة التبويب **"استيراد** "، انقر فوق !["إضافة أيقونة".](../media/ITPro-EAC-AddIcon.gif) **مهمة استيراد جديدة**.
 

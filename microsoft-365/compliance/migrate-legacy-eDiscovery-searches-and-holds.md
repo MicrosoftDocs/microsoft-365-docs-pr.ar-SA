@@ -2,8 +2,8 @@
 title: ترحيل عمليات بحث eDiscovery القديمة وحتفظ بها إلى مدخل الامتثال ل Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,14 +15,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 07740a6569f67b04db22351f4b4e1214ccfbc787
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 416baed923884d9cbabbd6ee7607a48b0a19ab62
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973696"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092360"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>ترحيل عمليات بحث eDiscovery القديمة وحتفظ بها إلى مدخل التوافق
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يوفر مدخل توافق Microsoft Purview تجربة محسنة لاستخدام eDiscovery، بما في ذلك: الموثوقية الأعلى والأداء الأفضل والعديد من الميزات المصممة لسير عمل eDiscovery بما في ذلك الحالات لتنظيم المحتوى حسب المسألة ومجموعات المراجعة لمراجعة المحتوى والتحليلات للمساعدة في احصاء البيانات للمراجعة مثل التجميع شبه المكرر ومؤشرات ترابط البريد الإلكتروني وتحليل النسق والترميز التنبؤي.
 

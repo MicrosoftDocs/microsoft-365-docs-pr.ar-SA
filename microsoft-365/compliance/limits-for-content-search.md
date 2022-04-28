@@ -2,8 +2,8 @@
 title: حدود البحث عن المحتوى وeDiscovery (قياسي) في مركز التوافق
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: تعرف على الحدود السارية لميزات البحث في المحتوى وeDiscovery (القياسي) في مدخل توافق Microsoft Purview.
-ms.openlocfilehash: 8cba04c7ed3257d5a168d7754b2964eb4aa97b0d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 030e4dd16e2b24504632947a336b244a945813ff
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999026"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091710"
 ---
 # <a name="limits-for-ediscovery-search"></a>حدود للبحث في eDiscovery
 

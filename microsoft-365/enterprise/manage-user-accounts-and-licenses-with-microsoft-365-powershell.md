@@ -1,8 +1,8 @@
 ---
-title: إدارة Microsoft 365 المستخدمين والتراخيص والمجموعات باستخدام PowerShell
+title: إدارة حسابات المستخدمين والتراخيص والمجموعات Microsoft 365 باستخدام PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/13/2020
 audience: ITPro
 ms.topic: landing-page
@@ -16,19 +16,19 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: تعرف على كيفية إدارة Microsoft 365 المستخدمين والتراخيص والمجموعات باستخدام PowerShell.
-ms.openlocfilehash: b003f46ef9d93f5ea2b25286581b43f16b6911be
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: تعرف على كيفية إدارة حسابات المستخدمين والتراخيص والمجموعات Microsoft 365 باستخدام PowerShell.
+ms.openlocfilehash: 0ec87f23f154cdd01d196419dbd087c4e14077fa
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681987"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092106"
 ---
-# <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>إدارة Microsoft 365 المستخدمين والتراخيص والمجموعات باستخدام PowerShell
+# <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>إدارة حسابات المستخدمين والتراخيص والمجموعات Microsoft 365 باستخدام PowerShell
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
-Microsoft 365 على المسؤولين إدارة حسابات المستخدمين والتراخيص والمجموعات. على الرغم من أنه يمكنك تنفيذ معظم هذه المهام في مركز مسؤولي Microsoft 365، فإن بعضها أسهل في PowerShell.
+يحتاج المسؤولون Microsoft 365 إلى إدارة حسابات المستخدمين والتراخيص والمجموعات. على الرغم من أنه يمكنك القيام بمعظم هذه المهام في مركز مسؤولي Microsoft 365، فإن بعضها أسهل في PowerShell.
 
 لمزيد من المعلومات، راجع المقالات التالية.
 
@@ -37,7 +37,7 @@ Microsoft 365 على المسؤولين إدارة حسابات المستخدم
 - [Create user accounts](create-user-accounts-with-microsoft-365-powershell.md)
 - [عرض حسابات المستخدمين](view-user-accounts-with-microsoft-365-powershell.md)
 - [تكوين خصائص حساب المستخدم](configure-user-account-properties-with-microsoft-365-powershell.md)
-- [تعيين أدوار إلى حسابات المستخدمين](assign-roles-to-user-accounts-with-microsoft-365-powershell.md)
+- [تعيين أدوار لحسابات المستخدمين](assign-roles-to-user-accounts-with-microsoft-365-powershell.md)
 - [حذف حسابات المستخدمين واستعادتها](delete-and-restore-user-accounts-with-microsoft-365-powershell.md)
 - [حظر حسابات المستخدمين](block-user-accounts-with-microsoft-365-powershell.md)
 - [كلمات المرور](manage-passwords-with-microsoft-365-powershell.md)
@@ -45,7 +45,7 @@ Microsoft 365 على المسؤولين إدارة حسابات المستخدم
 ## <a name="licenses-and-services"></a>التراخيص والخدمات
 - [عرض التراخيص والخدمات](view-licenses-and-services-with-microsoft-365-powershell.md)
 - [عرض المستخدمين المرخصين وغير المرخصين](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
-- [تعيين تراخيص إلى حسابات المستخدمين](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
+- [تعيين التراخيص لحسابات المستخدمين](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
 - [عرض تفاصيل ترخيص الحساب والخدمة](view-account-license-and-service-details-with-microsoft-365-powershell.md)
 - [تعطيل الوصول إلى الخدمات](disable-access-to-services-with-microsoft-365-powershell.md)
   - [تعطيل الوصول إلى Sway](disable-access-to-sway-with-microsoft-365-powershell.md)
@@ -54,5 +54,5 @@ Microsoft 365 على المسؤولين إدارة حسابات المستخدم
 
 ## <a name="groups"></a>المجموعات
 - [إدارة مجموعات الأمان](manage-security-groups-with-microsoft-365-powershell.md)
-- [الاحتفاظ بعضوية مجموعة الأمان](maintain-group-membership-with-microsoft-365-powershell.md)
-- [إدارة Microsoft 365 المجموعات](manage-microsoft-365-groups-with-powershell.md)
+- [الحفاظ على عضوية مجموعة الأمان](maintain-group-membership-with-microsoft-365-powershell.md)
+- [إدارة مجموعات Microsoft 365](manage-microsoft-365-groups-with-powershell.md)

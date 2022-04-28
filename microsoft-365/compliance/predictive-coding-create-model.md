@@ -2,8 +2,8 @@
 title: إنشاء نموذج ترميز تنبؤي في eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إنشاء نموذج ترميز تنبؤي في eDiscovery (Premium). هذه هي الخطوة الأولى في استخدام قدرات التعلم الآلي في eDiscovery (Premium) لمساعدتك في تحديد المحتوى ذي الصلة وغير ذي الصلة في مجموعة مراجعة.
-ms.openlocfilehash: f5636defbd4bc004a4732ff1d956f8b879daea2d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4542ffbf8be3c7a5c0193f3c0372e3c19e91f02e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994029"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099642"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>إنشاء نموذج ترميز تنبؤي (معاينة)
 
