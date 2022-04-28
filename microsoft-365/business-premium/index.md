@@ -1,14 +1,14 @@
 ---
-title: Microsoft 365 Business Premium عامة
+title: نظرة عامة Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: v-kcirillo
+author: cirilk
 manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -24,77 +24,111 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: تعرف على كيفية التعاون بأمان في شركتك الصغيرة أو حملتك الإعلانية باستخدام Microsoft 365 Business Premium.
-ms.openlocfilehash: 77ca1cb7171097a0cae6063db20b1868dcd1b448
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: تعرّف على كيفية تنفيذ الأمان عبر الإنترنت للشركات الصغيرة أو متوسطة الحجم مع Microsoft 365 Business Premium. تم تحسين قدرات وميزات الأمان عبر الإنترنت لمنع الهجمات الإلكترونية والخروقات الأمنية، والمساعدة في حماية البيانات والأجهزة والمعلومات باستخدام الدفاعات الإلكترونية عالية الدرجة.
+ms.openlocfilehash: ac152ca67e7bdf62931b64e008669ca60b0a8031
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63579233"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099994"
 ---
-# <a name="microsoft-365-business-premium-overview"></a>Microsoft 365 Business Premium عامة
+# <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; للأمان عبر الإنترنت للشركات الصغيرة
 
-في عالمنا الحالي، من الأولويات الحفاظ على أمان البيانات والاتصالات، خاصة للممارسات الطبية والقانونية والحملات السياسية والعديد من الشركات الصغيرة الأخرى. استفد من ميزات الأمان في Microsoft 365 Business Premium التعاون بأمان داخل شركتك الصغيرة. يوفر هذا الحل مجموعة من التوصيات المصممة للمساعدة في حمايتك أنت وبياناتك. تتضمن هذه المكتبة تعليمات لإعداد هذه البيئة الموصى بها واستخدامها، بغض النظر عن نوع عملك.
+لنبدأ بقول أنك اتخذت خياراً حكيماً في اعتماد Microsoft 365 Business Premium وأدوات الإنتاجية ذات المستوى العالمي. تم تصميم Microsoft 365 Business Premium مع مراعاة الأمان عبر الإنترنت، لحماية بياناتك وأجهزتك ومعلوماتك. أنت أول وأفضل دفاع لمؤسستك ضد المتسللين والهجمات الإلكترونية، بما في ذلك الأفراد العشوائيون أو الجريمة المنظمة أو الدول القومية المتطورة للغاية.
 
-:::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium حماية التطبيقات وتخزين الملفات والبريد الإلكتروني والأجهزة والهويات.":::
+المهمة المعروضة عليك هي &mdash; السماح Microsoft 365 Business Premium المساعدة في تأمين مستقبل مؤسستك! تعامل مع هذه المهمة من خلال القيام بالبعثات التالية التي ستساعدك على تعزيز بيئتك وتدريب فريقك وحماية الأجهزة المدارة. يتم تصنيف البعثات حسب الأهمية، وإكمالها هو الطريقة الأكثر فعالية لإحباط المتسللين، والحماية من برامج الفدية الضارة، وضمان حماية مستقبل مؤسستك مع أفضل دفاعات الأمان عبر الإنترنت. لنبدأ في العمل.
 
-يتضمن هذا التكوين الإرشادات التالية للإنتاجية والتعاون وتخزين الملفات والبريد الإلكتروني والأجهزة والهوية لحماية أعمالك:
+انقر عبر علامات التبويب أدناه للتعرّف على كل مهمة وكيفية إعداد الأمان Microsoft 365 Business Premium.
 
-| الحماية ل | الوصف | الروابط |
-| ----- | ----- | ----- | ----- |
-|البريد الإلكتروني | استخدم المصادقة متعددة العوامل، و مكافحة التصيد الاحتيالي المتقدمة، خزينة الارتباطات خزينة المرفقات، والبريد الإلكتروني المشفر للحصول على معلومات حساسة.| [إعداد المصادقة متعددة العوامل](m365bp-multifactor-authentication.md) <br/><br/>[الحماية من هجمات التصيد الاحتيالي](m365-campaigns-phishing-and-attacks.md)<br/><br/>[تشفير بريدك الإلكتروني الحساس أو تسميته](send-encrypted-email.md) |
-|أجهزة iPhone وAndroid |استخدام المصادقة متعددة العوامل، إعداد تطبيقات Microsoft للجوال، واطلب رقم PIN | [إعداد المصادقة متعددة العوامل](m365bp-multifactor-authentication.md)<br/><br/>[إعداد الأجهزة المحمولة](../business/set-up-mobile-devices.md)|
-|إحضار-أجهزتك الخاصة (BYOD) على أجهزة Mac Windows الكمبيوتر |حافظ Office وتحديث أنظمة التشغيل وتمكين ميزات الأمان. | [حماية الأجهزة غير Windows وأجهزة Mac](m365bp-protect-pcs-macs.md) |
-|تخزين الملفات ومشاركتها بأمان | يمكنك مشاركة الملفات ومقاطع الفيديو من Microsoft Teams OneDrive SharePoint و Microsoft Stream، وحماية البيانات الحساسة.| [مشاركة الملفات ومقاطع الفيديو](share-files-and-videos.md) |
-|أجهزة Windows مدارة |استخدام الأجهزة المدارة للموظفين الرئيسيين وتأمين هذه الأجهزة. | [إعداد الأجهزة المدارة](../business/set-up-windows-devices.md) |
+## <a name="fortify-your-environment"></a>[**تعزيز بيئتك**](#tab/Fortify)
 
-## <a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>تكوين أمان مستحسن Microsoft 365 Business Premium
+في هذه البعثات الأولى، سجل الدخول وقم بإعداد جدران الدفاع الأولية الخاصة بك، بدءاً من حماية الوصول إلى الحساب.
 
-يتيح لك هذا التكوين الآمن Microsoft 365 Business Premium:
+[**إعداد البيئة الخاصة بك**](m365bp-setup-overview.md). تتطلب منك هذه المهمة إعداد الأمان وتنفيذه عبر جميع الحسابات في النظام.
 
-- يمكنك الاعتماد على أدوات التعاون والإنتاجية الموثوق بها، مثل Outlook و Word Excel ومنتجات أخرى Office أخرى.
+[**رفع حماية الأمان عبر الإنترنت**](m365bp-security-overview.md). إعداد تدابير أمان الواجهة الأمامية الهامة لمنع الهجمات الإلكترونية.
 
-- يمكنك حماية ملفات العمل على جميع أجهزة iOS وAndroid Windows باستخدام الأمان على مستوى المؤسسة الذي يمكن إدارته بشكل بسيط.
+[:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="Microsoft 365 Business Premium يحمي التطبيقات وتخزين الملفات والبريد الإلكتروني والأجهزة والهويات.":::](m365bp-setup-overview.md)
 
-- تطبيق حماية إضافية على حسابات المستخدمين وهويتهم.
+## <a name="cybersecurity-playbook"></a>دليل مبادئ الأمان عبر الإنترنت
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
+تساعد الإرشادات الواردة في هذه البعثات شركتك على تحقيق الأهداف الموضحة في [دليل مبادئ حملة الأمن السيبراني](https://go.microsoft.com/fwlink/p/?linkid=2015598) لمدرسة هارفرد في جامعة هارفرد. يتوفر ملخص لتنزيله.
 
-على الرغم من أن حملات الانتخابات الفيدرالية وبعض حملات الانتخابات للولايات [](get-microsoft-365-campaigns.md) في الولايات المتحدة مؤهلة للحصول على أسعار خاصة لعرض Microsoft 365 للحملات الإعلانية ل Microsoft 365 Business Premium، يمكن لأي مؤسسة ذات خطة Business Premium الاستفادة من هذه الإرشادات لتكوين المزيد من الأمان ومعرفة كيفية التعاون بأمان.
+انقر فوق مخطط المعلومات البياني للاطلاع على إصدار أكبر، أو [قم بتنزيل نسخة من ملصق دليل مبادئ الأمان عبر الإنترنت](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
-تتضمن هذه المكتبة ما يلي:
+:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="دليل مبادئ الأمان عبر الإنترنت" lightbox="media/m365bp-cyber-security-playbook.png":::
 
-- إرشادات الإعداد المسبق لإضافة المزيد من الأمان.
+[الحصول على ملف PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
 
-- تعليمات للمستخدمين لإعداد الأجهزة للوصول الآمن.
+## <a name="how-microsoft-365-business-premium-helps-you"></a>كيف يساعدك Microsoft 365 Business Premium
 
-- إرشادات حول كيفية التعاون في العمل ومشاركته بأمان.
+انقر هنا لمعرفة [فوائد Microsoft 365 Business Premium](m365bp-secure-users.md).
 
-لمزيد من المعلومات حول المضمن[، راجع Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).
+## <a name="next-steps"></a>الخطوات التالية
 
-## <a name="get-started"></a>بدء العمل
+الآن، دعونا [نحصن بيئتك ضد الهجمات الإلكترونية](m365bp-setup-overview.md)!
 
-اتبع الخطوات التالية للبدء:
+> [!Note]
+> عندما يكون المصطلح أو التوجيه غير واضح، يمكنك العثور على تعريفات في [قائمة المصطلحات](m365bp-glossary.md).
 
-- بالنسبة للشركات الصغيرة والمتوسطة الحجم: [احصل على Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)
+## <a name="train-your-team"></a>[**تدريب فريقك**](#tab/Train)
 
-- للحملات: [الحصول على Microsoft 365 الحملات](get-microsoft-365-campaigns.md)
+لقد أدرجنا مجموعة من البعثات هنا مع بعض الأهداف التي يجب أن يكملها فريقك. يجب عليك التأكد من حماية أجهزة الفريق، بالإضافة إلى تدريب الفريق على استخدام البريد الإلكتروني ومشاركة الملفات بأمان، والتعرف على التهديدات والإبلاغ بها.
 
-## <a name="solutions-for-your-business"></a>حلول أعمالك
+[**إعداد الأجهزة المحمولة**](m365bp-protect-pcs-macs.md). في هذه المهمة، قمت بإعداد جميع الأجهزة غير المدارة (BYOD) بحيث تكون جزءاً بأمان من النظام البنائي.
 
-بعد إعداد بيئة آمنة Microsoft 365، يمكنك استخدام الحلول التالية للعمل:
+[**حماية البريد الإلكتروني**](m365bp-protect-email-overview.md). اتخذ الخطوات اللازمة لحماية أنظمة البريد الإلكتروني من الهجوم.
 
-| إنشاء فرق للتعاون | إعداد الاجتماعات عبر الإنترنت |
-| ------------- | ------------- |
-| ![موقع SharePoint اتصال.](../media/sm-m365-democracy-teams-collab.png) | ![اجتماع عبر الإنترنت](../media/m365-democracy-teams-meetings.png) |
-| تعاون في العمل مع فرق العمل الرئيسية والموظفين والشركاء أو الموردين.<br>[إنشاء فريقك](create-teams-for-collaboration.md) | جدولة اجتماع باستخدام الصوت والفيديو والمشاركة مع Microsoft Teams.<br>[إعداد اجتماع](set-up-meetings.md) |
+[**التعاون والمشاركة بأمان**](m365bp-collaborate-share-securely.md). تتطلب منك أهداف هذه المهمة إعداد مشاركة الملفات الآمنة لجميع أعضاء المؤسسة.
 
-| تشفير بريدك الإلكتروني الحساس أو تسميته | إنشاء موقع اتصالات |
-| ------------- | ------------- |
-| ![البريد الإلكتروني المشفر والمسمى.](../media/sm-m365-campaign-email-encrypt.png) | ![موقع SharePoint اتصالات](../media/sm-m365-democracy-comms-site.png) |
-| استخدم التشفير وتسميات الحساسية لحماية البريد الإلكتروني الذي يحتوي على معلومات سرية أو حساسة.<br>[إرسال بريد إلكتروني مشفر](send-encrypted-email.md) | شارك الأحداث والرسالة والصور والمزيد مع فريقك في موقع اتصالات داخلي تم إنشاؤه SharePoint.<br>[إنشاء موقعك](create-communications-site.md) |
+[:::image type="content" source="media/m365bp-train-team.jpg" alt-text="Microsoft 365 Business Premium يحمي تطبيقاتك ويقوم بتخزين الملفات والبريد الإلكتروني والأجهزة والهويات.":::](m365bp-devices-overview.md)
 
-| مشاركة الملفات ومقاطع الفيديو |
-| ------------- |
-| ![مشاركة ملف في Microsoft Teams.](../media/m365-democracy-teams-sharefiles.png) |
-| حفظ الملفات ومقاطع الفيديو إلى السحابة حتى تكون متوفرة <br>لكل الأشخاص المناسبين.<br>[بدء المشاركة](share-files-and-videos.md) |
+## <a name="cybersecurity-playbook"></a>دليل مبادئ الأمان عبر الإنترنت
+
+تساعد الإرشادات الواردة في هذه البعثات شركتك على تحقيق الأهداف الموضحة في [دليل مبادئ حملة الأمن السيبراني](https://go.microsoft.com/fwlink/p/?linkid=2015598) لمدرسة هارفرد في جامعة هارفرد. يتوفر ملخص لتنزيله.
+
+انقر فوق مخطط المعلومات البياني للاطلاع على إصدار أكبر، أو [قم بتنزيل نسخة من ملصق دليل مبادئ الأمان عبر الإنترنت](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
+
+:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="دليل مبادئ الأمان عبر الإنترنت" lightbox="media/m365bp-cyber-security-playbook.png":::
+
+[الحصول على ملف PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
+
+## <a name="how-microsoft-365-business-premium-helps-you"></a>كيف يساعدك Microsoft 365 Business Premium
+
+انقر هنا لمعرفة [فوائد Microsoft 365 Business Premium](m365bp-secure-users.md).
+
+## <a name="next-steps"></a>الخطوات التالية
+
+الآن، دعونا [نحصن بيئتك ضد الهجمات الإلكترونية](m365bp-setup-overview.md)!
+
+> [!Note]
+> عندما يكون المصطلح أو التوجيه غير واضح، يمكنك العثور على تعريفات في [قائمة المصطلحات](m365bp-glossary.md).
+
+## <a name="safeguard-managed-devices"></a>[**حماية الأجهزة المدارة**](#tab/Safeguard)
+
+الجهاز الآمن هو الجهاز الذي تراقبه المؤسسة. في هذه المهمة الهامة الأخيرة، يمكنك إلحاق الأجهزة وتسجيلها في Microsoft Defender for Business، بحيث يتم تأمينها وحمايتها باستخدام أفضل الأدوات المتاحة.
+
+[**إعداد الأجهزة المدارة وتأمينها**](m365bp-protect-devices.md). اتخذ الخطوات لتأمين تلك الأجهزة بحيث تتم مراقبتها وحمايتها من قبل المؤسسة!
+
+[:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Microsoft 365 Business Premium يحمي تطبيقاتك ويقوم بتخزين الملفات والبريد الإلكتروني والأجهزة والهويات.":::](m365bp-protect-devices.md)
+
+## <a name="cybersecurity-playbook"></a>دليل مبادئ الأمان عبر الإنترنت
+
+تساعد الإرشادات الواردة في هذه البعثات شركتك على تحقيق الأهداف الموضحة في [دليل مبادئ حملة الأمن السيبراني](https://go.microsoft.com/fwlink/p/?linkid=2015598) لمدرسة هارفرد في جامعة هارفرد. يتوفر ملخص لتنزيله.
+
+انقر فوق مخطط المعلومات البياني للاطلاع على إصدار أكبر، أو [قم بتنزيل نسخة من ملصق دليل مبادئ الأمان عبر الإنترنت](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
+
+:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="دليل مبادئ الأمان عبر الإنترنت" lightbox="media/m365bp-cyber-security-playbook.png":::
+
+[الحصول على ملف PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)!
+
+## <a name="how-microsoft-365-business-premium-helps-you"></a>كيف يساعدك Microsoft 365 Business Premium
+
+انقر هنا لمعرفة [فوائد Microsoft 365 Business Premium](m365bp-secure-users.md).
+
+## <a name="next-steps"></a>الخطوات التالية
+
+الآن، دعونا [نحصن بيئتك ضد الهجمات الإلكترونية](m365bp-setup-overview.md)!
+
+> [!Note]
+> عندما يكون المصطلح أو التوجيه غير واضح، يمكنك العثور على تعريفات في [قائمة المصطلحات](m365bp-glossary.md).
