@@ -2,8 +2,8 @@
 title: الترميز التنبؤي في eDiscovery (Premium) - البدء السريع
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: تعرف على كيفية البدء باستخدام وحدة الترميز التنبؤية في eDiscovery (Premium). ترشدك هذه المقالة خلال العملية الشاملة لاستخدام الترميز التنبؤي لتحديد المحتوى في مجموعة المراجعة الأكثر صلة بالتحقيق الخاص بك.
-ms.openlocfilehash: dc4edcb6affa7ccfd6a915839ef84b0d453fcfca
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: ac8e31540fbe817b83b5fd0bdae2fadea7040b1a
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996141"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100776"
 ---
 # <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>بداية سريعة: الترميز التنبؤي في eDiscovery (Premium) (معاينة)
 

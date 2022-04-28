@@ -1,8 +1,8 @@
 ---
-title: Microsoft 365 حالة حالة الخدمة
+title: حالة حماية الخدمة Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 04/19/2020
 audience: Admin
 ms.topic: conceptual
@@ -16,27 +16,27 @@ ms.collection:
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
-description: Microsoft 365 حالة حالة الخدمة
-ms.openlocfilehash: 70f385a56b03c532a594d10279a953e93611a90b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: حالة حماية الخدمة Microsoft 365
+ms.openlocfilehash: 0b3ede9b35dbf4e0356be8d1479e75561f66fdb2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63567631"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65100380"
 ---
-# <a name="microsoft-365-network-health-status"></a>Microsoft 365 حالة حالة الشبكة
+# <a name="microsoft-365-network-health-status"></a>حالة حماية الشبكة Microsoft 365
 
-نظرا للزيادة في الطلب على خدمات Microsoft السحابية أثناء مشكلة COVID-19، نحن نقدم معلومات حول صحة شبكة Microsoft العالمية بالإضافة إلى معلومات حول مشاكل جودة الشبكة التي قد تواجه عملائنا ولكننا لا نتحكم بها.
+نظرا إلى الطلب المتزايد على خدمات Microsoft السحابية خلال أزمة COVID-19، نقدم معلومات حول صحة شبكة Microsoft العالمية بالإضافة إلى معلومات حول مشكلات جودة الشبكة التي قد يواجهها عملاتنا ولكن لا يمكننا التحكم بها.
 
-تتضمن هذه المعلومات مشاكل الشبكة التي تؤثر على جميع برامجنا كعرضات خدمات، بما في ذلك Microsoft 365.
+تتضمن هذه المعلومات مشكلات الشبكة التي تؤثر على جميع برامجنا كعروض الخدمة، بما في ذلك Microsoft 365.
 
-_قد تكون هناك تأخيرات في التحديثات لهذه الصفحة. نحن نقوم بتحديثه يدويا بينما نقوم ببناء حل أكثر تلقائية._
+_قد يكون هناك تأخير في تحديثات هذه الصفحة. نحن نقوم بتحديثه يدويا في أثناء إنشاء حل أكثر تلقائية._
 
-عندما نكتشف وجود مشاكل ملحوظة داخل شبكة Microsoft العامة أو مع الاتصال بالإنترنت بين عملائنا وشبكة Microsoft، سنقوم بنشر هذه المعلومات هنا. نوصي بأن يستمر العملاء في استخدام لوحة معلومات مركز مسؤولي Microsoft 365 الخدمة لفهم تأثير <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> أي مشاكل ملحوظة في الشبكة على المستأجر، حيث نوفر معلومات أكثر تفصيلا واستهدافا هناك.
+عندما نكتشف مشاكل كبيرة داخل شبكة Microsoft العالمية أو مع الاتصال بالإنترنت بين عملائنا وشبكة Microsoft، سننشر هذه المعلومات هنا. نوصي العملاء بالاستمرار في استخدام <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">لوحة معلومات مركز مسؤولي Microsoft 365 Service Health</a> لفهم تأثير أي مشكلات كبيرة في الشبكة على المستأجر الخاص بهم، حيث نقدم معلومات أكثر تفصيلا واستهدافا هناك.
 
 ## <a name="current-network-issues"></a>مشاكل الشبكة الحالية
 
-| الموقع | نوع المشكلة | التفاصيل |
+| موقع | نوع المشكلة | التفاصيل |
 | --- | --- | --- |
 | لا توجد مشاكل حالية | | |
 
@@ -44,6 +44,6 @@ _قد تكون هناك تأخيرات في التحديثات لهذه الصف
 
 استخدم هذه الموارد لتحسين استخدام الشبكة خدمات Microsoft.
 
-- [تحسين Microsoft 365 اتصال المستخدمين البعيدين باستخدام تقسيم VPN](microsoft-365-vpn-split-tunnel.md)
-- [Microsoft 365 الأساسية لاتصال الشبكة](./microsoft-365-network-connectivity-principles.md)
-- [العمل عن بعد باستخدام خدمات شبكة Azure](/azure/networking/working-remotely-support)
+- [تحسين الاتصال Microsoft 365 للمستخدمين البعيدين باستخدام الاتصال النفقي المنقسم ل VPN](microsoft-365-vpn-split-tunnel.md)
+- [مبادئ اتصال الشبكة Microsoft 365](./microsoft-365-network-connectivity-principles.md)
+- [العمل عن بعد باستخدام خدمات Azure Networking](/azure/networking/working-remotely-support)
