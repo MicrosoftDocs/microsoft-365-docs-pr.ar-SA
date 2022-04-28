@@ -2,8 +2,8 @@
 title: نشر موصل أرشفة بيانات Twitter
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: يمكن للمسؤولين إعداد موصل أصلي لاستيراد بيانات Twitter وأرشفتها Microsoft 365. بعد استيراد هذه البيانات إلى Microsoft 365، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة إدارة بيانات Twitter الخاصة بمؤسستك.
-ms.openlocfilehash: 6bf801d7c3443385ee0a2656753dcf069ac6aebc
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: a928e24c73fcbb290bde2caa0f508610fc18728d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997131"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090950"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>نشر موصل أرشفة بيانات Twitter
 

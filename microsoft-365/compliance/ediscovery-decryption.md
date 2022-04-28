@@ -2,8 +2,8 @@
 title: فك التشفير في eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية معالجة أدوات eDiscovery Microsoft 365 للمستندات المشفرة المرفقة برسائل البريد الإلكتروني والمخزنة في SharePoint Online و OneDrive for Business.
-ms.openlocfilehash: e010ef1ff169467b442e137bc31d3640aa5a8cb4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e3697efb05ac1f1f9f4b6c9da6789d4230579a68
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994427"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098549"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>فك التشفير في أدوات eDiscovery Microsoft 365
 

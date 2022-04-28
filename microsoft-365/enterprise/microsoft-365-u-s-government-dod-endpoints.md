@@ -2,7 +2,7 @@
 title: Office 365 نقاط نهاية DOD لحكومة الولايات المتحدة
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 02/28/2022
 audience: ITPro
 ms.topic: conceptual
@@ -22,12 +22,12 @@ f1.keywords:
 description: يتطلب Office 365 الاتصال بالإنترنت. يجب أن تكون نقاط النهاية أدناه قابلة للوصول للعملاء الذين يستخدمون Office 365 خطط DoD لحكومة الولايات المتحدة فقط.
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5d2916e18e88b51eb478e674eaf9ae52ec3ad26f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 7c387e66d53c5e5df88e8779ea7f7d74c8d639ee
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972882"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090242"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 نقاط نهاية DoD لحكومة الولايات المتحدة
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1709597d10b140124501fd0dc7349e8fc4342bb6
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 14ec731eebe21f6b399e03d445fef248b8675026
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841758"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098747"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية
 
@@ -175,6 +175,11 @@ ms.locfileid: "64841758"
 
 لتلقي تحسينات وإصلاحات منتظمة للمنتج لمكون مستشعر الكشف التلقائي والاستجابة على النقط النهائية، تأكد من تطبيق أو الموافقة على Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277). بالإضافة إلى ذلك، للحفاظ على تحديث مكونات الحماية، راجع [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
+
+إذا كنت تستخدم خادم Windows Server Update Services (WSUS) و/أو Microsoft Endpoint Configuration Manager، فهذا "تحديث Microsoft Defender لنقطة النهاية الجديد ل يتوفر الكشف التلقائي والاستجابة على النقط النهائية Sensor" ضمن الفئة "Microsoft Defender لنقطة النهاية".
+
+
+
 ### <a name="onboarding-steps-summary"></a>ملخص خطوات الإلحاق
 
 - الخطوة 1: [تنزيل حزم التثبيت والإلحاق](#step-1-download-installation-and-onboarding-packages)
@@ -307,7 +312,7 @@ Msiexec /x md4ws.msi /quiet
 
 1. تعيين إدخال التسجيل التالي:
     - مسار: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-    - اسم: `ForceDefenderPassiveMode`
+    - الاسم: `ForceDefenderPassiveMode`
     - نوع: `REG_DWORD`
     - قيمه: `1`
 

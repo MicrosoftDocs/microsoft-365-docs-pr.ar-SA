@@ -1,8 +1,8 @@
 ---
-title: التوفر العالي للمصادقة الخارجية المرحلة 4 تكوين مصادقة محترفي تطبيقات الويب
+title: مرحلة المصادقة الموحدة ذات قابلية الوصول العالية 4 لتكوين وكلاء تطبيق الويب
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
@@ -13,31 +13,31 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
-description: 'ملخص: قم بتكوين خوادم وكيل تطبيق ويب للمصادقة الخارجية عالية التوفر Microsoft 365 Microsoft Azure.'
-ms.openlocfilehash: ea50a48fe4bebd997ecf6b472a60e57772bf2b0f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 'ملخص: تكوين خوادم وكيل تطبيق الويب للمصادقة الموحدة عالية التوفر الخاصة بك Microsoft 365 في Microsoft Azure.'
+ms.openlocfilehash: 2200d4f7c0aafbaff11dd5d9b5b5b414fae06b5f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63570008"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091270"
 ---
-# <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>المرحلة 4 من المصادقة المتحدة ذات التوفر العالي: تكوين محترفي تطبيقات الويب
+# <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>مرحلة المصادقة الموحدة 4 عالية التوفر: تكوين وكلاء تطبيق الويب
 
-في هذه المرحلة من نشر توفر عال للمصادقة Microsoft 365 المتحدة في خدمات البنية الأساسية في Azure، يمكنك إنشاء موازن تحميل داخلي وخادم AD FS.
+في هذه المرحلة من نشر قابلية وصول عالية للمصادقة الموحدة Microsoft 365 في خدمات البنية الأساسية ل Azure، يمكنك إنشاء موازن تحميل داخلي وخادمين AD FS.
   
-يجب إكمال هذه المرحلة قبل الانتقال إلى المرحلة [5:](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) تكوين المصادقة الخارجية Microsoft 365. راجع [نشر المصادقة](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) المتحدة عالية التوفر Microsoft 365 Azure لجميع المراحل.
+يجب إكمال هذه المرحلة قبل الانتقال إلى [المرحلة 5: تكوين المصادقة الموحدة Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). راجع [نشر المصادقة الموحدة عالية التوفر Microsoft 365 في Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) لجميع المراحل.
   
-## <a name="create-the-internet-facing-load-balancer-in-azure"></a>إنشاء موازن التحميل المواجه للإنترنت في Azure
+## <a name="create-the-internet-facing-load-balancer-in-azure"></a>إنشاء موازنة التحميل التي تواجه الإنترنت في Azure
 
-يجب إنشاء موازن تحميل يواجه الإنترنت بحيث يوزع Azure حركة مرور مصادقة العميل الواردة من الإنترنت بالتساوي بين الخادمين الوكيلين لتطبيق ويب.
+يجب إنشاء موازن تحميل يواجه الإنترنت بحيث يوزع Azure حركة مرور مصادقة العميل الواردة من الإنترنت بالتساوي بين خادمي وكيل تطبيق الويب.
   
 > [!NOTE]
-> تستخدم مجموعات الأوامر التالية الإصدار الأخير من Azure PowerShell. راجع [بدء العمل باستخدام Azure PowerShell](/powershell/azure/get-started-azureps). 
+> تستخدم مجموعات الأوامر التالية أحدث إصدار من Azure PowerShell. راجع [بدء استخدام Azure PowerShell](/powershell/azure/get-started-azureps). 
   
-عند توفير قيم مجموعة الموارد والموقع، يمكنك تشغيل الكتلة الناتجة في موجه أوامر Azure PowerShell أو في POWERShell ISE.
+عند توفير قيم الموقع ومجموعة الموارد، قم بتشغيل الكتلة الناتجة في موجه أوامر Azure PowerShell أو في PowerShell ISE.
   
 > [!TIP]
-> لإنشاء كتل أوامر PowerShell جاهزة للتشغيل استنادا إلى الإعدادات المخصصة، استخدم هذا Microsoft Excel [تكوين.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
+> لإنشاء كتل أوامر PowerShell جاهزة للتشغيل استنادا إلى الإعدادات المخصصة، استخدم [مصنف التكوين Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) هذا. 
 
 ```powershell
 # Set up key variables
@@ -52,7 +52,7 @@ $lbrule=New-AzLoadBalancerRuleConfig -Name "WebTraffic" -FrontendIpConfiguration
 New-AzLoadBalancer -ResourceGroupName $rgName -Name "WebAppProxyServers" -Location $locName -LoadBalancingRule $lbrule -BackendAddressPool $beAddressPool -Probe $healthProbe -FrontendIpConfiguration $frontendIP
 ```
 
-لعرض عنوان IP العام المعين إلى موازن التحميل المواجه للإنترنت، قم بتشغيل هذه الأوامر في موجه أوامر Azure PowerShell على الكمبيوتر المحلي:
+لعرض عنوان IP العام المعين إلى موازن التحميل الذي يواجه الإنترنت، قم بتشغيل هذه الأوامر في موجه أوامر Azure PowerShell على الكمبيوتر المحلي:
   
 ```powershell
 Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgName).IPAddress
@@ -60,43 +60,43 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
 
 ## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a>تحديد FQDN لخدمة الاتحاد وإنشاء سجلات DNS
 
-يجب تحديد اسم DNS لتحديد اسم خدمة الاتحاد على الإنترنت. سيتم الاتصال Azure AD Microsoft 365 باستخدام هذا الاسم في المرحلة 5، والذي سيصبح جزءا من عنوان URL الذي يرسله Microsoft 365 إلى توصيل العملاء للحصول على رمز أمان مميز. مثال على ذلك fs.contoso.com (fs تعني خدمة الاتحاد).
+تحتاج إلى تحديد اسم DNS لتحديد اسم خدمة الاتحاد على الإنترنت. سيقوم azure AD الاتصال بتكوين Microsoft 365 بهذا الاسم في المرحلة 5، والتي ستصبح جزءا من عنوان URL الذي Microsoft 365 إرساله إلى العملاء المتصلين للحصول على رمز أمان مميز. مثال على ذلك هو fs.contoso.com (fs يرمز إلى خدمة الاتحاد).
   
-بمجرد أن يكون لديك FDQN لخدمة الاتحاد، قم بإنشاء مجال DNS عام سجل ل FDQN لخدمة الاتحاد يتم حله إلى عنوان IP العام لموازن التحميل المواجه للإنترنت في Azure.
+بمجرد أن يكون لديك FDQN لخدمة الاتحاد الخاصة بك، قم بإنشاء سجل مجال DNS عام A ل FDQN لخدمة الاتحاد الذي يحل إلى عنوان IP العام لموازن التحميل الذي يواجه Azure عبر الإنترنت.
   
-|**الاسم**|**النوع**|**TTL**|**القيمة**|
+|**الاسم**|**نوع**|**TTL**|**قيمه**|
 |:-----|:-----|:-----|:-----|
-|FDQN لخدمة الاتحاد  <br/> |A  <br/> |3600  <br/> |عنوان IP العام لموازن التحميل المواجه للإنترنت في Azure (المعروض بواسطة الأمر **"مضيف الكتابة** " في المقطع السابق) <br/> |
+|FDQN لخدمة الاتحاد  <br/> |A  <br/> |3600  <br/> |عنوان IP العام لموازن التحميل الذي يواجه Azure عبر الإنترنت (يتم عرضه بواسطة الأمر **Write-Host** في القسم السابق) <br/> |
    
 فيما يلي مثال على ذلك:
   
-|**الاسم**|**النوع**|**TTL**|**القيمة**|
+|**الاسم**|**نوع**|**TTL**|**قيمه**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
-بعد ذلك، أضف سجل عنوان DNS إلى مساحة اسم DNS الخاصة في مؤسستك التي تحل FQDN لخدمة الاتحاد إلى عنوان IP الخاص المعين إلى موازن التحميل الداخلي للخوادم AD FS (الجدول I، العنصر 4، عمود القيمة).
+بعد ذلك، أضف سجل عنوان DNS إلى مساحة اسم DNS الخاصة بالمؤسسة التي تقوم بحل FQDN لخدمة الاتحاد إلى عنوان IP الخاص المعين إلى موازن التحميل الداخلي لخوادم AD FS (الجدول I، العنصر 4، عمود القيمة).
   
-## <a name="create-the-web-application-proxy-server-virtual-machines-in-azure"></a>إنشاء الأجهزة الظاهرية للخادم الوكيل لتطبيق ويب في Azure
+## <a name="create-the-web-application-proxy-server-virtual-machines-in-azure"></a>إنشاء الأجهزة الظاهرية لخادم وكيل تطبيق الويب في Azure
 
-استخدم الكتلة التالية من أوامر Azure PowerShell لإنشاء الأجهزة الظاهرية للخادمين الوكيلين لتطبيق ويب. 
+استخدم الكتلة التالية من أوامر Azure PowerShell لإنشاء الأجهزة الظاهرية لخادمين وكيل تطبيق الويب. 
   
 لاحظ أن مجموعات أوامر Azure PowerShell التالية تستخدم قيما من الجداول التالية:
   
-- الجدول M، للآلات الظاهرية
+- الجدول M، لأجهزتك الظاهرية
     
-- الجدول R، لمجموعات الموارد
+- الجدول R، لمجموعات الموارد الخاصة بك
     
-- الجدول الخامس، لإعدادات الشبكة الظاهرية
+- الجدول V، لإعدادات الشبكة الظاهرية
     
-- الجدول S، بالنسبة إلى الشبكة الفرعية
+- الجدول S، للشبكات الفرعية الخاصة بك
     
-- الجدول 1، بالنسبة إلى عناوين IP الثابتة
+- الجدول I، لعناوين IP الثابتة
     
-- الجدول A،  مجموعات التوفر الخاصة بك
+- الجدول A، لمجموعات التوفر الخاصة بك
     
-تذكر أنك قمت بتعريف الجدول M في المرحلة [2:](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) تكوين وحدات تحكم المجال والجداول R وV وS وI و A في المرحلة [1: تكوين Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+تذكر أنك حددت الجدول M في [المرحلة 2: تكوين وحدات تحكم المجال](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) والجداول R وV وS وI و A في [المرحلة 1: تكوين Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
-عند توفير كافة القيم الصحيحة، يمكنك تشغيل الكتلة الناتجة في موجه أوامر Azure PowerShell أو في POWERShell ISE.
+عند توفير جميع القيم المناسبة، قم بتشغيل الكتلة الناتجة في موجه أوامر Azure PowerShell أو في PowerShell ISE.
   
 ```powershell
 # Set up variables common to both virtual machines
@@ -150,22 +150,22 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> ونظرا لأن هذه الأجهزة الظاهرية خاصة بتطبيق إنترانت، لا يتم تعيين عنوان IP عام أو تسمية اسم مجال DNS ويتم عرضها على الإنترنت. ومع ذلك، فهذا يعني أيضا أنه لا يمكنك الاتصال بها من مدخل Azure. لا **الاتصال** خيار التحكم عند عرض خصائص الجهاز الظاهري. استخدم ملحق اتصال سطح المكتب البعيد أو أداة أخرى لسطح المكتب البعيد للاتصال بالآلة الظاهرية باستخدام عنوان IP الخاص به أو اسم إنترانت DNS وبيانات اعتماد حساب المسؤول المحلي.
+> نظرا لأن هذه الأجهزة الظاهرية مخصصة لتطبيق إنترانت، فلا يتم تعيين عنوان IP عام لها أو تسمية اسم مجال DNS وعرضها على الإنترنت. ومع ذلك، هذا يعني أيضا أنه لا يمكنك الاتصال بها من مدخل Azure. لا يتوفر خيار **الاتصال** عند عرض خصائص الجهاز الظاهري. استخدم ملحق اتصال سطح المكتب البعيد أو أداة سطح المكتب البعيد الأخرى للاتصال بالجهاز الظاهري باستخدام عنوان IP الخاص به أو اسم DNS إنترانت وبيانات اعتماد حساب المسؤول المحلي.
   
-إليك التكوين الناتج عن إكمال هذه المرحلة بنجاح، مع أسماء أجهزة الكمبيوتر النائبة.
+فيما يلي التكوين الناتج عن إكمال هذه المرحلة بنجاح، مع أسماء أجهزة الكمبيوتر النائبة.
   
-**المرحلة 4: موازن التحميل المواجه للإنترنت وخادم وكيل تطبيق ويب للبنية الأساسية للمصادقة المتحدة عالية التوفر في Azure**
+**المرحلة 4: موازن التحميل المواجه للإنترنت وخوادم وكيل تطبيق الويب للبنية الأساسية للمصادقة الموحدة عالية التوفر في Azure**
 
-![المرحلة 4 من التوفر العالي Microsoft 365 المصادقة الخارجية في Azure مع خوادم وكيل تطبيق الويب.](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![المرحلة 4 من قابلية الوصول العالية Microsoft 365 البنية الأساسية للمصادقة الموحدة في Azure مع خوادم وكيل تطبيق الويب.](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>الخطوة التالية
 
-استخدام [المرحلة 5: تكوين مصادقة Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) لمواصلة تكوين حمل العمل هذا.
+استخدم [المرحلة 5: تكوين المصادقة الموحدة Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) لمتابعة تكوين حمل العمل هذا.
   
 ## <a name="see-also"></a>انظر أيضاً
 
-[نشر المصادقة المتحدة عالية التوفر Microsoft 365 Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
+[نشر مصادقة موحدة عالية التوفر Microsoft 365 في Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[الهوية المتحدة لبيئة Microsoft 365/اختبارك](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[هوية موحدة لبيئة التطوير/الاختبار Microsoft 365 الخاصة بك](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 حل وهندسة](../solutions/index.yml)
+[مركز الحلول والهندسة من Microsoft 365](../solutions/index.yml)

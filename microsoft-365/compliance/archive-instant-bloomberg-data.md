@@ -2,8 +2,8 @@
 title: إعداد موصل أرشفة بيانات Bloomberg الفورية
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 04/06/2022
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: تعرف على كيفية إعداد المسؤولين لموصل بيانات واستخدامه لاستيراد البيانات وأرشفتها من أداة الدردشة الفورية في بلومبيرغ إلى Microsoft 365.
-ms.openlocfilehash: 22b581c332e8accad567bb7eb8b29e57ec981044
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 54e7853ef34b391676c1e1ecb495a6cf5b8f9991
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998121"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099005"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>إعداد موصل أرشفة بيانات Bloomberg الفورية
 

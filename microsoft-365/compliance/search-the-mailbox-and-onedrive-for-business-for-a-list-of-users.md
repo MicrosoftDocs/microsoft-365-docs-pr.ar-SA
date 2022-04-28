@@ -2,8 +2,8 @@
 title: استخدام البحث عن المحتوى لقائمة مستخدمين على موقع & OneDrive for Business علبة البريد
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 1/3/2017
 audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: استخدم البحث عن المحتوى والبرامج النصية في هذه المقالة للبحث في علب البريد ومواقع OneDrive for Business لمجموعة من المستخدمين.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1bbfc26c2193c1bf31e081b8ded9e2e2baf56743
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: a75296bd17a1f4b77c22298f6c9a294ec06bd182
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998805"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098439"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>استخدام البحث عن المحتوى للبحث في علبة البريد وموقع OneDrive for Business عن قائمة المستخدمين
 

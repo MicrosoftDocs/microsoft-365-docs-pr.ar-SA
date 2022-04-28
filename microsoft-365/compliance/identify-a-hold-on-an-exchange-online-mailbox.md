@@ -2,8 +2,8 @@
 title: كيفية تحديد قائمة الاحتجاز في علبة بريد Exchange Online
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: ITPro
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: تعرف على كيفية تحديد أنواع الاحتجاز المختلفة التي يمكن وضعها على علبة بريد Exchange Online في Microsoft 365.
-ms.openlocfilehash: 2e62d8f6fd0dc6352b4bf6fc5766b9cd33f8ffb4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4b4ff5064f59285412c4c20108df9dbbae992f7e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994161"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097745"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>كيفية تحديد نوع قائمة الاحتجاز الموضوعة على علبة بريد Exchange Online
 

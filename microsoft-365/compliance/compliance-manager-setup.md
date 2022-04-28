@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تعيين أذونات وأدوار مستخدم Microsoft Purview Compliance Manager وتكوين الاختبار التلقائي للإجراءات. إدارة محفوظات المستخدم وتصفية طريقة عرض لوحة المعلومات.
-ms.openlocfilehash: e691aefdeaf3c2e1c1398bf71b74006aff4d1f6f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c7920a9eac06128f3cf9bfb54645a83296ca7e53
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973630"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091016"
 ---
 # <a name="get-started-with-compliance-manager"></a>بدء استخدام "إدارة الترحيل"
 
@@ -137,7 +137,7 @@ ms.locfileid: "64973630"
 
 2. في صفحة الإعدادات، حدد **Compliance Manager**.
 
-3. حدد **الاختبار التلقائي** من جزء التنقل الأيمن.
+3. حدد **مصدر الاختبار** من جزء التنقل الأيمن.
 
 4. حدد الزر القابل للتطبيق لتشغيل الاختبار التلقائي لكافة إجراءات التحسين أو إيقاف تشغيله لكافة الإجراءات أو تشغيلها حسب الإجراء الفردي.
 

@@ -1,14 +1,14 @@
 ---
-title: تخصيص صفحة تسجيل الدخول مع إشعار خصوصية وموافقة
+title: تخصيص صفحة تسجيل الدخول باستخدام إشعار الخصوصية والموافقة
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
+ms.author: v-kcirillo
+author: cirilk
 manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -21,32 +21,35 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: قم بتخصيص صفحة تسجيل الدخول الخاصة بك مع إشعار الخصوصية ولموافقة Microsoft 365.
-ms.openlocfilehash: 8beff76721ce622d5e1943aea1c16fda90b052f1
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: تخصيص صفحة تسجيل الدخول باستخدام إشعار الخصوصية والموافقة Microsoft 365.
+ms.openlocfilehash: 84c7a488d8a6ba854e3ac8b09067fd350c9ae4fc
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634680"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097877"
 ---
-# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>تخصيص صفحة تسجيل الدخول باستخدام إشعار الخصوصية ولموافقة
+# <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>تخصيص صفحة تسجيل الدخول باستخدام إشعار الخصوصية والموافقة
 
-يمكن أن تجعل شركتك أو حملتك الإعلانية من السهل على أجهزة تنفيذ القانون تقديم رسوم قانونية ضد المجرمين عبر الإنترنت عن طريق إضافة إشعار خصوصية وموافقة إلى صفحة تسجيل الدخول.
+يمكن أن تسهل شركتك أو حملتك على أجهزة إنفاذ القانون تقديم رسوم قانونية ضد المجرمين عبر الإنترنت عن طريق إضافة إشعار الخصوصية والموافقة إلى صفحة تسجيل الدخول.
 
-يمكنك تخصيص صفحة تسجيل الدخول باستخدام علامتك التجارية. يمكنك أيضا إضافة نص لمساعدة المستخدمين على تسجيل الدخول، أو الإشارة إلى المتطلبات القانونية أو القيود اللازمة للوصول إلى Microsoft 365 الموارد.
+يمكنك تخصيص صفحة تسجيل الدخول باستخدام علامتك التجارية. يمكنك أيضا إضافة نص لمساعدة المستخدمين على تسجيل الدخول، أو للإشارة إلى المتطلبات القانونية أو القيود المفروضة على الوصول إلى موارد Microsoft 365.
 
 ## <a name="design-customization-the-text-on-your-sign-in-page"></a>تصميم تخصيص النص على صفحة تسجيل الدخول
 
-لتحديث العناصر القابلة للتخصيص على صفحة تسجيل الدخول، يجب أن تكون المسؤول العام. للحصول على إرشادات محددة، راجع [إضافة مقالة العلامة التجارية للشركة](/azure/active-directory/fundamentals/customize-branding) .
+لتحديث العناصر القابلة للتخصيص في صفحة تسجيل الدخول، يجب أن تكون مسؤولا عاما. للحصول على إرشادات محددة، راجع [مقالة إضافة علامة تجارية للشركة](/azure/active-directory/fundamentals/customize-branding) .
 
 العناصر التي يمكنك تحديثها هي:
 
-- **نص صفحة تسجيل الدخول** مكان سهل لإضافة بيان الخصوصية و الموافقة.
-
+- نص صفحة تسجيل الدخول (مكان سهل لإضافة بيان الخصوصية والموافقة)
 - صورة خلفية صفحة تسجيل الدخول
-
 - شعار الشعار
-
 - تلميح اسم المستخدم
 
-للحصول على أمثلة على إشعارات الخصوصية وإشعارات الموافقة، راجع إلحاق A في البحث عن أجهزة الكمبيوتر وضبطها والحصول على أدلة إلكترونية في ["التحقيقات الجنائية](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)".
+للحصول على أمثلة على إشعارات الخصوصية والموافقة، راجع الملحق أ في [البحث عن أجهزة الكمبيوتر والتحرير عليها والحصول على أدلة إلكترونية في التحقيقات الجنائية](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf).
+
+## <a name="next-steps"></a>الخطوات التالية
+
+1. [استخدم العملية الإرشادية للإعداد الأساسي](m365bp-setup.md#use-the-guided-process-for-basic-setup).
+
+2. [إعداد قدرات الأمان الخاصة بك](m365bp-security-overview.md).

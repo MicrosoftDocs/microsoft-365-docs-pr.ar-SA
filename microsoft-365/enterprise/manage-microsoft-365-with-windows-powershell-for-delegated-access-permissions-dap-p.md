@@ -1,8 +1,8 @@
 ---
-title: إدارة Microsoft 365 باستخدام Windows PowerShell DAP
+title: إدارة Microsoft 365 باستخدام Windows PowerShell لشركاء DAP
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: landing-page
 ms.service: o365-administration
@@ -16,30 +16,30 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
-description: كيف يمكن لشركاء syndication Cloud Solution Provider (CSP) استخدام Windows PowerShell لإدارة Microsoft 365 المستأجرين للعملاء.
-ms.openlocfilehash: db991416c88c88541bd5e9ec77bbca538e4e376c
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: كيف يمكن لشركاء المشاركة Cloud Solution Provider (CSP) استخدام Windows PowerShell لإدارة مستأجري العملاء Microsoft 365.
+ms.openlocfilehash: 9eb1b37f89f7850fe0680bbc43d39abfb68e9954
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675295"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091578"
 ---
-# <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>كيفية إدارة Microsoft 365 مع Windows PowerShell أذونات الوصول المفوض
+# <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>كيفية إدارة Microsoft 365 باستخدام Windows PowerShell لشركاء أذونات الوصول المفوض
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
-شركاء إذن الوصول المفوض (DAP) هم شركاء Syndication وموفرو حلول السحابة (CSP). العديد منهم هم موفرو الشبكة أو الاتصالات. يتم تجميع Microsoft 365 اشتراكات في عروض الخدمات الخاصة بهم. عند بيعهم لاشتراك Microsoft 365، يتم منحهم تلقائيا أذونات الإدارة بالنيابة عن (AOBO) إلى أذونات العميل العشرية حتى يمكنهم إدارة هذه الأذونات والتقارير بشأنها. ويصعب تنفيذ هذه المهام في مركز مسؤولي Microsoft 365. من الأسهل استخدام PowerShell Microsoft 365 تنفيذ مهام إدارية مثل:
-- سرد جميع **مستأجري** العملاء ومجالاتهم 
+شركاء إذن الوصول المفوض (DAP) هم شركاء موفري حلول السحابة (CSP) وSyndication. العديد من موفري الشبكات أو الاتصالات. وهي تقوم بتجميع اشتراكات Microsoft 365 في عروض الخدمة الخاصة بهم. عندما يبيعون اشتراكا Microsoft 365، يتم منحهم تلقائيا أذونات الإدارة نيابة عن (AOBO) إلى إيجارات العميل حتى يتمكنوا من إدارة تلك الإيجارات والإبلاغ عنها. من الصعب تنفيذ هذه المهام في مركز مسؤولي Microsoft 365. من الأسهل استخدام PowerShell Microsoft 365 للقيام بمهام إدارية مثل:
+- سرد كافة **معرفات المستأجرين للعملاء** ومجالاتهم 
 - تحديد جميع المستخدمين في إيجار العميل والتراخيص المعينة لهم
 > [!NOTE]
-> لا يمكن تنفيذ بعض المهام الإدارية إلا في PowerShell.
+> يمكن تنفيذ بعض المهام الإدارية فقط في PowerShell.
 
-تظهر المقالات التالية كيفية استخدام شركاء Syndication وCSP ل PowerShell لإدارة اضمان العملاء:
+توضح المقالات التالية كيف يستخدم شركاء Syndication وCSP PowerShell لإدارة إيجارات العملاء الخاصة بهم:
   
-- [إدارة Microsoft 365 المستأجرين باستخدام Windows PowerShell أذونات الوصول المفوض (DAP)](manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md)
+- [إدارة المستأجرين Microsoft 365 باستخدام Windows PowerShell لشركاء أذونات الوصول المفوض (DAP)](manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md)
     
-- [إضافة مجال إلى إيجار عميل Windows PowerShell لشركاء إذن الوصول المفوض (DAP)](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
+- [إضافة مجال إلى إيجار عميل باستخدام Windows PowerShell لشركاء إذن الوصول المفوض (DAP)](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
     
-- [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+- [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
-- [استرداد بيانات إعداد تقارير مستأجر العميل باستخدام Windows PowerShell أذونات الوصول المفوض (DAP)](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
+- [استرداد بيانات تقارير مستأجر العميل باستخدام Windows PowerShell لشركاء أذونات الوصول المفوض (DAP)](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)

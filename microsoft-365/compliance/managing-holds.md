@@ -2,8 +2,8 @@
 title: إدارة قوائم الاحتجاز في eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ description: تعرف على كيفية وضع الاحتجاز على أمنا�
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkMAC
-ms.openlocfilehash: 6ec8e31fddba430a7a148eea5c8b07eb35872641
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: c2213c34e111989f0de6fccf886f44dd0f45841b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996757"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098483"
 ---
 # <a name="manage-holds-in-ediscovery-premium"></a>إدارة قوائم الاحتجاز في eDiscovery (Premium)
 

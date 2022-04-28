@@ -2,8 +2,8 @@
 title: تصدير المستندات إلى حساب Azure Storage للمؤسسة
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: تصدير المستندات في مجموعة مراجعة إلى حساب Azure Storage ثم استخدام Azure Storage Explorer لتنزيلها إلى كمبيوتر محلي.
-ms.openlocfilehash: 6c8709fe1540393164e00222b728b10d5f809012
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e0dfe3eb37ea440c93dc7753c7c4206d8d33c1f3
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994887"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098615"
 ---
 # <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>تصدير المستندات في مجموعة مراجعة إلى حساب Azure Storage
 

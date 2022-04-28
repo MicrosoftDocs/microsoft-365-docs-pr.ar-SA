@@ -2,7 +2,7 @@
 title: مواقع بيانات Microsoft 365
 ms.author: deanw
 author: dmwmsft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: تحديد مكان تخزين بيانات عميلك Microsoft 365 في جميع أنحاء العالم
-ms.openlocfilehash: 76e1c0c4ed9a4a8b9c0971d58f26fd07d3d28ce9
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 19741da49baf6890fbc0a7570190df1676990e9e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947000"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090784"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>حيث يتم تخزين بيانات عميل Microsoft 365
 

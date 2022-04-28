@@ -2,8 +2,8 @@
 title: حدود eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على حدود الحالة وحدود الفهرسة وحدود البحث السارية لحل eDiscovery (Premium) في Microsoft 365.
-ms.openlocfilehash: 07977b80ba0ce55c6d0e6b179955cfa959eaa5c8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3d0204eb452b669937d30fe5519e5af073b64d6d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999751"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65099202"
 ---
 # <a name="limits-in-ediscovery-premium"></a>الحدود في eDiscovery (Premium)
 

@@ -2,8 +2,8 @@
 title: نشر موصل أرشفة بيانات صفحات Facebook Business
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: يمكن للمسؤولين إعداد موصل أصلي لاستيراد صفحات Facebook Business وأرشفتها Microsoft 365. بعد استيراد هذه البيانات إلى Microsoft 365، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة إدارة بيانات Facebook الخاصة بمؤسستك.
-ms.openlocfilehash: b58b3f1707a8c3bb52aa7fc5ebc9c359ef9a8a97
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b3f3770b4e3cf8415111ebdd1881905ae21f4739
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998761"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098857"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>نشر موصل أرشفة بيانات صفحات Facebook Business
 

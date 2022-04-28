@@ -2,7 +2,7 @@
 title: نقاط نهاية Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: landing-page
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: بالنسبة لعناوين IP الوجهة وعناوين URL لنسبة استخدام الشبكة Microsoft 365، استخدم قائمة المقالات هذه لنقاط نهاية الإنترنت للسحابات Microsoft 365 المختلفة.
-ms.openlocfilehash: e06ca4abc1d8fe918fab4f786712f704e941714a
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 44b28fdda30dcfee904eb1e447f37dea6e9fbd3f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64931550"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65090286"
 ---
 # <a name="microsoft-365-endpoints"></a>نقاط نهاية Microsoft 365
 

@@ -14,303 +14,314 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: معلومات لمسؤولي تكنولوجيا المعلومات لإدارة تسميات الحساسية في تطبيقات Office لسطح المكتب والجوال والويب.
+description: معلومات لمسؤولي تكنولوجيا المعلومات لإدارة تسميات الحساسية في تطبيقات Office لسطح المكتب والأجهزة المحمولة والويب.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0ca67ecb87b48d551ec4fb740e8732b8196c872c
-ms.sourcegitcommit: 7aa2441c1f2cc5b4b5495d6fdb993e563f86647f
+ms.openlocfilehash: 0f24e707bef05b541f301a41596737c17b4ed587
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64637907"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098417"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>إدارة تسميات الحساسية في تطبيقات Office
 
->*[Microsoft 365 إرشادات الترخيص لتوافق & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-عند نشر تسميات الحساسية من مركز التسميات مركز التوافق في Microsoft 365 أو ما يعادله، فإنها تبدأ بالظهور في تطبيقات Office للمستخدمين لتصنيف البيانات وحمايتها عند إنشائها أو تحريرها.[](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)
+>*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-استخدم المعلومات الواردة في هذه المقالة لمساعدتك على إدارة تسميات الحساسية في تطبيقات Office بنجاح. على سبيل المثال، حدد الحد الأدنى من إصدارات التطبيقات التي تحتاج إليها لدعم التسميات المضمنة، وافهم التفاعلات مع Azure حماية البيانات عميل التسمية الموحد والتوافق مع التطبيقات والخدمات الأخرى.
+عند [نشر](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) تسميات الحساسية من مدخل توافق Microsoft Purview، تبدأ في الظهور في تطبيقات Office للمستخدمين لتصنيف البيانات وحمايتها عند إنشائها أو تحريرها.
 
-## <a name="labeling-client-for-desktop-apps"></a>عميل التسمية لتطبيقات سطح المكتب
+استخدم المعلومات الواردة في هذه المقالة لمساعدتك على إدارة تسميات الحساسية بنجاح في تطبيقات Office. على سبيل المثال، حدد الحد الأدنى من إصدارات التطبيقات التي تحتاجها لدعم الميزات الخاصة بالتسمية المضمنة، وأي معلومات تكوين إضافية لهذه الميزات، وفهم التفاعلات مع عميل التسمية الموحد في Azure حماية البيانات والتطبيقات والخدمات الأخرى.
 
-لاستخدام تسميات الحساسية المضمنة في تطبيقات Office لسطح المكتب Windows و Mac، يجب استخدام إصدار اشتراك من Office. لا يدعم عميل التسمية هذا إصدارات مستقلة من Office، تسمى أحيانا "Office الدائمة".
+## <a name="labeling-client-for-desktop-apps"></a>تسمية العميل لتطبيقات سطح المكتب
 
-إذا لم تتمكن من الترقية إلى Microsoft 365 Apps for enterprise إصدارات الاشتراك من Office، لأجهزة كمبيوتر Windows، يمكنك استخدام [azure حماية البيانات عميل](/azure/information-protection/rms-client/aip-clientv2) التسمية الموحد.
+لاستخدام أوصاف الحساسية المضمنة في تطبيقات سطح المكتب Office Windows وMac، يجب استخدام إصدار اشتراك من Office. لا يدعم عميل التسمية هذا الإصدارات المستقلة من Office، تسمى أحيانا "Office الدائمة".
 
-## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>دعم قدرات تسمية الحساسية في التطبيقات
+إذا لم تتمكن من الترقية إلى Microsoft 365 Apps for enterprise لإصدارات الاشتراك من Office، لأجهزة الكمبيوتر Windows فقط، يمكنك استخدام [عميل التسمية الموحد ل Azure حماية البيانات (AIP](/azure/information-protection/rms-client/aip-clientv2)). ومع ذلك، هذا العميل الآن في [وضع الصيانة](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613) ولا نوصي باستخدام الوظيفة الإضافية AIP لتطبيقات Office إلا إذا كنت مضطرا لذلك. لمزيد من المعلومات، راجع [لماذا اختر تسمية مضمنة عبر الوظيفة الإضافية AIP لتطبيقات Office](sensitivity-labels-aip.md).
 
-لكل قدرة، تقوم الجداول التالية سرد الحد الأدنى Office الذي تحتاج إليه لدعم تسميات الحساسية باستخدام التسميات المضمنة. أو، إذا كانت إمكانية التسمية في وضع المعاينة العامة أو قيد المراجعة للحصول على إصدار مستقبلي. استخدم مخطط [Microsoft 365 للحصول](https://aka.ms/MIPC/Roadmap) على تفاصيل حول الإمكانات الجديدة التي تم التخطيط لها في الإصدارات المستقبلية.
+## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>دعم قدرات وصف الحساسية في التطبيقات
 
-يتم إتاحه الإصدارات Office الجديدة لتطبيقات التحديث في أوقات مختلفة للقنوات المختلفة للتحديث. بالنسبة Windows، ستحصل على الإمكانات الجديدة في وقت سابق عندما تكون على القناة الحالية أو قناة المؤسسة الشهرية، بدلا من Semi-Annual Enterprise Channel. يمكن أن يختلف الحد الأدنى لأرقم الإصدارات أيضا من قناة تحديث إلى أخرى. لمزيد من المعلومات، راجع نظرة عامة [على قنوات التحديث Microsoft 365 Apps](/deployoffice/overview-update-channels) ومحفوظات [التحديثات Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
+لكل قدرة، تسرد الجداول التالية الحد الأدنى Office الإصدار الذي تحتاجه لدعم تسميات الحساسية باستخدام التسمية المضمنة. أو، إذا كانت إمكانية التسمية في المعاينة العامة أو قيد المراجعة لإصدار مستقبلي. استخدم [مخطط Microsoft 365](https://aka.ms/MIPC/Roadmap) للحصول على تفاصيل حول القدرات الجديدة المخطط لها للإصدارات المستقبلية.
 
-لا يتم تضمين القدرات الجديدة في المعاينة الخاصة في الجدول ولكن قد تتمكن من الانضمام إلى هذه المعاينات من خلال تسمية مؤسستك لبرنامج المعاينة حماية البيانات في Microsoft [الخاص](https://aka.ms/mip-preview).
+يتم توفير إصدارات جديدة من تطبيقات Office في أوقات مختلفة لقنوات التحديث المختلفة. للحصول على Windows، ستحصل على القدرات الجديدة في وقت سابق عندما تكون على خيار التحديث الحالي أو خيار التحديث الشهري للمؤسسة، بدلا من Semi-Annual قناة المؤسسة. يمكن أن يختلف الحد الأدنى لأرقام الإصدارات أيضا من قناة تحديث إلى أخرى. لمزيد من المعلومات، راجع [نظرة عامة على قنوات التحديث لمحفوظات Microsoft 365 Apps](/deployoffice/overview-update-channels) [والتحديث Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
-Office ل iOS Office for Android: يتم وضع تسميات [الحساسية في تطبيق Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
+لا يتم تضمين القدرات الجديدة الموجودة في المعاينة الخاصة في الجدول ولكن قد تتمكن من الانضمام إلى هذه المعاينات عن طريق تسمية مؤسستك [لبرنامج المعاينة الخاصة حماية البيانات في Microsoft](https://aka.ms/mip-preview).
 
-تتوفر إمكانات إضافية عند تثبيت عميل التسمية حماية البيانات Azure، الذي يتم تشغيله على أجهزة الكمبيوتر Windows فقط. للحصول على هذه التفاصيل، راجع [مقارنة عملاء التسميات لأجهزة Windows الكمبيوتر](/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
+Office لنظامي التشغيل iOS و Office for Android: يتم تضمين تسميات الحساسية في [تطبيق Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
 > [!TIP]
-> عند مقارنة الحد الأدنى للإصدارات في الجداول بالإصدارات التي لديك، تذكر الممارسة الشائعة في إصدارات الإصدارات لحذف الأصفار الناسخة.
+> عند مقارنة الحد الأدنى للإصدارات في الجداول بالإصدارات التي لديك، تذكر الممارسة الشائعة لإصدارات الإصدار لحذف الأصفار البادحة.
 > 
-> على سبيل المثال، لديك الإصدار 4.2128.0 وقراءة أن الإصدار 4.7.1+ هو الحد الأدنى للإصدار. لمقارنة أسهل، اقرأ 4.7.1 (بدون أصفار نادرة) ك 4. **0007.1** (وليس 4.**7000.1**). إصدارك من 4.2128.0 أعلى من 4.0007.1، لذا الإصدار معتمد.
+> على سبيل المثال، لديك الإصدار 4.2128.0 واقرأ أن 4.7.1+ هو الحد الأدنى للإصدار. لتسهيل المقارنة، اقرأ 4.7.1 (بدون أصفار بادئة) ك 4. **0007.1** (وليس 4.**7000.1**). إصدار 4.2128.0 الخاص بك أعلى من 4.0007.1، لذلك يتم دعم الإصدار الخاص بك.
 
-### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>قدرات تسمية الحساسية في Word Excel و PowerPoint
+### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>قدرات وصف الحساسية في Word Excel PowerPoint
 
-الأرقام المدرجة هي الحد الأدنى Office إصدارات التطبيقات المطلوبة لكل قدرة. 
+الأرقام المدرجة هي الحد الأدنى Office إصدارات التطبيق المطلوبة لكل قدرة. 
 
 > [!NOTE]
-> بالنسبة Windows على Semi-Annual Enterprise Channel، قد لا يتم إصدار الحد الأدنى لأرقم الإصدارات المعتمدة بعد. [معرفة المزيد](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> بالنسبة Windows وقناة Semi-Annual Enterprise، قد لا يتم إصدار الحد الأدنى لأرقام الإصدارات المعتمدة بعد. [معرفة المزيد](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
  
-|الإمكانية |بالنسبة لنظام التشغيل |Mac |iOS |Android |الويب |
+|القدره |بالنسبة لنظام التشغيل |ماك |دائره الرقابه الداخليه |الروبوت |الويب |
 |-----------|-------:|----|----|--------|----|
-|[تطبيق التسمية أو تغييرها أو إزالتها يدويا](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[تطبيق تسمية افتراضية](sensitivity-labels.md#what-label-policies-can-do) على المستندات الجديدة                                         | القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|[تطبيق تسمية افتراضية](sensitivity-labels.md#what-label-policies-can-do) على المستندات الموجودة | معاينة: طرح في [القناة الحالية (معاينة)](https://office.com/insider) | معاينة: طرح في [القناة الحالية (معاينة)](https://office.com/insider) | قيد المراجعة | قيد المراجعة | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[طلب مبرر لتغيير تسمية](sensitivity-labels.md#what-label-policies-can-do)                     | القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+  <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[توفير ارتباط تعليمات إلى صفحة تعليمات مخصصة](sensitivity-labels.md#what-label-policies-can-do)                       | القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[وضع علامة على المحتوى](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[علامات ديناميكية مع متغيرات](#dynamic-markings-with-variables)                                              | القناة الحالية: 2010+ <br /><br> قناة المؤسسة الشهرية: 2010+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[تعيين الأذونات الآن](encryption-sensitivity-labels.md#assign-permissions-now)                                 | القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[السماح للمستخدمين بتعيين الأذونات: <br /> - مطالبة المستخدمين](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |القناة الحالية: 2004+ <br /><br> قناة المؤسسة الشهرية: 2004+ <br /><br> Semi-Annual Enterprise Channel: 2008+ | 16.35+   | قيد المراجعة   | قيد المراجعة         | قيد المراجعة                                                        |
-|[تدقيق نشاط المستخدم ذي الصلة بالتسمية](#auditing-labeling-activities)                      | القناة الحالية: 2011+ <br /><br> قناة المؤسسة الشهرية: 2011+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | نعم |
-|[الطلب من المستخدمين تطبيق تسمية على بريدهم الإلكتروني ومستنداتهم](#require-users-to-apply-a-label-to-their-email-and-documents)   | القناة الحالية: 2101+ <br /><br> قناة المؤسسة الشهرية: 2101+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md)                                            
-|[تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /> - استخدام أنواع المعلومات الحساسة                    | القناة الحالية: 2009+ <br /><br> قناة المؤسسة الشهرية: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ | قيد المراجعة | قيد المراجعة | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /> - استخدام تصنيفات قابلة للتدريب                    | القناة الحالية: 2105+ <br /><br> قناة المؤسسة الشهرية: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | قيد المراجعة | قيد المراجعة | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[دعم التأليف المشترك وال حفظ تلقائي](sensitivity-labels-coauthoring.md) للمستندات الملصقات والمشفر | القناة الحالية: 2107+ <br /><br> قناة المؤسسة الشهرية: 2107+ <br /><br> Semi-Annual Enterprise Channel: 2202+ |  16.51+ | معاينة: 2.58+ عند [الاشتراك](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | معاينة: 16.0.14931+ عند [الاشتراك](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[تطبيق التسمية أو تغييرها أو إزالتها يدويا](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[تطبيق تسمية افتراضية](sensitivity-labels.md#what-label-policies-can-do) على المستندات الجديدة                                         | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
+|[تطبيق تسمية افتراضية](sensitivity-labels.md#what-label-policies-can-do) على المستندات الموجودة | معاينة: النشر إلى [خيار التحديث بيتا](https://office.com/insider) | معاينة: النشر إلى [خيار التحديث الحالي (معاينة)](https://office.com/insider) | قيد المراجعة | قيد المراجعة | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[طلب مبرر لتغيير تسمية](sensitivity-labels.md#what-label-policies-can-do)                     | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+  <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[توفير ارتباط تعليمات إلى صفحة تعليمات مخصصة](sensitivity-labels.md#what-label-policies-can-do)                       | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[وضع علامة على المحتوى](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[العلامات الديناميكية مع المتغيرات](#dynamic-markings-with-variables)                                              | خيار التحديث الحالي: 2010+ <br /><br> قناة المؤسسة الشهرية: 2010+ <br /><br> Semi-Annual قناة المؤسسة: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[تعيين الأذونات الآن](encryption-sensitivity-labels.md#assign-permissions-now)                                 | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[السماح للمستخدمين بتعيين الأذونات: <br /> - مطالبة المستخدمين](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |خيار التحديث الحالي: 2004+ <br /><br> قناة المؤسسة الشهرية: 2004+ <br /><br> Semi-Annual قناة المؤسسة: 2008+ | 16.35+   | قيد المراجعة   | قيد المراجعة         | قيد المراجعة                                                        |
+|[تدقيق نشاط المستخدم المرتبط بالتسمية](#auditing-labeling-activities)                      | خيار التحديث الحالي: 2011+ <br /><br> قناة المؤسسة الشهرية: 2011+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | نعم |
+|[مطالبة المستخدمين بتطبيق تسمية على بريدهم الإلكتروني ومستنداتهم](#require-users-to-apply-a-label-to-their-email-and-documents)   | خيار التحديث الحالي: 2101+ <br /><br> قناة المؤسسة الشهرية: 2101+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md)                                            
+|[تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /> - استخدام أنواع المعلومات الحساسة                    | خيار التحديث الحالي: 2009+ <br /><br> قناة المؤسسة الشهرية: 2009+ <br /><br> Semi-Annual قناة المؤسسة: 2102+ | 16.44+ | قيد المراجعة | قيد المراجعة | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /> - استخدام المصنفات القابلة للتدريب                    | خيار التحديث الحالي: 2105+ <br /><br> قناة المؤسسة الشهرية: 2105+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.49+ | قيد المراجعة | قيد المراجعة | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[دعم التأليف المشترك والحفظ التلقائي](sensitivity-labels-coauthoring.md) للمستندات المسماة والمشتفرة | خيار التحديث الحالي: 2107+ <br /><br> قناة المؤسسة الشهرية: 2107+ <br /><br> Semi-Annual قناة المؤسسة: 2202+ |  16.51+ | معاينة: 2.58+ عند [الاشتراك](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | معاينة: 16.0.14931+ عند [الاشتراك](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
 
 
-### <a name="sensitivity-label-capabilities-in-outlook"></a>قدرات تسمية الحساسية في Outlook
+### <a name="sensitivity-label-capabilities-in-outlook"></a>قدرات وصف الحساسية في Outlook
 
-الأرقام المدرجة هي الحد الأدنى Office إصدارات التطبيقات المطلوبة لكل قدرة. 
+الأرقام المدرجة هي الحد الأدنى Office إصدارات التطبيق المطلوبة لكل قدرة. 
 
 > [!NOTE]
-> بالنسبة Windows على Semi-Annual Enterprise Channel، قد لا يتم إصدار الحد الأدنى لأرقم الإصدارات المعتمدة بعد. [معرفة المزيد](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
+> بالنسبة Windows وقناة Semi-Annual Enterprise، قد لا يتم إصدار الحد الأدنى لأرقام الإصدارات المعتمدة بعد. [معرفة المزيد](/officeupdates/update-history-microsoft365-apps-by-date#supported-versions)
 
-|الإمكانية |Outlook Windows |Outlook for Mac |Outlook على iOS |Outlook على نظام التشغيل Android |Outlook على ويب |
+|القدره |Outlook ل Windows |Outlook for Mac |Outlook على iOS |Outlook على Android |Outlook على ويب |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
-|[تطبيق التسمية أو تغييرها أو إزالتها يدويا](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
-|[تطبيق تسمية افتراضية](sensitivity-labels.md#what-label-policies-can-do)                                         | القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
-|[طلب مبرر لتغيير تسمية](sensitivity-labels.md#what-label-policies-can-do)                     | القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
-|[توفير ارتباط تعليمات إلى صفحة تعليمات مخصصة](sensitivity-labels.md#what-label-policies-can-do)                       | القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
-|[وضع علامة على المحتوى](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
-|[علامات ديناميكية مع متغيرات](#dynamic-markings-with-variables)                                              | القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
-|[تعيين الأذونات الآن](encryption-sensitivity-labels.md#assign-permissions-now)                                 | القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
-|[السماح للمستخدمين بتعيين الأذونات: <br /> - عدم إعادة توجيه](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | القناة الحالية: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
-|[السماح للمستخدمين بتعيين الأذونات: <br /> - التشفير فقط](encryption-sensitivity-labels.md#let-users-assign-permissions)  | القناة الحالية: 2011+ <br /><br> قناة المؤسسة الشهرية: 2011+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | نعم |
-|[الطلب من المستخدمين تطبيق تسمية على بريدهم الإلكتروني ومستنداتهم](#require-users-to-apply-a-label-to-their-email-and-documents)   | القناة الحالية: 2101+ <br /><br> قناة المؤسسة الشهرية: 2101+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | نعم                |
-|[تدقيق نشاط المستخدم ذي الصلة بالتسمية](#auditing-labeling-activities) | القناة الحالية: 2011+ <br /><br> قناة المؤسسة الشهرية: 2011+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | نعم |
-|[تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /> - استخدام أنواع المعلومات الحساسة                    | القناة الحالية: 2009+ <br /><br> قناة المؤسسة الشهرية: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ <sup>\*</sup>                    | قيد المراجعة           | قيد المراجعة               | نعم |
-|[تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /> - استخدام تصنيفات قابلة للتدريب                    | القناة الحالية: 2105+ <br /><br> قناة المؤسسة الشهرية: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.49+ | قيد المراجعة           | قيد المراجعة               | نعم |
-|[إعدادات مختلفة للتسمية الافتراضية والتسميات الإلزامية](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | القناة الحالية: 2105+ <br /><br> قناة المؤسسة الشهرية: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | نعم |
+|[تطبيق التسمية أو تغييرها أو إزالتها يدويا](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
+|[تطبيق تسمية افتراضية](sensitivity-labels.md#what-label-policies-can-do)                                         | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
+|[طلب مبرر لتغيير تسمية](sensitivity-labels.md#what-label-policies-can-do)                     | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
+|[توفير ارتباط تعليمات إلى صفحة تعليمات مخصصة](sensitivity-labels.md#what-label-policies-can-do)                       | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
+|[وضع علامة على المحتوى](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
+|[العلامات الديناميكية مع المتغيرات](#dynamic-markings-with-variables)                                              | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
+|[تعيين الأذونات الآن](encryption-sensitivity-labels.md#assign-permissions-now)                                 | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
+|[السماح للمستخدمين بتعيين الأذونات: <br /> - عدم إعادة التوجيه](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | نعم               |
+|[السماح للمستخدمين بتعيين الأذونات: <br /> - تشفير فقط](encryption-sensitivity-labels.md#let-users-assign-permissions)  | خيار التحديث الحالي: 2011+ <br /><br> قناة المؤسسة الشهرية: 2011+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | نعم |
+|[مطالبة المستخدمين بتطبيق تسمية على بريدهم الإلكتروني ومستنداتهم](#require-users-to-apply-a-label-to-their-email-and-documents)   | خيار التحديث الحالي: 2101+ <br /><br> قناة المؤسسة الشهرية: 2101+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | نعم                |
+|[تدقيق نشاط المستخدم المرتبط بالتسمية](#auditing-labeling-activities) | خيار التحديث الحالي: 2011+ <br /><br> قناة المؤسسة الشهرية: 2011+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | نعم |
+|[تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /> - استخدام أنواع المعلومات الحساسة                    | خيار التحديث الحالي: 2009+ <br /><br> قناة المؤسسة الشهرية: 2009+ <br /><br> Semi-Annual قناة المؤسسة: 2102+ | 16.44+ <sup>\*</sup>                    | قيد المراجعة           | قيد المراجعة               | نعم |
+|[تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /> - استخدام المصنفات القابلة للتدريب                    | خيار التحديث الحالي: 2105+ <br /><br> قناة المؤسسة الشهرية: 2105+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.49+ | قيد المراجعة           | قيد المراجعة               | نعم |
+|[إعدادات مختلفة للتسمية الافتراضية والتسمية الإلزامية](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | خيار التحديث الحالي: 2105+ <br /><br> قناة المؤسسة الشهرية: 2105+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | نعم |
 |
 
-**الحواشي السفلية:**
+**الحواشي السفليه:**
 
-<sup>\*</sup>يتطلب [Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
+<sup>\*</sup>يتطلب [Outlook for Mac الجديدة](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
+
+## <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office عميل التسمية المضمن وعميل حماية البيانات Azure
+
+إذا كان لدى المستخدمين [عميل azure حماية البيانات (AIP)](/azure/information-protection/rms-client/aip-clientv2) مثبتا على أجهزة الكمبيوتر Windows الخاصة بهم، يتم إيقاف تشغيل التسميات المضمنة بشكل افتراضي في [تطبيقات Windows Office التي تدعمهم](#labeling-client-for-desktop-apps). نظرا لأن التسميات المضمنة لا تستخدم وظيفة إضافية Office، كما هو مستخدم من قبل عميل AIP، فإنها تتمتع بميزة المزيد من الاستقرار والأداء الأفضل. كما أنها تدعم أحدث الميزات، مثل المصنفات المتقدمة. 
+
+> [!NOTE]
+> إذا كنت لا ترى ميزات التسمية التي تتوقعها على أجهزة الكمبيوتر Windows، على الرغم من تأكيد الحد الأدنى للإصدارات المعتمدة لقناة تحديث Office، فقد يرجع ذلك إلى أنك تحتاج إلى [تعطيل الوظيفة الإضافية AIP](sensitivity-labels-aip.md#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
+
+لمعرفة المزيد حول دعم التسمية باستخدام عميل AIP، راجع [لماذا اختر تسمية مضمنة عبر وظيفة AIP الإضافية لتطبيقات Office](sensitivity-labels-aip.md).
 
 
-## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office عميل تسمية مضمن وحلول تسميات أخرى
+## <a name="if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows"></a>إذا كنت بحاجة إلى إيقاف تشغيل التسمية المضمنة في تطبيقات Office على Windows
 
-حيث Office عميل التسمية المضمن تسميات الحساسية وإعدادات نهج تسمية الحساسية من مركز التوافق في Microsoft 365. 
+يقوم عميل التسمية المضمن Office بتنزيل أوصاف الحساسية وإعدادات نهج وصف الحساسية من مدخل توافق Microsoft Purview.
 
-لاستخدام Office التسمية المضمن، يجب أن يكون لديك واحد أو أكثر من سياسات التسمية المنشورة [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) للمستخدمين من مركز التوافق، بالإضافة إلى إصدار معتمد من [Office.](#support-for-sensitivity-label-capabilities-in-apps)
+لاستخدام عميل التسمية المضمن Office، يجب أن يكون لديك [نهج تسمية](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) واحد أو أكثر منشور للمستخدمين من مدخل توافق Microsoft Purview وإصدار [معتمد من Office](#support-for-sensitivity-label-capabilities-in-apps).
 
-إذا تم تطبيق كلا هذين الشروط ولكنك تحتاج إلى إيقاف تشغيل التسميات المضمنة في تطبيقات Windows Office، فاستخدم الإعداد نهج المجموعة التالي:
+إذا تم استيفاء هذين الشرطين ولكنك تحتاج إلى إيقاف تشغيل التسميات المضمنة في تطبيقات Windows Office، فاستخدم إعداد نهج المجموعة التالي:
 
-1. انتقل إلى **تكوين المستخدم/القوالب الإدارية/Microsoft Office 2016/الأمان الإعدادات**.
+1. انتقل إلى **تكوين المستخدم/القوالب الإدارية/Microsoft Office 2016/الإعدادات الأمان**.
 
-2. تعيين **استخدم ميزة الحساسية في Office لتطبيق تسميات الحساسية** وعرضها إلى **0**. 
+2. تعيين **استخدام ميزة الحساسية في Office لتطبيق أوصاف الحساسية وعرضها** على **0**.
+
+إذا كنت بحاجة لاحقا إلى إرجاع هذا التكوين، فقم بتغيير القيمة إلى **1**. قد تحتاج أيضا إلى تغيير هذه القيمة إلى 1 إذا لم يتم عرض زر **الحساسية** على الشريط كما هو متوقع. على سبيل المثال، قام مسؤول سابق بإيقاف تشغيل إعداد التسمية هذا.
  
-نشر هذا الإعداد باستخدام نهج المجموعة أو باستخدام خدمة Office [السحابية](/DeployOffice/overview-office-cloud-policy-service). يتم تطبيق الإعداد عند إعادة تشغيل Office هذه. 
+نشر هذا الإعداد باستخدام نهج المجموعة، أو باستخدام [خدمة نهج السحابة Office](/DeployOffice/overview-office-cloud-policy-service). يصبح الإعداد ساري المفعول عند إعادة تشغيل هذه التطبيقات Office. 
 
-نظرا لأن هذا الإعداد خاص لتطبيقات Windows Office، فلا يؤثر على التطبيقات الأخرى على Windows التي تدعم تسميات الحساسية (مثل Power BI) أو الأنظمة الأساسية الأخرى (مثل macOS والأجهزة المحمولة Office على الويب). إذا كنت لا تريد أن يرى بعض المستخدمين أو كل المستخدمين أو كلهم تسميات الحساسية واستخدامها عبر جميع التطبيقات، كل الأنظمة الأساسية، فلا تقوم بتعيين نهج تسمية الحساسية لهؤلاء المستخدمين. 
+نظرا لأن هذا الإعداد خاص بتطبيقات Windows Office، فإنه لا يؤثر على التطبيقات الأخرى على Windows التي تدعم تسميات الحساسية (مثل Power BI) أو الأنظمة الأساسية الأخرى (مثل macOS والأجهزة المحمولة Office على الويب). إذا كنت لا تريد أن يرى بعض المستخدمين أو كلهم أوصاف الحساسية ويستخدمونها عبر جميع التطبيقات وجميع الأنظمة الأساسية، فلا تعين نهج تسمية الحساسية لهؤلاء المستخدمين.
 
-### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office التسمية المضمنة وعميل Azure حماية البيانات
+### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office عميل التسمية المضمن وعميل حماية البيانات Azure
 
-إذا كان لدى [المستخدمين حماية البيانات Azure (AIP)](/azure/information-protection/rms-client/aip-clientv2) مثبتا على أجهزة كمبيوتر Windows، يتم بشكل افتراضي إيقاف تشغيل التسميات المضمنة في تطبيقات Windows Office التي [تدعمها](#labeling-client-for-desktop-apps). نظرا لأن التسميات المضمنة لا تستخدم Office الإضافية، كما يستخدمها عميل AIP، فإنها تستفيد من المزيد من الاستقرار والأداء الأفضل. كما أنها تدعم أحدث الميزات، مثل المصنفات المتقدمة.
+إذا كان لدى المستخدمين [عميل azure حماية البيانات (AIP)](/azure/information-protection/rms-client/aip-clientv2) مثبتا على أجهزة الكمبيوتر Windows الخاصة بهم، يتم إيقاف تشغيل التسميات المضمنة بشكل افتراضي في [تطبيقات Windows Office التي تدعمهم](#labeling-client-for-desktop-apps). نظرا لأن التسميات المضمنة لا تستخدم وظيفة إضافية Office، كما يستخدمها عميل AIP، فإنها تتمتع بميزة المزيد من الاستقرار والأداء الأفضل. كما أنها تدعم أحدث الميزات، مثل المصنفات المتقدمة.
 
-لمعرفة المزيد حول اختيارات التسمية باستخدام عميل AIP، راجع لماذا [اختر التسمية المضمنة ل MIP عبر الوظائف الإضافية AIP Office التطبيقات](sensitivity-labels-aip.md).
+لمعرفة المزيد حول اختيارات التسمية باستخدام عميل AIP، راجع [لماذا اختر تسمية مضمنة عبر وظيفة AIP الإضافية لتطبيقات Office](sensitivity-labels-aip.md).
 
-## <a name="office-file-types-supported"></a>Office أنواع الملفات المعتمدة
+## <a name="office-file-types-supported"></a>أنواع ملفات Office معتمدة
 
-تدعم تطبيقات Office التي لديها تسميات مضمنة لملفات Word و Excel و PowerPoint تنسيق Open XML (مثل .docx و .xlsx) ولكن ليس تنسيق Microsoft Office 97-2003 (مثل .doc و .xls) أو تنسيق مستند مفتوح (مثل odt. و ods. ) أو تنسيقات أخرى. عندما لا يكون نوع الملف معتمدا للتسميات المضمنة، لا  يتوفر الزر الحساسية في تطبيق Office.
+Office التطبيقات التي تحتوي على تسميات مضمنة لملفات Word و Excel PowerPoint تدعم تنسيق Open XML (مثل .docx .xlsx) ولكن ليس تنسيق Microsoft Office 97-2003 (مثل .doc .xls) أو Open Document Format (مثل odt. و ods. ) أو تنسيقات أخرى. عندما لا يكون نوع الملف معتمدا للتسمية المضمنة، لا يتوفر زر **الحساسية** في تطبيق Office.
 
-يدعم عميل حماية البيانات Azure الموحد تنسيق Open XML وتنسيق Microsoft Office 97-2003. لمزيد من المعلومات، راجع أنواع الملفات المعتمدة بواسطة [Azure حماية البيانات عميل](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) التسمية الموحد من دليل مسؤول هذا العميل.
+يدعم عميل التسمية الموحد ل Azure حماية البيانات تنسيق Open XML وتنسيق Microsoft Office 97-2003. لمزيد من المعلومات، راجع [أنواع الملفات المدعومة من قبل عميل التسمية الموحد ل Azure حماية البيانات](/azure/information-protection/rms-client/clientv2-admin-guide-file-types) من دليل مسؤول هذا العميل.
 
-للحصول على حلول تسميات أخرى، تحقق من وثائقها للحصول على أنواع الملفات المعتمدة.
+بالنسبة إلى حلول التسميات الأخرى، تحقق من وثائقها بحثا عن أنواع الملفات المعتمدة.
 
 ## <a name="protection-templates-and-sensitivity-labels"></a>قوالب الحماية وتسميات الحساسية
 
-لا تكون قوالب [](/azure/information-protection/configure-policy-templates)الحماية المعرفة من قبل المسؤول، مثل تلك التي تحددها لتشفير Office 365 الرسائل، مرئية في تطبيقات Office عندما تستخدم تسمية مضمنة. تعكس هذه التجربة المبسطة عدم الحاجة إلى تحديد قالب حماية، لأن الإعدادات نفسها مضمنة مع تسميات الحساسية التي تم تمكين التشفير لها.
+لا تظهر [قوالب الحماية](/azure/information-protection/configure-policy-templates) المعرفة من قبل المسؤول، مثل تلك التي تحددها لتشفير الرسائل Office 365، في تطبيقات Office عند استخدام التسمية المضمنة. تعكس هذه التجربة المبسطة أنه ليست هناك حاجة لتحديد قالب حماية، لأن نفس الإعدادات مضمنة مع تسميات الحساسية التي تم تمكين التشفير بها.
 
-يمكنك تحويل قالب موجود إلى تسمية حساسية عند استخدام [الأمر cmdlet](/powershell/module/exchange/new-label) "تسمية جديدة" مع المعلمة *EncryptionTemplateId* .
+يمكنك تحويل قالب موجود إلى تسمية حساسية عند استخدام [Cmdlet New-Label](/powershell/module/exchange/new-label) مع معلمة *EncryptionTemplateId* .
 
-## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>خيارات إدارة حقوق استخدام المعلومات (IRM) وتسميات الحساسية
+## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>خيارات إدارة حقوق المعلومات (IRM) وتسميات الحساسية
 
-تزيل تسميات الحساسية التي تقوم بتكوينها لتطبيق التشفير التعقيدات من المستخدمين لتحديد إعدادات التشفير الخاصة بهم. في العديد Office التطبيقات، لا يزال بإمكان المستخدمين تكوين إعدادات التشفير الفردية هذه يدويا باستخدام خيارات إدارة حقوق استخدام المعلومات (IRM). على سبيل المثال، لتطبيقات Windows:
+تعمل تسميات الحساسية التي تقوم بتكوينها لتطبيق التشفير على إزالة التعقيد من المستخدمين لتحديد إعدادات التشفير الخاصة بهم. في العديد من تطبيقات Office، لا يزال من الممكن تكوين إعدادات التشفير الفردية هذه يدويا بواسطة المستخدمين باستخدام خيارات إدارة حقوق استخدام المعلومات (IRM). على سبيل المثال، لتطبيقات Windows:
 
 - لمستند: **FileInfoProtect** >  >  **DocumentRestrict Access** > 
-- لبريد إلكتروني: من علامة **التبويب "** خيارات" > **تشفير** 
+- لرسالة بريد إلكتروني: من علامة التبويب **"خيارات** " > **تشفير** 
   
-عندما يقوم المستخدمون تسمية مستند أو بريد إلكتروني في البداية، يمكنهم تجاوز إعدادات تكوين التسمية باستخدام إعدادات التشفير الخاصة بهم. على سبيل المثال:
+عندما يقوم المستخدمون في البداية بتسمية مستند أو بريد إلكتروني، يمكنهم تجاوز إعدادات تكوين التسمية باستخدام إعدادات التشفير الخاصة بهم. على سبيل المثال:
 
-- يطبق المستخدم التسمية **سري \ كل** الموظفين على مستند، وقد تم تكوين هذه التسمية لتطبيق إعدادات التشفير لجميع المستخدمين في المؤسسة. بعد ذلك، يقوم هذا المستخدم بتكوين إعدادات IRM يدويا لتقييد الوصول إلى مستخدم من خارج مؤسستك. النتيجة النهائية هي مستند باسم سري **\** جميع الموظفين ومشفر، ولكن لا يمكن للمستخدمين في مؤسستك فتحه كما هو متوقع.
+- يطبق المستخدم تسمية **"سري\ كافة الموظفين** " على مستند ويتم تكوين هذه التسمية لتطبيق إعدادات التشفير لجميع المستخدمين في المؤسسة. ثم يقوم هذا المستخدم بتكوين إعدادات IRM يدويا لتقييد الوصول إلى مستخدم خارج مؤسستك. النتيجة النهائية هي مستند يسمى **سري \ كافة الموظفين** ومشفر، ولكن لا يمكن للمستخدمين في مؤسستك فتحه كما هو متوقع.
 
-- يطبق المستخدم التسمية **سري \** المستلمون فقط على رسالة بريد إلكتروني، وقد تم تكوين هذا البريد الإلكتروني لتطبيق إعداد التشفير **الخاص ب "عدم إعادة توجيه**". في تطبيق Outlook، يقوم هذا المستخدم بعد ذلك بتحديد إعداد IRM للتشفير فقط يدويا. النتيجة النهائية هي أنه بينما يظل البريد الإلكتروني مشفرا، إلا أنه يمكن إعادة توجيهه من قبل المستلمين، على الرغم من وجود التسمية **سري \ المستلمون** فقط.
+- يطبق المستخدم التسمية **"سري \ المستلمون فقط** " على رسالة بريد إلكتروني ويتم تكوين هذا البريد الإلكتروني لتطبيق إعداد التشفير " **عدم إعادة التوجيه**". في تطبيق Outlook، يحدد هذا المستخدم إعداد IRM يدويا ل Encrypt-Only. النتيجة النهائية هي أنه على الرغم من أن البريد الإلكتروني يظل مشفرا، إلا أنه يمكن إعادة توجيهه من قبل المستلمين، على الرغم من وجود التسمية **"سري \ المستلمون فقط** ".
     
-    استثناء، بالنسبة Outlook على ويب، لا تتوفر الخيارات من القائمة تشفير للمستخدم لتحديد  وقت تطبيق التسمية المحددة حاليا على التشفير.
+    استثناء، بالنسبة Outlook على ويب، لا تتوفر الخيارات من القائمة **"تشفير"** للمستخدم لتحديد متى تطبق التسمية المحددة حاليا التشفير.
 
-- يطبق المستخدم التسمية **عام** على مستند، ولا يتم تكوين هذه التسمية لتطبيق التشفير. بعد ذلك، يقوم هذا المستخدم بتكوين إعدادات IRM يدويا لتقييد الوصول إلى المستند. النتيجة النهائية هي مستند باسم عام ولكنه يطبق أيضا التشفير بحيث  لا يمكن لبعض المستخدمين فتحه كما هو متوقع.
+- يطبق المستخدم التسمية **"عام** " على مستند، ولا يتم تكوين هذه التسمية لتطبيق التشفير. ثم يقوم هذا المستخدم بتكوين إعدادات IRM يدويا لتقييد الوصول إلى المستند. النتيجة النهائية هي مستند يسمى **عام** ولكن ينطبق أيضا على التشفير بحيث لا يمكن لبعض المستخدمين فتحه كما هو متوقع.
 
-إذا تم تسمية المستند أو البريد الإلكتروني بالفعل، يمكن للمستخدم القيام بأي من هذه الإجراءات إذا لم يكن المحتوى مشفرا بالفعل، أو إذا كان لديه حق التصدير أو [](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) التحكم الكامل في الاستخدام. 
+إذا كان المستند أو البريد الإلكتروني مسمى بالفعل، يمكن للمستخدم تنفيذ أي من هذه الإجراءات إذا لم يكن المحتوى مشفرا بالفعل، أو إذا كان لديه [حق التصدير](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) أو التحكم الكامل في الاستخدام. 
 
-للحصول على تجربة تسمية أكثر تناسقا مع إعداد تقارير ذات معنى، قم بتوفير تسميات وإرشادات مناسبة للمستخدمين لتطبيق التسميات فقط لحماية المستندات ورسائل البريد الإلكتروني. على سبيل المثال:
+للحصول على تجربة تسمية أكثر تناسقا مع إعداد تقارير ذات معنى، قم بتوفير التسميات والإرشادات المناسبة للمستخدمين لتطبيق التسميات فقط لحماية المستندات ورسائل البريد الإلكتروني. على سبيل المثال:
 
-- بالنسبة إلى حالات الاستثناء التي يتعين على المستخدمين تعيين أذونات خاصة بهم فيها، قم بتوفير تسميات تسمح للمستخدمين [بتعيين الأذونات الخاصة بهم](encryption-sensitivity-labels.md#let-users-assign-permissions). 
+- بالنسبة لحالات الاستثناء حيث يجب على المستخدمين تعيين أذوناتهم الخاصة، قم بتوفير تسميات [تسمح للمستخدمين بتعيين أذوناتهم الخاصة](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
-- بدلا من أن يقوم المستخدمون بإزالة التشفير يدويا بعد تحديد تسمية تطبق التشفير، قم بتوفير بديل للتسميات الفرعية عندما يحتاج المستخدمون إلى تسمية بنفس التصنيف، ولكن بدون تشفير. مثل:
-    - **سري \ جميع الموظفين**
+- بدلا من أن يقوم المستخدمون بإزالة التشفير يدويا بعد تحديد تسمية تطبق التشفير، قم بتوفير بديل علامة فرعية عندما يحتاج المستخدمون إلى تسمية بنفس التصنيف، ولكن دون تشفير. مثل:
+    - **سري \ كافة الموظفين**
     - **سري \ أي شخص (بدون تشفير)**
 
-- يمكنك تعطيل إعدادات IRM لمنع المستخدمين من تحديدها:
-    - Outlook Windows: 
+- ضع في اعتبارك تعطيل إعدادات IRM لمنع المستخدمين من تحديدها:
+    - Outlook ل Windows: 
         - مفاتيح التسجيل (DWORD:00000001) *DisableDNF* و *DisableEO* من HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM
-        - تأكد من عدم نهج المجموعة تكوين خيار التشفير الافتراضي للزر **تشفير**
+        - تأكد من عدم تكوين **خيار تكوين التشفير الافتراضي للزر "تشفير**" في إعداد نهج المجموعة
     - Outlook for Mac: 
-        - المفاتيح *DisableEncryptOnly* و *DisableDoNotForward* إعدادات الأمان الموثقة في [تعيين التفضيلات Outlook for Mac](/DeployOffice/mac/preferences-outlook)
+        - إعدادات الأمان *DisableEncryptOnly* و *DisableDoNotForward* الموثقة في [تعيين تفضيلات Outlook for Mac](/DeployOffice/mac/preferences-outlook)
     - Outlook على ويب: 
-        - المعلمات *SimplifiedClientAccessDoNotForwardDisabled* و *SimplifiedClientAccessEncryptOnlyDisabled* الموثقة ل [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)
-    - Outlook لنظامي التشغيل iOS وAndroid: لا تدعم هذه التطبيقات المستخدمين الذين يطبقون التشفير بدون تسميات، لذا لا شيء يجب تعطيله.
+        - المعلمات *SimplifiedClientAccessDoNotForwardDisabled* *وSysedClientAccessEncryptOnlyDisabled* الموثقة ل [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)
+    - Outlook لنظامي التشغيل iOS وAndroid: لا تدعم هذه التطبيقات المستخدمين الذين يطبقون التشفير بدون تسميات، لذلك لا شيء لتعطيله.
 
 > [!NOTE]
-> إذا أزل المستخدمون التشفير يدويا من مستند مسمي مخزن في SharePoint أو OneDrive وقد قمت بتمكين تسميات الحساسية لملفات [Office في SharePoint](sensitivity-labels-sharepoint-onedrive-files.md) و OneDrive، سيتم استعادة تشفير التسميات تلقائيا في المرة التالية التي يتم فيها الوصول إلى المستند أو تنزيله. 
+> إذا قام المستخدمون بإزالة التشفير يدويا من مستند مسمى مخزن في SharePoint أو OneDrive [وقمت بتمكين تسميات الحساسية لملفات Office في SharePoint OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)، فستتم استعادة تشفير التسمية تلقائيا في المرة التالية التي يتم فيها الوصول إلى المستند أو تنزيله. 
 
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>تطبيق تسميات الحساسية على الملفات ورسائل البريد الإلكتروني والمرفقات
 
 يمكن للمستخدمين تطبيق تسمية واحدة فقط في كل مرة لكل مستند أو بريد إلكتروني.
 
-عند تسمية رسالة بريد إلكتروني بها مرفقات، ترث المرفقات التسمية فقط إذا كانت التسمية التي تطبقها على رسالة البريد الإلكتروني تطبق التشفير والمرفق هو Office لم يتم تشفير المستند بالفعل. ونظرا لأن التسمية الموروثة تطبق التشفير، يصبح المرفق مشفرا حديثا.
+عند تسمية رسالة بريد إلكتروني تحتوي على مرفقات، ترث المرفقات التسمية فقط إذا كانت التسمية التي تطبقها على رسالة البريد الإلكتروني تطبق التشفير ويكون المرفق مستندا Office لم يتم تشفيره بالفعل. لأن التسمية الموروثة تطبق التشفير، يصبح المرفق مشفرا حديثا.
 
-لا يرث المرفق التسميات من رسالة البريد الإلكتروني عندما لا تطبق التسمية المطبقة على رسالة البريد الإلكتروني التشفير أو يكون المرفق مشفرا بالفعل.
+لا يرث المرفق التسميات من رسالة البريد الإلكتروني عندما لا تطبق التسمية المطبقة على رسالة البريد الإلكتروني التشفير أو إذا كان المرفق مشفرا بالفعل.
 
-أمثلة على توريث التسمية، حيث تنطبق التسمية **سري** على التشفير والتسمية **عام** لا تطبق التشفير:
+أمثلة على توريث التسمية، حيث تطبق التسمية **"سري** " التشفير ولا تطبق التسمية **"عام** " التشفير:
 
-- ينشئ المستخدم رسالة بريد إلكتروني جديدة ويطبق التسمية **"** سري" على هذه الرسالة. ثم يضيفون مستند Word غير مسمي أو مشفر. نتيجة التوريث، تم تسمية المستند باسم سري **حديثا والآن تم** تطبيق تشفير عليه من هذه التسمية.
+- ينشئ المستخدم رسالة بريد إلكتروني جديدة ويطبق التسمية **"سري** " على هذه الرسالة. ثم يضيفون مستند Word غير مسمى أو مشفر. ونتيجة للتوريث، يسمى المستند حديثا **"سري** " ويحتوي الآن على تشفير مطبق من تلك التسمية.
 
-- ينشئ المستخدم رسالة بريد إلكتروني جديدة ويطبق التسمية **"** سري" على هذه الرسالة. ثم يضيفون مستند Word المسمى **عام** وهذا الملف غير مشفر. نتيجة للوراثة، يتم إعادة تسمية المستند بالسرية والآن يتم تطبيق  تشفير من هذه التسمية.
+- ينشئ المستخدم رسالة بريد إلكتروني جديدة ويطبق التسمية **"سري** " على هذه الرسالة. ثم يضيفون مستند Word يسمى **عام** ولا يتم تشفير هذا الملف. ونتيجة للوراثة، تتم إعادة تسمية المستند على أنه **سري** والآن تم تطبيق تشفير من تلك التسمية.
 
 ## <a name="sensitivity-label-compatibility"></a>توافق تسمية الحساسية
 
-**باستخدام تطبيقات RMS** المدعمة: إذا فتحت مستندا أو بريدا إلكترونيا مسميا ومشفرا في تطبيق [RMS الذي](/azure/information-protection/requirements-applications#rms-enlightened-applications) لا يدعم تسميات الحساسية، فإن التطبيق ما زال يفرض التشفير وإدارة الحقوق.
+**باستخدام التطبيقات المستندة إلى RMS**: إذا فتحت مستندا أو بريدا إلكترونيا مسمى ومشفرا في [تطبيق يدعم RMS](/azure/information-protection/requirements-applications#rms-enlightened-applications) لا يدعم تسميات الحساسية، فسيظل التطبيق يفرض التشفير وإدارة الحقوق.
 
-**باستخدام عميل Azure حماية البيانات**: يمكنك عرض تسميات الحساسية التي تطبقها على المستندات ورسائل البريد الإلكتروني وتغييرها باستخدام عميل التسمية المضمن في Office باستخدام عميل Azure حماية البيانات، وبطريقة أخرى.
+**باستخدام عميل حماية البيانات Azure**: يمكنك عرض تسميات الحساسية التي تطبقها على المستندات ورسائل البريد الإلكتروني وتغييرها باستخدام عميل التسمية المضمن Office باستخدام عميل حماية البيانات Azure، والطريقة الأخرى.
 
-**مع الإصدارات الأخرى من Office**: يمكن لأي مستخدم معتمد فتح مستندات ورسائل بريد إلكتروني ملصقات في إصدارات أخرى من Office. ومع ذلك، يمكنك عرض التسمية أو تغييرها فقط في Office المعتمدة أو باستخدام عميل Azure حماية البيانات. يتم تطبيق Office الإصدارات المعتمدة في [القسم السابق](#support-for-sensitivity-label-capabilities-in-apps).
+**مع الإصدارات الأخرى من Office**: يمكن لأي مستخدم معتمد فتح المستندات ورسائل البريد الإلكتروني المسماة في إصدارات أخرى من Office. ومع ذلك، يمكنك عرض التسمية أو تغييرها فقط في إصدارات Office المعتمدة أو باستخدام عميل azure حماية البيانات. يتم سرد إصدارات تطبيق Office المعتمدة في [القسم السابق](#support-for-sensitivity-label-capabilities-in-apps).
 
-## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>دعم ملفات SharePoint OneDrive محمية بواسطة تسميات الحساسية
+## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>دعم ملفات SharePoint والملفات OneDrive المحمية بتسميات الحساسية
 
-لاستخدام عميل تسمية Office المضمن مع Office على الويب للمستندات في SharePoint أو OneDrive، تأكد من تمكين تسميات الحساسية لملفات Office في SharePoint [OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+لاستخدام عميل التسمية المضمن Office مع Office على الويب للمستندات في SharePoint أو OneDrive، تأكد من [تمكين تسميات الحساسية لملفات Office في SharePoint OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## <a name="support-for-external-users-and-labeled-content"></a>دعم المستخدمين الخارجيين والمحتوى المسمى
 
-عند تسمية مستند أو بريد إلكتروني، يتم تخزين التسمية كالبيانات التعريفية التي تتضمن المستأجر و GUID التسمية. عند فتح مستند أو بريد إلكتروني تطبيق Office يدعم تسميات الحساسية، يتم قراءة بيانات التعريف هذه، وإذا كان المستخدم ينتمي إلى المستأجر نفسه فقط، يتم عرض التسمية في تطبيقه. على سبيل المثال، بالنسبة إلى التسميات المضمنة ل Word PowerPoint والملصقات Excel، يظهر اسم التسمية على شريط المعلومات. 
+عند تسمية مستند أو بريد إلكتروني، يتم تخزين التسمية كبيانات تعريف تتضمن المستأجر و GUID للتسمية. عند فتح مستند أو بريد إلكتروني مسمى بواسطة تطبيق Office يدعم تسميات الحساسية، تتم قراءة بيانات التعريف هذه وفقط إذا كان المستخدم ينتمي إلى نفس المستأجر، يتم عرض التسمية في تطبيقه. على سبيل المثال، للتسمية المضمنة ل Word PowerPoint Excel، يتم عرض اسم التسمية على شريط المعلومات. 
 
-وهذا يعني أنه إذا قمت بمشاركة المستندات مع مؤسسة أخرى تستخدم أسماء تسميات مختلفة، يمكن لكل مؤسسة تطبيق التسمية الخاصة بها لمشاهدة تطبيقها على المستند. ومع ذلك، تظهر العناصر التالية من التسمية المطبقة للمستخدمين من خارج مؤسستك:
+وهذا يعني أنه إذا قمت بمشاركة المستندات مع مؤسسة أخرى تستخدم أسماء تسميات مختلفة، يمكن لكل مؤسسة تطبيق التسمية الخاصة بها ورؤيتها مطبقة على المستند. ومع ذلك، فإن العناصر التالية من تسمية مطبقة مرئية للمستخدمين من خارج مؤسستك:
 
-- علامات المحتوى. عندما تطبق التسمية رأسا أو تاشينا أو علامة مائية، تضاف مباشرة إلى المحتوى وتبقى مرئية حتى يقوم شخص بتعديلها أو حذفها.
+- علامات المحتوى. عندما تطبق التسمية رأسا أو تذييلا أو علامة مائية، تتم إضافتها مباشرة إلى المحتوى وتظل مرئية حتى يقوم شخص ما بتعديلها أو حذفها.
 
-- اسم قالب الحماية الأساسي ووصفه من تسمية طبقت التشفير. يتم عرض هذه المعلومات في شريط رسائل في أعلى المستند، لتوفير معلومات حول الأشخاص المخولا بفتح المستند، وحقوق استخدامهم لهذا المستند.
+- اسم قالب الحماية الأساسي ووصفه من تسمية تطبق التشفير. يتم عرض هذه المعلومات في شريط رسائل في أعلى المستند، لتوفير معلومات حول الشخص المخول بفتح المستند، وحقوق استخدامه لهذا المستند.
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>مشاركة المستندات المشفرة مع مستخدمين خارجيين
 
-بالإضافة إلى تقييد الوصول إلى المستخدمين في مؤسستك، يمكنك توسيع الوصول إلى أي مستخدم آخر لديه حساب في Azure Active Directory. ومع ذلك، إذا كانت مؤسستك تستخدم سياسات الوصول الشرطي، فشاهد [القسم التالي](#conditional-access-policies) لاعتبارات إضافية.
+بالإضافة إلى تقييد الوصول إلى المستخدمين في مؤسستك، يمكنك توسيع نطاق الوصول إلى أي مستخدم آخر لديه حساب في Azure Active Directory. ومع ذلك، إذا كانت مؤسستك تستخدم نهج الوصول المشروط، فراجع [القسم التالي](#conditional-access-policies) للحصول على اعتبارات إضافية.
 
-يمكن Office التطبيقات والتطبيقات الأخرى التي تستخدم [RMS](/azure/information-protection/requirements-applications#rms-enlightened-applications) لفتح المستندات المشفرة بعد مصادقة المستخدم بنجاح. 
+يمكن لجميع تطبيقات Office [والتطبيقات الأخرى المعتمدة على RMS](/azure/information-protection/requirements-applications#rms-enlightened-applications) فتح المستندات المشفرة بعد مصادقة المستخدم بنجاح. 
 
-إذا لم يكن لدى المستخدمين الخارجيين حساب في Azure Active Directory، يمكنهم المصادقة باستخدام حسابات الضيوف في المستأجر. يمكن أيضا استخدام حسابات الضيوف هذه للوصول إلى المستندات المشتركة في SharePoint أو OneDrive عند تمكين تسميات الحساسية لملفات Office في SharePoint [OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
+إذا لم يكن لدى المستخدمين الخارجيين حساب في Azure Active Directory، يمكنهم المصادقة باستخدام حسابات الضيوف في المستأجر الخاص بك. يمكن أيضا استخدام حسابات الضيوف هذه للوصول إلى المستندات المشتركة في SharePoint أو OneDrive عند [تمكين تسميات الحساسية لملفات Office في SharePoint OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
 
 - أحد الخيارات هو إنشاء حسابات الضيوف هذه بنفسك. يمكنك تحديد أي عنوان بريد إلكتروني يستخدمه هؤلاء المستخدمون بالفعل. على سبيل المثال، عنوان Gmail الخاص بهم.
     
-    إن ميزة هذا الخيار هي أنه يمكنك تقييد الوصول والحقوق لمستخدمين معينين من خلال تحديد عنوان بريدهم الإلكتروني في إعدادات التشفير. الجانب السلبي هو النفقات العامة للإدارة لإنشاء الحساب والتنسيق مع تكوين التسمية.
+    تتمثل ميزة هذا الخيار في أنه يمكنك تقييد الوصول إلى مستخدمين محددين وحقوقهم عن طريق تحديد عنوان بريدهم الإلكتروني في إعدادات التشفير. الجانب السلبي هو الحمل الإداري لإنشاء الحساب والتنسيق مع تكوين التسمية.
 
-- هناك خيار آخر وهو استخدام SharePoint OneDrive مع [Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration) بحيث يتم إنشاء حسابات الضيوف تلقائيا عندما يشارك المستخدمون الارتباطات.
+- خيار آخر هو استخدام [SharePoint والتكامل OneDrive مع Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration) بحيث يتم إنشاء حسابات الضيوف تلقائيا عندما يشارك المستخدمون الارتباطات.
     
-    إن الاستفادة من هذا الخيار هي الحد الأدنى من النفقات الإدارية بسبب إنشاء الحسابات تلقائيا وتكوين تسمية أكثر بساطة. في هذا السيناريو، يجب تحديد خيار التشفير إضافة أي مستخدم مصدق [عليه لأنك](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) لن تعرف عناوين البريد الإلكتروني بشكل مسبق. الجانب السلبي هو أن هذا الإعداد لا يسمح لك بتقييد حقوق الوصول والاستخدام لمستخدمين محددين.
+    ميزة هذا الخيار هي الحد الأدنى من النفقات الإدارية لأنه يتم إنشاء الحسابات تلقائيا، وتكوين تسمية أبسط. بالنسبة لهذا السيناريو، يجب تحديد خيار التشفير ["إضافة أي مستخدم مصادق عليه](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) " لأنك لن تعرف عناوين البريد الإلكتروني مسبقا. الجانب السلبي هو أن هذا الإعداد لا يسمح لك بتقييد حقوق الوصول والاستخدام لمستخدمين محددين.
 
-يمكن للمستخدمين الخارجيين أيضا استخدام حساب Microsoft لفتح المستندات المشفرة عند استخدام Windows و [Microsoft 365 Apps (تطبيقات](/deployoffice/name-change) Office 365 سابقا) أو الإصدار Office 2019. تم دعم حسابات Microsoft مؤخرا ل الأنظمة الأساسية الأخرى، كما تم دعمها لفتح المستندات المشفرة على macOS (Microsoft 365 Apps، الإصدار 16.42+)، وAndroid (الإصدار 16.0.13029+)، و iOS (الإصدار 2.42+). على سبيل المثال، يشارك مستخدم في مؤسستك مستندا مشفرا مع مستخدم من خارج مؤسستك، كما تحدد إعدادات التشفير عنوان بريد إلكتروني في Gmail للمستخدم الخارجي. يمكن لهذا المستخدم الخارجي إنشاء حساب Microsoft الخاص به يستخدم عنوان بريده الإلكتروني في Gmail. بعد ذلك، بعد تسجيل الدخول باستخدام هذا الحساب، يمكنهم فتح المستند وتحريره، وفقا لقيود الاستخدام المحددة لهم. للحصول على مثال معاينة لهذا السيناريو، راجع فتح المستند المحمي [وتحريره](/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+يمكن للمستخدمين الخارجيين أيضا استخدام حساب Microsoft لفتح المستندات المشفرة عند استخدامهم Windows Microsoft 365 Apps ([تطبيقات Office 365 سابقا](/deployoffice/name-change)) أو الإصدار المستقل من Office 2019. تم دعم حسابات Microsoft مؤخرا للأنظمة الأساسية الأخرى، كما يتم دعم حسابات Microsoft لفتح المستندات المشفرة على macOS (Microsoft 365 Apps، الإصدار 16.42+)، وAndroid (الإصدار 16.0.13029+)، وiOS (الإصدار 2.42+). على سبيل المثال، يشارك مستخدم في مؤسستك مستندا مشفرا مع مستخدم من خارج مؤسستك، وتحدد إعدادات التشفير عنوان بريد Gmail الإلكتروني للمستخدم الخارجي. يمكن لهذا المستخدم الخارجي إنشاء حساب Microsoft الخاص به الذي يستخدم عنوان بريده الإلكتروني في Gmail. بعد ذلك، بعد تسجيل الدخول باستخدام هذا الحساب، يمكنهم فتح المستند وتحريره، وفقا لقيود الاستخدام المحددة لهم. للحصول على مثال تفصيلي لهذا السيناريو، راجع [فتح المستند المحمي وتحريره](/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
-> يجب أن يكون عنوان البريد الإلكتروني لحساب Microsoft متطابقا مع عنوان البريد الإلكتروني المحدد لتقييد الوصول لإعدادات التشفير.
+> يجب أن يتطابق عنوان البريد الإلكتروني لحساب Microsoft مع عنوان البريد الإلكتروني المحدد لتقييد الوصول لإعدادات التشفير.
 
-عندما يفتح مستخدم لديه حساب Microsoft مستندا مشفرا بهذه الطريقة، يقوم تلقائيا بإنشاء حساب ضيف للمستأجر إذا لم يكن حساب ضيف بالاسم نفسه موجودا بالفعل. عند وجود حساب الضيف، يمكن استخدامه لفتح المستندات في SharePoint و OneDrive باستخدام Office على الويب، بالإضافة إلى فتح مستندات مشفرة من تطبيقات سطح المكتب والأجهزة المحمولة Office المعتمدة.
+عندما يفتح مستخدم لديه حساب Microsoft مستندا مشفرا بهذه الطريقة، فإنه يقوم تلقائيا بإنشاء حساب ضيف للمستأجر إذا لم يكن حساب ضيف بنفس الاسم موجودا بالفعل. عند وجود حساب الضيف، يمكن استخدامه لفتح المستندات في SharePoint OneDrive باستخدام Office على الويب، بالإضافة إلى فتح المستندات المشفرة من تطبيقات Office سطح المكتب والأجهزة المحمولة المعتمدة.
 
-ومع ذلك، لا يتم إنشاء حساب الضيف التلقائي مباشرة في هذا السيناريو، بسبب زمن زمن تكرار. إذا قمت بتحديد عناوين البريد الإلكتروني الشخصية كجزء من إعدادات تشفير التسميات، نوصي بإنشاء حسابات ضيوف مقابلة في Azure Active Directory. بعد ذلك، دع هؤلاء المستخدمين يعرفون أنه يجب عليهم استخدام هذا الحساب لفتح مستند مشفر من مؤسستك.
+ومع ذلك، لا يتم إنشاء حساب الضيف التلقائي على الفور في هذا السيناريو، بسبب زمن انتقال النسخ المتماثل. إذا قمت بتحديد عناوين البريد الإلكتروني الشخصية كجزء من إعدادات تشفير التسمية، نوصي بإنشاء حسابات ضيف مقابلة في Azure Active Directory. ثم دع هؤلاء المستخدمين يعرفون أنه يجب عليهم استخدام هذا الحساب لفتح مستند مشفر من مؤسستك.
 
 > [!TIP]
-> نظرا لعدم التأكد من أن المستخدمين الخارجيين سيستخدمون تطبيق عميل Office معتمدا، يمكنك مشاركة الارتباطات من SharePoint و OneDrive بعد إنشاء حسابات الضيوف (لمستخدمين محددين) أو عند استخدام تكامل [SharePoint و OneDrive مع Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)  (لأي مستخدم مصدق عليه) هو أسلوب أكثر موثوقية لدعم التعاون الآمن مع المستخدمين الخارجيين.
+> نظرا لعدم التأكد من أن المستخدمين الخارجيين سيستخدمون تطبيق عميل Office معتمدا، أو يشاركون الارتباطات من SharePoint OneDrive بعد إنشاء حسابات الضيوف (لمستخدمين محددين) أو عند استخدام [تكامل SharePoint OneDrive مع Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)  (لأي مستخدم مصادق عليه) هو أسلوب أكثر موثوقية لدعم التعاون الآمن مع المستخدمين الخارجيين.
 
 ### <a name="conditional-access-policies"></a>نهج الوصول المشروط
 
-إذا كانت مؤسستك قد نفذت [سياسات الوصول الشرطي ل Azure Active Directory](/azure/active-directory/conditional-access/overview)، فتحقق من تكوين هذه النهج. إذا كانت النهج تتضمن **Microsoft Azure حماية البيانات** وامتد النهج إلى مستخدمين خارجيين، فيجب أن يكون لدى هؤلاء المستخدمين الخارجيين حساب ضيف في نطاق المستأجر الخاص بك حتى لو كان لديهم حساب Azure AD في نطاق المستأجر الخاص بهم.
+إذا نفذت مؤسستك [نهج الوصول المشروط ل Azure Active Directory](/azure/active-directory/conditional-access/overview)، فتحقق من تكوين هذه النهج. إذا تضمنت النهج **Microsoft Azure حماية البيانات** وتمتد السياسة إلى المستخدمين الخارجيين، يجب أن يكون لدى هؤلاء المستخدمين الخارجيين حساب ضيف في المستأجر الخاص بك حتى لو كان لديهم حساب Azure AD في المستأجر الخاص بهم.
 
-من دون حساب الضيف هذا، لا يمكنهم فتح المستند المشفر ورؤية رسالة خطأ. قد يقوم نص الرسالة لإعلامه بأنه يجب إضافة حسابه كمستخدم خارجي في المستأجر، مع الإرشادات غير الصحيحة لهذا السيناريو حول تسجيل الخروج ثم تسجيل الدخول مرة أخرى باستخدام حساب مستخدم **Azure Active Directory مختلف**.
+بدون حساب الضيف هذا، لا يمكنهم فتح المستند المشفر ورؤية رسالة خطأ. قد يعلمهم نص الرسالة أنه يجب إضافة حسابهم كمستخدم خارجي في المستأجر، مع إرشادات غير صحيحة لهذا السيناريو **لتسجيل الخروج وتسجيل الدخول مرة أخرى باستخدام حساب مستخدم Azure Active Directory مختلف**.
 
-إذا لم تتمكن من إنشاء حسابات الضيوف وتكوينها في المستأجر للمستخدمين الخارجيين الذين يحتاجون إلى فتح المستندات المشفرة بواسطة التسميات، فيجب عليك إما إزالة Azure حماية البيانات من سياسات الوصول الشرطي، أو استبعاد مستخدمين خارجيين من هذه النهج.
+إذا تعذر عليك إنشاء حسابات الضيوف وتكوينها في المستأجر للمستخدمين الخارجيين الذين يحتاجون إلى فتح المستندات المشفرة بواسطة التسميات الخاصة بك، فيجب عليك إما إزالة azure حماية البيانات من نهج الوصول المشروط، أو استبعاد مستخدمين خارجيين من النهج.
 
-لمزيد من المعلومات حول الوصول الشرطي و Azure حماية البيانات، خدمة التشفير المستخدمة بواسطة تسميات الحساسية، راجع السؤال الذي يتم طرحه بشكل متكرر، أرى [أن Azure حماية البيانات](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work) مدرج ك تطبيق سحابة متوفر للوصول الشرطي— كيف يعمل هذا؟
+لمزيد من المعلومات حول الوصول المشروط وAzure حماية البيانات، خدمة التشفير التي تستخدمها تسميات الحساسية، راجع السؤال المتداول، [أرى أن Azure حماية البيانات مدرج كتطبيق سحابي متوفر للوصول المشروط - كيف يعمل هذا؟](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
-## <a name="when-office-apps-apply-content-marking-and-encryption"></a>عند Office تطبيق علامات المحتوى والتشفير
+## <a name="when-office-apps-apply-content-marking-and-encryption"></a>عند تطبيق تطبيقات Office وضع علامة على المحتوى وتشفيره
 
-Office تطبيقات أخرى وضع علامة على المحتوى والتشفير باستخدام تسمية حساسية بشكل مختلف، استنادا إلى التطبيق الذي تستخدمه.
+تطبق تطبيقات Office وضع علامة على المحتوى وتشفيره باستخدام وصف الحساسية بشكل مختلف، اعتمادا على التطبيق الذي تستخدمه.
 
 | App | وضع علامة على المحتوى | التشفير |
 | --- | --- | --- |
-| Word، Excel، PowerPoint على كل الأنظمة الأساسية | على الفور | على الفور |
-| Outlook الكمبيوتر الشخصي و Mac | بعد Exchange Online إرسال البريد الإلكتروني | على الفور |
-| Outlook على ويب و iOS و Android | بعد Exchange Online إرسال البريد الإلكتروني | بعد Exchange Online إرسال البريد الإلكتروني |
+| Word، Excel، PowerPoint على جميع الأنظمة الأساسية | فورا | فورا |
+| Outlook للكمبيوتر الشخصي وMac | بعد Exchange Online إرسال البريد الإلكتروني | فورا |
+| Outlook على ويب وiOS وAndroid | بعد Exchange Online إرسال البريد الإلكتروني | بعد Exchange Online إرسال البريد الإلكتروني |
 |
 
-تقوم الحلول التي تطبق تسميات الحساسية على الملفات الموجودة Office التطبيقات بذلك عن طريق تطبيق تسميات لبيانات التعريف على الملف. في هذا السيناريو، لا يتم إدراج علامة المحتوى من تكوين التسمية في الملف ولكن يتم تطبيق التشفير. 
+الحلول التي تطبق تسميات الحساسية على الملفات خارج تطبيقات Office تفعل ذلك عن طريق تطبيق بيانات تعريف التسمية على الملف. في هذا السيناريو، لا يتم إدراج وضع علامة المحتوى من تكوين التسمية في الملف ولكن يتم تطبيق التشفير. 
 
-عند فتح هذه الملفات في تطبيق Office سطح المكتب، يتم تطبيق علامات المحتوى تلقائيا بواسطة عميل التسمية حماية البيانات Azure عند حفظ الملف للمرة الأولى. لا يتم تطبيق علامات المحتوى تلقائيا عند استخدام تسميات مضمنة لتطبيقات سطح المكتب أو الأجهزة المحمولة أو الويب.
+عند فتح هذه الملفات في تطبيق سطح مكتب Office، يتم تطبيق علامات المحتوى تلقائيا بواسطة عميل التسمية الموحد في Azure حماية البيانات عند حفظ الملف لأول مرة. لا يتم تطبيق علامات المحتوى تلقائيا عند استخدام التسمية المضمنة لتطبيقات سطح المكتب أو الأجهزة المحمولة أو الويب.
 
-تتضمن السيناريوهات التي تتضمن تطبيق تسمية حساسية خارج Office التالية:
+تتضمن السيناريوهات التي تتضمن تطبيق وصف الحساسية خارج تطبيقات Office ما يلي:
 
-- الماسح الضوئي مستكشف الملفات و PowerShell من Azure حماية البيانات تسمية موحدة 
+- الماسح الضوئي مستكشف الملفات وPowerShell من عميل التسمية الموحد حماية البيانات Azure 
 
-- سياسات التسمية التلقائية SharePoint OneDrive
+- نهج التسمية التلقائية SharePoint OneDrive
 
-- بيانات ملصقة ومشفرة تم تصديرها من Power BI
+- البيانات التي تم تصديرها والمسماة ومشفرة من Power BI
 
 - Microsoft Defender for Cloud Apps
 
 بالنسبة إلى هذه السيناريوهات، باستخدام تطبيقات Office الخاصة به، يمكن للمستخدم الذي له تسمية مضمنة تطبيق علامات محتوى التسمية عن طريق إزالة التسمية الحالية أو استبدالها مؤقتا ثم إعادة تطبيق التسمية الأصلية.
 
-### <a name="dynamic-markings-with-variables"></a>علامات ديناميكية مع متغيرات
+### <a name="dynamic-markings-with-variables"></a>العلامات الديناميكية مع المتغيرات
 
 > [!IMPORTANT]
-> إذا لم Office تطبيقاتك هذه الإمكانية، فإنها تطبق العلامات كنص أصلي محدد في تكوين التسمية، بدلا من حل المتغيرات.
+> إذا كانت تطبيقات Office لا تدعم هذه الإمكانية، فإنها تطبق العلامات كنص أصلي محدد في تكوين التسمية، بدلا من حل المتغيرات.
 > 
-> يدعم عميل التسمية حماية البيانات Azure علامات ديناميكية. للحصول على التسميات المضمنة Office، راجع الجداول في قسم الإمكانات [](#support-for-sensitivity-label-capabilities-in-apps) في هذه الصفحة للحصول على الحد الأدنى من الإصدارات المعتمدة.
+> يدعم عميل التسمية الموحد ل Azure حماية البيانات العلامات الديناميكية. للتسمية المضمنة في Office، راجع الجداول الموجودة في قسم [القدرات](#support-for-sensitivity-label-capabilities-in-apps) في هذه الصفحة للحصول على الحد الأدنى للإصدارات المعتمدة.
 
-عندما تقوم بتكوين تسمية حساسية لتسميات المحتوى، يمكنك استخدام المتغيرات التالية في السلسلة النصية لرأس أو تاشير أو علامة مائية:
+عند تكوين وصف حساسية لعلامات المحتوى، يمكنك استخدام المتغيرات التالية في السلسلة النصية للرأس أو التذييل أو العلامة المائية:
 
 | متغير | الوصف | مثال عند تطبيق التسمية |
 | -------- | ----------- | ------- |
 | `${Item.Label}` | اسم عرض التسمية للتسمية المطبقة | **عام**|
-| `${Item.Name}` | اسم الملف أو موضوع البريد الإلكتروني للمحتوى الذي يتم تسميته | **Sales.docx** |
-| `${Item.Location}` | المسار واسم الملف للمستند الذي يتم تسميته، أو موضوع البريد الإلكتروني لبريد إلكتروني يتم تسميته | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | اسم العرض للمستخدم الذي يقوم بتطبيق التسمية | **ريشمن مهى** |
-| `${User.PrincipalName}` | اسم مستخدم Azure AD الأساسي (UPN) للمستخدم الذي يطبق التسمية | **rsimone\@ contoso.com** |
-| `${Event.DateTime}` | التاريخ والوقت الذي يتم فيه تسمية المحتوى، في المنطقة الزمنية المحلية للمستخدم الذي يطبق التسمية في تطبيقات Microsoft 365، أو UTC (الوقت العالمي المنسق) لنهج Office عبر الإنترنت والتسميات التلقائية | **8/10/2020 1:30 م** |
+| `${Item.Name}` | اسم الملف أو موضوع البريد الإلكتروني للمحتوى الذي تتم تسميته | **Sales.docx** |
+| `${Item.Location}` | مسار المستند الذي تتم تسميته واسم ملفه، أو موضوع البريد الإلكتروني لرسالة بريد إلكتروني تتم تسميتها | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | اسم العرض للمستخدم الذي يطبق التسمية | **ريشارد سيمون** |
+| `${User.PrincipalName}` | الاسم الأساسي لمستخدم Azure AD (UPN) للمستخدم الذي يطبق التسمية | **rsimone\@ contoso.com** |
+| `${Event.DateTime}` | تاريخ ووقت تسمية المحتوى، في المنطقة الزمنية المحلية للمستخدم الذي يطبق التسمية في تطبيقات Microsoft 365، أو UTC (التوقيت العالمي المتفق عليه) لنهج Office Online والتسمية التلقائية | **8/10/2020 1:30 م** |
 
 > [!NOTE]
-> بناء الجملة لهذه المتغيرات يتحسس حالة التحسس.
+> بناء جملة هذه المتغيرات حساس لحالة الأحرف.
 
-#### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>تعيين علامات مرئية مختلفة ل Word Excel و PowerPoint و Outlook
+#### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>تعيين علامات مرئية مختلفة ل Word و Excel و PowerPoint و Outlook
 
-كمتغير إضافي، يمكنك تكوين علامات مرئية لكل نوع تطبيق Office باستخدام العبارة المتغيرة If.App" في السلسلة النصية، وتحديد نوع التطبيق باستخدام القيم **Word** أو **Excel** أو **PowerPoint** أو **Outlook**. يمكنك أيضا اختصار هذه القيم، وهو أمر ضروري إذا كنت تريد تحديد أكثر من قيمة واحدة في نفس If.App.
+كمتغير إضافي، يمكنك تكوين العلامات المرئية لكل نوع تطبيق Office باستخدام عبارة متغير "If.App" في السلسلة النصية، وتحديد نوع التطبيق باستخدام القيم **Word** **أو Excel** **أو PowerPoint** أو **Outlook**. يمكنك أيضا اختصار هذه القيم، وهو أمر ضروري إذا كنت تريد تحديد أكثر من قيمة واحدة في العبارة If.App نفسها.
 
 استخدم بناء الجملة التالي:
 
@@ -318,101 +329,101 @@ Office تطبيقات أخرى وضع علامة على المحتوى والت�
 ${If.App.<application type>}<your visual markings text> ${If.End}
 ```
 
-وكما هو الحال مع العلامات المرئية الديناميكية الأخرى، فإن بناء الجملة يتحسس حالة الحالة، الذي يتضمن الاختصارات لكل نوع تطبيق (WEPO).
+كما هو الحال مع العلامات المرئية الديناميكية الأخرى، يكون بناء الجملة حساسا لحالة الأحرف، والذي يتضمن اختصارات لكل نوع تطبيق (WEPO).
 
-أمثلة:
+امثله:
 
 - **تعيين نص الرأس لمستندات Word فقط:**
 
     `${If.App.Word}This Word document is sensitive ${If.End}`
 
-    في رؤوس مستندات Word فقط، تطبق التسمية نص الرأس "مستند Word هذا حساس". لا يتم تطبيق أي نص رأس على تطبيقات Office الأخرى.
+    في رؤوس مستندات Word فقط، تطبق التسمية نص الرأس "مستند Word حساس". لا يتم تطبيق أي نص رأس على تطبيقات Office الأخرى.
 
-- **قم بتعيين نص ت إذا كنت Excel وكلمة Outlook ونص تاشير مختلف PowerPoint:**
+- **قم بتعيين نص التذييل ل Word و Excel و Outlook ونص تذييل مختلف PowerPoint:**
 
     `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
 
-    في Word Excel، Outlook، تطبق التسمية نص تاشير "هذا المحتوى سري". في PowerPoint، تطبق التسمية نص تاشير "هذا العرض التقديمي سري".
+    في Word، Excel، Outlook، تطبق التسمية نص التذييل "هذا المحتوى سري". في PowerPoint، تطبق التسمية نص التذييل "هذا العرض التقديمي سري".
 
-- **قم بتعيين نص علامة مائية محدد ل Word PowerPoint، ثم نص العلامة المائية ل Word Excel و PowerPoint:**
+- **قم بتعيين نص علامة مائية معينة ل Word و PowerPoint، ثم نص العلامة المائية ل Word و Excel و PowerPoint:**
 
     `${If.App.WP}This content is ${If.End}Confidential`
 
-    في Word PowerPoint، تطبق التسمية نص العلامة المائية "هذا المحتوى سري". في Excel، تطبق التسمية نص العلامة المائية "سري". في Outlook، لا تطبق التسمية أي نص علامة مائية لأن العلامات المائية كعلامة مرئية غير معتمدة Outlook.
+    في Word و PowerPoint، تطبق التسمية نص العلامة المائية "هذا المحتوى سري". في Excel، تطبق التسمية نص العلامة المائية "سري". في Outlook، لا تطبق التسمية أي نص علامة مائية لأن العلامات المائية كعلامات مرئية غير معتمدة Outlook.
 
-## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>الطلب من المستخدمين تطبيق تسمية على بريدهم الإلكتروني ومستنداتهم
+## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>مطالبة المستخدمين بتطبيق تسمية على بريدهم الإلكتروني ومستنداتهم
 
 > [!IMPORTANT]
 > 
-> يدعم [عميل حماية البيانات Azure](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) الموحد هذا التكوين المعروف أيضا بالتسمية الإلزامية. للحصول على التسميات المضمنة Office التطبيقات، راجع الجداول في قسم الإمكانات [](#support-for-sensitivity-label-capabilities-in-apps) في هذه الصفحة للحصول على الحد الأدنى من الإصدارات.
+> يدعم [عميل التسمية الموحدة ل Azure حماية البيانات](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) هذا التكوين الذي يعرف أيضا بالتسمية الإلزامية. للتسمية المضمنة في تطبيقات Office، راجع الجداول الموجودة في قسم [القدرات](#support-for-sensitivity-label-capabilities-in-apps) في هذه الصفحة للحصول على الحد الأدنى من الإصدارات.
 >
-> لاستخدام التسميات الإلزامية للمستندات وليس رسائل البريد الإلكتروني، راجع الإرشادات الواردة في المقطع التالي الذي يشرح كيفية تكوين Outlook محددة.
+> لاستخدام التسمية الإلزامية للمستندات وليس رسائل البريد الإلكتروني، راجع الإرشادات الواردة في القسم التالي التي تشرح كيفية تكوين خيارات خاصة Outlook.
 > 
 > لاستخدام التسمية الإلزامية ل Power BI، راجع [نهج التسمية الإلزامية ل Power BI](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy).
 
-عند تحديد إعداد النهج  يتطلب من المستخدمين تطبيق تسمية على البريد الإلكتروني والمستندات، يجب على المستخدمين المعينين النهج تحديد تسمية حساسية وتطبيقها ضمن السيناريوهات التالية:
+عند تحديد إعداد النهج **مطالبة المستخدمين بتطبيق تسمية على بريدهم الإلكتروني ومستنداتهم** ، يجب على المستخدمين المعينين للنهج تحديد تسمية حساسية وتطبيقها ضمن السيناريوهات التالية:
 
-- بالنسبة إلى عميل التسمية حماية البيانات Azure:
-    - بالنسبة للمستندات (Word، Excel، PowerPoint): عند حفظ مستند غير مبينا أو إغلاق المستند من قبل المستخدمين.
-    - بالنسبة إلى رسائل البريد الإلكتروني (Outlook): في الوقت الذي يرسل فيه المستخدمون رسالة غير مرسلة.
+- لعميل التسمية الموحد ل Azure حماية البيانات:
+    - للمستندات (Word، Excel، PowerPoint): عند حفظ مستند غير مسمى أو عندما يغلق المستخدمون المستند.
+    - لرسائل البريد الإلكتروني (Outlook): في ذلك الوقت، يرسل المستخدمون رسالة غير مسماة.
 
-- للتسمية المضمنة Office التطبيقات:
-    - بالنسبة للمستندات (Word، Excel، PowerPoint): عند فتح مستند غير مبينا أو حفظه.
-    - بالنسبة إلى رسائل البريد الإلكتروني (Outlook): في الوقت الذي يرسل فيه المستخدمون رسالة بريد إلكتروني غير مرسلة.
+- للتسمية المضمنة في تطبيقات Office:
+    - للمستندات (Word، Excel، PowerPoint): عند فتح مستند غير مسمى أو حفظه.
+    - لرسائل البريد الإلكتروني (Outlook): في ذلك الوقت، يرسل المستخدمون رسالة بريد إلكتروني غير مسماة.
 
 معلومات إضافية للتسمية المضمنة:
 
-- عندما يتم مطالبة المستخدمين بإضافة تسمية حساسية لأنهم يفتحون مستندا غير ملصق، يمكنهم إضافة تسمية أو اختيار فتح المستند في وضع القراءة فقط.
+- عندما تتم مطالبة المستخدمين بإضافة وصف حساسية لأنهم يفتحون مستندا غير مسمى، يمكنهم إضافة تسمية أو اختيار فتح المستند في وضع القراءة فقط.
 
-- عند وضع التسميات الإلزامية في حيز التنفيذ، لا يمكن للمستخدمين إزالة تسميات الحساسية من المستندات، ولكن يمكنهم تغيير تسمية موجودة.
+- عند تطبيق التسمية الإلزامية، لا يمكن للمستخدمين إزالة تسميات الحساسية من المستندات، ولكن يمكنهم تغيير تسمية موجودة.
 
 للحصول على إرشادات حول وقت استخدام هذا الإعداد، راجع المعلومات حول [إعدادات النهج](sensitivity-labels.md#what-label-policies-can-do).
 
 > [!NOTE]
 > إذا كنت تستخدم إعداد نهج التسمية الافتراضي للمستندات ورسائل البريد الإلكتروني بالإضافة إلى التسمية الإلزامية: 
 >
-> تأخذ التسمية الافتراضية دائما الأولوية على التسمية الإلزامية. ومع ذلك، بالنسبة إلى المستندات، يطبق عميل التسمية الموحد ل Azure حماية البيانات التسمية الافتراضية على كل المستندات غير الملصقة، في حين تطبق التسمية المضمنة التسمية الافتراضية على المستندات الجديدة وليس على المستندات الموجودة التي لم يتم وصفها. يعني هذا الاختلاف في السلوك أنه عند استخدام التسمية الإلزامية مع إعداد التسمية الافتراضي، سيطلب من المستخدمين على الأرجح تطبيق تسمية حساسية بشكل أكبر عند استخدام التسميات المضمنة أكثر من استخدامهم لتسمية azure حماية البيانات الموحد.
+> تأخذ التسمية الافتراضية دائما الأولوية على التسمية الإلزامية. ومع ذلك، بالنسبة للمستندات، يطبق عميل التسمية الموحدة ل Azure حماية البيانات التسمية الافتراضية على كافة المستندات غير المسماة بينما يطبق التسمية المضمنة التسمية الافتراضية على المستندات الجديدة وليس على المستندات الموجودة غير المسماة. يعني هذا الاختلاف في السلوك أنه عند استخدام التسمية الإلزامية مع إعداد التسمية الافتراضي، ستتم مطالبة المستخدمين على الأرجح بتطبيق تسمية حساسية في كثير من الأحيان عند استخدامهم للتسمية المضمنة أكثر من استخدامهم لعميل التسمية الموحد في Azure حماية البيانات.
 > 
-> تم الآن طرح: Office التي تستخدم تسميات مضمنة وتدعم تسمية افتراضية للمستندات الموجودة. للحصول على التفاصيل، راجع جدول [الإمكانات](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) ل Word Excel PowerPoint.
+> يتم الآن طرح: Office التطبيقات التي تستخدم التسمية المضمنة وتدعم تسمية افتراضية للمستندات الموجودة. للحصول على التفاصيل، راجع [جدول القدرات](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) ل Word و Excel و PowerPoint.
 
-## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Outlook محددة للتسمية الافتراضية والتسميات الإلزامية
+## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Outlook خيارات خاصة للتسمية الافتراضية والتسمية الإلزامية
 
-للتسمية المضمنة، حدد الحد الأدنى من إصدارات Outlook التي تدعم هذه الميزات باستخدام جدول الإمكانيات ل [Outlook](#sensitivity-label-capabilities-in-outlook) في هذه الصفحة، والصف إعدادات مختلفة للتسمية الافتراضية والتسميات **الإلزامية**. تدعم كل إصدارات azure حماية البيانات التسمية الموحدة هذه Outlook خيارات محددة.
+للتسمية المضمنة، حدد الحد الأدنى من إصدارات Outlook التي تدعم هذه الميزات باستخدام [جدول القدرات Outlook](#sensitivity-label-capabilities-in-outlook) على هذه الصفحة، **وإعدادات الصف المختلفة للتسمية الافتراضية والتسمية الإلزامية**. تدعم جميع إصدارات عميل التسمية الموحدة ل Azure حماية البيانات هذه الخيارات الخاصة Outlook.
 
-عندما Outlook التطبيق إعداد تسمية افتراضي يختلف عن إعداد التسمية الافتراضي للمستندات:
+عندما يدعم تطبيق Outlook إعداد تسمية افتراضيا يختلف عن إعداد التسمية الافتراضي للمستندات:
 
-- في تكوين نهج التسمية من مركز التوافق في Microsoft 365، في الصفحة تطبيق تسمية افتراضية  على رسائل البريد الإلكتروني: يمكنك تحديد اختيار تسمية الحساسية التي سيتم تطبيقها على كل رسائل البريد الإلكتروني غير الملصقة، أو بدون تسمية افتراضية. هذا الإعداد مستقل عن الإعداد تطبيق **هذه** التسمية بشكل افتراضي على المستندات في صفحة إعدادات **النهج** السابقة للمستندات في التكوين.
+- في تكوين نهج التسمية من مدخل توافق Microsoft Purview، في صفحة **تطبيق تسمية افتراضية على رسائل البريد الإلكتروني** : يمكنك تحديد اختيارك لتسمية الحساسية التي سيتم تطبيقها على جميع رسائل البريد الإلكتروني غير المسماة، أو بدون تسمية افتراضية. هذا الإعداد مستقل عن **تطبيق هذه التسمية بشكل افتراضي على إعداد المستندات** في **إعدادات النهج السابقة لصفحة المستندات** الخاصة بالتكوين.
 
-عندما لا يدعم تطبيق Outlook إعداد تسمية افتراضي يختلف عن إعداد التسمية الافتراضي للمستندات: سيستخدم Outlook دائما القيمة التي تحددها لتطبيق هذه التسمية بشكل افتراضي على المستندات في صفحة إعدادات النهج للمستندات لتكوين نهج التسمية. 
+عندما لا يدعم تطبيق Outlook إعداد تسمية افتراضيا يختلف عن إعداد التسمية الافتراضي للمستندات: سيستخدم Outlook دائما القيمة التي **تحددها لتطبيق هذه التسمية بشكل افتراضي على المستندات** الموجودة في **إعدادات النهج لصفحة المستندات** لتكوين نهج التسمية.
 
-عندما Outlook التطبيق إيقاف تشغيل التسمية الإلزامية:
+عندما يدعم تطبيق Outlook إيقاف تشغيل التسمية الإلزامية:
 
-- في تكوين نهج التسمية من مركز التوافق في Microsoft 365، في صفحة إعدادات النهج: حدد  طلب من المستخدمين تطبيق تسمية على بريدهم الإلكتروني **أو مستنداتهم**. ثم حدد **NextNext**  >  وأمسح خانة الاختيار يتطلب من المستخدمين **تطبيق تسمية على رسائل البريد الإلكتروني الخاصة بهم**. احتفظ ب خانة الاختيار محددة إذا كنت تريد تطبيق التسميات الإلزامية على رسائل البريد الإلكتروني والمستندات.
+- في تكوين نهج التسمية من مدخل توافق Microsoft Purview، في صفحة **إعدادات النهج** : حدد **"مطالبة المستخدمين بتطبيق تسمية على بريدهم الإلكتروني أو مستنداتهم**". ثم حدد **NextNext**  >  وقم بإلغاء تحديد خانة الاختيار **"تتطلب من المستخدمين تطبيق تسمية على رسائل البريد الإلكتروني الخاصة بهم**". احتفظ بتحديد خانة الاختيار إذا كنت تريد تطبيق التسمية الإلزامية على رسائل البريد الإلكتروني وكذلك على المستندات.
 
-عندما Outlook لا يدعم تطبيق Outlook إيقاف تشغيل التسمية الإلزامية: إذا حددت مطالبة المستخدمين بتطبيق تسمية على  بريدهم الإلكتروني أو مستنداتهم كمستندات نهج، سيطالب Outlook المستخدمين دائما بتحديد تسمية لر البريد الإلكتروني غير المسمى.
+عندما لا يدعم تطبيق Outlook إيقاف تشغيل التسمية الإلزامية: إذا حددت **"مطالبة المستخدمين بتطبيق تسمية على بريدهم الإلكتروني أو مستنداتهم** كإعداد نهج"، فسيطالب Outlook المستخدمين دائما بتحديد تسمية لرسائل البريد الإلكتروني غير المسماة.
 
 > [!NOTE]
-> إذا قمت بتكوين الإعدادات المتقدمة في **PowerShell OutlookDefaultLabel** و **DisableMandatoryInOutlook** باستخدام Cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) أو [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) :
+> إذا قمت بتكوين إعدادات PowerShell المتقدمة **OutlookDefaultLabel** و **DisableMandatoryInOutlook** باستخدام [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) أو [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) cmdlets:
 > 
-> تنعكس القيم التي اخترتها لإعدادات PowerShell هذه في تكوين نهج التسمية في مركز التوافق، وهي تعمل تلقائيا لتطبيقات Outlook التي تدعم هذه الإعدادات. تظل إعدادات PowerShell المتقدمة الأخرى معتمدة حماية البيانات Azure عميل التسمية الموحد فقط.
+> تنعكس القيم التي اخترتها لإعدادات PowerShell هذه في تكوين نهج التسمية في مدخل توافق Microsoft Purview، وتعمل تلقائيا لتطبيقات Outlook التي تدعم هذه الإعدادات. تظل إعدادات PowerShell المتقدمة الأخرى مدعومة لعميل التسمية الموحدة ل Azure حماية البيانات فقط.
 
-## <a name="auditing-labeling-activities"></a>أنشطة تسمية التدقيق
+## <a name="auditing-labeling-activities"></a>تدقيق أنشطة وضع العلامات
 
-للحصول على معلومات حول أحداث التدقيق التي يتم إنشاؤها بواسطة أنشطة تسمية الحساسية، راجع القسم أنشطة تسمية الحساسية [](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) من البحث في سجل التدقيق [في مركز التوافق](search-the-audit-log-in-security-and-compliance.md).
+للحصول على معلومات حول أحداث التدقيق التي يتم إنشاؤها بواسطة أنشطة وصف الحساسية، راجع قسم [أنشطة وصف الحساسية](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) من [البحث في سجل التدقيق في مدخل توافق Microsoft Purview](search-the-audit-log-in-security-and-compliance.md).
 
-يتم تمثيل معلومات التدقيق هذه بشكل مرئي في مستكشف [](data-classification-content-explorer.md) المحتوى ومستكشف النشاط لمساعدتك على فهم كيفية استخدام تسميات الحساسية الخاصة بك وأين يوجد هذا المحتوى المسمى.[](data-classification-activity-explorer.md) 
+يتم تمثيل معلومات التدقيق هذه بشكل مرئي في [مستكشف المحتوى](data-classification-content-explorer.md) [ومستكشف النشاط](data-classification-activity-explorer.md) لمساعدتك على فهم كيفية استخدام تسميات الحساسية ومكان وجود هذا المحتوى المسمى. 
 
-يمكنك أيضا إنشاء تقارير مخصصة باستخدام اختيارك للبرامج الخاصة بمعلومات الأمان وإدارة الأحداث (SIEM) عند تصدير سجلات سجل التدقيق [وتكوينها](export-view-audit-log-records.md). للحصول على حلول التقارير على نطاق أوسع، راجع Office 365 [API لنشاط الإدارة](/office/office-365-management-api/office-365-management-activity-api-reference).
+يمكنك أيضا إنشاء تقارير مخصصة مع اختيارك لمعلومات الأمان وبرامج إدارة الأحداث (SIEM) عند [تصدير سجلات سجل التدقيق وتكوينها](export-view-audit-log-records.md). للحصول على حلول تقارير واسعة النطاق، راجع [مرجع واجهة برمجة تطبيقات نشاط الإدارة Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
 > [!TIP]
 > للمساعدة في إنشاء تقارير مخصصة، راجع منشورات المدونة التالية:
-> - [Microsoft 365 سجل تدقيق التوافق عبر O365 Management API - الجزء 1](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
-> - [Microsoft 365 سجل تدقيق التوافق عبر O365 Management API - الجزء 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
+> - [أنشطة سجل تدقيق Microsoft Purview عبر واجهة برمجة تطبيقات إدارة O365 - الجزء 1](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
+> - [أنشطة سجل تدقيق Microsoft Purview عبر واجهة برمجة تطبيقات إدارة O365 - الجزء 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
 
 ## <a name="end-user-documentation"></a>وثائق المستخدم النهائي
 
 - [تطبيق أوصاف الحساسية على ملفاتك وبريدك الإلكتروني في Office](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [المشاكل المعروفة مع تسميات الحساسية في Office](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+    - [المشاكل المعروفة المتعلقة بتسميات الحساسية في Office](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
-- [تطبيق أو التوصية بتسميات الحساسية تلقائيا على ملفاتك ورسائل البريد الإلكتروني في Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
-    - [المشاكل المعروفة المتعلقة بتطبيق أو التوصية بتسميات الحساسية تلقائيا](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
+- [تطبيق تسميات الحساسية أو التوصية بها تلقائيا على ملفاتك ورسائل البريد الإلكتروني في Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
+    - [المشاكل المعروفة المتعلقة بتطبيق أوصاف الحساسية أو التوصية بها تلقائيا](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)

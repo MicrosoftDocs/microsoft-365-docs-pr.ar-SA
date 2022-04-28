@@ -1,8 +1,8 @@
 ---
-title: استخدم PowerShell لترحيل البريد الإلكتروني إلى Microsoft 365
+title: استخدام PowerShell لترحيل البريد الإلكتروني إلى Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 07/17/2020
 audience: Admin
 ms.topic: landing-page
@@ -16,35 +16,35 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: تعرف على كيفية ترحيل البريد الإلكتروني من النظام الحالي إلى Microsoft 365 باستخدام PowerShell.
-ms.openlocfilehash: 4b578057a4e95d1fb835c819d547fc93a970f5f2
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 26c8b6038db090559a1c3cc908689918a8c2be11
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675273"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098175"
 ---
-# <a name="how-to-use-powershell-to-migrate-email-to-microsoft-365"></a>كيفية استخدام PowerShell لترحيل البريد الإلكتروني إلى Microsoft 365
+# <a name="how-to-use-powershell-to-migrate-email-to-microsoft-365"></a>كيفية استخدام PowerShell بترحيل البريد الإلكتروني إلى Microsoft 365
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
-غالبا ما يقوم المسؤولون بترحيل البريد الإلكتروني من الأنظمة الموجودة عند إعداد البريد الإلكتروني Microsoft 365. تصف المقالات التالية كيفية ترحيل البريد الإلكتروني باستخدام Windows PowerShell:
+غالبا ما يقوم المسؤولون بترحيل البريد الإلكتروني من الأنظمة الموجودة عند إعداد Microsoft 365 لأول مرة. تصف المقالات التالية كيفية ترحيل البريد الإلكتروني باستخدام Windows PowerShell:
   
-- [استخدم PowerShell لتنفيذ عملية ترحيل كلي Microsoft 365](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md)
+- [استخدم PowerShell لإجراء ترحيل كلي إلى Microsoft 365](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md)
     
-- [استخدم PowerShell لتنفيذ عملية ترحيل IMAP Microsoft 365](use-powershell-to-perform-an-imap-migration-to-microsoft-365.md)
+- [استخدم PowerShell لإجراء ترحيل IMAP إلى Microsoft 365](use-powershell-to-perform-an-imap-migration-to-microsoft-365.md)
     
-- [استخدم PowerShell لتنفيذ عملية ترحيل مرحلي Microsoft 365](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md)
+- [استخدم PowerShell لإجراء ترحيل مرحلي إلى Microsoft 365](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md)
     
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
 [إدارة Microsoft 365 باستخدام PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[بدء العمل باستخدام PowerShell Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[بدء استخدام PowerShell ل Microsoft 365](getting-started-with-microsoft-365-powershell.md)
   
 [إدارة SharePoint باستخدام PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
-[استخدم Windows PowerShell لإنشاء تقارير في Microsoft 365](use-windows-powershell-to-create-reports-in-microsoft-365.md)
+[استخدام Windows PowerShell لإنشاء تقارير في Microsoft 365](use-windows-powershell-to-create-reports-in-microsoft-365.md)
 
-[سبب الحاجة إلى استخدام Microsoft 365 PowerShell](why-you-need-to-use-microsoft-365-powershell.md)
+[لماذا تحتاج إلى استخدام Microsoft 365 PowerShell](why-you-need-to-use-microsoft-365-powershell.md)
   
-[إدارة Microsoft 365 المستخدمين والتراخيص والمجموعات باستخدام PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[إدارة حسابات المستخدمين والتراخيص والمجموعات Microsoft 365 باستخدام PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)

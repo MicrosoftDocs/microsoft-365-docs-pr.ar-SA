@@ -2,7 +2,7 @@
 title: إيقاف تشغيل مزامنة الدليل Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,23 +20,23 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
-description: في هذه المقالة، ابحث عن معلومات حول استخدام PowerShell إيقاف تشغيل مزامنة الدليل Microsoft 365.
-ms.openlocfilehash: 83a3d66493994800a71a1910332a5eb2cdb003cd
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: في هذه المقالة، ابحث عن معلومات حول استخدام PowerShell لإيقاف تشغيل مزامنة الدليل Microsoft 365.
+ms.openlocfilehash: 5082f89032c17e549f11f8397126f6d059937c48
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63572817"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077347"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>إيقاف تشغيل مزامنة الدليل Microsoft 365
-يمكنك استخدام PowerShell إيقاف تشغيل مزامنة الدليل وتحويل المستخدمين المتزامنين إلى مجموعة النظراء فقط. ومع ذلك، من غير المستحسن إيقاف تشغيل مزامنة الدليل كخطوة استكشاف الأخطاء وإصلاحها. إذا كنت بحاجة إلى المساعدة في استكشاف الأخطاء وإصلاحها في مزامنة الدليل، فشاهد مقالة إصلاح المشاكل [المتعلقة بمزامنة الدليل Microsoft 365](fix-problems-with-directory-synchronization.md) التالية. 
+يمكنك استخدام PowerShell لإيقاف تشغيل مزامنة الدليل وتحويل المستخدمين المتزامنين إلى السحابة فقط. ومع ذلك، من غير المستحسن إيقاف تشغيل مزامنة الدليل كخطوة استكشاف الأخطاء وإصلاحها. إذا كنت بحاجة إلى مساعدة في استكشاف أخطاء مزامنة الدليل وإصلاحها، فراجع [إصلاح المشاكل المتعلقة بمزامنة الدليل لمقالة Microsoft 365](fix-problems-with-directory-synchronization.md). 
   
-[اتصل ب](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) دعم منتجات الأعمال إذا لزم الأمر.
+[اتصل بالدعم](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) لمنتجات الأعمال إذا لزم الأمر.
   
 ## <a name="turn-off-directory-synchronization"></a>إيقاف تشغيل مزامنة الدليل  
-إيقاف تشغيل مزامنة الدليل:
+لإيقاف تشغيل مزامنة الدليل:
   
-1. أولا، قم بتثبيت البرنامج المطلوب واتصل باشتراكك Microsoft 365. للحصول على الإرشادات، [راجع الاتصال مع Microsoft Azure Active Directory النمطية Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. أولا، قم بتثبيت البرنامج المطلوب والاتصال باشتراكك في Microsoft 365. للحصول على الإرشادات، راجع [الاتصال مع الوحدة النمطية Microsoft Azure Active Directory Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
 2. استخدم [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) لتعطيل مزامنة الدليل: 
     
@@ -45,5 +45,5 @@ ms.locfileid: "63572817"
   ```
 
 >[!Note]
->إذا كنت تستخدم هذا الأمر، فيجب الانتظار 72 ساعة قبل أن تتمكن من تشغيل مزامنة الدليل مرة أخرى.
+>إذا كنت تستخدم هذا الأمر، يجب الانتظار 72 ساعة قبل أن تتمكن من تشغيل مزامنة الدليل مرة أخرى.
 >

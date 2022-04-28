@@ -2,8 +2,8 @@
 title: العمل مع الاتصالات في eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: eDiscovery (Premium) يجعل من السهل إدارة سير عمل إعلام الاحتجاز القانوني حول إخطار أمناء الحفظ في التحقيقات القانونية.
-ms.openlocfilehash: bf47522809b61e377abffd742b9a4d84f7b650aa
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 59acf9dd561b46a7e7b970ffcd2c4c505f0b5a1c
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998541"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097723"
 ---
 # <a name="work-with-communications-in-ediscovery-premium"></a>العمل مع الاتصالات في eDiscovery (Premium)
 

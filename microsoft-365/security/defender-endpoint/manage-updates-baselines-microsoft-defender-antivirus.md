@@ -15,18 +15,20 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 04/11/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: cc2032c547cbd9c75a73da2f47f7baed21e7438e
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 6822f736cae73d7d4654f8b4310e0e397cffa677
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835920"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65077491"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية
+
+> [!IMPORTANT]
+> قد يكون العملاء الذين قاموا بتطبيق تحديث محرك Microsoft Defender لشهر مارس 2022 (**1.1.19100.5**) قد واجهوا استخداماً كبيراً للموارد (وحدة المعالجة المركزية و / أو الذاكرة). أصدرت Microsoft تحديثاً (**1.1.19200.5**) يعمل على حل الأخطاء التي تم تقديمها في الإصدار السابق. يوصى العملاء بالتحديث إلى هذا المحرك الجديد لمحرك مكافحة الفيروسات (**1.1.19200.5**). لضمان إصلاح أي مشكلات في الأداء بشكل كامل، يوصى بإعادة تشغيل الأجهزة بعد تطبيق التحديث. راجع [إصدارات النظام الأساسي والمحرك الشهرية](#monthly-platform-and-engine-versions) (في هذه المقالة).
 
 **ينطبق على:**
 - [Defender for Endpoint الخطة 1 و 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -37,8 +39,8 @@ ms.locfileid: "64835920"
 
 تعد المحافظة على تحديث برنامج الحماية من الفيروسات من Microsoft Defender أمرًا بالغ الأهمية لضمان حصول أجهزتك على أحدث التقنيات والميزات اللازمة للحماية من البرامج الضارة ومن تقنيات الهجوم الجديدة. تأكد من تحديث الحماية من الفيروسات، حتى إذا كان برنامج الحماية من الفيروسات من Microsoft Defender قيد التشغيل في [ الوضع الغير نشط](microsoft-defender-antivirus-compatibility.md). هناك نوعان من التحديثات المتعلقة بالحفاظ على تحديث برنامج الحماية من الفيروسات من Microsoft Defender:
 
-- تحديثات التحليل الذكي لمخاطر الأمان
-- تحديثات المنتجات
+- [تحديثات التحليل الذكي لمخاطر الأمان](#security-intelligence-updates)
+- [تحديثات المنتجات](#product-updates)
 
 > [!TIP]
 > للاطلاع على أحدث تاريخ للمحرك والأنظمة الأساسية والتوقيع، تفضل بزيارة [تحديثات معلومات الأمان برنامج الحماية من الفيروسات من Microsoft Defender وغيرها من برامج الحماية من البرامج الضارة من Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates)
@@ -88,6 +90,29 @@ ms.locfileid: "64835920"
 - تحسينات التكامل (السحابة، [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>مارس-2022 *تحديث* (النظام الأساسي: 4.18.2203.5 | المحرك: 1.1.19200.5)</summary>
+
+*قد يكون العملاء الذين قاموا بتطبيق تحديث محرك Microsoft Defender لشهر مارس 2022 (**1.1.19100.5**) قد واجهوا استخداماً كبيراً للموارد (وحدة المعالجة المركزية و / أو الذاكرة). أصدرت Microsoft تحديثاً (**1.1.19200.5**) يعمل على حل الأخطاء التي تم تقديمها في الإصدار السابق. يوصى العملاء بالتحديث إلى هذا المحرك الجديد لمحرك مكافحة الفيروسات (**1.1.19200.5**). لضمان إصلاح أي مشكلات في الأداء بشكل كامل، يوصى بإعادة تشغيل الأجهزة بعد تطبيق التحديث.*
+
+&ensp;إصدار تحديث التحليل الذكي لمخاطر الأمان: **1.363.817.0**<br/>
+&ensp;تم الإصدار: **22 أبريل 2022**<br/>
+&ensp;النظام الأساسي: **4.18.2203.5**<br/>
+&ensp;المحرك: **1.1.19200.5**<br/>
+&ensp;مرحلة الدعم: **تحديثات الأمان والتحديثات الهامة**<br/>
+
+إصدار المحرك: 1.1.19200.5 <br/>
+إصدار تحديث التحليل الذكي لمخاطر الأمان: 1.363.817.0<br/>
+
+### <a name="whats-new"></a>ما الجديد
+
+- يحل مشكلات الاستخدام المرتفع للموارد (وحدة المعالجة المركزية و / أو الذاكرة) المتعلقة بتحديث محرك Microsoft Defender السابق في مارس 2022 (1.1.19100.5)
+
+### <a name="known-issues"></a>المشاكل المعروفة
+
+لا توجد مشاكل معروفة
+
+<br/><br/>
+</details><details>
 <summary>مارس-2022 (النظام الأساسي: 4.18.2203.5 | المحرك: 1.1.19100.5)</summary>
 
 &ensp;نسخة تحديث معلومات الأمان: **1.361.1449.0**<br/>
@@ -158,9 +183,9 @@ ms.locfileid: "64835920"
 - تحسينات مراقبة السلوك في أداء التصفية
 - الصعوبة إلى TrustedInstaller
 - تحسينات الحماية من العبث
-- تم استبدال `ScanScheduleTime` بـ `ScanScheduleOffest` cmdlet جديد في [Set-MpPreference](/powershell/module/defender/set-mppreference). يقوم هذا النهج بتكوين عدد الدقائق بعد منتصف الليل لإجراء فحص مجدول.
-- تمت إضافة الإعداد `-ServiceHealthReportInterval` إلى [Set-MpPreference](/powershell/module/defender/set-mppreference). يقوم هذا النهج بتكوين الفاصل الزمني (بالدقائق) لإجراء فحص مجدول.
-- تمت إضافة الإعداد `AllowSwitchToAsyncInspection` إلى [Set-MpPreference](/powershell/module/defender/set-mppreference). يمكن هذا النهج تحسين الأداء، الذي يسمح بتدفقات الشبكة التي تم فحصها بشكل متزامن، للتبديل إلى الفحص غير المتزامن بمجرد التحقق منها والتحقق من صحتها.
+- تم `ScanScheduleTime`استبداله `ScanScheduleOffest` بـ cmdlet في [Set-MpPreference](/powershell/module/defender/set-mppreference). يعمل هذا النهج على تكوين عدد الدقائق بعد منتصف الليل لإجراء مسح ضوئي مجدول.
+- تمت إضافة `-ServiceHealthReportInterval` الإعداد إلى [ Set-MpPreference](/powershell/module/defender/set-mppreference). يقوم هذا النهج بتكوين الفاصل الزمني (بالدقائق) لإجراء مسح ضوئي مجدول.
+- تمت إضافة `AllowSwitchToAsyncInspection`الإعداد إلى [Set-MpPreference](/powershell/module/defender/set-mppreference). يمكن هذا النهج تحسين الأداء، الذي يسمح بتدفقات الشبكة التي تم فحصها بشكل متزامن، للتبديل إلى الفحص غير المتزامن بمجرد التحقق منها والتحقق من صحتها.
 - تحديثات محلل الأداء v2: تمت إضافة دعم PowerShell عن بُعد و PowerShell 7.x. راجع [محلل الأداء ل برنامج الحماية من الفيروسات من Microsoft Defender](tune-performance-defender-antivirus.md).
 - تم إصلاح أخطاء الحزمة المكررة المحتملة في برنامج تشغيل نظام فحص الشبكة برنامج الحماية من الفيروسات من Microsoft Defender.
 
@@ -465,7 +490,7 @@ ms.locfileid: "64835920"
 - مراقبة السلوك المحسنة لمسح الذاكرة
 - فحص بث الماكرو المحسنة
 - تمت إضافة `AMRunningMode` إلى Get-MpComputerStatus PowerShell cmdlet
-- يتم تجاهل [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware). برنامج الحماية من الفيروسات من Microsoft Defender إيقاف تشغيل نفسه تلقائيًا عند الكشف عن برنامج آخر للحماية من الفيروسات.
+- يتم تجاهل [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware). برنامج الحماية من الفيروسات من Microsoft Defender إيقاف تشغيل نفسه تلقائياً عند الكشف عن برنامج آخر للحماية من الفيروسات.
 
 
 ### <a name="known-issues"></a>المشاكل المعروفة
@@ -691,7 +716,7 @@ Platform/Client: **4.18.2001.10**<br/>
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>تحديثات Deployment Image Servicing and Management (DISM)
 
-نوصي بتحديث صور تثبيت Windows 10 (إصدارات Enterprise و Pro و Home) و Windows Server 2019 و Windows Server 2022 و Windows Server 2016 OS بأحدث تحديثات الحماية من الفيروسات والبرامج الضارة. يساعد الاحتفاظ بصور تثبيت نظام التشغيل محدثة في تجنب وجود تباعد في الحماية.
+نوصي بتحديث صور تثبيت نظام التشغيل Windows 10 (Enterprise وPro وHome) وWindows Server 2019 وWindows Server 2022 و Windows Server 2016 بأحدث تحديثات برامج مكافحة الفيروسات والبرامج الضارة. يساعد الحفاظ على تحديث صور تثبيت نظام التشغيل على تجنب وجود فجوة في الحماية.
 
 لمزيد من المعلومات، راجع [تحديث Microsoft Defender لصور تثبيت نظام التشغيل Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 

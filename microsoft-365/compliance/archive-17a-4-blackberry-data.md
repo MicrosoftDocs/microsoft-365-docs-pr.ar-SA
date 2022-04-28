@@ -2,8 +2,8 @@
 title: إعداد موصل أرشفة بيانات BlackBerry في Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل BlackBerry DataParser 17a-4 واستخدامه لاستيراد بيانات BlackBerry وأرشفتها في Microsoft 365.
-ms.openlocfilehash: b75d91db9458a31156e9508cc2ddb8cc0da46076
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 93b876a8091007d99584269c7d9b3114b72d18fe
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995789"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098053"
 ---
 # <a name="set-up-a-connector-to-archive-blackberry-data"></a>إعداد موصل أرشفة بيانات BlackBerry
 

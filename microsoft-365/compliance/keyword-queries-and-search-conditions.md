@@ -2,8 +2,8 @@
 title: استعلامات الكلمات الأساسية وشروط البحث في eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على خصائص البريد الإلكتروني والمستند التي يمكنك البحث عنها باستخدام أدوات البحث eDiscovery في Microsoft 365.
-ms.openlocfilehash: f00d257a558d252ca0176166d42d02cd72dad0aa
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2961ab22c5890fa13aa17b4cdaf0dbbf47045c68
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995371"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098527"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>استعلامات الكلمات الأساسية وشروط البحث في eDiscovery
 

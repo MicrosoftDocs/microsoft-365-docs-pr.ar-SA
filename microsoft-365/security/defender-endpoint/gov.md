@@ -16,17 +16,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32baee17e01aa4223124e21b7d20c219c0dc4b7f
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 51f9c373a68e34ffafa5c3763b8efe77fa2c6146
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841852"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098725"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender لنقطة النهاية لعملاء الحكومة الأمريكية
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 تستخدم Microsoft Defender لنقطة النهاية لعملاء حكومة الولايات المتحدة، المضمنة في بيئة Azure US Government، نفس التقنيات الأساسية مثل Defender لنقطة النهاية في Azure Commercial.
@@ -78,7 +78,7 @@ ms.locfileid: "64841852"
 |---|---|
 |سحابة القطاع الحكومي|<https://security.microsoft.com>|
 |سحابة القطاع الحكومي عالية|<https://security.microsoft.us>|
-|وزاره الدفاع|<https://security.microsoft.us>|
+|وزاره الدفاع|<https://security.apps.mil>|
 |
 > [!NOTE]
 > إذا كنت عميلا سحابة القطاع الحكومي وتنتقل من Microsoft Defender لنقطة النهاية تجاري إلى سحابة القطاع الحكومي، فاستخدمه https://transition.security.microsoft.com للوصول إلى بياناتك التجارية Microsoft Defender لنقطة النهاية.

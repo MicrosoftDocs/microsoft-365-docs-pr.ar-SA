@@ -2,8 +2,8 @@
 title: إمكانية توسعة Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على توسيع حلول Microsoft Purview باستخدام موصلات بيانات تابعة لجهة خارجية وMicrosoft Graph واجهات برمجة التطبيقات.
-ms.openlocfilehash: 9d2c3235a29e2d25e24656a4ff94216cde925b6c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1be4ae739681e9c694c6f30097c62de3f5627d06
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992249"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65098835"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>إمكانية توسعة Microsoft Purview وMicrosoft Priva
 

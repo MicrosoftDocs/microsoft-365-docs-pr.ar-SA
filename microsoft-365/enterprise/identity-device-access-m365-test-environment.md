@@ -1,10 +1,10 @@
 ---
-title: الوصول إلى الهوية والجهاز لبيئة Microsoft 365 الاختبار
+title: الوصول إلى الهوية والجهاز لبيئة اختبار Microsoft 365
 author: kelleyvice-msft
 f1.keywords:
 - NOCSH
 ms.author: kvice
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,38 +13,38 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: أنشئ Microsoft 365 اختبار الهوية والوصول إلى الجهاز.
-ms.openlocfilehash: 488bd22b555ab30a27e0d9c8ef662af1b6945da9
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+description: إنشاء بيئة Microsoft 365 لاختبار الهوية والوصول إلى الجهاز.
+ms.openlocfilehash: 09c7bf9ecb6aaadc89cedfd881e66a5fd19f28d7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63566081"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65091204"
 ---
-# <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>الوصول إلى الهوية والجهاز لبيئة Microsoft 365 الاختبار
+# <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>الوصول إلى الهوية والجهاز لبيئة اختبار Microsoft 365
 
-*يمكن استخدام دليل Test Lab هذا فقط Microsoft 365 لبيئات اختبار المؤسسة.*
+*يمكن استخدام دليل مختبر الاختبار هذا فقط Microsoft 365 لبيئات اختبار المؤسسة.*
 
-[تكوينات](../security/office-365-security/microsoft-365-policies-configurations.md) الوصول إلى الأجهزة والهوية هي مجموعة من التكوينات الموصى بها ونهج الوصول الشرطي لحماية الوصول إلى جميع الخدمات المتكاملة مع Azure Active Directory (Azure AD).
+[تكوينات الوصول إلى الهوية والجهاز](../security/office-365-security/microsoft-365-policies-configurations.md) هي مجموعة من التكوينات الموصى بها ونهج الوصول المشروط لحماية الوصول إلى جميع الخدمات المدمجة مع Azure Active Directory (Azure AD).
 
-لإنشاء بيئة اختبار لها تكوينات الوصول إلى الأجهزة والهوية المشتركة في مكانها:
+لإنشاء بيئة اختبار تحتوي على تكوينات الوصول إلى الأجهزة والهوية الشائعة في مكانها:
 
-1. قم بتكوين بيئة الاختبار باستخدام ميزات الأمان وهوية المتطلبات الأساسية استنادا إلى اختيارك لنموذج الهوية وطريقة المصادقة:
+1. تكوين بيئة الاختبار الخاصة بك مع هوية المتطلبات الأساسية وميزات الأمان استنادا إلى اختيارك لنموذج الهوية وأسلوب المصادقة:
 
   - [السحابة فقط](cloud-only-prereqs-m365-test-environment.md)
-  - [مزامنة كلمة المرور (PHS)](phs-prereqs-m365-test-environment.md)
-  - [المصادقة المرورية (PTA)](pta-prereqs-m365-test-environment.md)
+  - [مزامنة تجزئة كلمة المرور (PHS)](phs-prereqs-m365-test-environment.md)
+  - [المصادقة التمريرية (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. استخدم [سياسات الوصول](../security/office-365-security/identity-access-policies.md) إلى الأجهزة والهوية الشائعة لتكوين النهج التي تقوم على المتطلبات الأساسية التي تم تكوينها لبيئة الاختبار واستكشاف حماية الهويات والأجهزة والتحقق منها.
+2. استخدم [نهج الوصول إلى الأجهزة والهوية الشائعة](../security/office-365-security/identity-access-policies.md) لتكوين النهج التي تعتمد على المتطلبات الأساسية التي تم تكوينها لبيئة الاختبار الخاصة بك واستكشاف الحماية للهويات والأجهزة والتحقق منها.
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[دليل اختبار الهوية الإضافية](m365-enterprise-test-lab-guides.md#identity)
+[دلائل مختبر اختبار الهوية الإضافية](m365-enterprise-test-lab-guides.md#identity)
 
 [نشر الهوية](deploy-identity-solution-overview.md)
 
-[Microsoft 365 دليل اختبار المؤسسة](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 لدلائل مختبر اختبار المؤسسة](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 نظرة عامة حول المؤسسة](microsoft-365-overview.md)
+[نظرة عامة حول Microsoft 365 للمؤسسات](microsoft-365-overview.md)
 
-[Microsoft 365 وثائق المؤسسة](/microsoft-365-enterprise/)
+[موارد ووثائق Microsoft 365 للمؤسسات](/microsoft-365-enterprise/)
