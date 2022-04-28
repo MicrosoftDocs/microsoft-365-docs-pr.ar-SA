@@ -2,8 +2,8 @@
 title: استيراد جهات اتصال خارجية بشكل مجمع إلى Exchange Online
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 6/29/2018
 audience: End User
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 ms.custom: admindeeplinkEXCHANGE
 description: تعرف على كيفية استخدام المسؤولين Exchange Online PowerShell وملف CSV لاستيراد جهات الاتصال الخارجية بشكل مجمع إلى قائمة العناوين العمومية.
-ms.openlocfilehash: a85d24a4b20798df057250d9114f97563a6a8e2d
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 5e80453326159010aaae81a8b810396f5a7294cf
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999289"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093537"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>استيراد جهات اتصال خارجية بشكل مجمع إلى Exchange Online
 

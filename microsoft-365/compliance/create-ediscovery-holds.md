@@ -2,8 +2,8 @@
 title: إنشاء قوائم احتجاز eDiscovery في حالة eDiscovery (قياسي)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: يمكنك إنشاء احتجاز مقترن بحالة eDiscovery (قياسي) في Microsoft 365 للحفاظ على المحتوى ذي الصلة بالتحقيق أو الدعوى القانونية.
-ms.openlocfilehash: 87a75923ccc270e7b9802ae5d366dd2930a84d82
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: e91e67b39a160de99856d73af8da6ab17d1d6fba
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001225"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095001"
 ---
 # <a name="create-an-ediscovery-hold"></a>إنشاء قائمة احتجاز eDiscovery
 

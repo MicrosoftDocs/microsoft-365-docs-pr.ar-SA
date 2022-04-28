@@ -17,25 +17,23 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs)، تعرف على كيفية مساعدة Microsoft 365 Lighthouse في تأمين مستأجري العملاء وإدارتهم في موقع واحد.
-ms.openlocfilehash: 96ae7647107a1be89d9fe4d800374ce8a8970cb8
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 9a75cd43ac09d63c4524495a3146bf0b860627a4
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023624"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094671"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>نظرة عامة على Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع لعملاء الأعمال الصغيرة والمتوسطة الحجم (SMB) الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. 
+Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع لعملاء الأعمال الصغيرة والمتوسطة الحجم (SMB) الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3.
 
-تعمل Lighthouse على تبسيط إعداد المستأجرين Microsoft 365 Business Premium Microsoft 365 E3 Windows 365 Business من خلال التوصية بخطوط أساسية لتكوين الأمان مصممة خصيصا لعملاء SMB وتوفير طرق عرض متعددة المستأجرين عبر جميع بيئات العملاء. مع Lighthouse، يمكن ل MSPs توسيع نطاق إدارة عملائها، والتركيز على ما هو أكثر أهمية، والبحث عن المخاطر والتحقيق فيها بسرعة، واتخاذ إجراءات لجعل عملائهم في حالة سليمة وآمنة.
+تعمل Lighthouse على تبسيط إلحاق مستأجري العملاء من خلال التوصية بخطوط أساسية لتكوين الأمان مصممة خصيصا لعملاء SMB وتوفير طرق عرض متعددة المستأجرين عبر جميع بيئات العملاء. مع Lighthouse، يمكن ل MSPs توسيع نطاق إدارة عملائها، والتركيز على ما هو أكثر أهمية، والبحث عن المخاطر والتحقيق فيها بسرعة، واتخاذ إجراءات لجعل عملائهم في حالة سليمة وآمنة.
 
-لا ترتبط أي تكاليف إضافية باستخدام Lighthouse لإدارة خدمات Microsoft 365 والأجهزة المتصلة. تتوفر Lighthouse ل MSPs المسجلين في برنامج Cloud Solution Provider (CSP) وتخدم عملاء SMB مع اشتراك Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business.
-
-يتم دعم استخدام Lighthouse من قبل شركاء قناة Microsoft CSP الذين لديهم عملاء يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. يشمل ذلك معالجة شركاء موفر الخدمات المشتركة (CSP) مباشرة مع Microsoft وتلك المعاملات من خلال موفر غير مباشر (موزع). 
+لا ترتبط أي تكاليف إضافية باستخدام Lighthouse لإدارة خدمات Microsoft 365 والأجهزة المتصلة. يتوفر Lighthouse ل MSPs المسجلين في برنامج Cloud Solution Provider (CSP) الذي يقوم بخدمة عملاء SMB. يشمل ذلك معالجة شركاء موفر الخدمات المشتركة (CSP) مباشرة مع Microsoft وتلك المعاملات من خلال موفر غير مباشر (موزع).
 
 > [!IMPORTANT] 
-> لاستخدام Lighthouse، يجب أن تفي MSPs ومستأجرو العملاء بالمتطلبات المدرجة في [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).     
+> لاستخدام Lighthouse، يجب أن تفي MSPs ومستأجرو العملاء بالمتطلبات المدرجة في [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
 لمزيد من المعلومات حول برنامج CSP، راجع [نظرة عامة على برنامج Cloud Solution Provider](/partner-center/csp-overview).
 

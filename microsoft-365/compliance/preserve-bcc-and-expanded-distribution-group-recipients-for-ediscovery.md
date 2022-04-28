@@ -2,8 +2,8 @@
 title: الحفاظ على نسخة مخفية ومستلمي مجموعة التوزيع الموسعة ل eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: 6/19/2017
 audience: ITPro
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: تسمح لك نهج الاحتجاز In-Place والتقاضي والاحتفاظ Microsoft 365 بالحفاظ على محتوى علبة البريد لتلبية متطلبات التوافق التنظيمي ومتطلبات eDiscovery.
-ms.openlocfilehash: 4c3c7b7be98959011473eeafc85f40b19be82fdc
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 1a9ac5e19350fd2a98ecc20e94dcdcdcc84a71c7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998476"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093010"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>الحفاظ على نسخة مخفية ومستلمي مجموعة التوزيع الموسعة ل eDiscovery
 

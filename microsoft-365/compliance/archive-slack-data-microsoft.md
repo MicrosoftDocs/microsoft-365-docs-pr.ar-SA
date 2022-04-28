@@ -2,8 +2,8 @@
 title: أرشفة بيانات Slack eDiscovery Microsoft 365 باستخدام موصل بيانات توفره Microsoft
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل بيانات Slack eDiscovery الذي توفره Microsoft واستخدامه لاستيراد بيانات المراسلة الفورية وأرشفتها.
-ms.openlocfilehash: 418cbbd67444992f366ad5366258e0ea8eccc503
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: dc63673ae51d4ea47931a8a27acd7ef2191397d7
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64992315"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093076"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>إعداد موصل إلى أرشفة بيانات Slack eDiscovery (معاينة)
 

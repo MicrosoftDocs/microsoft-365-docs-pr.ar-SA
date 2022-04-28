@@ -1,5 +1,5 @@
 ---
-title: تكوين تكامل Microsoft 365 مع رمز Azure AD Auth المميز
+title: تكوين تكامل دعم Microsoft 365 مع Azure AD Auth Token
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -16,87 +16,87 @@ ms.custom: AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
-description: دليل تكوين وتثبيت تطبيق معتمد النطاق ل ServiceNow.
-ms.openlocfilehash: 9f9985e07989f168f9b27dde1c1d574813c3f349
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: تثبيت التطبيق المعتمد على نطاق ودليل التكوين ل ServiceNow.
+ms.openlocfilehash: d3991355779228cf1562e23ddd0e97cb37225a43
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63575112"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093735"
 ---
-# <a name="configure-microsoft-365-support-integration-with-azure-ad-auth-token"></a>تكوين تكامل Microsoft 365 مع رمز Azure AD Auth المميز
+# <a name="configure-microsoft-365-support-integration-with-azure-ad-auth-token"></a>تكوين تكامل دعم Microsoft 365 مع Azure AD Auth Token
 
-## <a name="prerequisites-azure-ad-auth-token"></a>المتطلبات الأساسية (رمز Azure AD Auth المميز)
+## <a name="prerequisites-azure-ad-auth-token"></a>المتطلبات الأساسية (الرمز المميز لمصادقة Azure AD)
 
-هذه المتطلبات الأساسية ضرورية لإعداد Microsoft 365 الدعم.
+هذه المتطلبات الأساسية ضرورية لإعداد تكامل دعم Microsoft 365.
 
-1. \[AAD (دليل Azure النشط) المسؤول\] إنشاء تطبيق Azure AD للداخل ضمن Microsoft 365 المستأجر.
+1. \[مسؤول\] AAD (دليل Azure النشط) إنشاء تطبيق Azure AD ل Outbound ضمن مستأجر Microsoft 365 الخاص بك.
 
-    1. سجل دخولك إلى مدخل Azure باستخدام Microsoft 365 بيانات اعتماد المستأجر واذهب إلى صفحة تسجيلات التطبيق لإنشاء [](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) تطبيق جديد.
+    1. سجل الدخول إلى مدخل Microsoft Azure باستخدام بيانات اعتماد المستأجر Microsoft 365 وانتقل إلى [صفحة تسجيلات التطبيق](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) لإنشاء تطبيق جديد.
 
-    2. حدد **الحسابات في دليل المؤسسة هذا فقط ({Microsoft-365-tenant-name} فقط – مستأجر واحد)** وحدد **تسجيل**.
+    2. حدد **الحسابات في دليل المؤسسة هذا فقط ({Microsoft-365-tenant-name} فقط – مستأجر واحد)** وحدد **"Register**".
 
-        :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image3.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image3.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+        :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image3.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image3.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-1. انتقل إلى **المصادقة** وحدد **إضافة نظام أساسي**. حدد خيار **ويب** وأدخل عنوان URL لإعادة التوجيه: `https://{your-servicenow-instance``}.service-now.com/auth_redirect.do`
+1. انتقل إلى **المصادقة** وحدد **"إضافة نظام أساسي**". حدد خيار **ويب** وأدخل عنوان URL لإعادة التوجيه: `https://{your-servicenow-instance``}.service-now.com/oauth_redirect.do`
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image4.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image4.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image4.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image4.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-1. احصل على "معر ة عميل التطبيق" وأنشئ سريا للعميل واحصل على تلك القيمة.
+1. احصل على معرف عميل التطبيق وأنشئ سر العميل واحصل على هذه القيمة.
 
-1. \[AAD (دليل Azure النشط) المسؤول\] قم بإنشاء تطبيق Azure AD ل API Rest ضمن Microsoft 365 المستأجر.
+1. \[مسؤول\] AAD (دليل Azure النشط) إنشاء تطبيق Azure AD ل Rest API ضمن مستأجر Microsoft 365 الخاص بك.
 
-    1. سجل دخولك إلى [مدخل Azure](https://portal.azure.com/) باستخدام بيانات Microsoft 365 المستأجر واذهب إلى صفحة تسجيلات التطبيق لإنشاء تطبيق جديد.
+    1. سجل الدخول إلى [مدخل Microsoft Azure](https://portal.azure.com/) باستخدام بيانات اعتماد المستأجر Microsoft 365 وانتقل إلى صفحة تسجيلات التطبيق لإنشاء تطبيق جديد.
 
-    1. حدد **الحسابات في دليل المؤسسة هذا فقط {(Microsoft-365-tenant-name} فقط – مستأجر واحد)**.
+    1. حدد **الحسابات في دليل المؤسسة هذا فقط {(Microsoft-365-tenant-name} فقط – مستأجر واحد).**
 
-        :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image22.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image22.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+        :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image22.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image22.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-1. احصل على "معر ة عميل التطبيق" وأنشئ سريا للعميل واحصل على تلك القيمة.
+1. احصل على معرف عميل التطبيق وأنشئ سر العميل واحصل على هذه القيمة.
 
-1. \[AAD (دليل Azure النشط) المسؤول\] إنشاء تطبيق Azure AD لمستخدم Rest User ضمن Microsoft 365 المستأجر.
+1. \[مسؤول\] AAD (دليل Azure النشط) إنشاء تطبيق Azure AD لمستخدم Rest ضمن مستأجر Microsoft 365 الخاص بك.
 
-    1. سجل دخولك إلى [مدخل Azure](https://portal.azure.com/) باستخدام بيانات Microsoft 365 المستأجر واذهب إلى صفحة تسجيلات التطبيق لإنشاء تطبيق جديد.
+    1. سجل الدخول إلى [مدخل Microsoft Azure](https://portal.azure.com/) باستخدام بيانات اعتماد المستأجر Microsoft 365 وانتقل إلى صفحة تسجيلات التطبيق لإنشاء تطبيق جديد.
 
-    1. حدد **الحسابات في دليل المؤسسة هذا فقط {(Microsoft-365-tenant-name} فقط – مستأجر واحد)**.
+    1. حدد **الحسابات في دليل المؤسسة هذا فقط {(Microsoft-365-tenant-name} فقط – مستأجر واحد).**
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image23.png" lightbox="../../media/ServiceNow-guide/ServiceNow-guide-image23.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image23.png" lightbox="../../media/ServiceNow-guide/ServiceNow-guide-image23.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-1. احصل على "معر ة عميل التطبيق" وأنشئ سريا للعميل واحصل على تلك القيمة.
+1. احصل على معرف عميل التطبيق وأنشئ سر العميل واحصل على هذه القيمة.
 
-1. \[ServiceNow Admin قم\] بإعداد موفر OAuth الصادر في ServiceNow.
+1. \[إعداد ServiceNow Admin\] موفر OAuth الصادر في ServiceNow.
 
-    إذا لم يتم تعيين النطاق إلى **عام****&gt;، ففعل ذلك عن طريق الانتقال إلى الإعدادات المطور &gt;** والتبديل إلى **Global**.
+    إذا لم يتم تعيين النطاق إلى **Global**، فقم بذلك بالانتقال إلى **الإعدادات &gt; Developer &gt; Applications** والتبديل إلى **Global**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="واجهة مستخدم رسومية أو نص أو تطبيق أو دردشة أو رسالة نصية يتم إنشاء الوصف تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="واجهة مستخدم رسومية أو نص أو تطبيق أو دردشة أو وصف رسالة نصية تم إنشاؤه تلقائيا":::
 
 1. انتقل إلى **System OAuth &gt; Application Registry**.
 
-1. أنشئ تطبيقا جديدا باستخدام الاتصال **إلى موفر OAuth** جهة خارجية وأدخل هذه القيم:
+1. إنشاء تطبيق جديد باستخدام **الاتصال إلى خيار موفر OAuth تابع لجهة خارجية** وإدخال هذه القيم:
 
-    - "معرّف العميل": هذا هو "المليكن العميل" للتطبيق الذي تم إنشاؤه في الخطوة 1 من المتطلبات الأساسية (رمز Azure AD Auth المميز \#).
+    - معرف العميل: هذا هو معرف العميل للتطبيق الذي تم إنشاؤه في الخطوة \#1 من المتطلبات الأساسية (Azure AD Auth Token).
 
-    - سرية العميل: هذه هي القيمة "سرية العميل" للتطبيق الذي تم إنشاؤه في الخطوة 1 من المتطلبات الأساسية (رمز Azure AD Auth المميز \#).
+    - سر العميل: هذه هي قيمة سر العميل للتطبيق الذي تم إنشاؤه في الخطوة \#1 من المتطلبات الأساسية (Azure AD Auth Token).
 
     - نوع المنحة الافتراضية: بيانات اعتماد العميل
 
-    - عنوان URL الرمز المميز: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
+    - URL الرمز المميز: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - عنوان URL إعادة التوجيه: `https://{service-now-instance-name``}.service-now.com/auth_redirect.do`
+    - عنوان URL لإعادة التوجيه: `https://{service-now-instance-name``}.service-now.com/oauth_redirect.do`
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image6.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image6.png" alt-text="واجهة مستخدم رسومية، يتم إنشاء وصف التطبيق تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image6.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image6.png" alt-text="واجهة مستخدم رسومية، تم إنشاء وصف التطبيق تلقائيا":::
 
 1. \[ServiceNow Admin\] لتكوين موفر OIDC في ServiceNow، راجع [الوثائق عبر الإنترنت](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html).
 
-    إذا لم يتم تعيين النطاق إلى **عام**، **فاذهب &gt; إلى الإعدادات المطور &gt;** والتبديل إلى **عام**.
+    إذا لم يتم تعيين النطاق إلى **Global**، فانتقل إلى **الإعدادات &gt; Developer &gt; Applications** وقم بالتبديل إلى **Global**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="واجهة مستخدم رسومية أو نص أو تطبيق أو دردشة أو رسالة نصية يتم إنشاء الوصف تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image5.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image5.png" alt-text="واجهة مستخدم رسومية أو نص أو تطبيق أو دردشة أو وصف رسالة نصية تم إنشاؤه تلقائيا":::
 
 1. انتقل إلى **System OAuth &gt; Application Registry**.
 
-1. حدد **جديد**، ثم حدد **إنشاء "فتح الموفر**" الاتصال جديد.
+1. حدد **"جديد**"، ثم حدد **"Create open ID الاتصال Provider**".
 
-1. في **تكوين موفر OAuth OIDC**، حدد **البحث وإنشاء تكوين** موفر OIDC جديد ضمن **oidcproviderconfiguration.list\_\_** باستخدام هذه القيم:
+1. في **تكوين موفر OAuth OIDC**، حدد **Search** وقم بإنشاء تكوين موفر OIDC جديد ضمن **oidcproviderconfiguration.list\_\_** مع هذه القيم:
 
     - موفر OIDC: **{TenantName\_} Azure** (مثال: Contoso Azure)
 
@@ -104,35 +104,35 @@ ms.locfileid: "63575112"
 
     - UserClaim: **appid**
 
-    - UserField: **User ID**
+    - UserField: **معرف المستخدم**
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image24.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image24.png" alt-text="واجهة مستخدم رسومية، نص، وصف تطبيق يتم إنشاؤه تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image24.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image24.png" alt-text="واجهة المستخدم الرسومية، النص، وصف التطبيق التي تم إنشاؤها تلقائيا":::
 
-1. قم بإنشاء تطبيق جديد عن طريق تحديد **تكوين موفر OIDC** للتحقق من الرموز المميزة للم ID باستخدام هذه القيم:
+1. إنشاء تطبيق جديد عن طريق تحديد **تكوين موفر OIDC للتحقق من الرموز المميزة للمعرف** باستخدام هذه القيم:
 
     - الاسم: **{TenantName\_}\_applicationinboundapi\_\_** (مثال: contosoapplicationinboundapi\_\_\_)
 
-    - "معرّف العميل": هو "معرّف العميل" للتطبيق الذي تم إنشاؤه في الخطوة 2 من المتطلبات الأساسية (رمز Azure AD Auth المميز \#).
+    - معرف العميل: معرف العميل للتطبيق الذي تم إنشاؤه في الخطوة \#3 من المتطلبات الأساسية (Azure AD Auth Token).
 
-    - سرية العميل: سرية التطبيق للتطبيق الذي تم إنشاؤه في الخطوة 2 من المتطلبات الأساسية (رمز Azure AD Auth المميز \#).
+    - سر العميل: سر التطبيق للتطبيق الذي تم إنشاؤه في الخطوة \#3 من المتطلبات الأساسية (Azure AD Auth Token).
 
-    - تكوين موفر OAuth OIDC: موفر OIDC الذي تم إنشاؤه في الخطوة السابقة
+    - تكوين موفر OAuth OIDC: تم إنشاء موفر OIDC في الخطوة السابقة
 
-    - عنوان URL إعادة التوجيه: `https://{service-now-instance-name}.service-now.com/oauth\_redirect.do`
+    - عنوان URL لإعادة التوجيه: `https://{service-now-instance-name}.service-now.com/oauth\_redirect.do`
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image25.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image25.png" alt-text="واجهة مستخدم رسومية، يتم إنشاء وصف التطبيق تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image25.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image25.png" alt-text="واجهة مستخدم رسومية، تم إنشاء وصف التطبيق تلقائيا":::
 
-1. \[ServiceNow Admin Create\] Integration Users.
+1. \[يقوم مسؤول\] ServiceNow بإنشاء مستخدمي التكامل.
 
-    يجب تحديد مستخدم تكامل. إذا لم يكن **&gt;** لديك مستخدم تكامل موجود أو إذا كنت تريد إنشاء مستخدم خاص بهذا التكامل، فاذهب إلى مستخدمو المؤسسة لإنشاء مستخدم جديد. إن قيمة " **تعريف** المستخدم" هي التطبيق "تعريف العميل" الذي تم إنشاؤه في المتطلبات الأساسية [(رمز Azure AD Auth المميز)](#prerequisites-azure-ad-auth-token).
+    يجب تحديد مستخدم تكامل. إذا لم يكن لديك مستخدم تكامل موجود أو إذا كنت تريد إنشاء مستخدم خاص لهذا التكامل، فانتقل إلى **"مستخدمو المؤسسة&gt;**" لإنشاء مستخدم جديد. The value of the **User ID** is the application Client ID created in [Prerequisites (Azure AD Auth Token)](#prerequisites-azure-ad-auth-token).
 
-    إذا كنت تقوم بإنشاء مستخدم تكامل جديد، فتحقق من خيار الوصول **إلى خدمة ويب** فقط. يجب أيضا منح هذا المستخدم دور **incidentmanager\_**.
+    إذا كنت تقوم بإنشاء مستخدم تكامل جديد، فتحقق من خيار **الوصول إلى خدمة ويب فقط** . يجب عليك أيضا منح هذا المستخدم دور **incidentmanager\_**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image26.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image26.png" alt-text="واجهة مستخدم رسومية، يتم إنشاء وصف التطبيق تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image26.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image26.png" alt-text="واجهة مستخدم رسومية، تم إنشاء وصف التطبيق تلقائيا":::
 
-## <a name="optional-allow-the-services-ip-addresses-to-microsoft-365-support-integration"></a>\[اختياري\] السماح لتكامل دعم عناوين IP Microsoft 365 الخدمة
+## <a name="optional-allow-the-services-ip-addresses-to-microsoft-365-support-integration"></a>\[اختياري\] السماح لعناوين IP للخدمة Microsoft 365 دعم التكامل
 
-إذا كانت شركتك تعمل على تقييد الوصول إلى الإنترنت باستخدام سياساتك الخاصة، فمكن الوصول إلى الشبكة لخدمة تكامل دعم Microsoft 365 من خلال السماح عناوين IP أدناه بالوصول إلى كل من API الواردة والداخلة.
+إذا كانت شركتك تحد من الوصول إلى الإنترنت من خلال نهجك الخاصة، فتمكن من الوصول إلى الشبكة لخدمة Microsoft 365 دعم التكامل من خلال السماح بعناوين IP أدناه للوصول إلى كل من واجهة برمجة التطبيقات الواردة والصادرة.
 
 - 52.149.152.32
 
@@ -147,109 +147,109 @@ ms.locfileid: "63575112"
 - 20.105.151.142
 
 > [!NOTE]
-> يسرد أمر المحطة الطرفية هذا جميع IPs النشطة للخدمة Microsoft 365 تكامل الدعم:`nslookup`` connector.rave.microsoft.com`
+> يسرد أمر المحطة الطرفية هذا كافة عناوين IP النشطة للخدمة Microsoft 365 تكامل الدعم:`nslookup`` connector.rave.microsoft.com`
 
-## <a name="configure-the-microsoft-365-support-integration-application"></a>تكوين تطبيق Microsoft 365 تكامل الدعم
+## <a name="configure-the-microsoft-365-support-integration-application"></a>تكوين تطبيق تكامل دعم Microsoft 365
 
-يمكن Microsoft 365 تطبيق تكامل الدعم ضمن Microsoft 365 الدعم.
+يمكن إعداد تطبيق تكامل دعم Microsoft 365 ضمن دعم Microsoft 365.
 
-هذه الخطوات مطلوبة لإعداد التكامل بين مثيل ServiceNow Microsoft 365 الدعم.
+هذه الخطوات مطلوبة لإعداد التكامل بين مثيل ServiceNow ودعم Microsoft 365.
 
-1. \[ServiceNow Admin\] قم **بتبديل النطاق Microsoft 365 تكامل الدعم**.
+1. \[ServiceNow Admin\] Switch the scope to **Microsoft 365 support integration**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="واجهة مستخدم رسومية، يتم إنشاء وصف الجدول تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="واجهة مستخدم رسومية، تم إنشاء وصف الجدول تلقائيا":::
 
-1. \[ServiceNow Admin\] انتقل إلى Microsoft 365 **إعداد &gt; الدعم** لفتح سير عمل التكامل.
+1. \[انتقل مسؤول\] ServiceNow إلى **إعداد دعم &gt; Microsoft 365** لفتح سير عمل التكامل.
 
     > [!NOTE]
-    > إذا رأيت رسالة الخطأ "تم رفض عملية القراءة مقابل 'oauthentity\_' من النطاق 'xmiomsm365\_\_\_،' بسبب نهج الوصول عبر النطاقات في الجدول،" فقد حدث ذلك بسبب نهج الوصول إلى الجدول. يجب التأكد من **تحديد كافة نطاقات التطبيقات التي &gt;** يمكن قراءتها ل oauthentity\_ في الجدول.
+    > إذا رأيت الخطأ "تم رفض عملية القراءة مقابل "oauthentity\_" من النطاق "xmiomsm365assis\_\_\_" بسبب نهج الوصول عبر النطاق للجدول،" فقد حدث ذلك بسبب نهج الوصول إلى الجدول. يجب التأكد من تحديد **كافة نطاقات التطبيق التي &gt; يمكن قراءتها** للكيان oauthentity\_ للجدول.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image27.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image27.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image27.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image27.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-1. \[ServiceNow Admin Select\] **أوافق** على مطالبة الموافقة للمتابعة.
+1. \[ServiceNow Admin\] Select **Agree** to the consent prompt to continue.
 
-    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-1.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-1.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-1.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-1.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-1. \[ServiceNow Admin\] تكوين البيئة ونوع الإعداد.
-    إذا كان هذا التثبيت في بيئة اختبار، فحدد الخيار هذه بيئة اختبار. وستتمكن من تعطيل هذا الخيار بسرعة بعد الإعداد وستكتمل جميع الاختبارات في وقت لاحق.
-    إذا كان المثيل يسمح بالمصادقة الأساسية للاتصالات الواردة، فحدد نعم وحدد عملية إعداد [المصادقة الأساسية](servicenow-basic-authentication.md). بخلاف ذلك، حدد **لا** وانقر **فوق بدء الإعداد**. 
-      :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-2.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-2.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+1. \[يقوم مسؤول\] ServiceNow بتكوين البيئة ونوع الإعداد.
+    إذا كان هذا التثبيت في بيئة اختبار، فحدد الخيار "هذه بيئة اختبار". ستتمكن من تعطيل هذا الخيار بسرعة بعد الإعداد وإكمال جميع الاختبارات في وقت لاحق.
+    إذا كان المثيل الخاص بك يسمح بالمصادقة الأساسية للاتصالات الواردة، فحدد "نعم" وراجع [عملية إعداد Basic Auth](servicenow-basic-authentication.md). وإلا، فحدد **"لا** " وانقر فوق **"بدء الإعداد**". 
+      :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-2.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-2.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-1. \[ServiceNow Admin\] أدخل مجال المستأجر Microsoft 365 المستأجر الخاص بك.
-     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-3.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-3.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+1. \[أدخل مسؤول\] ServiceNow مجال المستأجر Microsoft 365.
+     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-3.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-3.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-1. \[ServiceNow Admin\] تكوين موفر OAuth الصادر.
+1. \[ServiceNow Admin\] Configure Outbound OAuth provider.
     1. تكوين موفر OAuth الصادر.
-    1. بعد إكمال الإرشادات في مقطع المتطلبات الأساسية، انقر فوق تم. وبخلاف ذلك، اتبع الإرشادات الموجودة في المعالج لإنشاء تسجيل التطبيق الضروري في AAD (دليل Azure النشط).
-    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-4.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-4.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
-    1. قم بتسجيل تطبيق ServiceNow OAuth.
-    1. بعد إكمال الإرشادات في مقطع المتطلبات الأساسية، حدد تسجيل تطبيق OAuth الذي تم إنشاؤه حديثا وانقر فوق التالي. وإلا، اتبع الإرشادات لإنشاء الكيان في ServiceNow ثم حدد تسجيل التطبيق الجديد.
-     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-5.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-5.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+    1. بعد إكمال الإرشادات في قسم المتطلبات الأساسية، انقر فوق "تم". وإلا، اتبع الإرشادات الموجودة في المعالج لإنشاء تسجيل التطبيق الضروري في AAD (دليل Azure النشط).
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-4.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-4.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
+    1. تسجيل تطبيق ServiceNow OAuth.
+    1. بعد إكمال الإرشادات في قسم المتطلبات الأساسية، حدد تسجيل تطبيق OAuth الذي تم إنشاؤه حديثا وانقر فوق "التالي". وإلا، فاتبع الإرشادات لإنشاء الكيان في ServiceNow ثم حدد تسجيل التطبيق الجديد.
+     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-5.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-5.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-1. \[ServiceNow Admin\] تكوين الإعدادات الواردة.
+1. \[يقوم مسؤول\] ServiceNow بتكوين الإعدادات الواردة.
     1. تكوين تطبيق AAD (دليل Azure النشط) الوارد.
-    1. بعد إكمال الإرشادات في مقطع المتطلبات الأساسية، انقر فوق تم الانتقال إلى الخطوة التالية. وبخلاف ذلك، اتبع الإرشادات لإنشاء AAD (دليل Azure النشط) تسجيل التطبيق للاتصال الوارد.
-    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-6.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-6.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
-    1. تكوين ServiceNow External OpenID الاتصال موفر (موفر OIDC).
-    1. بعد إكمال الإرشادات في مقطع المتطلبات الأساسية، حدد الكيان الذي تم إنشاؤه حديثا وانقر فوق تم. وإلا، اتبع الإرشادات لإنشاء الكيان في ServiceNow ثم حدد تسجيل تطبيق موفر OIDC الخارجي الجديد.
-    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-7.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-7.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
-    1. قم بتكوين AAD (دليل Azure النشط) تسجيل التطبيق لمستخدم التكامل الوارد.
-    1. بعد إكمال الإرشادات في مقطع المتطلبات الأساسية، انقر فوق تم الانتقال إلى الخطوة التالية. وبخلاف ذلك، اتبع الإرشادات لإنشاء AAD (دليل Azure النشط) تسجيل التطبيق لمستخدم REST الوارد (مستخدم التكامل).
-    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-8.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-8.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+    1. بعد إكمال الإرشادات في قسم المتطلبات الأساسية، انقر فوق "تم" للانتقال إلى الخطوة التالية. وإلا، اتبع الإرشادات لإنشاء تسجيل تطبيق AAD (دليل Azure النشط) للاتصال الوارد.
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-6.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-6.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
+    1. تكوين موفر الاتصال ServiceNow External OpenID (موفر OIDC).
+    1. بعد إكمال الإرشادات في قسم المتطلبات الأساسية، حدد الكيان الذي تم إنشاؤه حديثا وانقر فوق "تم". وإلا، فاتبع الإرشادات لإنشاء الكيان في ServiceNow ثم حدد تسجيل تطبيق موفر OIDC الخارجي الجديد.
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-7.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-7.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
+    1. تكوين تسجيل تطبيق AAD (دليل Azure النشط) لمستخدم التكامل الوارد.
+    1. بعد إكمال الإرشادات في قسم المتطلبات الأساسية، انقر فوق "تم" للانتقال إلى الخطوة التالية. وإلا، اتبع الإرشادات لإنشاء تسجيل تطبيق AAD (دليل Azure النشط) لمستخدم REST الوارد (مستخدم التكامل).
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-8.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-8.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
     1. تكوين مستخدم التكامل.
-    1. بعد إكمال الإرشادات في مقطع المتطلبات الأساسية، حدد الكيان الذي تم إنشاؤه حديثا وانقر فوق التالي. بخلاف ذلك، اتبع الإرشادات لإنشاء مستخدم التكامل في ServiceNow ثم حدد الكيان.
-    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-9.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-9.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+    1. بعد إكمال الإرشادات في قسم المتطلبات الأساسية، حدد الكيان الذي تم إنشاؤه حديثا وانقر فوق "التالي". وإلا فاتبع الإرشادات لإنشاء مستخدم التكامل في ServiceNow ثم حدد الكيان.
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-9.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-9.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-1. \[Microsoft 365 المستأجر\] أكمل عملية التكامل.
+1. \[مسؤول مستأجر\] Microsoft 365 إكمال التكامل.
 
-    تحقق من صحة المعلومات أدناه. لا تحدد **التالي** في هذا الوقت.
+    تحقق من صحة المعلومات أدناه. لا تحدد **"التالي"** في هذا الوقت.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image40.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image40.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image40.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image40.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-    1. انتقل إلى **مسؤول Microsoft 365 Portal &gt; الإعدادات &gt; إعدادات &gt; المؤسسة لملفات تعريف المؤسسة**.
+    1. انتقل إلى **ملفات تعريف المؤسسة لإعدادات &gt; مسؤول Microsoft 365 Portal &gt; الإعدادات &gt; Org**.
 
     1. تكوين إعدادات تكامل الدعم:
 
-    حدد علامة **التبويب** معلومات أساسية > **أداة** >  الدعم **الداخليServiceNow**، وأدخل القيمة **"** معرفة التطبيق الصادر" في "المكتشف التطبيق" **من أجل إصدار حقل الرمز المميز ل Auth**. يتم تشغيل هذا الم ID App الصادر في الخطوة 6 – إكمال التكامل، الذي تم إنشاؤه في المتطلبات الأساسية [(رمز Azure AD Auth المميز)](#prerequisites-azure-ad-auth-token).
+    حدد علامة تبويب **المعلومات الأساسية** > **أداة** >  الدعم **الداخليServiceNow**، وأدخل قيمة **معرف التطبيق الصادر** في **معرف التطبيق لإصدار حقل رمز المصادقة المميز**. معرف التطبيق الصادر هذا في الخطوة 6 – أكمل التكامل، الذي تم إنشاؤه في [المتطلبات الأساسية (Azure AD Auth Token).](#prerequisites-azure-ad-auth-token)
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-    1. على علامة **التبويب مستودعات** ، حدد مستودع **جديد** وتحديثه باستخدام الإعدادات التالية:
+    1. في علامة التبويب **"Repositories** "، حدد **"New repository"** وقم بتحديثه بالإعدادات التالية:
 
-    - المستودع: قيمة **"الملهم" من** "الخطوة 6 – إكمال التكامل".
+    - المستودع: قيمة **معرف المستودع** من "الخطوة 6 – إكمال التكامل".
 
     - نقطة النهاية: قيمة **نقطة النهاية** من "الخطوة 6 – إكمال التكامل".
 
-    - نوع المصادقة: **حدد AAD (دليل Azure النشط) Auth**.
+    - نوع المصادقة: حدد **AAD (دليل Azure النشط) Auth**.
 
-    - "معرّف العميل": قيمة **"معرّف العميل** " من الخطوة 6 – إكمال التكامل.
+    - معرف العميل: قيمة **معرف العميل** من الخطوة 6 – إكمال التكامل.
 
-    - سرية العميل: سر موفر OAuth الوارد الذي تم إنشاؤه في الخطوة 2 من المتطلبات الأساسية (رمز Azure AD Auth المميز \#).
+    - سر العميل: سر موفر OAuth الوارد الذي تم إنشاؤه في الخطوة \#2 من المتطلبات الأساسية (Azure AD Auth Token).
 
-    - اسم المستخدم الباقي: قيمة **اسم** المستخدم من الخطوة 6 – إكمال التكامل، وهو "اسم العميل"  للتطبيق الذي تم إنشاؤه في "المتطلبات الأساسية" (رمز Azure AD Auth المميز) الخطوة \#3.
+    - اسم المستخدم المتبقي: قيمة **اسم المستخدم** من الخطوة 6 – إكمال التكامل، وهو **معرف العميل** للتطبيق الذي تم إنشاؤه في الخطوة \#3 من المتطلبات الأساسية (Azure AD Auth Token).
 
-    - كلمة مرور باقي المستخدم: سرية التطبيق للتطبيق الذي تم إنشاؤه في الخطوة 3 من المتطلبات الأساسية (رمز Azure AD Auth المميز \#).
+    - كلمة مرور المستخدم المتبقية: سر التطبيق للتطبيق الذي تم إنشاؤه في الخطوة \#3 من المتطلبات الأساسية (Azure AD Auth Token).
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image31.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image31.png" alt-text="واجهة مستخدم رسومية، يتم إنشاء وصف التطبيق تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image31.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image31.png" alt-text="واجهة مستخدم رسومية، تم إنشاء وصف التطبيق تلقائيا":::
 
-    1. العودة إلى ServiceNow.
+    1. ارجع إلى ServiceNow.
 
-    1. حدد **التالي** لإكمال التكامل.
+    1. حدد **"التالي** " لإكمال التكامل.
 
-   :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-10.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-10.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
-    سينفذ Microsoft 365 تكامل الدعم اختبارات لضمان عمل التكامل. إذا كانت هناك مشكلة في التكوين، ستشرح رسالة الخطأ ما يجب إصلاحه. وبخلاف ذلك، يكون التطبيق جاهزا.
-    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-11.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-11.png" alt-text="إنشاء واجهة مستخدم رسومية أو نص أو تطبيق أو وصف بريد إلكتروني تلقائيا":::
+   :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-10.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-10.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
+    سيقوم تطبيق تكامل دعم Microsoft 365 بتنفيذ الاختبارات لضمان عمل التكامل. إذا كانت هناك مشكلة في التكوين، فستشرح رسالة الخطأ ما يجب إصلاحه. وإلا، فإن التطبيق جاهز.
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-11.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-11.png" alt-text="واجهة المستخدم الرسومية، النص، التطبيق، وصف البريد الإلكتروني التي تم إنشاؤها تلقائيا":::
 
-1. \[مسؤول ServiceNow\] تمكين تكامل دعم Microsoft لمستخدم موجود.
+1. \[تمكين تكامل دعم Microsoft لمستخدم موجود من قبل مسؤول\] ServiceNow.
 
-    Microsoft 365 تمكين تكامل الدعم للمستخدم الذي له أحد هذه الأدوار:
+    يتم تمكين تكامل دعم Microsoft 365 للمستخدم باستخدام أحد الأدوار التالية:
 
-    - xmiomsm365\_\_\_، insightsuser\_
+    - xmiomsm365assis.insightsuser\_\_\_\_
 
-    - xmiomsm365همs.administrator\_\_\_
+    - xmiomsm365assis.administrator\_\_\_
 
-1. \[اختياري\] \[يقوم المستخدم الذي له دور xmiomsm365\_\_\_،\] بربط ارتباط Microsoft 365 المسؤول.
+1. \[اختياري\] \[المستخدم ذو الدور xmiomsm365assis.administrator\_\_\_ link\] link Microsoft 365 admin account.
 
-    إذا كان أي مستخدم لديه الدور xmiomsm365\_\_\_، وكان يستخدم حسابات Microsoft 365 مختلفة لإدارة حالة دعم Microsoft 365، فيجب الانتقال إلى حساب ارتباط دعم Microsoft 365 &gt; لإعداد البريد الإلكتروني لمسؤول Microsoft 365.
+    إذا كان لأي مستخدم دور xmiomsm365assis.administrator\_\_\_ ويستخدم حسابات Microsoft 365 مختلفة لإدارة حالة دعم Microsoft 365، فيجب عليه الانتقال إلى Microsoft 365 دعم &gt; حساب الارتباط لإعداد البريد الإلكتروني للمسؤول Microsoft 365.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image21.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image21.png" alt-text="واجهة مستخدم رسومية، نص، وصف تطبيق يتم إنشاؤه تلقائيا":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image21.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image21.png" alt-text="واجهة المستخدم الرسومية، النص، وصف التطبيق التي تم إنشاؤها تلقائيا":::

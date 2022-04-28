@@ -1,0 +1,179 @@
+### YamlMime:Hub
+title: موارد Microsoft 365 Business Premium
+summary: بالنسبة للشركات التي يصل عدد موظفيها إلى 300 موظف، يمكنك Microsoft 365 Business Premium من تحقيق الإنتاجية في أي مكان باستخدام تطبيقات Office والاجتماعات عبر الإنترنت. قم بتأمين أعمالك باستخدام ميزات الأمان المتقدمة، وتبسيط إعداد تكنولوجيا المعلومات وإدارتها باستخدام حل واحد.
+brand: m365
+metadata:
+  title: موارد Microsoft 365 Business Premium
+  description: وثائق لإعداد Microsoft 365 Business Premium واستخدامها.
+  ms.service: o365-administration
+  ms.topic: hub-page
+  ms.collection: collection
+  ms.custom:
+  - AdminSurgePortfolio
+  - intro-hub-or-landing
+  author: efrene
+  ms.author: efrene
+  ms.date: 04/08/2022
+  ms.openlocfilehash: e319645e0dea93a04213402003788d069a64a2b0
+  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65092580"
+productDirectory:
+  title: الإنتاجية والأمان مع Microsoft 365 Business Premium
+  items:
+  - title: مشاهدة
+    imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
+    summary: أفضل خمس فوائد Microsoft 365 Business Premium.
+    url: https://aka.ms/M365BPvideo
+  - title: ما الجديد؟
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+    summary: تعرّف على قدرات Defender for Business الجديدة في Business Premium وMicrosoft 365 Lighthouse.
+    url: https://aka.ms/SMBsecurityFebBlog
+  - title: الحصول على مجموعة أدوات الشريك المجانية
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: التوجيه العملي والانتقال إلى موارد السوق للشركاء لتأمين العمل المختلط.
+    url: https://aka.ms/SMBSecurityKit
+  - title: الانضمام إلى سلسلة مؤتمر ويب الشريك
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: تعرّف على كيفية زيادة المبيعات وتنمية أعمالك باستخدام Microsoft 365 Business Premium وMicrosoft Defender for Business وMicrosoft 365 Lighthouse.
+    url: https://aka.ms/M365MDBseries
+conceptualContent:
+  items:
+  - title: ما هو Microsoft 365 Business Premium؟
+    links:
+    - url: ../business-premium/index.md
+      itemType: overview
+      text: نظرة عامة Microsoft 365 Business Premium
+    - url: ../business-premium/m365bp-secure-users.md
+      itemType: overview
+      text: كيفية مساعدة Microsoft 365 Business Premium لشركتك في الإنتاجية والأمان
+    - url: /office365/servicedescriptions/office-365-service-descriptions-technet-library
+      text: أوصاف خدمة Microsoft 365
+      itemType: reference
+    - url: https://go.microsoft.com/fwlink/?linkid=2164213
+      itemType: overview
+      text: مقارنة Microsoft 365 لخطط الأعمال
+    - url: ../admin/misc/microsoft-365-business-faqs.yml
+      itemType: reference
+      text: الأسئلة المتداولة حول Microsoft 365 للأعمال
+    - url: ../business-video/index.yml
+      itemType: video
+      text: مقاطع فيديو Microsoft 365 للتدريب على الأعمال
+  - title: إعداد Microsoft 365 Business Premium
+    links:
+    - url: ../business-premium/get-microsoft-365-business-premium.md
+      itemType: how-to-guide
+      text: الحصول على Microsoft 365 Business Premium
+    - url: ../business-premium/m365bp-setup-overview.md
+      itemType: how-to-guide
+      text: 1. إكمال عملية الإعداد الأساسية
+    - url: ../business-premium/m365bp-security-overview.md
+      itemType: overview
+      text: 2. حماية البيئة الخاصة بك
+    - url: ../business-premium/m365bp-devices-overview.md
+      itemType: overview
+      text: 3. إعداد الأجهزة الشخصية (غير المدارة)
+    - url: ../business-premium/m365bp-protect-email-overview.md
+      itemType: overview
+      text: 4. استخدام البريد الإلكتروني بشكل أكثر أماناً
+    - url: ../business-premium/m365bp-collaborate-share-securely.md
+      itemType: overview
+      text: 5. التعاون والمشاركة بشكل أكثر أماناً
+    - url: ../business-premium/m365bp-maintain-environment.md
+      itemType: overview
+      text: الحفاظ على بيئتك
+  - title: ما هو Microsoft 365 Lighthouse؟
+    links:
+    - url: ../lighthouse/m365-lighthouse-overview.md
+      itemType: overview
+      text: نظرة عامة على Microsoft 365 Lighthouse
+    - url: ../lighthouse/m365-lighthouse-sign-up.md
+      itemType: how-to-guide
+      text: كيفية التسجيل والتحول إلى موفر الخدمات المشتركة لـ Microsoft
+    - url: ../lighthouse/m365-lighthouse-configure-portal-security.md
+      itemType: how-to-guide
+      text: إعداد وتأمين مدخل Lighthouse
+    - url: ../lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview.md
+      itemType: overview
+      text: استخدام الخطوط الأساسية لمستأجري العملاء
+    - url: ../lighthouse/m365-lighthouse-faq.yml
+      itemType: reference
+      text: الأسئلة المتداولة لـ Microsoft 365 Lighthouse
+  - title: موارد للشركاء (باللغة الإنجليزية فقط)
+    links:
+    - url: https://aka.ms/M365BPPartnerPlaybook
+      itemType: how-to-guide
+      text: راجع دليل مبادئ الشريك وسلسلة الجاهزية الخاص بـ Microsoft 365 Business Premium
+    - url: https://aka.ms/M365MDBseries
+      itemType: video
+      text: انضم إلى سلسلة مؤتمر ويب الشريك!
+    - url: https://partner.microsoft.com
+      itemType: overview
+      text: Microsoft Partner Network
+    - url: https://docs.microsoft.com/partner-center/overview
+      itemType: overview
+      text: بدء استخدام مركز الشركاء
+  - title: حماية الأجهزة
+    links:
+    - url: ../business-premium/m365bp-devices-overview.md
+      itemType: overview
+      text: حماية الأجهزة الشخصية (غير المدارة)
+    - url: ../business-premium/m365bp-multifactor-authentication.md
+      itemType: how-to-guide
+      text: إعداد المصادقة متعددة العوامل على الأجهزة
+    - url: ../business-premium/m365bp-install-office-apps.md
+      itemType: how-to-guide
+      text: تثبيت تطبيقات Office على جميع الأجهزة
+    - url: ../business-premium/m365bp-protect-pcs-macs.md
+      itemType: how-to-guide
+      text: حماية أجهزة الكمبيوتر الشخصية التي تعمل بنظام Windows وأجهزة Mac غير المُدارة
+    - url: ../business-premium/m365bp-protect-devices.md
+      itemType: overview
+      text: إعداد الأجهزة المدارة وتأمينها
+  - title: حماية محتوى البريد الإلكتروني وملفات Office
+    links:
+    - url: ../business-premium/m365bp-increase-protection.md
+      itemType: how-to-guide
+      text: إعداد نهج الأمان
+    - url: ../business-premium/avoid-phishing-and-attacks.md
+      itemType: how-to-guide
+      text: معرفة ما يجب مشاهدته في محتوى البريد الإلكتروني
+    - url: ../business-premium/send-encrypted-email.md
+      itemType: how-to-guide
+      text: تشفير البريد الإلكتروني الحساس أو تسميته
+    - url: ../business-premium/create-teams-for-collaboration.md
+      itemType: how-to-guide
+      text: استخدام Microsoft Teams للتعاون
+    - url: ../business-premium/share-files-and-videos.md
+      itemType: overview
+      text: مشاركة الملفات ومقاطع الفيديو في Microsoft Teams أو SharePoint
+  - title: الدعم والمجتمع
+    links:
+    - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
+      itemType: whats-new
+      text: إعلانات
+    - url: https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988
+      itemType: video
+      text: الحصول على تعليمات
+    - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
+      itemType: overview
+      text: إرسال ملاحظات
+    - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
+      itemType: overview
+      text: المجتمع التقني للشركات الصغيرة والمتوسطة
+  - title: كيف يمكنني...
+    links:
+    - url: ../admin/manage/find-your-partner-or-reseller.md
+      itemType: how-to-guide
+      text: البحث عن شريك Microsoft للمساعدة في عملي
+    - url: ../commerce/subscriptions/upgrade-to-different-plan.md
+      itemType: how-to-guide
+      text: التغيير إلى خطة Microsoft 365 أخرى
+    - url: ../admin/setup/migrate-email-and-contacts-admin.md
+      itemType: how-to-guide
+      text: ترحيل البريد الإلكتروني والتقويم وجهات الاتصال إلى Microsoft 365
+    - url: ../admin/get-help-support.md
+      itemType: how-to-guide
+      text: الاتصال بالدعم Microsoft 365

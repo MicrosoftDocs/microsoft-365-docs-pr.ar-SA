@@ -2,8 +2,8 @@
 title: إدارة إعلامات الانتظار
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: استخدم سير عمل الاتصالات في eDiscovery (Premium) لتعقب حالة إعلامات الاحتجاز القانوني وتحديثها وإعادة إرسالها إذا لزم الأمر.
-ms.openlocfilehash: 83e5331aaea59893f06cfa0629d627e500cfe1b1
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 95417d54f7a84439b0321e31f0d6c0f2236af047
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996163"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093954"
 ---
 # <a name="manage-hold-notifications"></a>إدارة إعلامات الانتظار
 

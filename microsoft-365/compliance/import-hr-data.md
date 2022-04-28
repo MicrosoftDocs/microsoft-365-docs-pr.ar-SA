@@ -2,8 +2,8 @@
 title: إعداد موصل لاستيراد بيانات الموارد البشرية
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: يمكن للمسؤولين إعداد موصل بيانات لاستيراد بيانات الموظفين من نظام الموارد البشرية (HR) لمؤسستهم إلى Microsoft 365. يتيح لك ذلك استخدام بيانات الموارد البشرية في نهج إدارة المخاطر الداخلية لمساعدتك على اكتشاف نشاط مستخدمين محددين قد يشكل تهديدا داخليا لمؤسستك.
-ms.openlocfilehash: 81ee1ae3841c4b30f7159d344a195d924d49030c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4da4546ef42854c8265254b2c9e1a51b528a8d7d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999949"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65092790"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>إعداد موصل لاستيراد بيانات الموارد البشرية
 

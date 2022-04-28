@@ -2,8 +2,8 @@
 title: استخدام موصلات البيانات لاستيراد بيانات الجهات الخارجية وأرشفتها في Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية استيراد بيانات الجهات الخارجية وأرشفتها من منصات وسائل التواصل الاجتماعي ومنصات المراسلة الفورية وأنظمة التعاون الأساسية للمستندات إلى علب بريد Microsoft 365.
-ms.openlocfilehash: 820c4e2fb92720940a8b4f207d43aea649ef16e7
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 75a1136c38c0b893babd1cd349dbe34aa9bbf8cd
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997241"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093559"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>التعرّف على الموصلات لبيانات الأطراف الخارجية
 

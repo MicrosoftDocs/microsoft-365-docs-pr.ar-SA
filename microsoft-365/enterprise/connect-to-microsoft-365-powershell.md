@@ -2,7 +2,7 @@
 title: الاتصال بـ Microsoft 365 باستخدام PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: الاتصال إلى مستأجر Microsoft 365 باستخدام PowerShell Microsoft 365 لتنفيذ مهام مركز الإدارة من سطر الأوامر.
-ms.openlocfilehash: 4083ffdf240664947b1d35e726a400f292b6d3bf
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: a7f493bd0073762d995a232918d732e999a85777
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713482"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65093910"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>الاتصال بـ Microsoft 365 باستخدام PowerShell
 
@@ -64,7 +64,7 @@ ms.locfileid: "64713482"
 - بالنسبة للوحدة Microsoft Azure Active Directory للوحدة النمطية Windows PowerShell، يجب استخدام الإصدار 5.1 من PowerShell أو إصدار أحدث، حتى إصدار PowerShell 6. لا يمكنك استخدام الإصدار 7 من PowerShell.
        
 >[!Note]
->هذه الإجراءات مخصصة للمستخدمين الأعضاء في دور مسؤول Microsoft 365. لمزيد من المعلومات، راجع ["حول أدوار المسؤولين](../admin/add-users/about-admin-roles.md)".
+>هذه الإجراءات مخصصة للمستخدمين الأعضاء في دور مسؤول Microsoft 365. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../admin/add-users/about-admin-roles.md).
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>الاتصال مع الوحدة النمطية Azure Active Directory PowerShell Graph

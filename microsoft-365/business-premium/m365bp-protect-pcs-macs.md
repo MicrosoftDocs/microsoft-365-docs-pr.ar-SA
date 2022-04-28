@@ -1,14 +1,14 @@
 ---
-title: حماية أجهزة الكمبيوتر الشخصية Windows 10 التي لم Microsoft 365 Business Premium
+title: حماية أجهزة الكمبيوتر وأجهزة Mac Windows 10 غير المدارة في Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,58 +23,54 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: حماية الأجهزة غير التي لم يتم إدراجها أو إحضارها بنفسك (BYOD) باستخدام Microsoft 365 Business Premium.
-ms.openlocfilehash: b3d783ba498337af7ff867fe749366abe1734da5
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: حماية الأجهزة غير المدارة أو إحضار أجهزتك الخاصة (BYOD) من الهجمات الإلكترونية باستخدام Microsoft 365 Business Premium. كيفية إعداد الأمان عبر الإنترنت لأجهزة الكمبيوتر الشخصية وأجهزة Mac Windows.
+ms.openlocfilehash: a8b0fb278e4fb005d6e31d92521791134395b811
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63705003"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65094152"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>حماية أجهزة الكمبيوتر الشخصية Windows 10 التي لم Microsoft 365 Business Premium
+# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>حماية أجهزة الكمبيوتر وأجهزة Mac Windows 10 غير المدارة في Microsoft 365 Business Premium
 
-يمكنك إدارة Windows 10 الشخصية و Mac من خلال تسجيلها في Microsoft Intune، مما يسمح لك بالتأكد من أنها سليمة وآمنة قبل الوصول إلى البيانات في بيئتك. ومع ذلك، تتضمن العديد من الحملات والشركات الصغيرة الموظفين الذين يجلبون أجهزتهم الخاصة (BYOD)، والتي لن تديرها المؤسسة. بالنسبة إلى أجهزة الكمبيوتر الشخصية و Mac غير المضمنة هذه، استخدم هذه المقالة لضمان تكوين الحد الأدنى من قدرات الأمان.
+يركز هذا الهدف على إنشاء حماية لأي أجهزة كمبيوتر وأجهزة Mac Windows 10 غير مدارة غير مسجلة في Microsoft Intune. من المحتمل جدا أن يكون لدى شركتك الصغيرة أو حملتك موظفون يحضرون أجهزتهم الخاصة (BYOD)، ولا تتم إدارة هذه الأجهزة. تتضمن BYODs الهواتف وأجهزة الكمبيوتر اللوحية وأجهزة الكمبيوتر الشخصية المملوكة شخصيا. 
 
-<!--A Windows 10 PC is considered managed after you have completed the following two steps:
+>[!NOTE]
+>يجب على مستخدمي BYOD تثبيت وتشغيل تطبيق Company Portal لتسجيل هذه الأجهزة وتلقي الوصول إلى موارد الشركة.
 
-1. You (or the admin) set up device and data protection policies in the [setup  wizard](../business/set-up.md).
-
-2. You have [connected your computer to Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 username and password to sign in.
-3. --> 
-
-## <a name="protect-a-computer-running-windows-10-or-a-mac"></a>حماية كمبيوتر يعمل Windows 10 أو جهاز Mac
-
-<!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365, or a Mac, the Microsoft 365 protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
--->
-إذا لم Windows 10 الكمبيوتر الشخصي أو جهاز Mac بواسطة مؤسستك، فتأكد من تكوين قدرات الأمان هذه.
+من المهم التأكد من أن مستخدمي الواجهة الأمامية يتبعون هذه الإرشادات بحيث يتم تكوين الحد الأدنى من قدرات الأمان على جميع أجهزة BYOD.
 
 ## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
 
-**تشغيل تشفير الأجهزة**<p>
+**تشغيل تشفير الجهاز**<p>
+يتوفر تشفير الجهاز على مجموعة واسعة من أجهزة Windows ويساعد على حماية بياناتك عن طريق تشفيرها. إذا قمت بتشغيل تشفير الجهاز، فلن يتمكن سوى الأفراد المخولين من الوصول إلى جهازك وبياناتك. راجع [تشغيل تشفير الجهاز للحصول على](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) الإرشادات.
 
-يتوفر تشفير الأجهزة على مجموعة واسعة من Windows الأجهزة ويساعد على حماية بياناتك عن طريق تشفيرها. إذا قمت ب تشغيل تشفير الأجهزة، لن يتمكن من الوصول إلى جهازك وبياناتك سوى الأشخاص المخولاين. راجع [تشغيل تشفير الأجهزة](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) للحصول على الإرشادات.
-
- إذا لم يكن تشفير الجهاز متوفرا على جهازك، يمكنك تشغيل تشفير [BitLocker القياسي](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) بدلا من ذلك. (BitLocker غير متوفر على إصدار Windows 10 Home.) 
+ إذا لم يكن تشفير الجهاز متوفرا على جهازك، يمكنك تشغيل [تشفير BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) القياسي بدلا من ذلك. (BitLocker غير متوفر في إصدار Windows 10 Home.) 
 
 **حماية جهازك باستخدام أمن Windows**<p>
-إذا كان لديك Windows 10، ستحصل على أحدث حماية من الفيروسات باستخدام أمن Windows. عند بدء Windows 10 للمرة الأولى، أمن Windows تشغيل الكمبيوتر الشخصي ومساعدته بنشاط على حماية الكمبيوتر الشخصي من خلال إجراء مسح ضوئي بحثا عن البرامج الضارة والفيروسات وتهديدات الأمان. أمن Windows استخدام الحماية في الوقت الحقيقي لمسح كل شيء تقوم بتنزيلها أو تشغيلها على الكمبيوتر الشخصي.
+إذا كان لديك Windows 10، فستحصل على أحدث حماية من الفيروسات باستخدام أمن Windows. عندما تبدأ Windows 10 للمرة الأولى، يكون أمن Windows قيد التشغيل ويساعد بنشاط على حماية الكمبيوتر الشخصي من خلال البحث عن البرامج الضارة (البرامج الضارة) والفيروسات والتهديدات الأمنية. تستخدم أمن Windows الحماية في الوقت الحقيقي لفحص كل شيء تقوم بتنزيله أو تشغيله على الكمبيوتر الشخصي.
 
-Windows تنزيلات التحديثات أمن Windows تلقائيا للمساعدة في الحفاظ على أمان الكمبيوتر وحمايته من التهديدات.
+Windows Update تنزيل تحديثات أمن Windows تلقائيا للمساعدة في الحفاظ على أمان الكمبيوتر وحمايته من التهديدات.
 
-إذا كان لديك إصدار سابق من Windows كنت تستخدم Microsoft Security Essentials، فمن الجيد الانتقال إلى أمن Windows. لمزيد من المعلومات، راجع [المساعدة في حماية جهازي باستخدام أمن Windows](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
+إذا كان لديك إصدار سابق من Windows وكنت تستخدم Microsoft Security Essentials، فمن المستحسن الانتقال إلى أمن Windows. لمزيد من المعلومات، راجع [المساعدة في حماية جهازي باستخدام أمن Windows](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security).
 
-**تشغيل جدار Windows الحماية**<p>
-يجب أن تقوم دائما Windows جدار الحماية حتى لو كان لديك جدار حماية آخر تم تشغيله. قد يجعل Windows جدار الحماية جهازك (شبكتك، إذا كان لديك واحدة) أكثر عرضة للوصول غير المصرح به. راجع [تشغيل Windows جدار الحماية أو إيقاف](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) تشغيله للحصول على الإرشادات.
+**تشغيل جدار حماية Windows**<p>
+يجب عليك دائما تشغيل Windows جدار الحماية حتى إذا كان لديك جدار حماية آخر قيد التشغيل. قد يؤدي إيقاف تشغيل Windows Firewall إلى جعل جهازك (وشبكتك، إذا كان لديك واحد) أكثر عرضة للوصول غير المصرح به. راجع [تشغيل Windows Firewall أو إيقاف تشغيله](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) للحصول على الإرشادات.
 
-## <a name="mac"></a>[Mac](#tab/Mac)
+حسنا، اكتملت المهمة! الآن، دعونا نعمل على [تأمين نظام البريد الإلكتروني](m365bp-protect-email-overview.md) ضد التصيد الاحتيالي والهجمات الأخرى.
+
+## <a name="mac"></a>[ماك](#tab/Mac)
 
 **استخدام FileVault لتشفير قرص Mac**<p>
-يحمي تشفير القرص البيانات عند فقدان الأجهزة أو سرقتها. يساعد تشفير القرص الكامل FileVault على منع الوصول غير المصرح به إلى المعلومات على قرص بدء التشغيل. راجع [استخدام FileVault لتشفير قرص بدء التشغيل على جهاز Mac](https://support.apple.com/HT204837) للحصول على الإرشادات.
+يحمي تشفير القرص البيانات عند فقدان الأجهزة أو سرقتها. يساعد تشفير القرص الكامل FileVault على منع الوصول غير المصرح به إلى المعلومات الموجودة على قرص بدء التشغيل. راجع [استخدام FileVault لتشفير قرص بدء التشغيل على جهاز Mac](https://support.apple.com/HT204837) للحصول على الإرشادات.
 
-**حماية جهاز mac من البرامج الضارة**<p>
-توصي Microsoft بتثبيت برنامج الحماية من الفيروسات الموثوق به واستخدامه على جهاز Mac. راجع المقالة التالية للحصول على قائمة الاختيارات: أفضل برنامج مكافحة الفيروسات [ل Mac 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
+**حماية جهاز Mac من البرامج الضارة**<p>
+توصي Microsoft بتثبيت برنامج الحماية من الفيروسات الموثوق به واستخدامه على جهاز Mac. راجع المقالة التالية للحصول على قائمة بالخيارات: [أفضل برنامج الحماية من الفيروسات في Mac 2019](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/).
 
-يمكنك أيضا تقليل مخاطر البرامج الضارة باستخدام البرامج من مصادر موثوق بها فقط. تسمح لك الإعدادات في & الخصوصية بتحديد مصادر البرامج المثبتة على جهاز Mac. لمزيد من المعلومات، راجع [حماية جهاز Mac من البرامج الضارة](https://support.apple.com/kb/PH25087).
+يمكنك أيضا تقليل مخاطر البرامج الضارة باستخدام البرامج من مصادر موثوق بها فقط. تسمح لك الإعدادات الموجودة في تفضيلات الخصوصية & الأمان بتحديد مصادر البرامج المثبتة على جهاز Mac. لمزيد من المعلومات، راجع [حماية جهاز Mac من البرامج الضارة](https://support.apple.com/kb/PH25087).
 
 **تشغيل حماية جدار الحماية**<p>
-استخدم إعدادات جدار الحماية لحماية جهاز Mac من جهة الاتصال غير المرغوب فيها التي تبدأها أجهزة كمبيوتر أخرى عندما تكون متصلا بالإنترنت أو بشبكة. بدون هذه الحماية، قد يكون جهاز Mac الخاص بك أكثر عرضة للوصول غير المصرح به. راجع [حول جدار حماية التطبيق](https://support.apple.com/HT201642) للحصول على الإرشادات.
+استخدم إعدادات جدار الحماية لحماية جهاز Mac من جهة الاتصال غير المرغوب فيها التي تبدأها أجهزة الكمبيوتر الأخرى عند الاتصال بالإنترنت أو الشبكة. بدون هذه الحماية، قد يكون جهاز Mac الخاص بك أكثر عرضة للوصول غير المصرح به. راجع [جدار حماية التطبيق](https://support.apple.com/HT201642) للحصول على الإرشادات.
+
+حسنا، اكتملت المهمة! الآن، دعونا نعمل على [تأمين نظام البريد الإلكتروني](m365bp-protect-email-overview.md) ضد التصيد الاحتيالي والهجمات الأخرى.
+
