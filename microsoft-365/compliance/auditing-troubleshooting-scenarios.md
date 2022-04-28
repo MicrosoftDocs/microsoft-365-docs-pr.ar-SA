@@ -2,8 +2,8 @@
 title: البحث في سجل التدقيق لاستكشاف السيناريوهات الشائعة وإصلاحها
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: تعرف على كيفية استخدام أداة البحث في سجل التدقيق Microsoft 365 للمساعدة في استكشاف مشكلات الدعم الشائعة لحسابات البريد الإلكتروني وإصلاحها.
-ms.openlocfilehash: dd82c735411592a3cfa7cb79ae4d1ce6f97798b4
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 57d8cfd1cbb07300b7cd69fb78ff6a0b33b302f5
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997989"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097173"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>البحث في سجل التدقيق للتحقق من مشكلات الدعم الشائعة
 

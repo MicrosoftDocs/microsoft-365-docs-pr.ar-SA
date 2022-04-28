@@ -1,10 +1,10 @@
 ---
-title: Microsoft 365 دليل اختبار المؤسسة
+title: Microsoft 365 لدلائل مختبر اختبار المؤسسة
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/20/2019
 audience: ITPro
 ms.topic: landing-page
@@ -17,71 +17,71 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: استخدم "أدلة اختبار المعمل" هذه لإعداد عرض تقديمي أو إثبات المبدأ أو بيئات تطوير/اختبار Microsoft 365 للمؤسسة.
-ms.openlocfilehash: 18b243a0fea9cb4864a0375740c4ebadcc44d6c3
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: استخدم دلائل مختبر الاختبار هذه لإعداد العرض التوضيحي أو إثبات المفهوم أو بيئات التطوير/الاختبار Microsoft 365 للمؤسسة.
+ms.openlocfilehash: 8c4444b599682ad40ebba88b37d83125fccd99f0
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681645"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097415"
 ---
-# <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 دليل اختبار المؤسسة
+# <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 لدلائل مختبر اختبار المؤسسة
 
 *ينطبق هذا على كل من Microsoft 365 للمؤسسة Office 365 Enterprise.*
 
-تساعدك Test Lab Guides (TLGs) على التعرف على منتجات Microsoft بسرعة. فهي توفر إرشادات وصفية لتكوين بيئات اختبار مبسطة ولكنها تمثيلية. يمكنك استخدام هذه البيئات للحصول على عرض تقديمي أو تخصيص أو إنشاء إثباتات معقدة للمفهوم طوال مدة الاشتراك التجريبي أو المدفوع.
+تساعدك إرشادات مختبر الاختبار (TLGs) على التعرف بسرعة على منتجات Microsoft. وهي توفر تعليمات توجيهية لتكوين بيئات اختبار مبسطة ولكنها تمثيلية. يمكنك استخدام هذه البيئات لعرض إثباتات المبدأ المعقدة أو تخصيصها أو إنشائها طوال مدة الاشتراك التجريبي أو المدفوع.
 
-تم تصميم TLG لتكون وحدات نمطية. فهي تعتمد على بعضها البعض لإنشاء تكوينات متعددة تتطابق بشكل وثيق مع احتياجات تكوين التعلم أو الاختبار. تساعدك التجربة العملية "لقد قمت بدمجه بنفسي وهو يعمل" على فهم متطلبات نشر منتج أو سيناريو جديد، بحيث يمكنك التخطيط بشكل أفضل لاستضافته في الإنتاج.
+تم تصميم مجموعات TLG لتكون وحدات نمطية. إنها تعتمد على بعضها لإنشاء تكوينات متعددة تتطابق بشكل وثيق مع احتياجات تكوين التعلم أو الاختبار. تساعدك التجربة العملية "لقد بنيتها بنفسي وتعمل" على فهم متطلبات النشر لمنتج أو سيناريو جديد، بحيث يمكنك التخطيط بشكل أفضل لاستضافته في الإنتاج.
 
-يمكنك أيضا استخدام TLG لإنشاء بيئات تمثيلية لتطوير التطبيقات واختبارها، المعروفة أيضا ببيئات dev/test.
+يمكنك أيضا استخدام مجموعات TLG لإنشاء بيئات تمثيلية لتطوير التطبيقات واختبارها، والمعروفة أيضا باسم بيئات التطوير/الاختبار.
   
-![اختبار دليل المعمل لسحابة Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![اختبار دلائل المختبر لسحابة Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-للحصول على خريطة مرئية لكل المقالات في Microsoft 365 دليل اختبار المؤسسة، قم بتوسيع الرسم التالي أو انتقل إلى Microsoft 365 الخاص بالمكدس دليل اختبار [اختبار المؤسسة](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+للحصول على خريطة مرئية لجميع المقالات في Microsoft 365 لمكدس دليل مختبر اختبار المؤسسة، قم بتوسيع الرسم التالي أو انتقل إلى [Microsoft 365 للمؤسسة Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
-[![المكدس Microsoft 365 دليل اختبار المؤسسة.](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+[![Microsoft 365 لمكدس دليل مختبر اختبار المؤسسة.](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
-## <a name="base-configuration"></a>تكوين أساس
+## <a name="base-configuration"></a>التكوين الأساسي
 
-أولا، قم بإنشاء بيئة اختبار Microsoft 365 [للمؤسسة](/microsoft-365-enterprise/). يمكنك إنشاء نوعين مختلفين من التكوينات الأساسية:
+أولا، قم بإنشاء بيئة اختبار [Microsoft 365 للمؤسسة](/microsoft-365-enterprise/). يمكنك إنشاء نوعين مختلفين من التكوينات الأساسية:
 
-- [تكوين أساسي](lightweight-base-configuration-microsoft-365-enterprise.md) خفيف - استخدم هذا الإعداد عندما تريد تكوين Microsoft 365 ميزات المؤسسة وإمكانياتها في بيئة السحابة فقط، والتي لا تتضمن أي مكونات في الموقع.
+- [تكوين أساسي خفيف الوزن](lightweight-base-configuration-microsoft-365-enterprise.md) - استخدم هذا عندما تريد تكوين Microsoft 365 وشرحها لميزات المؤسسة وقدراتها في بيئة سحابية فقط، والتي لا تتضمن أي مكونات محلية.
 
-- تكوين قاعدة مؤسسة [محاكاة - استخدم](simulated-ent-base-configuration-microsoft-365-enterprise.md) هذا عندما تريد تكوين Microsoft 365 وشرحه لميزات المؤسسة وإمكانياتها في بيئة سحابة مختلطة، والتي تستخدم المكونات المحلية مثل مجال خدمات مجال Active Directory (AD DS).
+- [محاكاة تكوين قاعدة المؤسسة](simulated-ent-base-configuration-microsoft-365-enterprise.md) - استخدم هذا عندما تريد تكوين Microsoft 365 وشرحها لميزات المؤسسة وقدراتها في بيئة سحابية مختلطة، والتي تستخدم مكونات محلية مثل مجال خدمات مجال Active Directory (AD DS).
 
-يمكنك أيضا إنشاء بيئات اختبار Office 365 E5 من خلال عدم Microsoft 365 E5 ترخيص الإصدار التجريبي أو بيئة اختبار الإنتاج.
+يمكنك أيضا إنشاء بيئات اختبار Office 365 E5 عن طريق عدم إضافة ترخيص Microsoft 365 E5 إلى بيئة اختبار الإصدار التجريبي أو الإنتاج.
     
 ## <a name="identity"></a>الهوية
 
-لإظهار الميزات والقدرات ذات الصلة بالهوية، راجع:
+لإظهار الميزات والقدرات المتعلقة بالهوية، راجع:
 
-- [مزامنة كلمة المرور](password-hash-sync-m365-ent-test-environment.md)
+- [مزامنة تجزئة كلمة المرور](password-hash-sync-m365-ent-test-environment.md)
   
-   تمكين مزامنة الدليل المستندة إلى كلمة المرور واختبارها من وحدة تحكم مجال AD DS.
+   تمكين مزامنة الدليل المستند إلى تجزئة كلمة المرور واختبارها من وحدة تحكم مجال AD DS.
 
-- [المصادقة المرورية](pass-through-auth-m365-ent-test-environment.md)
+- [مصادقة المرور](pass-through-auth-m365-ent-test-environment.md)
   
-   تمكين المصادقة المرورية واختبارها إلى وحدة تحكم مجال AD DS.
+   تمكين واختبار مصادقة المرور إلى وحدة تحكم مجال AD DS.
 
-- [المصادقة الخارجية](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+- [مصادقة جهات الاتصال الخارجية](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-   تمكين المصادقة المتحدة واختبارها إلى وحدة تحكم مجال AD DS.
+   تمكين المصادقة الموحدة واختبارها إلى وحدة تحكم مجال AD DS.
 
-- [تسجيل الدخول الفردي السلس في Azure AD](single-sign-on-m365-ent-test-environment.md)
+- [تسجيل الدخول الأحادي السلس إلى Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   قم بتمكين تسجيل الدخول الفردي السلس من Azure AD واختباره (SSO السلس) باستخدام وحدة تحكم مجال AD DS.
+   تمكين واختبار تسجيل الدخول الأحادي السلس إلى Azure AD باستخدام وحدة تحكم مجال AD DS.
 
 - [المصادقة متعددة العوامل](multi-factor-authentication-microsoft-365-test-environment.md)
   
-   تمكين المصادقة الذكية متعددة العوامل المستندة إلى الهاتف واختبارها لحساب مستخدم معين.
+   تمكين واختبار المصادقة متعددة العوامل المستندة إلى الهاتف الذكي لحساب مستخدم معين.
 
-- [حماية حسابات المسؤولين العامين](protect-global-administrator-accounts-microsoft-365-test-environment.md)
+- [حماية حسابات المسؤولين العموميين](protect-global-administrator-accounts-microsoft-365-test-environment.md)
 
-   تأمين حسابات المسؤول العام باستخدام سياسات الوصول الشرطي.
+   تأمين حسابات المسؤول العام باستخدام نهج الوصول المشروط.
 
 - [إعادة كتابة كلمة المرور](password-writeback-m365-ent-test-environment.md)
 
-   استخدم كتابة كلمة المرور لتغيير كلمة المرور على حساب مستخدم AD DS من Azure AD.
+   استخدم إعادة كتابة كلمة المرور لتغيير كلمة المرور على حساب مستخدم AD DS من Azure AD.
 
 - [إعادة تعيين كلمة المرور](password-reset-m365-ent-test-environment.md)
 
@@ -89,35 +89,35 @@ ms.locfileid: "63681645"
 
 - [الترخيص التلقائي وعضوية المجموعة](automate-licenses-group-membership-microsoft-365-test-environment.md)
 
-   اجعل إدارة الحسابات الجديدة أسهل من أي وقت مضى باستخدام الترخيص التلقائي وعضوية المجموعة الديناميكية.
+   اجعل إدارة الحسابات الجديدة أسهل من أي وقت مضى مع الترخيص التلقائي وعضوية المجموعة الديناميكية.
 
-- [حماية هوية Azure AD](azure-ad-identity-protection-microsoft-365-test-environment.md)
+- [حماية الهوية في Azure AD](azure-ad-identity-protection-microsoft-365-test-environment.md)
 
-   فحص حسابات المستخدمين الحالية للفحص للنقاط الضعف.
+   فحص حسابات المستخدمين الحالية بحثا عن الثغرات الأمنية.
 
 - [الوصول إلى الهوية والجهاز](identity-device-access-m365-test-environment.md)
 
-   أنشئ بيئة لاختبار تكوينات الوصول إلى الأجهزة والهوية الموصى بها ونهج الوصول الشرطي.
+   إنشاء بيئة لاختبار التكوينات الموصى بها للوصول إلى الهوية والجهاز ونهج الوصول المشروط.
 
-## <a name="mobile-device-management"></a>إدارة أجهزة المحمول
+## <a name="mobile-device-management"></a>إدارة الأجهزة المحمولة
 
-شرح الميزات والقدرات ذات الصلة بإدارة أجهزة المحمول، راجع:
+لإظهار الميزات والقدرات المتعلقة بإدارة الأجهزة المحمولة، راجع:
 
-- [سياسات توافق الأجهزة](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+- [نهج توافق الجهاز](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
-   قم بإنشاء مجموعة مستخدمين ونهاية لتوافق الأجهزة Windows 10 الأجهزة.
+   إنشاء مجموعة مستخدمين ونهج توافق الأجهزة للأجهزة Windows 10.
     
 - [تسجيل أجهزة iOS وAndroid](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
-   قم بتسجيل أجهزة iOS أو Android وإدارتها عن بعد.
+   تسجيل أجهزة iOS أو Android وإدارتها عن بعد.
 
 ## <a name="information-protection"></a>حماية المعلومات
 
-لإظهار الميزات والإمكانات المتعلقة بحماية المعلومات، راجع:
+لإظهار الميزات والقدرات المتعلقة بحماية المعلومات، راجع:
 
-- [زيادة Microsoft 365 الأمان](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+- [أمان Microsoft 365 متزايد](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
     
-   قم بتكوين الإعدادات لزيادة Microsoft 365 الأمان واتحرى عن أدوات الأمان المضمنة.
+   تكوين الإعدادات لزيادة أمان Microsoft 365 والتحقيق في أدوات الأمان المضمنة.
   
 - [تصنيف البيانات](data-classification-microsoft-365-enterprise-dev-test-environment.md)
     
@@ -125,4 +125,4 @@ ms.locfileid: "63681645"
     
 - [إدارة الوصول المتميز](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
-   تكوين إدارة الوصول المتميز للوصول في الوقت المناسب إلى المهام المتميزة والمتميزة في مؤسستك.
+   تكوين إدارة الوصول المتميز للوصول في الوقت المناسب إلى المهام المرتفعة والمتميزة في مؤسستك.

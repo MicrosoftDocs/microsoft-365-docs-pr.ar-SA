@@ -1,8 +1,8 @@
 ---
-title: استخدام النوافذ المنبثقة المائلة لتقليل الذاكرة المستخدمة عند قراءة رسائل البريد
+title: استخدام النوافذ المنبثقة المرنة لتقليل الذاكرة المستخدمة عند قراءة رسائل البريد
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/3/2019
 audience: ITPro
 ms.topic: article
@@ -13,47 +13,47 @@ search.appverid:
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 f1.keywords:
 - NOCSH
-description: تحتوي هذه المقالة على معلومات حول استخدام النوافذ المنبثقة المائلة لتحسين أداء تنزيل الرسائل في Outlook على ويب.
+description: تحتوي هذه المقالة على معلومات حول استخدام العناصر المنبثقة المرنة لتحسين أداء تنزيل الرسائل في Outlook على ويب.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aaacacc0c1db418181690a5a4691bd251180d97c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 40494b43438a491fc200fd19e3015eed58b17493
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63568787"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096271"
 ---
-# <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>استخدام النوافذ المنبثقة المائلة لتقليل الذاكرة المستخدمة عند قراءة رسائل البريد
+# <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>استخدام النوافذ المنبثقة المرنة لتقليل الذاكرة المستخدمة عند قراءة رسائل البريد
 
-تحتوي هذه المقالة على معلومات لتحسين أداء تنزيل الرسائل في Outlook على ويب. هذه المقالة هي جزء من تخطيط الشبكة وضبط الأداء [Office 365](./network-planning-and-performance.md) المشروع.
+تحتوي هذه المقالة على معلومات لتحسين أداء تنزيل الرسائل في Outlook على ويب. تشكل هذه المقالة جزءا من [تخطيط الشبكة وضبط الأداء لمشروع Office 365](./network-planning-and-performance.md).
   
-بصيغتك مسؤول Office 365 أو المسؤول العام أو مسؤول المستخدم، يمكنك تكوين Outlook على ويب لتقديم نوافذ منبثقة مائلة، إصدار أصغر وأقل استخداما للذاكرة من رسائل بريد إلكتروني معينة في Microsoft Edge أو Internet Explorer. عند تكوين النوافذ المنبثقة المائلة Outlook على ويب، يتم تحميل المكونات التي يتم عرضها من جانب الخادم لتحسين الأداء.
+بصفتك **مسؤول تطبيق** Office 365 أو **مسؤولا عموميا** أو **مسؤول مستخدم**، يمكنك تكوين Outlook على ويب لتقديم _النوافذ المنبثقة المرنة_، وهو إصدار أصغر وأقل استخداما للذاكرة لبعض رسائل البريد الإلكتروني في Microsoft Edge أو Internet Explorer. عند تكوين العناصر المنبثقة المرنة Outlook على ويب، يتم تحميل المكونات المعروضة من جانب الخادم التي تحسن الأداء.
   
 > [!NOTE]
-> حتى مارس 2018، لا تتوفر النوافذ المنبثقة المائلة للرسائل التي تحدد قيود حقوق الاستخدام، مثل إدارة حقوق استخدام المعلومات (IRM).
+> اعتبارا من مارس 2018، لا تتوفر النوافذ المنبثقة المرنة للرسائل التي تحدد قيود حقوق الاستخدام، مثل إدارة حقوق استخدام المعلومات (IRM).
   
-ستستمر هذه الميزات في العمل في النافذة الرئيسية ولكنها غير متوفرة في النوافذ المنبثقة المائلة:
+ستستمر هذه الميزات في العمل في النافذة الرئيسية ولكنها غير متوفرة في النوافذ المنبثقة المرنة:
   
-- Outlook الإضافية
+- Outlook الوظائف الإضافية
   
-- Skype for Business الحضور
+- حالة الحضور Skype for Business
   
-## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a>لتكوين النوافذ المنبثقة المائلة لجميع المستخدمين ضمن Office 365 الخاصة بك
+## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a>لتكوين العناصر المنبثقة المرنة لجميع المستخدمين داخل مؤسستك Office 365
   
-1. [الاتصال Exchange Online استخدام PowerShell البعيد](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [الاتصال إلى Exchange Online باستخدام Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
   
-2. قم بتشغيل [Cmdlet Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) باستخدام المعلمة LeanPopoutEnabled كما يلي:
+2. قم بتشغيل [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) cmdlet مع المعلمة LeanPopoutEnabled كما يلي:
 
   ```powershell
   Set-OrganizationConfig -LeanPopoutEnabled <$true |$false >
   ```
 
-  على سبيل المثال، لتمكين النوافذ المنبثقة المائلة لجميع المستخدمين في مؤسستك:
+  على سبيل المثال، لتمكين النوافذ المنبثقة المرنة لجميع المستخدمين في مؤسستك:
   
   ```powershell
   Set-OrganizationConfig -LeanPopoutEnabled $true
   ```
 
-  لتعطيل النوافذ المنبثقة المائلة لجميع المستخدمين في مؤسستك:
+  لتعطيل النوافذ المنبثقة المرنة لجميع المستخدمين في مؤسستك:
 
   ```powershell
   Set-OrganizationConfig -LeanPopoutEnabled $false

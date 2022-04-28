@@ -2,8 +2,8 @@
 title: تجميع معلومات تشخيص eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: تعرف على كيفية جمع معلومات تشخيص eDiscovery لحالة دعم Microsoft.
-ms.openlocfilehash: 6077df8f0a014b9e3356d8f520ddbaf0b2378983
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2759156a3948339629ea7d988eaaa5464da197fa
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994425"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095873"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>تجميع معلومات تشخيص eDiscovery
 

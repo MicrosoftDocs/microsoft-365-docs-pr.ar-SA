@@ -2,8 +2,8 @@
 title: إعداد موصل أرشفة بيانات دردشة ICE الاتصال في Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل 17a-4 ICE الاتصال Chat DataParser واستخدامه لاستيراد بيانات ICE الاتصال Chat وأرشفتها في Microsoft 365.
-ms.openlocfilehash: fcc700546a15c6dad39b9ebcaeb7385194727016
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 106b425886b6294f7c96ead439be30c5e61030a0
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998058"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097217"
 ---
 # <a name="set-up-a-connector-to-archive-ice-connect-chat-data"></a>إعداد موصل أرشفة بيانات دردشة الاتصال ICE
 

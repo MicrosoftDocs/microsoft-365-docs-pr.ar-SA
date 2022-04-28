@@ -2,8 +2,8 @@
 title: الكشف شبه المكرر في eDiscovery
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: استخدم الكشف شبه المكرر لتجميع المستندات المتشابهة نصيا عند تحليل بيانات الحالة في eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e22444845005f4cf155340e13856722976715d91
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 4b6ad8a3a3775c8389e943aa249cffd16b6b84d2
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997593"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096623"
 ---
 # <a name="near-duplicate-detection-in-ediscovery-premium"></a>الكشف شبه المكرر في eDiscovery (Premium)
 

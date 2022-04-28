@@ -2,8 +2,8 @@
 title: إنشاء استعلامات البحث في eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: استخدم الكلمات الأساسية والشروط لتضييق نطاق البحث عند البحث عن البيانات باستخدام eDiscovery (Premium) في Microsoft 365.
-ms.openlocfilehash: cceac6974bacb066201120ac4972393f2323353c
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: afb033a014528b7e79a6ce192896f4b2b3eef054
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994997"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096127"
 ---
 # <a name="build-search-queries-for-collections-in-ediscovery-premium"></a>إنشاء استعلامات البحث للمجموعات في eDiscovery (Premium)
 

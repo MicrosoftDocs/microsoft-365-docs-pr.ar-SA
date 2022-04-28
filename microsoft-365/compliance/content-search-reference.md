@@ -2,8 +2,8 @@
 title: مرجع الميزة للبحث في المحتوى
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: تحتوي هذه المقالة على معلومات مرجعية حول أداة البحث في المحتوى eDiscovery في مدخل توافق Microsoft Purview لمساعدتك على معرفة التفاصيل العديدة حول البحث في المحتوى.
-ms.openlocfilehash: 72088b1a1bd2e3f3ba2c38ee827c6eb46b7c893a
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 8d7f1497a0dbd400536dd74c5abd4b9e3be7e29f
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995701"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097107"
 ---
 # <a name="feature-reference-for-content-search"></a>مرجع الميزة للبحث في المحتوى
 
@@ -192,7 +192,7 @@ ms.locfileid: "64995701"
 
 ## <a name="searching-inactive-mailboxes"></a>البحث في علب البريد غير النشطة
 
-يمكنك البحث في علب البريد غير النشطة في بحث المحتوى. للحصول على قائمة بعلب البريد غير النشطة في مؤسستك، قم بتشغيل الأمر `Get-Mailbox -InactiveMailboxOnly` في Exchange Online PowerShell. بدلا من ذلك، يمكنك الانتقال إلى **استبقاء** **إدارة** \> المعلومات في مركز التوافق & الأمان، ثم النقر فوق علامات حذف شريط **MoreNavigation**![.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>**علب البريد غير النشطة**.
+يمكنك البحث في علب البريد غير النشطة في بحث المحتوى. للحصول على قائمة بعلب البريد غير النشطة في مؤسستك، قم بتشغيل الأمر `Get-Mailbox -InactiveMailboxOnly` في Exchange Online PowerShell. بدلا من ذلك، يمكنك الانتقال إلى **استبقاء** إدارة \> **دورة حياة البيانات** في مدخل توافق Microsoft Purview، ثم النقر فوق علامات حذف شريط **MoreNavigation**![.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \>**علب البريد غير النشطة**.
 
 فيما يلي بعض الأمور التي يجب وضعها في الاعتبار عند البحث في علب البريد غير النشطة.
 

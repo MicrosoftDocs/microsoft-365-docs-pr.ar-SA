@@ -2,7 +2,7 @@
 title: إدارة Microsoft 365 باستخدام PowerShell
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: landing-page
 ms.service: o365-administration
@@ -18,25 +18,25 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: تعرف على كيفية إدارة Microsoft 365 والتراخيص و365 تطبيقا باستخدام PowerShell.
-ms.openlocfilehash: 2fedef0edc9effc73ffbfbd678905e0b8276df8f
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: تعرف على كيفية إدارة Microsoft 365 المستخدمين والتراخيص و365 تطبيقا باستخدام PowerShell.
+ms.openlocfilehash: 147115df77685e50ef4a8d6f99fcf579db96102d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681227"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096447"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>إدارة Microsoft 365 باستخدام PowerShell
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
-PowerShell for Microsoft 365 هو أداة إدارة فعالة تكمل مركز مسؤولي Microsoft 365. على سبيل المثال، يمكنك استخدام التنفيذ التلقائي ل PowerShell لإدارة حسابات وتراخيص مستخدمين متعددة بسهولة وإنشاء تقارير.
+PowerShell for Microsoft 365 هي أداة إدارة قوية تكمل مركز مسؤولي Microsoft 365. على سبيل المثال، يمكنك استخدام أتمتة PowerShell لإدارة حسابات المستخدمين والتراخيص المتعددة بسهولة وإنشاء التقارير.
 
-حدد من المواضيع التالية للتعرف على كيفية استخدام PowerShell لإدارة Microsoft 365:
+حدد من المواضيع التالية لمعرفة كيفية استخدام PowerShell لإدارة Microsoft 365:
   
-- [**بدء العمل**](getting-started-with-microsoft-365-powershell.md)
+- [**بدء الاستخدام**](getting-started-with-microsoft-365-powershell.md)
 
-    ابدأ هنا إذا لم تكن ملما باستخدام PowerShell Microsoft 365، وتريد تثبيت Microsoft 365 النمطية والاتصال باشتراكك.
+    ابدأ من هنا إذا لم تكن على دراية ب PowerShell ل Microsoft 365، وتريد تثبيت وحدات Microsoft 365 والاتصال باشتراكك.
 
 - [**حسابات المستخدمين والتراخيص والمجموعات**](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 
@@ -48,19 +48,19 @@ PowerShell for Microsoft 365 هو أداة إدارة فعالة تكمل مرك
 
 - [**Exchange Online**](/powershell/exchange/exchange-online-powershell)
 
-    ابدأ هنا إذا كنت تريد إدارة Exchange Online.
+    ابدأ من هنا إذا كنت تريد إدارة Exchange Online.
 
 - [**ترحيل البريد الإلكتروني**](use-powershell-for-email-migration-to-microsoft-365.md)
 
-    ابدأ هنا إذا كنت تريد ترحيل بريدك الإلكتروني من أنظمة موجودة مسبقا.
+    ابدأ من هنا إذا كنت تريد ترحيل بريدك الإلكتروني من أنظمة موجودة مسبقا.
 
-- [**مركز & الأمان**](/powershell/exchange/scc-powershell)
+- [**مركز توافق & الأمان**](/powershell/exchange/scc-powershell)
 
-    ابدأ هنا إذا كنت تريد إدارة ميزات مركز & التوافق.
+    ابدأ من هنا إذا كنت تريد إدارة ميزات مركز التوافق & الأمان.
 
 - [**شركاء أذونات الوصول المفوضة (DAP)**](manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
 
-    ابدأ هنا إذا كنت تريد استخدام شركاء Syndication Cloud Solution Provider (CSP) لإدارة Microsoft 365 المستأجرين للعملاء.
+    ابدأ من هنا إذا كنت تريد استخدام شركاء Syndication وشركاء Cloud Solution Provider (CSP) لإدارة مستأجري العملاء Microsoft 365.
 
 - [**Skype for Business Online**](manage-skype-for-business-online-with-microsoft-365-powershell.md)
 

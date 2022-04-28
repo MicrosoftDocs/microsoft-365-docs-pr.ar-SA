@@ -1,10 +1,10 @@
 ---
-title: تكوين قاعدة مؤسسة محاكاة Microsoft 365
+title: محاكاة تكوين قاعدة المؤسسة Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
@@ -17,76 +17,76 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: استخدم دليل Test Lab هذا لإنشاء بيئة اختبار مؤسسة محاكاة Microsoft 365 للمؤسسة.
-ms.openlocfilehash: d335ed074adc6abe8bc1dabf58392d5b9051ccc6
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: استخدم دليل مختبر الاختبار هذا لإنشاء بيئة اختبار مؤسسة محاكاة Microsoft 365 للمؤسسة.
+ms.openlocfilehash: 9c52bf657e91ceca9ef6e43f20a523a57a7b5042
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63567102"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078702"
 ---
-# <a name="the-simulated-enterprise-base-configuration"></a>تكوين قاعدة المؤسسة الذي تم محاكاته
+# <a name="the-simulated-enterprise-base-configuration"></a>التكوين الأساسي لمحاكاة المؤسسة
 
-*يمكن استخدام دليل Test Lab هذا Microsoft 365 لبيئات الاختبار Office 365 Enterprise المؤسسة.*
+*يمكن استخدام دليل مختبر الاختبار هذا لكل من Microsoft 365 لبيئات اختبار المؤسسة Office 365 Enterprise.*
 
-تصف هذه المقالة كيفية إنشاء بيئة مبسطة Microsoft 365 للمؤسسات تتضمن:
+تصف هذه المقالة كيفية إنشاء بيئة مبسطة Microsoft 365 للمؤسسة تتضمن:
 
-- اشتراك Microsoft 365 E5 تجريبي أو مدفوع.
-- إنترانت مؤسسة مبسطة متصلة بالإنترنت، تتكون من ثلاثة أجهزة ظاهرية على شبكة Azure الظاهرية (DC1 و APP1 و CLIENT1).
+- اشتراك تجريبي أو مدفوع Microsoft 365 E5.
+- إنترانت مؤسسة مبسطة متصلة بالإنترنت، تتكون من ثلاثة أجهزة ظاهرية على شبكة Azure الظاهرية (DC1 وAPP1 و CLIENT1).
  
-![تكوين قاعدة المؤسسة الذي تم محاكاته.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+![تكوين قاعدة المؤسسة المحاكاة.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 يتضمن إنشاء بيئة اختبار مبسطة مرحلتين:
 - [المرحلة 1: إنشاء إنترانت محاكاة](#phase-1-create-a-simulated-intranet)
-- [المرحلة 2: إنشاء اشتراك Microsoft 365 E5 اشتراكك](#phase-2-create-your-microsoft-365-e5-subscription)
+- [المرحلة 2: إنشاء اشتراكك في Microsoft 365 E5](#phase-2-create-your-microsoft-365-e5-subscription)
 
-يمكنك استخدام البيئة الناتجة لاختبار ميزات وظائف Microsoft 365 للمؤسسة باستخدام "أدلة اختبار [معمل](m365-enterprise-test-lab-guides.md) الاختبار" إضافية أو بنفسك.[](https://www.microsoft.com/microsoft-365/enterprise)
+يمكنك استخدام البيئة الناتجة لاختبار ميزات [ووظائف Microsoft 365 للمؤسسة](https://www.microsoft.com/microsoft-365/enterprise) باستخدام [دلائل مختبر الاختبار الإضافية](m365-enterprise-test-lab-guides.md) أو بنفسك.
 
-![اختبار دليل المعمل لسحابة Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![اختبار دلائل المختبر لسحابة Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> للحصول على خريطة مرئية لكل المقالات في Microsoft 365 دليل اختبار المؤسسة، انتقل إلى Microsoft 365 [دليل اختبار المؤسسة](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> للحصول على خريطة مرئية لجميع المقالات في Microsoft 365 لمكدس دليل مختبر اختبار المؤسسة، انتقل إلى [Microsoft 365 لمكدس دليل مختبر اختبار المؤسسة](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>المرحلة 1: إنشاء إنترانت محاكاة
 
-في هذه المرحلة، يمكنك إنشاء إنترانت محاكاة في خدمات البنية الأساسية ل Azure تتضمن وحدة تحكم مجال خدمات مجال Active Directory (AD DS) وخادم تطبيق وحاسب عميل.
+في هذه المرحلة، أنشئ إنترانت محاكاة في خدمات البنية الأساسية ل Azure التي تتضمن وحدة تحكم مجال خدمات مجال Active Directory (AD DS)، وخادم تطبيق، وكمبيوتر عميل.
 
-سوف تستخدم أجهزة الكمبيوتر هذه في Microsoft 365 إضافية [ل "أدلة](m365-enterprise-test-lab-guides.md) اختبار المعمل" للمؤسسات لتكوين الهوية المختلطة والإمكانات الأخرى وشرحها.
+ستستخدم أجهزة الكمبيوتر هذه في [Microsoft 365 إضافية لدلائل مختبر اختبار المؤسسة](m365-enterprise-test-lab-guides.md) لتكوين الهوية المختلطة والقدرات الأخرى وإظهارها.
 
-### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>الطريقة 1: إنشاء إنترانت محاكاة باستخدام قالب Azure Resource Manager
+### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>الأسلوب 1: إنشاء إنترانت محاكاة باستخدام قالب azure Resource Manager
 
-في هذا الأسلوب، يمكنك استخدام قالب Azure Resource Manager لإنشاء إنترانت المحاكاة. تحتوي قوالب Azure Resource Manager على كل الإرشادات لإنشاء البنية الأساسية للشبكات في Azure، و الأجهزة الظاهرية، وتكوينها.
+في هذا الأسلوب، يمكنك استخدام قالب azure Resource Manager لإنشاء الإنترانت المحاكاة. تحتوي قوالب azure Resource Manager على جميع الإرشادات لإنشاء البنية الأساسية الشبكات Azure والأجهزة الظاهرية وتكوينها.
 
-قبل نشر القالب، اقرأ صفحة [القالب README](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) واستعد المعلومات التالية:
+قبل نشر القالب، اقرأ [صفحة README للقالب](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) واجهز المعلومات التالية:
 
-- اسم مجال DNS العام لبيئة الاختبار (testlab.\<*your public domain*>). ستدخل هذا الاسم في الحقل **اسم المجال** في **صفحة النشر** المخصص.
-- بادرة تسمية DNS ل عناوين URL الخاصة عناوين IP العامة في الأجهزة الظاهرية. ستحتاج إلى إدخال هذه التسمية في الحقل **"بادرة تسمية Dns** " في **صفحة النشر** المخصص.
+- اسم مجال DNS العام لبيئة الاختبار الخاصة بك (testlab.\<*your public domain*>). ستدخل هذا الاسم في الحقل **"اسم المجال"** في صفحة **النشر المخصصة** .
+- بادئة تسمية DNS لعناوين URL لعناوين IP العامة للأجهزة الظاهرية. ستحتاج إلى إدخال هذه التسمية في حقل بادئة **تسمية Dns** في صفحة **النشر المخصصة** .
 
-بعد قراءة الإرشادات، حدد **نشر إلى Azure** على [صفحة القالب README](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) للبدء.
+بعد قراءة الإرشادات، حدد **Deploy to Azure** على [صفحة README للقالب](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) للبدء.
 
 >[!Note]
->تتطلب إنترانت المحاكاة التي تم إنشاؤها بواسطة قالب Azure Resource Manager اشتراك Azure مدفوع.
+>يتطلب الإنترانت المحاكي الذي تم إنشاؤه بواسطة قالب azure Resource Manager اشتراك Azure مدفوعا.
 
 بعد اكتمال القالب، يبدو التكوين كما يلي:
 
-![إنترانت المحاكاة في خدمات البنية الأساسية ل Azure.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![الإنترانت المحاكي في خدمات البنية الأساسية ل Azure.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
-### <a name="method-2-build-your-simulated-intranet-with-azure-powershell"></a>الطريقة 2: إنشاء إنترانت محاكاة باستخدام Azure PowerShell
+### <a name="method-2-build-your-simulated-intranet-with-azure-powershell"></a>الأسلوب 2: إنشاء إنترانت المحاكاة باستخدام Azure PowerShell
 
-في هذا الأسلوب، Windows PowerShell وحدة Azure PowerShell النمطية لإنشاء البنية الأساسية للشبكة، و الأجهزة الظاهرية، وتكوينها.
+في هذه الطريقة، يمكنك استخدام Windows PowerShell والوحدة النمطية Azure PowerShell لإنشاء البنية الأساسية للشبكات والأجهزة الظاهرية وتكوينها.
 
-استخدم هذا الأسلوب إذا كنت تريد الحصول على تجربة إنشاء عناصر البنية الأساسية ل Azure خطوة واحدة في كل مرة باستخدام PowerShell. يمكنك بعد ذلك تخصيص كتل أوامر PowerShell لنشرك الخاص لألآلات الظاهرية الأخرى في Azure.
+استخدم هذا الأسلوب إذا كنت تريد الحصول على خبرة في إنشاء عناصر البنية الأساسية ل Azure خطوة واحدة في كل مرة باستخدام PowerShell. يمكنك بعد ذلك تخصيص كتل أوامر PowerShell للنشر الخاص بك من الأجهزة الظاهرية الأخرى في Azure.
 
 #### <a name="step-1-create-dc1"></a>الخطوة 1: إنشاء DC1
 
-في هذه الخطوة، يمكنك إنشاء شبكة Azure ظاهرية وإضافة DC1، وهو جهاز ظاهري هو وحدة تحكم مجال لمجال AD DS.
+في هذه الخطوة، يمكنك إنشاء شبكة ظاهرية Azure وإضافة DC1، وهو جهاز ظاهري هو وحدة تحكم بالمجال لمجال AD DS.
 
-أولا، ابدأ Windows PowerShell موجه الأوامر على الكمبيوتر المحلي.
+أولا، ابدأ موجه أوامر Windows PowerShell على الكمبيوتر المحلي.
   
 > [!NOTE]
-> تستخدم مجموعات الأوامر التالية الإصدار الأخير من Azure PowerShell. راجع [بدء العمل باستخدام Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/). 
+> تستخدم مجموعات الأوامر التالية أحدث إصدار من Azure PowerShell. راجع [بدء استخدام أوامر Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/). 
   
-سجل الدخول إلى حساب Azure باستخدام الأمر التالي.
+سجل الدخول إلى حساب Azure الخاص بك باستخدام الأمر التالي.
   
 ```powershell
 Connect-AzAccount
@@ -98,20 +98,20 @@ Connect-AzAccount
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-تعيين اشتراكك في Azure. استبدل كل شيء ضمن علامات الاقتباس، بما في ذلك أقواس الزاوية ("<" و">")، بالاسم الصحيح.
+تعيين اشتراك Azure الخاص بك. استبدل كل شيء ضمن علامات الاقتباس، بما في ذلك الأقواس الزاوية ("<" و">")، بالاسم الصحيح.
   
 ```powershell
 $subscr="<subscription name>"
 Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 ```
 
-بعد ذلك، أنشئ مجموعة موارد جديدة لمختبر اختبار المؤسسة الذي تم محاكاته. لتحديد اسم مجموعة موارد فريدة، استخدم هذا الأمر لتضمين مجموعات الموارد الموجودة.
+بعد ذلك، قم بإنشاء مجموعة موارد جديدة لمختبر اختبار المؤسسة المحاكي. لتحديد اسم مجموعة موارد فريد، استخدم هذا الأمر لإدراج مجموعات الموارد الموجودة.
   
 ```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-أنشئ مجموعة الموارد الجديدة باستخدام هذه الأوامر. استبدل كل شيء ضمن علامات الاقتباس، بما في ذلك أقواس الزاوية، بالأسماء الصحيحة.
+إنشاء مجموعة الموارد الجديدة باستخدام هذه الأوامر. استبدل كل شيء ضمن علامات الاقتباس، بما في ذلك الأقواس الزاوية، بالأسماء الصحيحة.
   
 ```powershell
 $rgName="<resource group name>"
@@ -119,7 +119,7 @@ $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-بعد ذلك، قم بإنشاء شبكة TestLab الظاهرية التي ستستضيف الشبكة الفرعية لشبكة الشركة لبيئة المؤسسة التي تم محاكاتها وحمايتها باستخدام مجموعة أمان الشبكة. قم بتعبئة اسم مجموعة الموارد وتشغيل هذه الأوامر في موجه الأوامر PowerShell على الكمبيوتر المحلي.
+بعد ذلك، قم بإنشاء شبكة TestLab الظاهرية التي ستستضيف الشبكة الفرعية لشبكة الشركة لبيئة المؤسسة المحاكاة وحمايتها مع مجموعة أمان الشبكة. املأ اسم مجموعة الموارد وقم بتشغيل هذه الأوامر في موجه الأوامر PowerShell على الكمبيوتر المحلي.
   
 ```powershell
 $rgName="<name of your new resource group>"
@@ -134,9 +134,9 @@ Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPre
 $vnet | Set-AzVirtualNetwork
 ```
 
-بعد ذلك، يمكنك إنشاء الجهاز الظاهري DC1 وتكوينه ك وحدة تحكم مجال **للوح الاختبار.**\<your public domain> مجال AD DS وخادم DNS للآلات الظاهرية لشبكة TestLab الظاهرية. على سبيل المثال، إذا كان اسم مجالك العام **<span>contoso.com</span>**، سيكون الجهاز الظاهري DC1 وحدة تحكم مجال **<span>للمجال testlab.contoso.com</span>**.
+بعد ذلك، يمكنك إنشاء الجهاز الظاهري DC1 وتكوينه كوحدة تحكم بالمجال **لملف الاختبار.**\<your public domain> مجال AD DS وخادم DNS للأجهزة الظاهرية لشبكة TestLab الظاهرية. على سبيل المثال، إذا كان اسم مجالك العام **<span>contoso.com</span>**، فسيكون الجهاز الظاهري DC1 وحدة تحكم بالمجال لمجال **<span>testlab.contoso.com</span>**.
   
-لإنشاء جهاز Azure ظاهري ل DC1، قم بتعبئة اسم مجموعة الموارد وتشغيل هذه الأوامر في موجه الأوامر PowerShell على الكمبيوتر المحلي.
+لإنشاء جهاز ظاهري Azure ل DC1، املأ اسم مجموعة الموارد الخاصة بك وقم بتشغيل هذه الأوامر في موجه أوامر PowerShell على الكمبيوتر المحلي.
   
 ```powershell
 $rgName="<resource group name>"
@@ -156,35 +156,35 @@ $vm=Add-AzVMDataDisk -VM $vm -Name "DC1-DataDisk1" -CreateOption Attach -Managed
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-سيتم مطالبتك باسم المستخدم وكلمة المرور لحساب المسؤول المحلي على DC1. استخدم كلمة مرور قوية وسجل الاسم وكلمة المرور في موقع آمن.
+ستتم مطالبتك باسم مستخدم وكلمة مرور لحساب المسؤول المحلي على DC1. استخدم كلمة مرور قوية وسجل الاسم وكلمة المرور في موقع آمن.
   
-بعد ذلك، اتصل بالآلة الظاهرية DC1:
+بعد ذلك، اتصل بالجهاز الظاهري DC1:
   
-1. في مدخل [Azure](https://portal.azure.com)، حدد **مجموعات** الموارد > <اسم مجموعة الموارد ***الجديدة_*> > _DC1** >  **الاتصال**.
+1. في [مدخل Azure](https://portal.azure.com)، حدد **مجموعات الموارد** > <**_اسم مجموعة الموارد الجديدة_*_> > _* DC1** >  **الاتصال**.
     
-2. في الجزء المفتوح، حدد **تنزيل ملف RDP**. افتح ملف DC1.rdp الذي يتم تنزيله، **ثم حدد الاتصال**.
+2. في الجزء المفتوح، حدد **تنزيل ملف RDP**. افتح ملف DC1.rdp الذي تم تنزيله، ثم حدد **الاتصال**.
     
-3. حدد اسم حساب المسؤول المحلي ل DC1:
+3. حدد اسم حساب المسؤول المحلي DC1:
     
-   - بالنسبة Windows 7:
+   - ل Windows 7:
     
-     في مربع **أمن Windows**، حدد **استخدام حساب آخر**. في **اسم المستخدم،** أدخل **اسم حساب مسؤول DC1local\\**< *>*.
+     في مربع الحوار **أمن Windows**، حدد **"استخدام حساب آخر**". في **اسم المستخدم**، أدخل *اسم حساب مسؤول DC1local* **\\**<>.
     
    - بالنسبة Windows 8 أو Windows 10:
     
-     في مربع **أمن Windows**، حدد **المزيد من** الخيارات، ثم حدد **استخدام حساب مختلف**. في **اسم المستخدم،** أدخل **اسم حساب مسؤول DC1local\\**< *>*.
+     في مربع الحوار **أمن Windows**، حدد **"المزيد من الخيارات**"، ثم حدد **"استخدام حساب مختلف**". في **اسم المستخدم**، أدخل *اسم حساب مسؤول DC1local* **\\**<>.
     
-4. في **كلمة** المرور، أدخل كلمة مرور حساب المسؤول المحلي، ثم حدد **موافق**.
+4. في **كلمة المرور**، أدخل كلمة مرور حساب المسؤول المحلي، ثم حدد **"موافق**".
     
-5. عند المطالبة، حدد **نعم**.
+5. عند المطالبة، حدد **"نعم**".
     
-بعد ذلك، أضف قرص بيانات إضافي كحجم جديد باستخدام حرف محرك الأقراص F: باستخدام هذا الأمر على موجه الأوامر على مستوى Windows PowerShell على DC1.
+بعد ذلك، أضف قرص بيانات إضافي كوحدة تخزين جديدة مع حرف محرك الأقراص F: مع هذا الأمر في موجه أوامر Windows PowerShell على مستوى المسؤول على DC1.
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-بعد ذلك، قم بتكوين DC1 ك وحدة تحكم مجال وخادم DNS **للمختبر.**\<*your public domain*> المجال. حدد اسم المجال العام، وأزل أقواس الزاوية، ثم قم بتشغيل هذه الأوامر على مستوى المسؤول Windows PowerShell موجه الأوامر على DC1.
+بعد ذلك، قم بتكوين DC1 كوحدة تحكم بالمجال وخادم DNS ل **testlab.**\<*your public domain*> المجال. حدد اسم مجالك العام، وقم بإزالة الأقواس الزاوية، ثم قم بتشغيل هذه الأوامر على مستوى المسؤول Windows PowerShell موجه الأوامر على DC1.
   
 ```powershell
 $yourDomain="<your public domain>"
@@ -195,27 +195,27 @@ Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -Sysv
   
 لاحظ أن هذه الأوامر قد تستغرق بضع دقائق لإكمالها.
   
-بعد إعادة تشغيل DC1، أعد الاتصال بالآلة الظاهرية DC1.
+بعد إعادة تشغيل DC1، أعد الاتصال بالجهاز الظاهري DC1.
   
-1. في مدخل [Azure](https://portal.azure.com)، حدد **مجموعات** الموارد > <*اسم* مجموعة الموارد> > **DC1** >  **الاتصال**.
+1. في [مدخل Microsoft Azure](https://portal.azure.com)، حدد **مجموعات الموارد** > <*اسم مجموعة الموارد*> > **DC1** >  **الاتصال**.
     
-2. قم بتشغيل ملف DC1.rdp الذي يتم تنزيله، **ثم حدد الاتصال**.
+2. قم بتشغيل ملف DC1.rdp الذي تم تنزيله، ثم حدد **الاتصال**.
     
-3. في **أمن Windows**، حدد **استخدام حساب آخر**. في **اسم المستخدم،** أدخل **اسم حساب مسؤول TESTLABlocal\\**< *>*.
+3. في **أمن Windows**، حدد **"استخدام حساب آخر**". في **اسم المستخدم**، أدخل *اسم حساب مسؤول TESTLABlocal* **\\**<>.
     
-4. في المربع **كلمة** المرور، أدخل كلمة مرور حساب المسؤول المحلي، ثم حدد **موافق**.
+4. في المربع **"كلمة المرور** "، أدخل كلمة مرور حساب المسؤول المحلي، ثم حدد **"موافق**".
     
-5. عند المطالبة، حدد **نعم**.
+5. عند المطالبة، حدد **"نعم**".
     
-بعد ذلك، أنشئ حساب مستخدم في Active Directory سيتم استخدامه عند تسجيل الدخول إلى أجهزة كمبيوتر أعضاء مجال TESTLAB. تشغيل هذا الأمر على موجه أوامر Windows PowerShell المسؤول.
+بعد ذلك، أنشئ حساب مستخدم في Active Directory سيتم استخدامه عند تسجيل الدخول إلى أجهزة كمبيوتر أعضاء مجال TESTLAB. تشغيل هذا الأمر على مستوى المسؤول Windows PowerShell موجه الأوامر.
   
 ```powershell
 New-ADUser -SamAccountName User1 -AccountPassword (read-host "Set user password" -assecurestring) -name "User1" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
 ```
 
-تجدر الإشارة إلى أن هذا الأمر يطالبك بتزويدك بكلمة مرور حساب User1. سيتم استخدام هذا الحساب لاتصالات سطح المكتب البعيد لكل أجهزة الكمبيوتر الأعضاء في مجال TESTLAB، لذا اختر كلمة مرور قوية. سجل كلمة مرور حساب User1 واخزنها في موقع آمن.
+لاحظ أن هذا الأمر يطالبك بتوفير كلمة مرور حساب User1. سيتم استخدام هذا الحساب لاتصالات سطح المكتب البعيد لكافة أجهزة الكمبيوتر الأعضاء في مجال TESTLAB، لذا اختر كلمة مرور قوية. تسجيل كلمة مرور حساب User1 وتخزينها في موقع آمن.
   
-بعد ذلك، قم بتكوين حساب User1 الجديد كمجال ومؤسسة ومسؤول مخطط. تشغيل هذا الأمر في موجه الأوامر على مستوى Windows PowerShell المسؤول.
+بعد ذلك، قم بتكوين حساب User1 الجديد كمجال، والمؤسسة، ومسؤول المخطط. قم بتشغيل هذا الأمر على مستوى المسؤول Windows PowerShell موجه الأوامر.
   
 ```powershell
 $yourDomain="<your public domain>"
@@ -228,7 +228,7 @@ ForEach ($name in $groupNames) {Add-ADPrincipalGroupMembership -Identity $userSI
 
 أغلق جلسة عمل سطح المكتب البعيد باستخدام DC1 ثم أعد الاتصال باستخدام حساب TESTLABUser1\\.
   
-بعد ذلك، للسماح بازدحام البيانات لأداة Ping، ادير هذا الأمر على مستوى المسؤول Windows PowerShell موجه الأوامر.
+بعد ذلك، للسماح بنسبة استخدام الشبكة لأداة Ping، قم بتشغيل هذا الأمر على مستوى المسؤول Windows PowerShell موجه الأوامر.
   
 ```powershell
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
@@ -236,13 +236,13 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 يبدو التكوين الحالي كما يلي:
   
-![الخطوة 1 من تكوين قاعدة المؤسسة الذي تم محاكاته.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
+![الخطوة 1 من تكوين قاعدة المؤسسة المحاكاة.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
   
 #### <a name="step-2-configure-app1"></a>الخطوة 2: تكوين APP1
 
-في هذه الخطوة، يمكنك إنشاء APP1 وتكوينه، وهو خادم تطبيق يوفر في البداية خدمات مشاركة الملفات والويب.
+في هذه الخطوة، يمكنك إنشاء وتكوين APP1، وهو خادم تطبيق يوفر في البداية خدمات مشاركة الملفات والويب.
 
-لإنشاء جهاز Azure الظاهري ل APP1، قم بتعبئة اسم مجموعة الموارد وتشغيل هذه الأوامر في موجه الأوامر على الكمبيوتر المحلي.
+لإنشاء جهاز ظاهري من Azure ل APP1، قم بتعبئة اسم مجموعة الموارد الخاصة بك وتشغيل هذه الأوامر في موجه الأوامر على الكمبيوتر المحلي.
   
 ```powershell
 $rgName="<resource group name>"
@@ -259,11 +259,11 @@ $vm=Set-AzVMOSDisk -VM $vm -Name "APP1-OS" -DiskSizeInGB 128 -CreateOption FromI
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-بعد ذلك، اتصل بالآلة الظاهرية APP1 باستخدام اسم حساب المسؤول المحلي وكلمة المرور ل APP1، ثم افتح Windows PowerShell موجه الأوامر.
+بعد ذلك، اتصل بالجهاز الظاهري APP1 باستخدام اسم حساب مسؤول APP1 المحلي وكلمة المرور، ثم افتح موجه أوامر Windows PowerShell.
   
-للتحقق من دقة الاسم واتصال الشبكة بين APP1 و DC1، قم **بتشغيل ping dc1.testlab.**\<*your public domain name*> وتحقق من وجود أربعة ردود.
+للتحقق من تحليل الاسم واتصال الشبكة بين APP1 و DC1، قم بتشغيل **ping dc1.testlab.**\<*your public domain name*> الأمر والتحقق من وجود أربعة ردود.
   
-بعد ذلك، انضم إلى الجهاز الظاهري APP1 إلى مجال TESTLAB باستخدام هذه الأوامر في Windows PowerShell.
+بعد ذلك، قم بضم الجهاز الظاهري APP1 إلى مجال TESTLAB باستخدام هذه الأوامر في موجه Windows PowerShell.
   
 ```powershell
 $yourDomain="<your public domain name>"
@@ -271,11 +271,11 @@ Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
-تجدر الإشارة إلى أنه بعد تشغيل الأمر **"إضافة كمبيوتر** "، يجب توفير بيانات اعتماد حساب مجال TESTLABUser1\\.
+لاحظ أنه بعد تشغيل الأمر **"جهاز الكمبيوتر الإضافي** "، يجب توفير بيانات اعتماد حساب المجال TESTLABUser1\\.
   
-بعد إعادة تشغيل APP1، اتصل به باستخدام حساب TESTLABUser1\\، ثم افتح موجه أوامر Windows PowerShell المسؤول.
+بعد إعادة تشغيل APP1، اتصل به باستخدام حساب TESTLABUser1\\، ثم افتح موجه أوامر Windows PowerShell على مستوى المسؤول.
   
-بعد ذلك، اجعل APP1 خادم ويب بهذا الأمر على مستوى Windows PowerShell موجه الأوامر على APP1.
+بعد ذلك، اجعل APP1 خادم ويب مع هذا الأمر في موجه أوامر Windows PowerShell على مستوى المسؤول على APP1.
   
 ```powershell
 Install-WindowsFeature Web-WebServer -IncludeManagementTools
@@ -291,16 +291,16 @@ New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 
 يبدو التكوين الحالي كما يلي:
   
-![الخطوة 2 من تكوين قاعدة المؤسسة الذي تم محاكاته.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
+![الخطوة 2 من التكوين الأساسي لمحاكاة المؤسسة.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 #### <a name="step-3-configure-client1"></a>الخطوة 3: تكوين CLIENT1
 
-في هذه الخطوة، يمكنك إنشاء CLIENT1 وتكوينه، والذي يعمل ككمبيوتر محمول أو كمبيوتر لوحي أو كمبيوتر سطح مكتب نموذجي على الإنترانت.
+في هذه الخطوة، يمكنك إنشاء وتكوين CLIENT1، الذي يعمل ككمبيوتر محمول أو كمبيوتر لوحي أو كمبيوتر سطح مكتب نموذجي على إنترانت.
 
 > [!NOTE]  
-> تقوم مجموعة الأوامر التالية بإنشاء CLIENT1 Windows Datacenter Server 2016، والذي يمكن القيام به لجميع أنواع اشتراكات Azure. إذا كان لديك اشتراك Visual Studio Azure، يمكنك إنشاء CLIENT1 Windows 10 باستخدام مدخل [Azure](https://portal.azure.com).
+> تنشئ مجموعة الأوامر التالية CLIENT1 قيد التشغيل Windows Server 2016 Datacenter، والذي يمكن القيام به لجميع أنواع اشتراكات Azure. إذا كان لديك اشتراك Azure يستند إلى Visual Studio، يمكنك إنشاء CLIENT1 قيد التشغيل Windows 10 باستخدام [مدخل Azure](https://portal.azure.com).
   
-لإنشاء جهاز Azure ظاهري ل CLIENT1، قم بتعبئة اسم مجموعة الموارد وتشغيل هذه الأوامر في موجه الأوامر على الكمبيوتر المحلي.
+لإنشاء جهاز ظاهري من Azure ل CLIENT1، قم بتعبئة اسم مجموعة الموارد الخاصة بك وتشغيل هذه الأوامر في موجه الأوامر على الكمبيوتر المحلي.
   
 ```powershell
 $rgName="<resource group name>"
@@ -317,11 +317,11 @@ $vm=Set-AzVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption Fr
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-بعد ذلك، اتصل بالآلة الظاهرية CLIENT1 باستخدام اسم حساب المسؤول المحلي CLIENT1 وكلمة المرور، ثم افتح موجه أوامر على مستوى Windows PowerShell المسؤول.
+بعد ذلك، اتصل بالجهاز الظاهري CLIENT1 باستخدام اسم حساب المسؤول المحلي CLIENT1 وكلمة المرور، ثم افتح موجه أوامر Windows PowerShell على مستوى المسؤول.
   
-للتحقق من دقة الاسم واتصال الشبكة بين CLIENT1 و DC1، قم **بتشغيل ping dc1.testlab.**\<*your public domain name*> أمر في Windows PowerShell موجه الأوامر وتحقق من وجود أربعة ردود.
+للتحقق من تحليل الاسم واتصال الشبكة بين CLIENT1 و DC1، قم بتشغيل **ping dc1.testlab.**\<*your public domain name*> الأمر في موجه أوامر Windows PowerShell وتحقق من وجود أربعة ردود.
   
-بعد ذلك، انضم إلى الجهاز الظاهري CLIENT1 إلى مجال TESTLAB باستخدام هذه الأوامر في Windows PowerShell.
+بعد ذلك، قم بضم الجهاز الظاهري CLIENT1 إلى مجال TESTLAB باستخدام هذه الأوامر في موجه Windows PowerShell.
   
 ```powershell
 $yourDomain="<your public domain name>"
@@ -329,91 +329,91 @@ Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
-تجدر الإشارة إلى أنه يجب توفير بيانات اعتماد حساب مجال TESTLABUser1\\ بعد تشغيل **الأمر "إضافة كمبيوتر** ".
+تجدر الإشارة إلى أنه يجب توفير بيانات اعتماد حساب مجال TESTLABUser1\\ بعد تشغيل الأمر **Add-Computer** .
   
-بعد إعادة تشغيل CLIENT1، اتصل به باستخدام اسم حساب TESTLABUser1\\ وكلمة المرور، ثم افتح موجه أوامر Windows PowerShell المسؤول.
+بعد إعادة تشغيل CLIENT1، اتصل به باستخدام اسم حساب TESTLABUser1\\ وكلمة المرور، ثم افتح موجه أوامر Windows PowerShell على مستوى المسؤول.
   
-بعد ذلك، تحقق من إمكانية الوصول إلى موارد مشاركة الويب والملفات على APP1 من CLIENT1.
+بعد ذلك، تحقق من أنه يمكنك الوصول إلى موارد مشاركة الويب والملفات على APP1 من CLIENT1.
   
-1. في Server Manager، في جزء الشجرة، حدد **خادم محلي**.
+1. في Server Manager، في جزء الشجرة، حدد **"الخادم المحلي**".
     
-2. في **خصائص ل CLIENT1**، حدد **على** بجانب **تكوين الأمان المحسن ل IE**.
+2. في **خصائص CLIENT1**، حدد **"On** " بجوار **تكوين أمان IE المحسن**.
     
-3. في **تكوين الأمان المحسن ل Internet Explorer**، حدد **إيقاف التشغيل** للمسؤولين والمستخدمين، ثم حدد **موافق**. 
+3. في **Internet Explorer Enhanced Security Configuration**، حدد **"إيقاف التشغيل** **للمسؤولين** **والمستخدمين**"، ثم حدد **"موافق**".
     
-4. من شاشة البدء، حدد **Internet Explorer**، ثم حدد **موافق**.
+4. من شاشة البدء، حدد **Internet Explorer**، ثم حدد **"موافق**".
     
-5. في شريط العنوان، أدخل **http <span>://</span>app1.testab.**\<*your public domain name*>**/**، ثم اضغط على **Enter**. من المفترض أن ترى الصفحة خدمات معلومات الإنترنت ويب ل APP1.
+5. في شريط العناوين، أدخل **http <span>://</span>app1.testab.**\<*your public domain name*>**/** ثم اضغط على مفتاح الإدخال **Enter**. يجب أن تشاهد صفحة ويب خدمات معلومات الإنترنت الافتراضية ل APP1.
     
 6. على شريط مهام سطح المكتب، حدد أيقونة مستكشف الملفات.
     
-7. في شريط العنوان، أدخل **\\\\app1Files\\**، ثم اضغط على **Enter**. يجب أن ترى نافذة مجلد مع محتويات المجلد المشترك ملفات.
+7. في شريط العناوين، أدخل **\\\\app1Files\\**، ثم اضغط على **مفتاح الإدخال Enter**. يجب أن تشاهد نافذة مجلد مع محتويات المجلد المشترك "ملفات".
     
-8. في نافذة **المجلد المشترك** ملفات، انقر نقرا مزدوجا **فوقExample.txt** الملف. من المفترض أن ترى محتويات Example.txt الملف.
+8. في نافذة المجلد المشترك " **ملفات** "، انقر نقرا مزدوجا فوق ملف **Example.txt** . يجب أن تشاهد محتويات ملف Example.txt.
     
-9. أغلقexample.txt **- المفكرة** نوافذ **المجلدات** المشتركة ملفات.
+9. أغلق **example.txt - المفكرة** ونوافذ **المجلد المشترك** للملفات.
     
 يبدو التكوين الحالي كما يلي:
   
-![الخطوة 3 من تكوين قاعدة المؤسسة الذي تم محاكاته.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
+![الخطوة 3 من تكوين قاعدة المؤسسة المحاكاة.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
-## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>المرحلة 2: إنشاء اشتراك Microsoft 365 E5 اشتراكك
+## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>المرحلة 2: إنشاء اشتراكك في Microsoft 365 E5
 
-في هذه المرحلة، يمكنك إنشاء اشتراك Microsoft 365 E5 جديد يستخدم مستأجر Azure AD جديد، وهو اشتراك منفصل عن اشتراك الإنتاج. يمكنك القيام بذلك من خلال طريقتين:
+في هذه المرحلة، يمكنك إنشاء اشتراك Microsoft 365 E5 جديد يستخدم مستأجر Azure AD جديد، وهو اشتراك منفصل عن اشتراك الإنتاج الخاص بك. يمكنك القيام بذلك بطريقتين:
 
-- استخدم اشتراكا تجريبيا Microsoft 365 E5.
+- استخدام اشتراك تجريبي من Microsoft 365 E5.
 
-  إن Microsoft 365 E5 التجريبي هو 30 يوما، يمكن تمديده بسهولة إلى 60 يوما. عند انتهاء صلاحية الاشتراك التجريبي، يجب إما تحويله إلى اشتراك مدفوع أو إنشاء اشتراك تجريبي جديد. يعني إنشاء اشتراكات تجريبية جديدة أنك ستترك التكوين، الذي قد يتضمن سيناريوهات معقدة، في الخلف.  
+  الاشتراك التجريبي Microsoft 365 E5 هو 30 يوما، والتي يمكن تمديدها بسهولة إلى 60 يوما. عند انتهاء صلاحية الاشتراك التجريبي، يجب عليك إما تحويله إلى اشتراك مدفوع أو إنشاء اشتراك تجريبي جديد. يعني إنشاء اشتراكات تجريبية جديدة أنك ستترك التكوين الخاص بك، والذي قد يتضمن سيناريوهات معقدة، في الخلف.  
 
-- استخدم اشتراك إنتاج منفصلا Microsoft 365 E5 مع عدد صغير من التراخيص.
+- استخدم اشتراك إنتاج منفصلا من Microsoft 365 E5 مع عدد صغير من التراخيص.
 
-  هذه تكلفة إضافية، ولكنها تضمن أن لديك بيئة اختبار عمل لا تنتهي صلاحيتها؛ في ذلك، يمكنك تجربة الميزات والتكوينات والسيناريوهات. يمكنك استخدام بيئة الاختبار نفسها على المدى الطويل للحصول على إثباتات المبدأ وإثبات النظير والإدارة وتطوير التطبيق واختباره. هذا هو الأسلوب المستحسن.
+  هذه تكلفة إضافية، ولكنها تضمن أن لديك بيئة اختبار عمل لا تنتهي صلاحيتها؛ في ذلك، يمكنك تجربة الميزات والتكوينات والسيناريوهات. يمكنك استخدام نفس بيئة الاختبار على المدى الطويل لإثبات المبدأ، والظاهرية للأقران والإدارة، وتطوير التطبيقات واختبارها. هذا هو الأسلوب الموصى به.
 
-### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>التسجيل للحصول على اشتراك تجريبي Office 365 E5 الإصدار التجريبي
+### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>التسجيل للحصول على اشتراك تجريبي Office 365 E5
 
-من مدخل Azure، اتصل ب CLIENT1 باستخدام حساب CORP\User1.
+من مدخل Microsoft Azure، اتصل ب CLIENT1 باستخدام حساب CORP\User1.
 
-لإنشاء اشتراك تجريبي Office 365 E5 جديد، قم بتنفيذ الإرشادات في المرحلة [1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-microsoft-365-e5-subscription) من دليل اختبار التكوين الأساسي الخفيف.
+لإنشاء اشتراك تجريبي Office 365 E5 جديد، نفذ الإرشادات في [المرحلة 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-microsoft-365-e5-subscription) من دليل اختبار اختبار التكوين الأساسي الخفيف.
 
-لتكوين الاشتراك التجريبي Office 365 E5 الجديد، قم بتنفيذ الإرشادات في المرحلة [2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) من دليل اختبار التكوين الأساسي الخفيف.
+لتكوين اشتراكك التجريبي Office 365 E5 الجديد، قم بتنفيذ الإرشادات في [المرحلة 2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) من دليل اختبار مختبر التكوين الأساسي الخفيف.
 
-#### <a name="using-an-office-365-e5-test-environment"></a>استخدام Office 365 E5 اختبارية
+#### <a name="using-an-office-365-e5-test-environment"></a>استخدام بيئة اختبار Office 365 E5
 
-إذا كنت بحاجة إلى بيئة اختبار Office 365 فقط، لست بحاجة إلى قراءة ما تبقى من هذه المقالة.
+إذا كنت بحاجة إلى بيئة اختبار Office 365 فقط، فلن تحتاج إلى قراءة باقي هذه المقالة.
 
-للحصول على أدلة اختبار معمل إضافية تنطبق على كل من Microsoft 365 Office 365، راجع Microsoft 365 دليل [اختبار المؤسسة](m365-enterprise-test-lab-guides.md).
+للحصول على دلائل مختبر اختبار إضافية تنطبق على كل من Microsoft 365 Office 365، راجع [Microsoft 365 لدلائل مختبر الاختبار للمؤسسات](m365-enterprise-test-lab-guides.md).
 
-### <a name="add-a-microsoft-365-e5-trial-subscription"></a>إضافة اشتراك تجريبي Microsoft 365 E5 الإصدار التجريبي
+### <a name="add-a-microsoft-365-e5-trial-subscription"></a>إضافة اشتراك تجريبي Microsoft 365 E5
 
-لإضافة اشتراك تجريبي Microsoft 365 E5 وتكوين حسابات المستخدمين باستخدام التراخيص، قم بتنفيذ الإرشادات الواردة في المرحلة [3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) من دليل اختبار المعمل للتكوين الأساسي الخفيف.
+لإضافة اشتراك تجريبي Microsoft 365 E5 وتكوين حسابات المستخدمين لديك مع التراخيص، قم بتنفيذ الإرشادات في [المرحلة 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) من دليل اختبار مختبر التكوين الأساسي الخفيف.
 
   
-## <a name="results"></a>النتائج
+## <a name="results"></a>نتائج
 
-لقد أصبحت بيئة الاختبار لديك الآن:
+تحتوي بيئة الاختبار الخاصة بك الآن على:
   
-- Microsoft 365 E5 الإصدار التجريبي.
+- اشتراك تجريبي Microsoft 365 E5.
 - يتم تمكين جميع حسابات المستخدمين المناسبة لاستخدام Microsoft 365 E5.
-- إنترانت محاكاة وتبسيط.
+- إنترانت محاكاة ومبسطة.
     
 يبدو التكوين النهائي كما يلي:
   
 ![المرحلة 2 من تكوين قاعدة المؤسسة المحاكاة.](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-أنت الآن جاهز لتجربة ميزات إضافية Microsoft 365 [للمؤسسات](https://www.microsoft.com/microsoft-365/enterprise).
+أنت الآن جاهز لتجربة ميزات إضافية [من Microsoft 365 للمؤسسة](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## <a name="next-steps"></a>الخطوات التالية
 
-استكشف هذه المجموعات الإضافية من "أدلة اختبار المعمل":
+استكشف هذه المجموعات الإضافية من دلائل مختبر الاختبار:
   
 - [الهوية](m365-enterprise-test-lab-guides.md#identity)
-- [إدارة أجهزة المحمول](m365-enterprise-test-lab-guides.md#mobile-device-management)
+- [إدارة الأجهزة المحمولة](m365-enterprise-test-lab-guides.md#mobile-device-management)
 - [حماية المعلومات](m365-enterprise-test-lab-guides.md#information-protection)
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[Microsoft 365 دليل اختبار المؤسسة](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 لدلائل مختبر اختبار المؤسسة](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 نظرة عامة حول المؤسسة](microsoft-365-overview.md)
+[نظرة عامة حول Microsoft 365 للمؤسسات](microsoft-365-overview.md)
 
-[Microsoft 365 وثائق المؤسسة](/microsoft-365-enterprise/)
+[موارد ووثائق Microsoft 365 للمؤسسات](/microsoft-365-enterprise/)

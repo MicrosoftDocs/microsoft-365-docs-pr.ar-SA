@@ -2,8 +2,8 @@
 title: تحميل البيانات غير Microsoft 365 في مجموعة مراجعة
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: تعرف على كيفية استيراد بيانات غير Microsoft 365 إلى مجموعة مراجعة للتحليل في حالة eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d7167f85760d0c1cc05e130413dbcdae9e0e3973
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 41ba0a3d9f1989cff2bdffdab38f7eee020d7b5d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64996845"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095807"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>تحميل البيانات غير Microsoft 365 في مجموعة مراجعة
 

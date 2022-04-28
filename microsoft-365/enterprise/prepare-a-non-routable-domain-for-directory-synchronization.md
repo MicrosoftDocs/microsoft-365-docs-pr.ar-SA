@@ -1,8 +1,8 @@
 ---
-title: إعداد مجال غير قابل التوجيه لمزامنة الدليل
+title: إعداد مجال غير قابل للتوجيه لمزامنة الدليل
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,67 +21,67 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: تعرف على ما يجب فعله إذا كان لديك مجال غير قابل التوجيه مقترن وحسابات المستخدمين في الموقع قبل مزامنتها مع Microsoft 365 المستأجر.
-ms.openlocfilehash: bea80123c1a2db11baa07cd3344f65303cdd1084
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+description: تعرف على ما يجب فعله إذا كان لديك مجال غير قابل للتوجيه مقترن بحسابات المستخدمين المحليين قبل مزامنتها مع مستأجر Microsoft 365.
+ms.openlocfilehash: 7c0fd93f327305477908fba0cfb495fa73205ebe
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "63572888"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096359"
 ---
-# <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>إعداد مجال غير قابل التوجيه لمزامنة الدليل
+# <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>إعداد مجال غير قابل للتوجيه لمزامنة الدليل
 
-عند مزامنة الدليل المحلي مع Microsoft 365، يجب أن يكون لديك مجال متحقق منه في Azure Active Directory (Azure AD). لا يتم مزامنة سوى أسماء المستخدمين الأساسية (UPNs) المقترنة بالمجال المحلي خدمات مجال Active Directory (AD DS). ومع ذلك، فإن أي UPN يحتوي على مجال غير قابل التوجيه، مثل "local" (على سبيل المثال: billa@contoso.local)، سيتم مزامنته إلى مجال .onmicrosoft.com (على سبيل المثال: billa@contoso.onmicrosoft.com). 
+عند مزامنة الدليل المحلي مع Microsoft 365، يجب أن يكون لديك مجال تم التحقق منه في Azure Active Directory (Azure AD). تتم مزامنة أسماء المستخدمين الأساسيين (UPNs) المقترنة بمجال Active Directory محلي Domain Services (AD DS). ومع ذلك، ستتم مزامنة أي UPN يحتوي على مجال غير قابل للتوجيه، مثل "محلي" (على سبيل المثال: billa@contoso.local)، إلى مجال .onmicrosoft.com (على سبيل المثال: billa@contoso.onmicrosoft.com). 
 
-إذا كنت تستخدم حاليا مجال "محلي" حسابات المستخدمين في AD DS، فمن المستحسن تغييرها لاستخدام مجال تم التحقق منه، مثل billa@contoso.com، من أجل المزامنة بشكل صحيح مع مجالك Microsoft 365.
+إذا كنت تستخدم حاليا مجالا ".محليا" لحسابات المستخدمين في AD DS، فمن المستحسن تغييرها لاستخدام مجال تم التحقق منه، مثل billa@contoso.com، من أجل المزامنة بشكل صحيح مع مجال Microsoft 365.
   
-## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>ماذا لو كان لدي مجال محلي "محلي" فقط؟
+## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>ماذا لو كان لدي مجال محلي ".محلي" فقط؟
 
-يمكنك استخدام Azure AD الاتصال لمزامنة AD DS مع مستأجر Azure AD لمستأجر Microsoft 365 المستأجر. لمزيد من المعلومات، راجع [تكامل الهويات الخاصة بك مع Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
+يمكنك استخدام الاتصال Azure AD لمزامنة AD DS مع مستأجر Azure AD لمستأجر Microsoft 365 الخاص بك. لمزيد من المعلومات، راجع [دمج الهويات المحلية مع Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
   
-يقوم Azure AD الاتصال مزامنة UPN وكلمة المرور الخاصة بالمستخدمين بحيث يمكن للمستخدمين تسجيل الدخول باستخدام بيانات الاعتماد نفسها التي يستخدمونها في الموقع. ومع ذلك، فإن Azure AD الاتصال يقوم فقط بمزامنة المستخدمين مع المجالات التي تم التحقق منها بواسطة Microsoft 365. وهذا يعني أنه يتم أيضا التحقق من المجال بواسطة Azure AD لأن Microsoft 365 مدارة بواسطة Azure AD. بعبارة أخرى، يجب أن يكون المجال مجال إنترنت صالحا (مثل .com و .org و .net و .us). إذا كانت AD DS الداخلية تستخدم مجالا غير قابل التوجيه فقط (على سبيل المثال، "محلي")، فهذا لا يمكن أن يطابق المجال المتحقق منه لديك Microsoft 365 المستأجر. يمكنك إصلاح هذه المشكلة إما بتغيير مجالك الأساسي في AD DS المحلية، أو بإضافة لاحقة UPN واحدة أو أكثر.
+يقوم Azure AD الاتصال بمزامنة UPN وكلمة المرور الخاصة بالمستخدمين بحيث يمكن للمستخدمين تسجيل الدخول باستخدام نفس بيانات الاعتماد التي يستخدمونها محليا. ومع ذلك، الاتصال Azure AD مزامنة المستخدمين فقط مع المجالات التي يتم التحقق منها بواسطة Microsoft 365. وهذا يعني أنه يتم التحقق من المجال أيضا بواسطة Azure AD لأن Microsoft 365 الهويات تتم إدارتها بواسطة Azure AD. بمعنى آخر، يجب أن يكون المجال مجال إنترنت صالحا (مثل.com أو .org أو .net أو .us). إذا كان AD DS الداخلي يستخدم مجالا غير قابل للتوجيه فقط (على سبيل المثال، "محلي")، فمن المحتمل ألا يتطابق هذا مع المجال الذي تم التحقق منه لمستأجر Microsoft 365. يمكنك إصلاح هذه المشكلة إما عن طريق تغيير مجالك الأساسي في AD DS المحلي، أو بإضافة لاحقة UPN واحدة أو أكثر.
   
 ### <a name="change-your-primary-domain"></a>تغيير مجالك الأساسي
 
-غير مجالك الأساسي إلى مجال قمت بالتحقق منه في Microsoft 365، على سبيل المثال، contoso.com. يتم بعد ذلك تحديث كل مستخدم لديه المجال contoso.local contoso.com. ومع ذلك، هذه عملية متبعة، كما يتم وصف حل أسهل في القسم التالي.
+قم بتغيير مجالك الأساسي إلى مجال قمت بالتحقق منه في Microsoft 365، على سبيل المثال، contoso.com. ثم يتم تحديث كل مستخدم لديه المجال contoso.local إلى contoso.com. ومع ذلك، هذه عملية مضمنة، ويتم وصف حل أسهل في القسم التالي.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>إضافة لاحقات UPN وتحديث المستخدمين إليها
 
-يمكنك حل المشكلة "local" بتسجيل لاحقة UPN أو لاحقات جديدة في AD DS لمطابقة المجال (أو المجالات) الذي تحققت منه في Microsoft 365. بعد تسجيل اللاحقة الجديدة، قم بتحديث أسماء UPN الخاصة بالمستخدم لاستبدال "local" باسم المجال الجديد، على سبيل المثال، بحيث يبدو حساب المستخدم مثل billa@contoso.com.
+يمكنك حل المشكلة ".local" عن طريق تسجيل لاحقة UPN جديدة أو لاحقات جديدة في AD DS لمطابقة المجال (أو المجالات) التي تحققت منها في Microsoft 365. بعد تسجيل اللاحقة الجديدة، يمكنك تحديث UPNs للمستخدم لاستبدال ".local" باسم المجال الجديد، على سبيل المثال، بحيث يبدو حساب المستخدم مثل billa@contoso.com.
   
-بعد تحديث UPNs لاستخدام المجال الذي تم التحقق منه، ستكون جاهزا لمزامنة AD DS في الموقع مع Microsoft 365.
+بعد تحديث UPNs لاستخدام المجال الذي تم التحقق منه، تكون جاهزا لمزامنة AD DS المحلي مع Microsoft 365.
   
 #### <a name="step-1-add-the-new-upn-suffix"></a>الخطوة 1: إضافة لاحقة UPN الجديدة**
   
-1. في وحدة تحكم مجال AD DS، في إدارة الخادم، اختر **أدوات** \> **مجالات Active Directory والثقة**.
+1. في وحدة تحكم مجال AD DS، في Server Manager، اختر **"أدوات** \> **Active Directory Domains and Trusts**".
     
-    **أو، إذا لم يكن لديك Windows Server 2012**
+    **أو إذا لم يكن لديك Windows Server 2012**
     
-    اضغط **Windows مفتاح + R** لفتح مربع الحوار تشغيل، ثم  اكتب في Domain.msc، ثم اختر **موافق**.
+    اضغط **على مفتاح Windows + R** لفتح مربع الحوار **"تشغيل**"، ثم اكتب في Domain.msc، ثم اختر **"موافق**".
     
     ![اختر مجالات Active Directory والثقة.](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
-2. في نافذة **مجالات Active Directory** وثقته، انقر بز الماوس الأيمن فوق مجالات **Active Directory** وثقته، ثم اختر **خصائص**.
+2. في نافذة **مجالات Active Directory والثقة** ، انقر بزر الماوس الأيمن فوق **مجالات Active Directory والثقة**، ثم اختر **"خصائص**".
     
-    ![انقر بز الماوس الأيمن فوق مجالات Active Directory وثقته واختر خصائص.](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
+    ![انقر بزر الماوس الأيمن فوق مجالات Active Directory والثقة واختر "خصائص".](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
-3. على علامة **التبويب لاحقات UPN** ، في المربع لاحقات **UPN** البديلة، اكتب لاحقة UPN أو لاحقات جديدة، ثم اختر **إضافة** \> **تطبيق**.
+3. في علامة التبويب **"لاحقات UPN** "، في المربع **"لاحقات UPN البديلة** "، اكتب لاحقة أو لاحقات UPN الجديدة، ثم اختر **"إضافة** \> **تطبيق**".
     
     ![إضافة لاحقة UPN جديدة.](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
-    اختر **موافق** عند انتهاء إضافة لاحقات. 
+    اختر **"موافق** " عند الانتهاء من إضافة اللاحقات. 
     
- #### <a name="step-2-change-the-upn-suffix-for-existing-users"></a>الخطوة 2: تغيير لاحقة UPN للمستخدمين  الموجودين
+ #### <a name="step-2-change-the-upn-suffix-for-existing-users"></a>الخطوة 2: تغيير لاحقة UPN للمستخدمين الحاليين
   
-1. في وحدة تحكم مجال AD DS، في إدارة الخادم، اختر **أدوات** \> **Active Directory Users وأجهزة الكمبيوتر**.
+1. في وحدة تحكم مجال AD DS، في Server Manager اختر **"أدوات** \> **" Active Directory Users and Computers**.
     
-    **أو، إذا لم يكن لديك Windows Server 2012**
+    **أو إذا لم يكن لديك Windows Server 2012**
     
-    اضغط **Windows مفتاح + R** لفتح مربع الحوار تشغيل، ثم  اكتب في Dsa.msc، ثم انقر فوق **موافق**
+    اضغط **على مفتاح Windows + R** لفتح مربع الحوار **"تشغيل**"، ثم اكتب Dsa.msc، ثم انقر فوق **"موافق"**
     
-2. حدد مستخدما، وانقر بضغطة زر الماوس الأيمن، ثم اختر **خصائص**.
+2. حدد مستخدما، وانقر بزر الماوس الأيمن، ثم اختر **"خصائص**".
     
-3. على علامة **التبويب** حساب، في القائمة المنسدل لاحقة UPN، اختر لاحقة UPN الجديدة، ثم اختر **موافق**.
+3. على علامة التبويب **"حساب** "، في القائمة المنسدلة للاحقة UPN، اختر لاحقة UPN الجديدة، ثم اختر **"موافق**".
     
     ![إضافة لاحقة UPN جديدة لمستخدم.](../media/54876751-49f0-48cc-b864-2623c4835563.png)
   
@@ -90,13 +90,13 @@ ms.locfileid: "63572888"
    
 ### <a name="use-powershell-to-change-the-upn-suffix-for-all-of-your-users"></a>استخدام PowerShell لتغيير لاحقة UPN لجميع المستخدمين
 
-إذا كان لديك العديد من حسابات المستخدمين لتحديثها، فمن الأسهل استخدام PowerShell. يستخدم المثال التالي cmdlets [Get-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617241(v=technet.10)) و [Set-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617215(v=technet.10)) لتغيير كل لاحقات contoso.local contoso.com AD DS. 
+إذا كان لديك العديد من حسابات المستخدمين للتحديث، فمن الأسهل استخدام PowerShell. يستخدم المثال التالي أوامر cmdlets [Get-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617241(v=technet.10)) و [Set-ADUser](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617215(v=technet.10)) لتغيير كافة لاحقات contoso.local إلى contoso.com في AD DS. 
 
-على سبيل المثال، يمكنك تشغيل أوامر PowerShell التالية لتحديث كل لاحقات contoso.local contoso.com:
+على سبيل المثال، يمكنك تشغيل أوامر PowerShell التالية لتحديث كافة لاحقات contoso.local إلى contoso.com:
     
   ```powershell
   $LocalUsers = Get-ADUser -Filter "UserPrincipalName -like '*contoso.local'" -Properties userPrincipalName -ResultSetSize $null
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("@contoso.local","@contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
 
-راجع [Active Directory Windows PowerShell النمطية](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617195(v=technet.10)) للتعرف على المزيد حول استخدام Windows PowerShell في AD DS.
+راجع [الوحدة النمطية Windows PowerShell Active Directory](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee617195(v=technet.10)) لمعرفة المزيد حول استخدام Windows PowerShell في AD DS.

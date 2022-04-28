@@ -2,8 +2,8 @@
 title: إنشاء بحث في المحتوى وتشغيله في مدخل توافق Microsoft Purview
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: how-to
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: استخدم أداة eDiscovery للبحث في المحتوى في مركز التوافق للبحث عن المحتوى في خدمات Microsoft 365 مختلفة.
-ms.openlocfilehash: f5d8a398f36c1ab3c0f83234718346e8dd20434e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 418bdffd71e83aea548c21589c6b8c08ae2419e8
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994491"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097085"
 ---
 # <a name="create-a-content-search"></a>إنشاء بحث في المحتوى
 

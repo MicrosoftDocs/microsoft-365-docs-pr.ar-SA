@@ -2,8 +2,8 @@
 title: إعداد موصل أرشفة بيانات RingCentral في Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات RingCentral وأرشفتها من Veritas إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني وeDiscovery ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: c09adf8710014cbf031740902ffbb6c29232a5b8
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 2472097c82f4b05cd1f1aebe67eb07d270921a48
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001599"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65097151"
 ---
 # <a name="set-up-a-connector-to-archive-ringcentral-data"></a>إعداد موصل أرشفة بيانات RingCentral
 

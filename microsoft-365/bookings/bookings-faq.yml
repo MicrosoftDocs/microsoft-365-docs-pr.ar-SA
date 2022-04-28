@@ -9,12 +9,12 @@ metadata:
   ms.service: bookings
   ms.localizationpriority: medium
   description: Microsoft Bookings الأسئلة المتداولة.
-  ms.openlocfilehash: c904a60fafd980de7bc8559e5025538957fdd7b4
-  ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+  ms.openlocfilehash: 6a61179849e01f60e46a53f12f1ad5c125987527
+  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 04/13/2022
-  ms.locfileid: "64822805"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "65096017"
 title: Microsoft Bookings الأسئلة المتداولة
 summary: ''
 sections:
@@ -25,17 +25,16 @@ sections:
     answer: >
       Microsoft Bookings هو تطبيق Microsoft 365 يسهل جدولة المواعيد وإدارتها. يتضمن Bookings تقويم حجز مستند إلى ويب ويتكامل مع Outlook لتحسين تقويم فريق العمل، مما يمنح العملاء المرونة اللازمة لحجز وقت يناسبهم بشكل أفضل. تقلل رسائل البريد الإلكتروني للإشعارات التلقائية من عدم العروض، وتوفر المؤسسات الوقت مع تقليل مهام الجدولة المتكررة. يساعدك Bookings على إجراء المواعيد الظاهرية بسهولة عبر Skype أو Microsoft Teams، ويساعدك على إدارة الجدولة اليومية عبر تطبيق Bookings في Teams. مع القدرة المضمنة على التخصيص، تم تصميم Bookings لتلبية احتياجات أجزاء متعددة من أي مؤسسة.
   - question: >
+      هل Bookings متوفرة لاشتراكي؟
+    answer: "يتوفر Bookings مع الاشتراكات التالية: \n- Office 365: A3 وA5 وE1 وE3 وE5 وF1 وF3 Office 365 تشغلها 21Vianet.\n- Microsoft 365: A3 وA5 وE3 وE5 وF1 وF3 و Business Basic و Business Standard و Business Premium الأعمال. يمكنك استخدام Bookings مع تطبيق مصاحب لنظامي التشغيل iOS وAndroid. لا يتوفر Bookings كتطبيق مستقل. يجب تمكين Outlook Web App أو Outlook على ويب لاستخدام Bookings، لأنه يخزن البيانات داخل Outlook.\n\nيوفر ترخيص Bookings وظائف كاملة، بما في ذلك إنشاء التقويمات وإدارتها. يمكن للمستخدمين عرض التقويمات الموجودة وتحريرها، عند إضافة هؤلاء المستخدمين كموظفون في دور المسؤول أو العارض.\n"
+  - question: >
       كيف أعمل استخدام Microsoft Bookings؟
     answer: >
       Bookings هي خدمة عبر الإنترنت، لذلك لا تحتاج إلى تنزيل أي شيء. ما عليك سوى الانتقال إلى منتقي التطبيق ضمن تجربة ويب Microsoft 365. يمكن للمسؤولين أيضا استخدام التطبيق المصاحب Bookings للبقاء على اطلاع بأحدث المعلومات حول العملاء ومواعيدهم.
   - question: >
-      روبوت Who لديه حق الوصول إلى Microsoft Bookings؟
-    answer: >
-      يتوفر Bookings وينشط بشكل افتراضي لعملاء Microsoft 365 Business Premium Microsoft 365 Business Standard وF1 وF3 و A3 و A5 وE3 وE5 في جميع أنحاء العالم. يتوفر Bookings أيضا في Office 365 المشغلة بواسطة 21Vianet.
-  - question: >
       هل سيرى عملائي تقويمي الشخصي أو تقويم العمل؟
     answer: >
-      لن يرى عملاؤك سوى تقويم Bookings الذي تنشره عبر الإنترنت للخدمات والأوقات والموظفين الذين تختار تسجيلهم.
+      لن يرى عملاؤك سوى تقويم Bookings الذي تنشره عبر الإنترنت للخدمات والأوقات والموظفين الذين تختارهم.
   - question: >
       كيف أعمل تغيير سمة قابلة للحجز ضمن "إدارة الموظفين"؟
     answer: >
@@ -43,7 +42,7 @@ sections:
   - question: >
       كيف يمكن للمستخدمين النهائيين الوصول إلى تطبيق Bookings؟
     answer: >
-      يمكن لأي شخص مرخص Microsoft 365 Business Premium أو Microsoft 365 Business Standard أو A3 أو A5 أو E3 أو E5 أو F1 أو F3 أو تمت إضافته كعضو في فريق العمل في أدوار المسؤول أو العارض الوصول إلى Bookings في منتقي التطبيق ضمن Microsoft 365  تجربة الويب. يتوفر أيضا تطبيق مصاحب لنظامي التشغيل iOS وAndroid.
+      يمكن لأي شخص مرخص لاشتراك معتمد أو تمت إضافته كعضو في فريق العمل في أدوار المسؤول أو العارض الوصول إلى Bookings في منتقي التطبيق ضمن تجربة ويب Microsoft 365. يتوفر أيضا تطبيق مصاحب لنظامي التشغيل iOS وAndroid.
   - question: >
       هل يمكنني استخدام Bookings في موقع ويب الخاص بي؟
     answer: >
@@ -55,7 +54,7 @@ sections:
   - question: >
       هل يمكن لقسم تكنولوجيا المعلومات لدينا التحكم في إمكانية وصول المستخدمين النهائيين إلى Bookings؟
     answer: >
-      يتوفر Bookings في مستأجري Microsoft 365 Business Premium Microsoft 365 Business Standard وM365 A3/A5 وE3/E5 بشكل افتراضي، ولكن يمكن للمسؤولين إيقاف تشغيله في مركز مسؤولي Microsoft 365 إذا اختاروا ذلك. للقيام بذلك، [اتبع هذه الإرشادات](turn-bookings-on-or-off.md).
+      يمكن للمسؤولين إيقاف تشغيل Bookings في مركز مسؤولي Microsoft 365 إذا اختاروا ذلك. للقيام بذلك، [اتبع هذه الإرشادات](turn-bookings-on-or-off.md).
 
 
       إذا أراد العميل تعطيل الوصول إلى Bookings لبعض التراخيص المؤهلة في المستأجر الخاص به، فيمكنه إما استخدام نهج مجموعة لتقييد التراخيص أو تنفيذ نهج علبة بريد OWA الذي سيقيد من يمكنه إنشاء تقويمات Bookings جديدة.
@@ -118,11 +117,8 @@ sections:
           - الدعم التقني
           - المراجعات القانونية
           - مرافق
-- name: التسعير والترخيص
+- name: معلومات الحساب
   questions:
-  - question: >
-      كيف أعمل الحصول على Microsoft Bookings؟
-    answer: "يتوفر Bookings مع الاشتراكات التالية: \n- Office 365: A3، A5، E3، E5، F1، F3\n- Microsoft 365: A3 وA5 وE3 وE5 وF1 وF3 و Business Standard و Business Premium. يمكنك استخدام Bookings مع تطبيق مصاحب لنظامي التشغيل iOS وAndroid. لا يتوفر Bookings كتطبيق مستقل. يجب تمكين Outlook Web App أو Outlook على ويب لاستخدام Bookings، لأنه يخزن البيانات داخل Outlook.\n\nيوفر ترخيص Bookings وظائف كاملة للمنتج، بما في ذلك إنشاء التقويمات وإدارتها. كما أنه يتيح للمستخدمين إمكانية عرض التقويمات الموجودة وتحريرها، عند إضافة هؤلاء المستخدمين كموظفون في دور المسؤول أو العارض.\n"
   - question: >
       هل أحتاج إلى ترحيل حساب بريدي الإلكتروني من الموفر الحالي إلى Microsoft 365؟
     answer: >
@@ -288,11 +284,6 @@ sections:
       لا يمكن مزامنة تقويم عضو فريق العمل هذا
     answer: >
       إذا تلقيت الخطأ، "لا يمكن مزامنة تقويم عضو فريق العمل هذا"، فسيحتوي هذا القسم على العديد من إجراءات استكشاف الأخطاء وإصلاحها لمساعدتك على حل الخطأ.
-
-
-      > [!NOTE]
-
-      > يتم تشغيل Bookings بشكل افتراضي للعملاء الذين لديهم اشتراكات Microsoft 365 Business Standard أو Microsoft 365 A3 أو Microsoft 365 A5. يتوفر Bookings أيضا للعملاء الذين لديهم Office 365 Enterprise E3 Office 365 Enterprise E5، ولكن يتم إيقاف تشغيله بشكل افتراضي. للبدء، راجع ["الحصول على حق الوصول إلى Microsoft Bookings](get-access.md)". لتشغيل Bookings أو إيقاف تشغيلها، راجع [تشغيل Bookings أو إيقاف تشغيلها لمؤسستك](turn-bookings-on-or-off.md).
 
 
       إذا كنت تبحث عن معلومات حول مزامنة تقويم فريق العمل، فراجع [إضافة موظفين إلى Bookings](add-staff.md). تأكد من تحديد الأحداث **في التقويم التي تؤثر على التوفر** في صفحة **تفاصيل فريق العمل**.

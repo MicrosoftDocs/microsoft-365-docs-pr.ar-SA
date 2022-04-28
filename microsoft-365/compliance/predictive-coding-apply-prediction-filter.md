@@ -2,8 +2,8 @@
 title: تطبيق عامل تصفية نقاط التنبؤ على مجموعة مراجعة
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: jefwan
 manager: laurawi
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: استخدم عامل تصفية نقاط التنبؤ لعرض العناصر التي تم توقع نموذج ترميز تنبؤي لها على أنها ذات صلة أو غير ذات صلة.
-ms.openlocfilehash: ab97c91196456b69f7f420ccd317747f638b4ee5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 64abac8b9f53baa9afb869d77296089544919fea
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64993063"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096601"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>تطبيق عامل تصفية نقاط التنبؤ على مجموعة مراجعة (معاينة)
 

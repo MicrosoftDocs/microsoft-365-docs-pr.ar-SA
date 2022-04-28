@@ -2,8 +2,8 @@
 title: تصدير المستندات من مجموعة مراجعة
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية تحديد المحتوى وتصديره من مجموعة مراجعة eDiscovery (Premium) للعروض التقديمية أو المراجعات الخارجية.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3335c0bf15a57da7b3857b8503c6aaaeca2f303a
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: a2cc2b5f528c7573c255e05cea4b512416711462
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64995395"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096953"
 ---
 # <a name="export-documents-from-a-review-set-in-ediscovery-premium"></a>تصدير المستندات من مجموعة مراجعة في eDiscovery (Premium)
 

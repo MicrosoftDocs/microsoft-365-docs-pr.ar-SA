@@ -1,10 +1,10 @@
 ---
-title: حماية هوية Azure AD Microsoft 365 بيئة اختبار المؤسسة
+title: حماية هوية Azure AD Microsoft 365 لبيئة اختبار المؤسسة
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
@@ -14,63 +14,63 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: تكوين حماية هوية Azure AD وتحليل الحسابات الحالية في Microsoft 365 بيئة اختبار المؤسسة.
-ms.openlocfilehash: 210736e0a950d74e0cd761463e9cc27f1dc3c721
-ms.sourcegitcommit: 6c57f1e90339d5a95c9e7875599dac9d3e032c3a
+description: تكوين Azure AD Identity Protection وتحليل الحسابات الحالية في Microsoft 365 لبيئة اختبار المؤسسة.
+ms.openlocfilehash: 1f947f9b74b1909aa1e6451ec835a2ad78964f75
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "63566886"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078746"
 ---
-# <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>حماية هوية Azure AD Microsoft 365 بيئة اختبار المؤسسة
+# <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>حماية هوية Azure AD Microsoft 365 لبيئة اختبار المؤسسة
 
-*يمكن استخدام دليل Test Lab هذا فقط Microsoft 365 لبيئات اختبار المؤسسة.*
+*يمكن استخدام دليل مختبر الاختبار هذا فقط Microsoft 365 لبيئات اختبار المؤسسة.*
 
-يمكنك استخدام حماية هوية Azure Active Directory (Azure AD) للكشف عن نقاط الضعف المحتملة التي تؤثر على هويات مؤسستك وتكوين الاستجابات التلقائية وتحري الأحداث. تصف هذه المقالة كيفية استخدام Azure AD Identity Protection لعرض تحليل حسابات بيئة الاختبار.
+يمكنك استخدام Azure Active Directory (Azure AD) Identity Protection للكشف عن الثغرات الأمنية المحتملة التي تؤثر على هويات مؤسستك، وتكوين الاستجابات التلقائية، والتحقيق في الحوادث. تصف هذه المقالة كيفية استخدام Azure AD Identity Protection لعرض تحليل حسابات بيئة الاختبار الخاصة بك.
 
-يتضمن إعداد حماية هوية Azure AD في Microsoft 365 اختبار المؤسسة مرحلتين:
+يتضمن إعداد Azure AD Identity Protection في Microsoft 365 لبيئة اختبار المؤسسة مرحلتين:
 
-- [المرحلة 1: إنشاء Microsoft 365 بيئة اختبار المؤسسة](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [المرحلة الثانية: استخدام حماية هوية Azure AD](#phase-2-use-azure-ad-identity-protection)
+- [المرحلة 1: إنشاء Microsoft 365 لبيئة اختبار المؤسسة](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [المرحلة الثانية: استخدام Azure AD Identity Protection](#phase-2-use-azure-ad-identity-protection)
 
-![اختبار دليل المعمل لسحابة Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![اختبار دلائل المختبر لسحابة Microsoft.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> للحصول على خريطة مرئية لكل المقالات في Microsoft 365 دليل اختبار المؤسسة، انتقل إلى Microsoft 365 [دليل اختبار المؤسسة](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> للحصول على خريطة مرئية لجميع المقالات في Microsoft 365 لمكدس دليل مختبر اختبار المؤسسة، انتقل إلى [Microsoft 365 لمكدس دليل مختبر اختبار المؤسسة](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>المرحلة 1: إنشاء Microsoft 365 بيئة اختبار المؤسسة
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>المرحلة 1: إنشاء Microsoft 365 لبيئة اختبار المؤسسة
 
-إذا كنت تريد اختبار Azure AD Identity Protection فقط بطريقة خفيفة مع الحد الأدنى من المتطلبات، فاتبع الإرشادات الموجودة في [تكوين الأساس الخفيف](lightweight-base-configuration-microsoft-365-enterprise.md).
+إذا كنت تريد اختبار Azure AD Identity Protection فقط بطريقة خفيفة مع الحد الأدنى من المتطلبات، فاتبع الإرشادات في [تكوين قاعدة خفيفة الوزن](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-إذا كنت تريد اختبار حماية هوية Azure AD في مؤسسة محاكاة، فاتبع الإرشادات الواردة في [المصادقة المرورية](pass-through-auth-m365-ent-test-environment.md).
+إذا كنت ترغب في اختبار Azure AD Identity Protection في مؤسسة محاكاة، فاتبع الإرشادات في [مصادقة المرور](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> لا يتطلب اختبار حماية هوية Azure AD بيئة اختبار المؤسسة المحاكاة، التي تتضمن إنترانت محاكاة متصلة بالإنترنت ومزامنة الدليل الغابات خدمات مجال Active Directory (AD DS). يتم توفيره هنا كخيار بحيث يمكنك اختبار حماية هوية Azure AD واختباره في بيئة تمثل مؤسسة نموذجية.
+> لا يتطلب اختبار Azure AD Identity Protection بيئة اختبار المؤسسة المحاكاة، والتي تتضمن إنترانت محاكاة متصلة بالإنترنت ومزامنة الدليل لمجموعة خدمات مجال Active Directory (AD DS). يتم توفيره هنا كخيار بحيث يمكنك اختبار Azure AD Identity Protection وتجربة ذلك في بيئة تمثل مؤسسة نموذجية.
   
-## <a name="phase-2-use-azure-ad-identity-protection"></a>المرحلة الثانية: استخدام حماية هوية Azure AD
+## <a name="phase-2-use-azure-ad-identity-protection"></a>المرحلة الثانية: استخدام Azure AD Identity Protection
 
-1. افتح مثيلا خاصا للمستعرض الخاص بك، ثم سجل الدخول إلى مدخل Azure [https://portal.azure.com](https://portal.azure.com) باستخدام حساب المسؤول العام في Microsoft 365 اختبار المؤسسة.
-2. في مدخل Azure، اكتب **حماية** الهوية في مربع البحث، ثم حدد **حماية هوية Azure AD**.
-3. في **ريشة حماية الهوية - نظرة** عامة، حدد كل تقرير لمعرفة ما يتم إعداد التقارير عنه.
-4. ضمن **إعلام**، حدد **المستخدمون المعرضون لخطر التنبيهات التي تم الكشف عنها**.
-5. في جزء **التنبيهات** التي كشف عنها المستخدمون المعرضون للمخاطر، حدد **متوسط**.
-6. بالنسبة **إلى رسائل البريد الإلكتروني التي يتم إرسالها إلى المستخدمين** التاليين، حدد **مضمن** وتحقق من وجود حساب المسؤول العام في قائمة الأعضاء المحددين.
+1. افتح مثيلا خاصا للمستعرض وسجل الدخول إلى مدخل Azure باستخدام [https://portal.azure.com](https://portal.azure.com) حساب المسؤول العام Microsoft 365 لبيئة اختبار المؤسسة.
+2. في مدخل Microsoft Azure، اكتب **حماية الهوية** في مربع البحث، ثم حدد **Azure AD Identity Protection**.
+3. في جزء **Identity Protection - Overview** ، حدد كل تقرير لمعرفة ما يقدمه التقرير.
+4. ضمن **"إشعار"**، حدد **"Users at risked alerts**".
+5. في جزء " **Users at risked alerts** "، حدد **"Medium**".
+6. بالنسبة **إلى رسائل البريد الإلكتروني المرسلة إلى المستخدمين التاليين**، حدد **"تضمين** " وتحقق من وجود حساب المسؤول العمومي في قائمة الأعضاء المحددين.
 7. حدد **حفظ**.
 
-ضمن **حماية**، حدد العديد من الشرطة لمعرفة كيفية تكوينها. إذا قمت بإنشاء نهج وتنشيطه، فتأكد من أنه لا يمنع وصول جميع المستخدمين، أو قد لا تتمكن من تسجيل الدخول. لمنع حدوث ذلك، استثني حسابات مستخدمين معينة، مثل المسؤولين العامين.
+ضمن **"حماية**"، حدد نهج مختلفة لمعرفة كيفية تكوينها. إذا قمت بإنشاء نهج وتنشيطه، فتأكد من أنه لا يمنع الوصول لجميع المستخدمين، أو قد لا تتمكن من تسجيل الدخول. لمنع حدوث ذلك، قم باستبعاد حسابات مستخدمين معينة، مثل المسؤولين العموميين.
 
-لمزيد من الاختبارات والاختبارات، راجع [محاكاة أحداث المخاطر](/azure/active-directory/active-directory-identityprotection-playbook).
+لمزيد من الاختبار والتجريب، راجع [محاكاة أحداث المخاطر](/azure/active-directory/active-directory-identityprotection-playbook).
 
 ## <a name="next-step"></a>الخطوة التالية
 
-استكشف [ميزات الهوية الإضافية](m365-enterprise-test-lab-guides.md#identity) وإمكانياتها في بيئة الاختبار.
+استكشف ميزات [وإمكانات الهوية](m365-enterprise-test-lab-guides.md#identity) الإضافية في بيئة الاختبار الخاصة بك.
 
 ## <a name="see-also"></a>راجع أيضًا
 
 [نشر الهوية](deploy-identity-solution-overview.md)
 
-[Microsoft 365 دليل اختبار المؤسسة](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 لدلائل مختبر اختبار المؤسسة](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 نظرة عامة حول المؤسسة](microsoft-365-overview.md)
+[نظرة عامة حول Microsoft 365 للمؤسسات](microsoft-365-overview.md)
 
-[Microsoft 365 وثائق المؤسسة](/microsoft-365-enterprise/)
+[موارد ووثائق Microsoft 365 للمؤسسات](/microsoft-365-enterprise/)

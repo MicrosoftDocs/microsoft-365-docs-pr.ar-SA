@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 053326cacaeb2b4110f71edaa290ed10454aa720
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 56e22e0525324c59d2d62adaf2325edc3317ccd6
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731637"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096039"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>الجديد في Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 لمزيد من المعلومات حول أحدث الميزات في منتجات أمان Microsoft Defender الأخرى، راجع:
 
-- [ما الجديد في Microsoft Defender لـ Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
+- [أحدث الميزات في Microsoft Defender لـ Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
 - [ما الجديد في Microsoft Defender لنقطة النهاية](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [ما الجديد في Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [ما الجديد في Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
@@ -46,10 +46,13 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 يمكنك أيضا الحصول على تحديثات المنتج والإعلامات المهمة من خلال [مركز الرسائل](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
 
+## <a name="april-2022"></a>أبريل 2022
+- (معاينة) يمكن الآن اتخاذ [إجراءات](advanced-hunting-take-action.md) على رسائل البريد الإلكتروني مباشرة من نتائج استعلام التتبع. يمكن نقل رسائل البريد الإلكتروني إلى مجلدات أخرى أو حذفها بشكل دائم. 
 
 ## <a name="march-2022"></a>مارس 2022
 
 - (معاينة) تم تحسين قائمة انتظار الحوادث باستخدام العديد من الميزات المصممة لمساعدة التحقيقات الخاصة بك. تتضمن التحسينات قدرات مثل القدرة على البحث عن الحوادث حسب المعرف أو الاسم، وتحديد نطاق زمني مخصص، وغيرها.
+
 
 ## <a name="december-2021"></a>ديسمبر 2021
 

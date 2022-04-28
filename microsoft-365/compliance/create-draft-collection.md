@@ -2,8 +2,8 @@
 title: إنشاء مجموعة مسودة
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 ms.reviewer: nickrob
 manager: laurawi
 ms.date: ''
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: مجموعة المسودات هي عملية بحث eDiscovery لمصادر البيانات الاحتجازية وغير الاحتجازية في حالة eDiscovery (Premium) التي ترجع تقدير بحث يطابق استعلام البحث للمجموعة. يمكنك مراجعة إحصائيات البحث ومعاينة عينة من العناصر ومراجعة المجموعة وإعادة تشغيلها قبل تثبيت النتائج بمجموعة مراجعة.
-ms.openlocfilehash: 2178e836809a24edec6d3d184ef8b699bec87bb5
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 50fb63658541c07a312a502dbbe7d68a26467d14
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64997052"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096064"
 ---
 # <a name="create-a-draft-collection-in-ediscovery-premium"></a>إنشاء مجموعة مسودات في eDiscovery (Premium)
 

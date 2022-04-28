@@ -2,8 +2,8 @@
 title: فهم التقييم في الصلة في eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 titleSuffix: Office 365
 ms.date: ''
@@ -18,12 +18,12 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: احصل على نظرة عامة على مرحلة التقييم ودورها في تحديد ثراء المشكلات أثناء التدريب على الصلة في Microsoft Purview eDiscovery (Premium).
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0fd7a4f23aa2f69dfa598faaa0c75df533356efc
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 3bfd6087bbcade2c7e4d9afdcda0f47bbea6f53d
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65001313"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096105"
 ---
 # <a name="assessment-in-the-relevance-module-in-ediscovery-premium"></a>التقييم في الوحدة النمطية الصلة في eDiscovery (Premium)
 

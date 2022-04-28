@@ -2,8 +2,8 @@
 title: إعداد موصل أرشفة بيانات Jive في Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات Jive وأرشفتها من Veritas في Microsoft 365. يتيح لك هذا الموصل أرشفة بيانات الجهات الخارجية في Microsoft 365 حتى تتمكن من استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية لمؤسستك.
-ms.openlocfilehash: 4fd5d7bbecd6fc6b0bfeeb90c0102ef30b67bdfe
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 97dd400184c8d8e592d8ae8495354b3dfa367b34
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000477"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65095983"
 ---
 # <a name="set-up-a-connector-to-archive-jive-data"></a>إعداد موصل أرشفة بيانات Jive
 

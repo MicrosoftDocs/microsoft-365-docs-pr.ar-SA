@@ -2,8 +2,8 @@
 title: استخدام اشتراك Azure Active Directory المجاني
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -19,12 +19,12 @@ description: تعرف على كيفية الوصول إلى Azure Active Directo
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: aef6aa77e8889f8dc386558db77feef093b4e240
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: cc0863184aa00fdc26532267a56936b2ed93270b
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994821"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65078812"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>استخدام اشتراك Azure Active Directory المجاني
 

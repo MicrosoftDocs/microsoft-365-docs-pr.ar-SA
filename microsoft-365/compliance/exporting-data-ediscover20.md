@@ -2,8 +2,8 @@
 title: تصدير بيانات الحالة في eDiscovery (Premium)
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية تصدير المحتوى أو تنزيله من مجموعة مراجعة للعروض التقديمية أو المراجعات الخارجية في حالة eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 322b2c97d554ef917034afc261652a8150d23fbc
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: d4ee1627587196527987afec5a675b9440ea806e
+ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64994117"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65096931"
 ---
 # <a name="export-case-data-in-ediscovery-premium"></a>تصدير بيانات الحالة في eDiscovery (Premium)
 
