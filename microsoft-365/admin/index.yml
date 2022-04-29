@@ -16,12 +16,12 @@ metadata:
   - AdminSurgePortfolio
   - intro-hub-or-landing
   ms.collection: Adm_TOC
-  ms.openlocfilehash: 0a50a930013db739cab368e7763669798267a509
-  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  ms.openlocfilehash: d5491560ba5d26435ab7d124fc9b5818970a00f6
+  ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
   ms.translationtype: HT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65094317"
+  ms.lasthandoff: 04/29/2022
+  ms.locfileid: "65130308"
 highlightedContent:
   items:
   - title: أصبح Office 365 الآن هو Microsoft 365!
@@ -68,7 +68,7 @@ additionalContent:
     items:
     - title: نظرة عامة حول مركز مسؤولي Microsoft 365
       summary: تعرّف على أدوار المسؤولين وكيفية البقاء على اطلاع بالتغييرات وكيفية تخصيص اشتراكك.
-      url: admin-overview/about-the-admin-center.md
+      url: admin-overview/admin-center-overview.md
     - title: المستخدمون والمجموعات
       summary: إدارة كلمات المرور، وإضافة المستخدمين وإزالتها، وإعداد المجموعات وإدارتها، وإدارة وصول الضيف، وتعيين تراخيص المستخدمين.
       url: add-users/add-users.md

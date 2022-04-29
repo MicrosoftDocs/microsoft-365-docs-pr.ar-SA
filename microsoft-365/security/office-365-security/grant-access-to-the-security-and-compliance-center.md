@@ -1,5 +1,5 @@
 ---
-title: منح المستخدمين حق الوصول إلى مركز & الأمان
+title: منح المستخدمين حق الوصول إلى مركز توافق & الأمان
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,55 +16,55 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: يجب تعيين أذونات للمستخدمين في Microsoft 365 الأمان & التوافق قبل أن يتمكنوا من إدارة أي من ميزات الأمان أو التوافق الخاصة به.
+description: يجب تعيين أذونات للمستخدمين في Microsoft 365 Security & Compliance Center قبل أن يتمكنوا من إدارة أي من ميزات الأمان أو التوافق الخاصة به.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5af3d045b174c4405dc2060fea1db22b3b4066ac
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 5bf2f6f99af13de0858b041807f01e25e3516da8
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680676"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130747"
 ---
-# <a name="give-users-access-to-the-security--compliance-center"></a>منح المستخدمين حق الوصول إلى مركز & الأمان
+# <a name="give-users-access-to-the-security--compliance-center"></a>منح المستخدمين حق الوصول إلى مركز توافق & الأمان
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-يجب تعيين أذونات للمستخدمين في مركز التوافق & الأمان قبل أن يتمكنوا من إدارة أي من ميزات الأمان أو التوافق الخاصة به. بصفتك مسؤول عام أو عضوا في مجموعة دور إدارة المؤسسة في مركز التوافق & الأمان، يمكنك منح هذه الأذونات للمستخدمين. لن يتمكن المستخدمون إلا من إدارة ميزات الأمان أو التوافق التي تمنحهم حق الوصول إليها.
+يجب تعيين أذونات للمستخدمين في مركز توافق & الأمان قبل أن يتمكنوا من إدارة أي من ميزات الأمان أو التوافق الخاصة به. بصفتك مسؤولا عاما أو عضوا في مجموعة دور OrganizationManagement في مركز توافق & الأمان، يمكنك منح هذه الأذونات للمستخدمين. سيتمكن المستخدمون فقط من إدارة ميزات الأمان أو التوافق التي تمنحهم حق الوصول إليها.
 
-لمزيد من المعلومات حول الأذونات المختلفة التي يمكنك منحها للمستخدمين في مركز التوافق & الأمان، راجع الأذونات في مركز التوافق & [الأمان](permissions-in-the-security-and-compliance-center.md).
+لمزيد من المعلومات حول الأذونات المختلفة التي يمكنك منحها للمستخدمين في مركز التوافق & الأمان، راجع [الأذونات في مركز التوافق & الأمان](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
-- يجب أن تكون مسؤول عام أو عضوا في مجموعة دور إدارة المؤسسة في مركز التوافق & الأمان، لإكمال الخطوات في هذه المقالة.
+- يجب أن تكون مسؤولا عاما، أو عضوا في مجموعة دور OrganizationManagement في مركز التوافق & الأمان، لإكمال الخطوات الواردة في هذه المقالة.
 
-- قد يكون لمجموعات الدور & مركز التوافق أسماء مماثلة لمجموعات الدور في Exchange Online، ولكنها ليست نفسها.
+- قد يكون لمجموعات الأدوار لمركز التوافق & الأمان أسماء مشابهة لمجموعات الأدوار في Exchange Online، ولكنها ليست متشابهة.
 
-- لا يتم مشاركة عضوية مجموعة الدور بين Exchange Online مركز التوافق & الأمان.
+- لا تتم مشاركة عضويات مجموعة الأدوار بين Exchange Online ومركز توافق & الأمان.
 
-- لا يمكن لشركاء إذن الوصول المفوض (DAP) مع إدارة نيابة عن (AOBO) الوصول إلى مركز التوافق & الأمان.
+- لا يمكن لشركاء إذن الوصول المفوض (DAP) الذين لديهم أذونات الإدارة نيابة عن (AOBO) الوصول إلى مركز توافق & الأمان.
 
-## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>استخدام مركز & الأمان لإعطاء مستخدم آخر حق الوصول إلى مركز التوافق & الأمان
+## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>استخدام Security & Compliance Center لمنح مستخدم آخر حق الوصول إلى مركز توافق & الأمان
 
-1. افتح مركز & الأمان في <https://protection.office.com> ، ثم انتقل إلى **الأذونات**. الانتقال مباشرة إلى علامة التبويب **أذونات** ، افتح <https://protection.office.com/permissions>.
+1. افتح مركز التوافق & الأمان في <https://protection.office.com> ثم انتقل إلى **الأذونات**. للانتقال مباشرة إلى علامة التبويب **"أذونات** "، افتح <https://protection.office.com/permissions>.
 
-2. من قائمة مجموعات الدور، اختر مجموعة الدور، ثم انقر فوق **تحرير أيقونة** ![تحرير.](../../media/O365-MDM-CreatePolicy-EditIcon.gif).
+2. من قائمة مجموعات الأدوار، اختر مجموعة الأدوار، ثم انقر فوق أيقونة **"تحرير**![".](../../media/O365-MDM-CreatePolicy-EditIcon.gif)
 
-3. في صفحة خصائص مجموعة الدور ضمن **الأعضاء،** انقر فوق **أيقونة AddAdd**![.](../../media/ITPro-EAC-AddIcon.gif) وحدد اسم المستخدم (أو المستخدمين) الذي تريد إضافته.
+3. في صفحة خصائص مجموعة الأدوار ضمن **"الأعضاء**"، انقر فوق "أيقونة **AddAdd**![".](../../media/ITPro-EAC-AddIcon.gif) وحدد اسم المستخدم (أو المستخدمين) الذي تريد إضافته.
 
-4. عند تحديد جميع المستخدمين الذين تريد إضافتهم إلى مجموعة الدور، انقر فوق **إضافة\>** ثم **موافق**.
+4. عند تحديد كافة المستخدمين الذين تريد إضافتهم إلى مجموعة الأدوار، انقر فوق **"إضافة"،\>** ثم **"موافق**".
 
 5. عند الانتهاء، انقر فوق **حفظ**.
 
-## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>استخدام ميزة & مركز التوافق PowerShell لإعطاء مستخدم آخر حق الوصول إلى مركز التوافق & الأمان
+## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>استخدام Security & Compliance Center PowerShell لمنح مستخدم آخر حق الوصول إلى Security & Compliance Center
 
-1. [الاتصال إلى مركز & التوافق PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. استخدم بناء الجملة التالي:
 
@@ -80,18 +80,18 @@ ms.locfileid: "63680676"
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-للحصول على مشاكل مفصلة في بناء الجملة والمعلمات، راجع [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
+للحصول على مشاكل مفصلة في بناء الجملة والمعلمة، راجع [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
-### <a name="how-do-you-know-this-worked"></a>كيف يمكنك معرفة كيفية عمل ذلك؟
+### <a name="how-do-you-know-this-worked"></a>كيف تعرف أن هذا يعمل؟
 
-للتحقق من أنك منحت حق الوصول إلى مركز التوافق & الأمان، يمكنك تنفيذ أي من الخطوات التالية:
+للتحقق من أنك منحت حق الوصول بنجاح إلى مركز توافق & الأمان، قم بأي من الخطوات التالية:
 
-- في مركز & الأمان، انتقل إلى **أذونات** وحدد مجموعة الدور. في مجموعة التفاصيل التي يتم فتحها، تحقق من أعضاء مجموعة الدور.
+- في مركز التوافق & الأمان، انتقل إلى **الأذونات** وحدد مجموعة الأدوار. في القائمة المنبثقة للتفاصيل التي تفتح، تحقق من أعضاء مجموعة الأدوار.
 
-- في Security & Compliance Center PowerShell \<RoleGroupName\> ، استبدل باسم مجموعة الدور، ثم ادير الأمر التالي:
+- في Security & Compliance Center PowerShell، استبدل \<RoleGroupName\> باسم مجموعة الأدوار، وقم بتشغيل الأمر التالي:
 
   ```powershell
   Get-RoleGroupMember -Identity "<RoleGroupName>"
   ```
 
-  للحصول على معلومات مفصلة حول بناء الجملة والمعلمات، راجع [Get-RoleGroupMember](/powershell/module/exchange/Get-RoleGroupMember).
+  للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Get-RoleGroupMember](/powershell/module/exchange/Get-RoleGroupMember).

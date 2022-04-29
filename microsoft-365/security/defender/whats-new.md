@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 56e22e0525324c59d2d62adaf2325edc3317ccd6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0cbcc198f31497996595a9f17df9cf689c435b58
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096039"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130528"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>الجديد في Microsoft 365 Defender
 
@@ -48,6 +48,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="april-2022"></a>أبريل 2022
 - (معاينة) يمكن الآن اتخاذ [إجراءات](advanced-hunting-take-action.md) على رسائل البريد الإلكتروني مباشرة من نتائج استعلام التتبع. يمكن نقل رسائل البريد الإلكتروني إلى مجلدات أخرى أو حذفها بشكل دائم. 
+- (معاينة) يمكن استخدام [الجدول الجديد`UrlClickEvents`](advanced-hunting-urlclickevents-table.md) في التتبع المتقدم للبحث عن تهديدات مثل حملات التصيد الاحتيالي والارتباطات المشبوهة استنادا إلى المعلومات الواردة من خزينة نقرات الارتباطات في رسائل البريد الإلكتروني Microsoft Teams وتطبيقات Office 365.
 
 ## <a name="march-2022"></a>مارس 2022
 

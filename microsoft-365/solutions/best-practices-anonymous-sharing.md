@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: في هذه المقالة، ستتعرف على أفضل الممارسات لمشاركة الملفات والمجلدات مع مستخدمين غير مصادقين.
-ms.openlocfilehash: 43db59e0380f99a2312fd803970a73013445504a
-ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+ms.openlocfilehash: bd153d34e6e9ddc4a4b627a79df90286661353d3
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65015035"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128577"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>أفضل الممارسات لمشاركة الملفات والمجلدات مع مستخدمين غير مصادقين
 
@@ -61,7 +61,11 @@ ms.locfileid: "65015035"
 
 لاحظ أنه بمجرد انتهاء صلاحية ارتباط *"أي شخص* "، يمكن إعادة مشاركة الملف أو المجلد مع ارتباط *"أي شخص* " جديد.
 
-يمكنك تعيين انتهاء صلاحية ارتباط *"أي شخص*" OneDrive معين باستخدام [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite).
+يمكنك تعيين انتهاء صلاحية ارتباط *"أي شخص* " لموقع معين باستخدام [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite). 
+
+```powershell
+Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTenantAnonymousLinkExpirationPolicy $true -AnonymousLinkExpirationInDays 15
+```
 
 ## <a name="set-link-permissions"></a>تعيين أذونات الارتباط
 

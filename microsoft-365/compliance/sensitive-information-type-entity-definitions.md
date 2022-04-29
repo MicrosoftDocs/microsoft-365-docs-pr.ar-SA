@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: هناك العديد من أنواع المعلومات الحساسة الجاهزة للاستخدام في نهج DLP. تسرد هذه المقالة كل أنواع المعلومات الحساسة هذه وتعرض ما يبحث عنه نهج DLP عند اكتشاف كل نوع.
-ms.openlocfilehash: 6074082812853469e0513d67ec68519eb2a89563
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: af2cbd03de426aa34b9db82691a22684c4c1df0b
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970648"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130791"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>تعريفات كيان نوع المعلومات الحساسة
 
@@ -9588,9 +9588,9 @@ None
 
 ### <a name="keywords"></a>الكلمات الرئيسيه
 
-Any term from the Dictionary_icd_10_updated keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). يبحث هذا النوع عن المصطلح فقط، وليس رموز التأمين.
+Any term from the Dictionary_icd_10_updated keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://icd10cmtool.cdc.gov/). يبحث هذا النوع عن المصطلح فقط، وليس رموز التأمين.
 
-أي مصطلح من قاموس الكلمات الأساسية Dictionary_icd_10_codes، والذي يستند إلى [التصنيف الدولي للمرضى، المراجعة العاشرة، التعديل الإكلينيكي (ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) يبحث هذا النوع عن رموز التأمين فقط، وليس الوصف.
+أي مصطلح من قاموس الكلمات الأساسية Dictionary_icd_10_codes، والذي يستند إلى [التصنيف الدولي للمرضى، المراجعة العاشرة، التعديل الإكلينيكي (ICD-10-CM).](https://icd10cmtool.cdc.gov/) يبحث هذا النوع عن رموز التأمين فقط، وليس الوصف.
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>التصنيف الدولي الأمراض (ICD-9-CM)
 

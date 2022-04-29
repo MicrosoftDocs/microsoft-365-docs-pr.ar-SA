@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، احصل على المساعدة في استكشاف أخطاء رسائل الخطأ والمشاكل وإصلاحها.
-ms.openlocfilehash: a150213c2e202c96afeae14843708daa58ab4f92
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3ae2737a07815284f2981e8c4debac2d064fc1e9
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093273"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130769"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>استكشاف أخطاء رسائل الخطأ ومشاكلها في Microsoft 365 Lighthouse وإصلاحها
 
@@ -54,7 +54,7 @@ ms.locfileid: "65093273"
 **يسبب:** لا يفي مستأجرو العملاء بالمعايير التالية:
 
 - يجب أن يكون قد تم إعداد الوصول المفوض لموفر الخدمة المدارة (MSP) لكي يتمكن من إدارة مستأجر العميل*
-- يجب أن يكون لديك ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business واحد على الأقل
+- يجب أن يكون لديك ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business أو Microsoft Defender for Business واحد على الأقل
 - يجب ألا يكون لديك أكثر من 1000 مستخدم مرخص 
 
 **القرار:** يصف الجدول التالي حالات المستأجر المختلفة التي تتطلب إجراء ويشرح كيفية حلها.
@@ -65,7 +65,7 @@ ms.locfileid: "65093273"
 |--|--|--|
 | نشطه | تم إلحاق المستأجر بطلب من موفر الخدمات المشتركة (MSP) ولم يعد تتم إدارته في Lighthouse. | تحتاج إلى إعادة تنشيط المستأجر. في صفحة **المستأجرين** ، حدد النقاط الثلاث (المزيد من الإجراءات) إلى جانب المستأجر الذي تريد إعادة تنشيطه، ثم حدد **"تنشيط المستأجر**". قد يستغرق ظهور بيانات العميل الأولية في Lighthouse من 24 إلى 48 ساعة. |
 | غير مؤهل - لم يتم إعداد DAP أو GDAP | ليس لديك امتيازات مسؤول DAP أو GDAP تم إعدادها مع المستأجر، وهو مطلوب من Lighthouse. | إعداد امتيازات مسؤول DAP أو GDAP في مركز شركاء Microsoft. |
-| غير مؤهل - الترخيص المطلوب مفقود | المستأجر يفتقد ترخيصا مطلوبا. إنهم بحاجة إلى ترخيص Microsoft 365 Business Premium أو ترخيص Microsoft 365 E3 واحد على الأقل. | تأكد من تعيين ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business واحد على الأقل للمستأجر. |
+| غير مؤهل - الترخيص المطلوب مفقود | المستأجر يفتقد ترخيصا مطلوبا. إنهم بحاجة إلى ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft Defender for Business واحد على الأقل. | تأكد من تعيين ترخيص Microsoft Defender for Business Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business أو Microsoft Defender for Business على الأقل للمستأجر. |
 | غير مؤهل - تم تجاوز عدد المستخدمين | المستأجر لديه أكثر من 1000 مستخدم مرخص كحد أقصى يسمح به Lighthouse. | تحقق من أن المستأجر ليس لديه أكثر من 1000 مستخدم مرخص. |
 | غير مؤهل - فشل التحقق الجغرافي | أنت والعملاء لا تقيمون في نفس المنطقة الجغرافية، والتي تتطلبها Lighthouse. | تحقق من وجود العميل في منطقتك الجغرافية. إذا لم يكن الأمر كذلك، فلا يمكنك إدارة المستأجر في Lighthouse. |
 | قيد المعالجة | اكتشفت Lighthouse المستأجر ولكنها لا تزال قيد الإعداد. | السماح ل Lighthouse 48 ساعة بإكمال إلحاق المستأجر. |
@@ -78,7 +78,7 @@ ms.locfileid: "65093273"
 
 **يسبب:** لا تنتمي إلى مجموعة الأمان الصحيحة في Azure AD، أو لم يتم تعيين الدور الصحيح لك في مركز الشركاء لتتمكن من الوصول إلى Lighthouse.
 
-**القرار:** تأكد من أن مسؤولا من مستأجر شريكك لديه الأذونات المناسبة قد عينك إلى مجموعة أمان GDAP الصحيحة في Azure AD وعين لك الدور الصحيح في مركز الشركاء. ضع في اعتبارك أيضا أن بعض الإجراءات في Lighthouse تتطلب منك أن تكون مسؤولا عموميا. لمعرفة المزيد حول أدوار GDAP وما يمكن أن يفعله كل دور، راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). للحصول على وصف مفصل لجميع الأدوار والأذونات المضمنة في Azure AD ل GDAP، راجع [الأدوار المضمنة في Azure AD](/azure/active-directory/roles/permissions-reference).
+**القرار:** تأكد من أن مسؤولا من مستأجر شريكك لديه الأذونات المناسبة قد عينك إلى مجموعة أمان GDAP الصحيحة في Azure AD وعين لك الدور الصحيح في مركز الشركاء. ضع في اعتبارك أيضا أن بعض الإجراءات في Lighthouse تتطلب منك أن تكون مسؤولا عموميا. لمعرفة المزيد حول أدوار GDAP وما يمكن أن يفعله كل دور، راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). للحصول على وصف مفصل لجميع الأدوار والأذونات المضمنة Azure AD ل GDAP، راجع [Azure AD الأدوار المضمنة](/azure/active-directory/roles/permissions-reference).
 
 بالنسبة للعملاء الذين تربطهم علاقات DAP، سيحتاج المسؤول الشريك إلى تعيينك إما إلى وكيل المسؤول أو دور وكيل Helpdesk في مركز الشركاء. للحصول على وصف مفصل لكافة أدوار وأذونات مركز الشركاء، راجع [تعيين الأدوار والأذونات للمستخدمين](/partner-center/permissions-overview).
 
@@ -86,7 +86,7 @@ ms.locfileid: "65093273"
 
 **يسبب:** لديك وصول محدود إلى GDAP استنادا إلى الأدوار المعينة لمجموعة أمان Azure AD التي أنت فيها.
 
-**القرار:** تأكد من أن مسؤولا من مستأجر شريكك لديه الأذونات المناسبة قد عينك إلى مجموعة أمان GDAP الصحيحة في Azure AD. ضع في اعتبارك أيضا أن بعض الإجراءات في Lighthouse تتطلب منك أن تكون مسؤولا عموميا. لمعرفة المزيد حول أدوار GDAP وما يمكن أن يفعله كل دور، راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). للحصول على وصف مفصل لجميع الأدوار والأذونات المضمنة في Azure AD ل GDAP، راجع [الأدوار المضمنة في Azure AD](/azure/active-directory/roles/permissions-reference).
+**القرار:** تأكد من أن مسؤولا من مستأجر شريكك لديه الأذونات المناسبة قد عينك إلى مجموعة أمان GDAP الصحيحة في Azure AD. ضع في اعتبارك أيضا أن بعض الإجراءات في Lighthouse تتطلب منك أن تكون مسؤولا عموميا. لمعرفة المزيد حول أدوار GDAP وما يمكن أن يفعله كل دور، راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). للحصول على وصف مفصل لجميع الأدوار والأذونات المضمنة Azure AD ل GDAP، راجع [Azure AD الأدوار المضمنة](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="customer-tenant-management"></a>إدارة مستأجري العملاء  
 

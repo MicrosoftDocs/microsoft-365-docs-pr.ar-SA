@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على صفحة المستأجرين.
-ms.openlocfilehash: 7b8e26ddbe68059a9c5ecf4d5e396fd11c49be71
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0f25f8bb02c6957598b2b328bc7832c429ca1e7a
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023272"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128363"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>نظرة عامة على صفحة المستأجرين في Microsoft 365 Lighthouse
 
@@ -52,9 +52,11 @@ ms.locfileid: "65023272"
 
 لإلغاء تنشيط المستأجر أو عرض العلامات وإدارتها، حدد النقاط الثلاث (إجراءات إضافية) إلى جانب اسم المستأجر. يمكنك عرض المستأجرين الفرديين إما عن طريق تحديد اسم المستأجر أو عن طريق تحديد إحدى العلامات المعينة للمستأجر.
 
+للحصول على معلومات حول كيفية إضافة مستأجرين، راجع [إضافة مستأجرين متعددين وإدارتهم في حساب مركز الشركاء.](/partner-center/multi-tenant-account)
+
 ## <a name="tenant-status"></a>حالة المستأجر
 
-يوضح الجدول التالي الحالات المختلفة ومعناها.<br><br>
+يوضح الجدول التالي الحالات المختلفة ومعناها. للحصول على معلومات حول كيفية استكشاف حالات مستأجر العميل وإصلاحها، راجع [استكشاف أخطاء رسائل الخطأ والمشاكل وإصلاحها في Microsoft 365 Lighthouse: إلحاق مستأجر العميل](m365-lighthouse-troubleshoot.md#customer-tenant-onboarding).<br><br>
 
 | حاله                                   | الوصف                                                                                             |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------|

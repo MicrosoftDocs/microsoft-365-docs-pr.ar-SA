@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a0f499a08288735d5f0d75e7111ec0b6360908a8
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: b467d87f16900375ca2db2f8478bf001780c9059
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664513"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130330"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>نشر Microsoft Defender لنقطة النهاية على Linux يدويا
 
@@ -29,7 +29,7 @@ ms.locfileid: "64664513"
 
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -323,12 +323,12 @@ ms.locfileid: "64664513"
 
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.sh
     ```
 
 ## <a name="client-configuration"></a>تكوين العميل
 
-1. انسخ MicrosoftDefenderATPOnboardingLinuxServer.py إلى الجهاز الهدف.
+1. انسخ MicrosoftDefenderATPOnboardingLinuxServer.sh إلى الجهاز الهدف.
 
     > [!NOTE]
     > في البداية جهاز العميل غير مقترن بمؤسسة وسمة *orgId* فارغة.
@@ -337,21 +337,10 @@ ms.locfileid: "64664513"
     mdatp health --field org_id
     ```
 
-2. تشغيل MicrosoftDefenderATPOnboardingLinuxServer.py.
-
-    > [!NOTE]
-    > لتشغيل هذا الأمر، يجب أن يكون لديك `python`  أو `python3` مثبتا على الجهاز استنادا إلى disto والإصدار. إذا لزم الأمر، فراجع [التعليمات خطوة بخطوة لتثبيت Python على Linux](https://opensource.com/article/20/4/install-python-linux).
-    
-    إذا كنت تقوم بتشغيل RHEL 8.x أو Ubuntu 20.04 أو أعلى، فستحتاج إلى استخدام `python3`.
+2. تشغيل MicrosoftDefenderATPOnboardingLinuxServer.sh.
 
     ```bash
-    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
-    ```
-
-    بالنسبة لبقية الفرق والإصدارات، ستحتاج إلى استخدام `python`.
-    
-    ```bash
-    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
+    sudo bash MicrosoftDefenderATPOnboardingLinuxServer.sh
     ```
     
 3. تحقق من أن الجهاز مقترن الآن بمؤسستك ويبلغ عن معرف مؤسسة صالح:

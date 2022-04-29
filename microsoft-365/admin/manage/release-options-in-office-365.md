@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: تعرف على كيفية إعداد خيار الإصدار لتحديثات المنتجات والميزات الجديدة في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: 67c6fe3f08549424c725589a50c647a876c151af
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 176558448f31fadea0b0cf865bca5d1156e3eefe
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022438"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129409"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>إعداد خيارات الإصدار القياسي أو المستهدف
 
@@ -47,7 +47,7 @@ ms.locfileid: "65022438"
 للحصول على تحديثات مهمة، يتم إعلام العملاء في البداية بواسطة [مخطط Microsoft 365](https://products.office.com/business/office-365-roadmap). مع اقتراب التحديث من الطرح، يتم توصيله من خلال [مركز الرسائل Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
-> تحتاج إلى حساب Microsoft 365 أو Azure AD للوصول إلى مركز الرسائل من خلال [مركز الإدارة](/office365/admin/admin-overview/about-the-admin-center). Microsoft 365 مستخدمي الخطة المنزلية ليس لديهم مركز إدارة.
+> تحتاج إلى حساب Microsoft 365 أو Azure AD للوصول إلى مركز الرسائل من خلال [مركز الإدارة](/office365/admin/admin-overview/admin-center-overview). Microsoft 365 مستخدمي الخطة المنزلية ليس لديهم مركز إدارة.
 
 ## <a name="standard-release"></a>الإصدار القياسي
 

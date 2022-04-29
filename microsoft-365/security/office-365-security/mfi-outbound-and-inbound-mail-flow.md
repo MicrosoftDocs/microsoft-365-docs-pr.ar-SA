@@ -1,5 +1,5 @@
 ---
-title: نظرة ثاقبة حول تدفق البريد الصادر والداخل في لوحة معلومات تدفق البريد
+title: نظرة ثاقبة لتدفق البريد الصادر والوارد في لوحة معلومات تدفق البريد
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -11,56 +11,56 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: يمكن للمسؤولين التعرف على معلومات تدفق البريد الصادر والداخل في لوحة معلومات تدفق البريد في مركز التوافق & الأمان.
+description: يمكن للمسؤولين التعرف على رؤى تدفق البريد الصادر والوارد في لوحة معلومات تدفق البريد في مركز التوافق & الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3bc9d6c08dfc1c232018d79e988d741505079604
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f856e2b9a4829531966802f2594f26c19e6ab7e5
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475708"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131185"
 ---
-# <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>نظرة ثاقبة حول تدفق البريد الصادر والداخل في مركز & الأمان
+# <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>نظرة ثاقبة لتدفق البريد الصادر والوارد في مركز توافق & الأمان
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-تجمع **معلومات** تدفق البريد الصادر والداخل في لوحة معلومات تدفق [](mail-flow-insights-v2.md) البريد في مركز التوافق & [](https://protection.office.com) الأمان المعلومات من تقرير [الموصل](view-mail-flow-reports.md#connector-report) والتقرير السابق ل **نظرة عامة حول TLS** في مكان واحد.
+تجمع نتيجة تحليلات **تدفق البريد الصادر والوارد** في [لوحة معلومات تدفق البريد](mail-flow-insights-v2.md) في [مركز التوافق & الأمان](https://protection.office.com) المعلومات من [تقرير الموصل](view-mail-flow-reports.md#connector-report) **وتقرير نظرة عامة حول TLS** السابق في مكان واحد.
 
-يعرض عنصر واجهة المستخدم تشفير TLS المستخدم للاتصال عند تسليم الرسائل إلى مؤسستك أو منها. يتم تشفير الاتصالات التي يتم تأسيسها مع خدمات البريد الإلكتروني الأخرى بواسطة TLS عندما يتم تقديم TLS من قبل الجانبين. يوفر عنصر واجهة المستخدم لقطة عن الأسبوع الأخير من تدفق البريد.
+يعرض عنصر واجهة المستخدم تشفير TLS المستخدم للاتصال عند تسليم الرسائل من وإلى مؤسستك. يتم تشفير الاتصالات التي تم تأسيسها مع خدمات البريد الإلكتروني الأخرى بواسطة TLS عند تقديم TLS من قبل كلا الجانبين. يقدم عنصر واجهة المستخدم لقطة الأسبوع الماضي من تدفق البريد.
 
-:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png" alt-text="عنصر واجهة مستخدم تدفق البريد الصادر والداخل في لوحة معلومات تدفق البريد في مركز & الأمان" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png":::
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png" alt-text="عنصر واجهة مستخدم تدفق البريد الصادر والوارد في لوحة معلومات تدفق البريد في Security & Compliance Center" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png":::
 
-ترتبط المعلومات في عنصر واجهة المستخدم بالموصلات وحماية رسائل TLS في Microsoft 365. لمزيد من المعلومات، راجع المواضيع التالية:
+ترتبط المعلومات في عنصر واجهة المستخدم بالموصلات وحماية رسائل TLS في Microsoft 365. لمزيد من المعلومات، راجع هذه المواضيع:
 
 - [تكوين تدفق البريد باستخدام الموصلات](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 - [كيفية استخدام Exchange Online TLS لتأمين اتصالات البريد الإلكتروني](../../compliance/exchange-online-uses-tls-to-secure-email-connections.md)
-- [تفاصيل المراجع التقنية حول التشفير في Microsoft 365](../../compliance/technical-reference-details-about-encryption.md)
+- [تفاصيل المرجع التقني حول التشفير في Microsoft 365](../../compliance/technical-reference-details-about-encryption.md)
 
 ## <a name="message-protected-in-transit-by-tls"></a>رسالة محمية أثناء النقل (بواسطة TLS)
 
-عندما تنقر فوق **عرض التفاصيل** على عنصر واجهة المستخدم، تعرض لك عنصر واجهة المستخدم من خلال عنصر واجهة مستخدم الرسالة المحمية أثناء النقل **(بواسطة TLS) حماية TLS** للرسائل التي تقوم بإدخال مؤسستك ومغادرتها.
+عند النقر فوق **"عرض التفاصيل** " على عنصر واجهة المستخدم، تعرض لك القائمة المنبثقة **للرسالة المحمية أثناء النقل (بواسطة TLS)** حماية TLS للرسائل التي تدخل مؤسستك وتغادرها.
 
-:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png" alt-text="قائمة الرسائل المحمية أثناء النقل (بواسطة TLS) التي تظهر بعد النقر فوق عرض التفاصيل على عنصر واجهة مستخدم البريد الإلكتروني الصادر والداخل" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png":::
+:::image type="content" source="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png" alt-text="القائمة المنبثقة للرسائل المحمية أثناء النقل (بواسطة TLS) التي تظهر بعد النقر فوق &quot;عرض التفاصيل&quot; على عنصر واجهة مستخدم البريد الإلكتروني الصادر والوارد" lightbox="../../media/mfi-outbound-and-inbound-mail-flow-report-details.png":::
 
-حاليا، TLS 1.2 هو الإصدار الأكثر أمانا من TLS الذي يقدمه Microsoft 365. ستحتاج في أغلب الأحيان إلى معرفة تشفير TLS الذي يتم استخدامه لتدقيقات التوافق. من المحتمل ألا تكون لديك علاقة مباشرة مع معظم خوادم البريد الإلكتروني المصدر والوجهة (ولا تملكها Microsoft أيضا)، وبالتالي ليس لديك العديد من الخيارات لتحسين تشفير TLS الذي تستخدمه هذه الخوادم.
+حاليا، TLS 1.2 هو الإصدار الأكثر أمانا من TLS التي تقدمها Microsoft 365. في كثير من الأحيان، ستحتاج إلى معرفة تشفير TLS الذي يتم استخدامه لعمليات تدقيق التوافق. ربما ليس لديك علاقة مباشرة مع معظم خوادم البريد الإلكتروني المصدر والوجهة (أنت لا تملكها، ولا تملكها Microsoft)، لذلك ليس لديك العديد من الخيارات لتحسين تشفير TLS الذي تستخدمه هذه الخوادم.
 
-ولكن، يمكنك استخدام [الموصلات](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) لضمان أفضل حماية متوفرة ل TLS للرسائل المرسلة بين خوادم البريد الإلكتروني Microsoft 365. غالبا ما يكون تدفق Microsoft 365 بين خوادم البريد الإلكتروني أو خوادم البريد الإلكتروني الخاصة بك التي تنتمي إلى الشركاء أكثر أهمية وحساسية من الرسائل العادية، لذا يجب تطبيق المزيد من الأمان وتوخي الحذر على تلك الرسائل.
+ولكن، يمكنك استخدام [الموصلات](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) لضمان أفضل حماية TLS متوفرة للرسائل التي يتم إرسالها بين خوادم البريد الإلكتروني وMicrosoft 365. غالبا ما يكون تدفق البريد بين Microsoft 365 وخوادم البريد الإلكتروني أو الخوادم الخاصة بك التي تنتمي إلى الشركاء أكثر أهمية وحساسة من الرسائل العادية، لذلك ستحتاج إلى تطبيق المزيد من الأمان والحذر على تلك الرسائل.
 
-يمكنك ترقية خوادم البريد الإلكتروني الخاصة بك أو إصلاحها لتحسين تشفير TLS الذي يتم استخدامه، أو التواصل مع الشركاء للقيام بالشيء نفسه. يعرض **"تقرير الموصل**" كلا من حجم تدفق البريد وتشفير TLS للرسائل التي تستخدم Microsoft 365 الموصلات.
+يمكنك ترقية خوادم البريد الإلكتروني الخاصة بك أو إصلاحها لتحسين تشفير TLS المستخدم، أو التواصل مع الشركاء للقيام بنفس الشيء. يعرض **"تقرير الموصل"** كل من وحدة تخزين تدفق البريد وتشفير TLS للرسائل التي تستخدم موصلات Microsoft 365.
 
-يمكنك النقر فوق ارتباط **تقرير الموصل** للذهاب إلى [تقرير الموصل](view-mail-flow-reports.md#connector-report). قد تتوفر الرؤى التالية على صفحة تقرير **الموصل** إذا تم الكشف عن الحالة المقترنة:
+يمكنك النقر فوق ارتباط **تقرير الموصل** للانتقال إلى [تقرير الموصل](view-mail-flow-reports.md#connector-report). قد تتوفر النتائج المعرفية التالية في صفحة **تقرير الموصل** إذا تم الكشف عن الشرط المقترن:
 
-- **موصل الشريك الوارد يرى تدفق بريد TLS1.0 هام**
-- **Inbound OnPremises connector seeing significant TLS1.0 mail flow**
+- **يرى موصل الشريك الوارد تدفق بريد TLS1.0 مهما**
+- **يرى موصل OnPremises الوارد تدفق بريد TLS1.0 كبير**
 
-بالنسبة إلى اتصالات TLS 1.0، تحتاج فعلا إلى ترقية خادم البريد الإلكتروني أو خادم شريكك أو إصلاحه لتجنب أي مشاكل عند إهمال دعم TLS 1.0 في النهاية Microsoft 365.
+بالنسبة إلى اتصالات TLS 1.0، تحتاج حقا إلى ترقية خادم البريد الإلكتروني أو خادم شريكك أو إصلاحه لتجنب أي مشاكل عند إهمال دعم TLS 1.0 في Microsoft 365 في النهاية.
 
 ## <a name="see-also"></a>راجع أيضًا
 
-للحصول على معلومات حول رؤى أخرى في لوحة معلومات تدفق البريد، راجع تحليلات تدفق البريد في مركز التوافق & [الأمان](mail-flow-insights-v2.md).
+للحصول على معلومات حول نتائج التحليلات الأخرى في لوحة معلومات تدفق البريد، راجع [رؤى تدفق البريد في مركز التوافق & الأمان](mail-flow-insights-v2.md).

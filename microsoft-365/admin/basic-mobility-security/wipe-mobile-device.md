@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: استخدم Basic Mobility and Security المضمنين لإزالة المعلومات من الأجهزة المسجلة.
-ms.openlocfilehash: 932380b735e3fea2543832417e7911e9216f70fc
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 959e785958dd6d447713507ee9c48763b814db78
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780776"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129079"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>مسح جهاز محمول في Basic Mobility and Security
 
@@ -46,7 +46,7 @@ ms.locfileid: "64780776"
 
 ## <a name="wipe-a-mobile-device"></a>مسح جهاز محمول
 
-1. انتقل إلى [مركز مسؤولي Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
+1. انتقل إلى [مركز مسؤولي Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
 
 2. اكتب إدارة الجهاز Mobile في حقل البحث، وحدد **إدارة الجهاز الجوال** من قائمة النتائج.
 

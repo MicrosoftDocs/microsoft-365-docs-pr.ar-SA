@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية توزيع Microsoft 365 أساسات Lighthouse.
-ms.openlocfilehash: 2649094f36903e5607fee28862fa0af683d0986e
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 550ded1383cb402da0943bdfeb6707cbd12b02d1
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022856"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131119"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>توزيع خطوط الأساس Microsoft 365 Lighthouse
 
@@ -33,7 +33,7 @@ ms.locfileid: "65022856"
 
 ## <a name="view-a-deployment-plan"></a>عرض خطة نشر
 
-1. في صفحة التنقل اليمنى، حدد **المستأجرين**.
+1. في جزء التنقل الأيمن في Lighthouse، حدد **Tenants**.
 
 2. من قائمة المستأجرين، حدد المستأجر الذي تريد عرضه.
 
@@ -147,7 +147,7 @@ ms.locfileid: "65022856"
 
 يتم توفير إعدادات إضافية لوعيك ولكن لا تتطلب منك اتخاذ إجراء.
 
-لمزيد من المعلومات حول إدارة تعارض النهج، راجع [وثائق الوصول المشروط إلى Azure AD](/azure/active-directory/conditional-access/).
+لمزيد من المعلومات حول إدارة تعارض النهج، راجع [Azure AD وثائق الوصول المشروط](/azure/active-directory/conditional-access/).
 
 ## <a name="update-deployment-step-status"></a>تحديث حالة خطوة النشر
 

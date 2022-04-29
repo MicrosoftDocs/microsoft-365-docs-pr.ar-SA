@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: يمكن أن يساعدك التنقل الأساسي والأمان على تأمين الأجهزة المحمولة الخاصة بك في مؤسستك وإدارتها.
-ms.openlocfilehash: f2da9a20c496d5229d62e477fcf4cc0024436788
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: cb724a4f7d5b4118bb50b0aeaf1138a4a1aebfb6
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935226"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65129123"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>إدارة الأجهزة المسجلة في إدارة الجهاز الأجهزة المحمولة في Microsoft 365
 
@@ -36,7 +36,7 @@ ms.locfileid: "64935226"
 
 للوصول إلى لوحة إدارة الجهاز، اتبع الخطوات التالية:
 
-1. انتقل إلى [مركز مسؤولي Microsoft 365](../../admin/admin-overview/about-the-admin-center.md).
+1. انتقل إلى [مركز مسؤولي Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
 
 2. اكتب إدارة الجهاز Mobile في حقل البحث، وحدد **إدارة الجهاز الجوال** من قائمة النتائج.
 

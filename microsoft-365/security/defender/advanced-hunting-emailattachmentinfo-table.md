@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e787f79b5af90f45dd2823f53402830c7fc287db
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: b99daf9fa7597e44dc7ea20b517c2f7ed5aaa354
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664029"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65130550"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -32,6 +32,7 @@ ms.locfileid: "64664029"
 **ينطبق على:**
 
 - Microsoft 365 Defender
+- Microsoft Defender لـ Office 365
 
 `EmailAttachmentInfo` يحتوي الجدول في مخطط [التتبع المتقدم](advanced-hunting-overview.md) على معلومات حول المرفقات على رسائل البريد الإلكتروني التي تتم معالجتها بواسطة Microsoft Defender لـ Office 365. استخدم هذا المرجع لإنشاء استعلامات ترجع معلومات من هذا الجدول.
 

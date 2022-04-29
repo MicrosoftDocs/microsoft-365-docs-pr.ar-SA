@@ -1,6 +1,6 @@
 ---
-title: سياسات Teams الموصى بها - Microsoft 365 للمؤسسات | Microsoft Docs
-description: يصف هذه المقالة سياسات توصيات Microsoft حول كيفية تأمين Teams الوصول إلى الملفات والاتصالات.
+title: نهج Teams الموصى بها - Microsoft 365 | المؤسسة Microsoft Docs
+description: يصف نهج توصيات Microsoft حول كيفية تأمين الاتصال Teams والوصول إلى الملفات.
 author: MicrosoftHeidi
 manager: serdars
 ms.prod: m365-security
@@ -20,129 +20,129 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: b659853d9323b4a1503cd75cff66a83cbd06e85e
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 25f70d3ccdf11daa6a52d16b66d612c04ab8876a
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682890"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65131163"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>توصيات النهج لتأمين Teams الدردشات والمجموعات والملفات
 
-تصف هذه المقالة كيفية تنفيذ الهوية الصفرية الموصى بها ونهج الوصول إلى الجهاز لحماية Microsoft Teams الدردشات والمجموعات والمحتوى مثل الملفات والتقويمات. يعتمد هذا الإرشاد على [الهوية](identity-access-policies.md) المشتركة ونهج الوصول إلى الجهاز، مع معلومات إضافية Teams خاصة. نظرا Teams التكامل مع منتجاتنا الأخرى، راجع أيضا توصيات النهج لتأمين SharePoint والملفات وتوصيات النهج [لتأمين البريد الإلكتروني](secure-email-recommended-policies.md).[](sharepoint-file-access-policies.md)
+تصف هذه المقالة كيفية تنفيذ نهج الهوية والوصول إلى الجهاز ثقة معدومة الموصى بها لحماية Microsoft Teams الدردشات والمجموعات والمحتوى مثل الملفات والتقويمات. تعتمد هذه الإرشادات على [نهج الوصول إلى الأجهزة والهوية الشائعة](identity-access-policies.md)، مع معلومات إضافية خاصة Teams. نظرا لأن Teams يتكامل مع منتجاتنا الأخرى، راجع أيضا [توصيات النهج لتأمين مواقع وملفات SharePoint](sharepoint-file-access-policies.md) [وتوصيات النهج لتأمين البريد الإلكتروني](secure-email-recommended-policies.md).
 
-تستند هذه التوصيات إلى ثلاثة مستويات مختلفة من الأمان والحماية Teams يمكن تطبيقها بالاستناد إلى مجموعة احتياجاتك: نقطة البداية والمؤسسة والأمان المتخصص. يمكنك معرفة المزيد حول مستويات الأمان هذه ونهج الموصى بها التي تشير إليها هذه التوصيات في تكوينات الوصول إلى الأجهزة [والهوية](microsoft-365-policies-configurations.md).
+تستند هذه التوصيات إلى ثلاثة مستويات مختلفة من الأمان والحماية Teams التي يمكن تطبيقها بناء على نقاوة احتياجاتك: نقطة البداية والمؤسسة والأمان المتخصص. يمكنك معرفة المزيد حول مستويات الأمان هذه والنهج الموصى بها المشار إليها من قبل هذه التوصيات في [تكوينات الوصول إلى الهوية والجهاز](microsoft-365-policies-configurations.md).
 
-يتم تضمين مزيد من Teams الخاصة بنشر المعلومات في هذه المقالة لتغطية ظروف مصادقة معينة، بما في ذلك للمستخدمين من خارج مؤسستك. ستحتاج إلى اتباع هذه الإرشادات للحصول على تجربة أمان كاملة.
+يتم تضمين المزيد من التوصيات الخاصة بنشر Teams في هذه المقالة لتغطية ظروف مصادقة معينة، بما في ذلك للمستخدمين من خارج مؤسستك. ستحتاج إلى اتباع هذه الإرشادات للحصول على تجربة أمان كاملة.
 
-## <a name="getting-started-with-teams-before-other-dependent-services"></a>بدء العمل مع Teams قبل الخدمات التابعة الأخرى
+## <a name="getting-started-with-teams-before-other-dependent-services"></a>بدء استخدام Teams قبل الخدمات التابعة الأخرى
 
-لست بحاجة إلى تمكين الخدمات التابعة للبدء باستخدام Microsoft Teams. كل هذه الخدمات "تعمل فقط". ومع ذلك، يجب أن تكون مستعدا لإدارة العناصر التالية ذات الصلة بالخدمة:
+لا تحتاج إلى تمكين الخدمات التابعة للبدء في Microsoft Teams. كل هذه الخدمات "تعمل فقط". ومع ذلك، يجب أن تكون مستعدا لإدارة العناصر التالية المتعلقة بالخدمة:
 
-- Microsoft 365 المجموعات
-- SharePoint مواقع الفريق
+- مجموعات Microsoft 365
+- مواقع فريق SharePoint
 - OneDrive for Business
-- Exchange علب البريد
+- علب بريد Exchange
 - دفق مقاطع الفيديو وخطط Planner (إذا تم تمكين هذه الخدمات)
 
-## <a name="updating-common-policies-to-include-teams"></a>تحديث السياسات الشائعة لتضمين Teams
+## <a name="updating-common-policies-to-include-teams"></a>تحديث النهج الشائعة لتضمين Teams
 
-لحماية الدردشة والمجموعات والمحتوى في Teams، يوضح الرسم التخطيطي التالي السياسات التي يجب تحديثها من سياسات الوصول إلى الأجهزة والهوية المشتركة. لكل نهج يتم تحديثه، تأكد من تضمين Teams والخدمات التابعة في تعيين تطبيقات السحابة.
+لحماية الدردشة والمجموعات والمحتوى في Teams، يوضح الرسم التخطيطي التالي النهج التي يجب تحديثها من نهج الوصول إلى الأجهزة والهوية الشائعة. لكل نهج يتم تحديثه، تأكد من تضمين Teams والخدمات التابعة في تعيين تطبيقات السحابة.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="ملخص تحديثات النهج لحماية الوصول إلى Teams والخدمات التابعة لها." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="ملخص تحديثات النهج لحماية الوصول إلى Teams وخدماتها التابعة" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
 
-هذه الخدمات هي الخدمات التابعة لتضمينها في تعيين تطبيقات السحابة Teams:
+هذه الخدمات هي الخدمات التابعة التي يجب تضمينها في تعيين تطبيقات السحابة Teams:
 
 - Microsoft Teams
 - SharePoint OneDrive for Business
 - Exchange Online
 - Skype for Business Online
 - Microsoft Stream (تسجيلات الاجتماع)
-- Microsoft Planner (مخطط المهام وخطط البيانات)
+- Microsoft Planner (مهام Planner وبيانات الخطة)
 
-يسرد هذا الجدول النهج التي تحتاج إلى إعادة زيارة والربط بكل نهج في نهج الوصول إلى الأجهزة [](identity-access-policies.md)والهوية المشتركة، والتي تحتوي على مجموعة نهج أوسع لكل تطبيقات Office.
+يسرد هذا الجدول النهج التي تحتاج إلى إعادة النظر فيها وارتباطات بكل نهج في [نهج الوصول إلى الهوية والجهاز الشائعة](identity-access-policies.md)، والتي تحتوي على نهج أوسع لجميع تطبيقات Office.
 
-|مستوى الحماية|السياسات|مزيد من المعلومات Teams التطبيق|
+|مستوى الحماية|السياسات|مزيد من المعلومات لتنفيذ Teams|
 |---|---|---|
-|**نقطة البداية**|[يتطلب MFA عندما تكون مخاطر تسجيل الدخول *متوسطة* أو *عالية*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|تأكد من Teams الخدمات التابعة في قائمة التطبيقات. Teams قواعد الوصول إلى الضيوف والوصول الخارجي التي يجب أن تفكر فيها أيضا، ستتعرف على المزيد حول هذه القواعد لاحقا في هذه المقالة.|
+|**نقطة البداية**|[طلب المصادقة متعددة العوامل (MFA) عندما يكون خطر تسجيل الدخول *متوسطا* أو *مرتفعا*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|تأكد من تضمين Teams والخدمات التابعة في قائمة التطبيقات. Teams لديه قواعد وصول الضيف والوصول الخارجي التي يجب مراعاتها أيضا، ستتعرف على المزيد حول هذه القواعد لاحقا في هذه المقالة.|
 ||[حظر العملاء الذين لا يدعمون المصادقة الحديثة](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|تضمين Teams والخدمات التابعة في تعيين تطبيقات السحابة.|
-||[يجب على المستخدمين المعرضين لمخاطر عالية تغيير كلمة المرور](identity-access-policies.md#high-risk-users-must-change-password)|يجب Teams المستخدمين بتغيير كلمة المرور الخاصة بهم عند تسجيل الدخول إذا تم الكشف عن نشاط عالي المخاطر لحسابهم. تأكد من Teams الخدمات التابعة في قائمة التطبيقات.|
-||[تطبيق سياسات حماية بيانات التطبيق](identity-access-policies.md#apply-app-data-protection-policies)|تأكد من Teams الخدمات التابعة في قائمة التطبيقات. تحديث النهج لكل نظام أساسي (iOS وAndroid Windows).|
-|**Enterprise**|[تتطلب MFA عندما تكون مخاطر تسجيل الدخول *منخفضة* أو *متوسطة* أو *عالية*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams قواعد الوصول إلى الضيوف والوصول الخارجي التي يجب أن تفكر فيها أيضا، ستتعرف على المزيد حول هذه القواعد لاحقا في هذه المقالة. تضمين Teams والخدمات التابعة في هذا النهج.|
-||[تعريف سياسات توافق الأجهزة](identity-access-policies.md#define-device-compliance-policies)|تضمين Teams والخدمات التابعة في هذا النهج.|
-||[يتطلب أجهزة كمبيوتر وأجهزة *محمولة* متوافقة](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|تضمين Teams والخدمات التابعة في هذا النهج.|
-|**أمان متخصص**|[*طلب* MFA دائما](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|بغض النظر عن هوية المستخدم، سيتم استخدام MFA من قبل مؤسستك. تضمين Teams والخدمات التابعة في هذا النهج. |
+||[يجب على المستخدمين المعرضين لمخاطر عالية تغيير كلمة المرور](identity-access-policies.md#high-risk-users-must-change-password)|يجبر Teams المستخدمين على تغيير كلمة المرور الخاصة بهم عند تسجيل الدخول إذا تم الكشف عن نشاط عالي المخاطر لحسابهم. تأكد من تضمين Teams والخدمات التابعة في قائمة التطبيقات.|
+||[تطبيق نهج حماية بيانات APP](identity-access-policies.md#apply-app-data-protection-policies)|تأكد من تضمين Teams والخدمات التابعة في قائمة التطبيقات. تحديث النهج لكل نظام أساسي (iOS وAndroid Windows).|
+|**Enterprise**|[طلب المصادقة متعددة العوامل (MFA) عندما يكون خطر تسجيل الدخول *منخفضا* أو *متوسطا* أو *مرتفعا*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams لديه قواعد وصول الضيف والوصول الخارجي التي يجب مراعاتها أيضا، ستتعرف على المزيد حول هذه القواعد لاحقا في هذه المقالة. تضمين Teams والخدمات التابعة في هذا النهج.|
+||[تحديد نهج توافق الجهاز](identity-access-policies.md#define-device-compliance-policies)|تضمين Teams والخدمات التابعة في هذا النهج.|
+||[طلب أجهزة كمبيوتر وأجهزة *محمولة متوافقة*](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|تضمين Teams والخدمات التابعة في هذا النهج.|
+|**أمان متخصص**|[*طلب المصادقة* متعددة العوامل (MFA) دائما](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|بغض النظر عن هوية المستخدم، سيتم استخدام المصادقة متعددة العوامل من قبل مؤسستك. تضمين Teams والخدمات التابعة في هذا النهج. |
 
-## <a name="teams-dependent-services-architecture"></a>Teams التابعة للخدمات
+## <a name="teams-dependent-services-architecture"></a>Teams بنية الخدمات التابعة
 
-للمرجع، يوضح الرسم التخطيطي التالي الخدمات Teams تعتمد عليها. لمزيد من المعلومات والتوضيحات، راجع Microsoft Teams وخدمات الإنتاجية ذات الصلة [في Microsoft 365 لمهندسي تكنولوجيا المعلومات](../../solutions/productivity-illustrations.md).
+للرجوع إليها، يوضح الرسم التخطيطي التالي الخدمات التي يعتمد عليها Teams. لمزيد من المعلومات والتوضيحات، راجع [Microsoft Teams وخدمات الإنتاجية ذات الصلة في Microsoft 365 لمهندسي تكنولوجيا المعلومات](../../solutions/productivity-illustrations.md).
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="رسم تخطيطي Teams على SharePoint OneDrive for Business و Exchange." lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="يوضح الرسم التخطيطي تبعيات Teams على SharePoint OneDrive for Business Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
 
 ## <a name="guest-and-external-access-for-teams"></a>وصول الضيف والخارجي Teams
 
-Microsoft Teams أنواع الوصول التالية:
+يعرف Microsoft Teams أنواع الوصول التالية:
 
-- **يستخدم وصول** الضيف حساب Azure AD B2B لضيف أو مستخدم خارجي يمكن إضافته كعضو في فريق والحصول على كل حق الوصول إلى اتصالات الفريق وموارده.
+- يستخدم **وصول الضيف** حساب B2B Azure AD لضيف أو مستخدم خارجي يمكن إضافته كعضو في فريق والحصول على حق الوصول إلى اتصالات الفريق وموارده.
 
-- **الوصول الخارجي** للمستخدم الخارجي الذي ليس لديه حساب Azure AD B2B. يمكن أن يتضمن الوصول الخارجي الدعوات والمشاركة في المكالمات والمحادثات والاجتماعات، ولكنه لا يتضمن عضوية الفريق والوصول إلى موارد الفريق.
+- **الوصول الخارجي** هو لمستخدم خارجي ليس لديه حساب B2B Azure AD. يمكن أن يتضمن الوصول الخارجي الدعوات والمشاركة في المكالمات والدردشات والاجتماعات، ولكنه لا يتضمن عضوية الفريق والوصول إلى موارد الفريق.
 
-تنطبق سياسات الوصول الشرطي فقط على وصول الضيف في Teams بسبب وجود حساب Azure AD B2B مقابل.
+تنطبق نهج الوصول المشروط فقط على وصول الضيف في Teams بسبب وجود حساب B2B Azure AD مطابق.
 
 <!--
 In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
 
 -->
 
-للحصول على سياسات مستحسنة للسماح بالوصول للمستخدمين الضيوف والخارجيين الذين لديهم حساب Azure AD B2B، راجع سياسات السماح بالوصول إلى حساب [B2B الخارجي والضيف](identity-access-policies-guest-access.md).
+للحصول على النهج الموصى بها للسماح بالوصول للمستخدمين الضيوف والخارجيين الذين لديهم حساب B2B Azure AD، راجع [نهج السماح بالوصول إلى حساب B2B الضيف والخارجي](identity-access-policies-guest-access.md).
 
 ### <a name="guest-access-in-teams"></a>وصول الضيف في Teams
 
-بالإضافة إلى سياسات المستخدمين الداخليين في شركتك أو مؤسستك، يمكن للمسؤولين تمكين وصول الضيف للسماح للأشخاص من خارج شركتك أو مؤسستك بالوصول إلى موارد Teams والتفاعل مع الأشخاص الداخليين لأشياء مثل المحادثات الجماعية والدردشة والاجتماعات.
+بالإضافة إلى النهج الخاصة بالمستخدمين الداخليين لشركتك أو مؤسستك، قد يقوم المسؤولون بتمكين وصول الضيف للسماح، على أساس المستخدم حسب المستخدم، للأشخاص من خارج شركتك أو مؤسستك بالوصول إلى موارد Teams والتفاعل مع أشخاص داخليين لأشياء مثل محادثات المجموعة والدردشة والاجتماعات.
 
-لمزيد من المعلومات حول وصول الضيف وكيفية تنفيذه، راجع Teams [وصول الضيف](/microsoftteams/guest-access).
+لمزيد من المعلومات حول وصول الضيف وكيفية تنفيذه، راجع [Teams وصول الضيف](/microsoftteams/guest-access).
 
 ### <a name="external-access-in-teams"></a>الوصول الخارجي في Teams
 
-في بعض الأحيان، يتم الخلط بين الوصول الخارجي والوصول إلى الضيف، لذلك من المهم أن تكون واضحا أن هاتين الآليتين غير الداخليتين للوصول نوعان مختلفان من الوصول.
+في بعض الأحيان يتم الخلط بين الوصول الخارجي والوصول إلى الضيف، لذلك من المهم أن يكون واضحا أن آليتي الوصول غير الداخليتين هاتين هما أنواع مختلفة من الوصول.
 
-الوصول الخارجي هو طريقة Teams المستخدمين من مجال خارجي بأكمله للعثور على الاجتماعات مع المستخدمين والمتصلين بها والدردشة معهم في Teams. Teams يقوم المسؤولون بتكوين الوصول الخارجي على مستوى المؤسسة. لمزيد من المعلومات، راجع [إدارة الوصول الخارجي في Microsoft Teams](/microsoftteams/manage-external-access).
+يعد الوصول الخارجي طريقة Teams المستخدمين من مجال خارجي بأكمله للبحث عن الاجتماعات واتصالها ومحادثتها وإعدادها مع المستخدمين في Teams. يقوم المسؤولون Teams بتكوين الوصول الخارجي على مستوى المؤسسة. لمزيد من المعلومات، راجع [إدارة الوصول الخارجي في Microsoft Teams](/microsoftteams/manage-external-access).
 
-أما مستخدمو الوصول الخارجي، فيقل لديهم إمكانية الوصول والوظائف عن أي شخص تم إضافته عبر وصول الضيف. على سبيل المثال، يمكن لمستخدمي الوصول الخارجي الدردشة مع المستخدمين الداخليين باستخدام Teams ولكن لا يمكنهم الوصول إلى قنوات الفريق أو الملفات أو الموارد الأخرى.
+يتمتع مستخدمو الوصول الخارجي بإمكانية وصول ووظائف أقل من الفرد الذي تمت إضافته عبر وصول الضيف. على سبيل المثال، يمكن لمستخدمي الوصول الخارجي الدردشة مع المستخدمين الداخليين باستخدام Teams ولكن لا يمكنهم الوصول إلى قنوات الفريق أو الملفات أو الموارد الأخرى.
 
-لا يستخدم الوصول الخارجي حسابات مستخدم Azure AD B2B، وبالتالي لا يستخدم سياسات الوصول الشرطي.
+لا يستخدم الوصول الخارجي حسابات مستخدمي B2B Azure AD وبالتالي لا يستخدم نهج الوصول المشروط.
 
-## <a name="teams-policies"></a>Teams الجديدة
+## <a name="teams-policies"></a>نهج Teams
 
-خارج نطاق السياسات الشائعة المذكورة أعلاه، هناك Teams خاصة يمكن ويجب تكوينها لإدارة وظائف Teams مختلفة.
+خارج النهج الشائعة المذكورة أعلاه، هناك نهج خاصة Teams يمكن ويجب تكوينها لإدارة وظائف Teams المختلفة.
 
-### <a name="teams-and-channels-policies"></a>Teams والقنوات
+### <a name="teams-and-channels-policies"></a>نهج Teams والقنوات
 
-Teams والقنوات عنصرين شائعي استخدام في Microsoft Teams، وهناك سياسات يمكنك وضعها للتحكم في ما يمكن للمستخدمين وما لا يمكنهم القيام به عند استخدام الفرق والقنوات. على الرغم من أنه يمكنك إنشاء فريق عام، إذا كانت مؤسستك تملك 5000 مستخدم أو أقل، فمن المرجح أن تجد أنه من المفيد أن يكون لديك فرق وقنوات أصغر لأغراض معينة، بما يتماشى مع احتياجاتك التنظيمية.
+تعد Teams والقنوات عنصرين شائعي الاستخدام في Microsoft Teams، وهناك نهج يمكنك وضعها للتحكم في ما يمكن للمستخدمين وما لا يمكنهم القيام به عند استخدام الفرق والقنوات. بينما يمكنك إنشاء فريق عمومي، إذا كان لدى مؤسستك 5000 مستخدم أو أقل، فمن المحتمل أن تجد أنه من المفيد أن يكون لديك فرق وقنوات أصغر لأغراض محددة، بما يتماشى مع احتياجاتك التنظيمية.
 
-من المستحسن تغيير النهج الافتراضي أو إنشاء نهج مخصصة، كما يمكنك معرفة المزيد حول إدارة النهج في هذا الارتباط: إدارة نهج الفرق في [Microsoft Teams](/microsoftteams/teams-policies).
+يوصى بتغيير النهج الافتراضي أو إنشاء نهج مخصصة، ويمكنك معرفة المزيد حول إدارة نهجك في هذا الارتباط: [إدارة نهج الفرق في Microsoft Teams](/microsoftteams/teams-policies).
 
-### <a name="messaging-policies"></a>سياسات المراسلة
+### <a name="messaging-policies"></a>نهج المراسلة
 
-يمكن أيضا إدارة المراسلة أو الدردشة من خلال النهج العام الافتراضي، أو من خلال النهج المخصصة، وقد يساعد ذلك المستخدمين على التواصل مع الآخرين بطريقة مناسبة لمنظمتك. يمكن مراجعة هذه المعلومات في [إدارة سياسات المراسلة في Teams](/microsoftteams/messaging-policies-in-teams).
+يمكن أيضا إدارة المراسلة أو الدردشة من خلال النهج العمومي الافتراضي، أو من خلال نهج مخصصة، وهذا يمكن أن يساعد المستخدمين على التواصل مع بعضهم بطريقة مناسبة لمؤسستك. يمكن مراجعة هذه المعلومات في [إدارة نهج المراسلة في Teams](/microsoftteams/messaging-policies-in-teams).
 
-### <a name="meeting-policies"></a>سياسات الاجتماع
+### <a name="meeting-policies"></a>نهج الاجتماعات
 
-لن تكتمل Teams من دون تخطيط وتنفيذ سياسات حول Teams الاجتماعات. الاجتماعات هي مكون أساسي Teams، مما يسمح للأشخاص بالاجتماعات والعرض رسميا للعديد من المستخدمين في وقت واحد، ومشاركة المحتوى ذي الصلة للاجتماع. من الضروري تعيين السياسات المناسبة لمنظمتك حول الاجتماعات.
+لن تكتمل مناقشة Teams دون تخطيط النهج وتنفيذها حول Teams الاجتماعات. تعد الاجتماعات مكونا أساسيا Teams، ما يسمح للأشخاص بالاجتماع رسميا والتقديم للعديد من المستخدمين في وقت واحد، ومشاركة المحتوى ذي الصلة بالاجتماع. يعد تعيين النهج المناسبة لمؤسستك حول الاجتماعات أمرا ضروريا.
 
-لمزيد من المعلومات، راجع [إدارة سياسات الاجتماع في](/microsoftteams/meeting-policies-in-teams) Teams.
+لمزيد من المعلومات، راجع [إدارة نهج الاجتماع في Teams](/microsoftteams/meeting-policies-in-teams).
 
-### <a name="app-permission-policies"></a>سياسات أذونات التطبيق
+### <a name="app-permission-policies"></a>نهج أذونات التطبيق
 
-Teams أيضا استخدام التطبيقات في أماكن مختلفة، مثل القنوات أو الدردشات الشخصية. من الضروري وجود سياسات حول التطبيقات التي يمكن إضافتها أو استخدامها وأين يجب الحفاظ على بيئة غنية بالمحتوى تكون آمنة أيضا.
+تسمح لك Teams أيضا باستخدام التطبيقات في أماكن مختلفة، مثل القنوات أو الدردشات الشخصية. يعد وجود نهج حول التطبيقات التي يمكن إضافتها واستخدامها، وأين، أمرا ضروريا للحفاظ على بيئة غنية بالمحتوى آمنة أيضا.
 
-لمزيد من القراءة حول "سياسات أذونات التطبيق"، راجع [إدارة](/microsoftteams/teams-app-permission-policies) سياسات أذونات التطبيق في Microsoft Teams.
+لمزيد من القراءة حول نهج أذونات التطبيق، راجع [إدارة نهج أذونات التطبيق في Microsoft Teams](/microsoftteams/teams-app-permission-policies).
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-![الخطوة 4: سياسات Microsoft 365 السحابية.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="الخطوة 4: نهج تطبيقات السحابة Microsoft 365" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
-تكوين سياسات الوصول الشرطي ل:
+تكوين نهج الوصول المشروط من أجل:
 
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)

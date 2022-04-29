@@ -1,7 +1,7 @@
 ---
 title: الخصوصية والبيانات الشخصية
-description: تفاصيل البيانات التي يتم تجميعها وتخزينها وتستخدمها الخدمة
-keywords: GDPR، الاستبقاء، الحذف، التخزين، الاستبقاء، المعالجة، الأمان، التدقيق
+description: تفاصيل البيانات التي تم تجميعها وتخزينها واستخدامها من قبل الخدمة
+keywords: القانون العام لحماية البيانات (GDPR) والاستبقاء والحذف والتخزين والاستبقاء والمعالجة والأمان والتدقيق
 ms.service: m365-md
 ms.sitesec: library
 author: tiaraquan
@@ -12,135 +12,135 @@ ms.author: tiaraquan
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: medium
-ms.openlocfilehash: c70b15a3d35dc4b19c5961e9fbe0404780c12309
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e7c9912e3890d9b13003c7f3264490f67c4fc305
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63569413"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128335"
 ---
 # <a name="privacy"></a>الخصوصية
 
-إن Microsoft Managed Desktop هي خدمة IT-as-a-Service (ITaaS) لعملاء السحابة للمؤسسات المصممة للحفاظ على نشر أجهزة Windows للموظفين وتحديثها.
+Microsoft Managed Desktop هي خدمة تكنولوجيا المعلومات كخدمة (ITaaS) لعملاء السحابة للمؤسسات المصممة للحفاظ على أجهزة Windows للموظفين منشورة ومحدثة.
 
-كما يوفر أيضا إدارة خدمات المعلومات وعملياتها ومراقبة الأمان والاستجابة للحوادث ودعم المستخدمين. توفر هذه المقالة المزيد من التفاصيل حول النظام الأساسي للبيانات وتوافق الخصوصية لسطح المكتب المدار من Microsoft.
+كما يوفر إدارة خدمة تكنولوجيا المعلومات والعمليات، ويراقب الأمان والاستجابة للحوادث، ودعم المستخدم. توفر هذه المقالة مزيدا من التفاصيل حول النظام الأساسي للبيانات وتوافق الخصوصية Microsoft Managed Desktop.
 
-## <a name="microsoft-managed-desktop-data-sources-and-purpose"></a>مصادر بيانات سطح المكتب المدار من Microsoft والغرض منه
+## <a name="microsoft-managed-desktop-data-sources-and-purpose"></a>Microsoft Managed Desktop مصادر البيانات والغرض منها
 
-يوفر Microsoft Managed Desktop خدمته لعملاء المؤسسات، ويدير أجهزة العملاء المسجلين بشكل صحيح باستخدام بيانات من مصادر مختلفة.
+يوفر Microsoft Managed Desktop خدمته لعملاء المؤسسات، ويدير الأجهزة المسجلة للعملاء بشكل صحيح باستخدام بيانات من مصادر مختلفة.
 
-تتضمن هذه المصادر Azure Active Directory Microsoft Intune و Microsoft Windows 10 و Microsoft Defender ل Endpoint. فهي توفر طريقة عرض شاملة للأجهزة التي يديرها Microsoft Managed Desktop. تستخدم الخدمة أيضا هذه خدمات Microsoft لتمكين Microsoft Managed Desktop من توفير قدرات ITaaS:
+تتضمن هذه المصادر Azure Active Directory و Microsoft Intune وMicrosoft Windows 10 Microsoft Defender لنقطة النهاية. وهي توفر عرضا شاملا للأجهزة التي يديرها Microsoft Managed Desktop. تستخدم الخدمة أيضا هذه خدمات Microsoft لتمكين Microsoft Managed Desktop لتوفير قدرات ITaaS:
 
 | مصدر البيانات | الغرض |
 | ------ | ------ |
-| [Microsoft Windows 10 Enterprise](/windows/windows-10/) | إدارة تجربة إعداد الجهاز وإدارة الاتصالات بالخدمات الأخرى والدعم التشغيلي لملمحترفين في مجال المعلومات. |
-| [Windows التحديث للأعمال](/windows/deployment/update/waas-manage-updates-wufb) | يستخدم Windows 10 Enterprise التشخيصية لتوفير معلومات إضافية حول Windows 10 البيانات. |
-| [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview) | إدارة الأجهزة والحفاظ على أمان بياناتك. تقع مصادر البيانات التالية ضمن إدارة نقاط النهاية من Microsoft:<br><ul><li>[Microsoft Azure Active Directory](/azure/active-directory/): المصادقة وتحديد جميع حسابات المستخدمين.</li><li>[Microsoft Intune](/mem/intune/): توزيع تكوينات الأجهزة وإدارة الأجهزة وإدارة التطبيقات.</li><li>[تحليلات نقطة النهاية](/mem/analytics/overview): تحليلات تحليلية حول استخدام الجهاز والتطبيق.</li><li>[Windows Autopilot](/microsoft-365/windows/windows-autopilot): توفير الجهاز ونشره.</li><li>[Microsoft Defender ل Endpoint](/microsoft-365/security/defender-endpoint/): يوفر خدمات أمان مثل مراقبة أمان الأجهزة وبيانات معلومات الأمان.</li></ul>
-| [سطح المكتب المدار من Microsoft](https://endpoint.microsoft.com/#home) | البيانات التي يوفرها العميل أو التي يتم إنشاؤها بواسطة الخدمة أثناء تشغيل الخدمة. |
-| [Microsoft 365 تطبيقات المؤسسة](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?rtc=1)| إدارة Microsoft 365 Apps.
+| [Microsoft Windows 10 Enterprise](/windows/windows-10/) | إدارة تجربة إعداد الجهاز، وإدارة الاتصالات بخدمات أخرى، والدعم التشغيلي لمحترفي تكنولوجيا المعلومات. |
+| [Windows Update للأعمال](/windows/deployment/update/waas-manage-updates-wufb) | يستخدم Windows 10 Enterprise البيانات التشخيصية لتوفير معلومات إضافية حول تحديث Windows 10. |
+| [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview) | إدارة الأجهزة والحفاظ على أمان بياناتك. تندرج مصادر البيانات التالية ضمن إدارة نقاط النهاية من Microsoft:<br><ul><li>[Microsoft Azure Active Directory](/azure/active-directory/): مصادقة جميع حسابات المستخدمين وتحديد هويتها.</li><li>[Microsoft Intune](/mem/intune/): توزيع تكوينات الجهاز وإدارة الأجهزة وإدارة التطبيقات.</li><li>[تحليلات نقطة النهاية](/mem/analytics/overview): التحليلات التحليلية حول استخدام الجهاز والتطبيق.</li><li>[Windows Autopilot](/microsoft-365/windows/windows-autopilot): توفير الجهاز ونشره.</li><li>[Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/): يوفر خدمات الأمان مثل مراقبة أمان الجهاز وبيانات التحليل الذكي للأمان.</li></ul>
+| [جهاز سطح المكتب المدار من Microsoft](https://endpoint.microsoft.com/#home) | البيانات التي يوفرها العميل أو التي تم إنشاؤها بواسطة الخدمة أثناء تشغيل الخدمة. |
+| [تطبيقات Microsoft 365 للمؤسسة](https://www.microsoft.com/en-us/microsoft-365/enterprise/compare-office-365-plans?rtc=1)| إدارة Microsoft 365 Apps.
 
-## <a name="microsoft-managed-desktop-data-process-and-storage"></a>عملية تخزين بيانات سطح المكتب المدار من Microsoft
+## <a name="microsoft-managed-desktop-data-process-and-storage"></a>Microsoft Managed Desktop عملية البيانات وتخزينها
 
-يعتمد Microsoft Managed Desktop على البيانات من منتجات وخدمات Microsoft المتعددة لتوفير خدمته لعملاء المؤسسات.
+تعتمد Microsoft Managed Desktop على بيانات من منتجات وخدمات Microsoft متعددة لتوفير خدمتها لعملاء المؤسسات.
 
-لحماية الأجهزة المسجله والمحافظة عليها، نقوم ب معالجة البيانات ونسخها من هذه الخدمات إلى Microsoft Managed Desktop. عند معالجة البيانات، نتبع التوجيهات الموثقة التي تقدمها، كما هو مشار إليه في شروط الخدمات عبر الإنترنت [وبيان](https://www.microsoft.com/licensing/product-licensing/products) [خصوصية Microsoft](https://privacy.microsoft.com/privacystatement).
+لحماية الأجهزة المسجلة وصيانتها، نقوم بمعالجة البيانات ونسخها من هذه الخدمات إلى Microsoft Managed Desktop. عندما نعالج البيانات، نتبع التوجيهات الموثقة التي تقدمها، كما هو مشار إليه في [شروط الخدمات عبر الإنترنت](https://www.microsoft.com/licensing/product-licensing/products) [وبيان خصوصية Microsoft](https://privacy.microsoft.com/privacystatement).
 
-تتضمن مهام معالج سطح المكتب المدار من Microsoft ضمان السرية والأمان والمرونة المناسبة. يستخدم Microsoft Managed Desktop المزيد من إجراءات الخصوصية والأمان لضمان المعالجة الصحيحة للبيانات الشخصية القابلة للمعرفة.
+تتضمن مهام معالج Microsoft Managed Desktop ضمان السرية والأمان والمرونة المناسبة. تستخدم Microsoft Managed Desktop إجراءات إضافية للخصوصية والأمان لضمان التعامل السليم مع بيانات التعريف الشخصية.
 
-## <a name="microsoft-managed-desktop-data-storage-and-staff-location"></a>موقع فريق العمل وتخزين بيانات سطح المكتب المدار من Microsoft
+## <a name="microsoft-managed-desktop-data-storage-and-staff-location"></a>Microsoft Managed Desktop تخزين البيانات وموقع فريق العمل
 
-يخزن Microsoft Managed Desktop بياناته في مراكز بيانات Azure في الولايات المتحدة.
+Microsoft Managed Desktop تخزن بياناتها في مراكز بيانات Azure في الولايات المتحدة.
 
-البيانات الشخصية التي يتم الحصول عليها من قبل Microsoft Managed Desktop وخدمات أخرى مطلوبة لإبقاء الخدمة في وضع التشغيل. إذا تمت إزالة جهاز من Microsoft Managed Desktop، فإننا نحتفظ بالبيانات الشخصية لمدة أقصاها 30 يوما. ومع ذلك، يتم تخزين بيانات التنبيه، التي يجمعها Microsoft Defender لنقطة النهاية، لمدة 180 يوما لأغراض الأمان. لمزيد من المعلومات حول استبقاء البيانات، راجع استبقاء [البيانات وحذفها وإتلافها في](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview) Microsoft 365.
+البيانات الشخصية التي يحصل عليها Microsoft Managed Desktop والخدمات الأخرى مطلوبة للحفاظ على تشغيل الخدمة. إذا تمت إزالة جهاز من Microsoft Managed Desktop، فإننا نحتفظ بالبيانات الشخصية لمدة 30 يوما كحد أقصى. ومع ذلك، يتم تخزين بيانات التنبيه، التي تم جمعها بواسطة Microsoft Defender لنقطة النهاية، لمدة 180 يوما لأغراض الأمان. لمزيد من المعلومات حول الاحتفاظ بالبيانات، راجع [استبقاء البيانات وحذفها وإتلافها في Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
 
-توجد فرق عمليات وعمليات أمان سطح المكتب المدارة من Microsoft في الولايات المتحدة والهند.
+توجد Microsoft Managed Desktop فرق العمليات الهندسية والعمليات الأمنية في الولايات المتحدة والهند و رومانيا.
 
-### <a name="microsoft-windows-10-diagnostic-data"></a>بيانات microsoft Windows 10 التشخيصية
+### <a name="microsoft-windows-10-diagnostic-data"></a>بيانات تشخيصية Windows 10 Microsoft
 
-يستخدم Microsoft Managed Desktop Windows 10 [التشخيصية](/windows/privacy/windows-diagnostic-data) المحسنة للحفاظ Windows آمنة ومستمرة، والمشكلات وإصلاحها، وتحسينات المنتج.
+تستخدم Microsoft Managed Desktop [Windows 10 بيانات تشخيص محسنة](/windows/privacy/windows-diagnostic-data) للحفاظ على أمان Windows وتحديثها واستكشاف الأخطاء وإصلاحها وإجراء تحسينات على المنتجات.
 
-يتضمن إعداد البيانات التشخيصية المحسن معلومات أكثر تفصيلا حول الأجهزة التي تم تسجيلها في Microsoft Managed Desktop وإعداداتها وإمكاناتها وصحتها. عند تحديد البيانات التشخيصية المحسنة، يتم تجميع البيانات، بما في ذلك البيانات التشخيصية المطلوبة. لمزيد من المعلومات، راجع التغييرات [Windows تجميع](/windows/privacy/changes-to-windows-diagnostic-data-collection) البيانات التشخيصية حول Windows 10 البيانات التشخيصية وجمع البيانات.
+يتضمن إعداد البيانات التشخيصية المحسن معلومات أكثر تفصيلا حول الأجهزة المسجلة في Microsoft Managed Desktop وإعداداتها وقدراتها وحالة الجهاز. عند تحديد البيانات التشخيصية المحسنة، يتم جمع البيانات، بما في ذلك البيانات التشخيصية المطلوبة. لمزيد من المعلومات، راجع ["تغييرات Windows جمع البيانات التشخيصية](/windows/privacy/changes-to-windows-diagnostic-data-collection)" حول إعداد البيانات التشخيصية Windows 10 وجمع البيانات.
 
-سيتم تغيير مصطلحات البيانات التشخيصية في الإصدارات المستقبلية من Windows. يلتزم Microsoft Managed Desktop لمعالجة البيانات التي تحتاجها الخدمة فقط. على الرغم من أن هذا سيعني أن مستوى التشخيص سيتغير إلى اختياري، إلا أن Microsoft Managed Desktop سيطبق سياسات التشخيص المحدودة لضبط تجميع البيانات التشخيصية المطلوبة للخدمة. لمزيد من المعلومات، راجع [التغييرات Windows تجميع البيانات التشخيصية](/windows/privacy/changes-to-windows-diagnostic-data-collection).
+ستتغير مصطلحات البيانات التشخيصية في الإصدارات المستقبلية من Windows. تلتزم Microsoft Managed Desktop بمعالجة البيانات التي تحتاجها الخدمة فقط. في حين أن هذا يعني أن مستوى التشخيص سيتغير إلى **اختياري**، Microsoft Managed Desktop سينفذ نهج التشخيص المحدودة لضبط جمع البيانات التشخيصية المطلوبة للخدمة. لمزيد من المعلومات، راجع [التغييرات التي يتم إجراؤها على Windows جمع البيانات التشخيصية](/windows/privacy/changes-to-windows-diagnostic-data-collection).
 
-يعمل Microsoft Managed Desktop فقط على عمليات تخزين البيانات على مستوى النظام Windows 10 التشخيص الاختيارية التي تنشأ من الأجهزة المسجله مثل وثوقية التطبيقات والأجهزة ومعلومات الأداء. لا يتولى Microsoft Managed Desktop معالجة البيانات الشخصية للعملاء وتخزينها مثل محفوظات الدردشة والمستعرض أو الصوت أو النص أو بيانات الكلام.
+Microsoft Managed Desktop تعالج فقط البيانات على مستوى النظام وتخزنها من Windows 10 البيانات التشخيصية الاختيارية التي تنشأ من الأجهزة المسجلة مثل موثوقية التطبيق والجهاز ومعلومات الأداء. لا تعالج Microsoft Managed Desktop البيانات الشخصية للعملاء وتخزنها مثل الدردشة ومحفوظات المستعرض أو الصوت أو النص أو بيانات الكلام.
 
-لمزيد من المعلومات حول مجموعة البيانات التشخيصية ل Microsoft Windows 10، راجع القسم أين نقوم بتخزين [](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) البيانات الشخصية ومتاجرتها في بيان خصوصية Microsoft.
+لمزيد من المعلومات حول جمع البيانات التشخيصية ل Microsoft Windows 10، راجع قسم ["أين نخزن البيانات الشخصية ونعالجها](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule)" في بيان خصوصية Microsoft.
 
-### <a name="microsoft-windows-update-for-business"></a>تحديث Windows Microsoft للأعمال
+### <a name="microsoft-windows-update-for-business"></a>Microsoft Windows Update للأعمال
 
-يستخدم Windows Microsoft Update for Business البيانات من Windows التشخيصية لتحليل حالة التحديث والفشل. يستخدم Microsoft Managed Desktop هذه البيانات ويستخدمها للحد من المشاكل وحلها للتأكد من أن جميع الأجهزة المسجلة محدثة بالاستناد إلى مستجدات تم تحديدها مسبقا.
+يستخدم Microsoft Windows Update للأعمال بيانات من تشخيصات Windows لتحليل حالة التحديث وحالات الفشل. تستخدم Microsoft Managed Desktop هذه البيانات وتستخدمها للتخفيف من المشاكل وحلها لضمان تحديث جميع الأجهزة المسجلة استنادا إلى إيقاع تحديث معرف مسبقا.
 
 ### <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
 
-يتم تخزين تحديد البيانات المستخدمة بواسطة Microsoft Managed Desktop بواسطة Azure Active Directory (Azure AD) في موقع جغرافي. يستند الموقع الجغرافي إلى الموقع الذي توفره المؤسسة عند الاشتراك في خدمات Microsoft عبر الإنترنت، مثل Microsoft Apps للمؤسسات و Azure. لمزيد من المعلومات حول موقع بيانات Azure AD، راجع [Azure Active Directory - أين توجد بياناتك؟](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
+يتم تخزين تحديد البيانات المستخدمة من قبل Microsoft Managed Desktop بواسطة Azure Active Directory (Azure AD) في موقع جغرافي. يستند الموقع الجغرافي إلى الموقع الذي توفره المؤسسة عند الاشتراك في Microsoft خدمات الإنترنت، مثل Microsoft Apps للمؤسسة وAzure. لمزيد من المعلومات حول مكان وجود بياناتك Azure AD، راجع [Azure Active Directory - أين توجد بياناتك؟](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-Microsoft Intune يجمع البيانات ويديرها ويتشاركها مع Microsoft Managed Desktop لدعم عمليات الأعمال وخدماتها. لمزيد من المعلومات حول البيانات التي تم تجميعها في Intune، راجع [تجميع البيانات في Intune](/mem/intune/protect/privacy-data-collect)
+Microsoft Intune جمع البيانات ومعالجتها ومشاركتها Microsoft Managed Desktop لدعم العمليات والخدمات التجارية. لمزيد من المعلومات حول البيانات التي تم جمعها في Intune، راجع [جمع البيانات في Intune](/mem/intune/protect/privacy-data-collect)
 
-لمزيد من المعلومات Microsoft Intune مواقع البيانات، راجع مكان تخزين Microsoft 365 [العميل](/microsoft-365/enterprise/o365-data-locations). يحترم Intune تحديدات موقع التخزين التي قام بها المسؤول لبيانات العملاء.
+لمزيد من المعلومات حول مواقع البيانات Microsoft Intune، راجع [مكان تخزين بيانات عميل Microsoft 365](/microsoft-365/enterprise/o365-data-locations). تحترم Intune تحديدات موقع التخزين التي أجراها المسؤول لبيانات العميل.
 
-### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender لنقطة النهاية
+### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
-يجمع Microsoft Defender for Endpoint المعلومات ويخزنها للأجهزة التي تم تسجيلها في Microsoft Managed Desktop لأغراض الإدارة والتعقب وإعداد التقارير. تتضمن المعلومات التي يتم تجميعها ما يلي:
+Microsoft Defender لنقطة النهاية جمع المعلومات وتخزينها للأجهزة المسجلة في Microsoft Managed Desktop لأغراض الإدارة والتعقب وإعداد التقارير. تتضمن المعلومات التي تم جمعها ما يلي:
 
-- بيانات الملف (مثل أسماء الملفات وحجمها وهازها)
-- معالجة البيانات (العمليات قيد التشغيل، الهازات)
+- بيانات الملف (مثل أسماء الملفات وحجمها وتجزئةها)
+- معالجة البيانات (تشغيل العمليات، تجزئة)
 - بيانات التسجيل
 - بيانات اتصال الشبكة
-- تفاصيل الجهاز (مثل معرفات الأجهزة وأسماء الأجهزة وإصدار نظام التشغيل)
+- تفاصيل الجهاز (مثل معرفات الجهاز وأسماء الأجهزة وإصدار نظام التشغيل)
 
-لمزيد من المعلومات حول مواقع التخزين وجمع البيانات في Microsoft Defender ل [Endpoint، راجع Microsoft Defender لتخزين بيانات نقطة النهاية والخصوصية](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect).
+لمزيد من المعلومات حول مواقع تجميع البيانات وتخزينها في Microsoft Defender لنقطة النهاية، راجع [Microsoft Defender لنقطة النهاية تخزين البيانات والخصوصية](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect).
 
-### <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps للمؤسسات
+### <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps للمؤسسة
 
-Microsoft 365 Apps الخاص بالمؤسسة تجميع البيانات مع Microsoft Managed Desktop ومتشاركتها لضمان تحديث تلك التطبيقات بأحدث إصدار. تستند هذه التحديثات إلى قنوات تحديث محددة مسبقا مدارة بواسطة Microsoft Managed Desktop. لمزيد من المعلومات Microsoft 365 Apps مواقع التخزين وجمع البيانات الخاصة بنقطة النهاية، راجع [Microsoft Defender لتخزين بيانات نقطة النهاية والخصوصية](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect).
+Microsoft 365 Apps للمؤسسة جمع البيانات ومشاركتها مع Microsoft Managed Desktop للتأكد من أن هذه التطبيقات محدثة بأحدث إصدار. تستند هذه التحديثات إلى قنوات تحديث معرفة مسبقا تديرها Microsoft Managed Desktop. لمزيد من المعلومات حول مواقع تجميع البيانات وتخزينها في Microsoft 365 Apps، راجع [Microsoft Defender لنقطة النهاية تخزين البيانات والخصوصية](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect).
 
 ## <a name="major-data-change-notification"></a>إعلام بتغيير البيانات الرئيسية
 
-يتبع Microsoft Managed Desktop عملية التحكم بالتغيير كما هو موضح في إطار اتصال الخدمة.
+يتبع Microsoft Managed Desktop عملية التحكم في التغيير كما هو موضح في إطار اتصال الخدمة لدينا.
 
-نقوم بإعلام العملاء Microsoft 365 مركز الرسائل ومدخل مسؤول سطح المكتب المدار من Microsoft لحوادث الأمان والتغييرات الرئيسية التي تم إدخالها على الخدمة.
+نقوم بإعلام العملاء من خلال مركز رسائل Microsoft 365، ومدخل مسؤول Microsoft Managed Desktop بكل من الحوادث الأمنية والتغييرات الرئيسية في الخدمة.
 
-تعتبر التغييرات التي يتم إدخالها على أنواع البيانات التي يتم تجميعها وحيث يتم تخزينها تغييرا ماديا. سنقدم إعلاما متقدما بهذا التغيير لمدة 30 يوما كحد أدنى كما هو ممارسة قياسية Microsoft 365 والخدمات. لمزيد من المعلومات، راجع [تغييرات الخدمة والاتصالات](/microsoft-365/managed-desktop/service-description/servicechanges).
+تعتبر التغييرات في أنواع البيانات التي تم جمعها ومكان تخزينها تغييرا ماديا. سنقدم إشعارا متقدما بهذا التغيير لمدة 30 يوما على الأقل كما هو الحال في الممارسة القياسية لمنتجات وخدمات Microsoft 365. لمزيد من المعلومات، راجع [تغييرات الخدمة والاتصال](/microsoft-365/managed-desktop/service-description/servicechanges).
 
 ## <a name="compliance"></a>التوافق
 
-يخضع سطح المكتب المدار من Microsoft لعمليات تدقيق خارجية والحصول على مجموعة شاملة من عروض التوافق. يمكنك العثور على مزيد من المعلومات في [التوافق](/microsoft-365/managed-desktop/intro/compliance). تتوفر تقارير التدقيق لتنزيلها في Microsoft [Service Trust Portal](https://aka.ms/stp)، الذي يعمل كمستودع مركزي لخدمات Microsoft Enterprise Online. يتم إدراج Microsoft Managed Desktop ضمن هذه المستندات ضمن الفئة "المراقبة والإدارة".
+وقد خضع Microsoft Managed Desktop لعمليات تدقيق خارجية واحصل على مجموعة شاملة من عروض الامتثال. يمكنك العثور على مزيد من المعلومات في [Compliance](/microsoft-365/managed-desktop/intro/compliance). تتوفر تقارير التدقيق للتنزيل في Microsoft [Service Trust Portal](https://aka.ms/stp)، الذي يعمل كمستودع مركزي ل Microsoft Enterprise Online Services. يتم سرد Microsoft Managed Desktop ضمن هذه المستندات ضمن فئة "المراقبة والإدارة".
 
 ### <a name="data-subject-requests"></a>طلبات موضوع البيانات
 
-يتبع سطح المكتب المدار من Microsoft القانون العام لحماية البيانات (GDPR) ولوائح خصوصية CCPA التي تمنح مواضيع البيانات حقوقا محددة لبياناتها الشخصية.
+يتبع Microsoft Managed Desktop القانون العام لحماية البيانات (GDPR) ولوائح خصوصية CCPA، والتي تمنح مواضيع البيانات حقوقا محددة لبياناتهم الشخصية.
 
-تتضمن هذه الحقوق:
+وتشمل هذه الحقوق ما يلي:
 
 - الحصول على نسخ من البيانات الشخصية
 - طلب تصحيحات له
-- تقييد معالجة
+- تقييد معالجتها
 - حذفه
 - تلقيه بتنسيق إلكتروني بحيث يمكن نقله إلى وحدة تحكم أخرى.
 
-لمزيد من المعلومات العامة حول طلبات موضوع البيانات (DSR)، راجع طلبات موضوع البيانات و القانون العام لحماية البيانات ( [GDPR) و CCPA](/compliance/regulatory/gdpr-data-subject-requests).
+لمزيد من المعلومات العامة حول طلبات موضوع البيانات (DSRs)، راجع [طلبات موضوع البيانات و GDPR وCCPA](/compliance/regulatory/gdpr-data-subject-requests).
 
-لتمارين طلبات موضوع البيانات على البيانات التي يجمعها نظام إدارة حالات سطح المكتب المدار من Microsoft، راجع طلبات موضوع البيانات التالية:
+لممارسة طلبات موضوع البيانات على البيانات التي تم جمعها بواسطة نظام إدارة حالة Microsoft Managed Desktop، راجع طلبات موضوع البيانات التالية:
 
 | طلبات موضوع البيانات | الوصف |
 | ------ | ------ |
-| البيانات من Microsoft Defender لتنبيهات نقطة النهاية | يمكن لمسؤول الأمان لديك طلب حذف البيانات الشخصية ذات الصلة بتنبيهات نقطة النهاية ل Microsoft Defender أو استخراجها من خلال إرسال طلب تقرير في [مدخل المسؤول](https://aka.ms/memadmin). <br><br> توفير المعلومات التالية: <br><ul><li>نوع الطلب: تغيير الطلب</li><li>الفئة: الأمان</li><li>الفئة الفرعية: أخرى</li><li>الوصف: توفير أسماء الأجهزة ذات الصلة.</li></ul> |
-| بيانات من طلبات دعم سطح المكتب المدار من Microsoft | يمكن لمسؤول تكنولوجيا المعلومات لديك طلب حذف طلبات الدعم ذات الصلة بالبيانات الشخصية أو استخراجها من خلال إرسال طلب تقرير في [مدخل المسؤول](https://aka.ms/memadmin). <br><br> توفير المعلومات التالية: <ul><li>نوع الطلب: تغيير الطلب</li><li>الفئة: الأمان</li><li>الفئة الفرعية: أخرى</li><li>الوصف: توفير أسماء الأجهزة أو أسماء المستخدمين ذات الصلة.</li></ul>
+| بيانات من تنبيهات Microsoft Defender لنقطة النهاية | يمكن لمسؤول الأمان طلب حذف البيانات الشخصية المتعلقة بتنبيهات Microsoft Defender لنقطة النهاية أو استخراجها عن طريق إرسال طلب تقرير في [مدخل المسؤول](https://aka.ms/memadmin). <br><br> قم بتوفير المعلومات التالية: <br><ul><li>نوع الطلب: تغيير الطلب</li><li>الفئة: الأمان</li><li>الفئة الفرعية: أخرى</li><li>الوصف: توفير أسماء الأجهزة ذات الصلة.</li></ul> |
+| بيانات من طلبات دعم Microsoft Managed Desktop | يمكن لمسؤول تكنولوجيا المعلومات طلب حذف طلبات الدعم ذات الصلة بالبيانات الشخصية أو استخراجها عن طريق إرسال طلب تقرير في [مدخل المسؤول](https://aka.ms/memadmin). <br><br> قم بتوفير المعلومات التالية: <ul><li>نوع الطلب: تغيير الطلب</li><li>الفئة: الأمان</li><li>الفئة الفرعية: أخرى</li><li>الوصف: توفير أسماء الأجهزة أو أسماء المستخدمين ذات الصلة.</li></ul>
 
-للحصول على DSRs من منتجات أخرى ذات صلة بالخدمة، راجع المقالات التالية:
+للحصول على طلبات موضوع البيانات من منتجات أخرى ذات صلة بالخدمة، راجع المقالات التالية:
 
-- Windows [التشخيصية](/compliance/regulatory/gdpr-dsr-windows)
-- بيانات Microsoft [Intune](/compliance/regulatory/gdpr-dsr-intune)
+- Windows [البيانات التشخيصية](/compliance/regulatory/gdpr-dsr-windows)
+- [بيانات Microsoft Intune](/compliance/regulatory/gdpr-dsr-intune)
 - بيانات Azure Active [Directory](/compliance/regulatory/gdpr-dsr-azure)
 
-## <a name="legal"></a>قانوني
+## <a name="legal"></a>القانونيه
 
-**إشعار خصوصية Microsoft للمستخدمين النهائيين للمنتجات التي يوفرها عملاء المؤسسة**:
+**إشعار الخصوصية من Microsoft للمستخدمين النهائيين للمنتجات التي يوفرها عملاء المؤسسة**:
 
-يقوم ["بيان خصوصية Microsoft](https://privacy.microsoft.com/privacystatement) " بواعية المستخدمين النهائيين على أنه عند تسجيل الدخول إلى منتجات Microsoft باستخدام حساب عمل:
+يعلم [بيان خصوصية Microsoft](https://privacy.microsoft.com/privacystatement) المستخدمين بأنه عند تسجيل الدخول إلى منتجات Microsoft باستخدام حساب عمل:
 
-1. يمكن لمنظمتهم التحكم في حساباتهم وإدارتها (بما في ذلك التحكم في الإعدادات ذات الصلة بالخصوصية)، والوصول إلى بياناتهم ومحاسبتها.
-1. قد تقوم Microsoft بتجميع البيانات وم المعالجة لتوفير الخدمة إلى المؤسسة والمستخدمين النهائيين.
+1. يمكن لمؤسستهم التحكم في حساباتهم وإدارتها (بما في ذلك التحكم في الإعدادات المتعلقة بالخصوصية)، والوصول إلى بياناتهم ومعالجتها.
+1. قد تقوم Microsoft بجمع البيانات ومعالجتها لتوفير الخدمة للمؤسسة والمستخدمين النهائيين.

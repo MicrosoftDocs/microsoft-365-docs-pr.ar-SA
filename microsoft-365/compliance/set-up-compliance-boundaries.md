@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: تعرف على كيفية استخدام حدود التوافق لإنشاء حدود منطقية تتحكم في مواقع محتوى المستخدم التي يمكن لمدير eDiscovery البحث فيها في Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36a7f1e679f404a77b61c30b8efef7875558fee9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 52f4a66ffbab37109e7503181548b1de4ffac87a
+ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099180"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65128772"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>إعداد حدود التوافق لتحقيقات eDiscovery
 
@@ -285,8 +285,6 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 - عند إنشاء بحث وتشغيله، يمكنك تحديد مواقع المحتوى خارج وكالتك. ومع ذلك، بسبب عامل تصفية أذونات البحث، لا يتم تضمين المحتوى من هذه المواقع في نتائج البحث.
 
 - لا تنطبق حدود التوافق على قوائم الاحتجاز في حالات eDiscovery. وهذا يعني أن مدير eDiscovery في وكالة واحدة يمكنه وضع المستخدم في وكالة مختلفة قيد الاحتجاز. ومع ذلك، سيتم فرض حد التوافق إذا بحث مدير eDiscovery في مواقع محتوى المستخدم الذي تم وضعه قيد الاحتجاز. وهذا يعني أن مدير eDiscovery لن يتمكن من البحث في مواقع محتوى المستخدم، على الرغم من أنه كان قادرا على وضع المستخدم قيد الاحتجاز.
-
-    أيضا، سوف تنطبق إحصائيات الاحتجاز فقط على مواقع المحتوى في الوكالة.
 
 - إذا تم تعيين عامل تصفية أذونات البحث (إما علبة بريد أو عامل تصفية موقع) وحاولت تصدير العناصر غير المفهرسة للبحث الذي يتضمن كافة مواقع SharePoint في مؤسستك، فستتلقى رسالة الخطأ التالية: `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied`. إذا تم تعيين عامل تصفية لأذونات البحث وتريد تصدير عناصر غير مفهرسة من SharePoint، فسيتعين عليك إعادة تشغيل البحث وتضمين مواقع SharePoint معينة للبحث فيها. وإلا، ستتمكن فقط من تصدير العناصر المفهرسة من عملية بحث تتضمن كافة مواقع SharePoint. لمزيد من المعلومات حول الخيارات عند تصدير نتائج البحث، راجع [نتائج البحث في "تصدير المحتوى](export-search-results.md#step-1-prepare-search-results-for-export)".
 
