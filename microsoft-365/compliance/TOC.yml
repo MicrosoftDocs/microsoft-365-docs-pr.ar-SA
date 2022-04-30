@@ -1005,6 +1005,8 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: تشغيل التدقيق أو إيقاف تشغيله
           href: turn-audit-log-search-on-or-off.md
+        - name: استخدام مفتاح العميل لتشفير سجلات التدقيق
+          href: auditing-cmk-encryption.md
         - name: استخدام سجل التدقيق للتحقق من المشاكل الشائعة
           href: auditing-troubleshooting-scenarios.md
         - name: استخدام تدقيق المشاركة في سجل التدقيق
