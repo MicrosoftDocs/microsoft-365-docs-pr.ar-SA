@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: احصل على تقرير دوري حول كيفية استخدام الأشخاص في مؤسستك لخدمات Microsoft 365 والتنقل في كل مخطط للحصول على مزيد من الرؤى.
-ms.openlocfilehash: aa1cdf4b8fa6c1d558b005eb80031a20be4872af
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4757cf72653ffad2caeba45c99d3aabe61517ee4
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65088835"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144630"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365 التقارير في مركز الإدارة
 
@@ -87,35 +87,35 @@ ms.locfileid: "65088835"
 
 |**تقرير**|**العامه**|**سحابة القطاع الحكومي**|**سحابة القطاع الحكومي-High**|**وزاره الدفاع**|**Office 365 المُشغل بواسطة 21Vianet**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|[استخدام مستعرض Microsoft](browser-usage-report.md)|نعم|لا[^1]|لا[^1]|لا[^1]|لا[^1]|
+|[استخدام مستعرض Microsoft](browser-usage-report.md)|نعم|رقم <sup>1</sup>|رقم <sup>1</sup>|رقم <sup>1</sup>|رقم <sup>1</sup>|
 |[نشاط البريد الإلكتروني](email-activity-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[استخدام تطبيقات البريد الإلكتروني](email-apps-usage-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[استخدام علبة البريد](mailbox-usage.md)|نعم|نعم|نعم|نعم|نعم|
 |[عمليات تنشيط Office](microsoft-office-activations-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[المستخدمون النشطون](active-users-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[مجموعات Microsoft 365](office-365-groups-ww.md)|نعم|نعم|نعم|نعم|نعم|
-|[استخدام Microsoft 365 Apps](microsoft365-apps-usage-ww.md)|نعم|نعم|لا[^1]|لا[^1]|نعم
+|[استخدام Microsoft 365 Apps](microsoft365-apps-usage-ww.md)|نعم|نعم|رقم <sup>1</sup>|رقم <sup>1</sup>|نعم
 |[نشاط المستخدم OneDrive for Business](onedrive-for-business-activity-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[استخدام OneDrive for Business](onedrive-for-business-usage-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[استخدام موقع SharePoint](sharepoint-site-usage-ww.md)|نعم|نعم|نعم|نعم|نعم|
 |[نشاط SharePoint](sharepoint-activity-ww.md)|نعم|نعم|نعم|نعم|نعم|
-|[نشاط المستخدم Microsoft Teams](microsoft-teams-user-activity-preview.md)|نعم|نعم|نعم|نعم|N/A[^2]|
-|[Microsoft Teams استخدام الجهاز](microsoft-teams-device-usage-preview.md)|نعم|نعم|نعم|نعم|N/A[^2]|
-|[نشاط استخدام Microsoft Teams](microsoft-teams-usage-activity.md)|نعم|نعم|N/A|N/A|N/A|
-|[نشاط Yammer](yammer-activity-report-ww.md)|نعم|نعم|N/A[^2]|N/A[^2]|N/A[^2]|
-|[Yammer استخدام الجهاز](yammer-device-usage-report-ww.md)|نعم|نعم|N/A[^2]|N/A[^2]|N/A[^2]|
-|[تقرير نشاط مجموعات Yammer](yammer-groups-activity-report-ww.md)|نعم|نعم|N/A[^2]|N/A[^2]|N/A[^2]|
-|[نشاط النماذج](forms-activity-ww.md)|نعم|نعم|لا[^1]|لا[^1]|لا[^1]|
-|[نشاط Dynamics 365 Customer Voice](forms-pro-activity-ww.md)|نعم|نعم|N/A[^2]|N/A[^2]|N/A[^2]|
-|[نشاط Skype for Business Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|نعم|نعم|لا[^1]|لا[^1]|نعم|
-|[نشاط منظم لمؤتمر Skype for Business Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|نعم|نعم|لا[^1]|لا[^1]|نعم|
-|[Skype for Business نشاط المشاركين في المؤتمر عبر الإنترنت](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|نعم|نعم|لا[^1]|لا[^1]|نعم|
-|[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|نعم|نعم|لا[^1]|لا[^1]|نعم|
+|[نشاط المستخدم Microsoft Teams](microsoft-teams-user-activity-preview.md)|نعم|نعم|نعم|نعم|N/<sup>A2</sup>|
+|[Microsoft Teams استخدام الجهاز](microsoft-teams-device-usage-preview.md)|نعم|نعم|نعم|نعم|N/<sup>A2</sup>|
+|[نشاط استخدام Microsoft Teams](microsoft-teams-usage-activity.md)|نعم|نعم|نعم|نعم|N/<sup>A2</sup>|
+|[نشاط Yammer](yammer-activity-report-ww.md)|نعم|نعم|N/<sup>A2</sup>|N/<sup>A2</sup>|N/<sup>A2</sup>|
+|[Yammer استخدام الجهاز](yammer-device-usage-report-ww.md)|نعم|نعم|N/<sup>A2</sup>|N/<sup>A2</sup>|N/<sup>A2</sup>|
+|[تقرير نشاط مجموعات Yammer](yammer-groups-activity-report-ww.md)|نعم|نعم|N/<sup>A2</sup>|N/<sup>A2</sup>|N/<sup>A2</sup>|
+|[نشاط النماذج](forms-activity-ww.md)|نعم|نعم|رقم <sup>1</sup>|رقم <sup>1</sup>|رقم <sup>1</sup>|
+|[نشاط Dynamics 365 Customer Voice](forms-pro-activity-ww.md)|نعم|نعم|N/<sup>A2</sup>|N/<sup>A2</sup>|N/<sup>A2</sup>|
+|[نشاط Skype for Business Online](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|نعم|نعم|رقم <sup>1</sup>|رقم <sup>1</sup>|نعم|
+|[نشاط منظم لمؤتمر Skype for Business Online](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|نعم|نعم|رقم <sup>1</sup>|رقم <sup>1</sup>|نعم|
+|[Skype for Business نشاط المشاركين في المؤتمر عبر الإنترنت](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|نعم|نعم|رقم <sup>1</sup>|رقم <sup>1</sup>|نعم|
+|[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|نعم|نعم|رقم <sup>1</sup>|رقم <sup>1</sup>|نعم|
 |[نشاط Viva Learning](viva-learning-activity.md)|نعم|N/A|N/A|N/A|N/A|
 |[نشاط Viva Insights](viva-insights-activity.md)|نعم|نعم|N/A|N/A|N/A|
 
-[^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
-[^2]: The service is not available in the environment so no plan to release the report.
+N/<sup>A1</sup>: التقرير في الخطة التي سيتم إصدارها في المستقبل. سيتم تحديث <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">مخطط Microsoft 365</a> قبل الإصدار.
+N/<sup>A2</sup>: الخدمة غير متوفرة في البيئة لذلك لا توجد خطة لإصدار التقرير.
 
 ## <a name="how-to-view-licensing-information"></a>كيفية عرض معلومات الترخيص
 

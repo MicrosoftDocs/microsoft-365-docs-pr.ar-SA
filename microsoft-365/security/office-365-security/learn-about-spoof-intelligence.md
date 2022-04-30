@@ -20,12 +20,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على التحليل الذكي المخادعة في Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30a9a7a9714ed5e071c53a6b1641204fd8c4fafe
-ms.sourcegitcommit: 363bdc517bd2564c6420cf21f352e97079f950e0
+ms.openlocfilehash: c147396ff47f924d7dd4b2ebd3a0cac106de94b2
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/22/2022
-ms.locfileid: "65031793"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144672"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>تزييف التحليل الذكي في EOP
 
@@ -35,9 +35,6 @@ ms.locfileid: "65031793"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
-> الميزات الموضحة في هذه المقالة موجودة في المعاينة، وهي عرضة للتغيير، وغير متوفرة في كافة المؤسسات. إذا لم يكن لدى مؤسستك الميزات الموضحة في هذه المقالة، فراجع تجربة إدارة تزييف الهوية القديمة في [إدارة المرسلين المخادعين باستخدام نهج التحليل الذكي المخادعة والرؤى الذكية المخادعة في EOP](walkthrough-spoof-intelligence-insight.md).
 
 في المؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، تتم حماية رسائل البريد الإلكتروني الواردة تلقائيا من الانتحال. يستخدم EOP التحليل **الذكي للانتحال** كجزء من الدفاع العام لمؤسستك ضد التصيد الاحتيالي. لمزيد من المعلومات، راجع [الحماية من الانتحال في EOP](anti-spoofing-protection.md).
 

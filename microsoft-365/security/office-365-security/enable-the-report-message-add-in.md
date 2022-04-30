@@ -17,12 +17,12 @@ ms.collection:
 description: تعرف على كيفية تمكين الوظائف الإضافية "رسالة التقرير" أو "التصيد الاحتيالي للتقرير" Outlook Outlook على ويب أو للمستخدمين الفرديين أو لمؤسستك بأكملها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14d59cbe6f3f98aabc231da88e4f0919a3974c97
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: a4166b36888c96b12a8aa410848c392c2afdaeb5
+ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973212"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65144828"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>تمكين الوظيفة الإضافية "رسالة التقرير" أو الوظائف الإضافية "تصيد التقرير"
 
@@ -61,7 +61,7 @@ ms.locfileid: "64973212"
 
 - لا تتوفر كلتا الوضيفتين الإضافيتين لعلب البريد المشتركة.
 
-- لا تتوفر كلتا الوضيفتين الإضافيتين لعلب بريد Exchange المحلية. 
+- لا تتوفر كلتا الوضيفتين الإضافيتين لعلب بريد Exchange المحلية.
 
 - يجب أن يعمل مستعرض الويب الموجود لديك مع كل من الوظائف الإضافية "رسالة التقرير" و"الإبلاغ عن التصيد الاحتيالي". ولكن، إذا لاحظت أن الوظيفة الإضافية غير متوفرة أو لا تعمل كما هو متوقع، فجرب مستعرضا آخر.
 
@@ -81,7 +81,7 @@ ms.locfileid: "64973212"
 
 2. انقر فوق **GET IT NOW**.
 
-   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="رسالة التقرير &quot;الحصول عليه الآن&quot;" lightbox="../../media/ReportMessageGETITNOW.png":::
+   :::image type="content" source="../../media/ReportMessageGETITNOW.png" alt-text="رسالة تقرير Get It Now." lightbox="../../media/ReportMessageGETITNOW.png":::
 
 3. في مربع الحوار الذي يظهر، راجع شروط الاستخدام ونهج الخصوصية، ثم انقر فوق **"متابعة**".
 
@@ -92,7 +92,7 @@ ms.locfileid: "64973212"
 - في Outlook، تبدو الأيقونة كما يلي:
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="أيقونة الوظيفة الإضافية &quot;رسالة التقرير&quot; ل Outlook" lightbox="../../media/OutlookReportMessageIcon.png":::
+    > :::image type="content" source="../../media/OutlookReportMessageIcon.png" alt-text="أيقونة الوظيفة الإضافية &quot;رسالة التقرير&quot; ل Outlook." lightbox="../../media/OutlookReportMessageIcon.png":::
 
 - في Outlook على ويب، تبدو الأيقونة كما يلي:
 
@@ -107,21 +107,21 @@ ms.locfileid: "64973212"
 1. في [مركز مسؤولي Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage)، انتقل إلى **الإعدادات** \> **التطبيقات المتكاملة**. انقر فوق **"الحصول على التطبيقات**".
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="التطبيقات المتكاملة مركز مسؤولي Microsoft 365" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="تطبيقات مركز مسؤولي Microsoft 365 المتكاملة." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
-2. في صفحة **Microsoft 365 Apps** التي تظهر، انقر في المربع **"بحث**"، وأدخل **"رسالة التقرير**"، ثم انقر فوق أيقونة **"البحث** ![في البحث".](../../media/search-icon.png) في قائمة النتائج، ابحث عن **"رسالة التقرير"** وحددها. 
+2. في صفحة **Microsoft 365 Apps** التي تظهر، انقر في المربع **"بحث**"، وأدخل **"رسالة التقرير**"، ثم انقر فوق أيقونة **"البحث** ![في البحث".](../../media/search-icon.png) في قائمة النتائج، ابحث عن **"رسالة التقرير"** وحددها.
 
-3. يتم فتح صفحة تفاصيل التطبيق. حدد **Get It Now**. 
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="الوظيفة الإضافية &quot;رسالة التقرير&quot;" lightbox="../../media/microsoft-365-admin-center-report-message.png":::
-
-4. أكمل معلومات ملف التعريف الأساسية، ثم انقر فوق **"متابعة**". 
+3. يتم فتح صفحة تفاصيل التطبيق. حدد **Get It Now**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="إعداد ملف تعريف الوظيفة الإضافية لرسالة التقرير" lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message.png" alt-text="الوظيفة الإضافية &quot;رسالة التقرير&quot;." lightbox="../../media/microsoft-365-admin-center-report-message.png":::
 
-5. يتم فتح القائمة المنبثقة **"نشر تطبيق جديد** ". تكوين الإعدادات التالية. انقر فوق **"التالي** " للانتقال إلى الصفحة التالية لإكمال الإعداد. 
+4. أكمل معلومات ملف التعريف الأساسية، ثم انقر فوق **"متابعة**".
+
+    > [!div class="mx-imgBorder"]
+    > :::image type="content" source="../../media/microsoft-365-admin-center-profile-info.png" alt-text="إعداد ملف تعريف الوظيفة الإضافية لرسالة التقرير." lightbox="../../media/microsoft-365-admin-center-profile-info.png":::
+
+5. يتم فتح القائمة المنبثقة **"نشر تطبيق جديد** ". تكوين الإعدادات التالية. انقر فوق **"التالي** " للانتقال إلى الصفحة التالية لإكمال الإعداد.
 
    - **إضافة مستخدمين**: حدد إحدى القيم التالية:
      - **أنا فقط**
@@ -132,13 +132,13 @@ ms.locfileid: "64973212"
      - **قبول طلبات الأذونات**: اقرأ أذونات التطبيق وإمكانياته بعناية قبل الانتقال إلى الصفحة التالية.
 
         > [!div class="mx-imgBorder"]
-        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="صفحة طلبات قبول الأذونات" lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app.png" alt-text="صفحة طلبات قبول الأذونات." lightbox="../../media/microsoft-365-admin-center-deploy-new-app.png":::
 
-     - **إنهاء النشر**: مراجعة نشر الوظيفة الإضافية والانتهاء منها. 
-     - **اكتمل التوزيع**: حدد **"تم** " لإكمال الإعداد. 
+     - **إنهاء النشر**: مراجعة نشر الوظيفة الإضافية والانتهاء منها.
+     - **اكتمل التوزيع**: حدد **"تم** " لإكمال الإعداد.
 
         > [!div class="mx-imgBorder"]
-        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="اكتملت رسالة الإعلام الخاصة بالنشر" lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
+        > :::image type="content" source="../../media/microsoft-365-admin-center-deployment-complete.png" alt-text="اكتملت رسالة الإعلام الخاصة بالنشر." lightbox="../../media/microsoft-365-admin-center-deployment-complete.png":::
 
 ## <a name="edit-settings-for-the-report-message-add-in"></a>تحرير الإعدادات للوظيفة الإضافية "رسالة التقرير"
 
@@ -147,9 +147,9 @@ ms.locfileid: "64973212"
 2. في القائمة المنبثقة التي تظهر، حدد **"تحرير المستخدمين"** لتحرير إعدادات المستخدم.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="القائمة المنبثقة لرسالة التقرير" lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-message-edit.png" alt-text="القائمة المنبثقة لرسالة التقرير." lightbox="../../media/microsoft-365-admin-center-report-message-edit.png":::
 
-3. لإزالة الوظيفة الإضافية، حدد **"إزالة التطبيق** " ضمن **"الإجراءات"** في القائمة المنبثقة نفسها. 
+3. لإزالة الوظيفة الإضافية، حدد **"إزالة التطبيق** " ضمن **"الإجراءات"** في القائمة المنبثقة نفسها.
 
 ## <a name="get-the-report-phishing-add-in"></a>الحصول على الوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي"
 
@@ -182,15 +182,15 @@ ms.locfileid: "64973212"
 1. في [مركز مسؤولي Microsoft 365](https://admin.microsoft.com/AdminPortal/Home?#/homepage)، انتقل إلى **الإعدادات** \> **التطبيقات المتكاملة**. انقر فوق **"الحصول على التطبيقات**".
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="التطبيقات المتكاملة مركز مسؤولي Microsoft 365" lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-integrated-apps.png" alt-text="تطبيقات مركز مسؤولي Microsoft 365 المتكاملة." lightbox="../../media/microsoft-365-admin-center-integrated-apps.png":::
 
-2. في صفحة **Microsoft 365 Apps** التي تظهر، انقر في المربع **"بحث**"، وأدخل **"الإبلاغ عن التصيد الاحتيالي**"، ثم انقر فوق أيقونة **البحث**![.](../../media/search-icon.png) في قائمة النتائج، ابحث عن **"التصيد الاحتيالي للتقرير" وحدده**. 
- 
+2. في صفحة **Microsoft 365 Apps** التي تظهر، انقر في المربع **"بحث**"، وأدخل **"الإبلاغ عن التصيد الاحتيالي**"، ثم انقر فوق أيقونة **البحث**![.](../../media/search-icon.png) في قائمة النتائج، ابحث عن **"التصيد الاحتيالي للتقرير" وحدده**.
+
 3. يتم فتح صفحة تفاصيل التطبيق. حدد **Get It Now**.
 
 4. أكمل معلومات ملف التعريف الأساسية، ثم انقر فوق **"متابعة**".
 
-5. يتم فتح القائمة المنبثقة **"نشر تطبيق جديد** ". اتبع الخطوات [الموضحة أعلاه](enable-the-report-message-add-in.md#get-the-report-message-add-in-for-your-organization) لإكمال الإعداد. 
+5. يتم فتح القائمة المنبثقة **"نشر تطبيق جديد** ". اتبع الخطوات [الموضحة أعلاه](enable-the-report-message-add-in.md#get-the-report-message-add-in-for-your-organization) لإكمال الإعداد.
 
 ## <a name="edit-settings-for-the-report-phishing-add-in"></a>تحرير إعدادات الوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي"
 
@@ -199,6 +199,6 @@ ms.locfileid: "64973212"
 2. في القائمة المنبثقة التي تظهر، حدد **"تحرير المستخدمين"** لتحرير إعدادات المستخدم.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="القائمة المنبثقة &quot;الإبلاغ عن التصيد الاحتيالي&quot;" lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
+    > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="القائمة المنبثقة &quot;الإبلاغ عن التصيد الاحتيالي&quot;." lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
-3. لإزالة الوظيفة الإضافية، حدد **"إزالة التطبيق** " ضمن **"الإجراءات"** في القائمة المنبثقة نفسها. 
+3. لإزالة الوظيفة الإضافية، حدد **"إزالة التطبيق** " ضمن **"الإجراءات"** في القائمة المنبثقة نفسها.
