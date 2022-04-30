@@ -1,5 +1,5 @@
 ---
-title: تشفير الخدمة باستخدام مفتاح العميل
+title: تشفير الخدمة باستخدام مفتاح عميل Microsoft Purview
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -14,15 +14,17 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: في هذه المقالة، ستتعرف على كيفية عمل تشفير الخدمة مع مفتاح العميل في Microsoft 365.
-ms.openlocfilehash: 65098994a6883fdadd3106b74b25a2251239fb3a
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: في هذه المقالة، ستتعرف على كيفية عمل تشفير الخدمة مع Microsoft Purview Customer Key.
+ms.openlocfilehash: efb82a38c2f3a2e07d695425f36a17eebdbdf5ec
+ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761076"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "65145201"
 ---
-# <a name="service-encryption-with-customer-key"></a>تشفير الخدمة باستخدام مفتاح العميل
+# <a name="service-encryption-with-microsoft-purview-customer-key"></a>تشفير الخدمة باستخدام مفتاح عميل Microsoft Purview
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يوفر Microsoft 365 تشفيرا أساسيا على مستوى وحدة التخزين ممكنا من خلال BitLocker وSoursed Key Manager (DKM). يوفر Microsoft 365 طبقة إضافية من التشفير للمحتوى الخاص بك. يتضمن هذا المحتوى بيانات من Exchange Online Skype for Business SharePoint Online OneDrive for Business Microsoft Teams.
 
@@ -40,7 +42,7 @@ ms.locfileid: "64761076"
 
 ## <a name="about-data-encryption-policies"></a>حول نهج تشفير البيانات
 
-يعرف نهج تشفير البيانات (DEP) التسلسل الهرمي للتشفير. تستخدم الخدمة هذا التسلسل الهرمي لتشفير البيانات باستخدام كل مفتاح من المفاتيح التي تديرها ومفتاح التوفر المحمي بواسطة Microsoft. يمكنك إنشاء DEPs باستخدام PowerShell cmdlets، ثم تعيين DEPs لتشفير بيانات التطبيق. هناك ثلاثة أنواع من DEPs المدعومة من قبل مفتاح العميل Microsoft 365، ويستخدم كل نوع نهج أوامر cmdlets مختلفة ويوفر تغطية لنوع مختلف من البيانات. تتضمن برامج DEPs التي يمكنك تعريفها ما يلي:
+يعرف نهج تشفير البيانات (DEP) التسلسل الهرمي للتشفير. تستخدم الخدمة هذا التسلسل الهرمي لتشفير البيانات باستخدام كل مفتاح من المفاتيح التي تديرها ومفتاح التوفر المحمي بواسطة Microsoft. يمكنك إنشاء DEPs باستخدام PowerShell cmdlets، ثم تعيين DEPs لتشفير بيانات التطبيق. هناك ثلاثة أنواع من DEPs المدعومة من قبل مفتاح العميل، يستخدم كل نوع نهج أوامر cmdlets مختلفة ويوفر تغطية لنوع مختلف من البيانات. تتضمن برامج DEPs التي يمكنك تعريفها ما يلي:
 
 **تقوم DEP لأحمال عمل متعددة Microsoft 365** هذه DEPs بتشفير البيانات عبر أحمال عمل M365 متعددة لجميع المستخدمين داخل المستأجر. وتشمل أحمال العمل هذه ما يلي:
 
@@ -52,7 +54,8 @@ ms.locfileid: "64761076"
 - رسائل الحالة Teams
 - معلومات المستخدم والإشارة Exchange Online
 - Exchange Online علب البريد غير المشفرة بالفعل بواسطة علب البريد DEPs
-- حماية البيانات في Microsoft:
+- تخزين سجل التدقيق الموحد
+- Microsoft Purview حماية البيانات:
 
   - بيانات مطابقة البيانات الدقيقة (EDM)، بما في ذلك مخططات ملفات البيانات وحزم القواعد والملوحة المستخدمة لتجزئة البيانات الحساسة. بالنسبة إلى EDM و Microsoft Teams، يقوم DEP متعدد حمل العمل بتشفير البيانات الجديدة من وقت تعيين DEP للمستأجر. بالنسبة Exchange Online، يقوم Customer Key بتشفير كافة البيانات الموجودة والجديدة.
 

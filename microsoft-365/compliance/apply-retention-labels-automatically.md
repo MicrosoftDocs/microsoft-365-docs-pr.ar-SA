@@ -1,5 +1,5 @@
 ---
-title: تطبيق تسمية استبقاء تلقائيا للاحتفاظ بالمحتوى أو حذفه
+title: تطبيق تسمية استبقاء تلقائيا
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: إنشاء نهج استبقاء التسميات التلقائية حتى تتمكن من تطبيق التسميات تلقائيا للاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه
-ms.openlocfilehash: 8c3df81eabb0d67993825d95e390d3e94c7a9bd7
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 2c1ea20f9b663ca8cee59043bbe6399f5bae66f1
+ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64762002"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "65145256"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>تطبيق تسمية استبقاء تلقائيا للاحتفاظ بالمحتوى أو حذفه
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -63,7 +65,7 @@ ms.locfileid: "64762002"
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-يملك المسؤول العام لمؤسستك أذونات كاملة لإنشاء تسميات الاستبقاء ونهجها وتحريرها. إذا لم تقم بتسجيل الدخول كمسؤول عام، فراجع معلومات الأذونات [لإدارة السجلات](get-started-with-records-management.md#permissions) أو [إدارة المعلومات](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels)، استنادا إلى الحل الذي تستخدمه.
+يملك المسؤول العام لمؤسستك أذونات كاملة لإنشاء تسميات الاستبقاء ونهجها وتحريرها. إذا لم تكن تسجل دخولك كمسؤول عام، فراجع معلومات الأذونات [لإدارة السجلات](get-started-with-records-management.md#permissions) أو [إدارة دورة حياة البيانات](get-started-with-data-lifecycle-management.md#permissions-for-retention-policies-and-retention-labels)، استنادا إلى الحل الذي تستخدمه.
 
 تأكد من [إنشاء تسميات الاستبقاء التي](file-plan-manager.md#create-retention-labels) تريد تطبيقها على العناصر.
 
@@ -73,13 +75,13 @@ ms.locfileid: "64762002"
 
 عند إنشاء نهج تطبيق تلقائي، يمكنك تحديد تسمية استبقاء لتطبيقها تلقائيا على المحتوى، استنادا إلى الشروط التي تحددها.
 
-1. في [مركز التوافق في Microsoft 365](https://compliance.microsoft.com/)، انتقل إلى أحد المواقع التالية:
+1. في [مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/)، انتقل إلى أحد المواقع التالية:
     
     - إذا كنت تستخدم إدارة السجلات:
         - **حلول** >  علامة **تبويب** **نهج التسمية > > إدارة السجلات** > **تطبيق تسمية تلقائيا**
     
-    - إذا كنت تستخدم إدارة المعلومات:
-        - **حلول** >  **إدارة** >  المعلومات علامة التبويب "**نهج التسمية**" > **تطبيق تسمية تلقائيا**
+    - إذا كنت تستخدم إدارة دورة حياة البيانات:
+        - **حلول** >  إدارة  >  **دورة حياة البيانات** علامة التبويب "**نهج التسمية**" > **تطبيق تسمية تلقائيا**
     
     ألا ترى الحل الخاص بك على الفور في جزء التنقل؟ حدد أولا **إظهار الكل**.
 
@@ -147,7 +149,7 @@ SharePoint OneDrive:
 > 
 > على الرغم من أن علب بريد المجموعة عادة ما تكون مضمنة عن طريق تحديد موقع **مجموعات Microsoft 365**، فإن موقع المجموعات يتضمن مواقع SharePoint متصلة بمجموعة Microsoft 365 فقط.
 
-عند إنشاء نهج تسمية الاستبقاء للتطبيق التلقائي للمعلومات الحساسة، سترى نفس قائمة قوالب النهج كما هو الحال عند إنشاء نهج منع فقدان البيانات (DLP). يتم تكوين كل قالب مسبقا للبحث عن أنواع معينة من المعلومات الحساسة. في المثال التالي، أنواع المعلومات الحساسة هي من فئة **الخصوصية** ، وقالب **بيانات معلومات التعريف الشخصية (PII) في الولايات المتحدة** :
+عند إنشاء نهج تسمية الاستبقاء للتطبيق التلقائي للمعلومات الحساسة، سترى نفس قائمة قوالب النهج كما هو الحال عند إنشاء نهج منع فقدان البيانات من Microsoft Purview (DLP). يتم تكوين كل قالب مسبقا للبحث عن أنواع معينة من المعلومات الحساسة. في المثال التالي، أنواع المعلومات الحساسة هي من فئة **الخصوصية** ، وقالب **بيانات معلومات التعريف الشخصية (PII) في الولايات المتحدة** :
 
 ![قوالب النهج ذات أنواع المعلومات الحساسة.](../media/sensitive-info-configuration.png)
 
@@ -341,7 +343,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
   
 ![رسم تخطيطي لمتى يتم تطبيق التسميات تلقائيا.](../media/retention-labels-autoapply-timings.png)
 
-إذا لم تظهر التسميات المتوقعة بعد سبعة أيام، فتحقق من **حالة** نهج التطبيق التلقائي عن طريق تحديده من صفحة **نهج التسمية** في مركز التوافق. إذا رأيت حالة **إيقاف التشغيل (خطأ)** وفي تفاصيل المواقع ترى رسالة تفيد بأن نشر النهج (SharePoint) يستغرق وقتا أطول من المتوقع أو محاولة إعادة نشر النهج (OneDrive)، فحاول تشغيل الأمر [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell لإعادة محاولة توزيع النهج:
+إذا لم تظهر التسميات المتوقعة بعد سبعة أيام، فتحقق من **حالة** نهج التطبيق التلقائي عن طريق تحديده من صفحة **نهج التسمية** في مدخل توافق Microsoft Purview. إذا رأيت حالة **إيقاف التشغيل (خطأ)** وفي تفاصيل المواقع ترى رسالة تفيد بأن نشر النهج (SharePoint) يستغرق وقتا أطول من المتوقع أو محاولة إعادة نشر النهج (OneDrive)، فحاول تشغيل الأمر [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell لإعادة محاولة توزيع النهج:
 
 1. [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
