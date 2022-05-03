@@ -17,12 +17,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، احصل على إجابات للأسئلة المتداولة (الأسئلة المتداولة) حول Microsoft 365 Lighthouse.
-  ms.openlocfilehash: 608fcf1ff8015968660354a1420a132e90ce4d54
-  ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+  ms.openlocfilehash: 2421b344698902fa421ba97195bd00efde4e72f7
+  ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 04/21/2022
-  ms.locfileid: "65023228"
+  ms.lasthandoff: 05/03/2022
+  ms.locfileid: "65173039"
 title: الأسئلة المتداولة حول Microsoft 365 Lighthouse (الأسئلة المتداولة)
 summary: >
   تحتوي هذه المقالة على إجابات للأسئلة المتداولة (الأسئلة المتداولة) حول Microsoft 365 Lighthouse.
@@ -34,10 +34,10 @@ sections:
   questions:
   - question: ما هو Microsoft 365 Lighthouse؟
     answer: >
-      Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع لعملاء الأعمال الصغيرة والمتوسطة الحجم (SMB) الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. تعمل Lighthouse على تبسيط إلحاق المستأجرين من خلال التوصية بخطوط أساسية لتكوين الأمان مصممة خصيصا ل SMBs وتوفير طرق عرض متعددة المستأجرين عبر جميع بيئات العملاء. لمزيد من المعلومات، راجع [نظرة عامة على Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+      Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع لعملاء الأعمال الصغيرة والمتوسطة الحجم (SMB). تعمل Lighthouse على تبسيط إلحاق المستأجرين من خلال التوصية بخطوط أساسية لتكوين الأمان مصممة خصيصا ل SMBs وتوفير طرق عرض متعددة المستأجرين عبر جميع بيئات العملاء. لمزيد من المعلومات، راجع [نظرة عامة على Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
   - question: ما الفرق بين Microsoft 365 Lighthouse وAzure Lighthouse؟
     answer: >
-      يركز Microsoft 365 Lighthouse على خدمات Microsoft 365 بدلا من خدمات Azure. في حين أن Azure Lighthouse مضمن في مدخل Azure ويسمح لشركاء تكنولوجيا المعلومات بإدارة مستأجرين متعددين ل Azure، فإن Microsoft 365 Lighthouse عبارة عن مدخل مستقل يساعد MSPs على إدارة العديد من Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business  مستأجرو العملاء. لمزيد من المعلومات حول Microsoft 365 Lighthouse، راجع [نظرة عامة على Microsoft 365 Lighthouse](m365-lighthouse-overview.md). لمزيد من المعلومات حول Azure Lighthouse، راجع [ما هو Azure Lighthouse؟](/azure/lighthouse/overview)
+      يركز Microsoft 365 Lighthouse على خدمات Microsoft 365 بدلا من خدمات Azure. في حين أن Azure Lighthouse مضمن في مدخل Azure ويسمح لشركاء تكنولوجيا المعلومات بإدارة مستأجرين متعددين ل Azure، فإن Microsoft 365 Lighthouse عبارة عن مدخل مستقل يساعد MSPs على إدارة العديد من مستأجري العملاء Microsoft 365. لمزيد من المعلومات حول Microsoft 365 Lighthouse، راجع [نظرة عامة على Microsoft 365 Lighthouse](m365-lighthouse-overview.md). لمزيد من المعلومات حول Azure Lighthouse، راجع [ما هو Azure Lighthouse؟](/azure/lighthouse/overview)
   - question: كم تبلغ تكلفة Microsoft 365 Lighthouse؟
     answer: >
       لا ترتبط أي تكاليف إضافية باستخدام Lighthouse لإدارة خدمات Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business والأجهزة المتصلة. تتوفر خدمة Lighthouse ل MSPs التي تخدم الشركات الصغيرة والمتوسطة الحجم ولها علاقة Cloud Solution Provider (CSP) مع عملائها. لاحظ أن الموفرين غير المباشرين غير مدعومين حاليا من Lighthouse. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
@@ -46,7 +46,7 @@ sections:
       للحصول على قائمة بالمتطلبات الحالية، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
   - question: في أي من البلدان والمناطق يتوفر Microsoft 365 Lighthouse؟
     answer: >
-      تتوفر Lighthouse في جميع البلدان التي يتوفر فيها Microsoft 365، باستثناء الصين والسلطة الوطنية. ومع ذلك، تعتمد الميزات في Lighthouse مثل إدارة الأجهزة وإدارة التهديدات على Microsoft Intune، وتعتمد إدارة المستخدم على Azure Active Directory (Azure AD)، وقد لا تتوفر Intune وAzure AD في بعض البلدان والمناطق. للحصول على قائمة كاملة بتوفر Microsoft 365 وAzure AD وIntune، راجع [التوفر الدولي](https://www.microsoft.com/microsoft-365/business/international-availability).
+      تتوفر Lighthouse في جميع البلدان التي يتوفر فيها Microsoft 365، باستثناء الصين والسلطة الوطنية. ومع ذلك، تعتمد الميزات في Lighthouse مثل إدارة الأجهزة وإدارة التهديدات على Microsoft Intune، وتعتمد إدارة المستخدم على Azure Active Directory (Azure AD)، وقد لا تتوفر Intune Azure AD في بعض البلدان والمناطق. للحصول على قائمة كاملة بتوفر Microsoft 365 Azure AD وIntune، راجع [التوفر الدولي](https://www.microsoft.com/microsoft-365/business/international-availability).
 
 
       Lighthouse غير متوفر في السحب الوطنية.
@@ -57,7 +57,7 @@ sections:
     answer: >
       قد يستغرق تحميل بيانات مستأجر العميل داخل Lighthouse ما يصل إلى 48 ساعة. إذا مر أكثر من 48 ساعة على إكمال الإلحاق، فالرجاء التواصل مع فريق الدعم للحصول على المساعدة. ستحتاج إلى إعلامهم عند الانتهاء من الإلحاق وتوفير أي لقطات شاشة وسجلات ذات صلة. لمزيد من المعلومات، راجع [الحصول على التعليمات والدعم Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: لماذا أرى بيانات لبعض مستأجري العملاء ولكن ليس للآخرين؟
-    answer: "لكي تظهر بيانات مستأجر العميل في Lighthouse، يجب على MSPs إنشاء وصول مفوض لإدارة مستأجر العميل. مطلوب امتيازات المسؤول المفوض (DAP) لإلحاق العملاء إلى Lighthouse. نوصي بإنشاء امتيازات المسؤول المفوض متعدد المستويات (GDAP) مع عملائك لتمكين الوصول المفوض الأكثر أمانا. راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) للحصول على تفاصيل إضافية حول أدوار المستأجرين المفوضين والشركاء المستحسنة لاستخدام Lighthouse. في حين أن DAP وGDAP يتعايشان، فإن GDAP سيكون له الأسبقية للعملاء حيث يوجد كلا النموذجين. قريبا، سيتمكن العملاء الذين يعانون من GDAP فقط (وبدون DAP) من الإلحاق ب Lighthouse. لمزيد من المعلومات حول الوصول المفوض، راجع [طلب علاقة موزع مع عميل في مركز الشركاء](/partner-center/request-a-relationship-with-a-customer). يجب أن يكون لدى المستأجرين أيضا ترخيص واحد على الأقل Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business ولا يزيد عن 1000 مستخدم مرخص في المستأجر. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) [ونظرة عامة على صفحة المستأجرين في Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).  \n"
+    answer: "لكي تظهر بيانات مستأجر العميل في Lighthouse، يجب على MSPs إنشاء وصول مفوض لإدارة مستأجر العميل. مطلوب امتيازات المسؤول المفوض (DAP) لإلحاق العملاء إلى Lighthouse. نوصي بإنشاء امتيازات المسؤول المفوض متعدد المستويات (GDAP) مع عملائك لتمكين الوصول المفوض الأكثر أمانا. راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) للحصول على تفاصيل إضافية حول أدوار المستأجرين المفوضين والشركاء المستحسنة لاستخدام Lighthouse. في حين أن DAP وGDAP يتعايشان، فإن GDAP سيكون له الأسبقية للعملاء حيث يوجد كلا النموذجين. قريبا، سيتمكن العملاء الذين يعانون من GDAP فقط (وبدون DAP) من الإلحاق ب Lighthouse. لمزيد من المعلومات حول الوصول المفوض، راجع [طلب علاقة موزع مع عميل في مركز الشركاء](/partner-center/request-a-relationship-with-a-customer). يجب أن يكون لدى المستأجرين أيضا ترخيص واحد على الأقل Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business أو Microsoft Defender for Business ولا يزيد عن 1000 مستخدم مرخص في المستأجر. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) [ونظرة عامة على صفحة المستأجرين في Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).  \n"
   - question: ماذا لو كنت لا أريد رؤية مستأجرين معينين في Microsoft 365 Lighthouse؟
     answer: >
       إذا كنت لا تريد رؤية مستأجرين معينين وبياناتهم في Lighthouse، يمكنك تعطيل هؤلاء المستأجرين. لإلغاء تنشيط مستأجر، اتبع الخطوات التالية:
@@ -74,7 +74,7 @@ sections:
       لمعرفة المزيد حول المستأجرين، راجع [Microsoft 365 نظرة عامة على صفحة مستأجري Lighthouse](m365-lighthouse-tenants-page-overview.md).
   - question: هل سيعمل Microsoft 365 Lighthouse إذا كان لدى مستأجري العملاء اشتراكات أخرى إلى جانب Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business؟
     answer: >
-      تساعدك Lighthouse على إدارة مستأجري العملاء الذين لديهم تراخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business في مكانها لمستخدميهم. بالنسبة للمستخدمين في مستأجري العملاء الذين ليس لديهم هذه التراخيص، ستكون وظائف Lighthouse محدودة. على سبيل المثال، إذا كان المستخدم يفتقد ترخيصا يتضمن Intune، فلن تتوفر أجهزة هذا المستخدم وحالة توافق الجهاز وحالة التهديدات؛ وإذا كان المستخدم يفتقد ترخيصا يتضمن Azure AD P1، فلن تكون كلمة مرور هذا المستخدم وإدارة تسجيل الدخول متوفرة. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+      تساعدك Lighthouse على إدارة مستأجري العملاء الذين لديهم ترخيص واحد على الأقل Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business أو Microsoft Defender for Business. ستختلف قدرات Lighthouse استنادا إلى التراخيص المعينة للمستخدم. على سبيل المثال، إذا كان المستخدم يفتقد ترخيصا يتضمن Intune، فلن تتوفر أجهزة هذا المستخدم وحالة توافق الجهاز وحالة التهديدات؛ وإذا كان المستخدم يفتقد ترخيصا يتضمن Azure AD P1، فلن تتوفر كلمة مرور المستخدم وإدارة تسجيل الدخول. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
   - question: كيف أعمل مؤهل لإدارة أجهزة الكمبيوتر السحابية للعملاء في Microsoft 365 Lighthouse؟
     answer: >
       إذا كنت تستوفي متطلبات استخدام Lighthouse، فأنت مؤهل لإدارة أجهزة الكمبيوتر السحابية للعميل في Lighthouse. للحصول على قائمة بالمتطلبات الحالية، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).

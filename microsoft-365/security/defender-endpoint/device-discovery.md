@@ -20,19 +20,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f6046576fcea2fe961e73e88168c6254a2d95a40
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 7b76fff060b46cbe13c11eb90f521af61e8900f5
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665041"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172934"
 ---
 # <a name="device-discovery-overview"></a>نظرة عامة على اكتشاف الجهاز
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 تتطلب حماية بيئتك إجراء جرد للأجهزة الموجودة في شبكتك. ومع ذلك، غالبا ما يكون تعيين الأجهزة في الشبكة مكلفا وصعبا ويستغرق وقتا طويلا.
@@ -116,19 +116,43 @@ ms.locfileid: "64665041"
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>استخدام التتبع المتقدم على الأجهزة المكتشفة
 
-يمكنك استخدام استعلامات التتبع المتقدم للحصول على رؤية على الأجهزة المكتشفة.
-يمكنك العثور على تفاصيل حول نقاط النهاية المكتشفة في جدول DeviceInfo، أو المعلومات المتعلقة بالشبكة حول تلك الأجهزة في جدول DeviceNetworkInfo.
+يمكنك استخدام استعلامات التتبع المتقدمة للحصول على رؤية على الأجهزة المكتشفة. يمكنك العثور على تفاصيل حول الأجهزة المكتشفة في جدول DeviceInfo، أو المعلومات المتعلقة بالشبكة حول تلك الأجهزة في جدول DeviceNetworkInfo.
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="صفحة التتبع المتقدم التي يمكن استخدام الاستعلامات عليها" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
-يستفيد اكتشاف الجهاز من Microsoft Defender لنقطة النهاية الأجهزة الملحقة كمصدر بيانات الشبكة لسمة الأنشطة إلى الأجهزة غير الملحقة. وهذا يعني أنه إذا كان جهاز Microsoft Defender لنقطة النهاية متصلا بجهاز غير ملحق، يمكن رؤية الأنشطة على الجهاز غير الملحق على المخطط الزمني ومن خلال جدول DeviceNetworkEvents للتتبع المتقدم.
+### <a name="query-discovered-devices-details"></a>تفاصيل الأجهزة المكتشفة للاستعلام
 
-الأحداث الجديدة تستند إلى اتصالات بروتوكول التحكم في الإرسال (TCP) وستلائم نظام DeviceNetworkEvents الحالي. دخول TCP إلى الجهاز الممكن Microsoft Defender لنقطة النهاية من جهاز غير Microsoft Defender لنقطة النهاية ممكن.
+قم بتشغيل هذا الاستعلام، على جدول DeviceInfo، لإرجاع جميع الأجهزة المكتشفة مع أحدث التفاصيل لكل جهاز:
 
-تمت أيضا إضافة أنواع الإجراءات التالية:
+```query
+DeviceInfo
+| summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
+| where isempty(MergedToDeviceId) // Remove invalidated/merged devices
+| where OnboardingStatus != "Onboarded" 
+```
+
+من خلال استدعاء الدالة **SeenBy** ، في استعلام التتبع المتقدم، يمكنك الحصول على تفاصيل حول الجهاز الملحق الذي شاهده الجهاز المكتشف.يمكن أن تساعد هذه المعلومات في تحديد موقع الشبكة لكل جهاز مكتشف، ثم تساعد في التعرف عليه في الشبكة.  
+
+```query
+DeviceInfo
+| where OnboardingStatus != "Onboarded" 
+| summarize arg_max(Timestamp, *) by DeviceId  
+| where isempty(MergedToDeviceId)  
+| limit 100 
+| invoke SeenBy() 
+| project DeviceId, DeviceName, DeviceType, SeenBy  
+```
+
+لمزيد من المعلومات، راجع الدالة [SeeBy()](/microsoft-365/security/defender/advanced-hunting-seenby-function) .
+
+### <a name="query-network-related-information"></a>الاستعلام عن المعلومات المتعلقة بشبكة الاتصال
+
+يستفيد اكتشاف الجهاز من Microsoft Defender لنقطة النهاية الأجهزة الملحقة كمصدر بيانات الشبكة لسمة الأنشطة إلى الأجهزة غير الملحقة. يحدد مستشعر الشبكة على الجهاز Microsoft Defender لنقطة النهاية المضمن نوعي اتصال جديدين:
 
 - ConnectionAttempt - محاولة لتأسيس اتصال TCP (syn)
 - ConnectionAcknowledged - إقرار بقبول اتصال TCP (syn\ack)
+
+وهذا يعني أنه عندما يحاول جهاز غير ملحق الاتصال بجهاز Microsoft Defender لنقطة النهاية تم إلحاقه، ستنشئ المحاولة DeviceNetworkEvent ويمكن رؤية أنشطة الجهاز غير الملحقة على المخطط الزمني للجهاز الملحق، ومن خلال جدول DeviceNetworkEvents للتتبع المتقدم.
 
 يمكنك تجربة هذا الاستعلام المثال:
 

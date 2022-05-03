@@ -16,20 +16,20 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على صفحة إدارة المخاطر.
-ms.openlocfilehash: fea297845446bd8cbb14c81851afb5d51ce33717
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 6e6a49cd1e31132881f45877bc00801d91aff492
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023338"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173774"
 ---
 # <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>نظرة عامة على صفحة إدارة المخاطر في Microsoft 365 Lighthouse 
 
 **ينطبق على:**
 
-- Windows 10
+- بالنسبة لنظام التشغيل
 
-يحمي برنامج الحماية من الفيروسات من Microsoft Defender المستأجرين والمستخدمين والأجهزة من تهديدات البرامج بما في ذلك الفيروسات والبرامج الضارة وبرامج التجسس. إنها حماية قوية ومستمرة مضمنة في Windows 10 ومضمنة مع Microsoft 365 Business Premium وMicrosoft365E3&nbsp;&nbsp;.  
+يحمي برنامج الحماية من الفيروسات من Microsoft Defender المستأجرين والمستخدمين والأجهزة من تهديدات البرامج بما في ذلك الفيروسات والبرامج الضارة وبرامج التجسس. إنها حماية قوية ومستمرة مدمجة في Windows.  
   
 للوصول إلى صفحة إدارة المخاطر في Microsoft 365 Lighthouse، حدد **إدارة التهديدات** في جزء التنقل الأيمن لعرض وضع أمان مستأجري العملاء ضد التهديدات. سترى المستأجرين والمستخدمين والأجهزة التي تتطلب انتباهك وتوصياتك التي ستساعدك على تقليل المخاطر.  
   

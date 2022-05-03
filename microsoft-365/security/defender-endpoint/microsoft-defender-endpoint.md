@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77766c153582f519aa0ba9853d18c216092747bc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9211597ec8a0e25130b010a6049832ac151840fc
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092294"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173693"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -37,7 +37,7 @@ ms.locfileid: "65092294"
 Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان نقطة نهاية المؤسسة مصمم لمساعدة شبكات المؤسسة على منع التهديدات المتقدمة واكتشافها والتحقيق فيها والاستجابة لها.
 
 > [!TIP]
-> قريبا، ستتوفر Microsoft Defender لنقطة النهاية في خطتين. تصف هذه المقالة الميزات والقدرات المضمنة في Microsoft Defender لنقطة النهاية الخطة 2. [تعرف على المزيد حول Microsoft Defender لنقطة النهاية الخطة 1 والخطة 2](defender-endpoint-plan-1-2.md).
+> يتوفر Microsoft Defender لنقطة النهاية في خطتين: Defender لنقطة النهاية الخطة 1 والخطة 2. تصف هذه المقالة الميزات والقدرات المضمنة في كل خطة. [تعرف على المزيد حول Microsoft Defender لنقطة النهاية الخطة 1 والخطة 2](defender-endpoint-plan-1-2.md).
 > 
 
 <p><p>

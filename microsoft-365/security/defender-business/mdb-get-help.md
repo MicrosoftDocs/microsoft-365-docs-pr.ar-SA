@@ -13,26 +13,22 @@ ms.collection:
 - SMB
 - M365-security-compliance
 search.appverid: MET150
-ms.reviewer: inbadian, shlomiakirav
-description: تعرف على كيفية الحصول على المساعدة أو الاتصال بالدعم في Microsoft Defender for Business
-ms.date: 02/24/2022
-ms.openlocfilehash: 5ebdca65d5a23474480ecf20c7189568cf4c3949
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.reviewer: shlomiakirav
+description: احصل على المساعدة أو اتصل بالدعم إذا كان لديك أي مشاكل في Defender for Business.
+ms.openlocfilehash: 37e41f8e5d5f6421739fb98a38d99bb6aa0597c6
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861399"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173141"
 ---
 # <a name="get-help-and-support-for-microsoft-defender-for-business"></a>الحصول على التعليمات والدعم Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 ## <a name="get-help-and-support"></a>الحصول على التعليمات والدعم
 
 إذا كنت بحاجة إلى مساعدة في Microsoft Defender for Business، فحدد أيقونة التعليمات (؟) في الزاوية العلوية اليسرى من الشاشة. اكتب سؤالك أو مشكلتك. سيتم سرد العديد من الخيارات، مثل الإجابات السريعة أو مقالات التعليمات.
 
-إذا لم تتمكن من رؤية الإجابة على سؤالك، فيمكنك فتح تذكرة دعم.
+إذا لم تتمكن من رؤية الإجابة على سؤالك، فيمكنك فتح تذكرة دعم. الاطلاع [على الحصول على الدعم](../../admin/get-help-support.md)
 
 >
 > **هل لديك دقيقة؟**
@@ -43,3 +39,4 @@ ms.locfileid: "64861399"
 
 - [Microsoft Defender for Business - الأسئلة والأجوبة المتداولة](mdb-faq.yml)
 - [استكشاف الأخطاء وإصلاحها Microsoft Defender for Business](mdb-troubleshooting.yml) 
+- [نظرة عامة على Microsoft 365 Business Premium](../../business-premium/index.md)

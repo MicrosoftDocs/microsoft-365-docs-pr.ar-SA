@@ -1,53 +1,47 @@
 ---
 title: البرامج التعليمية والمحاكاة في Microsoft Defender for Business
-description: تعرف على العديد من البرامج التعليمية لمساعدتك على بدء استخدام Defender for Business
+description: تعرف على العديد من البرامج التعليمية لمساعدتك على بدء استخدام Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 42d7acb4512928a32ac99c486a231d7891102208
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 68695ee348b11fcc10f3a82d2cba2d2c168af666
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861323"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174393"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>البرامج التعليمية والمحاكاة في Microsoft Defender for Business
 
-> [!IMPORTANT]
-> Microsoft Defender for Business قيد المعاينة الآن، وسيتم طرحها تدريجيا للعملاء وشركاء تكنولوجيا المعلومات الذين [يسجلون هنا](https://aka.ms/mdb-preview) لطلب ذلك. سنقوم بإعداد مجموعة أولية من العملاء والشركاء في الأسابيع القادمة وسنوسع المعاينة مما يؤدي إلى توفر عام. لاحظ أنه سيتم تشغيل المعاينة مع [مجموعة أولية من السيناريوهات](#try-these-preview-scenarios)، وسنضيف القدرات بانتظام.
-> 
-> تتعلق بعض المعلومات الواردة في هذه المقالة بالنواتج/الخدمات التي تم إصدارها مسبقا والتي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، للمعلومات المقدمة هنا. 
-
-إذا انتهيت للتو من إعداد Microsoft Defender for Business، فقد تتساءل من أين تبدأ في التعرف على كيفية عمل Defender for Business. تصف هذه المقالة سيناريوهات المعاينة التي يجب تجربتها، والعديد من البرامج التعليمية والمحاكاة المتوفرة ل Defender for Business. تم تصميم هذه الموارد لمساعدتك على معرفة كيف يمكن أن يعمل Defender for Business لشركتك.
+إذا انتهيت للتو من إعداد Microsoft Defender for Business، فقد تتساءل من أين تبدأ في التعرف على كيفية عمل Defender for Business. تصف هذه المقالة بعض السيناريوهات التي يجب تجربتها، والعديد من البرامج التعليمية والمحاكاة المتوفرة ل Defender for Business. تم تصميم هذه الموارد لمساعدتك على معرفة كيف يمكن أن يعمل Defender for Business لشركتك.
 
 >
 > **هل لديك دقيقة؟**
 > يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
 >
 
-## <a name="try-these-preview-scenarios"></a>جرب سيناريوهات المعاينة هذه
+## <a name="try-these-scenarios"></a>جرب هذه السيناريوهات
 
 يلخص الجدول التالي العديد من السيناريوهات التي يجب تجربتها باستخدام Defender for Business:
 
 | السيناريو  | الوصف  |
 |---------|---------|
-| إلحاق الأجهزة باستخدام برنامج نصي محلي <br/>(*ليس لنشر الإنتاج*)     | في Defender for Business، يمكنك إلحاق ما يصل إلى عشرة Windows 10 و11 جهازا باستخدام برنامج نصي تقوم بتنزيله وتشغيله على كل جهاز. مناسب لتقييم كيفية عمل Defender for Business في بيئتك، ينشئ البرنامج النصي ثقة مع Azure Active Directory (Azure AD) ويسجل الجهاز مع Microsoft Intune. لمعرفة المزيد، راجع [إلحاق الأجهزة Microsoft Defender for Business](mdb-onboard-devices.md).         |
-| إلحاق الأجهزة باستخدام Microsoft Intune     | إذا كنت تستخدم بالفعل Microsoft Intune قبل الحصول على Defender لنقطة النهاية، يمكنك الاستمرار في استخدام Microsoft Intune لإلحاق الأجهزة. جرب إلحاق أجهزة macOS وiOS وAndroid باستخدام Microsoft Intune. لمعرفة المزيد، راجع [تسجيل الجهاز في Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
-| تحرير نهج الأمان     | إذا كنت تدير نهج الأمان في Defender for Business، فاستخدم صفحة **تكوين الجهاز** لعرض النهج وتحريرها. لمعرفة المزيد، راجع [عرض النهج أو تحريرها في Microsoft Defender for Business](mdb-view-edit-policies.md).        |
-| تنفيذ هجوم محاكاة   | تتوفر العديد من البرامج التعليمية والمحاكاة في Defender for Business. تم تصميم هذه البرامج التعليمية والمحاكاة لتوضح لك مباشرة كيف يمكن أن تعمل ميزات الحماية من التهديدات في Defender for Business لشركتك. لتجربة برنامج تعليمي واحد أو أكثر، راجع [البرامج التعليمية الموصى بها Microsoft Defender for Business](#recommended-tutorials-for-defender-for-business).         |
-| عرض الحوادث في Microsoft 365 Lighthouse     | إذا كنت [موفر حلول الحوسبة السحابية من Microsoft](/partner-center/enrolling-in-the-csp-program) باستخدام Microsoft 365 Lighthouse، فستتمكن من عرض الحوادث عبر مستأجري عملائك في مدخل Microsoft 365 Lighthouse قريبا. لمعرفة المزيد، راجع [Microsoft 365 Lighthouse و Microsoft Defender for Business](mdb-lighthouse-integration.md).       |
+| إلحاق الأجهزة باستخدام برنامج نصي محلي     | في Defender for Business، يمكنك إلحاق أجهزة Windows وmacOS باستخدام برنامج نصي تقوم بتنزيله وتشغيله على كل جهاز. ينشئ البرنامج النصي ثقة مع Azure Active Directory (Azure AD) (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز مع Microsoft Intune (إذا كان لديك Intune)، ويلحق الجهاز ب Defender for Business. لمعرفة المزيد، راجع [إلحاق الأجهزة Microsoft Defender for Business](mdb-onboard-devices.md).         |
+| إلحاق الأجهزة باستخدام مركز إدارة إدارة نقاط النهاية من Microsoft     | إذا كنت تستخدم Intune بالفعل قبل الحصول على Defender for Business، يمكنك الاستمرار في استخدام مركز إدارة إدارة نقاط النهاية لإلحاق الأجهزة. حاول إلحاق أجهزة Windows وmacOS وiOS وAndroid باستخدام Microsoft Intune. لمعرفة المزيد، راجع [تسجيل الجهاز في Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
+| تحرير نهج الأمان     | إذا كنت تدير نهج الأمان في Defender for Business، فاستخدم صفحة **تكوين الجهاز** لعرض النهج وتحريرها، إذا لزم الأمر. يأتي Defender for Business مزودا بنهج افتراضية تستخدم الإعدادات الموصى بها لتأمين أجهزة شركتك بمجرد إلحاقها. يمكنك الاحتفاظ بنهجك الافتراضية وتحريرها وتحديد نهجك الخاص ليناسب احتياجات عملك. لمعرفة المزيد، راجع [عرض النهج أو تحريرها في Microsoft Defender for Business](mdb-view-edit-policies.md).        |
+| تشغيل هجوم محاكاة   | تتوفر العديد من البرامج التعليمية والمحاكاة في Defender for Business. تم تصميم هذه البرامج التعليمية والمحاكاة لتوضح لك مباشرة كيف يمكن أن تعمل ميزات الحماية من التهديدات في Defender for Business لشركتك. يمكنك أيضا استخدام هجوم محاكاة كتمرين تدريبي لفريقك. لتجربة برنامج تعليمي واحد أو أكثر، راجع [البرامج التعليمية الموصى بها Microsoft Defender for Business](#recommended-tutorials-for-defender-for-business).         |
+| عرض الحوادث في Microsoft 365 Lighthouse     | إذا كنت [موفر حلول الحوسبة السحابية من Microsoft](/partner-center/enrolling-in-the-csp-program) باستخدام Microsoft 365 Lighthouse، فستتمكن من عرض الحوادث عبر مستأجري عملائك في مدخل Microsoft 365 Lighthouse. لمعرفة المزيد، راجع [Microsoft 365 Lighthouse و Microsoft Defender for Business](mdb-lighthouse-integration.md).       |
 
 
 ## <a name="recommended-tutorials-for-defender-for-business"></a>البرامج التعليمية الموصى بها ل Defender for Business

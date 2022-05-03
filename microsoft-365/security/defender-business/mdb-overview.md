@@ -1,34 +1,30 @@
 ---
-title: نظرة عامة على Microsoft Defender for Business
-description: تعرف على Microsoft Defender for Business، بما في ذلك الإعداد وبدء الاستخدام وكيفية استخدام الخدمات
+title: ما هو Microsoft Defender for Business؟
+description: Microsoft Defender for Business هو حل أمان عبر الإنترنت للشركات الصغيرة والمتوسطة الحجم. يحمي Defender for Business من التهديدات عبر أجهزتك.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 8e382e8cf1c4863ffa67bc7687f549d6ae0a4f81
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3589b6a0a0cc7af9e2bcfcb11541309042871591
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101458"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173286"
 ---
-# <a name="overview-of-microsoft-defender-for-business"></a>نظرة عامة على Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
+# <a name="what-is-microsoft-defender-for-business"></a>ما هو Microsoft Defender for Business؟
 
 Microsoft Defender for Business هو حل أمان نقطة نهاية جديد تم تصميمه خصيصا للأعمال الصغيرة والمتوسطة الحجم (ما يصل إلى 300 موظف). باستخدام حل أمان نقطة النهاية هذا، تكون أجهزة شركتك محمية بشكل أفضل من برامج الفدية الضارة والبرامج الضارة والتصيد الاحتيالي والتهديدات الأخرى. 
 
@@ -65,16 +61,17 @@ Microsoft Defender for Business هو حل أمان نقطة نهاية جديد 
    - [تعرف على كيفية الحصول على Microsoft Defender for Business](get-defender-business.md)
 
 - **التنقل في إعداد قدرات الحماية من التهديدات وتكوينها** 
+   - [استخدام دليل المبادئ التجريبي: Microsoft Defender for Business](trial-playbook-defender-business.md)
+   - [تعرف على عملية التكوين المبسطة](mdb-simplified-configuration.md)
    - [تعرف على كيفية إعداد وتكوين Defender for Business](mdb-setup-configuration.md)
 
 - **مساعدتك على البدء باستخدام Defender for Business**، بدءا من مدخل Microsoft 365 Defender 
    - [التنقل في مدخل Microsoft 365 Defender](mdb-get-started.md)
-   - [تجربة سيناريوهات المعاينة والبرامج التعليمية والمحاكاة](mdb-tutorials.md)
+   - [جرب السيناريوهات والبرامج التعليمية والمحاكاة](mdb-tutorials.md)
 
 - **توفير إرشادات حول إدارة الأجهزة ونهج الأمان**
-   - [إدارة الأجهزة](mdb-manage-devices.md)
+   - [مراقبة الأجهزة أو إدارتها](mdb-manage-devices.md)
    - [عرض نهج الأمان أو تحريرها](mdb-view-edit-policies.md)
-   - [إدارة القواعد المخصصة لنهج جدار الحماية](mdb-custom-rules-firewall.md)  
 
 ## <a name="next-steps"></a>الخطوات التالية
 

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 47c7ddbc5ce935e8b9fedb7682daa6af468b66b4
-ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+ms.openlocfilehash: 9be1c581edb1b9564349ae8c3a659d226d6ef312
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65015013"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173797"
 ---
 # <a name="communication-compliance-policies"></a>نهج توافق الاتصالات
 
@@ -112,10 +112,10 @@ ms.locfileid: "65015013"
 4. في جزء **"Monitor" للرسائل التي أبلغ عنها المستخدم** ، قم بتعيين المراجعين للنهج. يجب أن يكون لدى المراجعين علب بريد مستضافة على Exchange Online. عند إضافة المراجعين إلى نهج، فإنهم يتلقون تلقائيا رسالة بريد إلكتروني لإعلامهم بالتعيين إلى النهج وتوفر ارتباطات إلى معلومات حول عملية المراجعة.
 5. حدد **حفظ**.
 
-لتعطيل المستخدمين من الإبلاغ عن رسائل Teams باستخدام *الخيار "الإبلاغ عن مخاوف*"، قم بتعطيل خيار **إعداد تقارير المستخدم** في [مركز إدارة Teams](/microsoftteams/manage-teams-in-modern-portal). 
+يتم تمكين الخيار *"الإبلاغ عن القلق"* بشكل افتراضي ويمكن التحكم فيه عبر نهج المراسلة Teams في [مركز إدارة Teams](/microsoftteams/manage-teams-in-modern-portal). سيحصل المستخدمون في مؤسستك تلقائيا على النهج العمومي، إلا إذا قمت بإنشاء نهج مخصص وتعيينه. تحرير الإعدادات في النهج العمومي أو إنشاء نهج مخصص واحد أو أكثر وتعيينه لتشغيل الخيار *"الإبلاغ عن مخاوف"* أو إيقاف تشغيله. لمعرفة المزيد، راجع [إدارة نهج المراسلة في Teams](/microsoftteams/messaging-policies-in-teams).  
 
 >[!IMPORTANT]
->إذا كنت تستخدم PowerShell لتعطيل خيار **إعداد تقارير المستخدم** في مركز إدارة Teams، يجب استخدام [Microsoft Teams cmdlets module الإصدار 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) أو إصدار أحدث.
+>إذا كنت تستخدم PowerShell لتشغيل خيار **إعداد تقارير المستخدم** أو إيقاف تشغيله في مركز إدارة Teams، يجب استخدام [Microsoft Teams cmdlets module الإصدار 4.2.0](/MicrosoftTeams/teams-powershell-release-notes) أو إصدار أحدث.
 
 ## <a name="storage-limit-notification-preview"></a>إعلام حد التخزين (معاينة)
 

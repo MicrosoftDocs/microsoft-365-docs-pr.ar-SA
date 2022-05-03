@@ -17,16 +17,16 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs)، تعرف على كيفية مساعدة Microsoft 365 Lighthouse في تأمين مستأجري العملاء وإدارتهم في موقع واحد.
-ms.openlocfilehash: 9a75cd43ac09d63c4524495a3146bf0b860627a4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 218442ee6714ece4c984fbf13478e5c4f3982101
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094671"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173964"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>نظرة عامة على Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع لعملاء الأعمال الصغيرة والمتوسطة الحجم (SMB) الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3.
+Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع لعملاء الأعمال الصغيرة والمتوسطة الحجم (SMB).
 
 تعمل Lighthouse على تبسيط إلحاق مستأجري العملاء من خلال التوصية بخطوط أساسية لتكوين الأمان مصممة خصيصا لعملاء SMB وتوفير طرق عرض متعددة المستأجرين عبر جميع بيئات العملاء. مع Lighthouse، يمكن ل MSPs توسيع نطاق إدارة عملائها، والتركيز على ما هو أكثر أهمية، والبحث عن المخاطر والتحقيق فيها بسرعة، واتخاذ إجراءات لجعل عملائهم في حالة سليمة وآمنة.
 

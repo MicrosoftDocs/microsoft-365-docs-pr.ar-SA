@@ -1,13 +1,12 @@
 ---
 title: تعيين الأدوار والأذونات في Microsoft Defender for Business
-description: تعرف على كيفية تعيين الأدوار والأذونات في Microsoft Defender for Business
+description: تعيين أدوار لفريق الأمان عبر الإنترنت. تعرف على هذه الأدوار والأذونات في Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,26 +15,21 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e4a3be91ff46626654f0c0f7b027557958429b33
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 03295989e1ee44ab43fe0cc53e4029a6c4307ea8
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862665"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172650"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>تعيين الأدوار والأذونات في Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 لتنفيذ المهام في مدخل Microsoft 365 Defender، مثل تكوين Microsoft Defender for Business أو عرض التقارير أو اتخاذ إجراءات استجابة بشأن التهديدات المكتشفة، يجب تعيين الأذونات المناسبة لفريق الأمان. يتم منح الأذونات من خلال الأدوار التي يتم تعيينها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) أو في [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
 
 ## <a name="what-to-do"></a>ما يجب فعله
 
 1. [تعرف على الأدوار في Defender for Business](#roles-in-defender-for-business).
-
 2. [عرض تعيينات الأدوار أو تحريرها لفريق الأمان.](#view-or-edit-role-assignments)
-
 3. [تابع إلى خطواتك التالية](#next-steps).
 
 >
@@ -58,7 +52,7 @@ ms.locfileid: "64862665"
 
 1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) وسجل الدخول.
 
-2. في جزء التنقل، اختر **الأذونات & الأدوار**، ثم ضمن **Azure AD**، حدد **Roles**.
+2. في جزء التنقل، اختر **"أذونات" & الأدوار**، ثم ضمن **"Azure AD**"، حدد **"Roles**".
 
 3. حدد أحد الأدوار التالية لفتح الجزء الجانبي الخاص به:
 
@@ -69,7 +63,7 @@ ms.locfileid: "64862665"
    > [!IMPORTANT]
    > توصي Microsoft بمنح الأشخاص حق الوصول إلى ما يحتاجون إليه فقط لأداء مهامهم. نطلق على هذا المفهوم *أقل امتياز* للأذونات. لمعرفة المزيد، راجع [أفضل الممارسات للوصول الأقل امتيازا للتطبيقات](/azure/active-directory/develop/secure-least-privileged-access). 
 
-4. في الجزء الجانبي، حدد " **إدارة الأعضاء" في ارتباط Azure AD** . ينقلك هذا الإجراء إلى Azure Active Directory (Azure AD) حيث يمكنك عرض تعيينات الأدوار وإدارتها.
+4. في الجزء الجانبي، حدد "**إدارة الأعضاء" في ارتباط Azure AD**. ينقلك هذا الإجراء إلى Azure Active Directory (Azure AD) حيث يمكنك عرض تعيينات الأدوار وإدارتها.
 
 5. حدد مستخدما لفتح ملف التعريف الخاص به، ثم اختر **الأدوار المعينة**.
 

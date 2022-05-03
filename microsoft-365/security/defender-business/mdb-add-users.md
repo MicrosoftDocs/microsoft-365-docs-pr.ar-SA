@@ -1,25 +1,24 @@
 ---
 title: إضافة مستخدمين وتعيين التراخيص في Microsoft Defender for Business
-description: تعرف على كيفية إضافة مستخدمين وتعيين التراخيص
+description: إضافة مستخدمين وتعيين تراخيص Defender for Business لحماية أجهزتهم
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance.
-ms.reviewer: inbadian, shlomiakirav
+ms.collection: M365-security-compliance
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
-ms.openlocfilehash: d954d745cde6505fb91eff8e394aee4f06c59092
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: d108064edc361f25f9301c0d4511d68d0856d817
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862907"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172304"
 ---
 # <a name="add-users-and-assign-licenses-in-microsoft-defender-for-business"></a>إضافة مستخدمين وتعيين التراخيص في Microsoft Defender for Business
 
@@ -50,5 +49,5 @@ ms.locfileid: "64862907"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-- [زيارة مدخل Microsoft 365 Defender](mdb-get-started.md)
+- [تفضّل بزيارة مدخل Microsoft 365 Defender](mdb-get-started.md)
 - [استخدم معالج الإعداد في Microsoft Defender for Business](mdb-use-wizard.md).

@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إدارة الأذونات والكتل في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 62116022c14af67b4589e4ee8479d294755fcc80
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: a067672a013f3e0ed7b9009604f8a4fe000ea47f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144656"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172818"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>إدارة قائمة السماح/الحظر للمستأجر
 
@@ -73,7 +73,7 @@ ms.locfileid: "65144656"
 
 - للاتصال Exchange Online PowerShell، راجع [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell مستقل، راجع [الاتصال إلى Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- يجب تعيين أذونات لك في مدخل Microsoft 365 Defender قبل أن تتمكن من تنفيذ الإجراءات الواردة في هذه المقالة:
+- يجب تعيين أذونات لك في Exchange Online قبل أن تتمكن من تنفيذ الإجراءات الواردة في هذه المقالة:
   - **المرسلون وعناوين URL والملفات**:
     - لإضافة قيم وإزالتها من قائمة السماح/الحظر للمستأجر، يجب أن تكون عضوا في
       - **إدارة المؤسسة** أو مجموعة دور **مسؤول الأمان** (**دور مسؤول الأمان**)

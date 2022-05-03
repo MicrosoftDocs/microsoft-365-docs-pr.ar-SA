@@ -1,32 +1,28 @@
 ---
 title: فهم ترتيب النهج في Microsoft Defender for Business
-description: تعرف على ترتيب الأولوية مع النهج في Microsoft Defender for Business
+description: تعرف على ترتيب الأولوية مع نهج الأمان عبر الإنترنت لحماية أجهزة شركتك باستخدام Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 56b7bbcb95bc00c8647fb4cc39e0d1e0611596ab
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 4003585c82c835c21218fd1200b3468140c8370b
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862159"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174103"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>فهم ترتيب النهج في Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 ## <a name="policy-order-in-microsoft-defender-for-business"></a>ترتيب النهج في Microsoft Defender for Business
 

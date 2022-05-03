@@ -1,41 +1,40 @@
 ### YamlMime:FAQ
 metadata:
   title: استكشاف الأخطاء وإصلاحها Microsoft Defender for Business
-  description: حل المشاكل التي قد تحدث في Microsoft Defender for Business
+  description: استكشاف المشكلات في Microsoft Defender for Business وإصلاحها. تعرف على كيفية حل المشاكل المتعلقة بإعداد الجهاز أو إدارته.
   search.appverid: MET150
   author: denisebmsft
   ms.author: deniseb
   manager: dansimp
   audience: Admin3
   ms.topic: faq
-  ms.date: 04/27/2022
   ms.prod: m365-security
   ms.technology: mdb
   ms.localizationpriority: medium
-  ms.reviewer: inbadian, shlomiakirav
+  ms.reviewer: shlomiakirav
   f1.keywords: NOCSH
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 894f3b2de02cddfe9095cf3fab8cb4b12ae991bc
-  ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+  ms.openlocfilehash: db08623b323000cbdc8dcfd8748ea76cb7e7f0f7
+  ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 04/29/2022
-  ms.locfileid: "65130637"
+  ms.lasthandoff: 05/03/2022
+  ms.locfileid: "65173179"
 title: استكشاف الأخطاء وإصلاحها Microsoft Defender for Business
-summary: "يتم طرح Microsoft Defender for Business للعملاء Microsoft 365 Business Premium، بدءا من 1 مارس 2022. يتم معاينة Defender for Business باعتباره اشتراكا مستقلا، وسيتم طرحه تدريجيا للعملاء وشركاء تكنولوجيا المعلومات الذين [يسجلون هنا](https://aka.ms/mdb-preview) لطلب ذلك. تتضمن المعاينة [مجموعة أولية من السيناريوهات](mdb-tutorials.md#try-these-preview-scenarios)، وسنضيف القدرات بانتظام.\n\nتتعلق بعض المعلومات الواردة في هذه المقالة بالنواتج/الخدمات التي تم إصدارها مسبقا والتي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، للمعلومات المقدمة هنا. \n\nاستخدم هذه المقالة كدليل لحل المشاكل التي قد تواجهها في Microsoft Defender for Business. \n"
+summary: "استخدم هذه المقالة كدليل لحل المشاكل التي قد تواجهها في Microsoft Defender for Business. \n"
 sections:
 - name: عام
   questions:
   - question: فشلت عملية الإعداد والتكوين الخاصة بي
     answer: "\nإذا كنت تستخدم عملية التكوين المبسطة في Defender for Business وحدث خطأ ما، فلا يزال بإمكانك تكوين إعدادات الأمان والنهج يدويا.\n\nراجع [إعداد Microsoft Defender for Business وتكوينها](mdb-setup-configuration.md).\n"
   - question: أحتاج إلى حل تعارض في النهج
-    answer: "\nيمكن أن تنشأ تعارضات في النهج عند تعريف نهج الأمان باستخدام أدوات أو أساليب متعددة. فيما يلي مثال على ذلك:\n\nلنفترض أن Lee كان يستخدم إدارة نقاط النهاية من Microsoft لإدارة الأجهزة وإعدادات الأمان. بدأ Lee مؤخرا في استخدام Microsoft Defender for Business. اختار لي استخدام عملية التكوين المبسطة في Defender for Business. الآن، يرى لي تعارضات النهج في إدارة نقاط النهاية من Microsoft وفي مدخل Microsoft 365 Defender. \n\nلحسن الحظ، يمكن حل تعارضات النهج عن طريق اتخاذ إجراء واحد أو أكثر من الإجراءات التالية:\n\n- حذف النهج الموجودة في إدارة نقاط النهاية من Microsoft\n- راجع [استكشاف أخطاء النهج وإصلاحها في Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)\n\nراجع المقالات التالية لمعرفة المزيد حول نهج الأمان في Defender for Business:\n\n- [فهم إعدادات تكوين الجيل التالي في Microsoft Defender for Business](mdb-next-gen-configuration-settings.md)\n- [إعدادات جدار الحماية في Microsoft Defender for Business](mdb-firewall.md)\n"
+    answer: "\nيمكن أن تنشأ تعارضات في النهج عند تعريف نهج الأمان باستخدام أدوات أو أساليب متعددة. فيما يلي مثال على ذلك:\n\nلنفترض أن Lee كان يستخدم Microsoft Intune لإدارة الأجهزة وإعدادات الأمان. بدأ Lee مؤخرا في استخدام Microsoft Defender for Business. اختار لي استخدام عملية التكوين المبسطة في Defender for Business. الآن، يرى لي تعارضات النهج في مركز إدارة إدارة نقاط النهاية من Microsoft وفي مدخل Microsoft 365 Defender. \n\nلحسن الحظ، يمكن حل تعارضات النهج عن طريق اتخاذ إجراء واحد أو أكثر من الإجراءات التالية:\n\n- حذف النهج الموجودة في مركز إدارة إدارة نقاط النهاية\n- راجع [استكشاف أخطاء النهج وإصلاحها في Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)\n\nراجع المقالات التالية لمعرفة المزيد حول نهج الأمان في Defender for Business:\n\n- [فهم إعدادات تكوين الجيل التالي في Microsoft Defender for Business](mdb-next-gen-configuration-settings.md)\n- [إعدادات جدار الحماية في Microsoft Defender for Business](mdb-firewall.md)\n"
   - question: هناك مشكلة تكامل بين Defender for Business و إدارة نقاط النهاية من Microsoft
-    answer: "\nأثناء عملية الإعداد والتكوين، قد ترى رسالة خطأ تقول:\n\n*حدث خطأ ما، وتعذر علينا إكمال عملية الإعداد. هناك مشكلة تكامل بين Defender for Business و إدارة نقاط النهاية من Microsoft.*\n\nتعني رسالة الخطأ أنه يجب إنشاء قناة تكوين بين Defender for Business و إدارة نقاط النهاية من Microsoft. حدث خطأ ما في التكامل. لحل المشكلة، استخدم الإجراءات الثلاثة التالية:\n\n**الإجراء 1: تشغيل اتصال Microsoft Intune في مدخل Microsoft 365 Defender** \n\n1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) وسجل الدخول.\n\n2. اختر **الإعدادات** >  **Endpoints**. ثم، ضمن **\"عام**\"، حدد **\"Advanced features**\".\n\n3. قم بالتمرير لأسفل Microsoft Intune **الاتصال**، وتأكد من تشغيله.\n\n**الإجراء 2: تعيين نطاق الإنفاذ ل Defender for Business**\n\n1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، وسجل الدخول.\n\n2. اختر **الإعدادات** >  **Endpoints**. ضمن **إدارة التكوين**، حدد **نطاق الإنفاذ**.\n\n3. ضمن **نظام التشغيل الأساسي**، قم بتشغيل **Windows أجهزة العميل**.\n\n4. حدد **حفظ**.\n\n**الإجراء 3: تشغيل إعدادات ملف تعريف أمان نقطة النهاية في إدارة نقاط النهاية من Microsoft**\n\n1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) وسجل الدخول.\n\n2. حدد **أمان نقطة النهاية**، ثم ضمن **برنامج الإعداد**، حدد **Microsoft Defender لنقطة النهاية**.\n\n3. ضمن **الإعدادات \"ملف تعريف أمان نقطة النهاية**\"، قم بتعيين **\"السماح Microsoft Defender لنقطة النهاية\" لفرض \"تكوينات أمان نقطة النهاية**\" إلى **\"تشغيل**\".\n"
+    answer: "\nأثناء عملية الإعداد والتكوين، قد ترى رسالة خطأ تقول:\n\n*حدث خطأ ما، وتعذر علينا إكمال عملية الإعداد. هناك مشكلة تكامل بين Defender for Business و إدارة نقاط النهاية من Microsoft.*\n\nتعني رسالة الخطأ أنه يجب إنشاء قناة تكوين بين Defender for Business و Microsoft Intune (تتم إدارتها في مركز إدارة إدارة نقاط النهاية من Microsoft). حدث خطأ ما في التكامل. لحل المشكلة، استخدم الإجراءات الثلاثة التالية:\n\n**الإجراء 1: تشغيل اتصال Microsoft Intune في مدخل Microsoft 365 Defender** \n\n1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) وسجل الدخول.\n\n2. اختر **الإعدادات** >  **Endpoints**. ثم، ضمن **\"عام**\"، حدد **\"Advanced features**\".\n\n3. قم بالتمرير لأسفل Microsoft Intune **الاتصال**، وتأكد من تشغيله.\n\n**الإجراء 2: تعيين نطاق الإنفاذ ل Defender for Business**\n\n1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، وسجل الدخول.\n\n2. اختر **الإعدادات** >  **Endpoints**. ضمن **إدارة التكوين**، حدد **نطاق الإنفاذ**.\n\n3. ضمن **نظام التشغيل الأساسي**، قم بتشغيل **Windows أجهزة العميل**.\n\n4. حدد **حفظ**.\n\n**الإجراء 3: تشغيل إعدادات ملف تعريف أمان نقطة النهاية في مركز إدارة إدارة نقاط النهاية من Microsoft**\n\n1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) وسجل الدخول.\n\n2. حدد **أمان نقطة النهاية**، ثم ضمن **برنامج الإعداد**، حدد **Microsoft Defender لنقطة النهاية**.\n\n3. ضمن **الإعدادات \"ملف تعريف أمان نقطة النهاية**\"، قم بتعيين **\"السماح Microsoft Defender لنقطة النهاية\" لفرض \"تكوينات أمان نقطة النهاية**\" إلى **\"تشغيل**\".\n"
   - question: حدث خطأ ما في إلحاق الأجهزة في مدخل Microsoft 365 Defender
-    answer: "\nأثناء إلحاق الأجهزة في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، قد يكون حدث خطأ ما، ويتم عرض رسالة خطأ. على وجه الخصوص، يمكن أن تحدث هذه المشكلة إذا كنت تقوم بإلحاق الأجهزة باستخدام حزمة إلحاق قابلة للتنزيل إدارة نقاط النهاية من Microsoft أو نهج المجموعة أو Configuration Manager System Center أو Mobile إدارة الجهاز في Defender for Business. \n\nتستخدم Microsoft Defender for Business إمكانية تسمى *إدارة الأمان Microsoft Defender لنقطة النهاية*. إذا فشل الإلحاق في Defender for Business، فإن السبب على الأرجح له علاقة بإدارة الأمان ل Defender لنقطة النهاية. لحل المشكلة، راجع المقالات التالية:\n\n- [استكشاف مشكلات الإلحاق المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt)\n\n- [تشغيل محلل عميل Microsoft Defender لنقطة النهاية على Windows](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#run-microsoft-defender-for-endpoint-client-analyzer-on-windows)\n"
+    answer: "\nأثناء إلحاق الأجهزة في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، قد يكون حدث خطأ ما، ويتم عرض رسالة خطأ. على وجه الخصوص، يمكن أن تحدث هذه المشكلة إذا كنت تقوم بإلحاق الأجهزة باستخدام حزمة إلحاق قابلة للتنزيل Microsoft Intune أو نهج المجموعة أو مركز النظام Configuration Manager أو إدارة الجهاز الأجهزة المحمولة في Defender for Business. \n\nتستخدم Microsoft Defender for Business إمكانية تسمى *إدارة الأمان Microsoft Defender لنقطة النهاية*. إذا فشل الإلحاق في Defender for Business، فإن السبب على الأرجح له علاقة بإدارة الأمان ل Defender لنقطة النهاية. لحل المشكلة، راجع المقالات التالية:\n\n- [استكشاف مشكلات الإلحاق المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt)\n\n- [تشغيل محلل عميل Microsoft Defender لنقطة النهاية على Windows](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#run-microsoft-defender-for-endpoint-client-analyzer-on-windows)\n\nبدلا من ذلك، يمكنك تجربة إلحاق الأجهزة يدويا. راجع [الأجهزة الملحقة](mdb-onboard-devices.md).\n"
 additionalContent: >-
   ## <a name="see-also"></a>راجع أيضًا
 

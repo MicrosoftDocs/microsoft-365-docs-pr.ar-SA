@@ -1,8 +1,8 @@
 ---
-title: دليل "البحث المتقدم" باستخدام دليل API في PowerShell
+title: التتبع المتقدم باستخدام دليل واجهة برمجة تطبيقات PowerShell
 ms.reviewer: ''
-description: استخدم نماذج التعليمات البرمجية هذه، مع الاستعلام عن العديد من واجهات برمجة تطبيقات نقطة النهاية ل Microsoft Defender.
-keywords: apis، apis المعتمدة، البحث المتقدم، الاستعلام
+description: استخدم نماذج التعليمات البرمجية هذه، للاستعلام عن العديد من واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية.
+keywords: واجهة برمجة التطبيقات، واجهة برمجة التطبيقات المدعومة، التتبع المتقدم، الاستعلام
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,57 +15,61 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 09/24/2018
+ms.date: 04/27/2022
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b1f501b942512500c11c7f9fe1e9308d67706e9
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c23bf15a188527b2b4c24270fbc1312537da4154
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63570528"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174888"
 ---
-# <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>واجهات برمجة تطبيقات Microsoft Defender لنقطة النهاية باستخدام PowerShell
+# <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>Microsoft Defender لنقطة النهاية واجهات برمجة التطبيقات باستخدام PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:** 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/index.yml)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> [!IMPORTANT]
+> لا يتم تضمين قدرات التتبع المتقدمة في Defender for Business. راجع [مقارنة Microsoft Defender for Business بالخطط Microsoft Defender لنقطة النهاية 1 و2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 سيناريو كامل باستخدام واجهات برمجة تطبيقات متعددة من Microsoft Defender لنقطة النهاية.
 
 في هذا القسم، نشارك نماذج PowerShell إلى 
 - استرداد رمز مميز 
-- استخدام الرمز المميز لاسترداد التنبيهات الأخيرة في Microsoft Defender لنقطة النهاية
-- بالنسبة لكل تنبيه، إذا كان التنبيه ذا أولوية متوسطة أو عالية ولا يزال قيد التقدم، فتحقق من عدد المرات التي يتصل فيها الجهاز ب URL مريب.
+- استخدم الرمز المميز لاسترداد أحدث التنبيهات في Microsoft Defender لنقطة النهاية
+- لكل تنبيه، إذا كان التنبيه ذا أولوية متوسطة أو عالية ولا يزال قيد التقدم، فتحقق من عدد المرات التي اتصل فيها الجهاز ب URL مريب.
 
-**المتطلبات** الأساسية: تحتاج أولا [إلى إنشاء تطبيق](apis-intro.md).
+**المتطلبات الأساسية**: تحتاج أولا إلى [إنشاء تطبيق](apis-intro.md).
 
 ## <a name="preparation-instructions"></a>إرشادات التحضير
 
 - افتح نافذة PowerShell.
-- إذا لم يسمح لك النهج بتشغيل أوامر PowerShell، يمكنك تشغيل الأمر أدناه:
+- إذا لم يسمح لك نهجك بتشغيل أوامر PowerShell، يمكنك تشغيل الأمر أدناه:
   ```
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
 لمزيد من المعلومات، راجع [وثائق PowerShell](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-## <a name="get-token"></a>الحصول على رمز مميز
+## <a name="get-token"></a>الحصول على الرمز المميز
 
-تشغيل ما يلي:
+قم بتشغيل ما يلي:
 
-- $tenantId: هوية المستأجر الذي تريد تشغيل الاستعلام بالنيابة عنه (أي، سيتم تشغيل الاستعلام على بيانات هذا المستأجر)
-- $appId: هوية تطبيق AAD (دليل Azure النشط) (يجب أن يكون لدى التطبيق إذن 'تشغيل الاستعلامات المتقدمة' إلى Defender لنقطة النهاية)
-- $appSecret: سرية تطبيق Azure AD
+- $tenantId: معرف المستأجر الذي تريد تشغيل الاستعلام بالنيابة عنه (على سبيل المثال، سيتم تشغيل الاستعلام على بيانات هذا المستأجر)
+- $appId: معرف تطبيق AAD (دليل Azure النشط) (يجب أن يكون للتطبيق إذن "تشغيل الاستعلامات المتقدمة" إلى Defender لنقطة النهاية)
+- $appSecret: سر تطبيق Azure AD
 
 - $suspiciousUrl: عنوان URL
 
@@ -132,6 +136,6 @@ $response
 
 
 ## <a name="see-also"></a>راجع أيضًا
-- [واجهات برمجة تطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md)
-- [API للصيد المتقدم](run-advanced-query-api.md)
-- ["الصيد المتقدم" باستخدام "بايثون"](run-advanced-query-sample-python.md)
+- [واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md)
+- [التتبع المتقدم لواجهات برمجة التطبيقات](run-advanced-query-api.md)
+- ["الصيد المتقدم" باستخدام Python](run-advanced-query-sample-python.md)

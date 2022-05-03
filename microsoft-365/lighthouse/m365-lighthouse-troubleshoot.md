@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، احصل على المساعدة في استكشاف أخطاء رسائل الخطأ والمشاكل وإصلاحها.
-ms.openlocfilehash: 3ae2737a07815284f2981e8c4debac2d064fc1e9
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 939b81344d2957dc005b71d91e27c09a8bca3c96
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130769"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174244"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>استكشاف أخطاء رسائل الخطأ ومشاكلها في Microsoft 365 Lighthouse وإصلاحها
 
@@ -65,7 +65,7 @@ ms.locfileid: "65130769"
 |--|--|--|
 | نشطه | تم إلحاق المستأجر بطلب من موفر الخدمات المشتركة (MSP) ولم يعد تتم إدارته في Lighthouse. | تحتاج إلى إعادة تنشيط المستأجر. في صفحة **المستأجرين** ، حدد النقاط الثلاث (المزيد من الإجراءات) إلى جانب المستأجر الذي تريد إعادة تنشيطه، ثم حدد **"تنشيط المستأجر**". قد يستغرق ظهور بيانات العميل الأولية في Lighthouse من 24 إلى 48 ساعة. |
 | غير مؤهل - لم يتم إعداد DAP أو GDAP | ليس لديك امتيازات مسؤول DAP أو GDAP تم إعدادها مع المستأجر، وهو مطلوب من Lighthouse. | إعداد امتيازات مسؤول DAP أو GDAP في مركز شركاء Microsoft. |
-| غير مؤهل - الترخيص المطلوب مفقود | المستأجر يفتقد ترخيصا مطلوبا. إنهم بحاجة إلى ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft Defender for Business واحد على الأقل. | تأكد من تعيين ترخيص Microsoft Defender for Business Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business أو Microsoft Defender for Business على الأقل للمستأجر. |
+| غير مؤهل - الترخيص المطلوب مفقود | المستأجر يفتقد ترخيصا مطلوبا. إنهم بحاجة إلى ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft Defender for Business واحد على الأقل. | تأكد من تعيين ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business أو Microsoft Defender for Business واحد على الأقل للمستأجر. |
 | غير مؤهل - تم تجاوز عدد المستخدمين | المستأجر لديه أكثر من 1000 مستخدم مرخص كحد أقصى يسمح به Lighthouse. | تحقق من أن المستأجر ليس لديه أكثر من 1000 مستخدم مرخص. |
 | غير مؤهل - فشل التحقق الجغرافي | أنت والعملاء لا تقيمون في نفس المنطقة الجغرافية، والتي تتطلبها Lighthouse. | تحقق من وجود العميل في منطقتك الجغرافية. إذا لم يكن الأمر كذلك، فلا يمكنك إدارة المستأجر في Lighthouse. |
 | قيد المعالجة | اكتشفت Lighthouse المستأجر ولكنها لا تزال قيد الإعداد. | السماح ل Lighthouse 48 ساعة بإكمال إلحاق المستأجر. |

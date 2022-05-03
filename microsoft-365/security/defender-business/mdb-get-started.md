@@ -1,40 +1,35 @@
 ---
-title: زيارة مدخل Microsoft 365 Defender
-description: تعرف على كيفية البدء باستخدام مدخل Microsoft 365 Defender. تعرف على كيفية التنقل في المدخل، وعرض حالة الأمان الحالية والتوصيات
+title: تفضّل بزيارة مدخل Microsoft 365 Defender
+description: مركز الأمان الخاص بك في Defender for Business هو مدخل Microsoft 365 Defender. تعرف على كيفية التنقل في المدخل، والاطلاع على خطواتك التالية.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 4af2986a3c1c726e9bf963752d53fe6ef098c19e
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 7e4f22634756b931a6136f57b1938d12d36bc988
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861455"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172789"
 ---
-# <a name="visit-the-microsoft-365-defender-portal"></a>زيارة مدخل Microsoft 365 Defender
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
+# <a name="visit-the-microsoft-365-defender-portal"></a>تفضّل بزيارة مدخل Microsoft 365 Defender
 
 مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) هو متجرك الوحيد لاستخدام وإدارة Microsoft Defender for Business. يتضمن شعار ترحيب و وسائل شرح لمساعدتك على البدء، وبطاقات تعرض المعلومات ذات الصلة، وشريط تنقل لمنحك إمكانية الوصول السهل إلى الميزات والقدرات المختلفة. 
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="مدخل Microsoft 365 Defender":::
 
- 
 >
 > **هل لديك دقيقة؟**
 > يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
@@ -58,10 +53,10 @@ ms.locfileid: "64861455"
 | **النهايه** >  **الدروس** | يوفر الوصول إلى المعاينات والمحاكاة لمساعدتك على معرفة المزيد حول كيفية عمل ميزات الحماية من التهديدات. <br/><br/>حدد رابط **قراءة المعاينة** قبل محاولة الحصول على ملف المحاكاة لكل برنامج تعليمي. تتطلب بعض عمليات المحاكاة تطبيقات Office، مثل Microsoft Word، لقراءة المعاينة. |
 | **النهايه** >  **تكوين الجهاز** | يسرد نهج الأمان الخاصة بك حسب نظام التشغيل والنوع. <br/><br/>لمعرفة المزيد حول نهج الأمان، راجع [عرض النهج أو تحريرها في Microsoft Defender for Business](mdb-view-edit-policies.md). |
 | **التقارير** | سرد تقارير الأمان المتوفرة. تمكنك هذه التقارير من رؤية اتجاهات الأمان الخاصة بك، وعرض تفاصيل حول عمليات الكشف عن التهديدات والتنبيهات، ومعرفة المزيد عن الأجهزة المعرضة للخطر في شركتك. |
-| **الصحه** | يمكنك من عرض حالة حماية الخدمة والتخطيط للتغييرات القادمة. <br/>- حدد **Service health** لعرض الحالة الصحية لخدمات Microsoft 365 المضمنة في اشتراك شركتك. <br/>- حدد **مركز الرسائل** للتعرف على التغييرات المخطط لها وما يجب توقعه.  |
+| **الحماية** | يمكنك من عرض حالة حماية الخدمة والتخطيط للتغييرات القادمة. <br/>- حدد **Service health** لعرض الحالة الصحية لخدمات Microsoft 365 المضمنة في اشتراك شركتك. <br/>- حدد **مركز الرسائل** للتعرف على التغييرات المخطط لها وما يجب توقعه.  |
 | **الأذونات & الأدوار** | يمكنك من تعيين أذونات للأشخاص في شركتك الذين سيديرون أمانك وعرض الحوادث والتقارير في مدخل Microsoft 365 Defender. يمكنك أيضا من إعداد مجموعات الأجهزة وإدارتها لإلحاق أجهزة شركتك وتعيين نهج الحماية من التهديدات.  |
 | **الإعدادات** | يمكنك من تحرير إعدادات مدخل Microsoft 365 Defender Microsoft Defender for Business. على سبيل المثال، يمكنك إلحاق (أو إلغاء الإلحاق) وأجهزة شركتك (يشار إليها أيضا بنقاط النهاية). يمكنك أيضا تحديد قواعد، مثل قواعد منع التنبيه، وإعداد مؤشرات لحظر ملفات أو عمليات معينة أو السماح بها.  |
-| **المزيد من الموارد** | انتقل إلى المداخل الأخرى، مثل Azure Active Directory. ضع في اعتبارك أن مدخل Microsoft 365 Defender يجب أن يلبي احتياجاتك دون الحاجة إلى الانتقال إلى المداخل الأخرى. |
+| **موارد إضافية** | انتقل إلى المداخل الأخرى، مثل Azure Active Directory. ضع في اعتبارك أن مدخل Microsoft 365 Defender يجب أن يلبي احتياجاتك دون الحاجة إلى الانتقال إلى المداخل الأخرى. |
 
 ## <a name="next-steps"></a>الخطوات التالية
 

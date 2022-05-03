@@ -1,33 +1,29 @@
 ---
 title: إدارة الأجهزة في Microsoft Defender for Business
-description: تعرف على كيفية إدارة الأجهزة في Microsoft Defender for Business
+description: تعرف على كيفية إضافة الأجهزة وإزالتها وإدارتها في Defender for Business، وحماية نقطة النهاية للشركات الصغيرة والمتوسطة الحجم.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 453cce2c52902116bc3eaa71f5e6c998ab4164a1
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: e08c53dd949858a1fcc9af9c8553c5d0eed07cef
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862819"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173086"
 ---
 # <a name="manage-devices-in-microsoft-defender-for-business"></a>إدارة الأجهزة في Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 في Microsoft Defender for Business، يمكنك إدارة الأجهزة كما يلي:
 

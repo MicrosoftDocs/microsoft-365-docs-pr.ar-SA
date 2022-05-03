@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: الاتصال إلى مستأجر Microsoft 365 باستخدام PowerShell Microsoft 365 لتنفيذ مهام مركز الإدارة من سطر الأوامر.
-ms.openlocfilehash: a7f493bd0073762d995a232918d732e999a85777
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a69fa6885e254e0c15cd65833a4f8368ec239c4f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093910"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174827"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>الاتصال بـ Microsoft 365 باستخدام PowerShell
 
@@ -107,7 +107,7 @@ Are you sure you want to install the modules from 'PSGallery'?
     Import-Module  AzureAD
     ```
     
-### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>الخطوة 2: الاتصال إلى Azure AD لاشتراكك في Microsoft 365
+### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>الخطوة 2: الاتصال Azure AD لاشتراكك في Microsoft 365
 
 للاتصال ب Azure Active Directory (Azure AD) لاشتراكك Microsoft 365 باسم حساب وكلمة مرور أو باستخدام مصادقة متعددة العوامل، قم بتشغيل أحد هذه الأوامر من موجه أوامر Windows PowerShell. (لا يجب أن يكون مرتفعا.)
 
@@ -147,9 +147,9 @@ Are you sure you want to install the modules from 'PSGallery'?
    1. إذا تمت مطالبتك بتثبيت موفر NuGet، فاكتب **Y** واضغط على مفتاح الإدخال Enter.
    1. إذا تمت مطالبتك بتثبيت الوحدة النمطية من PSGallery، فاكتب **Y** واضغط على مفتاح الإدخال Enter.
     
-### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>الخطوة 2: الاتصال إلى Azure AD لاشتراكك في Microsoft 365
+### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>الخطوة 2: الاتصال Azure AD لاشتراكك في Microsoft 365
 
-للاتصال ب Azure AD لاشتراكك Microsoft 365 باسم حساب وكلمة مرور أو باستخدام مصادقة متعددة العوامل، قم بتشغيل أحد هذه الأوامر من موجه أوامر Windows PowerShell. (لا يجب أن يكون مرتفعا.)
+للاتصال Azure AD لاشتراكك في Microsoft 365 باسم حساب وكلمة مرور أو باستخدام مصادقة متعددة العوامل، قم بتشغيل أحد هذه الأوامر من موجه أوامر Windows PowerShell. (لا يجب أن يكون مرتفعا.)
 
 | سحابة Office 365 | الامر |
 |:-------|:-----|
@@ -204,6 +204,13 @@ Are you sure you want to install the modules from 'PSGallery'?
 ستحتاج إلى اشتراك Azure نشط لمؤسستك مرتبط باشتراكك في Microsoft 365. إذا لم يكن لديك واحد بالفعل، يمكنك إنشاء واحد. بمجرد أن يكون لديك اشتراك Azure، يتم فتح نافذة PowerShell التي يمكنك من خلالها تشغيل أوامر PowerShell والبرامج النصية.
 
 لمزيد من المعلومات، راجع [Azure Cloud Shell](/azure/cloud-shell/overview).
+
+
+## <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>بدء استخدام Microsoft Graph PowerShell SDK
+
+يمكنك استخدام Microsoft Graph PowerShell SDK للوصول إلى جميع واجهات برمجة تطبيقات Microsoft Graph.
+
+لمزيد من المعلومات، راجع [بدء استخدام Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started?view=graph-powershell-beta)
 
 ## <a name="see-also"></a>راجع أيضًا
 

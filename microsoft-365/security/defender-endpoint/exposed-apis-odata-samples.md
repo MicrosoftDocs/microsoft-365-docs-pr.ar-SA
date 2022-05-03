@@ -1,8 +1,8 @@
 ---
-title: استعلامات OData باستخدام Microsoft Defender ل Endpoint
+title: استعلامات OData مع Microsoft Defender لنقطة النهاية
 ms.reviewer: ''
-description: استخدم هذه الأمثلة لاستعلامات بروتوكول البيانات المفتوح (OData) للمساعدة في استخدام بروتوكولات الوصول إلى البيانات في Microsoft Defender ل Endpoint.
-keywords: apis، apis المعتمدة، odata، استعلام
+description: استخدم هذه الأمثلة من استعلامات بروتوكول البيانات المفتوح (OData) للمساعدة في بروتوكولات الوصول إلى البيانات في Microsoft Defender لنقطة النهاية.
+keywords: واجهة برمجة التطبيقات، واجهة برمجة التطبيقات المدعومة، odata، الاستعلام
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,47 +16,51 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6ee47a1c624020ffa40848910866738072044d27
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 808ff3e6cc0dc69d748dabed102c478a27593790
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "63570702"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172294"
 ---
-# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>استعلامات OData باستخدام Microsoft Defender ل Endpoint
+# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>استعلامات OData مع Microsoft Defender لنقطة النهاية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/index.yml)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> [!IMPORTANT]
+> لا يتم تضمين قدرات التتبع المتقدمة في Defender for Business. راجع [مقارنة Microsoft Defender for Business بالخطط Microsoft Defender لنقطة النهاية 1 و2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
+
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-إذا لم تكن ملما باستخدام استعلامات OData، فاطلع على: [استعلامات OData V4](https://www.odata.org/documentation/)
+إذا لم تكن على دراية استعلامات OData، فراجع: [استعلامات OData V4](https://www.odata.org/documentation/)
 
-لا يمكن تصفية كل الخصائص.
+لا يمكن تصفية كافة الخصائص.
 
 ## <a name="properties-that-support-filter"></a>الخصائص التي تدعم $filter
 
-- [تنبيه](alerts.md): `alertCreationTime`و `lastUpdateTime`و `incidentId`و`InvestigationId` و `status`و `severity``category`و .
-- [الجهاز](machine.md): `ComputerDnsName`و `LastSeen`و `HealthStatus`و `OsPlatform`و `onboardingStatus`و `RiskScore`و و `RbacGroupId`و .
-- [MachineAction](machineaction.md): `Status`و `MachineId`و `Type`و `Requestor`و و `CreationDateTimeUtc`.
-- [المؤشر](ti-indicator.md): `indicatorValue`و `indicatorType`و `creationTimeDateTimeUtc`و `createdBy`و `severity`و و `action`.
+- [تنبيه](alerts.md): `alertCreationTime`و`lastUpdateTime`, `incidentId`,,`InvestigationId`, `status`, `severity`, و.`category`
+- [الجهاز](machine.md): `ComputerDnsName`و `LastSeen`، و `HealthStatus`، و `OsPlatform`، و `onboardingStatus`، و، `RiskScore`و `RbacGroupId`.
+- [MachineAction](machineaction.md): `Status`و `MachineId`، و، `Type`و، `Requestor`و `CreationDateTimeUtc`.
+- [المؤشر](ti-indicator.md): `indicatorValue`و `indicatorType`، و `creationTimeDateTimeUtc`، و، `createdBy`و، `severity`و `action`.
 
-### <a name="example-1"></a>المثال 1
+### <a name="example-1"></a>مثال 1
 
-احصل على أحدث 10 تنبيهات مع دليل ذي صلة:
+احصل على أحدث 10 تنبيهات باستخدام الأدلة ذات الصلة:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 ```
 
-#### <a name="response"></a>الاستجابة
+#### <a name="response"></a>استجابه
 
 ```json
 {
@@ -193,15 +197,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 }
 ```
 
-### <a name="example-2"></a>المثال 2
+### <a name="example-2"></a>مثال 2
 
-احصل على آخر تحديث للتنبيهات بعد 2019-11-22 00:00:00:
+احصل على آخر تحديث لجميع التنبيهات بعد 2019-11-22 00:00:00:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
 ```
 
-#### <a name="response"></a>الاستجابة
+#### <a name="response"></a>استجابه
 
 ```json
 {
@@ -255,15 +259,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdate
 }
 ```
 
-### <a name="example-3"></a>المثال 3
+### <a name="example-3"></a>مثال 3
 
-احصل على جميع الأجهزة باستخدام 'High' 'RiskScore':
+احصل على جميع الأجهزة ذات 'High' 'RiskScore':
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
 ```
 
-#### <a name="response"></a>الاستجابة
+#### <a name="response"></a>استجابه
 
 ```json
 {
@@ -308,15 +312,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScor
 }
 ```
 
-### <a name="example-4"></a>المثال 4
+### <a name="example-4"></a>مثال 4
 
-احصل على أفضل 100 جهاز مع 'HealthStatus' لا يساوي 'نشط':
+الحصول على أفضل 100 جهاز مع 'HealthStatus' لا يساوي 'نشط':
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
 ```
 
-#### <a name="response"></a>الاستجابة
+#### <a name="response"></a>استجابه
 
 ```json
 {
@@ -361,15 +365,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthSt
 }
 ```
 
-### <a name="example-5"></a>المثال 5
+### <a name="example-5"></a>مثال 5
 
-احصل على جميع الأجهزة التي رأيتها آخر مرة بعد 2018-10-20:
+احصل على جميع الأجهزة التي تمت رؤيتها آخر مرة بعد 2018-10-20:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
 ```
 
-#### <a name="response"></a>الاستجابة
+#### <a name="response"></a>استجابه
 
 ```json
 {
@@ -414,15 +418,15 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen
 }
 ```
 
-### <a name="example-6"></a>المثال 6
+### <a name="example-6"></a>مثال 6
 
-احصل على جميع عمليات فحص مكافحة الفيروسات التي قام Analyst@examples.onmicrosoft.com المستخدم إنشاؤها باستخدام Microsoft Defender لنقطة النهاية:
+احصل على جميع عمليات فحص مكافحة الفيروسات التي Analyst@examples.onmicrosoft.com المستخدم بإنشائها باستخدام Microsoft Defender لنقطة النهاية:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
 ```
 
-#### <a name="response"></a>الاستجابة
+#### <a name="response"></a>استجابه
 
 ```json
 json{
@@ -446,29 +450,29 @@ json{
 }
 ```
 
-### <a name="example-7"></a>المثال 7
+### <a name="example-7"></a>مثال 7
 
-الحصول على عدد التنبيهات المفتوحة لجهاز معين:
+احصل على عدد التنبيهات المفتوحة لجهاز معين:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
 ```
 
-#### <a name="response"></a>الاستجابة
+#### <a name="response"></a>استجابه
 
 ```json
 4
 ```
 
-### <a name="example-8"></a>المثال 8
+### <a name="example-8"></a>مثال 8
 
-احصل على جميع الأجهزة باستخدام 'computerDnsName' بدءا من 'mymachine':
+احصل على جميع الأجهزة التي تحتوي على "computerDnsName" بدءا من "mymachine":
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=startswith(computerDnsName,'mymachine')
 ```
 
-#### <a name="response"></a>الاستجابة
+#### <a name="response"></a>استجابه
 
 ```json
 json{
@@ -515,4 +519,4 @@ json{
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[واجهات برمجة تطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md)
+[واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md)

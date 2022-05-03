@@ -1,32 +1,28 @@
 ---
 title: جدار الحماية في Microsoft Defender for Business
-description: تعرف على Windows Defender Firewall في Microsoft Defender for Business، بما في ذلك إعدادات التكوين
+description: تعرف على إعدادات جدار حماية Windows Defender في Defender for Business. يمكن أن يساعد جدار الحماية في منع تدفق نسبة استخدام الشبكة غير المرغوب فيها إلى أجهزة شركتك.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 77c2042ace89a133b9be8995ef817c1fe3766a07
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 9a22af2e1ef047de0deaf98c6eea37cda15dcc5f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861389"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172663"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>جدار الحماية في Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 يتضمن Microsoft Defender for Business قدرات جدار الحماية مع [جدار حماية Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). تساعد حماية جدار الحماية على تأمين الأجهزة باستخدام القواعد التي تحدد نسبة استخدام الشبكة المسموح لها بإدخالها أو تدفقها من الأجهزة. 
 

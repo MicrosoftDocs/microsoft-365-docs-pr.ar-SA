@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender لنقطة النهاية على Mac
+title: Microsoft Defender for Endpoint على Mac
 ms.reviewer: ''
-description: تعرف على كيفية تثبيت تطبيقات Microsoft Defender لنقطة النهاية Mac وتكوينها وتحديثها واستخدامها.
-keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، التثبيت، النشر، إلغاء التثبيت، intune، jamf، macos، monterey، big sur، catalina، mojave، mde for mac
+description: تعرف على كيفية تثبيت Microsoft Defender لنقطة النهاية على Mac وتكوينها وتحديثها واستخدامها.
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، التثبيت، التوزيع، إلغاء التثبيت، intune، jamf، macos، مونتيري، بيج sur، catalina، mojave، mde for mac
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,54 +17,54 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2e982a32826906feb65b05837506ff2f513eb27e
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
+ms.openlocfilehash: d6438c7af3d3dbb8f4b2c19fdfdd04640cc8b4d2
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507290"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174966"
 ---
-# <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender لنقطة النهاية على Mac
+# <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender for Endpoint على Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-يصف هذا الموضوع كيفية تثبيت Defender for Endpoint على Mac وتكوينه وتحديثه واستخدامه.
+يوضح هذا الموضوع كيفية تثبيت Defender لنقطة النهاية على Mac وتكوينه وتحديثه واستخدامه.
 
 > [!CAUTION]
-> من المرجح أن يؤدي تشغيل منتجات أخرى لحماية نقاط النهاية من جهة خارجية Microsoft Defender لنقطة النهاية على Mac إلى مشاكل في الأداء وتأثيرات جانبية غير متوقعة. إذا كانت الحماية من نقطة نهاية غير Microsoft من المتطلبات المطلقة في بيئتك، يمكنك مع ذلك الاستفادة من وظيفة Defender for Endpoint على Mac الكشف التلقائي والاستجابة على النقط النهائية بعد تكوين وظيفة الحماية من الفيروسات للتشغيل في الوضع "غير [النشط](mac-preferences.md#enforcement-level-for-antivirus-engine)".
+> من المحتمل أن يؤدي تشغيل منتجات حماية نقطة النهاية الأخرى إلى جانب Microsoft Defender لنقطة النهاية على Mac إلى مشاكل في الأداء وتأثيرات جانبية غير متوقعة. إذا كانت حماية نقطة النهاية غير التابعة ل Microsoft متطلبا مطلقا في بيئتك، فلا يزال بإمكانك الاستفادة بأمان من وظيفة Defender لنقطة النهاية على Mac الكشف التلقائي والاستجابة على النقط النهائية بعد تكوين وظيفة مكافحة الفيروسات للتشغيل في [الوضع السلبي](mac-preferences.md#enforcement-level-for-antivirus-engine).
 
-## <a name="whats-new-in-the-latest-release"></a>ما الجديد في الإصدار الأخير
+## <a name="whats-new-in-the-latest-release"></a>أحدث الميزات في الإصدار الأخير
 
 [ما الجديد في Microsoft Defender لنقطة النهاية](whats-new-in-microsoft-defender-endpoint.md)
 
-[ما الجديد في Microsoft Defender لنقطة النهاية Mac](mac-whatsnew.md)
+[أحدث الميزات في Microsoft Defender لنقطة النهاية على Mac](mac-whatsnew.md)
 
 > [!TIP]
-> إذا كان لديك أي ملاحظات ترغب في مشاركتها، فأرسلها عن طريق فتح Microsoft Defender لنقطة النهاية على جهاز Mac على جهازك والتنقل إلى **تعليمات** \> **إرسال الملاحظات**.
+> إذا كانت لديك أي ملاحظات تريد مشاركتها، فقم بإرسالها عن طريق فتح Microsoft Defender لنقطة النهاية على Mac على جهازك والتنقل للمساعدة **في** \> **إرسال الملاحظات**.
 
-للحصول على أحدث الميزات، بما في ذلك إمكانيات المعاينة (مثل الكشف عن تهديدات نقاط النهاية والرد عليها أجهزة Mac)، قم بتكوين جهاز macOS الذي يعمل Microsoft Defender لنقطة النهاية أن يكون جهاز "Insider".
+للحصول على أحدث الميزات، بما في ذلك إمكانيات المعاينة (مثل الكشف عن تهديدات نقاط النهاية والرد عليها لأجهزة Mac)، قم بتكوين جهاز macOS الذي يعمل Microsoft Defender لنقطة النهاية ليكون جهاز "Insider".
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>كيفية تثبيت Microsoft Defender لنقطة النهاية Mac
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>كيفية تثبيت Microsoft Defender لنقطة النهاية على Mac
 
 ### <a name="prerequisites"></a>المتطلبات الأساسية
 
 - اشتراك Defender لنقطة النهاية والوصول إلى مدخل Microsoft 365 Defender
-- تجربة المستوى المبتدئ في البرمجة النصية ل macOS وBASH
+- خبرة على مستوى المبتدئين في البرمجة النصية macOS و BASH
 - الامتيازات الإدارية على الجهاز (في حالة النشر اليدوي)
 
 ### <a name="installation-instructions"></a>إرشادات التثبيت
 
-هناك العديد من الأساليب وأدوات النشر التي يمكنك استخدامها لتثبيت وتكوين Defender ل Endpoint على Mac.
+هناك العديد من الأساليب وأدوات النشر التي يمكنك استخدامها لتثبيت وتكوين Defender لنقطة النهاية على Mac.
 
-- أدوات الإدارة الخاصة ب جهة خارجية:
-    - [Microsoft Intune يستند إلى](mac-install-with-intune.md)
+- أدوات إدارة الجهات الخارجية:
+    - [النشر المستند إلى Microsoft Intune](mac-install-with-intune.md)
     - [النشر المستند إلى JAMF](mac-install-with-jamf.md)
     - [منتجات MDM الأخرى](mac-install-with-other-mdm.md)
 
@@ -73,23 +73,23 @@ ms.locfileid: "64507290"
 
 ### <a name="system-requirements"></a>متطلبات النظام
 
-الإصدارات الرئيسية الثلاثة الأخيرة من macOS معتمدة.
+يتم دعم أحدث ثلاثة إصدارات رئيسية من macOS.
 
 > [!IMPORTANT]
-> في macOS 11 (Big Sur) والأعلى، Microsoft Defender لنقطة النهاية ملفات تعريف تكوين إضافية. إذا كنت عميلا موجودا تقوم بالترقية من إصدارات سابقة من macOS، فتأكد من نشر ملفات تعريف التكوين الإضافية المدرجة في ملفات تعريف التكوين الجديدة ل [macOS Catalina](mac-sysext-policies.md) والإصدارات الأحدث من macOS.
+> في macOS 11 (Big Sur) وما فوقه، يتطلب Microsoft Defender لنقطة النهاية ملفات تعريف تكوين إضافية. إذا كنت عميلا موجودا يقوم بالترقية من إصدارات سابقة من macOS، فتأكد من نشر ملفات تعريف التكوين الإضافية المدرجة في [ملفات تعريف التكوين الجديدة ل macOS Catalina والإصدارات الأحدث من macOS](mac-sysext-policies.md).
 
 - 12 (مونتيري)، 11 (بيغ سور)، 10.15 (كاتالينا)
 - مساحة القرص: 1 غيغابايت
 
 إصدارات بيتا من macOS غير معتمدة.
 
-دعم أجهزة macOS مع المعالجات المستندة إلى شريحة M1 مدعوم رسميا منذ الإصدار 101.40.84 من الوكيل.
+تم دعم أجهزة macOS مع المعالجات المستندة إلى شريحة M1 رسميا منذ الإصدار 101.40.84 من العامل.
 
-بعد تمكين الخدمة، قد تحتاج إلى تكوين الشبكة أو جدار الحماية للسماح للاتصالات الصادرة بينها وبين نقاط النهاية.
+بعد تمكين الخدمة، قد تحتاج إلى تكوين الشبكة أو جدار الحماية للسماح بالاتصالات الصادرة بينها وبين نقاط النهاية.
 
 ### <a name="licensing-requirements"></a>متطلبات الترخيص
 
-Microsoft Defender لنقطة النهاية على Mac أحد عروض الترخيص الكلي من Microsoft التالية:
+يتطلب Microsoft Defender لنقطة النهاية على Mac أحد عروض الترخيص المجمع التالية من Microsoft:
 
 - Microsoft 365 E5 (M365 E5)
 - الأمان في Microsoft 365 E5
@@ -97,75 +97,75 @@ Microsoft Defender لنقطة النهاية على Mac أحد عروض التر
 - Windows 10 Enterprise E5
 - Microsoft 365 Business Premium
 - Windows 11 Enterprise E5
-- Microsoft Defender لنقطة النهاية
+- Microsoft Defender for Endpoint
 
 > [!NOTE]
-> يمكن للمستخدمين المرخصين المؤهلين استخدام Microsoft Defender لنقطة النهاية على ما يصل إلى خمسة أجهزة متزامنة.
-> Microsoft Defender لنقطة النهاية أيضا للشراء من Cloud Solution Provider (CSP). عند الشراء عبر CSP، لا يتطلب إدراج عروض الترخيص الكلي من Microsoft.
+> يمكن للمستخدمين المرخص لهم المؤهلين استخدام Microsoft Defender لنقطة النهاية على ما يصل إلى خمسة أجهزة متزامنة.
+> يتوفر Microsoft Defender لنقطة النهاية أيضا للشراء من Cloud Solution Provider (CSP). عند الشراء عبر موفر الخدمات المشتركة (CSP)، لا يتطلب إدراج عروض الترخيص المجمع من Microsoft.
 
 ### <a name="configuring-exclusions"></a>تكوين الاستثناءات
 
-عند إضافة الاستثناءات، يجب الانتباه إلى [أخطاء الاستثناء الشائعة برنامج الحماية من الفيروسات من Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
+عند إضافة الاستثناءات، ضع في اعتبارك [أخطاء الاستبعاد الشائعة برنامج الحماية من الفيروسات من Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
 ### <a name="network-connections"></a>اتصالات الشبكة
 
-يسرد جدول البيانات القابل للتنزيل التالي الخدمات وقوائم URL المقترنة بها التي يجب أن تتمكن شبكتك من الاتصال بها. يجب أن تضمن عدم وجود جدار حماية أو قواعد لتصفية الشبكة من شأنها رفض الوصول إلى عناوين URL هذه، أو قد تحتاج إلى إنشاء قاعدة السماح لها بشكل  خاص.
+يسرد جدول البيانات التالي القابل للتنزيل الخدمات وعناوين URL المقترنة بها التي يجب أن تكون شبكتك قادرة على الاتصال بها. يجب التأكد من عدم وجود قواعد جدار حماية أو تصفية شبكة من شأنها رفض الوصول إلى عناوين URL هذه، أو قد تحتاج إلى إنشاء قاعدة *سماح* خاصة بها.
 
 
 |جدول بيانات قائمة المجالات| الوصف|
 |---|---|
-|Microsoft Defender لنقطة النهاية URL للعملاء التجاريين| جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS للعملاء التجاريين. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Microsoft Defender لنقطة النهاية URL ل Gov/سحابة القطاع الحكومي/DoD | جدول بيانات لسجلات DNS معينة لمواقع الخدمات والمواقع الجغرافية و OS لعملاء Gov/سحابة القطاع الحكومي/DoD. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|Microsoft Defender لنقطة النهاية قائمة URL للعملاء التجاريين| جدول بيانات لسجلات DNS محددة لمواقع الخدمة والمواقع الجغرافية ونظام التشغيل للعملاء التجاريين. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender لنقطة النهاية قائمة URL ل Gov/سحابة القطاع الحكومي/DoD | جدول بيانات لسجلات DNS محددة لمواقع الخدمة والمواقع الجغرافية ونظام التشغيل لعملاء Gov/سحابة القطاع الحكومي/DoD. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
-Microsoft Defender لنقطة النهاية اكتشاف خادم وكيل باستخدام أساليب الاكتشاف التالية:
+يمكن Microsoft Defender لنقطة النهاية اكتشاف خادم وكيل باستخدام أساليب الاكتشاف التالية:
 
-- Autoconfig الوكيل (PAC)
-- بروتوكول Autodiscovery لوكيل ويب (WPAD)
+- تكوين تلقائي للوكيل (PAC)
+- بروتوكول الكشف التلقائي ل وكيل ويب (WPAD)
 - تكوين وكيل ثابت يدوي
 
-إذا كان الوكيل أو جدار الحماية يمنع حركة مرور مجهولة، فتأكد من أن حركة المرور المجهولة مسموح بها في عناوين URL المدرجة سابقا.
+إذا كان وكيل أو جدار حماية يمنع حركة المرور المجهولة، فتأكد من السماح بنسبة استخدام الشبكة المجهولة في عناوين URL المدرجة مسبقا.
 
 > [!WARNING]
-> إن المحترفين المصادق عليه غير معتمدين. تأكد من استخدام PAC أو WPAD أو وكيل ثابت فقط.
+> الوكلاء المصادق عليهم غير معتمدين. تأكد من استخدام PAC أو WPAD أو وكيل ثابت فقط.
 >
-> كما أن فحص SSL وتكويلات التقاطع غير معتمدة أيضا لأسباب تتعلق بالأمن. قم بتكوين استثناء لفحص SSL وخادم الوكيل الخاص بك لتمرير البيانات مباشرة من Microsoft Defender لنقطة النهاية macOS إلى عناوين URL ذات الصلة دون أي اعتراض. لن تسمح إضافة شهادة التقاطع إلى المتجر العام بالتقاطع.
+> كما أن فحص SSL واعتراض الوكلاء غير مدعومين لأسباب أمنية. تكوين استثناء لفحص SSL والخادم الوكيل الخاص بك لتمرير البيانات مباشرة من Microsoft Defender لنقطة النهاية على macOS إلى عناوين URL ذات الصلة دون اعتراض. لن تسمح إضافة شهادة اعتراضك إلى المتجر العمومي با اعتراضها.
 
-لاختبار عدم حظر الاتصال <https://x.cp.wd.microsoft.com/api/report> ، افتحه وفي <https://cdn.x.cp.wd.microsoft.com/ping> مستعرض.
+لاختبار أن الاتصال غير محظور، افتحه <https://x.cp.wd.microsoft.com/api/report> وفي <https://cdn.x.cp.wd.microsoft.com/ping> المستعرض.
 
-إذا كنت تفضل سطر الأوامر، يمكنك أيضا التحقق من الاتصال عن طريق تشغيل الأمر التالي في المحطة الطرفية:
+إذا كنت تفضل سطر الأوامر، يمكنك أيضا التحقق من الاتصال عن طريق تشغيل الأمر التالي في Terminal:
 
 ```bash
 curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
-يجب أن يكون الإخراج من هذا الأمر مماثلا للمخرجات التالية:
+يجب أن يكون الإخراج من هذا الأمر مشابها للآتي:
 
  `OK https://x.cp.wd.microsoft.com/api/report`
 
  `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
-> نوصيك باإبقاء [حماية تكامل](https://support.apple.com/HT204899) النظام (SIP) ممكنة على أجهزة العميل. إن SIP هي ميزة أمان macOS مضمنة تمنع التلاعب على مستوى منخفض في نظام التشغيل، وهي يتم تمكينها بشكل افتراضي.
+> نوصي بالاحتفاظ بميزة [System Integrity Protection](https://support.apple.com/HT204899) (SIP) ممكنة على أجهزة العميل. SIP هي ميزة أمان macOS مضمنة تمنع العبث بمستوى منخفض من نظام التشغيل، ويتم تمكينها بشكل افتراضي.
 
-بمجرد Microsoft Defender لنقطة النهاية، يمكن التحقق من الاتصال عن طريق تشغيل الأمر التالي في المحطة الطرفية:
+بمجرد تثبيت Microsoft Defender لنقطة النهاية، يمكن التحقق من صحة الاتصال عن طريق تشغيل الأمر التالي في Terminal:
 
 ```bash
 mdatp connectivity test
 ```
 
-## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>كيفية تحديث Microsoft Defender لنقطة النهاية Mac
+## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>كيفية تحديث Microsoft Defender لنقطة النهاية على Mac
 
-تنشر Microsoft تحديثات البرامج بشكل منتظم لتحسين الأداء والأمان وتقديم ميزات جديدة. لتحديث Microsoft Defender لنقطة النهاية Mac، يتم استخدام برنامج يسمى التحديث التلقائي ل Microsoft (MAU). لمعرفة المزيد، راجع [نشر تحديثات Microsoft Defender لنقطة النهاية Mac](mac-updates.md).
+تنشر Microsoft تحديثات البرامج بانتظام لتحسين الأداء والأمان وتقديم ميزات جديدة. لتحديث Microsoft Defender لنقطة النهاية على Mac، يتم استخدام برنامج يسمى التحديث التلقائي لبرامج Microsoft (MAU). لمعرفة المزيد، راجع [نشر تحديثات Microsoft Defender لنقطة النهاية على Mac](mac-updates.md).
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-on-mac"></a>كيفية تكوين Microsoft Defender لنقطة النهاية Mac
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-mac"></a>كيفية تكوين Microsoft Defender لنقطة النهاية على Mac
 
-تتوفر إرشادات حول كيفية تكوين المنتج في بيئات المؤسسة في تعيين التفضيلات Microsoft Defender لنقطة النهاية [Mac](mac-preferences.md).
+تتوفر إرشادات حول كيفية تكوين المنتج في بيئات المؤسسة في [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Mac](mac-preferences.md).
 
-## <a name="macos-kernel-and-system-extensions"></a>macOS kernel وملحقات النظام
+## <a name="macos-kernel-and-system-extensions"></a>نواة macOS وملحقات النظام
 
-في محاذاة مع تطور macOS، نقوم بإعداد Microsoft Defender لنقطة النهاية على Mac الذي يعتمد ملحقات النظام بدلا من ملحقات kernel. للحصول على التفاصيل ذات الصلة، راجع [ما الجديد في Microsoft Defender لنقطة النهاية على Mac](mac-whatsnew.md).
+بدءا من macOS 11 (Big Sur)، تم ترحيل Microsoft Defender لنقطة النهاية بالكامل من ملحق kernel إلى ملحقات النظام. لا يزال ملحق Kernel قيد الاستخدام على macOS 10.15 (Catalina).
 
 ## <a name="resources"></a>الموارد
 
-- لمزيد من المعلومات حول التسجيل أو إلغاء تثبيته أو مواضيع أخرى، راجع [موارد Microsoft Defender لنقطة النهاية Mac](mac-resources.md).
-- [الخصوصية Microsoft Defender لنقطة النهاية Mac](mac-privacy.md).
+- لمزيد من المعلومات حول التسجيل أو إلغاء التثبيت أو مواضيع أخرى، راجع ["الموارد" Microsoft Defender لنقطة النهاية على Mac](mac-resources.md).
+- [خصوصية Microsoft Defender لنقطة النهاية على Mac](mac-privacy.md).

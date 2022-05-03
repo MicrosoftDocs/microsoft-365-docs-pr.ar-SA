@@ -1,13 +1,12 @@
 ---
 title: مقارنة ميزات الأمان في خطط Microsoft 365 للشركات الصغيرة والمتوسطة الحجم
-description: فهم الاختلافات بين Defender for Business و Defender لنقطة النهاية. يمكن أن تساعدك معرفة ما هو مضمن في كل خطة على اتخاذ قرار مستنير لشركتك.
+description: كيف يقارن Defender for Business ب Defender لنقطة النهاية Microsoft 365 Business Premium؟ اطلع على ما هو مضمن في كل خطة حتى تتمكن من اتخاذ قرار أكثر استنارة لشركتك.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: reference
-ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,23 +16,16 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: d14215c7c648bafd4d21f765848f20a391a13a2f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 971617311ce8d2443f90a1792339d4f0927ade3e
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100226"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174724"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>مقارنة ميزات الأمان في خطط Microsoft 365 للشركات الصغيرة والمتوسطة الحجم
 
-> [!IMPORTANT]
-> يتم طرح Microsoft Defender for Business [للعملاء Microsoft 365 Business Premium](../../business-premium/index.md)، بدءا من 1 مارس 2022. يتم معاينة Defender for Business باعتباره اشتراكا مستقلا، وسيتم طرحه تدريجيا للعملاء وشركاء تكنولوجيا المعلومات الذين [يسجلون هنا](https://aka.ms/mdb-preview) لطلب ذلك. تتضمن المعاينة [مجموعة أولية من السيناريوهات](mdb-tutorials.md#try-these-preview-scenarios)، وسنضيف القدرات بانتظام.
->
-> تتعلق بعض المعلومات الواردة في هذه المقالة بالنواتج/الخدمات التي تم إصدارها مسبقا والتي قد يتم تعديلها بشكل كبير قبل إصدارها تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، للمعلومات المقدمة هنا.
-
 تقدم Microsoft مجموعة متنوعة من الحلول والخدمات السحابية، بما في ذلك العديد من الخطط المختلفة للشركات الصغيرة والمتوسطة الحجم. على سبيل المثال، [تتضمن Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) قدرات الأمان وإدارة الأجهزة، بالإضافة إلى ميزات الإنتاجية، مثل تطبيقات Office. تم تصميم هذه المقالة للمساعدة في توضيح ميزات الأمان، مثل حماية الجهاز، المضمنة في Microsoft 365 Business Premium Microsoft Defender for Business Microsoft Defender لنقطة النهاية.
-
-يتوفر Microsoft Defender for Business كعرض مستقل أو كجزء من Microsoft 365 Business Premium (بداية من 1 مارس 2022).
 
 >
 > **هل لديك دقيقة؟**
@@ -50,13 +42,11 @@ ms.locfileid: "65100226"
 ## <a name="compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>مقارنة ميزات الأمان في Microsoft Defender for Business مع Microsoft 365 Business Premium
 
 > [!NOTE]
-> تهدف هذه المقالة إلى تقديم نظرة عامة عالية المستوى حول ميزات الحماية من التهديدات المضمنة في Microsoft Defender for Business (كخطط مستقلة) Microsoft 365 Business Premium (والتي تتضمن Defender for Business). لا تهدف هذه المقالة إلى أن تكون بمثابة وصف للخدمة أو مستند عقد الترخيص. لمزيد من المعلومات، راجع [إرشادات الترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> تهدف هذه المقالة إلى تقديم نظرة عامة عالية المستوى حول ميزات الحماية من التهديدات المضمنة في Microsoft Defender for Business (كخطط مستقلة) Microsoft 365 Business Premium (والتي تتضمن Defender for Business). لا تهدف هذه المقالة إلى أن تكون بمثابة وصف للخدمة أو مستند عقد الترخيص. لمزيد من المعلومات، راجع [إرشادات الترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-**بداية من 1 مارس 2022، سيبدأ Defender for Business في الطرح كجزء من Microsoft 365 Business Premium. لا يزال Defender for Business كعرض مستقل قيد المعاينة.**
+**اعتبارا من 1 مارس 2022، يتم تضمين Defender for Business في Microsoft 365 Business Premium. يتوفر Defender for Business أيضا باعتباره اشتراكا مستقلا.** يقارن الجدول التالي ميزات الأمان وإمكانياته في Defender for Business (مستقل) مع Microsoft 365 Business Premium.
 
-يقارن الجدول التالي ميزات الأمان وإمكانياته في Defender for Business (مستقل) مع Microsoft 365 Business Premium.
-
-|الميزة/القدرة|[Microsoft Defender for Business](mdb-overview.md)<br/>(مستقل؛ قيد المعاينة حاليا)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(بما في ذلك Defender for Business)|
+|الميزة/القدرة|[Microsoft Defender for Business](mdb-overview.md)<br/>(مستقل)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(بما في ذلك Defender for Business)|
 |---|---|---|
 |حماية البريد الإلكتروني|نعم <br/>- [مسح البريد الإلكتروني باستخدام برنامج الحماية من الفيروسات من Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|نعم <br/>- [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>- [مسح البريد الإلكتروني باستخدام برنامج الحماية من الفيروسات من Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|
 |حماية Antispam|نعم <br/>- للأجهزة|نعم <br/>- للأجهزة<br/>- لمحتوى البريد الإلكتروني Microsoft 365، مثل الرسائل والمرفقات|
@@ -71,11 +61,9 @@ ms.locfileid: "65100226"
 
 ## <a name="compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2"></a>مقارنة Microsoft Defender for Business بالخطط Microsoft Defender لنقطة النهاية 1 و2
 
-يوفر Defender for Business قدرات على مستوى المؤسسة من Defender لنقطة النهاية للشركات الصغيرة والمتوسطة الحجم.
+يوفر Defender for Business قدرات على مستوى المؤسسة من Defender لنقطة النهاية للشركات الصغيرة والمتوسطة الحجم. يقارن الجدول التالي ميزات الأمان وإمكانياته في Defender for Business بعروض المؤسسة، Microsoft Defender لنقطة النهاية الخطط 1 و2.
 
-يقارن الجدول التالي ميزات الأمان وإمكانياته في Defender for Business بعروض المؤسسة، Microsoft Defender لنقطة النهاية الخطط 1 و2.
-
-|الميزة/القدرة|[Defender for Business](mdb-overview.md)<br/>(مستقل؛ قيد المعاينة حاليا)|[Defender for Endpoint الخطة 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(لعملاء المؤسسات) |[Defender لنقطة النهاية الخطة 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(لعملاء المؤسسات) |
+|الميزة/القدرة|[Defender for Business](mdb-overview.md)<br/>(مستقل)|[Defender for Endpoint الخطة 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(لعملاء المؤسسات) |[Defender لنقطة النهاية الخطة 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(لعملاء المؤسسات) |
 |---|---|---|---|
 |[الإدارة المركزية](../defender-endpoint/manage-atp-post-migration.md) |نعم <sup>[[1](#fn1)]</sup>|نعم|نعم|
 |[تكوين العميل المبسط](mdb-simplified-configuration.md)|نعم|لا|لا|
@@ -91,7 +79,7 @@ ms.locfileid: "65100226"
 |واجهات برمجة التطبيقات الخاصة بالشركاء|نعم|نعم|نعم|
 |[تكامل Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(لعرض حوادث الأمان عبر مستأجري العملاء)|نعم|لا|لا|
 
-(<a id="fn1">1</a>) إلحاق الأجهزة وإدارتها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) أو باستخدام إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
+(<a id="fn1">1</a>) إلحاق الأجهزة وإدارتها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) أو باستخدام Microsoft Intune، تتم إدارتها في مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
 (<a id="fn2">2</a>) تتضمن قدرات الكشف عن نقاط النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) في Defender for Business الكشف المستند إلى السلوك والأنواع الأربعة التالية من إجراءات الاستجابة اليدوية: 
 - تشغيل مسح الحماية من الفيروسات
@@ -105,7 +93,7 @@ ms.locfileid: "65100226"
 
 (<a id="fn5">5</a>) في Defender for Business، يتم تحسين تحليلات التهديدات للشركات الصغيرة والمتوسطة الحجم.
 
-(<a id="fn6">6</a>) أثناء برنامج المعاينة، يتم دعم Windows أجهزة العميل للإلحاق في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). يمكنك استخدام أسلوب البرنامج النصي المحلي. راجع [الأجهزة الملحقة Microsoft Defender for Business](mdb-onboard-devices.md).
+(<a id="fn6">6</a>) راجع [الأجهزة الملحقة Microsoft Defender for Business](mdb-onboard-devices.md).
 
 ## <a name="next-steps"></a>الخطوات التالية
 

@@ -1,13 +1,12 @@
 ---
 title: التقارير في Microsoft Defender for Business
-description: احصل على نظرة عامة حول التقارير المتوفرة في Microsoft Defender for Business
+description: احصل على نظرة عامة على تقارير الأمان في Defender for Business. ستعرض التقارير التهديدات والتنبيهات والثغرات الأمنية وحالة الجهاز المكتشفة.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -16,17 +15,14 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5b3a21a45e1b9e90cf5a8a7f666861502205552e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a4fbfc830c349df69180524305339582f444a609
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093251"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174829"
 ---
 # <a name="reports-in-microsoft-defender-for-business"></a>التقارير في Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 تتوفر العديد من التقارير في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). تصف هذه المقالة هذه التقارير وكيفية استخدامها وكيفية العثور عليها.
 

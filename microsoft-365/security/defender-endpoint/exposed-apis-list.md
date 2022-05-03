@@ -1,8 +1,8 @@
 ---
-title: واجهات برمجة تطبيقات نقطة النهاية المدعومة من Microsoft Defender
+title: واجهات Microsoft Defender لنقطة النهاية برمجة التطبيقات المعتمدة
 ms.reviewer: ''
-description: تعرف على الكيانات المحددة المعتمدة في Microsoft Defender لنقطة النهاية حيث يمكنك إنشاء مكالمات API إلى.
-keywords: apis، apis المعتمدة، الممثل، التنبيهات، الجهاز، المستخدم، المجال، ip، الملف، الاستعلامات المتقدمة، البحث المتقدم
+description: تعرف على كيانات Microsoft Defender لنقطة النهاية المدعومة المحددة حيث يمكنك إنشاء استدعاءات واجهة برمجة التطبيقات إليها.
+keywords: واجهة برمجة التطبيقات، وواجهة برمجة التطبيقات المدعومة، والممثل، والتنبيهات، والجهاز، والمستخدم، والمجال، وip، والملف، والاستعلامات المتقدمة، والتتبع المتقدم
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,69 +16,74 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 94c5698845f556936373ee4548d9aa137f03867b
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: fe43d4df71b0801ae89149797068873577c77c38
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "63570669"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174687"
 ---
-# <a name="supported-microsoft-defender-for-endpoint-apis"></a>واجهات برمجة تطبيقات نقطة النهاية المدعومة من Microsoft Defender
+# <a name="supported-microsoft-defender-for-endpoint-apis"></a>واجهات Microsoft Defender لنقطة النهاية برمجة التطبيقات المعتمدة
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:** 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/index.yml)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> [!IMPORTANT]
+> لا يتم تضمين قدرات التتبع المتقدمة في Defender for Business. راجع [مقارنة Microsoft Defender for Business بالخطط Microsoft Defender لنقطة النهاية 1 و2](../defender-business/compare-mdb-m365-plans.md#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
-## <a name="endpoint-uri-and-versioning"></a>نقطة النهاية URI والإصدار
 
-### <a name="endpoint-uri"></a>نقطة النهاية URI
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> إن URI الأساسي للخدمة هو: [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
+## <a name="endpoint-uri-and-versioning"></a>نقطة النهاية URI وتعيين الإصدار
+
+### <a name="endpoint-uri"></a>URI لنقطة النهاية
+
+> URI الأساسي للخدمة هو: [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
 >
-> لدى الاستعلامات المستندة إلى OData البادطة '/api'. على سبيل المثال، للحصول على التنبيهات، يمكنك إرسال طلب GET إلى [https://api.securitycenter.microsoft.com/api/alerts](https://api.securitycenter.microsoft.com/api/alerts)
+> تحتوي OData المستندة إلى الاستعلامات على بادئة '/api'. على سبيل المثال، للحصول على التنبيهات، يمكنك إرسال طلب GET إلى [https://api.securitycenter.microsoft.com/api/alerts](https://api.securitycenter.microsoft.com/api/alerts)
 
-### <a name="versioning"></a>الإصدار
+### <a name="versioning"></a>الاصدارات
 
-> تدعم API الإصدار.
+> تدعم واجهة برمجة التطبيقات تعيين الإصدار.
 >
 > الإصدار الحالي هو **V1.0**.
 >
 > لاستخدام إصدار معين، استخدم هذا التنسيق: `https://api.securitycenter.microsoft.com/api/{Version}`. على سبيل المثال: `https://api.securitycenter.microsoft.com/api/v1.0/alerts`
 >
-> إذا لم تحدد أي إصدار (على سبيل المثال)، `https://api.securitycenter.microsoft.com/api/alerts`ستصل إلى الإصدار الأخير.
+> إذا لم تحدد أي إصدار (على سبيل المثال `https://api.securitycenter.microsoft.com/api/alerts`) فستصل إلى الإصدار الأخير.
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-تعرف على المزيد حول الوحدات المدعمة الفردية حيث يمكنك تشغيل مكالمات API إلى وتفاصيل مثل قيم طلب HTTP، وطلب رؤوس واستجابات متوقعة.
+تعرف على المزيد حول الكيانات الفردية المدعومة حيث يمكنك تشغيل استدعاءات واجهة برمجة التطبيقات وتفاصيل مثل قيم طلب HTTP ورؤوس الطلبات والاستجابات المتوقعة.
 
 ## <a name="in-this-section"></a>في هذا القسم
 
 الموضوع | الوصف
 :---|:---
-[الصيد المتقدم](run-advanced-query-api.md) | تشغيل الاستعلامات من API.
-[أساليب التنبيه وخصائصه](alerts.md) | قم بتشغيل مكالمات API مثل \- الحصول على تنبيهات وإنشاء تنبيه وتحديث التنبيه والمزيد.
-[تصدير أساليب التقييم وخصائصه لكل جهاز](get-assessment-methods-properties.md) | تشغيل مكالمات API لجمع تقييمات الضعف على أساس كل جهاز، مثل: \- تقييم تكوين آمن للتصدير وتقييم مخزون البرامج وتقييم نقاط الضعف في برامج التصدير وتقييم نقاط الضعف في برنامج التصدير في دلتا.
-[أساليب التحقيق التلقائي وخصائصه](investigation.md) | تشغيل مكالمات API مثل \- الحصول على مجموعة من "التحقيق".
-[الحصول على تنبيهات ذات صلة بالمجال](get-domain-related-alerts.md) | تشغيل مكالمات API مثل \- الحصول على الأجهزة ذات الصلة بالمجال وإحصائيات المجال والمزيد.
-[أساليب الملفات وخصائصها](files.md) | تشغيل مكالمات API مثل \- الحصول على معلومات الملف والتنبيهات ذات الصلة بالملفات والأجهزة ذات الصلة بالملفات وإحصائيات الملفات.
-[أساليب المؤشرات وخصائصها](ti-indicator.md) | قم بتشغيل مكالمة API مثل \- الحصول على مؤشرات وإنشاء مؤشر وحذف مؤشرات.
-[الحصول على تنبيهات ذات صلة ب IP](get-ip-related-alerts.md) | يمكنك تشغيل مكالمات API مثل \- الحصول على تنبيهات متعلقة ب IP والحصول على إحصائيات IP.
-[أساليب الجهاز وخصائصه](machine.md) | قم بتشغيل مكالمات API مثل \- الحصول على الأجهزة والحصول على الأجهزة حسب الم ID ومعلومات حول المستخدمين الذين تم تسجيل دخولهم وتحرير العلامات والمزيد.
-[أساليب إجراءات الجهاز وخصائصه](machineaction.md) | قم بتشغيل استدعاء API مثل \- عزل وتشغيل مسح ضوئي لمكافحة الفيروسات والمزيد.
-[أساليب التوصيات وخصائصها](recommendation.md) | تشغيل مكالمات API مثل \- الحصول على توصية بواسطة الم ID.
-[أساليب وخصائص نشاط الإصلاح](get-remediation-methods-properties.md) | تشغيل مكالمة API مثل \- الحصول على كل مهام المعالجة، والحصول على مهمة إصلاحية للأجهزة المعرضة والحصول على مهمة إصلاح واحدة بواسطة الم id.
-[أساليب النقاط وخصائصها](score.md) | تشغيل مكالمات API مثل \- الحصول على درجة التعرض للضوء أو الحصول على نقاط آمنة للجهاز.
-[أساليب البرنامج وخصائصه](software.md) | تشغيل مكالمات API مثل \- الثغرات في القائمة حسب البرنامج.
-[أساليب المستخدم](user.md) | تشغيل مكالمات API مثل \- الحصول على تنبيهات متعلقة بالمستخدم والأجهزة ذات الصلة بالمستخدم.
-[أساليب الثغرات وخصائصها](vulnerability.md) | تشغيل مكالمات API مثل \- أجهزة القائمة حسب الثغرة الأمنية.
+[الصيد المتقدم](run-advanced-query-api.md) | تشغيل الاستعلامات من واجهة برمجة التطبيقات.<p>*لا يتم تضمين قدرات التتبع المتقدمة في [Defender for Business](../defender-business/mdb-overview.md)*.
+[أساليب التنبيه وخصائصه](alerts.md) | تشغيل استدعاءات واجهة برمجة التطبيقات مثل \- الحصول على التنبيهات وإنشاء تنبيه وتحديث التنبيه والمزيد.
+[تصدير أساليب التقييم وخصائصه لكل جهاز](get-assessment-methods-properties.md) | تشغيل استدعاءات واجهة برمجة التطبيقات لجمع تقييمات الثغرات الأمنية على أساس كل جهاز، مثل: \- تصدير تقييم التكوين الآمن، وتصدير تقييم مخزون البرامج، وتصدير تقييم الثغرات الأمنية للبرامج، وتقييم الثغرات الأمنية في برامج تصدير دلتا.
+[أساليب التحقيق التلقائي وخصائصه](investigation.md) | تشغيل استدعاءات واجهة برمجة التطبيقات مثل \- الحصول على مجموعة من التحقيق.
+[الحصول على تنبيهات ذات صلة بالمجال](get-domain-related-alerts.md) | تشغيل استدعاءات واجهة برمجة التطبيقات مثل \- الحصول على الأجهزة ذات الصلة بالمجال وإحصائيات المجال والمزيد.
+[أساليب الملفات وخصائصها](files.md) | تشغيل استدعاءات واجهة برمجة التطبيقات مثل \- الحصول على معلومات الملف والتنبيهات ذات الصلة بالملفات والأجهزة ذات الصلة بالملفات وإحصائيات الملفات.
+[أساليب المؤشرات وخصائصها](ti-indicator.md) | تشغيل استدعاء واجهة برمجة التطبيقات مثل \- الحصول على مؤشرات وإنشاء مؤشر وحذف المؤشرات.
+[الحصول على تنبيهات ذات صلة ب IP](get-ip-related-alerts.md) | تشغيل استدعاءات واجهة برمجة التطبيقات مثل \- الحصول على التنبيهات المتعلقة ب IP والحصول على إحصائيات IP.
+[أساليب الجهاز وخصائصه](machine.md) | قم بتشغيل استدعاءات واجهة برمجة التطبيقات مثل \- الحصول على الأجهزة والحصول على الأجهزة حسب المعرف ومعلومات حول المستخدمين الذين تم تسجيل دخولهم وتحرير العلامات والمزيد.
+[أساليب إجراءات الجهاز وخصائصه](machineaction.md) | تشغيل استدعاء واجهة برمجة التطبيقات مثل \- العزل، وتشغيل فحص مكافحة الفيروسات والمزيد.
+[أساليب التوصيات وخصائصها](recommendation.md) | تشغيل استدعاءات واجهة برمجة التطبيقات مثل \- الحصول على توصية بواسطة المعرف.
+[أساليب وخصائص نشاط الإصلاح](get-remediation-methods-properties.md) | تشغيل استدعاء واجهة برمجة التطبيقات مثل \- الحصول على جميع مهام المعالجة والحصول على مهمة معالجة الأجهزة المكشوفة والحصول على مهمة معالجة واحدة حسب المعرف.
+[أساليب النقاط وخصائصها](score.md) | تشغيل استدعاءات واجهة برمجة التطبيقات مثل \- الحصول على درجة التعرض أو الحصول على درجة أمان الجهاز.
+[أساليب البرنامج وخصائصه](software.md) | تشغيل استدعاءات واجهة برمجة التطبيقات مثل \- الثغرات الأمنية في القائمة حسب البرنامج.
+[أساليب المستخدم](user.md) | تشغيل استدعاءات واجهة برمجة التطبيقات مثل \- الحصول على التنبيهات المتعلقة بالمستخدم والأجهزة المتعلقة بالمستخدم.
+[أساليب الثغرات وخصائصها](vulnerability.md) | تشغيل استدعاءات واجهة برمجة التطبيقات مثل \- أجهزة القائمة حسب الثغرات الأمنية.
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [واجهات برمجة تطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md)
+- [واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md)
 
-- [ملاحظات إصدار API ل Microsoft Defender لنقطة النهاية](api-release-notes.md)
+- [ملاحظات إصدار واجهة برمجة تطبيقات Microsoft Defender لنقطة النهاية](api-release-notes.md)

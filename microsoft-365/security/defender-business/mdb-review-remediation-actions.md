@@ -1,13 +1,12 @@
 ---
 title: مراجعة إجراءات المعالجة في Microsoft Defender for Business
-description: عرض المعالجة التي تم اتخاذها تلقائيا أو التي تنتظر الموافقة في مركز الصيانة
+description: عرض المعالجة التي تم اتخاذها على التهديدات المكتشفة باستخدام Defender for Business. يمكنك عرض الإجراءات في مركز الصيانة في مدخل Microsoft 365 Defender.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,17 +16,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 15a64491f6e97137d1e919aa126d4bf134c47999
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 438d43548b4318499c44aea65399a7d5a3a5f43d
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862203"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174373"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>مراجعة إجراءات المعالجة في مركز الصيانة
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 ومع اكتشاف التهديدات، يتم تشغيل إجراءات المعالجة. اعتمادا على التهديد المعين وكيفية تكوين إعدادات الأمان الخاصة بك، قد يتم اتخاذ إجراءات المعالجة تلقائيا أو فقط بناء على الموافقة. تتضمن أمثلة إجراءات المعالجة إرسال ملف إلى العزل، وإيقاف تشغيل عملية، وإزالة مهمة مجدولة. يتم تعقب جميع إجراءات المعالجة في مركز الصيانة.
 

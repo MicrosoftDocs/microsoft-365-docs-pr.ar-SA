@@ -1,13 +1,12 @@
 ---
 title: عرض لوحة معلومات إدارة الثغرات الأمنية & المخاطر في Microsoft Defender for Business
-description: استخدم لوحة معلومات إدارة الثغرات الأمنية & التهديد & المخاطر & لرؤية العناصر المهمة التي يجب معالجتها.
+description: استخدم لوحة معلومات إدارة المخاطر & المخاطر & المخاطر & لرؤية العناصر المهمة التي يجب معالجتها في Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,17 +16,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: b7761d7ad35f00ec9637c117e9a84b6258ad1904
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 25085dc22fd2f939e10833c98bc4fb599dd5a11f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101414"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172633"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>استخدام لوحة معلومات إدارة الثغرات الأمنية & المخاطر في Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 تتضمن Microsoft Defender for Business لوحة معلومات إدارة الثغرات الأمنية & المخاطر المصممة لتوفير الوقت والجهد لفريق الأمان. بالإضافة إلى توفير درجة التعرض، يمكنك أيضا عرض معلومات حول الأجهزة المكشوفة وتوصيات الأمان. يمكنك استخدام لوحة معلومات إدارة المخاطر & الثغرات الأمنية من أجل:
 

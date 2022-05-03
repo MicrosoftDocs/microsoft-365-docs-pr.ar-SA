@@ -1,33 +1,29 @@
 ---
 title: مجموعات الأجهزة في Microsoft Defender for Business
-description: التعرف على مجموعات الأجهزة في Microsoft Defender for Business
+description: يتم تطبيق نهج الأمان على الأجهزة من خلال مجموعات الأجهزة في Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 6c02a92132f7f5249f2ba67ca2841902b889d52b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: abb1c694f98ace7595f1389e3270ca3479d0c745
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861719"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172228"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business"></a>مجموعات الأجهزة في Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 في Microsoft Defender for Business، يتم تطبيق النهج على الأجهزة من خلال مجموعات معينة تسمى مجموعات الأجهزة. 
 
@@ -112,7 +108,7 @@ ms.locfileid: "64861719"
 
 :::image type="content" source="media/add-all-devices-option.png" alt-text="Screenshot of the Add All Devices option.":::
 
-إذا حددت هذا الخيار، فستتلقى جميع الأجهزة المسجلة في إدارة نقاط النهاية من Microsoft (والتي تتضمن Microsoft Intune) النهج الذي تقوم بإنشائه أو تحريره بشكل افتراضي. 
+إذا حددت هذا الخيار، فستتلقى جميع الأجهزة المسجلة في Microsoft Intune النهج الذي تقوم بإنشائه أو تحريره بشكل افتراضي. 
 
 ## <a name="next-steps"></a>الخطوات التالية
 

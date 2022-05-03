@@ -1,13 +1,12 @@
 ---
 title: الاستجابة للتهديدات وتخفيفها في Microsoft Defender for Business
-description: مع اكتشاف التهديدات، يمكنك اتخاذ إجراءات للاستجابة لتلك التهديدات والتخفيف من حدتها.
+description: مع اكتشاف التهديدات في Defender for Business، يمكنك اتخاذ إجراءات للاستجابة لتلك التهديدات. تعرف على كيفية استخدام طريقة عرض مخزون الجهاز.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,17 +16,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: b6d85d5032b9eb5837482649d4164e68b7c08275
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0481ffdf51b60a40de854ec2e4eb9b9d38d4344a
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098769"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174857"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>الاستجابة للتهديدات وتخفيفها في Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 يمكن مدخل Microsoft 365 Defender فريق الأمان من الاستجابة للتهديدات المكتشفة والتخفيف من حدتها. ترشدك هذه المقالة إلى مثال حول كيفية استخدام Defender for Business.
 

@@ -1,33 +1,29 @@
 ---
 title: إلحاق الأجهزة Microsoft Defender for Business
-description: تعرف على خيارات إلحاق الجهاز في Microsoft Defender for Business
+description: تعرف على كيفية إلحاق الأجهزة ب Defender for Business لحماية أجهزتك من اليوم الأول.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 77eb8c0aa4d0ebd78788e9701e4933788af2e46c
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: ce3c458013a96f845da528104997b63360879c56
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915896"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174058"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>إلحاق الأجهزة Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 باستخدام Microsoft Defender for Business، لديك العديد من الخيارات للاختيار من بينها لإلحاق أجهزة شركتك. ترشدك هذه المقالة عبر خياراتك وتتضمن نظرة عامة حول كيفية عمل الإلحاق.
 
@@ -38,14 +34,8 @@ ms.locfileid: "64915896"
 
 ## <a name="what-to-do"></a>ما يجب فعله
 
-1. حدد علامة التبويب لنظام التشغيل: 
-
-   - عملاء Windows
-   - أجهزة كمبيوتر macOS
-   - الأجهزة المحمولة
-
+1. حدد علامة التبويب لنظام التشغيل: **Windows العملاء** أو **أجهزة كمبيوتر macOS** أو **الأجهزة المحمولة**.
 2. اعرض خيارات الإلحاق واتبع الإرشادات الموجودة في علامة التبويب المحددة.
-
 3. تابع إلى خطواتك التالية.
 
 ## <a name="windows-clients"></a>[**عملاء Windows**](#tab/WindowsClientDevices)
@@ -55,13 +45,13 @@ ms.locfileid: "64915896"
 اختر أحد الخيارات التالية لإلحاق أجهزة العميل Windows إلى Defender for Business:
 
 - [البرنامج النصي المحلي](#local-script-for-windows-clients) (لإعداد الأجهزة يدويا في مدخل Microsoft 365 Defender)
-- [نهج المجموعة](#group-policy-for-windows-clients)
-- [إدارة نقاط النهاية من Microsoft](#endpoint-manager-for-windows-clients) (مضمن في [Microsoft 365 Business Premium](../../business-premium/index.md))
+- [نهج المجموعة](#group-policy-for-windows-clients) (إذا كنت تستخدم بالفعل نهج المجموعة في مؤسستك)
+- [Microsoft Intune](#microsoft-intune-for-windows-clients) (مضمن في [Microsoft 365 Business Premium](../../business-premium/index.md))
 
 
 ### <a name="local-script-for-windows-clients"></a>البرنامج النصي المحلي لعملاء Windows
 
-يمكنك استخدام برنامج نصي محلي لإلحاق أجهزة العميل Windows. عند تشغيل البرنامج النصي للإلحاق على جهاز، فإنه ينشئ ثقة مع Azure Active Directory (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز في إدارة نقاط النهاية من Microsoft (إذا لم يكن مسجلا بالفعل)، ثم يقوم بإلحاق الجهاز ب Defender for Business. يعمل أسلوب البرنامج النصي المحلي حتى إذا لم يكن لديك حاليا إدارة نقاط النهاية (أو Microsoft Intune). نوصي بإلحاق ما يصل إلى 10 أجهزة في كل مرة باستخدام هذا الأسلوب.
+يمكنك استخدام برنامج نصي محلي لإلحاق أجهزة العميل Windows. عند تشغيل البرنامج النصي للإلحاق على جهاز، فإنه ينشئ ثقة مع Azure Active Directory (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز في Microsoft Intune (إذا لم يكن مسجلا بالفعل)، ثم يقوم بإلحاق الجهاز ب Defender for Business. يعمل أسلوب البرنامج النصي المحلي حتى إذا لم يكن لديك Intune حاليا. نوصي بإلحاق ما يصل إلى 10 أجهزة في كل مرة باستخدام هذا الأسلوب.
 
 > [!TIP]
 > نوصي بإعداد ما يصل إلى 10 أجهزة في وقت تستخدم فيه أسلوب البرنامج النصي المحلي.
@@ -86,9 +76,9 @@ ms.locfileid: "64915896"
 
 إذا كنت تفضل استخدام نهج المجموعة لإلحاق عملاء Windows، فاتبع الإرشادات الواردة في [الأجهزة Windows الملحقة باستخدام نهج المجموعة](../defender-endpoint/configure-endpoints-gp.md). تصف هذه المقالة خطوات الإلحاق Microsoft Defender لنقطة النهاية؛ ومع ذلك، فإن خطوات الإلحاق ب Defender for Business متشابهة.
 
-### <a name="endpoint-manager-for-windows-clients"></a>إدارة نقاط النهاية لعملاء Windows
+### <a name="microsoft-intune-for-windows-clients"></a>Microsoft Intune لعملاء Windows
 
-إذا كان اشتراكك يتضمن [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview)، يمكنك إلحاق العملاء Windows والأجهزة الأخرى في مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). على سبيل المثال، إذا كان لديك [Microsoft 365 Business Premium](../../business/index.yml)، فلديك إدارة نقاط النهاية كجزء من اشتراكك. تتضمن إدارة نقاط النهاية [قدرات Microsoft Intune](/mem/intune/fundamentals/what-is-intune) و [Mobile إدارة الجهاز](/mem/intune/fundamentals/what-is-device-management). 
+إذا كان اشتراكك يتضمن Intune، يمكنك إلحاق العملاء Windows والأجهزة الأخرى في مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). على سبيل المثال، إذا كان لديك [Microsoft 365 Business Premium](../../business/index.yml)، فلديك Intune كجزء من اشتراكك.  
 
 هناك العديد من الأساليب المتاحة لتسجيل الأجهزة في Intune. نوصي بالبدء بأحد الأساليب التالية:
 
@@ -103,7 +93,7 @@ ms.locfileid: "64915896"
 
 2. حدد **Azure Active DirectoryMobility** >  **(MDM وMAM)** > **Microsoft Intune**.
 
-3. تكوين نطاق مستخدم MDM ونطاق مستخدم MAM.
+3. تكوين **نطاق مستخدم MDM** **ونطاق مستخدم MAM**.
 
    :::image type="content" source="media/mem-mam-scope-azure-ad.png" alt-text="لقطة شاشة لإعداد نطاق مستخدم MDM ونطاق مستخدم MAM في Intune.":::
 
@@ -150,7 +140,7 @@ ms.locfileid: "64915896"
 
 ## <a name="view-a-list-of-onboarded-devices"></a>عرض قائمة بالأجهزة التي تم إلحاقها
 
-لعرض قائمة الأجهزة التي تم إلحاقها ب Defender for Business، في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، في جزء التنقل، ضمن **نقاط النهاية**، اختر **Device invetory**.
+لعرض قائمة الأجهزة التي تم إلحاقها ب Defender for Business، في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، في جزء التنقل، ضمن **نقاط النهاية**، اختر **مخزون الجهاز**.
 
 ## <a name="next-steps"></a>الخطوات التالية
 
@@ -168,11 +158,11 @@ ms.locfileid: "64915896"
 اختر أحد الخيارات التالية لإلحاق أجهزة macOS:
 
 - [البرنامج النصي المحلي لنظام التشغيل macOS](#local-script-for-macos) (*مستحسن*)
-- [إدارة نقاط النهاية لنظام التشغيل macOS](#endpoint-manager-for-macos)
+- [Intune for macOS](#microsoft-intune-for-macos)
 
 ### <a name="local-script-for-macos"></a>البرنامج النصي المحلي لنظام التشغيل macOS
 
-عند تشغيل البرنامج النصي المحلي على جهاز macOS، فإنه ينشئ ثقة مع Azure Active Directory (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز في إدارة نقاط النهاية من Microsoft (إذا لم يكن مسجلا بالفعل)، ثم يقوم بإلحاق الجهاز ب Defender for Business. يعمل أسلوب البرنامج النصي المحلي حتى إذا لم يكن لديك حاليا إدارة نقاط النهاية (أو Microsoft Intune). نوصي بإلحاق ما يصل إلى 10 أجهزة في كل مرة باستخدام هذا الأسلوب.
+عند تشغيل البرنامج النصي المحلي على جهاز macOS، فإنه ينشئ ثقة مع Azure Active Directory (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز في Microsoft Intune (إذا لم يكن مسجلا بالفعل)، ثم يقوم بإلحاق الجهاز ب Defender for Business. يعمل أسلوب البرنامج النصي المحلي حتى إذا لم يكن لديك Intune حاليا. نوصي بإلحاق ما يصل إلى 10 أجهزة في كل مرة باستخدام هذا الأسلوب.
 
 1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، وسجل الدخول.
 
@@ -196,9 +186,9 @@ ms.locfileid: "64915896"
 
 11. بعد تسجيل جهاز في Intune، يمكنك إضافته إلى مجموعة أجهزة. [تعرف على المزيد حول مجموعات الأجهزة في Microsoft Defender for Business](mdb-create-edit-device-groups.md).
 
-### <a name="endpoint-manager-for-macos"></a>إدارة نقاط النهاية لنظام التشغيل macOS
+### <a name="microsoft-intune-for-macos"></a>Microsoft Intune لنظام التشغيل macOS
 
-إذا كان اشتراكك يتضمن [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview)، يمكنك إلحاق أجهزة macOS في مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). على سبيل المثال، إذا كان لديك [Microsoft 365 Business Premium](../../business/index.yml)، فلديك إدارة نقاط النهاية كجزء من اشتراكك. تتضمن إدارة نقاط النهاية [قدرات Microsoft Intune](/mem/intune/fundamentals/what-is-intune) و [Mobile إدارة الجهاز](/mem/intune/fundamentals/what-is-device-management). 
+إذا كان اشتراكك يتضمن Microsoft Intune، يمكنك إلحاق أجهزة macOS في مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). على سبيل المثال، إذا كان لديك [Microsoft 365 Business Premium](../../business/index.yml)، فلديك Intune كجزء من اشتراكك.  
 
 هناك العديد من الأساليب المتاحة لتسجيل الأجهزة في Intune. نوصي بالبدء بأحد الأساليب التالية:
 
@@ -249,7 +239,7 @@ ms.locfileid: "64915896"
 
 ## <a name="mobile-devices"></a>الأجهزة المحمولة
 
-ستحتاج Microsoft Intune إلى إلحاق الأجهزة المحمولة، مثل أجهزة Android وiOS/iPadOS. إذا كان لديك [Microsoft 365 Business Premium](../../business/index.yml)، فلديك إدارة نقاط النهاية كجزء من اشتراكك. تتضمن إدارة نقاط النهاية [قدرات Microsoft Intune](/mem/intune/fundamentals/what-is-intune) و [Mobile إدارة الجهاز](/mem/intune/fundamentals/what-is-device-management). 
+ستحتاج Microsoft Intune إلى إلحاق الأجهزة المحمولة، مثل أجهزة Android وiOS/iPadOS. إذا كان لديك [Microsoft 365 Business Premium](../../business/index.yml)، فلديك Intune. 
 
 راجع الموارد التالية للحصول على المساعدة في تسجيل هذه الأجهزة في Intune:
 

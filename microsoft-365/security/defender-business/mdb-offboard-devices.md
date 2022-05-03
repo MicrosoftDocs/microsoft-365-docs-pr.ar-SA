@@ -1,28 +1,27 @@
 ---
 title: إيقاف تشغيل جهاز من Microsoft Defender for Business
-description: تعرف على كيفية إزالة جهاز من Microsoft Defender for Business
+description: تعرف على كيفية إزالة جهاز أو إيقاف تشغيله من Microsoft Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: f702cb51e87777f0ac0e18e7caa794977df9c3dd
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 00b9b8b9a4ac1cfad07741de84bd99db5403ef1a
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862911"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174447"
 ---
 # <a name="offboard-a-device-from-microsoft-defender-for-business"></a>إيقاف تشغيل جهاز من Microsoft Defender for Business
 
@@ -51,10 +50,13 @@ ms.locfileid: "64862911"
 
 1. انتقل إلى **FinderApplications** > . 
 
-2. انقر بزر الماوس الأيمن فوق Microsoft Defender for Business، ثم اختر **"نقل إلى سلة المهملات**". <br/><br/>--- أو --- <br/><br/> استخدم الأمر التالي: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
+2. انقر بزر الماوس الأيمن فوق Microsoft Defender for Business، ثم اختر **"نقل إلى سلة المهملات**". <br/>--- أو --- <br/> استخدم الأمر التالي: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
 
 > [!IMPORTANT]
 > يؤدي إلغاء إلحاق جهاز إلى توقف الأجهزة عن إرسال البيانات إلى Defender for Business. ومع ذلك، يتم الاحتفاظ بالبيانات التي تم تلقيها قبل الإلحاق لمدة تصل إلى ستة (6) أشهر.
 
 ## <a name="next-steps"></a>الخطوات التالية
 
+- [استخدام لوحة معلومات إدارة الثغرات الأمنية & المخاطر في Microsoft Defender for Business](mdb-view-tvm-dashboard.md)
+- [عرض النهج أو تحريرها في Microsoft Defender for Business](mdb-view-edit-create-policies.md)
+- [إدارة الأجهزة في Microsoft Defender for Business](mdb-manage-devices.md)

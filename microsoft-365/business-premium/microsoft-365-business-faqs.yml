@@ -1,0 +1,190 @@
+### YamlMime:FAQ
+metadata:
+  title: Microsoft 365 Business Premium الأسئلة المتداولة
+  description: ابحث عن إجابات للأسئلة المتداولة حول Microsoft 365 Business، وهو حل جديد مصمم للشركات الصغيرة والمتوسطة الحجم (SMB).
+  author: denisebmsft
+  f1.keywords:
+  - NOCSH
+  ms.author: deniseb
+  ms.topic: faq
+  ms.prod: microsoft-365-business
+  ms.collection: M365-subscription-management
+  ms.custom: AdminSurgePortfolio
+  ms.localizationpriority: medium
+  audience: microsoft-business
+  keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
+  ms.date: 02/25/2022
+  ms.openlocfilehash: 16459c60b90a695a1db0c52366d273ba453a31f4
+  ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+  ms.translationtype: MT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 05/03/2022
+  ms.locfileid: "65174984"
+title: Microsoft 365 Business Premium الأسئلة المتداولة
+summary: ''
+sections:
+- name: عام
+  questions:
+  - question: ما هو Microsoft 365 Business Premium؟
+    answer: "Microsoft 365 هو حل متكامل يجمع بين أفضل أدوات الإنتاجية والأمان وقدرات إدارة الأجهزة للشركات الصغيرة والمتوسطة الحجم. ويتضمن ما يلي:\n\n**مجموعة من أدوات إنتاجية الأعمال والتعاون**:\n\n- Word و Excel و PowerPoint و Outlook و OneNote و Publisher و Access\n- Exchange، OneDrive، Skype for Business، Microsoft Teams، SharePoint.\n         \n**إدارة الأجهزة على مستوى المؤسسة وقدرات الأمان**:\n\n- يساعد على توفير الحماية من التهديدات الخارجية مثل التصيد الاحتيالي والبرامج الضارة المتطورة باستخدام Microsoft Defender لـ Office 365 الخطة 1 Microsoft Defender for Business.\n- يساعد على التحكم في كيفية الوصول إلى المعلومات الحساسة ونقلها باستخدام نهج منع فقدان البيانات والخطة 1 حماية البيانات Azure وإدارتها.\n- يساعد على حماية بياناتك والحفاظ عليها وإجراء نسخ احتياطي لها باستخدام أرشفة Exchange Online.\n- حماية التطبيقات لتطبيقات Office والأجهزة المحمولة الأخرى باستخدام Intune App Protection.\n- إدارة الأجهزة لأجهزة الكمبيوتر Windows 10 وأجهزة macOS والأجهزة المحمولة باستخدام إدارة أجهزة Intune.\n- حماية الهوية مع المصادقة متعددة العوامل، وإعادة تعيين كلمة مرور الخدمة الذاتية، والوصول المشروط.\n- تكوين أمان متناسق عبر&mdash; أجهزة الحماية لبيانات الشركة عبر الأجهزة؛ برنامج الحماية من الفيروسات من Microsoft Defender، الذي يكون دائما محدثا ومحدثا.\n\n**توزيع الجهاز المبسط وإعداد المستخدم**:\n\n- وحدة تحكم مسؤول واحد لإعداد المستخدمين والأجهزة وإدارتها\n- التثبيت التلقائي لتطبيقات Office على أجهزة الكمبيوتر Windows 10.\n- تحديث Office دائما + Windows 10.\n- توزيع مبسط لأجهزة الكمبيوتر باستخدام Windows AutoPilot.\n\n**الاستحقاقات الأخرى**:\n\n- Microsoft 365 Business Premium يمكن للعملاء أيضا الوصول إلى Windows Virtual Desktop وإمكانيات تنشيط الكمبيوتر المشترك Office. اقرأ [مدونة Microsoft 365 Small and Medium Business](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) لمعرفة المزيد. راجع أيضا [وصف خدمة Microsoft 365 للأعمال](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).          \n"
+  - question: يجب أن تفكر روبوت Who في اعتماد Microsoft 365 Business Premium؟
+    answer: >
+      Microsoft 365 Business Premium هو حل أمان شامل قائم على السحابة يتيح لك:
+
+
+      - ادافع عن أعمالك ضد التهديدات الإلكترونية المتقدمة باستخدام التصيد الاحتيالي المتطور وحماية برامج الفدية الضارة.
+
+      - التحكم في الوصول إلى المعلومات الحساسة باستخدام التشفير لمنع مشاركة البيانات عن طريق الخطأ مع شخص غير مخول لرؤيته.
+
+      - قم بتأمين الأجهزة التي تتصل بعملك وتساعد في الحفاظ على أمان بياناتك على أجهزة iOS وAndroid Windows وMac، وأجهزتك Windows محدثة.
+
+
+      Microsoft 365 Business Premium متكامل تماما مع Office 365 لتزويدك بموقع مألوف للإدارة والفوترة ودعم 24x7. وهي تتكون من تقنية على مستوى المؤسسة مصممة للشركات التي تضم أقل من 300 موظف.
+  - question: كيف يمكنني الحصول على Microsoft 365 Business Premium لعملي؟
+    answer: >
+      يمكن شراء Microsoft 365 Business Premium من خلال [شريك Microsoft](https://www.microsoft.com/solution-providers/search) أو مباشرة من [Microsoft](https://www.microsoft.com//microsoft-365/business). عند اختيار ما إذا كنت تريد الشراء مباشرة من Microsoft أو من خلال شريك Microsoft، يجب مراعاة إمكانيتك لدى فريق العمل ورغبتك في الحفاظ على البنية الأساسية لتقنية المعلومات. يمكن أن يساعدك شريك Microsoft في نشر البنية الأساسية تكنولوجيا المعلومات وإدارتها، بما في ذلك حلول Microsoft.
+  - question: كم تبلغ تكلفة Microsoft 365 Business Premium؟
+    answer: يتم تقديم Microsoft 365 Business Premium بقيمة 20.00 دولار أمريكي شهريا بناء على _عقد سنوي_ إذا تم شراؤه مباشرة من Microsoft. عند الشراء من خلال شريك Microsoft، يمكن أن يختلف التسعير استنادا إلى الخدمات التي يوفرها الشريك ونموذج التسعير الخاص به Microsoft 365 Business Premium.
+  - question: هل هناك حد أقصى لم عدد Microsoft 365 Business Premium التي يمكن للعميل الحصول عليها؟
+    answer: >
+      تم تصميم Microsoft 365 Business Premium للشركات الصغيرة والمتوسطة الحجم مع متطلبات تعقيد تكنولوجيا المعلومات المنخفضة إلى المتوسطة. يمكن للعملاء شراء ما يصل إلى 300 ترخيص Microsoft 365 Business Premium لمؤسستهم. يمكن للعملاء خلط الاشتراكات السحابية ومطابقتها. ونتيجة لذلك، اعتمادا على متطلبات تكنولوجيا المعلومات الخاصة بهم، يمكن للعملاء إضافة تراخيص Microsoft 365 Enterprise إلى الحساب نفسه.
+
+
+      عندما يفكر العملاء في بيئة تتكون من أنواع اشتراكات متعددة، يجب عليهم العمل مع مستشاري تكنولوجيا المعلومات الموثوق بهم لتحديد أفضل طريقة لإدارة وتأمين الاشتراكات المختلفة Microsoft 365 Business Premium، Microsoft 365 Enterprise استخدام قدرات مختلفة لتأمين وإدارة التطبيقات والبيانات.
+  - question: هل يمكنني الجمع بين Microsoft 365 Business Premium وعروض اشتراك Microsoft الأخرى؟
+    answer: نعم، يمكن للعملاء دمج اشتراكاتهم Microsoft 365 Business Premium مع الخطط والوظائف الإضافية من Azure و Dynamics 365 و Enterprise Mobility + Security و Office 365.
+  - question: هل جميع الأشخاص في عملي مطالبون باشتراك Microsoft 365 Business Premium؟
+    answer: >
+      لا، لا يحتاج الجميع إلى اشتراك Microsoft 365 Business Premium، على الرغم من أن مزايا الأمان والإدارة متوفرة فقط لهؤلاء المستخدمين الذين لديهم أجهزة مدارة باشتراك Microsoft 365 Business Premium.
+
+
+      يساعد توحيد بيئة تكنولوجيا المعلومات على تقليل تكاليف الصيانة والأمان بمرور الوقت وهو الحالة التي يجب على الشركات أن تسعى جاهدة لتحقيقها. ومع ذلك، ندرك أن بعض العملاء الصغيرة والمتوسطة الحجم يقومون بتحديث برامجهم بشكل أساسي عند ترقية أجهزتهم، على مدى فترة طويلة. يمكن للشركات نشر Premium إلى جزء من مؤسستها، ولكن من أجل أفضل حماية لبيانات الأعمال الحساسة وتجارب التعاون المتناسقة، يوصى بالنشر لجميع المستخدمين.
+  - question: كيف يمكنني معرفة ما إذا كانت الأجهزة والبرامج التي أقوم بتشغيلها اليوم متوافقة مع Microsoft 365 Business Premium؟
+    answer: >
+      إذا كان الجهاز الذي تقوم بتشغيله اليوم يعمل Windows 7 Pro أو أحدث، فمن المحتمل أن يلبي الحد الأدنى من متطلبات Microsoft 365 Business Premium. تتطلب بعض ميزات Windows 10 مثل Cortana Windows Hello والتعددية أجهزة معينة متوفرة فقط على أجهزة الكمبيوتر الأحدث. راجع [متطلبات نظام Windows 10 Pro](https://www.microsoft.com/windows/windows-10-specifications) للحصول على التفاصيل.
+
+
+      يعد توافق تطبيق سطح المكتب (Win32) الموجود قويا في Windows 10، حيث تعمل معظم التطبيقات الموجودة دون أي تغييرات. يجب على العملاء ومستشارين تكنولوجيا المعلومات الموثوق بهم قراءة عملية اختبار التطبيق الموصى بها [للتوافق Windows 10](/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process) ومراجعة [متطلبات النظام Office](https://products.office.com/office-system-requirements#subscription-plans-section) لضمان الانتقال السلس إلى Microsoft 365 Business Premium.
+  - question: ما هو Windows 10 Business؟
+    answer: >
+      Windows 10 Business هي مجموعة من الخدمات السحابية وقدرات إدارة الأجهزة التي تكمل Windows 10 Pro وتمكن الإدارة المركزية وعناصر التحكم الأمنية Microsoft 365 Business Premium.
+
+
+      تأتي Windows 10 Business أيضا مع بعض ميزات Microsoft Defender المتميزة مثل الوصول إلى المجلدات الخاضعة للرقابة وحماية الشبكة للتهديدات المستندة إلى الويب. كما يتضمن Windows AutoPilot، وهي خدمة تسهل نشر أجهزة كمبيوتر Windows 10 جديدة.
+
+
+      إذا كان لديك أجهزة مرخصة ل Windows 7 و8 و8.1 Professional، فإن Microsoft 365 Business Premium يوفر ترقية إلى Windows 10 Pro، وهو الشرط الأساسي لنشر Windows 10 Business.
+
+      > [!IMPORTANT]
+
+      > تحتاج إلى توفير مفتاح المنتج الأصلي عند الترقية، وإلا فلن تعمل الترقية.
+  - question: كيف يساعد Microsoft 365 Business Premium في دعم نهج إحضار جهازك الخاص (BYOD)؟
+    answer: >
+      يفضل العديد من الموظفين استخدام هواتفهم المحمولة أو أجهزة الكمبيوتر اللوحية الخاصة بهم للوصول إلى المعلومات الشخصية ومعلومات العمل بدلا من حمل أجهزة متعددة لكل غرض. إن استخدام الأجهزة الشخصية للعمل، على الرغم من أنه شائع، يزيد من خطر أن تكون معلومات الأعمال في نهاية المطاف في أيد غير صحيحة. تتطلب العديد من حلول حماية بيانات الأجهزة المحمولة المنافسة من المستخدمين التبديل إلى وضع معين على أجهزتهم أو استخدام آلية معقدة أخرى قد يجدها المستخدمون تدخلية وبالتالي تجنب استخدامها.
+
+
+      يوفر Microsoft 365 Business Premium للعملاء وسيلة بسيطة ولكنها قوية لتمكين الموظفين من استخدام أجهزتهم الشخصية للعمل مع تزويد الشركة بالقدرة على منع تلك الأجهزة من الوصول إلى معلومات العمل و/أو الاحتفاظ بها و/أو مشاركتها. وبشكل أكثر تحديدا:
+
+
+      - تساعد **حماية التطبيقات لتطبيقات الأجهزة المحمولة Office** على حماية بيانات Office، بما في ذلك البريد الإلكتروني والتقويم وجهات الاتصال والمستندات على الأجهزة المحمولة التي تعمل بنظامي التشغيل iOS وAndroid، من خلال فرض نهج مثل حذف بيانات العمل تلقائيا بعد فترة زمنية محددة من عدم الاتصال بالخدمة، مما يتطلب تخزين هذه المعلومات فقط في OneDrive for Business ، يتطلب التحقق من رقم التعريف الشخصي /بصمة الإصبع للوصول إلى تطبيقات Office، ومنع نسخ بيانات الشركة من تطبيق Office إلى تطبيقات شخصية. تتوفر أيضا إدارة تطبيقات الأجهزة المحمولة لتطبيقات الأجهزة المحمولة الأخرى من خلال Intune لمشتركي Microsoft 365 Business Premium.
+
+
+      - يسمح **إدارة الجهاز لأجهزة الكمبيوتر الشخصية Windows 10** للشركات باختيار تعيين قدرات وفرضها مثل الحماية برنامج الحماية من الفيروسات من Microsoft Defender للبرامج الضارة والتحديثات التلقائية وإيقاف تشغيل الشاشات بعد فترة زمنية محددة. بالإضافة إلى ذلك، يمكن مسح أجهزة Windows 10 المفقودة أو المسروقة بالكامل من تطبيقات الأعمال والبيانات من خلال مركز الإدارة.
+
+
+      - **يساعد إدارة الجهاز ل iOS وAndroid & ميزات macOS** الشركات على إدارة نظام بيئي للأجهزة المتنوعة بشكل آمن يتضمن أجهزة iOS وAndroid Windows وmacOS.
+  - question: كيف تساعد Microsoft 365 Business Premium في حماية أجهزة الكمبيوتر في مؤسستي من الهجمات الضارة؟
+    answer: >
+      تتم حماية أجهزة الكمبيوتر التي تتم إدارتها باستخدام Microsoft 365 Business Premium باستخدام برنامج الحماية من الفيروسات من Microsoft Defender، وهو "لا". ميزة الحماية من الفيروسات على Windows 10، ما يحمي المزيد من أجهزة الكمبيوتر من الفيروسات والبرامج الضارة وبرامج التجسس والتهديدات الأخرى أكثر من أي حل آخر. باستخدام Microsoft 365 Business Premium، يمكن للمؤسسات ضمان تشغيل الحماية برنامج الحماية من الفيروسات من Microsoft Defender وتحديثها دائما على جميع أجهزتها Windows 10.
+
+
+      تتضمن Windows 10 Business أيضا الحماية من مخاطر الهجمات من Microsoft Defender، وهي مجموعة جديدة من قدرات منع الاختراق. إحدى ميزاته، الوصول المتحكم به إلى المجلدات، يوقف برامج الفدية الضارة عن طريق تأمين المجلدات ومنع التطبيقات غير المصرح بها من الوصول إلى الملفات المهمة للمستخدم.
+  - question: ما الفرق بين Microsoft 365 Business Standard Microsoft 365 Business Premium Microsoft 365 Enterprise؟
+    answer: >
+      لدى Microsoft العديد من عروض إدارة الإنتاجية والأمان التي قد يأخذها العملاء من صغيرة إلى متوسطة الحجم في الاعتبار عند ترقية البنية الأساسية لسطح المكتب والأجهزة، كل منها يجلب ميزات ووظائف قوية بشكل متزايد.
+
+
+      **يوفر Microsoft 365 Business Standard** أفضل إنتاجية في فئتها مع تطبيقات وخدمات Office 365، ولكنه لا يتضمن قدرات حماية التطبيقات وإدارة الأجهزة Microsoft 365 Business Premium.
+
+
+      **يجمع Microsoft 365 Business Premium** بين تطبيقات وخدمات Office 365 وقدرات أمان متقدمة للمساعدة في حماية أعمالك من التهديدات الإلكترونية المتقدمة وحماية بياناتك وإدارة أجهزتك. ويتضمن وحدة تحكم إدارة مبسطة يمكن من خلالها إدارة نهج الجهاز والبيانات. يمكن تقديم أفضل خدمة للعديد من الشركات الصغيرة والمتوسطة الحجم مع Microsoft 365 Business Premium.
+
+
+      **Microsoft 365 Enterprise** هي مجموعة من خطط الترخيص التي توفر مستويات متزايدة من الامتثال وإدارة الأمان عبر Microsoft 365 Business Premium وقد تم تصميمها لعملاء المؤسسات والعملاء الذين لديهم أكثر من 300 مستخدم. بالإضافة إلى ذلك، توفر خطط Microsoft 365 Enterprise وظائف إضافية، بما في ذلك أدوات المعلومات المهنية والتحليلات.
+  - question: هل يمكنني تبديل خطتي Office 365 إلى Microsoft 365 Business Premium؟
+    answer: نعم، يمكن للعملاء تبديل خططهم من خطة Office 365 مؤهلة إلى Microsoft 365 Business Premium. اعتمادا على خطة العميل الحالية، قد يكون هناك انخفاض أو زيادة في الرسوم الشهرية.
+  - question: في أي المناطق Microsoft 365 Business Premium متوفرة؟
+    answer: >
+      يتوفر Microsoft 365 Business Premium لجميع الشركاء والعملاء حيث يتوفر Office 365. راجع قائمة [Office 365 التوفر الدولي للغات والبلدان والمناطق](https://products.office.com/business/international-availability).
+  - question: هل هناك إصدار تجريبي Microsoft 365 Business Premium قد أستخدمه لتقييم العرض؟
+    answer: يتوفر إصدار تجريبي Microsoft 365 Business Premium ل CSPs. سيتوفر إصدار تجريبي للعملاء المباشرين لاحقا.
+  - question: ما الذي يجب أن يعرفه العملاء والشركاء قبل تشغيل Microsoft 365 Business Premium داخل مؤسستهم؟
+    answer: >
+      يجب أن يعمل العملاء الذين يرغبون في تجربة القدرات الكاملة Microsoft 365 Business Premium Windows 7 أو 8.1 أو 10 Pro <sup>2</sup> على أسطح المكتب الموجودة. يجب أن تقوم أجهزة الكمبيوتر Windows 10 Pro الموجودة بتشغيل "تحديث المبدعين" إذا لم تكن قد فعلت ذلك بالفعل.
+- name: نشر
+  questions:
+  - question: ما الذي يجب على العملاء مراعاته عند التخطيط لنشر Microsoft 365 Business Premium؟
+    answer: >
+      المسار الأكثر مباشرة لنشر Microsoft 365 Business Premium ناجح هو التفاعل مع شريك Microsoft. يتمتعون بتدريب وخبرة واسعة مع مجموعة واسعة من سيناريوهات العملاء، كما أنهم مجهزون بشكل أفضل لفهم بيئتك واحتياجاتك.
+  - question: هل تتضمن Microsoft 365 Business Premium القدرات الكاملة Microsoft Intune؟
+    answer: نعم، Microsoft 365 Business Premium المشتركين مرخصين لاستخدام قدرات Intune الكاملة لنظام التشغيل iOS وAndroid وmacOS وغيرها من إدارة الأجهزة عبر النظام الأساسي. يمكن إدارة الميزات غير المتوفرة في وحدة تحكم الإدارة المبسطة في Microsoft 365 Business Premium، مثل إدارة تطبيقات الجهات الخارجية وتكوين ملفات تعريف Wi-Fi وشهادات VPN في وحدة تحكم Intune الكاملة.
+  - question: هل يأتي Azure Active Directory (Azure AD) Premium P1 مع Microsoft 365 Business Premium؟
+    answer: نعم، Azure AD Premium P1 مضمن مع Premium Microsoft Business.
+  - question: هل تسمح Microsoft 365 Business Premium للعملاء بإدارة أجهزة Mac؟
+    answer: يساعدك Intune على إدارة أجهزة iOS وAndroid Windows وmacOS بأمان.
+  - question: ما هو Windows AutoPilot؟
+    answer: >
+      Windows AutoPilot هي خدمة تبسط نشر أجهزة الكمبيوتر Windows 10 الجديدة. يمكن إجراء هذه العملية عندما يقوم المستخدم النهائي بتسجيل الدخول إلى Microsoft 365 Business Premium لأول مرة&mdash; من خلال تكنولوجيا المعلومات التي تقوم بلمس الجهاز&mdash; من خلال الاستفادة من عناصر التحكم في الإدارة المركزية Microsoft 365 Business Premium. يمكنك أيضا استخدام Windows AutoPilot لأجهزة الكمبيوتر الموجودة التي تعمل Windows 10 Professional Creators Update (أو أحدث) وتم إعادة تعيين المصنع. يمكن العثور على تفاصيل حول Windows AutoPilot في [منشور مدونة يونيو 2017 هذا](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/).
+- name: التوافق
+  questions:
+  - question: هل يمكنني إضافة Office 365 الوظائف الإضافية إلى Microsoft 365 Business Premium؟
+    answer: يمكن إضافة كافة الوظائف الإضافية التي يمكن إضافتها إلى Microsoft 365 Business Standard إلى Microsoft 365 Business Premium. وهذا يعني أنه يمكنك شراء أمان التطبيقات على السحابة لـ Office 365 والامتثال المتقدم وتحليل ذكي للمخاطر وMyAnalytics Power BI Pro والمؤتمرات الصوتية.
+  - question: هل يمكنني إضافة نظام الهاتف وخطط الاتصال إلى Microsoft 365 Business Premium؟
+    answer: >
+      نعم، يمكنك شراء اشتراك Business Voice. [Business Voice](/microsoftteams/business-voice/whats-business-voice) هو حل هتفية مصمم للشركات الصغيرة والمتوسطة التي يصل عددها إلى 300 مستخدم ويجمع نظام الهاتف والمؤتمرات الصوتية وخطة مكالمات محلية والمزيد. تتضمن نظام الهاتف القدرات التي ستحصل عليها البريد الصوتي ومعرف المتصل وحديقة المكالمات وإعادة توجيه المكالمات والردود التلقائية وقوائم انتظار المكالمات. <br> لمعرفة ما إذا كان Business Voice متوفرا في بلدك أو منطقتك، راجع [البلد والمنطقة المتوفرة ل Business Voice](/microsoftteams/business-voice/country-region-availability). للحصول على معلومات التسعير، راجع [Pricing for Business Voice](https://go.microsoft.com/fwlink/?linkid=2127221).
+  - question: هل يمكن للعملاء Microsoft 365 Business Premium استخدام Microsoft Defender لنقطة النهاية؟
+    answer: >
+      نعم، تتوفر Microsoft Defender لنقطة النهاية كوظيفة إضافية Microsoft 365 Business Premium عند شرائها من [موفر حلول الحوسبة السحابية من Microsoft](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).
+- name: فرصة الشريك
+  questions:
+  - question: أين يمكنني معرفة المزيد حول الفرص والفوائد في أن أصبح شريك Microsoft؟
+    answer: >
+      يمكن لموفري خدمات تكنولوجيا المعلومات الذين ليسوا شركاء Microsoft بالفعل معرفة المزيد حول برنامج موفر حلول الحوسبة السحابية من Microsoft في <https://partner.microsoft.com/membership/cloud-solution-provider>.
+  - question: أين يمكنني معرفة كيفية بيع Microsoft 365 Business Premium؟
+    answer: >
+      يمكن للشركاء الذين يبيعون Office 365 الآن استخدام نفس أساليب البيع الاستشارية لبيع Microsoft 365 Business Premium. بالإضافة إلى ذلك، نقدم المزيد من الموارد والتدريب لفريق المبيعات لفهم بيئة سطح المكتب الحالية للعملاء، واحتياجات الاعتماد على Active Directory والتنقل والأمان لتوصيل القيمة الكاملة Microsoft 365 Business Premium بشكل فعال بطريقة ذات صلة بالعميل. ابحث عن هذه الموارد على مدخل شريك Office في <https://www.microsoft.com/microsoft-365/partners>.
+  - question: كيف يمكن Microsoft 365 Business Premium مساعدة الشركاء على زيادة الربحية؟
+    answer: >
+      سيساعد Microsoft 365 Business Premium الشركاء على تقليل التكاليف من خلال كفاءات تشغيلية أكبر وتعزيز الإيرادات من خلال بيع خدمات إضافية. توضح دراسة Forrester Research، دراسة التأثير الاقتصادي الإجمالي (TEI) Microsoft 365 Business Premium، يونيو 2017 (https://www.microsoft.com/microsoft-365/partners/PartnerTEI)يونيو 2017، أن Microsoft 365 Business Premium سيكون له تأثير إيجابي على ربحية الشركاء.
+
+
+      في دراسة شركاء TEI أبلغوا عن أنه مع Microsoft 365 Business Premium يتوقعون ما يلي:
+
+
+      - زيادة بنسبة 20٪نقطة في \[إيرادات الخدمات الاستشارية والنشر لمرة\] واحدة
+
+      - زيادة بنسبة 10٪نقطة في معدل إرفاق الخدمات المدارة
+
+      - زيادة بنسبة 8٪نقطة في هوامش أرباح الخدمات المدارة الاستشارية والمستمرة \[\] (من انخفاض التكاليف)
+  - question: ما الموارد المتاحة للشركاء لبيع Microsoft 365 Business Premium ونشرها ودعمها؟
+    answer: >
+      توفر Microsoft مجموعة واسعة من الموارد لشركاء CSP لتسويق Microsoft 365 Business Premium وبيعها ودعمها. يمكن العثور عليها في <https://www.microsoft.com/microsoft-365/partners>.
+  - question: ما هي فرص البيع التي Microsoft 365 Business Premium تعطيها للشركاء؟
+    answer: >
+      يسمح Microsoft 365 Business Premium للشركاء بالحفاظ على منصب مستشارهم الموثوق به مع العملاء من خلال إنشاء نظام أساسي قوي وآمن لبيع خدمات إضافية وترقية المنتجات والخدمات الحالية. يوفر Microsoft 365 Business Premium فرصة لإجراء مناقشة حول الترقية مع العملاء الذين يستخدمون الآن Exchange Server أو Exchange Online أو Microsoft 365 Business Basic. قد يحصل الشركاء أيضا على المزيد من الإيرادات من زيادة الخدمات المدارة و/أو رسوم الدعم من الشركاء.
+
+
+      مع ميزة autoPilot Windows الجديدة المضمنة في Microsoft 365 Business Premium، سيجد الشركاء الذين احجموا عن بيع أجهزة Windows جديدة بسبب لوجستيات التوزيع والتكاليف هذه الفرصة أكثر جاذبية. ومن المرجح أيضا أن يستثمر العملاء الذين يثقون في أمان أجهزتهم المحلية والأجهزة المحمولة في المزيد من الخدمات، مثل Dynamics 365.
+  - question: هل يجب على الشركاء بيع Microsoft 365 Business Premium عبر خطط أخرى من Microsoft؟
+    answer: يجب أن تبيع موفر حلول الحوسبة السحابية من Microsoft دائما الخطة التي تناسب احتياجات أعمال العملاء والميزانية بشكل أفضل. على سبيل المثال، إذا كان يتعين على العميل الامتثال للوائح الخصوصية والأمان، فقد يقوم موفر الخدمات المشتركة (CSP) ببيع Microsoft 365 Business Premium بالإضافة إلى أي وظائف إضافية تساعد العميل على تلبية متطلباته أو قد يقترح الأمان والإدارة المتقدمة التي توفرها وحدات SKU Microsoft 365 Business Enterprise.
+  - question: لدى بعض عملائي أجهزة غير أصلية؛ هل Microsoft 365 Business Premium جعل هذه الأجهزة أصلية؟
+    answer: Microsoft 365 Business Premium لا يجعل إصدارا غير أصلي من Windows، نسخة أصلية. يوفر Microsoft 365 Business Premium ميزة ترقية تسمح لهؤلاء العملاء الذين يشغلون Windows 7 أو 8 أو 8.1 Pro بالترقية إلى أحدث إصدار أصلي من Windows 10 Pro.
+  - question: ما هو القانون العام لحماية البيانات وكيف تساعد Microsoft 365 Business Premium العملاء في التزامات الامتثال الخاصة بهم؟
+    answer: >
+      القانون العام لحماية البيانات (GDPR) هو قانون خصوصية جديد شامل يمنح المقيمين في الاتحاد الأوروبي (EU) تحكما أكبر في "بياناتهم الشخصية" ويتطلب من المؤسسات الحفاظ على سلامة تلك البيانات الشخصية. يتطلب القانون العام لحماية البيانات من المؤسسات التي تتحكم في البيانات الشخصية المرتبطة بالمقيمين في الاتحاد الأوروبي أو تعالجها أن تستخدم فقط معالجات بيانات تابعة لجهات خارجية تفي بمتطلبات القانون العام لحماية البيانات (GDPR) لمعالجة البيانات الشخصية. في مارس 2017، قدمت Microsoft ضمانات تعاقدية توفر هذه الضمانات. يجب على العملاء الذين لديهم أسئلة حول كيفية مساعدة Microsoft في الوفاء بالتزاماتهم الإضافية بموجب القانون العام لحماية البيانات التعرف على قدرات التوافق والأمان المتقدمة المتاحة في Microsoft 365 Business Premium (على سبيل المثال، Azure حماية البيانات، ومنع فقدان البيانات، Defender لـ Office 365 ، وهكذا) وفي مجموعات أخرى (على سبيل المثال، Microsoft 365 Enterprise E5). لمعرفة المزيد، تفضل بزيارة [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
+additionalContent: >-
+  ## <a name="footnotes"></a>الحواشي السفليه
+
+  **1** متوفر في الولايات المتحدة والمملكة المتحدة وكندا.
+
+  **2** الأجهزة التي تعمل Windows 7 أو 8.1 Pro مؤهلة للترقية إلى Windows 10 Pro ضمن معاينة Microsoft 365 Business Premium.

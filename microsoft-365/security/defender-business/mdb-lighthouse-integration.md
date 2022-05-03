@@ -1,40 +1,39 @@
 ---
 title: Microsoft 365 Lighthouse و Microsoft Defender for Business
-description: تعرف على كيفية تكامل Microsoft Defender for Business مع Microsoft 365 Lighthouse
+description: تعرف على كيفية تكامل Microsoft Defender for Business مع Microsoft 365 Lighthouse، وهو حل أمان لشركاء Microsoft.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 7068d74cf1ca91e0c6584552f833f4704eab8173
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 6dcc0ad7d03031ed0cc41aadeba901eff666943b
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862797"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174198"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business"></a>Microsoft 365 Lighthouse و Microsoft Defender for Business
 
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 ## <a name="microsoft-defender-for-business-integrates-with-microsoft-365-lighthouse"></a>يتكامل Microsoft Defender for Business مع Microsoft 365 Lighthouse
 
-إذا كنت موفر حلول الحوسبة السحابية من Microsoft (CSP) ولديك [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)، يمكنك إدارة الأمان لعملائك (الشركات الصغيرة والمتوسطة الحجم). تم تصميم Microsoft Defender for Business للتكامل مع Microsoft 365 Lighthouse. عندما تصبح هذه الإمكانات متوفرة، ستتمكن من عرض حوادث الأمان عبر المستأجرين في مدخل Lighthouse Microsoft 365 الخاص بك ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
+إذا كنت موفر حلول الحوسبة السحابية من Microsoft (CSP) ولديك [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)، يمكنك إدارة الأمان لعملائك (الشركات الصغيرة والمتوسطة الحجم). تم تصميم Microsoft Defender for Business للتكامل مع Microsoft 365 Lighthouse، بحيث يمكنك عرض حوادث الأمان عبر المستأجرين في مدخل Lighthouse Microsoft 365 الخاص بك ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
 
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="لقطة شاشة لقائمة الحوادث في Microsoft 365 Lighthouse":::
 
 للوصول إلى قائمة الحوادث، في Microsoft 365 Lighthouse، في الصفحة الرئيسية، ابحث عن بطاقة **أحداث الأمان**، ثم حدد **عرض جميع الحوادث**.
+
+> [!IMPORTANT]
+> لا تزال الإمكانات قيد الطرح. إذا لم يكن لديك هذه القدرات حتى الآن، يجب أن يكون لديك قريبا.
 
 ## <a name="learn-more-about-microsoft-365-lighthouse"></a>تعرف على المزيد حول Microsoft 365 Lighthouse
 

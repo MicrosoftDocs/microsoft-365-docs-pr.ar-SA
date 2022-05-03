@@ -14,19 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e5d2b2bd47ba30aaf152171605947bb9a627480
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1f387696797d52805495777be0850ebe135fd38a
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666339"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65173105"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>التحقيق في الكيانات على الأجهزة باستخدام الاستجابة المباشرة
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -165,7 +165,7 @@ ms.locfileid: "64666339"
 | اتصالات  | إظهار كافة الاتصالات النشطة.  | Y  | N  | N  |
 | دير  | يعرض قائمة بالملفات والدلائل الفرعية في دليل.  | Y  | Y  | Y  |
 | برامج تشغيل  | إظهار كافة برامج التشغيل المثبتة على الجهاز.  | Y  | N  | N  |
-| جي `<command ID>`  | ضع المهمة المحددة في المقدمة في المقدمة، مما يجعلها المهمة الحالية.  ملاحظة: يأخذ fg "معرف الأمر" المتوفر من المهام، وليس PID  | Y  | Y  | Y  |
+| جي `<command ID>`  | ضع المهمة المحددة في المقدمة، مما يجعلها المهمة الحالية.  ملاحظة: يأخذ fg "معرف الأمر" المتوفر من المهام، وليس PID  | Y  | Y  | Y  |
 | fileinfo  | الحصول على معلومات حول ملف.  | Y  | Y  | Y  |
 | البحث عن ملف  | تحديد موقع الملفات بواسطة اسم معين على الجهاز.  | Y  | Y  | Y  |
 | <file_path> getfile  | تنزيل ملف.  | Y  | Y  | Y  |
@@ -332,7 +332,7 @@ processes > output.txt
 
 حدد علامة تبويب **سجل الأوامر** للاطلاع على الأوامر المستخدمة على الجهاز أثناء جلسة العمل. يتم تعقب كل أمر بتفاصيل كاملة مثل:
 
-- معرف
+- المعرّف
 - سطر الأوامر
 - مده
 - شريط جانبي للحالة والإخراج أو الإخراج
@@ -346,7 +346,7 @@ processes > output.txt
 - يمكن أن يكون الجهاز في جلسة واحدة فقط في كل مرة.
 - تنطبق حدود حجم الملف التالية:
   - `getfile` الحد: 3 غيغابايت
-  - `fileinfo` الحد: 10 غيغابايت
+  - `fileinfo` الحد: 30 غيغابايت
   - `library` الحد: 250 ميغابايت
 
 ## <a name="related-article"></a>مقالة ذات صلة

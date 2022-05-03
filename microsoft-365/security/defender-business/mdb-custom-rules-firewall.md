@@ -1,33 +1,28 @@
 ---
 title: إدارة القواعد المخصصة لنهج جدار الحماية في Microsoft Defender for Business
-description: توفر القواعد المخصصة استثناءات لنهج جدار الحماية. يمكنك استخدام قواعد مخصصة لحظر اتصالات معينة أو السماح بها في Microsoft Defender for Business
+description: توفر القواعد المخصصة استثناءات لنهج جدار الحماية. يمكنك استخدام قواعد مخصصة لحظر اتصالات معينة أو السماح بها في Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ae409f1196b01b774d9e73d45d16868bff1c904b
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: acc183abcbae89cd952011cfc637161bb409a95f
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861697"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174514"
 ---
 # <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>إدارة القواعد المخصصة لنهج جدار الحماية في Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
 
 تتضمن Microsoft Defender for Business نهج جدار الحماية التي تساعد على حماية أجهزتك من نسبة استخدام الشبكة غير المرغوب فيها. يمكنك استخدام القواعد المخصصة لتعريف الاستثناءات لنهج جدار الحماية. أي، يمكنك استخدام قواعد مخصصة لحظر اتصالات معينة أو السماح بها.
 

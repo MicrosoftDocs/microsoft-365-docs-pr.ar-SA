@@ -1,13 +1,12 @@
 ---
 title: عرض النهج أو تحريرها في Microsoft Defender for Business
-description: تعرف على كيفية عرض نهج الحماية من الجيل التالي وتحريرها وإنشاءها وحذفها في Microsoft Defender for Business
+description: تعرف على كيفية عرض نهج الأمان عبر الإنترنت وتحريرها وإنشاءها وحذفها في Defender for Business. حماية أجهزتك باستخدام نهج الأمان.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -17,17 +16,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ba7f6846809009b8bb9df258b8ac18536a910b6d
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 85845ec12b8ad43abe965e277f8ea3f6c67e1d7d
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862115"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174186"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>عرض النهج أو تحريرها في Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 في Microsoft Defender for Business، يتم تكوين إعدادات الأمان من خلال النهج التي يتم تطبيقها على الأجهزة. للمساعدة في تبسيط تجربة الإعداد والتكوين، يتضمن Defender for Business نهج تم تكوينها مسبقا للمساعدة في حماية أجهزة شركتك بمجرد إلحاقها. يمكنك استخدام النهج الافتراضية أو تحرير النهج أو إنشاء نهج خاصة بك.
 

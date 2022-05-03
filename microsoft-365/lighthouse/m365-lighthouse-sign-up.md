@@ -1,5 +1,5 @@
 ---
-title: التسجيل للحصول على Microsoft 365 المنارة
+title: التسجيل للحصول على Microsoft 365 Lighthouse
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -16,56 +16,56 @@ ms.custom:
 - M365-Lighthouse
 - intro-get-started
 search.appverid: MET150
-description: بالنسبة لموفري الخدمات المدارة (MSPs)، تعرف على كيفية التسجيل للحصول على Microsoft 365 المنارة.
-ms.openlocfilehash: 25ad88edc63d53e3c9110062a64285bbb759a775
-ms.sourcegitcommit: 2bbccbcffce3ea6d10ea6d307349874eafb21339
+description: بالنسبة لموفري الخدمات المدارة (MSPs)، تعرف على كيفية التسجيل للحصول على Microsoft 365 Lighthouse.
+ms.openlocfilehash: 8d845ed454a672b1480ca0b6fe6f471cc30a37a6
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64645169"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172190"
 ---
-# <a name="sign-up-for-microsoft-365-lighthouse"></a>التسجيل للحصول على Microsoft 365 المنارة
+# <a name="sign-up-for-microsoft-365-lighthouse"></a>التسجيل للحصول على Microsoft 365 Lighthouse
 
-توفر هذه المقالة إرشادات حول كيفية التسجيل للحصول على Microsoft 365 المنارة. Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين الأجهزة والبيانات والمستخدمين وإدارتهم على نطاق واسع لعملاء الشركات الصغيرة والمتوسطة الحجم الذين يستخدمون Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business. 
+توفر هذه المقالة إرشادات حول كيفية التسجيل في Microsoft 365 Lighthouse. Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع لعملاء الأعمال الصغيرة والمتوسطة الحجم (SMB). 
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-- Microsoft 365 يتم نشر "&mdash;المنارة" في المستأجر الشريك فقط في مستأجري العملاء، ولكن تأكد من أن مستأجري العملاء يلبيون المتطلبات المذكورة [في Microsoft 365 المنارة](m365-lighthouse-requirements.md).
+- يتم نشر Microsoft 365 Lighthouse في المستأجر الشريك ليس فقط&mdash; في مستأجري العملاء، ولكن تأكد من أنك أنت ومستأجرو العملاء يستوفون المتطلبات المدرجة في [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-- يجب أن تكون مسؤولا عالميا في نطاق المستأجر الشريك الذي تقوم تسجيل الدخول له.
+- يجب أن تكون مسؤولا عاما في مستأجر الشريك الذي تقوم بتسجيل الدخول إليه.
 
-## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>خطوات التسجيل للحصول على Microsoft 365 المنارة
+## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>خطوات التسجيل للحصول على Microsoft 365 Lighthouse
 
-1. انتقل إلى مركز مسؤولي Microsoft 365 تسجيل الدخول <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> باستخدام بيانات اعتماد المستأجر الشريك. 
+1. انتقل إلى مركز مسؤولي Microsoft 365 وسجل <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> الدخول باستخدام بيانات اعتماد مستأجر الشريك. 
 
 1. انتقل إلى **BillingPurchase** >  **ServicesOther** >  Services.
 
-    إذا Microsoft 365 لم تكن "المنارة" في قائمة الخدمات، فحدد **مشاهدة جميع منتجات الخدمات الأخرى**.
+    إذا لم يكن Microsoft 365 Lighthouse في قائمة الخدمات، فحدد **"راجع جميع منتجات الخدمات الأخرى**".
 
-    إذا واجهت صفحة الخطأ خدمات الشراء، فحدد **عرض المنتجات** في أسفل الصفحة.
+    إذا واجهت صفحة خطأ خدمات الشراء، فحدد **عرض المنتجات** في أسفل الصفحة.
 
-1. ضمن **Microsoft 365 المنارة،** حدد **التفاصيل**. 
+1. ضمن **Microsoft 365 Lighthouse**، حدد **Details**. 
 
-1. حدد **شراء**.
-
-    > [!NOTE]
-    > تتطلب المنارة ترخيصا واحدا للمستأجر الشريك فقط. لا يلزم الحصول على تراخيص إضافية لكل مستخدم بالنسبة إلى الشريك، ولا يلزم الحصول على تراخيص المنارة في أي مستأجر عميل. 
-
-    للتحقق من أن "المنارة" قد تم إضافتها بنجاح إلى المستأجر، ابحث عن Microsoft 365 المنارة ضمن الفوترة > **منتجاتك** في مركز مسؤولي Microsoft 365.
-
-1. إذا لم يتم إعادة توجيهك إلى مدخل المنارة، فاذهب إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
-
-1. حدد **موافق & متابعة** إكمال تعديل اتفاقية الشريك.
+1. حدد **"شراء**".
 
     > [!NOTE]
-    > بعد إكمال التسجيل، قد يستغرق ظهور بيانات العملاء في المنارة ما يصل إلى 48 ساعة.
+    > تتطلب Lighthouse ترخيصا واحدا للمستأجر الشريك فقط. لا يلزم وجود تراخيص إضافية لكل مستخدم للشريك، ولا يلزم وجود تراخيص Lighthouse في أي مستأجر عميل. 
+
+    للتحقق من إضافة Lighthouse بنجاح إلى المستأجر الخاص بك، ابحث عن Microsoft 365 Lighthouse ضمن **Billing > Your Products** في مركز مسؤولي Microsoft 365.
+
+1. إذا لم تتم إعادة توجيهك إلى مدخل Lighthouse، فانتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
+
+1. حدد **"موافق" & متابعة** إكمال تعديل اتفاقية الشريك.
+
+    > [!NOTE]
+    > بعد إكمال التسجيل، قد يستغرق ظهور بيانات العميل في Lighthouse ما يصل إلى 48 ساعة.
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-[تكوين أمان Microsoft 365 المنارة](m365-lighthouse-configure-portal-security.md) 
+[تكوين أمان مدخل Lighthouse Microsoft 365](m365-lighthouse-configure-portal-security.md) 
 
-## <a name="related-content"></a>المحتوى ذي الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
-[نظرة عامة Microsoft 365 المنارة](m365-lighthouse-overview.md) (مقالة)   
-[Microsoft 365 الأسئلة الشائعة حول المنارة](m365-lighthouse-faq.yml) (مقالة)   
-[Microsoft 365 المنارة Microsoft Defender for Business](../security/defender-business/mdb-lighthouse-integration.md) (مقالة)
+[نظرة عامة على Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (مقال)   
+[الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)   
+[Microsoft 365 Lighthouse و Microsoft Defender for Business](../security/defender-business/mdb-lighthouse-integration.md) (مقالة)

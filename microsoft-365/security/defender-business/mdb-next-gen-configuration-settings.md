@@ -1,40 +1,36 @@
 ---
 title: فهم إعدادات تكوين الحماية من الجيل التالي في Microsoft Defender for Business
-description: فهم إعدادات التكوين لحماية الجيل التالي في Microsoft Defender for Business
+description: فهم إعدادات الحماية من الفيروسات والجيل التالي من الحماية في Defender for Business، وأمان نقطة النهاية للشركات الصغيرة والمتوسطة الحجم.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: eee272798be5396ad9ad15177fcd29a0180bc448
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 34cbd422cafe5c171f47e8e6470c4b12f9e1700d
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862709"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174470"
 ---
 # <a name="understand-next-generation-configuration-settings-in-microsoft-defender-for-business"></a>فهم إعدادات تكوين الجيل التالي في Microsoft Defender for Business
 
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
-
-تتضمن حماية الجيل التالي في Defender for Business الحماية القوية من الفيروسات والحماية من البرامج الضارة. تم تصميم نهجك الافتراضية لحماية أجهزتك والمستخدمين دون إعاقة الإنتاجية؛ ومع ذلك، يمكنك أيضا تخصيص نهجك لتناسب احتياجات عملك. وإذا كنت تستخدم إدارة نقاط النهاية من Microsoft، يمكنك استخدام ذلك لإدارة نهج الأمان الخاصة بك.
+تتضمن حماية الجيل التالي في Defender for Business الحماية القوية من الفيروسات والحماية من البرامج الضارة. تم تصميم نهجك الافتراضية لحماية أجهزتك والمستخدمين دون إعاقة الإنتاجية؛ ومع ذلك، يمكنك أيضا تخصيص نهجك لتناسب احتياجات عملك. وإذا كنت تستخدم Microsoft Intune، يمكنك استخدام مركز إدارة إدارة نقاط النهاية من Microsoft لإدارة نهج الأمان الخاصة بك.
 
 **تصف هذه المقالة**:
 
 - [إعدادات وخيارات الحماية من الجيل التالي](#next-generation-protection-settings-and-options)
 - [إعدادات أخرى تم تكوينها مسبقا في Defender for Business](#other-preconfigured-settings-in-defender-for-business) 
-- [الإعدادات الافتراضية ل Defender for Business إدارة نقاط النهاية من Microsoft](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
+- [الإعدادات الافتراضية ل Defender for Business Microsoft Intune](#defender-for-business-default-settings-and-microsoft-intune)
 
 ## <a name="next-generation-protection-settings-and-options"></a>إعدادات وخيارات الحماية من الجيل التالي
 
@@ -69,9 +65,9 @@ ms.locfileid: "64862709"
 - يتم التحقق من تحديثات معلومات الأمان قبل تشغيل فحص مكافحة الفيروسات ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
 - يتم إجراء عمليات التحقق من معلومات الأمان كل أربع ساعات ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
-## <a name="defender-for-business-default-settings-and-microsoft-endpoint-manager"></a>الإعدادات الافتراضية ل Defender for Business إدارة نقاط النهاية من Microsoft
+## <a name="defender-for-business-default-settings-and-microsoft-intune"></a>الإعدادات الافتراضية ل Defender for Business Microsoft Intune
 
-يصف الجدول التالي الإعدادات التي تم تكوينها مسبقا ل Defender for Business وكيف تتوافق هذه الإعدادات مع ما قد تراه في إدارة نقاط النهاية من Microsoft (أو Microsoft Intune). إذا كنت تستخدم [عملية التكوين المبسطة في Defender for Business](mdb-simplified-configuration.md) (معاينة)، فلن تحتاج إلى تحرير هذه الإعدادات.
+يصف الجدول التالي الإعدادات التي تم تكوينها مسبقا ل Defender for Business وكيف تتوافق هذه الإعدادات مع ما قد تراه في Intune (تتم إدارته في مركز إدارة إدارة نقاط النهاية من Microsoft). إذا كنت تستخدم [عملية التكوين المبسطة في Defender for Business](mdb-simplified-configuration.md)، فلن تحتاج إلى تحرير هذه الإعدادات.
 
 | اعداد  | الوصف  |
 |---------|---------|
@@ -96,6 +92,6 @@ ms.locfileid: "64862709"
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [زيارة مدخل Microsoft 365 Defender](mdb-get-started.md)
+- [تفضّل بزيارة مدخل Microsoft 365 Defender](mdb-get-started.md)
 - [إدارة إعدادات جدار الحماية في Microsoft Defender for Business](mdb-custom-rules-firewall.md)
 - [نهج موفر الخدمات المشتركة ( CSP ) - Defender](/windows/client-management/mdm/policy-csp-defender)

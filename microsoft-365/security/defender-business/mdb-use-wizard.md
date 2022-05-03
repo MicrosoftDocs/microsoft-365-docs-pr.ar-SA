@@ -1,34 +1,30 @@
 ---
 title: استخدام معالج الإعداد في Microsoft Defender for Business
-description: يتضمن Defender for Business عملية إعداد وتكوين تشبه المعالج. استخدم المعالج لتوفير الوقت والجهد.
+description: يسهل Defender for Business عملية الإعداد باستخدام معالج يقوم بتشغيل أول مرة تستخدم فيها Defender for Business. تعرف على كيفية عمل معالج الإعداد.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 04/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 697dfc567eb2719a6e81a7b57df321ba2af40911
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: 042f20cce0e0d30195ed241b376bf304abeaa2aa
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882297"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65172773"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>استخدام معالج الإعداد في Microsoft Defender for Business
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 تم تصميم Microsoft Defender for Business لتوفير الوقت والجهد للشركات الصغيرة والمتوسطة الحجم. على سبيل المثال، يمكنك إجراء الإعداد والتكوين الأوليين باستخدام معالج الإعداد. يرشدك معالج الإعداد من خلال منح حق الوصول إلى فريق الأمان وإعداد إعلامات البريد الإلكتروني لفريق الأمان الخاص بك وإعداد أجهزة Windows الخاصة بالشركة.
 
@@ -69,30 +65,30 @@ ms.locfileid: "64882297"
 
    [تعرف على المزيد حول الأدوار والأذونات](mdb-roles-permissions.md). 
 
-2. **إعداد إعلامات البريد الإلكتروني**. في هذه الخطوة، يمكنك إعداد إعلامات البريد الإلكتروني لفريق الأمان. بعد ذلك، عند إنشاء تنبيه أو اكتشاف ثغرة أمنية جديدة، لن يقوم فريق الأمان الخاص بك بذلك حتى لو كان بعيدا عن مكتبه. [تعرف على المزيد حول إعلامات البريد الإلكتروني](mdb-email-notifications.md). 
+2. **إعداد إعلامات البريد الإلكتروني**. في هذه الخطوة، يمكنك إعداد إعلامات البريد الإلكتروني لفريق الأمان. بعد ذلك، عند إنشاء تنبيه أو اكتشاف ثغرة أمنية جديدة، لن يفوت فريق الأمان الخاص بك ذلك حتى لو كان بعيدا عن مكتبه. [تعرف على المزيد حول إعلامات البريد الإلكتروني](mdb-email-notifications.md). 
 
 3. **إعداد أجهزة Windows وتكوينها**. في هذه الخطوة، يمكنك إلحاق أجهزة Windows الخاصة بشركتك إلى Defender for Business بسرعة. يساعد إلحاق الأجهزة على الفور على حماية هذه الأجهزة من اليوم الأول. 
 
-   - **إذا كنت تستخدم بالفعل إدارة نقاط النهاية من Microsoft** (بما في ذلك Microsoft Intune)، وكان لدى شركتك أجهزة مسجلة في إدارة نقاط النهاية، فستسأل عما إذا كنت تريد استخدام [الإلحاق التلقائي](#what-is-automatic-onboarding) لبعض أجهزة Windows المسجلة أو كلها . يقوم الإلحاق التلقائي بإعداد اتصال بين إدارة نقاط النهاية و Defender for Business، ثم إلحاق الأجهزة Windows إلى Defender for Business بسلاسة. 
-   - **إذا لم تكن تستخدم إدارة نقاط النهاية بالفعل**، يمكنك [إلحاق الأجهزة ب Defender for Business](mdb-onboard-devices.md). 
+   - **إذا كنت تستخدم Microsoft Intune بالفعل**، وكان لدى شركتك أجهزة مسجلة في Intune، فسيتم سؤالك عما إذا كنت تريد استخدام [الإلحاق التلقائي](#what-is-automatic-onboarding) لبعض أجهزة Windows المسجلة أو كلها. يقوم الإلحاق التلقائي بإعداد اتصال بين Intune و Defender for Business، ثم إلحاق الأجهزة Windows إلى Defender for Business بسلاسة. 
+   - **إذا لم تكن تستخدم Intune بالفعل**، يمكنك [إلحاق الأجهزة ب Defender for Business](mdb-onboard-devices.md). 
    
    [تعرف على المزيد حول إلحاق الأجهزة Microsoft Defender for Business](mdb-onboard-devices.md).
    
-4. **تكوين نهج الأمان الخاصة بك**. يتضمن Defender for Business نهج أمان افتراضية لحماية الجيل التالي وحماية جدار الحماية التي يمكن تطبيقها على أجهزة شركتك. تستخدم هذه النهج الافتراضية الإعدادات الموصى بها وهي مصممة لتوفير حماية قوية لأجهزتك. يمكنك أيضا إنشاء نهج الأمان الخاصة بك. وإذا كنت تستخدم إدارة نقاط النهاية بالفعل، يمكنك الاستمرار في استخدام ذلك لإدارة نهج الأمان الخاصة بك.
+4. **تكوين نهج الأمان الخاصة بك**. يتضمن Defender for Business نهج أمان افتراضية لحماية الجيل التالي وحماية جدار الحماية التي يمكن تطبيقها على أجهزة شركتك. تستخدم هذه النهج الافتراضية الإعدادات الموصى بها وهي مصممة لتوفير حماية قوية لأجهزتك. يمكنك أيضا إنشاء نهج الأمان الخاصة بك. وإذا كنت تستخدم Intune بالفعل، يمكنك الاستمرار في استخدام مركز إدارة إدارة نقاط النهاية من Microsoft لإدارة نهج الأمان الخاصة بك.
 
    [عرض نهج الأمان وإعداداتك وتحريرها](mdb-configure-security-settings.md).
 
 ## <a name="what-is-automatic-onboarding"></a>ما هو الإلحاق التلقائي؟
 
-الإلحاق التلقائي هو طريقة مبسطة لإلحاق أجهزة Windows إلى Defender for Business. يتوفر الإلحاق التلقائي فقط للأجهزة Windows المسجلة بالفعل في إدارة نقاط النهاية من Microsoft (أو Microsoft Intune). 
+الإلحاق التلقائي هو طريقة مبسطة لإلحاق أجهزة Windows إلى Defender for Business. يتوفر الإلحاق التلقائي فقط للأجهزة Windows المسجلة بالفعل في Microsoft Intune. 
 
-أثناء استخدام معالج الإعداد، سيكتشف النظام ما إذا كانت الأجهزة Windows مسجلة بالفعل في إدارة نقاط النهاية. سيتم سؤالك عما إذا كنت تريد استخدام الإلحاق التلقائي لجميع هذه الأجهزة أو بعضها. يمكنك إلحاق جميع الأجهزة Windows في وقت واحد، أو تحديد أجهزة معينة للبدء بها، ثم إضافة المزيد من الأجهزة لاحقا. 
+أثناء استخدام معالج الإعداد، سيكتشف النظام ما إذا كانت أجهزة Windows مسجلة بالفعل في Intune. سيتم سؤالك عما إذا كنت تريد استخدام الإلحاق التلقائي لجميع هذه الأجهزة أو بعضها. يمكنك إلحاق جميع الأجهزة Windows في وقت واحد، أو تحديد أجهزة معينة للبدء بها، ثم إضافة المزيد من الأجهزة لاحقا. 
 
 لإلحاق أجهزة أخرى، راجع [الأجهزة الملحقة Microsoft Defender for Business](mdb-onboard-devices.md).
 
 > [!TIP]
-> - نوصي بتحديد خيار "جميع الأجهزة المسجلة". وبهذه الطريقة، عندما يتم تسجيل أجهزة Windows في إدارة نقاط النهاية لاحقا، سيتم إلحاقها ب Defender for Business تلقائيا. 
-> - إذا كنت تدير نهج الأمان وإعداداته في إدارة نقاط النهاية، نوصي بالتبديل إلى مدخل Microsoft 365 Defender لإدارة أجهزتك وسياساتك وإعداداتك. لمعرفة المزيد، راجع [اختيار مكان إدارة نهج الأمان والأجهزة](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
+> - نوصي بتحديد خيار "جميع الأجهزة المسجلة". بهذه الطريقة، عند تسجيل Windows الأجهزة في Intune لاحقا، سيتم إلحاقها ب Defender for Business تلقائيا. 
+> - إذا كنت تدير نهج الأمان وإعداداته في مركز إدارة إدارة نقاط النهاية، نوصي بالتبديل إلى مدخل Microsoft 365 Defender لإدارة أجهزتك ونهجك وإعداداتك. لمعرفة المزيد، راجع [اختيار مكان إدارة نهج الأمان والأجهزة](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
 
 ## <a name="what-happens-if-i-dont-use-the-wizard"></a>ماذا يحدث إذا لم أستخدم المعالج؟
 

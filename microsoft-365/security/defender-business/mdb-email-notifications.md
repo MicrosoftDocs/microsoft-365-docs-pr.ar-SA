@@ -1,39 +1,33 @@
 ---
 title: إعداد إعلامات البريد الإلكتروني لفريق الأمان
-description: إعداد إعلامات البريد الإلكتروني لإبلاغ الأشخاص بالتنبيهات والثغرات الأمنية باستخدام Microsoft Defender for Business
+description: قم بإعداد إعلامات البريد الإلكتروني لإخبار فريق الأمان بالتنبيهات والثغرات الأمنية في Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/12/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a65634a5827e60d710cec56ca10835c73053cb10
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: b6381f5bfa8ebe4f7c23a16d9a214cadb4e511e6
+ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862841"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65174478"
 ---
 # <a name="set-up-email-notifications"></a>إعداد إعلامات البريد الإلكتروني
-
-> [!NOTE]
-> تم تضمين Microsoft Defender for Business الآن في [Microsoft 365 Business Premium](../../business-premium/index.md). 
 
 يمكنك إعداد إعلامات البريد الإلكتروني لفريق الأمان. بعد ذلك، عند إنشاء التنبيهات، أو اكتشاف ثغرات أمنية جديدة، سيتم إعلام الأشخاص في فريق الأمان تلقائيا. 
 
 ## <a name="what-to-do"></a>ما يجب فعله
 
 1. [تعرف على أنواع إعلامات البريد الإلكتروني](#types-of-email-notifications).
-
 2. [عرض إعدادات إعلام البريد الإلكتروني وتحريرها](#view-and-edit-email-notifications).
-
 3. [تابع إلى خطواتك التالية](#next-steps).
 
 
