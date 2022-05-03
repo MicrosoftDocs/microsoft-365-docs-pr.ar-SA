@@ -16,14 +16,14 @@ ms.custom: ''
 description: تعرف على كيفية التعرف على موصل تم اختراقه والاستجابة له في Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d3aadcd44fcf2c6ab6665546a6335dd15997e3d2
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 50caf98bec9d918dd3ff1bcb076a080b123a357a
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130196"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182634"
 ---
-# <a name="respond-to-a-compromised-connector"></a>الاستجابة إلى موصل تم اختراقه
+# <a name="respond-to-a-compromised-connector"></a>الاستجابة إلى موصل مُخترق
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -83,7 +83,7 @@ ms.locfileid: "65130196"
 
     :::image type="content" source="../../media/connector-compromise-sender-ip.png" alt-text="عنوان IP للمرسل وعنوان IP المحلي لمؤسستك" lightbox="../../media/connector-compromise-sender-ip.png":::
 
-إذا كان لديك [Microsoft Defender لـ Office 365 الخطة 1](defender-for-office-365.md) أو [Exchange Online Protection](exchange-online-protection-overview.md)، فانتقل إلى https://admin-sdf.exchange.microsoft.com/#/messagetrace. 
+إذا كان لديك [Microsoft Defender لـ Office 365 الخطة 1](defender-for-office-365.md) أو [Exchange Online Protection](exchange-online-protection-overview.md)، فانتقل إلى https://admin.exchange.microsoft.com/#/messagetrace. 
 
 1. افتح تنبيه **نشاط الموصل المشبوه** في https://security.microsoft.com/alerts.  
 
@@ -91,13 +91,13 @@ ms.locfileid: "65130196"
 
     :::image type="content" source="../../media/connector-compromise-outbound-email-details.png" alt-text="موصل يخترق تفاصيل البريد الإلكتروني الصادر" lightbox="../../media/connector-compromise-outbound-email-details.png":::
     
-3. ابحث باستخدام **مجال الموصل** **وعنوان IP** في [**تتبع الرسائل**](https://admin-sdf.exchange.microsoft.com/#/messagetrace). 
+3. ابحث باستخدام **مجال الموصل** **وعنوان IP** في [**تتبع الرسائل**](https://admin.exchange.microsoft.com/#/messagetrace). 
 
     :::image type="content" source="../../media/connector-compromise-new-message-trace.png" alt-text="القائمة المنبثقة لتتبع الرسائل الجديدة" lightbox="../../media/connector-compromise-new-message-trace.png":::
     
 4. في نتائج البحث عن **تتبع الرسائل** ، حدد: 
 
-    - إذا تم مؤخرا وضع علامة على عدد كبير من رسائل البريد الإلكتروني ك **FilteredAsSpam**.  هذا مؤشر جيد لموصل تم اختراقه يتم استخدامه لإرسال البريد العشوائي. 
+    - إذا تم مؤخرا وضع علامة على عدد كبير من رسائل البريد الإلكتروني ك **FilteredAsSpam**. هذا مؤشر جيد لموصل تم اختراقه يتم استخدامه لإرسال البريد العشوائي. 
 
     - إذا كان المستلمون هم المستلمون الذين تظل مؤسستك على اتصال بهم عادة. 
 

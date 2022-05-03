@@ -16,12 +16,12 @@ ms.collection:
 description: يمكن للمسؤولين معرفة كيفية تعديل الإدخالات وإزالتها في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7da986c42421c797f2d01b1e61d50c06933e373f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ac612b51cab9069e50c4eec05948b3aa840b9cc9
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970864"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182684"
 ---
 # <a name="modify-and-remove-entries-in-the-tenant-allowblock-list"></a>تعديل الإدخالات وإزالتها في قائمة السماح/الحظر للمستأجر
 
@@ -38,7 +38,7 @@ ms.locfileid: "64970864"
 
 ### <a name="modify-entries-in-the-tenant-allowblock-list"></a>تعديل الإدخالات في قائمة السماح/الحظر للمستأجر
 
-1. في مدخل Microsoft 365 Defender، انتقل إلى **"نهج & قواعد قواعد** \> **نهج التهديد** \> **" قسم** "\>**السماح/حظر القوائم للمستأجر**".
+1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **"نهج & قواعد قواعد** \> **نهج التهديد** \> **" قسم** \> **"السماح/حظر القوائم للمستأجر**". أو للانتقال مباشرة إلى صفحة **"السماح بالمستأجر/قائمة الحظر** "، استخدم <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. حدد علامة التبويب التي تحتوي على نوع الإدخال الذي تريد تعديله:
    - **المرسلين**
@@ -66,7 +66,7 @@ ms.locfileid: "64970864"
 
 ### <a name="remove-entries-from-the-tenant-allowblock-list"></a>إزالة الإدخالات من قائمة السماح/الحظر للمستأجر
 
-1. في مدخل Microsoft 365 Defender، انتقل إلى **"نهج & قواعد قواعد** \> **نهج التهديد** \> **" قسم** "\>**السماح/حظر القوائم للمستأجر**".
+1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **"نهج & قواعد قواعد** \> **نهج التهديد** \> **" قسم** \> **"السماح/حظر القوائم للمستأجر**". أو للانتقال مباشرة إلى صفحة **"السماح بالمستأجر/قائمة الحظر** "، استخدم <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. حدد علامة التبويب التي تحتوي على نوع الإدخال الذي تريد إزالته:
    - **المرسلين**

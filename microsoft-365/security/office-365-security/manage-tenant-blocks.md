@@ -16,12 +16,12 @@ ms.collection:
 description: يمكن للمسؤولين معرفة كيفية تكوين الكتل في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 60038a2b82ea452ed921d16042cb81d4f0e023a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 03c56e5e7e540766bb4a6048fba15b494c46d815
+ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100644"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "65182706"
 ---
 # <a name="add-blocks-in-the-tenant-allowblock-list"></a>إضافة كتل في قائمة السماح/الحظر للمستأجر
 
@@ -32,11 +32,11 @@ ms.locfileid: "65100644"
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-## <a name="use-the-microsoft-365-defender-portal"></a>استخدام مدخل Microsoft 365 Defender 
+## <a name="use-the-microsoft-365-defender-portal"></a>استخدام مدخل Microsoft 365 Defender
 
 ### <a name="create-block-sender-entries-in-the-tenant-allowblock-list"></a>إنشاء إدخالات مرسل الحظر في قائمة السماح/الحظر للمستأجر
 
-1. في مدخل Microsoft 365 Defender، انتقل إلى **"نهج & قواعد قواعد** \> **نهج التهديد** \> **" قسم** "\>**السماح/حظر القوائم للمستأجر**".
+1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **"نهج & قواعد قواعد** \> **نهج التهديد** \> **" قسم** \> **"السماح/حظر القوائم للمستأجر**". أو للانتقال مباشرة إلى صفحة **"السماح بالمستأجر/قائمة الحظر** "، استخدم <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. في الصفحة **"السماح بالمستأجر/قائمة الحظر** "، تحقق من تحديد علامة التبويب **"المرسلون** "، ثم انقر فوق ![أيقونة "حظر".](../../media/m365-cc-sc-create-icon.png) **كتلة**.
 
@@ -53,11 +53,11 @@ ms.locfileid: "65100644"
 4. عند الانتهاء، انقر فوق **"إضافة**".
 
 > [!NOTE]
-> سيتم حظر رسائل البريد الإلكتروني الواردة من هؤلاء المرسلين *كبرم عشوائي عالي الثقة (SCL = 9).* 
+> سيتم حظر رسائل البريد الإلكتروني الواردة من هؤلاء المرسلين _كبرم عشوائي عالي الثقة_ (SCL = 9).
 
 ### <a name="create-block-url-entries-in-the-tenant-allowblock-list"></a>إنشاء إدخالات عنوان URL للكتلة في قائمة السماح/الحظر للمستأجر
 
-1. في مدخل Microsoft 365 Defender، انتقل إلى **"نهج & قواعد قواعد** \> **نهج التهديد** \> **" قسم** "\>**السماح/حظر القوائم للمستأجر**".
+1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **"نهج & قواعد قواعد** \> **نهج التهديد** \> **" قسم** \> **"السماح/حظر القوائم للمستأجر**". أو للانتقال مباشرة إلى صفحة **"السماح بالمستأجر/قائمة الحظر** "، استخدم <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. في الصفحة **"السماح بالمستأجر/قائمة الحظر** "، تحقق من تحديد علامة التبويب **"عناوين URL** "، ثم انقر فوق ![أيقونة "حظر".](../../media/m365-cc-sc-create-icon.png) **كتلة**.
 
@@ -74,11 +74,11 @@ ms.locfileid: "65100644"
 4. عند الانتهاء، انقر فوق **"إضافة**".
 
 > [!NOTE]
-> سيتم حظر رسائل البريد الإلكتروني التي تحتوي على عناوين URL هذه على أنها *تصيد احتيالي*. 
+> سيتم حظر رسائل البريد الإلكتروني التي تحتوي على عناوين URL هذه على أنها _تصيد احتيالي_.
 
 ### <a name="create-block-file-entries-in-the-tenant-allowblock-list"></a>إنشاء إدخالات ملفات الحظر في قائمة السماح/الحظر للمستأجر
 
-1. في مدخل Microsoft 365 Defender، انتقل إلى **"نهج & قواعد قواعد** \> **نهج التهديد** \> **" قسم** "\>**السماح/حظر القوائم للمستأجر**".
+1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **"نهج & قواعد قواعد** \> **نهج التهديد** \> **" قسم** \> **"السماح/حظر القوائم للمستأجر**". أو للانتقال مباشرة إلى صفحة **"السماح بالمستأجر/قائمة الحظر** "، استخدم <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. في الصفحة **"السماح بالمستأجر/قائمة الحظر** "، حدد علامة التبويب **"ملفات** "، ثم انقر فوق ![أيقونة "حظر".](../../media/m365-cc-sc-create-icon.png) **كتلة**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "65100644"
 4. عند الانتهاء، انقر فوق **"إضافة**".
 
 > [!NOTE]
-> سيتم حظر رسائل البريد الإلكتروني التي تحتوي على هذه الملفات *كالبرمجيات الضارة*. 
+> سيتم حظر رسائل البريد الإلكتروني التي تحتوي على هذه الملفات _كالبرمجيات الضارة_.
 
 ### <a name="create-spoofed-sender-block-entries"></a>إنشاء إدخالات كتلة مرسل منتحلة
 
@@ -118,8 +118,9 @@ ms.locfileid: "65100644"
    - **الإجراء**: حدد **كتلة**.
 
 4. عند الانتهاء، انقر فوق **"إضافة**".
+
 > [!NOTE]
-> سيتم حظر رسائل البريد الإلكتروني الواردة من هؤلاء المرسلين على أنها *تصيد احتيالي*. 
+> سيتم حظر رسائل البريد الإلكتروني الواردة من هؤلاء المرسلين على أنها _تصيد احتيالي_.
 
 ## <a name="use-powershell"></a>استخدام PowerShell
 
@@ -151,7 +152,7 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="add-spoofed-sender-block-entries"></a>إضافة إدخالات كتلة مرسل منتحلة 
+### <a name="add-spoofed-sender-block-entries"></a>إضافة إدخالات كتلة مرسل منتحلة
 
 لإضافة إدخالات المرسل المخادعة في قائمة السماح/الحظر للمستأجر، استخدم بناء الجملة التالي:
 
