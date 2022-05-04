@@ -104,6 +104,8 @@
   items:
     - name: قائمة المصطلحات
       href: m365bp-glossary.md
+    - name: الأسئلة المتداولة حول Microsoft 365 Business Premium
+      href: microsoft-365-business-faqs.yml
     - name: مركز مسؤولي Microsoft 365
       href: /microsoft-365/admin/
     - name: Microsoft Defender for Business
