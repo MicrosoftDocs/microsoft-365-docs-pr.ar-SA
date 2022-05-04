@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: تعرف على العناصر غير المفهرسة في Exchange SharePoint التي يمكنك تضمينها في بحث eDiscovery الذي تقوم بتشغيله في مدخل توافق Microsoft Purview.
-ms.openlocfilehash: ff21f04456d6886e7849a8d9a0770640897a62ac
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 27f59ac9bf6a580fa0a3193ee91f66a4ac58ab1e
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091490"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188779"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>العناصر المفهرسة جزئيا في eDiscovery
 
@@ -162,7 +162,10 @@ ms.locfileid: "65091490"
 
 - على الرغم من أن نوع الملف معتمد للفهرسة ومفهرس، فقد تكون هناك أخطاء في الفهرسة أو البحث تؤدي إلى إرجاع ملف كعنصر مفهرس جزئيا. على سبيل المثال، قد يكون البحث في ملف Excel كبير ناجحا جزئيا (لأنه تمت فهرسة أول 4 ميغابايت)، ولكنه يفشل بعد ذلك بسبب تجاوز الحد الأقصى لحجم الملف. في هذه الحالة، من الممكن إرجاع الملف نفسه مع نتائج البحث وكعنصر مفهرس جزئيا.
 
-- يمكن معاينة الملفات المشفرة باستخدام [تقنيات تشفير Microsoft](encryption.md) والمرفقة برسالة بريد إلكتروني تتطابق مع معايير البحث وسيتم فك تشفيرها عند تصديرها. في هذا الوقت، تتم فهرسة الملفات المشفرة باستخدام تقنيات تشفير Microsoft (وتخزينها في SharePoint أو OneDrive for Business) بشكل جزئي.
+- يمكن معاينة الملفات المشفرة باستخدام [تقنيات تشفير Microsoft](encryption.md) والمرفقة برسالة بريد إلكتروني تتطابق مع معايير البحث وسيتم فك تشفيرها عند تصديرها. في هذا الوقت، تتم فهرسة الملفات المشفرة باستخدام تقنيات تشفير Microsoft (وتخزينها في SharePoint أو OneDrive for Business) بشكل جزئي. 
+
+   > [!NOTE]
+   > لن يتم فك تشفير الملفات المشفرة باستخدام تسميات الحساسية.
 
 - يتم فهرسة رسائل البريد الإلكتروني المشفرة باستخدام S/MIME جزئيا. يتضمن ذلك الرسائل المشفرة مع مرفقات الملفات أو بدونها.
 

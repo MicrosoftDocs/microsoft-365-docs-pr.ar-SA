@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على كيفية عمل الاستبقاء Exchange.
-ms.openlocfilehash: 66b7ad888e62ff84b6a2de49714bbbdf96268312
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: d5c961c733dd757c1f2b8179793b43991e71b4d8
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911413"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188735"
 ---
 # <a name="learn-about-retention-for-exchange"></a>تعرف على استبقاء Exchange
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 المعلومات الواردة في هذه المقالة تكمل [معرفة المزيد حول الاستبقاء](retention.md) لأنه يحتوي على معلومات خاصة Exchange.  بالنسبة لأحمال العمل الأخرى، راجع:
 
@@ -41,6 +43,8 @@ ms.locfileid: "64911413"
 جهات الاتصال وأي مهام وعناصر تقويم ليس لها تاريخ انتهاء غير معتمدة.
 
 لا يتم تضمين العناصر الأخرى المخزنة في علبة بريد، مثل رسائل Skype ورسائل Teams، في نهج الاستبقاء أو التسميات الخاصة Exchange. هذه العناصر لها نهج الاستبقاء الخاصة بها.
+
+يجب أن تحتوي علب البريد على 10 ميغابايت على الأقل من البيانات قبل أن تنطبق إعدادات الاستبقاء عليها، ويمكن نشر تسميات الاستبقاء عليها.
 
 ## <a name="how-retention-works-for-exchange"></a>كيفية عمل الاستبقاء Exchange
 
@@ -97,7 +101,7 @@ ms.locfileid: "64911413"
 
 ## <a name="configuration-guidance"></a>إرشادات التكوين
 
-إذا كنت جديدا على تكوين الاستبقاء في Microsoft 365، فراجع [بدء استخدام إدارة المعلومات](get-started-with-information-governance.md).
+إذا كنت جديدا على تكوين الاستبقاء في Microsoft 365، فراجع [بدء استخدام إدارة دورة حياة البيانات](get-started-with-data-lifecycle-management.md).
 
 إذا كنت جاهزا لتكوين نهج استبقاء أو تسمية استبقاء Exchange، فراجع الإرشادات التالية:
 - [إنشاء نهج الاستبقاء وتكوينها](create-retention-policies.md)

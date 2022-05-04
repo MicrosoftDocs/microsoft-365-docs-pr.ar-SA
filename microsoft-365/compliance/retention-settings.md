@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: فهم الإعدادات التي يمكنك تكوينها في نهج الاستبقاء أو نهج تسمية الاستبقاء للاحتفاظ بما تريده والتخلص مما لا تريده.
-ms.openlocfilehash: c0214476494e024247b76911475df88bdfbfa4ff
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: ab3adee8275f6c64dd7ad3b21547e8205b00ff7d
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129211"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187767"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>الإعدادات الشائعة لنهج الاستبقاء ونهج تسمية الاستبقاء
 
@@ -240,6 +240,8 @@ ms.locfileid: "65129211"
 
 ### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>معلومات التكوين للبريد الإلكتروني Exchange والمجلدات العامة Exchange
 
+يتطلب موقع **البريد الإلكتروني Exchange** وموقع **المجلدات العامة Exchange** أن تحتوي علب البريد على 10 ميغابايت على الأقل من البيانات قبل أن تنطبق إعدادات الاستبقاء عليها.
+
 يدعم موقع **البريد الإلكتروني Exchange** استبقاء البريد الإلكتروني والتقويم وعناصر علبة البريد الأخرى الخاصة بالمستخدمين، من خلال تطبيق إعدادات الاستبقاء على مستوى علبة البريد. كما أن علب البريد المشتركة معتمدة.
 
 علب بريد الموارد وجهات الاتصال وعلب بريد المجموعة Microsoft 365 غير معتمدة للبريد الإلكتروني Exchange. بالنسبة إلى علب بريد المجموعة Microsoft 365، حدد موقع **مجموعات Microsoft 365** بدلا من ذلك. على الرغم من أن موقع Exchange يسمح في البداية بتحديد علبة بريد المجموعة لنطاق ثابت، عندما تحاول حفظ نهج الاستبقاء، تتلقى رسالة خطأ تفيد بأن "RemoteGroupMailbox" ليس تحديدا صحيحا لهذا الموقع.
@@ -294,6 +296,8 @@ ms.locfileid: "65129211"
 ### <a name="configuration-information-for-microsoft-365-groups"></a>معلومات التكوين مجموعات Microsoft 365
 
 للاحتفاظ بالمحتوى لمجموعة Microsoft 365 أو حذفه (مجموعة Office 365 سابقا)، استخدم موقع **مجموعات Microsoft 365**. بالنسبة إلى نهج الاستبقاء، يتضمن هذا الموقع علبة بريد المجموعة وموقع الفرق SharePoint. بالنسبة إلى تسميات الاستبقاء، يتضمن هذا الموقع موقع فرق SharePoint فقط.
+
+تتطلب علب البريد التي تستهدفها بموقع النهج هذا 10 ميغابايت على الأقل من البيانات قبل أن تنطبق إعدادات الاستبقاء عليها.
 
 > [!NOTE]
 > على الرغم من أن مجموعة Microsoft 365 تحتوي على علبة بريد Exchange، فلن يتضمن نهج الاستبقاء لموقع **البريد الإلكتروني Exchange** محتوى في علب بريد المجموعة Microsoft 365.

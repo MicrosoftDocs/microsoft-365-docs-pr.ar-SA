@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية عرض حماية خدمة المستأجر.
-ms.openlocfilehash: c5cfed4449fbdbb6cb63bc80dfd8e23ca4d5c4bb
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 8ad96c77f14148fefd6d00cd51af093cd081d857
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023602"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187811"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>عرض حماية خدمة المستأجر في Microsoft 365 Lighthouse
 
@@ -31,7 +31,7 @@ ms.locfileid: "65023602"
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-لعرض حالة الخدمة، ستحتاج إلى دور Azure AD في مستأجر الشريك مع مجموعة الخصائص التالية: **microsoft.office365.serviceHealth/allEntities/allTasks**. للحصول على قائمة بأدوار Azure AD، راجع [الأدوار المضمنة في Azure AD](/azure/active-directory/roles/permissions-reference).
+لعرض حالة الخدمة، ستحتاج إلى دور Azure AD في مستأجر الشريك مع مجموعة الخصائص التالية: **microsoft.office365.serviceHealth/allEntities/allTasks**. للحصول على قائمة بالأدوار Azure AD، راجع [Azure AD الأدوار المضمنة](/azure/active-directory/roles/permissions-reference).
 
 ## <a name="view-service-health-status-for-all-tenants"></a>عرض حالة حماية الخدمة لكافة المستأجرين
 
@@ -62,4 +62,5 @@ ms.locfileid: "65023602"
 ## <a name="related-content"></a>المحتويات ذات الصلة
 
 [كيفية التحقق من صحة الخدمة Microsoft 365](/microsoft-365/enterprise/view-service-health) (مقالة)\
-[المشاكل المعروفة في Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (مقالة)
+[المشاكل المعروفة في Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (مقالة)\
+[عرض أدوار Azure Active Directory في Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (مقالة)

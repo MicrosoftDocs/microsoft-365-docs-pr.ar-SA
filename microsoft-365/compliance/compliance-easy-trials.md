@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على تفاصيل حول الإصدار التجريبي من حلول Microsoft Purview وكيفية التسجيل.
-ms.openlocfilehash: ed7848a12483062c2873f4735ecb2188cad373a1
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 653c80e7c8b412ac1d9c14a021519ca80baab6e9
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023668"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188823"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>حول الإصدار التجريبي من حلول "Microsoft Purview"
 
@@ -31,7 +31,7 @@ ms.locfileid: "65023668"
 
 ## <a name="terms-and-conditions"></a>الشروط والأحكام
 
-راجع [الأحكام والشروط](terms-conditions.md) الخاصة بتجارب Microsoft Purview.
+راجع [الأحكام والشروط](/legal/microsoft-365/microsoft-365-trial) الخاصة Microsoft 365 الإصدارات التجريبية.
 
 ## <a name="eligibility"></a>الاهليه
 

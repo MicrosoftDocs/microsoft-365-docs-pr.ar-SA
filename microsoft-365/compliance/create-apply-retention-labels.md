@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: إرشادات لنشر تسميات الاستبقاء حتى تتمكن بعد ذلك من تطبيقها في التطبيقات للاحتفاظ بما تحتاجه وحذف ما لا تحتاج إليه.
-ms.openlocfilehash: c2088afd895b47945bea056c940e564b4dd770fb
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: dd20de86b17460d5b150b5bb576ae811e40eed32
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145366"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187789"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>نشر تسميات الاستبقاء وتطبيقها في التطبيقات
 
@@ -88,7 +88,7 @@ ms.locfileid: "65145366"
 
 إذا نشرت تسميات استبقاء إلى SharePoint أو OneDrive، فستظهر هذه التسميات عادة للمستخدمين لتحديدها في غضون يوم واحد. ومع ذلك، اسمح بما يصل إلى سبعة أيام. 
 
-إذا نشرت تسميات الاستبقاء إلى Exchange، فقد يستغرق ظهور تسميات الاستبقاء هذه للمستخدمين ما يصل إلى سبعة أيام، ويجب أن تحتوي علبة البريد على 10 ميغابايت على الأقل من البيانات.
+إذا نشرت تسميات الاستبقاء إلى Exchange، فقد يستغرق ظهور تسميات الاستبقاء هذه للمستخدمين ما يصل إلى سبعة أيام. كما هو الحال مع كافة إعدادات الاستبقاء Exchange، يجب أن تحتوي علبة البريد على 10 ميغابايت على الأقل من البيانات.
 
 ![رسم تخطيطي عندما يتم تطبيق التسميات المنشورة.](../media/retention-labels-published-timings.png)
 

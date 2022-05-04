@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 51d5814d718c1422d493f5227b311a58f99f7a82
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 7b7586a75c95202e2737bab857ab1ffebd04d6c4
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783260"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187723"
 ---
 # <a name="microsoft-virus-initiative"></a>مبادرة Microsoft Virus
 
@@ -53,6 +53,7 @@ ms.locfileid: "64783260"
 |SKD Labs|منتج متطلبات المصادقة: مكافحة الفيروسات أو البرامج الضارة </br> <http://www.skdlabs.com/html/english/> </br> <http://www.skdlabs.com/cert/>|SKD Labs Star Check Requirements certification pass >= 98.5٪ مع اختبارات عند الطلب، عند الوصول والكشف عن الإجمالي|
 |VB 100|VB100 Certification Test V1.1 </br> <https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/>|شهادة VB100|
 |مختبرات الساحل الغربي|علامة اختيار معتمدة </br> <http://www.checkmarkcertified.com/sme/>|تصنيف "A" على أداء أمان المنتج|
+|SE Labs|اختبار حماية أو Small Business أو Enterprise EP Protection  </br> <https://selabs.uk/en/reports/consumers/>|حماية تصنيف A أو تصنيف SMALL Business EP A أو تصنيف Enterprise EP Protection A |
 
 ## <a name="apply-now"></a>تطبيق الآن
 

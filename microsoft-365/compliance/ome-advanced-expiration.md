@@ -1,5 +1,5 @@
 ---
-title: تعيين تاريخ انتهاء صلاحية للبريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Office 365
+title: تعيين تاريخ انتهاء صلاحية للبريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,32 +15,36 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: استخدم تشفير الرسائل المتقدم من Office 365 لتوسيع أمان البريد الإلكتروني من خلال تعيين تاريخ انتهاء صلاحية على رسائل البريد الإلكتروني من خلال قالب مخصص له علامة تجارية.
+description: استخدم Microsoft Purview Advanced Message Encryption لتوسيع أمان البريد الإلكتروني عن طريق تعيين تاريخ انتهاء صلاحية على رسائل البريد الإلكتروني من خلال قالب مخصص له علامة تجارية.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1213ecf48ee9bd2e04accdd13aaf3ecd74d3faba
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e8689820adc3158ae2a36a4d52ebad0959097b49
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63566557"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188383"
 ---
-# <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>تعيين تاريخ انتهاء صلاحية للبريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Office 365
+# <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>تعيين تاريخ انتهاء صلاحية للبريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Microsoft Purview
 
-تشفير الرسائل المتقدم من Office 365 في [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home)، Office 365 E5، Microsoft 365 E5 (أسعار الموظفين غير الربحية)، Office 365 Enterprise  E5 (أسعار الموظفين غير الربحية)، Office 365 Education A5. إذا كانت مؤسستك لديها اشتراك لا يتضمن تشفير الرسائل المتقدم من Office 365، يمكنك شراؤه باستخدام التوافق في Microsoft 365 E5 SKU الإضافية ل Microsoft 365 E3، Microsoft 365 E3 ( أسعار الموظفين غير الربحية) أو خدمات الامتثال المتطورة في Office 365 SKU الإضافية Microsoft 365 E3 أو Microsoft 365 E3 (أسعار الموظفين غير الربحية) أو Office 365 SKU.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-يمكنك استخدام انتهاء صلاحية الرسائل في رسائل البريد الإلكتروني التي يرسلها المستخدمون إلى مستلمين خارجيين يستخدمون مدخل OME للوصول إلى رسائل البريد الإلكتروني المشفرة. يجبر المستلمين على استخدام مدخل OME لعرض رسائل البريد الإلكتروني المشفرة المرسلة بواسطة مؤسستك والرد عليها باستخدام قالب مخصص له علامة تجارية يحدد تاريخ انتهاء الصلاحية في Windows PowerShell.
+يتم تضمين تشفير الرسائل المتقدم ل Microsoft Purview في [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home)، Office 365 E5، Microsoft 365 E5 (تسعير الموظفين غير الربحي)، Office 365 Enterprise E5 (تسعير الموظفين غير الربحي)، و Office 365 Education A5. التوافق في Microsoft 365 E5 وظيفة SKU الإضافية Microsoft 365 E3 أو Microsoft 365 E3 (تسعير الموظفين غير الربحي) أو الوظيفة الإضافية خدمات الامتثال المتطورة في Office 365 SKU ل Microsoft 365 E3 أو Microsoft 365 E3 (أسعار الموظفين غير الربحية) أو Office 365 وحدات SKU.
 
-كمسؤول Office 365 عام، عند تطبيق العلامة التجارية للشركة لتخصيص مظهر رسائل البريد الإلكتروني الخاصة بالشركة، يمكنك أيضا تحديد انتهاء صلاحية لرسائل البريد الإلكتروني هذه. باستخدام تشفير الرسائل المتقدم من Office 365، يمكنك إنشاء قوالب متعددة لر رسائل البريد الإلكتروني المشفرة التي تنشأ من مؤسستك. باستخدام قالب، يمكنك التحكم في مدة وصول المستلمين إلى البريد المرسل من قبل المستخدمين.
+إذا كان لدى مؤسستك اشتراك لا يتضمن تشفير الرسائل المتقدمة من Microsoft Purview، يمكنك شراؤه باستخدام الوظيفة الإضافية التوافق في Microsoft 365 E5 SKU Microsoft 365 E3 أو Microsoft 365 E3 (تسعير الموظفين غير الربحي) أو خدمات الامتثال المتطورة في Office 365 وظيفة SKU الإضافية لوحدات Microsoft 365 E3 أو Microsoft 365 E3 (أسعار الموظفين غير الربحية) أو وحدات SKU Office 365.
 
-عندما يتلقى مستخدم بريدا له مجموعة تاريخ انتهاء صلاحية، يرى المستخدم تاريخ انتهاء الصلاحية في البريد الإلكتروني الملتف. إذا حاول مستخدم فتح بريد منتهية الصلاحية، يظهر خطأ في مدخل OME.
+يمكنك استخدام انتهاء صلاحية الرسالة على رسائل البريد الإلكتروني التي يرسلها المستخدمون إلى مستلمين خارجيين يستخدمون مدخل OME للوصول إلى رسائل البريد الإلكتروني المشفرة. يجبر المستلمين على استخدام مدخل OME لعرض رسائل البريد الإلكتروني المشفرة المرسلة من مؤسستك والرد عليها باستخدام قالب مخصص له علامة تجارية يحدد تاريخ انتهاء الصلاحية في Windows PowerShell.
 
-يمكنك فقط تعيين تواريخ انتهاء صلاحية رسائل البريد الإلكتروني إلى مستلمين خارجيين.
+بصفتك مسؤولا عاما Office 365، عند تطبيق العلامة التجارية للشركة لتخصيص مظهر رسائل البريد الإلكتروني الخاصة بمؤسستك، يمكنك أيضا تحديد انتهاء صلاحية لرسائل البريد الإلكتروني هذه. باستخدام Microsoft Purview Advanced Message Encryption، يمكنك إنشاء قوالب متعددة لرسائل البريد الإلكتروني المشفرة التي تنشأ من مؤسستك. باستخدام قالب، يمكنك التحكم في مدة وصول المستلمين إلى البريد المرسل من قبل المستخدمين.
 
-باستخدام تشفير الرسائل المتقدم من Office 365، في أي وقت تقوم فيه بتطبيق العلامة التجارية المخصصة، Office 365 تطبيق الملتف على البريد الإلكتروني الذي يتلاءم مع قاعدة تدفق البريد التي تقوم بتطبيق القالب عليها. بالإضافة إلى ذلك، يمكنك استخدام انتهاء الصلاحية فقط إذا كنت تستخدم علامة تجارية مخصصة.
+عندما يتلقى مستخدم نهائي بريدا يحتوي على تاريخ انتهاء صلاحية معين، يرى المستخدم تاريخ انتهاء الصلاحية في البريد الإلكتروني للملف. إذا حاول مستخدم فتح بريد منتهي الصلاحية، يظهر خطأ في مدخل OME.
 
-## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>إنشاء قالب علامة تجارية مخصص فرض انتهاء صلاحية البريد باستخدام PowerShell
+يمكنك فقط تعيين تواريخ انتهاء الصلاحية لرسائل البريد الإلكتروني إلى مستلمين خارجيين.
 
-1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) باستخدام حساب لديه أذونات المسؤول العام في مؤسستك.
+باستخدام Microsoft Purview Advanced Message Encryption، في أي وقت تقوم فيه بتطبيق العلامة التجارية المخصصة، يطبق Office 365 برنامج التضمين على البريد الإلكتروني الذي يناسب قاعدة تدفق البريد التي تقوم بتطبيق القالب عليها. بالإضافة إلى ذلك، يمكنك استخدام انتهاء الصلاحية فقط إذا كنت تستخدم العلامة التجارية المخصصة.
+
+## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>إنشاء قالب علامة تجارية مخصص لفرض انتهاء صلاحية البريد باستخدام PowerShell
+
+1. [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) باستخدام حساب لديه أذونات المسؤول العام في مؤسستك.
 
 2. تشغيل New-OMEConfiguration cmdlet.
 
@@ -48,16 +52,16 @@ ms.locfileid: "63566557"
     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
     ```
 
-المكان:
+حيث:
 
 - `Identity` هو اسم القالب المخصص.
 
-- `ExternalMailExpiryInDays` يحدد عدد الأيام التي يمكن للمستلمين الاحتفاظ بالبريد قبل انتهاء صلاحيتها. يمكنك استخدام أي قيمة تتراوح بين يوم و730 يوما.
+- `ExternalMailExpiryInDays` يحدد عدد الأيام التي يمكن للمستلمين الاحتفاظ بها قبل انتهاء صلاحيتها. يمكنك استخدام أي قيمة بين يوم و730 يوما.
 
-## <a name="more-information-about-office-365-advanced-message-encryption"></a>مزيد من المعلومات حول تشفير الرسائل المتقدم من Office 365
+## <a name="more-information-about-microsoft-purview-advanced-message-encryption"></a>مزيد من المعلومات حول تشفير الرسائل المتقدم ل Microsoft Purview
 
-- [تشفير الرسائل المتقدم من Office 365](ome-advanced-message-encryption.md)
+- [تشفير الرسائل المتقدم](ome-advanced-message-encryption.md)
 
-- [إبطال البريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Office 365](revoke-ome-encrypted-mail.md)
+- [إبطال البريد الإلكتروني المشفر بواسطة تشفير رسائل Microsoft Purview](revoke-ome-encrypted-mail.md)
 
-- [وصف خدمة التوافق ون نهج الرسالة](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)
+- [نهج الرسالة ووصف خدمة التوافق](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)

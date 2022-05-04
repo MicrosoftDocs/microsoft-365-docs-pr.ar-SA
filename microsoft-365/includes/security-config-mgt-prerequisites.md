@@ -4,235 +4,243 @@ description: تضمين ملف
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 2d48c4066cc1cde102fc395d7c532d26ea2a4db0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a836865906de594436b27c44ebf65ba3ed99c96e
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63572050"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188154"
 ---
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
-راجع الأقسام التالية للحصول على متطلبات سيناريو إدارة الأمان ل Microsoft Defender لنقطة النهاية:
+راجع الأقسام التالية للاطلاع على متطلبات إدارة الأمان لسيناريو Microsoft Defender لنقطة النهاية:
 
-### <a name="environment"></a>البيئة
+### <a name="environment"></a>البيئه
 
-عند ألواح الأجهزة إلى Microsoft Defender لنقطة النهاية:
+عند إلحاق جهاز Microsoft Defender لنقطة النهاية:
 
 
-- يتم استطلاع حالة حضور الجهاز إدارة نقاط النهاية، وهو تسجيل إدارة أجهزة المحمول (MDM) في Intune
-- ستمكن الأجهزة إدارة نقاط النهاية حالة الحضور ميزة إدارة الأمان
-- يتم إنشاء الثقة باستخدام Azure Active Directory إذا لم يكن أحدها موجودا بالفعل
-- يتم استخدام الثقة في Azure Active Directory للتواصل مع إدارة نقاط النهاية (Intune) واسترداد النهج
-- يتم فرض استرداد النهج إدارة نقاط النهاية على الجهاز بواسطة Microsoft Defender لنقطة النهاية
+- يتم استطلاع الجهاز للحصول على حالة حضور إدارة نقاط النهاية حالية، وهو تسجيل إدارة أجهزة المحمول (MDM) إلى Intune
+- ستمكن الأجهزة التي لا تحتوي على وجود إدارة نقاط النهاية ميزة "إدارة الأمان"
+- يتم إنشاء ثقة باستخدام Azure Active Directory إذا لم تكن موجودة بالفعل
+- يتم استخدام ثقة Azure Active Directory للتواصل مع إدارة نقاط النهاية (Intune) واسترداد النهج
+- يتم فرض استرداد النهج من إدارة نقاط النهاية على الجهاز بواسطة Microsoft Defender لنقطة النهاية
 
 ### <a name="active-directory-requirements"></a>متطلبات Active Directory
 
-عندما ينشئ الجهاز المنضم إلى المجال الثقة مع Azure Active Directory، يشار إلى هذا السيناريو على أنه سيناريو انضمام *Azure Active Directory* المختلط. تدعم إدارة الأمان ل Microsoft Defender لنقطة النهاية هذا السيناريو بشكل كامل مع المتطلبات التالية:
+عندما ينشئ جهاز مرتبط بمجال ثقة مع Azure Active Directory، يشار إلى هذا السيناريو باسم سيناريو *Hybrid Azure Active Directory Join* . تدعم إدارة الأمان Microsoft Defender لنقطة النهاية هذا السيناريو بشكل كامل مع المتطلبات التالية:
 
-- يجب مزامنة azure Active Directory الاتصال (AAD (دليل Azure النشط) الاتصال) مع المستأجر المستخدم من Microsoft Defender لنقطة النهاية
-- يجب تكوين Azure Active Directory Join المختلط في بيئتك (إما من خلال الاتحاد أو AAD (دليل Azure النشط) الاتصال المزامنة)
-- AAD (دليل Azure النشط) الاتصال يجب أن تتضمن المزامنة كائنات *الجهاز* في نطاق المزامنة مع Azure Active Directory (عند الحاجة للانضمام)
-- AAD (دليل Azure النشط) الاتصال تعديل قواعد المزامنة ل Server 2012 R2 (عندما يكون دعم Server 2012 R2 مطلوبا)
-- يجب أن يتم تسجيل جميع الأجهزة في Azure Active Directory للمستأجر الذي يستضيف Microsoft Defender ل Endpoint. سيناريوهات المستأجرين غير معتمدة. 
+- يجب مزامنة الاتصال Azure Active Directory (AAD (دليل Azure النشط) الاتصال) مع المستأجر المستخدم من Microsoft Defender لنقطة النهاية
+- يجب تكوين Hybrid Azure Active Directory Join في بيئتك (إما من خلال Federation أو AAD (دليل Azure النشط) الاتصال Sync)
+- AAD (دليل Azure النشط) الاتصال يجب أن تتضمن المزامنة كائنات الجهاز *في نطاق* المزامنة مع Azure Active Directory (عند الحاجة للانضمام)
+- يجب تعديل قواعد AAD (دليل Azure النشط) الاتصال للمزامنة ل Server 2012 R2 (عند الحاجة إلى دعم Server 2012 R2)
+- يجب أن تسجل جميع الأجهزة في Azure Active Directory للمستأجر الذي يستضيف Microsoft Defender لنقطة النهاية. لا يتم دعم سيناريوهات عبر المستأجرين. 
 
 ### <a name="connectivity-requirements"></a>متطلبات الاتصال
 
 يجب أن يكون للأجهزة حق الوصول إلى نقاط النهاية التالية:
 
-- `enterpriseregistration.windows.net` - لتسجيل Azure AD.
-- `login.microsoftonline.com` - لتسجيل Azure AD.
-- `*.dm.microsoft.com` - يدعم استخدام أحرف البدل نقاط نهاية الخدمة السحابية المستخدمة للتسجيل والتحقق من الوصول وإعداد التقارير، والتي يمكن أن تتغير مع تغيير مقياس الخدمة.
+- `enterpriseregistration.windows.net`- لتسجيل Azure AD.
+- `login.microsoftonline.com`- لتسجيل Azure AD.
+- `*.dm.microsoft.com` - يدعم استخدام حرف بدل نقاط نهاية خدمة السحابة المستخدمة للتسجيل والإيداع وإعداد التقارير، والتي يمكن أن تتغير مع تحجيم الخدمة.
 
-### <a name="supported-platforms"></a>الأنظمة الأساسية المعتمدة
+### <a name="supported-platforms"></a>الأنظمة الأساسية المدعومة
 
-يتم دعم سياسات Microsoft Defender لإدارة أمان نقطة النهاية ل الأنظمة الأساسية للجهاز التالية:
+يتم دعم نهج إدارة أمان Microsoft Defender لنقطة النهاية لأنظمة الأجهزة الأساسية التالية:
 
-- Windows 10 Pro/Enterprise ([مع KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541))
+- Windows 10 Pro/Enterprise (باستخدام [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541))
 - Windows 11 Pro/Enterprise
-- Windows Server 2012 R2 مع [Microsoft Defender Down-Level الأجهزة](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
-- Windows Server 2016 مع [Microsoft Defender Down-Level الأجهزة](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
-- Windows Server 2019 ([مع KB5006744](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0))
-- Windows Server 2022 ([مع KB5006745](https://support.microsoft.com/topic/october-26-2021-kb5006745-os-build-20348-320-preview-8ff9319a-19e7-40c7-bbd1-cd70fcca066c))
+- Windows Server 2012 R2 مع [Microsoft Defender لأجهزة Down-Level](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
+- Windows Server 2016 مع [Microsoft Defender لأجهزة Down-Level](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
+- Windows Server 2019 (مع [KB5006744](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0))
+- Windows Server 2022 (مع [KB5006745](https://support.microsoft.com/topic/october-26-2021-kb5006745-os-build-20348-320-preview-8ff9319a-19e7-40c7-bbd1-cd70fcca066c))
 
 ### <a name="licensing-and-subscriptions"></a>الترخيص والاشتراكات
 
-لاستخدام إدارة الأمان ل Microsoft Defender لنقطة النهاية، ستحتاج إلى:
+لاستخدام إدارة الأمان Microsoft Defender لنقطة النهاية، تحتاج إلى:
 
-- اشتراك يمنح تراخيص ل Microsoft Defender لنقطة النهاية، مثل Microsoft 365 أو ترخيص مستقل ل Microsoft Defender لنقطة النهاية فقط. كما يمنح الاشتراك الذي يمنح Microsoft Defender لتراخيص نقطة النهاية للمستأجر الخاص بك حق الوصول إلى عقدة أمان نقطة النهاية الخاصة إدارة نقاط النهاية من Microsoft مركز الإدارة.
+- اشتراك يمنح تراخيص Microsoft Defender لنقطة النهاية، مثل Microsoft 365، أو ترخيص مستقل Microsoft Defender لنقطة النهاية فقط. كما يمنح الاشتراك الذي يمنح تراخيص Microsoft Defender لنقطة النهاية المستأجر حق الوصول إلى عقدة أمان نقطة النهاية لمركز إدارة إدارة نقاط النهاية من Microsoft.
 
   > [!NOTE]  
-  > استثناء **: إذا** كان لديك حق الوصول إلى Microsoft Defender ل Endpoint كجزء من ترخيص Microsoft Defender for Cloud فقط (مركز أمان Azure سابقا)، فإن وظيفة إدارة الأمان ل Microsoft Defender ل Endpoint غير متوفرة.
+  > **استثناء**: إذا كان لديك حق الوصول إلى Microsoft Defender لنقطة النهاية كجزء من ترخيص Microsoft Defender for Cloud فقط (المعروف سابقا باسم Azure Security Center)، فلن تتوفر إدارة الأمان لوظائف Microsoft Defender لنقطة النهاية.
 
-عقدة أمان نقطة النهاية هي المكان الذي ستقوم فيه بتكوين سياسات ونشرها لإدارة Microsoft Defender ل Endpoint للأجهزة ومراقبة حالة الجهاز.
+عقدة أمان نقطة النهاية هي المكان الذي ستقوم فيه بتكوين النهج ونشرها لإدارة Microsoft Defender لنقطة النهاية لأجهزتك ومراقبة حالة الجهاز.
 
-للحصول على معلومات حالية حول الخيارات، راجع [الحد الأدنى لمتطلبات Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide&preserve-view=true).
+للحصول على المعلومات الحالية حول الخيارات، راجع [الحد الأدنى من متطلبات Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide&preserve-view=true).
 
 
 
 ## <a name="architecture"></a>التصميم
 
-الرسم التخطيطي التالي هو تمثيل تصوري لحل إدارة تكوين أمان نقطة النهاية من Microsoft Defender.
+الرسم التخطيطي التالي هو تمثيل تصوري لحل إدارة تكوين الأمان Microsoft Defender لنقطة النهاية.
 
-:::image type="content" alt-text="تمثيل تصوري لحل إدارة تكوين أمان نقطة النهاية ل Microsoft Defender" source="../security/defender-endpoint/images/mde-architecture.png":::
+:::image type="content" alt-text="تمثيل تصوري لحل إدارة تكوين الأمان Microsoft Defender لنقطة النهاية" source="../security/defender-endpoint/images/mde-architecture.png":::
 
-1. الأجهزة المجهزة ل Microsoft Defender لنقطة النهاية.
+1. الأجهزة التي يتم إلحاقها Microsoft Defender لنقطة النهاية.
 
-2. يتم إنشاء الثقة بين كل جهاز و Azure AD. عندما يكون هناك جهاز لديه ثقة موجودة، يتم استخدامه. عندما لا تكون الأجهزة مسجلة، يتم إنشاء ثقة جديدة.
+2. يتم تأسيس ثقة بين كل جهاز Azure AD. عندما يكون لدى الجهاز ثقة موجودة، يتم استخدامه. عندما لا تكون الأجهزة مسجلة، يتم إنشاء ثقة جديدة.
 
-3. تستخدم الأجهزة هوية Azure AD الخاصة بها للتواصل مع إدارة نقاط النهاية. تمكن هذه الهوية إدارة نقاط النهاية من Microsoft توزيع النهج التي يتم استهدافها للأجهزة عند تسجيل الدخول.
+3. تستخدم الأجهزة هويتها Azure AD للتواصل مع إدارة نقاط النهاية. تمكن هذه الهوية إدارة نقاط النهاية من Microsoft من توزيع النهج التي تستهدف الأجهزة عند إيداعها.
 
-4. سيرجع Defender for Endpoint حالة النهج إلى إدارة نقاط النهاية.
+4. يقوم Defender لنقطة النهاية بالإبلاغ عن حالة النهج مرة أخرى إلى إدارة نقاط النهاية.
 
-## <a name="which-solution-should-i-use"></a>ما الحل الذي يجب استخدامه؟
+## <a name="which-solution-should-i-use"></a>ما الحل الذي يجب أن أستخدمه؟
 
-إدارة نقاط النهاية من Microsoft على العديد من الأساليب وأنواع النهج لإدارة تكوين Defender لنقطة النهاية على الأجهزة.
+يتضمن إدارة نقاط النهاية من Microsoft العديد من الأساليب وأنواع النهج لإدارة تكوين Defender لنقطة النهاية على الأجهزة.
 
-عندما تحتاج حماية جهازك إلى تجاوز إدارة Defender for Endpoint، راجع نظرة عامة حول حماية الجهاز للتعرف على الإمكانات الإضافية التي يوفرها إدارة نقاط النهاية من Microsoft للمساعدة في حماية الأجهزة، بما في ذلك توافق الأجهزة والتطبيقات المدارة ونهج حماية التطبيقات والتكامل مع شركاء الدفاع ضد التهديدات المتنقلة والتوافق مع جهة خارجية.[](/mem/intune/protect/device-protect) 
+عندما تتجاوز احتياجات حماية جهازك إدارة Defender لنقطة النهاية، راجع [نظرة عامة حول حماية الجهاز](/mem/intune/protect/device-protect) للتعرف على القدرات الإضافية التي يوفرها إدارة نقاط النهاية من Microsoft للمساعدة في حماية الأجهزة، بما في ذلك *توافق الأجهزة* *والتطبيقات المدارة* *ونهج حماية التطبيقات* والتكامل مع شركاء *الامتثال لجهات خارجية وشركاء الدفاع عن تهديدات الأجهزة المحمولة*.
 
-يمكن أن يساعدك الجدول التالي على فهم السياسات التي يمكنها تكوين إعدادات MDE المعتمدة بواسطة الأجهزة التي تديرها السيناريوهات المختلفة. عند نشر نهج معتمد لكل من تكوين أمان *MDE* و إدارة نقاط النهاية من Microsoft، يمكن معالجة مثيل واحد من هذا النهج بواسطة الأجهزة التي تقوم بتشغيل MDE فقط والأجهزة التي تتم إدارتها بواسطة Intune أو Configuration Manager.
+يمكن أن يساعدك الجدول التالي على فهم النهج التي يمكنها تكوين إعدادات MDE المدعومة من قبل الأجهزة التي تتم إدارتها بواسطة سيناريوهات مختلفة. عند نشر نهج مدعوم لكل من *تكوين أمان MDE* *إدارة نقاط النهاية من Microsoft*، يمكن معالجة مثيل واحد من هذا النهج بواسطة الأجهزة التي تقوم بتشغيل MDE فقط والأجهزة التي تتم إدارتها بواسطة إما Intune أو Configuration Manager.
 
-| إدارة نقاط النهاية من Microsoft  | حمل العمل | تكوين أمان MDE  |  إدارة نقاط النهاية من Microsoft |
+| إدارة نقاط النهاية من Microsoft  | عبء العمل | تكوين أمان MDE  |  إدارة نقاط النهاية من Microsoft |
 |----------------|----------------|-------------------|------------|
-| أمان نقطة النهاية    | برنامج الحماية من الفيروسات                   | ![معتمد](../media/green-check.png)  | ![معتمد](../media/green-check.png)  |
-|                      | تشفير القرص   |           | ![معتمد](../media/green-check.png)  |
-|                      | جدار الحماية (ملف التعريف والقواعد)                | ![معتمد](../media/green-check.png) | ![معتمد](../media/green-check.png)  |
-|                      | الكشف عن نقطة النهاية والاستجابة لها        | ![معتمد](../media/green-check.png) | ![معتمد](../media/green-check.png)  |
-|                      | الحد من سطح الهجوم    |           | ![معتمد](../media/green-check.png)  |
-|                      | حماية الحساب       |       | ![معتمد](../media/green-check.png)  |
-|                      | توافق الجهاز     |   | ![معتمد](../media/green-check.png)  |
-|                      | الوصول الشرطي    |   | ![معتمد](../media/green-check.png)  |
-|                      | خطوط الأمان الأساسية      |   | ![معتمد](../media/green-check.png)  |
+| أمان نقطة النهاية    | مكافحه الفيروسات                   | ![دعم](../media/green-check.png)  | ![دعم](../media/green-check.png)  |
+|                      | تشفير القرص   |           | ![دعم](../media/green-check.png)  |
+|                      | جدار الحماية (ملف التعريف والقواعد)                | ![دعم](../media/green-check.png) | ![دعم](../media/green-check.png)  |
+|                      | الكشف عن نقطة النهاية والاستجابة لها        | ![دعم](../media/green-check.png) | ![دعم](../media/green-check.png)  |
+|                      | قواعد تقليل الأجزاء المعرضة للهجوم    |           | ![دعم](../media/green-check.png)  |
+|                      | حماية الحساب       |       | ![دعم](../media/green-check.png)  |
+|                      | توافق الجهاز     |   | ![دعم](../media/green-check.png)  |
+|                      | الوصول المشروط    |   | ![دعم](../media/green-check.png)  |
+|                      | أساسيات الأمان      |   | ![دعم](../media/green-check.png)  |
 
-**إن سياسات أمان نقطة** النهاية هي مجموعات منفصلة من الإعدادات المخصصة للاستخدام من قبل المسؤولين عن الأمان الذين يركزون على حماية الأجهزة في مؤسستك.
+نهج **أمان نقطة النهاية** هي مجموعات منفصلة من الإعدادات المخصصة للاستخدام من قبل مسؤولي الأمان الذين يركزون على حماية الأجهزة في مؤسستك.
 
-- **تقوم** سياسات الحماية من الفيروسات بإدارة تكوينات الأمان الموجودة في Microsoft Defender لنقطة النهاية. راجع  [نهج الحماية](/mem/intune/protect/endpoint-security-antivirus-policy) من الفيروسات لأمن نقطة النهاية.
-- **تركز سياسات الحد** من الهجمات على تقليل الأماكن التي تكون فيها مؤسستك عرضة للهجمات ولهجمات الإنترنت. لمزيد من المعلومات، راجع [](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) نظرة عامة حول الحد من سطح الهجوم في وثائق الحماية من المخاطر Windows، ونهج [](/mem/intune/protect/endpoint-security-asr-policy) الحد من سطح الهجوم لأمن نقطة النهاية.
-- **تدير سياسات** الكشف عن نقاط النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) قدرات Defender لنقطة النهاية التي توفر عمليات الكشف المتقدمة عن الهجمات التي تكون قريبة من الوقت الحقيقي و قابلة للتنفيذ. استنادا إلى الكشف التلقائي والاستجابة على النقط النهائية، يمكن لمحللي الأمان تحديد أولويات التنبيهات بفعالية، واكتساب الرؤية في النطاق الكامل للمخالفة، واتخاذ إجراءات الاستجابة للرد على التهديدات. راجع [الكشف عن تهديدات نقاط النهاية والرد عليها](/mem/intune/protect/endpoint-security-edr-policy) نهج أمان نقطة النهاية.
-- **تركز** سياسات جدار الحماية على جدار الحماية Defender على أجهزتك. راجع [نهج جدار](/mem/intune/protect/endpoint-security-firewall-policy) الحماية لأمن نقطة النهاية.
-- **تقوم قواعد جدار** الحماية بتكوين القواعد الخاصة بجدار الحماية، بما في ذلك المنافذ والبروتوكولات والتطبيقات والشبكات المحددة. راجع [نهج جدار](/mem/intune/protect/endpoint-security-firewall-policy) الحماية لأمن نقطة النهاية.
-- **تتضمن خطوط الأمان الأساسية** إعدادات أمان تم تكوينها مسبقا تحدد وضع الأمان الموصى به من قبل Microsoft لمنتجات مختلفة مثل Defender أو Edge أو Windows. تكون التوصيات الافتراضية من فرق المنتجات ذات الصلة وتمكنك من نشر التكوين الآمن الموصى به على الأجهزة بسرعة. على الرغم من أن الإعدادات تكون مسبقة الإعدادات في كل خط أساسي، يمكنك إنشاء مثيلات مخصصة لها لإنشاء توقعات الأمان لمؤسستك. راجع [خطوط الأمان الأساسية](/mem/intune/protect/security-baselines) ل Intune.
+- تدير نهج **الحماية من الفيروسات** تكوينات الأمان الموجودة في Microsoft Defender لنقطة النهاية. راجع نهج  [الحماية من الفيروسات](/mem/intune/protect/endpoint-security-antivirus-policy) لأمان نقطة النهاية.
+- تركز سياسات **تقليل الأجزاء المعرضة للهجوم** على تقليل الأماكن التي تكون فيها مؤسستك عرضة للتهديدات الإلكترونية والهجمات. لمزيد من المعلومات، راجع [نظرة عامة على تقليل الأجزاء المعرضة للهجوم](/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction) في وثائق الحماية من التهديدات Windows، وسياسة [تقليل الأجزاء المعرضة للهجوم](/mem/intune/protect/endpoint-security-asr-policy) لأمان نقطة النهاية.
+- تدير **نهج الكشف عن نقطة النهاية والاستجابة** لها (الكشف التلقائي والاستجابة على النقط النهائية) قدرات Defender لنقطة النهاية التي توفر عمليات الكشف المتقدمة عن الهجمات التي تقترب من الوقت الحقيقي وقابلة للتنفيذ. استنادا إلى تكوينات الكشف التلقائي والاستجابة على النقط النهائية، يمكن لمحللين أمنيين تحديد أولويات التنبيهات بشكل فعال، والحصول على رؤية للنطاق الكامل للخرق، واتخاذ إجراءات الاستجابة لمعالجة التهديدات. راجع [نهج الكشف عن تهديدات نقاط النهاية والرد عليها](/mem/intune/protect/endpoint-security-edr-policy) لأمان نقطة النهاية.
+- تركز نهج **جدار الحماية** على جدار حماية Defender على أجهزتك. راجع نهج [جدار الحماية](/mem/intune/protect/endpoint-security-firewall-policy) لأمان نقطة النهاية.
+- تعمل **قواعد جدار** الحماية على تكوين قواعد متعددة المستويات لجدار الحماية، بما في ذلك منافذ وبروتوكولات وتطبيقات وشبكات معينة. راجع نهج [جدار الحماية](/mem/intune/protect/endpoint-security-firewall-policy) لأمان نقطة النهاية.
+- تتضمن **أساسيات الأمان** إعدادات الأمان المكونة مسبقا التي تحدد وضع الأمان الموصى به من Microsoft لمنتجات مختلفة مثل Defender أو Edge أو Windows. التوصيات الافتراضية من فرق المنتجات ذات الصلة وتمكنك من نشر التكوين الآمن الموصى به بسرعة على الأجهزة. بينما يتم تكوين الإعدادات مسبقا في كل خط أساسي، يمكنك إنشاء مثيلات مخصصة لها لتحديد توقعات الأمان لمؤسستك. راجع [أساسيات الأمان](/mem/intune/protect/security-baselines) ل Intune.
 
-## <a name="configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management"></a>تكوين المستأجر لدعم Microsoft Defender لإدارة تكوين أمان نقطة النهاية
+## <a name="configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management"></a>تكوين المستأجر لدعم Microsoft Defender لنقطة النهاية إدارة تكوين الأمان
 
-لدعم إدارة تكوين أمان Microsoft Defender لنقطة النهاية إدارة نقاط النهاية من Microsoft مركز الإدارة، يجب تمكين التواصل بينها من داخل كل وحدة تحكم.
+لدعم Microsoft Defender لنقطة النهاية إدارة تكوين الأمان من خلال مركز إدارة إدارة نقاط النهاية من Microsoft، يجب تمكين الاتصال بينهما من داخل كل وحدة تحكم.
 
-1. سجل الدخول [إلى Microsoft 365 Defender واذهب](https://security.microsoft.com/)  >  إلى الإعدادات **EndpointsConfiguration** >  **ManagementEnforcement** **Scope** >  وتمكين الأنظمة الأساسية لإدارة إعدادات الأمان:
+1. سجل الدخول إلى [مدخل Microsoft 365 Defender](https://security.microsoft.com/) وانتقل إلى **الإعدادات** >  **EndpointsConfiguration** >  **ManagementEnforcement** >  Scope وتمكين الأنظمة الأساسية لإدارة إعدادات الأمان:
 
-   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="تمكين إدارة إعدادات Microsoft Defender لنقطة النهاية في وحدة تحكم Defender.":::
+   :::image type="content" source="../media/security-settings-mgt.png" alt-text="تمكين إدارة إعدادات Microsoft Defender لنقطة النهاية في وحدة تحكم Defender.":::
 
-2. تأكد من أن المستخدمين ذوي الصلة لديهم أذونات لإدارة إعدادات أمان نقاط النهاية في إدارة نقاط النهاية من Microsoft أو منح هذه الأذونات من خلال تكوين دور في مدخل Defender. انتقل إلى **الإعدادات** >  **RolesAdd** >  **العنصر**:
+    >[!NOTE]
+    >للتحكم بشكل دقيق في نطاق نقاط النهاية المدارة عبر إدارة إعدادات MDE، ضع في اعتبارك استخدام **وضع الإصدار التجريبي**.
+
+2. تأكد من أن المستخدمين المعنيين لديهم أذونات لإدارة إعدادات أمان نقطة النهاية في إدارة نقاط النهاية من Microsoft أو منح هذه الأذونات عن طريق تكوين دور في مدخل Defender. انتقل إلى **عنصر الإعدادات** >  **RolesAdd** > :
 
    :::image type="content" source="../media/add-role-in-mde.png" alt-text="إنشاء دور جديد في مدخل Defender.":::
 
    > [!TIP]
    > يمكنك تعديل الأدوار الموجودة وإضافة الأذونات الضرورية مقابل إنشاء أدوار إضافية في Microsoft Defender لنقطة النهاية
 
-3. عند تكوين الدور، أضف مستخدمين وتأكد من تحديد إدارة إعدادات أمان نقطة النهاية **في** إدارة نقاط النهاية من Microsoft:
+3. عند تكوين الدور، أضف مستخدمين وتأكد من تحديد **إدارة إعدادات أمان نقطة النهاية في إدارة نقاط النهاية من Microsoft**:
 
    :::image type="content" source="../media/add-role.png" alt-text="منح المستخدمين أذونات لإدارة الإعدادات.":::
 
-4. سجل الدخول إلى إدارة نقاط النهاية من Microsoft [الإدارة](https://go.microsoft.com/fwlink/?linkid=2109431).
+4. سجل الدخول إلى [مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-5. حدد **نقطة النهاية securityMicrosoft** >  **Defender ل Endpoint**، ثم قم بتعيين **السماح ل Microsoft Defender لنقطة النهاية بفرض تكوينات أمان** نقطة النهاية (معاينة) على التشغيل.
+5. حدد **أمان** >  نقطة النهاية **Microsoft Defender لنقطة النهاية**، ثم قم بتعيين **السماح Microsoft Defender لنقطة النهاية لفرض تكوينات أمان نقطة النهاية (معاينة)** إلى **تشغيل**.
 
-   :::image type="content" source="../media/enable-mde-settings-management-mem.png" alt-text="تمكين إدارة إعدادات Microsoft Defender لنقطة النهاية إدارة نقاط النهاية من Microsoft مركز الإدارة.":::
+   :::image type="content" source="../media/enable-mde-settings-management-mem.png" alt-text="تمكين إدارة إعدادات Microsoft Defender لنقطة النهاية في مركز إدارة إدارة نقاط النهاية من Microsoft.":::
 
-   عندما تقوم بتعيين هذا الخيار إلى *"* التشغيل"، فإن كل الأجهزة في نطاق النظام الأساسي في Microsoft Defender لنقطة النهاية التي لا يديرها إدارة نقاط النهاية من Microsoft ستكون مؤهلة للانصدار إلى Microsoft Defender ل Endpoint.
+   عند تعيين هذا الخيار إلى *"تشغيل"*، ستتأهل جميع الأجهزة الموجودة في نطاق النظام الأساسي في Microsoft Defender لنقطة النهاية التي لا تديرها إدارة نقاط النهاية من Microsoft لإلحاقها Microsoft Defender لنقطة النهاية.
 
-## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>الأجهزة المجهزة ل Microsoft Defender لنقطة النهاية
+## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>إلحاق الأجهزة Microsoft Defender لنقطة النهاية
 
-يدعم Microsoft Defender ل Endpoint العديد من الخيارات للأجهزة المجهزة. للحصول على الإرشادات الحالية، راجع [أدوات](/microsoft-365/security/defender-endpoint/security-config-management) وأساليب Windows الأجهزة في وثائق Defender for Endpoint.
+يدعم Microsoft Defender لنقطة النهاية العديد من الخيارات لإلحاق الأجهزة. للحصول على الإرشادات [الحالية، راجع أدوات وأساليب الإلحاق للأجهزة Windows](/microsoft-365/security/defender-endpoint/security-config-management) في وثائق Defender لنقطة النهاية.
 
 
 > [!IMPORTANT]
-> بعد ألواح الأجهزة مع Microsoft Defender لنقطة النهاية، يجب وضع علامة عليها باستخدام **MDE-Management** قبل أن تتمكن من التسجيل في إدارة الأمان ل Microsoft Defender ل Endpoint. لمزيد من المعلومات حول وضع علامات على الجهاز في MDE، راجع [*إنشاء علامات الجهاز وإدارتها*](/microsoft-365/security/defender-endpoint/machine-tags).
+> بعد إلحاق جهاز مع Microsoft Defender لنقطة النهاية، يجب وضع علامة عليه باستخدام **MDE-Management** قبل أن يتمكن من التسجيل في إدارة الأمان Microsoft Defender لنقطة النهاية. لمزيد من المعلومات حول وضع علامات على الجهاز في MDE، راجع [*إنشاء علامات الجهاز وإدارتها*](/microsoft-365/security/defender-endpoint/machine-tags).
 
 
 ## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>التعاون مع Microsoft Endpoint Configuration Manager
-عند استخدام "إدارة التكوين"، فإن أفضل مسار لإدارة نهج الأمان هو استخدام إرفاق مستأجر ["إدارة التكوين](/mem/configmgr/tenant-attach/endpoint-security-get-started)". في بعض البيئات، قد ترغب في استخدام إدارة الأمان ل Microsoft Defender. عند استخدام إدارة الأمان ل Microsoft Defender مع إدارة التكوين، يجب عزل نهج أمان نقطة النهاية إلى مستوى تحكم واحد. يؤدي التحكم في النهج عبر كلتا القناةين إلى إنشاء فرصة التعارضات والنتائج غير المرجوة.
+في بعض البيئات قد يكون من المطلوب استخدام إدارة الأمان ل Microsoft Defender بالتزامن مع Configuration Manager. هذا ممكن عن طريق تعطيل **إعدادات إدارة الأمان باستخدام تبديل Configuration Manager** في **صفحة الإعدادات** (الإعدادات > نقاط النهاية > إدارة التكوين > نطاق الإنفاذ):
+
+:::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="إدارة إعدادات الأمان باستخدام إعداد Configuration Manager.":::
+
+>[!NOTE]
+>عند استخدام إدارة الأمان Microsoft Defender لنقطة النهاية مع Configuration Manager، يجب عزل نهج أمان نقطة النهاية إلى مستوى تحكم واحد. قد يؤدي التحكم في النهج من خلال القناتين إلى حدوث تعارضات ونتائج غير مرغوب فيها.
 
 
 ## <a name="create-azure-ad-groups"></a>إنشاء مجموعات Azure AD
 
-بعد الأجهزة التي يتم تشغيلها على Defender for Endpoint، ستحتاج إلى إنشاء مجموعات أجهزة لدعم نشر النهج ل Microsoft Defender لنقطة النهاية.
+بعد إلحاق الأجهزة ب Defender لنقطة النهاية، ستحتاج إلى إنشاء مجموعات أجهزة لدعم نشر النهج Microsoft Defender لنقطة النهاية.
 
-لتحديد الأجهزة التي تم تسجيلها في Microsoft Defender لنقطة النهاية ولكن لا يديرها Intune أو إدارة التكوين:
+لتحديد الأجهزة التي سجلت في Microsoft Defender لنقطة النهاية ولكن لا تتم إدارتها بواسطة Intune أو Configuration Manager:
 
-1. سجل الدخول إدارة نقاط النهاية من Microsoft [مركز الإدارة](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. سجل الدخول إلى [مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. انتقل إلى **الأجهزة** >  **كل الأجهزة**، ثم حدد العمود **مدار حسب** لفرز طريقة عرض الأجهزة.
+2. انتقل إلى **أجهزة DevicesAll** > ، ثم حدد العمود **"مدار بواسطة**" لفرز طريقة عرض الأجهزة.
 
-   تعرض الأجهزة التي يتم تشغيلها على Microsoft Defender لنقطة النهاية والمسجلة ولكن لا يديرها Intune **Microsoft Defender لنقطة** النهاية في العمود *المدار بواسطة* . هذه هي الأجهزة التي يمكنها تلقي نهج لإدارة الأمان ل Microsoft Defender ل Endpoint.
+   الأجهزة التي تم إلحاقها Microsoft Defender لنقطة النهاية والتي تم تسجيلها ولكن لا تتم إدارتها بواسطة عرض Intune **Microsoft Defender لنقطة النهاية** في العمود *"مدار بواسطة*". هذه هي الأجهزة التي يمكن أن تتلقى سياسة لإدارة الأمان Microsoft Defender لنقطة النهاية.
 
-   ستجد أيضا تسميتين للأجهزة التي تستخدم إدارة الأمان ل Microsoft Defender لنقطة النهاية:
+   ستجد أيضا تسميتين للأجهزة التي تستخدم إدارة الأمان Microsoft Defender لنقطة النهاية:
 
-   - **MDEJoined** - يضاف إلى الأجهزة التي تم ضمها إلى الدليل كجزء من هذا السيناريو.
-   - **MDEManaged** - مضافة إلى الأجهزة التي تستخدم سيناريو إدارة الأمان بشكل نشط. تتم إزالة هذه العلامة من الجهاز إذا توقف Defender for Endpoint عن إدارة تكوين الأمان.
+   - **MDEJoined** - تمت إضافتها إلى الأجهزة المتصلة بالدليل كجزء من هذا السيناريو.
+   - **MDEManaged** - تمت إضافتها إلى الأجهزة التي تستخدم سيناريو إدارة الأمان بشكل نشط. تتم إزالة هذه العلامة من الجهاز إذا توقف Defender for Endpoint عن إدارة تكوين الأمان.
 
-يمكنك إنشاء مجموعات لهذه الأجهزة [في Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) أو من [إدارة نقاط النهاية من Microsoft مركز الإدارة](/mem/intune/fundamentals/groups-add).
+يمكنك إنشاء مجموعات لهذه الأجهزة [في Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) أو [من داخل مركز إدارة إدارة نقاط النهاية من Microsoft](/mem/intune/fundamentals/groups-add).
 
 ## <a name="deploy-policy"></a>نهج النشر
 
-بعد إنشاء مجموعة Azure AD واحدة أو أكثر تحتوي على أجهزة مدارة بواسطة Microsoft Defender لنقطة النهاية، يمكنك إنشاء ونشر السياسات التالية لإدارة الأمان ل Microsoft Defender لنقطة النهاية لتلك المجموعات:
+بعد إنشاء مجموعة Azure AD واحدة أو أكثر تحتوي على أجهزة مدارة بواسطة Microsoft Defender لنقطة النهاية، يمكنك إنشاء النهج التالية لإدارة الأمان ونشرها Microsoft Defender لنقطة النهاية إلى تلك المجموعات:
 
-- برنامج الحماية من الفيروسات
-- جدار الحماية
+- مكافحه الفيروسات
+- جدار حمايه
 - قواعد جدار الحماية
 - الكشف عن نقطة النهاية والاستجابة لها
 
 > [!TIP]
-> تجنب نشر عدة سياسات تدير الإعداد نفسه على جهاز.
+> تجنب نشر نهج متعددة تدير نفس الإعداد على جهاز.
 >
-> إدارة نقاط النهاية من Microsoft نشر مثيلات متعددة من كل نوع نهج أمان نقطة نهاية إلى الجهاز نفسه، مع تلقي كل مثيل نهج من قبل الجهاز بشكل منفصل. وبالتالي، قد يتلقى الجهاز تكوينات منفصلة لنفس الإعداد عن مختلف السياسات، مما يؤدي إلى تعارض. سيتم دمج بعض الإعدادات (مثل استثناءات برنامج الحماية من الفيروسات) على العميل وتطبيقها بنجاح.
+> يدعم إدارة نقاط النهاية من Microsoft نشر مثيلات متعددة لكل نوع نهج أمان نقطة النهاية إلى نفس الجهاز، مع تلقي كل مثيل نهج من قبل الجهاز بشكل منفصل. لذلك، قد يتلقى الجهاز تكوينات منفصلة لنفس الإعداد من نهج مختلفة، ما يؤدي إلى حدوث تعارض. سيتم دمج بعض الإعدادات (مثل استثناءات الحماية من الفيروسات) على العميل وتطبيقها بنجاح.
 
-1. سجل الدخول إلى إدارة نقاط النهاية من Microsoft [الإدارة](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. سجل الدخول إلى [مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. انتقل إلى **أمان نقطة النهاية** ثم حدد نوع النهج الذي تريد تكوينه، إما برنامج الحماية من الفيروسات أو جدار الحماية، ثم حدد **إنشاء نهج**.
 
 3. أدخل الخصائص التالية أو نوع النهج الذي حددته:
 
-   - بالنسبة إلى نهج الحماية من الفيروسات، حدد:
-     - النظام الأساسي: **Windows 10 Windows 11 وخادم Windows (معاينة)**
+   - لنهج الحماية من الفيروسات، حدد:
+     - النظام الأساسي: **خادم Windows 10 Windows 11 وخادم Windows (معاينة)**
      - ملف التعريف: **برنامج الحماية من الفيروسات من Microsoft Defender (معاينة)**
 
-   - بالنسبة إلى نهج جدار الحماية، حدد:
-     - النظام الأساسي: **Windows 10 Windows 11 وخادم Windows (معاينة)**
-     - ملف التعريف: **جدار الحماية ل Microsoft Defender (معاينة)**
+   - لنهج جدار الحماية، حدد:
+     - النظام الأساسي: **خادم Windows 10 Windows 11 وخادم Windows (معاينة)**
+     - ملف التعريف: **جدار حماية Microsoft Defender (معاينة)**
 
-   - بالنسبة إلى نهج قواعد جدار الحماية، حدد:
-     - النظام الأساسي: **Windows 10 Windows 11 وخادم Windows (معاينة)**
+   - بالنسبة لنهج قواعد جدار الحماية، حدد:
+     - النظام الأساسي: **خادم Windows 10 Windows 11 وخادم Windows (معاينة)**
      - ملف التعريف: **قواعد جدار حماية Microsoft Defender (معاينة)**
 
-   - بالنسبة إلى نهج الكشف عن نقاط النهاية والاستجابة لها، حدد:
-     - النظام الأساسي: **Windows 10 Windows 11 وخادم Windows (معاينة)**
+   - بالنسبة إلى نهج الكشف عن نقطة النهاية والاستجابة لها، حدد:
+     - النظام الأساسي: **خادم Windows 10 Windows 11 وخادم Windows (معاينة)**
      - ملف التعريف: **الكشف عن نقطة النهاية والاستجابة لها (معاينة)**
 
    >[!Note]
-   > تنطبق ملفات التعريف هذه على كلا الجهازين الذين يتواصلون عبر إدارة أجهزة المحمول (MDM) مع Microsoft Intune بالإضافة إلى الأجهزة التي تتواصل باستخدام عميل Microsoft Defender for Endpoint.
+   > تنطبق ملفات التعريف هذه على كلا الجهازين الذين يتصلان من خلال إدارة الجهاز الأجهزة المحمولة (MDM) مع Microsoft Intune بالإضافة إلى الأجهزة التي تتصل باستخدام عميل Microsoft Defender لنقطة النهاية.
    >
-   > تأكد من مراجعة الاستهداف والمجموعات حسب الحاجة.
+   > تأكد من مراجعة الاستهداف والمجموعات حسب الضرورة.
 
-4. حدد **إنشاء**.
+4. حدد **"إنشاء**".
 
-5. في صفحة **الأساسيات** ، أدخل اسما ووصفا لملف التعريف، ثم اختر **التالي**.
+5. في صفحة **"الأساسيات** "، أدخل اسما ووصفا لملف التعريف، ثم اختر **"التالي**".
 
-6. في **الصفحة إعدادات التكوين** ، حدد الإعدادات التي تريد إدارتها باستخدام ملف التعريف هذا. لمعرفة المزيد حول أحد الإعدادات، قم بتوسيع مربع حوار المعلومات الخاص به وحدد الارتباط معرفة المزيد لعرض معلومات CSP الخاصة بهذا الإعداد في الوثائق على الخط.
+6. في صفحة **إعدادات التكوين** ، حدد الإعدادات التي تريد إدارتها باستخدام ملف التعريف هذا. لمعرفة المزيد حول أحد الإعدادات، قم بتوسيع مربع الحوار "معلوماته" وحدد الارتباط *"معرفة المزيد* " لعرض معلومات CSP للإعداد في الوثائق المتصلة.
 
-   عند انتهائك من تكوين الإعدادات، حدد **التالي**.
+   عند الانتهاء من تكوين الإعدادات، حدد **"التالي**".
 
-7. في صفحة **الواجبات** ، حدد مجموعات Azure AD التي ستتلقى ملف التعريف هذا. لمزيد من المعلومات حول تعيين ملفات التعريف، راجع [تعيين ملفات تعريف المستخدمين والجهاز](/mem/intune/configuration/device-profile-assign).
+7. في صفحة **"الواجبات**"، حدد مجموعات Azure AD التي ستتلقى ملف التعريف هذا. لمزيد من المعلومات حول تعيين ملفات التعريف، راجع [تعيين ملفات تعريف المستخدمين والجهاز](/mem/intune/configuration/device-profile-assign).
 
-   حدد **التالي** للمتابعة.
+   حدد **"التالي** " للمتابعة.
 
    > [!TIP]
    >
    > - عوامل تصفية التعيين غير معتمدة لملفات تعريف إدارة تكوين الأمان.
-   > - تنطبق *كائنات الجهاز* فقط على Microsoft Defender لإدارة نقاط النهاية. استهداف المستخدمين غير معتمد.
-   > - سيتم تطبيق السياسات التي تم تكوينها على كل من Microsoft Intune و Microsoft Defender لعملاء Endpoint
+   > - تنطبق *عناصر الجهاز* فقط على إدارة Microsoft Defender لنقطة النهاية. استهداف المستخدمين غير معتمد.
+   > - سيتم تطبيق النهج التي تم تكوينها على كل من عملاء Microsoft Intune Microsoft Defender لنقطة النهاية
 
-8. أكمل عملية إنشاء النهج، ثم في الصفحة **مراجعة + إنشاء** ، حدد **إنشاء**. يتم عرض ملف التعريف الجديد في القائمة عند تحديد نوع النهج لملف التعريف الذي أنشأته.
+8. أكمل عملية إنشاء النهج ثم في صفحة **"Review + create** "، حدد **"Create**". يتم عرض ملف التعريف الجديد في القائمة عند تحديد نوع النهج لملف التعريف الذي أنشأته.
 
-9. انتظر حتى يتم تعيين النهج وانظر إشارة نجاح إلى أنه تم تطبيق النهج.
+9. انتظر حتى يتم تعيين النهج واعرض إشارة نجاح إلى أنه تم تطبيق النهج.
 
-10. يمكنك التحقق من صحة تطبيق الإعدادات محليا على العميل باستخدام الأداة المساعدة لأوامر [Get-MpPreference](/powershell/module/defender/get-mppreference#examples) .
+10. يمكنك التحقق من أن الإعدادات قد تم تطبيقها محليا على العميل باستخدام الأداة المساعدة للأمر [Get-MpPreference](/powershell/module/defender/get-mppreference#examples) .

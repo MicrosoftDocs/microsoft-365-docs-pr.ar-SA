@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 51f9c373a68e34ffafa5c3763b8efe77fa2c6146
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a27cb75a9bace821e20a914bc3c63b571079f9db
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098725"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188405"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender لنقطة النهاية لعملاء الحكومة الأمريكية
 
@@ -211,6 +211,6 @@ Windows Server 2008 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم](images
 |الوصول المشروط/التشغيل الشرطي|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
 |دعم MAM|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
 |عناصر التحكم في الخصوصية|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
-|إدارة المخاطر والثغرات الأمنية (TVM)|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|
+|إدارة المخاطر والثغرات الأمنية (TVM)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
   
 

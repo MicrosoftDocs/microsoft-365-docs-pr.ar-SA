@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6fb2b8c3e1466c52d707538f46643580c72a6fbf
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 351a403923df8e12d63051e30518b5c254abccb8
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841891"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188801"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>ما الجديد في Microsoft Defender لنقطة النهاية
 
@@ -31,7 +31,7 @@ ms.locfileid: "64841891"
 **ينطبق على:**
 
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -62,6 +62,7 @@ ms.locfileid: "64841891"
 
 ## <a name="april-2022"></a>أبريل 2022
 - [الإعداد المحدث وتماثل الميزات ل Windows Server 2012 R2 و Windows Server 2016)](configure-server-endpoints.md)<br/> حزمة الحلول الموحدة الجديدة متاحة الآن بشكل عام وتجعل من السهل إلحاق الخوادم عن طريق إزالة التبعيات وخطوات التثبيت. بالإضافة إلى ذلك، تأتي حزمة الحلول الموحدة هذه مع العديد من تحسينات الميزات الجديدة.
+- التكامل مع النفق. يمكن Microsoft Defender لنقطة النهاية على iOS الآن التكامل مع Microsoft Tunnel، وهو حل بوابة VPN لتمكين الأمان والاتصال في تطبيق واحد. كانت هذه الميزة متوفرة مسبقا على Android فقط. [معرفة المزيد](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## <a name="january-2022"></a>يناير 2022
 

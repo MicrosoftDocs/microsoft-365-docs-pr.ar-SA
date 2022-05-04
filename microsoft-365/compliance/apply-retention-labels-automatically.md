@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: إنشاء نهج استبقاء التسميات التلقائية حتى تتمكن من تطبيق التسميات تلقائيا للاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه
-ms.openlocfilehash: 2c1ea20f9b663ca8cee59043bbe6399f5bae66f1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 1895669c20d06bdae13ed2d25183dff92862d44f
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145256"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188845"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>تطبيق تسمية استبقاء تلقائيا للاحتفاظ بالمحتوى أو حذفه
 
@@ -279,7 +279,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 > [!CAUTION]
 > نحن نإهمال المصنف المدرب مسبقا **للغة المسيئة** لأنه ينتج عددا كبيرا من النتائج الإيجابية الخاطئة. لا تستخدم هذا المصنف وإذا كنت تستخدمه حاليا، نوصيك بنقل عمليات عملك منه واستخدام المصنفات **المستهدفة** **والألفاظ النابية** **والتهديدات** المدربة مسبقا بدلا من ذلك.
 
-لتطبيق تسمية تلقائيا باستخدام هذا الخيار، يجب أن تحتوي SharePoint المواقع وعلب البريد على 10 ميغابايت على الأقل من البيانات.
+لتطبيق تسمية تلقائيا باستخدام هذا الخيار، يجب أن تحتوي المواقع SharePoint وعلب البريد على 10 ميغابايت على الأقل من البيانات.
 
 لمزيد من المعلومات حول المصنفات القابلة للتدريب، راجع [التعرف على المصنفات القابلة للتدريب](classifier-learn-about.md).
 

@@ -1,7 +1,7 @@
 ---
-title: ما الجديد في Microsoft Defender ل Endpoint على نظام التشغيل iOS
-description: تعرف على التغييرات الرئيسية للإصدارات السابقة من Microsoft Defender ل Endpoint على نظام التشغيل iOS.
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، mac، التثبيت، macos، whatsnew
+title: أحدث الميزات في Microsoft Defender لنقطة النهاية على iOS
+description: تعرف على التغييرات الرئيسية للإصدارات السابقة من Microsoft Defender لنقطة النهاية على iOS.
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، التثبيت، macos، whatsnew
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
@@ -15,76 +15,87 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 503ae29fd371948f68b0c25aafe34f02f7bb8f1d
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 7f3a687eb365813192948e48514bf7384cc584d0
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "63578170"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188155"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>ما الجديد في Microsoft Defender ل Endpoint على نظام التشغيل iOS
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>أحدث الميزات في Microsoft Defender لنقطة النهاية على iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="improved-experience-on-supervised-ios-devices"></a>تجربة محسنة على أجهزة iOS المجهزة
 
-لدى Microsoft Defender ل Endpoint على نظام التشغيل iOS الآن قدرة متخصصة على أجهزة iOS/iPadOS التي تم تحسينها، نظرا لقدرات الإدارة المتزايدة التي يوفرها النظام الأساسي على هذه الأنواع من الأجهزة. كما يمكن أن يوفر حماية **ويب بدون إعداد VPN محلي على الجهاز**. يمنح ذلك المستخدمين تجربة سلسة مع الحماية من التصيد الاحتيالي وهجمة أخرى مستندة إلى الويب. للحصول على التفاصيل، تفضل [بزيارة هذه الوثائق](ios-install.md#complete-deployment-for-supervised-devices)
+## <a name="integration-with-tunnel"></a>التكامل مع النفق
+يمكن Microsoft Defender لنقطة النهاية على iOS الآن التكامل مع Microsoft Tunnel، وهو حل بوابة VPN لتمكين الأمان والاتصال في تطبيق واحد.  يوفر التكامل مع Tunnel تجربة VPN أبسط وآمنة على iOS مع تطبيق واحد فقط. كانت هذه الميزة متوفرة مسبقا على Android فقط. لمزيد من التفاصيل، [راجع منشور «techcommunity» هنا](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
-## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>أصبح Microsoft Defender for Endpoint الآن Microsoft Defender في متجر التطبيقات
+## <a name="improved-experience-on-supervised-ios-devices"></a>تجربة محسنة على أجهزة iOS الخاضعة للإشراف
 
-يتوفر Microsoft Defender for Endpoint الآن **ك Microsoft Defender** في متجر التطبيقات. باستخدام هذا التحديث، سيكون التطبيق متوفرا كمعاينة للمستهلكين **في منطقة الولايات المتحدة**. استنادا إلى كيفية تسجيل الدخول إلى التطبيق باستخدام حساب العمل أو الحساب الشخصي، سيكون لديك حق الوصول إلى ميزات Microsoft Defender ل Endpoint أو إلى ميزات Microsoft Defender للأفراد. لمزيد من المعلومات، راجع [هذه المدونة](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals).
+يتمتع Microsoft Defender لنقطة النهاية على iOS الآن بقدرة متخصصة على أجهزة iOS/iPadOS الخاضعة للإشراف، نظرا إلى زيادة قدرات الإدارة التي يوفرها النظام الأساسي على هذه الأنواع من الأجهزة. كما يمكن أن توفر حماية الويب **دون إعداد VPN محلي على الجهاز**. وهذا يعطي المستخدمين النهائيين تجربة سلسة مع استمرار حمايتهم من التصيد الاحتيالي والهجمات الأخرى المستندة إلى الويب. للحصول على التفاصيل، تفضل بزيارة [هذه الوثائق](ios-install.md#complete-deployment-for-supervised-devices)
 
-## <a name="threat-and-vulnerability-management"></a>إدارة المخاطر والنقاط الضعف
+## <a name="microsoft-defender-for-endpoint-is-now-microsoft-defender-in-the-app-store"></a>Microsoft Defender لنقطة النهاية أصبح الآن Microsoft Defender في متجر التطبيقات
 
-في 25 يناير 2022، أعلنا عن التوفر العام لإدارة المخاطر والضعف على نظامي التشغيل Android و iOS. لمزيد من التفاصيل، راجع [منشور techcommunity هنا](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+يتوفر Microsoft Defender لنقطة النهاية الآن ك **Microsoft Defender** في متجر التطبيقات. مع هذا التحديث، سيكون التطبيق متوفرا كمعاينة **للمستهلكين في منطقة الولايات المتحدة**. استنادا إلى كيفية تسجيل الدخول إلى التطبيق باستخدام حساب العمل أو الحساب الشخصي، سيكون لديك حق الوصول إلى ميزات Microsoft Defender لنقطة النهاية أو ميزات Microsoft Defender للأفراد. لمزيد من المعلومات، راجع [هذه المدونة](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals).
+
+## <a name="threat-and-vulnerability-management"></a>إدارة المخاطر والثغرات الأمنية
+
+في 25 يناير 2022، أعلنا عن التوفر العام لإدارة المخاطر والثغرات الأمنية على Android وiOS. لمزيد من التفاصيل، راجع [منشور «techcommunity» هنا](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+
+
+## <a name="1128250101"></a>1.1.28250101
+- **التكامل مع Tunnel** - يمكن Microsoft Defender لنقطة النهاية على iOS الآن التكامل مع Microsoft Tunnel، وهو حل بوابة VPN لتمكين الأمان والاتصال في تطبيق واحد. لمزيد من المعلومات، راجع [نظرة عامة على نفق Microsft](/mem/intune/protect/microsoft-tunnel-overview).
+- يتوفر **الإعداد بدون لمس لأجهزة iOS المسجلة** من خلال إدارة نقاط النهاية من Microsoft (Intune) بشكل عام. لمزيد من المعلومات، راجع [عدم إلحاق Microsoft Defender لنقطة النهاية باللمس](/microsoft-365/security/defender-endpoint/ios-install#zero-touch-onboarding-of-microsoft-defender-for-endpoint).
+- إصلاحات الأخطاء.
+
 
 ## <a name="1124210103"></a>1.1.24210103
 
-- تم حل مشاكل الاتصال بالإنترنت على الأجهزة التي تم تهيي تهانيها. لمزيد من المعلومات، راجع [نشر Defender لنقطة النهاية على أجهزة iOS التي تم تسجيلها](ios-install.md).
+- تم حل مشكلات الاتصال بالإنترنت على الأجهزة الخاضعة للإشراف. لمزيد من المعلومات، راجع [Deploy Defender لنقطة النهاية على أجهزة iOS المسجلة](ios-install.md).
 - إصلاحات الأخطاء.
 
 ## <a name="1123250104"></a>1.1.23250104
 
-- تحسينات الأداء - اختبر أداء البطارية باستخدام هذا الإصدار وأعلمنا بملاحظاتك.
-- اللوحة التي تعمل باللمس الصفري للأجهزة التي **تعمل ب iOS** المسجلين - باستخدام هذا الإصدار، تم إضافة معاينة اللوحة التي تعمل باللمس الصفري للأجهزة التي تم تسجيلها إدارة نقاط النهاية من Microsoft (Intune). لمزيد من المعلومات، راجع هذه [الوثائق](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) للحصول على مزيد من التفاصيل حول الإعداد والتكوين.
-- **عناصر تحكم الخصوصية** - تكوين عناصر التحكم بالخصوصية الخاصة بتقرير تنبيه التصيد الاحتيالي. لمزيد من المعلومات، راجع [تكوين ميزات iOS](ios-configure-features.md).
+- تحسينات الأداء - اختبار أداء البطارية باستخدام هذا الإصدار وإعلامنا بملاحظاتك.
+- **تهيئة بدون لمس لأجهزة iOS المسجلة** - مع هذا الإصدار، تمت إضافة معاينة تشغيل Zero-touch للأجهزة المسجلة من خلال إدارة نقاط النهاية من Microsoft (Intune). لمزيد من المعلومات، راجع هذه [الوثائق](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint) للحصول على مزيد من التفاصيل حول الإعداد والتكوين.
+- **عناصر التحكم في الخصوصية** - تكوين عناصر التحكم في الخصوصية لتقرير تنبيه التصيد الاحتيالي. لمزيد من المعلومات، راجع [تكوين ميزات iOS](ios-configure-features.md).
 
 ## <a name="1123010101"></a>1.1.23010101
 
 - إصلاحات الأخطاء وتحسينات الأداء 
-  - تم إجراء تحسينات الأداء في هذا الإصدار. اختبر أداء البطارية باستخدام هذا الإصدار وأعلمنا بملاحظاتك.
+  - تم إجراء تحسينات الأداء في هذا الإصدار. اختبر أداء البطارية باستخدام هذا الإصدار وأخبرنا بملاحظاتك.
 
 ## <a name="1120240103"></a>1.1.20240103
-- بطاقة "حالة الجهاز" - تُعريف بطاقة "حالة الجهاز" المستخدمين النهائيين بأي تحديثات برامج معلقة.
-- تحسينات قابلية الاستخدام - يمكن للمستخدمين الآن تعطيل Defender for Endpoint VPN من تطبيق MSDefender نفسه. قبل هذا التحديث، كان على المستخدمين تعطيل VPN فقط من الإعدادات التطبيق.
+- بطاقة Device Health - تقوم بطاقة Device Health بإعلام المستخدمين النهائيين بأي تحديثات برامج معلقة.
+- تحسينات قابلية الاستخدام - يمكن للمستخدمين النهائيين الآن تعطيل Defender لنقطة النهاية VPN من تطبيق MSDefender نفسه. قبل هذا التحديث، كان على المستخدمين النهائيين تعطيل VPN فقط من تطبيق الإعدادات.
 - إصلاحات الأخطاء.
 
 ## <a name="1120020101"></a>1.1.20020101
-- تحسينات UX - ل Microsoft Defender ل Endpoint شكل جديد.
+- تحسينات أسلوب عمل المستخدم - Microsoft Defender لنقطة النهاية له مظهر جديد.
 - إصلاحات الأخطاء.
 
 ## <a name="1117240101"></a>1.1.17240101
-- يتوفر دعم إدارة تطبيقات الأجهزة المحمولة (MAM) عبر Intune بشكل عام مع هذا الإصدار. للحصول على مزيد من المعلومات، راجع [إشارات مخاطر نقطة النهاية المتوفرة لنهج حماية التطبيق](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322)
-- **تتوفر عادة عملية الكشف** عن فُر الجان. لمزيد من المعلومات، راجع [إعداد نهج الوصول الشرطي استنادا إلى إشارات مخاطر الجهاز](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
-- **يتوفر الإعداد التلقائي لملف تعريف VPN** للأجهزة التي تم تسجيلها عبر إدارة نقاط النهاية من Microsoft (Intune) بشكل عام. لمزيد من المعلومات، راجع [الإعداد التلقائي لملف تعريف VPN للأجهزة التي تعمل ب iOS المسجلين](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
+- يتوفر دعم إدارة تطبيقات المحمول (MAM) عبر Intune بشكل عام مع هذا الإصدار. لمزيد من المعلومات، راجع [إشارات المخاطر Microsoft Defender لنقطة النهاية المتوفرة لنهج حماية التطبيقات](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-defender-for-endpoint-risk-signals-available-for-your/ba-p/2186322)
+- **الكشف عن الكسر من التهيؤ** متاح بشكل عام. لمزيد من المعلومات، راجع [إعداد نهج الوصول المشروط استنادا إلى إشارات مخاطر الجهاز](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
+- يتوفر **الإعداد التلقائي لملف تعريف VPN** للأجهزة المسجلة عبر إدارة نقاط النهاية من Microsoft (Intune) بشكل عام. لمزيد من المعلومات، راجع [ملف تعريف VPN للإعداد التلقائي لأجهزة iOS المسجلة](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
 - إصلاحات الأخطاء.
 
 ## <a name="1115140101"></a>1.1.15140101
 
-- **يتم الآن معاينة ميزة الكشف** عن فُر الجان. لمزيد من المعلومات، راجع [إعداد نهج الوصول الشرطي استنادا إلى إشارات مخاطر الجهاز](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
-- **الإعداد التلقائي لملف تعريف VPN** في وضع المعاينة للأجهزة التي تم تسجيلها عبر إدارة نقاط النهاية من Microsoft (Intune). لمزيد من المعلومات، راجع [الإعداد التلقائي لملف تعريف VPN للأجهزة التي تعمل ب iOS المسجلين](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
-- تم الآن تحديث اسم منتج MICROSOFT Defender ATP إلى Microsoft Defender لنقطة النهاية في متجر التطبيقات.
+- **الكشف عن المقاطعة** قيد المعاينة. لمزيد من المعلومات، راجع [إعداد نهج الوصول المشروط استنادا إلى إشارات مخاطر الجهاز](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
+- **الإعداد التلقائي لملف تعريف VPN** قيد المعاينة للأجهزة المسجلة عبر إدارة نقاط النهاية من Microsoft (Intune). لمزيد من المعلومات، راجع [ملف تعريف VPN للإعداد التلقائي لأجهزة iOS المسجلة](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
+- تم الآن تحديث اسم منتج Microsoft Defender ATP إلى Microsoft Defender لنقطة النهاية في متجر التطبيقات.
 - تجربة تسجيل الدخول المحسنة.
 - إصلاحات الأخطاء.
 
 ## <a name="1115010101"></a>1.1.15010101
 
-- مع هذا الإصدار، يتم الإعلان عن دعم أجهزة iPadOS/iPad الأخرى.
+- مع هذا الإصدار، نعلن عن دعم أجهزة iPadOS/iPad.
 - إصلاحات الأخطاء.

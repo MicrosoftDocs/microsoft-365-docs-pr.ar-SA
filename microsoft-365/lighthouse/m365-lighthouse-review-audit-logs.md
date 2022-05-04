@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية مراجعة سجلات التدقيق.
-ms.openlocfilehash: ca4d1e9941e0c15fee169def7be0c2d801f522c2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 59e45f33b1c6708b4743605bda6ac4c93499bf59
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022810"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188757"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>مراجعة سجلات التدقيق في Microsoft 365 Lighthouse
 
@@ -96,8 +96,9 @@ Microsoft 365 سجلات تدقيق Lighthouse تسجل الإجراءات ال�
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-إذا كنت بحاجة إلى مزيد من المعلومات، فاستخدم Microsoft Graph API للوصول إلى المزيد من أحداث التدقيق. لمزيد من المعلومات، راجع [نظرة عامة على الإدارة متعددة المستأجرين باستخدام واجهة برمجة تطبيقات lighthouse Microsoft 365](/graph/managedtenants-concept-overview).
+استخدم Microsoft Graph API للوصول إلى المزيد من أحداث التدقيق، إذا لزم الأمر. لمزيد من المعلومات، راجع [نظرة عامة على الإدارة متعددة المستأجرين باستخدام واجهة برمجة تطبيقات lighthouse Microsoft 365](/graph/managedtenants-concept-overview).
 
 ## <a name="related-content"></a>المحتويات ذات الصلة
 
-[الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)
+[الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)\
+[عرض أدوار Azure Active Directory في Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (مقالة)

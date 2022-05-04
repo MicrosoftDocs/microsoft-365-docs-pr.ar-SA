@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية إدارة قائمة المستأجرين.
-ms.openlocfilehash: b4bffcfd5b8962253e68938a956949ca8470f818
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: bdd92f066f0b94c545b102b96eedb7e08c10ed96
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022416"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188317"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>إدارة قائمة المستأجرين في Microsoft 365 Lighthouse
 
@@ -106,4 +106,6 @@ ms.locfileid: "65022416"
 
 ## <a name="related-content"></a>المحتويات ذات الصلة
 
-[التسجيل للحصول على Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (مقالة) [نظرة عامة على صفحة توافق الجهاز في Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (مقالة) [Microsoft 365 الأسئلة المتداولة حول Lighthouse](m365-lighthouse-faq.yml) (مقالة)
+[التسجيل للحصول على Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (مقالة)\
+[نظرة عامة على صفحة توافق الجهاز في Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article)\
+[الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)

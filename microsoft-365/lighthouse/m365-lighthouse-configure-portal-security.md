@@ -16,16 +16,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية تكوين أمان المدخل.
-ms.openlocfilehash: de93ebfff03241500bb1788fc282c4b2bb747ea2
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 60e0d2f1ba61e5def3979358f338da0846914543
+ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823554"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65188669"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>تكوين أمان مدخل Lighthouse Microsoft 365
 
-تعد حماية الوصول إلى بيانات العملاء عندما يقوم موفر الخدمة المدارة (MSP) بتفويض أذونات الوصول إلى مستأجريه أولوية أمان عبر الإنترنت. يأتي Microsoft 365 Lighthouse مع كل من القدرات المطلوبة والاختيارية لمساعدتك على تكوين أمان مدخل Lighthouse. يجب إعداد أدوار محددة مع تمكين المصادقة متعددة العوامل (MFA) قبل أن تتمكن من الوصول إلى Lighthouse. يمكنك إعداد إدارة الهويات المتميزة Azure AD (PIM) والوصول المشروط اختياريا.
+تعد حماية الوصول إلى بيانات العملاء عندما يقوم موفر الخدمة المدارة (MSP) بتفويض أذونات الوصول إلى مستأجريه أولوية أمان عبر الإنترنت. يأتي Microsoft 365 Lighthouse مع كل من القدرات المطلوبة والاختيارية لمساعدتك على تكوين أمان مدخل Lighthouse. يجب إعداد أدوار محددة مع تمكين المصادقة متعددة العوامل (MFA) قبل أن تتمكن من الوصول إلى Lighthouse. يمكنك إعداد Azure AD إدارة الهويات المتميزة (PIM) والوصول المشروط اختياريا.
 
 ## <a name="set-up-multifactor-authentication-mfa"></a>إعداد المصادقة متعددة العوامل (MFA)
 
@@ -45,12 +45,12 @@ ms.locfileid: "64823554"
 
 بالنسبة للإجراءات المتعلقة بالمستأجر غير المتعلقة بالعميل في Lighthouse (على سبيل المثال، الإلحاق، وإلغاء تنشيط/إعادة تنشيط العميل، وإدارة العلامات، ومراجعة السجلات)، يجب أن يكون لفنيي MSP دور معين في مستأجر الشريك. راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) للحصول على مزيد من التفاصيل حول أدوار المستأجرين الشركاء.
 
-## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>إعداد إدارة الهويات المتميزة Azure AD (PIM)
+## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>إعداد Azure AD إدارة الهويات المتميزة (PIM)
 
 يمكن ل MSPs تقليل عدد الأشخاص الذين لديهم حق وصول عالي الامتيازات إلى معلومات أو موارد آمنة باستخدام PIM. تقلل PIM من فرصة وصول شخص ضار إلى الموارد أو المستخدمين المعتمدين عن غير قصد للتأثير على مورد حساس. يمكن ل MSPs أيضا منح المستخدمين أدوار امتيازات عالية في الوقت المناسب للوصول إلى الموارد وإجراء تغييرات واسعة ومراقبة ما يفعله المستخدمون المعينون بالوصول المتميز.
 
 > [!NOTE]
-> يتطلب استخدام Azure AD PIM ترخيص Azure AD Premium P2 في مستأجر الشريك.
+> يتطلب استخدام Azure AD PIM ترخيص P2 Azure AD Premium في المستأجر الشريك.
 
 تقوم الخطوات التالية برفع مستخدمي المستأجرين الشركاء إلى أدوار امتيازات أعلى ذات نطاق زمني باستخدام PIM:
 
@@ -62,16 +62,18 @@ ms.locfileid: "64823554"
 
 لمعرفة المزيد حول PIM، راجع [ما هو إدارة الهويات المتميزة؟](/azure/active-directory/privileged-identity-management/pim-configure)
 
-## <a name="set-up-risk-based-azure-ad-conditional-access"></a>إعداد الوصول المشروط المستند إلى المخاطر في Azure AD
+## <a name="set-up-risk-based-azure-ad-conditional-access"></a>إعداد الوصول المشروط Azure AD المستند إلى المخاطر
 
-قد يستخدم موفرو خدمة MSPs الوصول المشروط المستند إلى المخاطر للتأكد من أن أعضاء فريق العمل يثبتون هويتهم باستخدام المصادقة متعددة العوامل (MFA) ومن خلال تغيير كلمة المرور الخاصة بهم عند اكتشافهم كمستخدم محفوف بالمخاطر (باستخدام بيانات اعتماد مسربة أو حسب التحليل الذكي للمخاطر في Azure AD). يجب على المستخدمين أيضا تسجيل الدخول من موقع مألوف أو جهاز مسجل عند اكتشافه كسجل دخول محفوف بالمخاطر. تتضمن السلوكيات الأخرى المحفوفة بالمخاطر تسجيل الدخول من عنوان IP ضار أو مجهول أو من موقع سفر غير نمطي أو مستحيل، أو استخدام رمز مميز غير طبيعي، أو استخدام كلمة مرور من نشر كلمة مرور، أو إظهار سلوك تسجيل دخول غير عادي آخر. اعتمادا على مستوى مخاطر المستخدم، قد تختار MSPs أيضا حظر الوصول عند تسجيل الدخول. لمعرفة المزيد حول المخاطر، راجع [ما هي المخاطر؟](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+قد تستخدم MSPs الوصول المشروط المستند إلى المخاطر للتأكد من أن أعضاء فريق العمل يثبتون هويتهم باستخدام المصادقة متعددة العوامل (MFA) ومن خلال تغيير كلمة المرور الخاصة بهم عند الكشف عنها كمستخدم محفوف بالمخاطر (مع بيانات اعتماد مسربة أو لكل Azure AD التحليل الذكي للمخاطر). يجب على المستخدمين أيضا تسجيل الدخول من موقع مألوف أو جهاز مسجل عند اكتشافه كسجل دخول محفوف بالمخاطر. تتضمن السلوكيات الأخرى المحفوفة بالمخاطر تسجيل الدخول من عنوان IP ضار أو مجهول أو من موقع سفر غير نمطي أو مستحيل، أو استخدام رمز مميز غير طبيعي، أو استخدام كلمة مرور من نشر كلمة مرور، أو إظهار سلوك تسجيل دخول غير عادي آخر. اعتمادا على مستوى مخاطر المستخدم، قد تختار MSPs أيضا حظر الوصول عند تسجيل الدخول. لمعرفة المزيد حول المخاطر، راجع [ما هي المخاطر؟](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
 > [!NOTE]
-> يتطلب الوصول المشروط ترخيص Azure AD Premium P2 في مستأجر الشريك. لإعداد الوصول المشروط، راجع [تكوين الوصول المشروط ل Azure Active Directory](/appcenter/general/configuring-aad-conditional-access).
+> يتطلب الوصول المشروط ترخيص P2 Azure AD Premium في مستأجر الشريك. لإعداد الوصول المشروط، راجع [تكوين الوصول المشروط ل Azure Active Directory](/appcenter/general/configuring-aad-conditional-access).
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [أذونات إعادة تعيين كلمة المرور](/azure/active-directory/roles/permissions-reference#password-reset-permissions) (مقالة)\
+[نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (مقالة)\
+[عرض أدوار Azure Active Directory في Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md) (article)\
 [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (مقالة)\
 [نظرة عامة على Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (مقالة)\
 [التسجيل للحصول على Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (مقالة)\
