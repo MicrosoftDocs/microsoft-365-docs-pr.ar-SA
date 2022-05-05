@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: استخدم أداة eDiscovery للبحث في المحتوى في مركز التوافق للبحث عن المحتوى في خدمات Microsoft 365 مختلفة.
-ms.openlocfilehash: 418bdffd71e83aea548c21589c6b8c08ae2419e8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 90b1ce142b5d629be86ba058071af906485e765f
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097085"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231704"
 ---
 # <a name="create-a-content-search"></a>إنشاء بحث في المحتوى
 
@@ -50,7 +50,9 @@ ms.locfileid: "65097085"
 
 - للوصول إلى أداة البحث في المحتوى في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق</a> (لتشغيل عمليات البحث ومعاينة النتائج ونتائج التصدير)، يجب أن يكون المسؤول أو مسؤول التوافق أو مدير eDiscovery عضوا في مجموعة دور eDiscovery Manager في مدخل التوافق. لمزيد من المعلومات، راجع [تعيين أذونات eDiscovery](assign-ediscovery-permissions.md).
 
-- في التوزيع المختلط Exchange، لا يمكنك استخدام أداة البحث في المحتوى للبحث في علب البريد المحلية. يمكنك فقط استخدام الأداة للبحث في علب البريد المستندة إلى السحابة.
+- في التوزيع المختلط Exchange، لا يمكنك استخدام أداة البحث في المحتوى للبحث في رسائل البريد الإلكتروني في علب البريد المحلية. يمكنك فقط استخدام الأداة للبحث في علب البريد المستندة إلى السحابة.
+
+- في التوزيع المختلط Exchange، يمكنك البحث عن بيانات الدردشة Teams في علب البريد المحلية. لمزيد من المعلومات، راجع [Teams بيانات الدردشة للمستخدمين المحليين](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users?view=o365-worldwide).
 
 ## <a name="create-and-run-a-search"></a>إنشاء بحث وتشغيله
   

@@ -26,6 +26,8 @@
   items:
     - name: نظرة عامة على صفحة المستأجرين
       href: m365-lighthouse-tenants-page-overview.md
+    - name: عرض أدوار Azure AD الخاصة بك عبر المستأجرين
+      href: m365-lighthouse-view-your-roles.md
     - name: إدارة قائمة المستأجرين
       href: m365-lighthouse-manage-tenant-list.md
     - name: عرض حالة خدمة المستأجر

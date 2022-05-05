@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: فهم الإعدادات التي يمكنك تكوينها في نهج الاستبقاء أو نهج تسمية الاستبقاء للاحتفاظ بما تريده والتخلص مما لا تريده.
-ms.openlocfilehash: ab3adee8275f6c64dd7ad3b21547e8205b00ff7d
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: ddfa921c8dae22bbe091e2c0f66fc9ae42aeea41
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187767"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231776"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>الإعدادات الشائعة لنهج الاستبقاء ونهج تسمية الاستبقاء
 
@@ -44,7 +44,7 @@ ms.locfileid: "65187767"
 
 ## <a name="scopes---adaptive-and-static"></a>النطاقات - موائمة مفتوحة وثابتة
 
-إذا كنت غير معتاد على النطاقات التكيفية وال ثابتة، ولمساعدتك على اختيار النهج الذي يجب استخدامه عند تكوين نهج للاستبقاء، فراجع [نطاقات النهج التكيفية أو الثابتة للاستبقاء](retention.md#adaptive-or-static-policy-scopes-for-retention). 
+إذا لم تكن معتادا على النطاقات التكيفية وال ثابتة، ولمساعدتك على اختيار النهج الذي يجب استخدامه عند تكوين نهج للاستبقاء، فراجع [نطاقات النهج التكيفية أو الثابتة للاستبقاء](retention.md#adaptive-or-static-policy-scopes-for-retention). 
 
 عندما تقرر ما إذا كنت تريد استخدام نطاق موائم أو ثابت، استخدم المعلومات التالية لمساعدتك على تكوينه:
 - [معلومات التكوين للنطاقات التكيفية](#configuration-information-for-adaptive-scopes)
@@ -73,7 +73,7 @@ ms.locfileid: "65187767"
 يمكن تحديد السمات والخصائص المدرجة في الجدول بسهولة عند تكوين نطاق موائم باستخدام منشئ الاستعلام البسيط. يتم دعم السمات والخصائص الإضافية مع منشئ الاستعلام المتقدم، كما هو موضح في القسم التالي.
 
 > [!TIP]
-> للحصول على معلومات إضافية حول استخدام منشئ الاستعلام المتقدم، راجع ندوات الويب التالية: 
+> لمزيد من المعلومات حول استخدام منشئ الاستعلام المتقدم، راجع ندوات الويب التالية: 
 > - [إنشاء استعلامات متقدمة للمستخدمين والمجموعات باستخدام نطاقات النهج التكيفي](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
 > - [إنشاء استعلامات متقدمة لمواقع SharePoint مع نطاقات النهج التكيفي](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
@@ -130,11 +130,11 @@ ms.locfileid: "65187767"
     - بالنسبة **لنطاقات مواقع SharePoint**، استخدم لغة استعلام الكلمات الأساسية (KQL). قد تكون على دراية بالفعل باستخدام KQL للبحث في SharePoint باستخدام خصائص الموقع المفهرسة. لمساعدتك في تحديد استعلامات KQL هذه، راجع [مرجع بناء جملة لغة استعلام الكلمات الأساسية (KQL](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)).
         
         على سبيل المثال، نظرا لأن نطاقات مواقع SharePoint تتضمن تلقائيا كافة أنواع المواقع SharePoint، والتي تتضمن Microsoft 365 مواقع متصلة بالمجموعة ومواقع OneDrive، يمكنك استخدام خاصية الموقع المفهرس **SiteTemplate** لتضمين أنواع مواقع معينة أو استبعادها. القوالب التي يمكنك تحديدها:
-        - SITEPAGEPUBLISHING لمواقع الاتصالات الحديثة
-        - GROUP للمواقع المتصلة بالمجموعة Microsoft 365
-        - TEAMCHANNEL لمواقع القنوات الخاصة Microsoft Teams
-        - STS لموقع فريق SharePoint كلاسيكي
-        - SPSPERS لمواقع OneDrive
+        - `SITEPAGEPUBLISHING` لمواقع الاتصالات الحديثة
+        - `GROUP`للمواقع المتصلة بالمجموعة Microsoft 365
+        - `TEAMCHANNEL`لمواقع القنوات الخاصة Microsoft Teams
+        - `STS`لموقع فريق SharePoint كلاسيكي
+        - `SPSPERS`لمواقع OneDrive
         
         لذلك لإنشاء نطاق موائمة مفتوح يتضمن مواقع الاتصالات الحديثة فقط ويستبعد Microsoft 365 المواقع المتصلة ب goup والمواقع OneDrive، حدد استعلام KQL التالي:
         ````console
@@ -175,19 +175,19 @@ ms.locfileid: "65187767"
 
 1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) باستخدام حساب مع [أذونات المسؤول Exchange Online المناسبة](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet).
 
-2. استخدم إما [Get-Recipient](/powershell/module/exchange/get-recipient) أو [Get-Mailbox](/powershell/module/exchange/get-mailbox) مع المعلمة *-Filter* [واستعلام OPATH](/powershell/exchange/filter-properties) الخاص بك للنطاق التكيفي المضمن بين أقواس متعرجة (`{`،`}`). إذا كانت قيم السمات عبارة عن سلاسل، قم بإحاطة هذه القيم بعلامات اقتباس مزدوجة أو مفردة.  
+2. استخدم إما [Get-Recipient](/powershell/module/exchange/get-recipient) أو [Get-Mailbox](/powershell/module/exchange/get-mailbox) أو [Get-User](/powershell/module/exchange/get-user) مع المعلمة *-Filter* [واستعلام OPATH](/powershell/exchange/filter-properties) الخاص بك للنطاق التكيفي المضمن بين أقواس متعرجة (`{`،`}`). إذا كانت قيم السمات عبارة عن سلاسل، قم بإحاطة هذه القيم بعلامات اقتباس مزدوجة أو مفردة.
 
-    يمكنك تحديد ما إذا كنت تريد استخدام `Get-Mailbox` أمر cmdlet الذي تدعمه [خاصية OPATH](/powershell/exchange/filter-properties) التي تختارها للاستعلام أو `Get-Recipient` التحقق من صحته.
+    يمكنك تحديد ما إذا كنت تريد استخدام Get-Mailbox أو Get-Recipient أو Get-User للتحقق من الصحة من خلال تحديد أمر cmdlet الذي تدعمه [خاصية OPATH](/powershell/exchange/filter-properties) التي تختارها للاستعلام.
 
     > [!IMPORTANT]
-    > `Get-Mailbox` لا يعتمد نوع المستلم *MailUser* ، لذلك `Get-Recipient` يجب استخدامه للتحقق من صحة الاستعلامات التي تتضمن علب البريد المحلية في بيئة مختلطة.
+    > لا يعتمد Get-Mailbox نوع المستلم *MailUser* ، لذلك يجب استخدام Get-Recipient أو Get-User للتحقق من صحة الاستعلامات التي تتضمن علب البريد المحلية في بيئة مختلطة.
 
-    للتحقق من صحة نطاق **مستخدم** ، استخدم إما:
-    - `Get-Mailbox` مع `-RecipientTypeDetails UserMailbox` أو
-    - `Get-Recipient` مع `-RecipientTypeDetails UserMailbox,MailUser`
+    للتحقق من صحة نطاق **مستخدم** ، استخدم الأمر المناسب:
+    - `Get-Mailbox` مع *-RecipientTypeDetails UserMailbox,SharedMailbox,RoomMailbox,EquipmentMailbox*
+    - `Get-Recipient` مع *-RecipientTypeDetails UserMailbox,MailUser,SharedMailbox,RoomMailbox,EquipmentMailbox*
     
     للتحقق من صحة نطاق **مجموعة Microsoft 365**، استخدم:
-    - `Get-Mailbox` أو `Get-Recipient` باستخدام `-RecipientTypeDetails GroupMailbox`
+    - `Get-Mailbox` مع *-GroupMailbox* أو `Get-Recipient` مع *-RecipientTypeDetails GroupMailbox*
 
     على سبيل المثال، للتحقق من صحة نطاق **مستخدم** ، يمكنك استخدام:
     
@@ -200,6 +200,11 @@ ms.locfileid: "65187767"
     ```PowerShell
     Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
     ```
+    
+    > [!TIP]
+    > عند استخدام هذه الأوامر للتحقق من صحة نطاق مستخدم، إذا كان عدد المستلمين الذين تم إرجاعهم أعلى من المتوقع، فقد يرجع ذلك إلى أنه يتضمن مستخدمين ليس لديهم ترخيص صالح للنطاقات الموائمة المفتوحة. لن يتم تطبيق إعدادات الاستبقاء على هؤلاء المستخدمين.
+    > 
+    > على سبيل المثال، في بيئة مختلطة، قد يكون لديك حسابات مستخدمين متزامنة غير مرخصة بدون علبة بريد Exchange محليا أو في Exchange Online. يمكنك تحديد هؤلاء المستخدمين عن طريق تشغيل الأمر التالي: `Get-User -RecipientTypeDetails User`
 
 3. تحقق من أن الإخراج يطابق المستخدمين أو المجموعات المتوقعة لنطاقك التكيفي. إذا لم يحدث ذلك، فتحقق من الاستعلام والقيم مع المسؤول ذي الصلة Azure AD أو Exchange.
  
@@ -217,7 +222,7 @@ ms.locfileid: "65187767"
 
 #### <a name="a-policy-that-applies-to-entire-locations"></a>نهج ينطبق على مواقع بأكملها
 
-باستثناء Skype for Business، يكون الإعداد الافتراضي هو تضمين جميع مثيلات المواقع المحددة تلقائيا في النهج دون الحاجة إلى تحديدها على أنها مضمنة.
+باستثناء Skype for Business، يكون الإعداد الافتراضي هو تضمين كافة مثيلات المواقع المحددة تلقائيا في النهج دون الحاجة إلى تحديدها على أنها مضمنة.
 
 على سبيل المثال، **كافة المستلمين** لموقع **البريد الإلكتروني Exchange**. باستخدام هذا الإعداد الافتراضي، سيتم تضمين كافة علب بريد المستخدمين الموجودة في النهج، وسترث أي علب بريد جديدة تم إنشاؤها بعد تطبيق النهج النهج تلقائيا.
 
@@ -242,9 +247,9 @@ ms.locfileid: "65187767"
 
 يتطلب موقع **البريد الإلكتروني Exchange** وموقع **المجلدات العامة Exchange** أن تحتوي علب البريد على 10 ميغابايت على الأقل من البيانات قبل أن تنطبق إعدادات الاستبقاء عليها.
 
-يدعم موقع **البريد الإلكتروني Exchange** استبقاء البريد الإلكتروني والتقويم وعناصر علبة البريد الأخرى الخاصة بالمستخدمين، من خلال تطبيق إعدادات الاستبقاء على مستوى علبة البريد. كما أن علب البريد المشتركة معتمدة.
+يدعم موقع **البريد الإلكتروني Exchange** استبقاء البريد الإلكتروني والتقويم وعناصر علبة البريد الأخرى الخاصة بالمستخدمين، من خلال تطبيق إعدادات الاستبقاء على مستوى علبة البريد. كما يتم دعم علب البريد المشتركة وعلب بريد الموارد للمعدات والغرف.
 
-علب بريد الموارد وجهات الاتصال وعلب بريد المجموعة Microsoft 365 غير معتمدة للبريد الإلكتروني Exchange. بالنسبة إلى علب بريد المجموعة Microsoft 365، حدد موقع **مجموعات Microsoft 365** بدلا من ذلك. على الرغم من أن موقع Exchange يسمح في البداية بتحديد علبة بريد المجموعة لنطاق ثابت، عندما تحاول حفظ نهج الاستبقاء، تتلقى رسالة خطأ تفيد بأن "RemoteGroupMailbox" ليس تحديدا صحيحا لهذا الموقع.
+جهات اتصال البريد الإلكتروني وعلب بريد المجموعة Microsoft 365 غير معتمدة للبريد الإلكتروني Exchange. بالنسبة إلى علب بريد المجموعة Microsoft 365، حدد موقع **مجموعات Microsoft 365** بدلا من ذلك. على الرغم من أن موقع Exchange يسمح في البداية بتحديد علبة بريد المجموعة لنطاق ثابت، عندما تحاول حفظ نهج الاستبقاء، ستتلقى رسالة خطأ تفيد بأن "RemoteGroupMailbox" ليس تحديدا صحيحا لهذا الموقع.
 
 استنادا إلى تكوين النهج الخاص بك، قد يتم تضمين [علب البريد غير النشطة](inactive-mailboxes-in-office-365.md) أو لا:
 
@@ -272,7 +277,7 @@ ms.locfileid: "65187767"
 
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>معلومات التكوين لمواقع SharePoint وحسابات OneDrive
 
-عند اختيار موقع **مواقع SharePoint**، يمكن لنهج الاستبقاء الاحتفاظ بالمستندات وحذفها في مواقع الاتصالات SharePoint ومواقع الفرق غير المتصلة بمجموعات Microsoft 365 والمواقع الكلاسيكية. ما لم تكن تستخدم [نطاقات نهج موائمة مفتوحة](#exceptions-for-adaptive-policy-scopes)، فإن مواقع الفريق المتصلة بمجموعات Microsoft 365 غير معتمدة مع هذا الخيار وبدلا من ذلك، استخدم موقع **مجموعات Microsoft 365** الذي ينطبق على المحتوى في علبة بريد المجموعة وموقعها وملفاتها.
+عند اختيار موقع **مواقع SharePoint**، يمكن لنهج الاستبقاء الاحتفاظ بالمستندات وحذفها في مواقع الاتصالات SharePoint ومواقع الفرق غير المتصلة بمجموعات Microsoft 365 والمواقع الكلاسيكية. ما لم تكن تستخدم [نطاقات نهج موائمة](#exceptions-for-adaptive-policy-scopes) مفتوحة، فإن مواقع الفريق المتصلة بمجموعات Microsoft 365 غير معتمدة مع هذا الخيار وبدلا من ذلك، استخدم موقع **مجموعات Microsoft 365** الذي ينطبق على المحتوى في علبة بريد المجموعة وموقعها وملفاتها.
 
 للحصول على معلومات مفصلة حول ما يتم تضمينه واستبعاده عند تكوين إعدادات الاستبقاء SharePoint OneDrive، راجع [ما هو مضمن للاستبقاء والحذف](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
 
@@ -302,11 +307,11 @@ ms.locfileid: "65187767"
 > [!NOTE]
 > على الرغم من أن مجموعة Microsoft 365 تحتوي على علبة بريد Exchange، فلن يتضمن نهج الاستبقاء لموقع **البريد الإلكتروني Exchange** محتوى في علب بريد المجموعة Microsoft 365.
 
-إذا كنت تستخدم نطاقات ثابتة: على الرغم من أن موقع **البريد الإلكتروني Exchange** لنطاق ثابت يسمح لك في البداية بتحديد علبة بريد مجموعة ليتم تضمينها أو استبعادها، عندما تحاول حفظ نهج الاستبقاء، سترى خطأ يفيد بأن "RemoteGroupMailbox" ليس تحديدا صحيحا لموقع Exchange.
+إذا كنت تستخدم نطاقات ثابتة: على الرغم من أن موقع **البريد الإلكتروني Exchange** لنطاق ثابت يسمح لك في البداية بتحديد علبة بريد مجموعة ليتم تضمينها أو استبعادها، عند محاولة حفظ نهج الاستبقاء، سترى خطأ يفيد بأن "RemoteGroupMailbox" ليس تحديدا صحيحا لموقع Exchange.
 
 بشكل افتراضي، يتضمن نهج الاستبقاء المطبق على مجموعة Microsoft 365 علبة بريد المجموعة وموقع الفرق SharePoint. تتم تغطية الملفات المخزنة في موقع فرق SharePoint بهذا الموقع، ولكن ليس Teams الدردشات أو رسائل القناة Teams التي تحتوي على مواقع نهج الاستبقاء الخاصة بها.
 
-لتغيير الإعداد الافتراضي لأنك تريد تطبيق نهج الاستبقاء على علب بريد Microsoft 365 فقط، أو مواقع فرق SharePoint المتصلة فقط، استخدم [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell cmdlet مع معلمة *التطبيقات* مع إحدى القيم التالية:
+لتغيير الإعداد الافتراضي لأنك تريد تطبيق نهج الاستبقاء على علب بريد Microsoft 365 فقط، أو مواقع فرق SharePoint المتصلة فقط، استخدم [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell cmdlet ومعلمة *التطبيقات* مع إحدى القيم التالية:
 
 - `Group:Exchange`فقط Microsoft 365 علب البريد المتصلة بالمجموعة.
 - `Group:SharePoint`للمواقع SharePoint المتصلة بالمجموعة فقط.
@@ -325,7 +330,7 @@ ms.locfileid: "65187767"
 
 - يتم الاحتفاظ بموقع SharePoint المتصل بالمجموعة ويستمر إدارته بواسطة نهج الاستبقاء مع موقع **مجموعات Microsoft 365**. لا يزال بإمكان الأشخاص الذين لديهم حق الوصول إليه الوصول إلى الموقع قبل حذف المجموعة، ويجب الآن إدارة أي أذونات جديدة عبر SharePoint.
     
-    في هذه المرحلة، لا يمكنك استبعاد الموقع من موقع مجموعات Microsoft 365، لأنه لا يمكنك تحديد المجموعة المحذوفة. إذا كنت بحاجة إلى إصدار نهج الاستبقاء من هذا الموقع، فاتصل بدعم Microsoft. على سبيل المثال، افتح [طلب خدمة في مركز مسؤول Microsoft 365](https://admin.microsoft.com/Adminportal/Home#/support).
+    في هذه المرحلة، لا يمكنك استبعاد الموقع من موقع مجموعات Microsoft 365، لأنه لا يمكنك تحديد المجموعة المحذوفة. إذا كنت بحاجة إلى إصدار نهج الاستبقاء من هذا الموقع، فاتصل بدعم Microsoft. على سبيل المثال، [افتح طلب دعم في مسؤول Microsoft 365 Center](/microsoft-365/admin/get-help-support#online-support).
 
 - تصبح علبة البريد الخاصة بالمجموعة المحذوفة غير نشطة، وتظل، مثل موقع SharePoint، خاضعة لإعدادات الاستبقاء. لمزيد من المعلومات، راجع [علب البريد غير النشطة في Exchange Online](inactive-mailboxes-in-office-365.md).
 

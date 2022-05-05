@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: تعرف على كيفية حماية معلوماتك الحساسة باستخدام نهج وأدوات منع فقدان بيانات Microsoft Purview وقم بجولة خلال دورة حياة DLP.
-ms.openlocfilehash: 755593830b489b268c81e722bd35a5984f2d1d93
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: aa32eba1111f4a119652ba88b59062581bb6cc4b
+ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953394"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65231757"
 ---
 # <a name="learn-about-data-loss-prevention"></a>التعرّف على تفادي فقدان البيانات
 
@@ -183,7 +183,7 @@ All DLP policies are created and maintained in the Microsoft Purview center. See
 
 ## <a name="viewing-policy-application-results"></a>عرض نتائج تطبيق النهج
 
-يبلغ DLP عن كمية هائلة من المعلومات في Microsoft Purview من المراقبة وتطابقات النهج والإجراءات وأنشطة المستخدم. ستحتاج إلى استخدام هذه المعلومات والعمل عليها لضبط سياساتك وإجراءات الفرز التي تم اتخاذها على العناصر الحساسة. تدخل بيانات تتبع الاستخدام في [سجلات تدقيق مدخل الامتثال ل Microsoft Purview](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) أولا، وتعالج، وتتجه إلى أدوات إعداد التقارير المختلفة. لكل أداة تقرير غرض مختلف.
+يبلغ DLP عن كمية هائلة من المعلومات في Microsoft Purview من المراقبة وتطابقات النهج والإجراءات وأنشطة المستخدم. ستحتاج إلى استخدام هذه المعلومات والعمل عليها لضبط سياساتك وإجراءات الفرز التي تم اتخاذها على العناصر الحساسة. تدخل بيانات تتبع الاستخدام في [سجلات تدقيق مدخل الامتثال ل Microsoft Purview](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) أولا، وتعالج، وتتجه إلى أدوات إعداد التقارير المختلفة. لكل أداة تقرير غرض مختلف.
 
 ### <a name="dlp-alerts-dashboard"></a>لوحة معلومات تنبيهات DLP
 
@@ -217,7 +217,7 @@ All DLP policies are created and maintained in the Microsoft Purview center. See
 
 - [التعرّف على تفادي فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md)
 - [تعرّف على نهج منع فقدان البيانات الافتراضي في Microsoft Teams (معاينة)](dlp-teams-default-policy.md)
-- [التعرف على الماسح الضوئي المحلي لمنع فقدان البيانات](dlp-on-premises-scanner-learn.md)
+- [تعرّف على الماسح الضوئي المحلي لمنع فقدان البيانات](dlp-on-premises-scanner-learn.md)
 - [التعرّف على ملحق التوافق من Microsoft](dlp-chrome-learn-about.md)
 - [التعرّف على لوحة معلومات تنبيهات تفادي فقدان البيانات](dlp-alerts-dashboard-learn.md)
 
