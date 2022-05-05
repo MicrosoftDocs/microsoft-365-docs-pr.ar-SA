@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5e474505eecca0c42aa919b42364a1ad54c27e17
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9bca10cf946a7e812064f07cc3be6fa658edf39
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094715"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217387"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>تعلم لغة استعلام التتبع المتقدمة
 
@@ -175,14 +175,14 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 للحصول على مساحة عمل أكثر كفاءة، يمكنك أيضا استخدام علامات تبويب متعددة في نفس صفحة التتبع. حدد **استعلاما جديدا** لفتح علامة تبويب للاستعلام الجديد.
 
-:::image type="content" source="../../media/multitab.png" alt-text="مثال على تنفيذ استعلامات متعددة في صفحة **New query** في مدخل Microsoft 365 Defender" lightbox="../../media/multitab.png":::
+:::image type="content" source="../../media/multitab.png" alt-text="فتح علامة تبويب جديدة عن طريق تحديد إنشاء جديد في التتبع المتقدم في مدخل Microsoft 365 Defender" lightbox="../../media/multitab.png":::
 
 يمكنك بعد ذلك تشغيل استعلامات مختلفة دون فتح علامة تبويب مستعرض جديدة. 
 
-:::image type="content" source="../../media/multitab-examples.png" alt-text="مثال على تنفيذ استعلامات متعددة في صفحة **New query** في مدخل Microsoft 365 Defender" lightbox="../../media/multitab-examples.png":::
+:::image type="content" source="../../media/multitab-examples.png" alt-text="تشغيل استعلامات مختلفة دون مغادرة صفحة التتبع المتقدمة في مدخل Microsoft 365 Defender" lightbox="../../media/multitab-examples.png":::
 
 >[!NOTE] 
-> تخاطر بفقدان الاستعلامات غير المحفوظة إذا فتحت علامة تبويب مستعرض جديدة لاستعلام جديد.
+> قد يؤدي استخدام علامات تبويب مستعرض متعددة مع التتبع المتقدم إلى فقدان استعلاماتك غير المحفوظة. لمنع حدوث ذلك، استخدم ميزة علامة التبويب داخل التتبع المتقدم بدلا من علامات تبويب مستعرض منفصلة.
 
 ## <a name="use-sample-queries"></a>استخدام استعلامات نموذجية
 

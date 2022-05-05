@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: تنفيذ قدرات من Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management للتحكم في بياناتك للتوافق أو المتطلبات التنظيمية.
-ms.openlocfilehash: d79396b9489bc21f899eaa6ab1ef89b175831095
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 0b507fad6b4455755a3a0036bff15a7973b906ee
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973323"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217606"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>تحكم في بياناتك باستخدام Microsoft Purview
 
@@ -29,6 +29,9 @@ ms.locfileid: "64973323"
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 استخدم القدرات من **Microsoft Purview Data Lifecycle Management** (المعروف سابقا ب Microsoft Information Governance) **وMicrosoft Purview Records Management** للتحكم في بياناتك من أجل التوافق أو المتطلبات التنظيمية.
+
+> [!TIP]
+> هل تبحث عن تعيين بياناتك وإدارتها عبر ممتلكات بياناتك بأكملها، بما في ذلك السحابة المتعددة والبرامج كخدمة (SaaS)؟ استخدم [Microsoft Purview Data Map وMicrosoft Purview كتالوج البيانات وMicrosoft Purview Data Estate Insights](/azure/purview/overview).
 
 من [منظور الترخيص](#licensing-requirements)، يمكن أن يكون هناك تداخل كبير بين إدارة دورة حياة البيانات وإدارة السجلات. يدعم كلا الحلين الاحتفاظ بالبيانات وحذفها لتطبيقات وخدمات Microsoft 365.
 

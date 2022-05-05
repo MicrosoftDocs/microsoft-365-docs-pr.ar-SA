@@ -353,7 +353,7 @@
         - name: تمكين المصادقة الحديثة Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: المتطلبات الأساسية لحماية البيانات
-          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection.md
+          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
         - name: زيادة الحماية من المخاطر
           href: security-and-compliance/increase-threat-protection.md
         - name: التهديدات التي كشف عنها برنامج الحماية من الفيروسات من Microsoft Defender
@@ -373,13 +373,13 @@
         - name: الوثائق في Microsoft Intune
           href: /mem/intune/
         - name: عرض السياسات والأجهزة وتحريرها
-          href: /microsoft-365/business-premium/view-policies-and-devices.md
+          href: /microsoft-365/business-premium/m365bp-view-policies-and-devices
         - name: إزالة بيانات الشركة
-          href: /microsoft-365/business-premium/m365bp-remove-company-data.md
+          href: /microsoft-365/business-premium/m365bp-remove-company-data
         - name: إعادة تعيين الأجهزة إلى إعدادات المصنع
           href: devices/reset-devices-to-factory-settings.md
         - name: ميزات حماية الخريطة لإعدادات Intune
-          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings.md
+          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings
         - name: حالات الجهاز
           href: devices/device-states.md
         - name: حماية التطبيقات الإعدادات الخاصة Windows 10 الكمبيوتر الشخصي
@@ -391,7 +391,7 @@
         - name: Autopilot
           items:
             - name: إنشاء ملفات تعريف AutoPilot وتحريرها
-              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles.md
+              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles
             - name: إنشاء أجهزة AutoPilot وتحريرها
               href: devices/create-and-edit-autopilot-devices.md
         - name: موارد ووثائق Microsoft 365 للمؤسسات

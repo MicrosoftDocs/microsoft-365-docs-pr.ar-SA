@@ -10,12 +10,12 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: تعرف على كيفية الوصول إلى Microsoft Bookings في Microsoft 365.
-ms.openlocfilehash: 28398faba7c21b6d3cce84063934268dad11fd64
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: e088250a24078d735b6751ff8cbcc55e2fdceaaa
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823069"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217453"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>تشغيل Microsoft Bookings أو إيقاف تشغيله
 
@@ -123,7 +123,7 @@ ms.locfileid: "64823069"
    Set-OwaMailboxPolicy "OwaMailboxPolicy-Default" -BookingsMailboxCreationEnabled:$false
    ```
 
-   لمزيد من المعلومات، راجع [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
+لمزيد من المعلومات، راجع [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
 
 لمزيد من المعلومات حول نهج علبة بريد OWA، راجع المواضيع التالية:
 

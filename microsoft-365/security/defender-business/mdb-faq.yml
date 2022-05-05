@@ -16,12 +16,12 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 8f544cfb15c03e78219fcb31bdae1e09cb7c628f
-  ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+  ms.openlocfilehash: 6819cfe99b118298ec1d319d42dc2246d8194943
+  ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 05/04/2022
-  ms.locfileid: "65188361"
+  ms.lasthandoff: 05/05/2022
+  ms.locfileid: "65217575"
 title: Microsoft Defender for Business - الأسئلة والأجوبة المتداولة
 summary: >
   استخدم هذه المقالة للحصول على إجابات للأسئلة التي قد تكون لديك حول Defender for Business.
@@ -63,8 +63,7 @@ sections:
   - question: ما هي الاختلافات بين Defender for Business و Defender لخطط نقطة النهاية 1 و2؟
     answer: "يوفر كل من Defender for Business و Defender لنقطة النهاية قدرات قوية للحماية من التهديدات لنقاط نهاية شركتك. تم تصميم Defender for Business للشركات الصغيرة والمتوسطة الحجم (ما يصل إلى 300 موظف). مع [عملية تكوين مبسطة](mdb-simplified-configuration.md) [وخيارات إلحاق الجهاز](mdb-onboard-devices.md)، يتيح Defender for Business للعملاء الذين ليس لديهم بالضرورة خلفية أمان إعداد وتكوين واستخدام Defender for Business لحماية أجهزة الشركة.  \n\nلمعرفة المزيد حول الاختلافات، راجع [مقارنة Microsoft Defender for Business إلى Microsoft 365 Business Premium](compare-mdb-m365-plans.md).\n"
   - question: ماذا يحدث إذا كان لدي مزيج من الاشتراكات؟ على سبيل المثال، افترض أن لدي 10 مستخدمين معينين لترخيص Defender for Business، وأن 10 مستخدمين آخرين عينوا ترخيص Defender for Endpoint Plan 2 في نفس المستأجر؟
-    answer: >
-      التراخيص المختلطة غير معتمدة. يعين الترخيص الوظيفي الأعلى تجربة للمستأجر. باستخدام مثالنا، ستكون تجربة المستأجر [Defender لنقطة النهاية الخطة 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)، وستتطلب 20 ترخيص Defender لنقطة النهاية الخطة 2. لاحظ أن [Defender for Business](mdb-overview.md) و [Microsoft 365 Business Premium](/microsoft-365/business-premium/) مخصصة للعملاء الذين لديهم ما يصل إلى 300 مستخدم. بالنسبة للعملاء الذين يحتاجون إلى أكثر من 300 مقعد، نوصي بالحصول على Microsoft 365 E3 أو E5 أو Microsoft Defender لنقطة النهاية الخطة 1 أو الخطة 2.
+    answer: "التراخيص المختلطة غير معتمدة. يعين ترخيص Defender الوظيفي الأعلى تجربة للمستأجر. \n\nباستخدام مثالنا، ستكون تجربة المستأجر [Defender لنقطة النهاية الخطة 2](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) لجميع المستخدمين العشرين. \n\nلاحظ أن [Defender for Business](mdb-overview.md) و [Microsoft 365 Business Premium](/microsoft-365/business-premium/) مخصصة للعملاء الذين لديهم ما يصل إلى 300 مستخدم. بالنسبة للعملاء الذين يحتاجون إلى أكثر من 300 ترخيص مستخدم، نوصي بالحصول على اشتراك مؤسسة يتضمن Microsoft Defender لنقطة النهاية الخطة 1 أو الخطة 2.\n\nللحصول على تفاصيل حول التراخيص، راجع [شروط الترخيص والمنتج لاشتراكات Microsoft 365](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).\n"
   - question: لدي اشتراك آخر في Microsoft Cloud. لماذا لا أرى Microsoft Defender for Business في مدخلي؟
     answer: "في الوقت الحالي، كلما كان لدى العميل اشتراكات متعددة، يكون لأعلى اشتراك الأسبقية. فيما يلي بعض الأمثلة:\n\n- مثال 1: إذا كان لديك [Microsoft Defender لنقطة النهاية الخطة 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) (الاشتراك الذي تم شراؤه أو الاشتراك التجريبي)، وتحصل على Microsoft Defender for Business، فإن Defender for Endpoint Plan 2 له الأسبقية. في هذه الحالة، لن ترى تجربة Defender for Business.\n- مثال 2: إذا كان لديك [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) (اشتراك تم شراؤه أو اشتراك تجريبي)، وتحصل على Defender for Business، فإن Defender for Cloud له الأسبقية. في هذه الحالة، لن ترى تجربة Defender for Business.\n\n\n\n \n \n"
 additionalContent: >-

@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5b1d501f0d33e5b837abcd81f7b228cdc74d943
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 557b81db3c211b294166af8e5f8aaa783fc563a6
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973014"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65215782"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>أحدث الميزات في Microsoft Defender لـ Office 365
 
@@ -50,7 +50,10 @@ ms.locfileid: "64973014"
 - [ما الجديد في Microsoft Defender لنقطة النهاية](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [ما الجديد في Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [ما الجديد في Microsoft Cloud App Security](/cloud-app-security/release-notes)
+## <a name="april-2022"></a>أبريل 2022
 
+- [تحسينات معالجة البريد الإلكتروني اليدوي](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): إحضار إجراءات إزالة البريد الإلكتروني اليدوية التي تم اتخاذها في Microsoft Defender لـ Office 365 إلى مركز الصيانة الموحد Microsoft 365 Defender (M365D) باستخدام تحقيق جديد يركز على الإجراء.
+ 
 ## <a name="march-2022"></a>مارس 2022
 
 - [تبسيط تجربة الإرسال في Microsoft Defender لـ Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/streamlining-the-submissions-experience-in-microsoft-defender/ba-p/3152080): تقديم عملية الإرسال الموحدة والمبسطة الجديدة لتبسيط تجربتك.

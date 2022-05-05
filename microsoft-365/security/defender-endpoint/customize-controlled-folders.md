@@ -15,21 +15,21 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 5b941cf40a220f2d9298a4918d334349f784dd13
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: ba9102f96ea08bf33f72a260779b4b37d6a6f0f4
+ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789877"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217365"
 ---
 # <a name="customize-controlled-folder-access"></a>تخصيص الوصول إلى المجلدات الخاضعة للتحكم
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 > [!TIP]
@@ -160,7 +160,7 @@ ms.locfileid: "64789877"
 
 ### <a name="use-mdm-csps-to-allow-specific-apps"></a>استخدام MDM CSPs للسماح بتطبيقات معينة
 
-استخدم موفر خدمة تكوين [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) للسماح للتطبيقات بإجراء تغييرات على المجلدات المحمية.
+استخدم موفر خدمة تكوين [./Vendor/MSFT/Policy/Config/Defender/ControlledFolderAccessAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) للسماح للتطبيقات بإجراء تغييرات على المجلدات المحمية.
 
 ## <a name="allow-signed-executable-files-to-access-protected-folders"></a>السماح للملفات التنفيذية الموقعة بالوصول إلى المجلدات المحمية
 
