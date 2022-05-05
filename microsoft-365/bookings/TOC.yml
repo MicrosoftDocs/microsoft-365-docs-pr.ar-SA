@@ -27,6 +27,8 @@
           href: add-questions.md
         - name: تعيين وقت المخزن المؤقت
           href: set-buffer-time.md
+        - name: إدارة الحضور الجماعي في Bookings
+          href: manage-attendees-bookings.md
         - name: المقاييس وتعقب النشاط
           href: metrics-and-activity-tracking.md
         - name: تعيين اللغة والمنطقة الزمنية
