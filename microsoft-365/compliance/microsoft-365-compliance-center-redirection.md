@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 description: تعرف على إعادة التوجيه التلقائي للمستخدمين من مستخدمي مركز الأمان والتوافق Office 365 إلى مدخل توافق Microsoft Purview.
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b65f2521afd3802274a9c6e605ced16a66c0a76d
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: b88c5f5915944c813f5c803e3526f1bf42040159
+ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972979"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65242997"
 ---
 # <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-purview-compliance-portal"></a>إعادة توجيه المستخدمين من مركز الأمان والتوافق Office 365 إلى مدخل توافق Microsoft Purview
 
@@ -34,14 +34,14 @@ ms.locfileid: "64972979"
 - [البحث عن المحتوى](search-for-content.md)
 - [eDiscovery (قياسي)](get-started-core-ediscovery.md)
 - [تصنيف البيانات](data-classification-overview.md)
-- [Microsoft Purview Data Loss Prevention (DLP)](dlp-learn-about-dlp.md)
+- [تفادي فقدان البيانات (DLP)](dlp-learn-about-dlp.md)
 - [طلبات موضوع البيانات](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)
-- [إدارة المعلومات](manage-data-governance.md)
+- [إدارة دورة حياة البيانات](manage-data-governance.md) (سابقا **إدارة المعلومات**)
 - [إدارة السجلات](records-management.md)
 
 يتم توجيه المستخدمين تلقائيا إلى نفس حلول التوافق في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق</a>.
 
-لا تمكن هذه الميزة وعناصر التحكم المقترنة إعادة التوجيه التلقائي لميزات الأمان Microsoft Defender لـ Office 365. لتمكين إعادة التوجيه لميزات الأمان، راجع [إعادة توجيه الحسابات من Microsoft Defender لـ Office 365 إلى مدخل Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection) للحصول على التفاصيل.
+لا تمكن هذه الميزة وعناصر التحكم المقترنة إعادة التوجيه التلقائي لميزات الأمان Microsoft Defender لـ Office 365. لمزيد من المعلومات، راجع [Microsoft Defender لـ Office 365 في Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-center-mdo).
 
 ## <a name="related-information"></a>المعلومات ذات الصلة
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea1c551c216dffe8d9ac4e0cedd5679146483e5e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 51f4915da08920018526ac7eb17372247e28de6d
+ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666229"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65243085"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>مشكلات الأداء في Microsoft Defender لنقطة النهاية على Android
 
@@ -30,7 +30,7 @@ ms.locfileid: "64666229"
 
 **ينطبق على:**
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -45,7 +45,8 @@ ms.locfileid: "64666229"
 ### <a name="prerequisites"></a>المتطلبات الأساسية
 
 - **للمستخدمين النهائيين**:
-  - Microsoft Defender لنقطة النهاية الترخيص المعين للمستخدم (المستخدمين) النهائيين للتطبيق. راجع [متطلبات الترخيص Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)
+  - Microsoft Defender لنقطة النهاية الترخيص المعين للمستخدم (المستخدمين) النهائيين للتطبيق. راجع [متطلبات الترخيص Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
+  - ترخيص Intune مطلوب قبل إلحاق أجهزة Android.
   - يمكن تنزيل تطبيق Intune Company Portal من [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) وهو متوفر على جهاز Android.
   - بالإضافة إلى ذلك، يمكن [تسجيل](/mem/intune/user-help/enroll-device-android-company-portal) الأجهزة (الأجهزة) عبر تطبيق Intune Company Portal لفرض نهج توافق الأجهزة Intune. يتطلب هذا تعيين ترخيص Microsoft Intune للمستخدم النهائي.
   - لمزيد من المعلومات حول كيفية تعيين التراخيص، راجع [تعيين التراخيص للمستخدمين](/azure/active-directory/users-groups-roles/licensing-groups-assign).
