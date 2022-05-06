@@ -14,74 +14,64 @@ metadata:
   ms.author: robmazz
   ms.date: 04/22/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 465f54a97d099611d6a03c857a5c4e754bb45cf3
-  ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+  ms.openlocfilehash: 5581cb78600a36fd1b942bb8a86b2ed38f6a7db9
+  ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
   ms.translationtype: HT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 04/27/2022
-  ms.locfileid: "65077857"
+  ms.lasthandoff: 05/06/2022
+  ms.locfileid: "65242975"
 landingContent:
-- title: إدارة حماية المعلومات والحوكمة
+- title: حماية البيانات الحساسة عبر السُحب والتطبيقات والأجهزة
   linkLists:
   - linkListType: overview
     links:
     - text: تعرّف على بياناتك
-      url: information-protection.md#know-your-data
+      url: /microsoft-365/compliance/sensitivity-labels
     - text: حماية بياناتك
-      url: information-protection.md#protect-your-data
+      url: /microsoft-365/compliance/information-protection-solution
     - text: منع فقدان البيانات
-      url: information-protection.md#prevent-data-loss
-    - text: تحكم بياناتك
-      url: manage-data-governance.md
-    - text: 'مسار التعلم: إدارة حماية المعلومات والحوكمة'
-      url: /learn/paths/m365-compliance-information
-- title: إدارة مخاطر Insider
+      url: /microsoft-365/compliance/dlp-learn-about-dlp
+    - text: إدارة دورة حياة بياناتك
+      url: /microsoft-365/compliance/data-lifecycle-management
+    - text: تشفير بياناتك والتحكم في مفاتيح التشفير
+      url: /microsoft-365/compliance/encryption
+    - text: استيراد البيانات غير المتعلقة بـ Microsoft وأرشفتها
+      url: /microsoft-365/compliance/archiving-third-party-data
+- title: تحديد مخاطر البيانات وإدارة متطلبات الامتثال التنظيمي
   linkLists:
   - linkListType: overview
     links:
-    - text: إدارة المخاطر الداخلية لـ Microsoft Purview
-      url: insider-risk-management.md
-    - text: توافق الاتصالات لـ Microsoft Purview
-      url: communication-compliance.md
-    - text: موانع إبلاغ المعلومات في Microsoft Purview
-      url: information-barriers.md
-    - text: إدارة الوصول المتميز لـ Microsoft Purview
-      url: privileged-access-management-overview.md
-    - text: صندوق تأمين بيانات العملاء
-      url: customer-lockbox-requests.md
-- title: الاكتشاف والاستجابة
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: الاكتشاف الإلكتروني لـ Microsoft Purview (Premium)
-      url: overview-ediscovery-20.md
-    - text: الاكتشاف الإلكتروني لـ Microsoft Purview (قياسي)
-      url: ./get-started-core-ediscovery.md
-    - text: البحث عن المحتوى
-      url: search-for-content.md
-    - text: حلول تدقيق Microsoft Purview
-      url: auditing-solutions-overview.md
+    - text: الكشف عن أنشطة المخاطر والتعامل معها
+      url: /microsoft-365/compliance/insider-risk-management
+    - text: الكشف عن الرسائل غير الملائمة والحساسة والتعامل معها
+      url: /microsoft-365/compliance/communication-compliance
+    - text: تقييد الاتصالات والتعاون بين المستخدمين
+      url: /microsoft-365/compliance/information-barriers
+    - text: إدارة متطلبات مسك السجلات التجارية أو القانونية أو التنظيمية.
+      url: /microsoft-365/compliance/records-management
+    - text: تسجيل الأنشطة التي تمت مراجعتها والبحث عنها في SharePoint وOneDrive
+      url: /microsoft-365/compliance/auditing-solutions-overview
+    - text: تحديد بيانات الدعوات القضائية وإدارتها
+      url: /microsoft-365/compliance/ediscovery
 - title: بدء استخدام التوافق التنظيمي
   linkLists:
   - linkListType: get-started
     links:
-    - text: إدارة التوافق
-      url: compliance-manager.md
-    - text: خطة إجراءات الامتثال للقانون العام لحماية البيانات (GDPR)
+    - text: بدء استخدام "إدارة الترحيل"
+      url: /microsoft-365/compliance/compliance-manager
+    - text: تنفيذ خطة عمل الامتثال بالقانون العام لحماية البيانات (GDPR)
       url: /compliance/regulatory/gdpr-action-plan
-    - text: خطة إجراءات الامتثال لـ ISO
-      url: /compliance/regulatory/iso-action-plan
-    - text: خطة إجراءات الامتثال لـ NIST
-      url: /compliance/regulatory/nist-action-plan
-- title: استخدام حلول التوافق
+    - text: تعرّف على عروض الامتثال التنظيمي من Microsoft
+      url: /compliance/regulatory/offering-home
+- title: استخدام حلول الامتثال من Purview
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: تأمين البيانات باستخدام الثقة المعدومة
       url: /security/zero-trust/data
     - text: استخدام حل حماية بيانات Microsoft Purview
-      url: information-protection-solution.md
+      url: /microsoft-365/compliance/information-protection-solution
     - text: نشر حماية المعلومات للوائح خصوصية البيانات
-      url: ../solutions/information-protection-deploy.md
-    - text: رسومات توضيحية لحماية المعلومات والتوافق
-      url: ../solutions/productivity-illustrations.md#microsoft-365-information-protection-and-compliance-capabilities
+      url: /microsoft-365/solutions/information-protection-deploy
+    - text: استكشاف الرسومات التوضيحية لحماية البيانات والامتثال
+      url: /microsoft-365/solutions/productivity-illustrations
