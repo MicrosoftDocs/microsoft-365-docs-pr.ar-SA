@@ -320,7 +320,7 @@
 #### [الكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها وحظرها](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 #### [تمكين الحماية برنامج الحماية من الفيروسات من Microsoft Defender دائما وتكوينها في نهج المجموعة](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [تكوين المعالجة برنامج الحماية من الفيروسات من Microsoft Defender الكشف](configure-remediation-microsoft-defender-antivirus.md)
-#### للحصول على التفاصيل، اطلع على [تكوين الاستثناءات والتحقق من صحتها لعمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender](schedule-antivirus-scans.md).
+#### للحصول على التفاصيل، اطلع على [تكوين الاستثناءات والتحقق من صحتها لعمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender](schedule-antivirus-scans.md)
 ##### [جدولة عمليات الفحص باستخدام نهج المجموعة](schedule-antivirus-scans-group-policy.md)
 ##### [جدولة عمليات الفحص باستخدام PowerShell](schedule-antivirus-scans-powershell.md)
 ##### [جدولة عمليات الفحص باستخدام WMI](schedule-antivirus-scans-wmi.md)
