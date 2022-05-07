@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: هل أنت مستعد لنشر أوصاف الحساسية للمساعدة في حماية بيانات مؤسستك، ولكن لست متأكدا من مكان البدء؟ اقرأ بعض الإرشادات العملية لمساعدتك في رحلة التسمية.
-ms.openlocfilehash: 3f163c19cfd6e627887f0e34b81bc99d2e86cb6c
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: b0fcf435d7805440e93f0d1248723f4b5599d4a9
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971033"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268760"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>بدء استخدام تسميات الحساسية
 
@@ -102,6 +102,7 @@ ms.locfileid: "64971033"
 |استخدم تسميات الحساسية لتكوين نوع ارتباط المشاركة الافتراضي للمواقع والمستندات الفردية في SharePoint OneDrive |[استخدم تسميات الحساسية لتعيين ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint OneDrive](sensitivity-labels-default-sharing-link.md)|
 |تطبيق وصف الحساسية على نموذج فهم المستندات، بحيث يتم تصنيف المستندات المحددة في مكتبة SharePoint وحمايتها تلقائيا |[تطبيق وصف الحساسية على نموذج في Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
 |منع المستخدمين من مشاركة الملفات أو رسائل البريد الإلكتروني أو تحذيرهم باستخدام وصف حساسية معين |[استخدام تسميات الحساسية كشروط في نهج DLP](dlp-sensitivity-label-as-condition.md) |
+|تطبيق وصف الحساسية على ملف عندما أتلقى تنبيها بأن المحتوى الذي يحتوي على بيانات شخصية تتم مشاركته ويحتاج إلى الحماية| [التحقيق في التنبيهات ومعالجتها في إدارة مخاطر الخصوصية](/privacy/priva/risk-management-alerts)|
 |تطبيق تسمية استبقاء للاحتفاظ بالملفات أو رسائل البريد الإلكتروني التي تحتوي على وصف حساسية معين أو حذفها|[تطبيق تسمية استبقاء تلقائيا للاحتفاظ بالمحتوى أو حذفه](apply-retention-labels-automatically.md) |
 |اكتشاف الملفات المخزنة في مخازن البيانات المحلية وتسميتها وحمايتها |[نشر الماسح الضوئي ل Azure حماية البيانات لتصنيف الملفات وحمايتها تلقائيا](/azure/information-protection/deploy-aip-scanner)|
 |اكتشاف الملفات المخزنة في مخازن البيانات الموجودة في السحابة وتسميتها وحمايتها|[اكتشاف البيانات المنظمة والحساسة المخزنة في السحابة وتصنيفها وتسميتها وحمايتها](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|

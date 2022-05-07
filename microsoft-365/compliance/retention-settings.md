@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: فهم الإعدادات التي يمكنك تكوينها في نهج الاستبقاء أو نهج تسمية الاستبقاء للاحتفاظ بما تريده والتخلص مما لا تريده.
-ms.openlocfilehash: ddfa921c8dae22bbe091e2c0f66fc9ae42aeea41
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: 90a048cf96bb2414a42d803bcd2f15deab4e711b
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231776"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268782"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>الإعدادات الشائعة لنهج الاستبقاء ونهج تسمية الاستبقاء
 
@@ -278,6 +278,9 @@ ms.locfileid: "65231776"
 ### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>معلومات التكوين لمواقع SharePoint وحسابات OneDrive
 
 عند اختيار موقع **مواقع SharePoint**، يمكن لنهج الاستبقاء الاحتفاظ بالمستندات وحذفها في مواقع الاتصالات SharePoint ومواقع الفرق غير المتصلة بمجموعات Microsoft 365 والمواقع الكلاسيكية. ما لم تكن تستخدم [نطاقات نهج موائمة](#exceptions-for-adaptive-policy-scopes) مفتوحة، فإن مواقع الفريق المتصلة بمجموعات Microsoft 365 غير معتمدة مع هذا الخيار وبدلا من ذلك، استخدم موقع **مجموعات Microsoft 365** الذي ينطبق على المحتوى في علبة بريد المجموعة وموقعها وملفاتها.
+
+> [!TIP]
+> يمكنك استخدام [عامل تصفية في مركز إدارة SharePoint](/sharepoint/customize-admin-center-site-list) أو [أمر PowerShell SharePoint](/powershell/module/sharepoint-online/get-sposite#example-10) لتأكيد ما إذا كان الموقع متصلا بالمجموعة. بالنسبة للنطاقات الثابتة، يتم دعم هذه المواقع مع موقع **مجموعات Microsoft 365**.
 
 للحصول على معلومات مفصلة حول ما يتم تضمينه واستبعاده عند تكوين إعدادات الاستبقاء SharePoint OneDrive، راجع [ما هو مضمن للاستبقاء والحذف](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
 

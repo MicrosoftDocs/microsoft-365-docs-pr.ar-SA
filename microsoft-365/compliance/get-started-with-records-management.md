@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: هل تحتاج إلى حل لإدارة السجلات Microsoft 365 الذي يدير محتوى عالي القيمة للالتزامات القانونية أو التجارية أو التنظيمية، ولكن لست متأكدا من مكان البدء؟ اقرأ بعض الإرشادات العملية للبدء.
-ms.openlocfilehash: e73cb1a118235082978ee93efcdb77f5e5135f8c
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: bbba24a2627c6040873da8d01185e4e6bdfdbfc8
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971462"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268738"
 ---
 # <a name="get-started-with-records-management"></a>بدء العمل باستخدام إدارة السجلات
 
@@ -81,6 +81,7 @@ ms.locfileid: "64971462"
 |ابدأ فترة الاستبقاء عند وقوع حدث، مثل:  <br />- يغادر الموظفون المؤسسة <br />- تنتهي صلاحية العقود <br />- نهاية مدة بقاء المنتج| [بدء الاستبقاء عند وقوع حدث](event-driven-retention.md)|
 |تقييد التغييرات على النهج للمساعدة في تلبية المتطلبات التنظيمية أو الحماية ضد المسؤولين المحتالين| [استخدام قفل الاحتفاظ لتقييد التغييرات على نهج الاستبقاء ونهج تسمية الاستبقاء](retention-preservation-lock.md)
 |إدارة دورة حياة أنواع المستندات المختلفة في SharePoint| [استخدم تسميات الاستبقاء لإدارة دورة حياة المستندات المخزنة في SharePoint](auto-apply-retention-labels-scenario.md)|
+|تطبيق تسمية استبقاء على ملف عندما أتلقى تنبيها بأن المحتوى الذي يحتوي على بيانات شخصية يتم تخزينه أو يظل دون تغيير لفترة طويلة جدا| [التحقيق في التنبيهات ومعالجتها في إدارة مخاطر الخصوصية](/privacy/priva/risk-management-alerts)|
 |التأكد من أن شخص ما يراجع ويوافق قبل حذف المحتوى في نهاية فترة الاستبقاء الخاصة به|[مراجعات الترتيب](disposition.md#disposition-reviews) |
 |امتلاك إثبات التصرف للمحتوى الذي يتم حذفه نهائيا في نهاية فترة الاستبقاء الخاصة به|[التخلص من السجلات](disposition.md#disposition-of-records) |
 | مراقبة كيفية تطبيق إعدادات الاحتفاظ والحذف وأين يتم تطبيقها على العناصر | [مراقبة تسميات الاستبقاء](retention.md#monitoring-retention-labels) |

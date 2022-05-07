@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fde2cc894fb989628f9e2e0d9d7297bdb3c9e9da
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5f17f29f083df6e567218363027e7677c87ee154
+ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172409"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "65268848"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>وصول الشريك من خلال واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية
 
@@ -169,6 +169,9 @@ return $token
 ### <a name="using-c"></a>استخدام C #
 
 > تم اختبار التعليمات البرمجية أدناه باستخدام Nuget Microsoft.IdentityModel.Clients.ActiveDirectory
+
+> [!IMPORTANT]
+> تم إهمال حزمة [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet ومكتبة مصادقة Azure AD (ADAL). لم تتم إضافة أي ميزات جديدة منذ 30 يونيو 2020.   نحن نشجعك بشدة على الترقية، راجع [دليل الترحيل](/azure/active-directory/develop/msal-migration) للحصول على مزيد من التفاصيل.
 
 - إنشاء تطبيق وحدة تحكم جديد
 - تثبيت NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
