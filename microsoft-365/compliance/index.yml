@@ -14,25 +14,25 @@ metadata:
   ms.author: robmazz
   ms.date: 04/22/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 5581cb78600a36fd1b942bb8a86b2ed38f6a7db9
-  ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+  ms.openlocfilehash: b848abdb739d09595e9be91b8217acf09b01dbd2
+  ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
   ms.translationtype: HT
   ms.contentlocale: ar-SA
   ms.lasthandoff: 05/06/2022
-  ms.locfileid: "65242975"
+  ms.locfileid: "65249586"
 landingContent:
 - title: حماية البيانات الحساسة عبر السُحب والتطبيقات والأجهزة
   linkLists:
   - linkListType: overview
     links:
     - text: تعرّف على بياناتك
-      url: /microsoft-365/compliance/sensitivity-labels
+      url: /microsoft-365/compliance/information-protection#know-your-data
     - text: حماية بياناتك
-      url: /microsoft-365/compliance/information-protection-solution
+      url: /microsoft-365/compliance/information-protection#protect-your-data
     - text: منع فقدان البيانات
-      url: /microsoft-365/compliance/dlp-learn-about-dlp
+      url: /microsoft-365/compliance/information-protection#prevent-data-loss
     - text: إدارة دورة حياة بياناتك
-      url: /microsoft-365/compliance/data-lifecycle-management
+      url: /microsoft-365/compliance/manage-data-governance#microsoft-purview-data-lifecycle-management
     - text: تشفير بياناتك والتحكم في مفاتيح التشفير
       url: /microsoft-365/compliance/encryption
     - text: استيراد البيانات غير المتعلقة بـ Microsoft وأرشفتها
@@ -47,8 +47,8 @@ landingContent:
       url: /microsoft-365/compliance/communication-compliance
     - text: تقييد الاتصالات والتعاون بين المستخدمين
       url: /microsoft-365/compliance/information-barriers
-    - text: إدارة متطلبات مسك السجلات التجارية أو القانونية أو التنظيمية.
-      url: /microsoft-365/compliance/records-management
+    - text: إدارة متطلبات حفظ السجلات التجارية أو القانونية أو التنظيمية.
+      url: /microsoft-365/compliance/manage-data-governance#microsoft-purview-records-management
     - text: تسجيل الأنشطة التي تمت مراجعتها والبحث عنها في SharePoint وOneDrive
       url: /microsoft-365/compliance/auditing-solutions-overview
     - text: تحديد بيانات الدعوات القضائية وإدارتها
