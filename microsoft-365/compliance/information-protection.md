@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: تنفيذ قدرات Microsoft Purview حماية البيانات لمساعدتك على حماية المعلومات الحساسة أينما كانت تعيش أو تنتقل.
-ms.openlocfilehash: 97f5172479d889ec1914cfc46102a58a83165269
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: b055e71ee6c22cc9804b82a36f339a73675ce914
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285467"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294636"
 ---
 # <a name="protect-your-sensitive-data-with-microsoft-purview"></a>حماية بياناتك الحساسة باستخدام Microsoft Purview
 
@@ -40,9 +40,9 @@ ms.locfileid: "65285467"
 
 ![صورة لكيفية مساعدة Microsoft Purview حماية البيانات في اكتشاف البيانات الحساسة وتصنيفها وحمايتها.](../media/powered-by-intelligent-platform.png)
 
-للحصول على إرشادات توجيهية لنشر حل microsoft Purview حماية البيانات لمؤسستك، راجع [نشر حل حماية المعلومات باستخدام Microsoft Purview](information-protection-solution.md).
+استخدم الأقسام التالية لمعرفة المزيد حول الإمكانات المتوفرة وكيفية البدء مع كل منها. ومع ذلك، إذا كنت تبحث عن نشر موجه، فراجع [توزيع حل حماية المعلومات باستخدام Microsoft Purview](information-protection-solution.md).
 
-للحصول على معلومات حول التحكم في بياناتك، راجع [إدارة بياناتك باستخدام Microsoft Purview](manage-Information-governance.md).
+للحصول على معلومات حول التحكم في بياناتك للتوافق أو المتطلبات التنظيمية، راجع [التحكم في بياناتك باستخدام Microsoft Purview](manage-data-governance.md).
 
 ## <a name="know-your-data"></a>تعرّف على بياناتك
 
@@ -60,7 +60,7 @@ ms.locfileid: "65285467"
 
 |القدره|ما هي المشاكل التي تحلها؟|بدء الاستخدام|
 |:------|:------------|---------------------|
-|[تسميات الحساسية](sensitivity-labels.md)| حل واحد عبر التطبيقات والخدمات والأجهزة لتسمية بياناتك وحمايتها أثناء انتقالها داخل مؤسستك وخارجها. <br /><br /> أمثلة على السيناريوهات: <br />- [إدارة أوصاف الحساسية لتطبيقات Office](sensitivity-labels-office-apps.md) <br />- [تشفير المستندات ورسائل البريد الإلكتروني](encryption-sensitivity-labels.md) <br />-  [تطبيق التسميات وعرضها في Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> للحصول على قائمة شاملة بسيناريوهات تسميات الحساسية، راجع وثائق بدء الاستخدام.|[بدء استخدام تسميات الحساسية](get-started-with-sensitivity-labels.md) |
+|[تسميات الحساسية](sensitivity-labels.md)| حل تسمية واحد عبر التطبيقات والخدمات والأجهزة لحماية بياناتك أثناء انتقالها داخل مؤسستك وخارجها. <br /><br /> أمثلة على السيناريوهات: <br />- [إدارة أوصاف الحساسية لتطبيقات Office](sensitivity-labels-office-apps.md) <br />- [تشفير المستندات ورسائل البريد الإلكتروني](encryption-sensitivity-labels.md) <br />-  [تطبيق التسميات وعرضها في Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> للحصول على قائمة شاملة بالسيناريوهات المدعومة لأوصاف الحساسية، راجع وثائق بدء الاستخدام.|[بدء استخدام تسميات الحساسية](get-started-with-sensitivity-labels.md) |
 |[عميل تسمية موحد حماية البيانات Azure](/azure/information-protection/rms-client/aip-clientv2)| بالنسبة لأجهزة الكمبيوتر Windows، يتم توسيع التسمية إلى مستكشف الملفات وPowerShell، مع ميزات إضافية لتطبيقات Office إذا لزم الأمر| [دليل مسؤول عميل التسمية الموحد ل Azure حماية البيانات](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[تشفير المفتاح المزدوج](double-key-encryption.md)| في جميع الظروف، يمكن لمؤسستك فقط فك تشفير المحتوى المحمي أو للمتطلبات التنظيمية، يجب أن تحمل مفاتيح التشفير داخل حدود جغرافية. | [توزيع تشفير المفتاح المزدوج](double-key-encryption.md#deploy-dke)|
 |[تشفير رسائل Office 365 (OME)](ome.md)| تشفير رسائل البريد الإلكتروني والمستندات المرفقة التي يتم إرسالها إلى أي مستخدم على أي جهاز، بحيث يمكن للمستلمين المعتمدين فقط قراءة المعلومات المرسلة بالبريد الإلكتروني. <br /><br />  سيناريو المثال: [إبطال البريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم](revoke-ome-encrypted-mail.md) | [إعداد قدرات جديدة لتشفير الرسائل](set-up-new-message-encryption-capabilities.md)|

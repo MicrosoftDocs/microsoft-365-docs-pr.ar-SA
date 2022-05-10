@@ -17,23 +17,24 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 64162b83376facddbdeffd1c3079baa49f9d8924
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 2f76a8ec53d6f7c809ed9f6612f2c8abf7388d1b
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788007"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294767"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>مرجع قواعد تقليل الأجزاء المعرضة للهجوم
 
 **ينطبق على:**
 
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**منصات:**
+
 - بالنسبة لنظام التشغيل
 
 توفر هذه المقالة معلومات حول قواعد تقليل الهجمات:
@@ -57,7 +58,7 @@ ms.locfileid: "64788007"
 >
 > تتوفر قواعد تقليل الأجزاء المعرضة للهجوم في Windows&nbsp; Server2012R2&nbsp;&nbsp; وserver2016&nbsp; Windows&nbsp; للأجهزة التي تم إلحاقها باستخدام حزمة الحلول الموحدة الحديثة. لمزيد من المعلومات، راجع [الوظائف الجديدة في الحل الموحد الحديث Windows Server 2012 R2 و2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-| اسم القاعدة|Windows 10 | Windows Server 2019 | &nbsp;Windows Server | Windows Server 2016 <sup>[[1, 2](#fn1)]<sup></sup> | Windows Server 2012&nbsp; R2 <sup>[[1، 2](#fn1)]<sup></sup> |
+| اسم القاعدة| &nbsp;Windows 11 <br>و<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>و<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <br> <sup>[[1، 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp; <br> <sup>[[1، 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [حظر إساءة استخدام برامج التشغيل الموقعة المعرضة للخطر](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> الإصدار 1803 (قناة نصف سنوية) أو إصدار أحدث | Y | Y |
 | [حظر Adobe Reader من إنشاء عمليات تابعة](#block-adobe-reader-from-creating-child-processes) | إصدار Y 1809 أو إصدار أحدث | Y | Y | Y | Y |
@@ -102,7 +103,6 @@ ms.locfileid: "64788007"
 |[حظر العمليات غير الموثوق بها وغير الموقعة التي يتم تشغيلها من USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |   |Y <br><br> CB 1802  | Y  | Y  |
 |[حظر استدعاءات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office](#block-win32-api-calls-from-office-macros) | Y |   | Y <br><br> CB 1710  | Y  |  Y |
 |[استخدام الحماية المتقدمة من برامج الفدية الضارة](#use-advanced-protection-against-ransomware) | Y |   | Y <br><br> CB 1802 | Y  | Y  |
-|  |  |  |  |  |  |
 
   (<a id="fn1">1</a>) يمكنك تكوين قواعد تقليل الأجزاء المعرضة للهجوم على أساس كل قاعدة باستخدام GUID الخاص بأي قاعدة.
 
@@ -139,7 +139,6 @@ ms.locfileid: "64788007"
 |[حظر العمليات غير الموثوق بها وغير الموقعة التي يتم تشغيلها من USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> يتطلب جهازا على مستوى كتلة سحابة عال  | N \| Y <br> يتطلب جهازا على مستوى كتلة سحابة عال |
 |[حظر استدعاءات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[استخدام الحماية المتقدمة من برامج الفدية الضارة](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> يتطلب جهازا على مستوى كتلة سحابة عال  | N \| Y <br> يتطلب جهازا على مستوى كتلة سحابة عال |
-|   |   |   |   |
   
 ## <a name="asr-rules-and-guids-matrix"></a>قواعد ASR ومصفوفة GUIDs
 

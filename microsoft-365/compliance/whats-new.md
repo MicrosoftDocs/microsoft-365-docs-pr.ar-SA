@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: سواء كان ذلك بإضافة حلول جديدة إلى مركز الامتثال، أو تحديث الميزات الحالية استنادا إلى ملاحظاتك، أو طرح وثائق جديدة ومحدثة، Microsoft 365 يساعدك على البقاء على اطلاع على مشهد الامتثال المتغير باستمرار. تعرف على ما كنا عليه حتى هذا الشهر.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b79015ce0ca55bf9a74b6acac8f38f09b9e5e984
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3bfa6ce581b0bd4846ebe27b95cf27d1228b10b2
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100512"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294593"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>الجديد في Microsoft Purview
 
@@ -44,6 +44,81 @@ ms.locfileid: "65100512"
 > وقم بزيارة [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) للتعرف على ميزات Microsoft 365 التي تم إطلاقها أو نشرها أو قيد التطوير أو تم إلغاؤها أو إصدارها مسبقا.
 
 ## <a name="april-2022"></a>أبريل 2022
+
+### <a name="communication-compliance"></a>توافق الاتصالات
+
+- [إنشاء وإدارة نهج توافق الاتصالات](communication-compliance-policies.md) - محدثة بإرشادات تمت إضافتها لميزة نهج الرسالة الجديدة التي أبلغ عنها المستخدم لتكامل Microsoft Teams.
+- [ابدأ بتوافق الاتصالات](communication-compliance-configure.md) - تم تحديثه لإضافة توضيح لاشتراك F5 وترخيصه.
+
+### <a name="compliance-manager"></a>إدارة التوافق
+
+- [قائمة قوالب Compliance Manager](compliance-manager-templates-list.md) - إضافة 6 قوالب جديدة وارتباطات تنقل على الصفحة للانتقال بسهولة أكبر إلى فئات القوالب.
+- [نظرة عامة على Compliance Manager](compliance-manager.md) - فيديو تم تحديثه حول نظرة عامة على المنتج.
+
+### <a name="compliance-offerings--service-assurance"></a>عروض التوافق & ضمان الخدمة
+
+- [عروض التوافق](/compliance/regulatory/offering-home) - تحديثات لتغطية الخدمة وإعداد تقارير التدقيق لعروض VPATS وSOC و ISO و FedRAMP.
+
+### <a name="data-lifecycle-management-and-records-management"></a>إدارة دورة حياة البيانات وإدارة السجلات
+
+- [تحكم في بياناتك باستخدام Microsoft Purview](manage-data-governance.md) - تتم إزالة موصلات البيانات من هذه الصفحة ويتم تقديم حل إدارة السجلات كمنتج نظير.
+- [الإعدادات الشائعة لنهج الاستبقاء وتسميات الاستبقاء](retention-settings.md) - تعكس مراجع التنقل وواجهة المستخدم الجديدة لمعالج تسمية الاستبقاء المصمم حديثا.
+- [قم بتعريف السجلات باستخدام تسميات الاستبقاء](declare-records.md) [واستخدام تعيين إصدار السجلات لتحديث السجلات المخزنة في SharePoint أو OneDrive](record-versioning.md) - معلومات جديدة حول إعداد التسمية "إلغاء تأمين هذا السجل بشكل افتراضي" الجديد الذي يتم نشره حاليا في المعاينة.
+- [استخدم خطة الملفات لإنشاء تسميات الاستبقاء وإدارتها](file-plan-manager.md#information-about-the-label-properties-for-import)  - يكشف قسم الاستيراد الآن عن إعدادات التسمية غير المعتمدة حاليا للاستيراد (مراجعة الترتيب متعدد المراحل وإلغاء تأمين هذا السجل بشكل افتراضي).
+
+### <a name="data-loss-prevention"></a>منع فقدان البيانات
+
+- المقالات التي تم تحديثها لإعداد GA لجهاز macOS:
+  - [تعرف على DLP لنقطة النهاية](endpoint-dlp-learn-about.md)
+  - [تكوين إعدادات تفادي فقدان البيانات في نقطة النهاية](dlp-configure-endpoint-settings.md)
+  - [التخطيط لمنع فقدان البيانات (DLP)](dlp-overview-plan-for-dlp.md)
+  - [مرجع نهج تفادي فقدان البيانات](dlp-policy-reference.md)
+  - [للحصول على متطلبات إضافية لنشر Endpoint DLP، راجع البدء في تفادي فقدان البيانات على الأجهزة.](endpoint-dlp-getting-started.md)
+- [شروط نهج DLP والاستثناءات والإجراءات](dlp-conditions-and-exceptions.md) - تمت إضافة إرشادات لإجراء تعديل الموضوع.
+- [مرجع نهج تفادي فقدان البيانات](dlp-policy-reference.md) - دالات تقييم GA SPO/ODB؛ محدثة بإرشادات جديدة حول معالجة القواعد على نقاط النهاية.
+
+### <a name="device-onboarding"></a>إلحاق الجهاز
+
+- المقالات التي تم تحديثها لإعداد GA لجهاز macOS:
+  - [إلحاق أجهزة macOS بنظرة عامة على Microsoft 365](device-onboarding-macos-overview.md)
+  - [إلحاق أجهزة macOS وإلغاء إلحاقها بحلول التوافق باستخدام Intune ل Microsoft Defender لعملاء نقطة النهاية](device-onboarding-offboarding-macos-intune-mde.md)
+  - [إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام Intune](device-onboarding-offboarding-macos-intune.md)
+  - [إلحاق أجهزة macOS وإلغاء إلحاقها بحلول التوافق باستخدام JAMF Pro ل Microsoft Defender لعملاء نقطة النهاية](device-onboarding-offboarding-macos-jamfpro-mde.md)
+  - [إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md)
+
+### <a name="information-barriers"></a>عوائق المعلومات
+
+- [استخدام حواجز المعلومات مع SharePoint](/sharepoint/information-barriers) - إرشادات مضافة لدعم قناة خاصة جديدة في SharePoint.
+- [إدارة نهج حواجز المعلومات](information-barriers-edit-segments-policies.md) - إرشادات تمت إضافتها لإزالة الشرائح والنهج/الشرائح معا.
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [نهج إدارة مخاطر الخصوصية](/privacy/priva/risk-management) - الصفحات الجديدة، والتحديثات الهامة، وإعادة هيكلة محتوى النهج؛ التفاصيل أدناه:
+  - [نهج إدارة مخاطر الخصوصية](/privacy/priva/risk-management-policies) - إضافة تفاصيل هامة حول إعداد النهج وإدارته التي تنطبق على جميع النهج؛ إضافة ارتباطات إلى صفحات جديدة لكل نوع من أنواع النهج الثلاثة.
+  - [نهج الإفراط في الاستخدام](/privacy/priva/risk-management-policy-data-overexposure) للبيانات - توضح الحاجة والاستخدامات للنهج؛ يشرح الإعدادات الافتراضية للإنشاء الجاهز والإرشادات التفصيلية لتخصيص الإعدادات.
+  - [نهج نقل البيانات](/privacy/priva/risk-management-policy-data-transfer) - تسلط الضوء على شرط جديد لنهج الكشف عن عمليات النقل خارج المؤسسة؛ يوضح الحاجة إلى النهج واستخدامه؛ يشرح الإعدادات الافتراضية للإنشاء الجاهز والإرشادات التفصيلية لتخصيص الإعدادات.
+  - [نهج تقليل البيانات](/privacy/priva/risk-management-policy-data-minimization) - توضح الحاجة إلى النهج واستخدامه؛ يشرح الإعدادات الافتراضية للإنشاء الجاهز والإرشادات التفصيلية لتخصيص الإعدادات.
+  - [التحقيق في التنبيهات ومعالجتها](/privacy/priva/risk-management-alerts) - إضافة توضيح التفاصيل وتغييرات التنسيق لتحسين قابلية القراءة.
+  - [إعلامات المستخدم](/privacy/priva/risk-management-notifications) - معلومات إضافية حول وظيفة معاينة محتوى إعلام البريد الإلكتروني وتخصيصه.
+- [إنشاء طلب حقوق الموضوع](/privacy/priva/subject-rights-requests-create) - قسم مضاف حول بدء استخدام طلبك الأول مع الإعدادات الافتراضية لاستكشاف الوظائف.
+- [مراجعة البيانات لطلب حقوق الموضوع](/privacy/priva/subject-rights-requests-data-review) - تفاصيل إضافية تشرح عناصر الأولوية لمراجعتها وكيفية العثور عليها، والحاجة إلى إعداد مطابقة البيانات من أجل الحصول على هذه الرؤى.
+- [البحث عن البيانات الشخصية وتصورها](/privacy/priva/priva-data-profile) - توضيح أن المستخدمين بحاجة إلى إعداد مطابقة البيانات من أجل تلقي رؤى ل "العناصر التي تحتوي على محتوى موضوع البيانات الأكثر" ضمن "رؤى المفتاح".
+- [مطابقة البيانات لطلبات حقوق الموضوع](/privacy/priva/subject-rights-requests-data-match) - توضيح تقدم الخطوة في هذه العملية وإضافة الخطوة الثانية لإنشاء أنواع المعلومات الحساسة.
+
+### <a name="sensitive-information-types"></a>أنواع المعلومات الحساسة
+
+- [استخدام الكيانات المسماة في نهج DLP](named-entities-use.md) - الكيانات المسماة GA.
+- [تعرف على الكيانات المسماة](named-entities-learn.md) - GA للكيانات المسماة.
+- [تعريفات الكيان لأنواع المعلومات الحساسة](sensitive-information-type-entity-definitions.md) - GA للكيانات المسماة، وتحديثات الأنماط.
+- [تعرف على أنواع المعلومات الحساسة](sensitive-information-type-learn-about.md) - GA للكيانات المسماة.
+
+### <a name="sensitivity-labels"></a>تسميات الحساسية
+
+- [استخدم تسميات الحساسية لحماية المحتوى في Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings) - تكوين جديد الآن في المعاينة لأذونات مشاركة الموقع باستخدام إعدادات PowerShell المتقدمة.
+- [تقييد الوصول إلى المحتوى باستخدام تسميات الحساسية لتطبيق التشفير](encryption-sensitivity-labels.md) - أضف المشكلة المعروفة لتحديد مجموعة تحتوي على جهات اتصال بريد، مع ارتباط إلى KB المنشور للحصول على التفاصيل والحلول البديلة.
+- [تطبيق وصف الحساسية على المحتوى تلقائيا](apply-sensitivity-label-automatically.md) - تمت إزالة المشكلة المعروفة مع مواقع OneDrive المحذوفة المعروضة بشكل غير صحيح في نتائج المحاكاة لنهج التسمية التلقائية)
+- [تمكين التأليف المشترك للملفات المشفرة بتسميات الحساسية](sensitivity-labels-coauthoring.md) - نتيجة لملاحظات العملاء، أزل وسيلة الشرح في قسم المتطلبات الأساسية بأن هذه الميزة غير مدعومة بعد من قبل Semi-Annual قناة المؤسسة، وبدلا من ذلك تمت إضافة Semi-Annual Enterprise Channel (Preview) مع الحد الأدنى للإصدار 2202.
+- [إدارة تسميات الحساسية في تطبيقات Office](sensitivity-labels-office-apps.md) - يتم تحديث تفاصيل الدعم لتطبيق تسمية افتراضية على المستندات الموجودة لتصحيح أنه على Windows، لا يزال هذا الإصدار يتم طرحه في قناة Beta، ويتم الآن طرحه بالكامل على الويب.
 
 ### <a name="changes-to-product-names"></a>تغييرات على أسماء المنتجات
 
@@ -232,122 +307,3 @@ ms.locfileid: "65100512"
 
 ### <a name="sensitivity-labels"></a>تسميات الحساسية
 - أصبح اسم النطاق الخاص [بتسميات Microsoft Purview Data Map](/azure/purview/create-sensitivity-label) الآن "أصول بيانات مهيأة".
-
-## <a name="october-2021"></a>أكتوبر 2021
-
-### <a name="app-governance"></a>إدارة التطبيق
-
-- [تم إصدار الوظيفة الإضافية لحوكمة التطبيقات ل Defender for Cloud Apps للتوفر العام](/cloud-app-security/app-governance-manage-app-governance). تم نقل وثائق حوكمة التطبيقات للانضمام إلى وثائق Defender for Cloud Apps.
-
-### <a name="compliance--service-assurance"></a>ضمان خدمة & التوافق
-
-- [ضمان الخدمة](/compliance) - مراجعة تحديثات المحتوى ربع السنوية للشهادات وبيانات قابلية التطبيق) إدارة أصول مركز البيانات
-  - بنية مركز البيانات والبنية الأساسية
-  - استمرارية أعمال مركز البيانات والتعافي من الكوارث
-  - الضمانات البيئية لمركز البيانات
-  - أمان الوصول الفعلي لمركز البيانات
-  - برنامج توافق Microsoft 365 SDL
-  - التحكم في الوصول إلى مهندس خدمة Microsoft 365
-  - دليل تقييم المخاطر ل MS Cloud
-
-### <a name="data-loss-prevention"></a>منع فقدان البيانات
-
-- [تم تحديث التعرف على Microsoft Purview Data Loss Prevention](endpoint-dlp-learn-about.md) لدعم macOS والتصنيف المتقدم؛ تم تحديثه لإنشاء نهج DLP مخصص لتدقيق النشاط لكافة أنواع الملفات المدعومة.
-- [ابدأ باستخدام Microsoft 365 تم تحديث منع فقدان بيانات نقطة النهاية](endpoint-dlp-getting-started.md) لدعم macOS والتصنيف المتقدم.
-- تم تحديث [استخدام منع فقدان بيانات نقطة النهاية](endpoint-dlp-using.md) لدعم macOS والتصنيف المتقدم.
-- تم تحديث [مرجع تلميحات نهج منع فقدان البيانات](dlp-policy-tips-reference.md) لدعم macOS والتصنيف المتقدم.
-- [تم تحديث أجهزة macOS المضمنة في Microsoft 365 (معاينة)](device-onboarding-macos-overview.md) لدعم macOS والتصنيف المتقدم.
-- تمت إضافة الصفحات الجديدة التالية لأجهزة الإلحاق:
-  - [إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام Intune (معاينة)](device-onboarding-offboarding-macos-intune.md)
-  - [أجهزة macOS الداخلية والخارجية في حلول التوافق باستخدام Intune for Microsoft Defender لعملاء نقطة النهاية (معاينة)](device-onboarding-offboarding-macos-intune-mde.md)
-  - [إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام PRO JAMF (معاينة)](device-onboarding-offboarding-macos-jamfpro.md)
-  - [أجهزة macOS الداخلية والخارجية في حلول التوافق باستخدام JAMF Pro for Microsoft Defender لعملاء نقطة النهاية (معاينة)](device-onboarding-offboarding-macos-jamfpro-mde.md)
-
-### <a name="ediscovery"></a>eDiscovery
-
-- [جمع مرفقات السحابة في eDiscovery (Premium)](advanced-ediscovery-cloud-attachments.md) بالإضافة إلى جمع أحدث إصدار من مرفق سحابة، يمكنك جمع الإصدار الذي تمت مشاركته في رسالة بريد إلكتروني أو محادثة دردشة Teams؛ يتم تمكين جمع الإصدار المشترك من خلال القدرة الجديدة لتطبيق تسمية استبقاء تلقائيا على مرفقات السحابة.
-- [قم بإعداد الإصدارات التاريخية في وظائف eDiscovery (Premium)](advanced-ediscovery-historical-versions.md) الجديدة التي تقوم بفهرسة كافة إصدارات المستندات المخزنة على موقع SharePoint للبحث؛ وهذا يعني أنه يتم إرجاع إصدارات المستندات التي تحتوي على محتوى يتطابق مع استعلام المجموعة في نتائج البحث.
-
-### <a name="encryption"></a>التشفير
-
-- [استخدم التشفير الشامل للمكالمات Microsoft Teams الأحادية (معاينة عامة)](/microsoftteams/teams-end-to-end-encryption) للمحتوى الجديد للمعاينة العامة.
-
-### <a name="data-lifecycle-management"></a>إدارة دورة حياة البيانات
-
-- يتيح لك [إعداد موصل لاستيراد موصل بيانات تدقيق Epic EHR](import-epic-data.md) الجديدة استيراد البيانات من نظام سجلات الرعاية الصحية الإلكترونية Epic لدعم سيناريو إساءة استخدام بيانات المرضى العامة الجديدة لإدارة المخاطر الداخلية.
-- يتيح لك [إعداد موصل لاستيراد موصل بيانات تدقيق EHR للرعاية الصحية](import-healthcare-data.md) استيراد البيانات من نظام سجلات الرعاية الصحية الإلكتروني لدعم سيناريو إساءة استخدام بيانات المرضى العامة الجديدة لإدارة المخاطر الداخلية.
-
-### <a name="retention-and-records-management"></a>إدارة الاستبقاء والسجلات
-- يتم إصدار [نطاقات النهج التكيفية](retention.md#adaptive-or-static-policy-scopes-for-retention) في المعاينة لنهج الاستبقاء ونهج تسمية الاستبقاء.
-- يمكنك الآن [تطبيق تسمية استبقاء تلقائيا استنادا إلى وصف الحساسية](apply-retention-labels-automatically.md#identify-files-and-emails-that-have-a-sensitivity-label).
-- تحتوي خطة الملفات على [عملية استيراد](file-plan-manager.md#import-retention-labels-into-your-file-plan) جديدة.
-- [الإعدادات الشائعة لنهج الاستبقاء ونهج تسمية الاستبقاء](retention-settings.md): مقالة جديدة للحصول على معلومات مفصلة حول تكوين النطاقات التكيفية والإعدادات الأخرى في كل من نهج الاستبقاء ونهج تسمية الاستبقاء.
-
-### <a name="sensitive-information-types"></a>أنواع المعلومات الحساسة
-
-- [تعرف على المحتوى الجديد للكيانات المسماة (معاينة)](named-entities-learn.md) للكيانات المسماة.
-- [استخدم الكيانات المسماة في نهج منع فقدان البيانات (معاينة)](named-entities-use.md) المحتوى الجديد على استخدام الكيانات المسماة.
-
-### <a name="sensitivity-labels"></a>تسميات الحساسية
-
-- يتم نشر [التسميات الافتراضية والنهج الافتراضية](mip-easy-trials.md) للعملاء المؤهلين.
-
-## <a name="september-2021"></a>سبتمبر 2021
-
-### <a name="app-governance"></a>إدارة التطبيق
-
-- تحتوي [معلومات بدء تشغيل التحكم المبسط للتطبيق](app-governance-get-started.md) على سير عمل تم تغييره وإضافة ارتباطات جديدة إلى تسجيل المعاينة العامة
-- [تعريف تنبيهات الكشف الجديد](app-governance-anomaly-detection-alerts.md#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) المضاف (محدث؛ تعريف جديد مضاف لتنبيهات المجموعة)
-
-### <a name="auditing"></a>التدقيق
-
-- [تشغيل التدقيق أو إيقاف تشغيله](turn-audit-log-search-on-or-off.md) القسم الجديد المضاف حول كيفية تدقيق التغييرات في حالة التدقيق في مؤسسة ما؛ وهذا يعني أنه يتم تسجيل سجلات التدقيق عند تشغيل التدقيق أو إيقاف تشغيله؛ يمكنك البحث في سجل تدقيق مسؤول Exchange لسجلات التدقيق هذه
-
-### <a name="communication-compliance"></a>توافق الاتصالات
-
-- [توافق الاتصالات مع إرشادات حلول SIEM](communication-compliance-siem.md) لدمج توافق الاتصالات مع حلول SIEM)
-
-### <a name="compliance-offerings"></a>عروض التوافق
-
-- [أمان السحابة متعدد المستويات (MTCS)](/compliance/regulatory/offering-mtcs-singapore) تحديثات قياسية ل سنغافورة لتغطية Dynamics 365
-- [صناعة بطاقات الدفع (PCI)](/compliance/regulatory/offering-pci-dss) تحديثات معيار أمان البيانات (DSS) لتغطية SharePoint Online
-- إرشادات برامج العميل الجديدة في [القسم 508 من الولايات المتحدة](/compliance/regulatory/offering-section-508-vpats)
-- إرشادات برامج العميل الجديدة [حول إمكانية وصول ذوي الاحتياجات الخاصة إلى محتوى ويب](/compliance/regulatory/offering-wcag-2-1)
-
-### <a name="compliance--service-assurance"></a>ضمان خدمة & التوافق
-
-- مراجعة تحديثات المحتوى للشهادات وبيانات قابلية التطبيق كل ثلاثة أشهر [لضمان الخدمة](/compliance/)
-  - إتلاف الجهاز الذي يحمل البيانات
-  - هجمات DDOS
-
-### <a name="data-connectors"></a>موصلات البيانات
-
-- [أرشفة بيانات الجهات الخارجية في موصلات البيانات Microsoft 365](archiving-third-party-data.md#data-connectors-in-the-us-government-cloud) من CellTrust و17a-4 LLC المتوفرة الآن في المؤسسات سحابة القطاع الحكومي في سحابة حكومة الولايات المتحدة
-- يوفر [إعداد موصل لأرشفة بيانات YouTube](archive-youtube-data.md) إرشادات جديدة لهذه الميزة في المعاينة العامة.
-
-### <a name="ediscovery"></a>eDiscovery
-
-- [استخدم محرر KQL لإنشاء معاينة عامة للاستعلامات البحثية](ediscovery-kql-editor.md) لطريقة جديدة لإنشاء استعلامات البحث في البحث في المحتوى وeDiscovery (قياسي) وeDiscovery (Premium)؛ يوفر محرر KQL الإكمال التلقائي للخصائص والشروط المعتمدة القابلة للبحث ويعرض قوائم القيم المعتمدة للخصائص والشروط القياسية؛ كما يوفر محرر KQL الكشف عن الأخطاء واقتراحات لإصلاحات الأخطاء المحتملة في استعلامات البحث
-
-### <a name="information-barriers"></a>عوائق المعلومات
-
-- بدء استخدام ميزة معاينة جديدة [لحواجز المعلومات](information-barriers-policies.md#step-6-information-barriers-modes) لأوضاع حواجز المعلومات
-- [حواجز المعلومات مع Microsoft Teams](/microsoftteams/information-barriers-in-teams) ميزة معاينة جديدة لأوضاع حواجز المعلومات
-- [حواجز المعلومات مع OneDrive](/onedrive/information-barriers) ميزة معاينة جديدة لأوضاع حواجز المعلومات
-- [حواجز المعلومات مع ميزة المعاينة الجديدة SharePoint Online](/sharepoint/information-barriers) لأوضاع حواجز المعلومات
-
-### <a name="insider-risk-management"></a>إدارة المخاطر الداخلية
-
-- بدء استخدام ميزة المعاينة الجديدة [لإدارة المخاطر الداخلية](insider-risk-management-configure.md#recommended-actions-preview) لبدء الإجراءات الموصى بها
-- [التحقيق في أنشطة المخاطر الداخلية](insider-risk-management-activities.md#get-help-managing-your-insider-risk-alert-queue) الجديدة 'الحصول على المساعدة في إدارة قائمة انتظار تنبيهات المخاطر الداخلية'
-- [بدء استخدام إعدادات إدارة المخاطر الداخلية](insider-risk-management-settings.md#admin-notifications) ميزة معاينة إعدادات إعلامات المسؤول الجديدة
-
-### <a name="retention-and-records-management"></a>إدارة الاستبقاء والسجلات
-- تتوفر الآن [مراجعة الترتيب متعددة المراحل](disposition.md) بشكل عام (GA)، مع [أحداث تدقيق](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities) جديدة. تتيح لك مراجعة الترتيب متعددة المراحل تحديد ما يصل إلى خمس مراحل متتالية لمراجعة الترتيب لتسمية الاستبقاء، ويمكن للمراجعين إضافة مستخدمين آخرين إلى مرحلة مراجعة الترتيب الخاصة بهم. يمكنك أيضا تخصيص إعلامات البريد الإلكتروني والتذكيرات.
-- القنوات الخاصة [لنهج الاستبقاء Teams](create-retention-policies.md#retention-policy-for-teams-locations) متاحة الآن بشكل عام (GA).
-
-### <a name="sensitivity-labels"></a>تسميات الحساسية
-- يتوفر الآن [التأليف المشترك والحفظ التلقائي](sensitivity-labels-coauthoring.md) بشكل عام (GA) Windows (الإصدار الأدنى من 2107 من خيار التحديث الحالي أو التحديث الشهري للمؤسسة) وmacOS (الإصدار الأدنى من 16.51).
-- النشر لتطبيقات Office التي تستخدم تسميات مضمنة: يدعم إعداد التسمية الافتراضي الآن المستندات الموجودة بالإضافة إلى المستندات الجديدة. يوفر هذا التغيير في السلوك التماثل مع عميل التسمية الموحد حماية البيانات Azure. لمزيد من المعلومات حول الإطلاق التدريجي لكل تطبيق والحد الأدنى من الإصدارات، راجع [جدول القدرات](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) ل Word Excel PowerPoint.
-- تدعم تسميات الحاوية الآن [إعدادات ارتباط المشاركة الافتراضية باستخدام إعدادات PowerShell المتقدمة](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings).
-- تتضمن [جداول القدرات](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) التي تسرد الحد الأدنى من الإصدارات المعتمدة للتسمية المضمنة الآن إصدارات للقناة الحالية وقناة المؤسسة الشهرية وقناة المؤسسة Semi-Annual.

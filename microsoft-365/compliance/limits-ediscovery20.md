@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على حدود الحالة وحدود الفهرسة وحدود البحث السارية لحل eDiscovery (Premium) في Microsoft 365.
-ms.openlocfilehash: 3d0204eb452b669937d30fe5519e5af073b64d6d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7aa9dcd65cb047914a8b1b68de3340bb9d7b728f
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099202"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294592"
 ---
 # <a name="limits-in-ediscovery-premium"></a>الحدود في eDiscovery (Premium)
 
@@ -64,7 +64,8 @@ ms.locfileid: "65099202"
 |الحد الأقصى لعدد الأحرف المستخرجة من ملف واحد.|10 <sup>ملايين</sup>|
 |الحد الأقصى لحجم ملف واحد.|150 <sup>ميغابايت4</sup>|
 |أقصى عمق للعناصر المضمنة في مستند.|<sup>254</sup>|
-|الحد الأقصى لحجم الملفات التي تتم معالجتها بواسطة التعرف البصري على الحروف (OCR).|24 <sup>ميغابايت4</sup> <br/>  
+|الحد الأقصى لحجم الملفات التي تتم معالجتها بواسطة التعرف البصري على الحروف (OCR).|24 <sup>ميغابايت4</sup> <br/> |
+|الحد الأقصى لمعدل نقل الفهرسة المتقدمة | 2 غيغابايت في الساعة |
 
 ## <a name="search-limits"></a>حدود البحث
 

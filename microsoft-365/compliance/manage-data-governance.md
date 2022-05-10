@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: تنفيذ قدرات من Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management للتحكم في بياناتك للتوافق أو المتطلبات التنظيمية.
-ms.openlocfilehash: c807d2359c9a8c9cb17955b1ad4bf121cab57918
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 2eff1aea82575a8364eb05f91652a089efbbe833
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286957"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294723"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>تحكم في بياناتك باستخدام Microsoft Purview
 
@@ -39,7 +39,9 @@ ms.locfileid: "65286957"
 
 ![المكونات الرئيسية لتكوين البيانات واستخدامها للتحكم في بياناتك باستخدام Microsoft Purview.](../media/govern-your-data.png)
 
-هل تبحث عن حماية بياناتك؟ راجع [حماية بياناتك باستخدام Microsoft Purview](information-protection.md).
+تفصل الأقسام التالية القدرات الرئيسية لكل حل، مع ارتباطات لفهم المزيد. ومع ذلك، إذا كنت تبحث عن نشر موجه، فراجع [توزيع حل حوكمة البيانات باستخدام Microsoft Purview](data-governance-solution.md).
+
+هل تبحث عن قدرات تكميلية لحماية بياناتك؟ راجع [حماية بياناتك باستخدام Microsoft Purview](information-protection.md).
 
 ## <a name="microsoft-purview-data-lifecycle-management"></a>إدارة دورة حياة بيانات Microsoft Purview
 
