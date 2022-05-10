@@ -577,6 +577,8 @@
   items:
     - name: تحكم بياناتك
       href: manage-data-governance.md
+    - name: توزيع حل إدارة البيانات
+      href: data-governance-solution.md
     - name: فهم الاحتفاظ بالبيانات وحذفها
       items:
         - name: التعرّف على نهج الاستبقاء البيانات
