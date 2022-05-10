@@ -1,0 +1,113 @@
+### YamlMime:Landing
+title: وثائق Microsoft Defender لنقطة النهاية
+summary: يوفر Microsoft Defender لنقطة النهاية الحماية الوقائية، والكشف في ما بعد الاختراق، والتحقيق التلقائي، والاستجابة.
+metadata:
+  title: وثائق Microsoft Defender لنقطة النهاية
+  description: تعرف على Microsoft Defender لنقطة النهاية وزيادة قدرات الأمان المضمنة إلى أقصى حد لحماية الأجهزة، والكشف عن النشاط الضار، ومعالجة التهديدات# المطلوبة؛ وصف المقالة المعروضة في نتائج البحث. < 160 حرفا.
+  services: office-365-security-compliance
+  ms.prod: m365-security
+  ms.technology: mde
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
+  author: mjcaparas
+  ms.author: macapara
+  ms.date: 10/18/2021
+  ms.localizationpriority: high
+  ms.openlocfilehash: d141c9f8b6109bd55bd64e5839db552fc13588de
+  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 12/30/2021
+  ms.locfileid: "63583173"
+landingContent:
+- title: Microsoft Defender for Endpoint
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ما هو Microsoft Defender لنقطة النهاية؟
+      url: microsoft-defender-endpoint.md
+    - text: ما هي الخطة 1 من Defender for Endpoint؟
+      url: defender-endpoint-plan-1.md
+    - text: مقارنة Defender for Endpoint الخطة 1 مع الخطة 2
+      url: defender-endpoint-plan-1-2.md
+  - linkListType: whats-new
+    links:
+    - text: ما الجديد في Microsoft Defender لنقطة النهاية؟
+      url: whats-new-in-microsoft-defender-endpoint.md
+    - text: الإعلان عن الخطة 1 من Defender لنقطة النهاية
+      url: defender-endpoint-plan-1.md
+  - linkListType: video
+    links:
+    - text: فيديو نظرة عامة
+      url: https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
+- title: تقييم & نشر الخدمة
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: تقييم Microsoft Defender لنقطة النهاية
+      url: evaluation-lab.md
+    - text: التخطيط للنشر
+      url: deployment-strategy.md
+  - linkListType: deploy
+    links:
+    - text: دليل النشر
+      url: deployment-phases.md
+    - text: إلحاق الأجهزة المدعومة
+      url: onboard-configure.md
+    - text: إعداد وتكوين الخطة 1 لـ Defender لنقطة النهاية
+      url: mde-p1-setup-configuration.md
+  - linkListType: how-to-guide
+    links:
+    - text: دليل الترحيل
+      url: migration-guides.md
+  - linkListType: video
+    links:
+    - text: فيديو الإلحاق
+      url: https://www.microsoft.com/videoplayer/embed/RE4bGqr
+- title: عمليات الأمان
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: الكشف عن نقطة النهاية والاستجابة لها
+      url: overview-endpoint-detection-response.md
+    - text: الحظر السلوكي والاحتواء
+      url: behavioral-blocking-containment.md
+    - text: التحقيق التلقائي والاستجابة (AIR)
+      url: automated-investigations.md
+    - text: الصيد المتقدم
+      url: advanced-hunting-overview.md
+    - text: خبراء المخاطر في Microsoft
+      url: microsoft-threat-experts.md
+    - text: تحليلات المخاطر
+      url: threat-analytics.md
+- title: استخدام Microsoft Defender لنقطة النهاية على الأنظمة الأساسية الأخرى
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft Defender for Endpoint على Mac
+      url: microsoft-defender-endpoint-mac.md
+    - text: مشكلات الأداء في Microsoft Defender لنقطة النهاية على iOS
+      url: microsoft-defender-endpoint-ios.md
+    - text: مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux
+      url: microsoft-defender-endpoint-linux.md
+    - text: مشكلات الأداء في Microsoft Defender لنقطة النهاية على Android
+      url: microsoft-defender-endpoint-android.md
+- title: المرجع
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: واجهات برمجة التطبيقات والإدارة
+      url: management-apis.md
+    - text: تكامل الشركاء
+      url: partner-integration.md
+- title: إدارة الأمان
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: التهديدات وإدارة الثغرات الأمنية
+      url: next-gen-threat-and-vuln-mgt.md
+    - text: قواعد تقليل الأجزاء المعرضة للهجوم
+      url: overview-attack-surface-reduction.md
+    - text: حماية الجيل التالي
+      url: next-generation-protection.md

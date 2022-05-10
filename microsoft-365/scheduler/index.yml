@@ -1,0 +1,41 @@
+### YamlMime:Hub
+title: المجدول لـ Microsoft 365
+summary: تعرف على كيفية إعداد المجدوِل لـ Microsoft 365 لجدولة الاجتماعات باستخدام Cortana.
+brand: m365
+metadata:
+  title: المجدول لـ Microsoft 365
+  description: تعرف على كيفية إعداد المجدوِل لـ Microsoft 365 لجدولة الاجتماعات باستخدام Cortana.
+  ms.service: exchange-online
+  ms.topic: hub-page
+  author: AshaIyengar21
+  ms.author: v-aiyengar
+  manager: serdars
+  audience: Admin
+  ms.date: 04/23/2021
+  ms.openlocfilehash: e67079f787b012d34482e7e94f85a6d7a822a8ae
+  ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 11/03/2021
+  ms.locfileid: "63578216"
+additionalContent:
+  sections:
+  - items:
+    - title: ما هو مجدوِل Microsoft 365؟
+      summary: تعرف على المجدوِل لـ Microsoft 365 وميزاته، ومن سيستفيد وكيف سيستفيد.
+      url: scheduler-overview.md
+    - title: الثقة والخصوصية
+      summary: تعرف على كيفية تأكد مجدوِل Microsoft 365 من أن ثقتك وخصوصيتك محمية.
+      url: scheduler-trust-privacy.md
+    - title: إعداد المجدول لـ Microsoft 365
+      summary: تعرف على ما هو مطلوب لإعداد المجدوِل لـ Microsoft 365.
+      url: scheduler-setup.md
+    - title: استخدام المجدوِل لـ Microsoft 365
+      summary: تعرف على كيفية استخدام المجدوِل لـ Microsoft 365.
+      url: scheduler-using.md
+    - title: جدولة الاجتماعات المتكررة الديناميكية
+      summary: تعرف على المزيد حول جدولة الاجتماعات المتكررة الديناميكية.
+      url: scheduler-recurring-meetings.md
+    - title: الأسئلة المتداولة حول المجدول
+      summary: الأسئلة والأجوبة المتداولة حول المجدوِل لـ Microsoft 365.
+      url: scheduler-faqs.md

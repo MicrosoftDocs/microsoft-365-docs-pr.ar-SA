@@ -1,0 +1,82 @@
+### YamlMime:Landing
+title: اشتراكات الأعمال ووثائق الفوترة
+summary: تعرف على كيفية شراء اشتراكات الأعمال وإدارتها، وتنفيذ مهام إدارة التراخيص، وإدارة الفوترة والدفعات لحسابات الأعمال الخاصة بك مع Microsoft.
+metadata:
+  title: اشتراكات الأعمال ووثائق الفوترة
+  description: تعرف على كيفية شراء اشتراكات الأعمال وإدارتها، وتنفيذ مهام إدارة التراخيص، وإدارة الفوترة والدفعات لحسابات الأعمال الخاصة بك مع Microsoft.
+  ms.service: o365-administration
+  ms.topic: landing-page
+  ms.collection:
+  - commerce
+  - Adm_TOC
+  ms.custom:
+  - commerce_landingpage
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  manager: scotv
+  ms.date: 02/27/2020
+  ms.localizationpriority: medium
+  search.appverid: MET150
+  ms.openlocfilehash: 30e99fcf7b984c2af17cbc7902bc4ff0fad6c3a6
+  ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 10/06/2021
+  ms.locfileid: "63567392"
+landingContent:
+- title: إدارة الفواتير والمدفوعات
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: عرض الفوترة أو الفاتورة
+      url: billing-and-payments/view-your-bill-or-invoice.md
+    - text: فهم فاتورتك
+      url: billing-and-payments/understand-your-invoice2.md
+    - text: دفع قيمة اشتراكك
+      url: billing-and-payments/pay-for-your-subscription.md
+    - text: إدارة طرق الدفع
+      url: billing-and-payments/manage-payment-methods.md
+    - text: تغيير عناوين فاتورتك
+      url: billing-and-payments/change-your-billing-addresses.md
+- title: إدارة التراخيص
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: شراء أو إزالة التراخيص.
+      url: licenses/buy-licenses.md
+    - text: تعيين تراخيص للمستخدمين
+      url: ../admin/manage/assign-licenses-to-users.md
+    - text: أخطاء تعيين التراخيص من المستخدمين
+      url: ../admin/manage/remove-licenses-from-users.md
+    - text: فهم الاشتراكات والتراخيص
+      url: licenses/subscriptions-and-licenses.md
+    - text: تنزيل البرامج الدائمة ومفتاح ترخيص المنتج
+      url: ../admin/setup/download-software-licenses-csp.md
+- title: الترقية أو التجديد أو الإلغاء
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ترقية العضوية إلى خطة أخرى.
+      url: subscriptions/upgrade-to-different-plan.md
+    - text: تجديد الاشتراك الخاص بك
+      url: subscriptions/renew-your-subscription.md
+    - text: إعادة تنشيط الاشتراك
+      url: subscriptions/reactivate-your-subscription.md
+    - text: إلغاء اشتراكك
+      url: subscriptions/cancel-your-subscription.md
+    - text: إغلاق حسابك
+      url: close-your-account.md
+- title: التجربة أو الشراء
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: تجربة اشتراك Microsoft 365 أو شرائه
+      url: try-or-buy-microsoft-365.md
+    - text: شراء اشتراك من الإصدار التجريبي المجاني الخاص بك
+      url: ./try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial
+    - text: مد فترة الإصدار التجريبي لديك
+      url: extend-your-trial.md#extend-your-trial
+    - text: إضافة مساحة تخزين
+      url: add-storage-space.md
+    - text: شراء اسم مجال
+      url: ../admin/get-help-with-domains/buy-a-domain-name.md
