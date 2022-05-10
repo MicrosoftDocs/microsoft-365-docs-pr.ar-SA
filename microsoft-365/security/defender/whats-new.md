@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0cbcc198f31497996595a9f17df9cf689c435b58
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 3c11e531e8b4706128e1519b790046f800827d67
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130528"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285007"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>الجديد في Microsoft 365 Defender
 
@@ -45,6 +45,8 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 يمكنك أيضا الحصول على تحديثات المنتج والإعلامات المهمة من خلال [مركز الرسائل](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
+## <a name="may-2022"></a>مايو 2022
+- (معاينة) اتساقا مع التوسع الذي تم الإعلان عنه مؤخرا في فئة خدمة جديدة تسمى [خبراء الأمان من Microsoft](https://aka.ms/MicrosoftSecurityExperts)، نقدم توفر [خبراء Microsoft Defender للتتبع](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) للمعاينة العامة. إن Defender Experts for Hunting مخصص للعملاء الذين لديهم مركز عمليات أمان قوي ولكنهم يريدون من Microsoft مساعدتهم في البحث بشكل استباقي عن التهديدات عبر بيانات Microsoft Defender، بما في ذلك نقاط النهاية Office 365 والتطبيقات السحابية والهوية. 
 
 ## <a name="april-2022"></a>أبريل 2022
 - (معاينة) يمكن الآن اتخاذ [إجراءات](advanced-hunting-take-action.md) على رسائل البريد الإلكتروني مباشرة من نتائج استعلام التتبع. يمكن نقل رسائل البريد الإلكتروني إلى مجلدات أخرى أو حذفها بشكل دائم. 

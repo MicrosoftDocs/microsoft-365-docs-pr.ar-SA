@@ -17,14 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على كيفية عمل الاستبقاء Exchange.
-ms.openlocfilehash: d5c961c733dd757c1f2b8179793b43991e71b4d8
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: b49a21f5358bb8d4b25c1b164d30180f1fa265d9
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188735"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285935"
 ---
 # <a name="learn-about-retention-for-exchange"></a>تعرف على استبقاء Exchange
+
+>*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 

@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: تعرف على أفضل ممارسات الحوكمة لأدوات التعاون Microsoft 365، بما في ذلك مجموعات Microsoft 365 Teams SharePoint Yammer.
-ms.openlocfilehash: 130342725e8c43b4aeaac116b94704db3046e059
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: f4afed27fa6d40f7f6967583bcfd3f43c69c7963
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941380"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284985"
 ---
 # <a name="what-is-collaboration-governance"></a>ما هي حوكمة التعاون؟
 
@@ -149,7 +149,7 @@ ms.locfileid: "64941380"
 |مشاركة الموقع والملفات المقيدة|تقييد مشاركة الموقع والملف والمجلدات لأعضاء مجموعة أمان معينة.|Microsoft 365 E5 أو E3|
 |إنشاء مجموعة مقيدة|تقييد إنشاء الفريق والمجموعة لأعضاء مجموعة أمان معينة.|Microsoft 365 E5 أو E3 مع تراخيص Azure AD Premium أو Azure AD Basic EDU|
 |نهج تسمية المجموعة|فرض البادئات أو اللاحقات على أسماء المجموعات والفرق.|Microsoft 365 E5 أو E3 مع تراخيص Azure AD Premium أو Azure AD Basic EDU|
-|نهج انتهاء صلاحية المجموعة|قم بتعيين المجموعات والفرق غير النشطة لتنتهي صلاحيتها وسيتم حذفها بعد فترة زمنية محددة.|Microsoft 365 E5 أو E3 مع تراخيص Premium Azure AD|
+|نهج انتهاء صلاحية المجموعة|قم بتعيين المجموعات والفرق غير النشطة لتنتهي صلاحيتها وسيتم حذفها بعد فترة زمنية محددة.|Microsoft 365 E5 أو E3 مع تراخيص Azure AD Premium|
 |وصول الضيوف لكل مجموعة|السماح بمشاركة الفريق والمجموعة أو منعها مع أشخاص من خارج مؤسستك على أساس كل مجموعة.|Microsoft 365 E5 أو E3|
 
 ## <a name="collaboration-governance-planning-recommendations"></a>توصيات تخطيط حوكمة التعاون
@@ -205,7 +205,7 @@ ms.locfileid: "64941380"
 
 |**البند**|**الوصف**|
 |:-----|:-----|
-|[![صورة مصغرة للملف البياني للمعلومات للمجموعات.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> تم التحديث في يونيو 2019|توضح هذه الرسوم التوضيحية بالتفصيل الأنواع المختلفة من المجموعات، وكيفية إنشاء هذه المجموعات وإدارتها، وبعض توصيات الحوكمة.|
+|[![صورة مصغرة للملف البياني للمعلومات للمجموعات.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \| [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> محدث في مايو 2022|توضح هذه الرسوم التوضيحية بالتفصيل الأنواع المختلفة من المجموعات، وكيفية إنشاء هذه المجموعات وإدارتها، وبعض توصيات الحوكمة.|
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams وخدمات الإنتاجية ذات الصلة في Microsoft 365 لمهندسي تكنولوجيا المعلومات
 البنية المنطقية لخدمات الإنتاجية في Microsoft 365، الرائدة مع Microsoft Teams.
@@ -223,7 +223,7 @@ ms.locfileid: "64941380"
 
 | البند | الوصف |
 |:-----|:-----|
-|[![ملصق النموذج: قدرات حماية المعلومات والامتثال ل Microsoft Purview.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> الإنجليزية: [تنزيل كملف PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> اليابانية: [تنزيل كملف PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> تم التحديث في نوفمبر 2020|يتضمن: <ul><li>  منع فقدان بيانات Microsoft Purview حماية البيانات وMicrosoft Purview</li><li>نهج الاستبقاء وتسميات الاستبقاء </li><li>عوائق المعلومات</li><li>توافق الاتصالات</li><li>مخاطر Insider</li><li>استيعاب بيانات الجهات الخارجية</li>|
+|[![ملصق النموذج: قدرات حماية المعلومات والامتثال ل Microsoft Purview.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> الإنجليزية: [تنزيل كملف PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> اليابانية: [تنزيل كملف PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> تم التحديث في نوفمبر 2020|يتضمن: <ul><li>  Microsoft Purview حماية البيانات وMicrosoft Purview Data Loss Prevention</li><li>نهج الاستبقاء وتسميات الاستبقاء </li><li>عوائق المعلومات</li><li>توافق الاتصالات</li><li>مخاطر Insider</li><li>استيعاب بيانات الجهات الخارجية</li>|
 
 ## <a name="conference-sessions"></a>جلسات عمل المؤتمر
 
@@ -239,16 +239,16 @@ ms.locfileid: "64941380"
 
 تعرف على كيفية إعداد دورة حياة انتهاء صلاحية المجموعات، ونهج التسمية، وتسميات التصنيف، والتعاون مع الضيوف الخارجيين، وإدارة أذونات إنشاء المجموعة.
 
-- [تحويل التعاون وتظليل تكنولوجيا المعلومات مع مجموعات Office 365](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
+- [تحويل التعاون وتظليل تكنولوجيا المعلومات باستخدام مجموعات Office 365](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **مثال على العميل**
 
 اطلع على مثال خلف الكواليس حول كيفية عمل مجموعات Microsoft 365 SharePoint Teams Yammer معا لتوفير نظام أساسي للتعاون العالمي.
 
-- [البحث عن تعاونك مع مجموعات Office 365 SharePoint Teams Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
+- [البحث عن تعاونك مع مجموعات Microsoft 365 SharePoint Teams Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
 ## <a name="see-also"></a>راجع أيضًا
 
 [وثائق الأمان Microsoft 365](../security/index.yml)
 
-[وثائق Microsoft Purview](../compliance/index.yml)
+[مستندات Microsoft Purview](../compliance/index.yml)

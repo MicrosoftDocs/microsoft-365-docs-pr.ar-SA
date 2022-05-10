@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: فهم الإعدادات التي يمكنك تكوينها في نهج الاستبقاء أو نهج تسمية الاستبقاء للاحتفاظ بما تريده والتخلص مما لا تريده.
-ms.openlocfilehash: 90a048cf96bb2414a42d803bcd2f15deab4e711b
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 39c0258cb4b471e05bae24d0d35c708a42252219
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268782"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285369"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>الإعدادات الشائعة لنهج الاستبقاء ونهج تسمية الاستبقاء
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](https://aka.ms/ComplianceSD).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تعد العديد من إعدادات الاستبقاء شائعة في كل من نهج الاستبقاء ونهج تسمية الاستبقاء. استخدم المعلومات التالية لمساعدتك على تكوين هذه الإعدادات للاحتفاظ بالمحتوى بشكل استباقي، أو حذف المحتوى، أو كليهما— للاحتفاظ بالمحتوى ثم حذفه.
 

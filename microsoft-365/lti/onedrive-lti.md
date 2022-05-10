@@ -13,16 +13,20 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: إنشاء الواجبات ووضع الدرجات عليها، وإنشاء محتوى الدورة التدريبية وتنسيقه، والتعاون في العمل على الملفات في الوقت الحقيقي باستخدام تطبيق التشغيل التفاعلي الجديد لأدوات Microsoft OneDrive Learning ل Canvas.
-ms.openlocfilehash: 5de027c9d7606ebe546a8dc8e087b91da7f0400e
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 8a4e3a1fc1b1d19bed093d5e72bf66e1afb2f591
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824553"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285555"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>دمج Microsoft OneDrive LTI مع Canvas
 
-يعد دمج Microsoft OneDrive LTI مع Canvas عملية على خطوتين. تمكن الخطوة الأولى Microsoft OneDrive في Canvas، والخطوة الثانية تجعل Microsoft OneDrive LTI متوفرة ضمن دورات Canvas التدريبية.
+هذه المقالة مخصصة لمسؤولي تكنولوجيا المعلومات التعليميين الذين يحتاجون إلى إعداد Microsoft OneDrive LTI للوحة.
+
+للحصول على إرشادات للمعلمين حول كيفية استخدام OneDrive LTI في Canvas، راجع [استخدام Microsoft OneDrive مع LMS.](https://support.microsoft.com/topic/use-microsoft-onedrive-with-your-lms-c2ddeb48-f695-4267-94f2-14f7ff1b7bdd)
+
+دمج Microsoft OneDrive LTI مع Canvas هو عملية على خطوتين. تمكن الخطوة الأولى Microsoft OneDrive في Canvas، والخطوة الثانية تجعل Microsoft OneDrive LTI متوفرة ضمن دورات Canvas التدريبية.
 
 ## <a name="recommended-browser-settings"></a>إعدادات المستعرض الموصى بها
 
@@ -76,7 +80,10 @@ ms.locfileid: "64824553"
    :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="صفحة تسجيل مستأجر LTI، التي تعرض نص JSON ومربع النص الذي يجب نسخ المفتاح إليه.":::
 
 9. راجع التغييرات واحفظها. سيتم عرض رسالة عند التسجيل الناجح.
+
 10. يمكن أيضا مراجعة تفاصيل التسجيل عن طريق تحديد الزر **View LTI Tenants** على الصفحة الرئيسية.
+
+قد تتطلب الإصدارات المستقبلية موافقة إضافية من المسؤول. في هذه الحالات، ستحتاج إلى تكرار الخطوتين 1 و2 فقط.
 
 ## <a name="enable-microsoft-onedrive-lti-in-canvas-courses"></a>تمكين Microsoft OneDrive LTI في دورات Canvas التدريبية
 

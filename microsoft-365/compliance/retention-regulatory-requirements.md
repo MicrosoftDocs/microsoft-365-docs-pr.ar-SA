@@ -1,5 +1,5 @@
 ---
-title: موارد لمساعدتك على تلبية المتطلبات التنظيمية لإدارة المعلومات وإدارة السجلات
+title: موارد لمساعدتك على تلبية المتطلبات التنظيمية لإدارة دورة حياة البيانات وإدارة السجلات
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,19 +14,21 @@ ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: موارد لمساعدتك على تلبية المتطلبات التنظيمية لإدارة المعلومات وإدارة السجلات.
-ms.openlocfilehash: d5f0c2d405d35147a7868635520521134d0ee8f0
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: موارد لمساعدتك على تلبية المتطلبات التنظيمية لإدارة دورة حياة البيانات وإدارة السجلات.
+ms.openlocfilehash: 2d66aa6ac7eee3fab0718e2850f62730d0bd66f1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759800"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286417"
 ---
-# <a name="regulatory-requirements-for-information-governance-and-records-management"></a>المتطلبات التنظيمية لإدارة المعلومات وإدارة السجلات
+# <a name="regulatory-requirements-for-data-lifecycle-management-and-records-management"></a>المتطلبات التنظيمية لإدارة دورة حياة البيانات وإدارة السجلات
 
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-استخدم الموارد الموجودة في هذه الصفحة لمساعدتك على تلبية متطلبات تنظيمية محددة لإدارة المعلومات وإدارة السجلات في Microsoft 365. يركز كل قسم من هذا المستند على واحد أو أكثر من اللوائح ذات الصلة ويتضمن أي إرشادات موجودة أو تقييم جهة خارجية لكيفية تكوين Microsoft 365 للمساعدة في المتطلبات الموضحة.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+استخدم الموارد الموجودة في هذه الصفحة لمساعدتك على تلبية متطلبات تنظيمية محددة لإدارة دورة حياة البيانات وإدارة السجلات في Microsoft 365. يركز كل قسم من هذا المستند على واحد أو أكثر من اللوائح ذات الصلة ويتضمن أي إرشادات موجودة أو تقييم جهة خارجية لكيفية تكوين Microsoft 365 للمساعدة في المتطلبات الموضحة.
 
 تتوفر هذه الموارد للتنزيل من صفحة ["موارد حماية البيانات" و"الأسئلة المتداولة" و"المستندات التقنية"](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) في Service Trust Portal.
 

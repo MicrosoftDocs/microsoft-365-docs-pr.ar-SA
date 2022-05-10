@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: إرشادات لنشر تسميات الاستبقاء حتى تتمكن بعد ذلك من تطبيقها في التطبيقات للاحتفاظ بما تحتاجه وحذف ما لا تحتاج إليه.
-ms.openlocfilehash: dd20de86b17460d5b150b5bb576ae811e40eed32
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 110115cad46e819ac32d482ab6ecd1eba2129201
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187789"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285511"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>نشر تسميات الاستبقاء وتطبيقها في التطبيقات
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > هذا السيناريو مدعوم لجميع تكوينات تسمية الاستبقاء، بما في ذلك [السجلات التنظيمية](records-management.md#records).

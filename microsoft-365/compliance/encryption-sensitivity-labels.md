@@ -1,5 +1,5 @@
 ---
-title: تقييد الوصول إلى المحتوى باستخدام تسميات الحساسية لتطبيق التشفير
+title: تطبيق التشفير باستخدام تسميات الحساسية
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,16 +16,18 @@ search.appverid:
 - MET150
 description: تكوين تسميات الحساسية للتشفير الذي يحمي بياناتك عن طريق تقييد الوصول والاستخدام.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0ec60e573d5c05c4a30e74f235ffae5983de03dc
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 7355ef75eb455ad7442052daf1df814eb9b3bf26
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705396"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285073"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>تقييد الوصول إلى المحتوى باستخدام تسميات الحساسية لتطبيق التشفير
 
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند إنشاء وصف حساسية، يمكنك تقييد الوصول إلى المحتوى الذي سيتم تطبيق التسمية عليه. على سبيل المثال، باستخدام إعدادات التشفير لتسمية الحساسية، يمكنك حماية المحتوى بحيث:
 
@@ -45,7 +47,7 @@ ms.locfileid: "64705396"
 - **قم بتعيين الأذونات الآن**، بحيث تحدد بالضبط المستخدمين الذين يحصلون على أذونات المحتوى باستخدام هذه التسمية.
 - **اسمح للمستخدمين بتعيين الأذونات** عند تطبيق التسمية على المحتوى. وبهذه الطريقة، يمكنك السماح للأشخاص في مؤسستك ببعض المرونة التي قد يحتاجونها للتعاون وإنجاز عملهم.
 
-تتوفر إعدادات التشفير عند [إنشاء تسمية حساسية](create-sensitivity-labels.md) في مركز التوافق في Microsoft 365. يمكنك أيضا استخدام المدخل الأقدم، مركز التوافق & الأمان.
+تتوفر إعدادات التشفير عند [إنشاء تسمية حساسية](create-sensitivity-labels.md) في مدخل توافق Microsoft Purview.
 
 ## <a name="understand-how-the-encryption-works"></a>فهم كيفية عمل التشفير
 
@@ -192,14 +194,14 @@ ms.locfileid: "64705396"
 
 - أي مستخدمين مصادق عليهم. تأكد من فهم [متطلبات هذا الإعداد وقيوده](#requirements-and-limitations-for-add-any-authenticated-users) قبل تحديده.
 
-- أي مستخدم معين أو مجموعة أمان ممكنة للبريد الإلكتروني أو مجموعة توزيع أو مجموعة Microsoft 365 ([مجموعة Office 365 سابقا](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) في Azure AD. يمكن أن يكون لمجموعة Microsoft 365 عضوية ثابتة أو [ديناميكية](/azure/active-directory/users-groups-roles/groups-create-rule). لاحظ أنه لا يمكنك استخدام [مجموعة توزيع ديناميكية من Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) لأن نوع المجموعة هذا غير متزامن مع Azure AD، ولا يمكنك استخدام مجموعة أمان غير ممكنة للبريد الإلكتروني.
+- أي مجموعة أمان معينة ممكنة للمستخدم أو البريد الإلكتروني أو مجموعة توزيع أو مجموعة Microsoft 365 ([مجموعة Office 365 سابقا](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) في Azure AD. يمكن أن يكون لمجموعة Microsoft 365 عضوية ثابتة أو [ديناميكية](/azure/active-directory/users-groups-roles/groups-create-rule). لاحظ أنه لا يمكنك استخدام [مجموعة توزيع ديناميكية من Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) لأن نوع المجموعة هذا غير متزامن مع Azure AD، ولا يمكنك استخدام مجموعة أمان غير ممكنة للبريد الإلكتروني.
     
     على الرغم من أنه يمكنك تحديد المجموعات التي تحتوي على جهات اتصال بريد كأسلوب ملائم لمنح حق الوصول إلى عدة أشخاص من خارج مؤسستك، هناك حاليا مشكلة معروفة في هذا التكوين. لمزيد من المعلومات، راجع [جهات اتصال "البريد" في المجموعات التي لديها وصول متقطع إلى المحتوى المشفر](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content).
 
-- أي عنوان بريد إلكتروني أو مجال. استخدم هذا الخيار لتحديد جميع المستخدمين في مؤسسة أخرى الذين يستخدمون Azure AD، عن طريق إدخال أي اسم مجال من تلك المؤسسة. يمكنك أيضا استخدام هذا الخيار للموفرين الاجتماعيين، عن طريق إدخال اسم مجالهم مثل **gmail.com أو** **hotmail.com** أو **outlook.com**.
+- أي عنوان بريد إلكتروني أو مجال. استخدم هذا الخيار لتحديد كافة المستخدمين في مؤسسة أخرى الذين يستخدمون Azure AD، عن طريق إدخال أي اسم مجال من تلك المؤسسة. يمكنك أيضا استخدام هذا الخيار للموفرين الاجتماعيين، عن طريق إدخال اسم مجالهم مثل **gmail.com أو** **hotmail.com** أو **outlook.com**.
 
     > [!NOTE]
-    > إذا حددت مجالا من مؤسسة تستخدم Azure AD، فلا يمكنك تقييد الوصول إلى هذا المجال المحدد. بدلا من ذلك، يتم تضمين جميع المجالات التي تم التحقق منها في Azure AD تلقائيا للمستأجر الذي يمتلك اسم المجال الذي تحدده.
+    > إذا قمت بتحديد مجال من مؤسسة تستخدم Azure AD، فلا يمكنك تقييد الوصول إلى هذا المجال المحدد. بدلا من ذلك، يتم تضمين كافة المجالات التي تم التحقق منها في Azure AD تلقائيا للمستأجر الذي يمتلك اسم المجال الذي تحدده.
 
 عند اختيار جميع المستخدمين والمجموعات في مؤسستك أو استعراض الدليل، يجب أن يكون لدى المستخدمين أو المجموعات عنوان بريد إلكتروني.
 
@@ -210,7 +212,7 @@ ms.locfileid: "64705396"
 لا يقيد هذا الإعداد الأشخاص الذين يمكنهم الوصول إلى المحتوى الذي تشفره التسمية، مع استمرار تشفير المحتوى وتزويدك بخيارات لتقييد كيفية استخدام المحتوى (الأذونات) والوصول إليه (انتهاء الصلاحية والوصول دون اتصال). ومع ذلك، يجب أن يكون التطبيق الذي يفتح المحتوى المشفر قادرا على دعم المصادقة المستخدمة. لهذا السبب، يعمل الموفرون الاجتماعيون الخارجيون مثل Google ومصادقة رمز المرور مرة واحدة للبريد الإلكتروني فقط، وفقط عند استخدام Exchange Online. يمكن استخدام حسابات Microsoft مع تطبيقات Office 365 وعارض [حماية البيانات Azure](https://portal.azurerms.com/#/download).
 
 > [!NOTE]
-> ضع في اعتبارك استخدام هذا الإعداد مع [تكامل SharePoint OneDrive مع Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) عند تمكين تسميات الحساسية [لملفات Office في SharePoint OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+> ضع في اعتبارك استخدام هذا الإعداد مع [SharePoint والتكامل OneDrive مع Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) عند تمكين تسميات الحساسية [لملفات Office في SharePoint OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 بعض السيناريوهات النموذجية لأي إعداد للمستخدمين المصادق عليهم:
 

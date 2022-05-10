@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: تنفيذ قدرات Microsoft Purview حماية البيانات لمساعدتك على حماية المعلومات الحساسة أينما كانت تعيش أو تنتقل.
-ms.openlocfilehash: ac6627d620169aca962f85f30c98d830b4a34a9f
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 97f5172479d889ec1914cfc46102a58a83165269
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64999861"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285467"
 ---
 # <a name="protect-your-sensitive-data-with-microsoft-purview"></a>حماية بياناتك الحساسة باستخدام Microsoft Purview
+
+>*[ترخيص توافق & الأمان Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 > [!TIP]
 > *هل تعلم أنه يمكنك تجربة الإصدارات المتميزة من جميع حلول Microsoft Purview التسعة مجانا؟* استخدم تجربة حلول Purview لمدة 90 يوما لاستكشاف مدى قدرة قدرات Purview القوية على مساعدة مؤسستك على تلبية احتياجات التوافق الخاصة بها. يمكن للعملاء Microsoft 365 E3 Office 365 E3 البدء الآن في [مركز تجارب مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). تعرف على تفاصيل حول [الأشخاص الذين يمكنهم التسجيل وشروط الإصدار التجريبي](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
->*[ترخيص توافق & الأمان Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 تنفيذ قدرات **من Microsoft Purview حماية البيانات** (سابقا حماية البيانات في Microsoft) لمساعدتك على اكتشاف المعلومات الحساسة وتصنيفها وحمايتها أينما كانت تعيش أو تنتقل.
 
@@ -73,7 +73,7 @@ ms.locfileid: "64999861"
 |[حماية البيانات في Microsoft SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|توسيع تسميات الحساسية لتشمل تطبيقات وخدمات الجهات الخارجية. <br /><br />  مثال على السيناريو: [تعيين تسمية الحساسية والحصول عليها (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[إعداد عدة تطوير برامج حماية البيانات في Microsoft (MIP) وتكوينها](/information-protection/develop/setup-configure-mip)|
 
 
-## <a name="prevent-data-loss"></a>تفادي فقدان البيانات
+## <a name="prevent-data-loss"></a>منع فقدان البيانات
 
 للمساعدة في منع الإفراط في المشاركة العرضية للمعلومات الحساسة، استخدم القدرات التالية:
 

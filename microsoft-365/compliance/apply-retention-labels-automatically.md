@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: إنشاء نهج استبقاء التسميات التلقائية حتى تتمكن من تطبيق التسميات تلقائيا للاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه
-ms.openlocfilehash: 1895669c20d06bdae13ed2d25183dff92862d44f
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 54db8d8c72266e1fc7a9fa6c3fe4829c62ba4357
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188845"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285489"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>تطبيق تسمية استبقاء تلقائيا للاحتفاظ بالمحتوى أو حذفه
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > هذا السيناريو غير معتمد [للسجلات التنظيمية](records-management.md#records) أو التسميات الافتراضية لبنية تنظيمية مثل مجموعة مستندات أو مكتبة في SharePoint أو مجلد في Exchange. تتطلب هذه السيناريوهات [نهج تسمية استبقاء منشور](create-apply-retention-labels.md).

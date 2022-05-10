@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: الإعلان عن السجلات باستخدام تسميات الاستبقاء.
-ms.openlocfilehash: 23dd6c61d9da787eecd2e1fa825fe338d961d1d1
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: 75445d1cd61bd86dd41d6325efc6e71fac20ddc0
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911444"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286045"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>تعريف السجلات باستخدام تسميات الاستبقاء
 
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 للإعلان عن المستندات ورسائل البريد الإلكتروني [كسجلات](records-management.md#records)، يمكنك استخدام [تسميات الاستبقاء](retention.md#retention-labels) التي تضع علامة على المحتوى **كسجل** أو **سجل تنظيمي**.
 
@@ -55,11 +57,7 @@ ms.locfileid: "64911444"
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>تكوين تسميات الاستبقاء للإعلان عن السجلات
 
-عند إنشاء تسمية استبقاء من حل **إدارة السجلات** في مركز التوافق في Microsoft 365، يمكنك تحديد الخيار **"وضع علامة على العناصر كسجل**". بعد ذلك، كخيار إضافي يتم طرحه حاليا في المعاينة، قم بإلغاء تأمين السجل بشكل افتراضي SharePoint OneDrive.
-
-يتيح الخيار الإضافي **لإلغاء تأمين هذا السجل بشكل افتراضي** للمستخدمين الإعلان عن السجلات بأنفسهم لأنهم يقومون بتأمين السجل عند الانتهاء من تحرير المحتوى. لمزيد من المعلومات حول هذا السيناريو المعتمد، راجع [استخدام تعيين إصدار السجلات لتحديث السجلات المخزنة في SharePoint أو OneDrive](record-versioning.md).
-
-إذا قمت بتشغيل أمر PowerShell من القسم السابق، يمكنك بدلا من ذلك وضع علامة على العناصر كسجل تنظيمي.
+عند إنشاء تسمية استبقاء من حل **إدارة السجلات** في مدخل توافق Microsoft Purview، يكون لديك خيار وضع علامة على العناصر كسجل. إذا قمت بتشغيل أمر PowerShell من القسم السابق، يمكنك بدلا من ذلك وضع علامة على العناصر كسجل تنظيمي.
 
 على سبيل المثال:
 
@@ -77,7 +75,7 @@ ms.locfileid: "64911444"
 
 إذا كنت ستستخدم تسميات الاستبقاء للإعلان عن العناصر كسجلات (بدلا من السجلات التنظيمية) في SharePoint OneDrive، ففكر فيما إذا كنت بحاجة إلى تغيير إعداد المستأجر الافتراضي الذي يسمح للمستخدمين بتحرير خصائص [سجل مؤمن](record-versioning.md) عندما تكون الملفات أكبر من 0 بايت.
 
-لتغيير هذا الإعداد الافتراضي، انتقل إلى [مركز التوافق في Microsoft 365](https://compliance.microsoft.com/) >  **Records managementRecords** >  management **settingsRetention labelsAllow** >  >  **editing of record properties** ثم أوقف تشغيل الإعداد **"السماح للمستخدمين بتحرير خصائص السجل**".
+لتغيير هذا الإعداد الافتراضي، انتقل إلى [مدخل Microsoft Purview compliance](https://compliance.microsoft.com/) **managementRecords** >  **managementRecords** >  **settingsRetention** >  labelsAllow  > **لتحرير خصائص السجل** ثم أوقف تشغيل الإعداد **"السماح للمستخدمين بتحرير خصائص السجل**".
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>تطبيق تسمية الاستبقاء المكونة على المحتوى
 

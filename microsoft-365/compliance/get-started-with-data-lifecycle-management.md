@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: هل أنت مستعد لبدء التحكم في بيانات مؤسستك، ولكن لست متأكدا من أين تبدأ؟ اقرأ بعض الإرشادات الإرشادية للبدء.
-ms.openlocfilehash: c5b9e931e2ab822a4d888b775de9fb8fa2acb13b
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 0d9545a04b94b75ee1b9429d7db75b39e90b06ef
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972354"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286835"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>بدء استخدام إدارة دورة حياة البيانات
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 هل أنت جاهز لبدء التحكم في بيانات مؤسستك من خلال الاحتفاظ بالمحتوى الذي تحتاج إلى الاحتفاظ به، وحذف المحتوى الذي لا تريده؟ للبدء، استخدم الإرشادات التالية لإدارة دورة حياة بيانات Microsoft Purview (المعروف سابقا ب Microsoft Information Governance):
 

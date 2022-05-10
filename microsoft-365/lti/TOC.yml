@@ -2,6 +2,8 @@
   href: index.md
 - name: إدارة Microsoft OneLTI
   href: manage-microsoft-one-lti.md
+- name: السماح لملفات تعريف ارتباط المستعرض لعناوين نظام الإدارة التعليمية URL
+  href: browser-cookies.md
 - name: عمليات تكامل Canvas
   items:
     - name: استخدام Microsoft OneDrive LTI مع Canvas

@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: عند استخدام عميل التسمية الموحد ل Azure حماية البيانات (AIP)، فهم مزايا استخدام التسمية المضمنة لتطبيقات Office بدلا من الوظيفة الإضافية AIP.
-ms.openlocfilehash: 99710520b1b687fe6fc2469badb3ad18e6070371
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 161f05c1f9c27723ff4940087c715e0556484b79
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093493"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287123"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>لماذا اختر تسمية مضمنة عبر الوظيفة الإضافية AIP لتطبيقات Office
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند استخدام [تسميات الحساسية](sensitivity-labels.md) في Microsoft 365 Apps على أجهزة الكمبيوتر Windows، لديك خيار استخدام التسمية المضمنة في تطبيقات Office، أو وظيفة إضافية من [عميل التسمية الموحدة ل Azure حماية البيانات (AIP](/azure/information-protection/rms-client/aip-clientv2)). 
 

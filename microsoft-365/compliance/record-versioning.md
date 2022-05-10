@@ -1,5 +1,5 @@
 ---
-title: استخدام إصدار السجلات لتحديث السجلات المخزنة في SharePoint أو OneDrive
+title: استخدام إصدار السجل في SharePoint أو OneDrive
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,21 +17,23 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على السجلات لمساعدتك في تنفيذ حل إدارة السجلات في Microsoft 365.
-ms.openlocfilehash: 7fc4f9bb14e9e49c7894e864b8ff9e8f4337149a
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 9515622af6a6ddb5abe28d6fb920eed72f487f41
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835876"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285051"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>استخدام إصدار السجلات لتحديث السجلات المخزنة في SharePoint أو OneDrive
 
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 > [!NOTE]
 > نظرا إلى أن السجلات التنظيمية تحظر التحرير، فإن إصدار السجلات غير متوفر للسجلات التنظيمية.
 >
-> يمكنك أيضا منع تعيين إصدار السجلات للمستأجر الخاص بك، حتى إذا كنت لا تستخدم السجلات التنظيمية: انتقل إلى عقدة **إدارة السجلات** في **إعدادات إدارة مركز التوافق في Microsoft 365 > Records managementsRetention** >  **labelsConfigure** > ، ثم أوقف تشغيل إعداد **تمكين تعيين إصدار السجل**.
+> يمكنك أيضا منع تعيين إصدار السجلات للمستأجر الخاص بك، حتى لو كنت لا تستخدم السجلات التنظيمية: انتقل إلى **إدارة السجلات** في مدخل توافق Microsoft Purview > **إعدادات إدارة السجلات settingsRetention** >  **labelsConfigure** >  ثم قم بإيقاف تشغيل إعداد **تمكين تعيين إصدار السجلات**.
 
 تعد القدرة على وضع علامة على مستند [كسجل](records-management.md#records) وتقييد الإجراءات التي يمكن تنفيذها على السجل هدفا أساسيا لأي حل لإدارة السجلات. ومع ذلك، قد تكون هناك حاجة أيضا إلى التعاون للأشخاص لإنشاء إصدارات لاحقة.
 

@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على كيفية عمل الاستبقاء SharePoint OneDrive.
-ms.openlocfilehash: ed9cc45218dde112baec8fbca997abc6e82b4d72
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: cbcc8015b8b24309c882e5b8ca7a9c56fb6e344d
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911479"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285979"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>تعرف على استبقاء SharePoint OneDrive
 
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 المعلومات الواردة في هذه المقالة تكمل [التعرف على الاستبقاء](retention.md) لأنه يحتوي على معلومات خاصة SharePoint OneDrive.
 
@@ -78,7 +80,7 @@ ms.locfileid: "64911479"
 
 - تم إيقاف تشغيل إعداد إدارة السجلات الذي يسمح للمستخدمين بحذف العناصر المسماة.
     
-    للتحقق من هذا الإعداد أو تغييره، انتقل إلى حل **إدارة السجلات** في **مركز التوافق في Microsoft 365 > Records managementRecords** >  **settingsRetention** >  **labelsDeletion** >  للعناصر. هناك إعدادات منفصلة SharePoint OneDrive.
+    للتحقق من هذا الإعداد أو تغييره، انتقل إلى حل **إدارة السجلات** في مدخل توافق Microsoft Purview > **إعدادات إدارة سجلاتRecords** >  **labelsDeletion** >  >  **للعناصر**. هناك إعدادات منفصلة SharePoint OneDrive.
     
     بدلا من ذلك، وإذا لم يكن لديك حق الوصول إلى حل **إدارة السجلات** ، يمكنك استخدام *AllowFilesWithKeepLabelToBeDeletedSPO* و *AllowFilesWithKeepLabelToBeDeletoDB* من [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) و [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant).
 
@@ -170,7 +172,7 @@ ms.locfileid: "64911479"
 
 ## <a name="configuration-guidance"></a>إرشادات التكوين
 
-إذا كنت جديدا على تكوين الاستبقاء في Microsoft 365، فراجع [بدء استخدام إدارة المعلومات](get-started-with-information-governance.md).
+إذا كنت جديدا على تكوين الاستبقاء في Microsoft 365، فراجع [بدء استخدام إدارة دورة حياة البيانات](get-started-with-data-lifecycle-management.md).
 
 إذا كنت جاهزا لتكوين نهج استبقاء أو تسمية استبقاء Exchange، فراجع الإرشادات التالية:
 - [إنشاء نهج الاستبقاء وتكوينها](create-retention-policies.md)

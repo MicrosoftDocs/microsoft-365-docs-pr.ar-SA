@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: هل أنت مستعد لنشر أوصاف الحساسية للمساعدة في حماية بيانات مؤسستك، ولكن لست متأكدا من مكان البدء؟ اقرأ بعض الإرشادات العملية لمساعدتك في رحلة التسمية.
-ms.openlocfilehash: b0fcf435d7805440e93f0d1248723f4b5599d4a9
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: f27f1a475f5880058db40894015dabdec9038be1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268760"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286023"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>بدء استخدام تسميات الحساسية
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 للحصول على معلومات حول تسميات الحساسية وكيف يمكن أن تساعدك على حماية بيانات مؤسستك، راجع [التعرف على تسميات الحساسية](sensitivity-labels.md).
 
@@ -106,6 +106,7 @@ ms.locfileid: "65268760"
 |تطبيق تسمية استبقاء للاحتفاظ بالملفات أو رسائل البريد الإلكتروني التي تحتوي على وصف حساسية معين أو حذفها|[تطبيق تسمية استبقاء تلقائيا للاحتفاظ بالمحتوى أو حذفه](apply-retention-labels-automatically.md) |
 |اكتشاف الملفات المخزنة في مخازن البيانات المحلية وتسميتها وحمايتها |[نشر الماسح الضوئي ل Azure حماية البيانات لتصنيف الملفات وحمايتها تلقائيا](/azure/information-protection/deploy-aip-scanner)|
 |اكتشاف الملفات المخزنة في مخازن البيانات الموجودة في السحابة وتسميتها وحمايتها|[اكتشاف البيانات المنظمة والحساسة المخزنة في السحابة وتصنيفها وتسميتها وحمايتها](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|تسمية SQL أعمدة قاعدة البيانات باستخدام نفس تسميات الحساسية المستخدمة للملفات ورسائل البريد الإلكتروني بحيث يكون لدى المؤسسة حل تسمية موحد يمكنه الاستمرار في حماية هذه البيانات المنظمة عند تصديرها |[Data Discovery & Classification for Azure SQL Database وAzure SQL Managed Instance وAzure Synapse Analytics](/azure/azure-sql/database/data-discovery-and-classification-overview) <br /><br /> [SQL اكتشاف البيانات وتصنيفها SQL Server المحلي](/sql/relational-databases/security/sql-data-discovery-and-classification)|
 |تطبيق التسميات وعرضها في Power BI، وحماية البيانات عند حفظها خارج الخدمة|[أوصاف الحساسية في Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
 |مراقبة وفهم كيفية استخدام أوصاف الحساسية في مؤسستي|[التعرّف على تصنيف البيانات](data-classification-overview.md)|
 |توسيع أوصاف الحساسية لتشمل تطبيقات وخدمات الجهات الخارجية|[حماية البيانات في Microsoft SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|

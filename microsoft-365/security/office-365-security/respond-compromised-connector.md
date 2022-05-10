@@ -16,12 +16,12 @@ ms.custom: ''
 description: تعرف على كيفية التعرف على موصل تم اختراقه والاستجابة له في Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50caf98bec9d918dd3ff1bcb076a080b123a357a
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: fd4c5f22de51081f5b848c367bf79a8c7033f3d3
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65182634"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285391"
 ---
 # <a name="respond-to-a-compromised-connector"></a>الاستجابة إلى موصل مُخترق
 
@@ -35,7 +35,7 @@ ms.locfileid: "65182634"
 
 يتم استخدام الموصلات لتمكين تدفق البريد بين خوادم Microsoft 365 أو Office 365 والبريد الإلكتروني المتوفرة لديك في البيئة المحلية. لمزيد من المعلومات، راجع [تكوين تدفق البريد باستخدام الموصلات في Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-يتم تعريف الموصل الوارد الذي تم اختراقه على أنه عندما يقوم شخص غير مصرح له إما بتطبيق التغيير (التغييرات) على موصل وارد موجود أو إنشاء موصل وارد جديد في مستأجر Microsoft 365، بهدف إرسال رسائل البريد الإلكتروني غير المرغوب فيها أو التصيد الاحتيالي.  
+يتم تعريف الموصل الوارد الذي تم اختراقه على أنه عندما يقوم شخص غير مصرح له إما بتطبيق التغيير (التغييرات) على موصل وارد موجود أو إنشاء موصل وارد جديد في مستأجر Microsoft 365، بهدف إرسال رسائل البريد الإلكتروني غير المرغوب فيها أو التصيد الاحتيالي. لاحظ أن هذا ينطبق فقط على الموصلات الواردة من النوع OnPremises. 
 
 ## <a name="detect-a-compromised-connector"></a>الكشف عن موصل تم اختراقه
 

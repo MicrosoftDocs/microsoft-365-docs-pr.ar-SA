@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0aee30dff19f6d1127e63d14fa69e5d72232e305
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 8319cd07fb1a648e4aa20bc3a29535a2f4916f6b
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972522"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286373"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>صور توضيحية لإنتاجية Microsoft 365
 
@@ -38,14 +38,14 @@ ms.locfileid: "64972522"
 
 | البند | الوصف |
 |:-----|:-----|
-|[![ملصق سيناريو اتصالات شركة Contoso.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>محدث في يناير 2022   |يوضح هذا الملصق كيف تحافظ شركة Contoso على إعلام الموظفين ومشاركتهم عبر سيناريوهات الاتصال الشائعة. تستخدم Contoso مجموعة متنوعة من تطبيقات M365، بما في ذلك عرض جديد، Viva Connections.<br/><br/>**إرشادات الحلول ذات الصلة** <br/> <ul><li>[الاتصالات التنظيمية: الإرشادات والأساليب والمنتجات](/sharepoint/corporate-communications-overview)|
+|[![ملصق سيناريو اتصالات شركة Contoso.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>محدث في يناير 2022   |يوضح هذا الملصق كيف تحافظ شركة Contoso على إعلام الموظفين ومشاركتهم عبر سيناريوهات الاتصال الشائعة. تستخدم شركة Contoso مجموعة متنوعة من تطبيقات Microsoft 365، بما في ذلك عرض جديد، Viva Connections.<br/><br/>**إرشادات الحلول ذات الصلة** <br/> <ul><li>[الاتصالات التنظيمية: الإرشادات والأساليب والمنتجات](/sharepoint/corporate-communications-overview)|
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>المجموعات في Microsoft 365 لمهندسي تكنولوجيا المعلومات
 يتضمن هذا الرسم التوضيحي معلومات لمهندسي تكنولوجيا المعلومات حول مجموعات Microsoft 365. للتعرف على تكوين وإدارة مجموعات Microsoft 365 والفرق للتعاون في مؤسستك، راجع [إعداد تعاون آمن مع Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) وما [هي حوكمة التعاون؟](/microsoft-365/solutions/collaboration-governance-overview).
 
 | البند | الوصف |
 |:-----|:-----|
-|[![صورة مصغرة للملف البياني للمعلومات للمجموعات.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> محدث في مايو 2020|توضح هذه الرسوم التوضيحية بالتفصيل الأنواع المختلفة من المجموعات، وكيفية إنشاء هذه المجموعات وإدارتها، وبعض توصيات الحوكمة.
+|[![صورة مصغرة للملف البياني للمعلومات للمجموعات.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \| [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> محدث في مايو 2022|توضح هذه الرسوم التوضيحية بالتفصيل الأنواع المختلفة من المجموعات، وكيفية إنشاء هذه المجموعات وإدارتها، وبعض توصيات الحوكمة.
 
 ## <a name="migrate-to-microsoft-365"></a>ترحيل بياناتك إلى Microsoft 365
 
@@ -64,7 +64,7 @@ ms.locfileid: "64972522"
 
 | البند | الوصف |
 |:-----|:-----|
-|[![ملصق النموذج: Microsoft 365 قدرات حماية المعلومات والامتثال.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> الإنجليزية: [تنزيل كملف PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> اليابانية: [تنزيل كملف PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> تم التحديث في نوفمبر 2020|يتضمن: <ul><li>  منع فقدان بيانات Microsoft Purview حماية البيانات وMicrosoft Purview</li><li>نهج الاستبقاء وتسميات الاستبقاء </li><li>عوائق المعلومات</li><li>توافق الاتصالات</li><li>مخاطر Insider</li><li>استيعاب بيانات الجهات الخارجية</li>|
+|[![ملصق النموذج: Microsoft 365 قدرات حماية المعلومات والامتثال.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> الإنجليزية: [تنزيل كملف PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> اليابانية: [تنزيل كملف PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> تم التحديث في نوفمبر 2020|يتضمن: <ul><li>  Microsoft Purview حماية البيانات وMicrosoft Purview Data Loss Prevention</li><li>نهج الاستبقاء وتسميات الاستبقاء </li><li>عوائق المعلومات</li><li>توافق الاتصالات</li><li>مخاطر Insider</li><li>استيعاب بيانات الجهات الخارجية</li>|
 
 
 ## <a name="security-and-information-protection-for-multi-region-organizations"></a>الأمان حماية البيانات للمؤسسات متعددة المناطق

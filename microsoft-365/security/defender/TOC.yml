@@ -328,6 +328,10 @@
               href: microsoft-threat-experts.md
             - name: تكوين قدرات خبراء المخاطر في Microsoft وإدارتها
               href: configure-microsoft-threat-experts.md
+        - name: التعاون مع خبراء Microsoft Defender للتتبع
+          items:
+            - name: نظرة عامة
+              href: defenderexpertsforhuntingprev.md
     - name: دليل عمليات الأمان
       items:
         - name: نظرة عامة

@@ -17,12 +17,12 @@ ms.custom:
 f1.keywords: NOCSH
 recommendations: false
 description: تعرف على أفضل الممارسات لإعداد التعاون الآمن للملفات ومشاركتها في Teams لحماية بياناتك استنادا إلى حساسيتها.
-ms.openlocfilehash: aadc2bf092713ffde68cd8fb9824d837c2f14acf
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 54bfe4bce20687474526916fe7b11ca0e5bb1b72
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935402"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286527"
 ---
 # <a name="set-up-secure-file-sharing-and-collaboration-with-microsoft-teams"></a>إعداد مشاركة الملفات الآمنة والتعاون في العمل باستخدام Microsoft Teams
 
@@ -189,7 +189,7 @@ ms.locfileid: "64935402"
 
 |**البند**|**الوصف**|
 |---|---|
-|[![صورة مصغرة للملف البياني للمعلومات للمجموعات.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> تم التحديث في يونيو 2019|توضح هذه الرسوم التوضيحية بالتفصيل الأنواع المختلفة من المجموعات، وكيفية إنشاء هذه المجموعات وإدارتها، وبعض توصيات الحوكمة.|
+|[![صورة مصغرة للملف البياني للمعلومات للمجموعات.](../downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) \| [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx) <br> محدث في مايو 2022|توضح هذه الرسوم التوضيحية بالتفصيل الأنواع المختلفة من المجموعات، وكيفية إنشاء هذه المجموعات وإدارتها، وبعض توصيات الحوكمة.|
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams وخدمات الإنتاجية ذات الصلة في Microsoft 365 لمهندسي تكنولوجيا المعلومات
 
@@ -210,6 +210,6 @@ ms.locfileid: "64935402"
 
 [وثائق الأمان Microsoft 365](../security/index.yml)
 
-[وثائق Microsoft Purview](../compliance/index.yml)
+[مستندات Microsoft Purview](../compliance/index.yml)
 
 [مرحبا بك في Microsoft Teams](/MicrosoftTeams/Teams-overview)

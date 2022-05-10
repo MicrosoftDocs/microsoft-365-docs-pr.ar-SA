@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم نهج الاستبقاء للحفاظ على التحكم في المحتوى الذي ينشئه المستخدمون باستخدام البريد الإلكتروني والمستندات والمحادثات بكفاءة. احتفظ بما تريده واتخلص مما لا تريده.
-ms.openlocfilehash: 22373fddf6a4ccac718f9fede9d1bbc40b92681d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: abb18142517ceb6c5442ccd372c4f392db706bc1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "65145300"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284941"
 ---
 # <a name="create-and-configure-retention-policies"></a>إنشاء نهج الاستبقاء وتكوينها
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم نهج استبقاء لإدارة البيانات لمؤسستك من خلال اتخاذ قرار استباقي بشأن الاحتفاظ بالمحتوى أو حذف المحتوى أو الاحتفاظ به ثم حذفه.
 

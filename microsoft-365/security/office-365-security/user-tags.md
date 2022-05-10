@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين التعرف على كيفية تحديد مجموعات معينة من المستخدمين الذين لديهم علامات مستخدم في Microsoft Defender لـ Office 365 الخطة 2. تتوفر تصفية العلامات عبر التنبيهات والتقارير والتحقيقات في Microsoft Defender لـ Office 365 لتحديد المستخدمين المعلمين بسرعة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f045e5dcb590c36fd0f3768c472057b07b12b21
-ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
+ms.openlocfilehash: e7b9584b41ded7edd28fb1501ee4e5c3a1febd74
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "64891809"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286395"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>علامات المستخدم في Microsoft Defender لـ Office 365
 
@@ -44,6 +44,7 @@ ms.locfileid: "64891809"
 - [تقرير المستخدم الذي تم اختراقه](view-email-security-reports.md#compromised-users-report)
 - [صفحة كيان البريد الإلكتروني](mdo-email-entity-page.md#other-innovations)
 - [تقرير حالة الحماية من التهديدات](view-email-security-reports.md#threat-protection-status-report)
+- [تقرير أفضل المرسلين والمستلمين](view-email-security-reports.md#top-senders-and-recipients-report)
 - [محاكاة الهجوم](attack-simulation-training.md#target-users)
 - [طرق عرض الحملة](campaigns.md)
 - [عمليات إرسال المسؤول والمستخدم](admin-submission.md)
@@ -68,7 +69,7 @@ ms.locfileid: "64891809"
 
   > [!NOTE]
   >
-  > - إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات المطلوبة في مدخل Microsoft 365 Defender _والأذونات_ للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع ["حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md)".
+  > - إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات المطلوبة في مدخل Microsoft 365 Defender _والأذونات_ للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md).
   >
   > - يتم التحكم في إدارة علامات المستخدم بواسطة أدوار **Tag Reader** و **Tag Manager** .
 

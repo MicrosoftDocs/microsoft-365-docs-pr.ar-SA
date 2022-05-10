@@ -1,5 +1,5 @@
 ---
-title: استخدام تسميات الحساسية مع Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint
+title: استخدام تسميات الحساسية مع مواقع Microsoft Teams مجموعات Microsoft 365 SharePoint
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,16 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم تسميات الحساسية لحماية المحتوى في مواقع SharePoint Microsoft Teams والمجموعات Microsoft 365.
-ms.openlocfilehash: 0c8462333a3b3fd0c062c72fce0f673977c54b9b
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 9b9427fc736dfee3ea326b8c523d3f872ad98c70
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916238"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286089"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>استخدام تسميات الحساسية لحماية المحتوى في Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint
 
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بالإضافة إلى استخدام [تسميات الحساسية](sensitivity-labels.md) لتصنيف المستندات ورسائل البريد الإلكتروني وحمايتها، يمكنك أيضا استخدام تسميات الحساسية لحماية المحتوى في الحاويات التالية: مواقع Microsoft Teams ومجموعات Microsoft 365 ([مجموعات Office 365 سابقا](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) ومواقع SharePoint. لهذا التصنيف والحماية على مستوى الحاوية، استخدم إعدادات التسمية التالية:
 
@@ -66,9 +68,9 @@ ms.locfileid: "64916238"
 
 إذا لم تقم بعد بتمكين تسميات الحساسية للحاويات، فقم بمجموعة الخطوات التالية كإجراء لمرة واحدة:
 
-1. لأن هذه الميزة تستخدم وظيفة Azure AD، اتبع الإرشادات من وثائق Azure AD لتمكين دعم وصف الحساسية: [تعيين تسميات الحساسية لمجموعات Microsoft 365 في Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
+1. لأن هذه الميزة تستخدم وظائف Azure AD، اتبع الإرشادات من وثائق Azure AD لتمكين دعم وصف الحساسية: [تعيين تسميات الحساسية إلى مجموعات Microsoft 365 في Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. تحتاج الآن إلى مزامنة تسميات الحساسية إلى Azure AD. أولا، [اتصل ب Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+2. تحتاج الآن إلى مزامنة تسميات الحساسية الخاصة بك إلى Azure AD. أولا، [اتصل ب Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
    على سبيل المثال، في جلسة PowerShell التي تقوم بتشغيلها كمسؤول، سجل الدخول باستخدام حساب مسؤول عام.
 
@@ -93,7 +95,7 @@ ms.locfileid: "64916238"
 2. بعد ذلك، في صفحة **"تعريف إعدادات الحماية للمجموعات والمواقع** "، حدد أحد الخيارين المتوفرين أو الخيارين التاليين:
     
     - **إعدادات الخصوصية والوصول للمستخدم الخارجي** لتكوين إعدادات الوصول إلى **الخصوصية** **والمستخدمين الخارجيين** . 
-    - **إعدادات المشاركة الخارجية والوصول المشروط** لتكوين **المشاركة الخارجية للتحكم من مواقع SharePoint المسماة** **واستخدام الوصول المشروط ل Azure AD لحماية إعداد مواقع SharePoint المسماة**.
+    - **إعدادات المشاركة الخارجية والوصول المشروط** لتكوين **المشاركة الخارجية ل Control من مواقع SharePoint المسماة** **واستخدام الوصول المشروط Azure AD لحماية إعداد مواقع SharePoint المسماة**.
 
 3. إذا قمت بتحديد **إعدادات الخصوصية والوصول للمستخدم الخارجي**، فكون الآن الإعدادات التالية:
     
@@ -111,9 +113,9 @@ ms.locfileid: "64916238"
     
     - **التحكم في المشاركة الخارجية من مواقع SharePoint المسماة**: حدد هذا الخيار لتحديد إما المشاركة الخارجية لأي شخص أو الضيوف الجدد والموجودين أو الضيوف الحاليين أو الأشخاص في مؤسستك فقط. لمزيد من المعلومات حول هذا التكوين والإعدادات، راجع وثائق SharePoint [وتشغيل المشاركة الخارجية أو إيقاف تشغيلها لموقع](/sharepoint/change-external-sharing-site).
     
-    - **استخدم الوصول المشروط إلى Azure AD لحماية مواقع SharePoint المسماة**: حدد هذا الخيار فقط إذا قامت مؤسستك بتكوين [واستخدام الوصول المشروط ل Azure Active Directory](/azure/active-directory/conditional-access/overview). ثم حدد أحد الإعدادات التالية:
+    - **استخدم Azure AD الوصول المشروط لحماية مواقع SharePoint المسماة**: حدد هذا الخيار فقط إذا قامت مؤسستك بتكوين [الوصول المشروط ل Azure Active Directory وتستخدمه](/azure/active-directory/conditional-access/overview). ثم حدد أحد الإعدادات التالية:
     
-        - **تحديد ما إذا كان يمكن للمستخدمين الوصول إلى مواقع SharePoint من أجهزة غير مدارة**: يستخدم هذا الخيار ميزة SharePoint التي تستخدم الوصول المشروط إلى Azure AD لحظر الوصول إلى SharePoint ومحتوى OneDrive من الأجهزة غير المدارة أو تقييده. لمزيد من المعلومات، راجع [التحكم في الوصول من الأجهزة غير المدارة](/sharepoint/control-access-from-unmanaged-devices) من وثائق SharePoint. الخيار الذي تحدده لإعداد التسمية هذا هو ما يعادل تشغيل أمر PowerShell لموقع، كما هو موضح في الخطوات من 3 إلى 5 من [الحظر أو تقييد الوصول إلى موقع SharePoint معين أو مقطع OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) من الإرشادات SharePoint.
+        - **تحديد ما إذا كان يمكن للمستخدمين الوصول إلى مواقع SharePoint من أجهزة غير مدارة**: يستخدم هذا الخيار ميزة SharePoint التي تستخدم الوصول المشروط Azure AD لحظر الوصول إلى SharePoint ومحتوى OneDrive أو تقييده من الأجهزة غير المدارة. لمزيد من المعلومات، راجع [التحكم في الوصول من الأجهزة غير المدارة](/sharepoint/control-access-from-unmanaged-devices) من وثائق SharePoint. الخيار الذي تحدده لإعداد التسمية هذا هو ما يعادل تشغيل أمر PowerShell لموقع، كما هو موضح في الخطوات من 3 إلى 5 من [الحظر أو تقييد الوصول إلى موقع SharePoint معين أو مقطع OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) من الإرشادات SharePoint.
             
             للحصول على معلومات تكوين إضافية، راجع [المزيد من المعلومات حول تبعيات خيار الأجهزة غير المدارة](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) في نهاية هذا القسم.
             
@@ -142,7 +144,7 @@ ms.locfileid: "64916238"
 
 ##### <a name="more-information-about-the-dependencies-for-the-authentication-context-option"></a>مزيد من المعلومات حول التبعيات الخاصة بخيار سياق المصادقة
 
-للعرض في القائمة المنسدلة للتحديد، يجب إنشاء سياقات المصادقة وتكوينها ونشرها كجزء من تكوين Azure Active Directory Condition Access. لمزيد من المعلومات والإرشادات، راجع قسم [تكوين سياقات المصادقة](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) من وثائق الوصول المشروط ل Azure AD.
+للعرض في القائمة المنسدلة للتحديد، يجب إنشاء سياقات المصادقة وتكوينها ونشرها كجزء من تكوين Azure Active Directory Condition Access. لمزيد من المعلومات والإرشادات، راجع قسم [تكوين سياقات المصادقة](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) من وثائق الوصول المشروط Azure AD.
 
 لا تدعم جميع التطبيقات سياقات المصادقة. إذا اتصل مستخدم مع تطبيق غير معتمد بالموقع الذي تم تكوينه لسياق مصادقة، فسيرى رسالة مرفوضة للوصول أو تتم مطالبته بالمصادقة ولكنه مرفوض. التطبيقات التي تدعم سياقات المصادقة حاليا:
 
@@ -181,7 +183,7 @@ ms.locfileid: "64916238"
 
 ### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>تكوين الإعدادات لنوع ارتباط المشاركة الافتراضي لموقع باستخدام إعدادات PowerShell المتقدمة
 
-بالإضافة إلى إعدادات التسمية للمواقع والمجموعات التي يمكنك تكوينها من مركز التوافق، يمكنك أيضا تكوين نوع ارتباط المشاركة الافتراضي لموقع ما. يمكن أيضا تكوين تسميات الحساسية للمستندات لنوع ارتباط مشاركة افتراضي. يتم تحديد هذه الإعدادات التي تساعد على منع الإفراط في المشاركة تلقائيا عندما يحدد المستخدمون الزر **"مشاركة"** في تطبيقاتهم Office. 
+بالإضافة إلى إعدادات التسمية للمواقع والمجموعات التي يمكنك تكوينها من مدخل توافق Microsoft Purview، يمكنك أيضا تكوين نوع ارتباط المشاركة الافتراضي لموقع. يمكن أيضا تكوين تسميات الحساسية للمستندات لنوع ارتباط مشاركة افتراضي. يتم تحديد هذه الإعدادات التي تساعد على منع الإفراط في المشاركة تلقائيا عندما يحدد المستخدمون الزر **"مشاركة"** في تطبيقاتهم Office. 
 
 لمزيد من المعلومات والإرشادات، راجع [استخدام تسميات الحساسية لتكوين نوع ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint OneDrive](sensitivity-labels-default-sharing-link.md).
 
@@ -266,7 +268,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 ### <a name="apply-sensitivity-labels-to-microsoft-365-groups"></a>تطبيق تسميات الحساسية على مجموعات Microsoft 365
 
-أنت الآن جاهز لتطبيق وصف الحساسية أو التسميات على مجموعات Microsoft 365. ارجع إلى وثائق Azure AD للحصول على الإرشادات:
+أنت الآن جاهز لتطبيق وصف الحساسية أو التسميات على مجموعات Microsoft 365. ارجع إلى وثائق Azure AD للحصول على التعليمات:
 
 - [تعيين تسمية إلى مجموعة جديدة في مدخل Azure](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
 
@@ -367,8 +369,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
   - مركز إدارة SharePoint
   - مركز إدارة Teams
   - مركز مسؤولي Microsoft 365
-  - مركز التوافق في Microsoft 365
-  - مدخل Azure Active Directory
+  - مدخل توافق Microsoft Purview
 
 - تطبيقات المستخدمين وخدماتهم:
 
@@ -392,7 +393,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
   - Project
   - Power BI
 
-## <a name="classic-azure-ad-group-classification"></a>تصنيف مجموعة Azure AD الكلاسيكي
+## <a name="classic-azure-ad-group-classification"></a>تصنيف مجموعة Azure AD الكلاسيكية
 
 بعد تمكين تسميات الحساسية للحاويات، لم تعد تصنيفات المجموعات من Azure AD مدعومة من قبل Microsoft 365 ولن يتم عرضها على المواقع التي تدعم تسميات الحساسية. ومع ذلك، يمكنك تحويل تصنيفاتك القديمة إلى تسميات الحساسية.
 
@@ -485,7 +486,7 @@ Set-SPOTenant -BlockSendLabelMismatchEmail $True
 
 وهذا يعني أنه لن يتم فرض أي إعدادات تسمية من المواقع والمجموعات التي تم تطبيقها مسبقا على الحاويات، ولم تعد الحاويات تعرض التسميات.
 
-إذا كانت هذه الحاويات تحتوي على قيم تصنيف Azure AD مطبقة عليها، فستعود الحاويات إلى استخدام التصنيفات مرة أخرى. تجدر الإشارة إلى أن أي مواقع أو مجموعات جديدة تم إنشاؤها بعد تمكين الميزة لن تعرض تسمية أو تحتوي على تصنيف. بالنسبة لهذه الحاويات، وأي حاويات جديدة، يمكنك الآن تطبيق قيم التصنيف. لمزيد من المعلومات، راجع [SharePoint تصنيف المواقع "الحديثة"](/sharepoint/dev/solution-guidance/modern-experience-site-classification) [وإنشاء تصنيفات لمجموعات Office في مؤسستك](../enterprise/manage-microsoft-365-groups-with-powershell.md).
+إذا كانت هذه الحاويات Azure AD قيم التصنيف المطبقة عليها، فستعود الحاويات إلى استخدام التصنيفات مرة أخرى. تجدر الإشارة إلى أن أي مواقع أو مجموعات جديدة تم إنشاؤها بعد تمكين الميزة لن تعرض تسمية أو تحتوي على تصنيف. بالنسبة لهذه الحاويات، وأي حاويات جديدة، يمكنك الآن تطبيق قيم التصنيف. لمزيد من المعلومات، راجع [SharePoint تصنيف المواقع "الحديثة"](/sharepoint/dev/solution-guidance/modern-experience-site-classification) [وإنشاء تصنيفات لمجموعات Office في مؤسستك](../enterprise/manage-microsoft-365-groups-with-powershell.md).
 
 ## <a name="additional-resources"></a>موارد إضافية
 

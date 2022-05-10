@@ -18,16 +18,18 @@ search.appverid:
 - MET150
 hideEdit: true
 description: فهم الحد الأقصى لعدد النهج والعناصر لكل نهج لنهج الاستبقاء ونهج تسمية الاستبقاء
-ms.openlocfilehash: 260b99a4519937f962cc1c779a9beb9c6810e7e1
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: bb94043f68d46f98f005853cde03da048495e10f
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782798"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285347"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>حدود نهج الاستبقاء ونهج تسمية الاستبقاء
 
 >*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند استخدام [نهج الاستبقاء ونهج تسمية الاستبقاء](retention.md#retention-policies-and-retention-labels) للاحتفاظ بالبيانات تلقائيا أو حذفها لمؤسستك، هناك بعض الأرقام القصوى التي يجب أن تكون على علم بها.
 

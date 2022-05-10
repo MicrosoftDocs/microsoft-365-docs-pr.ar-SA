@@ -21,21 +21,21 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: تعرف على كيفية دعم Microsoft Purview Records Management للعناصر عالية القيمة لمتطلبات حفظ السجلات التجارية أو القانونية أو التنظيمية.
-ms.openlocfilehash: dd554b4369a1f721d306bc301519ce3ef59e4569
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: b14c622d1468cdb91ad1ac8e58c184e650ebbe6c
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64998519"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284853"
 ---
 # <a name="learn-about-records-management"></a>تعرّف على إدارة السجلات
+
+>*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!TIP]
 > *هل تعلم أنه يمكنك تجربة الإصدارات المتميزة من جميع حلول Microsoft Purview التسعة مجانا؟* استخدم تجربة حلول Purview لمدة 90 يوما لاستكشاف مدى قدرة قدرات Purview القوية على مساعدة مؤسستك على تلبية احتياجات التوافق الخاصة بها. يمكن للعملاء Microsoft 365 E3 Office 365 E3 البدء الآن في [مركز تجارب مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). تعرف على تفاصيل حول [الأشخاص الذين يمكنهم التسجيل وشروط الإصدار التجريبي](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
->*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 تتطلب المؤسسات من جميع الأنواع حلا لإدارة السجلات لإدارة السجلات التنظيمية والقانونية والسجلات الهامة للأعمال عبر بيانات الشركة الخاصة بها. تساعد إدارة السجلات ل Microsoft Purview المؤسسة على إدارة التزاماتها القانونية، وتوفر القدرة على إظهار الامتثال للوائح، وتزيد من الكفاءة مع الترتيب المنتظم للعناصر التي لم تعد مطلوبة للاحتفاظ بها، أو لم تعد ذات قيمة، أو لم تعد مطلوبة لأغراض تجارية.
 
