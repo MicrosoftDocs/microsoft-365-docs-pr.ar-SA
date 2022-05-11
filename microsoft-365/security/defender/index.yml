@@ -1,0 +1,113 @@
+### YamlMime:Landing
+title: Microsoft 365 Defender
+summary: تعرف على حلول الأمان القوية في Microsoft 365 Defender بحيث يمكنك حماية مؤسستك بشكل أفضل عبر أسطح الهجوم.
+metadata:
+  title: وثائق Microsoft 365 Defender
+  description: تعرف على حلول الأمان القوية في Microsoft 365 Defender بحيث يمكنك حماية مؤسستك بشكل أفضل عبر أسطح الهجوم.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
+  author: mjcaparas
+  ms.author: macapara
+  ms.date: 09/13/2019
+  ms.localizationpriority: high
+  ms.openlocfilehash: 473a0b6ca9641c12c7ae9b8d9aeba1e0e9d477d8
+  ms.sourcegitcommit: 36a19d80fe3f053df0fec398a7ff2dfc777f9730
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 12/30/2021
+  ms.locfileid: "63575734"
+landingContent:
+- title: Microsoft 365 Defender
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ما هو Microsoft 365 Defender؟
+      url: microsoft-365-defender.md
+  - linkListType: whats-new
+    links:
+    - text: الجديد في Microsoft 365 Defender
+      url: ../defender/whats-new.md
+  - linkListType: video
+    links:
+    - text: فيديو نظرة عامة
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww
+- title: تقييم القدرات
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: إنشاء مختبر تجريبي
+      url: eval-overview.md
+    - text: تشغيل مشروع تجريبي في الإنتاج
+      url: eval-overview.md
+- title: بدء الاستخدام
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: بدء العمل باستخدام Microsoft 365 Defender
+      url: get-started.md
+  - linkListType: deploy
+    links:
+    - text: تمكين Microsoft 365 Defender
+      url: m365d-enable.md
+    - text: نشر الخدمات المعتمدة
+      url: deploy-supported-services.md
+- title: Microsoft Defender للهوية
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ما هو Microsoft Defender للهوية؟
+      url: /defender-for-identity/what-is
+    - text: بنية Microsoft Defender للهوية
+      url: /defender-for-identity/architecture
+- title: Microsoft Defender لـ Office 365
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ما هو Microsoft Defender لـ Office 365؟
+      url: ../office-365-security/defender-for-office-365.md
+    - text: وصف خدمة Microsoft Defender لـ Office 365
+      url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+    - text: Microsoft Defender لـ Office 365 في Microsoft 365 Defender
+      url: microsoft-365-security-center-mdo.md
+    - text: إعادة توجيه Microsoft Defender لـ Office 365 في Microsoft 365 Defender
+      url: microsoft-365-security-mdo-redirection.md
+- title: Microsoft Defender for Endpoint
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ما هو Microsoft Defender لنقطة النهاية؟
+      url: ../defender-endpoint/microsoft-defender-endpoint.md
+    - text: Defender for Endpoint في Microsoft 365 Defender
+      url: microsoft-365-security-center-mde.md
+    - text: إعادة توجيه Defender لنقطة النهاية في Microsoft 365 Defender
+      url: ../defender/microsoft-365-security-mde-redirection.md
+- title: Microsoft Defender for Cloud Apps
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: ما هو Microsoft Defender للتطبيقات السحابية؟
+      url: /cloud-app-security/what-is-cloud-app-security
+    - text: بدء العمل باستخدام Microsoft Defender للتطبيقات السحابية
+      url: /cloud-app-security/getting-started-with-cloud-app-security
+- title: إدارة الحوادث والتنبيهات
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: التحقيق في الأحداث
+      url: investigate-incidents.md
+    - text: تتبع التهديدات الناشئة والرد عليها
+      url: threat-analytics.md
+    - text: التحقيق التلقائي والاستجابة (AIR)
+      url: m365d-autoir.md
+    - text: البحث عن التهديدات
+      url: advanced-hunting-overview.md
+- title: المرجع
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: واجهات برمجة تطبيقات Microsoft 365 Defender
+      url: api-overview.md

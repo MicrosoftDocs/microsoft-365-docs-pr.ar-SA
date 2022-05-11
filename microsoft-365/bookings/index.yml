@@ -1,0 +1,41 @@
+### YamlMime:Hub
+title: Microsoft Bookings
+summary: تعرف على كيفية إعداد Microsoft Bookings لتوفير الخدمات للعملاء بناءً على موعد.
+brand: m365
+metadata:
+  title: Microsoft Bookings
+  description: تعرف على كيفية إعداد Microsoft Bookings لتوفير الخدمات للعملاء بناءً على موعد.
+  ms.service: bookings
+  ms.topic: hub-page
+  author: dmaguire
+  ms.author: dmaguire
+  manager: serdars
+  audience: Admin
+  ms.date: 09/04/2020
+  ms.openlocfilehash: 8c7158c72700a7db866051a4de10bbc890ad4478
+  ms.sourcegitcommit: d08fe0282be75483608e96df4e6986d346e97180
+  ms.translationtype: HT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 09/12/2021
+  ms.locfileid: "63569418"
+additionalContent:
+  sections:
+  - items:
+    - title: ما هو Microsoft Bookings؟
+      summary: قم بجدولة المواعيد وإدارتها باستخدام تقويم وتطبيق حجز على الويب، بما في ذلك التكامل مع Outlook لفريق العمل لديك ورسائل بريد إلكتروني تلقائية للإشعارات.
+      url: bookings-overview.md
+    - title: إدخال معلومات العمل
+      summary: أدخل صفحة إنشاء "نبذة عنا" الخاصة بك، بما في ذلك اسم العمل التجاري والعنوان ورقم الهاتف وعنوان URL لموقع الويب والشعار وساعات العمل في Microsoft Bookings.
+      url: enter-business-information.md
+    - title: الحصول على تطبيق Bookings
+      summary: غير نسق اللون وقم بإعداد شكل صفحة الحجز التي سيراها العميل الخارجي.
+      url: customize-booking-page.md
+    - title: إضافة فريق عمل إلى Bookings
+      summary: إنشاء قائمة فريق العمل الخاص بك وإدارة تفاصيل أعضاء فريق العمل مثل الاسم ورقم الهاتف وعنوان البريد الإلكتروني.
+      url: add-staff.md
+    - title: جدولة عمليات إغلاق العمل والإجازة ووقت العطلة
+      summary: قم بجدولة عمليات إغلاق المكتب وإجازة الموظفين من تقويم Bookings بحيث يتم وضع علامة على الموظفين على أنهم غير متاحين للحجوزات خلال الأوقات المحددة.
+      url: schedule-closures-time-off-vacation.md
+    - title: ساعات عمل الموظفين في Microsoft Bookings
+      summary: تعيين ساعات عمل الموظفين والتوفر في Microsoft Bookings.
+      url: employee-hours.md
