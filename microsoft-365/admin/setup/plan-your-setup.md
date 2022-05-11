@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: تعرف على المتطلبات والاعتبارات اللازمة للانتقال إلى Microsoft 365 للأعمال.
-ms.openlocfilehash: 9a8ca80a9559d4ecdb988c515c20add4676e602d
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: a5f777a411f82de30c1d7dc69f07f92eadbbedce
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128881"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317461"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>التخطيط لإعداد Microsoft 365 للأعمال
 
@@ -149,4 +149,4 @@ ms.locfileid: "65128881"
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[أفضل 10 طرق لتأمين Microsoft 365 لخطط الأعمال](../security-and-compliance/secure-your-business-data.md)
+[أفضل الممارسات لتأمين Microsoft 365 لخطط الأعمال](../security-and-compliance/secure-your-business-data.md)

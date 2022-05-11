@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: f888556ea32d9d59c53728b30b629169bc9db45d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9e24e6bada3b1f5aa047692dc4d742a5a006b9af
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093229"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317973"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>إعداد Microsoft 365 Business Premium
 
@@ -53,9 +53,9 @@ ms.locfileid: "65093229"
 - [إضافة مستخدمين وتعيين التراخيص](../admin/add-users/add-users.md)
 - [تحديث سجلات DNS](../admin/setup/setup-business-basic.md#connect-your-domain)
 
-يعرض الفيديو التالي عملية الإعداد الموجهة Microsoft 365 Business Basic، والتي تعمل بنفس الطريقة في Microsoft 365 Business Premium.<br/><br/>
+يعرض الفيديو التالي عملية الإعداد الموجهة Microsoft 365 Business Standard، والتي تعمل بنفس الطريقة في Microsoft 365 Business Premium.<br/><br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
 > بعد إضافة مستخدمين، امنحهم ارتباطا إلى [دليل الإعداد السريع للموظف](../admin/setup/employee-quick-setup.md). يرشدهم الدليل عبر تسجيل الدخول والحصول على تطبيقات Office وحفظ الملفات ونسخها ومشاركتها.
@@ -72,8 +72,13 @@ ms.locfileid: "65093229"
 
 4. راجع قائمة النتائج. حدد موفرا لمعرفة المزيد حول خبراته والخدمات التي يقدمها.
 
-راجع أيضا [البحث عن شريكك أو بائعك](../admin/manage/find-your-partner-or-reseller.md).
+## <a name="see-also"></a>راجع أيضًا
 
+- [البحث عن شريكك أو بائعك](../admin/manage/find-your-partner-or-reseller.md)
+
+- [إعداد كلمات مرور الخدمة الذاتية](../admin/add-users/let-users-reset-passwords.md)
+
+- [إعداد إدارة مجموعة الخدمة الذاتية](/azure/active-directory/enterprise-users/groups-self-service-management)
 ## <a name="next-objectives"></a>الأهداف التالية
 
 بعد الانتهاء من عملية الإعداد الأولية، تتمثل أهدافك التالية في إعداد قدرات الأمان والتوافق:
@@ -83,8 +88,8 @@ ms.locfileid: "65093229"
 2. تدريب فريقك:
 
    - [إعداد الأجهزة الشخصية المستخدمة للوصول إلى بيانات العمل](m365bp-devices-overview.md)
-   - [استخدام البريد الإلكتروني بشكل أكثر أمانا](m365bp-protect-email-overview.md)
-   - [التعاون والمشاركة بشكل أكثر أمانا](m365bp-collaborate-share-securely.md)
+   - [استخدام البريد الإلكتروني بشكل أكثر أماناً](m365bp-protect-email-overview.md)
+   - [التعاون والمشاركة بشكل أكثر أماناً](m365bp-collaborate-share-securely.md)
 
 3. [حماية الأجهزة المدارة](m365bp-protect-devices.md).
 

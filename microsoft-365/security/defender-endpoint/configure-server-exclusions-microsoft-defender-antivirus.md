@@ -14,24 +14,23 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 02/04/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 487c253adc422d69be5ce011ffef1fc1a014474b
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 890be814be75c303aa42feb5cb7a16cb4f5c3bd9
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789767"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320629"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>تكوين استثناءات برنامج الحماية من الفيروسات من Microsoft Defender على خادم Windows
 
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server 2016 وخادم Windows 2019 يسجلك تلقائيا في استثناءات معينة، كما هو محدد بواسطة دور الخادم المحدد. لا تظهر هذه الاستثناءات في قوائم الاستبعاد القياسية التي تظهر في [تطبيق أمن Windows](microsoft-defender-security-center-antivirus.md).
@@ -42,12 +41,12 @@ ms.locfileid: "64789767"
 
 ## <a name="a-few-points-to-keep-in-mind"></a>بعض النقاط التي يجب وضعها في الاعتبار
 
-ضع النقاط الهامة التالية في الاعتبار:
-
 - الاستثناءات المخصصة لها الأسبقية على الاستثناءات التلقائية.
-- تنطبق الاستثناءات التلقائية فقط على فحص الحماية في الوقت الحقيقي (RTP). لا يتم احترام الاستثناءات التلقائية أثناء الفحص الكامل أو السريع أو عند الطلب.
+- تنطبق الاستثناءات التلقائية فقط على فحص [الحماية في الوقت الحقيقي (RTP](configure-protection-features-microsoft-defender-antivirus.md) ). 
+- لا يتم احترام الاستثناءات التلقائية أثناء [الفحص الكامل أو السريع أو عند الطلب](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan).
 - لا تتعارض الاستثناءات المخصصة والمكررة مع الاستثناءات التلقائية.
 - تستخدم برنامج الحماية من الفيروسات من Microsoft Defender أدوات خدمة الصور وإدارتها (DISM) لتحديد الأدوار المثبتة على الكمبيوتر.
+- يجب تعيين الاستثناءات المناسبة للبرامج غير المضمنة في نظام التشغيل.
 - لا يحتوي Windows Server 2012 R2 على برنامج الحماية من الفيروسات من Microsoft Defender كميزة قابلة للتثبيت. عند إلحاق هذه الخوادم ب Defender لنقطة النهاية، ستقوم بتثبيت برنامج الحماية من الفيروسات لـ Windows Defender، ويتم تطبيق الاستثناءات الافتراضية لملفات نظام التشغيل. ومع ذلك، لا تنطبق استثناءات أدوار الخادم (كما هو محدد أدناه) تلقائيا، ويجب عليك تكوين هذه الاستثناءات حسب الاقتضاء. لمعرفة المزيد، راجع [إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية](configure-server-endpoints.md).
 
 توفر هذه المقالة نظرة عامة على استثناءات برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server 2016 أو الإصدارات الأحدث.
@@ -55,8 +54,6 @@ ms.locfileid: "64789767"
 نظرا لأن برنامج الحماية من الفيروسات من Microsoft Defender مضمن في Windows Server 2016 والإصدارات الأحدث، تحدث استثناءات لملفات نظام التشغيل وأدوار الخادم تلقائيا. ومع ذلك، يمكنك تعريف الاستثناءات المخصصة. يمكنك أيضا إلغاء الاشتراك في الاستثناءات التلقائية إذا لزم الأمر.
 
 تتضمن هذه المقالة الأقسام التالية:
-
-<br/><br/>
 
 |قسم|الوصف|
 |---|---|
@@ -87,8 +84,9 @@ ms.locfileid: "64789767"
 
 يسرد هذا القسم الاستثناءات الافتراضية لكافة الأدوار في Windows Server 2016 و Windows Server 2019 و Windows Server 2022.
 
-> [!NOTE]
-> قد تختلف المواقع الافتراضية عما هو مذكور في هذه المقالة.
+> [!IMPORTANT]
+> - قد تختلف المواقع الافتراضية عن المواقع الموضحة في هذه المقالة.
+> - لتعيين استثناءات للبرامج غير المضمنة كميزة Windows أو دور الخادم، راجع وثائق الشركة المصنعة للبرامج.
 
 ##### <a name="windows-tempedb-files"></a>Windows ملفات "temp.edb"
 
@@ -171,8 +169,6 @@ ms.locfileid: "64789767"
 ##### <a name="hyper-v-exclusions"></a>استثناءات Hyper-V
 
 يسرد الجدول التالي استثناءات نوع الملف واستثناءات المجلد واستثناءات العملية التي يتم تسليمها تلقائيا عند تثبيت دور Hyper-V.
-
-<br><br/>
 
 |نوع الاستبعاد|تفاصيل|
 |---|---|
@@ -381,14 +377,14 @@ DisableAutoExclusions
 - [تكوين الاستثناءات للملفات التي يتم فتحها بواسطة العمليات والتحقق من صحتها](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> إذا كنت’ تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>راجع أيضًا
 

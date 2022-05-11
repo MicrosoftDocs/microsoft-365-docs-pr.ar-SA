@@ -1,5 +1,5 @@
 ---
-title: ما الجديد في Microsoft Defender لنقطة النهاية
+title: ما الجديد في Microsoft Defender لنقطة النهاية؟
 description: اطلع على الميزات المتوفرة بشكل عام (GA) في أحدث إصدار من Microsoft Defender لنقطة النهاية، بالإضافة إلى ميزات الأمان في Windows 10 وخادم Windows.
 keywords: ما الجديد في Microsoft Defender لنقطة النهاية، و ga، والمتاحة بشكل عام، والقدرات، والمتاحة، والجديدة
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 351a403923df8e12d63051e30518b5c254abccb8
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 8a3d8caa02aa04412925b4d0648d166194df0548
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188801"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319188"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint"></a>ما الجديد في Microsoft Defender لنقطة النهاية
+# <a name="whats-new-in-microsoft-defender-for-endpoint"></a>ما الجديد في Microsoft Defender لنقطة النهاية؟
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -59,6 +59,10 @@ ms.locfileid: "65188801"
 - [ما الجديد في Defender لنقطة النهاية على macOS](mac-whatsnew.md)
 - [ما الجديد في Defender لنقطة النهاية على iOS](ios-whatsnew.md)
 - [ما الجديد في Defender لنقطة النهاية على Linux](linux-whatsnew.md)
+
+## <a name="may-2022"></a>مايو 2022
+- [الحماية من العبث macOS (معاينة)](tamperprotection-macos.md)<br>تساعد الحماية من العبث بالبيانات على منع الإزالة غير المصرح بها Microsoft Defender لنقطة النهاية على macOS.
+
 
 ## <a name="april-2022"></a>أبريل 2022
 - [الإعداد المحدث وتماثل الميزات ل Windows Server 2012 R2 و Windows Server 2016)](configure-server-endpoints.md)<br/> حزمة الحلول الموحدة الجديدة متاحة الآن بشكل عام وتجعل من السهل إلحاق الخوادم عن طريق إزالة التبعيات وخطوات التثبيت. بالإضافة إلى ذلك، تأتي حزمة الحلول الموحدة هذه مع العديد من تحسينات الميزات الجديدة.

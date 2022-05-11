@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 - MOE150
 description: إعداد المصادقة متعددة العوامل للأجهزة المحمولة.
-ms.openlocfilehash: 16f160eb3d489837cdd3588c3e8a68267da9ffc0
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 63f5538882496ed67dacdb3428a6dd02696d21e7
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097481"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320263"
 ---
-# <a name="set-up-multi-factor-authentication-with-your-mobile-device"></a>إعداد المصادقة متعددة العوامل باستخدام جهازك المحمول
+# <a name="set-up-multifactor-authentication-with-your-mobile-device"></a>إعداد المصادقة متعددة العوامل باستخدام جهازك المحمول
 
-توفر المصادقة متعددة العوامل المزيد من الأمان لأنه بدلا من استخدام كلمة مرور فقط أو تعليمة برمجية من خلال النص، يتم استخدام تطبيق منفصل على هاتفك للتحقق من الوصول. وهذا يجعل من الصعب الاختراق. عندما تكون المصادقة متعددة العوامل مطلوبة، يمكن لأعضاء المؤسسة استخدام تطبيق Microsoft Authenticator لتسجيل الدخول بأمان على أجهزتهم. <br/><br/>
+توفر المصادقة متعددة العوامل (MFA) المزيد من الأمان لأنه بدلا من استخدام كلمة مرور فقط أو تعليمة برمجية من خلال النص، يتم استخدام تطبيق منفصل على هاتفك للتحقق من الوصول. وهذا يجعل من الصعب الاختراق. عندما تكون المصادقة متعددة العوامل مطلوبة، يمكن لأعضاء المؤسسة استخدام تطبيق Microsoft Authenticator لتسجيل الدخول بأمان على أجهزتهم. <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
@@ -41,9 +41,10 @@ ms.locfileid: "65097481"
 
 ## <a name="use-the-outlook-app-on-your-devices"></a>استخدام تطبيق Outlook على أجهزتك
 
-بعد أن يطلب المسؤول من مستخدمي الواجهة الأمامية استخدام المصادقة متعددة العوامل، يعمل تطبيق المصادقة كنموذج ثان للمصادقة. نوصي بتثبيت تطبيق Outlook واستخدامه للوصول إلى بريده الإلكتروني Microsoft 365. راجع [إعداد الأجهزة المحمولة](../business/set-up-mobile-devices.md) لكيفية تثبيت تطبيقات Office، بما في ذلك Outlook، على الهاتف.
+بعد أن يطلب المسؤول من مستخدمي الواجهة الأمامية استخدام المصادقة متعددة العوامل، يعمل تطبيق المصادقة كنموذج ثان للمصادقة. نوصي بتثبيت تطبيق Outlook واستخدامه للوصول إلى بريده الإلكتروني Microsoft 365. راجع [إعداد الأجهزة المحمولة](../admin/setup/set-up-mobile-devices.md) لكيفية تثبيت تطبيقات Office، بما في ذلك Outlook، على الهاتف.
 
 ## <a name="next-objective"></a>الهدف التالي
 
 اتبع الإرشادات لتثبيت [تطبيقات Office](m365bp-install-office-apps.md).
 
+ 

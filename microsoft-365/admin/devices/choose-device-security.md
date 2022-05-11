@@ -17,47 +17,47 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: اختر بين أساليب MDM وMAM المختلفة.
-ms.openlocfilehash: 0fa7389fc68523cf2db253c9e4e9f64cc85139a0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: الاختيار بين أساليب MDM وMAM المختلفة.
+ms.openlocfilehash: 49c8fe8e61026e56b1698d7da2fdbac07896c858
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63568911"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317483"
 ---
-# <a name="options-for-protecting-your-devices-and-app-data"></a>خيارات لحماية أجهزتك وبيانات التطبيق
+# <a name="options-for-protecting-your-devices-and-app-data"></a>خيارات حماية أجهزتك وبيانات التطبيق
 
-لديك عدة طرق لتأمين أجهزة المؤسسة والبيانات عليها باستخدام Microsoft 365 للأعمال والمؤسسة. يمكنك استخدام الخطط التالية بذاتها:
+لديك عدة طرق لتأمين أجهزة مؤسستك وبياناتها باستخدام Microsoft 365 للأعمال والمؤسسات. يمكنك استخدام الخطط المستقلة التالية:
 
-- Intune (جزء من Microsoft Endpoint Management)
-- خطط Azure Active Directory Premium.
-- التنقل والأمان الأساسي (مضمن في معظم Microsoft 365 الأعمال وخطط المؤسسة) أو استخدم الاشتراكات التي تتضمن بعض الخطط السابقة مستقلة أو كلها.
-- Microsoft Defender for Business (مضمن في Microsoft 365 Business Premium؛ متوفر أيضا كخطة مستقلة)
-- اشتراك Microsoft 365 Business Premium يتضمن الأمان والحماية من المخاطر للشركات الصغيرة التي لا تضم سوى 300 مستخدم.
-- Microsoft 365 Enterprise خطط تتضمن حماية متقدمة من المخاطر والأمان.
+- Intune (جزء من إدارة نقاط النهاية من Microsoft)
+- خطط Premium Azure Active Directory.
+- التنقل الأساسي والأمان (المضمن في معظم Microsoft 365 لخطط الأعمال والمؤسسات) أو استخدام الاشتراكات التي تتضمن بعض الخطط المستقلة السابقة أو كلها.
+- Microsoft Defender for Business (مضمنة في Microsoft 365 Business Premium؛ متوفرة أيضا كخطط مستقلة)
+- اشتراك Microsoft 365 Business Premium، والذي يتضمن الأمان والحماية من التهديدات للشركات الصغيرة التي تضم أقل من 300 مستخدم.
+- Microsoft 365 Enterprise الخطط التي تتضمن الأمان المتقدم والحماية من التهديدات.
 
 ## <a name="device-management-options"></a>خيارات إدارة الأجهزة
 
-- **يتم توفير التنقل** والأمان الأساسيين مع معظم Microsoft 365، وهو الخيار المضمن الوحيد الذي يتم تقديمه Microsoft 365 Business Standard Microsoft 365 Business Basic. لمزيد من المعلومات، راجع [توفر التنقل والأمان الأساسيين](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune). 
+- يتم تقديم **التنقل الأساسي والأمان** مع معظم خطط Microsoft 365، وهو الخيار المضمن الوحيد المقدم Microsoft 365 Business Standard Microsoft 365 Business Basic. لمزيد من المعلومات، راجع [توفر Basic Mobility and Security](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune). 
 
-    إذا كان لديك Microsoft 365 Business Basic أو Microsoft 365 Business Standard، يمكنك أيضا شراء Intune إذا كانت مؤسستك لديها احتياجات أمان أكثر تعقيدا.
+    إذا كان لديك إما Microsoft 365 Business Basic أو Microsoft 365 Business Standard، يمكنك أيضا شراء Intune إذا كانت مؤسستك لديها احتياجات أمان أكثر تعقيدا.
  
-- **Microsoft Intune** خطة قائمة بذاتها يتم تضمينها أيضا مع Microsoft 365 خطط الأعمال أو المؤسسات. إذا كان لديك Intune إما كمنفرد أو كجزء من اشتراكك، فهو يوفر إمكانية ضبط الجهاز وإدارة بيانات التطبيق. لمزيد من المعلومات حول التوفر مع Microsoft 365، راجع توفر [Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune).
+- **Microsoft Intune** هي خطة مستقلة يتم تضمينها أيضا مع بعض Microsoft 365 لخطط الأعمال أو المؤسسات. إذا كان لديك Intune إما كجزء مستقل أو كجزء من اشتراكك، فإنه يوفر القدرة على ضبط الجهاز وإدارة بيانات التطبيق. لمزيد من المعلومات حول التوفر مع Microsoft 365، راجع [توفر Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune).
 
-    Microsoft Intune هي خدمة مستندة إلى السحابة تركز على إدارة أجهزة المحمول (MDM) وإدارة تطبيقات الأجهزة المحمولة (MAM). يمكنك التحكم في كيفية استخدام أجهزة مؤسستك، بما في ذلك الهواتف المحمولة وأجهزة الكمبيوتر اللوحية وأجهزة الكمبيوتر المحمولة. يمكنك أيضا تكوين سياسات معينة للتحكم في التطبيقات. لمزيد من المعلومات، [راجع Microsoft Intune الوثائق](/mem/intune/).
+    Microsoft Intune هي خدمة مستندة إلى السحابة تركز على إدارة أجهزة المحمول (MDM) وإدارة تطبيقات المحمول (MAM). يمكنك التحكم في كيفية استخدام أجهزة مؤسستك، بما في ذلك الهواتف المحمولة وأجهزة الكمبيوتر اللوحية وأجهزة الكمبيوتر المحمولة. يمكنك أيضا تكوين نهج محددة للتحكم في التطبيقات. لمزيد من المعلومات، راجع [وثائق Microsoft Intune](/mem/intune/).
 
-- **إن Premium Azure Active Directory (AD)** هي خطط مستقلة تأتي أيضا مع بعض Microsoft 365 خطط الأعمال والمشاريع. لمزيد من المعلومات، راجع أسعار [Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
+- خطط **Premium Azure Active Directory (AD)** هي خطط مستقلة تأتي أيضا مع بعض Microsoft 365 لخطط الأعمال والمؤسسة. لمزيد من المعلومات، راجع [التسعير Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
 
-     يتيح لك Azure AD Premium P1 و Azure AD Premium P2 تعيين ميزات الوصول الشرطي وإعادة تعيين كلمة مرور الخدمة الذاتية وغير ذلك. لمزيد من المعلومات حول إمكانيات Premium، راجع [صفحة أسعار Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
+     يسمح لك Azure AD Premium P1 وP2 Azure AD Premium بتعيين ميزات الوصول المشروط وإعادة تعيين كلمة مرور الخدمة الذاتية وما إلى ذلك. لمزيد من المعلومات حول قدرات خطط Premium، راجع صفحة [التسعير Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
 
-- **Microsoft 365 Business Premium** على Intune و Azure Active Directory Premium P1 و Microsoft Defender Office 365 1 و Microsoft Defender for Business. 
+- تتضمن **Microsoft 365 Business Premium** Intune وAzure Active Directory Premium P1، Microsoft Defender لـ Office 365 الخطة 1، Microsoft Defender for Business. 
  
-    Microsoft 365 Business Premium مجموعة من قوالب النهج لتأمين أجهزتك وبيانات التطبيق. فهو يوفر مستوى جيدا من الأمان والحماية من المخاطر لمعظم الشركات التي أقل من 300 مستخدم. لمزيد من المعلومات، [راجع نظرة Microsoft 365 Business Premium نظرة](../../business-premium/index.md) [عامة حول Microsoft Defender for Business](../../security/defender-business/mdb-overview.md).
+    يقدم Microsoft 365 Business Premium مجموعة من قوالب النهج لتأمين أجهزتك وبيانات التطبيق. ويوفر مستوى جيدا من الأمان والحماية من التهديدات لمعظم الشركات التي أقل من 300 مستخدم. لمزيد من المعلومات، راجع [Microsoft 365 Business Premium نظرة عامة](../../business-premium/index.md) [ولمحة عامة عن Microsoft Defender for Business](../../security/defender-business/mdb-overview.md).
 
-- **Microsoft 365 اشتراكات** المؤسسات Microsoft Intune تتضمن E5 أيضا خطتي Azure AD premium 1 و2.
+- تتضمن **Microsoft 365 لاشتراكات المؤسسة** Microsoft Intune وتتضمن E5 أيضا Azure AD الخطط المتميزة 1 و2.
 
-    Microsoft 365 E5 على أعلى مستوى من الأمان والحماية من المخاطر لجميع Microsoft 365 الاشتراك. لمزيد من المعلومات، راجع Microsoft 365 [نظرة عامة على المؤسسة](../../enterprise/microsoft-365-overview.md).
+    يوفر Microsoft 365 E5 أعلى مستوى من الأمان والحماية من التهديدات لجميع اشتراكات Microsoft 365. لمزيد من المعلومات، راجع [Microsoft 365 للحصول على نظرة عامة على المؤسسة](../../enterprise/microsoft-365-overview.md).
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[أفضل 10 طرق لتأمين Microsoft 365 خطط الأعمال](../security-and-compliance/secure-your-business-data.md)
+[أفضل الممارسات لتأمين Microsoft 365 لخطط الأعمال](../security-and-compliance/secure-your-business-data.md)

@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: الحصول على المساعدة في زيادة مستوى الحماية في Microsoft 365 Business Premium
-ms.openlocfilehash: c653e4f84ad3f4dd537ab82382e8a57da7d2876e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2bd00329f160c187325fc696114f0fac4e503656
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099884"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319122"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>زيادة الحماية من التهديدات Microsoft 365 Business Premium
 
@@ -212,4 +212,6 @@ ms.locfileid: "65099884"
 
 إذا كان يسمح للمستخدمين بمشاركة تقويماتهم، فراجع [هذه الإرشادات](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) حول كيفية المشاركة من Outlook على ويب.
 
-حسنا، حان الوقت الآن لبدء مهمتك [**لإعداد أجهزة BYOD**](m365bp-devices-overview.md).
+## <a name="next-steps"></a>الخطوات التالية
+
+حسنا، لنبدأ الآن مهمة [**إعداد أجهزة BYOD**](m365bp-devices-overview.md).

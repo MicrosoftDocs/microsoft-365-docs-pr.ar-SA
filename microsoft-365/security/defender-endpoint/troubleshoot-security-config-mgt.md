@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: e7b9e757f15663338f2e12c645cc3cb0b63ef34b
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 958c58fab875ce86b0a3290450e2cf17c4b75a44
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302226"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320486"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>استكشاف مشكلات الإلحاق المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية
 
@@ -108,7 +108,7 @@ ms.locfileid: "65302226"
 
 ## <a name="general-troubleshooting"></a>استكشاف الأخطاء وإصلاحها بشكل عام
 
-إذا لم تتمكن من تحديد الجهاز الذي تم إلحاقه في AAD (دليل Azure النشط) أو MEM، ولم تتلق خطأ أثناء التسجيل، يمكن أن يوفر التحقق من مفتاح `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` التسجيل معلومات إضافية حول استكشاف الأخطاء وإصلاحها.
+إذا لم تتمكن من تحديد الجهاز الذي تم إلحاقه في AAD أو MEM، ولم تتلق خطأ أثناء التسجيل، يمكن أن يوفر التحقق من مفتاح `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` التسجيل معلومات إضافية حول استكشاف الأخطاء وإصلاحها.
 
 :::image type="content" source="images/enrollment-status.png" alt-text="الصفحة التي تعرض حالة التسجيل" lightbox="images/enrollment-status.png":::
 
@@ -120,14 +120,14 @@ ms.locfileid: "65302226"
 
 |رمز الخطأ|حالة التسجيل|إجراءات المسؤول|
 |---|---|---|
-|`5-9`,`11-12`, `26-33`|خطأ عام|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان. قد يرجع ذلك إلى عدم استيفاء الجهاز [للمتطلبات الأساسية لقناة إدارة Microsoft Defender لنقطة النهاية](security-config-management.md). يمكن أن يساعد تشغيل ["محلل العميل"](https://aka.ms/BetaMDEAnalyzer) على الجهاز في تحديد السبب الجذري للمشكلة. إذا لم ينجح هذا الإجراء، فالرجاء الاتصال بالدعم.|
+|`5-7`, `9`, `11-12`, `26-33`|خطأ عام|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان. قد يرجع ذلك إلى عدم استيفاء الجهاز [للمتطلبات الأساسية لقناة إدارة Microsoft Defender لنقطة النهاية](security-config-management.md). يمكن أن يساعد تشغيل ["محلل العميل"](https://aka.ms/BetaMDEAnalyzer) على الجهاز في تحديد السبب الجذري للمشكلة. إذا لم ينجح هذا الإجراء، فالرجاء الاتصال بالدعم.|
+| `8`, `44` | مشكلة تكوين إدارة نقاط النهاية من Microsoft | تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، لم يتم تكوين إدارة نقاط النهاية من Microsoft من خلال مركز الإدارة للسماح بتكوين الأمان Microsoft Defender لنقطة النهاية. تأكد من [تكوين المستأجر إدارة نقاط النهاية من Microsoft وتشغيل الميزة](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
 |`13-14`,`20`,`24`,`25`|مشكلة في الاتصال|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان الذي قد يكون بسبب مشكلة في الاتصال. تحقق من فتح [Azure Active Directory ونقاط نهاية إدارة نقاط النهاية من Microsoft](security-config-management.md#connectivity-requirements) في جدار الحماية الخاص بك.|
 |`10`,`42`|فشل الانضمام المختلط العام|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان وفشل نظام التشغيل في تنفيذ الصلة المختلطة. استخدم [استكشاف أخطاء الأجهزة المختلطة المتصلة ب Azure Active Directory](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) وإصلاحها لاستكشاف أخطاء الانضمام المختلط على مستوى نظام التشغيل وإصلاحها.|
 |`15`|عدم تطابق المستأجر|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان لأن معرف المستأجر Microsoft Defender لنقطة النهاية لا يتطابق مع معرف مستأجر Azure Active Directory. تأكد من أن معرف مستأجر Azure Active Directory من مستأجر Defender لنقطة النهاية يطابق معرف المستأجر في إدخال SCP لمجالك. لمزيد من التفاصيل، [قم باستكشاف المشكلات المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية وإصلاحها](troubleshoot-security-config-mgt.md).|
-|`16`,`17`|خطأ مختلط - نقطة اتصال الخدمة|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، لم يتم تكوين سجل نقطة اتصال الخدمة (SCP) بشكل صحيح وتعذر ربط الجهاز Azure AD. قد يرجع ذلك إلى تكوين SCP للانضمام إلى DRS على مستوى المؤسسة. تأكد من تكوين نقاط سجل SCP إلى AAD (دليل Azure النشط) وSCP باتباع أفضل الممارسات. لمزيد من المعلومات، راجع [تكوين نقطة اتصال خدمة](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point).|
+|`16`,`17`|خطأ مختلط - نقطة اتصال الخدمة|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، لم يتم تكوين سجل نقطة اتصال الخدمة (SCP) بشكل صحيح وتعذر ربط الجهاز Azure AD. قد يرجع ذلك إلى تكوين SCP للانضمام إلى DRS على مستوى المؤسسة. تأكد من تكوين نقاط سجل SCP إلى AAD وSCP باتباع أفضل الممارسات. لمزيد من المعلومات، راجع [تكوين نقطة اتصال خدمة](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point).|
 |`18`|خطأ في الشهادة|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان بسبب خطأ في شهادة الجهاز. تنتمي شهادة الجهاز إلى مستأجر مختلف. تحقق من اتباع أفضل الممارسات عند إنشاء [ملفات تعريف شهادات موثوق بها](/mem/intune/protect/certificates-trusted-root#create-trusted-certificate-profiles).|
-|`36`|خطأ في واجهة برمجة تطبيقات LDAP|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان بسبب تكوين خاطئ في AAD (دليل Azure النشط) الاتصال. لتحديد ما يمنع الجهاز من التسجيل في AAD (دليل Azure النشط)، ضع في اعتبارك تشغيل [أداة مستكشف أخطاء تسجيل الجهاز ومصلحها](/samples/azure-samples/dsregtool/dsregtool). بالنسبة Windows Server 2012 R2، قم بتشغيل [إرشادات استكشاف الأخطاء وإصلاحها المخصصة](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy).  |
-|`37`|مشكلة مزامنة محلية|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان بسبب تكوين خاطئ في AAD (دليل Azure النشط) الاتصال. لتحديد ما يمنع الجهاز من التسجيل في AAD (دليل Azure النشط)، ضع في اعتبارك تشغيل [أداة مستكشف أخطاء تسجيل الجهاز ومصلحها](/samples/azure-samples/dsregtool/dsregtool). بالنسبة Windows Server 2012 R2، قم بتشغيل [إرشادات استكشاف الأخطاء وإصلاحها المخصصة](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy). |
+|`36` , `37`| تكوين الاتصال AAD بشكل خاطئ |تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان بسبب تكوين خاطئ في الاتصال AAD. لتحديد ما يمنع الجهاز من التسجيل في AAD، ضع في اعتبارك تشغيل [أداة مستكشف أخطاء تسجيل الجهاز ومصلحها](/samples/azure-samples/dsregtool/dsregtool). بالنسبة Windows Server 2012 R2، قم بتشغيل [إرشادات استكشاف الأخطاء وإصلاحها المخصصة](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy).  |
 |`38`,`41`|خطأ DNS|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان بسبب خطأ DNS. تحقق من اتصال الإنترنت و/أو إعدادات DNS على الجهاز. قد تكون إعدادات DNS غير صالحة على جانب محطة العمل. يتطلب منك Active Directory استخدام DNS للمجال للعمل بشكل صحيح (وليس عنوان الموجه). لمزيد من المعلومات، راجع [استكشاف المشكلات المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية وإصلاحها](troubleshoot-security-config-mgt.md).|
 |`40`|مشكلة مزامنة الساعة|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان. تحقق من تعيين الساعة بشكل صحيح ومزامنتها على الجهاز الذي يحدث فيه الخطأ.|
 
@@ -141,14 +141,14 @@ ms.locfileid: "65302226"
 
 :::image type="content" source="images/event-properties.png" alt-text="صفحة خصائص الحدث" lightbox="images/event-properties.png":::
 
-من المعلومات في الرسالة، من الممكن في معظم الحالات فهم الخطأ الذي تمت مواجهته، وما أرجعه Win32 API الخطأ (إن أمكن)، وعنوان URL (إذا كان قابلا للتطبيق) الذي تم استخدامه وما AAD (دليل Azure النشط) تمت مصادفة خطأ واجهة برمجة تطبيقات وقت التشغيل.
+من المعلومات الموجودة في الرسالة، من الممكن في معظم الحالات فهم الخطأ الذي تمت مواجهته، وما أرجعه Win32 API الخطأ (إن أمكن)، وعنوان URL (إذا كان قابلا للتطبيق) الذي تم استخدامه وما حدث من خطأ واجهة برمجة تطبيقات وقت تشغيل AAD.
 
-## <a name="instructions-for-applying-computer-join-rule-in-aad-connect"></a>إرشادات تطبيق قاعدة انضمام الكمبيوتر في AAD (دليل Azure النشط) الاتصال
+## <a name="instructions-for-applying-computer-join-rule-in-aad-connect"></a>إرشادات تطبيق قاعدة "انضمام الكمبيوتر" في الاتصال AAD
 
 بالنسبة لإدارة الأمان Microsoft Defender لنقطة النهاية على أجهزة الكمبيوتر المتصلة بمجال Windows Server 2012 R2، يلزم تحديث قاعدة مزامنة Azure AD الاتصال "من AD-Computer Join". يمكن تحقيق ذلك عن طريق استنساخ القاعدة وتعديلها، والتي ستعطل قاعدة "In from AD - Computer Join" الأصلية. يوفر Azure AD الاتصال بشكل افتراضي هذه التجربة لإجراء تغييرات على القواعد المضمنة.
 
 > [!NOTE]
->يجب تطبيق هذه التغييرات على الخادم حيث يتم تشغيل AAD (دليل Azure النشط) الاتصال. إذا كان لديك مثيلات متعددة من AAD (دليل Azure النشط) الاتصال توزيعها، فيجب تطبيق هذه التغييرات على كافة المثيلات.
+>يجب تطبيق هذه التغييرات على الخادم حيث يتم تشغيل الاتصال AAD. إذا كان لديك مثيلات متعددة الاتصال نشر AAD، فيجب تطبيق هذه التغييرات على كافة المثيلات.
 
 1. افتح تطبيق محرر قواعد المزامنة من قائمة البدء. في قائمة القواعد، حدد موقع القاعدة المسماة **In من AD – Computer Join**. **لاحظ القيمة الموجودة في عمود "الأسبقية" لهذه القاعدة.**
 

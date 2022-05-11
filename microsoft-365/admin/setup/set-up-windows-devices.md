@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: إعداد أجهزة Windows تعمل Windows 10 Pro للمستخدمين Microsoft 365 Business Premium، ما يتيح الإدارة المركزية وعناصر التحكم في الأمان.
-ms.openlocfilehash: 57db37f73d2b9145f7c4fb9c1ee1005318c629d7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9c8a5eb724a74959983e86dcdcb8f2f8f96b540
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096215"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318569"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>إعداد أجهزة Windows لمستخدمي Microsoft 365 Business Premium
 
@@ -56,11 +56,11 @@ ms.locfileid: "65096215"
 - [ترقية Windows Home إلى Windows Pro](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
 - [الترقية إلى Windows 10 Pro](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796)
   
-بعد الترقية، راجع [التحقق من اتصال الجهاز ب Azure AD](#verify-the-device-is-connected-to-azure-ad) للتحقق من حصولك على الترقية، أو للتأكد من عمل الترقية.
+بعد الترقية، راجع [التحقق من اتصال الجهاز Azure AD](#verify-the-device-is-connected-to-azure-ad) للتحقق من حصولك على الترقية، أو للتأكد من عمل الترقية.
 
-## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>الانضمام Windows الأجهزة إلى Azure AD الخاص بمؤسستك
+## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>الانضمام إلى أجهزة Windows إلى Azure AD مؤسستك
 
-عندما تعمل جميع أجهزة Windows الخاصة بشركتك Windows 10 Pro أو Windows 11 Pro، يمكنك ضم هذه الأجهزة إلى Azure Active Directory (Azure AD) الخاص بمؤسستك. 
+عند تشغيل جميع أجهزة Windows الخاصة بشركتك Windows 10 Pro أو Windows 11 Pro، يمكنك ضم هذه الأجهزة إلى Azure Active Directory الخاص بمؤسستك (Azure AD). 
 
 1. على جهاز Windows، حدد شعار Windows، ثم أيقونة الإعدادات.
   
@@ -70,7 +70,7 @@ ms.locfileid: "65096215"
 
 4. اتبع المطالبات لإكمال العملية.
 
-## <a name="verify-the-device-is-connected-to-azure-ad"></a>التحقق من اتصال الجهاز ب Azure AD
+## <a name="verify-the-device-is-connected-to-azure-ad"></a>تحقق من اتصال الجهاز Azure AD
 
 للتحقق من حالة المزامنة، في صفحة **Access للعمل أو المؤسسة التعليمية** في **الإعدادات**، حدد المنطقة **"متصل ب** _ \<organization name\> _" لعرض الزرين **"معلومات**" و"**قطع اتصال**". اختر **"معلومات** " للحصول على حالة المزامنة. 
   
@@ -80,6 +80,6 @@ ms.locfileid: "65096215"
 
 لإعداد أجهزتك المحمولة، راجع [إعداد الأجهزة المحمولة لمستخدمي Microsoft 365 Business Premium](set-up-mobile-devices.md)، 
 
-لزيادة الحماية، راجع [أفضل 10 طرق لتأمين Microsoft 365 لخطط الأعمال](../security-and-compliance/secure-your-business-data.md).
+لزيادة الحماية، راجع [أفضل الممارسات لتأمين Microsoft 365 لخطط الأعمال](../security-and-compliance/secure-your-business-data.md).
   
 

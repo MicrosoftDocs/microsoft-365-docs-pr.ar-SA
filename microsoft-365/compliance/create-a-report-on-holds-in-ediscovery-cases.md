@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 9/11/2017
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,18 +20,18 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية إنشاء تقرير يحتوي على معلومات حول كافة قوائم الاحتجاز المقترنة بحالات eDiscovery.
-ms.openlocfilehash: 1b36b134b8de490e5ca7d9e61044a3c7cac4904f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 25e201e1b8bef0a4ccc3724a6adab6c095f34d54
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097019"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317999"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>استخدام برنامج نصي لإنشاء تقرير حول قوائم الاحتجاز في حالات eDiscovery
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-يتيح البرنامج النصي في هذه المقالة لمسؤولي eDiscovery ومديري eDiscovery إنشاء تقرير يحتوي على معلومات حول جميع قوائم الاحتجاز المقترنة بحالات Core وeDiscovery (Premium) في مدخل الامتثال ل Microsoft Purview. يحتوي التقرير على معلومات مثل اسم الحالة المقترنة باحتجاز، ومواقع المحتوى الموضوعة قيد الاحتجاز، وما إذا كان الاحتجاز مستندا إلى الاستعلام. إذا كانت هناك حالات لا تحتوي على أي قوائم احتجاز، فسينشئ البرنامج النصي تقريرا إضافيا بقائمة من الحالات دون احتجاز.
+يتيح البرنامج النصي في هذه المقالة لمسؤولي eDiscovery ومديري eDiscovery إنشاء تقرير يحتوي على معلومات حول جميع قوائم الاحتجاز المقترنة بحالات eDiscovery (قياسي) وeDiscovery (Premium) في مدخل التوافق في Microsoft Purview. يحتوي التقرير على معلومات مثل اسم الحالة المقترنة باحتجاز، ومواقع المحتوى الموضوعة قيد الاحتجاز، وما إذا كان الاحتجاز مستندا إلى الاستعلام. إذا كانت هناك حالات لا تحتوي على أي قوائم احتجاز، فسينشئ البرنامج النصي تقريرا إضافيا بقائمة من الحالات دون احتجاز.
 
 راجع القسم ["مزيد من المعلومات](#more-information) " للحصول على وصف مفصل للمعلومات المضمنة في التقرير.
 
@@ -203,7 +203,7 @@ ms.locfileid: "65097019"
 
 - اسم قائمة الاحتجاز واسم حالة eDiscovery المقترنة بها.
 
-- ما إذا كان الاحتجاز مقترنا بحالة Core أو eDiscovery (Premium).
+- ما إذا كان الاحتجاز مقترنا بحالة eDiscovery (قياسي) أو eDiscovery (Premium).
 
 - ما إذا كانت حالة eDiscovery نشطة أو مغلقة أم لا.
 

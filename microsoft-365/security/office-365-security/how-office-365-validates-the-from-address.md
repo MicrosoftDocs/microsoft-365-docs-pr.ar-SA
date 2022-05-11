@@ -19,12 +19,12 @@ description: يمكن للمسؤولين التعرف على أنواع عناو
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 92b7072e3127da71f423648c83fc94c17bed7caa
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: c8b9fb5c9e2b67a656948684838b61b4a9c33a8d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131053"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319539"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>كيفية التحقق من صحة EOP للعنوان "من" لمنع التصيد الاحتيالي
 
@@ -136,4 +136,4 @@ noreply.contoso.com IN MX .
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>طرق أخرى لمنع الجرائم الإلكترونية وحمايتها في Microsoft 365
 
-لمزيد من المعلومات حول كيفية تعزيز مؤسستك ضد التصيد الاحتيالي والبريد العشوائي وخروقات البيانات والتهديدات الأخرى، راجع [أفضل 10 طرق لتأمين Microsoft 365 لخطط الأعمال](../../admin/security-and-compliance/secure-your-business-data.md).
+لمزيد من المعلومات حول كيفية تعزيز مؤسستك ضد التصيد الاحتيالي والبريد العشوائي وخروقات البيانات والتهديدات الأخرى، راجع [أفضل الممارسات لتأمين Microsoft 365 لخطط الأعمال](../../admin/security-and-compliance/secure-your-business-data.md).

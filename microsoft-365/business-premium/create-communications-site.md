@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على سبب وكيفية إنشاء موقع اتصالات SharePoint لحملتك أو أعمالك مع Microsoft 365، وحماية الفريق من الهجمات الإلكترونية والتهديدات من البرامج الضارة والتهديدات الأخرى بسبب مشاركة الملفات بشكل غير صحيح.
-ms.openlocfilehash: 1e1e2792e4a667737118974b95ae5f77cb6ae224
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 72794c9aac0f1409675af0e3fa40c8cd1881f73a
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100170"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319517"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>إنشاء موقع اتصالات في SharePoint
 
@@ -72,5 +72,7 @@ ms.locfileid: "65100170"
 ## <a name="admin-settings"></a>إعدادات المسؤول
 
 إذا لم يظهر الارتباط **+ Create** site، فقد لا يتوفر إنشاء موقع الخدمة الذاتية في Microsoft 365. لإنشاء موقع فريق، اتصل بالشخص الذي يدير Microsoft 365 في مؤسستك. إذا كنت مسؤولا Microsoft 365، فراجع [إدارة إنشاء الموقع في SharePoint Online](/sharepoint/manage-site-creation) لتمكين إنشاء موقع الخدمة الذاتية لمؤسستك أو [إدارة المواقع في مركز إدارة SharePoint الجديد](/sharepoint/manage-sites-in-new-admin-center) لإنشاء موقع من <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">مركز إدارة SharePoint</a>.
+
+## <a name="next-mission"></a>المهمة التالية
 
 &mdash; تهانينا لقد أكملت المهمة! الآن، قم فورا بتحويل تركيزك نحو [حماية الأجهزة المدارة](m365bp-protect-devices.md) للمؤسسة بأكملها!

@@ -18,24 +18,24 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: يصف كيفية تصدير المحتوى وتنزيله من حالة eDiscovery (قياسي) في Microsoft 365.
-ms.openlocfilehash: fb142a735d30a59735bd4f9a6370543a92f3d926
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 550bdda2c8b2f8afb0e7b4934f5337d7ee323d3a
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095829"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318647"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>تصدير المحتوى من حالة eDiscovery (قياسي)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-بعد تشغيل عملية بحث مقترنة بحالة Microsoft Purview eDiscovery (Standard) بنجاح، يمكنك تصدير نتائج البحث. عند تصدير نتائج البحث، يتم تنزيل عناصر علبة البريد في ملفات PST أو كرسائل فردية. عند تصدير محتوى من مواقع SharePoint OneDrive for Business، يتم تصدير نسخ من مستندات Office الأصلية ومستندات أخرى. يتم أيضا تصدير ملف Results.csv يحتوي على معلومات حول كل عنصر يتم تصديره وملف بيان (بتنسيق XML) يحتوي على معلومات حول كل نتيجة بحث.
+بعد تشغيل عملية بحث مقترنة بحالة Microsoft Purview eDiscovery (قياسي) بنجاح، يمكنك تصدير نتائج البحث. عند تصدير نتائج البحث، يتم تنزيل عناصر علبة البريد في ملفات PST أو كرسائل فردية. عند تصدير محتوى من مواقع SharePoint OneDrive for Business، يتم تصدير نسخ من مستندات Office الأصلية ومستندات أخرى. يتم أيضا تصدير ملف Results.csv يحتوي على معلومات حول كل عنصر يتم تصديره وملف بيان (بتنسيق XML) يحتوي على معلومات حول كل نتيجة بحث.
   
 ## <a name="export-search-results"></a>تصدير نتائج البحث
 
-1. انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل توافق Microsoft Purview</a> وسجل الدخول باستخدام بيانات الاعتماد لحساب المستخدم الذي تم تعيين أذونات eDiscovery المناسبة له.
+1. انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a> وسجل الدخول باستخدام بيانات الاعتماد لحساب المستخدم الذي تم تعيين أذونات eDiscovery المناسبة له.
 
-2. في جزء التنقل الأيمن من مدخل التوافق، حدد **"إظهار الكل**"، ثم حدد **eDiscoveryCore** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
+2. في جزء التنقل الأيمن من مدخل التوافق، حدد **"إظهار الكل**"، ثم حدد **eDiscoveryeDiscovery** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**(قياسي).**</a>
 
 3. في صفحة **eDiscovery (قياسي)،** انقر فوق اسم الحالة التي تريد إنشاء قائمة الاحتجاز فيها.
 

@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 774c23a4da7d368f46607fd588a07ffb01e92f53
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a03d79da004dab7a68e691c6c2a8ac21ac2b7501
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094186"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318171"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>إلحاق الأجهزة المسجلة Microsoft Defender for Business
 
@@ -31,9 +31,9 @@ ms.locfileid: "65094186"
 
 - [استخدام الإلحاق التلقائي للأجهزة Windows المسجلة بالفعل في إدارة نقاط النهاية من Microsoft](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager)
 
-- [استخدام برنامج نصي محلي لإلحاق أجهزة Windows وmacOS](#use-a-local-script-to-onboard-windows-and-macos-devices)
+- [استخدام برنامج نصي محلي لإلحاق الأجهزة Windows macOS](#use-a-local-script-to-onboard-windows-and-macos-devices)
 
-- [استخدم إدارة نقاط النهاية لتسجيل الأجهزة](#use-microsoft-endpoint-manager-to-enroll-devices) (Windows وmacOS وiOS وAndroid) ثم طبق نهج Defender for Business على تلك الأجهزة
+- [استخدم إدارة نقاط النهاية لتسجيل الأجهزة](#use-microsoft-endpoint-manager-to-enroll-devices) (Windows macOS وiOS وAndroid) ثم طبق نهج Defender for Business على تلك الأجهزة
 
 تتضمن هذه المقالة أيضا:
 
@@ -60,7 +60,7 @@ ms.locfileid: "65094186"
 > نوصي بتحديد خيار "جميع الأجهزة المسجلة". وبهذه الطريقة، عندما يتم تسجيل أجهزة Windows في إدارة نقاط النهاية لاحقا، سيتم إلحاقها ب Defender for Business تلقائيا.
 لمعرفة المزيد حول الإلحاق التلقائي، راجع الخطوة 2 في [استخدام المعالج لإعداد Microsoft Defender for Business](../security/defender-business/mdb-use-wizard.md).
 
-## <a name="use-a-local-script-to-onboard-windows-and-macos-devices"></a>استخدام برنامج نصي محلي لإلحاق أجهزة Windows وmacOS
+## <a name="use-a-local-script-to-onboard-windows-and-macos-devices"></a>استخدام برنامج نصي محلي لإلحاق الأجهزة Windows macOS
 
 يمكنك استخدام برنامج نصي محلي لإلحاق أجهزة Windows وMac. عند تشغيل البرنامج النصي للإلحاق على جهاز، فإنه ينشئ ثقة مع Azure Active Directory (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز في إدارة نقاط النهاية من Microsoft (إذا لم يكن مسجلا بالفعل)، ثم يقوم بإلحاق الجهاز ب Defender for Business. هذا الأسلوب مفيد لإلحاق الأجهزة في Defender for Business. يمكنك إلحاق ما يصل إلى 10 أجهزة في كل مرة.
 
@@ -144,5 +144,4 @@ ms.locfileid: "65094186"
 
 ## <a name="next-objective"></a>الهدف التالي
 
-خذ بعض الوقت [لمراجعة وتحرير poicies](m365bp-view-edit-create-mdb-policies.md).
-
+[إعداد الحماية لأجهزة Windows.](m365bp-protection-settings-for-windows-10-devices.md)

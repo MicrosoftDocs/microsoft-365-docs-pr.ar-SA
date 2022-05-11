@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: تصف هذه المقالة كيفية إدارة حالات eDiscovery (قياسي). يشمل ذلك إغلاق حالة، وإعادة فتح حالة مغلقة، وحذف حالة.
-ms.openlocfilehash: 27dc46fcfe65b6a39c3a217fd72fcc97037ccb99
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f527d206e7112534db557928daf6ab8942c60d1c
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093998"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318305"
 ---
 # <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>إغلاق حالة eDiscovery (قياسي) وإعادة فتحها وحذفها
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-تصف هذه المقالة كيفية إغلاق حالات Microsoft Purview eDiscovery (القياسية) وإعادة فتحها وحذفها في Microsoft 365.
+تصف هذه المقالة كيفية إغلاق الحالات Microsoft Purview eDiscovery (قياسي) وإعادة فتحها وحذفها في Microsoft 365.
 
 ## <a name="close-a-case"></a>إغلاق حالة
 
@@ -38,13 +38,13 @@ ms.locfileid: "65093998"
 
 - يؤدي إغلاق حالة إلى إيقاف تشغيل قوائم الاحتجاز المقترنة بهذه الحالة فقط. إذا تم وضع قوائم احتجاز أخرى في موقع محتوى (مثل احتجاز التقاضي أو نهج الاستبقاء أو احتجاز من حالة eDiscovery (قياسي) مختلفة)، فستستمر عملية الاحتجاز هذه في حالة الاحتفاظ بها.
 
-- لا تزال الحالة مدرجة في صفحة eDiscovery (Standard) في مدخل توافق Microsoft Purview. يتم الاحتفاظ بتفاصيل الحالة المغلقة والاحتفاظ بها وعمليات البحث فيها وأعضاءها.
+- لا تزال الحالة مدرجة في صفحة eDiscovery (Standard) في مدخل التوافق في Microsoft Purview. يتم الاحتفاظ بتفاصيل الحالة المغلقة والاحتفاظ بها وعمليات البحث فيها وأعضاءها.
 
 - يمكنك تحرير حالة بعد إغلاقها. على سبيل المثال، يمكنك إضافة أعضاء أو إزالتهم وإنشاء عمليات بحث وتصدير نتائج البحث. الفرق الأساسي بين الحالات النشطة والمغلقة هو أنه يتم إيقاف تشغيل قوائم احتجاز eDiscovery عند إغلاق حالة.
 
 لإغلاق حالة:
   
-1. في مدخل التوافق، انقر فوق **eDiscoveryCore** >  لعرض قائمة حالات eDiscovery (قياسي) في مؤسستك.
+1. في مدخل التوافق، انقر فوق **eDiscoveryeDiscovery** >  **(قياسي)** لعرض قائمة حالات eDiscovery (قياسي) في مؤسستك.
 
 2. انقر فوق اسم الحالة التي تريد إغلاقها.
 
@@ -104,7 +104,7 @@ ms.locfileid: "65093998"
 
 لحذف حالة:
 
-1. في مدخل التوافق، انقر فوق **eDiscoveryCore** >  لعرض قائمة حالات eDiscovery (قياسي) في مؤسستك.
+1. في مدخل التوافق، انقر فوق **eDiscoveryeDiscovery** >  **(قياسي)** لعرض قائمة حالات eDiscovery (قياسي) في مؤسستك.
 
 2. انقر فوق اسم الحالة التي تريد حذفها.
 

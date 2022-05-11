@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل بيانات Slack eDiscovery الذي توفره Microsoft واستخدامه لاستيراد بيانات المراسلة الفورية وأرشفتها.
-ms.openlocfilehash: dc63673ae51d4ea47931a8a27acd7ef2191397d7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 65d7b666390c132995882ca4e8d027064482df13
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093076"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320661"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>إعداد موصل إلى أرشفة بيانات Slack eDiscovery (معاينة)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-يساعدك موصل بيانات Slack eDiscovery الذي توفره Microsoft على استيراد بيانات المراسلة الفورية وأرشفتها (مثل الرسائل والمرفقات والارتباطات والمراجعات) من مساحات عمل Slack الخاصة بمؤسستك إلى Microsoft 365. يسحب موصل البيانات البيانات من Slack API، ويحولها إلى تنسيق رسالة بريد إلكتروني، ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365. بعد استيراد بيانات Slack، يمكنك تطبيق حلول التوافق، مثل احتجاز التقاضي وMicrosoft Purview eDiscovery (Premium) وتوافق الاتصالات وإعدادات الاستبقاء على محتوى Slack. يمكن أن يساعد استخدام موصل بيانات Slack eDiscovery لاستيراد البيانات وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
+يساعدك موصل بيانات Slack eDiscovery الذي توفره Microsoft على استيراد بيانات المراسلة الفورية وأرشفتها (مثل الرسائل والمرفقات والارتباطات والمراجعات) من مساحات عمل Slack الخاصة بمؤسستك إلى Microsoft 365. يسحب موصل البيانات البيانات من Slack API، ويحولها إلى تنسيق رسالة بريد إلكتروني، ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365. بعد استيراد بيانات Slack، يمكنك تطبيق حلول التوافق، مثل احتجاز التقاضي Microsoft Purview eDiscovery (Premium) وتوافق الاتصالات وإعدادات الاستبقاء على محتوى Slack. يمكن أن يساعد استخدام موصل بيانات Slack eDiscovery لاستيراد البيانات وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
 
 ## <a name="overview-of-archiving-slack-ediscovery-data"></a>نظرة عامة على أرشفة بيانات Slack eDiscovery
 
@@ -45,7 +45,7 @@ ms.locfileid: "65093076"
 
 - احصل على اسم المستخدم وكلمة المرور لحساب مؤسسة Slack الخاص بمؤسستك. يمكنك استخدام بيانات الاعتماد هذه لتسجيل الدخول إلى هذا الحساب عند إنشاء موصل البيانات. من المستحسن أيضا أن يكون لديك توفير المستخدم التلقائي في مؤسسة Slack التي تم تكوينها لاستخدام تسجيل الدخول الأحادي (SSO). [الأدوار في مركز التوافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- يجب تعيين دور مسؤول موصل البيانات للمستخدم الذي يقوم بإنشاء موصل Slack eDiscovery. هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل توافق Microsoft Purview. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور مسؤول موصل البيانات، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع قسم "إنشاء مجموعة أدوار مخصصة" في [الأذونات في مدخل توافق Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- يجب تعيين دور مسؤول موصل البيانات للمستخدم الذي يقوم بإنشاء موصل Slack eDiscovery. هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل التوافق في Microsoft Purview. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور مسؤول موصل البيانات، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع المقطع "إنشاء مجموعة أدوار مخصصة" في ["الأذونات" في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-a-slack-ediscovery-connector"></a>الخطوة 1: إنشاء موصل Slack eDiscovery
 
@@ -121,7 +121,7 @@ ms.locfileid: "65093076"
 
 2. انقر فوق علامة التبويب **"Connectors** "، ثم حدد موصل **Slack eDiscovery** لعرض صفحة القائمة المنبثقة، التي تحتوي على الخصائص والمعلومات حول الموصل.
 
-3. ضمن **حالة الموصل مع المصدر**، انقر فوق ارتباط **سجل التنزيل** لفتح (أو حفظ) سجل الحالة للموصل. يحتوي هذا السجل على بيانات تم استيرادها إلى سحابة Microsoft.
+3. ضمن **حالة الموصل مع المصدر**، انقر فوق ارتباط **سجل التنزيل** لفتح (أو حفظ) سجل الحالة للموصل. يحتوي هذا السجل على معلومات حول البيانات التي تم استيرادها إلى سحابة Microsoft. لمزيد من المعلومات، راجع [عرض سجلات المسؤول لموصلات البيانات](data-connector-admin-logs.md).
 
 ## <a name="known-issues"></a>المشاكل المعروفة
 

@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ee73b5a83a669653087bf787061e8ad59b23ed18
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2c218cd2b0f04201f46155a72a916cc7676aaddb
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095201"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320807"
 ---
 # <a name="device-groups-in-microsoft-365-business-premium"></a>مجموعات الأجهزة في Microsoft 365 Business Premium
 
@@ -70,6 +70,8 @@ ms.locfileid: "65095201"
 9. في صفحة **إعدادات التكوين** ، راجع الإعدادات وتحريرها حسب الحاجة، ثم اختر **"التالي**". لمزيد من المعلومات حول هذه الإعدادات، راجع [فهم إعدادات تكوين الجيل التالي في Microsoft Defender for Business](../security/defender-business/mdb-next-gen-configuration-settings.md).
 
 10. في خطوة **مراجعة النهج،** راجع جميع الإعدادات، وأجر أي عمليات تحرير مطلوبة، ثم اختر **"إنشاء نهج** " أو **"تحديث النهج**".
+
+## <a name="next-steps"></a>الخطوات التالية
 
 الآن بعد أن أكملت بعثاتك الأساسية، قم بإعداد [فرق الاستجابة](m365bp-security-incident-management.md) الخاصة بك [والحفاظ على بيئتك](m365bp-maintain-environment.md).
 

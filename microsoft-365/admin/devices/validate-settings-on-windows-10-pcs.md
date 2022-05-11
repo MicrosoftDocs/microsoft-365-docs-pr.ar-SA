@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: تعرف على كيفية التحقق من أن إعدادات حماية تطبيق Microsoft 365 للأعمال قد تم تفعيلها على أجهزة Windows 10 للمستخدمين.
-ms.openlocfilehash: c107741d87c63472310352b58872ec0b6ecc1d4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cbb26461da9fcc73f57d219c36ef04d97e7fc209
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090652"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317542"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>التحقق من صحة إعدادات حماية الجهاز لأجهزة الكمبيوتر Windows 10
 
@@ -67,5 +67,5 @@ ms.locfileid: "65090652"
 
 [Microsoft 365 لوثائق وموارد الأعمال](/admin)
 
-[تعيين تكوينات الجهاز لطرق Windows 10 PCsTop](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
- [10 لتأمين Microsoft 365 لخطط الأعمال](../../admin/security-and-compliance/secure-your-business-data.md)
+[تعيين تكوينات الجهاز لممارسات Windows 10 PCsBest](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
+ [لتأمين Microsoft 365 لخطط الأعمال](../../admin/security-and-compliance/secure-your-business-data.md)

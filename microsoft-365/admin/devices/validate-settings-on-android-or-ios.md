@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: تعرف على كيفية التحقق من صحة إعدادات حماية تطبيق Microsoft 365 Business Premium في أجهزة Android أو iOS.
-ms.openlocfilehash: 98b3110516d074fe945e1bb68652b40e93fa7fb7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7e1355f71e9757e1055999e1951b4f093b0d21a0
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090674"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317905"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>التحقق من صحة إعدادات حماية التطبيق على أجهزة Android أو iOS
 
@@ -208,4 +208,4 @@ ms.locfileid: "65090674"
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[أفضل 10 طرق لتأمين Microsoft 365 لخطط الأعمال](../security-and-compliance/secure-your-business-data.md)
+[أفضل الممارسات لتأمين Microsoft 365 لخطط الأعمال](../security-and-compliance/secure-your-business-data.md)
