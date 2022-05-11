@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: تعرف على كيفية إنشاء نموذج معالجة نموذج في SharePoint Syntex.
-ms.openlocfilehash: 3eb14a76bd597f1f382b87813c7e4bd2a4518e19
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: bf0a15894e7b9bbc4905a0372d557e1880650e84
+ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882341"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65349829"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>إنشاء نموذج معالجة نموذج في Microsoft SharePoint Syntex
 
@@ -43,7 +43,7 @@ ms.locfileid: "64882341"
 
 يمكنك فقط إنشاء نموذج معالجة نموذج في مكتبات المستندات SharePoint التي تم تمكينه لها. إذا تم تمكين معالجة النماذج، فستتمكن من رؤية **Automate** >  **الذكاء الاصطناعي BuilderCreate** >  **نموذج لمعالجة قائمة النماذج** في مكتبة المستندات. إذا كنت بحاجة إلى تمكين المعالجة في مكتبة المستندات، فيجب الاتصال بمسؤول SharePoint.
 
- ![لقطة شاشة تعرض نموذج الذكاء الاصطناعي Builder.](../media/content-understanding/create-ai-builder-model2.png)
+![لقطة شاشة تعرض نموذج الذكاء الاصطناعي Builder.](../media/content-understanding/create-ai-builder-model2.png)
 
 ## <a name="step-1-create-a-form-processing-model"></a>الخطوة 1: إنشاء نموذج معالجة نموذج
 
@@ -114,11 +114,9 @@ ms.locfileid: "64882341"
 
 2. بعد نشر النموذج، حدد **"Use model**"، ثم حدد **"Create flow**". يؤدي ذلك إلى إنشاء تدفق Power Automate يمكن تشغيله في مكتبة مستندات SharePoint ويستخرج الحقول التي تم تعريفها في النموذج.
 
-    ![لقطة شاشة في الذكاء الاصطناعي Builder تعرض لوحة إنشاء تدفق.](../media/content-understanding/ai-builder-create-a-flow.png)
+    ![لقطة شاشة في الذكاء الاصطناعي Builder تعرض لوحة إنشاء تدفق.](../media/content-understanding/ai-builder-create-a-flow-1.png)
  
 3. عند الانتهاء، سترى الرسالة: *تم إنشاء التدفق بنجاح*.
-
-    ![لقطة شاشة في الذكاء الاصطناعي Builder تظهر إنشاء التدفق بنجاح.](../media/content-understanding/ai-builder-flow-created.png)
 
 4. حدد الزر **"الانتقال إلى SharePoint**" لرؤية مكتبة المستندات محدثة بالنموذج الخاص بك.
 
