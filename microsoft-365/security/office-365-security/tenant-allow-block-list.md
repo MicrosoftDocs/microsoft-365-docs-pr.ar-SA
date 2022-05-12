@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إدارة الأذونات والكتل في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64b9c044a463e940b0d9862221ca854fe0eebfdc
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: 6e112b6b386e0a2961119478aae7d4cb53138ccf
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65182630"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363303"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>إدارة قائمة السماح/الحظر للمستأجر
 
@@ -248,7 +248,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 - يسمح بأحرف البدل (*) في السيناريوهات التالية:
 
-  - يجب أن يتبع حرف بدل أيسر فترة لتحديد مجال فرعي.
+  - يجب أن يتبع حرف بدل أيسر فترة لتحديد مجال فرعي. (ينطبق فقط على الكتل)
 
     على سبيل المثال، `*.contoso.com` مسموح به؛ `*contoso.com` غير مسموح به.
 
@@ -265,8 +265,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
   - يشير التلدة اليسرى إلى مجال وكافة المجالات الفرعية.
 
     على سبيل المثال `~contoso.com` يتضمن `contoso.com` و `*.contoso.com`.
-
-- ستفشل إدخالات URL التي تحتوي على بروتوكولات (على سبيل المثال، `http://`أو `https://`، أو `ftp://`) لأن إدخالات URL تنطبق على كافة البروتوكولات.
 
 - اسم المستخدم أو كلمة المرور غير معتمدة أو مطلوبة.
 
@@ -285,7 +283,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 - **السماح بالتطابق**: contoso.com
 
 - **السماح غير متطابق**:
-
   - abc-contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -295,7 +292,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
   - www.contoso.com/q=a@contoso.com
 
 - **مطابقة الكتلة**:
-
   - contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -308,15 +304,16 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 #### <a name="scenario-left-wildcard-subdomain"></a>السيناريو: حرف بدل أيسر (مجال فرعي)
 
+> [!NOTE]
+> ينطبق هذا السيناريو على الكتل فقط.
+
 **الإدخال**: `*.contoso.com`
 
-- **السماح بالتطابق** **وتطابق الكتلة**:
-
+- **مطابقة الكتلة**:
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **السماح غير متطابق** **والكتلة غير متطابقة**:
-
+- **الكتلة غير متطابقة**:
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
@@ -327,13 +324,11 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 **الإدخال**: `contoso.com/a/*`
 
 - **السماح بالتطابق** **وتطابق الكتلة**:
-
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
 - **السماح غير متطابق** **والكتلة غير متطابقة**:
-
   - contoso.com
   - contoso.com/a
   - www.contoso.com
@@ -344,13 +339,11 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 **الإدخال**: `~contoso.com`
 
 - **السماح بالتطابق** **وتطابق الكتلة**:
-
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
 - **السماح غير متطابق** **والكتلة غير متطابقة**:
-
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
@@ -360,7 +353,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 **الإدخال**: `contoso.com/*`
 
 - **السماح بالتطابق** **وتطابق الكتلة**:
-
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
   - contoso.com/a/b/c
@@ -373,17 +365,19 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>السيناريو: المجال الفرعي لحرف البدل الأيسر ولاحقة حرف البدل الأيمن
 
+> [!NOTE]
+> ينطبق هذا السيناريو على الكتل فقط.
+
 **الإدخال**: `*.contoso.com/*`
 
-- **السماح بالتطابق** **وتطابق الكتلة**:
-
+- **مطابقة الكتلة**:
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
   - www.contoso.com/a
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **السماح غير متطابق** **والحظر غير متطابق**: contoso.com/b
+- **الكتلة غير متطابقة**: contoso.com/b
 
 #### <a name="scenario-left-and-right-tilde"></a>السيناريو: التلدة اليمنى واليسرى
 

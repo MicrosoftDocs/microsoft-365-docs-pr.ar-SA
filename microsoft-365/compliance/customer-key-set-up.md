@@ -11,19 +11,21 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: تعرف على كيفية إعداد مفتاح العميل Microsoft 365.
-ms.openlocfilehash: 38b8a73a1c4654e1922f4f8e4600727a978af431
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: تعرف على كيفية إعداد مفتاح العميل.
+ms.openlocfilehash: 42c89c23f823f5f4297f31308516888633a1c06c
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759955"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363159"
 ---
 # <a name="set-up-customer-key"></a>إعداد مفتاح العميل
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 باستخدام Customer Key، يمكنك التحكم في مفاتيح التشفير الخاصة بمؤسستك ثم تكوين Microsoft 365 لاستخدامها لتشفير بياناتك الثابتة في مراكز بيانات Microsoft. بمعنى آخر، يسمح مفتاح العميل للعملاء بإضافة طبقة من التشفير التي تخصهم، باستخدام مفاتيحهم.
 
-إعداد Azure قبل أن تتمكن من استخدام مفتاح العميل Office 365. تصف هذه المقالة الخطوات التي تحتاج إلى اتباعها لإنشاء موارد Azure المطلوبة وتكوينها ثم توفر الخطوات لإعداد مفتاح العميل في Office 365. بعد إعداد Azure، يمكنك تحديد النهج، وبالتالي، أي مفاتيح، لتعيينها لتشفير البيانات عبر أحمال عمل Microsoft 365 المختلفة في مؤسستك. لمزيد من المعلومات حول مفتاح العميل، أو للحصول على نظرة عامة، راجع [تشفير الخدمة باستخدام مفتاح العميل في Office 365](customer-key-overview.md).
+إعداد Azure قبل أن تتمكن من استخدام مفتاح العميل. تصف هذه المقالة الخطوات التي تحتاج إلى اتباعها لإنشاء موارد Azure المطلوبة وتكوينها ثم توفر الخطوات لإعداد مفتاح العميل. بعد إعداد Azure، يمكنك تحديد النهج، وبالتالي، أي مفاتيح، لتعيينها لتشفير البيانات عبر أحمال عمل Microsoft 365 المختلفة في مؤسستك. لمزيد من المعلومات حول Customer Key، أو للحصول على نظرة عامة، راجع [تشفير الخدمة باستخدام Microsoft Purview Customer Key](customer-key-overview.md).
   
 > [!IMPORTANT]
 > نوصي بشدة باتباع أفضل الممارسات الواردة في هذه المقالة. يتم استدعاؤها **كتلميحات** **وهامة**. يمنحك مفتاح العميل التحكم في مفاتيح التشفير الجذر التي يمكن أن يكون نطاقها كبيرا مثل مؤسستك بأكملها. وهذا يعني أن الأخطاء التي تم ارتكابها باستخدام هذه المفاتيح يمكن أن يكون لها تأثير واسع وقد تؤدي إلى انقطاع الخدمة أو فقدان البيانات بشكل لا يمكن الرجوع عنه.
@@ -43,7 +45,7 @@ ms.locfileid: "64759955"
 
 سيستمر دعم تراخيص خدمات الامتثال المتطورة في Office 365 الموجودة.
 
-لفهم المفاهيم والإجراءات الواردة في هذه المقالة، راجع وثائق [Key Vault Azure](/azure/key-vault/). أيضا، تعرف على المصطلحات المستخدمة في Azure، على سبيل المثال، [مستأجر Azure AD](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
+لفهم المفاهيم والإجراءات الواردة في هذه المقالة، راجع وثائق [Key Vault Azure](/azure/key-vault/). أيضا، تصبح على دراية بالمصطلحات المستخدمة في Azure، على سبيل المثال، [Azure AD المستأجر](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
   
 إذا كنت بحاجة إلى مزيد من الدعم خارج الوثائق، فاتصل ب Microsoft Consulting Services (MCS) أو Premier Field Engineering (PFE) أو شريك Microsoft للحصول على المساعدة. لتقديم ملاحظات حول Customer Key، بما في ذلك الوثائق، أرسل أفكارك واقتراحاتك ووجهات نظرك إلى customerkeyfeedback@microsoft.com.
   
@@ -86,7 +88,7 @@ ms.locfileid: "64759955"
   
 ### <a name="create-two-new-azure-subscriptions"></a>إنشاء اشتراكين جديدين في Azure
 
-يتطلب مفتاح العميل اشتراكين من Azure. كأفضل ممارسة، توصي Microsoft بإنشاء اشتراكات Azure جديدة للاستخدام مع Customer Key. يمكن تخويل مفاتيح Key Vault Azure للتطبيقات في نفس مستأجر Azure Active Directory (Microsoft Azure Active Directory)، يجب إنشاء الاشتراكات الجديدة باستخدام نفس مستأجر Azure AD المستخدم مع مؤسستك حيث سيتم تعيين DEPs. على سبيل المثال، استخدام حساب العمل أو المؤسسة التعليمية الذي لديه امتيازات المسؤول العام في مؤسستك. للحصول على خطوات مفصلة، راجع [التسجيل في Azure كمؤسسة](/azure/active-directory/fundamentals/sign-up-organization).
+يتطلب مفتاح العميل اشتراكين من Azure. كأفضل ممارسة، توصي Microsoft بإنشاء اشتراكات Azure جديدة للاستخدام مع Customer Key. يمكن تخويل مفاتيح Key Vault Azure فقط للتطبيقات في نفس مستأجر Azure Active Directory (Microsoft Azure Active Directory)، يجب إنشاء الاشتراكات الجديدة باستخدام نفس المستأجر Azure AD المستخدم مع مؤسستك حيث سيتم تعيين DEPs. على سبيل المثال، استخدام حساب العمل أو المؤسسة التعليمية الذي لديه امتيازات المسؤول العام في مؤسستك. للحصول على خطوات مفصلة، راجع [التسجيل في Azure كمؤسسة](/azure/active-directory/fundamentals/sign-up-organization).
   
 > [!IMPORTANT]
 > يتطلب مفتاح العميل مفتاحين لكل نهج تشفير البيانات (DEP). لتحقيق ذلك، يجب إنشاء اشتراكين من Azure. وكأفضل ممارسة، توصي Microsoft بأن يكون لديك أعضاء منفصلون في مؤسستك لتكوين مفتاح واحد في كل اشتراك. يجب عليك فقط استخدام اشتراكات Azure هذه لإدارة مفاتيح التشفير Office 365. يؤدي ذلك إلى حماية مؤسستك في حالة حذف أحد عوامل التشغيل الخاصة بك عن طريق الخطأ أو عن قصد أو بشكل ضار أو إساءة إدارة المفاتيح المسؤولة عنها.
@@ -144,7 +146,7 @@ ms.locfileid: "64759955"
 
 - لتمكين مفتاح العميل لتعيين DEPs لتشفير محتوى SharePoint Online ومحتوى OneDrive for Business (بما في ذلك ملفات Teams) لكافة المستخدمين المستأجرين، اتصل [spock@microsoft.com](mailto:spock@microsoft.com).
 
-- لتمكين مفتاح العميل لتعيين DEPs لتشفير المحتوى عبر أحمال عمل Microsoft 365 متعددة (Exchange Online، Teams، MIP EDM) لجميع المستخدمين المستأجرين، اتصل [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
+- لتمكين مفتاح العميل لتعيين DEPs لتشفير المحتوى عبر أحمال عمل Microsoft 365 متعددة (Exchange Online، Teams، حماية البيانات في Microsoft Purview) لجميع المستخدمين المستأجرين، اتصل [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
 
 - قم بتضمين المعلومات التالية في بريدك الإلكتروني:
 
@@ -232,7 +234,7 @@ ms.locfileid: "64759955"
    - *اسم المخزن* هو اسم المخزن الرئيسي الذي أنشأته.
    - بالنسبة Exchange Online Skype for Business، استبدل *Office 365 appID* ب`00000002-0000-0ff1-ce00-000000000000`
    - بالنسبة SharePoint Online والملفات OneDrive for Business والملفات Teams، استبدل *Office 365 appID* ب`00000003-0000-0ff1-ce00-000000000000`
-   - بالنسبة إلى نهج حمل العمل المتعدد (Exchange، Teams، حماية البيانات في Microsoft) الذي ينطبق على جميع المستخدمين المستأجرين، استبدل *Office 365 appID* ب`c066d759-24ae-40e7-a56f-027002b5d3e4`
+   - بالنسبة إلى نهج حمل العمل المتعدد (Exchange، Teams، حماية البيانات في Microsoft Purview) الذي ينطبق على جميع المستخدمين المستأجرين، استبدل *Office 365 appID* ب`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   مثال: تعيين أذونات Exchange Online Skype for Business:
 
