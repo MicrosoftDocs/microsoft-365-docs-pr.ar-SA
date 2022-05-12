@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: d37723e45c5c4049e913422b2500b74d36c701eb
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: e53cda0ac61bdc546e972d663bf0063b02b21ad3
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789701"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363247"
 ---
 # <a name="turn-on-network-protection"></a>تشغيل حماية الشبكة
 
@@ -28,17 +28,17 @@ ms.locfileid: "64789701"
 
 **ينطبق على:**
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 > [!TIP]
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-تساعد [حماية الشبكة](network-protection.md) على منع الموظفين من استخدام أي تطبيق للوصول إلى المجالات الخطرة التي قد تستضيف رسائل التصيد الاحتيالي والمستغلة والمحتوى الضار الآخر على الإنترنت. يمكنك [تدقيق حماية الشبكة](evaluate-network-protection.md) في بيئة اختبار لعرض التطبيقات التي سيتم حظرها قبل تمكينها.
+تساعد [حماية الشبكة](network-protection.md) على منع الموظفين من استخدام أي تطبيق للوصول إلى المجالات الخطرة التي قد تستضيف رسائل التصيد الاحتيالي والمستغلة والمحتوى الضار الآخر على الإنترنت. يمكنك [تدقيق حماية الشبكة](evaluate-network-protection.md) في بيئة اختبار لعرض التطبيقات التي سيتم حظرها قبل تمكين حماية الشبكة.
 
 [تعرف على المزيد حول خيارات تكوين تصفية الشبكة.](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
@@ -109,7 +109,7 @@ ms.locfileid: "64789701"
 
 4. انتقل إلى **Endpoint** **protectionBasics** > ، وقم بتوفير اسم لملف التعريف الخاص بك، ثم حدد **"التالي**".
 
-5. في قسم **إعدادات التكوين**، انتقل إلى **الحماية من مخاطر الهجمات من Microsoft Defender** >  **Network filteringNetwork** >  **protectionEnable** >  أو **Audit**. حدد **"التالي**".
+5. في قسم **إعدادات التكوين**، انتقل إلى **الحماية من مخاطر الهجمات من Microsoft Defender** >  **Network filteringNetwork** >  **protectionEnable** >  أو **Audit**. حدد **التالي**.
 
 6. حدد **علامات النطاق** المناسبة، **والتعيينات**، **وقواعد قابلية التطبيق** كما هو مطلوب من قبل مؤسستك. يمكن للمسؤولين تعيين المزيد من المتطلبات.
 
@@ -140,27 +140,19 @@ ms.locfileid: "64789701"
    > [!IMPORTANT]
    > لتمكين حماية الشبكة بشكل كامل، يجب تعيين خيار نهج المجموعة إلى **Enabled** وتحديد **"حظر"** أيضا في القائمة المنسدلة "خيارات".
 
-تأكيد تمكين حماية الشبكة على كمبيوتر محلي باستخدام محرر التسجيل:
-
-1. حدد **Start** واكتب **regedit** لفتح **محرر السجل**.
-
-2. الانتقال إلى **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection**
-
-3. حدد **EnableNetworkProtection** وتأكد من القيمة:
-   - 0=Off
-   - 1=تشغيل
-   - 2=Audit
+   > [!NOTE]
+   > اختياري: اتبع الخطوات الواردة في [التحقق من تمكين حماية الشبكة](#check-if-network-protection-is-enabled) للتحقق من صحة إعدادات نهج المجموعة.
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
 1. افتح وحدة التحكم Configuration Manager.
 
-2. انتقل إلى **Assets and Compliance** >  **Endpoint Protection** >  **Windows Defender Exploit Guard**. 
+2. انتقل إلى **Assets and Compliance** >  **Endpoint Protection** >  **Windows Defender Exploit Guard**.
 
 3. حدد **Create Exploit Guard Policy** من الشريط لإنشاء نهج جديد.
    - لتحرير نهج موجود، حدد النهج، ثم حدد **"خصائص** " من الشريط أو قائمة النقر بزر الماوس الأيمن. تحرير خيار **تكوين حماية الشبكة** من علامة التبويب **Network Protection** .  
 
-4. في الصفحة **"عام** "، حدد اسما للنهج الجديد وتحقق من تمكين خيار **حماية الشبكة** . 
+4. في الصفحة **"عام** "، حدد اسما للنهج الجديد وتحقق من تمكين خيار **حماية الشبكة** .
 
 5. في صفحة **حماية الشبكة** ، حدد أحد الإعدادات التالية للخيار **"تكوين حماية الشبكة"** :
    - **حظر**

@@ -15,21 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: تعرف على مكان الوصول إلى Windows Office Deployment Lab Kit.
-ms.openlocfilehash: 70a7e5d1c44e0fb80860ce0a1932b00616dcfe94
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: cbcde8f0593adb54d3496156b1bf83dca1cd5064
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952677"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363071"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>مجموعة أدوات معمل نشر Windows وOffice 365
 
 تم تصميم مجموعة مختبر نشر Windows Office 365 لمساعدتك على تخطيط واختبار والتحقق من صحة نشر وإدارة أجهزة سطح المكتب التي تعمل Windows 10 Enterprise أو Windows 11 Enterprise Microsoft 365 Apps for enterprise. تغطي المختبرات في مجموعة أدوات باستخدام Microsoft Endpoint Configuration Manager OneDrive Windows Autopilot والمزيد. يوصى بشدة باستخدام هذه المجموعة للمؤسسات التي تستعد لترقيات سطح المكتب. كبيئة معزولة، يعد المختبر مثاليا أيضا لاستكشاف تحديثات أداة النشر واختبار التشغيل التلقائي المرتبط بالنشر.
 
-**Windows 10 والإصدارات Windows 11 من حزمة مختبر النشر متوفرة الآن للتنزيل المجاني في مركز تقييم Microsoft.**
+هناك إصداران من المعمل متاحان للتنزيل المجاني:  
 
-[تنزيل Windows 11 مع مجموعة مختبر نشر Office 365](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)<br>
-[تنزيل Windows 10 مع مجموعة مختبر نشر Office 365](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+|Windows 10 Lab|Windows 11 Lab|
+|---|---|
+|[بيئة التمرين المعملي Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[بيئة التمرين المعملي Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Win 10 أدلة معملية](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab_guides.zip)|[دلائل التمرين المعملي ل Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
 
 ## <a name="a-complete-lab-environment"></a>بيئة معملية كاملة
 
@@ -38,7 +40,7 @@ ms.locfileid: "64952677"
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
 |Windows 10 Enterprise، الإصدار 21H1|Windows 11 Enterprise|
-|Microsoft Endpoint Configuration Manager، إصدار 2103|Microsoft Endpoint Configuration Manager، الإصدار 2111|
+|Microsoft Endpoint Configuration Manager، الإصدار 2203|Microsoft Endpoint Configuration Manager، الإصدار 2203|
 |Windows Assessment and Deployment Kit for Windows 10|Windows مجموعة أدوات التقييم والتوزيع Windows 11|
 |Windows Server 2019|Windows Server 2022|
 
@@ -96,7 +98,7 @@ ms.locfileid: "64952677"
 - Windows Hello للأعمال
 
 > [!NOTE]
-> الرجاء استخدام اتصال إنترنت واسع النطاق لتنزيل هذا المحتوى والسماح بما يقرب من 30 دقيقة للتوفير التلقائي. تتطلب بيئة المختبر ما لا يقل عن 16 غيغابايت من الذاكرة المتوفرة و150 غيغابايت من مساحة القرص الحرة. للحصول على الأداء الأمثل، يوصى بتوفير 32 غيغابايت من الذاكرة و300 غيغابايت من المساحة الحرة. تنتهي صلاحية مختبر Windows 10 في 16 مايو 2022. تنتهي صلاحية مختبر Windows 11 في 6 مايو 2022. سيتم نشر الإصدارات الجديدة قبل انتهاء الصلاحية.
+> الرجاء استخدام اتصال إنترنت واسع النطاق لتنزيل هذا المحتوى والسماح بما يقرب من 30 دقيقة للتوفير التلقائي. تتطلب بيئة المختبر ما لا يقل عن 16 غيغابايت من الذاكرة المتوفرة و150 غيغابايت من مساحة القرص الحرة. للحصول على الأداء الأمثل، يوصى بتوفير 32 غيغابايت من الذاكرة و300 غيغابايت من المساحة الحرة. تنتهي صلاحية مختبر Windows 10 في 16 مايو 2022. تنتهي صلاحية مختبر Windows 11 في 7 أغسطس 2022. سيتم نشر الإصدارات الجديدة قبل انتهاء الصلاحية.
 
 ## <a name="additional-guidance"></a>إرشادات إضافية
 

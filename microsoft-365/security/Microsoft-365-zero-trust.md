@@ -18,16 +18,22 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 3b943569485ffaa96b33208c1c4bf0a491c23a95
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bb452c74763e31be11a6431cc260667319d2582f
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939466"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363181"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>خطة نشر الثقة المعدومة من Microsoft 365
 
 توفر هذه المقالة خطة نشر لبناء أمان **ثقة معدومة** باستخدام Microsoft 365. ثقة معدومة هو نموذج أمان جديد يفترض الخرق ويتحقق من كل طلب كما لو كان ينشأ من شبكة غير خاضعة للرقابة. بغض النظر عن مكان إنشاء الطلب أو المورد الذي يصل إليه، يعلمنا نموذج ثقة معدومة "عدم الثقة أبدا، التحقق دائما".
+
+استخدم هذه المقالة مع هذا الملصق.
+
+| البند | الوصف |
+|:-----|:-----|
+|[![رسم توضيحي لخطة نشر Microsoft 365 ثقة معدومة.](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> محدث في مارس 2022 | **إرشادات الحلول ذات الصلة** <br/> <ul><li>[نشر البنية الأساسية لهويتك Microsoft 365](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[تكوينات الهوية والوصول إلى الجهاز الموصى بها](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[إدارة الأجهزة باستخدام Intune](../solutions/manage-devices-with-intune-overview.md)</li><li>[تقييم Microsoft 365 Defender وإعداد إصدار تجريبي منه](../security/defender/eval-overview.md)</li><li>[نشر حل حماية البيانات في Microsoft](../compliance/information-protection-solution.md)</li><li>[نشر حماية المعلومات للوائح خصوصية البيانات باستخدام Microsoft 365](../solutions/information-protection-deploy.md)</li></ul>
 
 ## <a name="zero-trust-security-architecture"></a>ثقة معدومة بنية الأمان
 
@@ -69,7 +75,7 @@ For more information about this architecture, including deployment objectives fo
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="عملية تكوين الهوية ثقة معدومة وحماية الوصول إلى الجهاز" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-1b.png":::
 
-انتقل إلى [**_ثقة معدومة حماية الهوية والوصول إلى الجهاز_**](office-365-security/microsoft-365-policies-configurations.md) للحصول على إرشادات توجيهية لإنجاز ذلك. تصف هذه السلسلة من المقالات مجموعة من تكوينات المتطلبات الأساسية للوصول إلى الهوية والجهاز ومجموعة من الوصول المشروط ل Azure Active Directory (Azure AD) Microsoft Intune والنهج الأخرى لتأمين الوصول إلى Microsoft 365 لتطبيقات وخدمات سحابة المؤسسة وخدمات SaaS الأخرى والتطبيقات المحلية المنشورة باستخدام وكيل تطبيق Azure AD.
+انتقل إلى [**_ثقة معدومة حماية الهوية والوصول إلى الجهاز_**](office-365-security/microsoft-365-policies-configurations.md) للحصول على إرشادات توجيهية لإنجاز ذلك. تصف هذه السلسلة من المقالات مجموعة من تكوينات المتطلبات الأساسية للوصول إلى الهوية والجهاز ومجموعة من الوصول المشروط ل Azure Active Directory (Azure AD) Microsoft Intune ونهج أخرى لتأمين الوصول إلى Microsoft 365 لتطبيقات وخدمات سحابة المؤسسة وخدمات SaaS الأخرى والتطبيقات المحلية المنشورة مع وكيل تطبيق Azure AD.
 
 |يتضمن|المتطلبات الأساسية|لا يتضمن|
 |---------|---------|---------|
@@ -111,22 +117,22 @@ Microsoft 365 Defender هو حل موسع للكشف والاستجابة (XDR) 
 
 |يتضمن|المتطلبات الأساسية|لا يتضمن|
 |---------|---------|---------|
-|إعداد بيئة التقييم والإصدار التجريبي لجميع المكونات: <ul><li>Defender for Identity</li><li>Defender for Office 365</li><li>Defender لنقطة النهاية</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> الحماية من التهديدات <br><br> التحقق من التهديدات والاستجابة لها|راجع الإرشادات لقراءة متطلبات البنية لكل مكون من مكونات Microsoft 365 Defender.| لا يتم تضمين Azure AD Identity Protection في دليل الحل هذا. وهي مضمنة في [الخطوة 1. تكوين الهوية ثقة معدومة وحماية الوصول إلى الجهاز](#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies).|
+|إعداد بيئة التقييم والإصدار التجريبي لجميع المكونات: <ul><li>Defender for Identity</li><li>Defender for Office 365</li><li>Defender لنقطة النهاية</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> الحماية من التهديدات <br><br> التحقق من التهديدات والاستجابة لها|راجع الإرشادات لقراءة متطلبات البنية لكل مكون من مكونات Microsoft 365 Defender.| Azure AD Identity Protection غير مضمن في دليل الحل هذا. وهي مضمنة في [الخطوة 1. تكوين الهوية ثقة معدومة وحماية الوصول إلى الجهاز](#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies).|
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>الخطوة 5. حماية البيانات الحساسة وإدارتها
 
-تنفيذ حماية البيانات Microsoft Purview لمساعدتك على اكتشاف المعلومات الحساسة وتصنيفها وحمايتها أينما كانت تعيش أو تنتقل.
+تنفيذ حماية البيانات في Microsoft Purview لمساعدتك على اكتشاف المعلومات الحساسة وتصنيفها وحمايتها أينما كانت تعيش أو تنتقل.
 
-يتم تضمين قدرات حماية البيانات Microsoft Purview مع Microsoft Purview وتعطيك الأدوات اللازمة للتعرف على بياناتك وحماية بياناتك ومنع فقدان البيانات.
+يتم تضمين قدرات حماية البيانات في Microsoft Purview مع Microsoft Purview وتعطيك الأدوات اللازمة لمعرفة بياناتك وحماية بياناتك ومنع فقدان البيانات.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="قدرات حماية المعلومات التي تحمي البيانات من خلال إنفاذ النهج" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 
 بينما يتم تمثيل هذا العمل في أعلى مكدس النشر الموضح سابقا في هذه المقالة، يمكنك بدء هذا العمل في أي وقت.
 
-يوفر Microsoft Purview حماية البيانات إطار عمل وعملية وإمكانيات يمكنك استخدامها لتحقيق أهداف عملك المحددة.
+يوفر حماية البيانات في Microsoft Purview إطار عمل وعملية وقدرات يمكنك استخدامها لتحقيق أهداف عملك المحددة.
 
-![Microsoft Purview حماية البيانات](../media/zero-trust/mip-solution-overview.png)
+![حماية البيانات في Microsoft Purview](../media/zero-trust/mip-solution-overview.png)
 
-لمزيد من المعلومات حول كيفية تخطيط ونشر حماية المعلومات، راجع [**_نشر حل حماية البيانات Microsoft Purview_**](../compliance/information-protection-solution.md). 
+لمزيد من المعلومات حول كيفية تخطيط حماية المعلومات ونشرها، راجع [**_نشر حل حماية البيانات في Microsoft Purview_**](../compliance/information-protection-solution.md). 
 
 إذا كنت تنشر حماية المعلومات للوائح خصوصية البيانات، فإن دليل الحل هذا يوفر إطار عمل موصى به للعملية بأكملها: [**_نشر حماية المعلومات للوائح خصوصية البيانات باستخدام Microsoft 365_**](../solutions/information-protection-deploy.md).
