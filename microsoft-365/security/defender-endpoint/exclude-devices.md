@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cbfc82f56cc1922a663c31defe30dc61c2d3dd9b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d97e8db205d066671b7c0d430e3dbf79f0dd6ebd
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664139"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368100"
 ---
 # <a name="exclude-devices"></a>استبعاد الأجهزة
 
@@ -28,16 +28,16 @@ ms.locfileid: "64664139"
 **ينطبق على:**
 
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-## <a name="exclude-devices-from-threat-and-vulnerability-management"></a>استبعاد الأجهزة من إدارة المخاطر والثغرات الأمنية
+## <a name="exclude-devices-from-vulnerability-management"></a>استبعاد الأجهزة من إدارة الثغرات الأمنية
 
-يسمح لك استبعاد الأجهزة غير النشطة أو المتكررة أو خارج النطاق بالتركيز على اكتشاف المخاطر وتحديد أولوياتها على أجهزتك النشطة. يمكن أن يساعد هذا الإجراء أيضا في إظهار درجة تعرض إدارة المخاطر والثغرات الأمنية أكثر دقة، حيث لن تكون الأجهزة المستبعدة مرئية في تقارير إدارة المخاطر والثغرات الأمنية.
+يسمح لك استبعاد الأجهزة غير النشطة أو المتكررة أو خارج النطاق بالتركيز على اكتشاف المخاطر وتحديد أولوياتها على أجهزتك النشطة. يمكن أن يساعد هذا الإجراء أيضا في إظهار درجة تعرض إدارة الثغرات الأمنية أكثر دقة، حيث لن تكون الأجهزة المستبعدة مرئية في تقارير إدارة الثغرات الأمنية.
 
-بمجرد استبعاد الأجهزة، لن تتمكن من عرض المعلومات المحدثة أو ذات الصلة حول الثغرات الأمنية والبرامج المثبتة على هذه الأجهزة. يؤثر على جميع صفحات إدارة المخاطر والثغرات الأمنية والتقارير والجداول ذات الصلة في التتبع المتقدم.
+بمجرد استبعاد الأجهزة، لن تتمكن من عرض المعلومات المحدثة أو ذات الصلة حول الثغرات الأمنية والبرامج المثبتة على هذه الأجهزة. يؤثر على جميع صفحات إدارة الثغرات الأمنية والتقارير والجداول ذات الصلة في التتبع المتقدم.
 
 على الرغم من أن ميزة استبعاد الجهاز تزيل بيانات الجهاز من صفحات وتقارير إدارة الثغرات الأمنية، فإن الأجهزة تظل متصلة بالشبكة ويمكن أن تظل تشكل خطرا على المؤسسة. ستتمكن من إلغاء استثناء الجهاز في أي وقت.
 

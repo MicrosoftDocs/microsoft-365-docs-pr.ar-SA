@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 631a141ca6c898c6394bfd34839fd65d351fe8fc
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e5bf4e09224961d9a6cb0f0dc076b672fd20aabc
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665525"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368166"
 ---
 # <a name="device-inventory"></a>بيانات الجهاز
 
@@ -29,14 +29,18 @@ ms.locfileid: "64665525"
 **ينطبق على:**
 
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-تعرض **قائمة الأجهزة** قائمة بالأجهزة في شبكتك حيث تم إنشاء التنبيهات. بشكل افتراضي، تعرض قائمة الانتظار الأجهزة التي تمت مشاهدتها في آخر 30 يوما.
+يعرض **مخزون الجهاز** قائمة بالأجهزة في شبكتك حيث تم إنشاء التنبيهات. بشكل افتراضي، تعرض قائمة الانتظار الأجهزة التي تمت مشاهدتها في آخر 30 يوما.
 
 بنظرة سريعة، سترى معلومات مثل المجال ومستوى المخاطر والنظام الأساسي لنظام التشغيل وتفاصيل أخرى لتحديد الأجهزة الأكثر عرضة للخطر بسهولة.
+
+> [!NOTE]
+> يتوفر مخزون الجهاز في خدمات Microsoft 365 Defender مختلفة. ستختلف المعلومات المتوفرة لك وفقا لترخيصك. ستحصل على المجموعة الأكثر اكتمالا من القدرات عند استخدام [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
 
 هناك العديد من الخيارات التي يمكنك الاختيار من بينها لتخصيص طريقة عرض قائمة الأجهزة. في الجزء العلوي من التنقل، يمكنك:
 

@@ -17,19 +17,21 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9211597ec8a0e25130b010a6049832ac151840fc
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c9fe313994e7468004e17df05b1ec4d7c3cf7a6b
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173693"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65367926"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
+
 - [مشكلات الأداء في Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -37,10 +39,13 @@ ms.locfileid: "65173693"
 Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان نقطة نهاية المؤسسة مصمم لمساعدة شبكات المؤسسة على منع التهديدات المتقدمة واكتشافها والتحقيق فيها والاستجابة لها.
 
 > [!TIP]
-> يتوفر Microsoft Defender لنقطة النهاية في خطتين: Defender لنقطة النهاية الخطة 1 والخطة 2. تصف هذه المقالة الميزات والقدرات المضمنة في كل خطة. [تعرف على المزيد حول Microsoft Defender لنقطة النهاية الخطة 1 والخطة 2](defender-endpoint-plan-1-2.md).
-> 
+> يتوفر Microsoft Defender لنقطة النهاية في خطتين، Defender لنقطة النهاية الخطة 1 والخطة 2. تتوفر الآن وظيفة إدارة الثغرات الأمنية في Microsoft Defender إضافية جديدة للخطة 2.
+>
+> لمزيد من المعلومات حول الميزات والقدرات المضمنة في كل خطة، بما في ذلك الوظيفة الإضافية الجديدة لإدارة الثغرات الأمنية في Defender، راجع [مقارنة خطط Microsoft Defender لنقطة النهاية](defender-endpoint-plan-1-2.md).
 
 <p><p>
+
+شاهد الفيديو التالي لمعرفة المزيد حول Defender لنقطة النهاية:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
@@ -55,7 +60,7 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان
 <center><h2>Microsoft Defender لنقطة النهاية</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>إدارة الثغرات الأمنية & المخاطر</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/logo-mdvm.png" alt="Vulnerability Management"> <br><b> Core Defender Vulnerability Management</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>تقليل الأجزاء المعرضة للهجوم</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>حماية الجيل التالي</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>الكشف عن نقطة النهاية والاستجابة لها</b></a></center></td>
@@ -86,9 +91,11 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان
 
 <a name="tvm"></a>
 
-**[إدارة الثغرات الأمنية & المخاطر](next-gen-threat-and-vuln-mgt.md)**
+**[Core Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md)**
 
-تستخدم هذه الإمكانية المضمنة نهجا مستندا إلى المخاطر لتغيير اللعبة لاكتشاف الثغرات الأمنية في نقطة النهاية والتكوينات الخاطئة وتحديد أولوياتها ومعالجتها.
+تستخدم قدرات إدارة الثغرات الأمنية الأساسية المضمنة نهجا حديثا يستند إلى المخاطر لاكتشاف نقاط الضعف في نقطة النهاية والتكوينات الخاطئة وتقييمها وتحديد أولوياتها ومعالجتها. لتعزيز قدرتك على تقييم وضعك الأمني وتقليل المخاطر، تتوفر وظيفة إضافية جديدة لإدارة الثغرات الأمنية في Defender للخطة 2.
+
+لمزيد من المعلومات حول إمكانيات إدارة الثغرات الأمنية المختلفة المتوفرة لك، راجع [مقارنة عروض إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md).
 
 <a name="asr"></a>
 
@@ -143,11 +150,11 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان
 
 يتكامل Defender لنقطة النهاية مباشرة مع حلول Microsoft المختلفة، بما في ذلك:
 
-- Microsoft Defender for Cloud
+- Microsoft Defender للسحابة
 - Microsoft Sentinel
 - Intune
 - Microsoft Defender for Cloud Apps
-- Microsoft Defender for Identity
+- Microsoft Defender للهوية
 - Microsoft Defender for Office
 - Skype for Business
 
@@ -162,7 +169,7 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان
 
 |التدريب:|الكشف عن الهجمات الإلكترونية والاستجابة لها باستخدام Microsoft 365 Defender|
 |---|---|
-|![أيقونة التدريب Microsoft 365 Defender.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Defender لنقطة النهاية هو حل أمان نقطة النهاية الذي يوفر إدارة الثغرات الأمنية وحماية نقطة النهاية الكشف عن تهديدات نقاط النهاية والرد عليها والحماية من التهديدات المتنقلة والخدمات المدارة في نظام أساسي واحد وموحد.<p> 2 ساعة و25 دقيقة - مسار Learning - 9 وحدات نمطية|
+|![أيقونة التدريب Microsoft 365 Defender.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Defender لنقطة النهاية هو حل أمان نقطة النهاية الذي يوفر إدارة الثغرات الأمنية وحماية نقطة النهاية الكشف عن تهديدات نقاط النهاية والرد عليها والحماية من التهديدات المتنقلة والخدمات المدارة في نظام أساسي واحد وموحد.<p> 2 ساعة و25 دقيقة - مسار التعليم - 9 وحدات نمطية|
 
 > [!div class="nextstepaction"]
 > [بدء >](/learn/paths/defender-endpoint-fundamentals/)
