@@ -34,9 +34,9 @@ landingContent:
     links:
     - text: إدخال معلومات العمل
       url: enter-business-information.md
-    - text: تعيين سياسات الجدولة
+    - text: تعيين نهج الجدولة
       url: set-scheduling-policies.md
-    - text: تعريف عروض الخدمة
+    - text: تعريف عروض الخدمة الخاصة بك
       url: define-service-offerings.md
     - text: تعيين ساعات عمل الموظفين
       url: employee-hours.md
@@ -44,7 +44,7 @@ landingContent:
       url: customize-booking-page.md
     - text: إنشاء حجوزاتك والموظفين فيها
       url: create-a-manual-booking.md
-- title: دعوة الأشخاص لحجز المواعيد
+- title: دعوة الأشخاص إلى حجز المواعيد
   linkLists:
   - linkListType: how-to-guide
     links:
