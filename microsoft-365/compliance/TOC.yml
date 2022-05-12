@@ -214,6 +214,8 @@
       href: work-with-partner-to-archive-third-party-data.md
     - name: البحث عن بيانات جهة خارجية
       href: use-content-search-to-search-third-party-data-that-was-imported.md
+    - name: عرض سجلات المسؤول لموصلات البيانات
+      href: data-connector-admin-logs.md
 - name: إدارة مخاطر Insider
   items:
     - name: حلول مخاطر Microsoft Purview

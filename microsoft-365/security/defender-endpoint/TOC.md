@@ -101,6 +101,7 @@
 ###### [تكوين الاستثناءات والتحقق من صحتها](mac-exclusions.md)
 ###### [تعيين التفضيلات](mac-preferences.md)
 ###### [الكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها وحظرها](mac-pua.md)
+###### [حماية إعدادات الأمان لنظام تشغيل macOS باستخدام الحماية من العبث](tamperprotection-macos.md)
 ###### [عنصر تحكم الجهاز]()
 ####### [نظرة عامة حول التحكم في الجهاز](mac-device-control-overview.md)
 ####### [أمثلة JAMF](mac-device-control-jamf.md)
@@ -320,7 +321,7 @@
 #### [الكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها وحظرها](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 #### [تمكين الحماية برنامج الحماية من الفيروسات من Microsoft Defender دائما وتكوينها في نهج المجموعة](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [تكوين المعالجة برنامج الحماية من الفيروسات من Microsoft Defender الكشف](configure-remediation-microsoft-defender-antivirus.md)
-#### [للحصول على التفاصيل، اطلع على تكوين الاستثناءات والتحقق من صحتها لعمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender](schedule-antivirus-scans.md)
+#### للحصول على التفاصيل، اطلع على [تكوين الاستثناءات والتحقق من صحتها لعمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender](schedule-antivirus-scans.md).
 ##### [جدولة عمليات الفحص باستخدام نهج المجموعة](schedule-antivirus-scans-group-policy.md)
 ##### [جدولة عمليات الفحص باستخدام PowerShell](schedule-antivirus-scans-powershell.md)
 ##### [جدولة عمليات الفحص باستخدام WMI](schedule-antivirus-scans-wmi.md)

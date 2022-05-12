@@ -76,6 +76,16 @@
           href: m365bp-managed-devices-setup.md
         - name: إلحاق الأجهزة المسجلة وتطبيق النهج
           href: m365bp-onboard-devices-mdb.md
+        - name: حماية أجهزة Windows
+          items:
+            - name: إعدادات الحماية لأجهزة Windows 10
+              href: m365bp-protection-settings-for-windows-10-devices.md
+            - name: تأمين أجهزة Windows
+              href: m365bp-secure-windows-devices.md
+            - name: إدارة أجهزة Windows
+              href: m365bp-manage-windows-devices.md
+            - name: الاستعداد لنشر عميل Office
+              href: m365bp-prepare-for-office-client-deployment.md
         - name: مراجعة نهج الجهاز وتحريرها
           href: m365bp-view-edit-create-mdb-policies.md
         - name: إدارة مجموعات الأجهزة
@@ -108,6 +118,20 @@
       href: microsoft-365-business-faqs.yml
     - name: مركز مسؤولي Microsoft 365
       href: /microsoft-365/admin/
+    - name: إعداد AutoPilot
+      items:
+        - name: إضافة أجهزة AutoPilot وملف التعريف
+          href: m365bp-add-autopilot-devices-and-profile.md
+        - name: إعدادات ملف تعريف AutoPilot
+          href: m365bp-autopilot-profile-settings.md
+        - name: إنشاء ملفات تعريف AutoPilot وتحريرها
+          href: m365bp-create-and-edit-autopilot-devices.md
+    - name: إعدادات حماية التطبيقات لنظامي التشغيل Android وiOS
+      href: m365bp-app-protection-settings-for-android-and-ios.md
+    - name: ميزات حماية الخريطة لإعدادات InTune
+      href: m365bp-map-protection-features-to-intune-settings.md
+    - name: إعداد إدارة التوافق
+      href: m365bp-set-up-compliance.md
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender لـ Office 365

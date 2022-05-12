@@ -18,17 +18,17 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6822f736cae73d7d4654f8b4310e0e397cffa677
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f427bcfbc5f8b6538c72cebea4adf6edc80a42ba
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077491"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320508"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية
 
 > [!IMPORTANT]
-> قد يكون العملاء الذين قاموا بتطبيق تحديث محرك Microsoft Defender لشهر مارس 2022 (**1.1.19100.5**) قد واجهوا استخداماً كبيراً للموارد (وحدة المعالجة المركزية و / أو الذاكرة). أصدرت Microsoft تحديثاً (**1.1.19200.5**) يعمل على حل الأخطاء التي تم تقديمها في الإصدار السابق. يوصى العملاء بالتحديث إلى هذا المحرك الجديد لمحرك مكافحة الفيروسات (**1.1.19200.5**). لضمان إصلاح أي مشكلات في الأداء بشكل كامل، يوصى بإعادة تشغيل الأجهزة بعد تطبيق التحديث. راجع [إصدارات النظام الأساسي والمحرك الشهرية](#monthly-platform-and-engine-versions) (في هذه المقالة).
+> قد يكون العملاء الذين قاموا بتطبيق تحديث محرك Microsoft Defender لشهر مارس 2022 (**1.1.19100.5**) قد واجهوا استخداماً كبيراً للموارد (وحدة المعالجة المركزية و / أو الذاكرة). أصدرت Microsoft تحديثاً (**1.1.19200.5**) يعمل على حل الأخطاء التي تم تقديمها في الإصدار السابق. يوصى العملاء بالتحديث إلى هذا المحرك الجديد لمحرك مكافحة الفيروسات (**1.1.19200.5**). لضمان إصلاح أي مشكلات في الأداء بشكل كامل، يوصى بإعادة تشغيل الأجهزة بعد تطبيق التحديث. اطلع على [إصدارات النظام الأساسي والمحرك الشهرية](#monthly-platform-and-engine-versions) (في هذه المقالة).
 
 **ينطبق على:**
 - [Defender for Endpoint الخطة 1 و 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -721,6 +721,21 @@ Platform/Client: **4.18.2001.10**<br/>
 لمزيد من المعلومات، راجع [تحديث Microsoft Defender لصور تثبيت نظام التشغيل Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220506.6</summary>
+
+&ensp;نسخة الحزمة: **20220506.6**<br/>
+&ensp;إصدار النظام الأساسي: **4.18.2203.5**<br/>
+&ensp;إصدار المحرك: **1.1.19200.5**<br/>
+&ensp;إصدار التوقيع: **1.363.1436.0**<br/>
+
+### <a name="fixes"></a>الإصلاحات
+- None
+
+### <a name="additional-information"></a>معلومات إضافية
+- None
+
+<br/>
+</details><details>
 <summary>20220321.1</summary>
 
 &ensp;نسخة الحزمة: **20220321.1**<br/>
