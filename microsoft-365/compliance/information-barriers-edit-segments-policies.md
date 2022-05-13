@@ -1,6 +1,7 @@
 ---
-title: إدارة سياسات حواجز المعلومات
-description: تعرف على كيفية تحرير أو إزالة السياسات والشرائح لعوائق المعلومات.
+title: إدارة نهج حواجز المعلومات
+description: تعرف على كيفية تحرير النهج أو إزالتها لحواجز المعلومات.
+keywords: حواجز Microsoft 365، Microsoft Purview، التوافق، المعلومات
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -12,258 +13,260 @@ ms.collection:
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: fc8cc7e4fcbfb9fe9c2ee0f1c531511d9c2fa0b6
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: a4962ba35ef2a66067acdf2676dbe34e63de99c5
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634350"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396214"
 ---
-# <a name="manage-information-barriers-policies"></a>إدارة سياسات حواجز المعلومات
+# <a name="manage-information-barriers-policies"></a>إدارة نهج حواجز المعلومات
 
-بعد تحديد [سياسات](information-barriers-policies.md) عوائق المعلومات، قد تحتاج إلى إجراء تغييرات على السياسات أو شرائح المستخدمين كجزء من استكشاف الأخطاء وإصلاحها أو الصيانة العادية.[](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+بعد [تحديد نهج حواجز المعلومات (IB)،](information-barriers-policies.md) قد تحتاج إلى إجراء تغييرات على هذه النهج أو على مقاطع المستخدمين، كجزء من [استكشاف الأخطاء وإصلاحها](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) أو كصيانة منتظمة.
 
 ## <a name="what-do-you-want-to-do"></a>ماذا تريد أن تفعل؟
 
-|**الإجراء**|**الوصف**|
+|**العمل**|**الوصف**|
 |:---------|:--------------|
-| [تحرير سمات حساب المستخدم](#edit-user-account-attributes) | قم بتعبئة السمات في Azure Active Directory التي يمكن استخدامها لتعريف الشرائح. <br> يمكنك تحرير سمات حساب المستخدم عندما لا يتم تضمين المستخدمين في الشرائح التي يجب أن يكونوا عليها، أو لتغيير الشرائح التي يوجد فيها المستخدمون، أو لتعريف الشرائح التي تستخدم سمات مختلفة. |
-| [تحرير مقطع](#edit-a-segment) | قم بتحرير الشرائح عندما تريد تغيير كيفية تعريف مقطع. <br> على سبيل المثال، قد يكون لديك شرائح معرفة في الأصل تستخدم *القسم* وتريد الآن استخدام سمة أخرى، مثل *MemberOf*. |
-| [تحرير نهج](#edit-a-policy) | قم بتحرير نهج عوائق المعلومات عندما تريد تغيير طريقة عمل النهج.<br> على سبيل المثال، بدلا من حظر الاتصالات بين مقطعين، قد تقرر أنك تريد السماح بحدث الاتصالات بين شرائح معينة فقط. |
-| [تعيين نهج إلى حالة غير نشطة](#set-a-policy-to-inactive-status) |قم بتعيين نهج إلى حالة غير نشطة عندما تريد إجراء تغييرات على نهج، أو عندما لا تريد أن يكون النهج في وضع التنفيذ. |
-| [إزالة نهج](#remove-a-policy) | قم بإزالة نهج حواجز المعلومات عندما لا تحتاج إلى نهج معين في مكانه. |
-| [إزالة مقطع](#remove-a-segment) | قم بإزالة مقطع حواجز المعلومات عندما لا تحتاج إلى مقطع معين. |
-| [إزالة نهج وشرائح](#remove-a-policy-and-segment) | قم بإزالة نهج حاجز المعلومات ومشرق في الوقت نفسه. |
-| [إيقاف تطبيق نهج](#stop-a-policy-application) | اتخاذ هذا الإجراء عندما تريد إيقاف عملية تطبيق سياسات حواجز المعلومات. <br> إن إيقاف تطبيق نهج ليس فوريا، ولا يؤدي إلى التراجع عن النهج المطبقة بالفعل على المستخدمين. |
-| [تعريف سياسات لعوائق المعلومات](information-barriers-policies.md) | حدد نهج حواجز المعلومات عندما لا تكون لديك مثل هذه النهج في مكانها، ويجب تقييد الاتصالات أو تقييدها بين مجموعات معينة من المستخدمين. |
-| [استكشاف مشاكل المعلومات وإصلاحها](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | راجع هذه المقالة عندما تخوض مشاكل غير متوقعة تتعلق بعوائق المعلومات. |
+| [تحرير سمات حساب المستخدم](#edit-user-account-attributes) | تعبئة السمات في Azure Active Directory التي يمكن استخدامها لتعريف المقاطع. <br> تحرير سمات حساب المستخدم عندما لا يتم تضمين المستخدمين في المقاطع التي يجب أن تكون، أو لتغيير المقاطع التي يوجد فيها المستخدمون، أو لتعريف المقاطع باستخدام سمات مختلفة. |
+| [تحرير مقطع](#edit-a-segment) | تحرير المقاطع عندما تريد تغيير كيفية تعريف مقطع. <br> على سبيل المثال، قد تكون قد قمت بتعريف مقاطع في الأصل باستخدام *القسم* وتريد الآن استخدام سمة أخرى، مثل *MemberOf*. |
+| [تحرير نهج](#edit-a-policy) | تحرير نهج حواجز المعلومات عندما تريد تغيير كيفية عمل النهج.<br> على سبيل المثال، بدلا من حظر الاتصالات بين مقطعين، قد تقرر أنك تريد السماح بحدوث الاتصالات بين مقاطع معينة فقط. |
+| [تعيين نهج إلى الحالة غير النشطة](#set-a-policy-to-inactive-status) |قم بتعيين نهج إلى الحالة غير النشطة عندما تريد إجراء تغييرات على نهج، أو عندما لا تريد أن يكون النهج ساري المفعول. |
+| [إزالة نهج](#remove-a-policy) | قم بإزالة نهج حواجز المعلومات عندما لم تعد بحاجة إلى نهج معين. |
+| [إزالة مقطع](#remove-a-segment) | قم بإزالة مقطع حواجز المعلومات عندما لم تعد بحاجة إلى مقطع معين. |
+| [إزالة نهج ومقطع](#remove-a-policy-and-segment) | إزالة نهج حواجز المعلومات ومقطع في نفس الوقت. |
+| [إيقاف تطبيق نهج](#stop-a-policy-application) | اتخذ هذا الإجراء عندما تريد إيقاف عملية تطبيق نهج حواجز المعلومات. <br> إيقاف تطبيق نهج ليس فوريا، ولا يتراجع عن النهج التي تم تطبيقها بالفعل على المستخدمين. |
+| [تحديد نهج لحواجز المعلومات](information-barriers-policies.md) | حدد نهج حواجز المعلومات عندما لا يكون لديك مثل هذه النهج بالفعل، ويجب عليك تقييد الاتصالات بين مجموعات معينة من المستخدمين أو تقييدها. |
+| [استكشاف أخطاء حواجز المعلومات وإصلاحها](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | راجع هذه المقالة عندما تواجه مشاكل غير متوقعة مع حواجز المعلومات. |
 
 >[!IMPORTANT]
->لتنفيذ المهام الموضحة في هذه المقالة، يجب أن يتم تعيين دور مناسب لك، مثل أحد الإجراءات التالية:<br>- Microsoft 365 Enterprise عام<br>- المسؤول العام<br>- مسؤول التوافق<br>- إدارة توافق IB (هذا دور جديد!)<br><br>لمعرفة المزيد حول المتطلبات الأساسية لعوائق المعلومات، راجع المتطلبات الأساسية [(لنهج عوائق المعلومات)](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met).<br><br> تأكد من [الاتصال بمركز التوافق & PowerShell](/powershell/exchange/connect-to-scc-powershell).
+>لتنفيذ المهام الموضحة في هذه المقالة، يجب تعيين دور مناسب لك، مثل أحد الإجراءات التالية:<br>- Microsoft 365 Enterprise المسؤول العام<br>- المسؤول العام<br>- مسؤول التوافق<br>- إدارة الامتثال ل IB (هذا دور جديد!)<br><br>لمعرفة المزيد حول المتطلبات الأساسية لحواجز المعلومات، راجع [المتطلبات الأساسية (لنهج حواجز المعلومات).](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)<br><br> تأكد من [الاتصال ب Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="edit-user-account-attributes"></a>تحرير سمات حساب المستخدم
 
-استخدم هذا الإجراء لتحرير السمات المستخدمة لتقزز المستخدمين. على سبيل المثال، إذا كنت تستخدم سمة "القسم"، وكان حساب مستخدم واحد أو أكثر لا يتضمن حاليا أي قيم مدرجة في القسم، فيجب تحرير حسابات المستخدمين هذه لتضمين معلومات القسم. يتم استخدام سمات حساب المستخدم لتعريف الشرائح بحيث يمكن تعيين سياسات عوائق المعلومات.
+استخدم هذا الإجراء لتحرير السمات المستخدمة لتقسيم المستخدمين. على سبيل المثال، إذا كنت تستخدم سمة "القسم"، ولم يكن لدى حساب مستخدم واحد أو أكثر حاليا أي قيم مدرجة للقسم، فيجب تحرير حسابات المستخدمين هذه لتضمين معلومات القسم. يتم استخدام سمات حساب المستخدم لتعريف المقاطع بحيث يمكن تعيين نهج حواجز المعلومات.
 
-1. لعرض تفاصيل حساب مستخدم معين، مثل قيم السمات والمشريط (الأجزاء المعينة)، استخدم **الأمر Cmdlet Get-InformationBarrierRecipientStatus** مع معلمات الهوية.
+1. لعرض تفاصيل حساب مستخدم معين، مثل قيم السمات والمقاطع المعينة، استخدم **Get-InformationBarrierRecipientStatus** cmdlet مع معلمات الهوية.
 
-    |**بناء الجملة**|**مثال**|
+    |**بناء الجمله**|**المثال**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <br> يمكنك استخدام أي قيمة تعرف كل مستخدم بشكل فريد، مثل الاسم أو الاسم المستعار أو الاسم المميز أو اسم المجال الماجد أو عنوان البريد الإلكتروني أو GUID. <br> (يمكنك أيضا استخدام الأمر cmdlet هذا لمستخدم واحد: `Get-InformationBarrierRecipientStatus -Identity <value>`) |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <br> في هذا المثال، نشير إلى حسابي مستخدم في Office 365: *ميغان* و *alexw* ل *Alex*. |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <br> يمكنك استخدام أي قيمة تعرف كل مستخدم بشكل فريد، مثل الاسم أو الاسم المستعار أو الاسم المميز أو اسم المجال المتعارف عليه أو عنوان البريد الإلكتروني أو GUID. <br> (يمكنك أيضا استخدام أمر cmdlet هذا لمستخدم واحد: `Get-InformationBarrierRecipientStatus -Identity <value>`) |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <br> في هذا المثال، نشير إلى حسابين للمستخدمين في Office 365: *meganb* for *Megan*، و *alexw* for *Alex*. |
 
-2. حدد السمة التي تريد تحريرها لملف تعريف (ملفات) حساب المستخدم. لمزيد من المعلومات، راجع [السمات لنهج عوائق المعلومات](information-barriers-attributes.md).
+2. حدد السمة التي تريد تحريرها لملفات تعريف (ملفات) حساب المستخدم. لمزيد من المعلومات، راجع [سمات نهج حواجز المعلومات](information-barriers-attributes.md).
 
-3. قم بتحرير حساب مستخدم واحد أو أكثر لتضمين قيم السمة التي حددتها في الخطوة السابقة. لاتخاذ هذا الإجراء، استخدم أحد الإجراءات التالية:
+3. تحرير حساب مستخدم واحد أو أكثر لتضمين قيم للسمة التي حددتها في الخطوة السابقة. لاتخاذ هذا الإجراء، استخدم أحد الإجراءات التالية:
 
-    - لتحرير حساب واحد، راجع إضافة معلومات ملف تعريف مستخدم أو تحديثها [باستخدام Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+    - لتحرير حساب واحد، راجع [إضافة معلومات ملف تعريف المستخدم أو تحديثها باستخدام Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-    - لتحرير حسابات متعددة (أو استخدام PowerShell لتحرير حساب واحد)، راجع تكوين خصائص حساب المستخدم باستخدام Office 365 [PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
+    - لتحرير حسابات متعددة (أو استخدام PowerShell لتحرير حساب واحد)، راجع [تكوين خصائص حساب المستخدم باستخدام Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
 
 ## <a name="edit-a-segment"></a>تحرير مقطع
 
-استخدم هذا الإجراء لتحرير تعريف مقطع مستخدم. على سبيل المثال، يمكنك تغيير اسم المقطع أو عامل التصفية المستخدم لتحديد الأشخاص المضمنين في المقطع.
+استخدم هذا الإجراء لتحرير تعريف مقطع مستخدم. على سبيل المثال، قد تقوم بتغيير اسم مقطع أو عامل التصفية المستخدم لتحديد الأشخاص المضمنين في المقطع.
 
-1. لعرض كل الشرائح الموجودة، استخدم **الأمر Cmdlet Get-OrganizationSegment** .
+1. لعرض كافة المقاطع الموجودة، استخدم **الأمر Get-OrganizationSegment** cmdlet.
 
-    بناء الجملة: `Get-OrganizationSegment`
+    بناء الجمله: `Get-OrganizationSegment`
 
-    سترى قائمة بالشرائح والتفاصيل الخاصة بكل مقطع، مثل نوع المقطع وقيمته UserGroupFilter ومن قام بإنشاءه أو تعديله الأخير و GUID وما إلى ذلك.
+    سترى قائمة بالشرائح والتفاصيل لكل مقطع، مثل نوع المقطع وقيمة UserGroupFilter الخاصة به، ومن قام بإنشائه أو آخر تعديل له، و GUID، وما إلى ذلك.
 
     > [!TIP]
-    > يمكنك طباعة قائمة الشرائح أو حفظها كمرجع في وقت لاحق. على سبيل المثال، إذا كنت تريد تحرير مقطع، ستحتاج إلى معرفة اسمه أو قيمة التعريف الخاصة به (يتم استخدام هذا مع معلمة الهوية).
+    > اطبع قائمة المقاطع أو احفظها للرجوع إليها لاحقا. على سبيل المثال، إذا كنت تريد تحرير مقطع، فستحتاج إلى معرفة اسمه أو تعريف قيمته (يتم استخدامه مع معلمة الهوية).
 
-2. لتحرير مقطع، استخدم **الأمر cmdlet Set-OrganizationSegment** مع **معلمة الهوية** والتفاصيل ذات الصلة.
+2. لتحرير مقطع، استخدم **Set-OrganizationSegment** cmdlet مع معلمة **الهوية** والتفاصيل ذات الصلة.
 
-    |**بناء الجملة**|**مثال**|
+    |**بناء الجمله**|**المثال**|
     |:---------|:----------|
-    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <br> في هذا المثال، قمنا بتحديث اسم القسم إلى *HRDept* للمشرق باستخدام GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*. |
+    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <br> في هذا المثال، قمنا بتحديث اسم القسم إلى *HRDept* للمقطع باستخدام GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*. |
 
-3. عند الانتهاء من تحرير مقاطع لمنظمتك، يمكنك تحديد سياسات عوائق المعلومات أو تحريرها.[](#edit-a-policy) [](information-barriers-policies.md#step-3-define-information-barrier-policies)
+3. عند الانتهاء من تحرير مقاطع لمؤسستك، يمكنك [إما تعريف](information-barriers-policies.md#step-3-create-ib-policies) نهج حواجز المعلومات أو [تحريرها](#edit-a-policy) .
 
 ## <a name="edit-a-policy"></a>تحرير نهج
 
-1. لعرض قائمة ونهج عوائق المعلومات الحالية، استخدم **الأمر cmdlet Get-InformationBarrierPolicy** .
+1. لعرض قائمة بنهج حواجز المعلومات الحالية، استخدم **Get-InformationBarrierPolicy** cmdlet.
 
-    بناء الجملة: `Get-InformationBarrierPolicy`
+    بناء الجمله: `Get-InformationBarrierPolicy`
 
-    في قائمة النتائج، حدد النهج الذي تريد تغييره. لاحظ GUID واسم النهج.
+    في قائمة النتائج، حدد النهج الذي تريد تغييره. لاحظ GUID الخاص بالنهج واسمه.
 
-2. استخدم **الأمر cmdlet Set-InformationBarrierPolicy** مع معلمة **الهوية** ، وحدد التغييرات التي تريد إدخالها.
+2. استخدم **Set-InformationBarrierPolicy** cmdlet مع معلمة **Identity** ، وحدد التغييرات التي تريد إجراؤها.
 
-    مثال: لنفترض أنه تم تعريف نهج لمنع مقطع *الأبحاث* من التواصل مع قسمي المبيعات  *والتسويق*. تم تعريف النهج باستخدام الأمر cmdlet هذا: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
+    مثال: افترض أنه تم تعريف نهج لمنع مقطع *الأبحاث* من الاتصال *بقسمي المبيعات* *والتسويق* . تم تعريف النهج باستخدام أمر cmdlet هذا: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
 
-    لنفترض أننا نريد تغييره بحيث يمكن للأشخاص في مقطع  الأبحاث التواصل مع الأشخاص في قسم *الموارد* البشرية فقط. لتغيير هذا التغيير، نستخدم الأمر cmdlet هذا: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
+    لنفترض أننا نريد تغييره حتى يتمكن الأشخاص في قسم *"الأبحاث"* من التواصل مع الأشخاص في قسم *الموارد البشرية* فقط. لإجراء هذا التغيير، نستخدم أمر cmdlet هذا: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
-    في هذا المثال، قمنا بتغيير *"الأجزاءBlocked"* إلى *"شرائح"،* وحددنا مقطع *الموارد* البشرية.
+    في هذا المثال، قمنا بتغيير *SegmentsBlocked* إلى *SegmentsAllowed* وحددنا مقطع *الموارد البشرية* .
 
-3. عند الانتهاء من تحرير نهج، تأكد من تطبيق التغييرات. (راجع [تطبيق سياسات حواجز المعلومات](information-barriers-policies.md#step-4-apply-information-barrier-policies).)
+3. عند الانتهاء من تحرير نهج، تأكد من تطبيق التغييرات. (راجع [تطبيق نهج حواجز المعلومات](information-barriers-policies.md#step-4-apply-ib-policies).)
 
-## <a name="set-a-policy-to-inactive-status"></a>تعيين نهج إلى حالة غير نشطة
+## <a name="set-a-policy-to-inactive-status"></a>تعيين نهج إلى الحالة غير النشطة
 
-1. لعرض قائمة ونهج عوائق المعلومات الحالية، استخدم **الأمر cmdlet Get-InformationBarrierPolicy** .
+1. لعرض قائمة بنهج حواجز المعلومات الحالية، استخدم **Get-InformationBarrierPolicy** cmdlet.
 
-    بناء الجملة: `Get-InformationBarrierPolicy`
+    بناء الجمله: `Get-InformationBarrierPolicy`
 
-    في قائمة النتائج، حدد النهج الذي تريد تغييره (أو إزالته). لاحظ GUID واسم النهج.
+    في قائمة النتائج، حدد النهج الذي تريد تغييره (أو إزالته). لاحظ GUID الخاص بالنهج واسمه.
 
-2. لتعيين حالة النهج إلى غير نشطة، استخدم الأمر **cmdlet Set-InformationBarrierPolicy** مع معلمة الهوية ومعاينة الحالة إلى *غير نشط*. 
+2. لتعيين حالة النهج إلى غير نشط، استخدم **Set-InformationBarrierPolicy** cmdlet مع معلمة *Identity* وتعيين معلمة *الحالة* إلى *"غير نشط*".
 
-    |**بناء الجملة**|**مثال**|
+    |**بناء الجمله**|**المثال**|
     |:---------|:----------|
-    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <br> في هذا المثال، يتم تعيين نهج حواجز المعلومات الذي لديه GUID *43c37853-ea10-4b90-a23d-ab8c9377247* إلى حالة غير نشطة. |
+    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <br> في هذا المثال، يتم تعيين نهج حواجز المعلومات الذي يحتوي على GUID *43c37853-ea10-4b90-a23d-ab8c9377247* إلى حالة غير نشطة. |
 
-3. لتطبيق التغييرات، استخدم **الأمر cmdlet Start-InformationBarrierPoliciesApplication** .
+3. لتطبيق التغييرات، استخدم **Start-InformationBarrierPoliciesApplication** cmdlet.
 
-    بناء الجملة: `Start-InformationBarrierPoliciesApplication`
+    بناء الجمله: `Start-InformationBarrierPoliciesApplication`
 
-    يتم تطبيق التغييرات على مؤسستك من قبل المستخدم. إذا كانت مؤسستك كبيرة الحجم، فقد يستغرق إكمال هذه العملية 24 ساعة (أو أكثر). كمرشاد عام، تستغرق معالجة 5000 حساب مستخدم ساعة تقريبا.
+    يتم تطبيق التغييرات على المستخدم حسب المستخدم لمؤسستك. إذا كانت مؤسستك كبيرة، فقد يستغرق إكمال هذه العملية 24 ساعة (أو أكثر). وكإرشادات عامة، يستغرق معالجة 5000 حساب مستخدم حوالي ساعة.
 
-4. في هذه المرحلة، يتم تعيين واحد أو أكثر من سياسات عوائق المعلومات إلى حالة غير نشطة. من هنا، يمكنك القيام بأي من الإجراءات التالية:
+4. في هذه المرحلة، يتم تعيين نهج واحد أو أكثر من نهج حواجز المعلومات إلى حالة غير نشطة. من هنا، يمكنك القيام بأي من الإجراءات التالية:
 
-    - الاحتفاظ به كما هو (نهج تم تعيينه إلى حالة غير نشطة لا يكون له أي تأثير على المستخدمين)
+    - احتفظ به كما هو (لا يؤثر نهج معين على الحالة غير النشطة على المستخدمين)
     - [تحرير نهج](#edit-a-policy) 
     - [إزالة نهج](#remove-a-policy)
 
 ## <a name="remove-a-policy"></a>إزالة نهج
 
-1. لعرض قائمة ونهج عوائق المعلومات الحالية، استخدم **الأمر cmdlet Get-InformationBarrierPolicy** .
+1. لعرض قائمة بنهج حواجز المعلومات الحالية، استخدم **Get-InformationBarrierPolicy** cmdlet.
 
-    بناء الجملة: `Get-InformationBarrierPolicy`
+    بناء الجمله: `Get-InformationBarrierPolicy`
 
-    في قائمة النتائج، حدد النهج الذي تريد إزالته. لاحظ GUID واسم النهج. 
+    في قائمة النتائج، حدد النهج الذي تريد إزالته. لاحظ GUID الخاص بالنهج واسمه. 
 
-2. تأكد من تعيين النهج إلى حالة غير نشطة. لتعيين حالة النهج إلى غير نشطة، استخدم الأمر cmdlet Set-InformationBarrierPolicy مع معلمة الهوية ومعاينة الحالة إلى غير نشط.
+2. تأكد من تعيين النهج إلى حالة غير نشطة. لتعيين حالة النهج إلى غير نشط، استخدم الأمر cmdlet Set-InformationBarrierPolicy مع معلمة الهوية وتعيين معلمة الحالة إلى "غير نشط".
 
-    |**بناء الجملة**|**مثال**|
+    |**بناء الجمله**|**المثال**|
     |:---------|:----------|
-    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive`  | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <br> في هذا المثال، نقوم بتعيين نهج حواجز المعلومات الذي لديه GUID *43c37853-ea10-4b90-a23d-ab8c9377247* إلى حالة غير نشطة. |
+    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive`  | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <br> في هذا المثال، قمنا بتعيين نهج حواجز المعلومات الذي يحتوي على GUID *43c37853-ea10-4b90-a23d-ab8c9377247* إلى حالة غير نشطة. |
 
-3. لتطبيق تغييراتك على النهج، استخدم **الأمر cmdlet Start-InformationBarrierPoliciesApplication** .
+3. لتطبيق التغييرات على النهج، استخدم **Start-InformationBarrierPoliciesApplication** cmdlet.
 
-    بناء الجملة: `Start-InformationBarrierPoliciesApplication`
+    بناء الجمله: `Start-InformationBarrierPoliciesApplication`
 
-    يتم تطبيق التغييرات على مؤسستك من قبل المستخدم. إذا كانت مؤسستك كبيرة الحجم، فقد يستغرق إكمال هذه العملية 24 ساعة (أو أكثر). كمرشاد عام، تستغرق معالجة 5000 حساب مستخدم ساعة تقريبا.
+    يتم تطبيق التغييرات على المستخدم حسب المستخدم لمؤسستك. إذا كانت مؤسستك كبيرة، فقد يستغرق إكمال هذه العملية 24 ساعة (أو أكثر). وكإرشادات عامة، يستغرق معالجة 5000 حساب مستخدم حوالي ساعة.
 
-4. استخدم **الأمر cmdlet Remove-InformationBarrierPolicy** مع معلمة الهوية.
+4. استخدم **cmdlet Remove-InformationBarrierPolicy** مع معلمة Identity.
 
-    |**بناء الجملة**|**مثال**|
+    |**بناء الجمله**|**المثال**|
     |:---------|:----------|
-    | `Remove-InformationBarrierPolicy -Identity GUID` | `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471` <br> في هذا المثال، نقوم بإزالة النهج الذي به GUID *43c37853-ea10-4b90-a23d-ab8c93772471*. |
+    | `Remove-InformationBarrierPolicy -Identity GUID` | `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471` <br> في هذا المثال، نقوم بإزالة النهج الذي يحتوي على GUID *43c37853-ea10-4b90-a23d-ab8c93772471*. |
 
-    عند مطالبتك بذلك، تأكد من التغيير.
+    عند المطالبة، قم بتأكيد التغيير.
 
 ## <a name="remove-a-segment"></a>إزالة مقطع
 
-1. لعرض كل الشرائح الموجودة، استخدم **الأمر Cmdlet Get-OrganizationSegment** .
+1. لعرض كافة المقاطع الموجودة، استخدم **الأمر Get-OrganizationSegment** cmdlet.
 
-    بناء الجملة: `Get-OrganizationSegment`
+    بناء الجمله: `Get-OrganizationSegment`
 
-    سترى قائمة بالشرائح والتفاصيل الخاصة بكل مقطع، مثل نوع المقطع وقيمته UserGroupFilter ومن قام بإنشاءه أو تعديله الأخير و GUID وما إلى ذلك.
-
-    >[!TIP]
-    >يمكنك طباعة قائمة الشرائح أو حفظها كمرجع في وقت لاحق. على سبيل المثال، إذا كنت تريد تحرير مقطع، ستحتاج إلى معرفة اسمه أو قيمة التعريف الخاصة به (يتم استخدام هذا مع معلمة الهوية).
-
-2. حدد المقطع الذي تريد إزالته وتأكد من إزالة نهج IB المقترن بالمشرق. راجع الإجراء [إزالة نهج](#remove-a-policy) للحصول على التفاصيل.
-
-3. قم بتحرير المقطع الذي سيتم إزالته لإزالة علاقة المستخدمين بهذا المقطع. يقوم هذا الإجراء بتحديث تعريف المقطع وإزالة جميع المستخدمين من المقطع. سوف تستخدم المعلمة UserGroupFilter لإزالة المستخدمين من المقطع قبل الإزالة.
-
-    لتحرير مقطع، استخدم **الأمر cmdlet Set-OrganizationSegment** مع *معلمة الهوية* والتفاصيل ذات الصلة.
-
-    |**بناء الجملة**|**مثال**|
-    |:---------|:----------|
-    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` | `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'FakeDept'"` <br> في هذا المثال، بالنسبة إلى المقطع الذي به GUID c96e0837-c232-4a8a-841e-ef45787d8fcd، قمنا بتعريف اسم القسم على أنه *"زائفDept* " لإزالة المستخدمين من المقطع. يستخدم هذا المثال *السمة "القسم* "، ولكن يمكنك استخدام سمات أخرى حسب الاقتضاء. يستخدم المثال *FakeDept* لأن هذا غير موجود ومن المؤكد أنه لا يحتوي على أي مستخدمين. |
-
-4. لتطبيق التغييرات، استخدم **الأمر cmdlet Start-InformationBarrierPoliciesApplication** .
-
-    بناء الجملة: `Start-InformationBarrierPoliciesApplication -CleanupGroupSegmentLink`
-
-    >[!NOTE]
-    >*تزيل السمة CleanupGroupSegmentLink* اقترانات المجموعات مع المقطع بدون اقترانات المستخدمين.
-
-    يتم تطبيق التغييرات على مؤسستك من قبل المستخدم. إذا كانت مؤسستك كبيرة الحجم، فقد يستغرق إكمال هذه العملية 24 ساعة (أو أكثر). كمرشاد عام، تستغرق معالجة 5000 حساب مستخدم ساعة تقريبا.
-
-5. لإزالة مقطع، استخدم **الأمر cmdlet Remove-OrganizationSegment** مع *معلمة الهوية* والتفاصيل ذات الصلة.
-
-    |**بناء الجملة**|**مثال**|
-    |:---------|:----------|
-    | `Remove-OrganizationSegment -Identity GUID` | `Remove-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <br> في هذا المثال، تمت إزالة المقطع الذي به GUID c96e0837-c232-4a8a-841e-ef45787d8fcd. |
-
-## <a name="remove-a-policy-and-segment"></a>إزالة نهج ومشرق
-
-1. لعرض قائمة ونهج عوائق المعلومات الحالية، استخدم **الأمر cmdlet Get-InformationBarrierPolicy** .
-
-    بناء الجملة: `Get-InformationBarrierPolicy`
-
-    في قائمة النتائج، حدد النهج الذي تريد إزالته. لاحظ GUID واسم النهج.
-
-2. لعرض كل الشرائح الموجودة، استخدم **الأمر Cmdlet Get-OrganizationSegment** .
-
-    بناء الجملة: `Get-OrganizationSegment`
-
-    سترى قائمة بالشرائح والتفاصيل الخاصة بكل مقطع، مثل نوع المقطع وقيمة معلمة *UserGroupFilter* الخاصة به، ومن قام بإنشاءه أو تعديله آخر مرة، و GUID، وما إلى ذلك.
+    سترى قائمة بالشرائح والتفاصيل لكل مقطع، مثل نوع المقطع وقيمة UserGroupFilter الخاصة به، ومن قام بإنشائه أو آخر تعديل له، و GUID، وما إلى ذلك.
 
     >[!TIP]
-    >يمكنك طباعة قائمة الشرائح أو حفظها كمرجع في وقت لاحق. على سبيل المثال، إذا كنت تريد تحرير مقطع، ستحتاج إلى معرفة اسمه أو قيمة التعريف الخاصة به (يتم استخدام هذا مع معلمة الهوية).
+    >اطبع قائمة المقاطع أو احفظها للرجوع إليها لاحقا. على سبيل المثال، إذا كنت تريد تحرير مقطع، فستحتاج إلى معرفة اسمه أو تعريف قيمته (يتم استخدامه مع معلمة الهوية).
 
-3. لتعيين حالة النهج الذي تريد إزالته إلى غير نشط، استخدم الأمر **Cmdlet Set-InformationBarrierPolicy** مع معلمة الهوية ومعاينة  الحالة إلى *غير نشط*.
+2. حدد المقطع المطلوب إزالته وتأكد من إزالة نهج IB المقترن بالمقطع. راجع إجراء [إزالة نهج](#remove-a-policy) للحصول على التفاصيل.
 
-    |**بناء الجملة**|**مثال**|
+3. تحرير المقطع الذي ستتم إزالته لإزالة علاقة المستخدمين بهذا المقطع. يقوم هذا الإجراء بتحديث تعريف المقطع وإزالة كافة المستخدمين من المقطع. ستستخدم معلمة UserGroupFilter لإلغاء اقتران المستخدمين عن المقطع قبل الإزالة.
+
+    لتحرير مقطع، استخدم **Set-OrganizationSegment** cmdlet مع معلمة *الهوية* والتفاصيل ذات الصلة.
+
+    |**بناء الجمله**|**المثال**|
     |:---------|:----------|
-    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Inactive` <br> في هذا المثال، نقوم بتعيين نهج عوائق المعلومات الذي لديه GUID 43c37853-ea10-4b90-a23d-ab8c93772471 إلى حالة غير نشطة. |
+    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` | `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'FakeDept'"` <br> في هذا المثال، بالنسبة إلى المقطع الذي يحتوي على GUID c96e0837-c232-4a8a-841e-ef45787d8fcd، قمنا بتعريف اسم القسم على أنه *FakeDept* لإزالة المستخدمين من المقطع. يستخدم هذا المثال سمة *القسم* ، ولكن يمكنك استخدام سمات أخرى حسب الاقتضاء. يستخدم المثال *FakeDept* لأن هذا غير موجود ومن المؤكد أنه لا يحتوي على أي مستخدمين. |
 
-4. قم بتحرير المقطع الذي سيتم إزالته لإزالة علاقة المستخدمين بهذا المقطع. يقوم هذا الإجراء بتحديث تعريف المقطع وإزالة جميع المستخدمين من المقطع. سوف تستخدم المعلمة *UserGroupFilter* لإزالة المستخدمين من المقطع قبل الإزالة.
+4. لتطبيق التغييرات، استخدم **Start-InformationBarrierPoliciesApplication** cmdlet.
 
-    لتحرير مقطع، استخدم **الأمر cmdlet Set-OrganizationSegment** مع *معلمة الهوية* والتفاصيل ذات الصلة.
-
-    |**بناء الجملة**|**مثال**|
-    |:---------|:----------|
-    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` | `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'FakeDept'"` <br> في هذا المثال، بالنسبة إلى المقطع الذي به GUID c96e0837-c232-4a8a-841e-ef45787d8fcd، قمنا بتحديث اسم القسم إلى *FakeDept* لإزالة المستخدمين من المقطع. يستخدم هذا المثال *السمة "القسم* "، ولكن يمكنك استخدام سمات أخرى حسب الاقتضاء. يستخدم المثال *FakeDept* لأن هذا غير موجود ومن المؤكد أنه لا يحتوي على مستخدمين. |
-
-5. لتطبيق التغييرات، استخدم **الأمر cmdlet Start-InformationBarrierPoliciesApplication** .
-
-    بناء الجملة: `Start-InformationBarrierPoliciesApplication -CleanupGroupSegmentLink`
+    بناء الجمله: `Start-InformationBarrierPoliciesApplication -CleanupGroupSegmentLink`
 
     >[!NOTE]
-    >*تزيل السمة CleanupGroupSegmentLink* اقترانات المجموعات مع المقطع بدون اقترانات المستخدمين.
+    >تزيل السمة *CleanupGroupSegmentLink* اقتباطات المجموعة مع المقطع الذي لا يحتوي على اقتباطات مستخدمين.
 
-    يتم تطبيق التغييرات على مؤسستك من قبل المستخدم. إذا كانت مؤسستك كبيرة الحجم، فقد يستغرق إكمال هذه العملية 24 ساعة (أو أكثر). كمرشاد عام، تستغرق معالجة 5000 حساب مستخدم ساعة تقريبا.
+    يتم تطبيق التغييرات على المستخدم حسب المستخدم لمؤسستك. إذا كانت مؤسستك كبيرة، فقد يستغرق إكمال هذه العملية 24 ساعة (أو أكثر). وكإرشادات عامة، يستغرق معالجة 5000 حساب مستخدم حوالي ساعة.
 
-6. استخدم **الأمر cmdlet Remove-InformationBarrierPolicy** مع *معلمة الهوية* .
+5. لإزالة مقطع، استخدم **cmdlet Remove-OrganizationSegment** مع معلمة *الهوية* والتفاصيل ذات الصلة.
 
-    |**بناء الجملة**|**مثال**|
+    |**بناء الجمله**|**المثال**|
     |:---------|:----------|
-    | `Remove-InformationBarrierPolicy -Identity GUID` | `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471` <br> في هذا المثال، تتم إزالة النهج الذي به GUID *43c37853-ea10-4b90-a23d-ab8c93772471* . |
+    | `Remove-OrganizationSegment -Identity GUID` | `Remove-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <br> في هذا المثال، تمت إزالة المقطع الذي يحتوي على GUID c96e0837-c232-4a8a-841e-ef45787d8fcd. |
 
-    عند مطالبتك بذلك، تأكد من التغيير.
+## <a name="remove-a-policy-and-segment"></a>إزالة نهج ومقطع
 
-7. لإزالة مقطع، استخدم **الأمر cmdlet Remove-OrganizationSegment** مع *معلمة الهوية* والتفاصيل ذات الصلة.
+1. لعرض قائمة بنهج حواجز المعلومات الحالية، استخدم **Get-InformationBarrierPolicy** cmdlet.
 
-    |**بناء الجملة**|**مثال**|
+    بناء الجمله: `Get-InformationBarrierPolicy`
+
+    في قائمة النتائج، حدد النهج الذي تريد إزالته. لاحظ GUID الخاص بالنهج واسمه.
+
+2. لعرض كافة المقاطع الموجودة، استخدم **الأمر Get-OrganizationSegment** cmdlet.
+
+    بناء الجمله: `Get-OrganizationSegment`
+
+    سترى قائمة بالمقاطع والتفاصيل لكل مقطع، مثل نوع المقطع وقيمة معلمة *UserGroupFilter* الخاصة به، ومن قام بإنشائه أو آخر تعديل له، و GUID، وما إلى ذلك.
+
+    >[!TIP]
+    >اطبع قائمة المقاطع أو احفظها للرجوع إليها لاحقا. على سبيل المثال، إذا كنت تريد تحرير مقطع، فستحتاج إلى معرفة اسمه أو تعريف قيمته (يتم استخدامه مع معلمة الهوية).
+
+3. لتعيين حالة النهج المراد إزالته إلى غير نشط، استخدم **Set-InformationBarrierPolicy** cmdlet مع معلمة *Identity* ومعلمة *الحالة* المعينة إلى *"غير نشط*".
+
+    |**بناء الجمله**|**المثال**|
     |:---------|:----------|
-    | `Remove-OrganizationSegment -Identity GUID` | `Remove-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <br> في هذا المثال، تمت إزالة المقطع مع GUID c96e0837-c232-4a8a-841e-ef45787d8fcd. |
+    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -State Inactive` <br> في هذا المثال، قمنا بتعيين نهج حواجز المعلومات الذي يحتوي على GUID 43c37853-ea10-4b90-a23d-ab8c93772471 إلى حالة غير نشطة. |
+
+4. تحرير المقطع الذي ستتم إزالته لإزالة علاقة المستخدمين بهذا المقطع. يقوم هذا الإجراء بتحديث تعريف المقطع وإزالة كافة المستخدمين من المقطع. ستستخدم معلمة *UserGroupFilter* لإلغاء اقتران المستخدمين عن المقطع قبل الإزالة.
+
+    لتحرير مقطع، استخدم **Set-OrganizationSegment** cmdlet مع معلمة *الهوية* والتفاصيل ذات الصلة.
+
+    |**بناء الجمله**|**المثال**|
+    |:---------|:----------|
+    | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` | `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'FakeDept'"` <br> في هذا المثال، بالنسبة إلى المقطع الذي يحتوي على GUID c96e0837-c232-4a8a-841e-ef45787d8fcd، قمنا بتحديث اسم القسم إلى *FakeDept لإزالة* المستخدمين من المقطع. يستخدم هذا المثال سمة *القسم* ، ولكن يمكنك استخدام سمات أخرى حسب الاقتضاء. يستخدم المثال *FakeDept* لأن هذا غير موجود ومن المؤكد أنه لا يحتوي على مستخدمين. |
+
+5. لتطبيق التغييرات، استخدم **Start-InformationBarrierPoliciesApplication** cmdlet.
+
+    بناء الجمله: `Start-InformationBarrierPoliciesApplication -CleanupGroupSegmentLink`
+
+    >[!NOTE]
+    >تزيل السمة *CleanupGroupSegmentLink* اقتباطات المجموعة مع المقطع الذي لا يحتوي على اقتباطات مستخدمين.
+
+    يتم تطبيق التغييرات على المستخدم حسب المستخدم لمؤسستك. إذا كانت مؤسستك كبيرة، فقد يستغرق إكمال هذه العملية 24 ساعة (أو أكثر). وكإرشادات عامة، يستغرق معالجة 5000 حساب مستخدم حوالي ساعة.
+
+6. استخدم **cmdlet Remove-InformationBarrierPolicy** مع معلمة *Identity* .
+
+    |**بناء الجمله**|**المثال**|
+    |:---------|:----------|
+    | `Remove-InformationBarrierPolicy -Identity GUID` | `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471` <br> في هذا المثال، تتم إزالة النهج الذي يحتوي على GUID *43c37853-ea10-4b90-a23d-ab8c93772471* . |
+
+    عند المطالبة، قم بتأكيد التغيير.
+
+7. لإزالة مقطع، استخدم **cmdlet Remove-OrganizationSegment** مع معلمة *الهوية* والتفاصيل ذات الصلة.
+
+    |**بناء الجمله**|**المثال**|
+    |:---------|:----------|
+    | `Remove-OrganizationSegment -Identity GUID` | `Remove-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <br> في هذا المثال، تمت إزالة المقطع الذي يحتوي على GUID c96e0837-c232-4a8a-841e-ef45787d8fcd. |
 
 ## <a name="stop-a-policy-application"></a>إيقاف تطبيق نهج
 
-بعد بدء تطبيق سياسات حواجز المعلومات، إذا كنت تريد منع تطبيق هذه السياسات، فاستخدم الإجراء التالي. سيستغرق بدء العملية من 30 إلى 35 دقيقة تقريبا.
+بعد البدء في تطبيق نهج حواجز المعلومات، إذا كنت تريد إيقاف تطبيق هذه النهج، فاستخدم الإجراء التالي. سيستغرق بدء العملية حوالي 30-35 دقيقة.
 
-1. لعرض حالة تطبيق نهج حاجز المعلومات الأخير، استخدم **الأمر cmdlet Get-InformationBarrierPoliciesApplicationStatus** .
+1. لعرض حالة تطبيق نهج حواجز المعلومات الأحدث، استخدم **Get-InformationBarrierPoliciesApplicationStatus** cmdlet.
 
-    بناء الجملة: `Get-InformationBarrierPoliciesApplicationStatus`
+    بناء الجمله: `Get-InformationBarrierPoliciesApplicationStatus`
 
-    لاحظ GUID الخاص للتطبيق.
+    لاحظ GUID الخاص بالتطبيق.
 
-2. استخدم **الأمر cmdlet Stop-InformationBarrierPoliciesApplication** مع معلمة Identity.
+2. استخدم **أمر cmdlet Stop-InformationBarrierPoliciesApplication** مع معلمة Identity.
 
-    |**بناء الجملة**|**مثال**|
+    |**بناء الجمله**|**المثال**|
     |:---------|:----------|
-    | `Stop-InformationBarrierPoliciesApplication -Identity GUID` | `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p> في هذا المثال، نقوم بإيقاف تطبيق سياسات عوائق المعلومات. |
+    | `Stop-InformationBarrierPoliciesApplication -Identity GUID` | `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p> في هذا المثال، نحن نوقف تطبيق نهج حواجز المعلومات. |
 
 ## <a name="resources"></a>الموارد
 
-- [الحصول على نظرة عامة حول حواجز المعلومات](information-barriers.md)
-- [تعريف سياسات لعوائق المعلومات](information-barriers-policies.md)
+- [الحصول على نظرة عامة على حواجز المعلومات](information-barriers.md)
+- [تحديد نهج لحواجز المعلومات](information-barriers-policies.md)
 - [تعرف على المزيد حول حواجز المعلومات في Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
 - [تعرف على المزيد حول حواجز المعلومات في SharePoint Online](/sharepoint/information-barriers)
 - [تعرف على المزيد حول حواجز المعلومات في OneDrive](/onedrive/information-barriers)
-- [سمات سياسات حواجز المعلومات](information-barriers-attributes.md)
-- [استكشاف مشاكل المعلومات وإصلاحها](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
+- [سمات نهج IB](information-barriers-attributes.md)
+- [استكشاف أخطاء حواجز المعلومات وإصلاحها](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
