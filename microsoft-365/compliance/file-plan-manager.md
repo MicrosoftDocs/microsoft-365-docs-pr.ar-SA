@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: توفر خطة الملفات قدرات إدارة متقدمة لتسميات الاستبقاء.
-ms.openlocfilehash: d509d878b244054138e4e95329d00759719e131d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 7cb963106551951fb6ae1e2455d21fa44d47a77c
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319023"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396281"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>استخدام خطة الملف لإنشاء تسميات الاستبقاء وإدارتها
 
@@ -49,10 +49,11 @@ ms.locfileid: "65319023"
 للوصول إلى خطة الملفات، يجب أن يكون لديك أحد أدوار المسؤول التالية:
     
 - إدارة الاستبقاء
-
 - View-only Retention Manager
 
-في [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/)، انتقل إلى خطة **SolutionsRecords** >  **managementFile** > .
+في [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/)، انتقل إلى خطة **SolutionsRecords** >  **managementFile** > :
+
+![صفحة خطة الملف](../media/compliance-file-plan.png). 
 
 إذا لم يتم عرض **إدارة السجلات** في جزء التنقل، فمرر أولا لأسفل وحدد **"إظهار الكل**".
 
@@ -93,7 +94,7 @@ ms.locfileid: "65319023"
     - اشهر
     - سنوات
     - إلى الأبد
-    - بلا
+    - None
 
 - يحدد **نوع الترتيب** ما يحدث للمحتوى في نهاية فترة الاستبقاء. القيم الصحيحة:
     - لا يوجد أي إجراء
@@ -154,7 +155,9 @@ ms.locfileid: "65319023"
 
 من خطة الملفات، يمكنك تصدير تفاصيل جميع تسميات الاستبقاء إلى ملف .csv لمساعدتك في تسهيل مراجعات التوافق الدورية مع المساهمين في إدارة البيانات في مؤسستك.
 
-لتصدير كافة تسميات الاستبقاء: في صفحة **خطة الملف** ، انقر فوق **"تصدير**".
+لتصدير كافة تسميات الاستبقاء: في صفحة **خطة الملف** ، حدد **"تصدير**":
+
+![خيار لتصدير خطة الملف.](../media/compliance-file-plan-export-labels.png)
 
 يتم فتح ملف *.csv يحتوي على كافة تسميات الاستبقاء الموجودة. على سبيل المثال:
 
@@ -164,7 +167,7 @@ ms.locfileid: "65319023"
 
 في خطة الملفات، يمكنك استيراد تسميات استبقاء جديدة بشكل مجمع باستخدام ملف .csv بتنسيق معين: 
 
-1. في صفحة **خطة الملف** ، انقر فوق **"استيراد**: ![خيار لاستيراد خطة الملف"](../media/compliance-file-plan-import-labels.png)
+1. في صفحة **خطة الملف** ، حدد **"استيراد**: ![خيار لاستيراد خطة الملف"](../media/compliance-file-plan-import-labels.png)
 
 2. في جزء **"تعبئة واستيراد خطة الملفات** "، حدد **"تنزيل قالب فارغ"**:
 
