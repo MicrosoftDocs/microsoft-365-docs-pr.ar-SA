@@ -1,5 +1,5 @@
 ---
-title: تكوين فريق مع عزل أمان
+title: تكوين فريق مع عزل الأمان باستخدام تسمية حساسية فريدة
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -18,14 +18,14 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: تعرف على كيفية إنشاء فريق مع وصف حساسية فريد للأمان.
-ms.openlocfilehash: cfea35dccd09e0eea361e56f1914700660b7fdd4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 15f155255518df38921288f68dcc9365703e4f2a
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943118"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393099"
 ---
-# <a name="configure-a-team-with-security-isolation"></a>تكوين فريق مع عزل أمان
+# <a name="configure-a-team-with-security-isolation-by-using-a-unique-sensitivity-label"></a>تكوين فريق مع عزل الأمان باستخدام تسمية حساسية فريدة
 
 توفر لك هذه المقالة توصيات وخطوات لتكوين فريق خاص في Microsoft Teams واستخدام وصف حساسية فريد لتشفير الملفات بحيث يمكن لأعضاء الفريق فقط فك تشفيرها.
 
@@ -111,7 +111,7 @@ ms.locfileid: "64943118"
 
 لإنشاء وصف الحساسية
 
-1. افتح مدخل الامتثال ل Microsoft Purview، وضمن **"Solutions**"، حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**"حماية المعلومات**</a>".
+1. افتح مدخل التوافق في Microsoft Purview، وضمن **الحلول**، حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**حماية المعلومات**</a>.
 1. انقر فوق **"إنشاء تسمية**".
 1. امنح التسمية اسما. نقترح تسميته بعد الفريق الذي ستستخدمه معه.
 1. أضف اسم عرض ووصفا، ثم انقر فوق **"التالي**".
@@ -143,7 +143,7 @@ ms.locfileid: "64943118"
 
 لنشر وصف الحساسية:
 
-1. في مدخل توافق Microsoft Purview، في <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">صفحة **حماية المعلومات**</a>، اختر علامة التبويب **"نهج التسمية**".
+1. في مدخل التوافق في Microsoft Purview، في <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">صفحة **حماية المعلومات**</a>، اختر علامة التبويب "**نهج التسمية**".
 2. انقر فوق **"نشر التسميات**".
 3. في صفحة **اختيار تسميات الحساسية للنشر** ، انقر فوق **"اختيار تسميات الحساسية" للنشر**.
 4. حدد التسمية التي أنشأتها، ثم انقر فوق **"إضافة**".
@@ -269,4 +269,4 @@ ms.locfileid: "64943118"
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[إدارة الهويات المتميزة Azure AD](/azure/active-directory/privileged-identity-management/pim-configure)
+[Azure AD إدارة الهويات المتميزة](/azure/active-directory/privileged-identity-management/pim-configure)

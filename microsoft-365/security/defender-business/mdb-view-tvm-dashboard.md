@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 25085dc22fd2f939e10833c98bc4fb599dd5a11f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: a4df65d0364aff71c3d3bbfb261952859d6d8ecf
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172633"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393077"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>استخدام لوحة معلومات إدارة الثغرات الأمنية & المخاطر في Microsoft Defender for Business
 
@@ -31,11 +31,11 @@ ms.locfileid: "65172633"
 - عرض توصيات الأمان العليا، مثل معالجة الاتصالات الضعيفة مع الأجهزة، أو تشغيل حماية جدار الحماية، أو تحديث تعريفات برنامج الحماية من الفيروسات من Microsoft Defender
 - عرض أنشطة المعالجة، مثل أي ملفات تم إرسالها إلى العزل، أو الثغرات الأمنية الموجودة على الأجهزة
 
-هل تريد معرفة كيفية عملها؟ شاهد هذا الفيديو، الذي يصف Threat & Vulnerability Management في [Microsoft Defender لنقطة النهاية](../defender-endpoint/microsoft-defender-endpoint.md).
+هل تريد معرفة كيفية عملها؟ شاهد هذا الفيديو الذي يصف [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r1nv]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y1FX]
 
-لمعرفة المزيد حول إدارة الثغرات الأمنية & المخاطر، راجع [المخاطر إدارة الثغرات الأمنية في Microsoft Defender لنقطة النهاية](../defender-endpoint/next-gen-threat-and-vuln-mgt.md).
+[تعرف على المزيد حول إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
 
 >
 > **هل لديك دقيقة؟**

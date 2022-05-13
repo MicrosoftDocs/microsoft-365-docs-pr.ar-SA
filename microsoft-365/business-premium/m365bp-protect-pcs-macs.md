@@ -1,5 +1,5 @@
 ---
-title: حماية أجهزة الكمبيوتر وأجهزة Mac Windows 10 غير المدارة في Microsoft 365 Business Premium
+title: حماية أجهزة الكمبيوتر الشخصية وأجهزة Mac Windows غير المدارة في Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: حماية الأجهزة غير المدارة أو إحضار أجهزتك الخاصة (BYOD) من الهجمات الإلكترونية باستخدام Microsoft 365 Business Premium. كيفية إعداد الأمان عبر الإنترنت لأجهزة الكمبيوتر الشخصية وأجهزة Mac Windows.
-ms.openlocfilehash: 0b13c208fd2cdd0fcadf7f5bc820d41b3621eebd
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2c2c94e79e7f694e75ab6aeb6ed38005dbd1f2f4
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318823"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393231"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>حماية أجهزة الكمبيوتر وأجهزة Mac Windows 10 غير المدارة في Microsoft 365 Business Premium
+# <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>حماية أجهزة الكمبيوتر الشخصية وأجهزة Mac Windows غير المدارة في Microsoft 365 Business Premium
 
 يركز هذا الهدف على إنشاء حماية لأي أجهزة كمبيوتر وأجهزة Mac Windows 10 غير مدارة غير مسجلة في Microsoft Intune. من المحتمل جدا أن يكون لدى شركتك الصغيرة أو حملتك موظفون يحضرون أجهزتهم الخاصة (BYOD)، ولا تتم إدارة هذه الأجهزة. تتضمن BYODs الهواتف وأجهزة الكمبيوتر اللوحية وأجهزة الكمبيوتر الشخصية المملوكة شخصيا. 
 

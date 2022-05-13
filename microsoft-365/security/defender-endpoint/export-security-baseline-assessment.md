@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1cf677ccf4716ede6182db48bb1e1a2622fd9abe
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: 730eb90202acff9efad1cc2f01fd60431366e997
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368482"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393429"
 ---
 # <a name="export-security-baselines-assessment-per-device"></a>تصدير تقييم أسس الأمان لكل جهاز
 
@@ -53,23 +53,32 @@ ms.locfileid: "65368482"
 
 إرجاع كافة تقييمات خطوط الأمان الأساسية لجميع الأجهزة، على أساس كل جهاز. يقوم بإرجاع جدول مع إدخال منفصل لكل مجموعة فريدة من DeviceId و ProfileId و ConfigurationId.
 
-#### <a name="12-limitations"></a>1.2 القيود
+### <a name="12-permissions"></a>1.2 أذونات
+
+أحد الأذونات التالية مطلوب لاستدعاء واجهة برمجة التطبيقات هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md) للحصول على التفاصيل.
+
+نوع الإذن|اذن|اسم عرض الإذن
+:---|:---|:---
+Application|SecurityBaselinesAssessment.Read.All |'قراءة كافة معلومات تقييمات أساسيات الأمان'
+مفوض (حساب العمل أو المؤسسة التعليمية)|SecurityBaselinesAssessment.Read|'قراءة معلومات تقييمات أساسيات الأمان'
+
+### <a name="13-limitations"></a>1.3 القيود
 
 - الحد الأقصى لحجم الصفحة هو 200,000.
 - قيود المعدل لواجهة برمجة التطبيقات هذه هي 30 مكالمة في الدقيقة و1000 مكالمة في الساعة.
 
-### <a name="13-parameters"></a>1.3 معلمات
+### <a name="14-parameters"></a>1.4 معلمات
 
 - حجم الصفحة (الافتراضي = 50,000): عدد النتائج في الاستجابة.
 - $top: عدد النتائج التي سيتم إرجاعها (لا ترجع @odata.nextLink وهكذا لا تسحب كافة البيانات).
 
-### <a name="14-http-request"></a>طلب HTTP 1.4
+### <a name="15-http-request"></a>طلب HTTP 1.5
 
 ```http
 GET /api/machines/baselineComplianceAssessmentByMachine
 ```
 
-### <a name="15-properties-json-response"></a>1.5 خصائص (استجابة JSON)
+### <a name="16-properties-json-response"></a>1.6 خصائص (استجابة JSON)
 
 > [!NOTE]
 > كل سجل هو تقريبا 1 كيلوبايت من البيانات. يجب أن تأخذ هذا في الاعتبار عند اختيار المعلمة pageSize الصحيحة.
@@ -97,15 +106,15 @@ GET /api/machines/baselineComplianceAssessmentByMachine
 |القيمة الحالية|سلسلة|مجموعة من القيم المكتشفة الموجودة على الجهاز.
 |مصدر|سلسلة|مسار التسجيل أو الموقع الآخر المستخدم لتحديد إعداد الجهاز الحالي.
 
-## <a name="16-example"></a>مثال 1.6
+## <a name="17-example"></a>مثال 1.7
 
-### <a name="161-request-example"></a>مثال على طلب 1.6.1
+### <a name="171-request-example"></a>مثال على طلب 1.7.1
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAssessmentByMachine
 ```
 
-### <a name="162-response-example"></a>مثال على الاستجابة 1.6.2
+### <a name="172-response-example"></a>مثال على الاستجابة 1.7.2
 
 ```json
 { 

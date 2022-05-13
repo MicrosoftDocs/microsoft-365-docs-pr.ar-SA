@@ -455,10 +455,10 @@
               href: ome-sensitive-info-types.md
             - name: إدارة تشفير الرسائل
               href: manage-office-365-message-encryption.md
-            - name: سجل نشاط مدخل الرسالة المشفرة
-              href: ome-message-access-logs.md
             - name: تشفير متقدم للرسائل
               href: ome-advanced-message-encryption.md
+            - name: سجل نشاط مدخل الرسالة المشفرة
+              href: ome-message-access-logs.md
             - name: تعيين تاريخ انتهاء صلاحية للبريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Microsoft Purview
               href: ome-advanced-expiration.md
             - name: إبطال البريد الإلكتروني المشفر بواسطة تشفير رسائل Microsoft Purview

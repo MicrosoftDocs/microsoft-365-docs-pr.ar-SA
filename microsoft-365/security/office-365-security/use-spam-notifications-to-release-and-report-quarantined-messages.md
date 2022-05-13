@@ -1,5 +1,5 @@
 ---
-title: إعلامات الفحص (إعلامات البريد العشوائي للمستخدم النهائي) في Microsoft 365
+title: إعلامات العزل (إعلامات البريد العشوائي للمستخدم النهائي) في Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -21,54 +21,54 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على إعلامات البريد العشوائي للمستخدم النهائي للرسائل المعزولة في Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 706303e7bdab7297fbc1dd353238db3542c28177
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: c1688e4a56787c9593aae7006a05d52b16558647
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465828"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393469"
 ---
-# <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>استخدام إعلامات الفحص للافراج عن الرسائل المعزولة
+# <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>استخدام إعلامات العزل لإصدار الرسائل المعزولة والإبلاغ بها
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender لـ Office 365 الخطة 1 الخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-في Microsoft 365 المؤسسات التي بها علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، يحتفظ الفحص بالرسائل الخطيرة أو غير المرغوب فيها. لمزيد من المعلومات، راجع [الرسائل المعزولة في EOP](quarantine-email-messages.md).
+في المؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، يحتفظ العزل برسائل قد تكون خطرة أو غير مرغوب فيها. لمزيد من المعلومات، راجع [الرسائل المعزولة في EOP](quarantine-email-messages.md).
 
-_تحدد سياسات الفحص_ ما يسمح للمستخدمين به للرسائل المعزولة استنادا إلى سبب عزل الرسالة (للميزات المعتمدة). لمزيد من المعلومات، راجع [سياسات الفحص](quarantine-policies.md). تتحكم أيضا إجراءات الفحص في ما إذا كان المستلمون المتأثرون (بما في ذلك علب البريد المشتركة) سيتلقون إعلامات الفحص _الدورية حول_ رسائلهم المعزولة. إعلامات الفحص هي البديل عن إعلامات البريد العشوائي للمستخدم النهائي لكل ميزات الحماية المعتمدة (وليس فقط أحكام نهج مكافحة البريد العشوائي).
+تحدد _نهج العزل_ ما يسمح للمستخدمين بالقيام به للرسائل المعزولة استنادا إلى سبب عزل الرسالة (للميزات المدعومة). لمزيد من المعلومات، راجع [نهج العزل](quarantine-policies.md). تتحكم نهج العزل أيضا في ما إذا كان المستلمون المتأثرون (بما في ذلك علب البريد المشتركة) يتلقون _إعلامات عزل دورية_ حول رسائل العزل الخاصة بهم. تعد إعلامات العزل بديلا لإعلامات البريد العشوائي للمستخدم النهائي لجميع ميزات الحماية المدعومة (وليس فقط أحكام نهج مكافحة البريد العشوائي).
 
-لا يتم تشغيل إعلامات الفحص في إعلامات الفحص المضمنة المسماة AdminOnlyAccessPolicy أو DefaultFullAccessPolicy. يتم تشغيل إعلامات الفحص في نهج الفحص المضمن المسمى NotificationEnabledPolicy [إذا كانت مؤسستك مضمنة فيه](quarantine-policies.md#full-access-permissions-and-quarantine-notifications). وبخلاف ذلك، ول تشغيل إعلامات الفحص في نهج الفحص، ستحتاج إلى إنشاء نهج عزل جديد [وتكوينه](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
+لا يتم تشغيل إعلامات العزل في إعلامات العزل المضمنة المسماة AdminOnlyAccessPolicy أو DefaultFullAccessPolicy. يتم تشغيل إعلامات العزل في نهج العزل المضمن المسمى NotificationEnabledPolicy [إذا كانت مؤسستك تملكه](quarantine-policies.md#full-access-permissions-and-quarantine-notifications). وإلا، لتشغيل إعلامات العزل في نهج العزل، تحتاج إلى [إنشاء نهج عزل جديد وتكوينه](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
-بالإضافة إلى ذلك، للسماح بخيار "حظر المرسل" في إعلامات الفحص بالعمل بشكل صحيح، يجب تمكين المستخدمين ل Powershell البعيد. للحصول على الإرشادات، راجع تمكين الوصول إلى Exchange Online [PowerShell أو تعطيله](/powershell/exchange/disable-access-to-exchange-online-powershell).
+بالإضافة إلى ذلك، للسماح بخيار "حظر المرسل" في إعلامات العزل للعمل بشكل صحيح، يجب تمكين المستخدمين ل Powershell البعيد. للحصول على الإرشادات، راجع [تمكين الوصول إلى Exchange Online PowerShell أو تعطيله](/powershell/exchange/disable-access-to-exchange-online-powershell).
 
-يمكن للمسؤولين أيضا استخدام الإعدادات العامة في سياسات الفحص لتخصيص اسم العرض للمرسل ونص إخلاء المسؤولية بلغات مختلفة وشعار الشركة المستخدم في إعلامات الفحص. للحصول على الإرشادات، راجع [تكوين إعدادات إعلامات الفحص العام](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
+يمكن للمسؤولين أيضا استخدام الإعدادات العمومية في نهج العزل لتخصيص اسم العرض الخاص بالمرسل ونص إخلاء المسؤولية بلغات مختلفة وشعار الشركة المستخدم في إعلامات العزل. للحصول على الإرشادات، راجع [تكوين إعدادات إعلام العزل العمومي](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
 
-بالنسبة لعلب البريد المشتركة، تكون إعلامات الفحص معتمدة فقط للمستخدمين الذين تم منحهم إذن FullAccess لعلبة البريد المشتركة. لمزيد من المعلومات، راجع [استخدام EAC لتحرير إرسال علبة البريد المشتركة](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
+بالنسبة إلى علب البريد المشتركة، يتم دعم إعلامات العزل فقط للمستخدمين الذين تم منحهم إذن FullAccess إلى علبة البريد المشتركة. لمزيد من المعلومات، راجع [استخدام EAC لتحرير تفويض علبة البريد المشتركة](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
 
 > [!NOTE]
-> بشكل افتراضي، تتوفر الرسائل التي يتم فحصها على أنها تصيد احتيالي عالي الثقة أو برامج ضارة أو قواعد تدفق البريد (تعرف أيضا بقواعد النقل) أو نهج مرفقات خزينة في Defender لـ Office 365 فقط للمسؤولين (بشكل افتراضي، يتم استخدام نهج الفحص AdminOnlyAccessPolicy). لمزيد من المعلومات، راجع [إدارة الرسائل والملفات المعزولة كمسؤول في EOP](manage-quarantined-messages-and-files.md).
+> بشكل افتراضي، تتوفر الرسائل التي يتم عزلها على أنها تصيد احتيالي عالي الثقة أو برامج ضارة أو قواعد تدفق البريد (المعروفة أيضا بقواعد النقل) أو خزينة نهج المرفقات في Defender لـ Office 365 فقط للمسؤولين (بشكل افتراضي، يتم استخدام نهج العزل AdminOnlyAccessPolicy). لمزيد من المعلومات، راجع [إدارة الرسائل والملفات المعزولة كمسؤول في EOP](manage-quarantined-messages-and-files.md).
 >
-> حاليا، إعلامات الفحص غير معتمدة للمجموعات أو رسائل التصيد الاحتيالي عالية الثقة. 
+> حاليا، إعلامات العزل غير معتمدة للمجموعات.
 
-عندما تتلقى إعلاما بالفحص، تتوفر المعلومات التالية دائما لكل رسالة معزولة:
+عندما تتلقى إعلام عزل، تتوفر المعلومات التالية دائما لكل رسالة تم عزلها:
 
-- **المرسل**: اسم المرسل وعنوان البريد الإلكتروني للرسالة التي تم فحصها.
+- **المرسل**: اسم الإرسال وعنوان البريد الإلكتروني للرسالة المعزولة.
 - **الموضوع**: نص سطر الموضوع للرسالة المعزولة.
-- **التاريخ**: التاريخ والوقت (في UTC) الذي تم فيه فحص الرسالة.
+- **التاريخ**: التاريخ والوقت (في UTC) الذي تم عزل الرسالة فيه.
 
-تعتمد الإجراءات المتوفرة في إعلام الفحص على سبب عزل الرسالة والأذونات المعينة بواسطة نهج الفحص المقترن. لمزيد من المعلومات، راجع [تفاصيل أذونات نهج الفحص](quarantine-policies.md#quarantine-policy-permission-details).
+تعتمد الإجراءات المتوفرة في إعلام العزل على سبب عزل الرسالة والأذونات التي تم تعيينها بواسطة نهج العزل المقترن. لمزيد من المعلومات، راجع [تفاصيل إذن نهج العزل](quarantine-policies.md#quarantine-policy-permission-details).
 
-بشكل افتراضي، تتوفر الإجراءات التالية في إعلام الفحص للرسائل التي تم فحصها كبريد عشوائي أو بريد عشوائي عالي الثقة أو مجمعة:
+بشكل افتراضي، تتوفر الإجراءات التالية في إعلام العزل للرسائل التي تم عزلها باعتبارها بريدا عشوائيا أو بريدا عشوائيا عالي الثقة أو مجمعا:
 
-- **حظر المرسل**: انقر فوق هذا الارتباط لإضافة المرسل إلى قائمة المرسلون المحظورون في _علبة بريدك_ . لمزيد من المعلومات، راجع [حظر مرسل بريد](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
-- **الإصدار**: يمكنك إصدار الرسالة هنا دون الذهاب إلى **"** الفحص" في Microsoft 365 Defender المدخل.
-- **مراجعة**: انقر فوق هذا الارتباط الانتقال إلى  "الفحص" في مدخل Microsoft 365 Defender، حيث يمكنك (استنادا إلى سبب عزل الرسالة) عرض الرسائل المعزولة أو تحريرها أو حذفها أو الإبلاغ عنها. لمزيد من المعلومات، راجع [البحث عن الرسائل المعزولة وإطلاقها كمستخدم في EOP](find-and-release-quarantined-messages-as-a-user.md).
+- **حظر المرسل**: انقر فوق هذا الارتباط لإضافة المرسل إلى قائمة المرسلين المحظورين في علبة البريد _._ لمزيد من المعلومات، راجع ["حظر مرسل البريد](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)".
+- **الإصدار**: يمكنك تحرير الرسالة هنا دون الانتقال إلى **العزل** في مدخل Microsoft 365 Defender.
+- **مراجعة**: انقر فوق هذا الارتباط للانتقال إلى **العزل** في مدخل Microsoft 365 Defender، حيث يمكنك (اعتمادا على سبب عزل الرسالة) عرض الرسائل المعزولة أو تحريرها أو حذفها أو الإبلاغ بها. لمزيد من المعلومات، راجع [البحث عن الرسائل المعزولة وتحريرها كمستخدم في EOP](find-and-release-quarantined-messages-as-a-user.md).
 
-:::image type="content" source="../../media/end-user-spam-notification.png" alt-text="مثال إعلام الفحص" lightbox="../../media/end-user-spam-notification.png":::
+:::image type="content" source="../../media/end-user-spam-notification.png" alt-text="مثال على إعلام العزل" lightbox="../../media/end-user-spam-notification.png":::
 
 > [!NOTE]
-> ما زال با الممكن أن يرسل إليك المرسل المحظور بريدا. سيتم نقل أي رسائل أرسلها هذا المرسل إلى علبة البريد على الفور إلى مجلد البريد الإلكتروني غير الهام. سترسل الرسائل المستقبلية من هذا المرسل إلى مجلد البريد الإلكتروني غير الهام أو إلى الفحص. إذا كنت تريد حذف هذه الرسائل عند الوصول بدلا من إجرائها، فاستخدم قواعد تدفق [البريد (المعروفة](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) أيضا بقواعد النقل) لحذف الرسائل عند الوصول.
+> لا يزال بإمكان المرسل المحظور إرسال بريد إليك. سيتم نقل أي رسائل من هذا المرسل تقوم بنقلها إلى علبة بريدك على الفور إلى مجلد البريد الإلكتروني غير الهام. ستنتقل الرسائل المستقبلية من هذا المرسل إلى مجلد البريد الإلكتروني غير الهام أو إلى العزل. إذا كنت ترغب في حذف هذه الرسائل عند الوصول بدلا من ربعها، فاستخدم [قواعد تدفق البريد](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (المعروفة أيضا بقواعد النقل) لحذف الرسائل عند الوصول.
