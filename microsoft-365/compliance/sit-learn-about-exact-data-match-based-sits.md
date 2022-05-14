@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: تعرف على أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات الدقيقة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f883d2509961ee07045949530f8fbb50629212f
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0574c11751898b31b22da4642f2d5dd415991732
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759756"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415915"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>التعرّف على أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتم استخدام [أنواع المعلومات الحساسة](sensitive-information-type-learn-about.md) للمساعدة في تحديد العناصر الحساسة بحيث يمكنك منع مشاركتها دون قصد أو بشكل غير مناسب، للمساعدة في تحديد موقع البيانات ذات الصلة في eDiscovery، وتطبيق إجراءات الحوكمة على أنواع معينة من المعلومات. يمكنك تعريف نوع معلومات حساسة مخصص (SIT) استنادا إلى:
 
@@ -44,10 +46,10 @@ ms.locfileid: "64759756"
 
 ![التصنيف المستند إلى EDM.](../media/EDMClassification.png)
 
-يمكنك التصنيف المستند إلى EDM من إنشاء أنواع معلومات حساسة مخصصة تشير إلى القيم الدقيقة في قاعدة بيانات المعلومات الحساسة. يمكن تحديث قاعدة البيانات يوميا، وتحتوي على ما يصل إلى 100 مليون صف من البيانات. لذلك مع انتقال الموظفين أو المرضى أو العملاء وتغيير السجلات، تظل أنواع المعلومات الحساسة المخصصة حديثة وقابلة للتطبيق. ويمكنك استخدام التصنيف المستند إلى EDM مع النهج، مثل [نهج منع فقدان البيانات](dlp-learn-about-dlp.md) أو [نهج الملفات Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
+يمكنك التصنيف المستند إلى EDM من إنشاء أنواع معلومات حساسة مخصصة تشير إلى القيم الدقيقة في قاعدة بيانات المعلومات الحساسة. يمكن تحديث قاعدة البيانات يوميا، وتحتوي على ما يصل إلى 100 مليون صف من البيانات. لذلك مع انتقال الموظفين أو المرضى أو العملاء وتغيير السجلات، تظل أنواع المعلومات الحساسة المخصصة حديثة وقابلة للتطبيق. ويمكنك استخدام التصنيف المستند إلى EDM مع نهج، مثل [سياسات منع فقدان البيانات Microsoft Purview](dlp-learn-about-dlp.md) أو [نهج الملفات Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
-> يدعم Microsoft 365 حماية البيانات لغات مجموعة أحرف البايت المزدوجة ل:
+> يدعم حماية البيانات في Microsoft Purview لغات مجموعة أحرف مزدوجة البايت من أجل:
 >
 > - الصينية (المبسطة)
 > - الصينية (التقليدية)
@@ -93,7 +95,7 @@ ms.locfileid: "64759756"
 
 ### <a name="you-supply-your-own-schema-and-data"></a>يمكنك توفير المخطط والبيانات الخاصة بك
 
-[تأتي Microsoft 365 مع أكثر من 200 SITS](sensitive-information-type-entity-definitions.md) مع مخططات معرفة مسبقا وأنماط regex والكلمات الأساسية ومستويات الثقة. باستخدام EDM SITs، أنت مسؤول عن تعريف المخطط بالإضافة إلى الحقول الأساسية والثانوية التي تحدد العناصر الحساسة. نظرا لأن المخطط وقيم البيانات الأساسية والثانوية حساسة للغاية، فستعمل على تشفيرها عبر [دالة تجزئة](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) تتضمن قيمة [ملحية](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) تم إنشاؤها عشوائيا أو تم توفيرها ذاتيا. ثم يتم تحميل هذه القيم المتجزئة إلى الخدمة، لذلك لا تكون بياناتك الحساسة مفتوحة أبدا.
+[تأتي Microsoft Purview مع أكثر من 200 SITS](sensitive-information-type-entity-definitions.md) مع مخططات معرفة مسبقا وأنماط regex والكلمات الأساسية ومستويات الثقة. باستخدام EDM SITs، أنت مسؤول عن تعريف المخطط بالإضافة إلى الحقول الأساسية والثانوية التي تحدد العناصر الحساسة. نظرا لأن المخطط وقيم البيانات الأساسية والثانوية حساسة للغاية، فستعمل على تشفيرها عبر [دالة تجزئة](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) تتضمن قيمة [ملحية](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) تم إنشاؤها عشوائيا أو تم توفيرها ذاتيا. ثم يتم تحميل هذه القيم المتجزئة إلى الخدمة، لذلك لا تكون بياناتك الحساسة مفتوحة أبدا.
 
 ### <a name="primary-and-secondary-support-elements"></a>عناصر الدعم الأساسية والثانوية
 
@@ -110,4 +112,3 @@ ms.locfileid: "64759756"
 ## <a name="see-also"></a>راجع أيضًا
 
 - [بدء استخدام أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
-   

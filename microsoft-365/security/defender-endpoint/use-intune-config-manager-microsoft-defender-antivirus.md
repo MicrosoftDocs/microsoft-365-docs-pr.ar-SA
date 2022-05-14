@@ -17,12 +17,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b25e57ee28ae0ef3f219a9adda1ff3f860d063db
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 892ab423d09aae9c02135bc569f1321dbab7fa0d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789283"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419495"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>استخدام إدارة نقاط النهاية من Microsoft لتكوين وإدارة برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -32,10 +32,10 @@ ms.locfileid: "64789283"
 **ينطبق على:**
 
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 يمكنك استخدام [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview) لتكوين عمليات المسح الضوئي برنامج الحماية من الفيروسات من Microsoft Defender. [أصبحت Microsoft Intune](/mem/intune/fundamentals/what-is-intune) [Configuration Manager الآن](/mem/configmgr/core/understand/introduction) جزءا من إدارة نقاط النهاية.
@@ -66,13 +66,13 @@ ms.locfileid: "64789283"
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 

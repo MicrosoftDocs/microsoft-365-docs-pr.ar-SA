@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تحقيق أقصى استفادة من الإصدار التجريبي من Defender for Business باستخدام دليل المبادئ هذا. ابدأ الإعداد بسرعة وابدأ باستخدام قدرات الأمان الجديدة.
-ms.openlocfilehash: 8a676d7c412746e4f941e11d91e44faddc7237a7
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 4f239a08e46e8c8bede5c2e972c3daed2af8b550
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174983"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418981"
 ---
 # <a name="trial-playbook-microsoft-defender-for-business"></a>دليل المبادئ التجريبي: Microsoft Defender for Business
 
@@ -109,7 +109,7 @@ Defender for Business هو حل أمان نقطة نهاية جديد تم تص�
    | الاجهزه | أساليب الإلحاق |
    |:---|:---|
    | [عملاء Windows](mdb-onboard-devices.md) | اختر أحد الخيارات التالية لإلحاق أجهزة العميل Windows إلى Defender for Business:<br/>- البرنامج النصي المحلي (لإلحاق الأجهزة يدويا في مدخل Microsoft 365 Defender)<br/>- نهج المجموعة (إذا كنت تستخدم بالفعل نهج المجموعة وتفضل هذا الأسلوب)<br/>- Microsoft Intune (*مستحسن*؛ مضمن في [Microsoft 365 Business Premium](../../business-premium/index.md)) |
-   | [أجهزة كمبيوتر macOS](mdb-onboard-devices.md) | اختر أحد الخيارات التالية لإلحاق أجهزة macOS:<br/>- البرنامج النصي المحلي لنظام التشغيل macOS (*مستحسن*) <br/>- Microsoft Intune لنظام التشغيل macOS (Intune مضمن في [Microsoft 365 Business Premium](../../business-premium/index.md))<br/><br/>نوصي باستخدام برنامج نصي محلي لإلحاق أجهزة macOS. على الرغم من أنه يمكنك [إعداد التسجيل لأجهزة macOS في Intune](/mem/intune/enrollment/macos-enroll)، فإن البرنامج النصي المحلي هو أبسط طريقة لإلحاق أجهزة macOS ب Defender for Business. |
+   | [أجهزة كمبيوتر macOS](mdb-onboard-devices.md) | اختر أحد الخيارات التالية لإلحاق أجهزة macOS:<br/>- البرنامج النصي المحلي macOS (*مستحسن*) <br/>- Microsoft Intune macOS (Intune مضمن في [Microsoft 365 Business Premium](../../business-premium/index.md))<br/><br/>نوصي باستخدام برنامج نصي محلي لإلحاق أجهزة macOS. على الرغم من أنه يمكنك [إعداد التسجيل لأجهزة macOS في Intune](/mem/intune/enrollment/macos-enroll)، فإن البرنامج النصي المحلي هو أبسط طريقة لإلحاق أجهزة macOS إلى Defender for Business. |
    | خادم Windows وخوادم Linux | *خوادم Windows Server وLinux غير معتمدة حاليا. ستتوفر قدرات إلحاق الخادم والأمان قريبا إلى Defender for Business*. |
    | [الأجهزة المحمولة](mdb-onboard-devices.md) | ستحتاج Microsoft Intune إلى إلحاق الأجهزة المحمولة، مثل أجهزة Android وiOS/iPadOS. إذا كان لديك [Microsoft 365 Business Premium](../../business-premium/index.md)، فقد قمت ب Intune كجزء من اشتراكك. يمكن أيضا شراء Intune بشكل منفصل. راجع الموارد التالية للحصول على المساعدة في تسجيل هذه الأجهزة في Intune:<br/>- [تسجيل أجهزة Android](/mem/intune/enrollment/android-enroll)<br/>- [تسجيل أجهزة iOS أو iPadOS](/mem/intune/enrollment/ios-enroll) |
 

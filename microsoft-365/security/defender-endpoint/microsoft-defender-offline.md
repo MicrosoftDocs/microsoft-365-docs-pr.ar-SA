@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ea7d316a7fc31724466dcd459ed72792cea817fd
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 690437de177ce1f6c466166970a8b7143d230916
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787677"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415629"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>تشغيل نتائج فحص Microsoft Defender في وضع عدم الاتصال ومراجعتها
 
@@ -29,10 +29,10 @@ ms.locfileid: "64787677"
 
 **ينطبق على:**
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 Microsoft Defender في وضع عدم الاتصال هي أداة فحص مكافحة البرامج الضارة التي تتيح لك تشغيل وتشغيل فحص من بيئة موثوق بها. يتم تشغيل الفحص من خارج نواة Windows العادية حتى تتمكن من استهداف البرامج الضارة التي تحاول تجاوز Windows shell، مثل الفيروسات و rootkits التي تسبب الفيروسات أو الكتابة فوق سجل التمهيد الرئيسي (MBR).
@@ -143,13 +143,13 @@ Microsoft Defender في وضع عدم الاتصال سيتم سرد نتائج 
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 

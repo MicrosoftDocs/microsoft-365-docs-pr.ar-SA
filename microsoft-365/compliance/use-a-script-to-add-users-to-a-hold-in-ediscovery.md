@@ -21,19 +21,19 @@ ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: تعرف على كيفية تشغيل برنامج نصي لإضافة علب بريد & OneDrive for Business مواقع إلى قائمة احتجاز جديدة مقترنة بحالة eDiscovery في مدخل توافق Microsoft Purview.
-ms.openlocfilehash: c652cd7d553faa5a7f85c59127e4aa2acfd7df4b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: تعرف على كيفية تشغيل برنامج نصي لإضافة علب بريد & OneDrive for Business المواقع إلى قائمة احتجاز جديدة مقترنة بحالة eDiscovery في مدخل التوافق في Microsoft Purview.
+ms.openlocfilehash: b828c9c1e6494ad4d0da4ca471feb7ace563d152
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097899"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416003"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>استخدام برنامج نصي لإضافة مستخدمين إلى قائمة احتجاز في حالة eDiscovery (قياسي)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-يوفر Security & Compliance Center PowerShell أوامر cmdlets تتيح لك أتمتة المهام التي تستغرق وقتا طويلا المتعلقة بإنشاء حالات eDiscovery وإدارتها. حاليا، يستغرق استخدام حالة Microsoft Purview eDiscovery (Standard) في مدخل الامتثال ل Microsoft Purview لوضع عدد كبير من مواقع محتوى الوصي قيد الاحتجاز وقتا وإعدادا. على سبيل المثال، قبل إنشاء قائمة احتجاز، يجب عليك جمع عنوان URL لكل موقع OneDrive for Business تريد وضعه قيد الاحتجاز. ثم لكل مستخدم تريد وضعه قيد الاحتجاز، يجب إضافة علبة بريده وموقع OneDrive for Business الخاص به إلى قائمة الاحتجاز. يمكنك استخدام البرنامج النصي في هذه المقالة لأتمتة هذه العملية.
+يوفر Security & Compliance Center PowerShell أوامر cmdlets تتيح لك أتمتة المهام التي تستغرق وقتا طويلا المتعلقة بإنشاء حالات eDiscovery وإدارتها. حاليا، يستغرق استخدام حالة Microsoft Purview eDiscovery (Standard) في مدخل التوافق في Microsoft Purview لوضع عدد كبير من مواقع محتوى الوصي قيد الاحتجاز وقتا وإعدادا. على سبيل المثال، قبل إنشاء قائمة احتجاز، يجب عليك جمع عنوان URL لكل موقع OneDrive for Business تريد وضعه قيد الاحتجاز. ثم لكل مستخدم تريد وضعه قيد الاحتجاز، يجب إضافة علبة بريده وموقع OneDrive for Business الخاص به إلى قائمة الاحتجاز. يمكنك استخدام البرنامج النصي في هذه المقالة لأتمتة هذه العملية.
   
 يطالبك البرنامج النصي باسم مجال "الموقع الخاص بي" الخاص بالمؤسسة (على سبيل المثال، `contoso` في عنوان URL https://contoso-my.sharepoint.com)، واسم حالة eDiscovery الحالية، واسم قائمة الاحتجاز الجديدة المقترنة بالحالة، وقائمة عناوين البريد الإلكتروني للمستخدمين الذين تريد وضعهم قيد الاحتجاز، واستعلام بحث لاستخدامه إذا كنت تريد إنشاء قائمة احتجاز مستندة إلى استعلام. ثم يحصل البرنامج النصي على عنوان URL لموقع OneDrive for Business لكل مستخدم في القائمة، ويقوم بإنشاء قائمة الاحتجاز الجديدة، ثم يضيف علبة البريد وموقع OneDrive for Business لكل مستخدم في القائمة إلى قائمة الاحتجاز. يقوم البرنامج النصي أيضا بإنشاء ملفات السجل التي تحتوي على معلومات حول قائمة الاحتجاز الجديدة.
   
@@ -47,7 +47,7 @@ ms.locfileid: "65097899"
   
 ## <a name="before-you-add-users-to-a-hold"></a>قبل إضافة مستخدمين إلى قائمة احتجاز
 
-- يجب أن تكون عضوا في مجموعة دور eDiscovery Manager في مدخل التوافق ومسؤول SharePoint Online لتشغيل البرنامج النصي في الخطوة 3. لمزيد من المعلومات، راجع [تعيين أذونات eDiscovery في مركز التوافق & للأمان Office 365](assign-ediscovery-permissions.md).
+- يجب أن تكون عضوا في مجموعة دور eDiscovery Manager في مدخل التوافق ومسؤول SharePoint Online لتشغيل البرنامج النصي في الخطوة 3. لمزيد من المعلومات، راجع [تعيين أذونات eDiscovery في Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
 
 - يمكن إضافة 1000 علبة بريد و100 موقع كحد أقصى إلى قائمة احتجاز مقترنة بحالة eDiscovery في مدخل التوافق. بافتراض أن كل مستخدم تريد وضعه قيد الاحتجاز لديه موقع OneDrive for Business، يمكنك إضافة 100 مستخدم كحد أقصى إلى قائمة احتجاز باستخدام البرنامج النصي في هذه المقالة.
 

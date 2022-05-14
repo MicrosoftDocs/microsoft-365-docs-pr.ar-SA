@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e5f38f701c865ad337bd04cb731ba40e00bf6118
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 75fa8c4e3dff9ed05716389ec5bed1d5331eefba
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130374"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419023"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>نشر Microsoft Defender لنقطة النهاية على Android باستخدام Microsoft Intune
 
@@ -44,8 +44,6 @@ ms.locfileid: "65130374"
 
 ## <a name="deploy-on-device-administrator-enrolled-devices"></a>النشر على الأجهزة المسجلة في مسؤول الجهاز
 
-**توزيع Defender لنقطة النهاية على Android على Intune Company Portal - الأجهزة المسجلة لمسؤول الجهاز**
-
 تعرف على كيفية نشر Defender لنقطة النهاية على Android على Intune Company Portal - الأجهزة المسجلة من قبل مسؤول الجهاز.
 
 ### <a name="add-as-android-store-app"></a>إضافة كتطبيق متجر Android
@@ -59,7 +57,7 @@ ms.locfileid: "65130374"
    - **الاسم**
    - **الوصف**
    - **Publisher** باسم Microsoft.
-   - **عنوان URL لمتجر التطبيقات** ك https://play.google.com/store/apps/details?id=com.microsoft.scmx (Defender for Endpoint app Google Play Store URL)
+   - **عنوان URL لمتجر التطبيقات** ك https://play.google.com/store/apps/details?id=com.microsoft.scmx (Defender for Endpoint app متجر Google Play URL)
 
    الحقول الأخرى اختيارية. حدد **التالي**.
 
@@ -118,7 +116,6 @@ ms.locfileid: "65130374"
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/07e6d4119f265037e3b80a20a73b856f.png" alt-text="صفحة Google Play المدارة في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/07e6d4119f265037e3b80a20a73b856f.png":::
-      
 
 4. سيتم تقديم الأذونات التي يحصل عليها Defender for Endpoint لكي يعمل. راجعها ثم حدد **"موافقة**".
 
@@ -167,11 +164,9 @@ ms.locfileid: "65130374"
 
        :::image type="content" alt-text="صورة لتحديد نهج التكوين لنظام التشغيل android." source="images/selectconfigurations.png" lightbox="images/selectconfigurations.png":::
 
-
     1. يجب أن تشاهد كافة التكوينات المحددة مدرجة. يمكنك تغيير قيمة التكوين كما هو مطلوب ثم تحديد **"التالي**".
-        
-        :::image type="content" alt-text="صورة لنهج التكوين المحددة." source="images/listedconfigurations.png" lightbox="images/listedconfigurations.png":::
-       
+
+       :::image type="content" alt-text="صورة لنهج التكوين المحددة." source="images/listedconfigurations.png" lightbox="images/listedconfigurations.png":::
 
     1. في صفحة **"الواجبات** "، حدد مجموعة المستخدمين التي سيتم تعيين نهج تكوين التطبيق إليها. انقر فوق **"تحديد المجموعات" لتضمين** المجموعة القابلة للتطبيق وتحديدها، ثم حدد **"التالي**". عادة ما تكون المجموعة المحددة هنا هي نفس المجموعة التي ستقوم بتعيين Microsoft Defender لنقطة النهاية تطبيق Android إليها.
 
@@ -186,7 +181,7 @@ ms.locfileid: "65130374"
 
 10. حدد تطبيق **Microsoft Defender ATP** في القائمة \> "**تحرير** **تعيينات** \> **الخصائص**\>".
 
-   :::image type="content" source="images/mda-properties.png" alt-text="الخيار &quot;تحرير&quot; على الصفحة &quot;خصائص&quot;" lightbox="images/mda-properties.png":::
+    :::image type="content" source="images/mda-properties.png" alt-text="الخيار &quot;تحرير&quot; على الصفحة &quot;خصائص&quot;" lightbox="images/mda-properties.png":::
 
 11. تعيين التطبيق كتطبيق *مطلوب* إلى مجموعة مستخدمين. يتم تثبيته تلقائيا في *ملف تعريف العمل* أثناء المزامنة التالية للجهاز عبر تطبيق Company Portal. يمكن تنفيذ هذا التعيين بالانتقال إلى **المجموعة "إضافة** مقطع \> *مطلوب*"، وتحديد مجموعة المستخدمين والنقر فوق **"تحديد**".
 
@@ -264,21 +259,22 @@ ms.locfileid: "65130374"
 
 ## <a name="set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode"></a>إعداد Microsoft Defender في ملف التعريف الشخصي على Android Enterprise في وضع BYOD
 
->[!NOTE]
->يتوفر الآن دعم Microsoft Defender في ملف التعريف الشخصي في Android Enterprise (AE) في وضع Bring-Your-Own-Device (BYOD) في المعاينة العامة. تتعلق المعلومات التالية بالناتج الذي تم إصداره مسبقا والذي قد يتم تعديله بشكل كبير قبل إصداره تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، فيما يتعلق بالمعلومات المقدمة هنا.
+> [!NOTE]
+> يتوفر الآن دعم Microsoft Defender في ملف التعريف الشخصي في Android Enterprise (AE) في وضع Bring-Your-Own-Device (BYOD) في المعاينة العامة. تتعلق المعلومات التالية بالناتج الذي تم إصداره مسبقا والذي قد يتم تعديله بشكل كبير قبل إصداره تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، فيما يتعلق بالمعلومات المقدمة هنا.
 
-مع دعم Microsoft defender في ملفات التعريف الشخصية التي تعمل بنظام Android، يمكن حماية أجهزة المستخدم من التصيد الاحتيالي وهجمات البرامج الضارة على ملف تعريف شخصي قد يعرض موارد الشركة للخطر على ملف تعريف العمل. 
+مع دعم Microsoft defender في ملفات التعريف الشخصية التي تعمل بنظام Android، يمكن حماية أجهزة المستخدم من التصيد الاحتيالي وهجمات البرامج الضارة على ملف تعريف شخصي قد يعرض موارد الشركة للخطر على ملف تعريف العمل.
 
-**إعداد Microsoft Defender في ملف التعريف الشخصي**
+### <a name="set-up-microsoft-defender-in-personal-profile"></a>إعداد Microsoft Defender في ملف التعريف الشخصي
 
 يمكن للمسؤولين الانتقال إلى [مركز إدارة نقاط النهاية من Microsoft](https://endpoint.microsoft.com) لإعداد وتكوين دعم Microsoft Defender في ملفات التعريف الشخصية باتباع الخطوات التالية:
+
 1. انتقل إلى **نهج تكوين التطبيقات> التطبيقات** وانقر فوق **"إضافة**". حدد **الأجهزة المدارة**.
 
     > [!div class="mx-imgBorder"]
     > ![صورة لإضافة نهج تكوين التطبيق.](images/addpolicy.png)
 
-1.  أدخل **الاسم** **والوصف** لتحديد نهج التكوين بشكل فريد. حدد النظام الأساسي ك **'Android Enterprise'**، ونوع ملف التعريف ك **'ملف تعريف العمل المملوك شخصيا فقط'** والتطبيق المستهدف ' **Microsoft Defender'**.
- 
+1. أدخل **الاسم** **والوصف** لتحديد نهج التكوين بشكل فريد. حدد النظام الأساسي ك **'Android Enterprise'**، ونوع ملف التعريف ك **'ملف تعريف العمل المملوك شخصيا فقط'** والتطبيق المستهدف ' **Microsoft Defender'**.
+
     > [!div class="mx-imgBorder"]
     > ![صورة لنهج تكوين التسمية.](images/selectapp.png)
 
@@ -300,24 +296,24 @@ ms.locfileid: "65130374"
 يمكن للمسؤولين أيضا إعداد **عناصر تحكم الخصوصية** من مركز إدارة إدارة نقاط النهاية من Microsoft للتحكم في البيانات التي يمكن إرسالها من قبل عميل Defender للأجهزة المحمولة إلى مدخل الأمان. لمزيد من المعلومات، راجع [تكوين عناصر التحكم في الخصوصية](android-configure.md).
 
 يمكن للمؤسسات الاتصال بمستخدميها لحماية ملف التعريف الشخصي باستخدام Microsoft Defender على أجهزة BYOD المسجلة.
+
 - المتطلبات الأساسية: يجب أن يكون Microsoft Defender مثبتا بالفعل ونشطا في ملف تعريف العمل لتمكين Microsoft Defender في ملفات التعريف الشخصية.
 
-**لإكمال إلحاق جهاز**
-1.  تثبيت تطبيق Microsoft Defender في ملف تعريف شخصي باستخدام حساب متجر Google Play شخصي.
-2.  تثبيت تطبيق مدخل الشركة على ملف التعريف الشخصي. لا يلزم تسجيل الدخول.
-3.  عندما يقوم مستخدم بتشغيل التطبيق، سيرى شاشة تسجيل الدخول. **تسجيل الدخول باستخدام حساب الشركة فقط**.
-4.  في تسجيل الدخول الناجح، سيرى المستخدمون الشاشات التالية:
+### <a name="to-complete-onboarding-a-device"></a>لإكمال إلحاق جهاز
 
-    أ.  **شاشة EULA**: يتم تقديمها فقط إذا لم يوافق المستخدم بالفعل في ملف تعريف العمل.
+1. تثبيت تطبيق Microsoft Defender في ملف تعريف شخصي باستخدام حساب متجر Google Play شخصي.
+2. تثبيت تطبيق مدخل الشركة على ملف التعريف الشخصي. لا يلزم تسجيل الدخول.
+3. عندما يقوم مستخدم بتشغيل التطبيق، سيرى شاشة تسجيل الدخول. **تسجيل الدخول باستخدام حساب الشركة فقط**.
+4. في تسجيل الدخول الناجح، سيرى المستخدمون الشاشات التالية:
+   1. **شاشة EULA**: يتم تقديمها فقط إذا لم يوافق المستخدم بالفعل في ملف تعريف العمل.
+   2. **شاشة الإشعار**: يحتاج المستخدمون إلى تقديم الموافقة على هذه الشاشة للمضي قدما في إلحاق التطبيق. هذا مطلوب فقط أثناء التشغيل الأول للتطبيق.
+5. توفير الأذونات المطلوبة لإكمال الإلحاق.
 
-    ب.  **شاشة الإشعار**: يحتاج المستخدمون إلى تقديم الموافقة على هذه الشاشة للمضي قدما في إلحاق التطبيق. هذا مطلوب فقط أثناء التشغيل الأول للتطبيق.
-5.  توفير الأذونات المطلوبة لإكمال الإلحاق.
-
->[!NOTE]
->**المتطلبات الأساسية:**
- >1. يجب تمكين مدخل الشركة على ملف التعريف الشخصي.
- >2. يجب أن يكون Microsoft Defender مثبتا ونشطا بالفعل في ملف تعريف العمل.
-
+> [!NOTE]
+> **المتطلبات الأساسية:**
+>
+> 1. يجب تمكين مدخل الشركة على ملف التعريف الشخصي.
+> 2. يجب أن يكون Microsoft Defender مثبتا ونشطا بالفعل في ملف تعريف العمل.
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

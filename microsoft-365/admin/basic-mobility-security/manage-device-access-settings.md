@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: يمكن أن يساعدك التنقل الأساسي والأمان على تأمين الأجهزة المحمولة وإدارتها.
-ms.openlocfilehash: aa5c6bb757604763e9ba7348d1d4f952a6555865
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 96deda323c6dedcae860811a1e538aaa0bffa25d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935248"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414833"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>إدارة إعدادات الوصول إلى الجهاز في Basic Mobility and Security
 
@@ -33,12 +33,12 @@ ms.locfileid: "64935248"
 
 1. سجل الدخول إلى Microsoft 365 باستخدام حساب المسؤول العام.
 
-2. في المستعرض، اكتب: [https://protection.office.com](https://protection.office.com/).
+2. في المستعرض، اكتب: <https://protection.office.com/>.
 
     > [!IMPORTANT]
     > إذا كانت هذه هي المرة الأولى التي تستخدم فيها Basic Mobility and Security for Microsoft 365 Business Standard، فقم بتنشيطه هنا: [تنشيط Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). بعد تنشيطه، قم بإدارة أجهزتك باستخدام [Office 365 الأمان & التوافق](https://protection.office.com/).
 
-3. انتقل إلى  **نهج ManagementDevice managementDevice** **** >  **لمنع** > فقدان البيانات، وحدد  **إعدادات الوصول إلى الجهاز على مستوى المؤسسة**.
+3. انتقل إلى **نهج جهاز** **إدارة** \> الأجهزة **لمنع** \> فقدان البيانات، وحدد **إدارة إعدادات الوصول إلى الجهاز على مستوى المؤسسة**.
 
 4. حدد **كتلة**.
 

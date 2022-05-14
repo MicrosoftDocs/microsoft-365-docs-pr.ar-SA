@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fdd212efd50d55bbcdae80275f5d2ca8a97cdeb3
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: b00465fdeecddc803b52d98081689fd56fba7812
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787655"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419803"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>منع المستخدمين من رؤية واجهة مستخدم برنامج الحماية من الفيروسات من Microsoft Defender أو التفاعل معها
 
@@ -30,10 +30,10 @@ ms.locfileid: "64787655"
 
 **ينطبق على:**
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 يمكنك استخدام نهج المجموعة لمنع المستخدمين على نقاط النهاية من رؤية واجهة برنامج الحماية من الفيروسات من Microsoft Defender. يمكنك أيضا منعهم من إيقاف عمليات المسح المؤقت.
@@ -92,13 +92,13 @@ ms.locfileid: "64787655"
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 

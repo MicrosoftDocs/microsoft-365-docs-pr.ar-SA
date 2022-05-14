@@ -16,12 +16,12 @@ ms.custom:
 - edr
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f68345b97d49adce2f55cffd837ca17e5b028953
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: da3f16837b8715fe791fbd8abf48acb657fd4963
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787985"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416761"
 ---
 # <a name="feedback-loop-blocking"></a>حظر حلقة الملاحظات
 
@@ -29,10 +29,10 @@ ms.locfileid: "64787985"
 
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 ## <a name="overview"></a>نظرة عامة
@@ -62,13 +62,13 @@ ms.locfileid: "64787985"
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 

@@ -15,22 +15,22 @@ ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 071bd6fe59a7200e1d16cf94633b0d7b3cb688c5
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: fb65e1ad898427c3f0a2fc1ba9a13685c1617bc1
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788095"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416267"
 ---
 # <a name="turn-on-block-at-first-sight"></a>تشغيل الحظر من النظرة الأولى
 
 **ينطبق على:**
 
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender 
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 تصف هذه المقالة ميزة الحماية من الفيروسات/الحماية من البرامج الضارة المعروفة باسم "حظر عند الوهلة الأولى"، وتصف كيفية تمكين الحظر من النظرة الأولى لمؤسستك.
@@ -208,7 +208,7 @@ ms.locfileid: "64788095"
 
 1. على الكمبيوتر Windows 10 أو Windows 11، افتح تطبيق أمن Windows.
 
-2. حدد **الحماية من التهديدات & الفيروسات**.
+2. حدد **الحماية من الفيروسات والمخاطر**.
 
 3. ضمن **إعدادات الحماية من الفيروسات & التهديدات**، حدد **"إدارة الإعدادات**".
 
@@ -223,13 +223,13 @@ ms.locfileid: "64788095"
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>راجع أيضًا
 

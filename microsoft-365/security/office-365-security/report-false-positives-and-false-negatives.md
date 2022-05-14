@@ -13,12 +13,12 @@ ms.collection:
 description: تعرف على كيفية الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة في Outlook باستخدام ميزة "رسالة التقرير".
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8f52b4d085c13f2e1e1a48c2a8a12e6782f13960
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 762f16916e03940f4d0f95c48f13751d3cbd63c7
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974092"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416961"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة في Outlook
 
@@ -47,6 +47,9 @@ ms.locfileid: "64974092"
 - لمزيد من المعلومات حول كيفية الحصول على الوظيفة الإضافية "رسالة التقرير" أو الوظائف الإضافية "تصيد التقرير" وتمكينها، راجع [تمكين "رسالة التقرير" أو الوظائف الإضافية "الإبلاغ عن التصيد الاحتيالي](enable-the-report-message-add-in.md)".
 
 - لمزيد من المعلومات حول الإبلاغ عن الرسائل إلى Microsoft، راجع ["إرسال تقارير عن الرسائل والملفات إلى Microsoft](report-junk-email-messages-to-microsoft.md)".
+
+شاهد هذا الفيديو القصير لمعرفة كيفية استخدام Microsoft Defender لـ Office 365 للتحقق بسهولة من عمليات إرسال المستخدم لتحديد محتويات الرسالة، والاستجابة للإرسال من خلال تطبيق إجراء المعالجة المناسب. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
 
 ### <a name="turn-off-the-built-in-reporting-experience"></a>إيقاف تشغيل تجربة إعداد التقارير المضمنة
 

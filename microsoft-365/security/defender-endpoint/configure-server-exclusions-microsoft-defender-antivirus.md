@@ -15,12 +15,12 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 890be814be75c303aa42feb5cb7a16cb4f5c3bd9
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 3d1fce680062f2ca63f220754ac1ab3f8b9b33d3
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320629"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419847"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>تكوين استثناءات برنامج الحماية من الفيروسات من Microsoft Defender على خادم Windows
 
@@ -377,7 +377,7 @@ DisableAutoExclusions
 - [تكوين الاستثناءات للملفات التي يتم فتحها بواسطة العمليات والتحقق من صحتها](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!TIP]
-> إذا كنت’ تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

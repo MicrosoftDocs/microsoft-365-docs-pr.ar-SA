@@ -16,12 +16,12 @@ ms.date: 06/10/2021
 description: تعرف على كيفية تسريع عملية الكشف عن حسابات المستخدمين المخترقة ومعالجتها مع قدرات التحقيق والاستجابة التلقائية في Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8c78847e36d4a4887c4f7a3c54904cc26a012e5
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 97466622a138a6604b9be51333148b472f7cd519
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131141"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418259"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>معالجة حسابات المستخدمين المخترقة مع التحقيق التلقائي والاستجابة
 
@@ -62,6 +62,9 @@ ms.locfileid: "65131141"
 
 > [!IMPORTANT]
 > يجب أن يكون لديك الأذونات المناسبة لتنفيذ المهام التالية. راجع [الأذونات المطلوبة لاستخدام قدرات AIR](office-365-air.md#required-permissions-to-use-air-capabilities).
+
+شاهد هذا الفيديو القصير لمعرفة كيف يمكنك الكشف عن اختراق المستخدم والاستجابة له في Microsoft Defender لـ Office 365 باستخدام التحقيق التلقائي والاستجابة (AIR) وتنبيهات المستخدم المخترقة.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAl83]
 
 ### <a name="view-and-investigate-restricted-users"></a>عرض المستخدمين المقيدين والتحقيق فيهم
 

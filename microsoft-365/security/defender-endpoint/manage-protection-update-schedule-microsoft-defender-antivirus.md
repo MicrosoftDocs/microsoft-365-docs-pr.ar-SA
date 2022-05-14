@@ -16,17 +16,17 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1624cec49b6c1e242be7fd1120ef87bdf05a5af7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5ffa9d623b89bc19c7c3ec8817f2df6bc174384b
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091644"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419825"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>إدارة الجدول الزمني عندما يجب تنزيل تحديثات الحماية وتطبيقها
 
 > [!IMPORTANT]
-> قد يكون العملاء الذين طبقوا تحديث محرك Microsoft Defender مارس 2022 (**1.1.19100.5**) قد واجهوا استخداما عاليا للموارد (وحدة المعالجة المركزية و/أو الذاكرة). أصدرت Microsoft تحديثا (**1.1.19200.5**) يحل الأخطاء التي تم تقديمها في الإصدار السابق. يوصى للعملاء بالتحديث إلى هذا الإصدار الجديد من محرك الحماية من الفيروسات (**1.1.19200.5**). لضمان إصلاح أي مشكلات في الأداء بشكل كامل، يوصى بإعادة تشغيل الأجهزة بعد تطبيق التحديث. لمزيد من المعلومات، راجع [إصدارات النظام الأساسي والمحرك الشهرية](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
+> قد يكون العملاء الذين قاموا بتطبيق تحديث محرك Microsoft Defender لشهر مارس 2022 (**1.1.19100.5**) قد واجهوا استخداماً كبيراً للموارد (وحدة المعالجة المركزية و / أو الذاكرة). أصدرت Microsoft تحديثاً (**1.1.19200.5**) يعمل على حل الأخطاء التي تم تقديمها في الإصدار السابق. يوصى العملاء بالتحديث إلى هذا المحرك الجديد لمحرك مكافحة الفيروسات (**1.1.19200.5**). لضمان إصلاح أي مشكلات في الأداء بشكل كامل، يوصى بإعادة تشغيل الأجهزة بعد تطبيق التحديث. لمزيد من المعلومات، راجع [إصدارات النظام الأساسي والمحرك الشهرية](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 **ينطبق على:**
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -105,7 +105,7 @@ SignatureUpdateInterval
 - [واجهات برمجة تطبيقات Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 > [!TIP]
-> إذا كنت’ تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

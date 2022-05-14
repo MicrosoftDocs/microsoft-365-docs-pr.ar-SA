@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: قم بتجزئة جدول مصدر المعلومات الحساسة وتحميله لتطابق البيانات الدقيقة مع أنواع المعلومات الحساسة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4c40802a76ab09dc86dcada5ebfd17187136f42e
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0277a53b74359bdcac1de8fa6013082b991247f4
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760218"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417513"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>تجزئة وتحميل جدول مصدر المعلومات الحساسة للحصول على بيانات مطابقة تماماً لأنواع المعلومات الحساسة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 توضح لك هذه المقالة كيفية تجزئة جدول مصدر المعلومات الحساسة وتحميله.
 

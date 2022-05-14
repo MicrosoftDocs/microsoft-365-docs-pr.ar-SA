@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 76f6f1cda9b2def0c18be8c368da15645994eece
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 760c3b7ca646b02813b5d14086f5d94fc9aec72c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787963"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418643"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>إدارة برنامج الحماية من الفيروسات من Microsoft Defender في شركتك
 
@@ -31,11 +31,11 @@ ms.locfileid: "64787963"
 **ينطبق على:**
 
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 يمكنك إدارة برنامج الحماية من الفيروسات من Microsoft Defender وتكوينها باستخدام الأدوات التالية:
@@ -49,7 +49,7 @@ ms.locfileid: "64787963"
 
 توفر المقالات التالية مزيدا من المعلومات والارتباطات والموارد لاستخدام هذه الأدوات لإدارة برنامج الحماية من الفيروسات من Microsoft Defender وتكوينها.
 
-|الماده|الوصف|
+|مقالة|الوصف|
 |:---|:---|
 |[إدارة برنامج الحماية من الفيروسات من Microsoft Defender باستخدام Microsoft Intune Microsoft Endpoint Configuration Manager](use-intune-config-manager-microsoft-defender-antivirus.md)|معلومات حول استخدام Intune و Configuration Manager لنشر وإدارة والإبلاغ وتكوين برنامج الحماية من الفيروسات من Microsoft Defender|
 |[إدارة برنامج الحماية من الفيروسات من Microsoft Defender باستخدام إعدادات نهج المجموعة](use-group-policy-microsoft-defender-antivirus.md)|قائمة بكافة إعدادات نهج المجموعة الموجودة في قوالب ADMX|
@@ -59,10 +59,10 @@ ms.locfileid: "64787963"
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)

@@ -20,12 +20,12 @@ ms.custom:
 description: تتضمن Microsoft Defender لـ Office 365 خزينة المرفقات وارتباطات خزينة وأدوات مكافحة التصيد الاحتيالي المتقدمة وأدوات إعداد التقارير وقدرات التحليل الذكي للمخاطر.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a181f8ef6bb7ca018fb9ddf0f0adc4fe565b73e1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9be72102f9813394cb2d9eab1e4d163c6d87bd4b
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941534"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417809"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender لـ Office 365
 
@@ -91,7 +91,11 @@ Microsoft Defender لـ Office 365 تحمي مؤسستك من التهديدات
 
 - إذا كان اشتراكك الحالي لا يتضمن Microsoft Defender لـ Office 365 وتريده، [فاتصل بالمبيعات لبدء نسخة تجريبية](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)، واكتشف كيف يمكن أن يعمل Microsoft Defender لـ Office 365 في مؤسستك.
 
-- يتمتع عملاء Microsoft Defender for Office 365 P2 بإمكانية الوصول إلى **تكامل Microsoft 365 Defender** لاكتشاف الحوادث والتنبيهات ومراجعتها والرد عليها بكفاءة.
+- يتمتع عملاء Microsoft Defender for Office 365 P2 بإمكانية الوصول إلى **تكامل Microsoft 365 Defender** لاكتشاف الحوادث والتنبيهات ومراجعتها والرد عليها بكفاءة. 
+
+شاهد هذا الفيديو القصير لمعرفة المزيد حول قدرات Microsoft Defender لـ Office 365 P2 التي انتقلت إلى مدخل Microsoft 365 Defender.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfx]
+
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>تكوين نهج Microsoft Defender لـ Office 365
 
@@ -147,7 +151,7 @@ Microsoft Defender لـ Office 365 تحمي مؤسستك من التهديدات
 |المسؤول العام (إدارة المؤسسة)|يمكنك تعيين هذا الدور في Azure Active Directory أو في مدخل Microsoft 365 Defender. لمزيد من المعلومات، راجع [الأذونات في مدخل Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
 |مسؤول الأمان|يمكنك تعيين هذا الدور في Azure Active Directory أو في مدخل Microsoft 365 Defender. لمزيد من المعلومات، راجع [الأذونات في مدخل Microsoft 365 Defender](permissions-microsoft-365-security-center.md).|
 |إدارة المؤسسة في Exchange Online|[الأذونات في Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|البحث والإزالة|يتوفر هذا الدور فقط في مدخل Microsoft 365 Defender أو مدخل توافق Microsoft Purview. لمزيد من المعلومات، راجع [الأذونات في مدخل Microsoft 365 Defender](permissions-microsoft-365-security-center.md) [والأذونات في مدخل توافق Microsoft Purview](../../compliance/microsoft-365-compliance-center-permissions.md).|
+|البحث والإزالة|يتوفر هذا الدور فقط في مدخل Microsoft 365 Defender أو مدخل التوافق في Microsoft Purview. لمزيد من المعلومات، راجع [الأذونات في مدخل Microsoft 365 Defender](permissions-microsoft-365-security-center.md) [والأذونات في مدخل التوافق في Microsoft Purview](../../compliance/microsoft-365-compliance-center-permissions.md).|
 |||
 
 ## <a name="get-microsoft-defender-for-office-365"></a>الحصول على Microsoft Defender لـ Office 365

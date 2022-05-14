@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c83213278c7f9bc3b63c141e4d964475d64599d1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: dcc04b1c06e5ca2900cca9f0a66fe5b041af734e
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286615"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417161"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>عرض تقارير أمان البريد الإلكتروني في مدخل Microsoft 365 Defender
 
@@ -43,6 +43,9 @@ ms.locfileid: "65286615"
 > تتطلب بعض التقارير الموجودة في صفحة **تقارير التعاون & البريد الإلكتروني** Microsoft Defender لـ Office 365. للحصول على معلومات حول هذه التقارير، راجع [عرض تقارير Defender لـ Office 365 في مدخل Microsoft 365 Defender](view-reports-for-mdo.md).
 >
 > تتوفر الآن التقارير المتعلقة بتدفق البريد في مركز إدارة Exchange. لمزيد من المعلومات حول هذه التقارير، راجع [تقارير تدفق البريد في مركز إدارة Exchange الجديد](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+
+شاهد هذا الفيديو القصير لمعرفة كيفية استخدام التقارير لفهم فعالية Defender لـ Office 365 في مؤسستك.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBkxB]
 
 ## <a name="email-security-report-changes-in-the-microsoft-365-defender-portal"></a>تغييرات تقرير أمان البريد الإلكتروني في مدخل Microsoft 365 Defender
 
@@ -352,7 +355,7 @@ ms.locfileid: "65286615"
 - **تمرير**
 - **تفشل**
 - **SoftPass**
-- **بلا**
+- **None**
 - **الاخري**
 
 عند المرور فوق يوم (نقطة بيانات) في المخطط، يمكنك معرفة عدد الرسائل المخادعة التي تم اكتشافها ولماذا.
@@ -364,7 +367,7 @@ ms.locfileid: "65286615"
   - **تمرير**
   - **تفشل**
   - **SoftPass**
-  - **بلا**
+  - **None**
   - **الاخري**
 - **نوع الانتحال**: **داخلي** **وخارجي**
 
@@ -1027,7 +1030,7 @@ ms.locfileid: "65286615"
 
 لتجميع الإدخالات، انقر فوق **"تجميع"** وحدد إحدى القيم التالية من القائمة المنسدلة:
 
-- **بلا**
+- **None**
 - **السبب**
 - **المرسل**
 - **تم الإبلاغ عنها من قبل**

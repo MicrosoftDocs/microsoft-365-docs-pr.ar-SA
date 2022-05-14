@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: يمكن أن يساعدك التنقل الأساسي والأمان على تأمين الأجهزة المحمولة الخاصة بك في مؤسستك وإدارتها.
-ms.openlocfilehash: cb724a4f7d5b4118bb50b0aeaf1138a4a1aebfb6
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 74d2a2d6034b1e893987e2ede47a96bc00658f47
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129123"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415140"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>إدارة الأجهزة المسجلة في إدارة الجهاز الأجهزة المحمولة في Microsoft 365
 
 تساعدك إدارة الأجهزة المحمولة المضمنة Microsoft 365 على تأمين الأجهزة المحمولة للمستخدمين وإدارتها مثل أجهزة iPhone وiPad وAndroid والهواتف Windows. الخطوة الأولى هي تسجيل الدخول إلى Microsoft 365 وإعداد Basic Mobility and Security. لمزيد من المعلومات، راجع [إعداد Basic Mobility and Security](set-up.md).
 
-بعد إعداده، يجب على الأشخاص في مؤسستك تسجيل أجهزتهم في الخدمة. لمزيد من المعلومات، راجع [تسجيل جهازك المحمول باستخدام Basic Mobility and Security](enroll-your-mobile-device.md).ثم يمكنك استخدام Basic Mobility and Security للمساعدة في إدارة الأجهزة في مؤسستك. على سبيل المثال، يمكنك استخدام نهج أمان الجهاز للمساعدة في الحد من الوصول إلى البريد الإلكتروني أو الخدمات الأخرى، وعرض تقارير الأجهزة، ومسح الجهاز عن بعد. ستنتقل عادة إلى مركز توافق & الأمان لتنفيذ هذه المهام. لمزيد من المعلومات، راجع مدخل [توافق Microsoft Purview](../../compliance/microsoft-365-compliance-center.md).
+بعد إعداده، يجب على الأشخاص في مؤسستك تسجيل أجهزتهم في الخدمة. لمزيد من المعلومات، راجع [تسجيل جهازك المحمول باستخدام Basic Mobility and Security](enroll-your-mobile-device.md). ثم يمكنك استخدام Basic Mobility and Security للمساعدة في إدارة الأجهزة في مؤسستك. على سبيل المثال، يمكنك استخدام نهج أمان الجهاز للمساعدة في الحد من الوصول إلى البريد الإلكتروني أو الخدمات الأخرى، وعرض تقارير الأجهزة، ومسح الجهاز عن بعد. ستنتقل عادة إلى مركز توافق & الأمان لتنفيذ هذه المهام. لمزيد من المعلومات، راجع [مدخل التوافق في Microsoft Purview](../../compliance/microsoft-365-compliance-center.md).
 
 ## <a name="device-management-tasks"></a>مهام إدارة الجهاز
 

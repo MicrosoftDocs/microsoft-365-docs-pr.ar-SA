@@ -16,12 +16,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e8cda6f387814ed6ec613db8cb53ff030243a92b
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 53b24f0566b9b9d43ad725a832bb1e0fa8013923
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789396"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416365"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>استخدام إعدادات نهج المجموعة لتكوين برنامج الحماية من الفيروسات من Microsoft Defender وإدارتها
 
@@ -31,10 +31,10 @@ ms.locfileid: "64789396"
 **ينطبق على:**
 
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 يمكنك استخدام [نهج المجموعة](/windows/win32/srvnodes/group-policy) لتكوين وإدارة برنامج الحماية من الفيروسات من Microsoft Defender على نقاط النهاية.
@@ -66,7 +66,7 @@ ms.locfileid: "64789396"
 
 <br/><br/>
 
-|موقع|اعداد|الماده|
+|موقع|اعداد|مقالة|
 |---|---|---|
 |واجهة العميل|تمكين وضع واجهة المستخدم بلا رأس|[منع المستخدمين من رؤية واجهة مستخدم برنامج الحماية من الفيروسات من Microsoft Defender أو التفاعل معها](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
 |واجهة العميل|عرض نص إضافي للعملاء عندما يحتاجون إلى تنفيذ إجراء|[تكوين الإعلامات التي تظهر على نقاط النهاية](configure-notifications-microsoft-defender-antivirus.md)|
@@ -115,9 +115,9 @@ ms.locfileid: "64789396"
 |الجذر|تحديد أوقات المهام المجدولة عشوائيا|[تكوين عمليات الفحص المجدولة برنامج الحماية من الفيروسات من Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |المسح الضوئي|السماح للمستخدمين بإيقاف الفحص مؤقتا|[منع المستخدمين من رؤية واجهة مستخدم برنامج الحماية من الفيروسات من Microsoft Defender أو التفاعل معها](prevent-end-user-interaction-microsoft-defender-antivirus.md) (غير معتمدة في Windows 10)|
 |المسح الضوئي|التحقق من أحدث تعريفات الفيروسات وبرامج التجسس قبل تشغيل فحص مجدول|[إدارة التحديثات التلقائية المستندة إلى الحدث](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|المسح الضوئي|تحديد عدد الأيام التي يتم بعدها فرض الفحص الإلحاقي|[إدارة التحديثات لنقاط النهاية غير المحدثة](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|المسح الضوئي|تشغيل اللحاق بالمسح الضوئي الكامل|[إدارة التحديثات لنقاط النهاية غير المحدثة](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|المسح الضوئي|تشغيل اللحاق بالمسح الضوئي السريع|[إدارة التحديثات لنقاط النهاية غير المحدثة](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|المسح الضوئي|تحديد عدد الأيام التي يتم بعدها فرض الفحص الإلحاقي|[إدارة تحديثات نقاط النهاية غير](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|المسح الضوئي|تشغيل اللحاق بالمسح الضوئي الكامل|[إدارة تحديثات نقاط النهاية غير](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|المسح الضوئي|تشغيل اللحاق بالمسح الضوئي السريع|[إدارة تحديثات نقاط النهاية غير](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
 |المسح الضوئي|تكوين تجاوز الإعداد المحلي للحد الأقصى للنسبة المئوية لاستخدام وحدة المعالجة المركزية|[منع المستخدمين أو السماح لهم بتعديل إعدادات النهج محليا](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |المسح الضوئي|تكوين تجاوز الإعداد المحلي ليوم فحص الجدول|[منع المستخدمين أو السماح لهم بتعديل إعدادات النهج محليا](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |المسح الضوئي|تكوين تجاوز الإعداد المحلي لوقت الفحص السريع المجدول|[منع المستخدمين أو السماح لهم بتعديل إعدادات النهج محليا](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -143,33 +143,33 @@ ms.locfileid: "64789396"
 |المسح الضوئي|تحديد وقت الفحص السريع اليومي|[تكوين عمليات الفحص المجدولة برنامج الحماية من الفيروسات من Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |المسح الضوئي|تحديد وقت اليوم لتشغيل فحص مجدول|[تكوين عمليات الفحص المجدولة برنامج الحماية من الفيروسات من Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |المسح الضوئي|بدء الفحص المجدول فقط عندما يكون الكمبيوتر قيد التشغيل ولكن ليس قيد الاستخدام|[تكوين عمليات الفحص المجدولة برنامج الحماية من الفيروسات من Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|السماح بتحديثات التحليل الذكي للأمان من Microsoft Update|[إدارة التحديثات للأجهزة المحمولة والأجهزة الظاهرية (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|السماح بتحديثات التحليل الذكي للأمان عند التشغيل على طاقة البطارية|[إدارة التحديثات للأجهزة المحمولة والأجهزة الظاهرية (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|السماح للإعلامات بتعطيل التقارير المستندة إلى التعريفات إلى Microsoft MAPS|[إدارة التحديثات التلقائية المستندة إلى الحدث](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|السماح بتحديثات التحليل الذكي للأمان في الوقت الحقيقي استنادا إلى التقارير إلى Microsoft MAPS|[إدارة التحديثات التلقائية المستندة إلى الحدث](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|التحقق من أحدث تعريفات الفيروسات وبرامج التجسس عند بدء التشغيل|[إدارة التحديثات التلقائية المستندة إلى الحدث](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|تحديد مشاركات الملفات لتنزيل تحديثات معلومات الأمان|[إدارة تحديثات معلومات الأمان وحماية برنامج الحماية من الفيروسات من Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|تحديد عدد الأيام التي بعدها يلزم تحديث معلومات الأمان|[إدارة التحديثات لنقاط النهاية غير المحدثة](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|تحديد عدد الأيام قبل اعتبار تعريفات برامج التجسس قديمة|[إدارة التحديثات لنقاط النهاية غير المحدثة](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|تحديد عدد الأيام قبل اعتبار تعريفات الفيروسات قديمة|[إدارة التحديثات لنقاط النهاية غير المحدثة](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|تحديد ترتيب المصادر لتنزيل تحديثات معلومات الأمان|[إدارة تحديثات معلومات الأمان وحماية برنامج الحماية من الفيروسات من Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|بدء تحديث معلومات الأمان عند بدء التشغيل|[إدارة التحديثات التلقائية المستندة إلى الحدث](manage-event-based-updates-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|تحديد يوم الأسبوع للتحقق من وجود تحديثات التحليل الذكي للأمان|[إدارة وقت تنزيل تحديثات الحماية وتطبيقها](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|تحديد الفاصل الزمني للتحقق من تحديثات معلومات الأمان|[إدارة وقت تنزيل تحديثات الحماية وتطبيقها](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|تحديد الوقت للتحقق من تحديثات معلومات الأمان|[إدارة وقت تنزيل تحديثات الحماية وتطبيقها](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
-|تحديثات معلومات الأمان|تشغيل الفحص بعد تحديث معلومات الأمان|[تكوين عمليات الفحص المجدولة برنامج الحماية من الفيروسات من Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|السماح بتحديثات التحليل الذكي للأمان من Microsoft Update|[إدارة التحديثات للأجهزة المحمولة والأجهزة الظاهرية (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|السماح بتحديثات التحليل الذكي للأمان عند التشغيل على طاقة البطارية|[إدارة التحديثات للأجهزة المحمولة والأجهزة الظاهرية (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|السماح للإعلامات بتعطيل التقارير المستندة إلى التعريفات إلى Microsoft MAPS|[إدارة التحديثات التلقائية المستندة إلى الحدث](manage-event-based-updates-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|السماح بتحديثات التحليل الذكي للأمان في الوقت الحقيقي استنادا إلى التقارير إلى Microsoft MAPS|[إدارة التحديثات التلقائية المستندة إلى الحدث](manage-event-based-updates-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|التحقق من أحدث تعريفات الفيروسات وبرامج التجسس عند بدء التشغيل|[إدارة التحديثات التلقائية المستندة إلى الحدث](manage-event-based-updates-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|تحديد مشاركات الملفات لتنزيل تحديثات معلومات الأمان|[إدارة تحديثات معلومات الأمان وحماية برنامج الحماية من الفيروسات من Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|تحديد عدد الأيام التي بعدها يلزم تحديث معلومات الأمان|[إدارة تحديثات نقاط النهاية غير](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|تحديد عدد الأيام قبل اعتبار تعريفات برامج التجسس قديمة|[إدارة تحديثات نقاط النهاية غير](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|تحديد عدد الأيام قبل اعتبار تعريفات الفيروسات قديمة|[إدارة تحديثات نقاط النهاية غير](manage-outdated-endpoints-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|تحديد ترتيب المصادر لتنزيل تحديثات معلومات الأمان|[إدارة تحديثات معلومات الأمان وحماية برنامج الحماية من الفيروسات من Microsoft Defender](manage-protection-updates-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|بدء تحديث معلومات الأمان عند بدء التشغيل|[إدارة التحديثات التلقائية المستندة إلى الحدث](manage-event-based-updates-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|تحديد يوم الأسبوع للتحقق من وجود تحديثات التحليل الذكي للأمان|[إدارة وقت تنزيل تحديثات الحماية وتطبيقها](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|تحديد الفاصل الزمني للتحقق من تحديثات معلومات الأمان|[إدارة وقت تنزيل تحديثات الحماية وتطبيقها](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|تحديد الوقت للتحقق من تحديثات معلومات الأمان|[إدارة وقت تنزيل تحديثات الحماية وتطبيقها](manage-protection-update-schedule-microsoft-defender-antivirus.md)|
+|تحديثات التحليل الذكي لمخاطر الأمان|تشغيل الفحص بعد تحديث معلومات الأمان|[تكوين عمليات الفحص المجدولة برنامج الحماية من الفيروسات من Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)|
 |التهديدات|تحديد مستويات التنبيه للمخاطر التي لا يجب اتخاذ إجراء افتراضي عند الكشف عنها|[تكوين المعالجة لمسح برنامج الحماية من الفيروسات من Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
 |التهديدات|تحديد التهديدات التي لا ينبغي اتخاذ إجراء افتراضي عليها عند الكشف عنها|[تكوين المعالجة لمسح برنامج الحماية من الفيروسات من Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md)|
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>راجع أيضًا
 

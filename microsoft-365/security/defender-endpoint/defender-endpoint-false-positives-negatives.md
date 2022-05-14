@@ -23,12 +23,12 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: d7477c2006acd04008e6cb56cb22261a4db4a92b
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 81c41abffc6ec01c127b901ac63b3a5d3b6c5732
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789899"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418445"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>معالجة الإيجابيات/السلبيات الخاطئة في Microsoft Defender لنقطة النهاية
 
@@ -36,10 +36,10 @@ ms.locfileid: "64789899"
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 في حلول حماية نقطة النهاية، فإن الإيجابية الخاطئة هي كيان، مثل ملف أو عملية، تم اكتشافه وتحديده على أنه ضار، على الرغم من أن الكيان ليس في الواقع تهديدا. السالب الخاطئ هو كيان لم يتم الكشف عنه كتهديد، على الرغم من أنه في الواقع ضار. يمكن أن تحدث الإيجابيات/السلبيات الخاطئة مع أي حل للحماية من التهديدات، بما [في ذلك Microsoft Defender لنقطة النهاية](microsoft-defender-endpoint.md).
@@ -235,7 +235,7 @@ ms.locfileid: "64789899"
 
 2. اختر **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
 
-3. حدد نظاما أساسيا (مثل **Windows 10 والإي وقت لاحق** أو **macOS** أو **Windows 10 وخادم Windows**).
+3. حدد نظاما أساسيا (مثل **Windows 10 والإي وقت لاحق** **أو macOS** أو **Windows 10 وخادم Windows**).
 
 4. بالنسبة **لملف التعريف**، حدد **برنامج الحماية من الفيروسات من Microsoft Defender الاستثناءات**، ثم اختر **"إنشاء**".
 
@@ -460,13 +460,13 @@ ms.locfileid: "64789899"
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md) 
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md) 
 
 ## <a name="see-also"></a>راجع أيضًا
 

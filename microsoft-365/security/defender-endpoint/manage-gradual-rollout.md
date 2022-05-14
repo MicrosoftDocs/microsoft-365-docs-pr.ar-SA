@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d8a500babf581cd70b92a39b32a3be0bb5d4acd3
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8f1f2add8196afef6e8bd738586957d7fea15c84
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789371"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416321"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>إدارة عملية الإطلاق التدريجي لتحديثات Microsoft Defender
 
@@ -31,10 +31,10 @@ ms.locfileid: "64789371"
 
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 من المهم التأكد من أن مكونات العميل محدثة لتقديم قدرات الحماية الحرجة ومنع الهجمات.
@@ -85,7 +85,7 @@ ms.locfileid: "64789371"
 
 |اسم القناة|الوصف|Application|
 |---|---|---|
-|خيار التحديث بيتا - الإصدار التجريبي|اختبار التحديثات قبل التحديثات الأخرى|ستكون الأجهزة التي تم تعيينها إلى هذه القناة هي الأولى التي تتلقى تحديثات شهرية جديدة. حدد خيار التحديث بيتا للمشاركة في تحديد المشاكل وإرسالها إلى Microsoft. يتم الاشتراك في الأجهزة الموجودة في برنامج insider Windows في هذه القناة بشكل افتراضي. للاستخدام في بيئات الاختبار فقط.|
+|خيار التحديث بيتا - الإصدار التجريبي|اختبار التحديثات قبل التحديثات الأخرى|ستكون الأجهزة التي تم تعيينها إلى هذه القناة هي الأولى التي تتلقى تحديثات شهرية جديدة. حدد خيار التحديث بيتا للمشاركة في تحديد المشاكل وإرسالها إلى Microsoft. يتم الاشتراك في الأجهزة الموجودة في برنامج Windows Insider في هذه القناة بشكل افتراضي. للاستخدام في بيئات الاختبار فقط.|
 |خيار التحديث الحالي (معاينة)|الحصول على تحديثات التحديث الحالي **في وقت سابق** أثناء الإصدار التدريجي|سيتم تقديم التحديثات للأجهزة التي تم تعيينها إلى هذه القناة في أقرب وقت خلال دورة الإصدار التدريجي. مقترح لبيئات ما قبل الإنتاج/التحقق من الصحة.|
 |خيار التحديث الحالي (مرحلي)|الحصول على تحديثات التحديث الحالي لاحقا أثناء الإصدار التدريجي|سيتم عرض التحديثات على الأجهزة لاحقا أثناء دورة الإصدار التدريجي. مقترح للتطبيق على جزء تمثيلي صغير من محتوى جهازك (~10٪).|
 |خيار التحديث الحالي (واسع)|الحصول على التحديثات في نهاية الإصدار التدريجي|سيتم عرض التحديثات على الأجهزة فقط بعد اكتمال دورة الإصدار التدريجي. مقترح للتطبيق على مجموعة واسعة من الأجهزة في محتوى الإنتاج الخاص بك (~10-100٪).|
@@ -141,10 +141,10 @@ ms.locfileid: "64789371"
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)

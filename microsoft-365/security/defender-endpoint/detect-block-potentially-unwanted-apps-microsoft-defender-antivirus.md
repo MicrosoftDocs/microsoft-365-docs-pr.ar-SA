@@ -16,22 +16,22 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 67f23d31f50dc20e385f36d4ee4a941db14af7ef
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: c7307e7c690e9664f6a848fcd93ed27f1062455a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790669"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418347"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>الكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها وحظرها
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 التطبيقات التي يحتمل أن تكون غير مرغوب فيها (PUA) هي فئة من البرامج التي يمكن أن تتسبب في تشغيل جهازك ببطء، أو عرض إعلانات غير متوقعة، أو في أسوأ الأحوال، تثبيت برامج أخرى قد تكون غير متوقعة أو غير مرغوب فيها. لا يعتبر PUA فيروسا أو برنامجا ضارا أو نوعا آخر من التهديدات، ولكنه قد ينفذ إجراءات على نقاط النهاية التي تؤثر سلبا على أداء نقطة النهاية أو استخدامها. يمكن أن يشير مصطلح *PUA* أيضا إلى تطبيق له سمعة سيئة، كما تم تقييمه من قبل Microsoft Defender لنقطة النهاية، بسبب أنواع معينة من السلوك غير المرغوب فيه.
@@ -209,13 +209,13 @@ DeviceEvents
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>راجع أيضًا
 

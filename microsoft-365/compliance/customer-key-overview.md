@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: في هذه المقالة، ستتعرف على كيفية عمل تشفير الخدمة مع Microsoft Purview Customer Key.
-ms.openlocfilehash: efb82a38c2f3a2e07d695425f36a17eebdbdf5ec
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.openlocfilehash: 3a0533b94cb70c9fc46d6246e99d3f9fdb5eb6e6
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145201"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415074"
 ---
 # <a name="service-encryption-with-microsoft-purview-customer-key"></a>تشفير الخدمة باستخدام مفتاح عميل Microsoft Purview
 
@@ -55,7 +55,7 @@ ms.locfileid: "65145201"
 - معلومات المستخدم والإشارة Exchange Online
 - Exchange Online علب البريد غير المشفرة بالفعل بواسطة علب البريد DEPs
 - تخزين سجل التدقيق الموحد
-- Microsoft Purview حماية البيانات:
+- حماية البيانات في Microsoft Purview:
 
   - بيانات مطابقة البيانات الدقيقة (EDM)، بما في ذلك مخططات ملفات البيانات وحزم القواعد والملوحة المستخدمة لتجزئة البيانات الحساسة. بالنسبة إلى EDM و Microsoft Teams، يقوم DEP متعدد حمل العمل بتشفير البيانات الجديدة من وقت تعيين DEP للمستأجر. بالنسبة Exchange Online، يقوم Customer Key بتشفير كافة البيانات الموجودة والجديدة.
 

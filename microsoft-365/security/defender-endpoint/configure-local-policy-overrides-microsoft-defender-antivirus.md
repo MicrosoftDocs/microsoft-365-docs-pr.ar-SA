@@ -16,12 +16,12 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ae90694bab8191c2ad83fa1de7563bc2ba7643e8
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8de4450247d917f0e4d5023febf6d41c80f0688d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789745"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416629"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>منع المستخدمين أو السماح لهم بتعديل إعدادات نهج برنامج الحماية من الفيروسات من Microsoft Defender محليا
 
@@ -29,10 +29,10 @@ ms.locfileid: "64789745"
 **ينطبق على:**
 
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 بشكل افتراضي، ستمنع إعدادات برنامج الحماية من الفيروسات من Microsoft Defender التي يتم نشرها عبر عنصر نهج المجموعة إلى نقاط النهاية في الشبكة المستخدمين من تغيير الإعدادات محليا. يمكنك تغيير هذا في بعض المثيلات.
@@ -63,7 +63,7 @@ ms.locfileid: "64789745"
 
 <br/><br/>
 
-| موقع | اعداد | الماده |
+| موقع | اعداد | مقالة |
 |---|---|---|---|
 | خرائط |تكوين تجاوز الإعداد المحلي لإعداد التقارير إلى Microsoft MAPS|[تمكين الحماية المقدمة من السحابة](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | العزل|تكوين تجاوز الإعداد المحلي لإزالة العناصر من مجلد العزل|[تكوين المعالجة لإجراء عمليات الفحص](configure-remediation-microsoft-defender-antivirus.md) |
@@ -104,13 +104,13 @@ ms.locfileid: "64789745"
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

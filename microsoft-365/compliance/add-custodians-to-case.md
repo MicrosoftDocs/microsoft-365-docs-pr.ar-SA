@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية استخدام أداة إدارة الوصي المضمنة في Microsoft Purview eDiscovery (Premium) لتنسيق مهام سير العمل وتحديد مصادر البيانات ذات الصلة في حالة ما.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3810880ca414efaaa3471c65d2c8c7b8d2956120
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 59caac668972968ae3eada2d52d4a5fff8abeae0
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093207"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416101"
 ---
 # <a name="add-custodians-to-an-ediscovery-premium-case"></a>إضافة أمناء حفظ إلى حالة eDiscovery (Premium)
 
@@ -48,7 +48,7 @@ ms.locfileid: "65093207"
 
 1. انتقل إلى [https://compliance.microsoft.com](https://compliance.microsoft.com) حساب مستخدم تم تعيين أذونات eDiscovery المناسبة له وسجل الدخول إليه.
 
-2. في جزء التنقل الأيمن من مدخل توافق Microsoft Purview، حدد **eDiscoveryeDiscovery** >  **(Premium)**، وحدد علامة التبويب [**"الحالات**](https://go.microsoft.com/fwlink/p/?linkid=2173764)".
+2. في جزء التنقل الأيمن من مدخل التوافق في Microsoft Purview، حدد **eDiscoveryeDiscovery** >  **(Premium)**، وحدد علامة التبويب [**"حالات**](https://go.microsoft.com/fwlink/p/?linkid=2173764)".
 
 3. حدد الحالة التي تريد إضافة أمناء إليها.
 

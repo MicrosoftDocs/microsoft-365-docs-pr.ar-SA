@@ -15,17 +15,17 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 4f6c43da4940ddee099c515a5dc8889cb5aca62b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9af3694f530660ead6f10008e1642990a20cc0a6
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101392"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416607"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>إدارة مصادر تحديثات برنامج الحماية من الفيروسات من Microsoft Defender الحماية
 
 > [!IMPORTANT]
-> قد يكون العملاء الذين طبقوا تحديث محرك Microsoft Defender مارس 2022 (**1.1.19100.5**) قد واجهوا استخداما عاليا للموارد (وحدة المعالجة المركزية و/أو الذاكرة). أصدرت Microsoft تحديثا (**1.1.19200.5**) يحل الأخطاء التي تم تقديمها في الإصدار السابق. يوصى للعملاء بالتحديث إلى هذا الإصدار الجديد من محرك الحماية من الفيروسات (**1.1.19200.5**). لضمان إصلاح أي مشكلات في الأداء بشكل كامل، يوصى بإعادة تشغيل الأجهزة بعد تطبيق التحديث. لمزيد من المعلومات، راجع [إصدارات النظام الأساسي والمحرك الشهرية](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
+> قد يكون العملاء الذين قاموا بتطبيق تحديث محرك Microsoft Defender لشهر مارس 2022 (**1.1.19100.5**) قد واجهوا استخداماً كبيراً للموارد (وحدة المعالجة المركزية و / أو الذاكرة). أصدرت Microsoft تحديثاً (**1.1.19200.5**) يعمل على حل الأخطاء التي تم تقديمها في الإصدار السابق. يوصى العملاء بالتحديث إلى هذا المحرك الجديد لمحرك مكافحة الفيروسات (**1.1.19200.5**). لضمان إصلاح أي مشكلات في الأداء بشكل كامل، يوصى بإعادة تشغيل الأجهزة بعد تطبيق التحديث. لمزيد من المعلومات، راجع [إصدارات النظام الأساسي والمحرك الشهرية](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 **ينطبق على:**
 
@@ -287,7 +287,7 @@ SignatureDefinitionUpdateFileSharesSource
     > لا تقم بإضافة المجلد x64 (أو x86) في المسار. تضيفها عملية mpcmdrun.exe تلقائيا.
 
 > [!TIP]
-> إذا كنت’ تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

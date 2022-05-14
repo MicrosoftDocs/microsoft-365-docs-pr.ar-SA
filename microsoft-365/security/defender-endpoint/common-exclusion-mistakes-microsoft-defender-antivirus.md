@@ -16,22 +16,22 @@ ms.technology: mde
 ms.topic: article
 ms.date: 10/19/2021
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b5dc8832839c86fee98e9f27264b70e6a63f380c
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 23c079f8f845e6116bc39b9edb3fb186883ef576
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790691"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418215"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>الأخطاء الشائعة التي يجب تجنبها عند تحديد الاستثناءات
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender 
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
-- ماك
+- macOS
 - ينكس
 
 يمكنك تحديد قائمة استبعاد للعناصر التي لا تريد برنامج الحماية من الفيروسات من Microsoft Defender فحصها. يمكن أن تحتوي هذه العناصر المستبعدة على تهديدات تجعل جهازك عرضة للخطر. تصف هذه المقالة بعض الأخطاء الشائعة التي يجب تجنبها عند تعريف الاستثناءات.
@@ -106,7 +106,7 @@ ms.locfileid: "64790691"
 
 `C:\Windows\Temp\*`
 
-#### <a name="linux-and-macos-platforms"></a>أنظمة Linux وmacOS الأساسية
+#### <a name="linux-and-macos-platforms"></a>Linux وأنظمة macOS الأساسية
 
 `/`
 
@@ -273,7 +273,7 @@ ms.locfileid: "64790691"
 
 `windbg.exe`
 
-#### <a name="linux-and-macos-platforms"></a>أنظمة Linux وmacOS الأساسية
+#### <a name="linux-and-macos-platforms"></a>Linux وأنظمة macOS الأساسية
 
 `bash`
 
@@ -304,10 +304,10 @@ ms.locfileid: "64790691"
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)

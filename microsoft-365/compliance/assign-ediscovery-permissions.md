@@ -1,5 +1,5 @@
 ---
-title: تعيين أذونات eDiscovery في مدخل توافق Microsoft Purview
+title: تعيين أذونات eDiscovery في مدخل التوافق في Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,26 +16,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: تعيين الأذونات المطلوبة لتنفيذ المهام ذات الصلة ب eDiscovery باستخدام مدخل توافق Microsoft Purview.
+description: تعيين الأذونات المطلوبة لتنفيذ المهام ذات الصلة ب eDiscovery باستخدام مدخل التوافق في Microsoft Purview.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: e764aae4313a8e5d4dfc402e4c1f87eb8c1a5bbb
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 112109d50f0f7e1f11687a325f8756cf2b355e5c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090502"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419429"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>تعيين أذونات eDiscovery في مدخل التوافق
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-إذا كنت تريد أن يستخدم الأشخاص أيا من [الأدوات ذات الصلة ب eDiscovery](ediscovery.md) في مدخل توافق Microsoft Purview، يجب عليك تعيين الأذونات المناسبة لهم. أسهل طريقة للقيام بذلك هي إضافة الشخص مجموعة الأدوار المناسبة في صفحة **الأذونات** في مركز التوافق. يصف هذا الموضوع الأذونات المطلوبة لتنفيذ مهام eDiscovery.
-  
+إذا كنت تريد أن يستخدم الأشخاص أيا من [الأدوات المتعلقة ب eDiscovery](ediscovery.md) في مدخل التوافق في Microsoft Purview، يجب عليك تعيين الأذونات المناسبة لهم. أسهل طريقة للقيام بذلك هي إضافة الشخص مجموعة الأدوار المناسبة في صفحة **الأذونات** في مدخل التوافق. يصف هذا الموضوع الأذونات المطلوبة لتنفيذ مهام eDiscovery.
+
+> [!TIP]
+> يمكنك عرض الأذونات الخاصة بك على صفحة نظرة عامة على eDiscovery (Premium) في مدخل التوافق. يجب أن يكون لديك دور واحد على الأقل تم تعيينه لعرض الأذونات الخاصة بك.
+
 تسمى مجموعة الأدوار الأساسية المتعلقة ب eDiscovery في مدخل التوافق **eDiscovery Manager**. هناك مجموعتان فرعيتان ضمن مجموعة الأدوار هذه.
   
-- **eDiscovery Manager** - يمكن لمدير eDiscovery استخدام أدوات البحث eDiscovery للبحث في مواقع المحتوى في المؤسسة، وتنفيذ إجراءات مختلفة متعلقة بالبحث مثل معاينة نتائج البحث وتصديرها. يمكن للأعضاء أيضا إنشاء الحالات وإدارتها في Microsoft Purview eDiscovery (قياسي) وMicrosoft Purview eDiscovery (Premium)، وإضافة أعضاء وإزالتها إلى حالة ما، وإنشاء عمليات احتجاز حالة، وتشغيل عمليات البحث المقترنة بالحالة، والوصول إلى بيانات الحالة. يمكن لمديري eDiscovery الوصول إلى الحالات التي يقومون بإنشائها وإدارتها فقط. لا يمكنهم الوصول إلى الحالات التي أنشأها مديرو eDiscovery الآخرون أو إدارتها.
+- **eDiscovery Manager** - يمكن لمدير eDiscovery استخدام أدوات البحث eDiscovery للبحث في مواقع المحتوى في المؤسسة، وتنفيذ إجراءات مختلفة متعلقة بالبحث مثل معاينة نتائج البحث وتصديرها. يمكن للأعضاء أيضا إنشاء الحالات وإدارتها في Microsoft Purview eDiscovery (قياسي) Microsoft Purview eDiscovery (Premium)، وإضافة أعضاء وإزالتها إلى حالة ما، وإنشاء عمليات احتجاز حالة، وتشغيل عمليات البحث المقترنة بقضية، والوصول إلى بيانات الحالة. يمكن لمديري eDiscovery الوصول إلى الحالات التي يقومون بإنشائها وإدارتها فقط. لا يمكنهم الوصول إلى الحالات التي أنشأها مديرو eDiscovery الآخرون أو إدارتها.
   
 - **مسؤول eDiscovery** - مسؤول eDiscovery هو عضو في مجموعة أدوار eDiscovery Manager، ويمكنه تنفيذ نفس المهام المتعلقة بالبحث في المحتوى وإدارة الحالة التي يمكن أن يقوم بها مدير eDiscovery. بالإضافة إلى ذلك، يمكن لمسؤول eDiscovery:
   
@@ -135,7 +138,7 @@ ms.locfileid: "65090502"
 
 يتيح الدور للمستخدمين تصدير نتائج البحث في المحتوى إلى كمبيوتر محلي. كما يتيح لهم إعداد نتائج البحث للتحليل في eDiscovery (Premium).
 
-لمزيد من المعلومات حول تصدير نتائج البحث، راجع [تصدير نتائج البحث من مدخل توافق Microsoft Purview](export-search-results.md).
+لمزيد من المعلومات حول تصدير نتائج البحث، راجع [تصدير نتائج البحث من مدخل التوافق في Microsoft Purview](export-search-results.md).
 
 ### <a name="hold"></a>عقد
 

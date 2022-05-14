@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7b76fff060b46cbe13c11eb90f521af61e8900f5
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 53a23751fd53b05b51bf1125dcca98c23f4ba73c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172934"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418237"
 ---
 # <a name="device-discovery-overview"></a>نظرة عامة على اكتشاف الجهاز
 
@@ -113,7 +113,6 @@ ms.locfileid: "65172934"
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="لوحة معلومات توصيات الأمان" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
-
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>استخدام التتبع المتقدم على الأجهزة المكتشفة
 
 يمكنك استخدام استعلامات التتبع المتقدمة للحصول على رؤية على الأجهزة المكتشفة. يمكنك العثور على تفاصيل حول الأجهزة المكتشفة في جدول DeviceInfo، أو المعلومات المتعلقة بالشبكة حول تلك الأجهزة في جدول DeviceNetworkInfo.
@@ -128,19 +127,19 @@ ms.locfileid: "65172934"
 DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
 | where isempty(MergedToDeviceId) // Remove invalidated/merged devices
-| where OnboardingStatus != "Onboarded" 
+| where OnboardingStatus != "Onboarded"
 ```
 
-من خلال استدعاء الدالة **SeenBy** ، في استعلام التتبع المتقدم، يمكنك الحصول على تفاصيل حول الجهاز الملحق الذي شاهده الجهاز المكتشف.يمكن أن تساعد هذه المعلومات في تحديد موقع الشبكة لكل جهاز مكتشف، ثم تساعد في التعرف عليه في الشبكة.  
+من خلال استدعاء الدالة **SeenBy** ، في استعلام التتبع المتقدم، يمكنك الحصول على تفاصيل حول الجهاز الملحق الذي شاهده الجهاز المكتشف. يمكن أن تساعد هذه المعلومات في تحديد موقع الشبكة لكل جهاز مكتشف، ثم تساعد في التعرف عليه في الشبكة.
 
 ```query
 DeviceInfo
-| where OnboardingStatus != "Onboarded" 
-| summarize arg_max(Timestamp, *) by DeviceId  
-| where isempty(MergedToDeviceId)  
-| limit 100 
-| invoke SeenBy() 
-| project DeviceId, DeviceName, DeviceType, SeenBy  
+| where OnboardingStatus != "Onboarded"
+| summarize arg_max(Timestamp, *) by DeviceId 
+| where isempty(MergedToDeviceId) 
+| limit 100
+| invoke SeenBy()
+| project DeviceId, DeviceName, DeviceType, SeenBy
 ```
 
 لمزيد من المعلومات، راجع الدالة [SeeBy()](/microsoft-365/security/defender/advanced-hunting-seenby-function) .

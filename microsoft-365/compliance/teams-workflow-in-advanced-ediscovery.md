@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: تعرف على كيفية الاحتفاظ بالمحتوى وجمعه ومراجعته وتصديره من Microsoft Teams في eDiscovery (Premium).
-ms.openlocfilehash: 36bfcde1b2ee5ad9b088db008249cdeb1cf90eb4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 46fe8491533f6d2fa6954eab76758213eaa7d30d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092260"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414855"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>سير عمل eDiscovery (Premium) للمحتوى في Microsoft Teams
 
@@ -70,7 +70,7 @@ ms.locfileid: "65092260"
 
 1. انتقل إلى <https://compliance.microsoft.com> وسجل الدخول.
 
-2. في جزء التنقل الأيمن من مدخل توافق Microsoft Purview، انقر فوق **eDiscovery > خيارات متقدمة**.
+2. في جزء التنقل الأيمن من مدخل التوافق في Microsoft Purview، انقر فوق **eDiscovery > خيارات متقدمة**.
 
 3. في صفحة **eDiscovery (Premium)،** انقر فوق علامة التبويب **"حالات**"، ثم انقر فوق **"إنشاء حالة**".
 

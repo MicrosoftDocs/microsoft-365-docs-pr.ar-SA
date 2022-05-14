@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات YouTube وأرشفتها من Veritas إلى Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني وeDiscovery ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: 1a3dab65ecd4595962d6e78e94d154ec195ed30f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 27cf5f4bf3c35fd4bc61f754eb43048d4b4b470a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317535"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418817"
 ---
 # <a name="set-up-a-connector-to-archive-youtube-data"></a>إعداد موصل أرشفة بيانات YouTube
 

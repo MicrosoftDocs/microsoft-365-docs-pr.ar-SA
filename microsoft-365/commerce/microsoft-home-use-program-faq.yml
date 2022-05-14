@@ -19,12 +19,12 @@ metadata:
   search.appverid: MET150
   description: الأسئلة المتداولة حول برنامج الاستخدام المنزلي من Microsoft.
   ms.date: 05/01/2021
-  ms.openlocfilehash: 8f9b3bb1e6bba0bb9b473962bbaf50653f733760
-  ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+  ms.openlocfilehash: 58ebd94bad0e68cd6bfdf231c920a8170430d968
+  ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 04/13/2022
-  ms.locfileid: "64823905"
+  ms.lasthandoff: 05/14/2022
+  ms.locfileid: "65415461"
 title: برنامج الاستخدام المنزلي من Microsoft الأسئلة المتداولة (الأسئلة المتداولة)
 summary: >
   يستخدم عملاء الترخيص المجمع برنامج الاستخدام المنزلي من Microsoft (HUP) على [موقع ويب Microsoft Store للأعمال](https://go.microsoft.com/fwlink/?linkid=2139192).
@@ -46,11 +46,11 @@ sections:
     answer: "يتم تقديم خصومات على اشتراكات Microsoft 365 Family و Personal للشركات المؤهلة في جميع أنحاء العالم مع هذه الاستثناءات:\n\n- لا يتوفر هذا العرض في هذه الأسواق، وهو ماكاو، وماكاو، وفيلاروسيا: هذا العرض غير متوفر في هذه الأسواق.\n- الصين وهونغ كونغ: يتوفر اشتراك لمدة عام واحد في هذه الأسواق. بالنسبة إلى الصين، تفضل بزيارة [Microsoft 365 في الصين](https://www.microsoftstore.com.cn/home-use-program/invite). بالنسبة إلى هونغ كونغ، تفضل بزيارة [شراء Microsoft 365 بسعر مخفض](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- اليابان: Microsoft 365 Family غير متوفر.\n- يتم تقديم خصومات على أجهزة Surface وملحقاته المحددة للشركات المؤهلة في أسواق محددة. \n"
   - question: >
       كيف تتأهل المؤسسة للحصول على خصومات HUP؟
-    answer: "لكي يستفيد الموظفون من الخصم برنامج الاستخدام المنزلي من Microsoft، يحتاجون إلى عنوان بريد إلكتروني صالح للشركة وحساب Microsoft نشط، ويجب أن تفي مؤسستك بأحد المعايير التالية:\n\n- العملاء الذين لديهم ضمان برنامج نشط لتطبيقات Office المؤهلة\n- العملاء الذين لديهم Microsoft 365/Microsoft 365 E3/E5 من ضمان البرنامج\n- العملاء التجاريون والحكومية الذين اشتروا ≥ 2000 ترخيص واحد أو مزيج من Microsoft 365 E3/E5\n- عملاء التعليم وغير الربح\n- العملاء التجاريون والعملاء الحكوميون الذين أنفقوا 250000 دولار أمريكي أو أكثر خلال الأشهر ال 12 الماضية على Power BI المؤهلين Office وأجهزة Surface & الملحقات Windows وEnterprise Mobility \n"
+    answer: "لكي يستفيد الموظفون من الخصم برنامج الاستخدام المنزلي من Microsoft، يحتاجون إلى عنوان بريد إلكتروني صالح للشركة وحساب Microsoft نشط، ويجب أن تفي مؤسستك بأحد المعايير التالية:\n\n- العملاء الذين لديهم ضمان برنامج نشط لتطبيقات Office المؤهلة\n- العملاء الذين لديهم Microsoft 365/Microsoft 365 E3/E5 من ضمان البرنامج\n- العملاء التجاريون والعملاء الحكوميون الذين اشتروا 2000 ترخيص أو أكثر من ترخيص واحد أو مزيج من Microsoft 365 E3/E5\n- عملاء التعليم وغير الربح\n- العملاء التجاريون والعملاء الحكوميون الذين أنفقوا 250000 دولار أمريكي أو أكثر خلال الأشهر ال 12 الماضية على Power BI المؤهلين Office وأجهزة Surface & الملحقات Windows وEnterprise Mobility \n"
   - question: >
-      لماذا يتعين علي إنشاء حساب Azure Active Directory (AAD (دليل Azure النشط)) لاستخدام Home Use Program/Microsoft Store للأعمال؟
+      لماذا يتعين علي إنشاء حساب Azure Active Directory (AAD) لاستخدام Home Use Program/Microsoft Store للأعمال؟
     answer: >
-      لتحديث وتحديث Home Use Program إلى مجموعة أوسع من مزايا الترخيص والمنتج، كنا بحاجة إلى تغيير الطريقة التي نفي بها HUP. يتم استخدام Microsoft Store للأعمال للتحقق من الأهلية وتعيين مزايا HUP، ولهذا يعتمد على AAD (دليل Azure النشط) لتوصيل المعلومات من VLSC والتحقق من صحة مجالات البريد الإلكتروني التي يعمل عليها موظفو مؤسستك. لمزيد من المعلومات، راجع [التسجيل في حسابات Azure AD من خلال Office 365 للأعمال](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
+      لتحديث وتحديث Home Use Program إلى مجموعة أوسع من مزايا الترخيص والمنتج، كنا بحاجة إلى تغيير الطريقة التي نفي بها HUP. يتم استخدام Microsoft Store للأعمال للتحقق من الأهلية وتعيين مزايا HUP، ولهذا يعتمد على AAD لتوصيل المعلومات من VLSC والتحقق من صحة مجالات البريد الإلكتروني التي يعمل عليها موظفو مؤسستك. لمزيد من المعلومات، راجع [التسجيل للحصول على حسابات Azure AD من خلال Office 365 للأعمال](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
   - question: >
       كيف أعمل تصبح مسؤول تكنولوجيا المعلومات المعين لمستأجر مدار؟
     answer: >
@@ -102,7 +102,7 @@ sections:
 
       - حالة الطلب
 
-      - الفواتير
+      - الفوترة
 
       - تثبيت Office
 
@@ -117,4 +117,4 @@ sections:
   - question: >
       ماذا يحدث عندما يترك موظف الشركة؟
     answer: "بالنسبة للموظفين المؤهلين لعرض الاشتراك Microsoft 365 والذين اشتروا من خلال البرنامج، ينطبق السعر المخفض طالما ظل اشتراك الموظف نشطا، بغض النظر عن حالة توظيفهم لدى مؤسستك. ومع ذلك، تنتهي حقوق الاستخدام التجاري الخاصة بهم بمجرد انتهاء توظيفهم. بالنسبة للموظفين المؤهلين لعروض برامج Office 2019، يجب عليهم إلغاء تثبيت برامج Office التي تم شراؤها من خلال Home Use Program بمجرد مغادرة الموظف للشركة. \n"
-additionalContent: "\n## <a name=\"related-content\"></a>محتوى ذي صلة\n  [الأسئلة المتداولة حول برنامج Home Use Program](https://www.microsoft.com/home-use-program/frequently-asked-questions). (مقال)\\\n  [مركز خدمات الترخيص المجمع من Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (صفحة الارتباط)\\\n  [دعم مسؤول Microsoft Store للأعمال](/microsoft-store/) (صفحة الارتباط)\\\n  [Microsoft Store للأعمال](https://go.microsoft.com/fwlink/?linkid=2139192) (صفحة الارتباط)\\\n  [مخزن موظفي Home Use Program](https://www.microsoft.com/home-use-program) (صفحة الارتباط)\\\n  [ترخيص Microsoft: نظرة عامة على برنامج الاستخدام المنزلي](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (صفحة الارتباط)"
+additionalContent: "\n## <a name=\"related-content\"></a>المحتويات ذات الصلة\n  [الأسئلة المتداولة حول برنامج Home Use Program](https://www.microsoft.com/home-use-program/frequently-asked-questions). (مقالة)\\\n  [مركز خدمات الترخيص المجمع من Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (صفحة الارتباط)\\\n  [دعم مسؤول Microsoft Store للأعمال](/microsoft-store/) (صفحة الارتباط)\\\n  [Microsoft Store للأعمال](https://go.microsoft.com/fwlink/?linkid=2139192) (صفحة الارتباط)\\\n  [مخزن موظفي Home Use Program](https://www.microsoft.com/home-use-program) (صفحة الارتباط)\\\n  [ترخيص Microsoft: نظرة عامة على برنامج الاستخدام المنزلي](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (صفحة الارتباط)"

@@ -16,12 +16,12 @@ audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: dd89a2cf6d6a8cd355258376b93ca12c37ad501f
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 01db84f3ddd4eae79cae2fa97400f4d3d78ba8da
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788667"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419737"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>استكشاف مشاكل الأداء المتعلقة بالحماية في الوقت الحقيقي وإصلاحها
 
@@ -30,10 +30,10 @@ ms.locfileid: "64788667"
 
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 إذا كان نظامك يواجه مشاكل عالية في استخدام وحدة المعالجة المركزية أو الأداء تتعلق بخدمة الحماية في الوقت الحقيقي في Microsoft Defender لنقطة النهاية، يمكنك إرسال تذكرة إلى دعم Microsoft. اتبع الخطوات الواردة في [تجميع البيانات التشخيصية برنامج الحماية من الفيروسات من Microsoft Defender](collect-diagnostic-data.md).
@@ -227,7 +227,7 @@ WPR هو جزء من Windows Assessment and Deployment Kit (Windows ADK) ويم�
     > [!TIP]
     > الاحتفاظ بجمع البيانات إلى ما لا يزيد عن خمس دقائق. من دقيقتين إلى ثلاث دقائق هو نطاق جيد حيث يتم جمع الكثير من البيانات.
 
-12. حدد **"حفظ**".
+12. حدد **حفظ**.
 
     :::image type="content" source="images/wpr-10.png" alt-text="الخيار &quot;حفظ&quot;" lightbox="images/wpr-10.png":::
 
@@ -236,7 +236,7 @@ WPR هو جزء من Windows Assessment and Deployment Kit (Windows ADK) ويم�
     :::image type="content" source="images/wpr-12.png" alt-text="الجزء الذي تقوم بتعبئة فيه" lightbox="images/wpr-12.png":::
 
     1. حدد **اسم الملف:** لتحديد مكان حفظ ملف التتبع. بشكل افتراضي، يتم حفظه إلى `%user%\Documents\WPR Files\`.
-    1. حدد **"حفظ**".
+    1. حدد **حفظ**.
 
 14. انتظر بينما يتم دمج التتبع.
 
@@ -286,13 +286,13 @@ WPR هو جزء من Windows Assessment and Deployment Kit (Windows ADK) ويم�
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>راجع أيضًا
 

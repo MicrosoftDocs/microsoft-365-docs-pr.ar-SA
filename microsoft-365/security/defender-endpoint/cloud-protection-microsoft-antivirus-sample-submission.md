@@ -15,20 +15,20 @@ ms.technology: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9192ecae72156531b0c5dccc360b2e2ea7bd343a
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 08f8e0c861bfd19f11c5b011d0a8db41ce3e73bc
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789041"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419935"
 ---
 # <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>حماية السحابة وعينة الإرسال في برنامج الحماية من الفيروسات من Microsoft Defender
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 تستخدم برنامج الحماية من الفيروسات من Microsoft Defender العديد من الآليات الذكية للكشف عن البرامج الضارة. واحدة من أقوى القدرات هي القدرة على تطبيق قوة السحابة للكشف عن البرامج الضارة وإجراء تحليل سريع. تعمل حماية السحابة وإرسال العينة التلقائية مع برنامج الحماية من الفيروسات من Microsoft Defender للمساعدة في الحماية من التهديدات الجديدة والناشئة. 
@@ -67,16 +67,16 @@ ms.locfileid: "64789041"
       1. **إرسال عينات آمنة تلقائيا** (افتراضي)
          - خزينة العينات هي عينات تعتبر غير شائعة تحتوي على بيانات PII مثل: .bat و.scr .dll .exe.
          - إذا كان من المحتمل أن يحتوي الملف على PII، فسيحصل المستخدم على طلب للسماح بإرسال عينة الملف.
-         - هذا الخيار هو الافتراضي على Windows وmacOS وLinux.
+         - هذا الخيار هو الافتراضي على Windows macOS وLinux.
 
       2. **المطالبة دوما**
          - إذا تم تكوينه، ستتم مطالبة المستخدم دائما بالموافقة قبل إرسال الملف
-         - لا يتوفر هذا الإعداد في حماية السحابة في macOS
+         - لا يتوفر هذا الإعداد في macOS حماية السحابة
 
       3. **إرسال جميع العينات تلقائيا**
          - إذا تم تكوينها، فسيتم إرسال جميع العينات تلقائيا
          - إذا كنت ترغب في تضمين نماذج الإرسال وحدات الماكرو المضمنة في مستندات Word، فيجب اختيار "إرسال كافة العينات تلقائيا"
-         - لا يتوفر هذا الإعداد على الحماية السحابية لنظام التشغيل macOS
+         - لا يتوفر هذا الإعداد على macOS حماية السحابة
 
       4. **عدم الإرسال**
          - يمنع "الحظر عند الوهلة الأولى" استنادا إلى تحليل عينة الملف
@@ -111,7 +111,7 @@ ms.locfileid: "64789041"
 | نوع | السمه |
 |:---|:---|
 | سمات الجهاز | `OS version` <br/> `Processor` <br/> `Security settings` |
-| السمات الديناميكية والسياقية | **العملية والتثبيت** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**السلوكيه** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**الاعدادات المحليه** <br/> `Locale setting` <br/> `Geographical location` |
+| السمات الديناميكية والسياقية | **العملية والتثبيت** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**السلوكيه** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**الإعدادات المحلية** <br/> `Locale setting` <br/> `Geographical location` |
 | سمات الملفات الثابتة | **تجزئة جزئية وكاملة** <br/> `ClusterHash` <br/> `Crc16` <br/> `Ctph` <br/> `ExtendedKcrcs` <br/> `ImpHash` <br/> `Kcrc3n` <br/> `Lshash` <br/> `LsHashs` <br/> `PartialCrc1` <br/> `PartialCrc2` <br/> `PartialCrc3` <br/> `Sha1` <br/> `Sha256` <br/><br/>**خصائص الملف** <br/>`FileName` <br/> `FileSize` <br/><br/> **معلومات الموقع** <br/> `AuthentiCodeHash` <br/> `Issuer` <br/> `IssuerHash` <br/> `Publisher` <br/> `Signer` <br/> `SignerHash` |
 
 ## <a name="samples-are-treated-as-customer-data"></a>يتم التعامل مع العينات كبيانات العملاء
@@ -142,13 +142,13 @@ ms.locfileid: "64789041"
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
-> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md)
-> - [Microsoft Defender لنقطة النهاية على Mac](microsoft-defender-endpoint-mac.md)
-> - [إعدادات نهج الحماية من الفيروسات في macOS ل برنامج الحماية من الفيروسات من Microsoft Defender ل Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
+> - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
+> - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender لنقطة النهاية على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="see-also"></a>راجع أيضًا
 
