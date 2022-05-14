@@ -61,7 +61,7 @@
               href: configure-teams-sensitive-protection.md
             - name: تكوين الحماية عالية الحساسية
               href: configure-teams-highly-sensitive-protection.md
-            - name: تكوين فريق مع عزل أمان
+            - name: تكوين فريق بوصف حساسية فريد
               href: secure-teams-security-isolation.md
         - name: تكوين مشاركة خارجية
           items:
