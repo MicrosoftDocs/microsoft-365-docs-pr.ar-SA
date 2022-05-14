@@ -19,13 +19,13 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX
 description: تعرف على كيفية إضافة تراخيص إلى اشتراكك Microsoft 365 الذي تم شراؤه من خلال شريك جهة خارجية، الذي تعرفت عليه Microsoft.
-ms.date: 08/27/2021
-ms.openlocfilehash: 56779a263a42ef385b1d6cf4df608b2243495e9a
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.date: 05/12/2022
+ms.openlocfilehash: a9a449edb5d03a43e39338a9b52df2b40fa9ad7a
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713812"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403239"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>إضافة تراخيص إلى اشتراك تم شراؤه من خلال مركز خدمة الترخيص المجمع
 
@@ -33,12 +33,12 @@ ms.locfileid: "64713812"
   
 ::: moniker range="o365-worldwide"
 
-1. في مركز الإدارة، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">لمنتجاتك</a> .
+1. في مركز المسؤولين، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">منتجاتك</a>.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. في مركز الإدارة، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">لمنتجاتك</a> .
+1. في مركز المسؤولين، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">منتجاتك</a>.
 ::: moniker-end
 
 2. حدد الاشتراك الذي تريد إضافة تراخيص إليه، ثم حدد ارتباط **مركز خدمات الترخيص المجمع (VLSC** ).

@@ -21,13 +21,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: تعتمد التطبيقات والخدمات التي تتلقاها على المنتج Microsoft 365 الذي اشتريته، مثل Microsoft 365 Apps for business.
-ms.date: 07/01/2020
-ms.openlocfilehash: fca1e5239745e28c32c200c76cc229aedeccf2a4
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.date: 05/12/2022
+ms.openlocfilehash: 48186847368af2bc43831c6e27ef7d347981f1b3
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841694"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403217"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>فهم الاشتراكات والتراخيص في Microsoft 365 للأعمال
 
@@ -75,13 +75,13 @@ ms.locfileid: "64841694"
   
 |دور المسؤول|تعيين ترخيص|إلغاء تعيين ترخيص|شراء المزيد من التراخيص|حذف حساب|
 |:-----|:-----|:-----|:-----|:-----|
-|مسؤول الفوترة|لا|لا|نعم|لا|
-|المسؤول العام|نعم|نعم|نعم|نعم|
+|مسؤول فوترة|لا|لا|نعم|لا|
+|مسؤول عمومي|نعم|نعم|نعم|نعم|
 |مسؤول الترخيص|نعم|نعم|لا|لا|
 |مسؤول دعم الخدمة|لا|لا|لا|لا|
 |مسؤول المستخدم|نعم|نعم|لا|نعم|
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [شراء تراخيص لاشتراك العمل (مقال)/ أو إزالتها](buy-licenses.md)
 [تعيين تراخيص للمستخدمين](../../admin/manage/assign-licenses-to-users.md) (مقالة)\
