@@ -2,17 +2,17 @@
   href: index.md
 - name: نماذج مخصصة
   items:
-    - name: فهم المستند
+    - name: فهم المستندات
       items:
         - name: نظرة عامة
           href: document-understanding-overview.md
         - name: الاختلافات بين النماذج
           href: difference-between-document-understanding-and-form-processing-model.md
-        - name: استيراد نموذج نموذجي
+        - name: استيراد نموذج العينة
           href: learn-about-document-understanding-models-through-the-sample-model.md
         - name: إنشاء مركز محتوى
           href: create-a-content-center.md
-        - name: إنشاء تصنيف
+        - name: إنشاء مصنف
           href: create-a-classifier.md
         - name: تكرار نموذج
           href: duplicate-a-model.md
@@ -22,9 +22,9 @@
           href: create-an-extractor.md
         - name: إعادة تسمية مستخرج
           href: rename-an-extractor.md
-        - name: أنواع الشرح
+        - name: أنواع التفسيرات
           href: explanation-types-overview.md
-        - name: استخدام قوالب الشرح
+        - name: استخدام قوالب التفسير
           href: explanation-templates.md
         - name: تطبيق نموذج فهم المستند
           href: apply-a-model.md
@@ -32,17 +32,17 @@
           href: model-discovery.md
         - name: تطبيق تسمية استبقاء
           href: apply-a-retention-label-to-a-model.md
-        - name: تطبيق تسمية حساسية
+        - name: تطبيق أوصاف الحساسية
           href: apply-a-sensitivity-label-to-a-model.md
         - name: إنشاء نموذج محلي
           href: create-local-model.md
-        - name: تحليلات استخدام النماذج
+        - name: تحليلات استخدام النموذج
           href: model-usage-analytics.md
-        - name: الاستفادة من مستخرج مخزن المصطلحات عند إنشاء مستخرج
+        - name: استفد من تصنيف مخزن المصطلحات عند إنشاء مستخرج
           href: leverage-term-store-taxonomy.md
         - name: وضع إمكانية وصول ذوي الاحتياجات الخاصة
           href: accessibility-mode.md
-    - name: معالجة النموذج
+    - name: معالجة النماذج
       items:
         - name: نظرة عامة
           href: form-processing-overview.md
@@ -52,19 +52,19 @@
           href: create-a-form-processing-model.md
         - name: تطبيق تسمية استبقاء
           href: apply-a-retention-label-to-a-model.md
-        - name: تحليلات استخدام النماذج
+        - name: تحليلات استخدام النموذج
           href: model-usage-analytics.md
-- name: النماذج التي تم تصميمها مسبقا
+- name: نماذج تم إنشاؤها مسبقا
   items:
     - name: نظرة عامة
       href: prebuilt-overview.md
-    - name: نماذج الفواتير والإيصالات التي تم تصميمها مسبقا
+    - name: نماذج الفاتورة والإيصالات التي تم إنشاؤها مسبقا
       href: prebuilt-models.md
     - name: تطبيق تسمية استبقاء
       href: apply-a-retention-label-to-a-model.md
     - name: إنشاء نموذج محلي
       href: create-local-model.md
-    - name: تحليلات استخدام النماذج
+    - name: تحليلات استخدام النموذج
       href: model-usage-analytics.md
 - name: تجميع المحتوى
   items:
@@ -74,13 +74,13 @@
   items:
     - name: البحث عن بيانات التعريف في مكتبات المستندات
       href: metadata-search.md
-- name: Taxonomy
+- name: التصنيف
   items:
-    - name: الاستيراد باستخدام SKOS
+    - name: استيراد باستخدام SKOS
       href: import-term-set-skos.md
     - name: مرجع تنسيق SKOS
       href: skos-format-reference.md
-    - name: دفع نوع المحتوى إلى الموزع
+    - name: دفع نوع المحتوى إلى المركز
       href: push-content-type-to-hub.md
     - name: تقارير مخزن المصطلحات
       href: term-store-analytics.md
@@ -96,21 +96,23 @@
       items:
         - name: نظرة عامة
           href: powershell-syntex-intro.md
-        - name: نماذج التصدير والاستيراد
+        - name: تصدير نماذج واستيرادها
           href: powershell-syntex-import-export.md
         - name: نشر النماذج
           href: powershell-syntex-publishing.md
-        - name: طلب المعالجة حسب نموذج
+        - name: طلب المعالجة بواسطة نموذج
           href: powershell-syntex-processing.md
-        - name: العمل باستخدام تفسيرات النموذج
+        - name: العمل مع تفسيرات النموذج
           href: powershell-syntex-explanations.md
-- name: الاعتماد
+- name: اعتماد
   items:
-    - name: بدء العمل باستخدام
+    - name: بدء استخدام الاعتماد
       href: adoption-getstarted.md
-    - name: السيناريوهات و حالات الاستخدام
+    - name: السيناريوهات وحالات الاستخدام
       href: adoption-scenarios.md
-    - name: تشغيل الإصدار التجريبي
+    - name: تقييم بيئتك
+      href: adoption-assessment-tool.md
+    - name: تشغيل إصدار تجريبي
       href: trial-syntex.md
     - name: إدارة العقود في Microsoft 365
       items:
@@ -124,7 +126,7 @@
           href: solution-manage-contracts-step3.md
     - name: قالب موقع إدارة العقود
       href: use-contracts-management-site.md
-    - name: قالب موقع "مركز المحتويات"
+    - name: قالب موقع مركز المحتويات
       href: use-content-center-site.md
-- name: إمكانية التوسعة
+- name: إمكانية التوسع
   href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
