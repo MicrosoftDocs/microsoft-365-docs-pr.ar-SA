@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على كيفية مساعدة إعدادات الأمان الافتراضية في حماية مؤسستك من الهجمات المتعلقة بالهوية من خلال توفير إعدادات أمان تم تكوينها مسبقا Microsoft 365 Business Premium.
-ms.openlocfilehash: af9b19dcf33f1b79d4057662cf759ace27aec38f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c1a63efc29154768a7d54d31f51c25a3c84fa30a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095257"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417831"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>إعدادات الأمان الافتراضية والمصادقة متعددة العوامل
 
@@ -97,7 +97,7 @@ ms.locfileid: "65095257"
 - [طلب المصادقة متعددة العوامل لإدارة Azure](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
 - [حظر المصادقة القديمة](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 - [طلب المصادقة متعددة العوامل لجميع المستخدمين](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [يتطلب تسجيل Azure AD MFA](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - يتطلب Azure AD Identity Protection، الذي يعد جزءا من Azure Active Directory Premium P2
+- [يتطلب تسجيل المصادقة متعددة العوامل Azure AD](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - يتطلب Azure AD Identity Protection، والذي يعد جزءا من Azure Active Directory Premium P2
 
 لمعرفة المزيد حول الوصول المشروط، راجع [ما هو الوصول المشروط؟](/azure/active-directory/conditional-access/overview) لمزيد من المعلومات حول إنشاء نهج الوصول المشروط، راجع [إنشاء نهج الوصول المشروط](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
 
@@ -107,4 +107,3 @@ ms.locfileid: "65095257"
 ## <a name="next-objective"></a>الهدف التالي
 
 إعداد طرق [للحماية من البرامج الضارة والتهديدات الأخرى](m365bp-increase-protection.md).
-

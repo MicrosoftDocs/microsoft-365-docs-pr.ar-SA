@@ -2,7 +2,7 @@
 
 ## [نظرة عامة]()
 ### [ما هو Microsoft Defender لنقطة النهاية؟](microsoft-defender-endpoint.md)
-### [مقارنة Defender for Endpoint الخطة 1 مع الخطة 2](defender-endpoint-plan-1-2.md)
+### [مقارنة خطط Defender لنقطة النهاية](defender-endpoint-plan-1-2.md)
 ### [الحد الأدنى للمتطلبات](minimum-requirements.md)
 ### [ما الجديد في Microsoft Defender لنقطة النهاية؟](whats-new-in-microsoft-defender-endpoint.md)
 ### [ميزات المعاينة](preview.md)
@@ -54,7 +54,6 @@
 
 ##### [الإصدارات السابقة من Windows](onboard-downlevel.md)
 
-
 ##### [أجهزة Windows وخوادم Windows الأجهزة]()
 ###### [تشغيل Windows Server 2012 R2 و2016 Semi-Annual و2019 و2022](configure-server-endpoints.md)
 ###### [أجهزة Windows باستخدام برنامج نصي محلي](configure-endpoints-script.md)
@@ -64,9 +63,6 @@
 ###### [أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة](configure-endpoints-vdi.md)
 ###### [أجهزة Windows 10 متعددة جلسات العمل في Windows سطح المكتب الظاهري](onboard-windows-multi-session-device.md)
 
-
-
-
 #### [التكامل مع Microsoft Defender for Cloud](azure-server-integration.md)
 
 #### [أجهزة التجهيز بدون اتصال بالإنترنت](onboard-offline-machines.md)
@@ -74,8 +70,6 @@
 #### [تشغيل هجمات محاكاة على الأجهزة](attack-simulations.md)
 #### [تكوين إعدادات الوكيل والاتصال بالإنترنت](configure-proxy-internet.md)
 #### [إنشاء قاعدة إعلامات التهيئة أو إيقاف التشغيل](onboarding-notification.md)
-
-
 
 ### [Microsoft Defender لنقطة النهاية على أنظمة تشغيل أخرى]()
 #### [الأجهزة غير المجهزة Windows](configure-endpoints-non-windows.md)
@@ -118,7 +112,6 @@
 ##### [الخصوصية](mac-privacy.md)
 ##### [الموارد](mac-resources.md)
 
-
 #### [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux]()
 ##### [نظرة عامة Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
 ##### [الجديد](linux-whatsnew.md)
@@ -137,7 +130,6 @@
 ###### [الكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها وحظرها](linux-pua.md)
 ###### [جدولة عمليات الفحص باستخدام Microsoft Defender لنقطة النهاية على Linux](linux-schedule-scan-mde.md)
 ###### [جدولة تحديث Microsoft Defender لنقطة النهاية (Linux)](linux-update-MDE-Linux.md)
-
 
 ##### [استكشاف الأخطاء وإصلاحها]()
 ###### [استكشاف مشاكل التثبيت وإصلاحها](linux-support-install.md)
@@ -184,17 +176,12 @@
 
 ###### [الخصوصية](ios-privacy.md)
 
-
 ### [قم بإدارة Microsoft Defender لإعدادات تكوين نقطة النهاية على الأجهزة باستخدام دارة نقاط النهاية في Microsoft](security-config-management.md)
 
 ### [استكشاف مشاكل التجهيز وإصلاحها]()
 #### [استكشاف الأخطاء وإصلاحها أثناء التجهيز](troubleshoot-onboarding.md)
 #### [استكشاف مشاكل الوصول إلى المدخل والاشتراك وإصلاحها](troubleshoot-onboarding-error-messages.md)
 #### [استكشاف مشاكل تشغيل تكوين الأمان وإصلاحها](troubleshoot-security-config-mgt.md)
-
-
-
-
 
 ### [تكوين إعدادات المدخل]()
 #### [تكوين عام Defender لإعدادات نقطة النهاية](preferences-setup.md)
@@ -230,30 +217,7 @@
 #### [تكوين مركز حماية Microsoft Defender المنطقة الزمنية](time-settings.md)
 
 ## [الكشف عن التهديدات وحماية نقاط النهاية]()
-### [التهديدات وإدارة الثغرات الأمنية]()
-#### [نظرة عامة](next-gen-threat-and-vuln-mgt.md)
-#### [بدء الاستخدام]()
-##### [الأذونات والمتطلبات الأساسية](tvm-prerequisites.md)
-##### [الأنظمة الأساسية وإمكانيات أنظمة التشغيل المعتمدة](tvm-supported-os.md)
-##### [تعيين قيمة الجهاز](tvm-assign-device-value.md)
-#### [تقييم وضعية الأمان]()
-##### [تحليلات لوحة المعلومات](tvm-dashboard-insights.md)
-##### [درجة التعرض للضوء](tvm-exposure-score.md)
-##### [Microsoft Secure Score للأجهزة](tvm-microsoft-secure-score-devices.md)
-#### [تحسين وضعية الأمان وتقليل المخاطر]()
-##### [توصيات أمان العنوان](tvm-security-recommendation.md)
-##### [إصلاح الثغرات](tvm-remediation.md)
-##### [استثناءات توصيات الأمان](tvm-exception.md)
-##### [التخطيط لبرامج انتهاء الدعم](tvm-end-of-support-software.md)
-##### [ترحيل الثغرات في اليوم الصفري](tvm-zero-day-vulnerabilities.md)
-#### [فهم نقاط الضعف بأجهزتك]()
-##### [بيانات البرامج](tvm-software-inventory.md)
-##### [نقاط الضعف في المؤسسة](tvm-weaknesses.md)
-##### [المخطط الزمني للحدث](threat-and-vuln-mgt-event-timeline.md)
-##### [تقرير الأجهزة المعرضة](tvm-vulnerable-devices-report.md)
-##### [البحث عن الأجهزة المعرضة](tvm-hunt-exposed-devices.md)
-#### [إرشادات التهديدات والحملات النشطة]()
-##### [إدارة ثغرة Log4Shell الأمنية](tvm-manage-log4shell-guidance.md)
+### [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 ### [اكتشاف الجهاز]()
 #### [نظرة عامة على اكتشاف الجهاز](device-discovery.md)
 #### [تكوين اكتشاف الجهاز](configure-device-discovery.md)
@@ -395,14 +359,15 @@
 ##### [الحظر السلوكي للعميل](client-behavioral-blocking.md)
 ##### [حظر حلقة الملاحظات](feedback-loop-blocking.md)
 
-
 ### [معالجة الإيجابيات/السلبيات الخاطئة في Microsoft Defender لنقطة النهاية](defender-endpoint-false-positives-negatives.md)
-
 
 ### [إدارة تكوين الجهاز]()
 
 #### [زيادة التوافق مع خط الأمان الأساسي](configure-machines-security-baseline.md)
 #### [تحسين نشر قاعدة الحد من الهجمات والكشف عنها](configure-machines-asr.md)
+
+## [إرشادات التهديدات والحملات النشطة]()
+### [إدارة ثغرة Log4Shell الأمنية](tvm-manage-log4shell-guidance.md)
 
 ## [التحقق من التهديدات والاستجابة لها]()
 ### [الكشف عن نقطة النهاية والاستجابة لها]()
@@ -520,7 +485,6 @@
 ####### [الحصول على معلومات الجهاز ذات الصلة بالتنبيه](get-alert-related-machine-info.md)
 ####### [الحصول على معلومات المستخدم ذات الصلة بالتنبيه](get-alert-related-user-info.md)
 
-
 ###### [تقييمات نقاط الضعف والتكوينات الآمنة]()
 ####### [تصدير أساليب التقييم وخصائصه](get-assessment-methods-properties.md)
 ####### [تصدير تقييم تكوين آمن](get-assessment-secure-config.md)
@@ -532,6 +496,9 @@
 ####### [التحقيق في القائمة](get-investigation-collection.md)
 ####### [الحصول على التحقيق](get-investigation-object.md)
 ####### [بدء التحقيق](initiate-autoir-investigation.md)
+
+###### [قائمة الشهادات]()
+####### [تصدير تقييم قائمة الشهدات](export-certificate-inventory-assessment.md)
 
 ###### [المجال]()
 ####### [الحصول على تنبيهات ذات صلة بالمجال](get-domain-related-alerts.md)
@@ -562,7 +529,6 @@
 ####### [تحميل إلى مكتبة الاستجابة المباشرة](upload-library.md)
 ####### [حذف من المكتبة](delete-library.md)
 
-
 ###### [الجهاز]()
 ####### [أساليب الجهاز وخصائصه](machine.md)
 ####### [أجهزة القائمة](get-machines.md)
@@ -578,8 +544,6 @@
 ####### [فقدان KBs](get-missing-kbs-machine.md)
 ####### [تعيين قيمة الجهاز](set-device-value.md)
 ####### [تحديث الجهاز](update-machine-method.md)
-
-
 
 ###### [إجراء الجهاز]()
 ####### [أساليب إجراءات الجهاز وخصائصه](machineaction.md)
@@ -617,6 +581,11 @@
 ####### [درجة التعرض للقائمة حسب مجموعة الجهاز](get-machine-group-exposure-score.md)
 ####### [الحصول على نقاط التعرض للضوء](get-exposure-score.md)
 ####### [الحصول على نقاط آمنة للجهاز](get-device-secure-score.md)
+
+###### [أساسيات الأمان]()
+####### [تصدير تقييم أسس الأمان](export-security-baseline-assessment.md)
+####### [سرد ملفات تعريف تقييم أساسيات الأمان](get-security-baselines-assessment-profiles.md)
+####### [سرد تكوينات تقييم أساسيات الأمان](get-security-baselines-assessment-configurations.md)
 
 ###### [البرامج]()
 ####### [أساليب البرنامج وخصائصه](software.md)

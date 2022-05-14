@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: يمكن للمسؤولين معرفة كيفية استخدام مدخل عمليات الإرسال في مدخل Microsoft 365 Defender لإرسال رسائل البريد الإلكتروني المشبوهة ورسائل التصيد الاحتيالي المشتبه بها والبريد العشوائي والرسائل الأخرى التي يحتمل أن تكون ضارة وعناوين URL ومرفقات البريد الإلكتروني إلى Microsoft لإعادة اكتشافها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d16cae309a90b8ffe10c90fea8ca3a359ece33b
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: 8e9faf6114551725dc1fc3b8b6af173bbe1e21b4
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144806"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417941"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>استخدم مدخل عمليات الإرسال لإرسال البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft
 
@@ -45,6 +45,9 @@ ms.locfileid: "65144806"
 > لا يتم تحليل سمعة الحمولة/التفريغ والدرجات في جميع المستأجرين. يتم حظر المعلومات من الانتقال إلى خارج المؤسسة عندما لا يفترض أن تترك البيانات حدود المستأجر لأغراض الامتثال.
 
 للحصول على طرق أخرى لإرسال رسائل البريد الإلكتروني وعناوين URL والمرفقات إلى Microsoft، راجع [رسائل التقرير والملفات إلى Microsoft](report-junk-email-messages-to-microsoft.md).
+
+شاهد هذا الفيديو القصير لمعرفة كيفية استخدام عمليات إرسال المسؤول في Microsoft Defender لـ Office 365 لإرسال الرسائل إلى Microsoft للتقييم. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
