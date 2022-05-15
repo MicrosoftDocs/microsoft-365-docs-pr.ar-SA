@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: ''
 description: تعرف على تطبيقات Microsoft لـ "إمكانية التشغيل التفاعلي لأدوات التعلم" (LTI)، وكيف ستساعد المعلمين عند دمج تطبيقات Microsoft في نظام الإدارة التعليمية (LMS).
-ms.openlocfilehash: 8140b89b4bfeb26f64e8949f6d7835ca59645cbe
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 99ae862890989b0422cb819f65781a0a99340135
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746750"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414755"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>دمج منتجات Microsoft مع نظام إدارة Learning (LMS)
 
@@ -32,7 +32,7 @@ ms.locfileid: "64746750"
 - [اجتماعات Teams LTI](#teams-meetings-lti)
 - [Teams Classes LTI](#teams-classes-lti)
 
-للحصول على معلومات عامة حول إدارة أدوات Microsoft OneLTI، راجع [إدارة Microsoft OneLTI لأي LMS](manage-microsoft-one-lti.md).
+للحصول على معلومات عامة حول إدارة تطبيقات Microsoft LTI، راجع [إدارة تطبيقات Microsoft LTI لأي LMS](manage-microsoft-one-lti.md).
 
 ## <a name="onedrive-lti-apps"></a>تطبيقات OneDrive LTI
 
@@ -75,7 +75,7 @@ ms.locfileid: "64746750"
 
 ### <a name="teams-meetings-lti"></a>اجتماعات Teams LTI
 
-يقوم تطبيق LTI لاجتماعات Teams من Microsoft بتضمين اجتماعات Teams في دورات LMS. يمكن للمعلمين والطلاب عرض الاجتماعات السابقة والقادمة وجدولة اجتماعات فردية أو متكررة والانضمام إلى اجتماعات الفريق المتعلقة بالدورة التدريبية، كل ذلك من داخل LMS.
+اجتماعات Microsoft Teams يدمج تطبيق LTI اجتماعات Teams في دورات LMS. يمكن للمعلمين والطلاب عرض الاجتماعات السابقة والقادمة وجدولة اجتماعات فردية أو متكررة والانضمام إلى اجتماعات الفريق المتعلقة بالدورة التدريبية، كل ذلك من داخل LMS.
 
 للحصول على خطوات التكوين، راجع:
 

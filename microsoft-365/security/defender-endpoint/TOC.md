@@ -2,7 +2,7 @@
 
 ## [نظرة عامة]()
 ### [ما هو Microsoft Defender لنقطة النهاية؟](microsoft-defender-endpoint.md)
-### [مقارنة خطط Defender لنقطة النهاية](defender-endpoint-plan-1-2.md)
+### [مقارنة Defender لخطط نقطة النهاية](defender-endpoint-plan-1-2.md)
 ### [الحد الأدنى للمتطلبات](minimum-requirements.md)
 ### [ما الجديد في Microsoft Defender لنقطة النهاية؟](whats-new-in-microsoft-defender-endpoint.md)
 ### [ميزات المعاينة](preview.md)
@@ -329,6 +329,10 @@
 ##### [استثناءات Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [الأخطاء الشائعة التي يجب تجنبها](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
+#### وضع استكشاف الأخطاء وإصلاحها لنقطة نهاية Defender
+##### [بدء استخدام وضع استكشاف الأخطاء وإصلاحها](enable-troubleshooting-mode.md)
+##### [سيناريوهات وضع استكشاف الأخطاء وإصلاحها](troubleshooting-mode-scenarios.md)
+
 #### التشخيص والأداء برنامج الحماية من الفيروسات من Microsoft Defender
 ##### [تقارير حول صحة الجهاز وتوافقه](machine-reports.md)
 ##### [استكشاف مشاكل الأداء المتعلقة بالحماية في الوقت الحقيقي وإصلاحها](troubleshoot-performance-issues.md) 
@@ -497,8 +501,8 @@
 ####### [الحصول على التحقيق](get-investigation-object.md)
 ####### [بدء التحقيق](initiate-autoir-investigation.md)
 
-###### [قائمة الشهادات]()
-####### [تصدير تقييم قائمة الشهدات](export-certificate-inventory-assessment.md)
+###### [مخزون الشهادات]()
+####### [تصدير تقييم مخزون الشهادات](export-certificate-inventory-assessment.md)
 
 ###### [المجال]()
 ####### [الحصول على تنبيهات ذات صلة بالمجال](get-domain-related-alerts.md)
@@ -583,7 +587,7 @@
 ####### [الحصول على نقاط آمنة للجهاز](get-device-secure-score.md)
 
 ###### [أساسيات الأمان]()
-####### [تصدير تقييم أسس الأمان](export-security-baseline-assessment.md)
+####### [تصدير تقييم أساسيات الأمان](export-security-baseline-assessment.md)
 ####### [سرد ملفات تعريف تقييم أساسيات الأمان](get-security-baselines-assessment-profiles.md)
 ####### [سرد تكوينات تقييم أساسيات الأمان](get-security-baselines-assessment-configurations.md)
 
