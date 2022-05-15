@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 352b60caa3af581a5d1162b1896b255bfcea873c
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: adc6b447f7f29cde344ab0b90f9388154025f587
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790229"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418303"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>برنامج الحماية من الفيروسات من Microsoft Defender في Windows
 
@@ -94,7 +94,7 @@ ms.locfileid: "64790229"
 من المهم الحفاظ على تحديث برنامج الحماية من الفيروسات من Microsoft Defender أو أي حل للحماية من الفيروسات/الحماية من البرامج الضارة. تصدر Microsoft تحديثات منتظمة للمساعدة في ضمان حصول أجهزتك على أحدث التقنيات للحماية من البرامج الضارة وتقنيات الهجوم الجديدة. لمعرفة المزيد، راجع [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 > [!TIP]
-> إذا كنت’ تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

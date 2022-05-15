@@ -1,6 +1,6 @@
 - name: Microsoft 365 LTI
   href: index.md
-- name: إدارة Microsoft OneLTI
+- name: إدارة Microsoft LMS Gateway
   href: manage-microsoft-one-lti.md
 - name: السماح لملفات تعريف ارتباط المستعرض لعناوين نظام الإدارة التعليمية URL
   href: browser-cookies.md

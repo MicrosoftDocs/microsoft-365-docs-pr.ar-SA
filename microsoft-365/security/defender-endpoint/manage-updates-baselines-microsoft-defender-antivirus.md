@@ -18,12 +18,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f427bcfbc5f8b6538c72cebea4adf6edc80a42ba
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: d2ad08c91d8c28163eccf239f9a7266b15a44927
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320508"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418325"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية
 
@@ -1032,7 +1032,7 @@ Platform/Client: **4.18.2001.10**<br/>
 | [تحديث Microsoft Defender لنقطة النهاية لمستشعر EDR](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | يمكنك تحديث مستشعر EDR (MsSense.exe) المضمن في حزمة الحلول الموحدة لـ Microsoft Defender لنقطة النهاية الجديدة التي تم إصدارها في 2021.   |
 
 > [!TIP]
-> إذا كنت’ تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
