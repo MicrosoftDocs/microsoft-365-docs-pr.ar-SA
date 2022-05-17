@@ -56,6 +56,8 @@
       href: m365-lighthouse-compare-compliance-policies.md
     - name: نظرة عامة على صفحة Windows 365 (أجهزة الكمبيوتر السحابية)
       href: m365-lighthouse-win365-page-overview.md
+    - name: إعادة توفير الكمبيوتر السحابي لـ Windows 365
+      href: m365-lighthouse-reprovision-cloudpc.md
 - name: إدارة التهديدات
   items:
     - name: نظرة عامة على صفحة إدارة المخاطر
