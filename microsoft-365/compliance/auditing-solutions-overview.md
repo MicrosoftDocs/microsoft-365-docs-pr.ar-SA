@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 description: تعرف على كيفية تدقيق أنشطة المستخدمين والمسؤولين في مؤسستك Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4dd26229e5ca29344524238903dd2e972ac09ad7
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.openlocfilehash: d7c6ba3e63e50370579f6db89a919ec8a2dafd8f
+ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145344"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65444234"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>حلول التدقيق في Microsoft Purview
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-توفر حلول تدقيق Microsoft Purview حلا متكاملا لمساعدة المؤسسات على الاستجابة الفعالة للأحداث الأمنية والتحقيقات الجنائية والتحقيقات الداخلية والتزامات الامتثال. يتم تسجيل الآلاف من عمليات المستخدم والمسؤول التي يتم تنفيذها في العشرات من خدمات وحلول Microsoft 365 وتسجيلها والاحتفاظ بها في سجل التدقيق الموحد لمؤسستك. يمكن البحث في سجلات التدقيق لهذه الأحداث من قبل عمليات الأمان، والمسؤولين عن تكنولوجيا المعلومات، وفرق المخاطر الداخلية، والامتثال والتحريين القانونيين في مؤسستك. توفر هذه الإمكانية رؤية للأنشطة التي يتم تنفيذها عبر مؤسستك Microsoft 365.
+توفر حلول التدقيق Microsoft Purview حلا متكاملا لمساعدة المؤسسات على الاستجابة الفعالة للأحداث الأمنية والتحقيقات الجنائية والتحقيقات الداخلية والتزامات الامتثال. يتم تسجيل الآلاف من عمليات المستخدم والمسؤول التي يتم تنفيذها في العشرات من خدمات وحلول Microsoft 365 وتسجيلها والاحتفاظ بها في سجل التدقيق الموحد لمؤسستك. يمكن البحث في سجلات التدقيق لهذه الأحداث من قبل عمليات الأمان، والمسؤولين عن تكنولوجيا المعلومات، وفرق المخاطر الداخلية، والامتثال والتحريين القانونيين في مؤسستك. توفر هذه الإمكانية رؤية للأنشطة التي يتم تنفيذها عبر مؤسستك Microsoft 365.
 
 ## <a name="microsoft-purview-auditing-solutions"></a>حلول تدقيق Microsoft Purview
 
@@ -40,11 +40,11 @@ ms.locfileid: "65145344"
 
 ### <a name="audit-standard"></a>التدقيق (قياسي)
 
-يوفر لك Microsoft Purview Audit (Standard) القدرة على تسجيل الأنشطة التي تم تدقيقها والبحث عنها وتشغيل تحقيقاتك الجنائية وتقنية المعلومات والتوافق والتحقيقات القانونية.
+يوفر لك Microsoft Purview Audit (Standard) القدرة على تسجيل الأنشطة التي تم تدقيقها والبحث عنها وتشغيل التحقيقات الجنائية وتقنية المعلومات والتوافق والشؤون القانونية.
 
-- **ممكن بشكل افتراضي**. يتم تشغيل التدقيق (القياسي) بشكل افتراضي لجميع المؤسسات التي لها الاشتراك المناسب. وهذا يعني أنه سيتم تسجيل سجلات الأنشطة التي تم تدقيقها ويمكن البحث فيها. الإعداد الوحيد المطلوب هو تعيين الأذونات اللازمة للوصول إلى أداة البحث في سجل التدقيق (و cmdlet المقابلة) والتأكد من تعيين الترخيص الصحيح للمستخدم لميزات تدقيق Microsoft Purview (Premium).
+- **ممكن بشكل افتراضي**. يتم تشغيل التدقيق (القياسي) بشكل افتراضي لجميع المؤسسات التي لها الاشتراك المناسب. وهذا يعني أنه سيتم تسجيل سجلات الأنشطة التي تم تدقيقها ويمكن البحث فيها. الإعداد الوحيد المطلوب هو تعيين الأذونات اللازمة للوصول إلى أداة البحث في سجل التدقيق (و cmdlet المقابلة) والتأكد من تعيين الترخيص الصحيح للمستخدم لميزات التدقيق Microsoft Purview (Premium).
 - **الآلاف من أحداث التدقيق القابلة للبحث**. يمكنك البحث عن مجموعة واسعة من الأنشطة التي تم تدقيقها والتي تحدث في معظم خدمات Microsoft 365 في مؤسستك. للحصول على قائمة جزئية بالأنشطة التي يمكنك البحث فيها، راجع [الأنشطة التي تم تدقيقها](search-the-audit-log-in-security-and-compliance.md#audited-activities). للحصول على قائمة بالخدمات والميزات التي تدعم الأنشطة التي تم تدقيقها، راجع [نوع سجل التدقيق](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
-- **أداة البحث في التدقيق في مدخل توافق Microsoft Purview**. استخدم أداة البحث في سجل التدقيق في مدخل التوافق للبحث عن سجلات التدقيق. يمكنك البحث عن أنشطة معينة، والأنشطة التي قام بها مستخدمون محددون، والأنشطة التي حدثت مع نطاق تاريخ. فيما يلي لقطة شاشة لأداة البحث في التدقيق في مركز الامتثال.
+- **أداة البحث في التدقيق في مدخل التوافق في Microsoft Purview**. استخدم أداة البحث في سجل التدقيق في مدخل التوافق للبحث عن سجلات التدقيق. يمكنك البحث عن أنشطة معينة، والأنشطة التي قام بها مستخدمون محددون، والأنشطة التي حدثت مع نطاق تاريخ. فيما يلي لقطة شاشة لأداة البحث في التدقيق في مركز الامتثال.
 
    ![أداة البحث في سجل التدقيق في مدخل التوافق.](../media/AuditLogSearchToolMCC.png)
 
@@ -107,7 +107,7 @@ ms.locfileid: "65145344"
 - اشتراك Microsoft Purview Education A3
 - اشتراك Microsoft Purview Government G3
 - اشتراك Microsoft Purview Government G1
-- اشتراك Microsoft Purview Frontline F1 أو F3 أو الوظيفة الإضافية F5 Security
+- Microsoft Purview اشتراك Frontline F1 أو F3 أو الوظيفة الإضافية F5 Security
 - اشتراك Office 365 Enterprise E3
 - اشتراك Office 365 Enterprise E1
 - اشتراك Office 365 Education A1
@@ -168,15 +168,17 @@ ms.locfileid: "65145344"
 
 للحصول على إرشادات أكثر تفصيلا، راجع [إعداد التدقيق (Premium).](set-up-advanced-audit.md)
 
-## <a name="encrypt-audit-records-using-customer-key"></a>تشفير سجلات التدقيق باستخدام مفتاح العميل
+<!--
+## Encrypt audit records using Customer Key
 
-يمكنك تمكين تشفير مفتاح العميل لسجلات التدقيق. يعتمد التدقيق على [تشفير الخدمة باستخدام مفتاح العميل](customer-key-overview.md) لتشفير المعلومات الحساسة في بيانات التدقيق الخاصة بمؤسستك. يوفر تطبيق مفتاح العميل حماية إضافية من خلال منع الأنظمة غير المصرح بها أو موظفي مركز بيانات Microsoft من عرض بيانات التدقيق في البنية الأساسية لبرنامج ربط العمليات التجارية للتدقيق والثبات. يساعدك استخدام مفتاح العميل لتشفير بيانات التدقيق أيضا على الوفاء بالالتزامات التنظيمية أو الامتثال لأن مؤسستك توفر مفاتيح التشفير وتتحكم فيها.
+You can enable Customer Key encryption for audit records. Auditing builds on the [Service encryption with Customer Key](customer-key-overview.md) to encrypt sensitive information in your organization's auditing data. Implementing Customer Key provides extra protection by preventing unauthorized systems or Microsoft data center personnel from viewing your auditing data in the auditing pipeline and at rest. Using Customer Key to encrypt your auditing data also helps you meet regulatory or compliance obligations because your organization provides and controls the encryption keys.
 
-لتنفيذ مفتاح العميل للتدقيق، يجب عليك إنشاء نهج تشفير البيانات متعدد حمل العمل (DEP)، الذي يحدد التسلسل الهرمي للتشفير. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [إعداد مفتاح العميل](customer-key-set-up.md).
+To implement Customer Key for auditing, you have to create a multi-workload Data Encryption Policy (DEP), which defines the encryption hierarchy. For detailed step-by-step instructions, see [Set up Customer Key](customer-key-set-up.md).
 
 > [!NOTE]
-> لا يتم تشفير كافة سجلات التدقيق في مؤسستك. تحدد خدمة Microsoft Purview التي تنشئ سجلات تدقيق معينة للنشاط في تلك الخدمة ما إذا كان سجل التدقيق مشفرا أم لا.
+> Not all audit records in your organization are encrypted. The Microsoft Purview service that generates specific audit records for activity in that service defines whether the audit record is encrypted or not.
+-->
 
 ## <a name="training"></a>التدريب
 
-يمكن أن يساعد تدريب فريق عمليات الأمان ومسؤولي تكنولوجيا المعلومات وفريق المحققين في الامتثال على أساسيات التدقيق (القياسي) والتدقيق (Premium) مؤسستك على البدء بسرعة أكبر باستخدام التدقيق للمساعدة في تحقيقاتك. يوفر Microsoft Purview المورد التالي لمساعدة هؤلاء المستخدمين في مؤسستك على البدء في التدقيق: [وصف قدرات eDiscovery والتدقيق من Microsoft Purview](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
+يمكن أن يساعد تدريب فريق عمليات الأمان ومسؤولي تكنولوجيا المعلومات وفريق المحققين في الامتثال على أساسيات التدقيق (القياسي) والتدقيق (Premium) مؤسستك على البدء بسرعة أكبر باستخدام التدقيق للمساعدة في تحقيقاتك. يوفر Microsoft Purview المورد التالي لمساعدة هؤلاء المستخدمين في مؤسستك على البدء في التدقيق: [وصف قدرات eDiscovery والتدقيق Microsoft Purview](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).
