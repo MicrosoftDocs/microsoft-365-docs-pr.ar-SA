@@ -19,13 +19,13 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: تعرف على كيفية حذف حساب مستخدم وما يجب فعله بالبريد الإلكتروني للمستخدم ومحتوى OneDrive وما إذا كنت تريد الاحتفاظ بترخيص المنتج.
-ms.openlocfilehash: 894bcef6cc273c067b3d9b622f244d361ed24d96
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: تعرف على كيفية حذف حساب مستخدم Microsoft 365، وما يجب فعله بالبريد الإلكتروني للمستخدم ومحتوى OneDrive، وما إذا كنت تريد الاحتفاظ بترخيص المنتج.
+ms.openlocfilehash: faa971fa8419f6bcc80855fd9dcd559a542e00a8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090696"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436767"
 ---
 # <a name="delete-a-user-from-your-organization"></a>حذف مستخدم من مؤسستك
   
@@ -139,4 +139,4 @@ ms.locfileid: "65090696"
 [حذف علبة بريد (](/exchange/permanently-delete-a-mailbox-exchange-2013-help) مقالة) بشكل دائم\
 [إزالة موظف سابق من Office 365](remove-former-employee.md) (مقالة)\
 [إضافة موظف جديد إلى Office 365](add-new-employee.md) (مقالة)\
-[حذف حساب مستخدم](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): استخدم هذه الإرشادات إذا كان نشاطك التجاري يستخدم **Active Directory** الذي يقوم بالمزامنة مع Azure AD. لا يمكنك القيام بذلك من خلال Office 365. (مقالة)
+[حذف حساب مستخدم](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): استخدم هذه الإرشادات إذا كانت شركتك تستخدم **Active Directory** الذي يقوم بالمزامنة مع Azure AD. لا يمكنك القيام بذلك من خلال Office 365. (مقالة)

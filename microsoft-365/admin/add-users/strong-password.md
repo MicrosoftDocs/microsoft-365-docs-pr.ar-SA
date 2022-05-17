@@ -1,5 +1,5 @@
 ---
-title: إيقاف تشغيل متطلبات كلمة المرور القوية للمستخدمين
+title: إيقاف تشغيل متطلبات كلمات المرور القوية للمستخدمين
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,29 +20,29 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: تعرف على كيفية تعيين متطلبات كلمة مرور قوية للمستخدمين باستخدام Windows PowerShell.
-ms.openlocfilehash: 5932f01c2f17a72f4f6a20a6457d263bed7dd85e
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+description: إذا كنت مسؤولا يدير نهج كلمة المرور للأعمال أو المؤسسة التعليمية أو المؤسسات غير الربحية، يمكنك تعيين متطلبات كلمة مرور قوية باستخدام Windows PowerShell.
+ms.openlocfilehash: 20bea953207a85b589bf1ae821f988a3cfe8e22c
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63572959"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436174"
 ---
-# <a name="turn-off-strong-password-requirements-for-users"></a>إيقاف تشغيل متطلبات كلمة المرور القوية للمستخدمين
+# <a name="turn-off-strong-password-requirements-for-users"></a>إيقاف تشغيل متطلبات كلمات المرور القوية للمستخدمين
 
-تشرح هذه المقالة كيفية إيقاف تشغيل متطلبات كلمة المرور القوية للمستخدمين. يتم تشغيل متطلبات كلمة المرور القوية بشكل افتراضي في Microsoft 365 للأعمال. قد تحتاج مؤسستك إلى متطلبات لتعطيل كلمات مرور قوية. اتبع الخطوات أدناه ل إيقاف تشغيل متطلبات كلمة المرور القوية. يجب عليك إكمال هذه الخطوات باستخدام PowerShell.
+تشرح هذه المقالة كيفية إيقاف تشغيل متطلبات كلمات المرور القوية للمستخدمين. يتم تشغيل متطلبات كلمة المرور القوية بشكل افتراضي في مؤسسة Microsoft 365 للأعمال. قد يكون لدى مؤسستك متطلبات لتعطيل كلمات المرور القوية. اتبع الخطوات أدناه لإيقاف تشغيل متطلبات كلمة المرور القوية. يجب عليك إكمال هذه الخطوات باستخدام PowerShell.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-هذه المقالة للأشخاص الذين يديرون نهج كلمة المرور الخاصة بأعمال أو مؤسسة تعليمية أو مؤسسة غير ربحية. لإكمال هذه الخطوات، تحتاج إلى تسجيل الدخول باستخدام حساب المسؤول Microsoft 365 الخاص بك. [ما هو حساب المسؤول؟] (نظرة عامة على مركز مسؤولي Microsoft 365](.. /admin-overview/admin-center-overview.md) يجب أن تكون مسؤولا عاما أو مسؤول كلمة [مرور](about-admin-roles.md) لتنفيذ هذه الخطوات.
+هذه المقالة مخصصة للأشخاص الذين يديرون نهج كلمة المرور للأعمال أو المؤسسة التعليمية أو المؤسسات غير الربحية. لإكمال هذه الخطوات، تحتاج إلى تسجيل الدخول باستخدام حساب مسؤول Microsoft 365. [ما هو حساب المسؤول؟] (نظرة عامة على مركز مسؤولي Microsoft 365](.. /نظرة عامة على المسؤول/admin-center-overview.md) يجب أن تكون [مسؤولا عموميا أو مسؤول كلمة مرور](about-admin-roles.md) لتنفيذ هذه الخطوات.
 
-يجب أيضا الاتصال Microsoft 365 PowerShell.
+يجب عليك أيضا الاتصال Microsoft 365 باستخدام PowerShell.
 
 ## <a name="set-strong-passwords"></a>تعيين كلمات مرور قوية
 
-1. [الاتصال Microsoft 365 باستخدام PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. [الاتصال إلى Microsoft 365 باستخدام PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-2. باستخدام PowerShell، يمكنك إيقاف تشغيل متطلبات كلمة المرور القوية لجميع المستخدمين الذين لديهم الأمر التالي:
+2. باستخدام PowerShell، يمكنك إيقاف تشغيل متطلبات كلمة المرور القوية لجميع المستخدمين باستخدام الأمر التالي:
 
     ```powershell
     Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
@@ -54,11 +54,11 @@ ms.locfileid: "63572959"
     ```
 
 > [!NOTE]
-> يجب أن يكون userPrincipalName بتنسيق تسجيل الدخول على نمط الإنترنت حيث يكون اسم المستخدم متبوع ب العلامة (@) واسم المجال. على سبيل المثال: user@contoso.com.
+> يجب أن يكون userPrincipalName بتنسيق تسجيل الدخول بنمط إنترنت حيث يتبع اسم المستخدم علامة (@) واسم المجال. على سبيل المثال: user@contoso.com.
 
-## <a name="related-content"></a>المحتوى ذي الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
-[كيفية الاتصال ب Microsoft 365 PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+[كيفية الاتصال Microsoft 365 باستخدام PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 [مزيد من المعلومات حول أوامر PowerShell MsolUser](/powershell/azure/active-directory/install-adv2)
 

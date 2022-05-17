@@ -18,14 +18,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: الاختيار بين أساليب MDM وMAM المختلفة.
-ms.openlocfilehash: 49c8fe8e61026e56b1698d7da2fdbac07896c858
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: cc2eef0fde261ed8ee6eace288d70c53235fc88e
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317483"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435402"
 ---
-# <a name="options-for-protecting-your-devices-and-app-data"></a>خيارات حماية أجهزتك وبيانات التطبيق
+# <a name="options-for-protecting-your-devices-and-app-data-with-microsoft-365"></a>خيارات لحماية أجهزتك وبيانات التطبيق باستخدام Microsoft 365
 
 لديك عدة طرق لتأمين أجهزة مؤسستك وبياناتها باستخدام Microsoft 365 للأعمال والمؤسسات. يمكنك استخدام الخطط المستقلة التالية:
 

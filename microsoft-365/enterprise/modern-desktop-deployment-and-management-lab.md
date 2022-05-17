@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: تعرف على مكان الوصول إلى Windows Office Deployment Lab Kit.
-ms.openlocfilehash: bfa8d52776e93f4a9c33f484f7d56696fdab31fe
-ms.sourcegitcommit: 35d0c891f3d927f3346044be61ab9f348e8da2b4
+ms.openlocfilehash: 5ce9ebcdd3a36b62f74292e2b8e261928ef12043
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65364286"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435336"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>مجموعة أدوات معمل نشر Windows وOffice 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "65364286"
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
 |[بيئة التمرين المعملي Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[بيئة التمرين المعملي Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
-|[Win 10 أدلة معملية](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab_guides.zip)|[دلائل التمرين المعملي ل Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Win 10 أدلة معملية](https://download.microsoft.com/download/2/9/9/29952cdb-b98d-4f9b-9d6e-9fb49644b0a0/Win10_21H1_Lab_05.12.zip)|[دلائل التمرين المعملي ل Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
 
 ## <a name="a-complete-lab-environment"></a>بيئة معملية كاملة
 
@@ -99,7 +99,7 @@ ms.locfileid: "65364286"
 - Windows Hello للأعمال
 
 > [!NOTE]
-> الرجاء استخدام اتصال إنترنت واسع النطاق لتنزيل هذا المحتوى والسماح بما يقرب من 30 دقيقة للتوفير التلقائي. تتطلب بيئة المختبر ما لا يقل عن 16 غيغابايت من الذاكرة المتوفرة و150 غيغابايت من مساحة القرص الحرة. للحصول على الأداء الأمثل، يوصى بتوفير 32 غيغابايت من الذاكرة و300 غيغابايت من المساحة الحرة. تنتهي صلاحية مختبر Windows 10 في 16 مايو 2022. تنتهي صلاحية مختبر Windows 11 في 7 أغسطس 2022. سيتم نشر الإصدارات الجديدة قبل انتهاء الصلاحية.
+> الرجاء استخدام اتصال إنترنت واسع النطاق لتنزيل هذا المحتوى والسماح بما يقرب من 30 دقيقة للتوفير التلقائي. تتطلب بيئة المختبر ما لا يقل عن 16 غيغابايت من الذاكرة المتوفرة و150 غيغابايت من مساحة القرص الحرة. للحصول على الأداء الأمثل، يوصى بتوفير 32 غيغابايت من الذاكرة و300 غيغابايت من المساحة الحرة. تنتهي صلاحية مختبر Windows 10 في 11 أغسطس 2022. تنتهي صلاحية مختبر Windows 11 في 7 أغسطس 2022. سيتم نشر الإصدارات الجديدة قبل انتهاء الصلاحية.
 
 ## <a name="additional-guidance"></a>إرشادات إضافية
 

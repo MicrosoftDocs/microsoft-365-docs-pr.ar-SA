@@ -25,13 +25,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: اتبع الخطوات الواردة في هذه المقالة لمنح موظف آخر حق الوصول إلى OneDrive الموظف السابق وبيانات Outlook.
-ms.openlocfilehash: c710826d0403c6935127f14dade3dfe30a8b5c13
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+description: اتبع الخطوات الواردة في هذه المقالة للوصول إلى OneDrive الموظف السابق وبيانات Outlook، وإجراء نسخ احتياطي له، واختيار ما إذا كنت تريد منح حق الوصول إلى موظف آخر.
+ms.openlocfilehash: 2ec2b2418fd5ca287c51950c23e403168d09f48f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129189"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436548"
 ---
 # <a name="step-5---give-another-employee-access-to-onedrive-and-outlook-data"></a>الخطوة 5 - منح موظف آخر حق الوصول إلى بيانات OneDrive Outlook
 
@@ -77,7 +77,7 @@ ms.locfileid: "65129189"
 
 9. أضف المستخدم إلى **مسؤولي مجموعة المواقع المشتركة** وحدد **"موافق**".
 
-10. سيتمكن المستخدم الآن من الوصول إلى OneDrive الموظف السابق باستخدام عنوان URL OneDrive. لمزيد من المعلومات، راجع ["حول عناوين URL OneDrive](/onedrive/list-onedrive-urls#about-onedrive-urls)".
+10. سيتمكن المستخدم الآن من الوصول إلى OneDrive الموظف السابق باستخدام عنوان URL OneDrive. 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>إبطال وصول المسؤول إلى OneDrive المستخدم
 

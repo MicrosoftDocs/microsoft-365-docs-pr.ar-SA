@@ -16,12 +16,12 @@ ms.custom: ''
 description: يمكن للمسؤولين التعرف على كيفية إنشاء نهج مكافحة التصيد الاحتيالي المتوفرة في مؤسسات Exchange Online Protection (EOP) وتعديلها وحذفها باستخدام علب بريد Exchange Online أو بدونها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f199cb3dbaddc47416c24a82b3066a2631641706
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 08523e98577f208858fb615911ef24aacf7bedc6
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847366"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438894"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>تكوين نهج مكافحة التصيد الاحتيالي في EOP
 
@@ -75,7 +75,7 @@ ms.locfileid: "64847366"
 
   **الملاحظات**:
 
-  - إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات _والأذونات_ المطلوبة للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع ["حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md)".
+  - إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات _والأذونات_ المطلوبة للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md).
   - كما توفر مجموعة دور **إدارة المؤسسة للعرض فقط** في [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) إمكانية الوصول للقراءة فقط إلى الميزة <sup>\*</sup>.
 
 - للحصول على الإعدادات الموصى بها لنهج مكافحة التصيد الاحتيالي، راجع [إعدادات نهج مكافحة التصيد الاحتيالي EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
@@ -138,7 +138,7 @@ ms.locfileid: "64847366"
 
      لتشغيل إعداد، حدد خانة الاختيار. لإيقاف تشغيله، قم بإلغاء تحديد خانة الاختيار.
 
-     <sup>\*</sup> يتوفر هذا الإعداد فقط إذا قمت بتحديد **تمكين التحليل الذكي للانتحال** على الصفحة السابقة. لمزيد من المعلومات، راجع [المرسل غير المصادق عليه](set-up-anti-phishing-policies.md#unauthenticated-sender).
+     <sup>\*</sup> يتوفر هذا الإعداد فقط إذا قمت بتحديد **تمكين التحليل الذكي للانتحال** على الصفحة السابقة. لمزيد من المعلومات، راجع [مؤشرات المرسلين غير المصادق عليهم](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators).
 
    عند الانتهاء، انقر فوق **"التالي**".
 

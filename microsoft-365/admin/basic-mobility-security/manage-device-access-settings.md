@@ -17,13 +17,13 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: يمكن أن يساعدك التنقل الأساسي والأمان على تأمين الأجهزة المحمولة وإدارتها.
-ms.openlocfilehash: 96deda323c6dedcae860811a1e538aaa0bffa25d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+description: بالنسبة للأجهزة التي لا يمكنك إدارتها باستخدام Basic Mobility and Security، يجب حظر وصول التطبيق Exchange ActiveSync إلى البريد الإلكتروني Microsoft 365.
+ms.openlocfilehash: 450d694e83b5044efb25adb918f38a124181481f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414833"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435822"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>إدارة إعدادات الوصول إلى الجهاز في Basic Mobility and Security
 

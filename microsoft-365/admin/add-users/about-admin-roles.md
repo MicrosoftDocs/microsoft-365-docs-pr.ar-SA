@@ -26,14 +26,14 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: أدوار المسؤول مثل تعيين مسؤول الخدمة إلى وظائف العمل ومنح الأذونات لتنفيذ مهام معينة في مركز المسؤولين.
-ms.openlocfilehash: 8a1df118b5dfe1ad484f3a8048cce9cf748ab54b
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 01659905becdbd599c9d597e4a7dac3533d1eeb9
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937645"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435314"
 ---
-# <a name="about-admin-roles"></a>معلومات حول أدوار المسؤول
+# <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>عن أدوار المسؤولين في مركز مسؤولي Microsoft 365
 
 يتضمن اشتراك Microsoft 365 أو Office 365 مجموعة من أدوار المسؤولين التي يمكنك تعيينها للمستخدمين في مؤسستك باستخدام <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>. يتم تعيين كل دور مسؤول إلى وظائف العمل الشائعة ويمنح الأشخاص في مؤسستك أذونات لتنفيذ مهام معينة في مراكز المسؤولين.
 

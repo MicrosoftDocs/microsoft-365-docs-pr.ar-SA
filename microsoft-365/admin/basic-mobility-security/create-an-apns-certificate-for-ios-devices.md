@@ -13,13 +13,13 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: إدارة أجهزة iOS في Basic Mobility and Security.
-ms.openlocfilehash: 99aa909bf9adab1464ad3858cfac4a04cc541609
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: لإدارة أجهزة iOS مثل iPads وiPhones في Basic Mobility and Security، ابدأ بإنشاء شهادة APNs.
+ms.openlocfilehash: 8bcbcdeac9f1cadd945c3f7c44e9192d57db7c82
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781150"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435778"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>إنشاء شهادة APNs للأجهزة التي تعمل بـ iOS
 
@@ -33,7 +33,7 @@ ms.locfileid: "64781150"
 
 4. في صفحة الإعدادات شهادة الإعلامات المؤقتة من Apple، اختر **"التالي**".
 
-5. حدد "تنزيل ملف CSR" واحفظ طلب توقيع الشهادة في مكان ما على الكمبيوتر الذي ستتذكره. حدد **"التالي**".
+5. حدد "تنزيل ملف CSR" واحفظ طلب توقيع الشهادة في مكان ما على الكمبيوتر الذي ستتذكره. حدد **التالي**.
 
 6. في صفحة إنشاء شهادة APNs:
 

@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: تعرف على كيفية نشر الوظائف الإضافية للمستخدمين والمجموعات في مؤسستك باستخدام "النشر المركزي" في مركز الإدارة.
-ms.openlocfilehash: 2dfd92e2dd38487a444362cdbb88ec217e62ca28
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a599023db47a46baa0318e026e70627320a6b1f8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093713"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437514"
 ---
-# <a name="deploy-add-ins-in-the-admin-center"></a>استخدام الوظائف الإضافية في مركز الإدارة
+# <a name="deploy-add-ins-in-the-microsoft-365-admin-center"></a>نشر الوظائف الإضافية في مركز مسؤولي Microsoft 365
 
 تساعدك Office الوظائف الإضافية على تخصيص مستنداتك وتبسيط طريقة الوصول إلى المعلومات على الويب (راجع [بدء استخدام الوظيفة الإضافية Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). بصفتك مسؤولا، يمكنك نشر الوظائف الإضافية Office للمستخدمين في مؤسستك باستخدام ميزة "النشر المركزي" في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>. النشر المركزي هو الطريقة الموصى بها والأكثر ثراء للميزات لمعظم المسؤولين لنشر الوظائف الإضافية للمستخدمين والمجموعات داخل المؤسسة.
 

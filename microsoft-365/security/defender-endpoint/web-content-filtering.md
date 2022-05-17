@@ -6,8 +6,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -15,50 +15,51 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 01000e08153e96042e6873dc45fcb0627ea82e47
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: caee6f216ad5006eb31750d2c5cbd0d9e47f21ce
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782974"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438916"
 ---
 # <a name="web-content-filtering"></a>تصفية محتوى ويب
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 > [!TIP]
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-تعد تصفية محتوى ويب جزءا من قدرات [حماية ويب](web-protection-overview.md) في Microsoft Defender لنقطة النهاية. فهو يمكن مؤسستك من تعقب الوصول إلى مواقع الويب وتنظيمه استنادا إلى فئات المحتوى الخاصة بها. قد تكون العديد من مواقع الويب هذه، على الرغم من كونها غير ضارة، مشكلة بسبب لوائح التوافق أو استخدام النطاق الترددي أو مخاوف أخرى.
+## <a name="what-is-web-content-filtering"></a>ما هي تصفية محتوى الويب؟
+
+تعد تصفية محتوى ويب جزءا من قدرات [حماية الويب](web-protection-overview.md) في Microsoft Defender لنقطة النهاية Microsoft Defender for Business. تتيح تصفية محتوى الويب لمؤسستك تعقب الوصول إلى مواقع الويب وتنظيمه استنادا إلى فئات المحتوى الخاصة بها. قد تكون العديد من مواقع الويب هذه (حتى لو لم تكن ضارة) مشكلة بسبب لوائح التوافق أو استخدام النطاق الترددي أو مخاوف أخرى.
 
 تكوين النهج عبر مجموعات أجهزتك لحظر فئات معينة. يمنع حظر فئة المستخدمين ضمن مجموعات الأجهزة المحددة من الوصول إلى عناوين URL المقترنة بالفئة. بالنسبة لأي فئة غير محظورة، يتم تدقيق عناوين URL تلقائيا. يمكن للمستخدمين الوصول إلى عناوين URL دون تعطيل، وستجمع إحصائيات الوصول للمساعدة في إنشاء قرار نهج أكثر تخصيصا. سيرى المستخدمون إعلام حظر إذا كان أحد العناصر على الصفحة التي يعرضونها يقوم بإجراء استدعاءات لمورد محظور.
 
-تتوفر تصفية محتوى الويب على مستعرضات الويب الرئيسية، مع الكتل التي يتم تنفيذها بواسطة Windows Defender SmartScreen (Microsoft Edge) وحماية الشبكة (Chrome وFirefox وFirefox وFireed و Opera). لمزيد من المعلومات حول دعم المستعرض، راجع قسم المتطلبات الأساسية.
+تتوفر تصفية محتوى الويب على مستعرضات الويب الرئيسية، مع الكتل التي يتم تنفيذها بواسطة Windows Defender SmartScreen (Microsoft Edge) وحماية الشبكة (Chrome وFirefox وFirefox وFireed و Opera). لمزيد من المعلومات حول دعم المستعرض، راجع قسم [المتطلبات الأساسية](#prerequisites) .
 
 ## <a name="benefits-of-web-content-filtering"></a>فوائد تصفية محتوى الويب
 
 - يتم منع المستخدمين من الوصول إلى مواقع الويب في الفئات المحظورة، سواء كانوا يتصفحون محليا أو بالخارج.
-
-- يمكن لفريق الأمان توزيع النهج بسهولة على مجموعات من المستخدمين باستخدام مجموعات الأجهزة المحددة في [Microsoft Defender لنقطة النهاية إعدادات التحكم في الوصول المستندة إلى الدور](/microsoft-365/security/defender-endpoint/rbac).
-
 - يمكن لفريق الأمان الوصول إلى تقارير الويب في نفس الموقع المركزي، مع الرؤية عبر الكتل الفعلية واستخدام الويب.
+- إذا كنت تستخدم Defender لنقطة النهاية، يمكن لفريق الأمان توزيع النهج بسهولة على مجموعات من المستخدمين باستخدام مجموعات الأجهزة المحددة في [إعدادات التحكم في الوصول المستندة إلى الدور Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/rbac).
+- إذا كنت تستخدم Defender for Business، يمكنك تحديد نهج تصفية محتوى ويب واحد سيتم تطبيقه على جميع المستخدمين. 
 
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
-قبل تجربة هذه الميزة، تأكد من تلبية المتطلبات التالية:
+قبل تجربة هذه الميزة، تأكد من تلبية المتطلبات الموضحة في الجدول التالي:
 
-- يتضمن اشتراكك واحدا مما يلي: Windows 10 Enterprise E5 أو Microsoft 365 E5 أو الأمان في Microsoft 365 E5 أو Microsoft 365 E3 أو Microsoft Defender لنقطة النهاية ترخيص مستقل. 
-
-- لديك حق الوصول إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>.
-
-- تعمل أجهزة مؤسستك Windows 10 تحديث الذكرى السنوية (الإصدار 1607) أو إصدار أحدث، أو Windows 11 [بأحدث تحديثات برامج الحماية من الفيروسات/الحماية من البرامج الضارة](manage-updates-baselines-microsoft-defender-antivirus.md).
-
-- يتم تمكين Windows Defender SmartScreen و Network Protection على أجهزة مؤسستك.
+| شرط | الوصف |
+|:---|:---|
+| الاشتراك | يجب أن يتضمن اشتراكك أحد الإجراءات التالية:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- الأمان في Microsoft 365 E5<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender لنقطة النهاية الخطة 1 أو الخطة 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md) |
+| الوصول إلى المدخل | يجب أن يكون لديك حق الوصول إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>. |
+| نظام التشغيل | يجب أن تقوم أجهزة مؤسستك بتشغيل أحد أنظمة التشغيل التالية بأحدث [تحديثات برنامج الحماية من الفيروسات/الحماية من البرامج الضارة](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>- تحديث الذكرى السنوية Windows 10 (الإصدار 1607) أو إصدار أحدث |
+| الحماية ذات الصلة | يجب تمكين [Windows SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) [والحماية من الشبكة](network-protection.md) على أجهزة مؤسستك. |
 
 ## <a name="data-handling"></a>معالجة البيانات
 
@@ -66,7 +67,13 @@ ms.locfileid: "64782974"
 
 ## <a name="turn-on-web-content-filtering"></a>تشغيل تصفية محتوى ويب
 
-من شريط التنقل الأيسر في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، حدد **"الإعدادات** \> **Endpoints** \> **General** \> **Advanced Features**". مرر لأسفل حتى ترى إدخال **تصفية محتوى ويب**. قم بتبديل التبديل إلى تفضيلات **"تشغيل****" و"حفظ**".
+1. انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> وسجل الدخول.
+
+2. في جزء التنقل، حدد **"الإعدادات** \> **Endpoints** \> **General** \> **Advanced Features**". 
+
+3. مرر لأسفل حتى ترى **تصفية محتوى ويب**. 
+
+4. قم بتبديل التبديل إلى **"تشغيل**"، ثم حدد **"حفظ التفضيلات**".
 
 ### <a name="configure-web-content-filtering-policies"></a>تكوين نهج تصفية محتوى ويب
 
@@ -169,10 +176,12 @@ ms.locfileid: "64782974"
 
 4. حدد نطاق النهج. حدد مجموعات الأجهزة لتحديد مكان تطبيق النهج. سيتم منع الأجهزة في مجموعات الأجهزة المحددة فقط من الوصول إلى مواقع الويب في الفئات المحددة.
 
+   > [!IMPORTANT]
+   > إذا كنت تستخدم Defender for Business، فلن يتم تطبيق النطاق. تخطي هذه الخطوة والمتابعة إلى الخطوة 5.
+
 5. راجع الملخص واحفظ النهج. قد يستغرق تحديث النهج ما يصل إلى ساعتين لتطبيقه على أجهزتك المحددة.
 
 > [!NOTE]
->
 > - يمكنك نشر نهج دون تحديد أي فئة على مجموعة أجهزة. سيؤدي هذا الإجراء إلى إنشاء نهج تدقيق فقط لمساعدتك على فهم سلوك المستخدم قبل إنشاء نهج حظر.
 > - إذا كنت تقوم بإزالة نهج أو تغيير مجموعات الأجهزة في الوقت نفسه، فقد يؤدي ذلك إلى تأخير في نشر النهج.
 > - قد يؤدي حظر الفئة "غير مصنفة" إلى نتائج غير متوقعة وغير مرغوب فيها.
@@ -245,7 +254,7 @@ ms.locfileid: "64782974"
 
 يتم دعم Microsoft Edge فقط ولا يتم دعم Network Protection على Windows 10 مضيفي Azure Virtual Desktop متعددي الجلسات.
 
-لا تدعم Network Protection حاليا فحص SSL، مما قد يؤدي إلى السماح ببعض المواقع بواسطة تصفية محتوى ويب التي عادة ما يتم حظرها. سيتم السماح بالمواقع بسبب عدم الرؤية في حركة المرور المشفرة بعد إجراء تأكيد TLS وعدم القدرة على تحليل بعض عمليات إعادة التوجيه.  يتضمن ذلك عمليات إعادة التوجيه من بعض صفحات تسجيل الدخول إلى البريد المستندة إلى ويب إلى صفحة علبة البريد. كحل بديل مقبول، يمكنك إنشاء مؤشر كتلة مخصص لصفحة تسجيل الدخول للتأكد من عدم قدرة أي مستخدمين على الوصول إلى الموقع. ضع في اعتبارك أن هذا قد يمنعهم من الوصول إلى خدمات أخرى مقترنة بموقع الويب نفسه. 
+لا تدعم Network Protection حاليا فحص SSL، مما قد يؤدي إلى السماح ببعض المواقع بواسطة تصفية محتوى ويب التي عادة ما يتم حظرها. سيتم السماح بالمواقع بسبب عدم الرؤية في حركة المرور المشفرة بعد إجراء تأكيد TLS وعدم القدرة على تحليل بعض عمليات إعادة التوجيه.  يتضمن ذلك عمليات إعادة التوجيه من بعض صفحات تسجيل الدخول إلى البريد المستندة إلى ويب إلى صفحة علبة البريد. كحل بديل مقبول، يمكنك إنشاء مؤشر كتلة مخصص لصفحة تسجيل الدخول للتأكد من عدم قدرة أي مستخدمين على الوصول إلى الموقع. ضع في اعتبارك أن هذا قد يمنعهم من الوصول إلى الخدمات الأخرى المقترنة بموقع الويب نفسه. 
 
 ## <a name="see-also"></a>راجع أيضًا
 

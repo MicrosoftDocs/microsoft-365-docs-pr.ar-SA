@@ -18,13 +18,13 @@ ms.technology: mde
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date: 1/18/2022
-ms.openlocfilehash: 5c3724989db1bd8e6389b8a70ba591ce4e109390
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.date: 05/16/2022
+ms.openlocfilehash: ec39e02b48471857932a63ba19547ff2ad1b3390
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787699"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438060"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>فهم واستخدام قدرات تقليل الأجزاء المعرضة للهجوم
 
@@ -32,12 +32,12 @@ ms.locfileid: "64787699"
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 > [!TIP]
@@ -69,7 +69,7 @@ ms.locfileid: "64787699"
 
 7. إعداد جدار حماية الشبكة.
 
-   1. احصل على نظرة عامة على [Windows Defender Firewall مع أمان متقدم](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+   1. احصل على نظرة عامة على [جدار حماية Windows Defender مع أمان متقدم](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
    2. استخدم [دليل تصميم جدار حماية Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) لتحديد كيفية تصميم نهج جدار الحماية.
    3. استخدم [دليل نشر جدار حماية Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) لإعداد جدار حماية مؤسستك باستخدام أمان متقدم.
 
@@ -294,7 +294,7 @@ ms.locfileid: "64787699"
 
 كما ذكر في الفيديو، يتضمن Defender لنقطة النهاية العديد من قدرات تقليل الأجزاء المعرضة للهجوم. استخدم الموارد التالية لمعرفة المزيد:
 
-| الماده | الوصف |
+| مقالة | الوصف |
 |:---|:---|
 | [العزل المستند إلى الأجهزة](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | حماية سلامة النظام والحفاظ عليها عند بدء تشغيله وأثناء تشغيله. التحقق من سلامة النظام من خلال الإثبات المحلي والبعيد. استخدم عزل الحاوية Microsoft Edge للمساعدة في الحماية من مواقع الويب الضارة. |
 | [التحكم في التطبيق](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | استخدم التحكم في التطبيق بحيث يجب أن تكتسب تطبيقاتك الثقة من أجل التشغيل. |

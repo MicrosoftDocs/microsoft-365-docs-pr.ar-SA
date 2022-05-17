@@ -26,14 +26,14 @@ ms.custom:
 search.appverid: MET150
 description: قم بتعيين التراخيص استنادا إلى ما إذا كنت تريد تعيين تراخيص المنتج لمستخدمين محددين أو تعيين تراخيص المستخدمين لمنتج معين.
 ms.date: 04/22/2022
-ms.openlocfilehash: 32c91c82388cdb87b0dd6b980b51b888d1cec521
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 71b6886ed8248f05339e135f96b24f2af2282e0b
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092614"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437537"
 ---
-# <a name="assign-licenses-to-users"></a>تعيين تراخيص للمستخدمين
+# <a name="assign-microsoft-365-licenses-to-users"></a>تعيين تراخيص Microsoft 365 للمستخدمين
 
 يمكنك تعيين تراخيص للمستخدمين على صفحة **"المستخدمون النشطون** " أو على صفحة **"التراخيص** ". يعتمد الأسلوب الذي تستخدمه على ما إذا كنت تريد تعيين تراخيص المنتج لمستخدمين محددين أو تعيين تراخيص المستخدمين لمنتج معين.
 

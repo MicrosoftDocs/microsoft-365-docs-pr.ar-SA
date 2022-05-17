@@ -17,29 +17,34 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 3589b6a0a0cc7af9e2bcfcb11541309042871591
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: b247bf7d4fdc1935a0b971f4d4687afd10eb0787
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173286"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437646"
 ---
 # <a name="what-is-microsoft-defender-for-business"></a>ما هو Microsoft Defender for Business؟
 
 Microsoft Defender for Business هو حل أمان نقطة نهاية جديد تم تصميمه خصيصا للأعمال الصغيرة والمتوسطة الحجم (ما يصل إلى 300 موظف). باستخدام حل أمان نقطة النهاية هذا، تكون أجهزة شركتك محمية بشكل أفضل من برامج الفدية الضارة والبرامج الضارة والتصيد الاحتيالي والتهديدات الأخرى. 
 
-شاهد الفيديو التالي لمعرفة المزيد حول Defender for Business: <br/><br/>
-
-> [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
-
 تصف هذه المقالة ما هو مضمن في Defender for Business، مع ارتباطات لمعرفة المزيد حول هذه الميزات والقدرات.
-
-:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business الميزات والقدرات.":::
 
 >
 > **هل لديك دقيقة؟**
 > يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
 >
+
+## <a name="video-enterprise-grade-protection-for-small-and-medium-sized-businesses"></a>فيديو: حماية على مستوى المؤسسة للشركات الصغيرة والمتوسطة الحجم
+
+شاهد الفيديو التالي لمعرفة المزيد حول Defender for Business: <br/><br/>
+
+> [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
+
+
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business الميزات والقدرات.":::
+
+## <a name="whats-included-with-defender-for-business"></a>ما هو مضمن مع Defender for Business
 
 باستخدام Defender for Business، يمكنك المساعدة في حماية الأجهزة والبيانات التي تستخدمها شركتك مع:
 
@@ -47,7 +52,7 @@ Microsoft Defender for Business هو حل أمان نقطة نهاية جديد 
 
 - **حل أمان سهل الاستخدام**. يقدم Defender for Business تجارب مبسطة ترشدك إلى العمل مع التوصيات والرؤى حول أمان نقاط النهاية الخاصة بك. لا توجد معرفة متخصصة مطلوبة، لأن Defender for Business يوفر التكوين المستند إلى المعالج ونهج الأمان الافتراضية المصممة للمساعدة في حماية أجهزة شركتك من اليوم الأول.
 
-- **المرونة في بيئتك**. يمكن ل Defender for Business العمل مع بيئة عملك، سواء كنت تستخدم Microsoft Intune أو كنت تستخدم Microsoft Cloud للمرة الجديدة. يعمل Defender for Business مع المكونات المضمنة في Windows، ومع تطبيقات أجهزة macOS وiOS وAndroid.
+- **المرونة في بيئتك**. يمكن ل Defender for Business العمل مع بيئة عملك، سواء كنت تستخدم Microsoft Intune أو كنت تستخدم Microsoft Cloud للمرة الجديدة. يعمل Defender for Business مع المكونات المضمنة في Windows، ومع تطبيقات لأجهزة macOS وiOS وAndroid.
 
 - **التكامل مع Microsoft 365 Lighthouse**. إذا كنت موفر خدمة مدارة (MSP) باستخدام [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)، فستتوفر المزيد من القدرات. إذا كان عملاؤك يستخدمون Microsoft 365 Business Premium مع Defender for Business، يمكنك عرض حوادث الأمان والتنبيهات عبر مستأجري العملاء الذين تم إلحاقهم Microsoft 365 Lighthouse.
 
@@ -75,5 +80,6 @@ Microsoft Defender for Business هو حل أمان نقطة نهاية جديد 
 
 ## <a name="next-steps"></a>الخطوات التالية
 
+- [جرب الدليل التفاعلي: بدء استخدام Defender for Business](https://aka.ms/MDB-GetStartedGuide)
 - [تعرف على المزيد حول عملية التكوين المبسطة في Microsoft Defender for Business](mdb-simplified-configuration.md)
 - [تعرف على كيفية الحصول على Microsoft Defender for Business](get-defender-business.md)

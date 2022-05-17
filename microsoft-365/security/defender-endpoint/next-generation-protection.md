@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 00f0471e32147f7171f60887d28386d6b7df204d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 99790921d51bf6d7b5a7268c541b4f754e7b99c9
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414712"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438850"
 ---
 # <a name="next-generation-protection-overview"></a>نظرة عامة حول حماية الجيل التالي
 
@@ -29,6 +29,7 @@ ms.locfileid: "65414712"
 - برنامج الحماية من الفيروسات من Microsoft Defender
 - [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/index.yml)
 
 **الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
@@ -40,7 +41,7 @@ ms.locfileid: "65414712"
 - [حماية مخصصة وتحديثات للمنتجات](manage-updates-baselines-microsoft-defender-antivirus.md)، والتي تتضمن تحديثات متعلقة بالحفاظ على تحديث برنامج الحماية من الفيروسات من Microsoft Defender.
 
 > [!TIP]
-> يتم تضمين حماية الجيل التالي في كل من Microsoft Defender لنقطة النهاية الخطة 1 والخطة 2. [تعرف على المزيد حول Defender لنقطة النهاية الخطة 1 والخطة 2](defender-endpoint-plan-1-2.md)
+> يتم تضمين حماية الجيل التالي في كل من Microsoft Defender لنقطة النهاية الخطة 1 والخطة 2. [تعرف على المزيد حول Defender لنقطة النهاية الخطة 1 والخطة 2](defender-endpoint-plan-1-2.md) كما يتم تضمين حماية الجيل التالي في Microsoft Defender for Business Microsoft 365 Business Premium. [مقارنة ميزات الأمان في خطط Microsoft 365 للشركات الصغيرة والمتوسطة الحجم](../defender-business/compare-mdb-m365-plans.md).
 
 ## <a name="try-a-demo"></a>جرب عرضا توضيحيا!
 
@@ -61,7 +62,7 @@ ms.locfileid: "65414712"
 > التكوين والإدارة هو إلى حد كبير نفس في Windows Server كما هو الحال في عملاء Windows. ومع ذلك، هناك بعض الاختلافات. 
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

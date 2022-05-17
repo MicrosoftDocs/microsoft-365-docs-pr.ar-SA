@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: استخدم Basic Mobility and Security لتعيين نهج أمان الجهاز وقواعد الوصول.
-ms.openlocfilehash: b4752a6f1b71c453b3d1b89adeb25f337a65c255
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: يمكنك إدارة الأجهزة المحمولة المتصلة بمؤسستك Microsoft 365 وتأمينها من خلال إعداد Basic Mobility and Security واستخدامها.
+ms.openlocfilehash: ca2f5f18dc67517fd9af3bf4f1d1a05e17010c35
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780842"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435690"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>نظرة عامة على التنقل الأساسي والأمان Microsoft 365
 
@@ -60,7 +60,7 @@ ms.locfileid: "64780842"
 
 إذا كنت بحاجة فقط إلى إدارة تطبيقات الأجهزة المحمولة (MAM)، ربما للأشخاص الذين يحدثون مشاريع العمل على أجهزتهم الخاصة، يوفر Intune خيارا آخر إلى جانب تسجيل الأجهزة وإدارتها. يسمح لك اشتراك Intune بإعداد نهج MAM باستخدام مدخل Microsoft Azure، حتى لو لم تكن أجهزة الأشخاص مسجلة في Intune. لمزيد من المعلومات، راجع [نظرة عامة على نهج حماية التطبيقات](/mem/intune/apps/app-protection-policy).
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [إعداد Basic Mobility and Security](set-up.md) (article)\
 [تسجيل جهازك المحمول باستخدام Basic Mobility and Security](enroll-your-mobile-device.md) (article)\

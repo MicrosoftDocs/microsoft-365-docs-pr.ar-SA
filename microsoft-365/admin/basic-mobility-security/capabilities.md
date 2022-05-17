@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: يمكن أن يساعدك التنقل الأساسي والأمان على تأمين أجهزتك المحمولة وإدارتها.
-ms.openlocfilehash: b0e303af27d731cf3dba3af13019b3b993e52bfe
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: يساعدك Basic Mobility and Security على تأمين الأجهزة المحمولة وإدارتها من خلال النهج التي تتحكم في الوصول إلى المؤسسة Microsoft 365 البريد الإلكتروني والمستندات.
+ms.openlocfilehash: e63f052e0beebe93f9faa27b54725dbac2a9443f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937752"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435844"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>إمكانات التنقل والأمان الأساسيين
 
@@ -44,7 +44,7 @@ ms.locfileid: "64937752"
 
 <sup>2</sup> يقتصر التحكم بالوصول لأجهزة Windows 8.1 RT على Exchange ActiveSync.
 
-<sup>3</sup> يتطلب التحكم بالوصول Windows 10 اشتراكا يتضمن Premium Azure AD ويجب أن ينضم الجهاز إلى Azure Active Directory.
+<sup>3</sup> يتطلب التحكم بالوصول Windows 10 اشتراكا يتضمن Azure AD Premium ويجب ربط الجهاز ب Azure Active Directory.
 
 > [!NOTE]
 > تستمر الأجهزة المسجلة بالفعل في إصدارات نظام التشغيل السابقة في العمل على الرغم من أن القدرات قد تتغير دون إشعار.
@@ -183,7 +183,7 @@ ms.locfileid: "64937752"
 
 ## <a name="settings-supported-by-windows"></a>الإعدادات مدعوم من قبل Windows
 
-يمكنك إدارة أجهزة Windows 10 عن طريق تسجيلها كأجهزة محمولة. بعد نشر نهج قابل للتطبيق، سيطلب من المستخدمين الذين لديهم أجهزة Windows 10 التسجيل في Basic Mobility and Security في المرة الأولى التي يستخدمون فيها تطبيق البريد الإلكتروني المضمن للوصول إلى بريدهم الإلكتروني Microsoft 365 (يتطلب اشتراك Azure AD المتميز).
+يمكنك إدارة أجهزة Windows 10 عن طريق تسجيلها كأجهزة محمولة. بعد نشر نهج قابل للتطبيق، سيطلب من المستخدمين الذين لديهم أجهزة Windows 10 التسجيل في Basic Mobility and Security في المرة الأولى التي يستخدمون فيها تطبيق البريد الإلكتروني المضمن للوصول إلى بريدهم الإلكتروني Microsoft 365 (يتطلب Azure AD اشتراك متميز).
 
 الإعدادات التالية معتمدة للأجهزة Windows 10 المسجلة كأجهزة محمولة. لن يمنع هذا الإعداد المستخدمين من الوصول إلى موارد Microsoft 365.
 
@@ -230,7 +230,7 @@ ms.locfileid: "64937752"
 
 ## <a name="remotely-wipe-a-mobile-device"></a>مسح جهاز محمول عن بعد
 
-في حالة فقدان جهاز أو سرقته، يمكنك إزالة البيانات التنظيمية الحساسة والمساعدة في منع الوصول إلى موارد المؤسسة Microsoft 365 عن طريق إجراء مسح من **إدارة** **منع** >  فقدان بيانات مدخل **Microsoft Purview** > . يمكنك إجراء مسح انتقائي لإزالة بيانات المؤسسة فقط أو مسح كامل لحذف كافة المعلومات من جهاز واستعادتها إلى إعدادات المصنع الخاصة به.
+في حالة فقدان جهاز أو سرقته، يمكنك إزالة البيانات التنظيمية الحساسة والمساعدة في منع الوصول إلى موارد المؤسسة Microsoft 365 عن طريق إجراء مسح من **إدارة** منع فقدان  > **البيانات مدخل التوافق في Microsoft Purview** >  **Data**. يمكنك إجراء مسح انتقائي لإزالة بيانات المؤسسة فقط أو مسح كامل لحذف كافة المعلومات من جهاز واستعادتها إلى إعدادات المصنع الخاصة به.
 
 لمزيد من المعلومات، راجع [مسح جهاز محمول في Basic Mobility and Security](wipe-mobile-device.md).
 

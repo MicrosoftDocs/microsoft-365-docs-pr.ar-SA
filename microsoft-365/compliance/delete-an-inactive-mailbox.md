@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: عندما لا تعود بحاجة إلى الاحتفاظ بمحتويات علبة بريد غير نشطة Microsoft 365، يمكنك حذف علبة البريد غير النشطة بشكل دائم.
-ms.openlocfilehash: 1e518bda3d11ff17c4ce5aa1ebb6997f8bc09c4d
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: b1a828b2248be7eed583141e13a3badef948b32e
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363095"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438433"
 ---
 # <a name="delete-an-inactive-mailbox"></a>حذف علبة بريد غير نشطة
 
@@ -38,7 +38,7 @@ ms.locfileid: "65363095"
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>قبل حذف علبة بريد غير نشطة
 
-- يجب عليك استخدام Exchange Online PowerShell لإزالة احتجاز التقاضي من علبة بريد غير نشطة. لا يمكنك استخدام مركز إدارة Exchange (EAC). للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- يجب استخدام Exchange Online PowerShell لإزالة قوائم الاحتجاز من علبة بريد غير نشطة. لا يمكنك استخدام مركز إدارة Exchange (EAC) أو مدخل التوافق في Microsoft Purview لهذه الإجراءات. للحصول على إرشادات مفصلة خطوة بخطوة لاستخدام Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - يمكنك نسخ محتويات علبة بريد غير نشطة إلى علبة بريد أخرى قبل إزالة قائمة الاحتجاز وحذف علبة بريد غير نشطة. للحصول على التفاصيل، راجع [استعادة علبة بريد غير نشطة في Office 365](restore-an-inactive-mailbox.md).
 
@@ -50,7 +50,7 @@ ms.locfileid: "65363095"
 
 كما ذكر سابقا، قد يتم وضع احتجاز التقاضي أو In-Place الاحتجاز أو نهج الاستبقاء على علبة بريد غير نشطة. الخطوة الأولى هي تحديد قوائم الاحتجاز على علبة بريد غير نشطة.
   
-قم بتشغيل الأمر التالي لعرض معلومات الاحتجاز لكافة علب البريد غير النشطة في مؤسستك.
+[الاتصال إلى Exchange Online PowerShelland](/powershell/exchange/connect-to-exchange-online-powershell) ثم قم بتشغيل الأمر التالي لعرض معلومات الاحتجاز لكافة علب البريد غير النشطة في مؤسستك.
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
@@ -83,7 +83,7 @@ InPlaceHolds          : {c0ba3ce811b6432a8751430937152491, mbxba6f4ba25b62490aaa
   
 ### <a name="remove-a-litigation-hold"></a>إزالة احتجاز التقاضي
 
-كما ذكر سابقا، يجب عليك استخدام Windows PowerShell لإزالة احتجاز التقاضي من علبة بريد غير نشطة. لا يمكنك استخدام EAC. قم بتشغيل الأمر التالي لإزالة احتجاز التقاضي.
+قم بتشغيل أمر PowerShell التالي لإزالة احتجاز التقاضي.
   
 ```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
@@ -102,7 +102,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 #### <a name="remove-an-inactive-mailbox-from-an-organization-wide-retention-policy"></a>إزالة علبة بريد غير نشطة من نهج استبقاء على مستوى المؤسسة
 
-قم بتشغيل الأمر التالي في Exchange Online PowerShell لاستبعاد علبة بريد غير نشطة من نهج استبقاء على مستوى المؤسسة.
+قم بتشغيل أمر PowerShell التالي لاستبعاد علبة بريد غير نشطة من نهج استبقاء على مستوى المؤسسة.
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention policy GUID without prefix or suffix>
@@ -110,7 +110,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention polic
 
 لمزيد من المعلومات حول تحديد نهج الاستبقاء على مستوى المؤسسة المطبقة على علبة بريد غير نشطة والحصول على GUID لنهج الاستبقاء، راجع القسم "Get-OrganizationConfig" في [كيفية تحديد نوع الاحتجاز الموضوع على علبة البريد](identify-a-hold-on-an-exchange-online-mailbox.md#get-organizationconfig).
 
-بدلا من ذلك، يمكنك تشغيل الأمر التالي لإزالة علبة البريد غير النشطة من كافة النهج على مستوى المؤسسة:
+بدلا من ذلك، يمكنك تشغيل أمر PowerShell التالي لإزالة علبة البريد غير النشطة من كافة النهج على مستوى المؤسسة:
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
@@ -118,13 +118,13 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### <a name="remove-an-inactive-mailbox-from-a-specific-location-retention-policy"></a>إزالة علبة بريد غير نشطة من نهج استبقاء موقع معين
 
-قم بتشغيل الأمر التالي في [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) لإزالة علبة بريد غير نشطة من نهج استبقاء صريح.
+استخدم [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) لإزالة علبة بريد غير نشطة من نهج استبقاء صريح:
 
 ```powershell
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>
 ```
 
-لمزيد من المعلومات حول تحديد نهج استبقاء موقع معينة مطبقة على علبة بريد غير نشطة والحصول على GUID لنهج الاستبقاء، راجع القسم "الحصول على علبة البريد" في [كيفية تحديد نوع الاحتجاز الموضوع على علبة البريد](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox).
+لمزيد من المعلومات حول تحديد نهج استبقاء موقع معينة يتم تطبيقها على علبة بريد غير نشطة، والحصول على المعرف الفريد العمومي (GUID) لنهج الاستبقاء، راجع القسم "الحصول على علبة البريد" في [كيفية تحديد نوع الاحتجاز الموضوع على علبة البريد](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox).
 
 ### <a name="remove-in-place-holds"></a>إزالة In-Place قوائم الاحتجاز
 

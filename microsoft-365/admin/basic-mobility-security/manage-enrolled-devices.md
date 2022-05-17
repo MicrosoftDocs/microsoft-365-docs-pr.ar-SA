@@ -18,13 +18,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 - MET150
-description: يمكن أن يساعدك التنقل الأساسي والأمان على تأمين الأجهزة المحمولة الخاصة بك في مؤسستك وإدارتها.
-ms.openlocfilehash: 74d2a2d6034b1e893987e2ede47a96bc00658f47
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+description: سجل الدخول إلى Microsoft 365 وإعداد Basic Mobility and Security لاستخدام إدارة الأجهزة المحمولة المضمنة لتأمين الأجهزة المحمولة للمستخدمين وإدارتها.
+ms.openlocfilehash: c24d36b1151b22fee228d1a85368bf26a381e4d2
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415140"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435712"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>إدارة الأجهزة المسجلة في إدارة الجهاز الأجهزة المحمولة في Microsoft 365
 

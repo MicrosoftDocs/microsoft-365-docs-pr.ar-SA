@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم تسميات الحساسية لحماية المحتوى في مواقع SharePoint Microsoft Teams والمجموعات Microsoft 365.
-ms.openlocfilehash: 9b9427fc736dfee3ea326b8c523d3f872ad98c70
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 56b6d53d56c8f9fb16e900271b8d6a4c152f6440
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286089"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437994"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>استخدام تسميات الحساسية لحماية المحتوى في Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint
 
@@ -47,9 +47,6 @@ ms.locfileid: "65286089"
 عند تطبيق وصف الحساسية هذا على حاوية مدعومة، تطبق التسمية تلقائيا إعدادات التصنيف والحماية المكونة على الموقع أو المجموعة.
 
 ومع ذلك، لا يرث المحتوى في هذه الحاويات تسميات التصنيف أو إعدادات الملفات ورسائل البريد الإلكتروني، مثل العلامات المرئية والتشفير. حتى يتمكن المستخدمون من تسمية مستنداتهم في مواقع SharePoint أو مواقع الفريق، تأكد من [تمكين تسميات الحساسية لملفات Office في SharePoint OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
-
-> [!NOTE]
-> لا يتم دعم تسميات الحساسية للحاويات مع Office 365 شبكات تسليم المحتوى (CDNs).
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>استخدام تسميات الحساسية Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint
 
@@ -150,7 +147,7 @@ ms.locfileid: "65286089"
 
 - Office على الويب، الذي يتضمن Outlook للويب
 
-- Microsoft Teams ل Windows وmacOS (يستثني تطبيق الويب Teams)
+- Microsoft Teams Windows macOS (يستثني تطبيق الويب Teams)
 
 - Microsoft Planner
 
@@ -183,7 +180,7 @@ ms.locfileid: "65286089"
 
 ### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>تكوين الإعدادات لنوع ارتباط المشاركة الافتراضي لموقع باستخدام إعدادات PowerShell المتقدمة
 
-بالإضافة إلى إعدادات التسمية للمواقع والمجموعات التي يمكنك تكوينها من مدخل توافق Microsoft Purview، يمكنك أيضا تكوين نوع ارتباط المشاركة الافتراضي لموقع. يمكن أيضا تكوين تسميات الحساسية للمستندات لنوع ارتباط مشاركة افتراضي. يتم تحديد هذه الإعدادات التي تساعد على منع الإفراط في المشاركة تلقائيا عندما يحدد المستخدمون الزر **"مشاركة"** في تطبيقاتهم Office. 
+بالإضافة إلى إعدادات التسمية للمواقع والمجموعات التي يمكنك تكوينها من مدخل التوافق في Microsoft Purview، يمكنك أيضا تكوين نوع ارتباط المشاركة الافتراضي لموقع. يمكن أيضا تكوين تسميات الحساسية للمستندات لنوع ارتباط مشاركة افتراضي. يتم تحديد هذه الإعدادات التي تساعد على منع الإفراط في المشاركة تلقائيا عندما يحدد المستخدمون الزر **"مشاركة"** في تطبيقاتهم Office. 
 
 لمزيد من المعلومات والإرشادات، راجع [استخدام تسميات الحساسية لتكوين نوع ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint OneDrive](sensitivity-labels-default-sharing-link.md).
 
@@ -375,7 +372,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
   - SharePoint
   - الفرق
-  - Outlook على ويب ول Windows وmacOS وiOS وAndroid
+  - Outlook على ويب Windows macOS وiOS وAndroid
   - اشكال
   - تيار
   - Planner 

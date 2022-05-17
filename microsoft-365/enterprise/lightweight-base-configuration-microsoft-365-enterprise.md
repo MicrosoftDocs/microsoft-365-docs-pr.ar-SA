@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: استخدم دليل مختبر الاختبار هذا لإنشاء بيئة اختبار خفيفة لاختبار Microsoft 365 للمؤسسة.
-ms.openlocfilehash: fa83bb7681752b40c924af9b8d085447cd7fe074
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0da4a38ad951d30a536e653336571e7bad04a889
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100516"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435292"
 ---
 # <a name="the-lightweight-base-configuration"></a>التكوين الأساسي الخفيف
 
@@ -39,7 +39,7 @@ ms.locfileid: "65100516"
 - [المرحلة 2: تكوين اشتراكك التجريبي Office 365](#phase-2-configure-your-office-365-trial-subscription)
 - [المرحلة 3: إضافة اشتراك تجريبي Microsoft 365 E5](#phase-3-add-a-microsoft-365-e5-trial-subscription)
 - [المرحلة 4: إنشاء كمبيوتر Windows 10 Enterprise](#phase-4-create-a-windows-10-enterprise-computer)
-- [المرحلة 5: الانضمام إلى الكمبيوتر Windows 10 إلى Azure AD](#phase-5-join-your-windows-10-computer-to-azure-ad)
+- [المرحلة 5: الانضمام إلى الكمبيوتر Windows 10 Azure AD](#phase-5-join-your-windows-10-computer-to-azure-ad)
 
 استخدم البيئة الناتجة لاختبار ميزات [ووظائف Microsoft 365 للمؤسسة](https://www.microsoft.com/microsoft-365/enterprise).
 
@@ -49,29 +49,29 @@ ms.locfileid: "65100516"
 > للحصول على خريطة مرئية لجميع المقالات في Microsoft 365 لمكدس دليل مختبر اختبار المؤسسة، راجع [Microsoft 365 لمكدس دليل مختبر اختبار المؤسسة](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 >[!NOTE]
->قد تحتاج إلى طباعة هذه المقالة لتسجيل المعلومات المحددة التي ستحتاجها لهذه البيئة على مدار 30 يوما من الاشتراك التجريبي Office 365. يمكنك بسهولة تمديد اشتراك المسار لمدة 30 يوما أخرى. لبيئة اختبار دائمة، قم بإنشاء اشتراك مدفوع جديد مع مستأجر Azure AD منفصل وعدد صغير من التراخيص.
+>قد تحتاج إلى طباعة هذه المقالة لتسجيل المعلومات المحددة التي ستحتاجها لهذه البيئة على مدار 30 يوما من الاشتراك التجريبي Office 365. يمكنك بسهولة تمديد اشتراك المسار لمدة 30 يوما أخرى. للحصول على بيئة اختبار دائمة، قم بإنشاء اشتراك مدفوع جديد مع مستأجر Azure AD منفصل وعدد صغير من التراخيص.
 
 ## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a>المرحلة 1: إنشاء اشتراكك في Microsoft 365 E5
 
 نبدأ باشتراك تجريبي Microsoft 365 E5 ثم نضيف اشتراك Microsoft 365 E5 إليه.
 
 >[!NOTE]
->نوصي بإنشاء اشتراك تجريبي من Office 365 بحيث تحتوي بيئة الاختبار الخاصة بك على مستأجر Azure AD منفصل عن أي اشتراكات مدفوعة لديك حاليا. يعني هذا الفصل أنه يمكنك إضافة المستخدمين والمجموعات وإزالتها في مستأجر الاختبار دون التأثير على اشتراكات الإنتاج الخاصة بك.
+>نوصي بإنشاء اشتراك تجريبي Office 365 بحيث تحتوي بيئة الاختبار الخاصة بك على مستأجر Azure AD منفصل عن أي اشتراكات مدفوعة لديك حاليا. يعني هذا الفصل أنه يمكنك إضافة المستخدمين والمجموعات وإزالتها في مستأجر الاختبار دون التأثير على اشتراكات الإنتاج الخاصة بك.
 
 لبدء اشتراكك التجريبي Microsoft 365 E5، تحتاج أولا إلى اسم شركة وهمي وحساب Microsoft جديد.
   
 1. نوصي باستخدام متغير من اسم الشركة Contoso لاسم شركتك، وهي شركة وهمية تستخدم في نموذج محتوى Microsoft، ولكنها غير مطلوبة. سجل اسم شركتك الوهمية هنا: ![خط.](../media/Common-Images/TableLine.png)
-    
+
 2. للتسجيل للحصول على حساب Microsoft جديد، انتقل إلى [https://outlook.com](https://outlook.com) حساب باستخدام حساب بريد إلكتروني وعنوان جديدين وأنشئه. ستستخدم هذا الحساب للتسجيل للحصول على Office 365.
-    
+
     - سجل الاسم الأول واسم العائلة لحسابك الجديد هنا: ![خط.](../media/Common-Images/TableLine.png)
-    
+
     - سجل عنوان حساب البريد الإلكتروني الجديد هنا: ![خط.](../media/Common-Images/TableLine.png)@outlook.com
-    
+
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>التسجيل للحصول على اشتراك تجريبي Office 365 E5
 
 1. في المستعرض، انتقل إلى [https://aka.ms/e5trial](https://aka.ms/e5trial).
-    
+
 2. في الخطوة 1 من "**شكرا" لاختيارك صفحة Office 365 E5**، أدخل عنوان حساب بريدك الإلكتروني الجديد.
 3. في الخطوة 2 من عملية اشتراك المسار، أدخل المعلومات المطلوبة، ثم قم بإجراء التحقق.
 4. في الخطوة 3، أدخل اسم مؤسسة ثم اسم حساب سيكون المسؤول العام للاشتراك.
@@ -83,10 +83,10 @@ ms.locfileid: "65100516"
 8. في إعداد Office 365 E5، حدد **"متابعة" باستخدام *مؤسستك.onmicrosoft.com* للبريد الإلكتروني وتسجيل الدخول**، ثم حدد **"إنهاء" ثم تابع لاحقا**.
 
 يجب أن تشاهد مركز مسؤولي Microsoft 365.
-    
+
 ## <a name="phase-2-configure-your-office-365-trial-subscription"></a>المرحلة 2: تكوين اشتراكك التجريبي Office 365
 
-في هذه المرحلة، يمكنك تكوين اشتراكك مع مستخدمين إضافيين وتعيينهم Office 365 E5 التراخيص.
+في هذه المرحلة، يمكنك تكوين اشتراكك مع مستخدمين آخرين وتعيينهم Office 365 E5 التراخيص.
   
 للاتصال باشتراكك باستخدام Azure Active Directory PowerShell لوحدة Graph من الكمبيوتر، استخدم الإرشادات الموجودة في [الاتصال Microsoft 365 باستخدام PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
     
@@ -113,6 +113,7 @@ for($i=2;$i -le 4; $i++) {
     Set-AzureADUserLicense -ObjectId $userObjectID -AssignedLicenses $LicensesToAssign
 }
 ```
+
 > [!NOTE]
 > استخدام كلمة مرور مشتركة هنا هو للأتمتة وسهولة التكوين لبيئة اختبار. ومن الواضح أن هذا لا يشجع كثيرا على اشتراكات الإنتاج. 
 
@@ -121,34 +122,34 @@ for($i=2;$i -le 4; $i++) {
 إذا لم تكن قد سجلت هذه القيم بالفعل، فسجلها الآن:
   
 - اسم مسؤول عمومي: ![خط.](../media/Common-Images/TableLine.png).onmicrosoft.com (من الخطوة 6 من المرحلة 1)
-    
+
     سجل أيضا كلمة المرور لهذا الحساب في موقع آمن.
-    
+
 - اسم مؤسسة الاشتراك التجريبي: ![خط.](../media/Common-Images/TableLine.png) (من الخطوة 4 من المرحلة 1)
-    
-- لإدراج حسابات المستخدم 2 والمستخدم 3 والمستخدم 4 والمستخدم 5، قم بتشغيل الأمر التالي من وحدة Azure Active Directory Windows لمطالبة Windows PowerShell:
-    
+
+- لإدراج حسابات المستخدم 2 والمستخدم 3 والمستخدم 4 والمستخدم 5، قم بتشغيل الأمر التالي من الوحدة النمطية ل Azure Active Directory لمطالبة Windows PowerShell:
+
   ```powershell
   Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
   ```
 
     سجل أسماء الحسابات هنا:
-    
+
   - اسم حساب المستخدم 2: user2 @![خط.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - اسم حساب المستخدم 3: user3 @![خط.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - اسم حساب المستخدم 4: user4 @![خط.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - اسم حساب المستخدم 5: user5 @![خط.](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
     سجل أيضا كلمة المرور الشائعة لهذه الحسابات في موقع آمن.
-   
+
 ### <a name="using-an-office-365-test-environment"></a>استخدام بيئة اختبار Office 365
 
 إذا كنت بحاجة إلى بيئة اختبار Office 365 فقط، فلن تحتاج إلى قراءة باقي هذه المقالة.
 
-للحصول على دلائل مختبر الاختبار الإضافية التي تنطبق على كل من Office 365 Microsoft 365، راجع [Microsoft 365 لدلائل مختبر اختبار المؤسسة](m365-enterprise-test-lab-guides.md).
+للحصول على دلائل مختبر الاختبار الأخرى التي تنطبق على كل من Office 365 Microsoft 365، راجع [Microsoft 365 لدلائل مختبر اختبار المؤسسة](m365-enterprise-test-lab-guides.md).
   
 ## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a>المرحلة 3: إضافة اشتراك تجريبي Microsoft 365 E5
 
@@ -198,15 +199,21 @@ for($i=2;$i -le 4; $i++) {
   
 ### <a name="physical-computer"></a>جهاز كمبيوتر فعلي
 
-على كمبيوتر شخصي، قم بتثبيت Windows 10 Enterprise. يمكنك تنزيل الإصدار التجريبي Windows 10 Enterprise [هنا](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
-  
+على كمبيوتر شخصي، قم بتثبيت Windows 10 Enterprise. يمكنك تنزيل إصدار تقييم من Windows 10 Enterprise.
+
+> [!NOTE]
+> مركز تقييم Microsoft غير متوفر مؤقتا. للوصول إلى هذا التنزيل، راجع [الإصدارات التجريبية ومجموعات أدوات Accessing ل Windows (الحل البديل لمركز التقييم).](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125)<!-- 6049663 -->
+
 ### <a name="virtual-machine"></a>الجهاز الظاهري
 
-استخدم برنامج hypervisor الذي تختاره لإنشاء جهاز ظاهري، ثم قم بتثبيت Windows 10 Enterprise عليه. يمكنك تنزيل الإصدار التجريبي Windows 10 Enterprise [هنا](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).
-  
+استخدم برنامج hypervisor الذي تختاره لإنشاء جهاز ظاهري، ثم قم بتثبيت Windows 10 Enterprise عليه. يمكنك تنزيل إصدار تقييم من Windows 10 Enterprise.
+
+> [!NOTE]
+> مركز تقييم Microsoft غير متوفر مؤقتا. للوصول إلى هذا التنزيل، راجع [الإصدارات التجريبية ومجموعات أدوات Accessing ل Windows (الحل البديل لمركز التقييم).](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125)<!-- 6049663 -->
+
 ### <a name="virtual-machine-in-azure"></a>الجهاز الظاهري في Azure
 
-لإنشاء جهاز ظاهري Windows 10 في Microsoft Azure، ***يجب أن يكون لديك اشتراك يستند إلى Visual Studio***، والذي لديه حق الوصول إلى الصورة Windows 10 Enterprise. لا تتوفر للأنواع الأخرى من اشتراكات Azure، مثل الاشتراكات التجريبية والاشتراكات المدفوعة، إمكانية الوصول إلى هذه الصورة. للحصول على أحدث المعلومات، راجع [استخدام عميل Windows في Azure لسيناريوهات التطوير/الاختبار](/azure/virtual-machines/windows/client-images).
+لإنشاء جهاز ظاهري Windows 10 في Microsoft Azure، ***يجب أن يكون لديك اشتراك يستند إلى Visual Studio***، والذي لديه حق الوصول إلى الصورة Windows 10 Enterprise. لا يمكن للأنواع الأخرى من اشتراكات Azure، مثل الاشتراكات التجريبية والمدفوعة، الوصول إلى هذه الصورة. للحصول على أحدث المعلومات، راجع [استخدام عميل Windows في Azure لسيناريوهات التطوير/الاختبار](/azure/virtual-machines/windows/client-images).
   
 > [!NOTE]
 > تستخدم مجموعات الأوامر التالية أحدث إصدار من Azure PowerShell. راجع [بدء استخدام أوامر Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/). تنشئ مجموعات الأوامر هذه جهازا ظاهريا Windows 10 Enterprise يسمى WIN10 وكافة بنيته الأساسية المطلوبة، بما في ذلك مجموعة موارد وحساب تخزين وشبكة ظاهرية. إذا كنت على دراية بالفعل بخدمات البنية الأساسية ل Azure، فتكيف هذه الإرشادات لتلائم البنية الأساسية المنشورة حاليا.
@@ -246,7 +253,7 @@ $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-بعد ذلك، قم بإنشاء شبكة ظاهرية جديدة وجهاز WIN10 الظاهري باستخدام هذه الأوامر. عند المطالبة، قم بتوفير اسم وكلمة مرور حساب المسؤول المحلي ل WIN10 وتخزينها في موقع آمن.
+بعد ذلك، قم بإنشاء شبكة ظاهرية جديدة وجهاز WIN10 الظاهري باستخدام هذه الأوامر. عند المطالبة، قم بتوفير اسم وكلمة مرور حساب المسؤول المحلي ل WIN10 وقم بتخزين هذه المعلومات في موقع آمن.
   
 ```powershell
 $corpnetSubnet=New-AzVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
@@ -268,57 +275,56 @@ $vm=Set-AzVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateO
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-## <a name="phase-5-join-your-windows-10-computer-to-azure-ad"></a>المرحلة 5: الانضمام إلى الكمبيوتر Windows 10 إلى Azure AD
+## <a name="phase-5-join-your-windows-10-computer-to-azure-ad"></a>المرحلة 5: الانضمام إلى الكمبيوتر Windows 10 Azure AD
 
 بعد إنشاء الجهاز الفعلي أو الظاهري الذي يحتوي على Windows 10 Enterprise، سجل الدخول باستخدام حساب مسؤول محلي.
   
 > [!NOTE]
 > بالنسبة إلى جهاز ظاهري في Azure، استخدم  [هذه الإرشادات](/azure/virtual-machines/windows/connect-logon) للاتصال به.
   
-بعد ذلك، انضم إلى الكمبيوتر WIN10 إلى مستأجر Azure AD لاشتراكك في Microsoft 365 E5.
+بعد ذلك، انضم إلى الكمبيوتر WIN10 إلى المستأجر Azure AD لاشتراكك في Microsoft 365 E5.
   
 1. على سطح المكتب على كمبيوتر WIN10، حدد **"بدء > الإعدادات > الحسابات" > الوصول إلى > الاتصال العمل أو المؤسسة التعليمية**.
-    
+
 2. في مربع الحوار **"إعداد حساب العمل أو المؤسسة التعليمية** "، حدد **"الانضمام إلى هذا الجهاز إلى Azure Active Directory**".
-    
+
 3. في **حساب العمل أو المؤسسة التعليمية**، أدخل اسم حساب المسؤول العام لاشتراكك في Microsoft 365 E5، ثم حدد **"التالي**".
-    
+
 4. في **إدخال كلمة المرور**، أدخل كلمة المرور لحساب المسؤول العام، ثم حدد **تسجيل الدخول**.
-    
-5. عند مطالبتك بالتأكد من أن هذه هي مؤسستك، حدد **"انضمام**"، ثم حدد **"تم**".
-    
+
+5. عند مطالبتك بالتأكد من أن هذه المؤسسة هي مؤسستك، حدد **"انضمام**"، ثم حدد **"تم**".
+
 6. أغلق نافذة الإعدادات.
-    
+
 بعد ذلك، قم بتثبيت Microsoft 365 Apps for enterprise على الكمبيوتر WIN10:
   
 1. افتح مستعرض Microsoft Edge وسجل الدخول إلى [مركز مسؤولي Microsoft 365](https://admin.microsoft.com) باستخدام بيانات اعتماد حساب المسؤول العام.
-    
+
 2. في علامة التبويب **"Microsoft Office الشريط الرئيسي**"، حدد **"تثبيت Office**".
-    
+
 3. عند مطالبتك بما يجب فعله، حدد **"تشغيل**"، ثم حدد **"نعم** **لعنصر تحكم حساب المستخدم**".
-    
+
 4. انتظر حتى يكمل Office تثبيته. عندما ترى **أنك جاهز تماما!**، حدد **"إغلاق"** مرتين.
-    
+
 تبدو بيئتك الناتجة كما يلي:
 
 ![المرحلة 5 من بيئة اختبار Microsoft 3656 Enterprise.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-يتضمن هذا الكمبيوتر WIN10 الذي يحتوي على:
+تتضمن هذه البيئة الكمبيوتر WIN10 الذي يحتوي على:
 
-- انضم إلى مستأجر Azure AD لاشتراكك في Microsoft 365 E5.
+- انضم إلى المستأجر Azure AD لاشتراكك في Microsoft 365 E5.
 - مسجل كجهاز Azure AD في Microsoft Intune (EMS).
 - Microsoft 365 Apps for enterprise مثبت.
   
-أنت الآن جاهز لتجربة ميزات إضافية [من Microsoft 365 للمؤسسة](https://www.microsoft.com/microsoft-365/enterprise).
+أنت الآن جاهز لتجربة المزيد من ميزات [Microsoft 365 للمؤسسة](https://www.microsoft.com/microsoft-365/enterprise).
   
 ## <a name="next-steps"></a>الخطوات التالية
 
-استكشف هذه المجموعات الإضافية من دلائل مختبر الاختبار:
+استكشف هذه المجموعات الأخرى من دلائل مختبر الاختبار:
   
 - [الهوية](m365-enterprise-test-lab-guides.md#identity)
 - [إدارة الأجهزة المحمولة](m365-enterprise-test-lab-guides.md#mobile-device-management)
 - [حماية المعلومات](m365-enterprise-test-lab-guides.md#information-protection)
-   
 
 ## <a name="see-also"></a>راجع أيضًا
 

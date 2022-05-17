@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: التنقل الأساسي والأمان جزء من خطط Microsoft 365.
-ms.openlocfilehash: 36190be6345188503e7ba5147b72918a342aba73
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: يعد Basic Mobility and Security جزءا من خطط Microsoft 365، بينما يعد Microsoft Intune منتجا مستقلا مضمنا مع خطط Microsoft 365 معينة.
+ms.openlocfilehash: 1d04beea6ece35d5d28bdd961041b30c1f8f2793
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781172"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435748"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>الاختيار بين التنقل الأساسي والأمان أو Intune
 
