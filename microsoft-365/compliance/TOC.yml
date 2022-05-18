@@ -362,7 +362,7 @@
               href: sit-modify-keyword-dictionary.md
             - name: إدارة مخطط مطابقة البيانات بالضبط
               href: sit-use-exact-data-manage-schema.md
-            - name: قم بتحديث ملف جدول مصدر المعلومات الحساسة
+            - name: قم بتحديث ملف جدول مصدر المعلومات الحساسة EDM
               href: sit-use-exact-data-refresh-data.md
             - name: استخدام الكيانات المسماة في نهج تفادي فقدان البيانات
               href: named-entities-use.md
@@ -1009,8 +1009,6 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: تشغيل التدقيق أو إيقاف تشغيله
           href: turn-audit-log-search-on-or-off.md
-        - name: استخدام مفتاح العميل لتشفير سجلات التدقيق
-          href: auditing-cmk-encryption.md
         - name: استخدام سجل التدقيق للتحقق من المشاكل الشائعة
           href: auditing-troubleshooting-scenarios.md
         - name: استخدام تدقيق المشاركة في سجل التدقيق
