@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على كيفية الحصول على تقرير نشاط المستخدم Microsoft Teams والحصول على رؤى حول نشاط Teams في مؤسستك.
-ms.openlocfilehash: a2bfa434d5a564307498f621cb5105f411daff4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 691c6999e97350184fbe72e28f2b380dcf7b41d9
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65087206"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467537"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365 التقارير في مركز الإدارة - Microsoft Teams نشاط المستخدم
 
@@ -84,8 +84,8 @@ ms.locfileid: "65087206"
 
 3. حدد **"حفظ التغييرات**".
 
+## <a name="related-content"></a>المحتوى ذو الصلة
 
-## <a name="see-also"></a>راجع أيضًا
 [تقرير استخدام الجهاز Microsoft Teams](../activity-reports/microsoft-teams-device-usage-preview.md)
 
 [تقرير نشاط استخدام Microsoft Teams](../activity-reports/microsoft-teams-usage-activity.md) 

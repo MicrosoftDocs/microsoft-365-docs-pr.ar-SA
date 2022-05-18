@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على كيفية استخدام مبدل المستأجر وطرق العرض متعددة المستأجرين التي تمنحك القدرة على إدارة المستأجرين من موقع واحد.
-ms.openlocfilehash: 0058bdb45b42e2c67b96ff3e30ce1cd04e5658b2
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 4a1168b1c2676bf25f0bb4ad7f3353a5e65f8caa
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713944"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468075"
 ---
-# <a name="multi-tenant-management"></a>إدارة متعددة المستأجرين
+# <a name="multi-tenant-management-for-microsoft-365-partner-admins"></a>إدارة متعددة المستأجرين لمسؤولي شركاء Microsoft 365
 
 توفر الإدارة متعددة المستأجرين شكلا موحدا من الإدارة التي تسمح Microsoft 365 المسؤولين الشركاء بالقدرة على إدارة جميع المستأجرين الذين يديرونهم من موقع واحد. إذا كنت شريكا له دور مسؤول مفوض وتدير مستأجرين متعددين، يمكنك:
 

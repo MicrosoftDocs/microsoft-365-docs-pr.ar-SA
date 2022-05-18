@@ -5,8 +5,7 @@ keywords: أحدث الميزات في Microsoft Defender لـ Office 365، و g
 search.appverid: met150
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
@@ -16,17 +15,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 12/03/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 557b81db3c211b294166af8e5f8aaa783fc563a6
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 8c2321ce8ed367db386fa97640564d07208db78b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65215782"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466251"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>أحدث الميزات في Microsoft Defender لـ Office 365
 
@@ -50,8 +48,10 @@ ms.locfileid: "65215782"
 - [ما الجديد في Microsoft Defender لنقطة النهاية](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [ما الجديد في Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [ما الجديد في Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
 ## <a name="april-2022"></a>أبريل 2022
 
+- [تقديم جدول URLClickEvents في التتبع المتقدم Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096): تقديم جدول UrlClickEvents في التتبع المتقدم مع Microsoft Defender لـ Office 365.
 - [تحسينات معالجة البريد الإلكتروني اليدوي](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): إحضار إجراءات إزالة البريد الإلكتروني اليدوية التي تم اتخاذها في Microsoft Defender لـ Office 365 إلى مركز الصيانة الموحد Microsoft 365 Defender (M365D) باستخدام تحقيق جديد يركز على الإجراء.
  
 ## <a name="march-2022"></a>مارس 2022
@@ -122,6 +122,5 @@ ms.locfileid: "65215782"
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[خارطة طريق Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
-
-[وصف الخدمة Microsoft Defender لـ Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- [خارطة طريق Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
+- [وصف الخدمة Microsoft Defender لـ Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

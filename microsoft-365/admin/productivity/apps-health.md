@@ -1,5 +1,5 @@
 ---
-title: نقاط إنتاجية Microsoft - حماية تطبيقات Microsoft 365
+title: نقاط الإنتاجية وحماية تطبيقاتك Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: تفاصيل الصحة Microsoft 365 Apps - درجة الإنتاجية لتجارب التكنولوجيا.
-ms.openlocfilehash: 2e8e44c954d8d1d6bacca766bd528c3897b7686b
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: a87bd49ace301eeb6f48edc31fba5a02d0386de6
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782138"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466361"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 Apps الصحة – تجارب التكنولوجيا
 
@@ -112,7 +112,7 @@ ms.locfileid: "64782138"
 - **الإصدارات**: إصدارات تطبيقات Microsoft 365 الحالية على الأجهزة.
 - **# الأجهزة**: عدد الأجهزة.
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
 [التواصل – تجارب الأشخاص](communication.md) (مقالة)\
 [التعاون في المحتوى – تجارب الأشخاص](content-collaboration.md) (مقالة)\

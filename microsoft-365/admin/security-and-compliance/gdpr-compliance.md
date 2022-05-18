@@ -1,5 +1,5 @@
 ---
-title: دليل القانون العام لحماية البيانات (GDPR) المبسط لشركتك الصغيرة
+title: 'القانون العام لحماية البيانات (GDPR) المبسط: دليل لشركتك الصغيرة'
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
 description: تعرف على كيفية مساعدة Microsoft 365 للأعمال في عملية القانون العام لحماية البيانات (GDPR).
-ms.openlocfilehash: 4f900b8694acb97be3449072a2ccf5ac7d89ff1f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 28f39b8aaf715c9f95f89fe30ae0cfc077327eda
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934126"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469503"
 ---
 # <a name="gdpr-simplified-a-guide-for-your-small-business"></a>القانون العام لحماية البيانات (GDPR) المبسط: دليل لشركتك الصغيرة
 
@@ -101,7 +101,7 @@ ms.locfileid: "64934126"
 على سبيل المثال، يمكنك إدارة قوائم العملاء الفرديين لإرسال إشعارات إليهم حول العروض الخاصة، إذا وافقوا على ذلك.
 
 #### <a name="microsoft-365-features-that-can-help"></a>Microsoft 365 الميزات التي يمكن أن تساعد
-يمكن أن يساعدك [Microsoft Purview حماية البيانات](/microsoft-365/compliance/information-protection) في اكتشاف المعلومات الحساسة في شركتك وتصنيفها وحمايتها. يمكنك استخدام المصنفات القابلة للتدريب لمساعدتك في تحديد أنواع المستندات التي تحتوي على بيانات شخصية وتسميتها. 
+[يمكن](/microsoft-365/compliance/information-protection) أن يساعدك حماية البيانات في Microsoft Purview في اكتشاف المعلومات الحساسة في شركتك وتصنيفها وحمايتها. يمكنك استخدام المصنفات القابلة للتدريب لمساعدتك في تحديد أنواع المستندات التي تحتوي على بيانات شخصية وتسميتها. 
 
 ### <a name="step-2-inform-your-customers-employees-and-other-individuals-when-you-need-to-collect-their-personal-data"></a>الخطوة 2: إبلاغ العملاء والموظفين والأفراد الآخرين عندما تحتاج إلى جمع بياناتهم الشخصية
 

@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: تعرف على كيفية الحصول على تقرير Microsoft 365 Apps للاستخدام باستخدام لوحة معلومات تقارير Microsoft 365 في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: 229797921de2e24754203efc466f63661eb26bc8
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: تعرف على كيفية الحصول على تقرير استخدام Microsoft 365 Apps للاطلاع على نشاط المستخدم المرخص عبر التطبيقات وكيفية استخدام التطبيقات عبر الأنظمة الأساسية.
+ms.openlocfilehash: acb9d910ad8e08275dff3ed65e4b39bb4e867033
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781600"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467515"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Microsoft 365 التقارير في مركز الإدارة - استخدام Microsoft 365 Apps
 

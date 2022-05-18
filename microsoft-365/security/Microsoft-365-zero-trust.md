@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: bb452c74763e31be11a6431cc260667319d2582f
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 2f8fe053d0ffb6d453029ab3f7fee17846661b6d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363181"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469262"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>خطة نشر الثقة المعدومة من Microsoft 365
 
@@ -49,11 +49,13 @@ ms.locfileid: "65363181"
 - يتم تكوين جميع الهويات والأجهزة والبيانات والتطبيقات والشبكة ومكونات البنية الأساسية الأخرى مع الأمان المناسب. يتم تنسيق النهج التي تم تكوينها لكل من هذه المكونات مع استراتيجية ثقة معدومة الشاملة. على سبيل المثال، تحدد نهج الأجهزة معايير الأجهزة السليمة وتتطلب نهج الوصول المشروط أجهزة سليمة للوصول إلى تطبيقات وبيانات معينة.
 - تراقب الحماية من التهديدات والذكاء البيئة، وتعرض المخاطر الحالية، وتتخذ إجراءات تلقائية لمعالجة الهجمات.
 
+لمزيد من المعلومات حول ثقة معدومة، راجع [_**مركز إرشادات ثقة معدومة**_](/security/zero-trust) من Microsoft.
+
 <!---
 For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
 -->
 
-لمزيد من المعلومات حول ثقة معدومة، راجع [_**مركز إرشادات ثقة معدومة**_](/security/zero-trust) من Microsoft.
+
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>نشر ثقة معدومة Microsoft 365
 
@@ -68,6 +70,9 @@ For more information about this architecture, including deployment objectives fo
 - يبدأ ثقة معدومة بأساس الهوية وحماية الجهاز.
 - تستند قدرات الحماية من التهديدات إلى جانب هذا الأساس لتوفير مراقبة ومعالجة التهديدات الأمنية في الوقت الحقيقي.
 - توفر حماية المعلومات والحوكمة ضوابط متطورة تستهدف أنواعا معينة من البيانات لحماية معلوماتك الأكثر قيمة ولمساعدتك على الامتثال لمعايير الامتثال، بما في ذلك حماية المعلومات الشخصية.
+
+
+تفترض هذه المقالة أنك قمت بالفعل بتكوين هوية السحابة. إذا كنت بحاجة إلى إرشادات لهذا الهدف، فراجع [**نشر البنية الأساسية لهويتك Microsoft 365**](/microsoft-365/enterprise/deploy-identity-solution-overview).
 
 ## <a name="step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies"></a>الخطوة 1. تكوين الهوية ثقة معدومة وحماية الوصول إلى الجهاز — نهج نقطة البداية
 

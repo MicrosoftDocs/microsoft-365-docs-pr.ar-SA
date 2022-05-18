@@ -14,14 +14,13 @@ ms.reviewer: mimilone, julih
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c7307e7c690e9664f6a848fcd93ed27f1062455a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: d93587867a2fea0921a1ac9711eed0f8c1b1beec
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418347"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468295"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>الكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها وحظرها
 
@@ -114,7 +113,7 @@ ms.locfileid: "65418347"
 
 ### <a name="use-group-policy-to-configure-pua-protection"></a>استخدام نهج المجموعة لتكوين حماية PUA
 
-1. تنزيل [القوالب الإدارية (admx.) وتثبيتها لتحديث Windows 10 أكتوبر 2020 (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
+1. تنزيل [القوالب الإدارية (.admx) وتثبيتها لتحديث Windows 11 أكتوبر 2021 (21H2)](https://www.microsoft.com/download/details.aspx?id=103507)
 
 2. على كمبيوتر إدارة نهج المجموعة، افتح [وحدة تحكم إدارة نهج المجموعة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
@@ -208,7 +207,7 @@ DeviceEvents
 لمزيد من المعلومات، راجع [تكوين الاستثناءات والتحقق من صحتها استنادا إلى ملحق الملف وموقع المجلد](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

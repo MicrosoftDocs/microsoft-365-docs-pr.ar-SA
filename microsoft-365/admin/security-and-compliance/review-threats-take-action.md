@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: تعرف على كيفية مراجعة وإدارة التهديدات التي تم اكتشافها بواسطة برنامج الحماية من الفيروسات من Microsoft Defender على أجهزة Windows 10.
-ms.openlocfilehash: 9b819edc21d6cfcac663c54e15b1a060b2b16fa2
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2d75149f8bcb4ea13e1e474acbb1dedfccb4ec50
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319298"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469459"
 ---
-# <a name="review-detected-threats-and-take-action"></a>مراجعة التهديدات التي تم الكشف عنها واتخاذ إجراء
+# <a name="review-threats-detected-by-microsoft-defender-antivirus-and-take-action"></a>مراجعة التهديدات التي تم اكتشافها بواسطة برنامج الحماية من الفيروسات من Microsoft Defender واتخاذ إجراء
 
 بمجرد اكتشاف ملف أو برنامج ضار، برنامج الحماية من الفيروسات من Microsoft Defender حظره ومنع تشغيله. ومع تشغيل الحماية المقدمة من السحابة، تتم إضافة التهديدات المكتشفة حديثا إلى محرك الحماية من الفيروسات والحماية من البرامج الضارة بحيث تكون أجهزتك الأخرى والمستخدمون محميين أيضا.
 

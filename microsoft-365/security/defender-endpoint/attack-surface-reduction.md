@@ -20,13 +20,12 @@ ms.topic: article
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date: 1/18/2022
-ms.openlocfilehash: a1ae7d53ac69b4756417704b4938ff4fb41f9e41
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: a5ca2613028e892229da1888c6176cb729e0cf1b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418795"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469569"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>نظرة عامة على قواعد تقليل الأجزاء المعرضة للهجوم
 
@@ -127,7 +126,7 @@ ms.locfileid: "65418795"
 - Windows Server أو [الإصدار 1803 (التحديث نصف السنوي)](/windows-server/get-started/whats-new-in-windows-server-1803) أو إصدار أحدث
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
+- [Windows Server 2012 R2](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh801901(v=ws.11))
 
   >[!NOTE]
   >يجب إلحاق Windows Server 2016 وserver Windows 2012 R2 باستخدام الإرشادات الموجودة في [خوادم Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) المحلية لكي تعمل هذه الميزة.
@@ -177,7 +176,7 @@ DeviceEvents
 يتم إنشاء "إصدار المحرك" المدرج لأحداث تقليل الأجزاء المعرضة للهجوم في سجل الأحداث بواسطة Defender لنقطة النهاية، وليس بواسطة نظام التشغيل. يتم دمج Defender لنقطة النهاية مع Windows 10 Windows 11، لذلك تعمل هذه الميزة على جميع الأجهزة التي تم تثبيت Windows 10 أو Windows 11 عليها.
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

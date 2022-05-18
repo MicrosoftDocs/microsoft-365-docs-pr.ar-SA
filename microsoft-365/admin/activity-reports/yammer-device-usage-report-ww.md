@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: احصل على تقرير استخدام الجهاز Yammer لمعرفة الأجهزة التي يستخدمها المستخدمون Yammer.
-ms.openlocfilehash: 265cef494349daba8b7e526ad6b7c6abd61adcf7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: احصل على تقرير استخدام الجهاز Yammer لمعرفة المزيد حول الأجهزة التي يستخدمها المستخدمون Yammer، وعدد المستخدمين اليومي حسب نوع الجهاز، والتفاصيل لكل مستخدم.
+ms.openlocfilehash: faf5b364090fe4ed88e0a6dd977238e65f3e6c68
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781241"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467175"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>تقارير Microsoft 365 في مركز الإدارة - Yammer تقرير استخدام الجهاز
 

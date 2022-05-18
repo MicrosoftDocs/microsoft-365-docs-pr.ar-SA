@@ -1,5 +1,5 @@
 ---
-title: نقل ملفاتك إلى OneDrive
+title: نقل الملفات إلى OneDrive
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -20,32 +20,32 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على كيفية نقل ملفاتك إلى OneDrive.
-ms.openlocfilehash: 595e7443c0a3e4fb96fb149172a881c0362955be
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 04f8dabcba720e904d9dad7ff0e4c07403265909
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "63572100"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469349"
 ---
-# <a name="move-files-to-onedrive"></a>نقل الملفات إلى OneDrive
+# <a name="move-files-to-onedrive-for-business"></a>نقل الملفات إلى OneDrive for Business
 
 ## <a name="watch-move-your-files-to-onedrive-for-business"></a>شاهد: نقل ملفاتك إلى OneDrive for Business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 
-بعد التسجيل للحصول على Microsoft 365 Business Premium،&#39;تريد نسخ ملفات العمل الموجودة OneDrive for Business. OneDrive مكان جيد لتخزين ملفات العمل الشخصية أو ملفات العمل الحساسة التي تريد التحكم في الوصول إليها.
+بعد التسجيل للحصول على Microsoft 365 Business Premium،&#39;ستحتاج إلى نسخ ملفات العمل الموجودة إلى OneDrive for Business. OneDrive هو مكان جيد لتخزين ملفات العمل الشخصية أو ملفات الأعمال الحساسة التي تريد التحكم في الوصول إليها.
 
-## <a name="try-it"></a>جرب ذلك!
+## <a name="try-it"></a>جربه!
 
-1. من Windows، حدد **زر** البدء.
-2. ابحث عن OneDrive، ثم حدده.
-3. أدخل عنوان البريد الإلكتروني للعمل.
-4. حدد  **تسجيل الدخول** ، ثم حدد  **التالي**.
-5. انتقل إلى البرنامج التعليمي القصير، ثم حدد **فتح مجلد OneDrive.** إذا كنت تستخدم أيضا الإصدار الشخصي من OneDrive،&#39;تراه هنا.
+1. من Windows، حدد زر **البدء**.
+2. ابحث عن OneDrive، وحدده.
+3. أدخل عنوان البريد الإلكتروني الخاص بالعمل.
+4. حدد  **"تسجيل الدخول** "، ثم حدد  **"التالي**".
+5. انتقل إلى البرنامج التعليمي القصير، ثم حدد **"فتح مجلد OneDrive**". إذا كنت تستخدم أيضا الإصدار الشخصي من OneDrive،&#39;تراه هنا.
 6. في مستكشف الملفات، انتقل إلى الملفات التي تريد نسخها.
-7. حدد الملفات، ثم اسحبها وأسقطها في OneDrive المجلد. تعني الأسهم الدائرية الزرقاء الموجودة بجانب ملفاتك أنها&#39;المزامنة إلى السحابة. عند&#39;المزامنة، يتم عرض علامات الاختيار الخضراء.
+7. حدد الملفات، ثم اسحبها وأفلتها في مجلد OneDrive. تعني الأسهم الدائرية الزرقاء إلى جانب ملفاتك أنها&#39;تتم مزامنتها إلى السحابة. عندما&#39;تتم المزامنة، يتم عرض علامات الاختيار الخضراء.
 
 بالإضافة إلى العمل على ملفات OneDrive محليا، يمكنك الوصول إليها من مستعرض الويب:
 
-1. في مستعرض الويب، سجل الدخول office.com البريد الإلكتروني للعمل.
-2. اختر **OneDrive**. يتم سرد جميع ملفاتك، كما يمكنك العمل عليها في المستعرض من أي كمبيوتر.
+1. في مستعرض الويب، سجل الدخول إلى office.com باستخدام البريد الإلكتروني الخاص بالعمل.
+2. اختر **OneDrive**. يتم سرد جميع ملفاتك، ويمكنك العمل عليها في المستعرض من أي كمبيوتر.

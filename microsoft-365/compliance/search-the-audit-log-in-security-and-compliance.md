@@ -21,12 +21,12 @@ description: استخدم مدخل التوافق في Microsoft Purview للب�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 585b3be2149b1e94dc27633bac20707a6b193c0f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 70bb6383b67392da1766d3ca8d1ef0806d105bb1
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320595"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465965"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>البحث في سجل التدقيق في مدخل التوافق
 
@@ -532,7 +532,6 @@ ms.locfileid: "65320595"
 |عنصر قائمة محدث|ListItemUpdated|قام مستخدم بتحديث عنصر قائمة SharePoint عن طريق تعديل خاصية واحدة أو أكثر.|
 |عمود الموقع المحدث|SiteColumnUpdated|قام مستخدم بتحديث عمود موقع SharePoint عن طريق تعديل خاصية واحدة أو أكثر.|
 |نوع محتوى الموقع المحدث|SiteContentTypeUpdated|قام مستخدم بتحديث نوع محتوى الموقع عن طريق تعديل خاصية واحدة أو أكثر.|
-|عنصر القائمة المعروضة|ListItemViewed|عرض مستخدم عنصر قائمة SharePoint. بمجرد أن يقوم مستخدم بعرض عنصر قائمة، لن يتم تسجيل الحدث ListItemViewed مرة أخرى لنفس المستخدم لنفس عنصر القائمة للدقائق الخمس التالية.|
 
 ### <a name="sharing-and-access-request-activities"></a>أنشطة طلب المشاركة والوصول
 

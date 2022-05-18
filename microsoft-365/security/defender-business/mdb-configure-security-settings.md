@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 757545231a7bbe544bfbacf082fc03d88fb2df2f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9d401c5be4fc0454ce1d895fe5ea49267e5c5f70
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174157"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469162"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>عرض نهج الأمان وإعداداتك وتحريرها في Microsoft Defender for Business
 
@@ -181,6 +181,4 @@ ms.locfileid: "65174157"
 - [بدء استخدام Microsoft Defender for Business](mdb-get-started.md)
 - [إدارة الأجهزة في Microsoft Defender for Business](mdb-manage-devices.md)
 - [عرض الحوادث وإدارتها في Microsoft Defender for Business](mdb-view-manage-incidents.md)
-- [عرض النهج أو تحريرها في Microsoft Defender for Business](mdb-view-edit-policies.md)
-
 - [عرض النهج أو تحريرها في Microsoft Defender for Business](mdb-view-edit-policies.md)

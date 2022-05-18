@@ -1,5 +1,5 @@
 ---
-title: معلومات حول أدوار المسؤول
+title: حول صفحة أدوار المسؤول في Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: تعين أدوار المسؤول وظائف العمل وتوفر أذونات لتنفيذ مهام معينة في مركز الإدارة. على سبيل المثال، يفتح مسؤول الخدمة تذاكر الدعم مع Microsoft.
-ms.openlocfilehash: 07a46d7dfa23838715364ab1ab36ced992265b29
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: تعرف على أدوار المسؤول، مثل مسؤول الخدمة الذي يفتح تذاكر الدعم، التي تعين وظائف الأعمال ولها أذونات للمهام في مركز الإدارة.
+ms.openlocfilehash: 58bbc4b15f3fd477b72c8dac3f0f624b1e152a2a
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437074"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466757"
 ---
 # <a name="get-started-with-the-microsoft-365-admin-roles-page"></a>بدء استخدام صفحة أدوار المسؤولين Microsoft 365
 
@@ -99,7 +99,7 @@ ms.locfileid: "65437074"
 
 ![رسم توضيحي يوضح مقارنة أدوار المسؤولين.](../../media/compare-roles-list.png)
 
-## <a name="related-content"></a>المحتويات ذات الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
 [حول أدوار مسؤولي Microsoft 365](about-admin-roles.md) (مقالة)\
 [تعيين أدوار المسؤولين](assign-admin-roles.md) (مقالة)

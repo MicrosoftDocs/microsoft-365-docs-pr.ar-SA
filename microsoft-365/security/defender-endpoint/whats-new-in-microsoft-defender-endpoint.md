@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8a3d8caa02aa04412925b4d0648d166194df0548
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 615a68d7725e180e512674909f490e27d3da6771
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319188"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468789"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>ما الجديد في Microsoft Defender لنقطة النهاية؟
 
@@ -30,7 +30,7 @@ ms.locfileid: "65319188"
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -125,7 +125,7 @@ ms.locfileid: "65319188"
 
 - يمكن أن تتضمن [تعريفات مجموعة الأجهزة](/microsoft-365/security/defender-endpoint/machine-groups) الآن قيما متعددة لكل شرط. يمكنك تعيين علامات وأسماء أجهزة ومجالات متعددة لتعريف مجموعة أجهزة واحدة.
 
-- [دعم إدارة تطبيقات المحمول](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> يتيح هذا التحسين Microsoft Defender لنقطة النهاية حماية بيانات المؤسسة داخل تطبيق مدار عند استخدام Intune لإدارة تطبيقات الأجهزة المحمولة. لمزيد من المعلومات حول إدارة تطبيقات الجوال، راجع [هذه الوثائق](/microsoft-365/mem/intune/apps/mam-faq).
+- [دعم إدارة تطبيقات المحمول](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> يتيح هذا التحسين Microsoft Defender لنقطة النهاية حماية بيانات المؤسسة داخل تطبيق مدار عند استخدام Intune لإدارة تطبيقات الأجهزة المحمولة. لمزيد من المعلومات حول إدارة تطبيقات الجوال، راجع [هذه الوثائق](/mem/intune/apps/mam-faq).
 
 - [تكامل Microsoft Tunnel VPN](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> تم الآن دمج قدرات Microsoft Tunnel VPN مع تطبيق Microsoft Defender لنقطة النهاية لنظام التشغيل Android. يمكن هذا التوحيد المؤسسات من تقديم تجربة مستخدم مبسطة مع تطبيق أمان واحد - ما يوفر كلا من الدفاع عن تهديدات الأجهزة المحمولة والقدرة على الوصول إلى الموارد الجاهزة من أجهزتها المحمولة، في حين أن فرق الأمان وفرق تكنولوجيا المعلومات قادرة على الحفاظ على نفس تجارب المسؤول التي يعرفونها.
 

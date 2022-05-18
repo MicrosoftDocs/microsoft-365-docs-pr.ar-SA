@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
-description: احصل على تقرير مجموعات Microsoft 365 للتعرف على المجموعات وأنشطتها.
-ms.openlocfilehash: d4130d577341bbc8c4516234964ea9e805be81ee
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: احصل على تقرير مجموعات Microsoft 365 للحصول على رؤى حول نشاط المجموعات في مؤسستك ومعرفة عدد المجموعات التي يتم إنشاؤها واستخدامها.
+ms.openlocfilehash: 1c51ddf997fb0c1c3e2416d979b83b339c414d93
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781666"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467361"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 التقارير في مركز الإدارة - مجموعات Microsoft 365
 
@@ -72,7 +72,7 @@ ms.locfileid: "64781666"
 |الأعضاء الخارجيون |عدد المستخدمين الخارجيين في المجموعة.|
 
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
 [Microsoft 365 التقارير في مركز الإدارة](activity-reports.md) (مقالة)\
 [التقارير الذكية والرؤى في Security & Compliance Center](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance) (article)\

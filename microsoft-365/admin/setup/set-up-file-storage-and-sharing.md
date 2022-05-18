@@ -1,5 +1,5 @@
 ---
-title: إعداد تخزين الملفات ومشاركتها
+title: إعداد تخزين الملفات ومشاركتها OneDrive
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -30,12 +30,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: تعرف على كيفية استخدام OneDrive وموقع فريق لتخزين Microsoft 365 ومشاركة الملفات Microsoft 365.
-ms.openlocfilehash: e17f4cdb7abefdc7374e1ada073c154d0f006216
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8fa78b4acbba85932778194f1785bee3fd04315c
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417227"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465921"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>إعداد تخزين الملفات ومشاركتها في Microsoft 365
 
@@ -206,7 +206,7 @@ ms.locfileid: "65417227"
 
   - [إعداد Office على Windows Phone باستخدام Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
 
-## <a name="related-content"></a>المحتويات ذات الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
 [إضافة مساحة تخزين لاشتراكك](../../commerce/add-storage-space.md) (مقال)\
 [مشاركة الملفات والمجلدات باستخدام Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (فيديو)\

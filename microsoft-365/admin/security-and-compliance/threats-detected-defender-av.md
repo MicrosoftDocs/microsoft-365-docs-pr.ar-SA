@@ -14,79 +14,79 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: تعرف على برنامج الحماية من الفيروسات من Microsoft Defender حماية أجهزة Windows من تهديدات البرامج، مثل الفيروسات والبرامج الضارة وبرامج التجسس.
-ms.openlocfilehash: c11ce9a2f38f1ecb7f47cd5b74e710d92c8ffbe0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: تعرف على كيفية حماية برنامج الحماية من الفيروسات من Microsoft Defender أجهزتك Windows من تهديدات البرامج، مثل الفيروسات والبرامج الضارة وبرامج التجسس.
+ms.openlocfilehash: 47f6af2b91eed8096a685f8d3281f16fdc677331
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63579712"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466295"
 ---
-# <a name="threats-detected-by-microsoft-defender-antivirus"></a>التهديدات التي كشف عنها برنامج الحماية من الفيروسات من Microsoft Defender
+# <a name="overview-of-threat-protection-by-microsoft-defender-antivirus"></a>نظرة عامة على الحماية من التهديدات بواسطة برنامج الحماية من الفيروسات من Microsoft Defender
 
-برنامج الحماية من الفيروسات من Microsoft Defender حماية أجهزة Windows من تهديدات البرامج، مثل الفيروسات والبرامج الضارة وبرامج التجسس.
+يحمي برنامج الحماية من الفيروسات من Microsoft Defender أجهزتك Windows من تهديدات البرامج، مثل الفيروسات والبرامج الضارة وبرامج التجسس.
 
 - تنتشر الفيروسات عادة عن طريق إرفاق التعليمات البرمجية الخاصة بها بملفات أخرى على جهازك أو شبكتك ويمكن أن تتسبب في عمل البرامج المصابة بشكل غير صحيح.
-- تتضمن البرامج الضارة الملفات الضارة والتطبيقات التعليمات البرمجية التي يمكن أن تسبب تلفا وتعطل الاستخدام العادي للأجهزة. علاوة على ذلك، يمكن للبرامج الضارة السماح بالوصول غير المصرح به واستخدام موارد النظام وسرقة كلمات المرور ومعلومات الحساب وقفل الكمبيوتر لديك وطلب فدية والمزيد.
-- تجمع برامج التجسس البيانات، مثل نشاط استعراض الويب، وترسل البيانات إلى خوادم بعيدة.
+- تتضمن البرامج الضارة الملفات والتطبيقات والتعليمات البرمجية الضارة التي يمكن أن تسبب ضررا وتعطيل الاستخدام العادي للأجهزة. أيضا، يمكن للبرامج الضارة السماح بالوصول غير المصرح به، واستخدام موارد النظام، وسرقة كلمات المرور ومعلومات الحساب، وتأمين خروجك من الكمبيوتر وطلب الفدية، والمزيد.
+- تجمع برامج التجسس البيانات، مثل نشاط استعراض الويب، وترسل البيانات إلى الخوادم البعيدة.
  
-لتوفير الحماية من المخاطر، برنامج الحماية من الفيروسات من Microsoft Defender استخدام أساليب متعددة. تتضمن هذه الأساليب الحماية التي يتم توفيرها من السحابة والحماية في الوقت الحقيقي وتحديثات الحماية المخصصة.
+لتوفير الحماية من التهديدات، يستخدم برنامج الحماية من الفيروسات من Microsoft Defender عدة أساليب. تتضمن هذه الأساليب الحماية المقدمة من السحابة، والحماية في الوقت الحقيقي، وتحديثات الحماية المخصصة.
 
-- تساعد الحماية التي يتم توفيرها في السحابة على توفير الكشف الفوري عن التهديدات الجديدة والناشئة وحظرها.
-- تستخدم عملية المسح المستمر مراقبة الملفات وسلوك العملية وتقنيات أخرى (تعرف أيضا بالحماية *في الوقت الحقيقي*).
-- تستند تحديثات الحماية المخصصة إلى التعلم الآلي وتحليل البيانات الكبيرة البشرية والآلية وأبحاث معمقة حول المقاومة للتهديدات. 
+- تساعد الحماية التي توفرها السحابة على توفير الكشف شبه الفوري عن التهديدات الجديدة والناشئة ومنعها.
+- يستخدم المسح المستمر مراقبة سلوك الملفات والعمليات والتقنيات الأخرى (المعروفة أيضا باسم *الحماية في الوقت الحقيقي*).
+- تستند تحديثات الحماية المخصصة إلى التعلم الآلي وتحليل البيانات الضخمة البشرية والآلية والبحث المتعمق في مقاومة التهديدات. 
 
 لمعرفة المزيد حول البرامج الضارة برنامج الحماية من الفيروسات من Microsoft Defender، راجع المقالات التالية: 
 
-- [فهم البرامج الضارة & المخاطر الأخرى](/windows/security/threat-protection/intelligence/understanding-malware)
-- [كيفية تحديد Microsoft للبرامج الضارة والتطبيقات التي يحتمل أن تكون غير مرغوب فيها](/windows/security/threat-protection/intelligence/criteria)
+- [فهم البرامج الضارة & التهديدات الأخرى](/windows/security/threat-protection/intelligence/understanding-malware)
+- [كيف تحدد Microsoft البرامج الضارة والتطبيقات التي قد تكون غير مرغوب فيها](/windows/security/threat-protection/intelligence/criteria)
 - [حماية الجيل التالي في Windows 10](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
-## <a name="what-happens-when-a-non-microsoft-antivirus-solution-is-used"></a>ماذا يحدث عند استخدام حل برنامج الحماية من الفيروسات غير Microsoft؟ 
+## <a name="what-happens-when-a-non-microsoft-antivirus-solution-is-used"></a>ماذا يحدث عند استخدام حل الحماية من الفيروسات غير التابع ل Microsoft؟ 
 
-برنامج الحماية من الفيروسات من Microsoft Defender هو جزء من نظام التشغيل وممكن على الأجهزة التي تعمل Windows 10. ومع ذلك، إذا كنت تستخدم حل برنامج الحماية من الفيروسات غير Microsoft ولا تستخدم [Microsoft Defender ل Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)، برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا إلى وضع المعطل.  
+برنامج الحماية من الفيروسات من Microsoft Defender هو جزء من نظام التشغيل ويتم تمكينه على الأجهزة التي تعمل Windows 10. ومع ذلك، إذا كنت تستخدم حل الحماية من الفيروسات غير التابع ل Microsoft ولا تستخدم [Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)، برنامج الحماية من الفيروسات من Microsoft Defender تنتقل تلقائيا إلى وضع التعطيل.  
 
-عند العمل في وضع المعطل، لا يزال بإمكان المستخدمين والعملاء استخدام برنامج الحماية من الفيروسات من Microsoft Defender عمليات الفحص المجدولة أو عند الطلب لتحديد التهديدات؛ ومع ذلك، لن برنامج الحماية من الفيروسات من Microsoft Defender بعد ذلك:
+عندما تكون في وضع التعطيل، لا يزال بإمكان المستخدمين والعملاء استخدام برنامج الحماية من الفيروسات من Microsoft Defender لإجراء عمليات المسح المجدولة أو عند الطلب لتحديد التهديدات؛ ومع ذلك، لن يعود برنامج الحماية من الفيروسات من Microsoft Defender:
 
-- يمكن استخدامه ك تطبيق الحماية من الفيروسات الافتراضي.
-- قم بمسح الملفات ضوئيا بشكل نشط من أجل التهديدات.
+- يتم استخدامها كتطبيق الحماية من الفيروسات الافتراضي.
+- فحص الملفات بشكل نشط بحثا عن التهديدات.
 - معالجة التهديدات أو حلها.
 
-إذا قمت ب إلغاء تثبيت حل مكافحة الفيروسات برنامج الحماية من الفيروسات من Microsoft Defender Microsoft، برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا إلى الوضع النشط لحماية أجهزة Windows من التهديدات.
+إذا قمت بإلغاء تثبيت حل الحماية من الفيروسات غير التابع ل Microsoft، فسينتقل برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا إلى الوضع النشط لحماية أجهزة Windows من التهديدات.
 
 > [!TIP]
-> - إذا كنت تستخدم Microsoft 365، فنظر في استخدام برنامج الحماية من الفيروسات من Microsoft Defender كحل أساسي لمكافحة الفيروسات. يمكن أن يوفر التكامل حماية أفضل. راجع [معا بشكل أفضل: برنامج الحماية من الفيروسات من Microsoft Defender Office 365](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus).
-> - تأكد من برنامج الحماية من الفيروسات من Microsoft Defender حتى لو كنت تستخدم حل برنامج الحماية من الفيروسات من Microsoft.
+> - إذا كنت تستخدم Microsoft 365، ففكر في استخدام برنامج الحماية من الفيروسات من Microsoft Defender كحل الحماية من الفيروسات الأساسي. يمكن أن يوفر التكامل حماية أفضل. راجع [الأفضل معا: برنامج الحماية من الفيروسات من Microsoft Defender Office 365](/windows/security/threat-protection/microsoft-defender-antivirus/office-365-microsoft-defender-antivirus).
+> - تأكد من تحديث برنامج الحماية من الفيروسات من Microsoft Defender، حتى لو كنت تستخدم حل الحماية من الفيروسات غير Microsoft.
 
-## <a name="what-to-expect-when-threats-are-detected"></a>ما يجب توقعه عند اكتشاف التهديدات
+## <a name="what-to-expect-when-threats-are-detected"></a>ما يجب توقعه عند الكشف عن التهديدات
 
-عند اكتشاف التهديدات من قبل برنامج الحماية من الفيروسات من Microsoft Defender، تحدث الأمور التالية:
+عند اكتشاف التهديدات بواسطة برنامج الحماية من الفيروسات من Microsoft Defender، تحدث الأشياء التالية:
 
-- يتلقى [المستخدمون الإعلامات في Windows](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e). 
-- يتم سرد الاكتشافات في تطبيق أمن Windows [على](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) **صفحة محفوظات** الحماية.  
-- إذا قمت بتأمين أجهزة [Windows 10](../setup/secure-win-10-pcs.md) الخاصة بك ثم سجلتها في [Intune](/mem/intune/enrollment/windows-enrollment-methods)، وكان لديك 800 جهاز أو أقل مسجلا، سترى عمليات الكشف عن المخاطر والأفكار الدقيقة في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>  **على صفحة التهديدات وفيروسات الفيروسات، والتي يمكنك الوصول إليها من برنامج الحماية من الفيروسات من Microsoft Defender** على الصفحة **الرئيسية** (أو من جزء التنقل عن طريق تحديد **HealthThreats** >  & antivirus).
+- يتلقى المستخدمون [إعلامات في Windows](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e). 
+- يتم سرد عمليات الكشف في [تطبيق أمن Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) على صفحة **محفوظات الحماية**.  
+- إذا قمت [بتأمين أجهزة Windows 10](../setup/secure-win-10-pcs.md) [وتسجيلها في Intune](/mem/intune/enrollment/windows-enrollment-methods)، وكان لدى مؤسستك 800 جهاز أو أقل مسجلة، فسترى عمليات الكشف عن التهديدات والرؤى في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a> على صفحة **"التهديدات ومكافحة الفيروسات**"، والتي يمكنك الوصول إليها من **برنامج الحماية من الفيروسات من Microsoft Defender** البطاقة على الصفحة **الرئيسية** (أو من جزء التنقل عن طريق تحديد **HealthThreats** >  & مكافحة الفيروسات).
 
-    إذا كانت مؤسستك لديها أكثر من 800 جهاز مسجل في Intune، فسوف يتم مطالبتك لعرض الكشف عن المخاطر والأفكار الدقيقة من [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview) بدلا من صفحة التهديدات و مكافحة **الفيروسات.**
+    إذا كان لدى مؤسستك أكثر من 800 جهاز مسجل في Intune، فستتم مطالبتك بعرض عمليات الكشف عن التهديدات والرؤى من [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview) بدلا من صفحة **التهديدات ومكافحة الفيروسات**.
  
     > [!NOTE]
-    > يتم **برنامج الحماية من الفيروسات من Microsoft Defender** الصفحة "التهديدات"  و"الحماية من الفيروسات" على مراحل، لذلك قد لا يكون لديك حق الوصول الفوري إليها.
+    > يتم نشر بطاقة **برنامج الحماية من الفيروسات من Microsoft Defender** **وصفحة التهديدات والحماية من الفيروسات** على مراحل، لذلك قد لا يكون لديك حق الوصول الفوري إليها.
 
-في معظم الحالات، لا يحتاج المستخدمون إلى اتخاذ أي إجراء آخر. بمجرد اكتشاف ملف أو برنامج ضار على جهاز، برنامج الحماية من الفيروسات من Microsoft Defender حظره ومنع تشغيله. بالإضافة إلى ذلك، تضاف التهديدات التي تم الكشف عنها حديثا إلى محرك الحماية من الفيروسات والحماية من البرامج الضارة بحيث تكون الأجهزة والمستخدمين الآخرين محميين أيضا.  
+في معظم الحالات، لا يحتاج المستخدمون إلى اتخاذ أي إجراء إضافي. بمجرد اكتشاف ملف أو برنامج ضار على جهاز، برنامج الحماية من الفيروسات من Microsoft Defender حظره ومنع تشغيله. بالإضافة إلى ذلك، تتم إضافة التهديدات المكتشفة حديثا إلى محرك الحماية من الفيروسات والبرامج الضارة بحيث تتم حماية الأجهزة والمستخدمين الآخرين أيضا.  
 
-إذا كان هناك إجراء يحتاج المستخدم إلى اتخاذه، مثل الموافقة على إزالة ملف ضار، فسوف يظهر ذلك في الإعلام الذي يتلقاه. لمعرفة المزيد حول الإجراءات برنامج الحماية من الفيروسات من Microsoft Defender التي يتخذها المستخدم بالنيابة عن المستخدم، أو الإجراءات التي قد يحتاج المستخدمون إلى اتخاذها، راجع [محفوظات الحماية](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). للتعرف على كيفية إدارة عمليات الكشف عن المخاطر كمحترف/مسؤول في إدارة المعلومات، راجع مراجعة التهديدات التي تم الكشف عنها [واتخاذ إجراء](review-threats-take-action.md).
+إذا كان هناك إجراء يحتاج المستخدم إلى اتخاذه، مثل الموافقة على إزالة ملف ضار، فسيرى ذلك في الإعلام الذي يتلقاه. لمعرفة المزيد حول الإجراءات التي يتخذها برنامج الحماية من الفيروسات من Microsoft Defender بالنيابة عن المستخدم، أو الإجراءات التي قد يحتاج المستخدمون إلى اتخاذها، راجع [محفوظات الحماية](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). لمعرفة كيفية إدارة عمليات الكشف عن التهديدات كمحترف/مسؤول في تكنولوجيا المعلومات، راجع [مراجعة التهديدات المكتشفة واتخاذ إجراء](review-threats-take-action.md).
 
-لمعرفة المزيد حول التهديدات المختلفة، تفضل <a href="https://www.microsoft.com/wdsi/threats" target="_blank">بزيارة</a> موقع التحليل الذكي لمخاطر الأمان من Microsoft المخاطر، حيث يمكنك تنفيذ الإجراءات التالية: 
+لمعرفة المزيد حول التهديدات المختلفة، تفضل بزيارة <a href="https://www.microsoft.com/wdsi/threats" target="_blank">موقع التحليل الذكي لمخاطر الأمان من Microsoft Threats</a>، حيث يمكنك تنفيذ الإجراءات التالية: 
 
-- عرض المعلومات الحالية حول التهديدات القصوى.
-- عرض التهديدات الأخيرة التي تواجه منطقة معينة.
-- ابحث في الموسوعة الخاصة بالخطر عن تفاصيل حول خطر معين.
+- عرض المعلومات الحالية حول أهم التهديدات.
+- عرض أحدث التهديدات لمنطقة معينة.
+- ابحث في موسوعة التهديد عن تفاصيل حول تهديد معين.
 
-## <a name="related-content"></a>المحتوى ذي الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
-[تأمين Windows (](/misc/m365bp-secure-windows-devices)مقالة)\
+[تأمين أجهزة Windows](/misc/m365bp-secure-windows-devices) (مقالة)\
 [تقييم برنامج الحماية من الفيروسات من Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (مقالة)\
-[كيفية تشغيل الحماية من الفيروسات في الوقت الحقيقي](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) والحماية من الفيروسات التي يتم تسليمها من السحابة (مقالة)\
-[كيفية تشغيل برنامج الحماية من الفيروسات من Microsoft Defender من تطبيق أمن Windows (](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus)مقالة)\
-[كيفية تشغيل برنامج الحماية من الفيروسات من Microsoft Defender باستخدام "نهج المجموعة"](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (مقالة)\
-[كيفية تحديث تعريفات برنامج الحماية من الفيروسات](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (مقالة)\
-[كيفية إرسال البرامج الضارة وغير الضارة إلى Microsoft لتحليلها](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (مقالة)
+[كيفية تشغيل الحماية من الفيروسات في الوقت الحقيقي والحماية من الفيروسات التي توفرها السحابة](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) (مقالة)\
+[كيفية تشغيل برنامج الحماية من الفيروسات من Microsoft Defender واستخدامها من تطبيق أمن Windows](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (المقال)\
+[كيفية تشغيل برنامج الحماية من الفيروسات من Microsoft Defender باستخدام نهج المجموعة](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (مقالة)\
+[كيفية تحديث تعريفات الحماية من الفيروسات](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (مقالة)\
+[كيفية إرسال البرامج الضارة وغير الضارة إلى Microsoft للتحليل](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (مقالة)

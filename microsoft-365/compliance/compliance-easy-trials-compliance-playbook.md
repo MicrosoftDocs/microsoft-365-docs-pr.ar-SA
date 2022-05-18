@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: دليل المبادئ التجريبي للحلول Microsoft Purview.
-ms.openlocfilehash: 10dd4ac9447c920112fd85075c3bf6ae3093ee9c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: cf054a27fb56589c42552bb1b79ae837a666d81f
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415249"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466273"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>دليل المبادئ التجريبي: حلول Microsoft Purview
 
@@ -444,4 +444,4 @@ ms.locfileid: "65415249"
 
 **مكتبة المحتويات التقنية للأمان من Microsoft**: استكشف هذه المكتبة للعثور على إرشادات تفاعلية ومحتوى تعليمي آخر ذي صلة باحتياجاتك. [تفضل بزيارة المكتبة](/security).
 
-**موارد أمان Microsoft**: من مكافحة البرامج الضارة إلى ثقة معدومة، احصل على جميع الموارد ذات الصلة لاحتياجات أمان مؤسستك. [قم بزيارة الموارد](/security/business/resources).
+**موارد أمان Microsoft**: من مكافحة البرامج الضارة إلى ثقة معدومة، احصل على جميع الموارد ذات الصلة لاحتياجات أمان مؤسستك.

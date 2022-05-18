@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: تعرف على كيفية الحصول على تقرير Microsoft 365 Apps للاستخدام لنشاط Viva Insights في لوحة معلومات تقارير Microsoft 365 في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: c0b19871db61f37585384766d4e44ccb602a661b
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: تعرف على كيفية الحصول على Microsoft 365 Apps لتقرير الاستخدام لمعرفة المزيد، على سبيل المثال، حول اعتماد المستخدم Viva Insights من قبل المستخدمين النشطين.
+ms.openlocfilehash: ae79a1c547c695d86289544159e3492ae8d9bf86
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781304"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467197"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>تقارير Microsoft 365 في مركز الإدارة - نشاط Viva Insights
 

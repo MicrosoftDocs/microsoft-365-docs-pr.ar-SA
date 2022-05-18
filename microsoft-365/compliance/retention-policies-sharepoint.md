@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على كيفية عمل الاستبقاء SharePoint OneDrive.
-ms.openlocfilehash: cbcc8015b8b24309c882e5b8ca7a9c56fb6e344d
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 8515b84f21677644be821ca129ab02083121ab84
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285979"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468843"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>تعرف على استبقاء SharePoint OneDrive
 
@@ -80,9 +80,9 @@ ms.locfileid: "65285979"
 
 - تم إيقاف تشغيل إعداد إدارة السجلات الذي يسمح للمستخدمين بحذف العناصر المسماة.
     
-    للتحقق من هذا الإعداد أو تغييره، انتقل إلى حل **إدارة السجلات** في مدخل توافق Microsoft Purview > **إعدادات إدارة سجلاتRecords** >  **labelsDeletion** >  >  **للعناصر**. هناك إعدادات منفصلة SharePoint OneDrive.
+    للتحقق من هذا الإعداد أو تغييره، انتقل إلى حل **إدارة السجلات** في **مدخل التوافق في Microsoft Purview > Records managementRecords** >  **settingsRetention** >  **labelsDeletion** >  للعناصر. هناك إعدادات منفصلة SharePoint OneDrive.
     
-    بدلا من ذلك، وإذا لم يكن لديك حق الوصول إلى حل **إدارة السجلات** ، يمكنك استخدام *AllowFilesWithKeepLabelToBeDeletedSPO* و *AllowFilesWithKeepLabelToBeDeletoDB* من [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) و [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant).
+    بدلا من ذلك، وإذا لم يكن لديك حق الوصول إلى حل **إدارة السجلات** ، يمكنك استخدام *AllowFilesWithKeepLabelToBeDeletedSPO* و *AllowFilesWithKeepLabelToBeDeletoDB* من [Get-PnPTenant](https://pnp.github.io/powershell/cmdlets/Get-PnPTenant.html) و [Set-PnPTenant](https://pnp.github.io/powershell/cmdlets/Set-PnPTenant.html).
 
 - يضع وصف الاستبقاء علامة على العناصر كسجل ويتم [تأمينها](record-versioning.md).
     

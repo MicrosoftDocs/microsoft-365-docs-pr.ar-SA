@@ -1,5 +1,5 @@
 ---
-title: مركز الرسائل
+title: مركز الرسائل في مركز مسؤولي Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: احصل على نظرة عامة حول Microsoft 365 مركز الرسائل ودوره في تعقب الميزات الجديدة والمتغيرة والإعلانات المهمة الأخرى.
-ms.openlocfilehash: 687da2d7dec0ea913e629a4cf41740d4b664b346
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 498267d62dadef0ec9c0e8811708416dd138eb58
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437690"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466779"
 ---
 # <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>تعقب الميزات الجديدة والمتغيرة في مركز الرسائل Microsoft 365
 
@@ -281,7 +281,7 @@ ms.locfileid: "65437690"
 
 2. حدد **"حفظ"** للاحتفاظ بالتغييرات.
 
-## <a name="related-content"></a>المحتويات ذات الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
 [إعداد خيارات الإصدار القياسي أو المستهدف](../manage/release-options-in-office-365.md) (مقالة)\
 [إدارة ميزات Office التي تظهر في ما الجديد](../manage/show-hide-new-features.md) (مقالة)\

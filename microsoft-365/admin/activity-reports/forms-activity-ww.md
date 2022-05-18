@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: تعرف على كيفية الحصول على تقرير نشاط Microsoft Forms باستخدام لوحة معلومات تقارير Microsoft 365 في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: c00c9e91d4b8e37021a30798088f46b786b3b4fc
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: تعرف على كيفية الحصول على تقرير نشاط Microsoft Forms باستخدام لوحة معلومات تقارير Microsoft 365 ومعرفة كيفية تفاعل المستخدمين المرخصين مع النماذج.
+ms.openlocfilehash: ccfacbfb7450aef7c1880e7022b374799ac8307b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781918"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467635"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>تقارير Microsoft 365 في مركز الإدارة - نشاط النماذج
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إدارة الأذونات والكتل في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e112b6b386e0a2961119478aae7d4cb53138ccf
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 58b1fadc85b993701d49b1c33750fc7db2527264
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363303"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468097"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>إدارة قائمة السماح/الحظر للمستأجر
 
@@ -485,3 +485,10 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 - **البنية الأساسية**: tms.mx.com
 
 يسمح فقط للرسائل الواردة من هذا المجال *وإرسال* زوج البنية الأساسية بالانتحال. لا يسمح للمرسلين الآخرين الذين يحاولون تزييف gmail.com. يتم التحقق من الرسائل الواردة من المرسلين في مجالات أخرى تنشأ من tms.mx.com بواسطة التحليل الذكي للانتحال.
+
+
+## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>ما يجب توقعه بعد إضافة إدخال السماح أو الحظر
+
+بعد إضافة إدخال سماح من خلال مدخل عمليات الإرسال أو إدخال حظر في قائمة السماح/الحظر للمستأجر، يجب أن يبدأ الإدخال في العمل على الفور.
+
+نوصي بالسماح بانتهاء صلاحية الإدخالات تلقائيا بعد 30 يوما لمعرفة ما إذا كان النظام قد تعرف على السماح أو الحظر. إذا لم يكن الأمر، يجب عليك إدخال إدخال آخر لمنح النظام 30 يوما أخرى للتعلم.

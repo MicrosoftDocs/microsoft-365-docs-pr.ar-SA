@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: احصل على تقرير استخدام OneDrive لمؤسستك وتعرف على نشاط كل مستخدم OneDrive وعدد الملفات المشتركة واستخدام التخزين.
-ms.openlocfilehash: 48edb30eae60f6e7dcac5bc63dc9676dc27e0a90
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 65046154e17cdb79ee671ec14aa45d089730ca97
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781571"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467241"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-activity"></a>Microsoft 365 التقارير في مركز الإدارة - نشاط OneDrive for Business
 

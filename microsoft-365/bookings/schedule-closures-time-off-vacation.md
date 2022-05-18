@@ -9,14 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: قم بجدولة عمليات إغلاق المكتب وإجازة الموظفين من تقويم Bookings بحيث يتم وضع علامة على الموظفين على أنهم غير متاحين للحجوزات خلال الأوقات المحددة.
-ms.openlocfilehash: 1f20a28fa56f57680c547981f1c4d8357d75728e
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 32f1d930daf44d000a1dbf03eded3f05fbb976eb
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747281"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468383"
 ---
-# <a name="schedule-business-closures-time-off-and-vacation-time"></a>جدولة عمليات إغلاق العمل والإجازة ووقت العطلة
+# <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>جدولة Bookings إغلاق الأعمال والإجازة ووقت العطلة
 
 > [!NOTE]
 > تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
@@ -45,7 +45,7 @@ ms.locfileid: "64747281"
 
 1. حدد جميع أعضاء فريق العمل.
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
 عندما يحاول أحد العملاء جدولة الخدمة في يوم ما يتم إغلاق المكتب، سيرى رسالة على صفحة الحجز.
 
@@ -67,4 +67,4 @@ ms.locfileid: "64747281"
 
 1. حدد عضو فريق العمل أو الأعضاء الذين يأخذون إجازة.
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.

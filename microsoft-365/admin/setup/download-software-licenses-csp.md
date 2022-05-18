@@ -21,20 +21,20 @@ ms.custom:
 - admindeeplinkMAC
 description: تعرف على كيفية تنزيل مفاتيح ترخيص البرامج والمنتجات للبرامج الدائمة التي تم شراؤها من خلال برنامج Cloud Solution Provider (CSP).
 ms.date: 01/27/2021
-ms.openlocfilehash: bef05f3377bcac46e7f40e60b149dbf6a227a294
-ms.sourcegitcommit: e13c8fc28c68422308c9d356109797cfcf6f77be
+ms.openlocfilehash: 212aaac02772e5b695cf7ee6f3f256a9fd596c1b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64841655"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468887"
 ---
-# <a name="download-perpetual-software-and-product-license-keys"></a>تنزيل مفاتيح تراخيص البرامج والمنتجات الدائمة
+# <a name="download-perpetual-software-and-product-license-keys-in-microsoft-365"></a>تنزيل مفاتيح تراخيص البرامج والمنتجات الدائمة في Microsoft 365
 
 تشرح هذه المقالة كيفية تنزيل مفاتيح ترخيص البرامج والمنتجات للبرامج الدائمة التي تم شراؤها من خلال برنامج Cloud Solution Provider (CSP).
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-يجب أن تكون مسؤولا عموميا لتنفيذ الخطوات الواردة في هذه المقالة. لمزيد من المعلومات، راجع ["حول أدوار المسؤولين](../add-users/about-admin-roles.md)".
+يجب أن تكون مسؤولا عموميا لتنفيذ الخطوات الواردة في هذه المقالة. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../add-users/about-admin-roles.md).
 
 ## <a name="download-software-and-product-license-keys"></a>تنزيل مفاتيح ترخيص البرامج والمنتجات
 

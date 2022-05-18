@@ -1,5 +1,5 @@
 ---
-title: تعيين تراخيص للمستخدمين
+title: تعيين تراخيص للمستخدمين في مركز مسؤولي Microsoft 365
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
@@ -26,12 +26,12 @@ ms.custom:
 search.appverid: MET150
 description: قم بتعيين التراخيص استنادا إلى ما إذا كنت تريد تعيين تراخيص المنتج لمستخدمين محددين أو تعيين تراخيص المستخدمين لمنتج معين.
 ms.date: 04/22/2022
-ms.openlocfilehash: 71b6886ed8248f05339e135f96b24f2af2282e0b
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5402a3f2b1f1e702b0d8f3e8b021206c9131710d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437537"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465811"
 ---
 # <a name="assign-microsoft-365-licenses-to-users"></a>تعيين تراخيص Microsoft 365 للمستخدمين
 
@@ -189,7 +189,7 @@ ms.locfileid: "65437537"
 
 إذا لم يكن لدى المستخدمين تطبيقات Office مثبتة بعد، يمكنك مشاركة [دليل البدء السريع للموظف](../setup/employee-quick-setup.md) مع المستخدمين لإعداد أشياء، مثل [كيفية تنزيل وتثبيت Microsoft 365 أو Office 2019 على كمبيوتر شخصي أو Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) [وكيفية إعداد تطبيقات Office والبريد الإلكتروني على جهاز محمول](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
-## <a name="related-content"></a>المحتويات ذات الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
 [فهم الاشتراكات والتراخيص](../../commerce/licenses/subscriptions-and-licenses.md) (مقالة)\
 [إلغاء تعيين التراخيص من المستخدمين](remove-licenses-from-users.md) (مقالة)\

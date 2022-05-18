@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على كيفية تأثير توصيات الأمان هذه Microsoft 365 Business Premium على المستخدمين وحماية بياناتك.
-ms.openlocfilehash: 202df778e74fb0f14a92b572df977088f8319595
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ffd25f52c0f230506a43a3f611ce933f59d26802
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099950"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469218"
 ---
-# <a name="how-these-security-recommendations-affect-your-users"></a>كيف تؤثر توصيات الأمان هذه على المستخدمين
+# <a name="how-these-security-recommendations-affect-your-microsoft-365-users"></a>كيف تؤثر توصيات الأمان هذه على مستخدمي Microsoft 365
 
 تجعل توصيات الأمان الخاصة Microsoft 365 في هذا الحل من الصعب جدا على المتسللين الوصول إلى بيئتك. المفاضلة هي أن المستخدمين سيحتاجون إلى أن يكونوا على دراية بكيفية العمل ضمن هذه البيئة الأكثر أمانا. نحن نفهم أن هناك حاجة إلى القليل من الصبر الإضافي، ولكن الأمر يستحق أن تبقى مؤسستك محمية.
 

@@ -1,5 +1,5 @@
 ---
-title: حول دور Exchange Online المسؤول
+title: حول دور مسؤول Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,48 +21,48 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange عبر الإنترنت إدارة البريد الإلكتروني لعلب بريد المؤسسة. على سبيل المثال، يتم استرداد العناصر المحذوفة في علبة بريد المستخدم.
-ms.openlocfilehash: f046d9d85c677d0793d2b991736185b49f4174e9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Exchange Online يقوم المسؤولون بإدارة البريد الإلكتروني وعلب البريد الخاصة بالمؤسسة، وعلى سبيل المثال، استرداد العناصر المحذوفة في علبة بريد المستخدم.
+ms.openlocfilehash: 048a435a515c4f88eb688a2cfaf13006e859741c
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63569141"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467087"
 ---
-# <a name="about-the-exchange-online-admin-role"></a>حول دور Exchange Online المسؤول
+# <a name="about-the-exchange-online-admin-role"></a>حول دور مسؤول Exchange Online
 
-لمساعدتك على إدارة Microsoft 365، يمكنك تعيين أذونات للمستخدمين لإدارة البريد [](assign-admin-roles.md) الإلكتروني لعلب البريد في مؤسستك من Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">إدارة المؤسسة</a>. يمكنك القيام بذلك من خلال تعيينها إلى Exchange المسؤول.
+لمساعدتك على إدارة Microsoft 365، يمكنك [تعيين](assign-admin-roles.md) أذونات للمستخدمين لإدارة البريد الإلكتروني وعلب البريد الخاصة بالمؤسسة من <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>. يمكنك القيام بذلك عن طريق تعيينهم إلى دور مسؤول Exchange.
   
- **تلميح**: عند تعيين شخص ما إلى Exchange المسؤول، قم أيضا بتعيينه إلى دور مسؤول الخدمة. بهذه الطريقة يمكنهم رؤية المعلومات المهمة في مركز مسؤولي Microsoft 365، مثل حالة Exchange Online وتغيير الإعلامات والافراج عنها.
+ **تلميح**: عند تعيين شخص ما لدور مسؤول Exchange، قم أيضا بتعيينه إلى دور مسؤول الخدمة. وبهذه الطريقة يمكنهم رؤية معلومات مهمة في مركز مسؤولي Microsoft 365، مثل حالة خدمة Exchange Online، وتغيير الإعلامات وإصدارها.
 
-فيما يلي بعض المهام الأساسية التي يمكن للمستخدمين القيام بها عند تعيينهم إلى Exchange المسؤول:
+فيما يلي بعض المهام الرئيسية التي يمكن للمستخدمين القيام بها عند تعيينهم إلى دور مسؤول Exchange:
   
 - [استرداد العناصر المحذوفة في علبة بريد مستخدم - تعليمات المسؤول](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [قم بإعداد نهج أرشيف وحذف لعلب البريد في مؤسستك](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md).
+- [إعداد نهج الأرشفة والحذف لعلب البريد في مؤسستك](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md).
 
-- إعداد ميزات علبة البريد مثل نهج مشاركة علبة البريد: كيف يمكن للمستخدمين مشاركة معلومات التقويم وجهات الاتصال مع الآخرين من خارج مؤسستك.
+- قم بإعداد ميزات علبة البريد مثل نهج مشاركة علبة البريد: كيف يمكن للمستخدمين مشاركة معلومات التقويم وجهات الاتصال مع الآخرين خارج مؤسستك.
 
-- إعداد المفوضين "[إرسال باسم](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" و"[إرسال](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user) نيابة عن" لعلبة بريد شخص ما. على سبيل المثال، قد يرغب مدير تنفيذي في أن يكون لدى مساعده القدرة على إرسال البريد نيابة عنه.
+- إعداد المفوضين "[إرسال باسم](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" و"[إرسال نيابة عن](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" لعل بريد شخص ما. على سبيل المثال، قد يرغب مدير تنفيذي في أن يكون مساعده قادرا على إرسال البريد بالنيابة عنه.
 
-- [أنشئ علبة بريد مشتركة](../email/create-a-shared-mailbox.md) بحيث تتمكن مجموعة من الأشخاص من مراقبة البريد الإلكتروني وإرساله من عنوان بريد إلكتروني شائع.
+- [إنشاء علبة بريد مشتركة](../email/create-a-shared-mailbox.md) حتى تتمكن مجموعة من الأشخاص من مراقبة البريد الإلكتروني وإرساله من عنوان بريد إلكتروني شائع.
 
-- [الحماية من البريد الإلكتروني وتصفية](../../security/office-365-security/anti-spam-protection.md) البرامج الضارة في المؤسسة.
+- [الحماية من البريد الإلكتروني العشوائي](../../security/office-365-security/anti-spam-protection.md) وعوامل تصفية البرامج الضارة للمؤسسة.
 
-- إدارة Microsoft 365 المجموعات
+- إدارة مجموعات Microsoft 365
 
-## <a name="exchange-online-role-groups"></a>Exchange Online الدور
+## <a name="exchange-online-role-groups"></a>Exchange Online مجموعات الأدوار
 
-إذا كان لديك مؤسسة كبيرة، فقد Exchange المسؤول تعيين مستخدمين Exchange الدور. عندما يضيف المسؤول مستخدما إلى مجموعة دور، يحصل المستخدم على الأذونات لتنفيذ بعض وظائف الأعمال التي يمكن لأعضاء تلك المجموعة فقط القيام بها.
+إذا كانت لديك مؤسسة كبيرة، فقد يرغب مسؤول Exchange في تعيين مستخدمين Exchange مجموعات الأدوار. عندما يضيف المسؤول مستخدما إلى مجموعة أدوار، يحصل المستخدم على أذونات لأداء وظائف عمل معينة يمكن لأعضاء تلك المجموعة فقط القيام بها.
   
- على سبيل المثال، Exchange المسؤول تعيين شخص ما إلى مجموعة دور إدارة الاكتشاف حتى يمكنه إجراء عمليات البحث في علب البريد بحثا عن بيانات تفي بمعايير معينة. لمعرفة المزيد، راجع [الأذونات في](/exchange/permissions-exo/permissions-exo) Exchange Online [مجموعات الدور وإدارتها](/exchange/manage-role-groups-exchange-2013-help).
+ على سبيل المثال، قد يقوم مسؤول Exchange بتعيين شخص ما إلى مجموعة دور "إدارة الاكتشاف" حتى يتمكن من إجراء عمليات البحث في علب البريد عن البيانات التي تفي بمعايير معينة. لمعرفة المزيد، راجع [الأذونات في Exchange Online](/exchange/permissions-exo/permissions-exo) [مجموعات الأدوار وإدارتها](/exchange/manage-role-groups-exchange-2013-help).
   
-## <a name="learn-about-other-admin-roles"></a>التعرف على أدوار المسؤولين الأخرى
+## <a name="learn-about-other-admin-roles"></a>التعرف على أدوار المسؤولين الآخرين
 
-- [حول Microsoft 365 المسؤولين](about-admin-roles.md)
+- [حول أدوار مسؤولي Microsoft 365](about-admin-roles.md)
 
-- [حول دور SharePoint Online](/sharepoint/sharepoint-admin-role)
+- [حول دور مسؤول SharePoint Online](/sharepoint/sharepoint-admin-role)
 
-- [حول دور Skype for Business المسؤول](/skypeforbusiness/skype-for-business-online)
+- [حول دور مسؤول Skype for Business](/skypeforbusiness/skype-for-business-online)
 
-- [استخدام Microsoft Teams المسؤول](/MicrosoftTeams/using-admin-roles)
+- [استخدام دور مسؤول Microsoft Teams](/MicrosoftTeams/using-admin-roles)

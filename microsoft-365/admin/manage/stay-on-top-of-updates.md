@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: تعرف على كيفية البقاء على اطلاع على تحديثات Microsoft 365 باستخدام مركز الرسائل والإصدار المستهدف وخريطة الطريق والمدونات والمجتمع.
-ms.openlocfilehash: f38805b3c09c3b40198930014a3083a3ebc03cf9
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: cf4adf2e603517dfb4db57811e291195a1536488
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129299"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468515"
 ---
-# <a name="stay-on-top-of-changes"></a>ابق على اطلاع على التغييرات
+# <a name="stay-on-top-of-microsoft-365-product-and-feature-changes"></a>البقاء على اطلاع Microsoft 365 تغييرات المنتجات والميزات
 
 مع Microsoft 365، تتلقى تحديثات وميزات منتجات جديدة عندما تصبح متوفرة بدلا من التحديثات المجدولة التي تفصل بينها أشهر أو سنوات. ونتيجة لذلك، ستختبر أنت والمستخدمون طرقا جديدة ومحسنة بشكل روتيني للقيام بعملك بدلا من الترقية المكلفة والمستهلكة للوقت على مستوى الشركة. يتمثل التحدي الذي يواجه مثل هذا النموذج في مواكبة التغييرات والتحديثات. فيما يلي بعض الطرق التي يمكنك من خلالها البقاء على اطلاع بالتحديثات Microsoft 365 في مؤسستك.
 
