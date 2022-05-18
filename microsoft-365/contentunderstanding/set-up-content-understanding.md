@@ -15,12 +15,12 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: إعداد SharePoint Syntex
-ms.openlocfilehash: 0d7cbe0f99747629bcac581bd080d88af27e8a06
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 97d12527667de1583f787844da11a4ad875f34ba
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935358"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463132"
 ---
 # <a name="set-up-sharepoint-syntex"></a>إعداد SharePoint Syntex
 
@@ -45,7 +45,13 @@ ms.locfileid: "64935358"
 
 بصفتك مسؤولا، يمكنك أيضا إجراء تغييرات على الإعدادات المحددة في أي وقت بعد الإعداد، وفي جميع أنحاء إعدادات إدارة فهم المحتوى في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>.
 
-إذا كنت تخطط لاستخدام بيئة Power Platform مخصصة، فيجب [تثبيت *الذكاء الاصطناعي Builder لتطبيق Project Cortex* في هذه البيئة](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) [وتخصيص أرصدة الذكاء الاصطناعي Builder](/power-platform/admin/capacity-add-on) له قبل أن تتمكن من إنشاء نماذج معالجة النماذج. عند استخدام بيئة مخصصة، يجب تعيين دور أمان Environment Maker إلى منشئي النماذج، كما يجب تعيين دور أمان المستخدم الأساسي للمستخدم. راجع [تعيين دور أمان لمستخدم](/power-platform/admin/assign-security-roles) للحصول على مزيد من المعلومات.
+### <a name="custom-power-platform-environments"></a>بيئات Power Platform المخصصة
+
+إذا كنت تخطط لاستخدام بيئة Power Platform مخصصة، فيجب تثبيت *الذكاء الاصطناعي Builder لتطبيق Project Cortex* في هذه البيئة. راجع [إدارة تطبيقات Dynamics 365](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) للحصول على التفاصيل وابحث عن *الذكاء الاصطناعي Builder لتطبيق Project Cortex* في قائمة تطبيقات Dynamics 365.
+
+تحتاج أيضا إلى [تخصيص أرصدة الذكاء الاصطناعي Builder](/power-platform/admin/capacity-add-on) إلى البيئة المخصصة قبل أن تتمكن من إنشاء نماذج معالجة النماذج. 
+
+عند استخدام بيئة مخصصة، يجب تعيين دور أمان Environment Maker إلى منشئي النماذج، كما يجب تعيين دور أمان المستخدم الأساسي للمستخدم. راجع [تعيين دور أمان لمستخدم](/power-platform/admin/assign-security-roles) للحصول على مزيد من المعلومات.
 
 يجب أن يكون المستخدمون الذين يقومون بإنشاء نماذج في [موقع مركز المحتوى](/microsoft-365/contentunderstanding/create-a-content-center) أعضاء في الموقع. يجب أن يكون المستخدمون الذين يقومون بإنشاء نماذج محليا خارج مركز المحتوى مالكي مواقع لتلك المواقع.
 
@@ -53,7 +59,7 @@ ms.locfileid: "64935358"
 
 لاستخدام SharePoint Syntex، يجب أن يكون لدى مؤسستك اشتراك في SharePoint Syntex، ويجب أن يكون لكل مستخدم التراخيص التالية المعينة:
 
-- SharePoint Syntex
+- بناء جملة SharePoint
 - SharePoint Syntex - نوع SPO
 - خدمة البيانات المشتركة SharePoint Syntex
 

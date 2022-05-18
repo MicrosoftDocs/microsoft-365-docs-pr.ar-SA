@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: تعرف على مكان الوصول إلى Windows Office Deployment Lab Kit.
-ms.openlocfilehash: 5ce9ebcdd3a36b62f74292e2b8e261928ef12043
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: e90a52a23c6c79a3293d381c0503480abc90c2d7
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435336"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463154"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>مجموعة أدوات معمل نشر Windows وOffice 365
 
@@ -114,4 +114,4 @@ ms.locfileid: "65435336"
 - [تقديم Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Microsoft 365 للأعمال](https://products.office.com/business/office)
 - [تقديم Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [Windows 11 للأعمال](https://www.microsoft.com/windows/business)
+- [Windows للأعمال](https://www.microsoft.com/windows/business)
