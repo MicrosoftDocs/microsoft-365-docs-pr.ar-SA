@@ -3,6 +3,7 @@ title: إدارة نقاط نهاية Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 05/18/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +19,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: تعرف على كيفية إدارة نقاط النهاية Office 365 بحيث تعمل مع بنية شبكة مؤسسة المؤسسة.
-ms.openlocfilehash: 6743ab1c3241b84b0eb1dd3e9f5e67e100e18b40
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 68b778ac695c0b37b55dfe84414f72551d10ce68
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090330"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587457"
 ---
 # <a name="managing-office-365-endpoints"></a>إدارة نقاط نهاية Office 365
 
@@ -47,6 +48,9 @@ ms.locfileid: "65090330"
 استخدم ملفات PAC أو WPAD لإدارة طلبات الشبكة المقترنة Office 365 ولكن ليس لها عنوان IP. تزيد طلبات الشبكة النموذجية التي يتم إرسالها من خلال وكيل أو جهاز محيط من زمن الانتقال. بينما ينشئ SSL Break and Inspect أكبر زمن انتقال، يمكن أن تسبب الخدمات الأخرى مثل مصادقة الوكيل والبحث عن السمعة أداء ضعيفا وتجربة مستخدم سيئة. بالإضافة إلى ذلك، تحتاج أجهزة الشبكة المحيطة هذه إلى سعة كافية لمعالجة جميع طلبات اتصال الشبكة. نوصي بتجاوز أجهزة الوكيل أو الفحص لطلبات الشبكة Office 365 المباشرة.
   
 [PowerShell Gallery Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) هو برنامج نصي PowerShell يقرأ أحدث نقاط نهاية الشبكة من عنوان IP Office 365 وخدمة ويب URL وينشئ نموذج ملف PAC. يمكنك تعديل البرنامج النصي بحيث يتكامل مع إدارة ملفات PAC الحالية.
+
+> [!NOTE]
+> لمزيد من المعلومات حول اعتبارات الأمان والأداء للاتصال المباشر بنقاط النهاية Office 365، راجع [Office 365 مبادئ اتصال الشبكة](microsoft-365-network-connectivity-principles.md).
 
 ![الاتصال Office 365 من خلال جدران الحماية والوكلاء.](../media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
@@ -198,7 +202,7 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 |**Exchange** <br/> |Exchange Online Exchange Online Protection <br/> |
 |**SharePoint** <br/> |SharePoint Online وOneDrive for Business <br/> |
 |**Skype for Business Online وMicrosoft Teams** <br/> |Skype for Business و Microsoft Teams <br/> |
-|**المشتركه** <br/> |Office 365 Pro Plus، Office في المستعرض وAzure AD ونقاط نهاية الشبكة الشائعة الأخرى <br/> |
+|**المشتركه** <br/> |Office 365 Pro Plus، Office في المستعرض Azure AD ونقاط نهاية الشبكة الشائعة الأخرى <br/> |
 
 بالإضافة إلى خدمات الإنترنت الأساسية، هناك خدمات تابعة لجهة خارجية تستخدم فقط لدمج الوظائف. في حين أن هذه ضرورية للتكامل، يتم وضع علامة عليها على أنها اختيارية في مقالة نقاط النهاية Office 365، ما يعني أن الوظائف الأساسية للخدمة ستستمر في العمل إذا لم يكن الوصول إلى نقطة النهاية متاحا. أي نقطة نهاية شبكة مطلوبة سيتم تعيين السمة المطلوبة إلى true. سيتم تعيين السمة المطلوبة إلى خطأ في أي نقطة نهاية شبكة اختيارية وستفصل سمة الملاحظات الوظائف المفقودة التي يجب أن تتوقعها إذا تم حظر الاتصال.
   

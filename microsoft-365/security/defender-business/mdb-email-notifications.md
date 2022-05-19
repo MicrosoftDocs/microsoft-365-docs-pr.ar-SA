@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b6381f5bfa8ebe4f7c23a16d9a214cadb4e511e6
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 7dc6c65221211367e080fac46506f209d17f88ff
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174478"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587435"
 ---
 # <a name="set-up-email-notifications"></a>إعداد إعلامات البريد الإلكتروني
 
@@ -67,6 +67,9 @@ ms.locfileid: "65174478"
    - إذا لم تتمكن من رؤية أي عناصر مدرجة في علامة التبويب **"الثغرات الأمنية** "، يمكنك إنشاء قاعدة للأشخاص ليتم إعلامهم كلما تم اكتشاف ثغرة أمنية جديدة. للحصول على تعليمات حول هذه المهمة، راجع [إنشاء قواعد لأحداث الثغرات الأمنية](../defender-endpoint/configure-vulnerability-email-notifications.md).
 
    - إذا كانت لديك قواعد تم إنشاؤها، فحدد قاعدة لتحريرها. يمكنك أيضا حذف قاعدة. 
+
+> [!IMPORTANT]
+> عند إعداد إعلامات البريد الإلكتروني في Defender for Business، يجب تعيين قواعد الإعلام لمستخدمين محددين. لا يستخدم Defender for Business [التحكم في الوصول المستند إلى الدور مثل Defender لنقطة النهاية](../defender-endpoint/rbac.md). أيضا، لا يمكن تطبيق إعلامات البريد الإلكتروني على مجموعات الأجهزة في Defender for Business. 
 
 ## <a name="next-steps"></a>الخطوات التالية
 

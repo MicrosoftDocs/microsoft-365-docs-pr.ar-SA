@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 6ac255fecaad4fd442116d4abb951be71d3ce6c7
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e47fc4630e83cb79a591f1c4fd4fc7421746a15e
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173122"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587381"
 ---
 # <a name="get-microsoft-defender-for-business"></a>الحصول على Microsoft Defender for Business
 
@@ -46,7 +46,7 @@ ms.locfileid: "65173122"
 3. تابع لإضافة [مستخدمين وتعيين التراخيص](mdb-add-users.md).
 
 > [!TIP]
-> تأكد من رؤية [دليل المبادئ التجريبي: Microsoft Defender for Business](trial-playbook-defender-business.md).
+> راجع [دليل المبادئ التجريبي ل Defender for Business](trial-playbook-defender-business.md).
 
 ## <a name="get-microsoft-365-business-premium"></a>الحصول على Microsoft 365 Business Premium
 
@@ -84,8 +84,8 @@ ms.locfileid: "65173122"
 
    | السيناريو | الاجراء |
    |:---|:---|
-   | تقوم بإعداد اشتراك Microsoft 365 للمرة الأولى. | حدد **Go للإعداد الموجه** وأكمل الخطوات التالية:<br/><br/>1. قم بتثبيت تطبيقات Office الآن، أو اختر **"متابعة**" لتخطي هذه الخطوة. (يمكنك تثبيت تطبيقات Office لاحقا.)<br/><br/>2. إذا كان لدى شركتك مجال، يمكنك إضافته الآن (يوصى بهذا الخيار). بدلا من ذلك، يمكنك اختيار استخدام مجالك الافتراضي `.onmicrosoft.com` في الوقت الحالي.<br/><br/>3. إضافة مستخدمين وتعيين التراخيص. سيتم تعيين ترخيص تلقائيا لكل مستخدم تسرده. راجع [إضافة مستخدمين وتعيين التراخيص في الوقت نفسه](mdb-add-users.md). |
-   | تقوم بإضافة إصدار تجريبي إلى مستأجر Microsoft 365 موجود. | 1. انتقل إلى مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) وسجل الدخول.<br/><br/>2. في جزء التنقل، اختر **UsersActive** >  users. راجع قائمة المستخدمين. <br/><br/>3. لتعيين التراخيص، اتبع الإرشادات الواردة في [تعيين التراخيص للمستخدمين](../../admin/manage/assign-licenses-to-users.md). |
+   | تقوم بإعداد اشتراك Microsoft 365 للمرة الأولى. | حدد **Go للإعداد الموجه** وأكمل الخطوات التالية:<ol><li>قم بتثبيت تطبيقات Office الآن، أو اختر **"متابعة**" لتخطي هذه الخطوة. (يمكنك تثبيت تطبيقات Office لاحقا.)</li><li>إذا كان لدى شركتك مجال، يمكنك إضافته الآن (يوصى بهذا الخيار). بدلا من ذلك، يمكنك اختيار استخدام مجالك الافتراضي `.onmicrosoft.com` في الوقت الحالي.</li><li>إضافة مستخدمين وتعيين التراخيص. سيتم تعيين ترخيص تلقائيا لكل مستخدم تسرده. راجع [إضافة مستخدمين وتعيين التراخيص في الوقت نفسه](mdb-add-users.md).</li></ol> |
+   | تقوم بإضافة إصدار تجريبي إلى مستأجر Microsoft 365 موجود. | <ol><li>انتقل إلى مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) وسجل الدخول.</li><li>في جزء التنقل، اختر **UsersActive** >  users. راجع قائمة المستخدمين. </li><li>لتعيين التراخيص، اتبع الإرشادات الواردة في [تعيين التراخيص للمستخدمين](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
 
 ## <a name="two-portals-for-setup"></a>مدخلان للإعداد
 
@@ -93,8 +93,8 @@ ms.locfileid: "65173122"
 
 |المدخل  |الوصف  |
 |---------|---------|
-| مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | استخدم مركز مسؤولي Microsoft 365 لتنشيط الإصدار التجريبي وتسجيل الدخول للمرة الأولى.<br/><br/> ستستخدم أيضا مركز مسؤولي Microsoft 365 من أجل: <br/>- إضافة مستخدمين أو إزالتهم.<br/>- تعيين تراخيص المستخدمين.<br/>- عرض منتجاتك وخدماتك.<br/>- أكمل مهام الإعداد لاشتراكك في Microsoft 365. <br/><br/> لمعرفة المزيد، راجع [نظرة عامة على مركز مسؤولي Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
-| مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | استخدم مدخل Microsoft 365 Defender لإعداد وتكوين Defender for Business. <br/><br/>ستستخدم مدخل Microsoft 365 Defender من أجل: <br/>- عرض الأجهزة ونهج حماية الجهاز.<br/>- عرض التهديدات المكتشفة واتخاذ إجراء.<br/>- عرض توصيات الأمان وإدارة إعدادات الأمان.<br/><br/>لمعرفة المزيد، راجع [بدء استخدام مدخل Microsoft 365 Defender](mdb-get-started.md).        |
+| مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | استخدم مركز مسؤولي Microsoft 365 لتنشيط الإصدار التجريبي وتسجيل الدخول للمرة الأولى.<p> ستستخدم أيضا مركز مسؤولي Microsoft 365 من أجل: <ul><li>إضافة مستخدمين أو إزالتهم.</li><li>تعيين تراخيص المستخدمين.</li><li>عرض منتجاتك وخدماتك.</li><li>أكمل مهام الإعداد لاشتراكك في Microsoft 365.</li></ul><p>لمعرفة المزيد، راجع [نظرة عامة على مركز مسؤولي Microsoft 365](../../admin/admin-overview/admin-center-overview.md).      |
+| مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | استخدم مدخل Microsoft 365 Defender لإعداد وتكوين Defender for Business.<p>ستستخدم مدخل Microsoft 365 Defender من أجل: <ul><li>عرض أجهزتك ونهج حماية الجهاز.</li><li>عرض التهديدات المكتشفة واتخاذ إجراء.</li><li>عرض توصيات الأمان وإدارة إعدادات الأمان.</li></ul><p>لمعرفة المزيد، راجع [بدء استخدام مدخل Microsoft 365 Defender](mdb-get-started.md).        |
 
 > [!TIP]
 > إذا كان لديك Microsoft 365 Business Premium، فلديك أيضا Microsoft Intune. يمكنك استخدام مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) لإدارة الأجهزة وتكوين إعدادات الأمان. لمعرفة المزيد حول Intune، راجع [Microsoft Intune هو موفر MDM وMAM لأجهزتك](/mem/intune/fundamentals/what-is-intune).
