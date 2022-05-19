@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5ed83064d1686d1cf556e0b2dcca5766556c5fa3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 08fd6e2fed34296b42fb3b12bec9b5b2b4cb91f8
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970880"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535835"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>عرض تقارير Defender لـ Office 365 في مدخل Microsoft 365 Defender
 
@@ -247,10 +247,10 @@ Microsoft Defender لـ Office 365 المؤسسات (على سبيل المثا�
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>ماذا لو لم تعرض التقارير البيانات؟
 
-إذا لم تتمكن من رؤية البيانات في تقارير Defender لـ Office 365، فتحقق مرة أخرى من إعداد النهج بشكل صحيح. يجب أن يكون لدى مؤسستك [نهج ارتباطات خزينة](set-up-safe-links-policies.md) [ونهج مرفقات خزينة](set-up-safe-attachments-policies.md) محددة من أجل حماية Defender لـ Office 365. راجع أيضا [الحماية من البريد العشوائي والحماية من البرامج الضارة](anti-spam-and-anti-malware-protection.md).
+إذا لم تتمكن من رؤية البيانات في تقارير Defender لـ Office 365، فتحقق مرة أخرى من إعداد النهج بشكل صحيح. يجب أن يكون لدى مؤسستك [نهج ارتباطات خزينة](set-up-safe-links-policies.md) [ونهج مرفقات خزينة](set-up-safe-attachments-policies.md) محددة من أجل حماية Defender لـ Office 365. راجع أيضا [الحماية من البريد العشوائي](anti-spam-protection.md) [والحماية من البرامج الضارة](anti-malware-protection.md).
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
 [التقارير الذكية والرؤى في مدخل Microsoft 365 Defender](reports-and-insights-in-security-and-compliance.md)
 
-[الأدوار المضمنة في Azure AD](/azure/active-directory/roles/permissions-reference)
+[Azure AD الأدوار المضمنة](/azure/active-directory/roles/permissions-reference)

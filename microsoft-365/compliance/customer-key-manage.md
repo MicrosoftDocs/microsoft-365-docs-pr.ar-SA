@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: بعد إعداد مفتاح العميل، تعرف على كيفية إدارته عن طريق استعادة مفاتيح AKV، وإدارة الأذونات وإنشاء نهج تشفير البيانات وتعيينها.
-ms.openlocfilehash: 0ca6aa1e2cf725359d74477b486a4763a35ba681
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 9d7a926018a23c62d2ea21283ad6852d979cc6bb
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465899"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535415"
 ---
 # <a name="manage-customer-key"></a>إدارة مفتاح العميل
 

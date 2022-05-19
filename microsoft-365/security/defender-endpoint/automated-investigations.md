@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,23 +18,23 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: eadf9fe7f6112d1219f085662686b2a930b3ff28
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: cfc3ebb1a32487bf2b32074059091c0d4d3517ec
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789789"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535769"
 ---
 # <a name="overview-of-automated-investigations"></a>نظرة عامة على التحقيقات التلقائية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- برنامج الحماية من الفيروسات من Microsoft Defender
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 هل تريد معرفة كيفية عملها؟ شاهد الفيديو التالي:
@@ -53,15 +52,10 @@ ms.locfileid: "64789789"
 
 يمكن أن يبدأ التحقيق التلقائي عند تشغيل تنبيه أو عندما يبدأ عامل تشغيل الأمان التحقيق.
 
-<br>
-
-****
-
-|الحاله|ماذا يحدث|
+|الحاله|ما يحدث|
 |---|---|
 |يتم تشغيل تنبيه|بشكل عام، يبدأ التحقيق التلقائي عند تشغيل [تنبيه](review-alerts.md) ، ويتم إنشاء [حدث](view-incidents-queue.md) . على سبيل المثال، افترض وجود ملف ضار على جهاز. عند الكشف عن هذا الملف، يتم تشغيل تنبيه، ويتم إنشاء الحدث. تبدأ عملية التحقيق التلقائي على الجهاز. كما يتم إنشاء تنبيهات أخرى بسبب نفس الملف على أجهزة أخرى، تتم إضافتها إلى الحادث المرتبط والتحقيق التلقائي.|
 |يتم بدء التحقيق يدويا|يمكن بدء التحقيق التلقائي يدويا من قبل فريق عمليات الأمان. على سبيل المثال، افترض أن عامل تشغيل الأمان يراجع قائمة بالأجهزة ويلاحظ أن الجهاز لديه مستوى عال من المخاطر. يمكن لمشغل الأمان تحديد الجهاز في القائمة لفتح القائمة المنبثقة الخاصة به، ثم تحديد **بدء التحقيق التلقائي**.|
-|
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>كيف يوسع التحقيق التلقائي نطاقه
 
@@ -84,11 +78,11 @@ ms.locfileid: "64789789"
 يتم تعقب جميع إجراءات المعالجة، سواء كانت معلقة أو مكتملة، في [مركز الصيانة](auto-investigation-action-center.md). إذا لزم الأمر، يمكن لفريق عمليات الأمان التراجع عن إجراء المعالجة. لمعرفة المزيد، راجع [مراجعة إجراءات المعالجة والموافقة عليها بعد إجراء تحقيق تلقائي](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
 > [!TIP]
-> تحقق من صفحة التحقيق الموحدة الجديدة في مدخل Microsoft 365 Defender. لمعرفة المزيد، راجع [(جديد!) صفحة التحقيق الموحد](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> تحقق من صفحة التحقيق الموحدة الجديدة في مدخل Microsoft 365 Defender. لمعرفة المزيد، راجع [صفحة التحقيق الموحد](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 ## <a name="requirements-for-air"></a>متطلبات AIR
 
-يجب أن يكون لدى مؤسستك Defender for Endpoint (راجع [الحد الأدنى من متطلبات Microsoft Defender لنقطة النهاية](minimum-requirements.md)).
+يجب أن يتضمن اشتراكك [Defender لنقطة النهاية](microsoft-defender-endpoint.md) أو [Defender for Business](../defender-business/mdb-overview.md).
 
 > [!NOTE]
 > يتطلب التحقيق التلقائي والاستجابة برنامج الحماية من الفيروسات من Microsoft Defender لتشغيلها في الوضع الخامل أو الوضع النشط. إذا تم تعطيل برنامج الحماية من الفيروسات من Microsoft Defender أو إلغاء تثبيتها، فلن يعمل التحقيق التلقائي والاستجابة بشكل صحيح.

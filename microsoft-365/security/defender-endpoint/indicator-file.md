@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f1d32c546fc270e044d391dd35f325afc98fe5a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: da9e030d929f65c7ea5bd83010d2b7f49b1d90d9
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101436"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535581"
 ---
 # <a name="create-indicators-for-files"></a>إنشاء مؤشرات للملفات
 
@@ -28,9 +28,10 @@ ms.locfileid: "65101436"
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
-- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 > [!TIP]
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
@@ -54,11 +55,14 @@ ms.locfileid: "65101436"
 - معتمدة على الأجهزة التي تحتوي على Windows 10 والإصدار 1703 أو الإصدارات الأحدث Windows Server 2019 Windows Server 2016 Windows Server 2012 R2 Windows Server 2022.
     
    > [!NOTE]
-   > يجب إلحاق Windows Server 2016 وserver Windows 2012 R2 باستخدام الإرشادات الموجودة في [خوادم Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) المحلية لكي تعمل هذه الميزة. تتوفر مؤشرات الملفات المخصصة مع إجراءات السماح والحظر والمعالجة الآن أيضا في [المعاينة العامة لقدرات محرك مكافحة البرامج الضارة المحسنة لنظامي التشغيل macOS وLinux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
+   > يجب إلحاق Windows Server 2016 وserver Windows 2012 R2 باستخدام الإرشادات الموجودة في [خوادم Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) المحلية لكي تعمل هذه الميزة. مؤشرات الملفات المخصصة مع إجراءات السماح والحظر والمعالجة متوفرة الآن أيضا في [المعاينة العامة لقدرات محرك مكافحة البرامج الضارة المحسنة macOS وLinux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
 
 - لبدء حظر الملفات، تحتاج أولا إلى [تشغيل ميزة "الحظر أو السماح"](advanced-features.md) في الإعدادات.
 
 تم تصميم هذه الميزة لمنع تنزيل البرامج الضارة المشتبه بها (أو الملفات التي يحتمل أن تكون ضارة) من الويب. وهو يدعم حاليا الملفات القابلة للتنفيذ المحمولة (PE)، بما في ذلك ملفات .exe .dll. سيتم تمديد التغطية بمرور الوقت.
+
+> [!IMPORTANT]
+> في Defender for Endpoint Plan 1 و Defender for Business، يمكنك إنشاء مؤشر لحظر ملف أو السماح به. في Defender for Business، يتم تطبيق المؤشر عبر بيئتك ولا يمكن تحديد نطاقه على أجهزة معينة.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>إنشاء مؤشر للملفات من صفحة الإعدادات
 
@@ -71,7 +75,7 @@ ms.locfileid: "65101436"
 4. حدد التفاصيل التالية:
     - مؤشر - حدد تفاصيل الكيان وحدد انتهاء صلاحية المؤشر.
     - الإجراء - حدد الإجراء الذي يجب اتخاذه وقم بتوفير وصف.
-    - النطاق - تحديد نطاق مجموعة الأجهزة.
+    - النطاق - حدد نطاق مجموعة الأجهزة (النطاق غير متوفر في [Defender for Business](../defender-business/mdb-overview.md)).
 
 5. راجع التفاصيل في علامة التبويب "ملخص"، ثم حدد **"حفظ**".
 

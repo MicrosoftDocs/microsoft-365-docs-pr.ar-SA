@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: caee6f216ad5006eb31750d2c5cbd0d9e47f21ce
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2e86aa7fc8ed304327ab2c07ec487789ad966fc7
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438916"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535437"
 ---
 # <a name="web-content-filtering"></a>تصفية محتوى ويب
 
@@ -28,7 +28,7 @@ ms.locfileid: "65438916"
 
 **ينطبق على:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
@@ -177,7 +177,7 @@ ms.locfileid: "65438916"
 4. حدد نطاق النهج. حدد مجموعات الأجهزة لتحديد مكان تطبيق النهج. سيتم منع الأجهزة في مجموعات الأجهزة المحددة فقط من الوصول إلى مواقع الويب في الفئات المحددة.
 
    > [!IMPORTANT]
-   > إذا كنت تستخدم Defender for Business، فلن يتم تطبيق النطاق. تخطي هذه الخطوة والمتابعة إلى الخطوة 5.
+   > إذا كنت تستخدم Defender for Business، فسيتم تطبيق نهج تصفية محتوى الويب على جميع المستخدمين بشكل افتراضي. لا يتم تطبيق تحديد النطاق.
 
 5. راجع الملخص واحفظ النهج. قد يستغرق تحديث النهج ما يصل إلى ساعتين لتطبيقه على أجهزتك المحددة.
 
