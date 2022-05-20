@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: أدوار المسؤول مثل تعيين مسؤول الخدمة إلى وظائف العمل ومنح الأذونات لتنفيذ مهام معينة في مركز المسؤولين.
-ms.openlocfilehash: 01659905becdbd599c9d597e4a7dac3533d1eeb9
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: تعرف على أدوار المسؤول، مثل دور مسؤول الخدمة، الذي يقوم بالتعيين إلى وظائف عمل معينة ومنح الأذونات لتنفيذ مهام معينة في مركز المسؤولين.
+ms.openlocfilehash: e56399e5e3e83146df9d1bdad09cf7a6c216c8de
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435314"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467109"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>عن أدوار المسؤولين في مركز مسؤولي Microsoft 365
 

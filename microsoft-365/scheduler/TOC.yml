@@ -1,16 +1,16 @@
-- name: مجدول Microsoft 365
+- name: المجدول لـ Microsoft 365
   href: index.yml
   expanded: true
   items:
-    - name: مرحبا بك في Scheduler Microsoft 365
+    - name: مرحبا في مجدول Microsoft 365
       href: scheduler-overview.md
     - name: الثقة والخصوصية
       href: scheduler-trust-privacy.md
-    - name: إعداد Scheduler Microsoft 365
+    - name: إعداد المجدول لـ Microsoft 365
       href: scheduler-setup.md
-    - name: كيفية استخدام Scheduler Microsoft 365
+    - name: تعرف على كيفية استخدام المجدوِل لـ Microsoft 365.
       href: scheduler-using.md
     - name: جدولة الاجتماعات المتكررة
       href: scheduler-recurring-meetings.md
-    - name: جدولة الأسئلة Microsoft 365 الأسئلة الشائعة
+    - name: الأسئلة المتداولة حول مجدول Microsoft 365
       href: scheduler-faqs.md
