@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية استخدام نهج العزل للتحكم في ما يمكن للمستخدمين القيام به للرسائل المعزولة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f24592460daa4f476e969069d0c1b7636f6a23e
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: e591330137f2f2fd92ef05f64f5368cca533fc48
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285533"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599310"
 ---
 # <a name="quarantine-policies"></a>سياسات العزل
 
@@ -53,7 +53,7 @@ ms.locfileid: "65285533"
 يتم وصف نهج العزل الافتراضية ومجموعات الأذونات المقترنة بها وما إذا كانت إعلامات العزل ممكنة في الجدول التالي:
 
 |نهج العزل الافتراضي|مجموعة الأذونات المستخدمة|هل تم تمكين إعلامات العزل؟|
-|---|---|---|
+|---|:---:|:---:|
 |AdminOnlyAccessPolicy|لا يوجد وصول|لا|
 |DefaultFullAccessPolicy|الوصول الكامل|لا|
 |NotificationEnabledPolicy<sup>\*</sup>|الوصول الكامل|نعم|

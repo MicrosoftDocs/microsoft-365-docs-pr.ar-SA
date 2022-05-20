@@ -3,7 +3,7 @@ title: نقاط النهاية الأخرى غير مضمنة في عنوان IP
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/18/2022
+ms.date: 05/19/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'ملخص: لا تتضمن خدمة ويب لنقطة النهاية الجديدة بعض نقاط النهاية لسيناريوهات معينة.'
 hideEdit: true
-ms.openlocfilehash: bebffa1cb03a85ffd5ab7519095f38b7ae5cf985
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.openlocfilehash: 01fbd54ed5addb8552c59e2be8de76961e613968
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587337"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599156"
 ---
 # <a name="other-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>نقاط النهاية الأخرى غير مضمنة في عنوان IP Office 365 وخدمة ويب URL
 
@@ -54,7 +54,7 @@ ms.locfileid: "65587337"
 |3|**Azure AD الاتصال (خيار w/SSO)** <p> WinRM & PowerShell البعيد|منافذ TCP لبيئة STS للعملاء (AD FS Server و AD FS Proxy) \| 80 & 443|نسبة استخدام الشبكة للخادم الوارد|
 |4|**STS** مثل خادم (خوادم) وكيل AD FS (للعملاء الخارجيين فقط)|منافذ STS للعميل (مثل وكيل AD FS) \| TCP 443 أو TCP 49443 w/ClientTLS|نسبة استخدام الشبكة للخادم الوارد|
 |5|**[Exchange Online تكامل المراسلة الموحدة/SBC](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)**|ثنائي الاتجاه بين وحدة التحكم في حدود جلسة العمل المحلية و.um.outlook.com \*|نسبة استخدام الشبكة الصادرة للخادم فقط|
-|6|**ترحيل علبة البريد**<p>عند بدء ترحيل علبة البريد من [Exchange Hybrid](/exchange/exchange-deployment-assistant) إلى Office 365، سيتم توصيل Office 365 بخادم خدمات ويب Exchange المنشورة (EWS)/Mailbox Replication Services (CV). إذا كنت بحاجة إلى عناوين IP NAT المستخدمة من قبل خوادم Exchange Online لتقييد الاتصالات الواردة من نطاقات IP مصدر معينة، يتم سردها في [Office 365 نطاقات عنوان URL & IP](urls-and-ip-address-ranges.md) ضمن منطقة الخدمة "Exchange Online". <p> يجب توخي الحذر لضمان عدم تأثر الوصول إلى نقاط نهاية EWS المنشورة مثل OWA بالتأكد من أن وكيل PROXY يحل إلى FQDN منفصل وعنوان IP عام قبل تقييد اتصالات TCP 443 من نطاقات IP مصدر معينة.|وكيل العميل المحلي EWS/PROXY <br> منفذ TCP 443|نسبة استخدام الشبكة للخادم الوارد|
+|6|**ترحيل علبة البريد**<p>عند بدء ترحيل علبة البريد من [Exchange Hybrid](/exchange/exchange-deployment-assistant) إلى Office 365، سيتم توصيل Office 365 بخادم خدمات ويب Exchange المنشورة (EWS)/Mailbox Replication Services (CV). إذا كنت بحاجة إلى السماح بالاتصالات الواردة فقط من نطاقات IP مصدر معينة، قم بإنشاء قاعدة تصريح لعناوين IP المدرجة في جدول **Exchange Online** في [OFFICE 365 URL & نطاقات IP](urls-and-ip-address-ranges.md). <p> للتأكد من عدم حظر الاتصال بنقاط نهاية EWS المنشورة (مثل OWA)، تأكد من أن وكيل PROXY يحل إلى FQDN منفصل وعنوان IP عام قبل تقييد الاتصالات.|وكيل العميل المحلي EWS/PROXY <br> منفذ TCP 443|نسبة استخدام الشبكة للخادم الوارد|
 |7|**Exchange دالات التوافق [المختلط](/exchange/exchange-deployment-assistant)** مثل مشاركة التوفر/الانشغال.|خادم Exchange المحلي للعميل|نسبة استخدام الشبكة للخادم الوارد|
 |8|**Exchange مصادقة الوكيل [المختلط](/exchange/exchange-deployment-assistant)**|STS الداخلي للعملاء|نسبة استخدام الشبكة للخادم الوارد|
 |9|يستخدم لتكوين [Exchange Hybrid](/exchange/exchange-deployment-assistant)، باستخدام **[معالج التكوين المختلط Exchange](/exchange/hybrid-configuration-wizard)** <p> ملاحظة: نقاط النهاية هذه مطلوبة فقط لتكوين Exchange المختلط|domains.live.com على منافذ TCP 80 & 443، مطلوب فقط لمعالج التكوين المختلط Exchange 2010 SP3 <p> سحابة القطاع الحكومي High, DoD IP addresses: 40.118.209.192/32; 168.62.190.41/32 <p> & سحابة القطاع الحكومي التجارية العالمية: \*.store.core.windows.net; asl.configure.office.com; tds.configure.office.com; mshybridservice.trafficmanager.net ; <br> aka.ms/hybridwizard; <br> \*shcwreleaseprod.blob.core.windows.net/shcw/;|نسبة استخدام الشبكة الصادرة للخادم فقط|

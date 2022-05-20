@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: عند إنشاء وصف حساسية، يمكنك تعيين تسمية تلقائيا للملفات ورسائل البريد الإلكتروني، أو يمكنك مطالبة المستخدمين بتحديد التسمية التي توصي بها.
-ms.openlocfilehash: b1a364fc6053483a05d0ea055000b863b31a94cf
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: fc641845907e157e555e70104b2fcb472ad496af
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438016"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599266"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>تطبيق تسمية حساسية على المحتوى تلقائياً
 
@@ -67,7 +67,7 @@ ms.locfileid: "65438016"
     - الحد الأقصى هو 25000 ملف مسمى تلقائيا في المستأجر الخاص بك يوميا.
     - 100 نهج تسمية تلقائية كحد أقصى لكل مستأجر، تستهدف كل منها ما يصل إلى 100 موقع (SharePoint أو OneDrive) عند تحديدها بشكل فردي. يمكنك أيضا تحديد كافة المواقع، ويتم إعفاء هذا التكوين من الحد الأقصى ل 100 موقع.
     - لا يتم تغيير القيم الموجودة للتعديل والتغيير بالتاريخ كنتيجة لنهج التسمية التلقائية — لكل من وضع المحاكاة ووقت تطبيق التسميات.
-    - عندما تطبق التسمية التشفير، [فإن مصدر Rights Management ومالك Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) هو الحساب الذي عدل الملف آخر تعديل. إذا لم يعد هذا الحساب في Azure Active Directory، فلن يتم تطبيق التسمية لأنه لا يمكن تعيين هذه القيم.
+    - عندما تطبق التسمية التشفير، [فإن مصدر Rights Management ومالك Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) هو الحساب الذي عدل الملف آخر تعديل.
 
     خاص بالتسمية التلقائية Exchange:
     

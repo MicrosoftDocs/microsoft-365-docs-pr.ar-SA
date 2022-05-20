@@ -1,7 +1,7 @@
 ---
 title: التخطيط لتوافق الاتصالات
 description: تعرف على التخطيط لاستخدام توافق الاتصالات في مؤسستك.
-keywords: Microsoft 365، وMicrosoft Purview، والامتثال، وتوافق الاتصالات
+keywords: Microsoft 365، Microsoft Purview، التوافق، توافق الاتصالات
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bda0874ef829495b162beae09fde1c4efcb03c85
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 22e5ed11c97ed00449cb62439e105bd1e6dc78e7
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971550"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599536"
 ---
 # <a name="plan-for-communication-compliance"></a>التخطيط لتوافق الاتصالات
 
@@ -32,12 +32,14 @@ ms.locfileid: "64971550"
 
 قبل البدء في [الامتثال للاتصالات](communication-compliance.md) في مؤسستك، هناك أنشطة واعتبارات تخطيط مهمة يجب مراجعتها من قبل فرق تكنولوجيا المعلومات وإدارة الامتثال. سيساعد الفهم والتخطيط الشاملين للتوزيع في المجالات التالية على ضمان أن يكون تنفيذك واستخدامك لميزات التوافق مع الاتصالات سلسا ومتوافقا مع أفضل الممارسات للحل.
 
+لمزيد من المعلومات ونظرة عامة على عملية التخطيط لمعالجة الامتثال والأنشطة المحفوفة بالمخاطر في مؤسستك، راجع [بدء برنامج إدارة المخاطر من الداخل](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf).
+
 > [!IMPORTANT]
 > يتوفر توافق الاتصالات حاليا في المستأجرين المستضافين في المناطق الجغرافية والبلدان التي تدعمها تبعيات خدمة Azure. للتحقق من دعم توافق الاتصالات لمؤسستك، راجع [توفر تبعية Azure حسب البلد/المنطقة](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>الانتقال من الإشراف في Office 365
 
-بالنسبة للمؤسسات التي تستخدم سياسات الإشراف في Office 365، يجب أن تخطط على الفور للانتقال إلى نهج التوافق مع الاتصالات في Microsoft Purview وتحتاج إلى فهم هذه النقاط الهامة:
+بالنسبة إلى المؤسسات التي تستخدم سياسات الإشراف في Office 365، يجب أن تخطط على الفور للانتقال إلى نهج التوافق مع الاتصالات في Microsoft Purview وتحتاج إلى فهم هذه النقاط الهامة:
 
 - تم استبدال حل الإشراف في Office 365 بشكل كامل بحل التوافق مع الاتصالات في Microsoft Purview. نوصي بإنشاء نهج جديدة في توافق الاتصالات لها نفس الإعدادات مثل سياسات الإشراف الحالية لاستخدام تحسينات التحقيق والمعالجة الجديدة.
 - لا يمكن نقل الرسائل المحفوظة في الإشراف في تطابقات نهج Office 365 أو مشاركتها في توافق الاتصالات.
@@ -60,17 +62,17 @@ ms.locfileid: "64971550"
 
 ### <a name="permissions"></a>الأذونات
 
-حدد أصحاب المصلحة المخصصين لمراقبة ومراجعة التنبيهات والحالات على إيقاع منتظم في [مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/). تأكد من فهم كيفية تعيين المستخدمين وأصحاب المصلحة لمجموعات أدوار مختلفة للامتثال للاتصالات في مؤسستك.
+حدد أصحاب المصلحة المخصصين لمراقبة ومراجعة التنبيهات والحالات على إيقاع منتظم في [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/). تأكد من فهم كيفية تعيين المستخدمين وأصحاب المصلحة لمجموعات أدوار مختلفة للامتثال للاتصالات في مؤسستك.
 
 > [!IMPORTANT]
 > بعد تكوين مجموعات الأدوار، قد يستغرق تطبيق أذونات مجموعة الأدوار على المستخدمين المعينين عبر مؤسستك ما يصل إلى 30 دقيقة.
 
-هناك ست مجموعات أدوار تستخدم لتكوين الأذونات الأولية لإدارة ميزات توافق الاتصالات. لتوفير **توافق الاتصالات** كخيار قائمة في مدخل توافق Microsoft Purview ولمتابعة خطوات التكوين هذه، يجب تعيينك إلى أحد الأدوار أو مجموعات الأدوار التالية:
+هناك ست مجموعات أدوار تستخدم لتكوين الأذونات الأولية لإدارة ميزات توافق الاتصالات. لتوفير **توافق الاتصالات** كخيار قائمة في مدخل التوافق في Microsoft Purview ولمتابعة خطوات التكوين هذه، يجب تعيينك إلى أحد الأدوار أو مجموعات الأدوار التالية:
 
 - دور [*المسؤول العام*](/azure/active-directory/roles/permissions-reference#global-administrator) ل Azure Active Directory
 - دور [*مسؤول توافق*](/azure/active-directory/roles/permissions-reference#compliance-administrator) Azure Active Directory
-- مجموعة دور [*إدارة المؤسسة*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) لمدخل الامتثال ل Microsoft Purview
-- مجموعة دور [*مسؤول الامتثال*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) لمدخل الامتثال ل Microsoft Purview
+- مدخل التوافق في Microsoft Purview مجموعة أدوار [*إدارة المؤسسة*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+- مجموعة دور [*مسؤول التوافق*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) مدخل التوافق في Microsoft Purview
 - مجموعة دور *توافق الاتصالات*
 - مجموعة دور *مسؤول توافق الاتصالات*
 
@@ -78,8 +80,8 @@ ms.locfileid: "64971550"
 
 - *المسؤول العام* ل Azure Active Directory
 - *مسؤول توافق* Azure Active Directory
-- *إدارة المؤسسة* لمدخل الامتثال ل Microsoft Purview
-- *مسؤول الامتثال* لمدخل الامتثال ل Microsoft Purview
+- إدارة *المؤسسة* مدخل التوافق في Microsoft Purview
+- *مسؤول التوافق* مدخل التوافق في Microsoft Purview
 
 > [!IMPORTANT]
 > تأكد من أن لديك دائما مستخدما واحدا على الأقل في مجموعات دور Communication *Compliance* أو *Communication Compliance Admin* (اعتمادا على الخيار الذي تختاره) بحيث لا يصل تكوين توافق الاتصالات إلى سيناريو "المسؤول الصفري" إذا غادر مستخدمون معينون مؤسستك.

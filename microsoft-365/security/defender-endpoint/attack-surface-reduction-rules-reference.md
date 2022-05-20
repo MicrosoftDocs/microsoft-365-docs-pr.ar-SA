@@ -17,18 +17,18 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 48fbef36720d295dabbf640944e64900633f1fe2
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: d43bcfd16a2ab2b1927ae4da0f894db114003cbe
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363049"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599558"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>مرجع قواعد تقليل الأجزاء المعرضة للهجوم
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - برنامج الحماية من الفيروسات من Microsoft Defender
@@ -332,6 +332,9 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 تكتشف هذه القاعدة الخصائص المشبوهة داخل برنامج نصي مشوش.
 
 تعويم البرنامج النصي هو تقنية شائعة يستخدمها كل من مؤلفي البرامج الضارة والتطبيقات المشروعة لإخفاء الملكية الفكرية أو تقليل أوقات تحميل البرنامج النصي. يستخدم مؤلفو البرامج الضارة أيضا التشويش لجعل التعليمات البرمجية الضارة أكثر صعوبة في القراءة، ما يمنع الفحص الدقيق من قبل البشر وبرامج الأمان.
+
+> [!IMPORTANT]
+> نظرا إلى العدد الكبير من الإيجابيات الخاطئة، لا تكشف هذه القاعدة حاليا عن البرامج النصية PowerShell؛ هذا هو الحل المؤقت. سيتم تحديث القاعدة وبدء إعادة الكشف عن البرامج النصية PowerShell قريبا.
 
 اسم Intune: `Obfuscated js/vbs/ps/macro code`
 
