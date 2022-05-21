@@ -364,9 +364,9 @@
           items:
             - name: العزل
               href: quarantine-email-messages.md
-            - name: إدارة الرسائل والملفات المعزولة كمسؤول
+            - name: عزل المسؤول
               href: manage-quarantined-messages-and-files.md
-            - name: البحث عن الرسائل المعزولة وتحريرها كمستخدم
+            - name: عزل المستخدم النهائي
               href: find-and-release-quarantined-messages-as-a-user.md
             - name: سياسات العزل
               href: quarantine-policies.md

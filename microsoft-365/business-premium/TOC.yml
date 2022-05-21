@@ -78,7 +78,7 @@
           href: m365bp-onboard-devices-mdb.md
         - name: حماية أجهزة Windows
           items:
-            - name: إعدادات الحماية لأجهزة Windows 10
+            - name: إعدادات الحماية لأجهزة Windows
               href: m365bp-protection-settings-for-windows-10-devices.md
             - name: تأمين أجهزة Windows
               href: m365bp-secure-windows-devices.md
@@ -107,9 +107,9 @@
     - name: إزالة مستخدمين
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: إزالة البيانات من الأجهزة
-      href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-remove-company-data.md
     - name: إعادة تعيين الأجهزة إلى إعدادات المصنع
-      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-reset-devices-to-factory-settings.md
 - name: المرجع
   items:
     - name: قائمة المصطلحات
@@ -128,7 +128,7 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: إعدادات حماية التطبيقات لنظامي التشغيل Android وiOS
       href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: ميزات حماية الخريطة لإعدادات InTune
+    - name: ميزات حماية الخريطة لإعدادات Intune
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: إعداد إدارة التوافق
       href: m365bp-set-up-compliance.md
