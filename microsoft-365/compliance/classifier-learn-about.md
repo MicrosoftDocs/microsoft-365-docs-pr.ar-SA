@@ -19,14 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: يمكن للمصنفات القابلة للتدريب التعرف على أنواع مختلفة من المحتوى للتسمية أو تطبيق النهج من خلال منحها عينات إيجابية وسلبية لإلقاء نظرة عليها.
-ms.openlocfilehash: 7da6c9ef6e26d25bb40cade4832abb7b73a4b095
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: a95c74894fd1ab3f9e3f9dd1f398d60afdc597d0
+ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759866"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "65625788"
 ---
 # <a name="learn-about-trainable-classifiers"></a>تعرّف على المزيد حول مصنفات قابلة للتدريب
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تصنيف المحتوى وتصنيفه بحيث يمكن حمايته والتعامل معه بشكل صحيح هو مكان البداية لتخصص حماية المعلومات. Microsoft 365 ثلاث طرق لتصنيف المحتوى.
 
@@ -43,7 +45,7 @@ ms.locfileid: "64759866"
 - التعرف على عنصر لأنه تباين على قالب [(طباعة بإصبع المستند).](document-fingerprinting.md)
 - استخدام وجود السلاسل الدقيقة [تطابق البيانات بدقة](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-يمكن بعد ذلك تطبيق تسميات الحساسية والاستبقاء تلقائيا لجعل المحتوى متوفرا للاستخدام في [Learn حول منع فقدان البيانات](dlp-learn-about-dlp.md) [وتطبيق سياسات الاستبقاء تلقائيا](apply-retention-labels-automatically.md).
+يمكن بعد ذلك تطبيق تسميات الحساسية والاستبقاء تلقائيا لجعل المحتوى متوفرا للاستخدام في [Learn حول تفادي فقدان البيانات في Microsoft Purview](dlp-learn-about-dlp.md) [وتطبيق نهج الاستبقاء تلقائيا](apply-retention-labels-automatically.md).
 
 ## <a name="classifiers"></a>المصنفات
 
@@ -74,27 +76,49 @@ ms.locfileid: "64759866"
 > [!CAUTION]
 > نحن نإهمال المصنف المدرب مسبقا **للغة المسيئة** لأنه ينتج عددا كبيرا من النتائج الإيجابية الخاطئة. لا تستخدمه وإذا كنت تستخدمه حاليا، فيجب نقل عمليات عملك منه. نوصي باستخدام المصنفات التي تم تدريبها مسبقا على **المخاطر** **والألفاظ النابية** **والمكافحة** بدلا من ذلك.
 
+- **الاتفاقيات**: الكشف عن المحتوى المتعلق بالاتفاقيات القانونية مثل اتفاقيات عدم الكشف، وبيانات العمل، واتفاقيات القروض والتأجير، واتفاقيات التوظيف وعدم المنافسة. الكشف عن المحتوى في ملفات .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one و.msg و.eml.
+
 - **السير الذاتية**: الكشف عن docx، .pdf، و.rtf، .txt العناصر التي هي حسابات نصية للمؤهلات الشخصية والتعليمية والمهنية للمتقدم، وتجربة العمل، ومعلومات تعريف شخصية أخرى
+
 - **التعليمات البرمجية المصدر**: يكشف عن العناصر التي تحتوي على مجموعة من الإرشادات والعبارات المكتوبة في أفضل 25 لغة برمجة كمبيوتر مستخدمة على GitHub: ActionScript، C، C#، C++، Clojure، CoffeeScript، Go، Haskell، Java، JavaScript، Lua، MATLAB، Objective-C، Perl، PHP، Python، R، Ruby، Scala، Shell، Swift، TeX، Vim Script. الكشف عن المحتوى في .msg، و.as، و.h، و.c، و.cs، و.cc، و.cpp، و.hpp، و.cxx، و.hh، و.c++، .clj و.edn و.cljc و.cljs و.coffee و.litcoffee و.go و.hs و.lhs و.java و.jar و .js و.mjs و.lua و.m و.mm و.pl و.pm و.t و.xs و.pod و.php و.phar و.php4 و.pyc. R، .r، .rda، . RData، .rds، .rb، .scala، .sc، .sh، ملفات .swift.
+
+- **شكاوى العملاء**: يكتشف مصنف شكاوى العملاء الملاحظات والشكاوى المقدمة بشأن منتجات مؤسستك أو خدماتها. يمكن أن يساعدك هذا المصنف على تلبية المتطلبات التنظيمية المتعلقة بالكشف عن الشكاوى وفرزها، مثل متطلبات مكتب حماية المستهلك المالية وإدارة الطعام والأدوية. يكتشف المحتوى في .msg، و.eml هي توافق الاتصالات فقط، .docx، .pdf، .txt، .rtf، .jpg، .jpeg، .png، .gif، .bmp، ملفات .svg.
+
+- **التمييز**: يكشف عن لغة تمييزية صريحة ويتحسس اللغة التمييزية ضد المجتمعات الأمريكية/السوداء الأفريقية عند مقارنتها بالمجتمعات الأخرى.
+
+- **التمويل**: الكشف عن المحتوى في فئات التمويل، والمحاسبة، الاقتصاد، والخدمات المصرفية، للاستثمار. الكشف عن المحتوى في .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one .msg, eml., .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx., xltm. xlt, .xlam, .xla files.
+
+- **مكافحة:** الكشف عن فئة معينة من عناصر نص اللغة المسيئة المتعلقة بالسلوك الهجومي الذي يستهدف شخصا واحدا أو عدة أفراد استنادا إلى السمات التالية: العرق، والعرق، والدين، والأصل الوطني، والجنس، والاتجاه الجنسي، والعمر، والإعاقة. الكشف عن المحتوى في ملفات .msg، .docx، .pdf، .txt، .rtf، .jpeg، .jpg، .png، .gif، .bmp، .svg.
+
+- **الرعاية الصحية**: يكشف المحتوى في جوانب الإدارة الطبية والرعاية الصحية مثل الخدمات الطبية، والتشخيص، والمعالجة، والمطالبات، وما إلى ذلك. الكشف عن المحتوى في .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one .msg, eml., .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx., xltm. xlt, .xlam, .xla files.
+
+- **الموارد البشرية**: يكشف المحتوى في الفئات ذات الصلة بالموارد البشرية من التوظيف والمقابلات والتوظيف والتدريب والتقييم والتحذير والإنهاء. الكشف عن المحتوى في .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one .msg, eml., .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx., xltm. xlt, .xlam, .xla files.
+
+- **IP**: يكشف المحتوى في الفئات ذات الصلة بالملكية الفكرية مثل الأسرار التجارية والمعلومات السرية المماثلة. الكشف عن المحتوى في .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one .msg, eml., .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx., xltm. xlt, .xlam, .xla files.
+
+- **تكنولوجيا المعلومات**: الكشف عن المحتوى في فئات تكنولوجيا المعلومات والأمان عبر الإنترنت مثل إعدادات الشبكة وأمان المعلومات والأجهزة والبرامج. الكشف عن المحتوى في .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one .msg, eml., .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx., xltm. xlt, .xlam, .xla files.
+
+- **الشؤون القانونية**: يكشف المحتوى في الفئات المتعلقة بالشؤون القانونية مثل التقاضي، والعملية القانونية، والالتزام القانوني، والمصطلحات القانونية، والقوانين، والقوانين. الكشف عن المحتوى في ملفات .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one و.msg و.eml.
+
+- **الشراء**: الكشف عن المحتوى في فئات المخازن، والاقتباس، والشراء، والدفع مقابل عرض السلع والخدمات. الكشف عن المحتوى في ملفات .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one و.msg و.eml و .xlsx و.xlsm و.xlsb و .xls و .csv و.xltx و.xltm و.xlt و.xlam و.xla.
+
+- **الألفاظ النابية**: يكشف عن فئة معينة من عناصر نص اللغة المسيئة التي تحتوي على تعبيرات تتسبب في إخفائها لمعظم الأشخاص.
+
+- **السير الذاتية**: الكشف عن docx، .pdf، و.rtf، .txt العناصر التي هي حسابات نصية للمؤهلات الشخصية والتعليمية والمهنية للمتقدم، وتجربة العمل، ومعلومات تعريف شخصية أخرى
+
+- **التعليمات البرمجية المصدر**: يكشف عن العناصر التي تحتوي على مجموعة من الإرشادات والعبارات المكتوبة في أفضل 25 لغة برمجة كمبيوتر مستخدمة على GitHub: ActionScript، C، C#، C++، Clojure، CoffeeScript، Go، Haskell، Java، JavaScript، Lua، MATLAB، Objective-C، Perl، PHP، Python، R، Ruby، Scala، Shell، Swift، TeX، Vim Script.
 
 > [!NOTE]
 > يتم تدريب التعليمات البرمجية المصدر على اكتشاف متى يكون الجزء الأكبر من النص هو التعليمات البرمجية المصدر. لا يكشف عن نص التعليمات البرمجية المصدر الذي يتقاطع مع نص عادي.
 
-- **الاتفاقيات**: الكشف عن المحتوى المتعلق بالاتفاقيات القانونية مثل اتفاقيات عدم الكشف، وبيانات العمل، واتفاقيات القروض والتأجير، واتفاقيات التوظيف وعدم المنافسة. الكشف عن المحتوى في ملفات .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one و.msg و.eml.
-- **التمييز**: يكشف عن لغة تمييزية صريحة ويتحسس اللغة التمييزية ضد المجتمعات الأمريكية/السوداء الأفريقية عند مقارنتها بالمجتمعات الأخرى.
-- **التمويل**: الكشف عن المحتوى في فئات التمويل، والمحاسبة، الاقتصاد، والخدمات المصرفية، للاستثمار. الكشف عن المحتوى في .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one .msg, eml., .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx., xltm. xlt, .xlam, .xla files.
-- **مكافحة:** الكشف عن فئة معينة من عناصر نص اللغة المسيئة المتعلقة بالسلوك الهجومي الذي يستهدف شخصا واحدا أو عدة أفراد استنادا إلى السمات التالية: العرق، والعرق، والدين، والأصل الوطني، والجنس، والاتجاه الجنسي، والعمر، والإعاقة. الكشف عن المحتوى في ملفات .msg، .docx، .pdf، .txt، .rtf، .jpeg، .jpg، .png، .gif، .bmp، .svg.
-- **الرعاية الصحية**: يكشف المحتوى في جوانب الإدارة الطبية والرعاية الصحية مثل الخدمات الطبية، والتشخيص، والمعالجة، والمطالبات، وما إلى ذلك. الكشف عن المحتوى في .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one .msg, eml., .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx., xltm. xlt, .xlam, .xla files.
-- **الموارد البشرية**: يكشف المحتوى في الفئات ذات الصلة بالموارد البشرية من التوظيف والمقابلات والتوظيف والتدريب والتقييم والتحذير والإنهاء. الكشف عن المحتوى في .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one .msg, eml., .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx., xltm. xlt, .xlam, .xla files.
-- **IP**: يكشف المحتوى في الفئات ذات الصلة بالملكية الفكرية مثل الأسرار التجارية والمعلومات السرية المماثلة. الكشف عن المحتوى في .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one .msg, eml., .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx., xltm. xlt, .xlam, .xla files.
-- **تكنولوجيا المعلومات**: الكشف عن المحتوى في فئات تكنولوجيا المعلومات والأمان عبر الإنترنت مثل إعدادات الشبكة وأمان المعلومات والأجهزة والبرامج. الكشف عن المحتوى في .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one .msg, eml., .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx., xltm. xlt, .xlam, .xla files.
-- **الشؤون القانونية**: يكشف المحتوى في الفئات المتعلقة بالشؤون القانونية مثل التقاضي، والعملية القانونية، والالتزام القانوني، والمصطلحات القانونية، والقوانين، والقوانين. الكشف عن المحتوى في ملفات .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one و.msg و.eml.
-- **الشراء**: الكشف عن المحتوى في فئات المخازن، والاقتباس، والشراء، والدفع مقابل عرض السلع والخدمات. الكشف عن المحتوى في ملفات .docx و.docm و .doc و.dotx و.dotm و.dot و .pdf و.rtf و .txt و.one و.msg و.eml و .xlsx و.xlsm و.xlsb و .xls و .csv و.xltx و.xltm و.xlt و.xlam و.xla.
+- **الضريبة**: الكشف عن محتوى العلاقة الضريبية مثل التخطيط الضريبي، والنماذج الضريبية، والإيداع الضريبي، واللوائح الضريبية. الكشف عن المحتوى في .docx و.docm و .doc و.dotx و.dotm و.dot .pdf و.rtf و .txt و.one .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx., xltm. xlt, .xlam, xla files.
+
+- **التهديد**: يكشف عن فئة معينة من عناصر نص اللغة المسيئة المتعلقة بالتهديدات التي تتعرض لها من أجل ارتكاب أعمال من خلال أعمال التهديد أو إلحاق الضرر أو الضرر المادي بشخص أو خاصية.
 - **الألفاظ النابية**: يكشف عن فئة معينة من عناصر نص اللغة المسيئة التي تحتوي على تعبيرات تتسبب في إخفائها لمعظم الأشخاص. الكشف عن المحتوى في ملفات .msg، .docx، .pdf، .txt، .rtf، .jpeg، .jpg، .png، .gif، .bmp، .svg.
 - **الضريبة**: الكشف عن محتوى العلاقة الضريبية مثل التخطيط الضريبي، والنماذج الضريبية، والإيداع الضريبي، واللوائح الضريبية. الكشف عن المحتوى في .docx و.docm و .doc و.dotx و.dotm و.dot .pdf و.rtf و .txt و.one .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, xltx., xltm. xlt, .xlam, xla files.
 - **التهديد**: يكشف عن فئة معينة من عناصر نص اللغة المسيئة المتعلقة بالتهديدات التي تتعرض لها من أجل ارتكاب أعمال من خلال أعمال التهديد أو إلحاق الضرر أو الضرر المادي بشخص أو خاصية. الكشف عن المحتوى في ملفات .msg، .docx، .pdf، .txt، .rtf، .jpeg، .jpg، .png، .gif، .bmp، .svg.
 
-تظهر هذه في طريقة عرض المصنفات **مركز التوافق في Microsoft 365** >  **Data** **classificationTrainable** >  مع حالة `Ready to use`.
+تظهر هذه في طريقة عرض المصنفات **مدخل التوافق في Microsoft Purview** >  **Data** **classificationTrainable** >  مع حالة `Ready to use`.
 
 ![المصنفات التي تم تدريبها مسبقا.](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -104,7 +128,7 @@ ms.locfileid: "64759866"
 يمكن للمصنفات المدربة مسبقا فحص المحتوى بهذه اللغات:
 
 - الصينية (المبسطة)
-- الإنكليزية
+- الإنجليزية
 - الفرنسية
 - الألمانية
 - الإيطالية

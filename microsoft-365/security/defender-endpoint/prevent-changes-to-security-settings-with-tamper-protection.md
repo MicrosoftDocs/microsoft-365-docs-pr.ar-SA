@@ -17,22 +17,22 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 04/07/2022
+ms.date: 05/20/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6bd334802319b897de7a8fd8fbb61a490dddcffe
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 7ac72d88975231bb76f6e097a80f372a8ffac535
+ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416299"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "65626954"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>حماية إعدادات الأمان باستخدام الحماية من العبث
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -54,7 +54,6 @@ ms.locfileid: "65416299"
 > [!NOTE]
 > تتوفر الحماية من العبث في Windows Server 2012 R2 للأجهزة التي تم إلحاقها باستخدام حزمة الحلول الموحدة الحديثة. لمزيد من المعلومات، راجع [إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
-
 ## <a name="overview"></a>نظرة عامة
 
 أثناء بعض أنواع الهجمات الإلكترونية، تحاول الجهات الفاعلة السيئة تعطيل ميزات الأمان، مثل الحماية من الفيروسات، على أجهزتك. ترغب الجهات الفاعلة السيئة في تعطيل ميزات الأمان الخاصة بك لتسهيل الوصول إلى بياناتك، أو لتثبيت البرامج الضارة، أو استغلال بياناتك وهويتك وأجهزتك بطريقة أخرى. تساعد الحماية من العبث بالبيانات على منع حدوث هذه الأنواع من الأشياء. مع الحماية من العبث، يتم منع التطبيقات الضارة من اتخاذ إجراءات مثل:
@@ -62,7 +61,7 @@ ms.locfileid: "65416299"
 - تعطيل الحماية من الفيروسات والتهديدات
 - تعطيل الحماية في الوقت الحقيقي
 - إيقاف تشغيل مراقبة السلوك
-- تعطيل برنامج مكافحة الفيروسات (مثل IOfficeAntivirus (IOAV))
+- تعطيل الحماية من الفيروسات، مثل IOfficeAntivirus (IOAV)
 - تعطيل الحماية المقدمة من السحابة
 - إزالة تحديثات التحليل الذكي للأمان
 - تعطيل الإجراءات التلقائية على التهديدات المكتشفة
@@ -236,15 +235,11 @@ ms.locfileid: "65416299"
 
 عند الكشف عن محاولة العبث، يتم رفع تنبيه في [مدخل Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/portal-overview) ([https://security.microsoft.com](https://security.microsoft.com)).
 
-:::image type="content" source="images/tamperattemptalert.png" alt-text="مدخل Microsoft 365 Defender" lightbox="images/tamperattemptalert.png":::
-
 باستخدام [قدرات التتبع الكشف عن تهديدات نقاط النهاية والرد عليها](overview-endpoint-detection-response.md) [والمتقدمة](advanced-hunting-overview.md) في Microsoft Defender لنقطة النهاية، يمكن لفريق عمليات الأمان التحقيق في مثل هذه المحاولات ومعالجتها.
 
 ## <a name="review-your-security-recommendations"></a>مراجعة توصيات الأمان
 
 تتكامل الحماية من العبث مع قدرات [إدارة المخاطر & الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md) . تتضمن [توصيات الأمان](tvm-security-recommendation.md) التأكد من تشغيل الحماية من العبث. على سبيل المثال، يمكنك البحث عن *العبث.* في النتائج، يمكنك تحديد **"تشغيل الحماية من العبث"** لمعرفة المزيد وتشغيله.
-
-:::image type="content" source="images/tamperprotectsecurityrecos.png" alt-text="تشغيل الحماية من العبث في مدخل مركز حماية Microsoft Defender" lightbox="images/tamperprotectsecurityrecos.png":::
 
 لمعرفة المزيد حول إدارة الثغرات الأمنية & المخاطر، راجع [رؤى لوحة المعلومات - إدارة المخاطر والثغرات الأمنية](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
@@ -278,7 +273,9 @@ ms.locfileid: "65416299"
 
 ### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>كيف يؤثر تكوين الحماية من العبث في Intune على كيفية إدارة برنامج الحماية من الفيروسات من Microsoft Defender باستخدام نهج المجموعة؟
 
-لا ينطبق نهج المجموعة على الحماية من العبث. يتم تجاهل التغييرات التي تم إجراؤها على إعدادات برنامج الحماية من الفيروسات من Microsoft Defender عند تشغيل الحماية من العبث.
+إذا كنت تستخدم Intune حاليا لتكوين الحماية من العبث بالبيانات وإدارتها، يجب الاستمرار في استخدام Intune. 
+
+لا ينطبق نهج المجموعة على الحماية من العبث. يتم تجاهل التغييرات التي تم إجراؤها على إعدادات برنامج الحماية من الفيروسات من Microsoft Defender باستخدام نهج المجموعة عند تشغيل الحماية من العبث، أو عند تكوين الحماية من العبث باستخدام Intune.
 
 ### <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>إذا استخدمنا Microsoft Intune لتكوين الحماية من العبث، فهل ينطبق ذلك على المؤسسة بأكملها فقط؟
 
@@ -294,10 +291,6 @@ ms.locfileid: "65416299"
 ### <a name="i-have-the-windows-e3-enrollment-can-i-use-configuring-tamper-protection-in-intune"></a>لدي تسجيل E3 Windows. هل يمكنني استخدام تكوين الحماية من العبث في Intune؟
 
 حاليا، لا يتوفر تكوين الحماية من العبث في Intune إلا للعملاء الذين لديهم [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint).
-
-### <a name="what-happens-if-i-try-to-change-microsoft-defender-for-endpoint-settings-in-intune-microsoft-endpoint-configuration-manager-and-windows-management-instrumentation-when-tamper-protection-is-enabled-on-a-device"></a>ماذا يحدث إذا حاولت تغيير إعدادات Microsoft Defender لنقطة النهاية في Intune، Microsoft Endpoint Configuration Manager، Windows Management Instrumentation عند تمكين الحماية من العبث على جهاز؟
-
-لن تتمكن من تغيير الميزات المحمية بواسطة الحماية من العبث؛ يتم تجاهل طلبات التغيير هذه.
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>أنا عميل مؤسسة. هل يمكن للمسؤولين المحليين تغيير الحماية من العبث على أجهزتهم؟
 
@@ -318,7 +311,7 @@ ms.locfileid: "65416299"
 [عرض معلومات حول محاولات العبث](#view-information-about-tampering-attempts).
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
