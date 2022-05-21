@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 984df48edf4ba75569286618086d8be9ab684b60
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: 73107fd82a77be730d894b057d1b9b1795fb242b
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243041"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621065"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>ترحيل علبة بريد عبر المستأجرين (معاينة)
 
@@ -147,13 +147,10 @@ ms.locfileid: "65243041"
    ```powershell
 
    # Enable customization if tenant is dehydrated
-     $dehydrated=Get-OrganizationConfig | fl isdehydrated
-     if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
-
+   $dehydrated=Get-OrganizationConfig | fl isdehydrated
+   if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
    $AppId = "[guid copied from the migrations app]"
-
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
-
    New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "sourcetenant.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
    ```
 
@@ -540,7 +537,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 **هل يمكنني الحصول على نفس التسميات في المستأجر الوجهة كما كان لديك في المستأجر المصدر، إما كمجموعة فقط من التسميات أو مجموعة إضافية من التسميات للمستخدمين الذين تم ترحيلهم اعتمادا على المحاذاة بين المؤسسات.**
 
-نظرا إلى أن عمليات الترحيل عبر المستأجرين لا تقوم بتصدير التسميات ولا توجد طريقة لمشاركة التسميات بين المستأجرين، يمكنك تحقيق ذلك فقط عن طريق إعادة إنشاء التسميات في المستأجر الوجهة.
+نظرا لأن عمليات الترحيل عبر المستأجرين لا تقوم بتصدير التسميات ولا توجد طريقة لمشاركة التسميات بين المستأجرين، يمكنك تحقيق ذلك فقط عن طريق إعادة إنشاء التسميات في المستأجر الوجهة.
 
 **هل تدعم نقل مجموعات Microsoft 365؟**
 

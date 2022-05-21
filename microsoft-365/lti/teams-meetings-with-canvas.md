@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: دمج اجتماعات Microsoft Teams مع Canvas
-ms.openlocfilehash: a81b8c7da014ba4ded9e4a2e3cfd6b38509ae2db
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: cbb24972dba7fafe60cb460e514a0fede64a08fb
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599602"
+ms.locfileid: "65621469"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>استخدام اجتماعات Microsoft Teams مع Canvas
 
@@ -95,6 +95,6 @@ Microsoft Teams الاجتماعات هو تطبيق Learning أدوات الت�
 
 ## <a name="enable-for-canvas-courses"></a>تمكين دورات Canvas التدريبية
 
-لاستخدام LTI ضمن دورة تدريبية، يجب أن يقوم معلم الدورة التدريبية Canvas بتمكين مزامنة عمليات التكامل. يجب تمكين كل دورة تدريبية من قبل مدرب لإنشاء Teams مقابل؛ لا توجد آلية عمومية لإنشاء Teams. تم تصميم ذلك بحذر لمنع إنشاء Teams غير المرغوب فيها.
+لاستخدام LTI ضمن دورة تدريبية، يجب أن يقوم معلم الدورة التدريبية Canvas بتمكين مزامنة عمليات التكامل. يجب تمكين كل دورة تدريبية من قبل مدرب لإنشاء Teams مقابلة؛ لا توجد آلية عمومية لإنشاء Teams. تم تصميم ذلك بحذر لمنع إنشاء Teams غير المرغوب فيها.
 
 الرجاء الرجوع إلى [وثائق المعلم](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) لتمكين LTI لكل دورة تدريبية وإنهاء إعداد التكامل.

@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ebe8f623842716ab53b4eae64d24ef85b9598099
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: 8f716f692687276e5c1c4482429ab016f9574f2f
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396146"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621322"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>إلحاق الأجهزة Microsoft Defender for Business
 
@@ -182,7 +182,7 @@ ms.locfileid: "65396146"
 
 9. ستتم مطالبتك بالسماح بتثبيت برنامج تشغيل من Microsoft (إما "تم حظر ملحق النظام" أو "التثبيت قيد الانتظار"، أو كليهما. يجب السماح بتثبيت برنامج التشغيل. للسماح بالتثبيت، حدد **"فتح تفضيلات الأمان**" أو **"فتح تفضيلات** >  النظام **" & الخصوصية**، ثم حدد **"السماح**".
 
-10. استخدم أمر Python التالي في Bash لتشغيل حزمة الإلحاق: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`
+10. استخدم أمر Python التالي في Bash لتشغيل حزمة الإلحاق: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
 
 11. بعد تسجيل جهاز في Intune، يمكنك إضافته إلى مجموعة أجهزة. [تعرف على المزيد حول مجموعات الأجهزة في Microsoft Defender for Business](mdb-create-edit-device-groups.md).
 

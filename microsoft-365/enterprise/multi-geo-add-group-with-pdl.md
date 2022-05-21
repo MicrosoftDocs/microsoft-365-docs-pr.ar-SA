@@ -1,5 +1,5 @@
 ---
-title: إنشاء مجموعة Microsoft 365 موقع بيانات مفضل معين
+title: إنشاء مجموعة Microsoft 365 مع موقع بيانات مفضل محدد
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,37 +11,37 @@ f1.keywords:
 - NOCSH
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
-description: تعرف على كيفية إنشاء مجموعة Microsoft 365 مع موقع بيانات مفضل محدد في بيئة متعددة الجغرافيا.
+description: تعرف على كيفية إنشاء مجموعة Microsoft 365 مع موقع بيانات مفضل محدد في بيئة متعددة المناطق الجغرافية.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-ms.openlocfilehash: 7de00ad0d94cda0a47f4981d78ebc07cedab6ada
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 162f499a783c23ec45ec75610833c61978beaafb
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570001"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623373"
 ---
-# <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>إنشاء مجموعة Microsoft 365 موقع بيانات مفضل معين
+# <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>إنشاء مجموعة Microsoft 365 مع موقع بيانات مفضل محدد
 
-عندما ينشئ المستخدمون في بيئة متعددة الجغرافيا مجموعة Microsoft 365، يتم تعيين موقع البيانات المفضل للمجموعة (PDL) تلقائيا إلى موقع المستخدم. يمكن للمسؤولين العامين SharePoint Exchange إنشاء مجموعات في أي منطقة تحددها. 
+عندما ينشئ المستخدمون في بيئة متعددة المناطق الجغرافية مجموعة Microsoft 365، يتم تعيين موقع البيانات المفضل للمجموعة (PDL) تلقائيا إلى موقع المستخدم. يمكن للمسؤولين العموميين ومسؤولي SharePoint Exchange إنشاء مجموعات في أي منطقة يختارونها. 
 
-إذا كنت بحاجة إلى إنشاء مجموعة باستخدام PDL معين، يمكنك القيام بذلك باستخدام <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint مركز إدارة Exchange Online New-UnifiedGroup</a> Microsoft PowerShell cmdlet. عند القيام بذلك، سيتم توفير كل من علبة بريد المجموعة SharePoint موقع المجموعة المقترن بالمجموعة في PDL المحدد.
+إذا كنت بحاجة إلى إنشاء مجموعة باستخدام PDL معين، يمكنك القيام بذلك باستخدام من <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">مركز إدارة SharePoint</a> أو من خلال Exchange Online New-UnifiedGroup Microsoft PowerShell cmdlet. عند القيام بذلك، سيتم توفير كل من علبة بريد المجموعة وموقع SharePoint المقترن بالمجموعة في PDL المحدد.
 
-لإنشاء مجموعة Microsoft 365 باستخدام PDL الذي تحدده، انتقل إلى مركز إدارة SharePoint في الموقع الجغرافي <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank"></a> حيث تريد إنشاء موقع المجموعة.
+لإنشاء مجموعة Microsoft 365 باستخدام PDL التي تحددها، انتقل إلى <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">مركز إدارة SharePoint</a> في الموقع الجغرافي حيث تريد إنشاء موقع المجموعة.
 
 على سبيل المثال:
 
-إذا كنت تريد إنشاء موقع مجموعة في موقعك في أستراليا، يمكنك الانتقال إلى https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement
+إذا كنت تريد إنشاء موقع مجموعة في موقع أستراليا الخاص بك، يمكنك الانتقال إلى https://ContosoAUS-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/siteManagement
 
 1. حدد **+ إنشاء**.
 2. اتبع العملية لإنشاء موقع مجموعة.
 
-سيتم توفير موقع المجموعة في الموقع الجغرافي المناظر لمركز إدارة SharePoint الذي بدأت منه طلب إنشاء الموقع. 
+سيتم توفير موقع المجموعة في الموقع الجغرافي المطابق لمركز إدارة SharePoint الذي بدأت منه طلب إنشاء الموقع. 
 
 استخدام Exchange PowerShell 
 
-الاتصال إلى Exchange Online PowerShell وتمرر المعلمة *-MailBoxRegion* باستخدام رمز الموقع الجغرافي.
+الاتصال إلى Exchange Online PowerShell وتمرير المعلمة *-MailBoxRegion* مع رمز الموقع الجغرافي.
 
 على سبيل المثال: 
 
@@ -51,7 +51,8 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 ![لقطة شاشة New-UnifiedGroup PowerShell cmdlet مع بناء الجملة.](../media/multi-geo-new-group-with-pdl-powershell.png)
 
-لاحظ أن SharePoint موقع المجموعة عند الطلب. سيتم توفير الموقع في المرة الأولى التي يحاول فيها مالك المجموعة أو العضو الوصول إليه.
+> [!Note]
+> SharePoint توفير موقع المجموعة عند الطلب. سيتم توفير الموقع في المرة الأولى التي يحاول فيها مالك المجموعة أو العضو الوصول إليه.
 
 ## <a name="geo-location-codes"></a>رموز الموقع الجغرافي
 
@@ -59,6 +60,6 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
-[الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+[الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-[إنشاء مجموعات ذات موقع بيانات مفضل معين باستخدام Graph API](/graph/api/group-post-groups)
+[إنشاء مجموعات مع موقع بيانات مفضل محدد باستخدام واجهة برمجة تطبيقات Graph](/graph/api/group-post-groups)

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: تعرف على كيفية حماية برنامج الحماية من الفيروسات من Microsoft Defender أجهزتك Windows من تهديدات البرامج، مثل الفيروسات والبرامج الضارة وبرامج التجسس.
-ms.openlocfilehash: 47f6af2b91eed8096a685f8d3281f16fdc677331
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 796edb343745e19267f901b736ca19217b0e4f01
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466295"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620911"
 ---
 # <a name="overview-of-threat-protection-by-microsoft-defender-antivirus"></a>نظرة عامة على الحماية من التهديدات بواسطة برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -73,7 +73,7 @@ ms.locfileid: "65466295"
 
 في معظم الحالات، لا يحتاج المستخدمون إلى اتخاذ أي إجراء إضافي. بمجرد اكتشاف ملف أو برنامج ضار على جهاز، برنامج الحماية من الفيروسات من Microsoft Defender حظره ومنع تشغيله. بالإضافة إلى ذلك، تتم إضافة التهديدات المكتشفة حديثا إلى محرك الحماية من الفيروسات والبرامج الضارة بحيث تتم حماية الأجهزة والمستخدمين الآخرين أيضا.  
 
-إذا كان هناك إجراء يحتاج المستخدم إلى اتخاذه، مثل الموافقة على إزالة ملف ضار، فسيرى ذلك في الإعلام الذي يتلقاه. لمعرفة المزيد حول الإجراءات التي يتخذها برنامج الحماية من الفيروسات من Microsoft Defender بالنيابة عن المستخدم، أو الإجراءات التي قد يحتاج المستخدمون إلى اتخاذها، راجع [محفوظات الحماية](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). لمعرفة كيفية إدارة عمليات الكشف عن التهديدات كمحترف/مسؤول في تكنولوجيا المعلومات، راجع [مراجعة التهديدات المكتشفة واتخاذ إجراء](review-threats-take-action.md).
+إذا كان هناك إجراء يحتاج المستخدم إلى اتخاذه، مثل الموافقة على إزالة ملف ضار، فسيرى ذلك في الإعلام الذي يتلقاه. لمعرفة المزيد حول الإجراءات التي يتخذها برنامج الحماية من الفيروسات من Microsoft Defender بالنيابة عن المستخدم، أو الإجراءات التي قد يحتاج المستخدمون إلى اتخاذها، راجع [محفوظات الحماية](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708). لمعرفة كيفية إدارة عمليات الكشف عن التهديدات كمحترف/مسؤول في تكنولوجيا المعلومات، راجع [مراجعة التهديدات المكتشفة واتخاذ إجراء](../../business-premium/m365bp-review-threats-take-action.md).
 
 لمعرفة المزيد حول التهديدات المختلفة، تفضل بزيارة <a href="https://www.microsoft.com/wdsi/threats" target="_blank">موقع التحليل الذكي لمخاطر الأمان من Microsoft Threats</a>، حيث يمكنك تنفيذ الإجراءات التالية: 
 
@@ -81,7 +81,7 @@ ms.locfileid: "65466295"
 - عرض أحدث التهديدات لمنطقة معينة.
 - ابحث في موسوعة التهديد عن تفاصيل حول تهديد معين.
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [تأمين أجهزة Windows](/misc/m365bp-secure-windows-devices) (مقالة)\
 [تقييم برنامج الحماية من الفيروسات من Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (مقالة)\

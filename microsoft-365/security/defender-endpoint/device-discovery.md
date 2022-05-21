@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 53a23751fd53b05b51bf1125dcca98c23f4ba73c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 68503556a1d2f3330e47fe601a303363a3f28896
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418237"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623232"
 ---
 # <a name="device-discovery-overview"></a>نظرة عامة على اكتشاف الجهاز
 
@@ -48,9 +48,8 @@ ms.locfileid: "65418237"
 - إلحاق نقاط النهاية غير المدارة للخدمة، ما يزيد من رؤية الأمان عليها.
 - تقليل سطح الهجوم عن طريق تحديد الثغرات الأمنية وتقييمها، والكشف عن فجوات التكوين.
 
-شاهد هذا الفيديو للحصول على نظرة عامة سريعة حول كيفية اكتشاف الجهاز:
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+شاهد هذا الفيديو للحصول على نظرة عامة سريعة حول كيفية تقييم الأجهزة غير المدارة التي Microsoft Defender لنقطة النهاية اكتشافها وإلحاقها.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4RwQz]
 
 وتزامنا مع هذه الإمكانية، تتوفر توصية أمان لإلحاق الأجهزة Microsoft Defender لنقطة النهاية كجزء من تجربة إدارة المخاطر والثغرات الأمنية الحالية.
 
@@ -115,13 +114,13 @@ ms.locfileid: "65418237"
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>استخدام التتبع المتقدم على الأجهزة المكتشفة
 
-يمكنك استخدام استعلامات التتبع المتقدمة للحصول على رؤية على الأجهزة المكتشفة. يمكنك العثور على تفاصيل حول الأجهزة المكتشفة في جدول DeviceInfo، أو المعلومات المتعلقة بالشبكة حول تلك الأجهزة في جدول DeviceNetworkInfo.
+يمكنك استخدام استعلامات التتبع المتقدمة للحصول على رؤية على الأجهزة المكتشفة. يمكنك العثور على تفاصيل حول الأجهزة المكتشفة في جدول DeviceInfo، أو المعلومات المتعلقة بالشبكة حول تلك الأجهزة، في جدول DeviceNetworkInfo.
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="صفحة التتبع المتقدم التي يمكن استخدام الاستعلامات عليها" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
 ### <a name="query-discovered-devices-details"></a>تفاصيل الأجهزة المكتشفة للاستعلام
 
-قم بتشغيل هذا الاستعلام، على جدول DeviceInfo، لإرجاع جميع الأجهزة المكتشفة مع أحدث التفاصيل لكل جهاز:
+قم بتشغيل هذا الاستعلام على جدول DeviceInfo لإرجاع جميع الأجهزة المكتشفة إلى جانب أحدث التفاصيل لكل جهاز:
 
 ```query
 DeviceInfo

@@ -18,21 +18,21 @@ ms.custom:
 ms.date: 04/04/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 5a9441a41db2dfbe53bfb280152c038e9dbc383e
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: c8b3016517393b473bcae664a6044098e04ebf6d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789833"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623603"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>الكشف عن نقطة النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) في وضع الحظر
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -56,6 +56,9 @@ ms.locfileid: "64789833"
 
 > [!TIP]
 > للحصول على أفضل حماية، تأكد من **[نشر Microsoft Defender لنقطة النهاية الأساسات](configure-machines-security-baseline.md)**.
+
+شاهد هذا الفيديو لمعرفة سبب وكيفية تشغيل الكشف عن تهديدات نقاط النهاية والرد عليها (الكشف التلقائي والاستجابة على النقط النهائية) في وضع الحظر، وتمكين الحظر السلوكي، والاحتواء في كل مرحلة من الاختراق المسبق إلى ما بعد الخرق. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HjW2]
 
 ## <a name="what-happens-when-something-is-detected"></a>ماذا يحدث عند اكتشاف شيء ما؟
 
@@ -156,7 +159,7 @@ ms.locfileid: "64789833"
 
 1. حدد قائمة البدء، وابدأ الكتابة`PowerShell`، ثم افتح Windows PowerShell في النتائج.
 
-2. اكتب `Get-MPComputerStatus|select AMRunningMode`.
+2. النوع `Get-MPComputerStatus|select AMRunningMode`.
 
 3. تأكد من عرض النتيجة، `EDR Block Mode`، .
 

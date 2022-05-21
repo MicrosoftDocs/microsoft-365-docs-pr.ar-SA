@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 05/10/2022
+ms.date: 05/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 7cbb9c71e56242d15506c2c1e46f1120021928fa
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5a01c2f045ea797aa61f3028f2a0a4ef4e260fe6
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415959"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623203"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>عرض نهج حماية الجهاز وتحريرها
 
@@ -30,7 +30,7 @@ ms.locfileid: "65415959"
 **يصف هذا الإرشاد كيفية**:
 
 - الحصول على نظرة عامة على نهجك الافتراضية
-- العمل مع نهج الأجهزة في مركز أمان Defender ومركز الإدارة وInTune.
+- العمل مع نهج الأجهزة في مركز أمان Defender ومركز الإدارة وIntune.
 
 ## <a name="about-the-default-device-protection-policies"></a>حول نهج حماية الجهاز الافتراضية
 
@@ -40,7 +40,7 @@ ms.locfileid: "65415959"
 
 - **نهج جدار الحماية**، التي تحدد نسبة استخدام الشبكة المسموح لها بالتدفق من وإلى أجهزة مؤسستك.
 
-تعد هذه النهج جزءا من Microsoft Defender for Business، مضمنة في اشتراكك في Microsoft 365 Business Premium. يتم توفير المعلومات للعمل مع النهج في مركز أمان Microsoft Defender بالإضافة إلى كيفية العمل مع النهج في مركز الإدارة وInTune.
+تعد هذه النهج جزءا من Microsoft Defender for Business، مضمنة في اشتراكك في Microsoft 365 Business Premium. يتم توفير المعلومات للعمل مع النهج في مركز أمان Microsoft Defender بالإضافة إلى كيفية العمل مع النهج في مركز الإدارة وIntune.
 
 ## <a name="working-with-device-polices-in-the-microsoft-defender-security-center"></a>العمل مع نهج الأجهزة في مركز أمان Microsoft Defender
 
@@ -157,13 +157,13 @@ ms.locfileid: "65415959"
   
    ![إدارة صفحة الأجهزة.](../media/devicesmanage.png)
 
-## <a name="working-with-device-policies-in-intune"></a>العمل مع نهج الأجهزة في InTune
+## <a name="working-with-device-policies-in-intune"></a>العمل مع نهج الأجهزة في Intune
 
-استخدم المعلومات التالية لإنشاء نهج الجهاز وإدارتها في InTune، ويتم ذلك من خلال أمان نقطة النهاية في مركز إدارة إدارة نقاط النهاية من Microsoft.
+استخدم المعلومات التالية لإنشاء نهج الجهاز وإدارتها في Intune، التي تتم من خلال أمان نقطة النهاية في مركز إدارة إدارة نقاط النهاية من Microsoft.
 
 ### <a name="create-duplicate-and-edit-policies"></a>إنشاء نهج وتكرارها وتحريرها
 
-لإنشاء نهج في InTune
+لإنشاء نهج في Intune
 
 1. سجل الدخول إلى مركز إدارة إدارة نقاط النهاية من Microsoft.
 
@@ -201,7 +201,7 @@ ms.locfileid: "65415959"
 
 1. في الصفحة "مراجعة + إنشاء"، عند الانتهاء، اختر **"إنشاء**". يتم عرض ملف التعريف الجديد في القائمة عند تحديد نوع النهج لملف التعريف الذي أنشأته.
 
-لتكرار نهج في InTune:
+لتكرار نهج في Intune:
 
 1. سجل الدخول إلى مركز إدارة إدارة نقاط النهاية من Microsoft.
 
@@ -235,7 +235,7 @@ ms.locfileid: "65415959"
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[إدارة أمان نقطة النهاية في Microsoft InTune](/mem/intune/protect/endpoint-security)
+[إدارة أمان نقطة النهاية في Microsoft Intune](/mem/Intune/protect/endpoint-security)
 
 [أفضل الممارسات لتأمين Microsoft 365 لخطط الأعمال](../admin/security-and-compliance/secure-your-business-data.md)
 

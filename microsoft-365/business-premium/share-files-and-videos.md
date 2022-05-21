@@ -1,5 +1,5 @@
 ---
-title: مشاركة الملفات ومقاطع الفيديو
+title: مشاركة الملفات ومقاطع الفيديو في Microsoft Teams وSharepoint
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -24,17 +24,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: يمكنك مشاركة الملفات ومقاطع الفيديو داخل حملتك مع Microsoft Teams SharePoint.
-ms.openlocfilehash: 5c371dea1c1e9d5768743072052825f0810938b9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: يمكنك مشاركة الملفات ومقاطع الفيديو داخل حملتك مع Microsoft Teams SharePoint. يتضمن Microsoft 365 Business premium Teams وهي طريقة رائعة لمشاركة الملفات ومقاطع الفيديو بأمان.
+ms.openlocfilehash: b678bf1bf44b63e80ac4b8d0ea6dfc760eb510a8
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095111"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622368"
 ---
-# <a name="share-files-and-videos"></a>مشاركة الملفات ومقاطع الفيديو
+# <a name="share-files-and-videos-in-a-safe-environment"></a>مشاركة الملفات ومقاطع الفيديو في بيئة آمنة
 
-هناك شيء آخر يجب الانتباه إليه وهو التأكد من أن جميع أعضاء المؤسسة يتحكمون في من يمكنه عرض الملفات وتحريرها، وأن يتم تخزينها في موقع آمن مع تطبيق الأذونات المناسبة. يمكن للمستخدمين استخدام Microsoft Teams لتخزين الملفات، ثم مشاركة الملفات إما داخل الشركة أو الممارسة أو الحملة أو خارجها باستخدام Microsoft Teams أو عن طريق إرسال ارتباطات SharePoint. يعني إرسال ارتباط بدلا من مرفق بريد إلكتروني أنك تعرف من يقوم بعرض الملفات وتعديلها، ولا يمكن عرضها أو تعديلها دون إذن.
+هناك شيء آخر يجب الانتباه إليه وهو التأكد من أن جميع أعضاء المؤسسة يتحكمون في من يمكنه عرض الملفات وتحريرها، وأن يتم تخزينها في موقع آمن مع تطبيق الأذونات المناسبة. Microsoft 365 Business Premium يمكن للمستخدمين استخدام Microsoft Teams لتخزين الملفات، ثم مشاركة الملفات إما داخل الشركة أو خارجها، أو التدريب أو الحملة. يمكنك أيضا إرسال ارتباط Sharepoint. يعني إرسال ارتباط بدلا من مرفق بريد إلكتروني أنك تعرف من يقوم بعرض الملفات وتعديلها، ولا يمكن عرضها أو تعديلها دون إذن.
 
 ![رسم تخطيطي لنافذة Microsoft Teams، يظهر علامة التبويب "ملفات" و"الحصول على ارتباط" في القائمة.](../media/m365-democracy-teams-sharefiles.png)
 

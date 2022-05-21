@@ -2,7 +2,7 @@
 title: عرض تقارير أمان البريد الإلكتروني
 f1.keywords:
 - NOCSH
-ms.author: chrisdadrop
+ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b4b520675c5c8a89324791e560e8176db1cb9b2
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 6e57b797ab0b5d5eee90315ae9c3459fcba0a02c
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599332"
+ms.locfileid: "65621678"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>عرض تقارير أمان البريد الإلكتروني في مدخل Microsoft 365 Defender
 
@@ -53,16 +53,16 @@ ms.locfileid: "65599332"
 
 |تقرير مهمل و cmdlets مهملة|تقرير جديد و cmdlets|معرف مركز الرسائل|تاريخ|
 |---|---|:---:|:---:|
-|**تعقب عناوين URL** <p> Get-URLTrace|[تقرير حماية URL](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|يونيو 2021|
-|**تقرير البريد الإلكتروني المرسل والمستلم** <p> Get-MailTrafficReport <br> Get-MailDetailReport|[تقرير حالة الحماية من التهديدات](#threat-protection-status-report) <br> [تقرير حالة تدفق البريد](#mailflow-status-report) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|يونيو 2021|
-|**إعادة توجيه التقرير** <p> لا توجد أوامر cmdlets|[تقرير الرسائل التي تمت إعادة توجيهها تلقائيا في EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <p> لا توجد أوامر cmdlets|MC250533|يونيو 2021|
-|**تقرير أنواع ملفات خزينة المرفقات** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|يونيو 2021|
-|**تقرير الترتيب لرسالة خزينة المرفقات** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|يونيو 2021|
-|**البرامج الضارة التي تم الكشف عنها في تقرير البريد الإلكتروني** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|يونيو 2021|
-|**تقرير الكشف عن البريد العشوائي** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[تقرير حالة الحماية من التهديدات: عرض البيانات بواسطة البريد الإلكتروني \> العشوائي](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|أكتوبر 2021|
-|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|مايو 2022|
-|**تقرير قاعدة النقل Exchange** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange تقرير قاعدة النقل في EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|أبريل 2022|
-|Get-MailTrafficTopReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **ملاحظة**: لا يوجد بديل لقدرات تقارير التشفير في Get-MailTrafficTopReport.|MC315742|أبريل 2022|
+|**تعقب عناوين URL** <br/><br/> Get-URLTrace|[تقرير حماية URL](view-reports-for-mdo.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|يونيو 2021|
+|**تقرير البريد الإلكتروني المرسل والمستلم** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailReport|[تقرير حالة الحماية من التهديدات](#threat-protection-status-report) <br> [تقرير حالة تدفق البريد](#mailflow-status-report) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|يونيو 2021|
+|**إعادة توجيه التقرير** <br/><br/> لا توجد أوامر cmdlets|[تقرير الرسائل التي تمت إعادة توجيهها تلقائيا في EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <br/><br/> لا توجد أوامر cmdlets|MC250533|يونيو 2021|
+|**تقرير أنواع ملفات خزينة المرفقات** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|يونيو 2021|
+|**تقرير الترتيب لرسالة خزينة المرفقات** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|يونيو 2021|
+|**البرامج الضارة التي تم الكشف عنها في تقرير البريد الإلكتروني** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|يونيو 2021|
+|**تقرير الكشف عن البريد العشوائي** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[تقرير حالة الحماية من التهديدات: عرض البيانات بواسطة البريد الإلكتروني \> العشوائي](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|أكتوبر 2021|
+|Get-AdvancedThreatProtectionDocumentReport <br/><br/> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <br/><br/> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|مايو 2022|
+|**تقرير قاعدة النقل Exchange** <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange تقرير قاعدة النقل في EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|أبريل 2022|
+|Get-MailTrafficTopReport|[تقرير أفضل المرسلين والمستلمين](view-email-security-reports.md#top-senders-and-recipients-report) <br/><br/> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport) <br/><br/> **ملاحظة**: لا يوجد بديل لقدرات تقارير التشفير في Get-MailTrafficTopReport.|MC315742|أبريل 2022|
 
 ## <a name="compromised-users-report"></a>تقرير المستخدمين المخترقين
 

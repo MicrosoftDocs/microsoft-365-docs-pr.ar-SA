@@ -17,12 +17,12 @@ ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: تعرف على كيفية توفير علامة التبويب "تحديد" في eDiscovery (Premium) البيانات التي يمكن أن تساعدك في تحديد الحجم الصحيح لمجموعة مراجعة ملفات الحالة.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12f1dde5631283a4d0e02666ecab7267ee892225
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 50acdd36a536c417485d441e14c5d155f9de2f94
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090972"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621796"
 ---
 # <a name="decisions-based-on-relevance-results-in-ediscovery-premium"></a>تؤدي القرارات المستندة إلى الصلة إلى eDiscovery (Premium)
 
@@ -46,7 +46,7 @@ ms.locfileid: "65090972"
 
   - **الاسترجاع**: النسبة المئوية للملفات ذات الصلة في مجموعة المراجعة.
 
-  - **التالي ذو الصلة**: تكلفة مراجعة وتحديد ملف آخر ذي صلة غير موجود حاليا في مجموعة المراجعة.
+  - **التالي ذو الصلة**: تكلفة المراجعة وتحديد ملف آخر ذي صلة غير موجود حاليا في مجموعة المراجعة.
 
   - **التكلفة الإجمالية**: تكلفة مراجعة هذه النسبة المئوية لملفات الحالة. يمكن تعيين إعدادات معلمة التكلفة بواسطة مدير الحالة.
 

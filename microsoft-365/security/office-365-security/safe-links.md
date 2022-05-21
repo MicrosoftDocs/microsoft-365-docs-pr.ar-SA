@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: تعرف على خزينة حماية الارتباطات في Defender لـ Office 365 لحماية المؤسسة من التصيد الاحتيالي والهجمات الأخرى التي تستخدم عناوين URL الضارة. اكتشف Teams خزينة الارتباطات، وشاهد رسومات رسائل الارتباطات خزينة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0aef211b91ef406926720f8c50e4af457d07eaab
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 46ea33c872782845a8d9697a9abbddcef22e94fb
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535097"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623482"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>ارتباطات خزينة في Microsoft Defender لـ Office 365
 
@@ -62,6 +62,9 @@ ms.locfileid: "65535097"
 - **Microsoft Teams**: خزينة يتم التحكم أيضا في حماية الارتباطات للارتباطات في محادثات Teams أو الدردشات الجماعية أو من القنوات من خلال نهج الارتباطات خزينة.
 
   لمزيد من المعلومات حول خزينة حماية الارتباطات في Teams، راجع [إعدادات الارتباطات خزينة لمقطع Microsoft Teams](#safe-links-settings-for-microsoft-teams) لاحقا في هذه المقالة.
+
+  > [!NOTE]
+  > حاليا، لا تتوفر حماية الارتباطات خزينة Microsoft Teams في Microsoft 365 سحابة القطاع الحكومي High أو Microsoft 365 DoD.
 
 - **تطبيقات Office 365**: تتوفر خزينة حماية الارتباطات لتطبيقات Office 365 في تطبيقات سطح المكتب والأجهزة المحمولة والويب المدعومة. يمكنك **تكوين** حماية خزينة الارتباطات لتطبيقات Office 365 في الإعداد العمومي خارج نهج **الارتباطات خزينة**. للحصول على الإرشادات، راجع [تكوين الإعدادات العمومية لإعدادات ارتباطات خزينة في Microsoft Defender لـ Office 365](configure-global-settings-for-safe-links.md).
 
@@ -163,6 +166,8 @@ ms.locfileid: "65535097"
 
 > [!NOTE]
 > عند تشغيل خزينة حماية الارتباطات Teams أو إيقاف تشغيلها، قد يستغرق سريان التغيير ما يصل إلى 24 ساعة.
+>
+> حاليا، لا تتوفر حماية الارتباطات خزينة Microsoft Teams في Microsoft 365 سحابة القطاع الحكومي High أو Microsoft 365 DoD.
 
 تنطبق الإعدادات التالية في نهج الارتباطات خزينة التي تنطبق على الارتباطات في رسائل البريد الإلكتروني أيضا على الارتباطات في Teams:
 

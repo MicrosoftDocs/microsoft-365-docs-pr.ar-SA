@@ -354,12 +354,8 @@
           href: security-and-compliance/enable-modern-authentication.md
         - name: المتطلبات الأساسية لحماية البيانات
           href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
-        - name: زيادة الحماية من المخاطر
-          href: security-and-compliance/increase-threat-protection.md
         - name: التهديدات التي كشف عنها برنامج الحماية من الفيروسات من Microsoft Defender
           href: security-and-compliance/threats-detected-defender-av.md
-        - name: مراجعة التهديدات التي تم الكشف عنها واتخاذ إجراء
-          href: security-and-compliance/review-threats-take-action.md
         - name: إعداد نُهج التوافق
           href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
         - name: درجة الأمان
@@ -385,9 +381,6 @@
         - name: حماية التطبيقات الإعدادات الخاصة Windows 10 الكمبيوتر الشخصي
           href: devices/protection-settings-for-windows-10-devices.md
         - name: التحقق من صحة الإعدادات على Android أو iOS
-          href: devices/validate-settings-on-android-or-ios.md
-        - name: التحقق من صحة الإعدادات على Windows 10 الكمبيوتر الشخصي
-          href: devices/validate-settings-on-windows-10-pcs.md
         - name: Autopilot
           items:
             - name: إنشاء ملفات تعريف AutoPilot وتحريرها

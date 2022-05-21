@@ -17,13 +17,13 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: 'أحد متطلبات جميع حلول Microsoft Purview حماية البيانات: إنشاء تسميات الحساسية وتكوينها ونشرها لتصنيف بيانات مؤسستك وحمايتها.'
-ms.openlocfilehash: e35d6e317abc3fb32bb11a6bdf937f303212fc23
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+description: 'أحد متطلبات جميع حلول حماية البيانات في Microsoft Purview: إنشاء تسميات الحساسية وتكوينها ونشرها لتصنيف بيانات مؤسستك وحمايتها.'
+ms.openlocfilehash: 99b2b50ed00f470443956ff30ebb4940bbe1024d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302343"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622373"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>إنشاء وتكوين تسميات الحساسية ونهجها
 
@@ -31,7 +31,7 @@ ms.locfileid: "65302343"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-يتم تنفيذ جميع حلول حماية البيانات Microsoft Purview باستخدام [تسميات الحساسية](sensitivity-labels.md). لإنشاء هذه التسميات ونشرها، انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل توافق Microsoft Purview</a>.
+يتم تنفيذ جميع حلول حماية البيانات في Microsoft Purview باستخدام [أوصاف الحساسية](sensitivity-labels.md). لإنشاء هذه التسميات ونشرها، انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>.
 
 أولا، قم بإنشاء وتكوين تسميات الحساسية التي تريد توفيرها للتطبيقات والخدمات الأخرى. على سبيل المثال، التسميات التي تريد أن يراها المستخدمون ويطبقونها من تطبيقات Office.
 
@@ -43,9 +43,7 @@ ms.locfileid: "65302343"
 
 ## <a name="create-and-configure-sensitivity-labels"></a>إنشاء أوصاف الحساسية وتكوينها
 
-1. من [مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/)، حدد **SolutionsInformation**  >  protection
-    
-    إذا لم تتمكن من رؤية هذا الخيار على الفور، فحدد أولا **"إظهار الكل**".
+1. من [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/)، حدد **SolutionsInformation** >  **protectionLabels** > 
 
 2. في صفحة **التسميات** ، حدد **+ إنشاء تسمية** لبدء تكوين وصف الحساسية الجديد: 
     
@@ -62,7 +60,7 @@ ms.locfileid: "65302343"
 
     - إذا تم تحديد **مواقع & المجموعات**، يمكنك تكوين الإعدادات التي تنطبق على مجموعات Microsoft 365 ومواقع Teams SharePoint. إذا لم يتم تحديد هذا الخيار، فسترى الصفحة الأولى من هذه الإعدادات ولكن لا يمكنك تكوينها ولن تتوفر التسميات للمستخدمين لتحديد المجموعات والموقع.
 
-    للحصول على معلومات حول نطاق **أصول البيانات المهيأة** ، راجع [تسمية المحتوى تلقائيا في Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
+    للحصول على معلومات حول نطاق **أصول البيانات المهيأة**، راجع [تسمية المحتوى تلقائيا في Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 4. اتبع مطالبات التكوين لإعدادات التسمية.
 
@@ -128,11 +126,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>نشر أوصاف الحساسية عن طريق إنشاء نهج تسمية
 
-1. من [مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/)، حدد **SolutionsInformation**  >  protection
-    
-    إذا لم تتمكن من رؤية هذا الخيار على الفور، فحدد أولا **"إظهار الكل**".
+1. من [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/)، حدد **نهج** **SolutionsInformation** >  **protectionLabel** > 
 
-2. حدد علامة التبويب " **نهج التسمية** "، ثم **"نشر التسمية** " لبدء تكوين **"إنشاء نهج** ":
+2. في الصفحة " **نهج التسمية** "، حدد **"نشر التسمية** " لبدء تكوين **"إنشاء نهج** ":
     
     ![نشر التسميات.](../media/publish-sensitivity-labels-full.png)
     
@@ -152,7 +148,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     لمزيد من المعلومات حول هذه الإعدادات، راجع [ما يمكن أن تفعله نهج التسمية](sensitivity-labels.md#what-label-policies-can-do) من معلومات النظرة العامة واستخدام التعليمات في واجهة المستخدم للإعدادات الفردية.
 
-    بالنسبة للتسميات التي تم تكوينها **لأصول Microsoft Purview Data Map (معاينة):** لا تحتوي هذه التسميات على أي إعدادات نهج مقترنة.
+    بالنسبة للتسميات التي تم تكوينها **Microsoft Purview أصول مخطط البيانات (معاينة):** لا تحتوي هذه التسميات على أي إعدادات نهج مقترنة.
 
 6. كرر هذه الخطوات إذا كنت بحاجة إلى إعدادات نهج مختلفة لمستخدمين أو نطاقات مختلفة. على سبيل المثال، تريد تسميات إضافية لمجموعة من المستخدمين، أو تسمية افتراضية مختلفة لمجموعة فرعية من المستخدمين. أو، إذا قمت بتكوين تسميات لها نطاقات مختلفة.
 

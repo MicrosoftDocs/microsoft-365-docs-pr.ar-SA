@@ -19,19 +19,19 @@ ms.custom: ''
 description: يمكن للمسؤولين التعرف على كيفية عرض نهج ارتباطات خزينة وإعدادات ارتباطات خزينة العمومية في Microsoft Defender لـ Office 365 وإنشاءها وتعديلها وحذفها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 867d055c44ba0d0ae0b7b763bc556a06f16e5cd8
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 1d60be56f8dad960ca3f15484276324421c00426
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847061"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623023"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>إعداد نهج ارتباطات خزينة في Microsoft Defender لـ Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
-- [Microsoft Defender لـ Office 365 الخطة 1 والخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
@@ -78,7 +78,7 @@ ms.locfileid: "64847061"
 
   > [!NOTE]
   >
-  > - إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات المطلوبة في مدخل Microsoft 365 Defender _والأذونات_ للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع ["حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md)".
+  > - إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات المطلوبة في مدخل Microsoft 365 Defender _والأذونات_ للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md).
   . - تمنح مجموعة دور **إدارة المؤسسة للعرض فقط** في [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) أيضا حق الوصول للقراءة فقط إلى الميزة.
 
 - للحصول على الإعدادات الموصى بها لنهج الارتباطات خزينة، راجع [إعدادات نهج الارتباطات خزينة](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
@@ -125,6 +125,10 @@ ms.locfileid: "64847061"
        - **انتظر حتى يكتمل مسح URL قبل تسليم الرسالة**: حدد هذا الخيار لانتظار اكتمال مسح URL في الوقت الحقيقي قبل تسليم الرسالة.
      - **تطبيق ارتباطات خزينة إلى رسائل البريد الإلكتروني المرسلة داخل المؤسسة**: حدد هذا الخيار لتطبيق نهج الارتباطات خزينة على الرسائل بين المرسلين الداخليين والمستلمين الداخليين.
    - **حدد الإجراء الخاص بعناوين URL غير المعروفة أو التي يحتمل أن تكون ضارة داخل Microsoft Teams**: حدد "**تشغيل**" لتمكين حماية الارتباطات خزينة للارتباطات في Teams. لاحظ أن هذا الإعداد قد يستغرق ما يصل إلى 24 ساعة حتى يدخل حيز التنفيذ.
+
+     > [!NOTE]
+     > حاليا، لا تتوفر حماية الارتباطات خزينة Microsoft Teams في Microsoft 365 سحابة القطاع الحكومي High أو Microsoft 365 DoD.
+
    - **تعقب نقرات المستخدم**: اترك هذا الخيار محددا لتمكين نقرات المستخدم المتعقبة على عناوين URL في رسائل البريد الإلكتروني.
    - **اسمح للمستخدمين بالنقر فوق عنوان URL الأصلي**: قم بإلغاء تحديد هذا الخيار لمنع المستخدمين من النقر فوق عنوان URL الأصلي في [صفحات التحذير](safe-links.md#warning-pages-from-safe-links).
    - **لا تقم بإعادة كتابة عناوين URL التالية**: تسمح بالوصول إلى عناوين URL المحددة التي قد يتم حظرها بواسطة ارتباطات خزينة.

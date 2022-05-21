@@ -8,13 +8,13 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
-description: اتبع هذه الإرشادات لإنشاء صفحة "معلومات حولنا"، بما في ذلك اسم العمل والعنوان ورقم الهاتف وعنوان URL لموقع الويب والشعار وساعات العمل في Microsoft Bookings.
-ms.openlocfilehash: e15379a414182672bd7a0372ea5c55ffbc482b62
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: اتبع هذه الإرشادات لإنشاء صفحة "معلومات حولنا" مع اسم العمل والعنوان ورقم الهاتف وعنوان URL لموقع الويب والشعار وساعات العمل في Microsoft Bookings.
+ms.openlocfilehash: 5b80de4d94010a7e13b58289d6f63da13384d57d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469592"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622519"
 ---
 # <a name="enter-your-business-information-in-microsoft-bookings"></a>أدخل معلومات العمل في Microsoft Bookings
 

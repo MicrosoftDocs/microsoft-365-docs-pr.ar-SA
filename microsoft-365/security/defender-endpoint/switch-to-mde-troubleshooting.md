@@ -1,7 +1,7 @@
 ---
-title: استكشاف الأخطاء وإصلاحها عند التبديل إلى Microsoft Defender لنقطة النهاية
-description: تعرف على كيفية استكشاف المشاكل وإصلاحها عند التبديل إلى Microsoft Defender لنقطة النهاية.
-keywords: الترحيل، windows defender، حماية نقاط النهاية المتقدمة، الحماية من الفيروسات، الحماية من البرامج الضارة، الوضع السلبي، الوضع النشط، استكشاف الأخطاء وإصلاحها
+title: استكشاف المشكلات وإصلاحها عند التبديل إلى Microsoft Defender لنقطة النهاية
+description: تعرف على كيفية استكشاف المشكلات وإصلاحها عند التبديل إلى Microsoft Defender لنقطة النهاية.
+keywords: الترحيل، windows defender، حماية متقدمة لنقطة النهاية، مكافحة الفيروسات، مكافحة البرامج الضارة، الوضع السلبي، الوضع النشط، استكشاف الأخطاء وإصلاحها
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,37 +16,37 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 04/01/2022
+ms.date: 05/20/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 8334ce03bac5b7d4518433f83ab34d5f86e71339
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 9a1a95c927c4f659510c587d2bbc81ad4b9c1264
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634152"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621646"
 ---
-# <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>استكشاف الأخطاء وإصلاحها عند التبديل إلى Microsoft Defender لنقطة النهاية
+# <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>استكشاف المشكلات وإصلاحها عند التبديل إلى Microsoft Defender لنقطة النهاية
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-توفر هذه المقالة معلومات حول استكشاف الأخطاء وإصلاحها لمسؤولي الأمان الذين يعانون من مشاكل عند التبديل من حل حماية نقطة نهاية غير Microsoft إلى حل Microsoft Defender لنقطة النهاية.
+توفر هذه المقالة معلومات استكشاف الأخطاء وإصلاحها لمسؤولي الأمان الذين يواجهون مشاكل عند التبديل من حل حماية نقطة النهاية غير التابع ل Microsoft إلى Microsoft Defender لنقطة النهاية.
 
-## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>برنامج الحماية من الفيروسات من Microsoft Defender يتم إلغاء تثبيته على Windows Server
+## <a name="microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server"></a>يتم إلغاء تثبيت برنامج الحماية من الفيروسات من Microsoft Defender على خادم Windows
 
-عندما تقوم بالتبديل إلى Defender for Endpoint، تبدأ بحماية برامج الحماية من الفيروسات/البرامج الضارة غير من Microsoft في الوضع النشط. كجزء من عملية الإعداد، يمكنك تكوين برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي. في بعض الأحيان، قد يمنع حل مكافحة الفيروسات/مكافحة البرامج الضارة غير التابع ل Microsoft برنامج الحماية من الفيروسات من Microsoft Defender تشغيل على Windows Server. في الواقع، قد يبدو برنامج الحماية من الفيروسات من Microsoft Defender تمت إزالته من Windows Server.
+عند التبديل إلى Defender لنقطة النهاية، تبدأ بالحماية من الفيروسات/الحماية من البرامج الضارة غير التابعة ل Microsoft في الوضع النشط. كجزء من عملية الإعداد، يمكنك تكوين برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي. في بعض الأحيان، قد يمنع حل الحماية من الفيروسات/الحماية من البرامج الضارة غير التابع ل Microsoft برنامج الحماية من الفيروسات من Microsoft Defender من العمل على Windows Server. في الواقع، يمكن أن يبدو وكأنه تمت إزالة برنامج الحماية من الفيروسات من Microsoft Defender من Windows Server.
 
 لحل هذه المشكلة، اتبع الخطوات التالية:
 
-1. [أضف Microsoft Defender لنقطة النهاية إلى قائمة الاستثناء](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
+1. [إضافة Microsoft Defender لنقطة النهاية إلى قائمة الاستبعاد](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
 2. [تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي يدويا](#set-microsoft-defender-antivirus-to-passive-mode-manually).
 
-### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>إضافة Microsoft Defender لنقطة النهاية إلى قائمة الاستثناء
+### <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list"></a>إضافة Microsoft Defender لنقطة النهاية إلى قائمة الاستبعاد
 
-يجب تعريف بعض الاستثناءات ل Defender لنقطة النهاية في حل الحماية الحالي غير الخاص بنقطة نهاية Microsoft. تأكد من إضافة الاستثناءات التالية:
+يجب تعريف بعض الاستثناءات ل Defender لنقطة النهاية في حل حماية نقطة النهاية غير التابعة ل Microsoft. تأكد من إضافة الاستثناءات التالية:
 
 `C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`
 
@@ -60,41 +60,41 @@ ms.locfileid: "64634152"
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-manually"></a>تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي يدويا
 
-على Windows Server 2019 أو Windows Server أو الإصدار 1803 أو الأحدث أو Windows Server 2016 أو Windows Server 2012 R2، يجب تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي يدويا. يساعد هذا الإجراء على منع حدوث مشاكل بسبب تثبيت منتجات الحماية من الفيروسات المتعددة على خادم. يمكنك تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي باستخدام PowerShell أو نهج المجموعة أو مفتاح تسجيل.
+في Windows Server 2019 أو Windows Server أو الإصدار 1803 أو أحدث أو Windows Server 2016 أو Windows Server 2012 R2، يجب تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع الخامل يدويا. يساعد هذا الإجراء على منع المشاكل الناتجة عن تثبيت منتجات الحماية من الفيروسات المتعددة على خادم. يمكنك تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي باستخدام PowerShell أو نهج المجموعة أو مفتاح التسجيل.
 
 يمكنك تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي عن طريق تعيين مفتاح التسجيل التالي:
 
-المسار: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+مسار: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 
 الاسم: `ForceDefenderPassiveMode`
 
-اكتب: `REG_DWORD`
+نوع: `REG_DWORD`
 
-القيمة: `1`
+قيمه: `1`
 
 > [!NOTE]
-> لكي يعمل الوضع السلبي على نقاط النهاية التي تعمل Windows Server 2016 و Windows Server 2012 R2، يجب أن يتم تشغيل نقاط النهاية هذه باستخدام الإرشادات الموجودة في خوادم Windows[.](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)
+> لكي يعمل الوضع السلبي على نقاط النهاية التي تعمل Windows Server 2016 وخادم Windows 2012 R2، يجب إلحاق نقاط النهاية هذه باستخدام الإرشادات الموجودة في [خوادم Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
-لمزيد من المعلومات، راجع برنامج الحماية من الفيروسات من Microsoft Defender [على Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+لمزيد من المعلومات، راجع [برنامج الحماية من الفيروسات من Microsoft Defender في Windows](microsoft-defender-antivirus-windows.md).
 
-## <a name="microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode"></a>برنامج الحماية من الفيروسات من Microsoft Defender تبدو عالقة في الوضع غير النشط
+## <a name="microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode"></a>يبدو أن برنامج الحماية من الفيروسات من Microsoft Defender عالق في الوضع السلبي
 
-إذا برنامج الحماية من الفيروسات من Microsoft Defender في الوضع السلبي، ف قم بتعيينه إلى الوضع النشط يدويا باتباع الخطوات التالية:
+إذا كانت برنامج الحماية من الفيروسات من Microsoft Defender عالقة في الوضع السلبي، فقم بتعيينها إلى الوضع النشط يدويا باتباع الخطوات التالية:
 
-1. على جهاز Windows، افتح "محرر السجل" كمسؤول.
+1. على جهازك Windows، افتح "محرر السجل" كمسؤول.
 
-2. انتقل إلى `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
+2. الانتقال إل `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 
-3. قم بتعيين أو **تعريف REG_DWORD** يسمى `ForceDefenderPassiveMode`، ثم قم بتعيين قيمته إلى `0`.
+3. تعيين إدخال **REG_DWORD** يسمى `ForceDefenderPassiveMode`، وتعيين قيمته إلى `0`.
 
 4. إعادة تشغيل الجهاز.
 
 > [!IMPORTANT]
-> إذا كنت لا تزال تواجه مشكلة في برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع النشط بعد اتباع هذا الإجراء، [فاتصل بالدعم](../../admin/get-help-support.md).
+> إذا كنت لا تزال تواجه مشكلة في إعداد برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع النشط بعد اتباع هذا الإجراء، [فاتصل بالدعم](../../admin/get-help-support.md).
 
 ## <a name="i-am-having-trouble-re-enabling-microsoft-defender-antivirus-on-windows-server-2016"></a>أواجه مشكلة في إعادة تمكين برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server 2016
 
-إذا كنت تستخدم حلا غير Microsoft antivirus/antimalware على Windows Server 2016، فقد يتطلب الحل الحالي برنامج الحماية من الفيروسات من Microsoft Defender تعطيل أو إلغاء تثبيته. يمكنك استخدام الأداة المساعدة Command-Line[ الحماية](command-line-arguments-microsoft-defender-antivirus.md) من البرامج الضارة لإعادة تمكين برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server 2016.
+إذا كنت تستخدم حل الحماية من الفيروسات/الحماية من البرامج الضارة غير التابع ل Microsoft على Windows Server 2016، فقد يتطلب الحل الحالي برنامج الحماية من الفيروسات من Microsoft Defender ليتم تعطيله أو إلغاء تثبيته. يمكنك استخدام[ الأداة المساعدة Command-Line للحماية من البرامج الضارة](command-line-arguments-microsoft-defender-antivirus.md) لإعادة تمكين برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server 2016.
 
 1. كمسؤول محلي على الخادم، افتح موجه الأوامر.
 
@@ -104,6 +104,6 @@ ms.locfileid: "64634152"
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [برنامج الحماية من الفيروسات من Microsoft Defender التوافق مع منتجات الأمان الأخرى](microsoft-defender-antivirus-compatibility.md)
+- [التوافق برنامج الحماية من الفيروسات من Microsoft Defender مع منتجات الأمان الأخرى](microsoft-defender-antivirus-compatibility.md)
 
-- [أدوات وأساليب التكوين للأجهزة Windows في Defender for Endpoint](configure-endpoints.md) 
+- [أدوات وأساليب الإلحاق للأجهزة Windows في Defender لنقطة النهاية](configure-endpoints.md) 

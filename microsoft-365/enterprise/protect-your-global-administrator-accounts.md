@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: توفر هذه المقالة معلومات حول حماية الوصول المتميز إلى مستأجر Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 34e4665067640ec625501b15c12c1c2e80d5ffb4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9719908fcbe8aa453ac07788ee7771a39242d4e
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095587"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622570"
 ---
 # <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>الخطوة 2. حماية حساباتك المتميزة Microsoft 365
 
@@ -58,7 +58,7 @@ ms.locfileid: "65095587"
 
 تحتاج أيضا إلى إنشاء [حسابات الوصول في حالات الطوارئ](/azure/active-directory/roles/security-emergency-access) لمنع تأمينها عن طريق الخطأ من Azure AD.
 
-يمكنك حماية حساباتك المتميزة بشكل أكبر باستخدام إدارة الهويات المتميزة Azure AD (PIM) لتعيين أدوار المسؤول عند الطلب وفي الوقت المناسب. 
+يمكنك حماية حساباتك المتميزة باستخدام Azure AD إدارة الهويات المتميزة (PIM) لتعيين أدوار المسؤول عند الطلب وفي الوقت المناسب. 
  
 ## <a name="2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-privileged-accounts"></a>2. تكوين المصادقة متعددة العوامل لحساباتك المتميزة Microsoft 365 المخصصة
 
@@ -80,7 +80,7 @@ ms.locfileid: "65095587"
     
 إذا كنت مؤسسة أكبر تستخدم نموذج هوية مختلطة Microsoft 365، فلديك المزيد من خيارات التحقق. إذا كانت البنية الأساسية للأمان موجودة بالفعل لأسلوب مصادقة ثانوي أقوى، [فقم بإعداد المصادقة متعددة العوامل](../admin/security-and-compliance/set-up-multi-factor-authentication.md) وتكوين كل حساب مميز مخصص لأسلوب التحقق المناسب.
   
-إذا لم تكن البنية الأساسية للأمان لأسلوب التحقق الأقوى المطلوب في مكانها وتعمل من أجل المصادقة متعددة العوامل Microsoft 365، نوصي بشدة بتكوين حسابات مميزة مخصصة باستخدام المصادقة متعددة العوامل باستخدام تطبيق Microsoft Authenticator أو مكالمة هاتفية أو رمز التحقق من صحة رسالة نصية تم إرساله إلى هاتف ذكي لحساباتك المتميزة كإجراء أمان مؤقت. لا تترك حساباتك المتميزة المخصصة دون الحماية الإضافية التي توفرها المصادقة متعددة العوامل.
+إذا لم تكن البنية الأساسية للأمان لأسلوب التحقق الأقوى المطلوب في مكانها وتعمل من أجل Microsoft 365 MFA، نوصي بشدة بتكوين حسابات مميزة مخصصة باستخدام المصادقة متعددة العوامل باستخدام تطبيق Microsoft Authenticator أو مكالمة هاتفية أو رمز التحقق من صحة رسالة نصية تم إرساله إلى هاتف ذكي لحساباتك المتميزة كإجراء أمان مؤقت. لا تترك حساباتك المتميزة المخصصة دون الحماية الإضافية التي توفرها المصادقة متعددة العوامل.
   
 لمزيد من المعلومات، راجع [MFA Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   
@@ -97,15 +97,15 @@ ms.locfileid: "65095587"
   
 ### <a name="privileged-access-workstation"></a>محطة عمل الوصول المتميز
 
-للتأكد من أن تنفيذ المهام ذات الامتيازات العالية آمن قدر الإمكان، استخدم محطة عمل الوصول المتميزة (PAW). محطة العمل ذات الوصول المتميز هي كمبيوتر مخصص يستخدم فقط لمهام التكوين الحساسة، مثل تكوين Microsoft 365 الذي يتطلب حسابا مميزا. نظرا لعدم استخدام هذا الكمبيوتر يوميا لاستعراض الإنترنت أو البريد الإلكتروني، فهو محمي بشكل أفضل من هجمات الإنترنت والتهديدات.
+للتأكد من أن تنفيذ المهام ذات الامتيازات العالية آمن قدر الإمكان، استخدم محطة عمل الوصول المتميزة (PAW). محطة العمل ذات الوصول المتميز هي كمبيوتر مخصص يستخدم فقط لمهام التكوين الحساسة، مثل تكوين Microsoft 365 الذي يتطلب حسابا مميزا. نظرا لأن هذا الكمبيوتر لا يستخدم يوميا لاستعراض الإنترنت أو البريد الإلكتروني، فهو محمي بشكل أفضل من هجمات الإنترنت والتهديدات.
   
 للحصول على إرشادات حول كيفية إعداد محطة العمل ذات الوصول المتميز، راجع [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices).
 
-لتمكين Azure PIM لحسابات مستأجر Azure AD وحسابات المسؤول، راجع [الخطوات لتكوين PIM](/azure/active-directory/active-directory-privileged-identity-management-configure).
+لتمكين Azure PIM لحسابات المستأجر والمسؤول Azure AD، راجع [الخطوات لتكوين PIM](/azure/active-directory/active-directory-privileged-identity-management-configure).
 
 لتطوير مخطط شامل لتأمين الوصول المتميز ضد المهاجمين عبر الإنترنت، راجع [تأمين الوصول المتميز لعمليات النشر المختلطة والسحابية في Azure AD](/azure/active-directory/admin-roles-best-practices).
 
-### <a name="azure-ad-privileged-identity-management"></a>إدارة الهويات المتميزة Azure AD
+### <a name="azure-ad-privileged-identity-management"></a>Azure AD إدارة الهويات المتميزة
 
 بدلا من تعيين دور مسؤول لحساباتك المتميزة بشكل دائم، يمكنك استخدام Azure AD PIM لتمكين التعيين في الوقت المناسب عند الطلب لدور المسؤول عند الحاجة.
   
@@ -117,7 +117,7 @@ ms.locfileid: "65095587"
   
 لمزيد من المعلومات، اطلع على:
 
-- [إدارة الهويات المتميزة Azure AD](/azure/active-directory/active-directory-privileged-identity-management-configure).
+- [Azure AD إدارة الهويات المتميزة](/azure/active-directory/active-directory-privileged-identity-management-configure).
 - [تأمين الوصول المتميز لعمليات النشر المختلطة والسحابية في Azure AD](/azure/active-directory/roles/security-planning)
   
 

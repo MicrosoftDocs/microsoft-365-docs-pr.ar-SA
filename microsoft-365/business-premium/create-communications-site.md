@@ -1,5 +1,5 @@
 ---
-title: إنشاء موقع اتصالات SharePoint
+title: إنشاء موقع اتصالات SharePoint في Teams Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -23,15 +23,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: تعرف على سبب وكيفية إنشاء موقع اتصالات SharePoint لحملتك أو أعمالك مع Microsoft 365، وحماية الفريق من الهجمات الإلكترونية والتهديدات من البرامج الضارة والتهديدات الأخرى بسبب مشاركة الملفات بشكل غير صحيح.
-ms.openlocfilehash: 72794c9aac0f1409675af0e3fa40c8cd1881f73a
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: تعرف على سبب وكيفية إنشاء موقع اتصالات SharePoint لحملتك أو أعمالك مع Microsoft 365 Business Premium، وحماية الفريق من الهجمات الإلكترونية والتهديدات من البرامج الضارة والتهديدات الأخرى بسبب مشاركة الملفات بشكل غير صحيح.
+ms.openlocfilehash: 4c8fa8a197a7fb6014833dc9701aa7f354c2e5a0
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319517"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623418"
 ---
-# <a name="create-a-communications-site-in-sharepoint"></a>إنشاء موقع اتصالات في SharePoint
+# <a name="create-a-communications-site"></a>إنشاء موقع اتصالات
 
 هناك طريقة رائعة للتواصل مع الأولويات ومشاركة مستندات الاستراتيجية وتسليط الضوء على الأحداث القادمة وهي استخدام موقع اتصالات في SharePoint، وهذا هو كل ما تتعلق به هذه المهمة. مواقع الاتصالات هي لمشاركة الأشياء على نطاق واسع في جميع أعمالك أو حملتك &mdash; إنه موقع الاستراتيجية الداخلية والغرفة التكتيكية. 
 

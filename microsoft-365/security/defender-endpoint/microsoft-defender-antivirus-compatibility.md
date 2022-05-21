@@ -14,16 +14,15 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 04/19/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 3bae6326fca5cefc921cb24b1a16180da2a2f52f
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5a38ed6fbdcebf54dcd8bc34458733b5edefb850
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415118"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623161"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>التوافق برنامج الحماية من الفيروسات من Microsoft Defender مع منتجات الأمان الأخرى
 
@@ -34,8 +33,6 @@ ms.locfileid: "65415118"
 
 **الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 يتم تثبيت برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا على نقاط النهاية التي تعمل بالإصدارات التالية من Windows:
 
@@ -206,7 +203,7 @@ ms.locfileid: "65415118"
  |  ذوي الاحتياجات الخاصه <br/><br/> او <br/><br/> الغاء تثبيت  |  عند تعطيله أو إلغاء تثبيته، لا يتم استخدام برنامج الحماية من الفيروسات من Microsoft Defender كتطبيق الحماية من الفيروسات. لا يتم مسح الملفات ضوئيا ولا تتم معالجة التهديدات. <br/><br/> لا يوصى بتعطيل برنامج الحماية من الفيروسات من Microsoft Defender أو إلغاء تثبيتها بشكل عام؛ إذا أمكن، فاحتفظ برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل إذا كنت تستخدم حل مكافحة البرامج الضارة/الحماية من الفيروسات غير التابع ل Microsoft. <br/><br/> في الحالات التي يتم فيها تعطيل برنامج الحماية من الفيروسات من Microsoft Defender تلقائيا، يمكن إعادة تمكينه تلقائيا إذا انتهت صلاحية منتج الحماية من الفيروسات/الحماية من البرامج الضارة غير التابع ل Microsoft أو توقف عن توفير الحماية في الوقت الحقيقي من الفيروسات أو البرامج الضارة أو التهديدات الأخرى. تساعد إعادة التمكين التلقائي برنامج الحماية من الفيروسات من Microsoft Defender على ضمان الحفاظ على الحماية من الفيروسات على نقاط النهاية الخاصة بك. <br/><br/> يمكنك أيضا استخدام [فحص دوري محدود](limited-periodic-scanning-microsoft-defender-antivirus.md)، والذي يعمل مع محرك برنامج الحماية من الفيروسات من Microsoft Defender للتحقق بشكل دوري من التهديدات إذا كنت تستخدم تطبيق الحماية من الفيروسات غير Microsoft.  | 
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -218,6 +215,5 @@ ms.locfileid: "65415118"
 ## <a name="see-also"></a>راجع أيضًا
 
 - [برنامج الحماية من الفيروسات من Microsoft Defender على عملاء Windows](microsoft-defender-antivirus-in-windows-10.md)
-- [برنامج الحماية من الفيروسات من Microsoft Defender على خادم Windows](microsoft-defender-antivirus-on-windows-server.md)
 - [الكشف التلقائي والاستجابة على النقط النهائية في وضع الحظر](edr-in-block-mode.md)
 - [التعرّف على تفادي فقدان بيانات نقطة النهاية](/microsoft-365/compliance/endpoint-dlp-learn-about)

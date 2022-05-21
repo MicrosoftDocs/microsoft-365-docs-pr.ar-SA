@@ -30,12 +30,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: سجل الدخول باستخدام حساب مسؤول Microsoft 365 لإعادة تعيين كلمات المرور للمستخدمين عندما يكون لديك اشتراك Microsoft 365 للأعمال.
-ms.openlocfilehash: 0ce656355b83077809c7082a1bf0d34e8a5439cd
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 4c2c4bc1409a49b0f0bb26217fd349348331e95b
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436240"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620965"
 ---
 # <a name="reset-passwords-in-microsoft-365-for-business"></a>إعادة تعيين كلمات المرور في Microsoft 365 للأعمال
 
@@ -49,7 +49,7 @@ ms.locfileid: "65436240"
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-هذه المقالة مخصصة للأشخاص الذين يقومون بتعيين نهج انتهاء صلاحية كلمة المرور للأعمال أو المؤسسة التعليمية أو المؤسسات غير الربحية. لإكمال هذه الخطوات، تحتاج إلى تسجيل الدخول باستخدام حساب مسؤول Microsoft 365. [ما هو حساب المسؤول؟] (نظرة عامة على مركز مسؤولي Microsoft 365](.. /نظرة عامة على المسؤول/admin-center-overview.md).
+هذه المقالة مخصصة للأشخاص الذين يقومون بتعيين نهج انتهاء صلاحية كلمة المرور للأعمال أو المؤسسة التعليمية أو المؤسسات غير الربحية. لإكمال هذه الخطوات، تحتاج إلى تسجيل الدخول باستخدام حساب مسؤول Microsoft 365. [نظرة عامة في مركز مسؤولي Microsoft 365](../admin-overview/admin-center-overview.md).
 
 يجب أن تكون [مسؤولا عموميا أو مسؤول كلمة مرور](about-admin-roles.md) لتنفيذ هذه الخطوات.
 

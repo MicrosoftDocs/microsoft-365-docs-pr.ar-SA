@@ -14,18 +14,18 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 034a12d1f1354ac63778d142d1bc09848e2f9911
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 864d67aeaa84713b1b2126b017fadacd0e43dc7a
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419891"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623000"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>تكوين الاستثناءات والتحقق من صحتها استنادا إلى ملحق الملف وموقع المجلد
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "65419891"
 - [استثناءات الملفات التي يتم فتحها بواسطة العمليات](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> لا تنطبق الاستثناءات برنامج الحماية من الفيروسات من Microsoft Defender على قدرات Microsoft Defender لنقطة النهاية الأخرى، بما في ذلك [الكشف عن تهديدات نقاط النهاية والرد عليها ( الكشف التلقائي والاستجابة على النقط النهائية)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) [وقواعد تقليل الأجزاء المعرضة للهجوم (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) [والوصول إلى المجلد المتحكم به](/microsoft-365/security/defender-endpoint/controlled-folders). لا يزال بإمكان الملفات التي تستثنيها باستخدام الأساليب الموضحة في هذه المقالة تشغيل تنبيهات الكشف التلقائي والاستجابة على النقط النهائية وغيرها من عمليات الكشف.
+> لا تنطبق استثناءات برنامج الحماية من الفيروسات من Microsoft Defender على قدرات Microsoft Defender لنقطة النهاية الأخرى، مثل [قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) [والوصول إلى المجلدات الخاضعة للرقابة](/microsoft-365/security/defender-endpoint/controlled-folders). لا يزال بإمكان الملفات التي تستثنيها باستخدام الأساليب الموضحة في هذه المقالة تشغيل تنبيهات الكشف التلقائي والاستجابة على النقط النهائية وغيرها من عمليات الكشف.
 > لاستبعاد الملفات على نطاق واسع، أضفها إلى [المؤشرات المخصصة](/microsoft-365/security/defender-endpoint/manage-indicators) Microsoft Defender لنقطة النهاية.
 
 ## <a name="before-you-begin"></a>قبل البدء
@@ -104,7 +104,7 @@ ms.locfileid: "65419891"
 
 1. على كمبيوتر إدارة نهج المجموعة، افتح [وحدة تحكم إدارة نهج المجموعة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))، وانقر بزر الماوس الأيمن فوق العنصر نهج المجموعة الذي تريد تكوينه وحدد **"تحرير**".
 
-2. في **نهج المجموعة انتقل محرر الإدارة** إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
+2. في **محرر إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
 
 3. قم بتوسيع الشجرة إلى **مكونات** \> Windows **برنامج الحماية من الفيروسات لـ Windows Defender** \> **الاستثناءات**.
 
@@ -379,7 +379,7 @@ $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt"
 يمكنك أيضا نسخ السلسلة إلى ملف نصي فارغ ومحاولة حفظها باسم الملف أو في المجلد الذي تحاول استبعاده.
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

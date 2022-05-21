@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 5785d21d-1abd-4571-a04a-8cc5a65ca9b5
 ROBOTS: NOINDEX
 description: تعرف على كيفية حظر الوصول إلى Microsoft 365 عند مغادرة موظف لمؤسستك.
-ms.openlocfilehash: 75e824a73e6a7778952d4ab27f82c0b41251af32
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 899e1db9731110c4886e1b47a4778a6c547c6198
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467877"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621407"
 ---
 # <a name="compare-ways-to-block-access-to-microsoft-365"></a>مقارنة طرق حظر الوصول إلى Microsoft 365
 

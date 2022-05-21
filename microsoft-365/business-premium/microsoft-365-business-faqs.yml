@@ -13,13 +13,13 @@ metadata:
   ms.localizationpriority: medium
   audience: microsoft-business
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
-  ms.date: 02/25/2022
-  ms.openlocfilehash: 16459c60b90a695a1db0c52366d273ba453a31f4
-  ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+  ms.date: 05/20/2022
+  ms.openlocfilehash: 0efa61f949a295ac85ebcea7e6fbff92d2e04a15
+  ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 05/03/2022
-  ms.locfileid: "65174984"
+  ms.lasthandoff: 05/20/2022
+  ms.locfileid: "65622419"
 title: Microsoft 365 Business Premium الأسئلة المتداولة
 summary: ''
 sections:
@@ -92,7 +92,7 @@ sections:
       - يسمح **إدارة الجهاز لأجهزة الكمبيوتر الشخصية Windows 10** للشركات باختيار تعيين قدرات وفرضها مثل الحماية برنامج الحماية من الفيروسات من Microsoft Defender للبرامج الضارة والتحديثات التلقائية وإيقاف تشغيل الشاشات بعد فترة زمنية محددة. بالإضافة إلى ذلك، يمكن مسح أجهزة Windows 10 المفقودة أو المسروقة بالكامل من تطبيقات الأعمال والبيانات من خلال مركز الإدارة.
 
 
-      - **يساعد إدارة الجهاز ل iOS وAndroid & ميزات macOS** الشركات على إدارة نظام بيئي للأجهزة المتنوعة بشكل آمن يتضمن أجهزة iOS وAndroid Windows وmacOS.
+      - **إدارة الجهاز ل iOS، تساعد ميزات & macOS Android** الشركات على إدارة نظام بيئي للأجهزة المتنوعة بشكل آمن يتضمن أجهزة iOS وAndroid Windows وأجهزة macOS.
   - question: كيف تساعد Microsoft 365 Business Premium في حماية أجهزة الكمبيوتر في مؤسستي من الهجمات الضارة؟
     answer: >
       تتم حماية أجهزة الكمبيوتر التي تتم إدارتها باستخدام Microsoft 365 Business Premium باستخدام برنامج الحماية من الفيروسات من Microsoft Defender، وهو "لا". ميزة الحماية من الفيروسات على Windows 10، ما يحمي المزيد من أجهزة الكمبيوتر من الفيروسات والبرامج الضارة وبرامج التجسس والتهديدات الأخرى أكثر من أي حل آخر. باستخدام Microsoft 365 Business Premium، يمكن للمؤسسات ضمان تشغيل الحماية برنامج الحماية من الفيروسات من Microsoft Defender وتحديثها دائما على جميع أجهزتها Windows 10.
@@ -127,21 +127,21 @@ sections:
     answer: >
       المسار الأكثر مباشرة لنشر Microsoft 365 Business Premium ناجح هو التفاعل مع شريك Microsoft. يتمتعون بتدريب وخبرة واسعة مع مجموعة واسعة من سيناريوهات العملاء، كما أنهم مجهزون بشكل أفضل لفهم بيئتك واحتياجاتك.
   - question: هل تتضمن Microsoft 365 Business Premium القدرات الكاملة Microsoft Intune؟
-    answer: نعم، Microsoft 365 Business Premium المشتركين مرخصين لاستخدام قدرات Intune الكاملة لنظام التشغيل iOS وAndroid وmacOS وغيرها من إدارة الأجهزة عبر النظام الأساسي. يمكن إدارة الميزات غير المتوفرة في وحدة تحكم الإدارة المبسطة في Microsoft 365 Business Premium، مثل إدارة تطبيقات الجهات الخارجية وتكوين ملفات تعريف Wi-Fi وشهادات VPN في وحدة تحكم Intune الكاملة.
+    answer: نعم، Microsoft 365 Business Premium المشتركين مرخصون لاستخدام قدرات Intune الكاملة لنظامي التشغيل iOS وAndroid macOS وغيرها من إدارة الأجهزة عبر النظام الأساسي. يمكن إدارة الميزات غير المتوفرة في وحدة تحكم الإدارة المبسطة في Microsoft 365 Business Premium، مثل إدارة تطبيقات الجهات الخارجية وتكوين ملفات تعريف Wi-Fi وشهادات VPN في وحدة تحكم Intune الكاملة.
   - question: هل يأتي Azure Active Directory (Azure AD) Premium P1 مع Microsoft 365 Business Premium؟
     answer: نعم، Azure AD Premium P1 مضمن مع Premium Microsoft Business.
   - question: هل تسمح Microsoft 365 Business Premium للعملاء بإدارة أجهزة Mac؟
-    answer: يساعدك Intune على إدارة أجهزة iOS وAndroid Windows وmacOS بأمان.
+    answer: يساعدك Intune على إدارة أجهزة iOS وAndroid Windows macOS بشكل آمن.
   - question: ما هو Windows AutoPilot؟
     answer: >
       Windows AutoPilot هي خدمة تبسط نشر أجهزة الكمبيوتر Windows 10 الجديدة. يمكن إجراء هذه العملية عندما يقوم المستخدم النهائي بتسجيل الدخول إلى Microsoft 365 Business Premium لأول مرة&mdash; من خلال تكنولوجيا المعلومات التي تقوم بلمس الجهاز&mdash; من خلال الاستفادة من عناصر التحكم في الإدارة المركزية Microsoft 365 Business Premium. يمكنك أيضا استخدام Windows AutoPilot لأجهزة الكمبيوتر الموجودة التي تعمل Windows 10 Professional Creators Update (أو أحدث) وتم إعادة تعيين المصنع. يمكن العثور على تفاصيل حول Windows AutoPilot في [منشور مدونة يونيو 2017 هذا](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/).
 - name: التوافق
   questions:
   - question: هل يمكنني إضافة Office 365 الوظائف الإضافية إلى Microsoft 365 Business Premium؟
-    answer: يمكن إضافة كافة الوظائف الإضافية التي يمكن إضافتها إلى Microsoft 365 Business Standard إلى Microsoft 365 Business Premium. وهذا يعني أنه يمكنك شراء أمان التطبيقات على السحابة لـ Office 365 والامتثال المتقدم وتحليل ذكي للمخاطر وMyAnalytics Power BI Pro والمؤتمرات الصوتية.
+    answer: يمكن إضافة كافة الوظائف الإضافية التي يمكن إضافتها إلى Microsoft 365 Business Standard إلى Microsoft 365 Business Premium. وهذا يعني أنه يمكنك شراء أمان التطبيقات على السحابة لـ Office 365 والامتثال المتقدم وتحليل ذكي للمخاطر وMyAnalytics Power BI Pro المؤتمرات الصوتية.
   - question: هل يمكنني إضافة نظام الهاتف وخطط الاتصال إلى Microsoft 365 Business Premium؟
     answer: >
-      نعم، يمكنك شراء اشتراك Business Voice. [Business Voice](/microsoftteams/business-voice/whats-business-voice) هو حل هتفية مصمم للشركات الصغيرة والمتوسطة التي يصل عددها إلى 300 مستخدم ويجمع نظام الهاتف والمؤتمرات الصوتية وخطة مكالمات محلية والمزيد. تتضمن نظام الهاتف القدرات التي ستحصل عليها البريد الصوتي ومعرف المتصل وحديقة المكالمات وإعادة توجيه المكالمات والردود التلقائية وقوائم انتظار المكالمات. <br> لمعرفة ما إذا كان Business Voice متوفرا في بلدك أو منطقتك، راجع [البلد والمنطقة المتوفرة ل Business Voice](/microsoftteams/business-voice/country-region-availability). للحصول على معلومات التسعير، راجع [Pricing for Business Voice](https://go.microsoft.com/fwlink/?linkid=2127221).
+      نعم، يمكنك شراء اشتراك Business Voice. [Business Voice](/microsoftteams/business-voice/whats-business-voice) هو حل هتفية مصمم للشركات الصغيرة والمتوسطة التي يصل عددها إلى 300 مستخدم ويجمع نظام الهاتف المؤتمرات الصوتية وخطة مكالمات محلية والمزيد. تتضمن نظام الهاتف القدرات التي ستحصل عليها البريد الصوتي ومعرف المتصل وحديقة المكالمات وإعادة توجيه المكالمات والردود التلقائية وقوائم انتظار المكالمات. <br> لمعرفة ما إذا كان Business Voice متوفرا في بلدك أو منطقتك، راجع [البلد والمنطقة المتوفرة ل Business Voice](/microsoftteams/business-voice/country-region-availability). للحصول على معلومات التسعير، راجع [Pricing for Business Voice](https://go.microsoft.com/fwlink/?linkid=2127221).
   - question: هل يمكن للعملاء Microsoft 365 Business Premium استخدام Microsoft Defender لنقطة النهاية؟
     answer: >
       نعم، تتوفر Microsoft Defender لنقطة النهاية كوظيفة إضافية Microsoft 365 Business Premium عند شرائها من [موفر حلول الحوسبة السحابية من Microsoft](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider).

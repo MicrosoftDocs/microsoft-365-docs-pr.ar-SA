@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9c195f5656db1b7bc971087665a83df32bace7c6
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 7e9e074e4aeaadf041a70baed1d741ea95a9f792
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188152"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622619"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>قم بإدارة Microsoft Defender لإعدادات تكوين نقطة النهاية على الأجهزة باستخدام دارة نقاط النهاية في Microsoft
 
@@ -43,7 +43,8 @@ ms.locfileid: "65188152"
 
 لمزيد من المعلومات حول إدارة تكوين الأمان، بما في ذلك المتطلبات الأساسية والأنظمة الأساسية المدعومة والمزيد، راجع [إدارة Microsoft Defender لنقطة النهاية على الأجهزة التي تحتوي على إدارة نقاط النهاية من Microsoft](/mem/intune/protect/mde-security-integration).
 
-
+شاهد هذا الفيديو لمعرفة كيفية استخدام إدارة نقاط النهاية من Microsoft لإدارة تكوين الأمان Microsoft Defender لنقطة النهاية.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVq]
 
 [!INCLUDE [Prerequisites](../../includes/security-config-mgt-prerequisites.md)]
 

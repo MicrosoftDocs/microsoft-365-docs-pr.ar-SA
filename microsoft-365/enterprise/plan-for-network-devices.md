@@ -18,18 +18,18 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'ملخص: يصف اعتبارات سعة الشبكة ومسرعات WAN وأجهزة موازنة التحميل المستخدمة للاتصال Office 365.'
-ms.openlocfilehash: 58c4225d9d381dabedfa86d81ced7f5922932058
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b79e73f292ecf1db38a90364db3d2e475723158
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100314"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622823"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>التخطيط لأجهزة الشبكة التي تتصل بخدمات Office 365
 
 *تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
   
-قد يكون لبعض أجهزة الشبكة قيود على عدد الجلسات المتزامنة المعتمدة. بالنسبة للمؤسسات التي لديها أكثر من 2000 مستخدم، نوصي بمراقبة أجهزة الشبكة الخاصة بها للتأكد من أنها قادرة على التعامل مع حركة مرور خدمة Office 365 الإضافية. يمكن أن يساعدك برنامج مراقبة بروتوكول إدارة الشبكة البسيط (SNMP) على القيام بذلك.
+قد يكون لبعض أجهزة الشبكة قيود على عدد الجلسات المتزامنة المعتمدة. بالنسبة إلى المؤسسات التي لديها أكثر من 2000 مستخدم، نوصي بمراقبة أجهزة الشبكة الخاصة بها للتأكد من أنها قادرة على التعامل مع حركة مرور خدمة Office 365 الإضافية. يمكن أن يساعدك برنامج مراقبة بروتوكول إدارة الشبكة البسيط (SNMP) على القيام بذلك.
 
 تشكل هذه المقالة جزءا من [تخطيط الشبكة وضبط الأداء Office 365](./network-planning-and-performance.md).
 
@@ -39,7 +39,7 @@ ms.locfileid: "65100314"
   
 - [استكشاف أخطاء تسجيل الدخول عبر الإنترنت Skype for Business وإصلاحها للمسؤولين](/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
-- [لا يمكنك الاتصال Skype for Business، أو أن بعض الميزات لا تعمل، لأن جدار الحماية المحلي يحظر الاتصال](https://go.microsoft.com/fwlink/p/?LinkID=243625)
+- [لا يمكنك الاتصال Skype for Business، أو أن بعض الميزات لا تعمل، لأن جدار الحماية المحلي يمنع الاتصال](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
 > [!NOTE]
 > في حين أن العديد من هذه الإعدادات خاصة Skype for Business، فإن الإرشادات العامة حول تكوين الشبكة مفيدة لجميع خدمات Office 365.
