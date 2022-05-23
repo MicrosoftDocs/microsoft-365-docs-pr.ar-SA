@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: فهم البنية الأساسية للبنية الأساسية ل Contoso المحلية تكنولوجيا المعلومات وكيفية تلبية احتياجات الشركة التجارية من قبل Microsoft 365 للمؤسسة.
-ms.openlocfilehash: 5dc47898aa0499bc4b62d22d37689d872116a9e7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 793c867d47d76a03efad707d8447e04538c8ebb8
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101348"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637484"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>احتياجات الأعمال والبنية الأساسية ل Contoso تكنولوجيا المعلومات
 
@@ -121,10 +121,10 @@ ms.locfileid: "65101348"
 |  | تحسين الإنتاجية للعاملين عن بعد والهاتف المحمول | Microsoft 365 أحمال العمل والبيانات المستندة إلى السحابة |
 |  | زيادة الإبداع والابتكار | Windows Ink، Cortana في العمل، PowerPoint |
 | الأمان |  |  |
-|  | إدارة الوصول & الهوية | حسابات مسؤول عمومي مخصصة مع Azure AD Multi-Factor Authentication (MFA) وAzure AD إدارة الهويات المتميزة (PIM) <br> المصادقة متعددة العوامل (MFA) لجميع حسابات المستخدمين <br> الوصول المشروط <br> قارئ الأمان <br> Windows Hello <br> Windows Credential Guard |
+|  | إدارة الوصول & الهوية | حسابات المسؤولين العموميين المخصصة مع Azure AD Multi-Factor Authentication (MFA) و Azure AD إدارة الهويات المتميزة (PIM) <br> المصادقة متعددة العوامل (MFA) لجميع حسابات المستخدمين <br> الوصول المشروط <br> قارئ الأمان <br> Windows Hello <br> Windows Credential Guard |
 |  | الحماية من التهديدات | Advanced Threat Analytics <br> Windows Defender <br> Defender for Office 365 <br> Microsoft Defender لـ Office 365 <br> Microsoft 365 التحقيق في التهديدات والاستجابة لها <br> |
 |  | حماية المعلومات | Azure حماية البيانات <br> منع فقدان البيانات (DLP) <br> Windows حماية البيانات (WIP) <br> Microsoft Defender for Cloud Apps <br> Microsoft Intune |
-|  | إدارة الأمان | Microsoft Defender for Cloud  <br> Windows Defender Security Center |
+|  | إدارة الأمان | Microsoft Defender للسحابة  <br> Windows Defender Security Center |
 | الوصول عن بعد والجوال وشركاء الأعمال |  |  |
 |  | أمان أفضل للعاملين عن بعد والهاتف المحمول | Microsoft Intune |
 |  | تقليل البنية الأساسية للوصول عن بعد للموظفين | Microsoft 365 أحمال العمل والبيانات المستندة إلى السحابة |

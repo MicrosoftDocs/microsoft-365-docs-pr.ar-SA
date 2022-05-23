@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 52105373f0bc6bb70f6433eba4dacb4580a0f804
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 9008fe0d6a4c46d544e4d806c3a15b24c53f2f10
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416705"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637961"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>مراجعة سجلات الأحداث ورموز الأخطاء لا استكشاف المشاكل المتعلقة بالأحداث وإصلاحها برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -2731,7 +2731,7 @@ UACUser</dt>
 </tr><tr><td>القرار</td><td>
 <ol>
 <li>تحديث التعريفات. اما:<ol>
-<li>انقر فوق الزر <b>"تحديث التعريفات</b>" على علامة التبويب <b>"تحديث</b>" في برنامج الحماية من الفيروسات من Microsoft Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>او
+<li>احصل على تحديثات معلومات الأمان في تطبيق أمن Windows. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>او
 </li>
 <li>قم بتنزيل أحدث التعريفات من <a href="https://aka.ms/wdsi">موقع التحليل الذكي لمخاطر الأمان من Microsoft</a>.
 ملاحظة: يمكن أن يتجاوز حجم ملف التعريفات الذي تم تنزيله من الموقع 60 ميغابايت ويجب ألا يستخدم كحل طويل الأجل لتحديث التعريفات.
@@ -3202,7 +3202,7 @@ UACUser</dt>
 </table>
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

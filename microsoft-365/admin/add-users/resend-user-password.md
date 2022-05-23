@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: 'أعد إرسال البريد الإلكتروني للإعلام إلى مستخدم جديد في Microsoft 365 عن طريق إعادة تعيين كلمة مرور المستخدم إذا لم يحصل على البريد الإلكتروني الأصلي مع كلمة المرور الجديدة الخاصة به. '
-ms.openlocfilehash: 540b419d3f6452d6ca93e9e9424a1a28c0ecdfea
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: b6b8aab70cb48bb288485d52efd3a958c4df0888
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436284"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636141"
 ---
 # <a name="resend-a-microsoft-365-users-password---admin-help"></a>إعادة إرسال كلمة مرور مستخدم Microsoft 365 - تعليمات المسؤول
 
@@ -45,7 +45,7 @@ ms.locfileid: "65436284"
 
 3. اتبع الإرشادات الموجودة في صفحة **"إعادة تعيين كلمة المرور** " لإنشاء كلمة مرور جديدة للمستخدم تلقائيا أو إنشاء كلمة مرور له، ثم حدد **"إعادة تعيين**".  
 
-4. أدخل عنوان بريد إلكتروني يمكن للمستخدم الوصول إليه حتى يتلقى كلمة المرور الجديدة، ثم تابع معه للتأكد من حصوله عليها.
+4. أدخل عنوان بريد إلكتروني يمكن للمستخدم الوصول إليه، بحيث يتلقى كلمة المرور الجديدة، ويتابع معه للتأكد من حصوله عليها.
 
 ## <a name="related-content"></a>المحتويات ذات الصلة
 

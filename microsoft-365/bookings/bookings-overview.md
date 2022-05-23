@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: نظرة عامة على تطبيق Microsoft Bookings، والذي يتضمن تقويم حجز مستند إلى الويب ويتكامل مع Outlook لتحسين تقويم فريق العمل ومنح عملائك المرونة في حجز المواعيد.
-ms.openlocfilehash: 6cb20104e9fa51023b6a828cfd70291cd0797037
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 02ae9cc4e9b101025a424acaff3a82de7afeef59
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822661"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637594"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
-
-> [!NOTE]
-> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
 
 Microsoft Bookings يجعل جدولة المواعيد وإدارتها أمرا سهلا. يتضمن Bookings تقويم حجز مستندا إلى الويب ويتكامل مع Outlook لتحسين تقويم فريق العمل ومنح عملائك المرونة لحجز وقت يناسبهم بشكل أفضل. تعمل إعلامات البريد الإلكتروني ورسائل SMS النصية على تقليل عدم العروض وتعزيز رضا العملاء. توفر مؤسستك الوقت مع تقليل مهام الجدولة المتكررة. مع المرونة المدمجة والقدرة على التخصيص، يمكن تصميم Bookings لتناسب الوضع واحتياجات العديد من الأجزاء المختلفة للمؤسسة.
 

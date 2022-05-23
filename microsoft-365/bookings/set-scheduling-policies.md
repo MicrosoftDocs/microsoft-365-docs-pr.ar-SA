@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: تعرف على كيفية تعيين نهج الجدولة لأعمالك. تتضمن نهج الجدولة طول المواعيد، بالإضافة إلى أوقات العميل المتوقع والإلغاء المقبولة.
-ms.openlocfilehash: f4b19af8bd0c9a91ea7fea3fd7b2a8feb4285dcd
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 39d6ab31d7bfda8f2686ed232402c1b98e6a56db
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468361"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637528"
 ---
 # <a name="set-your-microsoft-bookings-scheduling-policies"></a>تعيين نهج الجدولة Microsoft Bookings
-
-> [!NOTE]
-> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
 
 ليست كل المواعيد متشابهة. يستغرق بعضها بضع دقائق فقط، بينما قد يستغرق البعض الآخر ساعات أو أكثر. في Microsoft Bookings، تكون صفحة الحجز هي المكان الذي تقوم فيه بتعيين نهج الجدولة لأعمالك. تتضمن نهج الجدولة طول المواعيد وأوقات العميل المتوقع والإلغاء المقبولة والإعلامات التلقائية بتغييرات الحجز. يمكن إضافة تخصيص إضافي لكل خدمة داخل صفحة الخدمات، مع إعدادات ونهج مدة إضافية تنطبق فقط على تلك الخدمة.
 

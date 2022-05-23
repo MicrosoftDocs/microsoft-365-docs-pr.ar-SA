@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: مع Office 365، يتم تشفير المحتوى الخاص بك في حالة السكون وفي أثناء النقل مع أقوى التشفير والبروتوكولات والتقنيات المتاحة. احصل على نظرة عامة على التشفير في Office 365.
-ms.openlocfilehash: 5f866931eba3078074b47c9cc8c5ed310489b9bb
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 5b7b0f9fecbcbb6150eb56e19757c954aeb3e812
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319254"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637462"
 ---
 # <a name="encryption"></a>التشفير
 
@@ -57,7 +57,7 @@ ms.locfileid: "65319254"
 |:-----|:-----|:-----|
 |ملفات على جهاز. يمكن أن تتضمن هذه الملفات رسائل البريد الإلكتروني المحفوظة في مجلد، Office المستندات المحفوظة على كمبيوتر أو كمبيوتر لوحي أو هاتف، أو البيانات المحفوظة في سحابة Microsoft.  <br/> |BitLocker في مراكز بيانات Microsoft. يمكن أيضا استخدام BitLocker على أجهزة العميل، مثل أجهزة الكمبيوتر Windows وأجهزة الكمبيوتر اللوحية  <br/> إدارة المفاتيح الموزعة (DKM) في مراكز بيانات Microsoft  <br/> مفتاح العميل Microsoft 365  <br/> |[Windows مركز تكنولوجيا المعلومات: BitLocker](/windows/device-security/bitlocker/bitlocker-overview) <br/> [مركز توثيق Microsoft: التشفير](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [سلسلة عناصر تحكم أمان السحابة: تشفير البيانات الثابتة](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [كيف تؤمّن Exchange Online أسرار بريدك الإلكتروني](exchange-online-secures-email-secrets.md) <br/> [تشفير الخدمة باستخدام مفتاح العميل](customer-key-overview.md) <br/> |
 |الملفات المتنقلة بين المستخدمين. يمكن أن تتضمن هذه الملفات مستندات Office أو عناصر قائمة SharePoint تمت مشاركتها بين المستخدمين.  <br/> |TLS للملفات المتنقلة  <br/> |[تشفير البيانات في OneDrive for Business و SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype for Business Online: الأمان والأرشفة](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features) <br/> |
-|البريد الإلكتروني المتنقل بين المستلمين. يتضمن هذا البريد الإلكتروني البريد الإلكتروني الذي تستضيفه Exchange Online.  <br/> |تشفير الرسائل في Microsoft Purview باستخدام Azure Rights Management وS/MIME وTLS للبريد الإلكتروني المتنقل  <br/> |[تشفير essage](ome.md) <br/> [تشفير البريد الإلكتروني في Office 365](email-encryption.md) <br/> [كيفية استخدام Exchange Online لـ TLS لتأمين اتصالات البريد الإلكتروني في Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
+|البريد الإلكتروني المتنقل بين المستلمين. يتضمن هذا البريد الإلكتروني البريد الإلكتروني الذي تستضيفه Exchange Online.  <br/> |تشفير الرسائل في Microsoft Purview باستخدام Azure Rights Management وS/MIME وTLS للبريد الإلكتروني المتنقل  <br/> |[تشفير الرسائل](ome.md) <br/> [تشفير البريد الإلكتروني في Office 365](email-encryption.md) <br/> [كيفية استخدام Exchange Online لـ TLS لتأمين اتصالات البريد الإلكتروني في Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
 |الدردشات والرسائل والملفات المتنقلة بين المستلمين باستخدام Microsoft Teams. <br/> |يستخدم Teams TLS وMTLS لتشفير الرسائل الفورية. يتم تشفير حركة مرور الوسائط باستخدام RTP الآمن (SRTP). تستخدم Teams خوارزميات متوافقة مع FIPS (معيار معالجة المعلومات الفيدرالية) لتبادل مفاتيح التشفير. <br/> |[تشفير Teams](/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
 
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>ماذا لو احتجت إلى مزيد من التحكم في التشفير لتلبية متطلبات الأمان والتوافق؟

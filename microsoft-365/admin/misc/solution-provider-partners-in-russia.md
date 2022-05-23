@@ -1,5 +1,5 @@
 ---
-title: موفر حلول الحوسبة السحابية من Microsoft الشركاء في روسيا
+title: شركاء موفر حلول الحوسبة السحابية من Microsoft في روسيا
 f1.keywords:
 - NOCSH
 ms.author: loreenl
@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 ms.assetid: d3adf0cf-d581-4452-a5b3-6e0d16a34daa
 ROBOTS: NOINDEX
-description: احصل على قائمة تتضمن موفري Microsoft Cloud Solutions في روسيا.
-ms.openlocfilehash: 0765efaaa8ab5f786cafe62e28ee534fbe617ffb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: احصل على قائمة بموفري حلول السحابة من Microsoft في روسيا.
+ms.openlocfilehash: d17aacf9c1dcaeae515f763adc6946f8a7cf9ff6
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63567522"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637307"
 ---
-# <a name="microsoft-cloud-solution-provider-partners-in-russia"></a>موفر حلول الحوسبة السحابية من Microsoft الشركاء في روسيا
-إليك قائمة "موفرو حلول السحابة من Microsoft" في روسيا.
+# <a name="microsoft-cloud-solution-provider-partners-in-russia"></a>شركاء موفر حلول الحوسبة السحابية من Microsoft في روسيا
+فيما يلي قائمة بموفري حلول السحابة من Microsoft في روسيا.
   
 - [مونت](https://www.mont.com/ru-ru/)
     
-- [الخط الناعم](https://softline.ru/)
+- [خط ناعم](https://softline.ru/)
     
 

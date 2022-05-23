@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: اتبع هذه الإرشادات لإنشاء موعد وتعيين موظف من خلال تطبيق Microsoft Bookings.
-ms.openlocfilehash: 488b390c6446693ffa6bf63dce9c84920a629f0b
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: 8b7c54a9d8f06ba2f5618ad77049b87a2c212edb
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65182662"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637814"
 ---
 # <a name="create-a-manual-booking"></a>إنشاء حجز يدوي
-
-> [!NOTE]
-> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
 
 يمكن جدولة Bookings والموظفين بطريقتين مختلفتين. الطريقة الأولى هي من قبل العميل الذي يستخدم صفحة حجز مستقلة أو صفحة حجز مضمنة تضيفها إلى موقعك على ويب. والطريقة الأخرى هي أن تقوم أنت أو أحد موظفيك بإدخال الحجوزات يدويا، مثل عندما يتصل أحد العملاء بموعد. تتناول هذه المقالة السيناريو اليدوي.
 

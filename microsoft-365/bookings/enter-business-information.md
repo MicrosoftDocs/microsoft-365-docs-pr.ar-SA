@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: اتبع هذه الإرشادات لإنشاء صفحة "معلومات حولنا" مع اسم العمل والعنوان ورقم الهاتف وعنوان URL لموقع الويب والشعار وساعات العمل في Microsoft Bookings.
-ms.openlocfilehash: 5b80de4d94010a7e13b58289d6f63da13384d57d
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 1c1b50215b1e81c0bb3af936ba00e1beefa7965c
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622519"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637748"
 ---
 # <a name="enter-your-business-information-in-microsoft-bookings"></a>أدخل معلومات العمل في Microsoft Bookings
-
-> [!NOTE]
-> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
 
 في Microsoft Bookings، تحتوي صفحة "معلومات العمل" داخل تطبيق الويب على جميع التفاصيل التي تجدها عادة على صفحة "معلومات عنا" الخاصة بالأعمال. تتضمن هذه التفاصيل الاسم والعنوان ورقم الهاتف وعنوان URL لموقع الويب وعنوان URL لنهج الخصوصية والشعار وساعات العمل ذات الصلة.
 

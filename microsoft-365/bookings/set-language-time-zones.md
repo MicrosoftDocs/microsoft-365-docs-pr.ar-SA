@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: تغيير إعدادات اللغة والمنطقة الزمنية في Microsoft Bookings. إذا تم إنشاء الحجوزات في وقت غير صحيح، فقد يتم تعيين Bookings للمنطقة الزمنية غير الصحيحة.
-ms.openlocfilehash: 342b83bf03daa237883a3f8e947306908fbae17d
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 13ff4f81bae50e390f8f7475147e335bf010683f
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022460"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637550"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>تعيين اللغة والمناطق الزمنية في Microsoft Bookings
-
-> [!NOTE]
-> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
 
 إذا كنت تستخدم Microsoft Bookings وتم إنشاء الحجوزات في وقت غير صحيح، فقد تحتاج إعدادات المنطقة الزمنية إلى تغيير. وبالمثل، إذا كانت بعض الحجوزات بلغة خاطئة، فقد تحتاج إلى تغيير إعدادات اللغة.
 

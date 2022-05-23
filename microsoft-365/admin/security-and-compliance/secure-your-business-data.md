@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: قم بحماية بريدك الإلكتروني وبيانات عملك من التهديدات الإلكترونية، بما في ذلك برامج الفدية الضارة والتصيد الاحتيالي والمرفقات الضارة.
-ms.openlocfilehash: 994223ff7f8f3da9d4d8b75056327214dfc310b0
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 47e9d935cdf6b44d9ba45cd57d8eb3efeabdf0a3
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622805"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637660"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>أفضل الممارسات لتأمين Microsoft 365 للأعمال
 
@@ -271,7 +271,7 @@ ms.locfileid: "65622805"
 
 ## <a name="protect-against-malicious-attachments-files-and-urls"></a>الحماية من المرفقات والملفات وعناوين URL الضارة
 
-يرسل الأشخاص المرفقات ويستلمونها ويتشاركونها بانتظام، مثل المستندات والعروض التقديمية وجداول البيانات والمزيد. ليس من السهل دائما معرفة ما إذا كان المرفق آمنا أو ضارا بمجرد النظر إلى رسالة بريد إلكتروني. تتضمن Microsoft Defender لـ Office 365 حماية المرفقات خزينة، ولكن هذه الحماية غير مشغلة بشكل افتراضي. نوصي بإنشاء قاعدة جديدة لبدء استخدام هذه الحماية. تمتد هذه الحماية إلى الملفات الموجودة في SharePoint OneDrive Microsoft Teams.
+يرسل الأشخاص المرفقات ويستلمونها ويتشاركونها بانتظام، مثل المستندات والعروض التقديمية وجداول البيانات والمزيد. ليس من السهل دائما معرفة ما إذا كان المرفق آمنا أو ضارا بمجرد النظر إلى رسالة بريد إلكتروني. تتضمن Microsoft Defender لـ Office 365 الحماية من خزينة المرفقات، ولكن هذه الحماية غير مشغلة بشكل افتراضي. نوصي بإنشاء قاعدة جديدة لبدء استخدام هذه الحماية. تمتد هذه الحماية إلى الملفات الموجودة في SharePoint OneDrive Microsoft Teams.
 
 ### <a name="set-up-safe-attachments"></a>إعداد مرفقات خزينة
 

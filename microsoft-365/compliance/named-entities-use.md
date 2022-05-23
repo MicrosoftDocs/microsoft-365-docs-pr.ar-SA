@@ -16,14 +16,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: استخدم هذه الإجراءات للاستفادة من الكيانات المسماة في نهج منع فقدان البيانات
-ms.openlocfilehash: 6b00c45b95436e2425aedadd57a178fcb01ab50e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 85d3d11704ea238f6c1acff64193d8aaba8994b8
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000983"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637175"
 ---
-# <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>استخدام الكيانات المسماة في نهج منع فقدان البيانات
+# <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>استخدام الكيانات المسماة في نهج تفادي فقدان البيانات
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -49,6 +49,7 @@ ms.locfileid: "65000983"
 - Teams رسائل الدردشة والقنوات
 - الأجهزة (Windows 10 و11 جهاز نقطة نهاية)
 - علب بريد Exchange
+- Microsoft Defender for Cloud Apps
 
 لا يتم دعم SITs للكيان المسمى والنهج المحسنة من أجل:
 
@@ -83,7 +84,7 @@ ms.locfileid: "65000983"
 |بيانات SharePoint Online الثابتة     |دعم         |
 |Teams البيانات الثابتة     |دعم         |
 |بيانات رسائل البريد الإلكتروني الثابتة     |مدعومة للمستأجرين باستخدام خطة خدمة الخصوصية         |
-<!--|Microsoft Defender for Cloud Apps     |دعم         |-->
+|Microsoft Defender for Cloud Apps     |دعم         |
 
 ### <a name="autolabeling"></a>التسمية التلقائية
 

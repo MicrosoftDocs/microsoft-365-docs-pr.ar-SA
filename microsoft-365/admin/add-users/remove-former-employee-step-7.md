@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: بعد حفظ جميع بيانات مستخدم موظف سابق والوصول إليها، يمكنك حذف حساب الموظف السابق في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: d6e53dd8d14add9383e3eff9d3c1d90a5087ec45
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5a1929ef1a5ff26ee0e84993f0a7cabb5ebc4617
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436254"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636163"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>الخطوة 7 - حذف حساب مستخدم موظف سابق
 
@@ -43,7 +43,7 @@ ms.locfileid: "65436254"
 2. حدد اسم الموظف الذي تريد حذفه.
 3. ضمن اسم المستخدم، حدد **"حذف المستخدم**". اختر الخيارات التي تريدها لهذا المستخدم، ثم حدد **"حذف مستخدم**". إذا قمت بالفعل بمنح مستخدم آخر حق الوصول إلى البريد الإلكتروني لهذا المستخدم OneDrive، فلن تحتاج إلى القيام بذلك مرة أخرى هنا.
 
-عندما تحذف مستخدما، يصبح الحساب غير نشط لمدة 30 يوما تقريبا. لديك حتى ذلك الحين لاستعادة الحساب قبل حذفه نهائيا.
+عندما تحذف مستخدما، يصبح الحساب غير نشط لمدة 30 يوما تقريبا. يمكنك حتى ذلك الحين استعادة الحساب قبل حذفه نهائيا.
 
 ## <a name="watch-delete-a-former-employees-user-account"></a>شاهد: حذف حساب مستخدم موظف سابق
 
@@ -70,8 +70,8 @@ ms.locfileid: "65436254"
 |ما يمكنك فعله|كيفية القيام بذلك|
 |:-----|:-----|
 |إنهاء جلسة عمل (مثل Outlook على ويب أو Outlook أو Exchange المزامنة النشطة وما إلى ذلك) وفرض فتح جلسة عمل جديدة|إعادة تعيين كلمة المرور|
-|إنهاء جلسة عمل وحظر الوصول إلى جلسات العمل المستقبلية (لجميع البروتوكولات)|تعطيل الحساب. على سبيل المثال، (في مركز إدارة Exchange أو باستخدام PowerShell): <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
-|إنهاء جلسة العمل لبروتوكول معين (مثل ActiveSync)|تعطيل البروتوكول. على سبيل المثال، (في مركز إدارة Exchange أو باستخدام PowerShell): <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|إنهاء جلسة عمل وحظر الوصول إلى جلسات العمل المستقبلية (لجميع البروتوكولات)|تعطيل الحساب. على سبيل المثال، في مركز إدارة Exchange أو باستخدام PowerShell: <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|إنهاء جلسة العمل لبروتوكول معين (مثل ActiveSync)|تعطيل البروتوكول. على سبيل المثال، في مركز إدارة Exchange أو باستخدام PowerShell: <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
 |
 
 يمكن تنفيذ العمليات المذكورة أعلاه في ثلاثة أماكن:

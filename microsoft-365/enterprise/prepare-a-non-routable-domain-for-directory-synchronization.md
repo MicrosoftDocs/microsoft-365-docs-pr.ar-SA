@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: تعرف على ما يجب فعله إذا كان لديك مجال غير قابل للتوجيه مقترن بحسابات المستخدمين المحليين قبل مزامنتها مع مستأجر Microsoft 365.
-ms.openlocfilehash: 7c0fd93f327305477908fba0cfb495fa73205ebe
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9d720b42b345e85031a4fa34b9c1353f868765f1
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096359"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637880"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>إعداد مجال غير قابل للتوجيه لمزامنة الدليل
 
@@ -37,9 +37,9 @@ ms.locfileid: "65096359"
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>ماذا لو كان لدي مجال محلي ".محلي" فقط؟
 
-يمكنك استخدام الاتصال Azure AD لمزامنة AD DS مع مستأجر Azure AD لمستأجر Microsoft 365 الخاص بك. لمزيد من المعلومات، راجع [دمج الهويات المحلية مع Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
+يمكنك استخدام Azure AD الاتصال لمزامنة AD DS مع المستأجر Azure AD لمستأجر Microsoft 365. لمزيد من المعلومات، راجع [دمج الهويات المحلية مع Azure AD](/azure/architecture/reference-architectures/identity/azure-ad).
   
-يقوم Azure AD الاتصال بمزامنة UPN وكلمة المرور الخاصة بالمستخدمين بحيث يمكن للمستخدمين تسجيل الدخول باستخدام نفس بيانات الاعتماد التي يستخدمونها محليا. ومع ذلك، الاتصال Azure AD مزامنة المستخدمين فقط مع المجالات التي يتم التحقق منها بواسطة Microsoft 365. وهذا يعني أنه يتم التحقق من المجال أيضا بواسطة Azure AD لأن Microsoft 365 الهويات تتم إدارتها بواسطة Azure AD. بمعنى آخر، يجب أن يكون المجال مجال إنترنت صالحا (مثل.com أو .org أو .net أو .us). إذا كان AD DS الداخلي يستخدم مجالا غير قابل للتوجيه فقط (على سبيل المثال، "محلي")، فمن المحتمل ألا يتطابق هذا مع المجال الذي تم التحقق منه لمستأجر Microsoft 365. يمكنك إصلاح هذه المشكلة إما عن طريق تغيير مجالك الأساسي في AD DS المحلي، أو بإضافة لاحقة UPN واحدة أو أكثر.
+Azure AD الاتصال مزامنة UPN وكلمة المرور الخاصة بالمستخدمين بحيث يمكن للمستخدمين تسجيل الدخول باستخدام نفس بيانات الاعتماد التي يستخدمونها محليا. ومع ذلك، Azure AD الاتصال مزامنة المستخدمين فقط مع المجالات التي يتم التحقق منها بواسطة Microsoft 365. وهذا يعني أنه يتم التحقق من المجال أيضا بواسطة Azure AD لأن الهويات Microsoft 365 تتم إدارتها بواسطة Azure AD. بمعنى آخر، يجب أن يكون المجال مجال إنترنت صالحا (مثل.com أو .org أو .net أو .us). إذا كان AD DS الداخلي يستخدم مجالا غير قابل للتوجيه فقط (على سبيل المثال، "محلي")، فمن المحتمل ألا يتطابق هذا مع المجال الذي تم التحقق منه لمستأجر Microsoft 365. يمكنك إصلاح هذه المشكلة إما عن طريق تغيير مجالك الأساسي في AD DS المحلي، أو بإضافة لاحقة UPN واحدة أو أكثر.
   
 ### <a name="change-your-primary-domain"></a>تغيير مجالك الأساسي
 
@@ -51,7 +51,7 @@ ms.locfileid: "65096359"
   
 بعد تحديث UPNs لاستخدام المجال الذي تم التحقق منه، تكون جاهزا لمزامنة AD DS المحلي مع Microsoft 365.
   
-#### <a name="step-1-add-the-new-upn-suffix"></a>الخطوة 1: إضافة لاحقة UPN الجديدة**
+#### <a name="step-1-add-the-new-upn-suffix"></a>الخطوة 1: إضافة لاحقة UPN الجديدة
   
 1. في وحدة تحكم مجال AD DS، في Server Manager، اختر **"أدوات** \> **Active Directory Domains and Trusts**".
     

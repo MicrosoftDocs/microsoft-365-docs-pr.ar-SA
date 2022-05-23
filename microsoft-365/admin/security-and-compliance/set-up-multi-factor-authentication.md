@@ -28,12 +28,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: تعرف على كيفية إعداد المصادقة متعددة العوامل لمؤسستك.
 monikerRange: o365-worldwide
-ms.openlocfilehash: c37e9126b7cf06929ca9c97533cddf19d1b71f6e
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: faac2f052b7c184a967f916cca433dfaef6866c7
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468953"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637329"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>إعداد المصادقة متعددة العوامل Microsoft 365
 
@@ -43,7 +43,7 @@ ms.locfileid: "65468953"
 > إذا اشتريت اشتراكك أو إصدارك التجريبي بعد 21 أكتوبر 2019، وتمت مطالبتك بمصادقة متعددة العوامل (MFA) عند تسجيل الدخول، فسيتم تمكين [إعدادات الأمان الافتراضية](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) تلقائيا لاشتراكك.
 
 > [!TIP]
-> إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى متخصصي الشركات الصغيرة أثناء تطوير أعمالك، بدءً من الإلحاق إلى الاستخدام اليومي.
+> إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى خبراء الشركات الصغيرة أثناء تنمية أعمالك، بدءا من الإلحاق إلى الاستخدام اليومي.
 
 ## <a name="watch-turn-on-multifactor-authentication"></a>المراقبة: تشغيل المصادقة متعددة العوامل
 
@@ -106,7 +106,7 @@ ms.locfileid: "65468953"
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>تشغيل المصادقة الحديثة لمؤسستك
 
-بالنسبة إلى معظم الاشتراكات، يتم تشغيل المصادقة الحديثة تلقائيا، ولكن إذا اشتريت اشتراكك قبل أغسطس 2017، فمن المحتمل أنك ستحتاج إلى تشغيل المصادقة الحديثة من أجل الحصول على ميزات مثل المصادقة متعددة العوامل للعمل في عملاء Windows مثل Outlook.
+بالنسبة لمعظم الاشتراكات، يتم تشغيل المصادقة الحديثة تلقائيا، ولكن إذا اشتريت اشتراكك قبل أغسطس 2017، فمن المحتمل أنك ستحتاج إلى تشغيل المصادقة الحديثة للحصول على ميزات مثل المصادقة متعددة العوامل للعمل في عملاء Windows مثل Outlook.
 
 
 1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>، في جزء التنقل الأيمن، اختر **إعدادات الإعدادات** \> **Org**.
@@ -120,7 +120,7 @@ ms.locfileid: "65468953"
 - [كيفية تسجيل الدخول بعد التسجيل](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [كيفية تغيير أسلوب التحقق الإضافي](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [إعداد المصادقة متعددة العوامل](set-up-multi-factor-authentication.md) (فيديو)
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على كيفية الحصول على تقرير نشاط Microsoft Dynamics 365 Customer Voice باستخدام لوحة معلومات التقارير ومعرفة كيفية تعاون المستخدمين المرخصين.
-ms.openlocfilehash: c8c7678991635139f2bdfb97a8baf7ccc2c667aa
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 8f936f2b3232d8086928751c9846a8d762ff8219
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467591"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636559"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>تقارير Microsoft 365 في مركز الإدارة - نشاط Dynamics 365 Customer Voice
 

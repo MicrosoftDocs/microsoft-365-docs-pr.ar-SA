@@ -19,22 +19,22 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 03cdc163c1f560462fa12f18d4e6101665d766de
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 2b88e6413bb8ef520c3049f63cca60703a509be3
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788139"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637902"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>تمكين قواعد تقليل الأجزاء المعرضة للهجوم
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 > [!TIP]
@@ -71,9 +71,6 @@ ms.locfileid: "64788139"
 - **التدقيق**: تقييم كيفية تأثير قاعدة ASR على مؤسستك إذا تم تمكينها
 - **تحذير**: تمكين قاعدة ASR ولكن السماح للمستخدم النهائي بتجاوز الكتلة
 
-> [!IMPORTANT]
-> حاليا، وضع التحذير غير معتمد لثلاث قواعد ASR عند تكوين قواعد ASR في إدارة نقاط النهاية من Microsoft (MEM). لمعرفة المزيد، راجع [الحالات التي لا يكون فيها وضع التحذير معتمدا](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported).
-
 نوصي باستخدام قواعد ASR مع ترخيص E5 Windows (أو SKU ترخيص مشابه) للاستفادة من قدرات المراقبة وإعداد التقارير المتقدمة المتوفرة في [Microsoft Defender لنقطة النهاية](microsoft-defender-endpoint.md) (Defender لنقطة النهاية). ومع ذلك، إذا كان لديك ترخيص آخر، مثل Windows Professional أو Windows E3 لا يتضمن قدرات متقدمة للمراقبة وإعداد التقارير، يمكنك تطوير أدوات المراقبة وإعداد التقارير الخاصة بك أعلى الأحداث التي يتم إنشاؤها في كل نقطة نهاية عند تشغيل قواعد ASR (على سبيل المثال، إعادة توجيه الأحداث).
 
 > [!TIP]
@@ -82,7 +79,7 @@ ms.locfileid: "64788139"
 يمكنك تمكين قواعد تقليل الأجزاء المعرضة للهجوم باستخدام أي من هذه الأساليب:
 
 - [Microsoft Intune](#intune)
-- [إدارة الجهاز الجوال (MDM)](#mdm)
+- [إدارة الجهاز المحمول (MDM)](#mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [نهج المجموعة](#group-policy)
 - [PowerShell](#powershell)
@@ -191,7 +188,7 @@ ms.locfileid: "64788139"
    - في **الوصف**، اكتب وصفا موجزا.
    - في **OMA-URI**، اكتب ارتباط OMA-URI المحدد أو الصقه للقاعدة التي تقوم بإضافتها. راجع مقطع MDM في هذه المقالة لاستخدام OMA-URI لقاعدة المثال هذه. للحصول على GUID لقاعدة تقليل الأجزاء المعرضة للهجوم، راجع [أوصاف كل قاعدة](attack-surface-reduction-rules-reference.md#per-rule-descriptions) في الموضوع: قواعد تقليل الأجزاء المعرضة للهجوم.
    - في **نوع البيانات**، حدد **"سلسلة**".
-   - في **القيمة**، اكتب قيمة \= GUID والعلامة وقيمة الحالة بدون مسافات (_GUID=StateValue) أو الصقها_. حيث:
+   - في **القيمة**، اكتب قيمة \= GUID والعلامة وقيمة الحالة بدون مسافات (_GUID=StateValue) أو الصقها_. المكان:
 
      - 0 : تعطيل (تعطيل قاعدة ASR)
      - 1 : كتلة (تمكين قاعدة ASR)
@@ -201,7 +198,7 @@ ms.locfileid: "64788139"
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="تكوين URI OMA في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/mem05-add-row-oma-uri.png":::
 
-6. حدد **"حفظ**". **إضافة** إغلاق الصف. في **"مخصص**"، حدد **"التالي**". في **علامات نطاق الخطوة 3**، تكون علامات النطاق اختيارية. قم بأحد الإجراءات التالية:
+6. حدد **حفظ**. **إضافة** إغلاق الصف. في **"مخصص**"، حدد **"التالي**". في **علامات نطاق الخطوة 3**، تكون علامات النطاق اختيارية. قم بأحد الإجراءات التالية:
 
    - حدد **"Select Scope tags"**، وحدد علامة النطاق (اختياري)، ثم حدد **"التالي**".
    - أو حدد **"التالي"**
@@ -226,7 +223,7 @@ ms.locfileid: "64788139"
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="قواعد قابلية التطبيق في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/mem07-5-applicability-rules.png":::
 
-10. حدد **"التالي**". في الخطوة **6 Review + create**، راجع الإعدادات والمعلومات التي حددتها وأدخلتها، ثم حدد **Create**.
+10. حدد **التالي**. في الخطوة **6 Review + create**، راجع الإعدادات والمعلومات التي حددتها وأدخلتها، ثم حدد **Create**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mem08-6-review-create.png" alt-text="الخيار &quot;مراجعة وإنشاء&quot; في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/mem08-6-review-create.png":::
@@ -271,9 +268,9 @@ ms.locfileid: "64788139"
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. في Microsoft Endpoint Configuration Manager، انتقل إلى **"Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**".
+1. في إدارة التكوين نقطة نهاية Microsoft، انتقل إلى **الأصول والتوافق**\>**حماية نقطة النهاية**\>**حماية من الهجمات لـ Windows Defender**.
 
-2. حدد **Home** \> **Create Exploit Guard Policy**.
+2. حدد الصفحة **الرئيسية**\>**إنشاء نهج حماية ضد الهجمات**.
 
 3. أدخل اسما ووصفا، وحدد **"Attack Surface Reduction**"، وحدد **"Next**".
 
@@ -281,7 +278,7 @@ ms.locfileid: "64788139"
 
 5. راجع الإعدادات وحدد **"التالي** " لإنشاء النهج.
 
-6. بعد إنشاء النهج، حدد **"إغلاق**".
+6. بعد إنشاء النهج، حدد **إغلاق**.
 
 ### <a name="group-policy"></a>نهج المجموعة
 

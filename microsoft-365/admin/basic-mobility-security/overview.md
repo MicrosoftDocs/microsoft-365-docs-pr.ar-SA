@@ -19,16 +19,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: يمكنك إدارة الأجهزة المحمولة المتصلة بمؤسستك Microsoft 365 وتأمينها من خلال إعداد Basic Mobility and Security واستخدامها.
-ms.openlocfilehash: ca2f5f18dc67517fd9af3bf4f1d1a05e17010c35
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 168fd1f0ef08cf1a9bd5d7c90c53781016b232e6
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435690"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636119"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>نظرة عامة على التنقل الأساسي والأمان Microsoft 365
 
-يمكنك إدارة الأجهزة المحمولة وتأمينها عندما تكون متصلة بمؤسستك Microsoft 365 باستخدام Basic Mobility and Security. تلعب الأجهزة المحمولة مثل الهواتف الذكية وأجهزة الكمبيوتر اللوحية المستخدمة للوصول إلى البريد الإلكتروني الخاص بالعمل والتقويم وجهات الاتصال والمستندات دورا كبيرا في التأكد من أن الموظفين يقومون بعملهم في أي وقت ومن أي مكان. لذلك من المهم أن تساعد في حماية معلومات مؤسستك عندما يستخدم الأشخاص الأجهزة. يمكنك استخدام Basic Mobility and Security لتعيين نهج أمان الجهاز وقواعد الوصول، ومسح الأجهزة المحمولة إذا فقدت أو سرقت.
+يمكنك إدارة الأجهزة المحمولة وتأمينها عندما تكون متصلة بمؤسستك Microsoft 365 باستخدام Basic Mobility and Security. تلعب الأجهزة المحمولة مثل الهواتف الذكية والأجهزة اللوحية المستخدمة للوصول إلى البريد الإلكتروني والتقويم وجهات الاتصال والمستندات الخاصة بالعمل دورا مهما في التأكد من أن الموظفين يقومون بعملهم في أي وقت ومن أي مكان. لذلك من المهم أن تساعد في حماية معلومات مؤسستك عندما يستخدم الأشخاص الأجهزة. يمكنك استخدام Basic Mobility and Security لتعيين نهج أمان الجهاز وقواعد الوصول، ومسح الأجهزة المحمولة إذا فقدت أو سرقت.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="التنقل الأساسي وإعداد الأمان.":::
 

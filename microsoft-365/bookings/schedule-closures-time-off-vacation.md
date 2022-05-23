@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: قم بجدولة عمليات إغلاق المكتب وإجازة الموظفين من تقويم Bookings بحيث يتم وضع علامة على الموظفين على أنهم غير متاحين للحجوزات خلال الأوقات المحددة.
-ms.openlocfilehash: 32f1d930daf44d000a1dbf03eded3f05fbb976eb
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 52b2b8ea912cb876dd2d6e8b8efcdcc3bb90ce1f
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468383"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637440"
 ---
 # <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>جدولة Bookings إغلاق الأعمال والإجازة ووقت العطلة
-
-> [!NOTE]
-> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
 
 في بعض الأحيان، قد ترغب في إغلاق شركتك للعطلات أو أحداث الفريق، أو سيحتاج موظفوك إلى إجازة عندما يمرضون أو في عطلة أو لا يتوفرون لأسباب أخرى. يمكنك جدولة إجازة من تقويم Microsoft Bookings، ولن يكون الموظف متوفرا للحجوزات خلال الوقت المحدد. بمجرد إعادة فتح الشركة أو عودة الموظفين إلى العمل، سيتم إدراج الجميع في صفحة الحجز وفقا لساعات عملهم المحددة.
 

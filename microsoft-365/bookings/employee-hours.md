@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: تعيين ساعات عمل الموظفين والتوفر في Microsoft Bookings.
-ms.openlocfilehash: ce248e964552b8e1258dbad999f865874ef898e2
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 19b5a186c66659777a0dbe3444c0e43c4142ff36
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023316"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637241"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>ساعات عمل الموظفين في Microsoft Bookings
-
-> [!NOTE]
-> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
 
 يضمن تعيين ساعات عمل الموظفين ظهور توفرهم بدقة عندما يحاول عملاؤك حجزها. بشكل افتراضي، تتطابق ساعات العمل لكل موظف من موظفيك مع ساعات العمل التي أنشأتها في تطبيق Microsoft Bookings. راجع القسم "تعيين ساعات العمل" في [إدخال معلومات العمل](enter-business-information.md).
 

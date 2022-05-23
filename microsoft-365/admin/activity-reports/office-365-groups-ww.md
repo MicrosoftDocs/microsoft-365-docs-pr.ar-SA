@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: احصل على تقرير مجموعات Microsoft 365 للحصول على رؤى حول نشاط المجموعات في مؤسستك ومعرفة عدد المجموعات التي يتم إنشاؤها واستخدامها.
-ms.openlocfilehash: 1c51ddf997fb0c1c3e2416d979b83b339c414d93
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 541d3aa6534d578d30ef9eae93c38c76dd97c472
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467361"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636515"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 التقارير في مركز الإدارة - مجموعات Microsoft 365
 
@@ -72,7 +72,7 @@ ms.locfileid: "65467361"
 |الأعضاء الخارجيون |عدد المستخدمين الخارجيين في المجموعة.|
 
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [Microsoft 365 التقارير في مركز الإدارة](activity-reports.md) (مقالة)\
 [التقارير الذكية والرؤى في Security & Compliance Center](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance) (article)\

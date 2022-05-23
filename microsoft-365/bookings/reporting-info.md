@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: تعرف على كيفية عرض نشاطك Bookings لمدة 4 أشهر
-ms.openlocfilehash: 8f6ddcdc7320013698b1ba9f0ad2f5b1cd1e2e22
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: c39515852d0a45adfb3faeb5efaf510ee2c27236
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023712"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637197"
 ---
 # <a name="reporting-info-for-bookings"></a>معلومات إعداد التقارير Bookings
-
-> [!NOTE]
-> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
 
 يمكنك الآن رؤية طريقة عرض لمدة أربعة أشهر لتقويم Bookings في ملف TSV. سيعرض لك ملف TSV بيانات لمدة أربعة أشهر، ولكن يمكنك تحديد فترات مختلفة من أربعة أشهر على مدار السنة.
 
@@ -64,3 +61,4 @@ ms.locfileid: "65023712"
 - **تمكين إعلامات النص**   ما إذا كان يمكن للعملاء تلقي إعلامات SMS ذات صلة بالنص.
 - **الحقول المخصصة**   يتم دمج جميع الأسئلة والأجوبة المتعلقة بحجز واحد في هذا الحقل.
 - **معرف الحجز**   هذا مفيد لتحديد نفس حجوزات خدمة المجموعة.
+- **تعقب البيانات**   تعقب مقاييس معرفات الحملة التي تستخدمها في حملاتك التسويقية.

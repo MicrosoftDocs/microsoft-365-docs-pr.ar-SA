@@ -16,12 +16,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: الاتصال إلى مستأجر Microsoft 365 باستخدام PowerShell Microsoft 365 لتنفيذ مهام مركز الإدارة من سطر الأوامر.
-ms.openlocfilehash: a69fa6885e254e0c15cd65833a4f8368ec239c4f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 24596a2781a8b2176908d6e5d3a6c5bd74b0260a
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174827"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637418"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>الاتصال بـ Microsoft 365 باستخدام PowerShell
 
@@ -43,6 +43,8 @@ ms.locfileid: "65174827"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
+>[!NOTE]
+> يتم استبدال وحدة Azure Active Directory ب Microsoft Graph PowerShell SDK. يمكنك استخدام Microsoft Graph PowerShell SDK للوصول إلى جميع واجهات برمجة تطبيقات Microsoft Graph. لمزيد من المعلومات، راجع [بدء استخدام Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
 **نظام التشغيل**
 
@@ -206,11 +208,6 @@ Are you sure you want to install the modules from 'PSGallery'?
 لمزيد من المعلومات، راجع [Azure Cloud Shell](/azure/cloud-shell/overview).
 
 
-## <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>بدء استخدام Microsoft Graph PowerShell SDK
-
-يمكنك استخدام Microsoft Graph PowerShell SDK للوصول إلى جميع واجهات برمجة تطبيقات Microsoft Graph.
-
-لمزيد من المعلومات، راجع [بدء استخدام Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started?view=graph-powershell-beta)
 
 ## <a name="see-also"></a>راجع أيضًا
 

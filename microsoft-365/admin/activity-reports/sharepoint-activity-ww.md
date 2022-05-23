@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 description: احصل على تقرير استخدام نشاط SharePoint للتعرف على SharePoint تفاعلات ملفات المستخدمين المرخصة وعدد الملفات المشتركة واستخدام التخزين.
-ms.openlocfilehash: ecd44aad4e2bc1236ade623ad2723945e6422e7b
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 52aaaf3d9eef59c582977ee7b7c04ded44233c59
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467219"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636493"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>Microsoft 365 التقارير في مركز الإدارة - نشاط SharePoint
 
-بصفتك مسؤولا Microsoft 365، تعرض لك لوحة معلومات التقارير نظرة عامة على النشاط عبر منتجات مختلفة في مؤسستك. يمكنك من التنقل للحصول على رؤية أكثر دقة حول الأنشطة الخاصة بكل منتج. اطلع على [تقارير النشاط في مركز مسؤولي Microsoft 365](activity-reports.md).
+كمسؤول Microsoft 365، تعرض لك لوحة معلومات التقارير نظرة عامة على النشاط عبر منتجات مختلفة في مؤسستك. يمكنك من التنقل للحصول على رؤية أكثر دقة حول الأنشطة الخاصة بكل منتج. اطلع على [تقارير النشاط في مركز مسؤولي Microsoft 365](activity-reports.md).
   
 على سبيل المثال، يمكنك فهم نشاط كل مستخدم مرخص لاستخدام SharePoint من خلال النظر في تفاعله مع الملفات. كما يساعدك على فهم مستوى التعاون الجاري من خلال النظر في عدد الملفات المشتركة.
   
-## <a name="how-do-i-get-to-the-to-the-sharepoint-activity-report"></a>كيف أعمل الوصول إلى تقرير نشاط SharePoint؟
+## <a name="how-do-i-get-to-the-sharepoint-activity-report"></a>كيف أعمل الوصول إلى تقرير نشاط SharePoint؟
 
 1. في مركز الإدارة، انتقل إلى صفحة <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">استخدام</a> **التقارير**\>. 
 2. من الصفحة الرئيسية للوحة المعلومات، انقر فوق الزر **"عرض المزيد**" على بطاقة SharePoint.

@@ -10,21 +10,16 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: تعرف على كيفية الوصول إلى Microsoft Bookings في Microsoft 365.
-ms.openlocfilehash: e088250a24078d735b6751ff8cbcc55e2fdceaaa
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 98c6ae99bceada7649dc823ca88669ae0081fc10
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217453"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637285"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>تشغيل Microsoft Bookings أو إيقاف تشغيله
 
-> [!NOTE]
-> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
-
-هذه المقالة مخصصة للمسؤولين. 
-
-يمكن تشغيل Bookings أو إيقاف تشغيله لمؤسستك بأكملها أو لمستخدمين محددين. عند تشغيل Bookings للمستخدمين، يمكنهم إنشاء صفحة Bookings وإنشاء تقويم والسماح للأشخاص الآخرين بحجز الوقت معهم.
+يمكن تشغيل Bookings أو إيقاف تشغيله لمؤسستك بأكملها أو لمستخدمين محددين. عند تشغيل Bookings للمستخدمين، يمكنهم إنشاء صفحة Bookings وإنشاء تقويم والسماح للأشخاص الآخرين بحجز الوقت معهم. هذه المقالة مخصصة للمالكين والمسؤولين الذين يديرون Bookings لمؤسساتهم.
 
 > [!NOTE]
 > لا تتوفر عناصر تحكم المسؤول الموضحة في هذه الأقسام لعملاء Office 365 المشغلين بواسطة 21Vianet (الصين).

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: يعد Basic Mobility and Security جزءا من خطط Microsoft 365، بينما يعد Microsoft Intune منتجا مستقلا مضمنا مع خطط Microsoft 365 معينة.
-ms.openlocfilehash: 1d04beea6ece35d5d28bdd961041b30c1f8f2793
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 01d2717aa0368e3d1dc5ed17f3adfd6313880dfe
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435748"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636097"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>الاختيار بين التنقل الأساسي والأمان أو Intune
 
@@ -32,7 +32,7 @@ ms.locfileid: "65435748"
 
  ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>توفر التنقل الأساسي والأمان وIntune
 
-يتم تضمين كل من التنقل الأساسي والأمان وIntune في مجموعة متنوعة من الخطط، الموضحة في الجدول التالي.
+يتم تضمين كل من التنقل الأساسي والأمان وIntune في خطط مختلفة، موضحة في الجدول التالي.
 
 | الخطة | أساسيات التنقل والأمان | Microsoft Intune |
 |:-----|:-----|:-----|

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: تعرف على ميزة المخصصات الجديدة.
 ms.date: 05/12/2022
-ms.openlocfilehash: c251d653aa95fa489a2482ae0c9ef80c9851fc4b
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 60c2fdcd451f5926cbda84d8e5236176314bd3f5
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403305"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636075"
 ---
 # <a name="allotment-basics"></a>أساسيات التوزيع
 
@@ -47,11 +47,11 @@ ms.locfileid: "65403305"
 لا يمكن استخدام المنتجات التالية مع المخصصات:
 
 - تطبيقات Microsoft Store
-- البرامج الدائمة أو البرامج التي يتم تعيينها مباشرة إلى مستخدم إذا لم يكن هناك ترخيص مضمن.
+- البرامج الدائمة أو البرامج التي يتم تعيينها مباشرة إلى مستخدم إذا لم يكن هناك ترخيص.
 - موارد Azure
 
 يجب أن تكون مسؤولا عاما أو مسؤول ترخيص للبدء في تخصيص.
 
 ## <a name="getting-started"></a>بدء الاستخدام
 
-تتوفر ميزة المخصصات في معاينة خاصة لعدد قليل فقط من العملاء. إذا كنت مهتما بالانضمام، فقم بتعبئة هذا النموذج: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).
+تتوفر ميزة المخصصات في معاينة خاصة لعدد قليل من العملاء فقط. إذا كنت مهتما بالانضمام، فقم بتعبئة هذا النموذج: [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup).

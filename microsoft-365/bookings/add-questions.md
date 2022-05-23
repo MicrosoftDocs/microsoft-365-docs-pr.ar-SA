@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: إذا كنت بحاجة إلى طرح أسئلة على العملاء عند حجز موعد معك عبر الإنترنت، يمكنك إضافة أسئلة مخصصة وأسئلة مطلوبة إلى صفحة الحجز.
-ms.openlocfilehash: 9830dfaa9ac1964e74eb16321d061e096aad1bab
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: d42f883f3d58882ec5a2e8e8e2bbe7baf7ed3232
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714604"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637682"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>إضافة أسئلة مخصصة ومطلوبة إلى صفحة الحجز
-
-> [!NOTE]
-> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
 
 يتيح لك Bookings إنشاء أسئلة لطرحها على عملائك عند حجز المواعيد. كما يتيح لك اختيار الأسئلة المطلوبة.
 

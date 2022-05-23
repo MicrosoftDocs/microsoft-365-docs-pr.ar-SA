@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: قم بتغيير نسق اللون لصفحة الحجز في تطبيق Microsoft Bookings.
-ms.openlocfilehash: bd6c3fc601800cdfca93e9e1a6adc494df1bd67e
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 1c00f87f3447b7002bf647086ee60c756662803d
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747149"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637792"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>تخصيص صفحة الحجز ونشرها
-
-> [!NOTE]
-> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
 
 صفحة الحجز هي المكان الذي تقوم فيه بإعداد الشكل الذي ستبدو عليه صفحة الحجز الخارجية. بمجرد تخصيص صفحة الحجز ونشرها، سيستخدمها الأشخاص لحجز المواعيد معك.
 
