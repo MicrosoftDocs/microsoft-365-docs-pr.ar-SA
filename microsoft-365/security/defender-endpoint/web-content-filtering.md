@@ -15,16 +15,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2e86aa7fc8ed304327ab2c07ec487789ad966fc7
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 29a221e60484431722be4e7104efb5b37a0408bc
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535437"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648558"
 ---
 # <a name="web-content-filtering"></a>تصفية محتوى ويب
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -56,7 +54,7 @@ ms.locfileid: "65535437"
 
 | شرط | الوصف |
 |:---|:---|
-| الاشتراك | يجب أن يتضمن اشتراكك أحد الإجراءات التالية:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- الأمان في Microsoft 365 E5<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender لنقطة النهاية الخطة 1 أو الخطة 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md) |
+| الاشتراك | يجب أن يتضمن اشتراكك أحد الإجراءات التالية:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- الأمان في Microsoft 365 E5<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender لنقطة النهاية الخطة 1 أو الخطة 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
 | الوصول إلى المدخل | يجب أن يكون لديك حق الوصول إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>. |
 | نظام التشغيل | يجب أن تقوم أجهزة مؤسستك بتشغيل أحد أنظمة التشغيل التالية بأحدث [تحديثات برنامج الحماية من الفيروسات/الحماية من البرامج الضارة](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>- تحديث الذكرى السنوية Windows 10 (الإصدار 1607) أو إصدار أحدث |
 | الحماية ذات الصلة | يجب تمكين [Windows SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) [والحماية من الشبكة](network-protection.md) على أجهزة مؤسستك. |
@@ -177,7 +175,7 @@ ms.locfileid: "65535437"
 4. حدد نطاق النهج. حدد مجموعات الأجهزة لتحديد مكان تطبيق النهج. سيتم منع الأجهزة في مجموعات الأجهزة المحددة فقط من الوصول إلى مواقع الويب في الفئات المحددة.
 
    > [!IMPORTANT]
-   > إذا كنت تستخدم Defender for Business، فسيتم تطبيق نهج تصفية محتوى الويب على جميع المستخدمين بشكل افتراضي. لا يتم تطبيق تحديد النطاق.
+   > إذا كنت تستخدم إما Microsoft 365 Business Premium أو Defender for Business، فسيتم تطبيق نهج تصفية محتوى الويب الخاص بك على جميع المستخدمين بشكل افتراضي. لا يتم تطبيق تحديد النطاق.
 
 5. راجع الملخص واحفظ النهج. قد يستغرق تحديث النهج ما يصل إلى ساعتين لتطبيقه على أجهزتك المحددة.
 
@@ -188,7 +186,7 @@ ms.locfileid: "65535437"
 
 ## <a name="end-user-experience"></a>تجربة المستخدم النهائي
 
-يتم توفير تجربة الحظر للمستعرضات المدعومة من جهة خارجية بواسطة Network Protection، والتي توفر رسالة على مستوى النظام لإعلام المستخدم باتصال محظور. للحصول على تجربة أكثر سهولة في الاستخدام داخل المستعرض، ضع في اعتبارك استخدام Microsoft Edge.
+يتم توفير تجربة الحظر للمستعرضات المدعومة من جهة خارجية بواسطة حماية الشبكة، والتي توفر رسالة على مستوى النظام لإعلام المستخدم باتصال محظور. للحصول على تجربة أكثر سهولة في الاستخدام داخل المستعرض، ضع في اعتبارك استخدام Microsoft Edge.
 
 ### <a name="allow-specific-websites"></a>السماح بمواقع ويب معينة
 
@@ -204,7 +202,7 @@ ms.locfileid: "65535437"
 
 ### <a name="dispute-categories"></a>فئات النزاعات
 
-إذا واجهت مجالا تم تصنيفه بشكل غير صحيح، يمكنك النزاعات على الفئة مباشرة من المدخل.
+إذا واجهت مجالا تم تصنيفه بشكل غير صحيح، يمكنك النزاعات على الفئة مباشرة من مدخل Microsoft 365 Defender.
 
 للخلاف على فئة مجال، انتقل إلى **"تقارير** \> Web **protection** \> **Web Content Filtering Details** \> **Domains**". في علامة تبويب المجالات في تقارير تصفية محتوى ويب، سترى علامة حذف بجانب كل مجال من المجالات. مرر مؤشر الماوس فوق علامة الحذف هذه وحدد **فئة النزاعات**.
 
@@ -252,9 +250,11 @@ ms.locfileid: "65535437"
 
 يتم دعم Microsoft Edge فقط إذا كان تكوين نظام التشغيل الخاص بجهازك هو Server (**cmd** \> **Systeminfo** \> **OS Configuration**). يتم دعم Network Protection فقط في وضع الفحص على أجهزة الخادم، وهو المسؤول عن تأمين نسبة استخدام الشبكة عبر مستعرضات الجهات الخارجية المدعومة.
 
-يتم دعم Microsoft Edge فقط ولا يتم دعم Network Protection على Windows 10 مضيفي Azure Virtual Desktop متعددي الجلسات.
+يتم دعم Microsoft Edge فقط ولا يتم دعم حماية الشبكة على Windows 10 مضيفي Azure Virtual Desktop متعددي الجلسات.
 
-لا تدعم Network Protection حاليا فحص SSL، مما قد يؤدي إلى السماح ببعض المواقع بواسطة تصفية محتوى ويب التي عادة ما يتم حظرها. سيتم السماح بالمواقع بسبب عدم الرؤية في حركة المرور المشفرة بعد إجراء تأكيد TLS وعدم القدرة على تحليل بعض عمليات إعادة التوجيه.  يتضمن ذلك عمليات إعادة التوجيه من بعض صفحات تسجيل الدخول إلى البريد المستندة إلى ويب إلى صفحة علبة البريد. كحل بديل مقبول، يمكنك إنشاء مؤشر كتلة مخصص لصفحة تسجيل الدخول للتأكد من عدم قدرة أي مستخدمين على الوصول إلى الموقع. ضع في اعتبارك أن هذا قد يمنعهم من الوصول إلى الخدمات الأخرى المقترنة بموقع الويب نفسه. 
+لا تدعم حماية الشبكة حاليا فحص SSL، مما قد يؤدي إلى السماح ببعض المواقع بواسطة تصفية محتوى الويب التي عادة ما يتم حظرها. سيتم السماح بالمواقع بسبب عدم الرؤية في حركة المرور المشفرة بعد إجراء تأكيد TLS وعدم القدرة على تحليل بعض عمليات إعادة التوجيه.  يتضمن ذلك عمليات إعادة التوجيه من بعض صفحات تسجيل الدخول إلى البريد المستندة إلى ويب إلى صفحة علبة البريد. كحل بديل مقبول، يمكنك إنشاء مؤشر كتلة مخصص لصفحة تسجيل الدخول للتأكد من عدم قدرة أي مستخدمين على الوصول إلى الموقع. ضع في اعتبارك أن هذا قد يمنعهم من الوصول إلى الخدمات الأخرى المقترنة بموقع الويب نفسه. 
+
+إذا كنت تستخدم Microsoft 365 Business Premium أو Microsoft Defender for Business، يمكنك تعريف نهج تصفية محتوى ويب واحد للبيئة الخاصة بك. سيتم تطبيق هذا النهج على جميع المستخدمين بشكل افتراضي.
 
 ## <a name="see-also"></a>راجع أيضًا
 

@@ -17,14 +17,20 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Microsoft Defender لـ Office 365 يمكن لعملاء E5 وP1 وP2 الآن الحصول على عرض 360 درجة لكل بريد إلكتروني مع صفحة كيان البريد الإلكتروني.
-ms.openlocfilehash: c2dfd4016f756073407e7d1c22034031c60a901f
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 79863916cab3b859a0b24de9dc5eb9b4f324a3f9
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131075"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648756"
 ---
 # <a name="the-email-entity-page"></a>صفحة كيان البريد الإلكتروني
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**ينطبق على:**
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **في هذه المقالة:**
 - [الوصول إلى صفحة كيان البريد الإلكتروني](#reach-the-email-entity-page)

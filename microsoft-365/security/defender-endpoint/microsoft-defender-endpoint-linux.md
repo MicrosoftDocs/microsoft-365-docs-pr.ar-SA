@@ -17,19 +17,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f04933d54bf02732fea34df25b25e3996e23932
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 825605f932b3732ba27af7ec95160f34959356b0
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705067"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648316"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -132,11 +132,12 @@ ms.locfileid: "64705067"
        - 2.6.32-754.39.1.el6.x86_64
        - 2.6.32-754.41.2.el6.x86_64
        - 2.6.32-754.43.1.el6.x86_64
+       - 2.6.32-754.47.1.el6.x86_64
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 
  > [!NOTE]
- > بعد إصدار إصدار حزمة جديد، يتم تقليل دعم الإصدارين السابقين إلى الدعم التقني فقط. يتم توفير الإصدارات الأقدم من تلك المذكورة في هذا القسم لدعم الترقية التقنية فقط.
+ > بعد إصدار نسخة حزمة جديد، يتم تقليل الدعم للإصدارين السابقين إلى الدعم التقني فقط. يتم توفير الإصدارات الأقدم من تلك المذكورة في هذا القسم لدعم الترقية التقنية فقط.
 
 
   > [!CAUTION]

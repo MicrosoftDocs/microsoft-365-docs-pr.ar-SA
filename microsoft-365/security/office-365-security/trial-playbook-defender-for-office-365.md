@@ -15,14 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: دليل المبادئ التجريبي لحلول Microsoft Defender لـ Office 365.
-ms.openlocfilehash: f23c45d117735997c219278621be7f314602cd8f
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: a1adcf15bd051478e874b990a5e6b12f19d3b0c6
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130681"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648338"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>دليل المبادئ التجريبي: Microsoft Defender لـ Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**ينطبق على:**
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 مرحبا بك في دليل المبادئ التجريبي Microsoft Defender لـ Office 365. سيساعدك دليل المبادئ هذا على تحقيق أقصى استفادة من الإصدار التجريبي المجاني لمدة 90 يوما من خلال تعليمك كيفية حماية مؤسستك باستخدام Defender لـ Office 365. باستخدام توصيات Microsoft، ستتعرف على كيفية مساعدة Defender لـ Office 365 في تحديد نهج الحماية وتحليل التهديدات التي تتعرض لها مؤسستك والاستجابة للهجمات.
 

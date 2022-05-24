@@ -17,14 +17,20 @@ ms.custom: ''
 description: يمكن للمسؤولين التعرف على كيفية تحديد مجموعات معينة من المستخدمين الذين لديهم علامات مستخدم في Microsoft Defender لـ Office 365 الخطة 2. تتوفر تصفية العلامات عبر التنبيهات والتقارير والتحقيقات في Microsoft Defender لـ Office 365 لتحديد المستخدمين المعلمين بسرعة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7b9584b41ded7edd28fb1501ee4e5c3a1febd74
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 3d4f5b82e09c9a58e891fa6fcba009ac490c0cb1
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286395"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647458"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>علامات المستخدم في Microsoft Defender لـ Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**ينطبق على:**
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 علامات المستخدم هي معرفات لمجموعات معينة من المستخدمين في [Microsoft Defender لـ Office 365](defender-for-office-365.md). هناك نوعان من علامات المستخدم:
 
@@ -47,7 +53,7 @@ ms.locfileid: "65286395"
 - [تقرير أفضل المرسلين والمستلمين](view-email-security-reports.md#top-senders-and-recipients-report)
 - [محاكاة الهجوم](attack-simulation-training.md#target-users)
 - [طرق عرض الحملة](campaigns.md)
-- [عمليات إرسال المسؤول والمستخدم](admin-submission.md)
+- [عمليات إرسال مسؤول والمستخدم](admin-submission.md)
 - [العزل](quarantine.md)
 - بالنسبة إلى الحسابات ذات الأولوية، يمكنك استخدام [مشاكل البريد الإلكتروني لتقرير الحسابات ذات الأولوية](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) في مركز إدارة Exchange (EAC).
 
@@ -61,7 +67,7 @@ ms.locfileid: "65286395"
 
 - يجب تعيين أذونات لك في مدخل Microsoft 365 Defender قبل أن تتمكن من تنفيذ الإجراءات الواردة في هذه المقالة:
   - لإنشاء علامات مستخدم مخصصة وتعديلها وحذفها، يجب أن تكون عضوا في مجموعات دور مسؤول **الأمان** أو **إدارة المؤسسة**.
-  - لإضافة أعضاء وإزالتك من علامة نظام حساب الأولوية، يجب أن تكون عضوا في **مسؤول الأمان** ومجموعات دور **مسؤول Exchange**.
+  - لإضافة أعضاء وإزالتك من علامة نظام حساب الأولوية، يجب أن تكون عضوا في **مسؤول الأمان** ومجموعات الأدوار **Exchange مسؤول**.
   - لإضافة أعضاء وإزالتهم من علامات المستخدم المخصصة الموجودة، يجب أن تكون عضوا في مجموعات دور مسؤول **الأمان** أو **إدارة المؤسسة**.
   - للوصول للقراءة فقط إلى علامات المستخدم، يجب أن تكون عضوا في مجموعات دور **القارئ العمومي** أو **عامل تشغيل الأمان** أو **قارئ الأمان** .
 

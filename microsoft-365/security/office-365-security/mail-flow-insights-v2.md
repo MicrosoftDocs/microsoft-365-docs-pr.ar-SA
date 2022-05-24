@@ -14,16 +14,16 @@ description: يمكن للمسؤولين التعرف على الرؤى والت
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eef35eedd5a7f182160b9a6a8b27a59cf9cdd9c0
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 5850612fbd0de89e5eafe101f55d368b0f4b0c8f
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129167"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648712"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>نتائج تحليلات تدفق البريد في مركز توافق & الأمان
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -37,27 +37,16 @@ ms.locfileid: "65129167"
 النتائج المعرفية المتوفرة هي:
 
 - [نتائج تحليلات الرسائل التي تمت إعادة توجيهها تلقائياً](mfi-auto-forwarded-messages-report.md)
-
 - [إصلاح التكرار الحلقي المحتمل للبريد1](mfi-mail-loop-insight.md)<sup></sup>
-
 - [إصلاح قواعد تدفق البريد البطيئة insight1](mfi-slow-mail-flow-rules-insight.md)<sup></sup>
-
 - [خريطة تدفق البريد](mfi-mail-flow-map-report.md)
-
 - [المجالات الجديدة التي تتم إعادة توجيهها عبر البريد الإلكتروني insight2](mfi-new-domains-being-forwarded-email.md)<sup></sup>
-
 - [مستخدمون جدد يعيدون توجيه رؤى البريد الإلكتروني2](mfi-new-users-forwarding-email.md)<sup></sup>
-
 - [تقرير مجال غير مقبول](mfi-non-accepted-domain-report.md)
-
 - [تقرير بعدم التسليم](mfi-non-delivery-report.md)
-
 - [نظرة ثاقبة على تدفق البريد الصادر والوارد](mfi-outbound-and-inbound-mail-flow.md)
-
 - [تحليلات قوائم الانتظار](mfi-queue-alerts-and-queues.md)
-
 - [تحليلات عملاء SMTP Auth وتقريرهم](mfi-smtp-auth-clients-report.md)
-
 - [نظرة ثاقبة لحالة تدفق بريد المجال العلوي](mfi-domain-mail-flow-status-insight.md)
 
 <sup>1</sup> تظهر هذه الرؤى في المنطقة **"مستحسن"** في لوحة معلومات تدفق البريد فقط بعد اكتشاف المشكلة. وإلا، فلن تتمكن من رؤيتها.
@@ -80,7 +69,5 @@ ms.locfileid: "65129167"
 لمزيد من المعلومات حول الأذونات، راجع [الأذونات في مركز توافق & الأمان](permissions-in-the-security-and-compliance-center.md) [ومنح المستخدمين حق الوصول إلى مركز التوافق & الأمان](grant-access-to-the-security-and-compliance-center.md).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>مكان العثور على لوحة معلومات تدفق البريد
-
-افتح Security & Compliance Center في <https://protection.office.com>توسيع **تدفق البريد**، ثم حدد **لوحة المعلومات**.
 
 للانتقال مباشرة إلى لوحة معلومات تدفق البريد، افتح <https://protection.office.com/mailflow/dashboard>.

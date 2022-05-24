@@ -17,16 +17,14 @@ ms.collection:
 description: للمساعدة في الحفاظ على ثقة المستخدم في استخدام البريد الإلكتروني، وضعت Microsoft سياسات وتقنيات مختلفة للمساعدة في حماية مستخدمينا.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80eff003ec75eba68d1b194fe83d216fa2d013c0
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ff526dc317935651d28843b36bb529edf4ceb006
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974180"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648668"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>خدمات لغير العملاء الذين يرسلون البريد إلى Microsoft 365
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 يستمر إساءة استخدام البريد الإلكتروني والبريد الإلكتروني غير الهام ورسائل البريد الإلكتروني الاحتيالية (التصيد الاحتيالي) في أعباء النظام البنائي للبريد الإلكتروني بأكمله. للمساعدة في الحفاظ على ثقة المستخدم في استخدام البريد الإلكتروني، وضعت Microsoft سياسات وتقنيات مختلفة للمساعدة في حماية مستخدمينا. ومع ذلك، تدرك Microsoft أنه لا يجب أن يتأثر البريد الإلكتروني المشروع سلبا. لذلك، أنشأنا مجموعة من الخدمات لمساعدة المرسلين على تحسين قدرتهم على تسليم البريد الإلكتروني إلى Microsoft 365 المستخدمين من خلال إدارة سمعة الإرسال بشكل استباقي.
 

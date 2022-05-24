@@ -19,16 +19,14 @@ ms.custom:
 description: تعرف كمرسل ضيف، كيف يمكنك زيادة القدرة على تسليم البريد الإلكتروني للمستخدمين في Microsoft 365. تعرف أيضا على كيفية الإبلاغ عن البريد الإلكتروني غير الهام & محاولات التصيد الاحتيالي كضيف.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6d0f594da174236ce03ab0fd9b2af045f57f9f0
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 94bd79493a56bd288d21be255915b046b2bb0178
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535891"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649176"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>إرسال بريد إلى Microsoft 365
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 تساعد هذه المقالات المرسلين الخارجيين على تحسين سمعتهم وزيادة قدرتهم على تسليم البريد الإلكتروني للمستخدمين في Microsoft 365. كما أنها توفر بعض المعلومات حول كيفية الإبلاغ عن رسائل البريد الإلكتروني غير الهام ومحاولات التصيد الاحتيالي حتى إذا لم تكن مستخدما Microsoft 365 بنفسك.
 

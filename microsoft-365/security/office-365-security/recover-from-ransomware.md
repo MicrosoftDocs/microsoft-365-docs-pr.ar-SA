@@ -1,5 +1,5 @@
 ---
-title: التعافي من هجوم برامج الفدية الضارة
+title: التعافي من هجوم برامج ضارة
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,20 +16,18 @@ ms.collection:
 description: يمكن للمسؤولين Microsoft 365 تعلم كيفية التعافي من هجوم برامج الفدية الضارة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8e5e942bb39097fffa955d5bb9c3b8a72212d0cc
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 328457e37ea6ae351abb2c5d5f0089246145b32c
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64730825"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648646"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>التعافي من هجوم برامج الفدية الضارة في Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender لـ Office 365 الخطة 1 والخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 حتى إذا اتخذت كل الاحتياطات لحماية مؤسستك، فلا يزال بإمكانك أن تقع ضحية لهجوم [برامج الفدية الضارة](/windows/security/threat-protection/intelligence/ransomware-malware) . برامج الفدية الضارة هي أعمال كبيرة، وفي مشهد التهديد اليوم Microsoft 365 هو هدف متزايد باستمرار [للهجمات المتطورة](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf).

@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 41fa5aece6f8c18ef16dbf624f90a1ead25b45f5
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 33eff726609db3d7f2d07f4a5bcf4955536c086c
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174932"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647272"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>استضافة تقارير جدار الحماية في Microsoft Defender لنقطة النهاية
 
@@ -36,13 +36,45 @@ ms.locfileid: "65174932"
 
 - يجب تشغيل Windows 10 أو Windows 11 أو Windows Server 2019 أو Windows Server 2022.
 - لإلحاق الأجهزة بخدمة Microsoft Defender لنقطة النهاية، راجع [هنا](onboard-configure.md).
-- لكي يبدأ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> في تلقي البيانات، يجب تمكين **Audit Events** ل Windows Defender Firewall مع الأمان المتقدم:
+- لكي يبدأ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> في تلقي البيانات، يجب تمكين **"أحداث التدقيق**" جدار حماية Windows Defender مع الأمان المتقدم:
   - [إفلات حزمة النظام الأساسي لتصفية التدقيق](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [تدقيق تصفية اتصال النظام الأساسي](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - قم بتمكين هذه الأحداث باستخدام محرر عناصر نهج المجموعة أو نهج الأمان المحلي أو أوامر auditpol.exe. لمزيد من المعلومات، راجع [هنا](/windows/win32/fwp/auditing-and-logging).
   - الأمران PowerShell هما:
     - **auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable**
     - **auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable**
+```powershell
+param (
+    [switch]$remediate
+)
+try {
+
+    $categories = "Filtering Platform Packet Drop,Filtering Platform Connection"
+    $current = auditpol /get /subcategory:"$($categories)" /r | ConvertFrom-Csv    
+    if ($current."Inclusion Setting" -ne "failure") {
+        if ($remediate.IsPresent) {
+            Write-Host "Remediating. No Auditing Enabled. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})"
+            $output = auditpol /set /subcategory:"$($categories)" /failure:enable
+            if($output -eq "The command was successfully executed.") {
+                Write-Host "$($output)"
+                exit 0
+            }
+            else {
+                Write-Host "$($output)"
+                exit 1
+            }
+        }
+        else {
+            Write-Host "Remediation Needed. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})."
+            exit 1
+        }
+    }
+
+}
+catch {
+    throw $_
+} 
+```
 
 ## <a name="the-process"></a>العملية
 
@@ -52,7 +84,7 @@ ms.locfileid: "65174932"
 - بعد تمكين الأحداث، سيبدأ Microsoft 365 Defender في مراقبة البيانات.
   - IP البعيد، المنفذ البعيد، المنفذ المحلي، IP المحلي، اسم الكمبيوتر، العملية عبر الاتصالات الواردة والصادرة.
 - يمكن للمسؤولين الآن رؤية Windows نشاط جدار الحماية المضيف [هنا](https://security.microsoft.com/firewall).
-  - يمكن تسهيل إعداد التقارير الإضافية عن طريق تنزيل [البرنامج النصي للتقارير المخصصة](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) لمراقبة أنشطة جدار حماية defender Windows باستخدام Power BI.
+  - يمكن تسهيل إعداد التقارير الإضافية عن طريق تنزيل [البرنامج النصي للتقارير المخصصة](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) لمراقبة أنشطة جدار حماية Windows Defender باستخدام Power BI.
   - قد يستغرق الأمر ما يصل إلى 12 ساعة قبل أن تنعكس البيانات.
 
 ## <a name="supported-scenarios"></a>السيناريوهات المدعومة

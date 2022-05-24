@@ -16,14 +16,16 @@ ms.date: 06/10/2021
 description: تعرف على كيفية تسريع عملية الكشف عن حسابات المستخدمين المخترقة ومعالجتها مع قدرات التحقيق والاستجابة التلقائية في Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 97466622a138a6604b9be51333148b472f7cd519
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8628f1952f37f43a66daccb5f0792097ce798c31
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418259"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649032"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>معالجة حسابات المستخدمين المخترقة مع التحقيق التلقائي والاستجابة
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

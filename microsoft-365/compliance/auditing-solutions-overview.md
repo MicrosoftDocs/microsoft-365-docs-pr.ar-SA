@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: تعرف على كيفية تدقيق أنشطة المستخدمين والمسؤولين في مؤسستك Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d7c6ba3e63e50370579f6db89a919ec8a2dafd8f
-ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
+ms.openlocfilehash: 5e4dab263a85730f893adadab0d3fa5709d17861
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65444234"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649376"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>حلول التدقيق في Microsoft Purview
 
@@ -100,14 +100,14 @@ ms.locfileid: "65444234"
 
 ### <a name="audit-standard"></a>التدقيق (قياسي)
 
-- اشتراك Microsoft Purview Business Basic
-- اشتراك Microsoft Purview Apps for Business
-- اشتراك Microsoft Purview Enterprise E3
-- Premium Microsoft Purview Business
-- اشتراك Microsoft Purview Education A3
-- اشتراك Microsoft Purview Government G3
-- اشتراك Microsoft Purview Government G1
-- Microsoft Purview اشتراك Frontline F1 أو F3 أو الوظيفة الإضافية F5 Security
+- اشتراك Microsoft Business Basic
+- اشتراك Microsoft 365 Apps للأعمال
+- اشتراك Microsoft 365 Enterprise E3
+- Microsoft 365 Business Premium
+- اشتراك Microsoft 365 Education A3
+- اشتراك Microsoft 365 Government G3
+- اشتراك Microsoft 365 Government G1
+- Microsoft 365 اشتراك Frontline F1 أو F3 أو الوظيفة الإضافية F5 Security
 - اشتراك Office 365 Enterprise E3
 - اشتراك Office 365 Enterprise E1
 - اشتراك Office 365 Education A1
@@ -158,7 +158,7 @@ ms.locfileid: "65444234"
   
    - يجب أن يكون تشغيل تطبيق/خطة خدمة التدقيق (Premium) لهؤلاء المستخدمين.
   
-   - تمكين تدقيق الأحداث الهامة ثم تشغيل خطة التدقيق (Premium)ing app/service لهؤلاء المستخدمين.
+   - تمكين تدقيق الأحداث الهامة ثم تشغيل تطبيق/خطة خدمة التدقيق (Premium) لهؤلاء المستخدمين.
 
 2. تمكين تسجيل أحداث التدقيق (Premium) عندما يقوم المستخدمون بإجراء عمليات بحث في Exchange Online SharePoint Online.
 

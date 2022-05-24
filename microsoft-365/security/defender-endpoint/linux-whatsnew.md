@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 385b139390192d172b3bbbcbefd5efc2b793d4ab
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c58c447a4aed08af48576b461a638c1cd43aca83
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173506"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649232"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>ما الجديد في Microsoft Defender لنقطة النهاية على Linux
 
@@ -28,6 +28,15 @@ ms.locfileid: "65173506"
 
 **ينطبق على:**
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1016880-30122042168800"></a>101.68.80 (30.122042.16880.0)
+
+- دعم إضافي لإصدار `2.6.32-754.47.1.el6.x86_64` kernel عند التشغيل على RHEL 6
+- على RHEL 6، يمكن الآن تثبيت المنتج على الأجهزة التي تعمل بنظام Kernel Enterprise غير القابل للكسر (UEK)
+- تم إصلاح مشكلة عرض اسم العملية في بعض الأحيان بشكل غير صحيح كما هو الحال `unknown` عند التشغيل `mdatp diagnostic real-time-protection-statistics`
+- تم إصلاح خطأ حيث كان المنتج في بعض الأحيان يكتشف الملفات داخل مجلد العزل بشكل غير صحيح
+- تم إصلاح مشكلة `mdatp` عدم عمل أداة سطر الأوامر عند `/opt` تحميلها كارتباط مبدئي
+- تحسينات الأداء & إصلاحات الأخطاء
 
 ## <a name="1016577-30122032165770"></a>101.65.77 (30.122032.16577.0)
 

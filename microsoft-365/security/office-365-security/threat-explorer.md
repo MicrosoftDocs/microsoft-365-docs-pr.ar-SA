@@ -20,14 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6992af4483bedfe418610b752d2195a8d22f30d3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 0920439345b026879b86ad3b2ce104d3ea8174d1
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974312"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649420"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>مستكشف التهديدات والكشف في الوقت الحقيقي
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
@@ -172,7 +174,7 @@ ms.locfileid: "64974312"
 
 ### <a name="additional-actions"></a>إجراءات إضافية
 
-تم تطبيق *إجراءات إضافية* بعد تسليم البريد الإلكتروني. يمكن أن تتضمن *ZAP* *والمعالجة اليدوية* (الإجراء الذي اتخذه مسؤول مثل الحذف المبدئي) *والتسليم الديناميكي* *وإعادة المعالجة* (للبريد الإلكتروني الذي تم اكتشافه بأثر رجعي على أنه جيد).
+تم تطبيق *إجراءات إضافية* بعد تسليم البريد الإلكتروني. يمكن أن تتضمن *ZAP* *والمعالجة اليدوية* (الإجراء الذي تم اتخاذه بواسطة مسؤول مثل الحذف المبدئي) *والتسليم الديناميكي* *وإعادة المعالجة* (للبريد الإلكتروني الذي تم اكتشافه بأثر رجعي على أنه جيد).
 
 > [!NOTE]
 > كجزء من التغييرات المعلقة، تظهر القيمة "تمت إزالتها بواسطة ZAP" حاليا في عامل تصفية إجراء التسليم. سيكون لديك طريقة للبحث عن جميع رسائل البريد الإلكتروني مع محاولة ZAP من خلال **إجراءات إضافية**.
@@ -290,7 +292,7 @@ ms.locfileid: "64974312"
 > - EXO فقط - منع فقدان البيانات: الكل
 > - EXO فقط - O365SupportViewConfig: الكل
 > - Microsoft Azure Active Directory أو EXO - مسؤول الأمان: الكل
-> - AAD (دليل Azure النشط) أو EXO - قارئ الأمان: الكل
+> - AAD أو EXO - قارئ الأمان: الكل
 > - EXO فقط - قواعد النقل: الكل
 > - EXO فقط - تكوين View-Only: الكل
 >

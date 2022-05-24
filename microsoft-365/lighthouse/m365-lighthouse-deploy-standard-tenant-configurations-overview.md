@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية استخدام الخطوط الأساسية لنشر تكوينات المستأجر القياسية.
-ms.openlocfilehash: a12abd14064559ec92fc735bd90c1f8d58d24cb1
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 11b8c5ad9adafa4cd6afb6bb4cd19861118e447c
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023294"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647678"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>نظرة عامة على استخدام Microsoft 365 أساسات Lighthouse لنشر تكوينات المستأجر القياسية 
 
@@ -41,11 +41,12 @@ ms.locfileid: "65023294"
 |--|--|
 | طلب المصادقة متعددة العوامل للمسؤولين | نهج الوصول المشروط الذي يتطلب مصادقة متعددة العوامل لجميع المسؤولين. وهي مطلوبة لجميع تطبيقات السحابة. لمزيد من المعلومات حول هذا الأساس، راجع [الوصول المشروط: طلب المصادقة متعددة العوامل لجميع المسؤولين](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa).|
 | طلب المصادقة متعددة العوامل للمستخدمين النهائيين | نهج الوصول المشروط الذي يتطلب مصادقة متعددة العوامل لجميع المستخدمين.  وهي مطلوبة لجميع تطبيقات السحابة. لمزيد من المعلومات حول هذا الأساس، راجع [الوصول المشروط: طلب المصادقة متعددة العوامل لجميع المستخدمين](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). |
-| حظر المصادقة القديمة | نهج الوصول المشروط لحظر مصادقة العميل القديمة. لمزيد من المعلومات حول هذا الأساس، راجع [حظر المصادقة القديمة إلى Azure AD مع الوصول المشروط](/azure/active-directory/conditional-access/block-legacy-authentication).|
+| حظر المصادقة القديمة | نهج الوصول المشروط لحظر مصادقة العميل القديمة. لمزيد من المعلومات حول هذا الأساس، راجع [مصادقة الحظر القديمة Azure AD باستخدام الوصول المشروط](/azure/active-directory/conditional-access/block-legacy-authentication).|
 | إعداد تسجيل الجهاز | تسجيل الجهاز للسماح لأجهزة المستأجر بالتسجيل في إدارة نقاط النهاية من Microsoft. يتم ذلك عن طريق إعداد التسجيل التلقائي بين Azure Active Directory و إدارة نقاط النهاية من Microsoft. لمزيد من المعلومات حول هذا الأساس، راجع [إعداد التسجيل للأجهزة Windows](/mem/intune/enrollment/windows-enroll). |
+| إعداد Exchange Online Protection Microsoft Defender لـ Office 365 | نهج لتطبيق نهج موصى به لمكافحة البريد العشوائي ومكافحة البرامج الضارة ومكافحة التصيد الاحتيالي والارتباطات الآمنة ونهج المرفقات الآمنة للمستأجرين Exchange Online علب البريد. |
 | تكوين برنامج الحماية من الفيروسات من Microsoft Defender Windows 10 والإصدارات الأحدث | ملف تعريف تكوين الجهاز للأجهزة Windows مع إعدادات برنامج الحماية من الفيروسات من Microsoft Defender تم تكوينها مسبقا. لمزيد من المعلومات حول هذا الأساس، راجع [تكوين Microsoft Defender لنقطة النهاية في Intune](/mem/intune/protect/advanced-threat-protection-configure).|
-| تكوين جدار حماية Microsoft Defender Windows 10 والإصدارات الأحدث | نهج جدار الحماية للمساعدة في تأمين الأجهزة عن طريق منع نسبة استخدام الشبكة غير المرغوب فيها وغير المصرح بها. لمزيد من المعلومات حول هذا الأساس، راجع [أفضل الممارسات لتكوين Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
-| تكوين نهج توافق الجهاز Windows 10 والإصدارات الأحدث | نهج جهاز Windows مع إعدادات تم تكوينها مسبقا لتلبية متطلبات التوافق الأساسية. لمزيد من المعلومات حول هذا الأساس، راجع [الوصول المشروط: يتطلب جهازا متوافقا أو مختلطا منضما إلى Azure AD](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
+| تكوين جدار الحماية من Microsoft Defender Windows 10 والإصدارات الأحدث | نهج جدار الحماية للمساعدة في تأمين الأجهزة عن طريق منع نسبة استخدام الشبكة غير المرغوب فيها وغير المصرح بها. لمزيد من المعلومات حول هذا الأساس، راجع [أفضل الممارسات لتكوين جدار حماية Windows Defender](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
+| تكوين نهج توافق الجهاز Windows 10 والإصدارات الأحدث | نهج جهاز Windows مع إعدادات تم تكوينها مسبقا لتلبية متطلبات التوافق الأساسية. لمزيد من المعلومات حول هذا الأساس، راجع [الوصول المشروط: يتطلب جهازا متوافقا أو مختلطا Azure AD الانضمام](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
 
 ## <a name="deployment-plans"></a>خطط النشر
 

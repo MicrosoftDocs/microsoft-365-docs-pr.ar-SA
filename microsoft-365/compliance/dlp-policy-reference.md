@@ -19,16 +19,18 @@ ms.collection:
 recommendations: false
 description: مكون نهج DLP ومرجع التكوين
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 169fb93f7343fd038af9e7b8ae789dabc871c6aa
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 1ad00a36f48849ca110a598f92c5536ef7b21843
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713988"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648581"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>مرجع نهج تفادي فقدان البيانات
 
-تحتوي نهج منع فقدان البيانات (DLP) على العديد من المكونات التي يجب تكوينها. لإنشاء نهج فعال، تحتاج إلى فهم الغرض من كل مكون وكيف يغير تكوينه سلوك النهج. توفر هذه المقالة تشريحا مفصلا لنهج DLP.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+تحتوي نهج تفادي فقدان البيانات في Microsoft Purview (DLP) على العديد من المكونات لتكوينها. لإنشاء نهج فعال، تحتاج إلى فهم الغرض من كل مكون وكيف يغير تكوينه سلوك النهج. توفر هذه المقالة تشريحا مفصلا لنهج DLP.
 
 ## <a name="policy-templates"></a>قوالب النهج 
 
@@ -108,8 +110,8 @@ ms.locfileid: "64713988"
 |حسابات OneDrive for Business| حساب أو مجموعة توزيع |البيانات الثابتة </br> البيانات قيد الاستخدام|لا|
 |Teams رسائل الدردشة والقنوات     | حساب أو مجموعة توزيع |البيانات في الحركة </br> البيانات قيد الاستخدام |  لا       |
 |Microsoft Defender for Cloud Apps   | مثيل تطبيق السحابة       |البيانات الثابتة         | - [استخدام نهج منع فقدان البيانات لتطبيقات السحابة غير التابعة ل Microsoft](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
-|الاجهزه  |المستخدم أو المجموعة         |البيانات الثابتة </br>  البيانات قيد الاستخدام </br>  البيانات في الحركة         |- [تعرف على Microsoft 365 منع فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [البدء في منع فقدان بيانات نقطة النهاية](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [تكوين إعدادات وكيل الجهاز والاتصال بالإنترنت حماية البيانات](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
-|المستودعات المحلية (مشاركات الملفات SharePoint)    |مستودع         | البيانات الثابتة         | - [تعرف على الماسح الضوئي المحلي لمنع فقدان البيانات Microsoft 365](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [بدء استخدام الماسح الضوئي المحلي لمنع فقدان البيانات](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|الاجهزه  |المستخدم أو المجموعة         |البيانات الثابتة </br>  البيانات قيد الاستخدام </br>  البيانات في الحركة         |- [التعرف على منع فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md) </br>- [البدء في منع فقدان بيانات نقطة النهاية](endpoint-dlp-getting-started.md) </br>- [تكوين إعدادات وكيل الجهاز والاتصال بالإنترنت حماية البيانات](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
+|المستودعات المحلية (مشاركات الملفات SharePoint)    |مستودع         | البيانات الثابتة         | - [التعرف على الماسح الضوئي المحلي لمنع فقدان البيانات](dlp-on-premises-scanner-learn.md) </br> - [بدء استخدام الماسح الضوئي المحلي لمنع فقدان البيانات](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 |PowerBI| مساحات العمل | البيانات قيد الاستخدام | لا|
 
 إذا اخترت تضمين مجموعات توزيع معينة في Exchange، فسيتم تحديد نطاق نهج DLP فقط لأعضاء تلك المجموعة. وبالمثل، فإن استبعاد مجموعة توزيع سيستبعد جميع أعضاء مجموعة التوزيع هذه من تقييم النهج. يمكنك اختيار تحديد نطاق نهج لأعضاء قوائم التوزيع ومجموعات التوزيع الديناميكي ومجموعات الأمان. لا يمكن أن يحتوي نهج DLP على أكثر من 50 من هذه التضمينات والاستثناءات.
@@ -539,7 +541,7 @@ for where they are used/expected behavior-->
 
 يمكنك تمكين/تعطيل إعلامات المستخدم لتطبيقات Microsoft المختلفة، راجع [مرجع تلميحات نهج منع فقدان البيانات](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
 
-- يمكنك تمكين/تعطيل **إعلام المستخدمين في خدمة Office 365** مع تلميح نهج.
+- يمكنك تمكين/تعطيل الإعلامات باستخدام تلميح نهج.
     - إعلامات البريد الإلكتروني للمستخدم الذي أرسل المحتوى أو شاركه أو عدله آخر مرة
     - إعلام أشخاص محددين
 
@@ -646,7 +648,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 عند مطابقة قاعدة، يمكنك إرسال تقرير عن الحادث إلى مسؤول الامتثال (أو أي أشخاص تختارهم) مع تفاصيل الحدث. يتضمن التقرير معلومات حول العنصر الذي تمت مطابقته والمحتوى الفعلي الذي طابق القاعدة واسم الشخص الذي أجرى آخر تعديل للمحتوى. بالنسبة لرسائل البريد الإلكتروني، يتضمن التقرير أيضا الرسالة الأصلية التي تتطابق مع نهج DLP كمرفق.
 
-يقوم DLP بتغذية معلومات الحادث إلى خدمات حماية المعلومات Microsoft 365 الأخرى، مثل [إدارة المخاطر من Insider في Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). من أجل الحصول على معلومات الحادث إلى إدارة المخاطر الداخلية، يجب تعيين مستوى خطورة **تقارير الحوادث** إلى **مستوى عال**.
+يقوم DLP بتغذية معلومات الحادث إلى خدمات حماية المعلومات Microsoft Purview الأخرى، مثل [إدارة المخاطر الداخلية](insider-risk-management.md). من أجل الحصول على معلومات الحادث إلى إدارة المخاطر الداخلية، يجب تعيين مستوى خطورة **تقارير الحوادث** إلى **مستوى عال**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 

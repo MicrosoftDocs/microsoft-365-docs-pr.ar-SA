@@ -13,14 +13,16 @@ ms.collection:
 ms.custom: ''
 description: يمكن للمسؤولين تعلم كيفية محاكاة هجمات التصيد الاحتيالي وتدريب مستخدميهم على منع التصيد الاحتيالي باستخدام تدريب محاكاة الهجوم في Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
-ms.openlocfilehash: 94e002adf3fcdefcb3d2483f4f32ce7b10be8dab
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 55810d65c33796a617421f0796191335821bde98
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077632"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648878"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>محاكاة هجوم تصيد احتيالي مع تدريب محاكاة الهجوم في Defender لـ Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على** [Microsoft Defender لـ Office 365 الخطة 2](defender-for-office-365.md)
 

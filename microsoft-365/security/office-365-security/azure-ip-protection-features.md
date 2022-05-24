@@ -19,22 +19,20 @@ ms.custom:
 description: تشرح هذه المقالة التغييرات التي يتم طرحها على ميزات الحماية في Azure حماية البيانات
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbfc21b879745567c9273c79356ff60e498d95ff
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 38dd1accf4641d6dfe3f66574b1072e2500cb914
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130813"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647810"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>حماية البيانات طرح ميزات الحماية في Azure للمستأجرين الحاليين
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **ينطبق على**
 - [Microsoft Defender لـ Office 365 الخطة 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-للمساعدة في الخطوة الأولية لحماية معلوماتك، بدءا من يوليو 2018، سيكون لدى جميع المستأجرين المؤهلين حماية البيانات Azure ميزات الحماية في Azure حماية البيانات قيد التشغيل بشكل افتراضي. كانت ميزات الحماية في حماية البيانات Azure معروفة سابقا في Office 365 باسم إدارة الحقوق أو Azure RMS. إذا كانت مؤسستك لديها خطة خدمة Office E3 أو خطة خدمة أعلى، فستحصل الآن على بداية بادئة لحماية المعلومات من خلال Azure حماية البيانات عندما نطرح هذه الميزات.
+للمساعدة في الخطوة الأولية لحماية معلوماتك، بدءا من يوليو 2018، سيكون لدى جميع المستأجرين المؤهلين حماية البيانات Azure ميزات الحماية في Azure حماية البيانات قيد التشغيل بشكل افتراضي. كانت ميزات الحماية في حماية البيانات Azure معروفة سابقا في Office 365 باسم Rights Management أو Azure RMS. إذا كانت مؤسستك لديها خطة خدمة Office E3 أو خطة خدمة أعلى، فستحصل الآن على بداية بادئة لحماية المعلومات من خلال Azure حماية البيانات عندما نطرح هذه الميزات.
 
 ## <a name="changes-beginning-july-1-2018"></a>تغييرات تبدأ في 1 يوليو 2018
 
@@ -61,15 +59,15 @@ ms.locfileid: "65130813"
 إذا قامت مؤسستك بشراء ترخيص Office 365 مؤهل، فسيتأثر المستأجر بهذا التغيير.
 
 > [!IMPORTANT]
-> إذا كنت تستخدم خدمات إدارة حقوق Active Directory (AD RMS) في بيئتك المحلية، فيجب إما إلغاء الاشتراك في هذا التغيير على الفور أو الترحيل إلى Azure حماية البيانات قبل طرح هذا التغيير في غضون 30 يوما. للحصول على معلومات حول كيفية إلغاء الاشتراك، راجع "أستخدم AD RMS، كيف يمكنني إلغاء الاشتراك؟" لاحقا في هذه المقالة. إذا كنت تفضل الترحيل، فراجع [الترحيل من AD RMS إلى Azure حماية البيانات.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+> إذا كنت تستخدم خدمات Rights Management Active Directory (AD RMS) في بيئتك المحلية، فيجب إما إلغاء الاشتراك في هذا التغيير على الفور أو الترحيل إلى Azure حماية البيانات قبل طرح هذا التغيير في غضون 30 يوما. للحصول على معلومات حول كيفية إلغاء الاشتراك، راجع "أستخدم AD RMS، كيف يمكنني إلغاء الاشتراك؟" لاحقا في هذه المقالة. إذا كنت تفضل الترحيل، فراجع [الترحيل من AD RMS إلى Azure حماية البيانات.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
-## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>هل يمكنني استخدام Azure حماية البيانات مع خدمات إدارة حقوق Active Directory (AD RMS)؟
+## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>هل يمكنني استخدام Azure حماية البيانات مع خدمات Rights Management Active Directory (AD RMS)؟
 
-لا. هذا ليس سيناريو نشر معتمدا. دون اتخاذ خطوات إلغاء الاشتراك الإضافية، قد تبدأ بعض أجهزة الكمبيوتر تلقائيا باستخدام خدمة Azure Rights Management وكذلك الاتصال بمجموعة AD RMS. هذا السيناريو غير مدعوم ولديه نتائج غير موثوق بها، لذلك من المهم إلغاء الاشتراك في هذا التغيير في غضون 30 يوما القادمة قبل طرح هذه الميزات الجديدة. للحصول على معلومات حول كيفية إلغاء الاشتراك، راجع "أستخدم AD RMS، كيف يمكنني إلغاء الاشتراك؟" لاحقا في هذه المقالة. إذا كنت تفضل الترحيل، فراجع [الترحيل من AD RMS إلى Azure حماية البيانات.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+لا. هذا ليس سيناريو نشر معتمدا. دون اتخاذ خطوات إلغاء الاشتراك الإضافية، قد تبدأ بعض أجهزة الكمبيوتر تلقائيا باستخدام خدمة Rights Management Azure والاتصال أيضا بمجموعة AD RMS. هذا السيناريو غير مدعوم ولديه نتائج غير موثوق بها، لذلك من المهم إلغاء الاشتراك في هذا التغيير في غضون 30 يوما القادمة قبل طرح هذه الميزات الجديدة. للحصول على معلومات حول كيفية إلغاء الاشتراك، راجع "أستخدم AD RMS، كيف يمكنني إلغاء الاشتراك؟" لاحقا في هذه المقالة. إذا كنت تفضل الترحيل، فراجع [الترحيل من AD RMS إلى Azure حماية البيانات.](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>كيف أعمل معرفة ما إذا كنت أستخدم AD RMS؟
 
-استخدم هذه الإرشادات من [إعداد البيئة لإدارة حقوق Azure عندما يكون لديك أيضا خدمات إدارة حقوق Active Directory (AD RMS)](/azure/information-protection/deploy-use/prepare-environment-adrms) للتحقق مما إذا كنت قد نشرت AD RMS:
+استخدم هذه الإرشادات من [إعداد البيئة ل Azure Rights Management عندما يكون لديك أيضا خدمات Rights Management Active Directory (AD RMS)](/azure/information-protection/deploy-use/prepare-environment-adrms) للتحقق مما إذا كنت قد نشرت AD RMS:
 
 1. على الرغم من أنه اختياري، فإن معظم عمليات نشر AD RMS تنشر نقطة اتصال الخدمة (SCP) إلى Active Directory بحيث يمكن لأجهزة كمبيوتر المجال اكتشاف مجموعة AD RMS.
 

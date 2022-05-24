@@ -17,21 +17,20 @@ ms.collection:
 description: تعرف على المزيد حول الإعداد الآمن بشكل افتراضي في Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 09395775cc5ecbd420dc7197664401c01c24d6c3
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ab5fa5e9c769d68589b722e8fdc9976fa616e6ac
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664205"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648118"
 ---
 # <a name="secure-by-default-in-office-365"></a>تأمين بشكل افتراضي في Office 365
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender لـ Office 365 الخطة 1 والخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 "الأمان بشكل افتراضي" هو مصطلح يستخدم لتعريف الإعدادات الافتراضية الأكثر أمانا قدر الإمكان.
@@ -80,4 +79,4 @@ Microsoft 365 المؤسسات التي بها علب بريد في Exchange Onl
 - محاكاة التصيد الاحتيالي: يمكن أن تساعدك هجمات المحاكاة في تحديد المستخدمين المعرضين للخطر قبل أن يؤثر هجوم حقيقي على مؤسستك. لمنع تصفية رسائل محاكاة التصيد الاحتيالي، راجع [تكوين محاكاة التصيد الاحتيالي لجهات خارجية في نهج التسليم المتقدم](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 - علب بريد الأمان/SecOps: علب البريد المخصصة التي تستخدمها فرق الأمان للحصول على الرسائل التي لم تتم تصفتها (سواء كانت جيدة أو سيئة). يمكن Teams بعد ذلك المراجعة لمعرفة ما إذا كانت تحتوي على محتوى ضار. لمزيد من المعلومات، راجع [تكوين علب بريد SecOps في نهج التسليم المتقدم](/microsoft-365/security/office-365-security/configure-advanced-delivery#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 - عوامل التصفية التابعة لجهة خارجية: يتم تطبيق "الأمان" بشكل افتراضي فقط عند تعيين سجل MX لمجالك إلى Exchange Online Protection (contoso.mail.protection.outlook.com). إذا تم تعيينه إلى خدمة أو جهاز آخر، فمن الممكن تجاوز Secure بشكل افتراضي باستخدام ["قاعدة النقل"](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) لتجاوز كل تصفية البريد العشوائي. عندما تكتشف Microsoft الرسائل على أنها "تصيد احتيالي عالي الثقة" مع وجود هذه القاعدة، فإنها لا تزال تقوم بتسليمها إلى علبة الوارد. 
-- الإيجابيات الخاطئة: قد ترغب في السماح مؤقتا برسائل معينة لا تزال يتم تحليلها بواسطة Microsoft [عبر عمليات إرسال المسؤول](admin-submission.md). كما هو الحال مع جميع التجاوزات، من المستحسن أن تكون مؤقتة.
+- الإيجابيات الخاطئة: قد ترغب في السماح مؤقتا برسائل معينة لا تزال تحللها Microsoft [عبر عمليات إرسال مسؤول](admin-submission.md). كما هو الحال مع جميع التجاوزات، من المستحسن أن تكون مؤقتة.

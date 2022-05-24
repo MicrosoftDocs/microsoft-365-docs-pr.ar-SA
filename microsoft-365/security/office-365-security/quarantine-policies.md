@@ -17,14 +17,20 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية استخدام نهج العزل للتحكم في ما يمكن للمستخدمين القيام به للرسائل المعزولة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e591330137f2f2fd92ef05f64f5368cca533fc48
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: ef3fc69cf07f4b643e12bab96a73b68627e07203
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599310"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648228"
 ---
 # <a name="quarantine-policies"></a>سياسات العزل
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**ينطبق على:**
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 تسمح نهج العزل (المعروفة سابقا باسم _علامات العزل_) في Exchange Online Protection (EOP) والمسؤولين Microsoft Defender لـ Office 365 بالتحكم في ما يمكن للمستخدمين القيام به للرسائل المعزولة استنادا إلى سبب عزل الرسالة.
 
