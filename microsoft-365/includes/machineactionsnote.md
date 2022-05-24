@@ -1,18 +1,18 @@
 ---
-title: تنفيذ إجراء جهاز عبر Microsoft Defender ل API لنقطة النهاية
-description: تركز هذه الصفحة على تنفيذ إجراء جهاز عبر Microsoft Defender ل API لنقطة النهاية.
+title: تنفيذ إجراء جهاز عبر واجهة برمجة تطبيقات Microsoft Defender لنقطة النهاية
+description: تركز هذه الصفحة على تنفيذ إجراء جهاز عبر واجهة برمجة تطبيقات Microsoft Defender لنقطة النهاية.
 ms.date: 08/28/2017
 ms.reviewer: ''
 manager: dansimp
 ms.author: macapara
 author: mjcaparas
 ms.prod: w10
-ms.openlocfilehash: 13d9d849ec6b6819e6824ba7b2b5d7a139bc81ad
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 6a280e10b89fa8934186aab2a62e30b4ac3b6114
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "63573241"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65650356"
 ---
->[!Note]
-> تركز هذه الصفحة على تنفيذ إجراء جهاز عبر API. راجع [اتخاذ إجراءات الاستجابة على جهاز للحصول](/microsoft-365/security/defender-endpoint/respond-machine-alerts) على مزيد من المعلومات حول وظائف إجراءات الاستجابة عبر Microsoft Defender لنقطة النهاية.
+> [!NOTE]
+> تركز هذه الصفحة على تنفيذ إجراء جهاز عبر واجهة برمجة التطبيقات. راجع [اتخاذ إجراءات الاستجابة على جهاز للحصول على](/microsoft-365/security/defender-endpoint/respond-machine-alerts) مزيد من المعلومات حول وظائف إجراءات الاستجابة عبر Microsoft Defender لنقطة النهاية.

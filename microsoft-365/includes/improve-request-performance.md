@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5648e7b17cc6e83f8d5f54022fb6c826f6da6a6f4277783d5c521e1c95ca6c85
-ms.sourcegitcommit: a1b66e1e80c25d14d67a9b46c79ec7245d88e045
+ms.openlocfilehash: a0f59cd49750dafac230c4aaaa43bf0cf6747c34
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "63583013"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65650355"
 ---
->[!TIP]
->للحصول على أداء أفضل، يمكنك استخدام الخادم بالقرب من موقعك الجغرافي:
+> [!TIP]
+> للحصول على أداء أفضل، يمكنك استخدام الخادم الأقرب إلى موقعك الجغرافي:
+>
 > - api-us.securitycenter.microsoft.com
 > - api-eu.securitycenter.microsoft.com
 > - api-uk.securitycenter.microsoft.com
