@@ -16,12 +16,12 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 67205e2c326c34bdcaac7e36042797c9f261b547
-  ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+  ms.openlocfilehash: 8f9b3abe8b2e4eb6182496635f01b71c001f7b7d
+  ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 05/17/2022
-  ms.locfileid: "65437492"
+  ms.lasthandoff: 05/24/2022
+  ms.locfileid: "65663657"
 title: Microsoft Defender for Business - الأسئلة والأجوبة المتداولة
 summary: >
   استخدم هذه المقالة للحصول على إجابات للأسئلة التي قد تكون لديك حول Defender for Business.
@@ -54,7 +54,7 @@ sections:
     answer: >
       يتضمن Defender for Business حاليا مجموعة من واجهات برمجة التطبيقات لدعم التقارير المخصصة القوية وموصل Power BI. يمكنك جدولة برنامج نصي PowerShell لإنشاء ملخصات تنفيذية منسقة في HTML، وإرسال هذه الملخصات عبر البريد الإلكتروني. راجع [معلومات مرجع واجهة برمجة التطبيقات](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners).
   - question: أنا شريك Microsoft. هل سأتمكن من إدارة مستأجرين متعددين من لوحة تحكم واحدة، أم سيتعين علي تسجيل الدخول إلى كل مستأجر على حدة؟
-    answer: "يتم تمكين Defender for Business في Microsoft 365 Lighthouse للحصول على دعم متعدد المستأجرين في وحدة تحكم واحدة ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). \n \nحاليا، توفر لك قائمة انتظار الأحداث متعددة المستأجرين عرضا عبر المستأجرين للحوادث التي تتطلب الانتباه؛ ومع ذلك، يتم التكوين والإلحاق في مستأجر العميل باستخدام بيانات اعتماد شريكك. \n\nلا تزال القدرات قيد الطرح، ويتم التخطيط لمزيد من سيناريوهات التكامل.\n\nلمعرفة المزيد، راجع [نظرة عامة على Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).\n"
+    answer: "يتم تمكين Defender for Business في Microsoft 365 Lighthouse للحصول على دعم متعدد المستأجرين في وحدة تحكم واحدة ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). \n\nلمعرفة المزيد، راجع [نظرة عامة على Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).\n"
   - question: كيف أعمل تكوين قواعد تقليل الأجزاء المعرضة للهجوم وقدراتها في Defender for Business؟
     answer: >
       التكوين المبسط لقواعد وقدرات تقليل الأجزاء المعرضة للهجوم عبر Defender for Business في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) غير مدعوم حتى الآن. إذا كان لديك Microsoft Intune، يمكنك استخدام مركز إدارة إدارة نقاط النهاية من Microsoft لتكوين نهج تقليل الأجزاء المعرضة للهجوم. راجع [نهج تقليل الأجزاء المعرضة للهجوم لأمان نقطة النهاية في Intune](/mem/intune/protect/endpoint-security-asr-policy).

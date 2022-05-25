@@ -10,12 +10,12 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: تعرف على كيفية الوصول إلى Microsoft Bookings في Microsoft 365.
-ms.openlocfilehash: 98c6ae99bceada7649dc823ca88669ae0081fc10
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: ecd0e970d1e672a7c40bb1876f84d4e55a7dbff0
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637285"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663525"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>تشغيل Microsoft Bookings أو إيقاف تشغيله
 
@@ -87,7 +87,7 @@ ms.locfileid: "65637285"
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>السماح للمستخدمين المحددين فقط بإنشاء تقويمات Bookings
 
-باستخدام قيود النهج، يمكنك منع المستخدمين المرخصين من إنشاء تقويمات Bookings. يجب أولا تمكين Bookings لمؤسستك بأكملها. سيكون لدى جميع المستخدمين في مؤسستك تراخيص Bookings، ولكن يمكن فقط لهؤلاء المضمنين في النهج إنشاء تقويمات Bookings والتحكم الكامل في من يمكنه الوصول إلى التقويمات التي يقومون بإنشائها.
+باستخدام قيود النهج، يمكنك منع المستخدمين المرخصين من إنشاء تقويمات Bookings. سيكون لدى جميع المستخدمين في مؤسستك تراخيص Bookings، ولكن يمكن فقط لهؤلاء المضمنين في النهج إنشاء تقويمات Bookings والتحكم الكامل في من يمكنه الوصول إلى التقويمات التي يقومون بإنشائها.
 
 يمكن للمستخدمين المضمنين في هذا النهج إنشاء تقويمات Bookings جديدة ويمكن إضافتها كموظفون بأي سعة (بما في ذلك دور المسؤول) إلى تقويمات Bookings الموجودة. لن يتمكن المستخدمون غير المضمنين في هذا النهج من إنشاء تقويمات Bookings جديدة وسيتلقىون رسالة خطأ إذا حاولوا القيام بذلك.
 

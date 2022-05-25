@@ -1,7 +1,7 @@
 ---
-title: توفير الوصول إلى موفر خدمة الأمان المدار (MSSP)
+title: توفير وصول موفر خدمة الأمان المدار (MSSP)
 description: تعرف على التغييرات من مركز حماية Microsoft Defender إلى مدخل Microsoft 365 Defender
-keywords: بدء استخدام مدخل Microsoft 365 Defender، Microsoft Defender لـ Office 365، Microsoft Defender لنقطة النهاية، MDO، MDE، جزء واحد من الزجاج، مدخل متقارب، مدخل الأمان، مدخل أمان defender
+keywords: الشروع في العمل مع مدخل Microsoft 365 Defender، Microsoft Defender لـ Office 365، Microsoft Defender لنقطة النهاية، MDO، MDE، جزء واحد من الزجاج، المدخل المتقارب، مدخل الأمان، مدخل أمان defender
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: f0148a8bfe18c7636e95ceae7b268cc70b2e58ed
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 3b3f438555be507d046f99838596a6672714e0ad
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500398"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670213"
 ---
-# <a name="provide-managed-security-service-provider-mssp-access"></a>توفير الوصول إلى موفر خدمة الأمان المدار (MSSP) 
+# <a name="provide-managed-security-service-provider-mssp-access"></a>توفير وصول موفر خدمة الأمان المدار (MSSP) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -33,101 +33,101 @@ ms.locfileid: "64500398"
 **ينطبق على:**
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
-- [Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [مشكلات الأداء في Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-لتنفيذ حل وصول مفوض متعدد المستأجرين، نفذ الخطوات التالية:
+لتنفيذ حل وصول مفوض متعدد المستأجرين، اتبع الخطوات التالية:
 
-1. قم [بتمكين التحكم بالوصول](/windows/security/threat-protection/microsoft-defender-atp/rbac) المستند إلى الدور ل Defender for Endpoint عبر Microsoft 365 Defender الوصول والاتصال مع مجموعات Azure Active Directory (Azure AD).
+1. تمكين [التحكم في الوصول المستند إلى الدور](/microsoft-365/security/defender-endpoint/rbac) ل Defender لنقطة النهاية عبر مدخل Microsoft 365 Defender والاتصال بمجموعات Azure Active Directory (Azure AD).
 
-2. تكوين حزم [الوصول إلى الإدارة](/azure/active-directory/governance/identity-governance-overview) لطلب الوصول وتوفيره.
+2. تكوين [إدارة الاستحقاق للمستخدمين الخارجيين](/azure/active-directory/governance/entitlement-management-external-users) داخل Azure AD Identity Governance لتمكين طلبات الوصول والتوفير.
 
-3. إدارة طلبات الوصول والتدقيقات في [Microsoft Myaccess.](/azure/active-directory/governance/entitlement-management-request-approve)
+3. إدارة طلبات الوصول والتدقيقات في [Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
-## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-defender-portal"></a>تمكين عناصر التحكم بالوصول المستندة إلى الدور في Microsoft Defender لنقطة النهاية في Microsoft 365 Defender المدخل
+## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-defender-portal"></a>تمكين عناصر التحكم في الوصول المستندة إلى الدور في Microsoft Defender لنقطة النهاية في مدخل Microsoft 365 Defender
 
-1. **إنشاء مجموعات وصول إلى موارد MSSP في AAD (دليل Azure النشط): المجموعات**
+1. **إنشاء مجموعات الوصول لموارد MSSP في Customer AAD: Groups**
 
-    سيتم ربط هذه المجموعات بالأدوار التي تقوم بإنشاتها في Defender for Endpoint في Microsoft 365 Defender المدخل. للقيام بذلك، في مستأجر AD للعميل، قم بإنشاء ثلاث مجموعات. في نهج المثال، نقوم بإنشاء المجموعات التالية:
+    سيتم ربط هذه المجموعات بالأدوار التي تقوم بإنشائها في Defender لنقطة النهاية في مدخل Microsoft 365 Defender. للقيام بذلك، في مستأجر AD العميل، قم بإنشاء ثلاث مجموعات. في نهجنا المثال، ننشئ المجموعات التالية:
 
     - محلل من المستوى 1
     - محلل من المستوى 2
-    - الموافقون على محللي MSSP  
+    - الموافقون على محلل MSSP  
 
-2. إنشاء أدوار Defender لنقطة النهاية لمستويات الوصول المناسبة في Customer Defender لنقطة النهاية في Microsoft 365 Defender المدخل والمجموعات.
+2. إنشاء أدوار Defender لنقطة النهاية لمستويات الوصول المناسبة في Customer Defender لنقطة النهاية في Microsoft 365 Defender أدوار المدخل ومجموعاته.
 
-    لتمكين RBAC في مدخل Microsoft 365 Defender العميل، يمكنك الوصول إلى **الأذونات > أدوار نقاط النهاية & مجموعات > الأدوار** باستخدام حساب مستخدم مع حقوق المسؤول العام أو مسؤول الأمان.
+    لتمكين RBAC في مدخل Microsoft 365 Defender العميل، يمكنك الوصول إلى **أدوار نقاط النهاية > & المجموعات > Roles** باستخدام حساب مستخدم له حقوق المسؤول العام أو مسؤول الأمان.
 
     :::image type="content" source="../../media/mssp-access.png" alt-text="تفاصيل الوصول إلى MSSP في مدخل Microsoft 365 Defender" lightbox="../../media/mssp-access.png":::
 
-    بعد ذلك، قم بإنشاء أدوار RBAC لتلبية احتياجات طبقة MSSP SOC. ربط هذه الأدوار ب مجموعات المستخدمين التي تم إنشاؤها عبر "مجموعات المستخدمين المعينين".
+    ثم قم بإنشاء أدوار RBAC لتلبية احتياجات طبقة MSSP SOC. ربط هذه الأدوار بمجموعات المستخدمين التي تم إنشاؤها عبر "مجموعات المستخدمين المعينين".
 
     دوران محتملان:
 
     - **محللو المستوى 1** <br>
-      قم بتنفيذ جميع الإجراءات باستثناء الاستجابة المباشرة وإدارة إعدادات الأمان.
+      تنفيذ كافة الإجراءات باستثناء الاستجابة المباشرة وإدارة إعدادات الأمان.
 
     - **محللو المستوى 2** <br>
-      إمكانات المستوى 1 مع إضافة الاستجابة [المباشرة](/windows/security/threat-protection/microsoft-defender-atp/live-response)
+      قدرات المستوى 1 مع إضافة إلى [الاستجابة المباشرة](/microsoft-365/security/defender-endpoint/live-response).
 
-    لمزيد من المعلومات، راجع [استخدام التحكم بالوصول المستند إلى الدور](/windows/security/threat-protection/microsoft-defender-atp/rbac).
+    لمزيد من المعلومات، راجع [إدارة الوصول إلى المدخل باستخدام التحكم في الوصول المستند إلى الدور](/microsoft-365/security/defender-endpoint/rbac).
 
-## <a name="configure-governance-access-packages"></a>تكوين حزم الوصول إلى الإدارة
+## <a name="configure-governance-access-packages"></a>تكوين حزم الوصول إلى الحوكمة
 
-1. **إضافة MSSP كمنظمة متصلة في AAD (دليل Azure النشط): إدارة الهوية**
+1. **إضافة MSSP كمؤسسة متصلة في Customer AAD: Identity Governance**
 
-    ستسمح إضافة MSSP كمنظمة متصلة ل MSSP بطلب والوصول إليها. 
+    ستسمح إضافة MSSP كمؤسسة متصلة ل MSSP بالطلب وتوفير الوصول. 
 
-    للقيام بذلك، في مستأجر AD للعميل، يمكنك الوصول إلى إدارة الهوية: المؤسسة المتصلة. أضف مؤسسة جديدة وابحث عن مستأجر محلل MSSP الخاص بك عبر "اسم المستأجر" أو "المجال". نقترح إنشاء مستأجر AD منفصل لمحللي MSSP.
+    للقيام بذلك، في مستأجر عميل AD، الوصول إلى Identity Governance: Connected organization. أضف مؤسسة جديدة وابحث عن مستأجر محلل MSSP عبر معرف المستأجر أو المجال. نقترح إنشاء مستأجر AD منفصل لمحللي MSSP.
 
-2. **إنشاء كتالوج موارد في AAD (دليل Azure النشط): إدارة الهوية**
+2. **إنشاء كتالوج موارد في Customer AAD: Identity Governance**
 
-    كتالوجات الموارد عبارة عن مجموعة منطقية من حزم الوصول، تم إنشاؤها في مستأجر AD للعميل.
+    كتالوجات الموارد هي مجموعة منطقية من حزم الوصول، التي تم إنشاؤها في مستأجر عميل AD.
 
-    للقيام بذلك، في مستأجر AD للعميل، يمكنك الوصول إلى إدارة الهوية: الكتالوجات وإضافة **كتالوج جديد**. في مثالنا، سنسميه **MSSP Accesses**.
+    للقيام بذلك، في مستأجر AD العميل، الوصول إلى Identity Governance: Catalogs وإضافة **كتالوج جديد**. في مثالنا، سنسميه **MSSP Accesses**.
 
     :::image type="content" source="../../media/goverance-catalog.png" alt-text="كتالوج جديد في مدخل Microsoft 365 Defender" lightbox="../../media/goverance-catalog.png":::
 
 
-    لمزيد من المعلومات، راجع [إنشاء كتالوج موارد](/azure/active-directory/governance/entitlement-management-catalog-create).
+    لمزيد من المعلومات، راجع [إنشاء كتالوج الموارد](/azure/active-directory/governance/entitlement-management-catalog-create).
 
-3. **إنشاء حزم الوصول إلى موارد MSSP AAD (دليل Azure النشط): إدارة الهوية**
+3. **إنشاء حزم الوصول لموارد MSSP Customer AAD: Identity Governance**
 
-    حزم Access هي مجموعة من الحقوق والوصولات التي سيتم منحها من قبل طالب عند الموافقة. 
+    حزم الوصول هي مجموعة الحقوق والوصول التي سيتم منح الطالب لها عند الموافقة. 
 
-    للقيام بذلك، في مستأجر AD للعميل، يمكنك الوصول إلى إدارة الهوية: حزم Access وإضافة **حزمة Access جديدة**. إنشاء حزمة وصول لموافقي MSSP وكل مستوى محلل. على سبيل المثال، ينشئ تكوين محلل المستوى 1 التالي حزمة وصول تقوم بما يلي:
+    للقيام بذلك، في مستأجر عميل AD، قم بالوصول إلى Identity Governance: Access Packages، وإضافة **حزمة وصول جديدة**. إنشاء حزمة وصول لموافقي MSSP وكل مستوى محلل. على سبيل المثال، ينشئ تكوين محلل المستوى 1 التالي حزمة وصول:
 
-    - يتطلب من عضو في مجموعة AD **الموافقون على محللي MSSP** تخويل طلبات جديدة
-    - لديها مراجعات وصول سنوية، حيث يمكن لمحللين SOC طلب ملحق الوصول
-    - يمكن فقط طلبها من قبل المستخدمين في مستأجر MSSP SOC
-    - تنتهي صلاحية Access التلقائي بعد 365 يوما
+    - يتطلب من عضو في مجموعة AD **MSSP Analyst Approvers** تخويل طلبات جديدة
+    - لديه مراجعات صلاحية الوصول السنوية، حيث يمكن لمحللين SOC طلب ملحق وصول
+    - يمكن طلبها فقط من قبل المستخدمين في مستأجر MSSP SOC
+    - تنتهي صلاحية الوصول التلقائي بعد 365 يوما
 
     :::image type="content" source="../../media/new-access-package.png" alt-text="تفاصيل حزمة وصول جديدة في مدخل Microsoft 365 Defender" lightbox="../../media/new-access-package.png":::
 
     لمزيد من المعلومات، راجع [إنشاء حزمة وصول جديدة](/azure/active-directory/governance/entitlement-management-access-package-create).
 
-4. **توفير ارتباط طلب الوصول إلى موارد MSSP من AAD (دليل Azure النشط): إدارة الهوية**
+4. **توفير ارتباط طلب الوصول إلى موارد MSSP من Customer AAD: Identity Governance**
 
-    يستخدم محللو MSSP SOC ارتباط مدخل الوصول الخاص ب MsSP لطلب الوصول عبر حزم الوصول التي تم إنشاؤها. الارتباط دائم، مما يعني أنه قد يتم استخدام الارتباط نفسه مع مرور الوقت للمحللين الجدد. يدخل طلب المحلل في قائمة انتظار للموافقة عليه من قبل **الموافقين على محللي MSSP**.
+    يتم استخدام ارتباط مدخل الوصول الخاص بي من قبل محللي MSSP SOC لطلب الوصول عبر حزم الوصول التي تم إنشاؤها. الارتباط دائم، ما يعني أنه يمكن استخدام نفس الارتباط بمرور الوقت للمحللين الجدد. ينتقل طلب المحلل إلى قائمة انتظار للموافقة عليها من قبل **الموافقين على محلل MSSP**.
 
     :::image type="content" source="../../media/access-properties.png" alt-text="خصائص الوصول في مدخل Microsoft 365 Defender" lightbox="../../media/access-properties.png":::
 
-    يقع الارتباط في صفحة نظرة عامة لكل حزمة وصول.
+    يقع الارتباط على صفحة النظرة العامة لكل حزمة وصول.
 
 ## <a name="manage-access"></a>إدارة الوصول
 
-1. راجع طلبات الوصول و/أو تخويلها في Myaccess الخاصة بالعملاء و/أو MSSP.
+1. مراجعة طلبات الوصول وتخويلها في العميل و/أو MSSP myaccess.
 
-    يتم إدارة طلبات الوصول في العميل My Access، من قبل أعضاء مجموعة الموافقين لمحللي MSSP.
+    تتم إدارة طلبات الوصول في العميل "الوصول الخاص بي"، من قبل أعضاء مجموعة موافقي محلل MSSP.
 
-    للقيام بذلك، يمكنك الوصول إلى myaccess الخاصة للعميل باستخدام: `https://myaccess.microsoft.com/@<Customer Domain>`.
+    للقيام بذلك، قم بالوصول إلى myaccess الخاصة بالعميل باستخدام: `https://myaccess.microsoft.com/@<Customer Domain>`.
 
     على سبيل المثال:`https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 
-2. الموافقة على الطلبات أو **رفضها** في الموافقات من واجهة المستخدم.
+2. الموافقة على الطلبات أو رفضها في قسم **الموافقات** من واجهة المستخدم.
 
-     في هذه المرحلة، تم توفير وصول المحللين، ويجب أن يتمكن كل محلل من الوصول إلى مدخل Microsoft 365 Defender العميل:
+     في هذه المرحلة، تم توفير وصول المحللين، ويجب أن يكون كل محلل قادرا على الوصول إلى مدخل Microsoft 365 Defender العميل:
 
-    `https://security.microsoft.com/?tid=<CustomerTenantId>` مع الأذونات والأدوار التي تم تعيينها.
+    `https://security.microsoft.com/?tid=<CustomerTenantId>` بالأذونات والأدوار التي تم تعيينها لهم.
 
 > [!IMPORTANT]
-> يسمح الوصول المفوض Microsoft Defender لنقطة النهاية في Microsoft 365 Defender الوصول حاليا إلى مستأجر واحد لكل نافذة مستعرض.
+> يسمح الوصول المفوض إلى Microsoft Defender لنقطة النهاية في مدخل Microsoft 365 Defender حاليا بالوصول إلى مستأجر واحد لكل نافذة مستعرض.

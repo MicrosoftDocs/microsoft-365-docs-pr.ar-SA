@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: تعرف على مكان الوصول إلى Windows Office Deployment Lab Kit.
-ms.openlocfilehash: e90a52a23c6c79a3293d381c0503480abc90c2d7
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: 2324501927b39d860b8f2b06e36a85585fa8d4be
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463154"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669200"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>مجموعة أدوات معمل نشر Windows وOffice 365
 
@@ -97,9 +97,15 @@ ms.locfileid: "65463154"
 - Bitlocker
 - برنامج الحماية من الفيروسات من Microsoft Defender
 - Windows Hello للأعمال
+- Credential Guard لـ Windows Defender       
+- حماية التطبيقات من Microsoft Defender     
+- حماية الإستغلال لـ Windows Defender             
+- التحكم في تطبيق Windows Defender   
+- Microsoft Defender for Endpoint 
+
 
 > [!NOTE]
-> الرجاء استخدام اتصال إنترنت واسع النطاق لتنزيل هذا المحتوى والسماح بما يقرب من 30 دقيقة للتوفير التلقائي. تتطلب بيئة المختبر ما لا يقل عن 16 غيغابايت من الذاكرة المتوفرة و150 غيغابايت من مساحة القرص الحرة. للحصول على الأداء الأمثل، يوصى بتوفير 32 غيغابايت من الذاكرة و300 غيغابايت من المساحة الحرة. تنتهي صلاحية مختبر Windows 10 في 11 أغسطس 2022. تنتهي صلاحية مختبر Windows 11 في 7 أغسطس 2022. سيتم نشر الإصدارات الجديدة قبل انتهاء الصلاحية.
+> الرجاء استخدام اتصال إنترنت واسع النطاق لتنزيل هذا المحتوى والسماح بما يقرب من 30 دقيقة للتوفير التلقائي. تتطلب بيئة المختبر ما لا يقل عن 16 غيغابايت من الذاكرة المتوفرة و150 غيغابايت من مساحة القرص الحرة. للحصول على الأداء الأمثل، يوصى بتوفير 32 غيغابايت من الذاكرة و300 غيغابايت من المساحة الحرة. تنتهي صلاحية برنامج التقييم في هذه المختبرات بعد 90-120 يوما من التنشيط. سيتم نشر إصدارات جديدة من المختبرات في أغسطس 2022. 
 
 ## <a name="additional-guidance"></a>إرشادات إضافية
 

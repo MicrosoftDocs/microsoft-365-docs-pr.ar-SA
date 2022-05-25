@@ -1,22 +1,22 @@
 ### YamlMime:Landing
 title: مكتبة فيديو تدريب المسؤول
-summary: تعرف على كيفية إعداد وإدارة Microsoft 365 لأعمالك باستخدام مقاطع فيديو قصيرة.
+summary: تعرّف على كيفية إعداد وإدارة Microsoft 365 لأعمالك باستخدام مقاطع فيديو قصيرة.
 metadata:
   title: مكتبة فيديو تدريب المسؤول
-  description: تعرف على كيفية إعداد وإدارة Microsoft 365 لأعمالك باستخدام مقاطع فيديو قصيرة.
+  description: تعرّف على كيفية إعداد وإدارة Microsoft 365 لأعمالك باستخدام مقاطع فيديو قصيرة.
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: landing-page
   author: efrene
   ms.author: efrene
-  ms.date: 03/31/2022
+  ms.date: 05/23/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 036a15099420afbc356b1ae795e0f60cf5a81a7d
-  ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+  ms.openlocfilehash: 181254d39d245608bae690f2fdb78f7a6a5c0fa0
+  ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 04/21/2022
-  ms.locfileid: "65014925"
+  ms.lasthandoff: 05/24/2022
+  ms.locfileid: "65663371"
 landingContent:
 - title: بدء الاستخدام
   linkLists:
@@ -35,7 +35,7 @@ landingContent:
     - text: التسجيل للحصول على اشتراك
       url: admin-overview/sign-up-for-office-365.md
     - text: إعداد الخدمة
-      url: setup/business-set-up.md
+      url: /microsoft-365/business-premium/m365bp-setup
     - text: أجهزة كمبيوتر Windows 10 آمنة
       url: setup/secure-win-10-pcs.md
 - title: إعداد الجهاز
@@ -58,7 +58,7 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: الحصول على تطبيق Admin للأجهزة المحمولة
+    - text: الحصول على تطبيق مسؤول للأجهزة المحمولة
       url: admin-overview/admin-mobile-app.md
 - title: صوت العمل
   linkLists:
@@ -142,7 +142,7 @@ landingContent:
       url: security-and-compliance/increase-threat-protection.md
     - text: إدارة الارتباطات الآمنة
       url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
-    - text: تفادي فقدان البيانات
+    - text: منع فقدان البيانات
       url: /microsoft-365/business-premium/m365bp-set-up-compliance.md
     - text: إنشاء تسميات الحساسية
       url: /microsoft-365/business-premium/m365bp-set-up-compliance.md

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8bfa08a92a011d32cdc30e2f68052715b4075fdf
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a70602f9b482196ee949a8f9922f2979b04b3ff4
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665503"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669287"
 ---
 # <a name="take-response-actions-on-a-file"></a>اتخاذ إجراءات الاستجابة على ملف
 
@@ -28,8 +28,8 @@ ms.locfileid: "64665503"
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -151,7 +151,7 @@ ms.locfileid: "64665503"
 
 ### <a name="download-quarantined-files"></a>تنزيل الملفات المعزولة
 
-سيتم حفظ الملفات التي تم عزلها بواسطة برنامج الحماية من الفيروسات من Microsoft Defender أو فريق الأمان بطريقة متوافقة وفقا [لتكوينات إرسال العينة](enable-cloud-protection-microsoft-defender-antivirus.md) الخاصة بك. يمكن لفريق الأمان تنزيل الملفات مباشرة من صفحة تفاصيل الملف عبر الزر "تنزيل ملف". **تكون ميزة المعاينة هذه "قيد التشغيل" بشكل افتراضي**.
+سيتم حفظ الملفات التي تم عزلها بواسطة برنامج الحماية من الفيروسات من Microsoft Defender أو فريق الأمان بطريقة متوافقة وفقا [لتكوينات إرسال العينة](enable-cloud-protection-microsoft-defender-antivirus.md) الخاصة بك. يمكن لفريق الأمان تنزيل الملفات مباشرة من صفحة تفاصيل الملف عبر الزر "تنزيل ملف". **هذه الميزة قيد التشغيل بشكل افتراضي**.
 
 يعتمد الموقع على الإعدادات الجغرافية لمؤسستك (إما الاتحاد الأوروبي أو المملكة المتحدة أو الولايات المتحدة). سيتم جمع ملف تم عزله مرة واحدة فقط لكل مؤسسة. تعرف على المزيد حول حماية بيانات Microsoft من مدخل Service Trust Portal في https://aka.ms/STP.
 

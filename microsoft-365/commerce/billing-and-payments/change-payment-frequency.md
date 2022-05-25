@@ -19,27 +19,27 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid: MET150
-description: تعرف على كيفية تغيير مدى تكرار فوترة اشتراكك في العمل.
-ms.date: 04/02/2021
-ms.openlocfilehash: dcb3d20d12dec8451481626538f759aef627a221
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: تعرف على كيفية تغيير عدد مرات الفوترة التي تتم فوترتها لاشتراك عملك.
+ms.date: 05/24/2022
+ms.openlocfilehash: 366d35b81d5c7ea84d5f9cd471ea4f6b7feac984
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63568318"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669222"
 ---
 # <a name="change-your-billing-frequency"></a>تغيير معدل تكرار الفوترة
 
-عند شراء اشتراك، يمكنك اختيار الفوترة الشهرية أو السنوية. لتغيير عدد المرات التي يتم فيها فوترة اشتراك، استخدم الخطوات التالية.
+عند شراء اشتراك، يمكنك تحديد تكرار الفوترة. لتغيير عدد المرات التي تتم فيها فوترتك للاشتراك، استخدم الخطوات التالية.
 
-1. في مركز الإدارة، انتقل إلى **صفحة فوترة**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">منتجاتك</a> .
-2. على علامة **التبويب** المنتجات، حدد الاشتراك الذي تريد تغييره.
-3. في صفحة تفاصيل الاشتراك، في المقطع **إعدادات الاشتراك والدفع** ، حدد **تحرير معدل تكرار الفوترة**.
-4. في **الجزء تحرير معدل** تكرار الفوترة، حدد الخيار الخاص بكيفية تكرار الفوترة التي تريدها، ثم حدد **تغيير**.
+1. في مركز الإدارة، انتقل إلى صفحة **الفوترة**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">لمنتجاتك</a> .
+2. في علامة التبويب **المنتجات**، حدد الاشتراك الذي تريد تغييره.
+3. في صفحة تفاصيل الاشتراك، في قسم **إعدادات الاشتراك والدفع** ، حدد **"تحرير تكرار الفوترة**".
+4. في جزء **"تحرير تكرار الفوترة** "، حدد خيار عدد المرات التي تريد فيها الفوترة، ثم حدد **"تغيير**".
 
-## <a name="related-content"></a>المحتوى ذي الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
-[عرض الفاتورة أو الفاتورة](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (مقالة)\
-[الدفع مقابل اشتراكك](../../commerce/billing-and-payments/pay-for-your-subscription.md) (مقالة)\
-[تعرف على كيفية البحث عن الفاتورة أو الفاتورة وعرضها](view-your-bill-or-invoice.md) (مقالة)\
+[عرض الفاتورة](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (مقالة)\
+[الدفع مقابل اشتراكك](../../commerce/billing-and-payments/pay-for-your-subscription.md) (مقال)\
+[تعرف على كيفية العثور على الفاتورة أو الفاتورة وعرضها](view-your-bill-or-invoice.md) (مقالة)\
 [تغيير عناوين الفوترة](change-your-billing-addresses.md) (مقالة)

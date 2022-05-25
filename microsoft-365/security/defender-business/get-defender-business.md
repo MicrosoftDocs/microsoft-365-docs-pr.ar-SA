@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: e47fc4630e83cb79a591f1c4fd4fc7421746a15e
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.openlocfilehash: b5fb9fabad337570744dbd94b76c39d446431cf6
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587381"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663481"
 ---
 # <a name="get-microsoft-defender-for-business"></a>الحصول على Microsoft Defender for Business
 
@@ -50,7 +50,7 @@ ms.locfileid: "65587381"
 
 ## <a name="get-microsoft-365-business-premium"></a>الحصول على Microsoft 365 Business Premium
 
-*بدءا من 1 مارس 2022، يتم طرح Defender for Business كجزء من Microsoft 365 Business Premium*. 
+*اعتبارا من 1 مارس 2022، يتم تضمين Defender for Business في Microsoft 365 Business Premium*. 
 
 1. تفضل بزيارة [صفحة منتج Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
@@ -85,7 +85,7 @@ ms.locfileid: "65587381"
    | السيناريو | الاجراء |
    |:---|:---|
    | تقوم بإعداد اشتراك Microsoft 365 للمرة الأولى. | حدد **Go للإعداد الموجه** وأكمل الخطوات التالية:<ol><li>قم بتثبيت تطبيقات Office الآن، أو اختر **"متابعة**" لتخطي هذه الخطوة. (يمكنك تثبيت تطبيقات Office لاحقا.)</li><li>إذا كان لدى شركتك مجال، يمكنك إضافته الآن (يوصى بهذا الخيار). بدلا من ذلك، يمكنك اختيار استخدام مجالك الافتراضي `.onmicrosoft.com` في الوقت الحالي.</li><li>إضافة مستخدمين وتعيين التراخيص. سيتم تعيين ترخيص تلقائيا لكل مستخدم تسرده. راجع [إضافة مستخدمين وتعيين التراخيص في الوقت نفسه](mdb-add-users.md).</li></ol> |
-   | تقوم بإضافة إصدار تجريبي إلى مستأجر Microsoft 365 موجود. | <ol><li>انتقل إلى مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) وسجل الدخول.</li><li>في جزء التنقل، اختر **UsersActive** >  users. راجع قائمة المستخدمين. </li><li>لتعيين التراخيص، اتبع الإرشادات الواردة في [تعيين التراخيص للمستخدمين](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
+   | تقوم بإضافة إصدار تجريبي إلى مستأجر Microsoft 365 موجود. | <ol><li>انتقل إلى مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) وسجل الدخول.</li><li>في جزء التنقل، اختر **"المستخدمون** > **النشطاء**". راجع قائمة المستخدمين. </li><li>لتعيين التراخيص، اتبع الإرشادات الواردة في [تعيين التراخيص للمستخدمين](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
 
 ## <a name="two-portals-for-setup"></a>مدخلان للإعداد
 

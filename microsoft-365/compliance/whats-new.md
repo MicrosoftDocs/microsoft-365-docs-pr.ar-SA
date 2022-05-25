@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: سواء كان ذلك بإضافة حلول جديدة إلى مركز الامتثال، أو تحديث الميزات الحالية استنادا إلى ملاحظاتك، أو طرح وثائق جديدة ومحدثة، Microsoft 365 يساعدك على البقاء على اطلاع على مشهد الامتثال المتغير باستمرار. تعرف على ما كنا عليه حتى هذا الشهر.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4af9cb3073e4fa150a2683c2dd2f125336ef01b8
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 20a8a96146b7f65ef3f8ccec4f099b91d74822a0
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363093"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670091"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>الجديد في Microsoft Purview
 
@@ -138,8 +138,8 @@ ms.locfileid: "65363093"
 | تشفير الرسائل Office 365 | تشفير الرسائل في Microsoft Purview | باستخدام تشفير الرسائل، يمكن لمؤسستك إرسال رسائل البريد الإلكتروني المشفرة وتلقيها بين أشخاص داخل مؤسستك وخارجها. لمعرفة المزيد، راجع [تشفير الرسائل في Microsoft Purview](ome.md). |
 | إدارة الوصول المتميز في Microsoft 365 | إدارة الوصول المتميز لـ Microsoft Purview | تساعد إدارة الوصول المتميز على حماية مؤسستك من الخروقات وتساعد على تلبية أفضل ممارسات التوافق من خلال الحد من الوصول الدائم إلى البيانات الحساسة أو الوصول إلى إعدادات التكوين الهامة. لمعرفة المزيد، راجع [Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md). |
 | موصلات بيانات Microsoft | موصلات بيانات Microsoft Purview | يتيح Microsoft 365 للمسؤولين استخدام موصلات البيانات لاستيراد البيانات غير الخاصة ب Microsoft وأرشفتها، وبيانات الجهات الخارجية من أنظمة الوسائط الاجتماعية وأنظمة المراسلة الفورية وأنظمة التعاون الأساسية للمستندات، إلى علب البريد في مؤسستك Microsoft 365. لمعرفة المزيد، راجع [Microsoft Purview موصلات البيانات](compliance-extensibility.md). |
-| eDiscovery المتقدم في Microsoft 365 <br><br> Microsoft 365 Core eDiscovery | الاكتشاف الإلكتروني لـ Microsoft Purview (Premium) <br><br> الاكتشاف الإلكتروني لـ Microsoft Purview (قياسي) | الاكتشاف الإلكتروني، أو eDiscovery، هو عملية تحديد وتقديم المعلومات الإلكترونية التي يمكن استخدامها كدليل في الحالات القانونية. لمعرفة المزيد، راجع [Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md) [وeDiscovery Microsoft Purview (قياسي).](get-started-core-ediscovery.md) |
-| مركز التوافق في Microsoft 365 | مدخل توافق Microsoft Purview | مدخل المسؤول للوصول إلى الحلول وكتالوج الحلول داخل مجموعة التوافق في Microsoft 365 E5. لمعرفة المزيد، راجع [مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center.md). |
+| eDiscovery المتقدم في Microsoft 365 <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> الاكتشاف الإلكتروني لـ Microsoft Purview (قياسي) | الاكتشاف الإلكتروني، أو eDiscovery، هو عملية تحديد وتقديم المعلومات الإلكترونية التي يمكن استخدامها كدليل في الحالات القانونية. لمعرفة المزيد، راجع [Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md) [وeDiscovery Microsoft Purview (قياسي).](get-started-core-ediscovery.md) |
+| مركز التوافق في Microsoft 365 | مدخل توافق Microsoft Purview | مسؤول المدخل للوصول إلى الحلول وكتالوج الحلول داخل مجموعة التوافق في Microsoft 365 E5. لمعرفة المزيد، راجع [مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center.md). |
 
 ## <a name="march-2022"></a>مارس 2022
 
@@ -168,15 +168,15 @@ ms.locfileid: "65363093"
 - [تكوين إعدادات منع فقدان بيانات نقطة النهاية](dlp-configure-endpoint-settings.md) - جديد للمعاينة العامة لمجموعات التطبيقات المقيدة.
 - [مرجع نهج منع فقدان البيانات](dlp-policy-reference.md) - محدث للمعاينة العامة لمجموعات التطبيقات المقيدة.
 - [ابدأ في منع فقدان البيانات ل Power BI](dlp-powerbi-get-started.md) - جديد للمعاينة العامة.
+- 
+### <a name="information-protection"></a>حماية المعلومات
 
+- [دعم ملاحظات إصدار مجموعة أحرف البايت المزدوجة](mip-dbcs-relnotes.md) - تمت إضافة إرشادات macOS.
+- 
 ### <a name="insider-risk-management"></a>إدارة المخاطر الداخلية
 
 - [البدء في إدارة المخاطر الداخلية](insider-risk-management-configure.md) - إضافة مهام جديدة لإرشادات الإجراءات الموصى بها.
 - [ابدأ بإعدادات إدارة المخاطر الداخلية](insider-risk-management-settings.md) - تحديثات جديدة لميزات الإعلامات وتنبيهات البريد الإلكتروني، وتحديثات جديدة لإعلامات التحليلات.
-
-### <a name="microsoft-information-protection"></a>حماية البيانات في Microsoft
-
-- [دعم ملاحظات إصدار مجموعة أحرف البايت المزدوجة](mip-dbcs-relnotes.md) - تمت إضافة إرشادات macOS.
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
 

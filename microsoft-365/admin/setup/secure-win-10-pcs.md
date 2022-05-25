@@ -25,18 +25,18 @@ search.appverid:
 - BCS160
 - MET150
 description: تعرف على كيفية تأمين أجهزة الكمبيوتر Windows 10 بعد إعداد Microsoft 365 Business Premium.
-ms.openlocfilehash: d0f2842c69127893e512822a8d91dfd37a4a0e48
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 872fce9124f6a27dd884ed9d740baa9d195d8f95
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622908"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663437"
 ---
 # <a name="secure-windows-10-computers"></a>تأمين أجهزة كمبيوتر تعمل بنظام التشغيل Windows 10
 
 تنطبق هذه المقالة على Microsoft 365 Business Premium.
 
-بعد [إعداد](business-set-up.md) Microsoft 365 Business Premium، حان الوقت لحماية أجهزة الكمبيوتر Windows 10 في مؤسستك من السرقة، والتهديدات الضارة مثل الفيروسات والبرامج الضارة.
+بعد [إعداد](/microsoft-365/business-premium/m365bp-setup) Microsoft 365 Business Premium، حان الوقت لحماية أجهزة الكمبيوتر Windows 10 في مؤسستك من السرقة، والتهديدات الضارة مثل الفيروسات والبرامج الضارة.
 
 ## <a name="watch-secure-your-windows-10-pcs"></a>المراقبة: تأمين أجهزة الكمبيوتر Windows 10
 

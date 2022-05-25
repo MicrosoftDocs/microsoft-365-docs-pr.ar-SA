@@ -1,41 +1,39 @@
 ### YamlMime:Landing
-title: أهم 20 مقالة من مقالات تعليمات المسؤول الأكثر مشاهدة هذا الشهر
-summary: تم التحديث الأخير في 23/3/2022. هل ينتابك الفضول حول مقالات المساعدة الأكثر شيوعا لدى المسؤولين؟ اطلع على هذه المجموعة من مقالات المساعدة العشرين الأكثر مشاهدة، التي تم تحديثها شهريا.
+title: أفضل 20 مقالة من مقالات تعليمات المسؤول الأكثر عرض هذا الشهر
+summary: تاريخ التحديث الأخير 24/5/2022. هل لديك الفضول بشأن مقالات التعليمات الأكثر شيوعا لدى المسؤولين؟ اطلع على هذه المجموعة من 20 مقالة تعليمات الأكثر عرض، تم تحديثها شهريا.
 metadata:
-  title: أهم 20 مقالة من مقالات تعليمات المسؤول الأكثر مشاهدة هذا الشهر
-  description: اطلع على هذه المجموعة من أهم 20 مقالة تعليمات الأكثر شيوعا بين المسؤولين، التي تم تحديثها شهريا.
+  title: أفضل 20 مقالة من مقالات تعليمات المسؤول الأكثر عرض هذا الشهر
+  description: اطلع على هذه المجموعة من أفضل 20 مقالة تعليمات الأكثر شيوعا مع المسؤولين، ويتم تحديثها شهريا.
   ms.service: O365-administration
   ms.topic: landing-page
   author: SKjerland
   ms.author: sharik
-  ms.date: 03/22/2022
+  ms.date: 05/24/2022
   ms.localizationpriority: high
   ms.custom: AdminSurgePortfolio
   ms.collection: Adm_TOC
-  ms.openlocfilehash: 115617fb4291e65b828bb8308afab1765fcab3b6
-  ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
+  ms.openlocfilehash: d27424db329d3d5b42dfea2ab6b98a0340f75b6f
+  ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 03/23/2022
-  ms.locfileid: "63761511"
+  ms.lasthandoff: 05/25/2022
+  ms.locfileid: "65670069"
 landingContent:
 - title: إدارة البيانات والخدمات
   linkLists:
   - linkListType: overview
     links:
-    - text: حول أدوار المسؤولين
+    - text: معلومات حول أدوار المسؤول
       url: add-users/about-admin-roles.md
-    - text: Microsoft 365 تقارير الاستخدام
+    - text: تقارير استخدام Microsoft 365
       url: activity-reports/activity-reports.md
-  - linkListType: video
-    links:
-    - text: الحصول على المساعدة أو الدعم
+    - text: الحصول على دعم Microsoft 365 للأعمال
       url: get-help-support.md
 - title: المجالات
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: إضافة سجلات DNS لتوصيل مجالك
+    - text: إضافة سجلات DNS لتقوم بتوصيل مجالك
       url: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
     - text: إضافة مجال إلى Microsoft 365
       url: setup/add-domain.md
@@ -43,25 +41,25 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: إعداد المصادقة متعددة العوامل
+    - text: إعداد المصادقة متعددة العوامل Microsoft 365
       url: security-and-compliance/set-up-multi-factor-authentication.md
 - title: الفواتير والاشتراكات
   linkLists:
   - linkListType: overview
     links:
-    - text: حول أرقام التسجيل والإعلامات التي لم يتم مراجعتها
+    - text: حول أرقام التسجيل وإعلامات المراجعة غير المراجعة
       url: ../commerce/about-registration-numbers.md
   - linkListType: how-to-guide
     links:
-    - text: إلغاء اشتراكك
+    - text: إلغاء اشتراك الأعمال الخاصة بك
       url: ../commerce/subscriptions/cancel-your-subscription.md
-    - text: الدفع مقابل اشتراكك
+    - text: دفع قيمة اشتراكك
       url: ../commerce/billing-and-payments/pay-for-your-subscription.md
     - text: إدارة طرق الدفع
       url: ../commerce/billing-and-payments/manage-payment-methods.md
-    - text: عرض الفاتورة أو الفاتورة
+    - text: عرض الفوترة أو الفاتورة
       url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
-- title: البريد الإلكتروني
+- title: البريد الالكتروني
   linkLists:
   - linkListType: overview
     links:
@@ -73,7 +71,7 @@ landingContent:
       url: email/configure-email-forwarding.md
     - text: إنشاء علبة بريد مشتركة
       url: email/create-a-shared-mailbox.md
-    - text: منح أذونات علبة البريد لمستخدم آخر
+    - text: منح أذونات علبة البريد لمستخدم Microsoft 365 آخر
       url: add-users/give-mailbox-permissions-to-another-user.md
     - text: تغيير اسم المستخدم وعنوان البريد الإلكتروني
       url: add-users/change-a-user-name-and-email-address.md
@@ -81,17 +79,11 @@ landingContent:
       url: email/convert-user-mailbox-to-shared-mailbox.md
 - title: المستخدمون والمجموعات وكلمات المرور
   linkLists:
-  - linkListType: overview
-    links:
-    - text: مقارنة المجموعات
-      url: create-groups/compare-groups.md
   - linkListType: how-to-guide
     links:
-    - text: إضافة مستخدمين وتعيين تراخيص في الوقت نفسه
+    - text: إضافة مستخدمين وتعيين التراخيص في الوقت نفسه
       url: add-users/add-users.md
-    - text: تعيين تراخيص للمستخدمين
+    - text: تعيين تراخيص Microsoft 365 للمستخدمين
       url: manage/assign-licenses-to-users.md
-    - text: تعيين نهج انتهاء صلاحية كلمة المرور لمنظمتك
-      url: manage/set-password-expiration-policy.md
-    - text: السماح للمستخدمين تسجيل الدخول Outlook تطبيقات الأجهزة المحمولة باستخدام رمز الاستجابة السريعة
+    - text: السماح للمستخدمين بتسجيل الدخول إلى Outlook تطبيقات الأجهزة المحمولة باستخدام رمز الاستجابة السريعة
       url: manage/use-qr-code-download-outlook.md

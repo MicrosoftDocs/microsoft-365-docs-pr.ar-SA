@@ -20,13 +20,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: تعرف على حسابات الفوترة وكيفية استخدامها لإدارة إعدادات الحساب والفواتير وطرق الدفع والشراء.
-ms.date: 03/17/2021
-ms.openlocfilehash: 45f9e9d9a174094badaae8087803fbdb3eec3f3b
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.date: 05/24/2022
+ms.openlocfilehash: 0c1dd2048cbe38ecca162f361f3f0bdbc6c3861f
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731384"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670047"
 ---
 # <a name="understand-billing-accounts"></a>فهم حسابات الفوترة
 
@@ -76,9 +76,10 @@ ms.locfileid: "64731384"
 - قارئ &mdash; **حساب الفوترة** يمكن عرض الحسابات.
 
 > [!Note]
-> تنطبق أدوار حساب الفوترة فقط على حسابات الفوترة، ولا تنطبق على سيناريوهات مركز مسؤولي Microsoft 365 الأخرى.
+> - تنطبق أدوار حساب الفوترة فقط على حسابات الفوترة، ولا تنطبق على سيناريوهات مركز مسؤولي Microsoft 365 الأخرى.
+> - بالنسبة لحسابات الفوترة التي تم إنشاؤها داخل Microsoft 365 التسجيل، يتم منح مسؤولي عموميين جدد ومسؤولي الفوترة والقارئ العمومي مستويات مميزة من الوصول تلقائيا. يمكنك إدارة هذا الوصول من  >  صفحة **حسابات الفوترة** عن طريق إزالة هؤلاء المستخدمين بشكل صريح من قسم تعيين الدور في أسفل الصفحة.
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [المعلومات الضريبية](billing-and-payments/tax-information.md) (مقالة) /
 [فهم ملفات تعريف الفوترة](billing-and-payments/manage-billing-profiles.md) (مقالة)

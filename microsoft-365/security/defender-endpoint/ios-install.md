@@ -16,19 +16,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ed4b69aae3a29478a2b8bfb98d8ab605e5af28a8
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 4a81f125f9f32a5b4bdafd6d4656699fa17caa82
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188647"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669959"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>نشر Microsoft Defender لنقطة النهاية على iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,10 +51,10 @@ ms.locfileid: "65188647"
 
 ### <a name="add-ios-store-app"></a>إضافة تطبيق متجر iOS
 
-1. في [مركز إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى تطبيق متجر **AppsiOS** -> **/iPadOSAddiOS** ->  ->  وانقر فوق **"تحديد**".
+1. في [مركز إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)، **انتقل إلى** ->  تطبيق متجر **App iOS/iPadOS** -> **Add** -> **iOS** وانقر فوق **"تحديد**".
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ios-deploy-1.png" alt-text="علامة التبويب &quot;إضافة تطبيقات&quot; في مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/ios-deploy-1.png":::
+    > :::image type="content" source="images/ios-deploy-1.png" alt-text="علامة التبويب &quot;إضافة تطبيقات&quot; في إدارة نقاط النهاية من Microsoft مسؤول Center" lightbox="images/ios-deploy-1.png":::
 
 1. في صفحة **"إضافة تطبيق**"، انقر فوق **"البحث في App Store**" واكتب **Microsoft Defender لنقطة النهاية** في شريط البحث. في قسم نتائج البحث، انقر فوق *Microsoft Defender لنقطة النهاية* وانقر فوق **"تحديد**".
 
@@ -66,7 +66,7 @@ ms.locfileid: "65188647"
     > يجب أن تتكون مجموعة المستخدمين المحددة من المستخدمين المسجلين في Intune.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ios-deploy-2.png" alt-text="علامة التبويب &quot;إضافة مجموعة&quot; في مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/ios-deploy-2.png":::
+    > :::image type="content" source="images/ios-deploy-2.png" alt-text="علامة التبويب &quot;إضافة مجموعة&quot; في إدارة نقاط النهاية من Microsoft مسؤول Center" lightbox="images/ios-deploy-2.png":::
 
 1. في المقطع *"مراجعة + إنشاء* "، تحقق من صحة كافة المعلومات التي تم إدخالها ثم حدد **"إنشاء**". في لحظات قليلة، يجب إنشاء تطبيق Defender لنقطة النهاية بنجاح، ويجب أن يظهر إعلام في الزاوية العلوية اليسرى من الصفحة.
 
@@ -89,7 +89,7 @@ ms.locfileid: "65188647"
 1. سجل الدخول إلى [مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) وانتقل إلى **نهج** \> تكوين **تطبيقات التطبيقات** \> **Add**. حدد **الأجهزة المدارة**.
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft Admin Center4.](images/ios-deploy-4.png)
+    > ![صورة إدارة نقاط النهاية من Microsoft مسؤول Center4.](images/ios-deploy-4.png)
 
 1. في صفحة *إنشاء نهج تكوين التطبيق* ، قم بتوفير المعلومات التالية:
     - اسم النهج
@@ -97,7 +97,7 @@ ms.locfileid: "65188647"
     - التطبيق المستهدف: حدد **Microsoft Defender لنقطة النهاية** من القائمة
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft Admin Center5.](images/ios-deploy-5.png)
+    > ![صورة إدارة نقاط النهاية من Microsoft مسؤول Center5.](images/ios-deploy-5.png)
 
 1. في الشاشة التالية، حدد **"استخدام مصمم التكوين** " كتنسيق. حدد الخاصية التالية:
     - مفتاح التكوين: تم إصداره
@@ -105,7 +105,7 @@ ms.locfileid: "65188647"
     - قيمة التكوين: {{issupervised}}
 
     > [!div class="mx-imgBorder"]
-    > ![صورة إدارة نقاط النهاية من Microsoft Admin Center6.](images/ios-deploy-6.png)
+    > ![صورة إدارة نقاط النهاية من Microsoft مسؤول Center6.](images/ios-deploy-6.png)
 
 1. حدد **"التالي** " لفتح صفحة **علامات النطاق** . علامات النطاق اختيارية. حدد **"التالي** " للمتابعة.
 
@@ -120,10 +120,10 @@ ms.locfileid: "65188647"
 1. بعد ذلك، يجب نشر ملف تعريف مخصص على أجهزة iOS الخاضعة للإشراف. هذا من أجل قدرات مكافحة التصيد الاحتيالي المحسنة. اتبع الخطوات أدناه:
 
     - تنزيل ملف تعريف التكوين من [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
-    - الانتقال إلى ملفات تعريف  -> **DevicesiOS** -> **/iPadOSConfigurationCreate** ->  **Profile**
+    - الانتقال إلى **ملفات تعريف** ->  تكوين **iOS/iPadOS** ->  **للأجهزة** -> **إنشاء ملف تعريف**
 
     > [!div class="mx-imgBorder"]
-    > ![صورة لمركز إدارة إدارة نقاط النهاية من Microsoft 7.](images/ios-deploy-7.png)
+    > ![صورة إدارة نقاط النهاية من Microsoft مسؤول Center7.](images/ios-deploy-7.png)
     
     - توفير اسم لملف التعريف. عند مطالبتك باستيراد ملف تعريف تكوين، حدد الملف الذي تم تنزيله من الخطوة السابقة.
     - في قسم **"الواجب"** ، حدد مجموعة الأجهزة التي تريد تطبيق ملف التعريف هذا عليها. وكأفضل ممارسة، يجب تطبيق ذلك على جميع أجهزة iOS المدارة. حدد **التالي**.
@@ -141,7 +141,7 @@ ms.locfileid: "65188647"
 
 تبسط هذه الخطوة عملية الإلحاق عن طريق إعداد ملف تعريف VPN. للحصول على تجربة إعداد بدون لمس أو صمت، راجع القسم التالي: [إعداد بدون لمسة](#zero-touch-onboarding-of-microsoft-defender-for-endpoint).
 
-1. في [مركز إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى **ملف** **تعريف DevicesConfiguration** ->  **ProfilesCreate** -> .
+1. في [مركز إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى ملفات **تعريف** ->  تكوين **الأجهزة** -> **لإنشاء ملف تعريف**.
 1. اختر **النظام الأساسي** ك **iOS/iPadOS** **ونوع ملف التعريف** ك **VPN**. انقر فوق **"إنشاء**".
 1. اكتب اسما لملف التعريف وانقر فوق **"التالي**".
 1. حدد **VPN مخصص** لنوع الاتصال وفي قسم **الشبكة الظاهرية الخاصة الأساسية** ، أدخل ما يلي:
@@ -152,7 +152,7 @@ ms.locfileid: "65188647"
     - معرف VPN = com.microsoft.scmx
     - في أزواج قيم المفاتيح، أدخل لوحة التشغيل **التلقائي** للمفتاح وقم بتعيين القيمة إلى **True**.
     - نوع VPN التلقائي = VPN عند الطلب
-    - انقر فوق **"إضافة** لقواعد **عند الطلب**" وحدد **"أريد القيام بما يلي = تأسيس VPN****"، أريد أن أقتصر على = كافة المجالات**.
+    - حدد **"إضافة** لقواعد **عند الطلب**" وحدد **أريد القيام بما يلي = الاتصال VPN**، **أريد أن أقتصر على = كافة المجالات**.
 
     :::image type="content" source="images/ios-deploy-8.png" alt-text="علامة التبويب إعدادات تكوين ملف تعريف VPN" lightbox="images/ios-deploy-8.png":::
 
@@ -168,7 +168,7 @@ ms.locfileid: "65188647"
 
 يمكن للمسؤولين تكوين Microsoft Defender لنقطة النهاية للنشر والتنشيط بصمت. في هذا التدفق، يقوم المسؤول بإنشاء ملف تعريف نشر ويتم إعلام المستخدم ببساطة بالتثبيت. يتم تثبيت Defender لنقطة النهاية تلقائيا دون الحاجة إلى فتح المستخدم للتطبيق. اتبع الخطوات أدناه لإعداد نشر بدون لمس أو صمت ل Defender لنقطة النهاية على أجهزة iOS المسجلة:
 
-1. في [مركز إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى **ملف** **تعريف DevicesConfiguration** >  **ProfilesCreate** > .
+1. في [مركز إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى ملفات **تعريف** >  تكوين **الأجهزة** > **لإنشاء ملف تعريف**.
 1. اختر **النظام الأساسي** ك **iOS/iPadOS** **ونوع ملف التعريف** ك **VPN**. حدد **"إنشاء**".
 1. اكتب اسما لملف التعريف وحدد **"التالي**".
 1. حدد **VPN مخصص** لنوع الاتصال وفي قسم **الشبكة الظاهرية الخاصة الأساسية** ، أدخل ما يلي:
@@ -179,7 +179,7 @@ ms.locfileid: "65188647"
     - معرف VPN = com.microsoft.scmx
     - في أزواج قيم المفاتيح، أدخل المفتاح **SilentOnboard** وقم بتعيين القيمة إلى **True**.
     - نوع VPN التلقائي = VPN عند الطلب
-    - حدد **"إضافة** لقواعد **عند الطلب** " وحدد **أريد القيام بما يلي = إنشاء VPN**، **أريد أن أقتصر على = كافة المجالات**.
+    - حدد **"إضافة** لقواعد **عند الطلب**" وحدد **أريد القيام بما يلي = الاتصال VPN**، **أريد أن أقتصر على = كافة المجالات**.
 
     :::image type="content" source="images/ios-deploy-9.png" alt-text="صفحة تكوين ملف تعريف VPN" lightbox="images/ios-deploy-9.png":::
 

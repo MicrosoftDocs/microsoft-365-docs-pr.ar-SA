@@ -13,17 +13,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: الأمان في Office 365، من EOP إلى Defender لـ Office 365 الخطتان 1 و2، القياسي مقابل تكوينات الأمان الصارمة، والمزيد. اعرف ممتلكاتك وكيفية تأمينها.
+description: الأمان في Office 365، من EOP إلى Defender لخطط Office 365 1 و2، وتكوينات أمان قياسية مقابل مقيدة، والمزيد. فهم ما لديك، وكيفية تأمين خصائصك.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9f480575c712488a17dc7e9e91320edc11d0e50
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 62a8d298c9b3e47acb9ba9af5782624646487677
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835898"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647766"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>نظرة عامة على أمان Microsoft Defender لـ Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -61,7 +63,7 @@ ms.locfileid: "64835898"
 
 جوهر أمان Office 365 هو حماية EOP. يحتوي Microsoft Defender لـ خطة 1 من Office 365 على EOP فيه. تحتوي خطة 2 من Defender for Office 365 على خطة 1 وEOP. الهيكل تراكمي. لهذا السبب، عند تكوين هذا المنتج، يجب أن تبدأ بـ EOP وتعمل على Defender لـ Office 365.
 
-على الرغم من أن تكوين مصادقة البريد الإلكتروني يتم في DNS العام، فمن المهم تكوين هذه الميزة للمساعدة في الدفاع ضد تزييف الهوية. *إذا كان لديك EOP*، ***فيجب عليك [تكوين مصادقة البريد الإلكتروني](email-validation-and-authentication.md)***.
+على الرغم من أن تكوين مصادقة البريد الإلكتروني يتم في DNS العام، فمن المهم تكوين هذه الميزة للمساعدة في الدفاع ضد الانتحال. *إذا كان لديك EOP،****فيجب [تكوين مصادقة البريد الإلكتروني](email-validation-and-authentication.md)***.
 
 إذا كان لديك Office 365 E3 أو أقل، فلديك EOP، ولكن مع خيار شراء Defender مستقل للخطة 1 من Office 365 من خلال الترقية. إذا كان لديك Office 365 E5، فهذا يعني أن لديك بالفعل Defender للخطة 2 من Office 365.
 
@@ -108,14 +110,14 @@ ms.locfileid: "64835898"
 |---|---|---|
 |تتضمن التقنيات كل شيء في EOP وMicrosoft Defender لـ Office 365 P1 plus:<ul><li>متشابه</li>|<li>**طرق عرض مستكشف المخاطر**</li><li>متعقب المخاطر</li><li>طرق عرض الحملة</li>|<li>التحقيق التلقائي والاستجابة (AIR)</li><li>الفحص والاستجابة التلقائيين من مستكشف المخاطر</li><li>الفحص والاستجابة التلقائيين للمستخدمين المخترقين</li><li>واجهة برمجة تطبيقات تكامل SIEM للفحوصات الآلية</li>
 
-لذلك، يتوسع Microsoft Defender لـ Office 365 P2 في ***جانب التحقيق والاستجابة*** في المنزل، ويضيف قوة صيد جديدة. التشغيل التلقائي.
+لذلك، يتوسع Microsoft Defender لـ Office 365 P2 في ***جانب التحقيق والاستجابة*** في المنزل، ويضيف قوة صيد جديدة. أتمتة.
 
 في Microsoft Defender for Office 365 P2، تسمى أداة الصيد الأساسية **مستكشف المخاطر** بدلاً من الاكتشافات في الوقت الفعلي. إذا رأيت مستكشف التهديدات عند الانتقال إلى مدخل Microsoft 365 Defender، فأنت في Microsoft Defender لـ Office 365 P2.
 
 للوصول إلى تفاصيل Microsoft Defender لـ Office 365 P1 وP2، **[انتقل إلى هذه المقالة](defender-for-office-365.md)**.
 
 > [!TIP]
-> يختلف EOP و Microsoft Defender for Office 365 أيضاً عندما يتعلق الأمر بالمستخدمين النهائيين. في EOP وDefender for Office 365 P1، ينصب التركيز على *الوعي*، ومن ثم فإن هاتين الخدمتين تتضمنان *رسالة تقرير الوظيفة الإضافية Outlook* حتى يتمكن المستخدمون من الإبلاغ عن رسائل البريد الإلكتروني التي يجدونها مريبة، لمزيد من التحليل. <p> في Defender for Office 365 P2 (الذي يحتوي على كل شيء في EOP وP1)، ينتقل التركيز إلى مزيد من *التدريب للمستخدمين النهائيين*، وبالتالي يتمتع مركز عمليات الأمان بإمكانية الوصول إلى أداة *محاكاة التهديدات* القوية ومقاييس المستخدم النهائي التي يوفرها.
+> يختلف كل من EOP وMicrosoft Defender لـ Office 365 أيضًا عندما يتعلق الأمر للمستخدمين النهائيين. في EOP و Defender لـ Office 365 P1، يكون التركيز على *الوعي*، وبالتالي فإن هاتين الخدمتين تتضمنان *وظيفة Outlook الإضافية "الإبلاغ عن رسالة* " حتى يتمكن المستخدمون من الإبلاغ عن رسائل البريد الإلكتروني التي يجدونها مشبوهة، لمزيد من التحليل. <p> في Defender for Office 365 P2 (الذي يحتوي على كل شيء في EOP وP1)، ينتقل التركيز إلى مزيد من *التدريب للمستخدمين النهائيين*، وبالتالي يتمتع مركز عمليات الأمان بإمكانية الوصول إلى أداة *محاكاة التهديدات* القوية ومقاييس المستخدم النهائي التي يوفرها.
 
 ## <a name="microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet"></a>ورقة معلومات مرجعية لـ Microsoft Defender لـ Office 365 (الخطة 1) مقابل الخطة 2
 

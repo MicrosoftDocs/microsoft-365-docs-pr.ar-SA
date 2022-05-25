@@ -1,7 +1,7 @@
 ---
-title: نشر التحديثات Microsoft Defender لنقطة النهاية Mac
-description: التحكم في التحديثات Microsoft Defender لنقطة النهاية Mac في بيئات المؤسسات.
-keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، التحديثات، النشر
+title: نشر تحديثات Microsoft Defender لنقطة النهاية على Mac
+description: التحكم في تحديثات Microsoft Defender لنقطة النهاية على Mac في بيئات المؤسسة.
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، التحديثات، التوزيع
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b9ddf9693a242b3b8c466cfa1616b62c5eb73b9
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 4612c7ca68ab0b55fa2a2f28821cb5baef6ff6e9
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469284"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669331"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>نشر تحديثات Microsoft Defender لنقطة النهاية macOS
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>نشر تحديثات Microsoft Defender لنقطة النهاية على macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,64 +30,65 @@ ms.locfileid: "64469284"
 **ينطبق على:**
 
 - [Microsoft Defender لنقطة النهاية على macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-تنشر Microsoft تحديثات البرامج بشكل منتظم لتحسين الأداء والأمان وتقديم ميزات جديدة.
+تنشر Microsoft تحديثات البرامج بانتظام لتحسين الأداء والأمان وتقديم ميزات جديدة.
 
-لتحديث Microsoft Defender لنقطة النهاية macOS، يتم استخدام برنامج يسمى التحديث التلقائي ل Microsoft (MAU). بشكل افتراضي، يتحقق MAU تلقائيا من وجود تحديثات يوميا، ولكن يمكنك تغيير ذلك إلى أسبوعيا أو شهريا أو يدويا.
+لتحديث Microsoft Defender لنقطة النهاية على macOS، يتم استخدام برنامج يسمى التحديث التلقائي لبرامج Microsoft (MAU). بشكل افتراضي، يتحقق MAU تلقائيا من وجود تحديثات يوميا، ولكن يمكنك تغيير ذلك إلى أسبوعيا أو شهريا أو يدويا.
 
-:::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
+:::image type="content" source="images/MDATP-34-MAU.png" alt-text="ماو" lightbox="images/MDATP-34-MAU.png":::
 
-إذا قررت نشر التحديثات باستخدام أدوات توزيع البرامج، يجب تكوين MAU للتحقق يدويا من وجود تحديثات البرامج. يمكنك نشر التفضيلات لتكوين كيفية و متى يتحقق MAU من وجود تحديثات ل Mac في مؤسستك.
+إذا قررت نشر التحديثات باستخدام أدوات توزيع البرامج، يجب تكوين MAU للتحقق يدويا من تحديثات البرامج. يمكنك نشر التفضيلات لتكوين كيفية ووقت قيام MAU بالتحقق من وجود تحديثات لأجهزة Mac في مؤسستك.
 
 ## <a name="use-msupdate"></a>استخدام msupdate
 
-تتضمن MAU أداة سطر الأوامر، تسمى *msupdate*، تم تصميمها لمسؤولي تكنولوجيا المعلومات بحيث يكون لديهم تحكم أكثر دقة في وقت تطبيق التحديثات. يمكن العثور على إرشادات حول كيفية استخدام هذه الأداة في [تحديث Office for Mac باستخدام msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
+يتضمن MAU أداة سطر الأوامر، تسمى *msupdate*، التي تم تصميمها لمسؤولي تكنولوجيا المعلومات بحيث يكون لديهم تحكم أكثر دقة عند تطبيق التحديثات. يمكن العثور على إرشادات حول كيفية استخدام هذه الأداة في [تحديث Office for Mac باستخدام msupdate](/deployoffice/mac/update-office-for-mac-using-msupdate).
 
-في MAU، معرف التطبيق الخاص Microsoft Defender لنقطة النهاية macOS هو *WDAV00*. لتنزيل آخر التحديثات وتثبيتها ل Microsoft Defender لنقطة النهاية macOS، قم بتنفيذ الأمر التالي من نافذة المحطة الطرفية:
+في MAU، معرف التطبيق Microsoft Defender لنقطة النهاية على macOS هو *WDAV00*. لتنزيل آخر التحديثات ل Microsoft Defender لنقطة النهاية وتثبيتها على macOS، نفذ الأمر التالي من نافذة Terminal:
 
 ```dos
+cd /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app/Contents/MacOS
 ./msupdate --install --apps wdav00
 ```
 
-## <a name="set-preferences-for-microsoft-autoupdate"></a>تعيين التفضيلات ل Microsoft AutoUpdate
+## <a name="set-preferences-for-microsoft-autoupdate"></a>تعيين تفضيلات التحديث التلقائي لبرامج Microsoft
 
-يصف هذا القسم التفضيلات الأكثر شيوعا التي يمكن استخدامها لتكوين MAU. يمكن نشر هذه الإعدادات كملف تعريف تكوين من خلال وحدة تحكم الإدارة التي تستخدمها المؤسسة. يظهر مثال لملف تعريف التكوين في المقاطع التالية.
+يصف هذا القسم التفضيلات الأكثر شيوعا التي يمكن استخدامها لتكوين MAU. يمكن نشر هذه الإعدادات كملف تعريف تكوين من خلال وحدة تحكم الإدارة التي تستخدمها مؤسستك. يظهر مثال لملف تعريف التكوين في المقاطع التالية.
 
 ### <a name="set-the-channel-name"></a>تعيين اسم القناة
 
-تحدد القناة نوع التحديثات التي يتم تقديمها من خلال MAU و مدى تكرارها. يمكن للأجهزة `Beta` في تجربة ميزات جديدة قبل الأجهزة في `Preview` و `Current`.
+تحدد القناة نوع التحديثات التي يتم تقديمها من خلال MAU ومعدل تكرارها. يمكن للأجهزة الموجودة `Beta` تجربة ميزات جديدة قبل أن تعمل الأجهزة في `Preview` و `Current`.
 
-تحتوي `Current` القناة على الإصدار الأكثر استقرارا من المنتج.
+`Current` تحتوي القناة على الإصدار الأكثر استقرارا من المنتج.
 
 > [!IMPORTANT]
-> قبل الإصدار 4.29 من Microsoft AutoUpdate، كان للقنوات أسماء مختلفة:
+> قبل الإصدار 4.29 من التحديث التلقائي لبرامج Microsoft، كان للقنوات أسماء مختلفة:
 >
-> - `Beta` تم تسميته `InsiderFast` (Fast Insider)
-> - `Preview` تم تسميته `External` (بطيء ل Insider)
-> - `Current` تم تسميته `Production`
+> - `Beta` تمت تسمية `InsiderFast` (الإصدار الأولي العاجل ل Insider)
+> - `Preview` تمت تسمية `External` (الإصدار الآجل ل Insider)
+> - `Current` تمت تسمية `Production`
 
 > [!TIP]
-> من أجل معاينة الميزات الجديدة وتقديم الملاحظات المبكرة، من المستحسن تكوين بعض الأجهزة في المؤسسة إلى `Beta` أو `Preview`.
+> من أجل معاينة الميزات الجديدة وتقديم ملاحظات مبكرة، يوصى بتكوين بعض الأجهزة في مؤسستك إلى `Beta` أو `Preview`.
 
 <br>
 
 ****
 
-|مقطع|القيمة|
+|قسم|قيمه|
 |---|---|
 |**المجال**|`com.microsoft.autoupdate2`|
-|**المفتاح**|ChannelName|
+|**المفتاح**|اسم القناة|
 |**نوع البيانات**|سلسلة|
-|**القيم المحتملة**|الإصدار بيتا <p> معاينة <p> الحالي|
+|**القيم المحتملة**|الإصدار بيتا <p> معاينه <p> الحاليه|
 |||
 
 > [!WARNING]
-> يغير هذا الإعداد القناة لجميع التطبيقات التي يتم تحديثها من خلال التحديث التلقائي ل Microsoft. لتغيير القناة فقط Microsoft Defender لنقطة النهاية macOS`[channel-name]`، نفذ الأمر التالي بعد استبدال القناة المطلوبة:
+> يغير هذا الإعداد القناة لكافة التطبيقات التي يتم تحديثها من خلال التحديث التلقائي لبرامج Microsoft. لتغيير القناة فقط Microsoft Defender لنقطة النهاية على macOS، نفذ الأمر التالي بعد استبدال `[channel-name]` القناة المطلوبة:
 >
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
@@ -101,83 +102,83 @@ ms.locfileid: "64469284"
 
 ****
 
-|مقطع|القيمة|
+|قسم|قيمه|
 |---|---|
 |**المجال**|`com.microsoft.autoupdate2`|
 |**المفتاح**|UpdateCheckFrequency|
-|**نوع البيانات**|عدد صحيح|
-|**القيمة الافتراضية**|720 (دقائق)|
-|**تعليق**|يتم تعيين هذه القيمة بالدقائق.|
+|**نوع البيانات**|صحيح|
+|**القيمة الافتراضية**|720 (دقيقة)|
+|**التعليق**|يتم تعيين هذه القيمة بالدقائق.|
 |||
 
 ### <a name="change-how-mau-interacts-with-updates"></a>تغيير كيفية تفاعل MAU مع التحديثات
 
-تغيير طريقة بحث MAU عن التحديثات.
+تغيير كيفية بحث MAU عن التحديثات.
 
 <br>
 
 ****
 
-|مقطع|القيمة|
+|قسم|قيمه|
 |---|---|
 |**المجال**|`com.microsoft.autoupdate2`|
 |**المفتاح**|HowToCheck|
 |**نوع البيانات**|سلسلة|
-|**القيم المحتملة**|يدوي <p> AutomaticCheck <p> AutomaticDownload|
-|**تعليق**|لاحظ أن AutomaticDownload سيتم تنزيله وتثبيته بصمت إذا أمكن.|
+|**القيم المحتملة**|دليل <p> التحديد التلقائي <p> التحميل التلقائي|
+|**التعليق**|لاحظ أن AutomaticDownload سيقوم بتنزيل وتثبيت بصمت إذا أمكن.|
 |||
 
-### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>تغيير ما إذا كان الزر "التحقق من وجود تحديثات" ممكنا أم لا
+### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>تغيير ما إذا كان الزر "التحقق من وجود تحديثات" ممكنا
 
-تغيير ما إذا كان يمكن للمستخدمين المحليين النقر فوق الخيار "التحقق من وجود تحديثات" في واجهة مستخدم التحديث التلقائي من Microsoft.
+تغيير ما إذا كان سيتمكن المستخدمون المحليون من النقر فوق الخيار "التحقق من وجود تحديثات" في واجهة مستخدم التحديث التلقائي لبرامج Microsoft.
 
 <br>
 
 ****
 
-|مقطع|القيمة|
+|قسم|قيمه|
 |---|---|
 |**المجال**|`com.microsoft.autoupdate2`|
 |**المفتاح**|EnableCheckForUpdatesButton|
 |**نوع البيانات**|منطقي|
-|**القيم المحتملة**|True (افتراضي) <p> خطأ|
+|**القيم المحتملة**|صواب (افتراضي) <p> كاذبه|
 |||
 
 ### <a name="disable-insider-checkbox"></a>تعطيل خانة الاختيار Insider
 
-تعيين إلى true لجعل "الانضمام إلى Office Insider..." خانة الاختيار غير متوفرة / باللون الرمادي للمستخدمين.
+تعيين إلى true لجعل "الانضمام إلى Office برنامج Insider..." خانة الاختيار غير متوفرة / رمادية للمستخدمين.
 
 <br>
 
 ****
 
-|مقطع|القيمة|
+|قسم|قيمه|
 |---|---|
 |**المجال**|`com.microsoft.autoupdate2`|
 |**المفتاح**|DisableInsiderCheckbox|
 |**نوع البيانات**|منطقي|
-|**القيم المحتملة**|False (افتراضي) <p> True|
+|**القيم المحتملة**|خطأ (افتراضي) <p> صحيح|
 |||
 
-### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>الحد من بيانات التهية المرسلة من MAU
+### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>تحديد بيانات تتبع الاستخدام التي يتم إرسالها من MAU
 
-تعيين إلى خطأ لإرسال الحد الأدنى من بيانات دقات القلب، ولا يتم استخدام التطبيق، ولا تفاصيل البيئة.
+تعيين إلى خطأ لإرسال الحد الأدنى من بيانات كشف أخطاء الاتصال، وعدم استخدام التطبيق، وعدم وجود تفاصيل البيئة.
 
 <br>
 
 ****
 
-|مقطع|القيمة|
+|قسم|قيمه|
 |---|---|
 |**المجال**|`com.microsoft.autoupdate2`|
 |**المفتاح**|SendAllTelemetryEnabled|
 |**نوع البيانات**|منطقي|
-|**القيم المحتملة**|True (افتراضي) <p> خطأ|
+|**القيم المحتملة**|صواب (افتراضي) <p> كاذبه|
 |||
 
-## <a name="example-configuration-profile"></a>مثال لملف تعريف التكوين
+## <a name="example-configuration-profile"></a>مثال على ملف تعريف التكوين
 
-يتم استخدام ملف تعريف التكوين التالي ل:
+يتم استخدام ملف تعريف التكوين التالي من أجل:
 
 - وضع الجهاز في قناة الإنتاج
 - تنزيل التحديثات وتثبيتها تلقائيا
@@ -185,10 +186,10 @@ ms.locfileid: "64469284"
 - السماح للمستخدمين على الجهاز بالتسجيل في قنوات Insider
 
 > [!WARNING]
-> التكوين أدناه هو تكوين مثال ويجب عدم استخدامه في الإنتاج بدون مراجعة الإعدادات بشكل صحيح وضبط التكوينات.
+> التكوين أدناه هو تكوين مثال ولا ينبغي استخدامه في الإنتاج دون مراجعة مناسبة للإعدادات وخياط التكوينات.
 
 > [!TIP]
-> من أجل معاينة الميزات الجديدة وتقديم الملاحظات المبكرة، من المستحسن تكوين بعض الأجهزة في المؤسسة إلى `Beta` أو `Preview`.
+> من أجل معاينة الميزات الجديدة وتقديم ملاحظات مبكرة، يوصى بتكوين بعض الأجهزة في مؤسستك إلى `Beta` أو `Preview`.
 
 ### <a name="jamf"></a>JAMF
 
@@ -273,10 +274,10 @@ ms.locfileid: "64469284"
 </plist>
 ```
 
-لتكوين MAU، يمكنك نشر ملف تعريف التكوين هذا من أداة الإدارة التي تستخدمها المؤسسة:
+لتكوين MAU، يمكنك نشر ملف تعريف التكوين هذا من أداة الإدارة التي تستخدمها مؤسستك:
 
-- من JAMF، قم بتحميل ملف تعريف التكوين هذا ثم قم بتعيين مجال التفضيل إلى *com.microsoft.autoupdate2*.
-- من Intune، قم بتحميل ملف تعريف التكوين هذا ثم قم بتعيين اسم ملف تعريف التكوين المخصص إلى *com.microsoft.autoupdate2*.
+- من JAMF، قم بتحميل ملف تعريف التكوين هذا وتعيين "مجال التفضيل" إلى *com.microsoft.autoupdate2*.
+- من Intune، قم بتحميل ملف تعريف التكوين هذا وتعيين اسم ملف تعريف التكوين المخصص إلى *com.microsoft.autoupdate2*.
 
 ## <a name="resources"></a>الموارد
 

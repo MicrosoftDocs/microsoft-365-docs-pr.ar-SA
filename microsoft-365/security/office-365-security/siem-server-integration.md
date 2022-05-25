@@ -18,21 +18,21 @@ ms.custom:
 description: احصل على نظرة عامة حول تكامل خادم إدارة معلومات الأمان والأحداث (SIEM) مع خدمات السحابة والتطبيقات Microsoft 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 978319cca91322c7eb737d89cbfc167574f14093
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: ffb457a378539691627eff3ad24b24ef782705c1
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731406"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670191"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>تكامل خادم إدارة معلومات الأمان والأحداث (SIEM) مع خدمات وتطبيقات Microsoft 365
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender لـ Office 365 الخطة 1 والخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 ## <a name="summary"></a>الملخص
 
@@ -61,7 +61,7 @@ ms.locfileid: "64731406"
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)|تكامل السجل|[تكامل SIEM مع Microsoft Defender for Cloud Apps](/cloud-app-security/siem)|
 
 > [!TIP]
-> ألق نظرة على [Microsoft Sentinel](/azure/sentinel/overview). يأتي Microsoft Sentinel مزودا بموصلات لحلول Microsoft. تتوفر هذه الموصلات "خارج الصندوق" وتوفر التكامل في الوقت الحقيقي. يمكنك استخدام Microsoft Sentinel مع حلول Microsoft 365 Defender وخدمات Microsoft 365، بما في ذلك Office 365 وAzure AD Microsoft Defender for Identity Microsoft Defender for Cloud Apps والمزيد.
+> ألق نظرة على [Microsoft Sentinel](/azure/sentinel/overview). يأتي Microsoft Sentinel مزودا بموصلات لحلول Microsoft. تتوفر هذه الموصلات "خارج الصندوق" وتوفر التكامل في الوقت الحقيقي. يمكنك استخدام Microsoft Sentinel مع حلول Microsoft 365 Defender وخدمات Microsoft 365، بما في ذلك Office 365، Azure AD، Microsoft Defender for Identity، Microsoft Defender for Cloud Apps والمزيد.
 
 ### <a name="audit-logging-must-be-turned-on"></a>يجب تشغيل تسجيل التدقيق
 
@@ -70,7 +70,23 @@ ms.locfileid: "64731406"
 - للحصول على SharePoint Online و OneDrive for Business وAzure Active Directory، راجع [تشغيل التدقيق أو إيقاف تشغيله](../../compliance/turn-audit-log-search-on-or-off.md).
 - للحصول على Exchange Online، راجع [إدارة تدقيق علبة البريد](../../compliance/enable-mailbox-auditing.md).
 
-## <a name="more-resources"></a>المزيد من الموارد
+## <a name="integration-steps-if-your-siem-is-microsoft-sentinel"></a>خطوات التكامل إذا كان SIEM الخاص بك هو Microsoft Sentinel
+
+تأكد من أن خطتك الحالية تسمح بتكامل Microsoft Sentinel (على سبيل المثال، لديك Microsoft Defender لـ Office 365 الخطة 2 أو أعلى)، وأن حسابك في Microsoft Defender لـ Office 365 أو Microsoft 365 Defender هو *أمان المسؤول*. وأخيرا، تأكد من أن لديك *أذونات الكتابة في Microsoft Sentinel*.
+
+1. انتقل إلى Microsoft Sentinel.
+1. على شريط التنقل إلى يمين **موصلات بيانات** **التكوين** >  على الشاشة.
+1. **ابحث عن** Microsoft 365 Defender وحدد **موصل Microsoft 365 Defender (معاينة**).
+1. على يمين الشاشة، حدد **"فتح صفحة الموصل**".
+1. ضمن **"Configuration** >" حدد **"الاتصال incidents & alerts"**
+    1. إيقاف تشغيل كافة قواعد إنشاء الحوادث في Microsoft للمنتجات المحددة حاليا.
+1. قم بالتمرير إلى **Microsoft Defender لـ Office 365** في قسم **أحداث الاتصال** من الصفحة.
+
+لاحظ أنه يمكنك اختيار جداول من *أي منتج آخر من منتجات Microsoft Defender* تجدها مفيدة وقابلة للتطبيق أثناء إكمال الخطوة النهائية، (أدناه).
+
+7. حدد **EmailEvents** و **EmailUrlInfo** و **EmailAttachmentInfo** و **EmailPostDeliveryEvents** > **وقم بتطبيق التغييرات**.
+
+## <a name="more-resources"></a>موارد إضافية
 
 [دمج حلول الأمان في Microsoft Defender for Cloud](/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 

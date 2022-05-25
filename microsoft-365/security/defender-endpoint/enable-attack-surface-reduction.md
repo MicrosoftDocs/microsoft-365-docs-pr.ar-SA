@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 2b88e6413bb8ef520c3049f63cca60703a509be3
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 04eee4c44e0cf2b712ecab84b18837d7b3705cef
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637902"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669793"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>تمكين قواعد تقليل الأجزاء المعرضة للهجوم
 
@@ -48,13 +48,15 @@ ms.locfileid: "65637902"
 
 يمكنك تعيين قواعد تقليل الأجزاء المعرضة للهجوم للأجهزة التي تقوم بتشغيل أي من الإصدارات والإصدارات التالية من Windows:
 
+- [Windows 11 Pro](/windows/whats-new/windows-11-overview)
+- [Windows 11 Enterprise](https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise)
 - Windows 10 Pro، [الإصدار 1709](/windows/whats-new/whats-new-windows-10-version-1709) أو الإصدارات الأحدث
 - Windows 10 Enterprise، [الإصدار 1709](/windows/whats-new/whats-new-windows-10-version-1709) أو أحدث
 - Windows Server أو [الإصدار 1803 (التحديث نصف السنوي)](/windows-server/get-started/whats-new-in-windows-server-1803) أو إصدار أحدث
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/windows/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
-- Windows Server 2022
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022)
 
 لاستخدام مجموعة الميزات الكاملة لقواعد تقليل الأجزاء المعرضة للهجوم، تحتاج إلى:
 
@@ -107,8 +109,8 @@ ms.locfileid: "65637902"
 2. تدعم قواعد تقليل الأجزاء المعرضة للهجوم للأجهزة المدارة بواسطة MEM الآن سلوك دمج الإعدادات من نهج مختلفة، لإنشاء مجموعة فائقة من النهج لكل جهاز. يتم دمج الإعدادات غير المتضاربة فقط، بينما لا تتم إضافة الإعدادات التي تتعارض إلى مجموعة القواعد الفائقة. في السابق، إذا تضمن نهجان تعارضات لإعداد واحد، تم وضع علامة على كلا النهجين على أنهما متضاربين، ولن يتم نشر أي إعدادات من ملف التعريف. سلوك دمج قاعدة تقليل الأجزاء المعرضة للهجوم كما يلي:
    - يتم تقييم قواعد تقليل الأجزاء المعرضة للهجوم من ملفات التعريف التالية لكل جهاز تنطبق عليه القواعد:
      - نهج تكوين الأجهزة > > ملف تعريف حماية نقطة النهاية > **تقليل سطح الحماية من مخاطر الهجمات من Microsoft Defender** >  [Attack](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
-     - أمان نقطة النهاية > [قواعد](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune) >  **تقليل الأجزاء المعرضة للهجوم**.
-     - أمان نقطة النهاية > أساسيات الأمان > [قواعد تقليل سطح](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) **Microsoft Defender ATP BaselineAttack** > .
+     - أمان نقطة النهاية > **قواعد** > [تقليل الأجزاء المعرضة للهجوم](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
+     - أمان نقطة النهاية > أساسات الأمان >[قواعد تقليل الأجزاء المعرضة للهجوم](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules) **الأساس** >  ل Microsoft Defender ATP.
    - تتم إضافة الإعدادات التي لا تحتوي على تعارضات إلى مجموعة فائقة من النهج للجهاز.
    - عندما يكون لدى نهجين أو أكثر إعدادات متضاربة، لا تتم إضافة الإعدادات التعارضة إلى النهج المدمج، بينما تتم إضافة الإعدادات التي لا تتعارض إلى نهج المجموعة الفائقة التي تنطبق على جهاز.
    - يتم الاحتفاظ فقط بتكوينات الإعدادات المتضاربة مرة أخرى.

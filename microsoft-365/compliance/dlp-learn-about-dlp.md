@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: تعرف على كيفية حماية معلوماتك الحساسة باستخدام نهج وأدوات منع فقدان بيانات Microsoft Purview وقم بجولة خلال دورة حياة DLP.
-ms.openlocfilehash: aa32eba1111f4a119652ba88b59062581bb6cc4b
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+description: تعرف على كيفية حماية معلوماتك الحساسة باستخدام Microsoft Purview نهج وأدوات منع فقدان البيانات وقم بجولة خلال دورة حياة DLP.
+ms.openlocfilehash: 1d05eb2ae7b7071a79448596832eb6594ab680ef
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231757"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669683"
 ---
 # <a name="learn-about-data-loss-prevention"></a>التعرّف على تفادي فقدان البيانات
 
@@ -32,7 +32,7 @@ ms.locfileid: "65231757"
 
 - خدمات Microsoft 365 مثل Teams Exchange SharePoint OneDrive
 - تطبيقات Office مثل Word و Excel و PowerPoint
-- نقاط نهاية Windows 10 و Windows 11 وmacOS (Catalina 10.15 وأعلى)
+- نقاط نهاية Windows 10 و Windows 11 و macOS (Catalina 10.15 وأعلى)
 - تطبيقات السحابة غير الخاصة ب Microsoft
 - مشاركات الملفات المحلية SharePoint المحلية.
 
@@ -40,7 +40,7 @@ ms.locfileid: "65231757"
 
 ## <a name="dlp-is-part-of-the-larger-microsoft-purview-offering"></a>DLP هو جزء من عرض Microsoft Purview الأكبر
 
-DLP هي مجرد واحدة من أدوات Microsoft Purview التي ستستخدمها للمساعدة في حماية العناصر الحساسة أينما كانت تعيش أو تنتقل. يجب أن تفهم الأدوات الأخرى في مجموعة أدوات Microsoft Purview، وكيفية ترابطها، والعمل معا بشكل أفضل.  راجع [أدوات Microsoft Purview](protect-information.md) لمعرفة المزيد حول عملية حماية المعلومات.
+DLP هي مجرد واحدة من الأدوات Microsoft Purview التي ستستخدمها للمساعدة في حماية العناصر الحساسة أينما كانت تعيش أو تنتقل. يجب أن تفهم الأدوات الأخرى في مجموعة أدوات Microsoft Purview، وكيف تتداخل، وتعمل بشكل أفضل معا.  راجع [Microsoft Purview الأدوات](protect-information.md) لمعرفة المزيد حول عملية حماية المعلومات.
 
 ## <a name="protective-actions-of-dlp-policies"></a>إجراءات الحماية لنهج DLP
 
@@ -71,7 +71,7 @@ DLP هي مجرد واحدة من أدوات Microsoft Purview التي ستست
 
 **التخطيط التكنولوجي ل DLP**
 
-ضع في اعتبارك أن DLP كتقنية يمكنها مراقبة بياناتك وحمايتها الثابتة والبيانات قيد الاستخدام والبيانات المتحركة عبر خدمات Microsoft 365 والأجهزة Windows 10 Windows 11 وmacOS (Catalina 10.15 وغيرها) ومشاركات الملفات المحلية SharePoint المحلية. هناك آثار تخطيطية للمواقع المختلفة، ونوع البيانات التي تريد مراقبتها وحمايتها، والإجراءات التي يجب اتخاذها عند حدوث تطابق في النهج.
+ضع في اعتبارك أن DLP كتقنية يمكنها مراقبة بياناتك وحمايتها في وضع السكون والبيانات قيد الاستخدام والبيانات المتحركة عبر خدمات Microsoft 365 Windows 10 Windows 11 وأجهزة macOS (Catalina 10.15 وغيرها) ومشاركات الملفات المحلية SharePoint المحلية. هناك آثار تخطيطية للمواقع المختلفة، ونوع البيانات التي تريد مراقبتها وحمايتها، والإجراءات التي يجب اتخاذها عند حدوث تطابق في النهج.
 
 **تخطيط العمليات التجارية ل DLP**
 
@@ -92,7 +92,7 @@ DLP هي مجرد واحدة من أدوات Microsoft Purview التي ستست
 - حسابات OneDrive
 - Teams رسائل الدردشة والقنوات
 - Microsoft Cloud App Security
-- أجهزة Windows 10 Windows 11 وmacOS (Catalina 10.15 وغيرها)
+- أجهزة Windows 10 Windows 11 macOS (Catalina 10.15 وغيرها)
 - المستودعات المحلية
 - مواقع PowerBI
 
@@ -122,6 +122,9 @@ DLP هي مجرد واحدة من أدوات Microsoft Purview التي ستست
 - إضافة تطبيقات مقيدة جديدة
 - إضافة مواقع مقيدة جديدة
 
+> [!NOTE]
+> لا يعمل _إيقاف معالجة المزيد من القواعد_ في وضع الاختبار، حتى عندما يكون قيد التشغيل.
+
 #### <a name="enable-the-control-and-tune-your-policies"></a>تمكين التحكم وضبط النهج
 
 بمجرد أن يحقق النهج جميع أهدافك، قم بتشغيله. استمر في مراقبة نتائج تطبيق النهج وضبطها حسب الحاجة. 
@@ -146,7 +149,7 @@ DLP هي مجرد واحدة من أدوات Microsoft Purview التي ستست
 |مواقع SharePoint |مواقع |
 |حسابات OneDrive |الحسابات أو مجموعات التوزيع |
 |Teams رسائل الدردشة والقنوات |حساب أو مجموعة توزيع |
-|أجهزة Windows 10 Windows 11 وmacOS (Catalina 10.15 وغيرها) |المستخدم أو المجموعة |
+|أجهزة Windows 10 Windows 11 macOS (Catalina 10.15 وغيرها) |المستخدم أو المجموعة |
 |Microsoft Cloud App Security |المثال |
 |المستودعات المحلية| مسار ملف المستودع|
 
@@ -160,7 +163,7 @@ DLP هي مجرد واحدة من أدوات Microsoft Purview التي ستست
 
 - SharePoint/Exchange/OneDrive: حظر الأشخاص من خارج مؤسستك من الوصول إلى المحتوى. اعرض على المستخدم تلميحا وأرسل له إعلاما بالبريد الإلكتروني يفيد بأنه يتخذ إجراء يحظره نهج DLP.
 - Teams الدردشة والقناة: منع مشاركة المعلومات الحساسة في الدردشة أو القناة
-- أجهزة Windows 10 Windows 11 وmacOS (Catalina 10.15 وغيرها): تدقيق أو تقييد نسخ عنصر حساس إلى جهاز USB قابل للإزالة
+- أجهزة Windows 10 Windows 11 macOS (Catalina 10.15 وما بعدها): قم بتدقيق أو تقييد نسخ عنصر حساس إلى جهاز USB قابل للإزالة
 - Office التطبيقات: إظهار قائمة منبثقة لإعلام المستخدم بأنه يشارك في سلوك محفوف بالمخاطر وحظر أو حظر ولكن السماح بالتجاوز.
 - مشاركات الملفات المحلية: نقل الملف من حيث يتم تخزينه إلى مجلد العزل
 
@@ -183,7 +186,7 @@ All DLP policies are created and maintained in the Microsoft Purview center. See
 
 ## <a name="viewing-policy-application-results"></a>عرض نتائج تطبيق النهج
 
-يبلغ DLP عن كمية هائلة من المعلومات في Microsoft Purview من المراقبة وتطابقات النهج والإجراءات وأنشطة المستخدم. ستحتاج إلى استخدام هذه المعلومات والعمل عليها لضبط سياساتك وإجراءات الفرز التي تم اتخاذها على العناصر الحساسة. تدخل بيانات تتبع الاستخدام في [سجلات تدقيق مدخل الامتثال ل Microsoft Purview](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) أولا، وتعالج، وتتجه إلى أدوات إعداد التقارير المختلفة. لكل أداة تقرير غرض مختلف.
+يبلغ DLP عن كمية هائلة من المعلومات في Microsoft Purview من المراقبة، وتطابقات النهج والإجراءات، وأنشطة المستخدم. ستحتاج إلى استخدام هذه المعلومات والعمل عليها لضبط سياساتك وإجراءات الفرز التي تم اتخاذها على العناصر الحساسة. تنتقل بيانات تتبع الاستخدام إلى [مدخل التوافق في Microsoft Purview سجلات التدقيق](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) أولا، تتم معالجتها، وتقطع طريقها إلى أدوات إعداد التقارير المختلفة. لكل أداة تقرير غرض مختلف.
 
 ### <a name="dlp-alerts-dashboard"></a>لوحة معلومات تنبيهات DLP
 
@@ -221,7 +224,7 @@ All DLP policies are created and maintained in the Microsoft Purview center. See
 - [التعرّف على ملحق التوافق من Microsoft](dlp-chrome-learn-about.md)
 - [التعرّف على لوحة معلومات تنبيهات تفادي فقدان البيانات](dlp-alerts-dashboard-learn.md)
 
-لمعرفة كيفية استخدام منع فقدان البيانات للامتثال للوائح خصوصية البيانات، راجع [نشر حماية المعلومات للوائح خصوصية البيانات باستخدام Microsoft Purview](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
+لمعرفة كيفية استخدام منع فقدان البيانات للامتثال للوائح خصوصية البيانات، راجع [نشر حماية المعلومات للوائح خصوصية البيانات باستخدام Microsoft Purview](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
 
 ## <a name="licensing-and-subscriptions"></a>الترخيص والاشتراكات
 

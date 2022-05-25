@@ -18,19 +18,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 787da143bdbbc2d21610ba14d0fe7c955e4e976d
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 1faff638c9b33b933277dc74248c2d7daa43331c
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823367"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669661"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>تكوين إعدادات وكيل الجهاز والاتصال بالإنترنت
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
@@ -152,7 +152,7 @@ ms.locfileid: "64823367"
 
 2. أدخل الأمر التالي واضغط على **مفتاح الإدخال Enter**:
 
-   ```PowerShell
+   ```command prompt
    netsh winhttp set proxy <proxy>:<port>
    ```
 
@@ -160,7 +160,7 @@ ms.locfileid: "64823367"
 
 لإعادة تعيين وكيل winhttp، أدخل الأمر التالي واضغط على **مفتاح الإدخال Enter**:
 
-```PowerShell
+```command prompt
 netsh winhttp reset proxy
 ```
 
@@ -201,7 +201,7 @@ netsh winhttp reset proxy
 
 ****
 
-|مورد عامل|منافذ|الاتجاه|تجاوز فحص HTTPS|
+|مورد عامل|المنافذ|الاتجاه|تجاوز فحص HTTPS|
 |---|---|---|---|
 |*.ods.opinsights.azure.com|المنفذ 443|الصادره|نعم|
 |*.oms.opinsights.azure.com|المنفذ 443|الصادره|نعم|
@@ -249,13 +249,13 @@ netsh winhttp reset proxy
 
 4. أدخل الأمر التالي واضغط على **مفتاح الإدخال Enter**:
 
-    ```PowerShell
+    ```command prompt
     HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
     استبدل *HardDrivePath* بالمسار، حيث تم تنزيل أداة MDEClientAnalyzer. على سبيل المثال:
 
-    ```PowerShell
+    ```command prompt
     C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 

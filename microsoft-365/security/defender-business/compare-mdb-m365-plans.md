@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 971617311ce8d2443f90a1792339d4f0927ade3e
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: d7ee7588d9c73a6146b770cfcf135a8eeb44f72f
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174724"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663415"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>مقارنة ميزات الأمان في خطط Microsoft 365 للشركات الصغيرة والمتوسطة الحجم
 
@@ -74,10 +74,10 @@ ms.locfileid: "65174724"
 |[التحقيق التلقائي والاستجابة (AIR)](../defender-endpoint/automated-investigations.md)|نعم <sup>[[3](#fn3)]</sup>|لا|نعم|
 |[تتبع التهديدات](../defender-endpoint/advanced-hunting-overview.md) واستبقاء البيانات لمدة ستة أشهر |لا <sup>[[4](#fn4)]</sup>|لا|نعم|
 |[تحليلات المخاطر](../defender-endpoint/threat-analytics.md)|نعم <sup>[[5](#fn5)]</sup>|لا|نعم|
-|[دعم عبر الأنظمة الأساسية](../defender-endpoint/minimum-requirements.md) <br/>(Windows وmacOS وiOS وAndroid OS)|نعم <sup>[[6](#fn6)]</sup>|نعم|نعم|
+|[دعم عبر الأنظمة الأساسية](../defender-endpoint/minimum-requirements.md) <br/>(Windows macOS وiOS وAndroid OS)|نعم <sup>[[6](#fn6)]</sup>|نعم|نعم|
 |[خبراء المخاطر في Microsoft](../defender-endpoint/microsoft-threat-experts.md)|لا|لا|نعم|
 |واجهات برمجة التطبيقات الخاصة بالشركاء|نعم|نعم|نعم|
-|[تكامل Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(لعرض حوادث الأمان عبر مستأجري العملاء)|نعم|لا|لا|
+|[تكامل Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(لعرض حوادث الأمان عبر مستأجري العملاء)|نعم |نعم <sup>[[7](#fn7)]</sup>|نعم <sup>[[7](#fn7)]</sup>|
 
 (<a id="fn1">1</a>) إلحاق الأجهزة وإدارتها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) أو باستخدام Microsoft Intune، تتم إدارتها في مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
@@ -94,6 +94,8 @@ ms.locfileid: "65174724"
 (<a id="fn5">5</a>) في Defender for Business، يتم تحسين تحليلات التهديدات للشركات الصغيرة والمتوسطة الحجم.
 
 (<a id="fn6">6</a>) راجع [الأجهزة الملحقة Microsoft Defender for Business](mdb-onboard-devices.md).
+
+(<a id="fn7">7</a>) القدرة على عرض الحوادث عبر المستأجرين باستخدام Defender لنقطة النهاية جديدة!
 
 ## <a name="next-steps"></a>الخطوات التالية
 
