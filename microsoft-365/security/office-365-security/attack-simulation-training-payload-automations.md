@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: يمكن للمسؤولين تعلم كيفية استخدام أتمتة الحمولة (جمع الحمولة) لجمع عمليات المحاكاة التلقائية وإطلاقها لتدريب محاكاة الهجوم في Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
-ms.openlocfilehash: 5b008dc25ee3b705f212b1fac1bf3779f1de8bda
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 7fb3b0bbad5bbec8044a94da1943b0bd25eba865
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647502"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679363"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>أتمتة الحمولة لتدريب محاكاة الهجوم
 
@@ -29,18 +29,18 @@ ms.locfileid: "65647502"
 
 لإنشاء أتمتة الحمولة، قم بالخطوات التالية:
 
-1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com/>انتقل **إلى علامة** تبويب **محاكاة محاكاة** \> هجوم **التعاون** \> & البريد الإلكتروني.
+1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com/>انتقل إلى **Email & collaboration** \> **Attack training** \> **Automations** tab \> **Payload automations**.
 
-   للانتقال مباشرة إلى علامة التبويب **Payload automations** ، استخدم <https://security.microsoft.com/attacksimulator?viewid=payloadautomation>.
+   للانتقال مباشرة إلى علامة التبويب **Automations** ، استخدم <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
-2. في علامة التبويب **"Payload automations** "، حدد " ![Create automation icon".](../../media/m365-cc-sc-create-icon.png) **إنشاء التشغيل التلقائي**.
+2. في **أتمتة Payload**، حدد ![أيقونة إنشاء أتمتة.](../../media/m365-cc-sc-create-icon.png) **إنشاء التشغيل التلقائي**.
 
    :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="زر إنشاء محاكاة على علامة التبويب Payload automations في تدريب محاكاة الهجوم في مدخل Microsoft 365 Defender" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
 3. يتم فتح معالج الإنشاء. تصف بقية هذه المقالة الصفحات والإعدادات التي تحتوي عليها.
 
 > [!NOTE]
-> في أي وقت أثناء معالج الإنشاء، يمكنك النقر فوق **"حفظ" و"إغلاق** " لحفظ تقدمك ومتابعة تكوين أتمتة الحمولة لاحقا. يمكنك المتابعة من حيث توقفت عن طريق تحديد أتمتة الحمولة على علامة التبويب **Payload automations** ، ثم النقر فوق أيقونة ![تحرير التنفيذ التلقائي.](../../media/m365-cc-sc-edit-icon.png) **تحرير التنفيذ التلقائي**.
+> في أي وقت أثناء معالج الإنشاء، يمكنك النقر فوق **"حفظ" و"إغلاق** " لحفظ تقدمك ومتابعة تكوين أتمتة الحمولة لاحقا. يمكنك المتابعة من حيث توقفت عن طريق تحديد أتمتة الحمولة في **أتمتة Payload**، ثم النقر فوق أيقونة تحرير الأتمتة ![.](../../media/m365-cc-sc-edit-icon.png) **تحرير التنفيذ التلقائي**.
 
 ## <a name="automation-name"></a>اسم التنفيذ التلقائي
 

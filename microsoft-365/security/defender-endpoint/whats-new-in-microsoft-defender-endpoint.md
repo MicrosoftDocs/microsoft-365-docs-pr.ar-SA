@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 615a68d7725e180e512674909f490e27d3da6771
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 282834b0c582690ff53c8361440bce21fc2d4d0b
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468789"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679265"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>ما الجديد في Microsoft Defender لنقطة النهاية؟
 
@@ -63,6 +63,7 @@ ms.locfileid: "65468789"
 ## <a name="may-2022"></a>مايو 2022
 - [الحماية من العبث macOS (معاينة)](tamperprotection-macos.md)<br>تساعد الحماية من العبث بالبيانات على منع الإزالة غير المصرح بها Microsoft Defender لنقطة النهاية على macOS.
 
+- [إضافة أجهزة وحدة التحكم بالمجال - تحسين مختبر التقييم (معاينة)](evaluation-lab.md#add-a-domain-controller-preview)<br>أضف وحدة تحكم بالمجال لتشغيل سيناريوهات معقدة مثل الحركة الجانبية والهجمات متعددة المستويات عبر أجهزة متعددة.
 
 ## <a name="april-2022"></a>أبريل 2022
 - [الإعداد المحدث وتماثل الميزات ل Windows Server 2012 R2 و Windows Server 2016)](configure-server-endpoints.md)<br/> حزمة الحلول الموحدة الجديدة متاحة الآن بشكل عام وتجعل من السهل إلحاق الخوادم عن طريق إزالة التبعيات وخطوات التثبيت. بالإضافة إلى ذلك، تأتي حزمة الحلول الموحدة هذه مع العديد من تحسينات الميزات الجديدة.

@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: يمكن للمسؤولين تعلم كيفية محاكاة هجمات التصيد الاحتيالي وتدريب مستخدميهم على منع التصيد الاحتيالي باستخدام تدريب محاكاة الهجوم في Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
-ms.openlocfilehash: 55810d65c33796a617421f0796191335821bde98
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 647ea6188e1bd7867e823bbfbb6341255e82960d
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648878"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679451"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>محاكاة هجوم تصيد احتيالي مع تدريب محاكاة الهجوم في Defender لـ Office 365
 
@@ -347,7 +347,7 @@ ms.locfileid: "65648878"
 - **إعلام تعيين التدريب الافتراضي من Microsoft**
 - أي إعلامات مخصصة لمهام التدريب قمت بإنشائها مسبقا.
 
-  تتوفر هذه الإعلامات أيضا على علامة تبويب **إعلامات المستخدم النهائي** في تدريب محاكاة الهجوم في <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. يتوفر **إعلام تعيين التدريب الافتراضي من Microsoft** على علامة تبويب **الإعلامات العمومية**. تتوفر إعلامات تعيينات التدريب المخصصة على علامة التبويب **«Tenant notifications**». لمزيد من المعلومات، راجع [إعلامات المستخدم النهائي للتدريب على محاكاة الهجوم](attack-simulation-training-end-user-notifications.md).
+  تتوفر هذه الإعلامات أيضا في **إعلامات المستخدم النهائي** على علامة تبويب **مكتبة محتوى المحاكاة** في تدريب محاكاة الهجوم في <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. يتوفر **إعلام تعيين التدريب الافتراضي من Microsoft** على علامة تبويب **الإعلامات العمومية**. تتوفر إعلامات تعيينات التدريب المخصصة على علامة التبويب **«Tenant notifications**». لمزيد من المعلومات، راجع [إعلامات المستخدم النهائي للتدريب على محاكاة الهجوم](attack-simulation-training-end-user-notifications.md).
 
 يمكنك تحديد إعلام واجب تدريب موجود أو إنشاء إعلام جديد لاستخدامه:
 
@@ -382,7 +382,7 @@ ms.locfileid: "65648878"
   - **إعلام تذكير التدريب الافتراضي من Microsoft**
   - أي إعلامات تذكير تدريب مخصصة قمت بإنشائها مسبقا.
 
-    تتوفر هذه الإعلامات أيضا على علامة تبويب **إعلامات المستخدم النهائي** في تدريب محاكاة الهجوم في <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. يتوفر **إعلام تذكير التدريب الافتراضي من Microsoft** على علامة تبويب **الإعلامات العمومية**. تتوفر إعلامات تذكير التدريب المخصصة على علامة تبويب **إعلامات المستأجر**. لمزيد من المعلومات، راجع [إعلامات المستخدم النهائي للتدريب على محاكاة الهجوم](attack-simulation-training-end-user-notifications.md).
+    تتوفر هذه الإعلامات أيضا في **إعلامات المستخدم النهائي** على علامة تبويب **مكتبة محتوى المحاكاة** في تدريب محاكاة الهجوم في <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. يتوفر **إعلام تذكير التدريب الافتراضي من Microsoft** على علامة تبويب **الإعلامات العمومية**. تتوفر إعلامات تذكير التدريب المخصصة على علامة تبويب **إعلامات المستأجر**. لمزيد من المعلومات، راجع [إعلامات المستخدم النهائي للتدريب على محاكاة الهجوم](attack-simulation-training-end-user-notifications.md).
 
   يمكنك تحديد إعلام تذكير تدريب موجود أو إنشاء إعلام جديد لاستخدامه:
 
@@ -419,7 +419,7 @@ ms.locfileid: "65648878"
   - **إعلام تعزيز إيجابي افتراضي من Microsoft**
   - أي إعلامات تعزيز إيجابية مخصصة قمت بإنشائها مسبقا.
 
-    تتوفر هذه الإعلامات أيضا على علامة تبويب **إعلامات المستخدم النهائي** في تدريب محاكاة الهجوم في <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>. يتوفر **إعلام تعزيز إيجابي افتراضي من Microsoft** على علامة تبويب **الإعلامات العمومية**. تتوفر إعلامات تعزيز إيجابية مخصصة على علامة تبويب **إعلامات المستأجر**. لمزيد من المعلومات، راجع [إعلامات المستخدم النهائي للتدريب على محاكاة الهجوم](attack-simulation-training-end-user-notifications.md).
+    تتوفر هذه الإعلامات أيضا في **إعلامات المستخدم النهائي** على علامة تبويب **مكتبة محتوى المحاكاة** في تدريب محاكاة الهجوم في <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>. يتوفر **إعلام تعزيز إيجابي افتراضي من Microsoft** على علامة تبويب **الإعلامات العمومية**. تتوفر إعلامات تعزيز إيجابية مخصصة على علامة تبويب **إعلامات المستأجر**. لمزيد من المعلومات، راجع [إعلامات المستخدم النهائي للتدريب على محاكاة الهجوم](attack-simulation-training-end-user-notifications.md).
 
   يمكنك تحديد إعلام تعزيز إيجابي موجود أو إنشاء إعلام جديد لاستخدامه:
 

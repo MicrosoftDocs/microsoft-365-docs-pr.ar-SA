@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: d01cdacc40b58eb940b2773606221b4fdbe18728
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: e485bcf400dbaf36c63e3a0ed8677c9bf7c8f23a
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823179"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692750"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender واجهة برمجة تطبيقات التتبع المتقدمة
 
@@ -53,11 +53,11 @@ ms.locfileid: "64823179"
 6. `429` يشير رمز استجابة HTTP إلى أنك وصلت إلى حصة نسبية، إما حسب عدد الطلبات المرسلة، أو حسب وقت التشغيل المخصص. اقرأ نص الاستجابة لفهم الحد الذي وصلت إليه. 
 
 > [!NOTE]
-> كل الحصص النسبية المذكورة أعلاه (على سبيل المثال 15 مكالمة لكل دقيقة) هي لكل حجم مستأجر. هذه الحصص النسبية هي الحد الأدنى.
+> جميع الحصص النسبية المذكورة أعلاه (على سبيل المثال 15 مكالمة لكل دقيقة) على نطاق المستأجر. هذه الحصص النسبية هي الحد الأدنى.
 
 ## <a name="permissions"></a>الأذونات
 
-أحد الأذونات التالية مطلوب لاستدعاء واجهة برمجة تطبيقات التتبع المتقدمة. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [Access Microsoft 365 Defender Protection APIs](api-access.md)
+أحد الأذونات التالية مطلوب لاستدعاء واجهة برمجة تطبيقات التتبع المتقدمة. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [Access Microsoft 365 Defender Protection APIs](api-access.md).
 
 نوع الإذن | اذن | اسم عرض الإذن
 -|-|-
@@ -78,7 +78,7 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 ## <a name="request-headers"></a>عناوين الطلبات
 
-راس | قيمه
+عنوان | قيمه
 -|-
 التخويل | ملاحظة {token} للحامل **: مطلوبة**
 نوع المحتوى | تطبيق/json
@@ -89,7 +89,7 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 المعلمه | نوع | الوصف
 -|-|-
-الاستعلام | النص | الاستعلام المطلوب تشغيله. **ملاحظة: مطلوب**
+الاستعلام | النص | الاستعلام المطلوب تشغيله. **(مطلوب)**
 
 ## <a name="response"></a>استجابه
 

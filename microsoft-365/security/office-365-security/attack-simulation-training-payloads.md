@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إنشاء حمولات مخصصة لتدريب محاكاة الهجوم في Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
-ms.openlocfilehash: f0f91eb3936d1dc4ed6c028552b37fecb5df2ff6
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 24655986cd8c30bec4495477a63d692fd1ebb2d2
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648294"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679319"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>إنشاء حمولات مخصصة لتدريب محاكاة الهجوم في Defender لـ Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "65648294"
 
 تصف هذه المقالة كيفية إنشاء حمولاتك الخاصة في التدريب على محاكاة الهجوم. يمكنك إنشاء حمولات مخصصة في المواقع التالية:
 
-- علامة التبويب **Payloads**: في مدخل Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى **علامة التبويب «Email & collaboration** \> **Attack training** \> **Payloads**». للانتقال مباشرة إلى علامة التبويب **Payloads**، استخدم <https://security.microsoft.com/attacksimulator?viewid=payload>.
+- **حمولات**: في مدخل Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى **البريد الإلكتروني &** \> **محاكاة التعاون** \> **المحاكاة** علامة التبويب \> **Payloads**. للانتقال مباشرة إلى علامة تبويب **مكتبة محتوى المحاكاة** ، استخدم <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 - أثناء إنشاء المحاكاة: يمكنك إنشاء حمولات مخصصة على صفحة **تحديد حمولة** (الصفحة الثالثة) من معالج إنشاء المحاكاة. لمزيد من المعلومات، راجع [محاكاة هجوم تصيد احتيالي في Defender لـ Office 365](attack-simulation-training.md).
 
 للحصول على معلومات حول التدريب على محاكاة الهجوم، راجع [بدء استخدام التدريب على محاكاة الهجوم](attack-simulation-training-get-started.md).
@@ -40,7 +40,7 @@ ms.locfileid: "65648294"
 
 ## <a name="create-a-payload"></a>إنشاء حمولة
 
-بعد النقر فوق ![أيقونة إنشاء حمولة.](../../media/m365-cc-sc-create-icon.png) **إنشاء حمولة** من علامة التبويب **Payloads** من التدريب على محاكاة الهجوم أو على صفحة **[تحديد حمولة](attack-simulation-training.md#select-a-payload)** من معالج إنشاء المحاكاة، يبدأ معالج إنشاء الحمولة ويرد وصفه في هذا القسم.
+بعد النقر فوق ![أيقونة إنشاء حمولة.](../../media/m365-cc-sc-create-icon.png) **إنشاء حمولة** من **الحمولة** في علامة تبويب **مكتبة محتوى المحاكاة** لتدريب محاكاة الهجوم أو على صفحة **[تحديد حمولة](attack-simulation-training.md#select-a-payload)** من معالج إنشاء المحاكاة، يبدأ معالج إنشاء الحمولة ويرد وصفه في هذا القسم.
 
 ### <a name="select-a-payload-type"></a>تحديد نوع حمولة
 

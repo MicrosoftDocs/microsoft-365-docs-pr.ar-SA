@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: 'قم بإزالة ترخيص من علبة بريد مشتركة لتعيينه إلى مستخدم آخر أو إرجاع الترخيص حتى لا تدفع ثمنه. '
 ms.date: 04/22/2022
-ms.openlocfilehash: 4445163281e403505612066285192b31adc44979
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5248c7fdb807a91ab2a9a7dfd44bdb375eb7d0f0
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091908"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678909"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>إزالة ترخيص من علبة بريد مشتركة
 
@@ -41,7 +41,6 @@ ms.locfileid: "65091908"
 > - تحتوي علبة البريد المشتركة على أكثر من 50 غيغابايت من مساحة التخزين المستخدمة.
 > - تستخدم علبة البريد المشتركة الأرشفة الموضعية.
 > - يتم وضع علبة البريد المشتركة في احتجاز التقاضي.
-> - تحتوي علبة البريد المشتركة على ترخيص Microsoft 365 Defender معين.
 > 
 > للحصول على إرشادات مفصلة خطوة بخطوة حول كيفية تعيين التراخيص، راجع [تعيين التراخيص للمستخدمين](/microsoft-365/admin/manage/assign-licenses-to-users). 
 

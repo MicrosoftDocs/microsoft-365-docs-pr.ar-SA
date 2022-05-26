@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a5c6cd7b4fde3545f77cdece31f3693f74ca4444
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: e5f60e37765e562f0c1508778182f1f506773bff
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669309"
+ms.locfileid: "65679231"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux
 
@@ -83,9 +83,9 @@ ms.locfileid: "65669309"
 
 - توزيعات خادم Linux المدعومة وإصدارات x64 (AMD64/EM64T) x86_64:
 
-  - Red Hat Enterprise Linux 6.7 أو أعلى
-  - Red Hat Enterprise Linux 7.2 أو أعلى
-  - Red Hat Enterprise Linux 8.x
+  - Red Hat Enterprise Linux 6.7 أو إصدار أحدث (معاينة)
+  - Red Hat Enterprise Linux 7.2 أو أعلى 
+  - Red Hat Enterprise Linux 8.x 
   - CentOS 6.7 أو أعلى 
   - CentOS 7.2 أو أعلى
   - Ubuntu 16.04 LTS أو LTS أعلى
@@ -98,6 +98,9 @@ ms.locfileid: "65669309"
 
     > [!NOTE]
     > التوزيعات والإصدارات غير المدرجة بشكل صريح غير معتمدة (حتى لو كانت مشتقة من التوزيعات المدعومة رسميا).
+
+
+
 
 - قائمة بإصدارات النواة المدعومة
   - الحد الأدنى لإصدار kernel 3.10.0-327 (لجميع توزيعات Linux المدعومة المذكورة أعلاه باستثناء Red Hat Enterprise Linux 6 وCentOS 6)

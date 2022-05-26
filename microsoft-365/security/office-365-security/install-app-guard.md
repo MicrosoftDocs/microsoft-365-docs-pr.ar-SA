@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: احصل على أحدث ما في العزل المستند إلى الأجهزة. منع الهجمات الحالية والناشئة مثل المهاجمات أو الارتباطات الضارة من تعطيل إنتاجية الموظفين وأمان المؤسسة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98d23a814ac2af8d9dedc4f163923e67c9ca7dc2
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 17743c3aecc50724309ab17c9bcaf2ab10d8ab9b
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973234"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678975"
 ---
 # <a name="application-guard-for-office-for-admins"></a>حماية التطبيقات Office للمسؤولين
 
@@ -48,10 +48,14 @@ ms.locfileid: "64973234"
 
 ### <a name="licensing-requirements"></a>متطلبات الترخيص
 
-* Microsoft 365 E5 أو الأمان في Microsoft 365 E5
+* الأمان في Microsoft 365 E5
+* Microsoft 365 A5 لهيئة التدريس
+* Microsoft 365 A5 للطلاب
 
 > [!NOTE]
 > Microsoft 365 Apps for enterprise مع تنشيط الكمبيوتر المشترك أو الترخيص المستند إلى الجهاز ليس لديه حق الوصول إلى Application Guard Office.
+>
+> تسمح خطط ترخيص المستندات خزينة بالوصول إلى Application Guard Office. لمزيد من المعلومات، راجع [خزينة المستندات في Microsoft 365 E5/A5](/microsoft-365/security/office-365-security/safe-docs).
 
 ## <a name="deploy-application-guard-for-office"></a>نشر حماية التطبيقات Office
 
@@ -69,7 +73,7 @@ ms.locfileid: "64973234"
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. ابحث عن **حماية التطبيقات من Microsoft Defender في الوضع المدار**، وهو نهج مجموعة في **Computer ConfigurationAdministrative\\ Templates\\ Windows Components\\ حماية التطبيقات من Microsoft Defender**. قم بتشغيل هذا النهج عن طريق تعيين القيمة ضمن "خيارات" ك **2** أو **3**، ثم تحديد **"موافق** " أو **"تطبيق**".
+3. ابحث عن **حماية التطبيقات من Microsoft Defender في الوضع المدار**، وهو نهج مجموعة في **القوالب\\ الإدارية لتكوين\\الكمبيوتر Windows Components\\ حماية التطبيقات من Microsoft Defender**. قم بتشغيل هذا النهج عن طريق تعيين القيمة ضمن "خيارات" ك **2** أو **3**، ثم تحديد **"موافق** " أو **"تطبيق**".
 
    :::image type="content" source="../../media/ag04-deploy.png" alt-text="خيار تشغيل AG في الوضع المدار" lightbox="../../media/ag04-deploy.png":::
 
@@ -206,11 +210,11 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي للأما
 
 * عندما يتم تخزين مستند غير موثوق به في موقع موثوق به، يتم توريث الثقة من الموقع بواسطة المستند. عادة ما يتم تعريف التخزين السحابي للمؤسسة كموقع موثوق به.
 
-* يتم تعطيل المحتوى النشط في المستندات مثل وحدات الماكرو وعناصر تحكم ActiveX في Application Guard Office. يحتاج المستخدمون إلى إزالة حماية Application Guard لتمكين المحتوى النشط.
+* يتم تعطيل المحتوى النشط في المستندات مثل وحدات الماكرو وعناصر تحكم ActiveX في "حماية التطبيقات" Office. يحتاج المستخدمون إلى إزالة حماية Application Guard لتمكين المحتوى النشط.
 
 * يتم فتح الملفات غير الموثوق بها من مشاركات الشبكة أو الملفات المشتركة من OneDrive أو OneDrive for Business أو SharePoint Online من مؤسسة مختلفة للقراءة فقط في Application Guard. يمكن للمستخدمين حفظ نسخة محلية من هذه الملفات لمواصلة العمل في الحاوية أو إزالة الحماية للعمل مباشرة مع الملف الأصلي.
 
-* يتم حظر الملفات المحمية بواسطة إدارة حقوق المعلومات (IRM) بشكل افتراضي. إذا أراد المستخدمون فتح مثل هذه الملفات في "طريقة عرض محمية"، فيجب على المسؤول تكوين إعدادات النهج لأنواع الملفات غير المعتمدة للمؤسسة.
+* يتم حظر الملفات المحمية بواسطة Rights Management المعلومات (IRM) بشكل افتراضي. إذا أراد المستخدمون فتح مثل هذه الملفات في "طريقة عرض محمية"، فيجب على المسؤول تكوين إعدادات النهج لأنواع الملفات غير المعتمدة للمؤسسة.
 
 * لن تستمر أي تخصيصات لتطبيقات Office في Application Guard ل Office بعد تسجيل خروج المستخدم وتسجيل الدخول مرة أخرى أو بعد إعادة تشغيل الجهاز.
 
@@ -237,7 +241,7 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي للأما
 
 * لا يؤدي تحديد ارتباطات ويب (`http` أو `https`) إلى فتح المستعرض.
 * الإعداد الافتراضي لنهج حماية النسخ واللصق هو تمكين وصول الحافظة إلى النص فقط.
-* الإعداد الافتراضي لنهج حماية أنواع الملفات غير المعتمدة هو حظر فتح أنواع الملفات غير المعتمدة غير الموثوق بها المشفرة أو التي تم تعيين إدارة حقوق استخدام المعلومات (IRM) لها. يتضمن ذلك الملفات المشفرة باستخدام تسميات الحساسية من Microsoft Purview حماية البيانات.
+* الإعداد الافتراضي لنهج حماية أنواع الملفات غير المعتمدة هو حظر فتح أنواع الملفات غير المعتمدة غير الموثوق بها المشفرة أو التي تم تعيين Rights Management المعلومات (IRM). يتضمن ذلك الملفات المشفرة باستخدام تسميات الحساسية من حماية البيانات في Microsoft Purview.
 * ملفات CSV و HTML غير معتمدة حاليا.
 * لا يعمل Application Guard ل Office حاليا مع وحدات التخزين المضغوطة NTFS. إذا كنت ترى خطأ "ERROR_VIRTUAL_DISK_LIMITATION" يرجى محاولة إلغاء ضغط وحدة التخزين.
 * قد تؤدي التحديثات إلى .NET إلى فشل فتح الملفات في Application Guard. كحل بديل، يمكن للمستخدمين إعادة تشغيل جهازهم عند حدوث هذا الفشل. تعرف على المزيد حول المشكلة في [تلقي رسالة خطأ عند محاولة فتح حماية التطبيقات لـ Windows Defender أو بيئة الاختبار المعزولة في Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).

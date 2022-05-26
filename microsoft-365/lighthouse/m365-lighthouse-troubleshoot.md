@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، احصل على المساعدة في استكشاف أخطاء رسائل الخطأ والمشاكل وإصلاحها.
-ms.openlocfilehash: 3ee2190732fdd7c9022edaa172bd45909807225c
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: dd0867611eb0a77b0e45cb5471fb5789dccf0a4d
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188867"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692663"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>استكشاف أخطاء رسائل الخطأ ومشاكلها في Microsoft 365 Lighthouse وإصلاحها
 
@@ -54,18 +54,18 @@ ms.locfileid: "65188867"
 **يسبب:** لا يفي مستأجرو العملاء بالمعايير التالية:
 
 - يجب أن يكون قد تم إعداد الوصول المفوض لموفر الخدمة المدارة (MSP) لكي يتمكن من إدارة مستأجر العميل*
-- يجب أن يكون لديك ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business أو Microsoft Defender for Business واحد على الأقل
+- يجب أن يحتوي على Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft 365 E5 أو Windows 365 Business أو Microsoft Defender for Business واحد على الأقل الترخيص
 - يجب ألا يكون لديك أكثر من 1000 مستخدم مرخص 
 
 **القرار:** يصف الجدول التالي حالات المستأجر المختلفة التي تتطلب إجراء ويشرح كيفية حلها.
 
-*مطلوب امتيازات المسؤول المفوض (DAP) لإلحاق العملاء إلى Lighthouse. نوصي أيضا بإنشاء امتيازات المسؤول المفوض متعدد المستويات (GDAP) مع عملائك لتمكين الوصول المفوض بشكل أكثر أمانا. في حين أن DAP وGDAP يتعايشان، فإن GDAP سيكون له الأسبقية للعملاء حيث يوجد كلا النموذجين. قريبا، سيتمكن العملاء الذين يعانون من GDAP فقط (وبدون DAP) من الإلحاق ب Lighthouse.
+*مطلوب امتيازات مسؤول المفوضة (DAP) لإلحاق العملاء إلى Lighthouse. نوصي أيضا بإنشاء امتيازات مسؤول متعددة المستويات (GDAP) مع عملائك لتمكين الوصول المفوض بشكل أكثر أمانا. في حين أن DAP وGDAP يتعايشان، فإن GDAP سيكون له الأسبقية للعملاء حيث يوجد كلا النموذجين. قريبا، سيتمكن العملاء الذين يعانون من GDAP فقط (وبدون DAP) من الإلحاق ب Lighthouse.
 
 | حاله | الوصف | القرار |
 |--|--|--|
 | نشطه | تم إلحاق المستأجر بطلب من موفر الخدمات المشتركة (MSP) ولم يعد تتم إدارته في Lighthouse. | تحتاج إلى إعادة تنشيط المستأجر. في صفحة **المستأجرين** ، حدد النقاط الثلاث (المزيد من الإجراءات) إلى جانب المستأجر الذي تريد إعادة تنشيطه، ثم حدد **"تنشيط المستأجر**". قد يستغرق ظهور بيانات العميل الأولية في Lighthouse من 24 إلى 48 ساعة. |
 | غير مؤهل - لم يتم إعداد DAP أو GDAP | ليس لديك امتيازات مسؤول DAP أو GDAP تم إعدادها مع المستأجر، وهو مطلوب من Lighthouse. | إعداد امتيازات مسؤول DAP أو GDAP في مركز شركاء Microsoft. |
-| غير مؤهل - الترخيص المطلوب مفقود | المستأجر يفتقد ترخيصا مطلوبا. إنهم بحاجة إلى ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft Defender for Business واحد على الأقل. | تأكد من تعيين ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business أو Microsoft Defender for Business واحد على الأقل للمستأجر. |
+| غير مؤهل - الترخيص المطلوب مفقود | المستأجر يفتقد ترخيصا مطلوبا. إنهم بحاجة إلى ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft 365 E5 أو Microsoft Defender for Business واحد على الأقل. | تأكد من أن المستأجر لديه Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft 365 E5 أو Windows 365 Business أو تم تعيين ترخيص Microsoft Defender for Business. |
 | غير مؤهل - تم تجاوز عدد المستخدمين | المستأجر لديه أكثر من 1000 مستخدم مرخص كحد أقصى يسمح به Lighthouse. | تحقق من أن المستأجر ليس لديه أكثر من 1000 مستخدم مرخص. |
 | غير مؤهل - فشل التحقق الجغرافي | أنت والعملاء لا تقيمون في نفس المنطقة الجغرافية، والتي تتطلبها Lighthouse. | تحقق من وجود العميل في منطقتك الجغرافية. إذا لم يكن الأمر كذلك، فلا يمكنك إدارة المستأجر في Lighthouse. |
 | قيد المعالجة | اكتشفت Lighthouse المستأجر ولكنها لا تزال قيد الإعداد. | السماح ل Lighthouse 48 ساعة بإكمال إلحاق المستأجر. |
@@ -80,7 +80,7 @@ ms.locfileid: "65188867"
 
 **القرار:** تأكد من أن مسؤولا من مستأجر شريكك لديه الأذونات المناسبة قد عينك إلى مجموعة أمان GDAP الصحيحة في Azure AD وعين لك الدور الصحيح في مركز الشركاء. ضع في اعتبارك أيضا أن بعض الإجراءات في Lighthouse تتطلب منك أن تكون مسؤولا عموميا. لمعرفة المزيد حول أدوار GDAP وما يمكن أن يفعله كل دور، راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). للحصول على وصف مفصل لجميع الأدوار والأذونات المضمنة Azure AD ل GDAP، راجع [Azure AD الأدوار المضمنة](/azure/active-directory/roles/permissions-reference).
 
-بالنسبة للعملاء الذين تربطهم علاقات DAP، سيحتاج المسؤول الشريك إلى تعيينك إما إلى وكيل المسؤول أو دور وكيل Helpdesk في مركز الشركاء. للحصول على وصف مفصل لكافة أدوار وأذونات مركز الشركاء، راجع [تعيين الأدوار والأذونات للمستخدمين](/partner-center/permissions-overview).
+بالنسبة للعملاء الذين تربطهم علاقات DAP، سيحتاج المسؤول الشريك إلى تعيينك إما إلى عامل مسؤول أو دور وكيل Helpdesk في مركز الشركاء. للحصول على وصف مفصل لكافة أدوار وأذونات مركز الشركاء، راجع [تعيين الأدوار والأذونات للمستخدمين](/partner-center/permissions-overview).
 
 ### <a name="i-dont-see-complete-data-in-certain-areas-of-lighthouse-or-i-cant-perform-certain-tasks-or-i-cant-access-certain-tenants"></a>لا أرى بيانات كاملة في مناطق معينة من Lighthouse، أو لا يمكنني تنفيذ مهام معينة، أو لا يمكنني الوصول إلى مستأجرين معينين
 

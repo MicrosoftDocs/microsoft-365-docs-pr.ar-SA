@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs)، احصل على قائمة بالمتطلبات لاستخدام Microsoft 365 Lighthouse.
-ms.openlocfilehash: ca5a736c6b14b77f433b07480eba718b4f0e55c2
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 79084edf573f90ee4d977528c45fdfbfcedff36f
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174037"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692686"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>متطلبات Microsoft 365 Lighthouse
 
@@ -32,10 +32,10 @@ Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخد
 بالإضافة إلى ذلك، يجب أن يكون كل مستأجر عميل MSP مؤهلا ل Lighthouse من خلال تلبية المتطلبات التالية:
 
 - يجب أن يكون قد تم إعداد الوصول المفوض لموفر الخدمة المدارة (MSP) لكي يتمكن من إدارة مستأجر العميل*
-- يجب أن يكون لديك ترخيص Microsoft 365 Business Premium أو Microsoft 365 E3 أو Windows 365 Business أو Microsoft Defender for Business واحد على الأقل
+- يجب أن يحتوي على Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft 365 E5 أو Windows 365 Business أو Microsoft Defender for Business واحد على الأقل الترخيص
 - يجب ألا يكون لديك أكثر من 1000 مستخدم مرخص
 
-*مطلوب امتيازات المسؤول المفوض (DAP) لإلحاق العملاء إلى Lighthouse. نوصي أيضا بإنشاء امتيازات المسؤول المفوض متعدد المستويات (GDAP) مع عملائك لتمكين الوصول المفوض بشكل أكثر أمانا. في حين أن DAP وGDAP يتعايشان، فإن GDAP سيكون له الأسبقية للعملاء حيث يوجد كلا النموذجين. قريبا، سيتمكن العملاء الذين يعانون من GDAP فقط (وبدون DAP) من الإلحاق ب Lighthouse.
+*مطلوب امتيازات مسؤول المفوضة (DAP) لإلحاق العملاء إلى Lighthouse. نوصي أيضا بإنشاء امتيازات مسؤول متعددة المستويات (GDAP) مع عملائك لتمكين الوصول المفوض بشكل أكثر أمانا. في حين أن DAP وGDAP يتعايشان، فإن GDAP سيكون له الأسبقية للعملاء حيث يوجد كلا النموذجين. قريبا، سيتمكن العملاء الذين يعانون من GDAP فقط (وبدون DAP) من الإلحاق ب Lighthouse.
 
 ## <a name="requirements-for-enabling-device-management"></a>متطلبات تمكين إدارة الجهاز
 
@@ -46,7 +46,7 @@ Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخد
 
 ## <a name="requirements-for-enabling-user-management"></a>متطلبات تمكين إدارة المستخدم
 
-لكي تظهر بيانات العميل في التقارير على صفحات إدارة المستخدم، بما في ذلك المستخدمين المعرضين للمخاطر والمصادقة متعددة العوامل وإعادة تعيين كلمة المرور، يجب أن يكون لدى مستأجري العملاء تراخيص ل Azure Active Directory Premium P1 أو أحدث. يتم تضمين Azure AD Premium P1 مع Microsoft 365 Business Premium Microsoft 365 E3.
+لكي تظهر بيانات العميل في التقارير على صفحات إدارة المستخدم، بما في ذلك المستخدمين المعرضين للمخاطر والمصادقة متعددة العوامل وإعادة تعيين كلمة المرور، يجب أن يكون لدى مستأجري العملاء تراخيص ل Azure Active Directory Premium P1 أو أحدث. يتم تضمين Azure AD Premium P1 مع Microsoft 365 Business Premium Microsoft 365 E3. يتم تضمين Azure AD Premium P2 مع Microsoft 365 E5.
 
 ## <a name="requirements-for-enabling-threat-management"></a>متطلبات تمكين إدارة التهديدات
 
