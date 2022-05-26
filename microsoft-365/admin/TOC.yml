@@ -14,13 +14,7 @@
         - name: التخطيط لإعداد Microsoft 365 للأعمال
           href: setup/plan-your-setup.md
         - name: تعرّف على المزيد وقم بالتسجيل للحصول على Microsoft 365 Business Premium.
-          items:
-            - name: التسجيل
-              href: ../business/sign-up.md
-            - name: إعداد Microsoft 365 Business Premium باستخدام معالج الإعداد
-              href: ../business/set-up.md
-            - name: Microsoft 365 Business Premium (فيديو)
-              href: admin-overview/what-is-microsoft-365.md
+          href: ../business-premium/index.md
         - name: تعرّف على المزيد وقم بالتسجيل للحصول على Microsoft 365 Business Standard.
           items:
             - name: تعرّف على المزيد وقم بالتسجيل للحصول على Microsoft 365 Business Standard.
@@ -352,8 +346,6 @@
           href: manage/idle-session-timeout-web-apps.md
         - name: تمكين المصادقة الحديثة Office 2013
           href: security-and-compliance/enable-modern-authentication.md
-        - name: المتطلبات الأساسية لحماية البيانات
-          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
         - name: التهديدات التي كشف عنها برنامج الحماية من الفيروسات من Microsoft Defender
           href: /microsoft-365/business-premium/m365bp-review-threats-take-action
         - name: إعداد نُهج التوافق
@@ -366,29 +358,7 @@
       items:
         - name: أساليب حماية بيانات الجهاز والتطبيق
           href: devices/choose-device-security.md
-        - name: الوثائق في Microsoft Intune
-          href: /mem/intune/
-        - name: عرض السياسات والأجهزة وتحريرها
-          href: /microsoft-365/business-premium/m365bp-view-policies-and-devices
-        - name: إزالة بيانات الشركة
-          href: /microsoft-365/business-premium/m365bp-remove-company-data
-        - name: إعادة تعيين الأجهزة إلى إعدادات المصنع
-          href: devices/reset-devices-to-factory-settings.md
-        - name: ميزات حماية الخريطة لإعدادات Intune
-          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings
-        - name: حالات الجهاز
-          href: devices/device-states.md
-        - name: حماية التطبيقات الإعدادات الخاصة Windows 10 الكمبيوتر الشخصي
-          href: devices/protection-settings-for-windows-10-devices.md
         - name: التحقق من صحة الإعدادات على Android أو iOS
-        - name: Autopilot
-          items:
-            - name: إنشاء ملفات تعريف AutoPilot وتحريرها
-              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles
-            - name: إنشاء أجهزة AutoPilot وتحريرها
-              href: devices/create-and-edit-autopilot-devices.md
-        - name: موارد ووثائق Microsoft 365 للمؤسسات
-          href: ../enterprise/index.yml
         - name: أساسيات التنقل والأمان
           items:
             - name: نظرة عامة على التنقل والأمان الأساسيين

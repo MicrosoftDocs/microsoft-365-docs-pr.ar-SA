@@ -12,5 +12,7 @@
       href: scheduler-using.md
     - name: جدولة الاجتماعات المتكررة
       href: scheduler-recurring-meetings.md
+    - name: مجدول لتفضيلات Microsoft 365
+      href: scheduler-preferences.md
     - name: الأسئلة المتداولة حول مجدول Microsoft 365
       href: scheduler-faqs.md
