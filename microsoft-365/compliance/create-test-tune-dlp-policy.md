@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: في هذه المقالة، ستتعلم كيفية إنشاء نهج DLP واختباره وضبطه وفقا لاحتياجات مؤسستك.
-ms.openlocfilehash: 5508ce96e1309122e9c4c5139941eb41f6906e82
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 605288d5ee2839cc2f3ec225e551f0ba3e65bfcc
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637726"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753981"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>إنشاء نهج DLP واختباره وضبطه
 
@@ -44,7 +44,7 @@ ms.locfileid: "65637726"
   
 1. إنشاء مجموعة في Microsoft 365 وإضافة مسؤولي الامتثال إليها.
     
-2. إنشاء مجموعة أدوار على صفحة **"الأذونات** " في "مركز توافق الأمان &amp; ". 
+2. إنشاء مجموعة أدوار على صفحة **"الأذونات**" في مدخل التوافق في Microsoft Purview. 
 
 3. أثناء إنشاء مجموعة الأدوار، استخدم قسم **Choose Roles** لإضافة الدور التالي إلى مجموعة الأدوار: **DLP Compliance Management**.
     
@@ -62,7 +62,7 @@ ms.locfileid: "65637726"
 
 فيما يلي قائمة بالأدوار القابلة للتطبيق الموجودة في المعاينة. لمعرفة المزيد عنها، راجع ["الأدوار" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- مسؤول حماية البيانات
+- حماية البيانات مسؤول
 - محلل حماية البيانات
 - حماية البيانات المحقق
 - قارئ حماية البيانات
@@ -94,7 +94,7 @@ ms.locfileid: "65637726"
 
 عندما لا تكون مخاطر تسرب البيانات واضحة تماما، فمن الصعب العمل من حيث يجب أن تبدأ بالضبط في تنفيذ DLP. لحسن الحظ، يمكن تشغيل نهج DLP في "وضع الاختبار"، ما يسمح لك بقياس فعاليتها ودقتها قبل تشغيلها.
 
-يمكن إدارة نهج DLP Exchange Online من خلال مركز إدارة Exchange. ولكن يمكنك تكوين نهج DLP لجميع أحمال العمل من خلال مدخل التوافق في Microsoft Purview، لذلك هذا ما سأستخدمه للشرح التوضيحي في هذه المقالة. في مدخل التوافق في Microsoft Purview، ستجد نهج DLP ضمن **Data loss** **preventionPolicy** > . اختر **إنشاء نهج** للبدء.
+يمكن إدارة نهج DLP Exchange Online من خلال مركز إدارة Exchange. ولكن يمكنك تكوين نهج DLP لجميع أحمال العمل من خلال مدخل التوافق في Microsoft Purview، لذلك هذا ما سأستخدمه للشرح التوضيحي في هذه المقالة. في مدخل التوافق في Microsoft Purview، ستجد نهج DLP ضمن **نهج** **منع** >  فقدان البيانات. اختر **إنشاء نهج** للبدء.
 
 يوفر Microsoft 365 مجموعة من [قوالب نهج DLP التي](what-the-dlp-policy-templates-include.md) يمكنك استخدامها لإنشاء نهج. لنفترض أنك شركة استرالية. يمكنك تصفية القوالب على أستراليا، واختيار "مالي" و"طبي" و"صحة" و"خصوصية".
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e5f60e37765e562f0c1508778182f1f506773bff
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 9207e0ad186f6a5dc5219e1a24c6ccdd8ee23fcd
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679231"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754091"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux
 
@@ -79,14 +79,21 @@ ms.locfileid: "65679231"
 > [!NOTE]
 > لا يتم اعتماد تثبيت Microsoft Defender لنقطة النهاية في أي موقع آخر غير مسار التثبيت الافتراضي. 
 
+> [!NOTE]
+> Microsoft Defender لنقطة النهاية على Linux ينشئ مستخدم "mdatp" مع UID وGID عشوائي. إذا كنت ترغب في التحكم في UID وGID، فبادر بإنشاء مستخدم "mdatp" قبل التثبيت باستخدام خيار shell "/usr/sbin/nologin".
+> على سبيل المثال: `mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin`.
+
 ### <a name="system-requirements"></a>متطلبات النظام
+
+> [!NOTE]
+> دعم Red Hat Enterprise Linux وCentOS 6.7+ إلى 6.10+ في المعاينة.
 
 - توزيعات خادم Linux المدعومة وإصدارات x64 (AMD64/EM64T) x86_64:
 
   - Red Hat Enterprise Linux 6.7 أو إصدار أحدث (معاينة)
-  - Red Hat Enterprise Linux 7.2 أو أعلى 
-  - Red Hat Enterprise Linux 8.x 
-  - CentOS 6.7 أو أعلى 
+  - Red Hat Enterprise Linux 7.2 أو أعلى
+  - Red Hat Enterprise Linux 8.x
+  - CentOS 6.7 أو أعلى (معاينة)
   - CentOS 7.2 أو أعلى
   - Ubuntu 16.04 LTS أو LTS أعلى
   - Debian 9 أو أعلى
@@ -103,13 +110,16 @@ ms.locfileid: "65679231"
 
 
 - قائمة بإصدارات النواة المدعومة
-  - الحد الأدنى لإصدار kernel 3.10.0-327 (لجميع توزيعات Linux المدعومة المذكورة أعلاه باستثناء Red Hat Enterprise Linux 6 وCentOS 6)
+  > [!NOTE]
+  > Microsoft Defender لنقطة النهاية على RHEL/CentOS - من 6.7 إلى 6.10 هو حل قائم على Kernel. يجب التحقق من أن النواة معتمدة قبل التحديث إلى إصدار kernel الأحدث. راجع القائمة أدناه للحصول على قائمة النواة المدعومة.
+  > Microsoft Defender لنقطة النهاية التنفيذ لجميع التوزيعات والإصدارات الأخرى المدعومة هو kernel-version-agnostic. مع الحد الأدنى من متطلبات أن يكون إصدار kernel في أو أعلى من 3.10.0-327.
+
   - `fanotify` يجب تمكين خيار النواة
   - Red Hat Enterprise Linux 6 وCentOS 6:
     - ل 6.7: 2.6.32-573.*
     - ل 6.8: 2.6.32-642.*
     - ل 6.9: 2.6.32-696.* (باستثناء 2.6.32-696.el6.x86_64)
-    - بالنسبة إلى 6.10: 2.6.32.754.2.1.el6.x86_64 إلى 2.6.32-754.43.1:
+    - بالنسبة إلى 6.10: 2.6.32.754.2.1.el6.x86_64 إلى 2.6.32-754.47.1:
     
        - 2.6.32-754.10.1.el6.x86_64
        - 2.6.32-754.11.1.el6.x86_64

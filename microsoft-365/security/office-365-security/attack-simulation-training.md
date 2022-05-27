@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: يمكن للمسؤولين تعلم كيفية محاكاة هجمات التصيد الاحتيالي وتدريب مستخدميهم على منع التصيد الاحتيالي باستخدام تدريب محاكاة الهجوم في Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
-ms.openlocfilehash: 647ea6188e1bd7867e823bbfbb6341255e82960d
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 08d86488f9575aad995752ca331b3cbbb31d07fe
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679451"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739638"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>محاكاة هجوم تصيد احتيالي مع تدريب محاكاة الهجوم في Defender لـ Office 365
 
@@ -319,7 +319,7 @@ ms.locfileid: "65679451"
       - **التسليم بعد انتهاء الحملة**
       - **التسليم أثناء الحملة**
     - **الإجراءات**: إذا نقرت فوق الأيقونة !["عرض".](../../media/m365-cc-sc-view-icon.png) أيقونة **العرض**، تظهر صفحة **إعلام المراجعة** مع المعلومات التالية:
-      - علامة التبويب **"معاينة**": عرض رسالة الإعلام.
+      - **علامة التبويب "معاينة** ": عرض رسالة الإعلام حيث سيتمكن المستخدمون من رؤيتها.
         - لعرض الرسالة بلغات مختلفة، استخدم مربع **تحديد اللغة** .
         - استخدم مربع **تحديد الحمولة للمعاينة** لتحديد رسالة الإعلام للمحاكاة التي تحتوي على حمولات متعددة.
       - علامة التبويب **"تفاصيل**": عرض تفاصيل حول الإعلام:

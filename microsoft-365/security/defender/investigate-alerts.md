@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: fd043ae1ebabcb8162ed96b973c9392bae5fd2a1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 40e0285f185d112fa508d871e0ccd70c2a09120e
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944426"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739406"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>التحقيق في التنبيهات في Microsoft 365 Defender
 
@@ -67,7 +67,7 @@ ms.locfileid: "64944426"
 
 ستحتاج إلى الحصول على أي من الأدوار التالية للوصول إلى تنبيهات Microsoft Defender لـ Office 365:
 
-- بالنسبة إلى أدوار Azure Active Directory (Azure AD) العمومية:
+- للأدوار العمومية ل Azure Active Directory (Azure AD):
 
    - المسؤول العام
 
@@ -114,7 +114,7 @@ ms.locfileid: "64944426"
 | :---|:--- |
 | Microsoft Defender لـ Office 365 | `fa{GUID}` <br> على سبيل المثال:`fa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Endpoint | `da` أو `ed` لتنبيهات الكشف المخصصة <br> |
-| Microsoft Defender for Identity | `aa{GUID}` <br> على سبيل المثال:`aa123a456b-c789-1d2e-12f1g33h445h6i` |
+| Microsoft Defender للهوية | `aa{GUID}` <br> على سبيل المثال:`aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> على سبيل المثال:`ca123a456b-c789-1d2e-12f1g33h445h6i` |
 
 ### <a name="analyze-affected-assets"></a>تحليل الأصول المتأثرة
@@ -206,9 +206,8 @@ ms.locfileid: "64944426"
 
 ### <a name="create-an-automated-flow"></a>إنشاء تدفق تلقائي
 
-للحصول على العملية المفصلة خطوة بخطوة، راجع الفيديو [هنا](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn).
-
-يصف هذا الفيديو أيضا كيفية توصيل أتمتة الطاقة ب Defender for Cloud Apps.
+شاهد هذا الفيديو القصير لمعرفة كيفية عمل الأتمتة بكفاءة لإنشاء سير عمل سلس وكيفية توصيل Power Automate ب Defender for Cloud Apps. 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
 ## <a name="next-steps"></a>الخطوات التالية
 

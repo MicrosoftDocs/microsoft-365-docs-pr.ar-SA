@@ -28,16 +28,16 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: تعرف على خزينة حماية الارتباطات في Defender لـ Office 365 لحماية المؤسسة من التصيد الاحتيالي والهجمات الأخرى التي تستخدم عناوين URL الضارة. اكتشف Teams خزينة الارتباطات، وشاهد رسومات رسائل الارتباطات خزينة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 46ea33c872782845a8d9697a9abbddcef22e94fb
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4b518095404f22631533cbf7eff744a62a9c7bd1
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623482"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739882"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>ارتباطات خزينة في Microsoft Defender لـ Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
@@ -47,6 +47,9 @@ ms.locfileid: "65623482"
 > هذه المقالة مخصصة لعملاء الأعمال الذين لديهم [Microsoft Defender لـ Office 365](defender-for-office-365.md). إذا كنت تستخدم Outlook.com أو Microsoft 365 Family أو Microsoft 365 Personal، وكنت تبحث عن معلومات حول الارتباطات الآمنة في Outlook، فراجع [الأمان المتقدم Outlook.com](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 خزينة الارتباطات هي ميزة في [Defender لـ Office 365](defender-for-office-365.md) توفر مسح عنوان URL وإعادة كتابة رسائل البريد الإلكتروني الواردة في تدفق البريد والتحقق من وقت النقر لعناوين URL والارتباطات في رسائل البريد الإلكتروني والمواقع الأخرى. يحدث فحص الارتباطات خزينة بالإضافة إلى رسائل البريد الإلكتروني الواردة العادية [لمكافحة البريد العشوائي](anti-spam-protection.md) والبرامج [الضارة](anti-malware-protection.md) في رسائل البريد الإلكتروني الواردة في Exchange Online Protection (EOP). يمكن أن يساعد فحص الارتباطات خزينة في حماية مؤسستك من الارتباطات الضارة المستخدمة في التصيد الاحتيالي والهجمات الأخرى.
+
+شاهد هذا الفيديو القصير حول كيفية الحماية من الارتباطات الضارة باستخدام ارتباطات خزينة في Microsoft Defender لـ Office 365.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 تتوفر خزينة حماية الارتباطات في المواقع التالية:
 

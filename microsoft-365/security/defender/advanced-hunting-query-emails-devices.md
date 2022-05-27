@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 099ba7abe53be6269c1d01c0d39d9e5cfbe3557d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 0ca9a951ffd561113a806341d25bc1f0661732cc
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731681"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739938"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>البحث عن التهديدات عبر الأجهزة ورسائل البريد الإلكتروني والتطبيقات والهويات
 
@@ -82,7 +82,10 @@ SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle,
 Department, City, Country
 ```
 
+شاهد هذا [الفيديو القصير](https://www.youtube.com/watch?v=8qZx7Pp5XgM) للتعرف على كيفية استخدام لغة استعلام Kusto للانضمام إلى الجداول.  
+
 ### <a name="get-device-information"></a>الحصول على معلومات الجهاز
+
 يوفر [مخطط التتبع المتقدم](advanced-hunting-schema-tables.md) معلومات واسعة عن الجهاز في جداول مختلفة. على سبيل المثال، يوفر [جدول DeviceInfo](advanced-hunting-deviceinfo-table.md) معلومات شاملة عن الجهاز استنادا إلى بيانات الأحداث المجمعة بانتظام. يستخدم `DeviceInfo` هذا الاستعلام الجدول للتحقق مما إذا كان المستخدم (`<account-name>`) الذي يحتمل أن يكون قد قام بتسجيل الدخول إلى أي أجهزة ثم يسرد التنبيهات التي تم تشغيلها على تلك الأجهزة.
 
 >[!Tip]
@@ -152,9 +155,9 @@ DeviceInfo
 ```
 
 
-### <a name="example-query-for-macos-devices"></a>استعلام مثال لأجهزة macOS
+### <a name="example-query-for-macos-devices"></a>استعلام مثال للأجهزة macOS
 
-استخدم استعلام المثال التالي لمشاهدة جميع الأجهزة التي تعمل بنظام التشغيل macOS مع إصدار أقدم من Catalina.
+استخدم استعلام المثال التالي لمشاهدة جميع الأجهزة التي تعمل macOS مع إصدار أقدم من Catalina.
 
 ```kusto
 DeviceInfo
@@ -188,6 +191,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>سيناريوهات التتبع
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>سرد أنشطة تسجيل الدخول للمستخدمين الذين تلقوا رسائل بريد إلكتروني لم يتم تجاوزها بنجاح
+
 تعالج [عملية الإزالة التلقائية بدون ساعة (ZAP)](../office-365-security/zero-hour-auto-purge.md) رسائل البريد الإلكتروني الضارة بعد تلقيها. إذا فشل ZAP، فقد يتم تشغيل التعليمات البرمجية الضارة في النهاية على الجهاز وترك الحسابات معرضة للخطر. يتحقق هذا الاستعلام من نشاط تسجيل الدخول الذي قام به مستلمو رسائل البريد الإلكتروني التي لم تتم معالجتها بنجاح بواسطة ZAP.
 
 ```kusto
@@ -205,6 +209,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 ```
 
 ### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>الحصول على محاولات تسجيل الدخول من قبل حسابات المجال المستهدفة بسرقة بيانات الاعتماد
+
 يحدد هذا الاستعلام أولا كافة تنبيهات الوصول إلى بيانات الاعتماد في `AlertInfo` الجدول. ثم يقوم بدمج الجدول أو ضمه `AlertEvidence` ، الذي يقوم بفرزه لأسماء الحسابات المستهدفة وعوامل التصفية للحسابات المرتبطة بالمجال فقط. وأخيرا، فإنه يتحقق من `IdentityLogonEvents` الجدول للحصول على جميع أنشطة تسجيل الدخول من قبل الحسابات المستهدفة المرتبطة بالمجال.
 
 ```kusto
@@ -225,6 +230,7 @@ AlertInfo
 ```
 
 ### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>التحقق مما إذا كانت الملفات من مرسل ضار معروف موجودة على أجهزتك
+
 بافتراض أنك تعرف عنوان بريد إلكتروني يرسل ملفات ضارة (`MaliciousSender@example.com`)، يمكنك تشغيل هذا الاستعلام لتحديد ما إذا كانت الملفات من هذا المرسل موجودة على أجهزتك. يمكنك استخدام هذا الاستعلام، على سبيل المثال، لتحديد الأجهزة المتأثرة بحملة توزيع البرامج الضارة.
 
 ```kusto
@@ -241,6 +247,7 @@ DeviceFileEvents
 ```
 
 ### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a>مراجعة محاولات تسجيل الدخول بعد تلقي رسائل بريد إلكتروني ضارة
+
 يبحث هذا الاستعلام عن آخر 10 عمليات تسجيل دخول تم إجراؤها بواسطة مستلمي البريد الإلكتروني في غضون 30 دقيقة بعد تلقيهم رسائل بريد إلكتروني ضارة معروفة. يمكنك استخدام هذا الاستعلام للتحقق مما إذا تم اختراق حسابات مستلمي البريد الإلكتروني.
 
 ```kusto
@@ -261,6 +268,7 @@ IdentityLogonEvents
 ```
 
 ### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>مراجعة أنشطة PowerShell بعد تلقي رسائل البريد الإلكتروني من مرسل ضار معروف
+
 غالبا ما تحتوي رسائل البريد الإلكتروني الضارة على مستندات ومرفقات أخرى مصممة خصيصا لتشغيل أوامر PowerShell لتسليم حمولات إضافية. إذا كنت على علم برسائل البريد الإلكتروني الواردة من مرسل ضار معروف (`MaliciousSender@example.com`)، يمكنك استخدام هذا الاستعلام لإدراج أنشطة PowerShell التي حدثت في غضون 30 دقيقة بعد تلقي رسالة بريد إلكتروني من المرسل ومراجعتها.  
 
 ```kusto
@@ -283,6 +291,7 @@ DeviceProcessEvents
 ```
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
+
 - [نظرة عامة متقدمة حول الصيد](advanced-hunting-overview.md)
 - [التعرّف على لغة الاستعلام](advanced-hunting-query-language.md)
 - [استخدام نتائج الاستعلام](advanced-hunting-query-results.md)

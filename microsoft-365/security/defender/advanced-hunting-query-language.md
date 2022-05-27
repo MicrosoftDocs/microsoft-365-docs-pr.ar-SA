@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b9bca10cf946a7e812064f07cc3be6fa658edf39
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 724e6c0b0e0a9854df6c87977cacbf1e1a69bfbe
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217387"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739989"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>تعلم لغة استعلام التتبع المتقدمة
 
@@ -33,6 +33,7 @@ ms.locfileid: "65217387"
 
 
 **ينطبق على:**
+
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
@@ -71,6 +72,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 **[تشغيل هذا الاستعلام في التتبع المتقدم](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>وصف الاستعلام وتحديد الجداول التي تريد البحث فيها
+
 تمت إضافة تعليق قصير إلى بداية الاستعلام لوصف ما هو مخصص له. يساعد هذا التعليق إذا قررت لاحقا حفظ الاستعلام ومشاركته مع الآخرين في مؤسستك. 
 
 ```kusto
@@ -82,7 +84,9 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+
 ### <a name="set-the-time-range"></a>تعيين النطاق الزمني
+
 العنصر الأول الذي يتم تحريكه هو عامل تصفية الوقت الذي تم تحديد نطاقه إلى الأيام السبعة السابقة. يساعد تحديد النطاق الزمني على ضمان أداء الاستعلامات بشكل جيد، وإرجاع نتائج يمكن إدارتها، ولا مهلة.
 
 ```kusto
@@ -90,6 +94,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="check-specific-processes"></a>التحقق من عمليات معينة
+
 يتبع النطاق الزمني على الفور عملية بحث عن أسماء ملفات المعالجة التي تمثل تطبيق PowerShell.
 
 ```kusto
@@ -98,6 +103,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="search-for-specific-command-strings"></a>البحث عن سلاسل أوامر معينة
+
 بعد ذلك، يبحث الاستعلام عن سلاسل في سطور الأوامر التي تستخدم عادة لتنزيل الملفات باستخدام PowerShell.
 
 ```kusto
@@ -113,6 +119,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="customize-result-columns-and-length"></a>تخصيص أعمدة النتائج وطولها 
+
 الآن بعد أن حدد الاستعلام البيانات التي تريد تحديد موقعها بوضوح، يمكنك تحديد شكل النتائج. `project` إرجاع أعمدة معينة، والحد `top` من عدد النتائج. تساعد عوامل التشغيل هذه في ضمان أن النتائج منسقة بشكل جيد وكبيرة إلى حد معقول وسهلة المعالجة.
 
 ```kusto
@@ -125,6 +132,8 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 >[!TIP]
 >يمكنك عرض نتائج الاستعلام كمخططات وضبط عوامل التصفية بسرعة. للحصول على إرشادات، [اقرأ حول استخدام نتائج الاستعلام](advanced-hunting-query-results.md)
+
+شاهد هذا [الفيديو القصير](https://www.youtube.com/watch?v=8qZx7Pp5XgM) للتعرف على كيفية استخدام لغة استعلام Kusto للانضمام إلى الجداول.
 
 ## <a name="learn-common-query-operators"></a>تعرف على عوامل تشغيل الاستعلام الشائعة
 
@@ -160,12 +169,14 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 لمعرفة المزيد حول أنواع البيانات هذه، [اقرأ عن أنواع بيانات Kusto العددية](/azure/data-explorer/kusto/query/scalar-data-types/).
 
 ## <a name="get-help-as-you-write-queries"></a>الحصول على المساعدة أثناء كتابة الاستعلامات
+
 استفد من الوظائف التالية لكتابة الاستعلامات بشكل أسرع:
-- **Autosuggest** — أثناء كتابة الاستعلامات، يوفر التتبع المتقدم اقتراحات من IntelliSense. 
+- **الأخطاء التلقائية** — أثناء كتابة الاستعلامات، يوفر التتبع المتقدم اقتراحات من IntelliSense. 
 - **شجرة المخطط** — يتم توفير تمثيل مخطط يتضمن قائمة الجداول والأعمدة الخاصة بها إلى جانب منطقة العمل. لمزيد من المعلومات، مرر مؤشر الماوس فوق عنصر. انقر نقرا مزدوجا فوق عنصر لإدراجه في محرر الاستعلام.
 - **[مرجع المخطط](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** - مرجع في المدخل مع أوصاف الجدول والأعمدة بالإضافة إلى أنواع الأحداث المعتمدة (`ActionType` القيم) واستعلامات العينة
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>العمل مع استعلامات متعددة في المحرر
+
 يمكنك استخدام محرر الاستعلام لتجربة استعلامات متعددة. لاستخدام استعلامات متعددة:
 
 - افصل كل استعلام بسطر فارغ.
@@ -201,6 +212,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 >قد لا تتوفر بعض الجداول في هذه المقالة في Microsoft Defender لنقطة النهاية. [قم بتشغيل Microsoft 365 Defender](m365d-enable.md) للبحث عن التهديدات باستخدام المزيد من مصادر البيانات. يمكنك نقل مهام سير عمل التتبع المتقدمة من Microsoft Defender لنقطة النهاية إلى Microsoft 365 Defender باتباع الخطوات الواردة في [ترحيل استعلامات التتبع المتقدمة من Microsoft Defender لنقطة النهاية](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
+
 - [نظرة عامة متقدمة حول الصيد](advanced-hunting-overview.md)
 - [استخدام نتائج الاستعلام](advanced-hunting-query-results.md)
 - [استخدام الاستعلامات المشتركة](advanced-hunting-shared-queries.md)

@@ -16,13 +16,13 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: في هذه المقالة، سوف تساعدك الموارد على ترحيل بيانات مؤسستك إلى Microsoft 365.
-ms.openlocfilehash: d0cf1aa5e744dc545f5a037b63f7cc1981f0e23c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: في هذه المقالة، ستجد الموارد لمساعدتك في ترحيل بيانات مؤسستك إلى Microsoft 365.
+ms.openlocfilehash: 97846f3a35fdc415b172cbc5670739ca10204b70
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096403"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753419"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>ترحيل بيانات مؤسستك إلى Microsoft 365 Enterprise
 
@@ -30,7 +30,7 @@ ms.locfileid: "65096403"
 
 تساعدك [إرشادات الإعداد الأساسية](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) الخاصة بنا في الحصول على جميع الأشخاص الذين يستخدمون خدماتك وتطبيقاتك Microsoft 365 في أقصر وقت ممكن. يؤدي ذلك إلى تخطي السيناريوهات المختلطة والأساليب الأكثر تقدما للترحيل إلى Microsoft 365. 
   
-إذا كنت تريد المساعدة في إعداد Microsoft 365، [FastTrack](https://fasttrack.microsoft.com/office) هي أسهل طريقة لنشر Microsoft 365، يمكنك أيضا تسجيل الدخول واستخدام [إرشادات الإعداد لخدمات Microsoft 365](setup-guides-for-microsoft-365.md).
+إذا كنت تريد مساعدة في الحصول على إعداد Microsoft 365، [FastTrack](https://fasttrack.microsoft.com/office) هي أسهل طريقة لنشر Microsoft 365، يمكنك أيضا تسجيل الدخول واستخدام [إرشادات الإعداد لخدمات Microsoft 365](setup-guides-for-microsoft-365.md).
 
 ## <a name="migrate-email-to-microsoft-365"></a>ترحيل البريد الإلكتروني إلى Microsoft 365
 - ترحيل باستخدام Exchange Hybrid باستخدام [Exchange Deployment Assistant](https://technet.microsoft.com/exdeploy2013). (المسؤول)

@@ -17,16 +17,16 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: حالة حماية الخدمة Microsoft 365
-ms.openlocfilehash: 0b3ede9b35dbf4e0356be8d1479e75561f66fdb2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0f7c7d0d14cdecbfb122d03fdcb4c93fcddbced2
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100380"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753353"
 ---
 # <a name="microsoft-365-network-health-status"></a>حالة حماية الشبكة Microsoft 365
 
-نظرا إلى الطلب المتزايد على خدمات Microsoft السحابية خلال أزمة COVID-19، نقدم معلومات حول صحة شبكة Microsoft العالمية بالإضافة إلى معلومات حول مشكلات جودة الشبكة التي قد يواجهها عملاتنا ولكن لا يمكننا التحكم بها.
+نظرا للطلب المتزايد على خدمات Microsoft السحابية في أثناء أزمة COVID-19، فإننا نقدم معلومات حول صحة شبكة Microsoft العالمية ومعلومات حول مشكلات جودة الشبكة التي قد يواجهها عملائنا ولكن لا يمكننا التحكم بها.
 
 تتضمن هذه المعلومات مشكلات الشبكة التي تؤثر على جميع برامجنا كعروض الخدمة، بما في ذلك Microsoft 365.
 

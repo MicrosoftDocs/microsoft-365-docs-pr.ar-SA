@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: تستخدم المصادقة متعددة العوامل (MFA) كلمة مرور، والتي يجب أن تكون قوية، وأسلوب تحقق إضافي.
-ms.openlocfilehash: e7d32776edb0f8fa6eaa4019f394870a6346e1d2
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: f939b187fc81381dae4959fdf14280bc839dadb0
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637638"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739860"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>المصادقة متعددة العوامل Microsoft 365
 
@@ -62,7 +62,7 @@ ms.locfileid: "65637638"
 |الخطة|توصية|نوع العميل|
 |---|---|---|
 |كافة خطط Microsoft 365|استخدم إعدادات الأمان الافتراضية، التي تتطلب المصادقة متعددة العوامل لجميع حسابات المستخدمين. <p> يمكنك أيضا تكوين المصادقة متعددة العوامل لكل مستخدم على حسابات المستخدمين الفردية، ولكن هذا غير مستحسن.|الشركات الصغيرة|
-|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> تراخيص Azure Active Directory (Azure AD) Premium P1|استخدم نهج الوصول المشروط لطلب المصادقة متعددة العوامل لحسابات المستخدمين استنادا إلى عضوية المجموعة أو التطبيقات أو معايير أخرى.|الشركات الصغيرة إلى المؤسسة|
+|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> تراخيص Azure Active Directory (Azure AD) Premium P1|استخدم [إعدادات الأمان الافتراضية أو نهج الوصول المشروط](/microsoft-365/business-premium/m365bp-conditional-access) لطلب المصادقة متعددة العوامل لحسابات المستخدمين استنادا إلى عضوية المجموعة أو التطبيقات أو معايير أخرى.|الشركات الصغيرة إلى المؤسسة|
 |Microsoft 365 E5 <p> تراخيص Azure AD Premium P2|استخدم Azure AD Identity Protection لطلب المصادقة متعددة العوامل استنادا إلى معايير مخاطر تسجيل الدخول.|Enterprise|
 ||||
 

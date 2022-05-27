@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: تعرف على كيفية إدارة ExpressRoute Office 365، بما في ذلك المجالات الشائعة لتكوينها مثل تصفية البادئة والأمان والتوافق.
-ms.openlocfilehash: a601c047a7b8e19f02a728d00708689c795d5a64
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 493a7c0ca14d05a2b84763b9e9485f828574a930
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098307"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753859"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>إدارة ExpressRoute للاتصال Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "65098307"
   
 إذا كنت بحاجة إلى التحقق من صحة ملكية المسار عبر نظير ExpressRoute العام، يمكنك التحقق من المسارات المعلن عنها مقابل قائمة جميع بادئات IP IPv4 وIPv6 التي تمثل [نطاقات IP العامة ل Microsoft](https://www.microsoft.com/download/details.aspx?id=53602). تغطي هذه النطاقات مساحة عنوان Microsoft الكاملة وتتغير بشكل غير متكرر، ما يوفر مجموعة موثوقة من النطاقات للتصفية مقابل تلك التي توفر أيضا حماية إضافية للعملاء المعنيين بالمسارات غير المملوكة ل Microsoft التي تتسرب إلى بيئتهم. في حالة وجود تغيير، سيتم إجراؤه في الأول من الشهر وسيتغير رقم الإصدار في قسم **التفاصيل** في الصفحة في كل مرة يتم فيها تحديث الملف.
   
-هناك عدد من الأسباب لتجنب استخدام [عناوين URL Office 365 ونطاقات عناوين IP](./urls-and-ip-address-ranges.md) لإنشاء قوائم تصفية البادئة. بما في ذلك ما يلي:
+هناك العديد من الأسباب لتجنب استخدام [عناوين URL Office 365 ونطاقات عناوين IP](./urls-and-ip-address-ranges.md) لإنشاء قوائم تصفية البادئة. بما في ذلك ما يلي:
   
 - تخضع بادئات IP Office 365 الكثير من التغييرات بشكل متكرر.
 
@@ -59,7 +59,7 @@ ms.locfileid: "65098307"
   
 ### <a name="security"></a>الأمان
 
-توصي Microsoft بالحفاظ على عناصر التحكم الخاصة بالشبكة والأمان المحيطة للاتصالات التي تنتقل من وإلى إقران ExpressRoute العام وMicrosoft، والذي يتضمن اتصالات من خدمات Office 365 وإلصادرها. يجب أن تكون عناصر التحكم في الأمان في مكانها لطلبات الشبكة التي تنتقل إلى الخارج من شبكتك إلى شبكة Microsoft وكذلك الواردة من شبكة Microsoft إلى شبكتك.
+توصي Microsoft بالحفاظ على عناصر التحكم الخاصة بالشبكة والأمان المحيطة للاتصالات التي تنتقل من وإلى إقران ExpressRoute العام وMicrosoft، والذي يتضمن اتصالات من خدمات Office 365 وإلصادرها. يجب أن تكون عناصر التحكم في الأمان في مكانها لطلبات الشبكة التي تنتقل إلى الخارج من شبكتك إلى شبكة Microsoft والواردة من شبكة Microsoft إلى شبكتك.
   
 #### <a name="outbound-from-customer-to-microsoft"></a>الصادرة من العميل إلى Microsoft
   
@@ -86,11 +86,11 @@ ms.locfileid: "65098307"
 
 - البريد من مستأجر Exchange Online إلى مضيف محلي.
 
-- SharePoint إرسال البريد عبر الإنترنت من SharePoint Online إلى مضيف محلي.
+- SharePoint Online Mail المرسل من SharePoint Online إلى مضيف محلي.
 
 - [SharePoint البحث المختلط المتحد](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online).
 
-- [SharePoint BCS المختلط](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
+- [SharePoint BCS المختلطة](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution).
 
 - [Skype for Business الاتحاد المختلط](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) و/أو [Skype for Business](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features).
 

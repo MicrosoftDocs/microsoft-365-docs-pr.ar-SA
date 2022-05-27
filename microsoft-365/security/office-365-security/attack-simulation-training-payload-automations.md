@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: يمكن للمسؤولين تعلم كيفية استخدام أتمتة الحمولة (جمع الحمولة) لجمع عمليات المحاكاة التلقائية وإطلاقها لتدريب محاكاة الهجوم في Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
-ms.openlocfilehash: 7fb3b0bbad5bbec8044a94da1943b0bd25eba865
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 862547884f9a7697382affda734af0f323c86c4a
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679363"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739550"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>أتمتة الحمولة لتدريب محاكاة الهجوم
 
@@ -31,7 +31,7 @@ ms.locfileid: "65679363"
 
 1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com/>انتقل إلى **Email & collaboration** \> **Attack training** \> **Automations** tab \> **Payload automations**.
 
-   للانتقال مباشرة إلى علامة التبويب **Automations** ، استخدم <https://security.microsoft.com/attacksimulator?viewid=automations>.
+   للانتقال مباشرة إلى علامة التبويب **Automations** حيث يمكنك تحديد **أتمتة Payload**، استخدم <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. في **أتمتة Payload**، حدد ![أيقونة إنشاء أتمتة.](../../media/m365-cc-sc-create-icon.png) **إنشاء التشغيل التلقائي**.
 

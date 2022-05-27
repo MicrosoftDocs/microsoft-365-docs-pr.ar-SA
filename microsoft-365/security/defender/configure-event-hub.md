@@ -1,6 +1,6 @@
 ---
-title: تكوين Event Hub
-description: تعرف على كيفية تكوين Event Hub
+title: تكوين مراكز الأحداث
+description: تعرف على كيفية تكوين مراكز الأحداث
 keywords: مركز الحدث، وتكوينه، ونتائج التحليلات
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,33 +19,34 @@ ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 MS.technology: mde
-ms.openlocfilehash: 40211d37b8b036f93b826a383d9d0aa87f44fc68
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: 569f51eda2f2ee61286c661548fe73e793928294
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243063"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754831"
 ---
-# <a name="configure-your-event-hub"></a>تكوين Event Hub
+# <a name="configure-your-event-hubs"></a>تكوين مراكز الأحداث
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-تعرف على كيفية تكوين Event Hub بحيث يمكنه استيعاب الأحداث من Microsoft 365 Defender.
+تعرف على كيفية تكوين Event Hubs بحيث يمكنها استيعاب الأحداث من Microsoft 365 Defender.
 
-## <a name="set-up-the-required-resource-provider-in-the-event-hub-subscription"></a>إعداد موفر الموارد المطلوب في اشتراك Event Hub
+## <a name="set-up-the-required-resource-provider-in-the-event-hubs-subscription"></a>إعداد موفر الموارد المطلوب في اشتراك Event Hubs
 
 1. سجّل الدخول إلى [مدخل Azure](https://portal.azure.com).
 1. Select **Subscriptions** > **{ Select the subscription the event hubs will be deployed to }** > **Resource providers**.
-1. تحقق من أن **Microsoft.Insights** الموفر مسجل. وإلا، فسجله.
+1. تحقق مما إذا كان **Microsoft.Insights** الموفر مسجل. وإلا، فسجله.
 
 :::image type="content" source="../../media/f893db7a7b1f7aa520e8b9257cc72562.png" alt-text="قائمة صفحة موفري الخدمة في مدخل Microsoft Azure" lightbox="../../media/f893db7a7b1f7aa520e8b9257cc72562.png":::
 
 ## <a name="set-up-azure-active-directory-app-registration"></a>إعداد تسجيل تطبيق Azure Active Directory
 
-> ! [ملاحظة] يجب أن يكون لديك دور المسؤول أو يجب تعيين Azure Active Directory (AAD (دليل Azure النشط)) للسماح لغير المسؤولين بتسجيل التطبيقات. يجب أن يكون لديك أيضا دور "المالك" أو "مسؤول وصول المستخدم" لتعيين دور لكيان الخدمة. لمزيد من المعلومات، راجع [إنشاء تطبيق Azure AD & كيان الخدمة في المدخل - النظام الأساسي للهويات في Microsoft \| Microsoft Docs](/azure/active-directory/develop/howto-create-service-principal-portal).
+> [!NOTE]
+> يجب أن يكون لديك دور المسؤول أو يجب تعيين Azure Active Directory (AAD) للسماح لغير المسؤولين بتسجيل التطبيقات. يجب أن يكون لديك أيضا دور "المالك" أو "مسؤول وصول المستخدم" لتعيين دور لكيان الخدمة. لمزيد من المعلومات، راجع [إنشاء تطبيق Azure AD & كيان الخدمة في المدخل - النظام الأساسي للهويات في Microsoft \| Microsoft Docs](/azure/active-directory/develop/howto-create-service-principal-portal).
 
 1. إنشاء تسجيل جديد (الذي ينشئ بطبيعته كيان خدمة) في **تسجيلات** \> تطبيق **Azure Active Directory** \> **الجديدة.**
 
@@ -59,44 +60,51 @@ ms.locfileid: "65243063"
 1. إنشاء سر بالنقر فوق **شهادات & أسرار** \> **سر عميل جديد**:
 
     :::image type="content" source="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png" alt-text="قسم بيانات العميل السرية في مدخل Microsoft Azure" lightbox="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png":::
-    
+
+تستخدم Microsoft Graph APIs قيمة بيانات العميل السرية هذه لمصادقة هذا التطبيق الذي يتم تسجيله.
 
 > [!WARNING]
 > **لن تتمكن من الوصول إلى سر العميل مرة أخرى لذا تأكد من حفظه**.
 
-## <a name="set-up-event-hub-namespace"></a>إعداد مساحة اسم Event Hub
+## <a name="set-up-event-hubs-namespace"></a>إعداد مساحة اسم Event Hubs
 
-1. إنشاء مساحة اسم Event Hub:
+1. إنشاء مساحة اسم Event Hubs:
 
-    انتقل **إلى Event Hub \> Add** وحدد مستوى التسعير ووحدات معدل النقل والنفخ التلقائي (يتطلب تسعيرا قياسيا وضمن الميزات) المناسبة للتحميل الذي تتوقعه. لمزيد من المعلومات، راجع [Pricing - Event Hub \| Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
+    انتقل **إلى Event Hub \> Add** وحدد مستوى التسعير ووحدات معدل النقل والنفخ التلقائي (يتطلب تسعيرا قياسيا وضمن ميزات) مناسبة للتحميل الذي تتوقعه. لمزيد من المعلومات، راجع [Pricing - Event Hubs \| Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/).
 
     > [!NOTE]
     > يمكنك استخدام مركز حدث موجود، ولكن يتم تعيين معدل النقل والتحجيم على مستوى مساحة الاسم بحيث يوصى بوضع event-hub في مساحة الاسم الخاصة به.
 
    :::image type="content" source="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png" alt-text="قسم مراكز الأحداث في مدخل Microsoft Azure" lightbox="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png":::
 
-1. ستحتاج أيضا إلى معرف المورد لمساحة اسم Event Hub هذه. انتقل إلى خصائص مساحة \> اسم Azure Event Hub. انسخ النص ضمن معرف المورد وسجله لاستخدامه أثناء قسم تكوين Microsoft 365 أدناه.
+1. ستحتاج أيضا إلى معرف المورد لمساحة اسم Event Hubs هذه. انتقل إلى خصائص صفحة \> مساحة اسم Azure Event Hubs. انسخ النص ضمن معرف المورد وسجله لاستخدامه أثناء قسم تكوين Microsoft 365 أدناه.
 
     :::image type="content" source="../../media/759498162a4e93cbf17c4130d704d164.png" alt-text="قسم خصائص مراكز الأحداث في مدخل Microsoft Azure" lightbox="../../media/759498162a4e93cbf17c4130d704d164.png":::
 
+### <a name="add-permissions"></a>إضافة أذونات
 
-1. بمجرد إنشاء مساحة اسم Event Hub، ستحتاج إلى إضافة App Registration Service Principal كقارئ ومتلقي بيانات Azure Event Hubs والمستخدم الذي سيقوم بتسجيل الدخول إلى Microsoft 365 Defender كمساهم (يمكنك أيضا القيام بذلك على مستوى مجموعة الموارد أو الاشتراك).
+يطلب منك إضافة أذونات إلى الأدوار التالية إلى الكيانات المشاركة في إدارة بيانات مراكز الأحداث:
 
-    يمكنك القيام بهذه الخطوة في **Event Hub Namespace** \> **Access Control (IAM)** \> **Add** and verify under **Role assignments**:
+- **المساهم**: تتم إضافة الأذونات المتعلقة بهذا الدور إلى الكيان الذي يسجل الدخول إلى مدخل Microsoft 365 Defender.
+- **القارئ** **ومتلقي بيانات Azure Event Hub**: يتم تعيين الأذونات المتعلقة بهذه الأدوار إلى الكيان الذي تم تعيينه بالفعل لدور **كيان الخدمة** وتسجيل الدخول إلى تطبيق Azure Active Directory.
 
-    :::image type="content" source="../../media/9c9c29137b90d5858920202d87680d16.png" alt-text="قسم أساسي لخدمة تسجيل التطبيق في مدخل Microsoft Azure" lightbox="../../media/9c9c29137b90d5858920202d87680d16.png":::
+للتأكد من إضافة هذه الأدوار، نفذ الخطوة التالية:
 
-## <a name="set-up-event-hub"></a>إعداد Event Hub
+انتقل إلى عنصر التحكم في الوصول إلى **مساحة** \> اسم Event Hub **(IAM)** \> **وتحقق** ضمن **تعيينات الدور**.
+
+:::image type="content" source="../../media/9c9c29137b90d5858920202d87680d16.png" alt-text="قسم أساسي لخدمة تسجيل التطبيق في مدخل Microsoft Azure" lightbox="../../media/9c9c29137b90d5858920202d87680d16.png":::
+
+## <a name="set-up-event-hubs"></a>إعداد مراكز الأحداث
 
 **الخيار 1:**
 
-يمكنك إنشاء Event Hub داخل مساحة الاسم وستتم كتابة **كافة** أنواع الأحداث (الجداول) التي تحددها لتصديرها في Event Hub **هذا** .
+يمكنك إنشاء Event Hubs داخل مساحة الاسم وستتم كتابة **كافة** أنواع الأحداث (الجداول) التي تحددها لتصديرها في Event Hub **هذا** .
 
 **الخيار 2:**
 
-بدلا من تصدير كافة أنواع الأحداث (الجداول) إلى مركز أحداث واحد، يمكنك تصدير كل جدول إلى Event Hub مختلف داخل مساحة اسم Event Hub (مركز أحداث واحد لكل نوع حدث).
+بدلا من تصدير كافة أنواع الأحداث (الجداول) إلى مركز أحداث واحد، يمكنك تصدير كل جدول إلى مراكز أحداث مختلفة داخل مساحة اسم Event Hubs (مركز أحداث واحد لكل نوع حدث).
 
-في هذا الخيار، سيقوم Microsoft 365 Defender بإنشاء Event Hub نيابة عنك.
+في هذا الخيار، سيقوم Microsoft 365 Defender بإنشاء "مراكز الأحداث" نيابة عنك.
 
 > [!NOTE]
 > إذا كنت تستخدم مساحة اسم مركز الأحداث **التي ليست** جزءا من نظام مجموعة Event Hub، فستتمكن فقط من اختيار ما يصل إلى 10 أنواع أحداث (جداول) للتصدير في كل الإعدادات تصدير تقوم بتعريفها، بسبب حد Azure البالغ 10 Event Hub لكل مساحة اسم لمركز الحدث.
@@ -107,26 +115,25 @@ ms.locfileid: "65243063"
 
 إذا اخترت هذا الخيار، يمكنك التخطي إلى ["تكوين Microsoft 365 Defender" لإرسال قسم جداول البريد الإلكتروني](#configure-microsoft-365-defender-to-send-email-tables).
 
-إنشاء Event Hub داخل مساحة الاسم الخاصة بك عن طريق تحديد **Event Hub** \> **+ Event Hub**.
+إنشاء مراكز الأحداث داخل مساحة الاسم الخاصة بك عن طريق تحديد **Event Hub** \> **+ Event Hub**.
 
 يسمح عدد الأقسام بزيادة معدل النقل عبر التوازي، لذلك يوصى بزيادة هذا الرقم استنادا إلى الحمل الذي تتوقعه. يوصى بالاحتفاظ بالرسالة الافتراضية وقيم الالتقاط ل 1 وإيقاف التشغيل.
 
 :::image type="content" source="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png" alt-text="قسم إنشاء مراكز الأحداث في مدخل Microsoft Azure" lightbox="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png":::
- 
 
-بالنسبة إلى Event Hub (وليس مساحة الاسم) ستحتاج إلى تكوين نهج وصول مشترك مع إرسال، مطالبات الاستماع.  انقر فوق نهج \> **الوصول المشترك ل** **Event Hub** \> **+ Add** ثم قم بتسمية النهج (غير مستخدم في مكان آخر) وتحقق من الإرسال **والاستماع**.
+بالنسبة إلى مراكز الأحداث هذه (وليس مساحة الاسم)، ستحتاج إلى تكوين نهج الوصول المشترك باستخدام "إرسال" و"مطالبات الاستماع".  انقر فوق نهج \> **الوصول المشترك ل** **Event Hub** \> **+ Add** ثم قم بتسمية النهج (غير مستخدم في مكان آخر) وتحقق من الإرسال **والاستماع**.
 
 :::image type="content" source="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png" alt-text="صفحة نهج الوصول المشترك في مدخل Microsoft Azure" lightbox="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png":::
 
 ## <a name="configure-microsoft-365-defender-to-send-email-tables"></a>تكوين Microsoft 365 Defender لإرسال جداول البريد الإلكتروني
 
-### <a name="set-up-microsoft-365-defender-send-email-tables-to-splunk-via-event-hub"></a>إعداد Microsoft 365 Defender إرسال جداول البريد الإلكتروني إلى Splunk عبر Event Hub
+### <a name="set-up-microsoft-365-defender-send-email-tables-to-splunk-via-event-hubs"></a>إعداد Microsoft 365 Defender إرسال جداول البريد الإلكتروني إلى Splunk عبر مراكز الأحداث
 
 1. سجل الدخول إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> باستخدام حساب يلبي جميع متطلبات الدور التالية:
 
-    - دور المساهم على مستوى مورد *مساحة اسم* Event Hub أو أعلى لمركز الأحداث الذي ستقوم بالتصدير إليه. بدون هذا الإذن، ستحصل على خطأ تصدير عند محاولة حفظ الإعدادات.
+    - دور المساهم على مستوى مورد *مساحة اسم* Event Hubs أو أعلى لمراكز الأحداث التي ستقوم بالتصدير إليها. بدون هذا الإذن، ستحصل على خطأ تصدير عند محاولة حفظ الإعدادات.
 
-    - دور المسؤول العام أو مسؤول الأمان على المستأجر المرتبط Microsoft 365 Defender وAzure.
+    - دور مسؤول العمومي أو الأمان مسؤول على المستأجر المرتبط Microsoft 365 Defender وAzure.
 
       :::image type="content" source="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png" alt-text="الصفحة الإعدادات لمدخل Microsoft 365 Defender" lightbox="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png":::
 
@@ -138,21 +145,21 @@ ms.locfileid: "65243063"
 
     **إعادة توجيه الأحداث إلى مركز الأحداث**: حدد خانة الاختيار هذه.
 
-    **معرف مورد Event-Hub**: هذه القيمة هي معرف مورد مساحة اسم Event Hub الذي سجلته عند إعداد Event Hub.
+    **معرف مورد Event-Hub**: هذه القيمة هي معرف مورد مساحة اسم Event Hubs الذي قمت بتسجيله عند إعداد Event Hubs.
 
-    **اسم Event-Hub**: إذا قمت بإنشاء Event Hub داخل مساحة اسم Event Hub، فلصق اسم Event Hub الذي سجلته أعلاه.
+    **اسم Event-Hub**: إذا قمت بإنشاء Event Hubs داخل مساحة اسم Event Hubs، فلصق اسم Event Hubs الذي سجلته أعلاه.
 
-    إذا اخترت السماح Microsoft 365 Defender بإنشاء Event Hub لكل أنواع الأحداث (جداول) لك، فاترك هذا الحقل فارغا.
+    إذا اخترت السماح Microsoft 365 Defender بإنشاء "مراكز الأحداث" لكل أنواع الأحداث (الجداول) لك، فاترك هذا الحقل فارغا.
 
-    **أنواع الأحداث**: حدد جداول التتبع المتقدم التي تريد إعادة توجيهها إلى Event Hub ثم إلى تطبيقك المخصص. جداول التنبيه من Microsoft 365 Defender، وجداول الأجهزة من Microsoft Defender لنقطة النهاية (الكشف التلقائي والاستجابة على النقط النهائية)، وجداول البريد الإلكتروني من Microsoft Defender لـ Office 365. تسجل أحداث البريد الإلكتروني كافة معاملات البريد الإلكتروني. يتم أيضا تسجيل URL (ارتباطات خزينة) والمرفقات (خزينة المرفقات) وأحداث ما بعد التسليم (ZAP) ويمكن ربطها بأحداث البريد الإلكتروني في حقل NetworkMessageId.
+    **أنواع الأحداث**: حدد جداول "التتبع المتقدم" التي تريد إعادة توجيهها إلى "مراكز الأحداث" ثم إلى تطبيقك المخصص. جداول التنبيه من Microsoft 365 Defender، وجداول الأجهزة من Microsoft Defender لنقطة النهاية (الكشف التلقائي والاستجابة على النقط النهائية)، وجداول البريد الإلكتروني من Microsoft Defender لـ Office 365. تسجل أحداث البريد الإلكتروني كافة معاملات البريد الإلكتروني. يتم أيضا تسجيل URL (ارتباطات خزينة) والمرفقات (خزينة المرفقات) وأحداث ما بعد التسليم (ZAP) ويمكن ربطها بأحداث البريد الإلكتروني في حقل NetworkMessageId.
 
     :::image type="content" source="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png" alt-text="صفحة إعدادات واجهة برمجة التطبيقات المتدفقة في مدخل Microsoft Azure" lightbox="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png":::
 
 1. تأكد من النقر فوق **"إرسال**".
 
-### <a name="verify-that-the-events-are-being-exported-to-the-event-hub"></a>تحقق من أن الأحداث يتم تصديرها إلى Event Hub
+### <a name="verify-that-the-events-are-being-exported-to-the-event-hubs"></a>التحقق من أن الأحداث يتم تصديرها إلى مراكز الأحداث
 
-يمكنك التحقق من أن الأحداث يتم إرسالها إلى Event Hub عن طريق تشغيل استعلام تتبع متقدم أساسي. حدد **"استعلام** **التتبع** \> **المتقدم للتتبع**\>" وأدخل الاستعلام التالي:
+يمكنك التحقق من أن الأحداث يتم إرسالها إلى مراكز الأحداث عن طريق تشغيل استعلام تتبع متقدم أساسي. حدد **"استعلام** **التتبع** \> **المتقدم للتتبع**\>" وأدخل الاستعلام التالي:
 
 ```console
 EmailEvents
@@ -163,11 +170,11 @@ EmailEvents
 |count
 ```
 
-سيظهر لك هذا عدد رسائل البريد الإلكتروني التي تم تلقيها في الساعة الأخيرة التي تم ضمها عبر جميع الجداول الأخرى. كما سيظهر لك ما إذا كنت ترى الأحداث التي يمكن تصديرها إلى مراكز الأحداث. إذا كان هذا العدد يظهر 0، فلن ترى أي بيانات تنتقل إلى Event Hub.
+سيوضح لك هذا الاستعلام عدد رسائل البريد الإلكتروني التي تم تلقيها في الساعة الأخيرة التي تم ضمها عبر جميع الجداول الأخرى. كما سيظهر لك ما إذا كنت ترى الأحداث التي يمكن تصديرها إلى مراكز الأحداث. إذا كان هذا العدد يظهر 0، فلن ترى أي بيانات تنتقل إلى Event Hubs.
 
 :::image type="content" source="../../media/c305e57dc6f72fa9eb035943f244738e.png" alt-text="صفحة التتبع المتقدمة في مدخل Microsoft Azure" lightbox="../../media/c305e57dc6f72fa9eb035943f244738e.png":::
 
-بمجرد التحقق من وجود بيانات لتصديرها، يمكنك عرض صفحة Event Hub للتحقق من أن الرسائل واردة. قد يستغرق ذلك ما يصل إلى ساعة واحدة.
+بمجرد التحقق من وجود بيانات لتصديرها، يمكنك عرض صفحة Event Hubs للتحقق من أن الرسائل واردة. قد تستغرق هذه العملية ما يصل إلى ساعة واحدة.
 
 1. في Azure، انتقل إلى **Event Hub** \> Click على **Namespace** \> **Event Hub** \> وانقر على **Event Hub**.
 1. ضمن **"نظرة عامة**"، قم بالتمرير لأسفل وفي الرسم البياني للرسائل، يجب أن تشاهد "الرسائل الواردة". إذا لم تتمكن من رؤية أي نتائج، فلن تكون هناك أي رسائل يمكن للتطبيق المخصص استيعابها.

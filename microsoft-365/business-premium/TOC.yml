@@ -96,6 +96,8 @@
       href: m365bp-security-incident-management.md
     - name: مراجعة توصيات الأمان
       href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: مراجعة التهديدات التي تم اكتشافها على الأجهزة
+      href: m365bp-review-threats-take-action.md
     - name: مراجعة إجراءات المعالجة على الأجهزة
       href: m365bp-review-remediation-actions-devices.md
     - name: الاستجابة إلى حساب بريد إلكتروني تم اختراقه

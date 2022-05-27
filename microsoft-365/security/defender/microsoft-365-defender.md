@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 45e63c489093c147895c467c3471f16a8bb99918
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: c454a21b6ad696b84e3b04e20b42fd1d1a0a8b19
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368320"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739528"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -128,6 +128,9 @@ Microsoft 365 Defender هي مجموعة دفاع موحدة لما قبل ال�
 
 > [!NOTE]
 > يستخدم مدخل Microsoft 365 Defender الوصول القائم على الأدوار الحالية ويفرضه، وسينقل كل نموذج أمان إلى المدخل الموحد. ولكل حمل عمل متقارب إمكانية الوصول المستندة إلى الأدوار الخاصة به. سيتم تقريب الأدوار الموجودة بالفعل في المنتجات إلى مدخل Microsoft 365 Defender تلقائيا. ومع ذلك، ستظل Microsoft Defender for Cloud Apps تتعامل مع أدوارها وأذوناتها الخاصة.
+
+شاهد هذا الفيديو القصير للتعرف على المدخل الموحد الجديد في Microsoft 365 Defender.  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
 ### <a name="what-to-expect"></a>ما يجب توقعه
 

@@ -17,18 +17,18 @@ search.appverid:
 - SPO160
 - MET150
 description: تصف هذه المقالة كيف يمكنك التخطيط لإطلاق المدخل الخاص بك في SharePoint Online والخطوات التي يجب اتخاذها للتشغيل الناجح
-ms.openlocfilehash: 088416537317a6728e1c5533767badf309de7634
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f04738900a25a2e74e24d6bf0f05b5bd6c7865f4
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097459"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753915"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>التخطيط لخطة إطلاق مدخلك في SharePoint Online
 
 المدخل هو موقع SharePoint على إنترانت مع العديد من عارضي الموقع الذين يستهلكون المحتوى على الموقع. يمكن أن يكون للمؤسسات الكبيرة العديد من المداخل. على سبيل المثال، مدخل شركة ومدخل الموارد البشرية. تحتوي المداخل عادة على عدد قليل نسبيا من الأشخاص الذين ينشئون الموقع ومحتواه ويؤلفونهم. يقرأ معظم زائري المدخل المحتوى ويستهلكونه فقط.
 
-تصف هذه المقالة كيفية تخطيط خطة النشر والنشر إلى SharePoint Online. كما يوفر أساليب لاتباعها لأن اختبار التحميل التقليدي غير مسموح به على SharePoint Online. SharePoint Online هي خدمة سحابية وتتم إدارة قدرات التحميل والصحة والتوازن العام للتحميل في الخدمة من قبل Microsoft.
+تصف هذه المقالة كيفية تخطيط خطة النشر والنشر إلى SharePoint Online. كما يوفر أساليب لاتباعها لأنه غير مسموح باختبار التحميل التقليدي على SharePoint Online. SharePoint Online هي خدمة سحابية وتتم إدارة قدرات التحميل والصحة والتوازن العام للتحميل في الخدمة من قبل Microsoft.
 
 للمساعدة في إنشاء مدخل ناجح، اتبع المبادئ والممارسات والتوصيات الأساسية المفصلة في [إنشاء مدخل سليم وتشغيله وصيانته](/sharepoint/portal-health)
 

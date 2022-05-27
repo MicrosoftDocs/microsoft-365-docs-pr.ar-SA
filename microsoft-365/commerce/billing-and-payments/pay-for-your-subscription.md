@@ -22,13 +22,13 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 05/18/2022
-ms.openlocfilehash: d116fe2b9fb2b0b0b96ec44107d486edca19ff04
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.date: 05/26/2022
+ms.openlocfilehash: 05edb03d34644d1f09acaad22bbcff01b3654ac3
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587413"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753837"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>كيفية دفع قيمة اشتراكك
 
@@ -46,6 +46,16 @@ ms.locfileid: "65587413"
 
 - يجب أن تكون مسؤولاً عاماً أو مسؤولاً في الفوترة للقيام بالمهام الواردة في هذه المقالة. لمزيد من المعلومات، اطلع على [حول أدوار المسؤول](../../admin/add-users/about-admin-roles.md).
 - طريقة الدفع التي تختارها أثناء السداد مع الخروج هي طريقة الدفع التي نستخدمها لجميع فترات الفوترة المستقبلية. يمكنك تغيير ذلك في أي وقت.
+
+## <a name="new-regulations-from-the-reserve-bank-of-india"></a>لوائح جديدة من البنك الاحتياطي الهندي
+
+اعتبارًا من 1 أكتوبر 2021، قد تحظر المدفوعات التلقائية في الهند بعض معاملات بطاقات الائتمان، خاصةً المعاملات التي تتجاوز 5000 روبية هندية. بسبب هذا القانون، قد تحتاج إلى تسديد المدفوعات يدويًا في مركز مسؤولي Microsoft 365. لن تؤثر هذه اللوائح على إجمالي المبلغ الذي تدفعه مقابل استخدامك.
+
+[تعرّف على المزيد حول لائحة البنك الاحتياطي الهندي للمدفوعات المتكررة](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
+
+في 1 يوليو 2022، لن تقوم Microsoft وغيرها من البائعين عبر الإنترنت بتخزين معلومات بطاقة الائتمان بعد الآن. للامتثال لهذا القانون، ستقوم Microsoft بإزالة جميع تفاصيل البطاقة المخزنة من مركز مسؤولي Microsoft 365. لتجنب انقطاع الخدمة، يجب إضافة طريقة دفع وإجراء دفع لمرة واحدة لكل الاشتراكات وملفات تعريف الفوترة.
+
+[تعرّف حول قانون البنك الاحتياطي الهندي للمدفوعات المتكررة](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>الدفع عن طريق بطاقة الائتمان أو الخصم أو الحساب المصرفي
 

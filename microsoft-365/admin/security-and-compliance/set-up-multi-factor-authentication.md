@@ -28,12 +28,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: تعرف على كيفية إعداد المصادقة متعددة العوامل لمؤسستك.
 monikerRange: o365-worldwide
-ms.openlocfilehash: faac2f052b7c184a967f916cca433dfaef6866c7
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 6879a49bf0868081fed6ad8171138ce7001783c4
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637329"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739904"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>إعداد المصادقة متعددة العوامل Microsoft 365
 
@@ -43,14 +43,14 @@ ms.locfileid: "65637329"
 > إذا اشتريت اشتراكك أو إصدارك التجريبي بعد 21 أكتوبر 2019، وتمت مطالبتك بمصادقة متعددة العوامل (MFA) عند تسجيل الدخول، فسيتم تمكين [إعدادات الأمان الافتراضية](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) تلقائيا لاشتراكك.
 
 > [!TIP]
-> إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى خبراء الشركات الصغيرة أثناء تنمية أعمالك، بدءا من الإلحاق إلى الاستخدام اليومي.
+> إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى متخصصي الشركات الصغيرة أثناء تطوير أعمالك، بدءً من الإلحاق إلى الاستخدام اليومي.
 
 ## <a name="watch-turn-on-multifactor-authentication"></a>المراقبة: تشغيل المصادقة متعددة العوامل
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
 1. انتقل إلى مركز مسؤولي Microsoft 365 في <a href="https://admin.microsoft.com/ " target="_blank">https://admin.microsoft.com</a>.
-1. حدد  **"إظهار الكل**"، ثم اختر **مركز إدارة Azure Active Directory**.
+1. حدد **"إظهار الكل**"، ثم اختر **مركز مسؤول Azure Active Directory**.
 1. حدد **Azure Active Directory**، **والخصائص**، **وإدارة إعدادات الأمان الافتراضية**.
 1. ضمن **"تمكين إعدادات الأمان الافتراضية"**، حدد **"نعم"** ثم **"حفظ**".
 
@@ -78,7 +78,7 @@ ms.locfileid: "65637329"
 يمكنك تمكين إعدادات الأمان الافتراضية أو تعطيلها من جزء **الخصائص** ل Azure Active Directory (Azure AD) في مدخل Microsoft Azure.
 
 1. سجل الدخول إلى [مركز مسؤولي Microsoft 365](https://admin.microsoft.com) باستخدام بيانات اعتماد المسؤول العمومي.
-2. في جزء التنقل الأيمن، اختر **"إظهار الكل** " وضمن **مراكز الإدارة**، اختر **Azure Active Directory**.
+2. في جزء التنقل الأيمن، اختر **"إظهار الكل**" وضمن **مراكز مسؤول**، اختر **Azure Active Directory**.
 3. في **مركز إدارة Azure Active Directory**، اختر **خصائص** **Azure Active Directory**\>.
 4. في أسفل الصفحة، اختر **"إدارة إعدادات الأمان الافتراضية**".
 5. اختر **"نعم** " لتمكين إعدادات الأمان الافتراضية أو **"لا** " لتعطيل إعدادات الأمان الافتراضية، ثم اختر **"حفظ**".
@@ -122,6 +122,8 @@ ms.locfileid: "65637329"
 
 ## <a name="related-content"></a>المحتويات ذات الصلة
 
-[إعداد المصادقة متعددة العوامل](set-up-multi-factor-authentication.md) (فيديو)
+[إعداد المصادقة متعددة العوامل](set-up-multi-factor-authentication.md) (فيديو)\
 
-[تشغيل المصادقة متعددة العوامل لهاتفك](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+[تشغيل المصادقة متعددة العوامل لهاتفك](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (مقالة)\
+
+[إعدادات الأمان الافتراضية والمصادقة متعددة العوامل](/microsoft-365/business-premium/m365bp-conditional-access) (المقالة)

@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: تعرف على كيفية إنشاء أنواع المعلومات الحساسة المخصصة وتعديلها وإزالتها واختبارها في مركز التوافق.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff6a66b092d433fcfde7723f252fea679c2a3050
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0d93259cfe76419e253c450c4cd5ed7f03f3b85c
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759812"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753489"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>إنشاء أنواع معلومات حساسة مخصصة في مركز التوافق
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 إذا كانت أنواع المعلومات الحساسة التي تم تكوينها مسبقا لا تلبي احتياجاتك، يمكنك إنشاء أنواع المعلومات الحساسة المخصصة التي تحددها بالكامل أو يمكنك نسخ أحد أنواع المعلومات التي تم تكوينها مسبقا وتعديلها.
 
@@ -45,7 +47,7 @@ ms.locfileid: "64759812"
   - [دالات نوع المعلومات الحساسة](sit-functions.md)
   - [مستويات الثقة](sensitive-information-type-learn-about.md#more-on-confidence-levels)
 
-- يجب أن يكون لديك أذونات المسؤول العام أو مسؤول التوافق لإنشاء نوع معلومات حساسة مخصص واختباره ونشره من خلال واجهة المستخدم. راجع [حول أدوار المسؤولين](/office365/admin/add-users/about-admin-roles) في Office 365.
+- يجب أن يكون لدى مؤسستك اشتراك، مثل Office 365 Enterprise، يتضمن تفادي فقدان البيانات في Microsoft Purview (DLP). راجع [نهج المراسلة وخدمة التوافق ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
 - يجب أن يكون لدى مؤسستك اشتراك، مثل Office 365 Enterprise، يتضمن منع فقدان البيانات (DLP). راجع [نهج المراسلة وخدمة التوافق ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc).
 
@@ -104,7 +106,7 @@ ms.locfileid: "64759812"
 
 يمكنك أيضا إنشاء أنواع معلومات حساسة مخصصة باستخدام قدرات PowerShell و Exact Data Match. لمعرفة المزيد حول هذه الأساليب، راجع:
 
-- [إنشاء نوع معلومات حساسة مخصص في Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [إنشاء نوع معلومات حساسة مخصص في Microsoft Purview PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [التعرّف على أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 1. في مركز التوافق، انتقل إلى **أنواع المعلومات الحساسة** **لتصنيف** \> البيانات واختر نوع المعلومات الحساسة الذي تريد نسخه.
@@ -170,7 +172,7 @@ ms.locfileid: "64759812"
 
 - نهج DLP
 - حماية البيانات
-- إدارة المعلومات
+- إدارة دورة حياة البيانات
 - توافق الاتصالات
 - إدارة التسجيلات
 - Microsoft Defender for Cloud Apps

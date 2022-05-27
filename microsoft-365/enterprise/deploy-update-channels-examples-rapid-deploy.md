@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: كيف تستخدم المؤسسة التي تنشر أحدث إصدار القنوات لتطبيقات Windows 10 Microsoft 365.
-ms.openlocfilehash: 6f52bc8fc55fe94361961585aacae1f48c4fbce5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 43cd5deed9801de6ff044781bebf9d96cdac7c12
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092128"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754699"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>مثال على النشر الواسع للإصدارات الأخيرة
 
@@ -66,7 +66,7 @@ ms.locfileid: "65092128"
 | المرحله | قناه | مجموعة النشر |
 |:-------|:-------|:-----|
 | التجريبيه |  **تحديث معاينة الإصدار**  <ul><li>الغرض: نشر تحديثات الميزات لموظفي تكنولوجيا المعلومات والمعتمدين المبكرين للتحقق من الصحة على الأجهزة والتكوينات التمثيلية (اللغات، تطبيقات الجهات الخارجية). </li><li> الحالة: متوافقة بالكامل ومدعمة للعملاء التجاريين ولا تحتسب مقابل اتفاقيات الدعم الخاصة بك. </li></ul> | **Win10ReleasePreviewChannel** (اسم المثال) <br><br> الأعضاء هم مجموعات تحتوي على: <ul><li> Windows المتحمسين عبر الأقسام والمواقع </li><li> فريق العمل مع التكوينات التي تحتاج إلى التحقق من الصحة </li><li> مسؤولو تكنولوجيا المعلومات وموظفي نشر تكنولوجيا المعلومات </li><li> تغيير المديرين </li><li> موظفو التدريب الداخلي </li></ul> |
-| الانتاج |  **قناة نصف سنوية**  <ul><li>الغرض: نشر واسع النطاق لأحدث تحديثات الميزات لبقية المؤسسة. </li><li> الحالة: متوافقة بالكامل ومدعمة. </li></ul> | **Win10SemiAnnualChannel** (اسم المثال) <br><br> الأعضاء هم جميع المستخدمين غير الأشخاص في مجموعة Win10ReleasePreviewChannel. |
+| الانتاج |  **قناة نصف سنوية**  <ul><li>الغرض: نشر واسع النطاق لأحدث تحديثات الميزات لبقية المؤسسة. </li><li> الحالة: متوافقة بالكامل ومدعمة. </li></ul> | **Win10SemiAnnualChannel** (اسم المثال) <br><br> الأعضاء هم جميع المستخدمين غير  موجودين في مجموعة Win10ReleasePreviewChannel. |
 ||||
 
 تستخدم هذه المؤسسة أفضل الممارسات لنشر حمولة قناة معاينة الإصدار بنفس الطريقة التي تنشر بها إصدارات القناة Semi-Annual، مثل Windows Update أو خادم Windows Server Update Services، وأنها تطبق النهج نفسها لكل من تحديثي القناة.

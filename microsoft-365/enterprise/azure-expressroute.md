@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: تعرف على كيفية استخدام Azure ExpressRoute مع Office 365 وتخطيط مشروع تنفيذ الشبكة إذا كنت تقوم بالنشر معه.
-ms.openlocfilehash: bbb53913ede8a51d5e6d9bf6e39386cd3e8de304
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1350bf73fdddd2141a2df1cbcec5edebeacf7ad4
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096843"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754279"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute ل Office 365
 
@@ -47,11 +47,11 @@ ms.locfileid: "65096843"
 
 بغض النظر عما إذا كان لديك شبكة MPLS WAN موجودة، يمكن إضافة ExpressRoute إلى بنية الشبكة بإحدى الطرق الثلاث؛ من خلال موفر موقع مشترك لتبادل السحابة مدعوم، أو موفر اتصال Ethernet من نقطة إلى نقطة، أو من خلال موفر اتصال MPLS. تعرف على [الموفرين المتوفرين في منطقتك](/azure/expressroute/expressroute-locations). سيؤدي اتصال ExpressRoute المباشر إلى تمكين الاتصال بالتطبيقات الموضحة في [ما هي خدمات Office 365 المضمنة أدناه.](azure-expressroute.md#BKMK_WhatDoIGet) ستستمر نسبة استخدام الشبكة لجميع التطبيقات والخدمات الأخرى في اجتياز الإنترنت.
 
-ضع في اعتبارك الرسم التخطيطي التالي لشبكة الاتصال عالية المستوى الذي يعرض عميلا نموذجيا Office 365 يتصل بمراكز بيانات Microsoft عبر الإنترنت للوصول إلى جميع تطبيقات Microsoft مثل Office 365 Windows Update وTechNet. يستخدم العملاء مسار شبكة مشابها بغض النظر عما إذا كانوا يتصلون من شبكة محلية أو من اتصال مستقل بالإنترنت.
+ضع في اعتبارك الرسم التخطيطي التالي لشبكة الاتصال عالية المستوى، والذي يعرض عميلا نموذجيا Office 365 يتصل بمراكز بيانات Microsoft عبر الإنترنت للوصول إلى جميع تطبيقات Microsoft مثل Office 365 Windows Update وTechNet. يستخدم العملاء مسار شبكة مشابها بغض النظر عما إذا كانوا يتصلون من شبكة محلية أو من اتصال مستقل بالإنترنت.
 
 ![Office 365 اتصال الشبكة.](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
 
-الآن انظر إلى الرسم التخطيطي المحدث الذي يصور عميلا Office 365 يستخدم كل من الإنترنت وExpressRoute للاتصال Office 365. لاحظ أن بعض الاتصالات مثل DNS العامة وعقد شبكة تسليم المحتوى لا تزال تتطلب اتصالا عاما بالإنترنت. لاحظ أيضا أن مستخدمي العميل غير الموجودين في مبنى ExpressRoute المتصل يتصلون عبر الإنترنت.
+الآن انظر إلى الرسم التخطيطي المحدث، الذي يصور عميلا Office 365 يستخدم كل من الإنترنت وExpressRoute للاتصال Office 365. لاحظ أن بعض الاتصالات مثل DNS العامة وعقد شبكة تسليم المحتوى لا تزال تتطلب اتصالا عاما بالإنترنت. لاحظ أيضا أن مستخدمي العميل غير الموجودين في مبنى ExpressRoute المتصل يتصلون عبر الإنترنت.
 
 ![Office 365 الاتصال مع ExpressRoute.](../media/251788c4-0937-4584-9b2c-df08e11611fc.png)
 
@@ -60,16 +60,16 @@ ms.locfileid: "65096843"
 ## <a name="what-office-365-services-are-included"></a>ما هي خدمات Office 365 المضمنة؟
 <a name="BKMK_WhatDoIGet"> </a>
 
-يسرد الجدول التالي خدمات Office 365 المعتمدة عبر ExpressRoute. الرجاء مراجعة [مقالة نقاط النهاية Office 365](./urls-and-ip-address-ranges.md) لفهم طلبات الشبكة لهذه التطبيقات التي تتطلب الاتصال بالإنترنت.
+يسرد الجدول التالي خدمات Office 365 المعتمدة عبر ExpressRoute. راجع [مقالة نقاط النهاية Office 365](./urls-and-ip-address-ranges.md) لفهم طلبات الشبكة لهذه التطبيقات التي تتطلب الاتصال بالإنترنت.
 
 | التطبيقات المضمنة |
 |:-----|
 |Exchange Online <sup>1</sup> <br/> Exchange Online Protection <sup>1</sup> <br/> Delve <sup>1</sup> <br/> |
-|Skype for Business <sup>Online1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
-|SharePoint <sup>Online1</sup> <br/> OneDrive for Business <sup>1</sup> <br/> Project Online <sup>1</sup> <br/> |
-|المدخل <sup>والمشاركة1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD الاتصال <sup>1</sup> <br/> Office <sup>1</sup> <br/> |
+|Skype for Business Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
+|SharePoint Online<sup>1</sup> <br/> OneDrive for Business <sup>1</sup> <br/> Project Online <sup>1</sup> <br/> |
+|المدخل والمدخل المشترك<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD الاتصال <sup>1</sup> <br/> Office <sup>1</sup> <br/> |
 
-<sup>1</sup> لكل تطبيق من هذه التطبيقات متطلبات اتصال بالإنترنت غير معتمدة عبر ExpressRoute، راجع [مقالة نقاط النهاية Office 365](./urls-and-ip-address-ranges.md) لمزيد من المعلومات.
+<sup>1</sup> يحتوي كل تطبيق من هذه التطبيقات على متطلبات اتصال بالإنترنت غير معتمدة عبر ExpressRoute، راجع [مقالة نقاط النهاية Office 365](./urls-and-ip-address-ranges.md) لمزيد من المعلومات.
 
 الخدمات غير المضمنة مع ExpressRoute Office 365 هي Microsoft 365 Apps for enterprise تنزيلات العميل وتسجيل الدخول الداخلي لموفر الهوية وخدمة Office 365 (المشغلة بواسطة 21 Vianet) في الصين.
 
@@ -79,11 +79,11 @@ ms.locfileid: "65096843"
 
 1. فهم الحاجة إلى ExpressRoute بشكل كامل في تخطيط الاتصال Office 365. فهم التطبيقات التي ستستخدم الإنترنت أو ExpressRoute والتخطيط الكامل لقدرات الشبكة والأمان واحتياجات قابلية الوصول العالية في سياق استخدام كل من الإنترنت وExpressRoute لنسبة استخدام الشبكة Office 365.
 
-2. تحديد مواقع الخروج والتناظر لكل من الإنترنت وExpressRoute <sup>traffic1</sup>.
+2. تحديد مواقع الخروج والتناظر لكل من الإنترنت وحركة مرور ExpressRoute<sup>1</sup>.
 
 3. تحديد السعة المطلوبة على الإنترنت واتصالات ExpressRoute.
 
-4. ضع خطة لتنفيذ عناصر التحكم الأمنية وغيرها من عناصر التحكم القياسية <sup>المحيطة1</sup>.
+4. ضع خطة لتنفيذ الأمان وعناصر تحكم محيط قياسية أخرى<sup>1</sup>.
 
 5. امتلاك حساب Microsoft Azure صالح للاشتراك في ExpressRoute.
 
@@ -93,7 +93,7 @@ ms.locfileid: "65096843"
 
 8. [تنفيذ QoS](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d) وتقييم التوسع الإقليمي اختياريا.
 
-<sup>1</sup> اعتبارات الأداء الهامة. يمكن أن تؤثر القرارات هنا بشكل كبير على زمن الانتقال وهو أمر بالغ الأهمية لتطبيقات مثل Skype for Business.
+<sup>1</sup> اعتبارات الأداء الهامة. يمكن أن تؤثر القرارات هنا بشكل كبير على زمن الانتقال، وهو أمر بالغ الأهمية لتطبيقات مثل Skype for Business.
 
 للحصول على مراجع إضافية، استخدم [دليل التوجيه](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) بالإضافة إلى [وثائق ExpressRoute](/azure/expressroute/expressroute-introduction).
 

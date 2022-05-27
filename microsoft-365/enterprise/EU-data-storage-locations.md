@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: تحديد مكان تخزين بيانات عميلك Microsoft 365 داخل الاتحاد الأوروبي
-ms.openlocfilehash: 2f4a6133724d868f3caeaf977517c74fe56bb4fd
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 03f67a91f25f8333a92334ef633687e2b41e80a6
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095367"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753639"
 ---
 # <a name="data-locations-for-the-european-union"></a>مواقع بيانات الاتحاد الأوروبي
 

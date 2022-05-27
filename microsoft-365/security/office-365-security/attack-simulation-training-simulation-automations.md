@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: يمكن للمسؤولين معرفة كيفية إنشاء عمليات محاكاة تلقائية تحتوي على تقنيات وحمولات محددة يتم تشغيلها عند استيفاء الشروط المحددة في Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
-ms.openlocfilehash: ded6a77e72e71a676c0cc05ffdc3be53e3fbada1
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 32730dfa36b0140bda246137b4cf6706b3472da7
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65678844"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739660"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>عمليات أتمتة المحاكاة لتدريب محاكاة الهجوم
 
@@ -31,7 +31,7 @@ ms.locfileid: "65678844"
 
 1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com/>انتقل إلى **Email & collaboration** \> **Attack training** \> **Automations** tab \> **Automations**.
 
-   للانتقال مباشرة إلى علامة التبويب **Automations** ، استخدم <https://security.microsoft.com/attacksimulator?viewid=automations>.
+   للانتقال مباشرة إلى علامة التبويب **Automations** حيث يمكنك تحديد **عمليات الأتمتة المحاكاة**، استخدم <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. في **عمليات المحاكاة التلقائية**، حدد ![أيقونة إنشاء أتمتة.](../../media/m365-cc-sc-create-icon.png) **إنشاء التشغيل التلقائي**.
 
@@ -311,7 +311,7 @@ ms.locfileid: "65678844"
       - **التسليم بعد انتهاء الحملة**
       - **التسليم أثناء الحملة**
     - **الإجراءات**: إذا نقرت فوق الأيقونة !["عرض".](../../media/m365-cc-sc-view-icon.png) أيقونة **العرض**، تظهر صفحة **إعلام المراجعة** مع المعلومات التالية:
-      - علامة التبويب **"معاينة**": عرض رسالة الإعلام.
+      - **علامة التبويب "معاينة** ": عرض رسالة الإعلام حيث سيتمكن المستخدمون من رؤيتها.
         - لعرض الرسالة بلغات مختلفة، استخدم مربع **تحديد اللغة** .
         - استخدم مربع **تحديد الحمولة للمعاينة** لتحديد رسالة الإعلام للمحاكاة التي تحتوي على حمولات متعددة.
       - علامة التبويب **"تفاصيل**": عرض تفاصيل حول الإعلام:

@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إنشاء حمولات مخصصة لتدريب محاكاة الهجوم في Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
-ms.openlocfilehash: 24655986cd8c30bec4495477a63d692fd1ebb2d2
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 8ee202f66d2e9f4fdbf3eba1a1548abd1c3b5524
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679319"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739826"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>إنشاء حمولات مخصصة لتدريب محاكاة الهجوم في Defender لـ Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "65679319"
 
 تصف هذه المقالة كيفية إنشاء حمولاتك الخاصة في التدريب على محاكاة الهجوم. يمكنك إنشاء حمولات مخصصة في المواقع التالية:
 
-- **حمولات**: في مدخل Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى **البريد الإلكتروني &** \> **محاكاة التعاون** \> **المحاكاة** علامة التبويب \> **Payloads**. للانتقال مباشرة إلى علامة تبويب **مكتبة محتوى المحاكاة** ، استخدم <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+- **حمولات**: في مدخل Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى **البريد الإلكتروني &** \> **محاكاة التعاون** \> **المحاكاة** علامة التبويب \> **Payloads**. للانتقال مباشرة إلى علامة تبويب **مكتبة محتوى المحاكاة** حيث يمكنك تحديد **Payloads**، استخدم <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 - أثناء إنشاء المحاكاة: يمكنك إنشاء حمولات مخصصة على صفحة **تحديد حمولة** (الصفحة الثالثة) من معالج إنشاء المحاكاة. لمزيد من المعلومات، راجع [محاكاة هجوم تصيد احتيالي في Defender لـ Office 365](attack-simulation-training.md).
 
 للحصول على معلومات حول التدريب على محاكاة الهجوم، راجع [بدء استخدام التدريب على محاكاة الهجوم](attack-simulation-training-get-started.md).

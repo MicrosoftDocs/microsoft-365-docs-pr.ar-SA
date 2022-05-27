@@ -20,16 +20,18 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: في هذه المقالة، ستتعرف على كيفية إنشاء نهج DLP باستخدام أحد القوالب المضمنة في Office 365.
-ms.openlocfilehash: 3617e1f067f4b29470feedcf7381b41a400887f9
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 952a552210b00061717c24db5de5e5a47b84d72b
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759092"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754665"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>إنشاء نهج DLP من قالب
 
-الطريقة الأسهل والأكثر شيوعا للبدء في نهج DLP هي استخدام أحد القوالب المضمنة في مركز التوافق Microsoft 365. يمكنك استخدام أحد هذه القوالب كما هو، أو تخصيص القواعد لتلبية متطلبات التوافق المحددة لمؤسستك.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+الطريقة الأسهل والأكثر شيوعا للبدء مع نهج DLP هي استخدام أحد القوالب المضمنة في مدخل التوافق في Microsoft Purview. يمكنك استخدام أحد هذه القوالب كما هو، أو تخصيص القواعد لتلبية متطلبات التوافق المحددة لمؤسستك.
 
 تتضمن Microsoft 365 أكثر من 40 قالبا جاهزا للاستخدام يمكن أن تساعدك على تلبية مجموعة واسعة من احتياجات النهج التنظيمية والتجارية الشائعة. راجع؛ [قوالب النهج](dlp-policy-reference.md#policy-templates) لقائمة كاملة. 
 
@@ -43,7 +45,7 @@ ms.locfileid: "64759092"
   
 1. إنشاء مجموعة في Microsoft 365 وإضافة مسؤولي الامتثال إليها.
     
-2. إنشاء مجموعة أدوار على صفحة **"الأذونات** " في "مركز توافق الأمان &amp; ". 
+2. إنشاء مجموعة أدوار على صفحة **"الأذونات**" في مدخل التوافق في Microsoft Purview. 
 
 3. أثناء إنشاء مجموعة الأدوار، استخدم قسم **Choose Roles** لإضافة الدور التالي إلى مجموعة الأدوار: **DLP Compliance Management**.
     
@@ -51,7 +53,7 @@ ms.locfileid: "64759092"
 
 استخدم دور **View-Only DLP Compliance Management** لإنشاء مجموعة أدوار ذات امتيازات العرض فقط لنهج DLP وتقارير DLP.
 
-لمزيد من المعلومات، راجع [منح المستخدمين حق الوصول إلى مركز التوافق Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+لمزيد من المعلومات، راجع ["الأذونات" في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
   
 هذه الأذونات مطلوبة لإنشاء نهج DLP وتطبيقه لعدم فرض النهج.
 
@@ -59,14 +61,14 @@ ms.locfileid: "64759092"
 
 هناك أدوار ومجموعات أدوار في المعاينة يمكنك اختبارها لضبط عناصر التحكم في الوصول.
 
-فيما يلي قائمة بأدوار حماية البيانات في Microsoft (MIP) قيد المعاينة. لمعرفة المزيد عنها، راجع ["الأدوار" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+فيما يلي قائمة بالأدوار القابلة للتطبيق الموجودة في المعاينة. لمعرفة المزيد حولها، راجع [الأذونات في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal).
 
-- مسؤول حماية البيانات
+- حماية البيانات مسؤول
 - محلل حماية البيانات
 - حماية البيانات المحقق
 - قارئ حماية البيانات
 
-فيما يلي قائمة بمجموعات أدوار MIP الموجودة في المعاينة. لمعرفة المزيد حول ذلك، راجع [مجموعات الأدوار في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+فيما يلي قائمة بمجموعات الأدوار القابلة للتطبيق الموجودة في المعاينة. لمعرفة المزيد حول الأذونات، راجع [الأذونات في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)
 
 - حماية البيانات
 - مسؤولو حماية البيانات
@@ -76,9 +78,9 @@ ms.locfileid: "64759092"
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>إنشاء نهج DLP من قالب
 
-1. سجل الدخول إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مركز التوافق في Microsoft 365</a>.
+1. سجل الدخول إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>.
 
-2. في مركز \> التوافق، يسار نهج **منع** \> \> فقدان البيانات **لحلول** \> التنقل \> **+ نهج الإنشاء**.
+2. في مدخل التوافق في Microsoft Purview \> التنقل الأيسر \> **لحلول نهج** \>  منع \> \> **فقدان البيانات** **+ نهج الإنشاء**.
 
     ![إنشاء زر نهج.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
@@ -205,7 +207,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
 
 ## View the status of a DLP policy
 
-At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Security &amp; Compliance Center. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
+At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Microsoft Purview compliance portal. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
 
 Here are the different statuses and what they mean.
 
