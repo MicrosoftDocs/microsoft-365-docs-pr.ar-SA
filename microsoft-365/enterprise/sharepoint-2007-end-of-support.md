@@ -37,12 +37,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: انتهى دعم SharePoint Server 2007 في أكتوبر 2017. في هذه المقالة، تعرف على خيارات الترقية والترحيل والدعم.
-ms.openlocfilehash: 260949f73fbb4530436484e70ca39d4e2f99bbcf
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7f98e3652e2836a0c4193efbe33147fd09ced01e
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098219"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65771942"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>مخطط نهاية دعم SharePoint Server 2007
 
@@ -119,7 +119,7 @@ ms.locfileid: "65098219"
 |**محترف عبر الإنترنت**|**con عبر الإنترنت**|
 |:-----|:-----|
 |توفر Microsoft أجهزة SPO وجميع إدارة الأجهزة.  <br/> |قد تختلف الميزات المتوفرة بين SharePoint Server المحلي وSPO.  <br/> |
-|أنت مسؤول Sharepoint أو المسؤول العام لاشتراكك ويمكنك تعيين المسؤولين إلى مواقع SPO.  <br/> |بعض الإجراءات المتوفرة لمسؤول مزرعة في SharePoint Server المحلي غير موجودة أو غير مضمنة بالضرورة في دور مسؤول SharePoint في Microsoft 365.  <br/> |
+|أنت المسؤول SharePoint أو المسؤول العام لاشتراكك ويمكنك تعيين المسؤولين إلى مواقع SPO.  <br/> |بعض الإجراءات المتوفرة لمسؤول مزرعة في SharePoint Server المحلي غير موجودة أو غير مضمنة بالضرورة في دور مسؤول SharePoint في Microsoft 365.  <br/> |
 |تطبق Microsoft التصحيحات والإصلاحات والتحديثات على الأجهزة والبرامج الأساسية. <br/> |نظرا لعدم وجود وصول إلى نظام الملفات الأساسي في الخدمة، فإن التخصيص محدود.  <br/> |
 |تنشر Microsoft [اتفاقيات مستوى الخدمة](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) وتتحرك بسرعة لحل الحوادث على مستوى الخدمة. <br/> |يتم أتمتة النسخ الاحتياطي والاستعادة وخيارات الاسترداد الأخرى بواسطة الخدمة في SharePoint Online. تتم الكتابة فوق النسخ الاحتياطية إذا لم يتم استخدامها. <br/> |
 |يتم إجراء اختبار الأمان وضبط أداء الخادم على أساس مستمر في الخدمة بواسطة Microsoft. <br/> |يتم تثبيت التغييرات على واجهة المستخدم وميزات SharePoint الأخرى بواسطة الخدمة وقد تحتاج إلى تشغيلها أو إيقاف تشغيلها. <br/> |

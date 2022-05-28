@@ -19,16 +19,16 @@ ms.localizationpriority: high
 description: يمكن للمسؤولين معرفة كيفية استخدام EOP لمصادقة البريد الإلكتروني (SPF وDKIM وDMARC) للمساعدة في منع الانتحال والتصيد الاحتيالي والبريد العشوائي.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5368be5bbecde45d341a737a283a7461a2302dc4
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 2b0a1f1bec76a8dd22bc04502ea7ca09f2c7af66
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973366"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772763"
 ---
 # <a name="email-authentication-in-eop"></a>مصادقة البريد الإلكتروني في EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -166,7 +166,11 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 يمكنك أيضا استخدام [رؤى التحليل الذكي المخادعة](learn-about-spoof-intelligence.md) وقائمة [السماح/الحظر للمستأجر](tenant-allow-block-list.md) للسماح للمرسلين بإرسال رسائل غير مصادق عليها إلى مؤسستك.
 
-بالنسبة للمجالات الخارجية، المستخدم المخادعة هو المجال في عنوان "من"، بينما البنية الأساسية للإرسال إما عنوان IP المصدر (مقسم إلى /24 نطاق CIDR)، أو المجال التنظيمي لسجل DNS العكسي (PTR).
+بالنسبة للمجالات الخارجية، المستخدم المخادعة هو المجال في العنوان "من"، بينما البنية الأساسية للإرسال هي إحدى القيم التالية:
+
+- عنوان IP المصدر (مقسم إلى /24 نطاق CIDR)
+- المجال التنظيمي لسجل DNS العكسي (PTR).
+- مجال DKIM تم التحقق منه.
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>إنشاء إدخال السماح لزوج المرسل/المستلم
 

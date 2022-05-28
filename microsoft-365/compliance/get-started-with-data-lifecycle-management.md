@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: هل أنت مستعد لبدء التحكم في بيانات مؤسستك، ولكن لست متأكدا من أين تبدأ؟ اقرأ بعض الإرشادات الإرشادية للبدء.
-ms.openlocfilehash: 0d9545a04b94b75ee1b9429d7db75b39e90b06ef
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 95ce0286d5ec45b5dabcbd2447bd52821f547caf
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286835"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772719"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>بدء استخدام إدارة دورة حياة البيانات
 
@@ -32,7 +32,7 @@ ms.locfileid: "65286835"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-هل أنت جاهز لبدء التحكم في بيانات مؤسستك من خلال الاحتفاظ بالمحتوى الذي تحتاج إلى الاحتفاظ به، وحذف المحتوى الذي لا تريده؟ للبدء، استخدم الإرشادات التالية لإدارة دورة حياة بيانات Microsoft Purview (المعروف سابقا ب Microsoft Information Governance):
+هل أنت جاهز لبدء التحكم في بيانات مؤسستك من خلال الاحتفاظ بالمحتوى الذي تحتاج إلى الاحتفاظ به، وحذف المحتوى الذي لا تريده؟ للبدء، استخدم الإرشادات التالية إدارة دورة البيانات في Microsoft Purview (المعروف سابقا ب Microsoft Information Governance):
 
 1. **فهم كيفية عمل الاستبقاء والحذف** في Microsoft 365، ثم تحديد أحمال العمل التي تحتاج إلى نهج استبقاء وما إذا كنت بحاجة إلى إنشاء تسميات استبقاء للاستثناءات: [تعرف على الاستبقاء](retention.md)
     
@@ -43,7 +43,7 @@ ms.locfileid: "65286835"
     
     إذا لزم الأمر، [قم بإنشاء تسميات الاستبقاء وتطبيقها للاستثناءات الخاصة بك](create-retention-labels-information-governance.md).
 
-3. **تمكين أرشفة علبة البريد** لتزويد المستخدمين بمساحة تخزين إضافية لعلب البريد: [تمكين علب بريد الأرشيف في مدخل توافق Microsoft Purview](enable-archive-mailboxes.md)
+3. **تمكين أرشفة علبة البريد** لتزويد المستخدمين بمساحة تخزين إضافية لعلب البريد: [تمكين علب بريد الأرشيف في مدخل التوافق في Microsoft Purview](enable-archive-mailboxes.md)
     
     إذا لزم الأمر لدعم علب بريد الأرشيف:
     
@@ -59,7 +59,7 @@ ms.locfileid: "65286835"
 
 يدعم عدد من الاشتراكات المختلفة قدرات إدارة دورة حياة البيانات.
 
-للاطلاع على خيارات ترخيص المستخدمين للاستفادة من ميزات Microsoft Purview، راجع [إرشادات ترخيص Microsoft 365 للأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). للحصول على الميزات المدرجة في هذه الصفحة، راجع قسم [إدارة دورة حياة بيانات Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management) [وتنزيل PDF](https://go.microsoft.com/fwlink/?linkid=2139145) ذي الصلة لمتطلبات الترخيص على مستوى الميزات.
+للاطلاع على خيارات ترخيص المستخدمين للاستفادة من ميزات Microsoft Purview، راجع [إرشادات الترخيص Microsoft 365 للأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). للحصول على الميزات المدرجة في هذه الصفحة، راجع قسم [إدارة دورة البيانات في Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management) [وتنزيل PDF](https://go.microsoft.com/fwlink/?linkid=2139145) ذي الصلة لمتطلبات الترخيص على مستوى الميزات.
 
 ## <a name="permissions"></a>الأذونات
 
@@ -69,11 +69,11 @@ ms.locfileid: "65286835"
 
 ### <a name="permissions-for-retention-policies-and-retention-labels"></a>أذونات لنهج الاستبقاء وتسميات الاستبقاء
 
-يحتاج أعضاء فريق الامتثال الذين سينشئون نهج الاستبقاء وتسميات الاستبقاء ويديرونها إلى أذونات <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">لمدخل الامتثال ل Microsoft Purview</a>. بشكل افتراضي، يمكن لمسؤول المستأجر (المسؤول العام) الوصول إلى هذا الموقع ويمكنه منح مسؤولي الامتثال والأشخاص الآخرين حق الوصول دون منحهم جميع أذونات مسؤول المستأجر. لمنح أذونات لهذه الإدارة المحدودة، نوصي بإضافة مستخدمين إلى مجموعة دور مسؤول **مسؤول التوافق** .
+يحتاج أعضاء فريق التوافق الذين سينشئون نهج الاستبقاء وتسميات الاستبقاء ويديرونها إلى أذونات <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>. بشكل افتراضي، يمكن لمسؤول المستأجر (المسؤول العام) الوصول إلى هذا الموقع ويمكنه منح مسؤولي الامتثال والأشخاص الآخرين حق الوصول دون منحهم جميع أذونات مسؤول المستأجر. لمنح أذونات لهذه الإدارة المحدودة، نوصي بإضافة مستخدمين إلى مجموعة دور مسؤول **مسؤول التوافق** .
 
 بدلا من استخدام هذا الدور الافتراضي، يمكنك إنشاء مجموعة دور جديدة وإضافة دور **إدارة الاستبقاء** إلى هذه المجموعة. للحصول على دور للقراءة فقط، استخدم **View-Only Retention Management**. 
 
-للحصول على إرشادات لإضافة مستخدمين إلى الأدوار الافتراضية أو إنشاء مجموعات الأدوار الخاصة بك، راجع [الأذونات في مدخل توافق Microsoft Purview](microsoft-365-compliance-center-permissions.md).
+للحصول على إرشادات لإضافة مستخدمين إلى الأدوار الافتراضية أو إنشاء مجموعات الأدوار الخاصة بك، راجع [الأذونات في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md).
 
 هذه الأذونات مطلوبة فقط لإنشاء نهج الاستبقاء وتسميات الاستبقاء وتكوينها وتطبيقها. لا يتطلب الشخص الذي يقوم بتكوين هذه النهج والتسميات الوصول إلى المحتوى.
 
@@ -84,7 +84,7 @@ ms.locfileid: "65286835"
 |أريد...|الوثائق|
 |----------------|---------------|
 |الاحتفاظ بالبيانات أو حذفها بكفاءة لخدمات Microsoft 365: <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- مجموعات Microsoft 365 <br />- Teams <br />- Yammer <br />- Skype for Business |[إنشاء نهج الاستبقاء وتكوينها](create-retention-policies.md)|
-|تزويد المستخدمين بتخزين إضافي لعلب البريد |[تمكين علب بريد الأرشيف في مدخل توافق Microsoft Purview](enable-archive-mailboxes.md)|
+|تزويد المستخدمين بتخزين إضافي لعلب البريد |[تمكين علب بريد الأرشيف في مدخل التوافق في Microsoft Purview](enable-archive-mailboxes.md)|
 |الاحتفاظ ببيانات علبة البريد بعد مغادرة الموظفين للمؤسسة |[إنشاء علب بريد غير نشطة وإدارتها](create-and-manage-inactive-mailboxes.md)|
 |Upload بيانات علبة البريد من ملفات PST |[استخدام تحميل الشبكة لاستيراد ملفات PST](use-network-upload-to-import-pst-files.md)|
 
@@ -95,7 +95,7 @@ ms.locfileid: "65286835"
 
 راجع القسم التالي للحصول على معلومات حول وثائق المستخدم النهائي لدعم استبقاء Microsoft 365.
 
-لا تتطلب قدرات إدارة دورة حياة البيانات التي تدعم إدارة علبة البريد (الأرشفة وعلب البريد غير النشطة والاستيراد) عادة وثائق المستخدم النهائي.
+لا تتطلب قدرات إدارة دورة حياة البيانات لعلب البريد غير النشطة واستيراد ملفات PST وثائق المستخدم النهائي لأنها عمليات المسؤول فقط. لمساعدة المستخدمين على فهم علب بريد الأرشيف والتفاعل معها في Outlook بعد تمكين هذه الإمكانية، راجع [إدارة تخزين البريد الإلكتروني باستخدام علب بريد الأرشيف عبر الإنترنت](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ### <a name="end-user-documentation-for-retention-and-deletion"></a>وثائق المستخدم النهائي للاستبقاء والحذف
 

@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: تعرف على كيفية تمكين علب بريد الأرشيف أو تعطيلها لدعم متطلبات الاحتفاظ بالرسائل وeDiscovery والاحتفاظ بالمؤسسة.
-ms.openlocfilehash: ba5fdf252fe379798b1126d59affb12bb3725306
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: f95da36b48389bba2bd640825071dbff5c6ddb3d
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647226"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772413"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>تمكين علب بريد الأرشيف في مدخل التوافق في Microsoft Purview
 
@@ -48,7 +48,7 @@ ms.locfileid: "65647226"
 
 1. انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a> وسجل الدخول.
 
-2. في الجزء الأيمن من مدخل التوافق، حدد **Data lifecycle** **managementArchive** > .
+2. في الجزء الأيمن من مدخل التوافق، حدد **أرشيف** إدارة  > **دورة حياة البيانات**.
 
    في صفحة **الأرشيف** ، يحدد عمود  **علبة بريد الأرشيف** ما إذا كان قد تم تمكين علبة بريد الأرشيف أو تعطيلها لكل مستخدم.
 
@@ -124,6 +124,10 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 > [!NOTE]
 > يجب أن تكون مسؤولا عموميا Microsoft 365 لاستخدام التحقق التشخيصي لعلبة بريد الأرشيف. كما أن هذه الميزة غير متوفرة في Microsoft 365 السحب الحكومية، Microsoft 365 تشغلها 21Vianet أو Microsoft 365 ألمانيا.
+
+## <a name="instructions-for-end-users"></a>إرشادات للمستخدمين النهائيين
+
+شرح كيفية عمل علبة بريد الأرشيف للمستخدمين، وكيفية تفاعلهم معها في Outlook على Windows macOS والويب. سيتم تخصيص الوثائق الأكثر فعالية لمؤسستك. ولكن للحصول على الإرشادات الأساسية، راجع [إدارة تخزين البريد الإلكتروني باستخدام علب بريد الأرشيف عبر الإنترنت](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ## <a name="next-steps"></a>الخطوات التالية
 

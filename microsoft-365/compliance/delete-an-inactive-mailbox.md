@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: عندما لا تعود بحاجة إلى الاحتفاظ بمحتويات علبة بريد غير نشطة Microsoft 365، يمكنك حذف علبة البريد غير النشطة بشكل دائم.
-ms.openlocfilehash: b1a828b2248be7eed583141e13a3badef948b32e
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 640a118a2fc277b05edc181e19008836027dc468
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438433"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772369"
 ---
 # <a name="delete-an-inactive-mailbox"></a>حذف علبة بريد غير نشطة
 
@@ -50,7 +50,7 @@ ms.locfileid: "65438433"
 
 كما ذكر سابقا، قد يتم وضع احتجاز التقاضي أو In-Place الاحتجاز أو نهج الاستبقاء على علبة بريد غير نشطة. الخطوة الأولى هي تحديد قوائم الاحتجاز على علبة بريد غير نشطة.
   
-[الاتصال إلى Exchange Online PowerShelland](/powershell/exchange/connect-to-exchange-online-powershell) ثم قم بتشغيل الأمر التالي لعرض معلومات الاحتجاز لكافة علب البريد غير النشطة في مؤسستك.
+[الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)ثم قم بتشغيل الأمر التالي لعرض معلومات الاحتجاز لكافة علب البريد غير النشطة في مؤسستك.
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
@@ -94,7 +94,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   
 ### <a name="remove-an-inactive-mailbox-from-a-retention-policy"></a>إزالة علبة بريد غير نشطة من نهج استبقاء
 
-يعتمد إجراء إزالة علبة بريد غير نشطة من نهج استبقاء Microsoft 365 على ما إذا كان نهج الاستبقاء المعين إلى علبة البريد غير النشطة على مستوى المؤسسة أم صريحا. على نوع نهج الاستبقاء الذي تم تعيينه إلى علبة البريد غير النشطة.
+يعتمد إجراء إزالة علبة بريد غير نشطة من نهج استبقاء Microsoft 365 على ما إذا كان نهج الاستبقاء المعين إلى علبة البريد غير النشطة على مستوى المؤسسة أم صريحا:
 
 - نهج الاستبقاء على مستوى المؤسسة المعينة لكافة علب البريد في المؤسسة. استخدم **get-OrganizationConfig** cmdlet في Exchange Online PowerShell للحصول على معلومات حول نهج الاستبقاء على مستوى المؤسسة.
 

@@ -18,12 +18,12 @@ ms.custom:
 description: سلسلة الاستلام المصادق عليها (ARC) هي مصادقة البريد الإلكتروني التي تحاول الحفاظ على نتائج المصادقة عبر الأجهزة وأي تدفقات بريد غير مباشرة تأتي بين المرسل والمستلم. فيما يلي كيفية إجراء استثناءات لمرسلي ARC الموثوق بهم.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 625dd27ff59fca6a0e156bd65296e407e22005a6
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 6b3057350f8b1a652a08da8c878a47e191af04d0
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663883"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772337"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>إنشاء قائمة بمرسلي ARC الموثوق بهم للوثوث بتدفقات البريد غير المباشرة *المشروعة*
 
@@ -35,22 +35,20 @@ ms.locfileid: "65663883"
 
 يتم استخدام آليات مصادقة البريد الإلكتروني مثل [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [وDKIM](use-dkim-to-validate-outbound-email.md) [وDMARC](use-dmarc-to-validate-email.md) للتحقق من مرسلي رسائل البريد الإلكتروني *من أجل سلامة* مستلمي البريد الإلكتروني، ولكن قد تقوم بعض الخدمات المشروعة بإجراء تغييرات على البريد الإلكتروني بين المرسل والمستلم. **في Microsoft 365 Defender، ستساعد ARC على تقليل حالات فشل تسليم SPF وDKIM وDMARC التي تحدث بسبب تدفقات البريد غير المباشرة *المشروعة*.**
 
-## <a name="authenticated-received-chain-arc-for-legitimate-indirect-mailflows-in-microsoft-365-defender-for-office"></a>سلسلة المستلمين المصادق عليها (ARC) لتدفقات البريد غير المباشرة *المشروعة* في Microsoft 365 Defender Office
+## <a name="authenticated-received-chain-arc-in-microsoft-365-defender-for-office"></a>سلسلة استلام مصادق عليها (ARC) في Microsoft 365 Defender ل Office
 
-تعد القوائم البريدية والخدمات التي تقوم بتصفية رسائل البريد أو إعادة توجيهها ميزة معروفة عادية لتدفق البريد الخاص بالمؤسسة. ومع ذلك، ينتهك إرسال البريد الإلكتروني SPF. يمكن للخدمات أيضا انتهاك مصادقة البريد الإلكتروني DKIM عن طريق تغيير رؤوس البريد الإلكتروني أو إضافة أشياء مثل معلومات فحص الفيروسات أو إزالة المرفقات. قد يؤدي فشل أي من أساليب مصادقة البريد الإلكتروني هذه إلى فشل تمرير DMARC.
+يمكن للخدمات التي تقوم بتعديل المحتوى أثناء نقل الرسالة قبل التسليم إلى مؤسستك إبطال توقيع البريد الإلكتروني DKIM والتأثير على مصادقة الرسالة. عندما تقوم هذه الخدمات الوسيطة بتنفيذ مثل هذه الإجراءات، يمكن استخدام ARC لتوفير تفاصيل المصادقة الأصلية قبل إجراء التعديلات، والتي يمكن لمؤسستك بعد ذلك الوثوق بها للمساعدة في مصادقة الرسالة.  
 
-غالبا ما تسمى تدخلات تدفق البريد المخطط لها من الخدمات المشروعة *تدفق بريد غير مباشر*، وقد تتسبب *عن طريق الخطأ* في فشل الرسائل في مصادقة البريد الإلكتروني عند مرورها (الانتقال إلى) الجهاز التالي أو الخدمة التالية في طريقها إلى المتلقي.
-
-**تتيح أدوات تسرب ARC الموثوق بها للمسؤولين إضافة قائمة بالوسطاء *الموثوق بهم* إلى مدخل Microsoft 365 Defender.** تسمح فقمات ARC الموثوق بها لشركة Microsoft بتوقيع ARC من الوسطاء الموثوق بهم، ما يمنع هذه الرسائل المشروعة من الفشل في سلسلة المصادقة.
+**تتيح أدوات تسرب ARC الموثوق بها للمسؤولين إضافة قائمة بالوسطاء *الموثوق بهم* إلى مدخل Microsoft 365 Defender.** تسمح فقمات ARC الموثوق بها لشركة Microsoft بتوقيع ARC من هذه الوسطاء الموثوق بهم، ما يمنع هذه الرسائل المشروعة من الفشل في سلسلة المصادقة.
 
 > [!NOTE]
-> ***فقمات ARC الموثوق بها هي قائمة أنشأها المسؤول لأي مجال تؤدي عملياته إلى تدفق بريد غير مباشر والأشخاص الذين نفذوا تسرب ARC.*** عند توجيه رسالة بريد إلكتروني إلى Office 365 من خلال وسيط ARC rusted للمستأجر Office 365، تتحقق Microsoft من صحة توقيع ARC، واستنادا إلى نتائج ARC، يمكن أن تحترم تفاصيل المصادقة المقدمة.
+> ***فقمات ARC الموثوق بها هي قائمة أنشأها المسؤول من المجالات الوسيطة التي نفذت تسرب ARC.*** عند توجيه رسالة بريد إلكتروني إلى Office 365 من خلال وسيط ARC الموثوق به لمستأجر Office 365، تتحقق Microsoft من صحة توقيع ARC، واستنادا إلى نتائج ARC، يمكن أن تحترم تفاصيل المصادقة المقدمة.
 
 ## <a name="when-to-use-trusted-arc-sealers"></a>متى تستخدم فقمات ARC الموثوق بها؟
 
-هناك حاجة إلى قائمة بأدوات تسرب ARC الموثوق بها فقط عندما تتدخل الأجهزة والخوادم في تدفق البريد الإلكتروني للمؤسسة و:
+هناك حاجة إلى قائمة باختاقم ARC الموثوق بها فقط عندما يكون الوسطاء جزءا من تدفق البريد الإلكتروني للمؤسسة و:
 
-1. قد تقوم بتعديل رأس البريد الإلكتروني أو محتويات البريد الإلكتروني الأخرى.
+1. قد يعدل عنوان البريد الإلكتروني أو محتويات البريد الإلكتروني.
 2. قد تتسبب المصادقة في فشل لأسباب أخرى (على سبيل المثال، عن طريق إزالة المرفقات).
  
 بإضافة مانع تسرب ARC موثوق به، سيقوم Office 365 بالتحقق من صحة نتائج المصادقة التي توفرها أداة الفقمة عند تسليم البريد إلى المستأجر في Office 365.
@@ -73,7 +71,7 @@ ms.locfileid: "65663883"
 
 ## <a name="steps-to-validate-your-trusted-arc-sealer"></a>خطوات للتحقق من صحة مانع تسرب ARC الموثوق به
 
-إذا كان هناك فقم ARC من جهة خارجية قبل أن تصل الرسالة إلى Microsoft 365 Defender، **فتحقق من الرؤوس بمجرد تلقي البريد الإلكتروني وعرض أحدث رؤوس ARC**.
+إذا كان هناك فقم ARC من جهة خارجية قبل وصول الرسالة إلى Microsoft 365 Defender، **فتحقق من الرؤوس بمجرد تلقي البريد الإلكتروني وعرض أحدث رؤوس ARC**.
 
 في رأس ***ARC-Authentication-Results** الأخير، تحقق مما إذا كان التحقق من صحة ARC مدرجا ك _*pass**.
 
@@ -86,12 +84,12 @@ ms.locfileid: "65663883"
 ``
 ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
 40.107.65.78) smtp.rcpttodomain=microsoft.com
-smtp.mailfrom=o365e5test083.onmicrosoft.com; dmarc=bestguesspass action=none
-header.from=o365e5test083.onmicrosoft.com; dkim=none (message not signed);
+smtp.mailfrom=sampledoamin.onmicrosoft.com; dmarc=bestguesspass action=none
+header.from=sampledoamin.onmicrosoft.com; dkim=none (message not signed);
 arc=pass (0 oda=1 ltdi=1
-spf=[1,1,smtp.mailfrom=o365e5test083.onmicrosoft.com]
-dkim=[1,1,header.d=o365e5test083.onmicrosoft.com]
-dmarc=[1,1,header.from=o365e5test083.onmicrosoft.com])
+spf=[1,1,smtp.mailfrom=sampledoamin.onmicrosoft.com]
+dkim=[1,1,header.d=sampledoamin.onmicrosoft.com]
+dmarc=[1,1,header.from=sampledoamin.onmicrosoft.com])
 ``
 
 للتحقق مما إذا تم استخدام نتيجة ARC لتجاوز فشل DMARC *، ابحث عن* نتيجة الحساب *وسبب التعليمات البرمجية (130)* في الرأس.
@@ -138,7 +136,7 @@ Get-ArcConfig - Organization {tenant name}
 
 هنا، ترى نفس المؤسسة **بعد الاستفادة من القدرة على إنشاء مانع تسرب ARC موثوق به.**
 
-:::image type="content" source="../../media/m365d-indirect-traffic-flow-with-trusted-arc-sealer.PNG" alt-text="في شركة Contoso للرسم الثاني، أنشأت قائمة من فقمات ARC الموثوق بها. يرسل نفس المستخدم بريدا ثانيا من contoso.com إلى fabrikam.com. تعدل خدمة الجهة الخارجية التي عينتها شركة Contoso عنوان IP للمرسل في رأس البريد. ولكن هذه المرة قامت الخدمة بتنفيذ تسرب ARC، ولأن مسؤول المستأجر قد أضاف بالفعل مجال الطرف الثالث إلى أدوات تسرب ARC الموثوق بها، يتم قبول التعديل. فشل SPF لعنوان IP الجديد؛ فشل DKIM بسبب تعديل المحتوى؛ فشل DMARC بسبب حالات الفشل السابقة؛ ولكن ARC يتعرف على التعديلات، ويصدر تمريرا، ويقبل التغييرات. كما يتلقى الانتحال تمريرا. يتم إرسال الرسالة إلى علبة الوارد.":::
+:::image type="content" source="../../media/m365d-indirect-traffic-flow-with-trusted-arc-sealer.PNG" alt-text="في شركة Contoso للرسم الثاني، أنشأت قائمة من فقمات ARC الموثوق بها. يرسل نفس المستخدم بريدا ثانيا من contoso.com إلى fabrikam.com. تعدل خدمة الجهة الخارجية التي عينتها شركة Contoso عنوان IP للمرسل في رأس البريد. ولكن هذه المرة قامت الخدمة بتنفيذ تسرب ARC، ولأن مسؤول المستأجر قد أضاف بالفعل مجال الطرف الثالث إلى أدوات تسرب ARC الموثوق بها، يتم قبول التعديل. فشل SPF لعنوان IP الجديد. يفشل DKIM بسبب تعديل المحتوى. يفشل DMARC بسبب حالات الفشل السابقة. ولكن ARC يتعرف على التعديلات، ويصدر تمريرا، ويقبل التغييرات. كما يتلقى الانتحال تمريرا. يتم إرسال الرسالة إلى علبة الوارد.":::
 
 ## <a name="next-steps-after-you-set-up-arc-for-microsoft-365-defender-for-office"></a>الخطوات التالية: بعد إعداد ARC Microsoft 365 Defender Office
 

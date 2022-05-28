@@ -21,12 +21,12 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f827046dc9a103e73eb6fb79ba161e523e2b2690
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 66253ed6deab0f41cac3a4ff732201e20d100e98
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649342"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65771986"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>إدارة المرسلين المخادعين باستخدام نهج التحليل الذكي المخادعة والرؤى الذكية المنتحلة في EOP
 
@@ -98,7 +98,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
    ```
 
 2. تحرير ملف CSV لإضافة القيم التالية أو تعديلها:
-   - **المرسل** (المجال في سجل PTR للخادم المصدر أو عنوان IP/24)
+   - **المرسل** (المجال في سجل PTR للخادم المصدر أو عنوان IP/24 أو مجال DKIM المتحقق منه)
    - **SpoofedUser**: إحدى القيم التالية:
      - عنوان البريد الإلكتروني للمستخدم الداخلي.
      - مجال البريد الإلكتروني للمستخدم الخارجي.

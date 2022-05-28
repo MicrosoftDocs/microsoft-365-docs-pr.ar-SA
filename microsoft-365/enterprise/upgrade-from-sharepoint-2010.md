@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: ابحث عن المعلومات والموارد للترقية من SharePoint 2010 وخادم SharePoint 2010. دعم كلا طرفي 13 أبريل 2021.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be25dd1260c378146d292e6487329065a3020ac8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4ed6cf873442d4fd48cdbf9562e6067fd238384e
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077388"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772741"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>الترقية من SharePoint 2010
 
@@ -112,7 +112,7 @@ ms.locfileid: "65077388"
 |ميزة SharePoint Online|عيب SharePoint Online|
 |---|---|
 |توفر Microsoft أجهزة SPO وجميع إدارة الأجهزة.|قد تختلف الميزات المتوفرة بين SharePoint Server المحلي وSPO.|
-|أنت مسؤول Sharepoint أو المسؤول العام لاشتراكك ويمكنك تعيين المسؤولين إلى مواقع SPO.|بعض الإجراءات المتوفرة لمسؤول مزرعة في SharePoint Server المحلي غير موجودة (أو ليست ضرورية) في دور مسؤول SharePoint في Microsoft 365. ولكن SharePoint الإدارة وإدارة مجموعة المواقع المشتركة وملكية الموقع محلية لمؤسستك.|
+|أنت المسؤول SharePoint أو المسؤول العام لاشتراكك ويمكنك تعيين المسؤولين إلى مواقع SPO.|بعض الإجراءات المتوفرة لمسؤول مزرعة في SharePoint Server المحلي غير موجودة (أو ليست ضرورية) في دور مسؤول SharePoint في Microsoft 365. ولكن SharePoint الإدارة وإدارة مجموعة المواقع المشتركة وملكية الموقع محلية لمؤسستك.|
 |تطبق Microsoft التصحيحات والإصلاحات والتحديثات على الأجهزة والبرامج الأساسية، بما في ذلك خوادم SQL التي يتم تشغيل SharePoint Online عليها.|نظرا لعدم وجود وصول إلى نظام الملفات الأساسي في الخدمة، فإن التخصيص محدود.|
 |تنشر Microsoft [اتفاقيات مستوى الخدمة](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) وتتحرك بسرعة لحل الحوادث على مستوى الخدمة.|يتم أتمتة النسخ الاحتياطي والاستعادة وخيارات الاسترداد الأخرى بواسطة الخدمة في SharePoint Online. تتم الكتابة فوق النسخ الاحتياطية إذا لم يتم استخدامها.|
 |يتم إجراء اختبار الأمان وضبط أداء الخادم بشكل مستمر في الخدمة من قبل Microsoft.|يتم تثبيت التغييرات على واجهة المستخدم وميزات SharePoint الأخرى بواسطة الخدمة وقد تحتاج إلى تشغيلها أو إيقاف تشغيلها.|

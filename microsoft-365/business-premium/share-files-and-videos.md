@@ -1,5 +1,5 @@
 ---
-title: مشاركة الملفات ومقاطع الفيديو في Microsoft Teams وSharepoint
+title: مشاركة الملفات ومقاطع الفيديو في Microsoft Teams SharePoint
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 - MOE150
 description: يمكنك مشاركة الملفات ومقاطع الفيديو داخل حملتك مع Microsoft Teams SharePoint. يتضمن Microsoft 365 Business premium Teams وهي طريقة رائعة لمشاركة الملفات ومقاطع الفيديو بأمان.
-ms.openlocfilehash: b678bf1bf44b63e80ac4b8d0ea6dfc760eb510a8
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 354722f92b34081c318c818d94e9ca5c95074aa7
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622368"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772347"
 ---
 # <a name="share-files-and-videos-in-a-safe-environment"></a>مشاركة الملفات ومقاطع الفيديو في بيئة آمنة
 
-هناك شيء آخر يجب الانتباه إليه وهو التأكد من أن جميع أعضاء المؤسسة يتحكمون في من يمكنه عرض الملفات وتحريرها، وأن يتم تخزينها في موقع آمن مع تطبيق الأذونات المناسبة. Microsoft 365 Business Premium يمكن للمستخدمين استخدام Microsoft Teams لتخزين الملفات، ثم مشاركة الملفات إما داخل الشركة أو خارجها، أو التدريب أو الحملة. يمكنك أيضا إرسال ارتباط Sharepoint. يعني إرسال ارتباط بدلا من مرفق بريد إلكتروني أنك تعرف من يقوم بعرض الملفات وتعديلها، ولا يمكن عرضها أو تعديلها دون إذن.
+هناك شيء آخر يجب الانتباه إليه وهو التأكد من أن جميع أعضاء المؤسسة يتحكمون في من يمكنه عرض الملفات وتحريرها، وأن يتم تخزينها في موقع آمن مع تطبيق الأذونات المناسبة. Microsoft 365 Business Premium يمكن للمستخدمين استخدام Microsoft Teams لتخزين الملفات، ثم مشاركة الملفات إما داخل الشركة أو خارجها، أو التدريب أو الحملة. يمكنك أيضا إرسال ارتباط SharePoint. يعني إرسال ارتباط بدلا من مرفق بريد إلكتروني أنك تعرف من يقوم بعرض الملفات وتعديلها، ولا يمكن عرضها أو تعديلها دون إذن.
 
 ![رسم تخطيطي لنافذة Microsoft Teams، يظهر علامة التبويب "ملفات" و"الحصول على ارتباط" في القائمة.](../media/m365-democracy-teams-sharefiles.png)
 

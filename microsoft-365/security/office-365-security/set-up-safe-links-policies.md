@@ -19,16 +19,16 @@ ms.custom: ''
 description: يمكن للمسؤولين التعرف على كيفية عرض نهج ارتباطات خزينة وإعدادات ارتباطات خزينة العمومية في Microsoft Defender لـ Office 365 وإنشاءها وتعديلها وحذفها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d60be56f8dad960ca3f15484276324421c00426
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 969e3f3bb3b139a21cd2d84b4a0bd698a74b5107
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623023"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772435"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>إعداد نهج ارتباطات خزينة في Microsoft Defender لـ Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
@@ -304,6 +304,20 @@ New-SafeLinksRule -Name "<RuleName>" -SafeLinksPolicy "<PolicyName>" <Recipient 
 New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
 ```
 
+ينشئ هذا المثال قاعدة ارتباطات آمنة مشابهة للمثال السابق، ولكن في هذا المثال، تنطبق القاعدة على المستلمين في كافة المجالات المقبولة في المؤسسة.
+
+```powershell
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs (Get-AcceptedDomain).Name
+```
+
+ينشئ هذا المثال قاعدة ارتباطات آمنة مشابهة بالأمثلة السابقة، ولكن في هذا المثال، تنطبق القاعدة على المستلمين في المجالات المحددة في ملف .csv.
+
+```powershell
+$Data = Import-Csv -Path "C:\Data\SafeLinksDomains.csv"
+$SLDomains = $Data.Domains
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs $SLDomains
+```
+
 للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [New-SafeLinksRule](/powershell/module/exchange/new-safelinksrule).
 
 ### <a name="use-powershell-to-view-safe-links-policies"></a>استخدام PowerShell لعرض نهج الارتباطات الآمنة
@@ -389,6 +403,20 @@ Set-SafeLinksPolicy -Identity "<PolicyName>" <Settings>
 
 ```PowerShell
 Set-SafeLinksRule -Identity "<RuleName>" <Settings>
+```
+
+يضيف هذا المثال كافة المجالات المقبولة في المؤسسة كشرط لقاعدة الارتباطات الآمنة المسماة Contoso All.
+
+```powershell
+Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs (Get-AcceptedDomain).Name
+```
+
+يضيف هذا المثال المجالات من .csv المحددة كشرط إلى قاعدة الارتباطات الآمنة المسماة Contoso All.
+
+```powershell
+$Data = Import-Csv -Path "C:\Data\SafeLinksDomains.csv"
+$SLDomains = $Data.Domains
+Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs $SLDomains
 ```
 
 للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule).

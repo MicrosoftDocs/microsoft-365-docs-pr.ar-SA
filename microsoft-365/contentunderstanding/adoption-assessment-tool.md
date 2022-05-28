@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: تعرف على كيفية استخدام أداة تقييم الاعتماد لمعرفة كيف يمكن لمؤسستك الاستفادة من SharePoint Syntex.
-ms.openlocfilehash: 30c3426962a88d582af9d5cadac43ee0eb85bb50
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: dbe9ebe47526f15216e4366bf98f086d86bed5e4
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393695"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772709"
 ---
 # <a name="discover-opportunities-in-sharepoint-syntex-by-using-the-microsoft-365-assessment-tool"></a>اكتشاف الفرص في SharePoint Syntex باستخدام أداة تقييم Microsoft 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "65393695"
 
 - **المكتبات التي تحتوي على أنواع محتويات مخصصة** - تحديد المكتبات التي تستخدم أنواع محتويات مخصصة، حيث يمكن استخدام نماذج SharePoint Syntex لتصنيف الملفات تلقائيا. 
 
-- **استخدام نوع المحتوى** - تحديد أنماط استخدام نوع المحتوى، لاستهداف نماذج Sharepoint Syntex حيث سيكون لها أقصى فائدة. 
+- **استخدام نوع المحتوى** - تحديد أنماط استخدام نوع المحتوى، لاستهداف نماذج SharePoint Syntex حيث سيكون لها أقصى فائدة. 
 
 - **المكتبات التي تحتوي على تسميات استبقاء** - حدد المكتبات التي تستخدم فيها تسميات الاستبقاء، حيث يمكن استخدام SharePoint Syntex لأتمتة التناسق وتحسينه. 
 

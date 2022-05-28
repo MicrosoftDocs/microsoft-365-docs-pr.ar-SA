@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e57b797ab0b5d5eee90315ae9c3459fcba0a02c
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 614cdd62e5884eff0f91b1c0d1f9946a1c8ce891
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621678"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772293"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>عرض تقارير أمان البريد الإلكتروني في مدخل Microsoft 365 Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -392,7 +392,7 @@ ms.locfileid: "65621678"
 
 ## <a name="submissions-report"></a>تقرير عمليات الإرسال
 
-يعرض تقرير **عمليات الإرسال** معلومات حول العناصر التي أبلغ عنها المسؤولون إلى Microsoft للتحليل. لمزيد من المعلومات، راجع ["استخدام إرسال المسؤول" لإرسال رسائل البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft](admin-submission.md).
+يعرض تقرير **عمليات الإرسال** معلومات حول العناصر التي أبلغ عنها المسؤولون إلى Microsoft للتحليل. لمزيد من المعلومات، راجع [استخدام مسؤول الإرسال لإرسال رسائل البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft](admin-submission.md).
 
 لعرض التقرير في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **تقارير** \> **التعاون & البريد الإلكتروني & &** **التعاون** \> عبر البريد الإلكتروني. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **عمليات الإرسال** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/adminSubmissionReport>. للانتقال إلى [عمليات إرسال المسؤول في مدخل Microsoft 365 Defender](admin-submission.md)، انقر فوق **"الانتقال إلى عمليات الإرسال**". سيتمكن المسؤولون من عرض التقرير لآخر 30 يوما.
 
@@ -619,7 +619,7 @@ ms.locfileid: "65621678"
 - **سمعة**<sup>\*</sup> التفاف الملفات: جميع سمعة الملفات الضارة التي تم إنشاؤها بواسطة Defender لـ Office 365 التوالف.
 - **سمعة الملف**
 - محرك <sup>\*</sup>**مكافحة البرامج الضارة**: الكشف من محركات مكافحة البرامج الضارة.
-- **كتلة نوع ملف نهج مكافحة البرامج الضارة**: هذه هي رسائل البريد الإلكتروني التي تمت تصفيتها بسبب نوع الملف الضار المحدد في الرسالة.
+- **كتلة نوع ملف نهج مكافحة البرامج الضارة**: تتم تصفية رسائل البريد الإلكتروني تلقائيا بسبب نوع الملف المعرف في الرسالة (تصفية المرفقات الشائعة).
 - **سمعة URL الضارة**<sup>\*</sup>
 - **الالتفاف على عنوان URL**<sup>\*</sup>
 - **سمعة التطفل على عنوان URL**<sup>\*</sup>
@@ -660,7 +660,7 @@ ms.locfileid: "65621678"
 
 عند الانتهاء من تكوين عوامل التصفية، انقر فوق **تطبيق** **عوامل التصفية** أو **إلغاؤها** أو مسحها.
 
-في صفحة **حالة حمايةThreat** ، أيقونة ![إنشاء جدول.](../../media/m365-cc-sc-create-icon.png) **[إنشاء جدول،](#schedule-report)**![ أيقونة تقرير الطلب.](../../media/m365-cc-sc-download-icon.png) **[تقرير الطلب](#request-report)**، وأيقونة ![التصدير.](../../media/m365-cc-sc-download-icon.png) أزرار **[التصدير](#export-report)** متوفرة.
+في صفحة **حالة الحماية من التهديدات** ، أيقونة ![إنشاء جدول.](../../media/m365-cc-sc-create-icon.png) **[إنشاء جدول،](#schedule-report)**![ أيقونة تقرير الطلب.](../../media/m365-cc-sc-download-icon.png) **[تقرير الطلب](#request-report)**، وأيقونة ![التصدير.](../../media/m365-cc-sc-download-icon.png) أزرار **[التصدير](#export-report)** متوفرة.
 
 ### <a name="chart-breakdown-by-policy-type"></a>تصنيف المخطط حسب نوع النهج
 

@@ -17,16 +17,16 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إدارة الأذونات والكتل في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 58b1fadc85b993701d49b1c33750fc7db2527264
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: e1832f641c5efc582bee7837dcf8e5b67a9256f6
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468097"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772058"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>إدارة قائمة السماح/الحظر للمستأجر
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -448,7 +448,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 - **أحرف البدل المتوسطة**:
 
-  - conto\* so.com
+  - conto\*so.com
   - conto~so.com
 
 - **أحرف البدل المزدوجة**
@@ -468,6 +468,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 - **إرسال البنية الأساسية**: تشير هذه القيمة إلى مصدر الرسائل من المستخدم المخادعة. تتضمن القيم الصالحة ما يلي:
   - المجال الموجود في بحث DNS العكسي (سجل PTR) لعنوان IP لخادم البريد الإلكتروني المصدر (على سبيل المثال، fabrikam.com).
   - إذا لم يكن لعنوان IP المصدر سجل PTR، فسيتم تعريف البنية الأساسية للإرسال على أنها \<source IP\>/24 (على سبيل المثال، 192.168.100.100/24).
+  - مجال DKIM تم التحقق منه.
 
 فيما يلي بعض الأمثلة على أزواج المجالات الصالحة لتحديد المرسلين المخادعة:
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم تسميات الحساسية لحماية المحتوى في مواقع SharePoint Microsoft Teams والمجموعات Microsoft 365.
-ms.openlocfilehash: 56b6d53d56c8f9fb16e900271b8d6a4c152f6440
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 125be09f9d3d9a519e1985a37c0880e3f2465245
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437994"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772665"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>استخدام تسميات الحساسية لحماية المحتوى في Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint
 
@@ -189,7 +189,7 @@ ms.locfileid: "65437994"
 > [!NOTE]
 > إعداد التسمية هذا قيد المعاينة حاليا.
 
-إعداد PowerShell المتقدم الآخر الذي يمكنك تكوينه لتطبيق وصف الحساسية على موقع SharePoint هو **MembersCanShare**. هذا الإعداد هو التكوين المكافئ الذي يمكنك تعيينه من مركز إدارة SharePoint > **Site permissionsSite** >  **SharingChange** >  **كيف يمكن للأعضاء مشاركة** >  **أذونات المشاركة**. 
+إعداد PowerShell المتقدم الآخر الذي يمكنك تكوينه لتطبيق وصف الحساسية على موقع SharePoint هو **MembersCanShare**. هذا الإعداد هو التكوين المكافئ الذي يمكنك تعيينه من مركز إدارة SharePoint > تغيير **مشاركة** >  **الموقع لأذونات** >  الموقع **كيف يمكن للأعضاء مشاركة** > **أذونات المشاركة**. 
 
 يتم سرد الخيارات الثلاثة بالقيم المكافئة للإعداد المتقدم ل PowerShell **MembersCanShare**:
 
@@ -361,7 +361,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 تدعم التطبيقات والخدمات التالية تسميات الحساسية التي تم تكوينها للمواقع وإعدادات المجموعة:
 
-- مراكز الإدارة:
+- مراكز مسؤول:
 
   - مركز إدارة SharePoint
   - مركز إدارة Teams
@@ -379,7 +379,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 لا تدعم التطبيقات والخدمات التالية حاليا تسميات الحساسية التي تم تكوينها للمواقع وإعدادات المجموعة:
 
-- مراكز الإدارة:
+- مراكز مسؤول:
 
   - مركز إدارة Exchange
 
@@ -389,6 +389,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
   - Yammer
   - Project
   - Power BI
+  - مدخل تطبيقاتي
 
 ## <a name="classic-azure-ad-group-classification"></a>تصنيف مجموعة Azure AD الكلاسيكية
 

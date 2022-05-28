@@ -1,5 +1,5 @@
 ---
-title: إعداد SPF للمساعدة في منع تزييف الهوية
+title: إعداد SPF للمساعدة في منع الانتحال
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -19,14 +19,14 @@ ms.custom:
 description: تعرف على كيفية تحديث سجل خدمة أسماء المجالات (DNS) لاستخدام إطار نهج المرسل (SPF) مع مجالك المخصص في Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d29175c471e076b1f69e1edb6da3c005d3857f8f
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+ms.openlocfilehash: 33e4a6d3644f7a3aab8992130b2b92e09dd665af
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65626030"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772391"
 ---
-# <a name="set-up-spf-to-help-prevent-spoofing"></a>إعداد SPF للمساعدة في منع تزييف الهوية
+# <a name="set-up-spf-to-help-prevent-spoofing"></a>إعداد SPF للمساعدة في منع الانتحال
 
 - [المتطلبات الأساسية](#prerequisites)
 - [إنشاء سجل SPF TXT أو تحديثه](#create-or-update-your-spf-txt-record)
@@ -152,5 +152,7 @@ ms.locfileid: "65626030"
 الهدف من مصادقة البريد الإلكتروني [**DMARC**](use-dmarc-to-validate-email.md) هو التأكد من تطابق معلومات SPF وDKIM مع عنوان "من".
 
  للحصول على أمثلة متقدمة ومناقشة أكثر تفصيلا حول بناء جملة SPF المدعومة، راجع [كيفية عمل SPF لمنع الانتحال والتصيد الاحتيالي في Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks).
+
+[استخدام مرسلي ARC الموثوق بهم لتدفقات البريد المشروعة](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
 
 *حدد "هذه الصفحة" ضمن "ملاحظات" إذا كانت لديك ملاحظات حول هذه الوثائق.*
