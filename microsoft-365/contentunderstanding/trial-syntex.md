@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: تعرف على كيفية تخطيط برنامج تجريبي تجريبي وتسجيله وتشغيله SharePoint Syntex في مؤسستك.
-ms.openlocfilehash: ccbf1208d5c655171825b5a96f3a78b25ea3bbf2
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 5081c3877e005d1e014ad7520beeffd657a31f67
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754433"
+ms.locfileid: "65759791"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>تشغيل إصدار تجريبي من Microsoft SharePoint Syntex
 
@@ -88,7 +88,7 @@ ms.locfileid: "65754433"
 
 ## <a name="during-a-trial"></a>أثناء الإصدار التجريبي
 
-الفترات التجريبية محدودة، لذلك من الأفضل التركيز في البداية على ما إذا كان يمكن لنماذج SharePoint Syntex تصنيف المستندات واستخراج بيانات التعريف لحالات الاستخدام المحددة. بعد انتهاء الفترة التجريبية، يمكنك تقييم كيفية استغلال بيانات التعريف.
+الفترات التجريبية محدودة، لذلك من الأفضل التركيز في البداية على ما إذا كان يمكن لنماذج SharePoint Syntex تصنيف المستندات واستخراج بيانات التعريف لحالات الاستخدام المحددة. بعد انتهاء الفترة التجريبية، يمكنك تقييم كيفية استخدام بيانات التعريف.
 
 ## <a name="after-a-trial"></a>بعد الإصدار التجريبي
 
@@ -113,3 +113,5 @@ ms.locfileid: "65754433"
 ## <a name="see-also"></a>راجع أيضًا
 
 [البدء في قيادة اعتماد SharePoint Syntex](adoption-getstarted.md)
+
+[السيناريوهات وحالات الاستخدام SharePoint Syntex](adoption-scenarios.md)
