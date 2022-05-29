@@ -156,16 +156,18 @@
           items:
             - name: مصادقة البريد الإلكتروني
               href: email-validation-and-authentication.md
+            - name: إعداد SPF للمساعدة في منع تزييف الهوية
+              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+            - name: كيفية استخدام Microsoft 365 SPF لمنع تزييف هوية المستخدم
+              href: how-office-365-uses-spf-to-prevent-spoofing.md
             - name: استخدام DKIM للتحقق من صحة البريد الإلكتروني الصادر
               href: use-dkim-to-validate-outbound-email.md
             - name: دعم التحقق من صحة الرسائل الموقعة من DKIM
               href: support-for-validation-of-dkim-signed-messages.md
             - name: استخدام DMARC للتحقق من صحة البريد الإلكتروني
               href: use-dmarc-to-validate-email.md
-            - name: إعداد SPF للمساعدة في منع تزييف الهوية
-              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
-            - name: كيفية استخدام Microsoft 365 SPF لمنع تزييف هوية المستخدم
-              href: how-office-365-uses-spf-to-prevent-spoofing.md
+            - name: استخدم مرسلي ARC الموثوق بهم للأجهزة والخدمات المشروعة بين المرسل والمتلقي
+              href: use-arc-exceptions-to-mark-trusted-arc-senders.md
         - name: تدفق البريد في EOP
           href: mail-flow-in-eop.md
         - name: نهج عمليات إرسال المستخدم
@@ -394,6 +396,8 @@
           href: quarantine-faq.yml
     - name: المرجع
       items:
+        - name: استبقاء بيانات Defender لـ Office 365
+          href: mdo-data-retention.md
         - name: مخطط الأمان
           href: security-roadmap.md
         - name: تعليمات ودعم EOP
