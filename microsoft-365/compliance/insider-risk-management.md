@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 86a56ec16f81eaa6b61a452829e65251b673cb78
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 9b2897a242f7dbbf9af9c9f3b639c0b91623fa25
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599244"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810605"
 ---
 # <a name="learn-about-insider-risk-management"></a>تعرّف على إدارة المخاطر الداخلية
 
@@ -43,6 +43,8 @@ ms.locfileid: "65599244"
 
 **سير عمل إدارة المخاطر من الداخل**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+اطلع على [فيديو Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) حول كيفية عمل إدارة المخاطر الداخلية وتوافق الاتصالات معا للمساعدة في تقليل مخاطر البيانات من المستخدمين في مؤسستك.
 
 > [!IMPORTANT]
 > تتوفر إدارة المخاطر الداخلية حاليا في المستأجرين المستضافين في المناطق الجغرافية والبلدان التي تدعمها تبعيات خدمة Azure. للتحقق من دعم إدارة المخاطر الداخلية لمؤسستك، راجع [توفر تبعية Azure حسب البلد/المنطقة](/troubleshoot/azure/general/dependency-availability-by-country).

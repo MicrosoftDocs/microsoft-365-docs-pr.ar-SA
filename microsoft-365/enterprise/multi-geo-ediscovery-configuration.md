@@ -13,12 +13,12 @@ ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
 description: تعرف على كيفية استخدام معلمة المنطقة لتكوين eDiscovery للاستخدام في مواقع الأقمار الصناعية في Microsoft 365 Multi-Geo.
-ms.openlocfilehash: a220e68e6dbe010f2eab6876dc2813dcd84d5d6d
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 088d6cf861e70185162a74c0b2d9b029849125de
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130922"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810583"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 تكوين eDiscovery متعدد المناطق الجغرافية
 
@@ -26,7 +26,7 @@ ms.locfileid: "65130922"
 
 بدون قدرات eDiscovery (Premium)، سيتمكن مدير eDiscovery أو مسؤول مستأجر متعدد المناطق الجغرافية من إجراء eDiscovery فقط في الموقع المركزي لذلك المستأجر. لدعم القدرة على إجراء eDiscovery لمواقع الأقمار الصناعية، تتوفر معلمة عامل تصفية أمان امتثال جديدة تسمى "المنطقة" عبر PowerShell. يمكن استخدام هذه المعلمة من قبل المستأجرين الذين يوجد موقعهم المركزي في أمريكا الشمالية أو أوروبا أو آسيا والمحيط الهادئ. يوصى باستخدام eDiscovery (Premium) للمستأجرين الذين لا يوجد موقعهم المركزي في أمريكا الشمالية أو أوروبا أو آسيا والمحيط الهادئ ويحتاجون إلى تنفيذ eDiscovery عبر المواقع الجغرافية للأقمار الصناعية.
 
-يجب على المسؤول العام Microsoft 365 تعيين أذونات eDiscovery Manager للسماح للآخرين بتنفيذ eDiscovery وتعيين معلمة "Region" في عامل تصفية أمان التوافق المعمول به لتحديد المنطقة لإجراء eDiscovery كموقع قمر صناعي، وإلا فلن يتم تنفيذ eDiscovery لموقع القمر الصناعي. يتم دعم عامل تصفية أمان "المنطقة" واحد فقط لكل مستخدم، لذلك يجب أن تكون جميع المناطق داخل نفس عامل تصفية الأمان.
+يجب على المسؤول العام Microsoft 365 تعيين أذونات eDiscovery Manager للسماح للآخرين بتنفيذ eDiscovery وتعيين معلمة "Region" في عامل تصفية أمان التوافق المعمول به لتحديد المنطقة لإجراء eDiscovery كموقع قمر صناعي، وإلا فلن يتم تنفيذ eDiscovery لموقع القمر الصناعي. يتم دعم عامل تصفية أمان "المنطقة" واحد فقط لكل مستخدم.
 
 عند تعيين دور eDiscovery Manager أو Administrator لموقع قمر صناعي معين، سيتمكن مدير eDiscovery أو المسؤول فقط من تنفيذ إجراءات البحث eDiscovery مقابل مواقع SharePoint ومواقع OneDrive الموجودة في موقع الأقمار الصناعية هذا. إذا حاول مدير eDiscovery أو مسؤول البحث في مواقع SharePoint أو OneDrive خارج موقع الأقمار الصناعية المحدد، فلن يتم إرجاع أي نتائج. أيضا، عندما يقوم مدير eDiscovery أو المسؤول لموقع قمر صناعي بتشغيل تصدير، يتم تصدير البيانات إلى مثيل Azure لتلك المنطقة. يساعد هذا المؤسسات على البقاء في حالة امتثال من خلال عدم السماح بتصدير المحتوى عبر الحدود الخاضعة للرقابة.
 

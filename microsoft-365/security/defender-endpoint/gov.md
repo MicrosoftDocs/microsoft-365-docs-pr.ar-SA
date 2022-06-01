@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 67ae082e61c3322c28031b2d20e99f4070389dd2
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: ce42709349e5d7464e1809df248c8055bdfaab30
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243019"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810977"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender لنقطة النهاية لعملاء الحكومة الأمريكية
 
@@ -117,7 +117,7 @@ Windows 8 Pro (قديم) <sup>3</sup>|![نعم.](images/svg/check-yes.svg)|![ن�
 Windows 7 SP1 Enterprise (قديم) <sup>3</sup>|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 Windows 7 SP1 Pro (قديم) <sup>3</sup>|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 ينكس|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
-ماك|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
+macOS|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 الروبوت|![نعم.](images/svg/check-yes.svg) <br /> معاينة عامة|![نعم](images/svg/check-yes.svg) <br /> معاينة عامة|![نعم](images/svg/check-yes.svg) <br /> معاينة عامة
 دائره الرقابه الداخليه|![نعم.](images/svg/check-yes.svg) <br /> معاينة عامة|![نعم](images/svg/check-yes.svg) <br /> معاينة عامة|![نعم](images/svg/check-yes.svg) <br /> معاينة عامة
 |
@@ -195,7 +195,11 @@ Windows Server 2008 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم](images
 |اكتشاف الشبكة|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
 |التقارير: التحكم في الجهاز، صحة الجهاز، جدار الحماية|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|
 |تصفية محتوى ويب|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|
-  
+|Microsoft Secure Score|![نعم](images/svg/check-yes.svg) <sup>1</sup>|![لا](images/svg/check-no.svg) غير معتمد|![لا](images/svg/check-no.svg) غير معتمد|  
+
+> [!NOTE]
+> <sup>1</sup> على الرغم من توفر نقاط الأمان من Microsoft للعملاء سحابة القطاع الحكومي، هناك بعض توصيات الأمان غير المتوفرة.
+
 
 هذه هي الميزات والثغرات المعروفة ل [Mobile Threat Defense (Microsoft Defender لنقطة النهاية على Android & iOS)](mtd.md):
 
@@ -212,5 +216,3 @@ Windows Server 2008 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم](images
 |دعم MAM|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
 |عناصر التحكم في الخصوصية|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
 |إدارة المخاطر والثغرات الأمنية (TVM)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
-  
-

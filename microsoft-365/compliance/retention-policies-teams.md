@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على نهج الاستبقاء التي تنطبق على Microsoft Teams.
-ms.openlocfilehash: cadff304744fcf06c6717b0709b719e05f8ddfb6
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: f289b8da5a4b21214887fd6429e977e434a9cd0b
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754323"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65811011"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>تعرف على استبقاء Microsoft Teams
 
@@ -83,7 +83,7 @@ Teams يمكن حذف رسائل الدردشة ورسائل القناة ورس
 تبقى الرسائل في المجلد SubstrateHolds لمدة يوم واحد على الأقل، ثم إذا كانت مؤهلة للحذف، فإن مهمة المؤقت تحذفها نهائيا في المرة التالية التي يتم فيها تشغيلها.
 
 > [!IMPORTANT]
-> نظرا [للمبدأ الأول للاستبقاء](retention.md#the-principles-of-retention-or-what-takes-precedence) وبما أن Teams يتم تخزين رسائل الدردشة والقنوات في علب بريد Exchange Online، يتم دائما تعليق الحذف الدائم من مجلد SubstrateHolds إذا تأثرت علبة البريد بنهج استبقاء آخر لنفس الموقع أو احتجاز التقاضي أو احتجاز التأخير أو إذا تم تطبيق احتجاز eDiscovery على علبة البريد لأسباب قانونية أو تحقيقية.
+> نظرا [للمبدأ الأول للاستبقاء](retention.md#the-principles-of-retention-or-what-takes-precedence) وبما أن Teams يتم تخزين رسائل الدردشة والقنوات في علب بريد Exchange Online، يتم دائما تعليق الحذف الدائم من مجلد SubstrateHolds إذا تأثرت علبة البريد بنهج استبقاء Teams آخر لنفس الموقع، أو احتجاز التقاضي، أو احتجاز التأخير، أو إذا تم تطبيق احتجاز eDiscovery على علبة البريد للحصول على معلومات قانونية أو تحقيقية  اسباب.
 >
 > في حين أن علبة البريد مضمنة في قائمة احتجاز قابلة للتطبيق، فإن Teams رسائل الدردشة والقنوات التي تم حذفها لن تكون مرئية بعد الآن في تطبيق Teams ولكنها ستظل قابلة للاكتشاف باستخدام eDiscovery.
 
@@ -206,7 +206,7 @@ Teams يمكن حذف رسائل الدردشة ورسائل القناة ورس
 
 ## <a name="when-a-user-leaves-the-organization"></a>عندما يغادر مستخدم المؤسسة 
 
-إذا غادر مستخدم لديه علبة بريد في Exchange Online مؤسستك وتم حذف حساب Microsoft 365 الخاص به، يتم تخزين رسائل الدردشة الخاصة به التي تخضع للاستبقاء في علبة بريد غير نشطة. تظل رسائل الدردشة خاضعة لأي نهج استبقاء تم وضعه على المستخدم قبل جعل علبة بريده غير نشطة، وتتوفر المحتويات للبحث في eDiscovery. لمزيد من المعلومات، راجع [علب البريد غير النشطة في Exchange Online](inactive-mailboxes-in-office-365.md). 
+إذا غادر مستخدم لديه علبة بريد في Exchange Online مؤسستك وتم حذف حساب Microsoft 365 الخاص به، يتم تخزين رسائل الدردشة الخاصة به التي تخضع للاستبقاء في علبة بريد غير نشطة. تظل رسائل الدردشة خاضعة لأي نهج استبقاء تم وضعه على المستخدم قبل جعل علبة بريده غير نشطة، وتتوفر المحتويات للبحث في eDiscovery. لمزيد من المعلومات، راجع ["التعرف على علب البريد غير النشطة](inactive-mailboxes-in-office-365.md)". 
 
 إذا قام المستخدم بتخزين أي ملفات في Teams، فراجع [المقطع المكافئ](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) SharePoint OneDrive.
 

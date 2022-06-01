@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ad69d525ac8cf105761286c59e8bce54d446ae8f
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 043ee6cac3a7aa7408d949b4455fd90f7f6a66d0
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599580"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810911"
 ---
 # <a name="plan-for-insider-risk-management"></a>خطة لإدارة المخاطر الداخلية
 
@@ -33,6 +33,8 @@ ms.locfileid: "65599580"
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+اطلع على [فيديو Microsoft Mechanics](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) حول كيفية عمل إدارة المخاطر الداخلية وتوافق الاتصالات معا للمساعدة في تقليل مخاطر البيانات من المستخدمين في مؤسستك.
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>العمل مع المساهمين في مؤسستك
 
@@ -57,7 +59,7 @@ ms.locfileid: "65599580"
 
 سوف تختار من بين خيارات مجموعة الأدوار وإجراءات الحل هذه عند العمل مع إدارة المخاطر الداخلية:
 
-|**الاجراءات**|**Insider Risk Management**|**مسؤول إدارة المخاطر من Insider**|**محللو إدارة المخاطر الداخلية**|**محققو إدارة المخاطر الداخلية**|**مدققو إدارة المخاطر من Insider**|
+|**الاجراءات**|**Insider Risk Management**|**مسؤول Insider Risk Management**|**محللو إدارة المخاطر الداخلية**|**محققو إدارة المخاطر الداخلية**|**مدققو إدارة المخاطر من Insider**|
 |:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
 | تكوين النهج والإعدادات | نعم | نعم | لا | لا | لا |
 | نتائج تحليلات Access | نعم | نعم | نعم | لا | لا |
@@ -68,9 +70,9 @@ ms.locfileid: "65599580"
 | عرض سجلات تدقيق التصدير & | نعم | لا | لا | لا | نعم |
 
 >[!IMPORTANT]
->تأكد من أن لديك دائما مستخدما واحدا على الأقل في مجموعات دور مسؤول إدارة *المخاطر في Insider* أو *Insider Risk Management* (اعتمادا على الخيار الذي تختاره) بحيث لا يصل تكوين إدارة المخاطر من الداخل إلى سيناريو "المسؤول الصفري" إذا غادر مستخدمون معينون مؤسستك.
+>تأكد من أن لديك دائما مستخدما واحدا على الأقل في مجموعات أدوار *Insider Risk Management* أو *Insider مسؤول risk Management (* اعتمادا على الخيار الذي تختاره) بحيث لا يصل تكوين إدارة المخاطر الداخلية إلى سيناريو "صفر مسؤول" إذا غادر مستخدمون معينون مؤسستك.
 
-يمكن لأعضاء الأدوار التالية تعيين مستخدمين لمجموعات أدوار إدارة المخاطر الداخلية ولديهم نفس أذونات الحل المضمنة في مجموعة دور *مسؤول إدارة المخاطر في Insider* :
+يمكن لأعضاء الأدوار التالية تعيين مستخدمين لمجموعات أدوار إدارة المخاطر الداخلية ولديهم نفس أذونات الحل المضمنة في مجموعة دور *Insider Risk Management مسؤول*:
 
 - *المسؤول العام* ل Azure Active Directory
 - *مسؤول توافق* Azure Active Directory
