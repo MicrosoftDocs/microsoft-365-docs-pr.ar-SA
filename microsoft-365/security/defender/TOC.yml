@@ -332,6 +332,12 @@
           items:
             - name: نظرة عامة
               href: defenderexpertsforhuntingprev.md
+        - name: أدلة مبادئ برامج الفدية الضارة
+          items:
+            - name: الكشف عن هجمات برامج الفدية الضارة التي يديرها الإنسان باستخدام Microsoft 365 Defender
+              href: playbook-detecting-ransomware-m365-defender.md
+            - name: الاستجابة لهجمات برامج الفدية الضارة
+              href: playbook-responding-ransomware-m365-defender.md
     - name: دليل عمليات الأمان
       items:
         - name: نظرة عامة
