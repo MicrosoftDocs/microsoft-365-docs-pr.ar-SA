@@ -394,6 +394,30 @@
           href: anti-spoofing-protection-faq.yml
         - name: الأسئلة المتداولة حول العزل
           href: quarantine-faq.yml
+    - name: أدلة خطوة بخطوة
+      items:
+        - name: (نتائج سلبية خاطئة) كيفية معالجة رسائل البريد الإلكتروني الضارة التي يتم تسليمها إلى المستلمين باستخدام Microsoft Defender لـ Office 365
+          href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
+        - name: (نتائج إيجابية خاطئة) كيفية معالجة رسائل البريد الإلكتروني المشروعة التي يتم منعها من التسليم باستخدام Microsoft Defender لـ Office 365
+          href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
+        - name: كيفية تكوين أذونات ونُهج العزل
+          href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+        - name: التأكد من حصولك دائماً على عناصر تحكم الأمان المُثلى باستخدام نُهج الأمان التي تم تعيينها مسبقاً
+          href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+        - name: كيفية تشغيل عمليات محاكاة الهجوم لفريقك
+          href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
+        - name: كيفية إعداد الهجمات التلقائية والتدريب ضمن التدريب على محاكاة الهجوم
+          href: step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
+        - name: تحسين نُهج الأمان وتصحيحها باستخدام محلل التكوين
+          href: step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
+        - name: حماية مجموعة c-suite الخاصة بك من خلال حماية الحساب ذي الأولوية
+          href: step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
+        - name: البحث عن رسائل البريد الإلكتروني ومعالجة المخاطر باستخدام مستكشف المخاطر في Microsoft 365 Defender
+          href: step-by-step-guides/search-for-emails-and-remediate-threats.md
+        - name: توصيل Microsoft Defender لـ Office 365 بـ Microsoft Sentinel
+          href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+        - name: كيفية تحديد أولويات عمليات الفحص والاستجابة التلقائيين (AIR) وإدارتهما
+          href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
     - name: المرجع
       items:
         - name: استبقاء بيانات Defender لـ Office 365
