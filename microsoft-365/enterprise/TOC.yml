@@ -158,8 +158,6 @@
                   href: microsoft-365-mailbox-utilization-service-alerts.md
                 - name: تنبيهات الخدمة للتأخيرات في مصدر MRS
                   href: microsoft-365-mrs-source-delays-service-alerts.md
-                - name: تنبيهات الخدمة للرسائل المدرجة في قائمة الانتظار للمستلمين الخارجيين
-                  href: microsoft-365-external-recipient-service-alerts.md
             - name: مراقبة تطبيقات Microsoft 365
               href: microsoft-365-apps-monitoring.md
             - name: مراقبة Microsoft 365 Teams

@@ -561,7 +561,7 @@
               href: view-the-dlp-reports.md
             - name: تشكيل استعلام للعثور على البيانات الحساسة المخزنة على المواقع
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-            - name: كيفية عمل DLP بين مركز الأمان ومركز إدارة Exchange
+            - name: كيفية عمل تفادي فقدان البيانات بين مدخل التوافق في Microsoft Purview ومركز إدارة Exchange
               href: how-dlp-works-between-admin-centers.md
             - name: تكوين التنبيهات وعرضها لنهج DLP (معاينة)
               href: dlp-configure-view-alerts-policies.md
