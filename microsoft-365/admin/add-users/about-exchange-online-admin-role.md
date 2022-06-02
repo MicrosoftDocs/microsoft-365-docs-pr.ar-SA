@@ -1,5 +1,5 @@
 ---
-title: حول دور مسؤول Exchange Online
+title: حول دور مسؤول Exchange
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,23 +21,24 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange Online يقوم المسؤولون بإدارة البريد الإلكتروني وعلب البريد الخاصة بالمؤسسة، وعلى سبيل المثال، استرداد العناصر المحذوفة في علبة بريد المستخدم.
-ms.openlocfilehash: 048a435a515c4f88eb688a2cfaf13006e859741c
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Exchange يقوم المسؤولون بإدارة البريد الإلكتروني وعلب البريد الخاصة بالمؤسسة، وعلى سبيل المثال، استرداد العناصر المحذوفة في علبة بريد المستخدم.
+ms.openlocfilehash: 375e2d6a1bf08ab310da28233deaf5dbbbae9be7
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467087"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65842246"
 ---
-# <a name="about-the-exchange-online-admin-role"></a>حول دور مسؤول Exchange Online
+# <a name="about-the-exchange-administrator-role"></a>حول دور مسؤول Exchange
 
-لمساعدتك على إدارة Microsoft 365، يمكنك [تعيين](assign-admin-roles.md) أذونات للمستخدمين لإدارة البريد الإلكتروني وعلب البريد الخاصة بالمؤسسة من <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>. يمكنك القيام بذلك عن طريق تعيينهم إلى دور مسؤول Exchange.
+لمساعدتك على إدارة Microsoft 365، يمكنك [تعيين](assign-admin-roles.md) أذونات للمستخدمين لإدارة البريد الإلكتروني وعلب البريد الخاصة بالمؤسسة من <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>. يمكنك القيام بذلك عن طريق تعيينها إلى دور مسؤول Exchange.
   
- **تلميح**: عند تعيين شخص ما لدور مسؤول Exchange، قم أيضا بتعيينه إلى دور مسؤول الخدمة. وبهذه الطريقة يمكنهم رؤية معلومات مهمة في مركز مسؤولي Microsoft 365، مثل حالة خدمة Exchange Online، وتغيير الإعلامات وإصدارها.
+> [!TIP]
+> عند تعيين شخص ما لدور مسؤول Exchange، نوصي بتعيينه إلى دور مسؤول دعم الخدمة. وبهذه الطريقة يمكنهم رؤية معلومات مهمة في مركز مسؤولي Microsoft 365، مثل حالة خدمة Exchange Online، وتغيير الإعلامات وإصدارها.
 
 فيما يلي بعض المهام الرئيسية التي يمكن للمستخدمين القيام بها عند تعيينهم إلى دور مسؤول Exchange:
   
-- [استرداد العناصر المحذوفة في علبة بريد مستخدم - تعليمات المسؤول](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
+- [استرداد العناصر المحذوفة في علبة بريد مستخدم - تعليمات مسؤول](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
 - [إعداد نهج الأرشفة والحذف لعلب البريد في مؤسستك](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md).
 

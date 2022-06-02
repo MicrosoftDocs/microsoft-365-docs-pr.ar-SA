@@ -204,7 +204,7 @@
               href: attack-simulation-training-get-started.md
             - name: محاكاة هجوم تصيد احتيالي مع تدريب محاكاة الهجوم
               href: attack-simulation-training.md
-            - name: إنشاء حمولات مخصصة لتدريب محاكاة الهجوم
+            - name: البيانات الأساسية لتدريب محاكاة الهجوم
               href: attack-simulation-training-payloads.md
             - name: أتمتة المحاكاة في التدريب على محاكاة الهجوم
               href: attack-simulation-training-simulation-automations.md
