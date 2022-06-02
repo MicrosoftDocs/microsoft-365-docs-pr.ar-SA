@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على كيفية إنشاء تنبيهات للأنشطة في Microsoft Purview Compliance Manager التي يمكن أن تؤثر على درجة التوافق الخاصة بك.
-ms.openlocfilehash: 32ab22f47d35d64fa72dcc4898f5fff06d20c13c
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: c69e56c693a2994a93b1faccfe6f69fa317d8390
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231720"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839416"
 ---
 # <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>تنبيهات Microsoft Purview Compliance Manager ونهج التنبيه
 
@@ -67,19 +67,19 @@ ms.locfileid: "65231720"
 
 يوضح الجدول أدناه المستخدمين الذين يمكنهم إنشاء التنبيهات ونهج التنبيه وتحريرها استنادا إلى نوع دورهم. بالإضافة إلى شغل دور Compliance Manager، يحتاج المستخدمون أيضا إلى دور Azure AD كما يلي:
 
-- دور **قارئ الأمان** في Azure AD لعرض التنبيهات ونهج التنبيه
-- دور **مسؤول الأمان** في Azure AD لإنشاء نهج التنبيه أو تحديثها
+- لعرض التنبيهات ونهج التنبيه: دور **قارئ الأمان** في Azure AD
+- لإنشاء نهج التنبيه أو تحديثها: **مسؤول التوافق** أو **مسؤول بيانات التوافق** أو **مسؤول الأمان** أو دور **عامل تشغيل الأمان** في Azure AD
  
-تعرف على المزيد حول [أدوار Azure في مدخل توافق Microsoft Purview](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
+تعرف على المزيد حول [أدوار Azure في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal).
 
 
 | دور | يمكن إنشاء النهج وتحريرها | يمكن تحرير التنبيهات | 
 | :------------- | :-------------: | :------------: |
 | **إدارة إدارة التوافق**| نعم  | نعم | 
 | **تقييم إدارة التوافق**| نعم | نعم | 
-| **مساهمة مدير الامتثال**| نعم | نعم | 
-| **المسؤول العام**| نعم | نعم  | 
+| **مساهم في Compliance Manager**| نعم | نعم | 
 | **قارئ إدارة التوافق**| لا | لا | 
+| **المسؤول العام**| نعم | نعم | 
 
 تعرف على كيفية [تعيين أذونات المستخدم وتعيين أدوار ل Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
@@ -105,7 +105,7 @@ ms.locfileid: "65231720"
 
 - مستوى خطورة هذه التنبيهات **متوسط**.
 
-- المسؤول العام لمؤسستك هو المستلم الافتراضي لإعلامات التنبيه.
+- إن مسؤول العمومي لمؤسستك هو المستلم الافتراضي لإعلامات التنبيه.
 
 - يمكنك إضافة المزيد من مستلمي التنبيه باتباع الخطوات التالية:
     - في صفحة **نهج التنبيه** ، ابحث عن **نهج التنبيه الافتراضي ل Compliance Manager**.

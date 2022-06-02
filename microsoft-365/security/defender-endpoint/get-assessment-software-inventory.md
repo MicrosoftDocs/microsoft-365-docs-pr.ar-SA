@@ -1,7 +1,7 @@
 ---
 title: تصدير تقييم مخزون البرامج لكل جهاز
 description: إرجاع جدول مع إدخال لكل مجموعة فريدة من DeviceId و SoftwareVendor و SoftwareName و SoftwareVersion.
-keywords: api، apis، تقييم التصدير، تقييم كل جهاز، تقرير تقييم الضعف، تقييم ضعف الجهاز، تقرير ضعف الجهاز، تقييم التكوين الآمن، تقرير التكوين الآمن، تقييم الثغرات في البرامج، تقرير ثغرة البرامج، تقرير الضعف حسب الجهاز،
+keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4c3464a3aec242bd098503ac5bca997943ac2a4a
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 296b977452802d8e1ed8949cf6a8871cac171f3a
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63574330"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839983"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>تصدير تقييم مخزون البرامج لكل جهاز
 
@@ -28,89 +28,90 @@ ms.locfileid: "63574330"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-تحصل مكالمات API المختلفة على أنواع مختلفة من البيانات. نظرا لأن كمية البيانات يمكن أن تكون كبيرة، هناك طريقتان يمكن استردادها:
+تحصل استدعاءات واجهة برمجة التطبيقات المختلفة على أنواع مختلفة من البيانات. نظرا لأن كمية البيانات يمكن أن تكون كبيرة، هناك طريقتان يمكن استردادها:
 
-- [استجابة **JSON** لتقييم مخزون البرامج](#1-export-software-inventory-assessment-json-response) تسحب API كل البيانات في مؤسستك كاستجابات Json. هذا الأسلوب هو الأفضل بالنسبة _إلى المؤسسات الصغيرة التي تستخدم أقل من 100 جهاز K_. تم ربط الاستجابة، \@بحيث يمكنك استخدام الحقل odata.nextLink من الاستجابة للحصول على النتائج التالية.
+- [تصدير **استجابة JSON** لتقييم مخزون البرامج](#1-export-software-inventory-assessment-json-response) تسحب واجهة برمجة التطبيقات جميع البيانات في مؤسستك كاستجابات Json. هذا الأسلوب هو الأفضل _للمؤسسات الصغيرة التي تحتوي على أقل من 100 كيلوبايت_. الاستجابة مرقمة الصفحات، بحيث يمكنك استخدام \@حقل odata.nextLink من الاستجابة لإحضار النتائج التالية.
 
-- [تصدير تقييم مخزون البرامج **عبر الملفات**](#2-export-software-inventory-assessment-via-files)  يمكن حل API هذا سحب كميات أكبر من البيانات بشكل أسرع وأكثر موثوقية. لذلك، يوصى به بالنسبة إلى المؤسسات الكبيرة، التي بها أكثر من 100 جهاز K. تسحب API هذه كل البيانات في مؤسستك كملفات تنزيل. تحتوي الاستجابة على عناوين URL لتنزيل كل البيانات من Azure Storage. تمكنك API هذه من تنزيل كل بياناتك من Azure Storage كما يلي:
-  - اتصل ب API للحصول على قائمة عناوين URL للتنزيل مع كل بيانات مؤسستك.
-  - قم بتنزيل كل الملفات باستخدام عناوين URL للتنزيل و معالجة البيانات كما تريد.
+- [تصدير تقييم مخزون البرامج **عبر الملفات**](#2-export-software-inventory-assessment-via-files)  يتيح حل واجهة برمجة التطبيقات هذا سحب كميات أكبر من البيانات بشكل أسرع وأكثر موثوقية. لذلك، يوصى به للمؤسسات الكبيرة، مع أكثر من 100 كيلوبايت من الأجهزة. تسحب واجهة برمجة التطبيقات هذه جميع البيانات في مؤسستك كملفات تنزيل. تحتوي الاستجابة على عناوين URL لتنزيل جميع البيانات من Azure Storage. تمكنك واجهة برمجة التطبيقات هذه من تنزيل جميع بياناتك من Azure Storage كما يلي:
+  - اتصل بواجهة برمجة التطبيقات للحصول على قائمة بتنزيل عناوين URL مع جميع بيانات مؤسستك.
+  - قم بتنزيل جميع الملفات باستخدام عناوين URL التنزيل ومعالجة البيانات كما تريد.
 
-البيانات التي يتم تجميعها (باستخدام استجابة _Json_ أو _عبر_ الملفات) هي اللقطة الحالية من الحالة الحالية. ولا تحتوي على بيانات تاريخية. لتجميع البيانات التاريخية، يجب على العملاء حفظ البيانات في مخازن البيانات الخاصة بهم.
+البيانات التي يتم جمعها (باستخدام _استجابة Json_ أو _عبر الملفات_) هي اللقطة الحالية للحالة الحالية. لا يحتوي على بيانات تاريخية. لجمع البيانات التاريخية، يجب على العملاء حفظ البيانات في مخازن البيانات الخاصة بهم.
 
 > [!NOTE]
-> ما لم يشار إلى خلاف ذلك، تكون كل أساليب تقييم التصدير **** المدرجة تصديرا كاملا حسب **_الجهاز (يشار_** إليه أيضا **_بكل جهاز_**).
+> ما لم تتم الإشارة إلى خلاف ذلك، فإن جميع أساليب تقييم التصدير المدرجة هي **_التصدير الكامل_** **_والجهاز_** (يشار إليها أيضا **_حسب الجهاز_**).
 
-## <a name="1-export-software-inventory-assessment-json-response"></a>1. تقييم مخزون البرامج (استجابة JSON)
+## <a name="1-export-software-inventory-assessment-json-response"></a>1. تصدير تقييم مخزون البرامج (استجابة JSON)
 
-### <a name="11-api-method-description"></a>وصف أسلوب 1.1 API
+### <a name="11-api-method-description"></a>وصف أسلوب واجهة برمجة التطبيقات 1.1
 
-تحتوي استجابة API هذه على كل بيانات البرامج المثبتة لكل جهاز. إرجاع جدول مع إدخال لكل مجموعة فريدة من DeviceId و SoftwareVendor و SoftwareName و SoftwareVersion.
+تحتوي استجابة واجهة برمجة التطبيقات هذه على جميع بيانات البرامج المثبتة لكل جهاز. إرجاع جدول مع إدخال لكل مجموعة فريدة من DeviceId و SoftwareVendor و SoftwareName و SoftwareVersion.
 
 #### <a name="limitations"></a>القيود
 
-- الحد الأقصى لحجم الصفحة هو 200000.
-- قيود السعر ل API هذه هي 30 مكالمة في الدقيقة و1000 مكالمة في الساعة.
+- الحد الأقصى لحجم الصفحة هو 200,000.
+- قيود المعدل لواجهة برمجة التطبيقات هذه هي 30 مكالمة في الدقيقة و1000 مكالمة في الساعة.
 
-### <a name="12-permissions"></a>1.2 الأذونات
+### <a name="12-permissions"></a>1.2 أذونات
 
-أحد الأذونات التالية مطلوبة لاستدعاء API هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام Microsoft Defender ل واجهات برمجة تطبيقات نقطة النهاية للحصول على التفاصيل.](apis-intro.md)
+أحد الأذونات التالية مطلوب لاستدعاء واجهة برمجة التطبيقات هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية للحصول على التفاصيل.](apis-intro.md)
 
-نوع الإذن|الإذن|اسم عرض الأذونات
+نوع الإذن|اذن|اسم عرض الإذن
 ---|---|---
-Application|Software.read.All|\'قراءة معلومات ضعف إدارة المخاطر والضعف\'
-مفوض (حساب العمل أو المدرسة)|Software.Read|\'قراءة معلومات ضعف إدارة المخاطر والضعف\'
+Application|Software.Read.All|\'قراءة معلومات الثغرة الأمنية لإدارة المخاطر والثغرات الأمنية\'
+مفوض (حساب العمل أو المؤسسة التعليمية)|Software.Read|\'قراءة معلومات الثغرة الأمنية لإدارة المخاطر والثغرات الأمنية\'
 
-### <a name="13-url"></a>1.3 URL
+### <a name="13-url"></a>URL 1.3
 
 ```http
 GET /api/machines/SoftwareInventoryByMachine
 ```
 
-### <a name="14-parameters"></a>1.4 المعلمات
+### <a name="14-parameters"></a>1.4 معلمات
 
-- pageSize (افتراضي = 50000): عدد النتائج في الاستجابة.
-- $top: عدد النتائج التي يجب إرجاعها (لا يتم إرجاع @odata.nextLink وبالتالي لا يسحب كل البيانات)
+- حجم الصفحة (الافتراضي = 50,000): عدد النتائج في الاستجابة.
+- $top: عدد النتائج التي سيتم إرجاعها (لا ترجع @odata.nextLink وبالتالي لا تسحب كافة البيانات)
 
 ### <a name="15-properties"></a>1.5 خصائص
 
 > [!NOTE]
 >
-> - يبلغ عدد البيانات في كل سجل 0,5KB تقريبا. يجب أن تأخذ هذا في الاعتبار عند اختيار المعلمة حجم الصفحة الصحيحة لك.
-> - يتم سرد الخصائص المعرفة في الجدول التالي أبجديا، حسب معرف الخاصية. عند تشغيل API هذه، لن يتم بالضرورة إرجاع الإخراج الناتج بنفس الترتيب المدرج في هذا الجدول.
+> - كل سجل هو حوالي 0.5 كيلوبايت من البيانات. يجب أن تأخذ هذا في الاعتبار عند اختيار معلمة حجم الصفحة الصحيحة لك.
+> - يتم سرد الخصائص المعرفة في الجدول التالي أبجديا، حسب معرف الخاصية. عند تشغيل واجهة برمجة التطبيقات هذه، لن يتم بالضرورة إرجاع الإخراج الناتج بنفس الترتيب المدرج في هذا الجدول.
 > - قد يتم إرجاع بعض الأعمدة الإضافية في الاستجابة. هذه الأعمدة مؤقتة وقد تتم إزالتها، يرجى استخدام الأعمدة الموثقة فقط.
 
 <br>
 
 ****
 
-الخاصية (الم ID)|نوع البيانات|الوصف|مثال لقيمة تم إرجاعها
+الخاصية (المعرف)|نوع البيانات|الوصف|مثال لقيمة مرجعة
 :---|:---|:---|:---
-DeviceId|سلسلة|معرف فريد للجهاز في الخدمة.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|سلسلة|اسم المجال المؤهل بالكامل (FQDN) للجهاز.|johnlaptop.europe.contoso.com
-DiskPaths|Array[string]|دليل القرص على أن المنتج مثبت على الجهاز.|[ "C:\\ ملفات البرامج (x86)\\MicrosoftSilverlightApplication\\\\silverlight.exe\\" ]
-EndOfSupportDate|سلسلة|تاريخ انتهاء أو انتهاء دعم هذا البرنامج.|2020-12-30
-EndOfSupportStatus|سلسلة|نهاية حالة الدعم. يمكن أن يحتوي على هذه القيم المحتملة: بلا، إصدار EOS، إصدار EOS القادم، برامج EOS، برامج EOS القادمة.|EOS القادم
-الم ID|سلسلة|معرف فريد للسجل.|123ABG55_573AG&mnp!
-NumberOfWeaknesses|int|عدد نقاط الضعف في هذا البرنامج على هذا الجهاز|3
-OSPlatform|سلسلة|النظام الأساسي لنظام التشغيل الذي يتم تشغيله على الجهاز. هذه هي أنظمة تشغيل محددة ذات تباينات داخل العائلة نفسها، مثل Windows 10 Windows 11. راجع أنظمة التشغيل و الأنظمة الأساسية المدعومة من tvm للحصول على التفاصيل.|Windows10 Windows 11
-RbacGroupName|سلسلة|مجموعة التحكم بالوصول المستند إلى الدور (RBAC). إذا لم يتم تعيين هذا الجهاز إلى أي مجموعة RBAC، ستكون القيمة "غير معين". إذا لم تحتوي المؤسسة على أي من مجموعات RBAC، ستكون القيمة "بلا".|الخوادم
-RegistryPaths|Array[string]|دليل التسجيل على أن المنتج مثبت على الجهاز.|[ "HKEY_LOCAL_MACHINE\\ SOFTWAREWOW6432NodeMicrosoft\\\\\\ Windows\\ CurrentVersionUninstallMicrosoft\\\\ Silverlight" ]
-SoftwareFirstSeenTimestamp|سلسلة|في المرة الأولى التي يتم فيها رؤية هذا البرنامج على الجهاز.|2019-04-07 02:06:47
-SoftwareName|سلسلة|اسم منتج البرنامج.|Silverlight
-SoftwareVendor|سلسلة|اسم مورد البرامج.|microsoft
-SoftwareVersion|سلسلة|رقم إصدار منتج البرنامج.|81.0.4044.138
+معرف الجهاز|سلسله|معرف فريد للجهاز في الخدمة.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+اسم الجهاز|سلسله|اسم المجال المؤهل بالكامل (FQDN) للجهاز.|johnlaptop.europe.contoso.com
+DiskPaths|Array[string]|دليل القرص على تثبيت المنتج على الجهاز.|[ "ج:\\ Program Files (x86)\\Microsoft\\Silverlight\\Application\\silverlight.exe" ]
+EndOfSupportDate|سلسله|التاريخ الذي سينتهي فيه دعم هذا البرنامج أو سينتهي.|2020-12-30
+EndOfSupportStatus|سلسله|حالة نهاية الدعم. يمكن أن تحتوي على هذه القيم المحتملة: None، وإصدار EOS، وإصدار EOS القادم، وبرامج EOS، وبرامج EOS القادمة.|EOS القادم
+معرف|سلسله|معرف فريد للسجل.|123ABG55_573AG&mnp!
+NumberOfWeaknesses|الباحث|عدد نقاط الضعف في هذا البرنامج على هذا الجهاز|3
+OSPlatform|سلسله|نظام أساسي لنظام التشغيل الذي يعمل على الجهاز. هذه هي أنظمة تشغيل محددة مع اختلافات داخل نفس العائلة، مثل Windows 10 Windows 11. راجع أنظمة التشغيل والأنظمة الأساسية المدعومة من tvm للحصول على التفاصيل.|Windows10 و Windows 11
+RbacGroupName|سلسله|مجموعة التحكم في الوصول استنادا إلى الدور (RBAC). إذا لم يتم تعيين هذا الجهاز إلى أي مجموعة RBAC، فسيتم "إلغاء تعيين القيمة". إذا لم تتضمن المؤسسة أي مجموعات RBAC، فستكون القيمة "بلا".|الخوادم
+RegistryPaths|Array[string]|دليل التسجيل على تثبيت المنتج في الجهاز.|[ "HKEY_LOCAL_MACHINE\\ SOFTWARE\\WOW6432Node\\Microsoft\\ Windows\\ CurrentVersion\\Uninstall\\Microsoft Silverlight" ]
+طابع SoftwareFirstSeenTimestamp|سلسله|في المرة الأولى التي ظهر فيها هذا البرنامج على الجهاز.|2019-04-07 02:06:47
+اسم البرنامج|سلسله|اسم منتج البرنامج.|سلفرليغت
+برنامجVendor|سلسله|اسم مورد البرامج.|Microsoft
+SoftwareVersion|سلسله|رقم إصدار منتج البرنامج.|81.0.4044.138
 |
 
 ### <a name="16-examples"></a>1.6 أمثلة
 
-#### <a name="161-request-example"></a>1.6.1 مثال على طلب
+#### <a name="161-request-example"></a>مثال على طلب 1.6.1
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMachine?pageSize=5  &sinceTime=2021-05-19T18%3A35%3A49.924Z
@@ -212,54 +213,54 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
 
 ## <a name="2-export-software-inventory-assessment-via-files"></a>2. تصدير تقييم مخزون البرامج (عبر الملفات)
 
-### <a name="21-api-method-description"></a>وصف أسلوب API 2.1
+### <a name="21-api-method-description"></a>وصف أسلوب واجهة برمجة التطبيقات 2.1
 
-تحتوي استجابة API هذه على كل بيانات البرامج المثبتة لكل جهاز. إرجاع جدول مع إدخال لكل مجموعة فريدة من DeviceId و SoftwareVendor و SoftwareName و SoftwareVersion.
+تحتوي استجابة واجهة برمجة التطبيقات هذه على جميع بيانات البرامج المثبتة لكل جهاز. إرجاع جدول مع إدخال لكل مجموعة فريدة من DeviceId و SoftwareVendor و SoftwareName و SoftwareVersion.
 
 #### <a name="211-limitations"></a>2.1.1 القيود
 
-قيود السعر ل API هذه هي 5 مكالمات في الدقيقة و20 مكالمة في الساعة.
+قيود المعدل لواجهة برمجة التطبيقات هذه هي 5 مكالمات في الدقيقة و20 مكالمة في الساعة.
 
-### <a name="22-permissions"></a>2.2 الأذونات
+### <a name="22-permissions"></a>2.2 أذونات
 
-أحد الأذونات التالية مطلوبة لاستدعاء API هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام Microsoft Defender ل واجهات برمجة تطبيقات نقطة النهاية للحصول على التفاصيل.](apis-intro.md)
+أحد الأذونات التالية مطلوب لاستدعاء واجهة برمجة التطبيقات هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية للحصول على التفاصيل.](apis-intro.md)
 
-نوع الإذن|الإذن|اسم عرض الأذونات
+نوع الإذن|اذن|اسم عرض الإذن
 ---|---|---
-Application|Software.read.All|\'قراءة معلومات ضعف إدارة المخاطر والضعف\'
-مفوض (حساب العمل أو المدرسة)|Software.Read|\'قراءة معلومات ضعف إدارة المخاطر والضعف\'
+Application|Software.Read.All|\'قراءة معلومات الثغرة الأمنية لإدارة المخاطر والثغرات الأمنية\'
+مفوض (حساب العمل أو المؤسسة التعليمية)|Software.Read|\'قراءة معلومات الثغرة الأمنية لإدارة المخاطر والثغرات الأمنية\'
 
-### <a name="23-url"></a>2.3 URL
+### <a name="23-url"></a>URL 2.3
 
 ```http
 GET /api/machines/SoftwareInventoryExport
 ```
 
-### <a name="parameters"></a>المعلمات
+### <a name="parameters"></a>معلمات
 
-- sasValidHours: عدد الساعات التي ستكون عناوين URL للتنزيل صالحة لمدة (24 ساعة كحد أقصى)
+- sasValidHours: عدد الساعات التي ستكون فيها عناوين URL للتنزيل صالحة لمدة (24 ساعة كحد أقصى)
 
 ### <a name="25-properties"></a>2.5 خصائص
 
 > [!NOTE]
 >
-> - يتم ضغط الملفات بتنسيق gzip & بتنسيق JSON متعدد الخطوط.
-> - عناوين URL للتنزيل صالحة فقط لمدة 3 ساعات. وبخلاف ذلك، يمكنك استخدام المعلمة.
-> - للحصول على أقصى سرعة تنزيل لبياناتك، يمكنك التأكد من أنك تقوم بالتحميل من منطقة Azure نفسها التي تقيم فيها بياناتك.
+> - الملفات مضغوطة & بتنسيق JSON متعدد الأسطر.
+> - عناوين URL للتنزيل صالحة لمدة 3 ساعات فقط. وإلا يمكنك استخدام المعلمة.
+> - للحصول على أقصى سرعة تنزيل لبياناتك، يمكنك التأكد من أنك تقوم بتنزيل البيانات من نفس منطقة Azure الموجودة بها.
 
 <br>
 
 ****
 
-الخاصية (الم ID)|نوع البيانات|الوصف|مثال لقيمة تم إرجاعها
+الخاصية (المعرف)|نوع البيانات|الوصف|مثال لقيمة مرجعة
 :---|:---|:---|:---
-تصدير الملفات|arraystring\[\]|قائمة عناوين URL للتنزيل للملفات التي تحمل اللقطة الحالية الخاصة بالمنظمة|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|سلسلة|الوقت الذي تم فيه إنشاء التصدير.|2021-05-20T08:00:00Z
+تصدير الملفات|سلسلة الصفيف\[\]|قائمة بتنزيل عناوين URL للملفات التي تحمل اللقطة الحالية للمؤسسة|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
+تاريخ الإنشاء|سلسله|الوقت الذي تم فيه إنشاء التصدير.|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 أمثلة
 
-#### <a name="261-request-example"></a>2.6.1 مثال على طلب
+#### <a name="261-request-example"></a>مثال على طلب 2.6.1
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExport
@@ -282,10 +283,10 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 ## <a name="see-also"></a>راجع أيضًا
 
 - [تصدير أساليب التقييم وخصائصه لكل جهاز](get-assessment-methods-properties.md)
-- [تصدير تقييم تكوين آمن لكل جهاز](get-assessment-secure-config.md)
-- [تقييم نقاط الضعف في البرامج لكل جهاز](get-assessment-software-vulnerabilities.md)
+- [تصدير تقييم التكوين الآمن لكل جهاز](get-assessment-secure-config.md)
+- [تصدير تقييم الثغرات الأمنية للبرامج لكل جهاز](get-assessment-software-vulnerabilities.md)
 
 أخرى ذات صلة
 
-- [المخاطر المستندة إلى المخاطر & إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
-- [نقاط الضعف في مؤسستك](tvm-weaknesses.md)
+- [& إدارة الثغرات الأمنية المخاطر المستندة إلى المخاطر](next-gen-threat-and-vuln-mgt.md)
+- [الثغرات الأمنية في مؤسستك](tvm-weaknesses.md)

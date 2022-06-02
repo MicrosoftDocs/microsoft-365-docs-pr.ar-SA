@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 84304d120f5822d91adc99c86e2c22c0cfb6790c
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 02017a614544cfb10eb43d375212fc7e37124ad3
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789905"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840376"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>حماية المجلدات المهمة باستخدام الوصول المتحكم به إلى المجلدات
 
@@ -30,7 +30,7 @@ ms.locfileid: "64789905"
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -77,6 +77,8 @@ ms.locfileid: "64789905"
 
 - [Windows 10، الإصدار 1709 والإصدارات](/windows/whats-new/whats-new-windows-10-version-1709) الأحدث
 - Windows 11
+- Windows 2012 R2
+- Windows 2016
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - Windows Server 2022
 
@@ -145,7 +147,7 @@ DeviceEvents
 يمكنك استخدام تطبيق أمن Windows لعرض قائمة المجلدات المحمية بالوصول إلى المجلدات التي يتم التحكم فيها.
 
 1. على جهازك Windows 10 أو Windows 11، افتح تطبيق أمن Windows.
-2. حدد **الحماية من التهديدات & الفيروسات**.
+2. حدد **الحماية من الفيروسات والمخاطر**.
 3. ضمن **الحماية من برامج الفدية الضارة**، حدد **إدارة الحماية من برامج الفدية الضارة**.
 4. إذا تم إيقاف تشغيل الوصول إلى المجلد الذي يتم التحكم فيه، فستحتاج إلى تشغيله. حدد **المجلدات المحمية**.
 5. قم بتنفيذ أحد الخطوتين التاليين:

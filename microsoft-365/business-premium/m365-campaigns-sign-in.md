@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: سجل الدخول إلى Microsoft 365. قم بحماية عملك أو تدريبك أو حملتك من تهديدات الأمان عبر الإنترنت للبريد الإلكتروني والبيانات والاتصالات.
-ms.openlocfilehash: 4203abe638c15978ac4acd753fdeb6a83ba5920d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c0decc886b30ba63d67e7927c0655e1980a47a57
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099840"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839569"
 ---
 # <a name="sign-in-to-microsoft-365-business-premium"></a>تسجيل الدخول إلى Microsoft 365 Business Premium
 
@@ -40,7 +40,7 @@ ms.locfileid: "65099840"
 
 2. في المستعرض، انتقل إلى مركز مسؤولي Microsoft 365 في <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
-3. اكتب اسم المستخدم وكلمة المرور. حدد **تسجيل الدخول**.
+3. اكتب اسم المستخدم وكلمة المرور، ثم حدد **تسجيل الدخول**.
 
 4. في الجزء العلوي الأيسر من الصفحة، ابحث عن **المعاينة على** عنصر التحكم. حدد **"معاينة** " حتى تتمكن من استخدام جميع عناصر التحكم الموضحة في [الحماية من المخاطر لحملتك](m365-campaigns-security-overview.md).
 
@@ -48,7 +48,7 @@ ms.locfileid: "65099840"
 
 يمكن للمستخدمين الذين تمت إضافتهم إلى اشتراكك في Microsoft 365 for Campaigns (أو Microsoft 365 Business Premium) تسجيل الدخول باتباع الخطوات التالية:
 
-1. الانتقال إل <a href="https://office.com" target="_blank">https://Office.com</a>
+1. الانتقال إل <a href="https://office.com" target="_blank">https://office.com</a>
 
 2. سجل الدخول باستخدام اسم المستخدم وكلمة المرور للحساب. سيكون لدى المستخدمين هذه المعلومات في البريد الإلكتروني الذي يجب أن يتلقوه عند إضافتهم كمستخدمين. إذا لم يتمكنوا من العثور على البريد الإلكتروني، فراجع [أنني شاركت دعوة بالبريد الإلكتروني ولكن المستخدم لم يتلق البريد الإلكتروني](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 

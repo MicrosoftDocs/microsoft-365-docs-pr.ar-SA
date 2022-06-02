@@ -1,6 +1,6 @@
 ---
 title: أساليب وخصائص نشاط الإصلاح
-description: تحتوي استجابة API على تهديدات & إدارة الثغرات الأمنية المعالجة التي تم إنشاؤها في المستأجر. يمكنك طلب كل أنشطة الإصلاح أو نشاط إصلاح واحد فقط أو معلومات حول الأجهزة التي يتم عرضها لمهمة إصلاح محددة.
+description: تحتوي استجابة واجهة برمجة التطبيقات على أنشطة معالجة & إدارة الثغرات الأمنية التهديد التي تم إنشاؤها في المستأجر الخاص بك. يمكنك طلب جميع أنشطة المعالجة أو نشاط معالجة واحد فقط أو معلومات حول الأجهزة المكشوفة لمهمة معالجة محددة.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation methods, remediation properties,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 124a44f6a04e4e4e77d80ac91ed4da169e2a4aae
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 14f57d6590d580e0145abc2da788f184c88a721e
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "63574278"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840244"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>أساليب وخصائص نشاط الإصلاح
 
@@ -28,10 +28,11 @@ ms.locfileid: "63574278"
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
@@ -39,59 +40,59 @@ ms.locfileid: "63574278"
 
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
-تحتوي استجابة API على [& إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md) إصلاح المخاطر التي تم إنشاؤها في المستأجر.
+تحتوي استجابة واجهة برمجة التطبيقات على أنشطة معالجة [& إدارة الثغرات الأمنية التهديد](next-gen-threat-and-vuln-mgt.md) التي تم إنشاؤها في المستأجر الخاص بك.
 
-## <a name="methods"></a>الأساليب
+## <a name="methods"></a>اساليب
 
-الأسلوب|نوع البيانات|الوصف
+الاسلوب|نوع البيانات|الوصف
 :---|:---|:---
-[سرد كل أنشطة الإصلاح](get-remediation-all-activities.md)|مجموعة التحقيق|إرجاع معلومات حول كل أنشطة الإصلاح.
-[سرد الأجهزة التي تم عرضها لنشاط إصلاحي واحد](get-remediation-exposed-devices-activities.md)|كيان التحقيق|إرجاع معلومات حول الأجهزة التي يتم عرضها لنشاط الإصلاح المحدد.
-[الحصول على نشاط إصلاحي واحد بواسطة الم ID](get-remediation-one-activity.md)|كيان التحقيق|إرجاع معلومات لنشاط الإصلاح المحدد.
+[سرد كل أنشطة المعالجة](get-remediation-all-activities.md)|مجموعة التحقيق|إرجاع معلومات حول كافة أنشطة المعالجة.
+[سرد الأجهزة التي تم عرضها لنشاط معالجة واحد](get-remediation-exposed-devices-activities.md)|كيان التحقيق|إرجاع معلومات حول الأجهزة المكشوفة لنشاط المعالجة المحدد.
+[الحصول على نشاط معالجة واحد بواسطة المعرّف](get-remediation-one-activity.md)|كيان التحقيق|إرجاع معلومات لنشاط المعالجة المحدد.
 
-تعرف على المزيد [حول أنشطة الإصلاح](tvm-remediation.md).
+تعرف على المزيد حول [أنشطة المعالجة](tvm-remediation.md).
 
-## <a name="properties"></a>الخصائص
+## <a name="properties"></a>خصائص
 
-"معرّف الخاصية"|نوع البيانات|الوصف
+معرف الخاصية|نوع البيانات|الوصف
 :---|:---|:---
-الفئة|سلسلة|فئة نشاط الإصلاح (تكوين البرامج/الأمان)
-completerEmail|سلسلة|إذا تم إكمال نشاط المعالجة يدويا من قبل شخص ما، فإن هذا العمود يحتوي على بريده الإلكتروني
-completerId|سلسلة|إذا تم إكمال نشاط المعالجة يدويا من قبل شخص ما، فإن هذا العمود يحتوي على "معروض الكائن" الخاص به
-completionMethod|سلسلة|يمكن إكمال نشاط المعالجة "تلقائيا" (إذا تم تصحيح جميع الأجهزة) أو "يدويا" من قبل شخص يقوم بتحديد "وضع علامة كمكتملة".
-createdOn|DateTime|الوقت الذي تم فيه إنشاء نشاط الإصلاح هذا
-الوصف|سلسلة|وصف لنشاط الإصلاح هذا
-dueOn|DateTime|تاريخ الاستحقاق الذي حدده المبدع لنشاط الإصلاح هذا
-fixedDevices||عدد الأجهزة التي تم إصلاحها
-الم ID|سلسلة|الم ID الخاص بنشاط الإصلاح هذا
-nameId|سلسلة|اسم المنتج ذي الصلة
-الأولوية|سلسلة|أولوية مجموعة المبدعين لنشاط الإصلاح هذا (High\Medium\Low)
-productId|سلسلة|"معرّف المنتج ذي الصلة"
-productivityImpactRemediationType|سلسلة|يمكن طلب بعض تغييرات التكوين فقط للأجهزة التي لا تؤثر على المستخدمين. تشير هذه القيمة إلى التحديد بين "جميع الأجهزة المعرضة" أو "الأجهزة التي لا تؤثر على المستخدم فقط".
-rbacGroupNames|سلسلة|أسماء مجموعة الأجهزة ذات الصلة
-المستحسنProgram|سلسلة|البرنامج المستحسن للترقية إلى
-recommendedVendor|سلسلة|المورد المستحسن للترقية إلى
-recommendedVersion|سلسلة|الإصدار المستحسن للتحديث/الترقية إلى
-relatedComponent|سلسلة|المكون ذو الصلة لنشاط الإصلاح هذا (مماثل للمكون ذي الصلة لتوصية الأمان)
-requesterEmail|سلسلة|عنوان البريد الإلكتروني "منشئ"
-requesterId|سلسلة|"معر ة كائن منشئ"
-requesterNotes|سلسلة|الملاحظات (نص مجاني) التي أضافها المبدع لنشاط الإصلاح هذا
+الفئة|سلسلة|فئة نشاط المعالجة (تكوين البرامج/الأمان)
+completerEmail|سلسلة|إذا قام شخص ما بإكمال نشاط المعالجة يدويا، فإن هذا العمود يحتوي على بريده الإلكتروني
+معرف الإكمال|سلسلة|إذا تم إكمال نشاط المعالجة يدويا من قبل شخص ما، فإن هذا العمود يحتوي على معرف الكائن
+CompletionMethod|سلسلة|يمكن إكمال نشاط المعالجة "تلقائيا" (إذا تم تصحيح جميع الأجهزة) أو "يدويا" بواسطة شخص يحدد "وضع علامة كمكتمل".
+createdOn|Datetime|وقت إنشاء نشاط المعالجة هذا
+الوصف|سلسلة|وصف نشاط المعالجة هذا
+تاريخ الاستحقاق|Datetime|تاريخ الاستحقاق الذي عينه المنشئ لنشاط المعالجة هذا
+fixedDevices||عدد الأجهزة التي تم تصحيحها
+المعرّف|سلسلة|معرف نشاط المعالجة هذا
+معرف الاسم|سلسلة|اسم المنتج ذي الصلة
+الاولويه|سلسلة|الأولوية التي عينها المنشئ لنشاط المعالجة هذا (عالي\متوسط\منخفض)
+Productid|سلسلة|معرف المنتج ذي الصلة
+productivityImpactRemediationType|سلسلة|يمكن طلب بعض تغييرات التكوين فقط للأجهزة التي لا تؤثر على المستخدمين. تشير هذه القيمة إلى التحديد بين "كافة الأجهزة المكشوفة" أو "الأجهزة التي لا تؤثر على المستخدم فقط".
+rbacGroupNames|سلسلة|أسماء مجموعات الأجهزة ذات الصلة
+مخطط موصى به|سلسلة|البرنامج الموصى به للترقية إلى
+RecommendedVendor|سلسلة|المورد الموصى به للترقية إلى
+recommendedVersion|سلسلة|الإصدار الموصى به للتحديث/الترقية إليه
+الحوسبة ذات الصلة|سلسلة|المكون ذي الصلة لنشاط المعالجة هذا (على غرار المكون ذي الصلة لتوصية الأمان)
+requesterEmail|سلسلة|عنوان البريد الإلكتروني لمنشئ
+معرف الطالب|سلسلة|معرف كائن المنشئ
+requesterNotes|سلسلة|الملاحظات (النص المجاني) التي أضافها المنشئ لنشاط المعالجة هذا
 Scid|سلسلة|SCID لتوصية الأمان ذات الصلة
-الحالة|سلسلة|حالة نشاط المعالجة (نشط/مكتمل)
-statusLastModifiedOn|DateTime|تاريخ تحديث حقل الحالة
-targetDevices|طويل|عدد الأجهزة التي يتم عرضها التي ينطبق هذا الإصلاح على
-العنوان|سلسلة|عنوان نشاط الإصلاح هذا
-النوع|سلسلة|نوع المعالجة
-موردمزيد|سلسلة|اسم المورد ذي الصلة
+حاله|سلسلة|حالة نشاط المعالجة (نشط/مكتمل)
+statusLastModifiedOn|Datetime|تاريخ تحديث حقل الحالة
+targetDevices|طويله|عدد الأجهزة المكشوفة التي تنطبق عليها هذه المعالجة
+عنوان|سلسلة|عنوان نشاط المعالجة هذا
+نوع|سلسلة|نوع المعالجة
+معرف المورد|سلسلة|اسم المورد ذي الصلة
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [الحصول على نشاط إصلاحي واحد بواسطة الم ID](get-remediation-one-activity.md)
+- [الحصول على نشاط معالجة واحد بواسطة المعرّف](get-remediation-one-activity.md)
 
-- [سرد كل أنشطة الإصلاح](get-remediation-all-activities.md)
+- [سرد كل أنشطة المعالجة](get-remediation-all-activities.md)
 
-- [سرد الأجهزة التي تم عرضها لنشاط إصلاحي واحد](get-remediation-exposed-devices-activities.md)
+- [سرد الأجهزة التي تم عرضها لنشاط معالجة واحد](get-remediation-exposed-devices-activities.md)
 
-- [المخاطر المستندة إلى المخاطر & إدارة الثغرات الأمنية](next-gen-threat-and-vuln-mgt.md)
+- [& إدارة الثغرات الأمنية المخاطر المستندة إلى المخاطر](next-gen-threat-and-vuln-mgt.md)
 
-- [نقاط الضعف في مؤسستك](tvm-weaknesses.md)
+- [الثغرات الأمنية في مؤسستك](tvm-weaknesses.md)

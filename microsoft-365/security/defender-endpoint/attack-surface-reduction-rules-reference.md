@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: d719c83c8a6cc27ff682c17928c694184e3e94d6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 30764562ebe60842f2824d7e313bec73e03f2ffa
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772501"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65838858"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>مرجع قواعد تقليل الأجزاء المعرضة للهجوم
 
@@ -199,7 +199,7 @@ _وضع التحذير_ هو نوع وضع الحظر الذي ينبه المس
 <!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
 -->
 
-اسم Intune: `Block abuse of exploited vulnerable signed drivers` (غير متوفر بعد)
+اسم Intune: `Block abuse of exploited vulnerable signed drivers`
 
 اسم Configuration Manager: غير متوفر بعد
   

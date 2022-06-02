@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: يمكن للمسؤولين تعلم كيفية محاكاة هجمات التصيد الاحتيالي وتدريب مستخدميهم على منع التصيد الاحتيالي باستخدام تدريب محاكاة الهجوم في Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
-ms.openlocfilehash: 08d86488f9575aad995752ca331b3cbbb31d07fe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 8f6ef692885277368c7ca1c194116a4455f52b31
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739638"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839744"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>محاكاة هجوم تصيد احتيالي مع تدريب محاكاة الهجوم في Defender لـ Office 365
 
@@ -123,7 +123,7 @@ ms.locfileid: "65739638"
 
 إذا قمت بتحديد حمولة من القائمة بالنقر فوق الاسم، أيقونة ![إرسال حمولة اختبار.](../../media/m365-cc-sc-create-icon.png) يظهر زر **"إرسال اختبار"** على الصفحة الرئيسية حيث يمكنك إرسال نسخة من البريد الإلكتروني للحمولة إلى نفسك (المستخدم الذي سجل دخوله حاليا) للفحص.
 
-لإنشاء حمولة خاصة بك، انقر فوق ![أيقونة إنشاء حمولة.](../../media/m365-cc-sc-create-icon.png) **إنشاء حمولة**. لمزيد من المعلومات، راجع [إنشاء حمولات مخصصة للتدريب على محاكاة الهجوم](attack-simulation-training-payloads.md).
+لإنشاء حمولة خاصة بك، انقر فوق ![أيقونة إنشاء حمولة.](../../media/m365-cc-sc-create-icon.png) **إنشاء حمولة**. لمزيد من المعلومات، راجع [إنشاء حمولات مخصصة للتدريب على محاكاة الهجوم](attack-simulation-training-payloads.md#create-payloads).
 
 عند الانتهاء، انقر فوق **"التالي**".
 

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 93a818789efee763a296d6a6c7cc501b1a7ffb37
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5fd673f37dd35a83a714c0f3dd1c6ac3b0a049ca
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418413"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840071"
 ---
 # <a name="export-security-baselines-assessment-per-device"></a>تصدير تقييم أسس الأمان لكل جهاز
 
@@ -29,7 +29,7 @@ ms.locfileid: "65418413"
 **ينطبق على:**
 
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [إدارة الثغرات الأمنية في Microsoft Defender - تحديث](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة إدارة الثغرات الأمنية في Microsoft Defender؟ [التسجيل للحصول على إصدار تجريبي مجاني.- تحديث](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)

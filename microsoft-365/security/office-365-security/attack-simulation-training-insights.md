@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: يمكن للمسؤولين معرفة كيف يؤثر تدريب محاكاة الهجوم في مدخل Microsoft 365 Defender على المستخدمين ويمكنهم الحصول على رؤى من نتائج المحاكاة والتدريب.
 ms.technology: mdo
-ms.openlocfilehash: 72ed46d1676f4abd97ecd4fccfe4ef20d971f0b3
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: fb08de05e0a1f31187fc4dd045d0f1ce45db2aea
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649428"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839353"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Insights وتقارير التدريب على محاكاة الهجوم في Defender لـ Office 365
 
@@ -306,4 +306,4 @@ _المكرر_ هو مستخدم تعرض للاختراق من قبل عملي�
 
 [إنشاء محاكاة هجوم التصيد الاحتيالي](attack-simulation-training.md)
 
-[إنشاء حمولة لتدريب الأشخاص](attack-simulation-training-payloads.md)
+[إنشاء حمولة لتدريب الأشخاص](attack-simulation-training-payloads.md#create-payloads)

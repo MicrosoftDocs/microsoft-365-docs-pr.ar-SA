@@ -20,16 +20,16 @@ ms.custom:
 description: يمكن للمسؤولين تعلم كيفية استخدام تدريب محاكاة الهجوم لتشغيل هجمات التصيد الاحتيالي وكلمة المرور المحاكاة في مؤسساتهم Microsoft 365 E5 أو Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 255d0f40cd360f2b4b3e5084f84989bdbe643319
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 79c8db9a088484a56e559ab4c3e33d68ebf33380
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415607"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840134"
 ---
 # <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>بدء استخدام تدريب محاكاة الهجوم في Defender لـ Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على** [Microsoft Defender لـ Office 365 الخطة 2](defender-for-office-365.md)
 
@@ -121,7 +121,7 @@ ms.locfileid: "65415607"
 
 ### <a name="create-a-payload"></a>إنشاء حمولة
 
-للحصول على إرشادات خطوة بخطوة حول كيفية إنشاء حمولة للاستخدام داخل محاكاة، راجع [إنشاء حمولة مخصصة للتدريب على محاكاة الهجوم](attack-simulation-training-payloads.md).
+للحصول على إرشادات خطوة بخطوة حول كيفية إنشاء حمولة للاستخدام داخل محاكاة، راجع [إنشاء حمولة مخصصة للتدريب على محاكاة الهجوم](attack-simulation-training-payloads.md#create-payloads).
 
 ### <a name="gaining-insights"></a>اكتساب رؤى
 

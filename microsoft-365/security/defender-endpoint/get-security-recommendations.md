@@ -1,7 +1,7 @@
 ---
 title: الحصول على توصيات الأمان
-description: استرداد مجموعة من توصيات الأمان ذات الصلة بمرجع جهاز معين.
-keywords: apis، api الخاصة بالرسم البياني، apis المعتمدة، الحصول، القائمة، الملف، المعلومات، توصيات الأمان لكل جهاز، api الخاصة & إدارة الثغرات الأمنية، Microsoft Defender for Endpoint tvm api
+description: استرداد مجموعة من توصيات الأمان المتعلقة بمعرف جهاز معين.
+keywords: واجهة برمجة التطبيقات، واجهة برمجة تطبيقات الرسم البياني، واجهة برمجة التطبيقات المدعومة، الحصول على قائمة، ملف، معلومات، توصية الأمان لكل جهاز، واجهة برمجة تطبيقات & إدارة الثغرات الأمنية التهديد، واجهة برمجة تطبيقات Microsoft Defender لنقطة النهاية tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,21 +15,23 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6441610fb9c1ebdee823badce2bd2c5439142cf3
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: ebe07abd4e7f87e7abfe4d4a8ccd131e20dc4958
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "63573313"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839692"
 ---
 # <a name="get-security-recommendations"></a>الحصول على توصيات الأمان
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:** 
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
+
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,16 +39,16 @@ ms.locfileid: "63573313"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-استرداد مجموعة من توصيات الأمان ذات الصلة بمرجع جهاز معين.
+استرداد مجموعة من توصيات الأمان المتعلقة بمعرف جهاز معين.
 
 ## <a name="permissions"></a>الأذونات
 
-أحد الأذونات التالية مطلوبة لاستدعاء API هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام Microsoft Defender ل واجهات برمجة تطبيقات نقطة النهاية](apis-intro.md)
+أحد الأذونات التالية مطلوب لاستدعاء واجهة برمجة التطبيقات هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md)
 
-نوع الإذن|الإذن|اسم عرض الأذونات
+نوع الإذن|اذن|اسم عرض الإذن
 :---|:---|:---
-Application|SecurityRecommendation.Read.All|"قراءة معلومات توصيات الأمان الخاصة بإدارة المخاطر والضعف"
-مفوض (حساب العمل أو المدرسة)|SecurityRecommendation.Read|"قراءة معلومات توصيات الأمان الخاصة بإدارة المخاطر والضعف"
+Application|SecurityRecommendation.Read.All|'قراءة معلومات توصية أمان إدارة المخاطر والثغرات الأمنية'
+مفوض (حساب العمل أو المؤسسة التعليمية)|SecurityRecommendation.Read|'قراءة معلومات توصية أمان إدارة المخاطر والثغرات الأمنية'
 
 ## <a name="http-request"></a>طلب HTTP
 
@@ -54,23 +56,23 @@ Application|SecurityRecommendation.Read.All|"قراءة معلومات توصي�
 GET /api/machines/{machineId}/recommendations
 ```
 
-## <a name="request-headers"></a>طلب رؤوس
+## <a name="request-headers"></a>عناوين الطلبات
 
-الاسم|النوع|الوصف
+الاسم|نوع|الوصف
 :---|:---|:---
 التخويل|سلسلة|حامل {token}. **مطلوب**.
 
-## <a name="request-body"></a>طلب الحصول على "هيئة"
+## <a name="request-body"></a>نص الطلب
 
-فارغ
+فارغه
 
-## <a name="response"></a>الاستجابة
+## <a name="response"></a>استجابه
 
-إذا نجح هذا الأسلوب، فيرجع 200 موافق مع توصيات الأمان في الجسم.
+إذا نجحت، ترجع هذه الطريقة 200 موافق مع توصيات الأمان في النص الأساسي.
 
-## <a name="example"></a>مثال
+## <a name="example"></a>المثال
 
-### <a name="request-example"></a>مثال على طلب
+### <a name="request-example"></a>مثال على الطلب
 
 فيما يلي مثال على الطلب.
 
@@ -114,5 +116,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
-- [إدارة المخاطر المستندة إلى & المخاطر](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [توصية أمان & المخاطر](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [إدارة الثغرات الأمنية & المخاطر المستندة إلى المخاطر](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [توصية أمان الثغرات الأمنية & المخاطر](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

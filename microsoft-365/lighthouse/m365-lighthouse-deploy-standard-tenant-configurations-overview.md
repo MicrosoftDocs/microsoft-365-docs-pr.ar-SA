@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية استخدام الخطوط الأساسية لنشر تكوينات المستأجر القياسية.
-ms.openlocfilehash: 11b8c5ad9adafa4cd6afb6bb4cd19861118e447c
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 7cdae46105ad225a284bf0ffa8860ad36ffb8691
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647678"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839832"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>نظرة عامة على استخدام Microsoft 365 أساسات Lighthouse لنشر تكوينات المستأجر القياسية 
 
@@ -31,7 +31,7 @@ ms.locfileid: "65647678"
 
 ## <a name="lighthouse-baseline"></a>أساس Lighthouse
 
-تم تصميم تكوينات أساس Lighthouse للتأكد من أن جميع المستأجرين المدارين آمنون ومتوافقون. حدد **الخطوط الأساسية** من جزء التنقل الأيمن لعرض الأساس الافتراضي الذي ينطبق على كافة المستأجرين.  لعرض خطوات النشر المضمنة في الأساس الافتراضي، حدد **"عرض الأساس** " لفتح صفحة الأساس الافتراضية. حدد أيا من خطوات النشر لعرض تفاصيل النشر وتأثير المستخدم.
+تم تصميم تكوينات أساس Lighthouse للتأكد من أن جميع المستأجرين المدارين آمنون ومتوافقون. حدد **الخطوط الأساسية** من جزء التنقل الأيمن لعرض الأساس الافتراضي الذي ينطبق على كافة المستأجرين.  لعرض خطوات النشر المضمنة في الأساس الافتراضي، حدد **"عرض الأساس** " لفتح صفحة **الأساس الافتراضي** . حدد أيا من خطوات النشر لعرض تفاصيل النشر وتأثير المستخدم.
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="لقطة شاشة لصفحة الأساس الافتراضي.":::
 

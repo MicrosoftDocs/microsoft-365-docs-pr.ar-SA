@@ -19,16 +19,16 @@ ms.custom:
 description: يمكن للمسؤولين معرفة كيفية عرض الرسائل المعزولة وإدارتها لجميع المستخدمين في Exchange Online Protection (EOP). يمكن للمسؤولين في المؤسسات ذات Microsoft Defender لـ Office 365 أيضا إدارة الملفات المعزولة في SharePoint Online OneDrive for Business Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df123916f5f15a8651ba8ad8dcbae95598afbfa8
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 3bd239231cc49684f8b07fb73f33265c9463bad4
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418051"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839788"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>إدارة الرسائل والملفات المعزولة كمسؤول في EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -195,7 +195,7 @@ ms.locfileid: "65418051"
 
   - لا يمكنك إصدار رسالة إلى المستلم نفسه أكثر من مرة.
   - سيظهر المستلمون الذين لم يتلقوا الرسالة فقط في قائمة المستلمين المحتملين.
-  - يمكن فقط لأعضاء مجموعة أدوار **مسؤولي الأمان** رؤية **الرسالة واستخدامها إلى Microsoft لتحسين الكشف (إيجابية خاطئة)** **والسماح برسائل مثل هذه** الخيارات. 
+  - يمكن فقط لأعضاء مجموعة أدوار **مسؤولي الأمان** رؤية **الرسالة واستخدامها إلى Microsoft لتحسين الكشف (إيجابية خاطئة)** **والسماح برسائل مثل هذه** الخيارات.
 
 - ![أيقونة مشاركة البريد الإلكتروني.](../../media/m365-cc-sc-share-email-icon.png) **مشاركة البريد الإلكتروني**: في القائمة المنبثقة التي تظهر، أضف مستلما واحدا أو أكثر لتلقي نسخة من الرسالة. عند الانتهاء، انقر فوق **"مشاركة**".
 

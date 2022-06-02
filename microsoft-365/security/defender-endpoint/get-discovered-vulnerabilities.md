@@ -1,7 +1,7 @@
 ---
 title: الحصول على نقاط الضعف المكتشفة
-description: استرداد مجموعة من نقاط الضعف المكتشفة المرتبطة بمرجع جهاز معين.
-keywords: apis، api الخاصة بالرسم البياني، apis المعتمدة، الحصول، القائمة، الملف، المعلومات، نقاط الضعف المكتشفة، & إدارة الثغرات الأمنية api، Microsoft Defender for Endpoint tvm api
+description: استرداد مجموعة من الثغرات الأمنية المكتشفة المتعلقة بمعرف جهاز معين.
+keywords: واجهة برمجة التطبيقات، وواجهة برمجة تطبيقات الرسم البياني، وواجهة برمجة التطبيقات المدعومة، والحصول على، وقائمة، وملف، ومعلومات، ونقاط الضعف المكتشفة، وواجهة برمجة تطبيقات & إدارة الثغرات الأمنية التهديد، وواجهة برمجة تطبيقات Microsoft Defender لنقطة النهاية tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,41 +15,43 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 282c9b33efbb261e4d8cb0180cda0f3bc7e03584
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 6b3271637b1b275fe26d07975d0592bf1e7ae672
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "63573327"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840464"
 ---
 # <a name="get-discovered-vulnerabilities"></a>الحصول على نقاط الضعف المكتشفة
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a>وصف API
-استرداد مجموعة من نقاط الضعف المكتشفة المرتبطة بمرجع جهاز معين.
+## <a name="api-description"></a>وصف واجهة برمجة التطبيقات
+استرداد مجموعة من الثغرات الأمنية المكتشفة المتعلقة بمعرف جهاز معين.
 
 ## <a name="limitations"></a>القيود
-1. قيود السعر ل API هذه هي 50 مكالمة في الدقيقة و1500 مكالمة في الساعة.
+1. قيود المعدل لواجهة برمجة التطبيقات هذه هي 50 مكالمة في الدقيقة و1500 مكالمة في الساعة.
 
 ## <a name="permissions"></a>الأذونات
 
-أحد الأذونات التالية مطلوبة لاستدعاء API هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام Microsoft Defender ل واجهات برمجة تطبيقات نقطة النهاية](apis-intro.md)
+أحد الأذونات التالية مطلوب لاستدعاء واجهة برمجة التطبيقات هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md)
 
-نوع الإذن | الإذن | اسم عرض الأذونات
+نوع الإذن | اذن | اسم عرض الإذن
 :---|:---|:---
-Application |Vulnerability.Read.All | "قراءة معلومات ضعف إدارة المخاطر والنقاط الأمنية"
-مفوض (حساب العمل أو المدرسة) | ثغرة أمنية.قراءة | "قراءة معلومات ضعف إدارة المخاطر والنقاط الأمنية"
+Application |Vulnerability.Read.All | 'قراءة معلومات الثغرات الأمنية لإدارة المخاطر والثغرات الأمنية'
+مفوض (حساب العمل أو المؤسسة التعليمية) | Vulnerability.Read | 'قراءة معلومات الثغرات الأمنية لإدارة المخاطر والثغرات الأمنية'
 
 ## <a name="http-request"></a>طلب HTTP
 
@@ -57,21 +59,21 @@ Application |Vulnerability.Read.All | "قراءة معلومات ضعف إدار
 GET /api/machines/{machineId}/vulnerabilities
 ```
 
-## <a name="request-headers"></a>طلب رؤوس
+## <a name="request-headers"></a>عناوين الطلبات
 
-الاسم|النوع|الوصف
+الاسم|نوع|الوصف
 :---|:---|:---
 التخويل | سلسلة | حامل {token}. **مطلوب**.
 
-## <a name="request-body"></a>طلب الحصول على "هيئة"
+## <a name="request-body"></a>نص الطلب
 
-فارغ
+فارغه
 
-## <a name="response"></a>الاستجابة
+## <a name="response"></a>استجابه
 
-إذا نجح هذا الأسلوب، فيرجع 200 موافق مع معلومات الثغرة الأمنية التي تم اكتشافها في الجسم.
+إذا نجحت، ترجع هذه الطريقة 200 موافق مع معلومات الثغرات الأمنية المكتشفة في النص الأساسي.
 
-## <a name="example"></a>مثال
+## <a name="example"></a>المثال
 
 ### <a name="request"></a>طلب
 
@@ -81,7 +83,7 @@ GET /api/machines/{machineId}/vulnerabilities
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/vulnerabilities
 ```
 
-### <a name="response"></a>الاستجابة
+### <a name="response"></a>استجابه
 
 فيما يلي مثال على الاستجابة.
 
@@ -110,5 +112,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [إدارة المخاطر المستندة إلى & المخاطر](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [نقاط الضعف في مؤسستك](/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [إدارة الثغرات الأمنية & المخاطر المستندة إلى المخاطر](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [الثغرات الأمنية في مؤسستك](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

@@ -18,16 +18,16 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية تكوين علبة بريد لجمع البريد الإلكتروني العشوائي والتصيد الاحتيالي الذي يتم الإبلاغ عنه من قبل المستخدمين.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b73144b678140cd30917b4fd687663ff0a455a3
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: f09054a4ee57ce7105a7b2daffc65be5b91dc8f6
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144784"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839657"
 ---
 # <a name="user-reported-message-settings"></a>إعدادات الرسالة التي أبلغ عنها المستخدم
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -40,7 +40,7 @@ ms.locfileid: "65144784"
 - [الوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي"](enable-the-report-phish-add-in.md)
 - [أدوات إعداد التقارير لجهة خارجية](#third-party-reporting-tools)
 
-يسمح تسليم الرسائل التي أبلغ عنها المستخدم إلى علبة بريد مخصصة بدلا من إرسالها مباشرة إلى Microsoft للمسؤولين لديك بالإبلاغ عن الرسائل بشكل انتقائي ويدوي إلى Microsoft باستخدام [عمليات إرسال المسؤول](admin-submission.md). كانت هذه الإعدادات تعرف سابقا باسم نهج عمليات إرسال المستخدم.
+يسمح تسليم الرسائل التي أبلغ عنها المستخدم إلى علبة بريد مخصصة بدلا من إرسالها مباشرة إلى Microsoft للمسؤولين لديك بالإبلاغ عن الرسائل بشكل انتقائي ويدوي إلى Microsoft باستخدام [إرسال مسؤول](admin-submission.md). كانت هذه الإعدادات تعرف سابقا باسم نهج عمليات إرسال المستخدم.
 
   > [!NOTE]
   > إذا تم تعطيل إعداد التقارير [في Outlook على ويب](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)، فسيؤدي تمكين الرسائل التي أبلغ عنها المستخدم هنا إلى تجاوز هذا الإعداد وتمكين المستخدمين من الإبلاغ عن الرسائل في Outlook على ويب مرة أخرى.
@@ -49,17 +49,15 @@ ms.locfileid: "65144784"
 
 استخدم المقالات التالية لتكوين المتطلبات الأساسية المطلوبة حتى تنتقل الرسائل التي أبلغ عنها المستخدم إلى علبة البريد المخصصة:
 
-- تخطي تصفية البريد العشوائي على علبة البريد المخصصة عن طريق إنشاء قاعدة تدفق بريد exchange لتعيين مستوى الثقة بالبريد العشوائي. راجع [استخدام EAC لإنشاء قاعدة تدفق بريد تعين SCL لرسالة](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) لتعيين SCL **لتجاوز تصفية البريد العشوائي**.
+- [تحديد علبة البريد المخصصة كعلبة بريد SecOps في نهج التسليم المتقدم](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
-- [إنشاء نهج مكافحة البرامج الضارة](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) الذي يتضمن علبة البريد المخصصة حيث يتم إيقاف تشغيل الإزالة التلقائية بدون ساعة (ZAP) للبرامج الضارة (لم يتم تحديد قسم \>**إعدادات الحماية** **تمكين الإزالة التلقائية بدون ساعة للبرامج الضارة**).
-
-- [إنشاء نهج مكافحة البريد العشوائي](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) الذي يتضمن علبة البريد المخصصة حيث يتم إيقاف تشغيل ZAP للبريد العشوائي و ZAP للتصيد الاحتيالي (لم يتم تحديد قسم \>**الإزالة التلقائية بدون ساعات** **الممكنة للساعة الصفرية (ZAP**).
+- [إنشاء نهج مكافحة البرامج الضارة](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) لعلب البريد المخصص حيث يتم إيقاف تشغيل الإزالة التلقائية بدون ساعة (ZAP) للبرامج الضارة (لم يتم تحديد قسم \>**إعدادات الحماية** **تمكين الإزالة التلقائية بدون ساعة للبرامج الضارة**).
 
 إذا كان لديك Microsoft Defender لـ Office 365، يجب عليك أيضا تكوين الإعدادات التالية حتى لا تؤثر التصفية المتقدمة لدينا على المستخدمين الذين يبلغون عن الرسائل:
 
-- [إنشاء نهج ارتباطات خزينة](set-up-safe-links-policies.md) يتضمن علبة البريد المخصصة حيث تم إيقاف تشغيل مسح الارتباطات خزينة (**حدد الإجراء الخاص بعناوين URL غير المعروفة التي يحتمل أن تكون ضارة في** مقطع \> الرسائل **متوقفة عن التشغيل**).
+- [إنشاء نهج ارتباطات خزينة](set-up-safe-links-policies.md) لعلدة البريد المخصصة حيث يتم إيقاف تشغيل مسح الارتباطات خزينة (**حدد الإجراء الخاص بعناوين URL غير المعروفة التي يحتمل أن تكون ضارة في** مقطع \> الرسائل **متوقفة عن التشغيل**).
 
-- [إنشاء نهج مرفقات خزينة](set-up-safe-attachments-policies.md) يتضمن علبة البريد المخصصة حيث يتم إيقاف تشغيل مسح المرفقات خزينة (إيقاف تشغيل خزينة **قسم**\> **استجابة البرامج الضارة غير المعروفة للمرفقات**).
+- [إنشاء نهج مرفقات خزينة](set-up-safe-attachments-policies.md) لعل البريد المخصص حيث يتم إيقاف تشغيل مسح المرفقات خزينة (إيقاف تشغيل خزينة **مقطع**\> **استجابة البرامج الضارة غير المعروفة للمرفقات**).
 
 بعد التحقق من أن علبة البريد تفي بكافة المتطلبات الأساسية المعمول بها، يمكنك استخدام الإجراءات الواردة في هذه المقالة لتكوين علبة بريد عمليات إرسال المستخدم.
 
