@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: استخدم Basic Mobility and Security المضمنين لإزالة المعلومات من الأجهزة المسجلة.
-ms.openlocfilehash: 959e785958dd6d447713507ee9c48763b814db78
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 5ecdfc691d85b86d882cf05dd5328d41dcdfa767
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129079"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863043"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>مسح جهاز محمول في Basic Mobility and Security
 
@@ -46,25 +46,21 @@ ms.locfileid: "65129079"
 
 ## <a name="wipe-a-mobile-device"></a>مسح جهاز محمول
 
-1. انتقل إلى [مركز مسؤولي Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
+1. سجل الدخول إلى مركز مسؤولي Microsoft 365، وانتقل إلى [صفحة إدارة الجهاز الجوال](https://portal.office.com/adminportal/home?#/MifoDevices).
 
-2. اكتب إدارة الجهاز Mobile في حقل البحث، وحدد **إدارة الجهاز الجوال** من قائمة النتائج.
+1. حدد **إدارة الأجهزة**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="خيار إدارة الأجهزة المحمولة Basic Mobility and Secruity.":::
+1. حدد الجهاز الذي تريد مسحه.
 
-3. حدد **إدارة الأجهزة**.
+1. حدد **"إدارة**".
 
-4. حدد الجهاز الذي تريد مسحه.
-
-5. حدد **"إدارة**".
-
-6. حدد نوع المسح عن بعد الذي تريد القيام به.
+1. حدد نوع المسح عن بعد الذي تريد القيام به.
 
     - لإجراء مسح كامل واستعادة الجهاز إلى إعدادات المصنع الخاصة به، حدد **إعادة تعيين المصنع**.
     - لإجراء مسح انتقائي وحذف Microsoft 365 معلومات المؤسسة فقط، حدد **إزالة بيانات الشركة**.
     - لإزالة الجهاز من مؤسستك، حدد **"إزالة الجهاز**".
 
-7. حدد **"نعم** " للتأكيد.
+1. حدد **"نعم** " للتأكيد.
 
 ## <a name="how-do-i-know-it-worked"></a>كيف أعمل تعرف أنه يعمل؟
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: بالنسبة للأجهزة التي لا يمكنك إدارتها باستخدام Basic Mobility and Security، يجب حظر وصول التطبيق Exchange ActiveSync إلى البريد الإلكتروني Microsoft 365.
-ms.openlocfilehash: 450d694e83b5044efb25adb918f38a124181481f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 01b89bc50fb348072873d68f52b75d721830aeb5
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435822"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863107"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>إدارة إعدادات الوصول إلى الجهاز في Basic Mobility and Security
 
@@ -40,9 +40,9 @@ ms.locfileid: "65435822"
 
 3. انتقل إلى **نهج جهاز** **إدارة** \> الأجهزة **لمنع** \> فقدان البيانات، وحدد **إدارة إعدادات الوصول إلى الجهاز على مستوى المؤسسة**.
 
-4. حدد **كتلة**.
+4. حدد **Access**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="خانة الاختيار Basic Mobility and Security block access.":::
+    :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="خانة الاختيار Basic Mobility and Security block access.":::
 
 5. حدد **حفظ**.
 

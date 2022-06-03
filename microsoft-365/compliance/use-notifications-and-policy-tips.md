@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: تعرف على كيفية إضافة تلميح نهج إلى نهج منع فقدان البيانات (DLP) لإعلام المستخدم بأنه يعمل مع محتوى يتعارض مع نهج DLP.
-ms.openlocfilehash: af3dd2181c5bd8865f02755ba4d17f1feb0514d2
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 13387890ca1096115c5c933627ae674aaad15581
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669529"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863619"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>إرسال إعلامات بالبريد الإلكتروني وإظهار تلميحات النهج لنهج DLP
 
@@ -53,7 +53,7 @@ ms.locfileid: "65669529"
 
 عند إنشاء نهج DLP، يمكنك تمكين **إعلامات المستخدم**. عند تمكين إعلامات المستخدم، Microsoft 365 إرسال كل من إعلامات البريد الإلكتروني وتلميحات النهج. يمكنك تخصيص الأشخاص الذين يتم إرسال رسائل البريد الإلكتروني للإعلام إليهم ونص البريد الإلكتروني ونص تلميح النهج.
 
-1. انتقل إلى [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
+1. انتقل إلى [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/permissions).
 
 2. سجل الدخول باستخدام حساب العمل أو المؤسسة التعليمية.
 
@@ -243,7 +243,10 @@ ms.locfileid: "65669529"
 - يحتوي المحتوى على
 - تتم مشاركة المحتوى
 
-لاحظ أن الاستثناءات تعتبر شروطا وتعمل كل هذه الشروط في Outlook، حيث ستتطابق مع المحتوى وتفرض إجراءات الحماية على المحتوى. ولكن عرض تلميحات النهج للمستخدمين غير مدعوم حتى الآن. أيضا، لا يدعم Outlook إظهار تلميحات النهج لنهج DLP الذي يتم تطبيقه على مجموعة توزيع ديناميكية.
+لاحظ أن الاستثناءات تعتبر شروطا وتعمل كل هذه الشروط في Outlook، حيث ستتطابق مع المحتوى وتفرض إجراءات الحماية على المحتوى. ولكن عرض تلميحات النهج للمستخدمين غير مدعوم حتى الآن. 
+
+> [!NOTE]
+> لا يدعم Outlook إظهار تلميحات النهج لسياسة DLP التي يتم تطبيقها على مجموعة توزيع ديناميكية أو مجموعات أمان غير ممكنة للبريد الإلكتروني. 
 
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-microsoft-purview-compliance-portal"></a>تلميحات النهج في مركز إدارة Exchange مقابل مدخل التوافق Microsoft Purview
 

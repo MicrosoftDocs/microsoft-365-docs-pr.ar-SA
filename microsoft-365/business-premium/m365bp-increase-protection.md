@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: الحصول على المساعدة في زيادة مستوى الحماية في Microsoft 365 Business Premium
-ms.openlocfilehash: 2bd00329f160c187325fc696114f0fac4e503656
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: a442dcd399a1886f5f63bd17dc897d1547a0f579
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319122"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863597"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>زيادة الحماية من التهديدات Microsoft 365 Business Premium
 
@@ -166,7 +166,7 @@ ms.locfileid: "65319122"
 
 ### <a name="view-your-alert-policies"></a>عرض نهج التنبيه
 
-1. انتقل إلى مركز التوافق Microsoft 365 في [https://compliance.microsoft.com](https://compliance.microsoft.com) وسجل الدخول.
+1. انتقل إلى مدخل التوافق في Microsoft Purview وسجل [https://compliance.microsoft.com](https://compliance.microsoft.com) الدخول.
 
 2. في جزء التنقل، اختر **"النهج**"، ثم اختر **"نهج التنبيه**".
 
@@ -179,12 +179,12 @@ ms.locfileid: "65319122"
 
 ### <a name="how-to-view-alerts"></a>كيفية عرض التنبيهات
 
-اعتمادا على التنبيه المحدد، يمكنك عرض التنبيهات الخاصة بك إما في مدخل Microsoft 365 Defender أو مركز التوافق Microsoft 365.
+اعتمادا على التنبيه المحدد، يمكنك عرض التنبيهات الخاصة بك إما في مدخل Microsoft 365 Defender أو مدخل التوافق في Microsoft Purview.
 
 | نوع التنبيه  | ما يجب فعله  |
 |---------|---------|
-| تنبيه الأمان، مثل عندما ينقر المستخدم فوق ارتباط ضار، أو يتم الإبلاغ عن رسالة بريد إلكتروني كبرى ضارة أو تصيد احتيالي، أو يتم الكشف عن جهاز على أنه يحتوي على برامج ضارة     | انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> وضمن **تعاون & البريد الإلكتروني**، حدد **نهج Policies &** **rulesAlert** > . بدلا من ذلك، يمكنك الانتقال مباشرة إلى <https://security.microsoft.com/alertpolicies>. |
-| تنبيه التوافق، مثل عندما يشارك المستخدم معلومات حساسة أو سرية (تنبيه منع فقدان البيانات) أو عندما يكون هناك حجم غير عادي لمشاركة الملفات الخارجية (تنبيه حوكمة المعلومات)    | انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مركز التوافق في Microsoft 365</a>، ثم حدد **نهج** **PoliciesAlertAlert** >  > .  |
+| تنبيه الأمان، مثل عندما ينقر المستخدم فوق ارتباط ضار، أو يتم الإبلاغ عن رسالة بريد إلكتروني كبرى ضارة أو تصيد احتيالي، أو يتم الكشف عن جهاز على أنه يحتوي على برامج ضارة     | انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> وضمن **تعاون & البريد الإلكتروني**، حدد نهج **التنبيه** **لقواعد &** >  النهج. بدلا من ذلك، يمكنك الانتقال مباشرة إلى <https://security.microsoft.com/alertpolicies>. |
+| تنبيه التوافق، مثل عندما يشارك المستخدم معلومات حساسة أو سرية (تنبيه منع فقدان البيانات) أو عندما يكون هناك حجم غير عادي لمشاركة الملفات الخارجية (تنبيه حوكمة المعلومات)    | انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>، **ثم حدد** > **نهج تنبيه النهج** > .  |
 
 لمزيد من المعلومات، راجع [عرض التنبيهات](../compliance/alert-policies.md#view-alerts).
 

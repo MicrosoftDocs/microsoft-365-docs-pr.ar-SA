@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: إزالة المجموعات أو النهج لإيقاف تشغيل Basic Mobility and Security.
-ms.openlocfilehash: c3c82c040e688977a68e06639e87c8f733bc8c38
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 59a54b9969bf16c7523a6862c6f0960bb1527e8a
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780754"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863021"
 ---
 # <a name="turn-off-basic-mobility-and-security"></a>إيقاف تشغيل التنقل والأمان الأساسيين
 
@@ -36,7 +36,7 @@ ms.locfileid: "64780754"
 
 ## <a name="remove-user-security-groups-from-basic-mobility-and-security-device-policies"></a>إزالة مجموعات أمان المستخدم من نهج الأجهزة الأساسية للتنقل والأمان
 
-1. في نوع المستعرض: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. في نوع المستعرض: [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 
 2. حدد نهج الجهاز، وحدد **تحرير النهج**.
 
@@ -48,7 +48,7 @@ ms.locfileid: "64780754"
 
 ## <a name="remove-basic-mobility-and-security-device-policies"></a>إزالة نهج الأجهزة الأساسية للتنقل والأمان
 
-1. في نوع المستعرض: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. في نوع المستعرض: [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 
 2. حدد نهج الجهاز، ثم حدد **"حذف النهج**".
 

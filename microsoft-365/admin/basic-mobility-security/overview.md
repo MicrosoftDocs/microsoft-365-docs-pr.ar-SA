@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: يمكنك إدارة الأجهزة المحمولة المتصلة بمؤسستك Microsoft 365 وتأمينها من خلال إعداد Basic Mobility and Security واستخدامها.
-ms.openlocfilehash: 168fd1f0ef08cf1a9bd5d7c90c53781016b232e6
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 9a9b3d433408d4ce5225f1a74351d01150744132
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636119"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863195"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>نظرة عامة على التنقل الأساسي والأمان Microsoft 365
 
@@ -50,7 +50,7 @@ ms.locfileid: "65636119"
 
 **الخطوة 3:** إنشاء نهج الجهاز وتطبيقها على مجموعات من المستخدمين. عند القيام بذلك، يحصل المستخدمون على رسالة تسجيل على أجهزتهم، وعندما يكملون التسجيل، يتم تقييد أجهزتهم من خلال النهج التي قمت بإعدادها لهم. لمزيد من المعلومات، راجع [تسجيل جهازك المحمول باستخدام Basic Mobility and Security](enroll-your-mobile-device.md). 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="إعدادات نهج الأمان والتنقل الأساسية.":::
+:::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="إعدادات نهج الأمان والتنقل الأساسية.":::
 
 ## <a name="device-management-tasks"></a>مهام إدارة الجهاز
 

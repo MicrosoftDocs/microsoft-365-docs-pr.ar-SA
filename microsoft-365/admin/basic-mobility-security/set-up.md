@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: قم بإعداد Basic Mobility and Security لتأمين الأجهزة المحمولة للمستخدمين وإدارتها من خلال تنفيذ إجراءات مثل مسح الجهاز عن بعد.
-ms.openlocfilehash: b26906c0f374f5dc103fe26e4619663195da6ebd
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 04480e59177dc9b51bc50e413715e0ad82c7f461
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780820"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863152"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>إعداد التنقل والأمان الأساسيين
 
@@ -50,9 +50,9 @@ ms.locfileid: "64780820"
 
 إذا لم يكن لديك مجال مخصص مقترن Microsoft 365 أو إذا لم تكن تدير أجهزة Windows، يمكنك تخطي هذا المقطع. وإلا، فستحتاج إلى إضافة سجلات DNS للمجال لدى مضيف DNS. إذا قمت بإضافة السجلات بالفعل، كجزء من إعداد مجالك باستخدام Microsoft 365، فأنت جاهز تماما. بعد إضافة السجلات، تتم إعادة توجيه Microsoft 365 المستخدمين في مؤسستك الذين يسجلون الدخول على جهاز Windows الخاص بهم باستخدام عنوان بريد إلكتروني يستخدم مجالك المخصص للتسجيل في Basic Mobility and Security.
 
-هل تحتاج إلى مساعدة في إعداد السجلات؟ ابحث عن جهة تسجيل المجالات وحدد اسم جهة التسجيل للانتقال إلى تعليمات مفصلة خطوة بخطوة لإنشاء سجل DNS في القائمة المتوفرة في ["إضافة سجلات DNS" لتوصيل مجالك](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). استخدم هذه الإرشادات لإنشاء سجلات CNAME الموضحة في [تبسيط التسجيل Windows دون Premium Azure AD](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
+هل تحتاج إلى مساعدة في إعداد السجلات؟ ابحث عن جهة تسجيل المجالات وحدد اسم جهة التسجيل للانتقال إلى تعليمات مفصلة خطوة بخطوة لإنشاء سجل DNS في القائمة المتوفرة في ["إضافة سجلات DNS" لتوصيل مجالك](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). استخدم هذه الإرشادات لإنشاء سجلات CNAME الموضحة في [تبسيط التسجيل Windows دون Azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
 
-بعد إضافة سجلي CNAME، عد إلى مركز توافق & الأمان وانتقل إلى **إدارة** **منع** >  فقدان البيانات لإكمال الخطوة التالية.
+بعد إضافة سجلي CNAME، عد إلى مركز توافق & الأمان وانتقل إلى **إدارة جهاز** **منع** >  فقدان البيانات لإكمال الخطوة التالية.
 
 ### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>الخطوة 2: (مطلوب) تكوين شهادة APNs لأجهزة iOS
 
@@ -60,13 +60,11 @@ ms.locfileid: "64780820"
 
 1. سجل الدخول إلى Microsoft 365 باستخدام حساب المسؤول العام.
 
-2. في نوع المستعرض: [https://protection.office.com](https://protection.office.com/).
-
-3. حدد **إدارة** **منع** >  فقدان البيانات، واختر **شهادة APNs لأجهزة iOS**.
+2. انتقل إلى [مركز مسؤولي Microsoft 365](https://portal.office.com/adminportal/home?#/MifoDevices)، واختر **شهادة APNs لنظام التشغيل iOS**.
 
 4. في صفحة الإعدادات شهادة الإعلامات المؤقتة من Apple، اختر **"التالي**".
 
-5. حدد **"تنزيل ملف CSR** " واحفظ طلب توقيع الشهادة في مكان ما على الكمبيوتر الذي ستتذكره. حدد **"التالي**".
+5. حدد **"تنزيل ملف CSR** " واحفظ طلب توقيع الشهادة في مكان ما على الكمبيوتر الذي ستتذكره. حدد **التالي**.
 
 6. في صفحة إنشاء شهادة APNs:
 
@@ -93,9 +91,9 @@ ms.locfileid: "64780820"
 
 تساعد المصادقة متعددة العوامل على تأمين تسجيل الدخول إلى Microsoft 365 لتسجيل الأجهزة المحمولة عن طريق طلب نموذج ثان من المصادقة. يطلب من المستخدمين الإقرار بمكالمة هاتفية أو رسالة نصية أو إعلام تطبيق على أجهزتهم المحمولة بعد إدخال كلمة مرور حساب العمل بشكل صحيح. يمكنهم تسجيل أجهزتهم فقط بعد اكتمال هذا النموذج الثاني من المصادقة. بعد تسجيل أجهزة المستخدم في Basic Mobility and Security، يمكن للمستخدمين الوصول إلى موارد Microsoft 365 باستخدام حساب العمل الخاص بهم فقط.
 
-لمعرفة كيفية تشغيل المصادقة متعددة العوامل في مدخل Microsoft Azure Active Directory، راجع [إعداد المصادقة متعددة العوامل](../security-and-compliance/set-up-multi-factor-authentication.md).
+لمعرفة كيفية تشغيل المصادقة متعددة العوامل في مدخل Azure AD، راجع [إعداد المصادقة متعددة العوامل](../security-and-compliance/set-up-multi-factor-authentication.md).
 
-بعد إعداد المصادقة متعددة العوامل، ارجع إلى مركز توافق & الأمان وانتقل إلى **نهج ManagementDevice managementDevice** >  لمنع  > **فقدان البيانات** لإكمال الخطوة التالية.
+بعد إعداد المصادقة متعددة العوامل، عد إلى مركز توافق & الأمان وانتقل إلى **نهج جهاز** **إدارة** >  الأجهزة **لمنع** >  فقدان البيانات لإكمال الخطوة التالية.
 
 ### <a name="step-4-recommended-manage-device-security-policies"></a>الخطوة 4: (مستحسن) إدارة نهج أمان الجهاز
 
@@ -107,7 +105,7 @@ ms.locfileid: "64780820"
 
 3. انتقل إلى **نهج الجهاز**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="إعدادات نهج الأمان والتنقل الأساسية.":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="إعدادات نهج الأمان والتنقل الأساسية.":::
 
 4. إنشاء نهج أمان الجهاز المناسبة لمؤسستك ونشرها باتباع الخطوات الواردة في [إنشاء نهج أمان الجهاز في Basic Mobility and Security](create-device-security-policies.md).
 
@@ -128,7 +126,7 @@ ms.locfileid: "64780820"
 
 يطلب من المستخدمين الذين لديهم أجهزة Android أو iOS تثبيت تطبيق Company Portal كجزء من عملية التسجيل.
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [قدرات Basic Mobility and Security](capabilities.md) (article)\
 [إنشاء نهج أمان الجهاز في Basic Mobility and Security](create-device-security-policies.md) (مقالة)

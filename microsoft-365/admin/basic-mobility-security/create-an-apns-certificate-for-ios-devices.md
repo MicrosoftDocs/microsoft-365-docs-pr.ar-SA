@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: لإدارة أجهزة iOS مثل iPads وiPhones في Basic Mobility and Security، ابدأ بإنشاء شهادة APNs.
-ms.openlocfilehash: 8bcbcdeac9f1cadd945c3f7c44e9192d57db7c82
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 10d2e8412cfecf3627c7520123592b371bf01fdb
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435778"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863511"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>إنشاء شهادة APNs للأجهزة التي تعمل بـ iOS
 
@@ -27,15 +27,13 @@ ms.locfileid: "65435778"
 
 1. سجل الدخول إلى Microsoft 365 باستخدام حساب المسؤول العام.
 
-2. في المستعرض، اكتب <https://protection.office.com/>.
+1. انتقل إلى [مركز مسؤولي Microsoft 365](https://portal.office.com/adminportal/home?#/MifoDevices)، واختر **شهادة APNs لنظام التشغيل iOS**.
 
-3. حدد **إدارة جهاز** **منع** \> فقدان البيانات، واختر **شهادة APNs لأجهزة iOS**.
+1. في صفحة الإعدادات شهادة الإعلامات المؤقتة من Apple، اختر **"التالي**".
 
-4. في صفحة الإعدادات شهادة الإعلامات المؤقتة من Apple، اختر **"التالي**".
+1. حدد "تنزيل ملف CSR" واحفظ طلب توقيع الشهادة في مكان ما على الكمبيوتر الذي ستتذكره. حدد **التالي**.
 
-5. حدد "تنزيل ملف CSR" واحفظ طلب توقيع الشهادة في مكان ما على الكمبيوتر الذي ستتذكره. حدد **التالي**.
-
-6. في صفحة إنشاء شهادة APNs:
+1. في صفحة إنشاء شهادة APNs:
 
     1. حدد مدخل Apple APNS لفتح مدخل Apple Push Certificates.
 
@@ -53,10 +51,10 @@ ms.locfileid: "65435778"
        > [!TIP]
        > إذا كنت تواجه مشكلة في تنزيل الشهادة، فقم بتحديث المستعرض.
 
-7. ارجع إلى Microsoft 365، وحدد **"التالي**" للوصول إلى صفحة **شهادة APNS Upload**.
+1. ارجع إلى Microsoft 365، وحدد **"التالي**" للوصول إلى صفحة **شهادة APNS Upload**.
 
-8. استعرض وصولا إلى شهادة APN التي قمت بتنزيلها من مدخل Apple Push Certificates.
+1. استعرض وصولا إلى شهادة APN التي قمت بتنزيلها من مدخل Apple Push Certificates.
 
-9. حدد **إنهاء**.
+1. حدد **إنهاء**.
 
 لإكمال الإعداد، ارجع إلى **إعدادات إدارة** **إدارة أجهزة إدارة** \> نهج **أمان** \> مركز \> التوافق & الأمان.
