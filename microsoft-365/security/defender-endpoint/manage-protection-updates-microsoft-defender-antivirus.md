@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9af3694f530660ead6f10008e1642990a20cc0a6
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: b01a9315e143a3fb49cedef84e1f7b9e505441d5
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416607"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873325"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>إدارة مصادر تحديثات برنامج الحماية من الفيروسات من Microsoft Defender الحماية
 
@@ -29,7 +29,7 @@ ms.locfileid: "65416607"
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -68,7 +68,7 @@ ms.locfileid: "65416607"
 - [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [مشاركة ملف الشبكة](#unc-share)
-- [تحديثات معلومات الأمان برنامج الحماية من الفيروسات من Microsoft Defender والبرامج الضارة](https://www.microsoft.com/wdsi/defenderupdates) <sup>الأخرى من Microsoft [[2](#fn1)]<sup></sup>
+- [تحديثات معلومات الأمان برنامج الحماية من الفيروسات من Microsoft Defender والبرامج الضارة](/microsoft-365/security/defender-endpoint/manage-protection-update-schedule-microsoft-defender-antivirus) <sup>الأخرى من Microsoft [[2](#fn1)]<sup></sup>
 
 (<a id="fn1">1</a>) خادم تحديث التعريف الداخلي Intune - إذا كنت تستخدم SCCM/SUP للحصول على تحديثات التعريف برنامج الحماية من الفيروسات من Microsoft Defender، وتحتاج إلى الوصول إلى Windows Update على أجهزة العميل المحظورة، يمكنك الانتقال إلى الإدارة المشتركة وتفريغ حمل عمل حماية نقطة النهاية إلى Intune. في نهج مكافحة البرامج الضارة الذي تم تكوينه في Intune، هناك خيار ل "خادم تحديث التعريف الداخلي" الذي يمكن تكوينه لاستخدام WSUS المحلي كمصدر التحديث. يساعدك هذا على التحكم في التحديثات من خادم WU الرسمي المعتمدة للمؤسسة، ويساعد أيضا الوكيل وحفظ نسبة استخدام الشبكة إلى شبكة UPdates Windows الرسمية.
 
@@ -83,12 +83,10 @@ ms.locfileid: "65416607"
 
 > [!IMPORTANT]
 > إذا قمت بتعيين تحديثات [صفحة معلومات الأمان من Microsoft](https://www.microsoft.com/security/portal/definitions/adl.aspx) كمصدر احتياطي بعد Windows Server Update Service أو Microsoft Update، يتم تنزيل التحديثات فقط من تحديثات معلومات الأمان وتحديثات النظام الأساسي عندما يعتبر التحديث الحالي قديما. (بشكل افتراضي، هذا هو سبعة أيام متتالية من عدم القدرة على تطبيق التحديثات من خدمة تحديث خادم Windows أو خدمات Microsoft Update).
-> ومع ذلك، يمكنك [تعيين عدد الأيام قبل الإبلاغ عن الحماية على أنها قديمة](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).<p>
+> ومع ذلك، يمكنك [تعيين عدد الأيام قبل الإبلاغ عن الحماية على أنها قديمة](/microsoft-365/security/defender-endpoint/manage-outdated-endpoints-microsoft-defender-antivirus).<p>
 > اعتبارا من يوم الاثنين، 21 أكتوبر 2019، سيتم توقيع تحديثات معلومات الأمان وتحديثات النظام الأساسي SHA-2 حصريا. يجب تحديث الأجهزة لدعم SHA-2 من أجل الحصول على أحدث تحديثات معلومات الأمان وتحديثات النظام الأساسي. لمعرفة المزيد، راجع [متطلبات دعم توقيع التعليمات البرمجية SHA-2 2 2019 Windows وWSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 يحتوي كل مصدر على سيناريوهات نموذجية تعتمد على كيفية تكوين شبكتك، بالإضافة إلى عدد مرات نشر التحديثات، كما هو موضح في الجدول التالي:
-
-<br/><br/>
 
 |موقع|نموذج السيناريو|
 |---|---|
@@ -287,7 +285,7 @@ SignatureDefinitionUpdateFileSharesSource
     > لا تقم بإضافة المجلد x64 (أو x86) في المسار. تضيفها عملية mpcmdrun.exe تلقائيا.
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

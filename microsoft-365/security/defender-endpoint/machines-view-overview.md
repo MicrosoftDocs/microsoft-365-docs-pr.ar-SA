@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e5bf4e09224961d9a6cb0f0dc076b672fd20aabc
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: 78cb81b1a0da9f0d1965dab7c209067a4e8d02e6
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368166"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874163"
 ---
 # <a name="device-inventory"></a>بيانات الجهاز
 
@@ -28,7 +28,7 @@ ms.locfileid: "65368166"
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -70,7 +70,7 @@ ms.locfileid: "65368166"
 
 ## <a name="navigate-to-the-device-inventory-page"></a>الانتقال إلى صفحة مخزون الجهاز
 
-الوصول إلى صفحة مخزون الجهاز عن طريق تحديد **مخزون الجهاز** من قائمة التنقل **لنقاط النهاية** في [مدخل Microsoft 365 Defender](/defender/microsoft-365-security-center-mde).
+الوصول إلى صفحة مخزون الجهاز عن طريق تحديد **مخزون الجهاز** من قائمة التنقل **لنقاط النهاية** في [مدخل Microsoft 365 Defender](/microsoft-365/security/defender-business/mdb-get-started).
 
 ## <a name="device-inventory-overview"></a>نظرة عامة على مخزون الجهاز
 

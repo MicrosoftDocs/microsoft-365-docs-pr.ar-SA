@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 5a38ed6fbdcebf54dcd8bc34458733b5edefb850
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2000d10918c7e351c7e4bedfe8281b6a011cca9d
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623161"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872413"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>التوافق برنامج الحماية من الفيروسات من Microsoft Defender مع منتجات الأمان الأخرى
 
@@ -49,7 +49,7 @@ ms.locfileid: "65623161"
 > [!IMPORTANT]
 > - يتوفر برنامج الحماية من الفيروسات من Microsoft Defender على الأجهزة التي تعمل Windows 10 و11، Windows Server 2022، Windows Server 2019، Windows Server، الإصدار 1803 أو الأحدث، Windows Server 2016. 
 > - يتوفر برنامج الحماية من الفيروسات من Microsoft Defender أيضا على Windows Server 2012 R2 عند إلحاقه باستخدام [الحل الحديث الموحد](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
-> - في Windows 8.1، يتم توفير الحماية من الفيروسات على مستوى المؤسسة ك [System Center Endpoint Protection](/الإصدارات السابقة/system-center/system-center-2012-R2/hh508760(v=technet.10)، والتي تتم إدارتها من خلال Microsoft Endpoint Configuration Manager.
+> - في Windows 8.1، يتم تقديم الحماية من الفيروسات لنقطة النهاية على مستوى المؤسسة [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10))، والتي تتم إدارتها من خلال Microsoft Endpoint Configuration Manager.
 > - كما يتم تقديم Windows Defender [للأجهزة الاستهلاكية على Windows 8.1، على](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender) الرغم من أن Windows Defender لا يوفر إدارة على مستوى المؤسسة.
 
 ## <a name="antivirus-protection-without-defender-for-endpoint"></a>الحماية من الفيروسات بدون Defender لنقطة النهاية
@@ -65,8 +65,8 @@ ms.locfileid: "65623161"
 |:---|:---|:---|
 |Windows 10 <br/> Windows 11|برنامج الحماية من الفيروسات من Microsoft Defender|الوضع النشط|
 |Windows 10 <br/> Windows 11|حل الحماية من الفيروسات/الحماية من البرامج الضارة غير التابع ل Microsoft|وضع التعطيل (يحدث تلقائيا)|
-|Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server أو الإصدار 1803 أو الأحدث <br/> Windows Server 2016‏ |برنامج الحماية من الفيروسات من Microsoft Defender|الوضع النشط|
-|Windows Server 2022<br/>Windows Server 2019<br/>Windows Server أو الإصدار 1803 أو الأحدث <br/> Windows Server 2016‏  |حل الحماية من الفيروسات/الحماية من البرامج الضارة غير التابع ل Microsoft|معطل (تعيين يدوي) <sup>[[1](#fn1)]</sup>|
+|Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server أو الإصدار 1803 أو الأحدث <br/> Windows Server 2016‏ <br/> Windows Server 2012 R2 |برنامج الحماية من الفيروسات من Microsoft Defender|الوضع النشط|
+|Windows Server 2022<br/>Windows Server 2019<br/>Windows Server أو الإصدار 1803 أو الأحدث <br/> Windows Server 2016‏ |حل الحماية من الفيروسات/الحماية من البرامج الضارة غير التابع ل Microsoft|معطل (تعيين يدوي) <sup>[[1](#fn1)]</sup>|
 
 (<a id="fn1">1</a>) على Windows Server، إذا كنت تقوم بتشغيل منتج الحماية من الفيروسات غير التابع ل Microsoft، يمكنك إلغاء تثبيت برنامج الحماية من الفيروسات من Microsoft Defender لمنع التعارض. إذا تم إلحاق الجهاز Microsoft Defender لنقطة النهاية، يمكنك استخدام برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل (انظر أدناه).
 

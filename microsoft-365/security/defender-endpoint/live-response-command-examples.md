@@ -1,7 +1,7 @@
 ---
 title: أمثلة أوامر الاستجابة المباشرة
-description: تعرف على كيفية تشغيل أوامر الاستجابة المباشرة الأساسية أو المتقدمة ل Microsoft Defender ل Endpoint، وشاهد أمثلة حول كيفية استخدامها.
-keywords: مثال، أمر، cli، بعيد، shell، اتصال، live، استجابة، في الوقت الحقيقي، الأمر، البرنامج النصي، إعادة المعالجة، البحث، التصدير، السجل، إسقاط، تنزيل، ملف
+description: تعلم كيفية تشغيل أوامر الاستجابة المباشرة الأساسية أو المتقدمة Microsoft Defender لنقطة النهاية، والاطلاع على أمثلة حول كيفية استخدامها.
+keywords: على سبيل المثال، الأمر، cli، البعيد، shell، الاتصال، المباشر، الاستجابة، الوقت الحقيقي، الأمر، البرنامج النصي، المعالجة، التتبع، التصدير، السجل، الإفلات، التنزيل، الملف
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 325146ba7ed40e27c50eaca490c70d3988b1198f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 77a1bd5c9234b7a38266be55825726e683557eb4
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63570155"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872347"
 ---
 # <a name="live-response-command-examples"></a>أمثلة أوامر الاستجابة المباشرة
 
@@ -27,14 +27,14 @@ ms.locfileid: "63570155"
 
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-تعرف على الأوامر الشائعة المستخدمة في الاستجابة المباشرة وشاهد أمثلة حول كيفية استخدامها عادة.
+تعرف على الأوامر الشائعة المستخدمة في الاستجابة المباشرة واطلع على أمثلة حول كيفية استخدامها عادة.
 
-استنادا إلى الدور الذي تقوم به، يمكنك تشغيل أوامر الاستجابة المباشرة الأساسية أو المتقدمة. لمزيد من المعلومات حول الأوامر الأساسية والمتقدمة، راجع [التحقق من الكيانات على الأجهزة باستخدام الاستجابة المباشرة](live-response.md).
+اعتمادا على الدور الذي لديك، يمكنك تشغيل أوامر الاستجابة المباشرة الأساسية أو المتقدمة. لمزيد من المعلومات حول الأوامر الأساسية والمتقدمة، راجع [التحقيق في الكيانات على الأجهزة باستخدام الاستجابة المباشرة](live-response.md).
 
 ## `analyze`
 
@@ -110,16 +110,16 @@ getfile c:\Users\user\Desktop\work.txt -auto
 
 > [!NOTE]
 >
-> لا يمكن تنزيل *أنواع* الملفات التالية باستخدام هذا الأمر من داخل الاستجابة المباشرة:
+> *يتعذر* تنزيل أنواع الملفات التالية باستخدام هذا الأمر من داخل Live Response:
 >
-> - [إعادة افصل ملفات النقاط](/windows/desktop/fileio/reparse-points/)
-> - [ملفات متباعدة](/windows/desktop/fileio/sparse-files/)
-> - إفراغ الملفات
-> - الملفات الظاهرية أو الملفات غير الموجودة محليا بشكل كامل
+> - [إعادة توزيع ملفات النقطة](/windows-hardware/drivers/ifs/reparse-points)
+> - [ملفات متناثرة](/windows-server/administration/windows-commands/fsutil-sparse)
+> - ملفات فارغة
+> - الملفات الظاهرية أو الملفات غير الموجودة بشكل كامل محليا
 >
-> يتم دعم *أنواع الملفات* هذه بواسطة [PowerShell](/powershell/scripting/overview).
+> *يتم* دعم أنواع الملفات هذه بواسطة [PowerShell](/powershell/scripting/overview).
 >
-> استخدم PowerShell كبديل، إذا كنت تواجه مشاكل في استخدام هذا الأمر من داخل Live Response.
+> استخدم PowerShell كبديل، إذا كان لديك مشاكل في استخدام هذا الأمر من داخل Live Response.
 
 ## `library`
 
@@ -221,8 +221,8 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 
 > [!NOTE]
 >
-> بالنسبة لأوامر التشغيل الطويلة مثل '**تشغيل**' أو '**getfile**'، قد تحتاج إلى استخدام الرمز '**&**' في نهاية الأمر لتنفيذ هذا الإجراء في الخلفية.
-> سيتيح لك ذلك الاستمرار في التحقق من الجهاز والعودة إلى أمر الخلفية عند القيام باستخدام الأمر الأساسي '**fg**['](live-response.md#basic-commands).
+> بالنسبة إلى الأوامر طويلة الأمد مثل '**run**' أو '**getfile**'، قد تحتاج إلى استخدام الرمز '**&**' في نهاية الأمر لتنفيذ هذا الإجراء في الخلفية.
+> سيسمح لك هذا بمتابعة التحقيق في الجهاز والعودة إلى الأمر في الخلفية عند الانتهاء من استخدام [الأمر الأساسي](live-response.md#basic-commands) '**fg**'.
 
 ## `scheduledtask`
 

@@ -17,19 +17,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 83da2034a04da85849383700204174110ceffa57
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 6df00016658ee8afb703c15b95a969169ab80b41
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188515"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872325"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender لنقطة النهاية - الدفاع عن تهديدات الجوال
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -111,7 +111,7 @@ Microsoft Defender لنقطة النهاية على Android وiOS هو **حل ا
 
 - تظهر الأجهزة في قائمة مخزون الأجهزة: بعد نجاح عملية إلحاق Defender لنقطة النهاية على الجهاز المحمول، تحقق من أن الجهاز مدرج في "مخزون الجهاز" في [وحدة تحكم الأمان](https://security.microsoft.com).
 
-- قم بتشغيل اختبار الكشف عن البرامج الضارة على جهاز يعمل بنظام Android: قم بتثبيت أي تطبيق فيروسات اختبار من متجر Google play وتحقق من اكتشافه بواسطة Microsoft Defender لنقطة النهاية. فيما يلي مثال على التطبيق الذي يمكن استخدامه لهذا الاختبار: [اختبار الفيروسات](https://play.google.com/store/apps/details?id=com.androidantivirus.testvirus). لاحظ أنه على Android Enterprise مع ملف تعريف العمل، يتم دعم ملف تعريف العمل فقط.
+- قم بتشغيل اختبار الكشف عن البرامج الضارة على جهاز يعمل بنظام Android: قم بتثبيت أي تطبيق فيروسات اختبار من متجر Google play وتحقق من اكتشافه بواسطة Microsoft Defender لنقطة النهاية. فيما يلي مثال على التطبيق الذي يمكن استخدامه لهذا الاختبار: [اختبار الفيروسات](https://play.google.com/store/apps/details?id=com.antivirus&hl=en_US&gl=US). لاحظ أنه على Android Enterprise مع ملف تعريف العمل، يتم دعم ملف تعريف العمل فقط.
 
 - تشغيل اختبار التصيد الاحتيالي: استعرض وتحقق https://smartscreentestratings2.net من حظره من قبل Microsoft Defender لنقطة النهاية. لاحظ أنه على Android Enterprise مع ملف تعريف العمل، يتم دعم ملف تعريف العمل فقط.
 

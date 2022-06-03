@@ -17,16 +17,15 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 05/20/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 7ac72d88975231bb76f6e097a80f372a8ffac535
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+ms.openlocfilehash: 36aa48f26e60e2c3afb034a218c3356e27d75ffd
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65626954"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873347"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>حماية إعدادات الأمان باستخدام الحماية من العبث
 
@@ -154,7 +153,7 @@ ms.locfileid: "65626954"
 - يجب إلحاق أجهزتك [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/onboarding).
 - يجب أن يكون لديك [الأذونات المناسبة المعينة](/microsoft-365/security/defender-endpoint/assign-portal-access) ، مثل المسؤول العام أو مسؤول الأمان أو عمليات الأمان.
 - تستخدم مؤسستك [إدارة نقاط النهاية من Microsoft لإدارة الأجهزة](/mem/endpoint-manager-getting-started). (إدارة نقاط النهاية من Microsoft (MEM) مطلوبة؛ يتم تضمين MEM في Microsoft 365 E3/E5، Enterprise Mobility + Security E3/E5، Microsoft 365 Business Premium، Microsoft 365 F1/F3، Microsoft 365  G3/G5 الحكومية، وتراخيص التعليم المقابلة.)
-- يجب أن تكون أجهزة Windows قيد التشغيل Windows 11 أو Windows 10 [1709](/windows/release-health/status-windows-10-1709) أو [1803](/windows/release-health/status-windows-10-1803) أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) أو أحدث. (لمزيد من المعلومات حول الإصدارات، راجع [Windows 10 معلومات الإصدار](/windows/release-health/release-information).)
+- يجب أن تكون أجهزة Windows قيد التشغيل Windows 11 أو Windows 10 [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709) أو [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing) أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) أو أحدث. (لمزيد من المعلومات حول الإصدارات، راجع [Windows 10 معلومات الإصدار](/windows/release-health/release-information).)
 - يجب أن تستخدم الأمان Windows مع تحديث [معلومات الأمان](https://www.microsoft.com/wdsi/definitions) إلى الإصدار 1.287.60.0 (أو أعلى).
 - يجب أن تستخدم أجهزتك إصدار النظام الأساسي 4.18.1906.3 (أو أعلى) وإصدار `1.1.15500.X` محرك مكافحة البرامج الضارة (أو أعلى). ([إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](manage-updates-baselines-microsoft-defender-antivirus.md).)
 
@@ -200,8 +199,7 @@ ms.locfileid: "65626954"
 
 > [!NOTE]
 > تحاول كتل الحماية من العبث بتعديل إعدادات برنامج الحماية من الفيروسات من Microsoft Defender من خلال السجل.
->
-> للمساعدة في التأكد من أن الحماية من العبث لا تتداخل مع منتجات الأمان غير التابعة ل Microsoft أو البرامج النصية لتثبيت المؤسسة التي تعدل هذه الإعدادات، انتقل إلى **أمن Windows** وتحديث **معلومات الأمان** إلى الإصدار 1.287.60.0 أو الإصدارات الأحدث. (راجع [تحديثات معلومات الأمان](https://www.microsoft.com/wdsi/definitions).) بمجرد إجراء هذا التحديث، تستمر الحماية من العبث بحماية إعدادات التسجيل، وتحاول السجلات تعديلها دون إرجاع الأخطاء.
+> للمساعدة في التأكد من أن الحماية من العبث لا تتداخل مع منتجات الأمان غير التابعة ل Microsoft أو البرامج النصية لتثبيت المؤسسة التي تعدل هذه الإعدادات، انتقل إلى **أمن Windows** وتحديث **معلومات الأمان** إلى الإصدار 1.287.60.0 أو الإصدارات الأحدث. (راجع [تحديثات معلومات الأمان](https://www.microsoft.com/wdsi/definitions).) بعد إجراء هذا التحديث، تستمر الحماية من العبث في حماية إعدادات التسجيل، وتحاول السجلات تعديلها دون إرجاع الأخطاء.
 
 إذا كنت مستخدما منزليا، أو لم تكن خاضعا لإعدادات يديرها فريق أمان، يمكنك استخدام تطبيق أمن Windows لإدارة الحماية من العبث بالبيانات. يجب أن يكون لديك أذونات المسؤول المناسبة على جهازك لتغيير إعدادات الأمان، مثل الحماية من العبث بالبيانات.
 
@@ -249,7 +247,7 @@ ms.locfileid: "65626954"
 
 - Windows 11
 - Windows 11 Enterprise متعددة الجلسات
-- Windows 10 OS [1709](/windows/release-health/status-windows-10-1709) أو [1803](/windows/release-health/status-windows-10-1803) أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) أو أحدث مع [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint).
+- Windows 10 OS [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709) أو [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing) أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) أو أحدث مع [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint).
 - Windows 10 Enterprise متعددة الجلسات
   
 إذا كنت تستخدم Configuration Manager، الإصدار 2006، مع إرفاق المستأجر، يمكن توسيع الحماية من العبث بالإنترنت إلى Windows Server 2012 R2، Windows Server 2016، Windows Server 2019، Windows Server 2022. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).

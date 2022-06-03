@@ -1,9 +1,9 @@
 ---
 title: كيفية طلب نقل البيانات
-ms.author: andyber
-author: andybergen
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 12/10/2019
+ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: يجب على عملاء Office 365 الحاليين تقديم طلب قبل الموعد النهائي لبلدهم بنقل بيانات خدماتهم Microsoft 365 إلى منطقتهم الجغرافية الجديدة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 023262910f55da0e1145cc02f339debf4dffdcd5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 492e7680524728a136d5aa5530285e50b47f2935
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096293"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874141"
 ---
 # <a name="how-to-request-your-data-move"></a>كيفية طلب نقل البيانات
 
@@ -75,7 +75,7 @@ ms.locfileid: "65096293"
 
 [نقل البيانات الأساسية إلى جغرافيا لمركز بيانات Office 365 جديد](moving-data-to-new-datacenter-geos.md)
 
-[الأسئلة المتداولة حول نقل البيانات](data-move-faq.yml)
+[الأسئلة المتداولة حول نقل البيانات](data-move-faq.md)
 
 [جغرافيا لمركز بيانات جديد Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   

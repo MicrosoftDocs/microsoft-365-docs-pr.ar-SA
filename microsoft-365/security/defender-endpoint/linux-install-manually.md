@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b467d87f16900375ca2db2f8478bf001780c9059
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: a9d16cb82354bcb44e817de3207cb49de66dbf91
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130330"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873039"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>نشر Microsoft Defender لنقطة النهاية على Linux يدويا
 
@@ -84,8 +84,8 @@ ms.locfileid: "65130330"
     |إصدار & Distro|حزمه|
     |---|---|
     |بالنسبة إلى RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
-    |ل RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-    |بالنسبة إلى RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |ل RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
+    <!--|بالنسبة إلى RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
     |ل Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |ل Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
@@ -323,12 +323,12 @@ ms.locfileid: "65130330"
 
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: MicrosoftDefenderATPOnboardingLinuxServer.sh
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
 ## <a name="client-configuration"></a>تكوين العميل
 
-1. انسخ MicrosoftDefenderATPOnboardingLinuxServer.sh إلى الجهاز الهدف.
+1. انسخ MicrosoftDefenderATPOnboardingLinuxServer.py إلى الجهاز الهدف.
 
     > [!NOTE]
     > في البداية جهاز العميل غير مقترن بمؤسسة وسمة *orgId* فارغة.
@@ -337,10 +337,21 @@ ms.locfileid: "65130330"
     mdatp health --field org_id
     ```
 
-2. تشغيل MicrosoftDefenderATPOnboardingLinuxServer.sh.
+2. تشغيل MicrosoftDefenderATPOnboardingLinuxServer.py.
+
+    > [!NOTE]
+    > لتشغيل هذا الأمر، يجب أن يكون لديك `python`  أو `python3` مثبتا على الجهاز استنادا إلى disto والإصدار. إذا لزم الأمر، فراجع [التعليمات خطوة بخطوة لتثبيت Python على Linux](https://opensource.com/article/20/4/install-python-linux).
+    
+    إذا كنت تقوم بتشغيل RHEL 8.x أو Ubuntu 20.04 أو أعلى، فستحتاج إلى استخدام `python3`.
 
     ```bash
-    sudo bash MicrosoftDefenderATPOnboardingLinuxServer.sh
+    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
+    ```
+
+    بالنسبة لبقية الفرق والإصدارات، ستحتاج إلى استخدام `python`.
+    
+    ```bash
+    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
     
 3. تحقق من أن الجهاز مقترن الآن بمؤسستك ويبلغ عن معرف مؤسسة صالح:

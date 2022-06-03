@@ -7,7 +7,6 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/19/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,18 +16,18 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 774d54aee080fbe3d6f5576fb29c85d887717b70
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ace1eae6ab668a34e4ceff676b9edf01196521dd
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663501"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872709"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>نظرة عامة على Microsoft Defender لنقطة النهاية الخطة 1
 
 **ينطبق على**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان نقطة نهاية المؤسسة مصمم لمساعدة المؤسسات مثل مؤسستك على منع التهديدات المتقدمة واكتشافها والتحقيق فيها والاستجابة لها. يسرنا أن نعلن أن Defender for Endpoint متوفر الآن في خطتين: 
 
@@ -58,7 +57,7 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان
 - **[إجراءات الاستجابة اليدوية](#manual-response-actions)**، مثل إرسال ملف إلى العزل، التي يمكن لفريق الأمان اتخاذها على الأجهزة أو الملفات عند اكتشاف التهديدات
 - **[قدرات تقليل الأجزاء المعرضة للهجوم](#attack-surface-reduction)** التي تعمل على تصلب الأجهزة، ومنع الهجمات لمدة صفرية، وتوفر تحكما دقيقا في الوصول إلى نقطة النهاية وسلوكياتها
 - **[التكوين والإدارة المركزيان](#centralized-management)** مع مدخل Microsoft 365 Defender والتكامل مع إدارة نقاط النهاية من Microsoft
-- **[حماية مجموعة متنوعة من الأنظمة الأساسية](#cross-platform-support)**، بما في ذلك أجهزة Windows وmacOS وiOS وAndroid
+- **[حماية مجموعة متنوعة من الأنظمة الأساسية](#cross-platform-support)**، بما في ذلك أجهزة Windows macOS وiOS وAndroid
 
 توفر الأقسام التالية مزيدا من التفاصيل حول هذه القدرات. 
 
@@ -149,7 +148,7 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان
 - حماية البيانات الحساسة والملكية الفكرية
 - توسيع استثمار الأمان الخاص بك
 
-لمعرفة المزيد، راجع [Windows Defender Firewall مع أمان متقدم](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+لمعرفة المزيد، راجع [جدار حماية Windows Defender مع أمان متقدم](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### <a name="application-control"></a>التحكم في التطبيق
 
@@ -193,13 +192,16 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان
 - Windows 7 (ESU مطلوب)
 - Windows 8.1
 - Windows 10 أو الإصدار 1709 أو الإصدارات الأحدث
-- macOS: 11.5 (Big Sur) أو 10.15.7 (Catalina) أو 10.14.6 (Mojave)
+- Windows 10 Enterprise
+- Windows 10 Enterprise LTSC 2016 (أو أحدث)](/windows/whats-new/ltsc/)
+- Windows 10 Enterprise IoT
+- macOS (يتم دعم أحدث ثلاثة إصدارات)
 - دائره الرقابه الداخليه
 - نظام التشغيل Android
 
 ## <a name="next-steps"></a>الخطوات التالية
 
 - [مقارنة Microsoft Defender لنقطة النهاية الخطة 1 بالخطة 2](defender-endpoint-plan-1-2.md)
-- [إعداد وتكوين Defender لنقطة النهاية الخطة 1](mde-p1-setup-configuration.md)
+- [إعداد وتكوين الخطة 1 لـ Defender لنقطة النهاية](mde-p1-setup-configuration.md)
 - [بدء استخدام Defender لنقطة النهاية الخطة 1](mde-plan1-getting-started.md)
 - [إدارة Defender للخطة 1 لنقطة النهاية](mde-p1-maintenance-operations.md)

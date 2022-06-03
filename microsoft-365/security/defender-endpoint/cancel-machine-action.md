@@ -1,7 +1,7 @@
 ---
-title: API (API) الإجراء "إلغاء الجهاز"
-description: تعرف على كيفية إلغاء إجراء جهاز تم بدء تشغيله بالفعل
-keywords: apis، رسم api،
+title: إلغاء واجهة برمجة تطبيقات إجراء الجهاز
+description: تعرف على كيفية إلغاء إجراء جهاز تم تشغيله بالفعل
+keywords: واجهة برمجة التطبيقات، واجهة برمجة تطبيقات الرسم البياني،
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,45 +18,45 @@ ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fc4191043e19df7fea4f350d85acd78d2eca1551
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 08f302a541e60cb2844dc6ef2b91509556f03330
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63579627"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873721"
 ---
-# <a name="cancel-machine-action-api"></a>API (API) الإجراء "إلغاء الجهاز"
+# <a name="cancel-machine-action-api"></a>إلغاء واجهة برمجة تطبيقات إجراء الجهاز
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [مشكلات الأداء في Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/defender-endpoint)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a>وصف API
+## <a name="api-description"></a>وصف واجهة برمجة التطبيقات
 
-إلغاء إجراء جهاز تم بدء تشغيله بالفعل لم يكن في الحالة النهائية بعد (مكتمل أو ملغى أو فشل).
+إلغاء إجراء جهاز تم تشغيله بالفعل لم يتم تشغيله بعد في الحالة النهائية (مكتمل، تم الإلغاء، فشل).
 
 ## <a name="limitations"></a>القيود
 
-1. قيود السعر ل API هذه هي 100 مكالمة في الدقيقة و1500 مكالمة في الساعة.
+1. قيود المعدل لواجهة برمجة التطبيقات هذه هي 100 مكالمة في الدقيقة و1500 مكالمة في الساعة.
 
 ## <a name="permissions"></a>الأذونات
 
-أحد الأذونات التالية مطلوبة لاستدعاء API هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [بدء العمل](apis-intro.md).
+أحد الأذونات التالية مطلوب لاستدعاء واجهة برمجة التطبيقات هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع ["بدء الاستخدام](apis-intro.md)".
 
-|نوع الإذن|الإذن|اسم عرض الأذونات|
+|نوع الإذن|اذن|اسم عرض الإذن|
 |---|---|---|
-|Application|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|جمع الطب الشرعي <br>جهاز عزل<br>تقييد تنفيذ التعليمات البرمجية<br>  جهاز المسح الضوئي<br>  جهاز Offboard<br> إيقاف وفحص<br> تشغيل الاستجابة المباشرة على جهاز معين|
-|مفوض (حساب العمل أو المدرسة)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|جمع الطب الشرعي<br> جهاز عزل<br>  تقييد تنفيذ التعليمات البرمجية<br> جهاز المسح الضوئي<br>جهاز Offboard<br> إيقاف وفحص<br> تشغيل الاستجابة المباشرة على جهاز معين|
+|Application|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|جمع الأدلة الجنائية <br>جهاز عزل<br>تقييد تنفيذ التعليمات البرمجية<br>  جهاز المسح الضوئي<br>  جهاز إيقاف التجهيز<br> الإيقاف والعزل<br> تشغيل الاستجابة المباشرة على جهاز معين|
+|مفوض (حساب العمل أو المؤسسة التعليمية)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|جمع الأدلة الجنائية<br> جهاز عزل<br>  تقييد تنفيذ التعليمات البرمجية<br> جهاز المسح الضوئي<br>جهاز إيقاف التجهيز<br> الإيقاف والعزل<br> تشغيل الاستجابة المباشرة على جهاز معين|
 
 ## <a name="http-request"></a>طلب HTTP
 
@@ -64,24 +64,24 @@ ms.locfileid: "63579627"
 POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel
 ```
 
-## <a name="request-headers"></a>طلب رؤوس
+## <a name="request-headers"></a>عناوين الطلبات
 
-|الاسم|النوع|الوصف|
+|الاسم|نوع|الوصف|
 |---|---|---|
 |التخويل|سلسلة|حامل {token}. مطلوب.|
-|نوع المحتوى|سلسلة|application/json. مطلوب.|
+|نوع المحتوى|سلسله|التطبيق/json. مطلوب.|
 
-## <a name="request-body"></a>طلب الحصول على "هيئة"
+## <a name="request-body"></a>نص الطلب
 
-|المعلمة|النوع|الوصف|
+|المعلمه|نوع|الوصف|
 |---|---|---|
-|تعليق|سلسلة|تعليق لاقرانه مع إجراء الإلغاء.|
+|التعليق|سلسلة|تعليق لإقرانه بإجراء الإلغاء.|
 
-## <a name="response"></a>الاستجابة
+## <a name="response"></a>استجابه
 
-إذا نجح هذا الأسلوب، فيرجع رمز الاستجابة 200، موافق مع كيان إجراء آلي. إذا لم يتم العثور على كيان إجراء الجهاز الذي له الم id المحدد - 404 لم يتم العثور عليه.
+إذا نجحت، يقوم هذا الأسلوب بإرجاع 200، تعليمة برمجية استجابة موافق مع كيان إجراء الجهاز. إذا لم يتم العثور على كيان إجراء الجهاز ذي المعرف المحدد - 404 لم يتم العثور عليه.
 
-## <a name="example"></a>مثال
+## <a name="example"></a>المثال
 
 ### <a name="request"></a>طلب
 
@@ -98,6 +98,6 @@ https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-a
 }
 ```
 
-## <a name="related-topic"></a>موضوع ذو صلة
+## <a name="related-topic"></a>الموضوع ذو الصلة
 
-- [الحصول على API للعمل على الجهاز](get-machineaction-object.md)
+- [الحصول على واجهة برمجة تطبيقات إجراء الجهاز](get-machineaction-object.md)

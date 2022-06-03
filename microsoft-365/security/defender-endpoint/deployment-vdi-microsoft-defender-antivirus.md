@@ -10,17 +10,16 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/18/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 690ec028b3013bf00e28547ff440c7804b4d0f64
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8cb3dcec3690ae3a4433bfffee53dc99842c0028
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416409"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872303"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>دليل النشر برنامج الحماية من الفيروسات من Microsoft Defender في بيئة البنية الأساسية لسطح المكتب الظاهري (VDI)
 
@@ -36,7 +35,7 @@ ms.locfileid: "65416409"
 
 لمزيد من المعلومات حول سطح المكتب البعيد لـ Microsoft Services ودعم VDI، راجع [وثائق Azure Virtual Desktop](/azure/virtual-desktop).
 
-بالنسبة إلى الأجهزة الظاهرية المستندة إلى Azure، راجع [تثبيت Endpoint Protection في Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection).
+بالنسبة إلى الأجهزة الظاهرية المستندة إلى Azure، راجع [تثبيت Endpoint Protection في Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 مع القدرة على نشر التحديثات بسهولة إلى الأجهزة الظاهرية التي تعمل في VDIs، قمنا بتقصير هذا الدليل للتركيز على كيفية الحصول على التحديثات على أجهزتك بسرعة وسهولة. لم تعد بحاجة إلى إنشاء الصور الذهبية وإغلاقها على أساس دوري، حيث يتم توسيع التحديثات إلى وحدات البت المكونة الخاصة بها على الخادم المضيف ثم تنزيلها مباشرة إلى الجهاز الظاهري عند تشغيله.
 
@@ -268,7 +267,7 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 لمزيد من المعلومات، راجع [تكوين استثناءات برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server](configure-exclusions-microsoft-defender-antivirus.md).
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

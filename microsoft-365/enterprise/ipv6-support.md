@@ -3,7 +3,7 @@ title: دعم IPv6 في خدمات Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/03/2021
+ms.date: 06/02/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,82 +18,49 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'ملخص: يصف دعم IPv6 في مكونات Microsoft 365 وفي عروض الحكومة Microsoft 365.'
-ms.openlocfilehash: 6cd53b71c6e15346d4940c539eea4aff0e5a613e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2619567e8dac6f4b87cba0108bcf105011c4a87c
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096469"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872731"
 ---
 # <a name="ipv6-support-in-microsoft-365-services"></a>دعم IPv6 في خدمات Microsoft 365
 
-يدعم Microsoft 365 كل من IPv6 وIPv4؛ ومع ذلك، لا يتم تمكين جميع ميزات Microsoft 365 بالكامل باستخدام IPv6. وهذا يعني أنه يجب عليك استخدام كل من IPv4 وIPv6 للاتصال Microsoft 365. إذا كنت تقوم بتصفية نسبة استخدام الشبكة الصادرة إلى Microsoft 365، يمكن العثور على القائمة الكاملة لعناوين IPv6 المعتمدة من قبل Microsoft 365 في [المقالة Microsoft 365 عناوين URL ونطاقات عناوين IP](urls-and-ip-address-ranges.md). بعد تكوين الشبكة الخاصة بك ويسمح بعناوين IPv6 المناسبة، يمكنك تنزيل [خطة اختبار IPv6 Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=293447) من مركز تنزيل Microsoft.
+مع تزايد اعتماد ودعم IPv6 عبر شبكات المؤسسة وموفري الخدمات والأجهزة، يتساءل العديد من العملاء عما إذا كان يمكن لمستخدميهم الاستمرار في الوصول إلى خدمات Microsoft 365 من عملاء IPv6 وشبكات IPv6. يمكن استخدام خدمات Microsoft 365 بنجاح من كل من أجهزة IPv6 المزدوجة المكدس وأجهزة IPv6 فقط. في الواقع، لدينا عدد متزايد من العملاء، من المستهلكين إلى الشركات الكبيرة، الذين يتحركون نحو اعتماد أكبر ل IPv6. بالنسبة لمعظم العملاء، لن تختفي IPv4 تماما من مشهدهم الرقمي، لذلك لا نخطط لطلب IPv6 أو إلغاء تحديد أولويات IPv4 في أي ميزات أو خدمات Microsoft 365.
 
-> [!NOTE]
-> يعد تمكين العملاء من تجربة Microsoft 365 خدمات SaaS من أي موقع وأي جهاز أولوية ل Microsoft. يشمل ذلك السماح للعملاء بالاتصال واستهلاك Microsoft 365 من عملاء IPv6 الممكنين وIPv6 فقط وأنظمة المعلومات. كما يتضمن تمكين عملاء الحكومة من الوفاء بالتزامات IPv6 على شبكاتهم مع الاستمرار في استهلاك Microsoft 365 سيناريوهات الإنتاجية دون أي انقطاع.  
-> توفر هذه المقالة قائمة بخدمات Microsoft 365 SaaS التي تسمح بالاتصال المباشر ب IPv6 اليوم. من المتوقع أن يستمر توسيع نطاق الخدمات التي تسمح بالاتصال المباشر ب IPv6. Microsoft 365 الخدمات غير المذكورة صراحة لدعم IPv6 المباشر، لتضمين خدمات مصادقة Azure Active Directory (AAD (دليل Azure النشط))، يجب اعتبار أنها تتطلب اتصال DNS64/NAT64 من عملاء وبيئات IPv6 فقط.  وهذا يتماشى مع الهدف الموضح حاليا في وثائق NIST USGv6 الحالية: متطلبات قدرة آلية الانتقال في [منشور NIST الخاص 500-267A Revision 1](https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.500-267Ar1.pdf) NAT64/DNS64 هي تقنيات مقبولة لتوظيفها.
-> - دعم NAT64 لآلية الانتقال NAT64 [RFC6146](https://datatracker.ietf.org/doc/html/rfc6146) Stateful NAT64: عنوان الشبكة وترجمة البروتوكول من عملاء IPv6 إلى خوادم IPv4
-> - دعم DNS64 لآلية الانتقال DNS64. [RFC6147](https://datatracker.ietf.org/doc/html/rfc6147) DNS64: ملحقات DNS لترجمة عنوان الشبكة من عملاء IPv6 إلى IPv4 Server
+تتمثل إحدى أولوياتنا الرئيسية مع Microsoft 365 في ضمان تجارب العملاء والمستخدمين السلسة عبر الإنترنت من أي موقع ومن أي جهاز. يتضمن ذلك الوصول إلى Microsoft 365 من أجهزة العملاء التي تستخدم IPv6 في تكوين المكدس المزدوج بالإضافة إلى الانتقال إلى عمليات نشر العميل IPv6 فقط. في معظم الحالات، عند اتباع نموذج قياسي قائم على الإنترنت للاتصال Microsoft 365 كما هو موضح في [مبادئ اتصال الشبكة Microsoft 365](microsoft-365-network-connectivity-principles.md) [وعناوين URL Microsoft 365 ونطاقات عناوين IP](urls-and-ip-address-ranges.md) وأفضل [ممارسات تخطيط الشبكة Microsoft 365](network-and-migration-planning.md#best-practices-for-network-planning-and-improving-migration-performance-for-office-365) ، لن تكون انتقالات IPv6 معطلة لتجربة المستخدم.
 
-  
-## <a name="ipv6-support-in-microsoft-365-subscription-service"></a>دعم IPv6 في خدمة اشتراك Microsoft 365
+توفر العديد من خدمات Microsoft 365 بالفعل دعم IPv6 الأصلي اليوم ويمكن الوصول إليه مباشرة من مكدس IPv6 المزدوج وعملاء IPv6 فقط. يسمح Microsoft 365 أيضا بالوصول من خلال تقنيات ترجمة IPv6 التقليدية إلى IPv4 (مثل وكلاء الأساس 64 أو DNS64/NAT64) شائعة الاستخدام من قبل العملاء وموفري حلول الشبكة للاتصال بموارد إنترنت IPv4.
 
-### <a name="exchange-online-and-ipv6"></a>Exchange Online وIPv6
+كما هو الحال مع أي خدمة SaaS والإنترنت بشكل عام، يتم توسيع نطاق واجهات Microsoft 365 والميزات وواجهات برمجة التطبيقات الممكنة في IPv6 بشكل مستمر ودون إجراء العميل المباشر أو التحكم فيه. إذا كنت تقوم بتشغيل خدمات IPv6 أو IPv6 فقط على شبكاتك التي تحتاج إلى الوصول إلى Microsoft 365 والإنترنت، فمن المستحسن تضمين آليات انتقالية ديناميكية ل IPv6/IPv4 مثل DNS64/NAT64 لضمان اتصال IPv6 من طرف إلى طرف Microsoft 365 دون أي عمليات إعادة تكوين أخرى للشبكة.
 
-إذا كان البرنامج الذي تستخدمه للاتصال Exchange Online يدعم IPv6، فسيستخدم IPv6 بشكل افتراضي على كل من الشبكات السلكية واللاسلكية. إذا كنت تريد التحكم في الاتصالات Exchange Online، فاستخدم نطاقات عناوين IP في [Microsoft 365 نطاقات عناوين URL وعناوين IP](urls-and-ip-address-ranges.md).
-  
-### <a name="sharepoint-online-and-ipv6"></a>SharePoint Online وIPv6
+تم تمكين معظم خدمات Microsoft 365 باستخدام إمكانات IPv6 أو سيتم تمكينها بشفافية كاملة للمستخدمين النهائيين ومسؤولين تكنولوجيا المعلومات. تحتوي بعض سيناريوهات Microsoft 365 (مثل البريد الإلكتروني الوارد المجهول) على متطلبات واعتبارات خاصة للاستخدام بالتزامن مع IPv6. لمزيد من التفاصيل حول متطلبات واعتبارات IPv6 المحددة للسيناريو، يرجى الاتصال بفريق حساب Microsoft أو دعم Microsoft.
 
- **Microsoft 365 Government G1/G3/G4/K1** إذا كان البرنامج الذي تستخدمه للاتصال SharePoint Online يدعم IPv6، فسيحاول استخدام IPv6 بشكل افتراضي.
-  
- **السحابة العامة متعددة المستأجرين** تمكن Microsoft SharePoint Online IPv6 بناء على طلبك. تحتاج إلى توفير عناوين IP الموضحة CIDR للبنية الأساسية DNS لمؤسستك. ضع في اعتبارك أنه لا يمكن مشاركة البنية الأساسية DNS هذه من قبل مؤسسات أخرى لتمكين IPv6 للمستأجر الخاص بك. بعد تمكين IPv6، إذا كان البرنامج الذي تستخدمه للاتصال SharePoint Online يدعم IPv6، فإنه يستخدم IPv6 بشكل افتراضي.
-  
-إذا كان البرنامج الذي تستخدمه للاتصال SharePoint Online يدعم IPv6، فسيستخدم IPv6 بشكل افتراضي على كل من الشبكات السلكية واللاسلكية. إذا كنت تريد التحكم في الاتصالات إلى SharePoint Online، فاستخدم نطاقات عناوين IP في [Microsoft 365 نطاقات عناوين URL وعناوين IP](urls-and-ip-address-ranges.md).
-  
- 
-  
-### <a name="skype-for-business-and-ipv6"></a>Skype for Business وIPv6
-
-الرجاء العلم أن IPv6 غير معتمد في Skype for Business ولا يمكن تمكينه بعد الآن.
-
-### <a name="microsoft-teams-sip-gateway-and-ipv6"></a>Microsoft Teams وبوابة SIP وIPV6
-
-يدعم Microsoft Teams التوجيه المباشر وبوابة SIP IPv4 فقط. تدعم خدمة Microsoft Teams والعميل كل من IPv4 وIPv6. إذا كنت تريد التحكم في الاتصالات Microsoft Teams، فاستخدم نطاقات عناوين IP في [Microsoft 365 نطاقات عناوين URL وعناوين IP](urls-and-ip-address-ranges.md).
-  
-### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection وIPv6
-
-يدعم Exchange Online Protection (EOP) IPv6 إذا حدث الإرسال عبر بروتوكول أمان طبقة النقل. بالنسبة إلى نطاق EOP، استخدم [عناوين URL Microsoft 365 ونطاقات عناوين IP](urls-and-ip-address-ranges.md).
-  
-### <a name="ipv6-support-for-microsoft-365-government-offerings"></a>دعم IPv6 لعروض Microsoft 365 الحكومية
-
-يتوافق دعم IPv6 Microsoft 365 لعروض الحكومة مع Office الإدارة والميزانية (OMB) للمسؤولين عن المعلومات في الأقسام التنفيذية والوكالة، بالإضافة إلى مصادقة الحكومة الفيدرالية لإصدار بروتوكول الإنترنت 6 (IPv6). [Microsoft Microsoft 365 for Government](https://go.microsoft.com/fwlink/p/?LinkId=325414) هي خدمة متعددة المستأجرين تخزن بيانات حكومة الولايات المتحدة في سحابة مجتمع منفصلة. مثل عروض Microsoft 365 الأخرى، يوفر خدمات الإنتاجية والتعاون، بما في ذلك Exchange Online، Skype for Business، SharePoint Online، Microsoft 365 Apps for enterprise. 
-
-تنطبق عروض Microsoft Microsoft 365 الحكومية فقط على عام 2013 والإصدارات الأحدث. لمزيد من المعلومات حول عروض الحكومة Microsoft 365، راجع [الإعلان عن Microsoft 365 للحكومة: سحابة القطاع الحكومي أمريكي](https://go.microsoft.com/fwlink/p/?LinkId=325414). International Traffic in Arms Regulations (ITAR) is a set of US government regulations that control the export and import of defense-related articles and services on the [United States Munitions List (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415). 
-
-توفر Microsoft Microsoft 365 للمؤسسات خدمات استضافة مخصصة لحلول إنتاجية Microsoft التي تدعم متطلبات الأمان والخصوصية والتوافق التنظيمي للوكالات الفيدرالية الأمريكية التي تتطلب شهادة إدارة أمان المعلومات الفيدرالية (FISMA) والكيانات التجارية الخاضعة ل ITAR.
-  
-## <a name="things-to-consider-when-using-ipv6-and-microsoft-365"></a>الأمور التي يجب مراعاتها عند استخدام IPv6 و Microsoft 365
-
-نوصي بعدم تعطيل IPv6. لمزيد من المعلومات، راجع [مقالة الإرشادات](https://support.microsoft.com/help/929852/guidance-for-configuring-ipv6-in-windows-for-advanced-users) هذه. لتحديد إصدارات IP المستخدمة على شبكتك، ضع في اعتبارك ما يلي:
-  
-- إذا احتوى عرض الأمر **IPConfig** في موجه الأوامر على صفوف تسمى "عنوان IPv6" أو "عنوان IPv6 مؤقت"، فلديك IPv6 في بيئتك.
-
-- إذا كانت جميع عناوين IPv6 تبدأ ب "fe80" وتتوافق مع الصفوف المسماة "Link-Local IPv6 Address"، فليس لديك IPv6 في بيئتك.
-
-قد تنطبق هذه الاعتبارات على شبكتك:
-  
-- لا تدعم خدمة الاشتراك العام الشراء بواسطة بطاقة الائتمان عبر IPv6. لا ينطبق هذا على سحابة القطاع الحكومي (سحابة القطاع الحكومي) لأن الحكومات لديها ترخيص اتفاقية Enterprise (EA).
-
-- لا يدعم IPv6 بعض سيناريوهات خدمات إدارة الحقوق (RMS).
-
-- لا يدعم IPv6 خادم BlackBerry® Enterprise Server (BES) لأن BlackBerry لا يدعم IPv6.
-
-- إذا كنت تستخدم خدمات الأمان المشترك لـ Active Directory (AD FS) مع Microsoft 365، فلن يتم دعم الإعلان عن نقطة نهاية شبكة AD FS Microsoft 365 باستخدام IPv6. يجب عدم تضمين سجلات AAAA في إدخال AD FS DNS عند استخدام Exchange Online. 
-
-فيما يلي ارتباط قصير يمكنك استخدامه للعودة: [https://aka.ms/o365ip6]()
+فيما يلي ارتباط قصير يمكنك استخدامه للعودة: [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[خارطة طريق Learning IPv6](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
-  
-[دليل بقاء IPv6](https://social.technet.microsoft.com/wiki/contents/articles/1728.ipv6-survival-guide.aspx)
+[نظرة عامة على اتصال الشبكة Microsoft 365](microsoft-365-networking-overview.md)
+
+[إدارة نقاط نهاية Office 365](managing-office-365-endpoints.md)
+
+[نطاقات عناوين IP وعناوين URL في Office 365](urls-and-ip-address-ranges.md)
+
+[عنوان IP لـ Office 365 وخدمة URL على ويب](microsoft-365-ip-web-service.md)
+
+[تقييم اتصال الشبكة Microsoft 365](assessing-network-connectivity.md)
+
+[تخطيط الشبكة وضبط الأداء Microsoft 365](network-planning-and-performance.md)
+
+[ضبط الأداء Office 365 باستخدام الخطوط الأساسية ومحفوظات الأداء](performance-tuning-using-baselines-and-history.md)
+
+[خطة استكشاف أخطاء الأداء وإصلاحها Office 365](performance-troubleshooting-plan.md)
+
+[شبكات تسليم المحتوى](content-delivery-networks.md)
+
+[اختبار اتصال Microsoft 365](https://aka.ms/netonboard)
+
+[كيف تبني Microsoft شبكتها العالمية السريعة والموثوق بها](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+
+[مدونة Office 365 Networking](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

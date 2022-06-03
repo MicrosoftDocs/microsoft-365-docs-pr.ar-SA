@@ -21,12 +21,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية رفع إعدادات الأمان واستخدام التقارير والتنبيهات والتحقيقات للحسابات ذات الأولوية في مؤسساتهم Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50d51bf2861d1ef1b9e4d9694fc9469fc5ec7406
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 99e4726af1226e044715d33e92a176c9292b49ab
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648624"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873369"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>توصيات الأمان للحسابات ذات الأولوية في Microsoft 365
 
@@ -53,7 +53,7 @@ ms.locfileid: "65648624"
 |[تدريب المستخدمين](#train-users)|![تضمين.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![تضمين](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![تضمين](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 > [!NOTE]
-> للحصول على معلومات حول تأمين _الحسابات المتميزة_ (حسابات المسؤولين)، راجع [هذا الموضوع](/azure/architecture/framework/security/critical-impact-accounts).
+> للحصول على معلومات حول تأمين _الحسابات المتميزة_ (حسابات المسؤولين)، راجع [هذا الموضوع](/security/compass/critical-impact-accounts).
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>زيادة أمان تسجيل الدخول للحسابات ذات الأولوية
 

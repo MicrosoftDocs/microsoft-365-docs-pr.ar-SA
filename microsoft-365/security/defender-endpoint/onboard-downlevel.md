@@ -14,22 +14,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0cd1e0aa999200814639f24401bf019774ca1d43
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 8ca88340ae90889c0e45c5905863373d930949b2
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825201"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872951"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>الإصدارات السابقة من Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**منصات**
+**الأنظمة الأساسية**
 
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
@@ -49,7 +49,7 @@ ms.locfileid: "64825201"
 بالنسبة Windows Server 2008 R2 SP1، لديك خيار [الإلحاق من خلال Microsoft Defender for Cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
 
 > [!NOTE]
-> مطلوب ترخيص خادم مستقل ل Defender لنقطة النهاية، لكل عقدة، من أجل إلحاق خادم Windows من خلال عامل مراقبة Microsoft (الخيار 1). بدلا من ذلك، يلزم ترخيص Microsoft Defender للخوادم، لكل عقدة، من أجل إلحاق خادم Windows من خلال Microsoft Defender for Cloud (الخيار 2)، راجع [الميزات المدعومة المتوفرة في Microsoft Defender for Cloud](/azure/security-center/security-center-services).
+> مطلوب ترخيص خادم مستقل ل Defender لنقطة النهاية، لكل عقدة، من أجل إلحاق خادم Windows من خلال عامل مراقبة Microsoft (الخيار 1). بدلا من ذلك، يلزم ترخيص Microsoft Defender للخوادم، لكل عقدة، من أجل إلحاق خادم Windows من خلال Microsoft Defender for Cloud (الخيار 2)، راجع [الميزات المدعومة المتوفرة في Microsoft Defender for Cloud](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
 
 > [!TIP]
 > بعد إلحاق الجهاز، يمكنك اختيار تشغيل اختبار الكشف للتحقق من أنه تم إلحاقه بشكل صحيح للخدمة. لمزيد من المعلومات، راجع [تشغيل اختبار الكشف على نقطة نهاية Defender for Endpoint التي تم إلحاقها حديثا](run-detection-test.md).
@@ -132,7 +132,7 @@ ms.locfileid: "64825201"
 
 ## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>إلحاق خوادم Windows من خلال Microsoft Defender for Cloud
 
-1. في جزء التنقل Microsoft 365 Defender، حدد **الإعدادات** >  **Device** **managementOnboarding** > .
+1. في جزء التنقل Microsoft 365 Defender، حدد **إعداد** إدارة  >  الإعدادات  > **Device****.**
 
 2. حدد **Windows Server 2008 R2 SP1** كنظام التشغيل.
 
@@ -200,7 +200,7 @@ ms.locfileid: "64825201"
     تنزيل تحديثات Windows Server 2008 R2 x64
     
     .NET Framework 3.5.1 (KB315418)<br>
-    [ل Windows Server 2008 R2 x64](https://download.microsoft.com/download/6/8/0/680ee424-358c-4fdf-a0de-b45dee07b711/windows6.1-kb3154518-x64.msu)
+    [ل Windows Server 2008 R2 x64](/iis/install/installing-iis-7/install-windows-server-2008-and-windows-server-2008-r2)
     
     >[!NOTE]
     > تفترض هذه المقالة أنك تستخدم خوادم مستندة إلى x64 (عامل MMA .exe الإصدار المتوافق مع x64 New SHA-2).

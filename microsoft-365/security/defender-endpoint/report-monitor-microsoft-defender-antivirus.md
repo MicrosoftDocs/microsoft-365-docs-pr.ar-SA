@@ -10,23 +10,22 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c36902d6c636c726a42292d7a6e4f0cdec60edb7
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 46abb6a11e1752934218a031993b10286d8ab420
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415096"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872237"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>الإبلاغ عن برنامج الحماية من الفيروسات من Microsoft Defender
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -39,16 +38,16 @@ ms.locfileid: "65415096"
 
 إذا كان لديك خادم معلومات أمان وإدارة أحداث (SIEM) تابع لجهة خارجية، يمكنك أيضا استهلاك [Windows أحداث عميل Defender](/windows/win32/events/windows-events).
 
-تتضمن أحداث Windows العديد من مصادر أحداث الأمان، بما في ذلك أحداث Security Account Manager (SAM) ([المحسنة Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)، راجع أيضا موضوع [تدقيق الأمان](/windows/device-security/auditing/security-auditing-overview)) [وأحداث Windows Defender](troubleshoot-microsoft-defender-antivirus.md).
+تتضمن أحداث Windows العديد من مصادر أحداث الأمان، بما في ذلك أحداث Security Account Manager (SAM) ([المحسنة Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)، راجع أيضا موضوع [تدقيق الأمان](/windows/security/threat-protection/auditing/security-auditing-overview)) [وأحداث Windows Defender](troubleshoot-microsoft-defender-antivirus.md).
 
 يمكن تجميع هذه الأحداث مركزيا باستخدام [مجمع أحداث Windows](/windows/win32/wec/windows-event-collector). غالبا ما تحتوي خوادم SIEM على موصلات لأحداث Windows، مما يسمح لك بربط جميع أحداث الأمان في خادم SIEM.
 
-يمكنك أيضا [مراقبة أحداث البرامج الضارة باستخدام حل تقييم البرامج الضارة في Log Analytics](/azure/log-analytics/log-analytics-malware).
+يمكنك أيضا [مراقبة أحداث البرامج الضارة باستخدام حل تقييم البرامج الضارة في Log Analytics](/security/benchmark/azure/security-control-logging-monitoring).
 
 لمراقبة الحالة أو تحديدها باستخدام PowerShell أو WMI أو Microsoft Azure، راجع [(جدول خيارات النشر والإدارة وإعداد التقارير)](deploy-manage-report-microsoft-defender-antivirus.md#ref2).
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

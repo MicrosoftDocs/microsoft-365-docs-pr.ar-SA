@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 958c58fab875ce86b0a3290450e2cf17c4b75a44
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 4f309c98b7278dbeb062deacf49553b7e73f58da
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320486"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873777"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>استكشاف مشكلات الإلحاق المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية
 
@@ -50,7 +50,7 @@ ms.locfileid: "65320486"
 
 - يمكن لأجهزة الكمبيوتر المصادقة باستخدام وحدة التحكم بالمجال
 - يمكن لأجهزة الكمبيوتر الوصول إلى موارد Microsoft التالية من داخل شبكة مؤسستك:
-  - https://enterpriseregistration.windows.net
+  - /windows/iot/iot-enterprise/commercialization/licensing
   - https://login.microsoftonline.com
   - https://device.login.microsoftonline.com
 - تم تكوين Azure AD الاتصال لمزامنة كائنات الكمبيوتر. بشكل افتراضي، تكون الوحدات التنظيمية للكمبيوتر في نطاق مزامنة الاتصال Azure AD. إذا كانت كائنات الكمبيوتر تنتمي إلى وحدات تنظيمية معينة (OUs)، فكون الوحدات التنظيمية للمزامنة في Azure AD الاتصال. لمعرفة المزيد حول كيفية مزامنة كائنات الكمبيوتر باستخدام Azure AD الاتصال، راجع [التصفية المستندة إلى وحدة تنظيمية](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
@@ -121,7 +121,7 @@ ms.locfileid: "65320486"
 |رمز الخطأ|حالة التسجيل|إجراءات المسؤول|
 |---|---|---|
 |`5-7`, `9`, `11-12`, `26-33`|خطأ عام|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان. قد يرجع ذلك إلى عدم استيفاء الجهاز [للمتطلبات الأساسية لقناة إدارة Microsoft Defender لنقطة النهاية](security-config-management.md). يمكن أن يساعد تشغيل ["محلل العميل"](https://aka.ms/BetaMDEAnalyzer) على الجهاز في تحديد السبب الجذري للمشكلة. إذا لم ينجح هذا الإجراء، فالرجاء الاتصال بالدعم.|
-| `8`, `44` | مشكلة تكوين إدارة نقاط النهاية من Microsoft | تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، لم يتم تكوين إدارة نقاط النهاية من Microsoft من خلال مركز الإدارة للسماح بتكوين الأمان Microsoft Defender لنقطة النهاية. تأكد من [تكوين المستأجر إدارة نقاط النهاية من Microsoft وتشغيل الميزة](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
+| `8`, `44` | مشكلة تكوين إدارة نقاط النهاية من Microsoft | تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، لم يتم تكوين إدارة نقاط النهاية من Microsoft من خلال مركز مسؤول للسماح بتكوين الأمان Microsoft Defender لنقطة النهاية. تأكد من [تكوين المستأجر إدارة نقاط النهاية من Microsoft وتشغيل الميزة](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
 |`13-14`,`20`,`24`,`25`|مشكلة في الاتصال|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان الذي قد يكون بسبب مشكلة في الاتصال. تحقق من فتح [Azure Active Directory ونقاط نهاية إدارة نقاط النهاية من Microsoft](security-config-management.md#connectivity-requirements) في جدار الحماية الخاص بك.|
 |`10`,`42`|فشل الانضمام المختلط العام|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان وفشل نظام التشغيل في تنفيذ الصلة المختلطة. استخدم [استكشاف أخطاء الأجهزة المختلطة المتصلة ب Azure Active Directory](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) وإصلاحها لاستكشاف أخطاء الانضمام المختلط على مستوى نظام التشغيل وإصلاحها.|
 |`15`|عدم تطابق المستأجر|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان لأن معرف المستأجر Microsoft Defender لنقطة النهاية لا يتطابق مع معرف مستأجر Azure Active Directory. تأكد من أن معرف مستأجر Azure Active Directory من مستأجر Defender لنقطة النهاية يطابق معرف المستأجر في إدخال SCP لمجالك. لمزيد من التفاصيل، [قم باستكشاف المشكلات المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية وإصلاحها](troubleshoot-security-config-mgt.md).|

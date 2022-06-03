@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 369c6a198035418a5c16e2a72d84c8dcfc88be2f
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3452f36068facc92885047184f7e00828f569cbc
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666427"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872995"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>استكشاف مشكلات الأداء وإصلاحها Microsoft Defender لنقطة النهاية على Linux
 
@@ -29,7 +29,7 @@ ms.locfileid: "64666427"
 
 **ينطبق على:**
 - [مشكلات الأداء في Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -190,7 +190,7 @@ ms.locfileid: "64666427"
    ![صورة لمثال سطر الأوامر.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
 > [!NOTE]
-> - يتطلب المحلل 'lxml' لإنتاج إخراج النتيجة. إذا لم يتم تثبيته، سيحاول المحلل إحضاره من المستودع الرسمي لحزم python أدناه: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - يتطلب المحلل 'lxml' لإنتاج إخراج النتيجة. إذا لم يتم تثبيته، سيحاول المحلل إحضاره من المستودع الرسمي لحزم python أدناه: <https://pypi.org/search/?q=lxml>
 > 
 > - بالإضافة إلى ذلك، تتطلب الأداة حاليا تثبيت الإصدار 3 من Python أو إصدار أحدث.
 >
@@ -243,9 +243,9 @@ ms.locfileid: "64666427"
 
   الوصف: ملف XML إضافي يستخدمه المحلل عند إنشاء تقرير HTML.
 
-- Auditd_info.txt
+- Audited_info.txt
 
-  الوصف: تفاصيل حول الخدمة التي تم تدقيقها والمكونات ذات الصلة لنظام التشغيل [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events)
+  الوصف: تفاصيل حول الخدمة التي تم تدقيقها والمكونات ذات الصلة لنظام التشغيل [Linux](/microsoft-365/security/defender-endpoint/linux-resources)
 
 - perf_benchmark.tar.gz
 

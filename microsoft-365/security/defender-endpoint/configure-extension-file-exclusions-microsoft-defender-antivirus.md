@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 864d67aeaa84713b1b2126b017fadacd0e43dc7a
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 7b1614738b17d7f3cf78a6bfabb84f85196d42ff
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623000"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873237"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>تكوين الاستثناءات والتحقق من صحتها استنادا إلى ملحق الملف وموقع المجلد
 
@@ -109,6 +109,7 @@ ms.locfileid: "65623000"
 3. قم بتوسيع الشجرة إلى **مكونات** \> Windows **برنامج الحماية من الفيروسات لـ Windows Defender** \> **الاستثناءات**.
 
 4. افتح إعداد **"استثناءات المسار"** للتحرير، وأضف الاستثناءات.
+
     1. تعيين الخيار إلى **ممكن**.
     2. ضمن المقطع **"خيارات** "، حدد **"إظهار**".
     3. حدد كل مجلد على السطر الخاص به ضمن عمود **اسم القيمة** .
@@ -118,6 +119,7 @@ ms.locfileid: "65623000"
 5. اختر **"موافق**".
 
 6. افتح إعداد Extension **Exclusions** للتحرير وأضف الاستثناءات الخاصة بك.
+
     1. تعيين الخيار إلى **ممكن**.
     2. ضمن المقطع **"خيارات** "، حدد **"إظهار**".
     3. أدخل كل ملحق ملف على السطر الخاص به ضمن عمود **اسم القيمة** .
@@ -192,7 +194,6 @@ ExclusionPath
 
 > [!IMPORTANT]
 > هناك قيود رئيسية وسيناريوهات استخدام لأحرف البدل هذه:
->
 > - يقتصر استخدام متغير البيئة على متغيرات الجهاز وتلك التي تنطبق على العمليات التي تعمل كحساب NT AUTHORITY\SYSTEM.
 > - يمكنك فقط استخدام ستة أحرف بدل كحد أقصى لكل إدخال.
 > - لا يمكنك استخدام حرف بدل بدلا من حرف محرك الأقراص.
@@ -200,8 +201,6 @@ ExclusionPath
 > - حاليا، لا يعتمد Microsoft Endpoint Configuration Manager أحرف البدل (مثل `*` أو`?`).
     
 يصف الجدول التالي كيفية استخدام أحرف البدل ويوفر بعض الأمثلة.
-
-<br/><br/>
 
 |بدل|أمثلة|
 |---|---|
@@ -211,9 +210,7 @@ ExclusionPath
 
 > [!IMPORTANT]
 > إذا قمت بخلط وسيطة استثناء ملف مع وسيطة استثناء مجلد، فستتوقف القواعد عند تطابق وسيطة الملف في المجلد المطابق، ولن تبحث عن تطابقات الملفات في أي مجلدات فرعية.
->
 > على سبيل المثال، يمكنك استبعاد كافة الملفات التي تبدأ ب "التاريخ" في المجلدات `c:\data\final\marked` `c:\data\review\marked` وباستخدام وسيطة `c:\data\*\marked\date*`القاعدة.
->
 > ومع ذلك، لن تتطابق هذه الوسيطة مع أي ملفات في المجلدات الفرعية ضمن `c:\data\final\marked` أو `c:\data\review\marked`.
 
 <a id="review"></a>
@@ -289,7 +286,7 @@ ExclusionPath
 
 يمكنك استرداد العناصر الموجودة في قائمة الاستبعاد باستخدام إحدى الطرق التالية:
 
-- [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
 - [PowerShell](/powershell/module/defender)
@@ -297,7 +294,6 @@ ExclusionPath
 
 > [!IMPORTANT]
 > **ستظهر** تغييرات قائمة الاستبعاد التي تم إجراؤها باستخدام نهج المجموعة في القوائم في [تطبيق أمن Windows](microsoft-defender-security-center-antivirus.md).
->
 > **لن تظهر** التغييرات التي تم إجراؤها في تطبيق أمن Windows في قوائم نهج المجموعة.
 
 إذا كنت تستخدم PowerShell، يمكنك استرداد القائمة بطريقتين:
