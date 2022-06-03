@@ -14,26 +14,34 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 3c0b5d19c2b96698a2d24d4f165780fe0f9ccfd1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2f0ccded84f7b1c46ff2aeea38eae8f0baadc6ff
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937116"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863577"
 ---
 # <a name="test-your-application-on-test-base"></a>اختبار التطبيق الخاص بك على قاعدة الاختبار
 
-هذا دليل شامل لك لإنشاء حزمة جديدة واختبارها على قاعدة الاختبار مع أنواع التطبيقات المختلفة. الرجاء الرجوع إلى الوثائق المحددة لتطبيقك الخاص:
+في هذا القسم، ستتعلم كيفية إنشاء حزم مع أنواع مختلفة من التطبيقات للتحميل والاختبار على **قاعدة الاختبار**. تتكون أنواع التطبيقات من القيم التالية:
 
-## <a name="test-binaries-package-on-test-base"></a>اختبار حزمة الثنائيات على قاعدة الاختبار
+   > [!div class="mx-imgBorder"]
+   > ![مطالبات نشر الحزمة](Media/testoverview01.png)
 
-راجع [حزمة اختبار الثنائيات](testapplication.md) لإنشاء حزمة قاعدة الاختبار مع ملف الثنائيات (على سبيل المثال، .exe أو .msi).
+   - **اختبار ملفات الثنائيات**
 
-## <a name="test-your-intune-app-on-test-base"></a>اختبار تطبيق Intune على قاعدة الاختبار
+      راجع [إنشاء الملفات الثنائية واختبارها على قاعدة الاختبار](testapplication.md) لإعداد حزمة مع ملف تطبيق ثنائي (.exe، .msi) لتحميلها واختبارها.
 
-راجع [اختبار تطبيق Intune](testintuneapplication.md) لإنشاء حزمة Test Base باستخدام تطبيق Intunewin.
+   - **تطبيق Intunewin**
 
-## <a name="upload-your-test-base-package-zip"></a>Upload حزمة قاعدة الاختبار (Zip)
+      راجع [اختبار تطبيق Intune على قاعدة الاختبار](testintuneapplication.md) لإعداد حزمة مع ملف تطبيق Intune (.intunewin) لتحميله واختباره.
 
-لمعرفة المزيد، راجع [تحميل Zip](uploadApplication.md) إذا كان لديك بالفعل حزمة قاعدة الاختبار.
+   - **حزمة Zip مسبقة الإنشاء**
+
+      راجع [تحميل الحزمة المضغوطة التي تم إنشاؤها مسبقا](uploadApplication.md) إذا كان لديك بالفعل حزمة مضمنة دون اتصال بتنسيق .zip.
+
+   - **استنساخ الحزمة الموجودة**
+
+      راجع [نسخ حزمة موجودة](clonepackage.md) لإنشاء حزمة جديدة عن طريق تكرار الحزمة المنشورة مسبقا.
+
 

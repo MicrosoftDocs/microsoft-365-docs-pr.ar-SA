@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: هل أنت مستعد لبدء التحكم في بيانات مؤسستك، ولكن لست متأكدا من أين تبدأ؟ اقرأ بعض الإرشادات الإرشادية للبدء.
-ms.openlocfilehash: 95ce0286d5ec45b5dabcbd2447bd52821f547caf
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 6fe80e32096fc4394ba15786ef378f4b7997af2b
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772719"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864442"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>بدء استخدام إدارة دورة حياة البيانات
 
@@ -95,7 +95,7 @@ ms.locfileid: "65772719"
 
 راجع القسم التالي للحصول على معلومات حول وثائق المستخدم النهائي لدعم استبقاء Microsoft 365.
 
-لا تتطلب قدرات إدارة دورة حياة البيانات لعلب البريد غير النشطة واستيراد ملفات PST وثائق المستخدم النهائي لأنها عمليات المسؤول فقط. لمساعدة المستخدمين على فهم علب بريد الأرشيف والتفاعل معها في Outlook بعد تمكين هذه الإمكانية، راجع [إدارة تخزين البريد الإلكتروني باستخدام علب بريد الأرشيف عبر الإنترنت](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
+لا تتطلب قدرات إدارة دورة حياة البيانات لعلب البريد غير النشطة واستيراد ملفات PST وثائق المستخدم النهائي لأنها عمليات المسؤول فقط. لمساعدة المستخدمين على فهم علب بريد الأرشيف والتفاعل معها في Outlook بعد تمكين هذه الإمكانية، راجع [إدارة تخزين البريد الإلكتروني باستخدام علب بريد الأرشيف عبر الإنترنت](https://support.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ### <a name="end-user-documentation-for-retention-and-deletion"></a>وثائق المستخدم النهائي للاستبقاء والحذف
 
