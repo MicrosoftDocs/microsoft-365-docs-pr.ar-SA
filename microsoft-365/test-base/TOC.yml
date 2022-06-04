@@ -20,6 +20,8 @@
           href: uploadApplication.md
     - name: إنشاء حزمة
       href: buildpackage.md
+    - name: استنساخ حزمة موجودة
+      href: clonepackage.md
     - name: إرشادات الحزمة
       href: contentguideline.md
     - name: قواعد التطبيق/الاختبار
