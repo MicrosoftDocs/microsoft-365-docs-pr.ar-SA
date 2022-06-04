@@ -709,4 +709,5 @@
 ## [Defender for Identity](/defender-for-identity/)
 ## [Defender for Cloud Apps](/cloud-app-security/)
 ## [Defender for Business](../defender-business/index.yml)
+## [إدارة الثغرات الأمنية في Defender](../defender-vulnerability-management/index.yml) 
 
