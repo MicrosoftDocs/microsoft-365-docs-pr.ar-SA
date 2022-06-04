@@ -1,5 +1,5 @@
 ---
-title: التسجيل للحصول على Microsoft 365 للحملات
+title: التسجيل في Microsoft 365 for Campaigns
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,21 +23,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: التسجيل خطوة بخطوة للحصول على Microsoft 365 للحملات. قم بحماية حملتك من تهديدات الأمان عبر الإنترنت للبريد الإلكتروني والبيانات والاتصالات.
-ms.openlocfilehash: 08ef22374e69590a3535366463770815c2a2b0ee
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: التسجيل خطوة بخطوة ل Microsoft 365 for Campaigns. قم بحماية حملتك من تهديدات الأمان عبر الإنترنت للبريد الإلكتروني والبيانات والاتصالات.
+ms.openlocfilehash: b39d01bc6aa1cf138d230e95493d5f9eeb3cc51b
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096249"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893296"
 ---
-# <a name="sign-up-for-microsoft-365-for-campaigns"></a>التسجيل للحصول على Microsoft 365 للحملات 
+# <a name="sign-up-for-microsoft-365-for-campaigns"></a>التسجيل في Microsoft 365 for Campaigns 
 
-فيما يلي كيفية إكمال التسجيل للحصول على Microsoft 365 للحملات.
+فيما يلي كيفية إكمال التسجيل في Microsoft 365 for Campaigns.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-- احصل على دعوتك إلى Microsoft 365 للحملات من خلال إكمال الخطوات الواردة في ["الحصول على Microsoft 365 للحملات](get-microsoft-365-campaigns.md)".
+- احصل على دعوتك إلى Microsoft 365 for Campaigns من خلال إكمال الخطوات الواردة في [Get Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
 - افتح دعوة البريد الإلكتروني من Microsoft. تحتوي الدعوة على ارتباط تسجيل فريد لمؤسستك. تحتاج إلى ذلك للحصول على أسعار خاصة للحملات.
 - اجهز بطاقة ائتمان العمل وهاتفك.
 
@@ -46,10 +46,10 @@ ms.locfileid: "65096249"
 
 ## <a name="steps-to-sign-up"></a>خطوات التسجيل
 
-1. في دعوتك إلى Microsoft 365 للبريد الإلكتروني للحملات، حدد **"تسجيل مؤسستك**". ينقلك هذا إلى صفحة التسجيل Microsoft 365.
+1. في دعوتك إلى البريد الإلكتروني ل Microsoft 365 for Campaigns، حدد **"تسجيل مؤسستك**". ينقلك ذلك إلى صفحة التسجيل في Microsoft 365.
 
     > [!NOTE]
-    > إذا كان لديك بالفعل اشتراك Microsoft 365 للأعمال وتريد إضافة عرض Microsoft 365 for Campaigns إليه، فانتقل [لإضافة Microsoft 365 for Campaigns إلى اشتراك موجود](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
+    > إذا كان لديك بالفعل اشتراك Microsoft 365 للأعمال موجود وتريد إضافة عرض Microsoft 365 for Campaigns إليه، فانتقل [لإضافة Microsoft 365 for Campaigns إلى اشتراك موجود](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription).
 
 2. **في صفحة Microsoft 365 Business**، أدخل تفاصيل عملك. بالنسبة **إلى عنوان البريد الإلكتروني للأعمال**، استخدم عنوان بريد إلكتروني حالي. نحتاج فقط إلى هذا العنوان للبقاء على اتصال بك أثناء عملية الإعداد. حدد **التالي**.
 
@@ -59,10 +59,10 @@ ms.locfileid: "65096249"
 
     2. في **شركتك**، اكتب اسم الحملة التي تعمل فيها. على سبيل المثال، `ContosoCampaign`. إذا كنت تملك مجالا بالفعل، فاستخدم هذا الاسم هنا. 
  
-    3. في **"تحديد مجال"**، حدد **.onmicrosoft.com** في الوقت الحالي. يمكننا إعدادك باستخدام مجال في وقت لاحق، أو مساعدتك في الاتصال Microsoft 365 بمجال تملكه بالفعل.
+    3. في **"تحديد مجال"**، حدد **.onmicrosoft.com** في الوقت الحالي. يمكننا إعدادك باستخدام مجال لاحقا، أو مساعدتك في توصيل Microsoft 365 بمجال تملكه بالفعل.
 
     > [!IMPORTANT]
-    > سيتم استخدام الاسم الذي تدخله لمجالك `.onmicrosoft.com` لكل SharePoint وعناوين URL OneDrive وقد لا تتمكن من تغييره. تأكد من أنك قد نظرت في الاسم من منظور العلامة التجارية وقمت بتهجئته بشكل صحيح.
+    > سيتم استخدام الاسم الذي تدخله لمجالك `.onmicrosoft.com` لكل عناوين URL ل SharePoint وOneDrive وقد لا تتمكن من تغييره. تأكد من أنك قد نظرت في الاسم من منظور العلامة التجارية وقمت بتهجئته بشكل صحيح.
 
     4. إنشاء كلمة مرور وتحديد **"إنشاء حسابي**".
  
@@ -95,14 +95,14 @@ ms.locfileid: "65096249"
 
 إذا كنت تريد متابعة الخطوات التالية، فحدد **"بدء الإعداد**"، أو عد لاحقا لإنهاء الخطوات. عندما تصبح جاهزا، تحقق من بريدك الإلكتروني (من الخطوة 2) للعثور على اسم المستخدم وكلمة المرور حتى تتمكن من تسجيل الدخول في المرة القادمة. تسمى هذه بيانات اعتماد المسؤول أو المسؤول العمومي.
 
-## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>خطوات لإضافة Microsoft 365 للحملات إلى اشتراك موجود
+## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>خطوات إضافة Microsoft 365 for Campaigns إلى اشتراك موجود
 
-إذا كان لديك اشتراك موجود بالفعل في Microsoft 365 للأعمال، على سبيل المثال، Microsoft 365 Business Standard، يمكنك استخدام عرض Microsoft 365 for Campaigns لإضافة تراخيص إليه.
+إذا كان لديك اشتراك حالي بالفعل في Microsoft 365 للأعمال، على سبيل المثال، Microsoft 365 Business Standard، يمكنك استخدام عرض Microsoft 365 for Campaigns لإضافة تراخيص إليه.
 
 > [!IMPORTANT]
 > لا يمكنك إضافة عرض Microsoft 365 for Campaigns إلى حساب Microsoft 365 موجود.
 
-1. في دعوتك إلى Microsoft 365 للبريد الإلكتروني للحملات، حدد **"تسجيل مؤسستك**". ينقلك هذا إلى صفحة التسجيل Microsoft 365.
+1. في دعوتك إلى البريد الإلكتروني ل Microsoft 365 for Campaigns، حدد **"تسجيل مؤسستك**". ينقلك ذلك إلى صفحة التسجيل في Microsoft 365.
 
 2. في صفحة **الترحيب، دعنا نتعرف عليك** ، حدد **"تريد إضافة هذا إلى اشتراك موجود"؟ تسجيل الدخول**.
     
@@ -120,4 +120,4 @@ ms.locfileid: "65096249"
 
 1. [سجل الدخول إلى Microsoft 365 for Campaigns](m365-campaigns-sign-in.md).
 
-2. [راجع العملية الإرشادية للإعداد الأساسي](m365bp-setup.md#use-the-guided-process-for-basic-setup).
+2. [راجع العملية الإرشادية للإعداد الأساسي](m365bp-setup.md#guided-setup-process).

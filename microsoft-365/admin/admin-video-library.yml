@@ -11,12 +11,12 @@ metadata:
   ms.author: efrene
   ms.date: 05/23/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: 181254d39d245608bae690f2fdb78f7a6a5c0fa0
-  ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+  ms.openlocfilehash: b8044c7275d4dcae36c1559e4ed802e270679b9c
+  ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 05/24/2022
-  ms.locfileid: "65663371"
+  ms.lasthandoff: 06/04/2022
+  ms.locfileid: "65892739"
 landingContent:
 - title: بدء الاستخدام
   linkLists:
@@ -36,21 +36,21 @@ landingContent:
       url: admin-overview/sign-up-for-office-365.md
     - text: إعداد الخدمة
       url: /microsoft-365/business-premium/m365bp-setup
-    - text: أجهزة كمبيوتر Windows 10 آمنة
+    - text: تأمين أجهزة كمبيوتر Windows 10
       url: setup/secure-win-10-pcs.md
 - title: إعداد الجهاز
   linkLists:
   - linkListType: video
     links:
-    - text: الاتصال أجهزة الكمبيوتر إلى Microsoft 365
-      url: setup/set-up-windows-devices.md
+    - text: توصيل أجهزة الكمبيوتر ب Microsoft 365
+      url: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
     - text: تثبيت تطبيقات Microsoft Office
       url: setup/install-applications.md
     - text: إعداد Outlook للبريد الإلكتروني
       url: setup/setup-outlook.md
     - text: استيراد البريد وإعادة توجيهه
       url: setup/migrate-email-and-contacts-admin.md
-    - text: نقل الملفات إلى OneDrive
+    - text: نقل ملفاتك إلى OneDrive
       url: setup/files-to-onedrive.md
     - text: نقل ملفات الشركة إلى SharePoint
       url: setup/files-to-sharepoint.md
@@ -58,7 +58,7 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: الحصول على تطبيق مسؤول للأجهزة المحمولة
+    - text: الحصول على تطبيق Admin للأجهزة المحمولة
       url: admin-overview/admin-mobile-app.md
 - title: صوت العمل
   linkLists:
@@ -128,7 +128,7 @@ landingContent:
     links:
     - text: نظرة عامة على أمان Microsoft 365 Business Premium
       url: security-and-compliance/secure-your-business-data.md
-    - text: (جديد!) Microsoft Defender for Business
+    - text: (جديد!) Microsoft Defender للأعمال
       url: /microsoft-365/security/defender-business/index.yml
     - text: تأمين حسابات الموظفين باستخدام المصادقة متعددة العوامل
       url: security-and-compliance/set-up-multi-factor-authentication.md
@@ -158,13 +158,13 @@ landingContent:
   linkLists:
   - linkListType: video
     links:
-    - text: إعداد Microsoft 365 ترحيل مساحة عمل Google
+    - text: إعداد ترحيل Microsoft 365 ل Google Workspace
       url: moveto-microsoft-365/set-up-microsoft-365-forgoogle.md
     - text: إضافة مجال Google Workspace إلى Microsoft 365
       url: moveto-microsoft-365/add-google-domain.md
     - text: ترحيل البريد الإلكتروني والتقويم للأعمال من Google Workspace
       url: moveto-microsoft-365/migrate-email.md
-    - text: الاتصال مجالك إلى Microsoft 365 للأعمال
+    - text: توصيل مجالك ب Microsoft 365 للأعمال
       url: moveto-microsoft-365/connect-domain-tom365.md
     - text: ترحيل ملفات Google إلى Microsoft 365 للأعمال باستخدام Migration Manager
       url: moveto-microsoft-365/migrate-files-migration-manager.md

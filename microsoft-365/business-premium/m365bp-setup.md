@@ -1,5 +1,5 @@
 ---
-title: إعداد Microsoft 365 Business Premium
+title: قم بإعداد Microsoft 365 Business Premium
 description: تعرف على كيفية إعداد Microsoft 365 Business Premium
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/08/2022
+ms.date: 06/03/2022
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
@@ -15,21 +15,19 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 9e24e6bada3b1f5aa047692dc4d742a5a006b9af
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 4aa9218406d261e39df075ad855ceda5bd755b70
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317973"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65892462"
 ---
-# <a name="set-up-microsoft-365-business-premium"></a>إعداد Microsoft 365 Business Premium
+# <a name="set-up-microsoft-365-business-premium"></a>قم بإعداد Microsoft 365 Business Premium
 
-بعد [بدء إصدار تجريبي أو شراء Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)، تكون خطوتك التالية هي إعداد كل شيء. لديك العديد من الخيارات المتاحة. يمكنك:
+بعد [بدء إصدار تجريبي أو شراء Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)، تتمثل خطوتك التالية في إعداد كل شيء. لديك العديد من الخيارات المتاحة. يمكنك:
 
-- [ابدأ بتجربة الإعداد الإرشادية](#use-the-guided-process-for-basic-setup) للإعداد والتكوين الأساسيين؛ او
-- [العمل مع شريك، مثل موفر حلول الحوسبة السحابية من Microsoft (CSP).](#work-with-a-microsoft-partner)
-
-استخدم هذه المقالة كدليل.
+- ابدأ [بتجربة الإعداد الإرشادية](m365bp-setup.md#guided-setup-process) للإعداد والتكوين الأساسيين؛ او
+- [العمل مع شريك](m365bp-setup.md#work-with-a-microsoft-partner)، مثل موفر حلول السحابة من Microsoft (CSP).
 
 ## <a name="before-you-begin"></a>قبل البدء
 
@@ -37,23 +35,17 @@ ms.locfileid: "65317973"
 
 | شرط | الوصف |
 |:---|:---|
-| الاشتراك | Microsoft 365 Business Premium أو Microsoft 365 للحملات <br/><br/> لبدء إصدار تجريبي أو شراء اشتراكك، راجع المقالات التالية: <br/>- [الحصول على Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [الحصول على Microsoft 365 للحملات](get-microsoft-365-campaigns.md) |
+| الاشتراك | Microsoft 365 Business Premium أو Microsoft 365 for Campaigns <br/><br/> لبدء إصدار تجريبي أو شراء اشتراكك، راجع المقالات التالية: <br/>- [الحصول على Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [الحصول على Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
 | الأذونات  | لإكمال عملية الإعداد الأولية، يجب أن تكون مسؤولا عموميا. [تعرف على المزيد حول أدوار المسؤول](../admin/add-users/about-admin-roles.md). |
 | متطلبات المستعرض | Microsoft Edge أو Safari أو Chrome أو Firefox. [تعرف على المزيد حول متطلبات المستعرض](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | نظام التشغيل | **Windows**: Windows 11 أو Windows 10 أو Windows 8.1 أو Windows Server 2019 أو إصدار أحدث أو Windows Server 2016<br/><br/>**macOS**: أحد أحدث ثلاثة إصدارات من macOS |
 
 > [!TIP]
-> لمزيد من المعلومات التفصيلية حول متطلبات النظام Microsoft 365 Office، راجع [Microsoft 365 والموارد Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
+> لمزيد من المعلومات التفصيلية حول Microsoft 365 وOffice ومتطلبات النظام، راجع [Microsoft 365 وموارد Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
-## <a name="use-the-guided-process-for-basic-setup"></a>استخدام العملية الإرشادية للإعداد الأساسي
+## <a name="guided-setup-process"></a>عملية الإعداد الموجهة
 
-تتضمن Microsoft 365 Business Premium عملية موجهة للإعداد الأساسي. تتضمن العملية الإرشادية هذه المهام:
-
-- [إضافة مجالك الحالي لتخصيص تسجيل الدخول](../admin/setup/setup-business-basic.md#add-your-domain-to-personalize-sign-in)
-- [إضافة مستخدمين وتعيين التراخيص](../admin/add-users/add-users.md)
-- [تحديث سجلات DNS](../admin/setup/setup-business-basic.md#connect-your-domain)
-
-يعرض الفيديو التالي عملية الإعداد الموجهة Microsoft 365 Business Standard، والتي تعمل بنفس الطريقة في Microsoft 365 Business Premium.<br/><br/>
+يتضمن Microsoft 365 Business Premium عملية موجهة. يعرض الفيديو التالي عملية الإعداد الموجهة ل Microsoft 365 Business Standard، والتي تنطبق أيضا على Microsoft 365 Business Premium.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
@@ -66,7 +58,7 @@ ms.locfileid: "65317973"
 
 1. انتقل إلى صفحة **موفري حلول Microsoft** ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
 
-2. في مربع البحث، املأ موقعك وحجم شركتك. 
+2. في مربع البحث، املأ موقعك وحجم شركتك.
 
 3. في مربع **البحث عن المنتجات والخدمات والمهارات والصناعات** ، ضع `Microsoft 365`، ثم حدد **Go**.
 
@@ -79,17 +71,7 @@ ms.locfileid: "65317973"
 - [إعداد كلمات مرور الخدمة الذاتية](../admin/add-users/let-users-reset-passwords.md)
 
 - [إعداد إدارة مجموعة الخدمة الذاتية](/azure/active-directory/enterprise-users/groups-self-service-management)
-## <a name="next-objectives"></a>الأهداف التالية
 
-بعد الانتهاء من عملية الإعداد الأولية، تتمثل أهدافك التالية في إعداد قدرات الأمان والتوافق:
+### <a name="next-objective"></a>الهدف التالي
 
-1. [إعداد حماية الأمان الخاصة بك](m365bp-security-overview.md).
-
-2. تدريب فريقك:
-
-   - [إعداد الأجهزة الشخصية المستخدمة للوصول إلى بيانات العمل](m365bp-devices-overview.md)
-   - [استخدام البريد الإلكتروني بشكل أكثر أماناً](m365bp-protect-email-overview.md)
-   - [التعاون والمشاركة بشكل أكثر أماناً](m365bp-collaborate-share-securely.md)
-
-3. [حماية الأجهزة المدارة](m365bp-protect-devices.md).
-
+بمجرد تحقيق هذه الأهداف، انتقل [إلى زيادة حماية الأمان](m365bp-security-overview.md).

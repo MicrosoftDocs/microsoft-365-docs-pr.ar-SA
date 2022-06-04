@@ -50,7 +50,7 @@
         - name: تثبيت تطبيقات Office
           href: setup/install-applications.md
         - name: إعداد أجهزة Windows
-          href: setup/set-up-windows-devices.md
+          href: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
         - name: إعداد الأجهزة المحمولة
           href: setup/set-up-mobile-devices.md
         - name: إعداد البريد Outlook لـ Microsoft 365 للأعمال (فيديو)

@@ -4,6 +4,8 @@
       href: index.md
     - name: كيفية مساعدة Microsoft 365 عملك
       href: m365bp-secure-users.md
+    - name: دليل المبادئ لـ Microsoft 365 Business Premium التجريبي
+      href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: الحصول على Microsoft 365 Business Premium
       href: get-microsoft-365-business-premium.md
     - name: الحصول على Microsoft 365 للحملات
@@ -16,14 +18,8 @@
           href: m365bp-setup-overview.md
         - name: قم بإعداد Microsoft 365 Business Premium
           href: m365bp-setup.md
-        - name: إعداد Microsoft 365 للحملات
-          items:
-            - name: التسجيل
-              href: m365-campaigns-sign-up.md
-            - name: تسجيل الدخول
-              href: m365-campaigns-sign-in.md
-            - name: تخصيص صفحة تسجيل الدخول
-              href: m365-customize-sign-in.md
+        - name: إعداد Microsoft 365 Business للحملات
+          href: m365-campaigns-setup.md
     - name: رفع مستوى الحماية الأمنية
       items:
         - name: نظرة عامة
@@ -51,7 +47,7 @@
         - name: نظرة عامة
           href: m365bp-protect-email-overview.md
         - name: الحماية من التصيد الاحتيالي والهجمات الأخرى
-          href: avoid-phishing-and-attacks.md
+          href: m365bp-avoid-phishing-and-attacks.md
         - name: إرسال بريد إلكتروني مشفر
           href: send-encrypted-email.md
     - name: التعاون والمشاركة بأمان
@@ -78,14 +74,16 @@
           href: m365bp-onboard-devices-mdb.md
         - name: حماية أجهزة Windows
           items:
-            - name: إعدادات الحماية لأجهزة Windows
-              href: m365bp-protection-settings-for-windows-10-devices.md
             - name: تأمين أجهزة Windows
               href: m365bp-secure-windows-devices.md
             - name: إدارة أجهزة Windows
               href: m365bp-manage-windows-devices.md
             - name: الاستعداد لنشر عميل Office
               href: m365bp-prepare-for-office-client-deployment.md
+            - name: إنشاء إعدادات حماية التطبيقات لأجهزة Windows
+              href: m365bp-protection-settings-for-windows-10-devices.md
+            - name: التحقق من صحة إعدادات التطبيق على أجهزة Windows
+              href: m365bp-validate-settings-on-windows-10-pcs.md
         - name: مراجعة نهج الجهاز وتحريرها
           href: m365bp-view-edit-create-mdb-policies.md
         - name: إدارة مجموعات الأجهزة
@@ -130,6 +128,8 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: إعدادات حماية التطبيقات لنظامي التشغيل Android وiOS
       href: m365bp-app-protection-settings-for-android-and-ios.md
+    - name: التحقق من صحة إعدادات التطبيق على Android وiOS
+      href: m365bp-validate-settings-on-android-or-ios.md
     - name: ميزات حماية الخريطة لإعدادات Intune
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: إعداد إدارة التوافق

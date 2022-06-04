@@ -17,16 +17,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: df99f73275e0aa83216bd1de101638dee628f0f2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1e5d4e278bc70fdf63c951598bf12f88816a43d0
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091886"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893218"
 ---
 # <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>مراجعة إجراءات المعالجة في Microsoft 365 Business Premium
 
-حسنا، لقد اكتشفت خرقا أمنيا، ولكن ماذا تفعل؟ يعتمد ذلك على طبيعة ذلك. 
+حسنا، لقد اكتشفت خرقا أمنيا، ولكن ماذا تفعل؟ يعتمد ذلك على طبيعة ذلك.
 
 تتضمن أمثلة إجراءات المعالجة إرسال ملف إلى العزل أو إيقاف تشغيل عملية أو إزالة مهمة مجدولة بالكامل. يتم تعقب جميع إجراءات المعالجة في مركز الصيانة، الموجود في [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center).
 

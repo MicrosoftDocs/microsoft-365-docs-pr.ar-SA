@@ -1,5 +1,5 @@
 ---
-title: زيادة الحماية من التهديدات Microsoft 365 Business Premium
+title: زيادة الحماية من التهديدات ل Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -25,25 +25,25 @@ search.appverid:
 - BCS160
 - MET150
 description: الحصول على المساعدة في زيادة مستوى الحماية في Microsoft 365 Business Premium
-ms.openlocfilehash: a442dcd399a1886f5f63bd17dc897d1547a0f579
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: dfbde871e31bd4c8e47fb9365ad4da7a9a1f6226
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863597"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893174"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>زيادة الحماية من التهديدات Microsoft 365 Business Premium
+# <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>زيادة الحماية من التهديدات ل Microsoft 365 Business Premium
 
 في هذا الهدف، يمكنك زيادة الحماية من التهديدات باستخدام Microsoft 365 Business Premium. من الضروري حماية شركتك من التصيد الاحتيالي والبرامج الضارة والتهديدات الأخرى. يتضمن هذا الهدف معلومات حول:
 
-- [نهج الأمان المعينة مسبقا](#review-and-apply-preset-security-policies) التي يمكن أن توفر الكثير من الوقت في الإعداد والتكوين
+- [نهج الأمان المعينة مسبقا](#review-and-apply-preset-security-policies) التي يمكن أن توفر الكثير من الوقت في الإعداد والتكوين.
 - [نهج الأمان المخصصة](#create-custom-security-policies) التي يمكنك تحديدها لتناسب احتياجات عملك
-- [كيفية ضبط إعدادات المشاركة للملفات والمجلدات SharePoint OneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
-- [نهج التنبيه](#review-your-alert-policies) التي تراقب ملفات معينة وكيفية استخدامها. 
+- كيفية [ضبط إعدادات المشاركة لملفات ومجلدات SharePoint وOneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
+- [نهج التنبيه](#review-your-alert-policies) التي تراقب ملفات معينة وكيفية استخدامها.
 
 ## <a name="review-and-apply-preset-security-policies"></a>مراجعة نهج الأمان المعدة مسبقا وتطبيقها
 
-يتضمن اشتراكك [نهج أمان محددة مسبقا](../security/office-365-security/preset-security-policies.md) تستخدم الإعدادات الموصى بها لمكافحة البريد العشوائي والحماية من البرامج الضارة والحماية من التصيد الاحتيالي. بشكل افتراضي، يتم تمكين الحماية المضمنة؛ ومع ذلك، ضع في اعتبارك تطبيق حماية قياسية أو صارمة لزيادة الأمان. 
+يتضمن اشتراكك [نهج أمان محددة مسبقا](../security/office-365-security/preset-security-policies.md) تستخدم الإعدادات الموصى بها لمكافحة البريد العشوائي والحماية من البرامج الضارة والحماية من التصيد الاحتيالي. بشكل افتراضي، يتم تمكين الحماية المضمنة؛ ومع ذلك، ضع في اعتبارك تطبيق حماية قياسية أو صارمة لزيادة الأمان.
 
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="لقطة شاشة لنهج الأمان التي تم تعيينها مسبقا.":::
 
@@ -55,14 +55,14 @@ ms.locfileid: "65863597"
 توفر نهج الأمان المسبقة الحماية لمحتوى البريد الإلكتروني والتعاون. تتكون هذه النهج من:
 
 - *ملفات التعريف*، التي تحدد مستوى الحماية
-- *النهج* (مثل مكافحة البريد العشوائي، ومكافحة البرامج الضارة، ومكافحة التصيد الاحتيالي، وإعدادات انتحال الهوية، خزينة المرفقات، وارتباطات خزينة)
+- *النهج* (مثل مكافحة البريد العشوائي، ومكافحة البرامج الضارة، ومكافحة التصيد الاحتيالي، وإعدادات انتحال الهوية، والانتحال، والمرفقات الآمنة، والارتباطات الآمنة)
 - *إعدادات النهج* (مثل المجموعات أو المستخدمين أو المجالات لتلقي النهج وأي استثناءات)
 
 يلخص الجدول التالي مستويات الحماية وأنواع النهج التي تم تعيينها مسبقا.
 
 | مستوى الحماية | الوصف |
 |:---|:---|
-| **الحماية القياسية** <br/>(*مستحسن لمعظم الشركات*) | تستخدم الحماية القياسية ملف تعريف أساسي مناسب لمعظم المستخدمين. تتضمن الحماية القياسية مكافحة البريد العشوائي ومكافحة البرامج الضارة ومكافحة التصيد الاحتيالي وإعدادات انتحال الهوية وإعدادات الانتحال وارتباطات خزينة ونهج المرفقات خزينة.  |
+| **الحماية القياسية** <br/>(*مستحسن لمعظم الشركات*) | تستخدم الحماية القياسية ملف تعريف أساسي مناسب لمعظم المستخدمين. تتضمن الحماية القياسية مكافحة البريد العشوائي، ومكافحة البرامج الضارة، ومكافحة التصيد الاحتيالي، وإعدادات انتحال الهوية، وإعدادات الانتحال، والارتباطات الآمنة، ونهج المرفقات الآمنة.  |
 | **حماية صارمة**  | تتضمن الحماية الصارمة نفس أنواع النهج مثل الحماية القياسية، ولكن مع إعدادات أكثر صرامة. إذا كان يجب أن تفي شركتك بمتطلبات أو لوائح أمان إضافية، ففكر في تطبيق حماية صارمة على المستخدمين الذين لديهم الأولوية على الأقل أو الأهداف ذات القيمة العالية. |
 | **الحماية المضمنة** | الحماية من الارتباطات والمرفقات الضارة في البريد الإلكتروني. يتم تمكين الحماية المضمنة وتطبيقها على جميع المستخدمين بشكل افتراضي.  |
 
@@ -85,7 +85,7 @@ ms.locfileid: "65863597"
 
 لمعرفة المزيد حول نهج الأمان التي تم تعيينها مسبقا، راجع [ما هي نهج الأمان التي تم إعدادها مسبقا](../security/office-365-security/preset-security-policies.md#what-preset-security-policies-are-made-of).
 
-### <a name="how-do-i-assign-preset-security-policies-to-users"></a>كيف أعمل تعيين نهج أمان معينة مسبقا للمستخدمين؟
+### <a name="how-do-i-assign-preset-security-policies-to-users"></a>كيف يمكنني تعيين نهج الأمان المعينة مسبقا للمستخدمين؟
 
 > [!IMPORTANT]
 > قبل البدء، تأكد من تعيين أحد الأدوار التالية في Exchange Online (المضمن في اشتراكك):
@@ -94,7 +94,7 @@ ms.locfileid: "65863597"
 > - إدارة المؤسسة
 > - مسؤول الأمان
 > 
-> لمعرفة المزيد، راجع [الأذونات في Exchange Online](/exchange/permissions-exo/permissions-exo) [وأدوار المسؤولين.](../admin/add-users/about-admin-roles.md)
+> لمعرفة المزيد، راجع ["الأذونات" في أدوار المسؤولين في Exchange Online](/exchange/permissions-exo/permissions-exo) و ["حول](../admin/add-users/about-admin-roles.md)".
 
 لتعيين نهج أمان معينة مسبقا، اتبع الخطوات التالية:
 
@@ -117,7 +117,7 @@ ms.locfileid: "65863597"
 
    عند الانتهاء، حدد **"التالي**".
 
-4. **في Defender لـ Office 365 تنطبق الحماية على** الصفحة لتحديد المستلمين الداخليين الذين تنطبق النهج على (شروط المستلمين). حدد المستخدمين والمجموعات والمجالات تماما كما فعلت في الخطوة السابقة.
+4. **في حماية Defender ل Office 365، تنطبق على** الصفحة لتحديد المستلمين الداخليين الذين تنطبق النهج على (شروط المستلمين). حدد المستخدمين والمجموعات والمجالات تماما كما فعلت في الخطوة السابقة.
 
    عند الانتهاء، انقر فوق **"التالي**".
 
@@ -126,7 +126,7 @@ ms.locfileid: "65863597"
 > [!TIP]
 > لمعرفة المزيد حول تعيين نهج الأمان المعينة مسبقا، راجع المقالات التالية:
 > - [تعيين نهج الأمان المعينة مسبقا للمستخدمين](../security/office-365-security/preset-security-policies.md#assign-preset-security-policies-to-users)
-> - [الإعدادات الموصى بها لمحتوى البريد الإلكتروني والتعاون](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (يتضمن Microsoft 365 Business Premium Exchange Online Protection والخطة Microsoft Defender لـ Office 365 1)
+> - [الإعدادات الموصى بها لمحتوى البريد الإلكتروني والتعاون](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (يتضمن Microsoft 365 Business Premium Exchange Online Protection وMicrosoft Defender لخطة Office 365 1)
 
 ## <a name="create-custom-security-policies"></a>إنشاء نهج أمان مخصصة
 
@@ -137,11 +137,11 @@ ms.locfileid: "65863597"
 - [الحماية من البرامج الضارة](../security/office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 - [حماية متقدمة من مكافحة الفيش](../security/office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [حماية Antispam](../security/office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-- [ارتباطات خزينة ومرفقات خزينة](../security/office-365-security/protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [الارتباطات الآمنة والمرفقات الآمنة](../security/office-365-security/protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
-## <a name="set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>تعيين إعدادات المشاركة للملفات والمجلدات SharePoint OneDrive
+## <a name="set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>تعيين إعدادات المشاركة لملفات ومجلدات SharePoint وOneDrive
 
-بشكل افتراضي، يتم تعيين مستويات المشاركة إلى المستوى الأكثر تساهلا لكل من SharePoint OneDrive. نوصي بتغيير الإعدادات الافتراضية لحماية أعمالك بشكل أفضل.
+بشكل افتراضي، يتم تعيين مستويات المشاركة إلى المستوى الأكثر تساهلا لكل من SharePoint وOneDrive. نوصي بتغيير الإعدادات الافتراضية لحماية أعمالك بشكل أفضل.
 
 1. انتقل إلى <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**المشاركة** في مركز إدارة SharePoint</a>، وسجل الدخول باستخدام حساب لديه [أذونات المسؤول لمؤسستك](/sharepoint/sharepoint-admin-role).
  
@@ -158,7 +158,7 @@ ms.locfileid: "65863597"
 
 ## <a name="review-your-alert-policies"></a>مراجعة نهج التنبيه
 
-تعد نهج التنبيه مفيدة لتعقب أنشطة المستخدمين والمسؤولين، وتهديدات البرامج الضارة المحتملة، وحوادث فقدان البيانات في شركتك. يتضمن اشتراكك مجموعة من النهج الافتراضية، ولكن يمكنك أيضا إنشاء نهج مخصصة. على سبيل المثال، إذا قمت بتخزين ملف مهم في SharePoint لا تريد أن يشاركه أي شخص خارجيا، يمكنك إنشاء إعلام ينبهك إذا قام شخص ما بمشاركته.
+تعد نهج التنبيه مفيدة لتعقب أنشطة المستخدمين والمسؤولين، وتهديدات البرامج الضارة المحتملة، وحوادث فقدان البيانات في شركتك. يتضمن اشتراكك مجموعة من النهج الافتراضية، ولكن يمكنك أيضا إنشاء نهج مخصصة. على سبيل المثال، إذا قمت بتخزين ملف مهم في SharePoint لا تريد أن يشاركه أي شخص خارجيا، يمكنك إنشاء إعلام ينبهك إذا قام أحد الأشخاص بمشاركته.
 
 تعرض الصورة التالية بعض النهج الافتراضية المضمنة مع Microsoft 365 Business Premium.
 
@@ -166,7 +166,7 @@ ms.locfileid: "65863597"
 
 ### <a name="view-your-alert-policies"></a>عرض نهج التنبيه
 
-1. انتقل إلى مدخل التوافق في Microsoft Purview وسجل [https://compliance.microsoft.com](https://compliance.microsoft.com) الدخول.
+1. انتقل إلى مدخل الامتثال ل Microsoft Purview في [https://compliance.microsoft.com](https://compliance.microsoft.com) وسجل الدخول.
 
 2. في جزء التنقل، اختر **"النهج**"، ثم اختر **"نهج التنبيه**".
 
@@ -179,12 +179,12 @@ ms.locfileid: "65863597"
 
 ### <a name="how-to-view-alerts"></a>كيفية عرض التنبيهات
 
-اعتمادا على التنبيه المحدد، يمكنك عرض التنبيهات الخاصة بك إما في مدخل Microsoft 365 Defender أو مدخل التوافق في Microsoft Purview.
+استنادا إلى التنبيه المحدد، يمكنك عرض التنبيهات في مدخل Microsoft 365 Defender أو مدخل توافق Microsoft Purview.
 
 | نوع التنبيه  | ما يجب فعله  |
 |---------|---------|
-| تنبيه الأمان، مثل عندما ينقر المستخدم فوق ارتباط ضار، أو يتم الإبلاغ عن رسالة بريد إلكتروني كبرى ضارة أو تصيد احتيالي، أو يتم الكشف عن جهاز على أنه يحتوي على برامج ضارة     | انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> وضمن **تعاون & البريد الإلكتروني**، حدد نهج **التنبيه** **لقواعد &** >  النهج. بدلا من ذلك، يمكنك الانتقال مباشرة إلى <https://security.microsoft.com/alertpolicies>. |
-| تنبيه التوافق، مثل عندما يشارك المستخدم معلومات حساسة أو سرية (تنبيه منع فقدان البيانات) أو عندما يكون هناك حجم غير عادي لمشاركة الملفات الخارجية (تنبيه حوكمة المعلومات)    | انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>، **ثم حدد** > **نهج تنبيه النهج** > .  |
+| تنبيه الأمان، مثل عندما ينقر المستخدم فوق ارتباط ضار، أو يتم الإبلاغ عن رسالة بريد إلكتروني كبرى ضارة أو تصيد احتيالي، أو يتم الكشف عن جهاز على أنه يحتوي على برامج ضارة     | انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> وضمن **تعاون & البريد الإلكتروني**، حدد **نهج التنبيه** **لقواعد &** >  النهج. بدلا من ذلك، يمكنك الانتقال مباشرة إلى <https://security.microsoft.com/alertpolicies>. |
+| تنبيه التوافق، مثل عندما يشارك المستخدم معلومات حساسة أو سرية (تنبيه منع فقدان البيانات) أو عندما يكون هناك حجم غير عادي لمشاركة الملفات الخارجية (تنبيه حوكمة المعلومات)    | انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل الامتثال ل Microsoft Purview</a>، ثم حدد **نهج تنبيه تنبيه** >  **النهج** > .  |
 
 لمزيد من المعلومات، راجع [عرض التنبيهات](../compliance/alert-policies.md#view-alerts).
 
@@ -192,9 +192,9 @@ ms.locfileid: "65863597"
 
 يمكنك منع الأشخاص في مؤسستك من مشاركة تقويماتهم. يمكنك أيضا إدارة مستوى التفاصيل التي يمكنهم مشاركتها. على سبيل المثال، يمكنك تقييد المشاركة في أوقات التوفر/الانشغال فقط.
 
-1. إعدادات Go [Org في مركز مسؤولي Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2053743) وتسجيل الدخول.
+1. إعدادات Go [Org في مركز إدارة Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2053743) وتسجيل الدخول.
 
-2. اختر **"التقويم"**، واختر ما إذا كان بإمكان الأشخاص في مؤسستك مشاركة تقويماتهم مع أشخاص من خارج Office 365 أو Exchange، أو مع أي شخص.
+2. اختر **التقويم**، واختر ما إذا كان بإمكان الأشخاص في مؤسستك مشاركة تقويماتهم مع أشخاص من خارج Office 365 أو Exchange، أو مع أي شخص.
 
    نوصي بإلغاء تحديد خيار **المشاركة الخارجية** .
 
@@ -210,8 +210,8 @@ ms.locfileid: "65863597"
 
    ![لقطة شاشة لمشاركة التوفر/الانشغال في التقويم مع أي شخص.](../media/sharefreebusy.png)
 
-إذا كان يسمح للمستخدمين بمشاركة تقويماتهم، فراجع [هذه الإرشادات](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) حول كيفية المشاركة من Outlook على ويب.
+إذا كان يسمح للمستخدمين بمشاركة تقويماتهم، فراجع [هذه الإرشادات](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) حول كيفية المشاركة من Outlook على الويب.
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-حسنا، لنبدأ الآن مهمة [**إعداد أجهزة BYOD**](m365bp-devices-overview.md).
+حسنا، [**لنقم الآن بإعداد أجهزة BYOD غير المدارة هذه**](m365bp-devices-overview.md).

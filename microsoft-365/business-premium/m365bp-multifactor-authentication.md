@@ -1,5 +1,5 @@
 ---
-title: إعداد المصادقة متعددة العوامل Microsoft 365 Business Premium
+title: إعداد المصادقة متعددة العوامل ل Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: إعداد المصادقة متعددة العوامل للهواتف في Premium Microsoft Business. يمكنك زيادة أمانك باستخدام ميزات المصادقة متعددة العوامل من Microsoft Business Premium لهاتفك.
-ms.openlocfilehash: d92a1a651790626c8d8a8b70f334f907bcde7cdc
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+description: إعداد المصادقة متعددة العوامل للهواتف في Microsoft Business Premium. يمكنك زيادة أمانك باستخدام ميزات المصادقة متعددة العوامل من Microsoft Business Premium لهاتفك.
+ms.openlocfilehash: a01c829d961c1941e1910b5f7068f3cc66732db8
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622636"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893252"
 ---
 # <a name="set-up-mfa"></a>إعداد المصادقة متعددة العوامل
 
@@ -41,8 +41,8 @@ ms.locfileid: "65622636"
 
 ## <a name="use-the-outlook-app-on-your-devices"></a>استخدام تطبيق Outlook على أجهزتك
 
-بعد أن يطلب المسؤول من مستخدمي الواجهة الأمامية استخدام المصادقة متعددة العوامل، يعمل تطبيق المصادقة كنموذج ثان للمصادقة. نوصي بتثبيت تطبيق Outlook واستخدامه للوصول إلى بريده الإلكتروني Microsoft 365.
+بعد أن يطلب المسؤول من مستخدمي الواجهة الأمامية استخدام المصادقة متعددة العوامل، يعمل تطبيق المصادقة كنموذج ثان للمصادقة. نوصي بتثبيت تطبيق Outlook واستخدامه للوصول إلى بريده الإلكتروني في Microsoft 365.
 
 ## <a name="next-objective"></a>الهدف التالي
 
-اتبع الإرشادات لتثبيت [تطبيقات Office](m365bp-install-office-apps.md).
+لتحقيق هدفك التالي، اتبع الإرشادات لتثبيت [تطبيقات Office](m365bp-install-office-apps.md).
