@@ -20,13 +20,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: تعرف على كيفية إلغاء الاشتراكات التجريبية أو المدفوعة من Dynamics 365 وIntune Power Platform وMicrosoft 365 للأعمال في مركز مسؤولي Microsoft 365.
-ms.date: 04/29/2022
-ms.openlocfilehash: 4f01946c00a7497f23d086422ffa90718df78a9f
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.date: 06/02/2022
+ms.openlocfilehash: ea2a3bf0e77d11733e19b27f19bef378f691fd73
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145179"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873655"
 ---
 # <a name="cancel-your-business-subscription"></a>إلغاء اشتراك الأعمال الخاصة بك
 
@@ -56,6 +56,9 @@ ms.locfileid: "65145179"
 إذا كنت بحاجة إلى الإلغاء خلال سبعة أيام بعد بدء اشتراكك أو تجديده، فانتقل إلى [الخطوات لإلغاء اشتراكك](#steps-to-cancel-your-subscription) لاحقاً في هذه المقالة.
 
 إذا انقضت أكثر من سبعة أيام، فقم [بإيقاف تشغيل](renew-your-subscription.md)الفوترة المتكررة. يمنع هذا تجديد اشتراكك عند نهاية فترته.  ستظل تتمتع بوصول إلى منتجاتك وخدماتك خلال الفترة المتبقية من اشتراكك. إذا كنت تمتلك اشتراكاً سنوياً وتقوم بدفع قيمته شهرياً، فإنه يتم تحصيل الرسوم منك كل شهر خلال الفترة المتبقية من اشتراكك.
+
+> [!NOTE]
+> قم بإلغاء الإصدار التجريبي المجاني في أي وقت لإيقاف الرسوم المستقبلية. بعد الإصدار التجريبي المجاني لمدة شهر واحد، سيتم تحصيل رسوم الاشتراك المعمول بها.
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>إذا لم يكن لديك ملف تعريف للفوترة
 
