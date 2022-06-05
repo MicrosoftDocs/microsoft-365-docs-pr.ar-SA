@@ -18,12 +18,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d2ad08c91d8c28163eccf239f9a7266b15a44927
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: ef9793a1bcbf09f6b7a1640d9213522cdb741891
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418325"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872259"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية
 
@@ -297,7 +297,7 @@ ms.locfileid: "65418325"
 
 ### <a name="whats-new"></a>ما الجديد
 - تمت إضافة دعم التحكم في الأجهزة لـ Windows Portable Devices
-- يتم تشغيل حماية التطبيقات غير المرغوب فيها (PUA) بشكل افتراضي للعملاء (راجع [يتم حظر التطبيقات غير المرغوب فيها بشكل افتراضي](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e))
+- يتم تشغيل الحماية من التطبيقات غير المرغوب فيها (PUA) بشكل افتراضي للعملاء (راجع [ حظر التطبيقات التي قد تكون غير مرغوب فيها مع برنامج الحماية من الفيروسات من Microsoft Defender](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).)
 - ستلتزم عمليات الفحص المجدولة للأنظمة المدارة لعنصر نهج المجموعة بوقت الفحص الذي تم تكوينه من قبل المستخدم
 - تحسينات على محرك مراقبة السلوك
 
