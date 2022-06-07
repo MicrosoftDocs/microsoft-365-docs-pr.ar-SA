@@ -20,13 +20,13 @@ ms.custom:
 search.appverid: MET150
 description: تعرف على كيفية إضافة تراخيص إلى اشتراكك أو توسيعه باستخدام مفتاح المنتج.
 ROBOTS: NOINDEX
-ms.date: 04/07/2021
-ms.openlocfilehash: df2c4d65f80aedb79e08f6efcab2873256e88d2f
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.date: 06/06/2022
+ms.openlocfilehash: ff7656975b5d93d03706f26de0691a91db1858eb
+ms.sourcegitcommit: 23fd850272f39c4202e2320e56d11fb6707b3e2e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715286"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65925063"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>إضافة تراخيص إلى اشتراك مدفوع أو تمديده لاستخدام مفتاح منتج
 
@@ -39,12 +39,12 @@ ms.locfileid: "64715286"
 
 ::: moniker range="o365-worldwide"
 
-1. في مركز الإدارة، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">لمنتجاتك</a> .
+1. في مركز المسؤولين، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">منتجاتك</a>.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. في مركز الإدارة، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">لمنتجاتك</a> .
+1. في مركز المسؤولين، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">منتجاتك</a>.
 ::: moniker-end
 
 2. في علامة التبويب **"المنتجات** "، حدد الاشتراك الذي تريد إضافة تراخيص إليه.
@@ -59,12 +59,12 @@ ms.locfileid: "64715286"
 
 ::: moniker range="o365-worldwide"
 
-1. في مركز الإدارة، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">لمنتجاتك</a> .
+1. في مركز المسؤولين، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">منتجاتك</a>.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. في مركز الإدارة، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">لمنتجاتك</a> .
+1. في مركز المسؤولين، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">منتجاتك</a>.
 ::: moniker-end
 
 2. في علامة التبويب **"المنتجات** "، حدد الاشتراك الذي تريد توسيعه.
