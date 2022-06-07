@@ -1,5 +1,5 @@
 ---
-title: الخطوة 2. حماية حساباتك المتميزة Microsoft 365
+title: الخطوة 2. حماية حسابات Microsoft 365 المميزة
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -22,18 +22,18 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: توفر هذه المقالة معلومات حول حماية الوصول المتميز إلى مستأجر Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9719908fcbe8aa453ac07788ee7771a39242d4e
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 3da8a6279d122a056a168485145c171f9d3d7f5f
+ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622570"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65930186"
 ---
-# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>الخطوة 2. حماية حساباتك المتميزة Microsoft 365
+# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>الخطوة 2. حماية حسابات Microsoft 365 المميزة
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise وOffice 365 Enterprise.*
 
-عادة ما تحدث الخروقات الأمنية لمستأجر Microsoft 365، بما في ذلك هجمات جمع المعلومات والتصيد الاحتيالي، عن طريق المساس ببيانات اعتماد حساب متميز Microsoft 365. الأمان في السحابة هو شراكة بينك وبين Microsoft:
+عادة ما يتم خرق الأمان لمستأجر Microsoft 365، بما في ذلك هجمات جمع المعلومات والتصيد الاحتيالي، عن طريق المساس ببيانات اعتماد حساب Microsoft 365 المميز. الأمان في السحابة هو شراكة بينك وبين Microsoft:
   
 - تستند خدمات Microsoft السحابية إلى أساس الثقة والأمان. توفر لك Microsoft عناصر تحكم وإمكانات أمان لمساعدتك على حماية بياناتك وتطبيقاتك.
     
@@ -43,9 +43,12 @@ ms.locfileid: "65622570"
   
 1. إنشاء حسابات مخصصة ومميزة مستندة إلى السحابة واستخدامها فقط عند الضرورة.
     
-2. تكوين المصادقة متعددة العوامل (MFA) للحسابات المتميزة Microsoft 365 المخصصة واستخدام أقوى شكل من أشكال المصادقة الثانوية.
+2. تكوين المصادقة متعددة العوامل (MFA) لحسابات Microsoft 365 المميزة المخصصة واستخدام أقوى شكل من أشكال المصادقة الثانوية.
 
-3. حماية الحسابات المتميزة من خلال توصيات الهوية ثقة معدومة والوصول إلى الجهاز.
+3. حماية الحسابات المتميزة باستخدام هوية الثقة المعدودة وتوصيات الوصول إلى الجهاز.
+
+> [!NOTE]
+> لتأمين أدوارك المتميزة، تحقق من [أفضل الممارسات لأدوار Azure AD](/azure/active-directory/roles/best-practices) لتأمين الوصول المتميز إلى المستأجر الخاص بك.
 
 ## <a name="1-create-dedicated-privileged-cloud-based-user-accounts-and-use-them-only-when-necessary"></a>1. إنشاء حسابات مستخدمين مخصصة ومميزة مستندة إلى السحابة واستخدامها فقط عند الضرورة
 
@@ -58,9 +61,9 @@ ms.locfileid: "65622570"
 
 تحتاج أيضا إلى إنشاء [حسابات الوصول في حالات الطوارئ](/azure/active-directory/roles/security-emergency-access) لمنع تأمينها عن طريق الخطأ من Azure AD.
 
-يمكنك حماية حساباتك المتميزة باستخدام Azure AD إدارة الهويات المتميزة (PIM) لتعيين أدوار المسؤول عند الطلب وفي الوقت المناسب. 
+يمكنك حماية حساباتك المتميزة بشكل أكبر باستخدام Azure AD Privileged Identity Management (PIM) لتعيين أدوار المسؤول عند الطلب وفي الوقت المناسب. 
  
-## <a name="2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-privileged-accounts"></a>2. تكوين المصادقة متعددة العوامل لحساباتك المتميزة Microsoft 365 المخصصة
+## <a name="2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-privileged-accounts"></a>2. تكوين المصادقة متعددة العوامل لحسابات Microsoft 365 المميزة المخصصة
 
 تتطلب المصادقة متعددة العوامل (MFA) معلومات إضافية تتجاوز اسم الحساب وكلمة المرور. يدعم Microsoft 365 أساليب التحقق الإضافية هذه:
   
@@ -70,7 +73,6 @@ ms.locfileid: "65622570"
 - بطاقة ذكية (ظاهرية أو فعلية) (تتطلب مصادقة موحدة)
 - جهاز قياس حيوي
 - الرمز المميز Oauth
-- 
     
 >[!Note]
 >بالنسبة إلى المؤسسات التي يجب أن تلتزم بمعايير المعهد الوطني للمعايير والتكنولوجيا (NIST)، يتم تقييد استخدام مكالمة هاتفية أو أساليب تحقق إضافية مستندة إلى رسالة نصية. انقر [هنا](https://pages.nist.gov/800-63-FAQ/#q-b01) للحصول على التفاصيل.
@@ -78,13 +80,13 @@ ms.locfileid: "65622570"
 
 إذا كنت شركة صغيرة تستخدم حسابات المستخدمين المخزنة فقط في السحابة (نموذج الهوية السحابية فقط)، [فقم بإعداد المصادقة](/office365/admin/security-and-compliance/set-up-multi-factor-authentication) متعددة العوامل لتكوين المصادقة متعددة العوامل (MFA) باستخدام مكالمة هاتفية أو رمز التحقق من صحة رسالة نصية يتم إرساله إلى هاتف ذكي لكل حساب متميز مخصص.
     
-إذا كنت مؤسسة أكبر تستخدم نموذج هوية مختلطة Microsoft 365، فلديك المزيد من خيارات التحقق. إذا كانت البنية الأساسية للأمان موجودة بالفعل لأسلوب مصادقة ثانوي أقوى، [فقم بإعداد المصادقة متعددة العوامل](../admin/security-and-compliance/set-up-multi-factor-authentication.md) وتكوين كل حساب مميز مخصص لأسلوب التحقق المناسب.
+إذا كنت مؤسسة أكبر تستخدم نموذج هوية مختلط Microsoft 365، فلديك المزيد من خيارات التحقق. إذا كانت البنية الأساسية للأمان موجودة بالفعل لأسلوب مصادقة ثانوي أقوى، [فقم بإعداد المصادقة متعددة العوامل](../admin/security-and-compliance/set-up-multi-factor-authentication.md) وتكوين كل حساب مميز مخصص لأسلوب التحقق المناسب.
   
-إذا لم تكن البنية الأساسية للأمان لأسلوب التحقق الأقوى المطلوب في مكانها وتعمل من أجل Microsoft 365 MFA، نوصي بشدة بتكوين حسابات مميزة مخصصة باستخدام المصادقة متعددة العوامل باستخدام تطبيق Microsoft Authenticator أو مكالمة هاتفية أو رمز التحقق من صحة رسالة نصية تم إرساله إلى هاتف ذكي لحساباتك المتميزة كإجراء أمان مؤقت. لا تترك حساباتك المتميزة المخصصة دون الحماية الإضافية التي توفرها المصادقة متعددة العوامل.
+إذا لم تكن البنية الأساسية للأمان لأسلوب التحقق الأقوى المطلوب في مكانها وتعمل في Microsoft 365 MFA، نوصي بشدة بتكوين حسابات مميزة مخصصة باستخدام المصادقة متعددة العوامل باستخدام تطبيق Microsoft Authenticator أو مكالمة هاتفية أو رمز التحقق من صحة رسالة نصية تم إرساله إلى هاتف ذكي لحساباتك المتميزة كإجراء أمان مؤقت. لا تترك حساباتك المتميزة المخصصة دون الحماية الإضافية التي توفرها المصادقة متعددة العوامل.
   
-لمزيد من المعلومات، راجع [MFA Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
+لمزيد من المعلومات، راجع [المصادقة متعددة العوامل ل Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   
-## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. حماية حسابات المسؤولين من خلال ثقة معدومة توصيات الهوية والوصول إلى الجهاز
+## <a name="3-protect-administrator-accounts-with-zero-trust-identity-and-device-access-recommendations"></a>3. حماية حسابات المسؤولين باستخدام هوية الثقة المعدودة وتوصيات الوصول إلى الجهاز
 
 للمساعدة في ضمان وجود قوة عمل آمنة ومنتجة، تقدم Microsoft مجموعة من التوصيات [للوصول إلى الهوية والجهاز](../security/office-365-security/microsoft-365-policies-configurations.md). للحصول على الهوية، استخدم التوصيات والإعدادات الواردة في هذه المقالات:
 
@@ -101,11 +103,11 @@ ms.locfileid: "65622570"
   
 للحصول على إرشادات حول كيفية إعداد محطة العمل ذات الوصول المتميز، راجع [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices).
 
-لتمكين Azure PIM لحسابات المستأجر والمسؤول Azure AD، راجع [الخطوات لتكوين PIM](/azure/active-directory/active-directory-privileged-identity-management-configure).
+لتمكين Azure PIM لحسابات مستأجر Azure AD وحسابات المسؤول، راجع [الخطوات لتكوين PIM](/azure/active-directory/active-directory-privileged-identity-management-configure).
 
 لتطوير مخطط شامل لتأمين الوصول المتميز ضد المهاجمين عبر الإنترنت، راجع [تأمين الوصول المتميز لعمليات النشر المختلطة والسحابية في Azure AD](/azure/active-directory/admin-roles-best-practices).
 
-### <a name="azure-ad-privileged-identity-management"></a>Azure AD إدارة الهويات المتميزة
+### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
 بدلا من تعيين دور مسؤول لحساباتك المتميزة بشكل دائم، يمكنك استخدام Azure AD PIM لتمكين التعيين في الوقت المناسب عند الطلب لدور المسؤول عند الحاجة.
   
@@ -113,11 +115,11 @@ ms.locfileid: "65622570"
   
 يقلل استخدام PIM وهذه العملية بشكل كبير من مقدار الوقت الذي تكون فيه حساباتك المميزة عرضة للهجوم والاستخدام من قبل المستخدمين الضارين.
 
-تتوفر PIM مع Azure Active Directory Premium P2، والتي يتم تضمينها مع Microsoft 365 E5. بدلا من ذلك، يمكنك شراء تراخيص Azure Active Directory الفردية Premium P2 لحسابات المسؤول.
+يتوفر PIM مع Azure Active Directory Premium P2، المضمن مع Microsoft 365 E5. بدلا من ذلك، يمكنك شراء تراخيص Azure Active Directory Premium P2 الفردية لحسابات المسؤول.
   
 لمزيد من المعلومات، اطلع على:
 
-- [Azure AD إدارة الهويات المتميزة](/azure/active-directory/active-directory-privileged-identity-management-configure).
+- [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
 - [تأمين الوصول المتميز لعمليات النشر المختلطة والسحابية في Azure AD](/azure/active-directory/roles/security-planning)
   
 
@@ -139,10 +141,10 @@ ms.locfileid: "65622570"
 
 ### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>برنامج إدارة معلومات الأمان والأحداث (SIEM) لتسجيل Microsoft 365
 
-يقوم برنامج SIEM الذي يتم تشغيله على خادم بتحليل في الوقت الحقيقي لتنبيهات الأمان والأحداث التي تم إنشاؤها بواسطة التطبيقات وأجهزة الشبكة. للسماح لخادم SIEM بتضمين Microsoft 365 تنبيهات وأحداث الأمان في دالات التحليل وإعداد التقارير الخاصة به، قم بدمج Azure AD في SEIM. راجع [مقدمة تكامل سجل Azure](/azure/security/security-azure-log-integration-overview).
+يقوم برنامج SIEM الذي يتم تشغيله على خادم بتحليل في الوقت الحقيقي لتنبيهات الأمان والأحداث التي تم إنشاؤها بواسطة التطبيقات وأجهزة الشبكة. للسماح لخادم SIEM بتضمين تنبيهات وأحداث أمان Microsoft 365 في دالات التحليل وإعداد التقارير الخاصة به، قم بدمج Azure AD في SEIM. راجع [مقدمة تكامل سجل Azure](/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>الخطوة التالية
 
-[![حماية حسابات المستخدمين Microsoft 365](../media/deploy-identity-solution-overview/microsoft-365-secure-sign-in.png)](microsoft-365-secure-sign-in.md)
+[![حماية حسابات مستخدمي Microsoft 365](../media/deploy-identity-solution-overview/microsoft-365-secure-sign-in.png)](microsoft-365-secure-sign-in.md)
 
 تابع [الخطوة 3](microsoft-365-secure-sign-in.md) لتأمين حسابات المستخدمين.

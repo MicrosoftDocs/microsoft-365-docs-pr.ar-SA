@@ -17,19 +17,19 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
-description: تعرف على كيفية استخدام PowerShell لإجراء ترحيل بروتوكول الوصول إلى بريد إنترنت (IMAP) إلى Microsoft 365.
-ms.openlocfilehash: f93d56379dfa82ec3a369c89b35fc40d49fa1537
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: تعرف على كيفية استخدام PowerShell لتنفيذ ترحيل بروتوكول الوصول إلى بريد الإنترنت (IMAP) إلى Microsoft 365.
+ms.openlocfilehash: cc5a68e3a570151044663366b686998b7d3be08e
+ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078658"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65930164"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>استخدم PowerShell لإجراء ترحيل IMAP إلى Microsoft 365
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise وOffice 365 Enterprise.*
 
-كجزء من عملية نشر Microsoft 365، يمكنك اختيار ترحيل محتويات علب بريد المستخدمين من خدمة البريد الإلكتروني لبروتوكول الوصول إلى بريد الإنترنت (IMAP) إلى Microsoft 365. ترشدك هذه المقالة خلال مهام ترحيل IMAP بالبريد الإلكتروني باستخدام Exchange Online PowerShell.
+كجزء من عملية نشر Microsoft 365، يمكنك اختيار ترحيل محتويات علب بريد المستخدمين من خدمة البريد الإلكتروني لبروتوكول الوصول إلى بريد الإنترنت (IMAP) إلى Microsoft 365. ترشدك هذه المقالة عبر مهام ترحيل IMAP بالبريد الإلكتروني باستخدام Exchange Online PowerShell.
 
 > [!NOTE]
 > يمكنك أيضا استخدام <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a> لإجراء ترحيل IMAP. راجع [ترحيل علب بريد IMAP](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes).
@@ -40,7 +40,7 @@ ms.locfileid: "65078658"
 
 يجب تعيين أذونات لك قبل أن تتمكن من تنفيذ هذا الإجراء أو الإجراءات. للاطلاع على الأذونات التي تحتاجها، راجع إدخال "الترحيل" في جدول في موضوع ["أذونات المستلمين](/exchange/recipients-permissions-exchange-2013-help) ".
 
-لاستخدام Exchange Online PowerShell cmdlets، تحتاج إلى تسجيل الدخول واستيراد أوامر cmdlets إلى جلسة Windows PowerShell المحلية. راجع [الاتصال Exchange Online باستخدام PowerShell البعيد](/powershell/exchange/connect-to-exchange-online-powershell) للحصول على الإرشادات.
+لاستخدام أوامر Cmdlets PowerShell في Exchange Online، تحتاج إلى تسجيل الدخول واستيراد أوامر cmdlets إلى جلسة عمل Windows PowerShell المحلية. راجع [الاتصال ب Exchange Online باستخدام PowerShell البعيد](/powershell/exchange/connect-to-exchange-online-powershell) للحصول على الإرشادات.
 
 للحصول على قائمة كاملة بأوامر الترحيل، راجع [أوامر cmdlets للتنقل والترحيل](/powershell/exchange/).
 
@@ -57,17 +57,17 @@ ms.locfileid: "65078658"
 ### <a name="step-1-prepare-for-an-imap-migration"></a>الخطوة 1: الاستعداد لإدارة IMAP
 <a name="BK_Step1"> </a>
 
-- **إذا كان لديك مجال لمؤسسة IMAP، فستضيفه كمجال مقبول لمؤسستك Microsoft 365.** إذا كنت تريد استخدام المجال نفسه الذي تملكه بالفعل لعلب بريدك Microsoft 365، يجب أولا إضافته كمجال مقبول إلى Microsoft 365. بعد إضافته، يمكنك إنشاء المستخدمين في Microsoft 365. لمزيد من المعلومات، [راجعVerify مجالك](../admin/setup/add-domain.md).
+- **إذا كان لديك مجال لمؤسسة IMAP، فستضيفه كمجال مقبول لمؤسسة Microsoft 365.** إذا كنت تريد استخدام المجال نفسه الذي تملكه بالفعل لعلب بريد Microsoft 365، يجب أولا إضافته كمجال مقبول إلى Microsoft 365. بعد إضافته، يمكنك إنشاء المستخدمين في Microsoft 365. لمزيد من المعلومات، راجع[التحقق من مجالك](../admin/setup/add-domain.md).
 
-- **أضف كل مستخدم إلى Microsoft 365 بحيث يكون لديه علبة بريد.** للحصول على الإرشادات، راجع [مستخدميAdd Microsoft 365 للأعمال](../admin/add-users/add-users.md).
+- **أضف كل مستخدم إلى Microsoft 365 بحيث يكون لديه علبة بريد.** للحصول على الإرشادات، راجع[إضافة مستخدمين إلى Microsoft 365 للأعمال](../admin/add-users/add-users.md).
 
 - **الحصول على FQDN لخادم IMAP**. تحتاج إلى توفير اسم المجال المؤهل بالكامل (FQDN) (يسمى أيضا اسم الكمبيوتر الكامل) لخادم IMAP الذي ستقوم بترحيل بيانات علبة البريد منه عند إنشاء نقطة نهاية ترحيل IMAP. استخدم عميل IMAP أو أمر PING للتحقق من إمكانية استخدام FQDN للاتصال بخادم IMAP عبر الإنترنت.
 
-- **تكوين جدار الحماية للسماح باتصالات IMAP**. قد تحتاج إلى فتح المنافذ في جدار حماية المؤسسة التي تستضيف خادم IMAP بحيث يسمح بنسبة استخدام الشبكة التي تنشأ من مركز بيانات Microsoft أثناء الترحيل بإدخال المؤسسة التي تستضيف خادم IMAP. للحصول على قائمة بعناوين IP التي تستخدمها مراكز بيانات Microsoft، راجع [Exchange Online عناوين URL ونطاقات عناوين IP](./urls-and-ip-address-ranges.md).
+- **تكوين جدار الحماية للسماح باتصالات IMAP**. قد تحتاج إلى فتح المنافذ في جدار حماية المؤسسة التي تستضيف خادم IMAP بحيث يسمح بنسبة استخدام الشبكة التي تنشأ من مركز بيانات Microsoft أثناء الترحيل بإدخال المؤسسة التي تستضيف خادم IMAP. للحصول على قائمة بعناوين IP التي تستخدمها مراكز بيانات Microsoft، راجع [عناوين URL ل Exchange Online ونطاقات عناوين IP](./urls-and-ip-address-ranges.md).
 
 - **تعيين أذونات حساب المسؤول للوصول إلى علب البريد في مؤسسة IMAP**. في حال استخدام بيانات اعتماد المسؤول في ملف CSV، يجب أن يكون للحساب الذي تستخدمه الأذونات اللازمة للوصول إلى علب البريد المحلية. يتم تحديد الأذونات المطلوبة للوصول إلى علب بريد المستخدمين بواسطة خادم IMAP معين.
 
-- **لاستخدام أوامر powerShell cmdlets Exchange Online**، تحتاج إلى تسجيل الدخول واستيراد أوامر cmdlets إلى جلسة عمل Windows PowerShell المحلية. راجع [الاتصال Exchange Online باستخدام PowerShell البعيد](/powershell/exchange/connect-to-exchange-online-powershell) للحصول على الإرشادات.
+- **لاستخدام أوامر Cmdlets PowerShell في Exchange Online**، تحتاج إلى تسجيل الدخول واستيراد أوامر cmdlets إلى جلسة عمل Windows PowerShell المحلية. راجع [الاتصال ب Exchange Online باستخدام PowerShell البعيد](/powershell/exchange/connect-to-exchange-online-powershell) للحصول على الإرشادات.
 
     للحصول على قائمة كاملة بأوامر الترحيل، راجع [أوامر cmdlets للتنقل والترحيل](/powershell/exchange/).
 
@@ -85,7 +85,7 @@ ms.locfileid: "65078658"
 
 في ما يلي السمات المطلوبة لكل مستخدم:
 
-- يحدد **EmailAddress** معرف المستخدم لعل بريد Microsoft 365 الخاص بالمستخدم.
+- **يحدد EmailAddress** معرف المستخدم لعل بريد Microsoft 365 الخاص بالمستخدم.
 
 - يحدد **UserName** اسم تسجيل الدخول للحساب الذي يجب استخدامه للوصول إلى علبة البريد على خادم IMAP.
 
@@ -104,7 +104,7 @@ paulc@contoso.edu,paul.cannon,3281986
 
  **Microsoft Exchange:**
 
-إذا كنت تقوم بترحيل البريد الإلكتروني من تطبيق IMAP ل Microsoft Exchange، فاستخدم تنسيق **Domain/Admin_UserName/User_UserName** **للسمة UserName** في ملف CSV. لنفترض أنك تقوم بترحيل البريد الإلكتروني من Exchange ل Terry Adams وAnn Beebe و Paul Cannon. لديك حساب مسؤول البريد، حيث يكون اسم المستخدم **mailadmin** وكلمة المرور **هي Pssw0rd\@**. إليك الشكل الذي سيبدو عليه ملف CSV:
+إذا كنت تقوم بترحيل البريد الإلكتروني من تطبيق IMAP ل Microsoft Exchange، فاستخدم **تنسيق Domain/Admin_UserName/User_UserName** **للسمة UserName** في ملف CSV. لنفترض أنك تقوم بترحيل البريد الإلكتروني من Exchange for Terry Adams وAnn Beebe و Paul Cannon. لديك حساب مسؤول البريد، حيث يكون اسم المستخدم **mailadmin** وكلمة المرور هي **P\@ssw0rd**. إليك الشكل الذي سيبدو عليه ملف CSV:
 
 ```powershell
 EmailAddress,UserName,Password
@@ -115,7 +115,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot:**
 
-بالنسبة لخوادم IMAP التي تدعم طبقة الأمان والمصادقة البسيطة (SASL)، مثل خادم Dovecot IMAP، استخدم التنسيق **User_UserName*Admin_UserName**، حيث تكون العلامة النجمية ( * ) حرف فاصل قابل للتكوين. لنفترض أنك تقوم بترحيل البريد الإلكتروني للمستخدمين نفسه من خادم Dovecot IMAP باستخدام بيانات اعتماد المسؤول **mailadmin** **وPssw0rd\@**. إليك الشكل الذي سيبدو عليه ملف CSV:
+بالنسبة لخوادم IMAP التي تدعم طبقة الأمان والمصادقة البسيطة (SASL)، مثل خادم Dovecot IMAP، استخدم التنسيق **User_UserName*Admin_UserName**، حيث تكون العلامة النجمية ( * ) حرف فاصل قابل للتكوين. لنفترض أنك تقوم بترحيل البريد الإلكتروني للمستخدمين نفسه من خادم Dovecot IMAP باستخدام بيانات اعتماد المسؤول **mailadmin** **وP\@ssw0rd**. إليك الشكل الذي سيبدو عليه ملف CSV:
 
 ```powershell
 EmailAddress,UserName,Password
@@ -126,7 +126,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
 
  **Mirapoint:**
 
-إذا كنت تقوم بترحيل البريد الإلكتروني من خادم رسائل Mirapoint، فاستخدم التنسيق **#user\@ domain#Admin_UserName#** لبيانات اعتماد المسؤول. ترحيل البريد الإلكتروني من Mirapoint باستخدام **mailadmin** لبيانات اعتماد المسؤول **وPssw0rd\@**، سيبدو ملف CSV كما يلي:
+إذا كنت تقوم بترحيل البريد الإلكتروني من خادم رسائل Mirapoint، فاستخدم التنسيق **#user\@المجال#Admin_UserName#** لبيانات اعتماد المسؤول. ترحيل البريد الإلكتروني من Mirapoint باستخدام **mailadmin** لبيانات اعتماد المسؤول **وP\@ssw0rd**، سيبدو ملف CSV كما يلي:
 
 ```powershell
 EmailAddress,UserName,Password
@@ -152,7 +152,7 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 
 ### <a name="step-3-create-an-imap-migration-endpoint"></a>الخطوة 3: إنشاء نقطة نهاية ترحيل IMAP
 
-لنقل البريد الإلكتروني بنجاح، يحتاج Microsoft 365 إلى الاتصال بنظام البريد الإلكتروني المصدر والتواصل معه. للقيام بذلك، يستخدم Microsoft 365 نقطة نهاية الترحيل. تحدد نقطة نهاية الترحيل أيضا عدد علب البريد المراد ترحيلها في وقت واحد وعدد علب البريد المراد مزامنتها في وقت واحد أثناء المزامنة التزايدية، والتي تحدث مرة واحدة كل 24 ساعة. لإنشاء نقطة نهاية ترحيل ل IMAP، [اتصل أولا Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
+للانتقال إلى البريد الإلكتروني بنجاح، يحتاج Microsoft 365 إلى الاتصال بنظام البريد الإلكتروني المصدر والتواصل معه. للقيام بذلك، يستخدم Microsoft 365 نقطة نهاية ترحيل. تحدد نقطة نهاية الترحيل أيضا عدد علب البريد المراد ترحيلها في وقت واحد وعدد علب البريد المراد مزامنتها في وقت واحد أثناء المزامنة التزايدية، والتي تحدث مرة واحدة كل 24 ساعة. لإنشاء نقطة نهاية ترحيل ل IMAP، [اتصل أولا ب Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 للحصول على قائمة كاملة بأوامر الترحيل، راجع [أوامر cmdlets للتنقل والترحيل](/powershell/exchange/).
 
@@ -163,14 +163,14 @@ New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -P
 
 ```
 
-يمكنك أيضا إضافة معلمات لتحديد عمليات الترحيل المتزامنة والترحيلات التزايدية المتزامنة والمنفذ المطلوب استخدامه. يقوم الأمر Exchange Online PowerShell التالي بإنشاء نقطة نهاية ترحيل IMAP تسمى "IMAPEndpoint" التي تدعم 50 عملية ترحيل متزامنة وما يصل إلى 25 مزامنة تزايدية متزامنة. كما أنه يقوم بتكوين نقطة النهاية لاستخدام المنفذ 143 لتشفير TLS.
+يمكنك أيضا إضافة معلمات لتحديد عمليات الترحيل المتزامنة والترحيلات التزايدية المتزامنة والمنفذ المطلوب استخدامه. يقوم أمر Exchange Online PowerShell التالي بإنشاء نقطة نهاية ترحيل IMAP تسمى "IMAPEndpoint" التي تدعم 50 عملية ترحيل متزامنة وما يصل إلى 25 مزامنة تزايدية متزامنة. كما أنه يقوم بتكوين نقطة النهاية لاستخدام المنفذ 143 لتشفير TLS.
 
 ```powershell
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 143 -Security Tls -MaxConcurrentMigrations
 50 -MaxConcurrentIncrementalSyncs 25
 ```
 
-لمزيد من المعلومات حول **New-MigrationEndpoint** cmdlet، [راجعNew-MigrationEndpoint](/powershell/module/exchange/new-migrationendpoint).
+لمزيد من المعلومات حول **New-MigrationEndpoint** cmdlet، راجع [New-MigrationEndpoint](/powershell/module/exchange/new-migrationendpoint).
 
 #### <a name="verify-it-worked"></a>تحقق من أنه يعمل
 
@@ -182,9 +182,9 @@ Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,
 
 ### <a name="step-4-create-and-start-an-imap-migration-batch"></a>الخطوة 4: إنشاء دفعة ترحيل IMAP وبدء تشغيلها
 
-يمكنك استخدام [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) cmdlet لإنشاء دفعة ترحيل لإدارة ترحيل IMAP. يمكنك إنشاء دفعة ترحيل وبدء تشغيلها تلقائيا عن طريق تضمين المعلمة _AutoStart_ . بدلا من ذلك، يمكنك إنشاء دفعة الترحيل ثم بدء تشغيلها بعد ذلك باستخدام cmdlet ل [MigrationBatch-theStart](/powershell/module/exchange/start-migrationbatch) .
+يمكنك استخدام [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) cmdlet لإنشاء دفعة ترحيل لإدارة ترحيل IMAP. يمكنك إنشاء دفعة ترحيل وبدء تشغيلها تلقائيا عن طريق تضمين المعلمة _AutoStart_ . بدلا من ذلك، يمكنك إنشاء دفعة الترحيل ثم بدء تشغيلها بعد ذلك باستخدام[Start-MigrationBatch](/powershell/module/exchange/start-migrationbatch) cmdlet.
 
-سيبدأ أمر PowerShell Exchange Online التالي دفعة الترحيل المسماة "IMAPBatch1" تلقائيا باستخدام نقطة نهاية IMAP التي تسمى "IMAPEndpoint":
+سيبدأ أمر Exchange Online PowerShell التالي دفعة الترحيل التي تسمى "IMAPBatch1" تلقائيا باستخدام نقطة نهاية IMAP التي تسمى "IMAPEndpoint":
 
 ```powershell
 New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\IMAPmigration_1.csv")) -AutoStart
@@ -206,7 +206,7 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 
 ### <a name="step-5-route-your-email-to-microsoft-365"></a>الخطوة 5: توجيه بريدك الإلكتروني إلى Microsoft 365
 
-تستخدم أنظمة البريد الإلكتروني سجل DNS يسمى سجل MX لمعرفة مكان تسليم رسائل البريد الإلكتروني. أثناء عملية ترحيل البريد الإلكتروني، كان سجل MX يشير إلى نظام البريد الإلكتروني المصدر. الآن بعد اكتمال ترحيل البريد الإلكتروني إلى Microsoft 365، حان الوقت لإشارة سجل MX إلى Microsoft 365. يساعد ذلك على التأكد من تسليم البريد الإلكتروني إلى علب بريدك Microsoft 365. من خلال نقل سجل MX، يمكنك أيضا إيقاف تشغيل نظام البريد الإلكتروني القديم عندما تكون جاهزا.
+تستخدم أنظمة البريد الإلكتروني سجل DNS يسمى سجل MX لمعرفة مكان تسليم رسائل البريد الإلكتروني. أثناء عملية ترحيل البريد الإلكتروني، كان سجل MX يشير إلى نظام البريد الإلكتروني المصدر. الآن بعد اكتمال ترحيل البريد الإلكتروني إلى Microsoft 365، حان الوقت لإشارة سجل MX في Microsoft 365. يساعد ذلك على التأكد من تسليم البريد الإلكتروني إلى علب بريد Microsoft 365. من خلال نقل سجل MX، يمكنك أيضا إيقاف تشغيل نظام البريد الإلكتروني القديم عندما تكون جاهزا.
 
 بالنسبة إلى العديد من موفري DNS، هناك إرشادات محددة لتغيير سجل MX. إذا لم يكن موفر DNS الخاص بك مضمنا، أو إذا كنت تريد الحصول على فكرة عن التوجيهات العامة، يتم توفير [إرشادات سجل MX العامة](https://go.microsoft.com/fwlink/?LinkId=397449) أيضا.
 
@@ -214,11 +214,11 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 
 ### <a name="step-6-delete-imap-migration-batch"></a>الخطوة 6: حذف دفعة ترحيل IMAP
 
-بعد تغيير سجل MX والتحقق من توجيه كل رسائل البريد الإلكتروني إلى علب بريد Microsoft 365، قم بإعلام المستخدمين بأن البريد الخاص بهم سينتقل إلى Microsoft 365. بعد ذلك، يمكنك حذف دفعة ترحيل IMAP. تحقق مما يلي قبل حذف دفعة الترحيل.
+بعد تغيير سجل MX والتحقق من توجيه كل رسائل البريد الإلكتروني إلى علب بريد Microsoft 365، قم بإعلام المستخدمين بأن بريدهم سينتقل إلى Microsoft 365. بعد ذلك، يمكنك حذف دفعة ترحيل IMAP. تحقق مما يلي قبل حذف دفعة الترحيل.
 
-- يستخدم جميع المستخدمين علب بريد Microsoft 365. بعد حذف الدفعة، لا يتم نسخ البريد المرسل إلى علب البريد في Exchange Server المحلية إلى علب بريد Microsoft 365 المقابلة.
+- يستخدم جميع المستخدمين علب بريد Microsoft 365. بعد حذف الدفعة، لا يتم نسخ البريد المرسل إلى علب البريد على Exchange Server المحلي إلى علب بريد Microsoft 365 المقابلة.
 
-- Microsoft 365 تمت مزامنة علب البريد مرة واحدة على الأقل بعد بدء إرسال البريد إليها مباشرة. للقيام بذلك، تأكد من أن القيمة الموجودة في المربع "وقت آخر مزامنة" دفعة الترحيل أحدث مما كانت عليه عند بدء توجيه البريد مباشرة إلى علب بريد Microsoft 365.
+- تمت مزامنة علب بريد Microsoft 365 مرة واحدة على الأقل بعد بدء إرسال البريد إليها مباشرة. للقيام بذلك، تأكد من أن القيمة الموجودة في المربع "وقت آخر مزامنة" دفعة الترحيل أحدث مما كانت عليه عند بدء توجيه البريد مباشرة إلى علب بريد Microsoft 365.
 
 لحذف دفعة الترحيل "IMAPBatch1" من Exchange Online PowerShell، قم بتشغيل الأمر التالي:
 
@@ -226,7 +226,7 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 Remove-MigrationBatch -Identity IMAPBatch1
 ```
 
-لمزيد من المعلومات حول **Remove-MigrationBatch** cmdlet، [راجعRemove-MigrationBatch](/powershell/module/exchange/remove-migrationbatch).
+لمزيد من المعلومات حول **Remove-MigrationBatch** cmdlet، راجع [Remove-MigrationBatch](/powershell/module/exchange/remove-migrationbatch).
 
 #### <a name="verify-it-worked"></a>تحقق من أنه يعمل
 
@@ -238,7 +238,7 @@ Get-MigrationBatch IMAPBatch1"
 
 سيرجع الأمر إما دفعة الترحيل بحالة **إزالة**، أو سيرجع خطأ يفيد بتعذر العثور على دفعة الترحيل، مع التحقق من حذف الدفعة.
 
-لمزيد من المعلومات حول **Get-MigrationBatch** cmdlet، [راجعGet-MigrationBatch](/powershell/module/exchange/get-migrationbatch).
+لمزيد من المعلومات حول **Get-MigrationBatch** cmdlet، راجع [Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch).
 
 ## <a name="see-also"></a>راجع أيضًا
 

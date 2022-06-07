@@ -1,5 +1,5 @@
 ---
-title: إنشاء حسابات مستخدمين Microsoft 365 باستخدام PowerShell
+title: إنشاء حسابات مستخدمي Microsoft 365 باستخدام PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -18,29 +18,29 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: كيفية استخدام PowerShell لإنشاء حسابات مستخدمين فردية أو متعددة Microsoft 365.
-ms.openlocfilehash: 2b0ef749dc0a0d38d84d1086dee50ce416d93e9b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: كيفية استخدام PowerShell لإنشاء حسابات مستخدم Microsoft 365 فردية أو متعددة.
+ms.openlocfilehash: 9f96c5a96e014055622deb34c37cb8523f0041f8
+ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101040"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65930230"
 ---
-# <a name="create-microsoft-365-user-accounts-with-powershell"></a>إنشاء حسابات مستخدمين Microsoft 365 باستخدام PowerShell
+# <a name="create-microsoft-365-user-accounts-with-powershell"></a>إنشاء حسابات مستخدمي Microsoft 365 باستخدام PowerShell
 
-*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
+*تنطبق هذه المقالة على كل من Microsoft 365 Enterprise وOffice 365 Enterprise.*
 
-يمكنك استخدام PowerShell Microsoft 365 لإنشاء حسابات المستخدمين بكفاءة، بما في ذلك حسابات متعددة.
+يمكنك استخدام PowerShell ل Microsoft 365 لإنشاء حسابات المستخدمين بكفاءة، بما في ذلك حسابات متعددة.
 
 عند إنشاء حسابات مستخدمين في PowerShell، تكون بعض خصائص الحساب مطلوبة دائما. الخصائص الأخرى غير مطلوبة ولكنها مهمة. راجع الجدول التالي.
   
 |**اسم الخاصية**|**مطلوب؟**|**الوصف**|
 |:-----|:-----|:-----|
 |**العرض** <br/> |نعم  <br/> |هذا هو اسم العرض المستخدم في خدمات Microsoft 365. على سبيل المثال، *Caleb Sills*. <br/> |
-|**UserPrincipalName** <br/> |نعم  <br/> |هذا هو اسم الحساب المستخدم لتسجيل الدخول إلى خدمات Microsoft 365. على سبيل المثال، *Calebs\@ contoso.onmicrosoft.com*.  <br/> |
+|**UserPrincipalName** <br/> |نعم  <br/> |هذا هو اسم الحساب المستخدم لتسجيل الدخول إلى خدمات Microsoft 365. على سبيل المثال، *contoso.onmicrosoft.com CalebS\@*.  <br/> |
 |**Firstname** <br/> |لا  <br/> ||
 |**Lastname** <br/> |لا  <br/> ||
-|**LicenseAssignment** <br/> |لا  <br/> |هذه هي خطة الترخيص (المعروفة أيضا بخطة الترخيص أو SKU) التي يتم من خلالها تعيين ترخيص متوفر لحساب المستخدم. يحدد الترخيص خدمات Microsoft 365 المتوفرة للحساب. لا يتعين عليك تعيين ترخيص لمستخدم عند إنشاء الحساب، ولكن يجب أن يكون للحساب ترخيص للوصول إلى خدمات Microsoft 365. لديك 30 يوما لترخيص حساب المستخدم بعد إنشائه. |
+|**LicenseAssignment** <br/> |لا  <br/> |هذه هي خطة الترخيص (المعروفة أيضا [بخطة الترخيص أو SKU](/azure/active-directory/enterprise-users/licensing-service-plan-reference)) التي يتم من خلالها تعيين ترخيص متوفر لحساب المستخدم. يحدد الترخيص خدمات Microsoft 365 المتوفرة للحساب. لا يتعين عليك تعيين ترخيص لمستخدم عند إنشاء الحساب، ولكن يجب أن يكون للحساب ترخيص للوصول إلى خدمات Microsoft 365. لديك 30 يوما لترخيص حساب المستخدم بعد إنشائه. |
 |**كلمه المرور** <br/> |لا  <br/> | إذا لم تحدد كلمة مرور، يتم تعيين كلمة مرور عشوائية لحساب المستخدم، وتكون كلمة المرور مرئية في نتائج الأمر. إذا حددت كلمة مرور، فيجب أن تكون من 8 إلى 16 حرفا نصيا من ASCII من الأنواع التالية: أحرف صغيرة وأحرف كبيرة وأرقام ورموز.<br/> |
 |**تحديد الاستخدام** <br/> |لا  <br/> |هذا رمز بلد ISO 3166-1 alpha-2 صالح. على سبيل المثال، *الولايات* المتحدة للولايات المتحدة، *وFR* ل فرنسا. من المهم توفير هذه القيمة، لأن بعض خدمات Microsoft 365 غير متوفرة في بعض البلدان. لا يمكنك تعيين ترخيص لحساب مستخدم ما لم يتم تكوين هذه القيمة للحساب. لمزيد من المعلومات، راجع ["حول قيود الترخيص](https://go.microsoft.com/fwlink/p/?LinkId=691730)".<br/> |
 
@@ -50,7 +50,7 @@ ms.locfileid: "65101040"
 > للحصول على قائمة بالموارد الإضافية، راجع [إدارة المستخدمين والمجموعات](/admin).
 >   
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>استخدام Azure Active Directory PowerShell للوحدة النمطية Graph
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>استخدام Azure Active Directory PowerShell للوحدة النمطية للرسم البياني
 
 أولا، [اتصل بمستأجر Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
@@ -70,7 +70,7 @@ $PasswordProfile.Password="3Rv0y1q39/chsy"
 New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -MailNickName calebs -PasswordProfile $PasswordProfile -AccountEnabled $true
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>استخدام الوحدة النمطية Microsoft Azure Active Directory Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>استخدام وحدة Microsoft Azure Active Directory النمطية ل Windows PowerShell
 
 أولا، [اتصل بمستأجر Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -83,10 +83,10 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->لا يدعم PowerShell Core الوحدة النمطية Microsoft Azure Active Directory لوحدة Windows PowerShell و cmdlets التي تحتوي على *Msol* باسمها. تشغيل أوامر cmdlets هذه من Windows PowerShell.
+>لا يدعم PowerShell Core وحدة Microsoft Azure Active Directory النمطية لوحدة Windows PowerShell و cmdlets التي تحتوي على *Msol* باسمها. شغل أوامر cmdlets هذه من Windows PowerShell.
 >
 
-لإدراج أسماء خطط الترخيص المتوفرة، استخدم هذا الأمر:
+لإدراج [أسماء خطط الترخيص](/azure/active-directory/enterprise-users/licensing-service-plan-reference) المتوفرة، استخدم هذا الأمر:
 
 ````powershell
 Get-MsolAccountSku
@@ -110,7 +110,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
      ```
 
    >[!NOTE]
-   >أسماء الأعمدة وترتيبها في الصف الأول من ملف CSV عشوائية. ولكن تأكد من أن ترتيب البيانات في بقية الملف يطابق ترتيب أسماء الأعمدة. واستخدم أسماء الأعمدة لقيم المعلمات في PowerShell للأمر Microsoft 365.
+   >أسماء الأعمدة وترتيبها في الصف الأول من ملف CSV عشوائية. ولكن تأكد من أن ترتيب البيانات في بقية الملف يطابق ترتيب أسماء الأعمدة. واستخدم أسماء الأعمدة لقيم المعلمات في أمر PowerShell ل Microsoft 365.
     
 2. استخدم بناء الجملة التالي:
     
@@ -124,11 +124,11 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
     Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
     ```
 
-3. راجع ملف الإخراج للاطلاع على النتائج. لم نحدد كلمات المرور، لذلك تكون كلمات المرور العشوائية التي Microsoft 365 إنشاؤها مرئية في ملف الإخراج.
+3. راجع ملف الإخراج للاطلاع على النتائج. لم نحدد كلمات المرور، لذلك تكون كلمات المرور العشوائية التي أنشأها Microsoft 365 مرئية في ملف الإخراج.
     
 ## <a name="see-also"></a>راجع أيضًا
 
-[إدارة حسابات المستخدمين والتراخيص والمجموعات Microsoft 365 باستخدام PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[إدارة حسابات المستخدمين والتراخيص والمجموعات في Microsoft 365 باستخدام PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
 [إدارة Microsoft 365 باستخدام PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
