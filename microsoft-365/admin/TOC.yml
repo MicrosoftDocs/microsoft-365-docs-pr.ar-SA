@@ -348,10 +348,6 @@
           href: security-and-compliance/enable-modern-authentication.md
         - name: التهديدات التي كشف عنها برنامج الحماية من الفيروسات من Microsoft Defender
           href: /microsoft-365/business-premium/m365bp-review-threats-take-action
-        - name: إعداد نُهج التوافق
-          href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
-        - name: درجة الأمان
-          href: /microsoft-365/security/defender/microsoft-secure-score
         - name: دليل لتوافق القانون العام لحماية القانون العام (GDPR)
           href: security-and-compliance/gdpr-compliance.md
     - name: إدارة الأجهزة وبيانات التطبيق

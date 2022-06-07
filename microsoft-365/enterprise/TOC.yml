@@ -627,7 +627,6 @@
 - name: بنية وحلول Microsoft 365
   href: ../solutions/index.yml
 - name: إدارة استمرارية الأعمال للمؤسسة (EBCM) مع خدمات السحابة
-  href: /compliance/assurance/assurance-understanding-ebcm-with-cloud-services
   items:
     - name: مسؤوليات EBCM للعميل وشركاء السحابة
       href: /compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities

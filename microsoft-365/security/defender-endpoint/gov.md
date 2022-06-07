@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender لنقطة النهاية لعملاء الحكومة الأمريكية
-description: تعرف على Microsoft Defender لنقطة النهاية لمتطلبات وقدرات عملاء حكومة الولايات المتحدة المتوفرة
-keywords: الحكومة، مجلس التعاون، عال، متطلبات، قدرات، defender، Microsoft Defender لنقطة النهاية، نقطة النهاية، dod
+description: تعرف على متطلبات وقدرات عملاء Microsoft Defender لنقطة النهاية المتوفرة لعملاء حكومة الولايات المتحدة
+keywords: الحكومة، مجلس التعاون، عال، متطلبات، قدرات، Defender، Microsoft Defender لنقطة النهاية، نقطة النهاية، dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ce42709349e5d7464e1809df248c8055bdfaab30
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 84b91b56a8f34f0fa726684dab513d9356904ff4
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810977"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922942"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender لنقطة النهاية لعملاء الحكومة الأمريكية
 
@@ -29,12 +29,12 @@ ms.locfileid: "65810977"
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-تستخدم Microsoft Defender لنقطة النهاية لعملاء حكومة الولايات المتحدة، المضمنة في بيئة Azure US Government، نفس التقنيات الأساسية مثل Defender لنقطة النهاية في Azure Commercial.
+يستخدم Microsoft Defender لنقطة النهاية لعملاء حكومة الولايات المتحدة، المضمنين في بيئة Azure US Government، نفس التقنيات الأساسية مثل Defender لنقطة النهاية في Azure Commercial.
 
-يتوفر هذا العرض لعملاء سحابة القطاع الحكومي سحابة القطاع الحكومي High و DoD ويستند إلى نفس الوقاية والكشف والتحقيق والمعالجة مثل الإصدار التجاري. ومع ذلك، هناك بعض الاختلافات في توفر القدرات لهذا العرض.
+يتوفر هذا العرض لعملاء GCC و GCC High و DoD ويستند إلى نفس الوقاية والكشف والتحقيق والمعالجة مثل الإصدار التجاري. ومع ذلك، هناك بعض الاختلافات في توفر القدرات لهذا العرض.
 
 > [!NOTE]
-> إذا كنت عميلا سحابة القطاع الحكومي تستخدم Defender لنقطة النهاية في Commercial، فالرجاء الرجوع إلى صفحات الوثائق العامة.
+> إذا كنت عميلا في GCC تستخدم Defender لنقطة النهاية في Commercial، فالرجاء الرجوع إلى صفحات الوثائق العامة.
 
 ## <a name="licensing-requirements"></a>متطلبات الترخيص
 
@@ -46,12 +46,12 @@ ms.locfileid: "65810977"
 
 ****
 
-|سحابة القطاع الحكومي|سحابة القطاع الحكومي عالية|وزاره الدفاع|
+|دول مجلس التعاون الخليجي|GCC High|وزاره الدفاع|
 |---|---|---|
-|Microsoft 365 سحابة القطاع الحكومي G5|Microsoft 365 E5 ل سحابة القطاع الحكومي High|Microsoft 365 G5 ل DOD|
-|Microsoft 365 سحابة القطاع الحكومي أمان G5|Microsoft 365 أمان G5 ل سحابة القطاع الحكومي High|Microsoft 365 أمان G5 ل DOD|
-|Microsoft Defender لنقطة النهاية - سحابة القطاع الحكومي|Microsoft Defender لنقطة النهاية ل سحابة القطاع الحكومي High|Microsoft Defender لنقطة النهاية ل DOD|
-|سحابة القطاع الحكومي Windows 10 Enterprise E5|Windows 10 Enterprise E5 ل سحابة القطاع الحكومي High|Windows 10 Enterprise E5 ل DOD|
+|Microsoft 365 GCC G5|Microsoft 365 E5 ل GCC High|Microsoft 365 G5 ل DOD|
+|Microsoft 365 G5 Security GCC|Microsoft 365 G5 Security for GCC High|أمان Microsoft 365 G5 ل DOD|
+|Microsoft Defender لنقطة النهاية - GCC|Microsoft Defender لنقطة النهاية ل GCC High|Microsoft Defender لنقطة النهاية ل DOD|
+|Windows 10 Enterprise E5 GCC|Windows 10 Enterprise E5 ل GCC High|Windows 10 Enterprise E5 ل DOD|
 |
 
 ### <a name="server-licensing"></a>ترخيص الخادم
@@ -60,9 +60,9 @@ ms.locfileid: "65810977"
 
 ****
 
-|سحابة القطاع الحكومي|سحابة القطاع الحكومي عالية|وزاره الدفاع|
+|دول مجلس التعاون الخليجي|GCC High|وزاره الدفاع|
 |---|---|---|
-|سحابة القطاع الحكومي خادم Microsoft Defender لنقطة النهاية|Microsoft Defender لنقطة النهاية Server ل سحابة القطاع الحكومي High|خادم Microsoft Defender لنقطة النهاية ل DOD|
+|Microsoft Defender لخادم نقطة النهاية GCC|Microsoft Defender لخادم نقطة النهاية ل GCC High|Microsoft Defender لخادم نقطة النهاية ل DOD|
 |Microsoft Defender للخوادم|Microsoft Defender للخوادم - Government|Microsoft Defender للخوادم - Government|
 |
 
@@ -76,12 +76,12 @@ ms.locfileid: "65810977"
 
 |نوع العميل|URL المدخل|
 |---|---|
-|سحابة القطاع الحكومي|<https://security.microsoft.com>|
-|سحابة القطاع الحكومي عالية|<https://security.microsoft.us>|
+|دول مجلس التعاون الخليجي|<https://security.microsoft.com>|
+|GCC High|<https://security.microsoft.us>|
 |وزاره الدفاع|<https://security.apps.mil>|
 |
 > [!NOTE]
-> إذا كنت عميلا سحابة القطاع الحكومي وتنتقل من Microsoft Defender لنقطة النهاية تجاري إلى سحابة القطاع الحكومي، فاستخدمه https://transition.security.microsoft.com للوصول إلى بياناتك التجارية Microsoft Defender لنقطة النهاية.
+> إذا كنت عميلا في GCC وكنت بصدد الانتقال من Microsoft Defender for Endpoint التجاري إلى GCC، فاستخدمه https://transition.security.microsoft.com للوصول إلى البيانات التجارية لنقطة النهاية من Microsoft Defender.
 
 ## <a name="endpoint-versions"></a>إصدارات نقطة النهاية
 
@@ -93,7 +93,7 @@ ms.locfileid: "65810977"
 
 ****
 
-إصدار نظام التشغيل|سحابة القطاع الحكومي|سحابة القطاع الحكومي عالية|وزاره الدفاع
+إصدار نظام التشغيل|دول مجلس التعاون الخليجي|GCC High|وزاره الدفاع
 :---|:---:|:---:|:---:
 Windows 11|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 Windows 10، الإصدار 21H1 والإصدارات الأحدث|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
@@ -101,7 +101,7 @@ Windows 10، الإصدار 20H2 (مع [KB4586853](https://support.microsoft.com
 Windows 10، الإصدار 2004 (مع [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 Windows 10، الإصدار 1909 (مع [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 Windows 10، الإصدار 1903 (مع [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
-الإصدار 1809 من Windows 10 (مع [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
+Windows 10، الإصدار 1809 (مع [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 Windows 10، الإصدار 1803 (مع [KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 Windows 10، الإصدار 1709|![لا.](images/svg/check-no.svg) <br /> ملاحظة: لن يتم دعمه|![نعم](images/svg/check-yes.svg) مع [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> ملاحظة: [مهمل](/lifecycle/announcements/revised-end-of-service-windows-10-1709)، الرجاء الترقية|![لا](images/svg/check-no.svg) <br /> ملاحظة: لن يتم دعمه
 Windows 10، الإصدار 1703 والإصدارات السابقة|![لا.](images/svg/check-no.svg) <br /> ملاحظة: لن يتم دعمه|![لا](images/svg/check-no.svg) <br /> ملاحظة: لن يتم دعمه|![لا](images/svg/check-no.svg) <br /> ملاحظة: لن يتم دعمه
@@ -117,15 +117,15 @@ Windows 8 Pro (قديم) <sup>3</sup>|![نعم.](images/svg/check-yes.svg)|![ن�
 Windows 7 SP1 Enterprise (قديم) <sup>3</sup>|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 Windows 7 SP1 Pro (قديم) <sup>3</sup>|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 ينكس|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
-macOS|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
-الروبوت|![نعم.](images/svg/check-yes.svg) <br /> معاينة عامة|![نعم](images/svg/check-yes.svg) <br /> معاينة عامة|![نعم](images/svg/check-yes.svg) <br /> معاينة عامة
-دائره الرقابه الداخليه|![نعم.](images/svg/check-yes.svg) <br /> معاينة عامة|![نعم](images/svg/check-yes.svg) <br /> معاينة عامة|![نعم](images/svg/check-yes.svg) <br /> معاينة عامة
+ماك|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
+الروبوت|![نعم.](images/svg/check-yes.svg) <br /> |![نعم](images/svg/check-yes.svg) <br /> |![نعم](images/svg/check-yes.svg) <br /> 
+دائره الرقابه الداخليه|![نعم.](images/svg/check-yes.svg) <br /> |![نعم](images/svg/check-yes.svg) <br /> |![نعم](images/svg/check-yes.svg) <br /> 
 |
 
 > [!NOTE]
 > <sup>1</sup> يجب نشر التصحيح قبل إلحاق الجهاز من أجل تكوين Defender لنقطة النهاية إلى البيئة الصحيحة.
 >
-> <sup>2</sup> تعرف على [الحل الحديث الموحد Windows 2016 و2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). إذا كنت قد قمت مسبقا بإلحاق الخوادم باستخدام MMA، فاتبع الإرشادات المتوفرة في [ترحيل الخادم](server-migration.md) للرحل إلى الحل الجديد.
+> <sup>2</sup> تعرف على [الحل الحديث الموحد لنظامي التشغيل Windows 2016 و2012 R2](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). إذا كنت قد قمت مسبقا بإلحاق الخوادم باستخدام MMA، فاتبع الإرشادات المتوفرة في [ترحيل الخادم](server-migration.md) للرحل إلى الحل الجديد.
 >
 > <sup>3</sup> عند استخدام [عامل مراقبة Microsoft](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) ستحتاج إلى اختيار "Azure US Government" ضمن "Azure Cloud" إذا كنت تستخدم [معالج الإعداد](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)، أو إذا كنت تستخدم [سطر أوامر](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) أو [برنامج نصي](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - قم بتعيين المعلمة "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" إلى 1. <br /> الحد الأدنى للإصدار المعتمد من MMA هو 10.20.18029 (مارس 2020).
 
@@ -137,7 +137,7 @@ macOS|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|!
 
 ****
 
-إصدار نظام التشغيل|سحابة القطاع الحكومي|سحابة القطاع الحكومي عالية|وزاره الدفاع
+إصدار نظام التشغيل|دول مجلس التعاون الخليجي|GCC High|وزاره الدفاع
 :---|:---:|:---:|:---:
 Windows Server 2022|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
 Windows Server 2019|![نعم.](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)
@@ -154,8 +154,8 @@ Windows Server 2008 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم](images
 
 |جدول بيانات قائمة المجالات| الوصف|
 |---|---|
-|Microsoft Defender لنقطة النهاية قائمة URL للعملاء التجاريين| جدول بيانات لسجلات DNS محددة لمواقع الخدمة والمواقع الجغرافية ونظام التشغيل للعملاء التجاريين. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
-| Microsoft Defender لنقطة النهاية قائمة URL ل Gov/سحابة القطاع الحكومي/DoD | جدول بيانات لسجلات DNS محددة لمواقع الخدمة والمواقع الجغرافية ونظام التشغيل لعملاء Gov/سحابة القطاع الحكومي/DoD. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
+|قائمة عنوان URL ل Microsoft Defender لنقطة النهاية للعملاء التجاريين| جدول بيانات لسجلات DNS محددة لمواقع الخدمة والمواقع الجغرافية ونظام التشغيل للعملاء التجاريين. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| قائمة عنوان URL ل Microsoft Defender لنقطة النهاية ل Gov/GCC/DoD | جدول بيانات لسجلات DNS معينة لمواقع الخدمة والمواقع الجغرافية ونظام التشغيل لعملاء Gov/GCC/DoD. <p> [قم بتنزيل جدول البيانات هنا.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 لمزيد من المعلومات، راجع [تكوين إعدادات وكيل الجهاز والاتصال بالإنترنت](configure-proxy-internet.md).
 
@@ -172,7 +172,7 @@ Windows Server 2008 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم](images
 
 ****
 
-|نوع نقطة النهاية|سحابة القطاع الحكومي|سحابة القطاع الحكومي عالي & DoD|
+|نوع نقطة النهاية|دول مجلس التعاون الخليجي|GCC High & DoD|
 |---|---|---|
 |تسجيل الدخول|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
 |Defender لواجهة برمجة تطبيقات نقطة النهاية|`https://api-gcc.securitycenter.microsoft.us`|`https://api-gov.securitycenter.microsoft.us`|
@@ -189,7 +189,7 @@ Windows Server 2008 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم](images
 
 ****
 
-|اسم الميزة|سحابة القطاع الحكومي|سحابة القطاع الحكومي عالية|وزاره الدفاع|
+|اسم الميزة|دول مجلس التعاون الخليجي|GCC High|وزاره الدفاع|
 |---|:---:|:---:|:---:|
 |تقييمات الشبكة|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|
 |اكتشاف الشبكة|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
@@ -198,16 +198,16 @@ Windows Server 2008 R2 SP1|![نعم.](images/svg/check-yes.svg)|![نعم](images
 |Microsoft Secure Score|![نعم](images/svg/check-yes.svg) <sup>1</sup>|![لا](images/svg/check-no.svg) غير معتمد|![لا](images/svg/check-no.svg) غير معتمد|  
 
 > [!NOTE]
-> <sup>1</sup> على الرغم من توفر نقاط الأمان من Microsoft للعملاء سحابة القطاع الحكومي، هناك بعض توصيات الأمان غير المتوفرة.
+> <sup>1</sup> على الرغم من توفر نقاط Microsoft الآمنة لعملاء GCC، هناك بعض توصيات الأمان غير المتوفرة.
 
 
-هذه هي الميزات والثغرات المعروفة ل [Mobile Threat Defense (Microsoft Defender لنقطة النهاية على Android & iOS)](mtd.md):
+هذه هي الميزات والثغرات المعروفة ل [Mobile Threat Defense (Microsoft Defender لنقطة النهاية على Android & iOS):](mtd.md)
 
 <br />
 
 ****
 
-|اسم الميزة|سحابة القطاع الحكومي|سحابة القطاع الحكومي عالية|وزاره الدفاع|
+|اسم الميزة|دول مجلس التعاون الخليجي|GCC High|وزاره الدفاع|
 |---|:---:|:---:|:---:|
 |حماية الويب (مكافحة التصيد الاحتيالي والمؤشرات المخصصة)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|![نعم](images/svg/check-yes.svg)|
 |الحماية من البرامج الضارة (Android-Only)|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|![لا](images/svg/check-no.svg) قيد التطوير|

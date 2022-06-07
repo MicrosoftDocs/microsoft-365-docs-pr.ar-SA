@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم قفل الاحتفاظ مع نهج الاستبقاء ونهج تسمية الاستبقاء لمساعدتك على تلبية المتطلبات التنظيمية والحماية ضد المسؤولين المملوك.
-ms.openlocfilehash: cf72f0b2eed6328244bf78c9e365447c9f38edeb
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 6ee7937bad487fcac8d1ee15483becfb276d9579
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286001"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922208"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>استخدام قفل الاحتفاظ لتقييد التغييرات على نهج الاستبقاء ونهج تسمية الاستبقاء
 
->*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -50,18 +50,15 @@ ms.locfileid: "65286001"
 > [!IMPORTANT]
 > قبل تأمين نهج الاستبقاء أو نهج تسمية الاستبقاء، من المهم أن تفهم التأثير وتأكد ما إذا كان مطلوبا لمؤسستك. على سبيل المثال، قد تكون هناك حاجة إليها لتلبية المتطلبات التنظيمية. لن يتمكن المسؤولون من تعطيل هذه النهج أو حذفها بعد تطبيق تأمين الاحتفاظ.
 
-تكوين "تأمين الاحتفاظ" بعد إنشاء [نهج استبقاء](create-retention-policies.md)، أو نهج تسمية استبقاء [تنشره](create-apply-retention-labels.md) أو [تطبقه تلقائيا](apply-retention-labels-automatically.md).
-
-> [!NOTE]
-> لا يمنع تأمين نهج التسمية المسؤول من تقليل فترة الاستبقاء في تسمية مضمنة في النهج المؤمن. يمكن تلبية هذا المطلب، مع قيود أخرى، عند تكوين تسمية لوضع علامة على العناصر [كسجل تنظيمي](records-management.md#records).
+تكوين "تأمين الاحتفاظ" بعد إنشاء [نهج استبقاء](create-retention-policies.md)، أو نهج تسمية استبقاء تقوم [بنشره](create-apply-retention-labels.md) ويحتوي فقط على تسميات [تضع علامة على العناصر كسجلات تنظيمية](records-management.md#records).
 
 ## <a name="how-to-lock-a-retention-policy-or-retention-label-policy"></a>كيفية تأمين نهج الاستبقاء أو نهج تسمية الاستبقاء
 
 يجب عليك استخدام PowerShell إذا كنت بحاجة إلى استخدام قفل الحفظ. نظرا لأنه لا يمكن للمسؤولين تعطيل نهج للاستبقاء أو حذفه بعد تطبيق هذا التأمين، فإن تمكين هذه الميزة غير متوفر في واجهة المستخدم للحماية من التكوين العرضي.
 
-تدعم جميع نهج الاستبقاء ومع أي تكوين تأمين الاحتفاظ.
+تدعم جميع نهج الاستبقاء مع أي تكوين قفل الاحتفاظ. لتطبيق "تأمين الاحتفاظ" على نهج تسمية الاستبقاء، يجب أن يحتوي فقط على تسميات تضع علامة على العناصر كسجلات تنظيمية.
 
-1. [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال ب Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. ابحث عن اسم النهج الذي تريد تأمينه عن طريق تشغيل [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy). على سبيل المثال:
     

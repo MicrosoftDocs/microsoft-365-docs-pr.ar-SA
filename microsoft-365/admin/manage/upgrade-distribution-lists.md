@@ -1,5 +1,5 @@
 ---
-title: ترقية قوائم التوزيع إلى مجموعات Microsoft 365 في Outlook
+title: ترقية قوائم التوزيع إلى مجموعات Microsoft 365 في Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,121 +21,122 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: تعرف على كيفية ترقية قائمة توزيع واحدة أو أكثر مجموعات Microsoft 365 في Outlook، وكيفية استخدام PowerShell لترقية العديد من قوائم التوزيع في وقت واحد.
-ms.openlocfilehash: 832d65854a6a18ad28e3d9fca6d1d11c17146c80
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: تعرف على كيفية ترقية قائمة توزيع واحدة أو أكثر إلى مجموعات Microsoft 365 في Exchange Online، وكيفية استخدام PowerShell لترقية العديد من قوائم التوزيع في وقت واحد.
+ms.openlocfilehash: 6f27c4a7df345a25f4b5ca7d2a9f2979a97e7c6a
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782248"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922164"
 ---
-# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>ترقية قوائم التوزيع إلى مجموعات Microsoft 365 في Outlook
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>ترقية قوائم التوزيع إلى مجموعات Microsoft 365 في Exchange Online
 
-يمكنك ترقية قوائم التوزيع إلى مجموعات Microsoft 365 في Outlook. هذه طريقة رائعة لمنح قوائم التوزيع الخاصة بمؤسستك جميع ميزات ووظائف مجموعات Microsoft 365. [لماذا يجب عليك ترقية قوائم التوزيع إلى مجموعات في Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+تعد ترقية قائمة توزيع إلى مجموعة Microsoft 365 طريقة رائعة لتحسين ميزات المجموعات وقدراتها في مؤسستك. لمزيد من المعلومات، راجع [لماذا يجب ترقية قوائم التوزيع إلى مجموعات في Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
-يمكنك ترقية DLs كل على حدة، أو عدة في نفس الوقت.
+يمكنك ترقية قوائم التوزيع كل على حدة، أو عدة قوائم في الوقت نفسه. يمكنك استخدام مركز إدارة Exchange (EAC) أو Exchange Online PowerShell.
 
-## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>ترقية مجموعة واحدة أو أكثر من مجموعات قوائم التوزيع إلى مجموعات Microsoft 365 في Outlook
+## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups"></a>ترقية مجموعة واحدة أو أكثر من مجموعات قوائم التوزيع إلى مجموعات Microsoft 365
 
-يجب أن تكون مسؤولا عاما أو مسؤول Exchange لترقية مجموعة قائمة توزيع. للترقية إلى مجموعات Microsoft 365، يجب أن يكون لدى مجموعة قائمة التوزيع مالك لديه علبة بريد.
+يجب أن تكون مسؤولا عموميا أو مسؤول Exchange لترقية قائمة توزيع. للترقية إلى مجموعات Microsoft 365، يجب أن يكون لقائمة التوزيع مالك معين، ويجب أن يكون هذا المالك علبة بريد.
 
-### <a name="use-the-new-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>استخدم EAC الجديد لترقية مجموعة واحدة أو أكثر من مجموعات قوائم التوزيع مجموعات Microsoft 365 في Outlook
-
-1. انتقل إلى مركز إدارة Exchange الجديد > **مجموعات المستلمين**\>.<a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a>
-
-2. حدد مجموعة قائمة التوزيع (تسمى أيضا **مجموعة توزيع**) التي تريد ترقيتها إلى مجموعة Microsoft 365 من صفحة **المجموعات**.
-
-3. حدد **مجموعة توزيع الترقية** من شريط الأدوات.
-
-4. في مربع الحوار " **هل أنت جاهز للترقية؟**"، انقر فوق **"ترقية**". تبدأ العملية على الفور. استنادا إلى حجم مجموعات قوائم التوزيع التي تقوم بترقيةها وعددها، قد تستغرق العملية دقائق أو ساعات.
+### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>استخدام EAC الكلاسيكي لترقية مجموعة واحدة أو أكثر من مجموعات قوائم التوزيع إلى مجموعات Microsoft 365 في Outlook
 
 > [!NOTE]
-> يشير شعار في الأعلى إلى الترقية، على سبيل المثال، *تم ترقية مجموعة (مجموعات) التوزيع. سيستغرق الأمر 5 دقائق لعكس التغييرات. قم بالتصفية حسب مجموعات Microsoft 365 لمشاهدة مجموعات (مجموعات) التوزيع التي تمت ترقيتها*.
+> الإجراءات الواردة في هذا القسم غير متوفرة في EAC الجديد.
 
-### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>استخدم EAC الكلاسيكي لترقية مجموعة واحدة أو أكثر من مجموعات قوائم التوزيع مجموعات Microsoft 365 في Outlook
+1. انتقل إلى مركز إدارة Exchange > <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**مجموعات**</a> **المستلمين**\>.
 
-1. انتقل إلى مركز إدارة Exchange > **مجموعات المستلمين**\>.<a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank"></a><br/>سترى إشعارا يشير إلى أن لديك قوائم توزيع (تسمى أيضا **مجموعات التوزيع**) مؤهلة للترقية إلى مجموعات Microsoft 365.<br/> ![حدد الزر "بدء الاستخدام".](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+   سترى إشعارا يشير إلى أن لديك قوائم توزيع (تسمى أيضا **مجموعات التوزيع**) مؤهلة للترقية إلى مجموعات Microsoft 365.
+   
+   ![حدد الزر "بدء الاستخدام".](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
-1. حدد قائمة توزيع واحدة أو أكثر (تسمى أيضا **مجموعة توزيع**) من صفحة **المجموعات** .<br/>![حدد مجموعة توزيع.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+1. حدد قائمة توزيع واحدة أو أكثر (تسمى أيضا **مجموعات التوزيع**) من صفحة **المجموعات** .
 
-1. حدد أيقونة الترقية.<br/>![الترقية إلى أيقونة مجموعات Microsoft 365.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+   ![حدد مجموعة توزيع.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-1. في مربع حوار المعلومات، حدد **"نعم** " لتأكيد الترقية. تبدأ العملية على الفور. اعتمادا على حجم وعدد DLs التي تقوم بترقيةها، يمكن أن تستغرق العملية دقائق أو ساعات.<br/>إذا تعذرت ترقية قائمة التوزيع، فسيظهر مربع حوار يقول ذلك. هل تعرف على [قوائم التوزيع التي لا يمكن ترقيتها؟](#which-distribution-lists-cant-be-upgraded).
+1. حدد أيقونة الترقية.
 
-1. إذا كنت تقوم بترقية قوائم توزيع متعددة، فاستخدم القائمة المنسدلة لتصفية قوائم التوزيع التي تمت ترقيتها. إذا لم تكتمل القائمة، فانتظر لفترة أطول ثم حدد **"تحديث** " لمعرفة ما تمت ترقيته بنجاح.<br/>لا يوجد إشعار يخبرك عند اكتمال عملية الترقية لكافة DLs التي حددتها. يمكنك معرفة ذلك من خلال الاطلاع على ما هو مدرج ضمن **"متوفر" للترقية** أو **عناوين DLs التي تمت ترقيتها**.
+   ![الترقية إلى أيقونة مجموعات Microsoft 365.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
-1. إذا قمت بتحديد DL للترقية، ولكنه لا يزال يظهر على الصفحة على أنه متوفر للترقية، فقد فشل في الترقية. اطلع [على ما يجب فعله إذا لم تعمل الترقية](#what-to-do-if-the-upgrade-doesnt-work).
+1. في مربع حوار المعلومات، حدد **"نعم** " لتأكيد الترقية. تبدأ العملية على الفور. اعتمادا على حجم وعدد مضاءات التوزيع التي تقوم بترقيةها، يمكن أن تستغرق العملية دقائق أو ساعات.
 
-> [!NOTE]
-> إذا كنت تقوم بتضمين رسائل البريد الإلكتروني الخاصة بالمجموعات، فقد تلاحظ في الأسفل أنه سيعرض عليك أحيانا ترقية أي قوائم توزيع مؤهلة تكون مالكها. راجع [إجراء محادثة جماعية في Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) للحصول على مزيد من المعلومات حول ملخص رسائل البريد الإلكتروني.
+   إذا تعذرت ترقية قائمة التوزيع، فسيظهر مربع حوار يقول ذلك. هل تعرف على [قوائم التوزيع التي لا يمكن ترقيتها؟](#which-distribution-lists-cant-be-upgraded).
+
+1. إذا كنت تقوم بترقية قوائم توزيع متعددة، فاستخدم القائمة المنسدلة لتصفية قوائم التوزيع التي تمت ترقيتها. إذا لم تكتمل القائمة، فانتظر لفترة أطول ثم حدد **"تحديث** " لمعرفة ما تمت ترقيته بنجاح.
+
+**الملاحظات**:
+
+- لن تتلقى إعلاما عند اكتمال الترقيات. بدلا من ذلك، راجع ما هو مدرج ضمن **"متوفر" للترقية** أو **قوائم DLs التي تمت ترقيتها**.
+
+- إذا قمت بتحديد قائمة توزيع للترقية، ولكنها لا تزال تظهر على الصفحة على أنها **متوفرة للترقية**، فقد فشلت الترقية. اطلع [على ما يجب فعله إذا لم تعمل الترقية](#what-to-do-if-the-upgrade-doesnt-work).
+
+- قد يعرض البريد الإلكتروني الملخص لمجموعة ما السماح لك بترقية أي قوائم توزيع مؤهلة تكون مالكها. لمزيد من المعلومات حول ملخص البريد الإلكتروني، راجع [إجراء محادثة جماعية في Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="what-to-do-if-the-upgrade-doesnt-work"></a>ما يجب فعله إذا لم تعمل الترقية
 
 تظل قوائم التوزيع التي تفشل في الترقية دون تغيير.
 
-إذا فشلت ترقية قائمة توزيع **مؤهلة** واحدة أو أكثر، 
+إذا فشلت ترقية قائمة توزيع **مؤهلة** واحدة أو أكثر، فقم بالخطوات التالية:
 
-1. استخدم [هذا البرنامج النصي](https://aka.ms/DLToM365Group) للبحث عن المشاكل المحتملة التي يمكن أن تمنع ترقية قائمة التوزيع إلى مجموعة Microsoft 365 وإصلاح أي مشاكل تم الإبلاغ عنها بواسطة البرنامج النصي ومحاولة ترقية قائمة التوزيع مرة أخرى. 
+1. استخدم [هذا البرنامج النصي](https://aka.ms/DLToM365Group) للبحث عن المشكلات المحتملة. قم بإصلاح أي مشاكل تم الإبلاغ عنها بواسطة البرنامج النصي وحاول ترقية قائمة التوزيع مرة أخرى. 
 
-2. إذا لم يساعد البرنامج النصي أعلاه أو إذا استمرت المشكلة، فافتح [تذكرة دعم](../../business-video/get-help-support.md). يجب تصعيد المشكلة إلى فريق هندسة المجموعات لمعرفة المشكلة.
+2. إذا لم يساعدك البرنامج النصي، فافتح [تذكرة دعم](../../business-video/get-help-support.md). يجب تصعيد المشكلة إلى فريق هندسة المجموعات.
 
-## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>كيفية استخدام PowerShell لترقية العديد من قوائم التوزيع في الوقت نفسه
+## <a name="how-to-use-exchange-online-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>كيفية استخدام Exchange Online PowerShell لترقية العديد من قوائم التوزيع في الوقت نفسه
 
-إذا كنت من ذوي الخبرة في استخدام PowerShell، فقد تحتاج إلى الانتقال إلى هذا المسار بدلا من استخدام واجهة المستخدم. لدينا مجموعة من أوامر cmdlets التي ستساعدك على ترقية قوائم التوزيع. انظر أدناه.
+للاتصال ب Exchange Online PowerShell، راجع [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-### <a name="upgrade-a-single-dl"></a>ترقية DL واحد
+### <a name="upgrade-a-single-distribution-list"></a>ترقية قائمة توزيع واحدة
 
-لترقية DL واحد، قم بتشغيل الأمر التالي:
-
-```PowerShell
-Upgrade-DistributionGroup -DlIdentities <Dl SMTP address>
-```
-
-على سبيل المثال، إذا كنت تريد ترقية DL باستخدام عنوان SMTP dl1@contoso.com، فشغل الأمر التالي:
+لترقية قائمة توزيع واحدة، استخدم بناء الجملة التالي:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
+Upgrade-DistributionGroup -DLIdentities <EmailAddress>
 ```
+
+هذا المثال ترقية قائمة التوزيع marketing@contoso.com:
+
+```PowerShell
+Upgrade-DistributionGroup -DLIdentities marketing@contoso.com
+```
+
+للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Upgrade-DistributionGroup](/powershell/module/exchange/upgrade-distributiongroup).
 
 > [!NOTE]
-> يمكنك أيضا ترقية قائمة توزيع واحدة إلى مجموعة Microsoft 365 باستخدام [New-UnifiedGroup](/powershell/module/exchange/new-unifiedgroup) PowerShell cmdlet
+> يمكنك أيضا ترقية قائمة توزيع واحدة إلى مجموعة Microsoft 365 باستخدام [New-UnifiedGroup](/powershell/module/exchange/new-unifiedgroup) cmdlet.
 
-### <a name="upgrade-multiple-dls-in-a-batch"></a>ترقية عدة DLs في دفعة
+### <a name="upgrade-multiple-distribution-lists-at-the-same-time"></a>ترقية قوائم توزيع متعددة في الوقت نفسه
 
-يمكنك أيضا تمرير عدة DLs كدفعة وترقيتها معا:
+لترقية قوائم توزيع متعددة في الوقت نفسه، استخدم بناء الجملة التالي:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
-<DL SMTP address3>, <DL SMTP address4>
+Upgrade-DistributionGroup -DLIdentities <EmailAddress1>,<EmailAddress2>,...
 ```
 
-على سبيل المثال، إذا كنت تريد ترقية خمسة DLs مع عنوان `dl1@contoso.com` SMTP، `dl3@contoso.com`و`dl2@contoso.com`، `dl4@contoso.com` وتشغيل `dl5@contoso.com`الأمر التالي:
+يقوم هذا المثال بترقية قوائم التوزيع المحددة إلى مجموعات Microsoft 365.
 
 ```powershell
-Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com
+Upgrade-DistributionGroup -DLIdentities marketing@contoso.com,finanace@contoso.com,hr@contoso.com
 ```
 
-### <a name="upgrade-all-eligible-dls"></a>ترقية كافة DLs المؤهلة
+للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Upgrade-DistributionGroup](/powershell/module/exchange/upgrade-distributiongroup).
 
-هناك طريقتان يمكنك من خلالهما ترقية كافة DLs المؤهلة.
+### <a name="upgrade-all-eligible-distribution-lists"></a>ترقية كافة قوائم التوزيع المؤهلة
 
-> [!NOTE]
-> لا يتلقى Upgrade-DistributionGroup cmdlet البيانات من البنية الأساسية لبرنامج ربط العمليات التجارية، لهذا السبب يلزم استخدام عامل التشغيل "foreach-object{}" للتشغيل بنجاح.
+استخدم أيا من الأسلوبين التاليين لترقية كافة قوائم التوزيع المؤهلة إلى مجموعات Microsoft 365:
 
-1. الحصول على DLs المؤهلة في المستأجر وترقيتها باستخدام أمر الترقية:
+- ترقية كافة قوائم التوزيع المؤهلة:
 
    ```PowerShell
-   Get-EligibleDistributionGroupForMigration | Foreach-Object{
-       Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
-   }
+   $All = Get-EligibleDistributionGroupForMigration -ResultSize unlimited
+   $All | Foreach-Object {Upgrade-DistributionGroup -DLIdentities $_.PrimarySMTPAddress}
    ```
 
-2. الحصول على قائمة بكافة DLs وترقية DLs المؤهلة فقط:
+- حاول ترقية جميع قوائم التوزيع سواء كانت مؤهلة أم لا:
 
    ```PowerShell
-   Get-DistributionGroup| Foreach-Object{
-       Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
-   }
+   $All Get-DistributionGroup -RecipientTypeDetails MailUniversalDistributionGroup -ResultSize unlimited
+   $All | Foreach-Object {Upgrade-DistributionGroup -DLIdentities $_.PrimarySMTPAddress}
    ```
 
 ## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>الأسئلة المتداولة حول ترقية قوائم التوزيع إلى مجموعات Microsoft 365 في Outlook
@@ -145,42 +146,47 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@co
 يمكنك فقط ترقية قوائم التوزيع المدارة على السحابة والبسيطة وغير المتداخلة. يسرد الجدول أدناه قوائم التوزيع التي **لا** يمكن ترقيتها.
 
 |الخاصيه|المؤهله؟|
-|---|---|
+|---|:---:|
 |قائمة التوزيع المدارة المحلية.|لا|
 |قوائم التوزيع المتداخلة. تحتوي قائمة التوزيع على مجموعات تابعة أو عضو في مجموعة أخرى.|لا|
-|قوائم التوزيع التي تحتوي **على أعضاء RecipientTypeDetails** غير **UserMailbox** **وSharedMailbox** **و TeamMailbox** **وMailUser**|لا|
-|قائمة التوزيع التي تحتوي على أكثر من 100 مالك|لا|
-|قائمة التوزيع التي تحتوي على أعضاء فقط ولكن بدون مالك|لا|
-|قائمة التوزيع التي تحتوي على اسم مستعار يحتوي على أحرف خاصة|لا|
-|إذا تم تكوين قائمة التوزيع لتكون عنوان إعادة توجيه لعلبة البريد المشتركة|لا|
-|إذا كان DL جزءا من **تقييد المرسل** في DL آخر.|لا|
-|مجموعات الأمان|لا|
-|قوائم التوزيع الديناميكي|لا|
-|قوائم التوزيع التي تم تحويلها إلى **قوائم القاعات**|لا|
+|قوائم التوزيع التي يكون فيها عضو واحد أو أكثر شيئا آخر غير علبة بريد المستخدم أو علبة البريد المشتركة أو علبة بريد الفريق أو مستخدم البريد. بمعنى آخر، قيمة **RecipientTypeDetails** لأي عضو في قائمة التوزيع ليست **UserMailbox** أو **SharedMailbox** أو **TeamMailbox** أو **MailUser**.|لا|
+|قائمة التوزيع التي تحتوي على أكثر من 100 مالك.|لا|
+|قائمة التوزيع التي تحتوي على أعضاء فقط ولكن ليس لها مالك.|لا|
+|قائمة التوزيع التي تحتوي على اسم مستعار يحتوي على أحرف خاصة.|لا|
+|تم تكوين قائمة التوزيع لتكون عنوان إعادة توجيه لعلب بريد مشترك.|لا|
+|تعد قائمة التوزيع جزءا من **تقييد المرسل** في قائمة توزيع أخرى.|لا|
+|مجموعات الأمان الممكنة للبريد.|لا|
+|مجموعات التوزيع الديناميكية.|لا|
+|قوائم التوزيع التي تم تحويلها إلى **قوائم القاعات**.|لا|
 
-### <a name="check-which-dls-are-eligible-for-upgrade"></a>التحقق من عناوين DLs المؤهلة للترقية
+### <a name="check-which-distribution-lists-are-eligible-for-upgrade"></a>التحقق من قوائم التوزيع المؤهلة للترقية
 
-إذا كنت تريد التحقق مما إذا كان DL مؤهلا أم لا، يمكنك تشغيل الأمر أدناه:
+للتحقق مما إذا كانت قائمة توزيع معينة مؤهلة للترقية، قم بتشغيل الأمر التالي:
 
 ```PowerShell
-Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration
+Get-DistributionGroup <EmailAddress> | Get-EligibleDistributionGroupForMigration
 ```
 
-إذا كنت تريد التحقق من عناوين DLs المؤهلة للترقية، فما عليك سوى تشغيل الأمر التالي:
+لمشاهدة كافة مجموعات التوزيع المؤهلة للترقية، قم بتشغيل الأمر التالي:
 
 ```PowerShell
 Get-EligibleDistributionGroupForMigration
 ```
 
-### <a name="who-can-run-the-upgrade-scripts"></a>روبوت Who يمكن تشغيل البرامج النصية للترقية؟
+### <a name="who-can-run-the-upgrade-scripts"></a>من يمكنه تشغيل البرامج النصية للترقية؟
 
-الأشخاص الذين يعانون من حقوق المسؤول العام أو Exchange المسؤول.
+الأشخاص الذين معهم حقوق مسؤول عمومي أو مسؤول Exchange.
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-an-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>لماذا لا تزال بطاقة جهة الاتصال تعرض قائمة توزيع؟ ما الذي يجب فعله لمنع ظهور قائمة توزيع تمت ترقيتها في قائمة الاقتراح التلقائي؟
 
-- على سبيل Outlook: عندما يحاول شخص ما إرسال بريد إلكتروني في Outlook بكتابة اسم مجموعة Microsoft 365 بعد الترحيل، سيتم حل المستلم كقوائم توزيع بدلا من المجموعة. ستكون بطاقة جهة الاتصال الخاصة بالمستلم هي بطاقة جهة اتصال قوائم التوزيع. وذلك بسبب ذاكرة التخزين المؤقت للمستلم أو ذاكرة التخزين المؤقت لاسم Outlook. سيتم إرسال البريد الإلكتروني بنجاح إلى المجموعة، ولكنه قد يسبب ارتباكا للمرسل.<br/>يمكنك تنفيذ الخطوات الواردة في هذه المقالة، [معلومات حول Outlook قائمة الإكمال التلقائي](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) لإعادة تعيين ذاكرة التخزين المؤقت، مما سيؤدي إلى إصلاح هذه المشكلة.
+- **Outlook**: بعد ترقية قائمة ditribution إلى مجموعة Microsoft 365، لا تكون ذاكرة التخزين المؤقت للمستلم المحلي للمستخدم (المعروفة أيضا باسم ذاكرة التخزين المؤقت لاسم الحذف) على علم بالتغيير. نفذ الخطوات الواردة في المقالة التالية لإعادة تعيين ذاكرة التخزين المؤقت للمستلم المحلي للمستخدم: [معلومات حول قائمة الإكمال التلقائي في Outlook](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list). 
 
-- بالنسبة Outlook على ويب: في حالة Outlook على ويب، سيظل مستلم قائمة التوزيع في ذاكرة التخزين المؤقت. يمكنك اتباع الخطوات الواردة في [إزالة الاسم المقترح أو عنوان البريد الإلكتروني المقترح من قائمة الإكمال التلقائي](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) لتحديث ذاكرة التخزين المؤقت لرؤية بطاقة جهة اتصال المجموعة.
+  إذا لم تقم بتحديث ذاكرة التخزين المؤقت للمستلمين، فسيتم تسليم أي بريد إلكتروني تم إرساله إلى مجموعة Microsoft 365 بنجاح، ولكن ستظل المشاكل التالية:
+  
+  - سيتم حل مستلم المجموعة كقوائم توزيع بدلا من مجموعة Microsoft 365.
+  - ستكون بطاقة جهة الاتصال جهة اتصال قائمة التوزيع بدلا من مجموعة Microsoft 365.
+
+- **Outlook على الويب**: مثل Outlook، ستبقى قائمة التوزيع في ذاكرة التخزين المؤقت للمستلمين. اتبع الخطوات الواردة في هذه المقالة لتحديث ذاكرة التخزين المؤقت للاطلاع على بطاقة جهة اتصال المجموعة: [قم بإزالة الاسم المقترح أو عنوان البريد الإلكتروني المقترح من قائمة الإكمال التلقائي](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58).
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>هل يحصل أعضاء المجموعة الجدد على بريد إلكتروني ترحيبي في علبة الوارد الخاصة بهم؟
 
@@ -188,31 +194,30 @@ Get-EligibleDistributionGroupForMigration
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>ماذا لو لم تتم ترقية واحد أو بعض DLs؟
 
-هناك بعض الحالات التي تكون فيها DL مؤهلة ولكن تعذرت ترقيتها. لا يتم ترقية DL ويبقى ك DL.
+هناك بعض الحالات التي لا يمكن فيها ترقية قوائم التوزيع المؤهلة. على سبيل المثال:
 
-- عندما يطبق المسؤول **نهج عنوان البريد الإلكتروني للمجموعات** في مؤسسة ويحاول ترقية DLs التي لا تفي بالمعايير، لا تتم ترقية DL
+- قام مسؤول بتطبيق **نهج عنوان البريد الإلكتروني للمجموعة**، ولا تفي قائمة التوزيع بمتطلبات النهج.
 
-- تعذرت ترقية DLs مع **تعيين MemberJoinRestriction** أو **MemberDepartRestriction** إلى **مغلقة**
+- تحتوي قائمة التوزيع على **MemberJoinRestriction** أو **MemberDepartRestriction** معينة إلى القيمة **مغلقة**.
 
-- يسمح بإنشاء مجموعة Microsoft 365 لعدد قليل من المستخدمين فقط، باستخدام الخطوات الواردة في [هذه المقالة](/microsoft-365/solutions/manage-creation-of-groups). في هذا السيناريو، إذا لم يسمح لمالك قائمة التوزيع بإنشاء مجموعة Microsoft 365، فلن تتم ترقية قائمة التوزيع إلى مجموعة Microsoft 365.
-الحل البديل: استخدم أحد الحلول البديلة التالية للسيناريو أعلاه:
+- إن إنشاء مجموعة Microsoft 365 محدود كما هو موضح في هذه المقالة: [هذه المقالة](/microsoft-365/solutions/manage-creation-of-groups).
 
-1. تأكد من السماح لكافة المستخدمين المذكورين كمالكين ل DL بإنشاء مجموعة M365، أي أنهم أعضاء في مجموعة الأمان المسموح بها لمجموعة M365.
+  استخدم أحد الحلول البديلة التالية لهذه المشكلة المحددة:
 
-   او
+  - تأكد من السماح لكافة مالكي قائمة التوزيع بإنشاء مجموعات Microsoft 365 (أي أن المالكين هم أعضاء في مجموعة الأمان المسموح لها بإنشاء مجموعات Microsoft 365).
 
-2. بشكل مؤقت، استبدل مالك DL غير المسموح له بإنشاء مجموعة M365 بالمستخدم المسموح له بإنشاء مجموعة M365.
+  - استبدل مالك قائمة التوزيع مؤقتا بمستخدم يسمح له بإنشاء مجموعات Microsoft 365.
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>ماذا يحدث ل DL إذا فشلت الترقية من EAC؟
 
-لن تحدث الترقية إلا عند إرسال المكالمة إلى الخادم. إذا فشلت الترقية، فستكون DLs بدون تغيير. سيعملون كما كانوا يعملون.
+لن تحدث الترقية إلا عند إرسال المكالمة إلى الخادم. إذا فشلت الترقية، فستبقى قوائم التوزيع الخاصة بك وتعمل كما كانت.
 
 ### <a name="what-happens-to-message-approval-moderation-settings-on-distribution-groups-after-upgrading"></a>ماذا يحدث لإعدادات الموافقة على الرسائل (الإشراف) على مجموعات التوزيع بعد الترقية؟
 
-يتم الاحتفاظ بإعدادات الموافقة على الرسالة (الإشراف) والاستمرار في العمل بشكل جيد بعد ترقية مجموعة التوزيع إلى مجموعة Microsoft 365.
+يتم الاحتفاظ بإعدادات الموافقة على الرسائل (الإشراف) والاستمرار في العمل بشكل جيد بعد ترقية مجموعة التوزيع إلى مجموعة Microsoft 365.
 
-## <a name="related-content"></a>محتوى ذي صلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [مقارنة المجموعات](../create-groups/compare-groups.md) (مقالة)\
-[شرح مجموعات Microsoft 365 للمستخدمين](../create-groups/explain-groups-knowledge-worker.md) (مقالة)\
+[شرح مجموعات Microsoft 365 للمستخدمين](../create-groups/explain-groups-knowledge-worker.md) (المقالة)\
 [إضافة أعضاء أو إزالتهم من مجموعات Microsoft 365 باستخدام مركز الإدارة](../create-groups/add-or-remove-members-from-groups.md)

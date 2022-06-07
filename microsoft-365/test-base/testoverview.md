@@ -14,12 +14,12 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 2f0ccded84f7b1c46ff2aeea38eae8f0baadc6ff
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 2a59599dc9757935413b977bf9e71ed3b7ba09ea
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863577"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923413"
 ---
 # <a name="test-your-application-on-test-base"></a>اختبار التطبيق الخاص بك على قاعدة الاختبار
 
@@ -30,7 +30,7 @@ ms.locfileid: "65863577"
 
    - **اختبار ملفات الثنائيات**
 
-      راجع [إنشاء الملفات الثنائية واختبارها على قاعدة الاختبار](testapplication.md) لإعداد حزمة مع ملف تطبيق ثنائي (.exe، .msi) لتحميلها واختبارها.
+      راجع [إنشاء الملفات الثنائية واختبارها على قاعدة الاختبار](testapplication.md) لإعداد حزمة مع ملف تطبيق ثنائي (أي .exe .msi) لتحميلها واختبارها.
 
    - **تطبيق Intunewin**
 
@@ -38,7 +38,7 @@ ms.locfileid: "65863577"
 
    - **حزمة Zip مسبقة الإنشاء**
 
-      راجع [تحميل الحزمة المضغوطة التي تم إنشاؤها مسبقا](uploadApplication.md) إذا كان لديك بالفعل حزمة مضمنة دون اتصال بتنسيق .zip.
+      راجع [تحميل الحزمة المضغوطة التي تم إنشاؤها مسبقا](uploadapplication.md) إذا كان لديك بالفعل حزمة مضمنة دون اتصال بتنسيق .zip.
 
    - **استنساخ الحزمة الموجودة**
 

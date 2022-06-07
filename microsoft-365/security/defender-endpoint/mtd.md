@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender لنقطة النهاية - الدفاع عن تهديدات الجوال
 ms.reviewer: ''
-description: نظرة عامة على الدفاع عن تهديدات الأجهزة المحمولة في Microsoft Defender لنقطة النهاية
-keywords: الأجهزة المحمولة، و defender، Microsoft Defender لنقطة النهاية، وios، و mtd، وandroid، والأمان
+description: نظرة عامة على الدفاع عن مخاطر الأجهزة المحمولة في Microsoft Defender لنقطة النهاية
+keywords: الأجهزة المحمولة، و Defender، وMicrosoft Defender لنقطة النهاية، وios، و mtd، وandroid، والأمان
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6df00016658ee8afb703c15b95a969169ab80b41
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 36b7703aeaf0fdf4ff30c9bd0dd1486ebe27f618
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872325"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923098"
 ---
 # <a name="microsoft-defender-for-endpoint---mobile-threat-defense"></a>Microsoft Defender لنقطة النهاية - الدفاع عن تهديدات الجوال
 
@@ -39,7 +39,7 @@ Microsoft Defender لنقطة النهاية على Android وiOS هو **حل ا
 
 ## <a name="key-capabilities"></a>القدرات الرئيسية
 
-يوفر Microsoft Defender لنقطة النهاية على Android وiOS القدرات الرئيسية أدناه، للحصول على معلومات حول أحدث الميزات والفوائد، اقرأ [إعلاناتنا](https://aka.ms/mdeblog).
+يوفر Microsoft Defender لنقطة النهاية على Android وiOS القدرات الأساسية أدناه، للحصول على معلومات حول أحدث الميزات والفوائد، اقرأ [إعلاناتنا](https://aka.ms/mdeblog).
 
 <br>
 
@@ -49,17 +49,18 @@ Microsoft Defender لنقطة النهاية على Android وiOS هو **حل ا
 |الحماية من البرامج الضارة (Android فقط)|المسح بحثا عن تطبيقات ضارة.|
 |الكشف عن المقاطعة (iOS فقط)|الكشف عن الأجهزة التي تم خرقها.|
 |إدارة المخاطر والثغرات الأمنية (TVM) |تقييم الثغرات الأمنية للأجهزة المحمولة التي تم إلحاقها. تفضل بزيارة هذه [الصفحة](next-gen-threat-and-vuln-mgt.md) لمعرفة المزيد حول إدارة المخاطر والثغرات الأمنية في Microsoft Defender لنقطة النهاية. *لاحظ أنه على نظام التشغيل iOS يتم دعم الثغرات الأمنية في نظام التشغيل فقط في هذه المعاينة.*|
+|حماية الشبكة *(معاينة عامة)*| الحماية من التهديدات Wi-Fi الضارة والشهادات الممقة ذات الصلة؛ القدرة على السماح بإدراج المرجع المصدق الجذري وشهادات المرجع المصدق الجذري الخاص في Intune؛ تأسيس الثقة مع نقاط النهاية.|
 |تنبيه موحد|تنبيهات من جميع الأنظمة الأساسية في وحدة تحكم أمان M365 الموحدة|
 |الوصول المشروط، التشغيل الشرطي|حظر الأجهزة المحفوفة بالمخاطر من الوصول إلى موارد الشركة. يمكن أيضا إضافة إشارات مخاطر Defender لنقطة النهاية إلى نهج حماية التطبيقات (MAM)|
 |عناصر التحكم في الخصوصية. في المعاينة (راجع الملاحظة أدناه)|تكوين الخصوصية في تقارير التهديدات عن طريق التحكم في البيانات المرسلة من قبل Microsoft Defender لنقطة النهاية. *لاحظ أن عناصر التحكم في الخصوصية متوفرة حاليا فقط للأجهزة المسجلة. ستتم إضافة عناصر التحكم للأجهزة غير المسجلة لاحقا*|
 |التكامل مع Microsoft Tunnel|يمكن التكامل مع Microsoft Tunnel، وهو حل بوابة VPN لتمكين الأمان والاتصال في تطبيق واحد. متوفر على Android وهو متوفر الآن بشكل عام على نظام التشغيل iOS أيضا.|
 
-تتوفر جميع هذه الإمكانات لحاملي التراخيص Microsoft Defender لنقطة النهاية. لمزيد من المعلومات، راجع [متطلبات الترخيص](minimum-requirements.md#licensing-requirements).
+تتوفر كل هذه الإمكانات ل Microsoft Defender لحاملي تراخيص نقطة النهاية. لمزيد من المعلومات، راجع [متطلبات الترخيص](minimum-requirements.md#licensing-requirements).
 
 
 ## <a name="overview-and-deploy"></a>نظرة عامة ونشر
 
-يمكن نشر Microsoft Defender لنقطة النهاية على الهاتف المحمول عبر إدارة نقاط النهاية من Microsoft (MEM). شاهد هذا الفيديو للحصول على نظرة عامة سريعة حول قدرات MTD والنشر:
+يمكن نشر Microsoft Defender لنقطة النهاية على الأجهزة المحمولة عبر إدارة نقاط النهاية من Microsoft (MEM). شاهد هذا الفيديو للحصول على نظرة عامة سريعة حول قدرات MTD والنشر:
 
 <br/>
 
@@ -75,21 +76,21 @@ Microsoft Defender لنقطة النهاية على Android وiOS هو **حل ا
 
 |نوع التسجيل     |التفاصيل      |
 |--------------------|-------------|
-|Android Enterprise مع إدارة نقاط النهاية موحدة Intune (إدارة نقاط النهاية من Microsoft)|[النشر على الأجهزة المسجلة في Android Enterprise](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
-|مسؤول الجهاز مع إدارة نقاط النهاية موحدة Intune (إدارة نقاط النهاية من Microsoft)|[النشر على الأجهزة المسجلة في مسؤول الجهاز](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
+|Android Enterprise مع Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[النشر على الأجهزة المسجلة في Android Enterprise](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
+|مسؤول الجهاز مع إدارة نقاط النهاية الموحدة في Intune (إدارة نقاط النهاية من Microsoft)|[النشر على الأجهزة المسجلة في مسؤول الجهاز](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
 |أجهزة BYOD OR غير المدارة التي يديرها مديرو نقاط النهاية الموحدة / نهج حماية تطبيق الإعداد (MAM)|[تكوين إشارات مخاطر Defender في نهج حماية التطبيقات (MAM)](android-configure-mam.md)|
 
 **دائره الرقابه الداخليه**
 
 |نوع التسجيل     |التفاصيل      |
 |--------------------|-------------|
-|الأجهزة الخاضعة للإشراف مع إدارة نقاط النهاية الموحدة Intune (إدارة نقاط النهاية من Microsoft)|1. [النشر كتطبيق متجر iOS](ios-install.md)<br/>2. [إعداد حماية الويب بدون VPN لأجهزة iOS الخاضعة للإشراف](ios-install.md#complete-deployment-for-supervised-devices)|
+|الأجهزة الخاضعة للإشراف مع إدارة نقاط النهاية الموحدة في Intune (إدارة نقاط النهاية من Microsoft)|1. [النشر كتطبيق متجر iOS](ios-install.md)<br/>2. [إعداد حماية الويب بدون VPN لأجهزة iOS الخاضعة للإشراف](ios-install.md#complete-deployment-for-supervised-devices)|
 |الأجهزة غير الخاضعة للإشراف (BYOD) المسجلة مع Intune UEM (إدارة نقاط النهاية من Microsoft)|[النشر كتطبيق متجر iOS](ios-install.md)|
 |أجهزة BYOD OR غير المدارة التي تديرها UEMs / إعداد نهج حماية التطبيق (MAM)|[تكوين إشارات مخاطر Defender في نهج حماية التطبيقات (MAM)](ios-install-unmanaged.md)|
 
 ### <a name="end-user-onboarding"></a>إلحاق المستخدم النهائي
 
-- [تكوين إعداد بدون لمس للأجهزة المسجلة في iOS](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint): يمكن للمسؤولين تكوين تثبيت بدون لمس لإلحاق Microsoft Defender لنقطة النهاية بصمت على أجهزة iOS المسجلة دون مطالبة المستخدم بفتح التطبيق. 
+- [تكوين تشغيل بدون لمس للأجهزة المسجلة في iOS](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint): يمكن للمسؤولين تكوين تثبيت بدون لمس لإلحاق Microsoft Defender لنقطة النهاية بصمت على أجهزة iOS المسجلة دون مطالبة المستخدم بفتح التطبيق. 
 
 - [تكوين الوصول المشروط لفرض إلحاق المستخدم](android-configure.md#conditional-access-with-defender-for-endpoint-on-android): يمكن تطبيق هذا لضمان إلحاق المستخدمين النهائيين بتطبيق Microsoft Defender لنقطة النهاية بعد النشر. شاهد هذا الفيديو للحصول على عرض توضيحي سريع حول تكوين الوصول المشروط باستخدام إشارات مخاطر Defender لنقطة النهاية. 
 
@@ -105,13 +106,13 @@ Microsoft Defender لنقطة النهاية على Android وiOS هو **حل ا
 
 ## <a name="pilot-evaluation"></a>التقييم التجريبي
 
-في أثناء تقييم الدفاع عن تهديدات الأجهزة المحمولة باستخدام Microsoft Defender لنقطة النهاية، يمكنك التحقق من استيفاء معايير معينة قبل المتابعة لنشر الخدمة على مجموعة أكبر من الأجهزة. يمكنك تحديد معايير الخروج والتأكد من أنها مستوفية قبل النشر على نطاق واسع.
+أثناء تقييم الدفاع عن تهديدات الأجهزة المحمولة باستخدام Microsoft Defender لنقطة النهاية، يمكنك التحقق من استيفاء معايير معينة قبل المتابعة لنشر الخدمة على مجموعة أكبر من الأجهزة. يمكنك تحديد معايير الخروج والتأكد من أنها مستوفية قبل النشر على نطاق واسع.
 
 يساعد ذلك على تقليل المشكلات المحتملة التي قد تنشأ أثناء طرح الخدمة. فيما يلي بعض الاختبارات ومعايير الخروج التي قد تساعد:
 
 - تظهر الأجهزة في قائمة مخزون الأجهزة: بعد نجاح عملية إلحاق Defender لنقطة النهاية على الجهاز المحمول، تحقق من أن الجهاز مدرج في "مخزون الجهاز" في [وحدة تحكم الأمان](https://security.microsoft.com).
 
-- قم بتشغيل اختبار الكشف عن البرامج الضارة على جهاز يعمل بنظام Android: قم بتثبيت أي تطبيق فيروسات اختبار من متجر Google play وتحقق من اكتشافه بواسطة Microsoft Defender لنقطة النهاية. فيما يلي مثال على التطبيق الذي يمكن استخدامه لهذا الاختبار: [اختبار الفيروسات](https://play.google.com/store/apps/details?id=com.antivirus&hl=en_US&gl=US). لاحظ أنه على Android Enterprise مع ملف تعريف العمل، يتم دعم ملف تعريف العمل فقط.
+- قم بتشغيل اختبار الكشف عن البرامج الضارة على جهاز يعمل بنظام Android: قم بتثبيت أي تطبيق فيروسات تجريبي من متجر Google play وتحقق من اكتشافه من قبل Microsoft Defender لنقطة النهاية. فيما يلي مثال على التطبيق الذي يمكن استخدامه لهذا الاختبار: [اختبار الفيروسات](https://play.google.com/store/apps/details?id=com.antivirus&hl=en_US&gl=US). لاحظ أنه على Android Enterprise مع ملف تعريف العمل، يتم دعم ملف تعريف العمل فقط.
 
 - تشغيل اختبار التصيد الاحتيالي: استعرض وتحقق https://smartscreentestratings2.net من حظره من قبل Microsoft Defender لنقطة النهاية. لاحظ أنه على Android Enterprise مع ملف تعريف العمل، يتم دعم ملف تعريف العمل فقط.
 

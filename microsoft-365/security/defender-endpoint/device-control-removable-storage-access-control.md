@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender لنقطة النهاية التحكم في الوصول إلى التخزين القابل للإزالة لعنصر تحكم الجهاز، وسائط التخزين القابلة للإزالة
+title: التحكم في الوصول إلى التخزين القابل للإزالة ل Microsoft Defender لنقطة النهاية، وسائط التخزين القابلة للإزالة
 description: إرشادات حول Microsoft Defender لنقطة النهاية
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,23 +14,23 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 05/09/2022
-ms.openlocfilehash: a472a2183d642ca8c3231e6ca5129fdf79cad8fd
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.date: 06/06/2022
+ms.openlocfilehash: 68beef5a01206ef08a87f74d53767fdd74d37a14
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317615"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923489"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>التحكم في الوصول إلى التخزين القابل للإزالة Microsoft Defender لنقطة النهاية Device Control
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>التحكم في الوصول إلى التخزين القابل للإزالة ل Microsoft Defender لنقطة النهاية
 
 **ينطبق على:**
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> تتوفر الآن إدارة نهج المجموعة وإدارة Intune OMA-URI/Custom Policy لهذا المنتج بشكل عام (4.18.2106): راجع [مدونة المجتمع التقني: حماية التخزين والطابعة القابلين للإزالة باستخدام Microsoft Defender لنقطة النهاية](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
+> تتوفر الآن إدارة نهج المجموعة وإدارة Intune OMA-URI/Custom Policy لهذا المنتج بشكل عام (4.18.2106): راجع [مدونة المجتمع التقني: حماية التخزين والطابعة القابلة للإزالة باستخدام Microsoft Defender لنقطة النهاية](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
-يمكنك Microsoft Defender لنقطة النهاية التحكم في الوصول إلى التخزين القابل للإزالة لعنصر تحكم الجهاز من تنفيذ المهمة التالية:
+يمكنك Microsoft Defender for Endpoint Device Control Removable Storage Access Control من تنفيذ المهمة التالية:
 
 - تدقيق الوصول إلى التخزين القابل للإزالة أو السماح بقراءته أو كتابته أو تنفيذه أو منعه مع الاستبعاد أو بدونه
 
@@ -43,7 +43,7 @@ ms.locfileid: "65317615"
 |الدعم المستند إلى المستخدم|نعم|
 |الدعم المستند إلى الجهاز|نعم|
 
-|القدره|الوصف|التوزيع من خلال Intune|التوزيع من خلال نهج المجموعة|
+|القدره|الوصف|التوزيع من خلال Intune|النشر من خلال نهج المجموعة|
 |---|---|---|---|
 |إنشاء مجموعة وسائط قابلة للإزالة|يسمح لك بإنشاء مجموعة وسائط قابلة للإزالة قابلة لإعادة الاستخدام|الخطوة 1 في القسم، [نشر النهج عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 1 في القسم، [نشر النهج عبر نهج المجموعة](#deploying-policy-via-group-policy)|
 |إنشاء النهج|يسمح لك بإنشاء نهج لفرض كل مجموعة وسائط قابلة للإزالة|الخطوة 2 في القسم، [نشر النهج عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوان 2 و3 في القسم، [نشر النهج عبر نهج المجموعة](#deploying-policy-via-group-policy) |
@@ -53,18 +53,18 @@ ms.locfileid: "65317615"
 
 ## <a name="prepare-your-endpoints"></a>إعداد نقاط النهاية
 
-نشر التحكم في الوصول إلى التخزين القابل للإزالة على أجهزة Windows 10 وأجهزة Windows 11 التي تحتوي على إصدار عميل مكافحة البرامج الضارة **4.18.2103.3 أو إصدار أحدث**.
+نشر التحكم في الوصول إلى التخزين القابل للإزالة على أجهزة Windows 10 وWindows 11 التي تحتوي على إصدار عميل مكافحة البرامج الضارة **4.18.2103.3 أو إصدار أحدث**.
 
 - **4.18.2104 أو أحدث**: إضافة SerialNumberId، VID_PID، دعم عنصر نهج المجموعة المستند إلى filepath، ComputerSid
 
 - **4.18.2105 أو الإصدارات الأحدث**: إضافة دعم Wildcard ل HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId، وهو مزيج من مستخدم معين على جهاز معين، SSD قابل للإزالة (SanDisk Extreme SSD)/دعم SCSI المرفق USB (UAS)
 
-- **4.18.2107 أو إصدار أحدث**: إضافة دعم Windows Portable Device (WPD) (للأجهزة المحمولة، مثل الأجهزة اللوحية)؛ إضافة AccountName إلى [التتبع المتقدم](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
+- **4.18.2107 أو إصدار أحدث**: إضافة دعم Windows Portable Device (WPD) (للأجهزة المحمولة، مثل أجهزة الكمبيوتر اللوحية)؛ إضافة AccountName إلى [التتبع المتقدم](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
 :::image type="content" source="images/powershell.png" alt-text="واجهة PowerShell" lightbox="images/powershell.png":::
 
 > [!NOTE]
-> لا تحتاج أي من مكونات أمن Windows إلى أن تكون نشطة حيث يمكنك تشغيل التحكم في الوصول إلى التخزين القابل للإزالة بشكل مستقل عن حالة أمن Windows.
+> لا تحتاج أي من مكونات أمان Windows إلى أن تكون نشطة حيث يمكنك تشغيل التحكم في الوصول إلى التخزين القابل للإزالة بغض النظر عن حالة أمان Windows.
 
 ## <a name="policy-properties"></a>خصائص النهج
 
@@ -97,7 +97,7 @@ ms.locfileid: "65317615"
 
 ## <a name="common-removable-storage-access-control-scenarios"></a>سيناريوهات التحكم في الوصول إلى التخزين القابلة للإزالة الشائعة
 
-لمساعدتك في التعرف على Microsoft Defender لنقطة النهاية التحكم في الوصول إلى التخزين القابل للإزالة، قمنا بتجميع بعض السيناريوهات الشائعة لمتابعتها.
+لمساعدتك في التعرف على Microsoft Defender لنقطة النهاية القابلة للإزالة للتحكم في الوصول إلى التخزين، قمنا بتجميع بعض السيناريوهات الشائعة لمتابعتها.
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>السيناريو 1: منع الكتابة والتنفيذ من الوصول إلى الكل ولكن السماح ب USBs محددة تمت الموافقة عليها
 
@@ -159,9 +159,9 @@ ms.locfileid: "65317615"
 
     :::image type="content" source="images/usage-sid-property.png" alt-text="التعليمات البرمجية التي تشير إلى استخدام سمة خاصية SID" lightbox="images/usage-sid-property.png":::
 
-3. احفظ ملفات XML للقاعدة والمجموعة على مجلد مشاركة الشبكة وضع مسار مجلد مشاركة الشبكة في إعداد نهج المجموعة: **القوالب** \> الإدارية **لتكوين** \> الكمبيوتر **Windows المكونات** \> **برنامج الحماية من الفيروسات من Microsoft Defender** \> **عنصر تحكم الجهاز**: **"تعريف مجموعات نهج التحكم في الجهاز"** و **"تعريف قواعد نهج التحكم في الجهاز".**
+3. احفظ كل من ملفات XML للقاعدة والمجموعة على مجلد مشاركة الشبكة وضع مسار مجلد مشاركة الشبكة في إعداد نهج المجموعة: **التحكم** في **جهاز تحكم جهاز** **الحماية من الفيروسات** \> **لمكونات تكوين** الكمبيوتر \> Windows **Components** \> \> Microsoft Defender: **"تعريف مجموعات نهج التحكم في الجهاز"** و **"تعريف قواعد نهج التحكم في الجهاز".**
 
-   إذا لم تتمكن من العثور على أسلوب عمل تكوين النهج في نهج المجموعة، يمكنك تنزيل ملفات [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) [وWindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) عن طريق تحديد **Raw** ثم **حفظ باسم**.
+   إذا لم تتمكن من العثور على أسلوب عمل تكوين النهج في نهج المجموعة، يمكنك تنزيل ملفات [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) [وWindDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) عن طريق تحديد **Raw** ثم **حفظ باسم**.
 
    - يجب أن يكون الجهاز الهدف قادرا على الوصول إلى مشاركة الشبكة للحصول على النهج. ومع ذلك، بمجرد قراءة النهج، لن يعد اتصال مشاركة الشبكة مطلوبا، حتى بعد إعادة تشغيل الجهاز.
 
@@ -208,7 +208,7 @@ ms.locfileid: "65317615"
 
 ### <a name="deploying-policy-via-oma-uri"></a>نشر النهج عبر OMA-URI
 
-إدارة نقاط النهاية من Microsoft ملفات تعريف مركز إدارة الأجهزة (<https://endpoint.microsoft.com/>) \> **إنشاء** \> النظام الأساسي **لملف التعريف** \>  \> **: Windows 10 وأحدث ملف تعريف &: مخصص**
+Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> **Devices** \> **Configuration profiles** \> **Create profile** \> **Platform: Windows 10 وأحدث & Profile: Custom**
 
 1. لكل مجموعة، قم بإنشاء قاعدة OMA-URI:
 
@@ -277,13 +277,13 @@ ms.locfileid: "65317615"
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>نشر النهج وإدارته باستخدام واجهة مستخدم Intune
 
-(*قريبا!*) ستتوفر هذه الإمكانية في مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>). انتقل إلى نهج **تقليل الأجزاء** >  في **Endpoint SecurityAttack** > **.** اختر **النظام الأساسي: Windows 10 والإي وقت لاحق** باستخدام **ملف التعريف: التحكم في الجهاز**.
+(*قريبا!*) ستتوفر هذه الإمكانية في مركز إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>). انتقل إلى نهج **إنشاء** **تقليل** >  الأجزاء المعرضة للهجوم **الأمني** >  لنقطة النهاية. اختر **النظام الأساسي: Windows 10 والإطارات الأحدث** مع **ملف التعريف: عنصر تحكم الجهاز**.
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>عرض بيانات التحكم في الوصول إلى التخزين القابلة للإزالة لعنصر تحكم الجهاز في Microsoft Defender لنقطة النهاية
 
 يعرض [مدخل Microsoft 365 Defender](https://security.microsoft.com/advanced-hunting) الأحداث التي تم تشغيلها بواسطة التحكم في الوصول إلى التخزين القابل للإزالة ل Device Control. للوصول إلى أمان Microsoft 365، يجب أن يكون لديك الاشتراك التالي:
 
-- Microsoft 365 لإعداد تقارير E5
+- تقارير Microsoft 365 for E5
 
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
@@ -331,13 +331,15 @@ DeviceEvents
 
 ### <a name="how-to-generate-guid-for-group-idpolicyrule-identry-id"></a>كيفية إنشاء معرف GUID لمعرف المجموعة/معرف PolicyRule/معرف الإدخال؟
 
-يمكنك إنشاء GUID من خلال مصدر مفتوح عبر الإنترنت، أو من خلال PowerShell - [كيفية إنشاء GUID من خلال PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)
+يمكنك إنشاء GUID من خلال المصدر المفتوح عبر الإنترنت، أو من خلال PowerShell - [كيفية إنشاء GUID من خلال PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)
 
 ![الصوره](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
 
-### <a name="what-is-the-removable-storage-media-limitation-for-the-maximum-number-of-usbs"></a>ما هو قيود وسائط التخزين القابلة للإزالة للحد الأقصى لعدد USBs؟
+### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>ما هي وسائط التخزين القابلة للإزالة وقيود النهج؟
 
-لقد تحققنا من صحة مجموعة USB واحدة مع 100,000 وسائط - يصل حجمها إلى 7 ميغابايت. يعمل النهج في كل من Intune وGPO دون مشاكل في الأداء.
+إما من مركز إدارة نقاط النهاية من Microsoft (Intune) أو من خلال Microsoft Graph API، يتم استدعاء الخلفية من خلال OMA-URI (GET للقراءة أو PATCH للتحديث) وبالتالي فإن القيد هو نفسه أي ملف تعريف تكوين مخصص ل OMA-URI في Microsoft وهو رسميا 350000 حرف لملفات XML. 
+    
+على سبيل المثال، إذا كنت بحاجة إلى كتلتين من الإدخالات لكل معرف أمان مستخدم ل "السماح"/"التدقيق مسموح به" لمستخدمين محددين وكتلتين من الإدخالات في نهاية "رفض" الكل، فستتمكن من إدارة 2276 مستخدما. 
 
 ### <a name="why-does-the-policy-not-work"></a>لماذا لا يعمل النهج؟
 
@@ -345,13 +347,13 @@ DeviceEvents
 
 2. قد يكون السبب الآخر هو أن ملف XML غير منسق بشكل صحيح، على سبيل المثال، عدم استخدام تنسيق markdown الصحيح للحرف "&" في ملف XML، أو قد يضيف محرر النص علامة ترتيب البايت (BOM) 0xEF 0xBB 0xBF في بداية الملفات، ما يؤدي إلى عدم عمل تحليل XML. أحد الحلول البسيطة هو تنزيل [ملف العينة](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (حدد **Raw** ثم **حفظ باسم**) ثم قم بالتحديث.
 
-3. إذا كنت تقوم بنشر النهج وإدارته عبر نهج المجموعة، فالرجاء التأكد من دمج كل PolicyRule في ملف XML واحد داخل عقدة أصل تسمى PolicyRules وجميع المجموعات في ملف XML واحد داخل عقدة أصل تسمى Groups؛ إذا كنت تدير من خلال Intune، فاحتفظ بملف XML واحد ل PolicyRule، والشيء نفسه، ملف XML واحد لمجموعة واحدة.
+3. إذا كنت تقوم بنشر النهج وإدارته عبر نهج المجموعة، فالرجاء التأكد من دمج كل PolicyRule في ملف XML واحد داخل عقدة أصل تسمى PolicyRules وجميع المجموعات في ملف XML واحد داخل عقدة أصل تسمى Groups؛ إذا كنت تدير من خلال Intune، فاحتفظ بملف PolicyRule واحد من XML، والشيء نفسه، وملف XML واحد لمجموعة واحدة.
 
 إذا كنت لا تزال لا تعمل، فقد ترغب في الاتصال بنا ومشاركة سيارة الدعم عن طريق تشغيل cmd مع المسؤول: "٪programfiles٪\Windows Defender\MpCmdRun.exe" -GetFiles
 
-### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>لا توجد تجربة مستخدم تكوين ل "تعريف مجموعات نهج التحكم في الجهاز" و"تعريف قواعد نهج التحكم في الجهاز" على نهج المجموعة
+### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>لا يوجد أسلوب عمل تكوين ل "تعريف مجموعات نهج التحكم في الجهاز" و"تعريف قواعد نهج التحكم في الجهاز" على نهج المجموعة الخاص بي
 
-نحن لا نرجع تجربة المستخدم لتكوين نهج المجموعة، ولكن لا يزال بإمكانك الحصول على ملفات adml و admx ذات الصلة بالنقر فوق 'Raw' و'Save as' في ملفات [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) [وWindDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx).
+نحن لا نرجع أسلوب عمل تكوين نهج المجموعة، ولكن لا يزال بإمكانك الحصول على ملفات adml وdmx ذات الصلة بالنقر فوق 'Raw' و'Save as' في ملفات [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) [وWindDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) .
 
 ### <a name="how-can-i-know-whether-the-latest-policy-has-been-deployed-to-the-target-machine"></a>كيف يمكنني معرفة ما إذا كان قد تم نشر النهج الأخير على الجهاز المستهدف؟
 
@@ -361,7 +363,7 @@ DeviceEvents
 
 ### <a name="how-can-i-know-which-machine-is-using-out-of-date-antimalware-client-version-in-the-organization"></a>كيف يمكنني معرفة الجهاز الذي يستخدم إصدار عميل مكافحة البرامج الضارة قديم في المؤسسة؟
 
-يمكنك استخدام الاستعلام التالي للحصول على إصدار عميل مكافحة البرامج الضارة على مدخل الأمان Microsoft 365:
+يمكنك استخدام الاستعلام التالي للحصول على إصدار عميل مكافحة البرامج الضارة على مدخل أمان Microsoft 365:
 
 ```kusto
 //check the antimalware client version

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: b247bf7d4fdc1935a0b971f4d4687afd10eb0787
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 961a0d2e3f37696c99e8d9227e6b3c3b6c10e03d
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437646"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923445"
 ---
 # <a name="what-is-microsoft-defender-for-business"></a>ما هو Microsoft Defender for Business؟
 
@@ -41,10 +41,9 @@ Microsoft Defender for Business هو حل أمان نقطة نهاية جديد 
 
 > [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 
-
-:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business الميزات والقدرات.":::
-
 ## <a name="whats-included-with-defender-for-business"></a>ما هو مضمن مع Defender for Business
+
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="ميزات وإمكانات Microsoft Defender for Business.":::
 
 باستخدام Defender for Business، يمكنك المساعدة في حماية الأجهزة والبيانات التي تستخدمها شركتك مع:
 
@@ -52,9 +51,9 @@ Microsoft Defender for Business هو حل أمان نقطة نهاية جديد 
 
 - **حل أمان سهل الاستخدام**. يقدم Defender for Business تجارب مبسطة ترشدك إلى العمل مع التوصيات والرؤى حول أمان نقاط النهاية الخاصة بك. لا توجد معرفة متخصصة مطلوبة، لأن Defender for Business يوفر التكوين المستند إلى المعالج ونهج الأمان الافتراضية المصممة للمساعدة في حماية أجهزة شركتك من اليوم الأول.
 
-- **المرونة في بيئتك**. يمكن ل Defender for Business العمل مع بيئة عملك، سواء كنت تستخدم Microsoft Intune أو كنت تستخدم Microsoft Cloud للمرة الجديدة. يعمل Defender for Business مع المكونات المضمنة في Windows، ومع تطبيقات لأجهزة macOS وiOS وAndroid.
+- **المرونة في بيئتك**. يمكن ل Defender for Business العمل مع بيئة عملك، سواء كنت تستخدم Microsoft Intune أو كنت تستخدم Microsoft Cloud للمرة الجديدة. يعمل Defender for Business مع المكونات المضمنة في Windows، ومع تطبيقات أجهزة macOS وiOS وAndroid.
 
-- **التكامل مع Microsoft 365 Lighthouse**. إذا كنت موفر خدمة مدارة (MSP) باستخدام [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)، فستتوفر المزيد من القدرات. إذا كان عملاؤك يستخدمون Microsoft 365 Business Premium مع Defender for Business، يمكنك عرض حوادث الأمان والتنبيهات عبر مستأجري العملاء الذين تم إلحاقهم Microsoft 365 Lighthouse.
+- **التكامل مع Microsoft 365 Lighthouse**. إذا كنت موفر خدمة مدارة (MSP) تستخدم [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)، فستتوفر المزيد من القدرات. إذا كان عملاؤك يستخدمون Microsoft 365 Business Premium مع Defender for Business، يمكنك عرض حوادث الأمان والتنبيهات عبر مستأجري العملاء الذين تم إلحاقهم ب Microsoft 365 Lighthouse.
 
 ## <a name="how-to-use-this-guide"></a>كيفية استخدام هذا الدليل
 
