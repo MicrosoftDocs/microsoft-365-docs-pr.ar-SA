@@ -7,7 +7,7 @@
 - name: قوالب التشغيل السريع
   items:
     - name: إنشاء حساب قاعدة الاختبار
-      href: createAccount.md
+      href: createaccount.md
     - name: اختبار التطبيق الخاص بك على قاعدة الاختبار
       items:
         - name: نظرة عامة
@@ -16,14 +16,16 @@
           href: testapplication.md
         - name: اختبر تطبيق Intune الخاص بك على قاعدة الاختبار
           href: testintuneapplication.md
-        - name: قم بتحميل حزمة قاعدة الاختبار الخاصة بك (Zip)
-          href: uploadApplication.md
+        - name: يتم الآن تحميل حزمة مضغوطة معدّة مسبقاً
+          href: uploadapplication.md
     - name: إنشاء حزمة
       href: buildpackage.md
     - name: استنساخ حزمة موجودة
       href: clonepackage.md
     - name: إرشادات الحزمة
       href: contentguideline.md
+    - name: فهم تكلفة الاستخدام
+      href: usagecost.md
     - name: قواعد التطبيق/الاختبار
       href: rules.md
 - name: دليل الإرشادات

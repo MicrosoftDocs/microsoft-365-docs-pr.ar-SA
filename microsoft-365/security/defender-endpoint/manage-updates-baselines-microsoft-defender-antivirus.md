@@ -18,12 +18,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ef9793a1bcbf09f6b7a1640d9213522cdb741891
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: bcba0da734c4f5b1945a506d77a88355215efada
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872259"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923292"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية
 
@@ -721,6 +721,21 @@ Platform/Client: **4.18.2001.10**<br/>
 لمزيد من المعلومات، راجع [تحديث Microsoft Defender لصور تثبيت نظام التشغيل Windows](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220603.3</summary>
+
+&ensp;إصدار الحزمة: **20220603.3**<br/>
+&ensp;إصدار النظام الأساسي: **4.18.2203.5**<br/>
+&ensp;إصدار المحرك: **1.1.19200.6**<br/>
+&ensp;إصدار التوقيع: **1.367.1009.0**<br/>
+
+### <a name="fixes"></a>الإصلاحات
+- None
+
+### <a name="additional-information"></a>معلومات إضافية
+- None
+
+<br/>
+</details><details>
 <summary>20220506.6</summary>
 
 &ensp;نسخة الحزمة: **20220506.6**<br/>
