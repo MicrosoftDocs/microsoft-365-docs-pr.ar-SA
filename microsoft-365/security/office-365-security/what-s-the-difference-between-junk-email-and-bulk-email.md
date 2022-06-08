@@ -1,5 +1,5 @@
 ---
-title: ما&apos; الفرق بين البريد الإلكتروني غير الهام والبريد الإلكتروني المجمع؟
+title: ما هو الفرق بين البريد غير الهام والبريد المجمّع؟
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,12 +19,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على الاختلافات بين البريد الإلكتروني غير الهام (البريد العشوائي) والبريد الإلكتروني المجمع (البريد الرمادي) في Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f948b45c5f4b26f3fba74f3883511218daa0ef0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: dd876b522a0d565b84e8bb9043e277cd3bc34495
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647832"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940437"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>ما الفرق بين البريد الإلكتروني غير الهام والبريد الإلكتروني المجمع في EOP؟
 
@@ -33,7 +33,7 @@ ms.locfileid: "65647832"
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-في المؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، يسأل العملاء أحيانا: "ما الفرق بين البريد الإلكتروني غير الهام والبريد الإلكتروني المجمع؟" يشرح هذا الموضوع الفرق ويصف عناصر التحكم المتوفرة في EOP.
+في مؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection (EOP) المستقلة بدون علب بريد Exchange Online، يسأل العملاء أحيانا: "ما الفرق بين البريد الإلكتروني غير الهام والبريد الإلكتروني المجمع؟" يشرح هذا الموضوع الفرق ويصف عناصر التحكم المتوفرة في EOP.
 
 - **البريد الإلكتروني غير الهام** هو بريد عشوائي، وهو رسائل غير مطلوبة وغير مرغوب فيها عالميا (عند تحديدها بشكل صحيح). بشكل افتراضي، يرفض EOP البريد العشوائي استنادا إلى سمعة خادم البريد الإلكتروني المصدر. إذا مرت رسالة بفحص IP المصدر، يتم إرسالها إلى تصفية البريد العشوائي. إذا تم تصنيف الرسالة كبريد عشوائي بواسطة تصفية البريد العشوائي، يتم تسليم الرسالة (بشكل افتراضي) إلى المستلمين المعنيين ونقلها إلى مجلد البريد الإلكتروني غير الهام.
 

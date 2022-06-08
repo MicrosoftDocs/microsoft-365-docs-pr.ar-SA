@@ -20,12 +20,13 @@ ms.custom:
 description: يمكن للمستخدمين معرفة كيفية عرض الرسائل المعزولة وإدارتها في Exchange Online Protection (EOP) التي كان يجب تسليمها إليهم.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bc3e53283f59d7a750e05d56718d389f48e6a9d9
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+adobe-target: true
+ms.openlocfilehash: 3a0faf45e6c9c756490be5ae3ab69b99f3a71cb0
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840005"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940987"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>البحث عن الرسائل المعزولة وتحريرها كمستخدم في EOP
 
@@ -36,7 +37,7 @@ ms.locfileid: "65840005"
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-في المؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، يحتفظ العزل برسائل قد تكون خطرة أو غير مرغوب فيها. لمزيد من المعلومات، راجع [العزل في EOP](quarantine-email-messages.md).
+في مؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection (EOP) المستقلة التي لا تملك علب بريد Exchange Online، يحتفظ العزل بالرسائل التي قد تكون خطرة أو غير مرغوب فيها. لمزيد من المعلومات، راجع [العزل في EOP](quarantine-email-messages.md).
 
 كمستخدم عادي (وليس كمسؤول)، يتم وصف القدرات **الافتراضية** المتوفرة لك كمستلم لرسالة معزولة في الجدول التالي:
 
@@ -50,20 +51,20 @@ ms.locfileid: "65840005"
 |التصيد الاحتيالي عالي الثقة||||
 |**نُهج مكافحة التصيد الاحتيالي**||||
 |حماية التحليل الذكي للانتحال في EOP|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
-|حماية المستخدم منتحلة في Defender لـ Office 365|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
-|حماية المجال منتحلة في Defender لـ Office 365|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
-|الحماية الذكية لعل البريد في Defender لـ Office 365|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
+|حماية المستخدم منتحلة في Defender ل Office 365|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
+|حماية المجال منتحلة في Defender ل Office 365|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
+|حماية ذكاء علبة البريد في Defender ل Office 365|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
 |**نهج مكافحة البرامج الضارة**||||
 |رسائل البريد الإلكتروني التي تحتوي على مرفقات تم عزلها كبرود ضار.||||
 |**المرفقات الآمنة في Defender لـ Office 365**||||
-|خزينة نهج المرفقات التي تقوم بعزل رسائل البريد الإلكتروني التي تحتوي على مرفقات ضارة كبرود ضارة.||||
-|خزينة المرفقات SharePoint OneDrive Microsoft Teams التي تقوم بعزل الملفات الضارة كبرمجيات ضارة.||||
+|نهج المرفقات الآمنة التي تقوم بعزل رسائل البريد الإلكتروني التي تحتوي على مرفقات ضارة كبريطات ضارة.||||
+|المرفقات الآمنة ل SharePoint وOneDrive وMicrosoft Teams التي تقوم بعزل الملفات الضارة على أنها برامج ضارة.||||
 |**قواعد تدفق البريد (قواعد النقل)**||||
 |قواعد تدفق البريد التي تقوم بعزل رسائل البريد الإلكتروني.||||
 
 تحدد _نهج العزل_ ما يسمح للمستخدمين بالقيام به للرسائل المعزولة استنادا إلى سبب عزل الرسالة في [الميزات المدعومة](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). تفرض نهج العزل الافتراضية القدرات التاريخية كما هو موضح في الجدول السابق. يمكن للمسؤولين إنشاء وتطبيق نهج العزل المخصصة التي تحدد قدرات أقل تقييدا أو أكثر تقييدا للمستخدمين في الميزات المدعومة. لمزيد من المعلومات، راجع [نهج العزل](quarantine-policies.md).
 
-يمكنك عرض الرسائل المعزولة وإدارتها في مدخل Microsoft 365 Defender أو (إذا قام مسؤول بإعداد ذلك) إعلامات العزل من نهج العزل.
+يمكنك عرض الرسائل المعزولة وإدارتها في مدخل Microsoft 365 Defender أو (إذا قام مسؤول بإعداد هذا الأمر) إعلامات العزل من نهج العزل.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
@@ -121,7 +122,7 @@ ms.locfileid: "65840005"
      - **تم الإصدار**
    - **نوع النهج**: تصفية الرسائل حسب نوع النهج:
      - **نهج مكافحة البرامج الضارة**
-     - **نهج المرفقات خزينة**
+     - **نهج المرفقات الآمنة**
      - **نهج مكافحة التصيد الاحتيالي**
      - **نهج مكافحة البريد العشوائي**
 

@@ -1,5 +1,5 @@
 ---
-title: تنفيذ تقسيم VPN لتنفيذ Microsoft 365
+title: تنفيذ نفق انقسام VPN ل Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -16,67 +16,67 @@ ms.collection:
 - remotework
 f1.keywords:
 - NOCSH
-description: كيفية تنفيذ تقسيم VPN للانقسام Microsoft 365
-ms.openlocfilehash: ee8c0929682370d581c9d1b5c738d682d3f91a01
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: كيفية تنفيذ نفق انقسام VPN ل Microsoft 365
+ms.openlocfilehash: 6b578b9b1801921644c6982c15c160bce5fbb4dd
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63572898"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65941075"
 ---
-# <a name="implementing-vpn-split-tunneling-for-microsoft-365"></a>تنفيذ تقسيم VPN لتنفيذ Microsoft 365
+# <a name="implementing-vpn-split-tunneling-for-microsoft-365"></a>تنفيذ نفق انقسام VPN ل Microsoft 365
 
 >[!NOTE]
->هذه المقالة هي جزء من مجموعة من المقالات التي تعالج Microsoft 365 للمستخدمين البعيدين.
+>تشكل هذه المقالة جزءا من مجموعة من المقالات التي تتناول تحسين Microsoft 365 للمستخدمين البعيدين.
 
->- للحصول على نظرة عامة حول استخدام تقسيم VPN لتحسين Microsoft 365 للمستخدمين البعيدين، راجع نظرة عامة[: تقسيم VPN](microsoft-365-vpn-split-tunnel.md) للتحكم Microsoft 365.
->- للحصول على قائمة تفصيلية بسيناريوهات تقسيم VPN التي تم تقسيمها، راجع سيناريوهات تقسيم VPN الشائعة [لسيناريوهات](microsoft-365-vpn-common-scenarios.md) تقسيم VPN Microsoft 365.
->- للحصول على إرشادات حول تأمين Teams الوسائط في بيئات تقسيم VPN التي تم تقسيمها، راجع تأمين Teams الوسائط لتقسيم [VPN](microsoft-365-vpn-securing-teams.md).
->- للحصول على معلومات حول كيفية تكوين الدفق والأحداث المباشرة في بيئات VPN، راجع اعتبارات خاصة للبث والأحداث المباشرة [في بيئات VPN](microsoft-365-vpn-stream-and-live-events.md).
->- للحصول على معلومات حول تحسين Microsoft 365 المستأجر على مستوى العالم للمستخدمين في الصين، راجع Microsoft 365 تحسين أداء [المستخدمين في الصين](microsoft-365-networking-china.md).
+>- للحصول على نظرة عامة حول استخدام نفق انقسام VPN لتحسين اتصال Microsoft 365 للمستخدمين البعيدين، راجع [نظرة عامة: نفق انقسام VPN ل Microsoft 365](microsoft-365-vpn-split-tunnel.md).
+>- للحصول على قائمة مفصلة بسيناريوهات الاتصال النفقي المنقسم ل VPN، راجع [سيناريوهات الاتصال النفقي المنقسم ل VPN الشائعة ل Microsoft 365](microsoft-365-vpn-common-scenarios.md).
+>- للحصول على إرشادات حول تأمين حركة مرور وسائط Teams في بيئات الاتصال النفقي المنقسمة ل VPN، راجع [تأمين حركة مرور وسائط Teams للنفق المنقسم ل VPN](microsoft-365-vpn-securing-teams.md).
+>- للحصول على معلومات حول كيفية تكوين Stream والأحداث المباشرة في بيئات VPN، راجع [الاعتبارات الخاصة ل Stream والأحداث المباشرة في بيئات VPN](microsoft-365-vpn-stream-and-live-events.md).
+>- للحصول على معلومات حول تحسين أداء المستأجر في جميع أنحاء العالم من Microsoft 365 للمستخدمين في الصين، راجع [تحسين أداء Microsoft 365 لمستخدمي الصين](microsoft-365-networking-china.md).
 
-تركز استراتيجية Microsoft الموصى بها لتحسين اتصال العامل عن بعد على تخفيف المشاكل بسرعة وتوفير أداء عال باستخدام بعض الخطوات البسيطة. تقوم هذه الخطوات بضبط نهج VPN القديم لبضع نقاط نهاية معرفة تتجاوز خوادم VPN المزدبكة. يمكن تطبيق نموذج أمان مكافئ أو حتى متفوق على طبقات مختلفة لإزالة الحاجة إلى تأمين كل حركة المرور عند الخروج من شبكة الشركة. في معظم الحالات، يمكن تحقيق ذلك بفعالية في غضون ساعات ويمكن بعد ذلك توسيعه لأحمال العمل الأخرى حسب متطلبات الطلب والوقت التي تسمح بها.
+تركز استراتيجية Microsoft الموصى بها لتحسين اتصال العامل عن بعد على التخفيف السريع من المشكلات وتوفير أداء عال ببعض الخطوات البسيطة. تقوم هذه الخطوات بضبط نهج VPN القديم لعدد قليل من نقاط النهاية المحددة التي تتجاوز خوادم VPN المازدحامة. يمكن تطبيق نموذج أمان مكافئ أو حتى فائق في طبقات مختلفة لإزالة الحاجة إلى تأمين جميع نسبة استخدام الشبكة عند خروج شبكة الشركة. في معظم الحالات، يمكن تحقيق ذلك بفعالية في غضون ساعات ثم يمكن توسيعه إلى أحمال العمل الأخرى كما يسمح بالمتطلبات والوقت.
 
-## <a name="implement-vpn-split-tunneling"></a>تنفيذ تقسيم VPN
+## <a name="implement-vpn-split-tunneling"></a>تنفيذ الاتصال النفقي المنقسم ل VPN
 
-في هذه المقالة، ستعثر على الخطوات البسيطة المطلوبة لترحيل بنية عميل VPN الخاص بك من VPN إجباريا على الاجتياج إلى نظام حماية _VPN_ إجباري مع بعض الاستثناءات الموثوق بها، نموذج انقسام VPN المنقسم [للنفقات #2](microsoft-365-vpn-common-scenarios.md#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) في سيناريوهات تقسيم [VPN](microsoft-365-vpn-common-scenarios.md) الشائعة التي تم تقسيمها Microsoft 365.
+في هذه المقالة، ستجد الخطوات البسيطة المطلوبة لنقل بنية عميل VPN الخاص بك من _نفق مفروض VPN_ إلى _نفق مفروض VPN مع بعض الاستثناءات الموثوق بها_، [نموذج نفق انقسام VPN رقم 2](microsoft-365-vpn-common-scenarios.md#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) في [سيناريوهات نفق انقسام VPN الشائعة ل Microsoft 365](microsoft-365-vpn-common-scenarios.md).
 
-يوضح الرسم التخطيطي أدناه كيفية عمل حل تقسيم VPN المنقسم الموصى به:
+يوضح الرسم التخطيطي أدناه كيفية عمل حل نفق انقسام VPN الموصى به:
 
-![تفاصيل حل VPN المنقسمة.](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![تفاصيل حل VPN للنفق المنقسم.](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. تحديد نقاط النهاية لتحسينها
 
-في المقالة Microsoft 365 نطاقات عناوين [IP وURLS](urls-and-ip-address-ranges.md)، تحدد Microsoft بوضوح نقاط النهاية الرئيسية التي تحتاج إلى تحسينها وتصنيفها على أنها **تحسين**. هناك حاليا أربعة عناوين URL و20 شبكة IP فرعية تحتاج إلى تحسين. تمثل هذه المجموعة الصغيرة من نقاط النهاية حوالي 70٪ - 80٪ من حجم حركة المرور إلى خدمة Microsoft 365 بما في ذلك نقاط النهاية الحساسة لنقطة زمن Teams المرور. بشكل أساسي، هذه هي حركة المرور التي نحتاج إلى العناية الخاصة بها، وهي أيضا حركة المرور التي ستضع ضغطا لا يصدق على مسارات الشبكة التقليدية والبنية الأساسية لشبكة VPN.
+في مقالة [نطاقات عناوين IP وعناوين URL في Microsoft 365](urls-and-ip-address-ranges.md) ، تحدد Microsoft بوضوح نقاط النهاية الرئيسية التي تحتاجها لتحسينها وتصنيفها على أنها **تحسين**. هناك حاليا أربعة عناوين URL فقط و20 شبكة فرعية IP تحتاج إلى تحسين. تمثل هذه المجموعة الصغيرة من نقاط النهاية حوالي 70٪ - 80٪ من حجم نسبة استخدام الشبكة إلى خدمة Microsoft 365 بما في ذلك نقاط النهاية الحساسة لزمن الانتقال مثل تلك الخاصة بوسائط Teams. بشكل أساسي هذه هي نسبة استخدام الشبكة التي نحتاج إلى الاهتمام بها بشكل خاص وهي أيضا نسبة استخدام الشبكة التي ستضع ضغطا لا يصدق على مسارات الشبكة التقليدية والبنية الأساسية للشبكة الظاهرية الخاصة.
 
-عناوين URL في هذه الفئة لها الخصائص التالية:
+تحتوي عناوين URL في هذه الفئة على الخصائص التالية:
 
-- هل تملك Microsoft نقاط نهاية مدارة ومستضافة على البنية الأساسية ل Microsoft
-- تم توفير IPs
-- معدل التغيير منخفض ومن المتوقع أن يظل صغيرا في العدد (حاليا 20 شبكة IP فرعية)
-- حساسة للانطاق الترددي و/أو زمن زمن الإرسال
-- القدرة على توفير عناصر الأمان المطلوبة في الخدمة بدلا من توفيرها على الشبكة
-- تمثل حوالي 70-80٪ من حجم حركة المرور إلى خدمة Microsoft 365
+- هل نقاط النهاية المملوكة ل Microsoft والمدارة، مستضافة على البنية الأساسية ل Microsoft
+- توفير عناوين IP
+- معدل تغيير منخفض ومن المتوقع أن يظل صغيرا في العدد (حاليا 20 شبكة فرعية IP)
+- عرض النطاق الترددي و/أو زمن الانتقال حساس
+- القدرة على توفير عناصر الأمان المطلوبة في الخدمة بدلا من أن تكون مضمنة على الشبكة
+- حساب حوالي 70-80٪ من حجم نسبة استخدام الشبكة إلى خدمة Microsoft 365
 
-لمزيد من المعلومات Microsoft 365 نقاط النهاية وكيفية تصنيفها وإدارتها، راجع إدارة Microsoft 365 [نقاط النهاية](managing-office-365-endpoints.md).
+لمزيد من المعلومات حول نقاط نهاية Microsoft 365 وكيفية تصنيفها وإدارتها، راجع [إدارة نقاط نهاية Microsoft 365](managing-office-365-endpoints.md).
 
 #### <a name="optimize-urls"></a>تحسين عناوين URL
 
-يمكن العثور على عناوين URL "تحسين" الحالية في الجدول أدناه. في معظم الحالات، يجب أن تحتاج فقط إلى استخدام نقاط نهاية URL في ملف [PAC](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic) في المستعرض حيث تم تكوين نقاط النهاية لكي يتم إرسالها مباشرة، بدلا من الوكيل.
+يمكن العثور على "تحسين عناوين URL" الحالية في الجدول أدناه. في معظم الحالات، يجب أن تحتاج فقط إلى استخدام نقاط نهاية URL في [ملف PAC مستعرض](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic) حيث يتم تكوين نقاط النهاية ليتم إرسالها مباشرة، بدلا من الوكيل.
 
-| تحسين عناوين URL | المنفذ/البروتوكول | الغرض |
+| تحسين عناوين URL | منفذ/بروتوكول | الغرض |
 | --- | --- | --- |
-| <https://outlook.office365.com> | TCP 443 | هذا هو أحد عناوين URL Outlook الأساسية التي تستخدمها للاتصال Exchange Online الخادم الخاص بها، كما أنها تستخدم نطاق ترددي كبير وتحسب عدد الاتصال. زمن زمن الوصول المنخفض للشبكة مطلوب للميزات عبر الإنترنت بما في ذلك: البحث الفوري وتقويمات علب البريد الأخرى والبحث الحر / المشغول وإدارة القواعد والتنبيهات Exchange عبر الإنترنت ورسائل البريد الإلكتروني التي تغادر علبة الصادر. |
-| <https://outlook.office.com> | TCP 443 | يتم استخدام عنوان URL هذا Outlook Online Access للاتصال Exchange Online الخادم، كما أنه حساس ل زمن وصول الشبكة. الاتصال مطلوب بشكل خاص لتحميل الملفات الكبيرة وتنزيلها باستخدام SharePoint Online. |
-| \<tenant\>https://.sharepoint.com | TCP 443 | هذا هو عنوان URL الأساسي SharePoint Online وهو يحتوي على استخدام نطاق ترددي عال. |
-| \<tenant\>https://-my.sharepoint.com | TCP 443 | هذا هو عنوان URL الأساسي OneDrive for Business به استخدام نطاق ترددي عال وربما عدد اتصال عال من أداة OneDrive for Business المزامنة. |
-| Teams الوسائط (بدون عنوان URL) | UDP 3478 و3479 و3480 و3481 | ترحيل تخصيص الاكتشاف و نقل البيانات في الوقت الحقيقي. هذه هي نقاط النهاية المستخدمة Skype for Business Microsoft Teams الوسائط (المكالمات والاجتماعات وما إلى ذلك). يتم توفير معظم نقاط النهاية عندما Microsoft Teams العميل مكالمة (وهي موجودة ضمن IPs المطلوبة المدرجة للخدمة). استخدام بروتوكول UDP مطلوب للحصول على جودة وسائط مثالية.   |
+| <https://outlook.office365.com> | TCP 443 | هذا هو أحد عناوين URL الأساسية التي يستخدمها Outlook للاتصال بخادم Exchange Online الخاص به ولديه عدد كبير من استخدام النطاق الترددي وعدد الاتصالات. إن زمن انتقال الشبكة المنخفض مطلوب للميزات عبر الإنترنت، بما في ذلك: البحث الفوري، وتقويمات علبة البريد الأخرى، والبحث عن التوفر/الانشغال، وإدارة القواعد والتنبيهات، وأرشيف Exchange عبر الإنترنت، ورسائل البريد الإلكتروني التي تغادر علبة الصادر. |
+| <https://outlook.office.com> | TCP 443 | يتم استخدام URL هذا للوصول إلى Outlook Online Web Access للاتصال بخادم Exchange Online، وهو حساس لزمن انتقال الشبكة. الاتصال مطلوب بشكل خاص لتحميل الملفات الكبيرة وتنزيلها باستخدام SharePoint Online. |
+| \<tenant\>https://.sharepoint.com | TCP 443 | هذا هو URL الأساسي ل SharePoint Online ولديه استخدام عالي النطاق الترددي. |
+| \<tenant\>https://-my.sharepoint.com | TCP 443 | هذا هو عنوان URL الأساسي ل OneDrive for Business ولديه استخدام عرض نطاق ترددي عال وربما عدد اتصالات عال من أداة مزامنة OneDrive for Business. |
+| عناوين IP للوسائط في Teams (بدون عنوان URL) | UDP 3478 و3479 و3480 و3481 | تخصيص اكتشاف الترحيل وحركة المرور في الوقت الحقيقي. هذه هي نقاط النهاية المستخدمة لنسبة استخدام الوسائط في Skype for Business وMicrosoft Teams Media (المكالمات والاجتماعات وما إلى ذلك). يتم توفير معظم نقاط النهاية عندما يقوم عميل Microsoft Teams بإنشاء مكالمة (ويتم تضمينها ضمن عناوين IP المطلوبة المدرجة للخدمة). استخدام بروتوكول UDP مطلوب لجودة الوسائط المثلى.   |
 
-في الأمثلة أعلاه، **يجب** استبدال المستأجر باسم المستأجر Microsoft 365 المستأجر. على سبيل المثال **، contoso.onmicrosoft.com** _استخدام contoso.sharepoint.com_ _contoso-my.sharepoint.com._
+في الأمثلة أعلاه، يجب استبدال **المستأجر** باسم مستأجر Microsoft 365. على سبيل المثال، **قد يستخدم contoso.onmicrosoft.com** _contoso.sharepoint.com_ _contoso-my.sharepoint.com._
 
 #### <a name="optimize-ip-address-ranges"></a>تحسين نطاقات عناوين IP
 
-في وقت كتابة نطاقات عناوين IP التي تتوافق مع نقاط النهاية هذه هي كما يلي. نوصي بشدة باستخدام  برنامج نصي مثل هذا المثال[](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category)، خدمة ويب IP وURL في [Microsoft 365](microsoft-365-ip-web-service.md) أو [صفحة URL/IP](urls-and-ip-address-ranges.md) للتحقق من أي تحديثات عند تطبيق التكوين، ووضع نهج للقيام بذلك بشكل منتظم.
+في وقت كتابة نطاقات عناوين IP التي تتوافق معها نقاط النهاية هذه هي كما يلي. ينصح **بشدة** باستخدام [برنامج نصي مثل هذا](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) المثال، [خدمة ويب MICROSOFT 365 IP وURL](microsoft-365-ip-web-service.md) أو [صفحة URL/IP](urls-and-ip-address-ranges.md) للتحقق من وجود أي تحديثات عند تطبيق التكوين، ووضع نهج للقيام بذلك بانتظام.
 
 ```markdown
 104.146.128.0/17
@@ -102,11 +102,11 @@ ms.locfileid: "63572898"
 
 ### <a name="2-optimize-access-to-these-endpoints-via-the-vpn"></a>2. تحسين الوصول إلى نقاط النهاية هذه عبر VPN
 
-الآن وقد قمنا بتحديد نقاط النهاية الهامة هذه، نحتاج إلى تحويل مسارها بعيدا عن توقف VPN والسماح له باستخدام اتصال الإنترنت المحلي للمستخدم للاتصال مباشرة بالخدمة. ستختلف الطريقة التي يتم بها تنفيذ ذلك وفقا لمنتج VPN و النظام الأساسي للجهاز المستخدمين ولكن معظم حلول VPN ستسمح ببعض التكوين البسيط من النهج لتطبيق هذا المنطق. للحصول على إرشادات تقسيم النظام الأساسي ل VPN الخاصة، راجع إرشادات [HOWTO لرهاصات VPN الأساسية الشائعة](#howto-guides-for-common-vpn-platforms).
+الآن بعد أن حددنا نقاط النهاية الهامة هذه، نحتاج إلى تحويلها بعيدا عن نفق VPN والسماح لها باستخدام اتصال الإنترنت المحلي للمستخدم للاتصال مباشرة بالخدمة. تختلف الطريقة التي يتم بها إنجاز ذلك اعتمادا على منتج VPN والنظام الأساسي للجهاز المستخدم ولكن معظم حلول VPN ستسمح ببعض التكوين البسيط للنهج لتطبيق هذا المنطق. للحصول على معلومات حول إرشادات النفق المنقسم الخاص بالنظام الأساسي VPN، راجع [إرشادات HOWTO لأنظمة VPN الأساسية الشائعة](#howto-guides-for-common-vpn-platforms).
 
-إذا كنت ترغب في اختبار الحل يدويا، يمكنك تنفيذ مثال PowerShell التالي لمحاكاة الحل على مستوى جدول المسار. يضيف هذا المثال مسارا لكل Teams وسائط IP الفرعية إلى جدول المسار. يمكنك اختبار Teams الوسائط قبل وبعد ذلك، ومراقبة الفرق في المسارات لنقاط النهاية المحددة.
+إذا كنت ترغب في اختبار الحل يدويا، يمكنك تنفيذ مثال PowerShell التالي لمحاكاة الحل على مستوى جدول التوجيه. يضيف هذا المثال مسارا لكل من الشبكات الفرعية ل Teams Media IP في جدول التوجيه. يمكنك اختبار أداء وسائط Teams قبل وبعد، ومراقبة الفرق في المسارات لنقاط النهاية المحددة.
 
-#### <a name="example-add-teams-media-ip-subnets-into-the-route-table"></a>مثال: إضافة Teams وسائط IP فرعية إلى جدول المسار
+#### <a name="example-add-teams-media-ip-subnets-into-the-route-table"></a>مثال: إضافة الشبكات الفرعية ل Teams Media IP إلى جدول التوجيه
 
 ```powershell
 $intIndex = "" # index of the interface connected to the internet
@@ -116,15 +116,15 @@ $destPrefix = "52.120.0.0/14", "52.112.0.0/14", "13.107.64.0/18" # Teams Media e
 foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -InterfaceIndex $intIndex -NextHop $gateway}
 ```
 
-في البرنامج النصي أعلاه، _$intIndex_ هو فهرس الواجهة المتصلة بالإنترنت (ابحث عن طريق تشغيل **get-netadapter** في PowerShell، وابحث عن قيمة _ifIndex_) و _$gateway_ هو البوابة الافتراضية لهذه الواجهة (ابحث عن طريق تشغيل **ipconfig** في موجه أوامر أو **(Get-NetIPConfiguration | Foreach IPv4DefaultGateway). NextHop** في PowerShell).
+في البرنامج النصي أعلاه، _$intIndex_ هو فهرس الواجهة المتصلة بالإنترنت (ابحث عن طريق تشغيل **get-netadapter** في PowerShell؛ ابحث عن قيمة _ifIndex_) _$gateway_ هي البوابة الافتراضية لتلك الواجهة (ابحث عن طريق تشغيل **ipconfig** في موجه الأوامر أو **(Get-NetIPConfiguration | Foreach IPv4DefaultGateway). NextHop** في PowerShell).
 
-بعد إضافة المسارات، يمكنك تأكيد صحة جدول المسار عن طريق تشغيل طباعة المسار في موجه أوامر أو PowerShell. يجب أن يحتوي الإخراج على المسارات التي أضفتها، مع عرض فهرس الواجهة (_22_ في هذا المثال) وبوابة تلك الواجهة (_192.168.1.1_ في هذا المثال):
+بمجرد إضافة المسارات، يمكنك تأكيد أن جدول التوجيه صحيح عن طريق تشغيل **طباعة المسار** في موجه أوامر أو PowerShell. يجب أن يحتوي الإخراج على المسارات التي أضفتها، مع إظهار فهرس الواجهة (_22_ في هذا المثال) وبوابة تلك الواجهة (_192.168.1.1_ في هذا المثال):
 
-![توجيه إخراج الطباعة.](../media/vpn-split-tunneling/vpn-route-print.png)
+![إخراج طباعة المسار.](../media/vpn-split-tunneling/vpn-route-print.png)
 
-لإضافة مسارات لكل نطاقات  عناوين IP الحالية في الفئة تحسين، يمكنك استخدام تباين البرنامج النصي التالي للاستعلام عن خدمة ويب عنوان IP [وURL ل Microsoft 365](microsoft-365-ip-web-service.md) الخاصة بمجموعة عناوين IP الفرعية الحالية وإضافتها إلى جدول المسار.
+لإضافة مسارات _لكافة_ نطاقات عناوين IP الحالية في الفئة "تحسين"، يمكنك استخدام تباين البرنامج النصي التالي للاستعلام عن [خدمة ويب ل Microsoft 365 IP وURL](microsoft-365-ip-web-service.md) لمجموعة الشبكات الفرعية "تحسين IP" الحالية وإضافتها إلى جدول التوجيه.
 
-#### <a name="example-add-all-optimize-subnets-into-the-route-table"></a>مثال: إضافة كافة "تحسين" الشبكة الفرعية إلى جدول المسار
+#### <a name="example-add-all-optimize-subnets-into-the-route-table"></a>مثال: إضافة كافة الشبكات الفرعية "تحسين" إلى جدول التوجيه
 
 ```powershell
 $intIndex = "" # index of the interface connected to the internet
@@ -137,7 +137,7 @@ $destPrefix = $ep | where {$_.category -eq "Optimize"} | Select-Object -ExpandPr
 foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -InterfaceIndex $intIndex -NextHop $gateway}
 ```
 
-إذا أضفت مسارات بمعلمات غير صحيحة عن غير قصد أو كنت ترغب ببساطة في العودة إلى تغييراتك، يمكنك إزالة المسارات التي أضفتها للتو باستخدام الأمر التالي:
+إذا أضفت عن غير قصد مسارات بمعلمات غير صحيحة أو كنت ترغب ببساطة في إرجاع التغييرات، يمكنك إزالة المسارات التي أضفتها للتو مع الأمر التالي:
 
 ```powershell
 foreach ($prefix in $destPrefix) {Remove-NetRoute -DestinationPrefix $prefix -InterfaceIndex $intIndex -NextHop $gateway}
@@ -156,42 +156,42 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 ```
 -->
 
-يجب تكوين عميل VPN بحيث يتم توجيه حركة المرور إلى **IPs** تحسين بهذه الطريقة. يسمح ذلك لحركة المرور ب استخدام موارد Microsoft المحلية مثل Microsoft 365 الأمامية للخدمة مثل [Azure Front Door](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/) التي توفر خدمات Microsoft 365 ونقاط نهاية الاتصال إلى أقرب حد ممكن للمستخدمين. يتيح لنا ذلك تقديم مستويات أداء عالية للمستخدمين أينما كانوا في العالم والاستفادة بشكل كامل من شبكة [Microsoft](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/) العالمية ذات المستوى العالمي، والتي من المرجح أن تكون ضمن بضع مللي ثانية من الخروج المباشر للمستخدمين.
+يجب تكوين عميل VPN بحيث يتم توجيه نسبة استخدام الشبكة إلى **تحسين** عناوين IP بهذه الطريقة. يسمح هذا لنسبة استخدام الشبكة باستخدام موارد Microsoft المحلية مثل Microsoft 365 Service Front Door [مثل Azure Front Door](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/) التي توفر خدمات Microsoft 365 ونقاط نهاية الاتصال بالقرب من المستخدمين قدر الإمكان. يتيح لنا ذلك تقديم مستويات أداء عالية للمستخدمين أينما كانوا في العالم، كما أنه يستفيد استفادة كاملة من [شبكة Microsoft العالمية ذات المستوى العالمي](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)، والتي من المحتمل أن تكون في غضون بضعة مللي ثانية من الخروج المباشر للمستخدمين.
 
-## <a name="howto-guides-for-common-vpn-platforms"></a>أدلة HOWTO لرهاصات VPN الأساسية الشائعة
+## <a name="howto-guides-for-common-vpn-platforms"></a>إرشادات HOWTO لأنظمة VPN الأساسية الشائعة
 
-يوفر هذا القسم ارتباطات إلى أدلة مفصلة لتنفيذ تقسيم البيانات Microsoft 365 البيانات من الشركاء الأكثر شيوعا في هذه المساحة. سنضيف أدلة إضافية عندما تصبح متوفرة.
+يوفر هذا القسم ارتباطات إلى إرشادات مفصلة لتنفيذ الاتصال النفقي المنقسم لحركة مرور Microsoft 365 من الشركاء الأكثر شيوعا في هذه المساحة. سنضيف إرشادات إضافية عندما تصبح متوفرة.
 
-- **Windows 10 VPN**: تحسين [Microsoft 365 المرور للعاملين عن بعد باستخدام عميل VPN الأصلي Windows 10 VPN](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
-- **Cisco Anyconnect**: [تحسين Anyconnect Split Splitهاي في Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
-- **Palo Alto GlobalProtect**: [تحسين Microsoft 365 المرور عبر VPN Split Splitواستثناء مسار الوصول](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
-- **F5 Networks BIG-IP APM**: تحسين Microsoft 365 المرور على الوصول البعيد من خلال [شبكات VPN عند استخدام BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
-- **بوابة Citrix**: [تحسين تقسيم خدمة VPN لبوابة Citrix ل Office365](https://docs.citrix.com/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
-- **Pulse Secure**: [VPNتأمين: كيفية تكوين تقسيم تقسيم إلى آخر لاستبعاد تطبيقات](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417) Microsoft 365
-- **نقطة اختيار VPN**: [كيفية تكوين Split Split Split For Microsoft 365 وتطبيقات SaaS الأخرى](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
+- **عميل Windows 10 VPN**: [تحسين نسبة استخدام الشبكة ل Microsoft 365 للعاملين عن بعد باستخدام عميل WINDOWS 10 VPN الأصلي](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
+- **Cisco Anyconnect**: [تحسين نفق تقسيم Anyconnect ل Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
+- **Palo Alto GlobalProtect**: [تحسين حركة مرور Microsoft 365 عبر نفق انقسام VPN استبعاد مسار الوصول](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
+- **F5 Networks BIG-IP APM**: [تحسين حركة مرور Microsoft 365 على الوصول عن بعد من خلال الشبكات الظاهرية الخاصة عند استخدام BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
+- **Citrix Gateway**: [تحسين نفق تقسيم Citrix Gateway VPN ل Office365](https://docs.citrix.com/en-us/citrix-gateway/current-release/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Pulse Secure**: [VPN Tunneling: كيفية تكوين الاتصال النفقي المنقسم لاستبعاد تطبيقات Microsoft 365](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
+- **Check Point VPN**: [كيفية تكوين Split Tunnel ل Microsoft 365 وتطبيقات SaaS الأخرى](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 
-[نظرة عامة: تقسيم VPN إلى تقسيم Microsoft 365](microsoft-365-vpn-split-tunnel.md)
+[نظرة عامة: الاتصال النفقي المنقسم VPN ل Microsoft 365](microsoft-365-vpn-split-tunnel.md)
 
-[سيناريوهات تقسيم VPN الشائعة للانقسام Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+[سيناريوهات الاتصال النفقي لتقسيم VPN الشائعة ل Microsoft 365](microsoft-365-vpn-common-scenarios.md)
 
-[تأمين Teams الوسائط من أجل تقسيم VPN](microsoft-365-vpn-securing-teams.md)
+[تأمين نقل وسائط Teams للاتصال النفقي المنقسم لشبكة VPN](microsoft-365-vpn-securing-teams.md)
 
-[اعتبارات خاصة للبث والأحداث المباشرة في بيئات VPN](microsoft-365-vpn-stream-and-live-events.md)
+[اعتبارات خاصة ل Stream والأحداث المباشرة في بيئات VPN](microsoft-365-vpn-stream-and-live-events.md)
 
-[Microsoft 365 تحسين أداء المستخدمين في الصين](microsoft-365-networking-china.md)
+[تحسين أداء Microsoft 365 لمستخدمي الصين](microsoft-365-networking-china.md)
 
-[Microsoft 365 "مبادئ اتصال الشبكة"](microsoft-365-network-connectivity-principles.md)
+[مبادئ اتصال شبكة Microsoft 365](microsoft-365-network-connectivity-principles.md)
 
-[تقييم Microsoft 365 الشبكة](assessing-network-connectivity.md)
+[تقييم اتصال الشبكة Microsoft 365](assessing-network-connectivity.md)
 
-[Microsoft 365 الشبكة وضبط الأداء](network-planning-and-performance.md)
+[ضبط أداء شبكة Microsoft 365](network-planning-and-performance.md)
 
-[طرق بديلة لمحترفي الأمان تكنولوجيا المعلومات لتحقيق عناصر التحكم الحديثة في الأمان في سيناريوهات العمل عن بعد الفريدة اليوم (مدونة فريق أمان Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+[طرق بديلة لمحترفي الأمان و تكنولوجيا المعلومات لتحقيق عناصر التحكم الأمنية الحديثة في سيناريوهات العمل عن بعد الفريدة اليوم (مدونة فريق أمان Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
-[تحسين أداء VPN في Microsoft: Windows 10 ملفات تعريف VPN للسماح باتصالات التشغيل التلقائي](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+[تحسين أداء VPN في Microsoft: استخدام ملفات تعريف WINDOWS 10 VPN للسماح باتصالات التشغيل التلقائي](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
-[تشغيل VPN: كيف تحافظ Microsoft على اتصال القوى العاملة البعيدة](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
+[التشغيل على VPN: كيف تحافظ Microsoft على اتصال القوى العاملة عن بعد](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
-[شبكة Microsoft العامة](/azure/networking/microsoft-global-network)
+[شبكة Microsoft العمومية](/azure/networking/microsoft-global-network)

@@ -13,22 +13,22 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: 'ملخص: تكوين وحدات التحكم بالمجال وخادم مزامنة الدليل للمصادقة الموحدة عالية التوفر الخاصة بك Microsoft 365 في Microsoft Azure.'
-ms.openlocfilehash: a3b5963100072f55c108f29d4437a2ae997ad96d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 'ملخص: تكوين وحدات التحكم بالمجال وخادم مزامنة الدليل للمصادقة الموحدة عالية التوفر ل Microsoft 365 في Microsoft Azure.'
+ms.openlocfilehash: 765ccb0aaf2611947f505b53b5689009dadd5148
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098351"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940679"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>مرحلة المصادقة الموحدة ذات التوفر العالي 2: تكوين وحدات التحكم بالمجال
 
-في هذه المرحلة من نشر قابلية وصول عالية للمصادقة الموحدة Microsoft 365 في خدمات البنية الأساسية ل Azure، يمكنك تكوين وحدتي تحكم بالمجال وخادم مزامنة الدليل في شبكة Azure الظاهرية. يمكن بعد ذلك مصادقة طلبات ويب العميل للمصادقة في شبكة Azure الظاهرية، بدلا من إرسال حركة مرور المصادقة عبر اتصال VPN من موقع إلى موقع إلى الشبكة المحلية.
+في هذه المرحلة من نشر قابلية وصول عالية للمصادقة الموحدة ل Microsoft 365 في خدمات البنية الأساسية ل Azure، يمكنك تكوين وحدتي تحكم بالمجال وخادم مزامنة الدليل في شبكة Azure الظاهرية. يمكن بعد ذلك مصادقة طلبات ويب العميل للمصادقة في شبكة Azure الظاهرية، بدلا من إرسال حركة مرور المصادقة عبر اتصال VPN من موقع إلى موقع إلى الشبكة المحلية.
   
 > [!NOTE]
-> لا يمكن خدمات الأمان المشترك لـ Active Directory (AD FS) استخدام Azure Active Directory (Azure AD) كبديل لوحدات تحكم مجال خدمات مجال Active Directory (AD DS). 
+> لا يمكن ل Active Directory Federation Services (AD FS) استخدام Azure Active Directory (Azure AD) كبديل لوحدات تحكم مجال خدمات مجال Active Directory (AD DS). 
   
-يجب إكمال هذه المرحلة قبل الانتقال إلى [المرحلة 3: تكوين خوادم AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). راجع [نشر المصادقة الموحدة عالية التوفر Microsoft 365 في Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) لجميع المراحل.
+يجب إكمال هذه المرحلة قبل الانتقال إلى [المرحلة 3: تكوين خوادم AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). راجع [نشر المصادقة الموحدة عالية التوفر ل Microsoft 365 في Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) لجميع المراحل.
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>إنشاء الأجهزة الظاهرية لوحدة التحكم بالمجال في Azure
 
@@ -36,17 +36,17 @@ ms.locfileid: "65098351"
   
 |**البند**|**اسم الجهاز الظاهري**|**صورة المعرض**|**نوع التخزين**|**الحد الأدنى للحجم**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![خط.](../media/Common-Images/TableLine.png) (وحدة التحكم بالمجال الأولى، مثال DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![خط.](../media/Common-Images/TableLine.png) (وحدة التحكم بالمجال الثانية، مثال DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![خط.](../media/Common-Images/TableLine.png) (خادم مزامنة الدليل، مثال DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![خط.](../media/Common-Images/TableLine.png) (أول خادم AD FS، مثال ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![خط.](../media/Common-Images/TableLine.png) (خادم AD FS الثاني، مثال ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![خط.](../media/Common-Images/TableLine.png) (أول خادم وكيل تطبيق ويب، مثال WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![خط.](../media/Common-Images/TableLine.png) (خادم وكيل تطبيق الويب الثاني، مثال WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![خط.](../media/Common-Images/TableLine.png) (وحدة التحكم بالمجال الأولى، مثال DC1)  <br/> |مركز بيانات Windows Server 2016  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![خط.](../media/Common-Images/TableLine.png) (وحدة التحكم بالمجال الثانية، مثال DC2)  <br/> |مركز بيانات Windows Server 2016  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![خط.](../media/Common-Images/TableLine.png) (خادم مزامنة الدليل، مثال DS1)  <br/> |مركز بيانات Windows Server 2016  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![خط.](../media/Common-Images/TableLine.png) (أول خادم AD FS، مثال ADFS1)  <br/> |مركز بيانات Windows Server 2016  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![خط.](../media/Common-Images/TableLine.png) (خادم AD FS الثاني، مثال ADFS2)  <br/> |مركز بيانات Windows Server 2016  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![خط.](../media/Common-Images/TableLine.png) (أول خادم وكيل تطبيق ويب، مثال WEB1)  <br/> |مركز بيانات Windows Server 2016  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![خط.](../media/Common-Images/TableLine.png) (خادم وكيل تطبيق الويب الثاني، مثال WEB2)  <br/> |مركز بيانات Windows Server 2016  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
- **الجدول M - الأجهزة الظاهرية للمصادقة الموحدة عالية التوفر Microsoft 365 في Azure**
+ **الجدول M - الأجهزة الظاهرية للمصادقة الموحدة عالية التوفر ل Microsoft 365 في Azure**
   
-للحصول على القائمة الكاملة لأحجام الأجهزة الظاهرية، راجع ["الأحجام" للأجهزة الظاهرية](/azure/virtual-machines/virtual-machines-windows-sizes).
+للحصول على القائمة الكاملة لأحجام الأجهزة الظاهرية، راجع ["الأحجام" للأجهزة الظاهرية](/azure/virtual-machines/sizes).
   
 تنشئ كتلة أوامر Azure PowerShell التالية الأجهزة الظاهرية لوحدتي التحكم بالمجال. حدد قيم المتغيرات، مع إزالة الأحرف \< and > . لاحظ أن كتلة أوامر Azure PowerShell هذه تستخدم قيما من الجداول التالية:
   
@@ -70,7 +70,7 @@ ms.locfileid: "65098351"
 عند توفير جميع القيم الصحيحة، قم بتشغيل الكتلة الناتجة في موجه Azure PowerShell أو في بيئة البرنامج النصي المتكامل ل PowerShell (ISE) على الكمبيوتر المحلي.
   
 > [!TIP]
-> لإنشاء كتل أوامر PowerShell جاهزة للتشغيل استنادا إلى الإعدادات المخصصة، استخدم [مصنف التكوين Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) هذا. 
+> لإنشاء كتل أوامر PowerShell جاهزة للتشغيل استنادا إلى الإعدادات المخصصة، استخدم [مصنف تكوين Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) هذا. 
 
 ```powershell
 # Set up variables common to both virtual machines
@@ -175,7 +175,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 استخدم عميل سطح المكتب البعيد الذي تختاره وقم بإنشاء اتصال سطح مكتب بعيد بالجهاز الظاهري لوحدة التحكم بالمجال الثانية. استخدم اسم الكمبيوتر أو DNS الخاص به على إنترانت وبيانات اعتماد حساب المسؤول المحلي.
   
-بعد ذلك، تحتاج إلى إضافة قرص بيانات إضافي إلى وحدة التحكم بالمجال الثانية مع هذا الأمر من موجه أوامر Windows PowerShell **على الجهاز الظاهري لوحدة التحكم بالمجال الثانية**:
+بعد ذلك، تحتاج إلى إضافة قرص البيانات الإضافي إلى وحدة التحكم بالمجال الثانية مع هذا الأمر من موجه أوامر Windows PowerShell **على الجهاز الظاهري لوحدة التحكم بالمجال الثانية**:
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -219,7 +219,7 @@ Restart-AzVM -ResourceGroupName $adrgName -Name $secondDCName
 
 لاحظ أننا نقوم بإعادة تشغيل وحدتي التحكم بالمجال بحيث لا يتم تكوينهما مع خوادم DNS المحلية كخوادم DNS. نظرا لأنهما خادما DNS بحد ذاتهما، فقد تم تكوينهما تلقائيا مع خوادم DNS المحلية كمرسلي DNS عند ترقيتهم إلى وحدات التحكم بالمجال.
   
-بعد ذلك، نحتاج إلى إنشاء موقع النسخ المتماثل ل Active Directory للتأكد من أن الخوادم في شبكة Azure الظاهرية تستخدم وحدات التحكم بالمجال المحلية. الاتصال إلى أي من وحدة التحكم بالمجال باستخدام حساب مسؤول المجال وتشغيل الأوامر التالية من موجه Windows PowerShell على مستوى المسؤول:
+بعد ذلك، نحتاج إلى إنشاء موقع النسخ المتماثل ل Active Directory للتأكد من أن الخوادم في شبكة Azure الظاهرية تستخدم وحدات التحكم بالمجال المحلية. الاتصال بأي من وحدة التحكم بالمجال باستخدام حساب مسؤول المجال وتشغيل الأوامر التالية من موجه Windows PowerShell على مستوى المسؤول:
   
 ```powershell
 $vnet="<Table V - Item 1 - Value column>"
@@ -245,7 +245,7 @@ Restart-Computer
   
 **المرحلة 2: وحدات التحكم بالمجال وخادم مزامنة الدليل للبنية الأساسية للمصادقة الموحدة عالية التوفر في Azure**
 
-![المرحلة 2 من قابلية الوصول العالية Microsoft 365 البنية الأساسية للمصادقة الموحدة في Azure مع وحدات التحكم بالمجال.](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![المرحلة 2 من البنية الأساسية للمصادقة الموحدة ل Microsoft 365 عالية التوفر في Azure مع وحدات التحكم بالمجال.](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>الخطوة التالية
 
@@ -253,8 +253,8 @@ Restart-Computer
   
 ## <a name="see-also"></a>انظر أيضاً
 
-[نشر مصادقة موحدة عالية التوفر Microsoft 365 في Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
+[نشر المصادقة الموحدة عالية التوفر ل Microsoft 365 في Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[هوية موحدة لبيئة التطوير/الاختبار Microsoft 365 الخاصة بك](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[هوية موحدة لبيئة التطوير/الاختبار ل Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [مركز الحلول والهندسة من Microsoft 365](../solutions/index.yml)
