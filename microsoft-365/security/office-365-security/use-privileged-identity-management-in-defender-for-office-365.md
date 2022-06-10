@@ -20,12 +20,12 @@ ms.custom:
 description: تعلم كيفية دمج Azure PIM من أجل منح وصول محدود في الوقت المناسب للمستخدمين للقيام بمهام امتيازات مرتفعة في Microsoft Defender لـ Office 365، ما يقلل من المخاطر على بياناتك.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e043a671b2416ba1c856c74a53206b06c180f13
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 32bc21130d98687f95af2ce6664c0759a716f362
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130659"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010223"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>إدارة الهويات المتميزة (PIM) ولماذا تستخدمه مع Microsoft Defender لـ Office 365
@@ -46,11 +46,11 @@ ms.locfileid: "65130659"
 
 ***الخطوة 1***. في وحدة تحكم Azure PIM لاشتراكك، أضف المستخدم (أليكس) إلى دور قارئ أمان Azure وقم بتكوين إعدادات الأمان المتعلقة بالتنشيط.
 
-1. سجل الدخول [إلى مركز إدارة Azure AD](https://aad.portal.azure.com/) وحدد **Azure Active DirectoryRoles** >  **والمسؤولين**.
+1. سجل الدخول إلى [مركز إدارة Azure AD](https://aad.portal.azure.com/) وحدد **أدوار ومسؤولين** **Azure Active Directory** > .
 2. حدد **"قارئ الأمان**" في قائمة الأدوار ثم **الإعدادات** >  **Edit**
 3. قم بتعيين '**أقصى مدة تنشيط (ساعات)**' إلى يوم عمل عادي و'عند التنشيط' لطلب **Azure MFA**.
 4. نظرا إلى أن هذا هو مستوى الامتياز العادي الذي يتمتع به أليكس للعمليات اليومية، فسنلغي تحديد **طلب مبررات > Update للتنشيط**.
-5. حدد **"Add AssignmentsNo** >  **member" المحدد** > تحديد الاسم أو كتابته للبحث عن العضو الصحيح.
+5. حدد **"إضافة تعيينات** > **لا يوجد عضو محدد** " > تحديد الاسم أو كتابته للبحث عن العضو الصحيح.
 6. انقر فوق الزر **"تحديد"** لاختيار العضو الذي تحتاج إلى إضافته لامتيازات PIM > انقر فوق **"التالي** " > عدم إجراء أي تغييرات على صفحة "إضافة واجب" (سيكون كل من نوع التعيين *"مؤهل"* و"المدة *المؤهلة بشكل دائم* " افتراضية) و" **تعيين**".
 
 سيظهر اسم المستخدم (هنا 'أليكس') ضمن التعيينات المؤهلة في الصفحة التالية، وهذا يعني أنه قادر على PIM في الدور مع الإعدادات التي تم تكوينها مسبقا.
@@ -75,18 +75,18 @@ ms.locfileid: "65130659"
 
 ### <a name="create-the-security-group-in-azure-ad-for-elevated-permissions"></a>إنشاء مجموعة الأمان في Azure AD للأذونات المرتفعة
 
-1. استعرض وصولا إلى [مركز إدارة Azure AD](https://aad.portal.azure.com/) وانتقل إلى **مجموعة Azure AD** >  **GroupsNew** > .
+1. استعرض وصولا إلى [مركز إدارة Azure AD](https://aad.portal.azure.com/) وانتقل إلى **مجموعة Azure AD** >  **Groups** > **الجديدة**.
 2. قم بتسمية مجموعة Azure AD الخاصة بك لتعكس الغرض منها، **ولا يلزم وجود مالكين أو أعضاء** في الوقت الحالي.
 3. **يمكن تعيين أدوار Azure AD إلى المجموعة** إلى **"نعم**".
 4. لا تقم بإضافة أي أدوار أو أعضاء أو مالكين، قم بإنشاء المجموعة.
-5. ارجع إلى المجموعة التي أنشأتها للتو، وحدد **Privileged AccessEnable** >  **Privileged Access**.
-6. ضمن المجموعة، حدد **تعييناتAdd للواجبات** >  **المؤهلة** > إضافة المستخدم الذي يحتاج إلى البحث & الإزالة كدور **العضو**.
+5. ارجع إلى المجموعة التي أنشأتها للتو، وحدد **Privileged Access** > **Enable Privileged Access**.
+6. ضمن المجموعة، حدد **"الواجبات** >  المؤهلة **" "إضافة تعيينات**" > إضافة المستخدم الذي يحتاج إلى "البحث & الإزالة" كدور **العضو.**
 7. تكوين **الإعدادات** داخل جزء الوصول المتميز الخاص بالمجموعة. اختر **تحرير** إعدادات دور **العضو**.
 8. قم بتغيير وقت التنشيط ليناسب مؤسستك. في هذا المثال، يتطلب *Azure MFA* *والتبرير* *ومعلومات البطاقة* قبل تحديد **Update**.
 
 ### <a name="nest-the-newly-created-security-group-into-the-role-group"></a>تضمين مجموعة الأمان التي تم إنشاؤها حديثا في مجموعة الأدوار
 
-1. [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) وقم بتشغيل الأمر التالي:
+1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) وقم بتشغيل الأمر التالي:
 
    ```powershell
    Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`

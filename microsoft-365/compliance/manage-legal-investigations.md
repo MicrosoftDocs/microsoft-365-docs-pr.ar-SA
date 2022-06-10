@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: استخدم حالات eDiscovery في مدخل توافق Microsoft Purview لإدارة التحقيق القانوني لمؤسستك.
-ms.openlocfilehash: 464996eb160eff520582e82ab87b74b4472f7a5d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f75d59e58ae51e5cb525044edb775c87b52686d1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077875"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010055"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>إدارة التحقيقات القانونية في Microsoft 365
 
@@ -46,7 +46,7 @@ ms.locfileid: "65077875"
 
 ### <a name="use-scripts-for-advanced-scenarios"></a>استخدام البرامج النصية للسيناريوهات المتقدمة
 
-مثل القسم السابق الذي أدرج البرامج النصية لسيناريوهات البحث في المحتوى، أنشأنا أيضا بعض البرامج النصية ل Security & Compliance Center PowerShell لمساعدتك على إدارة حالات eDiscovery.
+مثل القسم السابق الذي أدرج البرامج النصية لسيناريوهات البحث في المحتوى، أنشأنا أيضا بعض البرامج النصية Security & Compliance PowerShell لمساعدتك على إدارة حالات eDiscovery.
   
 - [إنشاء تقرير احتجاز eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md) يحتوي على معلومات حول كافة عمليات الاحتجاز المقترنة بحالات eDiscovery في مؤسستك.
 

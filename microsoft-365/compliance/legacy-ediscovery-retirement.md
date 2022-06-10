@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: سيتم إيقاف In-Place eDiscovery و In-Place e Hold (وPowerShell cmdlets المقابلة) في Exchange Online في النصف الأول من عام 2020. يتم أيضا إيقاف Search-Mailbox cmdlet وMicrosoft Purview eDiscovery (Premium) الإصدار 1.0 خلال نفس الفترة الزمنية.
-ms.openlocfilehash: 367b020a5804ac120f226962ea48a49b73dd70e6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 36883f7edae391ff3461d5d6c135112a4f058671
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094471"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012265"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>تقاعد أدوات eDiscovery القديمة
 
@@ -32,7 +32,7 @@ ms.locfileid: "65094471"
 
 نتيجة لوظيفة eDiscovery الجديدة والمحسنة هذه في مدخل التوافق، نقوم بحذف الميزات والوظائف التالية المتعلقة ب eDiscovery المتعلقة بالبحث عن محتوى البريد الإلكتروني في Exchange Online Microsoft 365:
 
-- [قوائم احتجاز في مكان eDiscovery](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) وفي [مكانها](/exchange/security-and-compliance/create-or-remove-in-place-holds) في مركز إدارة Exchange.
+- [eDiscovery موضعي](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) و["قوائم الاحتجاز الموضعية](/exchange/security-and-compliance/create-or-remove-in-place-holds)" في مركز إدارة Exchange.
 
 - أوامر cmdlets Exchange Online PowerShell التي تدعم In-Place eDiscovery و"In-Place Holds" (يتم تعريف أوامر cmdlets هذه بشكل جماعي على أنها أوامر cmdlets **-MailboxSearch*). يتضمن ذلك أوامر cmdlets التالية:
 
@@ -173,7 +173,7 @@ ms.locfileid: "65094471"
 
 وفقا للإشعار الأصلي الذي تم الإعلان عنه في 1 يوليو 2017 في مركز إدارة Exchange، يتم إيقاف وظيفة In-Place eDiscovery & Hold وcmdlets **-MailboxSearch المطابقة\***. توفر أوامر cmdlets هذه للمستخدمين القدرة على البحث عن محتوى علبة البريد باستمرار وتصديره للطلبات القانونية والتنظيمية والعامة.
 
-نظرا لأن هذه الإمكانات متوفرة الآن في [<span class="underline">مدخل التوافق</span>](./microsoft-365-compliance-center.md) Office 365 Security & Compliance Center PowerShell مع تحسين الأداء وقابلية التوسع، يجب عليك استخدام أوامر cmdlet المحسنة هذه. تتضمن [<span class="underline">\*</span>](/powershell/module/exchange/get-compliancecase)أوامر cmdlets هذه -ComplianceCase [<span class="underline">و-ComplianceSearch\*</span>](/powershell/module/exchange/get-compliancesearch) [<span class="underline">و-CaseHoldPolicy\*</span>](/powershell/module/exchange/get-caseholdpolicy) [<span class="underline">و-CaseHoldRule\*</span>](/powershell/module/exchange/get-caseholdrule) [<span class="underline">و-ComplianceSearchAction\*</span>](/powershell/module/exchange/get-compliancesearchaction).
+نظرا لأن هذه الإمكانات متوفرة الآن في [<span class="underline">مدخل التوافق</span>](./microsoft-365-compliance-center.md) والأمان Office 365 & Compliance PowerShell مع تحسين الأداء وقابلية التوسع، يجب عليك استخدام أوامر cmdlet المحسنة هذه. تتضمن [<span class="underline">\*</span>](/powershell/module/exchange/get-compliancecase)أوامر cmdlets هذه -ComplianceCase [<span class="underline">و-ComplianceSearch\*</span>](/powershell/module/exchange/get-compliancesearch) [<span class="underline">و-CaseHoldPolicy\*</span>](/powershell/module/exchange/get-caseholdpolicy) [<span class="underline">و-CaseHoldRule\*</span>](/powershell/module/exchange/get-caseholdrule) [<span class="underline">و-ComplianceSearchAction\*</span>](/powershell/module/exchange/get-compliancesearchaction).
 
 ### <a name="scope-of-affected-organizations"></a>نطاق المنظمات المتأثرة
 
@@ -254,7 +254,7 @@ ms.locfileid: "65094471"
 
 ## <a name="search-mailbox-cmdlet"></a>Search-Mailbox cmdlet
 
-يتم إيقاف أمر cmdlet **الخاص ب Search-Mailbox** في Exchange Online PowerShell كما تم الإعلان عنه في الأصل في تحذير في إخراج cmdlet بدءا من عام 2018. تم استخدام أمر cmdlet الخاص **ب Search-Mailbox** في الأصل للبحث في علبة بريد المستخدم وإزالة المحتوى الضار. نوصي بالبدء في استخدام **New-ComplianceSearch** و **New-ComplianceSearchAction** cmdlets في Office 365 Security & Compliance Center PowerShell للبحث عن المحتوى وإزالة المحتوى. للحصول على تجربة أمان مضمنة، توفر [<span class="underline">ميزات الأمان Microsoft 365</span>](../security/index.yml) حماية قوية من التهديدات للبريد الإلكتروني والعديد من خدمات Microsoft الأخرى.
+يتم إيقاف أمر cmdlet **الخاص ب Search-Mailbox** في Exchange Online PowerShell كما تم الإعلان عنه في الأصل في تحذير في إخراج cmdlet بدءا من عام 2018. تم استخدام أمر cmdlet الخاص **ب Search-Mailbox** في الأصل للبحث في علبة بريد المستخدم وإزالة المحتوى الضار. نوصي بالبدء في استخدام **New-ComplianceSearch** و **New-ComplianceSearchAction** cmdlets في Office 365 Security & Compliance PowerShell للبحث عن المحتوى وإزالة المحتوى. للحصول على تجربة أمان مضمنة، توفر [<span class="underline">ميزات الأمان Microsoft 365</span>](../security/index.yml) حماية قوية من التهديدات للبريد الإلكتروني والعديد من خدمات Microsoft الأخرى.
 
 ### <a name="scope-of-affected-organizations"></a>نطاق المنظمات المتأثرة
 
@@ -348,7 +348,7 @@ ms.locfileid: "65094471"
 
 لتحديد ما إذا كانت مؤسستك تستخدم eDiscovery (Premium) الإصدار 1.0:
 
-1. انتقل إلى مدخل التوافق، وحدد **eDiscoveryCore** > ، وافتح حالة eDiscovery (قياسي).<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
+1. انتقل إلى مدخل التوافق، وحدد **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>، وافتح حالة eDiscovery (قياسي).
 
 1. إذا رأيت زر **التبديل إلى eDiscovery (Premium**)، فسينقلك النقر فوقه إلى الإصدار 1.0 من eDiscovery (Premium)، الذي يتم إيقافه. لن تتأثر القدرة على إنشاء الحالات وإدارتها في eDiscovery (قياسي). يتم إيقاف القدرة على إضافة بيانات الحالة وتحليلها فقط في eDiscovery (Premium) الإصدار 1.0 (بالنقر فوق **التبديل إلى eDiscovery (Premium)**).
 
@@ -356,7 +356,7 @@ ms.locfileid: "65094471"
 
 للوصول إلى eDiscovery (Premium) v2.0:
 
-انتقل إلى مدخل التوافق، وحدد **eDiscoveryAdvanced** > ، <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**وافتح**</a> حالة eDiscovery (قياسي).
+انتقل إلى مدخل التوافق، وحدد **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>، وافتح حالة eDiscovery (قياسي).
 
 في هذا الوقت، نوصي بالبدء في نقل سير عمل eDiscovery إلى وظيفة eDiscovery الجديدة (Premium). إذا لزم الأمر، يمكنك أرشفة eDiscovery (Premium) 1.0 حالة عن طريق تصدير المحتوى وتخزينه دون اتصال. على الرغم من أنه سيظل بإمكانك الوصول إلى الإصدار 1.0 من eDiscovery (Premium) في الحالات الحالية حتى 31 ديسمبر 2020، إلا أن دعم Microsoft لن يوفر الدعم بعد 1 أكتوبر 2020. راجع المخطط الزمني التالي للحصول على مزيد من التفاصيل.
 

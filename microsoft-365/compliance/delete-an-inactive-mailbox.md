@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: عندما لا تعود بحاجة إلى الاحتفاظ بمحتويات علبة بريد غير نشطة Microsoft 365، يمكنك حذف علبة البريد غير النشطة بشكل دائم.
-ms.openlocfilehash: 640a118a2fc277b05edc181e19008836027dc468
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 1f45e5ce3aca79e4f5abbc13442876ecbb22e90c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772369"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017931"
 ---
 # <a name="delete-an-inactive-mailbox"></a>حذف علبة بريد غير نشطة
 
@@ -38,7 +38,7 @@ ms.locfileid: "65772369"
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>قبل حذف علبة بريد غير نشطة
 
-- يجب استخدام Exchange Online PowerShell لإزالة قوائم الاحتجاز من علبة بريد غير نشطة. لا يمكنك استخدام مركز إدارة Exchange (EAC) أو مدخل التوافق في Microsoft Purview لهذه الإجراءات. للحصول على إرشادات مفصلة خطوة بخطوة لاستخدام Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- يجب استخدام Exchange Online PowerShell لإزالة قوائم الاحتجاز من علبة بريد غير نشطة. لا يمكنك استخدام مركز إدارة Exchange (EAC) أو مدخل توافق Microsoft Purview لهذه الإجراءات. للحصول على إرشادات مفصلة خطوة بخطوة لاستخدام Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - يمكنك نسخ محتويات علبة بريد غير نشطة إلى علبة بريد أخرى قبل إزالة قائمة الاحتجاز وحذف علبة بريد غير نشطة. للحصول على التفاصيل، راجع [استعادة علبة بريد غير نشطة في Office 365](restore-an-inactive-mailbox.md).
 
@@ -118,7 +118,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### <a name="remove-an-inactive-mailbox-from-a-specific-location-retention-policy"></a>إزالة علبة بريد غير نشطة من نهج استبقاء موقع معين
 
-استخدم [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) لإزالة علبة بريد غير نشطة من نهج استبقاء صريح:
+استخدم [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) لإزالة علبة بريد غير نشطة من نهج استبقاء صريح:
 
 ```powershell
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: استخدم دليل مختبر الاختبار هذا لتمكين إدارة الوصول المتميز Microsoft 365 لبيئة اختبار المؤسسة.
-ms.openlocfilehash: 0c92cbd398e4c388fe3c5999c5e0aa9973c4ee06
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8520e4cf224164c62c10858e67359c0fa1a9fc85
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092084"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008430"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>إدارة الوصول المتميز Microsoft 365 لبيئة اختبار المؤسسة
 
@@ -45,8 +45,8 @@ ms.locfileid: "65092084"
   
 إذا كنت ترغب في تكوين إدارة الوصول المتميز في مؤسسة محاكاة، فاتبع الإرشادات [الواردة في مصادقة المرور](pass-through-auth-m365-ent-test-environment.md).
   
->[!NOTE]
->لا يتطلب اختبار إدارة الوصول المتميز بيئة اختبار المؤسسة المحاكاة، والتي تتضمن محاكاة إنترانت متصلة بالإنترنت ومزامنة الدليل لغاب خدمات مجال Active Directory. يتم توفيره هنا كخيار بحيث يمكنك اختبار إدارة الوصول المتميزة وتجربتها في بيئة تمثل مؤسسة نموذجية.
+> [!NOTE]
+> لا يتطلب اختبار إدارة الوصول المتميز بيئة اختبار المؤسسة المحاكاة، والتي تتضمن محاكاة إنترانت متصلة بالإنترنت ومزامنة الدليل لغاب خدمات مجال Active Directory. يتم توفيره هنا كخيار بحيث يمكنك اختبار إدارة الوصول المتميزة وتجربتها في بيئة تمثل مؤسسة نموذجية.
 
 ## <a name="phase-2-configure-privileged-access-management"></a>المرحلة 2: تكوين إدارة الوصول المتميز
 
@@ -54,11 +54,11 @@ ms.locfileid: "65092084"
 
 لإعداد الوصول المتميز واستخدامه في مؤسستك، نفذ الخطوات التالية.
 
-#### <a name="step-1-create-an-approvers-group"></a>[الخطوة 1: إنشاء مجموعة موافق](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
+### <a name="step-1-create-an-approvers-group"></a>[الخطوة 1: إنشاء مجموعة موافق](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 
 قبل البدء في استخدام الوصول المتميز، حدد من سيكون لديه سلطة الموافقة على الطلبات الواردة للوصول إلى المهام المرتفعة والمتميزة. يمكن لجميع المستخدمين الذين هم جزء من مجموعة الموافقين الموافقة على طلبات الوصول. لاستخدام الوصول المتميز، يجب إنشاء مجموعة أمان ممكنة للبريد في Microsoft 365. في بيئة الاختبار الخاصة بك، قم بتسمية مجموعة الأمان الجديدة "الموافقون على الوصول المتميز" وأضف "المستخدم 3" الذي تم إنشاؤه مسبقا في خطوات دليل مختبر الاختبار السابقة.
 
-#### <a name="step-2-enable-privileged-access"></a>[الخطوة 2: تمكين الوصول المتميز](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
+### <a name="step-2-enable-privileged-access"></a>[الخطوة 2: تمكين الوصول المتميز](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
 يجب تشغيل الوصول المتميز بشكل صريح في Microsoft 365 مع مجموعة الموافق الافتراضية، ويجب أن يتضمن مجموعة من حسابات النظام التي تريد استبعادها من التحكم في الوصول إلى إدارة الوصول المتميز. تأكد من تمكين الوصول المتميز في مؤسستك قبل بدء المرحلة 3 من هذا الدليل.
 
@@ -68,24 +68,28 @@ ms.locfileid: "65092084"
 
 ### <a name="test-the-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>اختبار القدرة على تنفيذ مهمة غير معرفة في نهج وصول متميز
 
-أولا، اتصل Exchange Management PowerShell باستخدام بيانات اعتماد مستخدم تم تكوينها مع دور Exchange Role Management في بيئة الاختبار الخاصة بك ومحاولة إنشاء قاعدة دفتر يومية جديدة. لم يتم تعريف مهمة [New-JournalRule](/powershell/module/exchange/new-journalrule) حاليا في نهج وصول متميز لمؤسستك.
+أولا، حاول إنشاء قاعدة دفتر يومية جديدة في Exchange Online PowerShell. لم يتم تعريف مهمة [New-JournalRule](/powershell/module/exchange/new-journalrule) حاليا في نهج وصول متميز لمؤسستك.
 
-1. على الكمبيوتر المحلي، افتح Exchange Online Remote PowerShell Module في **Microsoft Corporation** >  **Microsoft Exchange Online Remote PowerShell Module** باستخدام بيانات الاعتماد مع دور Exchange Role Management لبيئة الاختبار الخاصة بك.
-2. في Exchange Management PowerShell، قم بإنشاء قاعدة دفتر يومية جديدة لمؤسستك:
+1. على الكمبيوتر المحلي، [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) باستخدام بيانات الاعتماد مع دور Exchange Role Management لبيئة الاختبار الخاصة بك.
+2. إنشاء قاعدة دفتر يومية جديدة لمؤسستك عن طريق تشغيل الأمر التالي:
 
-   ```ExchangeManagementPowerShell
+   ```PowerShell
    New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
    ```
 
-3. عرض أن قاعدة دفتر اليومية الجديدة تم إنشاؤها بنجاح في Exchange Management PowerShell.
+3. تحقق من إنشاء قاعدة دفتر اليومية الجديدة بنجاح:
+
+   ```PowerShell
+   Get-JournalRule -Identity "JournalRule1"
+   ```
 
 ### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>إنشاء نهج وصول متميز جديد للمهمة New-JournalRule
 
->[!NOTE]
->إذا لم تكن قد أكملت بالفعل الخطوتي 1 و2 من المرحلة 2 من هذا الدليل، فتأكد من اتباع الخطوات لإنشاء مجموعة موافق باسم "الموافقون على الوصول المتميز" لتمكين الوصول المتميز في بيئة الاختبار الخاصة بك.
+> [!NOTE]
+> إذا لم تكن قد أكملت بالفعل الخطوتي 1 و2 من المرحلة 2 من هذا الدليل، فتأكد من اتباع الخطوات لإنشاء مجموعة موافق باسم "الموافقون على الوصول المتميز" لتمكين الوصول المتميز في بيئة الاختبار الخاصة بك.
 
 1. سجل الدخول إلى [مركز مسؤولي Microsoft 365](https://admin.microsoft.com) باستخدام بيانات الاعتماد باستخدام دور Exchange Role Management لبيئة الاختبار الخاصة بك.
-2. في مركز الإدارة، انتقل إلى **الوصول الإعدادات** >  Security **&** **PrivacyPrieged** > .
+2. في مركز الإدارة، انتقل إلى **الإعدادات** >  الوصول المتميز للأمان **& الخصوصية** > .
 3. حدد **إدارة نهج الوصول والطلبات**.
 4. حدد **تكوين النهج**، ثم حدد **"إضافة نهج**".
 5. من الحقول المنسدلة، حدد القيم التالية أو أدخلها:
@@ -96,17 +100,17 @@ ms.locfileid: "65092084"
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>اختبار متطلبات الموافقة للمهمة New-JournalRule المحددة في نهج الوصول المتميز
 
-1. على الكمبيوتر المحلي، افتح Exchange Online Remote PowerShell Module في **Microsoft Corporation** >  **Microsoft Exchange Online Remote PowerShell Module** باستخدام بيانات الاعتماد مع دور Exchange Role Management لبيئة الاختبار الخاصة بك.
+1. على الكمبيوتر المحلي، [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) باستخدام بيانات الاعتماد مع دور Exchange Role Management لبيئة الاختبار الخاصة بك.
 
-2. في Exchange Management PowerShell، قم بإنشاء قاعدة دفتر يومية جديدة لمؤسستك:
+2. في Exchange Online PowerShell، قم بإنشاء قاعدة دفتر يومية جديدة لمؤسستك:
 
-   ```ExchangeManagementPowerShell
+   ```PowerShell
    New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
    ```
 
-3. عرض الخطأ "أذونات غير كافية" في Exchange Management PowerShell:
+3. عرض الخطأ "أذونات غير كافية" في Exchange Online PowerShell:
 
-   ```ExchangeManagementPowerShell
+   ```PowerShell
    Insufficient permissions. Please raise an elevated access request for this task.
        + CategoryInfo          : NotSpecified: (:) [], LocalizedException
        + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
@@ -118,7 +122,7 @@ ms.locfileid: "65092084"
 
 1. سجل الدخول إلى [مركز مسؤولي Microsoft 365](https://admin.microsoft.com) باستخدام بيانات الاعتماد باستخدام دور Exchange Role Management لبيئة الاختبار الخاصة بك.
 
-2. في مركز الإدارة، انتقل إلى **الوصول الإعدادات** >  Security **&** **PrivacyPrieged** > .
+2. في مركز الإدارة، انتقل إلى **الإعدادات** >  الوصول المتميز للأمان **& الخصوصية** > .
 
 3. حدد **إدارة نهج الوصول والطلبات**.
 
@@ -132,7 +136,7 @@ ms.locfileid: "65092084"
 
 1. سجل الدخول إلى [مركز مسؤولي Microsoft 365](https://admin.microsoft.com) باستخدام بيانات الاعتماد للمستخدم 3 في بيئة الاختبار (عضو في مجموعة أمان "الموافقون على الوصول المتميز" في بيئة الاختبار).
 
-2. في مركز الإدارة، انتقل إلى **الوصول الإعدادات** >  Security **&** **PrivacyPrieged** > .
+2. في مركز الإدارة، انتقل إلى **الإعدادات** >  الوصول المتميز للأمان **& الخصوصية** > .
 
 3. حدد **إدارة نهج الوصول والطلبات**.
 
@@ -140,15 +144,19 @@ ms.locfileid: "65092084"
 
 ### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>اختبار إنشاء قاعدة دفتر يومية جديدة مع الموافقة على الوصول المتميز للمهمة New-JournalRule
 
-1. على الكمبيوتر المحلي، افتح Exchange Online Remote PowerShell Module في **Microsoft Corporation** >  **Microsoft Exchange Online Remote PowerShell Module** باستخدام بيانات الاعتماد مع دور Exchange Role Management لبيئة الاختبار الخاصة بك.
+1. على الكمبيوتر المحلي، [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) باستخدام بيانات الاعتماد مع دور Exchange Role Management لبيئة الاختبار الخاصة بك.
 
-2. في Exchange Management PowerShell، قم بإنشاء قاعدة دفتر يومية جديدة لمؤسستك:
+2. في Exchange Online PowerShell، قم بإنشاء قاعدة دفتر يومية جديدة لمؤسستك:
 
-   ```ExchangeManagementPowerShell
+   ```PowerShell
    New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
    ```
 
-3. عرض أن قاعدة دفتر اليومية الجديدة تم إنشاؤها بنجاح في Exchange Management PowerShell.
+3. تحقق من إنشاء قاعدة دفتر اليومية الجديدة بنجاح:
+
+   ```PowerShell
+   Get-JournalRule -Identity "JournalRule2"
+   ```
 
 ## <a name="next-step"></a>الخطوة التالية
 

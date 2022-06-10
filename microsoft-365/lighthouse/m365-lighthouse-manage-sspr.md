@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,22 +17,22 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية إدارة إعادة تعيين كلمة مرور الخدمة الذاتية.
-ms.openlocfilehash: 4d618eb80dfd4a37ad5548de997b3d551bcbbf85
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0af624e93ae9321834e147f829a87f09c36dedf7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022350"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017665"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>إدارة إعادة تعيين كلمة مرور الخدمة الذاتية في Microsoft 365 Lighthouse
 
-يتيح Microsoft 365 Lighthouse للشركاء إدارة إعادة تعيين كلمة مرور الخدمة الذاتية (SSPR) ل Azure Active Directory (Azure AD). يمنح SSPR المستخدمين القدرة على تغيير كلمة المرور الخاصة بهم أو إعادة تعيينها دون مشاركة المسؤول أو مكتب المساعدة. إذا تم تأمين حساب المستخدم أو نسي كلمة المرور الخاصة به، يمكنه اتباع المطالبات لإلغاء حظر نفسه والعودة إلى العمل. تقلل هذه القدرة من مكالمات مكتب المساعدة وفقدان الإنتاجية عندما لا يتمكن المستخدم من تسجيل الدخول إلى جهازه أو تطبيق.
+يتيح Microsoft 365 Lighthouse للشركاء إدارة Azure Active Directory (Azure AD) إعادة تعيين كلمة مرور الخدمة الذاتية (SSPR). يمنح SSPR المستخدمين القدرة على تغيير كلمة المرور الخاصة بهم أو إعادة تعيينها دون مشاركة المسؤول أو مكتب المساعدة. إذا تم تأمين حساب المستخدم أو نسي كلمة المرور الخاصة به، يمكنه اتباع المطالبات لإلغاء حظر نفسه والعودة إلى العمل. تقلل هذه القدرة من مكالمات مكتب المساعدة وفقدان الإنتاجية عندما لا يتمكن المستخدم من تسجيل الدخول إلى جهازه أو تطبيق.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
 يجب استيفاء الشروط التالية قبل أن يظهر المستأجر في القائمة:
 
-- يجب أن يكون لدى مستأجر العميل ترخيص Premium Azure AD لكل مستخدم. لمزيد من المعلومات حول التراخيص التي تدعم إعادة تعيين كلمة [مرور الخدمة الذاتية، راجع متطلبات الترخيص لإعادة تعيين كلمة مرور الخدمة الذاتية ل Azure Active Directory](/azure/active-directory/authentication/concept-sspr-licensing).
+- يجب أن يكون لدى مستأجر العميل ترخيص Azure AD Premium لكل مستخدم. لمزيد من المعلومات حول التراخيص التي تدعم إعادة تعيين كلمة [مرور الخدمة الذاتية، راجع متطلبات الترخيص لإعادة تعيين كلمة مرور الخدمة الذاتية ل Azure Active Directory](/azure/active-directory/authentication/concept-sspr-licensing).
 
 - يجب أن يكون مستأجر العميل نشطا داخل Lighthouse. لمعرفة كيفية تحديد ما إذا كان المستأجر نشطا، راجع [نظرة عامة على صفحة Windows 365 (أجهزة الكمبيوتر السحابية) في Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
 

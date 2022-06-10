@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: في هذه المقالة، ستتعرف على أفضل الممارسات لمشاركة الملفات والمجلدات مع مستخدمين غير مصادقين.
-ms.openlocfilehash: bd153d34e6e9ddc4a4b627a79df90286661353d3
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 783dfce365b34b694f048c7e65e3158678bea244
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128577"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017975"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>أفضل الممارسات لمشاركة الملفات والمجلدات مع مستخدمين غير مصادقين
 
@@ -87,7 +87,8 @@ Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTe
 
 يمكنك التخفيف من هذه المخاطر عن طريق تغيير إعداد الارتباط الافتراضي إلى ارتباط يعمل فقط للأشخاص داخل مؤسستك. سيتعين على المستخدمين الذين يرغبون في المشاركة مع أشخاص غير مصادقين تحديد هذا الخيار على وجه التحديد.
 
-لتعيين ارتباط مشاركة الملفات والمجلدات الافتراضي للمؤسسة
+لتعيين ارتباط مشاركة الملفات والمجلدات الافتراضي للمؤسسة:
+
 1. افتح مركز إدارة SharePoint، وحدد <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**"مشاركة**</a>".
 1. ضمن **ارتباطات "ملف" و"مجلد**"، حدد **"الأشخاص فقط" في مؤسستك**.
 
@@ -95,7 +96,7 @@ Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTe
 
 1. حدد **"حفظ"**
 
-لتعيين ارتباط مشاركة الملفات والمجلدات الافتراضي لموقع معين
+لتعيين ارتباط مشاركة الملفات والمجلدات الافتراضي لموقع معين:
 
 1. افتح مركز إدارة SharePoint، وقم بتوسيع **المواقع**، ثم حدد <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**المواقع النشطة**</a>.
 1. حدد الموقع الذي تريد تغييره، ثم حدد **"مشاركة**".
@@ -109,7 +110,8 @@ Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTe
 
 يمكنك استخدام [Microsoft Purview Data Loss Prevention (DLP)](../compliance/dlp-learn-about-dlp.md) لمنع المشاركة غير المصادق عليها للمحتوى الحساس. يمكن أن يتخذ منع فقدان البيانات إجراء استنادا إلى وصف حساسية الملف أو تسمية الاستبقاء أو المعلومات الحساسة في الملف نفسه.
 
-لإنشاء قاعدة DLP
+لإنشاء قاعدة DLP:
+
 1. في مركز إدارة Microsoft Purview، انتقل إلى [صفحة منع فقدان البيانات](https://compliance.microsoft.com/datalossprevention).
 2. انقر فوق **"إنشاء نهج**".
 3. اختر **"مخصص** " وانقر فوق **"التالي**".
@@ -133,18 +135,11 @@ Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTe
 
 ## <a name="protect-against-malicious-files"></a>الحماية من الملفات الضارة
 
-عندما تسمح للمستخدمين المجهولين بتحميل الملفات، فإنك تتعرض لخطر متزايد من قيام شخص ما بتحميل ملف ضار. في Microsoft 365، يمكنك استخدام ميزة *المرفقات خزينة* في Defender لـ Office 365 لمسح الملفات التي تم تحميلها تلقائيا والملفات المعزولة غير الآمنة.
+عندما تسمح للمستخدمين المجهولين بتحميل الملفات، فإنك تتعرض لخطر متزايد من قيام شخص ما بتحميل ملف ضار. في المؤسسات التي تحتوي على تراخيص Microsoft Defender لـ Office 365 الخطة 1 أو الخطة 2 (على سبيل المثال، في Microsoft 365 E5 أو كوظيفة إضافية)، يمكنك استخدام ميزة *خزينة المرفقات* لاستبدال الملفات التي تم تحميلها في بيئة افتراضية لتحديد آلية الوصول، وعزل الملفات التي تم العثور على أنها غير آمنة.
 
-لتشغيل المرفقات الآمنة
-1. افتح [صفحة مرفقات خزينة ATP](https://protection.office.com/safeattachmentv2) في مركز إدارة الأمان والتوافق.
-2. انقر فوق **الإعدادات العمومية**.
-3. قم بتشغيل ATP SharePoint OneDrive Microsoft Teams.
+للحصول على الإرشادات، راجع ["تشغيل مرفقات خزينة" SharePoint و"OneDrive" و"Microsoft Teams](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md)".
 
-   ![لقطة شاشة لإعداد المرفقات الآمنة في مركز الأمان والتوافق.](../media/safe-attachments-setting.png)
-
-4. قم بتشغيل خزينة المستندات أيضا بشكل اختياري، ثم انقر فوق **"حفظ"**
-
-راجع [ATP ل SharePoint OneDrive Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) وتشغيل [ATP SharePoint OneDrive Microsoft Teams للحصول على](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md) إرشادات إضافية.
+إذا كان لديك تراخيص أمان Microsoft 365 A5 أو E5، يمكنك أيضا تشغيل (واستخدام) ميزة *مستندات خزينة*. لمزيد من المعلومات، راجع [خزينة المستندات في Microsoft 365 A5 أو أمان E5](../security/office-365-security/safe-docs.md).
 
 ## <a name="add-copyright-information-to-your-files"></a>إضافة معلومات حقوق النشر إلى ملفاتك
 

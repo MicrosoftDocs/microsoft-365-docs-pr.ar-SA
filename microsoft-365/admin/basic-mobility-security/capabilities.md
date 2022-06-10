@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: يساعدك Basic Mobility and Security على تأمين الأجهزة المحمولة وإدارتها من خلال النهج التي تتحكم في الوصول إلى المؤسسة Microsoft 365 البريد الإلكتروني والمستندات.
-ms.openlocfilehash: e63f052e0beebe93f9faa27b54725dbac2a9443f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 55c2a197959e55e2a74f8691b7181f8ee91b0ea9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435844"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010157"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>إمكانات التنقل والأمان الأساسيين
 
@@ -110,7 +110,7 @@ ms.locfileid: "65435844"
 
 |إعداد الاسم|دائره الرقابه الداخليه|الروبوت|Samsung Knox|
 |---|---|---|---|
-|طلب تشفير البيانات على <sup>الأجهزة1</sup>|لا|نعم|نعم|
+|طلب تشفير البيانات على الأجهزة<sup>1</sup>|لا|نعم|نعم|
 
 <sup>1</sup> باستخدام Samsung Knox، يمكنك أيضا طلب التشفير على بطاقات التخزين.
 
@@ -163,7 +163,7 @@ ms.locfileid: "65435844"
 
 ## <a name="additional-settings"></a>إعدادات إضافية
 
-يمكنك تعيين إعدادات النهج الإضافية التالية باستخدام Security & Compliance Center PowerShell cmdlets. لمزيد من المعلومات، راجع [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
+يمكنك تعيين إعدادات النهج الإضافية التالية باستخدام Security & Compliance PowerShell cmdlets. لمزيد من المعلومات، راجع [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
 |إعداد الاسم|دائره الرقابه الداخليه|الروبوت|
 |---|---|---|
@@ -230,7 +230,7 @@ ms.locfileid: "65435844"
 
 ## <a name="remotely-wipe-a-mobile-device"></a>مسح جهاز محمول عن بعد
 
-في حالة فقدان جهاز أو سرقته، يمكنك إزالة البيانات التنظيمية الحساسة والمساعدة في منع الوصول إلى موارد المؤسسة Microsoft 365 عن طريق إجراء مسح من **إدارة** منع فقدان  > **البيانات مدخل التوافق في Microsoft Purview** >  **Data**. يمكنك إجراء مسح انتقائي لإزالة بيانات المؤسسة فقط أو مسح كامل لحذف كافة المعلومات من جهاز واستعادتها إلى إعدادات المصنع الخاصة به.
+في حالة فقدان جهاز أو سرقته، يمكنك إزالة البيانات التنظيمية الحساسة والمساعدة في منع الوصول إلى موارد المؤسسة Microsoft 365 من خلال إجراء مسح من **إدارة جهاز** **منع** >  فقدان البيانات في **مدخل Microsoft** >  Purview. يمكنك إجراء مسح انتقائي لإزالة بيانات المؤسسة فقط أو مسح كامل لحذف كافة المعلومات من جهاز واستعادتها إلى إعدادات المصنع الخاصة به.
 
 لمزيد من المعلومات، راجع [مسح جهاز محمول في Basic Mobility and Security](wipe-mobile-device.md).
 

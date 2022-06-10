@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم قفل الاحتفاظ مع نهج الاستبقاء ونهج تسمية الاستبقاء لمساعدتك على تلبية المتطلبات التنظيمية والحماية ضد المسؤولين المملوك.
-ms.openlocfilehash: 6ee7937bad487fcac8d1ee15483becfb276d9579
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 228d4cd1a7778b5352df6d10d31b7e4c25af915f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922208"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016273"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>استخدام قفل الاحتفاظ لتقييد التغييرات على نهج الاستبقاء ونهج تسمية الاستبقاء
 
->*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -58,7 +58,7 @@ ms.locfileid: "65922208"
 
 تدعم جميع نهج الاستبقاء مع أي تكوين قفل الاحتفاظ. لتطبيق "تأمين الاحتفاظ" على نهج تسمية الاستبقاء، يجب أن يحتوي فقط على تسميات تضع علامة على العناصر كسجلات تنظيمية.
 
-1. [الاتصال ب Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. ابحث عن اسم النهج الذي تريد تأمينه عن طريق تشغيل [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy). على سبيل المثال:
     

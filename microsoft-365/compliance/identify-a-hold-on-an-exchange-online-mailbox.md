@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: تعرف على كيفية تحديد أنواع الاحتجاز المختلفة التي يمكن وضعها على علبة بريد Exchange Online في Microsoft 365.
-ms.openlocfilehash: 4b4ff5064f59285412c4c20108df9dbbae992f7e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f38376fe3d7517b877239a9bb6add5fbf9952d59
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097745"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017887"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>كيفية تحديد نوع قائمة الاحتجاز الموضوعة على علبة بريد Exchange Online
 
@@ -130,9 +130,9 @@ Get-OrganizationConfig | FL InPlaceHolds
 
 ### <a name="ediscovery-holds"></a>قوائم احتجاز eDiscovery
 
-قم بتشغيل الأوامر التالية في Security & Compliance Center PowerShell لتحديد قائمة احتجاز eDiscovery التي تم تطبيقها على علبة البريد. استخدم GUID (دون تضمين بادئة UniH) للاحتفاظ eDiscovery الذي حددته في الخطوة 1. 
+قم بتشغيل الأوامر التالية في Security & Compliance PowerShell لتحديد قائمة احتجاز eDiscovery التي يتم تطبيقها على علبة البريد. استخدم GUID (دون تضمين بادئة UniH) للاحتفاظ eDiscovery الذي حددته في الخطوة 1. 
 
-للاتصال ب PowerShell ل Security & Compliance Center، راجع [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+للاتصال ب Security & Compliance PowerShell، راجع [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ينشئ الأمر الأول متغيرا يحتوي على معلومات حول قائمة الاحتجاز. يتم استخدام هذا المتغير في الأوامر الأخرى. يعرض الأمر الثاني اسم حالة eDiscovery المقترنة بها. يعرض الأمر الثالث اسم قائمة الاحتجاز وقائمة بعلب البريد التي تنطبق عليها قائمة الاحتجاز.
 
@@ -163,7 +163,7 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name,SourceMailboxes
 
 ### <a name="microsoft-365-retention-policies"></a>نهج الاستبقاء Microsoft 365
 
-[الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) وقم بتشغيل الأمر التالي لتحديد نهج استبقاء Microsoft 365 (على مستوى المؤسسة أو الموقع المحدد) المطبق على علبة البريد. استخدم GUID (لا يتضمن بادئة mbx أو skp أو grp أو لاحقة الإجراء) التي حددتها في الخطوة 1.
+[الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) وقم بتشغيل الأمر التالي لتحديد نهج استبقاء Microsoft 365 (على مستوى المؤسسة أو الموقع المحدد) المطبق على علبة البريد. استخدم GUID (لا يتضمن بادئة mbx أو skp أو grp أو لاحقة الإجراء) التي حددتها في الخطوة 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
@@ -292,7 +292,7 @@ $ht.MailboxLog | Convertfrom-Json
 
 بعد تحديد قوائم الاحتجاز التي يتم تطبيقها على علبة بريد، يمكنك تنفيذ مهام مثل تغيير مدة الاحتجاز أو إزالة قائمة الاحتجاز مؤقتا أو بشكل دائم أو استبعاد علبة بريد غير نشطة من نهج استبقاء Microsoft 365. لمزيد من المعلومات حول تنفيذ المهام المتعلقة بعمليات الاحتجاز، راجع أحد المواضيع التالية:
 
-- قم بتشغيل الأمر [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) في [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) لاستبعاد علبة بريد من نهج استبقاء Microsoft 365 على مستوى المؤسسة. يمكن استخدام هذا الأمر فقط لنهج الاستبقاء حيث تساوي `All`قيمة خاصية *ExchangeLocation*.
+- قم بتشغيل الأمر [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) في [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) لاستبعاد علبة بريد من نهج استبقاء Microsoft 365 على مستوى المؤسسة. يمكن استخدام هذا الأمر فقط لنهج الاستبقاء حيث تساوي `All`قيمة خاصية *ExchangeLocation*.
 
 - [تغيير مدة الانتظار لعلبة بريد غير نشطة](change-the-hold-duration-for-an-inactive-mailbox.md)
 

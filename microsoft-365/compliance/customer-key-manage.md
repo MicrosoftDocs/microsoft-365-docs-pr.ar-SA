@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: بعد إعداد مفتاح العميل، تعرف على كيفية إدارته عن طريق استعادة مفاتيح AKV، وإدارة الأذونات وإنشاء نهج تشفير البيانات وتعيينها.
-ms.openlocfilehash: a1fab2694be866acd6035af90929b5ab690da031
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 08fae19a5f0f27ff530c734c46453f885ea9043e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663459"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015737"
 ---
 # <a name="manage-customer-key"></a>إدارة مفتاح العميل
 
@@ -30,8 +30,8 @@ ms.locfileid: "65663459"
 قبل البدء، تأكد من إكمال المهام المطلوبة لإعداد مفتاح العميل. للحصول على معلومات، راجع [إعداد مفتاح العميل](customer-key-set-up.md). لإنشاء DEP، تحتاج إلى معرفات الموارد المنتظمة Key Vault التي حصلت عليها أثناء الإعداد. للحصول على معلومات، راجع [الحصول على URI لكل مفتاح Key Vault Azure](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 لإنشاء DEP متعدد حمل العمل، اتبع الخطوات التالية:
-  
-1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام أو مسؤول التوافق في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) في نافذة Windows PowerShell.
+
+1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام أو مسؤول التوافق في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. لإنشاء DEP، استخدم New-M365DataAtRestEncryptionPolicy cmdlet.
 
@@ -73,15 +73,15 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Contoso_Glob
 
 ## <a name="create-a-dep-for-use-with-exchange-online-mailboxes"></a>إنشاء DEP للاستخدام مع علب بريد Exchange Online
 
-قبل البدء، تأكد من إكمال المهام المطلوبة لإعداد Azure Key Vault. للحصول على معلومات، راجع [إعداد مفتاح العميل](customer-key-set-up.md). ستكمل هذه الخطوات عن طريق الاتصال عن بعد Exchange Online باستخدام Windows PowerShell.
+قبل البدء، تأكد من إكمال المهام المطلوبة لإعداد Azure Key Vault. للحصول على معلومات، راجع [إعداد مفتاح العميل](customer-key-set-up.md). سوف تكمل هذه الخطوات في Exchange Online PowerShell.
 
 يقترن DEP بمجموعة من المفاتيح المخزنة في azure Key Vault. يمكنك تعيين DEP إلى علبة بريد في Microsoft 365. ثم سيستخدم Microsoft 365 المفاتيح المحددة في النهج لتشفير علبة البريد. لإنشاء DEP، تحتاج إلى معرفات الموارد المنتظمة Key Vault التي حصلت عليها أثناء الإعداد. للحصول على معلومات، راجع [الحصول على URI لكل مفتاح Key Vault Azure](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
 
 تذكر! عند إنشاء DEP، يمكنك تحديد مفتاحين في اثنين من Azure Key Vaults مختلفة. أنشئ هذه المفاتيح في منطقتين منفصلتين من مناطق Azure لضمان التكرار الجغرافي.
 
 لإنشاء DEP لاستخدامه مع علبة بريد، اتبع الخطوات التالية:
-  
-1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات مسؤول عام أو مسؤول Exchange Online في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) في نافذة Windows PowerShell.
+
+1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات مسؤول عام أو مسؤول Exchange Online في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. لإنشاء DEP، استخدم أمر cmdlet New-DataEncryptionPolicy بكتابة الأمر التالي.
 
@@ -100,7 +100,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Contoso_Glob
    - *KeyVaultURI2* هو URI للمفتاح الثاني في النهج. على سبيل المثال، <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. افصل معرفات الموارد المنتظمة (URIs) عن طريق فاصلة ومساحة.
 
    على سبيل المثال:
-  
+
    ```powershell
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault02.vault.azure.net/keys/USA_key_01, https://contoso_CentralUSvault02.vault.azure.net/keys/USA_Key_02
    ```
@@ -110,7 +110,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Contoso_Glob
 ### <a name="assign-a-dep-to-a-mailbox"></a>تعيين DEP إلى علبة بريد
 
 قم بتعيين DEP إلى علبة بريد باستخدام cmdlet Set-Mailbox. بمجرد تعيين النهج، يمكن Microsoft 365 تشفير علبة البريد باستخدام المفتاح المحدد في DEP.
-  
+
 ```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
@@ -128,16 +128,16 @@ Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
 ## <a name="create-a-dep-for-use-with-sharepoint-online-onedrive-for-business-and-teams-files"></a>إنشاء DEP للاستخدام مع ملفات SharePoint Online و OneDrive for Business و Teams
 
 قبل البدء، تأكد من إكمال المهام المطلوبة لإعداد Azure Key Vault. للحصول على معلومات، راجع [إعداد مفتاح العميل](customer-key-set-up.md).
-  
-لإعداد مفتاح العميل لملفات SharePoint Online و OneDrive for Business و Teams، أكمل هذه الخطوات عن طريق الاتصال عن بعد ب SharePoint Online باستخدام Windows PowerShell.
-  
+
+لإعداد مفتاح العميل لملفات SharePoint Online و OneDrive for Business و Teams، أكمل هذه الخطوات في SharePoint Online PowerShell.
+
 يمكنك إقران DEP بمجموعة من المفاتيح المخزنة في Key Vault Azure. يمكنك تطبيق DEP على جميع بياناتك في موقع جغرافي واحد، يسمى أيضا جغرافيا. إذا كنت تستخدم ميزة متعددة المناطق الجغرافية من Office 365، يمكنك إنشاء DEP واحد لكل جغرافيا مع القدرة على استخدام مفاتيح مختلفة لكل جغرافيا. إذا كنت لا تستخدم جغرافيا متعددا، يمكنك إنشاء DEP واحد في مؤسستك لاستخدامه مع ملفات SharePoint Online و OneDrive for Business و Teams. تستخدم Microsoft 365 المفاتيح المحددة في DEP لتشفير بياناتك في تلك المنطقة الجغرافية. لإنشاء DEP، تحتاج إلى معرفات الموارد المنتظمة Key Vault التي حصلت عليها أثناء الإعداد. للحصول على معلومات، راجع [الحصول على URI لكل مفتاح Key Vault Azure](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key).
-  
+
 تذكر! عند إنشاء DEP، يمكنك تحديد مفتاحين في اثنين من Azure Key Vaults مختلفة. أنشئ هذه المفاتيح في منطقتين منفصلتين من مناطق Azure لضمان التكرار الجغرافي.
-  
-لإنشاء DEP، تحتاج إلى الاتصال عن بعد SharePoint Online باستخدام Windows PowerShell.
-  
-1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام في مؤسستك، [الاتصال إلى SharePoint PowerShell عبر الإنترنت](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps).
+
+لإنشاء DEP، تحتاج إلى استخدام SharePoint Online PowerShell.
+
+1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام في مؤسستك، [اتصل SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps).
 
 2. في Microsoft Office SharePoint Online Management Shell، قم بتشغيل Register-SPODataEncryptionPolicy cmdlet كما يلي:
 
@@ -146,7 +146,7 @@ Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
    ```
 
    على سبيل المثال:
-  
+
    ```powershell
    Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a'
    ```
@@ -186,7 +186,7 @@ Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>تحديد DEP المعين إلى علبة بريد
 
 لتحديد DEP المعين إلى علبة بريد، استخدم Get-MailboxStatistics cmdlet. يقوم cmdlet بإرجاع معرف فريد (GUID).
-  
+
 1. باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
    ```powershell
@@ -194,9 +194,9 @@ Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
    ```
 
    حيث يحدد *GeneralMailboxOrMailUserIdParameter* علبة بريد ويرجع DataEncryptionPolicyID GUID الخاص ب DEP. لمزيد من المعلومات حول Get-MailboxStatistics cmdlet، راجع [Get-MailboxStatistics](/powershell/module/exchange/get-mailboxstatistics).
-  
+
 2. قم بتشغيل Get-DataEncryptionPolicy cmdlet لمعرفة الاسم المألوف ل DEP الذي تم تعيين علبة البريد إليه.
-  
+
    ```powershell
    Get-DataEncryptionPolicy <GUID>
    ```
@@ -210,9 +210,9 @@ Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
 ### <a name="verify-encryption-completes-for-exchange-online-mailboxes"></a>التحقق من اكتمال التشفير لعلب بريد Exchange Online
 
 قد يستغرق تشفير علبة البريد بعض الوقت. للتشفير للمرة الأولى، يجب أيضا نقل علبة البريد بشكل كامل من قاعدة بيانات إلى أخرى قبل أن تتمكن الخدمة من تشفير علبة البريد.
-  
+
 استخدم Get-MailboxStatistics cmdlet لتحديد ما إذا كانت علبة البريد مشفرة.
-  
+
 ```powershell
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEncrypted
 ```
@@ -230,7 +230,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 ```
 
 يتضمن الإخراج من أمر cmdlet هذا ما يلي:
-  
+
 - URI للمفتاح الأساسي.
 
 - URI للمفتاح الثانوي.
@@ -251,40 +251,40 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 للحصول على تفاصيل حول جميع DEPs التي أنشأتها لاستخدامها مع أحمال عمل متعددة، أكمل الخطوات التالية:
 
-1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام أو مسؤول التوافق في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) في نافذة Windows PowerShell.
+1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام أو مسؤول التوافق في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
    - لإرجاع قائمة بكافة برامج DEPs متعددة حمل العمل في المؤسسة، قم بتشغيل هذا الأمر.
 
      ```powershell
-        Get-M365DataAtRestEncryptionPolicy
+     Get-M365DataAtRestEncryptionPolicy
      ```
 
    - لإرجاع تفاصيل حول DEP معين، قم بتشغيل هذا الأمر. يرجع هذا المثال معلومات مفصلة ل DEP المسمى "Contoso_Global".
 
      ```powershell
-        Get-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global"
+     Get-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global"
      ```
 
 ## <a name="get-multi-workload-dep-assignment-information"></a>الحصول على معلومات تعيين DEP متعددة حمل العمل
 
-لمعرفة أي DEP تم تعيينه حاليا إلى المستأجر الخاص بك، اتبع الخطوات التالية. 
+لمعرفة أي DEP تم تعيينه حاليا إلى المستأجر الخاص بك، اتبع الخطوات التالية.
 
-1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام أو مسؤول التوافق في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) في نافذة Windows PowerShell.
+1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام أو مسؤول التوافق في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. اكتب هذا الأمر.
 
    ```powershell
-      Get-M365DataAtRestEncryptionPolicyAssignment
+   Get-M365DataAtRestEncryptionPolicyAssignment
    ```
 
 ## <a name="disable-a-multi-workload-dep"></a>تعطيل DEP متعدد حمل العمل
 
 قبل تعطيل DEP متعدد حمل العمل، قم بإلغاء تعيين DEP من أحمال العمل في المستأجر الخاص بك. لتعطيل DEP مستخدم مع أحمال عمل متعددة، أكمل الخطوات التالية:
 
-1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام أو مسؤول التوافق في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) في نافذة Windows PowerShell.
+1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام أو مسؤول التوافق في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. تشغيل Set-M365DataAtRestEncryptionPolicy cmdlet.
-  
+
    ```powershell
    Set-M365DataAtRestEncryptionPolicy -[Identity] "PolicyName" -Enabled $false
    ```
@@ -300,19 +300,19 @@ Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Enabled $false
 ## <a name="restore-azure-key-vault-keys"></a>استعادة مفاتيح Key Vault Azure
 
 قبل إجراء الاستعادة، استخدم قدرات الاسترداد التي يوفرها الحذف المبدئي. جميع المفاتيح المستخدمة مع مفتاح العميل مطلوبة لتمكين الحذف المبدئي. يعمل الحذف المبدئي مثل سلة المحذوفات ويسمح بالاسترداد لمدة تصل إلى 90 يوما دون الحاجة إلى الاستعادة. يجب أن تكون الاستعادة مطلوبة فقط في ظروف شديدة أو غير عادية، على سبيل المثال إذا فقد المفتاح أو المخزن الرئيسي. إذا كان عليك استعادة مفتاح للاستخدام مع Customer Key، في Azure PowerShell، فشغل Restore-AzureKeyVaultKey cmdlet كما يلي:
-  
+
 ```powershell
 Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
 ```
 
 على سبيل المثال:
-  
+
 ```powershell
 Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
 ```
 
 إذا كان المخزن الرئيسي يحتوي بالفعل على مفتاح بنفس الاسم، تفشل عملية الاستعادة. Restore-AzKeyVaultKey استعادة كافة الإصدارات الرئيسية وكافة بيانات التعريف للمفتاح بما في ذلك اسم المفتاح.
-  
+
 ## <a name="manage-key-vault-permissions"></a>إدارة أذونات key vault
 
 تتوفر العديد من أوامر cmdlets التي تمكنك من عرض أذونات key vault وإزالتها إذا لزم الأمر. قد تحتاج إلى إزالة الأذونات، على سبيل المثال، عندما يترك أحد الموظفين الفريق. لكل مهمة من هذه المهام، ستستخدم Azure PowerShell. للحصول على معلومات حول Azure PowerShell، راجع [نظرة عامة على Azure PowerShell](/powershell/azure/).
@@ -330,7 +330,7 @@ Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 ```
 
 لإزالة أذونات المسؤول، قم بتشغيل Remove-AzKeyVaultAccessPolicy cmdlet:
-  
+
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
@@ -348,7 +348,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 > [!IMPORTANT]
 > إلغاء الإلحاق ليس هو نفسه عملية إزالة البيانات. يؤدي حذف البيانات بشكل دائم إلى حذف بيانات مؤسستك من Microsoft 365، ولا يؤدي إلغاء الإلحاق إلى حذفها. لا يمكنك إجراء إزالة بيانات لنهج حمل عمل متعدد.
 
-إذا قررت عدم استخدام Customer Key لتعيين DEPs متعددة أحمال العمل بعد الآن، فستحتاج إلى التواصل مع دعم Microsoft مع طلب "إلغاء الإلحاق" من Customer Key. اطلب من فريق الدعم تقديم طلب خدمة ضد فريق مفتاح العميل Microsoft Purview. تواصل مع m365-ck@service.microsoft.com إذا كانت لديك أي أسئلة.
+إذا قررت عدم استخدام Customer Key لتعيين DEPs متعددة أحمال العمل بعد الآن، فستحتاج إلى التواصل مع دعم Microsoft مع طلب "إلغاء الإلحاق" من Customer Key. اطلب من فريق الدعم تقديم طلب خدمة ضد فريق Microsoft Purview Customer Key. تواصل مع m365-ck@service.microsoft.com إذا كانت لديك أي أسئلة.
 
 إذا لم تعد ترغب في تشفير علب البريد الفردية باستخدام DEPs على مستوى علبة البريد، فيمكنك إلغاء تعيين DEPs على مستوى علبة البريد من كل علب البريد.
 
@@ -359,13 +359,13 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 2. تشغيل Set-Mailbox cmdlet.
 
    ```powershell
-   Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
+   Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $null
    ```
 
 يؤدي تشغيل أمر cmdlet هذا إلى إلغاء تعيين DEP المعين حاليا وإعادة تشفير علبة البريد باستخدام DEP المقترن بالمفاتيح الافتراضية التي تديرها Microsoft. لا يمكنك إلغاء تعيين DEP المستخدم من قبل المفاتيح المدارة من Microsoft. إذا كنت لا تريد استخدام المفاتيح التي تديرها Microsoft، يمكنك تعيين مفتاح عميل آخر DEP إلى علبة البريد.
 
 > [!IMPORTANT]
-> لا يتم دعم العودة من مفتاح العميل إلى المفاتيح المدارة من Microsoft للملفات SharePoint Online و OneDrive for Business و Teams. 
+> لا يتم دعم العودة من مفتاح العميل إلى المفاتيح المدارة من Microsoft للملفات SharePoint Online و OneDrive for Business و Teams.
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>إبطال المفاتيح وبدء عملية مسار إزالة البيانات
 
@@ -412,7 +412,7 @@ Microsoft 365 تدقيق مسار إزالة البيانات والتحقق م�
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>إبطال "مفاتيح العملاء" ومفتاح التوفر لملفات SharePoint Online و OneDrive for Business و Teams
 
-إزالة SharePoint، OneDrive للعمل أو المؤسسة التعليمية، Teams الملفات DEPs غير معتمدة في مفتاح العميل. تستخدم برامج DEPs متعددة حمل العمل هذه لتشفير البيانات عبر أحمال عمل متعددة عبر جميع مستخدمي المستأجرين. سيؤدي إزالة مثل هذا DEP إلى تعذر الوصول إلى البيانات من خلال أحمال عمل متعددة. إذا قررت إنهاء خدمات Microsoft 365 تماما، يمكنك متابعة مسار حذف المستأجر لكل عملية موثقة. تعرف على كيفية [حذف مستأجر في Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).  
+إزالة SharePoint، OneDrive للعمل أو المؤسسة التعليمية، Teams الملفات DEPs غير معتمدة في مفتاح العميل. تستخدم برامج DEPs متعددة حمل العمل هذه لتشفير البيانات عبر أحمال عمل متعددة عبر جميع مستخدمي المستأجرين. سيؤدي إزالة مثل هذا DEP إلى تعذر الوصول إلى البيانات من خلال أحمال عمل متعددة. إذا قررت إنهاء خدمات Microsoft 365 تماما، يمكنك متابعة مسار حذف المستأجر لكل عملية موثقة. تعرف على كيفية [حذف مستأجر في Azure Active Directory](/azure/active-directory/enterprise-users/directory-delete-howto).
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 

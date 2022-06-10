@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: تقدم هذه المقالة نظرة عامة على أنواع المعلومات الحساسة وكيفية اكتشافها للمعلومات الحساسة مثل الضمان الاجتماعي أو بطاقة الائتمان أو أرقام الحسابات المصرفية لتحديد العناصر الحساسة
-ms.openlocfilehash: 0e154e0ee578b9a182cb7cd5b43cafba466f9bcd
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: d814bd413fc95a02bc35ab05a804c544d9b84b1e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971340"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014223"
 ---
 # <a name="learn-about-sensitive-information-types"></a>التعرّف على أنواع المعلومات الحساسة
 
@@ -171,7 +171,7 @@ ms.locfileid: "64971340"
 
 - **استخدام EDM** - يمكنك إعداد أنواع المعلومات الحساسة المخصصة باستخدام التصنيف المستند إلى مطابقة البيانات الدقيقة (EDM). يمكنك هذا الأسلوب من إنشاء نوع معلومات حساسة ديناميكي باستخدام قاعدة بيانات آمنة يمكنك تحديثها بشكل دوري. راجع [التعرف على أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات الدقيقة](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-- **استخدام PowerShell** - يمكنك إعداد أنواع المعلومات الحساسة المخصصة باستخدام PowerShell. على الرغم من أن هذا الأسلوب أكثر تعقيدا من استخدام واجهة المستخدم، إلا أن لديك المزيد من خيارات التكوين. راجع [إنشاء نوع معلومات حساسة مخصص في Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
+- **استخدام PowerShell** - يمكنك إعداد أنواع المعلومات الحساسة المخصصة باستخدام PowerShell. على الرغم من أن هذا الأسلوب أكثر تعقيدا من استخدام واجهة المستخدم، إلا أن لديك المزيد من خيارات التكوين. راجع [إنشاء نوع معلومات حساسة مخصص في Security & Compliance PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 > [!NOTE]
 > تتوفر مستويات الثقة المحسنة للاستخدام الفوري داخل خدمات منع فقدان البيانات في Microsoft Purview وحماية المعلومات وتوافق الاتصالات وإدارة دورة حياة البيانات وإدارة السجلات.

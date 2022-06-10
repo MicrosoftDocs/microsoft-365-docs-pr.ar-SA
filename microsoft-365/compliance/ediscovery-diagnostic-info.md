@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: تعرف على كيفية جمع معلومات تشخيص eDiscovery لحالة دعم Microsoft.
-ms.openlocfilehash: 2759156a3948339629ea7d988eaaa5464da197fa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f5dba88a598a73441c67e3eaa08a59b7258ea712
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095873"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014421"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>تجميع معلومات تشخيص eDiscovery
 
@@ -35,9 +35,9 @@ ms.locfileid: "65095873"
 
 ## <a name="collect-diagnostic-information-for-ediscovery-standard"></a>تجميع معلومات تشخيصية ل eDiscovery (قياسي)
 
-يستند تجميع المعلومات التشخيصية ل eDiscovery (Standard) إلى cmdlet، لذلك سيتعين عليك استخدام Security & Compliance Center PowerShell. ستقوم أمثلة PowerShell التالية بتشغيل cmdlets ثم حفظ الإخراج إلى ملف نصي محدد. في معظم حالات الدعم، يجب عليك تشغيل أحد هذه الأوامر فقط.
+يستند تجميع المعلومات التشخيصية ل eDiscovery (Standard) إلى cmdlet، لذلك سيتعين عليك استخدام Security & Compliance PowerShell. ستقوم أمثلة PowerShell التالية بتشغيل cmdlets ثم حفظ الإخراج إلى ملف نصي محدد. في معظم حالات الدعم، يجب عليك تشغيل أحد هذه الأوامر فقط.
 
-لتشغيل cmdlets التالية، [اتصل ب Security & Compliance Center PowerShell</span>](/powershell/exchange/connect-to-scc-powershell). بعد الاتصال، قم بتشغيل أمر واحد أو أكثر من الأوامر التالية وتأكد من استبدال العناصر النائبة بأسماء العناصر الفعلية.
+لتشغيل cmdlets التالية، [اتصل ب Security & Compliance PowerShell</span>](/powershell/exchange/connect-to-scc-powershell). بعد الاتصال، قم بتشغيل أمر واحد أو أكثر من الأوامر التالية وتأكد من استبدال العناصر النائبة بأسماء العناصر الفعلية.
 
 بعد مراجعة الملف النصي الذي تم إنشاؤه وتكرار المعلومات الحساسة، أرسله إلى مهندس دعم Microsoft الذي يعمل على حالتك.
 
@@ -80,13 +80,13 @@ Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches=="
 
 تتيح لك علامة التبويب **الإعدادات** في حالة eDiscovery (Premium) نسخ معلومات التشخيص للحالة بسرعة. يتم حفظ معلومات التشخيص في الحافظة حتى تتمكن من لصقها في ملف نصي وإرسالها إلى دعم Microsoft.
 
-1. انتقل إلى مدخل التوافق، وحدد **eDiscoveryAdvanced** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank"></a>
+1. انتقل إلى مدخل التوافق، وحدد **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
 
 2. حدد حالة ثم انقر فوق علامة التبويب **الإعدادات**.
 
 3. ضمن **"معلومات الحالة**"، انقر فوق **"تحديد**".
 
-4. في صفحة القائمة المنبثقة، انقر فوق **معلومات دعم ActionsCopy**  >  لنسخ المعلومات إلى الحافظة.
+4. في صفحة القائمة المنبثقة، انقر فوق " **إجراءات** > **نسخ معلومات الدعم** " لنسخ المعلومات إلى الحافظة.
 
 5. افتح ملفا نصيا (في المفكرة) ثم الصق المعلومات في الملف النصي.
 

@@ -5,6 +5,7 @@ metadata:
   ms.author: sharik
   author: SKjerland
   manager: scotv
+  ms-reviewer: crimora
   audience: Admin
   ms.topic: faq
   ms.prod: microsoft-365-lighthouse
@@ -17,12 +18,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، احصل على إجابات للأسئلة المتداولة (الأسئلة المتداولة) حول Microsoft 365 Lighthouse.
-  ms.openlocfilehash: 8afa3364c7b646110dcd4d6cf2b8786c1840eb76
-  ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+  ms.openlocfilehash: a980a6fe8376c71470331ff3efc1d5b1f08acb33
+  ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 05/26/2022
-  ms.locfileid: "65692794"
+  ms.lasthandoff: 06/10/2022
+  ms.locfileid: "66016757"
 title: الأسئلة المتداولة حول Microsoft 365 Lighthouse (الأسئلة المتداولة)
 summary: >
   تحتوي هذه المقالة على إجابات للأسئلة المتداولة (الأسئلة المتداولة) حول Microsoft 365 Lighthouse.
@@ -55,9 +56,9 @@ sections:
       للتسجيل في Lighthouse، ستحتاج إلى التسجيل في برنامج CSP. يتعذر علينا حاليا دعم الموفرين غير المباشرين. للحصول على إرشادات حول كيفية التسجيل، راجع [التسجيل للحصول على Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). لمعرفة المزيد حول برنامج CSP، راجع [نظرة عامة على برنامج Cloud Solution Provider](/partner-center/csp-overview).
   - question: لقد انتهيت من التسجيل، فلماذا لا أرى أي بيانات مستأجر عميل؟
     answer: >
-      قد يستغرق تحميل بيانات مستأجر العميل داخل Lighthouse ما يصل إلى 48 ساعة. إذا مر أكثر من 48 ساعة على إكمال الإلحاق، فالرجاء التواصل مع فريق الدعم للحصول على المساعدة. ستحتاج إلى إعلامهم عند الانتهاء من الإلحاق وتوفير أي لقطات شاشة وسجلات ذات صلة. لمزيد من المعلومات، راجع [الحصول على التعليمات والدعم Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+      قد يستغرق تحميل بيانات مستأجر العميل داخل Lighthouse ما يصل إلى 48 ساعة. إذا مر أكثر من 48 ساعة على إكمال الإلحاق، فتواصل مع فريق الدعم للحصول على المساعدة. ستحتاج إلى إعلامهم عند الانتهاء من الإلحاق وتوفير أي لقطات شاشة وسجلات ذات صلة. لمزيد من المعلومات، راجع [الحصول على التعليمات والدعم Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: لماذا أرى بيانات لبعض مستأجري العملاء ولكن ليس للآخرين؟
-    answer: "لكي تظهر بيانات مستأجر العميل في Lighthouse، يجب على MSPs إنشاء وصول مفوض لإدارة مستأجر العميل. مطلوب امتيازات مسؤول المفوضة (DAP) لإلحاق العملاء إلى Lighthouse. نوصي بإنشاء امتيازات مسؤول متعددة المستويات (GDAP) مع عملائك لتمكين الوصول المفوض بشكل أكثر أمانا. راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) للحصول على تفاصيل إضافية حول أدوار المستأجرين المفوضين والشركاء المستحسنة لاستخدام Lighthouse. في حين أن DAP وGDAP يتعايشان، فإن GDAP سيكون له الأسبقية للعملاء حيث يوجد كلا النموذجين. قريبا، سيتمكن العملاء الذين يعانون من GDAP فقط (وبدون DAP) من الإلحاق ب Lighthouse. لمزيد من المعلومات حول الوصول المفوض، راجع [طلب علاقة موزع مع عميل في مركز الشركاء](/partner-center/request-a-relationship-with-a-customer). يجب أن يكون للمستأجرين أيضا Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft 365 E5 أو Windows 365 Business أو Microsoft Defender for Business  لا يوجد أكثر من 1000 مستخدم مرخص في المستأجر. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) [ونظرة عامة على صفحة المستأجرين في Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).  \n"
+    answer: "لكي تظهر بيانات مستأجر العميل في Lighthouse، يجب على MSPs إنشاء وصول مفوض لإدارة مستأجر العميل. مطلوب إما امتيازات المسؤول المفوض متعدد المستويات (GDAP) بالإضافة إلى علاقة موزع غير مباشرة أو علاقة امتيازات المسؤول المفوض (DAP) لإلحاق العملاء إلى Lighthouse. نوصي بإنشاء GDAP مع عملائك لتمكين الوصول المفوض بشكل أكثر أمانا. إذا كان DAP وGDAP موجودين في مستأجر عميل، فإن أذونات GDAP لها الأسبقية لفنيي MSP في مجموعات الأمان الممكنة بواسطة GDAP. قريبا، سيتمكن العملاء الذين تربطهم علاقات GDAP فقط (دون علاقات موزعين غير مباشرة) من إلحاق Lighthouse. لمزيد من المعلومات حول الوصول المفوض، راجع [طلب علاقة موزع مع عميل في مركز الشركاء](/partner-center/request-a-relationship-with-a-customer). يجب أن يكون للمستأجرين أيضا Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft 365 E5 أو Windows 365 Business أو Microsoft Defender for Business  لا يوجد أكثر من 1000 مستخدم مرخص في المستأجر. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) [ونظرة عامة على صفحة المستأجرين في Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).\n\nإذا تم إنشاء GDAP مع العميل، يجب أن يكون فني MSP في مجموعة أمان ممكنة بواسطة GDAP يتم تعيين الأدوار المناسبة لها لتكون قادرة على إدارة بيانات هذا العميل في Lighthouse. تؤثر أدوار GDAP المعينة لمجموعة الأمان هذه على بيانات العملاء التي يمكن إدارتها داخل Lighthouse. راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) للحصول على تفاصيل حول أدوار المستأجرين المفوضين والشركاء المستحسنة لاستخدام Lighthouse. للحصول على إرشادات حول كيفية عرض أدوار GDAP التي تم تعيينها لك لمستأجري العملاء المختلفين في Lighthouse، راجع [عرض أدوار Azure Active Directory في Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).   \n"
   - question: ماذا لو كنت لا أريد رؤية مستأجرين معينين في Microsoft 365 Lighthouse؟
     answer: >
       إذا كنت لا تريد رؤية مستأجرين معينين وبياناتهم في Lighthouse، يمكنك تعطيل هؤلاء المستأجرين. لإلغاء تنشيط مستأجر، اتبع الخطوات التالية:
@@ -83,7 +84,7 @@ sections:
       يمكنك شراء تراخيص Windows 365 من خلال جميع قنوات مبيعات Microsoft التجارية المتوفرة. ترخيص واحد تم شراؤه يعادل شراء كمبيوتر سحابي واحد. حاليا، يمكن تعيين كمبيوتر سحابي واحد فقط لكل مستخدم من نفس نوع SKU، ولكن يمكن تعيين عدة أجهزة كمبيوتر سحابية إذا كانت من أنواع SKU مختلفة. لمقارنة Windows 365 الخطط والتسعير، راجع [الحصول على الكمبيوتر السحابي لـ Windows 365 المناسب لك](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
   - question: كيف أعمل الحصول على المساعدة والدعم؟
     answer: >
-      في Lighthouse، حدد **؟** في أعلى المدخل لفتح جزء **التعليمات** . من هنا يمكنك الوصول إلى مقالات التعليمات الذاتية أو الاتصال بالدعم. لمزيد من المعلومات حول خيارات المساعدة والدعم، راجع [الحصول على التعليمات والدعم Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+      في Lighthouse، حدد **؟** في أعلى المدخل لفتح جزء **التعليمات** . من هنا، يمكنك الوصول إلى مقالات التعليمات الذاتية أو الاتصال بالدعم. لمزيد من المعلومات حول خيارات المساعدة والدعم، راجع [الحصول على التعليمات والدعم Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: أين يمكنني إرسال الملاحظات والأفكار؟
     answer: >-
       ملاحظاتك مهمة ومهمة بالنسبة لنا! هناك بعض الطرق المختلفة لإرسال الملاحظات:

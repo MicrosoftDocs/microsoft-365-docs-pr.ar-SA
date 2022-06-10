@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: إرشادات لنشر تسميات الاستبقاء حتى تتمكن بعد ذلك من تطبيقها في التطبيقات للاحتفاظ بما تحتاجه وحذف ما لا تحتاج إليه.
-ms.openlocfilehash: 110115cad46e819ac32d482ab6ecd1eba2129201
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 3acbe0632a387139bbe865b854a92f8e51609cc1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285511"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007317"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>نشر تسميات الاستبقاء وتطبيقها في التطبيقات
 
@@ -94,7 +94,7 @@ ms.locfileid: "65285511"
 
 إذا لم تظهر التسميات بعد سبعة أيام، فتحقق من **حالة** نهج التسمية عن طريق تحديدها من صفحة **نهج التسمية** في مدخل توافق Microsoft Purview. إذا رأيت **(خطأ)** مضمنا في الحالة وفي تفاصيل المواقع، فراجع رسالة تفيد بأن نشر النهج يستغرق وقتا أطول من المتوقع أو محاولة إعادة نشر النهج، فحاول تشغيل [الأمر Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) أو [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell لإعادة محاولة توزيع النهج:
 
-1. [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. تشغيل أحد الأوامر التالية:
     

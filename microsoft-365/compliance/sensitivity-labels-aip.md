@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: عند استخدام عميل التسمية الموحد ل Azure حماية البيانات (AIP)، فهم مزايا استخدام التسمية المضمنة لتطبيقات Office بدلا من الوظيفة الإضافية AIP.
-ms.openlocfilehash: 161f05c1f9c27723ff4940087c715e0556484b79
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: c790ee691e6a72228c865b8cdf9911ee83f4dfd4
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287123"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011559"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>لماذا اختر تسمية مضمنة عبر الوظيفة الإضافية AIP لتطبيقات Office
 
@@ -32,7 +32,7 @@ ms.locfileid: "65287123"
 
 عند استخدام [تسميات الحساسية](sensitivity-labels.md) في Microsoft 365 Apps على أجهزة الكمبيوتر Windows، لديك خيار استخدام التسمية المضمنة في تطبيقات Office، أو وظيفة إضافية من [عميل التسمية الموحدة ل Azure حماية البيانات (AIP](/azure/information-protection/rms-client/aip-clientv2)). 
 
-تشكل التسمية المضمنة حجر الزاوية [لنشر حماية معلومات Microsoft Purview](information-protection-solution.md) لأن تقنية التسمية هذه تمتد عبر الأنظمة الأساسية (Windows وmacOS وiOS وAndroid والويب)، وكذلك عبر تطبيقات Microsoft وخدماتها وما بعدها. كما تم تصميم التسمية المضمنة للعمل مع قدرات Microsoft Purview الأخرى، مثل تصنيف البيانات ومنع فقدان بيانات Microsoft Purview (DLP).
+تشكل التسمية المضمنة حجر الزاوية [لنشر حماية معلومات Microsoft Purview](information-protection-solution.md) لأن تقنية التسمية هذه تمتد عبر الأنظمة الأساسية (Windows، macOS، وiOS، وAndroid، والويب)، وكذلك عبر تطبيقات Microsoft وخدماتها وما بعدها. كما تم تصميم التسمية المضمنة للعمل مع قدرات Microsoft Purview الأخرى، مثل تصنيف البيانات ومنع فقدان بيانات Microsoft Purview (DLP).
 
 نظرا لأن التسميات المضمنة لا تستخدم وظيفة إضافية Office، فإنها تستفيد من المزيد من الاستقرار والأداء الأفضل. كما أنها تدعم أحدث ميزات Microsoft Purview، مثل المصنفات المتقدمة.
 
@@ -76,6 +76,7 @@ ms.locfileid: "65287123"
     - الوصول إلى خدمات التصنيف الذكية التي تتضمن [مصنفات قابلة للتدريب](classifier-learn-about.md) [ومطابقة البيانات الدقيقة (EDM)](sit-learn-about-exact-data-match-based-sits.md) [والكيانات المسماة](named-entities-learn.md)
     - الكشف عن المعلومات الحساسة أثناء كتابة المستخدمين
     - في Word، يمكن للمستخدمين مراجعة المحتوى الحساس المحدد وإزالته
+- [دعم PDF](sensitivity-labels-office-apps.md#pdf-support)
 - بالنسبة للتسميات التي تسمح للمستخدمين بتعيين الأذونات، يمكن منح أذونات مختلفة (قراءة أو تغيير) للمستخدمين أو المجموعات
 - Encrypt-Only لرسائل البريد الإلكتروني
 - رؤية التسميات على شريط المعلومات
@@ -120,7 +121,7 @@ ms.locfileid: "65287123"
 
 يتم الآن دعم العديد من ميزات التسمية المدعومة من قبل الوظيفة الإضافية AIP بواسطة التسمية المضمنة. للحصول على قائمة أكثر تفصيلا من القدرات، والحد الأدنى للإصدارات التي قد تكون مطلوبة، ومعلومات التكوين، راجع [إدارة تسميات الحساسية في تطبيقات Office](sensitivity-labels-office-apps.md).
 
-يتم التخطيط لمزيد من الميزات وفي مرحلة التطوير. إذا كانت هناك ميزة معينة تهمك، فتحقق من [مخطط Microsoft 365](https://aka.ms/MIPC/Roadmap) وفكر [في الانضمام إلى حماية البيانات في Microsoft في Office المعاينة الخاصة](https://aka.ms/MIP/PreviewRing).
+يتم التخطيط لمزيد من الميزات وفي مرحلة التطوير. إذا كانت هناك ميزة معينة تهمك، فتحقق من [مخطط Microsoft 365](https://aka.ms/MIPC/Roadmap) وفكر [في الانضمام إلى حماية البيانات Microsoft في Office المعاينة الخاصة](https://aka.ms/MIP/PreviewRing).
 
 استخدم المعلومات التالية لمساعدتك في تحديد ما إذا كنت تستخدم ميزة من الوظيفة الإضافية AIP غير معتمدة بعد بواسطة التسمية المضمنة:
 

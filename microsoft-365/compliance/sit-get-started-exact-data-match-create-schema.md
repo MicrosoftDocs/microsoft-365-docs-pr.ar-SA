@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: إنشاء المخطط لأنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9eb4e69aa833e8a355115115e1c965e57d65716c
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 080bdff37893bcf0d41414c066b51727d2650f7a
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435270"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017153"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>إنشاء المخطط لأنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة
 
@@ -50,7 +50,7 @@ ms.locfileid: "65435270"
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>استخدام مخطط مطابقة البيانات الدقيق ومعالج نمط نوع المعلومات الحساسة
 
-1. في مدخل التوافق في Microsoft Purview للمستأجر الخاص بك انتقل إلى **بيانات Data classificationExact** >  **تتطابق** >  مع **مخططاتEDM**.
+1. في مدخل توافق Microsoft Purview للمستأجر الخاص بك، انتقل إلى بيانات **تصنيف** >  البيانات **الدقيقة التي** >  تطابق **مخططات EDM**.
 
 2. اختر **إنشاء مخطط EDM** لفتح القائمة المنبثقة لتكوين معالج المخطط.
 
@@ -80,7 +80,7 @@ ms.locfileid: "65435270"
 
 إذا قمت بإنشاء مخطط EDM في معالج مخطط EDM، يجب تصدير ملف مخطط EDM بتنسيق XML. ستحتاج إليها في [تجزئة وتحميل جدول مصدر المعلومات الحساسة لمرحلة أنواع المعلومات الحساسة المطابقة تماما للبيانات](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) .
 
-1. [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. لتصدير ملف مخطط EDM، استخدم بناء الجملة هذا:
 
@@ -175,7 +175,7 @@ ms.locfileid: "65435270"
 
    بمجرد إنشاء ملف مخطط EDM بتنسيق XML، يجب عليك تحميله إلى خدمة السحابة.
 
-2. [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+2. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 3. لتحميل مخطط قاعدة البيانات، قم بتشغيل الأمر التالي:
 

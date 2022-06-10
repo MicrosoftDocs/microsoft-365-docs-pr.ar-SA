@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: استخدم ميزة البحث والإزالة في مدخل توافق Microsoft Purview للبحث عن رسالة بريد إلكتروني وحذفها من جميع علب البريد في مؤسستك.
-ms.openlocfilehash: 9e6159bcd6cdd8a06a310c5de9f07b105dbb4122
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f4cf7b3f6aeefc3af71739f91322736354c1b68e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094891"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017231"
 ---
 # <a name="search-for-and-delete-email-messages"></a>البحث عن رسائل البريد الإلكتروني وحذفها
 
@@ -50,7 +50,7 @@ ms.locfileid: "65094891"
   > [!NOTE]
   > توجد مجموعة دور **إدارة المؤسسة** في كل من Exchange Online وفي مدخل التوافق. هذه مجموعات أدوار منفصلة تمنح أذونات مختلفة. لا يمنح كونك عضوا في **إدارة المؤسسة** في Exchange Online الأذونات المطلوبة لحذف رسائل البريد الإلكتروني. إذا لم يتم تعيين دور **البحث والإزالة** لك في مركز التوافق (إما مباشرة أو من خلال مجموعة أدوار مثل **إدارة المؤسسة**)، فستتلقى رسالة خطأ في الخطوة 3 عند تشغيل **Cmdlet New-ComplianceSearchAction** مع الرسالة "لا يمكن العثور على معلمة تطابق اسم المعلمة "إزالة".
 
-- يجب عليك استخدام Security & Compliance Center PowerShell لحذف الرسائل. راجع [الخطوة 1](#step-1-connect-to-security--compliance-center-powershell) للحصول على إرشادات حول كيفية الاتصال.
+- يجب عليك استخدام Security & Compliance PowerShell لحذف الرسائل. راجع [الخطوة 1: الاتصال إلى Security & Compliance PowerShell](#step-1-connect-to-security--compliance-powershell) للحصول على إرشادات حول كيفية الاتصال.
 
 - يمكن إزالة 10 عناصر كحد أقصى لكل علبة بريد في وقت واحد. نظرا لأن القدرة على البحث عن الرسائل وإزالتها مخصصة لتكون أداة للاستجابة للحوادث، فإن هذا الحد يساعد على ضمان إزالة الرسائل بسرعة من علب البريد. لا تهدف هذه الميزة إلى تنظيف علب بريد المستخدمين.
 
@@ -60,9 +60,9 @@ ms.locfileid: "65094891"
 
 - لا يمكن حذف عناصر البريد الإلكتروني في مجموعة مراجعة في حالة eDiscovery (Premium) باستخدام الإجراءات الواردة في هذه المقالة. وذلك لأن العناصر في مجموعة المراجعة يتم تخزينها في موقع تخزين Azure، وليس في الخدمة المباشرة. وهذا يعني أنه لن يتم إرجاعها بواسطة البحث في المحتوى الذي تقوم بإنشائه في الخطوة 1. لحذف العناصر في مجموعة مراجعة، يجب حذف حالة eDiscovery (Premium) التي تحتوي على مجموعة المراجعة. لمزيد من المعلومات، راجع [إغلاق حالة eDiscovery (Premium) أو حذفها](close-or-delete-case.md).
 
-## <a name="step-1-connect-to-security--compliance-center-powershell"></a>الخطوة 1: الاتصال إلى Security & Compliance Center PowerShell
+## <a name="step-1-connect-to-security--compliance-powershell"></a>الخطوة 1: الاتصال إلى Security & Compliance PowerShell
 
-الخطوة الأولى هي الاتصال ب Security & Compliance Center PowerShell لمؤسستك. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+الخطوة الأولى هي الاتصال ب Security & Compliance PowerShell لمؤسستك. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>الخطوة 2: إنشاء بحث في المحتوى للعثور على الرسالة المراد حذفها
 
@@ -121,7 +121,7 @@ Start-ComplianceSearch -Identity $Search.Identity
 > [!NOTE]
 > كما ذكر سابقا، لا يتم حذف العناصر من Microsoft Teams التي يتم إرجاعها بواسطة البحث في المحتوى عند تشغيل الأمر **New-ComplianceSearchAction -Purge**.
 
-لتشغيل الأوامر التالية لحذف الرسائل، تأكد من [اتصالك ب Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+لتشغيل الأوامر التالية لحذف الرسائل، تأكد من [اتصالك ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ### <a name="soft-delete-messages"></a>رسائل الحذف المبدئي
 

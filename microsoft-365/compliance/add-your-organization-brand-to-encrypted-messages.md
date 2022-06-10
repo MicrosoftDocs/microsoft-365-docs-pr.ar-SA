@@ -23,18 +23,18 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: تعرف على كيفية Office 365 يمكن للمسؤولين العموميين تطبيق العلامة التجارية لمؤسستك على رسائل البريد الإلكتروني المشفرة & محتويات مدخل التشفير.
-ms.openlocfilehash: c8806f3f52fe5c76ff0e318a13789f580d4e31e2
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: fb0525b112137bf57007b4188bc461abbb0c3f27
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403327"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016845"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>إضافة العلامة التجارية لمؤسستك إلى الرسائل المشفرة Microsoft 365 لتشفير رسائل العمل
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-يمكنك تطبيق العلامة التجارية لشركتك لتخصيص مظهر رسائل البريد الإلكتروني لمؤسستك ومدخل التشفير. ستحتاج إلى تطبيق أذونات المسؤول العام على حساب العمل أو المؤسسة التعليمية قبل أن تتمكن من البدء. بمجرد حصولك على هذه الأذونات، استخدم Get-OMEConfiguration و cmdlets Set-OMEConfiguration Windows PowerShell لتخصيص هذه الأجزاء من رسائل البريد الإلكتروني المشفرة:
+يمكنك تطبيق العلامة التجارية لشركتك لتخصيص مظهر رسائل البريد الإلكتروني لمؤسستك ومدخل التشفير. ستحتاج إلى تطبيق أذونات المسؤول العام على حساب العمل أو المؤسسة التعليمية قبل أن تتمكن من البدء. بمجرد حصولك على هذه الأذونات، استخدم Get-OMEConfiguration و cmdlets Set-OMEConfiguration في Exchange Online PowerShell لتخصيص هذه الأجزاء من رسائل البريد الإلكتروني المشفرة:
 
 - نص تمهيدي
 - نص إخلاء المسؤولية
@@ -45,7 +45,7 @@ ms.locfileid: "65403327"
 
 يمكنك أيضا العودة إلى الشكل والأداء الافتراضيين في أي وقت.
 
-إذا كنت ترغب في مزيد من التحكم، فاستخدم Microsoft Purview تشفير الرسائل المتقدم لإنشاء قوالب متعددة لرسائل البريد الإلكتروني المشفرة التي تنشأ من مؤسستك. استخدم هذه القوالب للتحكم في أجزاء من تجربة المستخدم النهائي. على سبيل المثال، حدد ما إذا كان يمكن للمستلمين استخدام حسابات Google وYahoo وMicrosoft لتسجيل الدخول إلى مدخل التشفير. استخدم القوالب لتنفيذ العديد من حالات الاستخدام، مثل:
+إذا كنت ترغب في مزيد من التحكم، فاستخدم تشفير الرسائل المتقدم من Microsoft Purview لإنشاء قوالب متعددة لرسائل البريد الإلكتروني المشفرة التي تنشأ من مؤسستك. استخدم هذه القوالب للتحكم في أجزاء من تجربة المستخدم النهائي. على سبيل المثال، حدد ما إذا كان يمكن للمستلمين استخدام حسابات Google وYahoo وMicrosoft لتسجيل الدخول إلى مدخل التشفير. استخدم القوالب لتنفيذ العديد من حالات الاستخدام، مثل:
 
 - الأقسام الفردية، مثل الشؤون المالية والمبيعات وما إلى ذلك.
 - منتجات مختلفة
@@ -53,11 +53,11 @@ ms.locfileid: "65403327"
 - ما إذا كنت تريد السماح بإبطال رسائل البريد الإلكتروني
 - ما إذا كنت تريد أن تنتهي صلاحية رسائل البريد الإلكتروني المرسلة إلى مستلمين خارجيين بعد عدد محدد من الأيام.
 
-بمجرد إنشاء القوالب، يمكنك تطبيقها على رسائل البريد الإلكتروني المشفرة باستخدام قواعد تدفق البريد Exchange. إذا كان لديك Microsoft Purview تشفير الرسائل المتقدم، يمكنك إبطال أي بريد إلكتروني قمت بإدراج علامة تجارية له باستخدام هذه القوالب.
+بمجرد إنشاء القوالب، يمكنك تطبيقها على رسائل البريد الإلكتروني المشفرة باستخدام قواعد تدفق البريد Exchange. إذا كان لديك Microsoft Purview Advanced Message Encryption، يمكنك إبطال أي بريد إلكتروني قمت بإدراجه باستخدام هذه القوالب.
 
 ## <a name="work-with-ome-branding-templates"></a>العمل مع قوالب العلامة التجارية ل OME
 
-يمكنك تعديل العديد من الميزات داخل قالب العلامة التجارية. يمكنك تعديل القالب الافتراضي وليس إزالته. إذا كان لديك تشفير رسائل متقدم، يمكنك أيضا إنشاء قوالب مخصصة وتعديلها وإزالتها. استخدم Windows PowerShell للعمل مع قالب علامة تجارية واحد في كل مرة.
+يمكنك تعديل العديد من الميزات داخل قالب العلامة التجارية. يمكنك تعديل القالب الافتراضي وليس إزالته. إذا كان لديك تشفير رسائل متقدم، يمكنك أيضا إنشاء قوالب مخصصة وتعديلها وإزالتها. استخدم Exchange Online PowerShell للعمل مع قالب علامة تجارية واحد في كل مرة.
 
 - [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) - قم بتعديل قالب العلامة التجارية الافتراضي أو قالب علامة تجارية مخصص قمت بإنشائه.
 - [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) - إنشاء قالب علامة تجارية جديد، تشفير الرسائل المتقدمة فقط.
@@ -65,31 +65,26 @@ ms.locfileid: "65403327"
 
 ## <a name="modify-an-ome-branding-template"></a>تعديل قالب العلامة التجارية ل OME
 
-استخدم Windows PowerShell لتعديل قالب علامة تجارية واحد في كل مرة. إذا كان لديك تشفير رسائل متقدم، يمكنك أيضا إنشاء قوالب مخصصة وتعديلها وإزالتها.
+استخدم Exchange Online PowerShell لتعديل قالب علامة تجارية واحد في كل مرة. إذا كان لديك تشفير رسائل متقدم، يمكنك أيضا إنشاء قوالب مخصصة وتعديلها وإزالتها.
 
-1. باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام في مؤسستك، ابدأ جلسة عمل Windows PowerShell وقم بالاتصال Exchange Online. للحصول على الإرشادات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام في مؤسستك، اتصل Exchange Online PowerShell. للحصول على الإرشادات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. استخدم Set-OMEConfiguration cmdlet كما هو موضح في [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration) أو استخدم الرسم والجدول التاليين للحصول على إرشادات.
 
 ![أجزاء البريد الإلكتروني القابلة للتخصيص.](../media/ome-template-breakout.png)
 
-<br>
-
-****
-
-|**لتخصيص هذه الميزة من تجربة التشفير**|**استخدام هذه الأوامر**|
+|لتخصيص هذه الميزة من تجربة التشفير|استخدام هذه الأوامر|
 |---|---|
 |لون الخلفية|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <p> **على سبيل المثال:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <p> لمزيد من المعلومات حول ألوان الخلفية، راجع المقطع ["ألوان الخلفية](#background-color-reference) " لاحقا في هذه المقالة.|
 |شعار|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <Byte[]>` <p> **على سبيل المثال:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -Image ([System.IO.File]::ReadAllBytes('C:\Temp\contosologo.png'))` <p> تنسيقات الملفات المعتمدة: .png أو .jpg أو .bmp أو tiff. <p> الحجم الأمثل لملف الشعار: أقل من 40 كيلوبايت <p> الحجم الأمثل لصورة الشعار: 170x70 بكسل. إذا تجاوزت صورتك هذه الأبعاد، تقوم الخدمة بتغيير حجم شعارك لعرضه في المدخل. لا تقوم الخدمة بتعديل ملف الرسم نفسه. للحصول على أفضل النتائج، استخدم الحجم الأمثل.|
 |نص بجانب اسم المرسل وعنوان بريده الإلكتروني|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <p> **على سبيل المثال:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
-|النص الذي يظهر على الزر "قراءة الرسالة"|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <p> **المثال:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
-|النص الذي يظهر أسفل الزر "قراءة الرسالة"|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<String up to 1024 characters>"` <p> **على سبيل المثال:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
-|URL الخاص بارتباط بيان الخصوصية|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <p> **المثال:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
-|بيان إخلاء المسؤولية في البريد الإلكتروني الذي يحتوي على الرسالة المشفرة|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <p> **المثال:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
-|النص الذي يظهر في أعلى مدخل عرض البريد المشفر|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <p> **على سبيل المثال:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
+|النص الذي يظهر على الزر "قراءة الرسالة"|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <p> **على سبيل المثال:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
+|النص الذي يظهر أسفل الزر "قراءة الرسالة"|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<String up to 1024 characters>"` <p> **المثال:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|URL الخاص بارتباط بيان الخصوصية|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <p> **على سبيل المثال:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
+|بيان إخلاء المسؤولية في البريد الإلكتروني الذي يحتوي على الرسالة المشفرة|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <p> **على سبيل المثال:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
+|النص الذي يظهر في أعلى مدخل عرض البريد المشفر|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <p> **المثال:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
 |لتمكين المصادقة أو تعطيلها باستخدام رمز تمرير لمرة واحدة لهذا القالب المخصص|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <p> **امثله:** <br/>لتمكين رموز المرور لمرة واحدة لهذا القالب المخصص <p> `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <p> لتعطيل رموز المرور لمرة واحدة لهذا القالب المخصص <p> `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
 |لتمكين المصادقة أو تعطيلها باستخدام هويات Microsoft أو Google أو Yahoo لهذا القالب المخصص|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <p> **امثله:** <br/>لتمكين المعرف الاجتماعي لهذا القالب المخصص <p> `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <p> لتعطيل المعرف الاجتماعي لهذا القالب المخصص <p> `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
-|
 
 ## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>إنشاء قالب علامة تجارية ل OME (تشفير الرسائل المتقدمة)
 
@@ -97,7 +92,7 @@ ms.locfileid: "65403327"
 
 لإنشاء قالب علامة تجارية مخصص جديد:
 
-1. باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام في مؤسستك، ابدأ جلسة عمل Windows PowerShell وقم بالاتصال Exchange Online. للحصول على الإرشادات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام في مؤسستك، اتصل Exchange Online PowerShell. للحصول على الإرشادات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. استخدم [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) cmdlet لإنشاء قالب جديد.
 
@@ -115,24 +110,19 @@ ms.locfileid: "65403327"
 
 لإزالة كافة التعديلات من القالب الافتراضي، بما في ذلك تخصيصات العلامة التجارية، وما إلى ذلك، أكمل الخطوات التالية:
 
-1. باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام في مؤسستك، ابدأ جلسة عمل Windows PowerShell وقم بالاتصال Exchange Online. للحصول على الإرشادات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام في مؤسستك، اتصل Exchange Online PowerShell. للحصول على الإرشادات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. استخدم **Set-OMEConfiguration** cmdlet كما هو موضح في [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration). لإزالة التخصيصات ذات العلامة التجارية لمؤسستك من قيم إخلاء المسؤولية و EmailText و PortalText، قم بتعيين القيمة إلى سلسلة فارغة. `""` بالنسبة لكافة قيم الصور، مثل الشعار، قم بتعيين القيمة إلى `"$null"`.
 
    يصف الجدول التالي افتراضيات خيار تخصيص التشفير.
 
-   <br>
-
-   ****
-
    |لإعادة هذه الميزة من تجربة التشفير مرة أخرى إلى النص الافتراضي والصورة|استخدام هذه الأوامر|
    |:-----|:-----|
-   |النص الافتراضي الذي يأتي مع رسائل البريد الإلكتروني المشفرة. يظهر النص الافتراضي فوق إرشادات عرض الرسائل المشفرة|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <p> **على سبيل المثال:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |النص الافتراضي الذي يأتي مع رسائل البريد الإلكتروني المشفرة. يظهر النص الافتراضي فوق إرشادات عرض الرسائل المشفرة|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <p> **المثال:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
    |بيان إخلاء المسؤولية في البريد الإلكتروني الذي يحتوي على الرسالة المشفرة|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <p> **المثال:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
    |النص الذي يظهر في أعلى مدخل عرض البريد المشفر|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <p> **مثال على العودة إلى الوضع الافتراضي:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
    |شعار|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <p> **مثال على العودة إلى الوضع الافتراضي:** <p> `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
    |لون الخلفية|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <p> **مثال على العودة إلى الوضع الافتراضي:** <p> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
-   |
 
 ## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>إزالة قالب علامة تجارية مخصص (تشفير الرسائل المتقدمة)
 
@@ -140,7 +130,7 @@ ms.locfileid: "65403327"
 
 لإزالة قالب علامة تجارية مخصص:
 
-1. باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام في مؤسستك، ابدأ جلسة عمل Windows PowerShell وقم بالاتصال Exchange Online. للحصول على الإرشادات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام في مؤسستك، اتصل Exchange Online PowerShell. للحصول على الإرشادات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. استخدم **cmdlet Remove-OMEConfiguration** كما يلي:
 
@@ -164,9 +154,9 @@ ms.locfileid: "65403327"
 بعد تعديل القالب الافتراضي أو إنشاء قوالب علامة تجارية جديدة، يمكنك إنشاء قواعد تدفق بريد Exchange لتطبيق العلامة التجارية المخصصة استنادا إلى شروط معينة. والأهم من ذلك، يجب تشفير البريد الإلكتروني. ستطبق هذه القاعدة العلامة التجارية المخصصة في السيناريوهات التالية:
 
 - إذا تم تشفير البريد الإلكتروني يدويا من قبل المستخدم النهائي باستخدام Outlook أو Outlook على ويب، Outlook Web App
-- إذا تم تشفير البريد الإلكتروني تلقائيا بواسطة قاعدة تدفق بريد Exchange أو نهج تفادي فقدان البيانات في Microsoft Purview
+- إذا تم تشفير البريد الإلكتروني تلقائيا بواسطة قاعدة تدفق بريد Exchange أو نهج منع فقدان البيانات من Microsoft Purview
 
-لضمان تطبيق تشفير الرسائل في Microsoft Purview العلامة التجارية المخصصة، قم بإعداد قاعدة تدفق بريد لتشفير رسائل البريد الإلكتروني. يجب أن تكون أولوية قاعدة التشفير أعلى من قاعدة العلامة التجارية بحيث تتم معالجة قاعدة التشفير أولا. بشكل افتراضي، إذا قمت بإنشاء قاعدة التشفير قبل قاعدة العلامة التجارية، فستكون لقاعدة التشفير أولوية أعلى. للحصول على معلومات حول كيفية إنشاء قاعدة تدفق بريد Exchange تطبق التشفير، راجع [تعريف قواعد تدفق البريد لتشفير رسائل البريد الإلكتروني في Office 365](define-mail-flow-rules-to-encrypt-email.md). للحصول على معلومات حول تعيين أولوية قاعدة تدفق البريد، راجع [إدارة قواعد تدفق البريد](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
+للتأكد من تطبيق تشفير رسائل Microsoft Purview على العلامة التجارية المخصصة، قم بإعداد قاعدة تدفق البريد لتشفير رسائل البريد الإلكتروني. يجب أن تكون أولوية قاعدة التشفير أعلى من قاعدة العلامة التجارية بحيث تتم معالجة قاعدة التشفير أولا. بشكل افتراضي، إذا قمت بإنشاء قاعدة التشفير قبل قاعدة العلامة التجارية، فستكون لقاعدة التشفير أولوية أعلى. للحصول على معلومات حول كيفية إنشاء قاعدة تدفق بريد Exchange تطبق التشفير، راجع [تعريف قواعد تدفق البريد لتشفير رسائل البريد الإلكتروني في Office 365](define-mail-flow-rules-to-encrypt-email.md). للحصول على معلومات حول تعيين أولوية قاعدة تدفق البريد، راجع [إدارة قواعد تدفق البريد](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule).
 
 1. في مستعرض ويب، باستخدام حساب العمل أو المؤسسة التعليمية الذي تم منحه أذونات المسؤول العام، [سجل الدخول إلى Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
@@ -186,8 +176,8 @@ ms.locfileid: "65403327"
 
 7. إذا سبق لك تعريف قاعدة تدفق بريد لتطبيق التشفير، فتخطى هذه الخطوة. وإلا، لتكوين قاعدة تدفق البريد لتطبيق التشفير، من **القيام بما يلي**، حدد **"تعديل أمان الرسالة**"، ثم اختر **"تطبيق Office 365 تشفير الرسائل وحماية الحقوق**". حدد قالب RMS من القائمة ثم اختر **إضافة إجراء**.
 
-   تتضمن قائمة القوالب قوالب وخيارات افتراضية وأي قوالب مخصصة تقوم بإنشائها. إذا كانت القائمة فارغة، فتأكد من إعداد تشفير الرسائل في Microsoft Purview. للحصول على الإرشادات، راجع [إعداد تشفير الرسائل في Microsoft Purview](set-up-new-message-encryption-capabilities.md). للحصول على معلومات حول القوالب الافتراضية، راجع [تكوين القوالب وإدارتها ل Azure حماية البيانات](/information-protection/deploy-use/configure-policy-templates). للحصول على معلومات حول الخيار **"عدم إعادة التوجيه** "، راجع [الخيار "عدم إعادة التوجيه" لرسائل البريد الإلكتروني](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). للحصول على معلومات حول خيار **التشفير فقط** ، راجع [الخيار "تشفير فقط" لرسائل البريد الإلكتروني](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
-   
+   تتضمن قائمة القوالب قوالب وخيارات افتراضية وأي قوالب مخصصة تقوم بإنشائها. إذا كانت القائمة فارغة، فتأكد من إعداد Microsoft Purview Message Encryption. للحصول على الإرشادات، راجع [إعداد تشفير رسائل "Microsoft Purview](set-up-new-message-encryption-capabilities.md)". للحصول على معلومات حول القوالب الافتراضية، راجع [تكوين القوالب وإدارتها ل Azure حماية البيانات](/information-protection/deploy-use/configure-policy-templates). للحصول على معلومات حول الخيار **"عدم إعادة التوجيه** "، راجع [الخيار "عدم إعادة التوجيه" لرسائل البريد الإلكتروني](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). للحصول على معلومات حول خيار **التشفير فقط** ، راجع [الخيار "تشفير فقط" لرسائل البريد الإلكتروني](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+
 8. من **القيام بما يلي**، حدد **تعديل أمان** \> الرسالة **تطبيق العلامة التجارية المخصصة على رسائل OME**. بعد ذلك، من القائمة المنسدلة، حدد قالب علامة تجارية.
 
    اختر **إضافة إجراء** إذا كنت تريد تحديد إجراء آخر، أو اختر **"حفظ"**، ثم اختر **"موافق**".
@@ -198,7 +188,7 @@ ms.locfileid: "65403327"
 
 يتم وصف أسماء ألوان الخلفية المتوفرة وقيم التعليمات البرمجية الست عشرية المقابلة لها في الجدول التالي.
 
-|**اسم اللون**|**رمز اللون**|
+|اسم اللون|رمز اللون|
 |---|---|
 |`aliceblue`|#f0f8ff|
 |`antiquewhite`|#faebd7|

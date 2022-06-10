@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم تسميات الحساسية لتكوين نوع ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint OneDrive.
-ms.openlocfilehash: 132a526cc591f34722e4c0e8d4982859790558da
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0c72d35399a0185bbd8cf58b5eac58241a695b72
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286879"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012307"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>استخدم تسميات الحساسية لتكوين نوع ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint OneDrive
 
@@ -58,14 +58,14 @@ ms.locfileid: "65286879"
 
 لتطبيق نوع ارتباط المشاركة الافتراضي للمستندات في SharePoint OneDrive، يجب تمكين تسميات الحساسية لهذه الخدمات. إذا لم يتم تمكين هذه الإمكانية بعد للمستأجر الخاص بك، فراجع [كيفية تمكين تسميات الحساسية SharePoint OneDrive (الاشتراك)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
 
-في جلسة عمل PowerShell، يجب [الاتصال Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) لتكوين إعدادات نوع ارتباط المشاركة الافتراضي.
+في جلسة عمل PowerShell، يجب [الاتصال Office 365 Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) لتكوين إعدادات نوع ارتباط المشاركة الافتراضي.
 
 > [!NOTE]
 > على الرغم من أنه غير مطلوب، فمن الأسهل [إنشاء تسميات الحساسية وتكوينها أولا في مدخل توافق Microsoft Purview](create-sensitivity-labels.md)، ثم تعديل هذه التسميات باستخدام الإعدادات التي تقوم بتكوين نوع ارتباط المشاركة الافتراضي.
 
 ## <a name="how-to-configure-settings-for-the-default-sharing-link-type"></a>كيفية تكوين الإعدادات لنوع ارتباط المشاركة الافتراضي
 
-تستخدم إعدادات التكوين لنوع ارتباط المشاركة الافتراضي معلمة PowerShell *AdvancedSettings* مع [Set-Label](/powershell/module/exchange/set-label) و [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlets من [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
+تستخدم إعدادات التكوين لنوع ارتباط المشاركة الافتراضي معلمة PowerShell *AdvancedSettings* مع [Set-Label](/powershell/module/exchange/set-label) و [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlets من [Security & Compliance PowerShell](/powershell/exchange/scc-powershell):
 
 - **DefaultSharingScope**: القيم المتوفرة هي:
     - **SpecificPeople**: تعيين ارتباط المشاركة الافتراضي للموقع إلى الارتباط "أشخاص محددون"

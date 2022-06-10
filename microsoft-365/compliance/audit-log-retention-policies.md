@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: تعد نهج استبقاء سجل التدقيق جزءا من قدرات تدقيق Microsoft Purview (Premium) الجديدة. يتيح لك نهج استبقاء سجل التدقيق تحديد مدة الاحتفاظ بسجلات التدقيق في مؤسستك.
-ms.openlocfilehash: 0a35177c160e80cef2263382e4a1bc04057963b5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e75c88ba3ddd47b433e733984b76716532ab3ffa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099664"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012417"
 ---
 # <a name="manage-audit-log-retention-policies"></a>إدارة سياسات استبقاء سجل التدقيق
 
@@ -102,7 +102,7 @@ ms.locfileid: "65099664"
 
 > [!IMPORTANT]
 >
-> إذا كنت تستخدم **New-UnifiedAuditLogRetentionPolicy** cmdlet، فمن الممكن إنشاء نهج استبقاء سجل التدقيق لأنواع السجلات أو الأنشطة غير المتوفرة في أداة **إنشاء نهج استبقاء التدقيق** في لوحة المعلومات. في هذه الحالة، لن تتمكن من تحرير النهج (على سبيل المثال، تغيير مدة الاستبقاء أو إضافة أنشطة وإزالتها) من لوحة معلومات **نهج استبقاء التدقيق** . ستتمكن فقط من عرض النهج وحذفه في مركز الامتثال. لتحرير النهج، سيتعين عليك استخدام [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet في Security & Compliance Center PowerShell.>
+> إذا كنت تستخدم **New-UnifiedAuditLogRetentionPolicy** cmdlet، فمن الممكن إنشاء نهج استبقاء سجل التدقيق لأنواع السجلات أو الأنشطة غير المتوفرة في أداة **إنشاء نهج استبقاء التدقيق** في لوحة المعلومات. في هذه الحالة، لن تتمكن من تحرير النهج (على سبيل المثال، تغيير مدة الاستبقاء أو إضافة أنشطة وإزالتها) من لوحة معلومات **نهج استبقاء التدقيق** . ستتمكن فقط من عرض النهج وحذفه في مدخل توافق Microsoft Purview. لتحرير النهج، سيتعين عليك استخدام [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet في Security & Compliance PowerShell.>
 >
 > **تلميح:** يتم عرض رسالة في أعلى صفحة القائمة المنبثقة للنهج التي يجب تحريرها باستخدام PowerShell.
 
@@ -112,13 +112,13 @@ ms.locfileid: "65099664"
 
 ## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>إنشاء نهج استبقاء سجل التدقيق وإدارتها في PowerShell
 
-يمكنك أيضا استخدام Security & Compliance Center PowerShell لإنشاء نهج استبقاء سجل التدقيق وإدارتها. أحد أسباب استخدام PowerShell هو إنشاء نهج لنوع سجل أو نشاط غير متوفر في واجهة المستخدم.
+يمكنك أيضا استخدام Security & Compliance PowerShell لإنشاء نهج استبقاء سجل التدقيق وإدارتها. أحد أسباب استخدام PowerShell هو إنشاء نهج لنوع سجل أو نشاط غير متوفر في واجهة المستخدم.
 
 ### <a name="create-an-audit-log-retention-policy-in-powershell"></a>إنشاء نهج استبقاء سجل التدقيق في PowerShell
 
 اتبع هذه الخطوات لإنشاء نهج استبقاء سجل التدقيق في PowerShell:
 
-1. [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. قم بتشغيل الأمر التالي لإنشاء نهج استبقاء سجل التدقيق:
 
@@ -143,7 +143,7 @@ New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -
 
 ### <a name="view-policies-in-powershell"></a>عرض النهج في PowerShell
 
-استخدم [cmdlet Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) في Security & Compliance Center PowerShell لعرض نهج استبقاء سجل التدقيق.
+استخدم [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) cmdlet في Security & Compliance PowerShell لعرض نهج استبقاء سجل التدقيق.
 
 فيما يلي نموذج أمر لعرض الإعدادات لكافة نهج استبقاء سجل التدقيق في مؤسستك. يقوم هذا الأمر بفرز النهج من الأولوية الأعلى إلى الأقل.
 
@@ -156,11 +156,11 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 ### <a name="edit-policies-in-powershell"></a>تحرير النهج في PowerShell
 
-استخدم [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet في Security & Compliance Center PowerShell لتحرير نهج استبقاء سجل تدقيق موجود.
+استخدم [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet في Security & Compliance PowerShell لتحرير نهج استبقاء سجل تدقيق موجود.
 
 ### <a name="delete-policies-in-powershell"></a>حذف النهج في PowerShell
 
-استخدم [cmdlet Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) في Security & Compliance Center PowerShell لحذف نهج استبقاء سجل التدقيق. قد يستغرق الأمر ما يصل إلى 30 دقيقة حتى تتم إزالة النهج من مؤسستك.
+استخدم [cmdlet Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) في Security & Compliance PowerShell لحذف نهج استبقاء سجل التدقيق. قد يستغرق الأمر ما يصل إلى 30 دقيقة حتى تتم إزالة النهج من مؤسستك.
 
 ## <a name="more-information"></a>معلومات إضافية
 

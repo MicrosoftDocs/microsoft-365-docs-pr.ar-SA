@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 04eee4c44e0cf2b712ecab84b18837d7b3705cef
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 31af082f66836ecfbe6a7cd804fd3b7bba2ed4bd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669793"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012373"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>تمكين قواعد تقليل الأجزاء المعرضة للهجوم
 
@@ -142,7 +142,7 @@ ms.locfileid: "65669793"
 
 4. حدد **"موافق** " في أجزاء التكوين الثلاثة. ثم حدد **"إنشاء** " إذا كنت تقوم بإنشاء ملف حماية نقطة نهاية جديد أو **"حفظ** " إذا كنت تقوم بتحرير ملف موجود.
 
-#### <a name="endpoint-security-policy"></a>نهج أمان نقطة النهاية**
+#### <a name="endpoint-security-policy"></a>نهج أمان نقطة النهاية
 
 1. حدد **تقليل سطح هجوم** **أمان** \> نقطة النهاية. اختر قاعدة ASR موجودة أو قم بإنشاء قاعدة جديدة. لإنشاء نهج جديد، حدد **"إنشاء نهج** " وأدخل معلومات لملف التعريف هذا. بالنسبة **لنوع ملف التعريف**، حدد **قواعد تقليل الأجزاء المعرضة للهجوم**. إذا اخترت ملف تعريف موجودا، فحدد **"خصائص**" ثم حدد **"الإعدادات**".
 

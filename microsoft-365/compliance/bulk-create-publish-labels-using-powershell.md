@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية استخدام PowerShell لإنشاء تسميات الاستبقاء ونشرها من سطر الأوامر، بشكل مستقل عن مدخل توافق Microsoft Purview.
-ms.openlocfilehash: 7d650c87aad92cdb65ed9a40c98c8fc3c94e01fb
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: f2a01024f6c2a05eb5d584112f9a828ac2c3058c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287145"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011749"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>إنشاء تسميات الاستبقاء ونشرها باستخدام PowerShell
 
@@ -739,11 +739,11 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>الخطوة 4: تشغيل البرنامج النصي PowerShell
 
-أولا، [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+أولا، [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ثم قم بتشغيل البرنامج النصي الذي يقوم بإنشاء تسميات الاستبقاء ونشرها:
   
-1. في جلسة عمل Security & Compliance Center PowerShell، أدخل المسار، متبوعا بالأحرف `.\` واسم ملف البرنامج النصي، ثم اضغط على ENTER لتشغيل البرنامج النصي. على سبيل المثال:
+1. في جلسة عمل Security & Compliance PowerShell، أدخل المسار، متبوعا بالأحرف `.\` واسم الملف للبرنامج النصي، ثم اضغط على ENTER لتشغيل البرنامج النصي. على سبيل المثال:
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1

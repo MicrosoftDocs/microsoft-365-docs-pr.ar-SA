@@ -11,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: استخدم أداة البحث في المحتوى eDiscovery في مدخل توافق Microsoft Purview للعثور بسرعة على البريد الإلكتروني في علب بريد Exchange والمستندات في مواقع SharePoint ومواقع OneDrive ومحادثات المراسلة الفورية في Skype for Business.
-ms.openlocfilehash: 30398f91a0ab7807ea3438e6bfdde3606e918a4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cf5c6b61e9b4cc041d9f8e315321c63c78415a63
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092238"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66009420"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>البحث عن المحتوى باستخدام أداة البحث عن المحتوى
 
@@ -70,7 +70,7 @@ ms.locfileid: "65092238"
 
 ## <a name="use-scripts-for-advanced-scenarios"></a>استخدام البرامج النصية للسيناريوهات المتقدمة
 
-في بعض الأحيان، يتعين عليك تنفيذ مهام بحث محتوى أكثر تقدما وتعقيدا وتكرارا. في هذه الحالات، يكون من الأسهل والأسرع استخدام الأوامر في Security & Compliance Center PowerShell. للمساعدة في تسهيل هذا الأمر، أنشأنا عددا من البرامج النصية ل Security & Compliance Center PowerShell لمساعدتك على إكمال المهام المعقدة المتعلقة بالبحث في المحتوى.
+في بعض الأحيان، يتعين عليك تنفيذ مهام بحث محتوى أكثر تقدما وتعقيدا وتكرارا. في هذه الحالات، يكون من الأسهل والأسرع استخدام الأوامر في Security & Compliance PowerShell. للمساعدة في تسهيل هذا الأمر، أنشأنا عددا من البرامج النصية ل Security & Compliance PowerShell لمساعدتك على إكمال المهام المعقدة المتعلقة بالبحث في المحتوى.
 
 - [البحث في مجلدات مواقع وعلب بريد معينة](use-content-search-for-targeted-collections.md) (تسمى مجموعة  *مستهدفة* ) عندما تكون واثقا من وجود العناصر المستجيبة لحالة ما في هذا المجلد
 

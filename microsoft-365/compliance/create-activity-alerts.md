@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: إضافة تنبيهات النشاط وإدارتها في مدخل توافق Microsoft Purview بحيث يرسل لك Microsoft 365 إعلامات بالبريد الإلكتروني عندما يقوم المستخدمون بأنشطة معينة
-ms.openlocfilehash: 99cbbe4a03047b5cf8ef366a228fc78fe9dfbda1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b08c23ec80562418112266d03c58f4b764a128ba
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096997"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018086"
 ---
 # <a name="create-activity-alerts"></a>إنشاء تنبيهات النشاط
 
@@ -128,7 +128,7 @@ ms.locfileid: "65096997"
     |حذف (إزالة) رسالة بريد إلكتروني بشكل دائم من علبة البريد الخاصة بهم.  |الرسائل التي تمت إزالتها من علبة البريد  | أنشطة علبة بريد Exchange  |
     |إرسال رسالة بريد إلكتروني من علبة بريد مشتركة.  |رسالة مرسلة باستخدام أذونات "إرسال باسم"  <br/> و  <br/> رسالة مرسلة باستخدام أذونات "إرسال نيابة عن"  | أنشطة علبة بريد Exchange  |
 
-- يمكنك أيضا استخدام **New-ActivityAlert** و **Set-ActivityAlert** cmdlets في Security & Compliance Center PowerShell لإنشاء تنبيهات النشاط وتحريرها. ضع الأمور التالية في الاعتبار إذا كنت تستخدم أوامر cmdlets هذه لإنشاء تنبيهات النشاط أو تحريرها:
+- يمكنك أيضا استخدام **New-ActivityAlert** و **Set-ActivityAlert** cmdlets في Security & Compliance PowerShell لإنشاء تنبيهات النشاط وتحريرها. ضع الأمور التالية في الاعتبار إذا كنت تستخدم أوامر cmdlets هذه لإنشاء تنبيهات النشاط أو تحريرها:
 
   - إذا كنت تستخدم cmdlet لإضافة نشاط إلى التنبيه غير المدرج في القائمة المنسدلة **"الأنشطة** "، يتم عرض رسالة في صفحة الخصائص للتنبيه الذي يقول، "يحتوي هذا التنبيه على عمليات مخصصة غير مدرجة في المنتقي."
 

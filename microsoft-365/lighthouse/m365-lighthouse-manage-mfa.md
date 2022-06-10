@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية إدارة المصادقة متعددة العوامل.
-ms.openlocfilehash: 53f1b0fa9a477ae74b48c96f76f9b2523fe45c10
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 6db13adbce775ea276352b715cf25f0da7324b87
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023184"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017709"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>إدارة المصادقة متعددة العوامل في Microsoft 365 Lighthouse
 
@@ -33,7 +34,7 @@ ms.locfileid: "65023184"
 
 يجب استيفاء الشروط التالية قبل أن يظهر المستأجر في القائمة:
 
-- يجب أن يكون لدى مستأجر العميل ترخيص Premium Azure AD لكل مستخدم. لمزيد من المعلومات حول التراخيص التي تدعم المصادقة متعددة العوامل، راجع [الميزات والتراخيص لمصادقة Azure AD متعددة العوامل](/azure/active-directory/authentication/concept-mfa-licensing).
+- يجب أن يكون لدى مستأجر العميل ترخيص Azure AD Premium لكل مستخدم. لمزيد من المعلومات حول التراخيص التي تدعم المصادقة متعددة العوامل، راجع [الميزات والتراخيص لمصادقة متعددة العوامل Azure AD](/azure/active-directory/authentication/concept-mfa-licensing).
 
 - يجب أن يكون مستأجر العميل نشطا داخل Microsoft 365 Lighthouse. لمعرفة كيفية تحديد ما إذا كان المستأجر نشطا، راجع [Microsoft 365 نظرة عامة على قائمة مستأجر Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-tenant-list-overview).
 
@@ -49,7 +50,7 @@ ms.locfileid: "65023184"
 
 5. حدد **"حفظ التغييرات**".
 
-لتمكين المصادقة متعددة العوامل من خلال الوصول المشروط، راجع [البرنامج التعليمي: تأمين أحداث تسجيل دخول المستخدم باستخدام Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
+لتمكين المصادقة متعددة العوامل من خلال الوصول المشروط، راجع [البرنامج التعليمي: تأمين أحداث تسجيل دخول المستخدم باستخدام Azure AD المصادقة متعددة العوامل](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
 ## <a name="notify-users-who-arent-registered-for-mfa"></a>إعلام المستخدمين غير المسجلين في المصادقة متعددة العوامل
 

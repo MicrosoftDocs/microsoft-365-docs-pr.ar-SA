@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: قم بتمكين علبة بريد الأرشيف وقم بتشغيل التوسيع التلقائي للأرشفة لزيادة حجم مجلد العناصر القابلة للاسترداد لعل بريد في Microsoft 365.
-ms.openlocfilehash: a05851f1019405a495a7b909bf4a8d096227163d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bbeb72c6a055be42e06c450afccb35965d149dce
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100782"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014983"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>زيادة الحصة النسبية للعناصر القابلة للاسترداد لعلب البريد في الانتظار
 
@@ -64,7 +64,7 @@ ms.locfileid: "65100782"
 
 الخطوة الأولى هي إنشاء علامة استبقاء مخصصة (تسمى علامة نهج الاستبقاء أو RPT) لمجلد العناصر القابلة للاسترداد. كما هو موضح سابقا، ينقل RPT العناصر من مجلد "العناصر القابلة للاسترداد" في علبة البريد الأساسية للمستخدم إلى مجلد "العناصر القابلة للاسترداد" في علبة بريد الأرشيف الخاصة بالمستخدم. يجب عليك استخدام PowerShell لإنشاء RPT لمجلد العناصر القابلة للاسترداد. لا يمكنك استخدام مركز إدارة Exchange (EAC).
 
-1. [الاتصال إلى Exchange Online باستخدام PowerShell البعيد](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. قم بتشغيل الأمر التالي لإنشاء RPT جديد لمجلد العناصر القابلة للاسترداد:
 
@@ -137,7 +137,7 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
 
 ### <a name="use-the-eac-to-apply-the-new-retention-policy"></a>استخدام EAC لتطبيق نهج الاستبقاء الجديد
 
-1. انتقل إلى **RecipientsMailboxes** > .
+1. انتقل إلى **علب بريد** **المستلمين** > .
 
 2. في طريقة عرض القائمة، حدد علبة البريد التي تريد تطبيق نهج الاستبقاء عليها، ثم انقر فوق أيقونة **"تحرير**![".](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)
 
@@ -147,7 +147,7 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
 
 يمكنك أيضا استخدام EAC لتطبيق نهج الاستبقاء على علب بريد متعددة.
 
-1. انتقل إلى **RecipientsMailboxes** > .
+1. انتقل إلى **علب بريد** **المستلمين** > .
 
 2. في طريقة عرض القائمة، استخدم المفتاحين Shift أو Ctrl لتحديد علب بريد متعددة.
 

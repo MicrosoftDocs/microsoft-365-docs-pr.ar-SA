@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم نهج الاستبقاء للحفاظ على التحكم في المحتوى الذي ينشئه المستخدمون باستخدام البريد الإلكتروني والمستندات والمحادثات بكفاءة. احتفظ بما تريده واتخلص مما لا تريده.
-ms.openlocfilehash: abb18142517ceb6c5442ccd372c4f392db706bc1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 6243db961e9c7789ea1a43f41d848d3d9cbda9e2
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65284941"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016449"
 ---
 # <a name="create-and-configure-retention-policies"></a>إنشاء نهج الاستبقاء وتكوينها
 
@@ -78,7 +78,7 @@ ms.locfileid: "65284941"
 > [!NOTE]
 > تدعم نهج الاستبقاء الآن [القنوات المشتركة](/MicrosoftTeams/shared-channels)، قيد المعاينة حاليا. عند تكوين إعدادات الاستبقاء لموقع **رسالة قناة Teams**، إذا كان لدى الفريق أي قنوات مشتركة، فإنهم يرثون إعدادات الاستبقاء من الفريق الأصل.
 
-1. من [مدخل توافق Microsoft Purview](https://compliance.microsoft.com/)، حدد **نهج إدارة** >  دورة حياة البيانات **.**
+1. من [مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/)، حدد نهج **استبقاء** **إدارة** >  دورة حياة البيانات.
 
 2. حدد **نهج استبقاء جديد** لبدء تكوين **نهج الاستبقاء،** وقم بتسمية نهج الاستبقاء الجديد.
 
@@ -134,7 +134,7 @@ Teams هو أكثر من مجرد الدردشات ورسائل القناة. إ
 >
 > لاستخدام هذه الميزة، يجب أن تكون شبكة Yammer هي ["الوضع الأصلي](/yammer/configure-your-yammer-network/overview-native-mode)"، وليس "الوضع المختلط".
 
-1. من [مدخل توافق Microsoft Purview](https://compliance.microsoft.com/)، حدد **نهج إدارة** >  دورة حياة البيانات **.**
+1. من [مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/)، حدد نهج **استبقاء** **إدارة** >  دورة حياة البيانات.
 
 2. حدد **نهج استبقاء جديد** لإنشاء نهج استبقاء جديد.
 
@@ -182,7 +182,7 @@ Yammer هو أكثر من مجرد رسائل المجتمع والرسائل ا
 - مجموعات Microsoft 365
 - Skype for Business
 
-1. من [مدخل توافق Microsoft Purview](https://compliance.microsoft.com/)، حدد **نهج إدارة** >  دورة حياة البيانات **.**
+1. من [مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/)، حدد نهج **استبقاء** **إدارة** >  دورة حياة البيانات.
 
 2. حدد **نهج استبقاء جديد** لبدء تكوين **نهج الاستبقاء،** وقم بتسمية نهج الاستبقاء الجديد.
 
@@ -214,7 +214,7 @@ Yammer هو أكثر من مجرد رسائل المجتمع والرسائل ا
 
 أولا، يجب توزيع نهج الاستبقاء على المواقع التي حددتها، ثم تطبيقها على المحتوى. يمكنك دائما التحقق من حالة توزيع نهج الاستبقاء عن طريق تحديده من صفحة **نهج الاستبقاء** في مدخل توافق Microsoft Purview. من جزء القائمة المنبثقة، إذا رأيت **(خطأ)** مضمنا في الحالة، وفي تفاصيل المواقع، ترى رسالة تفيد بأن نشر النهج يستغرق وقتا أطول من المتوقع أو محاولة إعادة نشر النهج، فحاول تشغيل [الأمر Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) أو [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell لإعادة محاولة توزيع النهج:
 
-1. [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. تشغيل أحد الأوامر التالية:
     

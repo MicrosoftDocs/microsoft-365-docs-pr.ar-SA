@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: تعرف على كيفية إنشاء إعلامات لأنشطة مطابقة البيانات الدقيقة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 163c1386bed2e1f100a42ab8b22b6404fe6bb145
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 75a0e3c50d9dc540bf76187e6aedcbd5642d250b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760262"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66009377"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>إنشاء إعلامات لأنشطة مطابقة البيانات الدقيقة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند [إنشاء أنواع معلومات حساسة مخصصة مع مطابقة البيانات الدقيقة (EDM)،](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) هناك عدد من الأنشطة التي يتم إنشاؤها في [سجل التدقيق](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log). يمكنك استخدام [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell cmdlet لإنشاء إعلامات تعلمك عند حدوث هذه الأنشطة:
 
@@ -58,7 +60,7 @@ ms.locfileid: "64760262"
 
 ## <a name="configure-notifications-for-edm-activities"></a>تكوين الإعلامات لأنشطة EDM
 
-1. الاتصال إلى [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. الاتصال إلى [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. `New-ProtectionAlert` قم بتشغيل cmdlet باستخدام النشاط الذي تريد إنشاء الإعلام له.  على سبيل المثال، إذا كنت تريد أن يتم إعلامك عند حدوث الإجراء **UploadDataCompleted** ، فشغل:
 

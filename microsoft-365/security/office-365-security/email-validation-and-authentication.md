@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: يمكن للمسؤولين معرفة كيفية استخدام EOP لمصادقة البريد الإلكتروني (SPF وDKIM وDMARC) للمساعدة في منع الانتحال والتصيد الاحتيالي والبريد العشوائي.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b0a1f1bec76a8dd22bc04502ea7ca09f2c7af66
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 0dca070cb6d6d1b2cb26acb3604e331f27824877
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772763"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008856"
 ---
 # <a name="email-authentication-in-eop"></a>مصادقة البريد الإلكتروني في EOP
 
@@ -170,7 +170,6 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 - عنوان IP المصدر (مقسم إلى /24 نطاق CIDR)
 - المجال التنظيمي لسجل DNS العكسي (PTR).
-- مجال DKIM تم التحقق منه.
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>إنشاء إدخال السماح لزوج المرسل/المستلم
 

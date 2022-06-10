@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: يمكن للمسؤولين تمكين دعم وصف الحساسية لملفات Word Excel PowerPoint في SharePoint OneDrive.
-ms.openlocfilehash: ee24663fd5fe1de1bdce8b2d210174a05f156394
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 9130558bb7ae1af86981e1c052a17565f6d943af
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621366"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014245"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive
 
@@ -32,7 +32,7 @@ ms.locfileid: "65621366"
 
 تمكين التسمية المضمنة [لملفات Office المدعومة](sensitivity-labels-office-apps.md#office-file-types-supported) في SharePoint OneDrive بحيث يمكن للمستخدمين تطبيق [أوصاف الحساسية](sensitivity-labels.md) في Office على الويب. عند تمكين هذه الميزة، سيرى المستخدمون زر **الحساسية** على الشريط حتى يتمكنوا من تطبيق التسميات، ورؤية أي اسم تسمية مطبق على شريط المعلومات.
 
-يؤدي تمكين هذه الميزة أيضا إلى SharePoint OneDrive القدرة على معالجة محتويات ملفات Office التي تم تشفيرها باستخدام وصف الحساسية. يمكن تطبيق التسمية في Office على الويب أو في تطبيقات سطح المكتب Office وتحميلها أو حفظها في SharePoint OneDrive. حتى تقوم بتمكين هذه الميزة، لا يمكن لهذه الخدمات معالجة الملفات المشفرة، ما يعني أن التأليف المشترك وeDiscovery Microsoft Purview منع فقدان البيانات والبحث والميزات التعاونية الأخرى لن تعمل لهذه الملفات.
+يؤدي تمكين هذه الميزة أيضا إلى SharePoint OneDrive القدرة على معالجة محتويات ملفات Office التي تم تشفيرها باستخدام وصف الحساسية. يمكن تطبيق التسمية في Office على الويب أو في تطبيقات سطح المكتب Office وتحميلها أو حفظها في SharePoint OneDrive. حتى تقوم بتمكين هذه الميزة، لا يمكن لهذه الخدمات معالجة الملفات المشفرة، ما يعني أن التأليف المشترك وeDiscovery ومنع فقدان بيانات Microsoft Purview والبحث والميزات التعاونية الأخرى لن تعمل لهذه الملفات.
 
 بعد تمكين تسميات الحساسية لملفات Office في SharePoint OneDrive، للملفات الجديدة والمتغيرة التي تحتوي على تسمية حساسية تطبق التشفير باستخدام مفتاح مستند إلى السحابة (ولا تستخدم [تشفير المفتاح المزدوج](double-key-encryption.md):
 
@@ -81,7 +81,7 @@ ms.locfileid: "65621366"
 
 - لا يطبق SharePoint OneDrive تلقائيا تسميات الحساسية على الملفات الموجودة التي قمت بتشفيرها بالفعل باستخدام تسميات حماية البيانات Azure. بدلا من ذلك، لكي تعمل الميزات بعد تمكين تسميات الحساسية لملفات Office في SharePoint OneDrive، أكمل هذه المهام:
 
-    1. تأكد من [ترحيل تسميات azure حماية البيانات](/azure/information-protection/configure-policy-migrate-labels) إلى تسميات الحساسية [ونشرها](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) من مدخل التوافق في Microsoft Purview.
+    1. تأكد من [ترحيل تسميات Azure حماية البيانات](/azure/information-protection/configure-policy-migrate-labels) إلى تسميات الحساسية [ونشرها](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) من مدخل توافق Microsoft Purview.
     2. قم بتنزيل الملفات المسماة ثم قم بتحميلها إلى موقعها الأصلي في SharePoint أو OneDrive.
 
 - لا يمكن SharePoint OneDrive معالجة الملفات المشفرة عندما تحتوي التسمية التي طبقت التشفير على أي من [التكوينات التالية للتشفير](encryption-sensitivity-labels.md#configure-encryption-settings):
@@ -96,7 +96,7 @@ ms.locfileid: "65621366"
 - إذا تم تسمية مستند أثناء [سحبه في SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)، فلن يعرض عمود **الحساسية** في مكتبة المستندات اسم التسمية حتى يتم إيداع المستند وفتحه بعد ذلك في SharePoint.
 
 - إذا تم تنزيل مستند مسمى ومشفر من SharePoint أو OneDrive بواسطة تطبيق أو خدمة تستخدم اسم كيان الخدمة، ثم تم تحميله مرة أخرى باستخدام تسمية تطبق إعدادات تشفير مختلفة، فسيفشل التحميل. مثال على السيناريو هو Microsoft Defender for Cloud Apps تغيير وصف الحساسية على ملف من **"سري**" إلى **"سري للغاية**"، أو من **"سري**" إلى **"عام**".
-    
+
     لا يفشل التحميل إذا كان التطبيق أو الخدمة يقوم أولا بتشغيل [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet، كما هو موضح في [قسم إزالة المستند المسمى](#remove-encryption-for-a-labeled-document) . أو قبل التحميل، يتم حذف الملف الأصلي، أو يتم تغيير اسم الملف.
 
 - قد يواجه المستخدمون تأخيرات في القدرة على فتح المستندات المشفرة في سيناريو "حفظ باسم" التالي: باستخدام إصدار سطح المكتب من Office، يختار المستخدم "حفظ باسم" لمستند يحتوي على وصف حساسية يطبق التشفير. يحدد المستخدم SharePoint أو OneDrive للموقع، ثم يحاول على الفور فتح هذا المستند في Office على الويب. إذا كانت الخدمة لا تزال تعالج التشفير، فسيرى المستخدم رسالة تفيد بأنه يجب فتح المستند في تطبيق سطح المكتب الخاص به. إذا حاولوا مرة أخرى بعد بضع دقائق، يتم فتح المستند بنجاح في Office على الويب.
@@ -106,7 +106,7 @@ ms.locfileid: "65621366"
 - بالنسبة للمستندات المشفرة في Office على الويب، لا يتم منع النسخ إلى الحافظة ولقطات الشاشة. لمزيد من المعلومات، راجع ["هل يمكن Rights Management منع التقاط الشاشة؟](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
 
 - بشكل افتراضي، لا تدعم تطبيقات سطح المكتب وتطبيقات الأجهزة المحمولة Office التأليف المشترك للملفات المسماة بالتشفير. تستمر هذه التطبيقات في فتح الملفات المسماة والمتشفرة في وضع التحرير الحصري.
-    
+
     > [!NOTE]
     > التأليف المشترك مدعوم الآن Windows macOS. لمزيد من المعلومات، راجع [تمكين التأليف المشترك للملفات المشفرة بتسميات الحساسية](sensitivity-labels-coauthoring.md).
 
@@ -119,19 +119,19 @@ ms.locfileid: "65621366"
   - التشفير الذي تم تطبيقه باستخدام [تشفير المفتاح المزدوج](double-key-encryption.md)
   - التشفير الذي تم تطبيقه بشكل مستقل عن تسمية، على سبيل المثال، عن طريق تطبيق قالب حماية Rights Management مباشرة.
 
-- التسميات التي تم تكوينها [للغات الأخرى](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell) غير معتمدة وتعرض اللغة الأصلية فقط.
+- التسميات التي تم تكوينها [للغات الأخرى](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell) غير معتمدة وتعرض اللغة الأصلية فقط.
 
 - إذا حذفت تسمية تم تطبيقها على مستند في SharePoint أو OneDrive، بدلا من إزالة التسمية من نهج التسمية المعمول به، فلن يتم تسمية المستند عند تنزيله أو تشفيره. بالمقارنة، إذا تم تخزين المستند المسمى خارج SharePoint أو OneDrive، يظل المستند مشفرا إذا تم حذف التسمية. لاحظ أنه على الرغم من أنك قد تحذف التسميات أثناء مرحلة الاختبار، إلا أنه من النادر جدا حذف تسمية في بيئة إنتاج.
 
 ## <a name="how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in"></a>كيفية تمكين أوصاف الحساسية SharePoint OneDrive (الاشتراك)
 
-يمكنك تمكين القدرات الجديدة باستخدام مدخل التوافق في Microsoft Purview، أو باستخدام PowerShell. كما هو الحال مع جميع تغييرات التكوين على مستوى المستأجر SharePoint OneDrive، يستغرق سريان التغيير حوالي 15 دقيقة.
+يمكنك تمكين القدرات الجديدة باستخدام مدخل توافق Microsoft Purview، أو باستخدام PowerShell. كما هو الحال مع جميع تغييرات التكوين على مستوى المستأجر SharePoint OneDrive، يستغرق سريان التغيير حوالي 15 دقيقة.
 
-### <a name="use-the-microsoft-purview-compliance-portal-to-enable-support-for-sensitivity-labels"></a>استخدام مدخل التوافق في Microsoft Purview لتمكين دعم أوصاف الحساسية
+### <a name="use-the-microsoft-purview-compliance-portal-to-enable-support-for-sensitivity-labels"></a>استخدام مدخل الامتثال ل Microsoft Purview لتمكين دعم أوصاف الحساسية
 
 هذا الخيار هو أسهل طريقة لتمكين تسميات الحساسية SharePoint OneDrive، ولكن يجب عليك تسجيل الدخول كمسؤول عام للمستأجر الخاص بك.
 
-1. سجل الدخول إلى [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/) كمسؤول عام، وانتقل إلى **SolutionsInformation** >  **protectionLabels** > 
+1. سجل الدخول إلى [مدخل توافق Microsoft Purview](https://compliance.microsoft.com/) كمسؤول عام، وانتقل إلى **تسميات** **حماية** >  معلومات **الحلول** > 
 
 2. إذا رأيت رسالة لتشغيل القدرة على معالجة المحتوى في Office الملفات عبر الإنترنت، فحدد **"تشغيل الآن**":
 
@@ -144,7 +144,7 @@ ms.locfileid: "65621366"
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>استخدام PowerShell لتمكين دعم أوصاف الحساسية
 
-كبديل لاستخدام مدخل التوافق في Microsoft Purview، يمكنك تمكين دعم تسميات الحساسية باستخدام [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet من SharePoint Online PowerShell.
+كبديل لاستخدام مدخل توافق Microsoft Purview، يمكنك تمكين دعم تسميات الحساسية باستخدام [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet من SharePoint Online PowerShell.
 
 إذا كان لديك Microsoft 365 Multi-Geo، يجب استخدام PowerShell لتمكين هذا الدعم لجميع المواقع الجغرافية الخاصة بك.
 
@@ -228,7 +228,7 @@ InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
 
 للحصول على GUIDs لأوصاف الحساسية الخاصة بك، استخدم [Get-Label](/powershell/module/exchange/get-label) cmdlet:
 
-1. أولا، [اتصل Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. أولا، [اتصل Office 365 Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
     على سبيل المثال، في جلسة PowerShell التي تقوم بتشغيلها كمسؤول، سجل الدخول باستخدام حساب مسؤول عام.
 

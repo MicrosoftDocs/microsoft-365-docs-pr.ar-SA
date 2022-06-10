@@ -1,5 +1,5 @@
 ---
-title: نظرة عامة على نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)
+title: نظرة عامة على دليل نشر قواعد الحد من سطح الهجوم (ASR)
 description: يوفر نظرة عامة وإرشادات المتطلبات الأساسية حول نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR).
 keywords: نشر قواعد تقليل الأجزاء المعرضة للهجوم، ونشر ASR، وتمكين قواعد asr، وتكوين ASR، ونظام منع الاختراق المضيف، وقواعد الحماية، وقواعد مكافحة الاستغلال، وقواعد مكافحة الاستغلال، وقواعد الاستغلال، وقواعد منع العدوى، Microsoft Defender لنقطة النهاية، وتكوين قواعد ASR
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 8743d13939e73e25cefd08724d9a2f8d5a7fa410
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 18654dfb1ae6ae10596889fb4491604a37b8ffe8
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705527"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017420"
 ---
-# <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>نظرة عامة على نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)
+# <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>نظرة عامة على دليل نشر قواعد الحد من سطح الهجوم (ASR)
 
 الأسطح المعرضة للهجوم هي جميع الأماكن التي تكون فيها مؤسستك عرضة للتهديدات الإلكترونية والهجمات. تتضمن الأسطح الهجومية لمؤسستك جميع الأماكن التي يمكن للمهاجم فيها اختراق أجهزة مؤسستك أو شبكاتها. إن تقليل مساحة الهجوم يعني حماية أجهزة مؤسستك وشبكتها، ما يترك للمهاجمين طرقا أقل للهجوم. يمكن أن يساعد تكوين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)، وهي واحدة من العديد من ميزات الأمان الموجودة في Microsoft Defender لنقطة النهاية.
 
@@ -46,7 +46,7 @@ ms.locfileid: "64705527"
 >[!IMPORTANT]
 >يوفر هذا الدليل صورا وأمثلة لمساعدتك في تحديد كيفية تكوين قواعد ASR؛ قد لا تعكس هذه الصور والأمثلة أفضل خيارات التكوين للبيئة الخاصة بك.
 
-قبل البدء، راجع [نظرة عامة حول تقليل الأجزاء المعرضة للهجوم](overview-attack-surface-reduction.md)، [وتجميل قواعد تقليل الأجزاء المعرضة للهجوم - الجزء 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) للحصول على معلومات أساسية. لفهم مجالات التغطية والتأثير المحتمل، تعرف على المجموعة الحالية من قواعد ASR؛ راجع [مرجع قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-reference.md).  بينما تتعرف على مجموعة قواعد ASR، لاحظ تعيينات GUID لكل قاعدة؛ راجع: [قواعد ASR ومصفوفة GUIDs](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix).
+قبل البدء، راجع [نظرة عامة حول تقليل الأجزاء المعرضة للهجوم](overview-attack-surface-reduction.md)، [وتجميل قواعد تقليل الأجزاء المعرضة للهجوم - الجزء 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) للحصول على معلومات أساسية. لفهم مجالات التغطية والتأثير المحتمل، تعرف على المجموعة الحالية من قواعد ASR؛ راجع [مرجع قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-reference.md).  بينما تتعرف على مجموعة قواعد ASR، لاحظ تعيينات GUID لكل قاعدة؛ راجع: [قاعدة ASR إلى مصفوفة GUID](attack-surface-reduction-rules-reference.md#asr-rule-to-guid-matrix).
 
 قواعد ASR هي قدرة واحدة فقط من قدرات تقليل الأجزاء المعرضة للهجوم داخل Microsoft Defender لنقطة النهاية. سيدخل هذا المستند في مزيد من التفاصيل حول نشر قواعد ASR بشكل فعال لإيقاف التهديدات المتقدمة مثل برامج الفدية الضارة التي يديرها الإنسان والتهديدات الأخرى.  
 
@@ -129,13 +129,13 @@ ms.locfileid: "64705527"
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>مواضيع إضافية في مجموعة النشر هذه
 
-[قواعد اختبار تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[اختبار قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
 [تمكين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 
 [تشغيل قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[مرجع قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-reference.md)
+[مرجع قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-reference.md)
 
 ## <a name="reference"></a>المرجع
 
@@ -171,7 +171,7 @@ ms.locfileid: "64705527"
 
 [تكوين الاستثناءات والتحقق من صحتها استنادا إلى الملحق أو الاسم أو الموقع](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
-[دعم النظام الأساسي برنامج الحماية من الفيروسات من Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md)
+[دعم النظام الأساسي لبرنامج الحماية من الفيروسات من Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 [نظرة عامة على المخزون في مركز إدارة Microsoft 365 Apps](/deployoffice/admincenter/inventory)
 

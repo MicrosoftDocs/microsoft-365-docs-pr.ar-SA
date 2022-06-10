@@ -17,17 +17,17 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: استخدم Windows PowerShell للحصول على تفاصيل حول الأجهزة الأساسية للتنقل والأمان في مؤسستك.
-ms.openlocfilehash: 4cac15e8377370e4bd2f8b359a39aaf830f13d10
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: استخدم Azure AD PowerShell للحصول على تفاصيل حول الأجهزة الأساسية للتنقل والأمان في مؤسستك.
+ms.openlocfilehash: 816d397f29d6e1726448d92e641856f2a5a31a73
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781062"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007185"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>الحصول على تفاصيل حول الأجهزة المدارة الأساسية للتنقل والأمان
 
-توضح لك هذه المقالة كيفية استخدام Windows PowerShell للحصول على تفاصيل حول الأجهزة في مؤسستك التي قمت بإعدادها ل Basic Mobility and Security.
+توضح لك هذه المقالة كيفية استخدام Azure AD PowerShell للحصول على تفاصيل حول الأجهزة في مؤسستك التي قمت بإعدادها ل Basic Mobility and Security.
 
 فيما يلي تصنيف تفصيلي لتفاصيل الجهاز المتوفرة لك.
 

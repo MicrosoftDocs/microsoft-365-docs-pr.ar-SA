@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 416baed923884d9cbabbd6ee7607a48b0a19ab62
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b80db06faea9c76c7df671468b94fc11f0c63df
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092360"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010077"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>ترحيل عمليات بحث eDiscovery القديمة وحتفظ بها إلى مدخل التوافق
 
@@ -35,31 +35,32 @@ ms.locfileid: "65092360"
 
 ## <a name="before-you-begin"></a>قبل البدء
 
+- تحتاج إلى تثبيت الوحدة النمطية Exchange Online V2. للحصول على الإرشادات، راجع [تثبيت وحدة EXO V2 وصيانتها](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+
 - يجب أن تكون عضوا في مجموعة دور eDiscovery Manager في مدخل التوافق لتشغيل أوامر PowerShell الموضحة في هذه المقالة. يجب أن تكون أيضا عضوا في مجموعة دور إدارة الاكتشافات في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>.
 
 - توفر هذه المقالة إرشادات حول كيفية إنشاء قائمة احتجاز eDiscovery. سيتم تطبيق نهج الاحتجاز على علب البريد من خلال عملية غير متزامنة. عند إنشاء قائمة احتجاز eDiscovery، يجب إنشاء كل من CaseHoldPolicy و CaseHoldRule، وإلا فلن يتم إنشاء قائمة الاحتجاز ولن يتم وضع مواقع المحتوى قيد الاحتجاز.
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>الخطوة 1: الاتصال إلى Exchange Online PowerShell ومركز التوافق & الأمان PowerShell
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-powershell"></a>الخطوة 1: الاتصال Exchange Online PowerShell والأمان & Compliance PowerShell
 
-الخطوة الأولى هي الاتصال Exchange Online PowerShell و Security & Compliance Center PowerShell. يمكنك نسخ البرنامج النصي التالي ولصقه في نافذة PowerShell ثم تشغيله. ستتم مطالبتك ببيانات الاعتماد للمؤسسة التي تريد الاتصال بها. 
+الخطوة الأولى هي الاتصال Exchange Online PowerShell والأمان & Compliance PowerShell في نفس نافذة PowerShell. يمكنك نسخ الأوامر التالية ولصقها في نافذة PowerShell ثم تشغيلها. ستتم مطالبتك ببيانات الاعتماد.
 
 ```powershell
-$UserCredential = Get-Credential
-$sccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $sccSession -DisableNameChecking
-$exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $exoSession -AllowClobber -DisableNameChecking
+Connect-IPPSSession
+Connect-ExchangeOnline -UseRPSSession
 ```
 
-تحتاج إلى تشغيل الأوامر في الخطوات التالية في جلسة عمل PowerShell هذه.
+للحصول على إرشادات مفصلة، راجع [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>الخطوة 2: الحصول على قائمة بعمليات البحث In-Place eDiscovery باستخدام Get-MailboxSearch
 
-بعد المصادقة، يمكنك الحصول على قائمة In-Place عمليات البحث في eDiscovery عن طريق تشغيل **Get-MailboxSearch** cmdlet. انسخ الأمر التالي والصقه في PowerShell ثم قم بتشغيله. سيتم سرد قائمة عمليات البحث بأسماء الأشخاص وحالة أي In-Place عمليات احتجاز.
+بعد الاتصال، يمكنك الحصول على قائمة In-Place عمليات البحث في eDiscovery عن طريق تشغيل **Get-MailboxSearch** cmdlet. انسخ الأمر التالي والصقه في نافذة PowerShell ثم قم بتشغيله.
 
 ```powershell
 Get-MailboxSearch
 ```
+
+سيتم سرد قائمة عمليات البحث بأسماء الأشخاص وحالة أي In-Place عمليات احتجاز.
 
 سيكون إخراج cmdlet مشابها للآتي:
 
@@ -74,7 +75,7 @@ $search = Get-MailboxSearch -Identity "Search 1"
 ```
 
 ```powershell
-$search | FL
+$search | Format-List
 ```
 
 سيكون إخراج هذين الأمرين مشابها لما يلي:
@@ -82,7 +83,7 @@ $search | FL
 ![مثال على إخراج PowerShell من استخدام Get-MailboxSearch للبحث الفردي.](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> مدة احتجاز In-Place في هذا المثال غير محددة (*ItemHoldPeriod: غير محدودة*). هذا نموذجي لسيناريوهات eDiscovery والتحقيق القانوني. إذا كانت مدة الاحتجاز مختلفة عن قيمة غير محددة، فمن المحتمل أن يكون السبب هو استخدام قائمة الاحتجاز للاحتفاظ بالمحتوى في سيناريو استبقاء. بدلا من استخدام أوامر cmdlets eDiscovery في Security & Compliance Center PowerShell لسيناريوهات الاستبقاء، نوصي باستخدام [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) و [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) للاحتفاظ بالمحتوى. ستكون نتيجة استخدام أوامر cmdlets هذه مشابهة لاستخدام **New-CaseHoldPolicy** و **New-CaseHoldRule**، ولكن ستتمكن من تحديد فترة استبقاء وإجراء استبقاء، مثل حذف المحتوى بعد انتهاء فترة الاستبقاء. أيضا، لا يتطلب استخدام أوامر cmdlets الاستبقاء إقران قوائم الاحتفاظ بحالة eDiscovery.
+> مدة احتجاز In-Place في هذا المثال غير محددة (*ItemHoldPeriod: غير محدودة*). هذا نموذجي لسيناريوهات eDiscovery والتحقيق القانوني. إذا كانت مدة الاحتجاز مختلفة عن قيمة غير محددة، فمن المحتمل أن يكون السبب هو استخدام قائمة الاحتجاز للاحتفاظ بالمحتوى في سيناريو استبقاء. بدلا من استخدام أوامر cmdlets eDiscovery في Security & Compliance PowerShell لسيناريوهات الاستبقاء، نوصي باستخدام [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) و [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) للاحتفاظ بالمحتوى. ستكون نتيجة استخدام أوامر cmdlets هذه مشابهة لاستخدام **New-CaseHoldPolicy** و **New-CaseHoldRule**، ولكن ستتمكن من تحديد فترة استبقاء وإجراء استبقاء، مثل حذف المحتوى بعد انتهاء فترة الاستبقاء. أيضا، لا يتطلب استخدام أوامر cmdlets الاستبقاء إقران قوائم الاحتفاظ بحالة eDiscovery.
 
 ## <a name="step-4-create-a-case-in-the-microsoft-purview-compliance-portal"></a>الخطوة 4: إنشاء حالة في مدخل توافق Microsoft Purview
 
@@ -91,6 +92,7 @@ $search | FL
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
+
 ![مثال على تشغيل الأمر New-ComplianceCase.](../media/MigrateLegacyeDiscovery3.png)
 
 ## <a name="step-5-create-the-ediscovery-hold"></a>الخطوة 5: إنشاء قائمة احتجاز eDiscovery
@@ -152,23 +154,23 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 ## <a name="more-information"></a>معلومات إضافية
 
 - لمزيد من المعلومات حول In-Place eDiscovery & في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>، راجع:
-  
-  - [eDiscovery الموضعي](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
+
+  - [eDiscovery موضعي](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
   - [الاحتجاز الموضعي والتقاضي](/exchange/security-and-compliance/in-place-and-litigation-holds)
 
 - لمزيد من المعلومات حول أوامر PowerShell cmdlets المستخدمة في المقالة، راجع:
 
   - [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch)
-  
+
   - [New-ComplianceCase](/powershell/module/exchange/new-compliancecase)
 
   - [New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy)
-  
+
   - [New-CaseHoldRule](/powershell/module/exchange/new-caseholdrule)
 
   - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
-  
+
   - [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)

@@ -1,5 +1,5 @@
 ---
-title: تعيين أذونات eDiscovery في مدخل التوافق في Microsoft Purview
+title: تعيين أذونات eDiscovery في مدخل توافق Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,29 +16,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: تعيين الأذونات المطلوبة لتنفيذ المهام ذات الصلة ب eDiscovery باستخدام مدخل التوافق في Microsoft Purview.
+description: تعيين الأذونات المطلوبة لتنفيذ المهام ذات الصلة ب eDiscovery باستخدام مدخل توافق Microsoft Purview.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 112109d50f0f7e1f11687a325f8756cf2b355e5c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: facd219019aa7ad2bd6325da25a2e4da3db660b1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419429"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013365"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>تعيين أذونات eDiscovery في مدخل التوافق
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-إذا كنت تريد أن يستخدم الأشخاص أيا من [الأدوات المتعلقة ب eDiscovery](ediscovery.md) في مدخل التوافق في Microsoft Purview، يجب عليك تعيين الأذونات المناسبة لهم. أسهل طريقة للقيام بذلك هي إضافة الشخص مجموعة الأدوار المناسبة في صفحة **الأذونات** في مدخل التوافق. يصف هذا الموضوع الأذونات المطلوبة لتنفيذ مهام eDiscovery.
+إذا كنت تريد أن يستخدم الأشخاص أيا من [الأدوات ذات الصلة ب eDiscovery](ediscovery.md) في مدخل توافق Microsoft Purview، يجب عليك تعيين الأذونات المناسبة لهم. أسهل طريقة للقيام بذلك هي إضافة الشخص مجموعة الأدوار المناسبة في صفحة **الأذونات** في مدخل التوافق. يصف هذا الموضوع الأذونات المطلوبة لتنفيذ مهام eDiscovery.
 
 > [!TIP]
 > يمكنك عرض الأذونات الخاصة بك على صفحة نظرة عامة على eDiscovery (Premium) في مدخل التوافق. يجب أن يكون لديك دور واحد على الأقل تم تعيينه لعرض الأذونات الخاصة بك.
 
 تسمى مجموعة الأدوار الأساسية المتعلقة ب eDiscovery في مدخل التوافق **eDiscovery Manager**. هناك مجموعتان فرعيتان ضمن مجموعة الأدوار هذه.
   
-- **eDiscovery Manager** - يمكن لمدير eDiscovery استخدام أدوات البحث eDiscovery للبحث في مواقع المحتوى في المؤسسة، وتنفيذ إجراءات مختلفة متعلقة بالبحث مثل معاينة نتائج البحث وتصديرها. يمكن للأعضاء أيضا إنشاء الحالات وإدارتها في Microsoft Purview eDiscovery (قياسي) Microsoft Purview eDiscovery (Premium)، وإضافة أعضاء وإزالتها إلى حالة ما، وإنشاء عمليات احتجاز حالة، وتشغيل عمليات البحث المقترنة بقضية، والوصول إلى بيانات الحالة. يمكن لمديري eDiscovery الوصول إلى الحالات التي يقومون بإنشائها وإدارتها فقط. لا يمكنهم الوصول إلى الحالات التي أنشأها مديرو eDiscovery الآخرون أو إدارتها.
+- **eDiscovery Manager** - يمكن لمدير eDiscovery استخدام أدوات البحث eDiscovery للبحث في مواقع المحتوى في المؤسسة، وتنفيذ إجراءات مختلفة متعلقة بالبحث مثل معاينة نتائج البحث وتصديرها. يمكن للأعضاء أيضا إنشاء الحالات وإدارتها في Microsoft Purview eDiscovery (قياسي) وMicrosoft Purview eDiscovery (Premium)، وإضافة أعضاء وإزالتها إلى حالة ما، وإنشاء عمليات احتجاز حالة، وتشغيل عمليات البحث المقترنة بالحالة، والوصول إلى بيانات الحالة. يمكن لمديري eDiscovery الوصول إلى الحالات التي يقومون بإنشائها وإدارتها فقط. لا يمكنهم الوصول إلى الحالات التي أنشأها مديرو eDiscovery الآخرون أو إدارتها.
   
 - **مسؤول eDiscovery** - مسؤول eDiscovery هو عضو في مجموعة أدوار eDiscovery Manager، ويمكنه تنفيذ نفس المهام المتعلقة بالبحث في المحتوى وإدارة الحالة التي يمكن أن يقوم بها مدير eDiscovery. بالإضافة إلى ذلك، يمكن لمسؤول eDiscovery:
   
@@ -59,7 +59,7 @@ ms.locfileid: "65419429"
 
 - يجب أن تكون عضوا في مجموعة دور إدارة المؤسسة أو أن يتم تعيين دور "إدارة الدور" لتعيين أذونات eDiscovery في مدخل التوافق.
 
-- يمكنك استخدام [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet في Security & Compliance Center PowerShell لإضافة مجموعة أمان ممكنة للبريد كعضو في المجموعة الفرعية eDiscovery Managers في مجموعة دور eDiscovery Manager. ومع ذلك، لا يمكنك إضافة مجموعة أمان ممكنة للبريد إلى المجموعة الفرعية لمسؤولي eDiscovery. للحصول على التفاصيل، راجع [المزيد من المعلومات](#more-information).
+- يمكنك استخدام [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet في Security & Compliance PowerShell لإضافة مجموعة أمان ممكنة للبريد كعضو في المجموعة الفرعية eDiscovery Managers في مجموعة دور eDiscovery Manager. ومع ذلك، لا يمكنك إضافة مجموعة أمان ممكنة للبريد إلى المجموعة الفرعية لمسؤولي eDiscovery. للحصول على التفاصيل، راجع [المزيد من المعلومات](#more-information).
   
 ## <a name="assign-ediscovery-permissions"></a>تعيين أذونات مسؤول eDiscovery
 
@@ -67,9 +67,11 @@ ms.locfileid: "65419429"
   
 2. في الجزء الأيمن، حدد **"أذونات**".
 
-3. في صفحة **"الأذونات & Roles** "، ضمن **"مركز التوافق**"، انقر فوق **"Roles**".
+3. في صفحة **"الأذونات & Roles** "، ضمن **حلول "Microsoft Purview**"، انقر فوق **"Roles**".
 
-4. في صفحة **أدوار مركز التوافق** ، حدد **eDiscovery Manager**.
+   للانتقال مباشرة إلى هذه الصفحة، استخدم <https://compliance.microsoft.com/compliancecenterpermissions>.
+
+4. في صفحة **"Role groups for Microsoft Purview solutions** "، حدد **"eDiscovery Manager**".
   
 5. في صفحة **القائمة المنبثقة eDiscovery Manager** ، قم بأحد الإجراءات التالية استنادا إلى أذونات eDiscovery التي تريد تعيينها.
   
@@ -88,17 +90,16 @@ ms.locfileid: "65419429"
   
 | دور | مسؤول التوافق | مسؤول & eDiscovery Manager | إدارة المؤسسة | المراجع |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|إدارة الحالة <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> | <br/> |
-|اتصال <br/> | <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|البحث عن التوافق <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> | <br/> |
-|القيم <br/> | <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|التصدير <br/> | <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|عقد <br/>  |![علامة الاختيار.](../media/checkmark.png) <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> | <br/> |
-|معاينه <br/>  | <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> | <br/> | <br/> |
-|مراجعة <br/>  | <br/> |![علامة الاختيار.](../media/checkmark.png) <br/> | <br/> |![علامة اختيار](../media/checkmark.png) <br/> |
-|فك تشفير RMS <br/>  ||![علامة اختيار](../media/checkmark.png) <br/> |||
-|البحث والإزالة <br/> | <br/> | <br/> |![علامة اختيار](../media/checkmark.png)<br/> | <br/> |
-||||||
+|إدارة الحالة|![علامة الاختيار.](../media/checkmark.png)|![علامة الاختيار.](../media/checkmark.png)|![علامة الاختيار.](../media/checkmark.png)||
+|اتصال||![علامة الاختيار.](../media/checkmark.png)|||
+|البحث عن التوافق|![علامة الاختيار.](../media/checkmark.png)|![علامة الاختيار.](../media/checkmark.png)|![علامة الاختيار.](../media/checkmark.png)||
+|القيم||![علامة الاختيار.](../media/checkmark.png)|||
+|التصدير||![علامة الاختيار.](../media/checkmark.png)|||
+|عقد|![علامة الاختيار.](../media/checkmark.png)|![علامة الاختيار.](../media/checkmark.png)|![علامة الاختيار.](../media/checkmark.png)||
+|معاينه||![علامة الاختيار.](../media/checkmark.png)|||
+|مراجعة||![علامة الاختيار.](../media/checkmark.png)||![علامة اختيار](../media/checkmark.png)|
+|فك تشفير RMS||![علامة اختيار](../media/checkmark.png)|||
+|البحث والإزالة|||![علامة اختيار](../media/checkmark.png)||
   
 تصف الأقسام التالية كل من أدوار RBAC المتعلقة ب eDiscovery المدرجة في الجدول السابق.
 
@@ -138,7 +139,7 @@ ms.locfileid: "65419429"
 
 يتيح الدور للمستخدمين تصدير نتائج البحث في المحتوى إلى كمبيوتر محلي. كما يتيح لهم إعداد نتائج البحث للتحليل في eDiscovery (Premium).
 
-لمزيد من المعلومات حول تصدير نتائج البحث، راجع [تصدير نتائج البحث من مدخل التوافق في Microsoft Purview](export-search-results.md).
+لمزيد من المعلومات حول تصدير نتائج البحث، راجع [تصدير نتائج البحث من مدخل توافق Microsoft Purview](export-search-results.md).
 
 ### <a name="hold"></a>عقد
 
@@ -198,7 +199,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
   - نظرا لأن مسؤول eDiscovery يمكنه عرض جميع حالات eDiscovery (القياسية) وeDiscovery (Premium) والوصول إليها، يمكنهم تدقيق جميع الحالات وعمليات البحث المرتبطة بالامتثال والإشراف عليها. يمكن أن يساعد هذا في منع أي إساءة استخدام لعمليات البحث عن التوافق أو حالات eDiscovery. ولأن مسؤولي eDiscovery يمكنهم الوصول إلى المعلومات الحساسة المحتملة في نتائج البحث عن التوافق، يجب عليك تحديد عدد الأشخاص الذين هم مسؤولو eDiscovery.
 
-- **هل يمكنني إضافة مجموعة كعضو في مجموعة أدوار eDiscovery Manager؟** كما هو موضح سابقا، يمكنك إضافة مجموعة أمان ممكنة للبريد كعضو في المجموعة الفرعية eDiscovery Managers في مجموعة أدوار eDiscovery Manager باستخدام **cmdlet Add-RoleGroupMember** في Security & Compliance Center PowerShell. على سبيل المثال، يمكنك تشغيل الأمر التالي لإضافة مجموعة أمان ممكنة للبريد إلى مجموعة أدوار eDiscovery Manager. 
+- **هل يمكنني إضافة مجموعة كعضو في مجموعة أدوار eDiscovery Manager؟** كما هو موضح سابقا، يمكنك إضافة مجموعة أمان ممكنة للبريد كعضو في المجموعة الفرعية eDiscovery Managers في مجموعة دور eDiscovery Manager باستخدام **cmdlet Add-RoleGroupMember** في Security & Compliance PowerShell. على سبيل المثال، يمكنك تشغيل الأمر التالي لإضافة مجموعة أمان ممكنة للبريد إلى مجموعة أدوار eDiscovery Manager. 
 
   ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
@@ -206,6 +207,6 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
     Exchange مجموعات التوزيع مجموعات Microsoft 365 غير مدعومة. يجب استخدام مجموعة أمان ممكنة للبريد، والتي يمكنك إنشاؤها في Exchange Online PowerShell عن طريق تشغيل `New-DistributionGroup -Type Security`. يمكنك أيضا إنشاء مجموعة أمان ممكنة للبريد (وإضافة أعضاء) في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a> أو في [مركز مسؤولي Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). قد يستغرق الأمر ما يصل إلى 60 دقيقة بعد إنشائها لكي تتوفر مجموعة أمان جديدة ممكنة للبريد لإضافتها إلى مجموعة أدوار eDiscovery Managers.
 
-    كما ذكر سابقا، لا يمكنك جعل مجموعة أمان ممكنة للبريد مسؤول eDiscovery باستخدام **Add-eDiscoveryCaseAdmin** cmdlet في Security & Compliance Center PowerShell. يمكنك فقط إضافة مستخدمين فرديين كمسؤولي eDiscovery.
+    كما ذكر سابقا، لا يمكنك جعل مجموعة أمان ممكنة للبريد مسؤول eDiscovery باستخدام **Add-eDiscoveryCaseAdmin** cmdlet في Security & Compliance PowerShell. يمكنك فقط إضافة مستخدمين فرديين كمسؤولي eDiscovery.
 
     لا يمكنك أيضا إضافة مجموعة أمان ممكنة للبريد كعضو في حالة ما.

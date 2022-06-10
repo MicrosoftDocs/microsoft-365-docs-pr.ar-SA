@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: يمكن للمسؤولين استخدام أدوات eDiscovery في Microsoft 365 للبحث عن بيانات الدردشة Teams وتصديرها للمستخدمين المحليين في توزيع مختلط Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e532dc629df1ddc2e3ceaa94a639723dae483714
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4af64bd77d820b67314bc37e574afdff3966d21b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077808"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014333"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>البحث عن Teams الدردشة للمستخدمين في الموقع
 
@@ -46,7 +46,7 @@ ms.locfileid: "65077808"
   
 ## <a name="how-it-works"></a>كيفية عملها
 
-إذا كان لدى المستخدم الممكن Microsoft Teams علبة بريد محلية وتمت مزامنة حساب/هوية المستخدم الخاص به مع السحابة، تنشئ Microsoft تخزينا مستندا إلى السحابة لإقران بيانات الدردشة Teams 1xN الخاصة بالمستخدم المحلي. Teams تتم فهرسة بيانات الدردشة للمستخدمين المحليين للبحث. يتيح لك ذلك استخدام البحث في المحتوى (وعمليات البحث المقترنة بحالات Microsoft Purview eDiscovery (قياسي) وMicrosoft Purview eDiscovery (Premium) للبحث عن بيانات الدردشة Teams للمستخدمين المحليين ومعاينتها وتصديرها. يمكنك أيضا استخدام **\*ComplianceSearch** cmdlets في Security & Compliance Center PowerShell للبحث عن بيانات دردشة Teams للمستخدمين المحليين.
+إذا كان لدى المستخدم الممكن Microsoft Teams علبة بريد محلية وتمت مزامنة حساب/هوية المستخدم الخاص به مع السحابة، تنشئ Microsoft تخزينا مستندا إلى السحابة لإقران بيانات الدردشة Teams 1xN الخاصة بالمستخدم المحلي. Teams تتم فهرسة بيانات الدردشة للمستخدمين المحليين للبحث. يتيح لك ذلك استخدام البحث في المحتوى (وعمليات البحث المقترنة بحالات Microsoft Purview eDiscovery (قياسي) وMicrosoft Purview eDiscovery (Premium) للبحث عن بيانات الدردشة Teams للمستخدمين المحليين ومعاينتها وتصديرها. يمكنك أيضا استخدام **\*ComplianceSearch** cmdlets في Security & Compliance PowerShell للبحث عن بيانات دردشة Teams للمستخدمين المحليين.
   
 يوضح الرسم التالي سير عمل كيفية إتاحة Teams بيانات الدردشة للمستخدمين المحليين للبحث والمعاينة والتصدير.
   
@@ -86,9 +86,9 @@ ms.locfileid: "65077808"
 
 ## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>استخدام PowerShell للبحث عن بيانات الدردشة Teams للمستخدمين المحليين
 
-يمكنك استخدام **new-ComplianceSearch** cmdlets في Security & Compliance Center PowerShell للبحث عن بيانات الدردشة Teams للمستخدمين المحليين. كما هو موضح سابقا، لا تحتاج إلى إرسال طلب دعم لاستخدام PowerShell للبحث عن بيانات دردشة Teams للمستخدمين المحليين.
+يمكنك استخدام **cmdlets New-ComplianceSearch** في Security & Compliance PowerShell للبحث عن بيانات دردشة Teams للمستخدمين المحليين. كما هو موضح سابقا، لا تحتاج إلى إرسال طلب دعم لاستخدام PowerShell للبحث عن بيانات دردشة Teams للمستخدمين المحليين.
   
-1. [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. قم بتشغيل أمر PowerShell التالي لإنشاء بحث محتوى يبحث عن بيانات دردشة Teams للمستخدمين المحليين.
 

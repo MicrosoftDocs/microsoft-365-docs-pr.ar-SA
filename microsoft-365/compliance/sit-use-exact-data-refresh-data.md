@@ -1,5 +1,5 @@
 ---
-title: تحديث ملف جدول مصدر المعلومات غير الحساسة للبيانات الدقيق
+title: تحديث ملف جدول مصدر المعلومات الحساسة لتطابق البيانات الدقيقة
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: تحديث ملف جدول مصدر المعلومات الحساسة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fe72fac43d3cc9a568d8aa1c5d985d34f8477a4d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: a846f22b866b4b8adf75c44e55fde4b9d56b8ac4
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760834"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008834"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>تحديث ملف جدول مصدر المعلومات الحساسة لتطابق البيانات الدقيقة 
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك تحديث قاعدة بيانات المعلومات الحساسة حتى 5 مرات كل 24 ساعة. سيتعين عليك إعادة تشغيل جدول مصدر المعلومات الحساسة وتحميله.
 
@@ -39,15 +41,15 @@ ms.locfileid: "64760834"
 
    |الاسلوب|ما يجب فعله|
    |---|---|
-   |Windows PowerShell|راجع وثائق [ScheduledTasks](/powershell/module/scheduledtasks/) [ومثال البرنامج النصي PowerShell](#example-powershell-script-for-task-scheduler) في هذه المقالة|
+   |PowerShell|راجع وثائق [ScheduledTasks](/powershell/module/scheduledtasks/) [ومثال البرنامج النصي PowerShell](#example-powershell-script-for-task-scheduler) في هذه المقالة|
    |واجهة برمجة تطبيقات مجدول المهام|راجع وثائق ["جدولة المهام"](/windows/desktop/TaskSchd/using-the-task-scheduler)|
    |واجهة مستخدم Windows|في Windows، انقر فوق **"بدء"** واكتب "جدولة المهام". بعد ذلك، في قائمة النتائج، انقر بزر الماوس الأيمن فوق **"جدولة المهام"**، واختر **"تشغيل" كمسؤول**.|
 
-### <a name="example-powershell-script-for-task-scheduler"></a>مثال على برنامج PowerShell النصي لمجدول المهام 
+## <a name="example-powershell-script-for-task-scheduler"></a>مثال على برنامج PowerShell النصي لمجدول المهام
 
 يتضمن هذا القسم مثالا على برنامج PowerShell النصي الذي يمكنك استخدامه لجدولة مهامك لتجزئة البيانات وتحميل البيانات المقسمة:
 
-#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>جدولة التجزئة وتحميلها في خطوة مجمعة
+### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>جدولة التجزئة وتحميلها في خطوة مجمعة
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -82,7 +84,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>جدولة التجزئة وتحميلها كخطوات منفصلة
+### <a name="schedule-hashing-and-upload-as-separate-steps"></a>جدولة التجزئة وتحميلها كخطوات منفصلة
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
