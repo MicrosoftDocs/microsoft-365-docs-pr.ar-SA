@@ -396,6 +396,8 @@
           href: quarantine-faq.yml
     - name: أدلة خطوة بخطوة
       items:
+        - name: Microsoft Defender لـ Office 365 إرشادات مفصلة خطوة بخطوة وكيفية استخدامها
+          href: step-by-step-guides/step-by-step-guide-overview.md
         - name: (نتائج سلبية خاطئة) كيفية معالجة رسائل البريد الإلكتروني الضارة التي يتم تسليمها إلى المستلمين باستخدام Microsoft Defender لـ Office 365
           href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
         - name: (نتائج إيجابية خاطئة) كيفية معالجة رسائل البريد الإلكتروني المشروعة التي يتم منعها من التسليم باستخدام Microsoft Defender لـ Office 365
