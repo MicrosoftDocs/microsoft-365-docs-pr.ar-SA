@@ -20,16 +20,16 @@ ms.custom:
 search.appverid: MET150
 description: تعرف على كيفية نقل المستخدمين بين الاشتراكات.
 ms.date: 05/12/2022
-ms.openlocfilehash: b790b708ba9095b40ab9f79a27f531a5267c9c08
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 06d9c6f2ef76ed317705c1e519822db3a8706062
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403283"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044312"
 ---
 # <a name="move-users-to-a-different-subscription"></a>نقل المستخدمين إلى اشتراك مختلف
 
-إذا كان لديك أكثر من اشتراك واحد، ولديك مستخدمين لديهم ترخيص لاشتراك واحد، ولكنك تريد نقلهم إلى اشتراك آخر، يمكنك استبدال ترخيصهم الحالي باشتراك آخر.
+إذا كان لديك أكثر من منتج واحد، ولديك مستخدمون لديهم ترخيص لمنتج واحد، ولكنك تريد نقلهم إلى منتج آخر، يمكنك استبدال ترخيصهم الحالي بترخيص مختلف.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
@@ -49,7 +49,7 @@ ms.locfileid: "65403283"
 
 ::: moniker-end
 
-2. حدد الدوائر الموجودة بجانب أسماء المستخدمين الذين تريد استبدال التراخيص الموجودة لهم.
+2. حدد خانات الاختيار الموجودة بجانب أسماء المستخدمين الذين تريد استبدال التراخيص الموجودة لهم.
 
 3. في الأعلى، حدد **"Manage product licenses**".
 

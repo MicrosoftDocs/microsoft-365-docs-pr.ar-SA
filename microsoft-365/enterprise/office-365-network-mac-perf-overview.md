@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: نظرة عامة على اتصال الشبكة في مركز مسؤول Microsoft 365
-ms.openlocfilehash: 4d23990253b96e57df04411a2207d089c90711ca
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 19aa6beaf299a80b76753357e4cbe4f8f0966362
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621815"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043777"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>اتصال الشبكة في مركز مسؤول Microsoft 365
 
@@ -34,8 +34,8 @@ ms.locfileid: "65621815"
 > [!div class="mx-imgBorder"]
 > ![صفحة أداء الشبكة.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
->[!NOTE]
->يدعم اتصال الشبكة في مركز الإدارة المستأجرين في WW Commercial و Germany ولكن ليس سحابة القطاع الحكومي Moderate أو سحابة القطاع الحكومي High أو DoD أو China.
+> [!NOTE]
+> يدعم اتصال الشبكة في مركز الإدارة المستأجرين في WW Commercial و Germany ولكن ليس سحابة القطاع الحكومي Moderate أو سحابة القطاع الحكومي High أو DoD أو China.
 
 عند الانتقال لأول مرة إلى صفحة أداء الشبكة، سيتعين عليك تكوين مواقعك من أجل الاطلاع على خريطة أداء الشبكة العمومية، وتقييم الشبكة الذي تم تحديد نطاقه للمستأجر بأكمله، والنسبة المئوية للمستخدمين الذين يعملون عن بعد مقابل الموقع، وقائمة بالمشكلات الحالية لاتخاذ إجراء بشأنها و/أو لإجراء المزيد من البحث. من جزء النظرة العامة، يمكنك التنقل لأسفل لعرض مقاييس أداء الشبكة والمشكلات المحددة حسب الموقع. لمزيد من المعلومات، راجع [نظرة عامة على أداء الشبكة في مركز مسؤول Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
@@ -202,14 +202,46 @@ Windows يجب الموافقة على خدمة الموقع على الأجهز
    > [!div class="mx-imgBorder"]
    > ![رسالة جاهزة لاستيراد CSV.](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
+## <a name="cqd-tsv-import-for-lan-subnet-office-locations"></a>استيراد CQD TSV لمواقع مكتب الشبكة الفرعية LAN
+
+إذا قمت بتحميل بيانات الإنشاء إلى لوحة معلومات جودة الاتصال، يمكنك إضافة هذه المواقع هنا لبدء تقييم اتصال الشبكة الخاصة بها. لن يؤثر ذلك على مواقعك الحالية.
+
+[انتقل إلى Upload بيانات المستأجر](https://cqd.teams.microsoft.com/spd/#/TenantDataUpload) في لوحة معلومات جودة الاتصال. إذا قمت بتحميل بيانات البناء الخاصة بك، فسترى خيارا لتنزيلها إلى ملف .tsv. قم بتنزيل ملف .tsv من لوحة معلومات جودة الاتصال، ثم قم بتحميله في القائمة المنبثقة CQD باتباع الخطوات أدناه. إذا كنت تريد إنشاء ملف .tsv يدويا، فالرجاء محاذاة المخطط مع ذلك في ملف بيانات إنشاء Upload، أو تجربة استيراد CSV لمواقع مكتب الشبكة الفرعية LAN بدلا من ذلك.
+
+1. في نافذة الاتصال الرئيسي Microsoft 365، انقر فوق علامة التبويب **"المواقع**".
+
+2. انقر فوق الزر **"إدارة مواقع متعددة** " الموجود أعلى قائمة المواقع.
+
+   > [!div class="mx-imgBorder"]
+   > ![قائمة إدارة مواقع متعددة.](../media/m365-mac-perf/m365-mac-perf-import-cqd-manage-multiple.png)
+
+3. انقر فوق **"إضافة مواقع من لوحة معلومات جودة الاتصال**"، وستظهر القائمة المنبثقة **"إضافة مواقع من لوحة معلومات جودة الاتصال** ".
+
+   > [!div class="mx-imgBorder"]
+   > ![إضافة مواقع من القائمة المنبثقة للوحة معلومات جودة الاتصال.](../media/m365-mac-perf/m365-mac-perf-import-cqd-add-locations.png)
+
+4. انقر فوق الزر **"استعراض** " الموجود بجانب **ملف Select a .tsv لتحميل** الحقل وحدد ملف TSV المحفوظ. الرجاء التأكد من أن القيمة في الملف مفصولة بعلامة تبويب.
+
+5. سيتم التحقق من صحة الملف تلقائيا وتحليله إلى قائمة مواقع المكاتب. إذا كانت هناك أخطاء في التحقق من الصحة، تظهر القائمة المنبثقة **لملفك غير قادر على تحميلها** لإدراج الأخطاء.
+
+   > [!div class="mx-imgBorder"]
+   > ![تعذر علينا تحميل القائمة المنبثقة لملفك.](../media/m365-mac-perf/m365-mac-perf-import-cqd-couldnt-upload.png)
+
+6. إذا لم تكن هناك أخطاء في الملف، فسترى الرسالة: _تم تحميل ملف test.tsv وجاهز. حدد "استيراد" لتحميل معلوماتك._
+
+   > [!div class="mx-imgBorder"]
+   > ![حدد ملف .tsc لتحميله.](../media/m365-mac-perf/m365-mac-perf-import-cqd-select-tsv.png)
+
+7. انقر فوق زر **Upload** في أسفل اللوحة لتحميل مواقع المكتب.
+
 ## <a name="faq"></a>الأسئلة المتداولة
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>ما هو الباب الأمامي للخدمة Microsoft 365؟
 
 إن Microsoft 365 واجهة الخدمة الأمامية هي نقطة دخول على شبكة Microsoft العالمية حيث يقوم العملاء والخدمات Office بإنهاء اتصال الشبكة. للحصول على اتصال مثالي بالشبكة Microsoft 365، يوصى بإنهاء اتصال الشبكة إلى أقرب Microsoft 365 باب أمامي.
 
->[!NOTE]
->Microsoft 365 ليس للواجهة الأمامية للخدمة علاقة مباشرة مع منتج Azure Front Door Service المتوفر في سوق Azure.
+> [!NOTE]
+> Microsoft 365 ليس للواجهة الأمامية للخدمة علاقة مباشرة مع منتج Azure Front Door Service المتوفر في سوق Azure.
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>ما هو الباب الأمامي Microsoft 365 الأمثل للخدمة؟
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4f309c98b7278dbeb062deacf49553b7e73f58da
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: fbfb20b233f1f942faaddd2a235a55beeb48d2c6
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873777"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043111"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>استكشاف مشكلات الإلحاق المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية
 
@@ -75,16 +75,17 @@ ms.locfileid: "65873777"
 
 من خلال مدخل Microsoft Defender لنقطة النهاية، يمكن لمسؤولي الأمان الآن استكشاف أخطاء إدارة الأمان وإصلاحها للإلحاق Microsoft Defender لنقطة النهاية.
 
-في **مخزون جهاز** **نقاط** \> النهاية، تمت إضافة العمود **"مدار بواسطة**" إلى التصفية حسب قناة الإدارة (على سبيل المثال، MEM).
+في **إدارة التكوين**، تمت إضافة عنصر واجهة مستخدم **إدارة أمان MDE الذي تم إلحاقه** لتقديم تصنيف حالة التسجيل للأجهزة المدارة Microsoft Defender لنقطة النهاية.
 
-:::image type="content" source="./images/device-inventory-mde-error.png" alt-text="صفحة مخزون الجهاز" lightbox="./images/device-inventory-mde-error.png":::
+لمشاهدة قائمة بجميع الأجهزة التي تديرها Microsoft Defender لنقطة النهاية، حدد **عرض جميع الأجهزة المدارة بواسطة MDE**.
 
-لمشاهدة قائمة بكافة الأجهزة التي فشلت في "إدارة الأمان" لعملية إلحاق Microsoft Defender لنقطة النهاية، قم بتصفية الجدول حسب **MDE-Error**.
-
-في القائمة، حدد جهازا معينا للاطلاع على تفاصيل استكشاف الأخطاء وإصلاحها في اللوحة الجانبية، مع الإشارة إلى السبب الجذري للخطأ، والوثائق المقابلة.
+في القائمة، إذا لم تكن حالة تسجيل الجهاز "نجاح"، فحدد الجهاز للاطلاع على تفاصيل استكشاف الأخطاء وإصلاحها في اللوحة الجانبية، مع الإشارة إلى السبب الجذري للخطأ، والوثائق المقابلة.
 
 
 :::image type="content" source="./images/secconfig-mde-error.png" alt-text="معايير التصفية المطبقة على صفحة مخزون الجهاز" lightbox="./images/secconfig-mde-error.png":::
+
+> [!NOTE] 
+> نحن على علم بمشكلة تؤثر على الكشف الدقيق عن أجهزة MDMs التابعة لجهات خارجية عند محاولة استخدام ميزة إدارة الأمان ونعمل على إصلاحها. 
 
 ## <a name="run-microsoft-defender-for-endpoint-client-analyzer-on-windows"></a>تشغيل محلل عميل Microsoft Defender لنقطة النهاية على Windows
 
@@ -121,7 +122,7 @@ ms.locfileid: "65873777"
 |رمز الخطأ|حالة التسجيل|إجراءات المسؤول|
 |---|---|---|
 |`5-7`, `9`, `11-12`, `26-33`|خطأ عام|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان. قد يرجع ذلك إلى عدم استيفاء الجهاز [للمتطلبات الأساسية لقناة إدارة Microsoft Defender لنقطة النهاية](security-config-management.md). يمكن أن يساعد تشغيل ["محلل العميل"](https://aka.ms/BetaMDEAnalyzer) على الجهاز في تحديد السبب الجذري للمشكلة. إذا لم ينجح هذا الإجراء، فالرجاء الاتصال بالدعم.|
-| `8`, `44` | مشكلة تكوين إدارة نقاط النهاية من Microsoft | تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، لم يتم تكوين إدارة نقاط النهاية من Microsoft من خلال مركز مسؤول للسماح بتكوين الأمان Microsoft Defender لنقطة النهاية. تأكد من [تكوين المستأجر إدارة نقاط النهاية من Microsoft وتشغيل الميزة](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
+| `8`, `44` | مشكلة تكوين إدارة نقاط النهاية من Microsoft | تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، لم يتم تكوين إدارة نقاط النهاية من Microsoft من خلال مركز الإدارة للسماح بتكوين الأمان Microsoft Defender لنقطة النهاية. تأكد من [تكوين المستأجر إدارة نقاط النهاية من Microsoft وتشغيل الميزة](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
 |`13-14`,`20`,`24`,`25`|مشكلة في الاتصال|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان الذي قد يكون بسبب مشكلة في الاتصال. تحقق من فتح [Azure Active Directory ونقاط نهاية إدارة نقاط النهاية من Microsoft](security-config-management.md#connectivity-requirements) في جدار الحماية الخاص بك.|
 |`10`,`42`|فشل الانضمام المختلط العام|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان وفشل نظام التشغيل في تنفيذ الصلة المختلطة. استخدم [استكشاف أخطاء الأجهزة المختلطة المتصلة ب Azure Active Directory](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) وإصلاحها لاستكشاف أخطاء الانضمام المختلط على مستوى نظام التشغيل وإصلاحها.|
 |`15`|عدم تطابق المستأجر|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان لأن معرف المستأجر Microsoft Defender لنقطة النهاية لا يتطابق مع معرف مستأجر Azure Active Directory. تأكد من أن معرف مستأجر Azure Active Directory من مستأجر Defender لنقطة النهاية يطابق معرف المستأجر في إدخال SCP لمجالك. لمزيد من التفاصيل، [قم باستكشاف المشكلات المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية وإصلاحها](troubleshoot-security-config-mgt.md).|

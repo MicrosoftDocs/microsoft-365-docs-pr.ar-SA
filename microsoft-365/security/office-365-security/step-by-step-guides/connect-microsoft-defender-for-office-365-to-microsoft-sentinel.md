@@ -1,5 +1,5 @@
 ---
-title: الاتصال Microsoft Defender لـ Office 365 إلى Microsoft Sentinel
+title: توصيل Microsoft Defender لـ Office 365 بـ Microsoft Sentinel
 description: خطوات الاتصال Microsoft Defender لـ Office 365 ب Sentinel. أضف بيانات Microsoft Defender لـ Office 365 (*والبيانات* من بقية مجموعة Microsoft 365 Defender)، بما في ذلك الحوادث، إلى Microsoft Sentinel للحصول على جزء واحد من الزجاج في الأمان الخاص بك.
 search.product: ''
 search.appverid: ''
@@ -15,16 +15,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: ffd954e3bffb7d1781db5b7d0b4819f47aeede39
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: dbdb4c93ea010959c8f2eae61f9add8ea853d2b1
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842357"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043742"
 ---
-# <a name="connect-microsoft-defender-for-office-365-to-microsoft-sentinel"></a>الاتصال Microsoft Defender لـ Office 365 إلى Microsoft Sentinel
+# <a name="connect-microsoft-defender-for-office-365-to-microsoft-sentinel"></a>توصيل Microsoft Defender لـ Office 365 بـ Microsoft Sentinel
 
 يمكنك استيعاب بياناتك Microsoft Defender لـ Office 365 (*والبيانات* من بقية مجموعة Microsoft 365 Defender)، بما في ذلك الحوادث، في Microsoft Sentinel.
 
@@ -34,7 +34,7 @@ ms.locfileid: "65842357"
 > موصل Microsoft 365 Defender موجود حاليا في **PREVIEW**. راجع شروط الاستخدام التكميلية لمعاينات Microsoft Azure للحصول على شروط قانونية إضافية تنطبق على ميزات Azure الموجودة في الإصدار بيتا أو المعاينة أو غير ذلك التي لم يتم إصدارها بعد في التوفر العام.>
 
 ## <a name="what-you-will-need"></a>ما ستحتاج إليه
-- Microsoft Defender لـ Office 365 الخطة 2 أو الأحدث.
+- Microsoft Defender لـ Office 365 الخطة 2 أو الأحدث. (مضمن في خطط E5)
 - [دليل التشغيل السريع](/azure/sentinel/quickstart-onboard) ل Microsoft Sentinel.
 - أذونات كافية (مسؤول الأمان في M365 & أذونات القراءة /الكتابة في Sentinel).
 

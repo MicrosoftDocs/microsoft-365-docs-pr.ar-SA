@@ -1,5 +1,5 @@
 ---
-title: تحسين نهج الأمان وتصحيحها باستخدام محلل التكوين
+title: تحسين نُهج الأمان وتصحيحها باستخدام محلل التكوين
 description: خطوات تحسين نهج الأمان وتصحيحها باستخدام محلل التكوين. محلل التكوين هو موقع مركزي وجزء واحد من الزجاج لإدارة نهج أمان البريد الإلكتروني التي قمت بتكوينها في المستأجر وعرضها.
 search.product: ''
 search.appverid: ''
@@ -15,21 +15,21 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: dcb40c0abd619291da2f05fdfa362c03f853181e
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 765eaffd2f57687c0ee16ace30aff97ddd91462c
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842370"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042157"
 ---
-# <a name="optimize-and-correct-security-policies-with-configuration-analyzer"></a>تحسين نهج الأمان وتصحيحها باستخدام محلل التكوين
+# <a name="optimize-and-correct-security-policies-with-configuration-analyzer"></a>تحسين نُهج الأمان وتصحيحها باستخدام محلل التكوين
 
 محلل التكوين هو موقع مركزي وجزء واحد من الزجاج لإدارة نهج أمان البريد الإلكتروني التي قمت بتكوينها في المستأجر وعرضها. يمكنك إجراء مقارنة جنبا إلى جنب لإعداداتك مع الإعدادات الموصى بها القياسية والضيقة، وتطبيق التوصيات وعرض التغييرات التاريخية التي أثرت على وضعك.
 
 ## <a name="what-youll-need"></a>ما ستحتاج إليه
-- Microsoft Defender لـ Office 365 الخطة 1
+- Exchange Online Protection
 - أذونات كافية (دور مسؤول الأمان)
 - 5 دقائق لتنفيذ الخطوات أدناه.
 

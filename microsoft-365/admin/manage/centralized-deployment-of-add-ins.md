@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: حدد ما إذا كان المستأجر والمستخدمون يستوفون المتطلبات، بحيث يمكنك استخدام "النشر المركزي" لنشر Office الوظائف الإضافية.
-ms.openlocfilehash: 4d135e76034880e1419e296f2c201536be98b4bc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b6517724a89572f971710b8c455866ac44f587e
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093757"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043297"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>تحديد ما إذا كان النشر المركزي للوظائف الإضافية يعمل لمؤسستك
 
@@ -123,6 +123,8 @@ ms.locfileid: "65093757"
 - خطة Office - خطة Office المرخص لهم
 - تم تنشيط Office - إذا تم تنشيطها Office
 - علبة البريد المعتمدة - إذا كانت موجودة في علبة بريد ممكنة بواسطة OAuth
+
+إذا أظهرت تقارير Microsoft 365 أسماء مستخدمين مجهولين بدلا من أسماء المستخدمين الفعليين، فصحح هذه المشكلة عن طريق تغيير إعداد التقارير في مركز مسؤولي Microsoft 365. للحصول على خطوات مفصلة، راجع [تقارير Microsoft 365 تظهر أسماء مستخدمين مجهولين بدلا من أسماء المستخدمين الفعليين](/office365/troubleshoot/miscellaneous/reports-show-anonymous-user-name).
 
 > [!NOTE]
 > المصادقة متعددة العوامل غير معتمدة عند استخدام الوحدة النمطية PowerShell للتوزيع المركزي. تعمل الوحدة النمطية فقط مع المصادقة الأساسية.

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: منح مستخدم Microsoft 365 حق الوصول إلى علبة بريد مستخدم آخر، مما يسمح للمستخدم بقراءة رسائل البريد الإلكتروني وإرسالها من علبة بريد المستخدم الآخر.
-ms.openlocfilehash: 80c316f0615c13d5f46410582abe2ec3516c8a8a
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5b770b2967072ab6cc8b8abfec8176a7b6aac2c9
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436702"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042363"
 ---
 # <a name="give-mailbox-permissions-to-another-microsoft-365-user---admin-help"></a>منح أذونات علبة البريد لمستخدم Microsoft 365 آخر - تعليمات المسؤول
 
@@ -39,7 +39,7 @@ ms.locfileid: "65436702"
 إذا كنت تبحث عن معلومات حول إنشاء علب البريد المشتركة وإدارتها، فراجع [إنشاء علبة بريد مشتركة](../email/create-a-shared-mailbox.md).
 
 > [!TIP]
-> إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى متخصصي الشركات الصغيرة أثناء تطوير أعمالك، بدءً من الإلحاق إلى الاستخدام اليومي.
+> إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى خبراء الشركات الصغيرة أثناء تنمية أعمالك، بدءا من الإلحاق إلى الاستخدام اليومي.
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>هل تبحث عن إعداد أذونات علبة البريد؟
 
@@ -167,6 +167,8 @@ ms.locfileid: "65436702"
 
 ::: moniker-end
 
+> [!NOTE]
+> لا تعمل أذونات **"إرسال باسم**" و"**إرسال نيابة عن**" في Outlook عميل سطح المكتب مع المعلمة *HiddenFromAddressListsEnabled* على علبة البريد المعينة إلى **"صواب**"، نظرا لأنها تتطلب ظهور علبة البريد في Outlook عبر "قائمة العناوين العمومية".
 
 ## <a name="related-content"></a>المحتويات ذات الصلة
   

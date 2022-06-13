@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: اجعل مؤسستك أكثر أمانا ضد هجمات كلمات المرور، وحظر كلمات المرور الشائعة وتمكين المصادقة متعددة العوامل المستندة إلى المخاطر.
-ms.openlocfilehash: 006e537c2e2d77a19b27f1c2d537269d69d07c1e
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: bd33d98a33d136f06bfe8e7741bb14c79f0a6160
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468997"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043199"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>توصيات نهج كلمة المرور لكل Microsoft 365 كلمات المرور
 
@@ -61,7 +61,7 @@ ms.locfileid: "65468997"
 
 الهدف الأساسي من نظام كلمات المرور الأكثر أمانا هو تنوع كلمات المرور. تريد أن يحتوي نهج كلمة المرور على الكثير من كلمات المرور المختلفة ويصعب تخمينها. فيما يلي بعض التوصيات للحفاظ على أمان مؤسستك قدر الإمكان.
   
-- الحفاظ على متطلبات الحد الأدنى للطول المكونة من 8 أحرف
+- الحفاظ على متطلبات الحد الأدنى للطول المكونة من 14 حرفا
 
 - لا تتطلب متطلبات تكوين الأحرف. على سبيل المثال، \*&amp;(^٪$
 
@@ -151,7 +151,7 @@ ms.locfileid: "65468997"
 
 - [أسوأ كلمات المرور في عام 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [إعادة تعيين كلمات المرور](../add-users/reset-passwords.md) (مقالة)\
 [تعيين كلمة مرور مستخدم فردية إلى عدم انتهاء صلاحيتها](../add-users/set-password-to-never-expire.md) (مقالة)\

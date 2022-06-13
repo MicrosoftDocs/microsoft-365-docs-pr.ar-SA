@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إدارة الأذونات والكتل في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1832f641c5efc582bee7837dcf8e5b67a9256f6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 8b99f4f9805f34485457a0f376f4bfea04d96192
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772058"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043720"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>إدارة قائمة السماح/الحظر للمستأجر
 
@@ -74,16 +74,13 @@ ms.locfileid: "65772058"
 - للاتصال Exchange Online PowerShell، راجع [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell مستقل، راجع [الاتصال إلى Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - يجب تعيين أذونات لك في Exchange Online قبل أن تتمكن من تنفيذ الإجراءات الواردة في هذه المقالة:
-  - **المرسلون وعناوين URL والملفات**:
     - لإضافة قيم وإزالتها من قائمة السماح/الحظر للمستأجر، يجب أن تكون عضوا في
       - **إدارة المؤسسة** أو مجموعة دور **مسؤول الأمان** (**دور مسؤول الأمان**)
       - مجموعة دور **عامل تشغيل الأمان** (**Tenant AllowBlockList Manager**).
     - للوصول للقراءة فقط إلى قائمة السماح/الحظر للمستأجر، يجب أن تكون عضوا في
       - مجموعة دور **القارئ العمومي**
       - مجموعة دور **قارئ الأمان**
-  - **الانتحال**: إحدى المجموعات التالية:
-    - **إدارة المؤسسة**
-    - **مسؤول الأمان** <u>وتكوين</u> **العرض فقط** أو **إدارة المؤسسة للعرض فقط**.
+      - *مجموعة دور *تكوين العرض فقط*.
 
   لمزيد من المعلومات، راجع [الأذونات في Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -468,7 +465,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 - **إرسال البنية الأساسية**: تشير هذه القيمة إلى مصدر الرسائل من المستخدم المخادعة. تتضمن القيم الصالحة ما يلي:
   - المجال الموجود في بحث DNS العكسي (سجل PTR) لعنوان IP لخادم البريد الإلكتروني المصدر (على سبيل المثال، fabrikam.com).
   - إذا لم يكن لعنوان IP المصدر سجل PTR، فسيتم تعريف البنية الأساسية للإرسال على أنها \<source IP\>/24 (على سبيل المثال، 192.168.100.100/24).
-  - مجال DKIM تم التحقق منه.
 
 فيما يلي بعض الأمثلة على أزواج المجالات الصالحة لتحديد المرسلين المخادعة:
 

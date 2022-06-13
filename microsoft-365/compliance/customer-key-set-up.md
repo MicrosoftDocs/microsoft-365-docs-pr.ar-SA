@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: تعرف على كيفية إعداد مفتاح العميل.
-ms.openlocfilehash: 42c89c23f823f5f4297f31308516888633a1c06c
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 93cf56ba30f333697ccb1ef6f4064918e73d4fcf
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363159"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042429"
 ---
 # <a name="set-up-customer-key"></a>إعداد مفتاح العميل
 
@@ -107,7 +107,7 @@ ms.locfileid: "65363159"
 
 2. بمجرد تسجيل الدخول، حدد المجال المناسب.
 
-3. بالنسبة للمجال المحدد، اختر **"طلب الخدمات** " من شريط التنقل العلوي، وراجع قائمة العروض المتوفرة.
+3. بالنسبة للمجال المحدد، اختر **"نشر** " من شريط التنقل العلوي، وراجع قائمة العروض المتوفرة.
 
 4. اختر بطاقة المعلومات الخاصة بالعرض الذي ينطبق عليك:
 
@@ -146,7 +146,7 @@ ms.locfileid: "65363159"
 
 - لتمكين مفتاح العميل لتعيين DEPs لتشفير محتوى SharePoint Online ومحتوى OneDrive for Business (بما في ذلك ملفات Teams) لكافة المستخدمين المستأجرين، اتصل [spock@microsoft.com](mailto:spock@microsoft.com).
 
-- لتمكين مفتاح العميل لتعيين DEPs لتشفير المحتوى عبر أحمال عمل Microsoft 365 متعددة (Exchange Online، Teams، حماية البيانات في Microsoft Purview) لجميع المستخدمين المستأجرين، اتصل [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
+- لتمكين مفتاح العميل لتعيين DEPs لتشفير المحتوى عبر أحمال عمل Microsoft 365 متعددة (Exchange Online، Teams، حماية البيانات Microsoft Purview) لجميع المستخدمين المستأجرين، اتصل [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
 
 - قم بتضمين المعلومات التالية في بريدك الإلكتروني:
 
@@ -230,11 +230,11 @@ ms.locfileid: "65363159"
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
    ```
 
-   حيث:
+   المكان:
    - *اسم المخزن* هو اسم المخزن الرئيسي الذي أنشأته.
    - بالنسبة Exchange Online Skype for Business، استبدل *Office 365 appID* ب`00000002-0000-0ff1-ce00-000000000000`
    - بالنسبة SharePoint Online والملفات OneDrive for Business والملفات Teams، استبدل *Office 365 appID* ب`00000003-0000-0ff1-ce00-000000000000`
-   - بالنسبة إلى نهج حمل العمل المتعدد (Exchange، Teams، حماية البيانات في Microsoft Purview) الذي ينطبق على جميع المستخدمين المستأجرين، استبدل *Office 365 appID* ب`c066d759-24ae-40e7-a56f-027002b5d3e4`
+   - بالنسبة إلى نهج حمل العمل المتعدد (Exchange، Teams، حماية البيانات Microsoft Purview) الذي ينطبق على جميع المستخدمين المستأجرين، استبدل *Office 365 appID* ب`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   مثال: تعيين أذونات Exchange Online Skype for Business:
 

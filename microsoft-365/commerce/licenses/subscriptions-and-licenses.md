@@ -22,16 +22,16 @@ ms.custom:
 search.appverid: MET150
 description: تعتمد التطبيقات والخدمات التي تتلقاها على المنتج Microsoft 365 الذي اشتريته، مثل Microsoft 365 Apps for business.
 ms.date: 05/12/2022
-ms.openlocfilehash: 48186847368af2bc43831c6e27ef7d347981f1b3
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 56b650a4690151c913855d0007a34d2e2ddcba89
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403217"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043404"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>فهم الاشتراكات والتراخيص في Microsoft 365 للأعمال
 
-عند شراء اشتراك في Microsoft 365 للأعمال، يمكنك التسجيل للحصول على مجموعة من التطبيقات والخدمات التي تدفع مقابلها على أساس شهري أو سنوي. تعتمد التطبيقات والخدمات التي تتلقاها كجزء من اشتراكك على المنتج الذي اشتريته، مثل Microsoft 365 Apps for business أو Microsoft 365 Business Standard. يمكنك أن ترى ما يأتي مع كل منتج على [Microsoft 365 لصفحة الشركات الصغيرة والمتوسطة الحجم](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1).
+عند شراء اشتراك في Microsoft 365 للأعمال، يمكنك التسجيل للحصول على مجموعة من التطبيقات والخدمات التي تدفع مقابلها على أساس شهري أو سنوي. تعتمد التطبيقات والخدمات التي تتلقاها كجزء من اشتراكك على المنتج الذي اشتريته، مثل Microsoft 365 Apps for business أو Microsoft 365 Business Standard. يمكنك أن ترى ما يأتي مع كل منتج على [Microsoft 365 لصفحة الشركات الصغيرة والمتوسطة الحجم](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products).
 
 عند شراء اشتراك، يمكنك تحديد عدد التراخيص التي تحتاجها، استنادا إلى عدد الأشخاص لديك في مؤسستك. بعد شراء اشتراك، يمكنك إنشاء حسابات للأشخاص في مؤسستك، ثم تعيين ترخيص لكل شخص. مع تغير احتياجات مؤسستك، يمكنك شراء المزيد من التراخيص لاستيعاب أشخاص جدد، أو إعادة تعيين تراخيص لمستخدمين آخرين عندما يغادر شخص ما مؤسستك.
 
@@ -55,10 +55,10 @@ ms.locfileid: "65403217"
 يسرد الجدول التالي ما يحدث تلقائيا عند تعيين ترخيص لشخص ما:
   
 |إذا كان الاشتراك يحتوي على هذه الخدمة|يحدث هذا تلقائيا|
-|:-----|:-----|
-|Exchange Online|يتم إنشاء علبة بريد لهذا الشخص. <br/> للتعرف على اتفاقية مستوى الخدمة (SLA) لإكمال هذه المهمة، راجع ["إعداد..." الرسائل في مركز مسؤولي Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
+|---|---|
+|Exchange Online|يتم إنشاء علبة بريد لهذا الشخص. <br/> للتعرف على اتفاقية مستوى الخدمة (SLA) لإكمال هذه المهمة، راجع ["إعداد..." الرسائل في مركز مسؤولي Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center).|
 |SharePoint Online|يتم تعيين أذونات التحرير إلى موقع الفريق الافتراضي SharePoint Online لهذا الشخص.|
-|Skype for Business Online|يمكن للشخص الوصول إلى الميزات المقترنة بالترخيص.|
+|Microsoft Teams|يمكن للشخص الوصول إلى الميزات المقترنة بالترخيص.|
 |Microsoft 365 Apps for enterprise Microsoft 365 Apps for business|يمكن للشخص تنزيل تطبيقات Office على ما يصل إلى خمسة أجهزة Mac أو أجهزة كمبيوتر شخصية، وخمسة أجهزة كمبيوتر لوحية، وخمسة هواتف ذكية.|
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>فهم التراخيص لعلب بريد غير المستخدمين
@@ -74,7 +74,7 @@ ms.locfileid: "65403217"
 يمكن لأنواع مختلفة من المسؤولين العمل مع التراخيص بطرق مختلفة، اعتمادا على أدوارهم. يسرد الجدول التالي الخيارات الأكثر شيوعا. للحصول على قائمة كاملة بأدوار المسؤولين وامتيازاتهم، راجع ["حول أدوار المسؤول](../../admin/add-users/about-admin-roles.md)".
   
 |دور المسؤول|تعيين ترخيص|إلغاء تعيين ترخيص|شراء المزيد من التراخيص|حذف حساب|
-|:-----|:-----|:-----|:-----|:-----|
+|---|:---:|:---:|:---:|:---:|
 |مسؤول فوترة|لا|لا|نعم|لا|
 |مسؤول عمومي|نعم|نعم|نعم|نعم|
 |مسؤول الترخيص|نعم|نعم|لا|لا|

@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية استخدام PowerShell لإنشاء تسميات الاستبقاء ونشرها من سطر الأوامر، بشكل مستقل عن مدخل توافق Microsoft Purview.
-ms.openlocfilehash: f2a01024f6c2a05eb5d584112f9a828ac2c3058c
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: fb39e3dee9f1bd0492c443e4a3c5f5c878808990
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011749"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043492"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>إنشاء تسميات الاستبقاء ونشرها باستخدام PowerShell
 
@@ -33,41 +33,40 @@ ms.locfileid: "66011749"
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بعد أن تقرر استخدام [تسميات الاستبقاء](retention.md) لمساعدتك على الاحتفاظ بالمستندات ورسائل البريد الإلكتروني أو حذفها في Microsoft 365، ربما تكون قد أدركت أن لديك العديد من تسميات الاستبقاء وربما مئات منها لإنشاءها ونشرها. الطريقة الموصى بها لإنشاء تسميات الاستبقاء على نطاق واسع هي باستخدام [خطة الملف](file-plan-manager.md) من مدخل توافق Microsoft Purview. ومع ذلك، يمكنك أيضا استخدام [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
-  
+
 استخدم المعلومات وملفات القوالب والأمثلة والبرامج النصية في هذه المقالة لمساعدتك على إنشاء تسميات استبقاء بشكل مجمع ونشرها في نهج تسمية الاستبقاء. بعد ذلك، يمكن تطبيق تسميات الاستبقاء [من قبل المسؤولين والمستخدمين](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
 
 لا تدعم الإرشادات المتوفرة تسميات الاستبقاء التي يتم تطبيقها تلقائيا.
 
-نظره عامه: 
+نظره عامه:
 
 1. في Excel، قم بإنشاء قائمة بتسميات الاستبقاء وقائمة بنهج تسميات الاستبقاء الخاصة بها.
 
 2. استخدم PowerShell لإنشاء تسميات الاستبقاء ونهج تسمية الاستبقاء في تلك القوائم.
-  
+
 ## <a name="disclaimer"></a>اخلاء المسؤوليه
 
 لا يتم دعم نماذج البرامج النصية الواردة في هذه المقالة ضمن أي برنامج دعم أو خدمة قياسية من Microsoft. يتم توفير نماذج البرامج النصية AS IS دون ضمان من أي نوع. وتخلي Microsoft المزيد من المسؤولية عن جميع الضمانات الضمنية، بما في ذلك، على سبيل المثال لا الحصر، أي ضمانات ضمنية لقابلية تجارية أو للياقة لغرض معين. يبقى الخطر بأكمله الناشئ عن استخدام أو أداء نماذج البرامج النصية والوثائق معك. لن تتحمل شركة Microsoft أو كتابها أو أي شخص آخر مشارك في إنشاء البرامج النصية أو إنتاجها أو تسليمها مسؤولية أي أضرار مهما كانت (بما في ذلك، على سبيل المثال لا الحصر، الأضرار الناجمة عن فقدان أرباح الأعمال أو انقطاع العمل أو فقدان معلومات العمل أو أي خسارة في المالية الأخرى) الناتجة عن استخدام نماذج البرامج النصية أو الوثائق أو عدم القدرة على استخدامها،  حتى إذا تم إعلام Microsoft باحتمال حدوث مثل هذه الأضرار.
-  
+
 ## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>الخطوة 1: إنشاء ملف .csv لتسميات الاستبقاء
 
-1. انسخ نموذج ملف .csv التالي لقالب وإدخالات نموذجية لأربع تسميات استبقاء مختلفة، والصقها في Excel. 
+1. انسخ نموذج ملف .csv التالي لقالب وإدخالات نموذجية لأربع تسميات استبقاء مختلفة، والصقها في Excel.
 
 2. تحويل النص إلى أعمدة: نص علامة تبويب \> **البيانات** **إلى أعمدة** \> **محددة بفواصل** \>  \> **عامة**
 
-2. استبدل الأمثلة بإدخالات لتسميات الاستبقاء والإعدادات الخاصة بك. لمزيد من المعلومات حول قيم المعلمات، راجع [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
+3. استبدل الأمثلة بإدخالات لتسميات الاستبقاء والإعدادات الخاصة بك. لمزيد من المعلومات حول قيم المعلمات، راجع [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
 
-3. احفظ ورقة العمل كملف .csv في موقع يسهل العثور عليه لخطوة لاحقة. على سبيل المثال: C:\>Scripts\Labels.csv
+4. احفظ ورقة العمل كملف .csv في موقع يسهل العثور عليه لخطوة لاحقة. على سبيل المثال: C:\>Scripts\Labels.csv
 
-  
 تلاحظ:
 
 - إذا احتوى ملف .csv على تسمية استبقاء بنفس اسم الملف الموجود بالفعل، يتخطى البرنامج النصي إنشاء تسمية الاستبقاء هذه. لا يتم إنشاء تسميات استبقاء مكررة.
-    
+
 - لا تقم بتغيير رؤوس الأعمدة أو إعادة تسميتها من نموذج ملف .csv المتوفر، وإلا سيفشل البرنامج النصي.
-    
+
 ### <a name="sample-csv-file-for-retention-labels"></a>نموذج ملف .csv لتسميات الاستبقاء
 
-```
+```text
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
 LabelName_t_1,Record - keep and delete - 2 years,$true,KeepAndDelete,730,CreationAgeInDays,
 LabelName_t_2,Keep and delete tag - 7 years,$false,KeepAndDelete,2555,ModificationAgeInDays,
@@ -77,24 +76,23 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 ## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>الخطوة 2: إنشاء ملف .csv لنهج تسمية الاستبقاء
 
-1. انسخ نموذج ملف .csv التالي لقالب ومثال إدخالات لثلاثة نهج تسمية استبقاء مختلفة، والصقها في Excel. 
+1. انسخ نموذج ملف .csv التالي لقالب ومثال إدخالات لثلاثة نهج تسمية استبقاء مختلفة، والصقها في Excel.
 
 2. تحويل النص إلى أعمدة: نص علامة تبويب \> **البيانات** **إلى أعمدة** \> **محددة بفواصل** \>  \> **عامة**
 
-2. استبدل الأمثلة بإدخالات لنهج تسمية الاستبقاء وإعداداتها. لمزيد من المعلومات حول قيم المعلمات لهذا cmdlet، راجع [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).
+3. استبدل الأمثلة بإدخالات لنهج تسمية الاستبقاء وإعداداتها. لمزيد من المعلومات حول قيم المعلمات لهذا cmdlet، راجع [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).
 
-3. احفظ ورقة العمل كملف .csv في موقع يسهل العثور عليه لخطوة لاحقة. على سبيل المثال: `<path>Policies.csv`
-
+4. احفظ ورقة العمل كملف .csv في موقع يسهل العثور عليه لخطوة لاحقة. على سبيل المثال: `<path>Policies.csv`
 
 تلاحظ:
-  
+
 - إذا احتوى ملف .csv على نهج تسمية استبقاء بنفس اسم الملف الموجود بالفعل، يتخطى البرنامج النصي إنشاء نهج تسمية الاستبقاء هذا. لم يتم إنشاء نهج تسمية استبقاء مكررة.
-    
+
 - لا تقم بتغيير رؤوس الأعمدة أو إعادة تسميتها من نموذج ملف .csv المتوفر، وإلا سيفشل البرنامج النصي.
-    
+
 ### <a name="sample-csv-file-for-retention-policies"></a>نموذج ملف .csv لنهج الاستبقاء
 
-```
+```text
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
 Publishing Policy Red1,"LabelName_t_1, LabelName_t_2, LabelName_t_3, LabelName_t_4",N/A,$true,All,,All,,All,,,All,,,
 Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
@@ -110,8 +108,8 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 تلاحظ:
 
 - يطالبك البرنامج النصي بتوفير الملفين المصدر اللذين أنشأتهما في الخطوتين السابقتين:
-    - إذا لم تحدد الملف المصدر لإنشاء تسميات الاستبقاء، ينتقل البرنامج النصي لإنشاء نهج تسمية الاستبقاء. 
-    - إذا لم تحدد الملف المصدر لإنشاء نهج تسمية الاستبقاء، يقوم البرنامج النصي بإنشاء تسميات الاستبقاء فقط.
+  - إذا لم تحدد الملف المصدر لإنشاء تسميات الاستبقاء، ينتقل البرنامج النصي لإنشاء نهج تسمية الاستبقاء.
+  - إذا لم تحدد الملف المصدر لإنشاء نهج تسمية الاستبقاء، يقوم البرنامج النصي بإنشاء تسميات الاستبقاء فقط.
 
 - ينشئ البرنامج النصي ملف سجل يسجل كل إجراء اتخذه وما إذا كان الإجراء قد نجح أو فشل. راجع الخطوة الأخيرة للحصول على إرشادات حول كيفية تحديد موقع ملف السجل هذا.
 
@@ -120,15 +118,15 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 ```Powershell
 <#
 . Steps: Import and publish retention labels
-    ○ Load retention labels csv file 
-    ○ Validate csv file input
-    ○ Create retention labels
-    ○ Create retention policies
-    ○ Publish retention labels for the policies
-    ○ Generate the log for retention labels and policies creation
-    ○ Generate the csv result for the labels and policies created
+    - Load retention labels csv file
+    - Validate csv file input
+    - Create retention labels
+    - Create retention policies
+    - Publish retention labels for the policies
+    - Generate the log for retention labels and policies creation
+    - Generate the csv result for the labels and policies created
 . Syntax
-    .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
+    .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>]
 . Detailed Description
     1) [-LabelListCSV <string>]
     -LabelListCSV ".\SampleInputFile_LabelList.csv"
@@ -158,13 +156,13 @@ Function FileExist
     $inputFileExist = Test-Path $FilePath
     if (!$inputFileExist)
     {
-        if ($Warning -eq $false) 
-        { 
+        if ($Warning -eq $false)
+        {
             WriteToLog -Type "Failed" -Message "[File: $FilePath] The file doesn't exist"
-            throw 
+            throw
         }
-        else 
-        { 
+        else
+        {
             WriteToLog -Type "Warning" -Message "[File: $FilePath] The file doesn't exist"
         }
     }
@@ -259,7 +257,7 @@ Function InvokePowerShellCmdlet
     )
     try
     {
-        WriteToLog -Type "Start" -Message "Execute Cmdlet : '$CmdLet'" 
+        WriteToLog -Type "Start" -Message "Execute Cmdlet : '$CmdLet'"
         return Invoke-Expression $CmdLet -ErrorAction SilentlyContinue
     }
     catch
@@ -279,10 +277,10 @@ Function CreateComplianceTag
         [Parameter(Mandatory = $true)]
         [String]$FilePath
     )
-    
+
     WriteToLog -Type "Start" "Start to create Compliance Tag"
     FileExist $FilePath
-    
+
     # TODO Validate CSV file for the Header
     try
     {
@@ -319,7 +317,7 @@ Function CreateComplianceTag
             if (![String]::IsNullOrEmpty($lab.'RetentionAction (Optional)'))
             {
                 $para = $lab.'RetentionAction (Optional)'
-                $cmdlet += " -RetentionAction " + $para 
+                $cmdlet += " -RetentionAction " + $para
             }
             if (![String]::IsNullOrEmpty($lab.'RetentionDuration (Optional)'))
             {
@@ -342,7 +340,7 @@ Function CreateComplianceTag
                         $eml += "'{0}'," -f $email
                     }
                     $eml = $eml.Substring(0, $eml.Length - 1) + ')'
-                    
+
                     $cmdlet += " -ReviewerEmail " + $eml
                 }
             }
@@ -351,9 +349,9 @@ Function CreateComplianceTag
             {
                 # Create compliance tag
                 $msg = "Execute Cmdlet : {0}" -f $cmdlet
-                
+
                 $ret = InvokePowerShellCmdlet $cmdlet
-            
+
                 if ($ret -eq $null)
                 {
                     WriteToLog -Type "Failed" $error[0]
@@ -381,7 +379,7 @@ Function CreateRetentionCompliancePolicy
         [Parameter(Mandatory = $true)]
         [String]$FilePath
     )
-    
+
     WriteToLog -Type "Start" "Start to Create Retention Policy"
     FileExist $FilePath
     try
@@ -422,7 +420,7 @@ Function CreateRetentionCompliancePolicy
                 $para = $rp.'ExchangeLocation (Optional)'
                 $cmdlet += " -ExchangeLocation " + $para
             }
-         
+
             if (![String]::IsNullOrEmpty($rp.'ExchangeLocationException (Optional)'))
             {
                 $para = $rp.'ExchangeLocationException (Optional)'
@@ -478,9 +476,9 @@ Function CreateRetentionCompliancePolicy
             {
                 # Create retention compliance policy
                 $msg = "Execute Cmdlet : {0}" -f $cmdlet
-            
+
                 $ret = invokepowershellcmdlet $cmdlet
-            
+
                 if ($ret -eq $null)
                 {
                     WriteToLog -Type "Failed" $error[0]
@@ -493,13 +491,13 @@ Function CreateRetentionCompliancePolicy
                 WriteToLog -Type "Warning" -Message "The policy '$name' already exists! Skip for creation!"
                 $rpid = ($policies | ? { $_.Name.ToLower() -eq $name.ToLower() }).Guid
             }
-                        
+
             # Retrieve tag name for publishing
             $ts = $rp.'PublishComplianceTag (Required)'
             $tagList = $ts.Split(",") | ForEach-Object { $_.Trim() }
-            
-            WriteToLog -Type "Message" -Message "Publish Tags : '$ts'" 
-            
+
+            WriteToLog -Type "Message" -Message "Publish Tags : '$ts'"
+
             PublishComplianceTag -PolicyGuid $rpid -TagName $tagList
         }
     }
@@ -519,14 +517,14 @@ Function PublishComplianceTag
         [Parameter(Mandatory = $true)]
         [String[]]$TagNames
     )
-    
+
     WriteToLog -Type "Start" "Start to Publish Compliance Tag"
     try
     {
         # Retrieve existing rule related to the given compliance policy
         $rule = InvokePowerShellCmdlet ("Get-RetentionComplianceRule -Policy {0}" -f $PolicyGuid)
         $tagGuids = New-Object System.Collections.ArrayList
-        
+
         foreach ($tn in $TagNames)
         {
             $t = InvokePowerShellCmdlet ("Get-ComplianceTag {0}" -f $tn)
@@ -550,13 +548,13 @@ Function PublishComplianceTag
                 }
             }
         }
-        
+
         foreach($t in $tagGuids)
         {
             # Publish compliance tag
             $cmdlet = "New-RetentionComplianceRule -Policy {0} -PublishComplianceTag {1}" -f $PolicyGuid, $t
             $ret = InvokePowerShellCmdlet $cmdlet
-            
+
             if ($ret -eq $null)
             {
                 WriteToLog -Type "Failed" $error[0]
@@ -578,7 +576,7 @@ Function ExportCreatedComplianceTag
         [Parameter(Mandatory = $true)]
         [String]$LabelFilePath
     )
-    
+
     WriteToLog -Type "Start" "Start to Export Compliance Tag Created"
     try
     {
@@ -594,7 +592,7 @@ Function ExportCreatedComplianceTag
         $col5 = New-Object system.Data.DataColumn RetentionDuration,([string])
         $col6 = New-Object system.Data.DataColumn RetentionType,([string])
         $col7 = New-Object system.Data.DataColumn ReviewerEmail,([string])
-        
+
         # Add the Columns
         $table.columns.add($col1)
         $table.columns.add($col2)
@@ -606,7 +604,7 @@ Function ExportCreatedComplianceTag
         foreach($lab in $labels)
         {
             $t = InvokePowerShellCmdlet ("Get-ComplianceTag '{0}' " -f $lab.'Name (Required)')
-            
+
             # Create a result row
             $row = $table.NewRow()
             $row['Name'] = $t.Name
@@ -616,7 +614,7 @@ Function ExportCreatedComplianceTag
             $row['RetentionDuration'] = $t.RetentionDuration
             $row['RetentionType'] = $t.RetentionType
             $row['ReviewerEmail'] = $t.ReviewerEmail
-            
+
             # Add the row to the table
             $table.Rows.Add($row)
         }
@@ -636,7 +634,7 @@ Function ExportPublishedComplianceTagAndPolicy
         [Parameter(Mandatory = $true)]
         [String[]]$PolicyFilePath
     )
-    
+
     WriteToLog -Type "Start" "Start to Export Published Compliance Tag and Policy"
     try
     {
@@ -660,7 +658,7 @@ Function ExportPublishedComplianceTagAndPolicy
         $col13 = New-Object system.Data.DataColumn SharePointLocationException,([string])
         $col14 = New-Object system.Data.DataColumn SkypeLocation,([string])
         $col15 = New-Object system.Data.DataColumn SkypeLocationException,([string])
-        
+
         # Add the Columns
         $table.columns.add($col1)
         $table.columns.add($col2)
@@ -680,11 +678,11 @@ Function ExportPublishedComplianceTagAndPolicy
         foreach($policy in $policies)
         {
             $t = InvokePowerShellCmdlet ("Get-RetentionCompliancePolicy '{0}' -DistributionDetail" -f $policy.'Policy Name (Required)')
-            
+
             # Create a result row
             $row = $table.NewRow()
             $row['Policy Name'] = $t.Name
-            
+
             $rules = InvokePowerShellCmdlet ("Get-RetentionComplianceRule -Policy {0}" -f $t.Guid)
             $tagList = [String]::Empty
             foreach($rule in $rules)
@@ -713,7 +711,7 @@ Function ExportPublishedComplianceTagAndPolicy
             $row['SharePointLocationException'] = $t.SharePointLocationException
             $row['SkypeLocation'] = $t.SkypeLocation
             $row['SkypeLocationException'] = $t.SkypeLocationException
-            
+
             # Add the row to the table
             $table.Rows.Add($row)
         }
@@ -732,9 +730,8 @@ CreateRetentionCompliancePolicy -FilePath $PolicyListCSV
 if ($ResultCSV)
 {
     ExportCreatedComplianceTag -LabelFilePath $LabelListCSV
-    ExportPublishedComplianceTagAndPolicy -PolicyFilePath $PolicyListCSV 
+    ExportPublishedComplianceTagAndPolicy -PolicyFilePath $PolicyListCSV
 }
-
 ```
 
 ## <a name="step-4-run-the-powershell-script"></a>الخطوة 4: تشغيل البرنامج النصي PowerShell
@@ -742,15 +739,15 @@ if ($ResultCSV)
 أولا، [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ثم قم بتشغيل البرنامج النصي الذي يقوم بإنشاء تسميات الاستبقاء ونشرها:
-  
+
 1. في جلسة عمل Security & Compliance PowerShell، أدخل المسار، متبوعا بالأحرف `.\` واسم الملف للبرنامج النصي، ثم اضغط على ENTER لتشغيل البرنامج النصي. على سبيل المثال:
-    
+
     ```powershell
     <path>.\CreateRetentionSchedule.ps1
     ```
 
 2. يطالبك البرنامج النصي بمواقع ملفات .csv التي قمت بإنشائها في الخطوات السابقة. أدخل المسار، متبوعا بأحرف `.\` الملف .csv واسمه، ثم اضغط على ENTER. على سبيل المثال، للمطالبة الأولى:
-    
+
     ```powershell
     <path>.\Labels.csv
     ```
@@ -760,7 +757,7 @@ if ($ResultCSV)
 استخدم ملف السجل الذي أنشأه البرنامج النصي للتحقق من النتائج وتحديد أي حالات فشل تحتاج إلى حل.
 
 يمكنك العثور على ملف السجل في الموقع التالي، على الرغم من اختلاف الأرقام الموجودة في اسم الملف المثال.
-  
-```
+
+```DOS
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
 ```

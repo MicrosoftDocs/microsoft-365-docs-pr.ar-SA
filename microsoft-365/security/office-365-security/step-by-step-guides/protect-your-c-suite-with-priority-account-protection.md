@@ -15,16 +15,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 3670d4c1c55cbaaab739a8de2df359f06b53ae80
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 99bfcd9003d55ced96364f033080992fa4447188
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842351"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042925"
 ---
-# <a name="protect-your-c-suite-with-priority-account-protection"></a>حماية مجموعة c-suite الخاصة بك مع حماية الحساب ذات الأولوية
+# <a name="protect-your-c-suite-with-priority-account-protection"></a>حماية مجموعة c-suite الخاصة بك من خلال حماية الحساب ذي الأولوية
 
 تساعد حماية الحساب ذات الأولوية فرق تكنولوجيا المعلومات والأمان على ضمان جودة عالية للخدمة والحماية للأشخاص المهمين داخل مؤسستك. سيؤدي وضع علامة على حساب كحساب ذي أولوية إلى تمكين الحماية الإضافية التي تم ضبطها لأنماط تدفق البريد التي تستهدف المديرين التنفيذيين للشركة، بالإضافة إلى رؤية إضافية في التقارير والتنبيهات والتحقيقات.
 
@@ -49,7 +49,7 @@ ms.locfileid: "65842351"
 [راجع الحماية المميزة للمستخدمين الذين تم وضع علامة عليهم كحسابات ذات أولوية](../../office-365-security/configure-review-priority-account.md).
 
 ## <a name="powershell-configuration"></a>تكوين PowerShell
-إذا كنت ترغب في تحقيق هذه الخطوات عبر PowerShell، يمكنك القيام بذلك باستخدام أوامر cmdlets التالية:
+إذا كنت ترغب في تحقيق هذه الخطوات عبر [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)، يمكنك القيام بذلك باستخدام أوامر cmdlets التالية:
 1. عرض قائمة بحسابات الأولوية: **Get-User -IsVIP | تحديد Identity**
 1. إضافة مستخدم إلى قائمة الحسابات ذات الأولوية: **Set-User -VIP:$true -Identity \<Identity\>**
 1. إزالة المستخدم من قائمة حسابات الأولوية: **Set-User -VIP:$false -Identity \<Identity\>**

@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/06/2022
-ms.openlocfilehash: 335dd72bcbdee469f1e0b1c396c934c94d0339fd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 503740e6dc16aea98fd44b71d9693d2b4a5844a8
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013586"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043622"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>التحكم في الوصول إلى التخزين القابل للإزالة Microsoft Defender لنقطة النهاية Device Control
 
@@ -125,7 +125,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
     1. المجموعة 1: أي تخزين قابل للإزالة وقرص مضغوط/DVD. مثال لحالة الاستخدام هذه هو: Group **9b28fae8-72f7-4267-a1a5-685f747a7146** في عينة [ملف "Any Removable Storage" و"CD-DVD" Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
-    2. المجموعة 2: USBs غير معتمدة استنادا إلى خصائص الجهاز، على سبيل المثال، معرف المورد / معرف المنتج، اسم مألوف – المجموعة **65fa649a-a111-4912-9294-fb6337a25038** في نموذج ملف [Group.xmlUSBs غير المعتمد](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
+    2. المجموعة 2: USBs غير معتمدة استنادا إلى خصائص الجهاز، على سبيل المثال، معرف المورد / معرف المنتج، اسم مألوف - المجموعة **65fa649a-a111-4912-9294-fb6337a25038** في نموذج ملف [Group.xmlUSBs غير المعتمد](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) .
 
     > [!TIP]
     > `&amp;` استبدل `&` بالقيمة.
@@ -149,116 +149,144 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 لنشر النهج في Intune، يجب أن يكون للحساب أذونات لإنشاء ملفات تعريف تكوين الجهاز أو تحريرها أو تحديثها أو حذفها. يمكنك إنشاء أدوار مخصصة أو استخدام أي من الأدوار المضمنة باستخدام هذه الأذونات.
 
 - دور إدارة النهج وملفات التعريف
-
 - دور مخصص مع تشغيل أذونات إنشاء/تحرير/تحديث/قراءة/حذف/عرض التقارير لملفات تعريف تكوين الجهاز
-
 - المسؤول العام
 
 ### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI
 
 انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>) **> الأجهزة > إنشاء > النظام الأساسي لملف التعريف: Windows 10 والإيجابيات الأحدث، نوع ملف التعريف: قوالب > مخصصة**
 
-1. تمكين التحكم في الوصول إلى التخزين القابل للإزالة (RSAC) أو تعطيله:<br> يمكنك تمكين التحكم في الوصول إلى التخزين القابل للإزالة كما يلي: 
-    - ضمن **إعدادات تكوين > المخصصة**، انقر فوق **"إضافة**".
-    - في الجزء **"إضافة صف** "، أدخل:
-        - **الاسم** **كتمكين RSAC** 
+1. تمكين التحكم في الوصول إلى التخزين القابل للإزالة (RSAC) أو تعطيله:
 
-        - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
+   يمكنك تمكين التحكم في الوصول إلى التخزين القابل للإزالة كما يلي:
 
-        - **نوع البيانات** **كعدد صحيح**
-       
-        - **القيمة** ك **1**
-        
-           `Disable: 0` `Enable: 1`
+   - ضمن **إعدادات تكوين > المخصصة**، انقر فوق **"إضافة**".
+   - في الجزء **"إضافة صف** "، أدخل:
+     - **الاسم** **كتمكين RSAC**
+     - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
+     - **نوع البيانات** **كعدد صحيح**
+     - **القيمة** ك **1**
 
-        - انقر فوق **حفظ**.
-    
-    :::image type="content" source="images/enable-rsac.png" alt-text="لقطة شاشة لتمكين نهج التحكم في الوصول إلى التخزين القابل للإزالة" lightbox="images/enable-rsac.png":::
-      
-2. تعيين الإنفاذ الافتراضي:<br> 
-    يمكنك تعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج. <br> 
-    على سبيل المثال، لديك إما نهج الرفض أو السماح ل RemovableMediaDevices، ولكن ليس لديك أي نهج ل CdRomDevices أو WpdDevices. يمكنك تعيين الرفض الافتراضي من خلال هذا النهج، ثم سيتم حظر الوصول للقراءة/الكتابة/التنفيذ إلى CdRomDevices أو WpdDevices. 
+       `Disable: 0`
+       `Enable: 1`
 
-    - في الجزء **"إضافة صف** "، أدخل:
-        - **الاسم** **كرفض افتراضي**
-        - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
+     - انقر فوق **حفظ**.
 
-        - **نوع البيانات** **كعدد صحيح**
-        
-        - **القيمة** ك **1** أو **2**
-        
-          `DefaultEnforcementAllow = 1`
-          `DefaultEnforcementDeny = 2`
-        - انقر فوق **حفظ**.
-    
-    :::image type="content" source="images/default-deny.png" alt-text="Screenshot of setting Default Enforcement as Deny" lightbox="images/default-deny.png":::    
+   :::image type="content" source="images/enable-rsac.png" alt-text="لقطة شاشة لتمكين نهج التحكم في الوصول إلى التخزين القابل للإزالة" lightbox="images/enable-rsac.png":::
 
-3. رفض التدقيق الافتراضي:<br> يمكنك إنشاء نهج التدقيق للرفض الافتراضي كما يلي:
-    - في الجزء **"إضافة صف** "، أدخل:
-        - **الاسم** **كرفض افتراضي للتدقيق**
-        - **OMA-URI** ك     
-          `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
-         :::image type="content" source="images/audit-default-deny-1.png" alt-text="لقطة شاشة لإنشاء نهج الرفض الافتراضي للتدقيق" lightbox="images/audit-default-deny-1.png":::
-        - **نوع البيانات** **كسلسلة (ملف XML)**
-        - **ملف XML مخصص** كملف **Deny.xmlافتراضي للتدقيق** . <br>
-            مسار ملف XML: [mdatp-devicecontrol/Audit Default Deny.xml في main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml)
-            <br>استخدم بيانات XML التالية لإنشاء نهج التدقيق للرفض الافتراضي:
+2. تعيين الإنفاذ الافتراضي:
 
-            :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="لقطة شاشة لملف xml لرفض التدقيق الافتراضي":::
-        
-   
-4. ReadOnly - المجموعة: يمكنك إنشاء مجموعة تخزين قابلة للإزالة باستخدام الوصول إلى ReadOnly كما يلي:
-    - في الجزء **"إضافة صف** "، أدخل:
-        - **الاسم** **كأي مجموعة تخزين قابلة للإزالة**
-        - **OMA-URI** ك   
-         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
-        :::image type="content" source="images/any-removable-storage-group.png" alt-text="لقطة شاشة لإنشاء أي مجموعة تخزين قابلة للإزالة" lightbox="images/any-removable-storage-group.png":::
-        - **نوع البيانات** **كسلسلة (ملف XML)**
-        - **XML مخصص** **كأي ملف تخزين قابل للإزالة وقرص DVD وWPD Group.xml** <br>
-            مسار ملف XML: [mdatp-devicecontrol/Any Removable Storage و CD-DVD وWPD Group.xml في main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml)<br>
-            استخدم بيانات XML التالية لإنشاء "أي تخزين قابل للإزالة وقرص DVD وWPD Group" مع وصول ReadOnly:
-       
-           :::image type="content" source="images/read-only-group-xml-file.png" alt-text="لقطة شاشة لملف xml للمجموعة للقراءة فقط":::
-      
-    
-5. ReadOnly - النهج: يمكنك إنشاء نهج ReadOnly وتطبيقه على مجموعة التخزين القابلة للإزالة ReadOnly للسماح بنشاط القراءة كما يلي:
-    - في الجزء **"إضافة صف** "، أدخل:
-        - **الاسم** ك **نشاط السماح بالقراءة**
-        - **OMA-URI** كلقطة   `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
-          :::image type="content" source="images/allow-read-activity.png" alt-text="شاشة لنهج السماح بنشاط القراءة" lightbox= "images/allow-read-activity.png":::
-        - **نوع البيانات** **كسلسلة (ملف XML)**
-        - ملف **XML مخصص** كملف **السماح Read.xml** <br>
-            مسار ملف XML: [mdatp-devicecontrol/Allow Read.xml في main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml)<br>
-            استخدم بيانات XML التالية لإنشاء نهج ReadOnly وتطبيقه على مجموعة التخزين القابلة للإزالة ReadOnly: :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="لقطة شاشة لملف xml الخاص بالنهج للقراءة فقط":::
-     
+   يمكنك تعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج.
+
+   على سبيل المثال، لديك إما نهج الرفض أو السماح ل RemovableMediaDevices، ولكن ليس لديك أي نهج ل CdRomDevices أو WpdDevices. يمكنك تعيين الرفض الافتراضي من خلال هذا النهج، ثم سيتم حظر الوصول للقراءة/الكتابة/التنفيذ إلى CdRomDevices أو WpdDevices.
+
+   - في الجزء **"إضافة صف** "، أدخل:
+     - **الاسم** **كرفض افتراضي**
+     - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
+     - **نوع البيانات** **كعدد صحيح**
+     - **القيمة** ك **1** أو **2**
+
+       `DefaultEnforcementAllow = 1`
+       `DefaultEnforcementDeny = 2`
+
+     - انقر فوق **حفظ**.
+
+   :::image type="content" source="images/default-deny.png" alt-text="Screenshot of setting Default Enforcement as Deny" lightbox="images/default-deny.png":::
+
+3. رفض التدقيق الافتراضي:
+
+   يمكنك إنشاء نهج التدقيق للرفض الافتراضي كما يلي:
+
+   - في الجزء **"إضافة صف** "، أدخل:
+     - **الاسم** **كرفض افتراضي للتدقيق**
+     - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
+
+       :::image type="content" source="images/audit-default-deny-1.png" alt-text="لقطة شاشة لإنشاء نهج الرفض الافتراضي للتدقيق" lightbox="images/audit-default-deny-1.png":::
+
+     - **نوع البيانات** **كسلسلة (ملف XML)**
+     - **ملف XML مخصص** كملف **Deny.xmlافتراضي للتدقيق** .
+
+       مسار ملف XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml>
+
+       استخدم بيانات XML التالية لإنشاء نهج التدقيق للرفض الافتراضي:
+
+       :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="لقطة شاشة لملف xml لرفض التدقيق الافتراضي":::
+
+4. ReadOnly - المجموعة:
+
+   يمكنك إنشاء مجموعة تخزين قابلة للإزالة باستخدام الوصول إلى ReadOnly كما يلي:
+
+   - في الجزء **"إضافة صف** "، أدخل:
+     - **الاسم** **كأي مجموعة تخزين قابلة للإزالة**
+     - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
+
+       :::image type="content" source="images/any-removable-storage-group.png" alt-text="لقطة شاشة لإنشاء أي مجموعة تخزين قابلة للإزالة" lightbox="images/any-removable-storage-group.png":::
+
+     - **نوع البيانات** **كسلسلة (ملف XML)**
+       - **XML مخصص** **كأي ملف تخزين قابل للإزالة وقرص DVD وWPD Group.xml**
+
+         مسار ملف XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml>
+
+         استخدم بيانات XML التالية لإنشاء "أي تخزين قابل للإزالة وقرص DVD وWPD Group" مع وصول ReadOnly:
+
+         :::image type="content" source="images/read-only-group-xml-file.png" alt-text="لقطة شاشة لملف xml للمجموعة للقراءة فقط":::
+
+5. ReadOnly - النهج:
+
+   يمكنك إنشاء نهج ReadOnly وتطبيقه على مجموعة التخزين القابلة للإزالة ReadOnly للسماح بنشاط القراءة كما يلي:
+
+   - في الجزء **"إضافة صف** "، أدخل:
+     - **الاسم** ك **نشاط السماح بالقراءة**
+     - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
+
+       :::image type="content" source="images/allow-read-activity.png" alt-text="&quot; lightbox= &quot;images/allow-read-activity.png":::
+
+     - **نوع البيانات** **كسلسلة (ملف XML)**
+     - ملف **XML مخصص** كملف **السماح Read.xml**
+
+       مسار ملف XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml>
+
+       استخدم بيانات XML التالية لإنشاء نهج ReadOnly وتطبيقه على مجموعة التخزين القابلة للإزالة ReadOnly:
+
+       :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="لقطة شاشة لملف xml لنهج القراءة فقط":::
+
 6. إنشاء مجموعة للوسائط المسموح بها: يمكنك إنشاء مجموعة وسائط مسموح بها كما يلي:
-    - في الجزء **"إضافة صف** "، أدخل:
-        - **الاسم** كمجموعة **USBs المعتمدة**
-        - **OMA-URI** ك     
-         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
-    :::image type="content" source="images/create-group-allowed-medias.png" alt-text="لقطة شاشة لإنشاء مجموعة USBs المعتمدة" lightbox="images/create-group-allowed-medias.png"::: 
-        - **نوع البيانات** **كسلسلة (ملف XML)** 
-        - **XML مخصص** كملف **Group.xmlUSBs معتمد** <br>
-            مسار ملف XML: [mdatp-devicecontrol/Approved USBs Group.xml في main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml)<br>
-            استخدم بيانات XML التالية لإنشاء مجموعة وسائط مسموح بها: :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="لقطة شاشة لإنشاء مجموعة لملف xml للوسائط المسموح بها":::
-      
-   
+   - في الجزء **"إضافة صف** "، أدخل:
+     - **الاسم** كمجموعة **USBs المعتمدة**
+     - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
+
+       :::image type="content" source="images/create-group-allowed-medias.png" alt-text="لقطة شاشة لإنشاء مجموعة USBs المعتمدة" lightbox="images/create-group-allowed-medias.png":::
+
+     - **نوع البيانات** **كسلسلة (ملف XML)**
+     - **XML مخصص** كملف **Group.xmlUSBs معتمد**
+
+       مسار ملف XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml>
+
+       استخدم بيانات XML التالية لإنشاء مجموعة وسائط مسموح بها:
+
+       :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="لقطة شاشة لإنشاء مجموعة لملف xml للوسائط المسموح بها":::
+
 7. إنشاء نهج للسماح لمجموعة USB المعتمدة: يمكنك إنشاء نهج للسماح لمجموعة USB المعتمدة كما يلي:
-    - في الجزء **"إضافة صف** "، أدخل:
-        - **الاسم** **كلسماح بالوصول ومعلومات ملف التدقيق**
-        - **OMA-URI** ك     
-         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
-    :::image type="content" source="images/allow-access-audit-file-information-1.png" alt-text="لقطة شاشة للسماح بالوصول ومعلومات ملف التدقيق" lightbox= "images/allow-access-audit-file-information-1.png":::
-        - **نوع البيانات** **كسلسلة (ملف XML)** 
-        - **ملف XML مخصص** **كلسماح بالوصول الكامل والتدقيق file.xml** <br>
-            مسار ملف XML: [mdatp-devicecontrol/Allow full access and audit file.xml في main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml)<br>
-            استخدم بيانات XML التالية لإنشاء نهج للسماح لمجموعة USB المعتمدة: :::image type="content" source="images/create-policy-allow-approved-usb-group-xml-intune.png" alt-text="لقطة شاشة لإنشاء نهج للسماح بملف XML لمجموعة USB المعتمد":::
-      
-           ما المقصود ب '47' في النهج؟ <br> 
-           هو 9 + 2 + 36 = 47: <br>
-           الوصول للقراءة: 1+8 = 9 <br>
-           الوصول للكتابة: مستوى القرص 2 <br>
-           التنفيذ: 4 + 32 = 36
+   - في الجزء **"إضافة صف** "، أدخل:
+     - **الاسم** **كلسماح بالوصول ومعلومات ملف التدقيق**
+     - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
+
+       :::image type="content" source="images/allow-access-audit-file-information-1.png" alt-text="لقطة شاشة للسماح بالوصول ومعلومات ملف التدقيق" lightbox= "images/allow-access-audit-file-information-1.png":::
+
+     - **نوع البيانات** **كسلسلة (ملف XML)**
+     - **ملف XML مخصص** **كلسماح بالوصول الكامل والتدقيق file.xml**
+
+       مسار ملف XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml>
+
+       استخدم بيانات XML التالية لإنشاء نهج للسماح لمجموعة USB المعتمدة:
+
+       :::image type="content" source="images/create-policy-allow-approved-usb-group-xml-intune.png" alt-text="لقطة شاشة لإنشاء نهج للسماح بملف XML لمجموعة USB المعتمد":::
+
+       ماذا يعني '47' في النهج؟ إنه 9 + 2 + 36 = 47:
+
+       - الوصول للقراءة: 1 + 8 = 9.
+       - الوصول للكتابة: مستوى القرص 2.
+       - التنفيذ: 4 + 32 = 36.
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>نشر النهج وإدارته باستخدام واجهة مستخدم Intune
 
@@ -274,68 +302,102 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 ### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة
 
-1. تمكين التحكم في الوصول إلى التخزين القابل للإزالة أو تعطيله: <br> يمكنك تمكين التحكم في الوصول إلى التخزين القابل للإزالة (RSAC) كما يلي:<br> 
-    - الانتقال إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > ميزات > التحكم في الجهاز**
-    - في نافذة **"التحكم بالجهاز** "، حدد **"ممكن**".
-      
-    :::image type="content" source="images/enable-rsac-gp.png" alt-text="لقطة شاشة لتمكين RSAC باستخدام نهج المجموعة " lightbox="images/enable-rsac-gp.png":::
-      
-2. تعيين الإنفاذ الافتراضي: <br> 
-    يمكنك تعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج كما يلي: 
-    - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > ميزات > التحكم في الجهاز > تحديد الإنفاذ الافتراضي للتحكم في الجهاز**
+1. تمكين التحكم في الوصول إلى التخزين القابل للإزالة أو تعطيله:
 
-    - في نافذة **«Select Device Control Default Enforcement»** ، حدد **«Default Deny»**:
-    
-     :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="لقطة شاشة لإعداد «Default Enforcement = Deny» باستخدام نهج المجموعة" lightbox="images/set-default-enforcement-deny-gp.png":::    
+   يمكنك تمكين التحكم في الوصول إلى التخزين القابل للإزالة (RSAC) كما يلي:
 
-3. رفض التدقيق الافتراضي: <br> استخدم بيانات XML التالية لإنشاء نهج التدقيق للرفض الافتراضي:
-    
-    :::image type="content" source="images/audit-default-deny-gp.png" alt-text="Screenshot of audit default deny xml data":::
-      
-  
-4. ReadOnly - المجموعة: <br>
+   - الانتقال إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > ميزات > التحكم في الجهاز**
+   - في نافذة **"التحكم بالجهاز** "، حدد **"ممكن**".
+
+   :::image type="content" source="images/enable-rsac-gp.png" alt-text="لقطة شاشة لتمكين RSAC باستخدام نهج المجموعة " lightbox="images/enable-rsac-gp.png":::
+
+2. تعيين الإنفاذ الافتراضي:
+
+   يمكنك تعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج كما يلي:
+
+   - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > ميزات > التحكم في الجهاز > تحديد الإنفاذ الافتراضي للتحكم في الجهاز**
+
+   - في نافذة **«Select Device Control Default Enforcement»** ، حدد **«Default Deny»**:
+
+   :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="لقطة شاشة لإعداد «Default Enforcement = Deny» باستخدام نهج المجموعة" lightbox="images/set-default-enforcement-deny-gp.png":::
+
+3. رفض التدقيق الافتراضي:
+
+   استخدم بيانات XML التالية لإنشاء نهج التدقيق للرفض الافتراضي:
+
+   :::image type="content" source="images/audit-default-deny-gp.png" alt-text="Screenshot of audit default deny xml data":::
+
+4. ReadOnly - المجموعة:
+
    استخدم بيانات XML التالية لإنشاء مجموعة تخزين قابلة للإزالة باستخدام الوصول إلى ReadOnly:
- 
+
    :::image type="content" source="images/read-only-group-gp.png" alt-text="لقطة شاشة لبيانات xml لمجموعة التخزين القابلة للإزالة للقراءة فقط":::
-      
-    
-5. ReadOnly - النهج: <br> استخدم بيانات XML التالية لإنشاء نهج ReadOnly وتطبيقه على مجموعة التخزين القابلة للإزالة ReadOnly للسماح بنشاط القراءة:
-  
+
+5. ReadOnly - النهج:
+
+   استخدم بيانات XML التالية لإنشاء نهج ReadOnly وتطبيقه على مجموعة التخزين القابلة للإزالة ReadOnly للسماح بنشاط القراءة:
+
     :::image type="content" source="images/read-only-policy-gp.png" alt-text="لقطة شاشة لبيانات xml للنهج للقراءة فقط" lightbox="images/read-only-policy-gp.png":::
-        
-   
-6. إنشاء مجموعة للوسائط المسموح بها: <br> استخدم بيانات XML التالية لإنشاء مجموعة وسائط مسموح بها للتخزين القابل للإزالة:
-    
+
+6. إنشاء مجموعة للوسائط المسموح بها:
+
+   استخدم بيانات XML التالية لإنشاء مجموعة وسائط مسموح بها للتخزين القابل للإزالة:
+
    :::image type="content" source="images/create-group-allowed-medias-gp.png" alt-text="لقطة شاشة لبيانات xml لإنشاء مجموعة للوسائط المسموح بها" lightbox="images/create-group-allowed-medias-gp.png":::
-      
-    
-7. إنشاء نهج للسماح لمجموعة USB المعتمدة: <br> استخدم بيانات XML التالية لإنشاء نهج للسماح بمجموعة USB المعتمدة:
-    
-    :::image type="content" source="images/create-policy-allow-approved-usb-group-xml.png" alt-text="لقطة شاشة لبيانات XML لإنشاء نهج للسماح لمجموعة USB المعتمدة باستخدام نهج المجموعة" lightbox="images/create-policy-allow-approved-usb-group-xml.png":::
-      
-   ما المقصود ب '47' في النهج؟ <br> هو 9 + 2 + 36 = 47: <br>
-   الوصول للقراءة: 1+8 = 9 <br>
-   الوصول للكتابة: مستوى القرص 2 <br>
-   التنفيذ: 4 + 32 = 36
 
-8. دمج المجموعات في ملف XML واحد: <br> يمكنك دمج مجموعات نهج التحكم في الجهاز في ملف XML واحد كما يلي:<br> 
-    - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > التحكم بالجهاز > لقطة شاشة لمجموعات**
-     نهج تحديد نهج التحكم في الجهاز :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="لتعريف مجموعات نهج التحكم في الجهاز" lightbox="images/define-device-control-policy-grps-gp.png":::
-    - في نافذة **تعريف مجموعات نهج التحكم في الجهاز** ، أدخل مسار الملف الذي يحتوي على بيانات مجموعات XML. <br>
-    مسار ملف XML: [mdatp-devicecontrol/Demo_Groups.xml في main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)<br>
-    فيما يلي مخطط xml لمجموعات نهج التحكم في الجهاز: :::image type="content" source="images/combine-grps-xml-file-gp.png" alt-text="لقطة شاشة لدمج المجموعات في ملف XML واحد":::
+7. إنشاء نهج للسماح لمجموعة USB المعتمدة:
 
-9. دمج النهج في ملف XML واحد: <br> يمكنك دمج قواعد نهج التحكم في الجهاز في ملف XML واحد كما يلي:<br> 
-    - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > التحكم بالجهاز > تحديد قواعد**
-     نهج التحكم في الجهاز :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="لقطة شاشة لتعريف قواعد نهج التحكم في الجهاز" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
-    - في نافذة **تحديد قواعد نهج التحكم في الجهاز** ، حدد **Enabled**، وأدخل مسار الملف الذي يحتوي على بيانات قواعد XML. <br>
-    مسار ملف XML: [mdatp-devicecontrol/Demo_Policies.xml في main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml)<br>
-    فيما يلي مخطط xml لقواعد نهج التحكم في الجهاز: :::image type="content" source="images/combine-policies-xml-gp.png" alt-text="لقطة شاشة لدمج النهج في ملف XML واحد":::
+   استخدم بيانات XML التالية لإنشاء نهج للسماح بمجموعة USB المعتمدة:
 
-10. تعيين موقع لنسخة من الملف (دليل): <br>إذا كنت تريد الحصول على نسخة من الملف (دليل) عند حدوث الوصول للكتابة، يجب عليك تعيين الموقع الذي يمكن للنظام حفظ النسخة فيه.<br>
+   :::image type="content" source="images/create-policy-allow-approved-usb-group-xml.png" alt-text="لقطة شاشة لبيانات XML لإنشاء نهج للسماح لمجموعة USB المعتمدة باستخدام نهج المجموعة" lightbox="images/create-policy-allow-approved-usb-group-xml.png":::
+
+   ماذا يعني '47' في النهج؟ إنه 9 + 2 + 36 = 47:
+
+   - الوصول للقراءة: 1+8 = 9.
+   - الوصول للكتابة: مستوى القرص 2.
+   - التنفيذ: 4 + 32 = 36.
+
+8. دمج المجموعات في ملف XML واحد:
+
+   يمكنك دمج مجموعات نهج التحكم في الجهاز في ملف XML واحد كما يلي:
+
+   - انتقل إلى **القوالب** \> الإدارية **لتكوين** \> الكمبيوتر **Windows المكونات** \> **برنامج الحماية من الفيروسات من Microsoft Defender** \> **مجموعات نهج التحكم بالجهاز.** \>
+
+    :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="لقطة شاشة لتعريف مجموعات نهج التحكم في الجهاز" lightbox="images/define-device-control-policy-grps-gp.png":::
+
+   - في نافذة **تعريف مجموعات نهج التحكم في الجهاز** ، أدخل مسار الملف الذي يحتوي على بيانات مجموعات XML.
+
+     مسار ملف XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml>
+
+     فيما يلي مخطط xml لمجموعات نهج التحكم في الجهاز:
+
+     :::image type="content" source="images/combine-grps-xml-file-gp.png" alt-text="لقطة شاشة لدمج المجموعات في ملف XML واحد":::
+
+9. دمج النهج في ملف XML واحد:
+
+   يمكنك دمج قواعد نهج التحكم في الجهاز في ملف XML واحد كما يلي:
+
+   - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > التحكم بالجهاز > تحديد قواعد نهج التحكم في الجهاز**
+
+     :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="لقطة شاشة لتحديد قواعد نهج التحكم في الجهاز" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
+
+   - في نافذة **تحديد قواعد نهج التحكم في الجهاز** ، حدد **Enabled**، وأدخل مسار الملف الذي يحتوي على بيانات قواعد XML.
+
+     مسار ملف XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml>
+
+     فيما يلي مخطط xml لقواعد نهج التحكم في الجهاز:
+
+    :::image type="content" source="images/combine-policies-xml-gp.png" alt-text="لقطة شاشة لدمج النهج في ملف XML واحد":::
+
+10. تعيين موقع لنسخة من الملف (دليل):
+
+    إذا كنت تريد الحصول على نسخة من الملف (دليل) عند حدوث الوصول للكتابة، يجب عليك تعيين الموقع الذي يمكن للنظام حفظ النسخة فيه.
+
     - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > عنصر تحكم الجهاز > تحديد موقع بيانات دليل التحكم بالجهاز عن بعد**.
-    - في نافذة **تحديد موقع بيانات دليل التحكم في الأجهزة عن بعد** ، حدد **«Enabled»** وأدخل مسار مجلد مشاركة الشبكة أو المحلي. <br>
-    :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="لقطة شاشة لتحديد موقع بيانات دليل التحكم في الأجهزة عن بعد" lightbox="images/evidence-data-remote-location-gp.png":::
+
+    - في نافذة **تحديد موقع بيانات دليل التحكم في الأجهزة عن بعد** ، حدد **«Enabled»** وأدخل مسار مجلد مشاركة الشبكة أو المحلي.
+
+      :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="لقطة شاشة لتحديد موقع بيانات دليل التحكم في الأجهزة عن بعد" lightbox="images/evidence-data-remote-location-gp.png":::
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>عرض بيانات التحكم في الوصول إلى التخزين القابلة للإزالة لعنصر تحكم الجهاز في Microsoft Defender لنقطة النهاية
 
@@ -365,20 +427,20 @@ DeviceEvents
 ```
 
 ```kusto
-//information of file written to removable storage 
+//information of file written to removable storage
 DeviceEvents
 | where ActionType contains "RemovableStorageFileEvent"
 | extend parsed=parse_json(AdditionalFields)
-| extend Policy = tostring(parsed.Policy) 
-| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
+| extend Policy = tostring(parsed.Policy)
+| extend PolicyRuleId = tostring(parsed.PolicyRuleId)
 | extend MediaClassName = tostring(parsed.ClassName)
 | extend MediaInstanceId = tostring(parsed.InstanceId)
 | extend MediaName = tostring(parsed.MediaName)
-| extend MediaProductId = tostring(parsed.ProductId) 
-| extend MediaVendorId = tostring(parsed.VendorId) 
-| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend MediaProductId = tostring(parsed.ProductId)
+| extend MediaVendorId = tostring(parsed.VendorId)
+| extend MediaSerialNumber = tostring(parsed.SerialNumber)
 | extend FileInformationOperation = tostring(parsed.DuplicatedOperation)
-| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
+| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation)
 | project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, Policy, PolicyRuleId, FileInformationOperation, MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber, FileName, FolderPath, FileSize, FileEvidenceLocation, AdditionalFields
 | order by Timestamp desc
 ```
@@ -395,9 +457,9 @@ DeviceEvents
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>ما هي وسائط التخزين القابلة للإزالة وقيود النهج؟
 
-إما من مركز إدارة إدارة نقاط النهاية من Microsoft (Intune) أو من خلال Microsoft Graph API، يتم إجراء الاستدعاء الخلفي من خلال OMA-URI (GET للقراءة أو PATCH للتحديث) وبالتالي فإن القيد هو نفسه أي ملف تعريف تكوين مخصص ل OMA-URI في Microsoft وهو رسميا 350000 حرف لملفات XML. 
-    
-على سبيل المثال، إذا كنت بحاجة إلى كتلتين من الإدخالات لكل معرف أمان مستخدم ل "السماح"/"التدقيق مسموح به" لمستخدمين محددين وكتلتين من الإدخالات في نهاية "رفض" الكل، فستتمكن من إدارة 2276 مستخدما. 
+إما من مركز إدارة إدارة نقاط النهاية من Microsoft (Intune) أو من خلال Microsoft Graph API، يتم إجراء الاستدعاء الخلفي من خلال OMA-URI (GET للقراءة أو PATCH للتحديث) وبالتالي فإن القيد هو نفسه أي ملف تعريف تكوين مخصص ل OMA-URI في Microsoft وهو رسميا 350000 حرف لملفات XML.
+
+على سبيل المثال، إذا كنت بحاجة إلى كتلتين من الإدخالات لكل معرف أمان مستخدم ل "السماح"/"التدقيق مسموح به" لمستخدمين محددين وكتلتين من الإدخالات في نهاية "رفض" الكل، فستتمكن من إدارة 2276 مستخدما.
 
 ### <a name="why-does-the-policy-not-work"></a>لماذا لا يعمل النهج؟
 

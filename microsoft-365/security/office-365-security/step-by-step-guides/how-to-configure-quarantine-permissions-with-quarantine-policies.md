@@ -1,5 +1,5 @@
 ---
-title: كيفية تكوين أذونات ونهج العزل
+title: كيفية تكوين أذونات ونُهج العزل
 description: خطوات تكوين نهج العزل والأذونات عبر مجموعات مختلفة، بما في ذلك AdminOnlyPolicy، والوصول المحدود، والوصول الكامل، وتوفير طريقة بسيطة لمسؤولي الأمان والمستخدمين لإدارة المجلدات الإيجابية الخاطئة.
 search.product: ''
 search.appverid: ''
@@ -15,16 +15,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: d2a3de0af3e824fcc8276bd339469253d1e3588c
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: c8f739a82223a9315e5082377b4951a88b1ea1df
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842349"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043666"
 ---
-# <a name="how-to-configure-quarantine-permissions-and-policies"></a>كيفية تكوين أذونات ونهج العزل
+# <a name="how-to-configure-quarantine-permissions-and-policies"></a>كيفية تكوين أذونات ونُهج العزل
 
 يعد تزويد مسؤولي الأمان والمستخدمين بطريقة بسيطة جدا لإدارة المجلدات الإيجابية الخاطئة أمرا حيويا نظرا للطلب المتزايد على وضع أمان أكثر صرامة مع تطور العمل المختلط. باتباع نهج توجيهي، يمكن للمسؤولين والمستخدمين تحقيق ذلك باستخدام الإرشادات أدناه.
 
@@ -46,11 +46,11 @@ ms.locfileid: "65842349"
 > [!IMPORTANT]
 > لمزيد من المعلومات حول كيفية إنشاء نهج مخصصة متعددة المستويات، راجع [نهج العزل - Office 365 | Microsoft Docs](../../office-365-security/quarantine-policies.md).
 
-## <a name="assigning-quarantine-polices-and-enabling-notification-with-organization-branding"></a>تعيين نهج العزل وتمكين الإعلام باستخدام العلامة التجارية للمؤسسة
+## <a name="assigning-quarantine-policies-and-enabling-notification-with-organization-branding"></a>تعيين نهج العزل وتمكين الإعلام باستخدام العلامة التجارية للمؤسسة
 
-بمجرد تحديد فئات العناصر التي يمكن للمستخدمين فرزها أو عدم فرزها، وإنشاء سياسات العزل المقابلة، يجب على المسؤولين تعيين هذه النهج للمستخدمين المعنيين وتمكين الإعلامات.
+بمجرد تحديد فئات العناصر التي يمكن للمستخدمين فرزها أو عدم فرزها، وإنشاء نهج العزل المقابلة، يجب على المسؤولين تعيين هذه النهج للمستخدمين المعنيين وتمكين الإعلامات.
 
-1. حدد المستخدمين أو المجموعات أو المجالات التي تريد تضمينها في فئة *الوصول الكامل* مقابل فئة *الوصول المحدود*، مقابل فئة *مسؤول فقط*.
+1. حدد المستخدمين أو المجموعات أو المجالات التي تريد تضمينها في فئة *الوصول الكامل* مقابل فئة *الوصول المحدود* ، مقابل فئة *المسؤول فقط* .
 1. سجل الدخول إلى مدخل [Microsoft Security](https://security.microsoft.com).
 1. حدد **قواعد &** نهج التعاون  > **& البريد الإلكتروني**.
 1. حدد **نهج التهديد**.

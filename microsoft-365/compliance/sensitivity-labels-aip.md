@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: عند استخدام عميل التسمية الموحد ل Azure حماية البيانات (AIP)، فهم مزايا استخدام التسمية المضمنة لتطبيقات Office بدلا من الوظيفة الإضافية AIP.
-ms.openlocfilehash: c790ee691e6a72228c865b8cdf9911ee83f4dfd4
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0540f3b1b78b728a7c49e0851696d20a04137bb7
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011559"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043055"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>لماذا اختر تسمية مضمنة عبر الوظيفة الإضافية AIP لتطبيقات Office
 
@@ -76,7 +76,7 @@ ms.locfileid: "66011559"
     - الوصول إلى خدمات التصنيف الذكية التي تتضمن [مصنفات قابلة للتدريب](classifier-learn-about.md) [ومطابقة البيانات الدقيقة (EDM)](sit-learn-about-exact-data-match-based-sits.md) [والكيانات المسماة](named-entities-learn.md)
     - الكشف عن المعلومات الحساسة أثناء كتابة المستخدمين
     - في Word، يمكن للمستخدمين مراجعة المحتوى الحساس المحدد وإزالته
-- [دعم PDF](sensitivity-labels-office-apps.md#pdf-support)
+- [دعم PDF](sensitivity-labels-office-apps.md#pdf-support) (في المعاينة)
 - بالنسبة للتسميات التي تسمح للمستخدمين بتعيين الأذونات، يمكن منح أذونات مختلفة (قراءة أو تغيير) للمستخدمين أو المجموعات
 - Encrypt-Only لرسائل البريد الإلكتروني
 - رؤية التسميات على شريط المعلومات

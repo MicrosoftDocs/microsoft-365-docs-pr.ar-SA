@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: يقدم Microsoft Purview ثلاث أدوات eDiscovery يمكنك استخدامها للبحث عن المحتوى الموجود في مواقع مختلفة وتصديره مثل علب بريد Exchange ومواقع SharePoint OneDrive for Business مجموعات Microsoft 365 Microsoft Teams و Skype for Business المحادثات. يوفر eDiscovery (قياسي) وeDiscovery (Premium) العديد من الميزات الإضافية لمساعدتك على إدارة التحقيقات الخاصة بك.
-ms.openlocfilehash: f5660b8a31cad45b110e6e32450dc03b75d5f533
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9262f2773d17f19bd5adaea3eed9e747e343e625
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095851"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043382"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>حلول Microsoft Purview eDiscovery
 
@@ -145,6 +145,8 @@ ms.locfileid: "65095851"
 
 ### <a name="ediscovery-standard"></a>eDiscovery (قياسي)
 
+- Exchange عبر الإنترنت الخطة 2
+- الخطة 2 ل Sharepoint online
 - اشتراك Microsoft 365 E3
 - اشتراك Microsoft 365 G3
 - اشتراك Microsoft 365 Business Premium

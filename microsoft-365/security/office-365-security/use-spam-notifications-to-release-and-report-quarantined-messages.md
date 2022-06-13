@@ -21,16 +21,16 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على إعلامات البريد العشوائي للمستخدم النهائي للرسائل المعزولة في Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1688e4a56787c9593aae7006a05d52b16558647
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 44ed83a95fe8f588369f0a1bbae4809f32581f87
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393469"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043449"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>استخدام إعلامات العزل لإصدار الرسائل المعزولة والإبلاغ بها
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -52,7 +52,9 @@ ms.locfileid: "65393469"
 > [!NOTE]
 > بشكل افتراضي، تتوفر الرسائل التي يتم عزلها على أنها تصيد احتيالي عالي الثقة أو برامج ضارة أو قواعد تدفق البريد (المعروفة أيضا بقواعد النقل) أو خزينة نهج المرفقات في Defender لـ Office 365 فقط للمسؤولين (بشكل افتراضي، يتم استخدام نهج العزل AdminOnlyAccessPolicy). لمزيد من المعلومات، راجع [إدارة الرسائل والملفات المعزولة كمسؤول في EOP](manage-quarantined-messages-and-files.md).
 >
-> حاليا، إعلامات العزل غير معتمدة للمجموعات.
+> يتم إرسال إعلامات العزل للرسائل المرسلة إلى مجموعات التوزيع أو مجموعات الأمان الممكنة للبريد إلى جميع أعضاء المجموعة.
+>
+> يتم إرسال إعلامات العزل للرسائل المرسلة إلى مجموعات Microsoft 365 إلى كافة أعضاء المجموعة فقط إذا كان إعداد **"إرسال نسخ من محادثات المجموعة وأحداثها إلى أعضاء المجموعة**" قيد التشغيل.
 
 عندما تتلقى إعلام عزل، تتوفر المعلومات التالية دائما لكل رسالة تم عزلها:
 

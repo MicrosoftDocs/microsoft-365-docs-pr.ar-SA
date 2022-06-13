@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: يعتمد الأسلوب الذي تستخدمه لإلغاء تعيين تراخيص المنتجات على ما إذا كنت تقوم بإلغاء تعيين التراخيص من مستخدمين محددين أو من منتج معين.
 ms.date: 04/22/2022
-ms.openlocfilehash: 29d46ac745487328ecfe49bf658fdaa79fa346d9
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 23fc9ea04f45cdeb50acb0ec2d62d584974d6499
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465789"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043231"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>إلغاء تعيين تراخيص Microsoft 365 من المستخدمين
 
@@ -112,13 +112,13 @@ ms.locfileid: "65465789"
 
 3. في الأعلى، حدد **"Manage product licenses**".
 
-4. في الجزء **"إدارة تراخيص المنتجات**"، حدد **"إلغاء تعيين** **تغييرات حفظ الكل".** > 
+4. في الجزء **"إدارة تراخيص المنتجات** "، حدد **"إلغاء تعيين كافة** > **تغييرات الحفظ**".
 
 5. في أسفل الجزء، حدد **«Done»**.  
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>ماذا يحدث لبيانات المستخدم عند إزالة ترخيصه؟
 
-- عند إزالة ترخيص من مستخدم، Exchange يتم الاحتفاظ بالبيانات عبر الإنترنت المقترنة بهذا الحساب لمدة 30 يوما. بعد فترة السماح التي تبلغ 30 يوما، يتم حذف البيانات ولا يمكن استردادها.
+- عند إزالة ترخيص من مستخدم، يتم الاحتفاظ بالبيانات Exchange Online المقترنة بهذا الحساب لمدة 30 يوما. بعد فترة السماح التي تبلغ 30 يوما، يتم حذف البيانات ولا يمكن استردادها. ومع ذلك، فإنه يرتبط بنهج الاستبقاء، ويتم الاحتفاظ بالمحتوى الذي يطابق تسميات الاستبقاء للاكتشاف.
 - لا يتم حذف الملفات المحفوظة في OneDrive for Business إلا إذا تم حذف المستخدم من مركز مسؤولي Microsoft 365 أو تمت إزالته من خلال مزامنة Active Directory. لمزيد من المعلومات، راجع [OneDrive الاستبقاء والحذف](/onedrive/retention-and-deletion).
 - عند إزالة الترخيص، لن تعود علبة بريد المستخدم قابلة للبحث باستخدام أداة eDiscovery مثل البحث عن المحتوى أو eDiscovery (Premium). لمزيد من المعلومات، راجع "البحث في علب البريد غير المتصلة أو غير المرخصة" في [البحث عن المحتوى في Microsoft 365](../../compliance/content-search.md).
 - إذا كان لديك اشتراك Enterprise، مثل Office 365 Enterprise E3، Exchange Online يسمح لك بالاحتفاظ ببيانات علبة البريد لحساب مستخدم محذوظ باستخدام [علب البريد غير النشطة](../../compliance/inactive-mailboxes-in-office-365.md). لمزيد من المعلومات، راجع [إنشاء علب بريد غير نشطة وإدارتها في Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
@@ -129,7 +129,7 @@ ms.locfileid: "65465789"
 
 إذا كنت لن [تعيد تعيين التراخيص غير المستخدمة إلى مستخدمين آخرين](../../managed-desktop/get-started/assign-licenses.md)، ففكر [في إزالة التراخيص من اشتراكك](../../commerce/licenses/buy-licenses.md) بحيث لا تدفع مقابل تراخيص أكثر مما تحتاج إليه.
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [إزالة التراخيص من اشتراكك](../../commerce/licenses/buy-licenses.md) (مقال)\
 [تعيين تراخيص للمستخدمين](assign-licenses-to-users.md) (مقالة)\

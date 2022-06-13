@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: يمكنك إدارة الأجهزة المحمولة المتصلة بمؤسستك Microsoft 365 وتأمينها من خلال إعداد Basic Mobility and Security واستخدامها.
-ms.openlocfilehash: 9a9b3d433408d4ce5225f1a74351d01150744132
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 15f9c1f64f43c57de41082962bfc1741b40aa0dd
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863195"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042221"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>نظرة عامة على التنقل الأساسي والأمان Microsoft 365
 
@@ -34,7 +34,7 @@ ms.locfileid: "65863195"
 
 ## <a name="what-types-of-devices-can-you-manage"></a>ما هي أنواع الأجهزة التي يمكنك إدارتها؟
 
-يمكنك استخدام Basic Mobility and Security لإدارة العديد من أنواع الأجهزة المحمولة مثل Windows Phone وAndroid iPhone iPad. لإدارة الأجهزة المحمولة التي يستخدمها الأشخاص في مؤسستك، يجب أن يكون لكل شخص ترخيص Microsoft 365 قابل للتطبيق ويجب أن يكون جهازه مسجلا في Basic Mobility and Security.
+يمكنك استخدام Basic Mobility and Security لإدارة العديد من أنواع الأجهزة المحمولة مثل Android iPhone iPad. لإدارة الأجهزة المحمولة التي يستخدمها الأشخاص في مؤسستك، يجب أن يكون لكل شخص ترخيص Microsoft 365 قابل للتطبيق ويجب أن يكون جهازه مسجلا في Basic Mobility and Security.
 
 لمعرفة ما يدعمه Basic Mobility and Security لكل نوع من الأجهزة، راجع [قدرات Basic Mobility and Security](capabilities.md).
 
@@ -46,7 +46,7 @@ ms.locfileid: "65863195"
 
 **الخطوة 1:** قم بتنشيط Basic Mobility and Security باتباع الخطوات الواردة في [إعداد Basic Mobility and Security](set-up.md).
 
-**الخطوة 2:** قم بإعداد Basic Mobility and Security، على سبيل المثال، عن طريق إنشاء شهادة APNs لإدارة أجهزة iOS وإضافة سجل نظام أسماء المجالات (DNS) لمجالك لدعم الهواتف Windows.
+**الخطوة 2:** قم بإعداد Basic Mobility and Security، على سبيل المثال، عن طريق إنشاء شهادة APNs لإدارة أجهزة iOS وإضافة سجل نظام أسماء المجالات (DNS) لمجالك.
 
 **الخطوة 3:** إنشاء نهج الجهاز وتطبيقها على مجموعات من المستخدمين. عند القيام بذلك، يحصل المستخدمون على رسالة تسجيل على أجهزتهم، وعندما يكملون التسجيل، يتم تقييد أجهزتهم من خلال النهج التي قمت بإعدادها لهم. لمزيد من المعلومات، راجع [تسجيل جهازك المحمول باستخدام Basic Mobility and Security](enroll-your-mobile-device.md). 
 

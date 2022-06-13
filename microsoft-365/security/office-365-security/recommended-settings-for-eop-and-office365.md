@@ -19,16 +19,16 @@ ms.collection:
 description: ما هي أفضل الممارسات لإعدادات الأمان Exchange Online Protection (EOP) Defender لـ Office 365؟ ما هي التوصيات الحالية للحماية القياسية؟ ما الذي يجب استخدامه إذا كنت تريد أن تكون أكثر صرامة؟ وما هي الإضافات التي تحصل عليها إذا كنت تستخدم Defender لـ Office 365 أيضا؟
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 921523ea3c1d73dc83c148cc2e61aab416ed9302
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: bd30be87a277d271fece74a9700a60992a562399
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599288"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043014"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>الإعدادات الموصى بها ل EOP والأمان Microsoft Defender لـ Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -208,10 +208,10 @@ ms.locfileid: "65599288"
 |اسم ميزة الأمان|افتراضي|Standard|صارمه|التعليق|
 |---|:---:|:---:|:---:|---|
 |**حد التصيد الاحتيالي & الحماية**|||||
-|**تمكين المستخدمين من الحماية** (حماية المستخدم منتحلة) <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|غير محدد <br/><br/> `$false` <br/><br/> اي|المحدد <br/><br/> `$true` <br/><br/> \<list of users\>|المحدد <br/><br/> `$true` <br/><br/> \<list of users\>|نوصي بإضافة مستخدمين (مرسلي الرسائل) في الأدوار الرئيسية. داخليا، قد يكون المرسلون المحميون الرئيس التنفيذي والمدير المالي وغيرهم من كبار القادة. خارجيا، يمكن أن يتضمن المرسلون المحميون أعضاء مجلس الإدارة أو مجلس الإدارة. <br/><br/> في نهج الأمان التي تم تعيينها مسبقا، لا يمكنك تحديد المستخدمين الذين يجب حمايتهم. تحتاج إلى تعطيل نهج الأمان المعينة مسبقا واستخدام نهج مخصصة لمكافحة التصيد الاحتيالي لإضافة مستخدمين في الأدوار الرئيسية كما هو مقترح.|
+|**تمكين المستخدمين من الحماية** (حماية المستخدم منتحلة) <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|غير محدد <br/><br/> `$false` <br/><br/> اي|المحدد <br/><br/> `$true` <br/><br/> \<list of users\>|المحدد <br/><br/> `$true` <br/><br/> \<list of users\>|نوصي بإضافة مستخدمين (مرسلي الرسائل) في الأدوار الرئيسية. داخليا، قد يكون المرسلون المحميون الرئيس التنفيذي والمدير المالي وغيرهم من كبار القادة. خارجيا، يمكن أن يتضمن المرسلون المحميون أعضاء مجلس الإدارة أو مجلس الإدارة.|
 |**تمكين المجالات للحماية** (حماية المجال منتحلة)|غير محدد|المحدد|المحدد||
 |**تضمين المجالات التي أملكها** <br/><br/> _EnableOrganizationDomainsProtection_|قباله <br/><br/> `$false`|المحدد <br/><br/> `$true`|المحدد <br/><br/> `$true`||
-|**تضمين مجالات مخصصة** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|قباله <br/><br/> `$false` <br/><br/> اي|المحدد <br/><br/> `$true` <br/><br/> \<list of domains\>|المحدد <br/><br/> `$true` <br/><br/> \<list of domains\>|نوصي بإضافة المجالات (مجالات المرسلين) التي لا تملكها، ولكنك تتفاعل معها بشكل متكرر. <br/><br/> في نهج الأمان التي تم تعيينها مسبقا، لا يمكنك تحديد مجالات custm لحمايتها. تحتاج إلى تعطيل نهج الأمان المعينة مسبقا واستخدام نهج مكافحة التصيد الاحتيالي المخصصة لإضافة مجالات مخصصة للحماية كما هو مقترح.|
+|**تضمين مجالات مخصصة** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|قباله <br/><br/> `$false` <br/><br/> اي|المحدد <br/><br/> `$true` <br/><br/> \<list of domains\>|المحدد <br/><br/> `$true` <br/><br/> \<list of domains\>|نوصي بإضافة المجالات (مجالات المرسلين) التي لا تملكها، ولكنك تتفاعل معها بشكل متكرر.|
 |**إضافة المرسلين والمجالات الموثوق بها** <br/><br/> _الendenders المستثناة_ <br/><br/> _ExcludedDomains_|None|None|None|استنادا إلى مؤسستك، نوصي بإضافة المرسلين أو المجالات التي تم تعريفها بشكل غير صحيح على أنها محاولات انتحال.|
 |**تمكين تحليل معلومات علبة البريد** <br/><br/> _EnableMailboxIntelligence_|المحدد <br/><br/> `$true`|المحدد <br/><br/> `$true`|المحدد <br/><br/> `$true`||
 |**تمكين التحليل الذكي لحماية الانتحال** <br/><br/> _EnableMailboxIntelligenceProtection_|قباله <br/><br/> `$false`|المحدد <br/><br/> `$true`|المحدد <br/><br/> `$true`|يسمح هذا الإعداد بالإجراء المحدد للكشف عن الانتحال بواسطة تحليل معلومات علبة البريد.|

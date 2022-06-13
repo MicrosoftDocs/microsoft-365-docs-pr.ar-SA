@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: ابحث عن تطبيقات شريك Microsoft وMicrosoft واختبارها ونشرها للمستخدمين والمجموعات في مؤسستك من مدخل التطبيقات المتكاملة في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: 491315b36a7698399bcd22c60173db8cec482148
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7d28f541c319622a4c15ac4eb4619b805cd0f13b
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094649"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043155"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>اختبار Microsoft 365 Apps ونشرها من قبل الشركاء في مدخل التطبيقات المتكاملة
 
@@ -60,7 +60,7 @@ ms.locfileid: "65094649"
 
 يمكنك العثور على التطبيقات المنشورة التي لا تظهر بالفعل في القائمة على صفحة التطبيقات المتكاملة واختبارها ونشرها بالكامل. من خلال شراء التطبيقات وترخيصها من مركز الإدارة، يمكنك إضافة تطبيقات شركاء Microsoft وMicrosoft إلى قائمتك من موقع واحد.
 
-1. في مركز الإدارة، في جزء التنقل الأيمن، اختر **الإعدادات**، ثم اختر <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**التطبيقات المتكاملة**</a>.
+1. في مركز الإدارة، في جزء التنقل الأيمن، اختر **الإعدادات**، ثم اختر <a href="https://admin.microsoft.com/adminportal/home?#/Settings/IntegratedApps" target="_blank">**التطبيقات المتكاملة**</a>.
 
 2. حدد **"الحصول على التطبيقات** " للحصول على عرض للتطبيقات.
 
@@ -86,8 +86,8 @@ ms.locfileid: "65094649"
 لن تتمكن من نشر تطبيق متجر واحد أو Microsoft 365 Apps بواسطة شريك من مدخل التطبيقات المتكاملة للسيناريوهات التالية.
 
 - ترتبط نفس الوظيفة الإضافية بأكثر من عرض SaaS واحد.
-- يرتبط عرض SaaS بالوظائف الإضافية، ولكنه لا يتكامل مع Microsoft Graph ولا يتم توفير معرف تطبيق AAD (دليل Azure النشط).
-- يرتبط عرض SaaS بالوظائف الإضافية، ولكن AAD (دليل Azure النشط) معرف التطبيق المتوفر لتكامل Microsoft Graph تتم مشاركته عبر عروض SaaS متعددة.
+- يرتبط عرض SaaS بالوظائف الإضافية، ولكنه لا يتكامل مع Microsoft Graph ولا يتم توفير معرف تطبيق AAD.
+- يرتبط عرض SaaS بالوظائف الإضافية، ولكن يتم مشاركة معرف تطبيق AAD المتوفر ل Microsoft Graph التكامل عبر عروض SaaS متعددة.
 
 ## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>Upload تطبيقات خط العمل المخصصة للاختبار والتوزيع الكامل
 

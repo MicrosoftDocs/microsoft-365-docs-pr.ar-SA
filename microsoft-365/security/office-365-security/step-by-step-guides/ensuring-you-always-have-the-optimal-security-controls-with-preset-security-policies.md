@@ -1,5 +1,5 @@
 ---
-title: التأكد من أن لديك دائما عناصر التحكم الأمنية المثلى مع نهج الأمان التي تم تعيينها مسبقا
+title: التأكد من حصولك دائماً على عناصر تحكم الأمان المُثلى باستخدام نُهج الأمان التي تم تعيينها مسبقاً
 description: خطوات التأكد من أن لديك دائما أفضل عناصر التحكم في الأمان مع نهج الأمان التي تم تعيينها مسبقا. تسمح لك النهج المحددة مسبقا بتحديد ملف تعريف أمان إما قياسي أو مقيد. ستقوم Microsoft بإدارة عناصر التحكم بالأمان والحفاظ عليها عبر Microsoft Defender لـ Office 365 نيابة عنك.
 search.product: ''
 search.appverid: ''
@@ -15,23 +15,23 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: m365-guidance-templates
-ms.topic: article
+ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 029f3503c1b93b17efc9ec5a89f29a0c40a3703f
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: e768635d3bb804dbf586ce652203689942901e4f
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842369"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042948"
 ---
-# <a name="ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies"></a>التأكد من أن لديك دائما عناصر التحكم الأمنية المثلى مع نهج الأمان التي تم تعيينها مسبقا
+# <a name="ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies"></a>التأكد من حصولك دائماً على عناصر تحكم الأمان المُثلى باستخدام نُهج الأمان التي تم تعيينها مسبقاً
 
 تسمح لك نهج الأمان المحددة مسبقا بتحديد ملف تعريف أمان خاص ب Standard أو Strict، كما تسمح لك Microsoft بإدارة عناصر التحكم في الأمان والحفاظ عليها عبر Microsoft Defender لـ Office 365 نيابة عنك.
 
 عند إضافة عناصر تحكم جديدة أو إذا تغير إعداد أفضل الممارسات لعنصر تحكم الأمان مع تطور مشهد التهديد، ستقوم Microsoft تلقائيا بتحديث إعدادات التحكم في الأمان للمستخدمين المعينين لنهج أمان قياسي أو صارم تم تعيينه مسبقا. باستخدام نهج الأمان المسبقة، سيكون لديك دائما تكوين أفضل الممارسات الموصى به من Microsoft للمستخدمين.
 
 ## <a name="what-you-will-need"></a>ما ستحتاج إليه
-- Microsoft Defender لـ Office 365 الخطة 1
+- Microsoft Defender لـ Office 365 الخطة 1 أو الأحدث (مضمنة في E5)
 - أذونات كافية (دور مسؤول الأمان)
 - 5 دقائق لتنفيذ الخطوات أدناه.
 

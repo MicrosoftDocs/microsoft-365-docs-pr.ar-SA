@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 516b74eb8d1e62194718e0ad3234b3269e07fb83
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: ec3002a30e9b5f20636a272574dcc3d6d00e4389
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731362"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044399"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -58,14 +58,14 @@ ms.locfileid: "64731362"
 | `IsLocalAdmin` | `boolean` | مؤشر منطقي حول ما إذا كان المستخدم مسؤولا محليا على الجهاز |
 | `LogonId` | `string` | معرف جلسة تسجيل الدخول. هذا المعرف فريد على نفس الجهاز فقط بين عمليات إعادة التشغيل |
 | `RemoteDeviceName` | `string` | اسم الجهاز الذي نفذ عملية عن بعد على الجهاز المتأثر. استنادا إلى الحدث الذي يتم الإبلاغ عنه، قد يكون هذا الاسم اسم مجال مؤهل بالكامل (FQDN) أو اسم NetBIOS أو اسم مضيف بدون معلومات المجال |
-| `RemoteIP` | `string` | عنوان IP الذي كان يتم الاتصال به |
+| `RemoteIP` | `string` | عنوان IP للجهاز الذي تم تنفيذ محاولة تسجيل الدخول منه |
 | `RemoteIPType` | `string` | نوع عنوان IP، على سبيل المثال، Public و Private و Reserved و Loopback و Teredo و FourToSixMapping و Broadcast |
 | `RemotePort` | `int` | منفذ TCP على الجهاز البعيد الذي كان يتم الاتصال به |
 | `InitiatingProcessAccountDomain` | `string` | مجال الحساب الذي قام بتشغيل العملية المسؤولة عن الحدث |
 | `InitiatingProcessAccountName` | `string` | اسم المستخدم للحساب الذي قام بتشغيل العملية المسؤولة عن الحدث |
 | `InitiatingProcessAccountSid` | `string` | معرف الأمان (SID) للحساب الذي قام بتشغيل العملية المسؤولة عن الحدث |
 | `InitiatingProcessAccountUpn` | `string` | اسم المستخدم الأساسي (UPN) للحساب الذي قام بتشغيل العملية المسؤولة عن الحدث |
-| ` InitiatingProcessAccountObjectId` | `string` | معرف كائن Azure AD لحساب المستخدم الذي قام بتشغيل العملية المسؤولة عن الحدث |
+| ` InitiatingProcessAccountObjectId` | `string` | Azure AD معرف الكائن لحساب المستخدم الذي قام بتشغيل العملية المسؤولة عن الحدث |
 | `InitiatingProcessIntegrityLevel` | `string` | مستوى تكامل العملية التي بدأت الحدث. Windows تعيين مستويات التكامل للعمليات استنادا إلى خصائص معينة، مثل ما إذا تم تشغيلها من تنزيل الإنترنت. تؤثر مستويات التكامل هذه على أذونات الموارد |
 | `InitiatingProcessTokenElevation` | `string` | نوع الرمز المميز الذي يشير إلى وجود أو غياب رفع امتياز التحكم في وصول المستخدم (UAC) المطبق على العملية التي بدأت الحدث |
 | `InitiatingProcessSHA1` | `string` | SHA-1 للعملية (ملف الصورة) التي بدأت الحدث |

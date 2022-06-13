@@ -17,16 +17,16 @@ ms.collection:
 description: تعرف على كيفية تمكين الوظائف الإضافية "رسالة التقرير" أو "التصيد الاحتيالي للتقرير" Outlook Outlook على ويب أو للمستخدمين الفرديين أو لمؤسستك بأكملها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a4166b36888c96b12a8aa410848c392c2afdaeb5
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: b0882a37161989248b8c970a5dbe01efc0bcff65
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144828"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043752"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>تمكين الوظيفة الإضافية "رسالة التقرير" أو الوظائف الإضافية "تصيد التقرير"
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -59,7 +59,7 @@ ms.locfileid: "65144828"
   - Outlook مضمنة مع تطبيقات Microsoft 365 ل Enterprise
   - تطبيق Outlook لنظامي التشغيل iOS وAndroid
 
-- لا تتوفر كلتا الوضيفتين الإضافيتين لعلب البريد المشتركة.
+- لا تتوفر كلتا الوضيفتين الإضافيتين لعلب البريد المشتركة أو المجموعة أو المفوضة (ستكون الوظائف الإضافية رمادية اللون).
 
 - لا تتوفر كلتا الوضيفتين الإضافيتين لعلب بريد Exchange المحلية.
 

@@ -16,12 +16,12 @@ metadata:
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
   description: هل لديك سؤال حول كيفية عمل تشفير رسائل Microsoft Purview؟ تحقق من وجود إجابة هنا.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 92311ec82b7c9e5507cba5b0bd1feb457f9f729f
-  ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+  ms.openlocfilehash: 4d365174ff7fa7db71939a10de0a57e50dbd4d46
+  ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 06/10/2022
-  ms.locfileid: "66013057"
+  ms.lasthandoff: 06/13/2022
+  ms.locfileid: "66043011"
 title: الأسئلة المتداولة حول تشفير الرسائل
 summary: >
   [!include[Purview banner](../includes/purview-rebrand-banner.md)]
@@ -45,7 +45,7 @@ sections:
       - يتم تقديم تشفير الرسائل من Microsoft Purview كجزء من Office 365 Enterprise E3 وE5، Microsoft 365 Enterprise E3 وE5، Microsoft 365 Business Premium، Office 365 A1، A3، وA5، و Office 365 Government G3 وG5. لا تحتاج إلى تراخيص إضافية لتلقي قدرات الحماية الجديدة التي تدعمها Azure حماية البيانات.
 
 
-      - يمكنك أيضا إضافة Azure حماية البيانات الخطة 1 إلى الخطط التالية لتلقي تشفير رسائل Microsoft Purview: Exchange Online الخطة 1، Exchange Online الخطة 2، Office 365 F1، Microsoft 365 Business Basic، Microsoft 365 Business Standard أو Office 365 Enterprise E1.
+      - يمكنك أيضا إضافة Azure حماية البيانات الخطة 1 إلى الخطط التالية لتلقي تشفير رسائل Microsoft Purview: Exchange Online الخطة 1، Exchange Online الخطة 2، Office 365 F3، Microsoft 365 Business Basic، Microsoft 365 Business Standard أو Office 365 Enterprise E1.
 
 
       - يجب ترخيص كل مستخدم يستفيد من تشفير الرسائل من Microsoft Purview ليغطي بواسطة الميزة.
@@ -151,7 +151,7 @@ sections:
       نعم! يمكنك إعداد قواعد تدفق البريد في Exchange Online أو باستخدام DLP في مدخل توافق Microsoft Purview.
   - question: >
       هل يمكنني تخصيص الرسائل المشفرة باستخدام العلامة التجارية لشركتي؟
-    answer: "نعم! للحصول على معلومات حول تخصيص رسائل البريد الإلكتروني ومدخل OME، راجع إضافة العلامة التجارية لمؤسستك إلى الرسائل المشفرة. راجع [إضافة العلامة التجارية لمؤسستك إلى الرسائل المشفرة](add-your-organization-brand-to-encrypted-messages.md).\n  \n"
+    answer: "نعم، للبريد المرسل من علبة بريد Exchange Online في مؤسستك! للحصول على معلومات حول تخصيص رسائل البريد الإلكتروني ومدخل OME، راجع [إضافة العلامة التجارية لمؤسستك إلى الرسائل المشفرة](add-your-organization-brand-to-encrypted-messages.md).\n  \n"
   - question: >
       هل هناك أي قدرات لإعداد التقارير أو رؤى لرسائل البريد الإلكتروني المشفرة؟
     answer: "يوجد تقرير تشفير في مركز الأمان والتوافق. راجع [عرض تقارير أمان البريد الإلكتروني في مركز توافق & الأمان](../security/office-365-security/view-email-security-reports.md).\n  \n"
