@@ -17,13 +17,13 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: 'أحد متطلبات جميع حلول حماية البيانات في Microsoft Purview: إنشاء تسميات الحساسية وتكوينها ونشرها لتصنيف بيانات مؤسستك وحمايتها.'
-ms.openlocfilehash: 99b2b50ed00f470443956ff30ebb4940bbe1024d
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+description: 'أحد متطلبات جميع حلول Microsoft Purview حماية البيانات: إنشاء تسميات الحساسية وتكوينها ونشرها لتصنيف بيانات مؤسستك وحمايتها.'
+ms.openlocfilehash: 8b25fa9864bcbef92f509f7251a15bf24cc3da2d
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622373"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017021"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>إنشاء وتكوين تسميات الحساسية ونهجها
 
@@ -31,7 +31,7 @@ ms.locfileid: "65622373"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-يتم تنفيذ جميع حلول حماية البيانات في Microsoft Purview باستخدام [أوصاف الحساسية](sensitivity-labels.md). لإنشاء هذه التسميات ونشرها، انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>.
+يتم تنفيذ جميع حلول حماية البيانات Microsoft Purview باستخدام [تسميات الحساسية](sensitivity-labels.md). لإنشاء هذه التسميات ونشرها، انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل توافق Microsoft Purview</a>.
 
 أولا، قم بإنشاء وتكوين تسميات الحساسية التي تريد توفيرها للتطبيقات والخدمات الأخرى. على سبيل المثال، التسميات التي تريد أن يراها المستخدمون ويطبقونها من تطبيقات Office.
 
@@ -43,7 +43,7 @@ ms.locfileid: "65622373"
 
 ## <a name="create-and-configure-sensitivity-labels"></a>إنشاء أوصاف الحساسية وتكوينها
 
-1. من [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/)، حدد **SolutionsInformation** >  **protectionLabels** > 
+1. من [مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/)، حدد **تسميات** **حماية** >  معلومات **الحلول** > 
 
 2. في صفحة **التسميات** ، حدد **+ إنشاء تسمية** لبدء تكوين وصف الحساسية الجديد: 
     
@@ -60,7 +60,7 @@ ms.locfileid: "65622373"
 
     - إذا تم تحديد **مواقع & المجموعات**، يمكنك تكوين الإعدادات التي تنطبق على مجموعات Microsoft 365 ومواقع Teams SharePoint. إذا لم يتم تحديد هذا الخيار، فسترى الصفحة الأولى من هذه الإعدادات ولكن لا يمكنك تكوينها ولن تتوفر التسميات للمستخدمين لتحديد المجموعات والموقع.
 
-    للحصول على معلومات حول نطاق **أصول البيانات المهيأة**، راجع [تسمية المحتوى تلقائيا في Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
+    للحصول على معلومات حول نطاق **أصول البيانات المهيأة** ، راجع [تسمية المحتوى تلقائيا في Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).
 
 4. اتبع مطالبات التكوين لإعدادات التسمية.
 
@@ -86,9 +86,9 @@ ms.locfileid: "65622373"
 > [!IMPORTANT]
 > ضمن علامة التبويب " **تسميات** "، لا تحدد علامة التبويب **"نشر التسميات** " (أو الزر **"نشر التسمية** " عند تحرير تسمية) إلا إذا كنت بحاجة إلى إنشاء نهج تسمية جديد. تحتاج إلى نهج تسميات متعددة فقط إذا كان المستخدمون بحاجة إلى تسميات مختلفة أو إعدادات نهج مختلفة. تهدف إلى الحصول على أقل عدد ممكن من نهج التسمية - ليس من غير المألوف أن يكون لديك نهج تسمية واحد فقط للمؤسسة.
 
-### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>إعدادات تسمية إضافية مع Security & Compliance Center PowerShell
+### <a name="additional-label-settings-with-security--compliance-powershell"></a>إعدادات تسمية إضافية مع Security & Compliance PowerShell
 
-تتوفر إعدادات تسمية إضافية مع [cmdlet Set-Label](/powershell/module/exchange/set-label) من [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
+تتوفر إعدادات تسمية إضافية مع [Set-Label](/powershell/module/exchange/set-label) cmdlet من [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
 على سبيل المثال:
 
@@ -104,7 +104,7 @@ ms.locfileid: "65622373"
 
 للغات التي تحتاج إلى دعمها، استخدم [معرفات اللغة](/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) Office (المعروفة أيضا باسم علامات اللغة)، وحدد الترجمة الخاصة بك لاسم التسمية وتسمية الأدوات.
 
-قبل تشغيل الأوامر في PowerShell، يجب عليك أولا [الاتصال ب Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+قبل تشغيل الأوامر في PowerShell، يجب عليك أولا [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ```powershell
 $Languages = @("fr-fr","it-it","de-de")
@@ -126,7 +126,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>نشر أوصاف الحساسية عن طريق إنشاء نهج تسمية
 
-1. من [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/)، حدد **نهج** **SolutionsInformation** >  **protectionLabel** > 
+1. من [مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/)، حدد **نهج تسمية** **حماية** >  معلومات **الحلول** > 
 
 2. في الصفحة " **نهج التسمية** "، حدد **"نشر التسمية** " لبدء تكوين **"إنشاء نهج** ":
     
@@ -148,7 +148,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     لمزيد من المعلومات حول هذه الإعدادات، راجع [ما يمكن أن تفعله نهج التسمية](sensitivity-labels.md#what-label-policies-can-do) من معلومات النظرة العامة واستخدام التعليمات في واجهة المستخدم للإعدادات الفردية.
 
-    بالنسبة للتسميات التي تم تكوينها **Microsoft Purview أصول مخطط البيانات (معاينة):** لا تحتوي هذه التسميات على أي إعدادات نهج مقترنة.
+    بالنسبة للتسميات التي تم تكوينها **لأصول Microsoft Purview Data Map (معاينة):** لا تحتوي هذه التسميات على أي إعدادات نهج مقترنة.
 
 6. كرر هذه الخطوات إذا كنت بحاجة إلى إعدادات نهج مختلفة لمستخدمين أو نطاقات مختلفة. على سبيل المثال، تريد تسميات إضافية لمجموعة من المستخدمين، أو تسمية افتراضية مختلفة لمجموعة فرعية من المستخدمين. أو، إذا قمت بتكوين تسميات لها نطاقات مختلفة.
 
@@ -162,9 +162,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 يبدأ هذا الزر في **تكوين "إنشاء نهج** "، والذي يتيح لك تحرير التسميات المضمنة وإعدادات التسمية. عند إكمال التكوين، يتم نسخ أي تغييرات تلقائيا إلى المستخدمين والخدمات المحددة.
 
-### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>إعدادات نهج تسمية إضافية مع Security & Compliance Center PowerShell
+### <a name="additional-label-policy-settings-with-security--compliance-powershell"></a>إعدادات نهج تسمية إضافية مع Security & Compliance PowerShell
 
-تتوفر إعدادات نهج تسمية إضافية مع [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) cmdlet من [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell).
+تتوفر إعدادات نهج تسمية إضافية مع [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) cmdlet من [Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
 يدعم عميل التسمية الموحد ل Azure حماية البيانات العديد من [الإعدادات المتقدمة](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) التي تتضمن الترحيل من حلول التسمية الأخرى، والرسائل المنبثقة في Outlook التي تحذر رسائل البريد الإلكتروني التي يتم إرسالها أو تضبطها أو تحظرها. للحصول على القائمة الكاملة، راجع [الإعدادات المتقدمة المتوفرة لنهج التسمية](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) من دليل مسؤول هذا العميل.
 
@@ -176,7 +176,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>استخدام PowerShell لأوصاف الحساسية ونهجها
 
-يمكنك الآن استخدام [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) لإنشاء كل الإعدادات التي تراها في مركز إدارة التسمية وتكوينها. وهذا يعني أنه بالإضافة إلى استخدام PowerShell للإعدادات غير المتوفرة في مراكز إدارة التسميات، يمكنك الآن البرمجة بشكل كامل لإنشاء وصيانة أوصاف الحساسية ونهج وصف الحساسية. 
+يمكنك الآن استخدام [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) لإنشاء كل الإعدادات التي تراها في مركز إدارة التسمية وتكوينها. وهذا يعني أنه بالإضافة إلى استخدام PowerShell للإعدادات غير المتوفرة في مراكز إدارة التسميات، يمكنك الآن البرمجة بشكل كامل لإنشاء وصيانة أوصاف الحساسية ونهج وصف الحساسية. 
 
 راجع الوثائق التالية للمعلمات والقيم المدعومة:
 

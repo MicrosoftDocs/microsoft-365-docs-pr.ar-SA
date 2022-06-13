@@ -20,14 +20,16 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: بعد جعل علبة بريد Office 365 غير نشطة، قم بتغيير مدة الاحتجاز أو Office 365 نهج الاستبقاء المعين إلى علبة البريد غير النشطة.
-ms.openlocfilehash: d959195731ee0bf4de9b533f85fa2e2356259c12
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: f9db81631c563bb985d087b4dfd12ae784c825ff
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911357"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015825"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>تغيير مدة الانتظار لعلبة بريد غير نشطة
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [علبة البريد غير النشطة](inactive-mailboxes-in-office-365.md) هي حالة علبة البريد المستخدمة للاحتفاظ بالبريد الإلكتروني لموظف سابق بعد مغادرة مؤسستك. تصبح علبة البريد غير نشطة عند تطبيق قائمة احتجاز قابلة للتطبيق عليها قبل حذف كائن المستخدم Microsoft 365.  ستبدأ أنواع عمليات الاحتجاز التالية في إنشاء علبة بريد غير نشطة عند حذف حساب المستخدم:
 
@@ -61,13 +63,13 @@ ms.locfileid: "64911357"
 
 ## <a name="connect-to-powershell"></a>الاتصال إلى PowerShell
 
-كما ذكرنا من قبل، يمكن أن تؤدي العديد من أنواع الاحتجاز المختلفة إلى إنشاء علبة بريد غير نشطة.  لهذا السبب، لتغيير مدة الاحتجاز المطبقة على علبة البريد غير النشطة، يجب أولا تحديد نوع قوائم الاحتجاز التي تؤثر عليها.  للقيام بذلك، يجب استخدام Exchange Online PowerShell لتحديد أنواع قوائم الاحتجاز، وإذا تأثرت علبة البريد غير النشطة بنهج استبقاء Microsoft 365 أو التسميات، فيجب أيضا استخدام Security and Compliance Center PowerShell لتحديد النهج المحددة.
+كما ذكرنا من قبل، يمكن أن تؤدي العديد من أنواع الاحتجاز المختلفة إلى إنشاء علبة بريد غير نشطة.  لهذا السبب، لتغيير مدة الاحتجاز المطبقة على علبة البريد غير النشطة، يجب أولا تحديد نوع قوائم الاحتجاز التي تؤثر عليها.  للقيام بذلك، يجب استخدام Exchange Online PowerShell لتحديد أنواع قوائم الاحتجاز، وإذا تأثرت علبة البريد غير النشطة بنهج استبقاء Microsoft 365 أو التسميات، فيجب عليك أيضا استخدام Security & Compliance PowerShell لتحديد النهج المحددة.
 
-- للاتصال Exchange Online PowerShell أو Security & Compliance Center PowerShell، راجع أحد المواضيع التالية:
+- للاتصال Exchange Online PowerShell أو Security & Compliance PowerShell، راجع أحد المواضيع التالية:
 
   - [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-  - [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
+  - [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>الخطوة 1: تحديد قوائم الاحتجاز على علبة بريد غير نشطة
 
@@ -181,10 +183,10 @@ ComplianceTagHoldApplied : False
 |**علبة بريد غير نشطة**|**نوع قائمة الاحتجاز**|**كيفية تحديد قائمة الاحتجاز على علبة البريد غير النشطة**|
 |:-----|:-----|:-----|
 |Ann Beebe  <br/> |احتجاز التقاضي  <br/> | `LitigationHoldEnabled` تم تعيين الخاصية للإشارة إلى `True` أن علبة البريد موجودة في "احتجاز التقاضي". <br/><br/> بالإضافة إلى ذلك، `LitigationHoldDuration` تم تعيين الإشارة إلى `365.00:00:00` أن عناصر علبة البريد لن تخضع لفترة احتجاز التقاضي بعد 365 يوما من تاريخ إنشائها (تم إرسالها/تلقيها).  <br/><br/> `LitigationHoldDate` يشير إلى تاريخ تمكين "التقاضي" ويحدد `LitigationHoldOwner` الشخص الذي بدأ احتجاز التقاضي. <br/> |
-|نايلة أولسون  <br/> |نهج استبقاء Microsoft 365 من مركز التوافق في Microsoft 365 التي يتم تطبيقها على علب بريد معينة  <br/> |`InPlaceHolds` تحتوي الخاصية على المعرف الفريد العمومي (GUID) لنهج الاستبقاء Microsoft 365 المطبق على علبة البريد غير النشطة. يمكنك معرفة أن هذا نهج استبقاء يتم تطبيقه على علب بريد معينة لأن GUID يبدأ بالبادئة `mbx` وينتهي ب a `:2` أو `:3`. <br/><br/> لمزيد من المعلومات، راجع [فهم تنسيق قيمة InPlaceHolds لنهج الاستبقاء](identify-a-hold-on-an-exchange-online-mailbox.md#understanding-the-format-of-the-inplaceholds-value-for-retention-policies).  <br/> |
+|نايلة أولسون  <br/> |Microsoft 365 نهج الاستبقاء من مدخل توافق Microsoft Purview الذي يتم تطبيقه على علب بريد معينة  <br/> |`InPlaceHolds` تحتوي الخاصية على المعرف الفريد العمومي (GUID) لنهج الاستبقاء Microsoft 365 المطبق على علبة البريد غير النشطة. يمكنك معرفة أن هذا نهج استبقاء يتم تطبيقه على علب بريد معينة لأن GUID يبدأ بالبادئة `mbx` وينتهي ب a `:2` أو `:3`. <br/><br/> لمزيد من المعلومات، راجع [فهم تنسيق قيمة InPlaceHolds لنهج الاستبقاء](identify-a-hold-on-an-exchange-online-mailbox.md#understanding-the-format-of-the-inplaceholds-value-for-retention-policies).  <br/> |
 |ميغان باين <br/> | يتم تطبيق تسمية استبقاء Microsoft 365 مع إجراء الاستبقاء أو الاستبقاء والحذف على عنصر واحد على الأقل في علبة البريد  <br/> |`ComplianceTagHoldApplied` تشير الخاصية `True` إلى أنه تم تسمية عنصر بتسمية الاحتفاظ أو الاحتفاظ بها وحذفها.  <br/><br/> بالإضافة إلى ذلك، `InPlaceHolds` تحتوي الخاصية على المعرف الفريد العمومي (GUID) لنهج تسمية استبقاء Microsoft 365 المطبق على علبة البريد غير النشطة.  <br/><br/> لمزيد من المعلومات، راجع [تحديد علب البريد قيد الاحتجاز بسبب تطبيق تسمية استبقاء على مجلد أو عنصر](identify-a-hold-on-an-exchange-online-mailbox.md#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) <br/>  |
-|نيكايس النيكاسية النيكاسية  <br/> |نهج استبقاء Microsoft 365 على مستوى المؤسسة من مركز التوافق في Microsoft 365  <br/> |الخاصية `InPlaceHolds` فارغة، `LitigationHoldEnabled` وهي`False`.`ComplianceTagHoldApplied` `False` يشير هذا إلى أن موقعا واحدا أو أكثر بالكامل (Exchange) Microsoft 365 نهج الاستبقاء المطبقة على المؤسسة التي ترثها علبة البريد غير النشطة. <br/><br/> لمزيد من المعلومات، راجع [كيفية تأكيد تطبيق نهج استبقاء على مستوى المؤسسة على علبة بريد](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox) <br/> |
-|أبراهام ماكماهون  <br/> |احتجاز حالة eDiscovery في مركز التوافق في Microsoft 365  <br/> |`InPlaceHolds` تحتوي الخاصية على GUID للاحتفاظ بحالة eDiscovery الموضوعة على علبة البريد غير النشطة. يمكنك معرفة أن هذه حالة احتجاز eDiscovery لأن GUID يبدأ بالبادئة  `UniH` .  <br/><br/> لمزيد من المعلومات، راجع [قوائم احتجاز eDiscovery](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds). <br/> |
+|نيكايس النيكاسية النيكاسية  <br/> |نهج استبقاء Microsoft 365 على مستوى المؤسسة من مدخل الامتثال ل Microsoft Purview <br/> |الخاصية `InPlaceHolds` فارغة، `LitigationHoldEnabled` وهي`False`.`ComplianceTagHoldApplied` `False` يشير هذا إلى أن موقعا واحدا أو أكثر بالكامل (Exchange) Microsoft 365 نهج الاستبقاء المطبقة على المؤسسة التي ترثها علبة البريد غير النشطة. <br/><br/> لمزيد من المعلومات، راجع [كيفية تأكيد تطبيق نهج استبقاء على مستوى المؤسسة على علبة بريد](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox) <br/> |
+|أبراهام ماكماهون  <br/> |احتجاز حالة eDiscovery في مدخل توافق Microsoft Purview  <br/> |`InPlaceHolds` تحتوي الخاصية على GUID للاحتفاظ بحالة eDiscovery الموضوعة على علبة البريد غير النشطة. يمكنك معرفة أن هذه حالة احتجاز eDiscovery لأن GUID يبدأ بالبادئة  `UniH` .  <br/><br/> لمزيد من المعلومات، راجع [قوائم احتجاز eDiscovery](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds). <br/> |
 |Pilar Pinilla  <br/> |احتجاز In-Place  <br/> |`InPlaceHolds` تحتوي الخاصية على المعرف الفريد العمومي (GUID) In-Place Hold الذي تم وضعه على علبة البريد غير النشطة. يمكنك معرفة أن هذا In-Place قائمة احتجاز لأن GUID لا يبدأ بالبادئة.  <br/><br/> **ملاحظة**: اعتبارا من 1 أكتوبر 2020، لم يعد من الممكن تغيير مدة الاحتجاز الموضعي. يمكنك إزالة In-Place قائمة احتجاز فقط مما سيؤدي إلى حذف علبة البريد غير النشطة. <br/><br/> لمزيد من المعلومات، راجع [تقاعد أدوات eDiscovery القديمة](legacy-ediscovery-retirement.md). <br/> |
 
 ## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>الخطوة 2: تغيير مدة احتجاز علبة بريد غير نشطة
@@ -203,7 +205,7 @@ ComplianceTagHoldApplied : False
 
 ### <a name="change-the-duration-for-a-microsoft-365-retention-policy"></a>تغيير مدة نهج استبقاء Microsoft 365
 
-لتعديل مدة الاحتجاز لنهج استبقاء Microsoft 365، يجب أولا تحديد النهج الذي يؤثر على علبة البريد غير النشطة عن طريق تشغيل `Get-RetentionCompliancePolicy` GUID المقترن من `InPlaceHolds` الخاصية على علبة البريد في مركز الأمان والتوافق PowerShell.
+لتعديل مدة الاحتجاز لنهج استبقاء Microsoft 365، يجب أولا تحديد النهج الذي يؤثر على علبة البريد غير النشطة عن طريق تشغيل `Get-RetentionCompliancePolicy` GUID المقترن من `InPlaceHolds` الخاصية الموجودة في علبة البريد في Security & Compliance PowerShell.
 
 تأكد من إزالة البادئة واللاحقة من GUID عند تشغيل هذا الأمر.  على سبيل المثال، باستخدام عينة المعلومات الواردة أعلاه، يمكنك أخذ `InPlaceHolds` قيمة `mbxcdbbb86ce60342489bff371876e7f224:3` ثم إزالتها `mbx` والناتج `:3` عن المعرف الفريد العمومي (GUID) للنهج.`cdbbb86ce60342489bff371876e7f224`  في هذا المثال، تريد تشغيل:
 
@@ -211,16 +213,16 @@ ComplianceTagHoldApplied : False
 Get-RetentionCompliancePolicy cdbbb86ce60342489bff371876e7f224 | FL Name
 ```
 
-بمجرد معرفة اسم النهج، يمكنك ببساطة تعديل نهج الاستبقاء في مركز التوافق Microsoft 365.  كن على علم بأن نهج الاستبقاء تطبق عادة على أكثر من موقع واحد، لذلك سيؤثر تعديل النهج على جميع المواقع المطبقة - سواء كانت غير نشطة أو نشطة، والتي قد تتضمن أيضا مواقع أخرى غير Exchange.  لمزيد من المعلومات، راجع [إنشاء نهج الاستبقاء وتكوينها](create-retention-policies.md).  
+بمجرد معرفة اسم النهج، يمكنك ببساطة تعديل نهج الاستبقاء في مدخل توافق Microsoft Purview.  كن على علم بأن نهج الاستبقاء تطبق عادة على أكثر من موقع واحد، لذلك سيؤثر تعديل النهج على جميع المواقع المطبقة - سواء كانت غير نشطة أو نشطة، والتي قد تتضمن أيضا مواقع أخرى غير Exchange.  لمزيد من المعلومات، راجع [إنشاء نهج الاستبقاء وتكوينها](create-retention-policies.md).  
 
 > [!IMPORTANT]
 > يمكن أن تم تمديد فترة الاستبقاء لنهج [الاستبقاء مع تمكين تأمين الاحتفاظ](retention-preservation-lock.md) ، ولكن لا يتم تقليلها أو إزالتها.
 
-إذا كان الهدف هو تعديل فترة الاستبقاء لعلب البريد غير النشطة فقط، أو علب البريد غير النشطة المحددة فقط، فقد تفكر في نشر [نطاقات النهج التكيفية](retention.md#adaptive-or-static-policy-scopes-for-retention)، والتي يمكن استخدامها لاستهداف علب بريد معينة بشكل فردي - أو أنواع علب البريد، مثل علب البريد غير النشطة - باستخدام Azure AD وسمات وخصائص Exchange.
+إذا كان الهدف هو تعديل فترة الاستبقاء لعلب البريد غير النشطة فقط، أو علب البريد غير النشطة المحددة فقط، فقد تفكر في نشر [نطاقات نهج موائمة](retention.md#adaptive-or-static-policy-scopes-for-retention) مفتوحة، والتي يمكن استخدامها لاستهداف علب بريد معينة بشكل فردي - أو أنواع علب البريد، مثل علب البريد غير النشطة - باستخدام سمات وخصائص Azure AD وخصائص Exchange.
 
 ### <a name="change-the-duration-for-a-microsoft-365-retention-label"></a>تغيير مدة تسمية استبقاء Microsoft 365
 
-كما هو الحال مع نهج الاستبقاء، عند تعديل مدة احتجاز تسمية استبقاء Microsoft 365، يجب أولا تحديد النهج الذي ينشر التسمية التي تؤثر على المحتوى داخل علبة البريد غير النشطة عن طريق تشغيل `Get-RetentionCompliancePolicy` GUID المقترن من `InPlaceHolds` الخاصية على علبة البريد في مركز الأمان والتوافق PowerShell.
+كما هو الحال مع نهج الاستبقاء، عند تعديل مدة احتجاز تسمية استبقاء Microsoft 365، يجب أولا تحديد النهج الذي ينشر التسمية التي تؤثر على المحتوى داخل علبة البريد غير النشطة عن طريق تشغيل `Get-RetentionCompliancePolicy` GUID المقترن من `InPlaceHolds` الخاصية على علبة البريد في Security & Compliance PowerShell.
 
 تأكد من إزالة البادئة واللاحقة من GUID عند تشغيل هذا الأمر.  على سبيل المثال، باستخدام عينة المعلومات الواردة أعلاه، يمكنك أخذ `InPlaceHolds` قيمة `mbx6fe063689d404a5bb9940eed0f0bf5d2:1` ثم إزالتها `mbx` والناتج `:1` عن المعرف الفريد العمومي (GUID) للنهج.`6fe063689d404a5bb9940eed0f0bf5d2`  في هذا المثال، تريد تشغيل:
 

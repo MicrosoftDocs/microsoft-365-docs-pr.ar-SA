@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: kywirpel
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على صفحة المستأجرين.
-ms.openlocfilehash: 0f25f8bb02c6957598b2b328bc7832c429ca1e7a
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 28ca99b32021be0ad5efbf29a858df7bad253078
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128363"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016509"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>نظرة عامة على صفحة المستأجرين في Microsoft 365 Lighthouse
 

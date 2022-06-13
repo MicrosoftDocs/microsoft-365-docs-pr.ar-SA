@@ -12,14 +12,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: تعرف على كيفية لف مفاتيح جذر العميل المخزنة في azure Key Vault المستخدمة مع مفتاح العميل. تتضمن الخدمات ملفات Exchange Online Skype for Business SharePoint Online و OneDrive for Business و Teams.
-ms.openlocfilehash: 81d82f49c056f5a6ec9b8731b549aee68d5d658b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: f34e79ee772df1a88058625c0b2df5f62413bcfd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761340"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017323"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>لف مفتاح عميل أو مفتاح توفر أو تدويره
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!CAUTION]
 > قم فقط بلف مفتاح التشفير الذي تستخدمه مع Customer Key عندما تفرض متطلبات الأمان أو التوافق الخاصة بك أنه يجب عليك إظهار المفتاح. بالإضافة إلى ذلك، لا تحذف أي مفاتيح مقترنة أو مقترنة بنهج. عند لف المفاتيح، سيكون هناك محتوى مشفر بالمفاتيح السابقة. على سبيل المثال، على الرغم من إعادة تشفير علب البريد النشطة بشكل متكرر، قد تظل علب البريد غير النشطة وغير المتصلة والمعطلة مشفرة باستخدام المفاتيح السابقة. يقوم SharePoint Online بإجراء نسخة احتياطية من المحتوى لأغراض الاستعادة والاسترداد، لذلك قد لا يزال هناك محتوى مؤرشف باستخدام المفاتيح القديمة.
@@ -53,7 +55,7 @@ ms.locfileid: "64761340"
 
 لإرشاد Customer Key لاستخدام المفتاح الجديد لتشفير أحمال عمل متعددة، أكمل الخطوات التالية:
 
-1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام أو مسؤول التوافق في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) في نافذة Windows PowerShell.
+1. على الكمبيوتر المحلي، باستخدام حساب العمل أو المؤسسة التعليمية الذي لديه أذونات المسؤول العام أو مسؤول التوافق في مؤسستك، [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. تشغيل Set-M365DataAtRestEncryptionPolicy cmdlet.
   
@@ -103,10 +105,10 @@ SharePoint Online يسمح لك فقط بطرح مفتاح واحد في كل م
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 
-- [تشفير الخدمة باستخدام مفتاح العميل Office 365](customer-key-overview.md)
+- [تشفير الخدمة باستخدام مفتاح العميل](customer-key-overview.md)
 
-- [إعداد مفتاح العميل Office 365](customer-key-set-up.md)
+- [إعداد مفتاح العميل](customer-key-set-up.md)
 
-- [إدارة مفتاح العميل Office 365](customer-key-manage.md)
+- [إدارة مفتاح العميل](customer-key-manage.md)
 
 - [التعرف على مفتاح التوفر](customer-key-availability-key-understand.md)

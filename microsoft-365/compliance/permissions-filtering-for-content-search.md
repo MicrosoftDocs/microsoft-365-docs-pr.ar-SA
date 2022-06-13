@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: استخدم تصفية أذونات البحث للسماح لمديري eDiscovery بالبحث في مجموعة فرعية فقط من علب البريد والمواقع في مؤسستك.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba8cfaaec45ceefff89b17b561a5e80bebbdade6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 067e1a3c785d624579af80f92476d2641266f4dc
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098791"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018042"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>تكوين تصفية الأذونات ل eDiscovery
 
@@ -59,7 +59,7 @@ ms.locfileid: "65098791"
 
 - لتشغيل cmdlets لتصفية أمان التوافق، يجب أن تكون عضوا في مجموعة دور إدارة المؤسسة في مدخل التوافق. لمزيد من المعلومات، راجع [الأذونات في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
-- يجب عليك الاتصال بكل من Exchange Online و Security & Compliance Center PowerShell لاستخدام cmdlets لتصفية أمان التوافق. هذا ضروري لأن أوامر cmdlets هذه تتطلب الوصول إلى خصائص علبة البريد، ولهذا السبب يجب عليك الاتصال Exchange Online PowerShell. راجع الخطوات في القسم التالي.
+- يجب عليك الاتصال بكل من Exchange Online والأمان & Compliance PowerShell لاستخدام cmdlets لتصفية أمان التوافق. هذا ضروري لأن أوامر cmdlets هذه تتطلب الوصول إلى خصائص علبة البريد، ولهذا السبب يجب عليك الاتصال Exchange Online PowerShell. راجع الخطوات في القسم التالي.
 
 - راجع القسم ["مزيد من المعلومات](#more-information) " للحصول على معلومات إضافية حول عوامل تصفية أذونات البحث.
 
@@ -69,7 +69,7 @@ ms.locfileid: "65098791"
 
 - لا يوجد حد لعدد عوامل تصفية أذونات البحث التي يمكن إنشاؤها في مؤسسة. ومع ذلك، يمكن أن يحتوي استعلام البحث على 100 شرط كحد أقصى. في هذه الحالة، يتم تعريف الشرط على أنه شيء متصل بالاستعلام بواسطة عامل تشغيل منطقي (مثل **AND** **وOR** و **NEAR**). يتضمن حد عدد الشروط استعلام البحث نفسه بالإضافة إلى كافة عوامل تصفية أذونات البحث التي يتم تطبيقها على المستخدم الذي يقوم بتشغيل البحث. لذلك، كلما زادت عوامل تصفية أذونات البحث لديك (خاصة إذا تم تطبيق عوامل التصفية هذه على نفس المستخدم أو مجموعة المستخدمين)، كانت فرصة تجاوز الحد الأقصى لعدد الشروط للبحث أفضل. لمنع مؤسستك من الوصول إلى الحد الأقصى للشروط، احتفظ بعدد عوامل تصفية أذونات البحث في مؤسستك إلى أقل عدد ممكن لتلبية متطلبات عملك. لمزيد من المعلومات، راجع [إعداد حدود التوافق لتحقيقات eDiscovery](set-up-compliance-boundaries.md#frequently-asked-questions).
 
-## <a name="connect-to-exchange-online-and-security--compliance-center-powershell-in-a-single-session"></a>الاتصال إلى Exchange Online و Security & Compliance Center PowerShell في جلسة واحدة
+## <a name="connect-to-exchange-online-and-security--compliance-powershell-in-a-single-session"></a>الاتصال إلى Exchange Online والأمان & Compliance PowerShell في جلسة واحدة
 
 قبل أن تتمكن من تشغيل البرنامج النصي بنجاح في هذا القسم، عليك تنزيل وتثبيت الوحدة النمطية Exchange Online PowerShell V2. للحصول على معلومات، راجع [حول الوحدة النمطية Exchange Online PowerShell V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
@@ -89,13 +89,13 @@ ms.locfileid: "65098791"
     .\ConnectEXO-SCC.ps1
     ```
 
-كيف يمكنك معرفة ما إذا كان هذا يعمل؟ بعد تشغيل البرنامج النصي، يتم استيراد أوامر cmdlets من Exchange Online و Security & Compliance PowerShell إلى جلسة Windows PowerShell المحلية. إذا لم تتلق أي أخطاء، فيمكنك الاتصال بنجاح. الاختبار السريع هو تشغيل أوامر cmdlets Exchange Online و Security & Compliance Center PowerShell. على سبيل المثال، يمكنك التشغيل والحصول **على علبة البريد** والحصول **على ComplianceSearch**.
+كيف يمكنك معرفة ما إذا كان هذا يعمل؟ بعد تشغيل البرنامج النصي، تتوفر أوامر cmdlets من Exchange Online PowerShell والأمان & Compliance PowerShell. إذا لم تتلق أي أخطاء، فيمكنك الاتصال بنجاح. الاختبار السريع هو تشغيل Exchange Online PowerShell و Security & Compliance PowerShell cmdlets. على سبيل المثال، يمكنك التشغيل والحصول **على علبة البريد** والحصول **على ComplianceSearch**.
 
 لاستكشاف أخطاء اتصال PowerShell وإصلاحها، راجع:
 
 - [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
 
-- [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+- [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
 
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
 

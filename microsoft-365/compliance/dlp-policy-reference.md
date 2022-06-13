@@ -19,18 +19,18 @@ ms.collection:
 recommendations: false
 description: مكون نهج DLP ومرجع التكوين
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 1ad00a36f48849ca110a598f92c5536ef7b21843
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: b62289cfe4d18b4c6e2e79bb9a308f8b88978451
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648581"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015781"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>مرجع نهج تفادي فقدان البيانات
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-تحتوي نهج تفادي فقدان البيانات في Microsoft Purview (DLP) على العديد من المكونات لتكوينها. لإنشاء نهج فعال، تحتاج إلى فهم الغرض من كل مكون وكيف يغير تكوينه سلوك النهج. توفر هذه المقالة تشريحا مفصلا لنهج DLP.
+تحتوي نهج Microsoft Purview Data Loss Prevention (DLP) على العديد من المكونات التي يجب تكوينها. لإنشاء نهج فعال، تحتاج إلى فهم الغرض من كل مكون وكيف يغير تكوينه سلوك النهج. توفر هذه المقالة تشريحا مفصلا لنهج DLP.
 
 ## <a name="policy-templates"></a>قوالب النهج 
 
@@ -525,8 +525,9 @@ for where they are used/expected behavior-->
 
 ![يعرض شريط الرسائل تلميح النهج في Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-> [!NOTE]
-> يتم إرسال رسائل البريد الإلكتروني للإعلام بدون حماية.
+> [!IMPORTANT]
+> - يتم إرسال رسائل البريد الإلكتروني للإعلام بدون حماية.
+> - يتم دعم إعلامات البريد الإلكتروني لخدمات Microsoft 365 فقط.
 
 يمكنك أيضا منح الأشخاص خيار [تجاوز النهج](#user-overrides)، بحيث لا يتم حظرهم إذا كانت لديهم حاجة عمل صالحة أو إذا كان النهج يكشف عن إيجابية خاطئة.
 
@@ -648,7 +649,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 عند مطابقة قاعدة، يمكنك إرسال تقرير عن الحادث إلى مسؤول الامتثال (أو أي أشخاص تختارهم) مع تفاصيل الحدث. يتضمن التقرير معلومات حول العنصر الذي تمت مطابقته والمحتوى الفعلي الذي طابق القاعدة واسم الشخص الذي أجرى آخر تعديل للمحتوى. بالنسبة لرسائل البريد الإلكتروني، يتضمن التقرير أيضا الرسالة الأصلية التي تتطابق مع نهج DLP كمرفق.
 
-يقوم DLP بتغذية معلومات الحادث إلى خدمات حماية المعلومات Microsoft Purview الأخرى، مثل [إدارة المخاطر الداخلية](insider-risk-management.md). من أجل الحصول على معلومات الحادث إلى إدارة المخاطر الداخلية، يجب تعيين مستوى خطورة **تقارير الحوادث** إلى **مستوى عال**.
+يقوم DLP بتغذية معلومات الحادث إلى خدمات حماية معلومات Microsoft Purview الأخرى، مثل [إدارة المخاطر الداخلية](insider-risk-management.md). من أجل الحصول على معلومات الحادث إلى إدارة المخاطر الداخلية، يجب تعيين مستوى خطورة **تقارير الحوادث** إلى **مستوى عال**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 

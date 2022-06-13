@@ -15,13 +15,13 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: ابحث عن مراجع powerShell cmdlet Microsoft 365 ل Azure AD و Exchange Online و SharePoint Online و Skype for Business Online و Security & Compliance.
-ms.openlocfilehash: 96c03bed9275d3e48164ac5ac5ba57d78b36c634
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: ابحث عن مراجع Microsoft 365 PowerShell cmdlet لتوافق Azure AD Exchange Online SharePoint Online و Skype for Business Online و Security & Compliance.
+ms.openlocfilehash: 97372031f928e7862145945c72e522510f7cd30e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101370"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015429"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>مراجع Cmdlet لخدمات Microsoft 365
 
@@ -61,11 +61,11 @@ Exchange Online مواضيع مرجع cmdlet في القسم "المرجع" من
 
 للحصول على إرشادات الاتصال ل Skype for Business Online PowerShell، راجع [إدارة Skype for Business Online باستخدام PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md).
 
-## <a name="security--compliance-center-powershell-cmdlets"></a>أوامر cmdlets ل Security & Compliance Center PowerShell
+## <a name="security--compliance-powershell-cmdlets"></a>أوامر PowerShell cmdlets للأمان & التوافق
 
 مراجع cmdlet & الأمان في القسم المرجعي [لوثائق Security & Compliance PowerShell](/powershell/exchange/scc-powershell).
 
-للحصول على إرشادات الاتصال ل Security & Compliance Center PowerShell، راجع [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+للحصول على إرشادات الاتصال ل Security & Compliance PowerShell، راجع [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="see-also"></a>راجع أيضًا
 

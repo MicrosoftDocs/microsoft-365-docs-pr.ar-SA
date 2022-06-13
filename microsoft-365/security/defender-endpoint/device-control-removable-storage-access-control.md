@@ -1,5 +1,5 @@
 ---
-title: التحكم في الوصول إلى التخزين القابل للإزالة ل Microsoft Defender لنقطة النهاية، وسائط التخزين القابلة للإزالة
+title: Microsoft Defender لنقطة النهاية التحكم في الوصول إلى التخزين القابل للإزالة لعنصر تحكم الجهاز، وسائط التخزين القابلة للإزالة
 description: إرشادات حول Microsoft Defender لنقطة النهاية
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,24 +15,24 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/06/2022
-ms.openlocfilehash: 68beef5a01206ef08a87f74d53767fdd74d37a14
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 335dd72bcbdee469f1e0b1c396c934c94d0339fd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923489"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013586"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>التحكم في الوصول إلى التخزين القابل للإزالة ل Microsoft Defender لنقطة النهاية
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>التحكم في الوصول إلى التخزين القابل للإزالة Microsoft Defender لنقطة النهاية Device Control
 
 **ينطبق على:**
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> تتوفر الآن إدارة نهج المجموعة وإدارة Intune OMA-URI/Custom Policy لهذا المنتج بشكل عام (4.18.2106): راجع [مدونة المجتمع التقني: حماية التخزين والطابعة القابلة للإزالة باستخدام Microsoft Defender لنقطة النهاية](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
+> تتوفر الآن إدارة نهج المجموعة وإدارة Intune OMA-URI/Custom Policy لهذا المنتج بشكل عام (4.18.2106): راجع [مدونة المجتمع التقني: حماية التخزين والطابعة القابلين للإزالة باستخدام Microsoft Defender لنقطة النهاية](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
-يمكنك Microsoft Defender for Endpoint Device Control Removable Storage Access Control من تنفيذ المهمة التالية:
+## <a name="device-control-removable-storage-access-control-overview"></a>نظرة عامة على التحكم في الوصول إلى التخزين القابل للإزالة لعنصر تحكم الجهاز
 
-- تدقيق الوصول إلى التخزين القابل للإزالة أو السماح بقراءته أو كتابته أو تنفيذه أو منعه مع الاستبعاد أو بدونه
+Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم في الوصول إلى التخزين القابل للإزالة للتحكم في الأجهزة إمكانية تدقيق الوصول إلى التخزين القابل للإزالة أو السماح به أو منعه أو قراءته أو كتابته أو تنفيذه مع استثناء أو بدونه.
 
 |امتياز|اذن|
 |---|---|
@@ -43,30 +43,32 @@ ms.locfileid: "65923489"
 |الدعم المستند إلى المستخدم|نعم|
 |الدعم المستند إلى الجهاز|نعم|
 
-|القدره|الوصف|التوزيع من خلال Intune|النشر من خلال نهج المجموعة|
+تمنحك ميزة التحكم في الوصول إلى التخزين القابل للإزالة Microsoft Defender لنقطة النهاية Device Control الإمكانات التالية:
+
+|القدره|الوصف|التوزيع من خلال Intune|التوزيع من خلال نهج المجموعة|
 |---|---|---|---|
-|إنشاء مجموعة وسائط قابلة للإزالة|يسمح لك بإنشاء مجموعة وسائط قابلة للإزالة قابلة لإعادة الاستخدام|الخطوة 1 في القسم، [نشر النهج عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 1 في القسم، [نشر النهج عبر نهج المجموعة](#deploying-policy-via-group-policy)|
-|إنشاء النهج|يسمح لك بإنشاء نهج لفرض كل مجموعة وسائط قابلة للإزالة|الخطوة 2 في القسم، [نشر النهج عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوان 2 و3 في القسم، [نشر النهج عبر نهج المجموعة](#deploying-policy-via-group-policy) |
-|فرض افتراضي|يسمح لك بتعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج|الخطوة 3 في القسم، [نشر النهج عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 4 في القسم، [نشر النهج عبر نهج المجموعة](#deploying-policy-via-group-policy) |
-|تمكين التحكم في الوصول إلى التخزين القابل للإزالة أو تعطيله|إذا قمت بتعيين تعطيل، فسيتم تعطيل نهج التحكم في الوصول إلى التخزين القابل للإزالة على هذا الجهاز| الخطوة 4 في القسم، [نشر النهج عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 5 في القسم، [نشر النهج عبر نهج المجموعة](#deploying-policy-via-group-policy) |
-|التقاط معلومات الملف|يسمح لك بإنشاء نهج لتسجيل معلومات الملف عند حدوث الوصول للكتابة| الخطوان 2 و5 في القسم، [نشر النهج عبر OMA-URI](#deploying-policy-via-oma-uri) | الخطوة 2 و6 في القسم، [نشر النهج عبر نهج المجموعة](#deploying-policy-via-group-policy) |
+|إنشاء مجموعة وسائط قابلة للإزالة|يسمح لك بإنشاء مجموعة وسائط قابلة للإزالة قابلة لإعادة الاستخدام|الخطوة 4 و6 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوة 4 و6 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
+|إنشاء النهج|يسمح لك بإنشاء نهج لفرض كل مجموعة وسائط قابلة للإزالة|الخطوة 5 و7 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوان 5 و7 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
+|فرض افتراضي|يسمح لك بتعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج|الخطوة 2 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri) | الخطوة 2 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
+|تمكين التحكم في الوصول إلى التخزين القابل للإزالة أو تعطيله|إذا قمت بتعيين تعطيل، فسيتم تعطيل نهج التحكم في الوصول إلى التخزين القابل للإزالة على هذا الجهاز| الخطوة 1 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوة 1 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
+|التقاط معلومات الملف|يسمح لك بإنشاء نهج لتسجيل معلومات الملف عند حدوث الوصول للكتابة|  | الخطوة 10 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy) |
 
-## <a name="prepare-your-endpoints"></a>إعداد نقاط النهاية
+### <a name="prepare-your-endpoints"></a>إعداد نقاط النهاية
 
-نشر التحكم في الوصول إلى التخزين القابل للإزالة على أجهزة Windows 10 وWindows 11 التي تحتوي على إصدار عميل مكافحة البرامج الضارة **4.18.2103.3 أو إصدار أحدث**.
+نشر التحكم في الوصول إلى التخزين القابل للإزالة على أجهزة Windows 10 وأجهزة Windows 11 التي تحتوي على إصدار عميل مكافحة البرامج الضارة **4.18.2103.3 أو إصدار أحدث**.
 
 - **4.18.2104 أو أحدث**: إضافة SerialNumberId، VID_PID، دعم عنصر نهج المجموعة المستند إلى filepath، ComputerSid
 
 - **4.18.2105 أو الإصدارات الأحدث**: إضافة دعم Wildcard ل HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId، وهو مزيج من مستخدم معين على جهاز معين، SSD قابل للإزالة (SanDisk Extreme SSD)/دعم SCSI المرفق USB (UAS)
 
-- **4.18.2107 أو إصدار أحدث**: إضافة دعم Windows Portable Device (WPD) (للأجهزة المحمولة، مثل أجهزة الكمبيوتر اللوحية)؛ إضافة AccountName إلى [التتبع المتقدم](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
+- **4.18.2107 أو إصدار أحدث**: إضافة دعم Windows Portable Device (WPD) (للأجهزة المحمولة، مثل الأجهزة اللوحية)؛ إضافة AccountName إلى [التتبع المتقدم](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
 :::image type="content" source="images/powershell.png" alt-text="واجهة PowerShell" lightbox="images/powershell.png":::
 
 > [!NOTE]
-> لا تحتاج أي من مكونات أمان Windows إلى أن تكون نشطة حيث يمكنك تشغيل التحكم في الوصول إلى التخزين القابل للإزالة بغض النظر عن حالة أمان Windows.
+> لا تحتاج أي من مكونات أمن Windows إلى أن تكون نشطة حيث يمكنك تشغيل التحكم في الوصول إلى التخزين القابل للإزالة بشكل مستقل عن حالة أمن Windows.
 
-## <a name="policy-properties"></a>خصائص النهج
+## <a name="device-control-removable-storage-access-control-policies"></a>نهج التحكم في الوصول إلى التخزين القابلة للإزالة لعنصر تحكم الجهاز
 
 يمكنك استخدام الخصائص التالية لإنشاء مجموعة تخزين قابلة للإزالة:
 
@@ -77,11 +79,12 @@ ms.locfileid: "65923489"
 
 |اسم الخاصية|الوصف|خيارات|
 |---|---|---|
-|**معرف المجموعة**|يمثل GUID، وهو معرف فريد، المجموعة وسيتم استخدامه في النهج كمعرف المجموعة||
+|**معرف المجموعة**|يمثل GUID، وهو معرف فريد، المجموعة وسيتم استخدامه في النهج.||
 |**قائمة واصفة**|سرد خصائص الجهاز التي تريد استخدامها للتغطية في المجموعة. للحصول على كل خاصية من خصائص الجهاز، راجع ["خصائص الجهاز](device-control-removable-storage-protection.md) " للحصول على مزيد من التفاصيل. جميع الخصائص حساسة لحالة الأحرف. |**PrimaryId**: `RemovableMediaDevices`, , `CdRomDevices``WpdDevices`<p>**BusId**: على سبيل المثال، USB وSCSI<p>**معرف الجهاز**<p>**معرف الأجهزة**<p>**InstancePathId**: InstancePathId هي سلسلة تعرف الجهاز في النظام بشكل فريد، على سبيل المثال. `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` يمثل الرقم الموجود في النهاية (على سبيل المثال &0) المساحة المتوفرة وقد يتغير من جهاز إلى آخر. للحصول على أفضل النتائج، استخدم حرف بدل في النهاية. على سبيل المثال، `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**معرف الرقم التسلسلي**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: مطابقة زوج VID/PID هذا بالضبط<p>`_55E0`: مطابقة أي وسائط مع PID=55E0 <p>`0751_`: مطابقة أي وسائط مع VID=0751|
-|**نوع المطابقة**|عند وجود خصائص جهاز متعددة يتم استخدامها في `DescriptorIDList`، يحدد MatchType العلاقة.|**MatchAll**: ستكون أي سمات ضمن `DescriptorIdList` العلاقة **و** ، على سبيل المثال، إذا وضع `DeviceID` المسؤول و `InstancePathID`، لكل USB متصل، سيتحقق النظام لمعرفة ما إذا كان USB يلبي القيمتين أم لا. <p> **MatchAny**: السمات ضمن DescriptorIdList ستكون **علاقة أو** ؛ على سبيل المثال، إذا وضع `DeviceID` المسؤول و `InstancePathID`، لكل USB متصل، سيقوم النظام بالإنفاذ طالما أن USB يحتوي على قيمة **DeviceID** أو **InstanceID** متطابقة. |
+|**نوع المطابقة**|عند وجود خصائص جهاز متعددة يتم استخدامها في `DescriptorIDList`، يحدد MatchType العلاقة.|**MatchAll**: ستكون أي سمات ضمن `DescriptorIdList` العلاقة **و** ، على سبيل المثال، إذا وضع `DeviceID` المسؤول و `InstancePathID`، لكل USB متصل، سيتحقق النظام لمعرفة ما إذا كان USB يلبي القيمتين أم لا. <p> **MatchAny**: السمات ضمن DescriptorIdList ستكون **علاقة أو** ؛ على سبيل المثال، إذا وضع `DeviceID` المسؤول و `InstancePathID`، لكل USB متصل، سيقوم النظام بالإنفاذ طالما أن USB يحتوي على قيمة **DeviceID** أو **InstanceID** متطابقة.|
 
 ### <a name="access-control-policy"></a>نهج التحكم بالوصول
+يمكنك استخدام الخصائص التالية لإنشاء نهج التحكم في الوصول:
 
 | اسم الخاصية | الوصف | خيارات |
 |---|---|---|
@@ -95,9 +98,9 @@ ms.locfileid: "65923489"
 | **خيارات** | تحديد ما إذا كان يجب عرض الإعلام أم لا |**عند تحديد "السماح بالنوع"**: <p>0: لا شيء<p>4: تعطيل **AuditAllowed** و **AuditDenied** لهذا الإدخال. حتى إذا حدث **السماح** وتم تكوين AuditAllowed، فلن يرسل النظام الحدث. <p>8: التقاط معلومات الملف والحصول على نسخة من الملف كدليل للوصول إلى الكتابة. <p>16: التقاط معلومات الملف للوصول للكتابة. <p>**عند تحديد رفض النوع**: <p>0: لا شيء<p>4: تعطيل **AuditDenied** لهذا الإدخال. حتى إذا حدث **الحظر** وتم تكوين AuditDenied، فلن يعرض النظام الإعلام. <p>**عند تحديد Type **AuditAllowed****: <p>0: لا شيء <p>1: لا شيء <p>2: إرسال الحدث<p> **عند تحديد Type **AuditDenied****: <p>0: لا شيء <p>1: إظهار الإعلام <p>2: إرسال الحدث<p>3: إظهار الإعلام وإرسال الحدث |
 |AccessMask|تعريف الوصول. | **الوصول إلى مستوى القرص**: <p>1: قراءة <p>2: الكتابة <p>4: تنفيذ <p>**الوصول إلى مستوى نظام الملفات**: <p>8: قراءة نظام الملفات <p>16: كتابة نظام الملفات <p>32: تنفيذ نظام الملفات <p><p>يمكنك الحصول على وصول متعدد عن طريق تنفيذ عملية OR الثنائية، على سبيل المثال، سيكون AccessMask للقراءة والكتابة والتنفيذ 7؛ سيكون AccessMask للقراءة والكتابة 3.|
 
-## <a name="common-removable-storage-access-control-scenarios"></a>سيناريوهات التحكم في الوصول إلى التخزين القابلة للإزالة الشائعة
+## <a name="device-control-removable-storage-access-control-scenarios"></a>سيناريوهات التحكم في الوصول إلى التخزين القابلة للإزالة لعنصر تحكم الجهاز
 
-لمساعدتك في التعرف على Microsoft Defender لنقطة النهاية القابلة للإزالة للتحكم في الوصول إلى التخزين، قمنا بتجميع بعض السيناريوهات الشائعة لمتابعتها.
+لمساعدتك على الإلمام Microsoft Defender لنقطة النهاية التحكم في الوصول إلى التخزين القابل للإزالة، قمنا بتجميع بعض السيناريوهات الشائعة لمتابعتها.
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>السيناريو 1: منع الكتابة والتنفيذ من الوصول إلى الكل ولكن السماح ب USBs محددة تمت الموافقة عليها
 
@@ -133,64 +136,9 @@ ms.locfileid: "65923489"
 
     2. النهج 2: تدقيق الكتابة وتنفيذ الوصول إلى الآخرين. مثال على حالة الاستخدام هذه هو: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** في نموذج [السيناريو 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
-## <a name="deploying-and-managing-policy-via-group-policy"></a>نشر النهج وإدارته عبر نهج المجموعة
+## <a name="deploying-and-managing-removable-storage-access-control-by-using-intune-oma-uri"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة وإدارته باستخدام Intune OMA-URI
 
-تمكنك ميزة التحكم في الوصول إلى التخزين القابل للإزالة من تطبيق النهج عبر نهج المجموعة على المستخدم أو الجهاز أو كليهما.
-
-### <a name="licensing"></a>الترخيص
-
-قبل البدء في التحكم في الوصول إلى التخزين القابل للإزالة، يجب عليك تأكيد [اشتراكك في Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). للوصول إلى التحكم في الوصول إلى التخزين القابل للإزالة واستخدامه، يجب أن يكون لديك Microsoft 365 E3 أو Microsoft 365 E5.
-
-### <a name="deploying-policy-via-group-policy"></a>نشر النهج عبر نهج المجموعة
-
-1. دمج كافة المجموعات في `<Groups>` `</Groups>` ملف xml واحد.
-
-    توضح الصورة التالية مثال [السيناريو 1: منع الوصول للكتابة والتنفيذ إلى الكل ولكن السماح ب USBs محددة معتمدة](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
-
-    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="إعدادات التكوين التي تسمح ب USBs معتمدة معينة على الأجهزة" lightbox="images/prevent-write-access-allow-usb.png":::
-
-2. دمج كافة القواعد في `<PolicyRules>` `</PolicyRules>` ملف xml واحد.
-
-    إذا كنت تريد تقييد مستخدم معين، فاستخدم خاصية SID في الإدخال. إذا لم يكن هناك SID في إدخال النهج، فسيتم تطبيق الإدخال على مثيل تسجيل الدخول للجميع للجهاز.
-
-    إذا كنت تريد مراقبة معلومات الملف للوصول إلى الكتابة، فاستخدم AccessMask الصحيح مع الخيار الصحيح (16)؛ فيما يلي مثال على [معلومات ملف الالتقاط](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
-
-    توضح الصورة التالية استخدام خاصية SID، ومثال [للسيناريو 1: منع الكتابة والتنفيذ من الوصول إلى الكل ولكن السماح بوحدات USBs معينة معتمدة](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
-
-    :::image type="content" source="images/usage-sid-property.png" alt-text="التعليمات البرمجية التي تشير إلى استخدام سمة خاصية SID" lightbox="images/usage-sid-property.png":::
-
-3. احفظ كل من ملفات XML للقاعدة والمجموعة على مجلد مشاركة الشبكة وضع مسار مجلد مشاركة الشبكة في إعداد نهج المجموعة: **التحكم** في **جهاز تحكم جهاز** **الحماية من الفيروسات** \> **لمكونات تكوين** الكمبيوتر \> Windows **Components** \> \> Microsoft Defender: **"تعريف مجموعات نهج التحكم في الجهاز"** و **"تعريف قواعد نهج التحكم في الجهاز".**
-
-   إذا لم تتمكن من العثور على أسلوب عمل تكوين النهج في نهج المجموعة، يمكنك تنزيل ملفات [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) [وWindDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) عن طريق تحديد **Raw** ثم **حفظ باسم**.
-
-   - يجب أن يكون الجهاز الهدف قادرا على الوصول إلى مشاركة الشبكة للحصول على النهج. ومع ذلك، بمجرد قراءة النهج، لن يعد اتصال مشاركة الشبكة مطلوبا، حتى بعد إعادة تشغيل الجهاز.
-
-    :::image type="content" source="images/device-control.png" alt-text="شاشة التحكم في الجهاز" lightbox="images/device-control.png":::
-
-4. الإنفاذ الافتراضي: يسمح لك بتعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج. على سبيل المثال، لديك فقط نهج (إما رفض أو السماح) ل RemovableMediaDevices، ولكن ليس لديك أي نهج ل CdRomDevices أو WpdDevices، ويمكنك تعيين رفض افتراضي من خلال هذا النهج، سيتم حظر الوصول للقراءة/الكتابة/التنفيذ إلى CdRomDevices أو WpdDevices.
-
-   - بمجرد نشر هذا الإعداد، سترى **السماح الافتراضي** أو **الرفض الافتراضي**.
-   - ضع في اعتبارك كلا من مستوى القرص ومستوى نظام الملفات في AccessMask عند تكوين هذا الإعداد، على سبيل المثال، إذا كنت تريد الرفض الافتراضي ولكن السماح بتخزين معين، يجب السماح بالوصول إلى كل من مستوى القرص ومستوى نظام الملفات، يجب تعيين AccessMask إلى 63.
-
-    :::image type="content" source="images/148609579-a7df650b-7792-4085-b552-500b28a35885.png" alt-text="السماح الافتراضي أو التعليمات البرمجية الافتراضية لرفض PowerShell":::
-
-5. تمكين التحكم في الوصول إلى التخزين القابل للإزالة أو تعطيله: يمكنك تعيين هذه القيمة لتعطيل التحكم في الوصول إلى التخزين القابل للإزالة مؤقتا.
-
-    :::image type="content" source="images/148608318-5cda043d-b996-4146-9642-14fccabcb017.png" alt-text="إعدادات التحكم في الجهاز":::
-
-   - بمجرد نشر هذا الإعداد، سترى **"ممكن"** أو **"معطل**". يعني التعطيل أن هذا الجهاز لا يحتوي على نهج التحكم في الوصول إلى التخزين القابل للإزالة قيد التشغيل.
-
-    :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="تمكين عنصر تحكم الجهاز أو تعطيله في التعليمات البرمجية ل PowerShell":::
-
-6. تعيين موقع لنسخة من الملف: إذا كنت تريد الحصول على نسخة من الملف عند حدوث الوصول للكتابة، يجب تعيين الموقع الذي يمكن للنظام حفظ النسخة فيه.
-
-    انسخ هذا مع AccessMask و Option المناسبين - راجع الخطوة 2 أعلاه.
-
-    :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="نهج المجموعة - تعيين locaiton لدليل الملف":::
-
-## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>نشر النهج وإدارته عبر Intune OMA-URI
-
-تمكنك ميزة التحكم في الوصول إلى التخزين القابل للإزالة من تطبيق النهج عبر OMA-URI على المستخدم أو الجهاز أو كليهما.
+تمكنك ميزة التحكم في الوصول إلى التخزين القابل للإزالة من تطبيق النهج باستخدام OMA-URI على المستخدم أو الجهاز أو كليهما.
 
 ### <a name="licensing-requirements"></a>متطلبات الترخيص
 
@@ -206,84 +154,194 @@ ms.locfileid: "65923489"
 
 - المسؤول العام
 
-### <a name="deploying-policy-via-oma-uri"></a>نشر النهج عبر OMA-URI
+### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI
 
-Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> **Devices** \> **Configuration profiles** \> **Create profile** \> **Platform: Windows 10 وأحدث & Profile: Custom**
+انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>) **> الأجهزة > إنشاء > النظام الأساسي لملف التعريف: Windows 10 والإيجابيات الأحدث، نوع ملف التعريف: قوالب > مخصصة**
 
-1. لكل مجموعة، قم بإنشاء قاعدة OMA-URI:
+1. تمكين التحكم في الوصول إلى التخزين القابل للإزالة (RSAC) أو تعطيله:<br> يمكنك تمكين التحكم في الوصول إلى التخزين القابل للإزالة كما يلي: 
+    - ضمن **إعدادات تكوين > المخصصة**، انقر فوق **"إضافة**".
+    - في الجزء **"إضافة صف** "، أدخل:
+        - **الاسم** **كتمكين RSAC** 
 
-    - OMA-URI:
+        - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
 
-      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData`
+        - **نوع البيانات** **كعدد صحيح**
+       
+        - **القيمة** ك **1**
+        
+           `Disable: 0` `Enable: 1`
 
-      على سبيل المثال، بالنسبة **إلى أي تخزين قابل للإزالة ومجموعة CD/DVD** في العينة، يجب أن يكون الارتباط:
+        - انقر فوق **حفظ**.
+    
+    :::image type="content" source="images/enable-rsac.png" alt-text="لقطة شاشة لتمكين نهج التحكم في الوصول إلى التخزين القابل للإزالة" lightbox="images/enable-rsac.png":::
+      
+2. تعيين الإنفاذ الافتراضي:<br> 
+    يمكنك تعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج. <br> 
+    على سبيل المثال، لديك إما نهج الرفض أو السماح ل RemovableMediaDevices، ولكن ليس لديك أي نهج ل CdRomDevices أو WpdDevices. يمكنك تعيين الرفض الافتراضي من خلال هذا النهج، ثم سيتم حظر الوصول للقراءة/الكتابة/التنفيذ إلى CdRomDevices أو WpdDevices. 
 
-      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
+    - في الجزء **"إضافة صف** "، أدخل:
+        - **الاسم** **كرفض افتراضي**
+        - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
 
-    - نوع البيانات: سلسلة (ملف XML)
+        - **نوع البيانات** **كعدد صحيح**
+        
+        - **القيمة** ك **1** أو **2**
+        
+          `DefaultEnforcementAllow = 1`
+          `DefaultEnforcementDeny = 2`
+        - انقر فوق **حفظ**.
+    
+    :::image type="content" source="images/default-deny.png" alt-text="Screenshot of setting Default Enforcement as Deny" lightbox="images/default-deny.png":::    
 
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="الحقل &quot;نوع البيانات&quot; في الصفحة &quot;إضافة صف&quot;" lightbox="images/xml-data-type-string.png":::
+3. رفض التدقيق الافتراضي:<br> يمكنك إنشاء نهج التدقيق للرفض الافتراضي كما يلي:
+    - في الجزء **"إضافة صف** "، أدخل:
+        - **الاسم** **كرفض افتراضي للتدقيق**
+        - **OMA-URI** ك     
+          `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf3520ea7-fd1b-4237-8ebc-96911db44f8e%7d/RuleData`
+         :::image type="content" source="images/audit-default-deny-1.png" alt-text="لقطة شاشة لإنشاء نهج الرفض الافتراضي للتدقيق" lightbox="images/audit-default-deny-1.png":::
+        - **نوع البيانات** **كسلسلة (ملف XML)**
+        - **ملف XML مخصص** كملف **Deny.xmlافتراضي للتدقيق** . <br>
+            مسار ملف XML: [mdatp-devicecontrol/Audit Default Deny.xml في main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml)
+            <br>استخدم بيانات XML التالية لإنشاء نهج التدقيق للرفض الافتراضي:
 
-2. لكل نهج، قم أيضا بإنشاء OMA-URI:
-
-    - OMA-URI:
-
-      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b**PolicyRuleGUID**%7d/RuleData`
-
-      على سبيل المثال، بالنسبة إلى **حظر الكتابة وتنفيذ الوصول ولكن السماح بقاعدة USBs المعتمدة** في العينة، يجب أن يكون الارتباط:
-
-      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData`
-
-    - نوع البيانات: سلسلة (ملف XML)
-
-    إذا كنت تريد مراقبة معلومات الملف للوصول إلى الكتابة، فاستخدم AccessMask الصحيح مع الخيار الصحيح (16)؛ فيما يلي مثال على [معلومات ملف الالتقاط](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
-
-3. الإنفاذ الافتراضي: يسمح لك بتعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج. على سبيل المثال، لديك فقط نهج (إما رفض أو السماح) ل RemovableMediaDevices، ولكن ليس لديك أي نهج ل CdRomDevices أو WpdDevices، ويمكنك تعيين رفض افتراضي من خلال هذا النهج، سيتم حظر الوصول للقراءة/الكتابة/التنفيذ إلى CdRomDevices أو WpdDevices.
-
-    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
-
-    - نوع البيانات: Int
-
-      `DefaultEnforcementAllow = 1`
-      `DefaultEnforcementDeny = 2`
-
-    - بمجرد نشر هذا الإعداد، سترى **السماح الافتراضي** أو **الرفض الافتراضي**
-    - ضع في اعتبارك كلا من مستوى القرص ومستوى نظام الملفات في AccessMask عند تكوين هذا الإعداد، على سبيل المثال، إذا كنت تريد الرفض الافتراضي ولكن السماح بتخزين معين، يجب السماح بالوصول إلى كل من مستوى القرص ومستوى نظام الملفات، يجب تعيين AccessMask إلى 63.
-
-    :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="فرض افتراضي يسمح بالتعليمات البرمجية PowerShell":::
-
-4. تمكين التحكم في الوصول إلى التخزين القابل للإزالة أو تعطيله: يمكنك تعيين هذه القيمة لتعطيل التحكم في الوصول إلى التخزين القابل للإزالة مؤقتا.
-
-   - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
-
-   - نوع البيانات: Int `Disable: 0`
-     `Enable: 1`
-
-   - بمجرد نشر هذا الإعداد، سترى **"ممكن"** أو **"معطل"**
-
-    **معطل** يعني أن هذا الجهاز لا يحتوي على نهج التحكم في الوصول إلى التخزين القابل للإزالة قيد التشغيل
-
-    :::image type="content" source="images/148609770-3e555883-f26f-45ab-9181-3fb1ff7a38ac.png" alt-text="التحكم في الوصول إلى التخزين القابل للإزالة في التعليمات البرمجية ل PowerShell":::
-
-5. قم بتعيين الموقع لنسخة من الملف: إذا كنت تريد الحصول على نسخة من الملف عند حدوث الوصول للكتابة، يجب تعيين الموقع الذي يمكن للنظام حفظ النسخة فيه.
-
-    - OMA-URI: './Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation
-
-    - نوع البيانات: سلسلة
-
-    يجب نشر هذا مع AccessMask الصحيح والخيار الصحيح - راجع الخطوة 2 أعلاه.
-
-    :::image type="content" source="../../media/device-control-oma-uri-edit-row.png" alt-text="تعيين locaiton لدليل الملف":::
+            :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="لقطة شاشة لملف xml لرفض التدقيق الافتراضي":::
+        
+   
+4. ReadOnly - المجموعة: يمكنك إنشاء مجموعة تخزين قابلة للإزالة باستخدام الوصول إلى ReadOnly كما يلي:
+    - في الجزء **"إضافة صف** "، أدخل:
+        - **الاسم** **كأي مجموعة تخزين قابلة للإزالة**
+        - **OMA-URI** ك   
+         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
+        :::image type="content" source="images/any-removable-storage-group.png" alt-text="لقطة شاشة لإنشاء أي مجموعة تخزين قابلة للإزالة" lightbox="images/any-removable-storage-group.png":::
+        - **نوع البيانات** **كسلسلة (ملف XML)**
+        - **XML مخصص** **كأي ملف تخزين قابل للإزالة وقرص DVD وWPD Group.xml** <br>
+            مسار ملف XML: [mdatp-devicecontrol/Any Removable Storage و CD-DVD وWPD Group.xml في main · microsoft/mdatp-devicecontrol (github.com](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml)<br>
+            استخدم بيانات XML التالية لإنشاء "أي تخزين قابل للإزالة وقرص DVD وWPD Group" مع وصول ReadOnly:
+       
+           :::image type="content" source="images/read-only-group-xml-file.png" alt-text="لقطة شاشة لملف xml للمجموعة للقراءة فقط":::
+      
+    
+5. ReadOnly - النهج: يمكنك إنشاء نهج ReadOnly وتطبيقه على مجموعة التخزين القابلة للإزالة ReadOnly للسماح بنشاط القراءة كما يلي:
+    - في الجزء **"إضافة صف** "، أدخل:
+        - **الاسم** ك **نشاط السماح بالقراءة**
+        - **OMA-URI** كلقطة   `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bf7e75634-7eec-4e67-bec5-5e7750cb9e02%7d/RuleData`
+          :::image type="content" source="images/allow-read-activity.png" alt-text="شاشة لنهج السماح بنشاط القراءة" lightbox= "images/allow-read-activity.png":::
+        - **نوع البيانات** **كسلسلة (ملف XML)**
+        - ملف **XML مخصص** كملف **السماح Read.xml** <br>
+            مسار ملف XML: [mdatp-devicecontrol/Allow Read.xml في main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20Read.xml)<br>
+            استخدم بيانات XML التالية لإنشاء نهج ReadOnly وتطبيقه على مجموعة التخزين القابلة للإزالة ReadOnly: :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="لقطة شاشة لملف xml الخاص بالنهج للقراءة فقط":::
+     
+6. إنشاء مجموعة للوسائط المسموح بها: يمكنك إنشاء مجموعة وسائط مسموح بها كما يلي:
+    - في الجزء **"إضافة صف** "، أدخل:
+        - **الاسم** كمجموعة **USBs المعتمدة**
+        - **OMA-URI** ك     
+         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
+    :::image type="content" source="images/create-group-allowed-medias.png" alt-text="لقطة شاشة لإنشاء مجموعة USBs المعتمدة" lightbox="images/create-group-allowed-medias.png"::: 
+        - **نوع البيانات** **كسلسلة (ملف XML)** 
+        - **XML مخصص** كملف **Group.xmlUSBs معتمد** <br>
+            مسار ملف XML: [mdatp-devicecontrol/Approved USBs Group.xml في main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml)<br>
+            استخدم بيانات XML التالية لإنشاء مجموعة وسائط مسموح بها: :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="لقطة شاشة لإنشاء مجموعة لملف xml للوسائط المسموح بها":::
+      
+   
+7. إنشاء نهج للسماح لمجموعة USB المعتمدة: يمكنك إنشاء نهج للسماح لمجموعة USB المعتمدة كما يلي:
+    - في الجزء **"إضافة صف** "، أدخل:
+        - **الاسم** **كلسماح بالوصول ومعلومات ملف التدقيق**
+        - **OMA-URI** ك     
+         `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bb2061588-029e-427d-8404-6dfec096a571%7d/RuleData`
+    :::image type="content" source="images/allow-access-audit-file-information-1.png" alt-text="لقطة شاشة للسماح بالوصول ومعلومات ملف التدقيق" lightbox= "images/allow-access-audit-file-information-1.png":::
+        - **نوع البيانات** **كسلسلة (ملف XML)** 
+        - **ملف XML مخصص** **كلسماح بالوصول الكامل والتدقيق file.xml** <br>
+            مسار ملف XML: [mdatp-devicecontrol/Allow full access and audit file.xml في main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Allow%20full%20access%20and%20audit%20file.xml)<br>
+            استخدم بيانات XML التالية لإنشاء نهج للسماح لمجموعة USB المعتمدة: :::image type="content" source="images/create-policy-allow-approved-usb-group-xml-intune.png" alt-text="لقطة شاشة لإنشاء نهج للسماح بملف XML لمجموعة USB المعتمد":::
+      
+           ما المقصود ب '47' في النهج؟ <br> 
+           هو 9 + 2 + 36 = 47: <br>
+           الوصول للقراءة: 1+8 = 9 <br>
+           الوصول للكتابة: مستوى القرص 2 <br>
+           التنفيذ: 4 + 32 = 36
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>نشر النهج وإدارته باستخدام واجهة مستخدم Intune
 
-(*قريبا!*) ستتوفر هذه الإمكانية في مركز إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>). انتقل إلى نهج **إنشاء** **تقليل** >  الأجزاء المعرضة للهجوم **الأمني** >  لنقطة النهاية. اختر **النظام الأساسي: Windows 10 والإطارات الأحدث** مع **ملف التعريف: عنصر تحكم الجهاز**.
+(*قريبا!*) ستتوفر هذه الإمكانية في مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>). انتقل إلى نهج **إنشاء** **تقليل** >  الأجزاء المعرضة للهجوم **الأمني** >  لنقطة النهاية. اختر **النظام الأساسي: Windows 10 والإي وقت لاحق** باستخدام **ملف التعريف: التحكم في الجهاز**.
+
+## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة وإدارته باستخدام نهج المجموعة
+
+تمكنك ميزة التحكم في الوصول إلى التخزين القابل للإزالة من تطبيق النهج باستخدام نهج المجموعة على المستخدم أو الجهاز أو كليهما.
+
+### <a name="licensing"></a>الترخيص
+
+قبل البدء في التحكم في الوصول إلى التخزين القابل للإزالة، يجب عليك تأكيد [اشتراكك في Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). للوصول إلى التحكم في الوصول إلى التخزين القابل للإزالة واستخدامه، يجب أن يكون لديك Microsoft 365 E3 أو Microsoft 365 E5.
+
+### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة
+
+1. تمكين التحكم في الوصول إلى التخزين القابل للإزالة أو تعطيله: <br> يمكنك تمكين التحكم في الوصول إلى التخزين القابل للإزالة (RSAC) كما يلي:<br> 
+    - الانتقال إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > ميزات > التحكم في الجهاز**
+    - في نافذة **"التحكم بالجهاز** "، حدد **"ممكن**".
+      
+    :::image type="content" source="images/enable-rsac-gp.png" alt-text="لقطة شاشة لتمكين RSAC باستخدام نهج المجموعة " lightbox="images/enable-rsac-gp.png":::
+      
+2. تعيين الإنفاذ الافتراضي: <br> 
+    يمكنك تعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج كما يلي: 
+    - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > ميزات > التحكم في الجهاز > تحديد الإنفاذ الافتراضي للتحكم في الجهاز**
+
+    - في نافذة **«Select Device Control Default Enforcement»** ، حدد **«Default Deny»**:
+    
+     :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="لقطة شاشة لإعداد «Default Enforcement = Deny» باستخدام نهج المجموعة" lightbox="images/set-default-enforcement-deny-gp.png":::    
+
+3. رفض التدقيق الافتراضي: <br> استخدم بيانات XML التالية لإنشاء نهج التدقيق للرفض الافتراضي:
+    
+    :::image type="content" source="images/audit-default-deny-gp.png" alt-text="Screenshot of audit default deny xml data":::
+      
+  
+4. ReadOnly - المجموعة: <br>
+   استخدم بيانات XML التالية لإنشاء مجموعة تخزين قابلة للإزالة باستخدام الوصول إلى ReadOnly:
+ 
+   :::image type="content" source="images/read-only-group-gp.png" alt-text="لقطة شاشة لبيانات xml لمجموعة التخزين القابلة للإزالة للقراءة فقط":::
+      
+    
+5. ReadOnly - النهج: <br> استخدم بيانات XML التالية لإنشاء نهج ReadOnly وتطبيقه على مجموعة التخزين القابلة للإزالة ReadOnly للسماح بنشاط القراءة:
+  
+    :::image type="content" source="images/read-only-policy-gp.png" alt-text="لقطة شاشة لبيانات xml للنهج للقراءة فقط" lightbox="images/read-only-policy-gp.png":::
+        
+   
+6. إنشاء مجموعة للوسائط المسموح بها: <br> استخدم بيانات XML التالية لإنشاء مجموعة وسائط مسموح بها للتخزين القابل للإزالة:
+    
+   :::image type="content" source="images/create-group-allowed-medias-gp.png" alt-text="لقطة شاشة لبيانات xml لإنشاء مجموعة للوسائط المسموح بها" lightbox="images/create-group-allowed-medias-gp.png":::
+      
+    
+7. إنشاء نهج للسماح لمجموعة USB المعتمدة: <br> استخدم بيانات XML التالية لإنشاء نهج للسماح بمجموعة USB المعتمدة:
+    
+    :::image type="content" source="images/create-policy-allow-approved-usb-group-xml.png" alt-text="لقطة شاشة لبيانات XML لإنشاء نهج للسماح لمجموعة USB المعتمدة باستخدام نهج المجموعة" lightbox="images/create-policy-allow-approved-usb-group-xml.png":::
+      
+   ما المقصود ب '47' في النهج؟ <br> هو 9 + 2 + 36 = 47: <br>
+   الوصول للقراءة: 1+8 = 9 <br>
+   الوصول للكتابة: مستوى القرص 2 <br>
+   التنفيذ: 4 + 32 = 36
+
+8. دمج المجموعات في ملف XML واحد: <br> يمكنك دمج مجموعات نهج التحكم في الجهاز في ملف XML واحد كما يلي:<br> 
+    - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > التحكم بالجهاز > لقطة شاشة لمجموعات**
+     نهج تحديد نهج التحكم في الجهاز :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="لتعريف مجموعات نهج التحكم في الجهاز" lightbox="images/define-device-control-policy-grps-gp.png":::
+    - في نافذة **تعريف مجموعات نهج التحكم في الجهاز** ، أدخل مسار الملف الذي يحتوي على بيانات مجموعات XML. <br>
+    مسار ملف XML: [mdatp-devicecontrol/Demo_Groups.xml في main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Groups.xml)<br>
+    فيما يلي مخطط xml لمجموعات نهج التحكم في الجهاز: :::image type="content" source="images/combine-grps-xml-file-gp.png" alt-text="لقطة شاشة لدمج المجموعات في ملف XML واحد":::
+
+9. دمج النهج في ملف XML واحد: <br> يمكنك دمج قواعد نهج التحكم في الجهاز في ملف XML واحد كما يلي:<br> 
+    - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > التحكم بالجهاز > تحديد قواعد**
+     نهج التحكم في الجهاز :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="لقطة شاشة لتعريف قواعد نهج التحكم في الجهاز" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
+    - في نافذة **تحديد قواعد نهج التحكم في الجهاز** ، حدد **Enabled**، وأدخل مسار الملف الذي يحتوي على بيانات قواعد XML. <br>
+    مسار ملف XML: [mdatp-devicecontrol/Demo_Policies.xml في main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Demo_Policies.xml)<br>
+    فيما يلي مخطط xml لقواعد نهج التحكم في الجهاز: :::image type="content" source="images/combine-policies-xml-gp.png" alt-text="لقطة شاشة لدمج النهج في ملف XML واحد":::
+
+10. تعيين موقع لنسخة من الملف (دليل): <br>إذا كنت تريد الحصول على نسخة من الملف (دليل) عند حدوث الوصول للكتابة، يجب عليك تعيين الموقع الذي يمكن للنظام حفظ النسخة فيه.<br>
+    - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > عنصر تحكم الجهاز > تحديد موقع بيانات دليل التحكم بالجهاز عن بعد**.
+    - في نافذة **تحديد موقع بيانات دليل التحكم في الأجهزة عن بعد** ، حدد **«Enabled»** وأدخل مسار مجلد مشاركة الشبكة أو المحلي. <br>
+    :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="لقطة شاشة لتحديد موقع بيانات دليل التحكم في الأجهزة عن بعد" lightbox="images/evidence-data-remote-location-gp.png":::
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>عرض بيانات التحكم في الوصول إلى التخزين القابلة للإزالة لعنصر تحكم الجهاز في Microsoft Defender لنقطة النهاية
 
 يعرض [مدخل Microsoft 365 Defender](https://security.microsoft.com/advanced-hunting) الأحداث التي تم تشغيلها بواسطة التحكم في الوصول إلى التخزين القابل للإزالة ل Device Control. للوصول إلى أمان Microsoft 365، يجب أن يكون لديك الاشتراك التالي:
 
-- تقارير Microsoft 365 for E5
+- Microsoft 365 لإعداد تقارير E5
 
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
@@ -331,13 +389,13 @@ DeviceEvents
 
 ### <a name="how-to-generate-guid-for-group-idpolicyrule-identry-id"></a>كيفية إنشاء معرف GUID لمعرف المجموعة/معرف PolicyRule/معرف الإدخال؟
 
-يمكنك إنشاء GUID من خلال المصدر المفتوح عبر الإنترنت، أو من خلال PowerShell - [كيفية إنشاء GUID من خلال PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)
+يمكنك إنشاء GUID من خلال مصدر مفتوح عبر الإنترنت، أو من خلال PowerShell - [كيفية إنشاء GUID من خلال PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)
 
 ![الصوره](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>ما هي وسائط التخزين القابلة للإزالة وقيود النهج؟
 
-إما من مركز إدارة نقاط النهاية من Microsoft (Intune) أو من خلال Microsoft Graph API، يتم استدعاء الخلفية من خلال OMA-URI (GET للقراءة أو PATCH للتحديث) وبالتالي فإن القيد هو نفسه أي ملف تعريف تكوين مخصص ل OMA-URI في Microsoft وهو رسميا 350000 حرف لملفات XML. 
+إما من مركز إدارة إدارة نقاط النهاية من Microsoft (Intune) أو من خلال Microsoft Graph API، يتم إجراء الاستدعاء الخلفي من خلال OMA-URI (GET للقراءة أو PATCH للتحديث) وبالتالي فإن القيد هو نفسه أي ملف تعريف تكوين مخصص ل OMA-URI في Microsoft وهو رسميا 350000 حرف لملفات XML. 
     
 على سبيل المثال، إذا كنت بحاجة إلى كتلتين من الإدخالات لكل معرف أمان مستخدم ل "السماح"/"التدقيق مسموح به" لمستخدمين محددين وكتلتين من الإدخالات في نهاية "رفض" الكل، فستتمكن من إدارة 2276 مستخدما. 
 
@@ -347,13 +405,13 @@ DeviceEvents
 
 2. قد يكون السبب الآخر هو أن ملف XML غير منسق بشكل صحيح، على سبيل المثال، عدم استخدام تنسيق markdown الصحيح للحرف "&" في ملف XML، أو قد يضيف محرر النص علامة ترتيب البايت (BOM) 0xEF 0xBB 0xBF في بداية الملفات، ما يؤدي إلى عدم عمل تحليل XML. أحد الحلول البسيطة هو تنزيل [ملف العينة](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (حدد **Raw** ثم **حفظ باسم**) ثم قم بالتحديث.
 
-3. إذا كنت تقوم بنشر النهج وإدارته عبر نهج المجموعة، فالرجاء التأكد من دمج كل PolicyRule في ملف XML واحد داخل عقدة أصل تسمى PolicyRules وجميع المجموعات في ملف XML واحد داخل عقدة أصل تسمى Groups؛ إذا كنت تدير من خلال Intune، فاحتفظ بملف PolicyRule واحد من XML، والشيء نفسه، وملف XML واحد لمجموعة واحدة.
+3. إذا كنت تقوم بنشر النهج وإدارته باستخدام نهج المجموعة، فالرجاء التأكد من دمج كل PolicyRule في ملف XML واحد داخل عقدة أصل تسمى PolicyRules وكل المجموعة في ملف XML واحد داخل عقدة أصل تسمى Groups؛ إذا كنت تدير من خلال Intune، فاحتفظ بملف XML واحد من PolicyRule، والشيء نفسه، ملف XML واحد لمجموعة واحدة.
 
-إذا كنت لا تزال لا تعمل، فقد ترغب في الاتصال بنا ومشاركة سيارة الدعم عن طريق تشغيل cmd مع المسؤول: "٪programfiles٪\Windows Defender\MpCmdRun.exe" -GetFiles
+إذا كان لا يزال لا يعمل، فقد ترغب في الاتصال بنا ومشاركة سيارة أجرة الدعم عن طريق تشغيل cmd مع المسؤول: "٪programfiles٪\Windows Defender\MpCmdRun.exe" -GetFiles
 
-### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>لا يوجد أسلوب عمل تكوين ل "تعريف مجموعات نهج التحكم في الجهاز" و"تعريف قواعد نهج التحكم في الجهاز" على نهج المجموعة الخاص بي
+### <a name="there-is-no-configuration-ux-for-define-device-control-policy-groups-and-define-device-control-policy-rules-on-my-group-policy"></a>لا توجد تجربة مستخدم تكوين ل "تعريف مجموعات نهج التحكم في الجهاز" و"تعريف قواعد نهج التحكم في الجهاز" على نهج المجموعة
 
-نحن لا نرجع أسلوب عمل تكوين نهج المجموعة، ولكن لا يزال بإمكانك الحصول على ملفات adml وdmx ذات الصلة بالنقر فوق 'Raw' و'Save as' في ملفات [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) [وWindDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) .
+نحن لا نرجع تجربة المستخدم لتكوين نهج المجموعة، ولكن لا يزال بإمكانك الحصول على ملفات adml و admx ذات الصلة بالنقر فوق 'Raw' و'Save as' في ملفات [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) [وWindDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx).
 
 ### <a name="how-can-i-know-whether-the-latest-policy-has-been-deployed-to-the-target-machine"></a>كيف يمكنني معرفة ما إذا كان قد تم نشر النهج الأخير على الجهاز المستهدف؟
 
@@ -363,7 +421,7 @@ DeviceEvents
 
 ### <a name="how-can-i-know-which-machine-is-using-out-of-date-antimalware-client-version-in-the-organization"></a>كيف يمكنني معرفة الجهاز الذي يستخدم إصدار عميل مكافحة البرامج الضارة قديم في المؤسسة؟
 
-يمكنك استخدام الاستعلام التالي للحصول على إصدار عميل مكافحة البرامج الضارة على مدخل أمان Microsoft 365:
+يمكنك استخدام الاستعلام التالي للحصول على إصدار عميل مكافحة البرامج الضارة على مدخل الأمان Microsoft 365:
 
 ```kusto
 //check the antimalware client version

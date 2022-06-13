@@ -18,18 +18,18 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية إدارة العناصر المفهرسة جزئيا (تسمى أيضا العناصر غير المفهرسة) من Exchange SharePoint OneDrive for Business داخل مؤسستك.
-ms.openlocfilehash: aa9071cfb99219bea6c5c0d640c9e6e4255e316d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 373072ff1b1a893a8de970ccb6eacbdcd14b48d3
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419957"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014939"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>التحقق من العناصر المفهرسة جزئيا في eDiscovery
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-يتضمن بحث eDiscovery الذي تقوم بتشغيله من مدخل التوافق في Microsoft Purview العناصر المفهرسة جزئيا تلقائيا في نتائج البحث المقدرة عند تشغيل عملية بحث. العناصر المفهرسة جزئيا هي Exchange عناصر علبة البريد والمستندات على SharePoint ومواقع OneDrive for Business التي لم تتم فهرستها بشكل كامل للبحث لسبب ما. تمت فهرسة معظم رسائل البريد الإلكتروني ومستندات الموقع بنجاح لأنها تقع ضمن [حدود الفهرسة لرسائل البريد الإلكتروني](limits-for-content-search.md#indexing-limits-for-email-messages). ومع ذلك، قد تتجاوز بعض العناصر حدود الفهرسة هذه، وسيتم فهرستها جزئيا. فيما يلي أسباب أخرى لعدم إمكانية فهرسة العناصر للبحث وإرجاعها كعناصر مفهرسة جزئيا عند تشغيل بحث eDiscovery:
+يتضمن بحث eDiscovery الذي تقوم بتشغيله من مدخل توافق Microsoft Purview تلقائيا عناصر مفهرسة جزئيا في نتائج البحث المقدرة عند تشغيل عملية بحث. العناصر المفهرسة جزئيا هي Exchange عناصر علبة البريد والمستندات على SharePoint ومواقع OneDrive for Business التي لم تتم فهرستها بشكل كامل للبحث لسبب ما. تمت فهرسة معظم رسائل البريد الإلكتروني ومستندات الموقع بنجاح لأنها تقع ضمن [حدود الفهرسة لرسائل البريد الإلكتروني](limits-for-content-search.md#indexing-limits-for-email-messages). ومع ذلك، قد تتجاوز بعض العناصر حدود الفهرسة هذه، وسيتم فهرستها جزئيا. فيما يلي أسباب أخرى لعدم إمكانية فهرسة العناصر للبحث وإرجاعها كعناصر مفهرسة جزئيا عند تشغيل بحث eDiscovery:
   
 - تحتوي رسائل البريد الإلكتروني على ملف مرفق لا يمكن فتحه؛ هذا هو السبب الأكثر شيوعا لعناصر البريد الإلكتروني المفهرسة جزئيا.
 
@@ -125,7 +125,7 @@ ms.locfileid: "65419957"
 
    ```powershell
      write-host "**************************************************"
-     write-host "     Security & Compliance Center PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "     Security & Compliance PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "**************************************************"
      " " 
@@ -166,9 +166,9 @@ ms.locfileid: "65419957"
      }
    ```
 
-2. [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell).
+2. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
 
-3. في Security & Compliance Center PowerShell، انتقل إلى المجلد حيث قمت بحفظ البرنامج النصي في الخطوة 1، ثم قم بتشغيل البرنامج النصي؛ على سبيل المثال:
+3. في Security & Compliance PowerShell، انتقل إلى المجلد حيث حفظت البرنامج النصي في الخطوة 1، ثم شغل البرنامج النصي؛ على سبيل المثال:
 
    ```powershell
    .\PartiallyIndexedItems.ps1

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: الإعلان عن السجلات باستخدام تسميات الاستبقاء.
-ms.openlocfilehash: 75445d1cd61bd86dd41d6325efc6e71fac20ddc0
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0e8453bee843131a5781318f7adde8d19bb04d92
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286045"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016801"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>تعريف السجلات باستخدام تسميات الاستبقاء
 
@@ -43,7 +43,7 @@ ms.locfileid: "65286045"
 
 بشكل افتراضي، لا يتم عرض خيار تسمية الاستبقاء لوضع علامة على المحتوى كسجل تنظيمي في معالج تسمية الاستبقاء. لعرض هذا الخيار، يجب أولا تشغيل أمر PowerShell:
 
-1. [الاتصال إلى Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [الاتصال إلى Office 365 Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. تشغيل cmdlet التالي:
 
@@ -75,7 +75,7 @@ ms.locfileid: "65286045"
 
 إذا كنت ستستخدم تسميات الاستبقاء للإعلان عن العناصر كسجلات (بدلا من السجلات التنظيمية) في SharePoint OneDrive، ففكر فيما إذا كنت بحاجة إلى تغيير إعداد المستأجر الافتراضي الذي يسمح للمستخدمين بتحرير خصائص [سجل مؤمن](record-versioning.md) عندما تكون الملفات أكبر من 0 بايت.
 
-لتغيير هذا الإعداد الافتراضي، انتقل إلى [مدخل Microsoft Purview compliance](https://compliance.microsoft.com/) **managementRecords** >  **managementRecords** >  **settingsRetention** >  labelsAllow  > **لتحرير خصائص السجل** ثم أوقف تشغيل الإعداد **"السماح للمستخدمين بتحرير خصائص السجل**".
+لتغيير هذا الإعداد الافتراضي، انتقل إلى **إعدادات استبقاء** >  إعدادات  >  إدارة سجلات [Microsoft Purview لمدخل](https://compliance.microsoft.com/) >  >  التوافق، ثم **قم** بإيقاف تشغيل الإعداد **"السماح للمستخدمين بتحرير خصائص السجل**".
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>تطبيق تسمية الاستبقاء المكونة على المحتوى
 

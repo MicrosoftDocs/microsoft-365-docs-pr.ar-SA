@@ -25,19 +25,19 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: مادة مرجعية لمنع فقدان البيانات
-ms.openlocfilehash: 55e8e5bd16b850ecce84cc87d43e7269746a7999
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: b7546d41310942a0e6eab99511a78c594822ee2a
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754809"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017275"
 ---
 # <a name="data-loss-prevention-reference"></a>مرجع منع فقدان البيانات
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
-> هذا هو الموضوع المرجعي لم يعد المورد الرئيسي لمعلومات تفادي فقدان البيانات في Microsoft Purview (DLP). يتم تحديث مجموعة محتوى DLP وإعادة هيكلتها. ستنتقل المواضيع التي تتناولها هذه المقالة إلى مقالات جديدة ومحدثة. لمزيد من المعلومات حول DLP، راجع [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md).
+> هذا هو الموضوع المرجعي لم يعد المورد الرئيسي لمعلومات منع فقدان البيانات (DLP) من Microsoft Purview. يتم تحديث مجموعة محتوى DLP وإعادة هيكلتها. ستنتقل المواضيع التي تتناولها هذه المقالة إلى مقالات جديدة ومحدثة. لمزيد من المعلومات حول DLP، راجع [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -73,9 +73,9 @@ With a DLP policy, you can:
 -->
 ## <a name="create-and-manage-dlp-policies"></a>إنشاء نهج DLP وإدارتها
 
-يمكنك إنشاء نهج DLP وإدارتها على صفحة منع فقدان البيانات في مدخل التوافق في Microsoft Purview.
+يمكنك إنشاء نهج DLP وإدارتها على صفحة منع فقدان البيانات في مدخل توافق Microsoft Purview.
 
-![صفحة منع فقدان البيانات في مدخل التوافق في Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![صفحة منع فقدان البيانات في مدخل توافق Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -493,7 +493,7 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
 ### <a name="policies-are-synced"></a>تتم مزامنة النهج
 
-بعد إنشاء نهج DLP في مدخل التوافق في Microsoft Purview، يتم تخزينه في مخزن نهج مركزي، ثم تتم مزامنته إلى مصادر المحتوى المختلفة، بما في ذلك:
+بعد إنشاء نهج DLP في مدخل توافق Microsoft Purview، يتم تخزينه في مخزن نهج مركزي، ثم تتم مزامنته مع مصادر المحتوى المختلفة، بما في ذلك:
 
 - Exchange Online، ومن هناك إلى Outlook على ويب Outlook.
 
@@ -531,7 +531,7 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>تقييم النهج في Exchange Online Outlook Outlook على ويب
 
-عند إنشاء نهج DLP يتضمن Exchange Online كموقع، تتم مزامنة النهج من مدخل التوافق في Microsoft Purview إلى Exchange Online، ثم من Exchange Online إلى Outlook على ويب Outlook.
+عند إنشاء نهج DLP يتضمن Exchange Online كموقع، تتم مزامنة النهج من مدخل توافق Microsoft Purview إلى Exchange Online، ثم من Exchange Online إلى Outlook على ويب Outlook.
 
 عند إنشاء رسالة في Outlook، يمكن للمستخدم رؤية تلميحات النهج عند تقييم المحتوى الذي يتم إنشاؤه مقابل نهج DLP. وبعد إرسال رسالة، يتم تقييمها مقابل نهج DLP كجزء عادي من تدفق البريد، إلى جانب قواعد تدفق البريد Exchange (المعروفة أيضا بقواعد النقل) ونهج DLP التي تم إنشاؤها في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>. تقوم نهج DLP بفحص كل من الرسالة وأي مرفقات.
 
@@ -545,15 +545,15 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 ### <a name="policy-evaluation-in-microsoft-teams"></a>تقييم النهج في Microsoft Teams
  <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
 
-عند إنشاء نهج DLP يتضمن Microsoft Teams كموقع، تتم مزامنة النهج من مدخل التوافق في Microsoft Purview إلى حسابات المستخدمين وقنوات Microsoft Teams ورسائل الدردشة. استنادا إلى كيفية تكوين نهج DLP، عندما يحاول شخص ما مشاركة معلومات حساسة في دردشة Microsoft Teams أو رسالة قناة، يمكن حظر الرسالة أو إبطالها. ولن تفتح المستندات التي تحتوي على معلومات حساسة وتتم مشاركتها مع الضيوف (المستخدمين الخارجيين) لهؤلاء المستخدمين. لمعرفة المزيد، راجع [منع فقدان البيانات Microsoft Teams](dlp-microsoft-teams.md).
+عند إنشاء نهج DLP يتضمن Microsoft Teams كموقع، تتم مزامنة النهج من مدخل توافق Microsoft Purview إلى حسابات المستخدمين وقنوات Microsoft Teams ورسائل الدردشة. استنادا إلى كيفية تكوين نهج DLP، عندما يحاول شخص ما مشاركة معلومات حساسة في دردشة Microsoft Teams أو رسالة قناة، يمكن حظر الرسالة أو إبطالها. ولن تفتح المستندات التي تحتوي على معلومات حساسة وتتم مشاركتها مع الضيوف (المستخدمين الخارجيين) لهؤلاء المستخدمين. لمعرفة المزيد، راجع [منع فقدان البيانات Microsoft Teams](dlp-microsoft-teams.md).
 
 ## <a name="permissions"></a>الأذونات
 
-بشكل افتراضي، سيكون لدى المسؤولين العموميين، ومسؤولين الأمان، ومسؤولين التوافق حق الوصول لإنشاء نهج DLP وتطبيقه. يحتاج الأعضاء الآخرون في فريق الامتثال الذين سينشئون نهج DLP إلى أذونات مدخل التوافق في Microsoft Purview. بشكل افتراضي، سيكون لمسؤول المستأجر حق الوصول إلى هذا الموقع ويمكنه منح مسؤولي الامتثال والأشخاص الآخرين حق الوصول إلى مدخل التوافق في Microsoft Purview، دون منحهم جميع أذونات مسؤول المستأجر. للقيام بذلك، نوصي بما يلي:
+بشكل افتراضي، سيكون لدى المسؤولين العموميين، ومسؤولين الأمان، ومسؤولين التوافق حق الوصول لإنشاء نهج DLP وتطبيقه. يحتاج الأعضاء الآخرون في فريق التوافق الذين سينشئون نهج DLP إلى أذونات لمدخل الامتثال ل Microsoft Purview. بشكل افتراضي، سيكون لمسؤول المستأجر حق الوصول إلى هذا الموقع ويمكنه منح مسؤولي الامتثال والأشخاص الآخرين حق الوصول إلى مدخل توافق Microsoft Purview، دون منحهم جميع أذونات مسؤول المستأجر. للقيام بذلك، نوصي بما يلي:
 
 1. إنشاء مجموعة في Microsoft 365 وإضافة مسؤولي الامتثال إليها.
 
-2. إنشاء مجموعة أدوار على صفحة **"الأذونات**" في مدخل التوافق في Microsoft Purview.
+2. إنشاء مجموعة أدوار على صفحة **الأذونات** في مدخل توافق Microsoft Purview.
 
 3. أثناء إنشاء مجموعة الأدوار، استخدم قسم **Choose Roles** لإضافة الدور التالي إلى مجموعة الأدوار: **DLP Compliance Management**.
 
@@ -567,15 +567,15 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
 ## <a name="find-the-dlp-cmdlets"></a>البحث عن أوامر cmdlets DLP
 
-لاستخدام معظم أوامر cmdlets مدخل التوافق في Microsoft Purview، تحتاج إلى:
+لاستخدام معظم أوامر cmdlets لمدخل توافق Microsoft Purview، تحتاج إلى:
 
-1. [الاتصال إلى Office 365 مدخل التوافق في Microsoft Purview باستخدام PowerShell البعيد](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Use any of these [policy-and-compliance-dlp cmdlets](/powershell/module/exchange/export-dlppolicycollection).
 
-ومع ذلك، تحتاج تقارير DLP إلى سحب البيانات من جميع Microsoft 365، بما في ذلك Exchange Online. لهذا السبب، ***تتوفر أوامر cmdlets لتقارير DLP في Exchange Online Powershell -- وليس في مدخل التوافق في Microsoft Purview Powershell***. لذلك، لاستخدام cmdlets لتقارير DLP، تحتاج إلى:
+ومع ذلك، تحتاج تقارير DLP إلى سحب البيانات من جميع Microsoft 365، بما في ذلك Exchange Online. لهذا السبب، ***تتوفر أوامر cmdlets لتقارير DLP في Exchange Online Powershell -- وليس في مدخل توافق Microsoft Purview Powershell***. لذلك، لاستخدام cmdlets لتقارير DLP، تحتاج إلى:
 
-1. [الاتصال إلى Exchange Online باستخدام PowerShell البعيد](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. استخدم أيا من أوامر cmdlets هذه لتقارير DLP:
 

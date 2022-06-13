@@ -18,12 +18,12 @@ description: تعرف على كيفية التعرف على قواعد Outlook �
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 268e50059ad1b128e583a5be383788b545fa6190
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 370fa7cf6e8003954044290b7c19c3d839b0a145
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874085"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016021"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>الكشف عن Outlook القواعد وهجمات حقن النماذج المخصصة ومعالجتها
 
@@ -155,7 +155,7 @@ ms.locfileid: "65874085"
 
 ## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>كيفية إيقاف ومعالجة هجوم Outlook Rules and Forms
 
-إذا وجدت أي دليل على أي من هذه الهجمات، فإن المعالجة بسيطة، فما عليك سوى حذف القاعدة أو النموذج من علبة البريد. يمكنك القيام بذلك باستخدام عميل Outlook أو باستخدام PowerShell البعيد لإزالة القواعد.
+إذا وجدت أي دليل على أي من هذه الهجمات، فإن المعالجة بسيطة، فما عليك سوى حذف القاعدة أو النموذج من علبة البريد. يمكنك القيام بذلك باستخدام عميل Outlook أو باستخدام Exchange PowerShell لإزالة القواعد.
 
 ### <a name="using-outlook"></a>استخدام Outlook
 
@@ -171,11 +171,11 @@ ms.locfileid: "65874085"
 
 ### <a name="using-powershell"></a>استخدام PowerShell
 
-هناك اثنان من أوامر Cmdlets PowerShell البعيدة التي يمكنك استخدامها لإزالة القواعد الخطرة أو تعطيلها. ما عليك سوى اتباع الخطوات.
+هناك Exchange powerShell cmdlets يمكنك استخدامها لإزالة القواعد الخطرة أو تعطيلها. ما عليك سوى اتباع الخطوات.
 
 #### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>خطوات لعلب البريد الموجودة على خادم Exchange
 
-1. الاتصال إلى خادم Exchange باستخدام PowerShell البعيد. اتبع الخطوات الواردة في [الاتصال Exchange الخوادم باستخدام PowerShell البعيد](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
+1. الاتصال إلى خادم Exchange باستخدام PowerShell البعيد أو Exchange Management Shell. اتبع الخطوات الواردة في [الاتصال Exchange الخوادم باستخدام PowerShell البعيد](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell) أو [افتح Exchange Management Shell](/powershell/exchange/open-the-exchange-management-shell).
 
 2. إذا كنت تريد إزالة قاعدة واحدة أو قواعد متعددة أو كل القواعد بالكامل من علبة بريد، فاستخدم [الأمر Remove-InboxRule](/powershell/module/exchange/Remove-InboxRule) cmdlet.
 
@@ -183,7 +183,7 @@ ms.locfileid: "65874085"
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>خطوات لعلب البريد في Exchange Online
 
-1. اتبع الخطوات الواردة في [الاتصال Exchange Online باستخدام PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. اتبع الخطوات الواردة في [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. إذا كنت تريد إزالة قاعدة واحدة أو قواعد متعددة أو كل القواعد بالكامل من علبة بريد، فاستخدم الأمر cmdlet [لقاعدة إزالة علبة الوارد](/powershell/module/exchange/Remove-InboxRule) .
 

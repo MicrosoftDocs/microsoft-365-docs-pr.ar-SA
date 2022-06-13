@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: حدد لوائح خصوصية البيانات والسيناريوهات ذات الصلة واستعدادك وأنواع المعلومات الحساسة الموجودة في بيئة Microsoft 365 الخاصة بك.
-ms.openlocfilehash: e2d87599315e7bb43b289d74b5f192b29aecd965
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 73cf1f3a51806fb53d5f04eb835a2fbcc7cd7b3b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973463"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015027"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>تقييم مخاطر خصوصية البيانات وتحديد العناصر الحساسة باستخدام Microsoft 365
 
@@ -200,9 +200,9 @@ ms.locfileid: "64973463"
 
 إذا كنت بحاجة إلى تحديد وحماية نوع خاص بالمؤسسة أو إقليمي من العناصر الحساسة، مثل تنسيق مخصص لمعرفات الموظفين، أو معلومات شخصية أخرى غير مشمولة بالفعل بنوع معلومات حساسة مضمن، يمكنك إنشاء نوع معلومات حساسة مخصص باستخدام هذه الأساليب:
 
-- PowerShell
+- Security & Compliance PowerShell
 - قواعد مخصصة مع تطابق تام للبيانات (EDM)
-- من خلال واجهة مستخدم مسؤول مركز التوافق، كما هو موضح في [مقالة Use Compliance Score and Compliance Manager](information-protection-deploy-compliance.md)
+- من خلال مدخل توافق "Microsoft 365 Purview"، كما هو موضح في [مقالة "Use Compliance Score and Compliance Manager](information-protection-deploy-compliance.md)"
 
 يمكنك أيضا تخصيص نوع معلومات حساسة موجود ومضمن.
 
@@ -210,8 +210,8 @@ ms.locfileid: "64973463"
 
 - [تخصيص نوع معلومات حساسة مضمن](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [التعرّف على أنواع المعلومات الحساسة](../compliance/sensitive-information-type-learn-about.md)
-- [إنشاء نوع معلومات حساسة مخصص في مركز توافق & الأمان](../compliance/create-a-custom-sensitive-information-type.md)
-- [إنشاء نوع معلومات حساسة مخصص في Security & Compliance Center PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [إنشاء نوع معلومات حساسة مخصص في مدخل توافق "Microsoft 365 Purview"](../compliance/create-a-custom-sensitive-information-type.md)
+- [إنشاء نوع معلومات حساسة مخصص في Security & Compliance PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [إنشاء أنواع معلومات حساسة مخصصة باستخدام التصنيف المستند إلى مطابقة البيانات الدقيقة](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>مستكشف المحتوى

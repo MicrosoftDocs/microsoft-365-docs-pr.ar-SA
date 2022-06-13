@@ -20,16 +20,16 @@ description: يجب تعيين أذونات للمستخدمين في Microsoft 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bf2f6f99af13de0858b041807f01e25e3516da8
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 4e0ca3874f03d9f0c386a84c9e8b56ea58bbfe72
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130747"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017997"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>منح المستخدمين حق الوصول إلى مركز توافق & الأمان
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -56,15 +56,15 @@ ms.locfileid: "65130747"
 
 2. من قائمة مجموعات الأدوار، اختر مجموعة الأدوار، ثم انقر فوق أيقونة **"تحرير**![".](../../media/O365-MDM-CreatePolicy-EditIcon.gif)
 
-3. في صفحة خصائص مجموعة الأدوار ضمن **"الأعضاء**"، انقر فوق "أيقونة **AddAdd**![".](../../media/ITPro-EAC-AddIcon.gif) وحدد اسم المستخدم (أو المستخدمين) الذي تريد إضافته.
+3. في صفحة خصائص مجموعة الأدوار ضمن **"الأعضاء**"، انقر فوق **"إضافة**![أيقونة".](../../media/ITPro-EAC-AddIcon.gif) وحدد اسم المستخدم (أو المستخدمين) الذي تريد إضافته.
 
 4. عند تحديد كافة المستخدمين الذين تريد إضافتهم إلى مجموعة الأدوار، انقر فوق **"إضافة"،\>** ثم **"موافق**".
 
 5. عند الانتهاء، انقر فوق **حفظ**.
 
-## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>استخدام Security & Compliance Center PowerShell لمنح مستخدم آخر حق الوصول إلى Security & Compliance Center
+## <a name="use-security--compliance-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>استخدام Security & Compliance PowerShell لمنح مستخدم آخر حق الوصول إلى Security & Compliance Center
 
-1. [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. استخدم بناء الجملة التالي:
 
@@ -88,7 +88,7 @@ ms.locfileid: "65130747"
 
 - في مركز التوافق & الأمان، انتقل إلى **الأذونات** وحدد مجموعة الأدوار. في القائمة المنبثقة للتفاصيل التي تفتح، تحقق من أعضاء مجموعة الأدوار.
 
-- في Security & Compliance Center PowerShell، استبدل \<RoleGroupName\> باسم مجموعة الأدوار، وقم بتشغيل الأمر التالي:
+- في Security & Compliance PowerShell، استبدل \<RoleGroupName\> باسم مجموعة الأدوار، وقم بتشغيل الأمر التالي:
 
   ```powershell
   Get-RoleGroupMember -Identity "<RoleGroupName>"

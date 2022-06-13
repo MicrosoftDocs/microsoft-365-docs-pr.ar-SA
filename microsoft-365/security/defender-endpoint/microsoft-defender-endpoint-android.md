@@ -17,19 +17,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 51f4915da08920018526ac7eb17372247e28de6d
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: 8de6af6f04243a8481d116fe9a67f5420b536f6c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243085"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016493"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>مشكلات الأداء في Microsoft Defender لنقطة النهاية على Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -45,22 +45,21 @@ ms.locfileid: "65243085"
 ### <a name="prerequisites"></a>المتطلبات الأساسية
 
 - **للمستخدمين النهائيين**:
-  - Microsoft Defender لنقطة النهاية الترخيص المعين للمستخدم (المستخدمين) النهائيين للتطبيق. راجع [متطلبات الترخيص Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
-  - ترخيص Intune مطلوب قبل إلحاق أجهزة Android.
+  - يجب تعيين ترخيص Microsoft Intune للمستخدم النهائي. لمزيد من المعلومات حول كيفية تعيين التراخيص، راجع [تعيين التراخيص للمستخدمين](/azure/active-directory/users-groups-roles/licensing-groups-assign).
+  - يجب تعيين ترخيص Microsoft Defender لنقطة النهاية لمستخدمي التطبيق. لمزيد من المعلومات حول كيفية تعيين التراخيص، راجع [Microsoft Defender لنقطة النهاية متطلبات الترخيص](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
   - يمكن تنزيل تطبيق Intune Company Portal من [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) وهو متوفر على جهاز Android.
-  - بالإضافة إلى ذلك، يمكن [تسجيل](/mem/intune/user-help/enroll-device-android-company-portal) الأجهزة (الأجهزة) عبر تطبيق Intune Company Portal لفرض نهج توافق الأجهزة Intune. يتطلب هذا تعيين ترخيص Microsoft Intune للمستخدم النهائي.
-  - لمزيد من المعلومات حول كيفية تعيين التراخيص، راجع [تعيين التراخيص للمستخدمين](/azure/active-directory/users-groups-roles/licensing-groups-assign).
+  - بالإضافة إلى ذلك، يمكن [تسجيل](/mem/intune/user-help/enroll-device-android-company-portal) الأجهزة (الأجهزة) عبر تطبيق Intune Company Portal لفرض نهج توافق الأجهزة Intune. 
 
-- **للمسؤولين**
+- **للمسؤولين**:
    - الوصول إلى مدخل Microsoft 365 Defender.
-   - الوصول [إلى مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) إلى
-       - نشر التطبيق لمجموعات المستخدمين المسجلين في مؤسستك.
-       - تكوين إشارات مخاطر Microsoft Defender لنقطة النهاية في نهج حماية التطبيق.
+   - الوصول [إلى مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) من أجل:
+     - نشر التطبيق لمجموعات المستخدمين المسجلين في مؤسستك.
+     - تكوين إشارات مخاطر Microsoft Defender لنقطة النهاية في نهج حماية التطبيق.
   
     > [!NOTE]
+    >
     > - Microsoft Defender لنقطة النهاية الآن توسيع الحماية إلى بيانات المؤسسة داخل تطبيق مدار (MAM) للأجهزة غير المسجلة باستخدام إدارة أجهزة المحمول (MDM)، ولكنها تستخدم Intune لإدارة تطبيقات الأجهزة المحمولة. كما أنه يوسع هذا الدعم للعملاء الذين يستخدمون حلول إدارة تنقل المؤسسات الأخرى، مع الاستمرار في استخدام Intune [لإدارة تطبيقات المحمول (MAM).](/mem/intune/apps/mam-faq)
     > - بالإضافة إلى ذلك، يدعم Microsoft Defender لنقطة النهاية بالفعل الأجهزة المسجلة باستخدام إدارة الأجهزة المحمولة Intune (MDM).
-
 
 ### <a name="network-requirements"></a>متطلبات الشبكة
 

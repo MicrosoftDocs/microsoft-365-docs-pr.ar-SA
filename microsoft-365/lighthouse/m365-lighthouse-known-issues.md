@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، راجع قائمة بالمشكلات المعروفة ل Lighthouse حسب منطقة الميزة.
-ms.openlocfilehash: aa3b5980b60e966b4edfbac4a6e8d706c399e943
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 7a175d6c14e9b434240ff1a85f901a919ea79dcc
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022748"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016713"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>المشاكل المعروفة مع Microsoft 365 Lighthouse
 
@@ -73,10 +74,7 @@ ms.locfileid: "65022748"
 
 ## <a name="granular-delegated-admin-privileges-gdap"></a>امتيازات المسؤول المفوض متعدد المستويات (GDAP)
 
-> [!NOTE]
-> GDAP حاليا في [المعاينة التقنية](/partner-center/announcements/2022-february#6) (معاينة عامة) للسماح للشركاء بتعيين أذونات متعددة المستويات قبل توفر GDAP بشكل عام.
-
-حاليا، DAP مطلوب لإلحاق العملاء إلى Lighthouse. نوصي أيضا بإنشاء GDAP مع عملائك لتمكين الوصول المفوض بشكل أكثر أمانا. في حين أن DAP وGDAP يتعايشان، فإن GDAP سيكون له الأسبقية للعملاء حيث يوجد كلا النموذجين. قريبا، سيتمكن العملاء الذين يعانون من GDAP فقط (وبدون DAP) من الإلحاق ب Lighthouse.<br><br>
+مطلوب إما امتيازات المسؤول المفوض متعدد المستويات (GDAP) بالإضافة إلى علاقة موزع غير مباشرة أو علاقة امتيازات المسؤول المفوض (DAP) لإلحاق العملاء إلى Lighthouse. إذا كان DAP وGDAP موجودين في مستأجر عميل، فإن أذونات GDAP لها الأسبقية لفنيي MSP في مجموعات الأمان الممكنة بواسطة GDAP. قريبا، سيتمكن العملاء الذين تربطهم علاقات GDAP فقط (دون علاقات موزعين غير مباشرة) من إلحاق Lighthouse.<br><br>
 
 | مشكلة | الوصف | الحل |
 | ---------------- | ---------------- | ---------------- |

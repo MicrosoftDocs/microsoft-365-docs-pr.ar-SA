@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: عند إنشاء وصف حساسية، يمكنك تعيين تسمية تلقائيا للملفات ورسائل البريد الإلكتروني، أو يمكنك مطالبة المستخدمين بتحديد التسمية التي توصي بها.
-ms.openlocfilehash: 9998f71d275d28f10fc950b978cc13ce7fd3c335
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 3124427ff556cd08a56ee83cf8f83bc4dbf8eb72
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840420"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017953"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>تطبيق تسمية حساسية على المحتوى تلقائياً
 
@@ -74,7 +74,7 @@ ms.locfileid: "65840420"
     - على عكس التسمية اليدوية أو التسمية التلقائية باستخدام تطبيقات Office، يتم أيضا مسح مرفقات PDF بالإضافة إلى مرفقات Office ضوئيا بحثا عن الشروط التي تحددها في نهج التسمية التلقائية. عند وجود تطابق، يتم تسمية البريد الإلكتروني ولكن ليس المرفق.
         - بالنسبة لملفات PDF، إذا كانت التسمية تطبق التشفير، يتم تشفير هذه الملفات باستخدام [تشفير الرسالة](ome.md) عند [تمكين المستأجر لمرفقات PDF](ome-faq.yml#are-pdf-file-attachments-supported-).
         - بالنسبة إلى ملفات Office هذه، يتم دعم Word PowerPoint Excel. إذا كانت التسمية تطبق التشفير، يتم تشفيرها باستخدام [تشفير الرسالة](ome.md).
-    - إذا كان لديك Exchange قواعد تدفق البريد أو نهج تفادي فقدان البيانات في Microsoft Purview (DLP) التي تطبق تشفير IRM: عندما يتم تعريف المحتوى بواسطة هذه القواعد أو النهج ونهج التسمية التلقائية، يتم تطبيق التسمية. إذا كانت هذه التسمية تطبق التشفير، يتم تجاهل إعدادات IRM من قواعد تدفق البريد Exchange أو نهج DLP. ومع ذلك، إذا لم تطبق هذه التسمية التشفير، يتم تطبيق إعدادات IRM من قواعد تدفق البريد أو نهج DLP بالإضافة إلى التسمية.
+    - إذا كان لديك Exchange قواعد تدفق البريد أو نهج منع فقدان بيانات Microsoft Purview (DLP) التي تطبق تشفير IRM: عندما يتم تعريف المحتوى بواسطة هذه القواعد أو النهج ونهج التسمية التلقائية، يتم تطبيق التسمية. إذا كانت هذه التسمية تطبق التشفير، يتم تجاهل إعدادات IRM من قواعد تدفق البريد Exchange أو نهج DLP. ومع ذلك، إذا لم تطبق هذه التسمية التشفير، يتم تطبيق إعدادات IRM من قواعد تدفق البريد أو نهج DLP بالإضافة إلى التسمية.
     - سيتم استبدال البريد الإلكتروني الذي يحتوي على تشفير IRM بدون تسمية بتسمية بأي إعدادات تشفير عند وجود تطابق باستخدام التسمية التلقائية.
     - يتم تسمية البريد الإلكتروني الوارد عند وجود تطابق مع شروط التسمية التلقائية. إذا تم تكوين هذه التسمية [للتشفير](encryption-sensitivity-labels.md)، يتم تطبيق هذا التشفير دائما عندما يكون المرسل من مؤسستك. بشكل افتراضي، لا يتم تطبيق هذا التشفير عندما يكون المرسل خارج مؤسستك ولكن يمكن تطبيقه عن طريق تكوين **إعدادات إضافية للبريد الإلكتروني** وتحديد مالك Rights Management.
     - عندما تطبق التسمية التشفير، [يكون مصدر Rights Management ومالك Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) هو الشخص الذي يرسل البريد الإلكتروني عندما يكون المرسل من مؤسستك. عندما يكون المرسل خارج مؤسستك، يمكنك تحديد مالك Rights Management للبريد الإلكتروني الوارد الذي تمت تسميته وتشفيره بواسطة النهج الخاص بك.
@@ -100,7 +100,7 @@ ms.locfileid: "65840420"
 |تعيين مالك Rights Management لرسائل البريد الإلكتروني المرسلة من مؤسسة أخرى |لا |نعم|
 |بالنسبة لرسائل البريد الإلكتروني، استبدل التسمية الموجودة ذات الأولوية نفسها أو الأقل |لا |نعم (قابل للتكوين)|
 
-\* التسمية التلقائية غير متوفرة حاليا في جميع المناطق بسبب تبعية Azure الخلفية. إذا لم يتمكن المستأجر من دعم هذه الوظيفة، فلن تظهر علامة التبويب **"تسمية تلقائية**" في مدخل التوافق في Microsoft Purview. لمزيد من المعلومات، راجع [توفر تبعية Azure حسب البلد](/troubleshoot/azure/general/dependency-availability-by-country).
+\* التسمية التلقائية غير متوفرة حاليا في جميع المناطق بسبب تبعية Azure الخلفية. إذا لم يتمكن المستأجر من دعم هذه الوظيفة، فلن تكون علامة التبويب " **تسمية** تلقائية" مرئية في مدخل توافق Microsoft Purview. لمزيد من المعلومات، راجع [توفر تبعية Azure حسب البلد](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>كيفية تقييم شروط متعددة عند تطبيقها على أكثر من تسمية واحدة
 
@@ -126,7 +126,7 @@ For more information on parent labels and sublabels, see [Sublabels (grouping la
 - سيحل الوصف التلقائي محل [تسمية حساسية ذات أولوية أقل](sensitivity-labels.md#label-priority-order-matters) تم تطبيقها تلقائيا، ولكن ليس تسمية ذات أولوية أعلى.
     
     > [!TIP]
-    > على سبيل المثال، تسمية الحساسية في أعلى القائمة في مدخل التوافق في Microsoft Purview "**عام**" برقم طلب (أولوية) من 0، وتسمى تسمية الحساسية في أسفل القائمة "**سرية للغاية**" برقم طلب (أولوية 4). يمكن أن تتجاوز **التسمية "سرية للغاية** " التسمية **العامة** ولكن ليس العكس.
+    > على سبيل المثال، تسمية الحساسية في أعلى القائمة في مدخل توافق Microsoft Purview " **عام** " برقم طلب (أولوية) من 0، وتسمى تسمية الحساسية في أسفل القائمة " **سرية للغاية** " برقم طلب (الأولوية 4). يمكن أن تتجاوز **التسمية "سرية للغاية** " التسمية **العامة** ولكن ليس العكس.
 
 بالنسبة إلى نهج التسمية التلقائية للبريد الإلكتروني فقط، يمكنك تحديد إعداد لتجاوز تسمية الحساسية الموجودة دائما، بغض النظر عن كيفية تطبيقها.
 
@@ -297,7 +297,7 @@ For more information on parent labels and sublabels, see [Sublabels (grouping la
 
 ### <a name="creating-an-auto-labeling-policy"></a>إنشاء نهج تسمية تلقائية
 
-1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>، انتقل إلى تسميات الحساسية:
+1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل الامتثال ل Microsoft Purview</a>، انتقل إلى تسميات الحساسية:
 
     - **حلول** >  **حماية المعلومات**
 
@@ -409,9 +409,9 @@ For more information on parent labels and sublabels, see [Sublabels (grouping la
 
 ### <a name="use-powershell-for-auto-labeling-policies"></a>استخدام PowerShell لنهج التسمية التلقائية
 
-يمكنك استخدام [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) لإنشاء نهج التسمية التلقائية وتكوينها. وهذا يعني أنه يمكنك كتابة إنشاء نهج التسمية التلقائية وصيانتها بشكل كامل، والتي توفر أيضا أسلوبا أكثر كفاءة لتحديد عناوين URL متعددة لمواقع OneDrive SharePoint.
+يمكنك استخدام [Security & Compliance PowerShell](/powershell/exchange/scc-powershell) لإنشاء نهج التسمية التلقائية وتكوينها. وهذا يعني أنه يمكنك كتابة إنشاء نهج التسمية التلقائية وصيانتها بشكل كامل، والتي توفر أيضا أسلوبا أكثر كفاءة لتحديد عناوين URL متعددة لمواقع OneDrive SharePoint.
 
-قبل تشغيل الأوامر في PowerShell، يجب عليك أولا [الاتصال ب Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+قبل تشغيل الأوامر في PowerShell، يجب عليك أولا [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 لإنشاء نهج تسمية تلقائية جديد:
 

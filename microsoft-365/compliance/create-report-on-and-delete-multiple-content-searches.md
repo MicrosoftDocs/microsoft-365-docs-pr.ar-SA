@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: تعرف على كيفية أتمتة مهام البحث في المحتوى مثل إنشاء عمليات البحث وتشغيل التقارير باستخدام Security & Compliance Center PowerShell.
+description: تعرف على كيفية أتمتة مهام البحث في المحتوى مثل إنشاء عمليات البحث وتشغيل التقارير باستخدام Security & Compliance PowerShell.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ef806b9be55b8c39ad26f477d35eb076b22c16b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 50d0a66957e4bdca1e39cb42c837aa0f992bad98
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099252"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018064"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>إنشاء عدة عمليات بحث في المحتوى وإعداد تقرير بشأنها وحذفها
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
- غالبا ما يكون إنشاء عمليات البحث عن الاكتشاف والإبلاغ عنها بسرعة خطوة مهمة في eDiscovery والتحقيقات عندما تحاول التعرف على البيانات الأساسية وثراء عمليات البحث وجودتها. لمساعدتك على القيام بذلك، يوفر Security & Compliance Center PowerShell مجموعة من أوامر cmdlets لأتمتة مهام البحث عن المحتوى التي تستغرق وقتا طويلا. توفر هذه البرامج النصية طريقة سريعة وسهلة لإنشاء عدد من عمليات البحث، ثم تشغيل تقارير نتائج البحث المقدرة التي يمكن أن تساعدك في تحديد كمية البيانات المعنية. يمكنك أيضا استخدام البرامج النصية لإنشاء إصدارات مختلفة من عمليات البحث لمقارنة النتائج التي ينتجها كل منها. يمكن أن تساعدك هذه البرامج النصية على تحديد بياناتك ومعالجتها بسرعة وكفاءة.
+ غالبا ما يكون إنشاء عمليات البحث عن الاكتشاف والإبلاغ عنها بسرعة خطوة مهمة في eDiscovery والتحقيقات عندما تحاول التعرف على البيانات الأساسية وثراء عمليات البحث وجودتها. لمساعدتك على القيام بذلك، يوفر Security & Compliance PowerShell مجموعة من أوامر cmdlets لأتمتة مهام البحث عن المحتوى التي تستغرق وقتا طويلا. توفر هذه البرامج النصية طريقة سريعة وسهلة لإنشاء عدد من عمليات البحث، ثم تشغيل تقارير نتائج البحث المقدرة التي يمكن أن تساعدك في تحديد كمية البيانات المعنية. يمكنك أيضا استخدام البرامج النصية لإنشاء إصدارات مختلفة من عمليات البحث لمقارنة النتائج التي ينتجها كل منها. يمكن أن تساعدك هذه البرامج النصية على تحديد بياناتك ومعالجتها بسرعة وكفاءة.
 
 ## <a name="before-you-create-a-content-search"></a>قبل إنشاء البحث في المحتوى
 
@@ -77,9 +77,9 @@ ms.locfileid: "65099252"
 
 3. احفظ ملف Excel كملف CSV إلى مجلد على الكمبيوتر المحلي. سيستخدم البرنامج النصي الذي تقوم بإنشائه في الخطوة 3 المعلومات الموجودة في ملف CSV هذا لإنشاء عمليات البحث.
 
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>الخطوة 2: الاتصال إلى Security & Compliance Center PowerShell
+## <a name="step-2-connect-to-security--compliance-powershell"></a>الخطوة 2: الاتصال إلى Security & Compliance PowerShell
 
-الخطوة التالية هي الاتصال ب Security & Compliance Center PowerShell لمؤسستك. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+الخطوة التالية هي الاتصال ب Security & Compliance PowerShell لمؤسستك. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>الخطوة 3: تشغيل البرنامج النصي لإنشاء عمليات البحث وبدءها
 

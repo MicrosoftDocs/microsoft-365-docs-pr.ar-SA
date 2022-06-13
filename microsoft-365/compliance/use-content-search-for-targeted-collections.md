@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: استخدم البحث في المحتوى في مدخل توافق Microsoft Purview لتنفيذ مجموعة مستهدفة، والتي تبحث عن عناصر في علبة بريد معينة أو مجلد موقع معين.
-ms.openlocfilehash: 396c42183667e59e738779f618ca077d909db419
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 224da8e651599d1d007684a069b0dbb9d30a6119
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094913"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015529"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>استخدام البحث عن المحتوى للمجموعات المستهدفة
 
@@ -41,12 +41,12 @@ ms.locfileid: "65094913"
 
 - يجب أيضا تعيين دور مستلمي البريد في مؤسستك Exchange Online. هذا مطلوب لتشغيل **Get-MailboxFolderStatistics** cmdlet، المضمن في البرنامج النصي. بشكل افتراضي، يتم تعيين دور مستلمي البريد إلى مجموعات دور إدارة المؤسسة وإدارة المستلمين في Exchange Online. لمزيد من المعلومات حول تعيين الأذونات في Exchange Online، راجع [إدارة أعضاء مجموعة الأدوار](/exchange/manage-role-group-members-exchange-2013-help). يمكنك أيضا إنشاء مجموعة أدوار مخصصة وتعيين دور مستلمي البريد إليها، ثم إضافة الأعضاء الذين يحتاجون إلى تشغيل البرنامج النصي في الخطوة 1. لمزيد من المعلومات، راجع [إدارة مجموعات الأدوار](/Exchange/permissions-exo/role-groups).
 
-- يدعم البرنامج النصي في هذه المقالة المصادقة الحديثة. يمكنك استخدام البرنامج النصي كما هو إذا كنت Microsoft 365 أو مؤسسة Microsoft 365 سحابة القطاع الحكومي. إذا كنت مؤسسة Office 365 ألمانيا أو مؤسسة Microsoft 365 سحابة القطاع الحكومي عالية أو مؤسسة Microsoft 365 DoD، فستضطر إلى تحرير البرنامج النصي لتشغيله بنجاح. وبشكل خاص، يجب عليك تحرير السطر `Connect-ExchangeOnline` واستخدام معلمة *ExchangeEnvironmentName* (والقيمة المناسبة لنوع مؤسستك) للاتصال Exchange Online PowerShell.  أيضا، يجب عليك تحرير السطر `Connect-IPPSSession` واستخدام معلمات *ConnectionUri* *وAzureADAuthorizationEndpointUri* (والقيم المناسبة لنوع مؤسستك) للاتصال ب Security & Compliance Center PowerShell. لمزيد من المعلومات، راجع الأمثلة في [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- يدعم البرنامج النصي في هذه المقالة المصادقة الحديثة. يمكنك استخدام البرنامج النصي كما هو إذا كنت Microsoft 365 أو مؤسسة Microsoft 365 سحابة القطاع الحكومي. إذا كنت مؤسسة Office 365 ألمانيا أو مؤسسة Microsoft 365 سحابة القطاع الحكومي عالية أو مؤسسة Microsoft 365 DoD، فستضطر إلى تحرير البرنامج النصي لتشغيله بنجاح. وبشكل خاص، يجب عليك تحرير السطر `Connect-ExchangeOnline` واستخدام معلمة *ExchangeEnvironmentName* (والقيمة المناسبة لنوع مؤسستك) للاتصال Exchange Online PowerShell.  أيضا، يجب عليك تحرير السطر `Connect-IPPSSession` واستخدام معلمات *ConnectionUri* *وAzureADAuthorizationEndpointUri* (والقيم المناسبة لنوع مؤسستك) للاتصال ب Security & Compliance PowerShell. لمزيد من المعلومات، راجع الأمثلة في [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
-- في كل مرة تقوم فيها بتشغيل البرنامج النصي، يتم إنشاء جلسة PowerShell بعيدة جديدة. وهذا يعني أنه يمكنك استخدام جميع جلسات PowerShell البعيدة المتوفرة لك. لمنع حدوث ذلك، قم بتشغيل الأمر التالي لقطع اتصال جلسات عمل PowerShell البعيدة النشطة.
+- في كل مرة تقوم فيها بتشغيل البرنامج النصي، يتم إنشاء جلسة PowerShell بعيدة جديدة. وهذا يعني أنه يمكنك استخدام جميع جلسات PowerShell البعيدة المتوفرة لك. لمنع حدوث ذلك، قم بتشغيل الأوامر التالية لقطع اتصال جلسات عمل PowerShell البعيدة النشطة.
 
   ```powershell
-  Get-PSSession | Remove-PSSession
+  Get-PSSession | Remove-PSSession; Disconnect-ExchangeOnline
   ```
 
     لمزيد من المعلومات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
@@ -67,7 +67,7 @@ ms.locfileid: "65094913"
 
   - **OneDrive for Business**:`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
-- **بيانات اعتماد المستخدم**: سيستخدم البرنامج النصي بيانات الاعتماد للاتصال Exchange Online PowerShell أو Security & Compliance Center PowerShell باستخدام المصادقة الحديثة. كما هو موضح سابقا، يجب تعيين الأذونات المناسبة لتشغيل هذا البرنامج النصي بنجاح.
+- **بيانات اعتماد المستخدم**: سيستخدم البرنامج النصي بيانات الاعتماد للاتصال Exchange Online PowerShell أو Security & Compliance PowerShell باستخدام المصادقة الحديثة. كما هو موضح سابقا، يجب تعيين الأذونات المناسبة لتشغيل هذا البرنامج النصي بنجاح.
 
 لعرض قائمة بمجلدات علبة البريد أو أسماء ارتباطات مستندات الموقع (المسار):
 
@@ -132,7 +132,7 @@ ms.locfileid: "65094913"
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
       $siteUrl = $addressOrSite
-      # Connect to Security & Compliance Center PowerShell
+      # Connect to Security & Compliance PowerShell
       if (!$SccSession)
       {
           Import-Module ExchangeOnlineManagement
@@ -222,7 +222,7 @@ ms.locfileid: "65094913"
 
 1. انتقل إلى <https://compliance.microsoft.com> تسجيل الدخول باستخدام الحساب وبيانات الاعتماد التي استخدمتها لتشغيل البرنامج النصي في الخطوة 1.
 
-2. في الجزء الأيمن من مركز التوافق، انقر فوق **"إظهار بحث** **AllContent** > "، ثم انقر فوق **"بحث جديد**".
+2. في الجزء الأيمن من مركز التوافق، انقر فوق **"إظهار كل** > **البحث في المحتوى**"، ثم انقر فوق **"بحث جديد**".
 
 3. في مربع **الكلمات الأساسية** ، الصق `folderid:<folderid>` القيمة أو  `documentlink:<path>/*` التي تم إرجاعها بواسطة البرنامج النصي في الخطوة 1.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: إنشاء بيانات دقيقة تتطابق مع نوع المعلومات الحساسة/حزمة القاعدة
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d18147e576db356a5fb7904c3901003bbf48855e
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: ff493f7af88d377bcf008d13752969107cfd65e7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435248"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017175"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>إنشاء بيانات دقيقة تتطابق مع نوع المعلومات الحساسة/حزمة القاعدة
 
@@ -60,7 +60,7 @@ ms.locfileid: "65435248"
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>استخدام مخطط مطابقة البيانات الدقيق ومعالج نمط نوع المعلومات الحساسة
 
-1. في مدخل التوافق في Microsoft Purview للمستأجر الخاص بك انتقل إلى **تطابقات بيانات** **Data classificationExact** > .
+1. في مدخل توافق Microsoft Purview للمستأجر الخاص بك، انتقل إلى **تطابقات البيانات الدقيقة** **لتصنيف** >  البيانات.
 
 2. اختر **أنواع المعلومات الحساسة ل EDM** **وقم بإنشاء نوع معلومات حساسة ل EDM** لفتح معالج تكوين نوع المعلومات الحساسة.
 
@@ -89,7 +89,7 @@ ms.locfileid: "65435248"
 
 ### <a name="edit-or-delete-the-sensitive-information-type-pattern"></a>تحرير نمط نوع المعلومات الحساسة أو حذفه
 
-1. فتح **تطابقات بيانات Compliance** **centerData** >  **classificationExact** > .
+1. **تطابقات البيانات الدقيقة** **لتصنيف** >  بيانات **مركز** >  التوافق المفتوح.
 
 2. اختر **أنواع المعلومات الحساسة ل EDM**.
 
@@ -138,7 +138,7 @@ ms.locfileid: "65435248"
 
 ## <a name="create-a-rule-package-manually"></a>إنشاء حزمة قاعدة يدويا
 
-يوضح لك هذا الإجراء كيفية إنشاء ملف بتنسيق XML يسمى حزمة قاعدة (مع ترميز Unicode)، ثم تحميله إلى Microsoft Purview باستخدام PowerShell cmdlets لمركز التوافق.
+يوضح لك هذا الإجراء كيفية إنشاء ملف بتنسيق XML يسمى حزمة قاعدة (مع ترميز Unicode)، ثم تحميله إلى Microsoft Purview باستخدام Security & Compliance PowerShell cmdlets.
 
 > [!NOTE]
 > إذا كان بإمكان SIT الذي تقوم بتعيينه الكشف عن أدلة متطابقة متعددة الكلمات، يمكن تعيين العناصر الثانوية التي تحددها في حزمة قواعد تم إنشاؤها يدويا إلى SIT. على سبيل المثال، لن يتطابق الاسم `John Smith` كعنصر ثانوي لأننا نقارن `John` المحتوى ونعثر `Smith` عليه بشكل منفصل مع المصطلح `John Smith` الذي تم تحميله في أحد الحقول، إذا لم يتم تعيين حقل الأدلة المتوافقة هذا إلى SIT الذي يمكنه اكتشاف هذا النمط.

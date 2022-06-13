@@ -17,17 +17,14 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: تعرف على كيفية استخدام أداة تقييم الاعتماد لمعرفة كيف يمكن لمؤسستك الاستفادة من SharePoint Syntex.
-ms.openlocfilehash: dbe9ebe47526f15216e4366bf98f086d86bed5e4
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 8b4ffc6358487ec6cb66830fd56541bfc0b3df4f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772709"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015727"
 ---
 # <a name="discover-opportunities-in-sharepoint-syntex-by-using-the-microsoft-365-assessment-tool"></a>اكتشاف الفرص في SharePoint Syntex باستخدام أداة تقييم Microsoft 365
-
-> [!IMPORTANT]
-> تعد أداة التقييم Microsoft 365 وجميع مكونات PnP الأخرى أدوات مفتوحة المصدر مدعومة من مجتمع نشط يوفر الدعم لها. لا توجد اتفاقية مستوى الخدمة (SLA) لدعم الأدوات مفتوحة المصدر من قنوات دعم Microsoft الرسمية. 
 
 > [!NOTE]
 > يمكن تشغيل أداة التقييم Microsoft 365 فقط مقابل SharePoint Online. 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على نهج الاستبقاء وتسميات الاستبقاء التي تساعدك على الاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه.
-ms.openlocfilehash: 95d79bd95aa816b82e69399b9bde99500fcc8b6b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 7124d97c56e414a7c5a47488805bb4134426f073
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419517"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018019"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>التعرف على نهج الاستبقاء وتسميات الاستبقاء
 
@@ -177,7 +177,7 @@ ms.locfileid: "65419517"
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>استخدام تسمية استبقاء كشرط في نهج DLP
 
-يمكنك تحديد تسمية استبقاء كشرط في نهج تفادي فقدان البيانات في Microsoft Purview (DLP) للمستندات في SharePoint. على سبيل المثال، قم بتكوين نهج DLP لمنع مشاركة المستندات خارج المؤسسة إذا تم تطبيق تسمية استبقاء محددة عليها.
+يمكنك تحديد تسمية استبقاء كشرط في نهج Microsoft Purview Data Loss Prevention (DLP) للمستندات في SharePoint. على سبيل المثال، قم بتكوين نهج DLP لمنع مشاركة المستندات خارج المؤسسة إذا تم تطبيق تسمية استبقاء محددة عليها.
 
 لمزيد من المعلومات، راجع [استخدام تسمية استبقاء كشرط في نهج DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
@@ -237,7 +237,7 @@ ms.locfileid: "65419517"
 
 #### <a name="monitoring-retention-labels"></a>مراقبة تسميات الاستبقاء
 
-من مدخل التوافق في Microsoft Purview، حدد **تصنيف البيانات** وصفحة **النظرة العامة** لمراقبة كيفية استخدام تسميات الاستبقاء في المستأجر الخاص بك، وتحديد مكان وجود العناصر المسماة. لمزيد من المعلومات، بما في ذلك المتطلبات الأساسية المهمة، راجع [التعرف على تصنيف البيانات](data-classification-overview.md).
+من مدخل توافق Microsoft Purview، حدد **تصنيف البيانات** وصفحة **النظرة العامة** لمراقبة كيفية استخدام تسميات الاستبقاء في المستأجر الخاص بك، وتحديد مكان وجود العناصر المسماة. لمزيد من المعلومات، بما في ذلك المتطلبات الأساسية المهمة، راجع [التعرف على تصنيف البيانات](data-classification-overview.md).
 
 يمكنك بعد ذلك التنقل لأسفل في التفاصيل باستخدام [مستكشف المحتوى](data-classification-content-explorer.md) [ومستكشف النشاط](data-classification-activity-explorer.md).
 
@@ -369,7 +369,7 @@ ms.locfileid: "65419517"
 
 ## <a name="policy-lookup"></a>البحث عن النهج
 
-يمكنك تكوين نهج استبقاء متعددة لمواقع Microsoft 365، بالإضافة إلى نهج تسمية استبقاء متعددة تقوم بنشرها أو تطبيقها تلقائيا. للبحث عن نهج الاستبقاء التي تم تعيينها لمستخدمين محددين ومواقع ومجموعات Microsoft 365، استخدم **البحث عن النهج** من **إدارة دورة حياة البيانات** أو حلول **إدارة السجلات** في مدخل التوافق في Microsoft Purview.
+يمكنك تكوين نهج استبقاء متعددة لمواقع Microsoft 365، بالإضافة إلى نهج تسمية استبقاء متعددة تقوم بنشرها أو تطبيقها تلقائيا. للعثور على نهج الاستبقاء التي تم تعيينها إلى مستخدمين محددين ومواقع ومجموعات Microsoft 365، استخدم **البحث عن النهج** من **إدارة دورة حياة البيانات** أو حلول **إدارة السجلات** في مدخل توافق Microsoft Purview.
 
 على سبيل المثال:
 
@@ -550,7 +550,7 @@ ms.locfileid: "65419517"
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>PowerShell cmdlets لنهج الاستبقاء وتسميات الاستبقاء
 
-لاستخدام أوامر cmdlets للاستبقاء، يجب عليك أولا [الاتصال Office 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell). ثم استخدم أيا من أوامر cmdlet التالية:
+لاستخدام أوامر cmdlets للاستبقاء، يجب عليك أولا [الاتصال Office 365 Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell). ثم استخدم أيا من أوامر cmdlet التالية:
 
 - [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 

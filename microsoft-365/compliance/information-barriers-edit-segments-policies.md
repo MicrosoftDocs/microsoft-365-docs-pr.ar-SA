@@ -1,7 +1,7 @@
 ---
 title: إدارة نهج حواجز المعلومات
 description: تعرف على كيفية تحرير النهج أو إزالتها لحواجز المعلومات.
-keywords: حواجز Microsoft 365، Microsoft Purview، التوافق، المعلومات
+keywords: Microsoft 365 وMicrosoft Purview والامتثال وحواجز المعلومات
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,12 +13,12 @@ ms.collection:
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: a4962ba35ef2a66067acdf2676dbe34e63de99c5
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: eaaa98233a839f41c008052ab91c5c0f45f8eb13
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396214"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014157"
 ---
 # <a name="manage-information-barriers-policies"></a>إدارة نهج حواجز المعلومات
 
@@ -42,7 +42,7 @@ ms.locfileid: "65396214"
 | [استكشاف أخطاء حواجز المعلومات وإصلاحها](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | راجع هذه المقالة عندما تواجه مشاكل غير متوقعة مع حواجز المعلومات. |
 
 >[!IMPORTANT]
->لتنفيذ المهام الموضحة في هذه المقالة، يجب تعيين دور مناسب لك، مثل أحد الإجراءات التالية:<br>- Microsoft 365 Enterprise المسؤول العام<br>- المسؤول العام<br>- مسؤول التوافق<br>- إدارة الامتثال ل IB (هذا دور جديد!)<br><br>لمعرفة المزيد حول المتطلبات الأساسية لحواجز المعلومات، راجع [المتطلبات الأساسية (لنهج حواجز المعلومات).](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)<br><br> تأكد من [الاتصال ب Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+>لتنفيذ المهام الموضحة في هذه المقالة، يجب تعيين دور مناسب لك، مثل أحد الإجراءات التالية:<br>- Microsoft 365 Enterprise المسؤول العام<br>- المسؤول العام<br>- مسؤول التوافق<br>- إدارة الامتثال ل IB (هذا دور جديد!)<br><br>لمعرفة المزيد حول المتطلبات الأساسية لحواجز المعلومات، راجع [المتطلبات الأساسية (لنهج حواجز المعلومات).](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)<br><br> تأكد من [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="edit-user-account-attributes"></a>تحرير سمات حساب المستخدم
 

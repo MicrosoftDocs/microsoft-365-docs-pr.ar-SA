@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم تسميات الحساسية لحماية المحتوى في مواقع SharePoint Microsoft Teams والمجموعات Microsoft 365.
-ms.openlocfilehash: 125be09f9d3d9a519e1985a37c0880e3f2465245
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: dfe76e31eb5816e53a3f6d4ab598f1737cdebaa1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772665"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014289"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>استخدام تسميات الحساسية لحماية المحتوى في Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint
 
@@ -67,7 +67,7 @@ ms.locfileid: "65772665"
 
 1. لأن هذه الميزة تستخدم وظائف Azure AD، اتبع الإرشادات من وثائق Azure AD لتمكين دعم وصف الحساسية: [تعيين تسميات الحساسية إلى مجموعات Microsoft 365 في Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. تحتاج الآن إلى مزامنة تسميات الحساسية الخاصة بك إلى Azure AD. أولا، [اتصل ب Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+2. تحتاج الآن إلى مزامنة تسميات الحساسية الخاصة بك إلى Azure AD. أولا، [اتصل ب Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
    على سبيل المثال، في جلسة PowerShell التي تقوم بتشغيلها كمسؤول، سجل الدخول باستخدام حساب مسؤول عام.
 
@@ -180,7 +180,7 @@ ms.locfileid: "65772665"
 
 ### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>تكوين الإعدادات لنوع ارتباط المشاركة الافتراضي لموقع باستخدام إعدادات PowerShell المتقدمة
 
-بالإضافة إلى إعدادات التسمية للمواقع والمجموعات التي يمكنك تكوينها من مدخل التوافق في Microsoft Purview، يمكنك أيضا تكوين نوع ارتباط المشاركة الافتراضي لموقع. يمكن أيضا تكوين تسميات الحساسية للمستندات لنوع ارتباط مشاركة افتراضي. يتم تحديد هذه الإعدادات التي تساعد على منع الإفراط في المشاركة تلقائيا عندما يحدد المستخدمون الزر **"مشاركة"** في تطبيقاتهم Office. 
+بالإضافة إلى إعدادات التسمية للمواقع والمجموعات التي يمكنك تكوينها من مدخل توافق Microsoft Purview، يمكنك أيضا تكوين نوع ارتباط المشاركة الافتراضي لموقع. يمكن أيضا تكوين تسميات الحساسية للمستندات لنوع ارتباط مشاركة افتراضي. يتم تحديد هذه الإعدادات التي تساعد على منع الإفراط في المشاركة تلقائيا عندما يحدد المستخدمون الزر **"مشاركة"** في تطبيقاتهم Office. 
 
 لمزيد من المعلومات والإرشادات، راجع [استخدام تسميات الحساسية لتكوين نوع ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint OneDrive](sensitivity-labels-default-sharing-link.md).
 
@@ -313,7 +313,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 1. افتح جلسة عمل PowerShell باستخدام الخيار **"تشغيل كمسؤول** ".
 
-2. إذا كنت لا تعرف المعرف الفريد العمومي (GUID) للتسمية: [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) واحصل على قائمة أوصاف الحساسية وGUIDs الخاصة بها.
+2. إذا كنت لا تعرف المعرف الفريد العمومي للتسمية: [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) واحصل على قائمة أوصاف الحساسية وGUIDs الخاصة بها.
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -361,7 +361,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 تدعم التطبيقات والخدمات التالية تسميات الحساسية التي تم تكوينها للمواقع وإعدادات المجموعة:
 
-- مراكز مسؤول:
+- مراكز الإدارة:
 
   - مركز إدارة SharePoint
   - مركز إدارة Teams
@@ -379,7 +379,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 لا تدعم التطبيقات والخدمات التالية حاليا تسميات الحساسية التي تم تكوينها للمواقع وإعدادات المجموعة:
 
-- مراكز مسؤول:
+- مراكز الإدارة:
 
   - مركز إدارة Exchange
 
@@ -421,7 +421,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 ### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>استخدام PowerShell لتحويل التصنيفات لمجموعات Microsoft 365 إلى تسميات الحساسية
 
-1. أولا، [اتصل ب Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. أولا، [اتصل ب Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
    على سبيل المثال، في جلسة عمل PowerShell التي تقوم بتشغيلها كمسؤول، سجل الدخول باستخدام حساب مسؤول عام:
 

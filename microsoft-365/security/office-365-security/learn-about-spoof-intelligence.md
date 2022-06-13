@@ -20,12 +20,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على التحليل الذكي المخادعة في Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc09bb008586b26649e31f409fa3be8114c6d2b6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 9455ddf17d26e33ed5b2669a27ee93cf5f56b8f9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772063"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016043"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>تزييف التحليل الذكي في EOP
 
@@ -115,7 +115,6 @@ ms.locfileid: "65772063"
 - **إرسال البنية الأساسية**: يعرف أيضا باسم _البنية الأساسية_. ستكون البنية الأساسية المرسلة إحدى القيم التالية:
   - المجال الموجود في بحث DNS العكسي (سجل PTR) لعنوان IP لخادم البريد الإلكتروني المصدر.
   - إذا لم يكن لعنوان IP المصدر سجل PTR، فسيتم تعريف البنية الأساسية للإرسال على أنها \<source IP\>/24 (على سبيل المثال، 192.168.100.100/24).
-  - مجال DKIM تم التحقق منه.
 - **عدد الرسائل**: عدد الرسائل من تركيبة المجال المخادعة _والبنية_ الأساسية للإرسال إلى مؤسستك خلال آخر 7 أيام.
 - **آخر ظهور**: التاريخ الأخير الذي تم فيه تلقي رسالة من البنية الأساسية للإرسال التي تحتوي على المجال المخادعة.
 - **نوع الانتحال**: إحدى القيم التالية:

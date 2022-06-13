@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: في هذه المقالة، ستتعلم كيفية إنشاء نهج DLP واختباره وضبطه وفقا لاحتياجات مؤسستك.
-ms.openlocfilehash: 605288d5ee2839cc2f3ec225e551f0ba3e65bfcc
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 8e4c96a1625e3e11995aed66fff4a289da5d059d
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753981"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016955"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>إنشاء نهج DLP واختباره وضبطه
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-يساعدك تفادي فقدان البيانات في Microsoft Purview (DLP) على منع المشاركة غير المقصودة أو العرضية للمعلومات الحساسة.
+يساعدك Microsoft Purview Data Loss Prevention (DLP) على منع المشاركة غير المقصودة أو العرضية للمعلومات الحساسة.
 
 يفحص DLP رسائل البريد الإلكتروني والملفات للحصول على معلومات حساسة، مثل رقم بطاقة الائتمان. باستخدام DLP يمكنك الكشف عن المعلومات الحساسة، واتخاذ إجراءات مثل:
 
@@ -44,7 +44,7 @@ ms.locfileid: "65753981"
   
 1. إنشاء مجموعة في Microsoft 365 وإضافة مسؤولي الامتثال إليها.
     
-2. إنشاء مجموعة أدوار على صفحة **"الأذونات**" في مدخل التوافق في Microsoft Purview. 
+2. إنشاء مجموعة أدوار على صفحة **الأذونات** في مدخل توافق Microsoft Purview. 
 
 3. أثناء إنشاء مجموعة الأدوار، استخدم قسم **Choose Roles** لإضافة الدور التالي إلى مجموعة الأدوار: **DLP Compliance Management**.
     
@@ -62,7 +62,7 @@ ms.locfileid: "65753981"
 
 فيما يلي قائمة بالأدوار القابلة للتطبيق الموجودة في المعاينة. لمعرفة المزيد عنها، راجع ["الأدوار" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- حماية البيانات مسؤول
+- مسؤول حماية البيانات
 - محلل حماية البيانات
 - حماية البيانات المحقق
 - قارئ حماية البيانات
@@ -94,7 +94,7 @@ ms.locfileid: "65753981"
 
 عندما لا تكون مخاطر تسرب البيانات واضحة تماما، فمن الصعب العمل من حيث يجب أن تبدأ بالضبط في تنفيذ DLP. لحسن الحظ، يمكن تشغيل نهج DLP في "وضع الاختبار"، ما يسمح لك بقياس فعاليتها ودقتها قبل تشغيلها.
 
-يمكن إدارة نهج DLP Exchange Online من خلال مركز إدارة Exchange. ولكن يمكنك تكوين نهج DLP لجميع أحمال العمل من خلال مدخل التوافق في Microsoft Purview، لذلك هذا ما سأستخدمه للشرح التوضيحي في هذه المقالة. في مدخل التوافق في Microsoft Purview، ستجد نهج DLP ضمن **نهج** **منع** >  فقدان البيانات. اختر **إنشاء نهج** للبدء.
+يمكن إدارة نهج DLP Exchange Online من خلال مركز إدارة Exchange. ولكن يمكنك تكوين نهج DLP لجميع أحمال العمل من خلال مدخل توافق Microsoft Purview، لذلك هذا ما سأستخدمه للعرض التوضيحي في هذه المقالة. في مدخل الامتثال ل Microsoft Purview، ستجد نهج DLP ضمن **نهج** **منع** >  فقدان البيانات. اختر **إنشاء نهج** للبدء.
 
 يوفر Microsoft 365 مجموعة من [قوالب نهج DLP التي](what-the-dlp-policy-templates-include.md) يمكنك استخدامها لإنشاء نهج. لنفترض أنك شركة استرالية. يمكنك تصفية القوالب على أستراليا، واختيار "مالي" و"طبي" و"صحة" و"خصوصية".
 
@@ -235,7 +235,7 @@ ms.locfileid: "65753981"
 
 ![خيار تشغيل النهج.](../media/DLP-create-test-tune-turn-on-policy.png)
  
-إذا كنت في انتظار معرفة متى سيدخل النهج حيز التنفيذ، [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) وتشغيل [Cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) لمشاهدة DistributionStatus.
+إذا كنت في انتظار معرفة متى سيدخل النهج حيز التنفيذ، [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) وتشغيل [Cmdlet Get-DlpCompliancePolicy](/powershell/module/exchange/get-dlpcompliancepolicy) لمشاهدة DistributionStatus.
 
  ```powershell
  Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus

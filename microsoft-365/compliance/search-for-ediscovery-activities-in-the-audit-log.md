@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: تعرف على الأحداث التي يتم تسجيلها عندما يقوم المستخدمون المعينون لأذونات eDiscovery بتنفيذ مهام البحث في المحتوى وeDiscovery (قياسي) وeDiscovery (Premium) في مدخل التوافق في Microsoft Purview.
+description: تعرف على الأحداث التي يتم تسجيلها عندما يقوم المستخدمون المعينون لأذونات eDiscovery بتنفيذ مهام البحث في المحتوى وeDiscovery (قياسي) وeDiscovery (Premium) في مدخل توافق Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b94c53d497b5e300cdb0a08dbb5f02daec28c19
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 1e22371999044d5cb70282356045446b46f833fa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317505"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015485"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>البحث عن أنشطة eDiscovery في سجل التدقيق
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-البحث عن المحتوى والأنشطة ذات الصلة ب eDiscovery (ل eDiscovery Microsoft Purview (قياسي) وeDiscovery Microsoft Purview (Premium)) التي يتم تنفيذها في مدخل التوافق في Microsoft Purview أو عن طريق تشغيل أوامر Cmdlets PowerShell المقابلة يتم تسجيل الدخول سجل التدقيق. يتم تسجيل الأحداث عندما يقوم المسؤولون أو مديرو eDiscovery (أو أي مستخدم معين لأذونات eDiscovery) بتنفيذ المهام التالية للبحث عن المحتوى وeDiscovery (القياسي) في مدخل التوافق:
+يتم تسجيل البحث عن المحتوى والأنشطة ذات الصلة ب eDiscovery (ل Microsoft Purview eDiscovery (Standard) وMicrosoft Purview eDiscovery (Premium)) التي يتم تنفيذها في مدخل توافق Microsoft Purview أو عن طريق تشغيل أوامر PowerShell cmdlets المقابلة في سجل التدقيق. يتم تسجيل الأحداث عندما يقوم المسؤولون أو مديرو eDiscovery (أو أي مستخدم معين لأذونات eDiscovery) بتنفيذ المهام التالية للبحث عن المحتوى وeDiscovery (القياسي) في مدخل التوافق:
   
 - إنشاء حالات eDiscovery (قياسي) وeDiscovery (Premium) وإدارتها
 
@@ -153,7 +153,7 @@ ms.locfileid: "65317505"
 
 ## <a name="ediscovery-cmdlet-activities"></a>أنشطة eDiscovery cmdlet
 
-يسرد الجدول التالي سجلات سجل تدقيق cmdlet التي يتم تسجيلها عندما يقوم مسؤول أو مستخدم بتنفيذ نشاط متعلق ب eDiscovery باستخدام مركز التوافق أو عن طريق تشغيل cmdlet المطابق في Security & Compliance Center PowerShell. تختلف المعلومات المفصلة في سجل التدقيق عن أنشطة cmdlet المدرجة في هذا الجدول وأنشطة eDiscovery الموضحة في القسم السابق.
+يسرد الجدول التالي سجلات سجل تدقيق cmdlet التي يتم تسجيلها عندما يقوم مسؤول أو مستخدم بتنفيذ نشاط متعلق ب eDiscovery باستخدام مركز التوافق أو عن طريق تشغيل cmdlet المطابق في Security & Compliance PowerShell. تختلف المعلومات المفصلة في سجل التدقيق عن أنشطة cmdlet المدرجة في هذا الجدول وأنشطة eDiscovery الموضحة في القسم السابق.
   
 كما ذكر سابقا، قد يستغرق ظهور أنشطة eDiscovery cmdlet في نتائج البحث في سجل التدقيق ما يصل إلى 24 ساعة.
   

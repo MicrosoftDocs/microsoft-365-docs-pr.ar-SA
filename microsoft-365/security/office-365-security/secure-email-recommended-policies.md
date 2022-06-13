@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a355ed4c31cf2355ee6166987651da092c7afb33
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 592b5733844dc6a3df1a1d207e3a2c3deda7d7b7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945462"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015203"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>توصيات النهج لتأمين البريد الإلكتروني
 
@@ -72,7 +72,7 @@ ms.locfileid: "64945462"
 
 فيما يلي الخطوات:
 
-1. [الاتصال إلى جلسة Exchange Online Remote PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 2. إذا لم يكن لديك بالفعل نهج علبة بريد OWA، قم بإنشاء واحد باستخدام [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy) cmdlet.
 3. إذا كنت تريد السماح بعرض المرفقات ولكن بدون تنزيل، فاستخدم هذا الأمر:
 

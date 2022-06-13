@@ -14,17 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 43b39cac260f5bda773af6a428304dc898444771
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 558358cca679d9600f9a95c13c4fac6147764b75
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419583"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013343"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>محلل الأداء برنامج الحماية من الفيروسات من Microsoft Defender
 
 **ينطبق على**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -103,7 +103,7 @@ ms.locfileid: "65419583"
 
 - الإصدارات Windows المعتمدة: Windows 10 و Windows 11 وخادم Windows 2016 وما فوق
 - إصدار النظام الأساسي: 4.18.2108.7+
-- إصدار PowerShell: PowerShell الإصدار 5.1، PowerShell ISE، Remote PowerShell (4.18.2201.10+)، PowerShell 7.x (4.18.2201.10+)
+- إصدار PowerShell: PowerShell الإصدار 5.1، PowerShell ISE، PowerShell البعيد (4.18.2201.10+)، PowerShell 7.x (4.18.2201.10+)
 
 ## <a name="powershell-reference"></a>مرجع PowerShell
 
@@ -150,7 +150,7 @@ New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl
 
 يجمع الأمر أعلاه تسجيل أداء ويحفظه في المسار المحدد: **.\Defender-scans.etl**.
 
-##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>مثال 2: جمع تسجيل أداء لجلسة عمل Remote PowerShell
+##### <a name="example-2-collect-a-performance-recording-for-remote-powershell-session"></a>مثال 2: جمع تسجيل أداء لجلسة PowerShell البعيدة
 
 ```powershell
 $s = New-PSSession -ComputerName Server02 -Credential Domain01\User01
@@ -160,9 +160,11 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 يجمع الأمر أعلاه تسجيل أداء على Server02 (كما هو محدد بواسطة الوسيطة $s لجلسة عمل المعلمة) ويحفظه في المسار المحدد: **C:\LocalPathOnServer02\trace.etl** على Server02.
 
 ##### <a name="example-3-collect-a-performance-recording-in-non-interactive-mode"></a>مثال 3: جمع تسجيل أداء في وضع غير تفاعلي
+
 ```powershell
-New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60 
+New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60
 ```
+
 يجمع الأمر أعلاه تسجيل أداء للمدة بالثوان المحددة بواسطة المعلمة -Seconds. يوصى بذلك للمستخدمين الذين يقومون بإجراء مجموعات دفعات لا تتطلب أي تفاعل أو مطالبة.
 
 #### <a name="parameters-new-mpperformancerecording"></a>المعلمات: New-MpPerformanceRecording
@@ -192,6 +194,7 @@ Accept wildcard characters: False
 ```
 
 ##### <a name="-seconds"></a>-ثوان
+
 تحديد مدة تسجيل الأداء بالثوان. يوصى بذلك للمستخدمين الذين يقومون بإجراء مجموعات دفعات لا تتطلب أي تفاعل أو مطالبة.
 
 ```yaml
@@ -280,11 +283,13 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensio
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
 ```
+
 ##### <a name="example-5-using--raw-parameter"></a>مثال 5: استخدام المعلمة -Raw
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
 ```
+
 استخدام -Raw في الأمر أعلاه يحدد أن الإخراج يجب أن يكون قابلا للقراءة الآلية ويمكن تحويله بسهولة إلى تنسيقات التسلسل مثل JSON
 
 #### <a name="parameters-get-mpperformancereport"></a>المعلمات: Get-MpPerformanceReport
@@ -312,9 +317,10 @@ Default value: None
 Accept pipeline input: True
 Accept wildcard characters: False
 ```
+
 ##### <a name="-raw"></a>-Raw
 
-تحديد أن إخراج تسجيل الأداء يجب أن يكون قابلا للقراءة الآلية وقابلا للتحويل بسهولة إلى تنسيقات التسلسل مثل JSON (على سبيل المثال، عبر الأمر تحويل إلى JSON). يوصى بذلك للمستخدمين المهتمين بمعالجة الدفعات مع أنظمة معالجة البيانات الأخرى. 
+تحديد أن إخراج تسجيل الأداء يجب أن يكون قابلا للقراءة الآلية وقابلا للتحويل بسهولة إلى تنسيقات التسلسل مثل JSON (على سبيل المثال، عبر الأمر تحويل إلى JSON). يوصى بذلك للمستخدمين المهتمين بمعالجة الدفعات مع أنظمة معالجة البيانات الأخرى.
 
 ```yaml
 Type: <SwitchParameter>
