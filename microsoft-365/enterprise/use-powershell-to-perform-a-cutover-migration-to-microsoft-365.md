@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: تعرف على كيفية استخدام PowerShell لنقل المحتويات من نظام بريد إلكتروني مصدر مرة واحدة عن طريق إجراء ترحيل كلي إلى Microsoft 365.
-ms.openlocfilehash: ede2dfc25897012c5cb7e5469abea49e6db4292e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d63b7250cd1c4c34d169521943c3973104b15837
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078680"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008386"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>استخدم PowerShell لإجراء ترحيل كلي إلى Microsoft 365
 
@@ -41,7 +41,7 @@ ms.locfileid: "65078680"
 
 يجب تعيين أذونات لك قبل أن تتمكن من تنفيذ هذا الإجراء أو الإجراءات. للاطلاع على الأذونات التي تحتاجها، راجع إدخال "الترحيل" في جدول في موضوع ["أذونات المستلمين](/exchange/recipients-permissions-exchange-2013-help) ".
 
-لاستخدام Exchange Online PowerShell cmdlets، تحتاج إلى تسجيل الدخول واستيراد أوامر cmdlets إلى جلسة Windows PowerShell المحلية. راجع [الاتصال Exchange Online باستخدام PowerShell البعيد](/powershell/exchange/connect-to-exchange-online-powershell) للحصول على الإرشادات.
+لاستخدام Exchange Online PowerShell cmdlets، تحتاج إلى تسجيل الدخول واستيراد أوامر cmdlets إلى جلسة Windows PowerShell المحلية. راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) للحصول على الإرشادات.
 
 للحصول على قائمة كاملة بأوامر الترحيل، راجع [أوامر cmdlets للتنقل والترحيل](/powershell/exchange/).
 

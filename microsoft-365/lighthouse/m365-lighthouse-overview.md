@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -17,12 +18,12 @@ ms.custom:
 - intro-overview
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs)، تعرف على كيفية مساعدة Microsoft 365 Lighthouse في تأمين مستأجري العملاء وإدارتهم في موقع واحد.
-ms.openlocfilehash: 218442ee6714ece4c984fbf13478e5c4f3982101
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9b8c2b897b5a5d726435700f50afd6030a340ec0
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173964"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007163"
 ---
 # <a name="overview-of-microsoft-365-lighthouse"></a>نظرة عامة على Microsoft 365 Lighthouse
 

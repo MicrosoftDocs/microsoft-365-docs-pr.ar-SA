@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية استخدام نهج التسليم المتقدم في Exchange Online Protection (EOP) لتحديد الرسائل التي لا يجب تصفيتها في سيناريوهات معينة مدعومة (محاكاة التصيد الاحتيالي من جهة خارجية والرسائل التي يتم تسليمها إلى علب بريد عمليات الأمان (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9a959e70408af80567d1daed140e0642870b975
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: d9176f73c94df6413e3b79053318f5547788d773
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647788"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011571"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>تكوين تسليم عمليات محاكاة التصيد الاحتيالي التابعة لجهات خارجية للمستخدمين والرسائل التي لم تتم تصفتها إلى علب بريد SecOps
 
@@ -45,7 +45,7 @@ ms.locfileid: "65647788"
 - لا يتم تشغيل [تنبيهات النظام الافتراضية](/microsoft-365/compliance/alert-policies#default-alert-policies) لهذه السيناريوهات.
 - يتجاهل [AIR والتجموع في Defender لـ Office 365](office-365-air.md) هذه الرسائل.
 - خصيصا لمحاكاة التصيد الاحتيالي من جهة خارجية:
-  - [تنشئ عمليات الإرسال مسؤول](admin-submission.md) استجابة تلقائية تفيد بأن الرسالة جزء من حملة محاكاة التصيد الاحتيالي ولا تشكل تهديدا حقيقيا. لن يتم تشغيل التنبيهات و AIR. ستظهر تجربة عمليات إرسال المسؤول هذه الرسائل كتهديد محاكاة.
+  - تنشئ [عمليات إرسال المسؤول](admin-submission.md) استجابة تلقائية تفيد بأن الرسالة جزء من حملة محاكاة التصيد الاحتيالي ولا تشكل تهديدا حقيقيا. لن يتم تشغيل التنبيهات و AIR. ستظهر تجربة عمليات إرسال المسؤول هذه الرسائل كتهديد محاكاة.
   - عندما يبلغ المستخدم عن رسالة محاكاة تصيد احتيالي باستخدام [الوظيفة الإضافية "رسالة التقرير" أو "الإبلاغ عن التصيد الاحتيالي](enable-the-report-message-add-in.md)"، لن ينشئ النظام تنبيها أو تحقيقا أو حادثا. لن يتم حذف الارتباطات أو الملفات، ولكن ستظهر الرسالة أيضا على علامة تبويب **الرسائل التي أبلغ عنها المستخدم** في صفحة **عمليات الإرسال** .
   - [لا تحظر الارتباطات خزينة في Defender لـ Office 365](safe-links.md) عناوين URL المحددة في هذه الرسائل أو تحجبها في وقت النقر. لا تزال عناوين URL ملتفة، ولكن لم يتم حظرها.
   - [خزينة المرفقات في Defender لـ Office 365](safe-attachments.md) لا تخلط المرفقات في هذه الرسائل.
@@ -54,19 +54,19 @@ ms.locfileid: "65647788"
 
 <sup>\*\*</sup> يمكنك تجاوز ZAP للبرامج الضارة عن طريق إنشاء نهج مكافحة البرامج الضارة لعلب بريد SecOps حيث يتم إيقاف تشغيل ZAP للبرامج الضارة. للحصول على الإرشادات، راجع [تكوين نهج مكافحة البرامج الضارة في EOP](configure-anti-malware-policies.md).
 
-الرسائل التي يتم تحديدها بواسطة نهج التسليم المتقدم ليست تهديدات أمنية، لذلك يتم وضع علامة على الرسائل بتجاوزات النظام. ستظهر تجارب مسؤول هذه الرسائل إما بسبب تجاوز نظام **محاكاة التصيد الاحتيالي** أو تجاوز نظام **علبة بريد SecOps**. يمكن للمسؤولين التصفية والتحليل على تجاوزات النظام هذه في التجارب التالية:
+الرسائل التي يتم تحديدها بواسطة نهج التسليم المتقدم ليست تهديدات أمنية، لذلك يتم وضع علامة على الرسائل بتجاوزات النظام. ستظهر تجارب المسؤول هذه الرسائل إما بسبب تجاوز نظام **محاكاة التصيد الاحتيالي** أو تجاوز نظام **علبة بريد SecOps** . يمكن للمسؤولين التصفية والتحليل على تجاوزات النظام هذه في التجارب التالية:
 
-- [اكتشافات مستكشف التهديدات/الوقت الحقيقي في Defender لـ Office 365 الخطة 2](threat-explorer.md): يمكن مسؤول التصفية حسب **مصدر تجاوز النظام** وتحديد **إما محاكاة التصيد الاحتيالي** أو **علبة بريد SecOps**.
-- [صفحة كيان البريد الإلكتروني في اكتشافات مستكشف المخاطر/الوقت الحقيقي](mdo-email-entity-page.md): يمكن مسؤول عرض رسالة تم السماح بها بواسطة نهج المؤسسة إما بواسطة **علبة بريد SecOps** أو **محاكاة التصيد الاحتيالي** ضمن **تجاوز المستأجر** في قسم **(التجاوزات**).
-- [تقرير حالة الحماية من التهديدات](view-email-security-reports.md#threat-protection-status-report): يمكن مسؤول التصفية عن طريق **عرض البيانات حسب تجاوز النظام** في القائمة المنسدلة وتحديد رؤية الرسائل المسموح بها بسبب تجاوز نظام محاكاة التصيد الاحتيالي. للاطلاع على الرسائل المسموح بها بواسطة تجاوز علبة بريد SecOps، يمكنك تحديد **تصنيف تفصيلي للمخطط حسب موقع التسليم** في **تصنيف المخطط التفصيلي حسب** القائمة المنسدلة للسبب.
+- [اكتشافات مستكشف التهديدات/الوقت الحقيقي في Defender لـ Office 365 الخطة 2](threat-explorer.md): يمكن للمسؤول التصفية حسب **مصدر تجاوز النظام** وتحديد **إما محاكاة التصيد الاحتيالي** أو **علبة بريد SecOps**.
+- [صفحة كيان البريد الإلكتروني في اكتشافات مستكشف المخاطر/الوقت الحقيقي](mdo-email-entity-page.md): يمكن للمسؤول عرض رسالة تم السماح بها بواسطة نهج المؤسسة إما بواسطة **علبة بريد SecOps** أو **محاكاة التصيد الاحتيالي** ضمن **تجاوز المستأجر** في قسم **(التجاوزات**).
+- [تقرير حالة الحماية من التهديدات](view-email-security-reports.md#threat-protection-status-report): يمكن للمسؤول التصفية **من خلال عرض البيانات حسب تجاوز النظام** في القائمة المنسدلة وتحديد رؤية الرسائل المسموح بها بسبب تجاوز نظام محاكاة التصيد الاحتيالي. للاطلاع على الرسائل المسموح بها بواسطة تجاوز علبة بريد SecOps، يمكنك تحديد **تصنيف تفصيلي للمخطط حسب موقع التسليم** في **تصنيف المخطط التفصيلي حسب** القائمة المنسدلة للسبب.
 - [التتبع المتقدم في Microsoft Defender لنقطة النهاية](../defender-endpoint/advanced-hunting-overview.md): ستظهر محاكاة التصيد الاحتيالي وتجاوزات نظام علبة بريد SecOps كخيارات داخل OrgLevelPolicy في EmailEvents.
-- [طرق عرض الحملة](campaigns.md): يمكن مسؤول التصفية حسب **مصدر تجاوز النظام** وتحديد **إما محاكاة التصيد الاحتيالي** أو **علبة بريد SecOps**.
+- [طرق عرض الحملة](campaigns.md): يمكن للمسؤول التصفية حسب **مصدر تجاوز النظام** وتحديد **إما محاكاة التصيد الاحتيالي** أو **علبة بريد SecOps**.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
 - يمكنك فتح مدخل Microsoft 365 Defender في <https://security.microsoft.com>. للانتقال مباشرة إلى صفحة **التسليم المتقدم** ، افتح <https://security.microsoft.com/advanceddelivery>.
 
-- للاتصال ب PowerShell ل Security & Compliance Center، راجع [الاتصال إلى Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+- للاتصال ب Security & Compliance PowerShell، راجع [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 - يجب تعيين أذونات لك قبل أن تتمكن من تنفيذ الإجراءات الواردة في هذه المقالة:
   - لإنشاء الإعدادات المكونة أو تعديلها أو إزالتها في نهج التسليم المتقدم، يجب أن تكون عضوا في مجموعة دور **مسؤول الأمان** في **مدخل Microsoft 365 Defender** وعضوا في مجموعة دور **إدارة المؤسسة** في **Exchange Online**.
@@ -146,9 +146,9 @@ ms.locfileid: "65647788"
 
 - **الإيجابيات الخاطئة قيد المراجعة**: قد ترغب في السماح مؤقتا لرسائل معينة لا تزال تقوم Microsoft بتحليلها عبر [عمليات إرسال المسؤول](admin-submission.md) للإبلاغ عن الرسائل الجيدة المعروفة التي يتم وضع علامة عليها بشكل غير صحيح على أنها سيئة ل Microsoft (إيجابيات خاطئة). وكما هو الحال مع جميع عمليات التجاوز، **_نوصي بشدة_** بأن تكون هذه البدلات مؤقتة.
 
-## <a name="security--compliance-center-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>إجراءات Security & Compliance Center PowerShell لعلب بريد SecOps في نهج التسليم المتقدم
+## <a name="security--compliance-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>إجراءات Security & Compliance PowerShell لعلب بريد SecOps في نهج التسليم المتقدم
 
-في Security & Compliance Center PowerShell، فإن العناصر الأساسية لعلب بريد SecOps في نهج التسليم المتقدم هي:
+في Security & Compliance PowerShell، فإن العناصر الأساسية لعلب بريد SecOps في نهج التسليم المتقدم هي:
 
 - **نهج تجاوز SecOps**: يتم التحكم فيه بواسطة **\*أوامر cmdlets -SecOpsOverridePolicy** .
 - **قاعدة التجاوز SecOps**: التي يتم التحكم فيها بواسطة **\*cmdlets -SecOpsOverrideRule** .
@@ -279,9 +279,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule).
 
-## <a name="security--compliance-center-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>إجراءات Security & Compliance Center PowerShell لمحاكاة التصيد الاحتيالي لجهات خارجية في نهج التسليم المتقدم
+## <a name="security--compliance-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>إجراءات الأمان & Compliance PowerShell لمحاكاة التصيد الاحتيالي لجهات خارجية في نهج التسليم المتقدم
 
-في Security & Compliance Center PowerShell، فإن العناصر الأساسية لمحاكاة التصيد الاحتيالي لجهة خارجية في نهج التسليم المتقدم هي:
+في Security & Compliance PowerShell، فإن العناصر الأساسية لمحاكاة التصيد الاحتيالي لجهة خارجية في نهج التسليم المتقدم هي:
 
 - نهج **تجاوز محاكاة التصيد الاحتيالي**: يتحكم به **\*الأمر -PhishSimOverridePolicy** cmdlets.
 - **قاعدة تجاوز محاكاة التصيد الاحتيالي**: يتم التحكم فيها بواسطة **\*-PhishSimOverrideRule** cmdlets.

@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: قد تحصل على أخطاء عند إعداد علب البريد المشتركة. جرب هذه الحلول إذا واجهت مشاكل في علب البريد المشتركة.
-ms.openlocfilehash: cf121504b53951e0aaaf248d43d045cfa937f4ed
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 08b5bbaa1ea952ee2b9bb6c626328fdb6b91d71c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437096"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008568"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>حل المشاكل المتعلقة لعلب البريد المشتركة
 
@@ -38,9 +38,9 @@ ms.locfileid: "65437096"
 
 إذا رأيت رسالة الخطأ، **فإن عنوان الوكيل "smtp:<اسم\> علبة البريد المشتركة" قيد الاستخدام بالفعل من قبل عناوين الوكيل أو LegacyExchangeDN ل "\<name>". الرجاء اختيار عنوان وكيل آخر**، فهذا يعني أنك تحاول إعطاء علبة البريد المشتركة اسما قيد الاستخدام بالفعل. على سبيل المثال، لنفترض أنك تريد علب البريد المشتركة المسماة info@domain1 info@domain2. هناك طريقتان للقيام بذلك:
 
-  - استخدم Windows PowerShell. راجع منشور المدونة هذا للحصول على إرشادات: [إنشاء علب بريد مشتركة بنفس الاسم المستعار في مجالات مختلفة](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
-    
-  - قم بتسمية علبة البريد المشتركة الثانية بشيء مختلف عن البداية للتغلب على الخطأ. ثم في مركز الإدارة، أعد تسمية علبة البريد المشتركة إلى ما تريد أن تكون عليه.
+- استخدم Exchange Online PowerShell. راجع منشور المدونة هذا للحصول على إرشادات: [إنشاء علب بريد مشتركة بنفس الاسم المستعار في مجالات مختلفة](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+
+- قم بتسمية علبة البريد المشتركة الثانية بشيء مختلف عن البداية للتغلب على الخطأ. ثم في مركز الإدارة، أعد تسمية علبة البريد المشتركة إلى ما تريد أن تكون عليه.
 
 ## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>خطأ في عدم وجود أذونات إرسال عند استخدام علبة بريد مشتركة
 

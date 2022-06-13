@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -17,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs)، تعرف على كيفية التسجيل للحصول على Microsoft 365 Lighthouse.
-ms.openlocfilehash: 8d845ed454a672b1480ca0b6fe6f471cc30a37a6
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5596005ff9a3db4e5a873a32f87b2677cdc8efaa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172190"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007119"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>التسجيل للحصول على Microsoft 365 Lighthouse
 
@@ -30,7 +31,7 @@ ms.locfileid: "65172190"
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-- يتم نشر Microsoft 365 Lighthouse في المستأجر الشريك ليس فقط&mdash; في مستأجري العملاء، ولكن تأكد من أنك أنت ومستأجرو العملاء يستوفون المتطلبات المدرجة في [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+- يتم نشر Microsoft 365 Lighthouse في المستأجر الشريك ليس فقط&mdash;في مستأجري العملاء، ولكن تأكد من أنك أنت ومستأجرو العملاء يستوفون المتطلبات المدرجة في [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
 - يجب أن تكون مسؤولا عاما في مستأجر الشريك الذي تقوم بتسجيل الدخول إليه.
 
@@ -38,7 +39,7 @@ ms.locfileid: "65172190"
 
 1. انتقل إلى مركز مسؤولي Microsoft 365 وسجل <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> الدخول باستخدام بيانات اعتماد مستأجر الشريك. 
 
-1. انتقل إلى **BillingPurchase** >  **ServicesOther** >  Services.
+1. انتقل إلى **خدمات** >  شراء **الفوترة** > **الأخرى**.
 
     إذا لم يكن Microsoft 365 Lighthouse في قائمة الخدمات، فحدد **"راجع جميع منتجات الخدمات الأخرى**".
 

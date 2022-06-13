@@ -1,5 +1,5 @@
 ---
-title: تعيين كلمة مرور مستخدم فردي حتى لا تنتهي صلاحيتها أبدا
+title: تعيين كلمة مرور مستخدم فردية على ألا تنتهي صلاحيتها أبدا
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,36 +22,35 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: سجل الدخول إلى حساب Microsoft 365 لتعيين بعض كلمات مرور المستخدم الفردية حتى لا تنتهي صلاحيتها أبدا باستخدام Windows PowerShell.
-ms.openlocfilehash: f0eff70b2b95c7e318f8a7e52777d4b684dbd8bf
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: سجل الدخول إلى حساب مسؤول Microsoft 365 لتعيين بعض كلمات مرور المستخدم الفردية لكي لا تنتهي صلاحيتها أبدا باستخدام Azure AD PowerShell.
+ms.openlocfilehash: a8357e3c72ea4bcd30234492b30e75eff8cb123a
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "63567084"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010179"
 ---
-# <a name="set-an-individual-users-password-to-never-expire"></a>تعيين كلمة مرور مستخدم فردي حتى لا تنتهي صلاحيتها أبدا
+# <a name="set-an-individual-users-password-to-never-expire"></a>تعيين كلمة مرور مستخدم فردية على ألا تنتهي صلاحيتها أبدا
 
-تشرح هذه المقالة كيفية تعيين كلمة مرور لمستخدم فردي لكي لا تنتهي صلاحيتها. يجب عليك إكمال هذه الخطوات باستخدام PowerShell.
+تشرح هذه المقالة كيفية تعيين كلمة مرور لمستخدم فردي حتى لا تنتهي صلاحيتها. يجب عليك إكمال هذه الخطوات باستخدام PowerShell.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-هذه المقالة للأشخاص الذين يحددون نهج انتهاء صلاحية كلمة المرور للأعمال أو المدرسة أو المؤسسات غير الربحية. لإكمال هذه الخطوات، تحتاج إلى تسجيل الدخول باستخدام حساب المسؤول Microsoft 365 الخاص بك. راجع [نظرة عامة على مركز مسؤولي Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide).
+هذه المقالة مخصصة للأشخاص الذين يقومون بتعيين نهج انتهاء صلاحية كلمة المرور للأعمال أو المؤسسة التعليمية أو المؤسسات غير الربحية. لإكمال هذه الخطوات، تحتاج إلى تسجيل الدخول باستخدام حساب مسؤول Microsoft 365. راجع [نظرة عامة على مركز مسؤولي Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview).
 
-يجب أن تكون مسؤولا [عاما أو مسؤول كلمة مرور](about-admin-roles.md) لتنفيذ هذه الخطوات.
+يجب أن تكون [مسؤولا عموميا أو مسؤول كلمة مرور](about-admin-roles.md) لتنفيذ هذه الخطوات.
 
-يمكن للمسؤول العام لخدمة سحابة Microsoft استخدام [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2) Graph لتعيين كلمات المرور التي لا تنتهي صلاحيتها لمستخدمين معينين. يمكنك أيضا استخدام [AzureAD](/powershell/module/Azuread) cmdlets لإزالة التكوين الذي لم تنتهي صلاحيته أبدا أو لمعرفة كلمات مرور المستخدمين التي تم تعيينها لكي لا تنتهي صلاحيتها أبدا.
+يمكن للمسؤول العام لخدمة سحابة Microsoft استخدام [Azure Active Directory PowerShell Graph](/powershell/azure/active-directory/install-adv2) لتعيين كلمات المرور التي لا تنتهي صلاحيتها لمستخدمين محددين. يمكنك أيضا استخدام [أوامر cmdlets AzureAD](/powershell/module/Azuread) لإزالة التكوين الذي لا تنتهي صلاحيته أبدا أو لمعرفة كلمات مرور المستخدم التي تم تعيينها على عدم انتهاء صلاحيتها أبدا.
 
-ينطبق هذا الدليل على موفرين آخرين، مثل Intune Microsoft 365، التي تعتمد أيضا على Azure AD لخدمات الهوية والدليل. انتهاء صلاحية كلمة المرور هو الجزء الوحيد من النهج الذي يمكن تغييره.
-
+ينطبق هذا الدليل على موفرين آخرين، مثل Intune و Microsoft 365، الذين يعتمدون أيضا على Azure AD لخدمات الهوية والدليل. انتهاء صلاحية كلمة المرور هو الجزء الوحيد من النهج الذي يمكن تغييره.
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>كيفية التحقق من نهج انتهاء الصلاحية لكلمة مرور
 
-لمزيد من المعلومات حول Get-AzureADUser في وحدة AzureAD النمطية، راجع المقالة المرجعية [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser).
+لمزيد من المعلومات حول الأمر Get-AzureADUser في الوحدة النمطية AzureAD، راجع المقالة المرجعية [Get-AzureADUser](/powershell/module/Azuread/Get-AzureADUser).
 
 تشغيل أحد الأوامر التالية:
 
-- لمعرفة ما إذا تم تعيين كلمة مرور مستخدم واحد على عدم انتهاء صلاحيتها مطلقا، قم بتشغيل الأمر cmdlet التالي باستخدام UPN (على سبيل المثال *، user@contoso.onmicrosoft.com*) أو اسم المستخدم للمستخدم الذي تريد التحقق من:
+- لمعرفة ما إذا تم تعيين كلمة مرور مستخدم واحد إلى عدم انتهاء صلاحيتها، قم بتشغيل cmdlet التالي باستخدام UPN (على سبيل المثال، *user@contoso.onmicrosoft.com*) أو معرف المستخدم للمستخدم الذي تريد التحقق منه:
 
     ```powershell
     Get-AzureADUser -ObjectId <user id or UPN> | Select-Object UserprincipalName,@{
@@ -67,7 +66,7 @@ ms.locfileid: "63567084"
     }
     ```
 
-- لرؤية إعداد **كلمة المرور لا تنتهي صلاحيته** لجميع المستخدمين، يمكنك تشغيل cmdlet التالي:
+- لمشاهدة إعداد **كلمة المرور التي لا تنتهي صلاحيتها لجميع** المستخدمين، قم بتشغيل cmdlet التالي:
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -75,7 +74,7 @@ ms.locfileid: "63567084"
      }
     ```
 
-- للحصول على تقرير حول جميع المستخدمين الذين لديهم PasswordNeverExpires في Html على سطح المكتب الخاص بالمستخدم الحالي  **باستخدام اسمReportPasswordNeverExpires.html**
+- للحصول على تقرير لكافة المستخدمين الذين لديهم PasswordNeverExpires في Html على سطح المكتب للمستخدم الحالي الذي يحمل الاسم  **ReportPasswordNeverExpires.html**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -83,7 +82,7 @@ ms.locfileid: "63567084"
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```
 
-- للحصول على تقرير حول جميع المستخدمين الذين لديهم PasswordNeverExpires في CSV على سطح المكتب الخاص بالمستخدم الحالي **باستخدام اسمReportPasswordNeverExpires.csv**
+- للحصول على تقرير لكافة المستخدمين الذين لديهم PasswordNeverExpires في CSV على سطح المكتب للمستخدم الحالي الذي يحمل الاسم **ReportPasswordNeverExpires.csv**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -100,33 +99,33 @@ Run one of the following commands:
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies DisablePasswordExpiration
     ```
 
-- لتعيين كلمات مرور جميع المستخدمين في المؤسسة لكي لا تنتهي صلاحيتها أبدا، قم بتشغيل cmdlet التالي:
+- لتعيين كلمات المرور لجميع المستخدمين في المؤسسة على ألا تنتهي صلاحيتها أبدا، قم بتشغيل cmdlet التالي:
 
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
 > [!WARNING]
-> حسابات المستخدمين التي تم تكوينها مع المعلمة `-PasswordPolicies DisablePasswordExpiration` التي لا تزال العمر استنادا إلى السمة `pwdLastSet` . استنادا إلى `pwdLastSet` `-PasswordPolicies None`السمة، إذا قمت بتغيير انتهاء الصلاحية إلى ، فإن كل كلمات المرور التي لها pwdLastSet الأقدم من 90 يوما تتطلب من المستخدم تغييرها في المرة التالية التي يقوم فيها تسجيل الدخول. يمكن أن يؤثر هذا التغيير على عدد كبير من المستخدمين.
+> لا تزال حسابات المستخدمين التي تم تكوينها مع المعلمة `-PasswordPolicies DisablePasswordExpiration` في العمر استنادا إلى السمة `pwdLastSet` . استنادا إلى السمة `pwdLastSet` ، إذا قمت بتغيير انتهاء الصلاحية إلى `-PasswordPolicies None`، تتطلب جميع كلمات المرور التي تحتوي على pwdLastSet أقدم من 90 يوما من المستخدم تغييرها في المرة التالية التي يسجل فيها الدخول. يمكن أن يؤثر هذا التغيير على عدد كبير من المستخدمين.
 
-### <a name="set-a-password-to-expire"></a>تعيين كلمة مرور لكي تنتهي صلاحيتها
+### <a name="set-a-password-to-expire"></a>تعيين كلمة مرور لتنتهي صلاحيتها
 
 تشغيل أحد الأوامر التالية:
 
-- لتعيين كلمة المرور الخاصة بمستخدم واحد بحيث تنتهي صلاحية كلمة المرور، قم بتشغيل الأمر cmdlet التالي باستخدام UPN أو اسم المستخدم للمستخدم:
+- لتعيين كلمة مرور مستخدم واحد بحيث تنتهي صلاحية كلمة المرور، قم بتشغيل cmdlet التالي باستخدام UPN أو معرف المستخدم للمستخدم:
 
     ```powershell
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies None
     ```
 
-- لتعيين كلمات مرور جميع المستخدمين في المؤسسة بحيث تنتهي صلاحيتها، استخدم الأمر cmdlet التالي:
+- لتعيين كلمات المرور لكافة المستخدمين في المؤسسة بحيث تنتهي صلاحيتها، استخدم cmdlet التالي:
 
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
 
-## <a name="related-content"></a>المحتوى ذي الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
-[السماح للمستخدمين بإعادة تعيين كلمات المرور الخاصة بهم](../add-users/let-users-reset-passwords.md) (مقالة)\
+[السماح للمستخدمين بإعادة تعيين كلمات المرور الخاصة بهم](../add-users/let-users-reset-passwords.md) (المقالة)\
 [إعادة تعيين كلمات المرور](../add-users/reset-passwords.md) (مقالة)\
-[تعيين نهج انتهاء صلاحية كلمة المرور لمنظمتك](../manage/set-password-expiration-policy.md) (مقالة)
+[تعيين نهج انتهاء صلاحية كلمة المرور لمؤسستك](../manage/set-password-expiration-policy.md) (مقالة)
