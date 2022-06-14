@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 تخطيط موارد المؤسسة - بنية الأمان
+title: للهوية وما بعدها - وجهة نظر مهندس معماري واحد
 description: تعرف على أفضل استراتيجيات التصميم لتصميم Microsoft Enterprise من أليكس Shteynberg، المهندس المعماري الأساسي التقني في Microsoft.
 ms.author: bcarter
 author: brendacarter
@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: ff8fdb34cc69f108b57468d71342a3b1dfb39302
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 065e9a124deb7c064b31666d96a11f076d65abdd
+ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015071"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66060950"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>للهوية وما بعدها - وجهة نظر مهندس معماري واحد
 

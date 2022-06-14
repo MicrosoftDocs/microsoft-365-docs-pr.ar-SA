@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إدارة الأذونات والكتل في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a25d1b7ad11c57bc63035086d9a043bcac504c16
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: ea60746554c9ad52c3e8b6d23989b2b7659cd0ad
+ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057594"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66060927"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>إدارة قائمة السماح/الحظر للمستأجر
 
@@ -73,14 +73,16 @@ ms.locfileid: "66057594"
 
 - للاتصال Exchange Online PowerShell، راجع [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell مستقل، راجع [الاتصال إلى Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- يجب تعيين أذونات لك في Exchange Online قبل أن تتمكن من تنفيذ الإجراءات الواردة في هذه المقالة:
-    - لإضافة قيم وإزالتها من قائمة السماح/الحظر للمستأجر، يجب أن تكون عضوا في
-      - **إدارة المؤسسة** أو مجموعة دور **مسؤول الأمان** (**دور مسؤول الأمان**)
-      - مجموعة دور **عامل تشغيل الأمان** (**Tenant AllowBlockList Manager**).
-    - للوصول للقراءة فقط إلى قائمة السماح/الحظر للمستأجر، يجب أن تكون عضوا في
-      - مجموعة دور **القارئ العمومي**
-      - مجموعة دور **قارئ الأمان**
-      - مجموعة دور **تكوين العرض فقط**.
+- يجب تعيين أذونات لك في **Exchange Online** قبل أن تتمكن من تنفيذ الإجراءات الواردة في هذه المقالة:
+  - لإضافة إدخالات وإزالتها من قائمة السماح/الحظر للمستأجر، يجب أن تكون عضوا في إحدى مجموعات الأدوار التالية:
+    - **إدارة المؤسسة** (دور **مسؤول الأمان** ).
+    - **مسؤول الأمان** (دور **مسؤول الأمان** ).
+    - **عامل تشغيل الأمان** (دور **Tenant AllowBlockList Manager** ).
+
+  - للوصول للقراءة فقط إلى قائمة السماح/الحظر للمستأجر، يجب أن تكون عضوا في إحدى مجموعات الأدوار التالية:
+    - مجموعة دور **القارئ العمومي**.
+    - مجموعة دور **قارئ الأمان**.
+    - مجموعة دور **تكوين العرض فقط**.
 
   لمزيد من المعلومات، راجع [الأذونات في Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -482,7 +484,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 - **البنية الأساسية**: tms.mx.com
 
 يسمح فقط للرسائل الواردة من هذا المجال *وإرسال* زوج البنية الأساسية بالانتحال. لا يسمح للمرسلين الآخرين الذين يحاولون تزييف gmail.com. يتم التحقق من الرسائل الواردة من المرسلين في مجالات أخرى تنشأ من tms.mx.com بواسطة التحليل الذكي للانتحال.
-
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>ما يجب توقعه بعد إضافة إدخال السماح أو الحظر
 
