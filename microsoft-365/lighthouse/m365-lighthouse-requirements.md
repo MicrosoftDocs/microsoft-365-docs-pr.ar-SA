@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs)، احصل على قائمة بالمتطلبات لاستخدام Microsoft 365 Lighthouse.
-ms.openlocfilehash: 4dae28206ba06b8e942290da29ba6a86b49ca7fd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 27d5440b70916ebdb3b761ac4308d3b97ccb27da
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017533"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057762"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>متطلبات Microsoft 365 Lighthouse
 
@@ -34,7 +34,7 @@ Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخد
 
 - يجب أن يكون قد تم إعداد الوصول المفوض لموفر الخدمة المدارة (MSP) لكي يتمكن من إدارة مستأجر العميل*
 - يجب أن يحتوي على Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft 365 E5 أو Windows 365 Business أو Microsoft Defender for Business واحد على الأقل الترخيص
-- يجب ألا يكون لديك أكثر من 1000 مستخدم مرخص
+- يجب ألا يكون لديك أكثر من 2500 مستخدم مرخص
 
 مطلوب إما امتيازات المسؤول المفوض متعدد المستويات (GDAP) بالإضافة إلى علاقة موزع غير مباشرة أو علاقة امتيازات المسؤول المفوض (DAP) لإلحاق العملاء إلى Lighthouse. إذا كان DAP وGDAP موجودين في مستأجر عميل، فإن أذونات GDAP لها الأسبقية لفنيي MSP في مجموعات الأمان الممكنة بواسطة GDAP. قريبا، سيتمكن العملاء الذين تربطهم علاقات GDAP فقط (دون علاقات موزعين غير مباشرة) من إلحاق Lighthouse.
 

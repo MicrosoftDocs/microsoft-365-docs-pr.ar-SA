@@ -17,16 +17,16 @@ ms.custom: seo-marvel-apr2020
 description: يمكن للمسؤولين معرفة كيفية استخدام مدخل عمليات الإرسال في مدخل Microsoft 365 Defender لإرسال رسائل البريد الإلكتروني المشبوهة ورسائل التصيد الاحتيالي المشتبه بها والبريد العشوائي والرسائل الأخرى التي يحتمل أن تكون ضارة وعناوين URL ومرفقات البريد الإلكتروني إلى Microsoft لإعادة اكتشافها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8e9faf6114551725dc1fc3b8b6af173bbe1e21b4
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 09c0e80c8e8632c088aa42af558c90cbf0f0fc71
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417941"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057618"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>استخدم مدخل عمليات الإرسال لإرسال البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -180,7 +180,7 @@ ms.locfileid: "65417941"
      عند الانتهاء، انقر فوق **"تطبيق**".
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="خيارات العمود &quot;تخصيص جديد&quot; الخاصة بإرسالات المسؤول" lightbox="../../media/admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="خيارات العمود &quot;تخصيص جديد&quot; الخاصة بإرسالات المسؤول" lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - لتصفية الإدخالات، انقر فوق **"تصفية**". عوامل التصفية المتوفرة هي:
      - **التاريخ المرسل**: **تاريخ البدء** **وتاريخ الانتهاء**.
@@ -197,7 +197,7 @@ ms.locfileid: "65417941"
      عند الانتهاء، انقر فوق **"تطبيق**".
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="خيارات &quot;تصفية جديدة&quot; الخاصة بإرسالات المسؤول" lightbox="../../media/admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="خيارات &quot;تصفية جديدة&quot; الخاصة بإرسالات المسؤول" lightbox="../../media/email-admin-submission-filters.png":::
 
    - لتجميع الإدخالات، انقر فوق **"تجميع"** وحدد إحدى القيم التالية من القائمة المنسدلة:
      - **None**
@@ -287,7 +287,7 @@ ms.locfileid: "65417941"
 
 بمجرد أن يرسل المستخدم بريدا إلكترونيا مريبا إلى علبة البريد المخصصة، لن يكون لدى المستخدم والمسؤول خيار التراجع عن الإرسال. إذا كان المستخدم يرغب في استرداد البريد الإلكتروني، فسيكون متوفرا للاسترداد في مجلدات "العناصر المحذوفة" أو "البريد الإلكتروني غير الهام".
 
-### <a name="converting-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>تحويل رسائل قام المستخدم بالإبلاغ عنها من علبة البريد المخصصة إلى إرسال مسؤول
+### <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>تحويل الرسائل التي أبلغ عنها المستخدم من علبة البريد المخصصة إلى إرسال مسؤول
 
 إذا قمت بتكوين علبة البريد المخصصة لاعتراض الرسائل التي أبلغ عنها المستخدم دون إرسال الرسائل إلى Microsoft، يمكنك العثور على رسائل معينة وإرسالها إلى Microsoft للتحليل.
 

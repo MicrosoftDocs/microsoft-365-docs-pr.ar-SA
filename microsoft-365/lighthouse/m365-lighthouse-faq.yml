@@ -18,12 +18,12 @@ metadata:
   - M365-Lighthouse
   search.appverid: MET150
   description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، احصل على إجابات للأسئلة المتداولة (الأسئلة المتداولة) حول Microsoft 365 Lighthouse.
-  ms.openlocfilehash: a980a6fe8376c71470331ff3efc1d5b1f08acb33
-  ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+  ms.openlocfilehash: e028caa04dc19e131e0fe09ddb037bd20f027138
+  ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 06/10/2022
-  ms.locfileid: "66016757"
+  ms.lasthandoff: 06/13/2022
+  ms.locfileid: "66057796"
 title: الأسئلة المتداولة حول Microsoft 365 Lighthouse (الأسئلة المتداولة)
 summary: >
   تحتوي هذه المقالة على إجابات للأسئلة المتداولة (الأسئلة المتداولة) حول Microsoft 365 Lighthouse.
@@ -58,7 +58,7 @@ sections:
     answer: >
       قد يستغرق تحميل بيانات مستأجر العميل داخل Lighthouse ما يصل إلى 48 ساعة. إذا مر أكثر من 48 ساعة على إكمال الإلحاق، فتواصل مع فريق الدعم للحصول على المساعدة. ستحتاج إلى إعلامهم عند الانتهاء من الإلحاق وتوفير أي لقطات شاشة وسجلات ذات صلة. لمزيد من المعلومات، راجع [الحصول على التعليمات والدعم Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
   - question: لماذا أرى بيانات لبعض مستأجري العملاء ولكن ليس للآخرين؟
-    answer: "لكي تظهر بيانات مستأجر العميل في Lighthouse، يجب على MSPs إنشاء وصول مفوض لإدارة مستأجر العميل. مطلوب إما امتيازات المسؤول المفوض متعدد المستويات (GDAP) بالإضافة إلى علاقة موزع غير مباشرة أو علاقة امتيازات المسؤول المفوض (DAP) لإلحاق العملاء إلى Lighthouse. نوصي بإنشاء GDAP مع عملائك لتمكين الوصول المفوض بشكل أكثر أمانا. إذا كان DAP وGDAP موجودين في مستأجر عميل، فإن أذونات GDAP لها الأسبقية لفنيي MSP في مجموعات الأمان الممكنة بواسطة GDAP. قريبا، سيتمكن العملاء الذين تربطهم علاقات GDAP فقط (دون علاقات موزعين غير مباشرة) من إلحاق Lighthouse. لمزيد من المعلومات حول الوصول المفوض، راجع [طلب علاقة موزع مع عميل في مركز الشركاء](/partner-center/request-a-relationship-with-a-customer). يجب أن يكون للمستأجرين أيضا Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft 365 E5 أو Windows 365 Business أو Microsoft Defender for Business  لا يوجد أكثر من 1000 مستخدم مرخص في المستأجر. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) [ونظرة عامة على صفحة المستأجرين في Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).\n\nإذا تم إنشاء GDAP مع العميل، يجب أن يكون فني MSP في مجموعة أمان ممكنة بواسطة GDAP يتم تعيين الأدوار المناسبة لها لتكون قادرة على إدارة بيانات هذا العميل في Lighthouse. تؤثر أدوار GDAP المعينة لمجموعة الأمان هذه على بيانات العملاء التي يمكن إدارتها داخل Lighthouse. راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) للحصول على تفاصيل حول أدوار المستأجرين المفوضين والشركاء المستحسنة لاستخدام Lighthouse. للحصول على إرشادات حول كيفية عرض أدوار GDAP التي تم تعيينها لك لمستأجري العملاء المختلفين في Lighthouse، راجع [عرض أدوار Azure Active Directory في Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).   \n"
+    answer: "لكي تظهر بيانات مستأجر العميل في Lighthouse، يجب على MSPs إنشاء وصول مفوض لإدارة مستأجر العميل. مطلوب إما امتيازات المسؤول المفوض متعدد المستويات (GDAP) بالإضافة إلى علاقة موزع غير مباشرة أو علاقة امتيازات المسؤول المفوض (DAP) لإلحاق العملاء إلى Lighthouse. نوصي بإنشاء GDAP مع عملائك لتمكين الوصول المفوض بشكل أكثر أمانا. إذا كان DAP وGDAP موجودين في مستأجر عميل، فإن أذونات GDAP لها الأسبقية لفنيي MSP في مجموعات الأمان الممكنة بواسطة GDAP. قريبا، سيتمكن العملاء الذين تربطهم علاقات GDAP فقط (دون علاقات موزعين غير مباشرة) من إلحاق Lighthouse. لمزيد من المعلومات حول الوصول المفوض، راجع [طلب علاقة موزع مع عميل في مركز الشركاء](/partner-center/request-a-relationship-with-a-customer). يجب أن يكون للمستأجرين أيضا Microsoft 365 Business Premium أو Microsoft 365 E3 أو Microsoft 365 E5 أو Windows 365 Business أو Microsoft Defender for Business  ولا يزيد عدد المستخدمين المرخص لهم في المستأجر عن 2500 مستخدم. لمزيد من المعلومات، راجع [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) [ونظرة عامة على صفحة المستأجرين في Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).\n\nإذا تم إنشاء GDAP مع العميل، يجب أن يكون فني MSP في مجموعة أمان ممكنة بواسطة GDAP يتم تعيين الأدوار المناسبة لها لتكون قادرة على إدارة بيانات هذا العميل في Lighthouse. تؤثر أدوار GDAP المعينة لمجموعة الأمان هذه على بيانات العملاء التي يمكن إدارتها داخل Lighthouse. راجع [نظرة عامة على الأذونات في Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) للحصول على تفاصيل حول أدوار المستأجرين المفوضين والشركاء المستحسنة لاستخدام Lighthouse. للحصول على إرشادات حول كيفية عرض أدوار GDAP التي تم تعيينها لك لمستأجري العملاء المختلفين في Lighthouse، راجع [عرض أدوار Azure Active Directory في Microsoft 365 Lighthouse](m365-lighthouse-view-your-roles.md).   \n"
   - question: ماذا لو كنت لا أريد رؤية مستأجرين معينين في Microsoft 365 Lighthouse؟
     answer: >
       إذا كنت لا تريد رؤية مستأجرين معينين وبياناتهم في Lighthouse، يمكنك تعطيل هؤلاء المستأجرين. لإلغاء تنشيط مستأجر، اتبع الخطوات التالية:
