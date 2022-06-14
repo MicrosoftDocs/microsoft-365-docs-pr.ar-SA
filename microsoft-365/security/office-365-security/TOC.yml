@@ -170,8 +170,6 @@
               href: use-arc-exceptions-to-mark-trusted-arc-senders.md
         - name: تدفق البريد في EOP
           href: mail-flow-in-eop.md
-        - name: نهج عمليات إرسال المستخدم
-          href: user-submission.md
         - name: إضافة دعم للبريد الإلكتروني الوارد المجهول عبر IPv6
           href: support-for-anonymous-inbound-email-messages-over-ipv6.md
         - name: تثبيت حماية التطبيقات لـ Office
@@ -328,6 +326,8 @@
               href: enable-the-report-message-add-in.md
             - name: الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة في Outlook
               href: report-false-positives-and-false-negatives.md
+            - name: إعدادات الرسائل التي أبلغ عنها المستخدم
+              href: user-submission.md
             - name: استخدام قواعد تدفق البريد لمعرفة المستخدمين الذين يبلغون إلى Microsoft
               href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
             - name: إرسال البرامج الضارة وغير الضارة إلى Microsoft

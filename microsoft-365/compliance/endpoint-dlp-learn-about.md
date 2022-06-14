@@ -19,20 +19,20 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'يؤدي منع فقدان بيانات نقطة النهاية إلى توسيع مراقبة أنشطة الملفات وإجراءات الحماية لتلك الملفات إلى نقاط النهاية. يتم عرض الملفات في حلول التوافق '
-ms.openlocfilehash: 76649559b1110c02f29584afdfb7e48f57a41f1e
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 54f2605e815c98242a66b4d2be844ee59a2699e8
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023360"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078821"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>التعرّف على تفادي فقدان بيانات نقطة النهاية
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-يمكنك استخدام Microsoft Purview Data Loss Prevention (DLP) لمراقبة الإجراءات التي يتم اتخاذها على العناصر التي حددت أنها حساسة وللمساعدة على منع المشاركة غير المقصودة لتلك العناصر. لمزيد من المعلومات حول DLP، راجع [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md).
+يمكنك استخدام تفادي فقدان البيانات في Microsoft Purview (DLP) لمراقبة الإجراءات التي يتم اتخاذها على العناصر التي حددت أنها حساسة وللمساعدة على منع المشاركة غير المقصودة لتلك العناصر. لمزيد من المعلومات حول DLP، راجع [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md).
 
-تعمل **ميزة منع فقدان بيانات نقطة النهاية** (Endpoint DLP) على توسيع قدرات مراقبة النشاط وحمايته ل DLP لتشمل العناصر الحساسة المخزنة فعليا على أجهزة Windows 10 Windows 11 وmacOS (Catalina 10.15 وغيرها). بمجرد إلحاق الأجهزة في حلول Microsoft Purview، تصبح المعلومات حول ما يفعله المستخدمون بالعناصر الحساسة مرئية في [مستكشف النشاط](data-classification-activity-explorer.md) ويمكنك فرض إجراءات الحماية على تلك العناصر عبر [نهج DLP](create-test-tune-dlp-policy.md).
+تعمل **ميزة منع فقدان بيانات نقطة النهاية** (Endpoint DLP) على توسيع قدرات مراقبة النشاط وحمايته ل DLP إلى العناصر الحساسة المخزنة فعليا على أجهزة Windows 10 Windows 11 macOS (Catalina 10.15 والإكبر). بمجرد إلحاق الأجهزة بحلول Microsoft Purview، تصبح المعلومات حول ما يفعله المستخدمون بالعناصر الحساسة مرئية في [مستكشف النشاط](data-classification-activity-explorer.md) ويمكنك فرض إجراءات الحماية على تلك العناصر عبر [نهج DLP](create-test-tune-dlp-policy.md).
 
 > [!TIP]
 > إذا كنت تبحث عن عنصر تحكم الجهاز للتخزين القابل للإزالة، فراجع [Microsoft Defender لنقطة النهاية التحكم في الوصول إلى التخزين القابل للإزالة لعنصر تحكم الجهاز](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
@@ -53,8 +53,8 @@ ms.locfileid: "65023360"
 |طباعة مستند    |الكشف عن الوقت الذي يحاول فيه المستخدم طباعة عنصر محمي إلى طابعة محلية أو طابعة شبكة.|دعم|دعم|قابل للتدقيق وقابل للتقييد         |
 |نسخ إلى جلسة عمل بعيدة|الكشف عن الوقت الذي يحاول فيه مستخدم نسخ عنصر إلى جلسة عمل سطح مكتب بعيد |دعم|غير معتمد|  قابل للتدقيق وقابل للتقييد|
 |نسخ إلى جهاز Bluetooth|الكشف عن الوقت الذي يحاول فيه مستخدم نسخ عنصر إلى تطبيق Bluetooth غير مسموح به (كما هو محدد في قائمة Bluetooth aps غير مسموح بها في إعدادات DLP لنقطة النهاية).|دعم|غير معتمد| قابل للتدقيق وقابل للتقييد|
-|إنشاء عنصر|الكشف عن وقت قيام مستخدم بإنشاء عنصر|دعم | |القابله|
-|إعادة تسمية عنصر|الكشف عن وقت قيام مستخدم بإعادة تسمية عنصر|دعم | |القابله|
+|إنشاء عنصر|الكشف عن وقت قيام مستخدم بإنشاء عنصر|دعم |دعم |القابله|
+|إعادة تسمية عنصر|الكشف عن وقت قيام مستخدم بإعادة تسمية عنصر|دعم |دعم |القابله|
 
 ## <a name="best-practice-for-endpoint-dlp-policies"></a>أفضل الممارسات لنهج DLP لنقطة النهاية
 
@@ -204,7 +204,7 @@ ms.locfileid: "65023360"
 الآن بعد أن تعرفت على DLP لنقطة النهاية، فإن خطواتك التالية هي:
 
 1. [إلحاق الأجهزة Windows 10 أو Windows 11 في نظرة عامة على Microsoft Purview](device-onboarding-overview.md)
-1. [إلحاق أجهزة macOS في نظرة عامة على Microsoft Purview](device-onboarding-macos-overview.md)
+1. [إلحاق الأجهزة macOS في نظرة عامة على Microsoft Purview](device-onboarding-macos-overview.md)
 1. [تكوين إعدادات تفادي فقدان البيانات في نقطة النهاية](dlp-configure-endpoint-settings.md)
 1. [استخدام تفادي فقدان البيانات في نقطة النهاية](endpoint-dlp-using.md)
 

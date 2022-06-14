@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: معلومات لمسؤولي تكنولوجيا المعلومات لإدارة تسميات الحساسية في تطبيقات Office لسطح المكتب والأجهزة المحمولة والويب.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff0a64ed04aecff83634172ecf57263482f90dc6
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 21420958d063969a588a4413ba5ee4629e2eb027
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014163"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078404"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>إدارة تسميات الحساسية في تطبيقات Office
 
@@ -29,7 +29,7 @@ ms.locfileid: "66014163"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-عند [نشر](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) تسميات الحساسية من مدخل توافق Microsoft Purview، تبدأ في الظهور في تطبيقات Office للمستخدمين لتصنيف البيانات وحمايتها عند إنشائها أو تحريرها.
+عند [نشر](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) أوصاف الحساسية من مدخل التوافق في Microsoft Purview، تبدأ في الظهور في تطبيقات Office للمستخدمين لتصنيف البيانات وحمايتها عند إنشائها أو تحريرها.
 
 استخدم المعلومات الواردة في هذه المقالة لمساعدتك على إدارة تسميات الحساسية بنجاح في تطبيقات Office. على سبيل المثال، حدد الحد الأدنى من إصدارات التطبيقات التي تحتاجها للميزات الخاصة بالتسمية المضمنة، وأي معلومات تكوين إضافية لهذه الميزات، وفهم التفاعلات مع عميل التسمية الموحدة في Azure حماية البيانات والتطبيقات والخدمات الأخرى.
 
@@ -45,7 +45,7 @@ ms.locfileid: "66014163"
 
 يتم توفير إصدارات جديدة من تطبيقات Office في أوقات مختلفة لقنوات التحديث المختلفة. للحصول على Windows، ستحصل على القدرات الجديدة في وقت سابق عندما تكون على خيار التحديث الحالي أو خيار التحديث الشهري للمؤسسة، بدلا من Semi-Annual قناة المؤسسة. يمكن أن يختلف الحد الأدنى لأرقام الإصدارات أيضا من قناة تحديث إلى أخرى. لمزيد من المعلومات، راجع [نظرة عامة على قنوات التحديث لمحفوظات Microsoft 365 Apps](/deployoffice/overview-update-channels) [والتحديث Microsoft 365 Apps](/officeupdates/update-history-microsoft365-apps-by-date).
 
-لا يتم تضمين القدرات الجديدة الموجودة في المعاينة الخاصة في الجدول ولكن قد تتمكن من الانضمام إلى هذه المعاينات عن طريق تسمية مؤسستك [لبرنامج المعاينة الخاصة ل Microsoft حماية البيانات](https://aka.ms/mip-preview).
+لا يتم تضمين القدرات الجديدة الموجودة في المعاينة الخاصة في الجدول ولكن قد تتمكن من الانضمام إلى هذه المعاينات عن طريق تسمية مؤسستك [لبرنامج المعاينة الخاصة حماية البيانات في Microsoft](https://aka.ms/mip-preview).
 
 Office لنظامي التشغيل iOS و Office for Android: يتم تضمين تسميات الحساسية في [تطبيق Office](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
@@ -121,9 +121,9 @@ Office لنظامي التشغيل iOS و Office for Android: يتم تضمين 
 
 ## <a name="if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows"></a>إذا كنت بحاجة إلى إيقاف تشغيل التسمية المضمنة في تطبيقات Office على Windows
 
-يقوم عميل التسمية المضمن Office بتنزيل أوصاف الحساسية وإعدادات نهج وصف الحساسية من مدخل توافق Microsoft Purview.
+يقوم عميل الوصف المضمن Office بتنزيل أوصاف الحساسية وإعدادات نهج وصف الحساسية من مدخل التوافق في Microsoft Purview.
 
-لاستخدام عميل التسمية المضمن Office، يجب أن يكون لديك [نهج تسمية](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) واحد أو أكثر منشور للمستخدمين من مدخل توافق Microsoft Purview وإصدار [معتمد من Office](#support-for-sensitivity-label-capabilities-in-apps).
+لاستخدام عميل التسمية المضمن Office، يجب أن يكون لديك [نهج تسمية](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) واحد أو أكثر منشور للمستخدمين من مدخل التوافق في Microsoft Purview وإصدار [معتمد من Office](#support-for-sensitivity-label-capabilities-in-apps).
 
 إذا تم استيفاء هذين الشرطين ولكنك تحتاج إلى إيقاف تشغيل التسميات المضمنة في تطبيقات Windows Office، فاستخدم إعداد نهج المجموعة التالي:
 
@@ -389,20 +389,20 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 عندما يدعم تطبيق Outlook إعداد تسمية افتراضيا يختلف عن إعداد التسمية الافتراضي للمستندات:
 
-- في تكوين نهج التسمية من مدخل توافق Microsoft Purview، في صفحة **تطبيق تسمية افتراضية على رسائل البريد الإلكتروني** : يمكنك تحديد اختيارك لتسمية الحساسية التي سيتم تطبيقها على جميع رسائل البريد الإلكتروني غير المسماة، أو بدون تسمية افتراضية. هذا الإعداد مستقل عن **تطبيق هذه التسمية بشكل افتراضي على إعداد المستندات** في **إعدادات النهج السابقة لصفحة المستندات** الخاصة بالتكوين.
+- في تكوين نهج التسمية من مدخل التوافق في Microsoft Purview، في صفحة **تطبيق تسمية افتراضية على رسائل البريد الإلكتروني**: يمكنك تحديد اختيارك لتسمية الحساسية التي سيتم تطبيقها على جميع رسائل البريد الإلكتروني غير المسماة، أو بدون تسمية افتراضية. هذا الإعداد مستقل عن **تطبيق هذه التسمية بشكل افتراضي على إعداد المستندات** في **إعدادات النهج السابقة لصفحة المستندات** الخاصة بالتكوين.
 
 عندما لا يدعم تطبيق Outlook إعداد تسمية افتراضيا يختلف عن إعداد التسمية الافتراضي للمستندات: سيستخدم Outlook دائما القيمة التي **تحددها لتطبيق هذه التسمية بشكل افتراضي على المستندات** الموجودة في **إعدادات النهج لصفحة المستندات** لتكوين نهج التسمية.
 
 عندما يدعم تطبيق Outlook إيقاف تشغيل التسمية الإلزامية:
 
-- في تكوين نهج التسمية من مدخل توافق Microsoft Purview، في صفحة **إعدادات النهج** : حدد **"مطالبة المستخدمين بتطبيق تسمية على بريدهم الإلكتروني أو مستنداتهم**". ثم حدد **"التالي** > **"** وقم بإلغاء تحديد خانة الاختيار " **مطالبة المستخدمين بتطبيق تسمية على رسائل البريد الإلكتروني الخاصة بهم**". احتفظ بتحديد خانة الاختيار إذا كنت تريد تطبيق التسمية الإلزامية على رسائل البريد الإلكتروني وكذلك على المستندات.
+- في تكوين نهج التسمية من مدخل التوافق في Microsoft Purview، في صفحة **إعدادات النهج**: حدد **"مطالبة المستخدمين بتطبيق تسمية على بريدهم الإلكتروني أو مستنداتهم**". ثم حدد **"التالي** > **"** وقم بإلغاء تحديد خانة الاختيار " **مطالبة المستخدمين بتطبيق تسمية على رسائل البريد الإلكتروني الخاصة بهم**". احتفظ بتحديد خانة الاختيار إذا كنت تريد تطبيق التسمية الإلزامية على رسائل البريد الإلكتروني وكذلك على المستندات.
 
 عندما لا يدعم تطبيق Outlook إيقاف تشغيل التسمية الإلزامية: إذا حددت **"مطالبة المستخدمين بتطبيق تسمية على بريدهم الإلكتروني أو مستنداتهم** كإعداد نهج"، فسيطالب Outlook المستخدمين دائما بتحديد تسمية لرسائل البريد الإلكتروني غير المسماة.
 
 > [!NOTE]
 > إذا قمت بتكوين إعدادات PowerShell المتقدمة **OutlookDefaultLabel** و **DisableMandatoryInOutlook** باستخدام [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) أو [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) cmdlets:
 > 
-> تنعكس القيم التي اخترتها لإعدادات PowerShell هذه في تكوين نهج التسمية في مدخل توافق Microsoft Purview، وتعمل تلقائيا لتطبيقات Outlook التي تدعم هذه الإعدادات. تظل إعدادات PowerShell المتقدمة الأخرى مدعومة لعميل التسمية الموحدة ل Azure حماية البيانات فقط.
+> تنعكس القيم التي اخترتها لإعدادات PowerShell هذه في تكوين نهج التسمية في مدخل التوافق في Microsoft Purview، وتعمل تلقائيا لتطبيقات Outlook التي تدعم هذه الإعدادات. تظل إعدادات PowerShell المتقدمة الأخرى مدعومة لعميل التسمية الموحدة ل Azure حماية البيانات فقط.
 
 ## <a name="pdf-support"></a>دعم PDF
 
@@ -414,8 +414,9 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 - ملف > تصدير > PDF
 - مشاركة > إرسال نسخة > PDF
 
-عند إنشاء ملف PDF، فإنه يرث التسمية مع أي علامات محتوى وتشفير. يمكن فتح ملفات PDF المشفرة باستخدام Microsoft Edge على Windows أو Mac. لمزيد من المعلومات، والقراء البديلين، راجع [ما هي برامج قراءة PDF المعتمدة لملفات PDF المحمية؟](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+يتم تسجيل هذا الإجراء باستخدام حدث تدقيق **الملفات المعاد تسميته** من مجموعة تدقيق [أنشطة الملف والصفحة](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities) . في نتائج البحث في التدقيق في مدخل التوافق، سترى تفاصيل عرض حدث التدقيق هذا **SensitivityLabeledFileRenamed** لحقل **النشاط** .
 
+عند إنشاء ملف PDF، فإنه يرث التسمية مع أي علامات محتوى وتشفير. يمكن فتح ملفات PDF المشفرة باستخدام Microsoft Edge على Windows أو Mac. لمزيد من المعلومات، والقراء البديلين، راجع [ما هي برامج قراءة PDF المعتمدة لملفات PDF المحمية؟](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
 
 سيناريوهات PDF غير معتمدة:
 
@@ -438,7 +439,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 ## <a name="auditing-labeling-activities"></a>تدقيق أنشطة وضع العلامات
 
-للحصول على معلومات حول أحداث التدقيق التي يتم إنشاؤها بواسطة أنشطة وصف الحساسية، راجع قسم [أنشطة وصف الحساسية](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) من [البحث في سجل التدقيق في مدخل توافق Microsoft Purview](search-the-audit-log-in-security-and-compliance.md).
+للحصول على معلومات حول أحداث التدقيق التي يتم إنشاؤها بواسطة أنشطة وصف الحساسية، راجع قسم [أنشطة وصف الحساسية](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) من [البحث في سجل التدقيق في مدخل التوافق في Microsoft Purview](search-the-audit-log-in-security-and-compliance.md).
 
 يتم تمثيل معلومات التدقيق هذه بشكل مرئي في [مستكشف المحتوى](data-classification-content-explorer.md) [ومستكشف النشاط](data-classification-activity-explorer.md) لمساعدتك على فهم كيفية استخدام تسميات الحساسية ومكان وجود هذا المحتوى المسمى. 
 
@@ -446,8 +447,8 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 > [!TIP]
 > للمساعدة في إنشاء تقارير مخصصة، راجع منشورات المدونة التالية:
-> - [أنشطة سجل تدقيق Microsoft Purview عبر واجهة برمجة تطبيقات إدارة O365 - الجزء 1](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
-> - [أنشطة سجل تدقيق Microsoft Purview عبر واجهة برمجة تطبيقات إدارة O365 - الجزء 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
+> - [Microsoft Purview أنشطة سجل التدقيق عبر واجهة برمجة تطبيقات إدارة O365 - الجزء 1](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957171)
+> - [Microsoft Purview أنشطة سجل التدقيق عبر واجهة برمجة تطبيقات إدارة O365 - الجزء 2](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/microsoft-365-compliance-audit-log-activities-via-o365/ba-p/2957297)
 
 ## <a name="end-user-documentation"></a>وثائق المستخدم النهائي
 

@@ -16,18 +16,18 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8da099332ffbe2cc3d860faef504e4c5d9663614
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0365f8a9d2f267d7ebc0cfeddd5b7d1d5c16a72a
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418621"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078777"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>تكوين اتصالات الشبكة برنامج الحماية من الفيروسات من Microsoft Defender والتحقق من صحتها
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -90,7 +90,7 @@ ms.locfileid: "65418621"
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>محاولة تنزيل ملف برامج ضارة مزيفة من Microsoft
 
-يمكنك تنزيل نموذج ملف سيكتشفه برنامج الحماية من الفيروسات من Microsoft Defender ويحظره إذا كنت متصلا بشكل صحيح بالسحابة. تفضل بزيارة [https://aka.ms/ioavtest](https://aka.ms/ioavtest) لتنزيل الملف.
+يمكنك تنزيل نموذج ملف سيكتشفه برنامج الحماية من الفيروسات من Microsoft Defender ويحظره إذا كنت متصلا بشكل صحيح بالسحابة. تفضل بزيارة [https://aka.ms/ioavtest1](https://aka.ms/ioavtest1) لتنزيل الملف.
 
 > [!NOTE]
 > الملف الذي تم تنزيله ليس برنامجا ضارا بالضبط. إنه ملف مزيف مصمم لاختبار ما إذا كنت متصلا بشكل صحيح بالسحابة.
@@ -119,7 +119,7 @@ ms.locfileid: "65418621"
    سيظهر سجل أحداث Windows أيضا [معرف حدث عميل Windows Defender 1116](troubleshoot-microsoft-defender-antivirus.md).
 
     > [!TIP]
-    > إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+    > إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
     > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
     > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
     > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

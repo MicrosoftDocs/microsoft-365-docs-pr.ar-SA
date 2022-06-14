@@ -1,5 +1,5 @@
 ---
-title: بدء استخدام حالات eDiscovery (القياسية) في Microsoft Purview
+title: بدء استخدام حالات eDiscovery (قياسي) في Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: يصف كيفية البدء باستخدام eDiscovery (قياسي) في Microsoft Purview. بعد تعيين أذونات eDiscovery وإنشاء حالة، يمكنك إضافة أعضاء وإنشاء قوائم احتجاز eDiscovery، ثم البحث عن المحتوى ذي الصلة بالتحقيق وتصديره.
-ms.openlocfilehash: e224bf22741d0e1599d099802470e231b11fd785
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 38e4d24405810293c9261c1c7f728ece0714cd66
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094935"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078469"
 ---
 # <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>بدء استخدام eDiscovery (قياسي) في Microsoft Purview
 
@@ -37,7 +37,7 @@ ms.locfileid: "65094935"
 
 يتطلب ترخيص eDiscovery (Standard) اشتراك المؤسسة المناسب والترخيص لكل مستخدم.
 
-- **اشتراك المؤسسة:** للوصول إلى eDiscovery (قياسي) في مدخل توافق Microsoft Purview واستخدام ميزات الاحتجاز والتصدير، يجب أن يكون لدى مؤسستك اشتراك Microsoft 365 E3 أو Office 365 E3 أو أعلى. يجب أن يكون لدى مؤسسات Microsoft 365 Frontline اشتراك F5.
+- **اشتراك المؤسسة:** للوصول إلى eDiscovery (قياسي) في مدخل التوافق في Microsoft Purview واستخدام ميزات الاحتجاز والتصدير، يجب أن يكون لدى مؤسستك اشتراك Exchange online Plan 2 أو Microsoft 365 E3 أو Office 365 E3 أو أعلى. يجب أن يكون لدى مؤسسات Microsoft 365 Frontline اشتراك F5.
 
 - **ترخيص لكل مستخدم:** لوضع قائمة احتجاز eDiscovery على علب البريد والمواقع، يجب تعيين أحد التراخيص التالية للمستخدمين، استنادا إلى اشتراك مؤسستك:
 
@@ -109,7 +109,7 @@ ms.locfileid: "65094935"
 
 1. انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق</a> وسجل الدخول باستخدام بيانات الاعتماد لحساب مستخدم تم تعيين أذونات eDiscovery المناسبة له. يمكن لأعضاء مجموعة دور إدارة المؤسسة أيضا إنشاء حالات eDiscovery (قياسي).
 
-2. في جزء التنقل الأيمن من مدخل التوافق، انقر فوق **"إظهار الكل**"، ثم انقر فوق **eDiscoveryCore** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
+2. في جزء التنقل الأيمن من مدخل التوافق، انقر فوق **"إظهار الكل**"، ثم انقر فوق **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
 
 3. في صفحة **eDiscovery (قياسي)،** انقر فوق **"إنشاء حالة**".
 

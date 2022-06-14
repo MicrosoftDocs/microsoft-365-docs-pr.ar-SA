@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Cloud Apps في Microsoft 365 Defender
+title: Microsoft Defender for Cloud Apps في Microsoft 365 Defender (معاينة)
 description: تعرف على التغييرات من Microsoft Defender for Cloud Apps إلى Microsoft 365 Defender
 keywords: بدء استخدام Microsoft 365 Defender، Microsoft Defender for Cloud Apps
 ms.prod: microsoft-365-enterprise
@@ -19,14 +19,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 28ad4e490e1347c3e17d9e99d1bc9d0f8ea5b60f
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: 2cd146cfb0fe9b6af10f562bbf6eb00bc5bf9a3d
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057865"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078394"
 ---
-# <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender"></a>Microsoft Defender for Cloud Apps في Microsoft 365 Defender
+# <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft Defender for Cloud Apps في Microsoft 365 Defender (معاينة)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -68,9 +68,12 @@ ms.locfileid: "66057865"
 | الملفات | المتبقية في مدخل Defender for Cloud Apps |
 | المستخدمون والحسابات | الأصول -> الهويات |
 | تكوين الأمان | المتبقية في مدخل Defender for Cloud Apps |
-| وضع أمان الهوية | المتبقية في مدخل Defender for Cloud Apps |
+| وضع أمان الهوية | [تقييمات الوضع الأمني للهوية في Microsoft Defender for Identity](/defender-for-identity/isp-overview) |
 | تطبيقات OAuth | تطبيقات السحابة -> تطبيقات OAuth |
 | التطبيقات المتصلة | المتبقية في مدخل Defender for Cloud Apps |
+
+> [!NOTE]
+> تتوفر تجربة Defender for Cloud Apps الجديدة في مدخل Microsoft 365 Defender حاليا لجميع المستخدمين المفصلين في [إدارة وصول المسؤول](/defender-cloud-apps/manage-admins)، باستثناء المستخدمين الذين لديهم الأدوار المحددة في [أدوار المسؤول المضمنة في Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
 
 ## <a name="whats-changed"></a>ما الذي تم تغييره
 

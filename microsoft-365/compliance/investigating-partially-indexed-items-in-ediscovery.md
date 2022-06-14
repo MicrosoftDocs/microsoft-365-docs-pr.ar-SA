@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 05/13/2022
+ms.date: 06/14/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,18 +18,18 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية إدارة العناصر المفهرسة جزئيا (تسمى أيضا العناصر غير المفهرسة) من Exchange SharePoint OneDrive for Business داخل مؤسستك.
-ms.openlocfilehash: 373072ff1b1a893a8de970ccb6eacbdcd14b48d3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 528693febbb6d02f6ea143d94aaae154d3dfde7e
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014939"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078733"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>التحقق من العناصر المفهرسة جزئيا في eDiscovery
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-يتضمن بحث eDiscovery الذي تقوم بتشغيله من مدخل توافق Microsoft Purview تلقائيا عناصر مفهرسة جزئيا في نتائج البحث المقدرة عند تشغيل عملية بحث. العناصر المفهرسة جزئيا هي Exchange عناصر علبة البريد والمستندات على SharePoint ومواقع OneDrive for Business التي لم تتم فهرستها بشكل كامل للبحث لسبب ما. تمت فهرسة معظم رسائل البريد الإلكتروني ومستندات الموقع بنجاح لأنها تقع ضمن [حدود الفهرسة لرسائل البريد الإلكتروني](limits-for-content-search.md#indexing-limits-for-email-messages). ومع ذلك، قد تتجاوز بعض العناصر حدود الفهرسة هذه، وسيتم فهرستها جزئيا. فيما يلي أسباب أخرى لعدم إمكانية فهرسة العناصر للبحث وإرجاعها كعناصر مفهرسة جزئيا عند تشغيل بحث eDiscovery:
+يتضمن بحث eDiscovery الذي تقوم بتشغيله من مدخل التوافق في Microsoft Purview العناصر المفهرسة جزئيا تلقائيا في نتائج البحث المقدرة عند تشغيل عملية بحث. العناصر المفهرسة جزئيا هي Exchange عناصر علبة البريد والمستندات على SharePoint ومواقع OneDrive for Business التي لم تتم فهرستها بشكل كامل للبحث لسبب ما. تمت فهرسة معظم رسائل البريد الإلكتروني ومستندات الموقع بنجاح لأنها تقع ضمن [حدود الفهرسة لرسائل البريد الإلكتروني](limits-for-content-search.md#indexing-limits-for-email-messages). ومع ذلك، قد تتجاوز بعض العناصر حدود الفهرسة هذه، وسيتم فهرستها جزئيا. فيما يلي أسباب أخرى لعدم إمكانية فهرسة العناصر للبحث وإرجاعها كعناصر مفهرسة جزئيا عند تشغيل بحث eDiscovery:
   
 - تحتوي رسائل البريد الإلكتروني على ملف مرفق لا يمكن فتحه؛ هذا هو السبب الأكثر شيوعا لعناصر البريد الإلكتروني المفهرسة جزئيا.
 
@@ -116,12 +116,13 @@ ms.locfileid: "66014939"
 | `wordbreakertruncated` <br/> |تم تحديد عدد كبير جدا من الكلمات في المستند أثناء الفهرسة. توقفت معالجة الخاصية عند الوصول إلى الحد، ويتم اقتطاع الخاصية.  <br/> |
 
 تصف حقول الخطأ الحقول المتأثرة بخطأ المعالجة المدرج في الحقل "علامات الخطأ". إذا كنت تبحث عن خاصية مثل  `subject` أو  `participants`، فلن تؤثر الأخطاء في النص الأساسي للرسالة على نتائج البحث. يمكن أن يكون هذا مفيدا عند تحديد العناصر المفهرسة جزئيا التي قد تحتاج إلى مزيد من التحقيق.
-  
-## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>استخدام برنامج نصي PowerShell لتحديد تعرض مؤسستك لعناصر البريد الإلكتروني المفهرسة جزئيا
 
-توضح لك الخطوات التالية كيفية تشغيل برنامج نصي PowerShell يبحث عن كافة العناصر في كل علب بريد Exchange، ثم ينشئ تقريرا حول نسبة عناصر البريد الإلكتروني المفهرسة جزئيا في مؤسستك (حسب العدد والحجم) ويعرض عدد العناصر (ونوع الملف الخاص بها) لكل خطأ فهرسة يحدث. استخدم أوصاف علامة الخطأ في القسم السابق لتحديد خطأ الفهرسة.
+<!--
+## Using a PowerShell script to determine your organization's exposure to partially indexed email items
+
+The following steps show you how to run a PowerShell script that searches for all items in all Exchange mailboxes, and then generates a report about your organization's ratio of partially indexed email items (by count and by size) and displays the number of items (and their file type) for each indexing error that occurs. Use the error tag descriptions in the previous section to identify the indexing error.
   
-1. احفظ النص التالي إلى ملف برنامج نصي Windows PowerShell باستخدام لاحقة اسم الملف .ps1؛ على سبيل المثال، `PartiallyIndexedItems.ps1`.
+1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `PartiallyIndexedItems.ps1`.
 
    ```powershell
      write-host "**************************************************"
@@ -166,25 +167,26 @@ ms.locfileid: "66014939"
      }
    ```
 
-2. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
 
-3. في Security & Compliance PowerShell، انتقل إلى المجلد حيث حفظت البرنامج النصي في الخطوة 1، ثم شغل البرنامج النصي؛ على سبيل المثال:
+3. In Security & Compliance PowerShell, go to the folder where you saved the script in step 1, and then run the script; for example:
 
    ```powershell
    .\PartiallyIndexedItems.ps1
    ```
 
-فيما يلي مثال على الإخراج الذي تم إرجاعه بواسطة البرنامج النصي.
+Here's an example fo the output returned by the script.
   
-![مثال على الإخراج من البرنامج النصي الذي ينشئ تقريرا حول تعرض مؤسستك لعناصر البريد الإلكتروني المفهرسة جزئيا.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![Example of output from script that generates a report on your organization's exposure to partially indexed email items.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
 
 > [!NOTE]
-> لاحظ ما يلي:
+> Note the following:
 >  
-> - العدد الإجمالي لعناصر البريد الإلكتروني وحجمها ونسبة عناصر البريد الإلكتروني المفهرسة جزئيا في مؤسستك (حسب العدد والحجم).
+> - The total number and size of email items, and your organization's ratio of partially indexed email items (by count and by size).
 > 
-> - علامات خطأ قائمة وأنواع الملفات المقابلة التي حدث فيها الخطأ.
-  
+> - A list error tags and the corresponding file types for which the error occurred.
+-->
+
 ## <a name="see-also"></a>راجع أيضًا
 
 [العناصر المفهرسة جزئيا في eDiscovery](partially-indexed-items-in-content-search.md)

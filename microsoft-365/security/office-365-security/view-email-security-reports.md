@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 499f001c0327c1634be4a94e2a8446adca93daab
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: ef22f0873e6a61864cf3b2abf2d8a4bc26f80c4d
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941031"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078975"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>عرض تقارير أمان البريد الإلكتروني في مدخل Microsoft 365 Defender
 
@@ -36,38 +36,38 @@ ms.locfileid: "65941031"
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-تتوفر مجموعة متنوعة من التقارير في مدخل Microsoft 365 Defender لمساعدتك على <https://security.microsoft.com> معرفة كيفية حماية ميزات أمان البريد الإلكتروني، مثل ميزات مكافحة البريد العشوائي والبرامج الضارة في Microsoft 365 لمؤسستك. إذا كان لديك [الأذونات اللازمة](#what-permissions-are-needed-to-view-these-reports)، يمكنك عرض هذه التقارير وتنزيلها كما هو موضح في هذه المقالة.
+تتوفر مجموعة متنوعة من التقارير في مدخل Microsoft 365 Defender لمساعدتك على <https://security.microsoft.com> معرفة كيفية حماية ميزات أمان البريد الإلكتروني، مثل ميزات مكافحة البريد العشوائي والبرامج الضارة في Microsoft 365 مؤسستك. إذا كان لديك [الأذونات اللازمة](#what-permissions-are-needed-to-view-these-reports)، يمكنك عرض هذه التقارير وتنزيلها كما هو موضح في هذه المقالة.
 
 > [!NOTE]
 >
-> تتطلب بعض التقارير الموجودة في صفحة **تقارير التعاون & البريد الإلكتروني** Microsoft Defender ل Office 365. للحصول على معلومات حول هذه التقارير، راجع [تقارير View Defender ل Office 365 في مدخل Microsoft 365 Defender](view-reports-for-mdo.md).
+> تتطلب بعض التقارير الموجودة في صفحة **تقارير التعاون & البريد الإلكتروني** Microsoft Defender لـ Office 365. للحصول على معلومات حول هذه التقارير، راجع [عرض تقارير Defender لـ Office 365 في مدخل Microsoft 365 Defender](view-reports-for-mdo.md).
 >
 > تتوفر الآن التقارير المتعلقة بتدفق البريد في مركز إدارة Exchange. لمزيد من المعلومات حول هذه التقارير، راجع [تقارير تدفق البريد في مركز إدارة Exchange الجديد](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
-شاهد هذا الفيديو القصير للتعرف على كيفية استخدام التقارير لفهم فعالية Defender ل Office 365 في مؤسستك.
+شاهد هذا الفيديو القصير لمعرفة كيفية استخدام التقارير لفهم فعالية Defender لـ Office 365 في مؤسستك.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBkxB]
 
 ## <a name="email-security-report-changes-in-the-microsoft-365-defender-portal"></a>تغييرات تقرير أمان البريد الإلكتروني في مدخل Microsoft 365 Defender
 
-يتم وصف تقارير Exchange Online Protection (EOP) وMicrosoft Defender ل Office 365 في مدخل Microsoft 365 Defender التي تم استبدالها أو نقلها أو إهمالها في الجدول التالي.
+يتم وصف تقارير Exchange Online Protection (EOP) وتقارير Microsoft Defender لـ Office 365 في مدخل Microsoft 365 Defender التي تم استبدالها أو نقلها أو إهمالها في الجدول التالي.
 
 |تقرير مهمل و cmdlets مهملة|تقرير جديد و cmdlets|معرف مركز الرسائل|تاريخ|
 |---|---|:---:|:---:|
 |**تعقب عناوين URL** <br/><br/> Get-URLTrace|[تقرير حماية URL](view-reports-for-mdo.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|يونيو 2021|
 |**تقرير البريد الإلكتروني المرسل والمستلم** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailReport|[تقرير حالة الحماية من التهديدات](#threat-protection-status-report) <br> [تقرير حالة تدفق البريد](#mailflow-status-report) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|يونيو 2021|
 |**إعادة توجيه التقرير** <br/><br/> لا توجد أوامر cmdlets|[تقرير الرسائل التي تمت إعادة توجيهها تلقائيا في EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <br/><br/> لا توجد أوامر cmdlets|MC250533|يونيو 2021|
-|**تقرير أنواع ملفات المرفقات الآمنة** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|يونيو 2021|
-|**تقرير الترتيب لرسالة المرفقات الآمنة** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|يونيو 2021|
+|**تقرير أنواع ملفات خزينة المرفقات** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|يونيو 2021|
+|**تقرير الترتيب لرسالة خزينة المرفقات** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|يونيو 2021|
 |**البرامج الضارة التي تم الكشف عنها في تقرير البريد الإلكتروني** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[تقرير حالة الحماية من التهديدات: عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|يونيو 2021|
 |**تقرير الكشف عن البريد العشوائي** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[تقرير حالة الحماية من التهديدات: عرض البيانات بواسطة البريد الإلكتروني \> العشوائي](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|أكتوبر 2021|
 |Get-AdvancedThreatProtectionDocumentReport <br/><br/> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <br/><br/> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|مايو 2022|
-|**تقرير قاعدة نقل Exchange** <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[تقرير قاعدة نقل Exchange في EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|أبريل 2022|
+|**تقرير قاعدة النقل Exchange** <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange تقرير قاعدة النقل في EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|أبريل 2022|
 |Get-MailTrafficTopReport|[تقرير أفضل المرسلين والمستلمين](view-email-security-reports.md#top-senders-and-recipients-report) <br/><br/> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport) <br/><br/> **ملاحظة**: لا يوجد بديل لقدرات تقارير التشفير في Get-MailTrafficTopReport.|MC315742|أبريل 2022|
 
 ## <a name="compromised-users-report"></a>تقرير المستخدمين المخترقين
 
 > [!NOTE]
-> يتوفر هذا التقرير في مؤسسات Microsoft 365 التي تستخدم علب بريد Exchange Online. لا يتوفر في مؤسسات Exchange Online Protection (EOP) المستقلة.
+> يتوفر هذا التقرير في المؤسسات Microsoft 365 التي تحتوي على علب بريد Exchange Online. لا يتوفر في مؤسسات Exchange Online Protection المستقلة (EOP).
 
 يعرض تقرير **المستخدمين المخترقين** عدد حسابات المستخدمين التي تم وضع علامة عليها على أنها **مريبة** أو **مقيدة** خلال آخر 7 أيام. تمثل الحسابات في أي من هذه الحالات مشكلة أو حتى معرضة للخطر. مع الاستخدام المتكرر، يمكنك استخدام التقرير لاكتشاف الارتفاعات، وحتى الاتجاهات، في الحسابات المشبوهة أو المقيدة. لمزيد من المعلومات حول المستخدمين المخترقين، راجع [الاستجابة لحساب بريد إلكتروني تم اختراقه](responding-to-a-compromised-email-account.md).
 
@@ -75,7 +75,7 @@ ms.locfileid: "65941031"
 
 تعرض طريقة العرض التجميعية البيانات لآخر 90 يوما وتعرض طريقة عرض التفاصيل البيانات لآخر 30 يوما.
 
-لعرض التقرير في مدخل Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى **تقارير** \> **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني** للتعاون. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **المستخدمين المخترقين** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/CompromisedUsers>.
+لعرض التقرير في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **تقارير** \> **التعاون & البريد الإلكتروني & &** **التعاون** \> عبر البريد الإلكتروني. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **المستخدمين المخترقين** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/CompromisedUsers>.
 
 في صفحة **المستخدمين المخترقين** ، يعرض المخطط المعلومات التالية لنطاق التاريخ المحدد:
 
@@ -101,31 +101,31 @@ ms.locfileid: "65941031"
 
 :::image type="content" source="../../media/compromised-users-report-activity-view.png" alt-text="طريقة عرض التقرير في تقرير المستخدمين المخترقين" lightbox="../../media/compromised-users-report-activity-view.png":::
 
-## <a name="exchange-transport-rule-report"></a>تقرير قاعدة نقل Exchange
+## <a name="exchange-transport-rule-report"></a>تقرير قاعدة النقل Exchange
 
-يعرض تقرير **قاعدة نقل Exchange** تأثير قواعد تدفق البريد (المعروفة أيضا بقواعد النقل) على الرسائل الواردة والصادرة في مؤسستك.
+يعرض تقرير **قاعدة النقل Exchange** تأثير قواعد تدفق البريد (المعروفة أيضا بقواعد النقل) على الرسائل الواردة والصادرة في مؤسستك.
 
-لعرض التقرير في مدخل Microsoft 365 Defender، انتقل إلى **تقارير** \> **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني & للتعاون**. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **قاعدة نقل Exchange** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/ETRRuleReport>.
+لعرض التقرير في مدخل Microsoft 365 Defender، **انتقل إلى** \> تقارير **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني للتقارير**. في صفحة **تقارير التعاون & البريد الإلكتروني**، ابحث عن **قاعدة النقل Exchange** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/ETRRuleReport>.
 
-:::image type="content" source="../../media/transport-rule-report-widget.png" alt-text="عنصر واجهة مستخدم قاعدة نقل Exchange في صفحة تقارير التعاون & البريد الإلكتروني" lightbox="../../media/transport-rule-report-widget.png":::
+:::image type="content" source="../../media/transport-rule-report-widget.png" alt-text="عنصر واجهة مستخدم قاعدة النقل Exchange في صفحة تقارير التعاون & البريد الإلكتروني" lightbox="../../media/transport-rule-report-widget.png":::
 
-في صفحة **تقرير قاعدة نقل Exchange** ، يتم وصف المخططات والبيانات المتوفرة في المقاطع التالية.
+في صفحة **تقرير قاعدة النقل Exchange**، يتم وصف المخططات والبيانات المتوفرة في المقاطع التالية.
 > [!NOTE]
-> يتوفر **الآن تقرير قاعدة نقل Exchange** في EAC. لمزيد من المعلومات، راجع [تقرير قاعدة نقل Exchange في EAC الجديد](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
+> يتوفر الآن **تقرير قاعدة النقل Exchange** في EAC. لمزيد من المعلومات، راجع [Exchange تقرير قاعدة النقل في EAC الجديد](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
 ### <a name="chart-breakdown-by-direction"></a>تصنيف المخطط حسب الاتجاه
 
-:::image type="content" source="../../media/transport-rule-report-etr-direction-view.png" alt-text="طريقة عرض الاتجاه لقواعد Exchange Transport في تقرير قاعدة نقل Exchange" lightbox="../../media/transport-rule-report-etr-direction-view.png":::
+:::image type="content" source="../../media/transport-rule-report-etr-direction-view.png" alt-text="طريقة عرض الاتجاه لقواعد النقل Exchange في تقرير قاعدة النقل Exchange" lightbox="../../media/transport-rule-report-etr-direction-view.png":::
 
 إذا قمت بتحديد **تصنيف المخطط التفصيلي حسب الاتجاه**، تتوفر المخططات التالية:
 
-- **عرض البيانات حسب قواعد نقل Exchange**: عدد الرسائل **الواردة** **والصادرة** التي تأثرت بقواعد تدفق البريد.
-- **عرض البيانات بواسطة قواعد نقل DLP Exchange**: عدد الرسائل **الواردة** **والصادرة** التي تأثرت بقواعد تدفق البريد لمنع فقدان البيانات (DLP).
+- **عرض البيانات حسب قواعد النقل Exchange**: عدد الرسائل **الواردة** **والصادرة** التي تأثرت بقواعد تدفق البريد.
+- **عرض البيانات حسب قواعد النقل Exchange DLP**: عدد الرسائل **الواردة** **والصادرة** التي تأثرت بقواعد تدفق البريد لمنع فقدان البيانات (DLP).
 
 تظهر المعلومات التالية في جدول التفاصيل أسفل الرسم البياني:
 
 - **تاريخ**
-- **نهج DLP** (**عرض البيانات حسب قواعد نقل DLP Exchange** فقط)
+- **نهج DLP** (**عرض البيانات حسب DLP Exchange قواعد النقل** فقط)
 - **قاعدة النقل**
 - **الموضوع**
 - **عنوان المرسل**
@@ -141,22 +141,22 @@ ms.locfileid: "65941031"
 
 عند الانتهاء من تكوين عوامل التصفية، انقر فوق **تطبيق** **عوامل التصفية** أو **إلغاؤها** أو مسحها.
 
-في صفحة **تقرير قاعدة نقل Exchange** ، أيقونة !["إنشاء جدول زمني".](../../media/m365-cc-sc-create-icon.png) **[إنشاء جدول،](#schedule-report)**![ أيقونة تقرير الطلب.](../../media/m365-cc-sc-download-icon.png) **[تقرير الطلب](#request-report)**، وأيقونة ![التصدير.](../../media/m365-cc-sc-download-icon.png) أزرار **[التصدير](#export-report)** متوفرة.
+في صفحة **تقرير قاعدة النقل Exchange**، أيقونة ![إنشاء جدول.](../../media/m365-cc-sc-create-icon.png) **[إنشاء جدول،](#schedule-report)**![ أيقونة تقرير الطلب.](../../media/m365-cc-sc-download-icon.png) **[تقرير الطلب](#request-report)**، وأيقونة ![التصدير.](../../media/m365-cc-sc-download-icon.png) أزرار **[التصدير](#export-report)** متوفرة.
 
 ### <a name="chart-breakdown-by-severity"></a>تصنيف المخطط حسب الخطورة
 
-:::image type="content" source="../../media/transport-rule-report-etr-severity-view.png" alt-text="طريقة عرض الخطورة لقواعد Exchange Transport في تقرير قاعدة نقل Exchange" lightbox="../../media/transport-rule-report-etr-severity-view.png":::
+:::image type="content" source="../../media/transport-rule-report-etr-severity-view.png" alt-text="طريقة عرض الخطورة لقواعد النقل Exchange في تقرير قاعدة النقل Exchange" lightbox="../../media/transport-rule-report-etr-severity-view.png":::
 
 إذا قمت بتحديد **تصنيف تفصيلي للمخطط حسب الخطورة**، تتوفر المخططات التالية:
 
-- **عرض البيانات حسب قواعد نقل Exchange**: عدد الرسائل **عالية الخطورة** **والمتوسطة والخطورة** **المنخفضة** . يمكنك تعيين مستوى الخطورة كإجراء في القاعدة (**تدقيق هذه القاعدة مع مستوى الخطورة** أو _SetAuditSeverity_). لمزيد من المعلومات، راجع [إجراءات قاعدة تدفق البريد في Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+- **عرض البيانات حسب قواعد النقل Exchange**: عدد رسائل **الخطورة العالية** **والخطورة المتوسطة** **والخطورة المنخفضة**. يمكنك تعيين مستوى الخطورة كإجراء في القاعدة (**تدقيق هذه القاعدة مع مستوى الخطورة** أو _SetAuditSeverity_). لمزيد من المعلومات، راجع [إجراءات قاعدة تدفق البريد في Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **عرض البيانات حسب قواعد نقل DLP Exchange**: عدد الرسائل **عالية الخطورة** **والمتوسطة** **والخطورة المنخفضة** التي تأثرت بقواعد تدفق بريد DLP.
+- **عرض البيانات بواسطة قواعد النقل Exchange DLP**: عدد الرسائل **عالية الخطورة** **والمتوسطة والخطورة** **المنخفضة** التي تأثرت بقواعد تدفق بريد DLP.
 
 تظهر المعلومات التالية في جدول التفاصيل أسفل الرسم البياني:
 
 - **تاريخ**
-- **نهج DLP** (**عرض البيانات حسب قواعد نقل DLP Exchange** فقط)
+- **نهج DLP** (**عرض البيانات حسب DLP Exchange قواعد النقل** فقط)
 - **قاعدة النقل**
 - **الموضوع**
 - **عنوان المرسل**
@@ -172,7 +172,7 @@ ms.locfileid: "65941031"
 
 عند الانتهاء من تكوين عوامل التصفية، انقر فوق **تطبيق** **عوامل التصفية** أو **إلغاؤها** أو مسحها.
 
-في صفحة **تقرير قاعدة نقل Exchange** ، أيقونة !["إنشاء جدول زمني".](../../media/m365-cc-sc-create-icon.png) **[إنشاء جدول،](#schedule-report)**![ أيقونة تقرير الطلب.](../../media/m365-cc-sc-download-icon.png) **[تقرير الطلب](#request-report)**، وأيقونة ![التصدير.](../../media/m365-cc-sc-download-icon.png) أزرار **[التصدير](#export-report)** متوفرة.
+في صفحة **تقرير قاعدة النقل Exchange**، أيقونة ![إنشاء جدول.](../../media/m365-cc-sc-create-icon.png) **[إنشاء جدول،](#schedule-report)**![ أيقونة تقرير الطلب.](../../media/m365-cc-sc-download-icon.png) **[تقرير الطلب](#request-report)**، وأيقونة ![التصدير.](../../media/m365-cc-sc-download-icon.png) أزرار **[التصدير](#export-report)** متوفرة.
 
 ## <a name="forwarding-report"></a>إعادة توجيه التقرير
 
@@ -183,7 +183,7 @@ ms.locfileid: "65941031"
 
 **تقرير حالة تدفق البريد** هو تقرير ذكي يعرض معلومات حول البريد الإلكتروني الوارد والصادر، واكتشافات البريد العشوائي، والبرامج الضارة، والبريد الإلكتروني الذي تم تعريفه على أنه "جيد"، ومعلومات حول البريد الإلكتروني المسموح به أو المحظور على الحافة. هذا هو التقرير الوحيد الذي يحتوي على معلومات حماية الحافة، ويظهر مقدار البريد الإلكتروني المحظور قبل السماح له بالدخول إلى الخدمة للتقييم بواسطة Exchange Online Protection (EOP). من المهم أن نفهم أنه إذا تم إرسال رسالة إلى خمسة مستلمين، فإننا نحسبها كخمس رسائل مختلفة وليس كرسالة واحدة.
 
-لعرض التقرير في مدخل Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى **تقارير** \> **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني** للتعاون. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **ملخص حالة تدفق البريد** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/mailflowStatusReport>.
+لعرض التقرير في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **تقارير** \> **التعاون & البريد الإلكتروني & &** **التعاون** \> عبر البريد الإلكتروني. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **ملخص حالة تدفق البريد** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/mailflowStatusReport>.
 
 :::image type="content" source="../../media/mail-flow-status-report-widget.png" alt-text="عنصر واجهة مستخدم ملخص حالة تدفق البريد في صفحة تقارير التعاون & البريد الإلكتروني" lightbox="../../media/mail-flow-status-report-widget.png":::
 
@@ -198,7 +198,7 @@ ms.locfileid: "65941031"
 - **البرامج الضارة**: البريد الإلكتروني الذي تم حظره كبرايات ضارة بواسطة عوامل تصفية مختلفة.
 - **البريد الإلكتروني للتصيد الاحتيالي**: البريد الإلكتروني المحظور للتصيد الاحتيالي بواسطة عوامل تصفية مختلفة.
 - **البريد العشوائي**: البريد الإلكتروني المحظور كبرم عشوائي بواسطة عوامل تصفية مختلفة.
-- **حماية الحافة**: البريد الإلكتروني الذي يتم رفضه على الحافة/المحيط قبل تقييمه بواسطة EOP أو Defender ل Office 365.
+- **حماية الحافة**: البريد الإلكتروني الذي يتم رفضه في الحافة/المحيط قبل تقييمه بواسطة EOP أو Defender لـ Office 365.
 - **رسائل القاعدة**: رسائل البريد الإلكتروني التي تم اتخاذ إجراء بشأنها بواسطة قواعد تدفق البريد (المعروفة أيضا بقواعد النقل).
 
 يعرض جدول التفاصيل أسفل الرسم البياني المعلومات التالية:
@@ -274,7 +274,7 @@ ms.locfileid: "65941031"
 
 تسمح طريقة العرض المجمعة وعرض جدول التفاصيل بتصفية لمدة 90 يوما.
 
-يتم ترميز المعلومات الموجودة في الرسم التخطيطي بواسطة تقنيات **EOP** أو **Defender ل Office 365** .
+يتم ترميز المعلومات الموجودة في الرسم التخطيطي حسب اللون بواسطة **تقنيات EOP** أو **Defender لـ Office 365**.
 
 يتم تنظيم الرسم التخطيطي في النطاقات الأفقية التالية:
 
@@ -283,12 +283,12 @@ ms.locfileid: "65941031"
   - **كتلة Edge**: الرسائل التي تتم تصفيتها عند الحافة ويتم تعريفها على أنها Edge Protection.
   - **تمت المعالجة**: الرسائل التي تتم معالجتها بواسطة مكدس التصفية.
 - نطاق النتائج:
-  - **كتلة القاعدة**: الرسائل التي تتم معالجتها بواسطة قواعد تدفق بريد Exchange (قواعد النقل).
+  - **كتلة القاعدة**: الرسائل التي تتم معالجتها بواسطة قواعد تدفق البريد Exchange (قواعد النقل).
   - **كتلة البرامج الضارة**: الرسائل التي يتم تعريفها على أنها برامج ضارة بواسطة عوامل تصفية مختلفة.<sup>\*</sup>
   - **كتلة التصيد الاحتيالي**: الرسائل التي يتم تعريفها على أنها تصيد احتيالي أثناء المعالجة بواسطة عوامل تصفية مختلفة.<sup>\*</sup>
   - **حظر البريد العشوائي**: الرسائل التي تم تعريفها على أنها بريد عشوائي أثناء المعالجة بواسطة عوامل تصفية مختلفة.<sup>\*</sup>
-  - **كتلة انتحال**: الرسائل التي تم اكتشافها على أنها انتحال هوية المستخدم أو انتحال المجال في Defender ل Office 365.<sup>\*</sup>
-  - **كتلة التضمين**: الرسائل التي تم اكتشافها أثناء حجب الملف أو عنوان URL بواسطة نهج المرفقات الآمنة أو نهج الارتباطات الآمنة في Defender ل Office 365.<sup>\*</sup>
+  - **كتلة انتحال**: الرسائل التي تم اكتشافها على أنها انتحال مستخدم أو انتحال المجال في Defender لـ Office 365.<sup>\*</sup>
+  - **كتلة التضمين**: الرسائل التي تم اكتشافها أثناء حجب الملف أو عنوان URL بواسطة نهج المرفقات خزينة أو نهج الارتباطات خزينة في Defender لـ Office 365.<sup>\*</sup>
   - **تمت إزالة ZAP**: الرسائل التي تتم إزالتها بواسطة الإزالة التلقائية لمدة صفر ساعة (ZAP).<sup>\*</sup>
   - **يتم التسليم**: الرسائل التي يتم تسليمها إلى المستخدمين بسبب السماح.<sup>\*</sup>
 
@@ -304,7 +304,7 @@ ms.locfileid: "65941031"
 - **البريد الإلكتروني الإجمالي**
 - **تمت تصفية Edge**
 - **قواعد الرسائل**
-- **محرك مكافحة البرامج الضارة، مرفقات آمنة، قاعدة تمت تصفيتها**
+- **محرك مكافحة البرامج الضارة، خزينة المرفقات، تمت تصفية القاعدة**
 - **انتحال DMARC، تزييف الهوية، تصفية التصيد الاحتيالي**
 - **الكشف عن التقصي**
 - **تمت تصفية مكافحة البريد العشوائي**
@@ -333,7 +333,7 @@ ms.locfileid: "65941031"
 
 ## <a name="mail-latency-report"></a>تقرير زمن انتقال البريد
 
-يحتوي **تقرير زمن انتقال البريد** في Defender ل Office 365 على معلومات حول تسليم البريد وزمن انتقال الانتقال الذي تمت تجربته داخل مؤسستك. لمزيد من المعلومات، راجع [تقرير زمن انتقال البريد](view-reports-for-mdo.md#mail-latency-report).
+يحتوي **تقرير زمن انتقال البريد** في Defender لـ Office 365 على معلومات حول زمن انتقال تسليم البريد وزمن انتقال البريد الذي تمت تجربته داخل مؤسستك. لمزيد من المعلومات، راجع [تقرير زمن انتقال البريد](view-reports-for-mdo.md#mail-latency-report).
 
 ## <a name="spam-detections-report"></a>تقرير الكشف عن البريد العشوائي
 
@@ -346,7 +346,7 @@ ms.locfileid: "65941031"
 
 تسمح طريقة العرض التجميعية للتقرير بتصفية لمدة 90 يوما، بينما تسمح طريقة عرض التفاصيل فقط لمدة عشرة أيام من التصفية.
 
-لعرض التقرير في مدخل Microsoft 365 Defender، انتقل إلى **تقارير** \> **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني & للتعاون**. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث **عن عمليات الكشف عن الانتحال ثم** انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/SpoofMailReport>.
+لعرض التقرير في مدخل Microsoft 365 Defender، **انتقل إلى** \> تقارير **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني للتقارير**. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث **عن عمليات الكشف عن الانتحال ثم** انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/SpoofMailReport>.
 
 :::image type="content" source="../../media/spoof-detections-widget.png" alt-text="عنصر واجهة مستخدم عمليات الكشف عن الانتحال على صفحة تقارير التعاون & البريد الإلكتروني" lightbox="../../media/spoof-detections-widget.png":::
 
@@ -392,9 +392,9 @@ ms.locfileid: "65941031"
 
 ## <a name="submissions-report"></a>تقرير عمليات الإرسال
 
-يعرض تقرير **عمليات الإرسال** معلومات حول العناصر التي أبلغ عنها المسؤولون إلى Microsoft للتحليل. لمزيد من المعلومات، راجع ["استخدام إرسال المسؤول" لإرسال رسائل البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft](admin-submission.md).
+يعرض تقرير **عمليات الإرسال** معلومات حول العناصر التي أبلغ عنها المسؤولون إلى Microsoft للتحليل. لمزيد من المعلومات، راجع [استخدام مسؤول الإرسال لإرسال رسائل البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft](admin-submission.md).
 
-لعرض التقرير في مدخل Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى **تقارير** \> **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني** للتعاون. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **عمليات الإرسال** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/adminSubmissionReport>. للانتقال إلى [عمليات إرسال المسؤول في مدخل Microsoft 365 Defender](admin-submission.md)، انقر فوق **"الانتقال إلى عمليات الإرسال**". سيتمكن المسؤولون من عرض التقرير لآخر 30 يوما.
+لعرض التقرير في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **تقارير** \> **التعاون & البريد الإلكتروني & &** **التعاون** \> عبر البريد الإلكتروني. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **عمليات الإرسال** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/adminSubmissionReport>. للانتقال إلى [عمليات إرسال المسؤول في مدخل Microsoft 365 Defender](admin-submission.md)، انقر فوق **"الانتقال إلى عمليات الإرسال**". سيتمكن المسؤولون من عرض التقرير لآخر 30 يوما.
 
 :::image type="content" source="../../media/submissions-report-widget.png" alt-text="عنصر واجهة مستخدم عمليات الإرسال في صفحة تقارير التعاون & البريد الإلكتروني" lightbox="../../media/submissions-report-widget.png":::
 
@@ -424,7 +424,7 @@ ms.locfileid: "65941031"
   - **المعلقه**
   - **اكمال**
 
-يعرض جدول التفاصيل أسفل الرسم البياني المعلومات نفسها ويحتوي على خيارات **الأعمدة "تجميع**" أو **"تخصيص**" نفسها كما في علامة التبويب "**تم الإرسال للتحليل**" في **"إرسالات التعاون** \> & البريد الإلكتروني". لمزيد من المعلومات، راجع [عرض عمليات إرسال المسؤول إلى Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
+يعرض جدول التفاصيل أسفل الرسم البياني المعلومات نفسها ويحتوي على خيارات **الأعمدة "تجميع**" أو **"تخصيص**" نفسها كما في علامة التبويب "**تم الإرسال للتحليل**" في **"إرسالات التعاون** \> & البريد الإلكتروني". لمزيد من المعلومات، راجع [عرض عمليات إرسال المسؤول إلى Microsoft](admin-submission.md#view-urls-admin-submissions-to-microsoft).
 
 في الصفحة **"عمليات الإرسال"** ، يتوفر الزر **["تصدير](#export-report)** ".
 
@@ -432,15 +432,15 @@ ms.locfileid: "65941031"
 
 ## <a name="threat-protection-status-report"></a>تقرير حالة الحماية من التهديدات
 
-يتوفر تقرير **حالة الحماية من التهديدات** في كل من EOP و Defender ل Office 365؛ ومع ذلك، تحتوي التقارير على بيانات مختلفة. على سبيل المثال، يمكن لعملاء EOP عرض معلومات حول البرامج الضارة التي تم الكشف عنها في البريد الإلكتروني، ولكن ليس معلومات حول الملفات الضارة التي تم الكشف عنها بواسطة ["المرفقات الآمنة" ل SharePoint وOneDrive وMicrosoft Teams](mdo-for-spo-odb-and-teams.md).
+يتوفر تقرير **حالة الحماية من التهديدات** في كل من EOP Defender لـ Office 365؛ ومع ذلك، تحتوي التقارير على بيانات مختلفة. على سبيل المثال، يمكن لعملاء EOP عرض معلومات حول البرامج الضارة التي تم الكشف عنها في البريد الإلكتروني، ولكن ليس معلومات حول الملفات الضارة التي تم اكتشافها بواسطة [خزينة المرفقات SharePoint OneDrive Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
-يوفر التقرير عدد رسائل البريد الإلكتروني التي تحتوي على محتوى ضار، مثل الملفات أو عناوين مواقع الويب (URLs) التي تم حظرها بواسطة محرك مكافحة البرامج الضارة وميزات [الإزالة التلقائية بدون ساعة (ZAP)](zero-hour-auto-purge.md) و Defender ل Office 365 مثل [الارتباطات الآمنة](safe-links.md) [والمرفقات الآمنة](safe-attachments.md) [وميزات الحماية من الانتحال في نهج مكافحة التصيد الاحتيالي](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). يمكنك استخدام هذه المعلومات لتحديد الاتجاهات أو تحديد ما إذا كانت نهج المؤسسة تحتاج إلى تعديل.
+يوفر التقرير عدد رسائل البريد الإلكتروني ذات المحتوى الضار، مثل الملفات أو عناوين مواقع الويب (URLs) التي تم حظرها بواسطة محرك مكافحة البرامج الضارة، [والإزالة التلقائية لمدة صفر ساعة (ZAP)](zero-hour-auto-purge.md) وميزات Defender لـ Office 365 مثل [الارتباطات خزينة](safe-links.md) [والمرفقات خزينة](safe-attachments.md) [وميزات الحماية من انتحال الهوية في نهج مكافحة التصيد الاحتيالي](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). يمكنك استخدام هذه المعلومات لتحديد الاتجاهات أو تحديد ما إذا كانت نهج المؤسسة تحتاج إلى تعديل.
 
 **ملاحظة**: من المهم أن نفهم أنه إذا تم إرسال رسالة إلى خمسة مستلمين، فإننا نحسبها على أنها خمس رسائل مختلفة وليس رسالة واحدة.
 
-لعرض التقرير في مدخل Microsoft 365 Defender، انتقل إلى **تقارير** \> **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني & للتعاون**. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **حالة الحماية من التهديدات** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح أحد عناوين URL التالية:
+لعرض التقرير في مدخل Microsoft 365 Defender، **انتقل إلى** \> تقارير **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني للتقارير**. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **حالة الحماية من التهديدات** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح أحد عناوين URL التالية:
 
-- Defender ل Office 365: <https://security.microsoft.com/reports/TPSAggregateReportATP>
+- Defender لـ Office 365:<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP: <https://security.microsoft.com/reports/TPSAggregateReport>
 
 :::image type="content" source="../../media/threat-protection-status-report-widget.png" alt-text="عنصر واجهة مستخدم حالة الحماية من التهديدات في صفحة تقارير التعاون & البريد الإلكتروني" lightbox="../../media/threat-protection-status-report-widget.png":::
@@ -466,7 +466,7 @@ ms.locfileid: "65941031"
 
 - **تاريخ البدء** **(UTC)** **وتاريخ الانتهاء**.
 - **الكشف**: القيم نفسها كما في المخطط.
-- **محمي بواسطة**: **MDO** (Defender ل Office 365) **وEOP**.
+- **محمي بواسطة**: **MDO** (Defender لـ Office 365) **وEOP**.
 - **العلامة**: **الكل** أو علامة المستخدم المحددة (بما في ذلك حسابات الأولوية). لمزيد من المعلومات حول علامات المستخدم، راجع [علامات المستخدم](user-tags.md).
 - **الاتجاه**:
   - **الكل**
@@ -495,9 +495,9 @@ ms.locfileid: "65941031"
 
 - **تصفية متقدمة**: إشارات التصيد الاحتيالي استنادا إلى التعلم الآلي.
 - **الحملة:**<sup>\*</sup> الرسائل المحددة كجزء من [حملة](campaigns.md).
-- **إزالة**<sup>\*</sup> الملف: اكتشفت [المرفقات الآمنة](safe-attachments.md) مرفقا ضارا أثناء تحليل التضمين.
-- **سمعة**<sup>\*</sup> التفاف الملفات: تم الكشف مسبقا عن مرفقات الملفات بواسطة [مجموعات "المرفقات الآمنة](safe-attachments.md) " في مؤسسات Microsoft 365 الأخرى.
-- **سمعة الملف**: تحتوي الرسالة على ملف تم تعريفه مسبقا على أنه ضار في مؤسسات Microsoft 365 الأخرى.
+- **إزالة**<sup>\*</sup> الملف: [خزينة اكتشفت المرفقات](safe-attachments.md) مرفقا ضارا أثناء تحليل التضمين.
+- **سمعة**<sup>\*</sup> التفاف الملفات: تم الكشف مسبقا عن مرفقات الملفات بواسطة [خزينة مرفقات](safe-attachments.md) في مؤسسات Microsoft 365 أخرى.
+- **سمعة الملف**: تحتوي الرسالة على ملف تم تعريفه مسبقا على أنه ضار في مؤسسات Microsoft 365 أخرى.
 - **بصمة الإصبع المطابقة**: تشبه الرسالة إلى حد كبير رسالة ضارة تم الكشف عنها مسبقا.
 - **عامل تصفية عام**: إشارات التصيد الاحتيالي استنادا إلى قواعد المحللين.
 - **العلامة التجارية للانتحال**: انتحال المرسل للعلامات التجارية المعروفة.
@@ -508,11 +508,11 @@ ms.locfileid: "65941031"
 - **Spoof DMARC**: فشلت الرسالة في [مصادقة DMARC](use-dmarc-to-validate-email.md).
 - **تزييف المجال الخارجي**: تزييف هوية عنوان البريد الإلكتروني للمرسل باستخدام مجال خارجي لمؤسستك.
 - **تزييف داخل المؤسسة**: تزييف هوية عنوان البريد الإلكتروني للمرسل باستخدام مجال داخلي لمؤسستك.
-- **إزالة**<sup>\*</sup> عنوان URL: اكتشفت [الارتباطات الآمنة](safe-links.md) عنوان URL ضارا في الرسالة أثناء تحليل إزالة البيانات.
-- سمعة <sup>\*</sup>**إخفاء عنوان URL**: تم الكشف مسبقا عن عناوين URL بواسطة توالف [الارتباطات الآمنة](safe-links.md) في مؤسسات Microsoft 365 الأخرى.
-- **سمعة URL الضارة**: تحتوي الرسالة على URL تم تعريفه مسبقا على أنه ضار في مؤسسات Microsoft 365 الأخرى.
+- <sup>\*</sup>**إزالة عنوان URL**: [خزينة اكتشفت الارتباطات](safe-links.md) عنوان URL ضارا في الرسالة أثناء تحليل التعويل.
+- سمعة <sup>\*</sup>**التزييت على عنوان URL**: تم الكشف عن عناوين URL مسبقا بواسطة [خزينة ارتباطات](safe-links.md) في مؤسسات Microsoft 365 أخرى.
+- **سمعة URL الضارة**: تحتوي الرسالة على URL تم تعريفه مسبقا على أنه ضار في مؤسسات Microsoft 365 أخرى.
 
-<sup>\*</sup> Defender ل Office 365 فقط
+<sup>\*</sup>Defender لـ Office 365 فقط
 
 في جدول التفاصيل أسفل المخطط، تتوفر المعلومات التالية:
 
@@ -529,7 +529,7 @@ ms.locfileid: "65941031"
 
 - **تاريخ البدء** **(UTC)** **وتاريخ الانتهاء**
 - **الكشف**: القيم نفسها كما في المخطط.
-- **محمي بواسطة**: **MDO** (Defender ل Office 365) أو **EOP**
+- **محمي بواسطة**: **MDO** (Defender لـ Office 365) أو **EOP**
 - **الاتجاه**:
   - **الكل**
   - **الوارده**
@@ -559,11 +559,11 @@ ms.locfileid: "65941031"
 
 - **تصفية متقدمة**: إشارات التصيد الاحتيالي استنادا إلى التعلم الآلي.
 - **مجمع**: [يتجاوز مستوى الشكاوى المجمعة (BCL)](bulk-complaint-level-values.md) للرسالة الحد المحدد للبريد العشوائي.
-- **سمعة المجال**: كانت الرسالة من مجال تم تعريفه مسبقا على أنه يرسل بريدا عشوائيا في مؤسسات Microsoft 365 الأخرى.
+- **سمعة المجال**: كانت الرسالة من مجال تم تعريفه مسبقا على أنه يرسل بريدا عشوائيا في مؤسسات Microsoft 365 أخرى.
 - **بصمة الإصبع المطابقة**: تشبه الرسالة إلى حد كبير رسالة ضارة تم الكشف عنها مسبقا.
-- **سمعة IP**: كانت الرسالة من مصدر تم تعريفه مسبقا على أنه يرسل بريدا عشوائيا في مؤسسات Microsoft 365 الأخرى.
+- **سمعة IP**: كانت الرسالة من مصدر تم تعريفه مسبقا على أنه يرسل بريدا عشوائيا في مؤسسات Microsoft 365 أخرى.
 - **الكشف عن التحليل المختلط**: ساهمت عوامل تصفية متعددة في حكم الرسالة.
-- **سمعة URL الضارة**: تحتوي الرسالة على URL تم تعريفه مسبقا على أنه ضار في مؤسسات Microsoft 365 الأخرى.
+- **سمعة URL الضارة**: تحتوي الرسالة على URL تم تعريفه مسبقا على أنه ضار في مؤسسات Microsoft 365 أخرى.
 
 في جدول التفاصيل أسفل المخطط، تتوفر المعلومات التالية:
 
@@ -610,16 +610,16 @@ ms.locfileid: "65941031"
 
 في **عرض البيانات حسب البرامج الضارة للبريد الإلكتروني \>** **وتفصيل المخطط حسب طريقة عرض تقنية الكشف**، يتم عرض المعلومات التالية في المخطط:
 
-- **إزالة**<sup>\*</sup> الملف: اكتشفت [المرفقات الآمنة](safe-attachments.md) مرفقا ضارا أثناء تحليل التضمين.
-- **سمعة**<sup>\*</sup> التفاف الملفات: تم الكشف مسبقا عن مرفقات الملفات بواسطة [مجموعات "المرفقات الآمنة](safe-attachments.md) " في مؤسسات Microsoft 365 الأخرى.
-- **سمعة الملف**: تحتوي الرسالة على ملف تم تعريفه مسبقا على أنه ضار في مؤسسات Microsoft 365 الأخرى.
+- **إزالة**<sup>\*</sup> الملف: [خزينة اكتشفت المرفقات](safe-attachments.md) مرفقا ضارا أثناء تحليل التضمين.
+- **سمعة**<sup>\*</sup> التفاف الملفات: تم الكشف مسبقا عن مرفقات الملفات بواسطة [خزينة مرفقات](safe-attachments.md) في مؤسسات Microsoft 365 أخرى.
+- **سمعة الملف**: تحتوي الرسالة على ملف تم تعريفه مسبقا على أنه ضار في مؤسسات Microsoft 365 أخرى.
 - محرك <sup>\*</sup>**مكافحة البرامج الضارة**: الكشف من محركات مكافحة البرامج الضارة.
 - **كتلة نوع ملف نهج مكافحة البرامج الضارة**: تم حظر الرسالة بسبب نوع ملف المرفق ([تصفية المرفقات الشائعة في نهج مكافحة البرامج الضارة](anti-malware-protection.md)).
-- **إزالة**<sup>\*</sup> عنوان URL: اكتشفت [الارتباطات الآمنة](safe-links.md) عنوان URL ضارا في الرسالة أثناء تحليل إزالة البيانات.
-- سمعة <sup>\*</sup> **التطفل على عنوان URL**>: عناوين URL التي تم الكشف عنها مسبقا بواسطة مجموعات [الارتباطات الآمنة](safe-links.md) في مؤسسات Microsoft 365 الأخرى.
+- <sup>\*</sup>**إزالة عنوان URL**: [خزينة اكتشفت الارتباطات](safe-links.md) عنوان URL ضارا في الرسالة أثناء تحليل التعويل.
+- سمعة <sup>\*</sup> **التطفل على عنوان URL**>: تم الكشف مسبقا عن عناوين URL بواسطة [خزينة ارتباطات](safe-links.md) في مؤسسات Microsoft 365 أخرى.
 - **الحملة:**<sup>\*</sup> الرسائل المحددة كجزء من [حملة](campaigns.md).
 
-<sup>\*</sup> Defender ل Office 365 فقط
+<sup>\*</sup>Defender لـ Office 365 فقط
 
 في جدول التفاصيل أسفل المخطط، تتوفر المعلومات التالية:
 
@@ -636,7 +636,7 @@ ms.locfileid: "65941031"
 
 - **تاريخ البدء** **(UTC)** **وتاريخ الانتهاء**
 - **الكشف**: القيم نفسها كما في المخطط.
-- **محمي بواسطة**: **MDO** (Defender ل Office 365) أو **EOP**
+- **محمي بواسطة**: **MDO** (Defender لـ Office 365) أو **EOP**
 - **الاتجاه**:
   - **الكل**
   - **الوارده**
@@ -665,7 +665,7 @@ ms.locfileid: "65941031"
 في **عرض البيانات حسب "التصيد الاحتيالي للبريد الإلكتروني\>"**، **أو عرض البيانات حسب البريد الإلكتروني \> العشوائي**، أو **عرض البيانات بواسطة طرق عرض "البرامج الضارة للبريد الإلكتروني\>**"، يؤدي تحديد **تصنيف المخطط حسب نوع النهج** إلى عرض المعلومات التالية في المخطط:
 
 - **مكافحة البرامج الضارة**
-- **مرفقات آمنة**<sup>\*</sup>
+- **مرفقات خزينة**<sup>\*</sup>
 - **مكافحة التصيد الاحتيالي**
 - **مكافحة البريد العشوائي**
 - **قاعدة تدفق البريد** (تعرف أيضا باسم قاعدة النقل)
@@ -686,7 +686,7 @@ ms.locfileid: "65941031"
 
 - **تاريخ البدء** **(UTC)** **وتاريخ الانتهاء**
 - **الكشف**: الكشف عن قيم التكنولوجيا كما هو موضح سابقا في هذه المقالة وفي [تقنيات الكشف](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies).
-- **محمي بواسطة**: **MDO** (Defender ل Office 365) أو **EOP**
+- **محمي بواسطة**: **MDO** (Defender لـ Office 365) أو **EOP**
 - **الاتجاه**:
   - **الكل**
   - **الوارده**
@@ -704,7 +704,7 @@ ms.locfileid: "65941031"
 - **اسم النهج (طريقة عرض جدول التفاصيل فقط)**: **الكل** أو النهج المحدد.
 - **المستلمين**
 
-<sup>\*</sup> Defender ل Office 365 فقط
+<sup>\*</sup>Defender لـ Office 365 فقط
 
 عند الانتهاء من تكوين عوامل التصفية، انقر فوق **تطبيق** **عوامل التصفية** أو **إلغاؤها** أو مسحها.
 
@@ -741,7 +741,7 @@ ms.locfileid: "65941031"
 
 - **تاريخ البدء** **(UTC)** **وتاريخ الانتهاء**
 - **الكشف**: الكشف عن قيم التكنولوجيا كما هو موضح سابقا في هذه المقالة وفي [تقنيات الكشف](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies).
-- **محمي بواسطة**: **MDO** (Defender ل Office 365) أو **EOP**
+- **محمي بواسطة**: **MDO** (Defender لـ Office 365) أو **EOP**
 - **الاتجاه**:
   - **الكل**
   - **الوارده**
@@ -759,7 +759,7 @@ ms.locfileid: "65941031"
 - **اسم النهج (طريقة عرض جدول التفاصيل فقط)**: **الكل** أو النهج المحدد.
 - **المستلمين**
 
-<sup>\*</sup> Defender ل Office 365 فقط
+<sup>\*</sup>Defender لـ Office 365 فقط
 
 عند الانتهاء من تكوين عوامل التصفية، انقر فوق **تطبيق** **عوامل التصفية** أو **إلغاؤها** أو مسحها.
 
@@ -769,11 +769,11 @@ ms.locfileid: "65941031"
 
 :::image type="content" source="../../media/threat-protection-status-report-content-malware-view.png" alt-text="طريقة عرض المحتوى للبرامج الضارة في تقرير حالة الحماية من التهديدات" lightbox="../../media/threat-protection-status-report-content-malware-view.png":::
 
-في **طريقة عرض البيانات حسب "البرامج الضارة للمحتوى\>**"، يتم عرض المعلومات التالية في المخطط الخاص ب Microsoft Defender لمؤسسات Office 365:
+في **طريقة عرض البيانات حسب "البرامج الضارة للمحتوى\>**"، يتم عرض المعلومات التالية في المخطط الخاص بالمنظمات Microsoft Defender لـ Office 365:
 
-- **محرك مكافحة البرامج الضارة**: تم الكشف عن ملفات ضارة في SharePoint وOneDrive وMicrosoft Teams بواسطة [الكشف المضمن عن الفيروسات في Microsoft 365](virus-detection-in-spo.md).
-- **إزالة MDO**: الملفات الضارة التي تم الكشف عنها بواسطة ["المرفقات الآمنة" ل SharePoint وOneDrive وMicrosoft Teams](mdo-for-spo-odb-and-teams.md).
-- **سمعة الملف**: تحتوي الرسالة على ملف تم تعريفه مسبقا على أنه ضار في مؤسسات Microsoft 365 الأخرى.
+- **محرك مكافحة البرامج الضارة**: تم الكشف عن الملفات الضارة في SharePoint OneDrive Microsoft Teams من خلال [الكشف المضمن عن الفيروسات في Microsoft 365](virus-detection-in-spo.md).
+- **إزالة MDO**: الملفات الضارة التي تم الكشف عنها بواسطة [مرفقات خزينة SharePoint OneDrive Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+- **سمعة الملف**: تحتوي الرسالة على ملف تم تعريفه مسبقا على أنه ضار في مؤسسات Microsoft 365 أخرى.
 
 في جدول التفاصيل أسفل المخطط، تتوفر المعلومات التالية:
 
@@ -788,7 +788,7 @@ ms.locfileid: "65941031"
 
 - **تاريخ البدء** **(UTC)** **وتاريخ الانتهاء**.
 - **الكشف**: القيم نفسها كما في المخطط.
-- **حمل العمل**: **Teams** **وSharePoint** **وOneDrive**
+- **حمل العمل**: **Teams****، SharePoint**، **OneDrive**
 
 عند الانتهاء من تكوين عوامل التصفية، انقر فوق **تطبيق** **عوامل التصفية** أو **إلغاؤها** أو مسحها.
 
@@ -802,12 +802,12 @@ ms.locfileid: "65941031"
 
 - **تخطي محلي**
 - **السماح ب IP**
-- **قاعدة نقل Exchange** (قاعدة تدفق البريد)
+- **Exchange قاعدة النقل** (قاعدة تدفق البريد)
 - **المرسلون المسموح لهم بالمؤسسة**
 - **المجالات المسموح بها للمؤسسة**
 - **لم يتم تمكين ZAP**
-- **المرسل الآمن للمستخدم**
-- **مجال المستخدم الآمن**
+- **مرسل خزينة المستخدم**
+- **مجال خزينة المستخدم**
 - **محاكاة التصيد الاحتيالي**: لمزيد من المعلومات، راجع [تكوين تسليم عمليات محاكاة التصيد الاحتيالي التابعة لجهات خارجية للمستخدمين والرسائل غير المصدقة إلى علب بريد SecOps](configure-advanced-delivery.md).
 - **عامل تصفية جهة خارجية**
 
@@ -865,12 +865,12 @@ ms.locfileid: "65941031"
 - **السبب**
   - **تخطي محلي**
   - **السماح ب IP**
-  - **قاعدة نقل Exchange** (قاعدة تدفق البريد)
+  - **Exchange قاعدة النقل** (قاعدة تدفق البريد)
   - **المرسلون المسموح لهم بالمؤسسة**
   - **المجالات المسموح بها للمؤسسة**
   - **لم يتم تمكين ZAP**
-  - **المرسل الآمن للمستخدم**
-  - **مجال المستخدم الآمن**
+  - **مرسل خزينة المستخدم**
+  - **مجال خزينة المستخدم**
   - **محاكاة التصيد الاحتيالي**: لمزيد من المعلومات، راجع [تكوين تسليم عمليات محاكاة التصيد الاحتيالي التابعة لجهات خارجية للمستخدمين والرسائل غير المصدقة إلى علب بريد SecOps](configure-advanced-delivery.md).
   - **عامل تصفية جهة خارجية**
 - **موقع التسليم**: **لم يتم تمكين مجلد البريد غير الهام** أو **علبة بريد SecOps**.
@@ -883,7 +883,7 @@ ms.locfileid: "65941031"
 - **نوع النهج**:
   - **الكل**
   - **مكافحة البرامج الضارة**
-  - **مرفقات آمنة**<sup>\*</sup>
+  - **مرفقات خزينة**<sup>\*</sup>
   - **مكافحة التصيد الاحتيالي**
   - **مكافحة البريد العشوائي**
   - **قاعدة تدفق البريد** (قاعدة النقل)
@@ -891,7 +891,7 @@ ms.locfileid: "65941031"
 - **اسم النهج (طريقة عرض جدول التفاصيل فقط)**: **الكل**
 - **المستلمين**
 
-<sup>\*</sup> Defender ل Office 365 فقط
+<sup>\*</sup>Defender لـ Office 365 فقط
 
 عند الانتهاء من تكوين عوامل التصفية، انقر فوق **تطبيق** **عوامل التصفية** أو **إلغاؤها** أو مسحها.
 
@@ -901,7 +901,7 @@ ms.locfileid: "65941031"
 
 يعرض تقرير **أفضل البرامج الضارة** الأنواع المختلفة من البرامج الضارة التي تم اكتشافها بواسطة [الحماية من البرامج الضارة في EOP](anti-malware-protection.md).
 
-لعرض التقرير في مدخل Microsoft 365 Defender، انتقل إلى **تقارير** \> **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني & للتعاون**. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **أهم البرامج الضارة** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/TopMalware>.
+لعرض التقرير في مدخل Microsoft 365 Defender، **انتقل إلى** \> تقارير **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني للتقارير**. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **أهم البرامج الضارة** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/TopMalware>.
 
 :::image type="content" source="../../media/top-malware-report-widget.png" alt-text="عنصر واجهة مستخدم البرامج الضارة العلوي في صفحة تقارير التعاون & البريد الإلكتروني" lightbox="../../media/top-malware-report-widget.png":::
 
@@ -920,13 +920,13 @@ ms.locfileid: "65941031"
 
 ## <a name="top-senders-and-recipients-report"></a>تقرير أفضل المرسلين والمستلمين
 
-يتوفر تقرير **أفضل المرسلين والمستلمين** في كل من EOP و Defender ل Office 365؛ ومع ذلك، تحتوي التقارير على بيانات مختلفة. على سبيل المثال، يمكن لعملاء EOP عرض معلومات حول أهم البرامج الضارة والبريد العشوائي والتصيد الاحتيالي (الانتحال)، ولكن ليس معلومات حول البرامج الضارة التي تم الكشف عنها بواسطة ["المرفقات الآمنة](safe-attachments.md) " أو التصيد الاحتيالي الذي تم اكتشافه بواسطة [حماية انتحال](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) الهوية.
+يتوفر تقرير **أفضل المرسلين والمستلمين** في كل من EOP Defender لـ Office 365؛ ومع ذلك، تحتوي التقارير على بيانات مختلفة. على سبيل المثال، يمكن لعملاء EOP عرض معلومات حول أهم البرامج الضارة والبريد العشوائي والتصيد الاحتيالي (الانتحال)، ولكن ليس معلومات حول البرامج الضارة التي تم الكشف عنها بواسطة [خزينة المرفقات](safe-attachments.md) أو التصيد الاحتيالي المكتشف بواسطة [حماية انتحال](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) الهوية.
 
-يعرض **أفضل المرسلين والمستلمين** أهم مرسلي الرسائل في مؤسستك، بالإضافة إلى أفضل المستلمين للرسائل التي تم اكتشافها بواسطة ميزات حماية EOP و Defender ل Office 365. بشكل افتراضي، يعرض التقرير بيانات الأسبوع الماضي، ولكن البيانات متوفرة لآخر 90 يوما.
+يعرض **أفضل المرسلين والمستلمين** أهم مرسلي الرسائل في مؤسستك، بالإضافة إلى أفضل المستلمين للرسائل التي تم اكتشافها بواسطة EOP وميزات حماية Defender لـ Office 365. بشكل افتراضي، يعرض التقرير بيانات الأسبوع الماضي، ولكن البيانات متوفرة لآخر 90 يوما.
 
-لعرض التقرير في مدخل Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى **تقارير** \> **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني** للتعاون. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **تقرير أفضل المرسلين والمستلمين** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح أحد عناوين URL التالية:
+لعرض التقرير في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **تقارير** \> **التعاون & البريد الإلكتروني & &** **التعاون** \> عبر البريد الإلكتروني. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث عن **تقرير أفضل المرسلين والمستلمين** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح أحد عناوين URL التالية:
 
-- Defender ل Office 365: <https://security.microsoft.com/reports/TopSenderRecipientsATP>
+- Defender لـ Office 365:<https://security.microsoft.com/reports/TopSenderRecipientsATP>
 - EOP: <https://security.microsoft.com/reports/TopSenderRecipient>
 
 :::image type="content" source="../../media/top-senders-and-recipients-widget.png" alt-text="عنصر واجهة مستخدم أفضل المرسلين والمستلمين في لوحة معلومات التقارير" lightbox="../../media/top-senders-and-recipients-widget.png":::
@@ -959,16 +959,16 @@ ms.locfileid: "65941031"
 
 ## <a name="url-protection-report"></a>تقرير حماية URL
 
-يتوفر **تقرير حماية URL** فقط في Microsoft Defender ل Office 365. لمزيد من المعلومات، راجع [تقرير حماية عنوان URL](view-reports-for-mdo.md#url-protection-report).
+يتوفر **تقرير حماية URL** فقط في Microsoft Defender لـ Office 365. لمزيد من المعلومات، راجع [تقرير حماية عنوان URL](view-reports-for-mdo.md#url-protection-report).
 
 ## <a name="user-reported-messages-report"></a>تقرير الرسائل التي أبلغ عنها المستخدم
 
 > [!IMPORTANT]
-> لكي يعمل تقرير **الرسائل التي أبلغ عنها المستخدم** بشكل صحيح، **يجب تشغيل تسجيل التدقيق** لبيئة Microsoft 365. يتم ذلك عادة بواسطة شخص لديه دور "سجلات التدقيق" المعين في Exchange Online. لمزيد من المعلومات، راجع [تشغيل البحث في سجل تدقيق Microsoft 365 أو إيقاف تشغيله](../../compliance/turn-audit-log-search-on-or-off.md).
+> لكي يعمل تقرير **الرسائل التي أبلغ عنها المستخدم** بشكل صحيح، **يجب تشغيل تسجيل التدقيق** لبيئة Microsoft 365. يتم ذلك عادة من قبل شخص لديه دور سجلات التدقيق المعين في Exchange Online. لمزيد من المعلومات، راجع [تشغيل البحث في سجل التدقيق Microsoft 365 أو إيقاف تشغيله](../../compliance/turn-audit-log-search-on-or-off.md).
 
 يعرض تقرير **الرسائل التي أبلغ عنها المستخدم** معلومات حول رسائل البريد الإلكتروني التي أبلغ عنها المستخدمون كبريد غير هام أو محاولات تصيد احتيالي أو بريد جيد باستخدام [الوظيفة الإضافية "رسالة التقرير](enable-the-report-message-add-in.md) " أو [الوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي](enable-the-report-phish-add-in.md)".
 
-لعرض التقرير في مدخل Microsoft 365 Defender، انتقل إلى **تقارير** \> **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني & للتعاون**. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث **عن الرسائل التي أبلغ عنها المستخدم** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/userSubmissionReport>. للانتقال إلى [عمليات إرسال المسؤول في مدخل Microsoft 365 Defender](admin-submission.md)، انقر فوق **"الانتقال إلى عمليات الإرسال**".
+لعرض التقرير في مدخل Microsoft 365 Defender، **انتقل إلى** \> تقارير **التعاون** \> **& البريد الإلكتروني & البريد الإلكتروني للتقارير**. في صفحة **تقارير التعاون & البريد الإلكتروني** ، ابحث **عن الرسائل التي أبلغ عنها المستخدم** ثم انقر فوق **"عرض التفاصيل**". للانتقال مباشرة إلى التقرير، افتح <https://security.microsoft.com/reports/userSubmissionReport>. للانتقال إلى [عمليات إرسال المسؤول في مدخل Microsoft 365 Defender](admin-submission.md)، انقر فوق **"الانتقال إلى عمليات الإرسال**".
 
 :::image type="content" source="../../media/user-reported-messages-widget.png" alt-text="عنصر واجهة مستخدم الرسائل التي أبلغ عنها المستخدم في صفحة تقارير التعاون & البريد الإلكتروني" lightbox="../../media/user-reported-messages-widget.png":::
 
@@ -1015,7 +1015,7 @@ ms.locfileid: "65941031"
 - **الإبلاغ عن التصيد الاحتيالي**
 - **الإبلاغ عن البرامج الضارة**
 - **الإبلاغ عن البريد العشوائي**
-- **تشغيل التحقيق** (Defender ل Office 365)
+- **تشغيل التحقيق** (Defender لـ Office 365)
 
 في صفحة **الرسائل التي أبلغ عنها المستخدم** ، أيقونة ![التصدير.](../../media/m365-cc-sc-download-icon.png) الزر **["تصدير](#export-report)**" متوفر.
 
@@ -1030,7 +1030,7 @@ ms.locfileid: "65941031"
 
 لمزيد من المعلومات، راجع [الأذونات في مدخل Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
-**ملاحظة**: إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز إدارة Microsoft 365 يمنح المستخدمين الأذونات المطلوبة في مدخل Microsoft 365 Defender _والأذونات_ للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md).
+**ملاحظة**: إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات المطلوبة في مدخل Microsoft 365 Defender _والأذونات_ للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>ماذا لو لم تعرض التقارير البيانات؟
 
@@ -1061,7 +1061,7 @@ ms.locfileid: "65941031"
 
 لإدارة التقارير المجدولة التي قمت بإنشائها بالفعل، قم بالخطوات التالية:
 
-1. في مدخل Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى **تقارير** \> توسيع **البريد الإلكتروني & التعاون** \> حدد **إدارة الجداول** الزمنية.
+1. في مدخل Microsoft 365 Defender في <https://security.microsoft.com>، انتقل إلى **تقارير** \> توسيع **تعاون** \> البريد الإلكتروني & حدد **"إدارة الجداول".**
 
    للانتقال مباشرة إلى صفحة **إدارة الجداول،** استخدم <https://security.microsoft.com/ManageSubscription>.
 
@@ -1112,7 +1112,7 @@ ms.locfileid: "65941031"
 
 ### <a name="download-reports"></a>تنزيل التقارير
 
-1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **"التقارير**\>" لتوسيع **"البريد الإلكتروني & التعاون**\>" وحدد **"التقارير" لتنزيلها**.
+1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **"التقارير**\>" لتوسيع **التعاون** \> في & البريد الإلكتروني وحدد **"التقارير" للتنزيل**.
 
    للانتقال مباشرة إلى صفحة **"التقارير" للتنزيل** ، استخدم <https://security.microsoft.com/ReportsForDownload>.
 
@@ -1148,4 +1148,4 @@ ms.locfileid: "65941031"
 
 [عرض تقارير تدفق البريد في مدخل Microsoft 365 Defender](view-mail-flow-reports.md)
 
-[عرض تقارير Defender ل Office 365](view-reports-for-mdo.md)
+[عرض التقارير Defender لـ Office 365](view-reports-for-mdo.md)
