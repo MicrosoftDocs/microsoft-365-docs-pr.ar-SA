@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5bce1fc2e9aa149da2bb3ddc28e56fc826ad1768
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 4a0387eac18152599cfd08ba75893f3eae248431
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268849"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102603"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>إنشاء تطبيق للوصول إلى Microsoft Defender لنقطة النهاية بدون مستخدم
 
@@ -148,17 +148,17 @@ $token
 
 ### <a name="use-c"></a>استخدام C#:
 
-تم اختبار التعليمات البرمجية التالية باستخدام NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+تم اختبار التعليمات البرمجية التالية باستخدام NuGet Microsoft.Identity.Client 3.19.8.
 
 > [!IMPORTANT]
 > تم إهمال حزمة [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet ومكتبة مصادقة Azure AD (ADAL). لم تتم إضافة أي ميزات جديدة منذ 30 يونيو 2020.   نحن نشجعك بشدة على الترقية، راجع [دليل الترحيل](/azure/active-directory/develop/msal-migration) للحصول على مزيد من التفاصيل.
 
 1. إنشاء تطبيق وحدة تحكم جديد.
-1. تثبيت NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. تثبيت NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/).
 1. أضف ما يلي:
 
     ```csharp
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 1. انسخ التعليمات البرمجية التالية والصقها في تطبيقك (لا تنس تحديث المتغيرات الثلاثة: ```tenantId, appId, appSecret```):
@@ -167,18 +167,17 @@ $token
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.microsoftonline.com";
-    const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
-    console.write(token)
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
-
-
 ### <a name="use-python"></a>استخدام Python
 
 راجع [الحصول على الرمز المميز باستخدام Python](run-advanced-query-sample-python.md#get-token).

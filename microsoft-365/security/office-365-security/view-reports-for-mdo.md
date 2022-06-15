@@ -21,16 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08fd6e2fed34296b42fb3b12bec9b5b2b4cb91f8
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 551d2f0f2da872ff24da2bd0d691eea775894c08
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535835"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102559"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>عرض تقارير Defender لـ Office 365 في مدخل Microsoft 365 Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
@@ -48,7 +48,7 @@ Microsoft Defender لـ Office 365 المؤسسات (على سبيل المثا�
 
 ### <a name="download-reports"></a>تنزيل التقارير
 
-1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **ReportsEmail** >  **& تقارير التعاون** \> **للتنزيل**. للانتقال مباشرة إلى صفحة **"التقارير" للتنزيل** ، استخدم <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
+في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **تقارير** > **التعاون** \> & **البريد الإلكتروني للتقارير للتنزيل**. للانتقال مباشرة إلى صفحة **"التقارير" للتنزيل** ، استخدم <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
 :::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="صفحة تقارير التعاون & البريد الإلكتروني في مدخل Microsoft 365 Defender" lightbox="../../media/email-collaboration-download-reports.png":::
 
@@ -149,7 +149,7 @@ Microsoft Defender لـ Office 365 المؤسسات (على سبيل المثا�
 - **محظور**: انقر فوق محظور.
 - **محظور من قبل مسؤول المستأجر**: النقرات المحظورة في نهج الارتباطات خزينة.
 - **تم حظره والنقر فوقه**: نقرات محظورة حيث ينقر المستخدمون عبر عنوان URL المحظور.
-- **تم حظره من قبل مسؤول المستأجر والنقر فوقه**: قام المسؤول بحظر الارتباط، ولكن المستخدم قام بالنقر عبره.
+- **تم حظره من قبل مسؤول المستأجر والنقر فوقه**: قام مسؤول بحظر الارتباط، ولكن المستخدم قام بالنقر عبره.
 - **تم النقر خلال الفحص**: النقر فوق المكان الذي ينقر فيه المستخدمون عبر صفحة الفحص المعلقة إلى عنوان URL.
 - **الفحص المعلق**: النقر فوق عناوين URL التي تنتظر حكم الفحص.
 
@@ -224,7 +224,7 @@ Microsoft Defender لـ Office 365 المؤسسات (على سبيل المثا�
 
 |تقرير|الموضوع|
 |---|---|
-|أفضل المرسلين والمستلمين|[Get-MailTrafficTopReport](/powershell/module/exchange/get-mailtraffictopreport) <p> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|أفضل المرسلين والمستلمين|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |أهم البرامج الضارة|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |نسبة استخدام البريد|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <p> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |الارتباطات الآمنة|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|

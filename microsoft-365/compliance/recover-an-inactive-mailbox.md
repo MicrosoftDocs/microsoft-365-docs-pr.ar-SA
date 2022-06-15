@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: تعرف على كيفية استرداد محتويات علبة بريد غير نشطة في Office 365 عن طريق تحويلها إلى علبة بريد جديدة تحتوي على محتويات علبة البريد غير النشطة.
-ms.openlocfilehash: 027abe49a6e517a783f6458013bdcb4d0faee78b
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2c679407cb4f7203bb69d88c871bd844694a7c47
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435380"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101537"
 ---
 # <a name="recover-an-inactive-mailbox"></a>استرداد علبة بريد غير نشطة
 
@@ -109,7 +109,7 @@ ms.locfileid: "65435380"
   Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | Format-List ExternalDirectoryObjectId
   ```
     
-    - إذا كانت هناك قيمة **لخاصية ExternalDirectoryObjectId** ، فقد انتهت مدة الاحتفاظ بعلبة البريد، ويمكنك استرداد علبة البريد غير النشطة عن طريق تشغيل الأمر **"علبة بريد جديدة -غير نشطة** ".
+    - إذا لم تكن هناك قيمة **للخاصية ExternalDirectoryObjectId** ، فقد انتهت مدة الاحتفاظ بعلبة البريد، ويمكنك استرداد علبة البريد غير النشطة عن طريق تشغيل الأمر **"علبة بريد جديدة -غير نشطة** ".
     - إذا كانت هناك قيمة **للخاصية ExternalDirectoryObjectId** ، لم تنته فترة استبقاء علبة البريد المحذوفة مبدئيا ويجب عليك استرداد علبة البريد عن طريق [استعادة حساب المستخدم](../admin/add-users/delete-a-user.md).
 
 - **ضع في اعتبارك تمكين علبة بريد الأرشيف بعد استرداد علبة بريد غير نشطة.** يتيح هذا للمستخدم أو الموظف الجديد الذي يتم إرجاعه نقل الرسائل القديمة إلى علبة بريد الأرشيف. وعند انتهاء صلاحية الاحتفاظ، سينقل نهج الأرشيف الذي يعد جزءا من نهج استبقاء MRM Exchange الافتراضي المعين إلى علب بريد Exchange Online العناصر التي تبلغ مدتها عامين أو أكثر إلى علبة بريد الأرشيف. إذا لم تقم بتمكين علبة بريد الأرشيف، فستبقى العناصر الأقدم من عامين في علبة البريد الأساسية للمستخدم. لمزيد من المعلومات، راجع [تمكين علب بريد الأرشيف](enable-archive-mailboxes.md).

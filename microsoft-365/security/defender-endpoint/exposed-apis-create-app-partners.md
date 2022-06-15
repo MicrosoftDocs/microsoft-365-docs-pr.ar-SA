@@ -1,7 +1,7 @@
 ---
-title: إنشاء تطبيق للوصول إلى Microsoft Defender لنقطة النهاية بدون مستخدم
+title: وصول الشريك من خلال واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية
 ms.reviewer: ''
-description: تعرف على كيفية تصميم تطبيق ويب للحصول على وصول برمجي إلى Microsoft Defender لنقطة النهاية دون مستخدم.
+description: تعرف على كيفية تصميم تطبيق ويب للحصول على وصول برمجي إلى Microsoft Defender لنقطة النهاية نيابة عن المستخدمين.
 keywords: واجهة برمجة التطبيقات، واجهة برمجة تطبيقات الرسم البياني، واجهة برمجة التطبيقات المدعومة، الفاعل، التنبيهات، الجهاز، المستخدم، المجال، ip، الملف، التتبع المتقدم، الاستعلام
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5f17f29f083df6e567218363027e7677c87ee154
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 7ca212cf6cdacdaf374dbe65f4fd88c74712bb34
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268848"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101811"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>وصول الشريك من خلال واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية
 
@@ -140,7 +140,7 @@ Microsoft Defender لنقطة النهاية يكشف الكثير من بيان
 
 **ملاحظه:** للحصول على رمز الوصول نيابة عن العميل الخاص بك، استخدم معرف المستأجر الخاص بالعميل على عمليات الاستحواذ على الرمز المميز التالي.
 
-لمزيد من المعلومات حول الرمز المميز AAD (دليل Azure النشط)، راجع [AAD (دليل Azure النشط) البرنامج التعليمي](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+لمزيد من المعلومات حول رمز AAD المميز، راجع [برنامج AAD التعليمي](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-powershell"></a>استخدام PowerShell
 
@@ -168,33 +168,35 @@ return $token
 
 ### <a name="using-c"></a>استخدام C #
 
-> تم اختبار التعليمات البرمجية أدناه باستخدام Nuget Microsoft.IdentityModel.Clients.ActiveDirectory
+> تم اختبار التعليمات البرمجية أدناه باستخدام Nuget Microsoft.Identity.Client
 
 > [!IMPORTANT]
-> تم إهمال حزمة [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet ومكتبة مصادقة Azure AD (ADAL). لم تتم إضافة أي ميزات جديدة منذ 30 يونيو 2020.   نحن نشجعك بشدة على الترقية، راجع [دليل الترحيل](/azure/active-directory/develop/msal-migration) للحصول على مزيد من التفاصيل.
+> تم إهمال حزمة [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet ومكتبة مصادقة Azure AD (ADAL). لم تتم إضافة أي ميزات جديدة منذ 30 يونيو 2020. نحن نشجعك بشدة على الترقية، راجع [دليل الترحيل](/azure/active-directory/develop/msal-migration) للحصول على مزيد من التفاصيل.
 
 - إنشاء تطبيق وحدة تحكم جديد
-- تثبيت NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
+- تثبيت NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/)
 - إضافة ما يلي باستخدام
 
     ```console
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 - نسخ/لصق التعليمات البرمجية أدناه في التطبيق الخاص بك (لا تنس تحديث المتغيرات الثلاثة: `tenantId`، `appId`و `appSecret`)
 
-    ```console
+    ```csharp
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.microsoftonline.com";
-    const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
 
 ### <a name="using-python"></a>استخدام Python

@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ad165fcdca11edbafd55a5cb0d37d12d0fba49c3
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: c56c855983e27a3882796cd1e222c97305a627c4
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090575"
+ms.locfileid: "66101544"
 ---
 # <a name="microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview حلول المخاطر والتوافق
 
@@ -57,6 +57,12 @@ ms.locfileid: "66090575"
 يوفر لك [إدارة دورة البيانات في Microsoft Purview](/microsoft-365/compliance/manage-data-governance#microsoft-purview-data-lifecycle-management) (المعروف سابقا ب Microsoft Information Governance) أدوات وإمكانيات للاحتفاظ بالمحتوى وحذفه عبر Exchange، SharePoint، OneDrive، مجموعات Microsoft 365، Teams، Yammer. غالبا ما تكون هناك حاجة إلى الاحتفاظ برسائل البريد الإلكتروني والمستندات والرسائل وحذفها للمتطلبات التنظيمية والتوافق. ومع ذلك، فإن حذف المحتوى الذي لم يعد له قيمة تجارية يقلل أيضا من سطح الهجوم.
 
 لمزيد من المعلومات، راجع [التعرف على إدارة دورة حياة البيانات](/microsoft-365/compliance/data-lifecycle-management).
+
+### <a name="encrypt-your-data-and-control-your-encryption-keys"></a>تشفير بياناتك والتحكم في مفاتيح التشفير
+
+[يعد التشفير](/microsoft-365/compliance/encryption) جزءا مهما من استراتيجية حماية الملفات وحماية المعلومات. ترميز عملية التشفير بياناتك (يشار إليها بنص عادي) في شفرة. على عكس النص العادي، لا يمكن استخدام شفرة التشفير من قبل الأشخاص أو أجهزة الكمبيوتر ما لم يتم فك تشفير النص المشفر وحتى يتم فك تشفيره. يتطلب فك التشفير مفتاح تشفير يملكه المستخدمون المعتمدون فقط. يساعد التشفير على التأكد من أن المستلمين المخولين فقط يمكنهم فك تشفير المحتوى الخاص بك.
+
+[يساعد Microsoft Purview تشفير المفتاح المزدوج](/microsoft-365/compliance/double-key-encryption) على تأمين البيانات الأكثر حساسية التي تخضع لمتطلبات الحماية الأكثر صرامة. [يساعدك Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview) على الوفاء بالالتزامات التنظيمية أو الامتثال للتحكم في مفاتيح الجذر. يمكنك تخويل خدمات Microsoft 365 صراحة لاستخدام مفاتيح التشفير الخاصة بك لتوفير خدمات سحابية ذات قيمة مضافة، مثل eDiscovery ومكافحة البرامج الضارة ومكافحة البريد العشوائي وفهرسة البحث وما إلى ذلك.
 
 ## <a name="identify-data-risks-and-manage-regulatory-compliance-requirements"></a>تحديد مخاطر البيانات وإدارة متطلبات الامتثال التنظيمي
 

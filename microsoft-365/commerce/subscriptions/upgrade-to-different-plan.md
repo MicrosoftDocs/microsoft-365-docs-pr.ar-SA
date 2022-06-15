@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: أسهل طريقة لترقية الخطط هي استخدام علامة التبويب "ترقية" في مركز الإدارة. ومع ذلك، فإن علامة التبويب "ترقية" غير معتمدة دائما.
 ms.date: 04/21/2021
-ms.openlocfilehash: 1867a161f8de02e20261553bb4dbb10b92ce523f
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 4578730d82fddd5bdd3d0d25dd7fd1e16414808b
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042385"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102237"
 ---
 # <a name="upgrade-to-a-different-plan"></a>ترقية العضوية إلى خطة أخرى.
 
@@ -36,7 +36,7 @@ ms.locfileid: "66042385"
 
 عند استخدام علامة التبويب **"ترقية** "، تتم قيادة عملية شراء خطة جديدة. يتم تعيين تراخيص لجميع المستخدمين تلقائيا في الخطة الجديدة، ويتم إلغاء خطتك القديمة نيابة عنك.
 
-1. في مركز الإدارة، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">لمنتجاتك</a> .
+1. في مركز مسؤول، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">لمنتجاتك</a>.
 2. حدد الاشتراك الذي تريد ترقيتها.
 3. في صفحة تفاصيل الاشتراك، ضمن **تفاصيل المنتج وترقياته**، حدد **عرض الترقيات الموصى بها لمؤسستك**.
 4. ابحث عن الخطة التي تريد الترقية إليها، ثم حدد الزر **"ترقية** ".

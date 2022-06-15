@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 1fb5e5087d03842832e89a3982826df1e94b857c
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 05450912d78e7da774de76e02dfe4d42a1569084
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268809"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102383"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>إنشاء تطبيق للوصول إلى Microsoft 365 Defender بدون مستخدم
 
@@ -61,13 +61,13 @@ Microsoft 365 Defender يكشف الكثير من بياناته وإجراءا�
 
 1. سجل الدخول إلى [Azure](https://portal.azure.com) كمستخدم باستخدام دور **المسؤول العام** .
 
-2. انتقل إلى **تسجيلات** >  **Azure Active DirectoryAppNew** > .
+2. انتقل إلى **تسجيلات** >  تطبيق **Azure Active Directory** > **الجديدة**.
 
    :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="علامة تبويب التسجيل الجديدة في مدخل Microsoft 365 Defender" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. في النموذج، اختر اسما للتطبيق الخاص بك، ثم حدد **"تسجيل**".
 
-4. في صفحة التطبيق، حدد **API PermissionsAdd** >  **permissionAPIs** >  **التي تستخدمها مؤسستي** >، واكتب **Microsoft Threat Protection**، وحدد **Microsoft Threat Protection**. يمكن لتطبيقك الآن الوصول إلى Microsoft 365 Defender.
+4. في صفحة التطبيق، حدد **API Permissions** > **Add permission** > **APIs التي تستخدمها مؤسستي** >، واكتب **Microsoft Threat Protection**، وحدد **Microsoft Threat Protection**. يمكن لتطبيقك الآن الوصول إلى Microsoft 365 Defender.
 
    > [!TIP]
    > *Microsoft Threat Protection* هو اسم سابق Microsoft 365 Defender، ولن يظهر في القائمة الأصلية. يجب أن تبدأ بكتابة اسمه في مربع النص لكي يظهر.
@@ -155,35 +155,38 @@ return $token
 ### <a name="get-an-access-token-using-c"></a>الحصول على رمز مميز للوصول باستخدام C\#
 
 > [!NOTE]
-> تم اختبار التعليمات البرمجية التالية مع Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8.
+> تم اختبار التعليمات البرمجية التالية مع Nuget Microsoft.Identity.Client 3.19.8.
 
 > [!IMPORTANT]
 > تم إهمال حزمة [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet ومكتبة مصادقة Azure AD (ADAL). لم تتم إضافة أي ميزات جديدة منذ 30 يونيو 2020.   نحن نشجعك بشدة على الترقية، راجع [دليل الترحيل](/azure/active-directory/develop/msal-migration) للحصول على مزيد من التفاصيل.
 
 1. إنشاء تطبيق وحدة تحكم جديد.
 
-1. تثبيت NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. تثبيت NuGet [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/).
 
 1. أضف السطر التالي:
 
     ```C#
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 1. انسخ التعليمات البرمجية التالية والصقها في تطبيقك (لا تنس تحديث المتغيرات الثلاثة: `tenantId`، ، `clientId``appSecret`:
 
     ```C#
-    string tenantId = ""; // Paste your directory (tenant) ID here
-    string clientId = ""; // Paste your application (client) ID here
-    string appSecret = ""; // Paste your own app secret here to test, then store it in a safe place, such as the Azure Key Vault!
+    csharp
+    string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
+    string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.windows.net";
-    const string wdatpResourceId = "https://api.security.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(clientId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
 
 ### <a name="get-an-access-token-using-python"></a>الحصول على رمز مميز للوصول باستخدام Python

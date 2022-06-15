@@ -1,7 +1,7 @@
 ---
-title: إنشاء تطبيق للوصول Microsoft 365 Defender واجهات برمجة التطبيقات بالنيابة عن المستخدم
-description: تعرف على كيفية الوصول Microsoft 365 Defender واجهات برمجة التطبيقات بالنيابة عن المستخدم.
-keywords: الوصول، نيابة عن المستخدم، واجهة برمجة التطبيقات، التطبيق، المستخدم، رمز الوصول المميز، الرمز المميز،
+title: إنشاء تطبيق للوصول إلى واجهات برمجة التطبيقات Microsoft 365 Defender نيابة عن مستخدم
+description: تعرف على كيفية الوصول إلى واجهات برمجة التطبيقات Microsoft 365 Defender نيابة عن مستخدم.
+keywords: الوصول، نيابة عن المستخدم، واجهة برمجة التطبيقات، التطبيق، المستخدم، الرمز المميز للوصول، الرمز المميز،
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: fdba7ee1b1cf2f46bd17c648c7cda48f1ca65490
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 41f2763d73bbb9ed0b7ae32dce431cb2c1a4d71f
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755230"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102581"
 ---
-# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>إنشاء تطبيق للوصول Microsoft 365 Defender واجهات برمجة التطبيقات بالنيابة عن المستخدم
+# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>إنشاء تطبيق للوصول إلى واجهات برمجة التطبيقات Microsoft 365 Defender نيابة عن مستخدم
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,108 +37,111 @@ ms.locfileid: "63755230"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> تتعلق بعض المعلومات بالمنتج الذي تم إصداره مسبقا والذي قد يتم تعديله بشكل كبير قبل طرحه تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، فيما يتعلق بالمعلومات المتوفرة هنا.
+> تتعلق بعض المعلومات بالناتج الذي تم إصداره مسبقا والذي قد يتم تعديله بشكل كبير قبل إصداره تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، فيما يتعلق بالمعلومات المقدمة هنا.
 
 تصف هذه الصفحة كيفية إنشاء تطبيق للحصول على وصول برمجي إلى Microsoft 365 Defender نيابة عن مستخدم واحد.
 
-إذا كنت بحاجة إلى الوصول Microsoft 365 Defender بدون مستخدم محدد (على سبيل المثال، إذا كنت تكتب تطبيق خلفية أو daemon)، فشاهد إنشاء تطبيق للوصول إلى Microsoft 365 Defender بدون [مستخدم](api-create-app-web.md). إذا كنت بحاجة إلى توفير الوصول لمستأجرين متعددين — على سبيل المثال، إذا كنت تعمل في مؤسسة كبيرة أو مجموعة من العملاء — فشاهد إنشاء تطبيق مع وصول الشريك [إلى Microsoft 365 Defender واجهات برمجة التطبيقات](api-partner-access.md). إذا لم تكن متأكدا من نوع الوصول الذي تحتاج إليه، فشاهد [بدء العمل](api-access.md).
+إذا كنت بحاجة إلى وصول برمجي إلى Microsoft 365 Defender بدون مستخدم محدد (على سبيل المثال، إذا كنت تكتب تطبيق خلفية أو برنامج خفي)، فراجع [إنشاء تطبيق للوصول إلى Microsoft 365 Defender دون مستخدم](api-create-app-web.md). إذا كنت بحاجة إلى توفير الوصول لمستأجرين متعددين، على سبيل المثال، إذا كنت تخدم مؤسسة كبيرة أو مجموعة من العملاء، فراجع [إنشاء تطبيق مع وصول الشريك إلى واجهات برمجة التطبيقات Microsoft 365 Defender](api-partner-access.md). إذا لم تكن متأكدا من نوع الوصول الذي تحتاجه، فراجع ["بدء الاستخدام](api-access.md)".
 
-Microsoft 365 Defender البيانات والإجراءات من خلال مجموعة من واجهات برمجة التطبيقات البرنامجية. تساعدك واجهات برمجة التطبيقات هذه على أتمتة مهام سير العمل واستخدام Microsoft 365 Defender الخاصة بها. يتطلب الوصول إلى API مصادقة OAuth2.0. لمزيد من المعلومات، راجع [رمز التخويل ل OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender يكشف الكثير من بياناته وإجراءاته من خلال مجموعة من واجهات برمجة التطبيقات البرمجية. تساعدك واجهات برمجة التطبيقات هذه على أتمتة مهام سير العمل والاستفادة من قدرات Microsoft 365 Defender. يتطلب الوصول إلى واجهة برمجة التطبيقات هذا مصادقة OAuth2.0. لمزيد من المعلومات، راجع [التعليمة البرمجية للتخويل OAuth 2.0 Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-بشكل عام، ستحتاج إلى اتخاذ الخطوات التالية لاستخدام واجهات برمجة التطبيقات التالية:
+بشكل عام، ستحتاج إلى اتخاذ الخطوات التالية لاستخدام واجهات برمجة التطبيقات هذه:
 
 - إنشاء تطبيق Azure Active Directory (Azure AD).
-- احصل على رمز وصول مميز باستخدام هذا التطبيق.
-- استخدم الرمز المميز للوصول إلى Microsoft 365 Defender API.
+- احصل على رمز مميز للوصول باستخدام هذا التطبيق.
+- استخدم الرمز المميز للوصول إلى واجهة برمجة تطبيقات Microsoft 365 Defender.
 
 تشرح هذه المقالة كيفية:
 
 - إنشاء تطبيق Azure AD
-- احصل على رمز وصول مميز Microsoft 365 Defender
+- الحصول على رمز مميز للوصول إلى Microsoft 365 Defender
 - التحقق من صحة الرمز المميز
 
 > [!NOTE]
-> عند الوصول إلى Microsoft 365 Defender API نيابة عن المستخدم، ستحتاج إلى أذونات التطبيق وأذونات المستخدم الصحيحة.
+> عند الوصول إلى واجهة برمجة تطبيقات Microsoft 365 Defender نيابة عن مستخدم، ستحتاج إلى أذونات التطبيق وأذونات المستخدم الصحيحة.
 
 > [!TIP]
-> إذا كان لديك الإذن لتنفيذ إجراء في المدخل، لديك الإذن لتنفيذ الإجراء في API.
+> إذا كان لديك الإذن لتنفيذ إجراء في المدخل، فلديك الإذن لتنفيذ الإجراء في واجهة برمجة التطبيقات.
 
 ## <a name="create-an-app"></a>إنشاء تطبيق
 
-1. سجل الدخول إلى [Azure](https://portal.azure.com) كمستخدم باستخدام **دور المسؤول** العام.
+1. سجل الدخول إلى [Azure](https://portal.azure.com) كمستخدم باستخدام دور **المسؤول العام** .
 
-2. انتقل إلى **تسجيلات Azure Active DirectoryApp** >  >  **التسجيل الجديد**.
+2. انتقل إلى **تسجيلات** >  تطبيق **Azure Active Directory** > **الجديدة**.
 
-   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="خيار التسجيل &quot;جديد&quot; في الجزء &quot;إدارة&quot; في مدخل Azure" lightbox="../../media/atp-azure-new-app2.png":::
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="خيار التسجيل الجديد في الجزء &quot;إدارة&quot; في مدخل Azure" lightbox="../../media/atp-azure-new-app2.png":::
 
-3. في النموذج، اختر اسما للتطبيق وأدخل المعلومات التالية لمعاينة إعادة التوجيه، ثم حدد **تسجيل**.
+3. في النموذج، اختر اسما للتطبيق الخاص بك وأدخل المعلومات التالية ل URI إعادة التوجيه، ثم حدد **"تسجيل**".
 
    :::image type="content" source="../../media/nativeapp-create2.PNG" alt-text="جزء تسجيل التطبيق في مدخل Azure" lightbox="../../media/nativeapp-create2.PNG":::
    
 
-   - **نوع التطبيق:** عميل عام
+   - **نوع التطبيق:** العميل العام
    - **إعادة توجيه URI:** https://portal.azure.com
 
-4. في صفحة التطبيق الخاصة بك، حدد أذونات **APIAdd** >  **permissionAPIs** >  **تستخدم >**، وا اكتب الحماية من المخاطر من **Microsoft**، وحدد **الحماية من المخاطر من Microsoft**. يمكن لتطبيقك الآن الوصول إلى Microsoft 365 Defender.
+4. في صفحة التطبيق، حدد **API Permissions** > **Add permission** > **APIs التي تستخدمها مؤسستي** >، واكتب **Microsoft Threat Protection**، وحدد **Microsoft Threat Protection**. يمكن لتطبيقك الآن الوصول إلى Microsoft 365 Defender.
 
    > [!TIP]
-   > *Microsoft Threat Protection* هو اسم سابق Microsoft 365 Defender، ولن يظهر في القائمة الأصلية. ستحتاج إلى بدء كتابة اسمه في مربع النص لكي يظهر.
+   > *Microsoft Threat Protection* هو اسم سابق Microsoft 365 Defender، ولن يظهر في القائمة الأصلية. يجب أن تبدأ بكتابة اسمه في مربع النص لكي يظهر.
 
-   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="جزء واجهات برمجة التطبيقات في مؤسستك في مدخل Microsoft 365 Defender" lightbox="../../media/apis-in-my-org-tab.PNG":::
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="جزء واجهات برمجة التطبيقات لمؤسستك في مدخل Microsoft 365 Defender" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
-   - اختر **الأذونات المفوضة**. اختر الأذونات ذات الصلة في السيناريو (على سبيل المثال **Incident.Read**)، ثم حدد **إضافة أذونات**.
+   - اختر **الأذونات المفوضة**. اختر الأذونات ذات الصلة للسيناريو (على سبيل المثال **Incident.Read**)، ثم حدد **"Add permissions**".
 
      :::image type="content" source="../../media/request-api-permissions-delegated.PNG" alt-text="جزء الأذونات المفوضة في مدخل Microsoft 365 Defender" lightbox="../../media/request-api-permissions-delegated.PNG":::
 
     > [!NOTE]
-    > أنت بحاجة إلى تحديد الأذونات ذات الصلة في السيناريو الخاص بك. *ما عليك سوى قراءة كل* الأحداث كمثال. لتحديد الإذن الذي تحتاج إليه، يرجى الاطلاع على قسم **الأذونات** في API الذي تريد الاتصال به.
+    > تحتاج إلى تحديد الأذونات ذات الصلة للسيناريو الخاص بك. *قراءة جميع الحوادث* هي مجرد مثال. لتحديد الإذن الذي تحتاج إليه، يرجى مراجعة قسم **الأذونات** في واجهة برمجة التطبيقات التي تريد الاتصال بها.
     >
-    > على سبيل المثال، لتشغيل [استعلامات متقدمة](api-advanced-hunting.md)، حدد الإذن "تشغيل الاستعلامات المتقدمة"؛ [لعزل جهاز،](/windows/security/threat-protection/microsoft-defender-atp/isolate-machine) حدد الإذن 'عزل الجهاز'.
+    > على سبيل المثال، [لتشغيل الاستعلامات المتقدمة](api-advanced-hunting.md)، حدد إذن "تشغيل الاستعلامات المتقدمة"؛ [لعزل جهاز](/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)، حدد إذن "عزل الجهاز".
 
-5. حدد **منح موافقة المسؤول**. في كل مرة تضيف فيها إذنا، يجب تحديد **منح موافقة** المسؤول لكي يتم هذا الأمر.
+5. حدد **منح موافقة المسؤول**. في كل مرة تضيف فيها إذنا، يجب تحديد **منح موافقة المسؤول** لكي يدخل حيز التنفيذ.
 
    :::image type="content" source="../../media/grant-consent-delegated.PNG" alt-text="جزء منح موافقة المسؤول في مدخل Microsoft 365 Defender" lightbox="../../media/grant-consent-delegated.PNG":::
 
-6. سجل "رقم التطبيق" وم ID المستأجر الخاص بك في مكان آمن. يتم سردها ضمن **نظرة عامة** على صفحة التطبيق.
+6. سجل معرف التطبيق الخاص بك ومعرف المستأجر الخاص بك في مكان آمن. يتم سردها ضمن **نظرة عامة** على صفحة التطبيق الخاص بك.
 
-   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="الجزء &quot;نظرة عامة&quot; في مدخل Microsoft 365 Defender" lightbox="../../media/app-and-tenant-ids.png":::
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="جزء النظرة العامة في مدخل Microsoft 365 Defender" lightbox="../../media/app-and-tenant-ids.png":::
 
-## <a name="get-an-access-token"></a>الحصول على رمز وصول مميز
+## <a name="get-an-access-token"></a>الحصول على رمز مميز للوصول
 
-لمزيد من المعلومات حول رموز Azure Active Directory المميزة، راجع البرنامج التعليمي [Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+لمزيد من المعلومات حول الرموز المميزة ل Azure Active Directory، راجع [البرنامج التعليمي Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
-### <a name="get-an-access-token-using-powershell"></a>الحصول على رمز وصول مميز باستخدام PowerShell
+### <a name="get-an-access-token-on-behalf-of-a-user-using-powershell"></a>الحصول على رمز مميز للوصول نيابة عن مستخدم يستخدم PowerShell
+
+استخدم مكتبة MSAL.PS للحصول على رموز الوصول المميزة ذات الأذونات المفوضة. قم بتشغيل الأوامر التالية للحصول على رمز الوصول المميز نيابة عن مستخدم:
 
 ```PowerShell
-if(!(Get-Package adal.ps)) { Install-Package -Name adal.ps } # Install the ADAL.PS package in case it's not already present
+Install-Module -Name MSAL.PS # Install the MSAL.PS module from PowerShell Gallery
 
-$tenantId = '' # Paste your directory (tenant) ID here.
-$clientId = '' # Paste your application (client) ID here.
-$redirectUri = '' # Paste your app's redirection URI
+$TenantId = " " # Paste your directory (tenant) ID here.
+$AppClientId="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" # Paste your application (client) ID here.
 
-$authority = "https://login.windows.net/$tenantId"
-$resourceUrl = 'https://api.security.microsoft.com'
+$MsalParams = @{
+   ClientId = $AppClientId
+   TenantId = $TenantId
+   Scopes   = 'https://graph.microsoft.com/User.Read.All','https://graph.microsoft.com/Files.ReadWrite'
+}
 
-$response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
-$response.AccessToken | clip
-
-$response.AccessToken
+$MsalResponse = Get-MsalToken @MsalParams
+$AccessToken  = $MsalResponse.AccessToken
+ 
+$AccessToken # Display the token in PS console
 ```
-
 ## <a name="validate-the-token"></a>التحقق من صحة الرمز المميز
 
 1. انسخ الرمز المميز والصقه في [JWT](https://jwt.ms) لفك ترميزه.
-1. تأكد من أن *ادعاء الأدوار* ضمن الرمز المميز الذي تم فك فك تشفيره يحتوي على الأذونات المطلوبة.
+2. تأكد من أن المطالبة *بالأدوار* داخل الرمز المميز الذي تم فك تشفيره يحتوي على الأذونات المطلوبة.
 
-في الصورة التالية، يمكنك رؤية رمز مميز تم فك تشفيره تم الحصول عليه من تطبيق، باستخدام ```Incidents.Read.All```، ```Incidents.ReadWrite.All```و، وأذونات ```AdvancedHunting.Read.All``` :
+في الصورة التالية، يمكنك مشاهدة رمز مميز تم فك تشفيره تم الحصول عليه من تطبيق، باستخدام ```Incidents.Read.All```، ```Incidents.ReadWrite.All```وأذونات ```AdvancedHunting.Read.All``` :
 
-:::image type="content" source="../../media/defender-endpoint/webapp-decoded-token.png" alt-text="مقطع الأذونات في جزء الرمز المميز المفكك في مدخل Microsoft 365 Defender" lightbox="../../media/defender-endpoint/webapp-decoded-token.png":::
+:::image type="content" source="../../media/defender-endpoint/webapp-decoded-token.png" alt-text="قسم الأذونات في جزء الرمز المميز الذي تم فك ترميزه في مدخل Microsoft 365 Defender" lightbox="../../media/defender-endpoint/webapp-decoded-token.png":::
 
-## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>استخدام الرمز المميز للوصول إلى Microsoft 365 Defender API
+## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>استخدم الرمز المميز للوصول إلى واجهة برمجة تطبيقات Microsoft 365 Defender
 
-1. اختر API الذي تريد استخدامه (الأحداث أو الصيد المتقدم). لمزيد من المعلومات، راجع [واجهات Microsoft 365 Defender برمجة التطبيقات المعتمدة](api-supported.md).
-2. في طلب http الذي أنت `"Bearer" <token>`على وشك إرساله، قم بتعيين رأس التخويل إلى ، *يكون Bearer* هو نظام التخويل، والرمز *المميز هو الرمز* المميز الذي تم التحقق من صحته.
-3. ستنتهي صلاحية الرمز المميز في غضون ساعة واحدة. يمكنك إرسال أكثر من طلب واحد خلال هذه الفترة بنفس الرمز المميز.
+1. اختر واجهة برمجة التطبيقات التي تريد استخدامها (الحوادث أو التتبع المتقدم). لمزيد من المعلومات، راجع [واجهات برمجة التطبيقات Microsoft 365 Defender المعتمدة](api-supported.md).
+2. في طلب http الذي أنت على وشك إرساله، قم بتعيين رأس التخويل إلى `"Bearer" <token>`، و *Bearer* هو نظام التخويل ، *والرمز المميز* الذي تم التحقق من صحته.
+3. ستنتهي صلاحية الرمز المميز في غضون ساعة واحدة. يمكنك إرسال أكثر من طلب واحد خلال هذا الوقت بنفس الرمز المميز.
 
 يوضح المثال التالي كيفية إرسال طلب للحصول على قائمة بالحوادث **باستخدام C#**.
 
@@ -153,11 +156,11 @@ $response.AccessToken
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 
-- [Microsoft 365 Defender نظرة عامة على واجهات برمجة التطبيقات](api-overview.md)
-- [الوصول إلى Microsoft 365 Defender واجهات برمجة التطبيقات](api-access.md)
+- [نظرة عامة على واجهات برمجة التطبيقات Microsoft 365 Defender](api-overview.md)
+- [الوصول إلى واجهات برمجة التطبيقات Microsoft 365 Defender](api-access.md)
 - [إنشاء تطبيق 'Hello world'](api-hello-world.md)
 - [إنشاء تطبيق للوصول إلى Microsoft 365 Defender بدون مستخدم](api-create-app-web.md)
-- [إنشاء تطبيق مع وصول شريك متعدد المستأجرين إلى Microsoft 365 Defender واجهات برمجة التطبيقات](api-partner-access.md)
-- [التعرف على حدود API والترخيص](api-terms.md)
-- [فهم رموز الخطأ](api-error-codes.md)
-- [تخويل OAuth 2.0 تسجيل دخول المستخدم والوصول إلى API](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [إنشاء تطبيق مع وصول شريك متعدد المستأجرين إلى واجهات برمجة التطبيقات Microsoft 365 Defender](api-partner-access.md)
+- [التعرف على حدود واجهة برمجة التطبيقات والترخيص](api-terms.md)
+- [فهم رموز الأخطاء](api-error-codes.md)
+- [تخويل OAuth 2.0 لتسجيل دخول المستخدم والوصول إلى واجهة برمجة التطبيقات](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

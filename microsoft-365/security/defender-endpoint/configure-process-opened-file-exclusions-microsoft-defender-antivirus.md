@@ -15,19 +15,19 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6faca5dde477908010f4426ff9009f383b63c58c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0dd59d2196ebb2c2af80fb53d43a009ff3a367d0
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418599"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102310"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>تكوين استثناءات للملفات التي يتم فتحها بواسطة العمليات
 
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -39,8 +39,6 @@ ms.locfileid: "65418599"
 تصف هذه المقالة كيفية تكوين قوائم الاستبعاد.
 
 ## <a name="examples-of-exclusions"></a>أمثلة على الاستثناءات
-
-<br/><br/>
 
 |الاستبعاد|المثال|
 |---|---|
@@ -99,8 +97,6 @@ ms.locfileid: "65418599"
 
 يسمح بما يلي ك \<cmdlet\>:
 
-<br/><br/>
-
 |إجراء التكوين|PowerShell cmdlet|
 |---|---|
 |إنشاء القائمة أو الكتابة فوقها|`Set-MpPreference`|
@@ -141,8 +137,6 @@ ExclusionProcess
 على وجه الخصوص، لا يمكنك استخدام حرف البدل (`?`) علامة الاستفهام، ولا يمكن استخدام حرف البدل () النجمي إلا`*` في نهاية مسار كامل. لا يزال بإمكانك استخدام متغيرات البيئة (مثل `%ALLUSERSPROFILE%`) كأحرف البدل عند تعريف العناصر في قائمة استبعاد العملية.
 
 يصف الجدول التالي كيفية استخدام أحرف البدل في قائمة استبعاد العملية:
-
-<br/><br/>
 
 |بدل|مثال على الاستخدام|مثال على التطابقات|
 |---|---|---|
@@ -191,7 +185,7 @@ $WDAVprefs.ExclusionProcess
 راجع [استخدام أوامر cmdlets PowerShell لتكوين وتشغيل برنامج الحماية من الفيروسات من Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) و [cmdlets برنامج الحماية من الفيروسات من Microsoft Defender](/powershell/module/defender) لمزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender.
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
