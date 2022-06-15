@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: ''
 description: تعرف على تطبيقات Microsoft لـ "إمكانية التشغيل التفاعلي لأدوات التعلم" (LTI)، وكيف ستساعد المعلمين عند دمج تطبيقات Microsoft في نظام الإدارة التعليمية (LMS).
-ms.openlocfilehash: 99ae862890989b0422cb819f65781a0a99340135
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 994abf0351a3694e1eeb534a328745691cb6a379
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414755"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044280"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>دمج منتجات Microsoft مع نظام إدارة Learning (LMS)
 
@@ -81,6 +81,7 @@ ms.locfileid: "65414755"
 
 - [اجتماعات Microsoft Teams باستخدام Canvas](teams-meetings-with-canvas.md).
 - [اجتماعات Microsoft Teams باستخدام Moodle](teams-classes-meetings-with-moodle.md).
+- [اجتماعات Microsoft Teams مع Open LMS](open-lms-teams-classes-and-meetings.md).
 
 ### <a name="teams-classes-lti"></a>Teams Classes LTI
 
@@ -88,6 +89,7 @@ ms.locfileid: "65414755"
 
 للحصول على خطوات التكوين، راجع:
 
-- [Teams Classes LTI باستخدام Canvas](teams-classes-with-canvas.md).
-- [Teams Classes LTI باستخدام Blackboard](teams-classes-with-blackboard.md).
-- [Teams Classes LTI مع Moodle](teams-classes-meetings-with-moodle.md).
+- [صفوف LTI من Microsoft Teams مع Canvas](teams-classes-with-canvas.md).
+- [صفوف LTI من Microsoft Teams مع Blackboard](teams-classes-with-blackboard.md).
+- [صفوف LTI من Microsoft Teams مع Moodle](teams-classes-meetings-with-moodle.md).
+- [صفوف LTI من Microsoft Teams مع Open LMS](open-lms-teams-classes-and-meetings.md).
