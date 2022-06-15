@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 4003585c82c835c21218fd1200b3468140c8370b
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 8490793794d7cbd1ad7b3e660e2394edf870e2a7
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174103"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089617"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>فهم ترتيب النهج في Microsoft Defender for Business
 
@@ -32,10 +32,6 @@ ms.locfileid: "65174103"
 
 **الشيء المهم الذي يجب تذكره حول نهج متعددة هو أن الأجهزة ستتلقى النهج المطبق الأول فقط.** بالإشارة إلى مثالنا السابق لثلاثة نهج من الجيل التالي، افترض أن لديك أجهزة مستهدفة من قبل جميع النهج الثلاثة. في هذه الحالة، ستتلقى هذه الأجهزة رقم النهج 1، ولكنها لن تتلقى النهج التي تم ترقيمها 2 و3. 
 
->
-> **هل لديك دقيقة؟**
-> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
->
 
 ## <a name="key-points-to-remember-about-policy-order"></a>النقاط الرئيسية التي يجب تذكرها حول ترتيب النهج
 

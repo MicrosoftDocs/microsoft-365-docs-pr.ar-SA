@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 0662ab458a3163e998de7b054926ceff31559a9e
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: f6cb1ff397233a60b0ad02a08486333790d079cc
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174412"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089429"
 ---
 # <a name="the-simplified-configuration-process-in-microsoft-defender-for-business"></a>عملية التكوين المبسطة في Microsoft Defender for Business
 
@@ -38,10 +38,6 @@ ms.locfileid: "65174412"
 2. [تعرف على المزيد حول عملية التكوين المبسطة في Defender for Business](#why-we-recommend-using-the-simplified-configuration-process)
 3. [المتابعة إلى خطواتك التالية](#next-steps)
 
->
-> **هل لديك دقيقة؟**
-> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
->
 
 ## <a name="review-your-setup-and-configuration-options"></a>مراجعة خيارات الإعداد والتكوين
 

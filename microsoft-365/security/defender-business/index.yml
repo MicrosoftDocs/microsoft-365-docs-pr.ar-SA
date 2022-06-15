@@ -14,12 +14,12 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.openlocfilehash: 2c1e21f6e333cd1e5d000fcc7fba0f32a153835d
-  ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+  ms.openlocfilehash: d94aeed225105bf16f2fa057d7c0caf1730eec09
+  ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
   ms.translationtype: HT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 05/17/2022
-  ms.locfileid: "65438718"
+  ms.lasthandoff: 06/15/2022
+  ms.locfileid: "66090509"
 landingContent:
 - title: نظرة عامة
   linkLists:
@@ -47,16 +47,8 @@ landingContent:
       url: get-defender-business.md
     - text: عرض دليل المبادئ التجريبي
       url: trial-playbook-defender-business.md
-    - text: إضافة مستخدمين وتعيين التراخيص
-      url: mdb-add-users.md
-    - text: تفضّل بزيارة مدخل Microsoft 365 Defender
-      url: mdb-get-started.md
     - text: استخدام معالج الإعداد
       url: mdb-use-wizard.md
-  - linkListType: tutorial
-    links:
-    - text: تجربة البرامج التعليمية والمحاكاة
-      url: mdb-tutorials.md
 - title: التعليمات والمزيد من الموارد
   linkLists:
   - linkListType: how-to-guide
@@ -65,73 +57,5 @@ landingContent:
       url: mdb-get-help.md
     - text: الأسئلة الشائعة
       url: mdb-faq.yml
-    - text: استكشاف الأخطاء وإصلاحها
-      url: mdb-troubleshooting.yml
-  - linkListType: reference
-    links:
     - text: قائمة مصطلحات الأمان
       url: /microsoft-365/business-premium/m365bp-glossary
-    - text: معلومات مرجع واجهة برمجة التطبيقات
-      url: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
-    - text: Microsoft 365 Business Premium
-      url: /microsoft-365/business-premium/
-    - text: Microsoft 365 Lighthouse
-      url: /microsoft-365/lighthouse/m365-lighthouse-overview
-- title: إعداد وتكوين
-  linkLists:
-  - linkListType: deploy
-    links:
-    - text: الاطلاع على عملية الإعداد
-      url: mdb-setup-configuration.md
-    - text: الخطوة 1 - مراجعة المتطلبات
-      url: mdb-requirements.md
-    - text: الخطوة 2 - تعيين الأدوار والأذونات
-      url: mdb-roles-permissions.md
-    - text: الخطوة 3 - إعداد إعلامات البريد الإلكتروني
-      url: mdb-email-notifications.md
-    - text: الخطوة 4 - إلحاق الأجهزة
-      url: mdb-onboard-devices.md
-    - text: الخطوة 5 - مراجعة نهج الأمان
-      url: mdb-view-edit-policies.md
-- title: عرض التهديدات والاستجابة لها
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: عرض لوحة معلومات المخاطر
-      url: mdb-view-tvm-dashboard.md
-    - text: عرض الأحداث وإدارتها
-      url: mdb-view-manage-incidents.md
-    - text: الاستجابة للتهديدات وتخفيف آثارها
-      url: mdb-respond-mitigate-threats.md
-    - text: مراجعة إجراءات المعالجة
-      url: mdb-review-remediation-actions.md
-    - text: عرض التقارير واستخدامها
-      url: mdb-reports.md
-- title: عرض نهج الأمان أو تحريرها
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: عرض السياسات وتحريرها وإنشاءها
-      url: mdb-view-edit-create-policies.md
-    - text: إدارة القواعد لسياسات جدار الحماية
-      url: mdb-custom-rules-firewall.md
-  - linkListType: reference
-    links:
-    - text: ترتيب السياسة
-      url: mdb-policy-order.md
-    - text: إعدادات حماية الجيل التالي
-      url: mdb-next-gen-configuration-settings.md
-    - text: إعدادات جدار الحماية
-      url: mdb-firewall.md
-- title: مراقبة الأجهزة أو إدارتها
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: عرض الأجهزة ومراقبتها
-      url: mdb-manage-devices.md
-    - text: إنشاء مجموعات الأجهزة
-      url: mdb-create-edit-device-groups.md
-    - text: إلحاق الأجهزة
-      url: mdb-onboard-devices.md
-    - text: إزالة الأجهزة
-      url: mdb-offboard-devices.md

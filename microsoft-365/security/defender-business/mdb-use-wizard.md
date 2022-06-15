@@ -17,21 +17,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 042f20cce0e0d30195ed241b376bf304abeaa2aa
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 034c37e0b87ab77c2e4119ab87563da06925501a
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172773"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66088990"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>استخدام معالج الإعداد في Microsoft Defender for Business
 
 تم تصميم Microsoft Defender for Business لتوفير الوقت والجهد للشركات الصغيرة والمتوسطة الحجم. على سبيل المثال، يمكنك إجراء الإعداد والتكوين الأوليين باستخدام معالج الإعداد. يرشدك معالج الإعداد من خلال منح حق الوصول إلى فريق الأمان وإعداد إعلامات البريد الإلكتروني لفريق الأمان الخاص بك وإعداد أجهزة Windows الخاصة بالشركة.
 
->
-> **هل لديك دقيقة؟**
-> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
->
 
 > [!TIP]
 > استخدام معالج الإعداد اختياري. يمكنك اختيار العمل من خلال عملية الإعداد والتكوين يدويا. للتعرّف على المزيد، اطلع على:
@@ -42,7 +38,7 @@ ms.locfileid: "65172773"
 
 تم تصميم معالج الإعداد لتشغيل أول مرة يقوم فيها شخص ما في شركتك بتسجيل الدخول إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-إذا كانت شركتك تستخدم Microsoft 365 Business Premium، فسيعمل معالج إعداد Defender for Business في المرة الأولى التي ينتقل فيها شخص ما إلى **مخزون EndpointsDevice** > . 
+إذا كانت شركتك تستخدم Microsoft 365 Business Premium، فسيعمل معالج إعداد Defender for Business في المرة الأولى التي ينتقل فيها شخص ما إلى **مخزون أجهزة** **نقاط** >  النهاية. 
 
 تبدو شاشة بدء معالج الإعداد مثل الصورة التالية:
 
@@ -59,7 +55,7 @@ ms.locfileid: "65172773"
 
    في Defender for Business، يمكن تعيين أحد الأدوار الثلاثة التالية لأعضاء فريق الأمان:<br/>
    
-   - **المسؤول العام**: يمكن للمسؤول العام عرض جميع الإعدادات وتحريرها عبر مستأجر Microsoft 365. يقوم المسؤول العام بإعداد وتكوين أولي لاشتراك Microsoft 365 الخاص بشركتك. 
+   - **مسؤول العمومي**: يمكن للمسؤول العام عرض جميع الإعدادات وتحريرها عبر مستأجر Microsoft 365. يقوم المسؤول العام بإعداد وتكوين أولي لاشتراك Microsoft 365 الخاص بشركتك. 
    - **مسؤول الأمان**: يمكن لمسؤول الأمان عرض إعدادات الأمان وتحريرها، واتخاذ إجراء عند اكتشاف التهديدات.
    - **قارئ الأمان**: يمكن لقارئ الأمان عرض المعلومات في التقارير، ولكن لا يمكنه تغيير أي إعدادات أمان. 
 

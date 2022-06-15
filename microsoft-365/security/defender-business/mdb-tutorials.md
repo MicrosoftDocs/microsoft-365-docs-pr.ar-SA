@@ -15,21 +15,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 68695ee348b11fcc10f3a82d2cba2d2c168af666
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e491e6d093396e54983e96eb1ca96c5e713565ba
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174393"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089165"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>البرامج التعليمية والمحاكاة في Microsoft Defender for Business
 
 إذا انتهيت للتو من إعداد Microsoft Defender for Business، فقد تتساءل من أين تبدأ في التعرف على كيفية عمل Defender for Business. تصف هذه المقالة بعض السيناريوهات التي يجب تجربتها، والعديد من البرامج التعليمية والمحاكاة المتوفرة ل Defender for Business. تم تصميم هذه الموارد لمساعدتك على معرفة كيف يمكن أن يعمل Defender for Business لشركتك.
 
->
-> **هل لديك دقيقة؟**
-> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
->
 
 ## <a name="try-these-scenarios"></a>جرب هذه السيناريوهات
 
@@ -37,8 +33,8 @@ ms.locfileid: "65174393"
 
 | السيناريو  | الوصف  |
 |---------|---------|
-| إلحاق الأجهزة باستخدام برنامج نصي محلي     | في Defender for Business، يمكنك إلحاق أجهزة Windows وmacOS باستخدام برنامج نصي تقوم بتنزيله وتشغيله على كل جهاز. ينشئ البرنامج النصي ثقة مع Azure Active Directory (Azure AD) (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز مع Microsoft Intune (إذا كان لديك Intune)، ويلحق الجهاز ب Defender for Business. لمعرفة المزيد، راجع [إلحاق الأجهزة Microsoft Defender for Business](mdb-onboard-devices.md).         |
-| إلحاق الأجهزة باستخدام مركز إدارة إدارة نقاط النهاية من Microsoft     | إذا كنت تستخدم Intune بالفعل قبل الحصول على Defender for Business، يمكنك الاستمرار في استخدام مركز إدارة إدارة نقاط النهاية لإلحاق الأجهزة. حاول إلحاق أجهزة Windows وmacOS وiOS وAndroid باستخدام Microsoft Intune. لمعرفة المزيد، راجع [تسجيل الجهاز في Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
+| إلحاق الأجهزة باستخدام برنامج نصي محلي     | في Defender for Business، يمكنك إلحاق الأجهزة Windows macOS باستخدام برنامج نصي تقوم بتنزيله وتشغيله على كل جهاز. ينشئ البرنامج النصي ثقة مع Azure Active Directory (Azure AD) (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز مع Microsoft Intune (إذا كان لديك Intune)، ويلحق الجهاز ب Defender for Business. لمعرفة المزيد، راجع [إلحاق الأجهزة Microsoft Defender for Business](mdb-onboard-devices.md).         |
+| إلحاق الأجهزة باستخدام مركز إدارة إدارة نقاط النهاية من Microsoft     | إذا كنت تستخدم Intune بالفعل قبل الحصول على Defender for Business، يمكنك الاستمرار في استخدام مركز إدارة إدارة نقاط النهاية لإلحاق الأجهزة. حاول إلحاق أجهزة Windows macOS وiOS وAndroid باستخدام Microsoft Intune. لمعرفة المزيد، راجع [تسجيل الجهاز في Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | تحرير نهج الأمان     | إذا كنت تدير نهج الأمان في Defender for Business، فاستخدم صفحة **تكوين الجهاز** لعرض النهج وتحريرها، إذا لزم الأمر. يأتي Defender for Business مزودا بنهج افتراضية تستخدم الإعدادات الموصى بها لتأمين أجهزة شركتك بمجرد إلحاقها. يمكنك الاحتفاظ بنهجك الافتراضية وتحريرها وتحديد نهجك الخاص ليناسب احتياجات عملك. لمعرفة المزيد، راجع [عرض النهج أو تحريرها في Microsoft Defender for Business](mdb-view-edit-policies.md).        |
 | تشغيل هجوم محاكاة   | تتوفر العديد من البرامج التعليمية والمحاكاة في Defender for Business. تم تصميم هذه البرامج التعليمية والمحاكاة لتوضح لك مباشرة كيف يمكن أن تعمل ميزات الحماية من التهديدات في Defender for Business لشركتك. يمكنك أيضا استخدام هجوم محاكاة كتمرين تدريبي لفريقك. لتجربة برنامج تعليمي واحد أو أكثر، راجع [البرامج التعليمية الموصى بها Microsoft Defender for Business](#recommended-tutorials-for-defender-for-business).         |
 | عرض الحوادث في Microsoft 365 Lighthouse     | إذا كنت [موفر حلول الحوسبة السحابية من Microsoft](/partner-center/enrolling-in-the-csp-program) باستخدام Microsoft 365 Lighthouse، فستتمكن من عرض الحوادث عبر مستأجري عملائك في مدخل Microsoft 365 Lighthouse. لمعرفة المزيد، راجع [Microsoft 365 Lighthouse و Microsoft Defender for Business](mdb-lighthouse-integration.md).       |

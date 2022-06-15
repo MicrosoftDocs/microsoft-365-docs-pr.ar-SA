@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: acc183abcbae89cd952011cfc637161bb409a95f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e8ab0981b2e4cfbcd5d885bdfc26f42c6f432aa6
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174514"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090377"
 ---
 # <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>إدارة القواعد المخصصة لنهج جدار الحماية في Microsoft Defender for Business
 
@@ -34,16 +34,12 @@ ms.locfileid: "65174514"
 - [تحرير قاعدة مخصصة لنهج جدار الحماية](#edit-a-custom-rule-for-a-firewall-policy)
 - [حذف قاعدة مخصصة](#delete-a-custom-rule)
 
->
-> **هل لديك دقيقة؟**
-> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
->
 
 ## <a name="create-a-custom-rule-for-a-firewall-policy"></a>إنشاء قاعدة مخصصة لنهج جدار الحماية
 
 1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) وسجل الدخول.
 
-2. انتقل إلى **تكوين EndpointsDevice** > ، وراجع قائمة النهج.
+2. انتقل إلى **تكوين جهاز** **نقاط** >  النهاية، وراجع قائمة النهج.
 
 3. في قسم **جدار الحماية** ، حدد نهجا موجودا، أو أضف نهجا جديدا.
 
@@ -66,7 +62,7 @@ ms.locfileid: "65174514"
 
 1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) وسجل الدخول.
 
-2. انتقل إلى **تكوين EndpointsDevice** > ، وراجع قائمة النهج.
+2. انتقل إلى **تكوين جهاز** **نقاط** >  النهاية، وراجع قائمة النهج.
 
 3. في قسم **جدار الحماية** ، حدد نهجا موجودا، أو أضف نهجا جديدا.
 
@@ -91,7 +87,7 @@ ms.locfileid: "65174514"
 
 1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) وسجل الدخول.
 
-2. انتقل إلى **تكوين EndpointsDevice** > ، وراجع قائمة النهج.
+2. انتقل إلى **تكوين جهاز** **نقاط** >  النهاية، وراجع قائمة النهج.
 
 3. في قسم **جدار الحماية** ، حدد نهجا موجودا، أو أضف نهجا جديدا.
 

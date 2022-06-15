@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 82479a7ec1a0bfbd471fd15febc5c6077890d494
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 8cf11c82abf23d8041a8a7453e3e58082777a040
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842314"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089209"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>أحدث الميزات في Microsoft Defender لنقطة النهاية على Mac
 
@@ -31,6 +31,11 @@ ms.locfileid: "65842314"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1017019-20122051170190"></a>101.70.19 (20.122051.17019.0)
+
+- تم إصلاح خطأ حيث لم يتم تقديم الإعلامات المتعلقة بالتهديدات دائما للمستخدم النهائي.
+- تحسينات الأداء & إصلاحات الأخطاء الأخرى
 
 ## <a name="1017018-20122042170180"></a>101.70.18 (20.122042.17018.0)
 

@@ -15,16 +15,16 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 9a22af2e1ef047de0deaf98c6eea37cda15dcc5f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9ec6e0b10812c42c90266fd2793557ae6f3b2efc
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172663"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090333"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>جدار الحماية في Microsoft Defender for Business
 
-يتضمن Microsoft Defender for Business قدرات جدار الحماية مع [جدار حماية Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). تساعد حماية جدار الحماية على تأمين الأجهزة باستخدام القواعد التي تحدد نسبة استخدام الشبكة المسموح لها بإدخالها أو تدفقها من الأجهزة. 
+تتضمن Microsoft Defender for Business قدرات جدار الحماية مع [جدار حماية Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). تساعد حماية جدار الحماية على تأمين الأجهزة باستخدام القواعد التي تحدد نسبة استخدام الشبكة المسموح لها بإدخالها أو تدفقها من الأجهزة. 
 
 يمكنك استخدام حماية جدار الحماية لتحديد ما إذا كان يجب السماح بالاتصالات أو حظرها على الأجهزة في مواقع مختلفة. على سبيل المثال، يمكن أن تسمح إعدادات جدار الحماية بالاتصالات الواردة على الأجهزة المتصلة بالشبكة الداخلية لشركتك، ولكنها تمنع هذه الاتصالات عندما يكون الجهاز على شبكة مع أجهزة غير موثوق بها.
 
@@ -33,10 +33,6 @@ ms.locfileid: "65172663"
 - [إعدادات جدار الحماية الافتراضية في Defender for Business](#default-firewall-settings-in-defender-for-business)
 - [إعدادات جدار الحماية التي يمكنك تكوينها في Defender for Business](#firewall-settings-you-can-configure-in-defender-for-business)
 
->
-> **هل لديك دقيقة؟**
-> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
->
 
 ## <a name="default-firewall-settings-in-defender-for-business"></a>إعدادات جدار الحماية الافتراضية في Defender for Business
 

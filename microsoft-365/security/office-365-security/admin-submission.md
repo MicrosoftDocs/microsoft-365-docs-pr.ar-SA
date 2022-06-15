@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: يمكن للمسؤولين معرفة كيفية استخدام مدخل عمليات الإرسال في مدخل Microsoft 365 Defender لإرسال رسائل البريد الإلكتروني المشبوهة ورسائل التصيد الاحتيالي المشتبه بها والبريد العشوائي والرسائل الأخرى التي يحتمل أن تكون ضارة وعناوين URL ومرفقات البريد الإلكتروني إلى Microsoft لإعادة اكتشافها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 125e151873e45717a4621bf2798e3587671c6b8d
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 47e97b728fb27d8df6ad813946d3cdbe08c52085
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078869"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089100"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>استخدم مدخل عمليات الإرسال لإرسال البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft
 
@@ -180,7 +180,7 @@ ms.locfileid: "66078869"
      عند الانتهاء، انقر فوق **"تطبيق**".
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="خيارات العمود &quot;تخصيص جديد&quot; الخاصة بإرسالات المسؤول" lightbox="../../media/email-admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="تخصيص خيار العمود الخاص بإرسالات مسؤول البريد الإلكتروني." lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - لتصفية الإدخالات، انقر فوق **"تصفية**". عوامل التصفية المتوفرة هي:
      - **التاريخ المرسل**: **تاريخ البدء** **وتاريخ الانتهاء**.
@@ -197,7 +197,7 @@ ms.locfileid: "66078869"
      عند الانتهاء، انقر فوق **"تطبيق**".
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="خيارات &quot;تصفية جديدة&quot; الخاصة بإرسالات المسؤول" lightbox="../../media/email-admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="خيارات التصفية الخاصة بإرسالات مسؤول البريد الإلكتروني." lightbox="../../media/email-admin-submission-filters.png":::
 
    - لتجميع الإدخالات، انقر فوق **"تجميع"** وحدد إحدى القيم التالية من القائمة المنسدلة:
      - **None**
@@ -231,8 +231,7 @@ ms.locfileid: "66078869"
 
      عند الانتهاء، انقر فوق **"تطبيق**".
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="خيارات العمود &quot;تخصيص جديد&quot; الخاصة بإرسالات المسؤول" lightbox="../../media/email-attachment-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="تخصيص خيارات الأعمدة الخاصة بإرسالات مسؤول مرفقات البريد الإلكتروني.":::
 
    - لتصفية الإدخالات، انقر فوق **"تصفية**". عوامل التصفية المتوفرة هي:
      - **التاريخ المرسل**: **تاريخ البدء** **وتاريخ الانتهاء**.
@@ -245,8 +244,7 @@ ms.locfileid: "66078869"
 
      عند الانتهاء، انقر فوق **"تطبيق**".
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="خيارات &quot;تصفية جديدة&quot; الخاصة بإرسالات المسؤول" lightbox="../../media/email-attachment-admin-submission-filters.png":::
+     :::image type="content" source="../../media/email-attachment-admin-submission-filters.png" alt-text="خيارات التصفية الخاصة بإرسالات مسؤول مرفقات البريد الإلكتروني.":::
 
    - لتجميع الإدخالات، انقر فوق **"تجميع"** وحدد إحدى القيم التالية من القائمة المنسدلة:
      - **None**
@@ -280,8 +278,7 @@ ms.locfileid: "66078869"
 
      عند الانتهاء، انقر فوق **"تطبيق**".
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="خيارات العمود &quot;تخصيص جديد&quot; الخاصة بإرسالات المسؤول" lightbox="../../media/url-admin-submission-customize-columns.png":::
+     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="تخصيص خيارات الأعمدة الخاصة بإرسالات مسؤول URL.":::
 
    - لتصفية الإدخالات، انقر فوق **"تصفية**". عوامل التصفية المتوفرة هي:
      - **التاريخ المرسل**: **تاريخ البدء** **وتاريخ الانتهاء**.
@@ -294,8 +291,7 @@ ms.locfileid: "66078869"
 
      عند الانتهاء، انقر فوق **"تطبيق**".
 
-     > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="خيارات &quot;تصفية جديدة&quot; الخاصة بإرسالات المسؤول" lightbox="../../media/url-admin-submission-filters.png":::
+     :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="خيارات التصفية الخاصة بإرسالات مسؤول URL.":::
 
    - لتجميع الإدخالات، انقر فوق **"تجميع"** وحدد إحدى القيم التالية من القائمة المنسدلة:
      - **None**

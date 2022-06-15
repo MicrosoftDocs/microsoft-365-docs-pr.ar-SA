@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 9d401c5be4fc0454ce1d895fe5ea49267e5c5f70
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: c7b01355b782a3b08b76f95b31db5b0a9f5e1188
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469162"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090289"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>عرض نهج الأمان وإعداداتك وتحريرها في Microsoft Defender for Business
 
@@ -53,10 +53,6 @@ ms.locfileid: "65469162"
 6. [عرض الإعدادات الأخرى في مدخل Microsoft 365 Defender](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
 7. [تابع إلى خطواتك التالية](#next-steps).
 
->
-> **هل لديك دقيقة؟**
-> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
->
 
 ## <a name="choose-where-to-manage-security-policies-and-devices"></a>اختيار مكان إدارة نهج الأمان والأجهزة
 
@@ -125,7 +121,7 @@ ms.locfileid: "65469162"
 
 بالإضافة إلى نهج تصفية محتوى الويب وجدار الحماية والحماية من الجيل التالي، يتضمن Defender for Business ميزات أمان متقدمة. يتم تكوين هذه الميزات مسبقا باستخدام الإعدادات الموصى بها؛ ومع ذلك، يمكنك مراجعتها، وإذا لزم الأمر، فحرر الإعدادات لتناسب احتياجات عملك.
 
-للوصول إلى إعدادات الميزات المتقدمة، في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، انتقل إلى **ميزات الإعدادات** >  EndpointsGeneralAdvanced >  > .
+للوصول إلى إعدادات الميزات المتقدمة، في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، انتقل إلى **الإعدادات** >  **Endpoints** > **General** > **Advanced features**.
 
 يصف الجدول التالي إعدادات الميزات المتقدمة:
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 95c4d77014e31c748cc4bd6662a148810c01f79a
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: d1379836a2d55a8c6c256ce734c40acc5fc48599
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825179"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090483"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>أحدث الميزات في Microsoft Defender لنقطة النهاية على Android
 
@@ -30,6 +30,13 @@ ms.locfileid: "64825179"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="network-protection"></a>حماية الشبكة
+حماية الشبكة على Microsoft Defender لنقطة النهاية الآن في المعاينة العامة. توفر حماية الشبكة الحماية من التهديدات Wi-Fi المحتالة ذات الصلة، والأجهزة المحتالة مثل أجهزة الأناناس وإعلام المستخدم إذا تم الكشف عن تهديد ذي صلة. سيرى المستخدمون أيضا تجربة موجهة للاتصال بشبكات آمنة وتغيير الشبكات عند الاتصال باتصال غير آمن.
+
+يتضمن العديد من عناصر تحكم المسؤول لتوفير المرونة، مثل القدرة على تكوين الميزة من داخل مركز إدارة نقاط النهاية من Microsoft مسؤول. يمكن للمسؤولين أيضا تمكين عناصر التحكم في الخصوصية لتكوين البيانات التي يتم إرسالها بواسطة Defender لنقطة النهاية من أجهزة Android. 
+
+إذا كنت مهتما بالمشاركة في هذه المعاينة العامة، فالرجاء مشاركة معرف المستأجر معنا على networkprotection@microsoft.com. لمزيد من المعلومات، راجع [حماية الشبكة](/microsoft-365/security/defender-endpoint/android-configure).
 
 >[!NOTE]
 >لم يعد Microsoft Defender مدعوما للإصدارات التي تقل عن 1.0.3011.0302. يطلب من المستخدمين الترقية إلى أحدث الإصدارات للحفاظ على أمان أجهزتهم.

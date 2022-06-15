@@ -4,12 +4,12 @@ description: تضمين ملف
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 3da0554f55e25f765702fa0d0fbf169ba2e66438
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 61d7b5f00a42789a2d4f46aa41eb3f8865fb6e03
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65601587"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66091409"
 ---
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
@@ -123,7 +123,7 @@ ms.locfileid: "65601587"
 
 لدعم Microsoft Defender لنقطة النهاية إدارة تكوين الأمان من خلال مركز إدارة إدارة نقاط النهاية من Microsoft، يجب تمكين الاتصال بينهما من داخل كل وحدة تحكم.
 
-1. سجل الدخول إلى [مدخل Microsoft 365 Defender](https://security.microsoft.com/) وانتقل إلى **الإعدادات** >  **EndpointsConfiguration** >  **ManagementEnforcement** >  Scope وتمكين الأنظمة الأساسية لإدارة إعدادات الأمان:
+1. سجل الدخول إلى [مدخل Microsoft 365 Defender](https://security.microsoft.com/) وانتقل إلى نطاق **فرض إدارة** >  تكوين **الإعدادات** >  **Endpoints** >  وتمكين الأنظمة الأساسية لإدارة إعدادات الأمان:
 
    :::image type="content" source="../media/security-settings-mgt.png" alt-text="تمكين إدارة إعدادات Microsoft Defender لنقطة النهاية في وحدة تحكم Defender.":::
     
@@ -134,7 +134,7 @@ ms.locfileid: "65601587"
   > [!TIP]
   > استخدم وضع الإصدار التجريبي وعلامات الجهاز المناسبة لاختبار الإطلاق التدريجي والتحقق من صحته على عدد صغير من الأجهزة. دون استخدام وضع الإصدار التجريبي، سيتم تسجيل أي جهاز يقع في النطاق الذي تم تكوينه تلقائيا.
 
-1. تأكد من أن المستخدمين المعنيين لديهم أذونات لإدارة إعدادات أمان نقطة النهاية في إدارة نقاط النهاية من Microsoft أو منح هذه الأذونات عن طريق تكوين دور في مدخل Defender. انتقل إلى **عنصر الإعدادات** >  **RolesAdd** > :
+1. تأكد من أن المستخدمين المعنيين لديهم أذونات لإدارة إعدادات أمان نقطة النهاية في إدارة نقاط النهاية من Microsoft أو منح هذه الأذونات عن طريق تكوين دور في مدخل Defender. انتقل إلى **عنصر إضافة الإعدادات** >  **Roles** > :
 
    :::image type="content" source="../media/add-role-in-mde.png" alt-text="إنشاء دور جديد في مدخل Defender.":::
 
@@ -158,14 +158,11 @@ ms.locfileid: "65601587"
 يدعم Microsoft Defender لنقطة النهاية العديد من الخيارات لإلحاق الأجهزة. للحصول على الإرشادات [الحالية، راجع أدوات وأساليب الإلحاق للأجهزة Windows](/microsoft-365/security/defender-endpoint/security-config-management) في وثائق Defender لنقطة النهاية.
 
 
-> [!IMPORTANT]
-> بعد إلحاق جهاز مع Microsoft Defender لنقطة النهاية، يجب وضع علامة عليه باستخدام **MDE-Management** قبل أن يتمكن من التسجيل في إدارة الأمان Microsoft Defender لنقطة النهاية. لمزيد من المعلومات حول وضع علامات على الجهاز في MDE، راجع [*إنشاء علامات الجهاز وإدارتها*](/microsoft-365/security/defender-endpoint/machine-tags).
-
 
 ## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>التعاون مع Microsoft Endpoint Configuration Manager
 في بعض البيئات قد يكون من المطلوب استخدام إدارة الأمان Microsoft Defender لنقطة النهاية مع [إرفاق مستأجر Configuration Manager](/mem/configmgr/tenant-attach/endpoint-security-get-started). إذا كنت تستخدم كليهما، فستحتاج إلى التحكم في النهج من خلال قناة واحدة، لأن استخدام أكثر من قناة واحدة يخلق فرصة للتعارضات والنتائج غير المرغوب فيها.
 
-لدعم ذلك، قم بتكوين *إعدادات إدارة الأمان باستخدام Configuration Manager* التبديل إلى *إيقاف التشغيل*.  سجل الدخول إلى [مدخل Microsoft 365 Defender](https://security.microsoft.com/) وانتقل إلى **الإعدادات** >  **EndpointsConfiguration** >  **ManagementEnforcement** >  Scope:
+لدعم ذلك، قم بتكوين *إعدادات إدارة الأمان باستخدام Configuration Manager* التبديل إلى *إيقاف التشغيل*.  سجل الدخول إلى [مدخل Microsoft 365 Defender](https://security.microsoft.com/) وانتقل إلى نطاق **فرض إدارة** >  **تكوين** **الإعدادات** >  **Endpoints** > :
 
 :::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="إدارة إعدادات الأمان باستخدام إعداد Configuration Manager.":::
 
@@ -181,7 +178,7 @@ ms.locfileid: "65601587"
 
 1. سجل الدخول إلى [مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. انتقل إلى **أجهزة DevicesAll** > ، ثم حدد العمود **"مدار بواسطة**" لفرز طريقة عرض الأجهزة.
+2. انتقل إلى **الأجهزة** > **كافة الأجهزة**، ثم حدد العمود **"مدار بواسطة** " لفرز طريقة عرض الأجهزة.
 
    الأجهزة التي تم إلحاقها Microsoft Defender لنقطة النهاية والتي تم تسجيلها ولكن لا تتم إدارتها بواسطة عرض Intune **Microsoft Defender لنقطة النهاية** في العمود *"مدار بواسطة*". هذه هي الأجهزة التي يمكن أن تتلقى سياسة لإدارة الأمان Microsoft Defender لنقطة النهاية.
 

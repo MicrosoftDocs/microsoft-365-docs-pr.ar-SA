@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef22f0873e6a61864cf3b2abf2d8a4bc26f80c4d
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 5501477e14bd5053f6adbe597642470854616a5e
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078975"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089959"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>عرض تقارير أمان البريد الإلكتروني في مدخل Microsoft 365 Defender
 
@@ -424,7 +424,7 @@ ms.locfileid: "66078975"
   - **المعلقه**
   - **اكمال**
 
-يعرض جدول التفاصيل أسفل الرسم البياني المعلومات نفسها ويحتوي على خيارات **الأعمدة "تجميع**" أو **"تخصيص**" نفسها كما في علامة التبويب "**تم الإرسال للتحليل**" في **"إرسالات التعاون** \> & البريد الإلكتروني". لمزيد من المعلومات، راجع [عرض عمليات إرسال المسؤول إلى Microsoft](admin-submission.md#view-urls-admin-submissions-to-microsoft).
+يعرض جدول التفاصيل أسفل الرسم البياني المعلومات نفسها ويحتوي على خيارات **الأعمدة "تجميع**" أو **"تخصيص**" نفسها كما في علامة التبويب "**تم الإرسال للتحليل**" في **"إرسالات التعاون** \> & البريد الإلكتروني". لمزيد من المعلومات، راجع [عرض عمليات إرسال مسؤول البريد الإلكتروني إلى Microsoft](admin-submission.md#view-email-admin-submissions-to-microsoft).
 
 في الصفحة **"عمليات الإرسال"** ، يتوفر الزر **["تصدير](#export-report)** ".
 

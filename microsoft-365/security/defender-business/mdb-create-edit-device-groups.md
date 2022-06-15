@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: abb1c694f98ace7595f1389e3270ca3479d0c745
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9d788ee4dac2e922898204fdd13e977c50e66b2e
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172228"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090421"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business"></a>مجموعات الأجهزة في Microsoft Defender for Business
 
@@ -34,10 +34,6 @@ ms.locfileid: "65172228"
 - [كيفية عرض مجموعة أجهزة موجودة](#view-an-existing-device-group)
 - [وظيفة الخيار "إضافة كافة الأجهزة"](#what-does-the-add-all-devices-option-do)
 
->
-> **هل لديك دقيقة؟**
-> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
->
 
 ## <a name="what-is-a-device-group"></a>ما هي مجموعة الأجهزة؟
 

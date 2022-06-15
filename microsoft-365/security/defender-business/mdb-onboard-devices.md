@@ -16,21 +16,17 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 8f716f692687276e5c1c4482429ab016f9574f2f
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 58b2756bead1df85e12e3276d0da475d6882b589
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621322"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66088968"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>إلحاق الأجهزة Microsoft Defender for Business
 
 باستخدام Microsoft Defender for Business، لديك العديد من الخيارات للاختيار من بينها لإلحاق أجهزة شركتك. ترشدك هذه المقالة عبر خياراتك وتتضمن نظرة عامة حول كيفية عمل الإلحاق.
 
->
-> **هل لديك دقيقة؟**
-> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
->
 
 ## <a name="what-to-do"></a>ما يجب فعله
 
@@ -91,7 +87,7 @@ ms.locfileid: "65621322"
 
 1. انتقل إلى مدخل Azure ([https://portal.azure.com/](https://portal.azure.com/)) وسجل الدخول. 
 
-2. حدد **Azure Active DirectoryMobility** >  **(MDM وMAM)** > **Microsoft Intune**.
+2. حدد **Azure Active Directory** > **Mobility (MDM وMAM)** > **Microsoft Intune**.
 
 3. تكوين **نطاق مستخدم MDM** **ونطاق مستخدم MAM**.
 
@@ -180,7 +176,7 @@ ms.locfileid: "65621322"
 
 8. حدد **"متابعة**"، وتوافق على شروط الترخيص، ثم أدخل كلمة المرور عند المطالبة.
 
-9. ستتم مطالبتك بالسماح بتثبيت برنامج تشغيل من Microsoft (إما "تم حظر ملحق النظام" أو "التثبيت قيد الانتظار"، أو كليهما. يجب السماح بتثبيت برنامج التشغيل. للسماح بالتثبيت، حدد **"فتح تفضيلات الأمان**" أو **"فتح تفضيلات** >  النظام **" & الخصوصية**، ثم حدد **"السماح**".
+9. ستتم مطالبتك بالسماح بتثبيت برنامج تشغيل من Microsoft (إما "تم حظر ملحق النظام" أو "التثبيت قيد الانتظار"، أو كليهما. يجب السماح بتثبيت برنامج التشغيل. للسماح بالتثبيت، حدد **"فتح تفضيلات الأمان**" أو "**فتح أمان تفضيلات** >  النظام **& الخصوصية**"، ثم حدد **"السماح**".
 
 10. استخدم أمر Python التالي في Bash لتشغيل حزمة الإلحاق: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
 
@@ -219,7 +215,7 @@ ms.locfileid: "65621322"
 
 1. للتأكد من أن الجهاز مقترن بشركتك، استخدم أمر Python التالي في Bash: `mdatp health --field org_id`.
 
-2. إذا كنت تستخدم macOS 10.15 (Catalina) أو إصدار أحدث، فامنح Defender for Business موافقة لحماية جهازك. انتقل إلى **System PreferencesSecurity** >  **&** **PrivacyPrivacyFull** >  >  **Disk Access**. حدد أيقونة التأمين لإجراء تغييرات (أسفل مربع الحوار)، ثم حدد **Microsoft Defender for Business** (أو **Defender لنقطة النهاية**، إذا كان هذا ما تراه).
+2. إذا كنت تستخدم macOS 10.15 (Catalina) أو إصدار أحدث، فامنح Defender for Business موافقة لحماية جهازك. انتقل إلى أمان **تفضيلات** >  النظام &**الوصول إلى القرص الكامل** **لخصوصية الخصوصية** >  > . حدد أيقونة التأمين لإجراء تغييرات (أسفل مربع الحوار)، ثم حدد **Microsoft Defender for Business** (أو **Defender لنقطة النهاية**، إذا كان هذا ما تراه).
 
 3. للتحقق من أن الجهاز تم إلحاقه، استخدم الأمر التالي في Bash: `mdatp health --field real_time_protection_enabled`
 

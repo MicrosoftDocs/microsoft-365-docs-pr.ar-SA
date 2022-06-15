@@ -16,21 +16,17 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: d7ee7588d9c73a6146b770cfcf135a8eeb44f72f
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 245063299df0df25f8a4c14ed9a3ee26b880ea15
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663415"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089871"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>مقارنة ميزات الأمان في خطط Microsoft 365 للشركات الصغيرة والمتوسطة الحجم
 
 تقدم Microsoft مجموعة متنوعة من الحلول والخدمات السحابية، بما في ذلك العديد من الخطط المختلفة للشركات الصغيرة والمتوسطة الحجم. على سبيل المثال، [تتضمن Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) قدرات الأمان وإدارة الأجهزة، بالإضافة إلى ميزات الإنتاجية، مثل تطبيقات Office. تم تصميم هذه المقالة للمساعدة في توضيح ميزات الأمان، مثل حماية الجهاز، المضمنة في Microsoft 365 Business Premium Microsoft Defender for Business Microsoft Defender لنقطة النهاية.
 
->
-> **هل لديك دقيقة؟**
-> يرجى أخذ <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">استطلاعنا القصير حول الأمان</a>. يسعدنا أن نستمع إليك!
->
 
 **استخدم هذه المقالة ل**:
 

@@ -15,24 +15,30 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 7f3a687eb365813192948e48514bf7384cc584d0
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 3f05c819e5390504bca9c1f5aaa7f85d1e7edc2a
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188155"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090465"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>أحدث الميزات في Microsoft Defender لنقطة النهاية على iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## <a name="network-protection"></a>حماية الشبكة
+حماية الشبكة على Microsoft Defender لنقطة النهاية الآن في المعاينة العامة. توفر حماية الشبكة الحماية من التهديدات Wi-Fi المحتالة ذات الصلة، والأجهزة المحتالة مثل أجهزة الأناناس وإعلام المستخدم إذا تم الكشف عن تهديد ذي صلة. سيرى المستخدمون أيضا تجربة موجهة للاتصال بشبكات آمنة وتغيير الشبكات عند الاتصال باتصال غير آمن.
+
+يتضمن العديد من عناصر تحكم المسؤول لتوفير المرونة، مثل القدرة على تكوين الميزة من داخل مركز إدارة نقاط النهاية من Microsoft مسؤول. يمكن للمسؤولين أيضا تمكين عناصر التحكم في الخصوصية لتكوين البيانات التي يتم إرسالها بواسطة Defender لنقطة النهاية من أجهزة iOS. لمزيد من المعلومات، اقرأ [تكوين حماية الشبكة]().
+
+تم تمكين حماية الشبكة لنظام التشغيل iOS بالفعل للمستأجر الخاص بك. يمكن للمستخدمين النهائيين الذين يختبرون ميزة حماية الشبكة تثبيت إصدار المعاينة من التطبيق عبر TestFlight. استعرض وصولا إلى https://aka.ms/mdeiospp جهاز iOS. سيطالبك هذا بتثبيت تطبيق TestFlight على جهازك أو فتح TestFlight في حالة تثبيته بالفعل. في تطبيق TestFlight، اتبع الإرشادات التي تظهر على الشاشة لتثبيت نقطة نهاية Microsoft Defender. الرجاء التحقق من أن رقم إصدار MDE هو 1.1.29270104.
 
 ## <a name="integration-with-tunnel"></a>التكامل مع النفق
 يمكن Microsoft Defender لنقطة النهاية على iOS الآن التكامل مع Microsoft Tunnel، وهو حل بوابة VPN لتمكين الأمان والاتصال في تطبيق واحد.  يوفر التكامل مع Tunnel تجربة VPN أبسط وآمنة على iOS مع تطبيق واحد فقط. كانت هذه الميزة متوفرة مسبقا على Android فقط. لمزيد من التفاصيل، [راجع منشور «techcommunity» هنا](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
@@ -49,9 +55,8 @@ ms.locfileid: "65188155"
 
 في 25 يناير 2022، أعلنا عن التوفر العام لإدارة المخاطر والثغرات الأمنية على Android وiOS. لمزيد من التفاصيل، راجع [منشور «techcommunity» هنا](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
-
 ## <a name="1128250101"></a>1.1.28250101
-- **التكامل مع Tunnel** - يمكن Microsoft Defender لنقطة النهاية على iOS الآن التكامل مع Microsoft Tunnel، وهو حل بوابة VPN لتمكين الأمان والاتصال في تطبيق واحد. لمزيد من المعلومات، راجع [نظرة عامة على نفق Microsft](/mem/intune/protect/microsoft-tunnel-overview).
+- **التكامل مع Tunnel** - يمكن Microsoft Defender لنقطة النهاية على iOS الآن التكامل مع Microsoft Tunnel، وهو حل بوابة VPN لتمكين الأمان والاتصال في تطبيق واحد. لمزيد من المعلومات، راجع [نظرة عامة على نفق Microsoft](/mem/intune/protect/microsoft-tunnel-overview).
 - يتوفر **الإعداد بدون لمس لأجهزة iOS المسجلة** من خلال إدارة نقاط النهاية من Microsoft (Intune) بشكل عام. لمزيد من المعلومات، راجع [عدم إلحاق Microsoft Defender لنقطة النهاية باللمس](/microsoft-365/security/defender-endpoint/ios-install#zero-touch-onboarding-of-microsoft-defender-for-endpoint).
 - إصلاحات الأخطاء.
 
@@ -74,7 +79,7 @@ ms.locfileid: "65188155"
 
 ## <a name="1120240103"></a>1.1.20240103
 - بطاقة Device Health - تقوم بطاقة Device Health بإعلام المستخدمين النهائيين بأي تحديثات برامج معلقة.
-- تحسينات قابلية الاستخدام - يمكن للمستخدمين النهائيين الآن تعطيل Defender لنقطة النهاية VPN من تطبيق MSDefender نفسه. قبل هذا التحديث، كان على المستخدمين النهائيين تعطيل VPN فقط من تطبيق الإعدادات.
+- تحسينات قابلية الاستخدام - يمكن للمستخدمين النهائيين الآن تعطيل Defender لنقطة النهاية VPN من تطبيق Microsoft Defender نفسه. قبل هذا التحديث، كان على المستخدمين النهائيين تعطيل VPN فقط من تطبيق الإعدادات.
 - إصلاحات الأخطاء.
 
 ## <a name="1120020101"></a>1.1.20020101
