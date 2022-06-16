@@ -404,6 +404,8 @@
           href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
         - name: كيفية تكوين أذونات ونُهج العزل
           href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+        - name: ابق على اطلاع بالتغييرات القادمة على Microsoft Defender لـ Office 365 باستخدام مركز الرسائل
+          href: step-by-step-guides/stay-informed-with-message-center.md
         - name: التأكد من حصولك دائماً على عناصر تحكم الأمان المُثلى باستخدام نُهج الأمان التي تم تعيينها مسبقاً
           href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
         - name: كيفية تحديد أولويات الحوادث وإدارتها والتحقيق فيها & الاستجابة للحوادث في Microsoft 365 Defender
