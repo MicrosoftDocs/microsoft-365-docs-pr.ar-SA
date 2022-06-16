@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية استخدام نهج العزل للتحكم في ما يمكن للمستخدمين القيام به للرسائل المعزولة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 74f1a657cbf675b8a55edc169339cb16a22f4dbe
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: a3d50debf31f53f75177e7c8cf8c7116ae3789b6
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115664"
+ms.locfileid: "66128844"
 ---
 # <a name="quarantine-policies"></a>سياسات العزل
 
@@ -212,6 +212,9 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 > إذا كنت راضيا عن أذونات المستخدم النهائي الافتراضية وإعلامات العزل التي يتم توفيرها (أو لم يتم توفيرها) من قبل نهج العزل الافتراضية، فلن تحتاج إلى القيام بأي شيء. إذا كنت تريد إضافة قدرات المستخدم النهائي (الأزرار المتوفرة) أو إزالتها للرسائل المعزولة للمستخدم، أو تمكين إعلامات العزل وإضافة نفس الإمكانات أو إزالتها في إعلامات العزل، يمكنك تعيين نهج عزل مختلف لإجراء العزل.
 
 ## <a name="assign-quarantine-policies-in-supported-policies-in-the-microsoft-365-defender-portal"></a>تعيين نهج العزل في النهج المعتمدة في مدخل Microsoft 365 Defender
+
+> [!NOTE]
+> لا يمكن للمستخدمين إصدار رسائلهم الخاصة التي تم عزلها على أنها برامج ضارة (نهج مكافحة البرامج الضارة) أو التصيد الاحتيالي عالي الثقة (نهج مكافحة البريد العشوائي)، بغض النظر عن كيفية تكوين نهج العزل. في أفضل الأحوال، يمكن للمسؤولين تكوين نهج العزل حتى يتمكن المستخدمون من طلب إصدار البرامج الضارة المعزولة أو رسائل التصيد الاحتيالي عالية الثقة.
 
 ### <a name="anti-spam-policies"></a>نهج مكافحة البريد العشوائي
 

@@ -14,12 +14,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8cb3dcec3690ae3a4433bfffee53dc99842c0028
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: f788c72c9b437dba7528c59adedb3ced21539ada
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872303"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129108"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>دليل النشر برنامج الحماية من الفيروسات من Microsoft Defender في بيئة البنية الأساسية لسطح المكتب الظاهري (VDI)
 
@@ -31,13 +31,10 @@ ms.locfileid: "65872303"
 **الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
-بالإضافة إلى التكوينات الداخلية القياسية أو الأجهزة، يمكنك أيضا استخدام برنامج الحماية من الفيروسات من Microsoft Defender في بيئة سطح المكتب البعيد (RDS) أو البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة.
+بالإضافة إلى التكوينات الداخلية القياسية أو الأجهزة، يمكنك استخدام برنامج الحماية من الفيروسات من Microsoft Defender في سطح المكتب البعيد (RDS) أو بيئة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة. مع القدرة على نشر التحديثات بسهولة إلى الأجهزة الظاهرية التي تعمل في VDIs، يمكنك الحصول على تحديثات على أجهزتك بسرعة وسهولة. لم تعد بحاجة إلى إنشاء الصور الذهبية وإغلاقها على أساس دوري، حيث يتم توسيع التحديثات إلى وحدات البت المكونة الخاصة بها على الخادم المضيف ثم تنزيلها مباشرة إلى الجهاز الظاهري عند تشغيله.
 
-لمزيد من المعلومات حول سطح المكتب البعيد لـ Microsoft Services ودعم VDI، راجع [وثائق Azure Virtual Desktop](/azure/virtual-desktop).
-
-بالنسبة إلى الأجهزة الظاهرية المستندة إلى Azure، راجع [تثبيت Endpoint Protection في Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
-
-مع القدرة على نشر التحديثات بسهولة إلى الأجهزة الظاهرية التي تعمل في VDIs، قمنا بتقصير هذا الدليل للتركيز على كيفية الحصول على التحديثات على أجهزتك بسرعة وسهولة. لم تعد بحاجة إلى إنشاء الصور الذهبية وإغلاقها على أساس دوري، حيث يتم توسيع التحديثات إلى وحدات البت المكونة الخاصة بها على الخادم المضيف ثم تنزيلها مباشرة إلى الجهاز الظاهري عند تشغيله.
+> [!NOTE]
+> تم إهمال الموقع `demo.wd.microsoft.com` التجريبي ل Defender لنقطة النهاية وسيتم إزالته في المستقبل.
 
 يصف هذا الدليل كيفية تكوين الأجهزة الظاهرية للحصول على الحماية والأداء الأمثل، بما في ذلك كيفية:
 
@@ -51,12 +48,12 @@ ms.locfileid: "65872303"
 
 يمكنك أيضا تنزيل برنامج الحماية من الفيروسات من Microsoft Defender whitepaper [على Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)، والتي تبحث في ميزة تحديث معلومات الأمان المشتركة الجديدة، إلى جانب اختبار الأداء والإرشادات حول كيفية اختبار أداء مكافحة الفيروسات على VDI الخاص بك.
 
-> [!NOTE]
-> تم إهمال الموقع التجريبي ل Defender لنقطة النهاية في demo.wd.microsoft.com وستتم إزالته في المستقبل.
+لمزيد من المعلومات حول سطح المكتب البعيد لـ Microsoft Services ودعم VDI، راجع [وثائق Azure Virtual Desktop](/azure/virtual-desktop).
+
+بالنسبة إلى الأجهزة الظاهرية المستندة إلى Azure، راجع [تثبيت Endpoint Protection في Microsoft Defender for Cloud](/azure/defender-for-cloud/endpoint-protection-recommendations-technical).
 
 > [!IMPORTANT]
 > على الرغم من إمكانية استضافة VDI على Windows Server 2012 أو Windows Server 2016، يجب تشغيل الأجهزة الظاهرية (VMs) Windows 10، 1607 كحد أدنى، بسبب زيادة تقنيات وميزات الحماية غير المتوفرة في الإصدارات السابقة من Windows.
->
 > هناك تحسينات في الأداء والميزات للطريقة التي يعمل بها Microsoft Defender AV على الأجهزة الظاهرية في Windows 10 Insider Preview، النسخة 18323 (والإ إصدار أحدث). سنحدد في هذا الدليل ما إذا كنت بحاجة إلى استخدام إصدار Insider Preview؛ إذا لم يتم تحديده، فإن الحد الأدنى المطلوب من الإصدار للحصول على أفضل حماية وأداء هو Windows 10 1607.
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>إعداد مشاركة ملف VDI مخصصة
@@ -114,9 +111,8 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 عادة ما يتم نشر حزم التحليل الذكي للأمان مرة واحدة كل ثلاث إلى أربع ساعات. لا ينصح بتعيين تردد أقصر من أربع ساعات لأنه سيزيد من الحمل على الشبكة على جهاز الإدارة الخاص بك دون فائدة.
 
 يمكنك أيضا إعداد خادم أو جهاز واحد لإحضار التحديثات نيابة عن الأجهزة الظاهرية على فاصل زمني ووضعها في مشاركة الملف للاستهلاك.
-هذا ممكن عندما يكون لدى الأجهزة أذونات المشاركة وNTFS للوصول للقراءة إلى المشاركة حتى يتمكنوا من الحصول على التحديثات.
+هذا ممكن عندما يكون لدى الأجهزة أذونات المشاركة وNTFS للوصول للقراءة إلى المشاركة حتى يتمكنوا من الحصول على التحديثات. للقيام بذلك:
 
-للقيام بذلك:
  1. إنشاء مشاركة ملف SMB/CIFS. 
  
  2. استخدم المثال التالي لإنشاء مشاركة ملف باستخدام أذونات المشاركة التالية.
@@ -134,7 +130,7 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 
     على سبيل المثال، مشاركة الملف هي:
 
-    \\\fileserver.fqdn\mdatp$\wdav-update
+    `\\fileserver.fqdn\mdatp$\wdav-update`
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>تعيين مهمة مجدولة لتشغيل البرنامج النصي PowerShell
 
@@ -208,7 +204,6 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 
 > [!TIP]
 > لفتح مركز الصيانة على Windows 10 أو Windows 11، اتبع إحدى الخطوات التالية:
->
 > - في الطرف الأيسر من شريط المهام، حدد أيقونة مركز الصيانة.
 > - اضغط على زر مفتاح شعار Windows + A.
 > - على جهاز شاشة تعمل باللمس، اسحب من الحافة اليسرى للشاشة.
@@ -231,6 +226,18 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 5. نشر كائن نهج المجموعة كما تفعل عادة.
 
 يمنع هذا النهج تشغيل الفحص مباشرة بعد التحديث.
+
+## <a name="disable-the-scanonlyifidle-option"></a>`ScanOnlyIfIdle` تعطيل الخيار
+
+استخدم cmdlet التالي، لإيقاف الفحص السريع أو المجدول كلما كان الجهاز خاملا إذا كان في الوضع الخامل.
+
+```PowerShell
+Set-MpPreference -ScanOnlyIfIdleEnabled $false
+```
+
+يمكنك أيضا تعطيل `ScanOnlyIfIdle` الخيار في برنامج الحماية من الفيروسات من Microsoft Defender عن طريق التكوين عبر النهج المحلي أو نهج مجموعة المجالات. وهذا يمنع منافسة وحدة المعالجة المركزية الهامة في البيئات عالية الكثافة.
+
+لمزيد من المعلومات، راجع [بدء الفحص المجدول فقط عندما يكون الكمبيوتر قيد التشغيل ولكن ليس قيد الاستخدام](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle).
 
 ## <a name="scan-vms-that-have-been-offline"></a>فحص الأجهزة الظاهرية التي كانت غير متصلة
 

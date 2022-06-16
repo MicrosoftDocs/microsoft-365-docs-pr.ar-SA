@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: تعرف على كيفية استخدام PowerShell لإجراء ترحيل بروتوكول الوصول إلى بريد إنترنت (IMAP) إلى Microsoft 365.
-ms.openlocfilehash: 7f0fd2ded375729d1e738215fec3558fbc93257b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: e3375af79ce4332ebf8f44e88181d7d8dc0e430f
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012649"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128778"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>استخدم PowerShell لإجراء ترحيل IMAP إلى Microsoft 365
 
@@ -208,7 +208,7 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 
 تستخدم أنظمة البريد الإلكتروني سجل DNS يسمى سجل MX لمعرفة مكان تسليم رسائل البريد الإلكتروني. أثناء عملية ترحيل البريد الإلكتروني، كان سجل MX يشير إلى نظام البريد الإلكتروني المصدر. الآن بعد اكتمال ترحيل البريد الإلكتروني إلى Microsoft 365، حان الوقت لإشارة سجل MX إلى Microsoft 365. يساعد ذلك على التأكد من تسليم البريد الإلكتروني إلى علب بريدك Microsoft 365. من خلال نقل سجل MX، يمكنك أيضا إيقاف تشغيل نظام البريد الإلكتروني القديم عندما تكون جاهزا.
 
-بالنسبة إلى العديد من موفري DNS، هناك إرشادات محددة لتغيير سجل MX. إذا لم يكن موفر DNS الخاص بك مضمنا، أو إذا كنت تريد الحصول على فكرة عن التوجيهات العامة، يتم توفير [إرشادات سجل MX العامة](https://go.microsoft.com/fwlink/?LinkId=397449) أيضا.
+بالنسبة إلى العديد من موفري DNS، هناك إرشادات محددة لتغيير سجل MX. إذا لم يكن موفر DNS الخاص بك مضمنا، أو إذا كنت تريد الحصول على فكرة عن التوجيهات العامة، يتم توفير [إرشادات سجل MX العامة](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide#add-an-mx-record-for-email-outlook-exchange-online) أيضا.
 
 قد يستغرق الأمر ما يصل إلى 72 ساعة حتى تتمكن أنظمة البريد الإلكتروني لعملائك وشركائك من التعرف على سجل MX الذي تم تغييره. انتظر 72 ساعة على الأقل قبل المتابعة إلى المهمة التالية: الخطوة 6: حذف دفعة ترحيل IMAP.
 

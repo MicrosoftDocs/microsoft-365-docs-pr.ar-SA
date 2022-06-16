@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: إنشاء نهج استبقاء التسميات التلقائية حتى تتمكن من تطبيق التسميات تلقائيا للاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه
-ms.openlocfilehash: a349ce1678c6cc28a82aa6c97c31358a57970f35
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 87328b69f2649a1e6a6c6755892e17e7c04aac53
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115598"
+ms.locfileid: "66128809"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>تطبيق تسمية استبقاء تلقائيا للاحتفاظ بالمحتوى أو حذفه
 

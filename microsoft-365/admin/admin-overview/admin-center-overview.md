@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: يمكنك استخدام طريقة عرض مبسطة في مركز مسؤولي Microsoft 365 لإدارة المهام الشائعة أو طريقة عرض لوحة المعلومات للإعدادات والمهام الأكثر تعقيداً.
-ms.openlocfilehash: d553eff9a9ed78225200320bbadb5a7e28d517f0
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f3f9d1616189a5e3347a882a6caec0df28e274c0
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436130"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129020"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>نظرة عامة حول مركز مسؤولي Microsoft 365
 
@@ -171,7 +171,7 @@ Microsoft 365 هو حل كامل وذكي يتضن Office 365 وWindows 10 وEnt
 
 يسعدنا أن نسمع منك! يساعدنا الإبلاغ عن الأخطاء ومشاركة الملاحظات على تحسين مركز مسؤولي Microsoft 365. لتقديم الملاحظات، حدد زر **الملاحظات** أسفل الصفحة واستخدم النموذج لإرسال أفكارك إلينا. حدد خانة الاختيار وأكد عنوان بريدك الإلكتروني إذا كنت تريد أن يتابع شخص من فريق مركز مسؤولي Microsoft 365 تعليقاتك. لا يمكننا الوعد بمتابعة كل الملاحظات، ولكننا سنحاول القيام بذلك!
 
-يُمكنك أيضًا تقديم ملاحظات من خارج مركز المسؤولين على منتدى UserVoice. يُمكنك استخدام هذه الصفحة لتقديم اقتراحات الميزات التي يمكن التصويت عليها من قبل المستخدمين الآخرين في المنتدى: [منتدى UserVoice لمركز المسؤولين الجديد](https://go.microsoft.com/fwlink/?linkid=2024994).
+<!---You can also give feedback from outside of the admin center on our UserVoice forum. You can use this page to make feature suggestions that can be voted on by other forum users: [UserVoice forum for the new admin center](https://go.microsoft.com/fwlink/?linkid=2024994).--->
 
 ### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>ماذا عن أنواع معينة من أدوار تكنولوجيا المعلومات ومساحات العمل الأخرى مثل إدارة الأجهزة أو الأمان أو Exchange؟
 

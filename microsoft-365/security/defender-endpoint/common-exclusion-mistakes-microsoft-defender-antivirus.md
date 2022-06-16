@@ -14,27 +14,32 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/19/2021
+ms.date: 06/16/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 23c079f8f845e6116bc39b9edb3fb186883ef576
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 99d59c2027d3b34ad5c9c19444a51dd08cc22276
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418215"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128647"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>الأخطاء الشائعة التي يجب تجنبها عند تحديد الاستثناءات
 
 **ينطبق على:**
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- الخطة 1 من Microsoft Defender لنقطة النهاية
 - برنامج الحماية من الفيروسات من Microsoft Defender 
 
 **الأنظمة الأساسية**
+
 - بالنسبة لنظام التشغيل
 - macOS
 - ينكس
 
-يمكنك تحديد قائمة استبعاد للعناصر التي لا تريد برنامج الحماية من الفيروسات من Microsoft Defender فحصها. يمكن أن تحتوي هذه العناصر المستبعدة على تهديدات تجعل جهازك عرضة للخطر. تصف هذه المقالة بعض الأخطاء الشائعة التي يجب تجنبها عند تعريف الاستثناءات.
+> [!IMPORTANT]
+> **أضف الاستثناءات بحذر**. تقلل الاستثناءات الخاصة بمسح برنامج الحماية من الفيروسات من Microsoft Defender مستوى الحماية للأجهزة.
+
+يمكنك تحديد قائمة استبعاد للعناصر التي لا تريد برنامج الحماية من الفيروسات من Microsoft Defender فحصها. ومع ذلك، يمكن أن تحتوي العناصر المستبعدة على تهديدات تجعل جهازك عرضة للخطر. تصف هذه المقالة بعض الأخطاء الشائعة التي يجب تجنبها عند تعريف الاستثناءات.
 
 قبل تحديد قوائم الاستبعاد، راجع [التوصيات لتعريف الاستثناءات](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
@@ -42,251 +47,140 @@ ms.locfileid: "65418215"
 
 يجب عدم استبعاد بعض الملفات أو أنواع الملفات أو المجلدات أو العمليات من الفحص على الرغم من أنك تثق بها لتكون غير ضارة.
 
-لا تقم بتعريف الاستثناءات لمواقع المجلدات وملحقات الملفات والعمليات المدرجة في الأقسام التالية:
-- مواقع المجلدات
-- ملحقات الملفات
-- العمليات
+لا تحدد الاستثناءات لمواقع المجلدات وملحقات الملفات والعمليات المدرجة في الأقسام التالية:
+
+- [مواقع المجلدات](#folder-locations)
+- [ملحقات الملفات](#file-extensions)
+- [العمليات](#processes)
 
 ### <a name="folder-locations"></a>مواقع المجلدات
 
+> [!IMPORTANT]
+> يجب عدم استبعاد بعض المجلدات من عمليات الفحص لأنها في نهاية المطاف مجلدات يمكن أن يتم إسقاط الملفات الضارة فيها.
+
 بشكل عام، لا تحدد الاستثناءات لمواقع المجلدات التالية:
 
-`%systemdrive%`
-
-`C:`
-
-`C:\`
-
-`C:\*`
-
-`%ProgramFiles%\Java`
-
-`C:\Program Files\Java`
-
-`%ProgramFiles%\Contoso\`
-
-`C:\Program Files\Contoso\`
-
-`%ProgramFiles(x86)%\Contoso\`
-
-`C:\Program Files (x86)\Contoso\`
-
-`C:\Temp`
-
-`C:\Temp\`
-
-`C:\Temp\*`
-
-`C:\Users\`
-
-`C:\Users\*`
-
-`C:\Users\<UserProfileName>\AppData\Local\Temp\`**لاحظ الاستثناء التالي SharePoint**: قم باستبعاد `C:\Users\ServiceAccount\AppData\Local\Temp` عند استخدام [الحماية من الفيروسات على مستوى الملف في SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
-
-`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`**لاحظ الاستثناء التالي SharePoint**: قم باستبعاد `C:\Users\Default\AppData\Local\Temp` عند استخدام [الحماية من الفيروسات على مستوى الملف في SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
-
-`%Windir%\Prefetch`
-
-`C:\Windows\Prefetch`
-
-`C:\Windows\Prefetch\`
-
-`C:\Windows\Prefetch\*`
-
-`%Windir%\System32\Spool`
-
-`C:\Windows\System32\Spool`
-
-`C:\Windows\System32\CatRoot2`
-`%Windir%\Temp`
-
-`C:\Windows\Temp`
-
-`C:\Windows\Temp\`
-
-`C:\Windows\Temp\*`
+- `%systemdrive%`
+- `C:`، `C:\`أو `C:\*`
+- `%ProgramFiles%\Java` او `C:\Program Files\Java`
+- `%ProgramFiles%\Contoso\`، `C:\Program Files\Contoso\`أو `%ProgramFiles(x86)%\Contoso\`، أو `C:\Program Files (x86)\Contoso\`
+- `C:\Temp`، `C:\Temp\`أو `C:\Temp\*`
+- `C:\Users\` او `C:\Users\*`
+- `C:\Users\<UserProfileName>\AppData\Local\Temp\` أو `C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`. **لاحظ الاستثناءات الهامة التالية SharePoint**: **قم باستبعاد** `C:\Users\ServiceAccount\AppData\Local\Temp` أو `C:\Users\Default\AppData\Local\Temp` عند استخدام [الحماية من الفيروسات على مستوى الملف في SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
+- `%Windir%\Prefetch`، `C:\Windows\Prefetch`أو `C:\Windows\Prefetch\`، أو `C:\Windows\Prefetch\*`
+- `%Windir%\System32\Spool` او `C:\Windows\System32\Spool`
+- `C:\Windows\System32\CatRoot2`
+- `%Windir%\Temp`، `C:\Windows\Temp`أو `C:\Windows\Temp\`، أو `C:\Windows\Temp\*`
 
 #### <a name="linux-and-macos-platforms"></a>Linux وأنظمة macOS الأساسية
 
-`/`
+بشكل عام، لا تحدد الاستثناءات لمواقع المجلدات التالية:
 
-`/bin`
-
-`/sbin`
-
-`/usr/lib`
-
+- `/`
+- `/bin` او `/sbin`
+- `/usr/lib`
 
 ### <a name="file-extensions"></a>ملحقات الملفات
 
+> [!IMPORTANT]
+> يجب عدم استبعاد بعض ملحقات الملفات لأنها يمكن أن تكون أنواع ملفات تستخدم في هجوم.
+
 بشكل عام، لا تحدد الاستثناءات لملحقات الملفات التالية:
 
-`.7z`
-
-`.bat`
-
-`.bin`
-
-`.cab`
-
-`.cmd`
-
-`.com`
-
-`.cpl`
-
-`.dll`
-
-`.exe`
-
-`.fla`
-
-`.gif`
-
-`.gz`
-
-`.hta`
-
-`.inf`
-
-`.java`
-
-`.jar`
-
-`.job`
-
-`.jpeg`
-
-`.jpg`
-
-`.js`
-
-`.ko`
-
-`.ko.gz`
-
-`.msi`
-
-`.ocx`
-
-`.png`
-
-`.ps1`
-
-`.py`
-
-`.rar`
-
-`.reg`
-
-`.scr`
-
-`.sys`
-
-`.tar`
-
-`.tmp`
-
-`.url`
-
-`.vbe`
-
-`.vbs`
-
-`.wsf`
-
-`.zip`
+- `.7z`
+- `.bat`
+- `.bin`
+- `.cab`
+- `.cmd`
+- `.com`
+- `.cpl`
+- `.dll`
+- `.exe`
+- `.fla`
+- `.gif`
+- `.gz`
+- `.hta`
+- `.inf`
+- `.java`
+- `.jar`
+- `.job`
+- `.jpeg`
+- `.jpg`
+- `.js`
+- `.ko` او `.ko.gz`
+- `.msi`
+- `.ocx`
+- `.png`
+- `.ps1`
+- `.py`
+- `.rar`
+- `.reg`
+- `.scr`
+- `.sys`
+- `.tar`
+- `.tmp`
+- `.url`
+- `.vbe`
+- `.vbs`
+- `.wsf`
+- `.zip`
 
 ### <a name="processes"></a>العمليات
 
+> [!IMPORTANT]
+> لا ينبغي استبعاد بعض العمليات لأنها تستخدم في أثناء الهجمات.
+
 بشكل عام، لا تحدد الاستثناءات للعمليات التالية:
 
-`AcroRd32.exe`
-
-`bitsadmin.exe`
-
-`excel.exe`
-
-`iexplore.exe`
-
-`java.exe`
-
-`outlook.exe`
-
-`psexec.exe`
-
-`powerpnt.exe`
-
-`powershell.exe`
-
-`schtasks.exe`
-
-`svchost.exe`
-
-`wmic.exe`
-
-`winword.exe`
-
-`wuauclt.exe`
-
-`addinprocess.exe`
-
-`addinprocess32.exe`
-
-`addinutil.exe`
-
-`bash.exe`
-
-`bginfo.exe`
-
-`cdb.exe`
-
-`csi.exe`
-
-`dbghost.exe`
-
-`dbgsvc.exe`
-
-`dnx.exe`
-
-`dotnet.exe`
-
-`fsi.exe`
-
-`fsiAnyCpu.exe`
-
-`kd.exe`
-
-`ntkd.exe`
-
-`lxssmanager.dll`
-
-`msbuild.exe`
-
-`mshta.exe`
-
-`ntsd.exe`
-
-`rcsi.exe`
-
-`system.management.automation.dll`
-
-`windbg.exe`
-
-#### <a name="linux-and-macos-platforms"></a>Linux وأنظمة macOS الأساسية
-
-`bash`
-
-`sh`
-
-`python` و `python3`
-
-`java`
-
-`zsh`
+- `AcroRd32.exe`
+- `addinprocess.exe`
+- `addinprocess32.exe`
+- `addinutil.exe`
+- `bash.exe`
+- `bginfo.exe`
+- `bitsadmin.exe`
+- `cdb.exe`
+- `csi.exe`
+- `dbghost.exe`
+- `dbgsvc.exe`
+- `dnx.exe`
+- `dotnet.exe`
+- `excel.exe`
+- `fsi.exe`
+- `fsiAnyCpu.exe`
+- `iexplore.exe`
+- `java.exe`
+- `kd.exe`
+- `lxssmanager.dll`
+- `msbuild.exe`
+- `mshta.exe`
+- `ntkd.exe`
+- `ntsd.exe`
+- `outlook.exe`
+- `psexec.exe`
+- `powerpnt.exe`
+- `powershell.exe`
+- `rcsi.exe`
+- `svchost.exe`
+- `schtasks.exe`
+- `system.management.automation.dll`
+- `windbg.exe`
+- `winword.exe`
+- `wmic.exe`
+- `wuauclt.exe`
 
 > [!NOTE]
 > يمكنك اختيار استبعاد أنواع الملفات، مثل `.gif`، `.jpg``.jpeg`أو `.png` إذا كانت بيئتك تحتوي على برنامج حديث ومحدث مع نهج تحديث صارم للتعامل مع أي ثغرات أمنية.
+
+#### <a name="linux-and-macos-platforms"></a>Linux وأنظمة macOS الأساسية
+
+بشكل عام، لا تحدد الاستثناءات للعمليات التالية:
+
+- `bash`
+- `java`
+- `python` و `python3`
+- `sh`
+- `zsh`
 
 ## <a name="using-just-the-file-name-in-the-exclusion-list"></a>استخدام اسم الملف فقط في قائمة الاستبعاد
 
@@ -294,7 +188,7 @@ ms.locfileid: "65418215"
 
 ## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>استخدام قائمة استبعاد واحدة لأحمال عمل خادم متعددة
 
-لا تستخدم قائمة استبعاد واحدة لتعريف الاستثناءات لأحمال عمل خادم متعددة. تقسيم الاستثناءات لأحمال عمل التطبيقات أو الخدمات المختلفة إلى قوائم استثناء متعددة. على سبيل المثال، يجب أن تكون قائمة الاستبعاد لحمل عمل IIS Server مختلفة عن قائمة الاستبعاد لحمل العمل SQL Server.
+لا تستخدم قائمة استبعاد واحدة لتعريف الاستثناءات لأحمال عمل الخادم المتعددة. تقسيم الاستثناءات لأحمال عمل التطبيقات أو الخدمات المختلفة إلى قوائم استثناء متعددة. على سبيل المثال، يجب أن تكون قائمة الاستبعاد لحمل عمل IIS Server مختلفة عن قائمة الاستبعاد لحمل العمل SQL Server.
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>استخدام متغيرات البيئة غير الصحيحة كأحرف بدل في اسم الملف ومسار المجلد أو قوائم استبعاد الملحق
 
@@ -303,7 +197,7 @@ ms.locfileid: "65418215"
 راجع [استخدام أحرف البدل في اسم الملف ومسار المجلد أو قوائم استثناء الملحق](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) للحصول على معلومات حول كيفية استخدام أحرف البدل في قوائم الاستبعاد.
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

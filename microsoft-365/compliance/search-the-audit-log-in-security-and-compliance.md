@@ -21,12 +21,12 @@ description: استخدم مدخل التوافق في Microsoft Purview للب�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 0e8ac4e3a8705960f307314717127c969a26c2f6
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 76cee49b8f37f946f9aa8e67bf40e8642f242fac
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078491"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128800"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>البحث في سجل التدقيق في مدخل التوافق
 
@@ -63,6 +63,7 @@ ms.locfileid: "66078491"
 | نهج الاستبقاء وتسميات الاستبقاء|MIPLabel, MipAutoLabelExchangeItem, MipAutoLabelSharePointItem, MipAutoLabelSharePointPolicyLocation|
 | أنواع المعلومات الحساسة|DlpSensitiveInformationType|
 | تسميات الحساسية|MIPLabel، SensitivityLabelAction، SensitivityLabeledFileAction، SensitivityLabelPolicyMatch|
+| مدخل الرسائل المشفرة|OMEPortal|
 | SharePoint Online|SharePoint وSharePointFileOperation وSharePointSharingOperation وSharePointListOperation وSharePointCommentOperation |
 | تيار|MicrosoftStream|
 | التحليل الذكي للمخاطر|ThreatIntelligence, ThreatIntelligenceUrl, ThreatFinder, ThreatIntelligenceAtpContent|
@@ -409,7 +410,7 @@ ms.locfileid: "66078491"
         [أنشطة مدخل الرسائل المشفرة](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
-        [أنشطة SystemSync] (أنشطة #systemsync)
+        [أنشطة SystemSync](#systemsync-activities)
     :::column-end:::
     :::column:::
         

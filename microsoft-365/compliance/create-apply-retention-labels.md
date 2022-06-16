@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: إرشادات لنشر تسميات الاستبقاء حتى تتمكن بعد ذلك من تطبيقها في التطبيقات للاحتفاظ بما تحتاجه وحذف ما لا تحتاج إليه.
-ms.openlocfilehash: 3acbe0632a387139bbe865b854a92f8e51609cc1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b96d5f3df440db58aff63bffca11523f7c09d8ee
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007317"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128888"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>نشر تسميات الاستبقاء وتطبيقها في التطبيقات
 
@@ -58,7 +58,7 @@ ms.locfileid: "66007317"
 
 حدد قبل إنشاء نهج تسمية الاستبقاء الخاص بك ما إذا كان سيكون **التكيفي** أو **الثابت**. لمزيد من المعلومات، راجع [نطاقات النهج التكيفية أو الثابتة للاستبقاء](retention.md#adaptive-or-static-policy-scopes-for-retention). إذا قررت استخدام نهج موائمة مفتوحة، فيجب إنشاء نطاق أو أكثر من النطاقات التكيفية قبل إنشاء نهج تسمية الاستبقاء، ثم تحديدها أثناء عملية إنشاء نهج تسمية الاستبقاء. للحصول على الإرشادات، راجع [معلومات التكوين للنطاقات الموائمة المفتوحة](retention-settings.md#configuration-information-for-adaptive-scopes).
 
-1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل الامتثال ل Microsoft Purview</a>، انتقل إلى أحد المواقع التالية:
+1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>، انتقل إلى أحد المواقع التالية:
     
     - إذا كنت تستخدم إدارة السجلات:
         - **حلول** >  علامة تبويب نهج  التسميات > > **إدارة السجلات** > **نشر التسميات**
@@ -92,7 +92,7 @@ ms.locfileid: "66007317"
 
 ![رسم تخطيطي عندما يتم تطبيق التسميات المنشورة.](../media/retention-labels-published-timings.png)
 
-إذا لم تظهر التسميات بعد سبعة أيام، فتحقق من **حالة** نهج التسمية عن طريق تحديدها من صفحة **نهج التسمية** في مدخل توافق Microsoft Purview. إذا رأيت **(خطأ)** مضمنا في الحالة وفي تفاصيل المواقع، فراجع رسالة تفيد بأن نشر النهج يستغرق وقتا أطول من المتوقع أو محاولة إعادة نشر النهج، فحاول تشغيل [الأمر Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) أو [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell لإعادة محاولة توزيع النهج:
+إذا لم تظهر التسميات بعد سبعة أيام، فتحقق من **حالة** نهج التسمية عن طريق تحديدها من صفحة **نهج التسمية** في مدخل التوافق في Microsoft Purview. إذا رأيت **(خطأ)** مضمنا في الحالة وفي تفاصيل المواقع، فراجع رسالة تفيد بأن نشر النهج يستغرق وقتا أطول من المتوقع أو محاولة إعادة نشر النهج، فحاول تشغيل [الأمر Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) أو [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell لإعادة محاولة توزيع النهج:
 
 1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 

@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: تعرف على ما يحدث لبياناتك عند انتهاء صلاحية اشتراكك في Microsoft 365 للأعمال أو تعطيله أو إذا قمت بإلغاء الأمر.
 ms.date: 09/16/2021
-ms.openlocfilehash: a96ef700c522577e8d22f734ea6a8a94b410d83a
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: a9837a146ff6494ceaa94adeefeeaf6ed7769986
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102295"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128690"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>ماذا يحدث لبياناتي وإمكانية وصولي عندما تنتهي صلاحية اشتراكي في Microsoft 365 للأعمال؟
 
@@ -55,7 +55,7 @@ ms.locfileid: "66102295"
   
 > [!NOTE]
 >
-> **ما هي "بيانات العميل"؟** تشير بيانات العميل، كما هو محدد في [شروط خدمة Microsoft Online](https://go.microsoft.com/fwlink/p/?LinkId=613649)، إلى جميع البيانات، بما في ذلك جميع ملفات النص أو الصوت أو الصور التي يتم توفيرها إلى Microsoft من قبل العميل أو بالنيابة عنه من خلال استخدام العميل لخدمات Microsoft 365. لمعرفة المزيد حول حماية بيانات العملاء، راجع [بدء استخدام Microsoft Service Trust Portal](../../compliance/get-started-with-service-trust-portal.md).
+> **ما هي "بيانات العميل"؟** تشير بيانات العميل، كما هو محدد في [شروط خدمة Microsoft Online](https://www.microsoft.com/en-us/licensing/product-licensing/products)، إلى جميع البيانات، بما في ذلك جميع ملفات النص أو الصوت أو الصور التي يتم توفيرها إلى Microsoft من قبل العميل أو بالنيابة عنه من خلال استخدام العميل لخدمات Microsoft 365. لمعرفة المزيد حول حماية بيانات العملاء، راجع [بدء استخدام Microsoft Service Trust Portal](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>ماذا يحدث إذا قمت بإلغاء اشتراك؟
 

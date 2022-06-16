@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: حدد لوائح خصوصية البيانات والسيناريوهات ذات الصلة واستعدادك وأنواع المعلومات الحساسة الموجودة في بيئة Microsoft 365 الخاصة بك.
-ms.openlocfilehash: 73cf1f3a51806fb53d5f04eb835a2fbcc7cd7b3b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a09e447733baa352a5302490b88e95a08a2775a4
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015027"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129042"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>تقييم مخاطر خصوصية البيانات وتحديد العناصر الحساسة باستخدام Microsoft 365
 
@@ -192,11 +192,11 @@ ms.locfileid: "66015027"
 
 يمكن أن يكون البحث عن محتوى في بيئتك يحتوي على شخصية مهمة هائلة، والتي تتضمن في السابق مزيجا من استخدام Compliance Search وeDiscovery وeDiscovery (Premium) وDLP والتدقيق.
 
-باستخدام حل **تصنيف البيانات** الجديد في مدخل توافق Microsoft Purview، أصبح هذا أسهل بكثير مع قدرة [مستكشف المحتوى](../compliance/data-classification-content-explorer.md) ، التي تعمل مع أنواع المعلومات الحساسة المضمنة أو المخصصة، بما في ذلك تلك المتعلقة بالبيانات الشخصية.
+مع حل **تصنيف البيانات** الجديد في مدخل التوافق في Microsoft Purview، أصبح هذا أسهل بكثير مع قدرة [مستكشف المحتوى](../compliance/data-classification-content-explorer.md)، والتي تعمل مع أنواع المعلومات الحساسة المضمنة أو المخصصة، بما في ذلك تلك المتعلقة بالبيانات الشخصية.
 
 ### <a name="sensitive-information-types"></a>أنواع المعلومات الحساسة
 
-يأتي مدخل الامتثال ل Microsoft Purview محملا مسبقا بأكثر من 100 نوع من أنواع المعلومات الحساسة، معظمها يتعلق بتحديد البيانات الشخصية وتحديد موقعها. يمكن أن تساعد أنواع المعلومات الحساسة المضمنة هذه في تحديد أرقام بطاقات الائتمان وأرقام الحسابات المصرفية وأرقام جواز السفر والمزيد وحمايتها، استنادا إلى الأنماط التي يتم تعريفها بواسطة تعبير عادي (regex) أو دالة. لمعرفة المزيد، راجع [ما تبحث عنه أنواع المعلومات الحساسة](../compliance/sensitive-information-type-entity-definitions.md).
+تأتي مدخل التوافق في Microsoft Purview محملة مسبقا بأكثر من 100 نوع من أنواع المعلومات الحساسة، معظمها يتعلق بتحديد البيانات الشخصية وتحديد موقعها. يمكن أن تساعد أنواع المعلومات الحساسة المضمنة هذه في تحديد أرقام بطاقات الائتمان وأرقام الحسابات المصرفية وأرقام جواز السفر والمزيد وحمايتها، استنادا إلى الأنماط التي يتم تعريفها بواسطة تعبير عادي (regex) أو دالة. لمعرفة المزيد، راجع [ما تبحث عنه أنواع المعلومات الحساسة](../compliance/sensitive-information-type-entity-definitions.md).
 
 إذا كنت بحاجة إلى تحديد وحماية نوع خاص بالمؤسسة أو إقليمي من العناصر الحساسة، مثل تنسيق مخصص لمعرفات الموظفين، أو معلومات شخصية أخرى غير مشمولة بالفعل بنوع معلومات حساسة مضمن، يمكنك إنشاء نوع معلومات حساسة مخصص باستخدام هذه الأساليب:
 
@@ -210,9 +210,9 @@ ms.locfileid: "66015027"
 
 - [تخصيص نوع معلومات حساسة مضمن](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [التعرّف على أنواع المعلومات الحساسة](../compliance/sensitive-information-type-learn-about.md)
-- [إنشاء نوع معلومات حساسة مخصص في مدخل توافق "Microsoft 365 Purview"](../compliance/create-a-custom-sensitive-information-type.md)
-- [إنشاء نوع معلومات حساسة مخصص في Security & Compliance PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [إنشاء أنواع معلومات حساسة مخصصة باستخدام التصنيف المستند إلى مطابقة البيانات الدقيقة](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [إنشاء نوع معلومات حساسة مخصص في مركز توافق & الأمان](../compliance/create-a-custom-sensitive-information-type.md)
+- [إنشاء نوع معلومات حساسة مخصص في Security & Compliance Center PowerShell](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [إنشاء أنواع معلومات حساسة مخصصة باستخدام التصنيف المستند إلى مطابقة البيانات الدقيقة](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview?view=o365-worldwide)
 
 ### <a name="content-explorer"></a>مستكشف المحتوى
 
