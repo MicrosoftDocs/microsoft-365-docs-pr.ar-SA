@@ -1,6 +1,8 @@
-- name: توافق Microsoft Purview
+- name: حلول التوافق & المخاطر من Microsoft Purview
   href: index.yml
-- name: الجديد في Microsoft Purview
+- name: تعرف على حلول التوافق & المخاطر
+  href: purview-compliance.md
+- name: ما الجديد في حلول التوافق & المخاطر
   href: whats-new.md
 - name: الإصدارات التجريبية للتوافق
   items:
@@ -1001,6 +1003,8 @@
           href: set-up-basic-audit.md
         - name: البحث في سجل التدقيق
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: تدقيق البحث الجديد
+          href: audit-new-search.md
         - name: تصدير سجلات سجل التدقيق وتكوينها وعرضها
           href: export-view-audit-log-records.md
         - name: استخدام برنامج PowerShell النصي للبحث في سجل التدقيق
