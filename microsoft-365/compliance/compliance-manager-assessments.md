@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: قم بإنشاء تقييمات في Microsoft Purview Compliance Manager لمساعدتك على تلبية متطلبات اللوائح والشهادات المهمة لمؤسستك.
-ms.openlocfilehash: 841d48951eebf0d04bf5c97a708a250218b44c65
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+description: أنشئ تقييمات في Microsoft Purview Compliance Manager لمساعدتك على تلبية متطلبات اللوائح والشهادات المهمة لمؤسستك.
+ms.openlocfilehash: cb2d90bf8dfbdcb2ec2ca534d1659a19d27998bc
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972552"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115730"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>إنشاء التقييمات وإدارتها في Compliance Manager
 
@@ -79,11 +79,11 @@ ms.locfileid: "64972552"
 
 ## <a name="understand-templates-before-creating-assessments"></a>فهم القوالب قبل إنشاء التقييمات
 
-تحتوي قوالب التقييم على عناصر التحكم والتوصيات الإجرائية للتقييمات، استنادا إلى شهادات للوائح الخصوصية والمعايير المختلفة. قد تتضمن القوالب المتوفرة في مؤسستك قالبا واحدا أو أكثر تم تضمينه كجزء من اتفاقية الترخيص الخاصة بك، بالإضافة إلى أي قوالب إضافية متميزة اشتريتها.
+تحتوي قوالب التقييم على عناصر التحكم والتوصيات الإجرائية للتقييمات، استنادا إلى شهادات للوائح الخصوصية والمعايير المختلفة. تبدأ مؤسستك بقالب واحد على الأقل وربما أكثر من القوالب **المضمنة** المتوفرة للاستخدام، اعتمادا على اتفاقية الترخيص الخاصة بك. قد تشتري مؤسستك أيضا قوالب **إضافية متميزة** .
 
-يوجد كل قالب، سواء كان مضمنا أو متميزا، في إصدارين: أحدهما للاستخدام مع Microsoft 365 (أو منتجات Microsoft الأخرى حسب توفرها)، وإصدار عالمي يمكن تصميمه لتقييم المنتجات الأخرى التي تستخدمها. يمكنك اختيار نوع القالب المناسب للمنتج الذي تريد تقييمه.
+يوجد كل قالب في إصدارين: أحدهما للاستخدام مع Microsoft 365 (أو منتجات Microsoft الأخرى حسب توفرها)، وإصدار عالمي يمكن تصميمه لتقييم المنتجات الأخرى التي تستخدمها. يمكنك اختيار نوع القالب المناسب للمنتج الذي تريد تقييمه.
 
-لمعرفة المزيد حول القوالب، راجع [استخدام قوالب التقييم](compliance-manager-templates.md).
+احصل على مزيد من التفاصيل حول القوالب في [Learn about assessment templates في Compliance Manager](compliance-manager-templates.md).
 
 ## <a name="create-assessments"></a>إنشاء تقييمات
 

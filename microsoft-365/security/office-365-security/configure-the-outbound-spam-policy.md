@@ -19,20 +19,20 @@ ms.custom:
 description: يمكن للمسؤولين معرفة كيفية عرض نهج البريد العشوائي الصادرة وإنشاءها وتعديلها وحذفها في Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ab8585a0671f9c62ec2015d91486539c84004db
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 690d4def4081812653cb533765f6c61cca7d1e90
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847441"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115818"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>تكوين تصفية البريد العشوائي الصادر في EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender لـ Office 365 الخطة 1 والخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 في المؤسسات Microsoft 365 التي لها علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، يتم تلقائيا التحقق من رسائل البريد الإلكتروني الصادرة التي يتم إرسالها عبر EOP بحثا عن البريد العشوائي ونشاط الإرسال غير العادي.
@@ -80,7 +80,7 @@ ms.locfileid: "64847441"
 
   **الملاحظات**:
 
-  - إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات _والأذونات_ المطلوبة للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع ["حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md)".
+  - إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات _والأذونات_ المطلوبة للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md).
   - كما توفر مجموعة دور **إدارة المؤسسة للعرض فقط** في [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) إمكانية الوصول للقراءة فقط إلى الميزة.
 
 - للحصول على الإعدادات الموصى بها لنهج البريد العشوائي الصادرة، راجع [إعدادات نهج تصفية البريد العشوائي الصادر EOP](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings).
@@ -115,6 +115,16 @@ ms.locfileid: "64847441"
    تستخدم القيم المتعددة في نفس الشرط منطق OR (على سبيل المثال، _\<sender1\>_ أو _\<sender2\>_). تستخدم الشروط المختلفة منطق AND (على سبيل المثال، _\<sender1\>_ و _\<member of group 1\>_).
 
    - **استبعاد هؤلاء المستخدمين والمجموعات والمجالات**: لإضافة استثناءات للمرسلين الداخليين الذين ينطبق عليهم النهج (استثناءات المستلمين)، حدد هذا الخيار وقم بتكوين الاستثناءات. الإعدادات والسلوك تشبه تماما الشروط.
+
+   > [!IMPORTANT]
+   > لا تعد الشروط أو الاستثناءات المختلفة المتعددة مضافة؛ إنها شاملة. يتم تطبيق النهج _فقط_ على المستلمين الذين يتطابقون مع _كافة_ عوامل تصفية المستلمين المحددة. على سبيل المثال، يمكنك تكوين شرط عامل تصفية مستلم في النهج بالقيم التالية:
+   >
+   > - المستلم هو: romain@contoso.com
+   > - المستلم هو عضو في: المديرين التنفيذيين
+   >
+   > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
+   >
+   > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
 
    عند الانتهاء، انقر فوق **"التالي**".
 

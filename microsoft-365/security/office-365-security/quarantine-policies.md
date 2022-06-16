@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية استخدام نهج العزل للتحكم في ما يمكن للمستخدمين القيام به للرسائل المعزولة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef3fc69cf07f4b643e12bab96a73b68627e07203
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 74f1a657cbf675b8a55edc169339cb16a22f4dbe
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648228"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115664"
 ---
 # <a name="quarantine-policies"></a>سياسات العزل
 
@@ -685,6 +685,9 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
   - **مراجعة**
 
   :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="الأزرار المتوفرة في إعلام العزل إذا كان نهج العزل يمنح المستخدم أذونات الوصول الكامل" lightbox="../../media/quarantine-tags-esn-full-access.png":::
+
+> [!NOTE]
+> كما هو موضح سابقا، يتم تعطيل إعلامات العزل في نهج العزل الافتراضي المسمى DefaultFullAccessPolicy، على الرغم من تعيين مجموعة أذونات **الوصول الكامل** لنهج العزل هذا. تتوفر إعلامات العزل فقط في نهج العزل المخصصة التي تقوم بإنشائها أو في نهج الوصول إلى العزل الافتراضي المسمى NotificationEnabledPolicy ([إذا كان هذا النهج متوفرا في مؤسستك](#full-access-permissions-and-quarantine-notifications)).
 
 ### <a name="individual-permissions"></a>أذونات فردية
 

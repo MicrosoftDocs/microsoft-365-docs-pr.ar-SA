@@ -1,5 +1,5 @@
 ---
-title: مرفقات خزينة
+title: مرفقات آمنة
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,16 +20,16 @@ ms.collection:
 description: يمكن للمسؤولين التعرف على ميزة المرفقات خزينة في Microsoft Defender لـ Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d069d92eb012211af8dd4e12109ebcae7eb221e
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: e50904932b95dabdad627a7a3291659c1c4d9584
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128707"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115928"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>خزينة المرفقات في Microsoft Defender لـ Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
@@ -84,6 +84,16 @@ ms.locfileid: "65128707"
   - **المستلم عضو في**
 
   يمكنك استخدام شرط أو استثناء مرة واحدة فقط، ولكن يمكن أن يحتوي الشرط أو الاستثناء على قيم متعددة. تستخدم قيم متعددة لنفس الشرط أو منطق الاستثناء منطق OR (على سبيل المثال، _\<recipient1\>_ أو _\<recipient2\>_). تستخدم الشروط أو الاستثناءات المختلفة منطق AND (على سبيل المثال، _\<recipient1\>_ و _\<member of group 1\>_).
+
+  > [!IMPORTANT]
+  > لا تعد الشروط أو الاستثناءات المختلفة المتعددة مضافة؛ إنها شاملة. يتم تطبيق النهج _فقط_ على المستلمين الذين يتطابقون مع _كافة_ عوامل تصفية المستلمين المحددة. على سبيل المثال، يمكنك تكوين شرط عامل تصفية مستلم في النهج بالقيم التالية:
+  >
+  > - المستلم هو: romain@contoso.com
+  > - المستلم هو عضو في: المديرين التنفيذيين
+  >
+  > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
+  >
+  > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
 
 - **الأولوية**: إذا قمت بإنشاء نهج متعددة، يمكنك تحديد الترتيب الذي يتم تطبيقها عليه. لا يمكن أن يكون لأي نهجين نفس الأولوية، وتتوقف معالجة النهج بعد تطبيق النهج الأول.
 

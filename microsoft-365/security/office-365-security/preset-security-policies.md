@@ -16,12 +16,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية تطبيق إعدادات النهج القياسية والضيقة عبر ميزات الحماية Exchange Online Protection (EOP) Microsoft Defender لـ Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06db733b50de51750d6c9f7b3dcf14f28cdff414
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: eb9eb8c3f45b0047922be854972d1f96123342cb
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044356"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115510"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>نهج الأمان التي تم تعيينها مسبقا في EOP و Microsoft Defender لـ Office 365
 
@@ -64,6 +64,16 @@ ms.locfileid: "66044356"
   - **المجالات**: كافة المستلمين في [المجالات المقبولة المحددة](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) في مؤسستك.
 
   يمكنك استخدام شرط أو استثناء مرة واحدة فقط، ولكن يمكنك تحديد قيم متعددة للشرط أو الاستثناء. تستخدم قيم متعددة لنفس الشرط أو منطق الاستثناء منطق OR (على سبيل المثال، _\<recipient1\>_ أو _\<recipient2\>_). تستخدم الشروط أو الاستثناءات المختلفة منطق AND (على سبيل المثال، _\<recipient1\>_ و _\<member of group 1\>_).
+
+  > [!IMPORTANT]
+  > لا تعد الشروط أو الاستثناءات المختلفة المتعددة مضافة؛ إنها شاملة. يتم تطبيق النهج _فقط_ على المستلمين الذين يتطابقون مع _كافة_ عوامل تصفية المستلمين المحددة. على سبيل المثال، يمكنك تكوين شرط عامل تصفية مستلم في النهج بالقيم التالية:
+  >
+  > - المستلم هو: romain@contoso.com
+  > - المستلم هو عضو في: المديرين التنفيذيين
+  >
+  > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
+  >
+  > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
 
 - **الحماية المضمنة** (Defender لـ Office 365 فقط): ملف تعريف يمكن خزينة الارتباطات وحماية المرفقات خزينة فقط. يوفر ملف التعريف هذا نهج افتراضية بشكل فعال للارتباطات خزينة والمرفقات خزينة، والتي لم يكن لها نهج افتراضية.
 

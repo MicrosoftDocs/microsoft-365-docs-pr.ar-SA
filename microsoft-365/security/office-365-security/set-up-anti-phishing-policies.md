@@ -17,16 +17,16 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على نهج مكافحة التصيد الاحتيالي المتوفرة في Exchange Online Protection (EOP) Microsoft Defender لـ Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 786a71e37e9602be2c8de4637ffd5f83a70e7e59
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 1a1265e70c0d22182e8ee4db865eeb53ac8168b7
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438872"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115884"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>نهج مكافحة التصيد الاحتيالي في Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -86,6 +86,15 @@ ms.locfileid: "65438872"
 
   > [!NOTE]
   > يلزم تحديد واحد على الأقل في إعدادات **المستخدمين والمجموعات والمجالات** في نهج مكافحة التصيد الاحتيالي المخصصة لتحديد **مستلمي** الرسائل <u>الذين ينطبق عليهم النهج</u>. تتضمن نهج مكافحة التصيد الاحتيالي في Defender لـ Office 365 أيضا [إعدادات انتحال](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) حيث يمكنك تحديد عناوين البريد الإلكتروني الفردية للمرسلين أو مجالات المرسلين <u>التي ستتلقى حماية من انتحال</u> الهوية كما هو موضح لاحقا في هذه المقالة.
+  >
+  > لا تعد الشروط أو الاستثناءات المختلفة المتعددة مضافة؛ إنها شاملة. يتم تطبيق النهج _فقط_ على المستلمين الذين يتطابقون مع _كافة_ عوامل تصفية المستلمين المحددة. على سبيل المثال، يمكنك تكوين شرط عامل تصفية مستلم في النهج بالقيم التالية:
+  >
+  > - المستلم هو: romain@contoso.com
+  > - المستلم هو عضو في: المديرين التنفيذيين
+  >
+  > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
+  >
+  > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
 
 ## <a name="spoof-settings"></a>إعدادات تزييف هوية
 

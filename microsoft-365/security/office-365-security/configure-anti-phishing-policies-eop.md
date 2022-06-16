@@ -16,16 +16,16 @@ ms.custom: ''
 description: يمكن للمسؤولين التعرف على كيفية إنشاء نهج مكافحة التصيد الاحتيالي المتوفرة في مؤسسات Exchange Online Protection (EOP) وتعديلها وحذفها باستخدام علب بريد Exchange Online أو بدونها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08523e98577f208858fb615911ef24aacf7bedc6
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 384494fdd625fe050079ecd99f59b68d1ba87cad
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438894"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115686"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>تكوين نهج مكافحة التصيد الاحتيالي في EOP
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -112,6 +112,16 @@ ms.locfileid: "65438894"
    تستخدم القيم المتعددة في نفس الشرط منطق OR (على سبيل المثال، _\<recipient1\>_ أو _\<recipient2\>_). تستخدم الشروط المختلفة منطق AND (على سبيل المثال، _\<recipient1\>_ و _\<member of group 1\>_).
 
    - **استبعاد هؤلاء المستخدمين والمجموعات والمجالات**: لإضافة استثناءات للمستلمين الداخليين الذين ينطبق عليهم النهج (استثناءات المستلمين)، حدد هذا الخيار وقم بتكوين الاستثناءات. الإعدادات والسلوك تشبه تماما الشروط.
+
+   > [!IMPORTANT]
+   > لا تعد الشروط أو الاستثناءات المختلفة المتعددة مضافة؛ إنها شاملة. يتم تطبيق النهج _فقط_ على المستلمين الذين يتطابقون مع _كافة_ عوامل تصفية المستلمين المحددة. على سبيل المثال، يمكنك تكوين شرط عامل تصفية مستلم في النهج بالقيم التالية:
+   >
+   > - المستلم هو: romain@contoso.com
+   > - المستلم هو عضو في: المديرين التنفيذيين
+   >
+   > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
+   >
+   > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
 
    عند الانتهاء، انقر فوق **"التالي**".
 

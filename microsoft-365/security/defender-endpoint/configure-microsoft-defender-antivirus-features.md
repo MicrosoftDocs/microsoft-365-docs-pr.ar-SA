@@ -12,23 +12,22 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 10/14/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4047b4628c8b63996be29d77ec13712082fde182
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8271f6d0fcc58ce5a7e1ce08f6034a8a90afab48
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419209"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115444"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>تكوين ميزات برنامج الحماية من الفيروسات من Microsoft Defender
 
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - برنامج الحماية من الفيروسات من Microsoft Defender
@@ -56,9 +55,7 @@ ms.locfileid: "65419209"
 
 > [!TIP]
 > مراجعة [المواضيع المرجعية لأدوات الإدارة والتكوين](configuration-management-reference-microsoft-defender-antivirus.md).
-
-> [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

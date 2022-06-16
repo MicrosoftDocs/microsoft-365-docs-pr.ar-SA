@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: يمكن للمسؤولين معرفة كيفية استخدام مدخل عمليات الإرسال في مدخل Microsoft 365 Defender لإرسال رسائل البريد الإلكتروني المشبوهة ورسائل التصيد الاحتيالي المشتبه بها والبريد العشوائي والرسائل الأخرى التي يحتمل أن تكون ضارة وعناوين URL ومرفقات البريد الإلكتروني إلى Microsoft لإعادة اكتشافها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47e97b728fb27d8df6ad813946d3cdbe08c52085
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: bd56ce39cbb1d48470742f80a8b07747dd52f33a
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089100"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66116017"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>استخدم مدخل عمليات الإرسال لإرسال البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft
 
@@ -394,3 +394,7 @@ ms.locfileid: "66089100"
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="الخيارات الجديدة على الزر &quot;إجراء&quot;" lightbox="../../media/admin-submission-main-action-button.png":::
+
+إذا تم الإبلاغ عن الرسالة إلى Microsoft، تتحول قيمة **الإرسال المحولة إلى المسؤول** من **لا** إلى **نعم**. يمكنك الوصول مباشرة إلى عمليات إرسال المسؤول بالنقر فوق **عرض عمليات إرسال المسؤول المحولة** من قائمة تجاوز السعة داخل القائمة المنبثقة الخاصة بإرسال الرسالة التي أبلغ عنها المستخدم المعني.
+
+:::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="خيار عرض إرسال مسؤول تم إنشاؤه من رسالة قام المستخدم بالإبلاغ عنها.":::

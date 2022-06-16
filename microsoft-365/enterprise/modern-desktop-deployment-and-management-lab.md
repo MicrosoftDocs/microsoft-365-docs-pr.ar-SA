@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: تعرف على مكان الوصول إلى Windows Office Deployment Lab Kit.
-ms.openlocfilehash: 2324501927b39d860b8f2b06e36a85585fa8d4be
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 63ec41e1865647caac60aa6fe91f69ed6c878e74
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669200"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115906"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>مجموعة أدوات معمل نشر Windows وOffice 365
 
@@ -31,8 +31,8 @@ ms.locfileid: "65669200"
 
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
-|[بيئة التمرين المعملي Win 10](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[بيئة التمرين المعملي Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
-|[Win 10 أدلة معملية](https://download.microsoft.com/download/2/9/9/29952cdb-b98d-4f9b-9d6e-9fb49644b0a0/Win10_21H1_Lab_05.12.zip)|[دلائل التمرين المعملي ل Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[بيئة التمرين المعملي Win 10](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[بيئة التمرين المعملي Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
+|[Win 10 أدلة معملية](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_guides.zip)|[دلائل التمرين المعملي ل Win 11](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
 
 ## <a name="a-complete-lab-environment"></a>بيئة معملية كاملة
 
@@ -40,7 +40,7 @@ ms.locfileid: "65669200"
 
 |Windows 10 Lab|Windows 11 Lab|
 |---|---|
-|Windows 10 Enterprise، الإصدار 21H1|Windows 11 Enterprise|
+|Windows 10 Enterprise، الإصدار 21H2|Windows 11 Enterprise|
 |Microsoft Endpoint Configuration Manager، الإصدار 2203|Microsoft Endpoint Configuration Manager، الإصدار 2203|
 |Windows Assessment and Deployment Kit for Windows 10|Windows مجموعة أدوات التقييم والتوزيع Windows 11|
 |Windows Server 2019|Windows Server 2022|
@@ -105,7 +105,7 @@ ms.locfileid: "65669200"
 
 
 > [!NOTE]
-> الرجاء استخدام اتصال إنترنت واسع النطاق لتنزيل هذا المحتوى والسماح بما يقرب من 30 دقيقة للتوفير التلقائي. تتطلب بيئة المختبر ما لا يقل عن 16 غيغابايت من الذاكرة المتوفرة و150 غيغابايت من مساحة القرص الحرة. للحصول على الأداء الأمثل، يوصى بتوفير 32 غيغابايت من الذاكرة و300 غيغابايت من المساحة الحرة. تنتهي صلاحية برنامج التقييم في هذه المختبرات بعد 90-120 يوما من التنشيط. سيتم نشر إصدارات جديدة من المختبرات في أغسطس 2022. 
+> الرجاء استخدام اتصال إنترنت واسع النطاق لتنزيل هذا المحتوى والسماح بما يقرب من 30 دقيقة للتوفير التلقائي. تتطلب بيئة المختبر ما لا يقل عن 16 غيغابايت من الذاكرة المتوفرة و150 غيغابايت من مساحة القرص الحرة. للحصول على الأداء الأمثل، يوصى بتوفير 32 غيغابايت من الذاكرة و300 غيغابايت من المساحة الحرة. تنتهي صلاحية العملاء الظاهريين بعد 90 يوما من تنشيط المختبر. تنتهي صلاحية الخوادم الظاهرية في 11 سبتمبر 2022. سيتم نشر إصدارات جديدة من المختبرات قبل انتهاء الصلاحية. 
 
 ## <a name="additional-guidance"></a>إرشادات إضافية
 

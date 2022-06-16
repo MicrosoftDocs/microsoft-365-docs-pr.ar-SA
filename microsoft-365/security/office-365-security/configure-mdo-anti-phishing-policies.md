@@ -16,19 +16,19 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إنشاء نهج مكافحة التصيد الاحتيالي المتقدمة المتوفرة في المؤسسات ذات Microsoft Defender لـ Office 365 وتعديلها وحذفها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa7b1519120e349ca2ca99f8bd2df1b21408404d
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 78eab2c8c6624764f65ed5db9abf5a6a0621af83
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847383"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115576"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>تكوين نهج مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
-- [Microsoft Defender لـ Office 365 الخطة 1 والخطة 2](defender-for-office-365.md)
+- [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 يمكن أن تساعد نهج مكافحة التصيد الاحتيالي في [Microsoft Defender لـ Office 365](defender-for-office-365.md) في حماية مؤسستك من هجمات التصيد الاحتيالي الضارة المستندة إلى انتحال الهوية وأنواع أخرى من هجمات التصيد الاحتيالي. لمزيد من المعلومات حول الاختلافات بين نهج مكافحة التصيد الاحتيالي في Exchange Online Protection (EOP) ونهج مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365، راجع [الحماية من التصيد الاحتيالي](anti-phishing-protection.md).
@@ -74,7 +74,7 @@ ms.locfileid: "64847383"
 
   **الملاحظات**:
 
-  - إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات _والأذونات_ المطلوبة للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع ["حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md)".
+  - إضافة مستخدمين إلى دور Azure Active Directory المقابل في مركز مسؤولي Microsoft 365 يمنح المستخدمين الأذونات _والأذونات_ المطلوبة للميزات الأخرى في Microsoft 365. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../../admin/add-users/about-admin-roles.md).
   - كما توفر مجموعة دور **إدارة المؤسسة للعرض فقط** في [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) إمكانية الوصول للقراءة فقط إلى الميزة.
 
 - للحصول على الإعدادات الموصى بها لنهج مكافحة التصيد الاحتيالي في Defender لـ Office 365، راجع [نهج مكافحة التصيد الاحتيالي في إعدادات Defender لـ Office 365](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
@@ -110,7 +110,17 @@ ms.locfileid: "64847383"
 
    تستخدم القيم المتعددة في نفس الشرط منطق OR (على سبيل المثال، _\<recipient1\>_ أو _\<recipient2\>_). تستخدم الشروط المختلفة منطق AND (على سبيل المثال، _\<recipient1\>_ و _\<member of group 1\>_).
 
-   - **استبعاد هؤلاء المستخدمين والمجموعات والمجالات**: لإضافة استثناءات للمستلمين الداخليين الذين ينطبق عليهم النهج (استثناءات recpient)، حدد هذا الخيار وقم بتكوين الاستثناءات. الإعدادات والسلوك تشبه تماما الشروط.
+   - **استبعاد هؤلاء المستخدمين والمجموعات والمجالات**: لإضافة استثناءات للمستلمين الداخليين الذين ينطبق عليهم النهج (استثناءات المستلمين)، حدد هذا الخيار وقم بتكوين الاستثناءات. الإعدادات والسلوك تشبه تماما الشروط.
+
+   > [!IMPORTANT]
+   > لا تعد الشروط أو الاستثناءات المختلفة المتعددة مضافة؛ إنها شاملة. يتم تطبيق النهج _فقط_ على المستلمين الذين يتطابقون مع _كافة_ عوامل تصفية المستلمين المحددة. على سبيل المثال، يمكنك تكوين شرط عامل تصفية مستلم في النهج بالقيم التالية:
+   >
+   > - المستلم هو: romain@contoso.com
+   > - المستلم هو عضو في: المديرين التنفيذيين
+   >
+   > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
+   >
+   > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
 
    عند الانتهاء، انقر فوق **"التالي**".
 

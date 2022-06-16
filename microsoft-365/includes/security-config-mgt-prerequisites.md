@@ -4,12 +4,12 @@ description: تضمين ملف
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 61d7b5f00a42789a2d4f46aa41eb3f8865fb6e03
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 31008df3e43c99f3a97dad3dce037b96e3b0c4b5
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 06/15/2022
-ms.locfileid: "66091409"
+ms.locfileid: "66116188"
 ---
 ## <a name="prerequisites"></a>المتطلبات الأساسية
 
@@ -33,7 +33,7 @@ ms.locfileid: "66091409"
 - يجب مزامنة الاتصال Azure Active Directory (AAD الاتصال) مع المستأجر المستخدم من Microsoft Defender لنقطة النهاية
 - يجب تكوين Hybrid Azure Active Directory Join في بيئتك (إما من خلال Federation أو AAD الاتصال Sync)
 - يجب أن تتضمن AAD الاتصال Sync عناصر الجهاز *في نطاق* المزامنة مع Azure Active Directory (عند الحاجة للانضمام)
-- يجب تعديل قواعد الاتصال AAD للمزامنة ل Server 2012 R2 (عند الحاجة إلى دعم Server 2012 R2)
+- يجب تعديل قواعد الاتصال AAD للمزامنة [ل Server 2012 R2](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt?view=o365-worldwide#instructions-for-applying-computer-join-rule-in-aad-connect) (عند الحاجة إلى دعم Server 2012 R2)
 - يجب أن تسجل جميع الأجهزة في Azure Active Directory للمستأجر الذي يستضيف Microsoft Defender لنقطة النهاية. لا يتم دعم سيناريوهات عبر المستأجرين. 
 
 ### <a name="connectivity-requirements"></a>متطلبات الاتصال
