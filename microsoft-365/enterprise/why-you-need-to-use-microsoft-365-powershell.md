@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: admindeeplinkEXCHANGE
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'ملخص: فهم لماذا يجب عليك استخدام PowerShell لإدارة Microsoft 365، في بعض الحالات بشكل أكثر كفاءة وفي حالات أخرى حسب الضرورة.'
-ms.openlocfilehash: 114b97ff27ae1b79e58589eb746a261f83dc422f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0da00ffe3c492b3bac3da9f435ece89219b4113f
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097921"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139352"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>لماذا تحتاج إلى استخدام PowerShell Microsoft 365
 
@@ -172,7 +172,7 @@ $x | Select DisplayName, UsageLocation
 
 على سبيل المثال، يوفر مركز إدارة Skype for Business Online بعض الخيارات لإنشاء دعوات مخصصة للاجتماعات:
 
-![مثال على عرض دعوات مخصصة للاجتماعات في مركز إدارة Skype for Business عبر الإنترنت.](../media/o365-powershell-meeting-invitation.png)
+![مثال على عرض دعوات الاجتماعات المخصصة في مركز مسؤول Skype for Business Online.](../media/o365-powershell-meeting-invitation.png)
 
 باستخدام هذه الإعدادات، يمكنك إضافة لمسة من التخصيص والاحترافية إلى دعوات الاجتماع. ولكن هناك ما هو أكثر لإعدادات تكوين الاجتماع من مجرد إنشاء دعوات اجتماع مخصصة. على سبيل المثال، بشكل افتراضي، تسمح الاجتماعات بما يلي:
 
@@ -189,7 +189,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConference
 ```
 
 > [!NOTE]
-> لتشغيل هذا الأمر، يجب تثبيت [Skype for Business Online PowerShell Module](https://www.microsoft.com/download/details.aspx?id=39366).
+> لتشغيل هذا الأمر، يجب تثبيت [Skype for Business Online PowerShell Module](/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-the-skype-for-business-online-connector).
 
 تفسير أمر PowerShell هذا هو:
 
@@ -221,7 +221,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceR
 
 4. في مربع الحوار **"مشاركة** "، حدد الارتباط الذي يعرض كافة المستخدمين الذين لديهم أذونات للموقع:
 
-     ![مثال لعرض أعضاء موقع SharePoint Online في مركز إدارة SharePoint Online.](../media/o365-powershell-view-permissions.png)
+     ![مثال لعرض أعضاء موقع SharePoint Online في مركز مسؤول SharePoint Online.](../media/o365-powershell-view-permissions.png)
 
 5. في مربع الحوار **"مشترك مع** "، حدد **"خيارات متقدمة**".
 
@@ -238,7 +238,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 > [!NOTE]
 > يتطلب هذا الأمر تثبيت [الوحدة النمطية SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
-تفسير أمر PowerShell هذا هو: الحصول على جميع مواقع SharePoint في اشتراك Microsoft 365 الحالي (**Get-SPOSite**) ولكل موقع قم بإزالة "كين ماير" من قائمة المستخدمين الذين يمكنهم الوصول إليه (**ForEach {Remove-SPOUser -Site $\_. Url -LoginName "kenmyer\@ litwareinc.com"}**).
+تفسير أمر PowerShell هذا هو: الحصول على جميع مواقع SharePoint في اشتراك Microsoft 365 الحالي (**Get-SPOSite**) ولكل موقع قم بإزالة "كين ماير" من قائمة المستخدمين الذين يمكنهم الوصول إليه (**ForEach {Remove-SPOUser -Site $\_. Url -LoginName "kenmyer\@litwareinc.com"}**).
 
 نخبر Microsoft 365 بإزالة "كين ماير" من كل موقع، بما في ذلك تلك التي لا يملك حق الوصول إليها. لذلك ستعرض النتائج أخطاء لتلك المواقع التي ليس لديه حق الوصول إليها. يمكننا استخدام شرط إضافي على هذا الأمر لإزالة "كين ماير" فقط من المواقع التي لديه في قائمة تسجيل الدخول الخاصة بهم. ولكن الأخطاء التي يتم إرجاعها لا تسبب أي ضرر للمواقع نفسها. قد يستغرق تشغيل هذا الأمر بضع دقائق مقابل مئات المواقع، بدلا من ساعات العمل خلال مركز مسؤولي Microsoft 365.
 
@@ -248,7 +248,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}
 ```
 
-تفسير أمر PowerShell هذا هو: الحصول على جميع مواقع SharePoint في اشتراك Microsoft 365 الحالي ولكل موقع السماح بالوصول إلى مهى كرني عن طريق إضافة اسم تسجيل الدخول الخاص بها إلى مجموعة الأعضاء في الموقع (**ForEach {Add-SPOUser -Site $\_. Url -LoginName "bkearney\@ litwareinc.com" -Group "Members"}**).
+تفسير أمر PowerShell هذا هو: الحصول على جميع مواقع SharePoint في اشتراك Microsoft 365 الحالي ولكل موقع السماح بالوصول إلى مهى كرني عن طريق إضافة اسم تسجيل الدخول الخاص بها إلى مجموعة الأعضاء في الموقع (**ForEach {Add-SPOUser -Site $\_. Url -LoginName "bkearney\@litwareinc.com" -Group "Members"}**).
 
 ## <a name="powershell-for-microsoft-365-is-great-at-filtering-data"></a>يعد PowerShell ل Microsoft 365 رائعا في تصفية البيانات
 
@@ -258,7 +258,7 @@ Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.
 
 يتيح لك <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a> أيضا دمج معايير التصفية. على سبيل المثال، يمكنك العثور على علب البريد لجميع الأشخاص الذين يعيشون في Bloomington ويعملون في قسم الشؤون المالية.
 
-ولكن هناك قيود على ما يمكنك القيام به في مركز إدارة Exchange. على سبيل المثال، لم تتمكن من العثور بسهولة على علب بريد الأشخاص الذين يعيشون في بلومينجتون *أو* سان دييغو، أو علب البريد لجميع الأشخاص الذين لا يعيشون في Bloomington.
+ولكن هناك قيود على ما يمكنك القيام به في مركز Exchange مسؤول. على سبيل المثال، لم تتمكن من العثور بسهولة على علب بريد الأشخاص الذين يعيشون في بلومينجتون *أو* سان دييغو، أو علب البريد لجميع الأشخاص الذين لا يعيشون في Bloomington.
 
 يمكنك استخدام أمر PowerShell التالي Microsoft 365 للحصول على قائمة بعلب البريد لجميع الأشخاص الذين يعيشون في Bloomington أو سان دييغو:
 
@@ -330,7 +330,7 @@ Get-User -Filter '{LastName -like "*son"}'
 
 يتيح لك مركز مسؤولي Microsoft 365 عرض قوائم البيانات. فيما يلي مثال لمركز إدارة Skype for Business Online الذي يعرض قائمة بالمستخدمين الذين تم تمكينهم Skype for Business Online:
 
-![مثال لمركز إدارة Skype for Business Online يعرض قائمة بالمستخدمين الذين تم تمكينهم Skype for Business Online.](../media/o365-powershell-lync-users.png)
+![مثال لمركز مسؤول Skype for Business Online يعرض قائمة بالمستخدمين الذين تم تمكينهم ل Skype for Business Online.](../media/o365-powershell-lync-users.png)
 
 لحفظ هذه المعلومات في ملف، يجب لصقها في مستند أو Microsoft Excel ورقة عمل. قد تتطلب أي من الحالتين تنسيقا إضافيا. بالإضافة إلى ذلك، لا يوفر مركز مسؤولي Microsoft 365 طريقة لطباعة القائمة المعروضة مباشرة.
 
@@ -378,7 +378,7 @@ Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Pr
 
 - ما إذا كان المستخدم ممكنا ل Skype for Business Online
 
-لا يمكنك بسهولة إنتاج مثل هذا التقرير في مركز مسؤولي Microsoft 365. بدلا من ذلك، سيتعين عليك إنشاء مستند منفصل لتخزين المعلومات، مثل ورقة عمل Excel. بعد ذلك، احصل على جميع أسماء المستخدمين ومعلومات الترخيص من مركز مسؤولي Microsoft 365، واحصل على معلومات علبة البريد من <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>، واحصل على معلومات Skype for Business Online من مركز إدارة Skype for Business Online، ثم ادمج ذلك المعلومات.
+لا يمكنك بسهولة إنتاج مثل هذا التقرير في مركز مسؤولي Microsoft 365. بدلا من ذلك، سيتعين عليك إنشاء مستند منفصل لتخزين المعلومات، مثل ورقة عمل Excel. بعد ذلك، احصل على جميع أسماء المستخدمين ومعلومات الترخيص من مركز مسؤولي Microsoft 365، واحصل على معلومات علبة البريد من <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>، واحصل على معلومات Skype for Business Online من Skype for Business Online مسؤول  ثم قم بدمج هذه المعلومات.
 
 البديل هو استخدام برنامج نصي PowerShell لتجميع التقرير نيابة عنك.
 

@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 065e9a124deb7c064b31666d96a11f076d65abdd
-ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
+ms.openlocfilehash: 71b4fc8a671f4b30d70a4c3ec026c39b24c1a9a4
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66060950"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139508"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>للهوية وما بعدها - وجهة نظر مهندس معماري واحد
 
@@ -139,7 +139,7 @@ Azure AD لا يحل لعدم وجود حوكمة في عالم هويتك! وي
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/) (Defender for Cloud Apps)
 - [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)
 - [Microsoft Intune](/mem/intune/)
-- [Microsoft Purview حماية البيانات](../compliance/information-protection.md)
+- [حماية المعلومات في Microsoft Purview](../compliance/information-protection.md)
 - [Microsoft Sentinel](/azure/sentinel/)
 
 بالطبع، بالإضافة إلى Azure AD، فإن الخدمات والتطبيقات المختلفة لها نماذج تخويل خاصة بها. تتم مناقشة بعض هذه الخطوات لاحقا في قسم التفويض.
@@ -194,7 +194,7 @@ Azure AD لديه قدرات [مفصلة للتدقيق وإعداد التقا�
 - لا يوفر فوائد الأداء. قد يجعل الأداء أسوأ إذا لم يكن [تصميم الشبكة](https://aka.ms/office365networking) صحيحا. الحصول على الأجهزة "قريبة" من شبكة Microsoft، وليس بالضرورة لبياناتك.
 - إنه ليس حلا [لتوافق القانون العام لحماية البيانات ( GDPR](https://www.microsoft.com/trust-center/privacy/gdpr-overview)). لا يركز القانون العام لحماية البيانات (GDPR) على سيادة البيانات أو مواقع التخزين. هناك أطر توافق أخرى لذلك.
 - لا يحل تفويض الإدارة (انظر أدناه) أو [حواجز المعلومات](../compliance/information-barriers.md).
-- إنها ليست مماثلة لمستأجرين متعددين وتتطلب مهام سير عمل [إضافية لتزويد المستخدم](https://github.com/MicrosoftDocs/azure-docs-pr/blob/master/articles/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation.md) .
+- وهو ليس هو نفسه متعدد المستأجرين ويتطلب مهام سير عمل [إضافية لتزويد المستخدم](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) .
 - لا [ينقل المستأجر](../enterprise/moving-data-to-new-datacenter-geos.md) (Azure AD الخاص بك) إلى جغرافيا أخرى.
 
 ## <a name="delegation-of-administration"></a>تفويض الإدارة
@@ -227,7 +227,7 @@ Azure AD لديه قدرات [مفصلة للتدقيق وإعداد التقا�
 
 ### <a name="microsoft-365-defender-and-microsoft-365-purview-compliance-portals"></a>Microsoft 365 Defender ومداخل توافق Microsoft 365 Purview
 
-**البريد الإلكتروني & أدوار التعاون** في [مدخل Microsoft 365 Defender](../security/office-365-security/permissions-microsoft-365-security-center.md) *_ومجموعات *Role لحلول Microsoft Purview_* في [مدخل التوافق Microsoft 365 Purview](../compliance/microsoft-365-compliance-center-permissions.md) هي مجموعة من "مجموعات الأدوار"، والتي تكون منفصلة ومتميزة عن الأدوار Azure AD. قد يكون هذا مربكا لأن بعض مجموعات الأدوار هذه لها نفس اسم أدوار Azure AD (على سبيل المثال، قارئ الأمان)، ومع ذلك يمكن أن يكون لها عضوية مختلفة. أفضل استخدام أدوار Azure AD. تتكون كل مجموعة أدوار من "أدوار" واحدة أو أكثر (انظر ما يعنيه إعادة استخدام الكلمة نفسها؟) ولها أعضاء من Azure AD، وهي كائنات ممكنة للبريد الإلكتروني. يمكنك أيضا إنشاء مجموعة أدوار بنفس اسم الدور، والتي قد تحتوي على هذا الدور أو لا تحتوي عليه (تجنب هذا الإرباك).
+**البريد الإلكتروني & أدوار التعاون** في [مدخل Microsoft 365 Defender](../security/office-365-security/permissions-microsoft-365-security-center.md) *_ومجموعات *Role لحلول Microsoft Purview_* في [مدخل توافق Microsoft 365 Purview](../compliance/microsoft-365-compliance-center-permissions.md) هي مجموعة من "مجموعات الأدوار"، والتي تكون منفصلة ومتميزة عن أدوار Azure AD. قد يكون هذا مربكا لأن بعض مجموعات الأدوار هذه لها نفس اسم أدوار Azure AD (على سبيل المثال، قارئ الأمان)، ومع ذلك يمكن أن يكون لها عضوية مختلفة. أفضل استخدام أدوار Azure AD. تتكون كل مجموعة أدوار من "أدوار" واحدة أو أكثر (انظر ما يعنيه إعادة استخدام الكلمة نفسها؟) ولها أعضاء من Azure AD، وهي كائنات ممكنة للبريد الإلكتروني. يمكنك أيضا إنشاء مجموعة أدوار بنفس اسم الدور، والتي قد تحتوي على هذا الدور أو لا تحتوي عليه (تجنب هذا الإرباك).
 
 بمعنى ما، هذه الأذونات هي تطور لنموذج مجموعات الأدوار Exchange. ومع ذلك، Exchange Online لديها واجهة [إدارة مجموعة الأدوار](/exchange/permissions-exo) الخاصة بها. يتم تأمين بعض مجموعات الأدوار في Exchange Online وإدارتها من Azure AD أو Microsoft 365 Defender ومداخل توافق Microsoft 365 Purview، ولكن البعض الآخر قد يكون له نفس الأسماء أو أسماء مشابهة وتتم إدارتها في Exchange Online (إضافة إلى الإرباك). من المستحسن تجنب استخدام واجهة المستخدم Exchange Online ما لم تكن بحاجة إلى نطاقات لإدارة Exchange.
 
@@ -280,7 +280,7 @@ Azure AD لديه قدرات [مفصلة للتدقيق وإعداد التقا�
 - [Azure AD](/azure/azure-monitor/platform/diagnostic-settings) (الأنشطة غير المرتبطة Office 365)
 - [تعقب الرسائل Exchange](/powershell/module/exchange/get-messagetrace)
 - أنظمة التهديد/UEBA التي تمت مناقشتها أعلاه (على سبيل المثال، Azure AD Identity Protection، Microsoft Defender for Cloud Apps، Microsoft Defender لنقطة النهاية، وما إلى ذلك)
-- [Microsoft Purview حماية البيانات](../compliance/data-classification-activity-explorer.md)
+- [حماية المعلومات في Microsoft Purview](../compliance/data-classification-activity-explorer.md)
 - [مشكلات الأداء في Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 

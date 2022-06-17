@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: تعرف على كيفية زيادة الأداء عن طريق استبدال جزء ويب الخاص باستعلام المحتوى بجزء ويب للبحث في المحتوى في SharePoint Server 2013 و SharePoint Online.
-ms.openlocfilehash: 45b43b3071ca39c67283ac70ab92b20e2fc7e21a
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4c8a97d24320d5380eccc089737947df9b1a0d0b
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621985"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139486"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>استخدام "جزء ويب البحث في المحتوى" بدلا من "جزء ويب استعلام المحتوى" لتحسين الأداء في SharePoint Online
 
@@ -72,6 +72,6 @@ ms.locfileid: "65621985"
   
 ## <a name="query-building-and-testing-tool"></a>أداة إنشاء الاستعلام واختباره
 
-للحصول على أداة لإنشاء الاستعلامات المعقدة واختبارها، راجع [أداة استعلام البحث](https://sp2013searchtool.codeplex.com/) على Codeplex. 
+للحصول على أداة لإنشاء الاستعلامات المعقدة واختبارها، راجع [أداة استعلام البحث](https://github.com/pnp/PnP-Tools/tree/master/Solutions/SharePoint.Search.QueryTool#download-the-tool).
   
 

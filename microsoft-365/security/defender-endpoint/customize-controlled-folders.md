@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: ba9102f96ea08bf33f72a260779b4b37d6a6f0f4
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 3d6f763bd2ac2c4352f1b200c05c3079bc615aaf
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217365"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139330"
 ---
 # <a name="customize-controlled-folder-access"></a>تخصيص الوصول إلى المجلدات الخاضعة للتحكم
 
@@ -177,4 +177,4 @@ Microsoft Defender لنقطة النهاية مؤشرات الشهادات وا�
 
 - [حماية المجلدات المهمة باستخدام الوصول المتحكم به إلى المجلدات](controlled-folders.md)
 - [تمكين الوصول إلى المجلدات الخاضعة للتحكم](enable-controlled-folders.md)
-- [تقييم قواعد تقليل الأجزاء المعرضة للهجوم](evaluate-attack-surface-reduction.md)
+- [تمكين قواعد تقليل الأجزاء المعرضة للهجوم](enable-attack-surface-reduction.md)

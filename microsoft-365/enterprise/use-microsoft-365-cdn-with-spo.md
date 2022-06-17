@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: تعرف على كيفية استخدام Office 365 Content Delivery Network (CDN) لتسريع تسليم أصولك SharePoint Online.
-ms.openlocfilehash: 42836fa8a43b7251be27cfd841b67d47e12b036e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8b106840133f5c690fd0df80700fdb79a3590d92
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091996"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139552"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>استخدام شبكة تسليم المحتوى Office 365 (CDN) مع SharePoint Online
 
@@ -518,7 +518,7 @@ Set-PnPTenantCdnEnabled -CdnType Public -Enable $true
 Set-PnPTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
-لمزيد من المعلومات حول أمر cmdlet هذا، راجع [Set-PnPTenantCdnEnabled](/powershell/module/sharepoint-pnp/set-pnptenantcdnenabled).
+لمزيد من المعلومات حول أمر cmdlet هذا، راجع [Set-PnPTenantCdnEnabled](https://pnp.github.io/powershell/cmdlets/Set-PnPTenantCdnEnabled.html).
 
 <a name="Office365CDNforPnPPoshFileType"> </a>
 ### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>تغيير قائمة أنواع الملفات لتضمينها في Office 365 CDN (اختياري)
@@ -546,7 +546,7 @@ Set-PnPTenantCdnPolicy -CdnType Private -PolicyType IncludeFileExtensions -Polic
 Get-PnPTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-لمزيد من المعلومات حول أوامر cmdlets هذه، راجع [Set-PnPTenantCdnPolicy](/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy) و [Get-PnPTenantCdnPolicies](/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies).
+لمزيد من المعلومات حول أوامر cmdlets هذه، راجع [Set-PnPTenantCdnPolicy](https://pnp.github.io/powershell/cmdlets/Set-PnPTenantCdnPolicy.html) و [Get-PnPTenantCdnPolicies](https://pnp.github.io/powershell/cmdlets/Get-PnPTenantCdnPolicies.html).
 
 <a name="Office365CDNforPnPPoshSiteClassification"> </a>
 ### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>تغيير قائمة تصنيفات المواقع التي تريد استبعادها من شبكة تسليم المحتوى Office 365 (اختياري)
@@ -579,7 +579,7 @@ Get-PnPTenantCdnPolicies -CdnType <Public | Private>
 
 تستثني _الخاصية ExcludeIfNoScriptDisabled_ المحتوى من شبكة تسليم المحتوى استنادا إلى إعدادات السمة _NoScript_ على مستوى الموقع. بشكل افتراضي، يتم تعيين السمة _NoScript_ إلى **"ممكن** للمواقع _الحديثة_ " و" **معطل** للمواقع _الكلاسيكية_ ". يعتمد هذا على إعدادات المستأجر.
 
-لمزيد من المعلومات حول أوامر cmdlets هذه، راجع [Set-PnPTenantCdnPolicy](/powershell/module/sharepoint-pnp/set-pnptenantcdnpolicy) و [Get-PnPTenantCdnPolicies](/powershell/module/sharepoint-pnp/get-pnptenantcdnpolicies).
+لمزيد من المعلومات حول أوامر cmdlets هذه، راجع [Set-PnPTenantCdnPolicy](https://pnp.github.io/powershell/cmdlets/Set-PnPTenantCdnPolicy.html) و [Get-PnPTenantCdnPolicies](https://pnp.github.io/powershell/cmdlets/Get-PnPTenantCdnPolicies.html).
 
 <a name="Office365CDNforSPOOriginPnPPosh"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>إضافة أصل لأصولك
@@ -626,7 +626,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
-لمزيد من المعلومات حول هذا الأمر وبنيته، راجع [Add-PnPTenantCdnOrigin](/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin).
+لمزيد من المعلومات حول هذا الأمر وبنيته، راجع [Add-PnPTenantCdnOrigin](https://pnp.github.io/powershell/cmdlets/Add-PnPTenantCdnOrigin.html).
 
 > [!NOTE]
 > في الأصول الخاصة، يجب أن يكون للأصول التي تتم مشاركتها من أصل إصدار رئيسي منشور قبل أن تتمكن من الوصول إليها من شبكة تسليم المحتوى.
@@ -650,7 +650,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
   Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
-لمزيد من المعلومات حول هذا الأمر وبنيته، راجع [Add-PnPTenantCdnOrigin](/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin).
+لمزيد من المعلومات حول هذا الأمر وبنيته، راجع [Add-PnPTenantCdnOrigin](https://pnp.github.io/powershell/cmdlets/Add-PnPTenantCdnOrigin.html).
 
 بمجرد تشغيل الأمر، يقوم النظام بمزامنة التكوين عبر مركز البيانات. قد يستغرق ذلك ما يصل إلى 15 دقيقة.
 
@@ -675,7 +675,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
   Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
-لمزيد من المعلومات حول هذا الأمر وبنيته، راجع [Add-PnPTenantCdnOrigin](/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin).
+لمزيد من المعلومات حول هذا الأمر وبنيته، راجع [Add-PnPTenantCdnOrigin](https://pnp.github.io/powershell/cmdlets/Add-PnPTenantCdnOrigin.html).
 
 بمجرد تشغيل الأمر، يقوم النظام بمزامنة التكوين عبر مركز البيانات. قد يستغرق ذلك ما يصل إلى 15 دقيقة.
 
@@ -688,7 +688,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-لمزيد من المعلومات حول هذا الأمر وبنيته، راجع [Add-PnPTenantCdnOrigin](/powershell/module/sharepoint-pnp/add-pnptenantcdnorigin).
+لمزيد من المعلومات حول هذا الأمر وبنيته، راجع [Add-PnPTenantCdnOrigin](https://pnp.github.io/powershell/cmdlets/Add-PnPTenantCdnOrigin.html).
 
 بمجرد تشغيل الأمر، يقوم النظام بمزامنة التكوين عبر مركز البيانات. قد ترى رسالة _"تكوين" معلقة_ وهي متوقعة مع اتصال المستأجر SharePoint Online بخدمة CDN. قد يستغرق ذلك ما يصل إلى 15 دقيقة.
 
@@ -713,7 +713,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 Remove-PnPTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 ```
 
-للحصول على معلومات حول كيفية استخدام أمر cmdlet هذا، راجع [Remove-PnPTenantCdnOrigin](/powershell/module/sharepoint-pnp/remove-pnptenantcdnorigin).
+للحصول على معلومات حول كيفية استخدام أمر cmdlet هذا، راجع [Remove-PnPTenantCdnOrigin](https://pnp.github.io/powershell/cmdlets/Remove-PnPTenantCdnOrigin.html).
 
 <a name="Office365CDNforSPOModifyOriginPnPPosh"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>تعديل أصل في Office 365 CDN
@@ -737,7 +737,7 @@ Set-PnPTenantCdnEnabled -CdnType Public -Enable $false
 Set-PnPTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
-لمزيد من المعلومات حول أمر cmdlet هذا، راجع [Set-PnPTenantCdnEnabled](/powershell/module/sharepoint-pnp/set-pnptenantcdnenabled).
+لمزيد من المعلومات حول أمر cmdlet هذا، راجع [Set-PnPTenantCdnEnabled](https://pnp.github.io/powershell/cmdlets/Set-PnPTenantCdnEnabled.html).
 
 </details>
 

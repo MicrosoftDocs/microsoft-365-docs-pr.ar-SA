@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: تعرف على كيفية استخدام PowerShell لنقل المحتوى من نظام بريد إلكتروني مصدر بمرور الوقت باستخدام ترحيل مرحلي إلى Microsoft 365.
-ms.openlocfilehash: 26c12208c00e6b9b33b0be850a4791ddca804c8c
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0c40e617fbd069ab9894d572a5582985194e7a6e
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014201"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139530"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>استخدم PowerShell لإجراء ترحيل مرحلي إلى Microsoft 365
 
@@ -65,7 +65,7 @@ ms.locfileid: "66014201"
 
 - استخدم Outlook من خارج شبكة الشركة للاتصال بعلبة بريد Exchange المحلية.
 
-- استخدم [Microsoft Remote Connectivity Analyzer](https://https://testconnectivity.microsoft.com/) لاختبار إعدادات الاتصال. استخدم اختبارات Outlook في أي مكان (RPC عبر HTTP) أو Outlook Autodiscover.
+- استخدم [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/) لاختبار إعدادات الاتصال. استخدم اختبارات Outlook في أي مكان (RPC عبر HTTP) أو Outlook Autodiscover.
 
 - تشغيل الأوامر التالية في Exchange Online PowerShell:
 
