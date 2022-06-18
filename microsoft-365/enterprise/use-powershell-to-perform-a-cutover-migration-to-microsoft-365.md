@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: تعرف على كيفية استخدام PowerShell لنقل المحتويات من نظام بريد إلكتروني مصدر مرة واحدة عن طريق إجراء ترحيل كلي إلى Microsoft 365.
-ms.openlocfilehash: d63b7250cd1c4c34d169521943c3973104b15837
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 3761640c42a6907818886e96c9d6355d70073522
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008386"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151195"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>استخدم PowerShell لإجراء ترحيل كلي إلى Microsoft 365
 
@@ -177,7 +177,7 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 
 تستخدم أنظمة البريد الإلكتروني سجل DNS يسمى سجل MX لمعرفة مكان تسليم رسائل البريد الإلكتروني. أثناء عملية ترحيل البريد الإلكتروني، كان سجل MX يشير إلى نظام البريد الإلكتروني المصدر. الآن بعد اكتمال ترحيل البريد الإلكتروني إلى Microsoft 365، حان الوقت لإشارة سجل MX إلى Microsoft 365. يساعد ذلك على التأكد من تسليم البريد الإلكتروني إلى علب بريدك Microsoft 365. من خلال نقل سجل MX، يمكنك أيضا إيقاف تشغيل نظام البريد الإلكتروني القديم عندما تكون جاهزا.
 
-بالنسبة إلى العديد من موفري DNS، هناك إرشادات محددة لتغيير سجل MX. إذا لم يكن موفر DNS الخاص بك مضمنا، أو إذا كنت تريد الحصول على فكرة عن التوجيهات العامة، يتم توفير [إرشادات سجل MX العامة](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx) أيضا.
+بالنسبة إلى العديد من موفري DNS، هناك إرشادات محددة لتغيير سجل MX. إذا لم يكن موفر DNS الخاص بك مضمنا، أو إذا كنت تريد الحصول على فكرة عن التوجيهات العامة، يتم توفير [إرشادات سجل MX العامة](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide#add-an-mx-record-for-email-outlook-exchange-online) أيضا.
 
 قد يستغرق الأمر ما يصل إلى 72 ساعة حتى تتمكن أنظمة البريد الإلكتروني لعملائك وشركائك من التعرف على سجل MX الذي تم تغييره. انتظر 72 ساعة على الأقل قبل المتابعة إلى المهمة التالية: [الخطوة 6: حذف دفعة الترحيل الكلي](#step-6-delete-the-cutover-migration-batch).
 

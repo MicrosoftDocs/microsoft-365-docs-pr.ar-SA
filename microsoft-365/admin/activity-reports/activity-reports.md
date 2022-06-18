@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: احصل على تقرير دوري حول كيفية استخدام الأشخاص في مؤسستك لخدمات Microsoft 365 والتنقل في كل مخطط للحصول على مزيد من الرؤى.
-ms.openlocfilehash: 6d773b3f6bf7f2660a2608085b503b1cde1c05c9
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 9dbd1ef7044db3a27c93cfe7e2acd09aaa32cd14
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007229"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151151"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365 التقارير في مركز الإدارة
 
@@ -113,6 +113,7 @@ ms.locfileid: "66007229"
 |[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|نعم|نعم|لا<sup>يوجد 1</sup>|لا<sup>يوجد 1</sup>|نعم|
 |[نشاط Viva Learning](viva-learning-activity.md)|نعم|N/A|N/A|N/A|N/A|
 |[نشاط Viva Insights](viva-insights-activity.md)|نعم|نعم|N/A|N/A|N/A|
+|[نشاط Project](project-activity.md)|نعم|نعم|N/A|N/A|N/A|
 
 N/A<sup>1</sup>: التقرير في الخطة التي سيتم إصدارها في المستقبل. سيتم تحديث <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">مخطط Microsoft 365</a> قبل الإصدار.
 N/A<sup>2</sup>: الخدمة غير متوفرة في البيئة لذلك لا توجد خطة لإصدار التقرير.
@@ -151,7 +152,7 @@ N/A<sup>2</sup>: الخدمة غير متوفرة في البيئة لذلك ل�
 
 3. قم بإلغاء تحديد عبارة **عرض أسماء المستخدمين والمجموعة والموقع المخفيين في كافة التقارير**، ثم احفظ التغييرات.
 
-سيستغرق الأمر بضع دقائق حتى تسري هذه التغييرات على التقارير في لوحة معلومات التقارير. ينطبق هذا الإعداد أيضا على تقارير استخدام Microsoft 365 في [Microsoft Graph](/graph/api/resources/report) [وPower BI](/microsoft-365/admin/usage-analytics/usage-analytics) [وتقارير الاستخدام في مركز إدارة Microsoft Teams](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). إظهار معلومات المستخدم القابلة للتعريف هو حدث مسجل في سجل تدقيق مدخل الامتثال ل Microsoft Purview.
+سيستغرق الأمر بضع دقائق حتى تسري هذه التغييرات على التقارير في لوحة معلومات التقارير. ينطبق هذا الإعداد أيضا على تقارير الاستخدام Microsoft 365 في [Microsoft Graph](/graph/api/resources/report) [وPower BI](/microsoft-365/admin/usage-analytics/usage-analytics) [وتقارير الاستخدام في مركز Microsoft Teams مسؤول](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). يعد إظهار معلومات المستخدم القابلة للتعريف حدثا مسجلا في سجل تدقيق مدخل التوافق في Microsoft Purview.
 
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>ماذا يحدث لبيانات الاستخدام عند إغلاق حساب مستخدم؟
 
