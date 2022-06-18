@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 2000d10918c7e351c7e4bedfe8281b6a011cca9d
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 82ed2110987bcb5fc1238a31a45c264c64392ba3
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872413"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159391"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>التوافق برنامج الحماية من الفيروسات من Microsoft Defender مع منتجات الأمان الأخرى
 
@@ -103,11 +103,90 @@ ms.locfileid: "65872413"
 
 (<a id="fn2">2</a>) على Windows Server 2019 أو Windows Server أو الإصدار 1803 أو الأحدث أو Windows Server 2016 أو Windows Server 2012 R2، لا يدخل برنامج الحماية من الفيروسات من Microsoft Defender الوضع السلبي تلقائيا عند تثبيت برنامج الحماية من الفيروسات من غير Microsoft المنتج. في هذه الحالات، قم بتعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع الخامل لمنع المشاكل الناتجة عن تثبيت منتجات مكافحة الفيروسات المتعددة على الخادم. يمكنك تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي باستخدام PowerShell أو نهج المجموعة أو مفتاح التسجيل. 
 
+**أسلوب مفتاح التسجيل**
+
   يمكنك تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي عن طريق تعيين مفتاح التسجيل التالي:
 - مسار: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - الاسم: `ForceDefenderPassiveMode`
 - نوع: `REG_DWORD`
 - قيمه: `1`
+
+**أسلوب عنصر نهج المجموعة**
+
+- افتح نهج المجموعة Management Editor > **Computer Configuration** > **Administrative Templates** >  **Windows Components** >  **برنامج الحماية من الفيروسات من Microsoft Defender**.
+- حدد **إيقاف تشغيل برنامج الحماية من الفيروسات من Microsoft Defender**.
+- تعيين عنصر نهج المجموعة إلى **ممكن**.
+
+يمكنك عرض حالة الحماية في PowerShell باستخدام الأمر "Get-MpComputerStatus" والمفتاح "AMRunningMode".
+
+## SYNTAX
+
+```
+PS C:\Users\tommaso> Get-MpComputerStatus
+
+
+AMEngineVersion                  : 0.0.0.0
+AMProductVersion                 : 4.18.2205.4
+AMRunningMode                    : Not running
+AMServiceEnabled                 : False
+AMServiceVersion                 : 0.0.0.0
+AntispywareEnabled               : False
+AntispywareSignatureAge          : 4294967295
+AntispywareSignatureLastUpdated  :
+AntispywareSignatureVersion      : 0.0.0.0
+AntivirusEnabled                 : False
+AntivirusSignatureAge            : 4294967295
+AntivirusSignatureLastUpdated    :
+AntivirusSignatureVersion        : 0.0.0.0
+BehaviorMonitorEnabled           : False
+ComputerID                       : 5CF99D95-BF09-4B2E-9911-8E01C55642E5
+ComputerState                    : 0
+DefenderSignaturesOutOfDate      : False
+DeviceControlDefaultEnforcement  : N/A
+DeviceControlPoliciesLastUpdated : 01/01/1601 00:00:00
+DeviceControlState               : N/A
+FullScanAge                      : 4294967295
+FullScanEndTime                  :
+FullScanOverdue                  : False
+FullScanRequired                 : False
+FullScanSignatureVersion         :
+FullScanStartTime                :
+IoavProtectionEnabled            : False
+IsTamperProtected                : False
+IsVirtualMachine                 : True
+LastFullScanSource               : 0
+LastQuickScanSource              : 0
+NISEnabled                       : False
+NISEngineVersion                 : 0.0.0.0
+NISSignatureAge                  : 4294967295
+NISSignatureLastUpdated          :
+NISSignatureVersion              : 0.0.0.0
+OnAccessProtectionEnabled        : False
+ProductStatus                    : 1
+QuickScanAge                     : 4294967295
+QuickScanEndTime                 :
+QuickScanOverdue                 : False
+QuickScanSignatureVersion        :
+QuickScanStartTime               :
+RealTimeProtectionEnabled        : False
+RealTimeScanDirection            : 0
+RebootRequired                   : False
+TamperProtectionSource           : Signatures
+TDTMode                          : N/A
+TDTStatus                        : N/A
+TDTTelemetry                     : N/A
+TroubleShootingDailyMaxQuota     :
+TroubleShootingDailyQuotaLeft    :
+TroubleShootingEndTime           :
+TroubleShootingExpirationLeft    :
+TroubleShootingMode              :
+TroubleShootingModeSource        :
+TroubleShootingQuotaResetTime    :
+TroubleShootingStartTime         :
+PSComputerName                   :
+```
+
+في المثال التالي، حالة Defender **غير قيد التشغيل**.
 
  > [!NOTE]
  > لكي يعمل الوضع السلبي على نقاط النهاية التي تعمل Windows Server 2016 وserver Windows Server 2012 R2، يجب إلحاق نقاط النهاية هذه بالحل الحديث والموحد الموضح في [خوادم Windows الملحقة](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 

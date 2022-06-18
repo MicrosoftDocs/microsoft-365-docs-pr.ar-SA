@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb56ab7feb864a51c51b6f240e8376f989491857
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: b81daa25618fd971f5f29e2672673e8dcd2e35bc
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622705"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159435"
 ---
 # <a name="microsoft-threat-experts"></a>خبراء المخاطر في Microsoft
 
@@ -46,6 +46,7 @@ ms.locfileid: "65622705"
 
 > [!NOTE]
 > ناقش متطلبات الأهلية مع موفر خدمة Microsoft التقنية وفريق الحساب قبل التقدم إلى خدمة تتبع التهديدات المدارة.
+> لا يتوفر خبراء التهديد حاليا في Microsoft 365 للسحب الحكومية الأمريكية.
 
 إذا كنت عميلا Microsoft Defender لنقطة النهاية، فستحتاج إلى التقدم بطلب **للحصول على خبراء المخاطر في Microsoft - إعلامات الهجوم المستهدف** للحصول على رؤى وتحليلات خاصة تساعد في تحديد التهديدات الأكثر أهمية في بيئتك حتى تتمكن من الاستجابة لها بسرعة.
 

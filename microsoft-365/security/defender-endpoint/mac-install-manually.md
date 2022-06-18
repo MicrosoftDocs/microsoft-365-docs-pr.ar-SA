@@ -1,6 +1,6 @@
 ---
 title: النشر اليدوي Microsoft Defender لنقطة النهاية على macOS
-description: تثبيت Microsoft Defender لنقطة النهاية على macOS يدويا، من سطر الأوامر.
+description: قم بتثبيت Microsoft Defender لنقطة النهاية على macOS يدويا، من سطر الأوامر.
 keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، التثبيت، التوزيع، إلغاء التثبيت، intune، jamf، macos، catalina، mojave، high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,25 +16,25 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c2bf6cef9e2d2d7413cff9aa4a8ed110ae72edf
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 68f91e4b8f789087aacea14b6b2a8a8b67262fd0
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129255"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159608"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>النشر اليدوي Microsoft Defender لنقطة النهاية على macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink).
 
-يوضح هذا الموضوع كيفية نشر Microsoft Defender لنقطة النهاية على macOS يدويا. يتطلب النشر الناجح إكمال جميع الخطوات التالية:
+يصف هذا الموضوع كيفية نشر Microsoft Defender لنقطة النهاية على macOS يدويا. يتطلب النشر الناجح إكمال جميع الخطوات التالية:
 
 - [تنزيل حزم التثبيت والإلحاق](#download-installation-and-onboarding-packages)
 - [تثبيت التطبيق (macOS 10.15)](#application-installation-macos-1015)
@@ -50,7 +50,7 @@ ms.locfileid: "65129255"
 قم بتنزيل حزم التثبيت والإلحاق من مدخل Microsoft 365 Defender:
 
 1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، انتقل إلى **نقاط النهاية الإعدادات > > إدارة الأجهزة > الإلحاق**.
-2. في القسم 1 من الصفحة، قم بتعيين نظام التشغيل إلى **macOS** وأسلوب النشر إلى **البرنامج النصي المحلي**.
+2. في القسم 1 من الصفحة، قم بتعيين نظام التشغيل إلى **macOS** وطريقة النشر إلى **البرنامج النصي المحلي**.
 3. في القسم 2 من الصفحة، حدد **تنزيل حزمة التثبيت**. احفظه ك wdav.pkg إلى دليل محلي.
 4. في القسم 2 من الصفحة، حدد **"تنزيل حزمة الإلحاق**". احفظه WindowsDefenderATPOnboardingPackage.zip إلى الدليل نفسه.
 
@@ -128,7 +128,7 @@ ms.locfileid: "65129255"
 2. تشغيل البرنامج النصي Bash لتثبيت ملف التكوين:
 
     ```bash
-    bash MicrosoftDefenderATPOnboardingMacOs.sh
+    Sudo bash -x MicrosoftDefenderATPOnboardingMacOs.sh
     ```
 
 3. تحقق من أن الجهاز الآن مقترن بمؤسستك ويبلغ عن معرف مؤسسة صالح:
@@ -137,7 +137,7 @@ ms.locfileid: "65129255"
     mdatp health --field org_id
     ```
 
-    بعد التثبيت، سترى أيقونة Microsoft Defender في شريط معلومات macOS في الزاوية العلوية اليسرى.
+    بعد التثبيت، سترى أيقونة Microsoft Defender في شريط المعلومات macOS في الزاوية العلوية اليسرى.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="أيقونة Microsoft Defender في شريط المعلومات" lightbox="images/mdatp-icon-bar.png":::
@@ -190,7 +190,7 @@ ms.locfileid: "65129255"
    > إذا نقرت نقرا مزدوجا، فستتلقى الرسالة التالية:
    >
    > > **يتعذر فتح "MDATP MacOS DIY" لأنه لا يمكن أن يكون المطور مدققا.**<br/>
-   > > يتعذر على macOS التحقق من أن هذا التطبيق خال من البرامج الضارة.<br/>
+   > > لا يمكن macOS التحقق من أن هذا التطبيق خال من البرامج الضارة.<br/>
    > > **\[الانتقال إلى إلغاء سلة المهملات\]** **\[\]**
 
 7. انقر فوق **إلغاء**.
@@ -206,18 +206,18 @@ ms.locfileid: "65129255"
 
     يجب أن يعرض النظام الرسالة التالية:
 
-    > Microsoft Defender لنقطة النهاية - ملف اختبار macOS الكشف التلقائي والاستجابة على النقط النهائية DIY<br/>
+    > Microsoft Defender لنقطة النهاية - ملف اختبار MACOS الكشف التلقائي والاستجابة على النقط النهائية DIY<br/>
     > سيتوفر التنبيه المقابل في مدخل MDATP.
 
 10. انقر فوق **"فتح**".
 
-    في غضون دقائق قليلة يجب رفع تنبيه باسم "تنبيه اختبار الكشف التلقائي والاستجابة على النقط النهائية macOS".
+    في غضون دقائق قليلة، يجب رفع تنبيه باسم "macOS الكشف التلقائي والاستجابة على النقط النهائية Test Alert".
 
 11. انتقل إلى مدخل Microsoft 365 Defender (https://security.microsoft.com/).
 
 12. انتقل إلى قائمة انتظار التنبيه.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="تنبيه اختبار الكشف التلقائي والاستجابة على النقط النهائية macOS الذي يظهر الخطورة والفئة ومصدر الكشف وقائمة إجراءات مطوية" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="تنبيه اختبار macOS الكشف التلقائي والاستجابة على النقط النهائية يظهر الخطورة والفئة ومصدر الكشف وقائمة مطوية من الإجراءات" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
 
     انظر إلى تفاصيل التنبيه والمخطط الزمني للجهاز، وقم بتنفيذ خطوات التحقيق العادية.
 
