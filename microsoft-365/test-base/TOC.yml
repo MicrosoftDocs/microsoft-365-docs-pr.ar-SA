@@ -40,6 +40,8 @@
       href: memory.md
     - name: تحليل انحدار وحدة المعالجة المركزية
       href: cpu.md
+    - name: طلب تغيير مستوى الوصول
+      href: accesslevel.md
     - name: SDK & API
       href: sdkapi.md
 - name: المرجع

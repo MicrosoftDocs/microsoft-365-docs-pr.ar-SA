@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: يمكنك استخدام طريقة عرض مبسطة في مركز مسؤولي Microsoft 365 لإدارة المهام الشائعة أو طريقة عرض لوحة المعلومات للإعدادات والمهام الأكثر تعقيداً.
-ms.openlocfilehash: f3f9d1616189a5e3347a882a6caec0df28e274c0
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 056072e454b0df3e7c4b06ce39735b1db3961b25
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66129020"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159543"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>نظرة عامة حول مركز مسؤولي Microsoft 365
 
@@ -108,11 +108,7 @@ ms.locfileid: "66129020"
 
 ## <a name="admin-center-features-and-settings"></a>ميزات مركز المسؤولين وإعداداته
 
-فيما يلي الميزات والإعدادات التي ستعثر عليها في جزء التنقل الأيمن لمركز المسؤولين. تعرف على المزيد حول مهام المسؤول في [تعليمات المسؤول] (نظرة عامة على مركز المسؤولين Microsoft 365] (admin-center-overview.md).
-
-<br>
-
-****
+فيما يلي الميزات والإعدادات التي ستعثر عليها في جزء التنقل الأيمن لمركز المسؤولين. تعرّف على المزيد حول مهام المسؤول في [تعليمات المسؤول](/microsoft-365/admin/).
 
 |قائمة|ما الغرض من الاستخدام|
 |-----|-----|

@@ -223,13 +223,13 @@
         - name: قائمة السماح/الحظر للمستأجر
           items:
             - name: إدارة قائمة السماح/الحظر للمستأجر
-              href: tenant-allow-block-list.md
-            - name: إضافة كتل في قائمة السماح/الحظر للمستأجر
-              href: manage-tenant-blocks.md
-            - name: تسمح الإضافة في قائمة السماح/الحظر للمستأجر
-              href: manage-tenant-allows.md
-            - name: تعديل الإدخالات وإزالتها في قائمة السماح/الحظر للمستأجر
-              href: modify-remove-entries-tenant-allow-block.md
+              href: manage-tenant-allow-block-list.md
+            - name: السماح برسائل البريد الإلكتروني أو حظرها باستخدام قائمة السماح/الحظر للمستأجر
+              href: allow-block-email-spoof.md
+            - name: السماح بعناوين URL أو حظرها باستخدام قائمة السماح/الحظر للمستأجر
+              href: allow-block-urls.md
+            - name: السماح بالملفات أو حظرها باستخدام قائمة السماح/الحظر للمستأجر
+              href: allow-block-files.md
         - name: إنشاء قوائم مرسل الحظر
           href: Create-block-sender-lists-in-office-365.md
         - name: إنشاء قوائم مرسل الآمن

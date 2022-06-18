@@ -1,0 +1,24 @@
+- name: Microsoft Whiteboard
+  href: index.md
+- name: Whiteboard للمؤسسات
+  items:
+    - name: تمكين الوصول وإدارته
+      href: enable-whiteboard-access-organizations.md
+    - name: إدارة البيانات
+      href: manage-data-organizations.md
+    - name: إدارة المشاركة
+      href: manage-sharing-organizations.md
+    - name: النشر على أجهزة Windows
+      href: deploy-on-windows-organizations.md
+- name: لوح المعلومات للحكومة
+  items:
+    - name: تمكين الوصول وإدارته - سحابة القطاع الحكومي عالي
+      href: enable-whiteboard-access-gcc-high.md
+    - name: إدارة البيانات - سحابة القطاع الحكومي عالي
+      href: manage-data-gcc-high.md
+    - name: إدارة المشاركة - سحابة القطاع الحكومي عالي
+      href: manage-sharing-gcc-high.md
+    - name: إدارة العملاء - سحابة القطاع الحكومي عالي
+      href: manage-clients-gcc-high.md
+- name: Whiteboard PowerShell
+  href: /powershell/module/whiteboard/
