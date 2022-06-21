@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/06/2022
-ms.openlocfilehash: 503740e6dc16aea98fd44b71d9693d2b4a5844a8
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.date: 06/20/2022
+ms.openlocfilehash: 78eb4f9cb65fb5eec54747a256abf290a43deb2f
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043622"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185448"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>التحكم في الوصول إلى التخزين القابل للإزالة Microsoft Defender لنقطة النهاية Device Control
 
@@ -290,7 +290,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>نشر النهج وإدارته باستخدام واجهة مستخدم Intune
 
-(*قريبا!*) ستتوفر هذه الإمكانية في مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>). انتقل إلى نهج **إنشاء** **تقليل** >  الأجزاء المعرضة للهجوم **الأمني** >  لنقطة النهاية. اختر **النظام الأساسي: Windows 10 والإي وقت لاحق** باستخدام **ملف التعريف: التحكم في الجهاز**.
+تتوفر هذه الإمكانية في مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>). انتقل إلى نهج **إنشاء** **تقليل** >  الأجزاء المعرضة للهجوم **الأمني** >  لنقطة النهاية. اختر **النظام الأساسي: Windows 10 والإي وقت لاحق** باستخدام **ملف التعريف: التحكم في الجهاز**.
 
 ## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة وإدارته باستخدام نهج المجموعة
 

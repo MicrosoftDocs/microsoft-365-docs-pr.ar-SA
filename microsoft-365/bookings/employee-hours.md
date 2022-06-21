@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: تعيين ساعات عمل الموظفين والتوفر في Microsoft Bookings.
-ms.openlocfilehash: 19b5a186c66659777a0dbe3444c0e43c4142ff36
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 1cd395b377d9d9b0a20ef1d01956a27c559afb42
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637241"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185050"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>ساعات عمل الموظفين في Microsoft Bookings
 
@@ -30,7 +30,7 @@ ms.locfileid: "65637241"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
-## <a name="customize-employee-working-hours"></a>تخصيص ساعات عمل الموظفين
+## <a name="steps"></a>الخطوات
 
 1. في Microsoft 365، حدد مشغل التطبيق، ثم حدد **Bookings**.
 
@@ -42,7 +42,7 @@ ms.locfileid: "65637241"
 
 1. استخدم القوائم المنسدلة لتحديد أوقات البدء والانتهاء لكل يوم. تتوفر الأوقات بزيادات قدرها 15 دقيقة.
 
-   ![Image of Bookings staff working hours screen.](../media/bookings-staff-hours.png)
+   ![صورة شاشة ساعات عمل موظفي Bookings.](../media/bookings-staff-hours.png)
 
 1. حدد **+** لإضافة محددات وقت البدء والانتهاء.
 
@@ -54,7 +54,7 @@ ms.locfileid: "65637241"
 
 1. على شاشة ساعات العمل، حدد **x** بجوار اليوم الذي سيتوقف فيه الموظف.
 
-   ![صورة Bookings شاشة ساعات عمل الموظفين بالماوس فوق زر x.](../media/bookings-staff-time-off.png)
+   ![صورة لشاشة ساعات عمل موظفي Bookings مع زر الماوس فوق x.](../media/bookings-staff-time-off.png)
 
 1. إذا كنت تريد جدولة يوم تم وضع علامة عليه مسبقا كيوم إجازة، فحدد **+** العلامة إلى جانب اليوم الذي تريد جدولته.
 

@@ -9,14 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: قم بجدولة عمليات إغلاق المكتب وإجازة الموظفين من تقويم Bookings بحيث يتم وضع علامة على الموظفين على أنهم غير متاحين للحجوزات خلال الأوقات المحددة.
-ms.openlocfilehash: 52b2b8ea912cb876dd2d6e8b8efcdcc3bb90ce1f
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: bc119e3d45c625ec89cc4edccbeea34508b6b012
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637440"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185182"
 ---
-# <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>جدولة Bookings إغلاق الأعمال والإجازة ووقت العطلة
+# <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>جدولة عمليات إغلاق أعمال Bookings، والإجازة، ووقت العطلة
 
 في بعض الأحيان، قد ترغب في إغلاق شركتك للعطلات أو أحداث الفريق، أو سيحتاج موظفوك إلى إجازة عندما يمرضون أو في عطلة أو لا يتوفرون لأسباب أخرى. يمكنك جدولة إجازة من تقويم Microsoft Bookings، ولن يكون الموظف متوفرا للحجوزات خلال الوقت المحدد. بمجرد إعادة فتح الشركة أو عودة الموظفين إلى العمل، سيتم إدراج الجميع في صفحة الحجز وفقا لساعات عملهم المحددة.
 
@@ -30,11 +30,11 @@ ms.locfileid: "65637440"
 
 1. في Microsoft 365، حدد مشغل التطبيق، ثم حدد **Bookings**.
 
-1. اختر تقويمك. 
+1. اختر تقويمك.
 
 1. في جزء التنقل العلوي، حدد **"إضافة إجازة**".
 
-   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings زر طريقة عرض التقويم ووقت الإجازة.":::
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="زر طريقة عرض تقويم Bookings ووقت الإجازة.":::
 
 1. املأ التفاصيل، بما في ذلك العنوان وتاريخ البدء والانتهاء والأوقات والموقع والملاحظات الإضافية.
 
@@ -58,7 +58,7 @@ ms.locfileid: "65637440"
 
 1. في جزء التنقل العلوي، حدد **"إضافة إجازة**".
 
-   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings زر طريقة عرض التقويم ووقت الإجازة.":::
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="زر طريقة عرض تقويم Bookings ووقت الإجازة.":::
 
 1. املأ التفاصيل، بما في ذلك العنوان وتاريخ البدء والانتهاء والأوقات والموقع والمزيد من الملاحظات. إذا كان الموظف سيختفي ليوم كامل أو لعدة أيام، فحدد **حدث اليوم كله**.
 

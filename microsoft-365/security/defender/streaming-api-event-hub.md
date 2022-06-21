@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9cae28cc69d67bb18058e2c81cd8235ffce79997
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: ec18c23df27329598b6e48446ccf43d062b163ad
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754389"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185358"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>تكوين Microsoft 365 Defender لدفق أحداث التتبع المتقدمة إلى Azure Event Hub
 
@@ -111,6 +111,23 @@ ms.locfileid: "65754389"
 - فيما يلي مثال لحدث معلومات الجهاز:
 
   :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="استعلام مثال لمعلومات الجهاز" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+
+## <a name="estimating-initial-event-hub-capacity"></a>تقدير سعة Event Hub الأولية
+يمكن أن يساعد استعلام التتبع المتقدم التالي في توفير تقدير تقريبي لمعدل نقل وحدة تخزين البيانات وسعة مركز الأحداث الأولية استنادا إلى الأحداث/الثانية والمقيود ميغابايت/ثانية. نوصي بتشغيل الاستعلام خلال ساعات العمل العادية؛ وذلك لتسجيل معدل النقل 'الحقيقي'.
+ 
+```kusto 
+let bytes_ = 500;
+union withsource=MDTables*
+| where Timestamp > startofday(ago(6h))
+| summarize count() by bin(Timestamp, 1m), MDTables
+| extend EPS = count_ /60
+| summarize avg(EPS), estimatedMBPerSec = (avg(EPS) * bytes_ ) / (1024*1024) by MDTables
+| sort by toint(estimatedMBPerSec) desc
+```
+
+## <a name="monitoring-created-resources"></a>مراقبة الموارد التي تم إنشاؤها
+
+يمكنك مراقبة الموارد التي تم إنشاؤها بواسطة واجهة برمجة التطبيقات المتدفقة باستخدام **Azure Monitor**. لمزيد من المعلومات، راجع [تصدير بيانات مساحة عمل Log Analytics في Azure Monitor](/azure/azure-monitor/logs/logs-data-export). 
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

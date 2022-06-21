@@ -8,7 +8,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 05/05/2022
+ms.date: 06/20/2022
 ms.reviewer: georgiah
 ms.custom:
 - it-pro
@@ -16,18 +16,18 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 839d320bfb52175f58009b8d254ec37eadeb4cb1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: fc0c9186f506cdead968668959c401517551a4d3
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007295"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185380"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>ترحيل علبة بريد عبر المستأجرين (معاينة)
 
 عادة، في أثناء عمليات الدمج أو التباعد، تحتاج إلى القدرة على نقل علبة بريد المستخدم Exchange Online إلى مستأجر جديد. يسمح ترحيل علبة البريد عبر المستأجرين لمسؤولي المستأجرين باستخدام واجهات معروفة مثل Exchange Online PowerShell وSOWN لانتقال المستخدمين إلى مؤسستهم الجديدة.
 
-يمكن للمسؤولين استخدام أمر cmdlet New-MigrationBatch، المتوفر من خلال دور إدارة Move Mailboxes، لتنفيذ عمليات النقل عبر المستأجرين.
+يمكن للمسؤولين استخدام **New-MigrationBatch** cmdlet، المتوفر من خلال دور إدارة _Move Mailboxes_ ، لتنفيذ عمليات النقل عبر المستأجرين.
 
 يجب أن يكون ترحيل المستخدمين موجودا في نظام Exchange Online المستأجر الهدف كمستخدمي البريد، مع وضع علامة على سمات معينة لتمكين عمليات النقل عبر المستأجرين. سيفشل النظام في النقل للمستخدمين الذين لم يتم إعدادهم بشكل صحيح في المستأجر الهدف.
 
@@ -208,19 +208,11 @@ ms.locfileid: "66007295"
 
 ### <a name="how-do-i-know-this-worked"></a>كيف أتأكد من نجاح هذا الأمر؟
 
-يمكنك التحقق من تكوين ترحيل علبة البريد عبر المستأجرين عن طريق تشغيل [Cmdlet Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) مقابل نقطة نهاية الترحيل عبر المستأجر التي قمت بإنشائها على المستأجر الهدف.
+يمكنك التحقق من تكوين ترحيل علبة البريد عبر المستأجرين عن طريق تشغيل [cmdlet Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) مقابل نقطة نهاية الترحيل عبر المستأجر التي قمت بإنشائها على المستأجر الهدف.
 
-   > [!NOTE]
-   >
-   > - المستأجر الهدف:
-   >
-   > Test-MigrationServerAvailability -Endpoint "[اسم نقطة نهاية الترحيل عبر المستأجرين]"
-   >
-   > Get-OrganizationRelationship | اسم fl، DomainNames، MailboxMoveEnabled، MailboxMoveCapability
-   >
-   > - المستأجر المصدر:
-   >
-   > Get-OrganizationRelationship | اسم fl، DomainNames، MailboxMoveEnabled، MailboxMoveCapability
+```powershell
+Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant mailbox moves" - TestMailbox "Primary SMTP of MailUser object in target tenant"
+```
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>نقل علب البريد مرة أخرى إلى المصدر الأصلي
 
@@ -377,19 +369,19 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 
 ## <a name="frequently-asked-questions"></a>الأسئلة الشائعة
 
-**هل نحتاج إلى تحديث RemoteMailboxes في المصدر المحلي بعد النقل؟**
+### <a name="do-we-need-to-update-remotemailboxes-in-source-on-premises-after-the-move"></a>هل نحتاج إلى تحديث RemoteMailboxes في المصدر المحلي بعد النقل؟
 
 نعم، يجب تحديث targetAddress (RemoteRoutingAddress/ExternalEmailAddress) للمستخدمين المحليين المصدر عندما تنتقل علبة بريد المستأجر المصدر إلى المستأجر الهدف.  بينما يمكن أن يتبع توجيه البريد الإحالات عبر العديد من مستخدمي البريد الذين لديهم عناوين هدف مختلفة، يجب أن تستهدف عمليات البحث عن التوفر/الانشغال لمستخدمي البريد موقع مستخدم علبة البريد. لن تلاحق عمليات البحث عن التوفر/الانشغال عمليات إعادة التوجيه المتعددة.
 
-**هل تقوم Teams الاجتماعات بترحيل المستأجرين المشتركين؟**
+### <a name="do-teams-meetings-migrate-cross-tenant"></a>هل تقوم Teams الاجتماعات بترحيل المستأجرين المشتركين؟
 
 سيتم نقل الاجتماعات، ومع ذلك لا يتم تحديث عنوان URL للاجتماع Teams عند ترحيل العناصر عبر المستأجر. نظرا لأن عنوان URL سيكون غير صالح في المستأجر الهدف، فستحتاج إلى إزالة اجتماعات Teams وإعادة إنشائها.
 
-**هل يرحل محتوى مجلد الدردشة Teams عبر المستأجرين؟**
+### <a name="does-the-teams-chat-folder-content-migrate-cross-tenant"></a>هل يرحل محتوى مجلد الدردشة Teams عبر المستأجرين؟
 
 لا، لا يقوم محتوى مجلد الدردشة Teams بترحيل المستأجر المشترك.
 
-**كيف يمكنني رؤية فقط الحركات التي هي عمليات نقل عبر المستأجرين، وليس عمليات الإلحاق والتحركات خارج الطائرة؟**
+### <a name="how-can-i-see-just-moves-that-are-cross-tenant-moves-not-my-onboarding-and-off-boarding-moves"></a>كيف يمكنني رؤية فقط الحركات التي هي عمليات نقل عبر المستأجرين، وليس عمليات الإلحاق والتحركات خارج الطائرة؟
 
 استخدم _المعلمة Flags_ . فيما يلي مثال على ذلك.
 
@@ -397,7 +389,7 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 Get-MoveRequest -Flags "CrossTenant"
 ```
 
-**هل يمكنك توفير أمثلة على البرامج النصية لنسخ السمات المستخدمة في الاختبار؟**
+### <a name="can-you-provide-example-scripts-for-copying-attributes-used-in-testing"></a>هل يمكنك توفير أمثلة على البرامج النصية لنسخ السمات المستخدمة في الاختبار؟
 
 > [!NOTE]
 > العينة – كما هو الحال، لا يوجد ضمان يفترض هذا البرنامج النصي وجود اتصال بكل من علبة البريد المصدر (للحصول على قيم المصدر) والهدف Active Directory محلي خدمات المجال (لوضع طابع على كائن ADUser). إذا تم تمكين التقاضي أو استرداد عنصر واحد في المصدر، فقم بتعيين هذا على حساب الوجهة.  سيؤدي ذلك إلى زيادة حجم تفريغ حساب الوجهة إلى 100 غيغابايت.
@@ -434,7 +426,7 @@ Get-MoveRequest -Flags "CrossTenant"
    Start-ADSyncSyncCycle
    ```
 
-**كيف يمكننا الوصول إلى Outlook في اليوم 1 بعد نقل علبة بريد الاستخدام؟**
+### <a name="how-do-we-access-outlook-on-day-1-after-the-use-mailbox-is-moved"></a>كيف يمكننا الوصول إلى Outlook في اليوم 1 بعد نقل علبة بريد الاستخدام؟
 
 نظرا لأن مستأجرا واحدا فقط يمكنه امتلاك مجال، فلن يتم إقران SMTPAddress الأساسي السابق بالمستخدم في المستأجر الهدف عند اكتمال نقل علبة البريد؛ فقط تلك المجالات المقترنة بالمستأجر الجديد. يستخدم Outlook UPN الجديد للمستخدمين للمصادقة على الخدمة ويتوقع ملف تعريف Outlook العثور على SMTPAddress الأساسي القديم لمطابقة علبة البريد في النظام الهدف. نظرا لأن العنوان القديم غير موجود في النظام الهدف، فلن يتصل ملف تعريف Outlook للعثور على علبة البريد المنقولة حديثا.
 
@@ -443,7 +435,7 @@ Get-MoveRequest -Flags "CrossTenant"
 > [!NOTE]
 > خطط وفقا لذلك أثناء دفع المستخدمين للإكمال. تحتاج إلى حساب استخدام الشبكة وسعتها عند إنشاء ملفات تعريف العميل Outlook وتنزيل ملفات OST وOAB اللاحقة للعملاء.
 
-**ما Exchange أدوار RBAC التي أحتاج إلى أن أكون عضوا فيها لإعداد نقل عبر المستأجرين أو إكماله؟**
+### <a name="what-exchange-rbac-roles-do-i-need-to-be-member-of-to-set-up-or-complete-a-cross-tenant-move"></a>ما Exchange أدوار RBAC التي أحتاج إلى أن أكون عضوا فيها لإعداد نقل عبر المستأجرين أو إكماله؟
 
 هناك مصفوفة من الأدوار استنادا إلى افتراض المهام المفوضة عند تنفيذ نقل علبة البريد. مطلوب حاليا دوران:
 
@@ -451,17 +443,17 @@ Get-MoveRequest -Flags "CrossTenant"
 
 - يمكن تفويض دور تنفيذ أوامر النقل الفعلي إلى دالة ذات مستوى أدنى. يتم تعيين دور نقل علب البريد لإمكانية نقل علب البريد داخل المؤسسة أو خارجها.
 
-**كيف نستهدف عنوان SMTP المحدد ل targetAddress (TargetDeliveryDomain) على علبة البريد المحولة (لتحويل MailUser)؟**
+### <a name="how-do-we-target-which-smtp-address-is-selected-for-targetaddress-targetdeliverydomain-on-the-converted-mailbox-to-mailuser-conversion"></a>كيف نستهدف عنوان SMTP المحدد ل targetAddress (TargetDeliveryDomain) على علبة البريد المحولة (لتحويل MailUser)؟
 
 Exchange نقل علبة البريد باستخدام الدالة MRS، قم بصياغة targetAddress على علبة البريد المصدر الأصلية عند التحويل إلى MailUser عن طريق مطابقة عنوان بريد إلكتروني (proxyAddress) على الكائن الهدف. تأخذ العملية قيمة -TargetDeliveryDomain التي تم تمريرها إلى أمر النقل، ثم تتحقق من وجود وكيل مطابق لهذا المجال على الجانب الهدف. عندما نجد تطابقا، يتم استخدام proxyAddress المطابق لتعيين ExternalEmailAddress (targetAddress) على كائن علبة البريد المحولة (MailUser الآن).
 
-**كيف تنتقل أذونات علبة البريد؟**
+### <a name="how-do-mailbox-permissions-transition"></a>كيف تنتقل أذونات علبة البريد؟
 
 تتضمن أذونات علبة البريد "إرسال نيابة عن" و"الوصول إلى علبة البريد":
 
 - يقوم "إرسال نيابة عن" (AD:publicDelegates) بتخزين DN للمستلمين الذين لهم حق الوصول إلى علبة بريد المستخدم كمفوض. يتم تخزين هذه القيمة في Active Directory ولا يتم نقلها حاليا كجزء من انتقال علبة البريد. إذا كانت علبة البريد المصدر قد تم تعيين الحذف العام لها، فستحتاج إلى إعادة تعيين الحذف العام على علبة البريد الهدف بمجرد اكتمال تحويل MEU إلى علبة البريد في البيئة الهدف عن طريق التشغيل `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`.
 
-- سيتم نقل أذونات علبة البريد المخزنة في علبة البريد مع علبة البريد عند نقل كل من المدير والمفوض إلى النظام الهدف. على سبيل المثال، يتم منح TestUser_7 المستخدم FullAccess إلى TestUser_8 علبة البريد في SourceCompany.onmicrosoft.com المستأجر. بعد اكتمال نقل علبة البريد إلى TargetCompany.onmicrosoft.com، يتم إعداد نفس الأذونات في الدليل الهدف. فيما يلي أمثلة على استخدام *Get-MailboxPermission* TestUser_7 في كل من المستأجرين المصدر والهدف. Exchange cmdlets مسبوقة بالمصدر والهدف وفقا لذلك.
+- سيتم نقل أذونات علبة البريد المخزنة في علبة البريد مع علبة البريد عند نقل كل من المدير والمفوض إلى النظام الهدف. على سبيل المثال، يتم منح TestUser_7 المستخدم FullAccess إلى TestUser_8 علبة البريد في SourceCompany.onmicrosoft.com المستأجر. بعد اكتمال نقل علبة البريد إلى TargetCompany.onmicrosoft.com، يتم إعداد نفس الأذونات في الدليل الهدف. فيما يلي أمثلة على استخدام _Get-MailboxPermission_ TestUser_7 في كل من المستأجرين المصدر والهدف. Exchange cmdlets مسبوقة بالمصدر والهدف وفقا لذلك.
 
 فيما يلي مثال على إخراج إذن علبة البريد قبل النقل.
 
@@ -488,7 +480,7 @@ TestUser_8@TargetCompany.onmicrosoft.com         {FullAccess}                   
 > [!NOTE]
 > أذونات التقويم وعلبة البريد عبر المستأجرين غير معتمدة. يجب تنظيم الكيانات والمفوضين في دفعات نقل موحدة بحيث يتم نقل علب البريد المتصلة هذه في نفس الوقت من المستأجر المصدر.
 
-**ما هو وكيل X500 الذي يجب إضافته إلى عناوين وكيل MailUser الهدف لتمكين الترحيل؟**
+### <a name="what-x500-proxy-should-be-added-to-the-target-mailuser-proxy-addresses-to-enable-migration"></a>ما هو وكيل X500 الذي يجب إضافته إلى عناوين وكيل MailUser الهدف لتمكين الترحيل؟
 
 يتطلب ترحيل علبة البريد عبر المستأجرين أن يتم وضع طابع على قيمة LegacyExchangeDN لكائن علبة البريد المصدر كعنوان بريد إلكتروني x500 على كائن MailUser الهدف.
 
@@ -505,11 +497,11 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 > [!NOTE]
 > بالإضافة إلى وكيل X500 هذا، ستحتاج إلى نسخ كل وكلاء X500 من علبة البريد في المصدر إلى علبة البريد في الهدف.
 
-**هل يمكن للمستأجر المصدر والهدف استخدام نفس اسم المجال؟**
+### <a name="can-the-source-and-target-tenant-utilize-the-same-domain-name"></a>هل يمكن للمستأجر المصدر والهدف استخدام نفس اسم المجال؟
 
 لا. يجب أن تكون أسماء نطاقات المستأجر المصدر والهدف فريدة. على سبيل المثال، مجال مصدر contoso.com والمجال الهدف fourthcoffee.com.
 
-**هل سيتم نقل علب البريد المشتركة وما زالت تعمل؟**
+### <a name="will-shared-mailboxes-move-and-still-work"></a>هل سيتم نقل علب البريد المشتركة وما زالت تعمل؟
 
 نعم، ومع ذلك، لا نحتفظ إلا بأذونات المتجر كما هو موضح في هذه المقالات:
 
@@ -517,35 +509,43 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 - [| دعم Microsoft كيفية منح أذونات علبة بريد Exchange وعلبة بريد Outlook في Office 365 مخصصة](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
-**هل لديك أي توصيات للدفعات؟**
+### <a name="do-you-have-any-recommendations-for-batches"></a>هل لديك أي توصيات للدفعات؟
 
 لا تتجاوز 2000 علبة بريد لكل دفعة. نوصي بشدة بإرسال دفعات قبل أسبوعين من تاريخ القص حيث لا يوجد أي تأثير على المستخدمين النهائيين أثناء المزامنة. إذا كنت بحاجة إلى إرشادات لكميات علب البريد التي تزيد عن 50,000، يمكنك الوصول إلى قائمة توزيع الملاحظات الهندسية في crosstenantmigrationpreview@service.microsoft.com.
 
-**ماذا لو استخدمت تشفير الخدمة مع مفتاح العميل؟**
+### <a name="what-if-i-use-service-encryption-with-customer-key"></a>ماذا لو استخدمت تشفير الخدمة مع مفتاح العميل؟
 
 سيتم فك تشفير علبة البريد قبل النقل. تأكد من تكوين مفتاح العميل في المستأجر الهدف إذا كان لا يزال مطلوبا. راجع [هنا](/microsoft-365/compliance/customer-key-overview) للحصول على مزيد من المعلومات.
 
-**ما هو وقت الترحيل المقدر؟**
+### <a name="what-is-the-estimated-migration-time"></a>ما هو وقت الترحيل المقدر؟
 
 لمساعدتك على التخطيط لل ترحيلك، يعرض الجدول الموجود [هنا](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) إرشادات حول متى يمكن توقع اكتمال عمليات ترحيل علبة البريد المجمعة أو عمليات الترحيل الفردية. تستند هذه التقديرات إلى تحليل بيانات عمليات ترحيل العملاء السابقة. نظرا لأن كل بيئة فريدة من نوعها، فقد تختلف سرعة الترحيل الدقيقة.
 
 تذكر أن هذه الميزة قيد المعاينة وSLA حاليا، ولا تنطبق أي مستويات خدمة قابلة للتطبيق على أي مشكلات في الأداء أو التوفر أثناء حالة المعاينة لهذه الميزة.
 
-**حماية المستندات في المستأجر المصدر التي يمكن للمستخدمين استخدامها في المستأجر الوجهة.**
+### <a name="protecting-documents-in-the-source-tenant-consumable-by-users-in-the-destination-tenant"></a>حماية المستندات في المستأجر المصدر التي يمكن للمستخدمين استخدامها في المستأجر الوجهة.**
 
 الترحيل عبر المستأجرين لا يرحل إلا بيانات علبة البريد ولا يرحل أي شيء آخر. هناك العديد من الخيارات الأخرى، والتي تم توثيقها في منشور المدونة التالي الذي قد يساعد: <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
 
-**هل يمكنني الحصول على نفس التسميات في المستأجر الوجهة كما كان لديك في المستأجر المصدر، إما كمجموعة فقط من التسميات أو مجموعة إضافية من التسميات للمستخدمين الذين تم ترحيلهم اعتمادا على المحاذاة بين المؤسسات.**
+### <a name="can-i-have-the-same-labels-in-the-destination-tenant-as-you-had-in-the-source-tenant-either-as-the-only-set-of-labels-or-an-additional-set-of-labels-for-the-migrated-users-depending-on-alignment-between-the-organizations"></a>هل يمكنني الحصول على نفس التسميات في المستأجر الوجهة كما كان لديك في المستأجر المصدر، إما كمجموعة فقط من التسميات أو مجموعة إضافية من التسميات للمستخدمين الذين تم ترحيلهم اعتمادا على المحاذاة بين المؤسسات.**
 
 نظرا لأن عمليات الترحيل عبر المستأجرين لا تقوم بتصدير التسميات ولا توجد طريقة لمشاركة التسميات بين المستأجرين، يمكنك تحقيق ذلك فقط عن طريق إعادة إنشاء التسميات في المستأجر الوجهة.
 
-**هل تدعم نقل مجموعات Microsoft 365؟**
+### <a name="do-you-support-moving-microsoft-365-groups"></a>هل تدعم نقل مجموعات Microsoft 365؟
 
 حاليا لا تدعم ميزة ترحيل علب بريد المستأجرين المشتركين ترحيل مجموعات Microsoft 365.
 
-**هل يمكن لمسؤول المستأجر المصدر إجراء بحث eDiscovery مقابل علبة بريد بعد ترحيل علبة البريد إلى المستأجر الجديد/الهدف؟**
+### <a name="can-a-source-tenant-admin-perform-an-ediscovery-search-against-a-mailbox-after-the-mailbox-has-been-migrated-to-the-newtarget-tenant"></a>هل يمكن لمسؤول المستأجر المصدر إجراء بحث eDiscovery مقابل علبة بريد بعد ترحيل علبة البريد إلى المستأجر الجديد/الهدف؟
 
 لا، بعد ترحيل علبة بريد المستأجرين، لا يعمل eDiscovery مقابل علبة بريد المستخدم الذي تم ترحيله في المصدر. وذلك لأنه لم يعد هناك علبة بريد في المصدر للبحث مقابلها حيث تم ترحيل علبة البريد إلى المستأجر الهدف والآن ينتمي إلى المستأجر الهدف. eDiscovery، لا يمكن ترحيل علبة البريد بعد إلا في المستأجر الهدف (حيث توجد علبة البريد الآن). إذا كانت هناك نسخة من علبة البريد المصدر تحتاج إلى الاستمرار في المستأجر المصدر بعد الترحيل، يمكن للمسؤول في المصدر نسخ المحتويات إلى علبة بريد بديلة قبل الترحيل لعمليات eDiscovery المستقبلية مقابل البيانات.
+
+### <a name="at-which-point-will-the-destination-mailuser-be-converted-to-a-destination-mailbox-and-the-source-mailbox-converted-to-a-source-mailuser"></a>عند هذه النقطة سيتم تحويل MailUser الوجهة إلى علبة بريد وجهة وتحويل علبة البريد المصدر إلى MailUser مصدر؟
+
+تحدث هذه التحويلات تلقائيا أثناء عملية الترحيل. لا توجد خطوات يدوية ضرورية.
+
+### <a name="at-which-step-should-i-assign-the-exchange-online-license-to-destination-mailusers"></a>في أي خطوة يجب تعيين ترخيص Exchange Online لمرسلي البريد الوجهة؟
+
+يمكن القيام بذلك قبل اكتمال الترحيل، ولكن يجب عدم تعيين ترخيص قبل وضع طابع على سمة _ExchangeGuid_ أو فشل تحويل كائن MailUser إلى علبة بريد وسيتم إنشاء علبة بريد جديدة بدلا من ذلك. للتخفيف من هذه المخاطر، من الأفضل الانتظار حتى اكتمال الترحيل، وتعيين التراخيص خلال فترة السماح التي تبلغ 30 يوما.
 
 ## <a name="known-issues"></a>المشاكل المعروفة
 
