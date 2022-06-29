@@ -21,12 +21,12 @@ search.appverid:
 description: تعرف على كيفية استخدام AllowSelfServicePurchase PowerShell cmdlet لتشغيل عملية شراء الخدمة الذاتية أو إيقاف تشغيلها.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 4/7/2022
-ms.openlocfilehash: e4423892f2dc045a9729e68519c85d471838d5ac
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 7c9ac6a1e58049d188d4cd29441d8e0689f2c787
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042176"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530827"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>استخدام AllowSelfServicePurchase للوحدة النمطية MSCommerce PowerShell
 
@@ -45,7 +45,7 @@ ms.locfileid: "66042176"
 - جهاز Windows 10
 - PowerShell 5 أو أقل. حاليا، PowerShell 6.x/7.x غير مدعوم مع هذه الوحدة النمطية.
 - إذن المسؤول للجهاز
-- دور مسؤول عمومي أو مسؤول فوترة للمستأجر
+- دور مسؤول عمومي أو فوترة للمستأجر
 
 ## <a name="install-the-mscommerce-powershell-module"></a>تثبيت الوحدة النمطية MSCommerce PowerShell
 
@@ -65,7 +65,7 @@ Install-Module -Name MSCommerce
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>الاتصال إلى MSCommerce باستخدام بيانات الاعتماد الخاصة بك
+## <a name="connect-to-mscommerce-with-your-credentials"></a>الاتصال ب MSCommerce باستخدام بيانات الاعتماد الخاصة بك
 
 للاتصال بالوحدة النمطية PowerShell باستخدام بيانات الاعتماد الخاصة بك، قم بتشغيل الأمر التالي.
 
@@ -95,10 +95,10 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 
 | المنتج | Productid |
 |-----------------------------|--------------|
-| Power Apps لكل مستخدم | CFQ7TTC0LH2H |
+| Power Apps لكل مستخدم* | CFQ7TTC0LH2H |
 | Power Automate لكل مستخدم | CFQ7TTC0KP0N |
 | Power Automate RPA | CFQ7TTC0KXG6  |
-| power BI Premium (مستقل) | CFQ7TTC0KXG7  |
+| Power BI Premium (مستقل) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
 | Project (النظام 1)* | CFQ7TTC0HDB1 |
 | Project (النظام 3)* | CFQ7TTC0HDB0 |
@@ -107,6 +107,7 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | Windows 365 Enterprise | CFQ7TTC0HHS9 |
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Business باستخدام ميزة Windows المختلطة | CFQ7TTC0HX99 |
+| Microsoft 365 F3 | CFQ7TTC0LH05 |
 
 *تم تغيير هذه المعرفات. إذا قمت مسبقا بحظر المنتجات باستخدام المعرف القديم، يتم حظرها تلقائيا باستخدام المعرفات الجديدة. لا يلزم عمل إضافي.
 
@@ -134,7 +135,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>مثال على البرنامج النصي لتعطيل AllowSelfServicePurchase
 
-يوضح لك المثال التالي كيفية استيراد وحدة **MSCommerce**، وتسجيل الدخول باستخدام حسابك، والحصول على **ProductId** Power Automate لكل مستخدم، ثم تعطيل **AllowSelfServicePurchase** لهذا المنتج.
+يوضح لك المثال التالي كيفية استيراد وحدة **MSCommerce** ، وتسجيل الدخول باستخدام حسابك، والحصول على **ProductId** ل Power Automate لكل مستخدم، ثم تعطيل **AllowSelfServicePurchase** لهذا المنتج.
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -182,8 +183,8 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 Uninstall-Module -Name MSCommerce
 ```-->
 
-## <a name="related-content"></a>المحتويات ذات الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
-[إدارة مشتريات الخدمة الذاتية (المسؤول)](manage-self-service-purchases-admins.md) (مقالة)
+[إدارة مشتريات الخدمة الذاتية (مسؤول)](manage-self-service-purchases-admins.md) (مقالة)
 
 [الأسئلة المتداولة حول شراء الخدمة الذاتية](self-service-purchase-faq.yml) (مقالة)

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 2aee32adca1799fca84932991dc128a6a3f64ca7
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 61541cf74640035845ac04889834d12ea6730ad8
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492436"
+ms.locfileid: "66530292"
 ---
 # <a name="protect-your-network"></a>حماية الشبكة
 
@@ -38,6 +38,8 @@ ms.locfileid: "66492436"
 
 **الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
+- ماك
+- ينكس
 
 هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -52,7 +54,7 @@ ms.locfileid: "66492436"
 
 ## <a name="requirements-for-network-protection"></a>متطلبات حماية الشبكة
 
-تتطلب حماية الشبكة Windows 10 أو 11 (Pro أو Enterprise)، أو Windows Server الإصدار 1803 أو أحدث، وحماية Microsoft Defender Antivirus في الوقت الحقيقي.
+تتطلب حماية الشبكة Windows 10 أو 11 (Pro أو Enterprise) أو Windows Server الإصدار 1803 أو الإصدار الأحدث من macOS 11 أو الإصدارات الأحدث أو إصدارات Linux المدعومة من Defender وحماية Microsoft Defender Antivirus في الوقت الحقيقي.
 
 | إصدار Windows | برنامج الحماية من الفيروسات من Microsoft Defender |
 |:---|:---|

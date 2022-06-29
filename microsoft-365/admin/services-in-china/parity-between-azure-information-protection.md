@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 description: تعرف على المزيد حول Azure حماية البيانات (AIP) Office 365 المشغلة بواسطة 21Vianet وكيفية تكوينها للعملاء في الصين.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 0f495139a807d4a0eeb3181626717c6d5061fc38
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 80cd8d9b848235fc3486ad1952fa58f9d7d1570d
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935204"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530157"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>دعم حماية البيانات Azure Office 365 المشغل بواسطة 21Vianet
 
-تتناول هذه المقالة الاختلافات بين دعم Azure حماية البيانات (AIP) Office 365 المشغلة بواسطة 21Vianet والعروض التجارية، بالإضافة إلى إرشادات محددة لتكوين AIP للعملاء في الصين&mdash; بما في ذلك كيفية تثبيت الماسح الضوئي المحلي ل AIP وإدارة مهام فحص المحتوى.
+تتناول هذه المقالة الاختلافات بين دعم Azure حماية البيانات (AIP) Office 365 المشغلة بواسطة 21Vianet والعروض التجارية، بالإضافة إلى إرشادات محددة لتكوين AIP للعملاء في الصين&mdash;بما في ذلك كيفية تثبيت الماسح الضوئي المحلي ل AIP وإدارة مهام فحص المحتوى.
 
 ## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>الاختلافات بين AIP Office 365 المشغلة بواسطة 21Vianet والعروض التجارية
 
@@ -45,7 +45,7 @@ ms.locfileid: "64935204"
   
 - لا تتوفر حاليا مشاركة المستندات ومرفقات البريد الإلكتروني مع المستخدمين في السحابة التجارية. يشمل ذلك Office 365 المشغلة من قبل 21Vianet المستخدمين في السحابة التجارية، وغير Office 365 المشغلة من قبل مستخدمي 21Vianet في السحابة التجارية، والمستخدمين الذين لديهم ترخيص RMS للأفراد.
   
-- IRM مع SharePoint (المواقع والمكتبات المحمية بواسطة IRM) غير متوفرة حاليا.
+- لا تتوفر حاليا إدارة حقوق المعلومات (IRM) مع SharePoint (المواقع والمكتبات المحمية بواسطة IRM).
   
 - ملحق الجهاز المحمول ل AD RMS غير متوفر حاليا.
 
@@ -62,7 +62,7 @@ ms.locfileid: "64935204"
 لتكوين AIP للعملاء في الصين:
 1. [تمكين إدارة الحقوق للمستأجر](#step-1-enable-rights-management-for-the-tenant).
 
-1. [أضف Microsoft Purview حماية البيانات كيان خدمة المزامنة](#step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal).
+1. [أضف كيان خدمة المزامنة حماية البيانات في Microsoft](#step-2-add-the-microsoft-information-protection-sync-service-service-principal).
 
 1. [تكوين تشفير DNS](#step-3-configure-dns-encryption).
 
@@ -81,24 +81,24 @@ ms.locfileid: "64935204"
     1. تشغيل PowerShell كمسؤول.
     2. إذا لم يتم تثبيت الوحدة النمطية AIPService، فشغل `Install-Module AipService`.
     3. استيراد الوحدة النمطية باستخدام `Import-Module AipService`.
-    4. الاتصال إلى الخدمة باستخدام `Connect-AipService -environmentname azurechinacloud`.
+    4. الاتصال بالخدمة باستخدام `Connect-AipService -environmentname azurechinacloud`.
     5. تشغيل `(Get-AipServiceConfiguration).FunctionalState` والتحقق مما إذا كانت الحالة `Enabled`.
 
 2. إذا كانت الحالة الوظيفية ، فشغل`Disabled``Enable-AipService`.
 
-### <a name="step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal"></a>الخطوة 2: إضافة Microsoft Purview حماية البيانات كيان خدمة المزامنة
+### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>الخطوة 2: إضافة كيان خدمة مزامنة حماية البيانات في Microsoft
 
-لا يتوفر كيان خدمة **مزامنة Microsoft Purview حماية البيانات** في مستأجري Azure China بشكل افتراضي، وهو مطلوب ل Azure حماية البيانات. إنشاء كيان هذه الخدمة يدويا عبر الوحدة النمطية Azure Az PowerShell.
+لا يتوفر كيان خدمة **حماية البيانات في Microsoft Sync Service** في مستأجري Azure China بشكل افتراضي، وهو مطلوب ل Azure حماية البيانات. إنشاء كيان هذه الخدمة يدويا عبر الوحدة النمطية Azure Az PowerShell.
 
 1. إذا لم تكن وحدة Azure Az مثبتة لديك، فقم بتثبيتها أو استخدم موردا حيث تأتي وحدة Azure Az مثبتة مسبقا، مثل [Azure Cloud Shell](/azure/cloud-shell/overview). لمزيد من المعلومات، راجع [تثبيت الوحدة النمطية Azure Az PowerShell](/powershell/azure/install-az-ps).
 
-1. الاتصال إلى الخدمة باستخدام [الاتصال-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet `azurechinacloud` واسم البيئة:
+1. الاتصال للخدمة باستخدام [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet `azurechinacloud` واسم البيئة:
 
     ```powershell
     Connect-azaccount -environmentname azurechinacloud
     ```
 
-1. إنشاء **كيان خدمة مزامنة Microsoft Purview حماية البيانات** يدويا باستخدام [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet ومعرف `870c4f2e-85b6-4d43-bdda-6ed9a579b725` التطبيق ل Microsoft Purview حماية البيانات Sync Service:
+1. إنشاء **كيان خدمة مزامنة حماية البيانات في Microsoft** يدويا باستخدام [أمر cmdlet New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) ومعرف `870c4f2e-85b6-4d43-bdda-6ed9a579b725` التطبيق لخدمة المزامنة حماية البيانات في Microsoft Purview:
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
@@ -108,7 +108,7 @@ ms.locfileid: "64935204"
 
 ### <a name="step-3-configure-dns-encryption"></a>الخطوة 3: تكوين تشفير DNS
 
-لكي يعمل التشفير بشكل صحيح، يجب أن تتصل تطبيقات العميل Office بمثيل الصين للخدمة وتمهيد التشغيل من هناك. لإعادة توجيه تطبيقات العميل إلى مثيل الخدمة الصحيح، يجب على مسؤول المستأجر تكوين سجل DNS SRV مع معلومات حول عنوان URL ل Azure RMS. بدون سجل DNS SRV، سيحاول تطبيق العميل الاتصال بمثيل السحابة العامة بشكل افتراضي وسيفشل.
+لكي يعمل التشفير بشكل صحيح، يجب أن تتصل تطبيقات عميل Office بمثيل الصين للخدمة وتمهيد التشغيل من هناك. لإعادة توجيه تطبيقات العميل إلى مثيل الخدمة الصحيح، يجب على مسؤول المستأجر تكوين سجل DNS SRV مع معلومات حول عنوان URL ل Azure RMS. بدون سجل DNS SRV، سيحاول تطبيق العميل الاتصال بمثيل السحابة العامة بشكل افتراضي وسيفشل.
 
 أيضا، الافتراض هو أن المستخدمين سيسجلون الدخول باستخدام اسم مستخدم يستند إلى المجال المملوك للمستأجر (على سبيل المثال)، `joe@contoso.cn`وليس `onmschina` اسم المستخدم (على سبيل المثال، `joe@contoso.onmschina.cn`). يتم استخدام اسم المجال من اسم المستخدم لإعادة توجيه DNS إلى مثيل الخدمة الصحيح.
 
@@ -118,7 +118,7 @@ ms.locfileid: "64935204"
 
     1. تشغيل PowerShell كمسؤول.
     2. إذا لم يتم تثبيت الوحدة النمطية AIPService، فشغل `Install-Module AipService`.
-    3. الاتصال إلى الخدمة باستخدام `Connect-AipService -environmentname azurechinacloud`.
+    3. الاتصال بالخدمة باستخدام `Connect-AipService -environmentname azurechinacloud`.
     4. تشغيل `(Get-AipServiceConfiguration).RightsManagementServiceId` للحصول على معرف RMS.
 
 2. سجل الدخول إلى موفر DNS، وانتقل إلى إعدادات DNS للمجال، ثم أضف سجل SRV جديدا.
@@ -157,11 +157,11 @@ ms.locfileid: "64935204"
 - [التشغيل السريع ل AIP: نشر عميل AIP](/azure/information-protection/quickstart-deploy-client)
 - [دليل مسؤول AIP](/azure/information-protection/rms-client/clientv2-admin-guide)
 - [دليل مستخدم AIP](/azure/information-protection/rms-client/clientv2-user-guide)
-- [التعرف على تسميات الحساسية Microsoft 365](../../compliance/sensitivity-labels.md)
+- [تعرف على أوصاف الحساسية ل Microsoft 365](../../compliance/sensitivity-labels.md)
 
 ### <a name="step-5-configure-aip-apps-on-windows"></a>الخطوة 5: تكوين تطبيقات AIP على Windows
 
-تحتاج تطبيقات AIP على Windows مفتاح التسجيل التالي للإشارة إلى السحابة السيادية الصحيحة ل Azure China:
+تحتاج تطبيقات AIP على Windows إلى مفتاح التسجيل التالي للإشارة إلى السحابة السيادية الصحيحة ل Azure China:
 
 - عقدة التسجيل = `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP`
 - الاسم = `CloudEnvType`
@@ -181,7 +181,7 @@ ms.locfileid: "64935204"
 
 **لتثبيت الماسح الضوئي وتكوينه**:
 
-1. سجل الدخول إلى كمبيوتر خادم Windows الذي سيقوم بتشغيل الماسح الضوئي. استخدم حسابا له حقوق المسؤول المحلي ولديه أذونات للكتابة إلى قاعدة بيانات SQL Server الرئيسية.
+1. سجل الدخول إلى كمبيوتر Windows Server الذي سيقوم بتشغيل الماسح الضوئي. استخدم حسابا له حقوق المسؤول المحلي ولديه أذونات للكتابة إلى قاعدة بيانات SQL Server الرئيسية.
 
 1. ابدأ مع إغلاق PowerShell. إذا قمت مسبقا بتثبيت عميل AIP والماسح الضوئي، فتأكد من إيقاف خدمة **AIPScanner** .
 
@@ -197,23 +197,23 @@ ms.locfileid: "64935204"
     > يمكنك استخدام نفس اسم نظام المجموعة في الأمر [Install-AIPScanner](/powershell/module/azureinformationprotection/install-aipscanner) لإقران عقد الماسح الضوئي المتعددة بنفس المجموعة. يتيح استخدام المجموعة نفسها لعقد الماسح الضوئي المتعددة للماسحات الضوئية المتعددة العمل معا لإجراء عمليات الفحص الخاصة بك.
     > 
 
-1. تحقق من تثبيت الخدمة الآن باستخدام **Administrative** **ToolsServices** > .
+1. تحقق من تثبيت الخدمة الآن باستخدام **خدمات الأدوات** >  الإدارية.
 
     تسمى الخدمة المثبتة **باسم الماسح الضوئي حماية البيانات Azure** ويتم تكوينها للتشغيل باستخدام حساب خدمة الماسح الضوئي الذي أنشأته.
 
-1. احصل على رمز Azure المميز لاستخدامه مع الماسح الضوئي. يسمح رمز Azure AD المميز للماسح الضوئي بالمصادقة على خدمة azure حماية البيانات، ما يتيح تشغيل الماسح الضوئي بشكل غير تفاعلي. 
+1. احصل على رمز Azure المميز لاستخدامه مع الماسح الضوئي. يسمح الرمز المميز Azure AD للماسح الضوئي بالمصادقة على خدمة حماية البيانات Azure، ما يتيح تشغيل الماسح الضوئي بشكل غير تفاعلي. 
 
-    1. افتح مدخل Microsoft Azure وأنشئ تطبيق Azure AD لتحديد رمز مميز للوصول للمصادقة. لمزيد من المعلومات، راجع [كيفية تسمية الملفات بشكل غير تفاعلي ل Azure حماية البيانات](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
+    1. افتح مدخل Microsoft Azure وأنشئ تطبيقا Azure AD لتحديد رمز مميز للوصول للمصادقة. لمزيد من المعلومات، راجع [كيفية تسمية الملفات بشكل غير تفاعلي ل Azure حماية البيانات](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
     
         > [!TIP]
-        > عند إنشاء تطبيقات Azure AD وتكوينها لأمر [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) ، يعرض جزء **أذونات Application API واجهات** **برمجة التطبيقات التي تستخدمها مؤسستي** علامة التبويب بدلا من علامة تبويب **واجهات برمجة التطبيقات من Microsoft** . حدد **واجهات برمجة التطبيقات التي تستخدمها مؤسستي** لتحديد **خدمات إدارة حقوق Azure**. 
+        > عند إنشاء تطبيقات Azure AD وتكوينها للأمر [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)، يعرض جزء **أذونات Application API واجهات** **برمجة التطبيقات التي تستخدمها مؤسستي** علامة التبويب بدلا من علامة تبويب **واجهات برمجة التطبيقات من Microsoft**. حدد **واجهات برمجة التطبيقات التي تستخدمها مؤسستي** لتحديد **خدمات إدارة حقوق Azure**. 
         >
 
     1. من كمبيوتر Windows Server، إذا تم منح حساب خدمة الماسح الضوئي حق **تسجيل الدخول محليا** للتثبيت، فسجل الدخول باستخدام هذا الحساب وابدأ جلسة عمل PowerShell. 
     
         إذا تعذر منح حساب خدمة الماسح الضوئي حق **تسجيل الدخول محليا** للتثبيت، فاستخدم المعلمة *OnBehalfOf* مع [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)، كما هو موضح في [كيفية تسمية الملفات بشكل غير تفاعلي ل Azure حماية البيانات](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection).
 
-    1. تشغيل [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)، مع تحديد القيم المنسوخة من تطبيق Azure AD:
+    1. تشغيل [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)، مع تحديد القيم المنسوخة من تطبيق Azure AD الخاص بك:
 
       ```PowerShell
       Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>
@@ -227,7 +227,7 @@ ms.locfileid: "64935204"
       Acquired application access token on behalf of CONTOSO\scanner.
       ```
 
-    يحتوي الماسح الضوئي الآن على رمز مميز للمصادقة على Azure AD. هذا الرمز المميز صالح لمدة عام واحد أو عامين أو أبدا، وفقا لتكوينك **لسر عميل تطبيق الويب /API** في Azure AD. عند انتهاء صلاحية الرمز المميز، يجب تكرار هذا الإجراء.
+    الماسح الضوئي الآن لديه رمز مميز للمصادقة على Azure AD. هذا الرمز المميز صالح لمدة عام واحد أو عامين أو أبدا، وفقا لتكوينك **لسر عميل تطبيق الويب /واجهة برمجة التطبيقات** في Azure AD. عند انتهاء صلاحية الرمز المميز، يجب تكرار هذا الإجراء.
 
 1. قم بتشغيل [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet لتعيين الماسح الضوئي للعمل في وضع عدم الاتصال. تشغيل:
 

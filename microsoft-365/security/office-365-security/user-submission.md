@@ -18,12 +18,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية تكوين علبة بريد لجمع البريد الإلكتروني العشوائي والتصيد الاحتيالي الذي يتم الإبلاغ عنه من قبل المستخدمين.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9b6586bb781daadb5b19756c9dac6893567f311d
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5f2881076679f64633afc1ddcac6a9de7df64acb
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489802"
+ms.locfileid: "66530587"
 ---
 # <a name="user-reported-message-settings"></a>إعدادات الرسائل التي أبلغ عنها المستخدم
 
@@ -48,12 +48,16 @@ ms.locfileid: "66489802"
 ## <a name="custom-mailbox-prerequisites"></a>المتطلبات الأساسية لعل بريد مخصص
 
 استخدم المقالات التالية لتكوين المتطلبات الأساسية المطلوبة حتى تنتقل الرسائل التي أبلغ عنها المستخدم إلى علبة البريد المخصصة:
-
+ 
 - [تحديد علبة البريد المخصصة كعلبة بريد SecOps في نهج التسليم المتقدم](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
 
-- [إنشاء نهج مكافحة البرامج الضارة](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) لعلب البريد المخصص حيث يتم إيقاف تشغيل الإزالة التلقائية بدون ساعة (ZAP) للبرامج الضارة (لم يتم تحديد قسم \>**إعدادات الحماية** **تمكين الإزالة التلقائية بدون ساعة للبرامج الضارة**).
+- [إنشاء نهج مكافحة البرامج الضارة](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) لعل بريد مخصص حيث
+    - تم إيقاف تشغيل الإزالة التلقائية بدون ساعة (ZAP) للبرامج الضارة (لم يتم تحديد قسم \>**إعدادات الحماية** **تمكين الإزالة التلقائية بدون ساعة للبرامج الضارة**). 
+    - تم إيقاف تشغيل خيار عامل تصفية **المرفقات** الشائع (لم يتم تحديد قسم \> إعدادات الحماية **تمكين عامل تصفية المرفقات الشائع** ). 
 
 إذا كان لديك Microsoft Defender لـ Office 365، يجب عليك أيضا تكوين الإعدادات التالية حتى لا تؤثر التصفية المتقدمة لدينا على المستخدمين الذين يبلغون عن الرسائل:
+
+- [تأكد من أن علبة البريد المخصصة ليست جزءا من أي نهج أمان مسبقة الإعداد](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)
 
 - [إنشاء نهج ارتباطات آمنة](set-up-safe-links-policies.md) لعلدة البريد المخصصة حيث يتم إيقاف تشغيل مسح الارتباطات الآمنة (**حدد الإجراء الخاص بعناوين URL غير المعروفة التي يحتمل أن تكون ضارة في** مقطع \> الرسائل **متوقفة عن التشغيل**).
 

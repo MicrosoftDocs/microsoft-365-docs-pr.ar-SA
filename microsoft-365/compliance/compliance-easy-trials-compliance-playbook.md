@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 description: دليل المبادئ التجريبي لحلول Microsoft Purview.
-ms.openlocfilehash: b43c29ee706fb6d4864227fbfbfe95ad5bbe0495
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.custom: trial-playbook
+ms.openlocfilehash: 981f4d619eeef380625d6de8194e9cb0c42e2011
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012891"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530269"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>دليل المبادئ التجريبي: حلول Microsoft Purview
 
@@ -36,7 +37,7 @@ ms.locfileid: "66012891"
 - [توافق الاتصالات](#communication-compliance)
 - [إدارة التوافق](#compliance-manager)
 - [إدارة دورة حياة البيانات](#data-lifecycle-management)
-- [منع فقدان بيانات Microsoft Purview](#data-loss-prevention)
+- [تفادي فقدان البيانات في Microsoft Purview](#data-loss-prevention)
 - [eDiscovery](#ediscovery)
 - [حماية البيانات](#information-protection)
 - [Insider Risk Management](#insider-risk-management)
@@ -81,14 +82,14 @@ ms.locfileid: "66012891"
 
 1. قبل إنشاء نهج استبقاء سجل التدقيق – [الأمور الأساسية التي يجب معرفتها](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy) قبل إنشاء النهج الخاص بك.
 1. [إنشاء نهج استبقاء سجل التدقيق](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
-1. [إدارة نهج استبقاء سجل التدقيق في مدخل توافق Microsoft Purview](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - يتم سرد نهج استبقاء سجل التدقيق في علامة تبويب نهج استبقاء التدقيق (تسمى أيضا لوحة المعلومات). يمكنك استخدام لوحة المعلومات لعرض نهج استبقاء التدقيق وتحريرها وحذفها.
+1. [إدارة نهج استبقاء سجل التدقيق في مدخل التوافق في Microsoft Purview](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - يتم سرد نهج استبقاء سجل التدقيق في علامة تبويب نهج استبقاء التدقيق (تسمى أيضا لوحة المعلومات). يمكنك استخدام لوحة المعلومات لعرض نهج استبقاء التدقيق وتحريرها وحذفها.
 1. إنشاء وإدارة نهج استبقاء سجل التدقيق على PowerShell - يمكنك أيضا استخدام Security & Compliance PowerShell [لإنشاء نهج استبقاء سجل التدقيق وإدارتها](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell). أحد أسباب استخدام PowerShell هو إنشاء نهج لنوع سجل أو نشاط غير متوفر في واجهة المستخدم.
 
 ## <a name="communication-compliance"></a>توافق الاتصالات
 
 **تحديد انتهاكات نهج قواعد السلوك والتصرف وفقا** لها:
 
-يساعدك Microsoft Purview Communication Compliance على تحديد انتهاكات الاتصالات بذكاء لدعم بيئة عمل متوافقة وسليمة من خلال مساعدتك في اكتشاف الرسائل غير المناسبة، والتحقيق في انتهاكات النهج المحتملة، واتخاذ خطوات للمعالجة.
+يساعدك توافق الاتصالات في Microsoft Purview على تحديد انتهاكات الاتصال بذكاء لدعم بيئة عمل متوافقة وسليمة من خلال مساعدتك في اكتشاف الرسائل غير المناسبة، والتحقيق في انتهاكات النهج المحتملة، واتخاذ خطوات للمعالجة.
 
 ### <a name="step-1-enable-permissions-for-communication-compliance"></a>الخطوة 1: [تمكين الأذونات للامتثال للاتصالات](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
@@ -161,7 +162,7 @@ ms.locfileid: "66012891"
 
 التقييمات المخصصة مفيدة لما يلي:
 
-- إدارة التوافق للمنتجات غير Microsoft 365 مثل تطبيقات وخدمات الجهات الخارجية والتطبيقات المحلية والأصول الأخرى
+- إدارة التوافق لمنتجات غير Microsoft 365 مثل تطبيقات وخدمات الجهات الخارجية والتطبيقات المحلية والأصول الأخرى
 - إدارة عناصر التحكم في الامتثال المخصصة أو الخاصة بالأعمال
 
 1. [توسيع قالب Compliance Manager عن طريق إضافة عناصر التحكم وإجراءات التحسين الخاصة بك](compliance-manager-templates-extend.md)
@@ -200,7 +201,7 @@ ms.locfileid: "66012891"
 
 **حماية البيانات الحساسة**:
 
-للامتثال لمعايير الأعمال ولوائح الصناعة، تحتاج المؤسسات إلى حماية المعلومات الحساسة لمنع الكشف غير المقصود. قم بإعداد نهج منع فقدان البيانات من Microsoft Purview لتحديد المعلومات الحساسة ومراقبتها وحمايتها تلقائيا عبر Microsoft 365.
+للامتثال لمعايير الأعمال ولوائح الصناعة، تحتاج المؤسسات إلى حماية المعلومات الحساسة لمنع الكشف غير المقصود. قم بإعداد نهج تفادي فقدان البيانات في Microsoft Purview لتحديد المعلومات الحساسة ومراقبتها وحمايتها تلقائيا عبر Microsoft 365.
 
 ### <a name="step-1-protect-data-loss-on-teams-locations"></a>الخطوة 1: [حماية فقدان البيانات على مواقع Teams](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
 
@@ -209,19 +210,19 @@ ms.locfileid: "66012891"
 
 إذا كانت مؤسستك لديها منع فقدان البيانات (DLP)، يمكنك تحديد النهج التي تمنع الأشخاص من مشاركة المعلومات الحساسة في قناة Microsoft Teams أو جلسة محادثة.
 
-1. تعرف على [ترخيص DLP Microsoft Teams ونطاق حماية DLP](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
+1. تعرف على [ترخيص DLP ل Microsoft Teams ونطاق حماية DLP](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
 1. [إضافة Microsoft Teams كموقع إلى نهج DLP الموجودة](dlp-microsoft-teams.md#add-microsoft-teams-as-a-location-to-existing-dlp-policies)
-1. [تكوين نهج DLP الافتراضي الخاص بنا Teams](mip-easy-trials.md) أو [تحديد نهج DLP جديد Microsoft Teams](dlp-microsoft-teams.md#define-a-new-dlp-policy-for-microsoft-teams)
+1. [تكوين نهج DLP الافتراضي ل Teams](mip-easy-trials.md) أو [تحديد نهج DLP جديد ل Microsoft Teams](dlp-microsoft-teams.md#define-a-new-dlp-policy-for-microsoft-teams)
 
 ### <a name="step-2-protect-data-loss-on-device-locations"></a>الخطوة 2: [حماية فقدان البيانات على مواقع الأجهزة](endpoint-dlp-getting-started.md)
 
 > [!TIP]
 > أفضل الممارسات التجريبية: الإعداد خلال أول 30 يوما
 
-يسمح لك تفادي فقدان البيانات لنقطة النهاية في Microsoft بمراقبة أجهزة Windows 10 والكشف عن وقت استخدام العناصر الحساسة ومشاركتها.
+تسمح لك DLP لنقطة النهاية من Microsoft بمراقبة أجهزة Windows 10 والكشف عن وقت استخدام العناصر الحساسة ومشاركتها.
 
-1. إعداد نقاط النهاية - تأكد من أن Windows 10 والأجهزة macOS التي تخطط لنشر DLP لنقطة النهاية [لتلبية هذه المتطلبات](endpoint-dlp-getting-started.md)
-1. [إلحاق الأجهزة بإدارة الجهاز](endpoint-dlp-getting-started.md)  - يجب تمكين مراقبة الجهاز وإلحاق نقاط النهاية قبل أن تتمكن من مراقبة العناصر الحساسة وحمايتها على الجهاز. يتم تنفيذ كلا الإجراءين في مدخل توافق Microsoft Purview.
+1. إعداد نقاط النهاية - تأكد من أن أجهزة Windows 10 وmacOS التي تخطط لنشر DLP لنقطة النهاية [لتلبية هذه المتطلبات](endpoint-dlp-getting-started.md)
+1. [إلحاق الأجهزة بإدارة الجهاز](endpoint-dlp-getting-started.md)  - يجب تمكين مراقبة الجهاز وإلحاق نقاط النهاية قبل أن تتمكن من مراقبة العناصر الحساسة وحمايتها على الجهاز. يتم تنفيذ كلا الإجراءين في مدخل التوافق في Microsoft Purview.
    - السيناريو 1 – [إلحاق الأجهزة](endpoint-dlp-getting-started.md) التي لم يتم إلحاقها بعد.
    - السيناريو 2 - [تم نشر Microsoft Defender لنقطة النهاية بالفعل وهناك نقاط نهاية تقوم بالإبلاغ فيها](endpoint-dlp-getting-started.md). ستظهر كل نقاط النهاية هذه في قائمة الأجهزة المدارة.
 1. [تكوين نهج DLP الافتراضي للأجهزة](mip-easy-trials.md#dlp-for-devices) أو [تحديد نهج DLP جديد للأجهزة](endpoint-dlp-learn-about.md).
@@ -230,12 +231,12 @@ ms.locfileid: "66012891"
 
 ### <a name="step-3-expand-policies-in-scope-or-protection"></a>الخطوة 3: [توسيع النهج في النطاق أو الحماية](dlp-learn-about-dlp.md#dlp-policy-configuration-overview)
 
-لديك مرونة في كيفية تكوين نهج DLP الخاصة بك. يمكنك البدء بنهج DLP الافتراضي الخاص بنا Teams والأجهزة وتوسيع هذه النهج لحماية مواقع إضافية أو أنواع معلومات حساسة أو تسميات. بالإضافة إلى ذلك، يمكنك التوسع في إجراءات النهج وتخصيص التنبيه.
+لديك مرونة في كيفية تكوين نهج DLP الخاصة بك. يمكنك البدء بنهج DLP الافتراضي للفرق والأجهزة وتوسيع هذه النهج لحماية مواقع إضافية أو أنواع معلومات حساسة أو تسميات. بالإضافة إلى ذلك، يمكنك التوسع في إجراءات النهج وتخصيص التنبيه.
 
 1. إضافة مواقع
 1. إضافة أنواع معلومات حساسة أو تسميات للحماية
 1. إضافة إجراءات
-   - Teams:
+   - افرقه:
       - [منع الوصول الخارجي إلى المستندات الحساسة](dlp-microsoft-teams.md#prevent-external-access-to-sensitive-documents)
       - [الحصول على تلميحات النهج للمساعدة في تعليم المستخدمين والإرشادات لتخصيص تلميحات النهج](dlp-microsoft-teams.md#policy-tips-help-educate-users)
    - الأجهزة: التبديل من التدقيق فقط إلى الحظر
@@ -252,7 +253,7 @@ ms.locfileid: "66012891"
 > [!TIP]
 > أفضل الممارسات التجريبية: اليوم 1
 
-للوصول إلى eDiscovery (Premium) أو لإضافته كعضو في حالة eDiscovery (Premium)، يجب تعيين الأذونات المناسبة للمستخدم.
+للوصول إلى eDiscovery (Premium) أو إضافته كعضو في حالة eDiscovery (Premium)، يجب تعيين الأذونات المناسبة للمستخدم.
 
 1. [إعداد eDiscovery (Premium) – تعيين أذونات eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
 1. [إضافة أعضاء أو إزالتهم من حالة](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
@@ -274,7 +275,7 @@ ms.locfileid: "66012891"
 
 1. [إعداد eDiscovery (Premium) – الإعدادات العمومية](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-ediscovery-premium)
 1. [تكوين إعدادات البحث والتحليلات](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
-1. [إدارة المهام في eDiscovery (Premium)](managing-jobs-ediscovery20.md)
+1. [إدارة الوظائف في eDiscovery (Premium)](managing-jobs-ediscovery20.md)
 
 ### <a name="step-4-optional-compliance-boundaries"></a>الخطوة 4 (اختيارية): [حدود التوافق](set-up-compliance-boundaries.md)
 
@@ -291,7 +292,7 @@ ms.locfileid: "66012891"
 
 ### <a name="step-5-optional-learn-about-content-search-tool"></a>الخطوة 5 (اختيارية): [التعرف على أداة البحث في المحتوى](search-for-content.md)
 
-استخدم أداة البحث عن المحتوى في مدخل توافق Microsoft Purview للعثور بسرعة على البريد الإلكتروني في علب بريد Exchange والمستندات في مواقع SharePoint ومواقع OneDrive ومحادثات المراسلة الفورية في Skype for Business. يمكنك استخدام أداة البحث عن المحتوى للبحث عن رسائل البريد الإلكتروني والمستندات ومحادثات المراسلة الفورية في أدوات التعاون مثل Microsoft Teams مجموعات Microsoft 365.
+استخدم أداة البحث عن المحتوى في مدخل التوافق في Microsoft Purview للعثور بسرعة على البريد الإلكتروني في علب بريد Exchange والمستندات في مواقع SharePoint ومواقع OneDrive ومحادثات المراسلة الفورية في Skype for Business. يمكنك استخدام أداة البحث عن المحتوى للبحث عن رسائل البريد الإلكتروني والمستندات ومحادثات المراسلة الفورية في أدوات التعاون مثل Microsoft Teams و مجموعات Microsoft 365.
 
 - [تعرف على المزيد حول البحث في eDiscovery (Premium)](search-for-content.md#search-for-content)
 
@@ -299,21 +300,21 @@ ms.locfileid: "66012891"
 
 **اكتشاف المعلومات الحساسة وتصنيفها وحمايتها**:
 
-قم بتنفيذ microsoft Purview حماية البيانات وتسميات الحساسية، لمساعدتك على اكتشاف المحتوى الحساس وتصنيفه وحمايته أينما كان يقيم أو ينتقل.
+قم بتنفيذ تسميات حماية البيانات في Microsoft Purview والحساسية، لمساعدتك على اكتشاف المحتوى الحساس وتصنيفه وحمايته أينما كان يقيم أو ينتقل.
 
 ### <a name="step-1-start-your-information-protection-trial"></a>الخطوة 1: [بدء الإصدار التجريبي لحماية المعلومات](mip-easy-trials.md)
 
 > [!TIP]
 > أفضل الممارسات التجريبية: اليوم 1
 
-يمكن للعملاء المؤهلين تنشيط التسميات والنهج الافتراضية ل Microsoft Purview حماية البيانات. عند تمكين التكوين الافتراضي في الإصدار التجريبي، سيستغرق تكوين جميع النهج للمستأجر الخاص بك حوالي دقيقتين وما يصل إلى 24 ساعة لمشاهدة نتائج هذه النهج الافتراضية.
+يمكن للعملاء المؤهلين تنشيط التسميات والنهج الافتراضية حماية البيانات في Microsoft Purview. عند تمكين التكوين الافتراضي في الإصدار التجريبي، سيستغرق تكوين جميع النهج للمستأجر الخاص بك حوالي دقيقتين وما يصل إلى 24 ساعة لمشاهدة نتائج هذه النهج الافتراضية.
 
 اختيار التكوين الافتراضي، بنقرة واحدة، يتم تكوين ما يلي تلقائيا:
 
 - تسميات الحساسية ونهج وصف الحساسية
 - التسمية التلقائية من جانب العميل
 - التسمية التلقائية من جانب الخدمة
-- نهج منع فقدان البيانات (DLP) Teams والأجهزة
+- نهج منع فقدان البيانات (DLP) للفرق والأجهزة
 
 [تنشيط التسميات والنهج الافتراضية](mip-easy-trials.md#activate-the-default-labels-and-policies). إذا لزم الأمر، يمكنك التحرير يدويا بعد اكتمال التكوين.
 
@@ -346,7 +347,7 @@ ms.locfileid: "66012891"
 
 **الكشف عن المخاطر الداخلية ومعالجتها**:
 
-استفد من الذكاء الاصطناعي لمساعدتك على تحديد المخاطر الداخلية وفرزها ومعالجتها بسرعة. باستخدام سجلات من Microsoft 365 وخدمات Azure، يمكنك تحديد النهج التي تراقب إشارات المخاطر الداخلية، ثم اتخاذ إجراءات المعالجة مثل تعزيز تعليم المستخدم أو بدء التحقيق.
+استفد من الذكاء الاصطناعي لمساعدتك على تحديد المخاطر الداخلية وفرزها ومعالجتها بسرعة. باستخدام سجلات من خدمات Microsoft 365 وAzure، يمكنك تحديد النهج التي تراقب إشارات المخاطر الداخلية، ثم اتخاذ إجراءات المعالجة مثل تعزيز تعليم المستخدم أو بدء التحقيق.
 
 ### <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>الخطوة 1 (مطلوبة): [تمكين الأذونات لإدارة المخاطر الداخلية](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
 
@@ -371,15 +372,15 @@ ms.locfileid: "66012891"
 
 ### <a name="step-3-required-enable-the-microsoft-365-audit-log"></a>الخطوة 3 (مطلوبة): [تمكين سجل تدقيق Microsoft 365](insider-risk-management-configure.md#step-2-required-enable-the-microsoft-365-audit-log)
 
-يتم تمكين التدقيق للمؤسسات Microsoft 365 بشكل افتراضي. قد تكون بعض المؤسسات قد عطلت التدقيق لأسباب محددة. إذا تم تعطيل التدقيق لمؤسستك، فقد يرجع ذلك إلى إيقاف تشغيل مسؤول آخر. نوصي بالتأكيد على أنه لا بأس من إعادة تشغيل التدقيق عند إكمال هذه الخطوة.
+يتم تمكين التدقيق لمؤسسات Microsoft 365 بشكل افتراضي. قد تكون بعض المؤسسات قد عطلت التدقيق لأسباب محددة. إذا تم تعطيل التدقيق لمؤسستك، فقد يرجع ذلك إلى إيقاف تشغيل مسؤول آخر. نوصي بالتأكيد على أنه لا بأس من إعادة تشغيل التدقيق عند إكمال هذه الخطوة.
 
-للحصول على إرشادات مفصلة خطوة بخطوة لتشغيل التدقيق، راجع [تشغيل البحث في سجل التدقيق أو إيقاف تشغيله](turn-audit-log-search-on-or-off.md). بعد تشغيل التدقيق، يتم عرض رسالة تفيد بأنه يتم إعداد سجل التدقيق وأنه يمكنك إجراء بحث بعد ساعتين من اكتمال الإعداد. يجب عليك القيام بهذا الإجراء مرة واحدة فقط. لمزيد من المعلومات حول استخدام سجل التدقيق Microsoft 365، راجع [البحث في سجل التدقيق](search-the-audit-log-in-security-and-compliance.md).
+للحصول على إرشادات مفصلة خطوة بخطوة لتشغيل التدقيق، راجع [تشغيل البحث في سجل التدقيق أو إيقاف تشغيله](turn-audit-log-search-on-or-off.md). بعد تشغيل التدقيق، يتم عرض رسالة تفيد بأنه يتم إعداد سجل التدقيق وأنه يمكنك إجراء بحث بعد ساعتين من اكتمال الإعداد. يجب عليك القيام بهذا الإجراء مرة واحدة فقط. لمزيد من المعلومات حول استخدام سجل تدقيق Microsoft 365، راجع [البحث في سجل التدقيق](search-the-audit-log-in-security-and-compliance.md).
 
 ### <a name="step-4-required-enable-and-view-insider-risk-analytics-insights"></a>الخطوة 4 (مطلوبة): [تمكين تحليلات المخاطر الداخلية وعرضها](insider-risk-management-configure.md#step-3-optional-enable-and-view-insider-risk-analytics-insights)
 
 تمكنك تحليلات إدارة المخاطر الداخلية من إجراء تقييم للمخاطر الداخلية المحتملة في مؤسستك دون تكوين أي نهج مخاطر من الداخل. قد تستغرق نتائج فحص التحليلات ما يصل إلى 48 ساعة قبل توفر نتائج التحليلات كتقارير للمراجعة. لمعرفة المزيد حول تحليلات التحليلات، راجع [إعدادات إدارة المخاطر ل Insider: التحليلات (معاينة)](insider-risk-management-settings.md) والاطلاع على [فيديو Insider Risk Management Analytics](https://www.youtube.com/watch?v=5c0P5MCXNXk) لمساعدتك على فهم وضع المخاطر الداخلية ومساعدتك على اتخاذ إجراء من خلال إعداد النهج المناسبة لتحديد المستخدمين المعرضين للمخاطر.
 
-لتمكين Insider risk Analytics، يجب أن تكون عضوا في Insider Risk Management أو Insider Risk Management Admin. [أكمل هذه الخطوات لتمكين تحليلات المخاطر الداخلية](insider-risk-management-configure.md).
+لتمكين Insider risk Analytics، يجب أن تكون عضوا في Insider Risk Management أو Insider Risk Management مسؤول. [أكمل هذه الخطوات لتمكين تحليلات المخاطر الداخلية](insider-risk-management-configure.md).
 
 ## <a name="records-management"></a>إدارة التسجيلات
 

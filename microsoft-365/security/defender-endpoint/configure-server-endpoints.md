@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 18ca82c4bbcb765eec419cd5b7477df8abbd8515
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4c21d0bdf8a96347e60b79d998c0b8c64fd507a1
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490643"
+ms.locfileid: "66531089"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية
 
@@ -145,6 +145,16 @@ ms.locfileid: "66490643"
 2. تنزيل الشهادة وإلغاء ضغطها من https://github.com/microsoft/mdefordownlevelserver/blob/main/InterCA.zip
 3. استيراد الشهادة إلى مخزن "المراجع المصدقة المتوسطة" الموثوق به على الكمبيوتر المحلي.
 يمكنك استخدام الأمر PowerShell: Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine\Ca
+
+## <a name="integration-with-microsoft-defender-for-cloud"></a>التكامل مع Microsoft Defender for Cloud
+
+يتكامل Microsoft Defender لنقطة النهاية بسلاسة مع Microsoft Defender for Cloud. يمكنك إلحاق الخوادم تلقائيا، وظهور الخوادم التي يراقبها Microsoft Defender for Cloud في Defender لنقطة النهاية، وإجراء تحقيقات مفصلة كعميل Microsoft Defender for Cloud. 
+
+لمزيد من المعلومات، راجع [التكامل مع Microsoft Defender for Cloud](azure-server-integration.md). سيتم تعيين التكوين الأولي للخوادم التي تم إلحاقها من خلال Microsoft Defender for Cloud لتشغيل Defender Antivirus في [الوضع السلبي](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
+
+> [!NOTE]
+> - تم توسيع التكامل بين Microsoft Defender للخوادم Microsoft Defender لنقطة النهاية لدعم Windows Server 2022 [وWindows Server 2019 وWindows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
+> - تم تعطيل مراقبة نقطة نهاية الخادم باستخدام هذا التكامل لعملاء Office 365 GCC.
 
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 وWindows Server 2016
 
@@ -374,7 +384,7 @@ Msiexec /x md4ws.msi /quiet
 
 - [إيقاف تشغيل الأجهزة باستخدام نهج المجموعة](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [إيقاف تشغيل الأجهزة باستخدام Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
-- [إيقاف تشغيل الأجهزة ومراقبتها باستخدام أدوات إدارة الجهاز الأجهزة المحمولة](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [إيقاف تشغيل الأجهزة باستخدام أدوات إدارة الجهاز الأجهزة المحمولة](configure-endpoints-mdm.md#offboard-devices-using-mobile-device-management-tools)
 - [إيقاف تشغيل الأجهزة باستخدام برنامج نصي محلي](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
 بعد إلغاء الإلحاق، يمكنك المتابعة لإلغاء تثبيت حزمة الحلول الموحدة على Windows Server 2012 R2 وWindows Server 2016.

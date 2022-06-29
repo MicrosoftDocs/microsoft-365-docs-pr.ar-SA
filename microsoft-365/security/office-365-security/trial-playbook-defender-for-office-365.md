@@ -15,12 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 description: دليل المبادئ التجريبي لحلول Microsoft Defender لـ Office 365.
-ms.openlocfilehash: a1adcf15bd051478e874b990a5e6b12f19d3b0c6
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.custom: trial-playbook
+ms.openlocfilehash: 6f4bd69e1797398dbe7e091a61fcc7a25d474121
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648338"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531111"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>دليل المبادئ التجريبي: Microsoft Defender لـ Office 365
 
@@ -44,11 +45,11 @@ ms.locfileid: "65648338"
 
 لقد قمنا تلقائيا بتكوين [نهج الأمان المعينة مسبقا](preset-security-policies.md) في بيئتك. تمثل هذه النهج ملف تعريف حماية أساس مناسب لمعظم المستخدمين. تتضمن الحماية القياسية ما يلي:
 
-- خزينة الارتباطات خزينة والمرفقات ونهج مكافحة التصيد الاحتيالي التي يتم تحديد نطاقها للمستأجر بأكمله أو مجموعة فرعية من المستخدمين الذين قد تكون اخترتهم أثناء عملية إعداد الإصدار التجريبي.
-- خزينة حماية المرفقات SharePoint OneDrive Microsoft Teams.
-- خزينة حماية الارتباطات لتطبيقات Office 365 المدعومة.
+- الارتباطات الآمنة والمرفقات الآمنة ونهج مكافحة التصيد الاحتيالي التي يتم تحديد نطاقها للمستأجر بأكمله أو مجموعة فرعية من المستخدمين الذين قد تكون اخترتهم أثناء عملية إعداد الإصدار التجريبي.
+- حماية المرفقات الآمنة ل SharePoint وOneDrive وMicrosoft Teams.
+- حماية الارتباطات الآمنة لتطبيقات Office 365 المدعومة.
 
-شاهد هذا الفيديو لمعرفة المزيد: [الحماية من الارتباطات الضارة باستخدام ارتباطات خزينة في Microsoft Defender لـ Office 365 - YouTube](https://www.youtube.com/watch?v=vhIJ1Veq36Y&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=9).
+شاهد هذا الفيديو لمعرفة المزيد: [الحماية من الارتباطات الضارة باستخدام الارتباطات الآمنة في Microsoft Defender لـ Office 365 - YouTube](https://www.youtube.com/watch?v=vhIJ1Veq36Y&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=9).
 
 ### <a name="enable-users-to-report-suspicious-content"></a>تمكين المستخدمين من الإبلاغ عن المحتوى المشبوه
 

@@ -1,6 +1,6 @@
 ---
 title: أجهزة التجهيز وتكوين Microsoft Defender لنقطة النهاية
-description: إلحاق أجهزة Windows 10 والخوادم والأجهزة غير Windows وتعلم كيفية تشغيل اختبار الكشف.
+description: إلحاق Windows 10 الأجهزة والخوادم والأجهزة غير التي تعمل بنظام Windows وتعلم كيفية تشغيل اختبار الكشف.
 keywords: الإلحاق، Microsoft Defender لنقطة النهاية الإلحاق، sccm، نهج المجموعة، mdm، البرنامج النصي المحلي، اختبار الكشف
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,19 +16,19 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 47e39beb1d433e15132a8ecbba64eab84660a4de
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: d218e09c8cc300552bcc9f230c1d375d33a5feb6
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782644"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530543"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>أجهزة التجهيز وتكوين Microsoft Defender لنقطة النهاية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -45,44 +45,48 @@ ms.locfileid: "64782644"
 ## <a name="onboard-devices-to-the-service"></a>إلحاق الأجهزة للخدمة
 ستحتاج إلى الانتقال إلى قسم الإلحاق في مدخل Defender لنقطة النهاية لإلحاق أي من الأجهزة المدعومة. اعتمادا على الجهاز، سيتم إرشادك بالخطوات المناسبة وتوفير خيارات أداة الإدارة والتوزيع المناسبة للجهاز. 
 
-بشكل عام، لإلحاق الأجهزة إلى الخدمة:
+لإلحاق الأجهزة للخدمة:
 
 - تحقق من أن الجهاز يفي [بالحد الأدنى من المتطلبات](minimum-requirements.md)
 - اعتمادا على الجهاز، اتبع خطوات التكوين المتوفرة في قسم الإلحاق في مدخل Defender لنقطة النهاية
 - استخدام أداة الإدارة المناسبة وطريقة النشر لأجهزتك
 - تشغيل اختبار الكشف للتحقق من أن الأجهزة تم إلحاقها بشكل صحيح وإعداد التقارير إلى الخدمة
 
-
+توفر هذه المقالة معلومات حول أساليب الإلحاق المطبقة على إصدارات Windows Client وServer.
 
 ## <a name="onboarding-and-configuration-tool-options"></a>خيارات أداة الإعداد والتكوين
 يسرد الجدول التالي الأدوات المتوفرة استنادا إلى نقطة النهاية التي تحتاج إلى إلحاقها.
 
 | نقطه النهايه     | خيارات الأدوات                       |
 |--------------|------------------------------------------|
-| **بالنسبة لنظام التشغيل**  |  [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [إدارة الأجهزة إدارة نقاط النهاية من Microsoft/ الهاتف الجوال](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [البرامج النصية ل VDI](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
-| **ماك**    | [البرامج النصية المحلية](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [PRO JAMF](mac-install-with-jamf.md) <br> [إدارة الجهاز الجوال](mac-install-with-other-mdm.md) |
+| **عميل Windows**  |     [إدارة الجهاز الجوال / Microsoft Intune](configure-endpoints-mdm.md) <br> [نهج المجموعة](configure-endpoints-gp.md) <br> [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](configure-endpoints-script.md) <br>[البرامج النصية ل VDI](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
+| **Windows Server**  | [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br>  [نهج المجموعة](configure-endpoints-gp.md) <br>  [البرامج النصية ل VDI](configure-endpoints-vdi.md) <br> [التكامل مع Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)  |
+| **ماك**    | [البرامج النصية المحلية](mac-install-manually.md) <br> [إدارة نقاط النهاية من Microsoft](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [إدارة الجهاز الجوال](mac-install-with-other-mdm.md) |
 | **Linux Server** | [البرنامج النصي المحلي](linux-install-manually.md) <br> [دميه](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **دائره الرقابه الداخليه**      | [إدارة نقاط النهاية من Microsoft](ios-install.md)               |
 | **الروبوت**  | [إدارة نقاط النهاية من Microsoft](android-intune.md)            | 
 
 
+> [!NOTE]
+> بالنسبة للأجهزة التي لا تتم إدارتها بواسطة إدارة نقاط النهاية Microsoft (إما Microsoft Intune أو نقطة نهاية Microsoft Configuration Manager)، يمكنك استخدام إدارة الأمان Microsoft Defender لنقطة النهاية  لتلقي تكوينات الأمان ل Microsoft Defender مباشرة من إدارة نقاط النهاية.
+
 يسرد الجدول التالي الأدوات المتوفرة استنادا إلى نقطة النهاية التي تحتاج إلى إلحاقها.
 
 ## <a name="configure-capabilities-of-the-service"></a>تكوين قدرات الخدمة
-تتيح أجهزة الإلحاق بشكل فعال إمكانية الكشف عن تهديدات نقاط النهاية والرد عليها Microsoft Defender لنقطة النهاية.
+تمكن أجهزة الإلحاق بشكل فعال إمكانية الكشف عن نقطة النهاية والاستجابة Microsoft Defender لنقطة النهاية.
 
 بعد إلحاق الأجهزة، ستحتاج بعد ذلك إلى تكوين القدرات الأخرى للخدمة. يسرد الجدول التالي القدرات التي يمكنك تكوينها للحصول على أفضل حماية للبيئة الخاصة بك.
 
 | القدره | الوصف |
 |-|-|
-| [تكوين إدارة الثغرات الأمنية & المخاطر (TVM)](tvm-prerequisites.md) | تعد إدارة الثغرات الأمنية & المخاطر أحد مكونات Microsoft Defender لنقطة النهاية، وتوفر لمسؤولي الأمان وفرق عمليات الأمان قيمة فريدة، بما في ذلك: <br><br> - رؤى الكشف عن تهديدات نقاط النهاية والرد عليها في الوقت الحقيقي (الكشف التلقائي والاستجابة على النقط النهائية) مرتبطة بنقاط الضعف في نقطة النهاية. <br><br> - سياق الثغرة الأمنية للجهاز لا يقدر بثمن في أثناء التحقيقات في الحوادث. <br><br> - عمليات المعالجة المضمنة من خلال Microsoft Intune وMicrosoft System Center Configuration Manager.  |
-| [تكوين حماية الجيل التالي (NGP)](configure-microsoft-defender-antivirus-features.md) | برنامج الحماية من الفيروسات من Microsoft Defender هو حل مضمن لمكافحة البرامج الضارة يوفر حماية الجيل التالي لأجهزة سطح المكتب وأجهزة الكمبيوتر المحمولة والخوادم. تتضمن برنامج الحماية من الفيروسات من Microsoft Defender ما يلي:<br> <br>-الحماية المقدمة من السحابة للكشف شبه الفوري ومنع التهديدات الجديدة والناشئة. إلى جانب التعلم الآلي Graph الأمان الذكي، تعد الحماية المقدمة من السحابة جزءا من تقنيات الجيل التالي التي تعمل على برنامج الحماية من الفيروسات من Microsoft Defender.<br> <br> - المسح الضوئي دائما باستخدام مراقبة متقدمة لسلوك الملفات والعمليات وغيرها من الأساليب الاستباقية (المعروفة أيضا باسم "الحماية في الوقت الحقيقي").<br><br> - تحديثات الحماية المخصصة المستندة إلى التعلم الآلي وتحليل البيانات الضخمة البشرية والآلية والبحث المتعمق في مقاومة التهديدات. |
+| [تكوين إدارة الثغرات الأمنية & المخاطر (TVM)](tvm-prerequisites.md) | تعد إدارة الثغرات الأمنية & المخاطر أحد مكونات Microsoft Defender لنقطة النهاية، وتوفر لمسؤولي الأمان وفرق عمليات الأمان قيمة فريدة، بما في ذلك: <br><br> - نتائج تحليلات الكشف عن نقاط النهاية والاستجابة لها (EDR) في الوقت الحقيقي المرتبطة بنقاط الضعف في نقطة النهاية. <br><br> - سياق الثغرة الأمنية للجهاز لا يقدر بثمن في أثناء التحقيقات في الحوادث. <br><br> - عمليات المعالجة المضمنة من خلال Microsoft Intune وMicrosoft System Center Configuration Manager.  |
+| [تكوين حماية الجيل التالي (NGP)](configure-microsoft-defender-antivirus-features.md) | برنامج الحماية من الفيروسات من Microsoft Defender هو حل مضمن لمكافحة البرامج الضارة يوفر حماية الجيل التالي لأجهزة سطح المكتب وأجهزة الكمبيوتر المحمولة والخوادم. يتضمن برنامج الحماية من الفيروسات من Microsoft Defender ما يلي:<br> <br>-الحماية المقدمة من السحابة للكشف شبه الفوري ومنع التهديدات الجديدة والناشئة. جنبا إلى جنب مع التعلم الآلي و Intelligent Security Graph، تعد الحماية المقدمة من السحابة جزءا من تقنيات الجيل التالي التي تدعم برنامج الحماية من الفيروسات من Microsoft Defender.<br> <br> - المسح الضوئي دائما باستخدام مراقبة متقدمة لسلوك الملفات والعمليات وغيرها من الأساليب الاستباقية (المعروفة أيضا باسم "الحماية في الوقت الحقيقي").<br><br> - تحديثات الحماية المخصصة المستندة إلى التعلم الآلي وتحليل البيانات الضخمة البشرية والآلية والبحث المتعمق في مقاومة التهديدات. |
 | [تكوين تقليل الأجزاء المعرضة للهجوم (ASR)](overview-attack-surface-reduction.md) | تساعد قدرات تقليل الأجزاء المعرضة للهجوم في Microsoft Defender لنقطة النهاية على حماية الأجهزة والتطبيقات في المؤسسة من التهديدات الجديدة والناشئة. |
 | [تكوين قدرات المعالجة & التحقيق التلقائي (AIR)](configure-automated-investigations-remediation.md) | تستخدم Microsoft Defender لنقطة النهاية التحقيقات التلقائية لتقليل حجم التنبيهات التي تحتاج إلى التحقيق بشكل فردي بشكل كبير. تستفيد ميزة التحقيق التلقائي من خوارزميات الفحص المختلفة والعمليات التي يستخدمها المحللون (مثل أدلة المبادئ) لفحص التنبيهات واتخاذ إجراءات المعالجة الفورية لحل الخروقات. وهذا يقلل بشكل كبير من حجم التنبيه، ما يسمح لخبراء عمليات الأمان بالتركيز على التهديدات الأكثر تعقيدا والمبادرات الأخرى عالية القيمة. |
 | [تكوين قدرات خبراء المخاطر في Microsoft (MTE)](configure-microsoft-threat-experts.md) | خبراء المخاطر في Microsoft هي خدمة تتبع مدارة توفر لمراكز عمليات الأمان (SOCs) مراقبة وتحليل على مستوى الخبراء لمساعدتهم على ضمان عدم تفويت التهديدات الحرجة في بيئاتهم الفريدة.      |
 
 
-## <a name="supported-capabilities-for-windows-devices"></a>القدرات المدعومة للأجهزة Windows
+## <a name="supported-capabilities-for-windows-devices"></a>القدرات المدعومة لأجهزة Windows
 
 |نظام التشغيل  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |Windows Server 2016<sup>[[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
 |---------|---------|---------|---------|---------|---------|
@@ -99,7 +103,7 @@ ms.locfileid: "64782644"
 |التتبع المتقدم     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |مؤشرات الملفات المخصصة     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |مؤشرات الشبكة المخصصة     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|الكشف التلقائي والاستجابة على النقط النهائية وضع حظر & الخامل     |      Y   |    Y     |     Y    |    Y    |    Y   |
+|وضع حظر EDR & الخامل     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |أداة استشعار الكشف عن المعنى     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |نقطة النهاية & اكتشاف جهاز الشبكة     |      Y   |    N     |     N    |    N    |    N   |
 |||||||
@@ -109,7 +113,7 @@ ms.locfileid: "64782644"
 |قدرات استجابة الملف: جمع الملفات والتحليل العميق وملف الحظر وعمليات الإيقاف والعزل     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |الاستجابة المباشرة    |      Y   |    Y     |     Y    |    Y    |    Y   |
 
-(<a id="fn1">1</a>) يشير إلى الحل الحديث الموحد لخادم Windows 2012 R2 و2016. لمزيد من المعلومات، راجع [إلحاق Windows الخوادم بخدمة Defender لنقطة النهاية](configure-server-endpoints.md).
+(<a id="fn1">1</a>) يشير إلى الحل الحديث الموحد ل Windows Server 2012 R2 و2016. لمزيد من المعلومات، راجع [إلحاق خوادم Windows بخدمة Defender لنقطة النهاية](configure-server-endpoints.md).
 
 >[!NOTE]
->يتضمن Windows 7، 8.1، Windows Server 2008 R2 دعم مستشعر الكشف التلقائي والاستجابة على النقط النهائية، وAV باستخدام System Center Endpoint Protection (SCEP).
+>يتضمن Windows 7 و8.1 وWindows Server 2008 R2 دعما لأداة استشعار EDR وAV باستخدام System Center Endpoint Protection (SCEP).

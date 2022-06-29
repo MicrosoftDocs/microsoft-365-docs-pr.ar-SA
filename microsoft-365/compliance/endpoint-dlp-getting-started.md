@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: إعداد منع فقدان بيانات نقطة النهاية لمراقبة أنشطة الملفات وتنفيذ إجراءات الحماية لتلك الملفات إلى نقاط النهاية.
-ms.openlocfilehash: 097ad2ab08d31482413285d3b3d82e6b43255281
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 1b22fbd10c78c638a9cc68acf939a22d5c140549
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952743"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530981"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>للحصول على متطلبات إضافية لنشر Endpoint DLP، راجع البدء في تفادي فقدان البيانات على الأجهزة.
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-يعد منع فقدان بيانات نقطة النهاية (Endpoint DLP) جزءا من مجموعة Microsoft Purview Data Loss Prevention (DLP) من الميزات التي يمكنك استخدامها لاكتشاف العناصر الحساسة وحمايتها عبر خدمات Microsoft 365. لمزيد من المعلومات حول جميع عروض DLP من Microsoft، راجع [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md). لمعرفة المزيد حول DLP لنقطة النهاية، راجع [التعرف على منع فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md)
+يعد منع فقدان بيانات نقطة النهاية (DLP) جزءا من مجموعة تفادي فقدان البيانات في Microsoft Purview (DLP) من الميزات التي يمكنك استخدامها لاكتشاف العناصر الحساسة وحمايتها عبر خدمات Microsoft 365. لمزيد من المعلومات حول جميع عروض DLP من Microsoft، راجع [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md). لمعرفة المزيد حول DLP لنقطة النهاية، راجع [التعرف على منع فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md)
 
 تسمح لك DLP لنقطة النهاية من Microsoft بمراقبة [Windows 10 الملحقة، Windows 11](device-onboarding-overview.md) [وأجهزة macOS الملحقة](device-onboarding-macos-overview.md) التي تعمل بنظام Catalina 10.15 وما بعده. بمجرد إلحاق جهاز، سيكتشف DLP متى يتم استخدام العناصر الحساسة ومشاركتها. يمنحك هذا الرؤية والتحكم الذي تحتاجه لضمان استخدامها وحمايتها بشكل صحيح، وللمساعدة على منع السلوك المحفوظ بالمخاطر الذي قد يعرضها للخطر.
 
@@ -48,7 +48,7 @@ ms.locfileid: "64952743"
 - Microsoft 365 E5 حماية المعلومات والحوكمة
 - حماية المعلومات والحوكمة Microsoft 365 A5
 
-للحصول على تفاصيل الترخيص الكامل، راجع [إرشادات الترخيص Microsoft 365 لحماية المعلومات](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)
+للحصول على تفاصيل الترخيص الكامل، راجع [إرشادات ترخيص Microsoft 365 لحماية المعلومات](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)
 
 ### <a name="configure-proxy-on-the-windows-10-or-windows-11-device"></a>تكوين وكيل على جهاز Windows 10 أو Windows 11
 
@@ -56,17 +56,17 @@ ms.locfileid: "64952743"
 
 ## <a name="windows-10-and-windows-11-onboarding-procedures"></a>إجراءات Windows 10 والإلحاق Windows 11
 
-للحصول على مقدمة عامة حول إلحاق الأجهزة Windows، راجع:
+للحصول على مقدمة عامة حول إلحاق أجهزة Windows، راجع:
 
 - [إلحاق الأجهزة Windows 10 وأجهزة Windows 11 في نظرة عامة على Microsoft Purview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
 
-للحصول على إرشادات محددة لإلحاق الأجهزة Windows، راجع:
+للحصول على إرشادات محددة لإلحاق أجهزة Windows، راجع:
 
 الموضوع | الوصف
 :---|:---
 [إلحاق Windows 10 أو 11 جهازا باستخدام نهج المجموعة](device-onboarding-gp.md) | استخدم نهج المجموعة لنشر حزمة التكوين على الأجهزة.
-[إلحاق Windows 10 أو 11 جهازا باستخدام Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | يمكنك استخدام الإصدار 1606 من Microsoft Endpoint Configuration Manager (الفرع الحالي) أو الإصدار 1602 من Microsoft Endpoint Configuration Manager (الفرع الحالي) أو إصدار سابق لنشر حزمة التكوين على الأجهزة.
-[إلحاق Windows 10 أو 11 جهازا باستخدام أدوات إدارة الجهاز الأجهزة المحمولة](device-onboarding-mdm.md) | استخدم أدوات إدارة الجهاز الجوال أو Microsoft Intune لنشر حزمة التكوين على الجهاز.
+[إلحاق Windows 10 أو 11 جهازا باستخدام Configuration Manager نقطة النهاية من Microsoft](device-onboarding-sccm.md) | يمكنك استخدام الإصدار 1606 من Configuration Manager نقطة النهاية من Microsoft (الفرع الحالي) أو الإصدار 1602 Configuration Manager من نقطة النهاية من Microsoft (الفرع الحالي) أو إصدار سابق لنشر حزمة التكوين على الأجهزة.
+[إلحاق Windows 10 أو 11 جهازا باستخدام Microsoft Intune](device-onboarding-mdm.md) | استخدم Microsoft Intune لنشر حزمة التكوين على الجهاز.
 [إلحاق Windows 10 أو 11 جهازا باستخدام برنامج نصي محلي](device-onboarding-script.md) | تعرف على كيفية استخدام البرنامج النصي المحلي لنشر حزمة التكوين على نقاط النهاية.
 [أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة](device-onboarding-vdi.md) | تعرف على كيفية استخدام حزمة التكوين لتكوين أجهزة VDI.
 
@@ -81,11 +81,11 @@ ms.locfileid: "64952743"
 الموضوع | الوصف
 :---|:---
 |[إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام Intune](device-onboarding-offboarding-macos-intune.md)|لأجهزة macOS التي تتم إدارتها من خلال Intune
-|[إلحاق أجهزة macOS وإلحاقها في حلول التوافق باستخدام Intune لعملاء Microsoft Defender لنقطة النهاية](device-onboarding-offboarding-macos-intune-mde.md) |لأجهزة macOS التي تتم إدارتها من خلال Intune والتي تم توزيع Microsoft Defender لنقطة النهاية (MDE) إليها
+|[إلحاق أجهزة macOS وإلغاء إلحاقها بحلول التوافق باستخدام Intune ل Microsoft Defender لعملاء نقطة النهاية](device-onboarding-offboarding-macos-intune-mde.md) |لأجهزة macOS التي تتم إدارتها من خلال Intune والتي تم توزيع Microsoft Defender لنقطة النهاية (MDE) إليها
 |[إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام JAMF Pro)](device-onboarding-offboarding-macos-jamfpro.md) | لأجهزة macOS التي تتم إدارتها من خلال JAMF Pro
-|[إلحاق أجهزة macOS وإلحاقها بحلول التوافق باستخدام PRO JAMF للعملاء Microsoft Defender لنقطة النهاية)](device-onboarding-offboarding-macos-jamfpro-mde.md)|لأجهزة macOS التي تتم إدارتها من خلال PRO JAMF والتي تم توزيع Microsoft Defender لنقطة النهاية (MDE) عليها
+|[إلحاق أجهزة macOS وإلحاقها بحلول التوافق باستخدام JAMF Pro لعملاء Microsoft Defender لنقطة النهاية)](device-onboarding-offboarding-macos-jamfpro-mde.md)|لأجهزة macOS التي تتم إدارتها من خلال JAMF Pro والتي تم توزيع Microsoft Defender لنقطة النهاية (MDE) إليها
 
-بمجرد إلحاق أحد الأجهزة، يجب أن يكون مرئيا في قائمة الأجهزة وأن يبدأ أيضا في الإبلاغ عن نشاط التدقيق إلى مستكشف النشاط.
+بمجرد إلحاق الجهاز، يجب أن يكون مرئيا في قائمة الأجهزة وأن يبدأ أيضا في الإبلاغ عن نشاط التدقيق إلى مستكشف النشاط.
 
 <!--### Permissions
 

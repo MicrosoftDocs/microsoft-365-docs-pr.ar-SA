@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3c11e531e8b4706128e1519b790046f800827d67
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: ed3d06e1719b51d0914c89e6283c8b53c2ab0812
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285007"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530499"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>الجديد في Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->الميزات التالية في المعاينة أو متوفرة بشكل عام (GA) في أحدث إصدار من Microsoft 365 Defender.
+يسرد الميزات والوظائف الجديدة في Microsoft 365 Defender. 
 
 موجز RSS: يتم إعلامك عند تحديث هذه الصفحة عن طريق نسخ عنوان URL التالي ولصقه في قارئ الموجز:
 
@@ -45,12 +45,15 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 يمكنك أيضا الحصول على تحديثات المنتج والإعلامات المهمة من خلال [مركز الرسائل](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
+## <a name="june-2022"></a>يونيو 2022
+- (معاينة) تتوفر جداول [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) [وDevitTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) الآن في مخطط التتبع المتقدم. استخدم هذه الجداول لتتبع أحداث التقييم في Defender Vulnerability Management بما في ذلك حالة التكوينات المختلفة وحالات مساحة سطح الهجوم للأجهزة.
+
 ## <a name="may-2022"></a>مايو 2022
 - (معاينة) اتساقا مع التوسع الذي تم الإعلان عنه مؤخرا في فئة خدمة جديدة تسمى [خبراء الأمان من Microsoft](https://aka.ms/MicrosoftSecurityExperts)، نقدم توفر [خبراء Microsoft Defender للتتبع](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) للمعاينة العامة. إن Defender Experts for Hunting مخصص للعملاء الذين لديهم مركز عمليات أمان قوي ولكنهم يريدون من Microsoft مساعدتهم في البحث بشكل استباقي عن التهديدات عبر بيانات Microsoft Defender، بما في ذلك نقاط النهاية Office 365 والتطبيقات السحابية والهوية. 
 
 ## <a name="april-2022"></a>أبريل 2022
 - (معاينة) يمكن الآن اتخاذ [إجراءات](advanced-hunting-take-action.md) على رسائل البريد الإلكتروني مباشرة من نتائج استعلام التتبع. يمكن نقل رسائل البريد الإلكتروني إلى مجلدات أخرى أو حذفها بشكل دائم. 
-- (معاينة) يمكن استخدام [الجدول الجديد`UrlClickEvents`](advanced-hunting-urlclickevents-table.md) في التتبع المتقدم للبحث عن تهديدات مثل حملات التصيد الاحتيالي والارتباطات المشبوهة استنادا إلى المعلومات الواردة من خزينة نقرات الارتباطات في رسائل البريد الإلكتروني Microsoft Teams وتطبيقات Office 365.
+- (معاينة) يمكن استخدام [الجدول الجديد`UrlClickEvents`](advanced-hunting-urlclickevents-table.md) في التتبع المتقدم للبحث عن تهديدات مثل حملات التصيد الاحتيالي والارتباطات المشبوهة استنادا إلى المعلومات الواردة من نقرات الارتباطات الآمنة في رسائل البريد الإلكتروني وMicrosoft Teams وتطبيقات Office 365.
 
 ## <a name="march-2022"></a>مارس 2022
 
@@ -63,7 +66,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="november-2021"></a>نوفمبر 2021
 
-- (معاينة) تتوفر الآن ميزة الوظيفة الإضافية لإدارة التطبيقات إلى Defender for Cloud Apps في Microsoft 365 Defender. توفر إدارة التطبيقات إمكانية إدارة الأمان والنهج المصممة للتطبيقات التي تدعم OAuth والتي يمكنها الوصول إلى بيانات Microsoft 365 من خلال واجهات برمجة تطبيقات Microsoft Graph. توفر حوكمة التطبيقات الرؤية الكاملة والمعالجة والحوكمة في كيفية وصول هذه التطبيقات ومستخدميها إلى بياناتك الحساسة المخزنة في Microsoft 365 واستخدامها ومشاركتها من خلال رؤى قابلة للتنفيذ وتنبيهات وإجراءات نهج تلقائية. [تعرف على المزيد حول حوكمة التطبيق](/cloud-app-security/app-governance-manage-app-governance).
+- (معاينة) تتوفر الآن ميزة الوظيفة الإضافية لإدارة التطبيقات إلى Defender for Cloud Apps في Microsoft 365 Defender. توفر حوكمة التطبيقات إمكانية إدارة الأمان والنهج المصممة للتطبيقات التي تدعم OAuth والتي تصل إلى بيانات Microsoft 365 من خلال واجهات برمجة تطبيقات Microsoft Graph. توفر حوكمة التطبيقات الرؤية الكاملة والمعالجة والحوكمة في كيفية وصول هذه التطبيقات ومستخدميها إلى بياناتك الحساسة المخزنة في Microsoft 365 واستخدامها ومشاركتها من خلال رؤى قابلة للتنفيذ وتنبيهات وإجراءات نهج تلقائية. [تعرف على المزيد حول حوكمة التطبيق](/cloud-app-security/app-governance-manage-app-governance).
 - (معاينة) تحتوي صفحة [التتبع المتقدمة](advanced-hunting-overview.md) الآن على دعم متعدد المستويات، والتمرير الذكي، وعلامات تبويب المخطط المبسطة، وخيارات التحرير السريع للاستعلامات، ومؤشر استخدام موارد الاستعلام، والتحسينات الأخرى لجعل الاستعلام أكثر سلاسة وأسهل في ضبطه.
 - (معاينة) يمكنك الآن استخدام [الارتباط إلى ميزة الحدث](advanced-hunting-link-to-incident.md) لتضمين الأحداث أو السجلات من نتائج استعلام التتبع المتقدمة مباشرة في حادث جديد أو موجود تقوم بالتحقيق فيه.
 
@@ -87,7 +90,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 - (معاينة) رسم بياني للحوادث
 
-  تظهر علامة تبويب **Graph** جديدة على علامة تبويب **الملخص** لأحد الحوادث النطاق الكامل للهجوم، وكيفية انتشار الهجوم عبر شبكتك بمرور الوقت، ومكان بدائه، والمدى الذي ذهب إليه المهاجم.
+  تظهر علامة تبويب **Graph** الجديدة على علامة التبويب **"ملخص** " لأحد الحوادث النطاق الكامل للهجوم، وكيفية انتشار الهجوم عبر شبكتك بمرور الوقت، والمكان الذي بدأ فيه، والمدى الذي ذهب إليه المهاجم.
 
 ## <a name="july-2021"></a>يوليو 2021
 
@@ -135,7 +138,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 - [Microsoft 365 Defender تقرير تحليلات التهديدات](threat-analytics.md)
 
-  تساعدك تحليلات التهديدات على الاستجابة إلى تأثير الهجمات النشطة وتقليله. يمكنك أيضا التعرف على محاولات الهجوم التي تمنعها حلول Microsoft 365 Defender واتخاذ إجراءات وقائية تخفف من مخاطر التعرض بشكل أكبر وتزيد من المرونة. كجزء من تجربة الأمان الموحدة، تتوفر الآن تحليلات التهديدات ل Microsoft Defender لنقطة النهاية وMicrosoft Defender لحاملي تراخيص E5 Office.
+  تساعدك تحليلات التهديدات على الاستجابة إلى تأثير الهجمات النشطة وتقليله. يمكنك أيضا التعرف على محاولات الهجوم التي تمنعها حلول Microsoft 365 Defender واتخاذ إجراءات وقائية تخفف من مخاطر التعرض بشكل أكبر وتزيد من المرونة. كجزء من تجربة الأمان الموحدة، تتوفر الآن تحليلات التهديدات لحاملي تراخيص Microsoft Defender لنقطة النهاية وMicrosoft Defender ل Office E5.
 
 ## <a name="march-2021"></a>مارس 2021
 

@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 58b2756bead1df85e12e3276d0da475d6882b589
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 20bcfe239cefc955b7646f3133566befc6d2dd01
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66088968"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531067"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>إلحاق الأجهزة Microsoft Defender for Business
 
@@ -30,7 +30,7 @@ ms.locfileid: "66088968"
 
 ## <a name="what-to-do"></a>ما يجب فعله
 
-1. حدد علامة التبويب لنظام التشغيل: **Windows العملاء** **أو أجهزة الكمبيوتر macOS** أو **الأجهزة المحمولة**.
+1. حدد علامة التبويب لنظام التشغيل: **عملاء Windows** أو **أجهزة كمبيوتر macOS** أو **الأجهزة المحمولة**.
 2. اعرض خيارات الإلحاق واتبع الإرشادات الموجودة في علامة التبويب المحددة.
 3. تابع إلى خطواتك التالية.
 
@@ -38,7 +38,7 @@ ms.locfileid: "66088968"
 
 ## <a name="windows-clients"></a>عملاء Windows
 
-اختر أحد الخيارات التالية لإلحاق أجهزة العميل Windows إلى Defender for Business:
+اختر أحد الخيارات التالية لإلحاق أجهزة عميل Windows ب Defender for Business:
 
 - [البرنامج النصي المحلي](#local-script-for-windows-clients) (لإعداد الأجهزة يدويا في مدخل Microsoft 365 Defender)
 - [نهج المجموعة](#group-policy-for-windows-clients) (إذا كنت تستخدم بالفعل نهج المجموعة في مؤسستك)
@@ -47,14 +47,14 @@ ms.locfileid: "66088968"
 
 ### <a name="local-script-for-windows-clients"></a>البرنامج النصي المحلي لعملاء Windows
 
-يمكنك استخدام برنامج نصي محلي لإلحاق أجهزة العميل Windows. عند تشغيل البرنامج النصي للإلحاق على جهاز، فإنه ينشئ ثقة مع Azure Active Directory (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز في Microsoft Intune (إذا لم يكن مسجلا بالفعل)، ثم يقوم بإلحاق الجهاز ب Defender for Business. يعمل أسلوب البرنامج النصي المحلي حتى إذا لم يكن لديك Intune حاليا. نوصي بإلحاق ما يصل إلى 10 أجهزة في كل مرة باستخدام هذا الأسلوب.
+يمكنك استخدام برنامج نصي محلي لإلحاق أجهزة عميل Windows. عند تشغيل البرنامج النصي للإلحاق على جهاز، فإنه ينشئ ثقة مع Azure Active Directory (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز في Microsoft Intune (إذا لم يكن مسجلا بالفعل)، ثم يقوم بإلحاق الجهاز ب Defender for Business. يعمل أسلوب البرنامج النصي المحلي حتى إذا لم يكن لديك Intune حاليا. نوصي بإلحاق ما يصل إلى 10 أجهزة في كل مرة باستخدام هذا الأسلوب.
 
 > [!TIP]
 > نوصي بإعداد ما يصل إلى 10 أجهزة في وقت تستخدم فيه أسلوب البرنامج النصي المحلي.
 
 1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، وسجل الدخول.
 
-2. في جزء التنقل، اختر **الإعدادات** >  **Endpoints**، ثم ضمن **إدارة الجهاز**، اختر **"إلحاق".**
+2. في جزء التنقل، اختر **"نقاط نهاية الإعدادات** > "، ثم ضمن **"إدارة الجهاز"**، اختر **"إلحاق".**
 
 3. حدد نظام تشغيل، مثل **Windows 10 و11**، ثم في قسم **أسلوب النشر**، اختر **البرنامج النصي المحلي**. 
 
@@ -70,18 +70,18 @@ ms.locfileid: "66088968"
 
 ### <a name="group-policy-for-windows-clients"></a>نهج المجموعة لعملاء Windows
 
-إذا كنت تفضل استخدام نهج المجموعة لإلحاق عملاء Windows، فاتبع الإرشادات الواردة في [الأجهزة Windows الملحقة باستخدام نهج المجموعة](../defender-endpoint/configure-endpoints-gp.md). تصف هذه المقالة خطوات الإلحاق Microsoft Defender لنقطة النهاية؛ ومع ذلك، فإن خطوات الإلحاق ب Defender for Business متشابهة.
+إذا كنت تفضل استخدام نهج المجموعة لإلحاق عملاء Windows، فاتبع الإرشادات الواردة في [أجهزة Windows الملحقة باستخدام نهج المجموعة](../defender-endpoint/configure-endpoints-gp.md). تصف هذه المقالة خطوات الإلحاق Microsoft Defender لنقطة النهاية؛ ومع ذلك، فإن خطوات الإلحاق ب Defender for Business متشابهة.
 
 ### <a name="microsoft-intune-for-windows-clients"></a>Microsoft Intune لعملاء Windows
 
-إذا كان اشتراكك يتضمن Intune، يمكنك إلحاق العملاء Windows والأجهزة الأخرى في مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). على سبيل المثال، إذا كان لديك [Microsoft 365 Business Premium](../../business/index.yml)، فأنت تستخدم Intune كجزء من اشتراكك.  
+إذا كان اشتراكك يتضمن Intune، يمكنك إلحاق عملاء Windows والأجهزة الأخرى في مركز إدارة Microsoft إدارة نقاط النهاية ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). على سبيل المثال، إذا كان لديك [Microsoft 365 Business Premium](../../business/index.yml)، فأنت تستخدم Intune كجزء من اشتراكك.  
 
 هناك العديد من الأساليب المتاحة لتسجيل الأجهزة في Intune. نوصي بالبدء بأحد الأساليب التالية:
 
-- [تمكين التسجيل التلقائي Windows](/mem/intune/enrollment/windows-enroll) للأجهزة المملوكة للشركة أو التي تديرها الشركة
+- [تمكين التسجيل التلقائي في Windows](/mem/intune/enrollment/windows-enroll) للأجهزة المملوكة للشركة أو التي تديرها الشركة
 - [اطلب من المستخدمين تسجيل أجهزة Windows 10/11 الخاصة بهم في Intune](/mem/intune/user-help/enroll-windows-10-device)
 
-#### <a name="to-enable-automatic-enrollment-for-windows-devices"></a>لتمكين التسجيل التلقائي للأجهزة Windows
+#### <a name="to-enable-automatic-enrollment-for-windows-devices"></a>لتمكين التسجيل التلقائي لأجهزة Windows
 
 عند إعداد التسجيل التلقائي، يضيف المستخدمون حساب العمل الخاص بهم إلى الجهاز. في الخلفية، يسجل الجهاز وينضم إلى Azure Active Directory (Azure AD)، ويتم تسجيله في Intune.
 
@@ -93,7 +93,7 @@ ms.locfileid: "66088968"
 
    :::image type="content" source="media/mem-mam-scope-azure-ad.png" alt-text="لقطة شاشة لإعداد نطاق مستخدم MDM ونطاق مستخدم MAM في Intune.":::
 
-   - بالنسبة إلى نطاق مستخدم MDM، نوصي بتحديد **الكل** حتى يتمكن جميع المستخدمين من تسجيل أجهزتهم Windows تلقائيا.
+   - بالنسبة إلى نطاق مستخدم MDM، نوصي بتحديد **الكل** حتى يتمكن جميع المستخدمين من تسجيل أجهزة Windows الخاصة بهم تلقائيا.
    - في قسم نطاق مستخدم MAM، نوصي باستخدام القيم الافتراضية التالية لعناوين URL:
 
        - **عنوان URL لشروط استخدام MDM**
@@ -106,7 +106,7 @@ ms.locfileid: "66088968"
 
 
 > [!TIP]
-> لمعرفة المزيد حول التسجيل التلقائي، راجع [تمكين التسجيل التلقائي Windows](/mem/intune/enrollment/windows-enroll).
+> لمعرفة المزيد حول التسجيل التلقائي، راجع [تمكين التسجيل التلقائي في Windows](/mem/intune/enrollment/windows-enroll).
 
 #### <a name="to-have-users-enroll-their-own-windows-devices"></a>لجعل المستخدمين يسجلون أجهزة Windows الخاصة بهم
 
@@ -140,31 +140,31 @@ ms.locfileid: "66088968"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-- إذا كان لديك أجهزة أخرى لإلحاقها، فحدد علامة التبويب التي تتوافق مع نظام التشغيل على الأجهزة [(Windows العملاء أو Windows Server أو macOS أو الأجهزة المحمولة](#what-to-do))، واتبع الإرشادات الواردة في علامة التبويب هذه.
+- إذا كان لديك أجهزة أخرى لإلحاقها، فحدد علامة التبويب التي تتوافق مع نظام التشغيل على الأجهزة [(عملاء Windows أو Windows Server أو macOS أو الأجهزة المحمولة](#what-to-do))، واتبع الإرشادات الواردة في علامة التبويب هذه.
 - إذا انتهيت من إلحاق الأجهزة، فانضم إلى [الخطوة 5: تكوين إعدادات الأمان والنهج في Microsoft Defender for Business](mdb-configure-security-settings.md)
 - راجع [بدء استخدام Microsoft Defender for Business](mdb-get-started.md).
 
-## <a name="macos"></a>[**macOS**](#tab/macOSdevices)
+## <a name="macos"></a>[**ماك**](#tab/macOSdevices)
 
 ## <a name="macos-computers"></a>أجهزة كمبيوتر macOS
 
 > [!NOTE]
-> - نوصي باستخدام [برنامج نصي محلي لإلحاق أجهزة macOS](#local-script-for-macos). على الرغم من أنه يمكنك [إعداد التسجيل لأجهزة macOS في Intune](/mem/intune/enrollment/macos-enroll)، فإن البرنامج النصي المحلي هو أبسط طريقة لإلحاق أجهزة macOS إلى Defender for Business. 
+> - نوصي باستخدام [برنامج نصي محلي لإلحاق أجهزة macOS](#local-script-for-macos). على الرغم من أنه يمكنك [إعداد التسجيل لأجهزة macOS في Intune](/mem/intune/enrollment/macos-enroll)، فإن البرنامج النصي المحلي هو أبسط طريقة لإلحاق أجهزة macOS ب Defender for Business. 
 
 اختر أحد الخيارات التالية لإلحاق أجهزة macOS:
 
-- [البرنامج النصي المحلي macOS](#local-script-for-macos) (*مستحسن*)
+- [البرنامج النصي المحلي لنظام التشغيل macOS](#local-script-for-macos) (*مستحسن*)
 - [Intune for macOS](#microsoft-intune-for-macos)
 
-### <a name="local-script-for-macos"></a>البرنامج النصي المحلي macOS
+### <a name="local-script-for-macos"></a>البرنامج النصي المحلي لنظام التشغيل macOS
 
 عند تشغيل البرنامج النصي المحلي على جهاز macOS، فإنه ينشئ ثقة مع Azure Active Directory (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز في Microsoft Intune (إذا لم يكن مسجلا بالفعل)، ثم يقوم بإلحاق الجهاز ب Defender for Business. يعمل أسلوب البرنامج النصي المحلي حتى إذا لم يكن لديك Intune حاليا. نوصي بإلحاق ما يصل إلى 10 أجهزة في كل مرة باستخدام هذا الأسلوب.
 
 1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، وسجل الدخول.
 
-2. في جزء التنقل، اختر **الإعدادات** >  **Endpoints**، ثم ضمن **إدارة الجهاز**، اختر **"إلحاق".**
+2. في جزء التنقل، اختر **"نقاط نهاية الإعدادات** > "، ثم ضمن **"إدارة الجهاز"**، اختر **"إلحاق".**
 
-3. حدد **macOS**، ثم في قسم **أسلوب النشر**، اختر **البرنامج النصي المحلي**. 
+3. حدد **macOS**، ثم في قسم **أسلوب النشر** ، اختر **البرنامج النصي المحلي**. 
 
 4. حدد **"تنزيل حزمة الإلحاق**"، واحفظها في محرك أقراص قابل للإزالة. حدد أيضا **تنزيل حزمة التثبيت**، واحفظها على جهازك القابل للإزالة.
 
@@ -182,13 +182,13 @@ ms.locfileid: "66088968"
 
 11. بعد تسجيل جهاز في Intune، يمكنك إضافته إلى مجموعة أجهزة. [تعرف على المزيد حول مجموعات الأجهزة في Microsoft Defender for Business](mdb-create-edit-device-groups.md).
 
-### <a name="microsoft-intune-for-macos"></a>Microsoft Intune ل macOS
+### <a name="microsoft-intune-for-macos"></a>Microsoft Intune لنظام التشغيل macOS
 
-إذا كان اشتراكك يتضمن Microsoft Intune، يمكنك إلحاق أجهزة macOS في مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). على سبيل المثال، إذا كان لديك [Microsoft 365 Business Premium](../../business/index.yml)، فأنت تستخدم Intune كجزء من اشتراكك.  
+إذا كان اشتراكك يتضمن Microsoft Intune، يمكنك إلحاق أجهزة macOS في مركز إدارة Microsoft إدارة نقاط النهاية ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). على سبيل المثال، إذا كان لديك [Microsoft 365 Business Premium](../../business/index.yml)، فأنت تستخدم Intune كجزء من اشتراكك.  
 
 هناك العديد من الأساليب المتاحة لتسجيل الأجهزة في Intune. نوصي بالبدء بأحد الأساليب التالية:
 
-- [اختيار خيار للأجهزة macOS المملوكة للشركة](#options-for-company-owned-macos-devices)
+- [اختيار خيار لأجهزة macOS المملوكة للشركة](#options-for-company-owned-macos-devices)
 - [اطلب من المستخدمين تسجيل أجهزة macOS الخاصة بهم في Intune](#ask-users-to-enroll-their-own-macos-devices-in-intune)
 
 #### <a name="options-for-company-owned-macos-devices"></a>خيارات لأجهزة macOS المملوكة للشركة
@@ -197,9 +197,9 @@ ms.locfileid: "66088968"
 
 | الخيار  | الوصف  |
 |---------|---------|
-| تسجيل جهاز Apple التلقائي |  استخدم هذه الطريقة لأتمتة تجربة التسجيل على الأجهزة التي تم شراؤها من خلال Apple Business Manager أو Apple School Manager. ينشر تسجيل الجهاز التلقائي ملف تعريف التسجيل عبر الهواء، لذلك لا تحتاج إلى الوصول الفعلي إلى الأجهزة. <br/><br/>اطلع [على التسجيل تلقائيا macOS الأجهزة باستخدام Apple Business Manager أو Apple School Manager](/mem/intune/enrollment/device-enrollment-program-enroll-macos). |
+| تسجيل جهاز Apple التلقائي |  استخدم هذه الطريقة لأتمتة تجربة التسجيل على الأجهزة التي تم شراؤها من خلال Apple Business Manager أو Apple School Manager. ينشر تسجيل الجهاز التلقائي ملف تعريف التسجيل عبر الهواء، لذلك لا تحتاج إلى الوصول الفعلي إلى الأجهزة. <br/><br/>اطلع [على تسجيل أجهزة macOS تلقائيا باستخدام Apple Business Manager أو Apple School Manager](/mem/intune/enrollment/device-enrollment-program-enroll-macos). |
 | مدير تسجيل الأجهزة (DEM)  |  استخدم هذا الأسلوب لعمليات النشر واسعة النطاق وعندما يكون هناك عدة أشخاص في مؤسستك يمكنهم المساعدة في إعداد التسجيل. يمكن لشخص ما له أذونات مدير تسجيل الأجهزة (DEM) تسجيل ما يصل إلى 1000 جهاز باستخدام حساب Azure Active Directory واحد. يستخدم هذا الأسلوب تطبيق Company Portal أو تطبيق Microsoft Intune لتسجيل الأجهزة. لا يمكنك استخدام حساب DEM لتسجيل الأجهزة عبر تسجيل الجهاز التلقائي.<br/><br/> راجع [تسجيل الأجهزة في Intune باستخدام حساب إدارة تسجيل الأجهزة](/mem/intune/enrollment/device-enrollment-manager-enroll).  |
-| التسجيل المباشر  | تسجيل مباشر يسجل الأجهزة دون ترابط المستخدم، لذلك هذا الأسلوب هو الأفضل للأجهزة غير المرتبطة بمستخدم واحد. يتطلب منك هذا الأسلوب الوصول الفعلي إلى أجهزة Mac التي تقوم بتسجيلها. <br/><br/>راجع [استخدام التسجيل المباشر للأجهزة macOS](/mem/intune/enrollment/device-enrollment-direct-enroll-macos).      |
+| التسجيل المباشر  | تسجيل مباشر يسجل الأجهزة دون ترابط المستخدم، لذلك هذا الأسلوب هو الأفضل للأجهزة غير المرتبطة بمستخدم واحد. يتطلب منك هذا الأسلوب الوصول الفعلي إلى أجهزة Mac التي تقوم بتسجيلها. <br/><br/>راجع [استخدام التسجيل المباشر لأجهزة macOS](/mem/intune/enrollment/device-enrollment-direct-enroll-macos).      |
 
 #### <a name="ask-users-to-enroll-their-own-macos-devices-in-intune"></a>اطلب من المستخدمين تسجيل أجهزة macOS الخاصة بهم في Intune
 
@@ -227,7 +227,7 @@ ms.locfileid: "66088968"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-- إذا كان لديك أجهزة أخرى لإلحاقها، فحدد علامة التبويب التي تتوافق مع نظام التشغيل على الأجهزة ([Windows العملاء أو Windows Server أو macOS أو الأجهزة المحمولة](#what-to-do))، واتبع الإرشادات الواردة في علامة التبويب هذه.
+- إذا كان لديك أجهزة أخرى لإلحاقها، فحدد علامة التبويب التي تتوافق مع نظام التشغيل على الأجهزة ([عملاء Windows أو Windows Server أو macOS أو الأجهزة المحمولة](#what-to-do))، واتبع الإرشادات الواردة في علامة التبويب هذه.
 - إذا انتهيت من إلحاق الأجهزة، فانضم إلى [الخطوة 5: تكوين إعدادات الأمان والنهج في Microsoft Defender for Business](mdb-configure-security-settings.md)
 - راجع [بدء استخدام Microsoft Defender for Business](mdb-get-started.md).
 
@@ -246,6 +246,6 @@ ms.locfileid: "66088968"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-- إذا كان لديك أجهزة أخرى لإلحاقها، فحدد علامة التبويب التي تتوافق مع نظام التشغيل على الأجهزة ([Windows العملاء أو Windows Server أو macOS أو الأجهزة المحمولة](#what-to-do))، واتبع الإرشادات الواردة في علامة التبويب هذه.
+- إذا كان لديك أجهزة أخرى لإلحاقها، فحدد علامة التبويب التي تتوافق مع نظام التشغيل على الأجهزة ([عملاء Windows أو Windows Server أو macOS أو الأجهزة المحمولة](#what-to-do))، واتبع الإرشادات الواردة في علامة التبويب هذه.
 - إذا انتهيت من إلحاق الأجهزة، فانضم إلى [الخطوة 5: تكوين إعدادات الأمان والنهج في Microsoft Defender for Business](mdb-configure-security-settings.md)
 - راجع [بدء استخدام Microsoft Defender for Business](mdb-get-started.md).

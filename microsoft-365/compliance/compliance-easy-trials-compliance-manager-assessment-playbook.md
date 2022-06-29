@@ -1,5 +1,5 @@
 ---
-title: دليل المبادئ التجريبي لتقييمات Microsoft Compliance Manager المتميزة
+title: دليل المبادئ التجريبي للتقييمات المتميزة ل Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,17 +14,20 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: دليل المبادئ التجريبي لتقييمات Microsoft Compliance Manager المتميزة.
-ms.openlocfilehash: f50060fa5e9f037fbe1301496f18422684c38d3d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: دليل المبادئ التجريبي للتقييمات التجريبية ل Microsoft Purview Compliance Manager.
+ms.custom: trial-playbook
+ms.openlocfilehash: 3d41cde8cbf7cb6158573ed158a41dfe42d28dd5
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759844"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530979"
 ---
-# <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>دليل المبادئ التجريبي: التقييمات المتميزة ل Microsoft Compliance Manager
+# <a name="trial-playbook-microsoft-purview-compliance-manager-premium-assessments"></a>دليل المبادئ التجريبي: التقييمات المتميزة ل Microsoft Purview Compliance Manager
 
-مرحبا بك في دليل المبادئ التجريبي للتقييم المتميز ل Microsoft Compliance Manager.
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+مرحبا بك في دليل المبادئ التجريبي للتقييم المتميز ل Microsoft Purview Compliance Manager.
 
 سيساعدك دليل المبادئ هذا على تحقيق أقصى استفادة من الإصدار التجريبي المجاني لمدة 90 يوما من خلال تعليمك كيفية استخدام مجموعة شاملة من قوالب التقييم المتميزة (الوظيفة الإضافية).
 
@@ -61,7 +64,7 @@ ms.locfileid: "64759844"
 
 تسمح لك التراخيص التجريبية باستخدام 25 قالبا متميزا لمدة 90 يوما. ستتمكن من الاختيار من قائمة تضم أكثر من 300 قالب متميز. لست مطالبا بتحديد جميع القوالب ال 25 مرة واحدة. بمجرد تحديدها، تتوفر القوالب المرخصة للاستخدام في غضون 4 ساعات من الحصول على الترخيص التجريبي.
 
-هناك طريقتان لتمكين الإصدار التجريبي من وظيفة التقييم الإضافية Premium: من خلال لوحة معلومات Compliance Manager أو من خلال الإصدار التجريبي Microsoft 365 Compliance.
+هناك طريقتان لتمكين الإصدار التجريبي من الوظيفة الإضافية للتقييم المتميز: من خلال لوحة معلومات Compliance Manager أو من خلال الإصدار التجريبي من Microsoft Purview.
 
 ### <a name="enable-trial-via-the-compliance-manager-dashboard"></a>تمكين الإصدار التجريبي عبر لوحة معلومات Compliance Manager
 

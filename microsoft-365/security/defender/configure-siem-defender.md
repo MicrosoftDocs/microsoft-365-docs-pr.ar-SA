@@ -1,7 +1,7 @@
 ---
-title: ادمج أدوات SIEM مع Microsoft 365 Defender
-description: تعرف على كيفية استخدام REST API وتكوين أدوات إدارة أحداث ومعلومات الأمان المعتمدة لتلقي الكشف وسحبه.
-keywords: تكوين siem ومعلومات الأمان وأدوات إدارة الأحداث، وslunk، وقوس النظر، والمؤشرات المخصصة، وبرمجة التطبيقات، وتعريفات التنبيهات، ومؤشرات اختراق
+title: ادمج أدوات إدارة معلومات الأمان والأحداث مع Microsoft 365 Defender
+description: تعرف على كيفية استخدام واجهة برمجة تطبيقات REST وتكوين أدوات إدارة معلومات الأمان والأحداث المدعومة لتلقي عمليات الكشف وسحبها.
+keywords: تكوين siem، وأدوات إدارة معلومات الأمان والأحداث، وsplunk، و arcsight، والمؤشرات المخصصة، وواجهة برمجة تطبيقات rest، وتعريمات التنبيه، ومؤشرات التسوية
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,91 +16,95 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 210705bd3392e4aeeadd815ed8c1840e772f6ad9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 3e2772fd458c60e48f78c0d4b816cdac8ca25940
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63575140"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530291"
 ---
-# <a name="integrate-your-siem-tools-with-microsoft-365-defender"></a>ادمج أدوات SIEM مع Microsoft 365 Defender
+# <a name="integrate-your-siem-tools-with-microsoft-365-defender"></a>ادمج أدوات إدارة معلومات الأمان والأحداث مع Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [مشكلات الأداء في Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-## <a name="pull-microsoft-365-defender-incidents-and-streaming-event-data-using-security-information-and-events-management-siem-tools"></a>سحب Microsoft 365 Defender البيانات وتدفق بيانات الأحداث باستخدام أدوات إدارة أحداث ومعلومات الأمان (SIEM)
+## <a name="pull-microsoft-365-defender-incidents-and-streaming-event-data-using-security-information-and-events-management-siem-tools"></a>سحب Microsoft 365 Defender الأحداث وبيانات الأحداث المتدفقة باستخدام أدوات إدارة معلومات الأمان والأحداث (SIEM)
 
 > [!NOTE]
 >
-> - [Microsoft 365 Defender الأحداث](incident-queue.md) على مجموعات من التنبيهات المرتبطة ودلليلها.
-> - [Microsoft 365 Defender تدفق API](streaming-api.md) إلى دفق بيانات الحدث من Microsoft 365 Defender إلى مراكز الأحداث أو حسابات تخزين Azure.
+> - [تتكون Microsoft 365 Defender Incidents](incident-queue.md) من مجموعات من التنبيهات المرتبطة وأدلةها.
+> - [Microsoft 365 Defender دفق واجهة برمجة التطبيقات دفق](streaming-api.md) بيانات الأحداث من Microsoft 365 Defender إلى مراكز الأحداث أو حسابات تخزين Azure.
 
-يدعم Microsoft 365 Defender معلومات الأمان وأدوات إدارة الأحداث (SIEM) التي تستخدم المعلومات من مستأجر المؤسسة في Azure Active Directory (AAD (دليل Azure النشط)) باستخدام بروتوكول مصادقة OAuth 2.0 لمستأجر AAD (دليل Azure النشط)  تطبيق يمثل حل SIEM المحدد أو الموصل المثبت في بيئتك. 
+يدعم Microsoft 365 Defender أدوات إدارة معلومات الأمان والأحداث (SIEM) لاستيعاب المعلومات من مستأجر المؤسسة في Azure Active Directory (AAD) باستخدام بروتوكول مصادقة OAuth 2.0 لتطبيق AAD مسجل يمثل حل SIEM المحدد أو الموصل المثبت في بيئتك. 
 
 لمزيد من المعلومات، اطلع على:
 
-- [Microsoft 365 Defender واجهات برمجة التطبيقات شروط الاستخدام وترخيصها](api-terms.md)
-- [الوصول إلى Microsoft 365 Defender واجهات برمجة التطبيقات](api-access.md)
-- [مثال Hello World](api-hello-world.md)
+- [ترخيص واجهات برمجة التطبيقات Microsoft 365 Defender وشروط الاستخدام](api-terms.md)
+- [الوصول إلى واجهات برمجة التطبيقات Microsoft 365 Defender](api-access.md)
+- [مثال "مرحباً بالعالم"](api-hello-world.md)
 - [الوصول باستخدام سياق التطبيق](api-create-app-web.md)
 
-هناك نموذجان أساسيان لأهم معلومات الأمان: 
+هناك نموذجان أساسيان لاستيعاب معلومات الأمان: 
 
-1.  يتم Microsoft 365 Defender الأحداث وتنبيهاتها المضمنة من API REST في Azure. 
+1.  استيعاب أحداث Microsoft 365 Defender والتنبيهات التي تحتوي عليها من واجهة برمجة تطبيقات REST في Azure. 
 
-2.  استخدام بيانات حدث النقل المتدفق إما من خلال Azure Event Hubs أو حسابات تخزين Azure. 
+2.  استيعاب بيانات الحدث المتدفقة إما من خلال Azure Event Hubs أو حسابات Azure Storage. 
 
-Microsoft 365 Defender حاليا عمليات تكامل حل SIEM التالية: 
+يدعم Microsoft 365 Defender حاليا تكاملات حلول SIEM التالية: 
 
-- [أحداث الاحتكاء من الأحداث REST API](#ingesting-incidents-from-the-incidents-rest-api)
-- [استخدام بيانات حدث النقل المتدفق عبر مركز الأحداث](#ingesting-streaming-event-data-via-event-hubs)
+- [استيعاب الحوادث من واجهة برمجة تطبيقات REST للأحداث](#ingesting-incidents-from-the-incidents-rest-api)
+- [استيعاب بيانات الحدث المتدفقة عبر Event Hub](#ingesting-streaming-event-data-via-event-hubs)
 
-## <a name="ingesting-incidents-from-the-incidents-rest-api"></a>أحداث الاحتكاء من الأحداث REST API
+## <a name="ingesting-incidents-from-the-incidents-rest-api"></a>استيعاب الحوادث من واجهة برمجة تطبيقات REST للأحداث
 
-### <a name="incident-schema"></a>مخطط حادث
-لمزيد من المعلومات حول خصائص Microsoft 365 Defender بما في ذلك بيانات تعريف كيانات التنبيهات والدليل المضمنة، راجع [تعيين المخطط](../defender/api-list-incidents.md#schema-mapping).
+### <a name="incident-schema"></a>مخطط الحادث
+لمزيد من المعلومات حول خصائص الحادث Microsoft 365 Defender بما في ذلك بيانات تعريف كيانات التنبيه والأدلة المضمنة، راجع [تعيين المخطط](../defender/api-list-incidents.md#schema-mapping).
 
 ### <a name="splunk"></a>Splunk
 
-استخدام Microsoft 365 Defender الإضافية ل Splunk التي تدعم:
+استخدام وظيفة Splunk الإضافية الجديدة المدعومة بالكامل ل Microsoft Security التي تدعم:
 
-- أحداث الاقتصاص التي تحتوي على تنبيهات من المنتجات التالية، والتي تم تعيينها إلى نموذج المعلومات الشائع (CIM) الخاص ب Splunk):
+- استيعاب الحوادث التي تحتوي على تنبيهات من المنتجات التالية، والتي تم تعيينها على نموذج المعلومات العامة ل Splunk (CIM):
 
   - Microsoft 365 Defender
-  - Microsoft Defender لنقطة النهاية
-  - حماية هوية Microsoft Defender for Identity و Azure Active Directory
-  - Microsoft Defender لتطبيقات السحابة
+  - Microsoft Defender for Endpoint
+  - Microsoft Defender for Identity وAzure Active Directory Identity Protection
+  - Microsoft Defender for Cloud Apps
 
-- تحديث الأحداث في Microsoft 365 Defender من داخل Splunk
+- استيعاب تنبيهات Defender لنقطة النهاية (من نقطة نهاية Azure ل Defender لنقطة النهاية) وتحديث هذه التنبيهات
 
-- Ingesting Defender لتنبيهات نقطة النهاية (من نقطة نهاية Azure ل Defender for Endpoint) وتحديث هذه التنبيهات
+- تم نقل دعم تحديث Microsoft 365 Defender Incidents و/أو Microsoft Defender لنقطة النهاية Alerts ولوحات المعلومات المعنية إلى تطبيق Microsoft 365 ل Splunk. 
 
-لمزيد من المعلومات حول Microsoft 365 Defender الإضافية ل Splunk، راجع [splunkbase](https://splunkbase.splunk.com/app/4959/).
+لمزيد من المعلومات حول:
+
+- الوظيفة الإضافية Splunk لأمان Microsoft، راجع [الوظيفة الإضافية لأمان Microsoft على Splunkbase](https://splunkbase.splunk.com/app/6207/#/overview)
+
+- تطبيق Microsoft 365 ل Splunk، راجع [تطبيق Microsoft 365 على Splunkbase](https://splunkbase.splunk.com/app/3786/)
 
 ### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 
-يعمل SmartConnector الجديد Microsoft 365 Defender الأحداث إلى ArcSight ويدخلها في إطار الحدث المشترك (CEF).
+يقوم SmartConnector الجديد Microsoft 365 Defender استيعاب الحوادث في ArcSight وتعيينها إلى إطار الحدث المشترك (CEF).
 
-لمزيد من المعلومات حول ArcSight SmartConnector الجديد Microsoft 365 Defender، راجع [وثائق منتج ArcSight](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
+لمزيد من المعلومات حول ArcSight SmartConnector الجديد Microsoft 365 Defender، راجع [وثائق منتجات ArcSight](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
 
-يحل SmartConnector محل FlexConnector السابق ل Microsoft Defender لنقطة النهاية.
+يستبدل SmartConnector FlexConnector السابق Microsoft Defender لنقطة النهاية التي تم إهمالها.
   
 
-## <a name="ingesting-streaming-event-data-via-event-hubs"></a>استخدام بيانات حدث النقل المتدفق عبر "مراكز الأحداث"
+## <a name="ingesting-streaming-event-data-via-event-hubs"></a>استيعاب بيانات الحدث المتدفقة عبر مراكز الأحداث
 
-ستحتاج أولا إلى دفق الأحداث من AAD (دليل Azure النشط) المستأجر إلى مركز الأحداث أو حساب تخزين Azure. لمزيد من المعلومات، راجع [تدفق API](../defender/streaming-api.md).
+تحتاج أولا إلى دفق الأحداث من مستأجر AAD إلى Event Hubs أو Azure Storage Account. لمزيد من المعلومات، راجع [Streaming API](../defender/streaming-api.md).
 
-لمزيد من المعلومات حول أنواع الأحداث المعتمدة بواسطة API للدفق، راجع [أنواع أحداث النقل المتدفق المعتمدة](../defender/supported-event-types.md).
+لمزيد من المعلومات حول أنواع الأحداث التي تدعمها واجهة برمجة تطبيقات الدفق، راجع [أنواع أحداث الدفق المعتمدة](../defender/supported-event-types.md).
 
 ### <a name="splunk"></a>Splunk
-استخدم "الوظائف الإضافية ل Splunk" ل Microsoft Cloud Services لالتدراج الأحداث من Azure Event Hubs.  
 
+استخدم الوظيفة الإضافية Splunk ل Microsoft Cloud Services لاستيعاب الأحداث من Azure Event Hubs.  
 
-لمزيد من المعلومات حول الوظائف الإضافية Splunk ل Microsoft Cloud Services، راجع [splunkbase](https://splunkbase.splunk.com/app/3110/).
+لمزيد من المعلومات حول الوظيفة الإضافية Splunk ل Microsoft Cloud Services، راجع [الوظيفة الإضافية Microsoft Cloud Services على Splunkbase](https://splunkbase.splunk.com/app/3110/).
   
 
 ### <a name="ibm-qradar"></a>IBM QRadar
->استخدم وحدة IBM QRadar الجديدة Microsoft 365 Defender دعم الأجهزة (DSM) التي تستدعي [Microsoft 365 Defender API](streaming-api.md) المتدفقة التي تسمح باحتواء بيانات حدث النقل المتدفق من Microsoft 365 Defender البيانات. لمزيد من المعلومات حول أنواع الأحداث المعتمدة، راجع [أنواع الأحداث المعتمدة](supported-event-types.md).
+>استخدم وحدة دعم الأجهزة Microsoft 365 Defender IBM QRadar الجديدة التي تستدعي [Microsoft 365 Defender Streaming API](streaming-api.md) التي تسمح لاستيعاب بيانات الحدث المتدفقة من منتجات Microsoft 365 Defender عبر Event Hubs أو Azure Storage Account. لمزيد من المعلومات حول أنواع الأحداث المعتمدة، راجع [أنواع الأحداث المعتمدة](supported-event-types.md).
