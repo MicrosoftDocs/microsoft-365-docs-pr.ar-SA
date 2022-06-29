@@ -21,14 +21,16 @@ ms.custom:
 search.appverid: MET150
 description: تعرف على كيفية إلغاء الاشتراكات التجريبية أو المدفوعة من Dynamics 365 وIntune Power Platform وMicrosoft 365 للأعمال في مركز مسؤولي Microsoft 365.
 ms.date: 06/02/2022
-ms.openlocfilehash: ea2a3bf0e77d11733e19b27f19bef378f691fd73
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 962553d620b9cc3477f5eb7c91fa0b822dc5de07
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873655"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490354"
 ---
-# <a name="cancel-your-business-subscription"></a>إلغاء اشتراك الأعمال الخاصة بك
+# <a name="cancel-your-microsoft-subscription"></a>إلغاء اشتراكك في Microsoft
+
+إذا كنت تريد إلغاء اشتراكك، فإن أسهل طريقة للقيام بذلك [إيقاف تشغيل الفوترة المتكررة](renew-your-subscription.md). عند إيقاف تشغيل الفوترة المتكررة، يمكنك الاستمرار في استخدام اشتراكك حتى تنتهي صلاحيته في نهاية فترة الاشتراك. إذا كنت تريد الإلغاء على الفور، فاستخدم المعلومات والخطوات الواردة في هذه المقالة للقيام بذلك.
 
 > [!IMPORTANT]
 > - لا تنطبق هذه المقالة إلا على Dynamics 365، وIntune، ومنصة Power، وMicrosoft 365 لاشتراكات الأعمال. إذا كان لديك Microsoft 365 Family أو Personal، فراجع [إلغاء اشتراك Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).

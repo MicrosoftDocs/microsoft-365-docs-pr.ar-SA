@@ -1,5 +1,5 @@
 ---
-title: جدولة تحديثات حماية برنامج الحماية من الفيروسات من Microsoft Defender
+title: جدولة تحديثات الحماية من الفيروسات ل Microsoft Defender
 description: جدولة اليوم والوقت والفاصل الزمني لوقت تنزيل تحديثات الحماية
 keywords: التحديثات، وخطوط الأمان الأساسية، وجدولة التحديثات
 ms.prod: m365-security
@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5ffa9d623b89bc19c7c3ec8817f2df6bc174384b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 35f9329756fde82a6ac0762d30041a3d30cd2c8b
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419825"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492458"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>إدارة الجدول الزمني عندما يجب تنزيل تحديثات الحماية وتطبيقها
 
@@ -29,7 +29,7 @@ ms.locfileid: "65419825"
 > قد يكون العملاء الذين قاموا بتطبيق تحديث محرك Microsoft Defender لشهر مارس 2022 (**1.1.19100.5**) قد واجهوا استخداماً كبيراً للموارد (وحدة المعالجة المركزية و / أو الذاكرة). أصدرت Microsoft تحديثاً (**1.1.19200.5**) يعمل على حل الأخطاء التي تم تقديمها في الإصدار السابق. يوصى العملاء بالتحديث إلى هذا المحرك الجديد لمحرك مكافحة الفيروسات (**1.1.19200.5**). لضمان إصلاح أي مشكلات في الأداء بشكل كامل، يوصى بإعادة تشغيل الأجهزة بعد تطبيق التحديث. لمزيد من المعلومات، راجع [إصدارات النظام الأساسي والمحرك الشهرية](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions).
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -48,15 +48,15 @@ ms.locfileid: "65419825"
 
 ## <a name="use-configuration-manager-to-schedule-protection-updates"></a>استخدام Configuration Manager لجدولة تحديثات الحماية
 
-1. في وحدة التحكم إدارة نقاط النهاية من Microsoft، افتح نهج مكافحة البرامج الضارة الذي تريد تغييره (انقر فوق **الأصول والتوافق** في جزء التنقل على اليسار، ثم قم بتوسيع الشجرة إلى **نظرة عامة** \> **Endpoint Protection** \> **نهج مكافحة البرامج الضارة**)
+1. في وحدة تحكم Microsoft إدارة نقاط النهاية، افتح نهج مكافحة البرامج الضارة الذي تريد تغييره (انقر فوق **الأصول والتوافق** في جزء التنقل على اليسار، ثم قم بتوسيع الشجرة إلى نهج **الحماية من البرامج الضارة** **لنقطة** \> النهاية **العامة**\>)
 
 2. انتقل إلى قسم **تحديثات معلومات الأمان** .
 
 3. للتحقق من التحديثات وتنزيلها في وقت معين:
       1. تعيين **Check for Endpoint Protection security intelligence updates at a specific interval...** to **0**.
-      2. قم بتعيين **Check for Endpoint Protection security intelligence updates يوميا في...** إلى الوقت الذي يجب فيه التحقق من التحديثات.
+      2. تعيين **Check for Endpoint Protection security intelligence updates daily at...** to the time when when updates should be check.
       3
-4. للتحقق من التحديثات وتنزيلها على فاصل زمني مستمر، قم بتعيين **التحقق من Endpoint Protection تحديثات التحليل الذكي للأمان في فاصل زمني معين...** إلى عدد الساعات التي يجب أن تحدث بين التحديثات.
+4. للتحقق من التحديثات وتنزيلها على فاصل زمني مستمر، قم بتعيين **تحديثات التحليل الذكي للأمان ل "التحقق من حماية نقطة النهاية" في فاصل زمني معين...** إلى عدد الساعات التي يجب أن تحدث بين التحديثات.
 
 5. [نشر النهج المحدث كالمعتاد](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
@@ -72,11 +72,13 @@ ms.locfileid: "65419825"
 
 3. انقر فوق **"النهج****" ثم "القوالب الإدارية**".
 
-4. قم بتوسيع الشجرة إلى **مكونات** \> Windows **برنامج الحماية من الفيروسات من Microsoft Defender** \> **تحديثات التحليل الذكي للتوقيع** وتكوين الإعدادات التالية:
+4. قم بتوسيع الشجرة إلى **مكونات** \> Windows **برنامج الحماية من الفيروسات لـ Windows Defender** \> **توقيع التحديثات** وتكوين الإعدادات التالية:
 
     1. انقر نقرا مزدوجا فوق **"تحديد يوم الأسبوع" للتحقق من إعداد تحديثات معلومات الأمان** وتعيين الخيار "**ممكن".** أدخل يوم الأسبوع للتحقق من وجود تحديثات. انقر فوق **موافق**.
-    2. انقر نقرا مزدوجا فوق **"تحديد الفاصل الزمني" للتحقق من إعداد تحديثات معلومات الأمان** وتعيين الخيار "**ممكن".** أدخل عدد الساعات بين التحديثات. انقر فوق **موافق**.
-    3. انقر نقرا مزدوجا فوق **"تحديد الوقت" للتحقق من إعداد تحديثات معلومات الأمان** وتعيين الخيار "**ممكن".** أدخل الوقت الذي يجب فيه التحقق من التحديثات. يستند الوقت إلى الوقت المحلي لنقطة النهاية. انقر فوق **موافق**.
+
+    2. انقر نقرا مزدوجا فوق **"تحديد الفاصل الزمني" للتحقق من إعداد تحديثات التعريف** وتعيين الخيار "**ممكن".** أدخل عدد الساعات بين التحديثات. انقر فوق **موافق**.
+
+    3. انقر نقرا مزدوجا فوق **"تحديد الوقت" للتحقق من إعداد تحديثات التعريف** وتعيين الخيار "**ممكن".** أدخل الوقت الذي يجب فيه التحقق من التحديثات. يستند الوقت إلى الوقت المحلي لنقطة النهاية. انقر فوق **موافق**.
 
 ## <a name="use-powershell-cmdlets-to-schedule-protection-updates"></a>استخدام PowerShell cmdlets لجدولة تحديثات الحماية
 
@@ -88,7 +90,7 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-راجع [استخدام أوامر Cmdlets PowerShell لتكوين وتشغيل أوامر](use-powershell-cmdlets-microsoft-defender-antivirus.md) [cmdlets لبرنامج الحماية من الفيروسات](/powershell/module/defender/) برنامج الحماية من الفيروسات من Microsoft Defender و Defender لمزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender.
+راجع [استخدام أوامر Cmdlets PowerShell لتكوين أوامر cmdlets لبرنامج الحماية من الفيروسات من Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md)  و [Defender Antivirus وتشغيلها](/powershell/module/defender/) للحصول على مزيد من المعلومات حول كيفية استخدام PowerShell مع برنامج الحماية من الفيروسات من Microsoft Defender.
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>استخدام تعليمات إدارة Windows (WMI) لجدولة تحديثات الحماية
 
@@ -105,14 +107,14 @@ SignatureUpdateInterval
 - [واجهات برمجة تطبيقات Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
+> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
+> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على Linux](linux-preferences.md)
 > - [مشكلات الأداء في Microsoft Defender لنقطة النهاية على Linux](microsoft-defender-endpoint-linux.md)
-> - [تكوين Defender for Endpoint على ميزات Android](android-configure.md)
-> - [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 
 ## <a name="related-articles"></a>المقالات ذات الصلة
 
@@ -121,4 +123,4 @@ SignatureUpdateInterval
 - [إدارة تحديثات نقاط النهاية غير](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [إدارة التحديثات التلقائية المستندة إلى الحدث](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [إدارة التحديثات للأجهزة المحمولة والأجهزة الظاهرية (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10 و11](microsoft-defender-antivirus-in-windows-10.md)

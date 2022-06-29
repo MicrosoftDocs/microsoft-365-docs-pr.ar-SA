@@ -1,13 +1,12 @@
 ---
 title: قم بإعداد Microsoft 365 Business Premium
-description: تعرف على كيفية إعداد Microsoft 365 Business Premium
+description: كيفية إعداد Microsoft 365 Business Premium أو العمل مع موفر حلول للقيام بذلك.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 06/03/2022
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
@@ -15,16 +14,16 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 4aa9218406d261e39df075ad855ceda5bd755b70
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: ad188065f7f007029fccb94d8a5466ba9ec00f3e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65892462"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486852"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>قم بإعداد Microsoft 365 Business Premium
 
-بعد [بدء إصدار تجريبي أو شراء Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)، تتمثل خطوتك التالية في إعداد كل شيء. لديك العديد من الخيارات المتاحة. يمكنك:
+بعد [بدء إصدار تجريبي أو شراء Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)، تكون خطوتك التالية هي إعداد كل شيء. لديك العديد من الخيارات المتاحة. يمكنك:
 
 - ابدأ [بتجربة الإعداد الإرشادية](m365bp-setup.md#guided-setup-process) للإعداد والتكوين الأساسيين؛ او
 - [العمل مع شريك](m365bp-setup.md#work-with-a-microsoft-partner)، مثل موفر حلول السحابة من Microsoft (CSP).
@@ -36,7 +35,7 @@ ms.locfileid: "65892462"
 | شرط | الوصف |
 |:---|:---|
 | الاشتراك | Microsoft 365 Business Premium أو Microsoft 365 for Campaigns <br/><br/> لبدء إصدار تجريبي أو شراء اشتراكك، راجع المقالات التالية: <br/>- [الحصول على Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [الحصول على Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
-| الأذونات  | لإكمال عملية الإعداد الأولية، يجب أن تكون مسؤولا عموميا. [تعرف على المزيد حول أدوار المسؤول](../admin/add-users/about-admin-roles.md). |
+| الأذونات  | لإكمال عملية الإعداد الأولية، يجب أن تكون مسؤول عمومي. [تعرف على المزيد حول أدوار المسؤولين](../admin/add-users/about-admin-roles.md). |
 | متطلبات المستعرض | Microsoft Edge أو Safari أو Chrome أو Firefox. [تعرف على المزيد حول متطلبات المستعرض](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | نظام التشغيل | **Windows**: Windows 11 أو Windows 10 أو Windows 8.1 أو Windows Server 2019 أو إصدار أحدث أو Windows Server 2016<br/><br/>**macOS**: أحد أحدث ثلاثة إصدارات من macOS |
 
@@ -45,7 +44,7 @@ ms.locfileid: "65892462"
 
 ## <a name="guided-setup-process"></a>عملية الإعداد الموجهة
 
-يتضمن Microsoft 365 Business Premium عملية موجهة. يعرض الفيديو التالي عملية الإعداد الموجهة ل Microsoft 365 Business Standard، والتي تنطبق أيضا على Microsoft 365 Business Premium.<br/><br/>
+تتضمن Microsoft 365 Business Premium عملية موجهة. يعرض الفيديو التالي عملية الإعداد الموجهة Microsoft 365 Business Standard، والتي تنطبق أيضا على Microsoft 365 Business Premium.<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 

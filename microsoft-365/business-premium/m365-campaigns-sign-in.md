@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: سجل الدخول إلى Microsoft 365. قم بحماية عملك أو تدريبك أو حملتك من تهديدات الأمان عبر الإنترنت للبريد الإلكتروني والبيانات والاتصالات.
-ms.openlocfilehash: d478b37c38b9184e1ec60844025b3fe356fb43dd
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 97ebd115d46a5cc4bce096f809da242bfcbb9ba5
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893318"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491162"
 ---
 # <a name="sign-in-to-microsoft-365-business-for-campaigns"></a>تسجيل الدخول إلى Microsoft 365 Business for Campaigns
 

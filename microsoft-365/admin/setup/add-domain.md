@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- adminvideo
 - TopSMBIssues
 - SaRA
 - MSStore_Link
@@ -27,13 +28,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: استخدم معالج الإعداد لإضافة مجالك إلى Microsoft 365 في مركز إدارة Microsoft 365 عن طريق إضافة سجل DNS لدى مضيف DNS.
-ms.openlocfilehash: ad4654bce8781607a77272dafeb3eb9135c85765
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+description: استخدم معالج الإعداد لإضافة مجالك إلى Microsoft 365 في مركز مسؤولي Microsoft 365 عن طريق إضافة سجل DNS لدى مضيف DNS.
+ms.openlocfilehash: 64b82aab051af2c9d5444042f27009b4e02f1ad8
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922884"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492027"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>إضافة مجال إلى Microsoft 365
 
@@ -52,7 +53,7 @@ ms.locfileid: "65922884"
 
 قد تحتاج شركتك إلى أسماء مجالات متعددة لأغراض مختلفة. على سبيل المثال، قد تحتاج إلى إضافة هجاء مختلف لاسم شركتك لأن العملاء يستخدمونه بالفعل وفشلت اتصالاتهم في الوصول إليك.
 
-1. في مركز إدارة Microsoft 365، اختر <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**"إعداد**</a>".
+1. في مركز مسؤولي Microsoft 365، اختر <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**"إعداد**</a>".
 1. ضمن **إعداد المجال المخصص**، حدد **View** > **Manage** > **Add domain**.
 1. أدخل اسم المجال الجديد الذي تريد إضافته، ثم حدد **"التالي**".
 1. سجل الدخول إلى جهة تسجيل المجالات، ثم حدد **"التالي**".
@@ -159,18 +160,20 @@ ms.locfileid: "65922884"
 
 لإضافة مجال onmicrosoft.com:
 
-1. في مركز مسؤولي Microsoft 365، حدد **الإعدادات**، ثم حدد **المجالات**.
-2. حدد مجالك الافتراضي onmicrosoft.com.
+1. في مركز مسؤولي Microsoft 365، حدد **"إعدادات"**، ثم حدد **"المجالات**".
+
+2. حدد مجال *.onmicrosoft.com* موجود.
 
     ![صفحة المجالات.](../../media/onmicrosoft-domains.png)
   
-3. في صفحة خصائص المجال، في قسم **"حول هذا المجال** "، حدد **"Add onmicrosoft domain**".
 
-    ![حول صفحة المجالات هذه.](../../media/add-onmicrosoft-domain-link.png)
+3. في علامة التبويب **"نظرة عامة** "، حدد **"إضافة onmicrosoft.com المجال**".
 
-4. في صفحة **"إضافة مجال onmicrosoft** "، في مربع **اسم المجال** ، اكتب اسم مجال onmicrosoft.com الجديد. 
+    ![لقطة شاشة لخصائص المجال.](../../media/add-onmicrosoft-domain-link.png)
 
-    ![Screenshot of Add onmicrosoft domain page.](../../media/add-an-onmicrosoftcom-domain-page.png)
+4. في صفحة **"Add onmicrosoft domain** "، في مربع **اسم المجال** ، أدخل اسم مجال onmicrosoft.com الجديد. 
+
+    ![لقطة شاشة لمجال Add onmicrosoft.](../../media/add-an-onmicrosoftcom-domain-page.png)
 
     > [!NOTE]
     > تأكد من التحقق من التدقيق الإملائي ودقة اسم المجال الذي أدخلته. أنت مقيد بخمسة مجالات onmicrosoft.com، ولا يمكن حذفها حاليا بمجرد إنشائها.     
@@ -183,7 +186,7 @@ ms.locfileid: "65922884"
 
 لمزيد من التفاصيل حول كيفية إضافة مجال onmicrosoft.com، راجع [إضافة مجال onmicrosoft.com أو استبداله](add-or-replace-your-onmicrosoftcom-domain.md).
 
-## <a name="related-content"></a>المحتويات ذات الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
 [الأسئلة المتداولة حول المجالات](domains-faq.yml) (مقالة)</br>
 [ما هو المجال؟](../get-help-with-domains/what-is-a-domain.md) (مقالة)</br>

@@ -2,11 +2,11 @@
 title: استخدام Microsoft Teams للتعاون
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على سبب وكيفية إنشاء فريق في Microsoft Teams حتى تتمكن شركتك الصغيرة أو حملتك من التعاون في العمل.
-ms.openlocfilehash: a996430d884e50d36c636c8682d862317775f63a
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 046a888c0df95bc404bafcddb041e015131e6503
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65892549"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489637"
 ---
 # <a name="use-microsoft-teams-for-collaboration"></a>استخدام Microsoft Teams للتعاون
 
@@ -70,11 +70,11 @@ Microsoft Teams هو تطبيق تعاون يساعد أعضاء المؤسسة 
 
 - موقع [SharePoint Online](/MicrosoftTeams/sharepoint-onedrive-interact) ومكتبة مستندات لتخزين ملفات الفريق
 
-- علبة بريد وتقويم مشترك في [Exchange Online](/MicrosoftTeams/exchange-teams-interact)
+- علبة بريد وتقويم [مشتركان Exchange Online](/MicrosoftTeams/exchange-teams-interact)
 
 - دفتر ملاحظات OneNote
 
-- الروابط مع تطبيقات Office 365 الأخرى مثل Planner وPower BI
+- الروابط بتطبيقات Office 365 الأخرى مثل Planner وPower BI
 
 داخل Microsoft Teams، يمكنك العثور على:
 
@@ -104,10 +104,10 @@ Microsoft Teams هو تطبيق تعاون يساعد أعضاء المؤسسة 
 
 تعرف على المزيد حول Microsoft Teams في [الوثائق التقنية ل Microsoft Teams](/microsoftteams/microsoft-teams)
 
-## <a name="admin-settings"></a>إعدادات المسؤول
+## <a name="admin-settings"></a>إعدادات مسؤول
 
-> [!Note]
-> يجب أن تكون مسؤولا لإنشاء فريق على مستوى المؤسسة. لمزيد من المعلومات، راجع [ما هو المسؤول في Microsoft 365؟](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+> [!NOTE]
+> يجب أن تكون مسؤولا لإنشاء فريق على مستوى المؤسسة. لمزيد من المعلومات، راجع [ما هو مسؤول في Microsoft 365؟](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
 
 ## <a name="next-objective"></a>الهدف التالي
 

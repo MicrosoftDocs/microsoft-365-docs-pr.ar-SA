@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -23,19 +23,19 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: تعرف على كيفية تأثير توصيات الأمان هذه ل Microsoft 365 Business Premium على المستخدمين وحماية بياناتك.
-ms.openlocfilehash: 30e609a6dc74ef8a0303c93f65eb44a4003d3a99
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+description: تعرف على كيفية تأثير توصيات الأمان هذه Microsoft 365 Business Premium على المستخدمين وحماية بياناتك.
+ms.openlocfilehash: 49d5a4cea525f8245599ded625af6d7a5b355eae
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893128"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491084"
 ---
 # <a name="how-these-security-recommendations-affect-your-microsoft-365-users"></a>كيف تؤثر توصيات الأمان هذه على مستخدمي Microsoft 365
 
 تجعل توصيات الأمان ل Microsoft 365 في هذا الحل من الصعب جدا على المتسللين الوصول إلى بيئتك. المفاضلة هي أن المستخدمين سيحتاجون إلى أن يكونوا على دراية بكيفية العمل ضمن هذه البيئة الأكثر أمانا. نحن نفهم أن هناك حاجة إلى القليل من الصبر الإضافي، ولكن الأمر يستحق أن تبقى مؤسستك محمية.
 
-![رسم توضيحي يجمع النقاط الرئيسية من الأسفل لأجهزة iPhone وأجهزة Android وأجهزة Mac وWindows 10 والمشاركة والموظفين الرئيسيين.](../media/M365-democracy-Users_900px.png)
+![رسم توضيحي يجمع النقاط الرئيسية من الأسفل لأجهزة iPhone وأجهزة Android وأجهزة Mac Windows 10 والمشاركة والموظفين الرئيسيين.](../media/M365-democracy-Users_900px.png)
 
 ## <a name="use-secure-email-practices"></a>استخدام ممارسات البريد الإلكتروني الآمنة
 
@@ -43,7 +43,7 @@ ms.locfileid: "65893128"
 
 - إعداد البريد الإلكتروني لاستخدام المصادقة متعددة العوامل مع تطبيق المصادقة.
 
-- تحقق من رسائل البريد الإلكتروني المشروعة وابحث عن تلميحات الأمان من الحماية المتقدمة للتصيد الاحتيالي (Defender ل Office 365).
+- تحقق من رسائل البريد الإلكتروني المشروعة وابحث عن تلميحات الأمان من الحماية المتقدمة للتصيد الاحتيالي (Defender لـ Office 365).
 
 - افتح الارتباطات والمرفقات الآمنة فقط، كما تم التحقق من ذلك بواسطة الارتباطات الآمنة والمرفقات الآمنة.
 
@@ -63,7 +63,7 @@ ms.locfileid: "65893128"
 
 بعد إعدادها، ستتم مطالبة المستخدمين باستخدام تطبيق المصادقة عند الوصول إلى بيانات مؤسستك على هذه الأجهزة، بما في ذلك البريد.
 
-## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>الحفاظ على تحديث أجهزة MAC BYOD وأجهزة الكمبيوتر التي تعمل بنظام التشغيل Windows 10
+## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>الحفاظ على تحديث أجهزة MAC BYOD وأجهزة الكمبيوتر Windows 10
 
 من المهم أيضا أن يحافظ المستخدمون على تحديث جهاز العمل الأساسي الخاص بهم:
 
@@ -71,9 +71,9 @@ ms.locfileid: "65893128"
 
 - ابق على اطلاع على تحديثات نظام التشغيل، مثل تحديثات Windows.
 
-بالنسبة إلى [أجهزة Windows 10 وMac غير المدارة](m365bp-protect-pcs-macs.md)، يتحمل المستخدمون مسؤولية ضمان تمكين ميزات الأمان الأساسية.
+بالنسبة [إلى أجهزة Windows 10 وMac غير المدارة](m365bp-protect-pcs-macs.md)، يتحمل المستخدمون مسؤولية ضمان تمكين ميزات الأمان الأساسية.
 
-**تمكين قدرات الأمان الأساسية على أجهزة BYOD Windows 10 وMac**
+### <a name="enable-basic-security-capabilities-on-byod-windows-10-and-mac-devices"></a>تمكين قدرات الأمان الأساسية على أجهزة BYOD Windows 10 وMac
 
 |**Windows 10**|**ماك**|
 |:-----|:------|
@@ -87,4 +87,4 @@ ms.locfileid: "65893128"
 
 ## <a name="set-up-managed-windows-10-devices"></a>إعداد أجهزة Windows 10 المدارة
 
-نوصي بأن يستخدم أهم أعضاء فريق العمل لديك أجهزة Windows 10 التي تم الحصول عليها حديثا والتي تديرها. سنوضح لك كيفية [إدارة هذه الأجهزة وتأمينها](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). وهذا يضمن أن أعضاء فريق العمل الذين هم أعلى قيمة هدف للمتسللين يتلقون أقصى قدر من الحماية.
+نوصي بأن يستخدم أعضاء فريق العمل الأكثر أهمية أجهزة Windows 10 التي تديرها حديثا. سنوضح لك كيفية [إدارة هذه الأجهزة وتأمينها](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). وهذا يضمن أن أعضاء فريق العمل الذين هم أعلى قيمة هدف للمتسللين يتلقون أقصى قدر من الحماية.

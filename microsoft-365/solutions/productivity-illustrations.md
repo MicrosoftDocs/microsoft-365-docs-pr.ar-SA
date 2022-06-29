@@ -1,6 +1,6 @@
 ---
 title: صور توضيحية لإنتاجية Microsoft 365
-description: تعرف على كيفية تنفيذ حلول الإنتاجية Microsoft 365 Microsoft Teams باستخدام الرسومات التخطيطية للبنية هذه.
+description: تعرف على كيفية تنفيذ حلول إنتاجية Microsoft 365 وMicrosoft Teams باستخدام الرسومات التخطيطية للبنية هذه.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,35 +13,35 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 08a85610d7790924e5e702f9d0a4133f391c4bde
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: a0b9688cf184a3b35c4780d4fdaf979fca193380
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669265"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487599"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>صور توضيحية لإنتاجية Microsoft 365
 
-توفر سلسلة حلول المؤسسة Microsoft 365 إرشادات لتنفيذ قدرات Microsoft 365، خاصة عندما تتداخل القدرات بين التقنيات، بما في ذلك الرسومات التخطيطية Teams للبنية.
+توفر سلسلة حلول Microsoft 365 enterprise إرشادات لتنفيذ قدرات Microsoft 365، خاصة عندما تتداخل القدرات بين التقنيات، بما في ذلك الرسومات التخطيطية لبنية Teams.
 
 ## <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams وخدمات الإنتاجية ذات الصلة في Microsoft 365 لمهندسي تكنولوجيا المعلومات
 البنية المنطقية لخدمات الإنتاجية في Microsoft 365، الرائدة مع Microsoft Teams.
 
 | البند | الوصف |
 |:-----|:-----|
-|[![Teams ملصق البنية المنطقية.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>محدث في يناير 2021   |توفر Microsoft مجموعة من خدمات الإنتاجية التي تعمل معا لتوفير تجارب التعاون مع قدرات حوكمة البيانات والأمان والتوافق. <br/> <br/>توفر هذه السلسلة من الرسوم التوضيحية عرضا للبنية المنطقية لخدمات الإنتاجية لمهندسي المؤسسات، ما يؤدي إلى Microsoft Teams.|
+|[![ملصق البنية المنطقية ل Teams.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>محدث في يناير 2021   |توفر Microsoft مجموعة من خدمات الإنتاجية التي تعمل معا لتوفير تجارب التعاون مع قدرات حوكمة البيانات والأمان والتوافق. <br/> <br/>توفر هذه السلسلة من الرسوم التوضيحية عرضا للبنية المنطقية لخدمات الإنتاجية لمهندسي المؤسسات، مع قيادة Microsoft Teams.|
 
-## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>اتصالات الشركة مع Microsoft 365 - دراسة حالة Contoso
+## <a name="corporate-communications-with-microsoft-365--a-contoso-case-study"></a>اتصالات الشركة مع Microsoft 365 — دراسة حالة Contoso
 يعد مشاركة الموظفين مساهما كبيرا في رضا مكان العمل واستبقائه وإنتاجيته في أي مؤسسة. عبر Microsoft 365، هناك طرق متعددة للتواصل مع الجمهور وإشراكه. 
 
 تعتمد معرفة الأسلوب (أو مجموعات الأساليب) التي يجب استخدامها ومتى تستخدمها على جمهورك وثقافة الاتصال في مؤسستك. 
 
 | البند | الوصف |
 |:-----|:-----|
-|[![ملصق سيناريو اتصالات شركة Contoso.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>محدث في يناير 2022   |يوضح هذا الملصق كيف تحافظ شركة Contoso على إعلام الموظفين ومشاركتهم عبر سيناريوهات الاتصال الشائعة. تستخدم شركة Contoso مجموعة متنوعة من تطبيقات Microsoft 365، بما في ذلك عرض جديد، Viva Connections.<br/><br/>**إرشادات الحلول ذات الصلة** <br/> <ul><li>[الاتصالات التنظيمية: الإرشادات والأساليب والمنتجات](/sharepoint/corporate-communications-overview)|
+|[![ملصق سيناريو اتصالات شركة Contoso.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>محدث في يناير 2022   |يوضح هذا الملصق كيف تحافظ شركة Contoso على إعلام الموظفين ومشاركتهم عبر سيناريوهات الاتصال الشائعة. تستخدم Contoso مجموعة متنوعة من تطبيقات Microsoft 365، بما في ذلك عرض جديد، Viva Connections.<br/><br/>**إرشادات الحلول ذات الصلة** <br/> <ul><li>[الاتصالات التنظيمية: الإرشادات والأساليب والمنتجات](/sharepoint/corporate-communications-overview)|
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>المجموعات في Microsoft 365 لمهندسي تكنولوجيا المعلومات
-يتضمن هذا الرسم التوضيحي معلومات لمهندسي تكنولوجيا المعلومات حول مجموعات Microsoft 365. للتعرف على تكوين وإدارة مجموعات Microsoft 365 والفرق للتعاون في مؤسستك، راجع [إعداد تعاون آمن مع Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) وما [هي حوكمة التعاون؟](/microsoft-365/solutions/collaboration-governance-overview).
+يتضمن هذا الرسم التوضيحي معلومات لمهندسي تكنولوجيا المعلومات حول مجموعات Microsoft 365. للتعرف على تكوين وإدارة مجموعات Microsoft 365 والفرق للتعاون في مؤسستك، راجع [إعداد تعاون آمن مع Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) وما [المقصود بإدارة التعاون؟](/microsoft-365/solutions/collaboration-governance-overview).
 
 | البند | الوصف |
 |:-----|:-----|
@@ -49,30 +49,30 @@ ms.locfileid: "65669265"
 
 ## <a name="migrate-to-microsoft-365"></a>ترحيل بياناتك إلى Microsoft 365
 
-توفر Microsoft أدوات ترحيل مشاركات ملفات الشبكة المحلية ومواقع SharePoint Server Microsoft 365 مع التركيز على حماية المحتوى وضمان أمانه أثناء الترحيل. توضح هذه المجموعة من الرسوم التوضيحية الأساليب المختلفة المتاحة لنقل المحتوى إلى SharePoint Teams OneDrive وكيفية تدفق البيانات عبر العملية.
+توفر Microsoft أدوات ترحيل مشاركات ملفات الشبكة المحلية ومواقع SharePoint Server إلى Microsoft 365 مع التركيز على حماية المحتوى وضمان أمانه أثناء الترحيل. توضح هذه المجموعة من الرسومات التوضيحية الطرق المختلفة المتوفرة لنقل المحتوى إلى SharePoint وTeams وOneDrive وكيفية تدفق البيانات عبر العملية.
 
 | البند | الوصف |
 |:-----|:-----|
 |[![ملصق النموذج: ترحيل إلى Microsoft 365.](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\| [Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> محدث في مارس 2021 |يتضمن: <ul><li> ترحيل مشاركة الملفات</li><li>ترحيل SharePoint Server</li></ul> <p> لمزيد من المعلومات، راجع [ترحيل المحتوى إلى Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
 
-## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 قدرات حماية المعلومات والامتثال
+## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>قدرات حماية المعلومات والامتثال في Microsoft 365
 
-تتضمن Microsoft 365 مجموعة واسعة من قدرات حماية المعلومات والامتثال. جنبا إلى جنب مع أدوات الإنتاجية من Microsoft، تم تصميم هذه القدرات لمساعدة المؤسسات على التعاون في الوقت الحقيقي مع الالتزام بأطر الامتثال التنظيمي الصارمة.
+يتضمن Microsoft 365 مجموعة واسعة من قدرات حماية المعلومات والامتثال. جنبا إلى جنب مع أدوات الإنتاجية من Microsoft، تم تصميم هذه القدرات لمساعدة المؤسسات على التعاون في الوقت الحقيقي مع الالتزام بأطر الامتثال التنظيمي الصارمة.
 
 تستخدم هذه المجموعة من الرسوم التوضيحية إحدى أكثر الصناعات تنظيما، وهي الخدمات المالية، لتوضيح كيفية تطبيق هذه القدرات لتلبية المتطلبات التنظيمية الشائعة. لا تتردد في تكييف هذه الرسومات التوضيحية لاستخدامك الخاص.
 
 
 | البند | الوصف |
 |:-----|:-----|
-|[![ملصق النموذج: Microsoft 365 قدرات حماية المعلومات والامتثال.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> الإنجليزية: [تنزيل كملف PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> اليابانية: [تنزيل كملف PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> تم التحديث في نوفمبر 2020|يتضمن: <ul><li>  حماية المعلومات والوقاية من فقدان البيانات</li><li>نهج الاستبقاء وتسميات الاستبقاء </li><li>عوائق المعلومات</li><li>توافق الاتصالات</li><li>مخاطر Insider</li><li>استيعاب بيانات الجهات الخارجية</li>|
+|[![ملصق النموذج: قدرات حماية المعلومات والامتثال في Microsoft 365.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> الإنجليزية: [تنزيل بتنسيق PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download ك Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> اليابانية: [تنزيل بتنسيق PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Download ك Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> تم التحديث في نوفمبر 2020|يتضمن: <ul><li>  حماية المعلومات والوقاية من فقدان البيانات</li><li>نهج الاستبقاء وتسميات الاستبقاء </li><li>عوائق المعلومات</li><li>توافق الاتصالات</li><li>مخاطر Insider</li><li>استيعاب بيانات الجهات الخارجية</li>|
 
 
 ## <a name="security-and-information-protection-for-multi-region-organizations"></a>الأمان حماية البيانات للمؤسسات متعددة المناطق
-الأمان وحماية المعلومات للمؤسسات متعددة المناطق التي لها مستأجر واحد Microsoft 365
+حماية الأمان والمعلومات للمؤسسات متعددة المناطق ذات مستأجر Microsoft 365 واحد
 
 | البند | الوصف |
 |:-----|:-----|
-|[![مخطط معلوماتي متعدد المناطق.](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>محدث في مارس 2020 |يعد استخدام مستأجر واحد Microsoft 365 لمؤسستك العالمية هو الخيار الأفضل والخبرة لأسباب عديدة. ومع ذلك، فإن العديد من المهندسين المعماريين يألفون كيفية تحقيق أهداف الأمان وحماية المعلومات عبر مناطق مختلفة. توفر هذه المجموعة من المواضيع توصيات. |
+|[![مخطط معلوماتي متعدد المناطق.](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>محدث في مارس 2020 |يعد استخدام مستأجر Microsoft 365 واحد لمؤسستك العالمية الخيار الأفضل والخبرة لأسباب عديدة. ومع ذلك، فإن العديد من المهندسين المعماريين يألفون كيفية تحقيق أهداف الأمان وحماية المعلومات عبر مناطق مختلفة. توفر هذه المجموعة من المواضيع توصيات. |
 
 <!--
 ## Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
@@ -92,7 +92,7 @@ If your organization is agile, you have a small IT team, and your threat profile
 
 | البند | الوصف |
 |:-----|:-----|
-|[![صورة مصغرة لاستراتيجية نشر Microsoft Defender لنقطة النهاية.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)\| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)   <br>تم التحديث في سبتمبر 2021| تساعدك المواد المعمارية على تخطيط التوزيع الخاص بك للبنى التالية: <ul><li> السحابة الأصلية </li><li> الإدارة المشتركة </li><li> محلي</li><li>التقييم والإلحاق المحلي</li> |
+|[![صورة مصغرة لاستراتيجية نشر Microsoft Defender لنقطة النهاية.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>تم التحديث في سبتمبر 2021| تساعدك المواد المعمارية على تخطيط التوزيع الخاص بك للبنى التالية: <ul><li> السحابة الأصلية </li><li> الإدارة المشتركة </li><li> محلي</li><li>التقييم والإلحاق المحلي</li> |
 <!--
 
 <a name="BKMK_O365IDP"></a>
@@ -107,26 +107,27 @@ Recommended Zero Trust capabilities for protecting identities and devices that a
 --> 
 <a name="BKMK_ediscovery"></a>
 
-## <a name="ediscovery-premium-architecture-in-microsoft-365"></a>بنية eDiscovery (Premium) في Microsoft 365
+## <a name="ediscovery-premium-architecture-in-microsoft-365"></a>تصميم eDiscovery (Premium) في Microsoft 365
 
-سير عمل eDiscovery (Premium) من طرف إلى طرف وتدفق البيانات، بما في ذلك داخل Microsoft 365 بيئات متعددة المناطق الجغرافية.
+سير عمل eDiscovery (Premium) الشامل وتدفق البيانات، بما في ذلك داخل بيئات Microsoft 365 Multi-Geo.
 
 | البند | الوصف |
 |:-----|:-----|
-|[![ملصق النموذج: تصميم eDiscovery (Premium) في Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [عرض كصورة](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [تنزيل بتنسيق PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)\| [تنزيل ك Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> تم التحديث في أكتوبر 2020|يتضمن: <ul><li>  سير عمل شامل في بيئة واحدة</li><li>سير عمل من طرف إلى طرف في بيئة Microsoft 365 متعددة المناطق الجغرافية </li><li>تدفق البيانات الشاملة التي تدعم سير عمل EDRM</li> |
+|[![ملصق النموذج: تصميم eDiscovery (Premium) في Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [عرض كصورة](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [تنزيل بتنسيق PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)  \| [تنزيل ك Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx) <br/> تم التحديث في أكتوبر 2020|يتضمن: <ul><li>  سير عمل شامل في بيئة واحدة</li><li>سير عمل شامل في بيئة Microsoft 365 Multi-Geo </li><li>تدفق البيانات الشاملة التي تدعم سير عمل EDRM</li> |
 
 ## <a name="microsoft-telephony-solutions"></a>حلول الهتفية من Microsoft
 
-تدعم Microsoft العديد من الخيارات عند بدء رحلتك Teams في سحابة Microsoft. يساعدك هذا الملصق على تحديد حل الهتفية من Microsoft (نظام الهاتف في السحابة أو صوت Enterprise المحلي) المناسب للمستخدمين في مؤسستك، وكيف يمكن لمؤسستك الاتصال بشبكة الهاتف العامة (PSTN).
+يساعدك هذا الملصق على تحديد حل الهتفية من Microsoft المناسب للمستخدمين في مؤسستك. وهو يصف نظام الهاتف، تقنية Microsoft لتمكين التحكم في المكالمات وقدرات Private Branch Exchange (PBX) في Microsoft 365 مع Microsoft Teams. يصف الملصق أيضا خيارات توصيل نظام الهاتف بشبكة الهاتف العامة (PSTN).  
+
 
 | البند | الوصف |
 |:-----|:-----|
-|[![ملصق حلول الهتفية من Microsoft.](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>محدث في مارس 2021 | لمزيد من المعلومات، راجع [التخطيط لحل الصوت Teams](/microsoftteams/cloud-voice-landing-page).|
+|[![ملصق حلول الهتفية من Microsoft.](../media/solutions-architecture-center/microsoft-voice-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>تم التحديث في يونيو 2022 | لمزيد من المعلومات، راجع [خطة حل صوت Teams](/microsoftteams/cloud-voice-landing-page).|
 
 
 ## <a name="set-up-your-infrastructure-for-hybrid-work"></a>إعداد البنية الأساسية للعمل المختلط
 
-باستخدام Microsoft 365 والتقنيات السحابية الأخرى من Microsoft، يمكنك تزويد العاملين لديك بإمكانية وصول آمنة إلى المعلومات والأدوات والموارد المحلية والمستندة إلى السحابة في مؤسستك من منازلهم.
+باستخدام Microsoft 365 وتقنيات Microsoft السحابية الأخرى، يمكنك تزويد العاملين لديك بإمكانية وصول آمنة إلى المعلومات والأدوات والموارد المحلية والمستندة إلى السحابة في مؤسستك من منازلهم.
 
 [![إعداد البنية الأساسية لملصق العمل المختلط.](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf) <br/>
 [PDF](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)   <br>
@@ -136,10 +137,10 @@ Recommended Zero Trust capabilities for protecting identities and devices that a
 
 ## <a name="microsoft-teams-with-security-isolation"></a>Microsoft Teams مع عزل الأمان
 
-باستخدام Microsoft 365، يمكنك تكوين فريق خاص في Microsoft Teams واستخدام إعدادات أمان الموقع SharePoint وتسمية حساسية فريدة لتشفير الملفات بحيث يمكن لأعضاء الفريق فقط فك تشفيرها.
+باستخدام Microsoft 365، يمكنك تكوين فريق خاص في Microsoft Teams واستخدام إعدادات أمان موقع SharePoint وتسمية حساسية فريدة لتشفير الملفات بحيث يمكن لأعضاء الفريق فقط فك تشفيرها.
 
 [![Microsoft Teams مع ملصق عزل الأمان.](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) |  [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) |  [Powerpoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br>
 محدث في أغسطس 2020
 
 لمزيد من المعلومات، راجع المقالة الخاصة بهذا الملصق: [تكوين فريق مع عزل الأمان](secure-teams-security-isolation.md).

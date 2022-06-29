@@ -18,18 +18,18 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: تعرف على كيفية التحكم في المستخدمين الذين يمكنهم إنشاء مجموعات Microsoft 365.
-ms.openlocfilehash: 992f5c62654f23f90f910f62dc3bb78199b949b0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2136fbf51912e00b7552e687282d4a80688dcd9e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946913"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493032"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>إدارة الأشخاص الذين يمكنهم إنشاء مجموعات Microsoft 365
 
 بشكل افتراضي، يمكن لجميع المستخدمين إنشاء مجموعات Microsoft 365. هذا هو النهج الموصى به لأنه يسمح للمستخدمين بالبدء في التعاون دون الحاجة إلى مساعدة من تكنولوجيا المعلومات.
 
-إذا تطلب عملك تقييد الأشخاص الذين يمكنهم إنشاء مجموعات، يمكنك تقييد إنشاء مجموعات Microsoft 365 لأعضاء مجموعة Microsoft 365 معينة أو مجموعة أمان معينة.
+إذا تطلب عملك تقييد الأشخاص الذين يمكنهم إنشاء مجموعات، فيمكنك تقييد إنشاء مجموعات Microsoft 365 لأعضاء مجموعة Microsoft 365 معينة أو مجموعة أمان معينة.
 
 إذا كنت قلقا بشأن المستخدمين الذين ينشئون فرقا أو مجموعات لا تتوافق مع معايير عملك، ففكر في مطالبة المستخدمين بإكمال دورة تدريبية ثم إضافتهم إلى مجموعة المستخدمين المسموح لهم.
 
@@ -44,11 +44,11 @@ ms.locfileid: "64946913"
 - Power BI (كلاسيكي)
 - Project للويب / المخطط
 
-لن تمنع الخطوات الواردة في هذه المقالة أعضاء أدوار معينة من إنشاء مجموعات. Microsoft 365 يمكن للمسؤولين العموميين إنشاء مجموعات عبر مركز مسؤولي Microsoft 365 و Planner Exchange SharePoint، ولكن ليس مواقع أخرى مثل Teams. يمكن لأدوار أخرى إنشاء مجموعات Microsoft 365 عبر وسائل محدودة، مدرجة أدناه.
+لن تمنع الخطوات الواردة في هذه المقالة أعضاء أدوار معينة من إنشاء مجموعات. يمكن لمسؤولي Microsoft 365 العموميين إنشاء مجموعات عبر مركز مسؤولي Microsoft 365 و Planner وExchange وSharePoint، ولكن ليس مواقع أخرى مثل Teams. يمكن لأدوار أخرى إنشاء مجموعات Microsoft 365 عبر وسائل محدودة، مدرجة أدناه.
 
 - مسؤول Exchange: مركز إدارة Exchange، Azure AD
-- دعم الشريك من المستوى 1: مركز مسؤولي Microsoft 365، مركز إدارة Exchange، Azure AD
-- دعم الشريك من المستوى 2: مركز مسؤولي Microsoft 365، مركز إدارة Exchange، Azure AD
+- دعم الشريك من المستوى 1: مركز مسؤولي Microsoft 365 ومركز إدارة Exchange Azure AD
+- دعم الشريك من المستوى 2: مركز مسؤولي Microsoft 365 ومركز إدارة Exchange Azure AD
 - كتاب الدليل: Azure AD
 - مسؤول SharePoint: مركز إدارة SharePoint، Azure AD
 - مسؤول خدمة Teams: مركز إدارة Teams، Azure AD
@@ -58,7 +58,7 @@ ms.locfileid: "64946913"
 
 ## <a name="licensing-requirements"></a>متطلبات الترخيص
 
-لإدارة من يقوم بإنشاء المجموعات، يحتاج الأشخاص التاليون إلى تراخيص Premium Azure AD أو تراخيص Azure AD Basic EDU المعينة لهم:
+لإدارة من يقوم بإنشاء المجموعات، يحتاج الأشخاص التاليون Azure AD تراخيص Premium أو Azure AD تراخيص EDU الأساسية المعينة لهم:
 
 - المسؤول الذي يقوم بتكوين إعدادات إنشاء المجموعة هذه
 - أعضاء المجموعة المسموح لهم بإنشاء مجموعات
@@ -66,7 +66,7 @@ ms.locfileid: "64946913"
 > [!NOTE]
 > راجع [تعيين التراخيص أو إزالتها في مدخل Microsoft Azure Active Directory](/azure/active-directory/fundamentals/license-users-groups) للحصول على مزيد من التفاصيل حول كيفية تعيين تراخيص Azure.
 
-لا يحتاج الأشخاص التاليون إلى تراخيص Azure AD Premium أو Azure AD Basic EDU المعينة لهم:
+لا يحتاج الأشخاص التاليون Azure AD تراخيص Premium أو Azure AD Basic EDU المعينة لهم:
 
 - الأشخاص الأعضاء في مجموعات Microsoft 365 والذين ليس لديهم القدرة على إنشاء مجموعات أخرى.
 
@@ -88,15 +88,15 @@ ms.locfileid: "64946913"
 
 ## <a name="step-2-run-powershell-commands"></a>الخطوة 2: تشغيل أوامر PowerShell
 
-يجب استخدام إصدار المعاينة من [Azure Active Directory PowerShell ل Graph (AzureAD)](/powershell/azure/active-directory/install-adv2) (اسم الوحدة النمطية **AzureADPreview**) لتغيير إعداد الوصول إلى الضيف على مستوى المجموعة:
+يجب استخدام إصدار المعاينة من [Azure Active Directory PowerShell ل Graph (AzureAD)](/powershell/azure/active-directory/install-adv2) (اسم الوحدة النمطية **AzureADPreview**) لتغيير إعداد وصول الضيف على مستوى المجموعة:
 
-- إذا لم تكن قد قمت بتثبيت أي إصدار من الوحدة النمطية Azure AD PowerShell من قبل، فراجع [تثبيت وحدة Azure AD النمطية](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) واتبع الإرشادات لتثبيت إصدار المعاينة العامة.
+- إذا لم تكن قد قمت بتثبيت أي إصدار من الوحدة النمطية Azure AD PowerShell من قبل، فراجع [تثبيت الوحدة النمطية Azure AD واتبع](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) الإرشادات لتثبيت إصدار المعاينة العامة.
 
-- إذا كان لديك إصدار التوفر العام 2.0 للوحدة النمطية Azure AD PowerShell (AzureAD)، يجب إلغاء تثبيته عن طريق التشغيل `Uninstall-Module AzureAD` في جلسة PowerShell، ثم تثبيت إصدار المعاينة عن طريق تشغيل `Install-Module AzureADPreview`.
+- إذا كان لديك إصدار التوفر العام 2.0 للوحدة النمطية Azure AD PowerShell (AzureAD)، يجب إلغاء تثبيته عن طريق تشغيله `Uninstall-Module AzureAD` في جلسة عمل PowerShell، ثم تثبيت إصدار المعاينة عن طريق تشغيل `Install-Module AzureADPreview`.
 
-- إذا قمت بالفعل بتثبيت إصدار المعاينة، فقم بتشغيله `Install-Module AzureADPreview` للتأكد من أنه أحدث إصدار من هذه الوحدة النمطية.
+- إذا قمت بالفعل بتثبيت إصدار المعاينة، فقم بتشغيله `Update-Module AzureADPreview` للتأكد من أنه أحدث إصدار من هذه الوحدة النمطية.
 
-انسخ البرنامج النصي أدناه إلى محرر نص، مثل المفكرة أو [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
+انسخ البرنامج النصي أدناه إلى محرر نص، مثل المفكرة، أو [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
 استبدل *\<GroupName\>* باسم المجموعة التي قمت بإنشائها. على سبيل المثال:
 

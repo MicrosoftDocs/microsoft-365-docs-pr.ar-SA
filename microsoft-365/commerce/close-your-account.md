@@ -21,14 +21,14 @@ ms.custom:
 search.appverid: MET150
 description: عند إغلاق حسابك باستخدام Microsoft، يتم حذف كل المعلومات المتعلقة بحسابك بما في ذلك التراخيص والمستخدمين وبيانات المستخدم.
 ms.date: 04/02/2021
-ms.openlocfilehash: c036a4cda929d58265a088b15a43772caacb0b94
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: a14dd1153d8030dd953c58404902a891aeefdaf9
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102449"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491748"
 ---
-# <a name="close-your-account"></a>إغلاق حسابك
+# <a name="close-your-microsoft-account"></a>إغلاق حساب Microsoft الخاص بك
 
 عند إغلاق حسابك في Microsoft، ستُحذف كل المعلومات المتعلقة بحسابك. تتضمن هذه المعلومات الاشتراكات والتراخيص وطرق الدفع والمستخدمين وبياناتهم.
 
@@ -90,8 +90,8 @@ ms.locfileid: "66102449"
 
 بعد إكمال هذه الخطوة الأخيرة، يتم إغلاق حسابك مع Microsoft وحذفه.
 
-## <a name="related-content"></a>المحتويات ذات الصلة 
+## <a name="related-content"></a>المحتوى ذو الصلة 
 
-[فهم فاتورتك أو فاتورتك Microsoft 365 للأعمال](./billing-and-payments/understand-your-invoice2.md) (مقالة)\
+[فهم فاتورتك أو فاتورتك ل Microsoft 365 للأعمال](./billing-and-payments/understand-your-invoice2.md) (مقالة)\
 [إلغاء اشتراكك](./subscriptions/cancel-your-subscription.md) (مقالة)
 

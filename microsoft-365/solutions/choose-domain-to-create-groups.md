@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: تعرف على كيفية اختيار المجال الذي تريد استخدامه عند إنشاء مجموعات Microsoft 365 عن طريق تكوين نهج عناوين البريد الإلكتروني باستخدام PowerShell.
-ms.openlocfilehash: c6eb1bbccf8745c88941f40d6fefeed29aec5620
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bd9fad340d136fe4cac228f94f1904761cff7071
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012527"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490886"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>اختر المجال الذي تريد استخدامه عند إنشاء مجموعات Microsoft 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "66012527"
   
 إذا كانت مؤسستك بحاجة إلى أن يقوم المستخدمون بإنشاء مجموعاتهم في مجالات أخرى غير المجال المقبول الافتراضي لأعمالك، يمكنك السماح بذلك عن طريق تكوين نهج عناوين البريد الإلكتروني (EAPs) باستخدام PowerShell.
 
-قبل أن تتمكن من تشغيل PowerShell cmdlets، قم بتنزيل وتثبيت وحدة نمطية تسمح لك بالتحدث إلى مؤسستك. تحقق [من الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+قبل أن تتمكن من تشغيل PowerShell cmdlets، قم بتنزيل وتثبيت وحدة نمطية تسمح لك بالتحدث إلى مؤسستك. تحقق من [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="example-scenarios"></a>أمثلة على السيناريوهات
 
@@ -50,7 +50,7 @@ ms.locfileid: "66012527"
   
 ### <a name="scenario-1"></a>السيناريو 1
 
-يوضح لك المثال التالي كيفية توفير كافة مجموعات Microsoft 365 في مؤسستك في مجال groups.contoso.com.
+يوضح لك المثال التالي كيفية توفير جميع مجموعات Microsoft 365 في مؤسستك في مجال groups.contoso.com.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -58,7 +58,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>السيناريو 2
 
-لنفترض أنك تريد التحكم في المجالات الفرعية Microsoft 365 المجموعات التي تم إنشاؤها فيها. أنت تريد:
+لنفترض أنك تريد التحكم في المجالات الفرعية التي يتم إنشاء مجموعات Microsoft 365 فيها. أنت تريد:
   
 - المجموعات التي أنشأها الطلاب (المستخدمون الذين تم تعيين **القسم** **لهم)** في مجال students.groups.contoso.com. استخدم هذا الأمر:
     
@@ -77,7 +77,9 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
   ```
-
+> [!NOTE]
+> لا يعمل هذا السيناريو عندما يشير سجل MX إلى تصفية البريد العشوائي لجهة خارجية.
+ 
 ## <a name="change-email-address-policies"></a>تغيير نهج عنوان البريد الإلكتروني
 
 لتغيير قوالب الأولوية أو عنوان البريد الإلكتروني ل EAP موجود، استخدم Set-EmailAddressPolicy cmdlet.
@@ -101,7 +103,7 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
   
 ## <a name="hybrid-requirements"></a>المتطلبات المختلطة
 
-إذا تم تكوين مؤسستك في سيناريو مختلط، فتحقق من [تكوين مجموعات Microsoft 365 مع Exchange مختلطة محلية](/exchange/hybrid-deployment/set-up-microsoft-365-groups) للتأكد من أن مؤسستك تلبي متطلبات إنشاء مجموعات Microsoft 365. 
+إذا تم تكوين مؤسستك في سيناريو مختلط، فراجع [تكوين مجموعات Microsoft 365 باستخدام Exchange المختلط المحلي](/exchange/hybrid-deployment/set-up-microsoft-365-groups) للتأكد من أن مؤسستك تلبي متطلبات إنشاء مجموعات Microsoft 365. 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>معلومات إضافية حول استخدام مجموعات نهج عناوين البريد الإلكتروني:
 
@@ -119,7 +121,7 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
     
 - يمكن تكوين حد أقصى يبلغ 100 نهج لعناوين البريد الإلكتروني لمؤسسة ما.
     
-## <a name="related-content"></a>المحتويات ذات الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
 [توصيات تخطيط حوكمة التعاون](collaboration-governance-overview.md#collaboration-governance-planning-recommendations) (مقالة)
 

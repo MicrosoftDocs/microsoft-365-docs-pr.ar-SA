@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/20/2022
-ms.openlocfilehash: 78eb4f9cb65fb5eec54747a256abf290a43deb2f
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.date: 06/24/2022
+ms.openlocfilehash: d9ff97aa50a03c1a75f073328a250a9acc3faf54
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185448"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490742"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>التحكم في الوصول إلى التخزين القابل للإزالة Microsoft Defender لنقطة النهاية Device Control
 
@@ -57,11 +57,13 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 نشر التحكم في الوصول إلى التخزين القابل للإزالة على أجهزة Windows 10 وأجهزة Windows 11 التي تحتوي على إصدار عميل مكافحة البرامج الضارة **4.18.2103.3 أو إصدار أحدث**.
 
-- **4.18.2104 أو أحدث**: إضافة SerialNumberId، VID_PID، دعم عنصر نهج المجموعة المستند إلى filepath، ComputerSid
+- **4.18.2104 أو أحدث**: إضافة `SerialNumberId`دعم `VID_PID`عنصر نهج المجموعة المستند إلى filepath و `ComputerSid`
 
-- **4.18.2105 أو الإصدارات الأحدث**: إضافة دعم Wildcard ل HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId، وهو مزيج من مستخدم معين على جهاز معين، SSD قابل للإزالة (SanDisk Extreme SSD)/دعم SCSI المرفق USB (UAS)
+- **4.18.2105 أو الإصدارات الأحدث**: إضافة دعم Wildcard ل `HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId`، مزيج من مستخدم معين على جهاز معين، SSD القابل للإزالة (SSD أقصى SanDisk)/دعم SCSI المرفقة USB (UAS)
 
-- **4.18.2107 أو إصدار أحدث**: إضافة دعم Windows Portable Device (WPD) (للأجهزة المحمولة، مثل الأجهزة اللوحية)؛ إضافة AccountName إلى [التتبع المتقدم](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
+- **4.18.2107 أو إصدار أحدث**: إضافة دعم Windows Portable Device (WPD) (للأجهزة المحمولة، مثل أجهزة الكمبيوتر اللوحية)؛ إضافة `AccountName` إلى [التتبع المتقدم](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
+
+- **4.18.2205 أو أحدث**: قم بتوسيع التطبيق الافتراضي إلى **Printer**. إذا قمت بتعيينه إلى **"رفض**"، فسيتم حظر الطابعة أيضا، لذلك إذا كنت تريد فقط إدارة التخزين، فتأكد من إنشاء نهج مخصص للسماح بالطابعة.
 
 :::image type="content" source="images/powershell.png" alt-text="واجهة PowerShell" lightbox="images/powershell.png":::
 
@@ -154,15 +156,13 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 ### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI
 
-انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>) **> الأجهزة > إنشاء > النظام الأساسي لملف التعريف: Windows 10 والإيجابيات الأحدث، نوع ملف التعريف: قوالب > مخصصة**
+انتقل إلى مركز إدارة Microsoft إدارة نقاط النهاية (<https://endpoint.microsoft.com/>) **> Devices > إنشاء > النظام الأساسي لملف التعريف: Windows 10 والإيجابيات الأحدث، نوع ملف التعريف: قوالب > مخصص**
 
-1. تمكين التحكم في الوصول إلى التخزين القابل للإزالة (RSAC) أو تعطيله:
-
-   يمكنك تمكين التحكم في الوصول إلى التخزين القابل للإزالة كما يلي:
+1. تمكين التحكم في الجهاز أو تعطيله كما يلي:
 
    - ضمن **إعدادات تكوين > المخصصة**، انقر فوق **"إضافة**".
    - في الجزء **"إضافة صف** "، أدخل:
-     - **الاسم** **كتمكين RSAC**
+     - **الاسم** **كتمكين عنصر تحكم الجهاز**
      - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
      - **نوع البيانات** **كعدد صحيح**
      - **القيمة** ك **1**
@@ -176,9 +176,9 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 2. تعيين الإنفاذ الافتراضي:
 
-   يمكنك تعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج.
+   يمكنك تعيين الوصول الافتراضي (رفض أو السماح) لكافة ميزات التحكم في الجهاز (`RemovableMediaDevices`، ، `CdRomDevices`، `WpdDevices``PrinterDevices`).
 
-   على سبيل المثال، لديك إما نهج الرفض أو السماح ل RemovableMediaDevices، ولكن ليس لديك أي نهج ل CdRomDevices أو WpdDevices. يمكنك تعيين الرفض الافتراضي من خلال هذا النهج، ثم سيتم حظر الوصول للقراءة/الكتابة/التنفيذ إلى CdRomDevices أو WpdDevices.
+   على سبيل المثال، لديك إما نهج **رفض** أو **السماح** ل `RemovableMediaDevices`، ولكن ليس لديك نهج ل `CdRomDevices` أو `WpdDevices`. يمكنك تعيين **"الرفض الافتراضي** " من خلال هذا النهج، ثم الوصول للقراءة/الكتابة/التنفيذ إلى `CdRomDevices` أو `WpdDevices` سيتم حظره. إذا كنت تريد إدارة التخزين فقط، فتأكد من إنشاء نهج **السماح** للطابعة؛ وإلا، سيتم تطبيق هذا الإنفاذ الافتراضي على الطابعات أيضا.
 
    - في الجزء **"إضافة صف** "، أدخل:
      - **الاسم** **كرفض افتراضي**
@@ -195,7 +195,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 3. رفض التدقيق الافتراضي:
 
-   يمكنك إنشاء نهج التدقيق للرفض الافتراضي كما يلي:
+   يمكنك إنشاء نهج تدقيق للرفض الافتراضي كما يلي:
 
    - في الجزء **"إضافة صف** "، أدخل:
      - **الاسم** **كرفض افتراضي للتدقيق**
@@ -208,13 +208,13 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
        مسار ملف XML: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20Default%20Deny.xml>
 
-       استخدم بيانات XML التالية لإنشاء نهج التدقيق للرفض الافتراضي:
+       استخدم بيانات XML التالية لإنشاء نهج التدقيق الخاص بك للرفض الافتراضي:
 
        :::image type="content" source="images/audit-default-deny-xml-file-1.png" alt-text="لقطة شاشة لملف xml لرفض التدقيق الافتراضي":::
 
 4. ReadOnly - المجموعة:
 
-   يمكنك إنشاء مجموعة تخزين قابلة للإزالة باستخدام الوصول إلى ReadOnly كما يلي:
+   يمكنك إنشاء مجموعة تخزين قابلة للإزالة مع وصول ReadOnly كما يلي:
 
    - في الجزء **"إضافة صف** "، أدخل:
      - **الاسم** **كأي مجموعة تخزين قابلة للإزالة**
@@ -250,7 +250,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
        :::image type="content" source="images/read-only-policy-xml-file.png" alt-text="لقطة شاشة لملف xml لنهج القراءة فقط":::
 
-6. إنشاء مجموعة للوسائط المسموح بها: يمكنك إنشاء مجموعة وسائط مسموح بها كما يلي:
+6. إنشاء مجموعة للوسائط المسموح بها: يمكنك إنشاء مجموعة الوسائط المسموح بها كما يلي:
    - في الجزء **"إضافة صف** "، أدخل:
      - **الاسم** كمجموعة **USBs المعتمدة**
      - **OMA-URI** ك `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b65fa649a-a111-4912-9294-fb6337a25038%7d/GroupData`
@@ -290,11 +290,11 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>نشر النهج وإدارته باستخدام واجهة مستخدم Intune
 
-تتوفر هذه الإمكانية في مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com/>). انتقل إلى نهج **إنشاء** **تقليل** >  الأجزاء المعرضة للهجوم **الأمني** >  لنقطة النهاية. اختر **النظام الأساسي: Windows 10 والإي وقت لاحق** باستخدام **ملف التعريف: التحكم في الجهاز**.
+تتوفر هذه الإمكانية في مركز إدارة Microsoft إدارة نقاط النهاية (<https://endpoint.microsoft.com/>). انتقل إلى نهج **إنشاء** **تقليل** >  الأجزاء المعرضة للهجوم **الأمني** >  لنقطة النهاية. اختر **النظام الأساسي: Windows 10 والإي وقت لاحق** باستخدام **ملف التعريف: التحكم في الجهاز**.
 
 ## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة وإدارته باستخدام نهج المجموعة
 
-تمكنك ميزة التحكم في الوصول إلى التخزين القابل للإزالة من تطبيق النهج باستخدام نهج المجموعة على المستخدم أو الجهاز أو كليهما.
+تمكنك ميزة التحكم في الوصول إلى التخزين القابل للإزالة من تطبيق نهج باستخدام نهج المجموعة على المستخدم أو الجهاز أو كليهما.
 
 ### <a name="licensing"></a>الترخيص
 
@@ -304,18 +304,20 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 1. تمكين التحكم في الوصول إلى التخزين القابل للإزالة أو تعطيله:
 
-   يمكنك تمكين التحكم في الوصول إلى التخزين القابل للإزالة (RSAC) كما يلي:
+   يمكنك تمكين التحكم في الجهاز كما يلي:
 
-   - الانتقال إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > ميزات > التحكم في الجهاز**
+   - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > مكونات Windows > ميزات > برنامج الحماية من الفيروسات من Microsoft Defender > التحكم في الجهاز**
    - في نافذة **"التحكم بالجهاز** "، حدد **"ممكن**".
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="لقطة شاشة لتمكين RSAC باستخدام نهج المجموعة " lightbox="images/enable-rsac-gp.png":::
 
 2. تعيين الإنفاذ الافتراضي:
 
-   يمكنك تعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج كما يلي:
+   يمكنك تعيين الوصول الافتراضي (رفض أو السماح) لكافة ميزات التحكم في الجهاز (RemovableMediaDevices، وDdRomDevices، وWpdDevices، و PrinterDevices).
 
-   - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > ميزات > التحكم في الجهاز > تحديد الإنفاذ الافتراضي للتحكم في الجهاز**
+   على سبيل المثال، لديك إما نهج الرفض أو السماح ل RemovableMediaDevices، ولكن ليس لديك أي نهج ل CdRomDevices أو WpdDevices. يمكنك تعيين الرفض الافتراضي من خلال هذا النهج، ثم سيتم حظر الوصول للقراءة/الكتابة/التنفيذ إلى CdRomDevices أو WpdDevices. إذا كنت تريد فقط إدارة التخزين، فتأكد من إنشاء نهج السماح للطابعة، وإلا، فسيتم تطبيق "الإنفاذ الافتراضي" هذا على الطابعة أيضا.
+
+   - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > مكونات Windows > ميزات > برنامج الحماية من الفيروسات من Microsoft Defender > التحكم بالجهاز > تحديد الإنفاذ الافتراضي للتحكم في الجهاز**
 
    - في نافذة **«Select Device Control Default Enforcement»** ، حدد **«Default Deny»**:
 
@@ -361,7 +363,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
    يمكنك دمج مجموعات نهج التحكم في الجهاز في ملف XML واحد كما يلي:
 
-   - انتقل إلى **القوالب** \> الإدارية **لتكوين** \> الكمبيوتر **Windows المكونات** \> **برنامج الحماية من الفيروسات من Microsoft Defender** \> **مجموعات نهج التحكم بالجهاز.** \>
+   - انتقل إلى **القوالب** \> الإدارية **لتكوين** \> الكمبيوتر في **مكونات Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control** \> **، وحدد مجموعات نهج التحكم في الجهاز**.
 
     :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="لقطة شاشة لتعريف مجموعات نهج التحكم في الجهاز" lightbox="images/define-device-control-policy-grps-gp.png":::
 
@@ -377,7 +379,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
    يمكنك دمج قواعد نهج التحكم في الجهاز في ملف XML واحد كما يلي:
 
-   - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > التحكم بالجهاز > تحديد قواعد نهج التحكم في الجهاز**
+   - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > مكونات Windows > Microsoft Defender Antivirus > التحكم في الأجهزة > تحديد قواعد نهج التحكم في الجهاز**
 
      :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="لقطة شاشة لتحديد قواعد نهج التحكم في الجهاز" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
 
@@ -393,7 +395,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
     إذا كنت تريد الحصول على نسخة من الملف (دليل) عند حدوث الوصول للكتابة، يجب عليك تعيين الموقع الذي يمكن للنظام حفظ النسخة فيه.
 
-    - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows المكونات > برنامج الحماية من الفيروسات من Microsoft Defender > عنصر تحكم الجهاز > تحديد موقع بيانات دليل التحكم بالجهاز عن بعد**.
+    - انتقل إلى **تكوين الكمبيوتر > القوالب الإدارية > Windows Components > Microsoft Defender Antivirus > Device Control > تحديد موقع بيانات دليل التحكم في الأجهزة عن بعد**.
 
     - في نافذة **تحديد موقع بيانات دليل التحكم في الأجهزة عن بعد** ، حدد **«Enabled»** وأدخل مسار مجلد مشاركة الشبكة أو المحلي.
 
@@ -403,7 +405,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 يعرض [مدخل Microsoft 365 Defender](https://security.microsoft.com/advanced-hunting) الأحداث التي تم تشغيلها بواسطة التحكم في الوصول إلى التخزين القابل للإزالة ل Device Control. للوصول إلى أمان Microsoft 365، يجب أن يكون لديك الاشتراك التالي:
 
-- Microsoft 365 لإعداد تقارير E5
+- تقارير Microsoft 365 for E5
 
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
@@ -457,7 +459,7 @@ DeviceEvents
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>ما هي وسائط التخزين القابلة للإزالة وقيود النهج؟
 
-إما من مركز إدارة إدارة نقاط النهاية من Microsoft (Intune) أو من خلال Microsoft Graph API، يتم إجراء الاستدعاء الخلفي من خلال OMA-URI (GET للقراءة أو PATCH للتحديث) وبالتالي فإن القيد هو نفسه أي ملف تعريف تكوين مخصص ل OMA-URI في Microsoft وهو رسميا 350000 حرف لملفات XML.
+إما من مركز إدارة Microsoft إدارة نقاط النهاية (Intune) أو من خلال Microsoft Graph API، يتم إجراء الاستدعاء الخلفي من خلال OMA-URI (GET للقراءة أو PATCH للتحديث) وبالتالي فإن القيد هو نفسه أي ملف تعريف تكوين مخصص ل OMA-URI في Microsoft وهو رسميا 350000 حرف لملفات XML.
 
 على سبيل المثال، إذا كنت بحاجة إلى كتلتين من الإدخالات لكل معرف أمان مستخدم ل "السماح"/"التدقيق مسموح به" لمستخدمين محددين وكتلتين من الإدخالات في نهاية "رفض" الكل، فستتمكن من إدارة 2276 مستخدما.
 
@@ -483,7 +485,7 @@ DeviceEvents
 
 ### <a name="how-can-i-know-which-machine-is-using-out-of-date-antimalware-client-version-in-the-organization"></a>كيف يمكنني معرفة الجهاز الذي يستخدم إصدار عميل مكافحة البرامج الضارة قديم في المؤسسة؟
 
-يمكنك استخدام الاستعلام التالي للحصول على إصدار عميل مكافحة البرامج الضارة على مدخل الأمان Microsoft 365:
+يمكنك استخدام الاستعلام التالي للحصول على إصدار عميل مكافحة البرامج الضارة على مدخل أمان Microsoft 365:
 
 ```kusto
 //check the antimalware client version

@@ -1,15 +1,13 @@
 ---
 title: مراجعة إجراءات المعالجة في Microsoft 365 Business Premium
-description: تعرف على كيفية عرض المعالجة التي تم اتخاذها تلقائيا أو التي تنتظر الموافقة في مركز الصيانة
+description: تعرف على كيفية عرض المعالجة التي تم اتخاذها تلقائيا أو التي تنتظر الموافقة في مركز الصيانة.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/24/2022
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
@@ -17,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 1e5d4e278bc70fdf63c951598bf12f88816a43d0
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 73790afedc78961562b592d1eb4decd4a8f1b0d4
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893218"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490388"
 ---
 # <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>مراجعة إجراءات المعالجة في Microsoft 365 Business Premium
 
@@ -47,7 +45,7 @@ ms.locfileid: "65893218"
 
 3. حدد علامة التبويب **"معلق** " لعرض أي إجراءات معلقة والموافقة عليها (أو رفضها). يمكن أن تنشأ هذه الإجراءات من الحماية من الفيروسات/الحماية من البرامج الضارة أو التحقيقات التلقائية أو أنشطة الاستجابة اليدوية أو جلسات الاستجابة المباشرة.
 
-4. حدد علامة التبويب " **محفوظات** " لعرض قائمة بالإجراءات المكتملة. 
+4. حدد علامة التبويب " **محفوظات** " لعرض قائمة بالإجراءات المكتملة.
 
 ## <a name="types-of-remediation-actions"></a>أنواع إجراءات المعالجة
 

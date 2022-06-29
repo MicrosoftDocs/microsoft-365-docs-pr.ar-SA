@@ -1,6 +1,6 @@
 ---
 title: تشغيل محلل العميل على Windows
-description: تعرف على كيفية تشغيل محلل العميل Microsoft Defender لنقطة النهاية على Windows.
+description: تعرف على كيفية تشغيل محلل عميل Microsoft Defender لنقطة النهاية على Windows.
 keywords: محلل العميل، مستشعر استكشاف الأخطاء وإصلاحها، المحلل، mdeanalyzer، windows
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5ac27241297b9943f1559653777b8e1668fe7f89
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 51eaa6ddcaf50a48ccbd8ffc000a79049c1d9842
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783018"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489459"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>تشغيل محلل العميل على Windows
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-1. قم بتنزيل [أداة MDE Client Analyzer](https://aka.ms/mdatpanalyzer) إلى الجهاز Windows الذي تحتاج إلى التحقيق فيه.
+1. قم بتنزيل [أداة MDE Client Analyzer](https://aka.ms/mdatpanalyzer) إلى جهاز Windows الذي تحتاج إلى التحقيق فيه.
 
 2. استخراج محتويات MDEClientAnalyzer.zip على الجهاز.
 
@@ -53,9 +53,9 @@ ms.locfileid: "64783018"
 بالإضافة إلى ما سبق، هناك أيضا خيار [لجمع سجلات دعم المحلل باستخدام الاستجابة المباشرة.](troubleshoot-collect-support-log.md)
 
 > [!NOTE]
-> في Windows 10/11 أو Windows Server 2019/2022 أو Windows Server 2012R2/2016 مع تثبيت [الحل الموحد الحديث](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)، يتصل البرنامج النصي لمحلل العميل في ملف قابل للتنفيذ يتم استدعاؤه `MDEClientAnalyzer.exe` لتشغيل اختبارات الاتصال بعناوين URL للخدمة السحابية.
+> في Windows 10/11 أو Windows Server 2019/2022 أو Windows Server 2012R2/2016 مع تثبيت [الحل الموحد الحديث](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)، يستدعي البرنامج النصي لمحلل العميل ملفا قابلا للتنفيذ يسمى `MDEClientAnalyzer.exe` لتشغيل اختبارات الاتصال إلى عناوين URL للخدمة السحابية.
 >
-> في Windows 8.1، Windows Server 2016 أو أي إصدار سابق من نظام التشغيل حيث يتم استخدام عامل مراقبة Microsoft (MMA) للإلحاق، يستدعي البرنامج النصي لمحلل العميل ملفا قابلا للتنفيذ يسمى `MDEClientAnalyzerPreviousVersion.exe` لتشغيل اختبارات الاتصال لعناوين URL للأوامر والتحكم (CnC) مع الاتصال أيضا بأداة `TestCloudConnection.exe` اتصال عامل مراقبة Microsoft لعناوين URL لقناة بيانات الإنترنت.
+> في Windows 8.1 أو Windows Server 2016 أو أي إصدار سابق من نظام التشغيل حيث يتم استخدام عامل مراقبة Microsoft (MMA) للإلحاق، يستدعي البرنامج النصي لمحلل العميل ملفا قابلا للتنفيذ يسمى `MDEClientAnalyzerPreviousVersion.exe` لتشغيل اختبارات الاتصال لعناوين URL للأوامر والتحكم (CnC) مع الاتصال أيضا بأداة `TestCloudConnection.exe` اتصال Microsoft Monitoring Agent لعناوين URL لقناة بيانات الإنترنت.
 
 
 جميع البرامج النصية والوحدات النمطية PowerShell المضمنة مع المحلل موقعة من Microsoft.
@@ -82,7 +82,7 @@ ms.locfileid: "64783018"
 >
 > - إصدار النوافذ التي يتم تشغيل المحلل عليها.
 > - توفر قناة سجل الأحداث على الجهاز.
-> - حالة بدء مستشعر الكشف التلقائي والاستجابة على النقط النهائية (يتم إيقاف Sense إذا لم يتم إلحاق الجهاز بعد).
+> - حالة بدء أداة استشعار EDR (يتم إيقاف أداة استشعار إذا لم يتم إلحاق الجهاز بعد).
 > - إذا تم استخدام معلمة استكشاف الأخطاء وإصلاحها المتقدمة مع أمر المحلل.
 
 بشكل افتراضي، سيحتوي ملف MDEClientAnalyzerResult.zip غير المحزم على العناصر التالية.
@@ -94,11 +94,11 @@ ms.locfileid: "64783018"
 - مجلد SystemInfoLogs \[\]
   - AddRemovePrograms.csv
 
-    الوصف: قائمة البرامج المثبتة x86 على برامج نظام التشغيل x64 التي تم جمعها من السجل.
+    الوصف: قائمة البرامج المثبتة x64 على نظام التشغيل x64 التي تم جمعها من السجل.
 
   - AddRemoveProgramsWOW64.csv
 
-    الوصف: قائمة البرامج المثبتة x86 على برامج نظام التشغيل x64 التي تم جمعها من السجل.
+    الوصف: قائمة البرامج المثبتة x86 على نظام التشغيل x64 التي تم جمعها من السجل.
 
     - CertValidate.log
 

@@ -4,38 +4,28 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom:
-- TopSMBIssues
-- MSStore_Link
-- TRN_M365B
-- OKR_SMB_Videos
-- AdminSurgePortfolio
-- AdminTemplateSet
-- business_assist
-- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 - GEA150
-ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: إعادة تعيين كلمات المرور للمستخدمين في Microsoft 365 Business Premium.
-ms.openlocfilehash: 0232846c4dcc315e80c3a9ec72c171fddd65f72b
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: a2841c3819011237fcb0dce3af58b4009d537904
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090586"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489681"
 ---
 # <a name="reset-passwords-in-microsoft-365-business-premium"></a>إعادة تعيين كلمات المرور في Microsoft 365 Business Premium
 
@@ -55,9 +45,9 @@ ms.locfileid: "66090586"
 
 ## <a name="admin-initiated-password-reset"></a>إعادة تعيين كلمة المرور التي بدأها مسؤول
 
-هناك أوقات قد يرغب فيها مسؤول في فرض إعادة تعيين كلمة المرور على الحسابات.
+هناك أوقات قد يرغب فيها المسؤول في فرض إعادة تعيين كلمة المرور على الحسابات.
 
-1. في مركز الإدارة، انتقل إلى صفحة **المستخدمين النشطين للمستخدمين**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>
+1. في مركز مسؤول، انتقل إلى صفحة **المستخدمين النشطين للمستخدمين**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>
 
 2. في صفحة **"المستخدمون النشطون** "، حدد المستخدم المحدد لإعادة التعيين، ثم حدد **"إعادة تعيين كلمة المرور**".
 
@@ -67,7 +57,7 @@ ms.locfileid: "66090586"
 
 ## <a name="let-users-reset-their-own-passwords"></a>السماح للمستخدمين بإعادة تعيين كلمات المرور الخاصة بهم
 
-ضع في اعتبارك تعيين إعادة تعيين كلمة مرور الخدمة الذاتية لمؤسستك بحيث لا تضطر إلى إعادة تعيين كلمات المرور يدويا للمستخدمين. عمل أقل لك! لمعرفة كيفية القيام بإعادة [تعيين كلمات المرور الخاصة بهم، راجع السماح للمستخدمين بإعادة تعيين كلمات المرور الخاصة بهم](../admin/add-users/let-users-reset-passwords.md).
+نوصي بشدة بإعداد إعادة تعيين كلمة مرور الخدمة الذاتية. وبهذه الطريقة، لن تحتاج إلى إعادة تعيين كلمات المرور للمستخدمين يدويا. لمعرفة كيفية ذلك، راجع [السماح للمستخدمين بإعادة تعيين كلمات المرور الخاصة بهم في Office 365](/admin/add-users/let-users-reset-passwords.md).
 
 ## <a name="reset-my-admin-password"></a>إعادة تعيين كلمة مرور المسؤول
 
@@ -83,11 +73,11 @@ ms.locfileid: "66090586"
 
 5. اتبع الخطوات الواردة في المعالج لإعادة تعيين كلمة المرور. يستخدم معلومات جهة الاتصال البديلة للتحقق من أنك الشخص المناسب لإعادة تعيين كلمة المرور.
 
-> [!IMPORTANT]
-> إذا نسيت كلمة مرور المسؤول ولا يمكنك تسجيل الدخول:
-> - اطلب من مسؤول عام آخر في شركتك إعادة تعيين كلمة المرور نيابة عنك.
-> - تأكد من توفير معلومات جهة اتصال بديلة، بما في ذلك رقم هاتف جوال.
-> - [اتصل بالدعم التقني](../admin/get-help-support.md).
+إذا نسيت كلمة المرور ولا يمكنك تسجيل الدخول:
+
+- اطلب من مسؤول عام آخر في شركتك إعادة تعيين كلمة المرور نيابة عنك.
+
+- تأكد من توفير معلومات جهة اتصال بديلة، بما في ذلك رقم هاتف جوال.
 
 ## <a name="reset-all-business-passwords-for-everyone-at-the-same-time"></a>إعادة تعيين كل كلمات مرور العمل للجميع في الوقت نفسه
 
@@ -97,7 +87,7 @@ ms.locfileid: "66090586"
   
 1. في مركز الإدارة، انتقل إلى صفحة **المستخدمين النشطين للمستخدمين**\>.<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>
 
-2. حدد الخيار الموجود بجانب **اسم العرض** لتحديد كل شخص في شركتك. ثم قم بإلغاء تحديد نفسك. لا يمكنك إعادة تعيين كلمة المرور الخاصة بك في الوقت نفسه الذي تقوم فيه بإعادة تعيين كلمة مرور الآخرين.
+2. حدد الخيار الموجود بجانب **اسم العرض** لتحديد كل شخص في شركتك. بعد ذلك، قم بإلغاء تحديد نفسك. لا يمكنك إعادة تعيين كلمة المرور الخاصة بك في الوقت نفسه الذي تقوم فيه بإعادة تعيين كلمة مرور الآخرين.
 
 3. حدد **إعادة تعيين كلمة المرور**.
 
@@ -113,13 +103,9 @@ ms.locfileid: "66090586"
 
 للحصول على معلومات حول النظرة العامة، راجع [إدارة Microsoft 365 باستخدام PowerShell](../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
   
-## <a name="force-a-password-change-for-all-users-in-your-business"></a>فرض تغيير كلمة مرور لجميع المستخدمين في شركتك
-
-اطلع على منشور المدونة الرائع هذا بواسطة Vasil Michev، Microsoft MVP: [فرض تغيير كلمة المرور لجميع المستخدمين في Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
-  
-## <a name="related-content"></a>المحتويات ذات الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
   
 [السماح للمستخدمين بإعادة تعيين كلمات المرور](../admin/add-users/let-users-reset-passwords.md)
  الخاصة بهم [إعادة تعيين كلمات المرور في Microsoft 365 للأعمال](../admin/add-users/reset-passwords.md)
-[تعيين كلمة مرور مستخدم فردي إلى عدم انتهاء صلاحية](../admin/add-users/set-password-to-never-expire.md) 
- تعيين[نهج انتهاء صلاحية كلمة المرور لمؤسستك](../admin/manage/set-password-expiration-policy.md)
+ [تعيين كلمة مرور مستخدم فردية على ألا تنتهي صلاحيتها](../admin/add-users/set-password-to-never-expire.md) 
+ أبدا [تعيين نهج انتهاء صلاحية كلمة المرور لمؤسستك](../admin/manage/set-password-expiration-policy.md)

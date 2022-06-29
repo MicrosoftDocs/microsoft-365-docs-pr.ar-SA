@@ -21,16 +21,16 @@ ms.custom:
 - AdminTemplateSet
 description: تعرف على كيفية شراء الوظائف الإضافية وإدارتها لاشتراكك في Microsoft 365 للأعمال.
 ms.date: 04/02/2021
-ms.openlocfilehash: 28c155eaa10a578d10126c563945859e6931f180
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 4fbb4cc9277c4f4a6ddc3c780388d0ebd8d492ad
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101631"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492071"
 ---
-# <a name="buy-or-manage-add-ons"></a>شراء الوظائف الإضافية أو إدارتها
+# <a name="buy-or-manage-add-ons-for-microsoft-365-business-plans"></a>شراء الوظائف الإضافية لخطط أعمال Microsoft 365 أو إدارتها
 
-تحتوي العديد من Microsoft 365 لخطط الأعمال على وظائف إضافية يمكنك شراؤها لاشتراكاتك. توفر الوظائف الإضافية المزيد من الميزات لتحسين تجربة اشتراكك.
+تحتوي العديد من خطط Microsoft 365 للأعمال على وظائف إضافية يمكنك شراؤها لاشتراكاتك. توفر الوظائف الإضافية المزيد من الميزات لتحسين تجربة اشتراكك.
 
 هناك نوعان من الوظائف الإضافية:
 
@@ -45,7 +45,7 @@ ms.locfileid: "66101631"
 
 استخدم الخطوات التالية للبحث عن الوظائف الإضافية وشرائها. تتضمن القائمة فقط الوظائف الإضافية المتوفرة لك. تستند هذه القائمة إلى اشتراكاتك النشطة حاليا وأي وظائف إضافية موجودة لديك بالفعل. إذا لم تكن الوظيفة الإضافية مدرجة في القائمة، فلن تكون متوفرة للشراء.
 
-للحصول على معلومات حول الوظائف الإضافية Skype for Business، راجع [Skype for Business وترخيص الوظيفة الإضافية Microsoft Teams](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
+للحصول على معلومات حول الوظائف الإضافية Skype for Business، راجع [ترخيص الوظيفة الإضافية Skype for Business وMicrosoft Teams](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
 
 1. في مركز الإدارة، انتقل إلى صفحة <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">خدمات شراء</a> **الفوترة**\>.
 2. في أسفل صفحة **خدمات الشراء** ، في قسم **"الوظائف الإضافية** "، ابحث عن الوظيفة الإضافية التي تريد شراؤها، وحدد **"التفاصيل**".
@@ -72,7 +72,7 @@ ms.locfileid: "66101631"
 
 لا يمكنك إزالة وظيفة إضافية تقليدية. إذا كنت تريد إزالة وظيفة إضافية تقليدية، فاتصل بقسم الدعم للحصول على المساعدة ([الحصول على الدعم](../admin/get-help-support.md).
   
-## <a name="related-content"></a>المحتويات ذات الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
 [إضافة مساحة تخزين لاشتراكك](add-storage-space.md) (مقال)\
 [شراء تراخيص الاشتراك أو إزالتها](licenses/buy-licenses.md) (مقالة)\

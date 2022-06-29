@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: d1379836a2d55a8c6c256ce734c40acc5fc48599
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: f5b4cfc38f702bf7ea5affdae13f2215c044fc89
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090483"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486696"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>أحدث الميزات في Microsoft Defender لنقطة النهاية على Android
 
@@ -31,10 +31,13 @@ ms.locfileid: "66090483"
 
 هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## <a name="microsoft-defender-on-android-enterprise-byod-personal-profile"></a>Microsoft defender على ملف التعريف الشخصي BYOD للمؤسسة التي تعمل بنظام Android
+Microsoft Defender لنقطة النهاية مدعوم الآن على ملف التعريف الشخصي ل Android Enterprise (BYOD فقط) مع جميع الميزات الرئيسية بما في ذلك مسح البرامج الضارة والحماية من ارتباطات التصيد الاحتيالي وحماية الشبكة وإدارة الثغرات الأمنية. يقترن هذا الدعم [بعناصر تحكم الخصوصية](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) لضمان خصوصية المستخدم على ملف التعريف الشخصي. لمزيد من المعلومات، اقرأ [الإعلان](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-the-public-preview-of-defender-for-endpoint-personal/ba-p/3370979) [ودليل النشر](/microsoft-365/security/defender-endpoint/android-intune#set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode).
+
 ## <a name="network-protection"></a>حماية الشبكة
 حماية الشبكة على Microsoft Defender لنقطة النهاية الآن في المعاينة العامة. توفر حماية الشبكة الحماية من التهديدات Wi-Fi المحتالة ذات الصلة، والأجهزة المحتالة مثل أجهزة الأناناس وإعلام المستخدم إذا تم الكشف عن تهديد ذي صلة. سيرى المستخدمون أيضا تجربة موجهة للاتصال بشبكات آمنة وتغيير الشبكات عند الاتصال باتصال غير آمن.
 
-يتضمن العديد من عناصر تحكم المسؤول لتوفير المرونة، مثل القدرة على تكوين الميزة من داخل مركز إدارة نقاط النهاية من Microsoft مسؤول. يمكن للمسؤولين أيضا تمكين عناصر التحكم في الخصوصية لتكوين البيانات التي يتم إرسالها بواسطة Defender لنقطة النهاية من أجهزة Android. 
+يتضمن العديد من عناصر تحكم المسؤول لتوفير المرونة، مثل القدرة على تكوين الميزة من داخل مركز إدارة نقاط النهاية مسؤول Microsoft. يمكن للمسؤولين أيضا تمكين عناصر التحكم في الخصوصية لتكوين البيانات التي يتم إرسالها بواسطة Defender لنقطة النهاية من أجهزة Android. 
 
 إذا كنت مهتما بالمشاركة في هذه المعاينة العامة، فالرجاء مشاركة معرف المستأجر معنا على networkprotection@microsoft.com. لمزيد من المعلومات، راجع [حماية الشبكة](/microsoft-365/security/defender-endpoint/android-configure).
 
@@ -62,7 +65,7 @@ Microsoft Defender لنقطة النهاية متوفر الآن في **Microsof
 **كيف سيؤثر ذلك على مؤسستك:** ستدخل هذه التغييرات حيز التنفيذ إذا كنت تستخدم Microsoft Defender لنقطة النهاية على الأجهزة التي تعمل بنظام التشغيل Android 11 أو الإصدارات الأحدث والمحدثة من Defender لنقطة النهاية لإصدار الإصدار 1.0.3501.0301 أو إصدار أحدث.
 
 > [!NOTE]
-> يتعذر على المسؤول تكوين أذونات التخزين الجديدة ل "الموافقة التلقائية" من خلال إدارة نقاط النهاية من Microsoft. سيحتاج المستخدم إلى اتخاذ إجراء لتوفير الوصول إلى هذا الإذن.
+> يتعذر على المسؤول تكوين أذونات التخزين الجديدة ل "الموافقة التلقائية" من خلال Microsoft إدارة نقاط النهاية. سيحتاج المستخدم إلى اتخاذ إجراء لتوفير الوصول إلى هذا الإذن.
 
 - **تجربة المستخدم:** سيتلقى المستخدمون إعلاما يشير إلى إذن مفقود لأمان التطبيق. إذا رفض المستخدم هذا الإذن، فسيتم إيقاف تشغيل وظيفة "أمان التطبيق" على الجهاز. إذا لم يقبل المستخدم الإذن أو يرفضه، فسيستمر في تلقي المطالبة عند إلغاء تأمين جهازه أو فتح التطبيق، حتى تتم الموافقة عليه.
 

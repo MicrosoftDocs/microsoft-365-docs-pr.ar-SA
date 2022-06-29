@@ -21,14 +21,14 @@ search.appverid: MET150
 description: تعرف على كيفية إضافة تراخيص إلى اشتراكك أو توسيعه باستخدام مفتاح المنتج.
 ROBOTS: NOINDEX
 ms.date: 06/06/2022
-ms.openlocfilehash: ff7656975b5d93d03706f26de0691a91db1858eb
-ms.sourcegitcommit: 23fd850272f39c4202e2320e56d11fb6707b3e2e
+ms.openlocfilehash: bcc74eaf5031d281ef0b320df7c6bbc3a8debff2
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65925063"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492000"
 ---
-# <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>إضافة تراخيص إلى اشتراك مدفوع أو تمديده لاستخدام مفتاح منتج
+# <a name="add-licenses-to-or-extend-a-paid-subscription-by-using-a-microsoft-365-product-key"></a>إضافة تراخيص إلى اشتراك مدفوع أو تمديده باستخدام مفتاح منتج Microsoft 365
 
 يتم إصدار التراخيص مسبقة الدفع لك كرمز أبجدي رقمي مكون من 25 حرفا. بعد شراء التراخيص التي تحتاجها، يمكنك إضافتها إلى اشتراكك. يمكنك أيضا استخدام مفتاح منتج لتمديد تاريخ انتهاء صلاحية اشتراكك.
 

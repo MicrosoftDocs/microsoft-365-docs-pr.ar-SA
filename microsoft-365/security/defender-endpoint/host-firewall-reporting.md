@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 33eff726609db3d7f2d07f4a5bcf4955536c086c
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 0dcb03a5398b38e05c3c7c867306444b17b8c720
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647272"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490221"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>استضافة تقارير جدار الحماية في Microsoft Defender لنقطة النهاية
 
@@ -30,19 +30,20 @@ ms.locfileid: "65647272"
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-إذا كنت مسؤولا عموميا أو مسؤول أمان، يمكنك الآن استضافة تقارير جدار الحماية إلى [مدخل Microsoft 365 Defender](https://security.microsoft.com). تمكنك هذه الميزة من عرض تقارير جدار حماية Windows 10، Windows 11، Windows Server 2019، Windows Server 2022 من موقع مركزي.
+إذا كنت مسؤولا عموميا أو مسؤول أمان، يمكنك الآن استضافة تقارير جدار الحماية إلى [مدخل Microsoft 365 Defender](https://security.microsoft.com). تمكنك هذه الميزة من عرض تقارير جدار حماية Windows 10 Windows 11 وWindows Server 2019 وWindows Server 2022 من موقع مركزي.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
-- يجب تشغيل Windows 10 أو Windows 11 أو Windows Server 2019 أو Windows Server 2022.
+- يجب أن تكون قيد التشغيل Windows 10 أو Windows 11 أو Windows Server 2019 أو Windows Server 2022.
 - لإلحاق الأجهزة بخدمة Microsoft Defender لنقطة النهاية، راجع [هنا](onboard-configure.md).
 - لكي يبدأ <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> في تلقي البيانات، يجب تمكين **"أحداث التدقيق**" جدار حماية Windows Defender مع الأمان المتقدم:
   - [إفلات حزمة النظام الأساسي لتصفية التدقيق](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [تدقيق تصفية اتصال النظام الأساسي](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - قم بتمكين هذه الأحداث باستخدام محرر عناصر نهج المجموعة أو نهج الأمان المحلي أو أوامر auditpol.exe. لمزيد من المعلومات، راجع [هنا](/windows/win32/fwp/auditing-and-logging).
   - الأمران PowerShell هما:
-    - **auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable**
-    - **auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable**
+    - `auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable`
+    - `auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable`
+
 ```powershell
 param (
     [switch]$remediate
@@ -81,15 +82,24 @@ catch {
 > [!NOTE]
 > تأكد من اتباع الإرشادات الواردة من القسم أعلاه وتكوين أجهزتك بشكل صحيح لمشاركة المعاينة المبكرة.
 
-- بعد تمكين الأحداث، سيبدأ Microsoft 365 Defender في مراقبة البيانات.
-  - IP البعيد، المنفذ البعيد، المنفذ المحلي، IP المحلي، اسم الكمبيوتر، العملية عبر الاتصالات الواردة والصادرة.
-- يمكن للمسؤولين الآن رؤية Windows نشاط جدار الحماية المضيف [هنا](https://security.microsoft.com/firewall).
-  - يمكن تسهيل إعداد التقارير الإضافية عن طريق تنزيل [البرنامج النصي للتقارير المخصصة](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) لمراقبة أنشطة جدار حماية Windows Defender باستخدام Power BI.
-  - قد يستغرق الأمر ما يصل إلى 12 ساعة قبل أن تنعكس البيانات.
+- بعد تمكين الأحداث، سيبدأ Microsoft 365 Defender في مراقبة البيانات، والتي تتضمن: 
+   - IP البعيد
+   - منفذ بعيد
+   - منفذ محلي
+   - IP محلي
+   - اسم الكمبيوتر
+   - معالجة عبر الاتصالات الواردة والصادرة
+- يمكن للمسؤولين الآن رؤية نشاط جدار حماية مضيف Windows [هنا](https://security.microsoft.com/firewall).
+   - يمكن تسهيل إعداد التقارير الإضافية عن طريق تنزيل [البرنامج النصي للتقارير المخصصة](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) لمراقبة أنشطة جدار حماية Windows Defender باستخدام Power BI.
+   - قد يستغرق الأمر ما يصل إلى 12 ساعة قبل أن تنعكس البيانات.
 
 ## <a name="supported-scenarios"></a>السيناريوهات المدعومة
 
-يتم دعم السيناريوهات التالية أثناء معاينة Ring0.
+يتم دعم السيناريوهات التالية أثناء معاينة Ring0:
+
+- [تقارير جدار الحماية](#firewall-reporting)
+- [من "أجهزة الكمبيوتر ذات الاتصال المحظور" إلى الجهاز](#from-computers-with-a-blocked-connection-to-device)
+- [الانتقال إلى التتبع المتقدم (معاينة التحديث)](#drill-into-advanced-hunting-preview-refresh)
 
 ### <a name="firewall-reporting"></a>تقارير جدار الحماية
 
@@ -97,7 +107,7 @@ catch {
 
 :::image type="content" source="images/host-firewall-reporting-page.png" alt-text="صفحة إعداد التقارير لجدار حماية المضيف" lightbox="\images\host-firewall-reporting-page.png":::
 
-يمكن أيضا الوصول إلى هذه التقارير عن طريق الانتقال إلى **ReportsSecurity** >  **ReportDevices** >  (القسم) الموجود في أسفل بطاقة **Firewall Blocked Inbound Connections**.
+يمكن أيضا الوصول إلى هذه التقارير عن طريق الانتقال إلى **تقارير** > **أجهزة** **تقارير** >  الأمان (القسم) الموجودة في أسفل بطاقة **الاتصالات الواردة المحظورة لجدار الحماية**.
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>من "أجهزة الكمبيوتر ذات الاتصال المحظور" إلى الجهاز
 
@@ -119,4 +129,4 @@ catch {
 
 يمكن الآن تنفيذ الاستعلام، ويمكن استكشاف جميع أحداث جدار الحماية ذات الصلة من آخر 30 يوما.
 
-للحصول على تقارير إضافية أو تغييرات مخصصة، يمكن تصدير الاستعلام إلى Power BI لمزيد من التحليل. يمكن تسهيل إعداد التقارير المخصصة عن طريق تنزيل [البرنامج النصي للتقارير المخصصة](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) لمراقبة أنشطة جدار حماية Windows Defender باستخدام Power BI.
+لمزيد من التقارير أو التغييرات المخصصة، يمكن تصدير الاستعلام إلى Power BI لمزيد من التحليل. يمكن تسهيل إعداد التقارير المخصصة عن طريق تنزيل [البرنامج النصي للتقارير المخصصة](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) لمراقبة أنشطة جدار حماية Windows Defender باستخدام Power BI.

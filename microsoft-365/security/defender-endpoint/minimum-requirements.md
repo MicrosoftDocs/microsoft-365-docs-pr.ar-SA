@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 355fc0f367c415ae679259195e18ff3920812f4a
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: b2b1303fc9ab0841643536ccf5a85470243fe74e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670147"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490564"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>الحد الأدنى من متطلبات Microsoft Defender لنقطة النهاية
 
@@ -39,11 +39,11 @@ ms.locfileid: "65670147"
 >
 > - تصف هذه المقالة الحد الأدنى من متطلبات Microsoft Defender لنقطة النهاية الخطة 2. إذا كنت تبحث عن معلومات حول Defender لنقطة النهاية الخطة 1، فراجع [متطلبات Defender لنقطة النهاية الخطة 1](mde-p1-setup-configuration.md#review-the-requirements).
 > - تعرف على أحدث التحسينات في Defender لنقطة النهاية: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
-> - أظهر Defender لنقطة النهاية قدرات الكشف والبصريات الرائدة في الصناعة في تقييم MITRE الأخير. قراءة: [Insights من التقييم المستند إلى MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - أظهر Defender لنقطة النهاية قدرات الكشف والبصريات الرائدة في الصناعة في تقييم MITRE الأخير. اقرأ: [نتائج التحليلات من التقييم المستند إلى MITRE ATT&CK](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 ## <a name="licensing-requirements"></a>متطلبات الترخيص
-للحصول على متطلبات ترخيص المعلومات Microsoft Defender لنقطة النهاية، راجع [Microsoft Defender لنقطة النهاية معلومات الترخيص](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
+للحصول على متطلبات ترخيص المعلومات Microsoft Defender لنقطة النهاية، راجع [Microsoft Defender لنقطة النهاية معلومات الترخيص](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
 للحصول على معلومات تفصيلية حول الترخيص، راجع [موقع "شروط المنتج"](https://www.microsoft.com/licensing/terms/) والعمل مع فريق حسابك لمعرفة المزيد حول الشروط والأحكام.
 
@@ -63,10 +63,6 @@ ms.locfileid: "65670147"
 
 ### <a name="supported-windows-versions"></a>إصدارات Windows المدعومة
 
-- Windows 7 SP1 Enterprise ([يتطلب ESU للدعم](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
-- Windows 7 SP1 Pro ([يتطلب ESU للدعم](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
-- Windows 8.1 Enterprise
-- Windows 8.1 Pro
 - Windows 11 Enterprise
 - Windows 11 Education
 - Windows 11 Pro
@@ -81,6 +77,10 @@ ms.locfileid: "65670147"
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
+- Windows 8.1 Enterprise
+- Windows 8.1 Pro
+- Windows 7 SP1 Enterprise ([يتطلب ESU للدعم](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
+- Windows 7 SP1 Pro ([يتطلب ESU للدعم](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
 - خادم Windows
   - Windows Server 2008 R2 SP1 ([يتطلب ESU للدعم](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
@@ -100,28 +100,28 @@ ms.locfileid: "65670147"
 لمزيد من المعلومات حول الإصدارات المدعومة من Windows 10، راجع (/windows/release-health/release-information).
 
 > [!NOTE]
-> الأجهزة التي تقوم بتشغيل إصدارات الأجهزة المحمولة من Windows (مثل Windows CE Windows 10 Mobile) غير مدعومة.
+> - لا يتم دعم نقاط النهاية التي تقوم بتشغيل إصدارات الأجهزة المحمولة من Windows (مثل Windows CE Windows 10 Mobile).
 >
-> قد تواجه الأجهزة الظاهرية التي تعمل Windows 10 Enterprise 2016 LTSB مشكلات في الأداء إذا تم تشغيلها على الأنظمة الأساسية الظاهرية غير الخاصة ب Microsoft.
+> - قد تواجه الأجهزة الظاهرية التي تعمل Windows 10 Enterprise 2016 LTSB مشكلات في الأداء إذا تم تشغيلها على الأنظمة الأساسية الظاهرية غير الخاصة ب Microsoft.
 >
-> بالنسبة للبيئات الظاهرية، نوصي باستخدام Windows 10 Enterprise LTSC 2019 أو الإصدارات الأحدث.
+> - بالنسبة للبيئات الظاهرية، نوصي باستخدام Windows 10 Enterprise LTSC 2019 أو الإصدارات الأحدث.
+>
+> - لا تتضمن الإصدارات المستقلة من [Defender لنقطة النهاية الخطة 1 والخطة 2](defender-endpoint-plan-1-2.md) تراخيص الخادم. لإلحاق الخوادم بهذه الخطط، ستحتاج إلى Defender for Servers Plan 1 أو Plan 2 كجزء من عرض [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . لمعرفة المزيد. راجع [نظرة عامة على Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 
 عندما تكون المكونات محدثة على أنظمة تشغيل Microsoft Windows، سيتبع دعم Microsoft Defender لنقطة النهاية دورة حياة نظام التشغيل المعني. لمزيد من المعلومات، راجع [الأسئلة المتداولة حول دورة الحياة](/lifecycle/faq/general-lifecycle). عادة ما يتم توفير الميزات أو القدرات الجديدة فقط على أنظمة التشغيل التي لم تصل بعد إلى نهاية دورة حياتها. سيستمر توفير تحديثات معلومات الأمان (تحديثات التعريف والمحرك) ومنطق الكشف حتى:
 
-- [تاريخ نهاية الدعم](/lifecycle/products/) (لأنظمة التشغيل التي ليس لديها برنامج تحديثات الأمان الموسعة (ESU).
+- [تاريخ نهاية الدعم](/lifecycle/products/) (لأنظمة التشغيل التي ليس لديها برنامج التحديثات الأمان الموسع (ESU).
 - [نهاية تاريخ ESU](/lifecycle/faq/extended-security-updates) (لأنظمة التشغيل التي لديها برنامج ESU).
-
-
 
 ### <a name="other-supported-operating-systems"></a>أنظمة التشغيل الأخرى المدعومة
 
 - [الروبوت](microsoft-defender-endpoint-android.md)
 - [دائره الرقابه الداخليه](microsoft-defender-endpoint-ios.md)
 - [ينكس](microsoft-defender-endpoint-linux.md)
-- [macOS](microsoft-defender-endpoint-mac.md)
+- [ماك](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
-> ستحتاج إلى تأكيد أن توزيعات Linux وإصدارات Android وiOS macOS متوافقة مع Defender لنقطة النهاية لكي يعمل التكامل.
+> ستحتاج إلى تأكيد أن توزيعات Linux وإصدارات Android وiOS وmacOS متوافقة مع Defender لنقطة النهاية لكي يعمل التكامل.
 
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>متطلبات تخزين الشبكة والبيانات وتكوينها
 
@@ -140,7 +140,7 @@ ms.locfileid: "65670147"
 تأكد من تمكين خدمة البيانات التشخيصية على جميع الأجهزة في مؤسستك.
 بشكل افتراضي، يتم تمكين هذه الخدمة. من الجيد التحقق للتأكد من أنك ستحصل على بيانات المستشعر منها.
 
-#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>استخدم سطر الأوامر للتحقق من نوع بدء تشغيل خدمة البيانات التشخيصية Windows
+#### <a name="use-the-command-line-to-check-the-windows-diagnostic-data-service-startup-type"></a>استخدام سطر الأوامر للتحقق من نوع بدء تشغيل خدمة البيانات التشخيصية ل Windows
 
 1. افتح موجه سطر أوامر غير مقيد على الجهاز:
    1. انتقل إلى **شاشة البدء** واكتب **cmd**.
@@ -158,7 +158,7 @@ ms.locfileid: "65670147"
 
 ستحتاج إلى تعيين الخدمة للبدء تلقائيا إذا لم يتم تعيين **START_TYPE** إلى **AUTO_START**.
 
-#### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>استخدام سطر الأوامر لتعيين خدمة البيانات التشخيصية Windows للبدء تلقائيا
+#### <a name="use-the-command-line-to-set-the-windows-diagnostic-data-service-to-automatically-start"></a>استخدام سطر الأوامر لتعيين خدمة البيانات التشخيصية ل Windows للبدء تلقائيا
 
 1. افتح موجه سطر أوامر غير مقيد على نقطة النهاية:
     1. انتقل إلى **شاشة البدء** واكتب **cmd**.
@@ -186,26 +186,26 @@ ms.locfileid: "65670147"
 
 قبل إلحاق الأجهزة، يجب تمكين خدمة البيانات التشخيصية. يتم تمكين الخدمة بشكل افتراضي في Windows 10 Windows 11.
 
-## <a name="microsoft-defender-antivirus-configuration-requirement"></a>متطلبات التكوين برنامج الحماية من الفيروسات من Microsoft Defender
+## <a name="microsoft-defender-antivirus-configuration-requirement"></a>متطلبات تكوين برنامج الحماية من الفيروسات من Microsoft Defender
 
 يعتمد عامل Defender لنقطة النهاية على قدرة برنامج الحماية من الفيروسات من Microsoft Defender على فحص الملفات وتوفير معلومات عنها.
 
-تكوين تحديثات معلومات الأمان على أجهزة Defender لنقطة النهاية سواء كان برنامج الحماية من الفيروسات من Microsoft Defender هو برنامج مكافحة البرامج الضارة النشط أم لا. لمزيد من المعلومات، راجع [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
+تكوين تحديثات معلومات الأمان على أجهزة Defender لنقطة النهاية سواء كان برنامج الحماية من الفيروسات من Microsoft Defender هو برنامج الحماية من البرامج الضارة النشط أم لا. لمزيد من المعلومات، راجع [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
-عندما لا يكون برنامج الحماية من الفيروسات من Microsoft Defender هو برنامج مكافحة البرامج الضارة النشط في مؤسستك وتستخدم خدمة Defender لنقطة النهاية، برنامج الحماية من الفيروسات من Microsoft Defender ينتقل إلى الوضع الخامل.
+عندما لا يكون برنامج الحماية من الفيروسات من Microsoft Defender هو برنامج الحماية من البرامج الضارة النشط في مؤسستك وتستخدم خدمة Defender لنقطة النهاية، ينتقل برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي.
 
 إذا أوقفت مؤسستك تشغيل برنامج الحماية من الفيروسات من Microsoft Defender من خلال نهج المجموعة أو أساليب أخرى، فيجب استبعاد الأجهزة التي تم إلحاقها من نهج المجموعة هذا.
 
-إذا كنت تقوم بإلحاق الخوادم ولم تكن برنامج الحماية من الفيروسات من Microsoft Defender هي مكافحة البرامج الضارة النشطة على خوادمك، برنامج الحماية من الفيروسات من Microsoft Defender ستحتاج إما إلى تكوينها للانتقال إلى الوضع الخامل أو إلغاء تثبيتها. يعتمد التكوين على إصدار الخادم. لمزيد من المعلومات، راجع [توافق برنامج الحماية من الفيروسات من Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
+إذا كنت تقوم بإلحاق الخوادم ولم يكن برنامج الحماية من الفيروسات من Microsoft Defender هو برنامج الحماية من البرامج الضارة النشط على خوادمك، فسيلزم إما تكوين برنامج الحماية من الفيروسات من Microsoft Defender للانتقال إلى الوضع السلبي أو إلغاء تثبيته. يعتمد التكوين على إصدار الخادم. لمزيد من المعلومات، راجع [توافق برنامج الحماية من الفيروسات ل Microsoft Defender](microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
-> لا ينطبق نهج المجموعة العادي على الحماية من العبث، وسيتم تجاهل التغييرات على إعدادات برنامج الحماية من الفيروسات من Microsoft Defender عند تشغيل الحماية من العبث.
+> لا ينطبق نهج المجموعة العادية على الحماية من العبث، وسيتم تجاهل التغييرات التي يتم إجراؤها على إعدادات برنامج الحماية من الفيروسات من Microsoft Defender عند تشغيل الحماية من العبث.
 
-## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>برنامج الحماية من الفيروسات من Microsoft Defender تمكين برنامج تشغيل مكافحة البرامج الضارة (ELAM) للإطلاق المبكر
+## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>تم تمكين برنامج تشغيل التشغيل المبكر لبرامج الحماية من البرامج الضارة (ELAM) من Microsoft Defender
 
 إذا كنت تقوم بتشغيل برنامج الحماية من الفيروسات من Microsoft Defender كمنتج أساسي لمكافحة البرامج الضارة على أجهزتك، فسيلحق عامل Defender لنقطة النهاية بنجاح.
 
-إذا كنت تقوم بتشغيل عميل مكافحة البرامج الضارة تابع لجهة خارجية وتستخدم حلول إدارة الجهاز الجوال أو إدارة نقاط النهاية من Microsoft (الفرع الحالي)، فستحتاج إلى التأكد من تمكين برنامج تشغيل برنامج الحماية من الفيروسات من MICROSOFT DEFENDER ELAM. لمزيد من المعلومات، راجع [التأكد من عدم تعطيل برنامج الحماية من الفيروسات من Microsoft Defender بواسطة النهج](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+إذا كنت تقوم بتشغيل عميل مكافحة البرامج الضارة تابع لجهة خارجية وتستخدم حلول إدارة الجهاز الجوال أو Microsoft إدارة نقاط النهاية (الفرع الحالي)، فستحتاج إلى التأكد من تمكين برنامج تشغيل MICROSOFT Defender Antivirus ELAM. لمزيد من المعلومات، راجع [التأكد من أن برنامج الحماية من الفيروسات من Microsoft Defender غير معطل بواسطة النهج](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

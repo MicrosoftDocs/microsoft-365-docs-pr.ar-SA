@@ -1,5 +1,5 @@
 ---
-title: التسجيل للحصول على Microsoft 365 Lighthouse
+title: التسجيل في Microsoft 365 Lighthouse
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -17,15 +17,15 @@ ms.custom:
 - M365-Lighthouse
 - intro-get-started
 search.appverid: MET150
-description: بالنسبة لموفري الخدمات المدارة (MSPs)، تعرف على كيفية التسجيل للحصول على Microsoft 365 Lighthouse.
-ms.openlocfilehash: 5596005ff9a3db4e5a873a32f87b2677cdc8efaa
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: بالنسبة لموفري الخدمات المدارة (MSPs)، تعرف على كيفية التسجيل في Microsoft 365 Lighthouse.
+ms.openlocfilehash: 19acad120e6796369e5de511b13ad37c4d9e4623
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007119"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489069"
 ---
-# <a name="sign-up-for-microsoft-365-lighthouse"></a>التسجيل للحصول على Microsoft 365 Lighthouse
+# <a name="sign-up-for-microsoft-365-lighthouse"></a>التسجيل في Microsoft 365 Lighthouse
 
 توفر هذه المقالة إرشادات حول كيفية التسجيل في Microsoft 365 Lighthouse. Microsoft 365 Lighthouse هو مدخل مسؤول يساعد موفري الخدمات المدارة (MSPs) على تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع لعملاء الأعمال الصغيرة والمتوسطة الحجم (SMB). 
 
@@ -35,19 +35,15 @@ ms.locfileid: "66007119"
 
 - يجب أن تكون مسؤولا عاما في مستأجر الشريك الذي تقوم بتسجيل الدخول إليه.
 
-## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>خطوات التسجيل للحصول على Microsoft 365 Lighthouse
+## <a name="steps-to-sign-up-for-microsoft-365-lighthouse"></a>خطوات التسجيل في Microsoft 365 Lighthouse
 
 1. انتقل إلى مركز مسؤولي Microsoft 365 وسجل <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> الدخول باستخدام بيانات اعتماد مستأجر الشريك. 
 
-1. انتقل إلى **خدمات** >  شراء **الفوترة** > **الأخرى**.
+2. انتقل إلى **خدمات** >  شراء **الفوترة** > **Microsoft 365 Services**.
+   
+3. ضمن **Microsoft 365 Lighthouse**، حدد **Details**. 
 
-    إذا لم يكن Microsoft 365 Lighthouse في قائمة الخدمات، فحدد **"راجع جميع منتجات الخدمات الأخرى**".
-
-    إذا واجهت صفحة خطأ خدمات الشراء، فحدد **عرض المنتجات** في أسفل الصفحة.
-
-1. ضمن **Microsoft 365 Lighthouse**، حدد **Details**. 
-
-1. حدد **"شراء**".
+4. حدد **"شراء**".
 
     > [!NOTE]
     > تتطلب Lighthouse ترخيصا واحدا للمستأجر الشريك فقط. لا يلزم وجود تراخيص إضافية لكل مستخدم للشريك، ولا يلزم وجود تراخيص Lighthouse في أي مستأجر عميل. 
@@ -63,9 +59,9 @@ ms.locfileid: "66007119"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-[تكوين أمان مدخل Lighthouse Microsoft 365](m365-lighthouse-configure-portal-security.md) 
+[تكوين أمان مدخل Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) 
 
-## <a name="related-content"></a>المحتويات ذات الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
 [نظرة عامة على Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (مقال)   
 [الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)   

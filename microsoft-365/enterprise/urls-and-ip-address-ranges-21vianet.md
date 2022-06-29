@@ -3,7 +3,7 @@ title: عناوين URL ونطاقات عناوين IP Office 365 المشغلة
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/28/2022
+ms.date: 06/01/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,22 +21,22 @@ f1.keywords:
 - NOCSH
 description: تسرد هذه المقالة نطاقات عناوين URL وعناوين IP Office 365 عند تشغيلها بواسطة 21Vianet في الصين.
 hideEdit: true
-ms.openlocfilehash: 4c91505c0a83408e435879e718901d949e5eba26
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: e99a89e511faef069f0856e046ea1898e896b3c1
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217509"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489892"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>عناوين URL ونطاقات عناوين IP Office 365 المشغلة بواسطة 21Vianet
 
- *ينطبق على: Office 365 المشغلة بواسطة 21Vianet - Small Business Admin، Office 365 المشغلة بواسطة 21Vianet - المسؤول*
+ *ينطبق على: Office 365 المشغلة بواسطة 21Vianet - مسؤول Small Business، Office 365 المشغلة بواسطة 21Vianet - مسؤول*
 
 **ملخص**: تنطبق نقاط النهاية التالية (FQDNs والمنافذ وعناوين URL وIPv4 وIPv6 على Office 365 المشغلة بواسطة 21 Vianet وهي مصممة لتقديم خدمات الإنتاجية للمؤسسات باستخدام هذه الخطط فقط.
   
- **Office 365 نقاط النهاية:** Office 365 جميع [أنحاء العالم (بما في ذلك سحابة القطاع الحكومي)](urls-and-ip-address-ranges.md)  |  *التي تديرها 21 Vianet* |  [Office 365 DoD](microsoft-365-u-s-government-dod-endpoints.md) |  لحكومة الولايات المتحدة [Office 365 حكومة الولايات المتحدة سحابة القطاع الحكومي عالية](microsoft-365-u-s-government-gcc-high-endpoints.md) |
+ **Office 365 نقاط النهاية:** Office 365 جميع [أنحاء العالم (بما في ذلك GCC)](urls-and-ip-address-ranges.md)  |  *المشغلة بواسطة 21 Vianet* |  [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) |  [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
   
-**تاريخ التحديث الأخير:** 04/28/2021 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [اشتراك في سجلّ التغييرات](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**تاريخ التحديث الأخير:** 06/01/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [اشتراك في سجلّ التغييرات](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **التنزيل:** كل الوجهات المطلوبة والاختيارية في قائمة [تنسيق JSON](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) واحدة.
 
@@ -44,7 +44,7 @@ ms.locfileid: "65217509"
 
 تسرد بيانات نقطة النهاية أدناه متطلبات الاتصال من جهاز المستخدم إلى Office 365. ولا يتضمن اتصالات الشبكة من Microsoft إلى شبكة عملاء، تسمى أحيانا اتصالات الشبكة المختلطة أو الواردة.
 
-يتم تجميع نقاط النهاية في أربع مناطق خدمة. يمكن تحديد مناطق الخدمة الثلاث الأولى بشكل مستقل للاتصال. منطقة الخدمة الرابعة هي تبعية شائعة (تسمى Microsoft 365 المشتركة Office) ويجب أن يكون لديها اتصال بالشبكة دائما.
+يتم تجميع نقاط النهاية في أربع مناطق خدمة. يمكن تحديد مناطق الخدمة الثلاث الأولى بشكل مستقل للاتصال. منطقة الخدمة الرابعة هي تبعية شائعة (تسمى Microsoft 365 Common وOffice) ويجب أن يكون لديها دائما اتصال بالشبكة.
 
 أعمدة البيانات المعروضة هي:
 

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 29a221e60484431722be4e7104efb5b37a0408bc
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 7b195f595592b5c3b284b6dee4fd65b66d80e06a
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648558"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489349"
 ---
 # <a name="web-content-filtering"></a>تصفية محتوى ويب
 
@@ -39,7 +39,7 @@ ms.locfileid: "65648558"
 
 تكوين النهج عبر مجموعات أجهزتك لحظر فئات معينة. يمنع حظر فئة المستخدمين ضمن مجموعات الأجهزة المحددة من الوصول إلى عناوين URL المقترنة بالفئة. بالنسبة لأي فئة غير محظورة، يتم تدقيق عناوين URL تلقائيا. يمكن للمستخدمين الوصول إلى عناوين URL دون تعطيل، وستجمع إحصائيات الوصول للمساعدة في إنشاء قرار نهج أكثر تخصيصا. سيرى المستخدمون إعلام حظر إذا كان أحد العناصر على الصفحة التي يعرضونها يقوم بإجراء استدعاءات لمورد محظور.
 
-تتوفر تصفية محتوى الويب على مستعرضات الويب الرئيسية، مع الكتل التي يتم تنفيذها بواسطة Windows Defender SmartScreen (Microsoft Edge) وحماية الشبكة (Chrome وFirefox وFirefox وFireed و Opera). لمزيد من المعلومات حول دعم المستعرض، راجع قسم [المتطلبات الأساسية](#prerequisites) .
+تتوفر تصفية محتوى الويب على مستعرضات الويب الرئيسية، مع الكتل التي يتم تنفيذها بواسطة Windows Defender SmartScreen (Microsoft Edge) وحماية الشبكة (Chrome وFirefox وChroma و Opera). لمزيد من المعلومات حول دعم المستعرض، راجع قسم [المتطلبات الأساسية](#prerequisites) .
 
 ## <a name="benefits-of-web-content-filtering"></a>فوائد تصفية محتوى الويب
 
@@ -57,17 +57,28 @@ ms.locfileid: "65648558"
 | الاشتراك | يجب أن يتضمن اشتراكك أحد الإجراءات التالية:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- الأمان في Microsoft 365 E5<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender لنقطة النهاية الخطة 1 أو الخطة 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
 | الوصول إلى المدخل | يجب أن يكون لديك حق الوصول إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>. |
 | نظام التشغيل | يجب أن تقوم أجهزة مؤسستك بتشغيل أحد أنظمة التشغيل التالية بأحدث [تحديثات برنامج الحماية من الفيروسات/الحماية من البرامج الضارة](manage-updates-baselines-microsoft-defender-antivirus.md): <br/>- Windows 11<br/>- تحديث الذكرى السنوية Windows 10 (الإصدار 1607) أو إصدار أحدث |
-| الحماية ذات الصلة | يجب تمكين [Windows SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) [والحماية من الشبكة](network-protection.md) على أجهزة مؤسستك. |
+| الحماية ذات الصلة | يجب تمكين [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) [وحماية الشبكة](network-protection.md) على أجهزة مؤسستك. |
 
 ## <a name="data-handling"></a>معالجة البيانات
 
 يتم تخزين البيانات في المنطقة التي تم تحديدها كجزء من [إعدادات معالجة البيانات Microsoft Defender لنقطة النهاية](data-storage-privacy.md). لن تغادر بياناتك مركز البيانات في تلك المنطقة. بالإضافة إلى ذلك، لن تتم مشاركة بياناتك مع أي جهات خارجية، بما في ذلك موفري البيانات لدينا.
 
+## <a name="precedence-for-multiple-active-policies"></a>الأسبقية لنهج نشطة متعددة
+
+سيؤدي تطبيق نهج تصفية محتوى ويب مختلفة متعددة على نفس الجهاز إلى تطبيق نهج أكثر تقييدا لكل فئة. ضع في اعتبارك السيناريو التالي:
+
+- **النهج 1**: يحظر الفئات 1 و2 ويدقق الباقي
+- **النهج 2**: يحظر الفئات 3 و4 ويدقق الباقي
+
+والنتيجة هي أن جميع الفئات من 1 إلى 4 محظورة.  وهذا موضح في الصورة التالية.
+
+:::image type="content" source="images/web-content-filtering-policies-mode-precedence.png" alt-text="يوضح أسبقية وضع كتلة نهج تصفية محتوى الويب على وضع التدقيق":::
+
 ## <a name="turn-on-web-content-filtering"></a>تشغيل تصفية محتوى ويب
 
 1. انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> وسجل الدخول.
 
-2. في جزء التنقل، حدد **"الإعدادات** \> **Endpoints** \> **General** \> **Advanced Features**". 
+2. في جزء التنقل، حدد **"Settings** \> **Endpoints** \> **General** \> **Advanced Features**". 
 
 3. مرر لأسفل حتى ترى **تصفية محتوى ويب**. 
 
@@ -75,7 +86,7 @@ ms.locfileid: "65648558"
 
 ### <a name="configure-web-content-filtering-policies"></a>تكوين نهج تصفية محتوى ويب
 
-تحدد نهج تصفية محتوى ويب فئات الموقع التي يتم حظرها على مجموعات الأجهزة. لإدارة النهج، انتقل إلى **الإعدادات** \> **تصفية محتوى ويب** **لنقاط** \> النهاية (ضمن **القواعد**).
+تحدد نهج تصفية محتوى ويب فئات الموقع التي يتم حظرها على مجموعات الأجهزة. لإدارة النهج، انتقل إلى **تصفية محتوى ويب** **لنقاط نهاية الإعدادات** \>  \> (ضمن **القواعد**).
 
 يمكن نشر النهج لحظر أي من الفئات الأصل أو التابعة التالية:
 
@@ -166,7 +177,7 @@ ms.locfileid: "65648558"
 
 لإضافة نهج جديد، اتبع الخطوات التالية:
 
-1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، اختر **الإعدادات** >  **Web content filtering** > **+ Add policy**.
+1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، اختر **"تصفية** >  محتوى **ويب للإعدادات** > **" + "إضافة نهج**".
 
 2. حدد اسما.
 
@@ -194,7 +205,7 @@ ms.locfileid: "65648558"
 
 لتعريف مؤشر مخصص، اتبع الخطوات التالية:
 
-1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، انتقل إلى عنوان **URL/****عنصر إضافة** مجال \>  **لمؤشرات** \> \> **نقاط النهاية الإعدادات**\>.
+1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، انتقل إلى عنوان **URL/****عنصر إضافة** مجال \> **لمؤشرات** **نقاط النهاية** **للإعدادات** \> \> \>.
 
 2. أدخل مجال الموقع.
 
@@ -248,7 +259,7 @@ ms.locfileid: "65648558"
 
 ### <a name="known-issues-and-limitations"></a>المشاكل والقيود المعروفة
 
-يتم دعم Microsoft Edge فقط إذا كان تكوين نظام التشغيل الخاص بجهازك هو Server (**cmd** \> **Systeminfo** \> **OS Configuration**). يتم دعم Network Protection فقط في وضع الفحص على أجهزة الخادم، وهو المسؤول عن تأمين نسبة استخدام الشبكة عبر مستعرضات الجهات الخارجية المدعومة.
+يتم دعم Microsoft Edge فقط إذا كان تكوين نظام التشغيل لجهازك هو Server (**cmd** \> **Systeminfo** \> **OS Configuration**). يتم دعم Network Protection فقط في وضع الفحص على أجهزة الخادم، وهو المسؤول عن تأمين نسبة استخدام الشبكة عبر مستعرضات الجهات الخارجية المدعومة.
 
 يتم دعم Microsoft Edge فقط ولا يتم دعم حماية الشبكة على Windows 10 مضيفي Azure Virtual Desktop متعددي الجلسات.
 

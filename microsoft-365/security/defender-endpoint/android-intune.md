@@ -15,19 +15,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 75fa8c4e3dff9ed05716389ec5bed1d5331eefba
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: c743b54e27bc9caa60bb6b4e24191d626ece6fcf
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419023"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490498"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>نشر Microsoft Defender لنقطة النهاية على Android باستخدام Microsoft Intune
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -40,7 +40,7 @@ ms.locfileid: "65419023"
 >
 > يمكنك الاتصال ب Google Play من Intune لنشر تطبيق Defender لنقطة النهاية عبر أوضاع تسجيل مسؤول الجهاز وAndroid Enterprise.
 >
-> يتم تحديث التطبيق تلقائيا عبر Google Play.
+> تتم التحديثات إلى التطبيق تلقائيا عبر Google Play.
 
 ## <a name="deploy-on-device-administrator-enrolled-devices"></a>النشر على الأجهزة المسجلة في مسؤول الجهاز
 
@@ -48,33 +48,33 @@ ms.locfileid: "65419023"
 
 ### <a name="add-as-android-store-app"></a>إضافة كتطبيق متجر Android
 
-1. في [مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى تطبيق متجر **تطبيقات** \> **Android** \> **Add \> Android** واختر **"تحديد**".
+1. في [مركز إدارة Microsoft إدارة نقاط النهاية](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى تطبيق متجر **تطبيقات** \> **Android** \> **Add \> Android** واختر **"تحديد**".
 
-   :::image type="content" source="images/mda-addandroidstoreapp.png" alt-text="جزء تطبيق &quot;Add Android store&quot; في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft"  lightbox="images/mda-addandroidstoreapp.png":::
+   :::image type="content" source="images/mda-addandroidstoreapp.png" alt-text="جزء تطبيق &quot;إضافة متجر Android&quot; في مدخل Microsoft إدارة نقاط النهاية مسؤول Center"  lightbox="images/mda-addandroidstoreapp.png":::
 
 2. في صفحة **"إضافة تطبيق** " وفي قسم *"معلومات التطبيق* "، أدخل:
 
    - **الاسم**
    - **الوصف**
-   - **Publisher** باسم Microsoft.
+   - **Publisher** ك Microsoft.
    - **عنوان URL لمتجر التطبيقات** ك https://play.google.com/store/apps/details?id=com.microsoft.scmx (Defender for Endpoint app متجر Google Play URL)
 
    الحقول الأخرى اختيارية. حدد **التالي**.
 
-   :::image type="content" source="images/mda-addappinfo.png" alt-text="صفحة &quot;إضافة تطبيق&quot; تعرض معلومات ناشر التطبيق وعنوان URL في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/mda-addappinfo.png":::
+   :::image type="content" source="images/mda-addappinfo.png" alt-text="صفحة &quot;إضافة تطبيق&quot; تعرض معلومات ناشر التطبيق وعنوان URL في مدخل Microsoft إدارة نقاط النهاية مسؤول Center" lightbox="images/mda-addappinfo.png":::
 
 3. في المقطع *"الواجبات* "، انتقل إلى المقطع **"مطلوب** " وحدد **"إضافة مجموعة".** يمكنك بعد ذلك اختيار مجموعة (مجموعات) المستخدمين التي ترغب في استهداف Defender لنقطة النهاية على تطبيق Android. اختر **"تحديد"** ثم **"التالي**".
 
     > [!NOTE]
     > يجب أن تتكون مجموعة المستخدمين المحددة من المستخدمين المسجلين في Intune.
     >
-    > :::image type="content" source="images/363bf30f7d69a94db578e8af0ddd044b.png" alt-text="الجزء &quot;إضافة مجموعة&quot; في صفحة &quot;إضافة تطبيق&quot; في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/363bf30f7d69a94db578e8af0ddd044b.png":::
+    > :::image type="content" source="images/363bf30f7d69a94db578e8af0ddd044b.png" alt-text="الجزء &quot;إضافة مجموعة&quot; في صفحة &quot;إضافة تطبيق&quot; في مدخل Microsoft إدارة نقاط النهاية مسؤول Center" lightbox="images/363bf30f7d69a94db578e8af0ddd044b.png":::
 
 4. في المقطع **Review+Create** ، تحقق من صحة كافة المعلومات التي تم إدخالها ثم حدد **"إنشاء**".
 
     في بضع لحظات، سيتم إنشاء تطبيق Defender لنقطة النهاية بنجاح، وسيظهر إعلام في الزاوية العلوية اليسرى من الصفحة.
 
-    :::image type="content" source="images/86cbe56f88bb6e93e9c63303397fc24f.png" alt-text="جزء حالة التطبيق في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/86cbe56f88bb6e93e9c63303397fc24f.png":::
+    :::image type="content" source="images/86cbe56f88bb6e93e9c63303397fc24f.png" alt-text="جزء حالة التطبيق في مدخل مركز إدارة نقاط النهاية مسؤول Microsoft" lightbox="images/86cbe56f88bb6e93e9c63303397fc24f.png":::
 
 5. في صفحة معلومات التطبيق المعروضة، في قسم **"Monitor** "، حدد **حالة تثبيت الجهاز** للتحقق من اكتمال تثبيت الجهاز بنجاح.
 
@@ -104,18 +104,18 @@ ms.locfileid: "65419023"
 
 اتبع الخطوات أدناه لإضافة تطبيق Microsoft Defender لنقطة النهاية إلى Google Play المدار.
 
-1. في [مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى **تطبيقات** \> **Android Apps** \> **Add** وحدد **تطبيق Google Play المدار**.
+1. في [مركز إدارة Microsoft إدارة نقاط النهاية](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى **تطبيقات** \> **Android Apps** \> **Add** وحدد **تطبيق Google Play المدار**.
 
-    :::image type="content" source="images/579ff59f31f599414cedf63051628b2e.png" alt-text="جزء إضافة التطبيق في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/579ff59f31f599414cedf63051628b2e.png":::
+    :::image type="content" source="images/579ff59f31f599414cedf63051628b2e.png" alt-text="جزء إضافة التطبيق في مدخل مركز إدارة Microsoft إدارة نقاط النهاية" lightbox="images/579ff59f31f599414cedf63051628b2e.png":::
 
 2. في صفحة Google Play المدارة التي يتم تحميلها لاحقا، انتقل إلى مربع البحث وأدخل `Microsoft Defender`. يجب أن يعرض بحثك تطبيق Microsoft Defender لنقطة النهاية في Google Play المدار. انقر فوق تطبيق Microsoft Defender لنقطة النهاية من نتيجة البحث في التطبيقات.
 
-    :::image type="content" source="images/0f79cb37900b57c3e2bb0effad1c19cb.png" alt-text="صفحة Google Play المدارة في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/0f79cb37900b57c3e2bb0effad1c19cb.png":::
+    :::image type="content" source="images/0f79cb37900b57c3e2bb0effad1c19cb.png" alt-text="صفحة Google Play المدارة في مدخل مركز إدارة Microsoft إدارة نقاط النهاية" lightbox="images/0f79cb37900b57c3e2bb0effad1c19cb.png":::
 
 3. في صفحة وصف التطبيق التي تظهر بعد ذلك، يجب أن تكون قادرا على رؤية تفاصيل التطبيق على Defender لنقطة النهاية. راجع المعلومات الموجودة على الصفحة ثم حدد **"موافقة**".
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/07e6d4119f265037e3b80a20a73b856f.png" alt-text="صفحة Google Play المدارة في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/07e6d4119f265037e3b80a20a73b856f.png":::
+    > :::image type="content" source="images/07e6d4119f265037e3b80a20a73b856f.png" alt-text="صفحة Google Play المدارة في مدخل مركز إدارة Microsoft إدارة نقاط النهاية" lightbox="images/07e6d4119f265037e3b80a20a73b856f.png":::
 
 4. سيتم تقديم الأذونات التي يحصل عليها Defender for Endpoint لكي يعمل. راجعها ثم حدد **"موافقة**".
 
@@ -145,7 +145,7 @@ ms.locfileid: "65419023"
 
     1. في صفحة **التطبيقات** ، انتقل إلى **نهج تكوين > نهج التطبيق > إضافة أجهزة مدارة >**.
 
-       :::image type="content" source="images/android-mem.png" alt-text="جزء نهج تكوين التطبيق في مدخل مركز إدارة إدارة نقاط النهاية من Microsoft" lightbox="images/android-mem.png":::
+       :::image type="content" source="images/android-mem.png" alt-text="جزء نهج تكوين التطبيق في مدخل مركز إدارة Microsoft إدارة نقاط النهاية" lightbox="images/android-mem.png":::
 
     1. في صفحة **إنشاء نهج تكوين التطبيق** ، أدخل التفاصيل التالية:
 
@@ -156,7 +156,7 @@ ms.locfileid: "65419023"
 
         :::image type="content" source="images/android-create-app.png" alt-text=" جزء تفاصيل التطبيق المقترن" lightbox="images/android-create-app.png":::
 
-    1. في صفحة **الإعدادات**، انتقل إلى قسم **إعدادات التكوين** واختر **"استخدام مصمم التكوين"** بتنسيق إعدادات التكوين. 
+    1. في **الصفحة "إعدادات"** ، انتقل إلى قسم **إعدادات التكوين** واختر **"استخدام مصمم التكوين"** بتنسيق إعدادات التكوين. 
 
        :::image type="content" alt-text="صورة لنهج إنشاء تطبيق android." source="images/configurationformat.png" lightbox="images/configurationformat.png":::
 
@@ -168,7 +168,7 @@ ms.locfileid: "65419023"
 
        :::image type="content" alt-text="صورة لنهج التكوين المحددة." source="images/listedconfigurations.png" lightbox="images/listedconfigurations.png":::
 
-    1. في صفحة **"الواجبات** "، حدد مجموعة المستخدمين التي سيتم تعيين نهج تكوين التطبيق إليها. انقر فوق **"تحديد المجموعات" لتضمين** المجموعة القابلة للتطبيق وتحديدها، ثم حدد **"التالي**". عادة ما تكون المجموعة المحددة هنا هي نفس المجموعة التي ستقوم بتعيين Microsoft Defender لنقطة النهاية تطبيق Android إليها.
+    1. في صفحة **"الواجبات** "، حدد مجموعة المستخدمين التي سيتم تعيين نهج تكوين التطبيق لها. انقر فوق **"تحديد المجموعات" لتضمين** المجموعة القابلة للتطبيق وتحديدها، ثم حدد **"التالي**". عادة ما تكون المجموعة المحددة هنا هي نفس المجموعة التي ستقوم بتعيين Microsoft Defender لنقطة النهاية تطبيق Android إليها.
 
        :::image type="content" source="images/android-select-group.png" alt-text="جزء المجموعات المحددة" lightbox="images/android-select-group.png":::
 
@@ -204,7 +204,7 @@ ms.locfileid: "65419023"
 
    :::image type="content" source="images/1autosetupofvpn.png" alt-text="عنصر قائمة ملفات تعريف التكوين في جزء &quot;النهج&quot;" lightbox="images/1autosetupofvpn.png":::
 
-2. **الإعدادات التكوين** توفير **اسم** **ووصف** لتعريف ملف تعريف التكوين بشكل فريد.
+2. **إعدادات التكوين** توفير **اسم** **ووصف** لتعريف ملف تعريف التكوين بشكل فريد.
 
    :::image type="content" source="images/2autosetupofvpn.png" alt-text="الحقلان &quot;اسم ملف تعريف تكوين الأجهزة&quot; و&quot;الوصف&quot; في جزء &quot;الأساسيات&quot;" lightbox="images/2autosetupofvpn.png":::
 
@@ -259,11 +259,6 @@ ms.locfileid: "65419023"
 
 ## <a name="set-up-microsoft-defender-in-personal-profile-on-android-enterprise-in-byod-mode"></a>إعداد Microsoft Defender في ملف التعريف الشخصي على Android Enterprise في وضع BYOD
 
-> [!NOTE]
-> يتوفر الآن دعم Microsoft Defender في ملف التعريف الشخصي في Android Enterprise (AE) في وضع Bring-Your-Own-Device (BYOD) في المعاينة العامة. تتعلق المعلومات التالية بالناتج الذي تم إصداره مسبقا والذي قد يتم تعديله بشكل كبير قبل إصداره تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، فيما يتعلق بالمعلومات المقدمة هنا.
-
-مع دعم Microsoft defender في ملفات التعريف الشخصية التي تعمل بنظام Android، يمكن حماية أجهزة المستخدم من التصيد الاحتيالي وهجمات البرامج الضارة على ملف تعريف شخصي قد يعرض موارد الشركة للخطر على ملف تعريف العمل.
-
 ### <a name="set-up-microsoft-defender-in-personal-profile"></a>إعداد Microsoft Defender في ملف التعريف الشخصي
 
 يمكن للمسؤولين الانتقال إلى [مركز إدارة نقاط النهاية من Microsoft](https://endpoint.microsoft.com) لإعداد وتكوين دعم Microsoft Defender في ملفات التعريف الشخصية باتباع الخطوات التالية:
@@ -293,7 +288,7 @@ ms.locfileid: "65419023"
     > [!div class="mx-imgBorder"]
     > ![صورة لمراجعة النهج وإنشاءه.](images/savepolicy.png)
 
-يمكن للمسؤولين أيضا إعداد **عناصر تحكم الخصوصية** من مركز إدارة إدارة نقاط النهاية من Microsoft للتحكم في البيانات التي يمكن إرسالها من قبل عميل Defender للأجهزة المحمولة إلى مدخل الأمان. لمزيد من المعلومات، راجع [تكوين عناصر التحكم في الخصوصية](android-configure.md).
+يمكن للمسؤولين أيضا إعداد **عناصر تحكم الخصوصية** من مركز إدارة Microsoft إدارة نقاط النهاية للتحكم في البيانات التي يمكن أن يرسلها عميل Defender للأجهزة المحمولة إلى مدخل الأمان. لمزيد من المعلومات، راجع [تكوين عناصر التحكم في الخصوصية](android-configure.md).
 
 يمكن للمؤسسات الاتصال بمستخدميها لحماية ملف التعريف الشخصي باستخدام Microsoft Defender على أجهزة BYOD المسجلة.
 

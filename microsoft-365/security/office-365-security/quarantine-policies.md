@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية استخدام نهج العزل للتحكم في ما يمكن للمستخدمين القيام به للرسائل المعزولة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3d50debf31f53f75177e7c8cf8c7116ae3789b6
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 780d2bade0713bac295cf9597662c5ef2313a093
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128844"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490089"
 ---
 # <a name="quarantine-policies"></a>سياسات العزل
 
@@ -53,8 +53,10 @@ ms.locfileid: "66128844"
 |**مرسل الحظر** (_PermissionToBlockSender_)||![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
 |**حذف** (_PermissionToDelete_)||![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
 |**معاينة** (_PermissionToPreview_)||![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
-|**السماح للمستلمين بتحرير رسالة من العزل** (_PermissionToRelease_)|||![علامة الاختيار.](../../media/checkmark.png)|
+|**السماح للمستلمين بتحرير رسالة من العزل** (_PermissionToRelease_)<sup>\*</sup>|||![علامة الاختيار.](../../media/checkmark.png)|
 |**السماح للمستلمين بطلب إصدار رسالة من العزل** (_PermissionToRequestRelease_)||![علامة اختيار](../../media/checkmark.png)||
+
+<sup>\*</sup>لا يتم احترام **السماح للمستلمين بإصدار رسالة من إذن العزل** في نهج مكافحة البرامج الضارة أو حكم التصيد الاحتيالي عالي الثقة في نهج مكافحة البريد العشوائي. لا يمكن للمستخدمين تحرير البرامج الضارة الخاصة بهم أو رسائل التصيد الاحتيالي عالية الثقة من العزل. في أفضل الأحوال، يمكنك استخدام **السماح للمستلمين بطلب رسالة ليتم إصدارها من إذن العزل** .
 
 يتم وصف نهج العزل الافتراضية ومجموعات الأذونات المقترنة بها وما إذا كانت إعلامات العزل ممكنة في الجدول التالي:
 
@@ -66,7 +68,7 @@ ms.locfileid: "66128844"
 
 إذا لم تعجبك الأذونات الافتراضية في مجموعات الأذونات التي تم تعيينها مسبقا، أو إذا كنت تريد تمكين إعلامات العزل، فتنشئ نهج العزل المخصصة وتستخدمها. لمزيد من المعلومات حول ما يفعله كل إذن، راجع قسم [تفاصيل أذونات نهج العزل](#quarantine-policy-permission-details) لاحقا في هذه المقالة.
 
-يمكنك إنشاء نهج العزل وتعيينها في مدخل Microsoft 365 Defender أو في PowerShell (Exchange Online PowerShell للمؤسسات Microsoft 365 مع علب بريد Exchange Online؛ EOP PowerShell مستقل في مؤسسات EOP دون Exchange Online علب البريد).
+يمكنك إنشاء نهج العزل وتعيينها في مدخل Microsoft 365 Defender أو في PowerShell (Exchange Online PowerShell لمؤسسات Microsoft 365 مع علب بريد Exchange Online؛ EOP PowerShell مستقل في مؤسسات EOP بدون علب بريد Exchange Online).
 
 > [!NOTE]
 > يتم التحكم في مدة الاحتفاظ بالرسائل المعزولة قبل انتهاء صلاحيتها بواسطة الاحتفاظ بالبريد **العشوائي في العزل لعدة أيام** (_QuarantineRetentionPeriod_) في نهج مكافحة البريد العشوائي. لمزيد من المعلومات، راجع [تكوين نهج مكافحة البريد العشوائي في EOP](configure-your-spam-filter-policies.md).
@@ -90,7 +92,7 @@ ms.locfileid: "66128844"
 
 - يمكنك فتح مدخل Microsoft 365 Defender في <https://security.microsoft.com>. للانتقال مباشرة إلى صفحة **نهج العزل** ، استخدم <https://security.microsoft.com/quarantinePolicies>.
 
-- للاتصال Exchange Online PowerShell، راجع [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell مستقل، راجع [الاتصال إلى Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- للاتصال Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell المستقل، راجع [الاتصال Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - لعرض نهج العزل أو إنشائها أو تعديلها أو إزالتها، يجب أن تكون عضوا في أدوار **إدارة المؤسسة** أو **مسؤول الأمان** أو **مسؤول العزل** في مدخل Microsoft 365 Defender. لمزيد من المعلومات، راجع [الأذونات في مدخل Microsoft 365 Defender](permissions-microsoft-365-security-center.md).
 
@@ -201,7 +203,7 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 |[نهج مكافحة البريد العشوائي](configure-your-spam-filter-policies.md): <ul><li>**البريد العشوائي** (_SpamAction_)</li><li>**البريد العشوائي عالي الثقة** (_HighConfidenceSpamAction_)</li><li>**التصيد الاحتيالي** (_PhishSpamAction_)</li><li>**التصيد الاحتيالي عالي الثقة** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|نعم|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>AdminOnlyAccessPolicy (بدون وصول)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li></ul>|
 |نهج مكافحة التصيد الاحتيالي: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[حماية انتحال الهوية في Defender لـ Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**إذا تم الكشف عن الرسالة كمستخدم منتحل** (_TargetedUserProtectionAction_)</li><li>**إذا تم الكشف عن الرسالة كمجال منتحل** (_TargetedDomainProtectionAction_)</li><li>**إذا كشف تحليل معلومات علبة البريد عن مستخدم منتحل** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|نعم|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>حماية الانتحال:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li></ul></li></ul>|
 |[نهج مكافحة البرامج الضارة](configure-anti-malware-policies.md): يتم عزل جميع الرسائل المكتشفة دائما.|نعم|AdminOnlyAccessPolicy (بدون وصول)|
-|[حماية المرفقات خزينة](safe-attachments.md): <ul><li>رسائل البريد الإلكتروني التي تحتوي على مرفقات تم عزلها كبرود ضار بواسطة نهج المرفقات خزينة (_تمكين_ _وإجراء)_</li><li>الملفات التي تم عزلها كالبرمجيات الضارة بواسطة [مرفقات خزينة SharePoint OneDrive Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>نعم</li><li>لا</li></ul>|<ul><li>AdminOnlyAccessPolicy (بدون وصول)</li><li>n/a</li></ul>|
+|[حماية المرفقات الآمنة](safe-attachments.md): <ul><li>رسائل البريد الإلكتروني التي تحتوي على مرفقات تم عزلها كبرود ضار بواسطة نهج "المرفقات الآمنة" (_تمكين_ _وإجراء)_</li><li>الملفات التي تم عزلها كبرمجيات ضارة بواسطة ["المرفقات الآمنة" ل SharePoint وOneDrive وMicrosoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>نعم</li><li>لا</li></ul>|<ul><li>AdminOnlyAccessPolicy (بدون وصول)</li><li>n/a</li></ul>|
 |[قواعد تدفق البريد](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (المعروفة أيضا باسم قواعد النقل) مع الإجراء: **تسليم الرسالة إلى العزل المستضاف** (_العزل_).|لا|n/a|
 
 <sup>\*</sup> كما [هو موضح سابقا في هذه المقالة](#full-access-permissions-and-quarantine-notifications)، قد تستخدم مؤسستك NotificationEnabledPolicy بدلا من DefaultFullAccessPolicy. الفرق الوحيد بين نهجي العزل هذين هو تشغيل إعلامات العزل في NotificationEnabledPolicy وإيقاف تشغيلها في DefaultFullAccessPolicy.
@@ -424,31 +426,31 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy).
 
-### <a name="safe-attachments-policies-in-defender-for-office-365"></a>نهج المرفقات خزينة في Defender لـ Office 365
+### <a name="safe-attachments-policies-in-defender-for-office-365"></a>نهج المرفقات الآمنة في Defender لـ Office 365
 
-1. في [مدخل Microsoft 365 Defender](https://security.microsoft.com)، انتقل إلى نهج **التعاون** \> & البريد الإلكتروني **& قواعد** \> **نهج التهديد** \> **خزينة المرفقات** في قسم **"النهج**".
+1. في [مدخل Microsoft 365 Defender](https://security.microsoft.com)، انتقل إلى **"نهج تعاون** \> & البريد الإلكتروني **" & قواعد** **"المرفقات الآمنة** **لنهج** \> \> التهديد" في قسم **"النهج**".
 
-   أو للانتقال مباشرة إلى صفحة **المرفقات خزينة**، استخدم <https://security.microsoft.com/safeattachmentv2>.
+   أو للانتقال مباشرة إلى صفحة **"المرفقات الآمنة"** ، استخدم <https://security.microsoft.com/safeattachmentv2>.
 
-2. في صفحة **"مرفقات خزينة**"، نفذ إحدى الخطوات التالية:
-   - ابحث عن نهج مرفقات خزينة موجود وحدده.
-   - إنشاء نهج مرفقات خزينة جديد.
+2. في صفحة **"المرفقات الآمنة** "، نفذ إحدى الخطوات التالية:
+   - ابحث عن نهج مرفقات آمنة موجود وحدده.
+   - إنشاء نهج مرفقات آمنة جديد.
 
 3. قم بتنفيذ أحد الخطوتين التاليين:
-   - **تحرير الموجود**: حدد النهج بالنقر فوق اسم النهج. في القائمة المنبثقة لتفاصيل النهج، انتقل إلى قسم **الإعدادات** ثم انقر فوق **"تحرير الإعدادات**".
-   - **إنشاء جديد**: في معالج النهج الجديد، الوصول إلى صفحة **الإعدادات**.
+   - **تحرير الموجود**: حدد النهج بالنقر فوق اسم النهج. في القائمة المنبثقة لتفاصيل النهج، انتقل إلى قسم **"الإعدادات"** ثم انقر فوق **"تحرير الإعدادات**".
+   - **إنشاء جديد**: في معالج النهج الجديد، الوصول إلى صفحة **الإعدادات** .
 
-4. في صفحة **الإعدادات**، قم بالخطوات التالية:
-   1. **خزينة استجابة البرامج الضارة غير المعروفة في المرفقات**: حدد **Block** أو **Replace** أو **Dynamic Delivery**.
+4. في صفحة **الإعدادات** ، قم بالخطوات التالية:
+   1. **استجابة البرامج الضارة غير المعروفة لمرفقات آمنة**: حدد **Block** أو **Replace** أو **Dynamic Delivery**.
    2. حدد نهج عزل في مربع **نهج العزل** .
 
    **ملاحظة**: عند إنشاء نهج جديد، تشير قيمة **نهج العزل** الفارغة إلى استخدام نهج العزل الافتراضي. عند تحرير النهج لاحقا، يتم استبدال القيمة الفارغة باسم نهج العزل الافتراضي الفعلي كما هو موضح في الجدول السابق.
 
-يتم وصف الإرشادات الكاملة لإنشاء نهج المرفقات خزينة وتعديلها في [إعداد نهج المرفقات خزينة في Microsoft Defender لـ Office 365](set-up-safe-attachments-policies.md).
+يتم وصف الإرشادات الكاملة لإنشاء نهج المرفقات الآمنة وتعديلها في ["إعداد نهج المرفقات الآمنة" في Microsoft Defender لـ Office 365](set-up-safe-attachments-policies.md).
 
-#### <a name="safe-attachments-policies-in-powershell"></a>نهج المرفقات خزينة في PowerShell
+#### <a name="safe-attachments-policies-in-powershell"></a>نهج المرفقات الآمنة في PowerShell
 
-إذا كنت تفضل استخدام PowerShell لتعيين نهج العزل في نهج المرفقات خزينة، فتواصل مع Exchange Online PowerShell أو Exchange Online Protection PowerShell واستخدم بناء الجملة التالي:
+إذا كنت تفضل استخدام PowerShell لتعيين نهج العزل في نهج "المرفقات الآمنة"، فتواصل مع Exchange Online PowerShell أو Exchange Online Protection PowerShell واستخدم بناء الجملة التالي:
 
 ```powershell
 <New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
@@ -458,9 +460,9 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 - يمكن أن ينتج عن قيم معلمة _الإجراء_ Block أو Replace أو DynamicDelivery رسائل معزولة (لا تقوم القيمة Allow بعزل الرسائل). قيمة معلمة _الإجراء_ ذات المعنى فقط عندما تكون `$true`قيمة المعلمة _Enable_ .
 
-- عند إنشاء نهج مرفقات خزينة جديدة دون استخدام معلمة QuarantineTag، يتم استخدام نهج العزل الافتراضي لاكتشافات المرفقات خزينة في البريد الإلكتروني (AdminOnlyAccessPolicy).
+- عند إنشاء نهج مرفقات آمنة جديدة دون استخدام معلمة QuarantineTag، يتم استخدام نهج العزل الافتراضي للكشف عن المرفقات الآمنة في البريد الإلكتروني (AdminOnlyAccessPolicy).
 
-  تحتاج إلى استبدال نهج العزل الافتراضي بنهج عزل مخصص فقط إذا كنت تريد تغيير قدرات المستخدم النهائي الافتراضية على رسائل البريد الإلكتروني التي تم عزلها بواسطة نهج المرفقات خزينة.
+  تحتاج إلى استبدال نهج العزل الافتراضي بنهج عزل مخصص فقط إذا كنت تريد تغيير قدرات المستخدم النهائي الافتراضية على رسائل البريد الإلكتروني التي يتم عزلها بواسطة نهج "المرفقات الآمنة".
 
   لمشاهدة قيم المعلمات المهمة، قم بتشغيل الأمر التالي:
 
@@ -468,7 +470,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
   Get-SafeAttachmentPolicy | Format-List Name,Enable,Action,QuarantineTag
   ```
 
-- يتطلب نهج مرفقات خزينة جديد في PowerShell نهج مرفق آمن (إعدادات) باستخدام **New-SafeAttachmentPolicy** cmdlet وقاعدة مرفقات آمنة حصرية (عوامل تصفية المستلمين) باستخدام **New-SafeAttachmentRule** cmdlet. للحصول على الإرشادات، راجع [استخدام Exchange Online PowerShell أو EOP PowerShell المستقل لتكوين نهج المرفقات خزينة](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies).
+- يتطلب نهج المرفقات الآمنة الجديد في PowerShell نهج مرفق آمن (إعدادات) باستخدام **New-SafeAttachmentPolicy** cmdlet وقاعدة مرفق آمنة حصرية (عوامل تصفية المستلمين) باستخدام **New-SafeAttachmentRule** cmdlet. للحصول على الإرشادات، راجع [استخدام Exchange Online PowerShell أو EOP PowerShell المستقل لتكوين نهج المرفقات الآمنة](set-up-safe-attachments-policies.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies).
 
 ينشئ هذا المثال نهج مرفق آمن يسمى "قسم الأبحاث" يحظر الرسائل المكتشفة ويستخدم نهج العزل المخصص المسمى NoAccess الذي يعين **"بلا أذونات وصول"** إلى الرسائل المعزولة.
 
@@ -729,6 +731,9 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
 - **إعلامات العزل**: لا يوجد أي تأثير.
 
 #### <a name="allow-recipients-to-release-a-message-from-quarantine-permission"></a>السماح للمستلمين بتحرير رسالة من إذن العزل
+
+> [!NOTE]
+> لا يتم احترام هذا الإذن في نهج مكافحة البرامج الضارة أو حكم التصيد الاحتيالي عالي الثقة في نهج مكافحة البريد العشوائي. لا يمكن للمستخدمين تحرير البرامج الضارة الخاصة بهم أو رسائل التصيد الاحتيالي عالية الثقة من العزل. في أفضل الأحوال، يمكنك استخدام [السماح للمستلمين بطلب رسالة ليتم إصدارها من إذن إذن العزل](#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission) .
 
 يتحكم **السماح للمستلمين بتحرير رسالة من إذن العزل** (_PermissionToRelease_) في قدرة المستخدمين على تحرير رسائلهم المعزولة مباشرة ودون موافقة المسؤول.
 

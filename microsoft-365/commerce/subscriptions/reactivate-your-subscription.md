@@ -22,14 +22,14 @@ ms.custom:
 search.appverid: MET150
 description: يمكن للمسؤولين إعادة تنشيط اشتراك عند انتهاء صلاحيته أو تعطيله أو إلغائه أو إذا قمت بالإلغاء في منتصف فترة الاشتراك.
 ms.date: 04/07/2021
-ms.openlocfilehash: 7cb93854f4da8e3568eef058009652cdb6b32b96
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 1f0d38a3b0b09a581d4ed31a6d9abb9d8f8ea467
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101471"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489437"
 ---
-# <a name="reactivate-your-subscription"></a>إعادة تنشيط الاشتراك
+# <a name="reactivate-your-microsoft-subscription"></a>إعادة تنشيط اشتراكك في Microsoft
 
 يمكنك إعادة تنشيط اشتراكك في مركز الإدارة إذا: انتهت صلاحية الاشتراك أو تم تعطيله بواسطة Microsoft أو إذا قمت بإلغاء الاشتراك في منتصف مدة الاشتراك.
   
@@ -58,8 +58,8 @@ ms.locfileid: "66101471"
 3. في جزء **"إعادة تنشيط هذا الاشتراك** "، حدد طريقة دفع من القائمة المنسدلة، أو حدد **"إضافة طريقة دفع**".
 4. حدد **حفظ**.
 
-## <a name="related-content"></a>المحتويات ذات الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
-[جرب اشتراك Microsoft 365 للأعمال أو اشتره](../try-or-buy-microsoft-365.md) (مقالة)\
+[جرب اشتراك Microsoft 365 للأعمال (مقالة) أو قم بشرائه](../try-or-buy-microsoft-365.md) /
 [تجديد Microsoft 365 للأعمال](renew-your-subscription.md) (مقالة)\
 [إلغاء اشتراكك](cancel-your-subscription.md) (مقالة)

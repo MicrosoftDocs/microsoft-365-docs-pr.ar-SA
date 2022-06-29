@@ -20,12 +20,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 36aa48f26e60e2c3afb034a218c3356e27d75ffd
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: f8d44cd032e658e28242c89f3fbd938bfd1fb320
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873347"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490542"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>حماية إعدادات الأمان باستخدام الحماية من العبث
 
@@ -38,7 +38,7 @@ ms.locfileid: "65873347"
 **الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
-تتوفر الحماية من العبث بالأجهزة التي تقوم بتشغيل أحد الإصدارات التالية من Windows:
+تتوفر الحماية من العبث بالأجهزة التي تعمل بأحد الإصدارات التالية من Windows:
 
 - Windows 11
 - Windows 11 Enterprise متعددة الجلسات 
@@ -64,12 +64,13 @@ ms.locfileid: "65873347"
 - تعطيل الحماية المقدمة من السحابة
 - إزالة تحديثات التحليل الذكي للأمان
 - تعطيل الإجراءات التلقائية على التهديدات المكتشفة
+- منع الإعلامات في تطبيق أمن Windows
 
 ### <a name="how-it-works"></a>كيفية عملها
 
-تعمل الحماية من العبث بشكل أساسي على تأمين برنامج الحماية من الفيروسات من Microsoft Defender إلى قيمها الآمنة والافتراضية، وتمنع تغيير إعدادات الأمان من خلال التطبيقات والأساليب مثل:
+تعمل الحماية من العبث بشكل أساسي على تأمين برنامج الحماية من الفيروسات من Microsoft Defender إلى قيمه الآمنة والافتراضية، وتمنع تغيير إعدادات الأمان من خلال التطبيقات والأساليب مثل:
 
-- تكوين الإعدادات في "محرر السجل" على جهازك Windows
+- تكوين الإعدادات في "محرر السجل" على جهاز Windows
 - تغيير الإعدادات من خلال أوامر PowerShell cmdlets
 - تحرير إعدادات الأمان أو إزالتها من خلال نهج المجموعة
 
@@ -80,7 +81,7 @@ ms.locfileid: "65873347"
 |لتنفيذ هذه المهمة...|راجع هذا المقطع...|
 |---|---|
 |إدارة الحماية من العبث عبر المستأجر <p> استخدام مدخل Microsoft 365 Defender لتشغيل الحماية من العبث أو إيقاف تشغيلها|[إدارة الحماية من العبث بمؤسستك باستخدام Microsoft 365 Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal)|
-|ضبط إعدادات الحماية من العبث في مؤسستك <p> استخدم Intune (إدارة نقاط النهاية من Microsoft) لتشغيل الحماية من العبث أو إيقاف تشغيلها. يمكنك تكوين الحماية من العبث ببعض المستخدمين أو كلهم باستخدام هذا الأسلوب.|[إدارة الحماية من العبث بمؤسستك باستخدام إدارة نقاط النهاية من Microsoft](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager)|
+|ضبط إعدادات الحماية من العبث في مؤسستك <p> استخدم Intune (Microsoft إدارة نقاط النهاية) لتشغيل الحماية من العبث أو إيقاف تشغيلها. يمكنك تكوين الحماية من العبث ببعض المستخدمين أو كلهم باستخدام هذا الأسلوب.|[إدارة الحماية من العبث بمؤسستك باستخدام Microsoft إدارة نقاط النهاية](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager)|
 |تشغيل الحماية من العبث (أو إيقاف تشغيل) لمؤسستك باستخدام Configuration Manager|[إدارة الحماية من العبث بمؤسستك باستخدام إرفاق المستأجر مع Configuration Manager، الإصدار 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)|
 |تشغيل الحماية من العبث بجهاز فردي (أو إيقاف تشغيله)|[إدارة الحماية من العبث بالبيانات على جهاز فردي](#manage-tamper-protection-on-an-individual-device)|
 |عرض تفاصيل حول محاولات العبث بالأجهزة|[عرض معلومات حول محاولات العبث](#view-information-about-tampering-attempts)|
@@ -96,16 +97,16 @@ ms.locfileid: "65873347"
 | كيفية تمكين الحماية من العبث | الاعتماد على حماية السحابة |
 |---|---|
 |Microsoft Intune|لا|
-|Microsoft Endpoint Configuration Manager مع إرفاق المستأجر|لا|
+|Configuration Manager نقطة نهاية Microsoft مع إرفاق المستأجر|لا|
 |مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))|نعم|
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>إدارة الحماية من العبث بمؤسستك باستخدام مدخل Microsoft 365 Defender
 
 يمكن تشغيل الحماية من العبث بالمستأجر أو إيقاف تشغيله باستخدام مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). فيما يلي بعض النقاط التي يجب وضعها في الاعتبار:
 
-- حاليا، يتم تشغيل خيار إدارة الحماية من العبث في مدخل Microsoft 365 Defender بشكل افتراضي لعمليات النشر الجديدة. بالنسبة إلى عمليات النشر الحالية، تتوفر الحماية من العبث بالبيانات على أساس الاشتراك. للاشتراك، في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، اختر **الإعدادات** \> **Endpoints** **Advanced features** \> \> **Advanced Protection**.
+- حاليا، يتم تشغيل خيار إدارة الحماية من العبث في مدخل Microsoft 365 Defender بشكل افتراضي لعمليات النشر الجديدة. بالنسبة إلى عمليات النشر الحالية، تتوفر الحماية من العبث بالبيانات على أساس الاشتراك. للاشتراك، في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، اختر **الحماية** **المتقدمة من العبث بنقاط** **نهاية الإعدادات** \>  \> \>.
 - عند استخدام مدخل Microsoft 365 Defender لإدارة الحماية من العبث، لن تحتاج إلى استخدام Intune أو أسلوب إرفاق المستأجر.
-- عند إدارة الحماية من العبث في مدخل Microsoft 365 Defender، يتم تطبيق الإعداد على نطاق المستأجر، مما يؤثر على جميع أجهزتك التي تعمل Windows 10، Windows 10 Enterprise جلسات متعددة، Windows 11، Windows 11 Enterprise  Windows Server 2012 R2 أو Windows Server 2016 أو Windows Server 2019 أو Windows Server 2022 متعددة الجلسات. لضبط الحماية من العبث (مثل الحماية من العبث ببعض الأجهزة ولكن مع إيقاف تشغيلها للآخرين)، استخدم [إما إدارة نقاط النهاية من Microsoft](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager) أو [Configuration Manager مع إرفاق المستأجر](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
+- عند إدارة الحماية من العبث في مدخل Microsoft 365 Defender، يتم تطبيق الإعداد على نطاق المستأجر، مما يؤثر على جميع أجهزتك التي تعمل Windows 10، Windows 10 Enterprise جلسات متعددة، Windows 11، Windows 11 Enterprise  جلسات متعددة، Windows Server 2012 R2، Windows Server 2016، Windows Server 2019 أو Windows Server 2022. لضبط الحماية من العبث (مثل الحماية من العبث ببعض الأجهزة ولكن مع إيقاف تشغيلها للأجهزة الأخرى)، استخدم [إما Microsoft إدارة نقاط النهاية](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager) أو [Configuration Manager مع إرفاق المستأجر](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
 - إذا كانت لديك بيئة مختلطة، فإن إعدادات الحماية من العبث التي تم تكوينها في Intune لها الأسبقية على الإعدادات التي تم تكوينها في مدخل Microsoft 365 Defender.
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-365-defender-portal"></a>متطلبات إدارة الحماية من العبث في مدخل Microsoft 365 Defender
@@ -140,28 +141,28 @@ ms.locfileid: "65873347"
 
 1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) وسجل الدخول.
 
-2. اختر **الإعدادات** \> **نقاط النهاية**.
+2. اختر **نقاط نهاية الإعدادات**\>.
 
 3. انتقل إلى **الميزات المتقدمة** **العامة**\>، ثم قم بتشغيل الحماية من العبث.
 
-## <a name="manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager"></a>إدارة الحماية من العبث بمؤسستك باستخدام إدارة نقاط النهاية من Microsoft
+## <a name="manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager"></a>إدارة الحماية من العبث بمؤسستك باستخدام Microsoft إدارة نقاط النهاية
 
-إذا كانت مؤسستك تستخدم إدارة نقاط النهاية من Microsoft (MEM)، فيمكنك تشغيل (أو إيقاف تشغيل) الحماية من العبث بمؤسستك في مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). استخدم Intune عندما تريد ضبط إعدادات الحماية من العبث. على سبيل المثال، إذا كنت تريد تمكين الحماية من العبث في بعض الأجهزة، ولكن ليس كلها، فاستخدم Intune.
+إذا كانت مؤسستك تستخدم Microsoft إدارة نقاط النهاية (MEM)، فيمكنك تشغيل (أو إيقاف تشغيل) الحماية من العبث بمؤسستك في مركز إدارة Microsoft إدارة نقاط النهاية ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). استخدم Intune عندما تريد ضبط إعدادات الحماية من العبث. على سبيل المثال، إذا كنت تريد تمكين الحماية من العبث في بعض الأجهزة، ولكن ليس كلها، فاستخدم Intune.
 
 ### <a name="requirements-for-managing-tamper-protection-in-endpoint-manager"></a>متطلبات إدارة الحماية من العبث في إدارة نقاط النهاية
 
 - يجب إلحاق أجهزتك [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/onboarding).
 - يجب أن يكون لديك [الأذونات المناسبة المعينة](/microsoft-365/security/defender-endpoint/assign-portal-access) ، مثل المسؤول العام أو مسؤول الأمان أو عمليات الأمان.
-- تستخدم مؤسستك [إدارة نقاط النهاية من Microsoft لإدارة الأجهزة](/mem/endpoint-manager-getting-started). (إدارة نقاط النهاية من Microsoft (MEM) مطلوبة؛ يتم تضمين MEM في Microsoft 365 E3/E5، Enterprise Mobility + Security E3/E5، Microsoft 365 Business Premium، Microsoft 365 F1/F3، Microsoft 365  G3/G5 الحكومية، وتراخيص التعليم المقابلة.)
-- يجب أن تكون أجهزة Windows قيد التشغيل Windows 11 أو Windows 10 [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709) أو [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing) أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) أو أحدث. (لمزيد من المعلومات حول الإصدارات، راجع [Windows 10 معلومات الإصدار](/windows/release-health/release-information).)
-- يجب أن تستخدم الأمان Windows مع تحديث [معلومات الأمان](https://www.microsoft.com/wdsi/definitions) إلى الإصدار 1.287.60.0 (أو أعلى).
+- تستخدم مؤسستك [Microsoft إدارة نقاط النهاية لإدارة الأجهزة](/mem/endpoint-manager-getting-started). تراخيص (MICROSOFT إدارة نقاط النهاية (MEM) مطلوبة؛ يتم تضمين MEM في Microsoft 365 E3/E5، Enterprise Mobility + Security E3/E5، Microsoft 365 Business Premium، Microsoft 365 F1/F3، وMicrosoft 365 Government G3/G5، وتراخيص التعليم المقابلة.)
+- يجب أن تكون أجهزة Windows قيد التشغيل Windows 11 أو Windows 10 [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709) أو [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing) أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) أو إصدار أحدث. (لمزيد من المعلومات حول الإصدارات، راجع [Windows 10 معلومات الإصدار](/windows/release-health/release-information).)
+- يجب أن تستخدم أمان Windows مع تحديث [معلومات الأمان](https://www.microsoft.com/wdsi/definitions) إلى الإصدار 1.287.60.0 (أو أعلى).
 - يجب أن تستخدم أجهزتك إصدار النظام الأساسي 4.18.1906.3 (أو أعلى) وإصدار `1.1.15500.X` محرك مكافحة البرامج الضارة (أو أعلى). ([إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](manage-updates-baselines-microsoft-defender-antivirus.md).)
 
-### <a name="turn-tamper-protection-on-or-off-in-microsoft-endpoint-manager"></a>تشغيل الحماية من العبث (أو إيقاف تشغيلها) في إدارة نقاط النهاية من Microsoft
+### <a name="turn-tamper-protection-on-or-off-in-microsoft-endpoint-manager"></a>تشغيل الحماية من العبث (أو إيقاف تشغيلها) في Microsoft إدارة نقاط النهاية
 
 :::image type="content" source="images/turnontamperprotectinmem.png" alt-text="تشغيل الحماية من العبث باستخدام Intune" lightbox="images/turnontamperprotectinmem.png":::
 
-1. في [مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى **Endpoint security** \> **Antivirus**، ثم اختر **+ Create Policy**.
+1. في [مركز إدارة Microsoft إدارة نقاط النهاية](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى **Endpoint security** \> **Antivirus**، ثم اختر **+ Create Policy**.
 
    - في قائمة **النظام الأساسي**، حدد **Windows 10 والإي وقت لاحق**.
    - في قائمة **"ملف التعريف**"، حدد **تجربة أمن Windows**.
@@ -174,16 +175,16 @@ ms.locfileid: "65873347"
  
 ### <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>إدارة الحماية من العبث بمؤسستك باستخدام Configuration Manager، الإصدار 2006
 
-إذا كنت تستخدم [الإصدار 2006 من Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)، يمكنك إدارة إعدادات الحماية من العبث بالبيانات على Windows 10، Windows 10 Enterprise متعددة الجلسات، Windows 11، Windows 11 Enterprise متعددة الجلسات، Windows  Server 2012 R2 و Windows Server 2016 و Windows Server 2019 و Windows Server 2022 باستخدام أسلوب يسمى *إرفاق المستأجر*. يتيح لك إرفاق المستأجر مزامنة أجهزة Configuration Manager المحلية فقط في مركز إدارة إدارة نقاط النهاية من Microsoft، ثم تقديم نهج تكوين أمان نقطة النهاية إلى المجموعات المحلية & الأجهزة.
+إذا كنت تستخدم [الإصدار 2006 من Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)، يمكنك إدارة إعدادات الحماية من العبث بالبيانات على Windows 10 Windows 10 Enterprise متعددة الجلسات Windows 11 Windows 11 Enterprise  جلسات متعددة، Windows Server 2012 R2، Windows Server 2016، Windows Server 2019، وWindows Server 2022 باستخدام أسلوب يسمى *إرفاق المستأجر*. يتيح لك إرفاق المستأجر مزامنة أجهزة Configuration Manager المحلية فقط في مركز إدارة Microsoft إدارة نقاط النهاية، ثم تقديم نهج تكوين أمان نقطة النهاية إلى المجموعات المحلية & الأجهزة.
 
 > [!NOTE]
-> يمكن استخدام الإجراء لتوسيع الحماية من العبث بالأجهزة التي تعمل Windows 10، Windows 10 Enterprise متعددة الجلسات، Windows 11، Windows 11 Enterprise متعددة الجلسات، Windows Server 2019، Windows Server 2022. تأكد من مراجعة المتطلبات الأساسية والمعلومات الأخرى في الموارد المذكورة في هذا الإجراء. بالنسبة Windows Server 2012 R2 الذي يقوم بتشغيل [الإصدار 2203 من Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2203) للحل الحديث والموحد.
+> يمكن استخدام الإجراء لتوسيع الحماية من العبث بالأجهزة التي تعمل Windows 10، Windows 10 Enterprise جلسات متعددة، Windows 11، Windows 11 Enterprise متعددة الجلسات، وWindows Server 2019، وWindows Server 2022. تأكد من مراجعة المتطلبات الأساسية والمعلومات الأخرى في الموارد المذكورة في هذا الإجراء. بالنسبة إلى Windows Server 2012 R2 الذي يقوم بتشغيل [الإصدار 2203 من Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2203) للحل الحديث والموحد.
 
 1. إعداد إرفاق المستأجر. لمعرفة المزيد، راجع [بدء الاستخدام: إنشاء نهج أمان نقطة النهاية ونشرها من مركز الإدارة](/mem/configmgr/tenant-attach/endpoint-security-get-started).
 
-2. في [مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى **Endpoint security** \> **Antivirus**، ثم اختر **+ Create Policy**.
+2. في [مركز إدارة Microsoft إدارة نقاط النهاية](https://go.microsoft.com/fwlink/?linkid=2109431)، انتقل إلى **Endpoint security** \> **Antivirus**، ثم اختر **+ Create Policy**.
 
-   - في قائمة **النظام الأساسي**، حدد **Windows 10، Windows 11، وخادم Windows (ConfigMgr).**
+   - في قائمة **النظام الأساسي**، حدد **Windows 10 Windows 11 وWindows Server (ConfigMgr).**
    - في قائمة **"ملف التعريف"**، حدد **تجربة أمن Windows (معاينة).**
 
 3. نشر النهج إلى مجموعة أجهزتك.
@@ -192,7 +193,7 @@ ms.locfileid: "65873347"
 
 راجع الموارد التالية:
 
-- [الإعدادات لملف تعريف تجربة أمن Windows في Microsoft Intune](/mem/intune/protect/antivirus-security-experience-windows-settings)
+- [إعدادات ملف تعريف تجربة أمن Windows في Microsoft Intune](/mem/intune/protect/antivirus-security-experience-windows-settings)
 - [مدونة المجتمع التقني: الإعلان عن الحماية من العبث بالعملاء Configuration Manager Tenant Attach](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
 ## <a name="manage-tamper-protection-on-an-individual-device"></a>إدارة الحماية من العبث بالبيانات على جهاز فردي
@@ -215,7 +216,7 @@ ms.locfileid: "65873347"
 
 ## <a name="are-you-using-windows-server-2012-r2-2016-or-windows-version-1709-1803-or-1809"></a>هل تستخدم Windows Server 2012 R2 أو 2016 أو Windows الإصدار 1709 أو 1803 أو 1809؟
 
-إذا كنت تستخدم Windows Server 2012 R2 باستخدام الحل الموحد الحديث، Windows Server 2016 أو Windows 10 الإصدار 1709 أو 1803 أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)، فلن ترى **الحماية من العبث** في تطبيق أمن Windows. بدلا من ذلك، يمكنك استخدام PowerShell لتحديد ما إذا كانت الحماية من العبث ممكنة.
+إذا كنت تستخدم Windows Server 2012 R2 باستخدام الحل الموحد الحديث أو Windows Server 2016 أو Windows 10 الإصدار 1709 أو 1803 أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)، فلن تتمكن من رؤية **الحماية من العبث** في تطبيق أمن Windows. بدلا من ذلك، يمكنك استخدام PowerShell لتحديد ما إذا كانت الحماية من العبث ممكنة.
 
 على Windows Server 2016، لن يعكس تطبيق الإعدادات بدقة حالة الحماية في الوقت الحقيقي عند تمكين الحماية من العبث.
 
@@ -233,7 +234,7 @@ ms.locfileid: "65873347"
 
 عند الكشف عن محاولة العبث، يتم رفع تنبيه في [مدخل Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/portal-overview) ([https://security.microsoft.com](https://security.microsoft.com)).
 
-باستخدام [قدرات التتبع الكشف عن تهديدات نقاط النهاية والرد عليها](overview-endpoint-detection-response.md) [والمتقدمة](advanced-hunting-overview.md) في Microsoft Defender لنقطة النهاية، يمكن لفريق عمليات الأمان التحقيق في مثل هذه المحاولات ومعالجتها.
+باستخدام [اكتشاف نقطة النهاية والاستجابة](overview-endpoint-detection-response.md) وقدرات [التتبع المتقدمة](advanced-hunting-overview.md) في Microsoft Defender لنقطة النهاية، يمكن لفريق عمليات الأمان التحقيق في مثل هذه المحاولات ومعالجتها.
 
 ## <a name="review-your-security-recommendations"></a>مراجعة توصيات الأمان
 
@@ -250,15 +251,15 @@ ms.locfileid: "65873347"
 - Windows 10 OS [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709) أو [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing) أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) أو أحدث مع [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint).
 - Windows 10 Enterprise متعددة الجلسات
   
-إذا كنت تستخدم Configuration Manager، الإصدار 2006، مع إرفاق المستأجر، يمكن توسيع الحماية من العبث بالإنترنت إلى Windows Server 2012 R2، Windows Server 2016، Windows Server 2019، Windows Server 2022. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
+إذا كنت تستخدم Configuration Manager، الإصدار 2006، مع إرفاق المستأجر، يمكن توسيع الحماية من العبث ب Windows Server 2012 R2 وWindows Server 2016 وWindows Server 2019 وWindows Server 2022. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
 
 ### <a name="will-tamper-protection-affect-non-microsoft-antivirus-registration-in-the-windows-security-app"></a>هل ستؤثر الحماية من العبث بتسجيل الحماية من الفيروسات غير من Microsoft في تطبيق أمن Windows؟
 
 لا. ستستمر عروض الحماية من الفيروسات غير الخاصة ب Microsoft في التسجيل في تطبيق أمن Windows.
 
-### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>ماذا يحدث إذا لم تكن برنامج الحماية من الفيروسات من Microsoft Defender نشطة على جهاز؟
+### <a name="what-happens-if-microsoft-defender-antivirus-is-not-active-on-a-device"></a>ماذا يحدث إذا لم يكن برنامج الحماية من الفيروسات من Microsoft Defender نشطا على جهاز؟
 
-سيتم تشغيل الأجهزة التي تم إلحاقها Microsoft Defender لنقطة النهاية برنامج الحماية من الفيروسات من Microsoft Defender في الوضع الخامل. في هذه الحالات، ستستمر الحماية من العبث في حماية الخدمة وميزاتها.
+سيكون لدى الأجهزة التي تم إلحاقها Microsoft Defender لنقطة النهاية برنامج الحماية من الفيروسات من Microsoft Defender قيد التشغيل في الوضع الخامل. في هذه الحالات، ستستمر الحماية من العبث في حماية الخدمة وميزاتها.
 
 ### <a name="how-do-i-turn-tamper-protection-on-or-off"></a>كيف أعمل تشغيل الحماية من العبث أو إيقاف تشغيلها؟
 
@@ -266,27 +267,27 @@ ms.locfileid: "65873347"
 
 إذا كنت مؤسسة تستخدم [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint)، يجب أن تكون قادرا على إدارة الحماية من العبث في Intune على غرار كيفية إدارة ميزات حماية نقطة النهاية الأخرى. راجع المقاطع التالية من هذه المقالة:
 
-- [إدارة الحماية من العبث باستخدام إدارة نقاط النهاية من Microsoft](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager)
+- [إدارة الحماية من العبث باستخدام Microsoft إدارة نقاط النهاية](#manage-tamper-protection-for-your-organization-using-microsoft-endpoint-manager)
 - [إدارة الحماية من العبث باستخدام مدخل Microsoft 365 Defender](#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal)
 
 ### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>كيف يؤثر تكوين الحماية من العبث في Intune على كيفية إدارة برنامج الحماية من الفيروسات من Microsoft Defender باستخدام نهج المجموعة؟
 
 إذا كنت تستخدم Intune حاليا لتكوين الحماية من العبث بالبيانات وإدارتها، يجب الاستمرار في استخدام Intune. 
 
-لا ينطبق نهج المجموعة على الحماية من العبث. يتم تجاهل التغييرات التي تم إجراؤها على إعدادات برنامج الحماية من الفيروسات من Microsoft Defender باستخدام نهج المجموعة عند تشغيل الحماية من العبث، أو عند تكوين الحماية من العبث باستخدام Intune.
+لا ينطبق نهج المجموعة على الحماية من العبث. يتم تجاهل التغييرات التي تم إجراؤها على إعدادات برنامج الحماية من الفيروسات ل Microsoft Defender باستخدام نهج المجموعة عند تشغيل الحماية من العبث، أو عند تكوين الحماية من العبث باستخدام Intune.
 
 ### <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>إذا استخدمنا Microsoft Intune لتكوين الحماية من العبث، فهل ينطبق ذلك على المؤسسة بأكملها فقط؟
 
 لديك المرونة في تكوين الحماية من العبث بالبيانات باستخدام Intune. يمكنك استهداف مؤسستك بأكملها، أو تحديد أجهزة ومجموعات مستخدمين معينة.
 
-### <a name="can-i-configure-tamper-protection-with-microsoft-endpoint-configuration-manager"></a>هل يمكنني تكوين الحماية من العبث باستخدام Microsoft Endpoint Configuration Manager؟
+### <a name="can-i-configure-tamper-protection-with-microsoft-endpoint-configuration-manager"></a>هل يمكنني تكوين الحماية من العبث بنقاط النهاية من Microsoft Configuration Manager؟
 
-إذا كنت تستخدم إرفاق المستأجر، يمكنك استخدام Microsoft Endpoint Configuration Manager. راجع الموارد التالية:
+إذا كنت تستخدم إرفاق المستأجر، يمكنك استخدام نقطة نهاية Microsoft Configuration Manager. راجع الموارد التالية:
 
 - [إدارة الحماية من العبث بمؤسستك باستخدام Configuration Manager، الإصدار 2006](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)
 - [مدونة المجتمع التقني: الإعلان عن الحماية من العبث بالعملاء Configuration Manager Tenant Attach](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
-### <a name="i-have-the-windows-e3-enrollment-can-i-use-configuring-tamper-protection-in-intune"></a>لدي تسجيل E3 Windows. هل يمكنني استخدام تكوين الحماية من العبث في Intune؟
+### <a name="i-have-the-windows-e3-enrollment-can-i-use-configuring-tamper-protection-in-intune"></a>لدي تسجيل Windows E3. هل يمكنني استخدام تكوين الحماية من العبث في Intune؟
 
 حاليا، لا يتوفر تكوين الحماية من العبث في Intune إلا للعملاء الذين لديهم [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint).
 
@@ -320,7 +321,7 @@ ms.locfileid: "65873347"
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [المساعدة في تأمين أجهزة الكمبيوتر Windows باستخدام Endpoint Protection Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [المساعدة في تأمين أجهزة كمبيوتر Windows باستخدام Endpoint Protection Microsoft Intune](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [الحصول على نظرة عامة على Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint)
 - [معاً بشكل أفضل: برنامج الحماية من الفيروسات من Microsoft Defender Microsoft Defender لنقطة النهاية](why-use-microsoft-defender-antivirus.md)
 - [تمكين وضع استكشاف الأخطاء وإصلاحها](enable-troubleshooting-mode.md)

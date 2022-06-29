@@ -13,19 +13,20 @@ ms.localizationpriority: medium
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
+- adminvideo
 description: تتناول هذه المقالة مواضيع بما في ذلك إعادة توجيه البريد الإلكتروني الخارجي، وإعادة التوجيه التلقائي، و5.7.520 رسائل تم رفض الوصول إليها، وتعطيل إعادة التوجيه الخارجي، ورسائل "قام المسؤول بتعطيل إعادة التوجيه الخارجي"، بالإضافة إلى نهج مكافحة البريد العشوائي الصادر.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 672e6af3d2aef76a0c944a05c438061861e20060
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c10433cd858ebe160ac4a38cfee78b57d39b80df
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971892"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487137"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>التحكم في إعادة توجيه البريد الإلكتروني الخارجي التلقائي في Microsoft 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -60,7 +61,7 @@ ms.locfileid: "64971892"
 بصفتك مسؤولا، ربما تكون قد قمت بالفعل بتكوين عناصر تحكم أخرى للسماح بإعادة توجيه البريد الإلكتروني التلقائي أو حظره. على سبيل المثال:
 
 - [المجالات البعيدة](/exchange/mail-flow-best-practices/remote-domains/remote-domains) للسماح بإعادة توجيه البريد الإلكتروني التلقائي إلى بعض المجالات الخارجية أو كلها أو حظرها.
-- الشروط والإجراءات في قواعد [تدفق البريد](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) Exchange (المعروفة أيضا بقواعد النقل) للكشف عن الرسائل التي تتم إعادة توجيهها تلقائيا إلى المستلمين الخارجيين ومنعها.
+- الشروط والإجراءات في [قواعد تدفق بريد](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) Exchange (المعروفة أيضا بقواعد النقل) للكشف عن الرسائل التي تتم إعادة توجيهها تلقائيا إلى المستلمين الخارجيين ومنعها.
 
 عندما يسمح أحد الإعدادات بإعادة التوجيه الخارجي، ولكن هناك إعداد آخر يمنع إعادة التوجيه الخارجي، فإن الكتلة عادة ما تربح. يتم وصف الأمثلة في الجدول التالي:
 
@@ -74,7 +75,7 @@ ms.locfileid: "64971892"
 
 ## <a name="how-to-find-users-that-are-automatically-forwarding"></a>كيفية العثور على المستخدمين الذين يقومون بإعادة التوجيه تلقائيا
 
-يمكنك مشاهدة معلومات حول المستخدمين الذين يقومون تلقائيا بإعادة توجيه الرسائل إلى مستلمين خارجيين في [تقرير الرسائل التي تمت إعادة توجيهها تلقائيا](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) للحسابات المستندة إلى السحابة. بالنسبة للمستخدمين المحليين الذين يقومون تلقائيا بإعادة التوجيه من نظام البريد الإلكتروني المحلي إلى Microsoft 365، تحتاج إلى إنشاء قاعدة تدفق بريد لتعقب هؤلاء المستخدمين. للحصول على إرشادات حول كيفية إنشاء قاعدة تدفق بريد، راجع [استخدام EAC لإنشاء قاعدة تدفق بريد](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#use-the-eac-to-create-a-mail-flow-rule).
+يمكنك مشاهدة معلومات حول المستخدمين الذين يقومون تلقائيا بإعادة توجيه الرسائل إلى مستلمين خارجيين في [تقرير الرسائل التي تمت إعادة توجيهها تلقائيا](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) للحسابات المستندة إلى السحابة. بالنسبة للمستخدمين المحليين الذين يقومون تلقائيا بإعادة التوجيه من نظام البريد الإلكتروني المحلي الخاص بهم من خلال Microsoft 365، تحتاج إلى إنشاء قاعدة تدفق بريد لتعقب هؤلاء المستخدمين. للحصول على إرشادات حول كيفية إنشاء قاعدة تدفق بريد، راجع [استخدام EAC لإنشاء قاعدة تدفق بريد](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#use-the-eac-to-create-a-mail-flow-rule).
 
 المعلومات التالية مطلوبة لإنشاء قاعدة تدفق البريد في مركز إدارة Exchange (EAC):
 
@@ -87,7 +88,7 @@ ms.locfileid: "64971892"
   سيتطابق هذا الشرط مع أي قيمة للرأس.
 
 - (اختياري) **قم بما يلي** (الإجراء): يمكنك تكوين إجراء اختياري. على سبيل المثال، يمكنك استخدام الإجراء **"تعديل خصائص** \> الرسالة **" لتعيين رأس رسالة**، مع إعادة توجيه اسم الرأس **X** والقيمة **True**. ولكن، تكوين إجراء غير مطلوب.
-- عين **Audit this rue with severity level** to the value **Low**, **Medium**, or **High**. يسمح لك هذا الإعداد باستخدام [تقرير قاعدة النقل Exchange](view-email-security-reports.md#exchange-transport-rule-report) للحصول على تفاصيل المستخدمين الذين يقومون بإعادة التوجيه.
+- عين **Audit this rue with severity level** to the value **Low**, **Medium**, or **High**. يسمح لك هذا الإعداد باستخدام [تقرير قاعدة نقل Exchange](view-email-security-reports.md#exchange-transport-rule-report) للحصول على تفاصيل المستخدمين الذين يقومون بإعادة التوجيه.
 
 :::image type="content" source="../../media/mail-flow-rule-for-forwarded-messages.png" alt-text="خصائص قاعدة تدفق البريد في EAC لقاعدة لتحديد الرسائل التي تمت إعادة توجيهها" lightbox="../../media/mail-flow-rule-for-forwarded-messages.png":::
 

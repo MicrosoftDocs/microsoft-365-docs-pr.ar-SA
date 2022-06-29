@@ -20,14 +20,14 @@ search.appverid: MET150
 description: تعرف على العروض لمساعدتك في شراء منتجات Microsoft وخدماتها.
 ROBOTS: NOINDEX
 ms.date: 04/28/2022
-ms.openlocfilehash: 8dc80bfaadcbee236f282796dcdb37f59360ebe4
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: e54b68b5090287d7a61e9dea70726b7ec9e83c72
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144850"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485968"
 ---
-# <a name="understand-the-proposal-workflow"></a>فهم سير عمل العرض
+# <a name="understand-the-microsoft-proposal-workflow"></a>فهم سير عمل عرض Microsoft
 
 العرض هو عرض رسمي من Microsoft لمؤسستك لشراء منتجات وخدمات Microsoft. يمكنك العمل مباشرة مع ممثل Microsoft لتحديد المنتجات والخدمات والشروط المحددة لاقتراحك.
 
@@ -59,7 +59,7 @@ ms.locfileid: "65144850"
 
 ### <a name="assign-roles-in-the-microsoft-365-admin-center"></a>تعيين أدوار في مركز مسؤولي Microsoft 365
 
-1. في مركز مسؤولي Microsoft 365، انتقل إلى صفحة <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">حسابات</a> **BillingBilling** > .
+1. في مركز مسؤولي Microsoft 365، انتقل إلى صفحة<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">حسابات فوترة</a>  >  الفوترة.
 2. في صفحة **حسابات الفوترة** ، في قسم **أدوار حساب الفوترة** ، حدد **"تعيين أدوار**".
 3. في جزء **"تعيين الأدوار** "، ابحث عن اسم الشخص الذي تريد تعيين دور له.
 4. حدد مربع اسم الدور الذي تريد أن يكون لدى الشخص، ثم حدد **"تعيين**".

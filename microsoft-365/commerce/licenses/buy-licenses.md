@@ -23,14 +23,14 @@ ms.custom:
 search.appverid: MET150
 description: استخدم هذه الخطوات لشراء المزيد من التراخيص أو تقليل عدد التراخيص لاشتراكك في Microsoft 365 للأعمال.
 ms.date: 06/06/2022
-ms.openlocfilehash: bbeff9310a652a768c92ba3640e84607b8628619
-ms.sourcegitcommit: 23fd850272f39c4202e2320e56d11fb6707b3e2e
+ms.openlocfilehash: ad7f0b15218043757c1e0692603e74760e2c10ef
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65925062"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489659"
 ---
-# <a name="buy-or-remove-licenses"></a>شراء أو إزالة التراخيص.
+# <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>شراء تراخيص Microsoft 365 أو إزالتها لاشتراك
 
 يمكنك شراء المزيد من التراخيص أو تقليل عدد التراخيص لاشتراكاتك باستخدام الخطوات التالية.
 
@@ -106,7 +106,7 @@ ms.locfileid: "65925062"
 
 إذا قمت بتقليل عدد التراخيص لاشتراكك لأن شخصا ما غادر مؤسستك، فقد ترغب في إزالة حساب هذا المستخدم. لمعرفة المزيد، راجع [إزالة موظف سابق](../../admin/add-users/remove-former-employee.md).
 
-## <a name="related-content"></a>المحتويات ذات الصلة
+## <a name="related-content"></a>المحتوى ذو الصلة
 
 [تعيين تراخيص للمستخدمين](../../admin/manage/assign-licenses-to-users.md) (مقالة)\
 [فهم الاشتراكات والتراخيص](subscriptions-and-licenses.md) (مقالة)\

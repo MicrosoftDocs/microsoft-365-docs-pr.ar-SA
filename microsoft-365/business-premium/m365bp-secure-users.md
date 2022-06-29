@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرف على كيفية مساعدة Microsoft 365 Business Premium شركتك في الإنتاجية والأمان.
-ms.openlocfilehash: f9501ce8a478af45d8d1b79db1411575636eda36
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8cfdbdf6f8980a0dbc3a30ca5994714b82571920
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098098"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489870"
 ---
-# <a name="how-microsoft-365-business-premium-helps-your-business"></a>كيف يساعد Microsoft 365 Business Premium عملك
+# <a name="how-microsoft-365-security-recommendations-affect-your-users"></a>كيفية تأثير توصيات أمان Microsoft 365 على المستخدمين
 
 Microsoft 365 Business Premium هو حل فعال من حيث التكلفة يمكن الشركات الصغيرة والمتوسطة الحجم من العمل بشكل أكثر كفاءة وأمانا من ذي قبل. تصف هذه المقالة كيف يمكن Microsoft 365 Business Premium مساعدة شركتك، وتتضمن هذه الأقسام:
 
@@ -52,18 +52,18 @@ Microsoft 365 Business Premium هو حل فعال من حيث التكلفة ي�
 
 ## <a name="productivity-and-security"></a>الإنتاجية والأمان
 
-تتضمن Microsoft 365 Business Premium تطبيقات الإنتاجية Office المفضلة لديك وأدوات التعاون مثل Microsoft Teams وحلول الأمان والهوية وإدارة الأجهزة على مستوى المؤسسة. باستخدام Microsoft 365 Business Premium، يمكنك تشغيل أعمالك بشكل أكثر أمانا، عبر الأجهزة، ومن أي مكان تقريبا. تتضمن Microsoft 365 Business Premium ما يلي:
+تتضمن Microsoft 365 Business Premium تطبيقات إنتاجية Office المفضلة لديك وأدوات التعاون مثل Microsoft Teams وحلول الأمان والهوية وإدارة الأجهزة على مستوى المؤسسة. باستخدام Microsoft 365 Business Premium، يمكنك تشغيل أعمالك بشكل أكثر أمانا، عبر الأجهزة، ومن أي مكان تقريبا. تتضمن Microsoft 365 Business Premium ما يلي:
 
-- **Windows 10 و11 ترقيات Pro** لأجهزة Windows الخاصة بشركتك
-- **Office التطبيقات**، مثل Word Excel PowerPoint، التي يمكنك تثبيتها على أجهزة الكمبيوتر (Windows وMac)، وعلى أجهزتك المحمولة (Windows وiOS وAndroid). يمكنك أيضا الحصول على Publisher والوصول إلى أجهزة Windows.
-- **Microsoft Teams Outlook Exchange** للبريد الإلكتروني والتقويمات والاجتماعات والتعاون
-- **SharePoint OneDrive** لتخزين ملفات العمل وإدارتها
+- **ترقيات Windows 10 و11 Pro** لأجهزة Windows الخاصة بشركتك
+- **تطبيقات Office**، مثل Word وExcel وPowerPoint، التي يمكنك تثبيتها على أجهزة الكمبيوتر (Windows وMac)، وعلى الأجهزة المحمولة (Windows وiOS وAndroid). يمكنك أيضا الحصول على Publisher و Access لأجهزة Windows.
+- **Microsoft Teams وOutlook وExchange** للبريد الإلكتروني والتقويمات والاجتماعات والتعاون
+- **SharePoint وOneDrive** لتخزين ملفات العمل وإدارتها
 - **حماية متطورة من التهديدات** مثل التصيد الاحتيالي والبرامج الضارة والحماية من برامج الفدية الضارة
 - **ميزات التوافق والخصوصية** لحماية الوصول إلى المعلومات الحساسة لعملائك والتحكم فيها
 - **قدرات إدارة الأجهزة** التي تمكن فريق الأمان من المساعدة في الحفاظ على تحديث أجهزة الكمبيوتر وأجهزة الكمبيوتر اللوحية والهواتف وتأمينها
 
 > [!TIP]
-> لمزيد من المعلومات التفصيلية حول ما تم تضمينه في Microsoft 365 Business Premium، راجع [Microsoft 365 مجموعات اشتراكات المستخدمين للشركات الصغيرة والمتوسطة الحجم](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
+> لمزيد من المعلومات التفصيلية حول ما تم تضمينه في Microsoft 365 Business Premium، راجع [Microsoft 365 User Subscription Suites للشركات الصغيرة والمتوسطة الحجم](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM).
 
 ## <a name="resources-to-train-your-users"></a>موارد لتدريب المستخدمين
 
@@ -72,7 +72,7 @@ Microsoft 365 Business Premium هو حل فعال من حيث التكلفة ي�
 تتوفر الموارد لمساعدة جميع الأشخاص في مؤسستك على:
 
 - [حماية الأجهزة](m365bp-devices-overview.md)
-- [استخدام البريد الإلكتروني بشكل أكثر أمانا](m365bp-protect-email-overview.md)
+- [استخدام البريد الإلكتروني بشكل أكثر أماناً](m365bp-protect-email-overview.md)
 - [التعاون ومشاركة المعلومات بشكل أكثر أمانا](m365bp-collaborate-share-securely.md)
 
 استخدم التوصيات الموجودة في هذه المكتبة لمساعدة المستخدمين على أن يكونوا منتجين وأكثر أمانا في عملهم.
@@ -83,10 +83,10 @@ Microsoft 365 Business Premium هو حل فعال من حيث التكلفة ي�
 
 [:::image type="content" source="media/m365bp-whatuserscandotosecure.png" alt-text="صورة مصغرة لدليل قابل للتنزيل.":::](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf)
 
-[PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) |  [PowerPoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
+[PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) |  [Powerpoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-1. احصل على [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) أو [Microsoft 365 للحملات](get-microsoft-365-campaigns.md) الإعلانية.
+1. احصل على [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) أو [Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
 
 2. [ابدأ عملية الإعداد](m365bp-setup-overview.md).

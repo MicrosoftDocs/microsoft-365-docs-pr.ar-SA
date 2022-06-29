@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 44f2697f5d56e05a7edfb624d09fd8117034fc8f
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 593eb801505275210862d9b776c6e2dca290ef89
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078350"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493010"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>مرجع قواعد تقليل الأجزاء المعرضة للهجوم
 
@@ -52,34 +52,34 @@ ms.locfileid: "66078350"
 
 > [!NOTE]
 >
-> ما لم تتم الإشارة إلى خلاف ذلك، الحد الأدنى Windows&nbsp; 10 إصدار هو الإصدار 1709 (RS3، النسخة 16299) أو أحدث؛ الحد الأدنى Windows&nbsp; نسخةServer هو الإصدار 1809 أو أحدث.
+> ما لم تتم الإشارة إلى خلاف ذلك، فإن الحد الأدنى لنسخة Windows&nbsp;10 هو الإصدار 1709 (RS3، الإصدار 16299) أو أحدث؛ الحد الأدنى لإصدار Windows&nbsp;Server هو الإصدار 1809 أو أحدث.
 >
-> تتوفر قواعد تقليل الأجزاء المعرضة للهجوم في Windows&nbsp; Server&nbsp;2012&nbsp;R2 وserver&nbsp;2016 Windows&nbsp; للأجهزة التي تم إلحاقها باستخدام حزمة الحلول الموحدة الحديثة. لمزيد من المعلومات، راجع [الوظائف الجديدة في الحل الموحد الحديث Windows Server 2012 R2 و2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
+> تتوفر قواعد تقليل الأجزاء المعرضة للهجوم في Windows&nbsp;Server&nbsp;2012&nbsp;R2 وWindows&nbsp;Server&nbsp;2016 للأجهزة التي تم إلحاقها باستخدام حزمة الحلول الموحدة الحديثة. لمزيد من المعلومات، راجع [الوظائف الجديدة في الحل الموحد الحديث ل Windows Server 2012 R2 و2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 
-| اسم القاعدة| &nbsp;Windows 11 <br>و<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>و<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <sup>[[1، 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
+| اسم القاعدة| Windows&nbsp;11 <br>و<br> Windows&nbsp;10 | Windows&nbsp;Server <br> 2022 <br>و<br>  Windows&nbsp;Server <br> 2019 | Windows Server | Windows&nbsp;Server <br> 2016 <sup>[[1، 2](#fn1)]<sup></sup> | Windows&nbsp;Server <br> 2012&nbsp;R2 <sup>[[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [حظر إساءة استخدام برامج التشغيل الموقعة المعرضة للخطر](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> الإصدار 1803 (قناة المؤسسة نصف السنوية) أو إصدار أحدث | Y | Y |
 | [حظر Adobe Reader من إنشاء عمليات تابعة](#block-adobe-reader-from-creating-child-processes) | Y <br> الإصدار 1809 أو أحدث <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [حظر كافة تطبيقات Office من إنشاء عمليات تابعة](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y | Y | Y |
-| [حظر سرقة بيانات الاعتماد من النظام الفرعي لمرجع الأمان المحلي Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> الإصدار 1803 أو أحدث <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
+| [حظر سرقة بيانات الاعتماد من نظام سلطة الأمان المحلية ل Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> الإصدار 1803 أو أحدث <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [حظر المحتوى القابل للتنفيذ من عميل البريد الإلكتروني والبريد الإلكتروني](#block-executable-content-from-email-client-and-webmail) | Y | Y | Y | Y | Y |
 | [حظر تشغيل الملفات القابلة للتنفيذ إلا إذا كانت تفي بمعيار الانتشار أو العمر أو القائمة الموثوق بها](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y <br> الإصدار 1803 أو أحدث <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [حظر تنفيذ البرامج النصية التي يحتمل أن تكون مشتتة](#block-execution-of-potentially-obfuscated-scripts) | Y | Y | Y | Y | Y |
 | [حظر JavaScript أو VBScript من بدء تشغيل المحتوى القابل للتنفيذ الذي تم تنزيله](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y | Y | N | N |
 | [حظر تطبيقات Office من إنشاء محتوى قابل للتنفيذ](#block-office-applications-from-creating-executable-content) | Y | Y | Y | Y | Y |
 | [حظر تطبيقات Office من إدخال التعليمات البرمجية في عمليات أخرى](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y | Y | Y | Y |
-| [حظر تطبيق اتصال Office من إنشاء عمليات تابعة](#block-office-communication-application-from-creating-child-processes) | Y | Y | Y | Y | Y |
+| [حظر تطبيق اتصالات Office من إنشاء عمليات تابعة](#block-office-communication-application-from-creating-child-processes) | Y | Y | Y | Y | Y |
 | [حظر الثبات من خلال اشتراك حدث WMI](#block-persistence-through-wmi-event-subscription) <br> \*_استثناءات الملفات والمجلدات غير معتمدة._ | Y <br> الإصدار 1903 (النسخة 18362) أو أحدث <sup>[[3](#fn1)]<sup></sup> | Y | Y <br> الإصدار 1903 (النسخة 18362) أو أحدث | N | N |
 | [حظر عمليات الإنشاء التي تنشأ من أوامر PSExec وWMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> الإصدار 1803 أو أحدث <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [حظر العمليات غير الموثوق بها وغير الموقعة التي يتم تشغيلها من USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y | Y | Y |
-| [حظر استدعاءات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office](#block-win32-api-calls-from-office-macros) | Y | Y | Y | N | N |
+| [حظر مكالمات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office](#block-win32-api-calls-from-office-macros) | Y | Y | Y | N | N |
 | [استخدام الحماية المتقدمة من برامج الفدية الضارة](#use-advanced-protection-against-ransomware) | Y <br> الإصدار 1803 أو أحدث <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 
-(<a id="fn1">1</a>) يشير إلى الحل الموحد الحديث لخادم Windows 2012 و2016. لمزيد من المعلومات، راجع [إلحاق Windows الخوادم بخدمة Defender لنقطة النهاية](configure-server-endpoints.md).
+(<a id="fn1">1</a>) يشير إلى الحل الموحد الحديث ل Windows Server 2012 و2016. لمزيد من المعلومات، راجع [إلحاق خوادم Windows بخدمة Defender لنقطة النهاية](configure-server-endpoints.md).
 
-(<a id="fn1">2</a>) بالنسبة إلى Windows&nbsp; Server 2016 و Windows&nbsp; Server 2012&nbsp;R2، فإن الإصدار الأدنى المطلوب من Microsoft Endpoint Configuration Manager هو الإصدار 2111.
+(<a id="fn1">2</a>) بالنسبة إلى Windows&nbsp;Server 2016 وWindows&nbsp;Server 2012&nbsp;R2، الحد الأدنى المطلوب من Configuration Manager نقطة النهاية من Microsoft هو الإصدار 2111.
 
-(<a id="fn1">3</a>) يتم تطبيق رقم الإصدار والنسخة فقط على Windows&nbsp; 10.
+(<a id="fn1">3</a>) ينطبق رقم الإصدار والنسخة على Windows&nbsp;10 فقط.
 
 ## <a name="supported-configuration-management-systems"></a>أنظمة إدارة التكوين المدعومة
 
@@ -90,26 +90,26 @@ ms.locfileid: "66078350"
 |[حظر إساءة استخدام برامج التشغيل الموقعة المعرضة للخطر](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  Y  |
 |[حظر Adobe Reader من إنشاء عمليات تابعة](#block-adobe-reader-from-creating-child-processes) | Y |   |  | Y  | Y  |
 |[حظر كافة تطبيقات Office من إنشاء عمليات تابعة](#block-all-office-applications-from-creating-child-processes) | Y |   |Y <br><br> CB 1710 | Y  | Y  |
-|[حظر سرقة بيانات الاعتماد من النظام الفرعي لمرجع الأمان المحلي Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
+|[حظر سرقة بيانات الاعتماد من نظام سلطة الأمان المحلية ل Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
 |[حظر المحتوى القابل للتنفيذ من عميل البريد الإلكتروني والبريد الإلكتروني](#block-executable-content-from-email-client-and-webmail) | Y |  |Y <br><br> CB 1710 | Y | Y  |
 |[حظر تشغيل الملفات القابلة للتنفيذ إلا إذا كانت تفي بمعيار الانتشار أو العمر أو القائمة الموثوق بها](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y |   | Y <br><br> CB 1802 |  Y |  Y |
 |[حظر تنفيذ البرامج النصية التي يحتمل أن تكون مشتتة](#block-execution-of-potentially-obfuscated-scripts) | Y |   |  Y  <br><br> CB 1710 | Y  | Y  |
 |[حظر JavaScript أو VBScript من بدء تشغيل المحتوى القابل للتنفيذ الذي تم تنزيله](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y |   | Y <br><br> CB 1710 | Y  | Y  |
 |[حظر تطبيقات Office من إنشاء محتوى قابل للتنفيذ](#block-office-applications-from-creating-executable-content) | Y |  |Y <br><br> CB 1710 | Y  | Y  |
 |[حظر تطبيقات Office من إدخال التعليمات البرمجية في عمليات أخرى](#block-office-applications-from-injecting-code-into-other-processes) | Y |  | Y <br><br> CB 1710 | Y  | Y  |
-|[حظر تطبيق اتصال Office من إنشاء عمليات تابعة](#block-office-communication-application-from-creating-child-processes) | Y |  |Y <br><br> CB 1710 | Y  | Y  |
+|[حظر تطبيق اتصالات Office من إنشاء عمليات تابعة](#block-office-communication-application-from-creating-child-processes) | Y |  |Y <br><br> CB 1710 | Y  | Y  |
 |[حظر الثبات من خلال اشتراك حدث WMI](#block-persistence-through-wmi-event-subscription) |  |  |  |Y   | Y  |
 |[حظر عمليات الإنشاء التي تنشأ من أوامر PSExec وWMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y |   |   |  Y | Y  |
 |[حظر العمليات غير الموثوق بها وغير الموقعة التي يتم تشغيلها من USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |   |Y <br><br> CB 1802  | Y  | Y  |
-|[حظر استدعاءات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office](#block-win32-api-calls-from-office-macros) | Y |   | Y <br><br> CB 1710  | Y  |  Y |
+|[حظر مكالمات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office](#block-win32-api-calls-from-office-macros) | Y |   | Y <br><br> CB 1710  | Y  |  Y |
 |[استخدام الحماية المتقدمة من برامج الفدية الضارة](#use-advanced-protection-against-ransomware) | Y |   | Y <br><br> CB 1802 | Y  | Y  |
 
   (<a id="fn1">1</a>) يمكنك تكوين قواعد تقليل الأجزاء المعرضة للهجوم على أساس كل قاعدة باستخدام GUID الخاص بأي قاعدة.
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
-- [إدارة نقاط النهاية من Microsoft CB 1710](/configmgr/core/servers/manage/updates)
-- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_أصبح SCCM الآن Microsoft Endpoint Configuration Manager._
+- [Microsoft إدارة نقاط النهاية CB 1710](/configmgr/core/servers/manage/updates)
+- [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM هي الآن نقطة نهاية Microsoft Configuration Manager._
 
 ## <a name="per-rule-alert-and-notification-details"></a>حسب تنبيه القاعدة وتفاصيل الإعلام
 
@@ -118,26 +118,26 @@ ms.locfileid: "66078350"
 للقواعد التي تم تحديد "حالة القاعدة":
 
 - يتم استخدام قواعد ASR مع \<ASR Rule, Rule State\> مجموعات لعرض التنبيهات (الإعلامات المنبثقة) على Microsoft Defender لنقطة النهاية فقط للأجهزة على مستوى كتلة السحابة العالية. لن تقوم الأجهزة غير عالية مستوى كتلة السحابة بإنشاء تنبيهات لأي <قاعدة ASR وقاعدة حالة القاعدة> مجموعات
-- يتم إنشاء تنبيهات الكشف التلقائي والاستجابة على النقط النهائية لقواعد ASR في الحالات المحددة، ولكن فقط للأجهزة عالية مستوى كتلة السحابة.
+- يتم إنشاء تنبيهات EDR لقواعد ASR في الحالات المحددة، ولكن فقط للأجهزة على مستوى كتلة سحابة عال.
 
-| اسم القاعدة: | حالة القاعدة: | إنشاء تنبيهات في الكشف التلقائي والاستجابة على النقط النهائية؟ <br> (نعم&nbsp;\|&nbsp;لا) | إنشاء إعلامات منبثقة؟ <br> (نعم&nbsp;\|&nbsp;لا) |
+| اسم القاعدة: | حالة القاعدة: | إنشاء تنبيهات في EDR؟ <br> (نعم&nbsp;\|&nbsp;لا) | إنشاء إعلامات منبثقة؟ <br> (نعم&nbsp;\|&nbsp;لا) |
 |---|:---:|:---:|:---:|
 |   |   |  _فقط للأجهزة على مستوى كتلة السحابة العالية_ | _في وضع الحظر فقط_ |
 |[حظر إساءة استخدام برامج التشغيل الموقعة المعرضة للخطر](#block-abuse-of-exploited-vulnerable-signed-drivers) |   | N  | Y |
 |[حظر Adobe Reader من إنشاء عمليات تابعة](#block-adobe-reader-from-creating-child-processes) | حظر  | Y <br> يتطلب جهازا على مستوى كتلة سحابة عال  | Y <br> يتطلب جهازا على مستوى كتلة سحابة عال |
 |[حظر كافة تطبيقات Office من إنشاء عمليات تابعة](#block-all-office-applications-from-creating-child-processes) |   | N | Y |
-|[حظر سرقة بيانات الاعتماد من النظام الفرعي لمرجع الأمان المحلي Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | Y |
+|[حظر سرقة بيانات الاعتماد من نظام سلطة الأمان المحلية ل Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | Y |
 |[حظر المحتوى القابل للتنفيذ من عميل البريد الإلكتروني والبريد الإلكتروني](#block-executable-content-from-email-client-and-webmail) |   | Y <br> يتطلب جهازا على مستوى كتلة سحابة عال | Y <br> يتطلب جهازا على مستوى كتلة سحابة عال |
 |[حظر تشغيل الملفات القابلة للتنفيذ إلا إذا كانت تفي بمعيار الانتشار أو العمر أو القائمة الموثوق بها](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | Y |
 |[حظر تنفيذ البرامج النصية التي يحتمل أن تكون مشتتة](#block-execution-of-potentially-obfuscated-scripts) |  كتلة التدقيق&nbsp;\|&nbsp; | Y \| Y <br> يتطلب جهازا على مستوى كتلة سحابة عال  | N \| Y <br> يتطلب جهازا على مستوى كتلة سحابة عال |
 |[حظر JavaScript أو VBScript من بدء تشغيل المحتوى القابل للتنفيذ الذي تم تنزيله](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | حظر | Y <br> يتطلب جهازا على مستوى كتلة سحابة عال  | Y <br> يتطلب جهازا على مستوى كتلة سحابة عال |
 |[حظر تطبيقات Office من إنشاء محتوى قابل للتنفيذ](#block-office-applications-from-creating-executable-content) |   | N | Y |
 |[حظر تطبيقات Office من إدخال التعليمات البرمجية في عمليات أخرى](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | Y |
-|[حظر تطبيق اتصال Office من إنشاء عمليات تابعة](#block-office-communication-application-from-creating-child-processes) |  |  N | Y |
+|[حظر تطبيق اتصالات Office من إنشاء عمليات تابعة](#block-office-communication-application-from-creating-child-processes) |  |  N | Y |
 |[حظر الثبات من خلال اشتراك حدث WMI](#block-persistence-through-wmi-event-subscription) |  كتلة التدقيق&nbsp;\|&nbsp; | Y \| Y <br> يتطلب جهازا على مستوى كتلة سحابة عال  | N \| Y <br> يتطلب جهازا على مستوى كتلة سحابة عال |
 |[حظر عمليات الإنشاء التي تنشأ من أوامر PSExec وWMI](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | Y |
 |[حظر العمليات غير الموثوق بها وغير الموقعة التي يتم تشغيلها من USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | كتلة التدقيق&nbsp;\|&nbsp; | Y \| Y <br> يتطلب جهازا على مستوى كتلة سحابة عال  | N \| Y <br> يتطلب جهازا على مستوى كتلة سحابة عال |
-|[حظر استدعاءات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office](#block-win32-api-calls-from-office-macros) |   | N | Y |
+|[حظر مكالمات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[استخدام الحماية المتقدمة من برامج الفدية الضارة](#use-advanced-protection-against-ransomware) | كتلة التدقيق&nbsp;\|&nbsp; | Y \| Y <br> يتطلب جهازا على مستوى كتلة سحابة عال  | N \| Y <br> يتطلب جهازا على مستوى كتلة سحابة عال |
   
 ## <a name="asr-rule-to-guid-matrix"></a>قاعدة ASR إلى مصفوفة GUID
@@ -147,18 +147,18 @@ ms.locfileid: "66078350"
 | حظر إساءة استخدام برامج التشغيل الموقعة المعرضة للخطر | 56a863a9-875e-4185-98a7-b882c64b5ce5 |
 | حظر Adobe Reader من إنشاء عمليات تابعة | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c |
 | حظر كافة تطبيقات Office من إنشاء عمليات تابعة | d4f940ab-401b-4efc-aadc-ad5f3c50688a |
-| حظر سرقة بيانات الاعتماد من النظام الفرعي لمرجع الأمان المحلي Windows (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 |
+| حظر سرقة بيانات الاعتماد من نظام سلطة الأمان المحلية ل Windows (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 |
 | حظر المحتوى القابل للتنفيذ من عميل البريد الإلكتروني والبريد الإلكتروني | be9ba2d9-53ea-4cdc-84e5-9b1ee46550 |
 | حظر تشغيل الملفات القابلة للتنفيذ إلا إذا كانت تفي بمعيار الانتشار أو العمر أو القائمة الموثوق بها | 01443614-cd74-433a-b99e-2ecdc07bfc25 |
 | حظر تنفيذ البرامج النصية التي يحتمل أن تكون مشتتة | 5beb7efe-fd9a-4556-801d-275e5ffc04cc |
 | حظر JavaScript أو VBScript من بدء تشغيل المحتوى القابل للتنفيذ الذي تم تنزيله | d3e037e1-3eb8-44c8-a917-57927947596d |
 | حظر تطبيقات Office من إنشاء محتوى قابل للتنفيذ | 3b576869-a4ec-4529-8536-b80a7769e899 |
 | حظر تطبيقات Office من إدخال التعليمات البرمجية في عمليات أخرى | 75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84 |
-| حظر تطبيق اتصال Office من إنشاء عمليات تابعة | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
+| حظر تطبيق اتصالات Office من إنشاء عمليات تابعة | 26190899-1602-49e8-8b27-eb1d0a1ce869 |
 | حظر الثبات من خلال اشتراك حدث WMI <br>* استثناءات الملفات والمجلدات غير معتمدة. | e6db77e5-3df2-4cf1-b95a-636979351e5b |
 | حظر عمليات الإنشاء التي تنشأ من أوامر PSExec وWMI | d1e49aac-8f56-4280-b9ba-993a6d77406c |
 | حظر العمليات غير الموثوق بها وغير الموقعة التي يتم تشغيلها من USB | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 |
-| حظر استدعاءات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office | 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b |
+| حظر مكالمات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office | 92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b |
 | استخدام الحماية المتقدمة من برامج الفدية الضارة | c1db55ab-c21a-4637-bb3f-a12568109d35 |
 
 ## <a name="asr-rule-modes"></a>أوضاع قاعدة ASR
@@ -233,7 +233,7 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>حظر كافة تطبيقات Office من إنشاء عمليات تابعة
 
-تمنع هذه القاعدة Office التطبيقات من إنشاء عمليات تابعة. تتضمن تطبيقات Office Word و Excel و PowerPoint و OneNote و Access.
+تمنع هذه القاعدة تطبيقات Office من إنشاء عمليات تابعة. تتضمن تطبيقات Office Word وExcel وPowerPoint وOneNote وAccess.
 
 إنشاء عمليات تابعة ضارة هو استراتيجية البرامج الضارة الشائعة. غالبا ما تقوم البرامج الضارة التي تسيء استخدام Office كمتجه بتشغيل وحدات ماكرو VBA واستخدام التعليمات البرمجية لتنزيل المزيد من الحمولات ومحاولة تشغيلها. ومع ذلك، قد تؤدي بعض تطبيقات خط الأعمال المشروعة أيضا إلى إنشاء عمليات تابعة لأغراض غير ضارة؛ مثل إنتاج موجه أوامر أو استخدام PowerShell لتكوين إعدادات التسجيل.
 
@@ -250,17 +250,17 @@ GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 التبعيات: MDAV
 
-### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>حظر سرقة بيانات الاعتماد من النظام الفرعي لمرجع الأمان المحلي Windows
+### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>حظر سرقة بيانات الاعتماد من النظام الفرعي لمرجع الأمان المحلي في Windows
 
 تساعد هذه القاعدة على منع سرقة بيانات الاعتماد عن طريق تأمين خدمة النظام الفرعي لمرجع الأمان المحلي (LSASS).
 
-يقوم LSASS بمصادقة المستخدمين الذين يسجلون الدخول على كمبيوتر Windows. عادة ما تمنع حماية بيانات اعتماد Microsoft Defender في Windows محاولات استخراج بيانات الاعتماد من LSASS. لا يمكن لبعض المؤسسات تمكين "حماية بيانات الاعتماد" على جميع أجهزة الكمبيوتر الخاصة بها بسبب مشاكل التوافق مع برامج تشغيل البطاقة الذكية المخصصة أو البرامج الأخرى التي يتم تحميلها إلى "هيئة الأمان المحلية" (LSA). في هذه الحالات، يمكن للمهاجمين استخدام أدوات مثل Mimikatz لتنقيح كلمات مرور النص الواضح وتجزئة NTLM من LSASS.
+يقوم LSASS بمصادقة المستخدمين الذين يسجلون الدخول على كمبيوتر يعمل بنظام التشغيل Windows. عادة ما تمنع حماية بيانات اعتماد Microsoft Defender في Windows محاولات استخراج بيانات الاعتماد من LSASS. لا يمكن لبعض المؤسسات تمكين "حماية بيانات الاعتماد" على جميع أجهزة الكمبيوتر الخاصة بها بسبب مشاكل التوافق مع برامج تشغيل البطاقة الذكية المخصصة أو البرامج الأخرى التي يتم تحميلها إلى "هيئة الأمان المحلية" (LSA). في هذه الحالات، يمكن للمهاجمين استخدام أدوات مثل Mimikatz لتنقيح كلمات مرور النص الواضح وتجزئة NTLM من LSASS.
 
 > [!NOTE]
 > في بعض التطبيقات، تقوم التعليمات البرمجية بتعداد جميع العمليات قيد التشغيل وتحاول فتحها بأذونات شاملة. ترفض هذه القاعدة الإجراء المفتوح لعملية التطبيق وتسجل التفاصيل في سجل أحداث الأمان. يمكن أن تولد هذه القاعدة الكثير من الضوضاء. إذا كان لديك تطبيق يقوم ببساطة بتعداد LSASS، ولكن ليس له تأثير حقيقي في الوظائف، فليست هناك حاجة لإضافته إلى قائمة الاستبعاد. في حد ذاته، لا يشير إدخال سجل الأحداث هذا بالضرورة إلى وجود تهديد ضار.
   
 > [!IMPORTANT]
-> ستتغير الحالة الافتراضية لقاعدة تقليل الأجزاء المعرضة للهجوم (ASR) "حظر سرقة بيانات الاعتماد من النظام الفرعي لسلطة الأمان المحلية Windows (lsass.exe)" من **"غير مكونة****" إلى "مكونة"** وتعيين الوضع الافتراضي إلى **"حظر**". ستبقى كافة قواعد ASR الأخرى في حالتها الافتراضية: **لم يتم تكوينها**. تم بالفعل تضمين منطق تصفية إضافي في القاعدة لتقليل إعلامات المستخدم النهائي. يمكن للعملاء تكوين القاعدة إلى أوضاع **التدقيق** أو **التحذير** أو **التعطيل** ، والتي ستتجاوز الوضع الافتراضي. وظيفة هذه القاعدة هي نفسها، سواء تم تكوين القاعدة في الوضع الافتراضي، أو إذا قمت بتمكين وضع الحظر يدويا.
+> ستتغير الحالة الافتراضية لقاعدة تقليل الأجزاء المعرضة للهجوم (ASR) "حظر سرقة بيانات الاعتماد من النظام الفرعي لمرجع الأمان المحلي ل Windows (lsass.exe)" من **"غير مكون** " إلى **"تم تكوينه** " وتعيين الوضع الافتراضي إلى **"حظر**". ستبقى كافة قواعد ASR الأخرى في حالتها الافتراضية: **لم يتم تكوينها**. تم بالفعل تضمين منطق تصفية إضافي في القاعدة لتقليل إعلامات المستخدم النهائي. يمكن للعملاء تكوين القاعدة إلى أوضاع **التدقيق** أو **التحذير** أو **التعطيل** ، والتي ستتجاوز الوضع الافتراضي. وظيفة هذه القاعدة هي نفسها، سواء تم تكوين القاعدة في الوضع الافتراضي، أو إذا قمت بتمكين وضع الحظر يدويا.
 
 اسم Intune: `Flag credential stealing from the Windows local security authority subsystem`
 
@@ -277,14 +277,14 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>حظر المحتوى القابل للتنفيذ من عميل البريد الإلكتروني والبريد الإلكتروني
 
-تمنع هذه القاعدة أنواع الملفات التالية من التشغيل من البريد الإلكتروني المفتوح داخل تطبيق Microsoft Outlook، أو Outlook.com وموفري بريد الويب الآخرين الشائعين:
+تمنع هذه القاعدة أنواع الملفات التالية من التشغيل من البريد الإلكتروني المفتوح داخل تطبيق Microsoft Outlook، أو Outlook.com وموفري بريد ويب الآخرين الشائعين:
 
 - الملفات القابلة للتنفيذ (مثل .exe أو .dll أو .scr)
-- ملفات البرنامج النصي (مثل ملف PowerShell .ps أو Visual Basic .vbs أو JavaScript .js)
+- ملفات البرنامج النصي (مثل ملف .ps1 PowerShell أو Visual Basic .vbs أو JavaScript .js)
 
 اسم Intune: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-اسم إدارة نقاط النهاية من Microsoft:`Block executable content from email client and webmail`
+اسم microsoft إدارة نقاط النهاية:`Block executable content from email client and webmail`
 
 GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
@@ -372,7 +372,7 @@ GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>حظر تطبيقات Office من إنشاء محتوى قابل للتنفيذ
 
-تمنع هذه القاعدة تطبيقات Office، بما في ذلك Word Excel PowerPoint، من إنشاء محتوى قابل للتنفيذ قد يكون ضارا، وذلك عن طريق حظر كتابة التعليمات البرمجية الضارة على القرص.
+تمنع هذه القاعدة تطبيقات Office، بما في ذلك Word وExcel وPowerPoint، من إنشاء محتوى قابل للتنفيذ قد يكون ضارا، وذلك عن طريق حظر كتابة تعليمات برمجية ضارة على القرص.
 
 قد تحاول البرامج الضارة التي تسيء استخدام Office كمتجه الخروج من Office وحفظ المكونات الضارة على القرص. هذه المكونات الضارة من شأنها أن تبقى على قيد الحياة إعادة تشغيل الكمبيوتر والاستمرار على النظام. لذلك، فإن هذه القاعدة دفاع ضد تقنية الثبات الشائعة.
 
@@ -393,11 +393,11 @@ GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
 تمنع هذه القاعدة محاولات إدخال التعليمات البرمجية من تطبيقات Office إلى عمليات أخرى.
 
-قد يحاول المهاجمون استخدام تطبيقات Office بترحيل تعليمات برمجية ضارة إلى عمليات أخرى من خلال إدخال التعليمات البرمجية، بحيث يمكن أن تتهين التعليمات البرمجية كمعالجة نظيفة.
+قد يحاول المهاجمون استخدام تطبيقات Office بترحيل تعليمات برمجية ضارة إلى عمليات أخرى من خلال إدخال التعليمات البرمجية، بحيث يمكن أن يتم تنميط التعليمات البرمجية كمعالجة نظيفة.
 
 لا توجد أغراض تجارية شرعية معروفة لاستخدام حقن التعليمات البرمجية.
 
-تنطبق هذه القاعدة على Word و Excel و PowerPoint.
+تنطبق هذه القاعدة على Word وExcel وPowerPoint.
 
 اسم Intune: `Office apps injecting code into other processes (no exceptions)`
 
@@ -412,14 +412,14 @@ GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 التبعيات: MDAV
 
-### <a name="block-office-communication-application-from-creating-child-processes"></a>حظر تطبيق اتصال Office من إنشاء عمليات تابعة
+### <a name="block-office-communication-application-from-creating-child-processes"></a>حظر تطبيق اتصالات Office من إنشاء عمليات تابعة
 
 تمنع هذه القاعدة Outlook من إنشاء عمليات تابعة، مع الاستمرار في السماح بوظائف Outlook المشروعة.
 
-تحمي هذه القاعدة من هجمات الهندسة الاجتماعية وتمنع استغلال التعليمات البرمجية من إساءة استخدام الثغرات الأمنية في Outlook. كما أنه يحمي من [Outlook القواعد والنماذج التي](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) يمكن للمهاجمين استخدامها عند اختراق بيانات اعتماد المستخدم.
+تحمي هذه القاعدة من هجمات الهندسة الاجتماعية وتمنع استغلال التعليمات البرمجية من إساءة استخدام الثغرات الأمنية في Outlook. كما أنه يحمي [من عمليات استغلال قواعد Outlook وأشكاله](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) التي يمكن للمهاجمين استخدامها عند اختراق بيانات اعتماد المستخدم.
 
 > [!NOTE]
-> تمنع هذه القاعدة تلميحات نهج DLP وتلميحات الأدوات في Outlook. تنطبق هذه القاعدة على Outlook و Outlook.com فقط.
+> تمنع هذه القاعدة تلميحات نهج DLP وتلميحات الأدوات في Outlook. تنطبق هذه القاعدة على Outlook Outlook.com فقط.
 
 اسم Intune: `Process creation from Office communication products (beta)`
 
@@ -461,7 +461,7 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 تمنع هذه القاعدة العمليات التي تم إنشاؤها من خلال [PsExec](/sysinternals/downloads/psexec) [وWMI](/windows/win32/wmisdk/about-wmi) من التشغيل. يمكن لكل من PsExec وWMI تنفيذ التعليمات البرمجية عن بعد. هناك خطر من إساءة استخدام البرامج الضارة لوظائف PsExec وWMI لأغراض الأوامر والتحكم، أو لنشر إصابة في جميع أنحاء شبكة المؤسسة.
 
 > [!WARNING]
-> استخدم هذه القاعدة فقط إذا كنت تدير أجهزتك باستخدام [Intune](/intune) أو حل MDM آخر. هذه القاعدة غير متوافقة مع الإدارة من خلال [Microsoft Endpoint Configuration Manager](/configmgr) لأن هذه القاعدة تمنع أوامر WMI التي يستخدمها العميل Configuration Manager للعمل بشكل صحيح.
+> استخدم هذه القاعدة فقط إذا كنت تدير أجهزتك باستخدام [Intune](/intune) أو حل MDM آخر. هذه القاعدة غير متوافقة مع الإدارة من خلال [نقطة نهاية Microsoft Configuration Manager](/configmgr) لأن هذه القاعدة تمنع أوامر WMI التي يستخدمها العميل Configuration Manager للعمل بشكل صحيح.
 
 اسم Intune: `Process creation from PSExec and WMI commands`
 
@@ -496,7 +496,7 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 التبعيات: MDAV
 
-### <a name="block-win32-api-calls-from-office-macros"></a>حظر استدعاءات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office
+### <a name="block-win32-api-calls-from-office-macros"></a>حظر مكالمات واجهة برمجة تطبيقات Win32 من وحدات ماكرو Office
 
 تمنع هذه القاعدة وحدات ماكرو VBA من استدعاء واجهات برمجة تطبيقات Win32.
 

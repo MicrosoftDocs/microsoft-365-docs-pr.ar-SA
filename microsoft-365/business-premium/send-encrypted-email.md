@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/08/2022
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -26,14 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: تعرف على كيفية إرسال بريد إلكتروني مشفر باستخدام Outlook.
-ms.openlocfilehash: b9b2251114831bfe0b6364dc4327bd0c21da55e2
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: e4a25cc59d0d92c1905507b1e5db1253f120849c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65316821"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489547"
 ---
-# <a name="encrypt-or-label-sensitive-email"></a>تشفير البريد الإلكتروني الحساس أو تسميته
+# <a name="encrypt-or-label-your-sensitive-email-in-microsoft-365"></a>تشفير بريدك الإلكتروني الحساس أو تسميته في Microsoft 365
 
 بياناتك ومعلوماتك مهمة، وسرية في كثير من الأحيان. الهدف هنا هو المساعدة في حماية هذه المعلومات الحساسة من خلال التأكد من أن الجميع يستخدمون أوصاف الحساسية بحيث يتعامل مستلمو البريد الإلكتروني مع المعلومات بحساسية uud.
 
@@ -49,9 +48,9 @@ ms.locfileid: "65316821"
 
 ## <a name="set-it-up"></a>إعداده
 
-إذا كنت تريد تشفير رسالة لا تفي بقاعدة معرفة مسبقا أو لم يقم المسؤول بإعداد أي قواعد، يمكنك تطبيق مجموعة متنوعة من قواعد التشفير المختلفة قبل إرسال الرسالة. لإرسال رسالة مشفرة من Outlook 2013 أو 2016 أو Outlook 2016 for Mac، حدد **خيارات > الأذونات**، ثم حدد خيار الحماية الذي تحتاجه. يمكنك أيضا إرسال رسالة مشفرة عن طريق تحديد الزر **"حماية**" في Outlook على ويب. لمزيد من المعلومات، راجع [إرسال الرسائل المشفرة وعرضها والرد عليها في Outlook للكمبيوتر الشخصي](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
+إذا كنت تريد تشفير رسالة لا تفي بقاعدة معرفة مسبقا أو لم يقم المسؤول بإعداد أي قواعد، يمكنك تطبيق مجموعة متنوعة من قواعد التشفير المختلفة قبل إرسال الرسالة. لإرسال رسالة مشفرة من Outlook 2013 أو 2016 أو Outlook 2016 for Mac، حدد **خيارات > الأذونات**، ثم حدد خيار الحماية الذي تحتاجه. يمكنك أيضا إرسال رسالة مشفرة عن طريق تحديد الزر **"حماية**" في Outlook على ويب. لمزيد من المعلومات، راجع [إرسال الرسائل المشفرة وعرضها والرد عليها في Outlook for PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
 
-## <a name="admin-settings"></a>إعدادات المسؤول
+## <a name="admin-settings"></a>إعدادات مسؤول
 
 يمكنك معرفة كل شيء حول إعداد تشفير البريد الإلكتروني في [تشفير البريد الإلكتروني في Microsoft 365](../compliance/email-encryption.md).
 
@@ -62,8 +61,8 @@ ms.locfileid: "65316821"
 يمكنك إنشاء قواعد تدفق البريد لتشفير رسائل البريد الإلكتروني باستخدام تشفير الرسائل في Microsoft Purview. تعريف قواعد تدفق البريد لتشغيل تشفير الرسائل باستخدام <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange (EAC).</a>
 
 1. في مستعرض ويب، باستخدام حساب العمل أو المؤسسة التعليمية الذي تم منحه أذونات المسؤول العام، سجل الدخول.
-2. اختر لوحة المسؤول.
-3. في مركز الإدارة، اختر **مراكز الإدارة > Exchange**.
+2. اختر لوحة مسؤول.
+3. في مركز مسؤول، اختر **مراكز مسؤول > Exchange**.
 
 لمزيد من المعلومات، راجع [تحديد قواعد تدفق البريد لتشفير رسائل البريد الإلكتروني](../compliance/define-mail-flow-rules-to-encrypt-email.md).
 

@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
-description: تعرف على كيفية استخدام Office 365 Content Delivery Network (CDN) لتسريع تسليم أصولك SharePoint Online.
-ms.openlocfilehash: 8b106840133f5c690fd0df80700fdb79a3590d92
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+description: تعرف على كيفية استخدام Office 365 Content Delivery Network (CDN) لتسريع تسليم أصول SharePoint Online.
+ms.openlocfilehash: 19a6ef51c73340c9f048ffa60208a5216a1959db
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139552"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492502"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>استخدام شبكة تسليم المحتوى Office 365 (CDN) مع SharePoint Online
 
-يمكنك استخدام شبكة تسليم المحتوى Office 365 المضمنة (CDN) لاستضافة الأصول الثابتة لتوفير أداء أفضل للصفحات SharePoint Online. يحسن Office 365 CDN الأداء عن طريق تخزين الأصول الثابتة مؤقتا بالقرب من المستعرضات التي تطلبها، ما يساعد على تسريع التنزيلات وتقليل زمن الانتقال. أيضا، يستخدم Office 365 CDN [بروتوكول HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) لتحسين الضغط والبنية الأساسية لبرنامج ربط العمليات التجارية ل HTTP. يتم تضمين خدمة Office 365 CDN كجزء من اشتراكك في SharePoint Online.
+يمكنك استخدام Office 365 Content Delivery Network (CDN) المضمنة لاستضافة الأصول الثابتة لتوفير أداء أفضل لصفحات SharePoint Online. يحسن Office 365 CDN الأداء عن طريق تخزين الأصول الثابتة مؤقتا بالقرب من المستعرضات التي تطلبها، ما يساعد على تسريع التنزيلات وتقليل زمن الانتقال. أيضا، يستخدم Office 365 CDN [بروتوكول HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) لتحسين الضغط والبنية الأساسية لبرنامج ربط العمليات التجارية ل HTTP. يتم تضمين خدمة Office 365 CDN كجزء من اشتراكك في SharePoint Online.
 
 > [!NOTE]
-> تتوفر Office 365 CDN فقط للمستأجرين في سحابة **الإنتاج** (في جميع أنحاء العالم). لا يدعم المستأجرون في سحابة حكومة الولايات المتحدة والصين و ألمانيا حاليا Office 365 CDN.
+> تتوفر Office 365 CDN فقط للمستأجرين في سحابة **الإنتاج** (في جميع أنحاء العالم). لا يدعم المستأجرون في سحابة حكومة الولايات المتحدة والصين حاليا Office 365 CDN.
 
 تتكون Office 365 CDN من شبكات تسليم المحتوى المتعددة التي تسمح لك باستضافة الأصول الثابتة في مواقع أو _أصول_ متعددة، وخدمتها من شبكات عالمية عالية السرعة. استنادا إلى نوع المحتوى الذي تريد استضافته في Office 365 CDN، يمكنك إضافة أصول **عامة** أو أصول **خاصة** أو كليهما. راجع [اختيار ما إذا كان يجب أن يكون كل أصل عاما أو خاصا](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) لمزيد من المعلومات حول الفرق بين الأصول العامة والخاصة.
 
@@ -53,14 +53,14 @@ ms.locfileid: "66139552"
 + [التخطيط لتوزيع شبكة تسليم المحتوى Office 365](use-microsoft-365-cdn-with-spo.md#plan-for-deployment-of-the-office-365-cdn)
 
   + [تحديد الأصول الثابتة التي تريد استضافتها على شبكة تسليم المحتوى](use-microsoft-365-cdn-with-spo.md#CDNAssets).
-  + [حدد المكان الذي تريد تخزين أصولك](use-microsoft-365-cdn-with-spo.md#CDNStoreAssets) فيه. يمكن أن يكون هذا الموقع موقعا SharePoint أو مكتبة أو مجلدا ويطلق عليه اسم _الأصل_.
+  + [حدد المكان الذي تريد تخزين أصولك](use-microsoft-365-cdn-with-spo.md#CDNStoreAssets) فيه. يمكن أن يكون هذا الموقع موقعا أو مكتبة أو مجلدا في SharePoint ويطلق عليه اسم _الأصل_.
   + [اختر ما إذا كان يجب أن يكون كل أصل عاما أو خاصا](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate). يمكنك إضافة أصول متعددة لكل من الأنواع العامة والخاصة.
 
-+ إعداد وتكوين شبكة تسليم المحتوى، باستخدام إما PowerShell أو CLI Microsoft 365
++ إعداد وتكوين شبكة تسليم المحتوى، باستخدام إما PowerShell أو CLI ل Microsoft 365
 
   + [إعداد وتكوين شبكة تسليم المحتوى باستخدام SharePoint Online Management Shell](use-microsoft-365-cdn-with-spo.md#CDNSetupinPShell)
   + [إعداد وتكوين شبكة تسليم المحتوى باستخدام PnP PowerShell](use-microsoft-365-cdn-with-spo.md#CDNSetupinPnPPosh)
-  + [إعداد وتكوين شبكة تسليم المحتوى باستخدام CLI Microsoft 365](use-microsoft-365-cdn-with-spo.md#CDNSetupinCLI)
+  + [إعداد وتكوين شبكة تسليم المحتوى باستخدام CLI ل Microsoft 365](use-microsoft-365-cdn-with-spo.md#CDNSetupinCLI)
 
   عند إكمال هذه الخطوة، سيكون لديك:
 
@@ -95,14 +95,14 @@ ms.locfileid: "66139552"
 + ملفات كبيرة مثل الملفات التنفيذية وملفات التثبيت
 + مكتبات الموارد التي تدعم التعليمات البرمجية من جانب العميل
 
-على سبيل المثال، يمكن للملفات الصغيرة التي يتم طلبها بشكل متكرر مثل صور الموقع والبرامج النصية تحسين أداء عرض الموقع بشكل كبير وتقليل الحمل بشكل متزايد على مواقع SharePoint Online عند إضافتها إلى أصل شبكة تسليم المحتوى. يمكن تنزيل الملفات الكبيرة مثل الملفات التنفيذية للتثبيت من شبكة تسليم المحتوى، مما يؤدي إلى تأثير إيجابي على الأداء وتقليل الحمل على موقع SharePoint Online الخاص بك، حتى لو لم يتم الوصول إليها في كثير من الأحيان.
+على سبيل المثال، يمكن للملفات الصغيرة التي يتم طلبها بشكل متكرر مثل صور الموقع والبرامج النصية تحسين أداء عرض الموقع بشكل كبير وتقليل الحمل بشكل متزايد على مواقع SharePoint Online عند إضافتها إلى أصل شبكة تسليم المحتوى. يمكن تنزيل الملفات الكبيرة مثل الملفات التنفيذية للتثبيت من شبكة تسليم المحتوى، مما يؤدي إلى تأثير إيجابي على الأداء وتقليل الحمل على موقع SharePoint Online، حتى لو لم يتم الوصول إليها في كثير من الأحيان.
 
 يعتمد تحسين الأداء على أساس كل ملف على العديد من العوامل، بما في ذلك قرب العميل من أقرب نقطة نهاية شبكة تسليم المحتوى، والشروط العابرة على الشبكة المحلية، وما إلى ذلك. العديد من الملفات الثابتة صغيرة جدا، ويمكن تنزيلها من Office 365 في أقل من ثانية. ومع ذلك، قد تحتوي صفحة ويب على العديد من الملفات المضمنة مع وقت تنزيل تراكمي لعدة ثوان. يمكن أن يؤدي تقديم هذه الملفات من شبكة تسليم المحتوى إلى تقليل وقت تحميل الصفحة الإجمالي بشكل كبير. راجع [ما هي مكاسب الأداء التي توفرها شبكة تسليم المحتوى؟](content-delivery-networks.md#what-performance-gains-does-a-cdn-provide) على سبيل المثال.
 
 <a name="CDNStoreAssets"> </a>
 ### <a name="determine-where-you-want-to-store-your-assets"></a>تحديد المكان الذي تريد تخزين أصولك فيه
 
-تقوم شبكة تسليم المحتوى بإحضار أصولك من موقع يسمى _الأصل_. يمكن أن يكون الأصل موقعا SharePoint أو مكتبة مستندات أو مجلدا يمكن الوصول إليه بواسطة عنوان URL. تتمتع بمرونة كبيرة عند تحديد الأصول لمؤسستك. على سبيل المثال، يمكنك تحديد أصول متعددة أو أصل واحد حيث تريد وضع جميع أصول شبكة تسليم المحتوى. يمكنك اختيار الحصول على أصول عامة أو خاصة لمؤسستك. ستختار معظم المؤسسات تنفيذ مزيج من الاثنين.
+تقوم شبكة تسليم المحتوى بإحضار أصولك من موقع يسمى _الأصل_. يمكن أن يكون الأصل موقع SharePoint أو مكتبة مستندات أو مجلدا يمكن الوصول إليه بواسطة عنوان URL. تتمتع بمرونة كبيرة عند تحديد الأصول لمؤسستك. على سبيل المثال، يمكنك تحديد أصول متعددة أو أصل واحد حيث تريد وضع جميع أصول شبكة تسليم المحتوى. يمكنك اختيار الحصول على أصول عامة أو خاصة لمؤسستك. ستختار معظم المؤسسات تنفيذ مزيج من الاثنين.
 
 يمكنك إنشاء حاوية جديدة لأصولك مثل المجلدات أو مكتبات المستندات، وإضافة الملفات التي تريد توفيرها من شبكة تسليم المحتوى. هذا نهج جيد إذا كان لديك مجموعة محددة من الأصول التي تريد أن تكون متوفرة من شبكة تسليم المحتوى، وتريد تقييد مجموعة أصول شبكة تسليم المحتوى لتلك الملفات فقط في الحاوية.
 
@@ -121,7 +121,7 @@ ms.locfileid: "66139552"
 
 يمكن الوصول إلى الأصول **العامة** داخل Office 365 CDN بشكل مجهول، ويمكن الوصول إلى الأصول المستضافة من قبل أي شخص لديه عنوان URL إلى الأصل. نظرا لأن الوصول إلى المحتوى في الأصول العامة مجهول، يجب عليك استخدامه فقط لتخزين المحتوى العام غير الحساس مؤقتا مثل ملفات JavaScript والبرامج النصية والأيقونات والصور.
 
-توفر الأصول **الخاصة** داخل Office 365 CDN وصولا خاصا إلى محتوى المستخدم مثل SharePoint Online document libraries والمواقع والصور الخاصة. يتم تأمين الوصول إلى المحتوى في الأصول الخاصة بواسطة الرموز المميزة التي تم إنشاؤها ديناميكيا بحيث لا يمكن الوصول إليها إلا من قبل المستخدمين الذين لديهم أذونات لمكتبة المستندات الأصلية أو موقع التخزين. يمكن استخدام الأصول الخاصة في Office 365 CDN فقط لمحتوى SharePoint Online، ويمكنك فقط الوصول إلى الأصول في الأصول الخاصة من خلال إعادة التوجيه من مستأجر SharePoint Online.
+توفر الأصول **الخاصة** داخل Office 365 CDN وصولا خاصا إلى محتوى المستخدم مثل مكتبات مستندات SharePoint Online والمواقع والصور الخاصة. يتم تأمين الوصول إلى المحتوى في الأصول الخاصة بواسطة الرموز المميزة التي تم إنشاؤها ديناميكيا بحيث لا يمكن الوصول إليها إلا من قبل المستخدمين الذين لديهم أذونات لمكتبة المستندات الأصلية أو موقع التخزين. يمكن استخدام الأصول الخاصة في Office 365 CDN فقط لمحتوى SharePoint Online، ويمكنك فقط الوصول إلى الأصول في الأصول الخاصة من خلال إعادة التوجيه من مستأجر SharePoint Online.
 
 يمكنك قراءة المزيد حول كيفية عمل وصول شبكة تسليم المحتوى إلى الأصول في أصل خاص في [استخدام الأصول في الأصول الخاصة](use-microsoft-365-cdn-with-spo.md#using-assets-in-private-origins).
 
@@ -135,7 +135,7 @@ ms.locfileid: "66139552"
 
 + عند استضافة أوراق الأنماط (ملفات CSS) في أصل عام، يمكنك استخدام المسارات النسبية وعناوين URL داخل التعليمات البرمجية. وهذا يعني أنه يمكنك الرجوع إلى موقع صور الخلفية والعناصر الأخرى بالنسبة إلى موقع الأصل الذي يستدعيه.
 
-+ بينما يمكنك إنشاء عنوان URL للأصل العام، يجب عليك المتابعة بحذر والتأكد من استخدام خاصية سياق الصفحة واتباع الإرشادات للقيام بذلك. والسبب في ذلك هو أنه إذا أصبح الوصول إلى شبكة تسليم المحتوى غير متوفر، فلن يتم حل عنوان URL تلقائيا لمؤسستك في SharePoint Online وقد ينتج عنه ارتباطات مقطوعة وأخطاء أخرى. كما أن عنوان URL عرضة للتغيير ولهذا السبب يجب ألا يكون مجرد تعليمة برمجية ثابتة إلى قيمته الحالية.
++ بينما يمكنك إنشاء عنوان URL للأصل العام، يجب عليك المتابعة بحذر والتأكد من استخدام خاصية سياق الصفحة واتباع الإرشادات للقيام بذلك. والسبب في ذلك هو أنه إذا أصبح الوصول إلى شبكة تسليم المحتوى غير متوفر، فلن يتم حل URL تلقائيا لمؤسستك في SharePoint Online وقد ينتج عنه ارتباطات مقطوعة وأخطاء أخرى. كما أن عنوان URL عرضة للتغيير ولهذا السبب يجب ألا يكون مجرد تعليمة برمجية ثابتة إلى قيمته الحالية.
 
 + أنواع الملفات الافتراضية المضمنة في الأصول العامة هي .css و.eot و .gif و.ico و.jpeg و .jpg و .js و.map و .png و.svg و.ttf و.woff و.woff2. يمكنك تحديد أنواع ملفات إضافية.
 
@@ -143,11 +143,11 @@ ms.locfileid: "66139552"
 
 #### <a name="attributes-and-advantages-of-hosting-assets-in-private-origins"></a>سمات ومزايا استضافة الأصول في الأصول الخاصة
 
-+ يمكن استخدام الأصول الخاصة فقط للأصول SharePoint Online.
++ يمكن استخدام الأصول الخاصة لأصول SharePoint Online فقط.
 
 + يمكن للمستخدمين الوصول إلى الأصول من أصل خاص فقط إذا كان لديهم أذونات للوصول إلى الحاوية. يتم منع الوصول المجهول إلى هذه الأصول.
 
-+ يجب الإشارة إلى الأصول في الأصول الخاصة من المستأجر SharePoint Online. لا يعمل الوصول المباشر إلى أصول شبكة تسليم المحتوى الخاصة.
++ يجب الإشارة إلى الأصول في الأصول الخاصة من مستأجر SharePoint Online. لا يعمل الوصول المباشر إلى أصول شبكة تسليم المحتوى الخاصة.
 
 + إذا قمت بإزالة أصل من الأصل الخاص، فقد يستمر توفر الأصل لمدة تصل إلى ساعة من ذاكرة التخزين المؤقت؛ ومع ذلك، سنقوم بإبطال الارتباطات إلى الأصل في شبكة تسليم المحتوى في غضون 15 دقيقة من إزالة الأصل.
 
@@ -178,7 +178,7 @@ ms.locfileid: "66139552"
 <a name="CDNSetupinPShell"> </a>
 ## <a name="set-up-and-configure-the-office-365-cdn-by-using-the-sharepoint-online-management-shell"></a>إعداد وتكوين Office 365 CDN باستخدام SharePoint Online Management Shell
 
-تتطلب الإجراءات الواردة في هذا القسم استخدام SharePoint Online Management Shell للاتصال SharePoint Online. للحصول على الإرشادات، راجع [الاتصال إلى SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+تتطلب الإجراءات الواردة في هذا القسم استخدام SharePoint Online Management Shell للاتصال ب SharePoint Online. للحصول على الإرشادات، راجع [الاتصال ب SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 أكمل هذه الخطوات لإعداد وتكوين شبكة تسليم المحتوى لاستضافة أصولك في SharePoint Online باستخدام SharePoint Online Management Shell.
 
@@ -187,7 +187,7 @@ ms.locfileid: "66139552"
 
 ### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>تمكين مؤسستك من استخدام Office 365 CDN
 
-قبل إجراء تغييرات على إعدادات شبكة تسليم المحتوى للمستأجر، يجب استرداد الحالة الحالية لتكوين شبكة تسليم المحتوى الخاصة في مستأجر Office 365. الاتصال إلى المستأجر باستخدام SharePoint Online Management Shell:
+قبل إجراء تغييرات على إعدادات شبكة تسليم المحتوى للمستأجر، يجب استرداد الحالة الحالية لتكوين شبكة تسليم المحتوى الخاصة في مستأجر Office 365. الاتصال بالمستأجر باستخدام SharePoint Online Management Shell:
 
 ```powershell
 Connect-SPOService -Url https://contoso-admin.sharepoint.com
@@ -301,7 +301,7 @@ Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 <a name="Office365CDNforSPOOriginPosh"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>إضافة أصل لأصولك
 
-استخدم **cmdlet Add-SPOTenantCdnOrigin** لتعريف أصل. يمكنك تحديد أصول متعددة. الأصل هو URL يشير إلى مكتبة SharePoint أو مجلد يحتوي على الأصول التي تريد استضافتها بواسطة شبكة تسليم المحتوى.
+استخدم **cmdlet Add-SPOTenantCdnOrigin** لتعريف أصل. يمكنك تحديد أصول متعددة. الأصل هو URL يشير إلى مكتبة أو مجلد SharePoint يحتوي على الأصول التي تريد استضافتها بواسطة شبكة تسليم المحتوى.
 
 > [!IMPORTANT]
 > يجب عدم وضع الموارد التي تحتوي على معلومات المستخدم أو التي تعتبر حساسة لمؤسستك في أصل عام.
@@ -351,7 +351,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 بمجرد تشغيل الأمر، يقوم النظام بمزامنة التكوين عبر مركز البيانات. قد يستغرق ذلك ما يصل إلى 15 دقيقة.
 
 <a name="ExamplePublicOrigin"> </a>
-### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>مثال: تكوين أصل عام للصفحات الرئيسية ومكتبة الأنماط الخاصة بك SharePoint Online
+### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>مثال: تكوين أصل عام للصفحات الرئيسية ومكتبة الأنماط ل SharePoint Online
 
 عادة، يتم إعداد هذه الأصول لك بشكل افتراضي عند تمكين Office 365 CDN. ومع ذلك، إذا كنت تريد تمكينها يدويا، فاتبع هذه الخطوات.
 
@@ -407,7 +407,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 
 لمزيد من المعلومات حول هذا الأمر وبنيته، راجع [Add-SPOTenantCdnOrigin](/powershell/module/sharepoint-online/Add-SPOTenantCdnOrigin).
 
-بمجرد تشغيل الأمر، يقوم النظام بمزامنة التكوين عبر مركز البيانات. قد ترى رسالة _"تكوين" معلقة_ وهي متوقعة مع اتصال المستأجر SharePoint Online بخدمة CDN. قد يستغرق ذلك ما يصل إلى 15 دقيقة.
+بمجرد تشغيل الأمر، يقوم النظام بمزامنة التكوين عبر مركز البيانات. قد ترى رسالة _"التكوين" المعلقة_ المتوقعة مع اتصال مستأجر SharePoint Online بخدمة CDN. قد يستغرق ذلك ما يصل إلى 15 دقيقة.
 
 <a name="CDNManage"> </a>
 ### <a name="manage-the-office-365-cdn"></a>إدارة Office 365 CDN
@@ -470,7 +470,7 @@ Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 
 ### <a name="enable-your-organization-to-use-the-office-365-cdn"></a>تمكين مؤسستك من استخدام Office 365 CDN
 
-قبل إجراء تغييرات على إعدادات شبكة تسليم المحتوى للمستأجر، يجب استرداد الحالة الحالية لتكوين شبكة تسليم المحتوى الخاصة في مستأجر Office 365. الاتصال إلى المستأجر باستخدام PnP PowerShell:
+قبل إجراء تغييرات على إعدادات شبكة تسليم المحتوى للمستأجر، يجب استرداد الحالة الحالية لتكوين شبكة تسليم المحتوى الخاصة في مستأجر Office 365. الاتصال بالمستأجر باستخدام PnP PowerShell:
 
 ```powershell
 Connect-PnPOnline -Url https://contoso-admin.sharepoint.com -UseWebLogin
@@ -584,7 +584,7 @@ Get-PnPTenantCdnPolicies -CdnType <Public | Private>
 <a name="Office365CDNforSPOOriginPnPPosh"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>إضافة أصل لأصولك
 
-استخدم **Add-PnPTenantCdnOrigin** cmdlet لتعريف أصل. يمكنك تحديد أصول متعددة. الأصل هو URL يشير إلى مكتبة SharePoint أو مجلد يحتوي على الأصول التي تريد استضافتها بواسطة شبكة تسليم المحتوى.
+استخدم **Add-PnPTenantCdnOrigin** cmdlet لتعريف أصل. يمكنك تحديد أصول متعددة. الأصل هو URL يشير إلى مكتبة أو مجلد SharePoint يحتوي على الأصول التي تريد استضافتها بواسطة شبكة تسليم المحتوى.
 
 > [!IMPORTANT]
 > يجب عدم وضع الموارد التي تحتوي على معلومات المستخدم أو التي تعتبر حساسة لمؤسستك في أصل عام.
@@ -634,7 +634,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder
 بمجرد تشغيل الأمر، يقوم النظام بمزامنة التكوين عبر مركز البيانات. قد يستغرق ذلك ما يصل إلى 15 دقيقة.
 
 <a name="ExamplePublicOriginPnPPosh"> </a>
-### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>مثال: تكوين أصل عام للصفحات الرئيسية ومكتبة الأنماط الخاصة بك SharePoint Online
+### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>مثال: تكوين أصل عام للصفحات الرئيسية ومكتبة الأنماط ل SharePoint Online
 
 عادة، يتم إعداد هذه الأصول لك بشكل افتراضي عند تمكين Office 365 CDN. ومع ذلك، إذا كنت تريد تمكينها يدويا، فاتبع هذه الخطوات.
 
@@ -690,7 +690,7 @@ Add-PnPTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 
 لمزيد من المعلومات حول هذا الأمر وبنيته، راجع [Add-PnPTenantCdnOrigin](https://pnp.github.io/powershell/cmdlets/Add-PnPTenantCdnOrigin.html).
 
-بمجرد تشغيل الأمر، يقوم النظام بمزامنة التكوين عبر مركز البيانات. قد ترى رسالة _"تكوين" معلقة_ وهي متوقعة مع اتصال المستأجر SharePoint Online بخدمة CDN. قد يستغرق ذلك ما يصل إلى 15 دقيقة.
+بمجرد تشغيل الأمر، يقوم النظام بمزامنة التكوين عبر مركز البيانات. قد ترى رسالة _"التكوين" المعلقة_ المتوقعة مع اتصال مستأجر SharePoint Online بخدمة CDN. قد يستغرق ذلك ما يصل إلى 15 دقيقة.
 
 <a name="CDNManagePnPPosh"> </a>
 ### <a name="manage-the-office-365-cdn"></a>إدارة Office 365 CDN
@@ -742,11 +742,11 @@ Set-PnPTenantCdnEnabled -CdnType Private -Enable $false
 </details>
 
 <a name="CDNSetupinCLI"> </a>
-## <a name="set-up-and-configure-the-office-365-cdn-using-the-cli-for-microsoft-365"></a>إعداد وتكوين Office 365 CDN باستخدام CLI Microsoft 365
+## <a name="set-up-and-configure-the-office-365-cdn-using-the-cli-for-microsoft-365"></a>إعداد وتكوين Office 365 CDN باستخدام CLI ل Microsoft 365
 
-تتطلب الإجراءات الواردة في هذا القسم تثبيت [CLI Microsoft 365](https://aka.ms/cli-m365). بعد ذلك، اتصل بمستأجر Office 365 باستخدام أمر [تسجيل الدخول](https://pnp.github.io/cli-microsoft365/cmd/login/).
+تتطلب الإجراءات الواردة في هذا القسم تثبيت [CLI ل Microsoft 365](https://aka.ms/cli-m365). بعد ذلك، اتصل بمستأجر Office 365 باستخدام أمر [تسجيل الدخول](https://pnp.github.io/cli-microsoft365/cmd/login/).
 
-أكمل هذه الخطوات لإعداد وتكوين شبكة تسليم المحتوى لاستضافة أصولك في SharePoint Online باستخدام CLI Microsoft 365.
+أكمل هذه الخطوات لإعداد شبكة تسليم المحتوى وتكوينها لاستضافة أصولك في SharePoint Online باستخدام CLI ل Microsoft 365.
 
 <details>
   <summary>انقر للتوسيع</summary>
@@ -790,9 +790,9 @@ spo cdn origin list --type Public
 ### <a name="add-an-office-365-cdn-origin"></a>إضافة أصل Office 365 CDN
 
 > [!IMPORTANT]
-> يجب عدم وضع الموارد التي تعتبر حساسة لمؤسستك في مكتبة مستندات SharePoint تم تكوينها كأصل عام.
+> يجب ألا تضع أبدا الموارد التي تعتبر حساسة لمؤسستك في مكتبة مستندات SharePoint تم تكوينها كأصل عام.
 
-استخدم أمر [إضافة spo cdn الأصلي](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-origin-add/) لتعريف أصل شبكة تسليم المحتوى. يمكنك تحديد أصول متعددة. الأصل هو URL يشير إلى مكتبة SharePoint أو مجلد يحتوي على الأصول التي تريد استضافتها بواسطة شبكة تسليم المحتوى.
+استخدم أمر [إضافة spo cdn الأصلي](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-origin-add/) لتعريف أصل شبكة تسليم المحتوى. يمكنك تحديد أصول متعددة. الأصل هو URL يشير إلى مكتبة أو مجلد SharePoint يحتوي على الأصول التي تريد استضافتها بواسطة شبكة تسليم المحتوى.
 
 ```cli
 spo cdn origin add --type [Public | Private] --origin <path>
@@ -826,7 +826,7 @@ spo cdn origin remove --type Public --origin */masterpage
 ```
 
 > [!NOTE]
-> لا تؤثر إزالة أصل شبكة تسليم المحتوى على الملفات المخزنة في أي مكتبة مستندات تتطابق مع هذا الأصل. إذا تمت الإشارة إلى هذه الأصول باستخدام عنوان URL SharePoint، فستعود SharePoint تلقائيا إلى عنوان URL الأصلي الذي يشير إلى مكتبة المستندات. ومع ذلك، إذا تمت الإشارة إلى الأصول باستخدام عنوان URL عام ل CDN، فإن إزالة الأصل ستؤدي إلى قطع الارتباط وستحتاج إلى تغييرها يدويا.
+> لا تؤثر إزالة أصل شبكة تسليم المحتوى على الملفات المخزنة في أي مكتبة مستندات تتطابق مع هذا الأصل. إذا تمت الإشارة إلى هذه الأصول باستخدام عنوان URL ل SharePoint، فسيعود SharePoint تلقائيا إلى عنوان URL الأصلي الذي يشير إلى مكتبة المستندات. ومع ذلك، إذا تمت الإشارة إلى الأصول باستخدام عنوان URL عام ل CDN، فإن إزالة الأصل ستؤدي إلى قطع الارتباط وستحتاج إلى تغييرها يدويا.
 
 ### <a name="modify-an-office-365-cdn-origin"></a>تعديل أصل Office 365 CDN
 
@@ -872,7 +872,7 @@ spo cdn set --type Public --enabled false
 
 الآن بعد أن قمت بتمكين شبكة تسليم المحتوى وتكوين الأصول والنهج، يمكنك البدء في استخدام أصول شبكة تسليم المحتوى.
 
-سيساعدك هذا القسم على فهم كيفية استخدام عناوين URL لشبكة تسليم المحتوى في صفحات SharePoint ومحتواك بحيث SharePoint إعادة توجيه طلبات الأصول في الأصول العامة والخاصة إلى شبكة تسليم المحتوى.
+سيساعدك هذا القسم على فهم كيفية استخدام عناوين URL لشبكة تسليم المحتوى في صفحات SharePoint ومحتواه بحيث يعيد SharePoint توجيه طلبات الأصول في الأصول العامة والخاصة إلى شبكة تسليم المحتوى.
 
 + [تحديث الارتباطات إلى أصول CDN](use-microsoft-365-cdn-with-spo.md#updating-links-to-cdn-assets)
 + [استخدام الأصول في الأصول العامة](use-microsoft-365-cdn-with-spo.md#using-assets-in-public-origins)
@@ -906,9 +906,9 @@ spo cdn set --type Public --enabled false
 
 تعيد **ميزة النشر** في SharePoint Online تلقائيا كتابة عناوين URL للأصول المخزنة في الأصول العامة إلى مكافئات شبكة تسليم المحتوى بحيث يتم تقديم الأصول من خدمة CDN بدلا من SharePoint.
 
-إذا كان أصلك في موقع تم تمكين ميزة "النشر"، وتوجد الأصول التي تريد إلغاء تحميلها إلى شبكة تسليم المحتوى في إحدى الفئات التالية، SharePoint إعادة كتابة عناوين URL تلقائيا للأصول في الأصل، شريطة ألا يتم استبعاد الأصل بواسطة نهج CDN.
+إذا كان أصلك في موقع تم تمكين ميزة "النشر"، وتوجد الأصول التي تريد إلغاء تحميلها إلى شبكة تسليم المحتوى في إحدى الفئات التالية، فسيعيد SharePoint تلقائيا كتابة عناوين URL للأصول في الأصل، شريطة ألا يتم استبعاد الأصل بواسطة نهج CDN.
 
-فيما يلي نظرة عامة حول الارتباطات التي تتم إعادة كتابتها تلقائيا بواسطة ميزة النشر SharePoint:
+فيما يلي نظرة عامة حول الارتباطات التي تتم إعادة كتابتها تلقائيا بواسطة ميزة نشر SharePoint:
 
 + عناوين URL IMG/LINK/CSS في استجابات HTML لصفحة النشر الكلاسيكية
   + يتضمن ذلك الصور التي أضافها الكتاب ضمن محتوى HTML لصفحة
@@ -916,7 +916,7 @@ spo cdn set --type Public --enabled false
 + نتائج حقول الصور في SPList REST API (RenderListDataAsStream)
   + استخدام _الخاصية الجديدة ImageFieldsToTryRewriteToCdnUrls_ لتوفير قائمة بالحقول مفصولة بفواصل
   + يدعم حقول الارتباطات التشعبية وحقول PublishingImage
-+ SharePoint تسليمات الصور
++ تسليمات صور SharePoint
 
 يوضح الرسم التخطيطي التالي سير العمل عندما يتلقى SharePoint طلبا لصفحة تحتوي على أصول من أصل عام.
 
@@ -945,12 +945,12 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 ```
 
 > [!NOTE]
-> يجب استخدام خاصية سياق الصفحة لإنشاء البادئة بدلا من الترميز الثابت "https://publiccdn.sharepointonline.com". عنوان URL عرضة للتغيير ويجب عدم ترميزه برمجيا. إذا كنت تستخدم قوالب العرض مع Classic SharePoint Online، فيمكنك استخدام الخاصية "window._spPageContextInfo.publicCdnBaseUrl" في قالب العرض لبادئة عنوان URL. إذا كنت إطار عمل SharePoint أجزاء ويب SharePoint الحديثة والكلاسيكية، يمكنك استخدام الخاصية "this.context.pageContext.legacyPageContext.publicCdnBaseUrl". سيوفر هذا البادئة بحيث إذا تم تغييرها، فسيتم تحديث تنفيذك معها. كمثال على إطار عمل SharePoint، يمكن إنشاء URL باستخدام الخاصية "this.context.pageContext.legacyPageContext.publicCdnBaseUrl" + "/" + "host" + "/" + "relativeURL للعنصر". الرجاء مراجعة [استخدام CDN في التعليمات البرمجية من جانب العميل](https://youtu.be/IH1RbQlbhIA) التي تعد جزءا من [سلسلة أداء الموسم 1](https://aka.ms/sppnp-perfvideos)
+> يجب استخدام خاصية سياق الصفحة لإنشاء البادئة بدلا من الترميز الثابت "https://publiccdn.sharepointonline.com". عنوان URL عرضة للتغيير ويجب عدم ترميزه برمجيا. إذا كنت تستخدم قوالب العرض مع SharePoint Online الكلاسيكي، فيمكنك استخدام الخاصية "window._spPageContextInfo.publicCdnBaseUrl" في قالب العرض لبادئة عنوان URL. إذا كنت أجزاء ويب SPFx ل SharePoint الحديث والكلاسيكي، يمكنك استخدام الخاصية "this.context.pageContext.legacyPageContext.publicCdnBaseUrl". سيوفر هذا البادئة بحيث إذا تم تغييرها، فسيتم تحديث تنفيذك معها. كمثال على SPFx، يمكن إنشاء URL باستخدام الخاصية "this.context.pageContext.legacyPageContext.publicCdnBaseUrl" + "/" + "host" + "/" + "relativeURL للعنصر". الرجاء مراجعة [استخدام CDN في التعليمات البرمجية من جانب العميل](https://youtu.be/IH1RbQlbhIA) التي تعد جزءا من [سلسلة أداء الموسم 1](https://aka.ms/sppnp-perfvideos)
 
 
 ### <a name="using-assets-in-private-origins"></a>استخدام الأصول في الأصول الخاصة
 
-لا يلزم تكوين إضافي لاستخدام الأصول في الأصول الخاصة. SharePoint Online إعادة كتابة عناوين URL تلقائيا للأصول في الأصول الخاصة بحيث يتم تقديم طلبات هذه الأصول دائما من شبكة تسليم المحتوى. لا يمكنك إنشاء عناوين URL يدويا إلى أصول CDN في أصول خاصة لأن عناوين URL هذه تحتوي على رموز مميزة يجب إنشاؤها تلقائيا بواسطة SharePoint Online في وقت طلب الأصل.
+لا يلزم تكوين إضافي لاستخدام الأصول في الأصول الخاصة. يعيد SharePoint Online تلقائيا كتابة عناوين URL للأصول في الأصول الخاصة بحيث يتم تقديم طلبات هذه الأصول دائما من شبكة تسليم المحتوى. لا يمكنك إنشاء عناوين URL يدويا إلى أصول CDN في أصول خاصة لأن عناوين URL هذه تحتوي على رموز مميزة يجب إنشاؤها تلقائيا بواسطة SharePoint Online في الوقت المطلوب فيه الأصل.
 
 الوصول إلى الأصول في الأصول الخاصة محمي بالرموز المميزة التي تم إنشاؤها ديناميكيا استنادا إلى أذونات المستخدم إلى الأصل، مع التحذيرات الموضحة في الأقسام التالية. يجب أن يكون لدى المستخدمين حق الوصول **للقراءة** على الأقل إلى أصول شبكة تسليم المحتوى لعرض المحتوى.
 
@@ -962,7 +962,7 @@ https://publiccdn.sharepointonline.com/contoso.sharepoint.com/sites/site/library
 
 يتم منح الوصول إلى الأصول في الأصول الخاصة في Office 365 CDN بواسطة الرموز المميزة التي تم إنشاؤها بواسطة SharePoint Online. يتم تلقائيا منح المستخدمين الذين لديهم إذن بالوصول إلى المجلد أو المكتبة المعينة من قبل الأصل الرموز المميزة التي تسمح للمستخدم بالوصول إلى الملف استنادا إلى مستوى الأذونات الخاص بهم. رموز الوصول المميزة هذه صالحة لمدة 30 إلى 90 دقيقة بعد إنشائها للمساعدة في منع هجمات إعادة عرض الرمز المميز.
 
-بمجرد إنشاء الرمز المميز للوصول، يقوم SharePoint Online بإرجاع URI مخصص إلى العميل الذي يحتوي على معلمتي تخويل _(_ الرمز المميز لتخويل الحافة) _وoat_ (رمز تخويل الأصل). بنية كل رمز مميز هي _وقت انتهاء الصلاحية< بتنسيق وقت Epoch >__<'secure signature'>_. على سبيل المثال:
+بمجرد إنشاء رمز الوصول المميز، يقوم SharePoint Online بإرجاع URI مخصص إلى العميل الذي يحتوي على معلمتي تخويل _(_ الرمز المميز لتخويل الحافة) _وoat_ (رمز تخويل الأصل). بنية كل رمز مميز هي _وقت انتهاء الصلاحية< بتنسيق وقت Epoch >__<'secure signature'>_. على سبيل المثال:
 
 ```http
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -973,7 +973,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 #### <a name="item-level-permissions-are-not-supported-for-assets-in-private-origins"></a>الأذونات على مستوى العنصر غير معتمدة للأصول في الأصول الخاصة
 
-من المهم ملاحظة أن SharePoint Online لا يدعم أذونات على مستوى العنصر للأصول في الأصول الخاصة. على سبيل المثال، بالنسبة إلى ملف موجود في `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`، يمكن للمستخدمين الوصول الفعال إلى الملف وفقا للشروط التالية:
+من المهم ملاحظة أن SharePoint Online لا يدعم الأذونات على مستوى العنصر للأصول في الأصول الخاصة. على سبيل المثال، بالنسبة إلى ملف موجود في `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`، يمكن للمستخدمين الوصول الفعال إلى الملف وفقا للشروط التالية:
 
 |User  |الأذونات  |الوصول الفعال  |
 |---------|---------|---------|
@@ -995,13 +995,13 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 يمكنك أيضا استخدام أدوات مطور المستعرض لعرض عنوان URL لكل أصل على صفحة، أو استخدام أداة تتبع شبكة تابعة لجهة خارجية.
 
 > [!NOTE]
-> إذا كنت تستخدم أداة شبكة مثل Fiddler لاختبار الأصول الخاصة بك خارج عرض الأصل من صفحة SharePoint، يجب إضافة رأس المرجعي يدويا "مرجع: `https://yourdomain.sharepoint.com`" إلى طلب GET حيث يكون URL هو عنوان URL الجذر لمستأجر SharePoint Online.
+> إذا كنت تستخدم أداة شبكة مثل Fiddler لاختبار الأصول الخاصة بك خارج عرض الأصل من صفحة SharePoint، يجب إضافة رأس المرجعي يدويا "مرجع: `https://yourdomain.sharepoint.com`" إلى طلب GET حيث يكون URL هو URL الجذر لمستأجر SharePoint Online.
 
-لا يمكنك اختبار عناوين URL لشبكة تسليم المحتوى مباشرة في مستعرض ويب لأنه يجب أن يكون لديك مرجع قادم من SharePoint Online. ومع ذلك، إذا أضفت عنوان URL الخاص بأصل شبكة تسليم المحتوى إلى صفحة SharePoint ثم فتحت الصفحة في مستعرض، فسترى أصل شبكة تسليم المحتوى معروضا على الصفحة.
+لا يمكنك اختبار عناوين URL لشبكة تسليم المحتوى مباشرة في مستعرض ويب لأنه يجب أن يكون لديك مرجع قادم من SharePoint Online. ومع ذلك، إذا أضفت عنوان URL الخاص بأصل شبكة تسليم المحتوى إلى صفحة SharePoint ثم فتحت الصفحة في مستعرض، فسترى أصل CDN معروضا على الصفحة.
 
-لمزيد من المعلومات حول استخدام أدوات المطور في مستعرض Microsoft Edge، راجع [Microsoft Edge أدوات المطور](/microsoft-edge/devtools-guide).
+لمزيد من المعلومات حول استخدام أدوات المطور في مستعرض Microsoft Edge، راجع [أدوات مطور Microsoft Edge](/microsoft-edge/devtools-guide).
 
-لمشاهدة فيديو قصير مستضاف في [قناة youTube SharePoint Developer Patterns and Practices YouTube](https://aka.ms/sppnp-videos) يوضح كيفية التحقق من عمل شبكة تسليم المحتوى، يرجى مراجعة [التحقق من استخدام شبكة تسليم المحتوى وضمان الاتصال الأمثل بالشبكة](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5).
+لمشاهدة فيديو قصير مستضاف في [قناة SharePoint Developer Patterns and Practices YouTube](https://aka.ms/sppnp-videos) يوضح كيفية التحقق من عمل شبكة تسليم المحتوى، يرجى مراجعة [التحقق من استخدام شبكة تسليم المحتوى وضمان الاتصال الأمثل بالشبكة](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5).
 
 ### <a name="why-are-assets-from-a-new-origin-unavailable"></a>لماذا الأصول من أصل جديد غير متوفرة؟
 لن تكون الأصول في الأصول الجديدة متاحة للاستخدام على الفور، حيث يستغرق التسجيل وقتا لنشرها من خلال شبكة تسليم المحتوى وتحميل الأصول من الأصل إلى تخزين شبكة تسليم المحتوى. يعتمد الوقت المطلوب لتوفر الأصول في شبكة تسليم المحتوى على عدد الأصول وأحجام الملفات.

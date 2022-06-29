@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: تعرف على كيفية إعداد حسابات المسؤولين وحمايتها في Microsoft 365 Business Premium.
-ms.openlocfilehash: 1428ee6b447f3f841e7e8e9b77cfd82c2f7a6444
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: e20fa8f408668287065f6aa1e30490fd8e3c2fec
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319993"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489914"
 ---
 # <a name="protect-your-administrator-accounts-in-microsoft-365-business-premium"></a>حماية حسابات المسؤولين في Microsoft 365 Business Premium
 
@@ -36,7 +36,7 @@ ms.locfileid: "65319993"
 - كيفية إعداد حساب مسؤول إضافي لحالات الطوارئ.
 - كيفية حماية هذه الحسابات.
 
-عند التسجيل للحصول على Microsoft 365 وإدخال معلوماتك، فإنك تصبح تلقائيا المسؤول العام (يشار إليه أيضا باسم المسؤول العام). يتمتع المسؤول العام بالتحكم النهائي في حسابات المستخدمين وجميع الإعدادات الأخرى في مركز إدارة Microsoft ([https://admin.microsoft.com](https://admin.microsoft.com))، ولكن هناك العديد من أنواع مختلفة من حسابات المسؤولين بدرجات مختلفة من الوصول. راجع [حول أدوار المسؤول](/office365/admin/add-users/about-admin-roles) للحصول على معلومات حول مستويات الوصول المختلفة لكل نوع من أدوار المسؤول.
+عند التسجيل في Microsoft 365 وإدخال معلوماتك، تصبح تلقائيا المسؤول العام (يشار إليه أيضا باسم المسؤول العام). يتمتع المسؤول العام بالتحكم النهائي في حسابات المستخدمين وجميع الإعدادات الأخرى في مركز إدارة Microsoft ([https://admin.microsoft.com](https://admin.microsoft.com))، ولكن هناك العديد من أنواع مختلفة من حسابات المسؤولين بدرجات مختلفة من الوصول. راجع [حول أدوار المسؤول](/office365/admin/add-users/about-admin-roles) للحصول على معلومات حول مستويات الوصول المختلفة لكل نوع من أدوار المسؤول.
 
 ## <a name="create-additional-admin-accounts"></a>إنشاء حسابات إدارية إضافية
 
@@ -56,7 +56,7 @@ ms.locfileid: "65319993"
 
  1. أدخل معلومات **تراخيص المنتجات وقم بإعدادها** .
 
- 1. في **الإعدادات الاختيارية**، حدد دور المستخدم، بما في ذلك إضافة وصول مركز الإدارة إذا كان ذلك مناسبا.
+ 1. في **الإعدادات الاختيارية**، حدد دور المستخدم، بما في ذلك إضافة الوصول إلى مركز مسؤول إذا كان ذلك مناسبا.
 
     :::image type="content" source="media/m365bp-global-admin.png" alt-text="تحديد أدوار مستخدم جديدة.":::
 

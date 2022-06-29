@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 2cd146cfb0fe9b6af10f562bbf6eb00bc5bf9a3d
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 8cacce248561acc0e51fb40c6b5f48b33f6d2de7
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078394"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487203"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft Defender for Cloud Apps في Microsoft 365 Defender (معاينة)
 
@@ -73,7 +73,7 @@ ms.locfileid: "66078394"
 | التطبيقات المتصلة | المتبقية في مدخل Defender for Cloud Apps |
 
 > [!NOTE]
-> تتوفر تجربة Defender for Cloud Apps الجديدة في مدخل Microsoft 365 Defender حاليا لجميع المستخدمين المفصلين في [إدارة وصول المسؤول](/defender-cloud-apps/manage-admins)، باستثناء المستخدمين الذين لديهم الأدوار المحددة في [أدوار المسؤول المضمنة في Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
+> تتوفر تجربة Defender for Cloud Apps الجديدة في مدخل Microsoft 365 Defender حاليا لجميع المستخدمين المفصلين في [إدارة وصول المسؤول](/defender-cloud-apps/manage-admins)، باستثناء **مسؤول التطبيق/المثيل****، وإدارة مجموعة المستخدمين**، **والمسؤول العام ل Cloud Discovery**، **وإدارة تقرير Cloud Discovery**، كما هو محدد في [أدوار المسؤول المضمنة في Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
 
 ## <a name="whats-changed"></a>ما الذي تم تغييره
 

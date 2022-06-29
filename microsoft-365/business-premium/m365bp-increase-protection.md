@@ -1,12 +1,12 @@
 ---
-title: زيادة الحماية من التهديدات ل Microsoft 365 Business Premium
+title: زيادة الحماية من التهديدات Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -25,14 +25,14 @@ search.appverid:
 - BCS160
 - MET150
 description: الحصول على المساعدة في زيادة مستوى الحماية في Microsoft 365 Business Premium
-ms.openlocfilehash: dfbde871e31bd4c8e47fb9365ad4da7a9a1f6226
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: a4f76555fad2147477ab5bf9202c45123d1624f7
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893174"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486044"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>زيادة الحماية من التهديدات ل Microsoft 365 Business Premium
+# <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>زيادة الحماية من التهديدات Microsoft 365 Business Premium
 
 في هذا الهدف، يمكنك زيادة الحماية من التهديدات باستخدام Microsoft 365 Business Premium. من الضروري حماية شركتك من التصيد الاحتيالي والبرامج الضارة والتهديدات الأخرى. يتضمن هذا الهدف معلومات حول:
 
@@ -85,7 +85,7 @@ ms.locfileid: "65893174"
 
 لمعرفة المزيد حول نهج الأمان التي تم تعيينها مسبقا، راجع [ما هي نهج الأمان التي تم إعدادها مسبقا](../security/office-365-security/preset-security-policies.md#what-preset-security-policies-are-made-of).
 
-### <a name="how-do-i-assign-preset-security-policies-to-users"></a>كيف يمكنني تعيين نهج الأمان المعينة مسبقا للمستخدمين؟
+### <a name="how-do-i-assign-preset-security-policies-to-users"></a>كيف أعمل تعيين نهج أمان معينة مسبقا للمستخدمين؟
 
 > [!IMPORTANT]
 > قبل البدء، تأكد من تعيين أحد الأدوار التالية في Exchange Online (المضمن في اشتراكك):
@@ -94,7 +94,7 @@ ms.locfileid: "65893174"
 > - إدارة المؤسسة
 > - مسؤول الأمان
 > 
-> لمعرفة المزيد، راجع ["الأذونات" في أدوار المسؤولين في Exchange Online](/exchange/permissions-exo/permissions-exo) و ["حول](../admin/add-users/about-admin-roles.md)".
+> لمعرفة المزيد، راجع [الأذونات في Exchange Online](/exchange/permissions-exo/permissions-exo) [وأدوار المسؤولين.](../admin/add-users/about-admin-roles.md)
 
 لتعيين نهج أمان معينة مسبقا، اتبع الخطوات التالية:
 
@@ -117,7 +117,7 @@ ms.locfileid: "65893174"
 
    عند الانتهاء، حدد **"التالي**".
 
-4. **في حماية Defender ل Office 365، تنطبق على** الصفحة لتحديد المستلمين الداخليين الذين تنطبق النهج على (شروط المستلمين). حدد المستخدمين والمجموعات والمجالات تماما كما فعلت في الخطوة السابقة.
+4. **في Defender لـ Office 365 تنطبق الحماية على** الصفحة لتحديد المستلمين الداخليين الذين تنطبق النهج على (شروط المستلمين). حدد المستخدمين والمجموعات والمجالات تماما كما فعلت في الخطوة السابقة.
 
    عند الانتهاء، انقر فوق **"التالي**".
 
@@ -126,7 +126,7 @@ ms.locfileid: "65893174"
 > [!TIP]
 > لمعرفة المزيد حول تعيين نهج الأمان المعينة مسبقا، راجع المقالات التالية:
 > - [تعيين نهج الأمان المعينة مسبقا للمستخدمين](../security/office-365-security/preset-security-policies.md#assign-preset-security-policies-to-users)
-> - [الإعدادات الموصى بها لمحتوى البريد الإلكتروني والتعاون](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (يتضمن Microsoft 365 Business Premium Exchange Online Protection وMicrosoft Defender لخطة Office 365 1)
+> - [الإعدادات الموصى بها لمحتوى البريد الإلكتروني والتعاون](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (يتضمن Microsoft 365 Business Premium Exchange Online Protection والخطة Microsoft Defender لـ Office 365 1)
 
 ## <a name="create-custom-security-policies"></a>إنشاء نهج أمان مخصصة
 
@@ -166,7 +166,7 @@ ms.locfileid: "65893174"
 
 ### <a name="view-your-alert-policies"></a>عرض نهج التنبيه
 
-1. انتقل إلى مدخل الامتثال ل Microsoft Purview في [https://compliance.microsoft.com](https://compliance.microsoft.com) وسجل الدخول.
+1. انتقل إلى مدخل التوافق في Microsoft Purview وسجل [https://compliance.microsoft.com](https://compliance.microsoft.com) الدخول.
 
 2. في جزء التنقل، اختر **"النهج**"، ثم اختر **"نهج التنبيه**".
 
@@ -179,12 +179,12 @@ ms.locfileid: "65893174"
 
 ### <a name="how-to-view-alerts"></a>كيفية عرض التنبيهات
 
-استنادا إلى التنبيه المحدد، يمكنك عرض التنبيهات في مدخل Microsoft 365 Defender أو مدخل توافق Microsoft Purview.
+اعتمادا على التنبيه المحدد، يمكنك عرض التنبيهات الخاصة بك إما في مدخل Microsoft 365 Defender أو مدخل التوافق في Microsoft Purview.
 
 | نوع التنبيه  | ما يجب فعله  |
 |---------|---------|
-| تنبيه الأمان، مثل عندما ينقر المستخدم فوق ارتباط ضار، أو يتم الإبلاغ عن رسالة بريد إلكتروني كبرى ضارة أو تصيد احتيالي، أو يتم الكشف عن جهاز على أنه يحتوي على برامج ضارة     | انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> وضمن **تعاون & البريد الإلكتروني**، حدد **نهج التنبيه** **لقواعد &** >  النهج. بدلا من ذلك، يمكنك الانتقال مباشرة إلى <https://security.microsoft.com/alertpolicies>. |
-| تنبيه التوافق، مثل عندما يشارك المستخدم معلومات حساسة أو سرية (تنبيه منع فقدان البيانات) أو عندما يكون هناك حجم غير عادي لمشاركة الملفات الخارجية (تنبيه حوكمة المعلومات)    | انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل الامتثال ل Microsoft Purview</a>، ثم حدد **نهج تنبيه تنبيه** >  **النهج** > .  |
+| تنبيه الأمان، مثل عندما ينقر المستخدم فوق ارتباط ضار، أو يتم الإبلاغ عن رسالة بريد إلكتروني كبرى ضارة أو تصيد احتيالي، أو يتم الكشف عن جهاز على أنه يحتوي على برامج ضارة     | انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a> وضمن **تعاون & البريد الإلكتروني**، حدد نهج **التنبيه** **لقواعد &** >  النهج. بدلا من ذلك، يمكنك الانتقال مباشرة إلى <https://security.microsoft.com/alertpolicies>. |
+| تنبيه التوافق، مثل عندما يشارك المستخدم معلومات حساسة أو سرية (تنبيه منع فقدان البيانات) أو عندما يكون هناك حجم غير عادي لمشاركة الملفات الخارجية (تنبيه حوكمة المعلومات)    | انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>، **ثم حدد** > **نهج تنبيه النهج** > .  |
 
 لمزيد من المعلومات، راجع [عرض التنبيهات](../compliance/alert-policies.md#view-alerts).
 
@@ -192,9 +192,9 @@ ms.locfileid: "65893174"
 
 يمكنك منع الأشخاص في مؤسستك من مشاركة تقويماتهم. يمكنك أيضا إدارة مستوى التفاصيل التي يمكنهم مشاركتها. على سبيل المثال، يمكنك تقييد المشاركة في أوقات التوفر/الانشغال فقط.
 
-1. إعدادات Go [Org في مركز إدارة Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2053743) وتسجيل الدخول.
+1. إعدادات Go [Org في مركز مسؤولي Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2053743) وتسجيل الدخول.
 
-2. اختر **التقويم**، واختر ما إذا كان بإمكان الأشخاص في مؤسستك مشاركة تقويماتهم مع أشخاص من خارج Office 365 أو Exchange، أو مع أي شخص.
+2. اختر **"التقويم"**، واختر ما إذا كان بإمكان الأشخاص في مؤسستك مشاركة تقويماتهم مع أشخاص من خارج Office 365 أو Exchange، أو مع أي شخص.
 
    نوصي بإلغاء تحديد خيار **المشاركة الخارجية** .
 
@@ -210,7 +210,7 @@ ms.locfileid: "65893174"
 
    ![لقطة شاشة لمشاركة التوفر/الانشغال في التقويم مع أي شخص.](../media/sharefreebusy.png)
 
-إذا كان يسمح للمستخدمين بمشاركة تقويماتهم، فراجع [هذه الإرشادات](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) حول كيفية المشاركة من Outlook على الويب.
+إذا كان يسمح للمستخدمين بمشاركة تقويماتهم، فراجع [هذه الإرشادات](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) حول كيفية المشاركة من Outlook على ويب.
 
 ## <a name="next-steps"></a>الخطوات التالية
 

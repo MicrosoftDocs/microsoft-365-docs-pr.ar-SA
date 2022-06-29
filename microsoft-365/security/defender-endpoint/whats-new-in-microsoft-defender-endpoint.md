@@ -1,6 +1,6 @@
 ---
 title: ما الجديد في Microsoft Defender لنقطة النهاية؟
-description: اطلع على الميزات المتوفرة بشكل عام (GA) في أحدث إصدار من Microsoft Defender لنقطة النهاية، بالإضافة إلى ميزات الأمان في Windows 10 وخادم Windows.
+description: اطلع على الميزات المتوفرة بشكل عام (GA) في أحدث إصدار من Microsoft Defender لنقطة النهاية، بالإضافة إلى ميزات الأمان في Windows 10 وWindows Server.
 keywords: ما الجديد في Microsoft Defender لنقطة النهاية، و ga، والمتاحة بشكل عام، والقدرات، والمتاحة، والجديدة
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 282834b0c582690ff53c8361440bce21fc2d4d0b
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 9cc85dc768696169c8da164975278a661c755f94
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679265"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492414"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>ما الجديد في Microsoft Defender لنقطة النهاية؟
 
@@ -60,24 +60,27 @@ ms.locfileid: "65679265"
 - [ما الجديد في Defender لنقطة النهاية على iOS](ios-whatsnew.md)
 - [ما الجديد في Defender لنقطة النهاية على Linux](linux-whatsnew.md)
 
+## <a name="june-2022"></a>يونيو 2022
+- [يتكامل Defender for Servers Plan 2 الآن مع الحل الموحد MDE](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)<br>يمكنك الآن البدء في نشر الحل الحديث الموحد ل Windows Server 2012 R2 و2016 على الخوادم التي يغطيها Defender for Servers Plan 2 باستخدام زر واحد.
+
 ## <a name="may-2022"></a>مايو 2022
-- [الحماية من العبث macOS (معاينة)](tamperprotection-macos.md)<br>تساعد الحماية من العبث بالبيانات على منع الإزالة غير المصرح بها Microsoft Defender لنقطة النهاية على macOS.
+- [الحماية من العبث ب macOS (معاينة)](tamperprotection-macos.md)<br>تساعد الحماية من العبث بالبيانات على منع الإزالة غير المصرح بها Microsoft Defender لنقطة النهاية على macOS.
 
 - [إضافة أجهزة وحدة التحكم بالمجال - تحسين مختبر التقييم (معاينة)](evaluation-lab.md#add-a-domain-controller-preview)<br>أضف وحدة تحكم بالمجال لتشغيل سيناريوهات معقدة مثل الحركة الجانبية والهجمات متعددة المستويات عبر أجهزة متعددة.
 
 ## <a name="april-2022"></a>أبريل 2022
-- [الإعداد المحدث وتماثل الميزات ل Windows Server 2012 R2 و Windows Server 2016)](configure-server-endpoints.md)<br/> حزمة الحلول الموحدة الجديدة متاحة الآن بشكل عام وتجعل من السهل إلحاق الخوادم عن طريق إزالة التبعيات وخطوات التثبيت. بالإضافة إلى ذلك، تأتي حزمة الحلول الموحدة هذه مع العديد من تحسينات الميزات الجديدة.
+- [تحديث الإلحاق وتماثل الميزات ل Windows Server 2012 R2 وWindows Server 2016)](configure-server-endpoints.md)<br/> حزمة الحلول الموحدة الجديدة متاحة الآن بشكل عام وتجعل من السهل إلحاق الخوادم عن طريق إزالة التبعيات وخطوات التثبيت. بالإضافة إلى ذلك، تأتي حزمة الحلول الموحدة هذه مع العديد من تحسينات الميزات الجديدة.
 - التكامل مع النفق. يمكن Microsoft Defender لنقطة النهاية على iOS الآن التكامل مع Microsoft Tunnel، وهو حل بوابة VPN لتمكين الأمان والاتصال في تطبيق واحد. كانت هذه الميزة متوفرة مسبقا على Android فقط. [معرفة المزيد](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## <a name="january-2022"></a>يناير 2022
 
 - تحسينات مختبر التقييم: يمكنك الآن إضافة أجهزة Windows 11 وLinux إلى المختبر. 
 
-- يتوفر الآن التهديد إدارة الثغرات الأمنية لنظامي التشغيل Android وiOS بشكل عام. [تعرّف على المزيد](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+- تتوفر الآن إدارة المخاطر والثغرات الأمنية لنظامي التشغيل Android وiOS بشكل عام. [تعرّف على المزيد](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
 ## <a name="december-2021"></a>ديسمبر 2021
 
-- يمكن أن يساعد التهديد إدارة الثغرات الأمنية في تحديد الثغرات الأمنية Log4j في التطبيقات والمكونات. [تعرّف على المزيد](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
+- يمكن أن تساعد إدارة المخاطر والثغرات الأمنية في تحديد الثغرات الأمنية Log4j في التطبيقات والمكونات. [تعرّف على المزيد](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
 
 - اكتشاف أجهزة IoT (معاينة): أصبح [اكتشاف الجهاز](device-discovery.md) الآن قادرا على مساعدتك في العثور على أجهزة IoT غير المدارة المتصلة بشبكة شركتك. يمنحك ذلك طريقة عرض موحدة واحدة لمخزون IoT إلى جانب بقية أجهزة تكنولوجيا المعلومات (محطات العمل والخوادم والأجهزة المحمولة).
 
@@ -85,13 +88,13 @@ ms.locfileid: "65679265"
 
 ## <a name="november-2021"></a>نوفمبر 2021
 
-- [إدارة تكوين الأمان](security-config-management.md) <br/> إمكانية للأجهزة التي لا تتم إدارتها بواسطة إدارة نقاط النهاية من Microsoft، إما Microsoft Intune أو Microsoft Endpoint Configuration Manager، لتلقي تكوينات الأمان ل Microsoft Defender مباشرة من إدارة نقاط النهاية.
+- [إدارة تكوين الأمان](security-config-management.md) <br/> إمكانية للأجهزة التي لا تديرها إدارة نقاط النهاية Microsoft، إما Microsoft Intune أو Configuration Manager نقطة نهاية Microsoft، لتلقي تكوينات الأمان ل Microsoft Defender مباشرة من إدارة نقاط النهاية.
 
 - تحسينات على الدعم عبر الأنظمة الأساسية.
 
 ## <a name="october-2021"></a>أكتوبر 2021
 
-- [تحديث الإلحاق وتماثل الميزات لخادم Windows 2012 R2 وخادم Windows 2016 (معاينة)](configure-server-endpoints.md)<br/> تسهل حزمة الحلول الموحدة الجديدة إلحاق الخوادم عن طريق إزالة التبعيات وخطوات التثبيت. بالإضافة إلى ذلك، تأتي حزمة الحلول الموحدة هذه مع العديد من تحسينات الميزات الجديدة.
+- [تحديث الإعداد وتماثل الميزات ل Windows Server 2012 R2 وWindows Server 2016 (معاينة)](configure-server-endpoints.md)<br/> تسهل حزمة الحلول الموحدة الجديدة إلحاق الخوادم عن طريق إزالة التبعيات وخطوات التثبيت. بالإضافة إلى ذلك، تأتي حزمة الحلول الموحدة هذه مع العديد من تحسينات الميزات الجديدة.
 
 - تمت إضافة دعم Windows 11 إلى Microsoft Defender لنقطة النهاية Microsoft 365 Defender.
 
@@ -134,7 +137,7 @@ ms.locfileid: "65679265"
 
 
 ## <a name="march-2021"></a>مارس 2021
-- [إدارة الحماية من العبث باستخدام مدخل Microsoft 365 Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> يمكنك إدارة إعدادات الحماية من العبث في Windows 10 و Windows Server 2016 و Windows Server 2019 و Windows Server 2022 باستخدام أسلوب يسمى *إرفاق المستأجر*.
+- [إدارة الحماية من العبث باستخدام مدخل Microsoft 365 Defender](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> يمكنك إدارة إعدادات الحماية من العبث في Windows 10 وWindows Server 2016 وWindows Server 2019 وWindows Server 2022 باستخدام أسلوب يسمى *إرفاق المستأجر*.
 
 
 ## <a name="january-2021"></a>2021 يناير

@@ -17,17 +17,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- adminvideo
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: تعرف على المتطلبات والاعتبارات اللازمة للانتقال إلى Microsoft 365 للأعمال.
-ms.openlocfilehash: a5f777a411f82de30c1d7dc69f07f92eadbbedce
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 29b72079d877e8a7974b2e31b5b2dc65341da912
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317461"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490830"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>التخطيط لإعداد Microsoft 365 للأعمال
 
@@ -53,12 +54,12 @@ ms.locfileid: "65317461"
 
 ## <a name="what-happens-when-you-run-the-microsoft-365-setup-wizard"></a>ماذا يحدث عند تشغيل معالج إعداد Microsoft 365
 
-يرشدك معالج الإعداد خلال تثبيت تطبيقات Microsoft 365 على الكمبيوتر، وإضافة مجالك والتحقق منه، وإضافة مستخدمين وتعيين تراخيص لهم، وتوصيل مجالك.
+يرشدك معالج الإعداد خلال تثبيت تطبيقات Microsoft 365 على الكمبيوتر، وإضافة مجالك والتحقق منه، وإضافة المستخدمين وتعيين التراخيص لهم، وتوصيل مجالك.
 
 > [!NOTE]
-> إذا كنت بحاجة إلى [تعيين أدوار المسؤولين في Microsoft 365 للأعمال](../add-users/assign-admin-roles.md) للمستخدمين الذين تضيفهم في المعالج، يمكنك القيام بذلك لاحقا على صفحة **"المستخدمون**". 
+> إذا كنت بحاجة إلى [تعيين أدوار المسؤولين في Microsoft 365 للأعمال](../add-users/assign-admin-roles.md) إلى المستخدمين الذين تضيفهم في المعالج، يمكنك القيام بذلك لاحقا على صفحة **"المستخدمون** ". 
   
-إذا لم تكمل معالج الإعداد، يمكنك إكمال مهام الإعداد في أي وقت من [admin](https://go.microsoft.com/fwlink/p/?linkid=2024339) **centerSetup** > . من هنا يمكنك ترحيل البريد الإلكتروني وجهات الاتصال من خدمة بريد إلكتروني أخرى، وتغيير مجال حساب المسؤول، وإدارة معلومات الفوترة، وإضافة مستخدمين أو إزالتهم، وإعادة تعيين كلمات المرور، والقيام بوظائف عمل أخرى. لمزيد من المعلومات حول الاختلافات بين معالج الإعداد وصفحة **الإعداد**، راجع [الاختلافات بين معالج إعداد Microsoft 365 وصفحة الإعداد](o365-setup-wizard-and-setup-page.md).
+إذا لم تكمل معالج الإعداد، يمكنك إكمال مهام الإعداد في أي وقت من **إعداد** [مركز](https://go.microsoft.com/fwlink/p/?linkid=2024339) >  الإدارة. من هنا يمكنك ترحيل البريد الإلكتروني وجهات الاتصال من خدمة بريد إلكتروني أخرى، وتغيير مجال حساب المسؤول، وإدارة معلومات الفوترة، وإضافة مستخدمين أو إزالتهم، وإعادة تعيين كلمات المرور، والقيام بوظائف عمل أخرى. لمزيد من المعلومات حول الاختلافات بين معالج الإعداد وصفحة **الإعداد** ، راجع [الاختلافات بين معالج إعداد Microsoft 365 وصفحة الإعداد](o365-setup-wizard-and-setup-page.md).
 
 إذا واجهتك مشكلة في أي وقت، فاتصل بنا. [نحن هنا لمساعدتك!](../../business-video/get-help-support.md).
   
@@ -66,33 +67,33 @@ ms.locfileid: "65317461"
 
 هناك بعض السيناريوهات التي تتضمن إما ترحيل البيانات أو المستخدمين من بيئات محلية أو إعداد نظام مختلط يتضمن مزامنة الدليل. إذا كنت في أي من الفئتين، فاتبع الإرشادات الواردة في هذه المقالات:
   
-- لإعداد مزامنة الدليل مع Active Directory محلي، راجع [إعداد مزامنة الدليل Microsoft 365](../../enterprise/set-up-directory-synchronization.md)، وفهم نماذج الهوية المختلفة في Microsoft 365، اقرأ [نشر البنية الأساسية للهوية Microsoft 365](../../enterprise/deploy-identity-solution-overview.md).
+- لإعداد مزامنة الدليل مع Active Directory محلي، راجع [إعداد مزامنة الدليل ل Microsoft 365](../../enterprise/set-up-directory-synchronization.md)، وفهم نماذج الهوية المختلفة في Microsoft 365، اقرأ [نشر البنية الأساسية للهوية ل Microsoft 365](../../enterprise/deploy-identity-solution-overview.md).
 
-- لإعداد Exchange مختلط، يمكن العثور هنا على مجموعة كاملة من الإرشادات التي ترشدك عبر جميع الطرق المختلفة لإعداد تبادل مختلط (بما في ذلك إعداد سجلات DNS): [Exchange Server مساعد النشر](/exchange/exchange-deployment-assistant)
+- لإعداد Exchange مختلط، يمكن العثور هنا على مجموعة كاملة من الإرشادات التي ترشدك عبر جميع الطرق المختلفة لإعداد تبادل مختلط (بما في ذلك إعداد سجلات DNS): [Exchange Server Deployment Assistant](/exchange/exchange-deployment-assistant)
 
-- لإعداد SharePoint مختلط، لا سيما البحث المختلط وميزات الموقع، راجع ["البحث المختلط" في SharePoint](/SharePoint/hybrid/hybrid-search-in-sharepoint).
+- لإعداد SharePoint مختلط، لا سيما ميزات البحث والموقع المختلطة، راجع ["البحث المختلط" في SharePoint](/SharePoint/hybrid/hybrid-search-in-sharepoint).
 
-## <a name="move-to-microsoft-365-all-at-once-or-in-stages"></a>الانتقال إلى Microsoft 365 الكل مرة واحدة أو على مراحل
+## <a name="move-to-microsoft-365-all-at-once-or-in-stages"></a>الانتقال إلى Microsoft 365 كلها مرة واحدة أو على مراحل
 
-- **هل تريد نقل مؤسستك إلى Microsoft 365 الكل مرة واحدة؟** إذا كان الأمر كذلك، فخطط لنقل مجالك إلى Microsoft 365 على الفور. ابدأ بتشغيل معالج إعداد Microsoft 365؛ سيطالبك بإعداد مجالك.
+- **هل تريد نقل مؤسستك إلى Microsoft 365 كلها مرة واحدة؟** إذا كان الأمر كذلك، فخطط لنقل مجالك إلى Microsoft 365 على الفور. ابدأ بتشغيل معالج إعداد Microsoft 365؛ سيطالبك بإعداد مجالك.
 
 - **هل تريد الانتقال إلى Microsoft 365 تدريجيا؟** إذا كنت تريد الانتقال إلى Microsoft 365 على مراحل، فتخطى تشغيل معالج إعداد Microsoft 365 وفكر في اعتماد ميزات Microsoft 365 بالترتيب التالي:
 
     1. [أضف الموظفين إلى Microsoft 365](../add-users/add-users.md) حتى يتمكنوا من تنزيل تطبيقات Office وتثبيتها.
 
-    2. [قم بتنزيل تطبيقات Office وتثبيتها](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) لاستخدام Word Excel PowerPoint على الكمبيوتر والأجهزة.
+    2. [قم بتنزيل تطبيقات Office وتثبيتها](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) لاستخدام Word وExcel وPowerPoint على الكمبيوتر والأجهزة.
 
-    3. [إعداد Microsoft Teams](#plan-for-teams) لاستخدامها في اجتماعاتك.
+    3. [قم بإعداد Microsoft Teams](#plan-for-teams) لاستخدامه في اجتماعاتك.
 
-    4. [انقل المحتوى إلى موقع تخزين سحابي Microsoft 365](set-up-file-storage-and-sharing.md) (مواقع فريق OneDrive أو SharePoint).
+    4. [انقل المحتوى إلى التخزين السحابي في Microsoft 365](set-up-file-storage-and-sharing.md) (مواقع فريق OneDrive أو SharePoint).
 
     5. عندما تصبح جاهزا، في [مركز الإدارة](https://go.microsoft.com/fwlink/p/?linkid=2024339)، حدد **"إعداد** " في جزء التنقل الأيمن، واستخدم صفحة **"الإعداد"** [لنقل مجالك وبريدك الإلكتروني](add-domain.md).
 
 ## <a name="check-that-your-devices-meet-system-requirements"></a>تحقق من أن أجهزتك تفي بمتطلبات النظام
 
-يمكن لكل شخص في مؤسستك تثبيت مجموعة تطبيقات Office 2016 (Word، Excel، PowerPoint، وما إلى ذلك) على ما يصل إلى خمسة أجهزة كمبيوتر شخصية وأجهزة Mac. راجع متطلبات نظام التشغيل والكمبيوتر لتثبيت [مجموعات Office 2016](https://go.microsoft.com/fwlink/?LinkId=534827) للأعمال.
+يمكن لكل شخص في مؤسستك تثبيت مجموعة تطبيقات Office 2016 (Word وExcel وPowerPoint وما إلى ذلك) على ما يصل إلى خمسة أجهزة كمبيوتر شخصية وأجهزة Mac. راجع متطلبات نظام التشغيل والكمبيوتر لتثبيت [مجموعات Office 2016](https://go.microsoft.com/fwlink/?LinkId=534827) للأعمال.
   
-يمكن تثبيت تطبيقات الأجهزة المحمولة على أجهزة iOS وAndroid Windows. يمكنك العثور على معلومات حول دعم الجهاز المحمول والمستعرض في [متطلبات النظام Office](https://go.microsoft.com/fwlink/?LinkId=534827).
+يمكن تثبيت تطبيقات الأجهزة المحمولة على أجهزة iOS وAndroid وWindows. يمكنك العثور على معلومات حول دعم الأجهزة المحمولة والمستعرض في [متطلبات النظام ل Office](https://go.microsoft.com/fwlink/?LinkId=534827).
   
 ## <a name="plan-for-email"></a>التخطيط للبريد الإلكتروني
 
@@ -102,7 +103,7 @@ ms.locfileid: "65317461"
   
 إذا كنت ستستخدم Microsoft 365 للبريد الإلكتروني:
   
-- لنقل عنوان البريد الإلكتروني الخاص بالعمل (مثل *rob\@ contoso.com*) من خدمة بريد إلكتروني أخرى إلى Microsoft 365، تحتاج إلى توجيه البريد الخاص بك ليتم تسليمه إلى علبة بريد Microsoft 365 الجديدة. يمكنك القيام بذلك عن طريق تحديد **ترحيل بيانات المستخدمين على** صفحة **الإعداد** ، حيث نرشدك خلال التحديثات التي تحتاج إلى إجراؤها على مضيف المجال، خطوة بخطوة.
+- لنقل عنوان البريد الإلكتروني الخاص بالعمل (مثل *rob\@contoso.com*) من خدمة بريد إلكتروني أخرى إلى Microsoft 365، تحتاج إلى توجيه بريدك ليتم تسليمه إلى علبة بريد Microsoft 365 الجديدة. يمكنك القيام بذلك عن طريق تحديد **ترحيل بيانات المستخدمين على** صفحة **الإعداد** ، حيث نرشدك خلال التحديثات التي تحتاج إلى إجراؤها على مضيف المجال، خطوة بخطوة.
 
 - بعد تحديث مضيف المجال، ستدخل التغييرات حيز التنفيذ عادة في ساعة أو ساعتين فقط. ولكن كن على علم بأن تحديث التغييرات عبر الإنترنت قد يستغرق أحيانا ما يصل إلى 72 ساعة.
 
@@ -119,34 +120,34 @@ ms.locfileid: "65317461"
 
 ## <a name="plan-for-file-storage-and-migration"></a>التخطيط لتخزين الملفات وترحيلها
 
-يوفر Microsoft 365 التخزين السحابي للأفراد والمؤسسات الصغيرة والمؤسسات. للحصول على إرشادات حول مكان تخزين المستندات، راجع [أين يمكنك تخزين المستندات في Microsoft 365](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
+يوفر Microsoft 365 مساحة تخزين سحابية للأفراد والمؤسسات الصغيرة والمؤسسات. للحصول على إرشادات حول ما يجب تخزينه، راجع [أين يمكنك تخزين المستندات في Microsoft 365](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
   
 - **يمكنك نقل مئات الملفات** إلى [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) أو إلى [موقع فريق SharePoint](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242). يمكنك تحميل 100 ملف في كل مرة. تجنب تحميل الملفات التي يزيد حجمها عن 2 غيغابايت، وهو الحد الأقصى لحجم الملف بشكل افتراضي.
   
-- **إذا كنت تريد نقل عدة آلاف من الملفات** إلى Microsoft 365 التخزين، فراجع [SharePoint Online Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits). نوصي باستخدام أداة ترحيل أو التفكير في توظيف [شريك](https://go.microsoft.com/fwlink/?linkid=391089) لمساعدتك في الترحيل. للحصول على معلومات حول كيفية ترحيل عدد كبير من الملفات، راجع [SharePoint Online ودليل مستخدم الترحيل OneDrive](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).
+- **إذا كنت تريد نقل عدة آلاف من الملفات** إلى تخزين Microsoft 365، فراجع [حدود SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits). نوصي باستخدام أداة ترحيل أو التفكير في توظيف [شريك](https://go.microsoft.com/fwlink/?linkid=391089) لمساعدتك في الترحيل. للحصول على معلومات حول كيفية ترحيل عدد كبير من الملفات، راجع [SharePoint Online ودليل مستخدم ترحيل OneDrive](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets).
   
-## <a name="plan-for-teams"></a>التخطيط Teams
+## <a name="plan-for-teams"></a>التخطيط للفرق
 
-يمكنك استخدام Microsoft Teams لإجراء مكالمات إلى أشخاص آخرين في مؤسستك مشتركين في اشتراكك. على سبيل المثال، إذا كانت مؤسستك تضم 10 أشخاص، فيمكنك الاتصال ببعضكم البعض وإرسال رسائل فورية باستخدام Teams دون أي إعداد خاص. لمزيد من المعلومات، راجع [بدء استخدام Microsoft Teams](/MicrosoftTeams/get-started-with-teams-quick-start).
+يمكنك استخدام Microsoft Teams لإجراء مكالمات مع أشخاص آخرين في مؤسستك ممن هم ضمن اشتراكك. على سبيل المثال، إذا كانت مؤسستك تضم 10 أشخاص، فيمكنك الاتصال ببعضك البعض وإرسال رسائل فورية إليه باستخدام Teams دون أي إعداد خاص. لمزيد من المعلومات، راجع [بدء استخدام Microsoft Teams](/MicrosoftTeams/get-started-with-teams-quick-start).
 
 بالنسبة إلى المؤسسات الكبيرة أو إذا كنت تبدأ من عمليات نشر Skype for Business أو محلية أو مختلطة، فراجع [كيفية طرح Microsoft Teams](/MicrosoftTeams/how-to-roll-out-teams).
   
 ## <a name="plan-for-integration-with-active-directory-or-other-software"></a>التخطيط للتكامل مع Active Directory أو برامج أخرى
 
-- **هل تريد التكامل مع Active Directory محلي؟** يمكنك دمج Active Directory محلي مع Microsoft 365 باستخدام الاتصال Azure Active Directory. للحصول على الإرشادات، راجع [إعداد مزامنة الدليل Microsoft 365](../../enterprise/set-up-directory-synchronization.md).
+- **هل تريد التكامل مع Active Directory محلي؟** يمكنك دمج Active Directory محلي مع Microsoft 365 باستخدام Azure Active Directory Connect. للحصول على الإرشادات، راجع [إعداد مزامنة الدليل ل Microsoft 365](../../enterprise/set-up-directory-synchronization.md).
   
-- **هل تريد دمج Microsoft 365 مع البرامج التي أنشأتها شركات أخرى؟** إذا كنت بحاجة إلى دمج Microsoft 365 مع برامج أخرى في مؤسستك، نوصيك [بتوظيف شريك](https://go.microsoft.com/fwlink/?linkid=391089) لمساعدتك في النشر الخاص بك.
+- **هل تريد دمج Microsoft 365 مع البرامج التي أنشأتها شركات أخرى؟** إذا كنت بحاجة إلى دمج Microsoft 365 مع برامج أخرى في مؤسستك، نوصيك [بتوظيف شريك](https://go.microsoft.com/fwlink/?linkid=391089) لمساعدتك في النشر.
   
 ## <a name="do-you-want-someone-to-help-you-set-up-microsoft-365"></a>هل تريد أن يساعدك أحد الأشخاص في إعداد Microsoft 365؟
 
 - **إذا كان لديك أقل من 50 موظفا:**
 
   - **اطلب المساعدة وسنتصل بك**. بعد شراء Microsoft 365، يمكنك الوصول إلى مركز الإدارة (لا تحتاج إلى تشغيل الإعداد للوصول إليه). في أسفل مركز الإدارة، حدد **"هل تحتاج إلى مساعدة"؟** وصف مشكلتك، وسنتصل بك. 
-  - **اتصل [بقسم دعم Microsoft 365 للأعمال](../../business-video/get-help-support.md) مع أسئلتك**. نحن هنا لمساعدتك! 
-  - **فكر في توظيف [شريك Microsoft](https://go.microsoft.com/fwlink/?linkid=391089)**. إذا كنت قصيرة في الوقت المحدد، أو لديك متطلبات متقدمة (مثل نقل آلاف الملفات إلى Microsoft 365 التخزين السحابي أو التكامل مع برامج أخرى)، يمكن أن يكون الشريك ذي الخبرة مساعدة كبيرة. 
+  - **اتصل بدعم [Microsoft 365 للأعمال](../../business-video/get-help-support.md) مع أسئلتك**. نحن هنا لمساعدتك! 
+  - **فكر في توظيف [شريك Microsoft](https://go.microsoft.com/fwlink/?linkid=391089)**. إذا كنت قصيرة في الوقت المحدد، أو كان لديك متطلبات متقدمة (مثل نقل آلاف الملفات إلى التخزين السحابي ل Microsoft 365 أو التكامل مع برامج أخرى)، يمكن أن يكون الشريك ذي الخبرة مساعدة كبيرة. 
 
-- **إذا كان لديك أكثر من 50 موظفا**، يتوفر [FastTrack Onboarding Center](https://go.microsoft.com/fwlink/?LinkId=517115) لمساعدتك في عملية النشر.
+- **إذا كان لديك أكثر من 50 موظفا**، يتوفر ["مركز إلحاق FastTrack](https://go.microsoft.com/fwlink/?LinkId=517115) " لمساعدتك في النشر.
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[أفضل الممارسات لتأمين Microsoft 365 لخطط الأعمال](../security-and-compliance/secure-your-business-data.md)
+[أفضل الممارسات لتأمين خطط Microsoft 365 للأعمال](../security-and-compliance/secure-your-business-data.md)
