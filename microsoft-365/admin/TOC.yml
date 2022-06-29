@@ -14,7 +14,7 @@
         - name: التخطيط لإعداد Microsoft 365 للأعمال
           href: setup/plan-your-setup.md
         - name: تعرّف على المزيد وقم بالتسجيل للحصول على Microsoft 365 Business Premium.
-          href: ../business-premium/index.md
+          href: ../business-premium/get-microsoft-365-business-premium.md
         - name: تعرّف على المزيد وقم بالتسجيل للحصول على Microsoft 365 Business Standard.
           items:
             - name: تعرّف على المزيد وقم بالتسجيل للحصول على Microsoft 365 Business Standard.
@@ -50,7 +50,7 @@
         - name: تثبيت تطبيقات Office
           href: setup/install-applications.md
         - name: إعداد أجهزة Windows
-          href: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
+          href: /microsoft-365/business-premium/m365bp-set-up-windows-devices
         - name: إعداد الأجهزة المحمولة
           href: setup/set-up-mobile-devices.md
         - name: إعداد البريد Outlook لـ Microsoft 365 للأعمال (فيديو)
@@ -346,8 +346,6 @@
           href: manage/idle-session-timeout-web-apps.md
         - name: تمكين المصادقة الحديثة Office 2013
           href: security-and-compliance/enable-modern-authentication.md
-        - name: التهديدات التي كشف عنها برنامج الحماية من الفيروسات من Microsoft Defender
-          href: /microsoft-365/business-premium/m365bp-review-threats-take-action
         - name: دليل لتوافق القانون العام لحماية القانون العام (GDPR)
           href: security-and-compliance/gdpr-compliance.md
     - name: إدارة الأجهزة وبيانات التطبيق
