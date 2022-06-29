@@ -1,12 +1,12 @@
 ---
-title: كيفية الحصول على Microsoft 365 for Campaigns
+title: الحصول على Microsoft 365 للحملات
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: احصل على Microsoft 365 for Campaigns حتى تتمكن من حماية حملتك من تهديدات الأمان عبر الإنترنت للبريد الإلكتروني والبيانات والاتصالات.
-ms.openlocfilehash: ac4f4c14acbcb93feac4142b7d57c20a1a21fe2d
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 993a9796a4e6a264b26231c495661cbba453941c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65892416"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493676"
 ---
 # <a name="how-to-get-microsoft-365-for-campaigns"></a>كيفية الحصول على Microsoft 365 for Campaigns
 
-تعد الحملات والجهات السياسية في الولايات المتحدة مؤهلة للحصول على أسعار خاصة ل Microsoft 365 Business Premium. يتوفر هذا التسعير الخاص حاليا ل:
+الحملات والجهات السياسية في الولايات المتحدة مؤهلة للحصول على أسعار خاصة Microsoft 365 Business Premium. يتوفر هذا التسعير الخاص حاليا ل:
 
 - الجهات السياسية على المستوى الوطني في الولايات المتحدة وكندا ونيوزيلندا
 - الحملات السياسية الوطنية أو الفيدرالية في الولايات المتحدة ونيوزيلندا
@@ -46,7 +46,7 @@ ms.locfileid: "65892416"
 إذا كانت حملتك أو النيابة السياسية مؤهلة، فإن Microsoft 365 for Campaigns هي الخطة الأقل تكلفة المتوفرة من خلال Microsoft. راجع [التسجيل في Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).  
 
 > [!TIP]
-> إذا لم تكن مؤهلا للحصول على أسعار خاصة، فإن Microsoft 365 Business Premium لا يزال الطريقة الأكثر فعالية من حيث التكلفة للحصول على أمان شامل لبيئة التعاون. اطلع [على كيفية الحصول على Microsoft 365 Business Premium](get-microsoft-365-business-premium.md).
+> إذا لم تكن مؤهلا للحصول على أسعار خاصة، Microsoft 365 Business Premium لا تزال الطريقة الأكثر فعالية من حيث التكلفة للحصول على أمان شامل لبيئة التعاون. اطلع [على كيفية الحصول على Microsoft 365 Business Premium](get-microsoft-365-business-premium.md).
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>ما الذي يتضمنه Microsoft 365 for Campaigns؟
 
@@ -55,9 +55,9 @@ ms.locfileid: "65892416"
 - **حماية هوية المستخدم**: تأكد من أن المستخدمين هم من يقولون إنهم عند تسجيل الدخول لإرسال بريد إلكتروني أو للوصول إلى الملفات (المصادقة متعددة العوامل).
 - **حماية المعلومات الحساسة**: حماية المعلومات الحساسة لمراقبة المعلومات التي تتم مشاركتها خارج مؤسستك (منع فقدان البيانات).
 - **حماية الأجهزة المحمولة**: حماية البيانات على الأجهزة المحمولة (نهج حماية تطبيقات الأجهزة المحمولة).
-- **الحماية من المحتوى الضار**: منع الوصول إلى المحتوى الضار عن طريق مسح مرفقات البريد الإلكتروني (Defender ل Office 365).
+- **الحماية من المحتوى الضار**: منع الوصول إلى المحتوى الضار عن طريق مسح مرفقات البريد الإلكتروني (Defender لـ Office 365).
 - **حماية كلمات المرور**: تعيين كلمات المرور إلى عدم انتهاء الصلاحية أبدا، وهو أكثر أمانا ويساعد على منع توقف العمل (نهج كلمة المرور).
-- **الوصول إلى برنامج AccountGuard**: Microsoft AccountGuard هي خدمة أمان تقدم دون أي تكلفة إضافية للعملاء في المساحة السياسية. تم تصميم الخدمة لإعلام ومساعدة هؤلاء العملاء المستهدفين للغاية على حماية أنفسهم من تهديدات الأمان عبر الإنترنت عبر حسابات البريد الإلكتروني الخاصة بهم في Microsoft التنظيمية والشخصية. عرض المزيد من المعلومات في [Microsoft AccountGuard](https://www.microsoftaccountguard.com/).
+- **الوصول إلى برنامج AccountGuard**: Microsoft AccountGuard هي خدمة أمنية تقدم دون أي تكلفة إضافية للعملاء في الفضاء السياسية. تم تصميم الخدمة لإعلام ومساعدة هؤلاء العملاء المستهدفين للغاية على حماية أنفسهم من تهديدات الأمان عبر الإنترنت عبر حسابات البريد الإلكتروني الخاصة بهم في Microsoft التنظيمية والشخصية. عرض المزيد من المعلومات في [Microsoft AccountGuard](https://www.microsoftaccountguard.com/).
 
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>ما التكلفة، ومن يحتاج إليها، وما هو الالتزام؟
 
@@ -67,7 +67,7 @@ ms.locfileid: "65892416"
 
 لا يوجد حد أدنى من الالتزام بالوقت عند التسجيل في Microsoft 365 for Campaigns. يمكنك الدفع شهريا مقابل التراخيص التي تحتاجها والتوقف عن استخدام الخدمة في أي وقت.
 
-## <a name="how-do-i-qualify-for-special-pricing"></a>كيف يمكنني التأهل للحصول على أسعار خاصة؟
+## <a name="how-do-i-qualify-for-special-pricing"></a>كيف أعمل مؤهل للحصول على أسعار خاصة؟
 
 1. انتقل إلى [aka.ms/m365forcampaigns](https://aka.ms/m365forcampaigns/) وقدم بعض التفاصيل حول مؤسستك. تساعدنا التفاصيل التي تقدمها على التحقق من أنك تمثل حملة أو حفلة سياسية على المستوى الوطني في الولايات المتحدة. لا يوجد التزام عند إكمال هذا النموذج.
 

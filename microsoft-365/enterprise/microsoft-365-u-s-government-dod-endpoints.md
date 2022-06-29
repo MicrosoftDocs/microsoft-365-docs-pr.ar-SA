@@ -3,7 +3,7 @@ title: Office 365 نقاط نهاية DOD لحكومة الولايات المت
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/04/2022
+ms.date: 06/01/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ f1.keywords:
 description: يتطلب Office 365 الاتصال بالإنترنت. يجب أن تكون نقاط النهاية أدناه قابلة للوصول للعملاء الذين يستخدمون Office 365 خطط DoD لحكومة الولايات المتحدة فقط.
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9f245db1d2fe8531facd5f2f1f8fcca032e404ff
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: cebd2c7e4ceefa52785c4c21163666d12091fe6c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65678931"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493454"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 نقاط نهاية DoD لحكومة الولايات المتحدة
 
@@ -35,21 +35,21 @@ ms.locfileid: "65678931"
 
 يتطلب Office 365 الاتصال بالإنترنت. يجب أن تكون نقاط النهاية أدناه قابلة للوصول للعملاء الذين يستخدمون Office 365 خطط DoD لحكومة الولايات المتحدة فقط.
   
-**Office 365 نقاط النهاية:** Office 365 [جميع أنحاء العالم (بما في ذلك سحابة القطاع الحكومي)](urls-and-ip-address-ranges.md) \| [التي تديرها 21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| *Office 365 Office 365* \| حكومة [الولايات المتحدة سحابة القطاع الحكومي High](microsoft-365-u-s-government-gcc-high-endpoints.md)
+**Office 365 نقاط النهاية:** Office 365 [جميع أنحاء العالم (بما في ذلك GCC)](urls-and-ip-address-ranges.md) \| [المشغلة بواسطة 21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| *Office 365 Office 365 Government DOD* \| [Office 365 U.S.Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)
 
 <br>
 ****
 
 |ملاحظات|تنزيل|
 |---|---|
-|**تاريخ التحديث الأخير:** 05/04/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [اشتراك في سجلّ التغييرات](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**تنزيل:** القائمة الكاملة [بتنسيق JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
+|**تاريخ التحديث الأخير:** 06/01/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [اشتراك في سجلّ التغييرات](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**تنزيل:** القائمة الكاملة [بتنسيق JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|
 |
 
 ابدأ ب [إدارة نقاط نهاية Office 365](managing-office-365-endpoints.md) لفهم توصياتنا لإدارة اتصال الشبكة باستخدام هذه البيانات. يتم تحديث بيانات نقاط النهاية كما تقتضي الحاجة في بداية كل شهر باستخدام عناوين IP وعناوين URL الجديدة المنشورة قبل 30 يوما من تنشيطها. يتيح هذا للعملاء الذين ليس لديهم تحديثات تلقائية حتى الآن إكمال عملياتهم قبل أن يكون الاتصال الجديد مطلوبا. قد يتم أيضا تحديث نقاط النهاية خلال الشهر إذا لزم الأمر لمعالجة تصعيد الدعم أو أحداث الأمان أو المتطلبات التشغيلية الفورية الأخرى. يتم إنشاء كافة البيانات المعروضة في هذه الصفحة أدناه من خدمات ويب المستندة إلى REST. إذا كنت تستخدم برنامج نصي أو جهاز شبكة للوصول إلى هذه البيانات، فيجب الانتقال إلى [خدمة ويب](microsoft-365-ip-web-service.md) مباشرة.
 
 تسرد بيانات نقطة النهاية أدناه متطلبات الاتصال من جهاز المستخدم إلى Office 365. لا يتضمن اتصالات الشبكة من Microsoft إلى شبكة عملاء، تسمى أحيانا اتصالات الشبكة المختلطة أو الواردة. لمزيد من المعلومات، راجع [نقاط النهاية الإضافية غير المضمنة في خدمة ويب](additional-office365-ip-addresses-and-urls.md).
 
-يتم تجميع نقاط النهاية في أربع مناطق خدمة. يمكن تحديد مناطق الخدمة الثلاث الأولى بشكل مستقل للاتصال. منطقة الخدمة الرابعة هي تبعية شائعة (تسمى Microsoft 365 المشتركة Office) ويجب أن يكون لديها اتصال بالشبكة دائما.
+يتم تجميع نقاط النهاية في أربع مناطق خدمة. يمكن تحديد مناطق الخدمة الثلاث الأولى بشكل مستقل للاتصال. منطقة الخدمة الرابعة هي تبعية شائعة (تسمى Microsoft 365 Common وOffice) ويجب أن يكون لديها دائما اتصال بالشبكة.
 
 أعمدة البيانات المعروضة هي:
 
@@ -57,7 +57,7 @@ ms.locfileid: "65678931"
 
 - **الفئة** : تظهر ما إذا كانت مجموعة نقاط النهاية مصنفة ك "تحسين" أو "سماح" أو "افتراضي". يمكنك القراءة حول هذه الفئات وإرشادات إدارتها في [https://aka.ms/pnc](./microsoft-365-network-connectivity-principles.md). يسرد هذا العمود أيضا مجموعات نقاط النهاية المطلوبة للاتصال بالشبكة. بالنسبة لمجموعات نقاط النهاية غير المطلوبة للاتصال بالشبكة، نوفر ملاحظات في هذا الحقل للإشارة إلى الوظائف التي قد تكون مفقودة إذا تم حظر مجموعة نقاط النهاية. إذا كنت تقوم باستبعاد منطقة خدمة بأكملها، فإن مجموعات نقاط النهاية المدرجة كمطلوبة لا تتطلب الاتصال.
 
-- **ER** : هذا **نعم** إذا كانت مجموعة نقاط النهاية مدعومة عبر Azure ExpressRoute مع بادئات مسار Office 365. يتوافق مجتمع BGP الذي يتضمن بادئات المسار المعروضة مع منطقة الخدمة المدرجة. عندما تكون ER **لا**، فهذا يعني أن ExpressRoute غير معتمد لمجموعة نقاط النهاية هذه. ومع ذلك، لا يجب افتراض أنه لم يتم الإعلان عن مسارات لمجموعة نقاط نهاية حيث يكون ER **لا**. إذا كنت تخطط لاستخدام Azure AD الاتصال، فاقرأ [قسم الاعتبارات الخاصة](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) للتأكد من أن لديك تكوين Azure AD الاتصال المناسب.
+- **ER** : هذا **نعم** إذا كانت مجموعة نقاط النهاية مدعومة عبر Azure ExpressRoute مع بادئات مسار Office 365. يتوافق مجتمع BGP الذي يتضمن بادئات المسار المعروضة مع منطقة الخدمة المدرجة. عندما تكون ER **لا**، فهذا يعني أن ExpressRoute غير معتمد لمجموعة نقاط النهاية هذه. ومع ذلك، لا يجب افتراض أنه لم يتم الإعلان عن مسارات لمجموعة نقاط نهاية حيث يكون ER **لا**. إذا كنت تخطط لاستخدام Azure AD Connect، فاقرأ [قسم الاعتبارات الخاصة](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) للتأكد من أن لديك تكوين الاتصال Azure AD المناسب.
 
 - **عناوين**: تسرد أسماء مجالات FQDN أو أحرف البدل ونطاقات عناوين IP لمجموعة نقاط النهاية. لاحظ أن نطاق عنوان IP يكون بتنسيق CIDR وقد يتضمن العديد من عناوين IP الفردية في الشبكة المحددة.
 

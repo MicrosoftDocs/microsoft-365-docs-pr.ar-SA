@@ -1,12 +1,12 @@
 ---
-title: الحصول على Microsoft 365 Business Premium
+title: تعرّف على المزيد وقم بالتسجيل للحصول على Microsoft 365 Business Premium.
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -23,28 +23,28 @@ search.appverid:
 - BCS160
 - MET150
 description: احصل على Microsoft 365 Business Premium حتى تتمكن من حماية شركتك من تهديدات الأمان عبر الإنترنت للأجهزة والبريد الإلكتروني والبيانات والاتصالات.
-ms.openlocfilehash: 6df4c10e7c302f95eba00206767a533a8f23db67
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ad58a0578872cf7fcf38bec09cc383450c76a5ff
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100126"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493731"
 ---
-# <a name="how-to-get-microsoft-365-business-premium"></a>كيفية الحصول على Microsoft 365 Business Premium
+# <a name="how-to-sign-up-for-microsoft-365-business-premium"></a>كيفية التسجيل للحصول على Microsoft 365 Business Premium
 
-عندما تكون مستعدا للحصول على Microsoft 365 Business Premium، لديك العديد من الخيارات. يمكنك:
+عندما تكون مستعدا للتسجيل للحصول على Microsoft 365 Business Premium، لديك العديد من الخيارات. يمكنك:
 
-- [جرب Microsoft 365 Business Premium أو اشترها بنفسك](#get-microsoft-365-business-premium-on-your-own)
+- [جرب Microsoft 365 Business Premium أو اشترها بنفسك](#sign-up-for-microsoft-365-business-premium-on-your-own)
 - [العمل مع موفر حلول](#work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium)
 
 > [!TIP]
-> إذا كنت تبحث عن Microsoft 365 للحملات الإعلانية، فراجع [كيفية الحصول على Microsoft 365 للحملات](get-microsoft-365-campaigns.md).
+> إذا كنت تبحث عن Microsoft 365 for Campaigns، فراجع [كيفية الحصول على Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md).
 
-## <a name="get-microsoft-365-business-premium-on-your-own"></a>الحصول على Microsoft 365 Business Premium بنفسك
+## <a name="sign-up-for-microsoft-365-business-premium-on-your-own"></a>التسجيل للحصول على Microsoft 365 Business Premium بنفسك
 
 1. تفضل بزيارة [صفحة منتج Microsoft 365 Business Premium](https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
-2. اختر تجربة اشتراكك أو شراؤه. راجع [تجربة اشتراك Microsoft 365 للأعمال أو شرائه](../commerce/try-or-buy-microsoft-365.md). في [موقع منتجات Microsoft 365](https://www.aka.ms/office365signup)، اختر **Microsoft 365 Business Premium**.
+2. اختر تجربة اشتراكك أو شراؤه. راجع [تجربة اشتراك Microsoft 365 للأعمال أو شرائه](../commerce/try-or-buy-microsoft-365.md). على [موقع منتجات Microsoft 365](https://www.aka.ms/office365signup)، اختر **Microsoft 365 Business Premium**.
 
 3. بعد التسجيل للحصول على Microsoft 365 Business Premium، ستتلقى رسالة بريد إلكتروني تتضمن ارتباطا لتسجيل الدخول وبدء الاستخدام. تابع لإعداد [Microsoft 365 Business Premium](m365bp-setup.md).
 
@@ -62,4 +62,4 @@ ms.locfileid: "65100126"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-[إعداد Microsoft 365 Business Premium](m365bp-setup.md)
+[قم بإعداد Microsoft 365 Business Premium](m365bp-setup.md)

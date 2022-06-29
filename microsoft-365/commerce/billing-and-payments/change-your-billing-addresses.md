@@ -1,5 +1,5 @@
 ---
-title: تغيير عناوين الفوترة
+title: تغيير عناوين فاتورتك
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -19,93 +19,93 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: تعرف على كيفية تحديث عناوين الفوترة أو عنوان البريد الإلكتروني المستخدم لتلقي إعلامات الفوترة Microsoft 365 للأعمال.
+description: تعرف على كيفية تحديث عناوين الفوترة أو عنوان البريد الإلكتروني المستخدم لتلقي إعلامات الفوترة ل Microsoft 365 للأعمال.
 ms.date: 01/24/2022
-ms.openlocfilehash: 3c03315612b4f3a65dc39d2dcabee639bc578edd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3421cdfa1951d4bcde91d8b0eb97612054980ced
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63568317"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493364"
 ---
-# <a name="change-your-billing-addresses"></a>تغيير عناوين الفوترة
+# <a name="change-your-microsoft-365-for-business-billing-addresses"></a>تغيير عناوين فوترة Microsoft 365 للأعمال
 
-تحتوي الفاتورة أو الفاتورة على ثلاثة عناوين:
+تحتوي فاتورتك أو فاتورتك على ثلاثة عناوين:
   
-- **عنوان مباع إلى** اسم الشركة وعنوانها، كما هو موضح في ملف تعريف مؤسستك.
+- **عنوان مباع إلى** اسم شركتك وعنوانها، كما هو موضح في ملف تعريف مؤسستك.
 
-- **عنوان الفوترة إلى** عنوان قسم الفوترة، عادة ما يكون هو نفس عنوان "مباع **إلى** ".
+- **عنوان الفاتورة إلى** عنوان قسم الفوترة، عادة ما يكون هو نفسه عنوان **"المباع إلى** ".
 
-- **عنوان استخدام الخدمة** العنوان الذي يتم فيه استخدام الخدمة، عادة ما يكون هو نفس عنوان "مباع **إلى** ". إذا كانت مؤسستك تستخدم مستخدمين عن بعد أو مكاتب متعددة، فاستخدم العنوان الذي يتواجد فيه معظم المستخدمين.
+- **عنوان استخدام الخدمة** العنوان الذي يتم فيه استخدام الخدمة، عادة ما يكون هو نفسه العنوان **المباع إلى** . إذا كان لدى مؤسستك مستخدمين بعيدين أو مكاتب متعددة، فاستخدم العنوان الذي يوجد فيه معظم المستخدمين.
 
-في معظم الحالات، تكون هذه العناوين هي نفسها. إذا كنت بحاجة إلى تغيير عنوان واحد أو أكثر، يمكنك القيام بذلك. يمكنك أيضا توفير عنوان بريد إلكتروني بديل لتلقي إعلامات الفوترة وتغيير عنوان البريد الإلكتروني البديل للمسؤولين الآخرين.
+في معظم الحالات، تكون هذه العناوين هي نفسها. إذا كنت بحاجة إلى تغيير عنوان واحد أو أكثر من العناوين، يمكنك القيام بذلك. يمكنك أيضا توفير عنوان بريد إلكتروني بديل لتلقي إعلامات الفوترة وتغيير عنوان البريد الإلكتروني البديل للمسؤولين الآخرين.
 
-لمعرفة المزيد حول الفاتورة أو الفاتورة، راجع [عرض](view-your-bill-or-invoice.md) الفاتورة أو الفاتورة [وفهم الفاتورة أو الفاتورة](understand-your-invoice2.md).
+لمعرفة المزيد حول فاتورتك أو فاتورتك، راجع [عرض فاتورتك أو فاتورتك](view-your-bill-or-invoice.md) [وفهم فاتورتك أو فاتورتك](understand-your-invoice2.md).
 
-## <a name="change-your-sold-to-address"></a>تغيير عنوان Sold-To الإلكتروني
+## <a name="change-your-sold-to-address"></a>تغيير عنوان Sold-To
 
 ::: moniker range="o365-worldwide"
 
-1. في مركز الإدارة، انتقل إلى **صفحة حسابات** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**الفوترة**</a> .
+1. في مركز الإدارة، انتقل إلى  \> صفحة <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**حسابات الفوترة**</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">مركز الإدارة،</a> انتقل إلى **صفحة حسابات** > **الفوترة** .
+1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">مركز الإدارة</a>، انتقل إلى  > صفحة **حسابات الفوترة**.
 
 ::: moniker-end
 
 2. حدد **تحرير معلومات حساب الفوترة**.
 
-3. قم بتحديث معلومات مؤسستك، ثم حدد **حفظ**.
+3. قم بتحديث معلومات المؤسسة، ثم حدد **"حفظ**".
   
-## <a name="change-your-bill-to-address"></a>تغيير عنوان Bill-To الإلكتروني
+## <a name="change-your-bill-to-address"></a>تغيير عنوان Bill-To
 
 ::: moniker range="o365-worldwide"
 
-1. في مركز الإدارة، انتقل إلى **صفحة طرق دفع** \> الفوترة.<a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank"></a>
+1. في مركز الإدارة، انتقل إلى صفحة <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">طرق دفع</a> **الفوترة**\>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">مركز الإدارة،</a> انتقل إلى **صفحة طرق دفع** > الفوترة.
+1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">مركز الإدارة</a>، انتقل إلى صفحة **طرق دفع** **الفوترة**>.
 
 ::: moniker-end
 
 2. حدد بطاقة الائتمان أو الحساب البنكي الذي تريد تغييره.
 
-3. في صفحة **تفاصيل طريقة الدفع** ، حدد **تحرير**.
+3. في صفحة **تفاصيل طريقة الدفع** ، حدد **"تحرير**".
 
-4. قم بتحديث عنوان الفوترة، ثم حدد **حفظ** \> **تم**.
+4. قم بتحديث عنوان الفوترة، ثم حدد **"حفظ** \> **تم**".
 
 ## <a name="change-your-service-usage-address"></a>تغيير عنوان استخدام الخدمة
 
 ::: moniker range="o365-worldwide"
 
-1. في مركز الإدارة، انتقل إلى **صفحة فوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">منتجاتك</a> .
+1. في مركز المسؤولين، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">منتجاتك</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. في مركز الإدارة، انتقل إلى **صفحة فوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">منتجاتك</a> .
+1. في مركز المسؤولين، انتقل إلى صفحة **الفوترة** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">منتجاتك</a>.
 
-    إذا كنت تستخدم Office 365 21Vianet في الصين، فانظر عرض الفاتورة أو الحصول على [Fapiaos for Office 365 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+    إذا كنت تستخدم Office 365 المشغلة بواسطة 21Vianet في الصين، فراجع [عرض فاتورتك أو الحصول على Fapiaos Office 365 المشغلة بواسطة 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
 
-2. على علامة **التبويب** المنتجات، حدد الاشتراك الذي تريد تغييره.
+2. في علامة التبويب **المنتجات**، حدد الاشتراك الذي تريد تغييره.
 
-3. في صفحة تفاصيل الاشتراك، في المقطع عنوان **استخدام** الخدمة، حدد **تحرير عنوان استخدام الخدمة**.
+3. في صفحة تفاصيل الاشتراك، في قسم **عنوان استخدام الخدمة** ، حدد **"تحرير عنوان استخدام الخدمة**".
 
-4. في الجزء **تحرير عنوان استخدام الخدمة** ، قم بتحديث عنوانك، ثم حدد **حفظ**.
+4. في جزء **"تحرير عنوان استخدام الخدمة** "، قم بتحديث عنوانك، ثم حدد **"حفظ**".
 
 
-## <a name="related-content"></a>المحتوى ذي الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
-[عرض الفاتورة أو الفاتورة](view-your-bill-or-invoice.md) (مقالة)\
-[فهم الفاتورة أو الفاتورة](understand-your-invoice2.md) (مقالة)\
-[الدفع مقابل اشتراكك](pay-for-your-subscription.md) (مقالة)\
-[الاشتراكات والمفوترة - تعليمات المسؤول](../index.yml) (صفحة الارتباط)
+[عرض الفاتورة](view-your-bill-or-invoice.md) (مقالة)\
+[فهم فاتورتك أو فاتورتك](understand-your-invoice2.md) (مقالة)\
+[دفع قيمة اشتراكك](pay-for-your-subscription.md) (مقال)\
+[الاشتراكات والفوترة - تعليمات مسؤول](../index.yml) (صفحة الارتباط)

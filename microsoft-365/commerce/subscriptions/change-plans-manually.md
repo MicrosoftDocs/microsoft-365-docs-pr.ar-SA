@@ -1,5 +1,5 @@
 ---
-title: تغيير Microsoft 365 لخطط الأعمال يدويا
+title: تغيير خطط Microsoft 365 للأعمال يدويا
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -20,14 +20,14 @@ search.appverid: MET150
 description: قم بتغيير الاشتراكات يدويا عن طريق شراء اشتراك جديد والتأكد من أن الاشتراكين مدرجان ونشطان.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: d7969821cceb0864ac2ee20674e7aa67d8a12e39
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 5e2d9e3da47c8d9c86e3e0b6d3d0b648c6016509
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101587"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493542"
 ---
-# <a name="change-plans-manually"></a>تغيير الخطط يدويا
+# <a name="manually-change-microsoft-plans"></a>تغيير خطط Microsoft يدويا
 
 ## <a name="step-1-decide-how-to-change-plans"></a>الخطوة 1: تحديد كيفية تغيير الخطط
 
@@ -50,7 +50,7 @@ ms.locfileid: "66101587"
 
 او
 
-**شراء اشتراك وتراخيص جديدة:** اتبع الخطوات الواردة في [شراء Microsoft 365 آخر لاشتراك الأعمال](../try-or-buy-microsoft-365.md) لشراء اشتراك جديد.
+**شراء اشتراك وتراخيص جديدة:** اتبع الخطوات الواردة في [شراء اشتراك آخر في Microsoft 365 للأعمال](../try-or-buy-microsoft-365.md) لشراء اشتراك جديد.
 
 تأكد من شراء اشتراك لنفس المؤسسة التي يوجد بها المستخدمون الآن. على سبيل المثال، تحقق من عناوين البريد الإلكتروني للمستخدمين الذين تريد نقلهم. إذا كانت عناوين البريد الإلكتروني الخاصة بهم تتضمن \@contoso.com، فيجب عليك شراء اشتراك جديد contoso.com.
 قم بتضمين ترخيص لكل مستخدم تريد نقله.
@@ -80,7 +80,7 @@ ms.locfileid: "66101587"
 
 ## <a name="step-4-reassign-licenses"></a>الخطوة 4: إعادة تعيين التراخيص
 
-عند الترقية من خطة Office 365 إلى خطة Microsoft 365، يجب تغيير تعيينات الترخيص لكافة المستخدمين. لا يتم تعيين التراخيص تلقائيا عند تغيير الخطط يدويا.
+عند الترقية من خطة Office 365 إلى خطة Microsoft 365، يجب تغيير تعيينات الترخيص لجميع المستخدمين. لا يتم تعيين التراخيص تلقائيا عند تغيير الخطط يدويا.
 
 ### <a name="reassign-a-license-for-one-user"></a>إعادة تعيين ترخيص لمستخدم واحد
 

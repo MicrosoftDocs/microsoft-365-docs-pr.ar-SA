@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d5d4917e2464964da819af0a06f0b8e4883dfea9
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: c94830e4f9dbfe16a8dfafba35aecb5a36efddf5
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783876"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493432"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>تكوين Microsoft Defender لنقطة النهاية لدفق أحداث التتبع المتقدم إلى حساب التخزين الخاص بك
 
@@ -28,7 +28,7 @@ ms.locfileid: "64783876"
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
@@ -42,7 +42,7 @@ ms.locfileid: "64783876"
 
 1. سجل الدخول إلى [Microsoft 365 Defender](https://security.microsoft.com) **كمسؤول عام *أو** _*_مسؤول الأمان_**.
 
-2. انتقل إلى [صفحة إعدادات تصدير البيانات](https://security.microsoft.com/interoperability/dataexport) في Microsoft 365 Defender.
+2. انتقل إلى [صفحة إعدادات تصدير البيانات](https://security.microsoft.com/settings/mtp_settings/raw_data_export) في Microsoft 365 Defender.
 
 3. انقر فوق **"إضافة إعدادات تصدير البيانات**".
 
