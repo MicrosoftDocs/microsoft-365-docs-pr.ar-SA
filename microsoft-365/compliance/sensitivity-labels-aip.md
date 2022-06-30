@@ -1,5 +1,5 @@
 ---
-title: اختر تسمية مضمنة ل Microsoft Purview حماية البيانات لتطبيقات Office عبر الوظيفة الإضافية حماية البيانات Azure (AIP)
+title: اختر حماية البيانات في Microsoft Purview التسمية المضمنة لتطبيقات Office عبر وظيفة Azure حماية البيانات الإضافية (AIP)
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -17,26 +17,26 @@ search.appverid:
 - MOE150
 - MET150
 description: عند استخدام عميل التسمية الموحد ل Azure حماية البيانات (AIP)، فهم مزايا استخدام التسمية المضمنة لتطبيقات Office بدلا من الوظيفة الإضافية AIP.
-ms.openlocfilehash: 0540f3b1b78b728a7c49e0851696d20a04137bb7
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: b924c9763d29e76f711a8e414c0a2086e09a81d8
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043055"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556845"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>لماذا اختر تسمية مضمنة عبر الوظيفة الإضافية AIP لتطبيقات Office
 
->*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-عند استخدام [تسميات الحساسية](sensitivity-labels.md) في Microsoft 365 Apps على أجهزة الكمبيوتر Windows، لديك خيار استخدام التسمية المضمنة في تطبيقات Office، أو وظيفة إضافية من [عميل التسمية الموحدة ل Azure حماية البيانات (AIP](/azure/information-protection/rms-client/aip-clientv2)). 
+عند استخدام [أوصاف الحساسية](sensitivity-labels.md) في Microsoft 365 Apps على أجهزة الكمبيوتر التي تعمل بنظام التشغيل Windows، يكون لديك خيار استخدام التسمية المضمنة في تطبيقات Office، أو وظيفة إضافية من [عميل التسمية الموحد ل Azure حماية البيانات (AIP](/azure/information-protection/rms-client/aip-clientv2)). 
 
-تشكل التسمية المضمنة حجر الزاوية [لنشر حماية معلومات Microsoft Purview](information-protection-solution.md) لأن تقنية التسمية هذه تمتد عبر الأنظمة الأساسية (Windows، macOS، وiOS، وAndroid، والويب)، وكذلك عبر تطبيقات Microsoft وخدماتها وما بعدها. كما تم تصميم التسمية المضمنة للعمل مع قدرات Microsoft Purview الأخرى، مثل تصنيف البيانات ومنع فقدان بيانات Microsoft Purview (DLP).
+تشكل التسمية المضمنة حجر الزاوية [لنشر حماية معلومات Microsoft Purview](information-protection-solution.md) لأن تقنية التسمية هذه تمتد عبر الأنظمة الأساسية (Windows وmacOS وiOS وAndroid والويب)، وكذلك عبر تطبيقات Microsoft وخدماتها وما بعدها. كما تم تصميم التسمية المضمنة للعمل مع قدرات Microsoft Purview الأخرى، مثل تصنيف البيانات ومنع فقدان بيانات Microsoft Purview (DLP).
 
-نظرا لأن التسميات المضمنة لا تستخدم وظيفة إضافية Office، فإنها تستفيد من المزيد من الاستقرار والأداء الأفضل. كما أنها تدعم أحدث ميزات Microsoft Purview، مثل المصنفات المتقدمة.
+نظرا لأن التسميات المضمنة لا تستخدم وظيفة Office الإضافية، فإنها تستفيد من المزيد من الاستقرار والأداء الأفضل. كما أنها تدعم أحدث ميزات Microsoft Purview، مثل المصنفات المتقدمة.
 
-بشكل افتراضي، يتم إيقاف تشغيل التسمية المضمنة في Office لتطبيقات Windows عند تثبيت عميل AIP. يمكنك تغيير هذا السلوك الافتراضي باستخدام الإرشادات الموجودة في القسم التالي، [كيفية تعطيل الوظيفة الإضافية AIP لاستخدام التسمية المضمنة لتطبيقات Office](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
+بشكل افتراضي، يتم إيقاف تشغيل التسمية المضمنة في تطبيقات Office for Windows عند تثبيت عميل AIP. يمكنك تغيير هذا السلوك الافتراضي باستخدام الإرشادات الموجودة في القسم التالي، [كيفية تعطيل الوظيفة الإضافية AIP لاستخدام التسمية المضمنة لتطبيقات Office](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
 
 عند الاحتفاظ بعميل AIP مثبتا ولكن معطلا في تطبيقات Office، تظل الإمكانات الأخرى لعميل AIP مدعومة:
 
@@ -57,11 +57,11 @@ ms.locfileid: "66043055"
 الآن بعد أن أصبح عميل AIP في [وضع الصيانة](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613)، لا نوصي باستخدام الوظيفة الإضافية AIP لتطبيقات Office للأسباب التالية:
 
 - لن يتم دعم أي ميزات تسمية جديدة.
-- الوظائف الإضافية أقل استقرارا لأنها قد تتعارض مع الوظائف الإضافية الأخرى التي يمكن أن تؤدي إلى تعليق Office التطبيقات أو تعطلها أو تعطيلها تلقائيا.
+- تعد الوظائف الإضافية أقل استقرارا لأنها قد تتعارض مع الوظائف الإضافية الأخرى التي قد تؤدي إلى تعليق تطبيقات Office أو تعطلها أو تعطيلها تلقائيا.
 - كوظيفة إضافية، يتم تشغيلها ببطء أكبر، ويمكن للمستخدمين تعطيلها لتجاوز متطلبات التسمية.
 - تتطلب أي إصلاحات أخطاء إعادة تثبيت عميل azure حماية البيانات.
 - تختلف تجربة التسمية للمستخدمين قليلا عن التسميات المضمنة التي يمتلكها المستخدمون على أجهزتهم الأخرى (macOS وiOS وAndroid) وعند استخدامهم Office على الويب. يمكن أن يزيد هذا الاختلاف من تكاليف التدريب والدعم.
-- هناك بالفعل ميزات تسمية Office جديدة تم [إصدارها والتي يتم دعمها فقط بواسطة التسمية المضمنة](#features-supported-only-by-built-in-labeling-for-office-apps)، وتزداد القائمة طوال الوقت.
+- هناك بالفعل ميزات جديدة لتسمية Office تم [إصدارها والتي يتم دعمها فقط بواسطة التسميات المضمنة](#features-supported-only-by-built-in-labeling-for-office-apps)، وتزداد القائمة طوال الوقت.
 
 استخدم الوظيفة الإضافية AIP لتطبيقات Windows Office فقط إذا كنت قد قمت بالفعل بنشرها للمستخدمين وتحتاج إلى وقت ترحيلها إلى التسمية المضمنة. أو يحتاج المستخدمون إلى ميزة غير معتمدة بواسطة التسمية المضمنة. استخدم [معلومات تماثل الميزات](#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps) في هذه الصفحة لمساعدتك على تحديد هذه الميزات.
 
@@ -70,7 +70,7 @@ ms.locfileid: "66043055"
 > [!NOTE]
 > توجد العديد من ميزات التسمية الجديدة في التخطيط أو التطوير، لذا توقع أن تنمو القائمة الموجودة في هذا القسم بمرور الوقت.
 
-يتم دعم بعض الميزات فقط من خلال التسمية المضمنة لتطبيقات Office، ولن تكون مدعومة من قبل الوظيفة الإضافية AIP. وتشمل هذه الخطوات ما يلي:
+يتم دعم بعض الميزات فقط من خلال التسمية المضمنة لتطبيقات Office، ولن يتم دعمها بواسطة الوظيفة الإضافية AIP. وتشمل هذه الخطوات ما يلي:
 
 - للتسمية التلقائية والموصى بها:
     - الوصول إلى خدمات التصنيف الذكية التي تتضمن [مصنفات قابلة للتدريب](classifier-learn-about.md) [ومطابقة البيانات الدقيقة (EDM)](sit-learn-about-exact-data-match-based-sits.md) [والكيانات المسماة](named-entities-learn.md)
@@ -91,9 +91,9 @@ ms.locfileid: "66043055"
 
 ## <a name="how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps"></a>كيفية تعطيل الوظيفة الإضافية AIP لاستخدام التسمية المضمنة لتطبيقات Office
 
-عند تثبيت عميل AIP لتوسيع التسمية إلى ما هو أبعد من تطبيقات Office ولكنك تريد منع تحميل الوظيفة الإضافية للعميل في تطبيقات Office، استخدم قائمة الإعدادات نهج المجموعة **للوظائف الإضافية المدارة** كما هو موثق في ["لا توجد وظائف إضافية" تم تحميلها بسبب إعدادات نهج المجموعة لبرامج Office 2013 و Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
+عند تثبيت عميل AIP لتوسيع التسمية إلى ما هو أبعد من تطبيقات Office ولكنك تريد منع تحميل الوظيفة الإضافية للعميل في تطبيقات Office، استخدم نهج المجموعة إعداد **قائمة الوظائف الإضافية المدارة** كما هو موثق في [أي وظائف إضافية تم تحميلها بسبب إعدادات نهج المجموعة لبرامج Office 2013 وOffice 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
-بالنسبة لتطبيقات Windows Office التي تدعم التسمية المضمنة، استخدم التكوين Microsoft Word 2016، Excel 2016، PowerPoint 2016، Outlook 2016، وحدد المعرفات البرمجية التالية (ProgID) لعميل AIP، وعين الخيار إلى **0: الوظيفة الإضافية معطلة دائما (محظورة)**
+بالنسبة لتطبيقات Windows Office التي تدعم التسمية المضمنة، استخدم التكوين ل Microsoft Word 2016 Excel 2016 PowerPoint 2016 Outlook 2016، وحدد المعرفات البرمجية التالية (ProgID) لعميل AIP، وعين الخيار إلى **0: تكون الوظيفة الإضافية معطلة دائما (محظورة)**
 
 |Application  |Progid  |
 |---------|---------|
@@ -103,25 +103,25 @@ ms.locfileid: "66043055"
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-نشر هذا الإعداد باستخدام نهج المجموعة، أو باستخدام [خدمة نهج السحابة Office](/DeployOffice/overview-office-cloud-policy-service).
+نشر هذا الإعداد باستخدام نهج المجموعة، أو باستخدام [خدمة نهج السحابة في Office](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!IMPORTANT]
-> إذا كنت تستخدم إعداد نهج المجموعة **، فاستخدم ميزة الحساسية في Office لتطبيق أوصاف الحساسية وعرضها** وقمت بتعيينها إلى **1**، فهناك بعض الحالات التي قد لا تزال فيها الوظيفة الإضافية AIP محملة في تطبيقات Office. يؤدي حظر تحميل الوظيفة الإضافية في كل تطبيق إلى منع حدوث ذلك.
+> إذا كنت تستخدم إعداد نهج المجموعة **، فاستخدم ميزة الحساسية في Office لتطبيق تسميات الحساسية وعرضها** وقمت بتعيينها إلى **1**، فهناك بعض الحالات التي قد لا تزال فيها الوظيفة الإضافية AIP محملة في تطبيقات Office. يؤدي حظر تحميل الوظيفة الإضافية في كل تطبيق إلى منع حدوث ذلك.
 
-بدلا من ذلك، يمكنك تعطيل **وظيفة Microsoft Azure حماية البيانات Office الإضافية** أو إزالتها بشكل تفاعلي من Word Excel PowerPoint Outlook. هذا الأسلوب مناسب لجهاز كمبيوتر واحد، واختبار مخصص. للحصول على الإرشادات، راجع [عرض الوظائف الإضافية وإدارتها وتثبيتها في برامج Office](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d).
+بدلا من ذلك، يمكنك تعطيل وظيفة **Microsoft Azure الإضافية حماية البيانات أو** إزالتها بشكل تفاعلي من Word وExcel وPowerPoint وOutlook أو إزالتها. هذا الأسلوب مناسب لجهاز كمبيوتر واحد، واختبار مخصص. للحصول على الإرشادات، راجع [عرض الوظائف الإضافية وإدارتها وتثبيتها في برامج Office](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d).
 
 أيا كانت الطريقة التي تختارها، فستدخل التغييرات حيز التنفيذ عند إعادة تشغيل تطبيقات Office.
 
 > [!NOTE]
-> تتطلب التسميات المضمنة إصدار اشتراك من تطبيقات Office. إذا كان لديك إصدارات مستقلة من Office، تسمى أحيانا "Office الدائمة"، نوصي بالترقية إلى Microsoft 365 Apps ل Enterprise للاستفادة من [أحدث قدرات التسمية](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+> تتطلب التسميات المضمنة إصدار اشتراك من تطبيقات Office. إذا كان لديك إصدارات مستقلة من Office، تسمى أحيانا "Office الدائم"، نوصيك بالترقية إلى Microsoft 365 Apps للمؤسسات للاستفادة من [أحدث إمكانيات التسمية](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 تذكر أنه عند استخدام هذا الأسلوب لتعطيل الوظيفة الإضافية AIP، لا يزال بإمكانك استخدام عميل AIP لتوسيع التسمية إلى ما هو أبعد من تطبيقات Office.
 
 ## <a name="feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps"></a>تماثل الميزات للتسمية المضمنة والوظيفة الإضافية AIP لتطبيقات Office
 
-يتم الآن دعم العديد من ميزات التسمية المدعومة من قبل الوظيفة الإضافية AIP بواسطة التسمية المضمنة. للحصول على قائمة أكثر تفصيلا من القدرات، والحد الأدنى للإصدارات التي قد تكون مطلوبة، ومعلومات التكوين، راجع [إدارة تسميات الحساسية في تطبيقات Office](sensitivity-labels-office-apps.md).
+يتم الآن دعم العديد من ميزات التسمية المدعومة من قبل الوظيفة الإضافية AIP بواسطة التسمية المضمنة. للحصول على قائمة أكثر تفصيلا بالقدرات، والحد الأدنى للإصدارات التي قد تكون مطلوبة، ومعلومات التكوين، راجع [إدارة تسميات الحساسية في تطبيقات Office](sensitivity-labels-office-apps.md).
 
-يتم التخطيط لمزيد من الميزات وفي مرحلة التطوير. إذا كانت هناك ميزة معينة تهمك، فتحقق من [مخطط Microsoft 365](https://aka.ms/MIPC/Roadmap) وفكر [في الانضمام إلى حماية البيانات Microsoft في Office المعاينة الخاصة](https://aka.ms/MIP/PreviewRing).
+يتم التخطيط لمزيد من الميزات وفي مرحلة التطوير. إذا كانت هناك ميزة معينة تهمك، فتحقق من [مخطط Microsoft 365](https://aka.ms/MIPC/Roadmap) وفكر [في الانضمام إلى حماية البيانات في Microsoft في Office Private Preview](https://aka.ms/MIP/PreviewRing).
 
 استخدم المعلومات التالية لمساعدتك في تحديد ما إذا كنت تستخدم ميزة من الوظيفة الإضافية AIP غير معتمدة بعد بواسطة التسمية المضمنة:
 
@@ -130,8 +130,8 @@ ms.locfileid: "66043055"
 |**الفئة: عام** ||
 |إعداد التقارير والتدقيق المركزي|![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](sensitivity-labels-office-apps.md#auditing-labeling-activities) |
 |سحابة حكومية|![دعم.](../media/yes-icon.png)|
-|يمكن للمسؤول تعطيل التسمية <br> - جميع التطبيقات|  ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
-|يمكن للمسؤول تعطيل التسمية <br> - لكل تطبيق|  في التخطيط أو التطوير|
+|يمكن مسؤول تعطيل التسمية <br> - جميع التطبيقات|  ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)|
+|يمكن مسؤول تعطيل التسمية <br> - لكل تطبيق|  في التخطيط أو التطوير|
 |**الفئة: تجربة المستخدم** ||
 |الزر "تسمية" على الشريط|![دعم.](../media/yes-icon.png)|
 |دعم اللغات المتعددة لأسماء التسميات وتلميحات الأدوات| ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages) |
@@ -148,9 +148,9 @@ ms.locfileid: "66043055"
 |العلامات الديناميكية| ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)|
 |وضع علامة مرئية لكل تطبيق| ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](sensitivity-labels-office-apps.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)|
 | **الفئة: التشفير** | |
-|الأذونات المعرفة من قبل المسؤول | ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](encryption-sensitivity-labels.md#assign-permissions-now) |
-|الأذونات المعرفة من قبل المستخدم <br> - عدم إعادة التوجيه Outlook <br> - الأذونات المخصصة للمستخدم والمجموعة ل Word، Excel، PowerPoint| ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](encryption-sensitivity-labels.md#let-users-assign-permissions)|
-|الأذونات المعرفة من قبل المستخدم <br> - أذونات مخصصة على مستوى المؤسسة عن طريق تحديد مجالات ل Word أو Excel أو PowerPoint | في التخطيط أو التطوير |
+|أذونات معرفة مسؤول | ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](encryption-sensitivity-labels.md#assign-permissions-now) |
+|الأذونات المعرفة من قبل المستخدم <br> - عدم إعادة التوجيه ل Outlook <br> - الأذونات المخصصة للمستخدم والمجموعة ل Word وExcel وPowerPoint| ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](encryption-sensitivity-labels.md#let-users-assign-permissions)|
+|الأذونات المعرفة من قبل المستخدم <br> - أذونات مخصصة على مستوى المؤسسة عن طريق تحديد مجالات ل Word وExcel وPowerPoint | في التخطيط أو التطوير |
 |التأليف المشترك والحفظ التلقائي | ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](sensitivity-labels-coauthoring.md) |
 |تشفير المفتاح المزدوج | في التخطيط أو التطوير |
 |إبطال المستند للمستخدمين | قيد المراجعة |
@@ -160,27 +160,28 @@ ms.locfileid: "66043055"
 
 يدعم عميل AIP العديد من التخصيصات باستخدام [إعدادات PowerShell المتقدمة](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell). بعض هذه الإعدادات المتقدمة مدعومة الآن بواسطة التسمية المضمنة، كما هو موثق في [New-Label](/powershell/module/exchange/new-label) أو [Set-Label](/powershell/module/exchange/set-label) و [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) أو [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy).
 
-ومع ذلك، قد تجد أنك لا تحتاج إلى استخدام PowerShell لتكوين الإعدادات المدعومة لأنها مضمنة في التكوين القياسي من مدخل توافق Microsoft Purview. على سبيل المثال، القدرة على إيقاف تشغيل التسمية الإلزامية Outlook وتعيين تسمية افتراضية مختلفة.
+ومع ذلك، قد تجد أنك لا تحتاج إلى استخدام PowerShell لتكوين الإعدادات المدعومة لأنها مضمنة في التكوين القياسي من مدخل التوافق في Microsoft Purview. على سبيل المثال، القدرة على إيقاف تشغيل التسمية الإلزامية ل Outlook وتعيين تسمية افتراضية مختلفة.
 
 التكوينات التالية من الوظيفة الإضافية AIP غير معتمدة بعد بواسطة التسمية المضمنة وتشمل:
 
 - [توريث التسمية من مرفقات البريد الإلكتروني](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 - [S/MIME ل Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configure-a-label-to-apply-smime-protection-in-outlook)
-- [المشاركة الزائدة في الرسائل المنبثقة Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
+    - بدأ هذا الإعداد [في الطرح في المعاينة للتسمية المضمنة](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook)
+- [المشاركة الزائدة في الرسائل المنبثقة ل Outlook](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
 - [تسمية فرعية افتراضية لتسمية أصل](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#specify-a-default-sublabel-for-a-parent-label)
 - [إزالة علامات المحتوى الخارجي](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution )
 
 ## <a name="features-not-planned-to-be-supported-by-built-in-labeling-for-office-apps"></a>الميزات غير المخطط دعمها بواسطة التسمية المضمنة لتطبيقات Office
 
-على الرغم من أنه تتم إضافة قدرات جديدة للتسمية المضمنة طوال الوقت، تدعم الوظيفة الإضافية AIP Office الإمكانات التالية غير المخطط أن تكون متوفرة في الإصدارات المستقبلية للتسمية المضمنة:
+على الرغم من أنه تتم إضافة قدرات جديدة للتسمية المضمنة طوال الوقت، تدعم الوظيفة الإضافية AIP Office القدرات التالية غير المخطط أن تكون متوفرة في الإصدارات المستقبلية للتسمية المضمنة:
 
 - تطبيق التسميات على تنسيقات Microsoft Office 97-2003، مثل ملفات .doc
 - أجهزة كمبيوتر غير متصلة بشكل دائم
-- الإصدارات المستقلة من Office (تسمى أحيانا "Office الدائمة") بدلا من الإصدارات المستندة إلى الاشتراك
+- إصدارات مستقلة من Office (تسمى أحيانا "Office الدائم") بدلا من الإصدارات المستندة إلى الاشتراك
 
 ## <a name="next-steps"></a>الخطوات التالية
 
 للحصول على إرشادات لإنشاء وتكوين قدرات التسمية هذه، راجع [إنشاء وتكوين تسميات الحساسية ونهجها](create-sensitivity-labels.md).
 
 > [!TIP]
-> إذا كان لديك بالفعل تسميات الحساسية في مدخل توافق Microsoft Purview، فلن تكون مؤهلا للإنشاء التلقائي للتسميات الافتراضية. ومع ذلك، قد لا تزال تجد أنه من المفيد الإشارة إلى تكوينها: [تسميات الحساسية الافتراضية](mip-easy-trials.md#default-sensitivity-labels). 
+> إذا كان لديك بالفعل أوصاف الحساسية في مدخل التوافق في Microsoft Purview، فلن تكون مؤهلا للإنشاء التلقائي للتسميات الافتراضية. ومع ذلك، قد لا تزال تجد أنه من المفيد الإشارة إلى تكوينها: [تسميات الحساسية الافتراضية](mip-easy-trials.md#default-sensitivity-labels). 

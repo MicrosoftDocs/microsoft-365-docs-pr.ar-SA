@@ -20,17 +20,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- intro-overview
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: تعرّف على كيفية تنفيذ الأمان عبر الإنترنت للشركات الصغيرة أو متوسطة الحجم مع Microsoft 365 Business Premium. تم تحسين قدرات وميزات الأمان عبر الإنترنت لمنع الهجمات الإلكترونية والخروقات الأمنية، والمساعدة في حماية البيانات والأجهزة والمعلومات باستخدام الدفاعات الإلكترونية عالية الدرجة.
-ms.openlocfilehash: 61e0321df75645a3e8ef06867d9e110b7bfd40a2
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 213e96c58c822d0d8b40d2e540582eb6a2719ef8
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491371"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556823"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; للأمان عبر الإنترنت للشركات الصغيرة
 
