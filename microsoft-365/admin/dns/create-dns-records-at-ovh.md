@@ -1,5 +1,5 @@
 ---
-title: الاتصال سجلات DNS في OVH إلى Microsoft 365
+title: توصيل سجلات DNS في OVH ب Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: تعرف على كيفية التحقق من مجالك وإعداد سجلات DNS للبريد الإلكتروني Skype for Business Online والخدمات الأخرى في OVH ل Microsoft.
-ms.openlocfilehash: 3b3174860a65d13d68b2d5f7773f927dd706f1a0
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 2f30199f2868aa4b0097186009ac5f9bcb75abce
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780394"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563286"
 ---
-# <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>الاتصال سجلات DNS في OVH إلى Microsoft 365
+# <a name="connect-your-dns-records-at-ovh-to-microsoft-365"></a>توصيل سجلات DNS في OVH ب Microsoft 365
 
 [تحقق من الأسئلة المتداولة حول المجالات](../setup/domains-faq.yml) إذا لم تعثر على ما تبحث عنه.
 
@@ -71,7 +70,7 @@ ms.locfileid: "64780394"
    |---|---|---|---|
    |النص|(اتركه فارغا)|3600 (ثوان)|MS=msxxxxxxxx  <br/> **ملاحظه:** هذا مثال. استخدم قيمة **الوجهة أو نقاط العنوان** المحددة هنا، من الجدول.  [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|
 
-1. حدد **"التالي**".
+1. حدد **التالي**.
 
 1. حدد **Confirm**.
 
@@ -83,7 +82,7 @@ ms.locfileid: "64780394"
 
 للتحقق من السجل في Microsoft 365:
 
-1. في مركز الإدارة، انتقل إلى **الإعدادات** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. في مركز الإدارة، انتقل إلى **"مجالات الإعدادات**\>".<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. في صفحة "المجالات"، حدد المجال الذي تتحقق منه، ثم حدد **"بدء الإعداد**".
 
@@ -127,7 +126,7 @@ ms.locfileid: "64780394"
 
     ![سجل OVH MX للبريد.](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
 
-1. حدد **"التالي**".
+1. حدد **التالي**.
 
     ![حدد سجل OVH MX التالي.](../../media/4db62d07-0dc4-49f6-bd19-2b4a07fd764a.png)
 
@@ -169,7 +168,7 @@ ms.locfileid: "64780394"
 
     ![سجل OVH CNAME.](../../media/516938b3-0b12-4736-a631-099e12e189f5.png)
 
-1. حدد **"التالي**".
+1. حدد **التالي**.
 
     ![OVH أضف قيم CNAME وحدد "التالي".](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
 
@@ -204,7 +203,7 @@ ms.locfileid: "64780394"
 
     ![OVH إضافة سجل TXT ل SPF.](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
 
-1. حدد **"التالي**".
+1. حدد **التالي**.
 
     ![أضف سجل TXT ل SPF وحدد "التالي".](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
 
@@ -214,7 +213,7 @@ ms.locfileid: "64780394"
 
 ## <a name="advanced-option-skype-for-business"></a>الخيار المتقدم: Skype for Business
 
-حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمكالمات الجماعية ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى 4 سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلان CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
+حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمؤتمرات عبر الهاتف ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى 4 سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلي CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
 
 ### <a name="add-the-two-required-srv-records"></a>إضافة سجلي SRV المطلوبين
 
@@ -273,7 +272,7 @@ ms.locfileid: "64780394"
    |المسبار|3600 (ثانية)|sipdir.online.lync.com.  <br/> **يجب أن تنتهي هذه القيمة بنقطة (.)**|
    |lyncdiscover|3600 (ثانية)|webdir.online.lync.com.  <br/> **يجب أن تنتهي هذه القيمة بنقطة (.)**|
 
-1. حدد **"التالي**".
+1. حدد **التالي**.
 
     ![OVH أضف قيم CNAME وحدد "التالي".](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
 
@@ -284,7 +283,7 @@ ms.locfileid: "64780394"
 > [!NOTE]
 > عادة ما تستغرق تغييرات DNS حوالي 15 دقيقة لتدخل حيز التنفيذ. ومع ذلك، قد يستغرق التحديث الذي أجريته عبر نظام DNS على الإنترنت وقتا أطول في بعض الأحيان. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فراجع [استكشاف المشكلات وإصلاحها بعد تغيير اسم المجال أو سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>الخيار المتقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>خيار متقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
 
 تساعدك هذه الخدمة على تأمين الأجهزة المحمولة التي تتصل بمجالك وإدارتها عن بعد. يحتاج إدارة الجهاز الجوال إلى سجلين CNAME حتى يتمكن المستخدمون من تسجيل الأجهزة في الخدمة.
 
@@ -315,7 +314,7 @@ ms.locfileid: "64780394"
    |تسجيل المؤسسة  <br/>|3600 (ثانية)|enterpriseregistration.windows.net.  <br/> **يجب أن تنتهي هذه القيمة بنقطة (.)**|
    |تسجيل المؤسسة|3600 (ثانية)|enterpriseenrollment-s.manage.microsoft.com.  <br/> **يجب أن تنتهي هذه القيمة بنقطة (.)**|
 
-1. حدد **"التالي**".
+1. حدد **التالي**.
 
     ![OVH أضف قيم CNAME وحدد "التالي".](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
 

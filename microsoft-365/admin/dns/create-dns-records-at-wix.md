@@ -1,5 +1,5 @@
 ---
-title: الاتصال سجلات DNS في Wix إلى Microsoft 365
+title: توصيل سجلات DNS في Wix ب Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: تعرف على كيفية التحقق من مجالك وإعداد سجلات DNS للبريد الإلكتروني Skype for Business Online والخدمات الأخرى في Wix for Microsoft.
-ms.openlocfilehash: 58d7819e006183a35272811ed791d3236f9fc742
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 9ae245481173b99a9cb1221ed0650dc0b91feecd
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780274"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563176"
 ---
-# <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>الاتصال سجلات DNS في Wix إلى Microsoft 365
+# <a name="connect-your-dns-records-at-wix-to-microsoft-365"></a>توصيل سجلات DNS في Wix ب Microsoft 365
 
 **[تحقق من الأسئلة المتداولة حول المجالات](../setup/domains-faq.yml)** إذا لم تعثر على ما تبحث عنه.
 
@@ -62,11 +61,11 @@ ms.locfileid: "64780274"
 
 4. في مربعات السجل الجديد، اكتب القيم من الجدول التالي أو انسخها والصقها.
 
-   |اسم المضيف|قيمة TXT|TTL|
+   |اسم المضيف|قيمة TXT|TTL|
    |---|---|---|
-   |معبؤ تلقائيا (اتركه فارغا)|MS=*msXXXXXXXXXX* <br/> **ملاحظه:** هذا مثال. استخدم قيمة **الوجهة أو نقاط العنوان** المحددة هنا، من الجدول. [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|ساعة واحدة|
+   |معبؤ تلقائيا (اتركه فارغا)|MS=ms *XXXXXXXX* <br/> **ملاحظه:** هذا مثال. استخدم قيمة **الوجهة أو نقاط العنوان** المحددة هنا، من الجدول. [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|ساعة واحدة|
 
-5. **SelectSave**.
+5. حدد **"حفظ**".
 
    :::image type="content" source="../../media/dns-wix/wix-domains-txt-save.png" alt-text="حدد &quot;حفظ&quot;.":::
 
@@ -77,7 +76,7 @@ ms.locfileid: "64780274"
 
 للتحقق من السجل في Microsoft 365:
 
-1. في مركز الإدارة، انتقل إلى **الإعدادات** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. في مركز الإدارة، انتقل إلى **"مجالات الإعدادات**\>".<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. في صفحة "المجالات"، حدد المجال الذي تتحقق منه، ثم حدد **"بدء الإعداد**".
 
@@ -108,7 +107,7 @@ ms.locfileid: "64780274"
 
 1. في مربعات السجل الجديد، اكتب القيم من الجدول التالي أو انسخها والصقها:
 
-   |اسم المضيف|يشير إلى|الاولويه|TTL|
+   |اسم المضيف|يشير إلى|الاولويه|TTL|
    |---|---|---|---|
    |معبؤ تلقائيا|*\<domain-key\>*.mail.protection.outlook.com <br/> **ملاحظه:** احصل على حسابك *\<domain-key\>* في Microsoft.  [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|0 <br/> لمزيد من المعلومات حول الأولوية، راجع [ما هي أولوية MX؟](../setup/domains-faq.yml)|ساعة واحدة|
 
@@ -116,7 +115,7 @@ ms.locfileid: "64780274"
 
   :::image type="content" source="../../media/dns-wix/wix-domains-mx-delete.png" alt-text="حدد Delete.":::
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
 ## <a name="add-the-cname-record-required-for-microsoft"></a>إضافة سجل CNAME المطلوب ل Microsoft
 
@@ -132,11 +131,11 @@ ms.locfileid: "64780274"
 
 4. في مربعات السجل الجديد، اكتب القيم من الجدول التالي أو انسخها والصقها:
 
-   |اسم المضيف|قيمه|TTL|
+   |اسم المضيف|قيمه|TTL|
    |---|---|---|
    |Autodiscover|autodiscover.outlook.com|ساعة واحدة|
 
-5. حدد **"حفظ**".
+5. حدد **حفظ**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-cname-save.png" alt-text="حدد &quot;حفظ&quot;.":::
 
@@ -161,11 +160,11 @@ ms.locfileid: "64780274"
 
 4. في مربعات السجل الجديد، اكتب القيم من الجدول التالي أو انسخها والصقها:
 
-   |اسم المضيف|قيمه|TTL|
+   |اسم المضيف|قيمه|TTL|
    |---|---|---|
    |[اترك هذا فارغا]|v=spf1 include:spf.protection.outlook.com -all <br/> **ملاحظه:** نوصي بنسخ هذا الإدخال ولصقه، بحيث يبقى كل التباعد صحيحا.|ساعة واحدة|
 
-5. حدد **"حفظ**".
+5. حدد **حفظ**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-txt-save.png" alt-text="حدد &quot;حفظ&quot;.":::
 
@@ -173,7 +172,7 @@ ms.locfileid: "64780274"
 
 ## <a name="advanced-option-skype-for-business"></a>الخيار المتقدم: Skype for Business
 
-حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمكالمات الجماعية ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى أربعة سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلين CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
+حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمؤتمرات عبر الهاتف ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى أربعة سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلي CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
 
 ### <a name="add-the-two-required-srv-records"></a>إضافة سجلي SRV المطلوبين
 
@@ -194,7 +193,7 @@ ms.locfileid: "64780274"
    |المسبار|Tls|معبؤ تلقائيا|1|443|sipdir.online.lync.com|100|ساعة واحدة|
    |sipfed|Tcp|معبؤ تلقائيا|1|5061|sipfed.online.lync.com|100|ساعة واحدة|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-srv-save.png" alt-text="حدد &quot;حفظ&quot;.":::
 
@@ -212,7 +211,7 @@ ms.locfileid: "64780274"
    |CNAME|المسبار|sipdir.online.lync.com. <br/> **يجب أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
    |CNAME|lyncdiscover|webdir.online.lync.com. <br/> **يجب أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-cname-save.png" alt-text="حدد &quot;حفظ&quot;.":::
 
@@ -221,7 +220,7 @@ ms.locfileid: "64780274"
 > [!NOTE]
 > عادة ما تستغرق تغييرات DNS حوالي 15 دقيقة لتدخل حيز التنفيذ. ومع ذلك، قد يستغرق التحديث الذي أجريته عبر نظام DNS على الإنترنت وقتا أطول في بعض الأحيان. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فراجع [استكشاف المشكلات وإصلاحها بعد تغيير اسم المجال أو سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>الخيار المتقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>خيار متقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
 
 تساعدك هذه الخدمة على تأمين الأجهزة المحمولة التي تتصل بمجالك وإدارتها عن بعد. يحتاج إدارة الجهاز الجوال إلى سجلين CNAME حتى يتمكن المستخدمون من تسجيل الأجهزة في الخدمة.
 
@@ -244,7 +243,7 @@ ms.locfileid: "64780274"
     |CNAME|تسجيل المؤسسة|enterpriseregistration.windows.net. <br/> **يجب أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
     |CNAME|تسجيل المؤسسة|enterpriseenrollment.manage.microsoft.com. <br/> **يجب أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
    :::image type="content" source="../../media/dns-wix/wix-domains-cname-save.png" alt-text="حدد &quot;حفظ&quot;.":::
 

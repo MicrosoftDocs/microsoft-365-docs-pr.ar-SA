@@ -1,5 +1,5 @@
 ---
-title: الاتصال سجلات DNS في Amazon Web Services (AWS) إلى Microsoft 365
+title: توصيل سجلات DNS في Amazon Web Services (AWS) ب Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: تعرف على كيفية التحقق من مجالك وإعداد سجلات DNS للبريد الإلكتروني Skype for Business Online والخدمات الأخرى في Amazon Web Services (AWS) ل Microsoft.
-ms.openlocfilehash: d194e425485a45d2c3dc949fc85e74bc957932fb
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 2f14bb3234ca48f61cf3fabc0942d35f44b61b60
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780644"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563242"
 ---
-# <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>الاتصال سجلات DNS في Amazon Web Services (AWS) إلى Microsoft 365
+# <a name="connect-your-dns-records-at-amazon-web-services-aws-to-microsoft-365"></a>توصيل سجلات DNS في Amazon Web Services (AWS) ب Microsoft 365
 
  **[تحقق من الأسئلة المتداولة حول المجالات](../setup/domains-faq.yml)** إذا لم تعثر على ما تبحث عنه.
 
-إذا كان AWS هو موفر استضافة DNS، فاتبع الخطوات الواردة في هذه المقالة للتحقق من مجالك وإعداد سجلات DNS للبريد الإلكتروني، Skype Online for Business، وما إلى ذلك.
+إذا كان AWS هو موفر استضافة DNS، فاتبع الخطوات الواردة في هذه المقالة للتحقق من مجالك وإعداد سجلات DNS للبريد الإلكتروني وSkype Online for Business وما إلى ذلك.
 
 بعد إضافة هذه السجلات في AWS، سيتم إعداد مجالك للعمل مع خدمات Microsoft.
 
@@ -78,7 +77,7 @@ ms.locfileid: "64780644"
 
     |اسم السجل|نوع السجل|قيمه|TTL (بالثوان)|نهج التوجيه|
     |:-----|:-----|:-----|:-----|:-----|
-    |(اترك هذا الحقل فارغا.)|TXT - يستخدم للتحقق من مرسلي البريد الإلكتروني|MS=*msXXXXXXXXXX* <br/> **ملاحظه:** هذا مثال. استخدم قيمة **الوجهة أو "النقاط إلى العنوان**" المحددة هنا، من الجدول في Microsoft 365. [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|300|بسيطه|
+    |(اترك هذا الحقل فارغا.)|TXT - يستخدم للتحقق من مرسلي البريد الإلكتروني|MS=ms *XXXXXXXX* <br/> **ملاحظه:** هذا مثال. استخدم قيمة **الوجهة أو نقاط العنوان** المحددة هنا، من الجدول في Microsoft 365. [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|300|بسيطه|
 
 1. حدد **إنشاء سجلات**.
 
@@ -90,7 +89,7 @@ ms.locfileid: "64780644"
 
 للتحقق من السجل في Microsoft 365:
 
-1. في مركز الإدارة، انتقل إلى **الإعدادات** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. في مركز الإدارة، انتقل إلى **"مجالات الإعدادات**\>".<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. في صفحة "المجالات"، حدد المجال الذي تتحقق منه، ثم حدد **"بدء الإعداد**".
 
@@ -103,7 +102,7 @@ ms.locfileid: "64780644"
 > [!NOTE]
 > عادة ما تستغرق تغييرات DNS حوالي 15 دقيقة لتدخل حيز التنفيذ. ومع ذلك، قد يستغرق التحديث الذي أجريته عبر نظام DNS على الإنترنت وقتا أطول في بعض الأحيان. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فراجع [البحث عن المشاكل وإصلاحها بعد إضافة مجالك أو سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft-365"></a>أضف سجل MX حتى يصل البريد الإلكتروني لمجالك إلى Microsoft 365
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft-365"></a>إضافة سجل MX حتى يصل البريد الإلكتروني لمجالك إلى Microsoft 365
 
 1. للبدء، انتقل إلى صفحة المجالات في AWS باستخدام [هذا الارتباط](https://console.aws.amazon.com/route53/home). ستتم مطالبتك بتسجيل الدخول أولا.
 
@@ -144,7 +143,7 @@ ms.locfileid: "64780644"
 
 1. إذا كان هناك أي سجلات MX أخرى، فقم بإزالتها عن طريق تحديد السجل، ثم تحديد **Delete**.
 
-## <a name="add-the-cname-record-required-for-microsoft-365"></a>إضافة سجل CNAME المطلوب Microsoft 365
+## <a name="add-the-cname-record-required-for-microsoft-365"></a>إضافة سجل CNAME المطلوب ل Microsoft 365
 
 1. للبدء، انتقل إلى صفحة المجالات في AWS باستخدام [هذا الارتباط](https://console.aws.amazon.com/route53/home). ستتم مطالبتك بتسجيل الدخول أولا.
 
@@ -183,7 +182,7 @@ ms.locfileid: "64780644"
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>إضافة سجل TXT ل SPF للمساعدة في منع البريد الإلكتروني العشوائي
 
 > [!IMPORTANT]
-> لا يمكن أن يكون لديك أكثر من سجل TXT واحد ل SPF لمجال. إذا كان مجالك يحتوي على أكثر من سجل SPF واحد، فستحصل على أخطاء البريد الإلكتروني، بالإضافة إلى مشاكل في التسليم وتصنيف البريد العشوائي. إذا كان لديك بالفعل سجل SPF لمجالك، فلا تنشئ سجلا جديدا ل Microsoft. بدلا من ذلك، أضف قيم Microsoft المطلوبة إلى السجل الحالي بحيث يكون لديك سجل SPF *واحد* يتضمن مجموعتي القيم. هل تحتاج إلى أمثلة؟ اطلع على [سجلات نظام أسماء المجالات الخارجية هذه ل Microsoft](../../enterprise/external-domain-name-system-records.md). للتحقق من صحة سجل SPF، يمكنك استخدام إحدى [أدوات التحقق من صحة SPF](../setup/domains-faq.yml) هذه.
+> لا يمكن أن يكون لديك أكثر من سجل TXT واحد ل SPF لمجال. إذا كان مجالك يحتوي على أكثر من سجل SPF واحد، فستحصل على أخطاء البريد الإلكتروني، بالإضافة إلى مشاكل في التسليم وتصنيف البريد العشوائي. إذا كان لديك بالفعل سجل SPF لمجالك، فلا تنشئ سجلا جديدا ل Microsoft. بدلا من ذلك، أضف قيم Microsoft المطلوبة إلى السجل الحالي بحيث يكون لديك سجل SPF *واحد* يتضمن مجموعتي القيم. هل تحتاج إلى أمثلة؟ اطلع على [سجلات نظام أسماء المجالات الخارجية هذه ل Microsoft](../../enterprise/external-domain-name-system-records.md). للتحقق من صحة سجل SPF، يمكنك استخدام إحدى[أدوات التحقق من صحة SPF](../setup/domains-faq.yml) هذه.
 
 1. للبدء، انتقل إلى صفحة المجالات في AWS باستخدام [هذا الارتباط](https://console.aws.amazon.com/route53/home). ستتم مطالبتك بتسجيل الدخول أولا.
 
@@ -221,7 +220,7 @@ ms.locfileid: "64780644"
 
 ## <a name="advanced-option-skype-for-business"></a>الخيار المتقدم: Skype for Business
 
-حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمكالمات الجماعية ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى 4 سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلان CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
+حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمؤتمرات عبر الهاتف ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى 4 سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلي CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
 
 ### <a name="add-the-two-required-srv-records"></a>إضافة سجلي SRV المطلوبين
 
@@ -305,7 +304,7 @@ ms.locfileid: "64780644"
 > [!NOTE]
 > عادة ما تستغرق تغييرات DNS حوالي 15 دقيقة لتدخل حيز التنفيذ. ومع ذلك، قد يستغرق التحديث الذي أجريته عبر نظام DNS على الإنترنت وقتا أطول في بعض الأحيان. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فراجع [استكشاف المشكلات وإصلاحها بعد تغيير اسم المجال أو سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>الخيار المتقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>خيار متقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
 
 تساعدك هذه الخدمة على تأمين الأجهزة المحمولة التي تتصل بمجالك وإدارتها عن بعد. يحتاج إدارة الجهاز الجوال إلى سجلين CNAME حتى يتمكن المستخدمون من تسجيل الأجهزة في الخدمة.
 

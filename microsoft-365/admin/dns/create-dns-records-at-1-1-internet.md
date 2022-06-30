@@ -1,5 +1,5 @@
 ---
-title: الاتصال سجلات DNS في IONOS بمقدار 1&1 إلى Microsoft 365
+title: توصيل سجلات DNS في IONOS بمقدار 1&1 إلى Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: تعرف على كيفية التحقق من مجالك وإعداد سجلات DNS للبريد الإلكتروني Skype for Business Online وخدمات أخرى في 1&1 IONOS ل Microsoft.
-ms.openlocfilehash: 8afdfed0998a262b1df4c95a63e9086e4f71e5b6
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: b9d7474fe0c442670be961a5436558ea168626dc
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780666"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563418"
 ---
-# <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>الاتصال سجلات DNS في IONOS بمقدار 1&1 إلى Microsoft 365
+# <a name="connect-your-dns-records-at-ionos-by-11-to-microsoft-365"></a>توصيل سجلات DNS في IONOS بمقدار 1&1 إلى Microsoft 365
 
  **[تحقق من الأسئلة المتداولة حول المجالات](../setup/domains-faq.yml)** إذا لم تعثر على ما تبحث عنه.
 
@@ -39,17 +38,17 @@ ms.locfileid: "64780666"
 
 لديك خياران لإعداد سجلات DNS لمجالك:
 
-- [**استخدم المجال الاتصال**](#use-domain-connect-to-verify-and-set-up-your-domain) إذا لم تقم بإعداد مجالك مع موفر خدمة بريد إلكتروني آخر، فاستخدم الخطوات الاتصال المجال للتحقق تلقائيا من مجالك الجديد وإعداده لاستخدامه مع Microsoft 365.
+- [**استخدام Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) إذا لم تقم بإعداد مجالك مع موفر خدمة بريد إلكتروني آخر، فاستخدم خطوات Domain Connect للتحقق من المجال الجديد وإعداده تلقائيا لاستخدامه مع Microsoft 365.
 
     او
 
 - [**استخدام الخطوات اليدوية**](#create-dns-records-with-manual-setup) تحقق من مجالك باستخدام الخطوات اليدوية أدناه واختر متى والسجلات التي تريد إضافتها إلى جهة تسجيل المجالات. يسمح لك هذا بإعداد سجلات MX (بريد) جديدة، على سبيل المثال، حسب راحتك.
 
-## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>استخدام الاتصال المجال للتحقق من المجال وإعداده
+## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>استخدام Domain Connect للتحقق من مجالك وإعداده
 
 اتبع هذه الخطوات للتحقق من IONOS وإعداده تلقائيا بواسطة مجال 1&1 باستخدام Microsoft 365:
 
-1. في مركز مسؤولي Microsoft 365، حدد **الإعدادات** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>، وحدد المجال الذي تريد إعداده.
+1. في مركز مسؤولي Microsoft 365، حدد **"مجالات الإعدادات** > "، وحدد المجال الذي تريد إعداده.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-1.png" alt-text="حدد مجالك في Microsoft 365.":::
 
@@ -61,11 +60,11 @@ ms.locfileid: "64780666"
 
 1. في صفحة إضافة سجلات DNS، حدد **إضافة سجلات DNS**.
 
-1. في صفحة تسجيل الدخول IONOS بمقدار 1&1، سجل الدخول إلى حسابك، وحدد **الاتصال**، ثم **السماح**.
+1. في صفحة تسجيل الدخول IONOS بمقدار 1&1، سجل الدخول إلى حسابك، وحدد **Connect** و **Allow**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="حدد الاتصال، ثم &quot;السماح&quot;.":::
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="حدد «Connect»، ثم «Allow».":::
 
-    يؤدي ذلك إلى إكمال إعداد المجال Microsoft 365.
+    يؤدي ذلك إلى إكمال إعداد المجال ل Microsoft 365.
 
 ## <a name="create-dns-records-with-manual-setup"></a>إنشاء سجلات DNS باستخدام الإعداد اليدوي
 
@@ -109,17 +108,17 @@ ms.locfileid: "64780666"
     |---|---|---|
     |(اترك هذا الحقل فارغا)|MS=ms *XXXXXXXX*  <br/> ملاحظة: هذا مثال. استخدم قيمة **الوجهة أو نقاط العنوان** المحددة هنا، من الجدول. [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|ساعة واحدة|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-5.png" alt-text="حدد &quot;حفظ&quot;.":::
 
     انتظر بضع دقائق قبل المتابعة، بحيث يمكن تحديث السجل الذي أنشأته للتو عبر الإنترنت.
 
-الآن بعد أن أضفت السجل إلى موقع جهة تسجيل المجالات، ستعود إلى Microsoft 365 وتطالب Microsoft 365 بالبحث عن السجل. عندما تعثر Microsoft على سجل TXT الصحيح، يتم التحقق من مجالك.
+الآن بعد أن أضفت السجل إلى موقع جهة تسجيل المجالات، ستعود إلى Microsoft 365 وستطلب من Microsoft 365 البحث عن السجل. عندما تعثر Microsoft على سجل TXT الصحيح، يتم التحقق من مجالك.
 
 للتحقق من السجل في Microsoft 365:
 
-1. في مركز الإدارة، انتقل إلى **الإعدادات** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. في مركز الإدارة، انتقل إلى **"مجالات الإعدادات**\>".<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. في صفحة "المجالات"، حدد المجال الذي تتحقق منه، ثم حدد **"بدء الإعداد**".
 
@@ -161,7 +160,7 @@ ms.locfileid: "64780666"
     |---|---|---|---|
     |@|*\<domain-key\>*.mail.protection.outlook.com  <br/>  ملاحظة: احصل على حسابك \<domain-key\> في Microsoft. [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|10  <br/> لمزيد من المعلومات حول الأولوية، راجع [ما هي أولوية MX؟](../setup/domains-faq.yml)|ساعة واحدة|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-MX-Save.png" alt-text="حدد &quot;حفظ&quot;.":::
 
@@ -214,12 +213,12 @@ ms.locfileid: "64780666"
     |---|---|
     |Autodiscover|autodiscover.outlook.com|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>إضافة سجل TXT ل SPF للمساعدة في منع البريد الإلكتروني العشوائي
 
 > [!IMPORTANT]
-> لا يمكن أن يكون لديك أكثر من سجل TXT واحد ل SPF لمجال. إذا كان مجالك يحتوي على أكثر من سجل SPF واحد، فستحصل على أخطاء البريد الإلكتروني، بالإضافة إلى مشاكل في التسليم وتصنيف البريد العشوائي. إذا كان لديك بالفعل سجل SPF لمجالك، فلا تنشئ سجلا جديدا ل Microsoft. بدلا من ذلك، أضف قيم Microsoft المطلوبة إلى السجل الحالي بحيث يكون لديك سجل SPF  *واحد*  يتضمن مجموعتي القيم. هل تحتاج إلى أمثلة؟ اطلع على [سجلات نظام أسماء المجالات الخارجية هذه ل Microsoft](../../enterprise/external-domain-name-system-records.md). للتحقق من صحة سجل SPF، يمكنك استخدام إحدى [أدوات التحقق من صحة SPF](../setup/domains-faq.yml) هذه.
+> لا يمكن أن يكون لديك أكثر من سجل TXT واحد ل SPF لمجال. إذا كان مجالك يحتوي على أكثر من سجل SPF واحد، فستحصل على أخطاء البريد الإلكتروني، بالإضافة إلى مشاكل في التسليم وتصنيف البريد العشوائي. إذا كان لديك بالفعل سجل SPF لمجالك، فلا تنشئ سجلا جديدا ل Microsoft. بدلا من ذلك، أضف قيم Microsoft المطلوبة إلى السجل الحالي بحيث يكون لديك سجل SPF  *واحد*  يتضمن مجموعتي القيم. هل تحتاج إلى أمثلة؟ اطلع على [سجلات نظام أسماء المجالات الخارجية هذه ل Microsoft](../../enterprise/external-domain-name-system-records.md). للتحقق من صحة سجل SPF، يمكنك استخدام إحدى[أدوات التحقق من صحة SPF](../setup/domains-faq.yml) هذه.
 
 > [!NOTE]
 > إذا قمت بالتسجيل باستخدام 1und1.de، [فسجل دخولك إلى هنا](https://go.microsoft.com/fwlink/?linkid=859152).
@@ -248,13 +247,13 @@ ms.locfileid: "64780666"
     |---|---|---|---|
     |SPF (TXT)|(اترك هذا الحقل فارغا.)|v=spf1 include:spf.protection.outlook.com -all  <br/> **ملاحظه:** نوصي بنسخ هذا الإدخال ولصقه، بحيث يبقى كل التباعد صحيحا.|ساعة واحدة|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SPFTXT-Save.png" alt-text="حدد &quot;حفظ&quot;.":::
 
 ## <a name="advanced-option-skype-for-business"></a>الخيار المتقدم: Skype for Business
 
-حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمكالمات الجماعية ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى 4 سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلان CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
+حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمؤتمرات عبر الهاتف ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى 4 سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلي CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
 
 ### <a name="add-two-additional-cname-records"></a>إضافة سجلين إضافيين من سجلات CNAME
 
@@ -352,7 +351,7 @@ ms.locfileid: "64780666"
     |SRV|_sip|Tls|(اترك هذا الحقل فارغا.)|sipdir.online.lync.com|100|1|443|ساعة واحدة|
     |SRV|_sipfederationtls|Tcp|(اترك هذا الحقل فارغا.)|sipfed.online.lync.com|100|1|5061|ساعة واحدة|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
     :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SRV-Save.png" alt-text="حدد &quot;حفظ&quot;.":::
 
@@ -361,7 +360,7 @@ ms.locfileid: "64780666"
 > [!NOTE]
 > عادة ما تستغرق تغييرات DNS حوالي 15 دقيقة لتدخل حيز التنفيذ. ومع ذلك، قد يستغرق التحديث الذي أجريته عبر نظام DNS على الإنترنت وقتا أطول في بعض الأحيان. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فراجع [البحث عن المشاكل وإصلاحها بعد إضافة مجالك أو سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>الخيار المتقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>خيار متقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
 
 تساعدك هذه الخدمة على تأمين الأجهزة المحمولة التي تتصل بمجالك وإدارتها عن بعد. يحتاج إدارة الجهاز الجوال إلى سجلين CNAME حتى يتمكن المستخدمون من تسجيل الأجهزة في الخدمة.
 

@@ -1,5 +1,5 @@
 ---
-title: الاتصال سجلات DNS في Cloudflare إلى Microsoft 365
+title: توصيل سجلات DNS في Cloudflare ب Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: تعرف على كيفية التحقق من مجالك وإعداد سجلات DNS للبريد الإلكتروني Skype for Business Online والخدمات الأخرى في Cloudflare ل Microsoft.
-ms.openlocfilehash: 164a681cccac3385d2ca963ac58706c8e743bc1e
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 50dbee0ab2ca587ee628a40fdc9c032ec9c8820d
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780358"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563308"
 ---
-# <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>الاتصال سجلات DNS في Cloudflare إلى Microsoft 365
+# <a name="connect-your-dns-records-at-cloudflare-to-microsoft-365"></a>توصيل سجلات DNS في Cloudflare ب Microsoft 365
 
  **[تحقق من الأسئلة المتداولة حول المجالات](../setup/domains-faq.yml)** إذا لم تعثر على ما تبحث عنه.
 
@@ -39,17 +38,17 @@ ms.locfileid: "64780358"
 
 لديك خياران لإعداد سجلات DNS لمجالك:
 
-- [**استخدم المجال الاتصال**](#use-domain-connect-to-verify-and-set-up-your-domain) إذا لم تقم بإعداد مجالك مع موفر خدمة بريد إلكتروني آخر، فاستخدم الخطوات الاتصال المجال للتحقق تلقائيا من مجالك الجديد وإعداده لاستخدامه مع Microsoft 365.
+- [**استخدام Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) إذا لم تقم بإعداد مجالك مع موفر خدمة بريد إلكتروني آخر، فاستخدم خطوات Domain Connect للتحقق من المجال الجديد وإعداده تلقائيا لاستخدامه مع Microsoft 365.
 
     او
 
 - [**استخدام الخطوات اليدوية**](#create-dns-records-with-manual-setup) تحقق من مجالك باستخدام الخطوات اليدوية أدناه واختر متى والسجلات التي تريد إضافتها إلى جهة تسجيل المجالات. يسمح لك هذا بإعداد سجلات MX (بريد) جديدة، على سبيل المثال، حسب راحتك.
 
-## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>استخدام الاتصال المجال للتحقق من المجال وإعداده
+## <a name="use-domain-connect-to-verify-and-set-up-your-domain"></a>استخدام Domain Connect للتحقق من مجالك وإعداده
 
 اتبع هذه الخطوات للتحقق تلقائيا من مجال Cloudflare وإعداده باستخدام Microsoft 365:
 
-1. في مركز مسؤولي Microsoft 365، حدد **الإعدادات** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**المجالات**</a>، وحدد المجال الذي تريد إعداده.
+1. في مركز مسؤولي Microsoft 365، حدد **"مجالات الإعدادات**\>"، وحدد المجال الذي تريد إعداده.<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. حدد النقاط الثلاث (مزيد من الإجراءات) \> اختر **بدء الإعداد**.
 
@@ -61,7 +60,7 @@ ms.locfileid: "64780358"
 
 1. في صفحة تسجيل الدخول إلى Cloudflare، سجل الدخول إلى حسابك، وحدد **Authorize**.
 
-    يؤدي ذلك إلى إكمال إعداد المجال Microsoft 365.
+    يؤدي ذلك إلى إكمال إعداد المجال ل Microsoft 365.
 
 ## <a name="create-dns-records-with-manual-setup"></a>إنشاء سجلات DNS باستخدام الإعداد اليدوي
 
@@ -123,9 +122,9 @@ ms.locfileid: "64780358"
 
     |نوع|الاسم|TTL|المحتوي|
     |---|---|---|:----|
-    |النص|@|30 دقيقة|MS=*msXXXXXXXXXX* <br/> **ملاحظه:** هذا مثال. استخدم قيمة **الوجهة أو نقاط العنوان** المحددة هنا، من الجدول. [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|
+    |النص|@|30 دقيقة|MS=ms *XXXXXXXX* <br/> **ملاحظه:** هذا مثال. استخدم قيمة **الوجهة أو نقاط العنوان** المحددة هنا، من الجدول. [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="حدد &quot;إضافة سجل&quot;.":::
 
@@ -135,7 +134,7 @@ ms.locfileid: "64780358"
 
 للتحقق من السجل في Microsoft 365:
 
-1. في مركز الإدارة، انتقل إلى **الإعدادات** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. في مركز الإدارة، انتقل إلى **"مجالات الإعدادات**\>".<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. في صفحة "المجالات"، حدد المجال الذي تتحقق منه، ثم حدد **"بدء الإعداد**".
 
@@ -170,7 +169,7 @@ ms.locfileid: "64780358"
    |---|---|---|---|---|
    |MX|@|*\<domain-key\>*.mail.protection.outlook.com <br/> **ملاحظه:** احصل على حسابك *\<domain-key\>* في Microsoft 365. [كيف أعمل العثور على هذا؟](../get-help-with-domains/information-for-dns-records.md)|30 دقيقة|1 <br/> لمزيد من المعلومات حول الأولوية، راجع [ما هي أولوية MX؟](../setup/domains-faq.yml) <br/>|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-mx-save.png" alt-text="حدد &quot;إضافة سجل&quot;.":::
 
@@ -202,14 +201,14 @@ ms.locfileid: "64780358"
     |---|---|---|---|
     |CNAME|Autodiscover|autodiscover.outlook.com|تلقائي|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="حدد &quot;حفظ&quot;.":::
 
 ### <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>إضافة سجل TXT ل SPF للمساعدة في منع البريد الإلكتروني العشوائي
 
 > [!IMPORTANT]
-> لا يمكن أن يكون لديك أكثر من سجل TXT واحد ل SPF لمجال. إذا كان مجالك يحتوي على أكثر من سجل SPF واحد، فستحصل على أخطاء البريد الإلكتروني، بالإضافة إلى مشاكل في التسليم وتصنيف البريد العشوائي. إذا كان لديك بالفعل سجل SPF لمجالك، فلا تنشئ سجلا جديدا Microsoft 365. بدلا من ذلك، أضف قيم Microsoft 365 المطلوبة إلى السجل الحالي بحيث يكون لديك سجل SPF *واحد* يتضمن مجموعتي القيم.
+> لا يمكن أن يكون لديك أكثر من سجل TXT واحد ل SPF لمجال. إذا كان مجالك يحتوي على أكثر من سجل SPF واحد، فستحصل على أخطاء البريد الإلكتروني، بالإضافة إلى مشاكل في التسليم وتصنيف البريد العشوائي. إذا كان لديك بالفعل سجل SPF لمجالك، فلا تنشئ سجلا جديدا ل Microsoft 365. بدلا من ذلك، أضف قيم Microsoft 365 المطلوبة إلى السجل الحالي بحيث يكون لديك سجل SPF *واحد* يتضمن مجموعتي القيم.
 
 1. للبدء، انتقل إلى صفحة المجالات في Cloudflare باستخدام [هذا الارتباط](https://www.cloudflare.com/a/login). ستتم مطالبتك بتسجيل الدخول أولا.
 
@@ -231,13 +230,13 @@ ms.locfileid: "64780358"
     |---|---|---|---|
     |النص|@|30 دقيقة|v=spf1 include:spf.protection.outlook.com -all <br/> **ملاحظه:** نوصي بنسخ هذا الإدخال ولصقه، بحيث يبقى كل التباعد صحيحا.|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="حدد &quot;حفظ&quot;.":::
 
 ## <a name="advanced-option-skype-for-business"></a>الخيار المتقدم: Skype for Business
 
-حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمكالمات الجماعية ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى 4 سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلان CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
+حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمؤتمرات عبر الهاتف ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى 4 سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلي CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
 
 ### <a name="add-the-two-required-srv-records"></a>إضافة سجلي SRV المطلوبين
 
@@ -265,7 +264,7 @@ ms.locfileid: "64780358"
     |SRV|استخدم *domain_name* الخاص بك؛ على سبيل المثال، contoso.com|_sip|TLS|30 دقيقة|100|1|443|sipfed.online.lync.com|
     |SRV|_sipfederationtls|TCP|استخدم *domain_name* الخاص بك؛ على سبيل المثال، contoso.com|30 دقيقة|100|1|5061|sipfed.online.lync.com|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-srv-save.png" alt-text="حدد &quot;حفظ&quot;.":::
 
@@ -306,7 +305,7 @@ ms.locfileid: "64780358"
 > [!NOTE]
 > عادة ما تستغرق تغييرات DNS حوالي 15 دقيقة لتدخل حيز التنفيذ. ومع ذلك، قد يستغرق التحديث الذي أجريته عبر نظام DNS على الإنترنت وقتا أطول في بعض الأحيان. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فراجع [استكشاف المشكلات وإصلاحها بعد تغيير اسم المجال أو سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>الخيار المتقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>خيار متقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
 
 تساعدك هذه الخدمة على تأمين الأجهزة المحمولة التي تتصل بمجالك وإدارتها عن بعد. يحتاج إدارة الجهاز الجوال إلى سجلين CNAME حتى يتمكن المستخدمون من تسجيل الأجهزة في الخدمة.
 
@@ -333,7 +332,7 @@ ms.locfileid: "64780358"
     |CNAME|تسجيل المؤسسة|enterpriseregistration.windows.net. <br/> **يجب أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
     |CNAME|تسجيل المؤسسة|enterpriseenrollment-s.manage.microsoft.com. <br/> **يجب أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
 
-1. حدد **"حفظ**".
+1. حدد **حفظ**.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="حدد &quot;حفظ&quot;.":::
 

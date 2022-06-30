@@ -1,5 +1,5 @@
 ---
-title: الاتصال سجلات DNS في Network Solutions Microsoft 365
+title: توصيل سجلات DNS في Network Solutions ب Microsoft 365
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -22,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: تعرف على كيفية التحقق من مجالك وإعداد سجلات DNS للبريد الإلكتروني Skype for Business Online والخدمات الأخرى في Network Solutions for Microsoft.
-ms.openlocfilehash: 87026bfbbae7398c774bf083e0df8d2c228c7560
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 6ebe81c17d02c0cc6126f75f3b6471e01a334db4
+ms.sourcegitcommit: 8cd230e243eba452b27f725d66152becb6aff49b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780271"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563264"
 ---
-# <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>الاتصال سجلات DNS في Network Solutions Microsoft 365
+# <a name="connect-your-dns-records-at-network-solutions-to-microsoft-365"></a>توصيل سجلات DNS في Network Solutions ب Microsoft 365
 
  **[تحقق من الأسئلة المتداولة حول المجالات](../setup/domains-faq.yml)** إذا لم تعثر على ما تبحث عنه.
 
@@ -88,7 +87,7 @@ ms.locfileid: "64780271"
 
 للتحقق من السجل في Microsoft 365:
 
-1. في مركز الإدارة، انتقل إلى **الإعدادات** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. في مركز الإدارة، انتقل إلى **"مجالات الإعدادات**\>".<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
 
 1. في صفحة "المجالات"، حدد المجال الذي تتحقق منه، ثم حدد **"بدء الإعداد**".
 
@@ -170,7 +169,7 @@ ms.locfileid: "64780271"
 
 1. في مربعات سجل CNAME، اكتب القيم من الجدول التالي أو انسخها والصقها.
 
-   |يشير إلى|اسم المضيف|الاسم المستعار إلى|TTL|
+   |يشير إلى|اسم المضيف|الاسم المستعار إلى|TTL|
    |---|---|---|---|
    |مضيف آخر|Autodiscover|autodiscover.outlook.com **لا يمكن أن تنتهي هذه القيمة بنقطة (.)** <br/> ساعة واحدة|
 
@@ -225,7 +224,7 @@ ms.locfileid: "64780271"
 
 ## <a name="advanced-option-skype-for-business"></a>الخيار المتقدم: Skype for Business
 
-حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمكالمات الجماعية ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى 4 سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلان CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
+حدد هذا الخيار فقط إذا كانت مؤسستك تستخدم Skype for Business لخدمات الاتصال عبر الإنترنت مثل الدردشة والمؤتمرات عبر الهاتف ومكالمات الفيديو، بالإضافة إلى Microsoft Teams. يحتاج Skype إلى 4 سجلات: سجلان SRV للاتصال من مستخدم إلى مستخدم، وسجلي CNAME لتسجيل الدخول وتوصيل المستخدمين بالخدمة.
 
 ### <a name="add-the-two-required-srv-records"></a>إضافة سجلي SRV المطلوبين
 
@@ -302,7 +301,7 @@ ms.locfileid: "64780271"
 
 1. في مربعات سجل CNAME، اكتب القيم من الجدول التالي أو انسخها والصقها.
 
-   |نوع|يشير إلى|اسم المضيف|الاسم المستعار إلى|TTL|
+   |نوع|يشير إلى|اسم المضيف|الاسم المستعار إلى|TTL|
    |---|---|---|---|---|
    |CNAME|مضيف آخر|المسبار|sipdir.online.lync.com  <br/> **لا يمكن أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
    |CNAME|مضيف آخر|lyncdiscover|webdir.online.lync.com  <br/> **لا يمكن أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
@@ -319,7 +318,7 @@ ms.locfileid: "64780271"
 > [!NOTE]
 > عادة ما تستغرق تغييرات DNS حوالي 15 دقيقة لتدخل حيز التنفيذ. ومع ذلك، قد يستغرق التحديث الذي أجريته عبر نظام DNS على الإنترنت وقتا أطول في بعض الأحيان. إذا كنت تواجه مشكلة في تدفق البريد أو مشاكل أخرى بعد إضافة سجلات DNS، فراجع [استكشاف المشكلات وإصلاحها بعد تغيير اسم المجال أو سجلات DNS](../get-help-with-domains/find-and-fix-issues.md).
 
-## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>الخيار المتقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
+## <a name="advanced-option-intune-and-mobile-device-management-for-microsoft-365"></a>خيار متقدم: إدارة الجهاز Intune و Mobile ل Microsoft 365
 
 تساعدك هذه الخدمة على تأمين الأجهزة المحمولة التي تتصل بمجالك وإدارتها عن بعد. يحتاج إدارة الجهاز الجوال إلى سجلين CNAME حتى يتمكن المستخدمون من تسجيل الأجهزة في الخدمة.
 
@@ -351,7 +350,7 @@ ms.locfileid: "64780271"
 
 1. في مربعات سجل CNAME، اكتب القيم من الجدول التالي أو انسخها والصقها.
 
-   |نوع|يشير إلى|اسم المضيف|الاسم المستعار إلى|TTL|
+   |نوع|يشير إلى|اسم المضيف|الاسم المستعار إلى|TTL|
    |---|---|---|---|---|
    |CNAME|مضيف آخر|تسجيل المؤسسة|enterpriseregistration.windows.net  <br/> **لا يمكن أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
    |CNAME|مضيف آخر|تسجيل المؤسسة|enterpriseenrollment-s.manage.microsoft.com  <br/> **لا يمكن أن تنتهي هذه القيمة بنقطة (.)**|ساعة واحدة|
