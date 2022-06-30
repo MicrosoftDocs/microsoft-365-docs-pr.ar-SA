@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: ea99a46d468e6c3d5e7346006da0eb24116067d0
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 2f745c0f215f19b0d6e4f9fc06b39ba8234fd170
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489936"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554258"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>ما الجديد في Microsoft Defender لنقطة النهاية على Linux
 
@@ -41,7 +41,7 @@ ms.locfileid: "66489936"
 &ensp;تم إصداره بتاريخ: **24 يونيو 2022**<br/>
 &ensp;نشر بتاريخ: **24 يونيو 2022**<br/>
 &ensp;النسخة: **101.71.18**<br/>
-&ensp;إصدار الإصدار: **30.122042.16880.0**<br/>
+&ensp;إصدار الإصدار: **30.122052.17118.0**<br/>
 
 
 **أحدث الميزات**

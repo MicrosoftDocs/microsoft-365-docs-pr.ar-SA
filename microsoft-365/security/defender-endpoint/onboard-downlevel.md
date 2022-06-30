@@ -1,6 +1,6 @@
 ---
 title: إلحاق الإصدارات السابقة من Windows على Microsoft Defender لنقطة النهاية
-description: إلحاق الإصدارات السابقة المدعومة من أجهزة Windows بحيث يمكنها إرسال بيانات المستشعر إلى أداة استشعار Microsoft Defender لنقطة النهاية
+description: إلحاق الإصدارات السابقة المدعومة من أجهزة Windows بحيث يمكنها إرسال بيانات جهاز الاستشعار إلى أداة استشعار Microsoft Defender لنقطة النهاية
 keywords: إلحاق، نوافذ، 7، 81، oms، sp1، enterprise، pro، مستوى أسفل
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8ca88340ae90889c0e45c5905863373d930949b2
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: c330d3c8210ea0c83605a2b5e9f9f43d1c930442
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872951"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554390"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>الإصدارات السابقة من Windows
 
@@ -41,12 +41,12 @@ ms.locfileid: "65872951"
 
 يقوم Defender لنقطة النهاية بتوسيع الدعم ليشمل أنظمة التشغيل ذات المستوى الأدنى، ما يوفر قدرات متقدمة للكشف عن الهجمات والتحقيق فيها على إصدارات Windows المدعومة.
 
-لإلحاق نقاط نهاية العميل Windows المستوى لأسفل إلى Defender لنقطة النهاية، ستحتاج إلى:
+لإلحاق نقاط نهاية عميل Windows ذات المستوى السفلي ب Defender لنقطة النهاية، ستحتاج إلى:
 
 - [تكوين عملاء System Center Endpoint Protection وتحديثهم](#configure-and-update-system-center-endpoint-protection-clients)
 - [تثبيت وتكوين عامل مراقبة Microsoft (MMA) للإبلاغ عن بيانات جهاز الاستشعار](#install-and-configure-microsoft-monitoring-agent-mma)
 
-بالنسبة Windows Server 2008 R2 SP1، لديك خيار [الإلحاق من خلال Microsoft Defender for Cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
+بالنسبة ل Windows Server 2008 R2 SP1، لديك خيار [الإلحاق من خلال Microsoft Defender for Cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
 
 > [!NOTE]
 > مطلوب ترخيص خادم مستقل ل Defender لنقطة النهاية، لكل عقدة، من أجل إلحاق خادم Windows من خلال عامل مراقبة Microsoft (الخيار 1). بدلا من ذلك، يلزم ترخيص Microsoft Defender للخوادم، لكل عقدة، من أجل إلحاق خادم Windows من خلال Microsoft Defender for Cloud (الخيار 2)، راجع [الميزات المدعومة المتوفرة في Microsoft Defender for Cloud](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers).
@@ -65,7 +65,7 @@ ms.locfileid: "65872951"
 
 - تثبيت [تحديث النظام الأساسي لمكافحة البرامج الضارة في يناير 2017 لعملاء Endpoint Protection](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
 - تكوين عضوية خدمة حماية السحابة لعميل SCEP إلى الإعداد **المتقدم**
-- تكوين الشبكة للسماح بالاتصالات بالسحابة برنامج الحماية من الفيروسات من Microsoft Defender. لمزيد من المعلومات، راجع [تكوين اتصالات الشبكة برنامج الحماية من الفيروسات من Microsoft Defender والتحقق من صحتها](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
+- تكوين الشبكة للسماح بالاتصالات إلى سحابة الحماية من الفيروسات من Microsoft Defender. لمزيد من المعلومات، راجع [تكوين اتصالات شبكة الحماية من الفيروسات ل Microsoft Defender والتحقق من صحتها](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>تثبيت وتكوين عامل مراقبة Microsoft (MMA)
 
@@ -76,14 +76,14 @@ ms.locfileid: "65872951"
 - تثبيت [حزمة التحديث الشهري لشهر فبراير 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 
   > [!NOTE]
-  > ينطبق فقط على Windows Server 2008 R2 و Windows 7 SP1 Enterprise و Windows 7 SP1 Pro.
+  > ينطبق فقط على Windows Server 2008 R2 وWindows 7 SP1 Enterprise وWindows 7 SP1 Pro.
 
 - تثبيت [التحديث لتجربة العملاء وبيانات تتبع الاستخدام التشخيصية](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
 - تثبيت [إطار عمل .NET 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (أو أحدث) أو [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
     > [!NOTE]
-    > ينطبق فقط على Windows Server 2008 R2 و Windows 7 SP1 Enterprise و Windows 7 SP1 Pro.
+    > ينطبق فقط على Windows Server 2008 R2 وWindows 7 SP1 Enterprise وWindows 7 SP1 Pro.
     >
     > لا تقم بتثبيت .NET Framework 4.0.x، لأنه سيبطل التثبيت أعلاه.
     >
@@ -93,7 +93,7 @@ ms.locfileid: "65872951"
 
 ### <a name="installation-steps"></a>خطوات التثبيت
 
-1. قم بتنزيل ملف إعداد العامل: [Windows عامل 64 بت](https://go.microsoft.com/fwlink/?LinkId=828603) أو [Windows عامل 32 بت](https://go.microsoft.com/fwlink/?LinkId=828604).
+1. قم بتنزيل ملف إعداد العامل: [عامل Windows 64 بت](https://go.microsoft.com/fwlink/?LinkId=828603) أو [عامل Windows 32 بت](https://go.microsoft.com/fwlink/?LinkId=828604).
 
     >[!NOTE]
     >بسبب [إهمال دعم SHA-1 من قبل عامل MMA](/azure/azure-monitor/agents/agent-windows#sha-2-code-signing-support-requirement)، يجب أن يكون عامل MMA الإصدار 10.20.18029 أو أحدث.
@@ -107,7 +107,7 @@ ms.locfileid: "65872951"
 3. يؤدي استخدام معرف مساحة العمل ومفتاح مساحة العمل إلى اختيار أي من أساليب التثبيت التالية لتثبيت العامل:
     - [تثبيت العامل يدويا باستخدام الإعداد](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard).
 
-      في الصفحة **"خيارات إعداد العامل**"، حدد **الاتصال العامل إلى Azure Log Analytics (OMS)**
+      في صفحة **"Agent Setup Options** "، حدد **"Connect the agent to Azure Log Analytics (OMS)"**
 
     - [تثبيت العامل باستخدام سطر الأوامر](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
     - [تكوين العامل باستخدام برنامج نصي](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
@@ -132,7 +132,7 @@ ms.locfileid: "65872951"
 
 ## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>إلحاق خوادم Windows من خلال Microsoft Defender for Cloud
 
-1. في جزء التنقل Microsoft 365 Defender، حدد **إعداد** إدارة  >  الإعدادات  > **Device****.**
+1. في جزء التنقل Microsoft 365 Defender، حدد **الإعدادات** >  الخاصة **بإدارة** >  **الأجهزة**.
 
 2. حدد **Windows Server 2008 R2 SP1** كنظام التشغيل.
 
@@ -163,7 +163,7 @@ ms.locfileid: "65872951"
 
     إذا كانت النتيجة هي "الخدمة المحددة غير موجودة كخدمة مثبتة"، فستحتاج إلى تثبيت Microsoft Defender AV. لمزيد من المعلومات، راجع [برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10](microsoft-defender-antivirus-windows.md).
 
-    للحصول على معلومات حول كيفية استخدام نهج المجموعة لتكوين وإدارة برنامج الحماية من الفيروسات من Microsoft Defender على خوادم Windows، راجع [استخدام إعدادات نهج المجموعة لتكوين وإدارة برنامج الحماية من الفيروسات من Microsoft Defender](use-group-policy-microsoft-defender-antivirus.md).
+    للحصول على معلومات حول كيفية استخدام نهج المجموعة لتكوين برنامج الحماية من الفيروسات من Microsoft Defender وإدارته على خوادم Windows، راجع [استخدام إعدادات نهج المجموعة لتكوين برنامج الحماية من الفيروسات من Microsoft Defender وإدارته](use-group-policy-microsoft-defender-antivirus.md).
 
 
 2. قم بتشغيل الأمر التالي للتحقق من تشغيل Microsoft Defender لنقطة النهاية:
@@ -183,7 +183,7 @@ ms.locfileid: "65872951"
 
 ### <a name="using-group-policy"></a>استخدام نهج المجموعة
 
-**الخطوة 1: تنزيل udpate المطابق لنقطة النهاية الخاصة بك.**
+**الخطوة 1: تنزيل التحديث المقابل لنقطة النهاية.**
 
 1. انتقل إلى c:\windows\sysvol\domain\scripts (قد تكون هناك حاجة إلى التحكم بالتغيير على إحدى وحدات التحكم بالمجال.)
 1. إنشاء مجلد باسم MMA.
@@ -192,7 +192,7 @@ ms.locfileid: "65872951"
     - تحديث لتجربة العملاء وبيانات تتبع الاستخدام التشخيصية:
       - [ل Windows Server 2008 R2 x64](https://www.microsoft.com/download/details.aspx?familyid=1bd1d18d-4631-4d8e-a897-327925765f71)
      
-    بالنسبة إلى Windows Server 2008 R2 SP1، تكون التحديثات التالية مطلوبة أيضا:
+    بالنسبة إلى Windows Server 2008 R2 SP1، يلزم أيضا إجراء التحديثات التالية:
 
     إظهار شهري لشهر فبراير 2018 - KB4074598 (Windows Server 2008 R2)
 
@@ -214,22 +214,20 @@ ms.locfileid: "65872951"
 
 
 ```dos
-@echo off 
-cd "C:"
-IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" ( 
-exit
-) ELSE (
+@echo off  
+cd "C:" 
+IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" (  
+exit 
+) ELSE ( 
+ 
+wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart 
+wusa.exe C:\Windows\MMA\Windows6.1-KB4074598-x64.msu /quiet /norestart 
+wusa.exe C:\Windows\MMA\Windows6.1-KB3154518-x64.msu /quiet /norestart 
+wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart 
+"c:\windows\MMA\MMASetup-AMD64.exe" /c /t:"C:\Windows\MMA"
+c:\windows\MMA\setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_ID="<your workspace ID>" OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
-wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart
-wusa.exe C:\Windows\MMA\Windows6.1-KB4074598-x64.msu /quiet /norestart
-wusa.exe C:\Windows\MMA\Windows6.1-KB3154518-x64.msu /quiet /norestart
-wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart
-"c:\windows\MMA\MMASetup-AMD64.exe" /c /t: "C:\Windows\MMA"c:\windows\MMA\ setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1
-OPINSIGHTS_WORKSPACE_ID="<your workspace ID>"
-OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
-)
-
-)
+) 
 ```
 
 
@@ -258,7 +256,7 @@ OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
 :::image type="content" source="images/targeteditor.png" alt-text="المحرر الهدف" lightbox="images/targeteditor.png":::
 
-بالنسبة إلى Windows Server 2008 R2 ستحتاج (وسوف يتم نسخه فقط) إلى ما يلي:
+بالنسبة ل Windows Server 2008 R2 ستحتاج (وسوف يتم نسخه فقط) إلى ما يلي:
 - Windows6.1-KB3080149-x64.msu
 - Windows6.1-KB3154518-x64.msu
 - Windows6.1-KB4075598-x64.msu
@@ -285,7 +283,7 @@ OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
 :::image type="content" source="images/tasksch.png" alt-text="مجدول المهام" lightbox="images/tasksch.png":::
 
-كما هو مذكور في وثائق الإلحاق ل Server بشكل خاص حول Server 2008 R2 يرجى الاطلاع أدناه: بالنسبة إلى Windows Server 2008 R2 SP1، تأكد من استيفاء المتطلبات التالية:
+كما هو مذكور في وثائق الإلحاق ل Server على وجه التحديد حول Server 2008 R2 يرجى الاطلاع أدناه: ل Windows Server 2008 R2 SP1، تأكد من استيفاء المتطلبات التالية:
 
 - تثبيت [حزمة التحديث الشهري لشهر فبراير 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 - تثبيت [إطار عمل .NET 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (أو أحدث) أو [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
@@ -295,13 +293,13 @@ OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
 ## <a name="offboard-endpoints"></a>نقاط نهاية اللوحة
 
-لديك خياران لإلغاء إلحاق نقاط النهاية Windows من الخدمة:
+لديك خياران لإلغاء تشغيل نقاط نهاية Windows من الخدمة:
 
 - إلغاء تثبيت عامل MMA
 - إزالة تكوين مساحة عمل Defender لنقطة النهاية
 
 > [!NOTE]
-> يؤدي إلغاء الإلحاق إلى توقف نقطة نهاية Windows عن إرسال بيانات المستشعر إلى المدخل ولكن سيتم الاحتفاظ بالبيانات من نقطة النهاية، بما في ذلك الإشارة إلى أي تنبيهات كانت قد تم الاحتفاظ بها لمدة تصل إلى 6 أشهر.
+> يؤدي إلغاء الإلحاق إلى توقف نقطة نهاية Windows عن إرسال بيانات المستشعر إلى المدخل ولكن سيتم الاحتفاظ بالبيانات من نقطة النهاية، بما في ذلك الإشارة إلى أي تنبيهات تم الاحتفاظ بها لمدة تصل إلى 6 أشهر.
 
 ### <a name="uninstall-the-mma-agent"></a>إلغاء تثبيت عامل MMA
 
@@ -327,7 +325,7 @@ OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
 1. الحصول على معرف مساحة العمل:
 
-   1. في جزء التنقل، حدد **الإعدادات** >  **الحاق**.
+   1. في جزء التنقل، حدد **"إعدادات** > **الإلحاق**".
 
    1. حدد نظام التشغيل ذي الصلة واحصل على معرف مساحة العمل.
 

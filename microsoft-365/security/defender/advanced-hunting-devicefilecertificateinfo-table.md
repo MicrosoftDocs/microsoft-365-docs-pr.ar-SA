@@ -1,7 +1,7 @@
 ---
-title: DeviceFileCertificateInfo في مخطط الصيد المتقدم
-description: تعرف على معلومات توقيع الملفات في جدول DeviceFileCertificateInfo في مخطط الصيد المتقدم
-keywords: الصيد المتقدم، وصيد التهديدات، والصيد عبر الإنترنت، Microsoft 365 Defender، و microsoft 365، و m365، والبحث، والاستعلام، وبيانات التعقب، ومرجع المخطط، و kusto، والأعمدة، ونوع البيانات، والتوقيع الرقمي، والشهادة، وتوقيع الملفات، و DeviceFileCertificateInfo
+title: جدول DeviceFileCertificateInfo في مخطط التتبع المتقدم
+description: تعرف على معلومات توقيع الملفات في جدول DeviceFileCertificateInfo لمخطط التتبع المتقدم
+keywords: التتبع المتقدم، تتبع التهديدات، تتبع التهديدات عبر الإنترنت، Microsoft 365 Defender، microsoft 365، m365، البحث، الاستعلام، بيانات تتبع الاستخدام، مرجع المخطط، kusto، الجدول، العمود، نوع البيانات، التوقيع الرقمي، الشهادة، توقيع الملفات، DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b43b6ad8ed1422830f08358f460b20b16588996
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 019ca8eced735b8a9e24c2b0f3e3baae37757875
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "63575770"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554544"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -32,36 +32,36 @@ ms.locfileid: "63575770"
 
 **ينطبق على:**
 - Microsoft 365 Defender
-- Microsoft Defender لنقطة النهاية
+- Microsoft Defender for Endpoint
 
-يحتوي `DeviceFileCertificateInfo` الجدول في [مخطط](advanced-hunting-overview.md) الصيد المتقدم على معلومات حول شهادات توقيع الملفات. يستخدم هذا الجدول البيانات التي يتم الحصول عليها من أنشطة التحقق من الشهادة التي يتم تنفيذها بشكل منتظم على الملفات على نقاط النهاية.
+`DeviceFileCertificateInfo` يحتوي الجدول في مخطط [التتبع المتقدم](advanced-hunting-overview.md) على معلومات حول شهادات توقيع الملفات. يستخدم هذا الجدول البيانات التي تم الحصول عليها من أنشطة التحقق من الشهادة التي يتم تنفيذها بانتظام على الملفات على نقاط النهاية.
 
-للحصول على معلومات حول الجداول الأخرى في مخطط الصيد المتقدم، [راجع مرجع الصيد المتقدم](advanced-hunting-schema-tables.md).
+للحصول على معلومات حول الجداول الأخرى في مخطط التتبع المتقدم، [راجع مرجع التتبع المتقدم](advanced-hunting-schema-tables.md).
 
 | اسم العمود | نوع البيانات | الوصف |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetime` | التاريخ والوقت الذي تم فيه تسجيل الحدث |
+| `Timestamp` | `datetime` | تاريخ ووقت تسجيل الحدث |
 | `DeviceId` | `string` | معرف فريد للجهاز في الخدمة |
 | `DeviceName` | `string` | اسم المجال المؤهل بالكامل (FQDN) للجهاز |
-| `SHA1` | `string` | SHA-1 للملف الذي تم تطبيق الإجراء المسجل عليه |
-| `IsSigned` | `boolean` | تشير إلى ما إذا كان الملف قد تم توقيعه |
-| `SignatureType` | `string` | تشير إلى ما إذا كان قد تم قراءة معلومات التوقيع كمحتوى مضمن في الملف نفسه أو قراءتها من ملف كتالوج خارجي |
-| `Signer` | `string` | معلومات حول توقيع الملف |
-| `SignerHash` | `string` | قيمة هاش فريدة تحدد موقع |
-| `Issuer` | `string` | معلومات حول المرجع المشهادات المصدر (CA) |
-| `IssuerHash` | `string` | قيمة هاش فريدة تحدد مرجع مشهادات إصدار (CA) |
-| `CertificateSerialNumber` | `string` | معرف الشهادة الفريدة لمرجع المصدر (CA) |
-| `CrlDistributionPointUrls` | `string` |  صفيف JSON يسرد عناوين URL الخاصة باشتركات الشبكة التي تحتوي على شهادات وقوائم إلغاء الشهادات (CRLs) |
-| `CertificateCreationTime` | `datetime` | تاريخ وقت إنشاء الشهادة |
-| `CertificateExpirationTime` | `datetime` | التاريخ والوقت الذي تم تعيين الشهادة على انتهاء صلاحيتها |
-| `CertificateCountersignatureTime` | `datetime` | تاريخ الشهادة والوقت الذي تم فيه تعيينه بالعداد |
-| `IsTrusted` | `boolean` | تشير إلى ما إذا كان الملف موثوقا به استنادا إلى نتائج الدالة WinVerifyTrust، التي تقوم بالتحقق من معلومات الشهادة الجذر غير المعروفة والتواقيع غير الصالحة والشهادات التي تم إبطالها وغير ذلك من السمات القابلة للأسئلة |
-| `IsRootSignerMicrosoft` | `boolean` | تشير إلى ما إذا كان موقع الشهادة الجذر هو Microsoft |
-| `ReportId` | `long` | معرف الحدث استنادا إلى عداد مكرر. لتحديد أحداث فريدة، يجب استخدام هذا العمود بالتزامن مع عمودي DeviceName و Timestamp. | 
+| `SHA1` | `string` | SHA-1 من الملف الذي تم تطبيق الإجراء المسجل عليه |
+| `IsSigned` | `boolean` | الإشارة إلى ما إذا كان الملف موقع |
+| `SignatureType` | `string` | الإشارة إلى ما إذا كان قد تمت قراءة معلومات التوقيع كمحتوى مضمن في الملف نفسه أو قراءتها من ملف كتالوج خارجي |
+| `Signer` | `string` | معلومات حول موقع الملف |
+| `SignerHash` | `string` | قيمة تجزئة فريدة تحدد الموقع |
+| `Issuer` | `string` | معلومات حول المرجع المصدق المصدر (CA) |
+| `IssuerHash` | `string` | قيمة تجزئة فريدة تحدد إصدار المرجع المصدق (CA) |
+| `CertificateSerialNumber` | `string` | معرف الشهادة الفريدة للمرجع المصدق المصدر (CA) |
+| `CrlDistributionPointUrls` | `string` |  صفيف JSON يسرد عناوين URL لمشاركات الشبكة التي تحتوي على الشهادات وقوائم إبطال الشهادات (CRLs) |
+| `CertificateCreationTime` | `datetime` | تاريخ ووقت إنشاء الشهادة |
+| `CertificateExpirationTime` | `datetime` | تاريخ ووقت تعيين الشهادة لتنتهي صلاحيتها |
+| `CertificateCountersignatureTime` | `datetime` | تاريخ ووقت توقيع الشهادة |
+| `IsTrusted` | `boolean` | الإشارة إلى ما إذا كان الملف موثوقا به استنادا إلى نتائج الدالة WinVerifyTrust، التي تتحقق من معلومات شهادة الجذر غير المعروفة والتواقيع غير الصالحة والشهادات التي تم إبطالها والسمات الأخرى المشكوك فيها |
+| `IsRootSignerMicrosoft` | `boolean` | الإشارة إلى ما إذا كان موقع الشهادة الجذر هو Microsoft وما إذا كان الملف مضمنا في نظام التشغيل Windows |
+| `ReportId` | `long` | معرف الحدث استنادا إلى عداد متكرر. لتعريف الأحداث الفريدة، يجب استخدام هذا العمود بالتزامن مع أعمدة DeviceName وStamp timestamp. | 
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 - [نظرة عامة متقدمة حول الصيد](advanced-hunting-overview.md)
-- [تعرف على لغة الاستعلام](advanced-hunting-query-language.md)
+- [التعرّف على لغة الاستعلام](advanced-hunting-query-language.md)
 - [استخدام الاستعلامات المشتركة](advanced-hunting-shared-queries.md)
 - [البحث عبر الأجهزة ورسائل البريد الإلكتروني والتطبيقات والهويات](advanced-hunting-query-emails-devices.md)
 - [فهم المخطط](advanced-hunting-schema-tables.md)

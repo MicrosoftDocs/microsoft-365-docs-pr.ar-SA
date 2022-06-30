@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a4dd7193bed1a22e3b88e6bc9201f5a15ddcd9eb
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: fc5944be9fd209898b53203533f568ae7ccec70e
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090443"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554522"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>تشغيل محلل العميل على macOS وLinux
 
@@ -34,7 +34,7 @@ ms.locfileid: "66090443"
 1. قم بتنزيل أداة [محلل عميل XMDE](https://aka.ms/XMDEClientAnalyzer) إلى جهاز macOS أو Linux الذي تحتاج إلى التحقيق فيه.
 
    > [!NOTE]
-   > تجزئة SHA256 الحالية ل 'XMDEClientAnalyzer.zip' التي يتم تنزيلها من الارتباط أعلاه هي: 'AFD674A149F139E80F1AE90E36814DAAC08AAD9E8B0DA20CB1D3FA33B9D0D1AD'.
+   > تجزئة SHA256 الحالية ل 'XMDEClientAnalyzer.zip' التي يتم تنزيلها من الارتباط أعلاه هي: '94DBD785249C10F37D7BE9C1E881AA096CF3A9F30E829DBBFD42683717BC5DA8'.
 
 2. استخراج محتويات XMDEClientAnalyzer.zip على الجهاز.
 
@@ -101,7 +101,7 @@ ms.locfileid: "66090443"
 
 - mde_diagnostic.zip
 
-  الوصف: نفس الإخراج التشخيصي الذي يتم إنشاؤه عند تشغيل *إنشاء تشخيص mdatp* على أي [من macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
+  الوصف: نفس الإخراج التشخيصي الذي يتم إنشاؤه عند تشغيل *mdatp diagnostic create* على أي [من macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)
 
   او
 
