@@ -25,14 +25,14 @@ ms.custom:
 - adminvideo
 description: ابحث عن الفاتورة أو بيان الفوترة في مركز مسؤولي Microsoft 365. كما يمكنك أيضاً حفظ نسخة من الفاتورة وطباعتها.
 ms.date: 01/25/2022
-ms.openlocfilehash: 02905b1e31dc295d8b5d79bc150a0c93823c9dd7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b82b3c6472abad250c65900208fbdc5e2603e2f6
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63569195"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491726"
 ---
-# <a name="view-your-bill-or-invoice"></a>عرض الفوترة أو الفاتورة
+# <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>عرض فاتورة أو فاتورة اشتراك Microsoft 365 للأعمال
 
 هذه المقالة مخصصة للأشخاص الذين لديهم اشتراك Microsoft 365 للأعمال.
   
@@ -94,7 +94,7 @@ ms.locfileid: "63569195"
 
 ## <a name="run-the-unknown-charge-diagnostic"></a>تشغيل تشخيص الرسوم غير المعروفة
 
-بصفتك مسؤولاً عاماً في Microsoft 365، يمكنك استخدام أداة تشخيص تعمل ضمن مركز مسؤولي Microsoft 365 للبحث عن رسوم غير متوقعة من Microsoft تظهر على كشف الحساب البنكي أو بطاقة الائتمان.
+بصفتك مسؤولاً عامًا Microsoft 365، يمكنك استخدام أداة تشخيص تعمل ضمن مركز مسؤولي Microsoft 365 للبحث عن رسوم غير متوقعة من Microsoft تظهر على كشف الحساب البنكي أو بطاقة الائتمان.
 
 > [!NOTE]
 > يتوفر "تشخيص الرسوم غير المعروفة" فقط للعملاء الذين اشتروا منتجاتهم وخدماتهم من Microsoft.com، بما في ذلك Microsoft 365 Enterprise والمؤسسات التعليمية وغير الربحية.
@@ -113,4 +113,4 @@ ms.locfileid: "63569195"
 [الدفع عن طريق الفواتير أو بطاقات الائتمان أو الحساب البنكي](pay-for-your-subscription.md) (المقالة) \
 [إدارة طرق الدفع](manage-payment-methods.md) (المقالة) \
 [معلومات الفوترة لـ Microsoft 365 للأعمال في المكسيك](mexico-billing-info.md) (المقالة) \
-[Minecraft: خيارات الدفع للإصدار التعليمي](/education/windows/school-get-minecraft) (المقالة)
+خيارات الدفع [Minecraft: Education Edition](/education/windows/school-get-minecraft) (المقالة)

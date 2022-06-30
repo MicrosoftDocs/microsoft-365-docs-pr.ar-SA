@@ -13,12 +13,12 @@ metadata:
   ms.author: samanro
   ms.date: 06/08/2021
   ms.localizationpriority: high
-  ms.openlocfilehash: 5f5f4ae07c65912f336cc9038c5c958018a52e02
-  ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
+  ms.openlocfilehash: d853086e40898c3f74e653793295e921c062659e
+  ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
   ms.translationtype: HT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 06/04/2022
-  ms.locfileid: "65889268"
+  ms.lasthandoff: 06/29/2022
+  ms.locfileid: "66491602"
 highlightedContent:
   items:
   - title: إعداد البنية الأساسية للعمل المختلط
@@ -260,8 +260,8 @@ additionalContent:
   - title: الإرشادات والموارد ذات الصلة
     items:
     - title: المطورون
-      summary: ابحث عن البرامج التعليمية والمراجع والموارد الأخرى للمطورين في مركز المطورون Microsoft 365.
-      url: https://developer.microsoft.com/microsoft-365
+      summary: ابحث عن الوثائق والموارد لمساعدتك في إنشاء التطبيقات التعاونية أو توسيعها لـ Microsoft 365 و Teams.
+      url: /microsoft-365/developer/?view=o365-worldwide
     - title: المستخدمون النهائيون
       summary: ابحث عن محتوى التدريب والكيفية والتعليمات لمستخدمي Microsoft 365 على support.microsoft.com.
       url: https://support.microsoft.com/microsoft-365
