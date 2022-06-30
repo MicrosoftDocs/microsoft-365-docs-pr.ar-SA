@@ -68,6 +68,8 @@
       href: m365-lighthouse-threat-management-page-overview.md
     - name: تخفيف التهديدات باستخدام برنامج الحماية من الفيروسات من Microsoft Defender
       href: m365-lighthouse-mitigate-threats.md
+    - name: نظرة عامة على صفحة أمان الجهاز
+      href: m365-lighthouse-device-security-overview.md
 - name: الحصول على التعليمات والدعم
   items:
     - name: الحصول على التعليمات والدعم
