@@ -14,53 +14,47 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 7d86b04b1c3883bc5b3da0e429dbbddd8275622f
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 70be4a5b7991d038dd1e34c00778de6bb3a67b84
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489503"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573958"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>إلحاق الأجهزة المسجلة Microsoft Defender for Business
 
-الآن بعد أن قمت بتسجيل الأجهزة، يجب عليك إلحاقها Microsoft Defender for Business لتنفيذ حماية الجيل التالي (الحماية من الفيروسات والحماية من البرامج الضارة والحماية المقدمة من السحابة) وحماية جدار الحماية وتصفية محتوى الويب والمزيد. 
+تتضمن Microsoft 365 Business Premium Microsoft Defender for Business، وهو حل أمان نقطة النهاية للشركات الصغيرة والمتوسطة الحجم. يوفر Defender for Business حماية الجيل التالي (الحماية من الفيروسات والحماية من البرامج الضارة والحماية المقدمة من السحابة) وحماية جدار الحماية وتصفية محتوى الويب والمزيد لأجهزة شركتك. يتم تطبيق الحماية عند إلحاق الأجهزة. 
 
 لإلحاق الأجهزة، يمكنك الاختيار من بين عدة خيارات:
 
-- [استخدام الإلحاق التلقائي لأجهزة Windows المسجلة بالفعل في Microsoft إدارة نقاط النهاية](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager)
-
-- [استخدام برنامج نصي محلي لإلحاق أجهزة Windows وmacOS](#use-a-local-script-to-onboard-windows-and-macos-devices)
-
-- [استخدم إدارة نقاط النهاية لتسجيل الأجهزة](#use-microsoft-endpoint-manager-to-enroll-devices) (Windows وmacOS وiOS وAndroid) ثم طبق نهج Defender for Business على تلك الأجهزة
+- [الإلحاق التلقائي لأجهزة Windows المسجلة في Microsoft Intune](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
+- [برنامج نصي محلي لإلحاق أجهزة Windows وmacOS ب Defender for Business](#use-a-local-script-to-onboard-windows-and-macos-devices-to-defender-for-business)
+- [Intune لتسجيل الأجهزة، بما في ذلك الأجهزة المحمولة](#use-intune-to-enroll-devices) (Windows وmacOS وiOS وAndroid) ثم تطبيق نهج Defender for Business على تلك الأجهزة
 
 تتضمن هذه المقالة أيضا:
 
 - [كيفية تشغيل اختبار الكشف على جهاز Windows](#run-a-detection-test-on-a-windows-device)
-
 - [كيفية إلحاق الأجهزة تدريجيا](#onboard-devices-gradually)
-
 - [كيفية إيقاف تشغيل جهاز](#offboard-a-device) إذا تم استبدال جهاز أو إذا غادر شخص ما المؤسسة
 
 > [!IMPORTANT]
 > إذا حدث خطأ ما وفشلت عملية الإلحاق، فراجع [Microsoft Defender for Business استكشاف الأخطاء وإصلاحها](../security/defender-business/mdb-troubleshooting.yml).
 
-## <a name="use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-microsoft-endpoint-manager"></a>استخدام الإلحاق التلقائي لأجهزة Windows المسجلة بالفعل في Microsoft إدارة نقاط النهاية
+## <a name="use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune"></a>استخدام الإلحاق التلقائي لأجهزة Windows المسجلة بالفعل في Intune
 
-ينطبق خيار الإلحاق التلقائي على أجهزة Windows فقط. يتوفر الإلحاق التلقائي إذا تم استيفاء الشروط التالية:
+يمكنك إلحاق أجهزة Windows ب Defender for Business تلقائيا إذا كانت هذه الأجهزة مسجلة بالفعل في Intune. يكتشف Defender for Business أجهزة عميل Windows المسجلة في Intune، ويطالبك باختيار ما إذا كنت تريد إلحاق هذه الأجهزة تلقائيا. ثم يتم تطبيق نهج الأمان والإعدادات في Defender for Business على تلك الأجهزة. نستدعي هذه العملية *الإلحاق التلقائي*. لاحظ أن خيار الإلحاق التلقائي ينطبق على أجهزة Windows فقط. يتوفر الإلحاق التلقائي إذا تم استيفاء الشروط التالية:
 
-- كانت مؤسستك تستخدم إدارة نقاط النهاية Microsoft أو Microsoft Intune أو إدارة الجهاز الأجهزة المحمولة (MDM) في Microsoft Intune قبل حصولك على Defender for Business ( Microsoft 365 Business Premium العملاء لديهم Microsoft Intune بالفعل).
-
-- لديك بالفعل أجهزة Windows مسجلة في إدارة نقاط النهاية.
-
-إذا كانت أجهزة Windows مسجلة بالفعل في إدارة نقاط النهاية، يكتشف Defender for Business هذه الأجهزة أثناء عملية إعداد وتكوين Defender for Business. سيتم سؤالك عما إذا كنت تريد استخدام الإلحاق التلقائي لجميع أجهزة Windows أو بعضها. يمكنك إلحاق جميع أجهزة Windows في وقت واحد، أو تحديد أجهزة معينة للبدء بها، ثم إضافة المزيد من الأجهزة لاحقا.
+- كانت مؤسستك تستخدم بالفعل إدارة نقاط النهاية Microsoft أو Microsoft Intune أو إدارة الجهاز الأجهزة المحمولة (MDM) في Intune قبل حصولك على Defender for Business (Microsoft 365 Business Premium العملاء لديهم بالفعل Microsoft Intune).
+- لديك بالفعل أجهزة Windows مسجلة في Intune.
 
 > [!TIP]
-> نوصي بتحديد خيار "جميع الأجهزة المسجلة". وبهذه الطريقة، عندما يتم تسجيل أجهزة Windows في إدارة نقاط النهاية لاحقا، سيتم إلحاقها ب Defender for Business تلقائيا.
-لمعرفة المزيد حول الإلحاق التلقائي، راجع الخطوة 2 في [استخدام المعالج لإعداد Microsoft Defender for Business](../security/defender-business/mdb-use-wizard.md).
+> عندما تتم مطالبتك باستخدام الإلحاق التلقائي، نوصي بتحديد خيار "جميع الأجهزة المسجلة". وبهذه الطريقة، عندما يتم تسجيل أجهزة Windows في Intune لاحقا، سيتم إلحاقها ب Defender for Business تلقائيا.
 
-## <a name="use-a-local-script-to-onboard-windows-and-macos-devices"></a>استخدام برنامج نصي محلي لإلحاق أجهزة Windows وmacOS
+لمعرفة المزيد حول الإلحاق التلقائي، راجع [استخدام المعالج لإعداد Microsoft Defender for Business](../security/defender-business/mdb-use-wizard.md).
 
-يمكنك استخدام برنامج نصي محلي لإلحاق أجهزة Windows وMac. عند تشغيل البرنامج النصي للإلحاق على جهاز، فإنه ينشئ ثقة مع Azure Active Directory (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز في Microsoft إدارة نقاط النهاية (إذا لم يكن مسجلا بالفعل)، ثم يقوم بإلحاق الجهاز ب Defender for Business. هذا الأسلوب مفيد لإلحاق الأجهزة في Defender for Business. يمكنك إلحاق ما يصل إلى 10 أجهزة في كل مرة.
+## <a name="use-a-local-script-to-onboard-windows-and-macos-devices-to-defender-for-business"></a>استخدام برنامج نصي محلي لإلحاق أجهزة Windows وmacOS ب Defender for Business
+
+يمكنك استخدام برنامج نصي محلي لإلحاق أجهزة Windows وMac. عند تشغيل البرنامج النصي للإلحاق على جهاز، فإنه ينشئ ثقة مع Azure Active Directory (إذا لم تكن هذه الثقة موجودة بالفعل)، ويسجل الجهاز في Intune (إذا لم يكن مسجلا بالفعل)، ثم يقوم بإلحاق الجهاز ب Defender for Business. يمكنك إلحاق ما يصل إلى 10 أجهزة في كل مرة باستخدام البرنامج النصي المحلي.
 
 1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، وسجل الدخول.
 
@@ -73,14 +67,13 @@ ms.locfileid: "66489503"
 5. استخدم الإرشادات التالية:
 
    - أجهزة Windows: [إلحاق أجهزة Windows باستخدام برنامج نصي محلي](../security/defender-endpoint/configure-endpoints-script.md#onboard-windows-devices-using-a-local-script)
-
    - أجهزة macOS: [النشر اليدوي Microsoft Defender لنقطة النهاية على macOS](../security/defender-endpoint/mac-install-manually.md#download-installation-and-onboarding-packages)
 
-## <a name="use-microsoft-endpoint-manager-to-enroll-devices"></a>استخدام Microsoft إدارة نقاط النهاية لتسجيل الأجهزة
+## <a name="use-intune-to-enroll-devices"></a>استخدام Intune لتسجيل الأجهزة
 
 لتسجيل جهاز، قم بتسجيله بنفسك، أو اطلب من المستخدمين تسجيل الدخول إلى مدخل الشركة وتسجيل أي تطبيقات مطلوبة وتثبيتها. 
 
-إذا كنت تستخدم إدارة نقاط النهاية بالفعل (والتي تتضمن Microsoft Intune و Mobile إدارة الجهاز)، قبل حصولك على Defender for Business، يمكنك الاستمرار في استخدام إدارة نقاط النهاية لإلحاق أجهزة مؤسستك. باستخدام إدارة نقاط النهاية، يمكنك إلحاق أجهزة الكمبيوتر وأجهزة الكمبيوتر اللوحية والهواتف، بما في ذلك أجهزة iOS وAndroid.
+إذا كنت تستخدم بالفعل Intune أو Mobile إدارة الجهاز قبل حصولك على Defender for Business، يمكنك الاستمرار في استخدام Intune لإلحاق أجهزة مؤسستك. باستخدام Intune، يمكنك إلحاق أجهزة الكمبيوتر وأجهزة الكمبيوتر اللوحية والهواتف، بما في ذلك أجهزة iOS وAndroid.
 
 راجع [تسجيل الجهاز في Microsoft Intune](/mem/intune/enrollment/device-enrollment). 
 
@@ -123,18 +116,17 @@ ms.locfileid: "66489503"
 
 1. في جزء التنقل، اختر **"إعدادات"**، ثم اختر **"نقاط النهاية**".
 
-1. ضمن **إدارة الأجهزة**، اختر **"إيقاف الإلحاق**".
+2. ضمن **إدارة الأجهزة**، اختر **"إيقاف الإلحاق**".
 
-1. حدد نظام تشغيل، مثل **Windows 10 و11**، ثم ضمن **"Offboard a device**"، في قسم **أسلوب النشر**، اختر **البرنامج النصي المحلي**. 
+3. حدد نظام تشغيل، مثل **Windows 10 و11**، ثم ضمن **"Offboard a device**"، في قسم **أسلوب النشر**، اختر **البرنامج النصي المحلي**. 
 
-1. في شاشة التأكيد، راجع المعلومات، ثم اختر **"تنزيل"** للمتابعة.
+4. في شاشة التأكيد، راجع المعلومات، ثم اختر **"تنزيل"** للمتابعة.
 
-1. حدد **تنزيل حزمة إيقاف الإلحاق**. نوصي بحفظ حزمة الإلحاق إلى محرك أقراص قابل للإزالة.
+5. حدد **تنزيل حزمة إيقاف الإلحاق**. نوصي بحفظ حزمة الإلحاق إلى محرك أقراص قابل للإزالة.
 
-1. قم بتشغيل البرنامج النصي على كل جهاز تريد إيقاف تشغيله. هل تحتاج إلى مساعدة في هذه المهمة؟ راجع الموارد التالية:   
+6. قم بتشغيل البرنامج النصي على كل جهاز تريد إيقاف تشغيله. هل تحتاج إلى مساعدة في هذه المهمة؟ راجع الموارد التالية:   
 
-   - أجهزة Windows: [إيقاف تشغيل أجهزة Windows باستخدام برنامج نصي محلي](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
-   
+   - أجهزة Windows: [إيقاف تشغيل أجهزة Windows باستخدام برنامج نصي محلي](../security/defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script) 
    - أجهزة macOS: [إلغاء التثبيت على macOS](../security/defender-endpoint/mac-resources.md#uninstalling)
 
 > [!IMPORTANT]

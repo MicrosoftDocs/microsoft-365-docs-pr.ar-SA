@@ -16,12 +16,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 6111bf9e2a44d079bfae19d9aa0c34f7b125ff08
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: a92e3b206b10b68ecc3ff2f94870a9174185b63b
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057863"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574289"
 ---
 # <a name="investigate-data-loss-incidents-with-microsoft-365-defender"></a>التحقيق في حوادث فقدان البيانات باستخدام Microsoft 365 Defender
 
@@ -31,7 +31,7 @@ ms.locfileid: "66057863"
 
 - Microsoft 365 Defender
 
-يمكن الآن إدارة أحداث Microsoft Purview Data Loss Prevention (DLP) في مدخل Microsoft 365 Defender. يمكنك إدارة حوادث DLP جنبا إلى جنب مع الحوادث الأمنية من **الحوادث & تنبيهات الحوادث** \> على الإطلاق السريع <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">لمدخل Microsoft 365 Defender</a>. من هذه الصفحة، يمكنك:
+يمكن الآن إدارة أحداث تفادي فقدان البيانات في Microsoft Purview (DLP) في مدخل Microsoft 365 Defender. يمكنك إدارة حوادث DLP جنبا إلى جنب مع الحوادث الأمنية من **الحوادث & تنبيهات الحوادث** \> على الإطلاق السريع <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">لمدخل Microsoft 365 Defender</a>. من هذه الصفحة، يمكنك:
 
 - عرض جميع تنبيهات DLP التي تم تجميعها ضمن الحوادث في قائمة انتظار الأحداث Microsoft 365 Defender.
 - عرض الحلول التفاعلية الذكية (DLP-MDE وDLP-MDO) والتنبيهات المرتبطة داخل الحل (DLP-DLP) في حالة وقوع حادث واحد.
@@ -44,7 +44,7 @@ ms.locfileid: "66057863"
 
 ## <a name="licensing-requirements"></a>متطلبات الترخيص
 
-للتحقيق في أحداث منع فقدان بيانات Microsoft Purview في مدخل Microsoft 365 Defender، تحتاج إلى ترخيص من أحد الاشتراكات التالية: 
+للتحقيق في أحداث تفادي فقدان البيانات في Microsoft Purview في مدخل Microsoft 365 Defender، تحتاج إلى ترخيص من أحد الاشتراكات التالية: 
 
 - Microsoft Office 365 E5/A5
 - Microsoft 365 E5/A5
@@ -52,9 +52,12 @@ ms.locfileid: "66057863"
 - Microsoft 365 E5/A5 Security
 - Microsoft 365 E5/A5 حماية البيانات والحوكمة
 
+> [!NOTE] 
+> عندما تكون مرخصا ومتأهلا لهذه الميزة، ستتدفق تنبيهات DLP تلقائيا إلى Microsoft 365 Defender. افتح حالة دعم إذا كنت تريد تعطيل هذه الميزة. 
+
 ## <a name="dlp-investigation-experience-in-the-microsoft-365-defender-portal"></a>تجربة التحقيق DLP في مدخل Microsoft 365 Defender
 
-قبل البدء، [قم بتشغيل التنبيهات لكافة نهج DLP](/microsoft-365/compliance/dlp-configure-view-alerts-policies#alert-configuration-experience) في <a href="https://purview.microsoft.com" target="_blank">مدخل توافق Microsoft Purview</a>.
+قبل البدء، [قم بتشغيل التنبيهات لكافة نهج DLP](/microsoft-365/compliance/dlp-configure-view-alerts-policies#alert-configuration-experience) في <a href="https://purview.microsoft.com" target="_blank">مدخل التوافق في Microsoft Purview</a>.
 
 1. انتقل إلى مدخل Microsoft 365 Defender، وحدد **«Incidents**» في قائمة التنقل اليسرى لفتح صفحة «incidents».
 
@@ -68,7 +71,7 @@ ms.locfileid: "66057863"
 
 6. عرض المحتوى الحساس المطابق في علامة التبويب **"أنواع المعلومات الحساسة** " ومحتوى الملف في علامة التبويب **"المصدر** " إذا كان لديك الإذن المطلوب (راجع التفاصيل <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started#roles" target="_blank">هنا</a>).
 
-7. يمكنك أيضا استخدام Advanced Hunting للبحث من خلال سجلات التدقيق للمستخدم والملفات ومواقع الموقع للتحقيق الخاص بك. يحتوي جدول **CloudAppEvents** على كافة سجلات التدقيق عبر جميع المواقع مثل Sharepoint OneDrive Exchange والأجهزة.
+7. يمكنك أيضا استخدام Advanced Hunting للبحث من خلال سجلات التدقيق للمستخدم والملفات ومواقع الموقع للتحقيق الخاص بك. يحتوي جدول **CloudAppEvents** على جميع سجلات التدقيق عبر جميع المواقع مثل Sharepoint وOneDrive وExchange والأجهزة.
 
 8. يمكنك أيضا تنزيل البريد الإلكتروني عن طريق تحديد **البريد الإلكتروني "تنزيل** **الإجراءات**\>". 
 
@@ -89,7 +92,7 @@ ms.locfileid: "66057863"
 
 يمكنك استخدام موصل Microsoft 365 Defender في Microsoft Sentinel لاستيراد جميع أحداث DLP إلى Sentinel لتوسيع الارتباط والكشف والتحقيق عبر مصادر البيانات الأخرى وتوسيع تدفقات التزامن التلقائي باستخدام قدرات SOAR الأصلية ل Sentinel. 
 
-1. اتبع الإرشادات المتعلقة الاتصال البيانات من Microsoft 365 Defender إلى Microsoft Sentinel لاستيراد جميع الحوادث بما في ذلك حوادث DLP والتنبيهات إلى Sentinel. تمكين `CloudAppEvents` موصل الحدث لسحب جميع سجلات تدقيق O365 إلى Sentinel.
+1. اتبع الإرشادات المتعلقة بتوصيل البيانات من Microsoft 365 Defender إلى Microsoft Sentinel لاستيراد جميع الحوادث بما في ذلك حوادث DLP والتنبيهات إلى Sentinel. تمكين `CloudAppEvents` موصل الحدث لسحب جميع سجلات تدقيق O365 إلى Sentinel.
 
    يجب أن تكون قادرا على رؤية أحداث DLP في Sentinel بمجرد إعداد الموصل أعلاه.
 

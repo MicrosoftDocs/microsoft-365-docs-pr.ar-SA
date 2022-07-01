@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview Compliance Manager
+title: إدارة التوافق في Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,17 +18,17 @@ search.appverid:
 - MOE150
 - MET150
 description: يساعد Microsoft Purview Compliance Manager المؤسسات على تبسيط تقييمات المخاطر وأتمتتها، ويقترح الإجراءات الموصى بها للمساعدة في معالجة المخاطر.
-ms.openlocfilehash: deb3c3755a8afbab0071b8f829da620676f926ff
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: dc08d38da7c02ef0c02401244934b7d2338ab5f7
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078232"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574080"
 ---
-# <a name="microsoft-purview-compliance-manager"></a>Microsoft Purview Compliance Manager
+# <a name="microsoft-purview-compliance-manager"></a>إدارة التوافق في Microsoft Purview
 
 > [!TIP]
-> *هل تعلم أنه يمكنك تجربة الإصدارات المتميزة من جميع حلول Microsoft Purview التسعة مجانا؟* استخدم تجربة حلول Purview لمدة 90 يوما لاستكشاف مدى قدرة قدرات Purview القوية على مساعدة مؤسستك على تلبية احتياجات التوافق الخاصة بها. يمكن للعملاء Microsoft 365 E3 Office 365 E3 البدء الآن في [مركز تجارب مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). تعرف على تفاصيل حول [الأشخاص الذين يمكنهم التسجيل وشروط الإصدار التجريبي](compliance-easy-trials.md).
+> *هل تعلم أنه يمكنك تجربة الإصدارات المتميزة من جميع حلول Microsoft Purview التسعة مجانا؟* استخدم تجربة حلول Purview لمدة 90 يوما لاستكشاف مدى قدرة قدرات Purview القوية على مساعدة مؤسستك على تلبية احتياجات التوافق الخاصة بها. يمكن للعملاء Microsoft 365 E3 Office 365 E3 البدء الآن في [مركز الإصدارات التجريبية مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). تعرف على تفاصيل حول [الأشخاص الذين يمكنهم التسجيل وشروط الإصدار التجريبي](compliance-easy-trials.md).
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "65078232"
 
 ## <a name="what-is-compliance-manager"></a>ما هو Compliance Manager؟
 
-[Microsoft Purview Compliance Manager](https://compliance.microsoft.com/compliancemanager) هي ميزة في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل توافق Microsoft Purview</a> تساعدك على إدارة متطلبات الامتثال لمؤسستك بسهولة وسهولة أكبر. يمكن أن يساعدك Compliance Manager طوال رحلة الامتثال الخاصة بك، بدءا من جرد مخاطر حماية البيانات إلى إدارة تعقيدات تنفيذ عناصر التحكم، والبقاء على اطلاع دائم باللوائح والشهادات، وإعداد التقارير إلى المراجعين.
+[Microsoft Purview Compliance Manager](https://compliance.microsoft.com/compliancemanager) هي ميزة في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a> تساعدك على إدارة متطلبات الامتثال لمؤسستك بسهولة وسهولة أكبر. يمكن أن يساعدك Compliance Manager طوال رحلة الامتثال الخاصة بك، بدءا من جرد مخاطر حماية البيانات إلى إدارة تعقيدات تنفيذ عناصر التحكم، والبقاء على اطلاع دائم باللوائح والشهادات، وإعداد التقارير إلى المراجعين.
 
 شاهد الفيديو أدناه لمعرفة كيف يمكن أن يساعد Compliance Manager في تبسيط كيفية إدارة مؤسستك للامتثال:
 <br>
@@ -53,15 +53,15 @@ ms.locfileid: "65078232"
 
 - درجة توافق مستندة إلى المخاطر لمساعدتك على فهم وضع التوافق الخاص بك من خلال قياس تقدمك في إكمال إجراءات التحسين.
 
-تعرض لوحة معلومات Compliance Manager درجة التوافق الحالية الخاصة بك، وتساعدك على معرفة ما يحتاج إلى الانتباه، وترشدك إلى إجراءات التحسين الرئيسية. فيما يلي مثال على الشكل الذي ستبدو عليه لوحة معلومات Compliance Manager:
+تعرض صفحة نظرة عامة على Compliance Manager درجة التوافق الحالية الخاصة بك، وتساعدك على معرفة ما يحتاج إلى الانتباه، وترشدك إلى إجراءات التحسين الرئيسية. فيما يلي مثال على صفحة النظرة العامة:
 
-![Compliance Manager - لوحة المعلومات.](../media/compliance-manager-dashboard.png "لوحة معلومات Compliance Manager")
+![Compliance Manager - لوحة المعلومات.](../media/compliance-manager-overview.png "صفحة نظرة عامة على Compliance Manager")
 
 ## <a name="understanding-your-compliance-score"></a>فهم درجة التوافق الخاصة بك
 
 تمنحك Compliance Manager نقاطا لإكمال إجراءات التحسين التي تم اتخاذها للامتثال للوائح أو المعايير أو النهج، وتجمع هذه النقاط في درجة توافق شاملة. كل إجراء له تأثير مختلف على درجاتك اعتمادا على المخاطر المحتملة التي ينطوي عليها. يمكن أن تساعد درجة التوافق في تحديد أولويات الإجراء الذي يجب التركيز عليه لتحسين وضع التوافق العام.
 
-يمنحك Compliance Manager درجة أولية استنادا إلى أساس حماية البيانات Microsoft 365. هذا الأساس هو مجموعة من الضوابط التي تتضمن اللوائح والمعايير الرئيسية لحماية البيانات والإدارة العامة للبيانات.
+يمنحك Compliance Manager درجة أولية استنادا إلى أساس حماية البيانات في Microsoft 365. هذا الأساس هو مجموعة من الضوابط التي تتضمن اللوائح والمعايير الرئيسية لحماية البيانات والإدارة العامة للبيانات.
 
 ##### <a name="learn-more"></a>التعرف على المزيد
 
@@ -95,7 +95,7 @@ ms.locfileid: "65078232"
 
 تحتوي التقييمات على عدة مكونات:
 
-- **الخدمات داخل النطاق**: مجموعة معينة من خدمات Microsoft تنطبق على التقييم
+- **الخدمات داخل النطاق**: مجموعة معينة من خدمات Microsoft المطبقة على التقييم
 - **عناصر التحكم المدارة من Microsoft**: عناصر التحكم لخدمات Microsoft السحابية، والتي تنفذها Microsoft نيابة عنك
 - **عناصر التحكم الخاصة بك**: يشار إليها أحيانا باسم عناصر التحكم التي يديرها العميل، وهي عناصر تحكم يتم تنفيذها وإدارتها من قبل مؤسستك
 - **عناصر التحكم المشتركة**: هذه هي عناصر التحكم التي تشترك كل من مؤسستك وMicrosoft في المسؤولية عن تنفيذها

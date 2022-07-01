@@ -1,5 +1,5 @@
 ---
-title: محلل التكوين ل Microsoft Purview
+title: محلل التكوين لـ Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: فهم كيفية استخدام محلل التكوين ل Microsoft Purview للحصول على وتشغيلها بسرعة مع Microsoft Purview Compliance Manager.
-ms.openlocfilehash: 5d9d786ba88792ac827252ea7ff257d1f80fa70b
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: d2e5fbc0d928fb5931139a274cf9cce5bdc4d983
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554478"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573936"
 ---
 # <a name="configuration-analyzer-for-microsoft-purview-camp"></a>محلل التكوين ل Microsoft Purview (CAMP)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-**في هذه المقالة:** تعرف على كيفية تثبيت أداة Configuration Analyzer ل Microsoft Purview (CAMP) وتشغيلها لبدء استخدام Microsoft Compliance Manger بسرعة.
+**في هذه المقالة:** تعرف على كيفية تثبيت وتشغيل أداة Configuration Analyzer ل Microsoft Purview (CAMP) للبدء بسرعة مع Microsoft Purview Compliance Manger.
 
 ## <a name="compliance-configuration-analyzer-camp-overview"></a>نظرة عامة على محلل تكوين التوافق (CAMP)
 

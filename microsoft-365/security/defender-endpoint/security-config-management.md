@@ -1,7 +1,7 @@
 ---
 title: قم بإدارة Microsoft Defender لإعدادات تكوين نقطة النهاية على الأجهزة باستخدام دارة نقاط النهاية في Microsoft
-description: تعرف على كيفية تمكين إعدادات الأمان في إدارة نقاط النهاية من Microsoft من خلال Microsoft Defender لنقطة النهاية.
-keywords: إدارة الأجهزة، وتكوين أجهزة Microsoft Defender لنقطة النهاية، إدارة نقاط النهاية من Microsoft
+description: تعرف على كيفية تمكين إعدادات الأمان في Microsoft إدارة نقاط النهاية من خلال Microsoft Defender لنقطة النهاية.
+keywords: إدارة الأجهزة وتكوين أجهزة Microsoft Defender لنقطة النهاية وMicrosoft إدارة نقاط النهاية
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7e9e074e4aeaadf041a70baed1d741ea95a9f792
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2c19352d584bedc5acd94f9984242a2c50d2fcf3
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622619"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573902"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>قم بإدارة Microsoft Defender لإعدادات تكوين نقطة النهاية على الأجهزة باستخدام دارة نقاط النهاية في Microsoft
 
@@ -29,7 +29,7 @@ ms.locfileid: "65622619"
 
 **ينطبق على:**
 
-- [إدارة Microsoft Defender لنقطة النهاية على الأجهزة باستخدام إدارة نقاط النهاية من Microsoft](/mem/intune/protect/mde-security-integration)
+- [إدارة Microsoft Defender لنقطة النهاية على الأجهزة باستخدام Microsoft إدارة نقاط النهاية](/mem/intune/protect/mde-security-integration)
 - [مشكلات الأداء في Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,12 +38,12 @@ ms.locfileid: "65622619"
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
-إدارة الأمان Microsoft Defender لنقطة النهاية هي إمكانية للأجهزة التي لا تتم إدارتها بواسطة إدارة نقاط النهاية من Microsoft، إما Microsoft Intune أو Microsoft Endpoint Configuration Manager، لتلقي تكوينات الأمان ل Microsoft Defender مباشرة من إدارة نقاط النهاية.
+إدارة الأمان Microsoft Defender لنقطة النهاية هي إمكانية للأجهزة التي لا تديرها إدارة نقاط النهاية Microsoft لتلقي تكوينات الأمان ل Microsoft Defender مباشرة من إدارة نقاط النهاية.
 
 
-لمزيد من المعلومات حول إدارة تكوين الأمان، بما في ذلك المتطلبات الأساسية والأنظمة الأساسية المدعومة والمزيد، راجع [إدارة Microsoft Defender لنقطة النهاية على الأجهزة التي تحتوي على إدارة نقاط النهاية من Microsoft](/mem/intune/protect/mde-security-integration).
+لمزيد من المعلومات حول إدارة تكوين الأمان، بما في ذلك المتطلبات الأساسية والأنظمة الأساسية المدعومة والمزيد، راجع [إدارة Microsoft Defender لنقطة النهاية على الأجهزة باستخدام Microsoft إدارة نقاط النهاية](/mem/intune/protect/mde-security-integration).
 
-شاهد هذا الفيديو لمعرفة كيفية استخدام إدارة نقاط النهاية من Microsoft لإدارة تكوين الأمان Microsoft Defender لنقطة النهاية.
+شاهد هذا الفيديو لمعرفة كيفية استخدام Microsoft إدارة نقاط النهاية لإدارة تكوين الأمان Microsoft Defender لنقطة النهاية.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVq]
 
 [!INCLUDE [Prerequisites](../../includes/security-config-mgt-prerequisites.md)]
@@ -51,12 +51,12 @@ ms.locfileid: "65622619"
 >[!NOTE]
 >يتم نشر هذه الإمكانية تدريجيا. 
 
-لمزيد من المعلومات حول إدارة تكوين الأمان، راجع [إدارة Microsoft Defender لنقطة النهاية على الأجهزة التي تحتوي على إدارة نقاط النهاية من Microsoft](/mem/intune/protect/mde-security-integration).
+لمزيد من المعلومات حول إدارة تكوين الأمان، راجع [إدارة Microsoft Defender لنقطة النهاية على الأجهزة باستخدام Microsoft إدارة نقاط النهاية](/mem/intune/protect/mde-security-integration).
 
 إذا واجهت مشاكل في التسجيل، فراجع [استكشاف مشكلات إعداد إدارة تكوين الأمان وإصلاحها](troubleshoot-security-config-mgt.md).
 
 > [!NOTE]
-> لا تنطبق هذه الإمكانية على الأجهزة المسجلة بالفعل في إدارة نقاط النهاية من Microsoft (إما Intune أو Configuration Manager). ستستمر الأجهزة المسجلة في Intune في تلقي النهج من خلال قناة الإدارة المنشأة.
+> لا تنطبق هذه الإمكانية على الأجهزة المسجلة بالفعل في Microsoft إدارة نقاط النهاية (إما Intune أو Configuration Manager). ستستمر الأجهزة المسجلة في Intune في تلقي النهج من خلال قناة الإدارة المنشأة.
 
 ## <a name="identify-onboarded-devices"></a>تحديد الأجهزة الملحقة
 
@@ -66,7 +66,7 @@ ms.locfileid: "65622619"
 
 2.  في مدخل [Azure Active Directory](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/)، تحقق من أن الجهاز قد تم تسجيله بنجاح.
 
-3.  في [مركز إدارة إدارة نقاط النهاية من Microsoft](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview)، تحقق من أن الجهاز قد تم تسجيله بنجاح من خلال البحث عنه في قسم **الأجهزة > كافة الأجهزة**.
+3.  في [مركز إدارة نقاط النهاية مسؤول Microsoft](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview)، تحقق من أن الجهاز قد تم تسجيله بنجاح من خلال البحث عنه في قسم **الأجهزة > كافة الأجهزة**.
 
 
 ## <a name="offboard-devices"></a>إيقاف تشغيل الأجهزة
@@ -80,4 +80,4 @@ ms.locfileid: "65622619"
 
 ## <a name="related-topic"></a>الموضوع ذو الصلة
 - [استكشاف مشكلات الإلحاق المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية](troubleshoot-security-config-mgt.md)
-- [إدارة Microsoft Defender لنقطة النهاية على الأجهزة باستخدام إدارة نقاط النهاية من Microsoft](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-mde-security-configuration-management)
+- [إدارة Microsoft Defender لنقطة النهاية على الأجهزة باستخدام Microsoft إدارة نقاط النهاية](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-mde-security-configuration-management)

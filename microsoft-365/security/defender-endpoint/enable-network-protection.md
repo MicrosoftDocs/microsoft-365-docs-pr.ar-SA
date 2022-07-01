@@ -15,19 +15,19 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: e53cda0ac61bdc546e972d663bf0063b02b21ad3
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 9e94b164dd5c4863b792acdfdd36756ebd94347a
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363247"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573992"
 ---
 # <a name="turn-on-network-protection"></a>تشغيل حماية الشبكة
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - برنامج الحماية من الفيروسات من Microsoft Defender
@@ -50,9 +50,9 @@ ms.locfileid: "65363247"
 
 2. اختر **HKEY_LOCAL_MACHINE** من القائمة الجانبية.
 
-3. انتقل عبر القوائم المتداخلة إلى **SOFTWARE** \> **Policies** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Protection**.
+3. انتقل عبر القوائم المتداخلة إلى **SOFTWARE** \> **Policies** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
 
-إذا كان المفتاح مفقودا، فان انتقل إلى **SOFTWARE** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Protection**.
+إذا كان المفتاح مفقودا، فان انتقل إلى **SOFTWARE** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
 
 4. حدد **EnableNetworkProtection** لمشاهدة الحالة الحالية لحماية الشبكة على الجهاز:
 
@@ -67,14 +67,14 @@ ms.locfileid: "65363247"
 تمكين حماية الشبكة باستخدام أي من هذه الأساليب:
 
 - [PowerShell](#powershell)
-- [إدارة الجهاز الجوال (MDM)](#mobile-device-management-mdm)
+- [إدارة الجهاز المحمول (MDM)](#mobile-device-management-mdm)
 - [إدارة نقاط النهاية من Microsoft](#microsoft-endpoint-manager)
 - [نهج المجموعة](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
 ### <a name="powershell"></a>PowerShell
 
-1. اكتب **powershell** في قائمة البدء، وانقر بزر الماوس الأيمن **فوق Windows PowerShell** وحدد **"تشغيل" كمسؤول**.
+1. اكتب **powershell** في قائمة البدء، وانقر بزر **الماوس الأيمن فوق Windows PowerShell** وحدد **"تشغيل" كمسؤول**.
 
 2. أدخل cmdlet التالي:
 
@@ -99,17 +99,39 @@ ms.locfileid: "65363247"
 
 ### <a name="microsoft-endpoint-manager"></a>إدارة نقاط النهاية من Microsoft
 
-1. سجل الدخول إلى مركز إدارة إدارة نقاط النهاية من Microsoft (https://endpoint.microsoft.com).
+#### <a name="microsoft-defender-for-endpoint-baseline-method"></a>أسلوب الأساس Microsoft Defender لنقطة النهاية
 
-2. انتقل إلى **ملف** تعريف  > **DevicesConfigurationCreate** >  **profile**.
+1. سجل الدخول إلى مركز إدارة Microsoft إدارة نقاط النهاية (https://endpoint.microsoft.com).
+2. انتقل إلى **أساسيات** >  أمان  > **نقطة النهاية** **Microsoft Defender لنقطة النهاية الأساس**.
+3. حدد **"إنشاء ملف تعريف**"، ثم أدخل اسما لملف التعريف الخاص بك، ثم حدد **"التالي**".
+4. في قسم **إعدادات التكوين** ، انتقل إلى **قواعد تقليل الأجزاء المعرضة للهجوم** > تعيين **الحظر** أو **التمكين** أو **التدقيق** **لتمكين حماية الشبكة**. حدد **التالي**.
+5. حدد **علامات النطاق** **والتعيينات** المناسبة كما هو مطلوب من قبل مؤسستك.
+7. راجع كافة المعلومات، ثم حدد **"إنشاء**".
+
+#### <a name="antivirus-policy-method"></a>أسلوب نهج الحماية من الفيروسات
+1. سجل الدخول إلى مركز إدارة Microsoft إدارة نقاط النهاية (https://endpoint.microsoft.com).
+2. الانتقال إلى **برنامج الحماية من الفيروسات** **لأمان** >  نقطة النهاية
+3. تحديد **إنشاء نهج**
+4. في القائمة **المنبثقة "إنشاء نهج**"، اختر **Windows 10 Windows 11 وWindows Server** من قائمة **النظام الأساسي**.
+5. اختر **برنامج الحماية من الفيروسات من Microsoft Defender** من قائمة **ملفات التعريف** ثم اختر **"إنشاء"**
+6. قم بتوفير اسم لملف التعريف الخاص بك، ثم حدد **"التالي**".
+7. في قسم **إعدادات التكوين** ، حدد **"معطل"** أو **"ممكن" (وضع الحظر)** أو **"ممكن" (وضع التدقيق)** **لتمكين "حماية الشبكة**"، ثم حدد **"التالي**".
+8. حدد **الواجبات** المناسبة **وعلامات النطاق** كما هو مطلوب من قبل مؤسستك.
+9. راجع كافة المعلومات، ثم حدد **"إنشاء**".
+
+#### <a name="configuration-profile-method"></a>أسلوب ملف تعريف التكوين
+
+1. سجل الدخول إلى مركز إدارة Microsoft إدارة نقاط النهاية (https://endpoint.microsoft.com).
+
+2. انتقل إلى **ملفات تعريف** >  تكوين **الأجهزة** > **لإنشاء ملف تعريف**.
 
 3. في القائمة **المنبثقة "إنشاء ملف تعريف** "، حدد **"النظام الأساسي** " واختر **"نوع ملف التعريف** **كقوالب**".
 
 4. في **اسم القالب**، اختر **حماية نقطة النهاية** من قائمة القوالب، ثم حدد **"إنشاء**".
 
-4. انتقل إلى **Endpoint** **protectionBasics** > ، وقم بتوفير اسم لملف التعريف الخاص بك، ثم حدد **"التالي**".
+4. انتقل إلى **أساسيات** **حماية** >  نقطة النهاية، وقم بتوفير اسم لملف التعريف الخاص بك، ثم حدد **"التالي**".
 
-5. في قسم **إعدادات التكوين**، انتقل إلى **الحماية من مخاطر الهجمات من Microsoft Defender** >  **Network filteringNetwork** >  **protectionEnable** >  أو **Audit**. حدد **التالي**.
+5. في قسم **إعدادات التكوين** ، انتقل إلى **Microsoft Defender Exploit Guard** > **Network filtering** > **Network** > **Enable** أو **Audit**. حدد **التالي**.
 
 6. حدد **علامات النطاق** المناسبة، **والتعيينات**، **وقواعد قابلية التطبيق** كما هو مطلوب من قبل مؤسستك. يمكن للمسؤولين تعيين المزيد من المتطلبات.
 
@@ -127,7 +149,7 @@ ms.locfileid: "65363247"
 
 2. في **محرر إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
 
-3. قم بتوسيع الشجرة إلى **مكونات** \> Windows **برنامج الحماية من الفيروسات من Microsoft Defender** \> حماية **شبكة** **defender Exploit Guard** \> Windows.
+3. قم بتوسيع الشجرة إلى **مكونات** \> Microsoft **Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Protection**.
 
    > [!NOTE]
    > في الإصدارات القديمة من Windows، قد يقول مسار نهج المجموعة "برنامج الحماية من الفيروسات لـ Windows Defender" بدلا من "برنامج الحماية من الفيروسات من Microsoft Defender".
@@ -135,7 +157,7 @@ ms.locfileid: "65363247"
 4. انقر نقرا مزدوجا فوق **"منع المستخدمين والتطبيقات" من الوصول إلى إعداد مواقع الويب الخطرة** وعين الخيار "**ممكن".** في قسم الخيارات، يجب تحديد أحد الخيارات التالية:
     - **حظر** - لا يمكن للمستخدمين الوصول إلى عناوين IP والمجالات الضارة.
     - **تعطيل (افتراضي)** - لن تعمل ميزة حماية الشبكة. لن يتم حظر المستخدمين من الوصول إلى المجالات الضارة.
-    - **وضع التدقيق** - إذا قام مستخدم بزيارة عنوان IP أو مجال ضار، فسيتم تسجيل حدث في سجل الأحداث Windows. ومع ذلك، لن يتم حظر المستخدم من زيارة العنوان.
+    - **وضع التدقيق** - إذا قام مستخدم بزيارة عنوان IP أو مجال ضار، فسيتم تسجيل حدث في سجل أحداث Windows. ومع ذلك، لن يتم حظر المستخدم من زيارة العنوان.
 
    > [!IMPORTANT]
    > لتمكين حماية الشبكة بشكل كامل، يجب تعيين خيار نهج المجموعة إلى **Enabled** وتحديد **"حظر"** أيضا في القائمة المنسدلة "خيارات".
@@ -147,7 +169,7 @@ ms.locfileid: "65363247"
 
 1. افتح وحدة التحكم Configuration Manager.
 
-2. انتقل إلى **Assets and Compliance** >  **Endpoint Protection** >  **Windows Defender Exploit Guard**.
+2. انتقل إلى **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
 
 3. حدد **Create Exploit Guard Policy** من الشريط لإنشاء نهج جديد.
    - لتحرير نهج موجود، حدد النهج، ثم حدد **"خصائص** " من الشريط أو قائمة النقر بزر الماوس الأيمن. تحرير خيار **تكوين حماية الشبكة** من علامة التبويب **Network Protection** .  

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تعيين أذونات وأدوار مستخدم Microsoft Purview Compliance Manager وتكوين الاختبار التلقائي للإجراءات. إدارة محفوظات المستخدم وتصفية طريقة عرض لوحة المعلومات.
-ms.openlocfilehash: c7920a9eac06128f3cf9bfb54645a83296ca7e53
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 76126f9a13716e3ebf48309f8129de6ede4d11e9
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091016"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574036"
 ---
 # <a name="get-started-with-compliance-manager"></a>بدء استخدام "إدارة الترحيل"
 
@@ -31,17 +31,17 @@ ms.locfileid: "65091016"
 
 **في هذه المقالة:** تساعدك هذه المقالة على إعداد Compliance Manager. تعرف على كيفية **الوصول** إلى Compliance Manager **وتعيين الأدوار والأذونات** وتكوين **الاختبار التلقائي لإجراءات التحسين**. استعرض **لوحة معلومات Compliance Manager** وافهم الصفحات الرئيسية: صفحة إجراءات التحسين وصفحة الحلول وصفحة التقييمات وصفحة قوالب التقييم.
 
-## <a name="who-can-access-compliance-manager"></a>يمكن روبوت Who الوصول إلى Compliance Manager
+## <a name="who-can-access-compliance-manager"></a>من يمكنه الوصول إلى Compliance Manager
 
-يتوفر Compliance Manager للمؤسسات التي تمتلك تراخيص Office 365 وتراخيص Microsoft 365، ول عملاء سحابة القطاع الحكومي (سحابة القطاع الحكومي) المتوسطين سحابة القطاع الحكومي والعلوي ودوائر الدفاع (DoD). يعتمد توفر التقييم وقدرات الإدارة على اتفاقية الترخيص الخاصة بك.  [عرض تفاصيل وصف الخدمة](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
+يتوفر Compliance Manager للمؤسسات التي تمتلك تراخيص Office 365 وMicrosoft 365، ولزبائن سحابة مجتمع حكومة الولايات المتحدة (GCC) Moderate و GCC High و وزارة الدفاع (DoD). يعتمد توفر التقييم وقدرات الإدارة على اتفاقية الترخيص الخاصة بك.  [عرض تفاصيل وصف الخدمة](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-من المحتمل أن يكون المسؤول العام Microsoft 365 لمؤسستك أول مستخدم يصل إلى Compliance Manager. نوصي المسؤول العام بتسجيل الدخول وتعيين أذونات المستخدم كما هو موضح أدناه عند زيارة Compliance Manager للمرة الأولى.
+من المحتمل أن يكون المسؤول العام ل Microsoft 365 لمؤسستك أول مستخدم يصل إلى Compliance Manager. نوصي المسؤول العام بتسجيل الدخول وتعيين أذونات المستخدم كما هو موضح أدناه عند زيارة Compliance Manager للمرة الأولى.
 
 ## <a name="sign-in"></a>تسجيل الدخول
 
-1. انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل توافق Microsoft Purview</a> **وسجل الدخول** باستخدام حساب المسؤول العام Microsoft 365.
+1. انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a> **وسجل الدخول** باستخدام حساب المسؤول العام في Microsoft 365.
 2. حدد **Compliance Manager** في جزء التنقل الأيمن. ستصل إلى [لوحة معلومات Compliance Manager](#understand-the-compliance-manager-dashboard).
 
 الارتباط المباشر للوصول إلى Compliance Manager هو [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager).
@@ -52,14 +52,14 @@ ms.locfileid: "65091016"
 
 ### <a name="where-to-set-permissions"></a>مكان تعيين الأذونات
 
-يمكن للشخص الذي يشغل دور المسؤول العام لمؤسستك تعيين أذونات المستخدم ل Compliance Manager. يمكن تعيين الأذونات في مدخل توافق Microsoft Purview وكذلك في Azure Active Directory (Azure AD).
+يمكن للشخص الذي يشغل دور المسؤول العام لمؤسستك تعيين أذونات المستخدم ل Compliance Manager. يمكن تعيين الأذونات في مدخل التوافق في Microsoft Purview وكذلك في Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> يمكن للعملاء في بيئات مجتمع حكومة الولايات المتحدة (سحابة القطاع الحكومي) العليا وبيئة وزارة الدفاع (DoD) فقط تعيين أذونات المستخدم وأدواره ل Compliance Manager في Azure AD. راجع أدناه للحصول على إرشادات Azure AD وتعريفة نوع الدور.
+> يمكن للعملاء في بيئات المجتمع الحكومي الأمريكي (GCC) العالية وبيئة وزارة الدفاع (DoD) فقط تعيين أذونات المستخدم وأدواره لمدير الامتثال في Azure AD. راجع أدناه للحصول على إرشادات Azure AD وتعري تعريفات نوع الدور.
 
-لتعيين الأذونات وتعيين الأدوار في مدخل توافق Microsoft Purview، اتبع الخطوات أدناه:
+لتعيين الأذونات وتعيين الأدوار في مدخل التوافق في Microsoft Purview، اتبع الخطوات أدناه:
 
-1. انتقل إلى مدخل الامتثال ل Microsoft Purview، وحدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**الأذونات**</a>.
+1. انتقل إلى مدخل التوافق في Microsoft Purview، وحدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**الأذونات**</a>.
 
 2. ضمن القائمة المنسدلة لمدخل التوافق، حدد **"Roles**".
 
@@ -77,17 +77,17 @@ ms.locfileid: "65091016"
 
 #### <a name="more-about-azure-ad"></a>المزيد حول Azure AD
 
-لتعيين الأدوار وتعيين الأذونات في Azure AD، راجع [تعيين أدوار المسؤول وغير المسؤول للمستخدمين الذين لديهم Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+لتعيين الأدوار وتعيين الأذونات في Azure AD، راجع [تعيين أدوار المسؤولين وغير المسؤولين للمستخدمين الذين لديهم Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
-لن يتمكن المستخدمون الذين لديهم هويات Azure AD الذين ليس لديهم اشتراكات Office 365 أو Microsoft 365 من الوصول إلى Compliance Manager في مدخل توافق Microsoft Purview. للحصول على المساعدة في الوصول إلى Compliance Manager، اتصل [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
+لن يتمكن المستخدمون الذين لديهم هويات Azure AD ليس لديهم Office 365 أو اشتراكات Microsoft 365 من الوصول إلى Compliance Manager في مدخل التوافق في Microsoft Purview. للحصول على المساعدة في الوصول إلى Compliance Manager، اتصل [cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
 ### <a name="role-types"></a>أنواع الأدوار
 
-يوضح الجدول أدناه الوظائف المسموح بها من قبل كل دور في Compliance Manager. يوضح الجدول أيضا كيفية تعيين كل [دور Azure AD](/azure/active-directory/roles/permissions-reference) إلى أدوار Compliance Manager. سيحتاج المستخدمون على الأقل إلى دور قارئ Compliance Manager، أو دور القارئ العمومي ل Azure AD، للوصول إلى Compliance Manager.
+يوضح الجدول أدناه الوظائف المسموح بها من قبل كل دور في Compliance Manager. يوضح الجدول أيضا كيفية تعيين كل [دور Azure AD](/azure/active-directory/roles/permissions-reference) إلى أدوار Compliance Manager. سيحتاج المستخدمون على الأقل إلى دور قارئ Compliance Manager، أو دور القارئ العمومي Azure AD، للوصول إلى Compliance Manager.
 
 | يمكن للمستخدم: | دور Compliance Manager | دور Azure AD | 
 | :------------- | :-------------: | :------------: |
-| **قراءة البيانات وليس تحريرها**| قارئ إدارة التوافق  | قارئ Azure AD Global، قارئ الأمان |
+| **قراءة البيانات وليس تحريرها**| قارئ إدارة التوافق  | قارئ Azure AD العمومي، قارئ الأمان |
 | **تحرير البيانات**| مساهمة مدير الامتثال | مسؤول التوافق |
 | **تحرير نتائج الاختبار**| تقييم إدارة التوافق | مسؤول التوافق |
 | **إدارة التقييمات وبيانات القالب والمستأجر**| إدارة إدارة التوافق | مسؤول التوافق، مسؤول بيانات التوافق، مسؤول الأمان  |
@@ -114,26 +114,34 @@ ms.locfileid: "65091016"
 
 تعرف على المزيد حول البدء في التقييمات من خلال زيارة قسم [صفحة التقييمات](#assessments-page) أدناه.
 
-## <a name="settings-for-automated-testing-and-user-history"></a>الإعدادات للاختبار التلقائي ومحفوظات المستخدمين
+## <a name="settings-for-automated-testing-and-user-history"></a>إعدادات الاختبار التلقائي ومحفوظات المستخدم
 
-تسمح لك إعدادات Compliance Manager في مدخل توافق Microsoft Purview بتمكين وتعطيل الاختبار التلقائي لإجراءات التحسين. تسمح لك الإعدادات أيضا بإدارة بيانات المستخدمين المقترنين بإجراءات التحسين، بما في ذلك القدرة على إعادة تعيين إجراءات التحسين لمستخدم مختلف.  يمكن فقط للأشخاص الذين لهم دور مسؤول عمومي أو مسؤول Compliance Manager الوصول إلى إعدادات Compliance Manager.
+تسمح لك إعدادات Compliance Manager في مدخل التوافق في Microsoft Purview بتمكين وتعطيل الاختبار التلقائي لإجراءات التحسين. تسمح لك الإعدادات أيضا بإدارة بيانات المستخدمين المقترنين بإجراءات التحسين، بما في ذلك القدرة على إعادة تعيين إجراءات التحسين لمستخدم مختلف.  يمكن فقط للأشخاص الذين لهم دور مسؤول عمومي أو مسؤول Compliance Manager الوصول إلى إعدادات Compliance Manager.
 
 > [!NOTE]
-> لا تتوفر ميزة الاختبار التلقائي للعملاء في بيئات سحابة القطاع الحكومي High و DoD لأن درجة الأمان غير متوفرة في هذه البيئات. سحابة القطاع الحكومي سيحتاج عملاء High و DoD إلى تنفيذ إجراءات التحسين واختبارها يدويا.
+> لا تتوفر ميزة الاختبار التلقائي للعملاء في بيئات GCC High و DoD لأن درجة الأمان غير متوفرة في هذه البيئات. سيحتاج عملاء GCC High و DoD إلى تنفيذ إجراءات التحسين واختبارها يدويا.
 
 ### <a name="set-up-automated-testing"></a>إعداد الاختبار التلقائي
 
-تكتشف Compliance Manager الإشارات من حلول Microsoft Purview الأخرى التي تشترك فيها مؤسستك، بما في ذلك إدارة دورة حياة البيانات وحماية المعلومات ومنع فقدان بيانات Microsoft Purview وتوافق الاتصالات وإدارة المخاطر الداخلية. في كل صفحة تفاصيل إجراء تحسين، سيظهر حقل **منطق الاختبار** في علامة التبويب **"اختبار** " ما هو مطلوب في الحل الآخر من أجل اجتياز الإجراء وكسب النقاط نحو درجة التوافق الخاصة بك.
+يكشف Compliance Manager عن الإشارات من حلول Microsoft Purview الأخرى التي قد تشترك فيها مؤسستك، بما في ذلك إدارة دورة حياة البيانات وحماية المعلومات تفادي فقدان البيانات في Microsoft Purview وتوافق الاتصالات وإدارة المخاطر الداخلية. يكشف Compliance Manager أيضا عن الإشارات من إجراءات التحسين التكميلية التي تراقبها [نقاط Microsoft الآمنة](../security/defender/microsoft-secure-score.md).
 
-يكشف Compliance Manager أيضا عن إشارات من إجراءات التحسين التكميلية التي تراقبها أيضا [نقاط Microsoft الآمنة](../security/defender/microsoft-secure-score.md). باستخدام هذه الإشارات، يمكن ل Compliance Manager اختبار إجراءات تحسين معينة تلقائيا لك، مما يساعد على زيادة الكفاءة في أنشطة التوافق الخاصة بك. عند اختبار إجراء تحسين وتنفيذه بنجاح، تتلقى الكمية الكاملة من النقاط، والتي يتم حسابها في درجة التوافق الإجمالية الخاصة بك.
+باستخدام هذه الإشارات، يمكن ل Compliance Manager اختبار إجراءات تحسين معينة تلقائيا لك، مما يساعد على زيادة الكفاءة في أنشطة التوافق الخاصة بك. عند اختبار إجراء تحسين وتنفيذه بنجاح، تتلقى الكمية الكاملة من النقاط، والتي يتم [حسابها في درجة التوافق الإجمالية الخاصة بك](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
-يتم تشغيل الاختبار التلقائي بشكل افتراضي للمؤسسات الجديدة في Compliance Manager. عند نشر Microsoft 365 أو Office 365 لأول مرة، يستغرق جمع البيانات بالكامل ودمجها في درجة التوافق الخاصة بك حوالي سبعة أيام. عند تشغيل الاختبار التلقائي، لن يتم تحديث تاريخ اختبار الإجراء، ولكن سيتم تحديث حالة الاختبار الخاصة به. عند إنشاء تقييمات جديدة، تتضمن الدرجات تلقائيا درجات تحكم Microsoft وتكامل نقاط الأمان.
+**يتم تشغيل الاختبار التلقائي بشكل افتراضي للمؤسسات الجديدة في Compliance Manager.** عند نشر Microsoft 365 أو Office 365 لأول مرة، يستغرق جمع البيانات بشكل كامل ودمجها في درجة التوافق الخاصة بك حوالي سبعة أيام. عند تشغيل الاختبار التلقائي، لن يتم تحديث تاريخ اختبار الإجراء، ولكن سيتم تحديث حالة الاختبار الخاصة به. عند إنشاء تقييمات جديدة، تتضمن الدرجات تلقائيا درجات تحكم Microsoft وتكامل نقاط الأمان. راجع [إدارة إعدادات الاختبار التلقائي](#manage-automated-testing-settings) أدناه لتحرير هذا الإعداد أو إيقاف تشغيله.
+
+#### <a name="how-to-tell-which-actions-are-tested-automatically"></a>كيفية معرفة الإجراءات التي يتم اختبارها تلقائيا
+
+في الصفحة **"إجراءات التحسين** "، ابحث عن العمود **المصدر "اختبار** ". إذا كانت القيمة مدرجة **كتلقائية**، فسيتم اختبار الإجراء تلقائيا بواسطة Compliance Manager.  إذا كانت القيمة **يدوية**، فسيتم اختبار الإجراء من قبل مؤسستك. إذا كانت القيمة **أصل**، فإن الإجراء يرث حالة الاختبار لإجراء آخر مرتبط به. الحصول على تفاصيل حول [مصدر اختبار إجراء التحسين](compliance-manager-improvement-actions.md#update-testing-source).
+
+#### <a name="which-actions-cant-be-tested-automatically"></a>الإجراءات التي لا يمكن اختبارها تلقائيا
+
+إجراءات التحسين في القوالب غير المحددة في نطاق Microsoft 365 غير مؤهلة حاليا للاختبار التلقائي. على سبيل المثال، لن تحتوي القوالب العامة أو قالب ل Microsoft Azure أو Microsoft Dynamics على إجراءات يمكن اختبارها تلقائيا. تعرف على المزيد حول [قوالب التقييم](compliance-manager-templates.md).
 
 #### <a name="manage-automated-testing-settings"></a>إدارة إعدادات الاختبار التلقائي
 
 يمكن للمسؤول العام لمؤسستك تغيير إعدادات الاختبار التلقائي في أي وقت. يمكنك إيقاف تشغيل الاختبار التلقائي لإجراءات التحسين الشائعة، أو تشغيله للإجراءات الفردية. اتبع الإرشادات أدناه لتغيير إعدادات الاختبار التلقائي.
 
-1. حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> في مدخل توافق Microsoft Purview.
+1. حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> في مدخل التوافق في Microsoft Purview.
 
 2. في صفحة الإعدادات، حدد **Compliance Manager**.
 
@@ -145,11 +153,8 @@ ms.locfileid: "65091016"
 
 6. حدد **"حفظ"** لحفظ الإعدادات. ستتلقى رسالة تأكيد في أعلى الشاشة تفيد بحفظ التحديد. إذا تلقيت إشعار فشل، فحاول مرة أخرى.
 
-**ملاحظه:** يمكن للمسؤول العام فقط تشغيل التحديثات التلقائية لكافة الإجراءات أو إيقاف تشغيلها. يمكن لمسؤول Compliance Manager تشغيل التحديثات التلقائية للإجراءات الفردية، ولكن ليس لجميع الإجراءات على مستوى العالم.
-
-**معرفة المزيد**
-- [تعرف على المزيد حول كيفية مساهمة المراقبة المستمرة في درجة التوافق الخاصة بك](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
-- [تعرف على المزيد حول تعيين مصدر اختبار لإجراء تحسين](compliance-manager-improvement-actions.md#update-testing-source).
+> [!NOTE]
+> يمكن للمسؤول العام فقط تشغيل التحديثات التلقائية لكافة الإجراءات أو إيقاف تشغيلها. يمكن لمسؤول Compliance Manager تشغيل التحديثات التلقائية للإجراءات الفردية، ولكن ليس لجميع الإجراءات على مستوى العالم.
 
 ### <a name="manage-user-history"></a>إدارة محفوظات المستخدمين
 
@@ -159,7 +164,7 @@ ms.locfileid: "65091016"
 
 **للبحث عن إعدادات محفوظات المستخدم:**
 
-1. حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> في مدخل توافق Microsoft Purview.
+1. حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> في مدخل التوافق في Microsoft Purview.
 
 2. في صفحة الإعدادات، حدد **Compliance Manager**.
 
@@ -177,7 +182,7 @@ ms.locfileid: "65091016"
 
 **اتبع الخطوات أدناه لتصدير تقرير من قبل المستخدم:**
 
-1. حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> في مدخل توافق Microsoft Purview.
+1. حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> في مدخل التوافق في Microsoft Purview.
 
 2. في صفحة الإعدادات، حدد **Compliance Manager**.
 
@@ -187,7 +192,7 @@ ms.locfileid: "65091016"
 
 5. من القائمة المنسدلة **"تحديد** "، اختر **"تصدير التقرير**".
 
-6. بمجرد إنشاء ملف Excel لتقريرك، يمكنك فتحه وحفظه على جهازك المحلي.
+6. بمجرد إنشاء ملف Excel للتقرير، يمكنك فتحه وحفظه على جهازك المحلي.
 
 #### <a name="reassign-improvement-actions-to-another-user"></a>إعادة تعيين إجراءات التحسين إلى مستخدم آخر
 
@@ -195,7 +200,7 @@ ms.locfileid: "65091016"
 
 **اتبع الخطوات أدناه لإعادة تعيين إجراءات التحسين إلى مستخدم آخر:**
 
-1. حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> في مدخل توافق Microsoft Purview.
+1. حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> في مدخل التوافق في Microsoft Purview.
 
 2. في صفحة الإعدادات، حدد **Compliance Manager**.
 
@@ -222,7 +227,7 @@ ms.locfileid: "65091016"
 
 لحذف محفوظات المستخدم، اتبع الخطوات أدناه:
 
-1. حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> في مدخل توافق Microsoft Purview.
+1. حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> في مدخل التوافق في Microsoft Purview.
 
 2. في صفحة الإعدادات، حدد **Compliance Manager**.
 
@@ -246,7 +251,7 @@ ms.locfileid: "65091016"
 
 تظهر درجة التوافق الخاصة بك بشكل بارز في الأعلى. وهو يعرض نسبة مئوية تستند إلى نقاط يمكن تحقيقها لإكمال إجراءات التحسين التي تعالج معايير ولوائح حماية البيانات الرئيسية. النقاط من [إجراءات Microsoft](compliance-manager-assessments.md#microsoft-actions-tab)، التي تتم إدارتها من Microsoft الخاصة بي، تحسب أيضا نحو درجة التوافق الخاصة بك.
 
-عندما تصل إلى Compliance Manager للمرة الأولى، تستند درجاتك الأولية إلى [أساس حماية البيانات Microsoft 365](compliance-manager-assessments.md#data-protection-baseline-default-assessment). هذا التقييم الأساسي، الذي يتوفر لجميع المؤسسات، هو مجموعة من الضوابط التي تتضمن اللوائح والمعايير المشتركة للصناعة. يفحص Compliance Manager حلول Microsoft 365 الحالية ويقدم لك تقييما أوليا استنادا إلى إعدادات الخصوصية والأمان الحالية. أثناء إضافة التقييمات ذات الصلة بمؤسستك، تصبح درجاتك أكثر جدوى بالنسبة لك.
+عندما تصل إلى Compliance Manager للمرة الأولى، تستند درجاتك الأولية إلى [أساس حماية البيانات في Microsoft 365](compliance-manager-assessments.md#data-protection-baseline-default-assessment). هذا التقييم الأساسي، الذي يتوفر لجميع المؤسسات، هو مجموعة من الضوابط التي تتضمن اللوائح والمعايير المشتركة للصناعة. يفحص Compliance Manager حلول Microsoft 365 الحالية ويقدم لك تقييما أوليا استنادا إلى إعدادات الخصوصية والأمان الحالية. أثناء إضافة التقييمات ذات الصلة بمؤسستك، تصبح درجاتك أكثر جدوى بالنسبة لك.
 
 **تعرف على المزيد:** [فهم كيفية حساب درجة التوافق الخاصة بك](compliance-score-calculation.md).
 
@@ -365,7 +370,7 @@ ms.locfileid: "65091016"
 - **إجراءات التحسين الخاصة بك**: عدد الإجراءات المكتملة لتلبية تنفيذ عناصر التحكم الخاصة بك
 - **إجراءات Microsoft**: عدد الإجراءات المكتملة لتلبية تنفيذ عناصر تحكم Microsoft
 - **المجموعة**: اسم المجموعة التي ينتمي إليها التقييم
-- **المنتج**: منتج مقترن، مثل Microsoft 365 أو منتج آخر محدد للتقييم
+- **المنتج**: منتج مقترن، مثل Microsoft 365 أو منتج آخر معرف للتقييم
 - **التنظيم**: المعيار التنظيمي أو النهج أو القانون الذي ينطبق على التقييم
 
 ### <a name="filtering-your-assessments-view"></a>تصفية طريقة عرض التقييمات
@@ -388,7 +393,7 @@ ms.locfileid: "65091016"
 
 يعرض عداد **القوالب المنشطة** بالقرب من أعلى الصفحة عدد قوالب التقييم النشطة المستخدمة حاليا من إجمالي عدد القوالب المتوفرة لمؤسستك لاستخدامها. راجع [توفر القالب والترخيص](compliance-manager-templates.md#template-availability-and-licensing) للحصول على مزيد من المعلومات.
 
-حدد قالبا من صفه لإظهار صفحة التفاصيل الخاصة به، والتي تحتوي على وصف للقالب ومعلومات إضافية حول تفاصيل المصادقة والنطاق وعناصر التحكم. من هذه الصفحة، يمكنك تحديد الأزرار المناسبة لإنشاء تقييم، أو تصدير بيانات القالب إلى Excel، أو تعديل القالب.
+حدد قالبا من صفه لإظهار صفحة التفاصيل الخاصة به، والتي تحتوي على وصف للقالب ومعلومات إضافية حول تفاصيل المصادقة والنطاق وعناصر التحكم. من هذه الصفحة، يمكنك تحديد الأزرار المناسبة لإنشاء تقييم أو تصدير بيانات القالب إلى Excel أو تعديل القالب.
 
 **تعرف على المزيد:** [اقرأ كيفية العمل باستخدام قوالب التقييم](compliance-manager-templates.md).
 

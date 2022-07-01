@@ -27,18 +27,21 @@ search.appverid:
 - MOE150
 - BEA160
 description: عند شراء Microsoft 365 Business Standard، يتوفر لديك خيار استخدام مجال تملكه، أو شراء مجال أثناء التسجيل.
-ms.openlocfilehash: a08f5eb5c0a1bb2a77242f4b661c683310568d81
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d5504edaff4c9d406d218d8ab8333b6d50af406e
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092812"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573880"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>إعداد Microsoft 365 Business Standard بمجال جديد أو موجود
 
 عند شراء Microsoft 365 Business Standard، يتوفر لديك خيار إضافة مجال تملكه، أو شراء مجال. تحقق من [التسجيل للحصول على اشتراك Microsoft 365 Business Standard](../simplified-signup/signup-business-standard.md).
 
 في هذه المقالة، سنرشدك خلال خطوات إضافة مجال موجود تملكه بالفعل أو شراء مجال جديد. إذا اشتريت مجالا جديدا عند التسجيل، يتم إعداد مجالك بالكامل ويمكنك الانتقال إلى [إضافة مستخدمين وتعيين التراخيص](#add-users-and-assign-licenses).
+
+> [!Tip]
+> إذا كان لديك اشتراك Microsoft 365 Business Premium، فالرجاء مراجعة [إعداد Microsoft 365 Business Premium](../../business-premium/m365bp-setup.md).
 
 ## <a name="set-up-microsoft-365-for-business"></a>إعداد Microsoft 365 للأعمال
 
@@ -59,7 +62,7 @@ ms.locfileid: "65092812"
 
 1. من صفحة **كيفية تسجيل الدخول** في Microsoft 365 Business Standard التسجيل، اختر **إنشاء حساب بريد إلكتروني جديد للأعمال (متقدم).**
 
-2. في صفحة **تثبيت تطبيقات Office**، يمكنك بشكل اختياري تثبيت التطبيقات على الكمبيوتر الخاص بك.
+2. في صفحة **"تثبيت تطبيقات Office** "، يمكنك بشكل اختياري تثبيت التطبيقات على الكمبيوتر الخاص بك.
 
 3. في الخطوة **"إضافة مجال** "، أدخل اسم المجال الذي تريد استخدامه (مثل contoso.com).
 
@@ -82,7 +85,7 @@ ms.locfileid: "65092812"
 
 2. بعد إضافة المستخدمين، ستحصل أيضا على خيار لمشاركة بيانات الاعتماد مع المستخدمين الجدد الذين أضفتها. يمكنك اختيار طباعتها أو إرسالها بالبريد الإلكتروني أو تنزيلها.
 
-## <a name="connect-your-domain"></a>الاتصال مجالك
+## <a name="connect-your-domain"></a>توصيل مجالك
   
 لإعداد الخدمات، يجب تحديث السجلات لدى مضيف DNS أو جهة تسجيل المجالات.
   
@@ -109,21 +112,21 @@ ms.locfileid: "65092812"
 
 ## <a name="finish-setting-up"></a>إنهاء الإعداد
 
-اتبع الخطوات أدناه لإعداد Outlook Teams OneDrive وموقع الويب الخاص بك.
+اتبع الخطوات أدناه لإعداد Outlook وTeams وOneDrive وموقع الويب الخاص بك.
 
 ### <a name="step-set-up-outlook-for-email"></a>الخطوة: إعداد Outlook للبريد الإلكتروني
 
-1. في Windows قائمة البدء، ابحث عن Outlook وحدده.
+1. في قائمة البدء في Windows، ابحث عن Outlook وحدده.
 
     (إذا كنت تستخدم جهاز Mac، فافتح Outlook من شريط الأدوات أو حدد موقعه باستخدام "الباحث".)
 
-    إذا قمت بتثبيت Outlook للتو، في صفحة الترحيب، حدد **"التالي**".
+    إذا قمت بتثبيت Outlook للتو، فحدد **"التالي**" في صفحة الترحيب.
 
 2. اختر **"إضافة حساب لمعلومات** \> **الملف**\>".
 
-3. أدخل عنوان بريدك الإلكتروني في Microsoft وحدد **الاتصال**.
+3. أدخل عنوان بريدك الإلكتروني في Microsoft وحدد **Connect**.
 
-## <a name="watch-set-up-outlook-for-email"></a>شاهد: إعداد Outlook للبريد الإلكتروني
+## <a name="watch-set-up-outlook-for-email"></a>مشاهدة: إعداد Outlook للبريد الإلكتروني
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
@@ -137,11 +140,11 @@ ms.locfileid: "65092812"
 
     في Outlook، اختر **File** \> **Open &amp; Export** \> **Import/Export**.
 
-    حدد **"تصدير إلى ملف"** ثم اتبع الخطوات لتصدير ملف البيانات Outlook (pst.) وأي مجلدات فرعية.
+    حدد **"تصدير إلى ملف"** ثم اتبع الخطوات لتصدير ملف بيانات Outlook (pst.) وأي مجلدات فرعية.
 
 2. **استيراد البريد الإلكتروني القديم**
 
-    في Outlook، اختر **File** \> **Open &amp; Export** \> **Import/Export** مرة أخرى.
+    في Outlook، اختر **"فتح ملف** \> **&amp; تصدير** \> **استيراد/تصدير**" مرة أخرى.
 
     هذه المرة، حدد **"استيراد" من برنامج أو ملف آخر** واتبع الخطوات لاستيراد ملف النسخ الاحتياطي الذي أنشأته عند تصدير بريدك الإلكتروني القديم.
 
@@ -153,15 +156,15 @@ ms.locfileid: "65092812"
 
 يمكنك أيضا استخدام <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a> لاستيراد البريد الإلكتروني للجميع. لمزيد من المعلومات، راجع [ترحيل حسابات بريد إلكتروني متعددة](/Exchange/mailbox-migration/mailbox-migration).
 
-## <a name="set-up-microsoft-teams-and-onedrive-for-business"></a>إعداد Microsoft Teams OneDrive للأعمال
+## <a name="set-up-microsoft-teams-and-onedrive-for-business"></a>إعداد Microsoft Teams وOneDrive للأعمال
 
-حدد أيقونة سحابة OneDrive من شريط المهام واتبع الخطوات لنقل ملفاتك إلى مجلد OneDrive for Business الجديد. حدد **"التالي**" لإعداد Microsoft Teams.
+حدد أيقونة سحابة OneDrive من شريط المهام واتبع الخطوات لنقل ملفاتك إلى مجلد OneDrive for Business الجديد. حدد **"التالي** " لإعداد Microsoft Teams.
 
-1. افتح Microsoft Teams، وحدد أيقونة ملف التعريف، ثم **أضف حساب العمل أو المؤسسة التعليمية**. اتبع الخطوات لإضافة حسابك الجديد إلى Teams.
+1. افتح Microsoft Teams، وحدد أيقونة ملف التعريف الخاص بك، ثم **أضف حساب العمل أو المؤسسة التعليمية**. اتبع الخطوات لإضافة حسابك الجديد إلى Teams.
 
 ## <a name="use-a-public-website"></a>استخدام موقع ويب عام
 
-لا يتضمن Microsoft 365 موقع ويب عاما لأعمالك. إذا كنت تريد إعداد واحد، ففكر في استخدام شريك Microsoft، مثل GoDaddy أو WIX.
+لا يتضمن Microsoft 365 موقعا عاما على ويب لأعمالك. إذا كنت تريد إعداد واحد، ففكر في استخدام شريك Microsoft، مثل GoDaddy أو WIX.
   
 1. من مركز الإدارة، انتقل إلى **الموارد**، ثم حدد **موقع ويب عام**.
 
@@ -173,7 +176,7 @@ ms.locfileid: "65092812"
 
 ## <a name="invite-users-to-join-your-subscription-and-organization"></a>دعوة المستخدمين للانضمام إلى اشتراكك والمؤسسة
 
-بمجرد إعداد مؤسستك، يمكنك دعوة مستخدمين آخرين للانضمام إلى اشتراكك في Microsoft 365 الأعمال. سيحصلون على حق الوصول إلى جميع ميزات الاشتراك.
+بمجرد إعداد مؤسستك، يمكنك دعوة مستخدمين آخرين للانضمام إلى اشتراكك في Microsoft 365 Business. سيحصلون على حق الوصول إلى جميع ميزات الاشتراك.
 
 [دعوة المستخدمين إلى اشتراكي](../simplified-signup/admin-invite-business-standard.md)
 
