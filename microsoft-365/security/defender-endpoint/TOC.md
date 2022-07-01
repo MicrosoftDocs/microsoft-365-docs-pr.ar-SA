@@ -44,32 +44,31 @@
 #### [استخدم PowerShell أو WMI أو MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [سيناريوهات ترحيل الخادم](server-migration.md)
 
-## [أجهزة التجهيز والتكوين]()
+## [إلحاق الأجهزة وتكوينها]()
 ### [أجهزة التجهيز وتكوين Microsoft Defender لنقطة النهاية](onboard-configure.md)
-
-
-### [Microsoft Defender لنقطة النهاية على Windows وWindows Server]()
-#### [أدوات وطرق الإعداد لنقاط نهاية Windows](configure-endpoints.md)
-#### [أجهزة Windows وخوادم Windows الأجهزة]()
-
-##### [الإصدارات السابقة من Windows](onboard-downlevel.md)
-
-##### [أجهزة Windows وخوادم Windows الأجهزة]()
-###### [تشغيل Windows Server 2012 R2 و2016 Semi-Annual و2019 و2022](configure-server-endpoints.md)
-###### [أجهزة Windows باستخدام برنامج نصي محلي](configure-endpoints-script.md)
-###### [أجهزة Windows باستخدام نهج المجموعة](configure-endpoints-gp.md)
-###### [أجهزة Windows التي تستخدم Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-###### [أجهزة Windows باستخدام أدوات الأجهزة المحمولة إدارة الجهاز المحمول](configure-endpoints-mdm.md)
-###### [أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة](configure-endpoints-vdi.md)
-###### [أجهزة Windows 10 متعددة جلسات العمل في Windows سطح المكتب الظاهري](onboard-windows-multi-session-device.md)
-
-#### [التكامل مع Microsoft Defender for Cloud](azure-server-integration.md)
-
+### [إلحاق عميل Windows](onboard-windows-client.md)
+#### [إلحاق عميل Windows باستخدام Intune](configure-endpoints-mdm.md)
+#### [إلحاق عميل Windows باستخدام Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+#### [إلحاق أجهزة Windows باستخدام نهج المجموعة](configure-endpoints-gp.md)
+#### [إلحاق Windows Client باستخدام برنامج نصي محلي](configure-endpoints-script.md)
+#### [أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة](configure-endpoints-vdi.md)
+#### [أجهزة Windows 10 متعددة جلسات العمل في Windows سطح المكتب الظاهري](onboard-windows-multi-session-device.md)
 #### [أجهزة التجهيز بدون اتصال بالإنترنت](onboard-offline-machines.md)
-#### [تشغيل اختبار الكشف على جهاز تم تشغيله حديثاً](run-detection-test.md)
-#### [تشغيل هجمات محاكاة على الأجهزة](attack-simulations.md)
-#### [تكوين إعدادات الوكيل والاتصال بالإنترنت](configure-proxy-internet.md)
-#### [إنشاء قاعدة إعلامات التهيئة أو إيقاف التشغيل](onboarding-notification.md)
+#### [الإصدارات السابقة من Windows](onboard-downlevel.md)
+
+
+
+### [إلحاق Windows Server](onboard-windows-server.md)
+#### [تشغيل Windows Server 2012 R2 و2016 Semi-Annual و2019 و2022](configure-server-endpoints.md)
+#### [أجهزة Windows التي تستخدم Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+#### [إلحاق أجهزة Windows Server باستخدام نهج المجموعة](configure-endpoints-gp.md)
+#### [إلحاق Windows Server باستخدام برنامج نصي محلي](configure-endpoints-script.md)
+#### [أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة](configure-endpoints-vdi.md)
+
+
+
+
+
 
 ### [Microsoft Defender لنقطة النهاية على أنظمة تشغيل أخرى]()
 #### [الأجهزة غير المجهزة Windows](configure-endpoints-non-windows.md)
@@ -175,6 +174,14 @@
 ###### [الأسئلة والأعلام حول استكشاف الأخطاء وإصلاحها](ios-troubleshoot.md)
 
 ###### [الخصوصية](ios-privacy.md)
+
+
+
+### [التكامل مع Microsoft Defender for Cloud](azure-server-integration.md)
+### [تشغيل اختبار الكشف على جهاز تم تشغيله حديثاً](run-detection-test.md)
+### [تشغيل هجمات محاكاة على الأجهزة](attack-simulations.md)
+### [تكوين إعدادات الوكيل والاتصال بالإنترنت](configure-proxy-internet.md)
+### [إنشاء قاعدة إعلامات التهيئة أو إيقاف التشغيل](onboarding-notification.md)
 
 ### [قم بإدارة Microsoft Defender لإعدادات تكوين نقطة النهاية على الأجهزة باستخدام دارة نقاط النهاية في Microsoft](security-config-management.md)
 
@@ -326,6 +333,7 @@
 #### [استثناءات برنامج مكافحة الفيروسات من Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
 ##### [الاستثناءات استناداً إلى ملحق الملف وموقع المجلد](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [الاستثناءات للملفات التي يتم فتحها بواسطة العمليات](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [استثناءات الملفات والمجلدات السياقية](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md)
 ##### [استثناءات Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [الأخطاء الشائعة التي يجب تجنبها](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
