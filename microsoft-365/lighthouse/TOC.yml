@@ -70,6 +70,8 @@
       href: m365-lighthouse-mitigate-threats.md
     - name: نظرة عامة على صفحة أمان الجهاز
       href: m365-lighthouse-device-security-overview.md
+    - name: نظرة عامة على الرسائل المعزولة
+      href: m365-lighthouse-quarantine-messages-overview.md
 - name: الحصول على التعليمات والدعم
   items:
     - name: الحصول على التعليمات والدعم

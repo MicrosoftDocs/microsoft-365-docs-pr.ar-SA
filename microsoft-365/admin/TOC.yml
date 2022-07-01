@@ -241,6 +241,28 @@
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
             - name: إنشاء سجلات DNS في أي موفر استضافة DNS
               href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+            - name: توصيل سجلات نظام أسماء المجالات (DNS) الخاصة بك في IONOS من 1&1
+              href: dns/create-dns-records-at-1-1-internet.md
+            - name: توصيل سجلات نظام أسماء المجالات (DNS) الخاصة بك على 123-reg.co.uk
+              href: dns/create-dns-records-at-123-reg-co-uk.md
+            - name: توصيل سجلات نظام أسماء المجالات (DNS) الخاصة بك على Amazon Web Services (AWS)
+              href: dns/create-dns-records-at-aws.md
+            - name: توصيل سجلات نظام أسماء المجالات (DNS) الخاصة بك على Cloudflare
+              href: dns/create-dns-records-at-cloudflare.md
+            - name: توصيل سجلات نظام أسماء المجالات (DNS) الخاصة بك على GoDaddy
+              href: dns/create-dns-records-at-godaddy.md
+            - name: توصيل سجلات نظام أسماء المجالات (DNS) الخاصة بك على Namecheap
+              href: dns/create-dns-records-at-namecheap.md
+            - name: توصيل سجلات نظام أسماء المجالات (DNS) الخاصة بك على Network Solutions
+              href: dns/create-dns-records-at-network-solutions.md
+            - name: توصيل سجلات نظام أسماء المجالات (DNS) الخاصة بك على OVH
+              href: dns/create-dns-records-at-ovh.md
+            - name: توصيل سجلات نظام أسماء المجالات (DNS) الخاصة بك على web.com
+              href: dns/create-dns-records-at-web-com.md
+            - name: توصيل سجلات نظام أسماء المجالات (DNS) الخاصة بك على Wix
+              href: dns/create-dns-records-at-wix.md
+            - name: إنشاء سجلات نظام أسماء المجالات (DNS) لشركة Microsoft باستخدام DNS مستند إلى Windows
+              href: dns/create-dns-records-using-windows-based-dns.md
         - name: استكشاف مشاكل المجال وإصلاحها
           href: get-help-with-domains/find-and-fix-issues.md
     - name: إدارة البيانات والخدمات

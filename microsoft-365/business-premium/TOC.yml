@@ -64,24 +64,26 @@
           href: create-communications-site.md
 - name: حماية الأجهزة المدارة
   items:
-    - name: نظرة عامة
-      href: m365bp-protect-devices.md
-    - name: إعداد الأجهزة المحمولة
-      href: m365bp-managed-devices-setup.md
-    - name: إلحاق الأجهزة المسجلة وتطبيق النهج
-      href: m365bp-onboard-devices-mdb.md
-    - name: حماية أجهزة Windows
+    - name: إعداد الأجهزة المدارة وتأمينها
       items:
-        - name: تأمين أجهزة Windows
-          href: m365bp-secure-windows-devices.md
-        - name: إدارة أجهزة Windows
-          href: m365bp-manage-windows-devices.md
-        - name: الاستعداد لنشر عميل Office
-          href: m365bp-prepare-for-office-client-deployment.md
-        - name: إنشاء إعدادات حماية التطبيقات لأجهزة Windows
-          href: m365bp-protection-settings-for-windows-10-devices.md
-        - name: التحقق من صحة إعدادات التطبيق على أجهزة Windows
-          href: m365bp-validate-settings-on-windows-10-pcs.md
+        - name: نظرة عامة
+          href: m365bp-protect-devices.md
+        - name: إعداد الأجهزة المحمولة
+          href: m365bp-managed-devices-setup.md
+        - name: إلحاق الأجهزة المسجلة وتطبيق النهج
+          href: m365bp-onboard-devices-mdb.md
+        - name: حماية أجهزة Windows
+          items:
+            - name: تأمين أجهزة Windows
+              href: m365bp-secure-windows-devices.md
+            - name: إدارة أجهزة Windows
+              href: m365bp-manage-windows-devices.md
+            - name: الاستعداد لنشر عميل Office
+              href: m365bp-prepare-for-office-client-deployment.md
+            - name: إنشاء إعدادات حماية التطبيقات لأجهزة Windows
+              href: m365bp-protection-settings-for-windows-10-devices.md
+            - name: التحقق من صحة إعدادات التطبيق على أجهزة Windows
+              href: m365bp-validate-settings-on-windows-10-pcs.md
     - name: مراجعة نهج الجهاز وتحريرها
       href: m365bp-view-edit-create-mdb-policies.md
     - name: إدارة مجموعات الأجهزة
@@ -134,6 +136,8 @@
       href: m365bp-validate-settings-on-android-or-ios.md
     - name: ميزات حماية الخريطة لإعدادات Intune
       href: m365bp-map-protection-features-to-intune-settings.md
+    - name: أدوار مسؤول Intune
+      href: m365bp-intune-admin-roles-in-the-mac.md
     - name: إعداد إدارة التوافق
       href: m365bp-set-up-compliance.md
     - name: Microsoft Defender for Business
