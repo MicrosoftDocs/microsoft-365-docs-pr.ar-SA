@@ -28,24 +28,28 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: تعرف على كيفية إعداد المصادقة متعددة العوامل لمؤسستك.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 6879a49bf0868081fed6ad8171138ce7001783c4
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 00a92a7755c0200d0ad707e84ceb13fac7c978c9
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739904"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603848"
 ---
-# <a name="set-up-multifactor-authentication-for-microsoft-365"></a>إعداد المصادقة متعددة العوامل Microsoft 365
+# <a name="set-up-multifactor-authentication-for-microsoft-365"></a>إعداد المصادقة متعددة العوامل ل Microsoft 365
 
-تعني المصادقة متعددة العوامل أنه يجب عليك أنت وموظفيك توفير أكثر من طريقة واحدة لتسجيل الدخول إلى Microsoft 365 هي واحدة من أسهل الطرق لتأمين عملك. استنادا إلى فهمك [للمصادقة متعددة العوامل (MFA) ودعمها في Microsoft 365](multi-factor-authentication-microsoft-365.md)، فقد حان الوقت لإعدادها وطرحها في مؤسستك. 
+اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+
+تعني المصادقة متعددة العوامل أنه يجب عليك أنت وموظفيك توفير أكثر من طريقة واحدة لتسجيل الدخول إلى Microsoft 365 هي واحدة من أسهل الطرق لتأمين عملك. استنادا إلى فهمك [للمصادقة متعددة العوامل (MFA) ودعمها في Microsoft 365](multi-factor-authentication-microsoft-365.md)، حان الوقت لإعدادها وطرحها في مؤسستك. 
 
 > [!IMPORTANT]
 > إذا اشتريت اشتراكك أو إصدارك التجريبي بعد 21 أكتوبر 2019، وتمت مطالبتك بمصادقة متعددة العوامل (MFA) عند تسجيل الدخول، فسيتم تمكين [إعدادات الأمان الافتراضية](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) تلقائيا لاشتراكك.
 
 > [!TIP]
-> إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى متخصصي الشركات الصغيرة أثناء تطوير أعمالك، بدءً من الإلحاق إلى الاستخدام اليومي.
+> إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى خبراء الشركات الصغيرة أثناء تنمية أعمالك، بدءا من الإلحاق إلى الاستخدام اليومي.
 
 ## <a name="watch-turn-on-multifactor-authentication"></a>المراقبة: تشغيل المصادقة متعددة العوامل
+
+اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2197909).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
@@ -100,7 +104,7 @@ ms.locfileid: "65739904"
 
 يتوفر الوصول المشروط للعملاء الذين اشتروا Azure AD Premium P1، أو التراخيص التي تتضمن هذا، مثل Microsoft 365 Business Premium، Microsoft 365 E3. لمزيد من المعلومات، راجع [إنشاء نهج الوصول المشروط](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
-يتوفر الوصول المشروط المستند إلى المخاطر من خلال ترخيص P2 Azure AD Premium، أو التراخيص التي تتضمن هذا، مثل Microsoft 365 E5. لمزيد من المعلومات، راجع [الوصول المشروط المستند إلى المخاطر](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+يتوفر الوصول المشروط المستند إلى المخاطر من خلال Azure AD ترخيص Premium P2، أو التراخيص التي تتضمن هذا، مثل Microsoft 365 E5. لمزيد من المعلومات، راجع [الوصول المشروط المستند إلى المخاطر](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
 لمزيد من المعلومات حول Azure AD P1 وP2، راجع [أسعار Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
@@ -108,10 +112,8 @@ ms.locfileid: "65739904"
 
 بالنسبة لمعظم الاشتراكات، يتم تشغيل المصادقة الحديثة تلقائيا، ولكن إذا اشتريت اشتراكك قبل أغسطس 2017، فمن المحتمل أنك ستحتاج إلى تشغيل المصادقة الحديثة للحصول على ميزات مثل المصادقة متعددة العوامل للعمل في عملاء Windows مثل Outlook.
 
-
-1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>، في جزء التنقل الأيمن، اختر **إعدادات الإعدادات** \> **Org**.
+1. في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>، في جزء التنقل الأيمن، اختر إعدادات **Settings** \> **Org**.
 2. ضمن علامة التبويب **"الخدمات** "، اختر **المصادقة الحديثة**، وفي جزء **المصادقة الحديثة** ، تأكد من تحديد **تمكين المصادقة الحديثة** . اختر **"حفظ التغييرات**".
-
 
 ## <a name="next-steps"></a>الخطوات التالية
 

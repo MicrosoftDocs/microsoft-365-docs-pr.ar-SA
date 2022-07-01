@@ -25,14 +25,16 @@ search.appverid:
 - BCS160
 - MET150
 description: تعرف على كيفية تأمين أجهزة الكمبيوتر Windows 10 بعد إعداد Microsoft 365 Business Premium.
-ms.openlocfilehash: 872fce9124f6a27dd884ed9d740baa9d195d8f95
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: a1a7743605992899ed2cfcbb0089e971716d5a13
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663437"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602381"
 ---
 # <a name="secure-windows-10-computers"></a>تأمين أجهزة كمبيوتر تعمل بنظام التشغيل Windows 10
+
+اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 تنطبق هذه المقالة على Microsoft 365 Business Premium.
 
@@ -40,17 +42,19 @@ ms.locfileid: "65663437"
 
 ## <a name="watch-secure-your-windows-10-pcs"></a>المراقبة: تأمين أجهزة الكمبيوتر Windows 10
 
+اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198200).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
 
 بعد إعداد حماية الجهاز في Microsoft 365 Business، اتبع هذه الخطوات لحماية أجهزة الكمبيوتر Windows 10.
 
 1. في مركز مسؤولي Microsoft 365، اختر <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**"إعداد**</a>".
 
-2. ضمن **"تأمين أجهزة الكمبيوتر Windows**"، حدد **"عرض**".
+2. ضمن  **"تأمين أجهزة الكمبيوتر التي تعمل بنظام التشغيل Windows** "، حدد  **"عرض**".
 
 3. حدد  **بدء الاستخدام**.
 
-4. ضمن **روبوت Who هل يجب تطبيق النهج؟**، اختر ما إذا كان سيتم تطبيق التحديدات على جميع الأشخاص في مؤسستك أو على مجموعات أمان معينة.
+4. ضمن **من يجب تطبيق النهج؟**، اختر ما إذا كان سيتم تطبيق التحديدات على جميع الأشخاص في مؤسستك أو على مجموعات أمان معينة.
 
 5. حدد  **"حفظ التغييرات**".
 

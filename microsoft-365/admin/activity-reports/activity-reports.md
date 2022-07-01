@@ -23,20 +23,24 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: احصل على تقرير دوري حول كيفية استخدام الأشخاص في مؤسستك لخدمات Microsoft 365 وتصفح كل مخطط للحصول على مزيد من الرؤى.
-ms.openlocfilehash: 481f7abf0015994ab211f55feedabc4aa615dbca
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 05bee2950cb50b0b5a21ef67e9f73cec5e78b07a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486287"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601597"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>تقارير Microsoft 365 في مركز الإدارة
 
-يمكنك بسهولة معرفة كيفية استخدام الأشخاص في شركتك لخدمات Microsoft 365. على سبيل المثال، يمكنك تحديد من يستخدم خدمة كثيرا ويصل إلى الحصص النسبية، أو من قد لا يحتاج إلى ترخيص Microsoft 365 على الإطلاق. لن يتم تضمين نموذج الترخيص الدائم في التقارير.
+اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
+يمكنك بسهولة معرفة كيفية استخدام الأشخاص في شركتك لخدمات Microsoft 365. على سبيل المثال، يمكنك تحديد من يستخدم خدمة كثيرا ويصل إلى الحصص النسبية، أو من قد لا يحتاج إلى ترخيص Microsoft 365 على الإطلاق. لن يتم تضمين نموذج الترخيص الدائم في التقارير. 
+  
 تتوفر التقارير لآخر 7 أيام و30 يوما و90 يوما و180 يوما. لن تكون البيانات موجودة لجميع فترات إعداد التقارير على الفور. تصبح التقارير متوفرة في غضون 48 ساعة.
 
 ## <a name="watch-act-on-a-usage-report-in-office-365"></a>شاهد: العمل على تقرير استخدام في Office 365
+  
+اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198103).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
 
@@ -171,7 +175,7 @@ URL هو https://graph.microsoft.com/beta/admin/reportSettings
 
 ومع ذلك، عند تحديد يوم معين، لمدة تصل إلى 28 يوما من التاريخ الحالي، يعرض التقرير استخدام المستخدم لذلك اليوم في جدول "تفاصيل المستخدم".
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [تحليلات استخدام Microsoft 365](../usage-analytics/usage-analytics.md) (مقالة)\
 [تخصيص التقارير في تحليلات استخدام Microsoft 365](../usage-analytics/customize-reports.md) (مقالة)

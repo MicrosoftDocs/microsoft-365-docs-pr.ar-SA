@@ -29,16 +29,18 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: استخدم معالج الإعداد لإضافة مجالك إلى Microsoft 365 في مركز مسؤولي Microsoft 365 عن طريق إضافة سجل DNS لدى مضيف DNS.
-ms.openlocfilehash: 64b82aab051af2c9d5444042f27009b4e02f1ad8
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: be72f10727a5d4ed168740d80eb04078584137d9
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492027"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602889"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>إضافة مجال إلى Microsoft 365
 
- **[تحقق من الأسئلة المتداولة حول المجالات](domains-faq.yml)** إذا لم تعثر على ما تبحث عنه. 
+ **[تحقق من الأسئلة المتداولة حول المجالات](domains-faq.yml)** إذا لم تعثر على ما تبحث عنه.
+
+اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
   
 ## <a name="before-you-begin"></a>قبل البدء
 
@@ -48,6 +50,8 @@ ms.locfileid: "66492027"
 > إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى خبراء الشركات الصغيرة أثناء تنمية أعمالك، بدءا من الإلحاق إلى الاستخدام اليومي.
 
 ## <a name="watch-add-a-domain"></a>شاهد: إضافة مجال
+
+اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198213).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 
@@ -186,7 +190,7 @@ ms.locfileid: "66492027"
 
 لمزيد من التفاصيل حول كيفية إضافة مجال onmicrosoft.com، راجع [إضافة مجال onmicrosoft.com أو استبداله](add-or-replace-your-onmicrosoftcom-domain.md).
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [الأسئلة المتداولة حول المجالات](domains-faq.yml) (مقالة)</br>
 [ما هو المجال؟](../get-help-with-domains/what-is-a-domain.md) (مقالة)</br>

@@ -17,15 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 19e654c979428e25d1365cbab5b6f75b39adbdb3
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: c3c693a46c3c22749a4e8ff2d572cef56bc06d9b
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705505"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603737"
 ---
 # <a name="enable-attack-surface-reduction-asr-rules"></a>تمكين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)
 
@@ -99,7 +98,7 @@ ms.locfileid: "64705505"
 
 2. في **محرر إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر** وانقر فوق **القوالب الإدارية**.
 
-3. قم بتوسيع الشجرة إلى **مكونات** \> Windows **برنامج الحماية من الفيروسات من Microsoft Defender** \> **تقليل سطح الهجوم** **الحماية من مخاطر الهجمات من Microsoft Defender**\>.
+3. قم بتوسيع الشجرة إلى **مكونات** \> **Microsoft Defender Antivirus** \> **Microsoft Defender Exploit Guard** \> **Attack.**
 
 4. انقر نقرا مزدوجا فوق **"استبعاد الملفات والمسارات" من إعداد "قواعد تقليل الأجزاء** المعرضة للهجوم" وقم بتعيين الخيار "**ممكن".** حدد **"إظهار** " وأدخل كل ملف أو مجلد في عمود **"اسم القيمة** ". أدخل **0** في عمود **"القيمة** " لكل عنصر.
 
@@ -108,7 +107,7 @@ ms.locfileid: "64705505"
 
 ##### <a name="use-powershell-to-exclude-files-and-folders"></a>استخدام PowerShell لاستبعاد الملفات والمجلدات
 
-1. اكتب **powershell** في قائمة البدء، وانقر بزر الماوس الأيمن **فوق Windows PowerShell** وحدد **"تشغيل" كمسؤول**.
+1. اكتب **powershell** في قائمة البدء، وانقر بزر **الماوس الأيمن فوق Windows PowerShell** وحدد **"تشغيل" كمسؤول**.
 
 2. أدخل cmdlet التالي:
 
@@ -131,12 +130,12 @@ ms.locfileid: "64705505"
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>مواضيع إضافية في مجموعة النشر هذه
 
-[نظرة عامة على نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment.md)
+[نظرة عامة على دليل نشر قواعد الحد من سطح الهجوم (ASR)](attack-surface-reduction-rules-deployment.md)
 
 [تخطيط نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[قواعد اختبار تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[اختبار قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
 [تشغيل قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[مرجع قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-reference.md)
+[مرجع قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-reference.md)

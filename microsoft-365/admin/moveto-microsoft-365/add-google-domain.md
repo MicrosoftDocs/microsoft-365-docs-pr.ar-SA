@@ -21,33 +21,37 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: تعرف على كيفية نقل مجالك من Google Workspace Microsoft 365 للأعمال.
-ms.openlocfilehash: b41fdf304d0f0b9680f87f40a4564573593d6e75
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+description: تعرف على كيفية نقل مجالك من Google Workspace إلى Microsoft 365 للأعمال.
+ms.openlocfilehash: 06129811ea1d97b0ffb770843c58373427228559
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "63580043"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601125"
 ---
 # <a name="add-your-google-workspace-domain-to-microsoft-365"></a>إضافة مجال Google Workspace إلى Microsoft 365
 
+اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+
+## <a name="watch-add-google-workspace-domain"></a>شاهد: إضافة مجال Google Workspace
+
+اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198105).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LWKT?autoplay=false]
 
-أضف مجال Google Workspace Microsoft 365 للأعمال حتى تتمكن من الاستمرار في استخدام عنوان البريد الإلكتروني الخاص بالعمل.
+أضف مجال Google Workspace إلى Microsoft 365 للأعمال حتى تتمكن من الاستمرار في استخدام عنوان البريد الإلكتروني للأعمال.
 
-## <a name="try-it"></a>جرب ذلك!
-
-1. انتقل [إلى مركز مسؤولي Microsoft 365.](https://admin.microsoft.com)
-1. في مركز مسؤولي Microsoft 365، في التنقل الأيسر، حدد **إظهار الكل** >  >  الإعدادات <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
-1. اختر **إضافة مجال،** وأدخل اسم مجالك ثم حدد **استخدام هذا المجال**. 
-1. اختر إضافة **سجل TXT إلى سجلات DNS** للمجالات، **وحدد متابعة**، ثم انسخ قيمة TXT. 
-1. ارجع إلى [وحدة تحكم مسؤول Google،](https://admin.google.com) واختر المجالات، وإدارة المجالات، وعرض التفاصيل، وإدارة المجال، **و DNS**، ثم قم بالتمرير لأسفل وصولا إلى **سجلات الموارد المخصصة**. 
-1. افتح منسدل نوع السجل، واختر **TXT**، واللصق بقيمة TXT التي نسختها ثم حدد **إضافة**. 
+1. انتقل إلى [مركز مسؤولي Microsoft 365](https://admin.microsoft.com).
+1. في مركز مسؤولي Microsoft 365، في جزء التنقل الأيمن، حدد **"إظهار كافة** > **مجالات الإعدادات** > ".<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank"></a>
+1. اختر **"إضافة مجال**"، وأدخل اسم المجال ثم حدد **"استخدام هذا المجال**". 
+1. اختر **، وأضف سجل TXT إلى سجلات DNS للمجالات**، وحدد **Continue**، وانسخ قيمة TXT. 
+1. عد إلى [وحدة تحكم Google مسؤول](https://admin.google.com)، واختر **المجالات****، وإدارة المجالات**، **وعرض التفاصيل**، **وإدارة المجال**، **وDNS**، ثم قم بالتمرير لأسفل وصولا إلى **سجلات الموارد المخصصة**. 
+1. افتح القائمة المنسدلة لنوع السجل، واختر **TXT**، والصق قيمة TXT التي نسختها ثم حدد **"إضافة**". 
 
     يستغرق التحديث عادة حقيقة في غضون دقائق قليلة ولكن قد يستغرق ما يصل إلى 48 ساعة. 
-1. ارجع إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز الإدارة،</a> وحدد **التحقق**، ثم **إغلاق**. 
-1. لتعيين مجالك كبريد إلكتروني أساسي للمستخدمين، في التنقل الأيسر، حدد [**UsersActive**](https://go.microsoft.com/fwlink/p/?linkid=834822) >  users. 
-1. اختر مستخدما، وحدد **إدارة اسم** المستخدم والبريد الإلكتروني **، وتحرير،** وحدد مجالك من المنسدلة، ثم حدد **تم** **وحفظ التغييرات**. 
+1. ارجع إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز الإدارة</a>، وحدد **«Verify**»، ثم **«Close»**. 
+1. لتعيين مجالك كرسالة بريد إلكتروني أساسية للمستخدمين، حدد **المستخدمين** > [**النشطين**](https://go.microsoft.com/fwlink/p/?linkid=834822) في جزء التنقل الأيمن. 
+1. اختر مستخدما، وحدد **"إدارة اسم المستخدم والبريد الإلكتروني**"، **ثم "تحرير**"، وحدد مجالك من القائمة المنسدلة، ثم حدد **"تم****" و"حفظ التغييرات**". 
 1. كرر هذه العملية لكل مستخدم. 
 
-    عند الانتهاء، ستكون جاهزا لتثبيت تطبيقات Office وترحيل عناصر البريد الإلكتروني والتقويم إلى Microsoft 365. 
+    عند الانتهاء، ستكون جاهزا لتثبيت تطبيقات Office وترحيل البريد الإلكتروني وعناصر التقويم إلى Microsoft 365. 

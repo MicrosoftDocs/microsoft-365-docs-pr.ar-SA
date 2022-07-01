@@ -13,16 +13,16 @@ ms.collection:
 description: تعرف على كيفية الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة في Outlook باستخدام ميزة "رسالة التقرير".
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 762f16916e03940f4d0f95c48f13751d3cbd63c7
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 60f9a9eff9694752630170991b7a800f52a2952d
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416961"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602127"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة في Outlook
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -32,15 +32,15 @@ ms.locfileid: "65416961"
 > [!NOTE]
 > إذا كنت مسؤولا في مؤسسة Microsoft 365 مع علب بريد Exchange Online، نوصي باستخدام صفحة **عمليات الإرسال** في مدخل Microsoft 365 Defender. لمزيد من المعلومات، راجع [استخدام مدخل عمليات الإرسال لإرسال البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft](admin-submission.md).
 
-في Microsoft 365 المؤسسات التي تحتوي على علب بريد في Exchange Online أو علب البريد المحلية باستخدام المصادقة الحديثة المختلطة، يمكنك إرسال إيجابيات خاطئة (بريد إلكتروني جيد تم حظره أو إرساله إلى مجلد غير هام) وسلبيات خاطئة (بريد إلكتروني غير مرغوب فيه أو تصيد احتيالي تم تسليمه إلى علبة الوارد) إلى Exchange Online Protection (EOP).
+في مؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو علب البريد المحلية باستخدام المصادقة الحديثة المختلطة، يمكنك إرسال إيجابيات خاطئة (بريد إلكتروني جيد تم حظره أو إرساله إلى مجلد غير هام) وسلبيات خاطئة (بريد إلكتروني غير مرغوب فيه أو تصيد احتيالي تم تسليمه إلى علبة الوارد) إلى Exchange Online Protection (EOP).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
 - للحصول على أفضل تجربة إرسال للمستخدم، استخدم الوظيفة الإضافية "رسالة التقرير" أو الوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي".
 
-- تعمل الوظيفة الإضافية "رسالة التقرير" والوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي" Outlook في جميع الأنظمة الأساسية (Outlook على ويب وiOS وAndroid وسطح المكتب).
+- تعمل الوظيفة الإضافية "رسالة التقرير" والوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي" ل Outlook في جميع الأنظمة الأساسية (Outlook على ويب وiOS وAndroid وسطح المكتب).
 
-- إذا كنت مسؤولا في مؤسسة بها علب بريد Exchange Online، فاستخدم مدخل عمليات الإرسال في مدخل Microsoft 365 Defender. لمزيد من المعلومات، راجع ["استخدام إرسال المسؤول" لإرسال رسائل البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft](admin-submission.md).
+- إذا كنت مسؤولا في مؤسسة بها علب بريد Exchange Online، فاستخدم مدخل عمليات الإرسال في مدخل Microsoft 365 Defender. لمزيد من المعلومات، راجع [استخدام مسؤول الإرسال لإرسال رسائل البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft](admin-submission.md).
 
 - يمكنك التكوين لإرسال رسائل مباشرة إلى Microsoft أو علبة بريد تحددها أو كليهما. لمزيد من المعلومات، راجع [نهج عمليات إرسال المستخدم](user-submission.md).
 
@@ -50,18 +50,6 @@ ms.locfileid: "65416961"
 
 شاهد هذا الفيديو القصير لمعرفة كيفية استخدام Microsoft Defender لـ Office 365 للتحقق بسهولة من عمليات إرسال المستخدم لتحديد محتويات الرسالة، والاستجابة للإرسال من خلال تطبيق إجراء المعالجة المناسب. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
-
-### <a name="turn-off-the-built-in-reporting-experience"></a>إيقاف تشغيل تجربة إعداد التقارير المضمنة
-
-لا نوصي بتجربة إعداد التقارير المضمنة في Outlook لأنه لا يمكن استخدام [نهج إرسال المستخدم](./user-submission.md). نوصي باستخدام الوظيفة الإضافية "رسالة التقرير" أو الوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي" بدلا من ذلك.
-
-يجب عليك تعيين الأذونات لكي تتمكن من تشغيل cmdlet هذا. للعثور على الأذونات المطلوبة لتشغيل أي cmdlet أو معلمة في مؤسستك، راجع [البحث عن الأذونات المطلوبة لتشغيل أي Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
-
-قم بتشغيل أمر PowerShell التالي لتعطيل تجربة إعداد التقارير المضمنة في Outlook على ويب:
-
-```powershell
-Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
-```
 
 ## <a name="use-the-report-message-feature"></a>استخدام ميزة "رسالة التقرير"
 

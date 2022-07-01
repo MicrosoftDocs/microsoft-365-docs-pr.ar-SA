@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2036f0b1e749250d42066fc5ea742c550a2f756e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 4c83db02acea02b076b84f8b180e4d9ff8460a80
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664095"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603308"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>الحصول على تدريب الخبراء على التتبع المتقدم
 
@@ -38,7 +38,7 @@ ms.locfileid: "64664095"
 
 تعزيز معرفتك بالتتبع المتقدم بسرعة مع _تعقب الخصم_، وهي سلسلة بث على الويب لمحللين أمنيين جدد ومتتبعي التهديدات المحنكين. ترشدك السلسلة خلال الأساسيات وصولا إلى إنشاء استعلاماتك المتطورة. ابدأ بالفيديو الأول حول الأساسيات أو انتقل إلى مقاطع فيديو أكثر تقدما تناسب مستوى خبرتك.
 
-| عنوان | الوصف | مشاهده | الاستعلامات |
+| عنوان | الوصف | مشاهدة | الاستعلامات |
 |---|---|---|---|
 | الحلقة 1: أساسيات KQL | تتناول هذه الحلقة أساسيات التتبع المتقدم في Microsoft 365 Defender. تعرف على بيانات التتبع المتقدمة المتوفرة وبنية جملة KQL الأساسية وعوامل التشغيل. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [ملف نصي](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
 | الحلقة 2: الصلات | تابع التعرف على البيانات في التتبع المتقدم وكيفية ربط الجداول معا. `inner`تعرف على ، `outer`و، `unique`و، وضم`semi`، وفهم الفروق الدقيقة لصلة Kusto `innerunique` الافتراضية. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [ملف نصي](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
@@ -47,7 +47,7 @@ ms.locfileid: "64664095"
 
 احصل على مزيد من التدريب على الخبراء باستخدام *L33TSP3AK: التتبع المتقدم في Microsoft 365 Defender*، وهي سلسلة بث ويب للمحللين الذين يتطلعون إلى توسيع معرفتهم التقنية ومهاراتهم العملية في إجراء تحقيقات أمنية باستخدام التتبع المتقدم في Microsoft 365 Defender.
 
-| عنوان | الوصف | مشاهده | الاستعلامات |
+| عنوان | الوصف | مشاهدة | الاستعلامات |
 |---|---|---|---|
 | الحلقة 1  | في هذه الحلقة، ستتعلم أفضل الممارسات المختلفة في تشغيل استعلامات التتبع المتقدمة. من بين المواضيع التي تمت تغطيتها: كيفية تحسين الاستعلامات الخاصة بك، واستخدام التتبع المتقدم لبرنامج الفدية الضارة، والتعامل مع JSON كنوع ديناميكي، والعمل مع عوامل تشغيل البيانات الخارجية. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [ملف نصي](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
 | الحلقة 2 | في هذه الحلقة، ستتعلم كيفية التحقيق في مواقع تسجيل الدخول المشبوهة أو غير المعتادة والرد عليها، والتحرير غير المصرح للبيانات عبر قواعد إعادة توجيه علبة الوارد. يشارك Sebastien Molendijk، كبير مديري البرامج ل Cloud Security CxE، كيفية استخدام التتبع المتقدم للتحقيق في الحوادث متعددة المراحل باستخدام بيانات Microsoft Defender for Cloud Apps. | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [ملف نصي](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
@@ -89,6 +89,14 @@ CloudAppEvents
 | take 100
 | sort by Timestamp desc
 ```
+
+
+## <a name="other-resources"></a>موارد أخرى
+
+| عنوان | الوصف | مشاهدة |
+|---|---|---|
+|الانضمام إلى الجداول في KQL | تعرف على قوة الانضمام إلى الجداول في إنشاء نتائج ذات معنى. | [YouTube](https://www.youtube.com/watch?v=8qZx7Pp5XgM) (4:17) |
+| تحسين الجداول في KQL | تعرف على كيفية تجنب المهلات عند تشغيل الاستعلامات المعقدة من خلال تحسين الاستعلامات. | [YouTube](https://www.youtube.com/watch?v=ceYvRuPp5D8) (5:38)  | 
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

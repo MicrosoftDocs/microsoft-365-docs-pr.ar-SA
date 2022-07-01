@@ -15,20 +15,20 @@ audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
-- m365solution-scenario
-- m365scenario-fpfn
+- m365solution-overview
+- m365solution-fpfn
 ms.topic: how-to
 ms.date: 12/02/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom:
 - FPFN
 - admindeeplinkDEFENDER
-ms.openlocfilehash: 81c41abffc6ec01c127b901ac63b3a5d3b6c5732
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5cae5a4b305846617130ecdf7c267ffc4ca13037
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418445"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603957"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>معالجة الإيجابيات/السلبيات الخاطئة في Microsoft Defender لنقطة النهاية
 
@@ -119,7 +119,7 @@ ms.locfileid: "65418445"
 
 ## <a name="part-2-review-remediation-actions"></a>الجزء الثاني: مراجعة إجراءات المعالجة
 
-يتم اتخاذ [إجراءات المعالجة](manage-auto-investigation.md#remediation-actions)، مثل إرسال ملف إلى العزل أو إيقاف عملية، على الكيانات (مثل الملفات) التي يتم الكشف عنها كتهديدات. تحدث عدة أنواع من إجراءات المعالجة تلقائيا من خلال التحقيق التلقائي برنامج الحماية من الفيروسات من Microsoft Defender:
+يتم اتخاذ [إجراءات المعالجة](manage-auto-investigation.md#remediation-actions)، مثل إرسال ملف إلى العزل أو إيقاف عملية، على الكيانات (مثل الملفات) التي يتم الكشف عنها كتهديدات. تحدث عدة أنواع من إجراءات المعالجة تلقائيا من خلال التحقيق التلقائي وMicrosoft Defender Antivirus:
 
 - عزل ملف
 - إزالة مفتاح تسجيل
@@ -202,42 +202,42 @@ ms.locfileid: "65418445"
 
 لتعريف الاستثناءات عبر Microsoft Defender لنقطة النهاية، قم بتنفيذ المهام التالية:
 
-- [تحديد استثناءات برنامج الحماية من الفيروسات من Microsoft Defender](#exclusions-for-microsoft-defender-antivirus)
+- [تحديد الاستثناءات لبرنامج الحماية من الفيروسات من Microsoft Defender](#exclusions-for-microsoft-defender-antivirus)
 - [إنشاء مؤشرات "السماح" Microsoft Defender لنقطة النهاية](#indicators-for-microsoft-defender-for-endpoint)
 
 > [!NOTE]
-> تنطبق استثناءات برنامج الحماية من الفيروسات من Microsoft Defender فقط على الحماية من الفيروسات، وليس عبر قدرات Microsoft Defender لنقطة النهاية الأخرى. لاستبعاد الملفات على نطاق واسع، استخدم الاستثناءات برنامج الحماية من الفيروسات من Microsoft Defender [والمؤشرات المخصصة](/microsoft-365/security/defender-endpoint/manage-indicators) Microsoft Defender لنقطة النهاية.
+> تنطبق استثناءات برنامج الحماية من الفيروسات من Microsoft Defender فقط على الحماية من الفيروسات، وليس عبر إمكانيات Microsoft Defender لنقطة النهاية الأخرى. لاستبعاد الملفات على نطاق واسع، استخدم الاستثناءات لبرنامج الحماية من الفيروسات من Microsoft Defender [والمؤشرات المخصصة](/microsoft-365/security/defender-endpoint/manage-indicators) Microsoft Defender لنقطة النهاية.
 
 تصف الإجراءات الواردة في هذا القسم كيفية تحديد الاستثناءات والمؤشرات.
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>استثناءات برنامج الحماية من الفيروسات من Microsoft Defender
 
-بشكل عام، يجب ألا تحتاج إلى تحديد استثناءات برنامج الحماية من الفيروسات من Microsoft Defender. تأكد من تحديد الاستثناءات بشكل لا يضاهى، ومن تضمين الملفات والمجلدات والعمليات والملفات المفتوحة للعملية فقط التي تؤدي إلى نتائج إيجابية خاطئة. بالإضافة إلى ذلك، تأكد من مراجعة الاستثناءات المحددة بانتظام. نوصي باستخدام [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview) لتعريف استثناءات الحماية من الفيروسات أو تحريرها؛ ومع ذلك، يمكنك استخدام أساليب أخرى، مثل [نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) (راجع [إدارة Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md).
+بشكل عام، يجب ألا تحتاج إلى تحديد الاستثناءات لبرنامج الحماية من الفيروسات من Microsoft Defender. تأكد من تحديد الاستثناءات بشكل لا يضاهى، ومن تضمين الملفات والمجلدات والعمليات والملفات المفتوحة للعملية فقط التي تؤدي إلى نتائج إيجابية خاطئة. بالإضافة إلى ذلك، تأكد من مراجعة الاستثناءات المحددة بانتظام. نوصي باستخدام [Microsoft إدارة نقاط النهاية](/mem/endpoint-manager-overview) لتعريف استثناءات برنامج الحماية من الفيروسات أو تحريرها؛ ومع ذلك، يمكنك استخدام أساليب أخرى، مثل [نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) (راجع [إدارة Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md).
 
 > [!TIP]
-> هل تحتاج إلى مساعدة في استثناءات برنامج الحماية من الفيروسات؟ راجع [تكوين الاستثناءات والتحقق من صحتها لإجراء عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md).
+> هل تحتاج إلى مساعدة في استثناءات برنامج الحماية من الفيروسات؟ راجع [تكوين الاستثناءات والتحقق من صحتها لمسح الحماية من الفيروسات من Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md).
 
-#### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>استخدام إدارة نقاط النهاية من Microsoft لإدارة استثناءات مكافحة الفيروسات (للنهج الموجودة)
+#### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>استخدام Microsoft إدارة نقاط النهاية لإدارة استثناءات برنامج الحماية من الفيروسات (للنهج الموجودة)
 
-1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com>) وسجل الدخول.
+1. انتقل إلى مركز إدارة Microsoft إدارة نقاط النهاية (<https://endpoint.microsoft.com>) وسجل الدخول.
 
 2. اختر برنامج **الحماية من الفيروسات** **لأمان** \> نقطة النهاية، ثم حدد نهجا موجودا. (إذا لم يكن لديك نهج موجود، أو إذا كنت تريد إنشاء نهج جديد، فانتقل إلى [الإجراء التالي](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
 
 3. اختر **"خصائص**"، وإلى جانب **إعدادات "التكوين"**، اختر **"تحرير**".
 
-4. قم **بتوسيع برنامج الحماية من الفيروسات من Microsoft Defender الاستثناءات** ثم حدد الاستثناءات الخاصة بك.
+4. قم بتوسيع **استثناءات برنامج الحماية من الفيروسات من Microsoft Defender** ثم حدد الاستثناءات الخاصة بك.
 
 5. اختر **"مراجعة + حفظ**"، ثم اختر **"حفظ**".
 
-#### <a name="use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions"></a>استخدام إدارة نقاط النهاية من Microsoft لإنشاء نهج الحماية من الفيروسات جديد مع استثناءات
+#### <a name="use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions"></a>استخدام Microsoft إدارة نقاط النهاية لإنشاء نهج مكافحة فيروسات جديد مع استثناءات
 
-1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com>) وسجل الدخول.
+1. انتقل إلى مركز إدارة Microsoft إدارة نقاط النهاية (<https://endpoint.microsoft.com>) وسجل الدخول.
 
 2. اختر **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
 
-3. حدد نظاما أساسيا (مثل **Windows 10 والإي وقت لاحق** **أو macOS** أو **Windows 10 وخادم Windows**).
+3. حدد نظاما أساسيا (مثل **Windows 10 والإطارات الأحدث** أو **macOS** أو **Windows 10 وWindows Server**).
 
-4. بالنسبة **لملف التعريف**، حدد **برنامج الحماية من الفيروسات من Microsoft Defender الاستثناءات**، ثم اختر **"إنشاء**".
+4. بالنسبة إلى **ملف التعريف**، حدد **استثناءات برنامج الحماية من الفيروسات من Microsoft Defender**، ثم اختر **"إنشاء**".
 
 5. حدد اسما ووصفا لملف التعريف، ثم اختر **"التالي**".
 
@@ -253,7 +253,7 @@ ms.locfileid: "65418445"
 
 تمكن [المؤشرات](/microsoft-365/security/defender-endpoint/manage-indicators) (وتحديدا مؤشرات التسوية أو IoCs) فريق عمليات الأمان من تحديد الكشف عن الكيانات ومنعها واستبعادها. على سبيل المثال، يمكنك تحديد ملفات معينة ليتم حذفها من عمليات الفحص وإجراءات المعالجة في Microsoft Defender لنقطة النهاية. أو، يمكن استخدام المؤشرات لإنشاء تنبيهات لبعض الملفات أو عناوين IP أو عناوين URL.
 
-لتحديد الكيانات كاستثناءات Microsoft Defender لنقطة النهاية، قم بإنشاء مؤشرات "السماح" لتلك الكيانات. تنطبق مؤشرات "السماح" هذه في Microsoft Defender لنقطة النهاية على [الحماية من الجيل التالي](microsoft-defender-antivirus-in-windows-10.md)[، الكشف عن تهديدات نقاط النهاية والرد عليها](overview-endpoint-detection-response.md)، [والتحقيق التلقائي & المعالجة](/microsoft-365/security/defender-endpoint/automated-investigations).
+لتحديد الكيانات كاستثناءات Microsoft Defender لنقطة النهاية، قم بإنشاء مؤشرات "السماح" لتلك الكيانات. تنطبق مؤشرات "السماح" هذه في Microsoft Defender لنقطة النهاية على [حماية الجيل التالي](microsoft-defender-antivirus-in-windows-10.md)، [واكتشاف نقطة النهاية والاستجابة](overview-endpoint-detection-response.md) لها، [والتحقيق التلقائي & المعالجة](/microsoft-365/security/defender-endpoint/automated-investigations).
 
 يمكن إنشاء مؤشرات "السماح" من أجل:
 
@@ -351,16 +351,16 @@ ms.locfileid: "65418445"
 
 ### <a name="cloud-delivered-protection"></a>الحماية المقدمة من السحابة
 
-تحقق من مستوى الحماية المقدمة من السحابة للحصول على برنامج الحماية من الفيروسات من Microsoft Defender. بشكل افتراضي، يتم تعيين الحماية المقدمة من السحابة إلى **غير مكونة**، والتي تتوافق مع مستوى عادي من الحماية لمعظم المؤسسات. إذا تم تعيين الحماية التي توفرها السحابة إلى تسامح **عال** أو **مرتفع أو** **صفري**، فقد تواجه عددا أعلى من الإيجابيات الخاطئة.
+تحقق من مستوى الحماية المقدمة من السحابة لبرنامج الحماية من الفيروسات من Microsoft Defender. بشكل افتراضي، يتم تعيين الحماية المقدمة من السحابة إلى **غير مكونة**، والتي تتوافق مع مستوى عادي من الحماية لمعظم المؤسسات. إذا تم تعيين الحماية التي توفرها السحابة إلى تسامح **عال** أو **مرتفع أو** **صفري**، فقد تواجه عددا أعلى من الإيجابيات الخاطئة.
 
 > [!TIP]
 > لمعرفة المزيد حول تكوين الحماية التي توفرها السحابة، راجع [تحديد مستوى الحماية المقدمة من السحابة](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
 
-نوصي باستخدام [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview) لتحرير إعدادات الحماية التي توفرها السحابة أو تعيينها؛ ومع ذلك، يمكنك استخدام أساليب أخرى، مثل [نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) (راجع [إدارة Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md).
+نوصي باستخدام [Microsoft إدارة نقاط النهاية](/mem/endpoint-manager-overview) لتحرير إعدادات الحماية التي توفرها السحابة أو تعيينها؛ ومع ذلك، يمكنك استخدام أساليب أخرى، مثل [نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) (راجع [إدارة Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md).
 
-#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>استخدام إدارة نقاط النهاية من Microsoft لمراجعة إعدادات الحماية المقدمة من السحابة وتحريرها (للنهج الحالية)
+#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>استخدام Microsoft إدارة نقاط النهاية لمراجعة إعدادات الحماية المقدمة من السحابة وتحريرها (للنهج الحالية)
 
-1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com>) وسجل الدخول.
+1. انتقل إلى مركز إدارة Microsoft إدارة نقاط النهاية (<https://endpoint.microsoft.com>) وسجل الدخول.
 
 2. اختر برنامج **الحماية من الفيروسات** **لأمان** \> نقطة النهاية ثم حدد نهجا موجودا. (إذا لم يكن لديك نهج موجود، أو إذا كنت تريد إنشاء نهج جديد، فانتقل إلى [الإجراء التالي](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
 
@@ -370,13 +370,13 @@ ms.locfileid: "65418445"
 
 5. اختر **"مراجعة + حفظ**"، ثم **"حفظ**".
 
-#### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>استخدام إدارة نقاط النهاية من Microsoft لتعيين إعدادات الحماية المقدمة من السحابة (لنهج جديد)
+#### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>استخدام Microsoft إدارة نقاط النهاية لتعيين إعدادات الحماية التي يتم تسليمها عبر السحابة (لنهج جديد)
 
-1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com>) وسجل الدخول.
+1. انتقل إلى مركز إدارة Microsoft إدارة نقاط النهاية (<https://endpoint.microsoft.com>) وسجل الدخول.
 
 2. اختر **Endpoint security** \> **Antivirus** \> **+ Create policy**.
 
-3. بالنسبة للنظام **الأساسي**، حدد خيارا، ثم **لملف التعريف**، حدد **برنامج الحماية من الفيروسات** أو **برنامج الحماية من الفيروسات من Microsoft Defender** (يعتمد الخيار المحدد على ما حددته للنظام **الأساسي**.) ثم اختر **"إنشاء**".
+3. بالنسبة إلى **النظام الأساسي**، حدد خيارا، ثم **لملف التعريف**، حدد **برنامج الحماية من الفيروسات** أو **برنامج الحماية من الفيروسات من Microsoft Defender** (يعتمد الخيار المحدد على ما حددته للنظام **الأساسي**.) ثم اختر **"إنشاء**".
 
 4. في علامة التبويب **"Basics** "، حدد اسما ووصفا للنهج. ثم اختر **"التالي**".
 
@@ -398,27 +398,27 @@ ms.locfileid: "65418445"
 > [!TIP]
 > لمعرفة المزيد حول PUA، راجع [الكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها وحظرها](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
-استنادا إلى التطبيقات التي تستخدمها مؤسستك، قد تحصل على إيجابيات خاطئة نتيجة لإعدادات حماية PUA. إذا لزم الأمر، ففكر في تشغيل حماية PUA في وضع التدقيق لفترة من الوقت، أو طبق حماية PUA على مجموعة فرعية من الأجهزة في مؤسستك. يمكن تكوين حماية PUA للمستعرض Microsoft Edge ول برنامج الحماية من الفيروسات من Microsoft Defender.
+استنادا إلى التطبيقات التي تستخدمها مؤسستك، قد تحصل على إيجابيات خاطئة نتيجة لإعدادات حماية PUA. إذا لزم الأمر، ففكر في تشغيل حماية PUA في وضع التدقيق لفترة من الوقت، أو طبق حماية PUA على مجموعة فرعية من الأجهزة في مؤسستك. يمكن تكوين حماية PUA لمستعرض Microsoft Edge وMicrosoft Defender Antivirus.
 
-نوصي باستخدام [إدارة نقاط النهاية من Microsoft](/mem/endpoint-manager-overview) لتحرير إعدادات حماية PUA أو تعيينها؛ ومع ذلك، يمكنك استخدام أساليب أخرى، مثل [نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) (راجع [إدارة Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md).
+نوصي باستخدام [Microsoft إدارة نقاط النهاية](/mem/endpoint-manager-overview) لتحرير إعدادات حماية PUA أو تعيينها؛ ومع ذلك، يمكنك استخدام أساليب أخرى، مثل [نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) (راجع [إدارة Microsoft Defender لنقطة النهاية](manage-mde-post-migration.md).
 
-#### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>استخدام إدارة نقاط النهاية من Microsoft لتحرير حماية PUA (لملفات تعريف التكوين الموجودة)
+#### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>استخدام Microsoft إدارة نقاط النهاية لتحرير حماية PUA (لملفات تعريف التكوين الموجودة)
 
-1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com>) وسجل الدخول.
+1. انتقل إلى مركز إدارة Microsoft إدارة نقاط النهاية (<https://endpoint.microsoft.com>) وسجل الدخول.
 
 2. اختر **ملفات تعريف تكوين** **الأجهزة**\>، ثم حدد نهجا موجودا. (إذا لم يكن لديك نهج موجود، أو إذا كنت تريد إنشاء نهج جديد، فانتقل إلى [الإجراء التالي](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
 
 3. ضمن **"إدارة**"، اختر **"خصائص**"، ثم إلى جانب **إعدادات التكوين**، اختر **"تحرير**".
 
-4. في علامة التبويب **"إعدادات التكوين"**، قم بالتمرير لأسفل ثم قم بتوسيع **برنامج الحماية من الفيروسات من Microsoft Defender**.
+4. في علامة التبويب **"إعدادات التكوين"** ، قم بالتمرير لأسفل وقم بتوسيع **برنامج الحماية من الفيروسات من Microsoft Defender**.
 
 5. تعيين **الكشف عن التطبيقات غير المرغوب فيها** إلى **التدقيق**. (يمكنك إيقاف تشغيله، ولكن باستخدام وضع التدقيق، ستتمكن من رؤية عمليات الكشف.)
 
 6. اختر **"مراجعة + حفظ**"، ثم اختر **"حفظ**".
 
-#### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>استخدام إدارة نقاط النهاية من Microsoft لتعيين حماية PUA (لملف تعريف تكوين جديد)
+#### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>استخدام Microsoft إدارة نقاط النهاية لتعيين حماية PUA (لملف تعريف تكوين جديد)
 
-1. انتقل إلى مركز إدارة إدارة نقاط النهاية من Microsoft (<https://endpoint.microsoft.com>) وسجل الدخول.
+1. انتقل إلى مركز إدارة Microsoft إدارة نقاط النهاية (<https://endpoint.microsoft.com>) وسجل الدخول.
 
 2. اختر **ملفات تعريف** \> تكوين **الأجهزة** \> **+ إنشاء ملف تعريف**.
 
@@ -426,7 +426,7 @@ ms.locfileid: "65418445"
 
 4. في علامة التبويب **"Basics** "، حدد اسما ووصفا للنهج الخاص بك. ثم اختر **"التالي**".
 
-5. في علامة التبويب **"إعدادات التكوين"**، قم بالتمرير لأسفل ثم قم بتوسيع **برنامج الحماية من الفيروسات من Microsoft Defender**.
+5. في علامة التبويب **"إعدادات التكوين"** ، قم بالتمرير لأسفل وقم بتوسيع **برنامج الحماية من الفيروسات من Microsoft Defender**.
 
 6. قم بتعيين **"الكشف عن التطبيقات غير المرغوب فيها** " إلى **"التدقيق**"، ثم اختر **"التالي**". (يمكنك إيقاف تشغيل حماية PUA، ولكن باستخدام وضع التدقيق، ستتمكن من رؤية عمليات الكشف.)
 
@@ -459,7 +459,7 @@ ms.locfileid: "65418445"
 3. في نافذة **مساعد الدعم** ، صف مشكلتك، ثم أرسل رسالتك. من هناك، يمكنك فتح طلب خدمة.
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

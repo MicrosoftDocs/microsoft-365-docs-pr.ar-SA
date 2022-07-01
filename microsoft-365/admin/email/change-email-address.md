@@ -27,14 +27,16 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: غير عنوان بريدك الإلكتروني إلى عنوان بريد إلكتروني مألوف مثل tom@fourthcoffee.com عن طريق شراء اسم مجال وإضافته إلى Microsoft 365.
-ms.openlocfilehash: a71e92b48e7091ae243b62ec594cd2be5ce52406
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2c6085ee9c951b9afb3d44460bfd613b63375986
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437272"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602415"
 ---
-# <a name="change-your-microsoft-365-email-address-to-use-your-custom-domain"></a>تغيير عنوان بريدك الإلكتروني Microsoft 365 لاستخدام مجالك المخصص
+# <a name="change-your-microsoft-365-email-address-to-use-your-custom-domain"></a>تغيير عنوان بريدك الإلكتروني في Microsoft 365 لاستخدام مجالك المخصص
+
+اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
  **[تحقق من الأسئلة المتداولة حول المجالات](../setup/domains-faq.yml)** إذا لم تعثر على ما تبحث عنه. 
   
@@ -53,6 +55,8 @@ ms.locfileid: "65437272"
 عند تغيير البريد الإلكتروني لمجالك للوصول إلى Microsoft 365، من خلال تحديث سجل MX لمجالك أثناء الإعداد، ستبدأ جميع رسائل البريد الإلكتروني المرسلة إلى هذا المجال في الوصول إلى Microsoft 365. تأكد من إضافة مستخدمين وإنشاء علب بريد في Microsoft 365 لكل شخص لديه بريد إلكتروني على مجالك قبل تغيير سجل MX. ألا تريد نقل البريد الإلكتروني لجميع الأشخاص في مجالك إلى Microsoft 365؟ يمكنك اتخاذ خطوات [للبدء في Microsoft 365 باستخدام عدد قليل من عناوين البريد الإلكتروني بدلا من ذلك](../misc/pilot-microsoft-365-from-my-custom-domain.md).
   
 ## <a name="set-up-business-email-with-a-new-domain"></a>إعداد البريد الإلكتروني للأعمال باستخدام مجال جديد
+
+اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198215).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA?autoplay=false]
 
@@ -88,21 +92,21 @@ ms.locfileid: "65437272"
 
 ::: moniker-end
 
-2. انتقل إلى صفحة **SetupDomains** > .
+2. انتقل **إلى صفحة** **"مجالات الإعداد** > ".
 
 3. في صفحة **"المجالات"** ، حدد **"إضافة مجال**".
 
 4. اتبع الخطوات للتأكد من ملكيتك لمجالك. سيتم إرشادك لإعداد كل شيء بشكل صحيح مع مجالك في Microsoft 365.
 
-5. انتقل إلى **مستخدمي UsersActive** > .
+5. انتقل إلى **المستخدمين النشطين للمستخدمين** > .
 
 6. حدد مستخدما لتحرير اسم المستخدم وتغييره إلى المجال الذي أضفته للتو.
 
 > [!NOTE]
-> إذا كنت لا تستخدم ترخيص Exchange، فلا يمكنك استخدام المجال لإرسال رسائل البريد الإلكتروني أو تلقيها من المستأجر Microsoft 365.
+> إذا كنت لا تستخدم ترخيص Exchange، فلا يمكنك استخدام المجال لإرسال رسائل البريد الإلكتروني أو تلقيها من مستأجر Microsoft 365.
   
 ## <a name="related-content"></a>المحتويات ذات الصلة
 
-[شراء مجال مخصص باستخدام Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (مقالة)\
+[شراء مجال مخصص باستخدام Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (مقال)\
 [إدارة المجالات](/admin) (صفحة الارتباط)\
 [الأسئلة المتداولة حول المجالات](../setup/domains-faq.yml) (مقالة)

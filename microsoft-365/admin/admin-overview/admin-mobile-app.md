@@ -24,19 +24,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: احصل على تطبيق Microsoft 365 Admin، المرافق لديك إلى مركز مسؤولي Microsoft 365 المستند إلى الويب، لإدارة مؤسستك عبر الإنترنت من الهاتف أو الكمبيوتر اللوحي.
-ms.openlocfilehash: 07c404a3bfdee064fa1fdcb38caa1cf2da595000
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+description: احصل على تطبيق مسؤول Microsoft 365، رفيقك في مركز مسؤولي Microsoft 365 المستندة إلى الويب، لإدارة مؤسستك عبر الإنترنت من الهاتف أو الكمبيوتر اللوحي.
+ms.openlocfilehash: 4a10c38fcaf793c6ccb3666a16d197c95bbc753a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922142"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601685"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>حول تطبيق Microsoft 365 Admin للأجهزة المحمولة
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>حول تطبيق مسؤول Microsoft 365 للأجهزة المحمولة
 
-هل أنت مسؤول عادة ما يكون قيد التنقل؟ حتى لو لم تكن كذلك، فقد تحتاج في بعض الأحيان إلى إدارة Microsoft 365 من الهاتف أو الكمبيوتر اللوحي. اطلع على [تطبيق مسؤول Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=627216) المجاني، وهو الرفيق المثالي لمركز إدارة Microsoft 365 المستند إلى الويب. يمكنك تنزيل التطبيق من [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)، ومن [متجر Google Play](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)، وكذلك من ارتباط تطبيق Microsoft 365 Admin في الجزء العلوي الأيمن في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز إدارة Microsoft 365</a>.
+اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
-:::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="لقطة شاشة: الصفحة الرئيسية لتطبيق الأجهزة المحمولة المسؤول، تعرض البحث ومركز الرسائل والصحة والارتباطات السريعة":::
+هل أنت مسؤول عادة ما يكون قيد التنقل؟ حتى لو لم تكن كذلك، فقد تحتاج في بعض الأحيان إلى إدارة Microsoft 365 من الهاتف أو الكمبيوتر اللوحي. اطلع على [تطبيق مسؤول Microsoft 365](https://go.microsoft.com/fwlink/?LinkID=627216) المجاني، وهو الرفيق المثالي مركز مسؤولي Microsoft 365 المستندة إلى الويب. يمكنك تنزيل التطبيق من [App Store Apple](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) ومن [متجر Google Play](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp) ومن ارتباط تطبيق مسؤول Microsoft 365 في الزاوية العلوية <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">اليسرى من مركز مسؤولي Microsoft 365</a>.
+
+:::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="لقطة شاشة: مسؤول الصفحة الرئيسية لتطبيق الأجهزة المحمولة، وعرض البحث ومركز الرسائل والحماية والارتباطات السريعة":::
 
 يحتوي تطبيق المسؤول على الكثير من الإمكانات التي تمكنك من إدارة Microsoft 365 من جهازك المحمول أو اللوحي عندما لا تتمكن من الوصول إلى الكمبيوتر. فيما يلي قائمة ببعض المهام التي يمكنك تنفيذها من التطبيق:
 
@@ -51,13 +53,15 @@ ms.locfileid: "65922142"
 إذا كنت مسؤولا وكنت مسؤولا عن أكثر من مؤسسة Microsoft 365 واحدة، يمكنك تسجيل الدخول إلى مؤسسات متعددة والتبديل بينها بسرعة. يدعم التطبيق النسق الداكن ويتوفر ب 39 لغة.
   
 > [!IMPORTANT]
-> إذا كنت تواجه مشاكل في استخدام تطبيق Admin للأجهزة المحمولة على iOS أو Android، فاراسلنا عبر البريد الإلكتروني على [feedback365@microsoft.com](mailto:feedback365@microsoft.com) لإعلامنا بذلك.
+> إذا كنت تواجه مشاكل في استخدام تطبيق مسؤول للأجهزة المحمولة على نظام التشغيل iOS أو Android، فاراسلنا عبر البريد الإلكتروني على [feedback365@microsoft.com](mailto:feedback365@microsoft.com) لإعلامنا بذلك.
 
 ## <a name="watch-install-the-admin-mobile-app"></a>المراقبة: تثبيت تطبيق الأجهزة المحمولة المسؤول
 
+اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198017).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
-1. للحصول على تطبيق Microsoft 365 Admin للأجهزة المحمولة، ابحث عن  **Microsoft 365 Admin**  في متجر التطبيقات لجهازك وقم بتثبيته.
+1. للحصول على تطبيق مسؤول Microsoft 365 للأجهزة المحمولة، ابحث عن **مسؤول Microsoft 365** في متجر التطبيقات لجهازك وقم بتثبيته.
 2. سجل الدخول باستخدام عنوان البريد الإلكتروني للمسؤول العام، واعرض لوحة المعلومات للاطلاع على حالة الخدمة ومراقبة تراخيص المستخدمين ورؤية الرسائل وطلبات الخدمة.
 
 ## <a name="before-you-begin"></a>قبل البدء
@@ -66,7 +70,7 @@ ms.locfileid: "65922142"
   
 ## <a name="download-the-admin-mobile-app"></a>تنزيل تطبيق الأجهزة المحمولة للمسؤول
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a> من ارتباط تطبيق Microsoft 365 Admin في الزاوية العلوية اليسرى. 
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a> من ارتباط تطبيق مسؤول Microsoft 365 في الزاوية العلوية اليسرى. 
 
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
@@ -80,13 +84,13 @@ ms.locfileid: "65922142"
 
 لاستخدام التطبيق، تحتاج إلى الحصول على أذونات المسؤول واشتراك صالح لأحد اشتراكات Microsoft 365 التالية:
 
-- Microsoft 365 Apps for Enterprise
-- تطبيقات Microsoft 365 للأعمال
+- Microsoft 365 Apps للمؤسسة
+- Microsoft 365 Apps للأعمال
 - Microsoft 365 Business Premium
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Basic
 - Microsoft 365 E3/E5
-- Office 365: E1، E3/E5
+- Office 365: E1 وE3/E5
 - خطة Exchange Online
 - خطة OneDrive for Business
   
@@ -100,7 +104,7 @@ ms.locfileid: "65922142"
   
 ### <a name="what-languages-are-supported-by-the-app"></a>ما هي اللغات التي يدعمها التطبيق؟
 
-يدعم التطبيق جميع اللغات ال 39 التي يدعمها مركز إدارة Microsoft 365 المستند إلى الويب. لتغيير اللغة، من قائمة التنقل اليمنى في مركز الإدارة، انتقل إلى **"لغة** **الإعدادات** > " أو حدد أيقونة **"اللغة**" في قسم **"الارتباطات السريعة**" في الصفحة الرئيسية لتطبيق الأجهزة المحمولة للمسؤول.
+يدعم التطبيق جميع اللغات ال 39 التي يدعمها مركز مسؤولي Microsoft 365 المستندة إلى الويب. لتغيير اللغة، من قائمة التنقل اليمنى في مركز الإدارة، انتقل إلى **"لغة** **الإعدادات** > " أو حدد أيقونة **"اللغة**" في قسم **"الارتباطات السريعة**" في الصفحة الرئيسية لتطبيق الأجهزة المحمولة للمسؤول.
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>كيف يمكنني مشاركة "أحداث الخدمة" و"الرسائل" مع باقي المؤسسة؟
 
@@ -119,7 +123,7 @@ ms.locfileid: "65922142"
 1. إذا كان تطبيق مدخل Microsoft Authenticator أو Company مثبتا على جهازك، فحاول إعادة تثبيته أو التحديث إلى أحدث إصدار.
 1. إذا لم ينجح ذلك، يمكنك إرسال بريد إلكتروني إلينا في feedback365@microsoft.com لإعلامنا بذلك.
 
-### <a name="how-do-i-manage-notifications-in-the-app"></a>كيف يمكنني إدارة الإعلامات في التطبيق؟
+### <a name="how-do-i-manage-notifications-in-the-app"></a>كيف أعمل إدارة الإعلامات في التطبيق؟
 
 من قائمة التنقل اليمنى، انتقل إلى **"إعلامات الإعدادات** > ". يمكنك إدارة حماية الخدمة ومركز الرسائل وإعلامات الفوترة هنا.
 

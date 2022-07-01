@@ -17,15 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 18654dfb1ae6ae10596889fb4491604a37b8ffe8
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 10ae1829f632492afdfd515d080b6be7c335b898
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017420"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601191"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>نظرة عامة على دليل نشر قواعد الحد من سطح الهجوم (ASR)
 
@@ -59,8 +58,8 @@ ms.locfileid: "66017420"
 | تهديدات متعددة الأشكال | الحركة الجانبية & سرقة بيانات الاعتماد | قواعد تطبيقات الإنتاجية |  قواعد البريد الإلكتروني | قواعد البرنامج النصي | قواعد متباعدة |
 |:---|:---|:---|:---|:---|:---|
 | حظر تشغيل الملفات القابلة للتنفيذ إلا إذا كانت تفي بمعايير الانتشار (1000 جهاز) أو العمر (24 ساعة) أو معايير القائمة الموثوق بها | حظر عمليات الإنشاء التي تنشأ من أوامر PSExec وWMI | حظر تطبيقات Office من إنشاء محتوى قابل للتنفيذ | حظر المحتوى القابل للتنفيذ من عميل البريد الإلكتروني والبريد الإلكتروني | حظر التعليمات البرمجية JS/VBS/PS/الماكرو المشوشة | حظر إساءة استخدام برامج التشغيل <sup>الموقعة المعرضة للهجوم [[1](#fn1)]<sup></sup>  |
-| حظر العمليات غير الموثوق بها وغير الموقعة التي يتم تشغيلها من USB | حظر سرقة بيانات الاعتماد من النظام الفرعي لسلطة الأمان المحلية Windows (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | حظر تطبيقات Office من إنشاء عمليات تابعة |  حظر تطبيقات الاتصال Office فقط من إنشاء عمليات تابعة | حظر JS/VBS من بدء تشغيل المحتوى القابل للتنفيذ الذي تم تنزيله | |
-| استخدام الحماية المتقدمة من برامج الفدية الضارة | حظر الثبات من خلال اشتراك حدث WMI | حظر تطبيقات Office من إدخال التعليمات البرمجية في عمليات أخرى | حظر تطبيقات الاتصال Office من إنشاء عمليات تابعة | | |
+| حظر العمليات غير الموثوق بها وغير الموقعة التي يتم تشغيلها من USB | حظر سرقة بيانات الاعتماد من نظام سلطة الأمان المحلية ل Windows (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | حظر تطبيقات Office من إنشاء عمليات تابعة |  منع تطبيقات اتصالات Office فقط من إنشاء عمليات تابعة | حظر JS/VBS من بدء تشغيل المحتوى القابل للتنفيذ الذي تم تنزيله | |
+| استخدام الحماية المتقدمة من برامج الفدية الضارة | حظر الثبات من خلال اشتراك حدث WMI | منع تطبيقات Office من إدخال التعليمات البرمجية في عمليات أخرى | حظر تطبيقات اتصالات Office من إنشاء عمليات تابعة | | |
 | | | حظر Adobe Reader من إنشاء عمليات تابعة | | | |
 
 (<a id="fn1">1</a>) _حظر إساءة استخدام برامج التشغيل الموقعة المعرضة للخطر المعرضة_ للخطر غير متوفرة حاليا في أمان نقطة نهاية MEM. يمكنك تكوين هذه القاعدة باستخدام [MEM OMA-URI](enable-attack-surface-reduction.md#mem).
@@ -74,17 +73,17 @@ ms.locfileid: "66017420"
 - Azure Active Directory
 - إدارة نقاط النهاية من Microsoft (MEM)
 - أجهزة Windows 10 وأجهزة Windows 11
-- Microsoft Defender لنقطة النهاية تراخيص E5 أو Windows E5
+- تراخيص Microsoft Defender لنقطة النهاية E5 أو Windows E5
 
-للاستفادة الكاملة من قواعد ASR وإعداد التقارير، نوصي باستخدام ترخيص Microsoft 365 Defender E5 أو Windows E5 و A5. تعرف على المزيد: [الحد الأدنى من متطلبات Microsoft Defender لنقطة النهاية](minimum-requirements.md).
+للاستفادة الكاملة من قواعد ASR وإعداد التقارير، نوصي باستخدام ترخيص Microsoft 365 Defender E5 أو Windows E5 وA5. تعرف على المزيد: [الحد الأدنى من متطلبات Microsoft Defender لنقطة النهاية](minimum-requirements.md).
 
 >[!Note]
->هناك أساليب متعددة لتكوين قواعد ASR. يمكن تكوين قواعد ASR باستخدام: إدارة نقاط النهاية من Microsoft (MEM) وPowerShell نهج المجموعة وMicrosoft System Center Configuration Manager (SCCM) وMEM OMA-URI.
+>هناك أساليب متعددة لتكوين قواعد ASR. يمكن تكوين قواعد ASR باستخدام: Microsoft إدارة نقاط النهاية (MEM) وPowerShell نهج المجموعة وMicrosoft System Center Configuration Manager (SCCM) وMEM OMA-URI.
 >إذا كنت تستخدم تكوين بنية أساسية مختلف عما هو مدرج _لمتطلبات البنية الأساسية_ (أعلاه)، يمكنك معرفة المزيد حول نشر قواعد تقليل الأجزاء المعرضة للهجوم باستخدام تكوينات أخرى هنا: [تمكين قواعد تقليل الأجزاء المعرضة للهجوم](enable-attack-surface-reduction.md).  
 
 ### <a name="asr-rules-dependencies"></a>تبعيات قواعد ASR
 
-يجب تمكين برنامج الحماية من الفيروسات من Microsoft Defender وتكوينه كحل أساسي لمكافحة الفيروسات، ويجب أن يكون في الوضع التالي:
+يجب تمكين Microsoft Defender Antivirus وتكوينه كحل أساسي لمكافحة الفيروسات، ويجب أن يكون في الوضع التالي:
 
 - حل الحماية من الفيروسات/الحماية من البرامج الضارة الأساسي  
 - الحالة: الوضع النشط
@@ -92,26 +91,26 @@ ms.locfileid: "66017420"
 يجب ألا يكون برنامج الحماية من الفيروسات من Microsoft Defender في أي من الأوضاع التالية:
 
 - السلبي
-- الوضع السلبي مع الكشف عن نقطة النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) في وضع الحظر
+- الوضع السلبي مع الكشف عن نقطة النهاية والاستجابة لها (EDR) في وضع الحظر
 - المسح الدوري المحدود (LPS)
 - قباله
 
-راجع: [الحماية المقدمة من السحابة برنامج الحماية من الفيروسات من Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md).
+راجع: [الحماية المقدمة من السحابة وMicrosoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md).
 
 ### <a name="cloud-protection-maps-must-be-enabled"></a>يجب تمكين Cloud Protection (MAPS)
 
-تعمل برنامج الحماية من الفيروسات من Microsoft Defender بسلاسة مع خدمات Microsoft السحابية. تعزز خدمات الحماية السحابية هذه، التي يشار إليها أيضا باسم خدمة الحماية المتقدمة من Microsoft (MAPS)، الحماية القياسية في الوقت الحقيقي، ويمكن القول إنها توفر أفضل دفاع عن الحماية من الفيروسات. تعد حماية السحابة أمرا بالغ الأهمية لمنع الخروقات من البرامج الضارة ومكون مهم من قواعد ASR.
-[تشغيل الحماية التي توفرها السحابة في برنامج الحماية من الفيروسات من Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
+يعمل برنامج الحماية من الفيروسات من Microsoft Defender بسلاسة مع خدمات Microsoft السحابية. تعزز خدمات الحماية السحابية هذه، التي يشار إليها أيضا باسم خدمة الحماية المتقدمة من Microsoft (MAPS)، الحماية القياسية في الوقت الحقيقي، ويمكن القول إنها توفر أفضل دفاع عن الحماية من الفيروسات. تعد حماية السحابة أمرا بالغ الأهمية لمنع الخروقات من البرامج الضارة ومكون مهم من قواعد ASR.
+[تشغيل الحماية المقدمة من السحابة في برنامج الحماية من الفيروسات من Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>يجب أن تكون مكونات برنامج الحماية من الفيروسات من Microsoft Defender هي الإصدارات الحالية
 
-يجب ألا يزيد إصدار مكون برنامج الحماية من الفيروسات من Microsoft Defender التالي عن إصدارين أقدم من الإصدار الأكثر توفرا حاليا:
+يجب ألا تزيد إصدارات مكون Microsoft Defender Antivirus التالية عن إصدارين أقدم من الإصدار الأكثر توفرا حاليا:
 
-- **إصدار تحديث النظام الأساسي برنامج الحماية من الفيروسات من Microsoft Defender** - يتم تحديث النظام الأساسي برنامج الحماية من الفيروسات من Microsoft Defender شهريا.
-- **إصدار محرك برنامج الحماية من الفيروسات من Microsoft Defender** - يتم تحديث محرك برنامج الحماية من الفيروسات من Microsoft Defender شهريا.
-- **برنامج الحماية من الفيروسات من Microsoft Defender التحليل الذكي للأمان** - تحدث Microsoft باستمرار معلومات الأمان في Microsoft Defender (المعروفة أيضا بالتعريف والتوقيع) لمعالجة أحدث التهديدات، وتحسين منطق الكشف.
+- **إصدار تحديث Microsoft Defender Antivirus Platform**  - يتم تحديث النظام الأساسي لبرامج الحماية من الفيروسات من Microsoft Defender شهريا.
+- **إصدار محرك الحماية من الفيروسات من Microsoft Defender** - يتم تحديث محرك الحماية من الفيروسات من Microsoft Defender شهريا.
+- **التحليل الذكي لأمان برنامج الحماية من الفيروسات من Microsoft Defender** - تحدث Microsoft باستمرار معلومات أمان Microsoft Defender (المعروفة أيضا بالتعريف والتوقيع) لمعالجة أحدث التهديدات، وتحسين منطق الكشف.
 
-يساعد الاحتفاظ بالإصدارات برنامج الحماية من الفيروسات من Microsoft Defender الحالية على تقليل النتائج الإيجابية الخاطئة لقواعد ASR وتحسين قدرات الكشف برنامج الحماية من الفيروسات من Microsoft Defender. لمزيد من التفاصيل حول الإصدارات الحالية وكيفية تحديث مكونات برنامج الحماية من الفيروسات من Microsoft Defender المختلفة، تفضل بزيارة [دعم النظام الأساسي برنامج الحماية من الفيروسات من Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
+يساعد الاحتفاظ بإصدارات برنامج الحماية من الفيروسات من Microsoft Defender على تقليل النتائج الإيجابية الخاطئة لقواعد ASR وتحسين قدرات الكشف عن برنامج الحماية من الفيروسات من Microsoft Defender. لمزيد من التفاصيل حول الإصدارات الحالية وكيفية تحديث مكونات برنامج الحماية من الفيروسات ل Microsoft Defender المختلفة، تفضل بزيارة [دعم النظام الأساسي لبرنامج الحماية من الفيروسات من Microsoft Defender](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ### <a name="caveat"></a>التحذير
 
@@ -165,9 +164,9 @@ ms.locfileid: "66017420"
 
 [معالجة الإيجابيات/السلبيات الخاطئة في Microsoft Defender لنقطة النهاية](defender-endpoint-false-positives-negatives.md)
 
-[الحماية المقدمة من السحابة برنامج الحماية من الفيروسات من Microsoft Defender](cloud-protection-microsoft-defender-antivirus.md)
+[الحماية المقدمة من السحابة وMicrosoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 
-[تشغيل الحماية التي توفرها السحابة في برنامج الحماية من الفيروسات من Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md)
+[تشغيل الحماية المقدمة من السحابة في برنامج الحماية من الفيروسات من Microsoft Defender](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 [تكوين الاستثناءات والتحقق من صحتها استنادا إلى الملحق أو الاسم أو الموقع](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 
@@ -175,7 +174,7 @@ ms.locfileid: "66017420"
 
 [نظرة عامة على المخزون في مركز إدارة Microsoft 365 Apps](/deployoffice/admincenter/inventory)
 
-[إنشاء خطة نشر Windows](/windows/deployment/update/create-deployment-plan)
+[إنشاء خطة نشر لنظام التشغيل Windows](/windows/deployment/update/create-deployment-plan)
 
 [استخدام التحكم في الوصول استنادا إلى الدور (RBAC) وعلامات النطاق ل تكنولوجيا المعلومات الموزعة في Intune](/mem/intune/fundamentals/scope-tags)
 
@@ -183,7 +182,7 @@ ms.locfileid: "66017420"
 
 ### <a name="management-sites"></a>مواقع الإدارة
 
-[مركز إدارة إدارة نقاط النهاية من Microsoft](https://endpoint.microsoft.com/#home)
+[مركز إدارة Microsoft إدارة نقاط النهاية](https://endpoint.microsoft.com/#home)
 
 [قواعد تقليل الأجزاء المعرضة للهجوم](https://security.microsoft.com/asr?viewid=detections)
 

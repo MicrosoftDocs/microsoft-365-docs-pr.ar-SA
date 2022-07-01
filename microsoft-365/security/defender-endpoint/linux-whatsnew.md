@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 2f745c0f215f19b0d6e4f9fc06b39ba8234fd170
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: aa6255289ddffd7edb9025e36c69a49f4a3b855b
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554258"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603495"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>ما الجديد في Microsoft Defender لنقطة النهاية على Linux
 
@@ -46,6 +46,7 @@ ms.locfileid: "66554258"
 
 **أحدث الميزات**
 
+- إصلاح لدعم تخزين التعريفات في مواقع غير قياسية (خارج /var) لتحديثات تعريف v2
 - تم إصلاح مشكلة في مستشعر المنتج المستخدم على RHEL 6 والتي قد تؤدي إلى توقف نظام التشغيل
 - `mdatp connectivity test` تم توسيعه باستخدام عنوان URL إضافي يتطلب أن يعمل المنتج بشكل صحيح. عنوان URL الجديد هو [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
 - حتى الآن، لم يكن مستوى سجل المنتج ثابتا بين عمليات إعادة تشغيل المنتج. بدءا من هذا الإصدار، هناك مفتاح أداة سطر أوامر جديد يستمر في مستوى السجل. الأمر الجديد هو `mdatp log level persist --level <level>`.

@@ -28,14 +28,16 @@ search.appverid:
 - MET150
 - MOE150
 description: حظر الوصول إلى Microsoft 365 حتى لا يتمكن موظف سابق من تسجيل الدخول وتأمين بيانات المؤسسة والسماح للموظفين الآخرين بالوصول إلى بريدهم الإلكتروني وبيانات OneDrive.
-ms.openlocfilehash: d8b32a2489735469ecdd2af3b479b0705d33be13
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 12c1656ba0826e9d4d2472427642914cdcc7b2e6
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486209"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601707"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>نظرة عامة: إزالة موظف سابق وتأمين البيانات
+
+اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 السؤال الذي نحصل عليه غالبا هو" ماذا يجب أن أفعل لتأمين البيانات وحماية الوصول عند مغادرة موظف لمؤسستي؟" تشرح سلسلة المقالات هذه كيفية حظر الوصول إلى Microsoft 365 حتى لا يتمكن هؤلاء المستخدمون من تسجيل الدخول إلى Microsoft 365، والخطوات التي يجب اتخاذها لتأمين بيانات المؤسسة، وكيفية السماح للموظفين الآخرين بالوصول إلى البريد الإلكتروني وبيانات OneDrive.
 
@@ -78,7 +80,9 @@ ms.locfileid: "66486209"
 |[الخطوة 6 - إزالة ترخيص Microsoft 365 وحذفه من موظف سابق](remove-former-employee-step-6.md)|عند إزالة ترخيص، يمكنك تعيينه إلى شخص آخر. أو يمكنك حذف الترخيص حتى لا تدفع مقابله حتى تقوم بتوظيف شخص آخر. <p> عند إزالة ترخيص أو حذفه، يتم الاحتفاظ بالبريد الإلكتروني وجهات الاتصال والتقويم القديمة للمستخدم لمدة **30 يوما**، ثم يتم حذفها نهائيا. إذا قمت بإزالة ترخيص أو حذفه ولكن لم تحذف الحساب، فسيظل المحتوى في OneDrive الخاص بالمستخدم متاحا لك حتى بعد 30 يوما.|
 |[الخطوة 7 - حذف حساب مستخدم موظف سابق](remove-former-employee-step-7.md)|يؤدي ذلك إلى إزالة الحساب من مركز الإدارة. يحافظ على نظافة الأشياء.|
 
- ## <a name="watch-delete-a-user"></a>مشاهدة: حذف مستخدم
+## <a name="watch-delete-a-user"></a>مشاهدة: حذف مستخدم
+
+اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198203).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 
@@ -94,7 +98,7 @@ ms.locfileid: "66486209"
 1. راجع النتائج، وحدد **"إغلاق**".
 
 بعد إزالة مستخدم، لديك ما يصل إلى 30 يوما لاستعادة حسابه.
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [استعادة مستخدم](restore-user.md) (مقال)\
 [إضافة موظف جديد إلى Microsoft 365](add-new-employee.md) (مقال)\

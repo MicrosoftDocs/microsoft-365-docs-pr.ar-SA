@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 724e6c0b0e0a9854df6c87977cacbf1e1a69bfbe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 8c650e639d1a4629ed25bcc3a7f3a8c28df4b8e8
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739989"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603454"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>تعلم لغة استعلام التتبع المتقدمة
 
@@ -133,7 +133,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 >[!TIP]
 >يمكنك عرض نتائج الاستعلام كمخططات وضبط عوامل التصفية بسرعة. للحصول على إرشادات، [اقرأ حول استخدام نتائج الاستعلام](advanced-hunting-query-results.md)
 
-شاهد هذا [الفيديو القصير](https://www.youtube.com/watch?v=8qZx7Pp5XgM) للتعرف على كيفية استخدام لغة استعلام Kusto للانضمام إلى الجداول.
+
 
 ## <a name="learn-common-query-operators"></a>تعرف على عوامل تشغيل الاستعلام الشائعة
 
@@ -143,7 +143,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 |--|--|
 | `where` | تصفية جدول إلى مجموعة فرعية من الصفوف التي تلبي دالة تقييم. |
 | `summarize` | إنشاء جدول يجمع محتوى جدول الإدخال. |
-| `join` | دمج صفوف جدولين لتشكيل جدول جديد عن طريق مطابقة قيم العمود (الأعمدة) المحددة من كل جدول. |
+| `join` | دمج صفوف جدولين لتشكيل جدول جديد عن طريق مطابقة قيم العمود (الأعمدة) المحددة من كل جدول. شاهد [الانضمام إلى الجداول في KQL](https://www.youtube.com/watch?v=8qZx7Pp5XgM) لمعرفة كيفية القيام ذلك.|
 | `count` | إرجاع عدد السجلات في مجموعة سجلات الإدخال. |
 | `top` | إرجاع السجلات N الأولى التي تم فرزها حسب الأعمدة المحددة. |
 | `limit` | العودة إلى العدد المحدد من الصفوف. |
@@ -171,7 +171,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ## <a name="get-help-as-you-write-queries"></a>الحصول على المساعدة أثناء كتابة الاستعلامات
 
 استفد من الوظائف التالية لكتابة الاستعلامات بشكل أسرع:
-- **الأخطاء التلقائية** — أثناء كتابة الاستعلامات، يوفر التتبع المتقدم اقتراحات من IntelliSense. 
+- **Autosuggest** — أثناء كتابة الاستعلامات، يوفر التتبع المتقدم اقتراحات من IntelliSense. 
 - **شجرة المخطط** — يتم توفير تمثيل مخطط يتضمن قائمة الجداول والأعمدة الخاصة بها إلى جانب منطقة العمل. لمزيد من المعلومات، مرر مؤشر الماوس فوق عنصر. انقر نقرا مزدوجا فوق عنصر لإدراجه في محرر الاستعلام.
 - **[مرجع المخطط](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** - مرجع في المدخل مع أوصاف الجدول والأعمدة بالإضافة إلى أنواع الأحداث المعتمدة (`ActionType` القيم) واستعلامات العينة
 

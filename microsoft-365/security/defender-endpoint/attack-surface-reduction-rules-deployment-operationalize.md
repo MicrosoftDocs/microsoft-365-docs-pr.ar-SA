@@ -17,15 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 2c666a8b31308fb3cfb18a9a35211e49d886eab0
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 708d929376c029ba5ce448c93fd6c455a78ebec8
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705374"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602867"
 ---
 # <a name="operationalize-attack-surface-reduction-asr-rules"></a>تشغيل قواعد تقليل الأجزاء المعرضة للهجوم (ASR)
 
@@ -46,7 +45,7 @@ ms.locfileid: "64705374"
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="صفحة Advanced Hunting في مدخل Microsoft 365 Defender" lightbox="images/asr-defender365-advanced-hunting2.png":::
 
-التتبع المتقدم هو أداة تتبع المخاطر المستندة إلى الاستعلام (Kusto Query Language) التي تتيح لك استكشاف ما يصل إلى 30 يوما من البيانات الملتقطة (الأولية) التي يجمعها Microsoft Defender ATP Endpoint Detection and Response (الكشف التلقائي والاستجابة على النقط النهائية) من جميع أجهزتك. من خلال التتبع المتقدم، يمكنك فحص الأحداث بشكل استباقي من أجل تحديد المؤشرات والكيانات المثيرة للاهتمام. يسهل الوصول المرن إلى البيانات التتبع غير المقيد لكل من التهديدات المعروفة والمحتملة.
+التتبع المتقدم هو أداة تتبع المخاطر المستندة إلى الاستعلام (Kusto Query Language) التي تتيح لك استكشاف ما يصل إلى 30 يوما من البيانات الملتقطة (البسيطة) التي يجمعها Microsoft Defender ATP Endpoint Detection and Response (EDR) من جميع أجهزتك. من خلال التتبع المتقدم، يمكنك فحص الأحداث بشكل استباقي من أجل تحديد المؤشرات والكيانات المثيرة للاهتمام. يسهل الوصول المرن إلى البيانات التتبع غير المقيد لكل من التهديدات المعروفة والمحتملة.
 
 من خلال التتبع المتقدم، من الممكن استخراج معلومات قواعد ASR وإنشاء التقارير والحصول على معلومات متعمقة حول سياق تدقيق قاعدة ASR معين أو حدث حظر.
 
@@ -81,12 +80,12 @@ ms.locfileid: "64705374"
 
 ## <a name="topics-in-this-deployment-collection"></a>مواضيع في مجموعة النشر هذه
 
-[نظرة عامة على نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment.md)
+[نظرة عامة على دليل نشر قواعد الحد من سطح الهجوم (ASR)](attack-surface-reduction-rules-deployment.md)
 
 [تخطيط نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
-[قواعد اختبار تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[اختبار قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
 [تمكين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 
-[مرجع قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-reference.md)
+[مرجع قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-reference.md)

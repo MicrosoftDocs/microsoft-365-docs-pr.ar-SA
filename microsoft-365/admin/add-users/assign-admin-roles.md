@@ -29,14 +29,16 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: تعرف على كيفية تعيين أدوار المسؤول إلى مستخدم أو عدة مستخدمين في شركتك حتى يتمكنوا من تنفيذ مهام معينة في مركز الإدارة.
-ms.openlocfilehash: 663a5fb60fa815eab079f4ab96e53e8b168105b7
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 62a860fd90104e475763494f84ca1b4546774757
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437009"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601510"
 ---
 # <a name="assign-admin-roles-in-the-microsoft-365-admin-center"></a>تعيين أدوار المسؤول في مركز مسؤولي Microsoft 365
+
+اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 إذا كنت الشخص الذي قام بشراء اشتراك Microsoft business، فأنت المسؤول العام. وهذا يعني أن لديك تحكما غير محدود في المنتجات في اشتراكاتك ويمكنك الوصول إلى معظم البيانات.
 
@@ -46,17 +48,19 @@ ms.locfileid: "65437009"
 
 ## <a name="watch-add-an-admin"></a>شاهد: إضافة مسؤول
 
+اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198030).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-1. عندما تسجل للحصول على Microsoft 365 Business، فإنك تصبح مسؤولا عاما تلقائيا. للمساعدة في إدارة الأعمال، يمكنك جعل الأشخاص الآخرين مسؤولين أيضا. 
-1. في مركز مسؤولي Microsoft 365، حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**UsersActive**</a> >  users.
+1. عندما تسجل في Microsoft 365 Business، فإنك تصبح مسؤولا عاما تلقائيا. للمساعدة في إدارة الأعمال، يمكنك جعل الأشخاص الآخرين مسؤولين أيضا. 
+1. في مركز مسؤولي Microsoft 365، حدد **المستخدمين النشطين للمستخدمين** > .<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>
 1. اختر المستخدم الذي تريد تعيينه كمسؤول، ثم حدد **"إدارة الأدوار**".
 
 إذا وجدت هذا الفيديو مفيدا، فراجع [سلسلة التدريب الكاملة للشركات الصغيرة وتلك الجديدة على Microsoft 365](../../business-video/index.yml).
 
 ## <a name="assign-admin-roles"></a>تعيين أدوار المسؤولين 
 
-يمكنك تعيين مستخدمين لدور بطريقتين مختلفتين:
+يمكنك تعيين دور للمستخدمين بطريقتين مختلفتين:
 
 - يمكنك الانتقال إلى تفاصيل المستخدم **وإدارة الأدوار** لتعيين دور للمستخدم.
 - أو يمكنك الانتقال إلى **Roles** وتحديد الدور، ثم إضافة عدة مستخدمين إليه.
@@ -65,7 +69,7 @@ ms.locfileid: "65437009"
 
 1. في مركز الإدارة، انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**تعيينات الدور**</a>. اختر **علامتي التبويب Azure AD** أو **Intune** لعرض أدوار المسؤول المتوفرة لمؤسستك.
 2. حدد دور المسؤول الذي تريد تعيين المستخدم إليه.
-3. حدد **"Add" للمسؤولين المعينين** > .
+3. حدد **إضافة المسؤولين المعينين** > **.**
 4. اكتب **اسم العرض** أو **اسم المستخدم** الخاص بالمستخدم، ثم حدد المستخدم من قائمة الاقتراحات.
 5. أضف عدة مستخدمين حتى تنتهي.
 6. حدد **"حفظ**"، ثم ستتم إضافة المستخدم إلى قائمة المسؤولين المعينين.

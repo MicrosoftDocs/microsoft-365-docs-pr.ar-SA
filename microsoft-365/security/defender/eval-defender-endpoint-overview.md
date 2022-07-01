@@ -1,6 +1,6 @@
 ---
-title: الخطوة 4. تقييم نظرة عامة حول Microsoft Defender لنقطة النهاية، بما في ذلك مراجعة البنية
-description: خطوات لإعداد بيئة تجريبية Microsoft 365 Defender تجريبية. اختبر تجربة كيفية تصميم حل الأمان لحماية الأجهزة والهوية والبيانات والتطبيقات في مؤسستك.
+title: الخطوة 4. تقييم نظرة عامة على Microsoft Defender لنقطة النهاية، بما في ذلك مراجعة البنية
+description: خطوات الإعداد لمختبر تجريبي Microsoft 365 Defender أو بيئة تجريبية. اختبر وجرب كيفية تصميم حل الأمان لحماية الأجهزة والهوية والبيانات والتطبيقات في مؤسستك.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,37 +19,34 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
-- m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 24600644e08bdc2b0a208d68d6da1078543bd2bd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e9a0c8939ccc5d8007ef1c0318fed45b35c6d36a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63583355"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601235"
 ---
-# <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>الخطوة 4. تقييم نظرة عامة حول Microsoft Defender لنقطة النهاية
+# <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>الخطوة 4. تقييم نظرة عامة على Microsoft Defender لنقطة النهاية
 
 **ينطبق على:**
 
 - Microsoft 365 Defender
 
 
-توضح هذه المقالة العملية لتمكين Microsoft Defender لنقطة النهاية وتديارها. قبل بدء هذه العملية، تأكد من مراجعة العملية الشاملة لتقييم Microsoft 365 Defender وإنشاء بيئة Microsoft 365 Defender [التقييم](eval-create-eval-environment.md).[](eval-overview.md) 
+توضح هذه المقالة عملية تمكين Microsoft Defender لنقطة النهاية وتجربتها. قبل بدء هذه العملية، تأكد من مراجعة العملية الشاملة [لتقييم Microsoft 365 Defender](eval-overview.md) [وقمت بإنشاء بيئة تقييم Microsoft 365 Defender](eval-create-eval-environment.md). 
 <br>
 
-استخدم الخطوات التالية لتمكين Microsoft Defender لنقطة النهاية وتدياره.
+استخدم الخطوات التالية لتمكين Microsoft Defender لنقطة النهاية وتجربتها.
 
-![خطوات لإضافة Microsoft Defender لنقطة النهاية إلى بيئة تقييم Defender.](../../media/defender/m365-defender-endpoint-eval-steps.png)
+:::image type="content" source="../../media/defender/m365-defender-endpoint-eval-steps.png" alt-text="خطوات إضافة Microsoft Defender لنقطة النهاية إلى بيئة تقييم Microsoft Defender" lightbox="../../media/defender/m365-defender-endpoint-eval-steps.png":::
 
 
-يصف الجدول التالي الخطوات في الرسم التوضيحي.
+يصف الجدول التالي الخطوات الواردة في الرسم التوضيحي.
 
- |الخطوة   |الوصف
+ |خطوه   |الوصف
 |---------|---------|
-| [الخطوة 1. مراجعة متطلبات البنية والمفاهيم الأساسية](eval-defender-endpoint-architecture.md)    | فهم بنية Defender لنقطة النهاية والإمكانات المتوفرة لك.       |
-|[الخطوة 2. تمكين بيئة التقييم](eval-defender-endpoint-enable-eval.md)     |   اتبع الخطوات اللازمة لإعداد بيئة التقييم.      |
-|[الخطوة 3. إعداد التجربة ](eval-defender-endpoint-pilot.md)    |    تحقق من المجموعة التجريبية، و تشغيل عمليات المحاكاة، واصبح على دراية بالميزات الرئيسية لوحات المعلومات.     |
-
-
+| [الخطوة 1. مراجعة متطلبات البنية والمفاهيم الرئيسية](eval-defender-endpoint-architecture.md)    | فهم بنية Defender لنقطة النهاية والقدرات المتاحة لك.       |
+|[الخطوة 2. تمكين بيئة التقييم](eval-defender-endpoint-enable-eval.md)     |   اتبع الخطوات لإعداد بيئة التقييم.      |
+|[الخطوة 3. إعداد الإصدار التجريبي ](eval-defender-endpoint-pilot.md)    |    تحقق من مجموعة الإصدار التجريبي، وقم بتشغيل عمليات المحاكاة، وتعرف على الميزات الرئيسية ولوحات المعلومات. |

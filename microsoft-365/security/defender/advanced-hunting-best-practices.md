@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 505308bec005811e174b90cde9e872532ccacdfe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: c4236edcb2b5ec15b7c66be8f4b74ad0a2bc44c7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739472"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603451"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>أفضل ممارسات استعلام التتبع المتقدمة
 
@@ -44,6 +44,8 @@ ms.locfileid: "65739472"
 
 يجب على العملاء الذين يقومون بتشغيل استعلامات متعددة بانتظام تعقب الاستهلاك وتطبيق إرشادات التحسين في هذه المقالة لتقليل التعطيل الناتج عن تجاوز الحصص النسبية أو معلمات الاستخدام.
 
+شاهد [تحسين استعلامات KQL](https://www.youtube.com/watch?v=ceYvRuPp5D8) للاطلاع على بعض الطرق الأكثر شيوعا لتحسين استعلاماتك.  
+
 ## <a name="general-optimization-tips"></a>تلميحات التحسين العامة
 
 - **تحجيم الاستعلامات الجديدة** — إذا كنت تشك في أن الاستعلام سيرجع مجموعة نتائج كبيرة، فقم بتقييمه أولا باستخدام [عامل تشغيل العد](/azure/data-explorer/kusto/query/countoperator). استخدم [الحد](/azure/data-explorer/kusto/query/limitoperator) أو المرادف `take` لتجنب مجموعات النتائج الكبيرة.
@@ -63,7 +65,9 @@ ms.locfileid: "65739472"
 - **تحليل، لا تستخرج**— كلما أمكن، استخدم [عامل التشغيل الموزع](/azure/data-explorer/kusto/query/parseoperator) أو دالة تحليل مثل [parse_json()](/azure/data-explorer/kusto/query/parsejsonfunction). تجنب عامل تشغيل السلسلة `matches regex` أو [الدالة extract()](/azure/data-explorer/kusto/query/extractfunction) وكلاهما يستخدم تعبيرا عاديا. احتفظ باستخدام التعبير العادي لسيناريوهات أكثر تعقيدا. [اقرأ المزيد حول تحليل الدالات](#parse-strings)
 - **تصفية الجداول وليس التعبيرات**— لا تقم بالتصفية على عمود محسوب إذا كان بإمكانك التصفية على عمود جدول.
 - **لا توجد مصطلحات مكونة من ثلاثة أحرف**— تجنب المقارنة أو التصفية باستخدام مصطلحات مكونة من ثلاثة أحرف أو أقل. لا تتم فهرسة هذه المصطلحات وستتطلب مطابقتها المزيد من الموارد.
-- **Project بشكل انتقائي**— اجعل نتائجك أسهل في الفهم من خلال عرض الأعمدة التي تحتاج إليها فقط. يساعد أيضا عرض أعمدة معينة [قبل تشغيل عمليات](/azure/data-explorer/kusto/query/joinoperator) الربط أو عمليات مماثلة على تحسين الأداء.
+- **المشروع بشكل انتقائي** — اجعل نتائجك أسهل في الفهم من خلال عرض الأعمدة التي تحتاج إليها فقط. يساعد أيضا عرض أعمدة معينة [قبل تشغيل عمليات](/azure/data-explorer/kusto/query/joinoperator) الربط أو عمليات مماثلة على تحسين الأداء.
+
+
 
 ## <a name="optimize-the-join-operator"></a>`join` تحسين عامل التشغيل
 يقوم [عامل تشغيل الصلة](/azure/data-explorer/kusto/query/joinoperator) بدمج صفوف من جدولين من خلال مطابقة القيم في أعمدة محددة. طبق هذه التلميحات لتحسين الاستعلامات التي تستخدم عامل التشغيل هذا.
@@ -186,13 +190,13 @@ ms.locfileid: "65739472"
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
 
-شاهد هذا [الفيديو القصير](https://www.youtube.com/watch?v=ceYvRuPp5D8) لمعرفة كيفية تحسين لغة استعلام Kusto.  
+
 
 ## <a name="query-scenarios"></a>سيناريوهات الاستعلام
 
 ### <a name="identify-unique-processes-with-process-ids"></a>تحديد العمليات الفريدة باستخدام معرفات العمليات
 
-تتم إعادة استخدام معرفات العملية (PIDs) في Windows وإعادة استخدامها للعمليات الجديدة. من تلقاء نفسها، لا يمكن أن تكون بمثابة معرفات فريدة لعمليات معينة.
+يتم إعادة استخدام معرفات العملية (PIDs) في Windows وإعادة استخدامها للعمليات الجديدة. من تلقاء نفسها، لا يمكن أن تكون بمثابة معرفات فريدة لعمليات معينة.
 
 للحصول على معرف فريد لعملية على جهاز معين، استخدم معرف العملية مع وقت إنشاء العملية. عند ربط البيانات أو تلخيصها حول العمليات، قم بتضمين أعمدة لمعرف الجهاز (إما `DeviceId` أو)، ومعرف `DeviceName`العملية (`ProcessId` أو `InitiatingProcessId`)، ووقت إنشاء العملية (`ProcessCreationTime` أو `InitiatingProcessCreationTime`)
 

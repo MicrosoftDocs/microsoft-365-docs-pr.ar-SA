@@ -17,15 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 07388ab8f1aac89991423c07fb442017aafb73e6
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 4e538a4e986ad0636c380ec2ba167249221ac3ec
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705286"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602481"
 ---
 # <a name="plan-attack-surface-reduction-asr-rules-deployment"></a>تخطيط نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)
 
@@ -77,17 +76,17 @@ ms.locfileid: "64705286"
 ## <a name="ring-deployment"></a>توزيع الحلقة
 
 بالنسبة للمؤسسات الكبيرة، توصي Microsoft بنشر قواعد ASR في "الحلقات". الحلقات هي مجموعات من الأجهزة التي يتم تمثيلها بصريا كدوائر متحدة المركز تشع إلى الخارج مثل حلقات الشجرة غير المتراكبة. عند نشر الحلقة الأعمق بنجاح، يمكنك نقل الحلقة التالية إلى مرحلة الاختبار. يعد التقييم الشامل لوحدات عملك، وبطلي قواعد ASR، والتطبيقات، والعمليات أمرا ضروريا لتحديد الحلقات الخاصة بك.
-في معظم الحالات، ستكون مؤسستك قد صممت حلقات توزيع لعمليات الإطلاق التدريجية Windows التحديثات. يمكنك استخدام تصميم الحلقة الموجود لتنفيذ قواعد ASR.
-راجع: [إنشاء خطة نشر Windows](/windows/deployment/update/create-deployment-plan)
+في معظم الحالات، ستكون مؤسستك قد صممت حلقات توزيع للإطلاق التدريجي لتحديثات Windows. يمكنك استخدام تصميم الحلقة الموجود لتنفيذ قواعد ASR.
+راجع: [إنشاء خطة نشر لنظام التشغيل Windows](/windows/deployment/update/create-deployment-plan)
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>مواضيع إضافية في مجموعة النشر هذه
 
-[نظرة عامة على نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment.md)
+[نظرة عامة على دليل نشر قواعد الحد من سطح الهجوم (ASR)](attack-surface-reduction-rules-deployment.md)
 
-[قواعد اختبار تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md)
+[اختبار قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md)
 
 [تمكين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 
 [تشغيل قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[مرجع قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-reference.md)
+[مرجع قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-reference.md)

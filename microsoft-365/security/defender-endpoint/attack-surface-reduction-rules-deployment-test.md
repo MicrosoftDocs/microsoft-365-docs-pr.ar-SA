@@ -1,5 +1,5 @@
 ---
-title: قواعد اختبار تقليل الأجزاء المعرضة للهجوم (ASR)
+title: اختبار قواعد تقليل الأجزاء المعرضة للهجوم (ASR)
 description: يوفر إرشادات لاختبار نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR).
 keywords: نشر قواعد تقليل الأجزاء المعرضة للهجوم، ونشر ASR، وتمكين قواعد asr، وتكوين ASR، ونظام منع الاختراق المضيف، وقواعد الحماية، وقواعد مكافحة الاستغلال، وقواعد مكافحة الاستغلال، وقواعد الاستغلال، وقواعد منع العدوى، Microsoft Defender لنقطة النهاية، وتكوين قواعد ASR
 search.product: eADQiWindows 10XVcnh
@@ -17,17 +17,16 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: facce2b736cb23cc41625b4b7d5c3f8b0ca5cfae
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 8bfe3e0d36a02831b5673b92217152ce87804d0a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705264"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601279"
 ---
-# <a name="test-attack-surface-reduction-asr-rules"></a>قواعد اختبار تقليل الأجزاء المعرضة للهجوم (ASR)
+# <a name="test-attack-surface-reduction-asr-rules"></a>اختبار قواعد تقليل الأجزاء المعرضة للهجوم (ASR)
 
 يساعدك اختبار قواعد تقليل الأجزاء المعرضة للهجوم (ASR) على تحديد ما إذا كانت القواعد ستؤدي إلى تعطيل عمليات خط العمل قبل تمكين أي قاعدة. من خلال البدء بمجموعة صغيرة خاضعة للتحكم، يمكنك الحد من انقطاعات العمل المحتملة أثناء توسيع النشر عبر مؤسستك.
 
@@ -42,10 +41,10 @@ ms.locfileid: "64705264"
 
 ### <a name="configure-asr-rules-using-mem"></a>تكوين قواعد ASR باستخدام MEM
 
-يمكنك استخدام أمان نقطة النهاية إدارة نقاط النهاية من Microsoft (MEM) لتكوين قواعد ASR المخصصة.
+يمكنك استخدام أمان نقطة نهاية Microsoft إدارة نقاط النهاية (MEM) لتكوين قواعد ASR المخصصة.
 
-1. افتح [مركز إدارة إدارة نقاط النهاية من Microsoft](https://endpoint.microsoft.com/#home).
-2. انتقل إلى **تقليل سطح** **Endpoint SecurityAttack** > .
+1. افتح [مركز إدارة Microsoft إدارة نقاط النهاية](https://endpoint.microsoft.com/#home).
+2. انتقل إلى **تقليل الأجزاء المعرضة للهجوم** **الأمني** >  لنقطة النهاية.
 3. حدد **إنشاء نهج**.
 4. في **النظام الأساسي**، حدد **Windows 10 والإي وقت لاحق**، وفي **ملف التعريف**، حدد **قواعد تقليل الأجزاء المعرضة للهجوم**.
   
@@ -76,7 +75,7 @@ ms.locfileid: "64705264"
 
 ## <a name="step-2-understand-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>الخطوة 2: فهم صفحة الإبلاغ عن قواعد تقليل الأجزاء المعرضة للهجوم في مدخل Microsoft 365 Defender
 
-تم العثور على صفحة إعداد التقارير لقواعد ASR في قواعد **تقليل سطح** **portalReportsAttack** >  >  **Microsoft 365 Defender**. تحتوي هذه الصفحة على ثلاث علامات تبويب:
+تم العثور على صفحة إعداد تقارير قواعد ASR في **مدخل Microsoft 365 Defender** > **تقارير** > **قواعد تقليل الأجزاء المعرضة للهجوم**. تحتوي هذه الصفحة على ثلاث علامات تبويب:
 
 - المكتشفه
 - التكوين
@@ -124,7 +123,7 @@ ms.locfileid: "64705264"
 > :::image type="content" source="images/asr-defender365-filter.png" alt-text="تصفية قواعد تقليل الأجزاء المعرضة للهجوم على القواعد" lightbox="images/asr-defender365-filter.png":::
 
 >[!Note]
->إذا كان لديك ترخيص Microsoft Microsoft 365 Security E5 أو A5، Windows E5 أو A5، يفتح الارتباط التالي علامة التبويب "تقارير Microsoft Defender 365" > [تقليل الأجزاء المعرضة للهجوم](https://security.microsoft.com/asr?viewid=detections) >.
+>إذا كان لديك ترخيص Microsoft Microsoft 365 Security E5 أو A5 أو Windows E5 أو A5، يفتح الارتباط التالي تقارير Microsoft Defender 365 > [تقليل الأجزاء المعرضة للهجوم](https://security.microsoft.com/asr?viewid=detections) > علامة التبويب "الكشف".
 
 ### <a name="configuration-tab"></a>علامة التبويب "تكوين"
 
@@ -138,7 +137,7 @@ ms.locfileid: "64705264"
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-configurations.settings.png" alt-text="تمكين قواعد تقليل الأجزاء المعرضة للهجوم ووضعها" lightbox="images/asr-defender365-configurations.settings.png":::
 
-يفتح ارتباط **بدء الاستخدام** مركز إدارة إدارة نقاط النهاية من Microsoft، حيث يمكنك إنشاء نهج حماية نقطة النهاية ل ASR أو تعديله:
+يفتح ارتباط **بدء الاستخدام** مركز إدارة Microsoft إدارة نقاط النهاية، حيث يمكنك إنشاء نهج حماية نقطة النهاية ل ASR أو تعديله:
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-defender365-05b-mem1.png" alt-text="عنصر قائمة أمان *Endpoint على صفحة Overview" lightbox="images/asr-defender365-05b-mem1.png":::
@@ -154,20 +153,20 @@ ms.locfileid: "64705264"
 > :::image type="content" source="images/asr-defender365-05b-mem3.png" alt-text="جزء تقليل الأجزاء المعرضة لهجوم أمان نقطة النهاية" lightbox="images/asr-defender365-05b-mem3.png":::
 
 >[!Note]
->إذا كان لديك ترخيص Microsoft Defender 365 E5 (أو Windows E5؟)، فسيفتح هذا الارتباط تقارير Microsoft Defender 365 > علامة تبويب الأجزاء المعرضة للهجوم > علامة التبويب [تكوينات](https://security.microsoft.com/asr?viewid=configuration).
+>إذا كان لديك ترخيص Microsoft Defender 365 E5 (أو Windows E5؟)، فسيفتح هذا الارتباط تقارير Microsoft Defender 365 > علامة تبويب الأجزاء المعرضة للهجوم > علامة التبويب [تكوينات](https://security.microsoft.com/asr?viewid=configuration) .
 
 ### <a name="add-exclusions"></a>إضافة استثناءات
 
 توفر علامة التبويب هذه طريقة لتحديد الكيانات المكتشفة (على سبيل المثال، الإيجابيات الخاطئة) للاستبعاد. عند إضافة الاستثناءات، يوفر التقرير ملخصا للتأثير المتوقع.
 
 >[!Note]
-> يتم احترام استثناءات برنامج الحماية من الفيروسات من MICROSOFT DEFENDER AV من قبل قواعد ASR.  راجع [تكوين الاستثناءات والتحقق من صحتها استنادا إلى الملحق أو الاسم أو الموقع](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+> يتم احترام استثناءات Microsoft Defender Antivirus AV من خلال قواعد ASR.  راجع [تكوين الاستثناءات والتحقق من صحتها استنادا إلى الملحق أو الاسم أو الموقع](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="Images/asr-defender365-06d.png" alt-text="الجزء الخاص باستثناء الملف المكتشف" lightbox="Images/asr-defender365-06d.png":::
 
 > [!Note]
->إذا كان لديك ترخيص Microsoft Defender 365 E5 (أو Windows E5؟)، فسيفتح هذا الارتباط تقارير Microsoft Defender 365 > تقليل الأجزاء المعرضة للهجوم > علامة التبويب ["استثناءات](https://security.microsoft.com/asr?viewid=exclusions)".
+>إذا كان لديك ترخيص Microsoft Defender 365 E5 (أو Windows E5؟)، فسيفتح هذا الارتباط تقارير Microsoft Defender 365 > علامة التبويب "تقليل الأجزاء المعرضة للهجوم" > علامة التبويب ["استثناءات](https://security.microsoft.com/asr?viewid=exclusions) ".
 
 ### <a name="use-powershell-as-an-alternative-method-to-enable-asr-rules"></a>استخدام PowerShell كطريقة بديلة لتمكين قواعد ASR
 
@@ -192,7 +191,7 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 يمكنك أيضا استخدام موفري خدمة تكوين نهج المجموعة أو Intune أو إدارة أجهزة المحمول (MDM) لتكوين الإعداد وتوزيعه. تعرف على المزيد في [مقالة قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction.md) الرئيسي.
 
-## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>استخدم Windows عارض الأحداث Review كبديل لصفحة الإبلاغ عن قواعد تقليل الأجزاء المعرضة للهجوم في مدخل Microsoft 365 Defender
+## <a name="use-windows-event-viewer-review-as-an-alternative-to-the-attack-surface-reduction-rules-reporting-page-in-the-microsoft-365-defender-portal"></a>استخدام Windows عارض الأحداث Review كبديل لصفحة الإبلاغ عن قواعد تقليل الأجزاء المعرضة للهجوم في مدخل Microsoft 365 Defender
 
 لمراجعة التطبيقات التي كان سيتم حظرها، افتح عارض الأحداث وقم بالتصفية لمعرف الحدث 1121 في سجل Microsoft-Windows-Windows Defender/Operational. يسرد الجدول التالي كافة أحداث حماية الشبكة.
 
@@ -204,7 +203,7 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>مواضيع إضافية في مجموعة النشر هذه
 
-[نظرة عامة على نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment.md)
+[نظرة عامة على دليل نشر قواعد الحد من سطح الهجوم (ASR)](attack-surface-reduction-rules-deployment.md)
 
 [تخطيط نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-plan.md)
 
@@ -212,4 +211,4 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 [تشغيل قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[مرجع قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-reference.md)
+[مرجع قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-reference.md)

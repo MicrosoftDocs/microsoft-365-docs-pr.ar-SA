@@ -4,7 +4,7 @@
     - name: أهم 20 مقالة من مقالات تعليمات المسؤول
       href: top-m365-admin-articles.yml
     - name: مكتبة فيديو تدريب المسؤول
-      href: admin-video-library.yml
+      href: 'https://go.microsoft.com/fwlink/?linkid=2197659'
     - name: بدء الاستخدام
       items:
         - name: التسجيل

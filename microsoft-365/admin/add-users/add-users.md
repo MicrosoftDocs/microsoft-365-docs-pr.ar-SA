@@ -23,16 +23,18 @@ search.appverid:
 - MET150
 description: تعرف على كيفية منح كل عضو في الفريق حساب مستخدم حتى يتمكن من الحصول على تراخيص Microsoft 365 وبيانات اعتماد تسجيل الدخول وعلب بريد Microsoft 365.
 ms.date: 07/01/2020
-ms.openlocfilehash: 8ebc4b99840f9987d115539d0039efa1950499d3
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: b9662263711bb08063a9c2ff9f70767bb3ea7ce4
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466801"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601983"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>إضافة مستخدمين وتعيين التراخيص في الوقت نفسه
 
-يحتاج كل شخص في فريقك إلى حساب مستخدم قبل أن يتمكنوا من تسجيل الدخول والوصول [إلى Microsoft 365 للأعمال](https://www.microsoft.com/microsoft-365/business). أسهل طريقة لإضافة حسابات المستخدمين هي إضافتها واحدة في كل مرة في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>. بعد تنفيذ هذه الخطوة، يكون لدى المستخدمين تراخيص Microsoft 365 وبيانات اعتماد تسجيل الدخول وعلب بريد Microsoft 365.
+اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+
+يحتاج كل من الأشخاص في فريقك إلى حساب مستخدم قبل أن يتمكنوا من تسجيل الدخول والوصول إلى [Microsoft 365 للأعمال](https://www.microsoft.com/microsoft-365/business). أسهل طريقة لإضافة حسابات المستخدمين هي إضافتها واحدة في كل مرة في <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>. بعد تنفيذ هذه الخطوة، يكون لدى المستخدمين تراخيص Microsoft 365 وبيانات اعتماد تسجيل الدخول وعلب بريد Microsoft 365.
 
 > [!TIP]
 > إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى خبراء الشركات الصغيرة أثناء تنمية أعمالك، بدءا من الإلحاق إلى الاستخدام اليومي.
@@ -43,6 +45,8 @@ ms.locfileid: "65466801"
 
 ## <a name="watch-add-users-in-the-dashboard-view"></a>شاهد: إضافة مستخدمين في طريقة عرض لوحة المعلومات
 
+اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198205).
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
 > [!NOTE]
@@ -50,7 +54,7 @@ ms.locfileid: "65466801"
 
 ## <a name="add-users-one-at-a-time-in-the-dashboard-view"></a>إضافة مستخدمين واحدا تلو الآخر في طريقة عرض لوحة المعلومات
 
-:::image type="content" source="../../media/classic-admin-center.png" alt-text="لقطة شاشة: طريقة عرض لوحة معلومات مركز الإدارة":::
+:::image type="content" source="../../media/classic-admin-center.png" alt-text="لقطة شاشة: طريقة عرض لوحة معلومات مركز مسؤول":::
 
 ::: moniker range="o365-worldwide"
 
@@ -64,7 +68,7 @@ ms.locfileid: "65466801"
 
 ::: moniker-end 
 
-2. انتقل إلى **مستخدمي UsersActive** > ، وحدد **"إضافة مستخدم**".
+2. انتقل إلى **المستخدمين النشطين** > ، وحدد **"إضافة مستخدم**".
 3. في جزء **"إعداد الأساسيات** "، املأ معلومات المستخدم الأساسية، ثم حدد **"التالي**".
     - **اسم** املأ الاسم الأول واسم العائلة واسم العرض واسم المستخدم.
     - **المجال** اختر المجال لحساب المستخدم. على سبيل المثال، إذا كان اسم المستخدم هو Jakob، وكان المجال contoso.com، فسيسجل دخوله باستخدام jakob@contoso.com.
@@ -104,17 +108,17 @@ ms.locfileid: "65466801"
 
 - **استخدم جدول بيانات لإضافة أشخاص بشكل مجمع.** راجع [إضافة عدة مستخدمين في الوقت نفسه](../../enterprise/add-several-users-at-the-same-time.md).
 - **أتمتة إضافة الحسابات وتعيين التراخيص.** راجع [إنشاء حسابات المستخدمين باستخدام Microsoft 365 PowerShell](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md). اختر هذا الأسلوب إذا كنت على دراية بالفعل باستخدام أوامر cmdlets Windows PowerShell.
-- **هل تستخدم ActiveDirectory؟** [إعداد مزامنة الدليل Microsoft 365](../../enterprise/set-up-directory-synchronization.md). استخدم أداة Azure AD الاتصال لنسخ حسابات مستخدمي Active Directory (وعناصر Active Directory الأخرى) في Microsoft 365. تضيف المزامنة حسابات المستخدمين فقط. يجب تعيين تراخيص للمستخدمين المتزامنين قبل أن يتمكنوا من استخدام البريد الإلكتروني وتطبيقات Office الأخرى.
-- **هل ترحل من Exchange؟** راجع [طرق ترحيل حسابات بريد إلكتروني متعددة إلى Office 365](/Exchange/mailbox-migration/mailbox-migration). عند ترحيل علب بريد متعددة إلى Microsoft 365 باستخدام أسلوب Exchange الكلي أو المرحلي أو المختلط، يمكنك إضافة مستخدمين تلقائيا كجزء من الترحيل. يضيف الترحيل حسابات المستخدمين فقط. يجب تعيين تراخيص للمستخدمين قبل أن يتمكنوا من استخدام البريد الإلكتروني وتطبيقات Office الأخرى. إذا لم تقم بتعيين ترخيص لمستخدم، يتم تعطيل علبة البريد الخاصة به بعد فترة سماح مدتها 30 يوما. تعرف على كيفية [تعيين تراخيص للمستخدمين](../manage/assign-licenses-to-users.md) في مركز مسؤولي Microsoft 365.
+- **هل تستخدم ActiveDirectory؟** [إعداد مزامنة الدليل ل Microsoft 365](../../enterprise/set-up-directory-synchronization.md). استخدم أداة الاتصال Azure AD لنسخ حسابات مستخدمي Active Directory (وعناصر Active Directory الأخرى) في Microsoft 365. تضيف المزامنة حسابات المستخدمين فقط. يجب تعيين تراخيص للمستخدمين الذين تمت مزامنتهم قبل أن يتمكنوا من استخدام البريد الإلكتروني وتطبيقات Office الأخرى.
+- **هل تقوم بالترحيل من Exchange؟** راجع [طرق ترحيل حسابات بريد إلكتروني متعددة إلى Office 365](/Exchange/mailbox-migration/mailbox-migration). عند ترحيل علب بريد متعددة إلى Microsoft 365 باستخدام أسلوب Exchange الكلي أو المرحلي أو المختلط، يمكنك إضافة مستخدمين تلقائيا كجزء من الترحيل. يضيف الترحيل حسابات المستخدمين فقط. يجب تعيين تراخيص للمستخدمين قبل أن يتمكنوا من استخدام البريد الإلكتروني وتطبيقات Office الأخرى. إذا لم تقم بتعيين ترخيص لمستخدم، يتم تعطيل علبة البريد الخاصة به بعد فترة سماح مدتها 30 يوما. تعرف على كيفية [تعيين تراخيص للمستخدمين](../manage/assign-licenses-to-users.md) في مركز مسؤولي Microsoft 365.
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-بعد إضافة مستخدم، تتلقى إعلاما بالبريد الإلكتروني من Microsoft. يحتوي البريد الإلكتروني على معرف المستخدم وكلمة المرور للشخص حتى يتمكن من تسجيل الدخول إلى Microsoft 365. استخدم العملية العادية لتوصيل كلمات مرور جديدة. شارك [دليل التشغيل السريع للموظف](../setup/employee-quick-setup.md) مع المستخدمين الجدد لإعداد أشياء، مثل كيفية [تنزيل تطبيقات Office وتثبيتها على كمبيوتر شخصي أو Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) وكيفية [إعداد تطبيقات Office والبريد الإلكتروني على جهاز محمول](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+بعد إضافة مستخدم، تتلقى إعلاما بالبريد الإلكتروني من Microsoft. يحتوي البريد الإلكتروني على معرف المستخدم وكلمة المرور للشخص حتى يتمكنوا من تسجيل الدخول إلى Microsoft 365. استخدم العملية العادية لتوصيل كلمات مرور جديدة. شارك [دليل التشغيل السريع للموظف](../setup/employee-quick-setup.md) مع المستخدمين الجدد لإعداد أشياء، مثل كيفية [تنزيل تطبيقات Office وتثبيتها على كمبيوتر شخصي أو Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) وكيفية [إعداد تطبيقات Office والبريد الإلكتروني على جهاز محمول](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
-[إضافة موظف جديد إلى Microsoft 365](add-new-employee.md) (مقالة)\
-[إضافة عدة مستخدمين في الوقت نفسه إلى Microsoft 365](../../enterprise/add-several-users-at-the-same-time.md) (مقالة)\
-[استعادة مستخدم في Microsoft 365](restore-user.md) (مقالة)\
+[إضافة موظف جديد إلى Microsoft 365](add-new-employee.md) (مقال)\
+[إضافة عدة مستخدمين في الوقت نفسه إلى Microsoft 365](../../enterprise/add-several-users-at-the-same-time.md) (مقال)\
+[استعادة مستخدم في Microsoft 365](restore-user.md) (مقال)\
 [تعيين تراخيص للمستخدمين](../manage/assign-licenses-to-users.md) (مقالة)\
 [حذف مستخدم من مؤسستك](delete-a-user.md) (مقالة)

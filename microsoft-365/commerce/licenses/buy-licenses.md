@@ -23,14 +23,16 @@ ms.custom:
 search.appverid: MET150
 description: استخدم هذه الخطوات لشراء المزيد من التراخيص أو تقليل عدد التراخيص لاشتراكك في Microsoft 365 للأعمال.
 ms.date: 06/06/2022
-ms.openlocfilehash: ad7f0b15218043757c1e0692603e74760e2c10ef
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 530a1058b9f6676d6a674041ef8fe69d6cfe77e7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489659"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602359"
 ---
 # <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>شراء تراخيص Microsoft 365 أو إزالتها لاشتراك
+
+اطلع على [تعليمات Microsoft 365 small business](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 يمكنك شراء المزيد من التراخيص أو تقليل عدد التراخيص لاشتراكاتك باستخدام الخطوات التالية.
 
@@ -44,6 +46,8 @@ ms.locfileid: "66489659"
 - إذا اشتريت خطة Microsoft 365 للأعمال أو Office 365 Enterprise من خلال شريك تابع لجهة خارجية، فيجب عليك شراء تراخيص إضافية من خلال هذا الشريك.
 
 ## <a name="watch-buy-new-licenses"></a>شاهد: شراء تراخيص جديدة
+
+اطلع على هذا الفيديو والبعض الآخر على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198206).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
@@ -106,7 +110,7 @@ ms.locfileid: "66489659"
 
 إذا قمت بتقليل عدد التراخيص لاشتراكك لأن شخصا ما غادر مؤسستك، فقد ترغب في إزالة حساب هذا المستخدم. لمعرفة المزيد، راجع [إزالة موظف سابق](../../admin/add-users/remove-former-employee.md).
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [تعيين تراخيص للمستخدمين](../../admin/manage/assign-licenses-to-users.md) (مقالة)\
 [فهم الاشتراكات والتراخيص](subscriptions-and-licenses.md) (مقالة)\
