@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: e83306f4af82d8a24745ca5af3d146bb50c41ee7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: b253fe7dad271684f5c0e927ec162ea4e993df29
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603385"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607378"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>إدارة Microsoft Defender لنقطة النهاية باستخدام Configuration Manager
 
@@ -34,15 +34,12 @@ ms.locfileid: "66603385"
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 نوصي باستخدام [Microsoft إدارة نقاط النهاية](/mem)، والتي تتضمن [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) ونقطة [النهاية من Microsoft Configuration Manager](/mem/configmgr/core/understand/introduction) (Configuration Manager ) لإدارة ميزات الحماية من التهديدات في مؤسستك للأجهزة (يشار إليها أيضا بنقاط النهاية).
 
 - [تعرف على المزيد حول إدارة نقاط النهاية](/mem/endpoint-manager-overview)
 - [المشاركة في إدارة Microsoft Defender لنقطة النهاية على أجهزة Windows 10 وأجهزة Windows 11 باستخدام Configuration Manager وIntune](manage-mde-post-migration-intune.md)
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-configuration-manager"></a>تكوين Microsoft Defender لنقطة النهاية باستخدام Configuration Manager
-
-<br/><br/>
 
 |المهمه|الموارد لمعرفة المزيد|
 |---|---|

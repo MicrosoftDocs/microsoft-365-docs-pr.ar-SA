@@ -21,12 +21,12 @@ description: يمكن للمستخدمين معرفة كيفية عرض الرس
 ms.technology: mdo
 ms.prod: m365-security
 adobe-target: true
-ms.openlocfilehash: 3a0faf45e6c9c756490be5ae3ab69b99f3a71cb0
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 845e72f2cf3eeb97d7d5f90224967a4fe5068cf1
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940987"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607664"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>البحث عن الرسائل المعزولة وتحريرها كمستخدم في EOP
 
@@ -37,7 +37,7 @@ ms.locfileid: "65940987"
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-في مؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection (EOP) المستقلة التي لا تملك علب بريد Exchange Online، يحتفظ العزل بالرسائل التي قد تكون خطرة أو غير مرغوب فيها. لمزيد من المعلومات، راجع [العزل في EOP](quarantine-email-messages.md).
+في مؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، يحتفظ العزل برسائل قد تكون خطرة أو غير مرغوب فيها. لمزيد من المعلومات، راجع [العزل في EOP](quarantine-email-messages.md).
 
 كمستخدم عادي (وليس كمسؤول)، يتم وصف القدرات **الافتراضية** المتوفرة لك كمستلم لرسالة معزولة في الجدول التالي:
 
@@ -51,9 +51,9 @@ ms.locfileid: "65940987"
 |التصيد الاحتيالي عالي الثقة||||
 |**نُهج مكافحة التصيد الاحتيالي**||||
 |حماية التحليل الذكي للانتحال في EOP|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
-|حماية المستخدم منتحلة في Defender ل Office 365|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
-|حماية المجال منتحلة في Defender ل Office 365|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
-|حماية ذكاء علبة البريد في Defender ل Office 365|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
+|حماية المستخدم منتحلة في Defender لـ Office 365|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
+|حماية المجال منتحلة في Defender لـ Office 365|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
+|الحماية الذكية لعل البريد في Defender لـ Office 365|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
 |**نهج مكافحة البرامج الضارة**||||
 |رسائل البريد الإلكتروني التي تحتوي على مرفقات تم عزلها كبرود ضار.||||
 |**المرفقات الآمنة في Defender لـ Office 365**||||
@@ -64,7 +64,7 @@ ms.locfileid: "65940987"
 
 تحدد _نهج العزل_ ما يسمح للمستخدمين بالقيام به للرسائل المعزولة استنادا إلى سبب عزل الرسالة في [الميزات المدعومة](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). تفرض نهج العزل الافتراضية القدرات التاريخية كما هو موضح في الجدول السابق. يمكن للمسؤولين إنشاء وتطبيق نهج العزل المخصصة التي تحدد قدرات أقل تقييدا أو أكثر تقييدا للمستخدمين في الميزات المدعومة. لمزيد من المعلومات، راجع [نهج العزل](quarantine-policies.md).
 
-يمكنك عرض الرسائل المعزولة وإدارتها في مدخل Microsoft 365 Defender أو (إذا قام مسؤول بإعداد هذا الأمر) إعلامات العزل من نهج العزل.
+يمكنك عرض الرسائل المعزولة وإدارتها في مدخل Microsoft 365 Defender أو (إذا قام مسؤول بإعداد ذلك) إعلامات العزل من نهج العزل.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
@@ -137,7 +137,11 @@ ms.locfileid: "65940987"
 
    بعد إدخال معايير البحث، اضغط على ENTER لتصفية النتائج.
 
+   > [!NOTE]
+   > سيبحث مربع **البحث** في صفحة **العزل** الرئيسية في العناصر المعزولة فقط في طريقة العرض الحالية، وليس العزل بأكمله. للبحث في كافة العناصر المعزولة، استخدم القائمة المنبثقة **"تصفية** " و" **عوامل التصفية** " الناتجة.
+
 بعد العثور على رسالة محددة تم عزلها، حدد الرسالة لعرض تفاصيل حولها، واتخاذ إجراء بشأنها (على سبيل المثال، عرض الرسالة أو إصدارها أو تنزيلها أو حذفها).
+
 
 ### <a name="view-quarantined-message-details"></a>عرض تفاصيل الرسالة المعزولة
 

@@ -1,6 +1,6 @@
 ---
-title: إلحاق Windows أجهزة متعددة الجلسات في Azure Virtual Desktop
-description: اقرأ المزيد في هذه المقالة حول إعداد Windows الأجهزة متعددة الجلسات في Azure Virtual Desktop
+title: إلحاق أجهزة Windows في Azure Virtual Desktop
+description: تعرف على إعداد أجهزة Windows إلى Defender لنقطة النهاية في Azure Virtual Desktop
 keywords: Azure Virtual Desktop وAVD وmicrosoft defender ونقطة النهاية والإلحاق
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -15,20 +15,21 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7a093a3b50d7153c71eecb9707ff8ab0dbef0d20
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 91a9cc3e7a9fdc38a05deaf04f2124819f41d1ae
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013277"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607422"
 ---
-# <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>إلحاق Windows أجهزة متعددة الجلسات في Azure Virtual Desktop
+# <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>إلحاق أجهزة Windows في Azure Virtual Desktop
 
 6 دقائق للقراءة
 
 **ينطبق على:**
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Windows متعددة الجلسات قيد التشغيل على Azure Virtual Desktop (AVD)
+- Windows multi-session running on Azure Virtual Desktop (AVD)
+- [Windows 10 Enterprise متعددة الجلسات](/microsoft-365/security/defender-endpoint/azure-server-integration)
 
 يدعم Microsoft Defender لنقطة النهاية مراقبة كل من جلسات VDI وAzure Virtual Desktop. اعتمادا على احتياجات مؤسستك، قد تحتاج إلى تنفيذ جلسات VDI أو Azure Virtual Desktop لمساعدة موظفيك على الوصول إلى بيانات الشركة وتطبيقاتها من جهاز غير مدار أو موقع بعيد أو سيناريو مماثل. مع Microsoft Defender لنقطة النهاية، يمكنك مراقبة هذه الأجهزة الظاهرية للنشاط الشاذ.
 
@@ -73,7 +74,7 @@ ms.locfileid: "66013277"
 
 1. فتح ملف .zip حزمة تكوين VDI (WindowsDefenderATPOnboardingPackage.zip)
 
-    1. في جزء التنقل في مدخل Microsoft 365 Defender، حدد **الإعدادات** \> **Endpoints** \> **Onboarding** (ضمن **إدارة الجهاز**).
+    1. في جزء التنقل في مدخل Microsoft 365 Defender، حدد **إعدادات** \> **إلحاق نقاط** \> النهاية **(ضمن** **إدارة الجهاز**).
     1. حدد Windows 10 أو Windows 11 كنظام التشغيل.
     1. في حقل **أسلوب النشر** ، حدد البرامج النصية لإلحاق VDI لنقاط النهاية غير الثابتة.
     1. انقر فوق **"تنزيل الحزمة** " واحفظ ملف .zip.
@@ -86,7 +87,7 @@ ms.locfileid: "66013277"
 
 2. في نهج المجموعة Management Editor، انتقل إلى **إعدادات لوحة التحكم** **في تفضيلات** \> **تكوين** \> الكمبيوتر.
 
-3. انقر بزر الماوس الأيمن فوق **المهام المجدولة**، وانقر فوق **"جديد**"، ثم انقر فوق **"مهمة فورية**" (على الأقل Windows 7).
+3. انقر بزر الماوس الأيمن فوق **المهام المجدولة**، وانقر فوق **"جديد**"، ثم انقر فوق **"مهمة فورية** " (Windows 7 على الأقل).
 
 4. في النافذة "مهمة" التي يتم فتحها، انتقل إلى علامة التبويب **"عام** ". ضمن **خيارات الأمان** ، انقر فوق **تغيير المستخدم أو المجموعة** واكتب SYSTEM. انقر فوق **"التحقق من الأسماء** " ثم انقر فوق "موافق". يظهر NT AUTHORITY\SYSTEM كحساب المستخدم الذي سيتم تشغيل المهمة عليه.
 
@@ -104,12 +105,12 @@ ms.locfileid: "66013277"
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*السيناريو 3: الإلحاق باستخدام أدوات الإدارة*
 
-إذا كنت تخطط لإدارة أجهزتك باستخدام أداة إدارة، يمكنك إلحاق الأجهزة باستخدام Microsoft Endpoint Configuration Manager.
+إذا كنت تخطط لإدارة أجهزتك باستخدام أداة إدارة، يمكنك إلحاق الأجهزة باستخدام نقطة نهاية Microsoft Configuration Manager.
 
 لمزيد من المعلومات، راجع [إلحاق أجهزة Windows باستخدام Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
-> إذا كنت تخطط لاستخدام [مرجع قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-reference.md)، لاحظ أنه يجب عدم استخدام القاعدة "[حظر عمليات الإنشاء التي تنشأ من أوامر PSExec وWMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)"، لأن هذه القاعدة غير متوافقة مع الإدارة من خلال Microsoft Endpoint Configuration Manager. تمنع القاعدة أوامر WMI التي يستخدمها العميل Configuration Manager للعمل بشكل صحيح.
+> إذا كنت تخطط لاستخدام [مرجع قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-reference.md)، لاحظ أنه يجب عدم استخدام القاعدة "[حظر عمليات الإنشاء التي تنشأ من أوامر PSExec وWMI](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)"، لأن هذه القاعدة غير متوافقة مع الإدارة من خلال نقطة نهاية Microsoft Configuration Manager. تمنع القاعدة أوامر WMI التي يستخدمها العميل Configuration Manager للعمل بشكل صحيح.
 
 > [!TIP]
 > بعد إلحاق الجهاز، يمكنك اختيار تشغيل اختبار الكشف للتحقق من أن الجهاز تم إلحاقه بشكل صحيح إلى الخدمة. لمزيد من المعلومات، راجع [تشغيل اختبار الكشف على جهاز Microsoft Defender لنقطة النهاية تم إلحاقه حديثا](run-detection-test.md).
@@ -154,12 +155,12 @@ ms.locfileid: "66013277"
 
 #### <a name="licensing-requirements"></a>متطلبات الترخيص
 
-ملاحظة حول الترخيص: عند استخدام Windows Enterprise multi-session، وفقا لمتطلباتك، يمكنك اختيار إما ترخيص جميع المستخدمين من خلال Microsoft Defender لنقطة النهاية (لكل مستخدم) أو Windows Enterprise E5 أو Microsoft 365 Security أو Microsoft 365 E5 ، أو أن يكون الجهاز الظاهري مرخصا من خلال Microsoft Defender for Cloud.
+ملاحظة حول الترخيص: عند استخدام Windows Enterprise متعدد الجلسات، وفقا لمتطلباتك، يمكنك اختيار إما ترخيص جميع المستخدمين من خلال Microsoft Defender لنقطة النهاية (لكل مستخدم) أو Windows Enterprise E5 أو Microsoft 365 Security أو Microsoft 365 E5 أو ترخيص الجهاز الظاهري من خلال Microsoft Defender for Cloud.
 يمكن العثور على متطلبات الترخيص Microsoft Defender لنقطة النهاية في: [متطلبات الترخيص](minimum-requirements.md#licensing-requirements).
 
 ### <a name="known-issues-and-limitations"></a>المشاكل والقيود المعروفة
 
-يتم دعم Microsoft Edge فقط لتصفية الويب في Windows 10 متعددة الجلسات.
+يتم دعم Microsoft Edge فقط لتصفية الويب في Windows 10 جلسات متعددة.
 
 #### <a name="related-links"></a>الارتباطات ذات الصلة
 

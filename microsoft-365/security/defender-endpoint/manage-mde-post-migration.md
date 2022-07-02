@@ -1,5 +1,5 @@
 ---
-title: إدارة Microsoft Defender لنقطة النهاية ما بعد الترحيل
+title: إدارة Microsoft Defender لنقطة النهاية بعد الإعداد الأولي أو الترحيل
 description: الآن بعد أن قمت بالتبديل إلى Microsoft Defender لنقطة النهاية، فإن خطوتك التالية هي إدارة ميزات الحماية من التهديدات
 keywords: ما بعد الترحيل، والإدارة، والعمليات، والصيانة، والاستخدام، Microsoft Defender لنقطة النهاية، edr
 ms.prod: m365-security
@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 0103fea7a569b7462e455541e574fee58c719d24
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: d00de67b52f521042d5595320346f875f8c89c9e
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601081"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607554"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-post-migration"></a>إدارة Microsoft Defender لنقطة النهاية، ما بعد الترحيل
+# <a name="manage-microsoft-defender-for-endpoint-after-initial-setup-or-migration"></a>إدارة Microsoft Defender لنقطة النهاية بعد الإعداد الأولي أو الترحيل
 
 **ينطبق على:**
 - [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -33,11 +33,9 @@ ms.locfileid: "66601081"
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-بعد الانتقال من حل حماية نقطة النهاية والحماية من الفيروسات السابق إلى Microsoft Defender لنقطة النهاية، تكون خطوتك التالية هي إدارة ميزاتك وقدراتك. نوصي باستخدام [Microsoft إدارة نقاط النهاية](/mem/endpoint-manager-overview)، والتي تتضمن [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) [ونقطة نهاية Microsoft Configuration Manager](/mem/configmgr/core/understand/introduction)، لإدارة أجهزة مؤسستك وإعدادات الأمان. ومع ذلك، يمكنك استخدام أدوات/أساليب أخرى، مثل [نهج المجموعة العناصر في azure خدمات مجال Active Directory](/azure/active-directory-domain-services/manage-group-policy).
+بعد إعداد Microsoft Defender لنقطة النهاية وتكوينه، تكون خطوتك التالية هي إدارة ميزاتك وقدراتك. نوصي باستخدام [Microsoft إدارة نقاط النهاية](/mem/endpoint-manager-overview)، والتي تتضمن [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) [ونقطة نهاية Microsoft Configuration Manager](/mem/configmgr/core/understand/introduction)، لإدارة أجهزة مؤسستك وإعدادات الأمان. ومع ذلك، يمكنك استخدام أدوات/أساليب أخرى، مثل [نهج المجموعة العناصر في azure خدمات مجال Active Directory](/azure/active-directory-domain-services/manage-group-policy).
 
 يسرد الجدول التالي أدوات/أساليب مختلفة يمكنك استخدامها، مع ارتباطات لمعرفة المزيد.
-
-<br/><br/>
 
 |أداة/أسلوب|الوصف|
 |---|---|

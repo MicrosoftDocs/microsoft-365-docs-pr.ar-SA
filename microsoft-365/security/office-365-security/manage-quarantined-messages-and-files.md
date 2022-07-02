@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: يمكن للمسؤولين معرفة كيفية عرض الرسائل المعزولة وإدارتها لجميع المستخدمين في Exchange Online Protection (EOP). يمكن للمسؤولين في المؤسسات ذات Microsoft Defender لـ Office 365 أيضا إدارة الملفات المعزولة في SharePoint Online OneDrive for Business Microsoft Teams.
+description: يمكن للمسؤولين معرفة كيفية عرض الرسائل المعزولة وإدارتها لجميع المستخدمين في Exchange Online Protection (EOP). يمكن للمسؤولين في المؤسسات ذات Microsoft Defender لـ Office 365 أيضا إدارة الملفات المعزولة في SharePoint Online OneDrive for Business وMicrosoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3bd239231cc49684f8b07fb73f33265c9463bad4
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 50fa4eb3895fa9ad35e6182c2bcc7d7875bdae3a
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839788"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607290"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>إدارة الرسائل والملفات المعزولة كمسؤول في EOP
 
@@ -35,15 +35,15 @@ ms.locfileid: "65839788"
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-في المؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، يحتفظ العزل برسائل قد تكون خطرة أو غير مرغوب فيها. لمزيد من المعلومات، راجع [رسائل البريد الإلكتروني المعزولة في EOP](quarantine-email-messages.md).
+في مؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، يحتفظ العزل برسائل قد تكون خطرة أو غير مرغوب فيها. لمزيد من المعلومات، راجع [رسائل البريد الإلكتروني المعزولة في EOP](quarantine-email-messages.md).
 
 يمكن للمسؤولين عرض كافة أنواع الرسائل المعزولة وتحريرها وحذفها لجميع المستخدمين. يمكن للمسؤولين أيضا الإبلاغ عن الإيجابيات الخاطئة إلى Microsoft.
 
 بشكل افتراضي، يمكن للمسؤولين فقط إدارة الرسائل التي تم عزلها على أنها برامج ضارة أو تصيد احتيالي عالي الثقة أو نتيجة لقواعد تدفق البريد (المعروفة أيضا بقواعد النقل). ولكن يمكن للمسؤولين استخدام _نهج العزل_ لتحديد ما يسمح للمستخدمين بالقيام به للرسائل المعزولة استنادا إلى سبب عزل الرسالة (للميزات المدعومة). لمزيد من المعلومات، راجع [نهج العزل](quarantine-policies.md).
 
-يمكن للمسؤولين في المؤسسات ذات Microsoft Defender لـ Office 365 أيضا إدارة الملفات التي تم عزلها بواسطة [مرفقات خزينة SharePoint OneDrive Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+يمكن للمسؤولين في المؤسسات ذات Microsoft Defender لـ Office 365 أيضا إدارة الملفات التي تم عزلها بواسطة ["المرفقات الآمنة" ل SharePoint وOneDrive وMicrosoft Teams](mdo-for-spo-odb-and-teams.md).
 
-يمكنك عرض الرسائل المعزولة وإدارتها في مدخل Microsoft 365 Defender أو في PowerShell (Exchange Online PowerShell للمؤسسات Microsoft 365 مع علب البريد في Exchange Online؛ EOP PowerShell مستقل للمؤسسات دون Exchange Online علب البريد).
+يمكنك عرض الرسائل المعزولة وإدارتها في مدخل Microsoft 365 Defender أو في PowerShell (Exchange Online PowerShell لمؤسسات Microsoft 365 مع علب بريد في Exchange Online؛ EOP PowerShell مستقل للمؤسسات التي لا تحتوي على علب بريد Exchange Online).
 
 شاهد هذا الفيديو القصير لمعرفة كيفية إدارة الرسائل المعزولة كمسؤول. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGPF]
@@ -52,7 +52,7 @@ ms.locfileid: "65839788"
 
 - لفتح مدخل Microsoft 365 Defender، انتقل إلى <https://security.microsoft.com>. للانتقال مباشرة إلى صفحة **العزل** ، استخدم <https://security.microsoft.com/quarantine>.
 
-- للاتصال Exchange Online PowerShell، راجع [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell مستقل، راجع [الاتصال إلى Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- للاتصال Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell المستقل، راجع [الاتصال Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - يجب تعيين أذونات لك في **Exchange Online** قبل أن تتمكن من تنفيذ الإجراءات الواردة في هذه المقالة:
   - لاتخاذ إجراء بشأن الرسائل المعزولة لجميع المستخدمين، يجب أن تكون عضوا في مجموعات دور مسؤول **العزل**<sup>\*</sup> أو **إدارة المؤسسة** أو **مسؤول الأمان**. لإرسال الرسائل إلى Microsoft، يجب أن تكون عضوا في مجموعة دور **مسؤول الأمان** .
@@ -113,7 +113,7 @@ ms.locfileid: "65839788"
      - **قاعدة النقل** (قاعدة تدفق البريد)
      - **معظم**
      - **البريد المزعج**
-     - **البرامج الضارة**: نهج مكافحة البرامج الضارة في نهج EOP أو خزينة المرفقات في Defender لـ Office 365. تشير قيمة **نوع النهج** إلى الميزة التي تم استخدامها.
+     - **البرامج الضارة**: نهج مكافحة البرامج الضارة في نهج EOP أو المرفقات الآمنة في Defender لـ Office 365. تشير قيمة **نوع النهج** إلى الميزة التي تم استخدامها.
      - **التصيد الاحتيالي**: كان قرار تصفية البريد العشوائي **هو التصيد الاحتيالي** أو الحماية من التصيد الاحتيالي عزل الرسالة ([إعدادات تزييف الهوية](set-up-anti-phishing-policies.md#spoof-settings) أو [حماية الانتحال](إعداد نهج مكافحة التصيد الاحتيالي.
      - **التصيد الاحتيالي عالي الثقة**
    - **المستلم**: **كل المستخدمين** أو **أنا فقط**. يمكن للمستخدمين النهائيين إدارة الرسائل المعزولة المرسلة إليهم فقط.
@@ -125,7 +125,7 @@ ms.locfileid: "65839788"
      - **تم الإصدار**
    - **نوع النهج**: تصفية الرسائل حسب نوع النهج:
      - **نهج مكافحة البرامج الضارة**
-     - **نهج المرفقات خزينة**
+     - **نهج المرفقات الآمنة**
      - **نهج مكافحة التصيد الاحتيالي**
      - **نهج مكافحة البريد العشوائي**
      - **قاعدة النقل** (قاعدة تدفق البريد)
@@ -137,6 +137,9 @@ ms.locfileid: "65839788"
    - الموضوع. استخدم موضوع الرسالة بأكمله. البحث ليس حساسا لحالة الأحرف.
 
    بعد إدخال معايير البحث، اضغط على ENTER لتصفية النتائج.
+
+   > [!NOTE]
+   > سيبحث مربع **البحث** في صفحة **العزل** الرئيسية في العناصر المعزولة فقط في طريقة العرض الحالية، وليس العزل بأكمله. للبحث في كافة العناصر المعزولة، استخدم القائمة المنبثقة **"تصفية** " و" **عوامل التصفية** " الناتجة. 
 
 بعد العثور على رسالة محددة تم عزلها، حدد الرسالة لعرض تفاصيل حولها، واتخاذ إجراء بشأنها (على سبيل المثال، عرض الرسالة أو إصدارها أو تنزيلها أو حذفها).
 
@@ -219,7 +222,7 @@ ms.locfileid: "65839788"
   - **حدد نوع الإرسال**: **البريد الإلكتروني** (الافتراضي) أو **URL** أو **الملف**.
   - **إضافة معرف رسالة الشبكة أو تحميل ملف البريد الإلكتروني**: حدد أحد الخيارات التالية:
     - **إضافة معرف رسالة شبكة البريد الإلكتروني** (افتراضي، مع القيمة المقابلة في المربع)
-    - **Upload ملف البريد الإلكتروني (.msg أو eml):** انقر فوق **"استعراض الملفات**" للبحث عن ملف رسالة .msg أو .eml وتحديده لإرساله.
+    - **تحميل ملف البريد الإلكتروني (.msg أو eml):** انقر فوق **"استعراض الملفات** " للبحث عن ملف رسالة .msg أو .eml وتحديده لإرساله.
   - **اختر مستلما واجهته مشكلة**: حدد مستلما أصليا (مفضلا) أو أكثر من المستلمين الأصليين للرسالة لتحليل النهج التي تم تطبيقها عليه.
   - **حدد أحد أسباب الإرسال إلى Microsoft**: اختر أحد الخيارات التالية:
     - **يجب ألا يكون قد تم حظره (إيجابية خاطئة)** (افتراضي): تتوفر الخيارات التالية:
@@ -280,7 +283,7 @@ ms.locfileid: "65839788"
 > [!NOTE]
 > تتوفر إجراءات الملفات المعزولة في هذا القسم فقط Microsoft Defender لـ Office 365 المشتركين في الخطة 1 أو الخطة 2.
 
-في المؤسسات التي تحتوي على Defender لـ Office 365، يمكن للمسؤولين إدارة الملفات التي تم عزلها بواسطة مرفقات خزينة SharePoint OneDrive Microsoft Teams. لتمكين الحماية لهذه الملفات، راجع [تشغيل خزينة المرفقات SharePoint OneDrive Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+في المؤسسات ذات Defender لـ Office 365، يمكن للمسؤولين إدارة الملفات التي تم عزلها بواسطة "المرفقات الآمنة" ل SharePoint وOneDrive وMicrosoft Teams. لتمكين الحماية لهذه الملفات، راجع ["تشغيل المرفقات الآمنة" ل SharePoint وOneDrive وMicrosoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>عرض الملفات المعزولة
 
@@ -371,7 +374,7 @@ ms.locfileid: "65839788"
 - [حذف-QuarantineMessage](/powershell/module/exchange/delete-quarantinemessage)
 - [Export-QuarantineMessage](/powershell/module/exchange/export-quarantinemessage)
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
-- [معاينة-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): لاحظ أن أمر cmdlet هذا هو فقط للرسائل، وليس الملفات المعزولة من مرفقات خزينة SharePoint، OneDrive، Microsoft Teams.
+- [معاينة-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): لاحظ أن أمر cmdlet هذا هو فقط للرسائل، وليس الملفات المعزولة من المرفقات الآمنة ل SharePoint وOneDrive وMicrosoft Teams.
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
 
 ## <a name="for-more-information"></a>لمزيد من المعلومات

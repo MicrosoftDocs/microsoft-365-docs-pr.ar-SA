@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 51ead270b8e8223b2fd67cfd5fb1cf4e9f8a05d4
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 71b18f5e78301ac144faef9046420e817c65fa6b
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603286"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607356"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>إدارة Microsoft Defender لنقطة النهاية باستخدام PowerShell وWMI MPCmdRun.exe
 
@@ -35,7 +35,6 @@ ms.locfileid: "66603286"
 
 > [!NOTE]
 > نوصي باستخدام [Microsoft إدارة نقاط النهاية](/mem) لإدارة ميزات الحماية من التهديدات في مؤسستك للأجهزة (يشار إليها أيضا بنقاط النهاية). تتضمن إدارة نقاط النهاية [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) [ونقطة نهاية Microsoft Configuration Manager](/mem/configmgr/core/understand/introduction).
->
 > - [تعرف على المزيد حول إدارة نقاط النهاية](/mem/endpoint-manager-overview)
 > - [المشاركة في إدارة Microsoft Defender لنقطة النهاية على أجهزة Windows 10 وأجهزة Windows 11 باستخدام Configuration Manager وIntune](manage-mde-post-migration-intune.md)
 > - [إدارة Microsoft Defender لنقطة النهاية باستخدام Intune](manage-mde-post-migration-intune.md)
