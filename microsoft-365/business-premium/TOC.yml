@@ -74,6 +74,8 @@
           href: m365bp-onboard-devices-mdb.md
         - name: حماية أجهزة Windows
           items:
+            - name: الترقية إلى Windows 10 Pro (إذا لزم الأمر)
+              href: m365bp-upgrade-windows-10-pro.md
             - name: تأمين أجهزة Windows
               href: m365bp-secure-windows-devices.md
             - name: إدارة أجهزة Windows
