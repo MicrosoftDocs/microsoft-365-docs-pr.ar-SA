@@ -2,12 +2,12 @@
   href: index.md
 - name: نماذج مخصصة
   items:
+    - name: الاختلافات بين النماذج المخصصة
+      href: difference-between-document-understanding-and-form-processing-model.md
     - name: فهم المستندات
       items:
         - name: نظرة عامة
           href: document-understanding-overview.md
-        - name: الاختلافات بين النماذج
-          href: difference-between-document-understanding-and-form-processing-model.md
         - name: استيراد نموذج العينة
           href: learn-about-document-understanding-models-through-the-sample-model.md
         - name: إنشاء مركز محتوى
@@ -46,8 +46,6 @@
       items:
         - name: نظرة عامة
           href: form-processing-overview.md
-        - name: الاختلافات بين النماذج
-          href: difference-between-document-understanding-and-form-processing-model.md
         - name: إنشاء نموذج لمعالجة النماذج
           href: create-a-form-processing-model.md
         - name: تطبيق تسمية استبقاء

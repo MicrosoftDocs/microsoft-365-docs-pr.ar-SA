@@ -23,14 +23,16 @@ search.appverid:
 - MET150
 - MOE150
 description: يمكنك استخدام طريقة عرض مبسطة في مركز مسؤولي Microsoft 365 لإدارة المهام الشائعة أو طريقة عرض لوحة المعلومات للإعدادات والمهام الأكثر تعقيداً.
-ms.openlocfilehash: 056072e454b0df3e7c4b06ce39735b1db3961b25
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: c5be4c0d8fdcdbde9b8fcf6be90e616a052f2fb8
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159543"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601641"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>نظرة عامة حول مركز مسؤولي Microsoft 365
+
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 - [مركز المسؤولين في طريقة عرض مبسطة](#watch-the-admin-center-in-simplified-view)
 - [مركز المسؤولين في طريقة عرض لوحة المعلومات](#watch-the-admin-center-in-dashboard-view)
@@ -38,6 +40,8 @@ ms.locfileid: "66159543"
 يحتوي <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a> على طريقتين للعرض وهما: طريقة العرض المبسطة والتي تساعد المؤسسات الصغيرة على إدارة المهام الأكثر شيوعًا. تشتمل طريقة عرض لوحة المعلومات على إعدادات ومهام أكثر تعقيدًا. يُمكنك التبديل بينها من الزر الموجود في أعلى مركز المسؤولين.
 
 ## <a name="watch-the-admin-center-in-simplified-view"></a>مشاهدة: مركز المسؤولين في طريقة عرض مبسطة
+
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2197911).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 

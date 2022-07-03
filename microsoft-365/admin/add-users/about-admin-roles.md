@@ -26,14 +26,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: تعرف على أدوار المسؤول، مثل دور مسؤول الخدمة، الذي يقوم بالتعيين إلى وظائف عمل معينة ومنح الأذونات لتنفيذ مهام معينة في مركز المسؤولين.
-ms.openlocfilehash: bef4328146c62d19257ca50d33004ce7d1185fe1
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: cd40eb3421abf21205aac909fa2cb1796d7f0aa2
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636229"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601961"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>عن أدوار المسؤولين في مركز مسؤولي Microsoft 365
+
+اطلع على [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
 
 يتضمن اشتراك Microsoft 365 أو Office 365 مجموعة من أدوار المسؤولين التي يمكنك تعيينها للمستخدمين في مؤسستك باستخدام <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a>. يتم تعيين كل دور مسؤول إلى وظائف العمل الشائعة ويمنح الأشخاص في مؤسستك أذونات لتنفيذ مهام معينة في مراكز المسؤولين.
 
@@ -43,6 +45,8 @@ ms.locfileid: "65636229"
 > إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى متخصصي الشركات الصغيرة أثناء تطوير أعمالك، بدءً من الإلحاق إلى الاستخدام اليومي.
 
 ## <a name="watch-what-is-an-admin"></a>شاهد: ما المقصود بالمسؤول؟
+
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2198028).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
