@@ -22,18 +22,22 @@ search.appverid:
 - MET150
 - MOE150
 description: تعرّف على كيفية الحصول على الدعم عبر الإنترنت أو الهاتف لاشتراكك في Microsoft 365 للأعمال. يجب أن تكون مسؤولاً لاشتراك الأعمال للحصول على الدعم.
-ms.openlocfilehash: 3d1b69fef8bd262aada4910c82199203f4cff9ee
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 129a774d808cfc0f7f1dc860f72ede7c21ad8f1a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011771"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602845"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>الحصول على دعم Microsoft 365 للأعمال
 
 ::: moniker range="o365-worldwide"
 
+اطلع [تعليمات Microsoft 365 للشركات الصغيرة](https://go.microsoft.com/fwlink/?linkid=2197659) على YouTube.
+
 ## <a name="watch-get-help-or-support"></a>مشاهدة: الحصول على التعليمات أو الدعم
+
+اطلع على هذا الفيديو وغيره على [قناتنا على YouTube](https://go.microsoft.com/fwlink/?linkid=2197598).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
