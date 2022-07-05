@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f55cfa3a9c32c6392f1c7d263f8e866ff4084e1e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: e1cf2647ac8308d30b82e69cbb288fde330fdc5a
+ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490002"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66612184"
 ---
 # <a name="compare-microsoft-defender-for-endpoint-plans"></a>مقارنة خطط Microsoft Defender لنقطة النهاية
 
@@ -65,10 +65,11 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان
 
 ## <a name="start-a-trial"></a>بدء إصدار تجريبي
 
-- لتجربة Defender لنقطة النهاية الخطة 1، تفضل بزيارة [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial).
-- لتجربة Defender لنقطة النهاية الخطة 2، تفضل بزيارة [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial).
-- لتجربة الوظيفة الإضافية إدارة الثغرات الأمنية في Microsoft Defender، تفضل بزيارة [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). 
+- لتجربة Defender for Endpoint Plan، انتقل إلى [صفحة التسجيل التجريبي ل Defender for Endpoint](https://go.microsoft.com/fwlink/p/?LinkID=2168109).
+- لتجربة الوظيفة الإضافية إدارة الثغرات الأمنية في Microsoft Defender ل Defender for Endpoint Plan 2، تفضل بزيارة [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). 
 
 ## <a name="see-also"></a>راجع أيضًا
+
+- [بدء استخدام Microsoft Security (العروض التجريبية)](https://www.microsoft.com/security/business/get-started/start-free-trial)
 
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (حماية نقطة النهاية للشركات الصغيرة والمتوسطة الحجم)
