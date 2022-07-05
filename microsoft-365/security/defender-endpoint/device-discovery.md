@@ -20,18 +20,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 68503556a1d2f3330e47fe601a303363a3f28896
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2e4939eb21a62c99ecf6572060213c87c2c01176
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623232"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617293"
 ---
 # <a name="device-discovery-overview"></a>نظرة عامة على اكتشاف الجهاز
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
+
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -107,7 +108,7 @@ ms.locfileid: "65623232"
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>تقييم الثغرات الأمنية على الأجهزة المكتشفة
 
-تعد الثغرات الأمنية والمخاطر على أجهزتك بالإضافة إلى الأجهزة الأخرى غير المدارة المكتشفة في الشبكة جزءا من تدفقات أجهزة التلفزيون الحالية ضمن "التوصيات الأمان" ويتم تمثيلها في صفحات الكيان عبر المدخل.
+تعد الثغرات الأمنية والمخاطر على أجهزتك بالإضافة إلى الأجهزة الأخرى غير المدارة المكتشفة في الشبكة جزءا من تدفقات أجهزة التلفزيون الحالية ضمن "توصيات الأمان" ويتم تمثيلها في صفحات الكيان عبر المدخل.
 ابحث عن توصيات الأمان ذات الصلة ب "SSH" للعثور على الثغرات الأمنية SSH المرتبطة بالأجهزة غير المدارة والمدارة.
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="لوحة معلومات توصيات الأمان" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::

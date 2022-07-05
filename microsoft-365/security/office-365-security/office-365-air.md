@@ -22,16 +22,16 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca64509321ff43bbe8b7baf7ec7dfa270d9afdc4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0fda154f8eb52ddab024a7f5bb02f980c9a05894
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941512"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617141"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>التحقيق التلقائي والاستجابة (AIR) في Microsoft Defender لـ Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
@@ -81,17 +81,17 @@ ms.locfileid: "64941512"
 - [الحماية من البرامج الضارة](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 - [الحماية من التصيد الاحتيالي](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [الحماية من البريد العشوائي](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-- [ارتباطات خزينة ومرفقات خزينة](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [الارتباطات الآمنة والمرفقات الآمنة](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
 بالإضافة إلى ذلك، تأكد من [مراجعة نهج التنبيه الخاصة بمؤسستك](../../compliance/alert-policies.md)، خاصة [النهج الافتراضية في فئة إدارة المخاطر](../../compliance/alert-policies.md#default-alert-policies).
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>ما هي نهج التنبيه التي تؤدي إلى التحقيقات التلقائية؟
 
-يوفر Microsoft 365 العديد من نهج التنبيه المضمنة التي تساعد في تحديد إساءة استخدام أذونات المسؤول Exchange ونشاط البرامج الضارة والتهديدات الخارجية والداخلية المحتملة ومخاطر إدارة المعلومات. يمكن أن تؤدي العديد من [نهج التنبيه الافتراضية](../../compliance/alert-policies.md#default-alert-policies) إلى إجراء تحقيقات تلقائية. يصف الجدول التالي التنبيهات التي تؤدي إلى التحقيقات التلقائية، وشدتها في مدخل Microsoft 365 Defender، وكيفية إنشائها:
+يوفر Microsoft 365 العديد من نهج التنبيه المضمنة التي تساعد في تحديد إساءة استخدام أذونات مسؤول Exchange ونشاط البرامج الضارة والتهديدات الخارجية والداخلية المحتملة ومخاطر إدارة المعلومات. يمكن أن تؤدي العديد من [نهج التنبيه الافتراضية](../../compliance/alert-policies.md#default-alert-policies) إلى إجراء تحقيقات تلقائية. يصف الجدول التالي التنبيهات التي تؤدي إلى التحقيقات التلقائية، وشدتها في مدخل Microsoft 365 Defender، وكيفية إنشائها:
 
 |تنبيه|شده|كيفية إنشاء التنبيه|
 |---|---|---|
-|تم الكشف عن نقرة URL يحتمل أن تكون ضارة|**عاليه**|يتم إنشاء هذا التنبيه عند حدوث أي مما يلي: <ul><li>مستخدم محمي بواسطة [ارتباطات خزينة](safe-links.md) في مؤسستك ينقر فوق ارتباط ضار</li><li>يتم تحديد تغييرات الحكم لعناوين URL بواسطة Microsoft Defender لـ Office 365</li><li>يتجاوز المستخدمون صفحات تحذير الارتباطات خزينة (استنادا إلى [نهج الارتباطات خزينة](set-up-safe-links-policies.md) الخاصة بالمؤسسة.</li></ul> <p> لمزيد من المعلومات حول الأحداث التي تقوم بتشغيل هذا التنبيه، راجع [إعداد نهج الارتباطات خزينة](set-up-safe-links-policies.md).|
+|تم الكشف عن نقرة URL يحتمل أن تكون ضارة|**عاليه**|يتم إنشاء هذا التنبيه عند حدوث أي مما يلي: <ul><li>ينقر مستخدم محمي بواسطة [الارتباطات الآمنة](safe-links.md) في مؤسستك فوق ارتباط ضار</li><li>يتم تحديد تغييرات الحكم لعناوين URL بواسطة Microsoft Defender لـ Office 365</li><li>يتجاوز المستخدمون صفحات تحذير الارتباطات الآمنة (استنادا إلى [نهج الارتباطات الآمنة](set-up-safe-links-policies.md) الخاص بالمؤسسة.</li></ul> <p> لمزيد من المعلومات حول الأحداث التي تقوم بتشغيل هذا التنبيه، راجع [إعداد نهج الارتباطات الآمنة](set-up-safe-links-policies.md).|
 |يتم الإبلاغ عن رسالة بريد إلكتروني من قبل المستخدم على أنها برامج ضارة أو تصيد احتيالي|**اعلاميه**|يتم إنشاء هذا التنبيه عندما يقوم المستخدمون في مؤسستك بالإبلاغ عن رسائل التصيد الاحتيالي باستخدام [الوظيفة الإضافية "رسالة التقرير](enable-the-report-message-add-in.md) " أو [الوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي](enable-the-report-phish-add-in.md)".|
 |تتم إزالة رسائل البريد الإلكتروني التي تحتوي على برامج ضارة بعد التسليم|**اعلاميه**|يتم إنشاء هذا التنبيه عند تسليم أي رسائل بريد إلكتروني تحتوي على برامج ضارة إلى علب البريد في مؤسستك. إذا حدث هذا الحدث، تقوم Microsoft بإزالة الرسائل المصابة من علب بريد Exchange Online باستخدام [إزالة تلقائية بدون ساعة (ZAP).](zero-hour-auto-purge.md)|
 |تتم إزالة رسائل البريد الإلكتروني التي تحتوي على عناوين URL للتصيد الاحتيالي بعد التسليم|**اعلاميه**|يتم إنشاء هذا التنبيه عند تسليم أي رسائل تحتوي على تصيد احتيالي إلى علب البريد في مؤسستك. إذا حدث هذا الحدث، تقوم Microsoft بإزالة الرسائل المصابة من علب بريد Exchange Online باستخدام [ZAP](zero-hour-auto-purge.md).|
@@ -99,7 +99,7 @@ ms.locfileid: "64941512"
 |المستخدم مقيد من إرسال البريد الإلكتروني|**عاليه**|يتم إنشاء هذا التنبيه عندما يكون شخص ما في مؤسستك مقيدا من إرسال البريد الصادر. ينتج هذا التنبيه عادة عند [اختراق حساب بريد إلكتروني](responding-to-a-compromised-email-account.md). <p> لمزيد من المعلومات حول المستخدمين المقيدين، راجع [إزالة المستخدمين المحظورين من مدخل "المستخدمون المقيدون" في Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
 
 > [!TIP]
-> لمعرفة المزيد حول نهج التنبيه أو تحرير الإعدادات الافتراضية، راجع [نهج التنبيه في مدخل توافق Microsoft Purview](../../compliance/alert-policies.md).
+> لمعرفة المزيد حول نهج التنبيه أو تحرير الإعدادات الافتراضية، راجع [نهج التنبيه في مدخل التوافق في Microsoft Purview](../../compliance/alert-policies.md).
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>الأذونات المطلوبة لاستخدام قدرات AIR
 
@@ -120,7 +120,7 @@ Microsoft Defender لـ Office 365 يجب تعيين تراخيص [الخطة 2]
 
 ## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>ستتوفر التغييرات قريبا في مدخل Microsoft 365 Defender
 
-إذا كنت تستخدم بالفعل قدرات AIR في Microsoft Defender لـ Office 365، فأنت على وشك رؤية بعض التغييرات في [مدخل Microsoft 365 Defender المحسن](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal).
+إذا كنت تستخدم بالفعل قدرات AIR في Microsoft Defender لـ Office 365، فأنت على وشك رؤية بعض التغييرات في [مدخل Microsoft 365 Defender المحسن](../defender/microsoft-365-defender-portal.md).
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="مركز الإجراءات الموحدة" lightbox="../../media/m3d-action-center-unified.png":::
 

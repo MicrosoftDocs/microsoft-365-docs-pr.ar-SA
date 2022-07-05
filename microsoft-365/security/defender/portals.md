@@ -1,7 +1,7 @@
 ---
 title: بوابات الأمان ومراكز الإدارة في Microsoft
 description: البحث عن مركز إدارة Microsoft أو مدخلها المناسب لإدارة الخدمات المختلفة المتعلقة بأمان Microsoft 365
-keywords: الأمان والمداخل Microsoft 365 وM365 ومركز الأمان ومركز الإدارة وعنوان URL والارتباط Microsoft 365 Defender Microsoft Defender لنقطة النهاية مركز حماية Microsoft Defender Microsoft Defender for Identity، Microsoft Defender لـ Office 365، MCAS، WDSI، SCC، Intune، MDM، MEM، ASC، أمان التطبيقات على السحابة، Azure AD، مركز توافق & الأمان
+keywords: الأمان والمداخل وMicrosoft 365 وM365 ومركز الأمان ومركز الإدارة وعنوان URL والارتباط Microsoft 365 Defender Microsoft Defender لنقطة النهاية مركز حماية Microsoft Defender Microsoft Defender for Identity، Microsoft Defender لـ Office 365، MCAS، WDSI، SCC، Intune، MDM، MEM، ASC، أمان التطبيقات على السحابة، Azure AD، مركز توافق & الأمان
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -16,18 +16,18 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 2c476e78a0d5af6267ae93879f5399e521e7461f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 46239af639aa95094505e30a3d3cbdf35dff3893
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941578"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66616946"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>بوابات الأمان ومراكز الإدارة في Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-في حين أن [مدخل Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal) هو المنزل الجديد لمراقبة الأمان وإدارته عبر هوياتك وبياناتك وأجهزتك وتطبيقاتك، ستحتاج إلى الوصول إلى المداخل المختلفة لمهام متخصصة معينة.
+في حين أن [مدخل Microsoft 365 Defender](microsoft-365-defender-portal.md) هو المنزل الجديد لمراقبة الأمان وإدارته عبر هوياتك وبياناتك وأجهزتك وتطبيقاتك، ستحتاج إلى الوصول إلى المداخل المختلفة لمهام متخصصة معينة.
 
 > [!TIP] 
 > للوصول إلى مختلف المداخل ذات الصلة من مدخل Microsoft 365 Defender، حدد **المزيد من الموارد** في جزء التنقل.
@@ -56,7 +56,7 @@ ms.locfileid: "64941578"
 |---|---|---| 
 | مدخل Azure | عرض جميع [موارد Azure](/azure/azure-resource-manager/management/overview) وإدارتها  | [portal.azure.com](https://portal.azure.com/) |
 | مدخل Azure Active Directory | عرض [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) وإدارته | [aad.portal.azure.com](https://aad.portal.azure.com/) |
-| مدخل الامتثال ل Microsoft Purview | إدارة سياسات معالجة البيانات وضمان [الامتثال للوائح](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
-| مركز مسؤولي Microsoft 365 | تكوين خدمات Microsoft 365؛ وإدارة الأدوار والتراخيص وتعقب التحديثات إلى خدمات Microsoft 365 | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
-| مركز إدارة إدارة نقاط النهاية من Microsoft | استخدام [إدارة نقاط النهاية من Microsoft](/mem/configmgr/) لإدارة الأجهزة وتأمينها باستخدام قدرات Intune و Configuration Manager المدمجة | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
+| مدخل توافق Microsoft Purview | إدارة سياسات معالجة البيانات وضمان [الامتثال للوائح](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
+| مركز مسؤولي Microsoft 365 | تكوين خدمات Microsoft 365؛ إدارة الأدوار والتراخيص وتعقب التحديثات إلى خدمات Microsoft 365 | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
+| مركز إدارة Microsoft إدارة نقاط النهاية | استخدام [Microsoft إدارة نقاط النهاية](/mem/configmgr/) لإدارة الأجهزة وتأمينها باستخدام قدرات Intune و Configuration Manager المدمجة | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
 | مدخل Microsoft Intune | استخدام [Microsoft Intune](/intune/fundamentals/what-is-intune) لنشر نهج الأجهزة ومراقبة الأجهزة للتوافق | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)

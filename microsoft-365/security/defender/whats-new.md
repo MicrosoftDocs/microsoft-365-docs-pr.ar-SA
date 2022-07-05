@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ed3d06e1719b51d0914c89e6283c8b53c2ab0812
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 4f2ab696b728244e495ec04933b83eaafeeb3db0
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530499"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66616948"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>الجديد في Microsoft 365 Defender
 
@@ -134,7 +134,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 - Microsoft 365 Defender
 
-  يتوفر الآن مدخل [Microsoft 365 Defender](https://security.microsoft.com) المحسن. تجمع هذه التجربة الجديدة بين Defender for Endpoint و Defender لـ Office 365 و Defender for Identity والمزيد في مدخل واحد. هذا هو المنزل الجديد لإدارة عناصر التحكم في الأمان. [تعرف على أحدث الميزات](./microsoft-365-defender.md#the-microsoft-365-defender-portal).
+  يتوفر الآن مدخل [Microsoft 365 Defender](https://security.microsoft.com) المحسن. تجمع هذه التجربة الجديدة بين Defender for Endpoint و Defender لـ Office 365 و Defender for Identity والمزيد في مدخل واحد. هذا هو المنزل الجديد لإدارة عناصر التحكم في الأمان. [تعرف على أحدث الميزات](microsoft-365-defender-portal.md).
 
 - [Microsoft 365 Defender تقرير تحليلات التهديدات](threat-analytics.md)
 

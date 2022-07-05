@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: bac70dd864e1ab72fae5fbefa2a8da12cce4f6e7
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: dd8721bd8c62a99180f9e8cf34b05c5ec6c8b4c8
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667219"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617183"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender لنقطة النهاية في Microsoft 365 Defender
 
@@ -57,7 +57,7 @@ ms.locfileid: "64667219"
 | إدارة التكوين | إدارة التكوين |
 | الإعدادات | الإعدادات | 
 
-يجمع [Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal) المحسن بين <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> قدرات الأمان التي تحمي تهديدات البريد الإلكتروني والتعاون والهوية والجهاز وتكتشفها وتتحقق فيها وتستجيب لها. يجمع هذا بين الوظائف من بوابات أمان Microsoft الحالية، بما في ذلك مركز حماية Microsoft Defender ومركز توافق & الأمان Office 365.
+يجمع [Microsoft 365 Defender](microsoft-365-defender-portal.md) المحسن بين <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> قدرات الأمان التي تحمي تهديدات البريد الإلكتروني والتعاون والهوية والجهاز وتكتشفها وتتحقق فيها وتستجيب لها. يجمع هذا بين الوظائف من بوابات أمان Microsoft الحالية، بما في ذلك مركز حماية Microsoft Defender ومركز توافق & الأمان Office 365.
 
 إذا كنت على دراية مركز حماية Microsoft Defender، فإن هذه المقالة تساعد على وصف بعض التغييرات والتحسينات في Microsoft 365 Defender. ومع ذلك، هناك بعض العناصر الجديدة والمحدثة التي يجب أن تكون على علم بها.
 
@@ -70,8 +70,8 @@ ms.locfileid: "64667219"
 
 > [!Note]
 > Microsoft 365 Defender غير متوفر ل:
->- الولايات المتحدة سحابة القطاع الحكومي (سحابة القطاع الحكومي)
->- الولايات المتحدة سحابة القطاع الحكومي عالية (سحابة القطاع الحكومي عالية)
+>- سحابة مجتمع حكومة الولايات المتحدة (GCC)
+>- سحابة مجتمع حكومة الولايات المتحدة (GCC High)
 >- وزارة الدفاع الأمريكية
 >- جميع المؤسسات الحكومية الأمريكية التي لها تراخيص تجارية
 
@@ -115,10 +115,10 @@ ms.locfileid: "64667219"
 | منطقه | وصف التغيير |
 |---------|---------|
 | التقارير  | راجع تقارير حول نقاط النهاية والبريد الإلكتروني & التعاون، بما في ذلك الحماية من التهديدات وحماية الجهاز والامتثال والأجهزة المعرضة للخطر. |
-| الصحه  |  يرتبط حاليا بالصفحة "Service health" في [مركز مسؤولي Microsoft 365](https://admin.microsoft.com/). |
+| الحماية  |  يرتبط حاليا بالصفحة "Service health" في [مركز مسؤولي Microsoft 365](https://admin.microsoft.com/). |
 | الإعدادات |  إدارة الإعدادات الخاصة بك للتعاون في Microsoft 365 Defender ونقاط النهاية والبريد الإلكتروني & والهويات واكتشاف الجهاز.   |
 
-## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365 التنقل الأمني وإمكانياته
+## <a name="microsoft-365-security-navigation-and-capabilities"></a>إمكانية التنقل والأمان في Microsoft 365
 
 سيبدو شريط التنقل الأيمن أو شريط التشغيل السريع مألوفا. ومع ذلك، هناك بعض العناصر الجديدة والمحدثة في مدخل Microsoft 365 Defender. 
 
@@ -170,7 +170,7 @@ ms.locfileid: "64667219"
 
 ### <a name="siem-api-connections"></a>اتصالات واجهة برمجة تطبيقات SIEM
 
-إذا كنت تستخدم [Defender لواجهة برمجة تطبيقات SIEM لنقطة النهاية](../defender-endpoint/enable-siem-integration.md)، يمكنك الاستمرار في القيام بذلك. لقد أضفنا ارتباطات جديدة على حمولة واجهة برمجة التطبيقات التي تشير إلى صفحة التنبيه أو صفحة الحادث في مدخل الأمان Microsoft 365. تتضمن حقول واجهة برمجة التطبيقات الجديدة LinkToMTP و IncidentLinkToMTP. لمزيد من المعلومات، راجع [إعادة توجيه الحسابات من Microsoft Defender لنقطة النهاية إلى Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
+إذا كنت تستخدم [Defender لواجهة برمجة تطبيقات SIEM لنقطة النهاية](../defender-endpoint/enable-siem-integration.md)، يمكنك الاستمرار في القيام بذلك. لقد أضفنا ارتباطات جديدة على حمولة واجهة برمجة التطبيقات التي تشير إلى صفحة التنبيه أو صفحة الحدث في مدخل أمان Microsoft 365. تتضمن حقول واجهة برمجة التطبيقات الجديدة LinkToMTP و IncidentLinkToMTP. لمزيد من المعلومات، راجع [إعادة توجيه الحسابات من Microsoft Defender لنقطة النهاية إلى Microsoft 365 Defender](./microsoft-365-security-mde-redirection.md).
 
 ### <a name="email-alerts"></a>تنبيهات البريد الإلكتروني
 
@@ -178,7 +178,7 @@ ms.locfileid: "64667219"
 
 ### <a name="managed-security-service-providers-mssp"></a>موفرو خدمات الأمان المدارة (MSSP)
 
-تسجيل الدخول إلى العديد من المستأجرين في وقت واحد في نفس جلسة الاستعراض غير معتمد حاليا في المدخل الموحد. يمكنك إلغاء الاشتراك في إعادة التوجيه التلقائي عن طريق [العودة إلى مدخل Microsoft Defender لنقطة النهاية السابق](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal)، للحفاظ على هذه الوظيفة حتى يتم حل المشكلة.
+تسجيل الدخول إلى العديد من المستأجرين في وقت واحد في نفس جلسة الاستعراض غير معتمد حاليا في المدخل الموحد. يمكنك رفض إعادة التوجيه التلقائي عن طريق [العودة إلى مدخل Microsoft Defender لنقطة النهاية السابق](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal)، للحفاظ على هذه الوظيفة حتى يتم حل المشكلة.
 
 ## <a name="related-information"></a>المعلومات ذات الصلة
 

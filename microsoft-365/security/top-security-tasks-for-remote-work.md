@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: قم بحماية البريد الإلكتروني وبيانات عملك من التهديدات الإلكترونية، بما في ذلك برامج الفدية الضارة والتصيد الاحتيالي والمرفقات الضارة.
-ms.openlocfilehash: 3c3a6ad89a795a45a0f76f868fbc6d23a52b963b
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: bc1dd84e83e5c5f1828e65203585d38acc28de5e
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319210"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617249"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>أهم 12 مهمة لفرق الأمان لدعم العمل من المنزل
 
@@ -33,8 +33,8 @@ ms.locfileid: "65319210"
 
 إذا كنت مؤسسة صغيرة أو متوسطة الحجم تستخدم إحدى خطط أعمال Microsoft، فراجع هذه الموارد بدلا من ذلك:
 
-- [أفضل الممارسات لتأمين Microsoft 365 لخطط الأعمال](../admin/security-and-compliance/secure-your-business-data.md)
-- [Microsoft 365 للحملات](../business-premium/index.md) (يتضمن تكوين أمان موصى به Microsoft 365 Business)
+- [أفضل الممارسات لتأمين خطط Microsoft 365 للأعمال](../admin/security-and-compliance/secure-your-business-data.md)
+- [Microsoft 365 for Campaigns](../business-premium/index.md) (يتضمن تكوين أمان موصى به ل Microsoft 365 Business)
 
 بالنسبة للعملاء الذين يستخدمون خطط المؤسسة، توصي Microsoft بإكمال المهام المدرجة في الجدول التالي التي تنطبق على خطة الخدمة. إذا كنت تقوم بدمج الاشتراكات بدلا من شراء خطة مؤسسة Microsoft 365، فلاحظ ما يلي:
 
@@ -58,7 +58,7 @@ ms.locfileid: "65319210"
 |11|[بدء العمل باستخدام Microsoft Defender للتطبيقات السحابية](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![تضمين.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12|[مراقبة التهديدات واتخاذ إجراء](#12-monitor-for-threats-and-take-action)|![تضمين.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![تضمين.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![تضمين.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-قبل البدء، تحقق من [درجة الأمان Microsoft 365](./defender/microsoft-secure-score.md) في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>. من لوحة معلومات مركزية، يمكنك مراقبة وتحسين الأمان للهويات والبيانات والتطبيقات والأجهزة والبنية الأساسية Microsoft 365. يتم منحك نقاط لتكوين ميزات الأمان الموصى بها، أو تنفيذ المهام المتعلقة بالأمان (مثل عرض التقارير)، أو معالجة التوصيات باستخدام تطبيق أو برنامج تابع لجهة خارجية. سترفع المهام الموصى بها في هذه المقالة درجاتك.
+قبل البدء، تحقق من [درجة أمان Microsoft 365](./defender/microsoft-secure-score.md) في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>. من لوحة معلومات مركزية، يمكنك مراقبة وتحسين الأمان لهويات Microsoft 365 والبيانات والتطبيقات والأجهزة والبنية الأساسية. يتم منحك نقاط لتكوين ميزات الأمان الموصى بها، أو تنفيذ المهام المتعلقة بالأمان (مثل عرض التقارير)، أو معالجة التوصيات باستخدام تطبيق أو برنامج تابع لجهة خارجية. سترفع المهام الموصى بها في هذه المقالة درجاتك.
 
 :::image type="content" source="../media/secure-score.png" alt-text="شاشة Microsoft Secure Score في مدخل Microsoft 365 Defender" lightbox="../media/secure-score.png":::
 
@@ -103,13 +103,13 @@ Microsoft Defender لـ Office 365:
 
 يمكن للمسؤول العام تكوين هذه الحماية:
 
-- [إعداد نهج ارتباطات خزينة](office-365-security/set-up-safe-links-policies.md)
-- [تكوين الإعدادات العمومية لارتباطات خزينة](office-365-security/configure-global-settings-for-safe-links.md)
-- [إعداد نهج المرفقات خزينة](office-365-security/set-up-safe-attachments-policies.md)
+- [إعداد نهج الارتباطات الآمنة](office-365-security/set-up-safe-links-policies.md)
+- [تكوين الإعدادات العمومية للارتباطات الآمنة](office-365-security/configure-global-settings-for-safe-links.md)
+- [إعداد نهج المرفقات الآمنة](office-365-security/set-up-safe-attachments-policies.md)
 
 ستحتاج إلى العمل مع مسؤول Exchange Online ومسؤول SharePoint Online لتكوين Defender لـ Office 365 لأحمال العمل هذه:
 
-- [Microsoft Defender لنقطة النهاية SharePoint OneDrive Microsoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
+- [Microsoft Defender لنقطة النهاية ل SharePoint وOneDrive وMicrosoft Teams](office-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4: تكوين Microsoft Defender for Identity
 
@@ -165,7 +165,7 @@ Microsoft Defender لـ Office 365:
 
 ## <a name="8-enroll-pcs-into-device-management-and-require-compliant-pcs"></a>8: تسجيل أجهزة الكمبيوتر في إدارة الأجهزة وتتطلب أجهزة كمبيوتر متوافقة
 
-هناك عدة طرق لتسجيل أجهزة القوى العاملة الخاصة بك. تعتمد كل طريقة على ملكية الجهاز (الشخصية أو الشركة)، ونوع الجهاز (iOS، Windows، وAndroid)، ومتطلبات الإدارة (عمليات إعادة التعيين، والترابط، والتأمين). قد يستغرق هذا بعض الوقت للفرز. راجع: [تسجيل الأجهزة في Microsoft Intune](/mem/intune/enrollment/).
+هناك عدة طرق لتسجيل أجهزة القوى العاملة الخاصة بك. تعتمد كل طريقة على ملكية الجهاز (الشخصية أو الشركة) ونوع الجهاز (iOS وWindows وAndroid) ومتطلبات الإدارة (إعادة التعيين والترابط والتأمين). قد يستغرق هذا بعض الوقت للفرز. راجع: [تسجيل الأجهزة في Microsoft Intune](/mem/intune/enrollment/).
 
 أسرع طريقة للمتابعة هي [إعداد التسجيل التلقائي للأجهزة Windows 10](/mem/intune/enrollment/quickstart-setup-auto-enrollment).
 
@@ -187,7 +187,7 @@ Microsoft Defender لـ Office 365:
 
 يتم فجأة وضع عناصر الشبكة مثل مكثفات VPN ومعدات خروج الشبكة المركزية (مثل الوكلاء وأجهزة منع فقدان البيانات) وعرض النطاق الترددي للإنترنت المركزي ودوائر Backhaul MPLS وإمكانية NAT وما إلى ذلك تحت ضغط هائل بسبب تحميل الشركة بأكملها باستخدامها. والنتيجة النهائية هي ضعف الأداء والإنتاجية إلى جانب تجربة المستخدم الضعيفة للمستخدمين الذين يتكيفون مع العمل من المنزل.
 
-بعض الحماية التي تم توفيرها تقليديا عن طريق توجيه نسبة استخدام الشبكة مرة أخرى من خلال شبكة الشركة يتم توفيرها من خلال تطبيقات السحابة التي يصل إليها المستخدمون. إذا وصلت إلى هذه الخطوة في هذه المقالة، فقد نفذت مجموعة من عناصر تحكم أمان السحابة المتطورة لخدمات وبيانات Microsoft 365. مع وضع عناصر التحكم هذه في مكانها، قد تكون جاهزا لتوجيه نسبة استخدام الشبكة للمستخدمين البعيدين مباشرة إلى Office 365. إذا كنت لا تزال بحاجة إلى ارتباط VPN للوصول إلى تطبيقات أخرى، يمكنك تحسين الأداء وتجربة المستخدم بشكل كبير من خلال تنفيذ الاتصال النفقي المنقسم. بمجرد التوصل إلى اتفاق في مؤسستك، يمكن تحقيق ذلك في غضون يوم واحد من قبل فريق شبكة منسق بشكل جيد.
+بعض الحماية التي تم توفيرها تقليديا عن طريق توجيه نسبة استخدام الشبكة مرة أخرى من خلال شبكة الشركة يتم توفيرها من خلال تطبيقات السحابة التي يصل إليها المستخدمون. إذا وصلت إلى هذه الخطوة في هذه المقالة، فقد نفذت مجموعة من عناصر التحكم المتطورة في أمان السحابة لخدمات Microsoft 365 وبياناته. مع وضع عناصر التحكم هذه في مكانها، قد تكون جاهزا لتوجيه نسبة استخدام الشبكة للمستخدمين البعيدين مباشرة إلى Office 365. إذا كنت لا تزال بحاجة إلى ارتباط VPN للوصول إلى تطبيقات أخرى، يمكنك تحسين الأداء وتجربة المستخدم بشكل كبير من خلال تنفيذ الاتصال النفقي المنقسم. بمجرد التوصل إلى اتفاق في مؤسستك، يمكن تحقيق ذلك في غضون يوم واحد من قبل فريق شبكة منسق بشكل جيد.
 
 راجع هذه الموارد على المستندات للحصول على مزيد من المعلومات:
 
@@ -212,7 +212,7 @@ Microsoft Defender لـ Office 365:
 |مفهوم|الموارد|
 |---|---|
 |Microsoft 365|[مسارات التعلم القابلة للتخصيص](/office365/customlearning/) <p>يمكن أن تساعدك هذه الموارد على تجميع التدريب للمستخدمين النهائيين في مؤسستك|
-|الأمان في Microsoft 365|[Learning الوحدة النمطية: قم بتأمين مؤسستك بأمان ذكي مضمن من Microsoft 365](/learn/modules/security-with-microsoft-365) <p>تمكنك هذه الوحدة النمطية من وصف كيفية عمل ميزات الأمان Microsoft 365 معا وتوضيح فوائد ميزات الأمان هذه.|
+|الأمان في Microsoft 365|[وحدة التعلم: تأمين مؤسستك باستخدام الأمان الذكي المضمن من Microsoft 365](/learn/modules/security-with-microsoft-365) <p>تمكنك هذه الوحدة النمطية من وصف كيفية عمل ميزات أمان Microsoft 365 معا ولشرح فوائد ميزات الأمان هذه.|
 |المصادقة متعددة العوامل|[التحقق على خطوتين: ما هي صفحة التحقق الإضافية؟](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>تساعد هذه المقالة المستخدمين على فهم ماهية المصادقة متعددة العوامل وسبب استخدامها في مؤسستك.|
 
 بالإضافة إلى هذه الإرشادات، توصي Microsoft المستخدمين باتخاذ الإجراءات الموضحة في هذه المقالة: [حماية حسابك والأجهزة من المتسللين والبرامج الضارة](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). تتضمن هذه الإجراءات ما يلي:
@@ -241,13 +241,13 @@ Microsoft Defender لـ Office 365:
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: مراقبة التهديدات واتخاذ إجراء
 
-تتضمن Microsoft 365 عدة طرق لمراقبة الحالة واتخاذ الإجراءات المناسبة. أفضل نقطة بداية هي <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، حيث يمكنك عرض [نقاط Microsoft الآمنة](./defender/microsoft-secure-score.md) لمؤسستك، وأي تنبيهات أو كيانات تتطلب انتباهك.
+يتضمن Microsoft 365 عدة طرق لمراقبة الحالة واتخاذ الإجراءات المناسبة. أفضل نقطة بداية هي <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، حيث يمكنك عرض [نقاط Microsoft الآمنة](./defender/microsoft-secure-score.md) لمؤسستك، وأي تنبيهات أو كيانات تتطلب انتباهك.
 
-- [بدء استخدام مدخل Microsoft 365 Defender](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
-- [راجع بوابات الأمان في Microsoft 365](./defender/portals.md)
+- [بدء استخدام مدخل Microsoft 365 Defender](./defender/microsoft-365-defender-portal.md)
+- [الاطلاع على بوابات الأمان في Microsoft 365](./defender/portals.md)
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-تهانينا! لقد نفذت بسرعة بعض أهم الحماية الأمنية وأن مؤسستك أكثر أمانا. الآن أنت مستعد للمضي قدما في قدرات الحماية من التهديدات (بما في ذلك Microsoft Defender لنقطة النهاية)، وتصنيف البيانات وقدرات الحماية، وتأمين الحسابات الإدارية. For a deeper, methodical set of security recommendations for Microsoft 365, see [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md).
+تهانينا! لقد نفذت بسرعة بعض أهم الحماية الأمنية وأن مؤسستك أكثر أمانا. الآن أنت مستعد للمضي قدما في قدرات الحماية من التهديدات (بما في ذلك Microsoft Defender لنقطة النهاية)، وتصنيف البيانات وقدرات الحماية، وتأمين الحسابات الإدارية. للحصول على مجموعة أعمق وأسلوبية من توصيات الأمان ل Microsoft 365، راجع [Microsoft 365 Security for Business Decision Makers (BDMs).](Microsoft-365-security-for-bdm.md)
 
 قم أيضا بزيارة Defender for Cloud الجديد من Microsoft على [docs.microsoft.com/security](/security).

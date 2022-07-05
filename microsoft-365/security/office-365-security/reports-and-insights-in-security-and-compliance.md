@@ -19,12 +19,12 @@ description: تعرف على التقارير الذكية والرؤى، وكي
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54965f7d439f753a1d12f91b584718a52620b51a
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 3dc90846f68d5e3ef5a1b2a003f5afb69cab3c60
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647392"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617075"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>التقارير الذكية ونتائج التحليلات في مركز توافق & الأمان
 
@@ -40,7 +40,7 @@ ms.locfileid: "65647392"
 تتمتع التقارير الذكية والرؤى على **لوحة المعلومات** بالقدرات التالية:
 
 - تمييز مناطق المشاكل.
-- التوصيات والارتباطات لعرض البيانات واستكشافها.
+- توصيات وارتباطات لعرض البيانات واستكشافها.
 - اتخاذ إجراء سريع.
 
 على سبيل المثال، إذا أبلغ المستخدمون في مؤسستك فجأة عن عدد كبير من رسائل البريد الإلكتروني كبرم عشوائي، فيجب عليك التحقق من الإعدادات في نهج مكافحة البريد العشوائي.
@@ -57,6 +57,6 @@ ms.locfileid: "65647392"
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
-[مدخل Microsoft 365 Defender](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
+[مدخل Microsoft 365 Defender](../defender/microsoft-365-defender-portal.md)
 
 [الحماية من التهديدات في Office 365](protect-against-threats.md)

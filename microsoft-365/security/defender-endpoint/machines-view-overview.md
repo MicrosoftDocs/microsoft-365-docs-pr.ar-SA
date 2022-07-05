@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81ff80776d3b12e4ec90d6d2c2473389686ae9c9
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 232f27b9edb23e932d49cf33e026d22abfbe72dd
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554456"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617315"
 ---
 # <a name="device-inventory"></a>بيانات الجهاز
 
@@ -83,6 +83,11 @@ ms.locfileid: "66554456"
 من علامات تبويب **أجهزة الشبكة** وأجهزة **IoT** ، سترى أيضا معلومات مثل المورد والنموذج ونوع الجهاز:
 
 ![صورة لقائمة أجهزة الشبكة.](images/device-inventory-networkdevices.png)
+
+> [!NOTE]
+> تتوفر عمليات تكامل اكتشاف الجهاز مع [Microsoft Defender ل IoT](/azure/defender-for-iot/organizations/) و [Corelight](https://corelight.com/integrations/iot-security) للمساعدة في تحديد موقع مخزون أصول OT/IOT الكامل وتحديده وتأمينه. ستظهر الأجهزة المكتشفة مع عمليات التكامل هذه على علامة تبويب **أجهزة IoT** . لمزيد من المعلومات، راجع [عمليات تكامل اكتشاف الجهاز](device-discovery.md#device-discovery-integrations).
+>
+> عند تكوين Defender ل IoT، يمكنك أيضا عرض الأجهزة هناك. راجع [إدارة أجهزة IoT باستخدام مخزون الأجهزة للمؤسسات](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations).
 
 في أعلى كل علامة تبويب لمخزون الأجهزة، يمكنك رؤية العدد الإجمالي للأجهزة، وعدد الأجهزة التي لم يتم إلحاقها بعد، وعدد الأجهزة التي تم تحديدها على أنها مخاطر أعلى لمؤسستك. يمكنك استخدام هذه المعلومات لمساعدتك في تحديد أولويات الأجهزة لتحسين وضع الأمان.
 
