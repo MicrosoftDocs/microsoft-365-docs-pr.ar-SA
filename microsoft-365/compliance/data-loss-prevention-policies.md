@@ -25,24 +25,22 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: مادة مرجعية لمنع فقدان البيانات
-ms.openlocfilehash: b7546d41310942a0e6eab99511a78c594822ee2a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5a52d79a073a9735d5c32ce3a9646ccacf1a0dcb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017275"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636458"
 ---
 # <a name="data-loss-prevention-reference"></a>مرجع منع فقدان البيانات
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!IMPORTANT]
-> هذا هو الموضوع المرجعي لم يعد المورد الرئيسي لمعلومات منع فقدان البيانات (DLP) من Microsoft Purview. يتم تحديث مجموعة محتوى DLP وإعادة هيكلتها. ستنتقل المواضيع التي تتناولها هذه المقالة إلى مقالات جديدة ومحدثة. لمزيد من المعلومات حول DLP، راجع [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md).
+> هذا هو الموضوع المرجعي لم يعد المورد الرئيسي لمعلومات تفادي فقدان البيانات في Microsoft Purview (DLP). يتم تحديث مجموعة محتوى DLP وإعادة هيكلتها. ستنتقل المواضيع التي تتناولها هذه المقالة إلى مقالات جديدة ومحدثة. لمزيد من المعلومات حول DLP، راجع [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> تمت مؤخرا إضافة قدرات منع فقدان البيانات إلى Microsoft Teams رسائل الدردشة والقنوات للمستخدمين المرخصين خدمات الامتثال المتطورة في Office 365، والتي تتوفر كخيار مستقل ويتم تضمينها في Office 365 E5 التوافق في Microsoft 365 E5. لمعرفة المزيد حول متطلبات الترخيص، راجع [Microsoft 365 Tenant-Level إرشادات ترخيص الخدمات](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+> تمت مؤخرا إضافة قدرات منع فقدان البيانات إلى رسائل الدردشة والقنوات في Microsoft Teams للمستخدمين المرخصين خدمات الامتثال المتطورة في Office 365، والتي تتوفر كخيار مستقل ويتم تضمينها في Office 365 E5 التوافق في Microsoft 365 E5. لمعرفة المزيد حول متطلبات الترخيص، راجع [إرشادات ترخيص خدمات Microsoft 365 Tenant-Level](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 
 
@@ -73,9 +71,9 @@ With a DLP policy, you can:
 -->
 ## <a name="create-and-manage-dlp-policies"></a>إنشاء نهج DLP وإدارتها
 
-يمكنك إنشاء نهج DLP وإدارتها على صفحة منع فقدان البيانات في مدخل توافق Microsoft Purview.
+يمكنك إنشاء نهج DLP وإدارتها على صفحة منع فقدان البيانات في مدخل التوافق في Microsoft Purview.
 
-![صفحة منع فقدان البيانات في مدخل توافق Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![صفحة منع فقدان البيانات في مدخل التوافق في Microsoft Purview](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -377,7 +375,7 @@ Regarding policy tips, note that:
 
 - يجب إنشاء تسمية الاستبقاء ونشرها قبل محاولة استخدامها كشرط في نهج DLP.
 - قد تستغرق مزامنة تسميات الاستبقاء المنشورة من يوم إلى سبعة أيام. لمزيد من المعلومات، راجع [متى تصبح تسميات الاستبقاء متوفرة للتطبيق على](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) تسميات الاستبقاء المنشورة في نهج الاستبقاء، [والمدة التي تستغرقها تسميات الاستبقاء لكي تصبح سارية المفعول](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) لتسميات الاستبقاء المنشورة تلقائيا.
-- استخدام تسمية استبقاء في نهج **معتمد فقط للعناصر الموجودة في SharePoint و OneDrive***.
+- استخدام تسمية استبقاء في نهج **معتمد فقط للعناصر في SharePoint وOneDrive***.
 
   ![التسميات كشرط.](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
@@ -386,7 +384,7 @@ Regarding policy tips, note that:
   - لقد نشرت تسمية استبقاء باسم **السنة الضريبية 2018**، والتي عند تطبيقها على المستندات الضريبية من عام 2018 والمخزنة في SharePoint تحتفظ بها لمدة 10 سنوات ثم تتخلص منها. كما أنك لا تريد مشاركة هذه العناصر خارج مؤسستك، وهو ما يمكنك القيام به باستخدام نهج DLP.
 
   > [!IMPORTANT]
-  > ستحصل على هذا الخطأ إذا حددت تسمية استبقاء كشرط في نهج DLP وقمت أيضا بتضمين Exchange و/أو Teams كموقع: **"حماية المحتوى المسمى في البريد الإلكتروني ورسائل الفرق غير معتمدة. إما إزالة التسمية أدناه أو إيقاف تشغيل Exchange Teams كموقع."** وذلك لأن Exchange النقل لا يقيم بيانات تعريف التسمية أثناء إرسال الرسالة وتسليمها.
+  > ستتلقى هذا الخطأ إذا حددت تسمية استبقاء كشرط في نهج DLP وقمت أيضا بتضمين Exchange و/أو Teams كموقع: **"حماية المحتوى المسمى في البريد الإلكتروني ورسائل الفرق غير معتمدة. إما إزالة التسمية أدناه أو إيقاف تشغيل Exchange وTeams كموقع."** وذلك لأن Exchange transport لا يقيم بيانات تعريف التسمية أثناء إرسال الرسالة وتسليمها.
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>استخدام وصف الحساسية كشرط في نهج DLP
 
@@ -440,7 +438,7 @@ Regarding policy tips, note that:
 
 الخطوة الأولى في إنشاء نهج DLP هي اختيار المعلومات التي يجب حمايتها. من خلال البدء بقالب DLP، يمكنك حفظ عمل إنشاء مجموعة جديدة من القواعد من البداية، ومعرفة أنواع المعلومات التي يجب تضمينها بشكل افتراضي. يمكنك بعد ذلك إضافة هذه المتطلبات أو تعديلها لضبط القاعدة لتلبية المتطلبات المحددة لمؤسستك.
 
-يمكن أن يساعدك قالب نهج DLP الذي تم تكوينه مسبقا على اكتشاف أنواع معينة من المعلومات الحساسة، مثل بيانات HIPAA أو بيانات PCI-DSS أو بيانات قانون Gramm-Leach-Bliley أو حتى معلومات تعريف شخصية خاصة بالإعدادات المحلية (P.I.). لتسهيل العثور على الأنواع الشائعة من المعلومات الحساسة وحمايتها، تحتوي قوالب النهج المضمنة في Microsoft 365 بالفعل على أنواع المعلومات الحساسة الأكثر شيوعا اللازمة لبدء الاستخدام.
+يمكن أن يساعدك قالب نهج DLP الذي تم تكوينه مسبقا على اكتشاف أنواع معينة من المعلومات الحساسة، مثل بيانات HIPAA أو بيانات PCI-DSS أو بيانات قانون Gramm-Leach-Bliley أو حتى معلومات تعريف شخصية خاصة بالإعدادات المحلية (P.I.). لتسهيل العثور على الأنواع الشائعة من المعلومات الحساسة وحمايتها، تحتوي قوالب النهج المضمنة في Microsoft 365 بالفعل على أنواع المعلومات الحساسة الأكثر شيوعا اللازمة للبدء.
 
 ![قائمة بقوالب نهج منع فقدان البيانات مع التركيز على قالب قانون الحماية من فقدان البيانات في الولايات المتحدة.](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
 
@@ -493,24 +491,24 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
 ### <a name="policies-are-synced"></a>تتم مزامنة النهج
 
-بعد إنشاء نهج DLP في مدخل توافق Microsoft Purview، يتم تخزينه في مخزن نهج مركزي، ثم تتم مزامنته مع مصادر المحتوى المختلفة، بما في ذلك:
+بعد إنشاء نهج DLP في مدخل التوافق في Microsoft Purview، يتم تخزينه في مخزن نهج مركزي، ثم تتم مزامنته إلى مصادر المحتوى المختلفة، بما في ذلك:
 
-- Exchange Online، ومن هناك إلى Outlook على ويب Outlook.
+- Exchange Online، ومن هناك إلى Outlook على ويب وOutlook.
 
 - مواقع OneDrive for Business.
 
-- SharePoint المواقع عبر الإنترنت.
+- مواقع SharePoint Online.
 
-- Office برامج سطح المكتب (Excel PowerPoint وWord).
+- برامج Office لسطح المكتب (Excel وPowerPoint وWord).
 
-- Microsoft Teams القنوات ورسائل الدردشة.
+- قنوات Microsoft Teams ورسائل الدردشة.
 
 بعد مزامنة النهج إلى المواقع الصحيحة، يبدأ في تقييم المحتوى وفرض الإجراءات.
 <!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
 
-### <a name="policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites"></a>تقييم النهج في مواقع OneDrive for Business SharePoint Online
+### <a name="policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites"></a>تقييم النهج في مواقع OneDrive for Business وSharePoint Online
 
-عبر جميع مواقع SharePoint عبر الإنترنت ومواقع OneDrive for Business، تتغير المستندات باستمرار ، حيث يتم إنشاؤها وتحريرها ومشاركتها باستمرار وما إلى ذلك. وهذا يعني أن المستندات يمكن أن تتعارض أو تصبح متوافقة مع نهج DLP في أي وقت. على سبيل المثال، يمكن للشخص تحميل مستند لا يحتوي على أي معلومات حساسة إلى موقع الفريق، ولكن في وقت لاحق، يمكن لشخص آخر تحرير المستند نفسه وإضافة معلومات حساسة إليه.
+في كل مواقع SharePoint Online ومواقع OneDrive for Business، تتغير المستندات باستمرار ، حيث يتم إنشاؤها وتحريرها ومشاركتها باستمرار وما إلى ذلك. وهذا يعني أن المستندات يمكن أن تتعارض أو تصبح متوافقة مع نهج DLP في أي وقت. على سبيل المثال، يمكن للشخص تحميل مستند لا يحتوي على أي معلومات حساسة إلى موقع الفريق، ولكن في وقت لاحق، يمكن لشخص آخر تحرير المستند نفسه وإضافة معلومات حساسة إليه.
 
 لهذا السبب، تتحقق نهج DLP من المستندات بحثا عن تطابقات النهج بشكل متكرر في الخلفية. يمكنك التفكير في هذا على أنه تقييم نهج غير متزامن.
 <!-- what is the frequency? looks like it is tied to the search crawl schedule -->
@@ -529,35 +527,35 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 > [!NOTE]
 > لمنع مشاركة المستندات قبل أن تتاح لنهج DLP الفرصة لتحليلها، يمكن حظر مشاركة الملفات الجديدة في SharePoint حتى تتم فهرسة محتواها. انظر، [ضع علامة على الملفات الجديدة كالملفات الحساسة بشكل افتراضي](/sharepoint/sensitive-by-default) للحصول على معلومات مفصلة.
 
-### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>تقييم النهج في Exchange Online Outlook Outlook على ويب
+### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>تقييم النهج في Exchange Online وOutlook Outlook على ويب
 
-عند إنشاء نهج DLP يتضمن Exchange Online كموقع، تتم مزامنة النهج من مدخل توافق Microsoft Purview إلى Exchange Online، ثم من Exchange Online إلى Outlook على ويب Outlook.
+عند إنشاء نهج DLP يتضمن Exchange Online كموقع، تتم مزامنة النهج من مدخل التوافق في Microsoft Purview إلى Exchange Online، ثم من Exchange Online إلى Outlook على ويب وOutlook.
 
-عند إنشاء رسالة في Outlook، يمكن للمستخدم رؤية تلميحات النهج عند تقييم المحتوى الذي يتم إنشاؤه مقابل نهج DLP. وبعد إرسال رسالة، يتم تقييمها مقابل نهج DLP كجزء عادي من تدفق البريد، إلى جانب قواعد تدفق البريد Exchange (المعروفة أيضا بقواعد النقل) ونهج DLP التي تم إنشاؤها في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>. تقوم نهج DLP بفحص كل من الرسالة وأي مرفقات.
+عند إنشاء رسالة في Outlook، يمكن للمستخدم رؤية تلميحات النهج عند تقييم المحتوى الذي يتم إنشاؤه مقابل نهج DLP. وبعد إرسال رسالة، يتم تقييمها مقابل نهج DLP كجزء عادي من تدفق البريد، إلى جانب قواعد تدفق بريد Exchange (المعروفة أيضا بقواعد النقل) ونهج DLP التي تم إنشاؤها في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>. تقوم نهج DLP بفحص كل من الرسالة وأي مرفقات.
 
-### <a name="policy-evaluation-in-the-office-desktop-programs"></a>تقييم النهج في برامج سطح المكتب Office
+### <a name="policy-evaluation-in-the-office-desktop-programs"></a>تقييم النهج في برامج Office لسطح المكتب
 
 <!-- same capability to identify sensitive information line conflates sensitive information types and such -->
-تتضمن Excel PowerPoint وWord نفس القدرة على تحديد المعلومات الحساسة وتطبيق نهج DLP على أنها SharePoint عبر الإنترنت OneDrive for Business. تقوم هذه البرامج Office بمزامنة نهج DLP الخاصة بها مباشرة من مخزن النهج المركزي، ثم تقييم المحتوى باستمرار مقابل نهج DLP عندما يعمل الأشخاص مع المستندات المفتوحة من موقع مضمن في نهج DLP.
+يتضمن Excel وPowerPoint وWord نفس القدرة على تحديد المعلومات الحساسة وتطبيق نهج DLP مثل SharePoint Online OneDrive for Business. تقوم برامج Office هذه بمزامنة نهج DLP مباشرة من مخزن النهج المركزي، ثم تقييم المحتوى باستمرار مقابل نهج DLP عندما يعمل الأشخاص مع المستندات المفتوحة من موقع مضمن في نهج DLP.
 
 تم تصميم تقييم نهج DLP في Office بحيث لا يؤثر على أداء البرامج أو إنتاجية الأشخاص الذين يعملون على المحتوى. إذا كانوا يعملون على مستند كبير، أو كان كمبيوتر المستخدم مشغولا، فقد يستغرق ظهور تلميح نهج بضع ثوان.
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>تقييم النهج في Microsoft Teams
  <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
 
-عند إنشاء نهج DLP يتضمن Microsoft Teams كموقع، تتم مزامنة النهج من مدخل توافق Microsoft Purview إلى حسابات المستخدمين وقنوات Microsoft Teams ورسائل الدردشة. استنادا إلى كيفية تكوين نهج DLP، عندما يحاول شخص ما مشاركة معلومات حساسة في دردشة Microsoft Teams أو رسالة قناة، يمكن حظر الرسالة أو إبطالها. ولن تفتح المستندات التي تحتوي على معلومات حساسة وتتم مشاركتها مع الضيوف (المستخدمين الخارجيين) لهؤلاء المستخدمين. لمعرفة المزيد، راجع [منع فقدان البيانات Microsoft Teams](dlp-microsoft-teams.md).
+عند إنشاء نهج DLP يتضمن Microsoft Teams كموقع، تتم مزامنة النهج من مدخل التوافق في Microsoft Purview إلى حسابات المستخدمين وقنوات Microsoft Teams ورسائل الدردشة. استنادا إلى كيفية تكوين نهج DLP، عندما يحاول شخص ما مشاركة معلومات حساسة في دردشة Microsoft Teams أو رسالة قناة، يمكن حظر الرسالة أو إبطالها. ولن تفتح المستندات التي تحتوي على معلومات حساسة وتتم مشاركتها مع الضيوف (المستخدمين الخارجيين) لهؤلاء المستخدمين. لمعرفة المزيد، راجع [منع فقدان البيانات وMicrosoft Teams](dlp-microsoft-teams.md).
 
 ## <a name="permissions"></a>الأذونات
 
-بشكل افتراضي، سيكون لدى المسؤولين العموميين، ومسؤولين الأمان، ومسؤولين التوافق حق الوصول لإنشاء نهج DLP وتطبيقه. يحتاج الأعضاء الآخرون في فريق التوافق الذين سينشئون نهج DLP إلى أذونات لمدخل الامتثال ل Microsoft Purview. بشكل افتراضي، سيكون لمسؤول المستأجر حق الوصول إلى هذا الموقع ويمكنه منح مسؤولي الامتثال والأشخاص الآخرين حق الوصول إلى مدخل توافق Microsoft Purview، دون منحهم جميع أذونات مسؤول المستأجر. للقيام بذلك، نوصي بما يلي:
+بشكل افتراضي، سيكون لدى المسؤولين العموميين، ومسؤولين الأمان، ومسؤولين التوافق حق الوصول لإنشاء نهج DLP وتطبيقه. يحتاج الأعضاء الآخرون في فريق الامتثال الذين سينشئون نهج DLP إلى أذونات مدخل التوافق في Microsoft Purview. بشكل افتراضي، سيكون لمسؤول المستأجر حق الوصول إلى هذا الموقع ويمكنه منح مسؤولي الامتثال والأشخاص الآخرين حق الوصول إلى مدخل التوافق في Microsoft Purview، دون منحهم جميع أذونات مسؤول المستأجر. للقيام بذلك، نوصي بما يلي:
 
 1. إنشاء مجموعة في Microsoft 365 وإضافة مسؤولي الامتثال إليها.
 
-2. إنشاء مجموعة أدوار على صفحة **الأذونات** في مدخل توافق Microsoft Purview.
+2. إنشاء مجموعة أدوار على صفحة **"الأذونات**" في مدخل التوافق في Microsoft Purview.
 
 3. أثناء إنشاء مجموعة الأدوار، استخدم قسم **Choose Roles** لإضافة الدور التالي إلى مجموعة الأدوار: **DLP Compliance Management**.
 
-4. استخدم المقطع **"اختيار أعضاء**" لإضافة مجموعة Microsoft 365 التي قمت بإنشائها من قبل إلى مجموعة الأدوار.
+4. استخدم المقطع **"اختيار أعضاء** " لإضافة مجموعة Microsoft 365 التي قمت بإنشائها من قبل إلى مجموعة الأدوار.
 
 يمكنك أيضا إنشاء مجموعة أدوار مع امتيازات العرض فقط لنهج DLP وتقارير DLP عن طريق منح دور **View-Only DLP Compliance Management** .
 
@@ -567,15 +565,15 @@ If you're creating DLP policies with a large potential impact, we recommend foll
 
 ## <a name="find-the-dlp-cmdlets"></a>البحث عن أوامر cmdlets DLP
 
-لاستخدام معظم أوامر cmdlets لمدخل توافق Microsoft Purview، تحتاج إلى:
+لاستخدام معظم أوامر cmdlets مدخل التوافق في Microsoft Purview، تحتاج إلى:
 
-1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. Use any of these [policy-and-compliance-dlp cmdlets](/powershell/module/exchange/export-dlppolicycollection).
 
-ومع ذلك، تحتاج تقارير DLP إلى سحب البيانات من جميع Microsoft 365، بما في ذلك Exchange Online. لهذا السبب، ***تتوفر أوامر cmdlets لتقارير DLP في Exchange Online Powershell -- وليس في مدخل توافق Microsoft Purview Powershell***. لذلك، لاستخدام cmdlets لتقارير DLP، تحتاج إلى:
+ومع ذلك، تحتاج تقارير DLP إلى سحب البيانات من خلال Microsoft 365، بما في ذلك Exchange Online. لهذا السبب، ***تتوفر أوامر cmdlets لتقارير DLP في Exchange Online Powershell -- وليس في مدخل التوافق في Microsoft Purview Powershell***. لذلك، لاستخدام cmdlets لتقارير DLP، تحتاج إلى:
 
-1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. استخدم أيا من أوامر cmdlets هذه لتقارير DLP:
 

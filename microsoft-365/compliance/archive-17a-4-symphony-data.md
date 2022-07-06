@@ -12,20 +12,18 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل Symphony DataParser 17a-4 واستخدامه لاستيراد البيانات السيمفونية وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 694a23660c035980d10b7bf36228b7c081997949
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: e865126c92789d924498bdb89a62c8ea41f0169f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317995"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639260"
 ---
 # <a name="set-up-a-connector-to-archive-data-from-symphony"></a>إعداد موصل أرشفة البيانات من السيمفونية
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+استخدم [Symphony DataParser](https://www.17a-4.com/Symphony-dataparser/) من 17a-4 LLC لاستيراد بيانات الاتصالات السيمفونية وأرشفتها إلى علب بريد المستخدمين في مؤسسة Microsoft 365. يتضمن DataParser موصلا سمفونيا تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول موصل Symphony DataParser بيانات السيمفونية إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 
-استخدم [Symphony DataParser](https://www.17a-4.com/Symphony-dataparser/) من 17a-4 LLC لاستيراد بيانات الاتصالات السيمفونية وأرشفتها إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يتضمن DataParser موصلا سمفونيا تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول موصل Symphony DataParser بيانات السيمفونية إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
-
-بعد تخزين البيانات السيمفونية في علب بريد المستخدمين، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي وeDiscovery ونهج الاستبقاء وتسميات الاستبقاء وتوافق الاتصالات. يمكن أن يساعد استخدام موصل السيمفونية لاستيراد البيانات وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
+بعد تخزين البيانات السيمفونية في علب بريد المستخدمين، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي وeDiscovery ونهج الاستبقاء وتسميات الاستبقاء وتوافق الاتصالات. يمكن أن يساعد استخدام موصل Symphony لاستيراد البيانات وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
 
 ## <a name="overview-of-archiving-symphony-data"></a>نظرة عامة على أرشفة بيانات السيمفونية
 
@@ -45,15 +43,15 @@ ms.locfileid: "65317995"
 
 - إنشاء حساب DataParser لموصلات Microsoft. للقيام بذلك، اتصل [ب 17a-4 LLC](https://www.17a-4.com/contact/). تحتاج إلى تسجيل الدخول إلى هذا الحساب عند إنشاء الموصل في الخطوة 1.
 
-- يجب تعيين دور مسؤول موصل البيانات للمستخدم الذي يقوم بإنشاء موصل Symphony DataParser في الخطوة 1 (وإكماله في الخطوة 3). هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل التوافق. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور مسؤول موصل البيانات، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع المقطع "إنشاء مجموعة أدوار مخصصة" في ["الأذونات" في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- يجب تعيين دور "موصل البيانات" مسؤول للمستخدم الذي يقوم بإنشاء موصل Symphony DataParser في الخطوة 1 (وإكماله في الخطوة 3). هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل التوافق. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور موصل البيانات مسؤول، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع المقطع "إنشاء مجموعة أدوار مخصصة" في ["الأذونات" في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- يتوفر موصل البيانات 17a-4 هذا في بيئات سحابة القطاع الحكومي في Microsoft 365 سحابة حكومة الولايات المتحدة. قد تتضمن تطبيقات وخدمات الجهات الخارجية تخزين بيانات العملاء الخاصة بمؤسستك وإرسالها ومعالجتها على أنظمة تابعة لجهات خارجية خارج البنية الأساسية Microsoft 365 وبالتالي لا تغطيها التزامات Microsoft Purview وحماية البيانات. لا تقدم Microsoft أي تمثيل يشير إلى أن استخدام هذا المنتج للاتصال بتطبيقات الجهات الخارجية يعني أن تطبيقات الجهات الخارجية هذه متوافقة مع FEDRAMP.
+- يتوفر موصل البيانات 17a-4 هذا في بيئات GCC في سحابة Microsoft 365 US Government. قد تتضمن تطبيقات وخدمات الجهات الخارجية تخزين بيانات العملاء في مؤسستك وإرسالها ومعالجتها على أنظمة تابعة لجهات خارجية خارج البنية الأساسية ل Microsoft 365 وبالتالي لا تغطيها التزامات Microsoft Purview وحماية البيانات. لا تقدم Microsoft أي تمثيل يشير إلى أن استخدام هذا المنتج للاتصال بتطبيقات الجهات الخارجية يعني أن تطبيقات الجهات الخارجية هذه متوافقة مع FEDRAMP.
 
 ## <a name="step-1-set-up-a-symphony-dataparser-connector"></a>الخطوة 1: إعداد موصل Symphony DataParser
 
 الخطوة الأولى هي الوصول إلى صفحة موصلات البيانات في مدخل التوافق وإنشاء موصل 17a-4 للبيانات السيمفونية.
 
-1. انتقل إلى <https://compliance.microsoft.com> Data **connectorsSymphony** >  DataParser ثم انقر فوقها.
+1. انتقل إلى <https://compliance.microsoft.com> **موصلات** >  البيانات ثم انقر فوق **Symphony DataParser**.
 
 2. في صفحة وصف منتج **Symphony DataParser** ، انقر فوق **"إضافة موصل**".
 
@@ -69,7 +67,7 @@ ms.locfileid: "65317995"
 
 ## <a name="step-3-map-users"></a>الخطوة 3: تعيين المستخدمين
 
-سيقوم موصل Symphony DataParser تلقائيا بتعيين المستخدمين إلى عناوين بريدهم الإلكتروني Microsoft 365 قبل استيراد البيانات إلى Microsoft 365.
+سيقوم موصل Symphony DataParser تلقائيا بتعيين المستخدمين إلى عناوين بريدهم الإلكتروني في Microsoft 365 قبل استيراد البيانات إلى Microsoft 365.
 
 ## <a name="step-4-monitor-the-symphony-dataparser-connector"></a>الخطوة 4: مراقبة موصل Symphony DataParser
 

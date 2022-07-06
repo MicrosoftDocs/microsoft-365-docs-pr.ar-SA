@@ -20,16 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 description: تصف هذه المقالة كيفية إعداد التدقيق (Premium) حتى تتمكن من إجراء التحقيقات الجنائية عند اختراق حسابات المستخدمين أو التحقيق في الحوادث الأخرى المتعلقة بالأمان.
-ms.openlocfilehash: f1c858964ee3cb5e6cdfcdb7416468318393ebba
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: adffd696a3eca2d51fb5325cd79c1ba26e58936c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097943"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639325"
 ---
-# <a name="set-up-microsoft-purview-audit-premium"></a>إعداد تدقيق Microsoft Purview (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="set-up-microsoft-purview-audit-premium"></a>إعداد Microsoft Purview Audit (Premium)
 
 إذا كان لدى مؤسستك اشتراك وترخيص المستخدم النهائي الذي يدعم التدقيق (Premium)، فنفذ الخطوات التالية لإعداد القدرات الإضافية واستخدامها في Audit (Premium).
 
@@ -39,13 +37,13 @@ ms.locfileid: "65097943"
 
 تتطلب ميزات التدقيق (Premium) مثل القدرة على تسجيل الأحداث الهامة مثل MailItemsAccessed و Send ترخيص E5 مناسبا تم تعيينه للمستخدمين. بالإضافة إلى ذلك، يجب تمكين تطبيق/خدمة التدقيق المتقدم لهؤلاء المستخدمين. للتحقق من تعيين تطبيق التدقيق المتقدم للمستخدمين، نفذ الخطوات التالية لكل مستخدم:
 
-1. في مركز مسؤولي Microsoft 365، انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**مستخدمي UsersActive**</a> > ، وحدد مستخدما.
+1. في مركز مسؤولي Microsoft 365، انتقل إلى **المستخدمين النشطين** >  المستخدمين، وحدد مستخدما.<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank"></a>
 
 2. في صفحة القائمة المنبثقة لخصائص المستخدم، انقر فوق **"التراخيص والتطبيقات**".
 
 3. في قسم **"التراخيص** "، تحقق من تعيين ترخيص E5 للمستخدم أو أنه تم تعيين ترخيص وظيفة إضافية مناسب له. للحصول على قائمة بالتراخيص التي تدعم التدقيق (Premium)، راجع [متطلبات ترخيص التدقيق (Premium](auditing-solutions-overview.md#audit-premium-1)).
 
-4. قم بتوسيع قسم **"التطبيقات**"، وتحقق من تحديد خانة الاختيار **"تدقيق متقدم" Microsoft 365**.
+4. قم بتوسيع قسم **"التطبيقات** "، وتحقق من تحديد خانة الاختيار " **تدقيق متقدم ل Microsoft 365** ".
 
 5. إذا لم يتم تحديد خانة الاختيار، فحددها، ثم انقر فوق **"حفظ التغييرات".**
 
@@ -55,7 +53,7 @@ ms.locfileid: "65097943"
 
 ## <a name="step-2-enable-audit-premium-events"></a>الخطوة 2: تمكين أحداث التدقيق (Premium)
 
-يجب تمكين حدثين للتدقيق (Premium) (SearchQueryInitiatedExchange و SearchQueryInitiatedSharePoint) ليتم تسجيلهما عندما يقوم المستخدمون بإجراء عمليات بحث في Exchange Online SharePoint Online. لتمكين تدقيق هذين الحدثين للمستخدمين، قم بتشغيل الأمر التالي (لكل مستخدم) في [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+يجب تمكين حدثين للتدقيق (Premium) (SearchQueryInitiatedExchange و SearchQueryInitiatedSharePoint) ليتم تسجيلهما عندما يقوم المستخدمون بإجراء عمليات بحث في Exchange Online وSharePoint Online. لتمكين تدقيق هذين الحدثين للمستخدمين، قم بتشغيل الأمر التالي (لكل مستخدم) في [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-Mailbox <user> -AuditOwner @{Add="SearchQueryInitiated"}
@@ -71,8 +69,8 @@ Get-Mailbox <user identity> | FL MailboxLocations
 
 ## <a name="step-3-set-up-audit-retention-policies"></a>الخطوة 3: إعداد نهج استبقاء التدقيق
 
-بالإضافة إلى النهج الافتراضي الذي يحتفظ بسجلات تدقيق Exchange SharePoint وAzure AD لمدة عام واحد، يمكنك إنشاء نهج استبقاء سجل تدقيق إضافية لتلبية متطلبات عمليات الأمان وفرق تكنولوجيا المعلومات والتوافق في مؤسستك. لمزيد من المعلومات، راجع [إدارة نهج استبقاء سجل التدقيق](audit-log-retention-policies.md).
+بالإضافة إلى النهج الافتراضي الذي يحتفظ بسجلات تدقيق Exchange وSharePoint Azure AD لمدة عام واحد، يمكنك إنشاء نهج استبقاء سجل تدقيق إضافية لتلبية متطلبات عمليات الأمان وفرق تكنولوجيا المعلومات والامتثال في مؤسستك. لمزيد من المعلومات، راجع [إدارة نهج استبقاء سجل التدقيق](audit-log-retention-policies.md).
 
 ## <a name="step-4-search-for-audit-premium-events"></a>الخطوة 4: البحث عن أحداث التدقيق (Premium)
 
-الآن بعد أن تم إعداد التدقيق (Premium) لمؤسستك، يمكنك البحث عن أحداث التدقيق (Premium) الهامة والأنشطة الأخرى عند إجراء التحقيقات الجنائية. بعد الانتهاء من الخطوة 1 والخطوة 2، يمكنك البحث في سجل التدقيق عن أحداث التدقيق (Premium) والأنشطة الأخرى أثناء التحقيقات الجنائية للحسابات المخترقة وأنواع أخرى من تحقيقات الأمان أو الامتثال. لمزيد من المعلومات حول إجراء تحقيق الطب الشرعي لحسابات المستخدمين المخترقة باستخدام حدث تدقيق MailItemsAccessed (Premium)، راجع [استخدام التدقيق (Premium) للتحقيق في الحسابات المخترقة](mailitemsaccessed-forensics-investigations.md).
+الآن بعد إعداد التدقيق (Premium) لمؤسستك، يمكنك البحث عن أحداث التدقيق (Premium) الهامة وأنشطة أخرى عند إجراء التحقيقات الجنائية. بعد الانتهاء من الخطوة 1 والخطوة 2، يمكنك البحث في سجل التدقيق عن أحداث التدقيق (Premium) والأنشطة الأخرى أثناء التحقيقات الجنائية للحسابات المخترقة وأنواع أخرى من تحقيقات الأمان أو الامتثال. لمزيد من المعلومات حول إجراء تحقيق الطب الشرعي لحسابات المستخدمين المخترقة باستخدام حدث تدقيق MailItemsAccessed (Premium)، راجع [استخدام التدقيق (Premium) للتحقيق في الحسابات المخترقة](mailitemsaccessed-forensics-investigations.md).

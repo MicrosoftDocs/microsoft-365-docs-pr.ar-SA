@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
-description: يمكن للمسؤولين معرفة كيفية استخدام مدخل عمليات الإرسال في مدخل Microsoft 365 Defender لإرسال رسائل البريد الإلكتروني المشبوهة ورسائل التصيد الاحتيالي المشتبه بها والبريد العشوائي والرسائل الأخرى التي يحتمل أن تكون ضارة وعناوين URL ومرفقات البريد الإلكتروني إلى Microsoft لإعادة اكتشافها.
+description: يمكن للمسؤولين معرفة كيفية استخدام مدخل عمليات الإرسال في مدخل Microsoft 365 Defender لإرسال رسائل البريد الإلكتروني المشروعة المحظورة والبريد الإلكتروني المشبوه والبريد الإلكتروني التصيد الاحتيالي المشتبه به والبريد العشوائي والرسائل الأخرى التي يحتمل أن تكون ضارة وعناوين URL ومرفقات البريد الإلكتروني إلى Microsoft لإعادة اكتشافها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 280b609f39431759216ab4e40cfb5d01752b6514
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 17083a248e31d5ae1eff3c088497f071bcac643b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487664"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639435"
 ---
-# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>استخدم مدخل عمليات الإرسال لإرسال البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft
+# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>استخدم مدخل عمليات الإرسال لإرسال البريد العشوائي المشتبه به والتصيد الاحتيالي وعناوين URL والبريد الإلكتروني المشروع الذي يتم حظره ومرفقات البريد الإلكتروني إلى Microsoft
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 

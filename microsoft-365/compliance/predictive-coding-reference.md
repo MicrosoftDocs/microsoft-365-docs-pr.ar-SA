@@ -13,17 +13,15 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: ''
-ms.openlocfilehash: da8ea6f996735edb91b7191bbcf90df02e134428
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: تعرف على المفاهيم والمقاييس الرئيسية لأداة الترميز التنبؤي في Microsoft Purview eDiscovery (Premium).
+ms.openlocfilehash: 59718c033fb297a7ef583611c207794cd7b69b6f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091468"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640533"
 ---
 # <a name="predictive-coding-reference-preview"></a>مرجع ترميز تنبؤي (معاينة)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تصف هذه المقالة المفاهيم والمقاييس الرئيسية لأداة الترميز التنبؤي في Microsoft Purview eDiscovery (Premium). يتم سرد المقاطع في المقالة بترتيب أبجدي.
 

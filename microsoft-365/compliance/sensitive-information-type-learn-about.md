@@ -16,16 +16,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: تقدم هذه المقالة نظرة عامة على أنواع المعلومات الحساسة وكيفية اكتشافها للمعلومات الحساسة مثل الضمان الاجتماعي أو بطاقة الائتمان أو أرقام الحسابات المصرفية لتحديد العناصر الحساسة
-ms.openlocfilehash: d814bd413fc95a02bc35ab05a804c544d9b84b1e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 34c40c99cf759341ece1948164a5f7d904996b44
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014223"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639369"
 ---
 # <a name="learn-about-sensitive-information-types"></a>التعرّف على أنواع المعلومات الحساسة
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تحديد وتصنيف العناصر الحساسة الخاضعة لتحكم مؤسستك هو الخطوة الأولى في [ضابط حماية البيانات](./information-protection.md).  يوفر Microsoft Purview ثلاث طرق لتحديد العناصر بحيث يمكن تصنيفها:
 
@@ -39,7 +37,7 @@ ms.locfileid: "66014223"
 
 ## <a name="sensitive-information-types-are-used-in"></a>يتم استخدام أنواع المعلومات الحساسة في
 
-- [نهج منع فقدان البيانات في Microsoft Purview](dlp-learn-about-dlp.md)
+- [نهج تفادي فقدان البيانات في Microsoft Purview](dlp-learn-about-dlp.md)
 - [تسميات الحساسية](sensitivity-labels.md)
 - [تسميات الاستبقاء](retention.md)
 - [إدارة المخاطر الداخلية](insider-risk-management.md)
@@ -206,6 +204,6 @@ ms.locfileid: "66014223"
 - [إنشاء نوع معلومات حساسة مخصص](create-a-custom-sensitive-information-type.md)
 - [إنشاء نوع معلومات حساسة مخصص في PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
-لمعرفة كيفية استخدام أنواع المعلومات الحساسة للامتثال للوائح خصوصية البيانات، راجع [نشر حماية المعلومات للوائح خصوصية البيانات باستخدام Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
+لمعرفة كيفية استخدام أنواع المعلومات الحساسة للامتثال للوائح خصوصية البيانات، راجع [نشر حماية المعلومات للوائح خصوصية البيانات باستخدام Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

@@ -1,7 +1,7 @@
 ---
 title: سمات حواجز المعلومات
 description: هذه المقالة هي مرجع لسمات حساب مستخدم Azure Active Directory التي يمكنك استخدامها لتعريف مقاطع حواجز المعلومات.
-keywords: حواجز Microsoft 365، Microsoft Purview، التوافق، المعلومات
+keywords: Microsoft 365 وMicrosoft Purview والامتثال وحواجز المعلومات
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,16 +14,14 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e09331fb819d2b00764cd6dacd1687ade8ee116c
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: a1549a0cb3bf03056b37a75175c3b24416bec7b5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396256"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639765"
 ---
 # <a name="information-barriers-attributes"></a>سمات حواجز المعلومات
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكن استخدام بعض السمات في Azure Active Directory لتقسيم المستخدمين في حواجز المعلومات (IB). بمجرد تعريف المقاطع، يمكن استخدام هذه المقاطع كعوامل تصفية لنهج IB. على سبيل المثال، قد تستخدم **"القسم"** لتعريف شرائح المستخدمين حسب القسم داخل مؤسستك (بافتراض عدم عمل موظف واحد لقسمين في الوقت نفسه).
 

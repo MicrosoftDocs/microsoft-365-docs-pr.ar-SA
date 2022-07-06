@@ -19,18 +19,16 @@ ms.collection:
 recommendations: false
 description: تعرف على كيفية إضافة تلميح نهج إلى نهج منع فقدان البيانات (DLP) لإعلام المستخدم بأنه يعمل مع المحتوى الذي يتعارض مع نهج DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: f9702916831839ac384cd262854fd0a88f90a8ea
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 04743bdabba4089a7cfdbb46fbb25d427927f6c0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953650"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638334"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>تلميحات حول نهج تفادي فقد البيانات (DLP)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يتم دعم تلميحات نهج DLP في Outlook Web Access لجميع الشروط والاستثناءات والإجراءات التي تنطبق على حمل العمل Exchange في نهج DLP باستثناء ما يلي:
+يتم دعم تلميحات نهج DLP في Outlook Web Access لجميع الشروط والاستثناءات والإجراءات المطبقة على حمل عمل Exchange في نهج DLP باستثناء ما يلي:
 
 **الظروف:**
 
@@ -66,16 +64,16 @@ ms.locfileid: "64953650"
 
 ## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>يدعم Outlook 2013 والإصدارات الأحدث إظهار تلميحات النهج لبعض الشروط والاستثناءات فقط
 
-حاليا، يدعم Outlook 2013 والإصدارات الأحدث إظهار تلميحات النهج للنهج التي لا تحتوي على أي شرط أو استثناء بصرف النظر عن الشروط المذكورة أدناه والاستثناءات المقابلة:
+يدعم Outlook 2013 والإصدارات الأحدث حاليا إظهار تلميحات النهج للنهج التي لا تحتوي على أي شرط أو استثناء بصرف النظر عن الشروط المذكورة أدناه والاستثناءات المقابلة:
 
 - يحتوي المحتوى على (يعمل فقط لأنواع المعلومات الحساسة. تسميات الحساسية غير معتمدة)
 - تتم مشاركة المحتوى
 
 لاحظ أن جميع الشروط تعمل لرسائل البريد الإلكتروني التي تم تأليفها في تطبيق عميل Outlook، حيث ستتطابق مع المحتوى وتفرض إجراءات الحماية على المحتوى. ومع ذلك، فإن إظهار تلميحات النهج للمستخدمين غير معتمد لأي شروط يتم استخدامها بصرف النظر عن الشروط المذكورة أعلاه.
 
-## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 والإصدارات الأحدث والتطبيقات Office على سطح المكتب تظهر تلميحات النهج لبعض أنواع المعلومات الحساسة فقط
+## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>يدعم Outlook 2013 والإصدارات الأحدث وتطبيقات Office على سطح المكتب إظهار تلميحات النهج لبعض أنواع المعلومات الحساسة فقط
 
-فيما يلي قائمة بأنواع المعلومات الحساسة الجاهزة التي سيتم اكتشافها لعرض تلميحات نهج DLP في Outlook على سطح المكتب (2013 والإصدارات الأحدث) وتطبيقات Office (Word، Excel، PowerPoint) على سطح المكتب:
+فيما يلي قائمة بأنواع المعلومات الحساسة الجاهزة التي سيتم الكشف عنها لعرض تلميحات نهج DLP في Outlook على سطح المكتب (2013 والإصدارات الأحدث) وتطبيقات Office (Word وExcel وPowerPoint) على سطح المكتب:
 
 - رقم توجيه ABA
 - رقم الهوية الوطنية للارجنتين (DNI)
@@ -394,16 +392,16 @@ ms.locfileid: "64953650"
 |**التطبيق والنظام الأساسي**|**دعم تلميح نهج DLP**|**أنواع المعلومات الحساسة المدعومة**|**التقييمات والإجراءات المدعومة**|**تعليقات**|
 |:--|:--|:--|:--|:--|
 |**Outlook على ويب**|:::image type="icon" source="../media/rightmrk.png" border="false":::|جميع|فرعيه||
-|**Outlook Win32 (ver. 2105 build 14026.20000 and semi-annual channel ver. 2102 build 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|فرعيه|فرعيه|راجع [Outlook 2013 والإصدارات الأحدث التي تدعم إظهار تلميحات النهج لبعض الشروط والاستثناءات فقط](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) [Outlook 2013 والإصدارات الأحدث والتطبيقات Office على دعم سطح المكتب التي تعرض تلميحات النهج لبعض أنواع المعلومات الحساسة فقط](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) للحصول على تفاصيل حول دعم أنواع المعلومات الحساسة وشروط وإجراءات DLP المدعومة لإظهار تلميحات نهج DLP على Outlook  Win32.|
-|**Outlook Mobile (iOS، Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|اي|اي|تلميحات نهج DLP غير معتمدة على Outlook الجوال|
+|**Outlook Win32 (إصدار 2105 14026.20000 وقناة نصف سنوية. إصدار 2102 13801.20862)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|فرعيه|فرعيه|راجع [Outlook 2013 والدعم الأحدث لعرض تلميحات النهج لبعض الشروط والاستثناءات فقط](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) ودعم [Outlook 2013 والإصدارات الأحدث وتطبيقات Office على سطح المكتب لعرض تلميحات النهج لبعض أنواع المعلومات الحساسة فقط](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) للحصول على تفاصيل حول دعم أنواع المعلومات الحساسة وشروط وإجراءات DLP المعتمدة لإظهار تلميحات نهج DLP في Outlook Win32.|
+|**Outlook Mobile (iOS، Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|اي|اي|تلميحات نهج DLP غير معتمدة على Outlook للأجهزة المحمولة|
 |**عميل ويب SharePoint Online/OneDrive for Business**|:::image type="icon" source="../media/rightmrk.png" border="false":::|جميع|كافة دالات تقييم SPO/ODB وإجراءاتها في DLP||
-|**عميل SharePoint Win32/ OneDrive for Business Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|اي|اي|تلميحات نهج DLP غير معتمدة على تطبيقات عميل سطح المكتب SharePoint أو OneDrive|
-|**Word، Excel، PowerPoint Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|جميع|كافة دالات تقييم SPO/ODB وإجراءاتها في DLP|يتم دعم تلميح نهج DLP إذا كان المستند مستضافا على تطبيق ويب SPO أو ODB وتم بالفعل وضع طابع على نهج DLP.|
-|**Word، Excel، عميل PowerPoint Mobile**|:::image type="icon" source="../media/crsmrk.png" border="false":::|اي|اي|تلميحات نهج DLP غير معتمدة في تطبيقات الأجهزة المحمولة Office.|
-|**Teams Web/ Teams Desktop/ Teams Mobile/Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|جميع|كافة دالات التقييم Teams في نهج DLP|ستظهر تلميحات النهج عند وضع علامة على رسالة على أنها "تم وضع علامة على هذه الرسالة. ماذا يمكنني أن أفعل؟" عند النقر فوق الارتباط، يمكن للمستخدم مراجعة أنواع المعلومات الحساسة التي تم اكتشافها وتجاوزها أو الإبلاغ عن مشكلة إذا سمح المسؤول بذلك. لاحظ أنه لا يتم عرض تلميحات النهج للملفات. عندما يحاول المستلم الوصول إلى المستند، قد يتم رفض الوصول إذا لم يكن مسموحا به.|
+|**عميل SharePoint Win32/ OneDrive for Business Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|اي|اي|تلميحات نهج DLP غير معتمدة على تطبيقات عميل سطح المكتب من SharePoint أو OneDrive|
+|**Word وExcel وPowerPoint Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|جميع|كافة دالات تقييم SPO/ODB وإجراءاتها في DLP|يتم دعم تلميح نهج DLP إذا كان المستند مستضافا على تطبيق ويب SPO أو ODB وتم بالفعل وضع طابع على نهج DLP.|
+|**Word وExcel PowerPoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|اي|اي|تلميحات نهج DLP غير معتمدة في تطبيقات الأجهزة المحمولة ل Office.|
+|**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|جميع|جميع دالات تقييم Teams في نهج DLP|ستظهر تلميحات النهج عند وضع علامة على رسالة على أنها "تم وضع علامة على هذه الرسالة. ماذا يمكنني أن أفعل؟" عند النقر فوق الارتباط، يمكن للمستخدم مراجعة أنواع المعلومات الحساسة التي تم اكتشافها وتجاوزها أو الإبلاغ عن مشكلة إذا سمح المسؤول بذلك. لاحظ أنه لا يتم عرض تلميحات النهج للملفات. عندما يحاول المستلم الوصول إلى المستند، قد يتم رفض الوصول إذا لم يكن مسموحا به.|
 |**أجهزة نقاط النهاية Win32**|:::image type="icon" source="../media/rightmrk.png" border="false":::|فرعيه|كافة دالات تقييم DLP لنقطة النهاية والإجراءات في نهج DLP|يدعم "راجع [منع فقدان البيانات على نقطة النهاية" تلميحات النهج لبعض أنواع المعلومات الحساسة فقط](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
 |**أجهزة macOS**|التلميحات الافتراضية فقط|جميع|فرعيه|نهج منع فقدان البيانات قابلة للتنفيذ على أجهزة macOS. تلميحات النهج المخصصة غير معتمدة.|
 |**تطبيقات سحابة الجهات الخارجية**|:::image type="icon" source="../media/crsmrk.png" border="false":::|اي|اي|تلميحات نهج تفادي فقدان البيانات غير معتمدة على تطبيقات السحابة التابعة لجهات خارجية|
 |**الإعدادات الجاهزة**|:::image type="icon" source="../media/crsmrk.png" border="false":::|اي|اي||
-|**Word، Excel، PowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|فرعيه|فرعيه|الرجاء مراجعة [Outlook 2013 والتطبيقات الأحدث والتطبيقات Office على سطح المكتب التي تعرض تلميحات النهج لبعض أنواع المعلومات الحساسة فقط](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) لقائمة أنواع المعلومات الحساسة المعتمدة</br></br>ستعمل تلميحات النهج لتطبيقات عميل WXP مع المستندات المخزنة على SharePoint Online أو مواقع OneDrive for Business لكافة نهج DLP التي تحتوي على ما يلي أو مجموعة فرعية من الشروط أو الإجراءات في نهج DLP:</br> <ul><li>يحتوي المحتوى على أنواع معلومات حساسة</li><li>نطاق الوصول (تتم مشاركة المحتوى داخليا/خارجيا)</li><li>إعلام المستخدم (تلميحات النهج/إعلامات المستخدم)</li><li>حظر الجميع</li><li>تقارير الحوادث</li></ul></br> إذا كان هناك أي شرط أو إجراء آخر موجود، فلن يظهر تلميح نهج DLP لهذا النهج في تطبيقات سطح المكتب في Word أو Excel أو PowerPoint.</br>راجع [تلميحات النهج في Excel PowerPoint وWord](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) للحصول على مزيد من التفاصيل|
+|**Word وExcel وPowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|فرعيه|فرعيه|الرجاء مراجعة [Outlook 2013 والإصدارات الأحدث، كما يعرض دعم Office على سطح المكتب تلميحات النهج لبعض أنواع المعلومات الحساسة فقط](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) لقائمة أنواع المعلومات الحساسة المعتمدة</br></br>ستعمل تلميحات النهج لتطبيقات عميل WXP مع المستندات المخزنة على SharePoint Online أو مواقع OneDrive for Business لكافة نهج DLP التي تحتوي على ما يلي أو مجموعة فرعية من الشروط أو الإجراءات في نهج DLP:</br> <ul><li>يحتوي المحتوى على أنواع معلومات حساسة</li><li>نطاق الوصول (تتم مشاركة المحتوى داخليا/خارجيا)</li><li>إعلام المستخدم (تلميحات النهج/إعلامات المستخدم)</li><li>حظر الجميع</li><li>تقارير الحوادث</li></ul></br> إذا كان هناك أي شرط أو إجراء آخر موجود، فلن يظهر تلميح نهج DLP لهذا النهج في تطبيقات سطح المكتب الخاصة ب Word أو Excel أو PowerPoint.</br>راجع [تلميحات النهج في Excel وPowerPoint وWord](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) للحصول على مزيد من التفاصيل|
 ||||||

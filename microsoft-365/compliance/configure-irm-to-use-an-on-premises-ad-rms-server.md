@@ -15,34 +15,32 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: تعرف على كيفية تكوين Rights Management المعلومات (IRM) في Exchange Online لاستخدام خادم خدمة Rights Management Active Directory (AD RMS).
+description: تعرف على كيفية تكوين إدارة حقوق استخدام المعلومات (IRM) في Exchange Online لاستخدام خادم خدمة إدارة حقوق Active Directory (AD RMS).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dac33407a9a45da59d0b3a766ab8a695a0f5a076
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5bd4a104d4cceedbdb82c1ff2baac0b547b74fbe
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018130"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637494"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>تكوين IRM لاستخدام خادم AD RMS
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+لاستخدامها مع عمليات النشر المحلية، تستخدم إدارة حقوق استخدام المعلومات (IRM) في Exchange Online خدمات إدارة حقوق Active Directory (AD RMS)، وهي تقنية حماية المعلومات في Windows Server 2008 والإصدارات الأحدث. يتم تطبيق حماية IRM على البريد الإلكتروني عن طريق تطبيق قالب نهج حقوق AD RMS على رسالة بريد إلكتروني. يتم إرفاق الحقوق بالرسالة نفسها بحيث تحدث الحماية عبر الإنترنت ودون اتصال وداخل وخارج جدار حماية مؤسستك.
 
-للاستخدام مع عمليات النشر المحلية، تستخدم Rights Management المعلومات (IRM) في Exchange Online خدمات Rights Management Active Directory (AD RMS)، وهي تقنية حماية المعلومات في Windows Server 2008 والإصدارات الأحدث. يتم تطبيق حماية IRM على البريد الإلكتروني عن طريق تطبيق قالب نهج حقوق AD RMS على رسالة بريد إلكتروني. يتم إرفاق الحقوق بالرسالة نفسها بحيث تحدث الحماية عبر الإنترنت ودون اتصال وداخل وخارج جدار حماية مؤسستك.
+يوضح لك هذا الموضوع كيفية تكوين IRM لاستخدام خادم AD RMS. للحصول على معلومات حول استخدام تشفير الرسائل في Microsoft Purview مع Azure Active Directory وAzure Rights Management، راجع [الأسئلة المتداولة حول تشفير الرسائل](./ome-faq.yml).
 
-يوضح لك هذا الموضوع كيفية تكوين IRM لاستخدام خادم AD RMS. للحصول على معلومات حول استخدام تشفير رسائل Microsoft Purview مع Azure Active Directory وAzure Rights Management، راجع [الأسئلة المتداولة حول تشفير الرسائل](./ome-faq.yml).
-
-لمعرفة المزيد حول IRM في Exchange Online، راجع [Rights Management المعلومات في Exchange Online](information-rights-management-in-exchange-online.md).
+لمعرفة المزيد حول IRM في Exchange Online، راجع [إدارة حقوق استخدام المعلومات في Exchange Online](information-rights-management-in-exchange-online.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
 - الوقت المقدر لإكمال هذه المهمة: 30 دقيقة
 
-- يجب تعيين أذونات لك قبل أن تتمكن من تنفيذ هذا الإجراء أو الإجراءات. للاطلاع على الأذونات التي تحتاجها، راجع إدخال "المعلومات Rights Management" في [موضوع نهج المراسلة وأذونات التوافق](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions).
+- يجب تعيين أذونات لك قبل أن تتمكن من تنفيذ هذا الإجراء أو الإجراءات. لمعرفة الأذونات التي تحتاجها، راجع إدخال "إدارة حقوق استخدام المعلومات" في [موضوع نهج المراسلة وأذونات التوافق](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions) .
 
-- يجب أن يكون خادم AD RMS قيد التشغيل Windows Server 2008 أو إصدار أحدث. للحصول على تفاصيل حول كيفية نشر AD RMS، راجع [تثبيت نظام مجموعة AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11)).
+- يجب أن يقوم خادم AD RMS بتشغيل Windows Server 2008 أو إصدار أحدث. للحصول على تفاصيل حول كيفية نشر AD RMS، راجع [تثبيت نظام مجموعة AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11)).
 
-- للحصول على تفاصيل حول كيفية تثبيت وتكوين Windows PowerShell والاتصال للخدمة، راجع [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- للحصول على تفاصيل حول كيفية تثبيت وتكوين Windows PowerShell والاتصال للخدمة، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - للحصول على معلومات حول اختصارات لوحة المفاتيح التي قد تنطبق على الإجراءات الواردة في هذا الموضوع، راجع [اختصارات لوحة المفاتيح لمركز إدارة Exchange في Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
@@ -64,7 +62,7 @@ ms.locfileid: "66018130"
 
 عند استيراد TPD، يتم تخزينه وحمايتها في Exchange Online.
 
-1. افتح وحدة تحكم خدمات Rights Management Active Directory، ثم قم بتوسيع نظام مجموعة AD RMS.
+1. افتح وحدة تحكم خدمات إدارة حقوق Active Directory، ثم قم بتوسيع مجموعة AD RMS.
 
 2. في شجرة وحدة التحكم، قم بتوسيع **نهج الثقة**، ثم انقر فوق **"مجالات النشر الموثوق بها**".
 
@@ -86,7 +84,7 @@ ms.locfileid: "66018130"
 Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('<path to exported TPD file>')) -Name "<name of TPD>" -ExtranetLicensingUrl <URL> -IntranetLicensingUrl <URL>
 ```
 
-يمكنك الحصول على قيم معلمات _ExtranetLicensingUrl_ و _IntranetLicensingUrl_ في وحدة تحكم خدمات Rights Management Active Directory. حدد نظام مجموعة AD RMS في شجرة وحدة التحكم. يتم عرض عناوين URL للترخيص في جزء النتائج. يتم استخدام عناوين URL هذه من قبل عملاء البريد الإلكتروني عند الحاجة إلى فك تشفير المحتوى ومتى يحتاج Exchange Online إلى تحديد TPD الذي يجب استخدامه.
+يمكنك الحصول على قيم معلمات _ExtranetLicensingUrl_ و _IntranetLicensingUrl_ في وحدة تحكم خدمات إدارة حقوق Active Directory. حدد نظام مجموعة AD RMS في شجرة وحدة التحكم. يتم عرض عناوين URL للترخيص في جزء النتائج. يتم استخدام عناوين URL هذه من قبل عملاء البريد الإلكتروني عند الحاجة إلى فك تشفير المحتوى ومتى يحتاج Exchange Online إلى تحديد TPD الذي يجب استخدامه.
 
 عند تشغيل هذا الأمر، ستتم مطالبتك بكلمة مرور. أدخل كلمة المرور التي حددتها عند تصدير TPD من خادم AD RMS.
 

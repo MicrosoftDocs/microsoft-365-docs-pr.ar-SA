@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: تعرف على كيفية استخدام علامة التبويب "اختبار" بعد حساب Batch في eDiscovery (Premium) لاختبار الجودة الإجمالية للمعالجة ومقارنتها والتحقق من صحتها.
-ms.openlocfilehash: 0b3d6c70bdfef4dec8e8a5d08d4e72f80d6fec77
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5c1fabf677dd305fb91d77e94af0e18304280d45
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095455"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637032"
 ---
 # <a name="test-relevance-analysis-in-ediscovery-premium"></a>اختبار تحليل الصلة في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
   
 تمكنك علامة التبويب "اختبار" في Microsoft Purview eDiscovery (Premium) من اختبار الجودة الإجمالية للمعالجة ومقارنتها والتحقق من صحتها. يتم إجراء هذه الاختبارات بعد حساب Batch. بوضع علامة على الملفات في المجموعة، يصدر خبير الحكم النهائي بشأن ما إذا كان كل ملف تم وضع علامة عليه ذا صلة بالقضية.
   
@@ -34,7 +32,7 @@ ms.locfileid: "65095455"
   
 ## <a name="testing-the-rest"></a>اختبار الباقي
 
-يتم استخدام اختبار "Test the Rest" للتحقق من صحة قرارات التقصي، على سبيل المثال، لمراجعة الملفات فقط فوق درجة قطع الصلة المحددة استنادا إلى نتائج eDiscovery النهائية (Premium). يراجع الخبير عينة من الملفات ضمن درجة اقتطاع محددة لتقييم عدد الملفات ذات الصلة ضمن تلك المجموعة.
+يستخدم اختبار "Test the Rest" للتحقق من صحة قرارات التقصي، على سبيل المثال، لمراجعة الملفات فقط فوق درجة قطع الصلة المحددة استنادا إلى نتائج eDiscovery النهائية (Premium). يراجع الخبير عينة من الملفات ضمن درجة اقتطاع محددة لتقييم عدد الملفات ذات الصلة ضمن تلك المجموعة.
   
 يوفر هذا الاختبار إحصائيات ومقارنة بين مجموعة المراجعة و Test the Rest population. نتائج مجموعة المراجعة هي تلك المحسوبة حسب الصلة أثناء التدريب. تتضمن النتائج عمليات حسابية تستند إلى الإعدادات ومعلمات الإدخال، مثل:
   

@@ -1,6 +1,6 @@
 ---
-title: التحضير ل TLS 1.2 في Office 365 Office 365 سحابة القطاع الحكومي
-description: كيفية التحضير لاستخدام TLS 1.2 لجميع مجموعات خادم العميل وخادم المستعرض في Office 365 Office 365 سحابة القطاع الحكومي بعد تعطيل دعم TLS 1.0 و1.1.
+title: التحضير ل TLS 1.2 في Office 365 Office 365 GCC
+description: كيفية الاستعداد لاستخدام TLS 1.2 لجميع مجموعات خادم العميل والمستعرض في Office 365 و OFFICE 365 GCC بعد تعطيل دعم TLS 1.0 و1.1.
 author: kccross
 manager: laurawi
 ms.localizationpriority: medium
@@ -13,37 +13,35 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 584bf2b27be9c33399a9158038853dac195e3146
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 9edbbb463d04447ee4babcd66b4d6e320663209a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044214"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639743"
 ---
-# <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>التحضير ل TLS 1.2 في Office 365 Office 365 سحابة القطاع الحكومي
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>التحضير ل TLS 1.2 في Office 365 Office 365 GCC
 
 ## <a name="summary"></a>الملخص
 
-لتوفير أفضل تشفير في فئته لعملائنا، تخطط Microsoft لإهمال الإصدارين 1.0 و1.1 من بروتوكول أمان طبقة النقل (TLS) في Office 365 Office 365 سحابة القطاع الحكومي. نحن نفهم أن أمان بياناتك مهم، ونحن ملتزمون بالشفافية بشأن التغييرات التي قد تؤثر على استخدامك لخدمة TLS.
+لتوفير أفضل تشفير في فئته لعملائنا، تخطط Microsoft لإهمال الإصدارين 1.0 و1.1 من بروتوكول أمان طبقة النقل (TLS) في Office 365 Office 365 GCC. نحن نفهم أن أمان بياناتك مهم، ونحن ملتزمون بالشفافية بشأن التغييرات التي قد تؤثر على استخدامك لخدمة TLS.
 
-لا يحتوي [تطبيق Microsoft TLS 1.0](https://support.microsoft.com/help/3117336/schannel-implementation-of-tls-1-0-in-windows-security-status-update-n) على ثغرات أمنية معروفة. ولكن بسبب احتمالية هجمات خفض مستوى البروتوكول المستقبلية والثغرات الأمنية الأخرى ل TLS، فإننا نوقف دعم TLS 1.0 و1.1 في Microsoft Office 365 Office 365 سحابة القطاع الحكومي.
+لا يحتوي [تطبيق Microsoft TLS 1.0](https://support.microsoft.com/help/3117336/schannel-implementation-of-tls-1-0-in-windows-security-status-update-n) على ثغرات أمنية معروفة. ولكن بسبب احتمالية هجمات خفض مستوى البروتوكول المستقبلية والثغرات الأمنية الأخرى ل TLS، فإننا نوقف دعم TLS 1.0 و1.1 في Microsoft Office 365 Office 365 GCC.
 
 للحصول على معلومات حول كيفية إزالة تبعيات TLS 1.0 و1.1، راجع المستند التقني التالي: [حل مشكلة TLS 1.0](https://www.microsoft.com/download/details.aspx?id=55266).
 
-بعد الترقية إلى TLS 1.2، تأكد من أن مجموعات التشفير التي تستخدمها مدعومة من قبل Azure Front Door. Microsoft 365 وAzure Front Door اختلافات طفيفة في دعم مجموعة التشفير. للحصول على التفاصيل، راجع [ما هي مجموعات التشفير الحالية التي يدعمها Azure Front Door؟](/azure/frontdoor/concept-end-to-end-tls#supported-cipher-suites).
+بعد الترقية إلى TLS 1.2، تأكد من أن مجموعات التشفير التي تستخدمها مدعومة من قبل Azure Front Door. لدى Microsoft 365 وAzure Front Door اختلافات طفيفة في دعم مجموعة التشفير. للحصول على التفاصيل، راجع [ما هي مجموعات التشفير الحالية التي يدعمها Azure Front Door؟](/azure/frontdoor/concept-end-to-end-tls#supported-cipher-suites).
 
 ## <a name="more-information"></a>معلومات إضافية
 
-لقد بدأنا بالفعل في إهمال TLS 1.0 و1.1 اعتبارا من يناير 2020. أي عملاء أو أجهزة أو خدمات تتصل Office 365 من خلال TLS 1.0 أو 1.1 في DoD أو سحابة القطاع الحكومي المثيلات العالية غير معتمدة. بالنسبة إلى عملائنا التجاريين في Office 365، سيبدأ إهمال TLS 1.0 و1.1 في 15 أكتوبر 2020 وسيستمر الإطلاق خلال الأسابيع والأشهر التالية.
+لقد بدأنا بالفعل في إهمال TLS 1.0 و1.1 اعتبارا من يناير 2020. أي عملاء أو أجهزة أو خدمات تتصل Office 365 من خلال TLS 1.0 أو 1.1 في مثيلات DoD أو GCC High غير معتمدة. بالنسبة إلى عملائنا التجاريين في Office 365، سيبدأ إهمال TLS 1.0 و1.1 في 15 أكتوبر 2020 وسيستمر الإطلاق خلال الأسابيع والأشهر التالية.
 
 نوصي باستخدام جميع مجموعات خادم العميل وخادم المستعرض TLS 1.2 (أو إصدار أحدث) للحفاظ على الاتصال بخدمات Office 365. قد تحتاج إلى تحديث مجموعات معينة من خادم العميل وخادم المستعرض.
 
   > [!NOTE]
   > بالنسبة لتدفق البريد الوارد SMTP، بعد إهمال TLS 1.0 و1.1، سنقبل اتصال TLS 1.2 فقط. ومع ذلك، سنواصل قبول اتصال SMTP غير المشفر دون أي TLS. على الرغم من أننا لا نوصي بإرسال البريد الإلكتروني دون أي تشفير.
 
-ستحتاج إلى تحديث التطبيقات التي تستدعي واجهات برمجة التطبيقات Microsoft 365 عبر TLS 1.0 أو TLS 1.1 لاستخدام TLS 1.2. افتراضيات .NET 4.5 إلى TLS 1.1. لتحديث تكوين .NET الخاص بك، راجع [كيفية تمكين أمان طبقة النقل (TLS) 1.2 على العملاء](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
+ستحتاج إلى تحديث التطبيقات التي تستدعي واجهات برمجة تطبيقات Microsoft 365 عبر TLS 1.0 أو TLS 1.1 لاستخدام TLS 1.2. افتراضيات .NET 4.5 إلى TLS 1.1. لتحديث تكوين .NET الخاص بك، راجع [كيفية تمكين أمان طبقة النقل (TLS) 1.2 على العملاء](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
 من المعروف أن العملاء التاليين غير قادرين على استخدام TLS 1.2. تحديث هؤلاء العملاء لضمان الوصول دون انقطاع إلى الخدمة.
 
@@ -53,16 +51,16 @@ ms.locfileid: "66044214"
 - Internet Explorer 10 على Windows Phone 8
 - Safari 6.0.4/OS X10.8.4 والإصدارات السابقة
 
-### <a name="tls-12-for-microsoft-teams-rooms-and-surface-hub"></a>TLS 1.2 ل Microsoft Teams Rooms و Surface Hub
+### <a name="tls-12-for-microsoft-teams-rooms-and-surface-hub"></a>TLS 1.2 ل Microsoft Teams Rooms وSurface Hub
 
 Microsoft Teams Rooms (المعروف سابقا باسم Skype Room System V2 SRS V2) دعم TLS 1.2 منذ ديسمبر 2018. نوصي بتثبيت أجهزة الغرف Microsoft Teams Rooms إصدار التطبيق 4.0.64.0 أو أحدث. لمزيد من المعلومات، راجع [ملاحظات الإصدار](/microsoftteams/room-systems/srs2-release-note). التغييرات متوافقة مع الإصدارات السابقة وإلى الأمام.
 
-Surface Hub إصدار دعم TLS 1.2 في مايو 2019.
+أصدر Surface Hub دعم TLS 1.2 في مايو 2019.
 
-يتطلب دعم TLS 1.2 لمنتجات Microsoft Teams Rooms Surface Hub أيضا تغييرات التعليمات البرمجية التالية من جانب الخادم:
+يتطلب دعم TLS 1.2 لمنتجات Microsoft Teams Rooms وSurface Hub أيضا تغييرات التعليمات البرمجية التالية من جانب الخادم:
 
-- Skype for Business تم إجراء تغييرات على الخادم عبر الإنترنت مباشرة في أبريل 2019. الآن، يدعم Skype for Business Online توصيل أجهزة Microsoft Teams Rooms وأجهزة Surface Hub باستخدام TLS 1.2.
-- يجب على العملاء Skype for Business Server تثبيت تحديث تراكمي (CU) لاستخدام TLS 1.2 لأنظمة غرف Teams Surface Hub.
+- Skype for Business تم إجراء تغييرات على الخادم عبر الإنترنت مباشرة في أبريل 2019. الآن، يدعم Skype for Business Online توصيل أجهزة Microsoft Teams Rooms وSurface Hub باستخدام TLS 1.2.
+- يجب على العملاء Skype for Business Server تثبيت تحديث تراكمي (CU) لاستخدام TLS 1.2 لأنظمة غرف Teams وSurface Hub.
 
   - بالنسبة Skype for Business Server 2015، تم إصدار CU9 بالفعل في مايو 2019.
   - بالنسبة Skype for Business Server 2019، كان من المخطط مسبقا أن يكون CU1 في أبريل 2019 ولكن تم تأخيره إلى يونيو 2019.
@@ -76,10 +74,10 @@ Surface Hub إصدار دعم TLS 1.2 في مايو 2019.
 
 توفر الموارد التالية إرشادات للمساعدة في التأكد من أن العملاء يستخدمون TLS 1.2 أو إصدار أحدث وتعطيل TLS 1.0 و1.1.
 
-- بالنسبة Windows 7 عملاء يتصلون Office 365، تأكد من أن TLS 1.2 هو البروتوكول الآمن الافتراضي في WinHTTP في Windows. لمزيد من المعلومات، راجع [KB 3140245 - تحديث لتمكين TLS 1.1 وTLS 1.2 كبروتوكولات آمنة افتراضية في WinHTTP في Windows](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in).
+- بالنسبة لعملاء Windows 7 الذين يتصلون Office 365، تأكد من أن TLS 1.2 هو البروتوكول الآمن الافتراضي في WinHTTP في Windows. لمزيد من المعلومات، راجع [KB 3140245 - تحديث لتمكين TLS 1.1 وTLS 1.2 كبروتوكولات آمنة افتراضية في WinHTTP في Windows](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in).
 - [مجموعات تشفير TLS المدعومة من قبل Office 365](/microsoft-365/compliance/technical-reference-details-about-encryption#tls-cipher-suites-supported-by-office-365)
 - لبدء معالجة ضعف استخدام TLS عن طريق إزالة تبعيات TLS 1.0 و1.1، راجع [دعم TLS 1.2 في Microsoft](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/).
-- تسهل [وظيفة IIS الجديدة](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) العثور على العملاء على [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) [وserver Windows 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) المتصلين بالخدمة باستخدام بروتوكولات أمان ضعيفة.
+- تسهل [وظيفة IIS الجديدة](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) العثور على العملاء على [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) [وWindows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) الذين يتصلون بالخدمة باستخدام بروتوكولات أمان ضعيفة.
 - احصل على مزيد من المعلومات حول كيفية [حل مشكلة TLS 1.0](https://www.microsoft.com/download/details.aspx?id=55266).
 - للحصول على معلومات عامة حول نهجنا في الأمان، انتقل إلى [مركز التوثيق Office 365](https://www.microsoft.com/trustcenter/cloudservices/office365).
 - لتحديد إصدار TLS المستخدم من قبل عملاء SMTP، راجع [رؤى عملاء SMTP Auth والإبلاغ في مركز التوافق & الأمان](../security/office-365-security/mfi-smtp-auth-clients-report.md).

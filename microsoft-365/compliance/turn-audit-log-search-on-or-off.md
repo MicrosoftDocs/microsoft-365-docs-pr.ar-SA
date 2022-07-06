@@ -19,33 +19,31 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: كيفية تشغيل ميزة البحث في سجل التدقيق أو إيقاف تشغيلها في مدخل توافق Microsoft Purview لتمكين قدرة المسؤولين على البحث في سجل التدقيق أو تعطيلها.
-ms.openlocfilehash: 3602a35169670b61a124cda40c9ab50b481571d8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: كيفية تشغيل ميزة البحث في سجل التدقيق أو إيقاف تشغيلها في مدخل التوافق في Microsoft Purview لتمكين قدرة المسؤولين على البحث في سجل التدقيق أو تعطيلها.
+ms.openlocfilehash: 7a757b07796f2b25fc6269a41d51f27e696e77cd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078856"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640259"
 ---
 # <a name="turn-auditing-on-or-off"></a>تشغيل التدقيق أو إيقاف تشغيله
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+سيتم تشغيل تسجيل التدقيق بشكل افتراضي لكل من Microsoft 365 Office 365 المؤسسات. ومع ذلك، عند إعداد مؤسسة Microsoft 365 أو Office 365 جديدة، يجب التحقق من حالة التدقيق لمؤسستك. للحصول على الإرشادات، راجع [قسم التحقق من حالة التدقيق لمؤسستك](#verify-the-auditing-status-for-your-organization) في هذه المقالة. 
 
-سيتم تشغيل تسجيل التدقيق بشكل افتراضي للمؤسسات Microsoft 365 والمؤسسات Office 365. ومع ذلك، عند إعداد مؤسسة Microsoft 365 جديدة أو مؤسسة Office 365 جديدة، يجب التحقق من حالة التدقيق لمؤسستك. للحصول على الإرشادات، راجع [قسم التحقق من حالة التدقيق لمؤسستك](#verify-the-auditing-status-for-your-organization) في هذه المقالة. 
-
-عند تشغيل التدقيق في مدخل توافق Microsoft Purview، يتم تسجيل نشاط المستخدم والمسؤول من مؤسستك في سجل التدقيق ويتم الاحتفاظ به لمدة 90 يوما، وما يصل إلى عام واحد وفقا للترخيص المعين للمستخدمين. ومع ذلك، قد يكون لدى مؤسستك أسباب لعدم الرغبة في تسجيل بيانات سجل التدقيق والاحتفاظ بها. في هذه الحالات، قد يقرر المسؤول العام إيقاف تشغيل التدقيق في Microsoft 365.
+عند تشغيل التدقيق في مدخل التوافق في Microsoft Purview، يتم تسجيل نشاط المستخدم والمسؤول من مؤسستك في سجل التدقيق ويتم الاحتفاظ به لمدة 90 يوما، وما يصل إلى عام واحد وفقا للترخيص المعين للمستخدمين. ومع ذلك، قد يكون لدى مؤسستك أسباب لعدم الرغبة في تسجيل بيانات سجل التدقيق والاحتفاظ بها. في هذه الحالات، قد يقرر المسؤول العام إيقاف تشغيل التدقيق في Microsoft 365.
 
 > [!IMPORTANT]
 > إذا أوقفت تشغيل التدقيق في Microsoft 365، فلا يمكنك استخدام واجهة برمجة تطبيقات نشاط الإدارة Office 365 أو Microsoft Sentinel للوصول إلى بيانات التدقيق لمؤسستك. يعني إيقاف تشغيل التدقيق باتباع الخطوات الواردة في هذه المقالة أنه لن يتم إرجاع أي نتائج عند البحث في سجل التدقيق باستخدام مدخل التوافق أو عند تشغيل **search-UnifiedAuditLog** cmdlet في Exchange Online PowerShell. وهذا يعني أيضا أن سجلات التدقيق لن تكون متوفرة من خلال واجهة برمجة تطبيقات نشاط الإدارة Office 365 أو Microsoft Sentinel.
   
 ## <a name="before-you-turn-auditing-on-or-off"></a>قبل تشغيل التدقيق أو إيقاف تشغيله
 
-- يجب تعيين دور سجلات التدقيق في Exchange Online لتشغيل التدقيق أو إيقاف تشغيله في مؤسستك Microsoft 365. بشكل افتراضي، يتم تعيين هذا الدور إلى مجموعات دور إدارة التوافق وإدارة المؤسسة في صفحة **الأذونات** في مركز إدارة Exchange. المسؤولون العموميون في Microsoft 365 هم أعضاء في مجموعة دور إدارة المؤسسة في Exchange Online.
+- يجب تعيين دور سجلات التدقيق في Exchange Online لتشغيل التدقيق أو إيقاف تشغيله في مؤسسة Microsoft 365. بشكل افتراضي، يتم تعيين هذا الدور إلى مجموعات دور إدارة التوافق وإدارة المؤسسة في صفحة **الأذونات** في مركز إدارة Exchange. المسؤولون العموميون في Microsoft 365 هم أعضاء في مجموعة دور إدارة المؤسسة في Exchange Online.
 
     > [!NOTE]
     > يجب تعيين أذونات للمستخدمين في Exchange Online لتشغيل التدقيق أو إيقاف تشغيله. إذا قمت بتعيين دور سجلات التدقيق للمستخدمين في صفحة **الأذونات** في مدخل التوافق، فلن يتمكنوا من تشغيل التدقيق أو إيقاف تشغيله. وذلك لأن cmdlet الأساسي هو أمر cmdlet Exchange Online PowerShell.
 
-- للحصول على إرشادات مفصلة خطوة بخطوة حول البحث في سجل التدقيق، راجع [البحث في سجل التدقيق](search-the-audit-log-in-security-and-compliance.md). لمزيد من المعلومات حول واجهة برمجة تطبيقات نشاط الإدارة Microsoft 365، راجع [بدء استخدام واجهات برمجة تطبيقات إدارة Microsoft 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
+- للحصول على إرشادات مفصلة خطوة بخطوة حول البحث في سجل التدقيق، راجع [البحث في سجل التدقيق](search-the-audit-log-in-security-and-compliance.md). لمزيد من المعلومات حول Microsoft 365 Management Activity API، راجع [بدء استخدام واجهات برمجة التطبيقات لإدارة Microsoft 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 ## <a name="verify-the-auditing-status-for-your-organization"></a>التحقق من حالة التدقيق لمؤسستك
 
@@ -80,7 +78,7 @@ Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 
 ### <a name="use-powershell-to-turn-on-auditing"></a>استخدام PowerShell لتشغيل التدقيق
 
-1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. قم بتشغيل أمر PowerShell التالي لتشغيل التدقيق.
 
@@ -94,7 +92,7 @@ Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 
 يجب عليك استخدام Exchange Online PowerShell لإيقاف تشغيل التدقيق.
   
-1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. قم بتشغيل أمر PowerShell التالي لإيقاف تشغيل التدقيق.
 
@@ -118,9 +116,9 @@ Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 
 ## <a name="audit-records-when-auditing-status-is-changed"></a>تدقيق السجلات عند تغيير حالة التدقيق
 
-يتم تدقيق التغييرات التي يتم إجراؤها على حالة التدقيق في مؤسستك. وهذا يعني أنه يتم تسجيل سجلات التدقيق عند تشغيل التدقيق أو إيقاف تشغيله. يمكنك البحث في سجل تدقيق المسؤول Exchange لسجلات التدقيق هذه.
+يتم تدقيق التغييرات التي يتم إجراؤها على حالة التدقيق في مؤسستك. وهذا يعني أنه يتم تسجيل سجلات التدقيق عند تشغيل التدقيق أو إيقاف تشغيله. يمكنك البحث في سجل تدقيق مسؤول Exchange لسجلات التدقيق هذه.
 
-للبحث في سجل تدقيق المسؤول Exchange لسجلات التدقيق التي يتم إنشاؤها عند تشغيل التدقيق أو إيقاف تشغيله، قم بتشغيل الأمر التالي في [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+للبحث في سجل تدقيق مسؤول Exchange عن سجلات التدقيق التي يتم إنشاؤها عند تشغيل التدقيق أو إيقاف تشغيله، قم بتشغيل الأمر التالي في [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLogIngestionEnabled
@@ -140,4 +138,4 @@ Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLo
 
 `Confirm` قيمة غير مضمنة في الخاصية *CmdletParameters*. يشير هذا إلى أنه تم إيقاف تشغيل تسجيل التدقيق الموحد عن طريق تشغيل الأمر **set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** .
 
-لمزيد من المعلومات حول البحث في سجل تدقيق المسؤول Exchange، راجع [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).
+لمزيد من المعلومات حول البحث في سجل تدقيق مسؤول Exchange، راجع [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).

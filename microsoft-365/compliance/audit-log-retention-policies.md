@@ -16,27 +16,25 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: تعد نهج استبقاء سجل التدقيق جزءا من قدرات تدقيق Microsoft Purview (Premium) الجديدة. يتيح لك نهج استبقاء سجل التدقيق تحديد مدة الاحتفاظ بسجلات التدقيق في مؤسستك.
-ms.openlocfilehash: e75c88ba3ddd47b433e733984b76716532ab3ffa
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: تعد نهج استبقاء سجل التدقيق جزءا من قدرات Microsoft Purview Audit الجديدة (Premium). يتيح لك نهج استبقاء سجل التدقيق تحديد مدة الاحتفاظ بسجلات التدقيق في مؤسستك.
+ms.openlocfilehash: bf9f06fbce71af479ed089f912d440ba6c840b29
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012417"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639193"
 ---
 # <a name="manage-audit-log-retention-policies"></a>إدارة سياسات استبقاء سجل التدقيق
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يمكنك إنشاء نهج استبقاء سجل التدقيق وإدارتها في مدخل توافق Microsoft Purview. تعد نهج استبقاء سجل التدقيق جزءا من قدرات تدقيق Microsoft Purview (Premium) الجديدة. يتيح لك نهج استبقاء سجل التدقيق تحديد مدة الاحتفاظ بسجلات التدقيق في مؤسستك. يمكنك الاحتفاظ بسجلات التدقيق لمدة تصل إلى 10 سنوات. يمكنك إنشاء نهج استنادا إلى المعايير التالية:
+يمكنك إنشاء نهج استبقاء سجل التدقيق وإدارتها في مدخل التوافق في Microsoft Purview. تعد نهج استبقاء سجل التدقيق جزءا من قدرات Microsoft Purview Audit الجديدة (Premium). يتيح لك نهج استبقاء سجل التدقيق تحديد مدة الاحتفاظ بسجلات التدقيق في مؤسستك. يمكنك الاحتفاظ بسجلات التدقيق لمدة تصل إلى 10 سنوات. يمكنك إنشاء نهج استنادا إلى المعايير التالية:
 
 - كافة الأنشطة في واحدة أو أكثر من خدمات Microsoft 365
-- أنشطة محددة (في خدمة Microsoft 365) يتم تنفيذها بواسطة جميع المستخدمين أو بواسطة مستخدمين محددين
+- أنشطة محددة (في خدمة Microsoft 365) يتم تنفيذها من قبل جميع المستخدمين أو بواسطة مستخدمين محددين
 - مستوى أولوية يحدد النهج الذي له الأسبقية في وجود نهج متعددة في مؤسستك
 
 ## <a name="default-audit-log-retention-policy"></a>نهج استبقاء سجل التدقيق الافتراضي
 
-يوفر التدقيق (Premium) في Microsoft 365 نهج استبقاء سجل التدقيق الافتراضي لكافة المؤسسات. يحتفظ هذا النهج بكافة سجلات تدقيق Exchange Online SharePoint Online و OneDrive for Business وAzure Active Directory لمدة عام واحد. يحتفظ هذا النهج الافتراضي بسجلات التدقيق التي تحتوي على قيمة **Exchange** **SharePoint** **OneDrive** **وAzureActiveDirectory لخاصية** **Workload** (وهي الخدمة التي حدث فيها النشاط). لا يمكن تعديل النهج الافتراضي. راجع المقطع ["مزيد من المعلومات](#more-information) " في هذه المقالة للحصول على قائمة بأنواع السجلات لكل حمل عمل مضمن في النهج الافتراضي.
+يوفر التدقيق (Premium) في Microsoft 365 نهج استبقاء سجل التدقيق الافتراضي لكافة المؤسسات. يحتفظ هذا النهج بكافة سجلات تدقيق Exchange Online وSharePoint Online OneDrive for Business وAzure Active Directory لمدة عام واحد. يحتفظ هذا النهج الافتراضي بسجلات التدقيق التي تحتوي على قيمة **Exchange** **وSharePoint** **وOneDrive** **وAzureActiveDirectory لخاصية** **حمل العمل** (وهي الخدمة التي حدث فيها النشاط). لا يمكن تعديل النهج الافتراضي. راجع المقطع ["مزيد من المعلومات](#more-information) " في هذه المقالة للحصول على قائمة بأنواع السجلات لكل حمل عمل مضمن في النهج الافتراضي.
 
 > [!NOTE]
 > ينطبق نهج استبقاء سجل التدقيق الافتراضي فقط على سجلات التدقيق للنشاط الذي يقوم به المستخدمون الذين تم تعيين ترخيص Office 365 أو Microsoft 365 E5 لهم أو لديهم ترخيص وظيفة إضافية التوافق في Microsoft 365 E5 أو E5 eDiscovery و Audit. إذا كان لديك مستخدمون غير E5 أو مستخدمين ضيوف في مؤسستك، يتم الاحتفاظ بسجلات التدقيق المقابلة لمدة 90 يوما.
@@ -49,7 +47,7 @@ ms.locfileid: "66012417"
 
 - للاحتفاظ بسجل تدقيق لمدة أطول من 90 يوما (وما يصل إلى سنة واحدة)، يجب تعيين ترخيص Office 365 E5 أو ترخيص Microsoft 365 E5 للمستخدم الذي يقوم بإنشاء سجل التدقيق (عن طريق تنفيذ نشاط مدقق) أو الحصول على ترخيص التوافق في Microsoft 365 E5 أو E5 eDiscovery ووظيفة التدقيق الإضافية. للاحتفاظ بسجلات التدقيق لمدة 10 سنوات، يجب أيضا تعيين ترخيص إضافي لاستبقاء سجل التدقيق لمدة 10 سنوات للمستخدم الذي ينشئ سجل التدقيق بالإضافة إلى ترخيص E5.
 
-- جميع نهج استبقاء سجل التدقيق المخصصة (التي تم إنشاؤها بواسطة مؤسستك) لها الأولوية على نهج الاستبقاء الافتراضي. على سبيل المثال، إذا قمت بإنشاء نهج استبقاء سجل تدقيق لنشاط علبة بريد Exchange التي لها فترة استبقاء أقصر من سنة واحدة، فسيتم الاحتفاظ بسجلات التدقيق لأنشطة علبة بريد Exchange لمدة أقصر يحددها النهج المخصص.
+- جميع نهج استبقاء سجل التدقيق المخصصة (التي تم إنشاؤها بواسطة مؤسستك) لها الأولوية على نهج الاستبقاء الافتراضي. على سبيل المثال، إذا قمت بإنشاء نهج استبقاء سجل التدقيق لنشاط علبة بريد Exchange التي لها فترة استبقاء أقصر من سنة واحدة، فسيتم الاحتفاظ بسجلات التدقيق لأنشطة علبة بريد Exchange لمدة أقصر يحددها النهج المخصص.
 
 ## <a name="create-an-audit-log-retention-policy"></a>إنشاء نهج استبقاء سجل التدقيق
 
@@ -102,7 +100,7 @@ ms.locfileid: "66012417"
 
 > [!IMPORTANT]
 >
-> إذا كنت تستخدم **New-UnifiedAuditLogRetentionPolicy** cmdlet، فمن الممكن إنشاء نهج استبقاء سجل التدقيق لأنواع السجلات أو الأنشطة غير المتوفرة في أداة **إنشاء نهج استبقاء التدقيق** في لوحة المعلومات. في هذه الحالة، لن تتمكن من تحرير النهج (على سبيل المثال، تغيير مدة الاستبقاء أو إضافة أنشطة وإزالتها) من لوحة معلومات **نهج استبقاء التدقيق** . ستتمكن فقط من عرض النهج وحذفه في مدخل توافق Microsoft Purview. لتحرير النهج، سيتعين عليك استخدام [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet في Security & Compliance PowerShell.>
+> إذا كنت تستخدم **New-UnifiedAuditLogRetentionPolicy** cmdlet، فمن الممكن إنشاء نهج استبقاء سجل التدقيق لأنواع السجلات أو الأنشطة غير المتوفرة في أداة **إنشاء نهج استبقاء التدقيق** في لوحة المعلومات. في هذه الحالة، لن تتمكن من تحرير النهج (على سبيل المثال، تغيير مدة الاستبقاء أو إضافة أنشطة وإزالتها) من لوحة معلومات **نهج استبقاء التدقيق** . ستتمكن فقط من عرض النهج وحذفه في مدخل التوافق في Microsoft Purview. لتحرير النهج، سيتعين عليك استخدام [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet في Security & Compliance PowerShell.>
 >
 > **تلميح:** يتم عرض رسالة في أعلى صفحة القائمة المنبثقة للنهج التي يجب تحريرها باستخدام PowerShell.
 
@@ -118,7 +116,7 @@ ms.locfileid: "66012417"
 
 اتبع هذه الخطوات لإنشاء نهج استبقاء سجل التدقيق في PowerShell:
 
-1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. قم بتشغيل الأمر التالي لإنشاء نهج استبقاء سجل التدقيق:
 
@@ -126,10 +124,10 @@ ms.locfileid: "66012417"
    New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TenYears -Priority 100
    ```
 
-   ينشئ هذا المثال نهج استبقاء سجل التدقيق المسمى "نهج التدقيق Microsoft Teams" باستخدام هذه الإعدادات:
+   ينشئ هذا المثال نهج استبقاء سجل التدقيق المسمى "نهج تدقيق Microsoft Teams" باستخدام هذه الإعدادات:
 
    - وصف النهج.
-   - الاحتفاظ بكافة أنشطة Microsoft Teams (كما تم تعريفها بواسطة معلمة *RecordType*).
+   - الاحتفاظ بكافة أنشطة Microsoft Teams (كما تم تعريفها بواسطة معلمة *RecordType* ).
    - يحتفظ بسجلات تدقيق Microsoft Teams لمدة 10 سنوات.
    - أولوية 100.
 
@@ -164,7 +162,7 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 ## <a name="more-information"></a>معلومات إضافية
 
-كما ذكر سابقا، يتم الاحتفاظ بسجلات التدقيق للعمليات في Azure Active Directory، Exchange Online، SharePoint Online، OneDrive for Business، لمدة عام واحد بشكل افتراضي. يسرد الجدول التالي كافة أنواع السجلات (لكل من هذه الخدمات) المضمنة في نهج استبقاء سجل التدقيق الافتراضي. وهذا يعني أنه يتم الاحتفاظ بسجلات التدقيق لأي عملية باستخدام نوع السجل هذا لمدة عام واحد ما لم يكن نهج استبقاء سجل التدقيق المخصص له الأسبقية لنوع سجل معين أو عملية أو مستخدم معين. يتم عرض قيمة قائمة التعداد (التي يتم عرضها كقيمة لخاصية RecordType في سجل تدقيق) لكل نوع سجل بين أقواس.
+كما ذكر سابقا، يتم الاحتفاظ بسجلات التدقيق للعمليات في Azure Active Directory، Exchange Online، وSharePoint Online، OneDrive for Business، لمدة عام واحد بشكل افتراضي. يسرد الجدول التالي كافة أنواع السجلات (لكل من هذه الخدمات) المضمنة في نهج استبقاء سجل التدقيق الافتراضي. وهذا يعني أنه يتم الاحتفاظ بسجلات التدقيق لأي عملية باستخدام نوع السجل هذا لمدة عام واحد ما لم يكن نهج استبقاء سجل التدقيق المخصص له الأسبقية لنوع سجل معين أو عملية أو مستخدم معين. يتم عرض قيمة قائمة التعداد (التي يتم عرضها كقيمة لخاصية RecordType في سجل تدقيق) لكل نوع سجل بين أقواس.
 
 <br>
 
@@ -174,7 +172,7 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 |---|---|---|
 |AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
 |AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|
-|AzureActiveDirectoryStsLogon (15)|حملة (62)|Project (35)|
+|AzureActiveDirectoryStsLogon (15)|حملة (62)|مشروع (35)|
 ||ComplianceDLPExchange (13)|SharePoint (4)|
 ||ComplianceSupervisionExchange (68)|SharePointCommentOperation (37)|
 ||CustomerKeyServiceEncryption (69)|SharePointContentTypeOperation (55)|

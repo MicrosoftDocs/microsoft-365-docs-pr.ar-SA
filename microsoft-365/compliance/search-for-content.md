@@ -10,19 +10,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-description: استخدم أداة البحث في المحتوى eDiscovery في مدخل توافق Microsoft Purview للعثور بسرعة على البريد الإلكتروني في علب بريد Exchange والمستندات في مواقع SharePoint ومواقع OneDrive ومحادثات المراسلة الفورية في Skype for Business.
-ms.openlocfilehash: cf5c6b61e9b4cc041d9f8e315321c63c78415a63
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: استخدم أداة eDiscovery للبحث في المحتوى في مدخل التوافق في Microsoft Purview للعثور بسرعة على البريد الإلكتروني في علب بريد Exchange والمستندات في مواقع SharePoint ومواقع OneDrive ومحادثات المراسلة الفورية في Skype for Business.
+ms.openlocfilehash: 42084e764ffaf93f59e0225194db331c2ac952db
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66009420"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637850"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>البحث عن المحتوى باستخدام أداة البحث عن المحتوى
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-استخدم أداة البحث عن المحتوى في مدخل توافق Microsoft Purview للعثور بسرعة على البريد الإلكتروني في علب بريد Exchange والمستندات في مواقع SharePoint ومواقع OneDrive ومحادثات المراسلة الفورية في Skype for Business. يمكنك استخدام أداة البحث عن المحتوى للبحث عن رسائل البريد الإلكتروني والمستندات ومحادثات المراسلة الفورية في أدوات التعاون مثل Microsoft Teams مجموعات Microsoft 365.
+استخدم أداة البحث عن المحتوى في مدخل التوافق في Microsoft Purview للعثور بسرعة على البريد الإلكتروني في علب بريد Exchange والمستندات في مواقع SharePoint ومواقع OneDrive ومحادثات المراسلة الفورية في Skype for Business. يمكنك استخدام أداة البحث عن المحتوى للبحث عن رسائل البريد الإلكتروني والمستندات ومحادثات المراسلة الفورية في أدوات التعاون مثل Microsoft Teams و مجموعات Microsoft 365.
   
 ## <a name="search-for-content"></a>البحث عن المحتوى
 
@@ -62,7 +60,7 @@ ms.locfileid: "66009420"
 
 - [نتائج البحث المقدرة والفعلية](differences-between-estimated-and-actual-ediscovery-search-results.md) وأسباب وجود اختلافات بينها عند تصدير نتائج البحث وتنزيلها
 
-- [العناصر المفهرسة جزئيا في Exchange SharePoint](partially-indexed-items-in-content-search.md) وكيفية تضمينها أو استبعادها عند تصدير نتائج البحث وتنزيلها
+- [العناصر المفهرسة جزئيا في Exchange وSharePoint](partially-indexed-items-in-content-search.md) وكيفية تضمينها أو استبعادها عند تصدير نتائج البحث وتنزيلها
 
 - [التحقيق في العناصر المفهرسة جزئيا](investigating-partially-indexed-items-in-ediscovery.md) وتحديد تعرض مؤسستك لها
 

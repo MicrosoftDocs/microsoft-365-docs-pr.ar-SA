@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: قم بتجزئة جدول مصدر المعلومات الحساسة وتحميله لتطابق البيانات الدقيقة مع أنواع المعلومات الحساسة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3c45c618caad24084ee9c85410be886863dd733
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: dd484f10cf8dad76132ed2a68a34f87b253e76b3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437624"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641285"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>تجزئة وتحميل جدول مصدر المعلومات الحساسة للحصول على بيانات مطابقة تماماً لأنواع المعلومات الحساسة
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 توضح لك هذه المقالة كيفية تجزئة جدول مصدر المعلومات الحساسة وتحميله.
 
@@ -35,8 +33,8 @@ ms.locfileid: "65437624"
 في هذه المرحلة:
 
 1. إعداد مجموعة أمان مخصصة وحساب مستخدم
-2. إعداد أداة عامل Upload EDM
-3. استخدم أداة عامل Upload EDM لتجزئة جدول مصدر المعلومات الحساسة، مع قيمة ملحية، وتحميله.
+2. إعداد أداة عامل تحميل EDM
+3. استخدم أداة عامل تحميل EDM لتجزئة جدول مصدر المعلومات الحساسة، مع قيمة ملحية، وتحميله.
 
 يمكن إجراء التجزئة والتحميل باستخدام كمبيوتر واحد أو يمكنك فصل خطوة التجزئة عن خطوة التحميل لمزيد من الأمان.
 
@@ -48,7 +46,7 @@ ms.locfileid: "65437624"
 > إذا استخدمت مخطط مطابقة البيانات الدقيقة ومعالج نوع المعلومات الحساسة لإنشاء ملف المخطط، ***فيجب*** تنزيل المخطط لهذا الإجراء إذا لم تكن قد قمت بذلك بالفعل. انظر، [تصدير ملف مخطط EDM بتنسيق XML](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format).
 
 > [!NOTE]
-> إذا قامت مؤسستك بإعداد [مفتاح العميل Microsoft 365 على مستوى المستأجر](customer-key-overview.md)، فستستفيد مطابقة البيانات الدقيقة من وظائف التشفير الخاصة بها تلقائيا. يتوفر هذا فقط للمستأجرين المرخصين E5 في السحابة التجارية.
+> إذا قامت مؤسستك بإعداد [Customer Key ل Microsoft 365 على مستوى المستأجر](customer-key-overview.md)، فستستفيد مطابقة البيانات الدقيقة من وظائف التشفير الخاصة بها تلقائيا. يتوفر هذا فقط للمستأجرين المرخصين E5 في السحابة التجارية.
 
 ### <a name="best-practices"></a>أفضل الممارسات
 
@@ -75,26 +73,26 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 
 ### <a name="prerequisites"></a>المتطلبات الأساسية
 
-- حساب العمل أو المؤسسة التعليمية Microsoft 365 التي ستتم إضافتها إلى مجموعة أمان **EDMDataUploaders\_**
+- حساب العمل أو المؤسسة التعليمية ل Microsoft 365 الذي ستتم إضافته إلى مجموعة أمان **EDM\_DataUploaders**
 - جهاز Windows 10 أو Windows Server 2016 مع الإصدار 4.6.2 من .NET <!--4.7.2 un comment this around 9/29-->لتشغيل EDMUploadAgent
 - دليل على جهاز التحميل الخاص بك ل:
-  - [وكيل Upload EDM](#links-to-edm-upload-agent-by-subscription-type)
+  - [عامل تحميل EDM](#links-to-edm-upload-agent-by-subscription-type)
   - ملف العنصر الحساس بتنسيق .csv أو .tsv أو توجيه (|)، **PatientRecords.csv** في الأمثلة
   - ملفات تجزئة الإخراج والملح التي تم إنشاؤها في هذا الإجراء
   - اسم مخزن البيانات من ملف **edm.xml** ، على سبيل المثال `PatientRecords`
 
 #### <a name="set-up-the-security-group-and-user-account"></a>إعداد مجموعة الأمان وحساب المستخدم
 
-1. كمسؤول عام، انتقل إلى مركز الإدارة باستخدام [الارتباط المناسب لاشتراكك](sit-get-started-exact-data-match-based-sits-overview.md#portal-links-for-your-subscription) [وأنشئ مجموعة أمان](/office365/admin/email/create-edit-or-delete-a-security-group) تسمى **EDMDataUploaders\_**.
+1. كمسؤول عام، انتقل إلى مركز الإدارة باستخدام [الارتباط المناسب لاشتراكك](sit-get-started-exact-data-match-based-sits-overview.md#portal-links-for-your-subscription) [وأنشئ مجموعة أمان](/office365/admin/email/create-edit-or-delete-a-security-group) تسمى **EDM\_DataUploaders**.
 
-2. إضافة مستخدم واحد أو أكثر إلى مجموعة أمان **EDMDataUploaders\_**. (سيقوم هؤلاء المستخدمون بإدارة قاعدة بيانات المعلومات الحساسة.)
+2. إضافة مستخدم واحد أو أكثر إلى مجموعة أمان **EDM\_DataUploaders** . (سيقوم هؤلاء المستخدمون بإدارة قاعدة بيانات المعلومات الحساسة.)
 
 ### <a name="hash-and-upload-from-one-computer"></a>التجزئة والتحميل من كمبيوتر واحد
 
 يجب أن يكون لهذا الكمبيوتر حق الوصول المباشر إلى مستأجر Microsoft 365.
 
 > [!NOTE]
-> قبل بدء هذا الإجراء، تأكد من أنك عضو في مجموعة أمان **EDMDataUploaders\_**.
+> قبل بدء هذا الإجراء، تأكد من أنك عضو في مجموعة أمان **EDM\_DataUploaders** .
 
 > [!TIP]
 >بشكل اختياري، يمكنك تشغيل التحقق من الصحة مقابل ملف جدول مصدر المعلومات الحساسة للتحقق من وجود أخطاء قبل التحميل عن طريق التشغيل:
@@ -107,27 +105,27 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 
 #### <a name="links-to-edm-upload-agent-by-subscription-type"></a>ارتباطات إلى عامل تحميل EDM حسب نوع الاشتراك
 
-- [تجاري + سحابة القطاع الحكومي](https://go.microsoft.com/fwlink/?linkid=2088639) - يجب على معظم العملاء التجاريين استخدام هذا
-- [سحابة القطاع الحكومي-High](https://go.microsoft.com/fwlink/?linkid=2137521) - هذا مخصص لمشتركي السحابة الحكومية ذات الأمان العالي
+- [التجاري + GCC](https://go.microsoft.com/fwlink/?linkid=2088639) - يجب على معظم العملاء التجاريين استخدام هذا
+- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521) - هذا مخصص لمشتركي السحابة الحكومية ذات الأمان العالي
 - [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) - هذا مخصص لعملاء السحابة في وزارة الدفاع الأمريكية
 
 1. إنشاء دليل عمل ل EDMUploadAgent. على سبيل المثال، **C:\EDM\Data**. ضع ملف **PatientRecords.csv** هناك.
 
-2. قم بتنزيل وتثبيت [عامل Upload EDM](#links-to-edm-upload-agent-by-subscription-type) المناسب لاشتراكك في الدليل الذي أنشأته في الخطوة 1.
+2. قم بتنزيل وتثبيت [عامل تحميل EDM](#links-to-edm-upload-agent-by-subscription-type) المناسب لاشتراكك في الدليل الذي أنشأته في الخطوة 1.
 
    > [!NOTE]
    > تم تحديث EDMUploadAgent في الارتباطات أعلاه لإضافة قيمة ملح تلقائيا إلى البيانات المتجزئة. بدلا من ذلك، يمكنك توفير قيمة الملح الخاصة بك. بمجرد استخدام هذا الإصدار، لن تتمكن من استخدام الإصدار السابق من EDMUploadAgent.
    >
    > يمكنك تحميل البيانات باستخدام EDMUploadAgent إلى أي مخزن بيانات معين مرتين فقط في اليوم.
 
-3. قم بتخويل عامل Upload EDM، وافتح نافذة موجه الأوامر كمسؤول، وقم بالتبديل إلى دليل **C:\EDM\Data** ثم قم بتشغيل الأمر التالي:
+3. قم بتخويل عامل تحميل EDM، وافتح نافذة موجه الأوامر كمسؤول، وقم بالتبديل إلى دليل **C:\EDM\Data** ثم قم بتشغيل الأمر التالي:
 
    `EdmUploadAgent.exe /Authorize`
 
    > [!IMPORTANT]
    > يجب تشغيل **EdmUploadAgent** من المجلد حيث تم تثبيته، والإشارة إلى المسار الكامل لملفات البيانات.
 
-4. سجل الدخول باستخدام حساب العمل أو المؤسسة التعليمية Microsoft 365 التي تمت إضافتها إلى مجموعة أمان EDM_DataUploaders. يتم استخراج معلومات المستأجر من حساب المستخدم لإجراء الاتصال.
+4. سجل الدخول باستخدام حساب العمل أو المؤسسة التعليمية ل Microsoft 365 الذي تمت إضافته إلى مجموعة أمان EDM_DataUploaders. يتم استخراج معلومات المستأجر من حساب المستخدم لإجراء الاتصال.
 
    اختياري: إذا استخدمت مخطط مطابقة البيانات الدقيقة ومعالج نوع المعلومات الحساسة لإنشاء المخطط، ***فيجب*** تنزيله لاستخدامه في هذه الإجراءات إذا لم تكن قد قمت بذلك بالفعل. تشغيل هذا الأمر في نافذة موجه الأوامر:
 
@@ -195,7 +193,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 2. انسخ هذه الملفات بطريقة آمنة إلى الكمبيوتر الذي ستستخدمه لتحميل ملف جدول مصدر المعلومات الحساسة (PatientRecords) إلى المستأجر.
 
-3. قم بتخويل عامل Upload EDM، وافتح نافذة موجه الأوامر كمسؤول، وقم بالتبديل إلى دليل **C:\EDM\Data** ثم قم بتشغيل الأمر التالي:
+3. قم بتخويل عامل تحميل EDM، وافتح نافذة موجه الأوامر كمسؤول، وقم بالتبديل إلى دليل **C:\EDM\Data** ثم قم بتشغيل الأمر التالي:
 
    ```dos
    EdmUploadAgent.exe /Authorize
@@ -204,9 +202,9 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    > [!IMPORTANT]
    > يجب تشغيل **EdmUploadAgent** من المجلد حيث تم تثبيته، والإشارة إلى المسار الكامل لملفات البيانات.
 
-4. سجل الدخول باستخدام حساب العمل أو المؤسسة التعليمية Microsoft 365 التي تمت إضافتها إلى مجموعة أمان EDM_DataUploaders. يتم استخراج معلومات المستأجر من حساب المستخدم لإجراء الاتصال.
+4. سجل الدخول باستخدام حساب العمل أو المؤسسة التعليمية ل Microsoft 365 الذي تمت إضافته إلى مجموعة أمان EDM_DataUploaders. يتم استخراج معلومات المستأجر من حساب المستخدم لإجراء الاتصال.
 
-5. لتحميل البيانات المتجزئة، قم بتشغيل الأمر التالي في موجه الأوامر Windows:
+5. لتحميل البيانات المتجزئة، قم بتشغيل الأمر التالي في موجه الأوامر في Windows:
 
    ```dos
    EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\ /ColumnSeparator ["{Tab}"|"|"]

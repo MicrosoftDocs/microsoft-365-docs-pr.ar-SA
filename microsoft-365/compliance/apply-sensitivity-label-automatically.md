@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: عند إنشاء وصف حساسية، يمكنك تعيين تسمية تلقائيا للملفات ورسائل البريد الإلكتروني، أو يمكنك مطالبة المستخدمين بتحديد التسمية التي توصي بها.
-ms.openlocfilehash: 79c0ac8873ba23604f394340bb030c1412a6212a
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 48affe223db5f2c1a63246b7d4ff473188cabd63
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574233"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640909"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>تطبيق تسمية حساسية على المحتوى تلقائياً
 
 >*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > للحصول على معلومات حول تطبيق وصف الحساسية تلقائيا في خريطة البيانات، راجع [الوصف في Microsoft Purview Data Map](/azure/purview/create-sensitivity-label).

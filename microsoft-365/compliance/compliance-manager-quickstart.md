@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم دليل التشغيل السريع ل Compliance Manager لمساعدتك في رحلة الفهم والإعداد واستخدام Compliance Manager.
-ms.openlocfilehash: a4699e48c76aa041e0bc8ef3e35308ffb5f0e79c
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 99031b0d93fef74f788f9a42b906dffc58545014
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554170"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638697"
 ---
 # <a name="compliance-manager-quickstart"></a>العمل السريع لـ "إدارة التوافق"
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **في هذه المقالة:** استخدم دليل التشغيل السريع هذا لمساعدتك خلال رحلتك في استخدام Microsoft Purview Compliance Manager لإدارة امتثال مؤسستك للوائح والسياسات والمعايير.
 

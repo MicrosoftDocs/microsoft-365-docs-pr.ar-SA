@@ -19,18 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: استخدم تقارير DLP في Office 365 لعرض عدد تطابقات نهج DLP أو تجاوزها أو الإيجابيات الخاطئة ومعرفة ما إذا كانت تتجه لأعلى أو لأسفل مع مرور الوقت.
-ms.openlocfilehash: b264a0e0b76397be99d7586ac793dac501b6672e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 6f60aefaa1548e3c3aed2ca1643de42f412cf5cf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011599"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641087"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>عرض التقارير لمنع فقدان البيانات
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-بعد إنشاء نهج منع فقدان بيانات Microsoft Purview (DLP)، ستحتاج إلى التحقق من أنها تعمل كما تريد وتساعدك على البقاء متوافقا. باستخدام تقارير DLP في مدخل توافق Microsoft Purview، يمكنك عرض:
+بعد إنشاء نهج منع فقدان بيانات Microsoft Purview (DLP)، ستحتاج إلى التحقق من أنها تعمل كما تريد وتساعدك على البقاء متوافقا. باستخدام تقارير DLP في مدخل التوافق في Microsoft Purview، يمكنك عرض بسرعة:
 
 - **تطابقات نهج DLP** يعرض هذا التقرير عدد تطابقات نهج DLP بمرور الوقت. يمكنك تصفية التقرير حسب التاريخ أو الموقع أو النهج أو الإجراء. يمكنك استخدام هذا التقرير من أجل:
 
@@ -62,7 +60,7 @@ ms.locfileid: "66011599"
 
 يمكن أن تعرض جميع تقارير DLP بيانات من آخر فترة زمنية مدتها أربعة أشهر. قد تستغرق أحدث البيانات ما يصل إلى 24 ساعة لتظهر في التقارير.
 
-يمكنك العثور على هذه التقارير في **لوحة معلومات** **تقارير مدخل** \> \> الامتثال ل Microsoft Purview.
+يمكنك العثور على هذه التقارير في **لوحة معلومات** **تقارير** \> مدخل التوافق في Microsoft Purview\>.
 
 ![يتطابق نهج DLP مع التقرير.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
 
@@ -86,13 +84,13 @@ ms.locfileid: "66011599"
 
 - **دور View-only DLP Compliance Management** في Security & Compliance Center. بشكل افتراضي، يتم تعيين هذا الدور إلى مجموعات أدوار مسؤول التوافق وإدارة المؤسسة ومسؤول الأمان وقارئ الأمان في مركز التوافق & الأمان.
 
-- **دور المستلمين للعرض فقط** في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>. بشكل افتراضي، يتم تعيين هذا الدور إلى مجموعات دور إدارة التوافق وإدارة المؤسسة View-Only في مركز إدارة Exchange.
+- **دور المستلمين للعرض فقط** في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>. بشكل افتراضي، يتم تعيين هذا الدور إلى مجموعات أدوار إدارة التوافق وإدارة المؤسسة View-Only في مركز إدارة Exchange.
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>البحث عن cmdlets لتقارير DLP
 
 لاستخدام أوامر cmdlets الخاصة بتقارير DLP، نفذ الخطوات التالية:
 
-1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
+1. [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. استخدم أوامر cmdlets التالية:
 
@@ -100,9 +98,9 @@ ms.locfileid: "66011599"
    - [Get-DlpDetectionsReport](/powershell/module/exchange/get-dlpdetectionsreport)
    - [Get-DlpSiDetectionsReport](/powershell/module/exchange/get-dlpsidetectionsreport)
 
-ومع ذلك، تحتاج تقارير DLP إلى سحب البيانات من جميع Microsoft 365، بما في ذلك Exchange Online. لهذا السبب، تتوفر أوامر cmdlets التالية لتقارير DLP في Exchange Online Powershell. لاستخدام cmdlets لتقارير DLP هذه، نفذ الخطوات التالية:
+ومع ذلك، تحتاج تقارير DLP إلى سحب البيانات من خلال Microsoft 365، بما في ذلك Exchange Online. لهذا السبب، تتوفر أوامر cmdlets التالية لتقارير DLP في Exchange Online Powershell. لاستخدام cmdlets لتقارير DLP هذه، نفذ الخطوات التالية:
 
-1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. استخدم أوامر cmdlets التالية:
 

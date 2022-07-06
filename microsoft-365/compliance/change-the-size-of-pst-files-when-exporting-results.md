@@ -15,21 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: يمكنك تغيير الحجم الافتراضي لملفات PST التي يتم تنزيلها إلى الكمبيوتر عند تصدير نتائج بحث eDiscovery.
-ms.openlocfilehash: 135c83f734e0687c8d477ab434d0aa539224f39a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e2387f403854561c9906f252ad39be740c62ae19
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100820"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638775"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>تغيير حجم ملفات PST عند تصدير نتائج بحث eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-عند استخدام أداة eDiscovery Export لتصدير نتائج البريد الإلكتروني للبحث في eDiscovery من أدوات Microsoft eDiscovery المختلفة، يكون الحجم الافتراضي لملف PST الذي يمكن تصديره 10 غيغابايت. إذا كنت تريد تغيير هذا الحجم الافتراضي، يمكنك تحرير سجل Windows على الكمبيوتر الذي تستخدمه لتصدير نتائج البحث. أحد أسباب القيام بذلك هو أن ملف PST يمكن احتوائه على الوسائط القابلة للإزالة، مثل قرص DVD أو قرص مضغوط أو محرك أقراص USB. 
+عند استخدام أداة eDiscovery Export لتصدير نتائج البريد الإلكتروني للبحث في eDiscovery من أدوات Microsoft eDiscovery المختلفة، يكون الحجم الافتراضي لملف PST الذي يمكن تصديره 10 غيغابايت. إذا كنت تريد تغيير هذا الحجم الافتراضي، يمكنك تحرير "سجل Windows" على الكمبيوتر الذي تستخدمه لتصدير نتائج البحث. أحد أسباب القيام بذلك هو أن ملف PST يمكن احتوائه على الوسائط القابلة للإزالة، مثل قرص DVD أو قرص مضغوط أو محرك أقراص USB. 
   
 > [!NOTE]
-> يتم استخدام أداة eDiscovery Export لتصدير نتائج البحث عند استخدام أداة البحث في المحتوى في مدخل توافق Microsoft Purview.
+> يتم استخدام أداة تصدير eDiscovery لتصدير نتائج البحث عند استخدام أداة البحث في المحتوى في مدخل التوافق في Microsoft Purview.
   
 ## <a name="create-a-registry-setting-to-change-the-size-of-pst-files-when-you-export-ediscovery-search-results"></a>إنشاء إعداد تسجيل لتغيير حجم ملفات PST عند تصدير نتائج بحث eDiscovery
 
@@ -56,7 +54,7 @@ ms.locfileid: "65100820"
    
 3. `PstSizeLimitInBytes` قم بتغيير القيمة إلى الحجم الأقصى المطلوب لملف PST عند تصدير نتائج البحث، ثم احفظ الملف. 
     
-4. في Windows Explorer، انقر فوق ملف .reg الذي أنشأته في الخطوات السابقة أو انقر نقرا مزدوجا فوقه.
+4. في مستكشف Windows، انقر فوق ملف .reg الذي أنشأته في الخطوات السابقة أو انقر نقرا مزدوجا فوقه.
     
 5. في نافذة التحكم في وصول المستخدم، انقر فوق **"نعم** " للسماح لمحرر التسجيل بإجراء التغيير. 
     

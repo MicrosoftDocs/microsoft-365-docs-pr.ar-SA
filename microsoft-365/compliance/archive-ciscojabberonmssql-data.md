@@ -11,19 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: يمكن للمسؤولين إعداد موصل لاستيراد بيانات Cisco Jabber وأرشفتها على MS SQL من Veritas في Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات الجهات الخارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
-ms.openlocfilehash: 8df9c0b0ec7f69a45578ac91d14315730059d864
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: يمكن للمسؤولين إعداد موصل لاستيراد وأرشفة Cisco Jabber على بيانات MS SQL من Veritas في Microsoft 365. يتيح لك هذا الموصل أرشفة البيانات من مصادر بيانات تابعة لجهة خارجية في Microsoft 365. بعد أرشفتك لهذه البيانات، يمكنك استخدام ميزات التوافق مثل الاحتجاز القانوني والبحث في المحتوى ونهج الاستبقاء لإدارة بيانات الجهات الخارجية.
+ms.openlocfilehash: 39a41ab4d89023c263cea43c2ac89a9b174f3235
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320207"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636870"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-on-ms-sql-data"></a>إعداد موصل أرشفة Cisco Jabber على بيانات MS SQL
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-استخدم موصل Veritas في مدخل التوافق في Microsoft Purview لاستيراد البيانات وأرشفتها من النظام الأساسي Cisco Jabber إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يوفر لك Veritas موصل [Cisco Jabber](https://globanet.com/jabber/) الذي تم تكوينه لالتقاط العناصر من قاعدة بيانات MS SQL في Jabber، مثل رسائل الدردشة 1:1 والدردشات الجماعية ثم استيراد هذه العناصر إلى Microsoft 365. يسترد الموصل البيانات من قاعدة بيانات MS SQL ل Cisco Jabber، ويعالجها، ويحول المحتوى من حساب Cisco Jabber الخاص بالمستخدم إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
+استخدم موصل Veritas في مدخل التوافق في Microsoft Purview لاستيراد البيانات وأرشفتها من النظام الأساسي Cisco Jabber إلى علب بريد المستخدمين في مؤسسة Microsoft 365. يوفر لك Veritas موصل [Cisco Jabber](https://globanet.com/jabber/) الذي تم تكوينه لالتقاط العناصر من قاعدة بيانات MS SQL في Jabber، مثل رسائل الدردشة 1:1 والدردشات الجماعية ثم استيراد هذه العناصر إلى Microsoft 365. يسترد الموصل البيانات من قاعدة بيانات MS SQL الخاصة ب Cisco Jabber، ويعالجها، ويحول المحتوى من حساب Cisco Jabber الخاص بالمستخدم إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علبة بريد المستخدم في Microsoft 365.
 
 بعد تخزين بيانات Cisco Jabber في علب بريد المستخدمين، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي وeDiscovery ونهج الاستبقاء وتسميات الاستبقاء وتوافق الاتصالات. يمكن أن يساعد استخدام موصل Cisco Jabber لاستيراد البيانات وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
 
@@ -33,9 +31,9 @@ ms.locfileid: "65320207"
 
 ![أرشفة سير العمل لبيانات Cisco Jabber.](../media/CiscoJabberonMSSQLConnectorWorkflow.png)
 
-1. تعمل مؤسستك مع Cisco لإعداد وتكوين Cisco Jabber على MS SQL Database.
+1. تعمل مؤسستك مع Cisco لإعداد وتكوين Cisco Jabber على قاعدة بيانات MS SQL.
 
-2. مرة واحدة كل 24 ساعة، يتم نسخ عناصر Cisco Jabber من MS SQL Database إلى موقع Veritas Merge1. يحول الموصل أيضا محتوى رسائل الدردشة إلى تنسيق رسالة بريد إلكتروني.
+2. مرة واحدة كل 24 ساعة، يتم نسخ عناصر Cisco Jabber من قاعدة بيانات MS SQL إلى موقع Veritas Merge1. يحول الموصل أيضا محتوى رسائل الدردشة إلى تنسيق رسالة بريد إلكتروني.
 
 3. يتصل موصل Cisco Jabber الذي تقوم بإنشائه في مدخل التوافق بموقع Veritas Merge1 كل يوم وينقل العناصر إلى موقع تخزين Azure آمن في سحابة Microsoft.
 
@@ -47,17 +45,17 @@ ms.locfileid: "65320207"
 
 - قم بإعداد قاعدة بيانات MS SQL لاسترداد عناصر Jabber قبل إنشاء الموصل في الخطوة 1. ستحدد إعدادات الاتصال لقاعدة بيانات MS SQL عند تكوين موصل Cisco Jabber في الخطوة 2. لمزيد من المعلومات، راجع [دليل مستخدم موصلات الدمج1 لجهة خارجية](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf).
 
-- يجب تعيين دور مسؤول موصل البيانات للمستخدم الذي يقوم بإنشاء موصل Cisco Jabber في الخطوة 1 (وإكماله في الخطوة 3). هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل التوافق. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور مسؤول موصل البيانات، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع المقطع "إنشاء مجموعة أدوار مخصصة" في ["الأذونات" في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- يجب تعيين دور مسؤول موصل البيانات للمستخدم الذي يقوم بإنشاء موصل Cisco Jabber في الخطوة 1 (وإكماله في الخطوة 3). هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل التوافق. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور موصل البيانات مسؤول، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع المقطع "إنشاء مجموعة أدوار مخصصة" في ["الأذونات" في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- موصل بيانات Veritas هذا في المعاينة العامة في بيئات سحابة القطاع الحكومي في Microsoft 365 سحابة حكومة الولايات المتحدة. قد تتضمن تطبيقات وخدمات الجهات الخارجية تخزين بيانات العملاء الخاصة بمؤسستك وإرسالها ومعالجتها على أنظمة تابعة لجهات خارجية خارج البنية الأساسية Microsoft 365 وبالتالي لا تغطيها التزامات Microsoft Purview وحماية البيانات. لا تقدم Microsoft أي تمثيل يشير إلى أن استخدام هذا المنتج للاتصال بتطبيقات الجهات الخارجية يعني أن تطبيقات الجهات الخارجية هذه متوافقة مع FEDRAMP.
+- موصل بيانات Veritas هذا في المعاينة العامة في بيئات GCC في سحابة Microsoft 365 US Government. قد تتضمن تطبيقات وخدمات الجهات الخارجية تخزين بيانات العملاء في مؤسستك وإرسالها ومعالجتها على أنظمة تابعة لجهات خارجية خارج البنية الأساسية ل Microsoft 365 وبالتالي لا تغطيها التزامات Microsoft Purview وحماية البيانات. لا تقدم Microsoft أي تمثيل يشير إلى أن استخدام هذا المنتج للاتصال بتطبيقات الجهات الخارجية يعني أن تطبيقات الجهات الخارجية هذه متوافقة مع FEDRAMP.
 
-## <a name="step-1-set-up-the-cisco-jabber-on-ms-sql-connector"></a>الخطوة 1: إعداد موصل Cisco Jabber على MS SQL
+## <a name="step-1-set-up-the-cisco-jabber-on-ms-sql-connector"></a>الخطوة 1: إعداد Cisco Jabber على موصل MS SQL
 
 الخطوة الأولى هي الوصول إلى **موصلات البيانات** في مدخل التوافق وإنشاء موصل ل Cisco Jabber على بيانات MS SQL.
 
-1. انتقل إلى [https://compliance.microsoft.com](https://compliance.microsoft.com/)**Data connectorsCisco** >  Jabber ثم انقر فوقه **على MS SQL**.
+1. انتقل إلى [https://compliance.microsoft.com](https://compliance.microsoft.com/)**موصلات البيانات** Cisco Jabber ثم انقر فوقها  > **على MS SQL**.
 
-2. في صفحة **وصف منتج Cisco Jabber على MS SQL**، انقر فوق **"إضافة موصل**".
+2. في **Cisco Jabber على صفحة وصف منتج MS SQL** ، انقر فوق **"إضافة موصل**".
 
 3. في صفحة **"شروط الخدمة** "، انقر فوق **"قبول**".
 
@@ -65,9 +63,9 @@ ms.locfileid: "65320207"
 
 5. سجل الدخول إلى حساب Merge1 لتكوين الموصل.
 
-## <a name="step-2-configure-the-cisco-jabber-on-ms-sql-connector-on-the-veritas-merge1-site"></a>الخطوة 2: تكوين موصل Cisco Jabber على MS SQL على موقع Veritas Merge1
+## <a name="step-2-configure-the-cisco-jabber-on-ms-sql-connector-on-the-veritas-merge1-site"></a>الخطوة 2: تكوين Cisco Jabber على موصل MS SQL على موقع Veritas Merge1
 
-الخطوة الثانية هي تكوين Cisco Jabber على موصل MS SQL على موقع Veritas Merge1. للحصول على معلومات حول كيفية تكوين Cisco Jabber على موصل MS SQL، راجع [دليل مستخدم Merge1 Third-party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf).
+الخطوة الثانية هي تكوين Cisco Jabber على موصل MS SQL على موقع Veritas Merge1. للحصول على معلومات حول كيفية تكوين Cisco Jabber على موصل MS SQL، راجع [Merge1 دليل مستخدم موصلات الجهات الخارجية](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf).
 
 بعد النقر فوق **"حفظ & إنهاء**"، يتم عرض صفحة **تعيين المستخدم** في معالج الموصل في مدخل التوافق.
 
@@ -75,7 +73,7 @@ ms.locfileid: "65320207"
 
 لتعيين المستخدمين وإكمال إعداد الموصل في مدخل التوافق، اتبع الخطوات التالية:
 
-1. في **Map Cisco Jabber على MS SQL المستخدمين Microsoft 365 صفحة المستخدمين**، قم بتمكين تعيين المستخدم تلقائيا. تتضمن عناصر Cisco Jabber على MS SQL خاصية تسمى *"البريد الإلكتروني*"، والتي تحتوي على عناوين بريد إلكتروني للمستخدمين في مؤسستك. إذا كان بإمكان الموصل إقران هذا العنوان بمستخدم Microsoft 365، يتم استيراد العناصر إلى علبة بريد هذا المستخدم.
+1. في صفحة **Map Cisco Jabber على مستخدمي MS SQL إلى مستخدمي Microsoft 365** ، قم بتمكين تعيين المستخدم تلقائيا. تتضمن عناصر Cisco Jabber على MS SQL خاصية تسمى *"البريد الإلكتروني*"، والتي تحتوي على عناوين بريد إلكتروني للمستخدمين في مؤسستك. إذا كان بإمكان الموصل إقران هذا العنوان بمستخدم Microsoft 365، يتم استيراد العناصر إلى علبة بريد هذا المستخدم.
 
 2. انقر فوق **"التالي**"، وراجع الإعدادات، وانتقل إلى صفحة **"موصلات البيانات** " للاطلاع على تقدم عملية الاستيراد للموصل الجديد.
 
@@ -85,7 +83,7 @@ ms.locfileid: "65320207"
 
 1. انتقل إلى [https://compliance.microsoft.com](https://compliance.microsoft.com) **موصلات البيانات وانقر فوقها** في جزء التنقل الأيمن.
 
-2. انقر فوق علامة التبويب **Connectors** ثم حدد **موصل Cisco Jabber على MS SQL** لعرض صفحة القائمة المنبثقة. تحتوي هذه الصفحة على الخصائص والمعلومات حول الموصل.
+2. انقر فوق علامة التبويب **Connectors** ثم حدد **Cisco Jabber على موصل MS SQL** لعرض صفحة القائمة المنبثقة. تحتوي هذه الصفحة على الخصائص والمعلومات حول الموصل.
 
 3. ضمن **حالة الموصل مع المصدر**، انقر فوق ارتباط **سجل التنزيل** لفتح (أو حفظ) سجل الحالة للموصل. يحتوي هذا السجل على معلومات حول البيانات التي تم استيرادها إلى سحابة Microsoft. لمزيد من المعلومات، راجع [عرض سجلات المسؤول لموصلات البيانات](data-connector-admin-logs.md).
 

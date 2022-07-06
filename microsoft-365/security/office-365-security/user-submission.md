@@ -18,12 +18,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية تكوين علبة بريد لجمع البريد الإلكتروني العشوائي والتصيد الاحتيالي الذي يتم الإبلاغ عنه من قبل المستخدمين.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a4a46225b911c3272baa66772a0cf9ab63f1a1da
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: c4faa6ce80a885ecea864cc2fa51be29553c4a3d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607576"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636414"
 ---
 # <a name="user-reported-message-settings"></a>إعدادات الرسائل التي أبلغ عنها المستخدم
 
@@ -51,9 +51,9 @@ ms.locfileid: "66607576"
 
 - [حدد علبة البريد المخصصة كعلبة بريد SecOps](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
-- [إنشاء نهج مكافحة البرامج الضارة](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) لعل بريد مخصص حيث
-  - تم إيقاف تشغيل الإزالة التلقائية بدون ساعة (ZAP) للبرامج الضارة (لم يتم تحديد قسم **إعدادات الحماية** > **تمكين الإزالة التلقائية بدون ساعة للبرامج الضارة** ).
-  - تم إيقاف تشغيل خيار تصفية المرفقات الشائع (لم يتم تحديد قسم **إعدادات الحماية** > **تمكين عامل تصفية المرفقات الشائع** ).
+- [إنشاء نهج مكافحة البرامج الضارة](configure-anti-malware-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-malware-policies) لعل بريد مخصص مع الإعدادات التالية:
+  - تم إيقاف تشغيل الإزالة التلقائية بدون ساعة (ZAP) للبرامج الضارة (لم يتم تحديد قسم \>**إعدادات الحماية** **تمكين الإزالة التلقائية بدون ساعة للبرامج الضارة**).
+  - تم إيقاف تشغيل خيار عامل تصفية **المرفقات** الشائع (لم يتم تحديد المقطع **"تمكين عامل تصفية المرفقات الشائعة**" في قسم \> إعدادات الحماية).
 
 إذا كان لديك Microsoft Defender لـ Office 365، يجب أيضا تكوين الإعدادات التالية حتى لا تؤثر التصفية المتقدمة على الرسائل التي تم الإبلاغ عنها:
 

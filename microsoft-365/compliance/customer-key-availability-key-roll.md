@@ -11,27 +11,25 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: تعرف على كيفية لف مفاتيح جذر العميل المخزنة في azure Key Vault المستخدمة مع مفتاح العميل. تتضمن الخدمات ملفات Exchange Online Skype for Business SharePoint Online و OneDrive for Business و Teams.
-ms.openlocfilehash: f34e79ee772df1a88058625c0b2df5f62413bcfd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: تعرف على كيفية لف مفاتيح جذر العميل المخزنة في azure Key Vault المستخدمة مع مفتاح العميل. تتضمن الخدمات ملفات Exchange Online Skype for Business وSharePoint Online OneDrive for Business وTeams.
+ms.openlocfilehash: 474df9b4776df09b4a46ca002f506155606bdb52
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017323"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636480"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>لف مفتاح عميل أو مفتاح توفر أو تدويره
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!CAUTION]
 > قم فقط بلف مفتاح التشفير الذي تستخدمه مع Customer Key عندما تفرض متطلبات الأمان أو التوافق الخاصة بك أنه يجب عليك إظهار المفتاح. بالإضافة إلى ذلك، لا تحذف أي مفاتيح مقترنة أو مقترنة بنهج. عند لف المفاتيح، سيكون هناك محتوى مشفر بالمفاتيح السابقة. على سبيل المثال، على الرغم من إعادة تشفير علب البريد النشطة بشكل متكرر، قد تظل علب البريد غير النشطة وغير المتصلة والمعطلة مشفرة باستخدام المفاتيح السابقة. يقوم SharePoint Online بإجراء نسخة احتياطية من المحتوى لأغراض الاستعادة والاسترداد، لذلك قد لا يزال هناك محتوى مؤرشف باستخدام المفاتيح القديمة.
 
 ## <a name="about-rolling-the-availability-key"></a>حول طرح مفتاح التوفر
 
-لا تعرض Microsoft التحكم المباشر لمفتاح التوفر للعملاء. على سبيل المثال، يمكنك فقط لف (تدوير) المفاتيح التي تملكها في Azure Key Vault. Microsoft 365 لف مفاتيح التوفر في جدول زمني محدد داخليا. لا توجد اتفاقية على مستوى الخدمة (SLA) تواجه العملاء لهذه اللفات الرئيسية. يقوم Microsoft 365 بتدوير مفتاح التوفر باستخدام رمز الخدمة Microsoft 365 في عملية تلقائية وغير يدوية. يمكن لمسؤولي Microsoft بدء عملية اللف. يتم طرح المفتاح باستخدام آليات تلقائية دون الوصول المباشر إلى مخزن المفاتيح. لا يتم توفير الوصول إلى مخزن مفاتيح التوفر السري لمسؤولي Microsoft. يستفيد المتداول لمفتاح التوفر من نفس الآلية المستخدمة لإنشاء المفتاح في البداية. لمزيد من المعلومات حول مفتاح التوفر، راجع [فهم مفتاح التوفر](customer-key-availability-key-understand.md).
+لا تعرض Microsoft التحكم المباشر لمفتاح التوفر للعملاء. على سبيل المثال، يمكنك فقط لف (تدوير) المفاتيح التي تملكها في Azure Key Vault. يقوم Microsoft 365 بطرح مفاتيح التوفر في جدول زمني محدد داخليا. لا توجد اتفاقية على مستوى الخدمة (SLA) تواجه العملاء لهذه اللفات الرئيسية. يقوم Microsoft 365 بتدوير مفتاح التوفر باستخدام رمز خدمة Microsoft 365 في عملية تلقائية وغير يدوية. يمكن لمسؤولي Microsoft بدء عملية اللف. يتم طرح المفتاح باستخدام آليات تلقائية دون الوصول المباشر إلى مخزن المفاتيح. لا يتم توفير الوصول إلى مخزن مفاتيح التوفر السري لمسؤولي Microsoft. يستفيد المتداول لمفتاح التوفر من نفس الآلية المستخدمة لإنشاء المفتاح في البداية. لمزيد من المعلومات حول مفتاح التوفر، راجع [فهم مفتاح التوفر](customer-key-availability-key-understand.md).
 
 > [!IMPORTANT]
-> يمكن إظهار Exchange Online ومفاتيح التوفر Skype for Business بشكل فعال من قبل العملاء الذين ينشئون DEP جديدا، حيث يتم إنشاء مفتاح توفر فريد لكل DEP تقوم بإنشائه. توجد مفاتيح التوفر لملفات SharePoint Online و OneDrive for Business و Teams على مستوى الغابة وتتم مشاركتها عبر DEPs والعملاء، ما يعني أن النشر يحدث فقط في جدول زمني محدد داخليا من Microsoft. للتخفيف من مخاطر عدم طرح مفتاح التوفر في كل مرة يتم فيها إنشاء DEP جديد، SharePoint، OneDrive، Teams لف المفتاح الوسيط للمستأجر (TIK)، المفتاح الملتف بواسطة مفاتيح جذر العميل ومفتاح التوفر، في كل مرة يتم فيها إنشاء DEP جديد.
+> يمكن إظهار Exchange Online ومفاتيح التوفر Skype for Business بشكل فعال من قبل العملاء الذين ينشئون DEP جديدا، حيث يتم إنشاء مفتاح توفر فريد لكل DEP تقوم بإنشائه. توجد مفاتيح التوفر لملفات SharePoint Online و OneDrive for Business وTeams على مستوى الغابة وتتم مشاركتها عبر DEPs والعملاء، مما يعني أن النشر يحدث فقط في جدول زمني محدد داخليا من Microsoft. للتخفيف من مخاطر عدم نشر مفتاح التوفر في كل مرة يتم فيها إنشاء DEP جديد، يقوم SharePoint وOneDrive وTeams بطرح المفتاح الوسيط للمستأجر (TIK)، والمفتاح الملتف بواسطة مفاتيح جذر العميل ومفتاح التوفر، في كل مرة يتم فيها إنشاء DEP جديد.
 
 ## <a name="request-a-new-version-of-each-existing-root-key-you-want-to-roll"></a>طلب إصدار جديد من كل مفتاح جذر موجود تريد لفه
 
@@ -85,9 +83,9 @@ Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Refresh
 
 2. للتحقق من قيمة خاصية DataEncryptionPolicyID لعلبة البريد، استخدم الخطوات [الواردة في تحديد DEP المعين إلى علبة بريد](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox). تتغير قيمة هذه الخاصية بمجرد تطبيق الخدمة للمفتاح المحدث.
   
-## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>تحديث مفاتيح ملفات SharePoint Online و OneDrive for Business و Teams
+## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>تحديث مفاتيح ملفات SharePoint Online و OneDrive for Business وTeams
 
-SharePoint Online يسمح لك فقط بطرح مفتاح واحد في كل مرة. إذا كنت تريد لف كلا المفتاحين في مخزن مفاتيح، فانتظر حتى تكتمل العملية الأولى. توصي Microsoft بتدرج عملياتك لتجنب هذه المشكلة. عند لف أي من مفاتيح azure Key Vault المقترنة ب DEP المستخدم مع SharePoint Online و OneDrive for Business، يجب تحديث DEP للإشارة إلى المفتاح الجديد. لا يقوم هذا بتدوير مفتاح التوفر.
+يسمح لك SharePoint Online فقط بطرح مفتاح واحد في كل مرة. إذا كنت تريد لف كلا المفتاحين في مخزن مفاتيح، فانتظر حتى تكتمل العملية الأولى. توصي Microsoft بتدرج عملياتك لتجنب هذه المشكلة. عند لف أي من مفاتيح Key Vault Azure المقترنة ب DEP المستخدم مع SharePoint Online OneDrive for Business، يجب تحديث DEP للإشارة إلى المفتاح الجديد. لا يقوم هذا بتدوير مفتاح التوفر.
 
 1. شغل أمر cmdlet Update-SPODataEncryptionPolicy كما يلي:
   
@@ -95,7 +93,7 @@ SharePoint Online يسمح لك فقط بطرح مفتاح واحد في كل م
    Update-SPODataEncryptionPolicy  <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
    ```
 
-   بينما يبدأ أمر cmdlet هذا عملية لفة المفاتيح ل SharePoint Online و OneDrive for Business، لا يكتمل الإجراء على الفور.
+   بينما يبدأ أمر cmdlet هذا عملية لفة المفاتيح ل SharePoint Online OneDrive for Business، لا يكتمل الإجراء على الفور.
 
 2. للاطلاع على تقدم عملية لفة المفتاح، قم بتشغيل Get-SPODataEncryptionPolicy cmdlet كما يلي:
 

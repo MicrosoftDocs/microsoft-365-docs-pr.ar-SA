@@ -1,5 +1,5 @@
 ---
-title: إعداد موصل DataParser 17a-4 أرشفة بيانات الاتصال FX في Microsoft 365
+title: إعداد موصل DataParser 17a-4 أرشفة بيانات FX Connect في Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -11,73 +11,71 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: تعرف على كيفية إعداد واستخدام موصل FX 17a-4 الاتصال DataParser لاستيراد بيانات FX الاتصال وأرشفتها في Microsoft 365.
-ms.openlocfilehash: bcb0743f1ca6ad1ed60baf8af5d69f1bb354f777
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: تعرف على كيفية إعداد موصل FX Connect DataParser 17a-4 واستخدامه لاستيراد بيانات FX Connect وأرشفتها في Microsoft 365.
+ms.openlocfilehash: 99e9a34bff72861102a1097aad21e2b4c3c84391
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317837"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640731"
 ---
-# <a name="set-up-a-connector-to-archive-data-from-fx-connect"></a>إعداد موصل وأرشفة البيانات من FX الاتصال
+# <a name="set-up-a-connector-to-archive-data-from-fx-connect"></a>إعداد موصل أرشفة البيانات من FX Connect
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+استخدم [FX Connect DataParser](https://www.17a-4.com/dataparser-roadmap/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من FX Connect إلى علب بريد المستخدمين في مؤسسة Microsoft 365. يتضمن DataParser موصل FX Connect الذي تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول موصل FX Connect DataParser بيانات FX Connect إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 
-استخدم [FX الاتصال DataParser](https://www.17a-4.com/dataparser-roadmap/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من FX الاتصال إلى علب بريد المستخدمين في مؤسستك Microsoft 365. يتضمن DataParser موصل FX الاتصال الذي تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يحول موصل FX الاتصال DataParser بيانات FX الاتصال إلى تنسيق رسالة بريد إلكتروني ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
+بعد تخزين بيانات FX Connect في علب بريد المستخدمين، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي وeDiscovery ونهج الاستبقاء وتسميات الاستبقاء وتوافق الاتصالات. يمكن أن يساعد استخدام موصل FX Connect لاستيراد البيانات وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
 
-بعد تخزين بيانات الاتصال FX في علب بريد المستخدمين، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي وeDiscovery ونهج الاستبقاء وتسميات الاستبقاء وتوافق الاتصالات. يمكن أن يساعد استخدام موصل الاتصال FX لاستيراد البيانات وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
+## <a name="overview-of-archiving-fx-connect-data"></a>نظرة عامة على أرشفة بيانات FX Connect
 
-## <a name="overview-of-archiving-fx-connect-data"></a>نظرة عامة على أرشفة بيانات الاتصال FX
+تشرح النظرة العامة التالية عملية استخدام موصل بيانات أرشفة بيانات FX Connect في Microsoft 365.
 
-تشرح النظرة العامة التالية عملية استخدام موصل بيانات أرشفة بيانات الاتصال FX في Microsoft 365.
+![أرشفة سير العمل لبيانات FX Connect من 17a-4.](../media/FXConnectDataParserConnectorWorkflow.png)
 
-![أرشفة سير العمل ل FX الاتصال البيانات من 17a-4.](../media/FXConnectDataParserConnectorWorkflow.png)
+1. تعمل مؤسستك مع 17a-4 لإعداد وتكوين FX Connect DataParser.
 
-1. تعمل مؤسستك مع 17a-4 لإعداد وتكوين FX الاتصال DataParser.
+2. بشكل منتظم، يتم تجميع عناصر FX Connect بواسطة DataParser. يقوم DataParser أيضا بتحويل محتوى رسالة إلى تنسيق رسالة بريد إلكتروني.
 
-2. بشكل منتظم، يتم جمع عناصر الاتصال FX بواسطة DataParser. يقوم DataParser أيضا بتحويل محتوى رسالة إلى تنسيق رسالة بريد إلكتروني.
+3. يتصل موصل FX Connect DataParser الذي تقوم بإنشائه في مدخل التوافق في Microsoft Purview ب DataParser وينقل الرسائل إلى موقع تخزين Azure آمن في سحابة Microsoft.
 
-3. يتصل موصل FX الاتصال DataParser الذي تقوم بإنشائه في مدخل التوافق في Microsoft Purview ب DataParser وينقل الرسائل إلى موقع تخزين Azure آمن في سحابة Microsoft.
-
-4. يتم إنشاء مجلد فرعي في مجلد علبة الوارد يسمى **FX الاتصال DataParser** في علب بريد المستخدمين، ويتم استيراد عناصر الاتصال FX إلى هذا المجلد. يحدد الموصل علبة البريد التي تريد استيراد العناصر إليها باستخدام قيمة خاصية *"البريد الإلكتروني* ". يحتوي كل عنصر الاتصال FX على هذه الخاصية، والتي يتم ملؤها بعنوان البريد الإلكتروني لكل مشارك.
+4. يتم إنشاء مجلد فرعي في مجلد علبة الوارد يسمى **FX Connect DataParser** في علب بريد المستخدمين، ويتم استيراد عناصر FX Connect إلى هذا المجلد. يحدد الموصل علبة البريد التي تريد استيراد العناصر إليها باستخدام قيمة خاصية *"البريد الإلكتروني* ". يحتوي كل عنصر من عناصر FX Connect على هذه الخاصية، والتي يتم ملؤها بعنوان البريد الإلكتروني لكل مشارك.
 
 ## <a name="before-you-set-up-a-connector"></a>قبل إعداد موصل
 
 - إنشاء حساب DataParser لموصلات Microsoft. للقيام بذلك، اتصل [ب 17a-4 LLC](https://www.17a-4.com/contact/). تحتاج إلى تسجيل الدخول إلى هذا الحساب عند إنشاء الموصل في الخطوة 1.
 
-- يجب تعيين دور مسؤول موصل البيانات للمستخدم الذي يقوم بإنشاء موصل FX الاتصال DataParser في الخطوة 1 (وإكماله في الخطوة 3). هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل التوافق. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور مسؤول موصل البيانات، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع المقطع "إنشاء مجموعة أدوار مخصصة" في ["الأذونات" في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- يجب تعيين دور data Connector مسؤول للمستخدم الذي يقوم بإنشاء موصل FX Connect DataParser في الخطوة 1 (وإكماله في الخطوة 3). هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل التوافق. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور موصل البيانات مسؤول، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع المقطع "إنشاء مجموعة أدوار مخصصة" في ["الأذونات" في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- يتوفر موصل البيانات 17a-4 هذا في بيئات سحابة القطاع الحكومي في Microsoft 365 سحابة حكومة الولايات المتحدة. قد تتضمن تطبيقات وخدمات الجهات الخارجية تخزين بيانات العملاء الخاصة بمؤسستك وإرسالها ومعالجتها على أنظمة تابعة لجهات خارجية خارج البنية الأساسية Microsoft 365 وبالتالي لا تغطيها التزامات Microsoft Purview وحماية البيانات. لا تقدم Microsoft أي تمثيل يشير إلى أن استخدام هذا المنتج للاتصال بتطبيقات الجهات الخارجية يعني أن تطبيقات الجهات الخارجية هذه متوافقة مع FEDRAMP.
+- يتوفر موصل البيانات 17a-4 هذا في بيئات GCC في سحابة Microsoft 365 US Government. قد تتضمن تطبيقات وخدمات الجهات الخارجية تخزين بيانات العملاء في مؤسستك وإرسالها ومعالجتها على أنظمة تابعة لجهات خارجية خارج البنية الأساسية ل Microsoft 365 وبالتالي لا تغطيها التزامات Microsoft Purview وحماية البيانات. لا تقدم Microsoft أي تمثيل يشير إلى أن استخدام هذا المنتج للاتصال بتطبيقات الجهات الخارجية يعني أن تطبيقات الجهات الخارجية هذه متوافقة مع FEDRAMP.
 
-## <a name="step-1-set-up-a-fx-connect-dataparser-connector"></a>الخطوة 1: إعداد موصل FX الاتصال DataParser
+## <a name="step-1-set-up-a-fx-connect-dataparser-connector"></a>الخطوة 1: إعداد موصل FX Connect DataParser
 
-الخطوة الأولى هي الوصول إلى صفحة موصلات البيانات في مدخل التوافق وإنشاء موصل 17a-4 لبيانات FX الاتصال.
+الخطوة الأولى هي الوصول إلى صفحة موصلات البيانات في مدخل التوافق وإنشاء موصل 17a-4 لبيانات FX Connect.
 
-1. انتقل إلى <https://compliance.microsoft.com> **موصلات Data connectorsFX** >  **ثم انقر فوقها الاتصال DataParser**.
+1. انتقل إلى <https://compliance.microsoft.com> **موصلات** >  البيانات ثم انقر فوق **FX Connect DataParser**.
 
-2. في صفحة وصف منتج **FX الاتصال DataParser**، انقر فوق **"إضافة موصل**".
+2. في صفحة وصف منتج **FX Connect DataParser** ، انقر فوق **"إضافة موصل**".
 
 3. في صفحة **"شروط الخدمة** "، انقر فوق **"قبول**".
 
 4. أدخل اسما فريدا يعرف الموصل ثم انقر فوق **"التالي**".
 
-5. سجل الدخول إلى حساب 17a-4 الخاص بك وأكمل الخطوات الواردة في معالج اتصال FX الاتصال DataParser.
+5. سجل الدخول إلى حسابك في 17a-4 وأكمل الخطوات الواردة في معالج اتصال FX Connect DataParser.
 
-## <a name="step-2-configure-the-fx-connect-dataparser-connector"></a>الخطوة 2: تكوين موصل FX الاتصال DataParser
+## <a name="step-2-configure-the-fx-connect-dataparser-connector"></a>الخطوة 2: تكوين موصل FX Connect DataParser
 
-العمل مع دعم 17a-4 لتكوين موصل FX الاتصال DataParser.
+العمل مع دعم 17a-4 لتكوين موصل FX Connect DataParser.
 
 ## <a name="step-3-map-users"></a>الخطوة 3: تعيين المستخدمين
 
-سيقوم موصل FX الاتصال DataParser تلقائيا بتعيين المستخدمين إلى عناوين بريدهم الإلكتروني Microsoft 365 قبل استيراد البيانات إلى Microsoft 365.
+سيقوم موصل FX Connect DataParser بتعيين المستخدمين تلقائيا إلى عناوين بريدهم الإلكتروني في Microsoft 365 قبل استيراد البيانات إلى Microsoft 365.
 
-## <a name="step-4-monitor-the-fx-connect-dataparser-connector"></a>الخطوة 4: مراقبة موصل FX الاتصال DataParser
+## <a name="step-4-monitor-the-fx-connect-dataparser-connector"></a>الخطوة 4: مراقبة موصل FX Connect DataParser
 
-بعد إنشاء موصل FX الاتصال DataParser، يمكنك عرض حالة الموصل في مدخل التوافق.
+بعد إنشاء موصل FX Connect DataParser، يمكنك عرض حالة الموصل في مدخل التوافق.
 
 1. انتقل إلى <https://compliance.microsoft.com> **موصلات البيانات وانقر فوقها** في جزء التنقل الأيمن.
 
-2. انقر فوق علامة التبويب **"الموصلات**"، ثم حدد موصل FX الاتصال DataParser الذي أنشأته لعرض صفحة القائمة المنبثقة، التي تحتوي على خصائص الموصل ومعلوماته.
+2. انقر فوق علامة التبويب **"الموصلات** "، ثم حدد موصل FX Connect DataParser الذي أنشأته لعرض صفحة القائمة المنبثقة، التي تحتوي على الخصائص والمعلومات حول الموصل.
 
 3. ضمن **حالة الموصل مع المصدر**، انقر فوق ارتباط **سجل التنزيل** لفتح (أو حفظ) سجل الحالة للموصل. يحتوي هذا السجل على معلومات حول البيانات التي تم استيرادها إلى سحابة Microsoft. لمزيد من المعلومات، راجع [عرض سجلات المسؤول لموصلات البيانات](data-connector-admin-logs.md).
 

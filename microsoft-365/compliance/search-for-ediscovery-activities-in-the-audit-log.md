@@ -15,20 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: تعرف على الأحداث التي يتم تسجيلها عندما يقوم المستخدمون المعينون لأذونات eDiscovery بتنفيذ مهام البحث في المحتوى وeDiscovery (قياسي) وeDiscovery (Premium) في مدخل توافق Microsoft Purview.
+description: تعرف على الأحداث التي يتم تسجيلها عندما يقوم المستخدمون المعينون لأذونات eDiscovery بتنفيذ مهام البحث في المحتوى وeDiscovery (قياسي) وeDiscovery (Premium) في مدخل التوافق في Microsoft Purview.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1e22371999044d5cb70282356045446b46f833fa
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 416cc91a0eb1c97f43c5d279cd47b68c115c3b71
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015485"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639347"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>البحث عن أنشطة eDiscovery في سجل التدقيق
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يتم تسجيل البحث عن المحتوى والأنشطة ذات الصلة ب eDiscovery (ل Microsoft Purview eDiscovery (Standard) وMicrosoft Purview eDiscovery (Premium)) التي يتم تنفيذها في مدخل توافق Microsoft Purview أو عن طريق تشغيل أوامر PowerShell cmdlets المقابلة في سجل التدقيق. يتم تسجيل الأحداث عندما يقوم المسؤولون أو مديرو eDiscovery (أو أي مستخدم معين لأذونات eDiscovery) بتنفيذ المهام التالية للبحث عن المحتوى وeDiscovery (القياسي) في مدخل التوافق:
+البحث عن المحتوى والأنشطة ذات الصلة ب eDiscovery (للأنشطة Microsoft Purview eDiscovery (قياسي) Microsoft Purview eDiscovery (Premium)) التي يتم تنفيذها في مدخل التوافق في Microsoft Purview  أو عن طريق تشغيل أوامر Cmdlets PowerShell المطابقة يتم تسجيلها في سجل التدقيق. يتم تسجيل الأحداث عندما يقوم المسؤولون أو مديرو eDiscovery (أو أي مستخدم معين لأذونات eDiscovery) بتنفيذ المهام التالية للبحث عن المحتوى وeDiscovery (القياسي) في مدخل التوافق:
   
 - إنشاء حالات eDiscovery (قياسي) وeDiscovery (Premium) وإدارتها
 
@@ -52,7 +50,7 @@ ms.locfileid: "66015485"
 
 2. في جزء التنقل الأيمن من مدخل التوافق، انقر فوق **"تدقيق**".
 
-3. في القائمة المنسدلة **"الأنشطة**"، ضمن **أنشطة eDiscovery** أو **أنشطة eDiscovery (Premium**)، انقر فوق نشاط واحد أو أكثر للبحث عن.
+3. في القائمة المنسدلة **"الأنشطة** "، ضمن **أنشطة eDiscovery** أو **أنشطة eDiscovery (Premium)،** انقر فوق نشاط واحد أو أكثر للبحث عن.
 
     > [!NOTE]
     > تتضمن القائمة المنسدلة **"Activities** " أيضا مجموعة من الأنشطة **المسماة أنشطة cmdlet eDiscovery** التي ستعيد السجلات من سجل تدقيق cmdlet.
@@ -69,7 +67,7 @@ ms.locfileid: "66015485"
 
     يتم عرض صفحة " **التفاصيل** المنبثقة" التي تحتوي على الخصائص التفصيلية من سجل الحدث. لعرض تفاصيل إضافية، انقر فوق **"مزيد من المعلومات**". للحصول على وصف لهذه الخصائص، راجع [الخصائص التفصيلية لقسم أنشطة eDiscovery](#detailed-properties-for-ediscovery-activities) .
 
-9. إذا أردت، يمكنك تصدير نتائج البحث في سجل التدقيق إلى ملف CSV، ثم استخدام ميزة Excel Power Query لتنسيق هذه السجلات وتصفيتها. لمزيد من المعلومات، راجع [تصدير سجلات سجل التدقيق وتكوينها وعرضها](export-view-audit-log-records.md).
+9. إذا أردت، يمكنك تصدير نتائج البحث في سجل التدقيق إلى ملف CSV، ثم استخدام ميزة Power Query Excel لتنسيق هذه السجلات وتصفيتها. لمزيد من المعلومات، راجع [تصدير سجلات سجل التدقيق وتكوينها وعرضها](export-view-audit-log-records.md).
 
 ## <a name="ediscovery-activities"></a>أنشطة eDiscovery
 
@@ -103,7 +101,7 @@ ms.locfileid: "66015485"
 |تصدير تم تنزيله للبحث في المحتوى  <br/> |SearchExportDownloaded  <br/> |N/A  <br/> |قام مستخدم بتنزيل نتائج البحث في المحتوى إلى الكمبيوتر المحلي الخاص به. يجب بدء **تصدير نشاط البحث عن المحتوى** قبل تنزيل نتائج البحث.  <br/> |
 |النتائج التي تمت معاينتها للبحث في المحتوى  <br/> |SearchPreviewed  <br/> |N/A  <br/> |قام مستخدم بمعاينة نتائج البحث في المحتوى.  <br/> |
 |النتائج التي تمت إزالتها للبحث في المحتوى  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |قام مستخدم بإزالة نتائج بحث المحتوى عن طريق تشغيل الأمر **New-ComplianceSearchAction -Purge** .  <br/> |
-|تحليل إزالة البحث عن المحتوى  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |تم حذف إجراء إعداد البحث في المحتوى (لإعداد نتائج البحث ل eDiscovery (Premium). إذا كان إجراء الإعداد أقل من أسبوعين، فقد تم حذف نتائج البحث التي تم إعدادها ل eDiscovery (Premium) من منطقة تخزين Microsoft Azure. إذا كان إجراء الإعداد أقدم من أسبوعين، فهذا الحدث يشير إلى أنه تم حذف إجراء الإعداد المطابق فقط.  <br/> |
+|تحليل إزالة البحث عن المحتوى  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |تم حذف إجراء إعداد بحث المحتوى (لإعداد نتائج البحث ل eDiscovery (Premium). إذا كان إجراء الإعداد أقل من أسبوعين، فقد تم حذف نتائج البحث التي تم إعدادها ل eDiscovery (Premium) من منطقة تخزين Microsoft Azure. إذا كان إجراء الإعداد أقدم من أسبوعين، فهذا الحدث يشير إلى أنه تم حذف إجراء الإعداد المطابق فقط.  <br/> |
 |تمت إزالة تصدير البحث في المحتوى  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |تم حذف إجراء تصدير البحث في المحتوى. إذا كان إجراء التصدير أقل من أسبوعين، تم حذف نتائج البحث التي تم تحميلها إلى منطقة تخزين Microsoft Azure. إذا كان إجراء التصدير أقدم من أسبوعين، فسيشير هذا الحدث إلى أنه تم حذف إجراء التصدير المطابق فقط.  <br/> |
 |عضو تمت إزالته من حالة eDiscovery  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |تمت إزالة مستخدم كعضو في حالة eDiscovery.  <br/> |
 |تمت إزالة نتائج المعاينة للبحث في المحتوى  <br/> |RemovedSearchPreviewed  <br/> |Remove-ComplianceSearchAction  <br/> |تم حذف إجراء معاينة البحث في المحتوى.  <br/> |
@@ -128,7 +126,7 @@ ms.locfileid: "66015485"
 |:-----|:-----|:-----|
 |البيانات المضافة إلى مجموعة مراجعة أخرى|AddWorkingSetQueryToWorkingSet|أضاف المستخدم مستندات من مجموعة مراجعة واحدة إلى مجموعة مراجعة مختلفة.|
 |البيانات المضافة إلى مجموعة المراجعة|AddQueryToWorkingSet|أضاف المستخدم نتائج البحث من بحث محتوى مقترن بحالة eDiscovery (Premium) إلى مجموعة مراجعة.|
-|تمت إضافة بيانات غير Microsoft 365 إلى مجموعة المراجعة|AddNonOffice365DataToWorkingSet|أضاف المستخدم بيانات غير Microsoft 365 إلى مجموعة مراجعة.|
+|تمت إضافة بيانات غير Microsoft 365 لمراجعتها|AddNonOffice365DataToWorkingSet|أضاف المستخدم بيانات غير 365 من Microsoft إلى مجموعة مراجعة.|
 |المستندات التي تمت معالجتها المضافة إلى مجموعة المراجعة|AddRemediatedData|يقوم المستخدم بتحميل المستندات التي بها أخطاء فهرسة تم إصلاحها إلى مجموعة مراجعة.|
 |البيانات التي تم تحليلها في مجموعة المراجعة|RunAlgo|قام المستخدم بتشغيل التحليلات على المستندات في مجموعة مراجعة.|
 |مستند معنون بالتعليق التوضيحي في مجموعة المراجعة|تعليق توضيحي لDocument|قام المستخدم بإضافة تعليق توضيحي لمستند في مجموعة مراجعة. يتضمن التعليق التوضيحي تنقيح المحتوى في مستند.|
@@ -179,7 +177,7 @@ ms.locfileid: "66015485"
 |بحث المحتوى الذي تم تغييره  <br/> |[Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch) <br/> |تم تغيير بحث محتوى موجود. يمكن أن تتضمن التغييرات إضافة مواقع المحتوى التي يتم البحث عنها أو إزالتها وتحرير استعلام البحث.  <br/> |
 |بدء البحث عن المحتوى  <br/> |[Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch) <br/> |تم بدء البحث عن المحتوى. عند إنشاء بحث محتوى أو تغييره باستخدام واجهة المستخدم الرسومية لمركز التوافق، يتم بدء البحث تلقائيا. إذا قمت بإنشاء بحث أو تغييره باستخدام **New-ComplianceSearch** أو **Set-ComplianceSearch** cmdlet، يجب تشغيل **Start-ComplianceSearch** cmdlet لبدء البحث.  <br/> |
 |تم إيقاف البحث عن المحتوى  <br/> |[Stop-ComplianceSearch](/powershell/module/exchange/stop-compliancesearch) <br/> |تم إيقاف عملية بحث المحتوى التي كانت قيد التشغيل.  <br/> |
-|إجراء البحث في المحتوى الذي تم إنشاؤه  <br/> |[New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) <br/> |تم إنشاء إجراء بحث في المحتوى. تتضمن إجراءات البحث في المحتوى معاينة نتائج البحث وتصدير نتائج البحث وإعداد نتائج البحث للتحليل في eDiscovery (Premium) وحذف العناصر التي تتطابق مع معايير البحث الخاصة بالبحث في المحتوى بشكل دائم.  <br/> |
+|إجراء البحث في المحتوى الذي تم إنشاؤه  <br/> |[New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) <br/> |تم إنشاء إجراء بحث في المحتوى. تتضمن إجراءات البحث في المحتوى معاينة نتائج البحث وتصدير نتائج البحث وإعداد نتائج البحث للتحليل في eDiscovery (Premium) وحذف العناصر التي تطابق معايير البحث الخاصة بالبحث في المحتوى بشكل دائم.  <br/> |
 |إجراء البحث عن المحتوى المحذوفة  <br/> |[إزالة-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) <br/> |تم حذف إجراء البحث في المحتوى.  <br/> |
 |عامل تصفية أذونات البحث الذي تم إنشاؤه  <br/> |[New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) <br/> |تم إنشاء عامل تصفية أذونات البحث.  <br/> |
 |عامل تصفية أذونات البحث المحذوفة  <br/> |[Remove-ComplianceSecurityFilter](/powershell/module/exchange/remove-compliancesecurityfilter) <br/> |تم حذف عامل تصفية أذونات البحث.  <br/> |
@@ -216,14 +214,14 @@ ms.locfileid: "66015485"
 |Objectid  <br/> |المعرف الفريد العمومي (GUID) أو اسم الكائن (على سبيل المثال، البحث في المحتوى أو حالة eDiscovery (قياسي) التي تم إنشاؤها أو الوصول إليها أو تغييرها أو حذفها بواسطة النشاط المدرج في خاصية العملية. يتم أيضا تعريف هذا الكائن في عمود العنصر في نتائج البحث في سجل التدقيق.  <br/> |
 |نوع الكائن  <br/> |نوع كائن eDiscovery الذي قام المستخدم بإنشائه أو حذفه أو تعديله؛ على سبيل المثال، إجراء البحث في المحتوى (معاينة أو تصدير أو إزالة) أو حالة eDiscovery أو بحث محتوى.  <br/> |
 |العمليه  <br/> |اسم العملية التي تتوافق مع نشاط eDiscovery الذي تم تنفيذه.  <br/> |
-|معرف المؤسسة  <br/> |المعرف الفريد العمومي (GUID) لمؤسستك Microsoft 365.  <br/> |
+|معرف المؤسسة  <br/> |المعرف الفريد العمومي (GUID) لمؤسستك في Microsoft 365.  <br/> |
 |معلمات  <br/> |الاسم والقيمة للمعلمات التي تم استخدامها مع cmdlet المطابق.  <br/> |
 |PublicFolderLocations  <br/> |مواقع المجلدات العامة في Exchange Online المضمنة في بحث المحتوى أو الموضوعة قيد الاحتجاز في حالة eDiscovery.  <br/> |
 |الاستعلام  <br/> |استعلام البحث المقترن بالأنشطة، مثل البحث في المحتوى أو قائمة الاحتجاز المستندة إلى الاستعلام.  <br/> |
 |نوع السجل  <br/> |نوع العملية المشار إليها بواسطة السجل. تشير القيمة **18** إلى حدث مرتبط بنشاط مدرج في قسم [أنشطة cmdlet eDiscovery](#ediscovery-cmdlet-activities) . تشير القيمة **24** إلى حدث مرتبط بنشاط مدرج في قسم ["كيفية البحث عن أنشطة eDiscovery وعرضها](#how-to-search-for-and-view-ediscovery-activities) ".  <br/> |
 |ResultStatus  <br/> |الإشارة إلى ما إذا كان الإجراء (المحدد في خاصية العملية) ناجحا أم لا.  <br/> |
 |SecurityComplianceCenterEventType  <br/> |يشير إلى أن النشاط كان حدث مركز توافق. سيكون لكافة أنشطة eDiscovery قيمة **0** لهذه الخاصية.  <br/> |
-|SharepointLocations  <br/> |مواقع SharePoint Online المضمنة في البحث في المحتوى أو الموضوعة قيد الاحتجاز في حالة eDiscovery.  <br/> |
+|SharepointLocations  <br/> |مواقع SharePoint Online المضمنة في بحث المحتوى أو الموضوعة قيد الاحتجاز في حالة eDiscovery.  <br/> |
 |وقت البدء  <br/> |التاريخ والوقت في التوقيت العالمي المتفق عليه (UTC) عند بدء نشاط eDiscovery.  <br/> |
 |Userid  <br/> |المستخدم الذي قام بتنفيذ النشاط (المحدد في خاصية العملية) الذي أدى إلى تسجيل السجل. يتم أيضا تضمين سجلات نشاط eDiscovery التي يتم إجراؤها بواسطة حسابات النظام (مثل NT AUTHORITY\SYSTEM) في سجل التدقيق.  <br/> |
 |UserKey  <br/> |معرف بديل للمستخدم المحدد في الخاصية UserId. بالنسبة إلى أنشطة eDiscovery، عادة ما تكون قيمة هذه الخاصية هي نفس خاصية UserId.  <br/> |

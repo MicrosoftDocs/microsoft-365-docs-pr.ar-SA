@@ -14,98 +14,94 @@ metadata:
   search.appverid:
   - MET150
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
-  description: هل لديك سؤال حول كيفية عمل تشفير رسائل Microsoft Purview؟ تحقق من وجود إجابة هنا.
+  description: هل لديك سؤال حول كيفية عمل تشفير الرسائل في Microsoft Purview؟ تحقق من وجود إجابة هنا.
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 4d365174ff7fa7db71939a10de0a57e50dbd4d46
-  ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+  ms.openlocfilehash: 0c20c671352c62b5c71f6c5369fd89aab99528ae
+  ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 06/13/2022
-  ms.locfileid: "66043011"
+  ms.lasthandoff: 07/06/2022
+  ms.locfileid: "66640577"
 title: الأسئلة المتداولة حول تشفير الرسائل
-summary: >
-  [!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-
-  هل لديك سؤال حول كيفية عمل قدرات حماية الرسائل الجديدة؟ تحقق من وجود إجابة هنا. أيضا، ألق نظرة على [الأسئلة المتداولة حول حماية البيانات في Azure حماية البيانات](/information-protection/get-started/faqs-rms) للحصول على إجابات على الأسئلة حول خدمة حماية البيانات، Rights Management Azure، في Azure حماية البيانات.
+summary: "\nهل لديك سؤال حول كيفية عمل قدرات حماية الرسائل الجديدة؟ تحقق من وجود إجابة هنا. أيضا، ألق نظرة على [الأسئلة المتداولة حول حماية البيانات في Azure حماية البيانات](/information-protection/get-started/faqs-rms) للحصول على إجابات على الأسئلة حول خدمة حماية البيانات، وإدارة حقوق Azure، في Azure حماية البيانات.\n"
 sections:
 - name: تم التجاهل
   questions:
-  - question: ما هو Microsoft Purview Message Encryption (OME)؟
-    answer: يجمع تشفير رسائل Microsoft Purview بين تشفير البريد الإلكتروني وقدرات إدارة الحقوق. يتم تشغيل قدرات إدارة الحقوق بواسطة Azure حماية البيانات.
+  - question: ما هو تشفير الرسائل في Microsoft Purview (OME)؟
+    answer: يجمع تشفير الرسائل في Microsoft Purview بين تشفير البريد الإلكتروني وقدرات إدارة الحقوق. يتم تشغيل قدرات إدارة الحقوق بواسطة Azure حماية البيانات.
   - question: >
-      روبوت Who يمكن استخدام تشفير رسائل Microsoft Purview؟
-    answer: "يمكنك استخدام تشفير رسائل \"Microsoft Purview\" ضمن الشروط التالية:\n  \n- إذا لم تقم بإعداد Office 365 تشفير الرسائل (OME) أو IRM Exchange Online في Office 365.\n\n- إذا قمت بإعداد OME وIRM، يمكنك استخدام هذه الخطوات إذا كنت تستخدم خدمة Rights Management Azure من Azure حماية البيانات.\n\n- إذا كنت تستخدم Exchange Online مع خدمة Rights Management Active Directory (AD RMS)، فلا يمكنك تمكين هذه الإمكانات الجديدة على الفور. بدلا من ذلك، تحتاج إلى [ترحيل AD RMS إلى Azure حماية البيانات](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) أولا. عند الانتهاء من الترحيل، يمكنك إعداد تشفير رسائل Microsoft Purview بنجاح.\n\n  إذا اخترت الاستمرار في استخدام AD RMS المحلي مع Exchange Online بدلا من الترحيل إلى Azure حماية البيانات، فلن تتمكن من استخدام تشفير رسائل Microsoft Purview.\n"
+      من يمكنه استخدام تشفير الرسائل في Microsoft Purview؟
+    answer: "يمكنك استخدام تشفير الرسائل في Microsoft Purview وفقا للشروط التالية:\n  \n- إذا لم تقم بإعداد Office 365 تشفير الرسائل (OME) أو IRM Exchange Online في Office 365.\n\n- إذا قمت بإعداد OME وIRM، يمكنك استخدام هذه الخطوات إذا كنت تستخدم خدمة Azure Rights Management من Azure حماية البيانات.\n\n- إذا كنت تستخدم Exchange Online مع خدمة Active Directory Rights Management (AD RMS)، فلا يمكنك تمكين هذه الإمكانات الجديدة على الفور. بدلا من ذلك، تحتاج إلى [ترحيل AD RMS إلى Azure حماية البيانات](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) أولا. عند الانتهاء من الترحيل، يمكنك إعداد تشفير الرسائل في Microsoft Purview بنجاح.\n\n  إذا اخترت الاستمرار في استخدام AD RMS المحلي مع Exchange Online بدلا من الترحيل إلى Azure حماية البيانات، فلن تتمكن من استخدام تشفير الرسائل في Microsoft Purview.\n"
   - question: >
-      ما الاشتراكات التي أحتاجها لاستخدام تشفير رسائل Microsoft Purview؟
+      ما هي الاشتراكات التي أحتاجها لاستخدام تشفير الرسائل في Microsoft Purview؟
     answer: >
-      لاستخدام Microsoft Purview Message Encryption، تحتاج إلى إحدى الخطط التالية:
+      لاستخدام تشفير الرسائل في Microsoft Purview، تحتاج إلى إحدى الخطط التالية:
 
 
-      - يتم تقديم تشفير الرسائل من Microsoft Purview كجزء من Office 365 Enterprise E3 وE5، Microsoft 365 Enterprise E3 وE5، Microsoft 365 Business Premium، Office 365 A1، A3، وA5، و Office 365 Government G3 وG5. لا تحتاج إلى تراخيص إضافية لتلقي قدرات الحماية الجديدة التي تدعمها Azure حماية البيانات.
+      - يتم تقديم تشفير الرسائل في Microsoft Purview كجزء من Office 365 Enterprise E3 وE5، Microsoft 365 Enterprise E3 وE5، Microsoft 365 Business Premium، Office 365 A1 وA3 وA5 و Office 365 Government G3 وG5. لا تحتاج إلى تراخيص إضافية لتلقي قدرات الحماية الجديدة التي تدعمها Azure حماية البيانات.
 
 
-      - يمكنك أيضا إضافة Azure حماية البيانات الخطة 1 إلى الخطط التالية لتلقي تشفير رسائل Microsoft Purview: Exchange Online الخطة 1، Exchange Online الخطة 2، Office 365 F3، Microsoft 365 Business Basic، Microsoft 365 Business Standard أو Office 365 Enterprise E1.
+      - يمكنك أيضا إضافة Azure حماية البيانات الخطة 1 إلى الخطط التالية لتلقي تشفير الرسائل في Microsoft Purview: Exchange Online الخطة 1، Exchange Online الخطة 2، Office 365 F3، Microsoft 365 Business Basic أو Microsoft 365 Business Standard أو Office 365 Enterprise E1.
 
 
-      - يجب ترخيص كل مستخدم يستفيد من تشفير الرسائل من Microsoft Purview ليغطي بواسطة الميزة.
+      - يجب أن يكون كل مستخدم يستفيد من تشفير الرسائل في Microsoft Purview مرخصا ليغطي بواسطة الميزة.
 
 
-      - للحصول على القائمة الكاملة، راجع [أوصاف خدمة Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) لتشفير رسائل Microsoft Purview.
+      - للحصول على القائمة الكاملة، راجع [أوصاف الخدمة Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) تشفير الرسائل في Microsoft Purview.
   - question: >
       هل يمكنني استخدام Exchange Online مع إحضار المفتاح الخاص بك (BYOK) في Azure حماية البيانات؟
-    answer: "نعم! توصي Microsoft بإكمال الخطوات لإعداد BYOK قبل إعداد تشفير الرسائل ل Microsoft Purview.\n  \nلمزيد من المعلومات حول BYOK، راجع [تخطيط وتنفيذ مفتاح مستأجر Azure حماية البيانات](/information-protection/plan-design/plan-implement-tenant-key).\n  \n"
+    answer: "نعم! توصي Microsoft بإكمال الخطوات لإعداد BYOK قبل إعداد تشفير الرسائل في Microsoft Purview.\n  \nلمزيد من المعلومات حول BYOK، راجع [تخطيط وتنفيذ مفتاح مستأجر Azure حماية البيانات](/information-protection/plan-design/plan-implement-tenant-key).\n  \n"
   - question: >
-      هل يقوم Microsoft Purview Message Encryption و BYOK مع Azure حماية البيانات بتغيير نهج Microsoft لطلبات بيانات الجهات الخارجية مثل مذكرات الاستدعاء؟
-    answer: "لا. لم يتم تصميم Microsoft Purview Message Encryption وخيار توفير مفاتيح التشفير الخاصة بك والتحكم فيها، والتي تسمى BYOK، من Azure حماية البيانات للاستجابة لاستدعاءات إنفاذ القانون. تم تصميم OME، مع BYOK ل Azure حماية البيانات، للمؤسسات التي تركز على الامتثال. تأخذ Microsoft طلبات الجهات الخارجية لبيانات العملاء على محمل الجد. بصفتك موفر خدمة سحابية، فإننا ندافع دائما عن خصوصية بياناتك. في حالة تلقينا مذكرة استدعاء، نحاول دائما إعادة توجيه الجهة الخارجية إليك مباشرة للحصول على المعلومات. (اقرأ مدونة براد سميث: [حماية بيانات العملاء من التطفل الحكومي](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). ننشر بشكل دوري معلومات مفصلة عن الطلب الذي نتلقاه. لمزيد من المعلومات حول طلبات بيانات الجهات الخارجية، راجع [الاستجابة لطلبات الحكومة وإنفاذ القانون للوصول إلى بيانات العملاء](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) في مركز توثيق Microsoft. Also, see \"Disclosure of Customer Data\" in the [Online Services Terms (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx).\n  \n"
+      هل تشفير الرسائل في Microsoft Purview و BYOK مع Azure حماية البيانات تغيير نهج Microsoft لطلبات بيانات الجهات الخارجية مثل مذكرات الاستدعاء؟
+    answer: "لا. لم يتم تصميم تشفير الرسائل في Microsoft Purview وخيار توفير مفاتيح التشفير الخاصة بك والتحكم فيها، والتي تسمى BYOK، من Azure حماية البيانات للاستجابة لاستدعاءات إنفاذ القانون. تم تصميم OME، مع BYOK ل Azure حماية البيانات، للمؤسسات التي تركز على الامتثال. تأخذ Microsoft طلبات الجهات الخارجية لبيانات العملاء على محمل الجد. بصفتك موفر خدمة سحابية، فإننا ندافع دائما عن خصوصية بياناتك. في حالة تلقينا مذكرة استدعاء، نحاول دائما إعادة توجيه الجهة الخارجية إليك مباشرة للحصول على المعلومات. (اقرأ مدونة براد سميث: [حماية بيانات العملاء من التطفل الحكومي](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). ننشر بشكل دوري معلومات مفصلة عن الطلب الذي نتلقاه. لمزيد من المعلومات حول طلبات بيانات الجهات الخارجية، راجع [الاستجابة لطلبات الحكومة وإنفاذ القانون للوصول إلى بيانات العملاء](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) في مركز توثيق Microsoft. Also, see \"Disclosure of Customer Data\" in the [Online Services Terms (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx).\n  \n"
   - question: >
-      كيف ترتبط هذه الميزة بميزات تشفير الرسائل Office 365 القديمة (OME) Rights Management المعلومات (IRM)؟
-    answer: "Microsoft Purview Message Encryption هو تطور لحلول IRM وOME القديمة. يوفر الجدول التالي المزيد من التفاصيل.\n  \n**مقارنة تشفير رسائل OME وIRM وMicrosoft Purview القديمة**\n\n| القدره | الإصدارات السابقة من OME | IRM | تشفير رسائل Microsoft Purview |\n|:-----|:-----|:-----|:-----|\n|**إرسال بريد إلكتروني مشفر**|فقط من خلال قواعد تدفق البريد Exchange|بدأ المستخدم النهائي من Outlook لقواعد تدفق البريد Windows أو Outlook for Mac أو Outlook على ويب؛ أو من خلال قواعد تدفق البريد Exchange|بدأ المستخدم النهائي من Outlook ل Windows أو Outlook for Mac أو Outlook على ويب؛ أو من خلال قواعد تدفق البريد|\n|**إدارة الحقوق**|-|الخيار \"عدم إعادة التوجيه\" والقوالب المخصصة|خيار عدم إعادة التوجيه، خيار التشفير فقط، القوالب الافتراضية والمخصصة|\n|**نوع المستلم المعتمد**|المستلمون الخارجيون فقط|المستلمون الداخليون فقط|المستلمون الداخليون والخارجيون|\n|**تجربة المستلم**|تلقى المستلمون الخارجيون رسالة HTML تفيد بأنهم قاموا بتنزيلها وفتحها في مستعرض أو تطبيق الأجهزة المحمولة الذي تم تنزيله.|لم يتلق المستلمون الداخليون سوى البريد الإلكتروني المشفر في Outlook Windows Outlook for Mac Outlook على ويب.|يتلقى المستلمون الداخليون والخارجيون البريد الإلكتروني في Outlook Windows، Outlook for Mac، Outlook على ويب، Outlook لنظام التشغيل Android، Outlook لنظام التشغيل iOS، أو من خلال مدخل ويب، بغض النظر عما إذا كانوا في المؤسسة نفسها أو في أي مؤسسة أم لا. لا يتطلب مدخل OME تنزيلا منفصلا.|\n|**إحضار دعم مفتاحك الخاص**|غير متوفر|غير متوفر| BYOK معتمد|\n"
+      كيف ترتبط هذه الميزة بميزات تشفير الرسائل القديمة Office 365 (OME) وإدارة حقوق استخدام المعلومات (IRM)؟
+    answer: "تشفير الرسائل في Microsoft Purview هو تطور لحلول IRM وOME القديمة. يوفر الجدول التالي المزيد من التفاصيل.\n  \n**مقارنة OME القديمة وIRM تشفير الرسائل في Microsoft Purview**\n\n| القدره | الإصدارات السابقة من OME | IRM | تشفير الرسائل في Microsoft Purview |\n|:-----|:-----|:-----|:-----|\n|**إرسال بريد إلكتروني مشفر**|فقط من خلال قواعد تدفق بريد Exchange|بدأ المستخدم النهائي من Outlook for Windows أو Outlook for Mac أو Outlook على ويب؛ أو من خلال قواعد تدفق بريد Exchange|بدأ المستخدم النهائي من Outlook for Windows أو Outlook for Mac أو Outlook على ويب؛ أو من خلال قواعد تدفق البريد|\n|**إدارة الحقوق**|-|الخيار \"عدم إعادة التوجيه\" والقوالب المخصصة|خيار عدم إعادة التوجيه، خيار التشفير فقط، القوالب الافتراضية والمخصصة|\n|**نوع المستلم المعتمد**|المستلمون الخارجيون فقط|المستلمون الداخليون فقط|المستلمون الداخليون والخارجيون|\n|**تجربة المستلم**|تلقى المستلمون الخارجيون رسالة HTML تفيد بأنهم قاموا بتنزيلها وفتحها في مستعرض أو تطبيق الأجهزة المحمولة الذي تم تنزيله.|لم يتلق المستلمون الداخليون سوى البريد الإلكتروني المشفر في Outlook for Windows Outlook for Mac Outlook على ويب.|يتلقى المستلمون الداخليون والخارجيون البريد الإلكتروني في Outlook for Windows أو Outlook for Mac أو Outlook على ويب أو Outlook for Android أو Outlook for iOS أو من خلال مدخل ويب، بغض النظر عما إذا كانوا في المؤسسة نفسها أو في أي مؤسسة. لا يتطلب مدخل OME تنزيلا منفصلا.|\n|**إحضار دعم مفتاحك الخاص**|غير متوفر|غير متوفر| BYOK معتمد|\n"
   - question: >
-      كيف أعمل تمكين تشفير رسائل Microsoft Purview لمؤسستي؟
-    answer: "راجع [إعداد تشفير رسائل \"Microsoft Purview](set-up-new-message-encryption-capabilities.md)\".\n  \n"
+      كيف أعمل تمكين تشفير الرسائل في Microsoft Purview لمؤسستي؟
+    answer: "راجع [إعداد تشفير الرسائل في Microsoft Purview](set-up-new-message-encryption-capabilities.md).\n  \n"
   - question: >
       هل سيتم إهمال الإصدار السابق من OME؟
     answer: >
       لا يزال بإمكانك استخدام الإصدار السابق من OME، ولن يتم إهماله في الوقت الحالي. ومع ذلك، نشجع المؤسسات بشدة على استخدام حل تشفير الرسائل الجديد والمحسن. إذا لم تكن قد نشرت OME بالفعل، فلا يمكنك إعداد نشر جديد للإصدار السابق من OME.
   - question: >
-      تستخدم مؤسستي Rights Management Active Directory، هل يمكنني استخدام هذه الوظيفة؟
-    answer: "لا. إذا كنت تستخدم Exchange Online مع خدمة Rights Management Active Directory (AD RMS)، فلا يمكنك تمكين هذه الإمكانات الجديدة على الفور. بدلا من ذلك، تحتاج إلى [ترحيل AD RMS إلى Azure حماية البيانات](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) أولا.\n  \n"
+      تستخدم مؤسستي Active Directory Rights Management، هل يمكنني استخدام هذه الوظيفة؟
+    answer: "لا. إذا كنت تستخدم Exchange Online مع خدمة Active Directory Rights Management (AD RMS)، فلا يمكنك تمكين هذه الإمكانات الجديدة على الفور. بدلا من ذلك، تحتاج إلى [ترحيل AD RMS إلى Azure حماية البيانات](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) أولا.\n  \n"
   - question: >
-      لدى مؤسستي نشر مختلط Exchange. هل يمكنني استخدام هذه الميزة؟
+      لدى مؤسستي نشر Exchange Hybrid. هل يمكنني استخدام هذه الميزة؟
     answer: "يمكن للمستخدمين المحليين إرسال بريد مشفر باستخدام قواعد تدفق البريد Exchange Online. للقيام بذلك، تحتاج إلى توجيه البريد الإلكتروني عبر Exchange Online. لمزيد من المعلومات، راجع [الجزء 2: تكوين البريد للتدفق من خادم البريد الإلكتروني إلى Microsoft 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).\n  \n"
   - question: >
       ما هو عميل البريد الإلكتروني الذي أحتاج إلى استخدامه لإنشاء رسالة مشفرة؟ ما هي التطبيقات المعتمدة لإرسال الرسائل المحمية؟
-    answer: "يمكنك إنشاء رسائل محمية من Outlook 2016 Outlook 2013 for Windows وMac ومن Outlook على ويب. لمزيد من المعلومات حول إرسال الرسائل المشفرة، راجع [إرسال الرسائل المشفرة وعرضها والرد عليها في Outlook للكمبيوتر الشخصي](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us).\n  \n"
+    answer: "يمكنك إنشاء رسائل محمية من Outlook 2016 وOutlook 2013 for Windows وMac ومن Outlook على ويب. لمزيد من المعلومات حول إرسال الرسائل المشفرة، راجع [إرسال الرسائل المشفرة وعرضها والرد عليها في Outlook for PC](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us).\n  \n"
   - question: >
       ما عملاء البريد الإلكتروني المعتمدون لقراءة رسائل البريد الإلكتروني المحمية والرد عليها؟
     answer: >
-      يمكن للمستخدمين Microsoft 365 القراءة والرد من Outlook ل Windows وMac (2013 و2016) Outlook على ويب والهاتف المحمول Outlook (Android وiOS). يمكنك أيضا استخدام عميل البريد الأصلي لنظام التشغيل iOS إذا كانت مؤسستك تسمح بذلك. إذا لم تكن مستخدما Microsoft 365، يمكنك قراءة الرسائل المشفرة والرد عليها على الويب من خلال مستعرض الويب.
+      يمكن لمستخدمي Microsoft 365 القراءة والرد من Outlook for Windows وMac (2013 و2016) Outlook على ويب وOutlook mobile (Android وiOS). يمكنك أيضا استخدام عميل البريد الأصلي لنظام التشغيل iOS إذا كانت مؤسستك تسمح بذلك. إذا لم تكن مستخدم Microsoft 365، فيمكنك قراءة الرسائل المشفرة والرد عليها على الويب من خلال مستعرض الويب.
   - question: >
       ما عملاء البريد الإلكتروني الذين يدعمون رسائل البريد الإلكتروني المحمية بالتشفير فقط؟
     answer: >
-      يمكن للمستخدمين Microsoft 365 استخدام Outlook لإصدارات الكمبيوتر الشخصي 2019 Microsoft 365 لإنشاء بريد محمي باستخدام نهج التشفير فقط.  وهذا يعني أنه يمكن قراءة الرسائل التي تم تطبيق نهج التشفير فقط الجديد عليها مباشرة في Outlook على ويب، في Outlook لنظامي التشغيل iOS وAndroid، والآن Outlook لإصداري الكمبيوتر الشخصي 2019 و Microsoft 365.
+      يمكن لمستخدمي Microsoft 365 استخدام إصداري Outlook for PC 2019 وMicrosoft 365 لإنشاء بريد محمي باستخدام نهج التشفير فقط.  وهذا يعني أن الرسائل التي تم تطبيق نهج التشفير فقط الجديد عليها يمكن قراءتها مباشرة في Outlook على ويب، وفي Outlook لنظامي التشغيل iOS وAndroid، والآن إصدارات Outlook للكمبيوتر الشخصي 2019 وMicrosoft 365.
   - question: >
       هل هناك حد حجم للرسائل التي يمكنك إرسالها باستخدام OME؟
     answer: >
-      نعم. الحد الأقصى لحجم الرسالة الذي يمكنك إرساله باستخدام تشفير رسائل Microsoft Purview، بما في ذلك المرفقات، هو 25 ميغابايت. لمزيد من المعلومات، راجع [حدود الرسائل](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
+      نعم. الحد الأقصى لحجم الرسالة الذي يمكنك إرساله باستخدام تشفير الرسائل في Microsoft Purview، بما في ذلك المرفقات، هو 25 ميغابايت. لمزيد من المعلومات، راجع [حدود الرسائل](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
   - question: >
       ما نوع الرسائل التي يدعمها مدخل OME؟
     answer: >
       يدعم مدخل OME البريد فقط. لا يدعم المدخل أنواع رسائل أخرى مثل التقويم أو البريد الصوتي.
   - question: >
       ما أنواع الملفات المعتمدة كمرفقات في رسائل البريد الإلكتروني المحمية؟ هل ترث المرفقات نهج الحماية المقترنة برسائل البريد الإلكتروني المحمية؟
-    answer: "يمكنك إرفاق أي نوع ملف بالبريد المحمي. باستثناء واحد، يتم تطبيق نهج الحماية فقط على تنسيقات الملفات المذكورة في [أنواع الملفات المعتمدة من قبل عميل حماية البيانات Azure](/information-protection/rms-client/client-admin-guide-file-types). لا يدعم تشفير الرسائل من Microsoft Purview الإصدارات 97-2003 من برامج Office التالية: Word (.doc) Excel (.xls) PowerPoint (.ppt).\n\nإذا كان تنسيق الملف معتمدا، مثل ملف Word أو Excel أو PowerPoint، يكون الملف محميا دائما، حتى بعد تنزيل المرفق من قبل المستلم. على سبيل المثال، لنفترض أن المرفق محمي بواسطة \"عدم إعادة التوجيه\". يقوم المستلم الأصلي بتنزيل الملف وإنشاء رسالة إلى مستلم جديد وإرفاق الملف. عندما يتلقى المستلم الجديد الملف، لن يتمكن المستلم من فتح الملف المحمي.\n  \n"
+    answer: "يمكنك إرفاق أي نوع ملف بالبريد المحمي. باستثناء واحد، يتم تطبيق نهج الحماية فقط على تنسيقات الملفات المذكورة في [أنواع الملفات المعتمدة من قبل عميل حماية البيانات Azure](/information-protection/rms-client/client-admin-guide-file-types). لا يدعم تشفير الرسائل في Microsoft Purview الإصدارات 97-2003 من برامج Office التالية: Word (.doc) وExcel (.xls) وPowerPoint (.ppt).\n\nإذا كان تنسيق الملف معتمدا، مثل ملف Word أو Excel أو PowerPoint، يكون الملف محميا دائما، حتى بعد تنزيل المرفق من قبل المستلم. على سبيل المثال، لنفترض أن المرفق محمي بواسطة \"عدم إعادة التوجيه\". يقوم المستلم الأصلي بتنزيل الملف وإنشاء رسالة إلى مستلم جديد وإرفاق الملف. عندما يتلقى المستلم الجديد الملف، لن يتمكن المستلم من فتح الملف المحمي.\n  \n"
   - question: >
       هل مرفقات ملفات PDF مدعومة؟
     answer: >
       الإجابة القصيرة هي نعم! إذا تم تمكين تشفير PDF، يسمح لك تشفير PDF بحماية مستندات PDF الحساسة من خلال الاتصال الآمن أو التعاون الآمن. عندما ترسل رسالة بريد إلكتروني، تقوم خدمة Office 365 بتشفير مرفقات ملفات PDF. لا يقوم عميل Outlook بتشفير مرفقات ملفات PDF.
 
 
-      بالنسبة Outlook على ويب، Outlook لنظام التشغيل iOS، Outlook لنظام التشغيل Android، يمكنك تشفير ملفات PDF التي ترسلها دون أي خطوات إضافية. يدعم هؤلاء العملاء في الأصل تشفير PDF.
+      بالنسبة إلى Outlook على ويب وOutlook for iOS وOutlook for Android، يمكنك تشفير ملفات PDF التي ترسلها دون أي خطوات إضافية. يدعم هؤلاء العملاء في الأصل تشفير PDF.
 
 
-      لا يدعم Outlook سطح المكتب في الأصل تشفير مرفقات ملفات PDF. بدلا من ذلك، ستحتاج إلى إعداد Exchange قواعد تدفق البريد أو DLP لتطبيق التشفير على مرفقات PDF أولا. عند إرسال بريد من Outlook سطح المكتب مع مرفق PDF، يرسل العميل الرسالة التي تحتوي على المرفق إلى الخدمة أولا. عندما تتلقى الخدمة الملف، تطبق الخدمة حماية تشفير رسائل Microsoft Purview لنهج منع فقدان البيانات (DLP) أو قاعدة تدفق البريد في Exchange Online. بعد ذلك، يرسل Exchange Online الرسالة مع مرفق ملف PDF المحمي.
+      لا يدعم Outlook لسطح المكتب في الأصل تشفير مرفقات ملفات PDF. بدلا من ذلك، ستحتاج إلى إعداد قواعد تدفق بريد Exchange أو DLP لتطبيق التشفير على مرفقات PDF أولا. عندما ترسل بريدا من Outlook Desktop مع مرفق PDF، يرسل العميل الرسالة التي تحتوي على المرفق إلى الخدمة أولا. عندما تتلقى الخدمة الملف، تطبق الخدمة الحماية تشفير الرسائل في Microsoft Purview لنهج منع فقدان البيانات (DLP) أو قاعدة تدفق البريد في Exchange Online. بعد ذلك، يرسل Exchange Online الرسالة مع مرفق ملف PDF المحمي.
 
 
       لتمكين التشفير لمرفقات PDF، قم بتشغيل الأمر التالي في [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
@@ -118,26 +114,26 @@ sections:
       ```
 
 
-      يسمح لك تشفير PDF بحماية مستندات PDF الحساسة من خلال الاتصال الآمن أو التعاون الآمن. لجميع العملاء Outlook، ترث الرسائل ومرفقات PDF غير المحمية حماية تشفير الرسائل من Microsoft Purview لنهج منع فقدان البيانات (DLP) أو قاعدة تدفق البريد في Exchange Online. علاوة على ذلك، إذا قام مستخدم Outlook على ويب بإرفاق مستند PDF غير محمي وتطبيق الحماية على الرسالة، فإن الرسالة ترث حماية الرسالة. يمكن للمستخدمين فتح المرفقات المشفرة فقط في التطبيقات التي تدعم ملفات PDF المحمية (على سبيل المثال، مدخل OME وAzure حماية البيانات Viewer).
+      يسمح لك تشفير PDF بحماية مستندات PDF الحساسة من خلال الاتصال الآمن أو التعاون الآمن. لجميع عملاء Outlook، ترث الرسائل ومرفقات PDF غير المحمية الحماية تشفير الرسائل في Microsoft Purview لنهج منع فقدان البيانات (DLP) أو قاعدة تدفق البريد في Exchange Online. علاوة على ذلك، إذا قام مستخدم Outlook على ويب بإرفاق مستند PDF غير محمي وتطبيق الحماية على الرسالة، فإن الرسالة ترث حماية الرسالة. يمكن للمستخدمين فتح المرفقات المشفرة فقط في التطبيقات التي تدعم ملفات PDF المحمية (على سبيل المثال، مدخل OME وAzure حماية البيانات Viewer).
 
 
       > [!IMPORTANT]
 
-      > لا يدعم عميل سطح المكتب Outlook تشفير PDF.
+      > لا يدعم عميل Outlook لسطح المكتب تشفير PDF.
   - question: >
-      هل SharePoint عبر الإنترنت أو مرفقات OneDrive for Business معتمدة؟
+      هل SharePoint Online أو مرفقات OneDrive for Business معتمدة؟
     answer: >
-      ليس الآن. SharePoint المرفقات عبر الإنترنت أو OneDrive for Business غير معتمدة ويمكن للمستخدمين النهائيين تشفير بريد ولكن ليس مرفقات السحابة.
+      ليس الآن. إن مرفقات SharePoint Online أو OneDrive for Business غير معتمدة ويمكن للمستخدمين النهائيين تشفير بريد ولكن ليس مرفقات السحابة.
   - question: >
       ما عملاء البريد الإلكتروني الذين يدعمون معاينة المرفقات المشفرة في رسائل البريد الإلكتروني المحمية؟
-    answer: "عندما تكون المرفقات محمية بالبريد المحمي، يوفر Outlook العملاء إمكانية معاينة المستند مباشرة. يدعم Outlook معاينة مستندات Office (docx وxlsx وpptx و doc وxls وppt). يدعم Outlook على ويب معاينة مستندات Office (docx وxlsx وpptx) وPDF.  \n"
+    answer: "عندما تكون المرفقات محمية بالبريد المحمي، يوفر عملاء Outlook إمكانية معاينة المستند مباشرة. يدعم Outlook معاينة مستندات Office (docx وxlsx وpptx و doc وxls وppt). يدعم Outlook على ويب معاينة مستندات Office (docx وxlsx وpptx) وPDF.  \n"
   - question: >
       ما عملاء البريد الإلكتروني الذين يدعمون إبطال رسائل البريد الإلكتروني المحمية؟
     answer: >
       يدعم Outlook على ويب إبطال البريد المحمي.  راجع [كيفية إبطال رسالة مشفرة أرسلتها](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) للحصول على التفاصيل.
   - question: >
       هل يدعم مدخل OME معاينة المرفقات المشفرة في رسائل البريد الإلكتروني المحمية؟
-    answer: "يدعم مدخل OME معاينة أي نسخ مرفقات مشفرة تمت إضافتها إلى البريد المشفر. تتضمن أنواع ملفات الدعم ملفات Word و Excel وPowerpoint وPDF.  \n"
+    answer: "يدعم مدخل OME معاينة أي نسخ مرفقات مشفرة تمت إضافتها إلى البريد المشفر. تتضمن أنواع ملفات الدعم ملفات Word وExcel وPowerpoint وPDF.  \n"
   - question: >
       هل يمكنني تشفير الرسائل تلقائيا عن طريق إعداد النهج؟
     answer: "نعم. استخدم قواعد تدفق البريد في Exchange Online لتشفير رسالة تلقائيا استنادا إلى شروط معينة. على سبيل المثال، يمكنك إنشاء نهج تستند إلى معرف المستلم أو مجال المستلم أو المحتوى الموجود في النص الأساسي للرسالة أو موضوعها. راجع [تعريف قواعد تدفق البريد لتشفير رسائل البريد الإلكتروني في Office 365](define-mail-flow-rules-to-encrypt-email.md).\n  \n"
@@ -146,9 +142,9 @@ sections:
     answer: >
       يمكن للمسؤولين إعداد قاعدة تدفق البريد لإزالة التشفير للبريد الصادر. يمكنك فقط إعداد قاعدة لإزالة التشفير للبريد الوارد الذي ينشأ من مؤسستك.
   - question: >
-      هل يمكنني تشفير الرسائل تلقائيا عن طريق إعداد نهج في منع فقدان البيانات (DLP) من خلال مدخل توافق Microsoft Purview؟
+      هل يمكنني تشفير الرسائل تلقائيا عن طريق إعداد نهج في منع فقدان البيانات (DLP) من خلال مدخل التوافق في Microsoft Purview؟
     answer: >
-      نعم! يمكنك إعداد قواعد تدفق البريد في Exchange Online أو باستخدام DLP في مدخل توافق Microsoft Purview.
+      نعم! يمكنك إعداد قواعد تدفق البريد في Exchange Online أو باستخدام DLP في مدخل التوافق في Microsoft Purview.
   - question: >
       هل يمكنني تخصيص الرسائل المشفرة باستخدام العلامة التجارية لشركتي؟
     answer: "نعم، للبريد المرسل من علبة بريد Exchange Online في مؤسستك! للحصول على معلومات حول تخصيص رسائل البريد الإلكتروني ومدخل OME، راجع [إضافة العلامة التجارية لمؤسستك إلى الرسائل المشفرة](add-your-organization-brand-to-encrypted-messages.md).\n  \n"
@@ -158,7 +154,7 @@ sections:
   - question: >
       هل يمكنني استخدام تشفير الرسائل مع ميزات التوافق مثل eDiscovery؟
     answer: >
-      نعم، معظم الرسائل المحمية بواسطة تشفير رسائل Microsoft Purview قابلة للاكتشاف. البريد المحمي بواسطة Microsoft Purview Message Encryption الذي تتلقاه من مؤسسة Microsoft 365 أخرى تم تطبيق علامة تجارية مخصصة عليها من خلال قاعدة تدفق بريد غير قابل للاسترداد بواسطة خدمة eDiscovery. بمعنى آخر، إذا لم يكن البريد متاحا من خلال علبة بريد المستخدم، ولكن بدلا من ذلك، يظهر فقط من خلال ارتباط إلى مدخل OME، فلن يكون البريد قابلا للبحث. راجع [أنشطة eDiscovery التي تدعم العناصر المشفرة](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) للحصول على التفاصيل.
+      نعم، معظم الرسائل المحمية بواسطة تشفير الرسائل في Microsoft Purview قابلة للاكتشاف. تشفير الرسائل في Microsoft Purview البريد المحمي الذي تتلقاه من مؤسسة Microsoft 365 أخرى تم تطبيق علامة تجارية مخصصة عليها من خلال قاعدة تدفق بريد غير قابل للاسترداد بواسطة خدمة eDiscovery. بمعنى آخر، إذا لم يكن البريد متاحا من خلال علبة بريد المستخدم، ولكن بدلا من ذلك، يظهر فقط من خلال ارتباط إلى مدخل OME، فلن يكون البريد قابلا للبحث. راجع [أنشطة eDiscovery التي تدعم العناصر المشفرة](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) للحصول على التفاصيل.
   - question: >
       هل يمكنني إزالة التشفير من البريد الإلكتروني؟
     answer: >
@@ -176,7 +172,7 @@ sections:
       - يمكن للمستخدمين فتح رسائل البريد المحمية في علبة بريد مشتركة حيث تلقت علبة البريد المشتركة بريدا محميا كجزء من مجموعة توزيع.
 
 
-      - يمكن للمستخدمين عرض المرفقات التي ترث الحماية من البريد الإلكتروني عند استخدامهم Outlook Windows Outlook for Mac Outlook لنظام التشغيل Android Outlook لنظام التشغيل iOS Outlook على ويب.
+      - يمكن للمستخدمين عرض المرفقات التي ترث الحماية من البريد الإلكتروني عند استخدام Outlook for Windows Outlook for Mac وOutlook for Android وOutlook for iOS Outlook على ويب.
 
 
       يسرد الجدول التالي العملاء المعتمدين لعلب البريد المشتركة.
@@ -188,33 +184,33 @@ sections:
 
       | Outlook على ويب | نعم | نعم                |
 
-      | Outlook ل Windows| نعم | نعم                |
+      | Outlook for Windows| نعم | نعم                |
 
       | Outlook for Mac    | نعم | نعم                |
 
-      | Outlook لنظام التشغيل Android| نعم | نعم                |
+      | Outlook for Android| نعم | نعم                |
 
-      | Outlook لنظام التشغيل iOS    | نعم | نعم                 |
+      | Outlook for iOS    | نعم | نعم                 |
 
 
       > [!NOTE]
 
-      > يستخدم Android وiOS تطبيق Office للأجهزة المحمولة لعرض المرفقات المشفرة، وليس مباشرة في Outlook الجوال.
+      > يستخدم Android وiOS تطبيق Office للأجهزة المحمولة لعرض المرفقات المشفرة، وليس مباشرة في Outlook للأجهزة المحمولة.
 
 
       هناك حاليا قيدان معروفان:
 
 
-      - لا يمكنك فتح المرفقات لرسائل البريد الإلكتروني التي تتلقاها على الأجهزة المحمولة باستخدام Outlook الجوال.
+      - لا يمكنك فتح المرفقات لرسائل البريد الإلكتروني التي تتلقاها على الأجهزة المحمولة باستخدام Outlook للأجهزة المحمولة.
 
 
-      - في Outlook Win32، بالنسبة للمستخدمين المعينين إلى علبة بريد مشتركة من خلال مجموعة أمان ممكنة للبريد الإلكتروني، سيرى المستخدم بريد إعلام لعرض البريد المشفر باستخدام مستعرض ويب.  من أجل عرض البريد المشفر مباشرة في Outlook Win32، Outlook وAzure حماية البيانات عملاء التسمية الموحدة تتطلب تعيين المستخدم مباشرة إلى علبة البريد المشتركة مع تمكين أذونات الوصول الكامل والتعيين التلقائي. يتم تمكين التعيين التلقائي بشكل افتراضي Exchange Online.
+      - في Outlook Win32، بالنسبة للمستخدمين المعينين إلى علبة بريد مشتركة من خلال مجموعة أمان ممكنة للبريد الإلكتروني، سيرى المستخدم بريد إعلام لعرض البريد المشفر باستخدام مستعرض ويب.  لعرض البريد المشفر مباشرة في Outlook Win32، يتطلب Outlook وAzure حماية البيانات عملاء التسميات الموحدة تعيين المستخدم مباشرة إلى علبة البريد المشتركة مع تمكين أذونات الوصول الكامل والخريطة التلقائية. يتم تمكين التعيين التلقائي بشكل افتراضي Exchange Online.
 
 
       **لتعيين مستخدم إلى علبة البريد المشتركة**
 
 
-      1. [الاتصال إلى Exchange Online PowerShell.aspx](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150)).
+      1. [الاتصال Exchange Online PowerShell.aspx](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150)).
 
 
       2. قم بتشغيل Add-MailboxPermission cmdlet باستخدام المعلمة Automapping. يمنح هذا المثال Ayla أذونات الوصول الكامل إلى علبة بريد الدعم.
@@ -225,7 +221,7 @@ sections:
   - question: >
       هل الوصول المفوض مدعوم بفتح الرسائل المشفرة؟ حتى لو كان لدى المفوض حق الوصول الكامل إلى علبة بريد مستخدم آخر؟
     answer: >
-      يتم دعم الوصول المفوض للبريد المشفر في Outlook على ويب Outlook for Mac Outlook لنظام التشغيل iOS Outlook لنظام التشغيل Android.  لا يعتمد Outlook ل Windows الوصول المفوض.
+      يتم دعم الوصول المفوض للبريد المشفر في Outlook على ويب Outlook for Mac وOutlook for iOS وOutlook for Android.  لا يعتمد Outlook for Windows الوصول المفوض.
   - question: >
       كم من الوقت يمكنني الوصول إلى البريد في مدخل OME؟
     answer: >

@@ -16,16 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم المجموعات في Microsoft Purview eDiscovery (Premium) لجمع مرفقات السحابة للمراجعة في تحقيق أو حالة.
-ms.openlocfilehash: 4af28744525db52f446bf6d5f1b5de2121111050
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: e59b4720613572763b300517c0b603493ab5a9de
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893196"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636932"
 ---
 # <a name="collect-cloud-attachments-in-microsoft-purview-ediscovery-premium"></a>تجميع مرفقات السحابة في Microsoft Purview eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 مرفقات السحابة هي ارتباطات إلى المستندات التي يتم تخزينها عادة في موقع SharePoint وOneDrive. لذلك بدلا من إرفاق نسخة فعلية من مستند في رسالة بريد إلكتروني أو محادثة دردشة Teams، لديك خيار مشاركة ارتباط إلى الملف. تعد مرفقات السحابة طريقة فعالة لمشاركة المستندات والتعاون مع أشخاص آخرين في مؤسستك. ولكن تشكل مرفقات السحابة تحديات أثناء سير عمل eDiscovery لأنه يتم إرجاع ارتباط مرفق السحابة فقط وليس المحتوى الفعلي في المستند المشترك في بحث eDiscovery. لمواجهة هذا التحدي، يوفر eDiscovery (Premium) حلين لجمع مرفقات السحابة:  
 

@@ -12,16 +12,14 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل 17a-4 Skype for Business Server DataParser واستخدامه لاستيراد بيانات Skype for Business Server وأرشفتها في Microsoft 365.
-ms.openlocfilehash: 3842c8727dc33fd7d28c5a72537b39c71476ce66
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 9b503ea1305e7997d6a66ace0a402a9557d0cc31
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320773"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639303"
 ---
 # <a name="set-up-a-connector-to-archive-skype-for-business-server-data"></a>إعداد موصل وأرشفة بيانات Skype for Business Server
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم [Skype Server DataParser](https://www.17a-4.com/skype-server-dataparser/) من 17a-4 LLC لاستيراد البيانات وأرشفتها من Skype for Business Server إلى علب بريد المستخدمين في مؤسسة Microsoft 365. يتضمن DataParser موصلا Skype for Business تم تكوينه لالتقاط العناصر من مصدر بيانات تابع لجهة خارجية واستيراد هذه العناصر إلى Microsoft 365. يقوم موصل Skype for Business Server DataParser بتحويل بيانات Skype for Business Server إلى تنسيق رسالة بريد إلكتروني ثم استيراد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365.
 
@@ -29,7 +27,7 @@ ms.locfileid: "65320773"
 
 ## <a name="overview-of-archiving-skype-for-business-server-data"></a>نظرة عامة على أرشفة بيانات Skype for Business Server
 
-تشرح النظرة العامة التالية عملية استخدام موصل بيانات أرشفة البيانات Skype for Business Server في Microsoft 365.
+تشرح النظرة العامة التالية عملية استخدام موصل بيانات أرشفة بيانات Skype for Business Server في Microsoft 365.
 
 ![أرشفة سير العمل لبيانات Skype for Business Server من 17a-4.](../media/SkypeServerDataParserConnectorWorkflow.png)
 
@@ -45,9 +43,9 @@ ms.locfileid: "65320773"
 
 - إنشاء حساب DataParser لموصلات Microsoft. للقيام بذلك، اتصل [ب 17a-4 LLC](https://www.17a-4.com/contact/). تحتاج إلى تسجيل الدخول إلى هذا الحساب عند إنشاء الموصل في الخطوة 1.
 
-- يجب تعيين دور مسؤول موصل البيانات للمستخدم الذي يقوم بإنشاء موصل Skype for Business Server DataParser في الخطوة 1 (وإكماله في الخطوة 3). هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل التوافق. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور مسؤول موصل البيانات، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع المقطع "إنشاء مجموعة أدوار مخصصة" في ["الأذونات" في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- يجب تعيين دور مسؤول موصل البيانات للمستخدم الذي يقوم بإنشاء موصل Skype for Business Server DataParser في الخطوة 1 (وإكماله في الخطوة 3). هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل التوافق. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور موصل البيانات مسؤول، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع المقطع "إنشاء مجموعة أدوار مخصصة" في ["الأذونات" في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
-- يتوفر موصل البيانات 17a-4 هذا في بيئات سحابة القطاع الحكومي في Microsoft 365 سحابة حكومة الولايات المتحدة. قد تتضمن تطبيقات وخدمات الجهات الخارجية تخزين بيانات العملاء الخاصة بمؤسستك وإرسالها ومعالجتها على أنظمة تابعة لجهات خارجية خارج البنية الأساسية Microsoft 365 وبالتالي لا تغطيها التزامات Microsoft Purview وحماية البيانات. لا تقدم Microsoft أي تمثيل يشير إلى أن استخدام هذا المنتج للاتصال بتطبيقات الجهات الخارجية يعني أن تطبيقات الجهات الخارجية هذه متوافقة مع FEDRAMP.
+- يتوفر موصل البيانات 17a-4 هذا في بيئات GCC في سحابة Microsoft 365 US Government. قد تتضمن تطبيقات وخدمات الجهات الخارجية تخزين بيانات العملاء في مؤسستك وإرسالها ومعالجتها على أنظمة تابعة لجهات خارجية خارج البنية الأساسية ل Microsoft 365 وبالتالي لا تغطيها التزامات Microsoft Purview وحماية البيانات. لا تقدم Microsoft أي تمثيل يشير إلى أن استخدام هذا المنتج للاتصال بتطبيقات الجهات الخارجية يعني أن تطبيقات الجهات الخارجية هذه متوافقة مع FEDRAMP.
 
 ## <a name="step-1-set-up-a-skype-for-business-server-dataparser-connector"></a>الخطوة 1: إعداد موصل dataParser Skype for Business Server
 
@@ -69,7 +67,7 @@ ms.locfileid: "65320773"
 
 ## <a name="step-3-map-users"></a>الخطوة 3: تعيين المستخدمين
 
-سيقوم موصل Skype for Business Server DataParser تلقائيا بتعيين المستخدمين إلى عناوين بريدهم الإلكتروني Microsoft 365 قبل استيراد البيانات إلى Microsoft 365.
+سيقوم موصل Skype for Business Server DataParser تلقائيا بتعيين المستخدمين إلى عناوين بريدهم الإلكتروني في Microsoft 365 قبل استيراد البيانات إلى Microsoft 365.
 
 ## <a name="step-4-monitor-the-skype-for-business-server-dataparser-connector"></a>الخطوة 4: مراقبة موصل Skype for Business Server DataParser
 

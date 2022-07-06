@@ -19,16 +19,14 @@ description: تعرف على كيفية تحديد المستندات من مج�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 599af9e2060497738076cd702e9e3dd31f5db06d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4fc1548903ebea3a42d1612c8e9c74be32bbe0ba
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094130"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640953"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>إضافة بيانات إلى مجموعة مراجعة من مجموعة مراجعة أخرى
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 في بعض الحالات، قد يكون من الضروري تحديد مستندات من مجموعة مراجعة واحدة والعمل معها بشكل فردي في مجموعة مراجعة أخرى. يعد هذا مفيدا بشكل خاص إذا كنت قد أحصيت المحتوى في مجموعة مراجعة وتريد تشغيل التحليلات على المجموعة الفرعية من البيانات.
 

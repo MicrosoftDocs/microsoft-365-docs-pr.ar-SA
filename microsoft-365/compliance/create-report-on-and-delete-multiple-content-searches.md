@@ -19,24 +19,22 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: تعرف على كيفية أتمتة مهام البحث في المحتوى مثل إنشاء عمليات البحث وتشغيل التقارير باستخدام Security & Compliance PowerShell.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50d0a66957e4bdca1e39cb42c837aa0f992bad98
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: be456c737188f02cfad245d4a1dc4661f2c611a5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018064"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638577"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>إنشاء عدة عمليات بحث في المحتوى وإعداد تقرير بشأنها وحذفها
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  غالبا ما يكون إنشاء عمليات البحث عن الاكتشاف والإبلاغ عنها بسرعة خطوة مهمة في eDiscovery والتحقيقات عندما تحاول التعرف على البيانات الأساسية وثراء عمليات البحث وجودتها. لمساعدتك على القيام بذلك، يوفر Security & Compliance PowerShell مجموعة من أوامر cmdlets لأتمتة مهام البحث عن المحتوى التي تستغرق وقتا طويلا. توفر هذه البرامج النصية طريقة سريعة وسهلة لإنشاء عدد من عمليات البحث، ثم تشغيل تقارير نتائج البحث المقدرة التي يمكن أن تساعدك في تحديد كمية البيانات المعنية. يمكنك أيضا استخدام البرامج النصية لإنشاء إصدارات مختلفة من عمليات البحث لمقارنة النتائج التي ينتجها كل منها. يمكن أن تساعدك هذه البرامج النصية على تحديد بياناتك ومعالجتها بسرعة وكفاءة.
 
 ## <a name="before-you-create-a-content-search"></a>قبل إنشاء البحث في المحتوى
 
-- يجب أن تكون عضوا في مجموعة دور eDiscovery Manager في مدخل توافق Microsoft Purview لتشغيل البرامج النصية الموضحة في هذا الموضوع.
+- يجب أن تكون عضوا في مجموعة دور eDiscovery Manager في مدخل التوافق في Microsoft Purview لتشغيل البرامج النصية الموضحة في هذا الموضوع.
 
-- لتجميع قائمة بعناوين URL لمواقع OneDrive for Business في مؤسستك التي يمكنك إضافتها إلى ملف CSV في الخطوة 1، راجع [إنشاء قائمة بكافة مواقع OneDrive في مؤسستك](/onedrive/list-onedrive-urls).
+- لتجميع قائمة بعناوين URL لمواقع OneDrive for Business في مؤسستك التي يمكنك إضافتها إلى ملف CSV في الخطوة 1، راجع [إنشاء قائمة بجميع مواقع OneDrive في مؤسستك](/onedrive/list-onedrive-urls).
 
 - تأكد من حفظ كافة الملفات التي تقوم بإنشائها في هذا الموضوع إلى المجلد نفسه. وهذا سيجعل من السهل تشغيل البرامج النصية.
 
@@ -46,7 +44,7 @@ ms.locfileid: "66018064"
 
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>الخطوة 1: إنشاء ملف CSV يحتوي على معلومات حول عمليات البحث التي تريد تشغيلها
 
-يحتوي ملف القيمة المفصولة بفاواصل (CSV) الذي تقوم بإنشائه في هذه الخطوة على صف لكل مستخدم يريد البحث. يمكنك البحث في علبة بريد المستخدم Exchange Online (التي تتضمن علبة بريد الأرشيف، إذا تم تمكينها) وموقع OneDrive for Business الخاص به. أو يمكنك البحث فقط في علبة البريد أو موقع OneDrive for Business. يمكنك أيضا البحث في أي موقع في مؤسستك SharePoint Online. سيقوم البرنامج النصي الذي تقوم بتشغيله في الخطوة 3 بإنشاء بحث منفصل لكل صف في ملف CSV.
+يحتوي ملف القيمة المفصولة بفاواصل (CSV) الذي تقوم بإنشائه في هذه الخطوة على صف لكل مستخدم يريد البحث. يمكنك البحث في علبة بريد المستخدم Exchange Online (التي تتضمن علبة بريد الأرشيف، إذا تم تمكينها) وموقع OneDrive for Business الخاص به. أو يمكنك البحث فقط في علبة البريد أو موقع OneDrive for Business. يمكنك أيضا البحث في أي موقع في مؤسسة SharePoint Online. سيقوم البرنامج النصي الذي تقوم بتشغيله في الخطوة 3 بإنشاء بحث منفصل لكل صف في ملف CSV.
 
 1. انسخ النص التالي والصقه في ملف .txt باستخدام NotePad. احفظ هذا الملف في مجلد على الكمبيوتر المحلي. ستحفظ البرامج النصية الأخرى إلى هذا المجلد أيضا.
 
@@ -71,15 +69,15 @@ ms.locfileid: "66018064"
    |`ExchangeLocation`|عنوان SMTP لعل بريد المستخدم.|
    |`SharePointLocation`|عنوان URL لموقع OneDrive for Business الخاص بالمستخدم أو URL لأي موقع في مؤسستك. بالنسبة إلى URL لمواقع OneDrive for Business، استخدم هذا التنسيق: ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `. على سبيل المثال،  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.|
    |`ContentMatchQuery`|استعلام البحث للبحث. لمزيد من المعلومات حول إنشاء استعلام بحث، راجع [استعلامات الكلمات الأساسية وشروط البحث في البحث عن المحتوى](keyword-queries-and-search-conditions.md).|
-   |`StartDate`|بالنسبة للبريد الإلكتروني، التاريخ الذي تم فيه تلقي الرسالة أو بعدها من قبل مستلم أو تم إرسالها من قبل المرسل. بالنسبة للمستندات الموجودة على مواقع SharePoint أو OneDrive for Business، تم آخر تعديل في المستند أو بعده.|
-   |`EndDate`|بالنسبة للبريد الإلكتروني، يتم إرسال تاريخ إرسال الرسالة من قبل المستخدم أو قبلها. بالنسبة للمستندات الموجودة على مواقع SharePoint أو OneDrive for Business، التاريخ الذي تم فيه آخر تعديل للمستند أو قبله.|
+   |`StartDate`|بالنسبة للبريد الإلكتروني، التاريخ الذي تم فيه تلقي الرسالة أو بعدها من قبل مستلم أو تم إرسالها من قبل المرسل. بالنسبة للمستندات الموجودة في SharePoint أو مواقع OneDrive for Business، تم آخر تعديل في المستند أو بعده.|
+   |`EndDate`|بالنسبة للبريد الإلكتروني، يتم إرسال تاريخ إرسال الرسالة من قبل المستخدم أو قبلها. بالنسبة للمستندات الموجودة في SharePoint أو مواقع OneDrive for Business، تاريخ آخر تعديل في المستند أو قبله.|
    |
 
 3. احفظ ملف Excel كملف CSV إلى مجلد على الكمبيوتر المحلي. سيستخدم البرنامج النصي الذي تقوم بإنشائه في الخطوة 3 المعلومات الموجودة في ملف CSV هذا لإنشاء عمليات البحث.
 
-## <a name="step-2-connect-to-security--compliance-powershell"></a>الخطوة 2: الاتصال إلى Security & Compliance PowerShell
+## <a name="step-2-connect-to-security--compliance-powershell"></a>الخطوة 2: الاتصال بالأمان & Compliance PowerShell
 
-الخطوة التالية هي الاتصال ب Security & Compliance PowerShell لمؤسستك. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+الخطوة التالية هي الاتصال ب Security & Compliance PowerShell لمؤسستك. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>الخطوة 3: تشغيل البرنامج النصي لإنشاء عمليات البحث وبدءها
 

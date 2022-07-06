@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: استخدم "محرر الاتصالات" لتغيير النص ودمج متغيرات الحقل عند تنسيق المحتوى.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b44f6090f4a8bc9b09bb7934477741effc30ff6e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 910d25b80775284b8b12d803e722579d987558cd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098395"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636954"
 ---
 # <a name="use-the-communications-editor"></a>استخدام محرر الاتصالات
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 أثناء تحديد محتوى المدخل وإعلامات الاحتجاز القانوني والتذكيرات/التصعيدات ذات الصلة، يمكنك استخدام "محرر الاتصالات" لتنسيق المحتوى وتخصيصه ديناميكيا.
 
