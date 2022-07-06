@@ -1,5 +1,5 @@
 ---
-title: إعادة توجيه المستخدمين من مركز الأمان والتوافق Office 365 إلى مدخل توافق Microsoft Purview
+title: إعادة توجيه المستخدمين من مركز الأمان والتوافق Office 365 إلى مدخل التوافق في Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,21 +9,19 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: تعرف على إعادة التوجيه التلقائي للمستخدمين من مستخدمي مركز الأمان والتوافق Office 365 إلى مدخل توافق Microsoft Purview.
+description: تعرف على إعادة التوجيه التلقائي للمستخدمين من مستخدمي مركز الأمان والتوافق Office 365 إلى مدخل التوافق في Microsoft Purview.
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b88c5f5915944c813f5c803e3526f1bf42040159
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: e1c079eda89033dee05eae9b9059521d625b2f5c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65242997"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635776"
 ---
-# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-purview-compliance-portal"></a>إعادة توجيه المستخدمين من مركز الأمان والتوافق Office 365 إلى مدخل توافق Microsoft Purview
+# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-purview-compliance-portal"></a>إعادة توجيه المستخدمين من مركز الأمان والتوافق Office 365 إلى مدخل التوافق في Microsoft Purview
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-تشرح هذه المقالة كيفية عمل إعادة التوجيه التلقائي للمستخدمين الذين يصلون إلى حلول التوافق من Office 365 مركز الأمان والتوافق (protection.office.com) إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل توافق Microsoft Purview</a>.
+تشرح هذه المقالة كيفية عمل إعادة التوجيه التلقائي للمستخدمين الذين يصلون إلى حلول التوافق من مركز الأمان والتوافق Office 365 (protection.office.com) إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>.
 
 ## <a name="what-to-expect"></a>ما يجب توقعه
 
@@ -45,4 +43,4 @@ ms.locfileid: "65242997"
 
 ## <a name="related-information"></a>المعلومات ذات الصلة
 
-- [نظرة عامة على مدخل الامتثال ل Microsoft Purview](/microsoft-365/compliance/microsoft-365-compliance-center)
+- [نظرة عامة على مدخل التوافق في Microsoft Purview](/microsoft-365/compliance/microsoft-365-compliance-center)

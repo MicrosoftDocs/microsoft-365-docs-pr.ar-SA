@@ -19,16 +19,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: نحن نصدر نهج تنبيه جديدة Microsoft Defender لـ Office 365. نقوم أيضا بتقاعد نهجي تنبيه موجودين تم استبدالهما بنهجين جديدين.
-ms.openlocfilehash: c883a352bad5af918d605bd8fa95112a7df07bd3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0f9a8b74febe3ea59d022baceff7c15c3ee2e5d1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097987"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633995"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>نهج التنبيه الجديدة في Microsoft Defender لـ Office 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يقدم Microsoft Defender لـ Office 365 نهج تنبيه جديدة ومحسنة تتعلق بالكشف عن ما بعد التسليم. ويشمل ذلك تحسينات على أدلة مبادئ الاستجابة & التحقيق التلقائي (AIR) المرتبطة بها. بالإضافة إلى ذلك، نقوم بتعديل تصنيف الخطورة لستة نهج تنبيه افتراضية لمواءمة التنبيهات التي تم إنشاؤها بواسطة هذه النهج بشكل أفضل مع تأثيرها على مؤسستك.
 
@@ -56,7 +54,7 @@ ms.locfileid: "65097987"
 |**نشاط إعادة توجيه البريد الإلكتروني المريب**|BFD48F06-0865-41A6-85FF-ADB746423EBF|المتوسطه|عاليه|
 |**البريد الإلكتروني الذي أبلغ عنه المستخدم على أنه برامج ضارة أو تصيد احتيالي**|B26A5770-0C38-434A-9380-3A3C2C27BBB3|اعلاميه|منخفضه|
 |**زيادة غير عادية في البريد الإلكتروني الذي تم الإبلاغ عنه على أنه تصيد احتيالي**|A00D8C62-9320-4EEA-A7E5-966B9AC09558|عاليه|المتوسطه|
-|**اكتملت نتيجة إرسال المسؤول**|AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41|منخفضه|اعلاميه|
+|**اكتمال نتيجة إرسال مسؤول**|AE9B83DD-6039-4EA9-B675-6B0AC3BF4A41|منخفضه|اعلاميه|
 |**إنشاء قاعدة إعادة التوجيه/إعادة التوجيه**|D59A8FD4-1272-41EE-9408-86F7BCF72479|منخفضه|اعلاميه|
 |**بدء البحث في eDiscovery أو تصديره**|6FDC5710-3998-47F0-AFBB-57CEFD7378A|Meduim|اعلاميه|
 
@@ -99,7 +97,7 @@ ms.locfileid: "65097987"
 
 ## <a name="what-you-need-to-do-to-prepare-for-these-changes"></a>ما عليك فعله للتحضير لهذه التغييرات
 
-ستحدد كيفية استخدام مؤسستك لهذه التنبيهات ما تحتاج إلى القيام به للتحضير. إذا قمت بتشغيل التنبيهات وكنت تستخدمها أو تستهلكها إما من خلال واجهة برمجة تطبيقات أو إعلام بالبريد الإلكتروني للتنبيه أو في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل توافق Microsoft Purview</a> أو <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، فستحتاج إلى تعديل مهام سير العمل الخاصة بك.
+ستحدد كيفية استخدام مؤسستك لهذه التنبيهات ما تحتاج إلى القيام به للتحضير. إذا قمت بتفعيل التنبيهات وكنت تستخدمها أو تستهلكها إما من خلال واجهة برمجة تطبيقات أو إعلام بالبريد الإلكتروني للتنبيه أو في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a> أو <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">مدخل Microsoft 365 Defender</a>، فستحتاج إلى تعديل مهام سير العمل.
 
 **إذا لم تكن قد قمت بتفعيل هذه التنبيهات، يمكنك القيام بأحد الإجراءات التالية:**
 

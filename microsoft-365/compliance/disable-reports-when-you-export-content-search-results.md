@@ -16,19 +16,17 @@ search.appverid:
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
-description: قم بتحرير Windows Registry على الكمبيوتر المحلي لتعطيل التقارير عند تصدير نتائج البحث عن المحتوى من مدخل توافق Microsoft Purview.
-ms.openlocfilehash: 3f44c30b2fe3459e44f2d1c5a2d372e57774eeb2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: قم بتحرير "سجل Windows" على الكمبيوتر المحلي لتعطيل التقارير عند تصدير نتائج "البحث في المحتوى" من مدخل التوافق في Microsoft Purview.
+ms.openlocfilehash: 55a5405d516b0bf3daaca5970a25794b468a5119
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094957"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636172"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>تعطيل التقارير عند تصدير نتائج البحث في المحتوى
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-عند استخدام أداة eDiscovery Export لتصدير نتائج البحث عن المحتوى في مدخل توافق Microsoft Purview، تقوم الأداة تلقائيا بإنشاء تقريرين يحتويان على معلومات إضافية حول المحتوى الذي تم تصديره وتصديرهما. هذه التقارير هي ملف Results.csv وملف Manifest.xml (راجع [الأسئلة المتداولة حول تعطيل قسم تقارير التصدير](#frequently-asked-questions-about-disabling-export-reports) في هذا الموضوع للحصول على أوصاف مفصلة لهذه التقارير). نظرا لأن هذه الملفات يمكن أن تكون كبيرة جدا، يمكنك تسريع وقت التنزيل وتوفير مساحة على القرص عن طريق منع تصدير هذه الملفات. يمكنك القيام بذلك عن طريق تغيير Windows Registry على الكمبيوتر الذي تستخدمه لتصدير نتائج البحث. إذا كنت تريد تضمين التقارير في وقت لاحق، يمكنك تحرير إعداد التسجيل. 
+عند استخدام أداة eDiscovery Export لتصدير نتائج البحث في المحتوى في مدخل التوافق في Microsoft Purview، تقوم الأداة تلقائيا بإنشاء تقريرين يحتويان على معلومات إضافية حول المحتوى الذي تم تصديره وتصديرهما. هذه التقارير هي ملف Results.csv وملف Manifest.xml (راجع [الأسئلة المتداولة حول تعطيل قسم تقارير التصدير](#frequently-asked-questions-about-disabling-export-reports) في هذا الموضوع للحصول على أوصاف مفصلة لهذه التقارير). نظرا لأن هذه الملفات يمكن أن تكون كبيرة جدا، يمكنك تسريع وقت التنزيل وتوفير مساحة على القرص عن طريق منع تصدير هذه الملفات. يمكنك القيام بذلك عن طريق تغيير سجل Windows على الكمبيوتر الذي تستخدمه لتصدير نتائج البحث. إذا كنت تريد تضمين التقارير في وقت لاحق، يمكنك تحرير إعداد التسجيل. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>إنشاء إعدادات التسجيل لتعطيل تقارير التصدير
 
@@ -40,7 +38,7 @@ ms.locfileid: "65094957"
     
     - **Results.csv**
     
-      احفظ النص التالي في ملف تسجيل Windows باستخدام لاحقة اسم الملف ل .reg؛ على سبيل المثال، DisableResultsCsv.reg.
+      احفظ النص التالي في ملف تسجيل Windows باستخدام لاحقة اسم الملف ل .reg; على سبيل المثال، DisableResultsCsv.reg.
     
       ```text
       Windows Registry Editor Version 5.00
@@ -49,14 +47,14 @@ ms.locfileid: "65094957"
 
     - **Manifest.xml**
     
-      احفظ النص التالي إلى ملف تسجيل Windows باستخدام لاحقة اسم الملف ل .reg؛ على سبيل المثال، DisableManifestXml.reg.
+      احفظ النص التالي في ملف تسجيل Windows باستخدام لاحقة اسم الملف ل .reg; على سبيل المثال، DisableManifestXml.reg.
     
       ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d False 
       ```
 
-3. في Windows Explorer، انقر فوق ملف .reg الذي أنشأته في الخطوات السابقة أو انقر نقرا مزدوجا فوقه.
+3. في مستكشف Windows، انقر فوق ملف .reg الذي أنشأته في الخطوات السابقة أو انقر نقرا مزدوجا فوقه.
     
 4. في نافذة التحكم في وصول المستخدم، انقر فوق **"نعم** " للسماح لمحرر التسجيل بإجراء التغيير. 
     
@@ -74,7 +72,7 @@ ms.locfileid: "65094957"
     
     - **Results.csv**
     
-        افتح ملف DisableResultsCsv.reg في المفكرة، وقم بتغيير القيمة `False` إلى `True`، ثم احفظ الملف. على سبيل المثال، بعد تحرير الملف، يبدو كما يلي:
+        افتح ملف DisableResultsCsv.reg في المفكرة، وقم بتغيير القيمة  `False` إلى  `True`، ثم احفظ الملف. على سبيل المثال، بعد تحرير الملف، يبدو كما يلي:
     
         ```text
         Windows Registry Editor Version 5.00
@@ -83,14 +81,14 @@ ms.locfileid: "65094957"
 
     - **Manifest.xml**
     
-        افتح ملف DisableManifestXml.reg في المفكرة، وقم بتغيير القيمة `False` إلى `True`، ثم احفظ الملف. على سبيل المثال، بعد تحرير الملف، يبدو كما يلي:
+        افتح ملف DisableManifestXml.reg في المفكرة، وقم بتغيير القيمة  `False` إلى  `True`، ثم احفظ الملف. على سبيل المثال، بعد تحرير الملف، يبدو كما يلي:
     
       ```text
       Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultEdrmEnabled /t REG_SZ /d True
       ```
 
-3. في Windows Explorer، انقر فوق ملف .reg الذي قمت بتحريره في الخطوة السابقة أو انقر نقرا مزدوجا فوقه.
+3. في مستكشف Windows، انقر فوق ملف .reg الذي قمت بتحريره في الخطوة السابقة أو انقر نقرا مزدوجا فوقه.
     
 4. في نافذة التحكم في وصول المستخدم، انقر فوق **"نعم** " للسماح لمحرر التسجيل بإجراء التغيير. 
     
@@ -116,7 +114,7 @@ ms.locfileid: "65094957"
     
   - ما إذا كانت الرسالة رسالة مكررة إذا قمت بتمكين إلغاء التكرار عند تصدير نتائج البحث. سيكون للرسائل المكررة قيمة في العمود **"معرف العنصر الأصل"** الذي يعرف الرسالة على أنها مكررة. القيمة الموجودة في العمود **"معرف العنصر الأصل"** هي نفس القيمة الموجودة في عمود **"معرف مستند العنصر"** للرسالة التي تم تصديرها. 
     
-    بالنسبة للمستندات من مواقع SharePoint OneDrive for Business، يحتوي سجل النتائج على معلومات حول كل مستند، بما في ذلك:
+    بالنسبة للمستندات من SharePoint ومواقع OneDrive for Business، يحتوي سجل النتائج على معلومات حول كل مستند، بما في ذلك:
     
   - عنوان URL للمستند.
     

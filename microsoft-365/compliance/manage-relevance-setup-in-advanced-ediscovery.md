@@ -16,23 +16,21 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: اقرأ توصيات إعداد التدريب على الصلة في eDiscovery (Premium) لتسجيل الملفات حسب أهميتها وإنشاء نتائج تحليلية.
-ms.openlocfilehash: be9347468ef39fd5d6ae254ff4eb662a795f4f0b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6c6d1b88f9cbb92d44a040f1f060b860252df263
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098505"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635228"
 ---
 # <a name="manage-relevance-setup-in-ediscovery-premium-classic"></a>إدارة إعداد الصلة في eDiscovery (Premium) (كلاسيكي)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!NOTE]
-> يتطلب Microsoft Purview eDiscovery (Premium) Office 365 E3 باستخدام الوظيفة الإضافية "التوافق المتقدم" أو اشتراك E5 لمؤسستك. إذا لم تكن لديك هذه الخطة وتريد تجربة eDiscovery (Premium)، يمكنك [التسجيل للحصول على إصدار تجريبي من Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> يتطلب Microsoft Purview eDiscovery (Premium) Office 365 E3 باستخدام الوظيفة الإضافية "التوافق المتقدم" أو اشتراك E5 لمؤسستك. إذا لم يكن لديك هذه الخطة وتريد تجربة eDiscovery (Premium)، يمكنك [التسجيل للحصول على إصدار تجريبي من Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
- تستخدم تقنية eDiscovery (Premium) الصلة برامج موجهة من قبل الخبراء لتسجيل الملفات حسب أهميتها. يمكن استخدام eDiscovery (Premium) الصلة لتقييم الحالة المبكرة (ECA) والإحصاء ومراجعة عينة الملف. 
+ تستخدم تقنية الصلة eDiscovery (Premium) برامج موجهة من قبل الخبراء لتسجيل الملفات حسب صلتها. يمكن استخدام صلة eDiscovery (Premium) لتقييم الحالة المبكرة (ECA) والإحصاء ومراجعة عينة الملف. 
   
- يتضمن eDiscovery (Premium) مكونات للتدريب على الصلة ووضع علامات على الملفات ذات الصلة بحالة ما. يتعلم eDiscovery (Premium) من العينات المدربة للملفات ذات الصلة وغير ذات الصلة لتوفير درجات الصلة لكل ملف، وينشئ نتائج تحليلية يمكن استخدامها أثناء عملية مراجعة الملف وبعدها. 
+ يتضمن eDiscovery (Premium) مكونات للتدريب على الصلة ووضع علامات على الملفات ذات الصلة بحالة ما. يتعلم eDiscovery (Premium) من العينات المدربة من الملفات ذات الصلة وغير ذات الصلة لتوفير درجات الصلة لكل ملف، وينشئ نتائج تحليلية يمكن استخدامها أثناء عملية مراجعة الملف وبعدها. 
   
 ## <a name="guidelines-for-setting-up-relevance-training"></a>إرشادات إعداد التدريب على الصلة
 
@@ -46,9 +44,9 @@ ms.locfileid: "65098505"
   
   - تحديد ما إذا كانت كل مجموعة من الملفات ذات صلة بمشكلة معينة فقط.
 
-  - إذا تم تعريف مشكلة بشكل عام جدا، فقد ينتج عن eDiscovery (Premium) عدد كبير جدا من الملفات غير ذات الصلة. إذا تم تعريف مشكلة بشكل ضيق جدا، فقد تستغرق عملية التدريب على الصلة المزيد من الوقت. 
+  - إذا تم تعريف مشكلة بشكل عام جدا، فقد ينتج عن eDiscovery (Premium) الكثير من الملفات غير ذات الصلة. إذا تم تعريف مشكلة بشكل ضيق جدا، فقد تستغرق عملية التدريب على الصلة المزيد من الوقت. 
 
-  - أثناء كل دورة تدريبية حول الصلة، يركز eDiscovery (Premium) على مشكلة نشطة واحدة ويتم عرض نتائج العينة المؤقتة وفقا لذلك.
+  - في أثناء كل دورة تدريبية حول الصلة، يركز eDiscovery (Premium) على مشكلة نشطة واحدة ويتم عرض نتائج العينة المؤقتة وفقا لذلك.
 
   - في سيناريو متعدد المشاكل، يتيح وضع أخذ العينات إمكانية تضمين تحديد المشكلات في المعالجة. لا تتم معالجة المشكلات المعرفة على أنها "إيقاف تشغيل" حتى يتم تغيير وضع أخذ العينات الخاص بها. يمكن أن تكون المشكلة "خاملة" أو "قيد التشغيل" وخبير واحد فقط.
 

@@ -17,16 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: استخدم Microsoft Purview Advanced Message Encryption لتوسيع أمان البريد الإلكتروني عن طريق تعيين تاريخ انتهاء صلاحية على رسائل البريد الإلكتروني من خلال قالب مخصص له علامة تجارية.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 78855ae8906367293b69406ba74246619b5af465
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b93aad4f217f956561b686b1415c64456a4360db
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015551"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635140"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>تعيين تاريخ انتهاء صلاحية للبريد الإلكتروني المشفر بواسطة تشفير الرسائل المتقدم من Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتم تضمين تشفير الرسائل المتقدم ل Microsoft Purview في [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home)، Office 365 E5، Microsoft 365 E5 (تسعير الموظفين غير الربحي)، Office 365 Enterprise E5 (تسعير الموظفين غير الربحي)، و Office 365 Education A5. التوافق في Microsoft 365 E5 وظيفة SKU الإضافية Microsoft 365 E3 أو Microsoft 365 E3 (تسعير الموظفين غير الربحي) أو الوظيفة الإضافية خدمات الامتثال المتطورة في Office 365 SKU ل Microsoft 365 E3 أو Microsoft 365 E3 (أسعار الموظفين غير الربحية) أو Office 365 وحدات SKU.
 
@@ -44,7 +42,7 @@ ms.locfileid: "66015551"
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>إنشاء قالب علامة تجارية مخصص لفرض انتهاء صلاحية البريد باستخدام PowerShell
 
-1. [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) باستخدام حساب لديه أذونات المسؤول العام في مؤسستك.
+1. [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) باستخدام حساب لديه أذونات المسؤول العام في مؤسستك.
 
 2. تشغيل New-OMEConfiguration cmdlet.
 

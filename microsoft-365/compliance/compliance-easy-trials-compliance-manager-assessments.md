@@ -14,16 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: حول تجارب التقييم المتميزة ل Microsoft Purview Compliance Manager.
-ms.openlocfilehash: b5d653626eadbfcc6e58d2be36a7ed8899c02eeb
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 50950cc39d9a987239a7b10c70f68aece5647085
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187745"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631260"
 ---
 # <a name="about-the-free-trial-for-microsoft-purview-compliance-manager-premium-assessments"></a>حول الإصدار التجريبي المجاني من تقييمات Microsoft Purview Compliance Manager المتميزة
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يساعدك Compliance Manager على إدارة متطلبات الامتثال لمؤسستك وتقييم نقاط الامتثال وتحسينها. تستند التقييمات التي تنشئها إلى قوالب تتوافق مع اللوائح الحكومية ومعايير الصناعة في جميع أنحاء العالم.  
 
@@ -31,18 +29,18 @@ ms.locfileid: "65187745"
 
 ## <a name="terms-and-conditions"></a>الشروط والأحكام
 
-راجع [الأحكام والشروط](/legal/microsoft-365/microsoft-365-trial) الخاصة Microsoft 365 الإصدارات التجريبية.
+راجع [الأحكام والشروط](/legal/microsoft-365/microsoft-365-trial) الخاصة بتجارب Microsoft 365.
 
 ## <a name="set-up-a-premium-assessment-trial"></a>إعداد إصدار تجريبي للتقييم المتميز
 
-يمكنك التسجيل للحصول على إصدار تجريبي في مدخل توافق Microsoft Purview باستخدام ارتباط **Trials** في جزء التنقل الأيمن. حدد **إصدار التقييم المتميز ل Compliance Manager** لبدء إصدار تجريبي لقوالب التقييم المتميزة.
+يمكنك التسجيل للحصول على إصدار تجريبي في مدخل التوافق في Microsoft Purview باستخدام الارتباط **Trials** في جزء التنقل الأيمن. حدد **إصدار التقييم المتميز ل Compliance Manager** لبدء إصدار تجريبي لقوالب التقييم المتميزة.
 
-يتوفر إصدار التقييم التجريبي المتميز هذا للمؤسسات التي تستخدم Compliance Manager بموجب ترخيص تجاري. للحصول على معلومات سحابة القطاع الحكومي و DOD وخيارات الإصدار التجريبي، راجع [استخدام قوالب Compliance Manager](compliance-manager-templates.md).
+يتوفر إصدار التقييم التجريبي المتميز هذا للمؤسسات التي تستخدم Compliance Manager بموجب ترخيص تجاري. للحصول على معلومات GCC و DOD وخيارات الإصدار التجريبي، راجع ["العمل باستخدام قوالب Compliance Manager](compliance-manager-templates.md)".
 
 قد يعتمد الوصول الكامل إلى ميزات Compliance Manager على اتفاقية الترخيص الخاصة بك ل Compliance Manager. لمعرفة المزيد حول الإصدار التجريبي للتوافق المجاني الذي يتضمن Compliance Manager، راجع [حول الإصدار التجريبي المجاني ل Microsoft Purview](compliance-easy-trials.md).
 
 > [!NOTE]
-> تحقق من إعدادات مركز مسؤولي Microsoft 365 لتسهيل التسجيل في الإصدار التجريبي. في مركز مسؤولي Microsoft 365، انتقل إلى صفحة **> Services لإعدادات المؤسسة الإعدادات >**، وحدد **التطبيقات والخدمات المملوكة للمستخدم**. ثم حدد المربع للسماح للمستخدمين ببدء الإصدارات التجريبية نيابة عن مؤسستك. عند انتهاء الإعداد في غضون دقيقتين، يمكنك العودة وإلغاء تحديد المربع لتعطيل هذا الإعداد. يمكنك أيضا بدء الإصدار التجريبي دون ضبط إعدادات مؤسستك من خلال الانتقال إلى صفحة **خدمات الفوترة > الشراء** والبحث عن الإصدار التجريبي للتقييم المتميز ل Compliance Manager.
+> تحقق من إعدادات مركز مسؤولي Microsoft 365 لتسهيل التسجيل في الإصدار التجريبي. في مركز مسؤولي Microsoft 365، انتقل إلى صفحة **الإعدادات > المؤسسة > Services**، وحدد **التطبيقات والخدمات المملوكة للمستخدم**. ثم حدد المربع للسماح للمستخدمين ببدء الإصدارات التجريبية نيابة عن مؤسستك. عند انتهاء الإعداد في غضون دقيقتين، يمكنك العودة وإلغاء تحديد المربع لتعطيل هذا الإعداد. يمكنك أيضا بدء الإصدار التجريبي دون ضبط إعدادات مؤسستك من خلال الانتقال إلى صفحة **خدمات الفوترة > الشراء** والبحث عن الإصدار التجريبي للتقييم المتميز ل Compliance Manager.
 
 ## <a name="template-licensing"></a>ترخيص القالب
 

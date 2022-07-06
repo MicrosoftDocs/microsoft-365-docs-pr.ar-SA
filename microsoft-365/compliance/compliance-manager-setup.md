@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: تعيين أذونات وأدوار مستخدم Microsoft Purview Compliance Manager وتكوين الاختبار التلقائي للإجراءات. إدارة محفوظات المستخدم وتصفية طريقة عرض لوحة المعلومات.
-ms.openlocfilehash: 76126f9a13716e3ebf48309f8129de6ede4d11e9
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 1053ff60416a80d88e29e8a8f4bc9ac3fdfc133b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574036"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634754"
 ---
 # <a name="get-started-with-compliance-manager"></a>بدء استخدام "إدارة الترحيل"
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **في هذه المقالة:** تساعدك هذه المقالة على إعداد Compliance Manager. تعرف على كيفية **الوصول** إلى Compliance Manager **وتعيين الأدوار والأذونات** وتكوين **الاختبار التلقائي لإجراءات التحسين**. استعرض **لوحة معلومات Compliance Manager** وافهم الصفحات الرئيسية: صفحة إجراءات التحسين وصفحة الحلول وصفحة التقييمات وصفحة قوالب التقييم.
 

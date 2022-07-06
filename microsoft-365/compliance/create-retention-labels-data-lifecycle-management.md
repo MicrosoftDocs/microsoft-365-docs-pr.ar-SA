@@ -17,26 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: إرشادات لإنشاء تسميات استبقاء لاستثناءات نهج الاستبقاء لإدارة دورة حياة البيانات حتى تتمكن من الاحتفاظ بما تحتاجه وحذف ما لا تحتاج إليه.
-ms.openlocfilehash: 082297e7d967493dc2ca4bb73be408b320e1775c
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0951ce1fea2f9324c19ec0bf17451d458b4914d1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285913"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632564"
 ---
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>إنشاء تسميات استبقاء للاستثناءات لنهج الاستبقاء
 
->*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 كجزء من استراتيجية حوكمة البيانات للاحتفاظ بما تحتاجه وحذف ما لا تحتاج إليه، قد تحتاج إلى إنشاء بعض تسميات الاستبقاء للعناصر التي تحتاج إلى استثناءات لنهج الاستبقاء الخاصة بك.
 
 بينما تنطبق نهج الاستبقاء تلقائيا على جميع العناصر على مستوى الحاوية (مثل مواقع SharePoint وعلب بريد المستخدمين وما إلى ذلك)، تنطبق تسميات الاستبقاء على العناصر الفردية، مثل مستند SharePoint أو رسالة بريد إلكتروني.
 
-تأكد من فهم [مبادئ الاستبقاء](retention.md#the-principles-of-retention-or-what-takes-precedence) قبل استخدام تسميات الاستبقاء لتكملة نهج استبقاء لعناصر معينة SharePoint أو OneDrive أو Exchange. عادة، ستستخدم تسميات الاستبقاء للاحتفاظ بالعناصر المحددة أطول من نهج الاستبقاء المطبق، ولكن يمكن استخدامها أيضا لتجاوز الحذف التلقائي في نهاية فترة الاستبقاء، أو تطبيق فترة حذف مختلفة.
+تأكد من فهم [مبادئ الاستبقاء](retention.md#the-principles-of-retention-or-what-takes-precedence) قبل استخدام تسميات الاستبقاء لتكملة نهج استبقاء لعناصر SharePoint أو OneDrive أو Exchange معينة. عادة، ستستخدم تسميات الاستبقاء للاحتفاظ بالعناصر المحددة أطول من نهج الاستبقاء المطبق، ولكن يمكن استخدامها أيضا لتجاوز الحذف التلقائي في نهاية فترة الاستبقاء، أو تطبيق فترة حذف مختلفة.
 
-كمثال نموذجي: يجب الاحتفاظ بغالبية المحتوى على مواقع SharePoint لمدة ثلاث سنوات، والتي تغطيها سياسة الاستبقاء. ولكن لديك بعض مستندات العقد التي يجب الاحتفاظ بها لمدة سبع سنوات. يمكن معالجة هذه الاستثناءات باستخدام تسميات الاستبقاء. بعد تعيين نهج الاستبقاء إلى كافة المواقع SharePoint، يمكنك تطبيق تسميات الاستبقاء على مستندات العقد. سيتم الاحتفاظ بكافة عناصر SharePoint لمدة ثلاث سنوات، وسيتم الاحتفاظ بمستندات العقد فقط لمدة سبع سنوات.
+كمثال نموذجي: يجب الاحتفاظ بغالبية المحتوى على مواقع SharePoint لمدة ثلاث سنوات، والتي تغطيها سياسة الاستبقاء. ولكن لديك بعض مستندات العقد التي يجب الاحتفاظ بها لمدة سبع سنوات. يمكن معالجة هذه الاستثناءات باستخدام تسميات الاستبقاء. بعد تعيين نهج الاستبقاء إلى كافة مواقع SharePoint، يمكنك تطبيق تسميات الاستبقاء على مستندات العقد. سيتم الاحتفاظ بكافة عناصر SharePoint لمدة ثلاث سنوات، وسيتم الاحتفاظ بمستندات العقد فقط لمدة سبع سنوات.
 
 لمزيد من الأمثلة حول كيفية استخدام تسميات الاستبقاء كاستثناءات لنهج الاستبقاء، راجع [الجمع بين نهج الاستبقاء وتسميات الاستبقاء](retention.md#combining-retention-policies-and-retention-labels).
 
@@ -53,13 +51,13 @@ ms.locfileid: "65285913"
 
 ## <a name="how-to-create-retention-labels-for-data-lifecycle-management"></a>كيفية إنشاء تسميات استبقاء لإدارة دورة حياة البيانات
 
-1. في [مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com/)، انتقل إلى: علامة التبويب **ManagementLabels** >  **لدورة حياة SolutionsData** >  > + **إنشاء تسمية**
+1. في [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/)، انتقل إلى: علامة **تبويب** **تسميات إدارة** >  دورة حياة بيانات **الحلول** >  > + **إنشاء تسمية**
     
     ألا ترى على الفور حل **إدارة دورة حياة البيانات** ؟ حدد أولا **إظهار الكل**. 
 
 2. اتبع المطالبات لإنشاء تسمية الاستبقاء. كن حذرا في الاسم الذي تختاره، لأنه لا يمكن تغيير ذلك بعد حفظ التسمية.
     
-    لمزيد من المعلومات حول إعدادات الاستبقاء، راجع [الإعدادات للاحتفاظ بالمحتوى وحذفه](retention-settings.md#settings-for-retaining-and-deleting-content).
+    لمزيد من المعلومات حول إعدادات الاستبقاء، راجع [إعدادات الاحتفاظ بالمحتوى وحذفه](retention-settings.md#settings-for-retaining-and-deleting-content).
 
 3. بعد إنشاء التسمية ورؤية الخيارات لنشر التسمية، قم بتطبيق التسمية تلقائيا، أو احفظ التسمية فقط: حدد **"ما عليك سوى حفظ التسمية في الوقت الحالي**"، ثم حدد **"تم**".
 

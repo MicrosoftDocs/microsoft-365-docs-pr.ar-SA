@@ -13,24 +13,22 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-description: سيتم إيقاف In-Place eDiscovery و In-Place e Hold (وPowerShell cmdlets المقابلة) في Exchange Online في النصف الأول من عام 2020. يتم أيضا إيقاف Search-Mailbox cmdlet وMicrosoft Purview eDiscovery (Premium) الإصدار 1.0 خلال نفس الفترة الزمنية.
-ms.openlocfilehash: 36883f7edae391ff3461d5d6c135112a4f058671
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: سيتم إيقاف In-Place eDiscovery و In-Place e Hold (وPowerShell cmdlets المقابلة) في Exchange Online في النصف الأول من عام 2020. يتم أيضا إيقاف Search-Mailbox cmdlet وv1.0 Microsoft Purview eDiscovery (Premium) خلال نفس الفترة الزمنية.
+ms.openlocfilehash: 630d72c75f318e6d4f9e68b01c61d5069958a0a1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012265"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636062"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>تقاعد أدوات eDiscovery القديمة
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 > [!IMPORTANT]
-> تمت إزالة وظائف أدوات eDiscovery القديمة الموضحة في هذه المقالة إما من خدمة Microsoft 365 أو لا تزال متوفرة، ولكن لم تعد معتمدة. يمكن إزالة أي وظيفة لا تزال متوفرة دون إشعار. إذا كنت لا تزال تستخدم أيا من هذه الأدوات القديمة، ففكر في الترحيل إلى أدوات eDiscovery في مدخل توافق Microsoft Purview أو أحد البدائل الموضحة في هذه المقالة.
+> تمت إزالة وظائف أدوات eDiscovery القديمة الموضحة في هذه المقالة إما من خدمة Microsoft 365 أو لا تزال متوفرة، ولكن لم تعد معتمدة. يمكن إزالة أي وظيفة لا تزال متوفرة دون إشعار. إذا كنت لا تزال تستخدم أيا من هذه الأدوات القديمة، ففكر في الترحيل إلى أدوات eDiscovery في مدخل التوافق في Microsoft Purview أو أحد البدائل الموضحة في هذه المقالة.
 
-على مر السنين، قدمت Microsoft أدوات eDiscovery التي تتيح لك البحث عن محتوى البريد الإلكتروني ومعاينته وتصديره من Exchange Online. ومع ذلك، لم تعد هذه الأدوات توفر طريقة فعالة للبحث عن محتوى غير Exchange في خدمات Microsoft 365 أخرى، مثل SharePoint Online و مجموعات Microsoft 365. لمعالجة هذا الأمر، تقدم Microsoft أدوات eDiscovery أخرى تساعدك في البحث عن مجموعة متنوعة من محتوى Microsoft 365. وقد عملنا بجد لدمج وظائف eDiscovery الأحدث والأقوى في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق</a>. يسمح هذا للمؤسسات بالاستجابة لطلبات المستندات القانونية والداخلية وغيرها من طلبات المستندات للمحتوى عبر العديد من خدمات Microsoft 365، بما في ذلك Exchange Online.
+على مر السنين، قدمت Microsoft أدوات eDiscovery التي تتيح لك البحث عن محتوى البريد الإلكتروني ومعاينته وتصديره من Exchange Online. ومع ذلك، لم تعد هذه الأدوات توفر طريقة فعالة للبحث عن محتوى غير Exchange في خدمات Microsoft 365 الأخرى، مثل SharePoint Online و مجموعات Microsoft 365. لمعالجة هذا الأمر، تقدم Microsoft أدوات eDiscovery أخرى تساعدك في البحث عن مجموعة متنوعة من محتويات Microsoft 365. وقد عملنا بجد لدمج وظائف eDiscovery الأحدث والأقوى في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق</a>. يسمح هذا للمؤسسات بالاستجابة لطلبات المستندات القانونية والداخلية وغيرها من طلبات المستندات للمحتوى عبر العديد من خدمات Microsoft 365، بما في ذلك Exchange Online.
 
-نتيجة لوظيفة eDiscovery الجديدة والمحسنة هذه في مدخل التوافق، نقوم بحذف الميزات والوظائف التالية المتعلقة ب eDiscovery المتعلقة بالبحث عن محتوى البريد الإلكتروني في Exchange Online Microsoft 365:
+نتيجة لوظيفة eDiscovery الجديدة والمحسنة هذه في مدخل التوافق، نقوم بحذف الميزات والوظائف التالية المتعلقة ب eDiscovery المتعلقة بالبحث عن محتوى البريد الإلكتروني في Exchange Online وMicrosoft 365:
 
 - [eDiscovery موضعي](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) و["قوائم الاحتجاز الموضعية](/exchange/security-and-compliance/create-or-remove-in-place-holds)" في مركز إدارة Exchange.
 
@@ -59,18 +57,18 @@ ms.locfileid: "66012265"
 
    - [GetHoldOnMailboxes](/exchange/client-developer/web-service-reference/getholdonmailboxes-operation)
 
-- [Microsoft Purview eDiscovery (Premium) الإصدار 1.0](./overview-ediscovery-20.md)، وهو الإصدار الأول من eDiscovery (Premium) الذي يتم الوصول إليه من خلال حالة Microsoft Purview eDiscovery (Standard) في مدخل التوافق. لا يؤثر إيقاف eDiscovery (Premium) الإصدار 1.0 على قدرتك على إنشاء حالات eDiscovery (القياسية) وإدارتها.
+- [Microsoft Purview eDiscovery (Premium) الإصدار 1.0](./overview-ediscovery-20.md)، وهو الإصدار الأول من eDiscovery (Premium) الذي يتم الوصول إليه من خلال حالة Microsoft Purview eDiscovery (قياسي) في مدخل التوافق. لا يؤثر إيقاف eDiscovery (Premium) v1.0 على قدرتك على إنشاء حالات eDiscovery (القياسية) وإدارتها.
 
 > [!NOTE]
-> تنطبق وظيفة eDiscovery التي يتم إيقافها فقط على الإصدارات المستندة إلى السحابة من Microsoft 365 Office 365. ستظل وظائف eDiscovery في الإصدارات المحلية من Exchange SharePoint مدعومة حتى إشعار آخر.
+> تنطبق وظيفة eDiscovery التي يتم إيقافها فقط على الإصدارات المستندة إلى السحابة من Microsoft 365 و Office 365. ستظل وظائف eDiscovery في الإصدارات المحلية من Exchange وSharePoint مدعومة حتى إشعار آخر.
 
 توفر الأقسام التالية في هذه المقالة إرشادات حول إيقاف كل ميزة. تتضمن هذه المعلومات المخططات الزمنية والأدوات البديلة التي يمكنك استخدامها بدلا من الأداة التي تم إيقافها.
 
-## <a name="in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center"></a>In-Place eDiscovery و"In-Place Holds" في مركز إدارة Exchange 
+## <a name="in-place-ediscovery-and-in-place-holds-in-the-exchange-admin-center"></a>In-Place eDiscovery و"In-Place" في مركز إدارة Exchange 
 
 وفقا للإعلان الأصلي في 1 يوليو 2017، يتم إيقاف وظيفة In-Place eDiscovery & Hold في مركز إدارة Exchange (EAC). سمحت لك صفحة & & eDiscovery In-Place في EAC بالبحث عن المحتوى من Exchange Online والاحتفاظ به وتصديره. يتيح لك In-Place eDiscovery أيضا نسخ نتائج البحث إلى علبة بريد اكتشاف حتى تتمكن أنت أو مديرو eDiscovery الآخرون من مراجعة المحتوى وإتاحته للطلبات القانونية والتنظيمية والعامة.
 
-نظرا لأن كل هذه الإمكانات (باستثناء نسخ نتائج البحث إلى علبة بريد اكتشاف) متوفرة الآن في أدوات البحث في المحتوى، وأدوات eDiscovery وeDiscovery (Premium) في [مدخل التوافق](./microsoft-365-compliance-center.md) (مع تحسين الوظائف والموثوقية والدعم لمجموعة واسعة من خدمات Microsoft 365)، نوصي بالبدء في استخدام هذه الأدوات في أقرب وقت ممكن. لمساعدتك في الانتقال إلى أدوات eDiscovery الأخرى هذه، يسرد الجدول أدناه الأدوات التي يمكنك استخدامها بدلا من In-Place eDiscovery و In-Place e Hold.
+نظرا لأن كل هذه الإمكانات (باستثناء نسخ نتائج البحث إلى علبة بريد اكتشاف) متوفرة الآن في أدوات البحث عن المحتوى، وأدوات eDiscovery وeDiscovery (Premium) في [مدخل التوافق](./microsoft-365-compliance-center.md) (مع تحسين الوظائف والموثوقية والدعم لمجموعة واسعة من خدمات Microsoft 365)، نوصي بالبدء في استخدام هذه الأدوات في أقرب وقت ممكن. لمساعدتك في الانتقال إلى أدوات eDiscovery الأخرى هذه، يسرد الجدول أدناه الأدوات التي يمكنك استخدامها بدلا من In-Place eDiscovery و In-Place e Hold.
 
 ### <a name="scope-of-affected-organizations"></a>نطاق المنظمات المتأثرة
 
@@ -78,7 +76,7 @@ ms.locfileid: "66012265"
 
 - المؤسسات Office 365 Microsoft 365 Education
 
-- Office 365 والمنظمات الحكومية Microsoft 365؛ يشمل ذلك سحابة القطاع الحكومي سحابة القطاع الحكومي High و DoD
+- مؤسسات Office 365 وMicrosoft 365 Government؛ وهذا يشمل GCC و GCC High و DoD
 
 - Office 365 ألمانيا
 
@@ -113,7 +111,7 @@ ms.locfileid: "66012265"
 <p>موثوقية أعلى للبحث عن المحتوى وتصديره ووضعه قيد الاحتجاز</p>
 </li>
 <li>
-<p>البحث عن محتوى في Exchange Online أو SharePoint Online أو OneDrive for Business أو Skype for Business أو Microsoft Teams أو مجموعات Yammer أو مجموعات Microsoft 365 ، ومحتوى آخر مخزن في تطبيقات Office 365</p></li></ul>
+<p>البحث عن محتوى في Exchange Online وSharePoint Online OneDrive for Business Skype for Business وMicrosoft Teams ومجموعات Yammer مجموعات Microsoft 365 وغيرها من المحتويات المخزنة في تطبيقات Office 365</p></li></ul>
 </td>
 </tr>
 <tr class="even">
@@ -124,7 +122,7 @@ ms.locfileid: "66012265"
 <li>
 <p>تطبيق النهج على مؤسستك بأكملها </p>
 </li><li>
-<p>تطبيق النهج على مواقع محتوى معينة مثل مجموعات Exchange Online و SharePoint Online و OneDrive for Business و Skype for Business و Microsoft Teams و Office 365</p></li>
+<p>تطبيق النهج على مواقع محتوى معينة مثل Exchange Online وSharePoint Online OneDrive for Business Skype for Business وMicrosoft Teams ومجموعات Office 365</p></li>
 <li>
 <p>تطبيق النهج على مستخدمين محددين</p></li></ul>
 <p>لمزيد من المعلومات، راجع <a href="/microsoft-365/compliance/retention-policies"> التعرف على نهج الاستبقاء وتسميات الاستبقاء</a>.</td>
@@ -139,7 +137,7 @@ ms.locfileid: "66012265"
 <li><p>اقتراحات وضع العلامات للمساعدة في تحديد محتوى امتياز العميل للمحامي</p></li></ul>
 <p>لمزيد من المعلومات، راجع <a href="/microsoft-365/compliance/overview-ediscovery-20">نظرة عامة على حل eDiscovery (Premium) في Microsoft 365</a>.</p>
 <p>
-<p>بدلا من ذلك، يمكنك تصدير نتائج البحث إلى ملفات PST ثم استخدام Microsoft 365 Import service لاستيراد PSTs إلى علبة بريد اكتشاف. للحصول على إرشادات مفصلة خطوة بخطوة، راجع <a href="/microsoft-365/compliance/use-network-upload-to-import-pst-files">استخدام تحميل الشبكة لاستيراد ملفات PST إلى Office 365</a>.
+<p>بدلا من ذلك، يمكنك تصدير نتائج البحث إلى ملفات PST ثم استخدام خدمة استيراد Microsoft 365 لاستيراد PSTs إلى علبة بريد اكتشاف. للحصول على إرشادات مفصلة خطوة بخطوة، راجع <a href="/microsoft-365/compliance/use-network-upload-to-import-pst-files">استخدام تحميل الشبكة لاستيراد ملفات PST إلى Office 365</a>.
 </tr>
 <tr class=even>
   <td>نسخ الرسائل من علبة بريد واحدة إلى علبة بريد أخرى</td>
@@ -165,13 +163,13 @@ ms.locfileid: "66012265"
 
 يستخدم مدخل التوافق أيضا [حدود التوافق](set-up-compliance-boundaries.md) للتحكم في مواقع المحتوى التي يمكن لمدير eDiscovery البحث فيها. حدود الامتثال مفيدة في الكيانات الحكومية التي تحتاج إلى البقاء داخل حدود الوكالات أو الشركات متعددة الجنسيات المطلوبة لاحترام الجهات المحلية الجغرافية.
 
-**كيف يمكنني نقل عمليات البحث والحتفظ الحالية إلى مدخل توافق Microsoft Purview؟**
+**كيف يمكنني نقل عمليات البحث و قوائم الاحتجاز الحالية إلى مدخل التوافق في Microsoft Purview؟**
 
 من الممكن ترحيل In-Place eDiscovery عمليات البحث والحمل من EAC باستخدام PowerShell. للحصول على الإرشادات، راجع [ترحيل عمليات البحث وأوامر الاحتجاز من EAC إلى مدخل التوافق](./migrate-legacy-ediscovery-searches-and-holds.md).
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*-MailboxSearch cmdlets
 
-وفقا للإشعار الأصلي الذي تم الإعلان عنه في 1 يوليو 2017 في مركز إدارة Exchange، يتم إيقاف وظيفة In-Place eDiscovery & Hold وcmdlets **-MailboxSearch المطابقة\***. توفر أوامر cmdlets هذه للمستخدمين القدرة على البحث عن محتوى علبة البريد باستمرار وتصديره للطلبات القانونية والتنظيمية والعامة.
+وفقا للإشعار الأصلي الذي تم الإعلان عنه في 1 يوليو 2017 في مركز إدارة Exchange، يتم إيقاف وظيفة In-Place eDiscovery & Hold **وCmdlets -MailboxSearch المطابقة\***. توفر أوامر cmdlets هذه للمستخدمين القدرة على البحث عن محتوى علبة البريد باستمرار وتصديره للطلبات القانونية والتنظيمية والعامة.
 
 نظرا لأن هذه الإمكانات متوفرة الآن في [<span class="underline">مدخل التوافق</span>](./microsoft-365-compliance-center.md) والأمان Office 365 & Compliance PowerShell مع تحسين الأداء وقابلية التوسع، يجب عليك استخدام أوامر cmdlet المحسنة هذه. تتضمن [<span class="underline">\*</span>](/powershell/module/exchange/get-compliancecase)أوامر cmdlets هذه -ComplianceCase [<span class="underline">و-ComplianceSearch\*</span>](/powershell/module/exchange/get-compliancesearch) [<span class="underline">و-CaseHoldPolicy\*</span>](/powershell/module/exchange/get-caseholdpolicy) [<span class="underline">و-CaseHoldRule\*</span>](/powershell/module/exchange/get-caseholdrule) [<span class="underline">و-ComplianceSearchAction\*</span>](/powershell/module/exchange/get-compliancesearchaction).
 
@@ -181,7 +179,7 @@ ms.locfileid: "66012265"
 
 - المؤسسات Office 365 Microsoft 365 Education
 
-- Office 365 والمنظمات الحكومية Microsoft 365؛ يشمل ذلك سحابة القطاع الحكومي سحابة القطاع الحكومي High و DoD
+- مؤسسات Office 365 وMicrosoft 365 Government؛ وهذا يشمل GCC و GCC High و DoD
 
 - Office 365 ألمانيا
 
@@ -226,7 +224,7 @@ ms.locfileid: "66012265"
 <tr class="odd">
 <td>نسخ نتائج البحث إلى علبة بريد اكتشاف</td>
 <td>None</td>
-<td>لا يوجد استبدال مباشر لهذه الوظيفة لأنها لا توفر الوصول إلى جميع خدمات Microsoft 365. راجع الأسئلة المتداولة التالية أدناه للحصول على حلول بديلة.</td>
+<td>لا يوجد بديل مباشر لهذه الوظيفة لأنها لا توفر الوصول إلى جميع خدمات Microsoft 365. راجع الأسئلة المتداولة التالية أدناه للحصول على حلول بديلة.</td>
 </tr>
   <tr class=even>
   <td>نسخ الرسائل من علبة بريد واحدة إلى علبة بريد أخرى</td>
@@ -242,7 +240,7 @@ ms.locfileid: "66012265"
 
 **نستخدم "نسخ البحث" لتصدير رسائل البريد الإلكتروني أو الرسائل الفورية لأغراض تتعلق ب eDiscovery والتحقيقات القانونية الأخرى. ما هي الخيارات الأخرى التي لدينا بعد إيقاف أوامر cmdlets هذه؟**
 
-توفر [<span class="underline">واجهات برمجة تطبيقات Microsoft Graph</span>](https://developer.microsoft.com/en-us/graph) عددا من الأساليب لاستخراج البيانات للتحليل وأغراض أخرى أكثر مرونة وقابلية للتطوير من استخدام **\*cmdlets -MailboxSearch**.
+توفر [<span class="underline">واجهات برمجة تطبيقات Microsoft Graph</span>](https://developer.microsoft.com/en-us/graph) عددا من الأساليب لاستخراج البيانات للتحليل وأغراض أخرى أكثر مرونة وقابلية للتطوير من استخدام **\*cmdlets -MailboxSearch** .
 
 **كيف يمكنني ترحيل عمليات البحث و قوائم الاحتجاز إلى مدخل التوافق؟**
 
@@ -254,7 +252,7 @@ ms.locfileid: "66012265"
 
 ## <a name="search-mailbox-cmdlet"></a>Search-Mailbox cmdlet
 
-يتم إيقاف أمر cmdlet **الخاص ب Search-Mailbox** في Exchange Online PowerShell كما تم الإعلان عنه في الأصل في تحذير في إخراج cmdlet بدءا من عام 2018. تم استخدام أمر cmdlet الخاص **ب Search-Mailbox** في الأصل للبحث في علبة بريد المستخدم وإزالة المحتوى الضار. نوصي بالبدء في استخدام **New-ComplianceSearch** و **New-ComplianceSearchAction** cmdlets في Office 365 Security & Compliance PowerShell للبحث عن المحتوى وإزالة المحتوى. للحصول على تجربة أمان مضمنة، توفر [<span class="underline">ميزات الأمان Microsoft 365</span>](../security/index.yml) حماية قوية من التهديدات للبريد الإلكتروني والعديد من خدمات Microsoft الأخرى.
+يتم إيقاف أمر cmdlet **الخاص ب Search-Mailbox** في Exchange Online PowerShell كما تم الإعلان عنه في الأصل في تحذير في إخراج cmdlet بدءا من عام 2018. تم استخدام أمر cmdlet الخاص **ب Search-Mailbox** في الأصل للبحث في علبة بريد المستخدم وإزالة المحتوى الضار. نوصي بالبدء في استخدام **New-ComplianceSearch** و **New-ComplianceSearchAction** cmdlets في Office 365 Security & Compliance PowerShell للبحث عن المحتوى وإزالة المحتوى. للحصول على تجربة أمان مضمنة، توفر [<span class="underline">ميزات أمان Microsoft 365</span>](../security/index.yml) حماية قوية من التهديدات للبريد الإلكتروني والعديد من خدمات Microsoft الأخرى.
 
 ### <a name="scope-of-affected-organizations"></a>نطاق المنظمات المتأثرة
 
@@ -262,7 +260,7 @@ ms.locfileid: "66012265"
 
 - المؤسسات Office 365 Microsoft 365 Education
 
-- Office 365 والمنظمات الحكومية Microsoft 365؛ يشمل ذلك سحابة القطاع الحكومي سحابة القطاع الحكومي High و DoD
+- مؤسسات Office 365 وMicrosoft 365 Government؛ وهذا يشمل GCC و GCC High و DoD
 
 - Office 365 ألمانيا
 
@@ -301,7 +299,7 @@ ms.locfileid: "66012265"
 <tr class="even">
 <td>نسخ نتائج البحث إلى علبة بريد اكتشاف</td>
 <td> </td>
-<td>لا يوجد استبدال مباشر لهذه الوظيفة لأنها لا توفر الوصول إلى جميع خدمات Microsoft 365. راجع الأسئلة المتداولة في القسم <strong>*-MailboxSearch cmdlets</strong> للحصول على حلول بديلة. </td>
+<td>لا يوجد بديل مباشر لهذه الوظيفة لأنها لا توفر الوصول إلى جميع خدمات Microsoft 365. راجع الأسئلة المتداولة في القسم <strong>*-MailboxSearch cmdlets</strong> للحصول على حلول بديلة. </td>
 </tr>
 <tr class=odd>
   <td>نسخ الرسائل من علبة بريد واحدة إلى علبة بريد أخرى</td>
@@ -319,14 +317,14 @@ ms.locfileid: "66012265"
 <tr class="odd"> 
 <td>إزالة الرسائل من علبة بريد</td>
 <td><a href="/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">تعيين أذونات إلى علبة بريد</a></td>
-<td>لإزالة الرسائل من علبة بريد، قم بتعيين أذونات المسؤول للوصول إلى علبة بريد الموظف. يمكن حذف الرسائل وإعادة تدويرها حسب الحاجة للاستفادة من إمكانيات البحث وعرض المضمنة في Outlook.</td>
+<td>لإزالة الرسائل من علبة بريد، قم بتعيين أذونات المسؤول للوصول إلى علبة بريد الموظف. يمكن حذف الرسائل وإعادة تدويرها حسب الحاجة للاستفادة من إمكانيات البحث والعرض المضمنة في Outlook.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="exchange-web-services-api-operations"></a>عمليات واجهة برمجة تطبيقات Exchange Web Services
+## <a name="exchange-web-services-api-operations"></a>عمليات Exchange Web Services API
 
-يتم استخدام هذه العمليات في واجهة برمجة تطبيقات Exchange Web Services بواسطة ميزة & eDiscovery In-Place في مركز إدارة Exchange وcmdlets **-MailboxSearch المطابقة\*** في Exchange Online PowerShell. كما سيتم إيقافها كجزء من إيقاف أدوات eDiscovery القديمة الأخرى.
+يتم استخدام هذه العمليات في Exchange Web Services API بواسطة ميزة In-Place eDiscovery & Holds في مركز إدارة Exchange **وCmdlets -MailboxSearch المطابقة\*** في Exchange Online PowerShell. كما سيتم إيقافها كجزء من إيقاف أدوات eDiscovery القديمة الأخرى.
 
 ### <a name="scope-of-affected-organizations"></a>نطاق المنظمات المتأثرة
 
@@ -334,7 +332,7 @@ ms.locfileid: "66012265"
 
 - المؤسسات Office 365 Microsoft 365 Education
 
-- Office 365 والمنظمات الحكومية Microsoft 365؛ يشمل ذلك سحابة القطاع الحكومي سحابة القطاع الحكومي High و DoD
+- مؤسسات Office 365 وMicrosoft 365 Government؛ وهذا يشمل GCC و GCC High و DoD
 
 - Office 365 ألمانيا
 
@@ -342,23 +340,23 @@ ms.locfileid: "66012265"
 
 - 1 يوليو 2020: لن تكون عمليات GetSearchableMailboxes و SearchMailboxes و SetHoldOnMailboxes و GetHoldOnMailboxes متوفرة بعد الآن، ولن يقدم دعم Microsoft المساعدة بعد الآن.
 
-## <a name="ediscovery-premium-v10"></a>eDiscovery (Premium) الإصدار 1.0
+## <a name="ediscovery-premium-v10"></a>eDiscovery (Premium) v1.0
 
-يتم إيقاف eDiscovery (Premium) الإصدار 1.0، وهو إصدار eDiscovery (Premium) المتوفر في حالة eDiscovery (قياسي) بالنقر فوق **التبديل إلى eDiscovery (Premium).** تم استبدال وظائفه بحل [eDiscovery الجديد (Premium)](./ediscovery.md) في مدخل التوافق.
+يتم إيقاف eDiscovery (Premium) v1.0، وهو إصدار eDiscovery (Premium) المتوفر في حالة eDiscovery (قياسي) بالنقر فوق **Switch to eDiscovery (Premium).** تم استبدال وظائفه [بحل eDiscovery (Premium)](./ediscovery.md) الجديد في مدخل التوافق.
 
-لتحديد ما إذا كانت مؤسستك تستخدم eDiscovery (Premium) الإصدار 1.0:
+لتحديد ما إذا كانت مؤسستك تستخدم eDiscovery (Premium) v1.0:
 
 1. انتقل إلى مدخل التوافق، وحدد **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>، وافتح حالة eDiscovery (قياسي).
 
-1. إذا رأيت زر **التبديل إلى eDiscovery (Premium**)، فسينقلك النقر فوقه إلى الإصدار 1.0 من eDiscovery (Premium)، الذي يتم إيقافه. لن تتأثر القدرة على إنشاء الحالات وإدارتها في eDiscovery (قياسي). يتم إيقاف القدرة على إضافة بيانات الحالة وتحليلها فقط في eDiscovery (Premium) الإصدار 1.0 (بالنقر فوق **التبديل إلى eDiscovery (Premium)**).
+1. إذا رأيت زر **التبديل إلى eDiscovery (Premium)،** فسينقلك النقر فوقه إلى الإصدار 1.0 من eDiscovery (Premium)، الذي يتم إيقافه. لن تتأثر القدرة على إنشاء الحالات وإدارتها في eDiscovery (قياسي). يتم إيقاف القدرة على إضافة بيانات الحالة وتحليلها في eDiscovery (Premium) v1.0 (بالنقر فوق **Switch to eDiscovery (Premium)**).
 
-يوفر حل eDiscovery الجديد (Premium) في Microsoft 365 (المعروف أيضا باسم *eDiscovery (Premium) الإصدار 2.0*) جميع إمكانيات الحل الأصلي، ولكنه يتضمن الآن نهجا يستند إلى الوصي لتحديد المحتوى في Microsoft 365 أخرى  الخدمات، وجمع هذا المحتوى، ثم إضافته إلى مجموعة مراجعة حيث يمكن للمراجعين الاستفادة من استعلامات البحث السريعة ووضع العلامات وميزات التحليلات للمساعدة في احصاء المستندات ذات الصلة. يتضمن eDiscovery (Premium) الآن المعالجة المحسنة والعارضين الأصليين لكل من أنواع الملفات من Microsoft وغير التابعة ل Microsoft، وقائمة كاملة بأنواع الملفات [موجودة هنا](./supported-filetypes-ediscovery20.md) وحقول بيانات التعريف المعتمدة [موجودة هنا](./document-metadata-fields-in-advanced-ediscovery.md). بالإضافة إلى ذلك، يوفر حل eDiscovery الجديد (Premium) ميزة إدارة احتجاز الوصي القوية التي تتيح لك تطبيق قوائم الاحتجاز على المحتوى في خدمات مختلفة، وإعلام المستخدمين بالموقوفين، وتتبع استجابات الوصي، كل ذلك ضمن حالة eDiscovery (Premium).
+يوفر حل eDiscovery الجديد (Premium) في Microsoft 365 (المعروف أيضا باسم *eDiscovery (Premium) الإصدار 2.0*) جميع إمكانيات الحل الأصلي، ولكنه يتضمن الآن نهجا مستندا إلى الوصي لتحديد المحتوى في خدمات Microsoft 365 الأخرى، وجمع هذا المحتوى، ثم إضافته إلى مجموعة مراجعة حيث يمكن للمراجعين الاستفادة من استعلامات البحث السريعة،  ميزات وضع العلامات والتحليلات للمساعدة في احصاء المستندات ذات الصلة. يتضمن eDiscovery (Premium) الآن المعالجة المحسنة والعارضين الأصليين لكل من أنواع الملفات من Microsoft وغير Microsoft، وقائمة كاملة بأنواع الملفات [هنا](./supported-filetypes-ediscovery20.md) وحقول بيانات التعريف المدعومة [موجودة هنا](./document-metadata-fields-in-advanced-ediscovery.md). كما يوفر حل eDiscovery الجديد (Premium) ميزة إدارة قوائم احتجاز قوية تتيح لك تطبيق قوائم الاحتجاز على المحتوى في خدمات مختلفة، وإعلام المستخدمين بالموقوفين، وتعقب استجابات الوصي، كل ذلك ضمن حالة eDiscovery (Premium).
 
 للوصول إلى eDiscovery (Premium) v2.0:
 
 انتقل إلى مدخل التوافق، وحدد **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>، وافتح حالة eDiscovery (قياسي).
 
-في هذا الوقت، نوصي بالبدء في نقل سير عمل eDiscovery إلى وظيفة eDiscovery الجديدة (Premium). إذا لزم الأمر، يمكنك أرشفة eDiscovery (Premium) 1.0 حالة عن طريق تصدير المحتوى وتخزينه دون اتصال. على الرغم من أنه سيظل بإمكانك الوصول إلى الإصدار 1.0 من eDiscovery (Premium) في الحالات الحالية حتى 31 ديسمبر 2020، إلا أن دعم Microsoft لن يوفر الدعم بعد 1 أكتوبر 2020. راجع المخطط الزمني التالي للحصول على مزيد من التفاصيل.
+في هذا الوقت، نوصي بالبدء في نقل سير عمل eDiscovery إلى وظيفة eDiscovery (Premium) الجديدة. إذا لزم الأمر، يمكنك أرشفة حالات eDiscovery (Premium) 1.0 عن طريق تصدير المحتوى وتخزينه دون اتصال. على الرغم من أنه سيظل بإمكانك الوصول إلى الإصدار 1.0 من eDiscovery (Premium) في الحالات الحالية حتى 31 ديسمبر 2020، إلا أن دعم Microsoft لن يوفر الدعم بعد 1 أكتوبر 2020. راجع المخطط الزمني التالي للحصول على مزيد من التفاصيل.
 
 ### <a name="scope-of-affected-organizations"></a>نطاق المنظمات المتأثرة
 
@@ -366,13 +364,13 @@ ms.locfileid: "66012265"
 
 - المؤسسات Office 365 Microsoft 365 Education
 
-- Office 365 والمنظمات الحكومية Microsoft 365؛ يشمل ذلك سحابة القطاع الحكومي سحابة القطاع الحكومي High و DoD
+- مؤسسات Office 365 وMicrosoft 365 Government؛ وهذا يشمل GCC و GCC High و DoD
 
 - Office 365 ألمانيا
 
 ### <a name="timeline"></a>المخطط الزمني
 
-- 1 يوليو 2020: لن تتمكن من إنشاء حالات eDiscovery جديدة (Premium) الإصدار 1.0.
+- 1 يوليو 2020: لن تتمكن من إنشاء حالات eDiscovery (Premium) جديدة الإصدار 1.0.
 
 - 1 أكتوبر 2020: لن تتمكن من إضافة بيانات جديدة (إعداد نتائج البحث ل eDiscovery (Premium)) إلى أي حالات. ستتمكن من متابعة العمل مع البيانات في الحالات الحالية على مسؤوليتك الخاصة. لن يقدم دعم Microsoft المساعدة بعد الآن. 
 

@@ -16,18 +16,16 @@ search.appverid:
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 ms.custom: admindeeplinkEXCHANGE
 description: تعرف على كيفية استخدام المسؤولين Exchange Online PowerShell وملف CSV لاستيراد جهات الاتصال الخارجية بشكل مجمع إلى قائمة العناوين العمومية.
-ms.openlocfilehash: 5e80453326159010aaae81a8b810396f5a7294cf
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 40e8c44a45e8d8d0c416f3f00df57e24504a4e70
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093537"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633796"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>استيراد جهات اتصال خارجية بشكل مجمع إلى Exchange Online
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-**هذه المقالة مخصصة للمسؤولين. هل تحاول استيراد جهات الاتصال إلى علبة بريدك؟ راجع [استيراد جهات الاتصال إلى Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
+**هذه المقالة مخصصة للمسؤولين. هل تحاول استيراد جهات الاتصال إلى علبة بريدك؟ الاطلاع على [استيراد جهات الاتصال إلى Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
 هل لدى شركتك الكثير من جهات الاتصال المهنية الموجودة التي تريد تضمينها في دفتر العناوين المشترك (تسمى أيضا قائمة العناوين العمومية) في Exchange Online؟ هل تريد إضافة جهات اتصال خارجية كأعضاء في مجموعات التوزيع، تماما كما تفعل مع المستخدمين داخل شركتك؟ إذا كان الأمر كذلك، يمكنك استخدام Exchange Online PowerShell وملف CSV (قيمة مفصولة بفواصل) لاستيراد جهات الاتصال الخارجية بشكل مجمع إلى Exchange Online. إنها عملية مكونة من ثلاث خطوات:
   
@@ -74,7 +72,7 @@ ms.locfileid: "65093537"
 
 الخطوة التالية هي استخدام ملف CSV الذي قمت بإنشائه في الخطوة 1 وPowerShell لاستيراد جهات الاتصال الخارجية المدرجة في ملف CSV بشكل مجمع إلى Exchange Online. 
   
-1.  الاتصال PowerShell إلى مؤسستك Exchange Online. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). تأكد من استخدام اسم المستخدم وكلمة المرور لحساب المسؤول العام عند الاتصال Exchange Online PowerShell. 
+1.  قم بتوصيل PowerShell بمؤسستك Exchange Online. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). تأكد من استخدام اسم المستخدم وكلمة المرور لحساب المسؤول العام عند الاتصال Exchange Online PowerShell. 
     
 2. بعد توصيل PowerShell Exchange Online، انتقل إلى مجلد سطح المكتب حيث قمت بحفظ ملف CSV في الخطوة 1؛ على سبيل المثال`C:\Users\Administrator\desktop`.
     
@@ -102,7 +100,7 @@ ms.locfileid: "65093537"
 
 بعد تشغيل الأمر في الخطوة 2، يتم إنشاء جهات الاتصال الخارجية، ولكنها لا تحتوي على أي من معلومات جهة الاتصال أو المؤسسة، وهي المعلومات الواردة من معظم الخلايا في ملف CSV. وذلك لأنه عند إنشاء جهات اتصال خارجية جديدة، يتم ملء الخصائص المطلوبة فقط. لا تقلق إذا لم يكن لديك كافة المعلومات التي تم ملؤها في ملف CSV. إذا لم يكن موجودا، فلن تتم إضافته.
   
-1.  الاتصال PowerShell إلى مؤسستك Exchange Online. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1.  قم بتوصيل PowerShell بمؤسستك Exchange Online. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. انتقل إلى مجلد سطح المكتب حيث حفظت ملف CSV في الخطوة 1؛ على سبيل المثال، `C:\Users\Administrator\desktop`.
     
@@ -128,7 +126,7 @@ ms.locfileid: "65093537"
     
 2. انقر فوق جهة اتصال ثم انقر فوق **أيقونة تحرير**![.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) لعرض خصائص جهة الاتصال. 
     
-هذا هو! يمكن للمستخدمين رؤية جهات الاتصال والمعلومات الإضافية في Outlook دفتر العناوين Outlook على ويب.
+هذا هو! يمكن للمستخدمين رؤية جهات الاتصال والمعلومات الإضافية في دفتر العناوين في Outlook Outlook على ويب.
   
 ## <a name="add-more-external-contacts"></a>إضافة المزيد من جهات الاتصال الخارجية
 
@@ -141,7 +139,7 @@ ms.locfileid: "65093537"
 
 قد تستخدم بعض الشركات جهات الاتصال الخارجية فقط بحيث يمكن إضافتها كأعضاء في مجموعات التوزيع. في هذا السيناريو، قد يرغبون في إخفاء جهات الاتصال الخارجية من دفتر العناوين المشترك. إليك كيفية تنفيذ ذلك:
   
-1.  الاتصال PowerShell إلى مؤسستك Exchange Online. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1.  قم بتوصيل PowerShell بمؤسستك Exchange Online. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. لإخفاء جهة اتصال خارجية واحدة، قم بتشغيل الأمر التالي.
     

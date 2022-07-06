@@ -14,16 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إنشاء نموذج ترميز تنبؤي في eDiscovery (Premium). هذه هي الخطوة الأولى في استخدام قدرات التعلم الآلي في eDiscovery (Premium) لمساعدتك في تحديد المحتوى ذي الصلة وغير ذي الصلة في مجموعة مراجعة.
-ms.openlocfilehash: 4542ffbf8be3c7a5c0193f3c0372e3c19e91f02e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1105ff05d323ded2297a92d7b12b44a78c35b11f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099642"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635732"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>إنشاء نموذج ترميز تنبؤي (معاينة)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 الخطوة الأولى في استخدام قدرات التعلم الآلي للترميز التنبؤي في eDiscovery (Premium) هي إنشاء نموذج ترميز تنبؤي. بعد إنشاء نموذج، يمكنك تدريبه على تحديد المحتوى ذي الصلة وغير ذي الصلة في مجموعة مراجعة.
 
@@ -39,9 +37,9 @@ ms.locfileid: "65099642"
 
 ## <a name="create-a-model"></a>إنشاء نموذج
 
-1. في مدخل الامتثال ل Microsoft Purview، افتح حالة eDiscovery (Premium) ثم حدد علامة تبويب **مجموعات المراجعة**.
+1. في مدخل التوافق في Microsoft Purview، افتح حالة eDiscovery (Premium) ثم حدد علامة تبويب **مجموعات المراجعة**.
 
-2. افتح مجموعة مراجعة ثم انقر فوق الترميز التنبؤي **AnalyticsManage** >  **(معاينة).**
+2. افتح مجموعة مراجعة ثم انقر فوق **الترميز التنبؤي لإدارة** **التحليلات** >  (معاينة).
 
    ![انقر فوق القائمة المنسدلة "تحليل" في مجموعة المراجعة للانتقال إلى صفحة الترميز التنبؤي.](..\media\ManagePredictiveCoding.png)
 

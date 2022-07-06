@@ -18,19 +18,17 @@ search.appverid:
 - MOE150
 - MET150
 description: يساعد Microsoft Purview Compliance Manager المؤسسات على تبسيط تقييمات المخاطر وأتمتتها، ويقترح الإجراءات الموصى بها للمساعدة في معالجة المخاطر.
-ms.openlocfilehash: dc08d38da7c02ef0c02401244934b7d2338ab5f7
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 74783c99873b76d3b3637947203bb58d4a656b13
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574080"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634732"
 ---
 # <a name="microsoft-purview-compliance-manager"></a>إدارة التوافق في Microsoft Purview
 
 > [!TIP]
 > *هل تعلم أنه يمكنك تجربة الإصدارات المتميزة من جميع حلول Microsoft Purview التسعة مجانا؟* استخدم تجربة حلول Purview لمدة 90 يوما لاستكشاف مدى قدرة قدرات Purview القوية على مساعدة مؤسستك على تلبية احتياجات التوافق الخاصة بها. يمكن للعملاء Microsoft 365 E3 Office 365 E3 البدء الآن في [مركز الإصدارات التجريبية مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef). تعرف على تفاصيل حول [الأشخاص الذين يمكنهم التسجيل وشروط الإصدار التجريبي](compliance-easy-trials.md).
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **في هذه المقالة:** تعرف على ماهية Compliance Manager، وكيف يساعد على تبسيط الامتثال وتقليل المخاطر، ومكوناته الرئيسية.
 

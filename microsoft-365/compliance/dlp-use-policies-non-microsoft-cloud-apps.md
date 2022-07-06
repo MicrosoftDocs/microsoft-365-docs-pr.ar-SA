@@ -1,5 +1,5 @@
 ---
-title: استخدام سياسات منع فقدان البيانات للتطبيقات السحابية غير الخاصة ب Microsoft
+title: استخدام نهج DLP لتطبيقات السحابة غير الخاصة ب Microsoft
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,82 +19,66 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: تعرف على كيفية استخدام سياسات dlp للتطبيقات السحابية غير الخاصة ب Microsoft.
-ms.openlocfilehash: b374f9b85d41b6dd6a5281e17347dffd414361da
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+description: تعرف على كيفية استخدام نهج dlp لتطبيقات السحابة غير الخاصة ب Microsoft.
+ms.openlocfilehash: a50849b53819a7c5872c3ec8cb279ffa8d14e27f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "63569463"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634369"
 ---
-# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>استخدام سياسات منع فقدان البيانات للتطبيقات السحابية غير الخاصة ب Microsoft
+# <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps"></a>استخدام نهج منع فقدان البيانات لتطبيقات السحابة غير التابعة ل Microsoft
 
-إن سياسات منع فقدان البيانات (DLP) للتطبيقات السحابية غير الخاصة ب Microsoft هي جزء من مجموعة ميزات DLP ل Microsoft 365؛ وباستخدام هذه الميزات، يمكنك اكتشاف العناصر الحساسة وحمايتها عبر Microsoft 365 الخدمات. لمزيد من المعلومات حول كل عروض Microsoft DLP، راجع [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md).
-
-يمكنك استخدام سياسات DLP لتطبيقات السحابة غير الخاصة ب Microsoft لمراقبة العناصر الحساسة والكشف عنها عند استخدامها ومشاركتها عبر تطبيقات السحابة غير الخاصة ب Microsoft. يوفر لك استخدام هذه النهج إمكانية الرؤية والتحكم التي تحتاجها للتأكد من استخدامها وحمايتها بشكل صحيح، كما يساعد على منع السلوك المجازف الذي قد يعرضها للخطر.
+يمكنك تحديد نهج DLP Microsoft Defender for Cloud Apps لمراقبة العناصر الحساسة ومشاركتها عبر تطبيقات السحابة غير التابعة ل Microsoft واكتشافها واتخاذ إجراءات بشأنها.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
 ### <a name="skusubscriptions-licensing"></a>ترخيص SKU/الاشتراكات
 
-قبل البدء في استخدام سياسات DLP للتطبيقات السحابية غير الخاصة ب Microsoft، قم [Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) اشتراكك وأي من الوظائف الإضافية. للوصول إلى هذه الوظيفة واستخدامها، يجب أن يكون لديك أحد هذه الاشتراكات أو الوظائف الإضافية:
+قبل البدء في استخدام نهج DLP، تأكد من [اشتراكك في Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) وأي وظائف إضافية. للوصول إلى هذه الوظيفة واستخدامها، يجب أن يكون لديك أحد هذه الاشتراكات أو الوظائف الإضافية:
 
 - Microsoft 365 E5
 - التوافق في Microsoft 365 E5
 - الأمان في Microsoft 365 E5
 
 ### <a name="permissions"></a>الأذونات
-يجب أن يكون المستخدم الذي يقوم بإنشاء نهج DLP هو:
+يجب أن يكون المستخدم الذي يقوم بإنشاء نهج DLP:
 
 - المسؤول العام
-- مسؤول التوافق: تعيين في Azure AD
-- مسؤول بيانات التوافق: تعيين في Azure AD
+- مسؤول التوافق: التعيين في Azure AD
+- مسؤول بيانات التوافق: التعيين في Azure AD
 
 ### <a name="prepare-your-defender-for-cloud-apps-environment"></a>إعداد بيئة Defender for Cloud Apps
 
-تستخدم سياسات DLP لتطبيقات السحابة غير الخاصة ب Microsoft قدرات Defender for Cloud Apps DLP. لاستخدامه، يجب تحضير بيئة Defender for Cloud Apps. للحصول على الإرشادات، راجع [تعيين إجراءات الرؤية الفورية والحماية والحوكمة لتطبيقاتك](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
+قبل تكوين نهج DLP التي تم تحديد نطاقها إلى Microsoft Defender for Cloud Apps، يجب إعداد Defender لبيئة تطبيقات السحابة. للحصول على الإرشادات، راجع [التشغيل السريع: بدء استخدام Microsoft Defender for Cloud Apps](/defender-cloud-apps/get-started).
 
-### <a name="connect-a-non-microsoft-cloud-app"></a>الاتصال تطبيق سحابة غير Microsoft
+### <a name="connect-a-non-microsoft-cloud-app"></a>توصيل تطبيق سحابي غير خاص ب Microsoft
 
-لاستخدام نهج DLP لتطبيق سحابة معين غير Microsoft، يجب أن يكون التطبيق متصلا ب Defender for Cloud Apps. للحصول على معلومات، راجع:
+لاستخدام نهج DLP الذي تم تحديد نطاقه إلى تطبيق سحابي معين غير Microsoft، يجب أن يكون التطبيق متصلا ب Defender for Cloud Apps. للحصول على معلومات، راجع:
 
-- [الاتصال مربع](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
-- [الاتصال Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [الاتصال G-Workspace](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
-- [الاتصال Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
-- [الاتصال Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
+- [مربع الاتصال](/defender-cloud-apps/connect-box)
+- [توصيل Dropbox](/defender-cloud-apps/connect-dropbox)
+- [الاتصال بمساحة عمل Google](/defender-cloud-apps/connect-google-workspace)
+- [الاتصال ب Salesforce](/defender-cloud-apps/connect-salesforce)
+- [الاتصال ب Cisco Webex](/defender-cloud-apps/connect-webex)
 
-بعد توصيل تطبيقات السحابة ب Defender for Cloud Apps، يمكنك إنشاء Microsoft 365 DLP لها.
+بعد توصيل تطبيقات السحابة ب Defender for Cloud Apps، يمكنك إنشاء نهج DLP لها.
 
-> [!NOTE]
-> من الممكن أيضا استخدام Microsoft Defender لتطبيقات السحابة لإنشاء سياسات DLP لتطبيقات Microsoft السحابية. ومع ذلك، من المستحسن استخدام Microsoft 365 لإنشاء سياسات DLP وإدارتها لتطبيقات Microsoft السحابية.
+## <a name="create-a-dlp-policy-scoped-to-a-non-microsoft-cloud-app"></a>إنشاء نهج DLP محدد النطاق لتطبيق سحابة غير Microsoft
 
-## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>إنشاء نهج DLP لتطبيق سحابة غير Microsoft
+راجع [إنشاء نهج DLP واختباره وضبطه](create-test-tune-dlp-policy.md) للإجراءات لإنشاء نهج DLP. ضع هذه النقاط في الاعتبار أثناء تكوين نهجك.
 
-عندما تحدد موقع نهج DLP، قم تشغيل **موقع Microsoft Defender لتطبيقات السحابة** .
+- حدد تشغيل موقع **Microsoft Defender for Cloud Apps**.
+- لتحديد تطبيق أو مثيل معين، حدد **"اختيار مثيل**". إذا لم تحدد مثيلا، فسيتم تحديد نطاق النهج لجميع التطبيقات المتصلة في مستأجر Microsoft Defender for Cloud Apps.
+- يمكنك التحديد من بين عدد من **الإجراءات** لفرضها على تطبيقات الجهات الخارجية. لتقييد تطبيقات الجهات الخارجية، حدد **"تقييد تطبيقات الجهات الخارجية** " ثم حدد الإجراءات المحددة.
 
-- لتحديد مثيل أو تطبيق معين، حدد **اختيار مثيل**.
-- إذا لم تحدد مثيلا، فإن النهج يستخدم جميع التطبيقات المتصلة في مستأجر Microsoft Defender for Cloud Apps.
-
-   ![المواقع لتطبيق النهج.](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
-
-   ![Box-US و Box-General.](../media/2-dlp-non-microsoft-cloud-app-box.png)
-
-يمكنك اختيار إجراءات متنوعة لكل تطبيق سحابة غير معتمد من Microsoft. لكل تطبيق، هناك إجراءات محتملة مختلفة (تعتمد على API لتطبيق السحابة).
-
-![إنشاء قاعدة.](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
-
-عند إنشاء قاعدة في نهج DLP، يمكنك تحديد إجراء لتطبيقات السحابة غير الخاصة ب Microsoft. لتقييد تطبيقات الأطراف الخارجية، حدد **تقييد تطبيقات الأطراف الخارجية**.
-
-![تقييد تطبيقات  الأطراف الخارجية.](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
+![قائمة بالإجراءات التي يجب فرضها على تطبيقات السحابة المتصلة](../media/dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
 > [!NOTE]
-> تستخدم سياسات DLP المطبقة على تطبيقات غير Microsoft Microsoft Microsoft Defender for Cloud Apps. عند إنشاء نهج DLP لتطبيق غير Microsoft، سيتم تلقائيا إنشاء النهج نفسه في Microsoft Defender لتطبيقات السحابة.
-
-للحصول على معلومات حول إنشاء نهج DLP وتكوينها، راجع [إنشاء نهج DLP واختباره](./create-test-tune-dlp-policy.md).
+> عند إنشاء نهج DLP الذي تم تحديد نطاقه إلى Microsoft Defender for Cloud Apps، سيتم إنشاء النهج نفسه تلقائيا في Microsoft Defender for Cloud Apps.
 
 ## <a name="see-also"></a>انظر أيضاً
 
-- [إنشاء نهج DLP واختباره](./create-test-tune-dlp-policy.md)
+- [إنشاء اختبار وضبط نهج DLP](./create-test-tune-dlp-policy.md)
 - [بدء استخدام نهج DLP الافتراضي](./get-started-with-the-default-dlp-policy.md)
 - [إنشاء نهج DLP من قالب](./create-a-dlp-policy-from-a-template.md)

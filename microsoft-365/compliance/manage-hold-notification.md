@@ -16,24 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: استخدم سير عمل الاتصالات في eDiscovery (Premium) لتعقب حالة إعلامات الاحتجاز القانوني وتحديثها وإعادة إرسالها إذا لزم الأمر.
-ms.openlocfilehash: 95417d54f7a84439b0321e31f0d6c0f2236af047
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 161628061d27c17e9e606cb7f88fbbe52d22be8f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093954"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632234"
 ---
 # <a name="manage-hold-notifications"></a>إدارة إعلامات الانتظار
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-بعد بدء سير عمل إعلام الاحتجاز القانوني، يمكنك استخدام سير عمل الاتصالات في Microsoft Purview eDiscovery (Premium) لتعقب حالة اتصالاتك. تحتوي علامة التبويب Communications على قائمة بكافة الإعلامات داخل حالة eDiscovery (Premium). يمكنك الاطلاع على تفاصيل مثل عدد أمناء الحفظ الذين تم تعيينهم أو الذين أقروا بالإشعار.
+بعد بدء سير عمل إعلام الاحتجاز القانوني، يمكنك استخدام سير عمل الاتصالات في Microsoft Purview eDiscovery (Premium) لتعقب حالة اتصالاتك. تحتوي علامة التبويب Communications على قائمة بجميع الإعلامات ضمن حالة eDiscovery (Premium). يمكنك الاطلاع على تفاصيل مثل عدد أمناء الحفظ الذين تم تعيينهم أو الذين أقروا بالإشعار.
 
 ## <a name="monitor-acknowledgments"></a>مراقبة إقرارات
 
 بعد تحديد اتصال من علامة تبويب **Communications** ، يمكنك عرض قائمة بأمناء الحفظ الذين أقروا بإشعار الاحتجاز. 
 
-1. في مركز التوافق، انتقل إلى **eDiscovery > eDiscovery (Premium)**.
+1. في مركز التوافق، انتقل إلى **eDiscovery > eDiscovery (Premium).**
 
 2. حدد حالة ثم انقر فوق علامة التبويب **"اتصالات** ".
 
@@ -47,7 +45,7 @@ ms.locfileid: "65093954"
 
 لإعادة إرسال إشعار احتجاز إلى الوصي:
 
-1. في eDiscovery (Premium)، حدد حالة ثم انقر فوق علامة التبويب **Communications**.
+1. في eDiscovery (Premium)، حدد حالة ثم انقر فوق علامة التبويب **Communications** .
 
 2. حدد اتصالا لعرض صفحة القائمة المنبثقة **لاتصال الوصي** .
 
@@ -68,7 +66,7 @@ ms.locfileid: "65093954"
 
 لتحديث محتويات إشعار الاحتجاز الأولي:
 
-1. في eDiscovery (Premium)، حدد حالة ثم انقر فوق علامة التبويب **Communications**.
+1. في eDiscovery (Premium)، حدد حالة ثم انقر فوق علامة التبويب **Communications** .
 
 2. حدد إشعار الاحتجاز الذي تريد تحديثه وانقر فوق **"تحرير"** في صفحة القائمة المنبثقة **لاتصالات الوصي** .
 

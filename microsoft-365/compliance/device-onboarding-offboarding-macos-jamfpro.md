@@ -13,19 +13,17 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: تعرف على كيفية إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام JAMF Pro
-ms.openlocfilehash: bf15868b865afa80146df2b16199caf360a55ce2
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+description: تعرف على كيفية إلحاق أجهزة macOS وإلحاقها بحلول Microsoft Purview باستخدام JAMF Pro
+ms.openlocfilehash: a4f6928098525cf04c2e752b8c6d467800f270da
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953416"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635612"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام JAMF Pro
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يمكنك استخدام PRO JAMF لإلحاق أجهزة macOS في حلول Microsoft Purview مثل منع فقدان بيانات نقطة النهاية.
+يمكنك استخدام JAMF Pro لإلحاق أجهزة macOS في حلول Microsoft Purview مثل منع فقدان بيانات نقطة النهاية.
 
 > [!IMPORTANT]
 > استخدم هذا الإجراء إذا ***لم يكن*** لديك Microsoft Defender لنقطة النهاية (MDE) منشورة على أجهزة macOS
@@ -37,7 +35,7 @@ ms.locfileid: "64953416"
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-- تأكد من [إدارة أجهزة macOS من خلال JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) ومقترنة بهوية (انضم Azure AD إلى UPN) من خلال JAMF الاتصال أو Intune.
+- تأكد من [إدارة أجهزة macOS من خلال JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) ومقترنة بهوية (Azure AD انضم إلى UPN) من خلال JAMF Connect أو Intune.
 - تثبيت مستعرض v95+ Edge على أجهزة macOS
 
 ## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>إلحاق الأجهزة في حلول Microsoft Purview باستخدام JAMF Pro
@@ -69,7 +67,7 @@ ms.locfileid: "64953416"
 
 ### <a name="get-the-device-onboarding-package"></a>الحصول على حزمة إلحاق الجهاز
 
-1. في **مركز التوافق**، افتح **الإعدادات** >  **الحاق** بالمتلحق واختر **"إلحاق".**
+1. في **مركز التوافق**، افتح **إعدادات** > **إعداد الجهاز** واختر **"إلحاق".**
 
 1. **لتحديد نظام التشغيل لبدء عملية الإلحاق**، اختر **macOS**
 
@@ -79,16 +77,16 @@ ms.locfileid: "64953416"
 
 1. استخراج محتويات حزمة إلحاق الجهاز. في مجلد JAMF، يجب أن تشاهد ملف *DeviceComplainceOnboarding.plist* .
 
-### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>إنشاء ملف تعريف تكوين Pro JAMF لحزمة الإلحاق
+### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>إنشاء ملف تعريف تكوين JAMF Pro لحزمة الإلحاق
 
-1. إنشاء ملف تعريف تكوين جديد في PRO JAMF. راجع [دليل مسؤولي PRO JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). استخدم هذه القيم:
+1. إنشاء ملف تعريف تكوين جديد في JAMF Pro. راجع [دليل مسؤولي JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). استخدم هذه القيم:
     - الاسم: `MDATP onboarding for macOS`
     - وصف: `MDATP EDR onboarding for macOS`
     - الفئه: `none`
     - طريقة التوزيع: `install automatically`
     - مستوي: `computer level`
 
-2. في وحدة تحكم PRO JAMF > **التطبيق & إعدادات مخصصة**، اختر **تحميل** ثم **إضافة**. استخدم هذه القيمة:
+2. في وحدة تحكم JAMF Pro > **التطبيق & إعدادات مخصصة**، اختر **تحميل** ثم **إضافة**. استخدم هذه القيمة:
     - مجال التفضيل: `com.microsoft.wdav.atp`
 
 3. اختر **التحميل** وحدد ملف الإلحاق **DeviceComplianceOnboarding.plist**.
@@ -106,17 +104,17 @@ ms.locfileid: "64953416"
 > [!IMPORTANT]
 > يجب استخدام ***com.microsoft.wdav** _ كقيمة مجال التفضيل. يستخدم Microsoft Defender لنقطة النهاية هذا الاسم و_ *_com.microsoft.wdav.ext_** لتحميل إعداداته المدارة.
 
-1. إنشاء ملف تعريف تكوين جديد في PRO JAMF. راجع [دليل مسؤولي PRO JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). استخدم هذه القيم:
+1. إنشاء ملف تعريف تكوين جديد في JAMF Pro. راجع [دليل مسؤولي JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). استخدم هذه القيم:
     - الاسم: `MDATP MDAV configuration settings`
     - الوصف: اترك هذا فارغا
     - الفئه: `none`
     - طريقة التوزيع: `install automatically`
     - مستوي: `computer level`
 
-1. في علامة التبويب **"تطبيق & Custom الإعدادات**"، اختر **"تطبيقات خارجية**"، واختر **"إضافة**" واختر **"مخطط مخصص**" لمجال التفضيل. استخدم هذه القيمة:
+1. في علامة التبويب **"تطبيق & إعدادات مخصصة** "، اختر **"تطبيقات خارجية**"، واختر **"إضافة** **مخطط مخصص** " واختره لمجال التفضيل. استخدم هذه القيمة:
     - مجال التفضيل: `com.microsoft.wdav`
 
-1. اختر **"إضافة مخطط"** **و"Upload**" لتحميل ملف *schema.json*.
+1. اختر **"إضافة مخطط** " و" **تحميل** " لتحميل ملف *schema.json* .
 
 1. اختر **"حفظ**".
 
@@ -134,16 +132,16 @@ ms.locfileid: "64953416"
 
 ### <a name="create-and-deploy-a-configuration-profile-for-microsoft-autoupdate-mau"></a>إنشاء ملف تعريف تكوين ونشره ل Microsoft AutoUpdate (MAU)
 
-1. إنشاء ملف تكوين PRO JAMF باستخدام **com.microsoft.autoupdate2.plist**. راجع [دليل مسؤولي PRO JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). استخدم هذه القيم:
+1. إنشاء ملف تكوين JAMF Pro باستخدام **com.microsoft.autoupdate2.plist**. راجع [دليل مسؤولي JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). استخدم هذه القيم:
     - الاسم: `MDATP MDAV MAU settings`
     - وصف: `Microsoft AutoUPdate settings for MDATP for macOS`
     - الفئه: `none`
     - طريقة التوزيع: `install automatically`
     - مستوي: `computer level`
 
-1. في **تطبيق & الإعدادات المخصصة** اختر **Upload** **وإضافة**.
+1. في **التطبيق & اختر "إعدادات مخصصة****" "تحميل** **وإضافة**".
 
-1. في **مجال التفضيلات**، أدخل `com.microsoft.autoupdate2` ثم اختر **Upload**.
+1. في **مجال التفضيلات** ، أدخل `com.microsoft.autoupdate2` ثم اختر **"تحميل**".
 
 1. اختر ملف **com.microsoft.autoupdate2.plist** .
 
@@ -161,11 +159,11 @@ ms.locfileid: "64953416"
 
 1. استخدم ملف **fulldisk.mobileconfig** .
 
-1. Upload ملف **fulldisk.mobileconfig** إلى JAMF. راجع [نشر ملفات تعريف التكوين المخصصة باستخدام PRO JAMF](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+1. تحميل ملف **fulldisk.mobileconfig** إلى JAMF. راجع [نشر ملفات تعريف التكوين المخصصة باستخدام JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
 ### <a name="create-and-deploy-a-configuration-profile-for-system-extensions"></a>إنشاء ملف تعريف تكوين ونشره لملحقات النظام
 
-1. إنشاء ملف تكوين Pro JAMF باستخدام الإجراءات في [دليل مسؤولي PRO JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). استخدم هذه القيم:
+1. إنشاء ملف تكوين JAMF Pro باستخدام الإجراءات في [دليل مسؤولي JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). استخدم هذه القيم:
     - الاسم: `MDATP MDAV System Extensions`
     - وصف: `MDATP system extensions`
     - الفئه: `none`
@@ -188,19 +186,19 @@ ms.locfileid: "64953416"
 
 ### <a name="configure-network-extension"></a>تكوين ملحق الشبكة
 
-1. استخدم ملف **netfilter.mobileconfig** الذي قمت بتنزيله من GitHub.
+1. استخدم ملف **netfilter.mobileconfig**  الذي قمت بتنزيله من GitHub.
 
-2. Upload إلى JAMF كما هو موضح في [نشر ملفات تعريف التكوين المخصصة باستخدام Pro Jamf](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+2. تحميل إلى JAMF كما هو موضح في [نشر ملفات تعريف التكوين المخصصة باستخدام Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="grant-accessibility-access-to-dlp"></a>منح إمكانية وصول ذوي الاحتياجات الخاصة إلى DLP
 
 1. استخدم ملف **accessibility.mobileconfig** الذي قمت بتنزيله من GitHub.
 
-2. Upload إلى JAMF كما هو موضح في [نشر ملفات تعريف التكوين المخصصة باستخدام Pro Jamf](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+2. تحميل إلى JAMF كما هو موضح في [نشر ملفات تعريف التكوين المخصصة باستخدام Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="get-the-installation-package"></a>الحصول على حزمة التثبيت
 
-1. في **مركز التوافق**، افتح **الإعدادات** >  **الحاق** بالمتلحق واختر **"إلحاق".**
+1. في **مركز التوافق**، افتح **إعدادات** > **إعداد الجهاز** واختر **"إلحاق".**
 
 1. **لتحديد نظام التشغيل لبدء عملية الإلحاق**، اختر **macOS**
 
@@ -212,7 +210,7 @@ ms.locfileid: "64953416"
 
 1. انتقل إلى المكان الذي حفظت الملف فيه `wdav.pkg` .
 
-1. افتح لوحة معلومات PRO JAMF.
+1. افتح لوحة معلومات JAMF Pro.
 
 1. حدد الكمبيوتر وانقر فوق الترس في الأعلى، ثم اختر **إدارة الكمبيوتر**.
 
@@ -227,7 +225,7 @@ ms.locfileid: "64953416"
     - **علامة التبويب "خيارات"**: اترك القيم الافتراضية
     - **علامة التبويب "قيود"**: اترك القيم الافتراضية
 
-1. اختر **"حفظ**". يؤدي ذلك إلى تحميل الحزمة إلى PRO JAMF.
+1. اختر **"حفظ**". يؤدي ذلك إلى تحميل الحزمة إلى JAMF Pro.
 
 1. افتح صفحة **النهج** .
 
@@ -240,7 +238,7 @@ ms.locfileid: "64953416"
 
 1. اختر **"حفظ**".
 
-1. اختر **PackagesConfigure** > .
+1. اختر **تكوين الحزم** > **.**
 
 1. اختر **"إضافة**".
 
@@ -260,7 +258,7 @@ ms.locfileid: "64953416"
 
 1. أعد تشغيل جهاز macOS.
 
-1. افتح **System** **PreferencesProfiles** > .
+1. افتح **ملفات تعريف** **تفضيلات** >  النظام.
 
 1. يجب أن ترى:
     - إمكانية الوصول
@@ -275,7 +273,7 @@ ms.locfileid: "64953416"
 ## <a name="offboard-macos-devices-using-jamf-pro"></a>إيقاف تشغيل أجهزة macOS باستخدام JAMF Pro
 
 1. إلغاء تثبيت التطبيق (إذا لم يكن يستخدم MDE)
-    1. راجع JAMF Pro Docs - نشر الحزمة - [دليل مسؤول PRO JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) لJamf Pro دليل المسؤول
+    1. راجع JAMF Pro Docs - نشر الحزمة - [دليل مسؤولي JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)دليل مسؤول Jamf Pro
 
 1. إعادة تشغيل جهاز macOS - قد تفقد بعض التطبيقات وظائف الطباعة حتى تتم إعادة تشغيلها
 

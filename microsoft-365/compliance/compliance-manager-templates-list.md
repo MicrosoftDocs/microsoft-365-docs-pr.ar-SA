@@ -17,16 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: يوفر Microsoft Purview Compliance Manager قوالب لإنشاء تقييمات تتماشى مع اللوائح والمعايير والقوانين الوطنية والإقليمية والصناعية.
-ms.openlocfilehash: 1ee28bc4ef79e6565086ba087055b8e00a0fe034
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+ms.openlocfilehash: bfac79126f167b6ec8faaacb0134f97aaea0fe4d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692772"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631194"
 ---
 # <a name="compliance-manager-templates-list"></a>قائمة قوالب إدارة التوافق
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **في هذه المقالة:** عرض القائمة الشاملة **للقوالب** المتوفرة لإنشاء التقييمات في Compliance Manager.
 
@@ -43,7 +41,7 @@ ms.locfileid: "65692772"
 
 فيما يلي قائمة كاملة من القوالب في Compliance Manager. تتطابق أسماء القوالب مع اللوائح أو الشهادات المقترنة. عند توفرها، تنقلك الارتباطات الموجودة في أسماء القوالب أدناه إلى الوثائق ذات الصلة حول هذا المعيار أو اللوائح أو القانون.
 
-يتوفر كل قالب (باستثناء القالب الافتراضي ل [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment)) في إصدار واحد على الأقل مصمم للاستخدام مع منتج معين، مثل Microsoft 365، إلى جانب إصدار عالمي يمكنك استخدامه لتقييم المنتجات الأخرى التي تختارها. لمعرفة المزيد حول خيارات القالب، راجع ["تعرف على قوالب التقييم".](compliance-manager-templates.md)
+يتوفر كل قالب (باستثناء القالب الافتراضي ل [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) ) في إصدار واحد على الأقل مصمم للاستخدام مع منتج معين، مثل Microsoft 365، إلى جانب إصدار عالمي يمكنك استخدامه لتقييم المنتجات الأخرى التي تختارها. لمعرفة المزيد حول خيارات القالب، راجع ["تعرف على قوالب التقييم".](compliance-manager-templates.md)
 
 يمكنك أيضا تحديد قوالب فردية في Compliance Manager لعرض المزيد من المعلومات حولها، بما في ذلك وصف تنظيم القالب وخصائصه. اقرأ المقطع **"حول"** لملخص.
 
@@ -72,7 +70,7 @@ ms.locfileid: "65692772"
 - NIST 800-53 Revs. 4 و5
 
 > [!NOTE]
-> بالنسبة لعملاء مجتمع حكومة الولايات المتحدة (سحابة القطاع الحكومي) المتوسطين، سحابة القطاع الحكومي الأعلى، وزارة الدفاع (DoD): يتم تضمين قوالب شهادة نموذج نضج الأمان عبر الإنترنت (CMMC) من 1 إلى 5 قوالب، بالإضافة إلى القوالب المذكورة أعلاه.
+> بالنسبة لعملاء مجتمع حكومة الولايات المتحدة (GCC) المتوسطين، والعلوي في مجلس التعاون، وزارة الدفاع (DoD): يتم تضمين القوالب من 1 إلى 5 قوالب لنموذج شهادة نضج الأمان عبر الإنترنت (CMMC)، بالإضافة إلى القوالب المذكورة أعلاه.
 
 ## <a name="preview-templates"></a>معاينة القوالب
 
@@ -125,7 +123,7 @@ ms.locfileid: "65692772"
 - ARMA - تنفيذ مبادئ حفظ السجلات المقبولة بشكل عام (GARP)  
 - [CDSA Content Protection & Security Standard](/compliance/regulatory/offering-cdsa)  
 - [مجموعة تنفيذ CIS 1، المجموعة 2، المجموعة 3](/compliance/regulatory/offering-cis-benchmark)
-- CIS Microsoft 365 المستوى 1 و2
+- CIS Microsoft 365 Foundation Level 1 و2
 - [مصفوفة عناصر تحكم السحابة (CCM) ل تحالف أمان السحابة (CSA)](/compliance/regulatory/offering-csa-star-attestation)
 - COBIT 5  
 - قائمة التحقق من الأمان عبر الإنترنت في FINRA  
@@ -140,7 +138,7 @@ ms.locfileid: "65692772"
 - خصوصية تنظيم المعلومات المالية والصحة للمستهلك، NAIC MDL-672، Q2 2017  
 - مراجعات مبادئ الإدارة السليمة للمخاطر التشغيلية (مخاطر عمليات Basel III)  
 - استبيان تجميع المعلومات الموحدة (SIG)  
-- [Exchange تقييم أمان المعلومات الموثوق به](/compliance/regulatory/offering-tisax-germany)
+- [تبادل تقييم أمان المعلومات الموثوق به](/compliance/regulatory/offering-tisax-germany)
 
 ### <a name="us-government"></a>حكومة الولايات المتحدة
 
@@ -287,7 +285,7 @@ ms.locfileid: "65692772"
 - أستراليا - ASD Essential 8 Maturity Level 2
 - أستراليا - ASD Essential 8 Maturity Level 3
 - أستراليا - قانون الأرشيفات الوطنية
-- أستراليا - السجلات العامة Office معايير حفظ السجلات في أستراليا  
+- أستراليا - معايير مسك السجلات العامة في Office Australia  
 - أستراليا - قانون البريد العشوائي لعام 2003  
 - رمز الخصوصية في أستراليا (إعداد تقارير الائتمان)  
 - قانون الخصوصية في أستراليا  
@@ -440,7 +438,7 @@ ms.locfileid: "65692772"
 
 - كندا - خرق لوائح الضمانات الأمنية  
 - كندا - بريتوبا البريطانية - خصوصية المعلومات & الأمان - FOIPPA  
-- [كندا - Office دليل Self-Assessment الأمان السيبراني للمؤسسات المالية](/compliance/regulatory/offering-osfi-canada)  
+- [كندا - مكتب المدير العام لدليل Self-Assessment الأمان السيبراني للمؤسسات المالية](/compliance/regulatory/offering-osfi-canada)  
 - كندا - قانون حماية البيانات الصحة الشخصية (PHIPA) 2020  
 - كندا - قانون حماية البيانات الشخصية والمستندات الإلكترونية (PIPEDA)  
 - كندا - محمي ب

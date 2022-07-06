@@ -15,19 +15,17 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: تعرف على كيفية دعم Microsoft Purview eDiscovery (Premium) في Microsoft 365 للغات الصينية واليابانية والكورية (CJK)، التي تستخدم مجموعة أحرف مزدوجة البايت.
-ms.openlocfilehash: e6399136713ff7be4b3c065de05b587a3f942b01
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: تعرف على كيفية دعم Microsoft Purview eDiscovery (Premium) في Microsoft 365 للغات الصينية واليابانية والكورية (CJK)، والتي تستخدم مجموعة أحرف مزدوجة البايت.
+ms.openlocfilehash: a16f1f63deee7cbc77b105c9c49431a8eeda0e71
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095895"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636194"
 ---
 # <a name="cjk-language-support-for-ediscovery-premium"></a>دعم لغة CJK ل eDiscovery (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يدعم Microsoft Purview eDiscovery (Premium) لغات مجموعة الأحرف مزدوجة البايت (بما في ذلك الصينية المبسطة والصينية التقليدية واليابانية والكورية، والتي تعرف مجتمعة بلغات *CJK*) للسيناريوهات المتقدمة التالية في مجموعة مراجعة:
+يدعم Microsoft Purview eDiscovery (Premium) لغات مجموعة الأحرف مزدوجة البايت (بما في ذلك الصينية المبسطة والصينية التقليدية واليابانية والكورية، والتي تعرف مجتمعة بلغات *CJK*) للسيناريوهات المتقدمة التالية في مجموعة المراجعة:
 
 - عند [الاستعلام عن البيانات في مجموعة مراجعة](review-set-search.md).
 

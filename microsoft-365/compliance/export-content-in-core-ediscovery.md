@@ -18,24 +18,22 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: يصف كيفية تصدير المحتوى وتنزيله من حالة eDiscovery (قياسي) في Microsoft 365.
-ms.openlocfilehash: 550bdda2c8b2f8afb0e7b4934f5337d7ee323d3a
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 144bb7248753894c72accebbf3e87ab2d7d82d2d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318647"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634258"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>تصدير المحتوى من حالة eDiscovery (قياسي)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-بعد تشغيل عملية بحث مقترنة بحالة Microsoft Purview eDiscovery (قياسي) بنجاح، يمكنك تصدير نتائج البحث. عند تصدير نتائج البحث، يتم تنزيل عناصر علبة البريد في ملفات PST أو كرسائل فردية. عند تصدير محتوى من مواقع SharePoint OneDrive for Business، يتم تصدير نسخ من مستندات Office الأصلية ومستندات أخرى. يتم أيضا تصدير ملف Results.csv يحتوي على معلومات حول كل عنصر يتم تصديره وملف بيان (بتنسيق XML) يحتوي على معلومات حول كل نتيجة بحث.
+بعد تشغيل عملية بحث مقترنة بحالة Microsoft Purview eDiscovery (قياسي) بنجاح، يمكنك تصدير نتائج البحث. عند تصدير نتائج البحث، يتم تنزيل عناصر علبة البريد في ملفات PST أو كرسائل فردية. عند تصدير محتوى من SharePoint ومواقع OneDrive for Business، يتم تصدير نسخ من مستندات Office الأصلية والمستندات الأخرى. يتم أيضا تصدير ملف Results.csv يحتوي على معلومات حول كل عنصر يتم تصديره وملف بيان (بتنسيق XML) يحتوي على معلومات حول كل نتيجة بحث.
   
 ## <a name="export-search-results"></a>تصدير نتائج البحث
 
 1. انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a> وسجل الدخول باستخدام بيانات الاعتماد لحساب المستخدم الذي تم تعيين أذونات eDiscovery المناسبة له.
 
-2. في جزء التنقل الأيمن من مدخل التوافق، حدد **"إظهار الكل**"، ثم حدد **eDiscoveryeDiscovery** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**(قياسي).**</a>
+2. في جزء التنقل الأيمن من مدخل التوافق، حدد **"إظهار الكل**"، ثم حدد **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**eDiscovery (قياسي).**</a>
 
 3. في صفحة **eDiscovery (قياسي)،** انقر فوق اسم الحالة التي تريد إنشاء قائمة الاحتجاز فيها.
 

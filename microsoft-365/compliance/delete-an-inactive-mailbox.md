@@ -17,28 +17,26 @@ search.appverid:
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
-description: عندما لا تعود بحاجة إلى الاحتفاظ بمحتويات علبة بريد غير نشطة Microsoft 365، يمكنك حذف علبة البريد غير النشطة بشكل دائم.
-ms.openlocfilehash: 1f45e5ce3aca79e4f5abbc13442876ecbb22e90c
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: عندما لا تعود بحاجة إلى الاحتفاظ بمحتويات علبة بريد Microsoft 365 غير النشطة، يمكنك حذف علبة البريد غير النشطة بشكل دائم.
+ms.openlocfilehash: a8bdd0cb98d744b6c64f651b7b7bb1754ff4f12e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017931"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634478"
 ---
 # <a name="delete-an-inactive-mailbox"></a>حذف علبة بريد غير نشطة
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتم استخدام علبة بريد غير نشطة للاحتفاظ بالبريد الإلكتروني لموظف سابق بعد مغادرة مؤسستك. عندما لا تعود بحاجة إلى الاحتفاظ بمحتويات علبة بريد غير نشطة، يمكنك حذف علبة البريد غير النشطة بشكل دائم عن طريق إزالة قائمة الاحتجاز. ومن المحتمل أيضا أن يتم وضع عدة قوائم احتجاز على علبة بريد غير نشطة. على سبيل المثال، قد يتم وضع علبة بريد غير نشطة في احتجاز التقاضي وعلى In-Place احتجاز واحد أو أكثر. بالإضافة إلى ذلك، قد يتم تطبيق استبقاء Microsoft 365 على علبة البريد غير النشطة. يجب إزالة كافة نهج الاحتجاز والاستبقاء من علبة بريد غير نشطة لحذفها. بعد إزالة نهج الاحتجاز والاستبقاء، يتم وضع علامة على علبة البريد غير النشطة للحذف ويتم حذفها نهائيا بعد معالجتها.
   
 > [!IMPORTANT]
-> مع استمرار الاستثمار بطرق مختلفة للحفاظ على محتوى علبة البريد، فإننا نعلن عن توقف In-Place عمليات الاحتجاز في مركز إدارة Exchange. وهذا يعني أنه يجب عليك استخدام نهج احتجاز التقاضي والاستبقاء لإنشاء علبة بريد غير نشطة. بدءا من 1 يوليو 2020، لن تتمكن من إنشاء In-Place جديد في Exchange Online. ولكن سيظل بإمكانك تغيير مدة احتجاز In-Place تم وضعه على علبة بريد غير نشطة. ومع ذلك، بدءا من 1 أكتوبر 2020، لن تتمكن من تغيير مدة الاحتجاز. ستتمكن فقط من حذف علبة بريد غير نشطة عن طريق إزالة In-Place Hold. ستظل علب البريد غير النشطة الموجودة على In-Place قائمة الاحتجاز محفوظة حتى تتم إزالة قائمة الاحتجاز. لمزيد من المعلومات حول توقف In-Place Holds، راجع [تقاعد أدوات eDiscovery القديمة](legacy-ediscovery-retirement.md).
+> بينما نواصل الاستثمار بطرق مختلفة للحفاظ على محتوى علبة البريد، فإننا نعلن عن توقف In-Place قوائم الاحتجاز في مركز إدارة Exchange. وهذا يعني أنه يجب عليك استخدام نهج احتجاز التقاضي والاستبقاء لإنشاء علبة بريد غير نشطة. بدءا من 1 يوليو 2020، لن تتمكن من إنشاء In-Place جديد في Exchange Online. ولكن سيظل بإمكانك تغيير مدة احتجاز In-Place تم وضعه على علبة بريد غير نشطة. ومع ذلك، بدءا من 1 أكتوبر 2020، لن تتمكن من تغيير مدة الاحتجاز. ستتمكن فقط من حذف علبة بريد غير نشطة عن طريق إزالة In-Place Hold. ستظل علب البريد غير النشطة الموجودة على In-Place قائمة الاحتجاز محفوظة حتى تتم إزالة قائمة الاحتجاز. لمزيد من المعلومات حول توقف In-Place Holds، راجع [تقاعد أدوات eDiscovery القديمة](legacy-ediscovery-retirement.md).
   
 راجع المقطع ["مزيد من المعلومات](#more-information) " للحصول على وصف لما يحدث بعد إزالة قوائم الاحتجاز من علبة بريد غير نشطة.
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>قبل حذف علبة بريد غير نشطة
 
-- يجب استخدام Exchange Online PowerShell لإزالة قوائم الاحتجاز من علبة بريد غير نشطة. لا يمكنك استخدام مركز إدارة Exchange (EAC) أو مدخل توافق Microsoft Purview لهذه الإجراءات. للحصول على إرشادات مفصلة خطوة بخطوة لاستخدام Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- يجب استخدام Exchange Online PowerShell لإزالة قوائم الاحتجاز من علبة بريد غير نشطة. لا يمكنك استخدام مركز إدارة Exchange (EAC) أو مدخل التوافق في Microsoft Purview لهذه الإجراءات. للحصول على إرشادات مفصلة خطوة بخطوة لاستخدام Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - يمكنك نسخ محتويات علبة بريد غير نشطة إلى علبة بريد أخرى قبل إزالة قائمة الاحتجاز وحذف علبة بريد غير نشطة. للحصول على التفاصيل، راجع [استعادة علبة بريد غير نشطة في Office 365](restore-an-inactive-mailbox.md).
 
@@ -50,7 +48,7 @@ ms.locfileid: "66017931"
 
 كما ذكر سابقا، قد يتم وضع احتجاز التقاضي أو In-Place الاحتجاز أو نهج الاستبقاء على علبة بريد غير نشطة. الخطوة الأولى هي تحديد قوائم الاحتجاز على علبة بريد غير نشطة.
   
-[الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)ثم قم بتشغيل الأمر التالي لعرض معلومات الاحتجاز لكافة علب البريد غير النشطة في مؤسستك.
+[اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)ثم قم بتشغيل الأمر التالي لعرض معلومات الاحتجاز لكافة علب البريد غير النشطة في مؤسستك.
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
@@ -90,7 +88,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 ```
 
 > [!TIP]
-> أفضل طريقة لتعريف علبة بريد غير نشطة هي باستخدام الاسم المميز أو قيمة GUID Exchange. يساعد استخدام إحدى هذه القيم على منع تحديد علبة البريد الخطأ عن طريق الخطأ. 
+> أفضل طريقة لتعريف علبة بريد غير نشطة هي باستخدام الاسم المميز أو قيمة EXCHANGE GUID. يساعد استخدام إحدى هذه القيم على منع تحديد علبة البريد الخطأ عن طريق الخطأ. 
   
 ### <a name="remove-an-inactive-mailbox-from-a-retention-policy"></a>إزالة علبة بريد غير نشطة من نهج استبقاء
 

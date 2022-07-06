@@ -1,5 +1,5 @@
 ---
-title: تمكين علب بريد الأرشيف Microsoft 365
+title: تمكين علب بريد الأرشيف ل Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -23,16 +23,14 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: تعرف على كيفية تمكين علب بريد الأرشيف أو تعطيلها لدعم متطلبات الاحتفاظ بالرسائل وeDiscovery والاحتفاظ بالمؤسسة.
-ms.openlocfilehash: f95da36b48389bba2bd640825071dbff5c6ddb3d
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 0fef0db0af845a0e3e03f7747775eb41591002a3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772413"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635524"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>تمكين علب بريد الأرشيف في مدخل التوافق في Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 توفر الأرشفة في Microsoft 365 (تسمى أيضا *الأرشفة الموضعية*) للمستخدمين مساحة تخزين إضافية على علبة البريد. لمزيد من المعلومات، راجع ["التعرف على علب بريد الأرشيف](archive-mailboxes.md)".
 
@@ -123,11 +121,11 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 يتم فتح صفحة منبثقة في مركز مسؤولي Microsoft 365. أدخل عنوان البريد الإلكتروني لعل البريد الذي تريد التحقق منه وانقر فوق **"تشغيل الاختبارات**".
 
 > [!NOTE]
-> يجب أن تكون مسؤولا عموميا Microsoft 365 لاستخدام التحقق التشخيصي لعلبة بريد الأرشيف. كما أن هذه الميزة غير متوفرة في Microsoft 365 السحب الحكومية، Microsoft 365 تشغلها 21Vianet أو Microsoft 365 ألمانيا.
+> يجب أن تكون مسؤولا عموميا في Microsoft 365 لاستخدام التحقق التشخيصي لعلبة بريد الأرشيف. كما أن هذه الميزة غير متوفرة في سحابات Microsoft 365 Government أو Microsoft 365 المشغل بواسطة 21Vianet أو Microsoft 365 Germany.
 
 ## <a name="instructions-for-end-users"></a>إرشادات للمستخدمين النهائيين
 
-شرح كيفية عمل علبة بريد الأرشيف للمستخدمين، وكيفية تفاعلهم معها في Outlook على Windows macOS والويب. سيتم تخصيص الوثائق الأكثر فعالية لمؤسستك. ولكن للحصول على الإرشادات الأساسية، راجع [إدارة تخزين البريد الإلكتروني باستخدام علب بريد الأرشيف عبر الإنترنت](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
+شرح كيفية عمل علبة بريد الأرشيف الخاصة بهم للمستخدمين، وكيفية تفاعلهم معها في Outlook على Windows وmacOS والويب. سيتم تخصيص الوثائق الأكثر فعالية لمؤسستك. ولكن للحصول على الإرشادات الأساسية، راجع [إدارة تخزين البريد الإلكتروني باستخدام علب بريد الأرشيف عبر الإنترنت](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721).
 
 ## <a name="next-steps"></a>الخطوات التالية
 

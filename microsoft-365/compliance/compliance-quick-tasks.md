@@ -16,16 +16,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: cb8471ffea418ac47921777a0ee9594fa73fe4ac
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 5e5b0aa9efb5d00602bba39ca18ef582cf34271a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930208"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632630"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>المهام السريعة لبدء التوافق في Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 إذا كنت تستخدم Microsoft Purview وتتساءل من أين تبدأ، فإن هذه المقالة توفر إرشادات حول الأساسيات وتحدد أولويات مهام التوافق المهمة. ستساعدك هذه المقالة على البدء بسرعة في إدارة بياناتك ومراقبتها، وحماية المعلومات، وتقليل المخاطر الداخلية.
 
@@ -35,7 +33,7 @@ ms.locfileid: "65930208"
 
 ## <a name="task-1-configure-compliance-permissions"></a>المهمة 1: تكوين أذونات التوافق
 
-من المهم إدارة الأشخاص في مؤسستك الذين لديهم حق الوصول إلى مدخل توافق Microsoft Purview لعرض المحتوى وتنفيذ مهام الإدارة. يوفر Microsoft 365 أدوارا إدارية خاصة بالامتثال واستخدام الأدوات المضمنة في مدخل توافق Microsoft Purview.
+من المهم إدارة الأشخاص في مؤسستك الذين لديهم حق الوصول إلى مدخل التوافق في Microsoft Purview لعرض المحتوى وتنفيذ مهام الإدارة. يوفر Microsoft 365 أدوارا إدارية خاصة بالامتثال واستخدام الأدوات المضمنة في مدخل التوافق في Microsoft Purview.
 
 ابدأ بتعيين أذونات التوافق للأشخاص في مؤسستك حتى يتمكنوا من تنفيذ هذه المهام ومنع الأشخاص غير المصرح لهم من الوصول إلى مناطق خارج مسؤولياتهم. ستحتاج إلى التأكد من تعيين الأشخاص المناسبين إلى **مسؤول بيانات التوافق** وأدوار **مسؤول التوافق** قبل البدء في تكوين حلول التوافق المضمنة في Microsoft 365 وتنفيذها. ستحتاج أيضا إلى تعيين مستخدمين لدور القارئ العمومي ل Azure Active Directory لعرض البيانات في Compliance Manager.
 
@@ -152,7 +150,7 @@ ms.locfileid: "65930208"
 
 ### <a name="prevent-data-loss"></a>منع فقدان البيانات
 
-تسمح لك [نهج Microsoft Purview Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) بتحديد المعلومات الحساسة ومراقبتها وحمايتها تلقائيا عبر مؤسسة Microsoft 365. استخدم نهج DLP لتحديد العناصر الحساسة عبر خدمات Microsoft، ومنع المشاركة العرضية للعناصر الحساسة، ومساعدة المستخدمين على تعلم كيفية البقاء متوافقين دون مقاطعة سير العمل الخاص بهم.
+تسمح لك [نهج تفادي فقدان البيانات في Microsoft Purview (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) بتحديد المعلومات الحساسة ومراقبتها وحمايتها تلقائيا عبر مؤسسة Microsoft 365. استخدم نهج DLP لتحديد العناصر الحساسة عبر خدمات Microsoft، ومنع المشاركة العرضية للعناصر الحساسة، ومساعدة المستخدمين على تعلم كيفية البقاء متوافقين دون مقاطعة سير العمل الخاص بهم.
 
 للحصول على إرشادات خطوة بخطوة لتكوين نهج DLP، [قم بإنشاء نهج DLP واختباره وضبطه](/microsoft-365/compliance/create-test-tune-dlp-policy). للحصول على معلومات ترخيص إدارة فقدان البيانات، راجع [إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 

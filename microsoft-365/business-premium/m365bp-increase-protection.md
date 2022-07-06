@@ -25,20 +25,20 @@ search.appverid:
 - BCS160
 - MET150
 description: الحصول على المساعدة في زيادة مستوى الحماية في Microsoft 365 Business Premium
-ms.openlocfilehash: 7917fa7e0530724c201db8b118ea2adedc7c3a62
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: b5d1c7c241be8e61c7f1dcb3ccd08f9c3a0e93af
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573836"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631926"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>زيادة الحماية من التهديدات Microsoft 365 Business Premium
 
-في هذا الهدف، يمكنك زيادة الحماية من التهديدات باستخدام Microsoft 365 Business Premium. من الضروري حماية شركتك من التصيد الاحتيالي والبرامج الضارة والتهديدات الأخرى. يتضمن هذا الهدف معلومات حول:
+في هذا الهدف، يمكنك زيادة الحماية من التهديدات باستخدام Microsoft 365 Business Premium. من الضروري حماية شركتك من التصيد الاحتيالي والبرامج الضارة والتهديدات الأخرى. تتضمن هذه المقالة معلومات حول:
 
 - [نهج الأمان المعينة مسبقا](#review-and-apply-preset-security-policies) التي يمكن أن توفر الكثير من الوقت في الإعداد والتكوين.
-- [نهج الأمان المخصصة](#create-custom-security-policies) التي يمكنك تحديدها لتناسب احتياجات عملك
-- كيفية [ضبط إعدادات المشاركة لملفات ومجلدات SharePoint وOneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
+- [نهج الأمان المخصصة](#create-custom-security-policies) التي يمكنك تحديدها لتناسب احتياجات عملك.
+- [كيفية ضبط إعدادات المشاركة لملفات ومجلدات SharePoint وOneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [نهج التنبيه](#review-your-alert-policies) التي تراقب ملفات معينة وكيفية استخدامها.
 
 ## <a name="review-and-apply-preset-security-policies"></a>مراجعة نهج الأمان المعدة مسبقا وتطبيقها

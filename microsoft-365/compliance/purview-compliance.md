@@ -1,7 +1,7 @@
 ---
-title: Microsoft Purview حلول المخاطر والتوافق
-description: استخدم هذه المقالة لمعرفة المزيد حول Microsoft Purview حلول المخاطر والتوافق.
-keywords: Microsoft 365، Microsoft Purview، التوافق، الحلول
+title: حلول التوافق والمخاطر من Microsoft Purview
+description: استخدم هذه المقالة لمعرفة المزيد حول حلول المخاطر والامتثال ل Microsoft Purview.
+keywords: Microsoft 365، وMicrosoft Purview، والامتثال، والحلول
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c56c855983e27a3882796cd1e222c97305a627c4
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 96b1efdddcf8a0b2e1034c392c27f160137379de
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101544"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635656"
 ---
-# <a name="microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview حلول المخاطر والتوافق
+# <a name="microsoft-purview-risk-and-compliance-solutions"></a>حلول التوافق والمخاطر من Microsoft Purview
 
-يساعدك Microsoft Purview حلول المخاطر والتوافق على إدارة بياناتك ومراقبتها، وحماية المعلومات، وتقليل مخاطر الامتثال، وتلبية المتطلبات التنظيمية. ستساعدك هذه المقالة على التعرف على Microsoft Purview حلول المخاطر والتوافق والبدء بسرعة في نشر هذه الحلول لتلبية احتياجات الامتثال المحددة لمؤسستك.
+تساعدك حلول Microsoft [Purview](/purview/purview) للمخاطر والتوافق على إدارة بياناتك ومراقبتها، وحماية المعلومات، وتقليل مخاطر التوافق، وتلبية المتطلبات التنظيمية. ستساعدك هذه المقالة على التعرف على حلول المخاطر والتوافق ل Microsoft Purview والبدء بسرعة في نشر هذه الحلول لتلبية احتياجات الامتثال المحددة لمؤسستك.
 
 ## <a name="protect-sensitive-data-across-clouds-apps-and-devices"></a>حماية البيانات الحساسة عبر السُحب والتطبيقات والأجهزة
 
@@ -31,7 +31,7 @@ ms.locfileid: "66101544"
 
 ### <a name="know-your-data"></a>تعرّف على بياناتك
 
-لديك معلومات موجودة في جميع خدمات Microsoft 365 والخدمات المحلية. يعد تحديد العناصر الحساسة والحصول على رؤية حول كيفية استخدامها عنصرا أساسيا في ممارسة حماية المعلومات. تتضمن Microsoft Purview ما يلي:
+لديك معلومات موجودة في جميع خدمات Microsoft 365 وفي أماكن العمل. يعد تحديد العناصر الحساسة والحصول على رؤية حول كيفية استخدامها عنصرا أساسيا في ممارسة حماية المعلومات. يتضمن Microsoft Purview ما يلي:
 
 - [أنواع المعلومات الحساسة](/microsoft-365/compliance/sensitive-information-type-learn-about) لتحديد العناصر الحساسة باستخدام تعبيرات عادية مضمنة أو مخصصة أو دالة.
 - [المصنفات القابلة للتدريب](/microsoft-365/compliance/classifier-learn-about) لتحديد العناصر الحساسة باستخدام أمثلة للبيانات التي تهتم بها بدلا من تحديد العناصر في العنصر.
@@ -48,13 +48,13 @@ ms.locfileid: "66101544"
 يمكن أن تسبب المشاركة غير المقصودة للعناصر الحساسة ضررا ماليا لمؤسستك وقد تؤدي إلى انتهاك القوانين واللوائح. يمكن أن يساعد [تفادي فقدان البيانات في Microsoft Purview](/microsoft-365/compliance/dlp-learn-about-dlp) في حماية مؤسستك من المشاركة غير المقصودة أو العرضية للمعلومات الحساسة داخل مؤسستك وخارجها. في نهج منع فقدان البيانات، يمكنك:
 
 - حدد المعلومات الحساسة التي تريد مراقبتها، مثل البيانات المالية والصحة والخدمات الطبية وبيانات الخصوصية.
-- مكان المراقبة، مثل خدمات Microsoft 365 أو Windows والأجهزة macOS.
+- مكان المراقبة، مثل خدمات Microsoft 365 أو أجهزة Windows وmacOS.
 - الشروط التي يجب مطابقتها لتطبيق نهج على عنصر، مثل العناصر التي تحتوي على بطاقة ائتمان أو رخصة القيادة أو أرقام الضمان الاجتماعي.
 - الإجراءات التي يجب اتخاذها عند العثور على تطابق، مثل التدقيق، وحظر النشاط، وحظر النشاط مع تجاوز.
 
 ### <a name="manage-your-data-lifecycle"></a>إدارة دورة حياة بياناتك
 
-يوفر لك [إدارة دورة البيانات في Microsoft Purview](/microsoft-365/compliance/manage-data-governance#microsoft-purview-data-lifecycle-management) (المعروف سابقا ب Microsoft Information Governance) أدوات وإمكانيات للاحتفاظ بالمحتوى وحذفه عبر Exchange، SharePoint، OneDrive، مجموعات Microsoft 365، Teams، Yammer. غالبا ما تكون هناك حاجة إلى الاحتفاظ برسائل البريد الإلكتروني والمستندات والرسائل وحذفها للمتطلبات التنظيمية والتوافق. ومع ذلك، فإن حذف المحتوى الذي لم يعد له قيمة تجارية يقلل أيضا من سطح الهجوم.
+يوفر لك [إدارة دورة البيانات في Microsoft Purview](/microsoft-365/compliance/manage-data-governance#microsoft-purview-data-lifecycle-management) (المعروف سابقا ب Microsoft Information Governance) أدوات وإمكانيات للاحتفاظ بالمحتوى وحذفه عبر Exchange وSharePoint وOneDrive مجموعات Microsoft 365 وTeams وYamer. غالبا ما تكون هناك حاجة إلى الاحتفاظ برسائل البريد الإلكتروني والمستندات والرسائل وحذفها للمتطلبات التنظيمية والتوافق. ومع ذلك، فإن حذف المحتوى الذي لم يعد له قيمة تجارية يقلل أيضا من سطح الهجوم.
 
 لمزيد من المعلومات، راجع [التعرف على إدارة دورة حياة البيانات](/microsoft-365/compliance/data-lifecycle-management).
 
@@ -62,7 +62,7 @@ ms.locfileid: "66101544"
 
 [يعد التشفير](/microsoft-365/compliance/encryption) جزءا مهما من استراتيجية حماية الملفات وحماية المعلومات. ترميز عملية التشفير بياناتك (يشار إليها بنص عادي) في شفرة. على عكس النص العادي، لا يمكن استخدام شفرة التشفير من قبل الأشخاص أو أجهزة الكمبيوتر ما لم يتم فك تشفير النص المشفر وحتى يتم فك تشفيره. يتطلب فك التشفير مفتاح تشفير يملكه المستخدمون المعتمدون فقط. يساعد التشفير على التأكد من أن المستلمين المخولين فقط يمكنهم فك تشفير المحتوى الخاص بك.
 
-[يساعد Microsoft Purview تشفير المفتاح المزدوج](/microsoft-365/compliance/double-key-encryption) على تأمين البيانات الأكثر حساسية التي تخضع لمتطلبات الحماية الأكثر صرامة. [يساعدك Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview) على الوفاء بالالتزامات التنظيمية أو الامتثال للتحكم في مفاتيح الجذر. يمكنك تخويل خدمات Microsoft 365 صراحة لاستخدام مفاتيح التشفير الخاصة بك لتوفير خدمات سحابية ذات قيمة مضافة، مثل eDiscovery ومكافحة البرامج الضارة ومكافحة البريد العشوائي وفهرسة البحث وما إلى ذلك.
+يساعد [تشفير المفتاح المزدوج ل Microsoft Purview](/microsoft-365/compliance/double-key-encryption) على تأمين بياناتك الأكثر حساسية التي تخضع لمتطلبات الحماية الأكثر صرامة. يساعدك [Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview) على الوفاء بالالتزامات التنظيمية أو الامتثال للتحكم في مفاتيح الجذر. يمكنك تخويل خدمات Microsoft 365 صراحة لاستخدام مفاتيح التشفير الخاصة بك لتوفير خدمات سحابية ذات قيمة مضافة، مثل eDiscovery ومكافحة البرامج الضارة ومكافحة البريد العشوائي وفهرسة البحث وما إلى ذلك.
 
 ## <a name="identify-data-risks-and-manage-regulatory-compliance-requirements"></a>تحديد مخاطر البيانات وإدارة متطلبات الامتثال التنظيمي
 
@@ -79,29 +79,29 @@ ms.locfileid: "66101544"
 
 ### <a name="detect-and-act-on-risk-activities-with-insider-risk-management"></a>الكشف عن أنشطة المخاطر والعمل عليها باستخدام إدارة المخاطر الداخلية
 
-تستخدم [إدارة المخاطر الداخلية في Microsoft Purview](/microsoft-365/compliance/insider-risk-management) النطاق الكامل للخدمة ومؤشرات الجهات الخارجية لمساعدتك على تحديد نشاط المستخدم المحفوفة بالمخاطر في مؤسستك وفرزه والعمل عليه بسرعة. باستخدام سجلات من Microsoft 365 وMicrosoft Graph، تتيح لك إدارة المخاطر الداخلية تحديد نهج محددة لتحديد مؤشرات المخاطر. بعد تحديد الأنشطة المحفوفة بالمخاطر، يمكنك اتخاذ إجراء للتخفيف من هذه المخاطر.
+تستخدم [إدارة المخاطر الداخلية في Microsoft Purview](/microsoft-365/compliance/insider-risk-management) النطاق الكامل للخدمة ومؤشرات الجهات الخارجية لمساعدتك على تحديد نشاط المستخدم المحفوفة بالمخاطر في مؤسستك وفرزه والعمل عليه بسرعة. باستخدام سجلات من Microsoft 365 وMicrosoft Graph، تسمح لك إدارة المخاطر الداخلية بتحديد نهج محددة لتحديد مؤشرات المخاطر. بعد تحديد الأنشطة المحفوفة بالمخاطر، يمكنك اتخاذ إجراء للتخفيف من هذه المخاطر.
 
 ### <a name="detect-and-act-on-inappropriate-and-sensitive-messages-with-communication-compliance"></a>الكشف عن الرسائل غير المناسبة والحساسة والعمل عليها مع توافق الاتصالات
 
-تعد حماية المعلومات الحساسة والكشف عن حوادث الملاحقة في مكان العمل والعمل عليها جزءا مهما من الامتثال للسياسات والمعايير الداخلية. [يساعد توافق الاتصالات في Microsoft Purview](/microsoft-365/compliance/communication-compliance-policies) على تقليل هذه المخاطر من خلال مساعدتك على اكتشاف إجراءات المعالجة والتقاطها واتخاذها بسرعة للبريد الإلكتروني والاتصالات Microsoft Teams. وتشمل هذه الاتصالات غير المناسبة التي تحتوي على الألفاظ النابية والتهديدات والتعرض للتهديدات والاتصالات التي تشارك معلومات حساسة داخل وخارج مؤسستك.
+تعد حماية المعلومات الحساسة والكشف عن حوادث الملاحقة في مكان العمل والعمل عليها جزءا مهما من الامتثال للسياسات والمعايير الداخلية. [يساعد توافق الاتصالات في Microsoft Purview](/microsoft-365/compliance/communication-compliance-policies) على تقليل هذه المخاطر من خلال مساعدتك على اكتشاف إجراءات المعالجة والتقاطها واتخاذها بسرعة للبريد الإلكتروني واتصالات Microsoft Teams. وتشمل هذه الاتصالات غير المناسبة التي تحتوي على الألفاظ النابية والتهديدات والتعرض للتهديدات والاتصالات التي تشارك معلومات حساسة داخل وخارج مؤسستك.
 
 ### <a name="restrict-communication-and-collaboration-between-users-with-information-barriers"></a>تقييد التواصل والتعاون بين المستخدمين باستخدام حواجز المعلومات
 
-[Microsoft Purview حواجز المعلومات (IB)](/microsoft-365/compliance/information-barriers) هو حل توافق يسمح لك بتقييد الاتصال والتعاون ثنائي الاتجاه بين المجموعات والمستخدمين في Microsoft Teams SharePoint Online OneDrive for Business. غالبا ما يستخدم في الصناعات المنظمة للغاية، يمكن أن يساعد IB في تجنب تضاربات الاهتمام وحماية المعلومات الداخلية بين المستخدمين والمجالات التنظيمية.
+يعد [Microsoft Purview Information Barriers (IB)](/microsoft-365/compliance/information-barriers) حلا للامتثال يسمح لك بتقييد الاتصال والتعاون ثنائي الاتجاه بين المجموعات والمستخدمين في Microsoft Teams وSharePoint Online OneDrive for Business. غالبا ما يستخدم في الصناعات المنظمة للغاية، يمكن أن يساعد IB في تجنب تضاربات الاهتمام وحماية المعلومات الداخلية بين المستخدمين والمجالات التنظيمية.
 
 ### <a name="manage-business-legal-or-regulatory-record-keeping-requirements-with-records-management"></a>إدارة متطلبات حفظ السجلات التجارية أو القانونية أو التنظيمية باستخدام إدارة السجلات
 
 [إدارة سجلات Microsoft Purview](/microsoft-365/compliance/manage-data-governance#microsoft-purview-records-management) يساعد المنظمة على إدارة التزاماتها القانونية، ويوفر القدرة على إظهار الامتثال للوائح، ويزيد من الكفاءة مع التصرف المنتظم في العناصر التي لم تعد مطلوبة للاحتفاظ بها، أو لم تعد ذات قيمة، أو لم تعد مطلوبة لأغراض تجارية. لمزيد من المعلومات، راجع ["التعرف على إدارة السجلات](/microsoft-365/compliance/records-management)".
 
-### <a name="log-and-search-for-audited-activities-in-sharepoint-and-onedrive-with-audit-premium-or-audit-standard"></a>تسجيل الأنشطة التي تم تدقيقها والبحث فيها في SharePoint OneDrive باستخدام التدقيق (Premium) أو التدقيق (قياسي)
+### <a name="log-and-search-for-audited-activities-in-sharepoint-and-onedrive-with-audit-premium-or-audit-standard"></a>تسجيل الأنشطة التي تم تدقيقها والبحث فيها في SharePoint وOneDrive باستخدام Audit (Premium) أو Audit (Standard)
 
-[توفر حلول التدقيق Microsoft Purview](/microsoft-365/compliance/auditing-solutions-overview) حلولا متكاملة لمساعدة المؤسسات على الاستجابة الفعالة للأحداث الأمنية والتحقيقات الجنائية والتحقيقات الداخلية والتزامات الامتثال. يتم تسجيل الآلاف من عمليات المستخدم والمسؤول التي يتم تنفيذها في العشرات من خدمات وحلول Microsoft 365 وتسجيلها والاحتفاظ بها في سجل التدقيق الموحد لمؤسستك. يمكن البحث في سجلات التدقيق لهذه الأحداث من قبل عمليات الأمان، والمسؤولين عن تكنولوجيا المعلومات، وفرق المخاطر الداخلية، والامتثال والتحريين القانونيين في مؤسستك. توفر هذه الإمكانية رؤية للأنشطة التي يتم تنفيذها عبر مؤسستك Microsoft 365.
+توفر [حلول تدقيق Microsoft Purview](/microsoft-365/compliance/auditing-solutions-overview) حلولا متكاملة لمساعدة المؤسسات على الاستجابة الفعالة للأحداث الأمنية والتحقيقات الجنائية والتحقيقات الداخلية والتزامات الامتثال. يتم تسجيل الآلاف من عمليات المستخدم والمسؤول التي يتم تنفيذها في العشرات من خدمات وحلول Microsoft 365 وتسجيلها والاحتفاظ بها في سجل التدقيق الموحد لمؤسستك. يمكن البحث في سجلات التدقيق لهذه الأحداث من قبل عمليات الأمان، والمسؤولين عن تكنولوجيا المعلومات، وفرق المخاطر الداخلية، والامتثال والتحريين القانونيين في مؤسستك. توفر هذه الإمكانية رؤية للأنشطة التي يتم تنفيذها عبر مؤسسة Microsoft 365.
 
-لمزيد من المعلومات حول حلول التدقيق، راجع [التدقيق (Premium)](/microsoft-365/compliance/advanced-audit) [والتدقيق (قياسي).](/microsoft-365/compliance/set-up-basic-audit)
+لمزيد من المعلومات حول حلول التدقيق، راجع [Audit (Premium)](/microsoft-365/compliance/advanced-audit) [والتدقيق (Standard).](/microsoft-365/compliance/set-up-basic-audit)
 
 ### <a name="identify-and-manage-data-for-legal-cases-with-ediscovery-premium-or-ediscovery-standard"></a>تحديد وإدارة البيانات للحالات القانونية باستخدام eDiscovery (Premium) أو eDiscovery (قياسي)
 
-الاكتشاف الإلكتروني، أو eDiscovery، هو عملية تحديد المعلومات الإلكترونية وجمعها وتدقيقها لأسباب قانونية أو تنظيمية أو تجارية. يمكنك استخدام [حلول Microsoft Purview eDiscovery](/microsoft-365/compliance/ediscovery) للبحث عن البيانات والمحتوى في Exchange Online، OneDrive for Business، SharePoint Online، Microsoft Teams، مجموعات Microsoft 365 والفرق Yammer. يمكنك البحث في علب البريد والمواقع في البحث eDiscovery نفسه، ثم تصدير نتائج البحث للتحليل والمراجعة.
+الاكتشاف الإلكتروني، أو eDiscovery، هو عملية تحديد المعلومات الإلكترونية وجمعها وتدقيقها لأسباب قانونية أو تنظيمية أو تجارية. يمكنك استخدام [حلول Microsoft Purview eDiscovery](/microsoft-365/compliance/ediscovery) للبحث عن البيانات والمحتوى في فرق Exchange Online OneDrive for Business وSharePoint Online وMicrosoft Teams مجموعات Microsoft 365 وYamer. يمكنك البحث في علب البريد والمواقع في البحث eDiscovery نفسه، ثم تصدير نتائج البحث للتحليل والمراجعة.
 
 لمزيد من المعلومات حول حلول eDiscovery، راجع [eDiscovery (Premium)](/microsoft-365/compliance/overview-ediscovery-20) [وeDiscovery (قياسي).](/microsoft-365/compliance/get-started-core-ediscovery)
 
@@ -129,5 +129,5 @@ ms.locfileid: "66101544"
 
 ## <a name="next-steps-for-organizations-new-to-risk-and-compliance-solutions"></a>الخطوات التالية للمؤسسات الجديدة في حلول المخاطر والتوافق
 
-- [تعرف على الإصدار التجريبي من الحل Microsoft Purview](/microsoft-365/compliance/compliance-easy-trials)
+- [تعرف على الإصدار التجريبي من حل Microsoft Purview](/microsoft-365/compliance/compliance-easy-trials)
 - [المهام السريعة لبدء التوافق في Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks)

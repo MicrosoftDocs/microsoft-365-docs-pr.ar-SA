@@ -18,18 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: فهم كيفية استخدام وإدارة القوالب لإنشاء التقييمات في Microsoft Purview Compliance Manager. إنشاء قوالب وتعديلها باستخدام ملف Excel منسق.
-ms.openlocfilehash: e83e079ba47a9e9ab33b3219ca648d1b4af9f124
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: ac4d3fb6f7a43aa642b9d8b343a68c9f38f29e25
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115994"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635634"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>التعرف على قوالب التقييم في Compliance Manager
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-**في هذه المقالة:** فهم **كيفية عمل القوالب** **وكيفية إدارتها** من صفحة قوالب التقييم. احصل على إرشادات **لإنشاء** قوالب جديدة **، وتوسيع القوالب** الموجودة **وتعديلها**، **وتنسيق بيانات القالب باستخدام Excel**، وتصدير **تقارير** القوالب.
+**في هذه المقالة:** فهم **كيفية عمل القوالب** **وكيفية إدارتها** من صفحة قوالب التقييم. احصل على إرشادات **لإنشاء** قوالب جديدة **، وتوسيع القوالب** الموجودة **وتعديلها** ، **وتنسيق بيانات القالب باستخدام Excel**، وتصدير **تقارير** القوالب.
 
 > [!IMPORTANT]
 > تعتمد قوالب التقييم المتوفرة لمؤسستك على اتفاقية الترخيص الخاصة بك. [راجع التفاصيل](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-compliance-manager).
@@ -47,14 +45,14 @@ ms.locfileid: "66115994"
 
 يتم تعميم التقييمات من القوالب العالمية بشكل أكبر ولكنها توفر تنوعا موسعا، لأنها يمكن أن تساعدك على تتبع امتثال مؤسستك بسهولة عبر منتجات متعددة.
 
-تجدر الإشارة إلى أن عملاء مجتمع حكومة الولايات المتحدة (سحابة القطاع الحكومي) المتوسطين سحابة القطاع الحكومي العاليين وزارة الدفاع (DoD) لا يمكنهم حاليا استخدام قوالب عالمية.
+تجدر الإشارة إلى أنه لا يمكن لعملاء مجتمع حكومة الولايات المتحدة (GCC) Moderate و GCC High و وزارة الدفاع (DoD) استخدام القوالب العالمية حاليا.
 
 ## <a name="template-availability-and-licensing"></a>توفر القالب والترخيص
 
 هناك فئتان من القوالب في Compliance Manager: مضمنة ومتميزة.
 
 1. يتم منح **القوالب المضمنة** بواسطة ترخيص Compliance Manager الخاص بك وتغطى اللوائح والمتطلبات الرئيسية. لمعرفة المزيد حول القوالب المتوفرة بموجب اتفاقية الترخيص، راجع [تفاصيل الترخيص](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
-2. يمكن الحصول على **Premium القوالب** لتغطية الاحتياجات والسيناريوهات الإضافية عن طريق شراء تراخيص القوالب.
+2. يمكن الحصول على **قوالب Premium** لتغطية الاحتياجات والسيناريوهات الإضافية عن طريق شراء تراخيص القوالب.
 
 عندما تبدأ في إنشاء التقييمات، سيتعقب Compliance Manager عدد القوالب النشطة حتى تتمكن من مراقبة استخدامك. لمعرفة المزيد، راجع [القوالب النشطة وغير النشطة](compliance-manager-templates.md#active-and-inactive-templates).
 
@@ -64,31 +62,31 @@ ms.locfileid: "66115994"
 
 يمكن الحصول على تراخيص القوالب باستخدام أسلوب واحد أو أكثر من هذه الأساليب، اعتمادا على اتفاقية ترخيص Compliance Manager. بمجرد الانتهاء من عملية الشراء، يجب أن تصبح القوالب متوفرة في المستأجر الخاص بك في غضون 48 ساعة.
 
-**تجاري ومتوسط سحابة القطاع الحكومي**
+**متوسط تجاري ومتوسط في GCC**
 
-يمكن للحسابات التجارية وحسابات سحابة القطاع الحكومي Moderate شراء تراخيص القوالب في مركز الإدارة ([تعرف على المزيد حول الاشتراكات والتراخيص والفوترة](/microsoft-365/commerce/)). حدد كمية التراخيص التي ترغب في شرائها وخطة الدفع الخاصة بك.
+يمكن للحسابات التجارية وحسابات GCC Moderate شراء تراخيص القوالب في مركز الإدارة ([تعرف على المزيد حول الاشتراكات والتراخيص والفوترة](/microsoft-365/commerce/)). حدد كمية التراخيص التي ترغب في شرائها وخطة الدفع الخاصة بك.
 
 ارتباطات الشراء:
 
 - [التجاريه](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
-- [سحابة القطاع الحكومي متوسط](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
+- [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
 
-يمكنك أيضا الحصول على تراخيص من خلال مشاركتك في [برنامج Cloud Solution Provider](https://partner.microsoft.com/membership/cloud-solution-provider) أو [الترخيص المجمع](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+يمكنك أيضا الحصول على تراخيص من خلال مشاركتك في [برنامج موفر حلول السحابة](https://partner.microsoft.com/membership/cloud-solution-provider) أو [الترخيص المجمع](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
-**سحابة القطاع الحكومي حسابات عالية وحسابات DOD**
+**حسابات GCC High و DOD**
 
-سحابة القطاع الحكومي يجب على حسابات High و DOD شراء تراخيص القوالب من خلال [الترخيص المجمع](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+يجب على حسابات GCC High و DOD شراء تراخيص القوالب من خلال [الترخيص المجمع](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
 ### <a name="try-out-premium-templates"></a>تجربة القوالب المتميزة
 
 لتجربة القوالب المتميزة قبل إجراء عملية شراء، يمكنك أيضا الحصول على إصدارات تجريبية من التراخيص. تعد التراخيص التجريبية مناسبة لما يصل إلى 25 قالبا لمدة 90 يوما. بمجرد الحصول على الترخيص التجريبي، يجب أن تصبح القوالب متوفرة في المستأجر الخاص بك في غضون 48 ساعة.
 
-إذا كانت مؤسستك تملك ترخيصا تجاريا ل Compliance Manager، يمكنك معرفة كيفية بدء الإصدار التجريبي في ["حول الإصدار التجريبي المجاني" للتقييمات المتميزة Microsoft Purview Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
+إذا كانت مؤسستك تملك ترخيصا تجاريا ل Compliance Manager، يمكنك معرفة كيفية بدء الإصدار التجريبي في [حول الإصدار التجريبي المجاني للتقييمات المتميزة ل Microsoft Purview Compliance Manager](compliance-easy-trials-compliance-manager-assessments.md).
 
-إذا كانت مؤسستك تحت ترخيص سحابة القطاع الحكومي أو DOD، فاختر رابط الإصدار التجريبي المناسب لمؤسستك:
+إذا كانت مؤسستك ضمن ترخيص GCC أو DOD، فاختر رابط الإصدار التجريبي المناسب لمؤسستك:
 
-- [سحابة القطاع الحكومي متوسط](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
-- [سحابة القطاع الحكومي عالية](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
+- [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
+- [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
 - [وزاره الدفاع](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
 
 #### <a name="active-and-inactive-templates"></a>القوالب النشطة وغير النشطة
@@ -108,7 +106,7 @@ ms.locfileid: "66115994"
 
 إذا كان العداد يظهر 5/2، فهذا يشير إلى أن مؤسستك تتجاوز حدودها وتحتاج إلى شراء 3 قوالب متميزة قيد الاستخدام.
 
-القوالب لمنتج محدد مسبقا، مثل Microsoft 365، لها ترخيص مشترك مع الإصدارات العالمية لنفس القالب. يمكنك هذا من استخدام نفس الشهادة الأساسية عبر أكثر من منتج واحد. سيتم حساب استخدام أي من الإصدارين أو كليهما من نفس القالب كقالب واحد تم تنشيطه فقط.
+تحتوي القوالب لمنتج محدد مسبقا، مثل Microsoft 365، على ترخيص مشترك مع الإصدارات العالمية من نفس القالب. يمكنك هذا من استخدام نفس الشهادة الأساسية عبر أكثر من منتج واحد. سيتم حساب استخدام أي من الإصدارين أو كليهما من نفس القالب كقالب واحد تم تنشيطه فقط.
 
 لمزيد من التفاصيل، راجع [إرشادات ترخيص Compliance Manager](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
 
@@ -116,7 +114,7 @@ ms.locfileid: "66115994"
 
 تعرض صفحة قوالب التقييم في Compliance Manager قائمة بالقوالب والتفاصيل الرئيسية حولها. تتضمن القائمة قوالب يوفرها Compliance Manager بالإضافة إلى أي قوالب قامت مؤسستك بتعديلها أو إنشائها. يمكنك تطبيق عوامل التصفية للعثور على قالب يستند إلى الشهادة ونطاق المنتج والبلد والصناعة ومن أنشأه وما إذا كان القالب ممكنا لإنشاء التقييم.
 
-حدد قالبا من صفه لإظهار صفحة التفاصيل الخاصة به. تحتوي هذه الصفحة على وصف للقالب ومعلومات إضافية حول تفاصيل المصادقة والنطاق وعناصر التحكم. من هذه الصفحة، يمكنك تحديد الأزرار المناسبة لإنشاء تقييم، أو تصدير بيانات القالب إلى Excel، أو تعديل القالب.
+حدد قالبا من صفه لإظهار صفحة التفاصيل الخاصة به. تحتوي هذه الصفحة على وصف للقالب ومعلومات إضافية حول تفاصيل المصادقة والنطاق وعناصر التحكم. من هذه الصفحة، يمكنك تحديد الأزرار المناسبة لإنشاء تقييم أو تصدير بيانات القالب إلى Excel أو تعديل القالب.
 
 ## <a name="create-an-assessment-template"></a>إنشاء قالب تقييم
 
@@ -132,12 +130,12 @@ ms.locfileid: "66115994"
 
 ## <a name="format-assessment-template-data-in-excel"></a>تنسيق بيانات قالب التقييم في Excel
 
-عند إنشاء قوالب التقييم أو تعديلها أو توسيعها في Compliance Manager، ستعمل مع جداول بيانات Excel تستخدم تنسيقا ومخططا محددين. يجب اتباع هذه المواصفات حتى يتم استيراد الملفات بشكل صحيح. لمعرفة المزيد، راجع [تنسيق بيانات قالب التقييم في Excel](compliance-manager-templates-format-excel.md).
+عند إنشاء قوالب التقييم أو تعديلها أو توسيعها في Compliance Manager، ستعمل مع جداول بيانات Excel التي تستخدم تنسيقا ومخططا محددين. يجب اتباع هذه المواصفات حتى يتم استيراد الملفات بشكل صحيح. لمعرفة المزيد، راجع [تنسيق بيانات قالب التقييم في Excel](compliance-manager-templates-format-excel.md).
 
 ## <a name="export-a-template"></a>تصدير قالب
 
-يمكنك تصدير ملف Excel يحتوي على كافة بيانات القالب. ستحتاج إلى تصدير قالب لتعديله، لأن هذا سيكون الملف Excel الذي تقوم بتحريره وتحميله في [عملية التعديل](compliance-manager-templates-modify.md). يمكنك أيضا تصدير قالب للرجوع إليه إذا كنت تريد استخدام بيانات منه أثناء إنشاء قالب مخصص جديد.
+يمكنك تصدير ملف Excel يحتوي على كافة بيانات القالب. ستحتاج إلى تصدير قالب لتعديله، لأن هذا سيكون ملف Excel الذي تقوم بتحريره وتحميله في [عملية التعديل](compliance-manager-templates-modify.md). يمكنك أيضا تصدير قالب للرجوع إليه إذا كنت تريد استخدام بيانات منه أثناء إنشاء قالب مخصص جديد.
 
-لتصدير القالب، انتقل إلى صفحة تفاصيل القالب وحدد الزر **"تصدير إلى Excel**".
+لتصدير القالب، انتقل إلى صفحة تفاصيل القالب وحدد الزر **"تصدير إلى Excel** ".
 
 لاحظ أنه عند تصدير قالب قمت بتوسيعه من قالب Compliance Manager، سيحتوي الملف المصدر على السمات التي أضفتها إلى القالب فقط. لن يتضمن الملف الذي تم تصديره بيانات القالب الأصلية التي توفرها Microsoft. للحصول على مثل هذا التقرير، راجع إرشادات [تصدير تقرير تقييم](compliance-manager-assessments.md#export-an-assessment-report).

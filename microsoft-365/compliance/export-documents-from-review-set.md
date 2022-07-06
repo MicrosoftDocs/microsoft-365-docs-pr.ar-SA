@@ -17,24 +17,22 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية تحديد المحتوى وتصديره من مجموعة مراجعة eDiscovery (Premium) للعروض التقديمية أو المراجعات الخارجية.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a2cc2b5f528c7573c255e05cea4b512416711462
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 249990915cb012ca71a40ef074d8a1f5044b8d6e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096953"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635338"
 ---
 # <a name="export-documents-from-a-review-set-in-ediscovery-premium"></a>تصدير المستندات من مجموعة مراجعة في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يسمح التصدير للمستخدمين بتخصيص المحتوى المضمن في حزمة التنزيل عند تصدير مستند من مجموعة مراجعة في eDiscovery (Premium).
 
 لتصدير المستندات من مجموعة مراجعة:
 
-1. في مدخل الامتثال ل Microsoft Purview، افتح حالة eDiscovery (Premium)، وحدد علامة تبويب **مجموعات المراجعة**، ثم حدد مجموعة المراجعة التي تريد تصديرها.
+1. في مدخل التوافق في Microsoft Purview، افتح حالة eDiscovery (Premium)، وحدد علامة التبويب **"مجموعات المراجعة**"، ثم حدد مجموعة المراجعة التي تريد تصديرها.
 
-2. في مجموعة المراجعة، انقر فوق **ActionExport** > .
+2. في مجموعة المراجعة، انقر فوق **"تصدير الإجراء** > ".
 
    تعرض أداة التصدير صفحة القائمة المنبثقة مع الإعدادات لتكوين التصدير. يتم تحديد بعض الخيارات بشكل افتراضي، ولكن يمكنك تغييرها. راجع القسم التالي للحصول على أوصاف لخيارات التصدير التي يمكنك تكوينها.
 
@@ -102,7 +100,7 @@ ms.locfileid: "65096953"
     - الرسائل المحمية بإدارة حقوق استخدام المعلومات (IRM) التي تم فك تشفيرها.
     - رسائل معالجة الأخطاء.
     - المرفقات أو الارتباطات الحديثة المشار إليها في الرسائل.
-    - العناصر المشفرة (التي لا يتم تضمينها في ملفات PST في مجلد Exchange).
+    - العناصر المشفرة (غير المضمنة في ملفات PST في مجلد Exchange).
   
   - SharePoint: يحتوي هذا المجلد على كافة المحتويات الأصلية من SharePoint بتنسيق ملف أصلي. لا يمكن تضمين ملفات PDF المكررة مع هذا الخيار.
 

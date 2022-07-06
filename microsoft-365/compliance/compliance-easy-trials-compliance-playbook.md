@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 description: دليل المبادئ التجريبي لحلول Microsoft Purview.
 ms.custom: trial-playbook
-ms.openlocfilehash: 981f4d619eeef380625d6de8194e9cb0c42e2011
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 2b84a3e5636edad78a9d221a0d088b84392cf49e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530269"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633774"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>دليل المبادئ التجريبي: حلول Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 مرحبا بك في دليل المبادئ التجريبي لحلول Microsoft Purview. سيساعدك دليل المبادئ هذا على تحقيق أقصى استفادة من الإصدار التجريبي المجاني لمدة 90 يوما من خلال مساعدتك على اكتشاف قدرات قوية وشاملة لمنتجات Microsoft Purview والأمان.
 

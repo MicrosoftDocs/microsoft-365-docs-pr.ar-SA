@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدام مخطط انسيابي لتحديد النتيجة عندما يحتوي العنصر على نهج استبقاء متعددة أو تسمية استبقاء ونهج استبقاء
-ms.openlocfilehash: cf35a89faf3ed526c94acf362f1a927eb36420f0
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 4e5c1cf887144f89764e88a39ba14a95a2df576c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286791"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633444"
 ---
 # <a name="flowchart-to-determine-when-an-item-will-be-retained-or-permanently-deleted"></a>مخطط انسيابي لتحديد متى سيتم الاحتفاظ بعنصر أو حذفه نهائيا
 
->*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 استخدم المخطط الانسيابي التالي لتطبيق [مبادئ الاستبقاء](retention.md#the-principles-of-retention-or-what-takes-precedence) على عنصر لتحديد ما إذا كان النظام سيحتفظ به أو يحذفه بشكل دائم كنتيجة لتسمية الاستبقاء أو نهج الاستبقاء.
 

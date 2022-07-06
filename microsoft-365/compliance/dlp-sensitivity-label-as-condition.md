@@ -20,16 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على الخدمات وأنواع العناصر التي يمكنك استخدامها أوصاف الحساسية كشروط في نهج DLP
-ms.openlocfilehash: bf0fcb327b2869e21a54de22822d0d51c72e25b8
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 55803a2c354890264f99753af2aa6337cf49182a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438440"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632388"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>استخدام تسميات الحساسية كشروط في نهج DLP
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك استخدام [تسميات الحساسية](sensitivity-labels.md) كشرط في نهج DLP لهذه المواقع:
 
@@ -44,7 +42,7 @@ ms.locfileid: "65438440"
 > ![وصف الحساسية كشرط.](../media/dlp-sensitivity-label-as-a-condition.png)
 
 > [!IMPORTANT]
-> لن تتوفر **تسميات الحساسية** كشرط إذا حددت **Teams رسائل الدردشة والقنوات** كموقع لتطبيق نهج DLP.
+> لن تتوفر **تسميات الحساسية** كشرط إذا قمت بتحديد **دردشة Teams ورسائل القناة** كموقع لتطبيق نهج DLP.
 
 
 ## <a name="supported-items-scenarios-and-policy-tips"></a>العناصر والسيناريوهات وتلميحات النهج المعتمدة
@@ -64,16 +62,16 @@ ms.locfileid: "65438440"
 |أجهزة Windows 10     |العناصر         |نعم         |نعم         |
 |MCAS (معاينة) |العناصر         |نعم         |نعم         |
 
-\*يتم دعم الكشف عن DLP لمرفقات البريد الإلكتروني المسماة بالحساسية لأنواع ملفات Office المستندة إلى Open XML فقط.
+\* يتم دعم الكشف عن DLP لمرفقات البريد الإلكتروني المسماة بالحساسية لأنواع ملفات Office المستندة إلى Open XML فقط.
 
-\** يتم تحميل المرفقات المرسلة في Teams عبر الدردشة أو القنوات 1:1 تلقائيا إلى OneDrive for Business SharePoint. لذلك إذا تم تضمين SharePoint Online أو OneDrive for Business كمواقع في نهج DLP، فسيتم تضمين المرفقات المسماة المرسلة في Teams تلقائيا في نطاق هذا الشرط. لا يلزم تحديد Teams كموقع في نهج DLP.
+\** يتم تحميل المرفقات المرسلة في Teams عبر الدردشة أو القنوات 1:1 تلقائيا إلى OneDrive for Business وSharePoint. وبالتالي، إذا تم تضمين SharePoint Online أو OneDrive for Business كمواقع في نهج DLP، فسيتم تضمين المرفقات المسماة المرسلة في Teams تلقائيا في نطاق هذا الشرط. لا يلزم تحديد Teams كموقع في نهج DLP.
 
 > [!NOTE]
-> قدرة DLP على الكشف عن تسميات الحساسية في SharePoint OneDrive للأعمال محدودة. لمزيد من المعلومات، راجع [تمكين تسميات الحساسية لملفات Office في SharePoint OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#limitations).
+> قدرة DLP على الكشف عن تسميات الحساسية في SharePoint وOneDrive for business محدودة. لمزيد من المعلومات، راجع [تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive](sensitivity-labels-sharepoint-onedrive-files.md#limitations).
 
 ### <a name="supported-scenarios"></a>السيناريوهات المدعومة
 
-- سيتمكن مسؤول DLP من رؤية قائمة بجميع تسميات الحساسية في المستأجر عندما يختار تضمين تسمية حساسية واحدة أو أكثر كشرط.
+- سيتمكن مسؤول DLP من رؤية قائمة بجميع تسميات الحساسية في المستأجر عندما يختارون تضمين تسمية حساسية واحدة أو أكثر كشرط.
 
 - يتم دعم استخدام تسميات الحساسية كشرط عبر جميع أحمال العمل كما هو موضح في مصفوفة الدعم أعلاه.
 

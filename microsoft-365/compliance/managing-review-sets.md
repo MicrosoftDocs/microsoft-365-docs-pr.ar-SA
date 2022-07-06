@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية إدارة مجموعات المراجعة حتى تتمكن من تحليل البيانات والاستعلام عنها وعرضها ووضع علامة عليها وتصديرها في حالة eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d81bfa83126210bcaf80fe05b89b26a091e4192f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 48b2bc1b4ad64606416c2191f2a191973e1d7c73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078834"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634082"
 ---
 # <a name="manage-review-sets-in-ediscovery-premium"></a>إدارة مجموعات المراجعة في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 مجموعات المراجعة هي مجموعة ثابتة من المستندات حيث يمكنك تحليل البيانات والاستعلام عنها وعرضها ووضع علامة عليها وتصديرها في حالة ما. لمزيد من المعلومات حول تنفيذ هذه المهام، راجع:
 
@@ -50,15 +48,15 @@ ms.locfileid: "65078834"
 
 ![مجموعة مراجعة جديدة مدرجة في علامة تبويب مجموعة المراجعة.](../media/AeDnewreviewset.png)
 
-هناك ثلاث طرق مختلفة لإضافة بيانات إلى مجموعة مراجعة في حالة eDiscovery (Premium).
+هناك ثلاث طرق مختلفة لإضافة البيانات إلى مجموعة مراجعة في حالة eDiscovery (Premium).
 
 ![ثلاث طرق لإضافتها إلى مجموعات المراجعة.](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 
 1. [إضافة نتائج البحث إلى مجموعة مراجعة](add-data-to-review-set.md)
 
-2. [تحميل البيانات غير Microsoft 365 في مجموعة مراجعة](load-non-Office-365-data-into-a-review-set.md)
+2. [تحميل البيانات غير الخاصة ب Microsoft 365 في مجموعة مراجعة](load-non-Office-365-data-into-a-review-set.md)
 
 3. [إضافة بيانات إلى مجموعة مراجعة من مجموعة مراجعة أخرى](add-data-to-review-set-from-another-review-set.md)
 
 > [!NOTE]
-> لا يمكنك حذف عناصر من مجموعة مراجعة ولا يمكنك حذف مجموعات المراجعة من حالة. لحذف مجموعة مراجعة (وحذف البيانات الموجودة فيها)، يجب حذف حالة eDiscovery (Premium) الموجودة فيها مجموعة المراجعة. لمزيد من المعلومات، راجع [إغلاق حالة eDiscovery (Premium) أو حذفها](close-or-delete-case.md).
+> لا يمكنك حذف عناصر من مجموعة مراجعة ولا يمكنك حذف مجموعات المراجعة من حالة. لحذف مجموعة مراجعة (وحذف البيانات الموجودة فيها)، يجب حذف حالة eDiscovery (Premium) التي توجد فيها مجموعة المراجعة. لمزيد من المعلومات، راجع [إغلاق حالة eDiscovery (Premium) أو حذفها](close-or-delete-case.md).

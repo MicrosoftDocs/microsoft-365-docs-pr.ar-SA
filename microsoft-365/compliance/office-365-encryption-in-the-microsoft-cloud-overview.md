@@ -15,50 +15,50 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: في هذه المقالة، اقرأ نظرة عامة حول مختلف أشكال التشفير المستخدمة للحفاظ على أمان بيانات العملاء في سحابة Microsoft.
+description: في هذه المقالة، اقرأ نظرة عامة على أشكال التشفير المختلفة المستخدمة للحفاظ على أمان بيانات العملاء في سحابة Microsoft.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c888c1958eb5265c31ae981e42a96eeeeb57f3ef
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 3105da5d17b1656ffa0d29da4f4aa02c9a9f9064
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63565934"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633906"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>التشفير في Microsoft Cloud
 
-تكون بيانات العملاء ضمن خدمات السحابة الخاصة بالمؤسسات من Microsoft محمية بواسطة العديد من التقنيات والعمليات، بما في ذلك أشكال مختلفة من التشفير. (تتضمن بيانات العميل في هذا المستند محتوى علبة بريد Exchange Online والمحتوى الصوتي للبريد الإلكتروني وإد إدخالات التقويم ومحتوى مرفقات البريد الإلكتروني ومحتوى Skype for Business ومحتوى SharePoint عبر الإنترنت ومحتوى موقع SharePoint عبر الإنترنت والملفات المخزنة ضمن المواقع والملفات التي تم تحميلها إلى OneDrive for Business  أو Skype for Business.) تستخدم Microsoft أساليب تشفير متعددة، والبروتوكولات، والتشفيرات عبر منتجاتها وخدماتها للمساعدة في توفير مسار آمن لبيانات العملاء للتنقل عبر خدمات السحابة، وللمساعدة في حماية سرية بيانات العملاء المخزنة ضمن خدمات السحابة لدينا. تستخدم Microsoft بعض بروتوكولات التشفير الاقوى والأكثر أمانا المتوفرة لتوفير عوائق أمام الوصول غير المصرح به إلى بيانات العملاء. كما أن الإدارة المناسبة للمفاتيح هي عنصر أساسي لأفضل ممارسات التشفير، وتعمل Microsoft لضمان تأمين جميع مفاتيح التشفير المدارة من Microsoft بشكل صحيح.
+تتم حماية بيانات العملاء داخل خدمات Microsoft السحابية للمؤسسات من خلال العديد من التقنيات والعمليات، بما في ذلك أشكال مختلفة من التشفير. (تتضمن بيانات العميل في هذا المستند محتوى علبة بريد Exchange Online والنص الأساسي للبريد الإلكتروني وإدخالات التقويم ومحتوى مرفقات البريد الإلكتروني، وإذا كان ذلك ممكنا، Skype for Business المحتوى) ومحتوى موقع SharePoint Online والملفات المخزنة داخل المواقع والملفات التي تم تحميلها إلى OneDrive for Business أو Skype for Business.) تستخدم Microsoft أساليب تشفير متعددة وبروتوكولات وعبارات عبر منتجاتها وخدماتها للمساعدة في توفير مسار آمن لبيانات العملاء للتنقل عبر خدماتنا السحابية، وللمساعدة في حماية سرية بيانات العملاء المخزنة داخل خدمات السحابة. تستخدم Microsoft بعض أقوى بروتوكولات التشفير المتاحة وأكثرها أمانا لتوفير حواجز ضد الوصول غير المصرح به إلى بيانات العملاء. تعد إدارة المفاتيح المناسبة أيضا عنصرا أساسيا في أفضل ممارسات التشفير، وتعمل Microsoft لضمان تأمين جميع مفاتيح التشفير التي تديرها Microsoft بشكل صحيح.
 
-تكون بيانات العملاء المخزنة ضمن خدمات السحابة الخاصة بالمؤسسات من Microsoft محمية باستخدام شكل واحد أو أكثر من أشكال التشفير. (يتم التحقق بشكل مستقل من صحة نهج التشفير لدينا ونفاذه من قبل عدة مراجعين خارجيين، كما تتوفر تقارير عمليات التدقيق هذه على [Service Trust Portal](https://aka.ms/stp).)
+تتم حماية بيانات العميل المخزنة داخل خدمات السحابة المؤسسية من Microsoft باستخدام شكل واحد أو أكثر من أشكال التشفير. (يتم التحقق من صحة نهج التشفير وإنفاذه بشكل مستقل من قبل العديد من مدققي الجهات الخارجية، وتتوفر تقارير عمليات التدقيق هذه على [Service Trust Portal](https://aka.ms/stp).)
 
-توفر Microsoft تقنيات من جانب الخدمة تقوم بتشفير بيانات العملاء أثناء الراحة وعند النقل. على سبيل المثال، بالنسبة لبيانات العملاء في الوقت الباقي، يستخدم Microsoft Azure [BitLocker](/windows/device-security/bitlocker/bitlocker-overview) و [DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)، ويستخدم Microsoft 365 BitLocker و"تشفير خدمة تخزين [Azure](/azure/)" و"إدارة المفاتيح الموزعة[" (](./exchange-online-secures-email-secrets.md)DKM) Microsoft 365 تشفير الخدمة. بالنسبة لبيانات العملاء أثناء النقل، تستخدم Azure و Office 365 و Microsoft Commercial Support و Microsoft Dynamics 365 و Microsoft Power BI و Visual Studio Team Services بروتوكولات نقل آمنة قياسية، مثل أمان بروتوكول الإنترنت (IPsec) و أمان طبقة النقل (TLS) بين مراكز بيانات Microsoft وبين أجهزة المستخدمين و مراكز بيانات Microsoft.
+توفر Microsoft تقنيات من جانب الخدمة تقوم بتشفير بيانات العملاء الثابتة والمتنقلة. على سبيل المثال، بالنسبة إلى بيانات العملاء الثابتة، يستخدم Microsoft Azure [BitLocker](/windows/device-security/bitlocker/bitlocker-overview) [وDM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)، ويستخدم Microsoft 365 BitLocker [وتشفير خدمة تخزين Azure](/azure/) [وإدارة المفاتيح الموزعة](./exchange-online-secures-email-secrets.md) (DKM) وتشفير خدمة Microsoft 365. بالنسبة لبيانات العملاء المتنقلة، تستخدم Azure Office 365 والدعم التجاري من Microsoft وMicrosoft Dynamics 365 وMicrosoft Power BI وVisual Studio Team Services بروتوكولات النقل الآمن القياسية في الصناعة، مثل أمان بروتوكول الإنترنت (IPsec) وأمان طبقة النقل (TLS)، بين مراكز بيانات Microsoft وبين أجهزة المستخدم ومراكز بيانات Microsoft.
 
-بالإضافة إلى مستوى أمان التشفير الأساسي الذي توفره Microsoft، تتضمن خدماتنا السحابية أيضا خيارات التشفير التي يمكنك إدارتها. على سبيل المثال، يمكنك تمكين التشفير لحركة المرور بين أجهزة Azure الظاهرية (VMs) والمستخدمين. باستخدام [Azure Virtual Networks](https://azure.microsoft.com/services/virtual-network/)، يمكنك استخدام بروتوكول IPsec القياسي في المجال لتشفير حركة المرور بين بوابة VPN الخاصة بالشركة و Azure. يمكنك أيضا تشفير حركة المرور بين أجهزة VMs على شبكتك الظاهرية. بالإضافة إلى ذلك، [تسمح تشفير الرسائل من Office 365 الجديدة بإرسال](set-up-new-message-encryption-capabilities.md) بريد مشفر إلى أي شخص.
+بالإضافة إلى المستوى الأساسي لأمان التشفير الذي توفره Microsoft، تتضمن خدمات السحابة أيضا خيارات التشفير التي يمكنك إدارتها. على سبيل المثال، يمكنك تمكين التشفير لنسبة استخدام الشبكة بين أجهزة Azure الظاهرية (VMs) ومستخدميها. باستخدام [Azure Virtual Networks](https://azure.microsoft.com/services/virtual-network/)، يمكنك استخدام بروتوكول IPsec القياسي في الصناعة لتشفير نسبة استخدام الشبكة بين بوابة VPN الخاصة بالشركة وAzure. يمكنك أيضا تشفير نسبة استخدام الشبكة بين الأجهزة الظاهرية على شبكتك الظاهرية. بالإضافة إلى ذلك، تسمح لك [إمكانيات تشفير الرسائل Office 365 الجديدة](set-up-new-message-encryption-capabilities.md) بإرسال بريد مشفر إلى أي شخص.
 
-باتباع معيار الأمان التشغيلي للبنية الأساسية للمفتاح العام، وهو أحد مكونات نهج [أمان Microsoft](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5868ecc8-50b7-4f91-b43f-640e2b99e86e&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers)، تستخدم Microsoft قدرات التشفير المضمنة في نظام Windows التشغيل للشهادات آليات المصادقة. تتضمن هذه الآليات استخدام الوحدات النمطية للتشريب التي تفي بالمعايير الفيدرالية لمعالجة [المعلومات (](https://csrc.nist.gov/publications/PubsFIPS.html) FIPS) 140-2 الخاصة ب الحكومة الأمريكية. يمكنك البحث عن أرقام شهادات NIST ذات الصلة ل Microsoft باستخدام [CMVP](https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search) برنامج التحقق من وحدة التشفير النمطية.
+باتباع معيار الأمان التشغيلي للمفتاح العام للبنية الأساسية، وهو أحد مكونات [نهج أمان Microsoft](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5868ecc8-50b7-4f91-b43f-640e2b99e86e&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ%20and%20White%20Papers)، تستخدم Microsoft قدرات التشفير المضمنة في نظام التشغيل Windows للشهادات وآليات المصادقة. تتضمن هذه الآليات استخدام وحدات التشفير التي تفي [بمعايير معالجة المعلومات الفيدرالية](https://csrc.nist.gov/publications/PubsFIPS.html) (FIPS) 140-2 لحكومة الولايات المتحدة. يمكنك البحث عن أرقام شهادات NIST ذات الصلة ل Microsoft باستخدام [برنامج التحقق من صحة وحدة التشفير CMVP](https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search).
 
-> [ملاحظة] للوصول إلى نهج أمان Microsoft كمورد، يجب تسجيل الدخول باستخدام حساب العمل أو المدرسة. إذا لم يكن لديك اشتراك بعد، [يمكنك التسجيل للحصول على فترة تجريبية مجانية](https://servicetrust.microsoft.com/Home/TrialSubscriptions).
+> [ملاحظة] للوصول إلى نهج أمان Microsoft كمورد، يجب تسجيل الدخول باستخدام حساب العمل أو المؤسسة التعليمية. إذا لم يكن لديك اشتراك بعد، [يمكنك التسجيل للحصول على إصدار تجريبي مجاني](https://servicetrust.microsoft.com/Home/TrialSubscriptions).
 
-إن FIPS 140-2 هو معيار مصمم خصيصا للتحقق من الوحدات النمطية للمنتجات التي تنفذ التشفير بدلا من المنتجات التي تستخدمها. يمكن اعتماد الوحدات النمطية للتشريب التي يتم تنفيذها ضمن الخدمة على أنها تلبية لمتطلبات قوة هاش وإدارة المفاتيح وما إلى ذلك. تفي الوحدات النمطية للتشفير والتشفير المستخدمة لحماية سرية البيانات أو تكاملها أو توافرها في خدمات Microsoft السحابية ب معايير FIPS 140-2.
+FIPS 140-2 هو معيار مصمم خصيصا للتحقق من صحة وحدات المنتج التي تنفذ التشفير بدلا من المنتجات التي تستخدمها. يمكن اعتماد وحدات التشفير التي يتم تنفيذها داخل الخدمة على أنها تلبي متطلبات قوة التجزئة وإدارة المفاتيح وما إلى ذلك. تتوافق وحدات التشفير والشفرات المستخدمة لحماية سرية البيانات أو تكاملها أو توفرها في خدمات Microsoft السحابية مع معيار FIPS 140-2.
 
-تصادق Microsoft على الوحدات النمطية الأساسية للتشريب المستخدمة في خدماتنا السحابية مع كل إصدار جديد Windows التشغيل:
+تقوم Microsoft بالمصادقة على وحدات التشفير الأساسية المستخدمة في خدماتنا السحابية مع كل إصدار جديد من نظام التشغيل Windows:
 
-- Azure و Azure U.S. Government
+- Azure وAzure U.S. Government
 - Dynamics 365 و Dynamics 365 U.S. Government
-- Office 365 Office 365 الحكومة الأمريكية Office 365 الدفاع عن الحكومة الأمريكية
+- Office 365، Office 365 حكومة الولايات المتحدة، Office 365 الدفاع الحكومي الأمريكي
 
-يتم توفير تشفير بيانات العملاء في حالة راحة من خلال تقنيات متعددة من جانب الخدمة، بما في ذلك BitLocker و DKM و تشفير خدمة تخزين Azure و تشفير الخدمة في Exchange Online و Skype for Business و OneDrive for Business و SharePoint عبر الإنترنت. Office 365 تشفير الخدمة خيارا لاستخدام مفاتيح التشفير المدارة من قبل العملاء المخزنة في مخزن مفاتيح Azure. يتوفر خيار المفتاح المدار من قبل العميل، [](./customer-key-overview.md)المسمى مفتاح العميل، Exchange Online SharePoint عبر الإنترنت Skype for Business OneDrive for Business.
+يتم توفير تشفير بيانات العملاء الثابتة من خلال تقنيات متعددة من جانب الخدمة، بما في ذلك BitLocker وDKM وAzure Storage Service Encryption وتشفير الخدمة في Exchange Online Skype for Business OneDrive for Business وSharePoint Online. يتضمن تشفير الخدمة Office 365 خيارا لاستخدام مفاتيح التشفير التي يديرها العميل والمخزنة في Key Vault Azure. يتوفر خيار المفتاح المدار بواسطة العميل، [المسمى Customer Key](./customer-key-overview.md)، Exchange Online وSharePoint Online Skype for Business OneDrive for Business.
 
-بالنسبة لبيانات العملاء أثناء النقل، تتفاوض جميع خوادم Office 365 حول جلسات عمل آمنة باستخدام TLS بشكل افتراضي مع أجهزة العميل لتأمين بيانات العميل. على سبيل المثال Office 365 التفاوض بشأن جلسات عمل آمنة Skype for Business Outlook والتنقل Outlook على ويب الجوال والعملاء ومستعرضات الويب.
+بالنسبة لبيانات العملاء المتنقلة، تتفاوض جميع خوادم Office 365 على جلسات عمل آمنة باستخدام TLS بشكل افتراضي مع أجهزة العميل لتأمين بيانات العميل. على سبيل المثال، سيقوم Office 365 بالتفاوض بشأن جلسات عمل آمنة Skype for Business وOutlook Outlook على ويب وعملاء الأجهزة المحمولة ومستعرضات الويب.
 
-(تتفاوض كل الخوادم التي تواجه العميل مع TLS 1.2 بشكل افتراضي.)
+(تتفاوض جميع الخوادم التي تواجه العملاء مع TLS 1.2 بشكل افتراضي.)
 
 ## <a name="related-links"></a>الارتباطات ذات الصلة
 
 - [التشفير في Azure](office-365-azure-encryption.md)
 - [BitLocker و"إدارة المفاتيح الموزعة" (DKM) للتشفير](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
-- [Office 365 تشفير الخدمة](office-365-service-encryption.md)
-- [Office 365 تشفير Skype for Business OneDrive for Business و SharePoint عبر الإنترنت Exchange Online](/compliance/assurance/assurance-encryption-for-microsoft-365-services) 
-- [تشفير البيانات أثناء النقل](/compliance/assurance/assurance-encryption-in-transit)
-- [ميزات التشفير المدارة من قبل العملاء](office-365-customer-managed-encryption-features.md)
-- [مخاطر التشفير والحماية](office-365-encryption-risks-and-protections.md)
+- [تشفير خدمة Office 365](office-365-service-encryption.md)
+- [تشفير Office 365 ل Skype for Business OneDrive for Business وSharePoint Online و Exchange Online](/compliance/assurance/assurance-encryption-for-microsoft-365-services) 
+- [تشفير البيانات المتنقلة](/compliance/assurance/assurance-encryption-in-transit)
+- [ميزات التشفير المدارة من قبل العميل](office-365-customer-managed-encryption-features.md)
+- [مخاطر التشفير وحمايتها](office-365-encryption-risks-and-protections.md)
 - [التشفير في Microsoft Dynamics 365](office-365-encryption-in-microsoft-dynamics-365.md)

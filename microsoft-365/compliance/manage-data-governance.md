@@ -1,5 +1,5 @@
 ---
-title: إدارة دورة حياة بيانات Microsoft Purview & Microsoft Purview Records Management
+title: إدارة دورة البيانات في Microsoft Purview & إدارة سجلات Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,28 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 recommendations: false
-description: تنفيذ قدرات من Microsoft Purview Data Lifecycle Management & Microsoft Purview Records Management للتحكم في بياناتك للتوافق أو المتطلبات التنظيمية.
-ms.openlocfilehash: 2eff1aea82575a8364eb05f91652a089efbbe833
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+description: تنفيذ قدرات من إدارة دورة البيانات في Microsoft Purview & إدارة سجلات Microsoft Purview للتحكم في بياناتك من أجل التوافق أو المتطلبات التنظيمية.
+ms.openlocfilehash: 7578aad4bdbb44bf0937a58343fc05462449688f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294723"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635974"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>تحكم في بياناتك باستخدام Microsoft Purview
 
->*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-استخدم القدرات من **Microsoft Purview Data Lifecycle Management** (المعروف سابقا ب Microsoft Information Governance) **وMicrosoft Purview Records Management** للتحكم في بياناتك من أجل التوافق أو المتطلبات التنظيمية.
+استخدم القدرات من **إدارة دورة البيانات في Microsoft Purview** (المعروف سابقا ب Microsoft Information Governance) **إدارة سجلات Microsoft Purview** للتحكم في بياناتك للتوافق أو المتطلبات التنظيمية.
 
 > [!TIP]
 > هل تبحث عن تعيين بياناتك وإدارتها عبر ممتلكات بياناتك بأكملها، بما في ذلك السحابة المتعددة والبرامج كخدمة (SaaS)؟ استخدم [Microsoft Purview Data Map وMicrosoft Purview كتالوج البيانات وMicrosoft Purview Data Estate Insights](/azure/purview/overview).
 
-من [منظور الترخيص](#licensing-requirements)، يمكن أن يكون هناك تداخل كبير بين إدارة دورة حياة البيانات وإدارة السجلات. يدعم كلا الحلين الاحتفاظ بالبيانات وحذفها لتطبيقات وخدمات Microsoft 365.
+من [منظور الترخيص](#licensing-requirements)، يمكن أن يكون هناك تداخل كبير بين إدارة دورة حياة البيانات وإدارة السجلات. يدعم كلا الحلين الاحتفاظ بالبيانات وخدمات Microsoft 365 وحذفها.
 
-استخدم الرسم التالي لمساعدتك في تحديد المكونات الرئيسية القابلة للتكوين لهذه الحلول التي يكون لكل منها منطقة تكوين خاصة بها في مدخل توافق Microsoft Purview:
+استخدم الرسم التالي لمساعدتك في تحديد المكونات الرئيسية القابلة للتكوين لهذه الحلول التي يكون لكل منها منطقة تكوين خاصة بها في مدخل التوافق في Microsoft Purview:
 
 ![المكونات الرئيسية لتكوين البيانات واستخدامها للتحكم في بياناتك باستخدام Microsoft Purview.](../media/govern-your-data.png)
 
@@ -43,13 +41,13 @@ ms.locfileid: "65294723"
 
 هل تبحث عن قدرات تكميلية لحماية بياناتك؟ راجع [حماية بياناتك باستخدام Microsoft Purview](information-protection.md).
 
-## <a name="microsoft-purview-data-lifecycle-management"></a>إدارة دورة حياة بيانات Microsoft Purview
+## <a name="microsoft-purview-data-lifecycle-management"></a>إدارة دورة البيانات في Microsoft Purview
 
 للاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه:
  
 |القدره|ما هي المشاكل التي تحلها؟|
 |:------|:------------|:----------------|
-|[نهج الاستبقاء لأحمال العمل Microsoft 365، مع تسميات الاستبقاء للاستثناءات](retention.md) | يتيح لك الاحتفاظ بالمحتوى أو حذفه باستخدام إدارة النهج للبريد الإلكتروني والمستندات Teams والرسائل Yammer. |
+|[نهج الاستبقاء لأحمال عمل Microsoft 365، مع تسميات الاستبقاء للاستثناءات](retention.md) | يتيح لك الاحتفاظ بالمحتوى أو حذفه باستخدام إدارة النهج للبريد الإلكتروني والمستندات ورسائل Teams وYamer. |
 |[علب البريد غير النشطة](inactive-mailboxes-in-office-365.md)| يتيح لك الاحتفاظ بمحتوى علبة البريد بعد مغادرة الموظفين للمؤسسة بحيث يظل هذا المحتوى متاحا للمسؤولين ومسؤولي التوافق ومديري السجلات. |
 |[أرشفة علب البريد](archive-mailboxes.md)| يوفر مساحة تخزين إضافية لعلب البريد للمستخدمين.|
 |[استيراد الخدمة لملفات PST](importing-pst-files-to-office-365.md)| يدعم الاستيراد المجمع لملفات PST إلى علب بريد Exchange Online للاحتفاظ برسائل البريد الإلكتروني والبحث فيها بحثا عن التوافق أو المتطلبات التنظيمية. |
@@ -76,8 +74,8 @@ ms.locfileid: "65294723"
 
 ## <a name="licensing-requirements"></a>متطلبات الترخيص
 
-لفهم متطلبات الترخيص وخياراته، راجع الأقسام التالية من [وثائق الترخيص Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
-- [إدارة دورة حياة بيانات Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management)
+لفهم متطلبات الترخيص وخياراته، راجع الأقسام التالية من [وثائق ترخيص Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance): 
+- [إدارة دورة البيانات في Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management)
 - [إدارة سجلات Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management)
 
 سيتم تضمين أي متطلبات ترخيص إضافية في إرشادات الوثائق. على سبيل المثال، قد يتطلب الترخيص الخاص بإدارة علب البريد تراخيص من Exchange Online.

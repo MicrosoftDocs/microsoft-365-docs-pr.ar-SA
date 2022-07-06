@@ -16,17 +16,16 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9d16cb82354bcb44e817de3207cb49de66dbf91
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 2b960141b8f6da710b7ef3cbbf812ac0f00f1ce5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873039"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634060"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>نشر Microsoft Defender لنقطة النهاية على Linux يدويا
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **ينطبق على:**
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -34,17 +33,16 @@ ms.locfileid: "65873039"
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-
 تصف هذه المقالة كيفية نشر Microsoft Defender لنقطة النهاية على Linux يدويا. يتطلب النشر الناجح إكمال كافة المهام التالية:
 
-  - [المتطلبات الأساسية ومتطلبات النظام](#prerequisites-and-system-requirements)
-  - [تكوين مستودع برامج Linux](#configure-the-linux-software-repository)
-    - [RHEL والمتغيرات (CentOS و Fedora وOracle Linux وAmazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
-    - [SLES والمتغيرات](#sles-and-variants)
-    - [أنظمة Ubuntu و Debian](#ubuntu-and-debian-systems)
-  - [تثبيت التطبيق](#application-installation)
-  - [تنزيل حزمة الإلحاق](#download-the-onboarding-package)
-  - [تكوين العميل](#client-configuration)
+- [المتطلبات الأساسية ومتطلبات النظام](#prerequisites-and-system-requirements)
+- [تكوين مستودع برامج Linux](#configure-the-linux-software-repository)
+  - [RHEL والمتغيرات (CentOS و Fedora وOracle Linux وAmazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
+  - [SLES والمتغيرات](#sles-and-variants)
+  - [أنظمة Ubuntu و Debian](#ubuntu-and-debian-systems)
+- [تثبيت التطبيق](#application-installation)
+- [تنزيل حزمة الإلحاق](#download-the-onboarding-package)
+- [تكوين العميل](#client-configuration)
 
 ## <a name="prerequisites-and-system-requirements"></a>المتطلبات الأساسية ومتطلبات النظام
 
@@ -77,20 +75,16 @@ ms.locfileid: "65873039"
 
     استخدم الجدول التالي لمساعدتك على إرشادك في تحديد موقع الحزمة:
 
-    <br>
-
-    ****
-
     |إصدار & Distro|حزمه|
     |---|---|
     |بالنسبة إلى RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
-    |ل RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
-    <!--|بالنسبة إلى RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
+    |ل RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2|</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
     |ل Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |ل Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
-    في الأوامر التالية، استبدل *[version]* و *[channel]* بالمعلومات التي حددتها:
+    <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
 
+    في الأوامر التالية، استبدل *[version]* و *[channel]* بالمعلومات التي حددتها:
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
@@ -300,7 +294,7 @@ ms.locfileid: "65873039"
 > [!IMPORTANT]
 > إذا فاتتك هذه الخطوة، فسيعرض أي أمر تم تنفيذه رسالة تحذير تشير إلى أن المنتج غير مرخص. `mdatp health` يقوم الأمر أيضا بإرجاع قيمة .`false`
 
-1. في مدخل Microsoft 365 Defender، انتقل إلى **نقاط النهاية الإعدادات > > إدارة الأجهزة > الإلحاق**.
+1. في مدخل Microsoft 365 Defender، انتقل إلى **الإعدادات > نقاط النهاية > إدارة الأجهزة > الإلحاق**.
 2. في القائمة المنسدلة الأولى، حدد **Linux Server** كنظام تشغيل. في القائمة المنسدلة الثانية، حدد **البرنامج النصي المحلي** كأسلوب نشر.
 3. حدد **تنزيل حزمة الإلحاق**. احفظ الملف WindowsDefenderATPOnboardingPackage.zip.
 
@@ -341,7 +335,7 @@ ms.locfileid: "65873039"
 
     > [!NOTE]
     > لتشغيل هذا الأمر، يجب أن يكون لديك `python`  أو `python3` مثبتا على الجهاز استنادا إلى disto والإصدار. إذا لزم الأمر، فراجع [التعليمات خطوة بخطوة لتثبيت Python على Linux](https://opensource.com/article/20/4/install-python-linux).
-    
+
     إذا كنت تقوم بتشغيل RHEL 8.x أو Ubuntu 20.04 أو أعلى، فستحتاج إلى استخدام `python3`.
 
     ```bash
@@ -349,11 +343,11 @@ ms.locfileid: "65873039"
     ```
 
     بالنسبة لبقية الفرق والإصدارات، ستحتاج إلى استخدام `python`.
-    
+
     ```bash
     sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
-    
+
 3. تحقق من أن الجهاز مقترن الآن بمؤسستك ويبلغ عن معرف مؤسسة صالح:
 
     ```bash
@@ -382,9 +376,9 @@ ms.locfileid: "65873039"
         ```bash
         mdatp health --field real_time_protection_enabled
         ```
-        
+
       إذا لم يتم تمكينه، فنفذ الأمر التالي:
-      
+
        ```bash
         mdatp config real-time-protection --value enabled
         ```
@@ -401,7 +395,7 @@ ms.locfileid: "65873039"
         mdatp threat list
         ```
 
-6. قم بتشغيل اختبار الكشف عن الكشف التلقائي والاستجابة على النقط النهائية ومحاكاة الكشف للتحقق من أن الجهاز تم إلحاقه بشكل صحيح وإعداد التقارير إلى الخدمة. نفذ الخطوات التالية على الجهاز الذي تم إلحاقه حديثا:
+6. تشغيل اختبار الكشف عن EDR ومحاكاة الكشف للتحقق من أن الجهاز تم إلحاقه بشكل صحيح وإعداد التقارير إلى الخدمة. نفذ الخطوات التالية على الجهاز الذي تم إلحاقه حديثا:
 
     - تحقق من ظهور خادم Linux الملحق في Microsoft 365 Defender. إذا كان هذا هو أول إلحاق للجهاز، فقد يستغرق الأمر ما يصل إلى 20 دقيقة حتى يظهر.
 

@@ -1,13 +1,27 @@
 - name: Microsoft Whiteboard
   href: index.md
-- name: إدارة الوصول
-  href: manage-whiteboard-access-organizations.md
-- name: إدارة البيانات
-  href: manage-data-organizations.md
-- name: إدارة المشاركة
-  href: manage-sharing-organizations.md
-- name: النشر على أجهزة Windows
-  href: deploy-on-windows-organizations.md
+- name: إعداد Whiteboard
+  items:
+    - name: الإعداد والاستخدام
+      href: /surface-hub/whiteboard-collaboration
+    - name: النشر على أجهزة Windows
+      href: deploy-on-windows-organizations.md
+- name: إدارة Whiteboard
+  items:
+    - name: إدارة الوصول
+      href: manage-whiteboard-access-organizations.md
+    - name: إدارة البيانات
+      href: manage-data-organizations.md
+    - name: إدارة المشاركة
+      href: manage-sharing-organizations.md
+    - name: النشر على أجهزة Windows
+      href: deploy-on-windows-organizations.md
+- name: الخصوصية والتوافق
+  items:
+    - name: تكوين إعدادات الخصوصية
+      href: configure-privacy-settings.md
+    - name: طلبات القانون العام لحماية البيانات (GDPR)
+      href: gdpr-requests.md
 - name: لوح المعلومات للحكومة
   items:
     - name: إدارة الوصول - سحابة القطاع الحكومي

@@ -14,16 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: تعرف على كيفية إلحاق أجهزة macOS وإلحاقها بحلول Microsoft Purview باستخدام Microsoft Intune
-ms.openlocfilehash: 99a407b2b0c8d6a506cd138078b3f35cf9e5a232
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: e5cc3ff25895f3eb7557566eb8a38722a1aee35f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952963"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632343"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-intune"></a>إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام Intune
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك استخدام Intune لإلحاق أجهزة macOS في حلول Microsoft Purview.
 
@@ -38,7 +36,7 @@ ms.locfileid: "64952963"
 ## <a name="before-you-begin"></a>قبل البدء
 
 - تأكد من [إلحاق أجهزة macOS في Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) وتسجيلها في [تطبيق Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
-- تأكد من أن لديك حق الوصول إلى [مركز إدارة نقاط النهاية من Microsoft](https://endpoint.microsoft.com/#home).
+- تأكد من أن لديك حق الوصول إلى [مركز إدارة نقاط النهاية Microsoft](https://endpoint.microsoft.com/#home).
 - هذا يدعم إصدار macOS Catalina 10.15 والإصدارات الأحدث.
 - إنشاء مجموعات المستخدمين التي ستقوم بتعيين تحديثات التكوين إليها.
 - تثبيت مستعرض v95+ Edge على أجهزة macOS 
@@ -142,7 +140,7 @@ ms.locfileid: "64952963"
 ```
 -->
 
-2. افتح **ملفات تعريف إدارة نقاط النهاية من Microsoft** **centerDevicesConfiguration** >  > .
+2. افتح **ملفات تعريف تكوين** **الأجهزة** >  لمركز  > **Microsoft إدارة نقاط النهاية**.
 
 1. اختر: **إنشاء ملف تعريف** 
 
@@ -170,13 +168,13 @@ ms.locfileid: "64952963"
         1. تعيين محرك `passive mode` = `true` الحماية من الفيروسات أو .`false` يستخدم `true`في حالة نشر DLP فقط. استخدام `false` قيمة أو عدم تعيينها في حالة نشر DLP و Microsoft Defender لنقطة النهاية (MDE).
     1. **netfilter.mobileconfig**
  
-1. افتح **ملفات تعريف DevicesConfiguration** > ، يجب أن تشاهد ملفات التعريف التي تم إنشاؤها هناك.
+1. افتح **ملفات تعريف تكوين** **الأجهزة** > ، يجب أن تشاهد ملفات التعريف التي تم إنشاؤها هناك.
 
 1. في صفحة **ملفات تعريف التكوين** ، اختر ملف التعريف الذي أنشأته للتو، في هذا المثال *AccessibilityformacOS* واختر **حالة الجهاز** لعرض قائمة بالأجهزة وحالة نشر ملف تعريف التكوين.
 
 ### <a name="get-the-device-onboarding-package"></a>الحصول على حزمة إلحاق الجهاز
 
-1. في **مركز التوافق**، افتح **الإعدادات** >  **الحاق** بالمتلحق واختر **"إلحاق".**
+1. في **مركز التوافق**، افتح **إعدادات** > **إعداد الجهاز** واختر **"إلحاق".**
  
 1. **لتحديد نظام التشغيل لبدء عملية الإلحاق**، اختر **macOS**.
  
@@ -186,7 +184,7 @@ ms.locfileid: "64952963"
 
 ### <a name="deploy-the-onboarding-package"></a>نشر حزمة الإلحاق
 
-1. افتح **ملفات تعريف إدارة نقاط النهاية من Microsoft** **centerDevicesConfiguration** >  > .
+1. افتح **ملفات تعريف تكوين** **الأجهزة** >  لمركز  > **Microsoft إدارة نقاط النهاية**.
 
 1. اختر: **إنشاء ملف تعريف**. 
 
@@ -209,7 +207,7 @@ ms.locfileid: "64952963"
 
 ### <a name="enable-system-extension"></a>تمكين ملحق النظام
 
-1. في **مركز إدارة نقاط النهاية من Microsoft**، حدد **"إنشاء ملف تعريف**" ضمن **"ملفات تعريف التكوين"**
+1. في **مركز إدارة نقاط النهاية Microsoft**، حدد **"إنشاء ملف تعريف**" ضمن **"ملفات تعريف التكوين"**
 
 1. اختيار:
     1. **النظام الأساسي = macOS**
@@ -236,7 +234,7 @@ ms.locfileid: "64952963"
 
 ### <a name="get-the-installation-package"></a>الحصول على حزمة التثبيت
 
-1. في **مركز التوافق**، افتح **الإعدادات** >  **الحاق** بالمتلحق واختر **"إلحاق".**
+1. في **مركز التوافق**، افتح **إعدادات** > **إعداد الجهاز** واختر **"إلحاق".**
  
 1. **لتحديد نظام التشغيل لبدء عملية الإلحاق**، اختر **macOS**
  
@@ -257,7 +255,7 @@ ms.locfileid: "64952963"
 > [!NOTE]
 > يؤدي إلغاء الإلحاق إلى توقف الجهاز عن إرسال بيانات جهاز الاستشعار إلى المدخل ولكن سيتم الاحتفاظ بالبيانات من الجهاز، بما في ذلك الإشارة إلى أي تنبيهات كان قد تم الاحتفاظ بها لمدة تصل إلى ستة أشهر.
 
-2. في **مركز إدارة نقاط النهاية من Microsoft**، افتح **ملفات تعريف DevicesConfiguration** > ، يجب أن تشاهد ملفات التعريف التي تم إنشاؤها هناك.
+2. في **مركز microsoft إدارة نقاط النهاية**، افتح **ملفات تعريف تكوين** **الأجهزة** > ، يجب أن تشاهد ملفات التعريف التي تم إنشاؤها هناك.
 
 1. في صفحة **ملفات تعريف التكوين** ، اختر ملف تعريف *wdav.pkg.intunemac* .
 

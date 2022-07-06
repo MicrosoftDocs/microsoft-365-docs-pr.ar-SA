@@ -1,5 +1,5 @@
 ---
-title: التعرف على الكيانات المسماة
+title: تعرف على الكيانات المسماة
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,25 +16,23 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: تعرف على كيفية مساعدة الكيانات المسماة في اكتشاف العناصر الحساسة التي تحتوي على أسماء الأشخاص والعناوين المادية والمصطلحات الطبية عبر نهج منع فقدان البيانات
-ms.openlocfilehash: 6c20932216953d64abe4515b529bba66b2561647
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 013d2453190c692eeb3ae9a0dfd48437bded1f0c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973190"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633488"
 ---
-# <a name="learn-about-named-entities"></a>التعرف على الكيانات المسماة
+# <a name="learn-about-named-entities"></a>تعرف على الكيانات المسماة
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-*الكيانات المسماة* هي [أنواع معلومات حساسة](sensitive-information-type-learn-about.md) (SIT). إنها قاموس معقد وتصنيفات مستندة إلى الأنماط يمكنك استخدامها للكشف عن أسماء الأشخاص والعناوين المادية والمصطلحات والشروط الطبية. يمكنك رؤيتها في **مدخل توافق Microsoft Purview > تصنيف البيانات > أنواع المعلومات الحساسة**. فيما يلي قائمة جزئية بالمكان الذي يمكنك فيه استخدام SITs:
+*الكيانات المسماة* هي [أنواع معلومات حساسة](sensitive-information-type-learn-about.md) (SIT). إنها قاموس معقد وتصنيفات مستندة إلى الأنماط يمكنك استخدامها للكشف عن أسماء الأشخاص والعناوين المادية والمصطلحات والشروط الطبية. يمكنك رؤيتها في **تصنيف البيانات مدخل التوافق في Microsoft Purview > > أنواع المعلومات الحساسة**. فيما يلي قائمة جزئية بالمكان الذي يمكنك فيه استخدام SITs:
 
 
-- [نهج Microsoft Purview Data Loss Prevention (DLP)](dlp-learn-about-dlp.md) 
+- [نهج تفادي فقدان البيانات في Microsoft Purview (DLP)](dlp-learn-about-dlp.md) 
 - [تسميات الحساسية](sensitivity-labels.md)
 - [إدارة المخاطر الداخلية](insider-risk-management-solution-overview.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
-- [Microsoft Purview حماية البيانات](apply-sensitivity-label-automatically.md)
+- [حماية المعلومات في Microsoft Purview](apply-sensitivity-label-automatically.md)
 - [إدارة دورة حياة البيانات](information-governance.md)
 - [إدارة السجلات](records-management.md)
 - [Microsoft Purview eDiscovery](ediscovery.md)
@@ -68,7 +66,7 @@ ms.locfileid: "64973190"
 
 ## <a name="examples-of-enhanced-dlp-policies"></a>أمثلة على نهج DLP المحسنة
 
-فيما يلي بعض الأمثلة على نهج DLP المحسنة التي تستخدم SITs الكيان المسمى. يمكنك العثور على كل 10 منها في **مدخل توافق Microsoft Purview > منع فقدان البيانات > إنشاء نهج**. يمكن استخدام القوالب المحسنة في DLP والتسمية التلقائية.
+فيما يلي بعض الأمثلة على نهج DLP المحسنة التي تستخدم SITs الكيان المسمى. يمكنك العثور على كل 10 منها في **مدخل التوافق في Microsoft Purview > منع فقدان البيانات > إنشاء نهج**. يمكن استخدام القوالب المحسنة في DLP والتسمية التلقائية.
 
 |فئة النهج  |قالب  |الوصف  |
 |---------|---------|---------|
@@ -79,7 +77,7 @@ ms.locfileid: "64973190"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-- [استخدام الكيانات المسماة في نهج منع فقدان البيانات](named-entities-use.md)
+- [استخدام الكيانات المسماة في نهج تفادي فقدان البيانات](named-entities-use.md)
 
 
 ## <a name="for-further-information"></a>لمزيد من المعلومات

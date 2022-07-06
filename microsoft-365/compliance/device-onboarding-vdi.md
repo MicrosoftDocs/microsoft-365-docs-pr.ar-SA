@@ -13,39 +13,39 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: نشر حزمة التكوين على جهاز البنية الأساسية لسطح المكتب الظاهري (VDI) بحيث يتم إلحاقها بخدمة منع فقدان بيانات نقطة النهاية Microsoft 365.
-ms.openlocfilehash: 6bfb0f69198afbcc9d2949d583e151631cc7953b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: نشر حزمة التكوين على جهاز البنية الأساسية لسطح المكتب الظاهري (VDI) بحيث يتم إلحاقها بخدمة منع فقدان بيانات نقطة النهاية.
+ms.openlocfilehash: 8a54d4ce3cfb4b3ba6571f2aee63cd60c2a6d71f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760614"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636128"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>إلحاق أجهزة البنية الأساسية لسطح المكتب الظاهري غير الثابتة
 
 **ينطبق على:**
 
-- [Microsoft 365 منع فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
-- [إدارة المخاطر الداخلية](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [منع فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
+- [إدارة المخاطر الداخلية](insider-risk-management.md)
 
 - أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI)
 
 > [!WARNING]
-> Microsoft 365 دعم منع فقدان بيانات نقطة النهاية لسطح المكتب الظاهري Windows يدعم سيناريوهات جلسة عمل واحدة. سيناريوهات جلسات متعددة على Windows Virtual Desktop غير معتمدة حاليا.
+> يدعم دعم منع فقدان بيانات نقطة النهاية ل Windows Virtual Desktop سيناريوهات جلسة عمل واحدة. سيناريوهات جلسات متعددة على Windows Virtual Desktop غير معتمدة حاليا.
 
 ## <a name="onboard-vdi-devices"></a>إلحاق أجهزة VDI
 
-يدعم Microsoft 365 تهيئة جلسة عمل البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة.
+يدعم Microsoft 365 إعداد جلسة عمل البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة.
 
 > [!NOTE]
 > لإلحاق جلسات VDI غير الثابتة، يجب أن تكون أجهزة VDI في Windows 10 1809 أو أعلى.
 
 قد تكون هناك تحديات مرتبطة عند إلحاق VDIs. فيما يلي تحديات نموذجية لهذا السيناريو:
 
-- الإلحاق المبكر الفوري لجلسات قصيرة الأجل، والتي يجب إلحاقها Microsoft 365 قبل التوفير الفعلي.
+- الإلحاق المبكر الفوري بجلسات قصيرة الأمد، والتي يجب إلحاقها ب Microsoft 365 قبل التوفير الفعلي.
 - عادة ما يعاد استخدام اسم الجهاز لجلسات عمل جديدة.
 
-يمكن أن تظهر أجهزة VDI في مركز التوافق Microsoft 365 كما يلي:
+يمكن أن تظهر أجهزة VDI في مدخل التوافق في Microsoft Purview كما يلي:
 
 - إدخال واحد لكل جهاز.
 لاحظ أنه في هذه الحالة، يجب تكوين *نفس* اسم الجهاز عند إنشاء جلسة العمل، على سبيل المثال باستخدام ملف إجابات غير المراقب.
@@ -56,9 +56,9 @@ ms.locfileid: "64760614"
 > [!WARNING]
 > بالنسبة للبيئات التي توجد فيها تكوينات موارد منخفضة، قد يؤدي إجراء تمهيد VDI إلى إبطاء عملية إلحاق الجهاز.
 
-1. احصل على ملف .zip حزمة تكوين VDI (*DeviceCompliancePackage.zip*) من [مركز توافق Microsoft](https://compliance.microsoft.com).
+1. احصل على ملف .zip حزمة تكوين VDI (*DeviceCompliancePackage.zip*) من [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com).
 
-2. في جزء التنقل، حدد **الإعدادات** >  **Device onboardingOnboarding** > .
+2. في جزء التنقل، حدد **"إعدادات** >  الجهاز" في **الإلحاق** > .
 
 3. في حقل **أسلوب النشر** ، حدد **البرامج النصية لإلحاق VDI لنقاط النهاية غير الثابتة**.
 
@@ -73,7 +73,7 @@ ms.locfileid: "64760614"
     > [!NOTE]
     > إذا لم تتمكن من `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` رؤية المجلد، فقد يكون مخفيا. ستحتاج إلى اختيار الخيار **"إظهار الملفات والمجلدات المخفية**" من مستكشف الملفات.
 
-8. افتح نافذة محرر نهج المجموعة محلي وانتقل إلى **تكوين** >  الكمبيوتر **Windows الإعدادات** >  **ScriptsStartup** > .
+8. افتح نافذة محرر نهج المجموعة المحلي وانتقل إلى **بدء تشغيل** **البرامج النصية** > **لإعدادات** >  Windows **لتكوين** >  الكمبيوتر.
 
    > [!NOTE]
    > يمكن أيضا استخدام نهج المجموعة المجال لإلحاق أجهزة VDI غير الثابتة.
@@ -82,11 +82,11 @@ ms.locfileid: "64760614"
 
    **لإدخال واحد لكل جهاز**
 
-   حدد علامة التبويب **PowerShell Scripts**، ثم انقر فوق **"إضافة**" (Windows سيفتح المستكشف مباشرة في المسار حيث نسخت البرنامج النصي للإلحاق سابقا). انتقل إلى إعداد البرنامج النصي `Onboard-NonPersistentMachine.ps1`PowerShell.
+   حدد علامة التبويب **PowerShell Scripts** ، ثم انقر فوق **"إضافة** " (سيتم فتح مستكشف Windows مباشرة في المسار حيث قمت بنسخ البرنامج النصي للإلحاق سابقا). انتقل إلى إعداد البرنامج النصي `Onboard-NonPersistentMachine.ps1`PowerShell.
 
    **للإدخالات المتعددة لكل جهاز**:
 
-   حدد علامة التبويب **"البرامج النصية**"، ثم انقر فوق **"إضافة**" (Windows سيفتح المستكشف مباشرة في المسار حيث نسخت البرنامج النصي للإلحاق سابقا). انتقل إلى البرنامج النصي `DeviceComplianceOnboardingScript.cmd`bash الإلحاق.
+   حدد علامة التبويب **"البرامج النصية** "، ثم انقر فوق **"إضافة** " (سيتم فتح مستكشف Windows مباشرة في المسار حيث قمت بنسخ البرنامج النصي للإلحاق سابقا). انتقل إلى البرنامج النصي `DeviceComplianceOnboardingScript.cmd`bash الإلحاق.
 
 10. اختبار الحل الخاص بك:
     1. إنشاء تجمع مع جهاز واحد.
@@ -116,11 +116,11 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 - [تعديل صورة Windows باستخدام DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [خيارات Command-Line إدارة صور DISM](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [تصغير حجم مخزن المكونات في صورة Windows غير متصل](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [تصغير حجم مخزن المكونات في صورة Windows غير متصلة](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 إذا لم تكن الخدمة دون اتصال خيارا قابلا للتطبيق لبيئة VDI غير الثابتة، يجب اتخاذ الخطوات التالية لضمان التناسق وحماية جهاز الاستشعار:
 
-1. بعد تشغيل الصورة الذهبية لخدمة عبر الإنترنت أو تصحيحها، قم بتشغيل برنامج نصي لإلغاء الإلحاق لإيقاف تشغيل مستشعر مراقبة الجهاز Microsoft 365. لمزيد من المعلومات، راجع [أجهزة Offboard باستخدام برنامج نصي محلي](device-onboarding-script.md#offboard-devices-using-a-local-script).
+1. بعد تشغيل الصورة الذهبية لخدمة عبر الإنترنت أو تصحيحها، قم بتشغيل برنامج نصي لإيقاف تشغيل مستشعر مراقبة جهاز Microsoft 365. لمزيد من المعلومات، راجع [أجهزة Offboard باستخدام برنامج نصي محلي](device-onboarding-script.md#offboard-devices-using-a-local-script).
 
 2. تأكد من إيقاف جهاز الاستشعار عن طريق تشغيل الأمر أدناه في نافذة CMD:
 
@@ -145,7 +145,7 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 
 - [إلحاق أجهزة Windows 10 وأجهزة Windows 11 باستخدام نهج المجموعة](device-onboarding-gp.md)
-- [إلحاق الأجهزة Windows 10 وأجهزة Windows 11 باستخدام Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [إلحاق أجهزة Windows 10 وأجهزة Windows 11 باستخدام Configuration Manager نقطة نهاية Microsoft](device-onboarding-sccm.md)
 - [إلحاق أجهزة Windows 10 وأجهزة Windows 11 باستخدام أدوات إدارة الأجهزة المحمولة](device-onboarding-mdm.md)
 - [إلحاق أجهزة Windows 10 وأجهزة Windows 11 باستخدام برنامج نصي محلي](device-onboarding-script.md)
 - [استكشاف أخطاء الحماية المتقدمة من التهديدات في Microsoft Defender وإصلاحها](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

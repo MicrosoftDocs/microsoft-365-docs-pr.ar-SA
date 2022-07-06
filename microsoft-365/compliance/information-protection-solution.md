@@ -18,18 +18,16 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: إرشادات توجيهية لنشر حماية البيانات في Microsoft Purview لمؤسستك.
-ms.openlocfilehash: fa826e7b9761ebcff34dd9ae6f7c2ee1b268bade
-ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
+ms.openlocfilehash: 3b62cf6165447288275a7a8c02a64ab27b41d607
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65759819"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635250"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>نشر حل حماية المعلومات باستخدام Microsoft Purview
 
->*[ترخيص توافق & الأمان Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[ترخيص Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 تعتمد استراتيجية حماية المعلومات الخاصة بك على احتياجات عملك. يجب على العديد من المؤسسات الامتثال للوائح والقوانين وممارسات الأعمال. بالإضافة إلى ذلك، تحتاج المؤسسات إلى حماية المعلومات الخاصة، مثل بيانات مشاريع معينة.
 
@@ -47,7 +45,7 @@ ms.locfileid: "65759819"
 
 ## <a name="licensing"></a>الترخيص
 
-يتم تضمين قدرات حماية البيانات في Microsoft Purview مع Microsoft Purview. يمكن أن تختلف متطلبات الترخيص حتى داخل القدرات، اعتمادا على خيارات التكوين. لتحديد متطلبات الترخيص وخياراته، راجع [إرشادات Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+يتم تضمين قدرات حماية البيانات في Microsoft Purview مع Microsoft Purview. يمكن أن تختلف متطلبات الترخيص حتى داخل القدرات، اعتمادا على خيارات التكوين. لتحديد متطلبات الترخيص وخياراته، راجع [إرشادات Microsoft 365 للأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="know-your-data"></a>تعرّف على بياناتك
 
@@ -71,18 +69,18 @@ ms.locfileid: "65759819"
 |خطوه|الوصف|معلومات إضافية|
 |:---|-----------|:---------------|
 | 1|حدد [أوصاف الحساسية](sensitivity-labels.md) والنهج التي ستحمي بيانات مؤسستك. <br /><br />بالإضافة إلى تحديد حساسية المحتوى، يمكن لهذه التسميات تطبيق إجراءات الحماية، مثل الرؤوس والتذييلات والعلامات المائية والتشفير. | [بدء استخدام تسميات الحساسية](get-started-with-sensitivity-labels.md) <br /><br /> [إنشاء وتكوين تسميات الحساسية ونهجها](create-sensitivity-labels.md) <br /><br /> [تقييد الوصول إلى المحتوى باستخدام تسميات الحساسية لتطبيق التشفير](encryption-sensitivity-labels.md) |
-| 2|تسمية العناصر وحمايتها لتطبيقات وخدمات Microsoft 365. <br /><br />يتم دعم أوصاف الحساسية Microsoft 365 Word Excel PowerPoint Outlook والحاويات التي تتضمن مواقع SharePoint OneDrive ومجموعات Microsoft 365. استخدم مجموعة من أساليب التسمية مثل التسمية اليدوية والتسمية التلقائية والتسمية الافتراضية والتسمية الإلزامية.| [إدارة تسميات الحساسية في تطبيقات Office](sensitivity-labels-office-apps.md) <br /><br /> [تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive](sensitivity-labels-sharepoint-onedrive-files.md) <br /><br /> [تمكين التأليف المشترك للملفات المشفرة بتسميات الحساسية](sensitivity-labels-coauthoring.md) <br /><br /> [تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /><br /> [استخدام تسميات الحساسية مع Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint](sensitivity-labels-teams-groups-sites.md) <br /><br /> [استخدم تسميات الحساسية لتعيين ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint OneDrive](sensitivity-labels-default-sharing-link.md) <br /><br /> [تطبيق وصف الحساسية على نموذج في Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) <br /><br /> [أوصاف الحساسية في Power BI](/power-bi/admin/service-security-sensitivity-label-overview) |
+| 2|تسمية العناصر وحمايتها لتطبيقات وخدمات Microsoft 365. <br /><br />يتم دعم تسميات الحساسية ل Microsoft 365 Word وExcel وPowerPoint وOutlook والحاويات التي تتضمن مواقع SharePoint وOneDrive ومجموعات Microsoft 365. استخدم مجموعة من أساليب التسمية مثل التسمية اليدوية والتسمية التلقائية والتسمية الافتراضية والتسمية الإلزامية.| [إدارة تسميات الحساسية في تطبيقات Office](sensitivity-labels-office-apps.md) <br /><br /> [تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive](sensitivity-labels-sharepoint-onedrive-files.md) <br /><br /> [تمكين التأليف المشترك للملفات المشفرة بتسميات الحساسية](sensitivity-labels-coauthoring.md) <br /><br /> [تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /><br /> [استخدام تسميات الحساسية مع Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint](sensitivity-labels-teams-groups-sites.md) <br /><br /> [استخدام تسميات الحساسية لتعيين ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint وOneDrive](sensitivity-labels-default-sharing-link.md) <br /><br /> [تطبيق وصف الحساسية على نموذج في Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) <br /><br /> [أوصاف الحساسية في Power BI](/power-bi/admin/service-security-sensitivity-label-overview) |
 |3|اكتشف العناصر الحساسة الموجودة في مخازن البيانات في السحابة وقم بتسميتها وحمايتها باستخدام [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) مع تسميات الحساسية الخاصة بك.| [اكتشاف البيانات المنظمة والحساسة المخزنة في السحابة وتصنيفها وتسميتها وحمايتها](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |4|اكتشف العناصر الحساسة الموجودة في مخازن البيانات في أماكن العمل وقم بتسميتها وحمايتها من خلال توزيع [الماسح الضوئي الموحد للوصف في Azure حماية البيانات](/azure/information-protection/deploy-aip-scanner) مع تسميات الحساسية الخاصة بك.| [تكوين الماسح الضوئي الموحد للوصف حماية البيانات Azure وتثبيته](/azure/information-protection/deploy-aip-scanner-configure-install)|
-|5|قم بتوسيع تسميات الحساسية الخاصة بك إلى Azure باستخدام [Microsoft Purview Data Map](/azure/purview/overview)، لاكتشاف العناصر وتسميتها ل Azure Blob Storage وملفات Azure Azure Data Lake Storage Gen1 وGen12 Azure Data Lake Storage. | [التسمية في Microsoft Purview Data Map](/azure/purview/create-sensitivity-label)|
+|5|قم بتوسيع تسميات الحساسية الخاصة بك إلى Azure باستخدام [Microsoft Purview Data Map](/azure/purview/overview)، لاكتشاف العناصر وتسميتها ل Azure Blob Storage وملفات Azure Azure Data Lake Storage Gen1 Azure Data Lake Storage Gen12. | [التسمية في Microsoft Purview Data Map](/azure/purview/create-sensitivity-label)|
 
 إذا كنت مطورا يريد توسيع أوصاف الحساسية إلى تطبيقات خط العمل أو تطبيقات SaaS التابعة لجهة خارجية، فراجع [إعداد وتكوين حماية البيانات في Microsoft (MIP) SDK](/information-protection/develop/setup-configure-mip). 
 
 ### <a name="additional-protection-capabilities"></a>قدرات حماية إضافية
 
-تتضمن Microsoft Purview قدرات إضافية للمساعدة في حماية البيانات. لا يحتاج كل عميل إلى هذه القدرات، وقد يحل الإصدارات الأحدث محل بعضها.
+يتضمن Microsoft Purview قدرات إضافية للمساعدة في حماية البيانات. لا يحتاج كل عميل إلى هذه القدرات، وقد يحل الإصدارات الأحدث محل بعضها.
 
-استخدم صفحة [حماية البيانات باستخدام Microsoft Purview](information-protection.md) للحصول على القائمة الكاملة لقدرات الحماية.
+استخدم صفحة [حماية بياناتك باستخدام Microsoft Purview](information-protection.md) للحصول على القائمة الكاملة لقدرات الحماية.
 
 ## <a name="prevent-data-loss"></a>منع فقدان البيانات
 
@@ -100,7 +98,7 @@ ms.locfileid: "65759819"
 
 ## <a name="training-resources"></a>موارد التدريب
 
-Learning الوحدات النمطية للمستشارين والمسؤولين:
+وحدات التعلم للمستشارين والمسؤولين:
 
 - [مقدمة حول حماية المعلومات وإدارة دورة حياة البيانات في Microsoft Purview](/learn/modules/m365-compliance-information-governance)
 - [تصنيف البيانات للحماية والحوكمة](/learn/modules/m365-compliance-information-classify-data)
@@ -109,4 +107,4 @@ Learning الوحدات النمطية للمستشارين والمسؤولين
 
 للمساعدة في تدريب المستخدمين على تطبيق واستخدام تسميات الحساسية التي تقوم بتكوينها لهم، راجع [وثائق المستخدم النهائي لأوصاف الحساسية](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels).
 
-عند نشر نهج منع فقدان البيانات Teams، قد تجد إرشادات المستخدم النهائي التالية مفيدة كمقدمة لهذه التقنية مع بعض الرسائل المحتملة التي قد يرونها: [Teams الرسائل حول منع فقدان البيانات (DLP) ونهج التوافق مع الاتصالات](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).
+عند نشر نهج منع فقدان البيانات ل Teams، قد تجد إرشادات المستخدم النهائي التالية مفيدة كمقدمة لهذه التقنية مع بعض الرسائل المحتملة التي قد يرونها: [رسائل Teams حول منع فقدان البيانات (DLP) ونهج التوافق مع الاتصالات ](https://support.microsoft.com/office/teams-messages-about-data-loss-prevention-dlp-and-communication-compliance-policies-c5631c3f-f61b-4306-a6ac-6603d9fc5ff0).

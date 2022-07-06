@@ -21,16 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 recommendations: false
 description: تعرف على ما تتضمنه قوالب نهج منع فقدان البيانات (DLP) في مدخل التوافق في Microsoft Purview.
-ms.openlocfilehash: 145f5b2a180023811afa8b5795bfa8b9d24f82f5
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: ab3d0f4fa131f32c1916df0c973a6b0dab3f1654
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753485"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633334"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>ما تتضمنه قوالب نهج DLP
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تتضمن تفادي فقدان البيانات في Microsoft Purview (DLP) في مدخل التوافق في Microsoft Purview قوالب نهج جاهزة للاستخدام تعالج متطلبات التوافق الشائعة، مثل مساعدتك على حماية المعلومات الحساسة الخاضعة لقانون التأمين الصحي (HIPAA) الأمريكي، الولايات المتحدة Gramm-Leach-Bliley قانون (GLBA) أو قانون الهجاء الأمريكي. تسرد هذه المقالة كافة قوالب النهج وأنواع المعلومات الحساسة التي تبحث عنها والشروط والإجراءات الافتراضية. لا تتضمن هذه المقالة كل تفاصيل حول كيفية تكوين كل قالب نهج؛ بدلا من ذلك، تقدم لك المقالة معلومات كافية لمساعدتك في تحديد القالب الذي يعد أفضل نقطة بداية للسيناريو الخاص بك. تذكر أنه يمكنك تخصيص قوالب النهج هذه لتلبية متطلباتك المحددة.
   
