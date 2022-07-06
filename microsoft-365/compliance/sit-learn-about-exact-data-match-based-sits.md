@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: تعرف على أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات الدقيقة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0574c11751898b31b22da4642f2d5dd415991732
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5d4a45e7ecdb143187b9d90fdedbaf1f235c7d52
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415915"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621986"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>التعرّف على أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتم استخدام [أنواع المعلومات الحساسة](sensitive-information-type-learn-about.md) للمساعدة في تحديد العناصر الحساسة بحيث يمكنك منع مشاركتها دون قصد أو بشكل غير مناسب، للمساعدة في تحديد موقع البيانات ذات الصلة في eDiscovery، وتطبيق إجراءات الحوكمة على أنواع معينة من المعلومات. يمكنك تعريف نوع معلومات حساسة مخصص (SIT) استنادا إلى:
 
@@ -46,7 +44,7 @@ ms.locfileid: "65415915"
 
 ![التصنيف المستند إلى EDM.](../media/EDMClassification.png)
 
-يمكنك التصنيف المستند إلى EDM من إنشاء أنواع معلومات حساسة مخصصة تشير إلى القيم الدقيقة في قاعدة بيانات المعلومات الحساسة. يمكن تحديث قاعدة البيانات يوميا، وتحتوي على ما يصل إلى 100 مليون صف من البيانات. لذلك مع انتقال الموظفين أو المرضى أو العملاء وتغيير السجلات، تظل أنواع المعلومات الحساسة المخصصة حديثة وقابلة للتطبيق. ويمكنك استخدام التصنيف المستند إلى EDM مع نهج، مثل [سياسات منع فقدان البيانات Microsoft Purview](dlp-learn-about-dlp.md) أو [نهج الملفات Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
+يمكنك التصنيف المستند إلى EDM من إنشاء أنواع معلومات حساسة مخصصة تشير إلى القيم الدقيقة في قاعدة بيانات المعلومات الحساسة. يمكن تحديث قاعدة البيانات يوميا، وتحتوي على ما يصل إلى 100 مليون صف من البيانات. لذلك مع انتقال الموظفين أو المرضى أو العملاء وتغيير السجلات، تظل أنواع المعلومات الحساسة المخصصة حديثة وقابلة للتطبيق. ويمكنك استخدام التصنيف المستند إلى EDM مع نهج، مثل [نهج منع فقدان بيانات Microsoft Purview](dlp-learn-about-dlp.md) أو [نهج الملفات Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
 > يدعم حماية البيانات في Microsoft Purview لغات مجموعة أحرف مزدوجة البايت من أجل:
@@ -95,12 +93,11 @@ ms.locfileid: "65415915"
 
 ### <a name="you-supply-your-own-schema-and-data"></a>يمكنك توفير المخطط والبيانات الخاصة بك
 
-[تأتي Microsoft Purview مع أكثر من 200 SITS](sensitive-information-type-entity-definitions.md) مع مخططات معرفة مسبقا وأنماط regex والكلمات الأساسية ومستويات الثقة. باستخدام EDM SITs، أنت مسؤول عن تعريف المخطط بالإضافة إلى الحقول الأساسية والثانوية التي تحدد العناصر الحساسة. نظرا لأن المخطط وقيم البيانات الأساسية والثانوية حساسة للغاية، فستعمل على تشفيرها عبر [دالة تجزئة](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) تتضمن قيمة [ملحية](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) تم إنشاؤها عشوائيا أو تم توفيرها ذاتيا. ثم يتم تحميل هذه القيم المتجزئة إلى الخدمة، لذلك لا تكون بياناتك الحساسة مفتوحة أبدا.
+[يأتي Microsoft Purview مزودا بأكثر من 200 SITS](sensitive-information-type-entity-definitions.md) مع مخططات معرفة مسبقا وأنماط regex والكلمات الأساسية ومستويات الثقة. باستخدام EDM SITs، أنت مسؤول عن تعريف المخطط بالإضافة إلى الحقول الأساسية والثانوية التي تحدد العناصر الحساسة. نظرا لأن المخطط وقيم البيانات الأساسية والثانوية حساسة للغاية، فستعمل على تشفيرها عبر [دالة تجزئة](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) تتضمن قيمة [ملحية](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) تم إنشاؤها عشوائيا أو تم توفيرها ذاتيا. ثم يتم تحميل هذه القيم المتجزئة إلى الخدمة، لذلك لا تكون بياناتك الحساسة مفتوحة أبدا.
 
 ### <a name="primary-and-secondary-support-elements"></a>عناصر الدعم الأساسية والثانوية
 
 عند إنشاء EDM SIT، يمكنك تعريف حقل *عنصر أساسي* في حزمة القاعدة. الحقول الأساسية هي العناصر التي سيتم البحث فيها عن كل المحتوى الخاص بك، والتي تحتاج إلى اتباع نمط محدد لكي يتم تعريفها. عند العثور على العنصر الأساسي في العناصر الممسوحة ضوئيا، سيبحث EDM عن العناصر *الثانوية* أو الداعمة، والتي لا تحتاج إلى اتباع نمط، وقربها من العنصر الأساسي. يتطلب EDM أن يكون العنصر الأساسي قابلا للاكتشاف أولا من خلال SIT موجود. راجع [تعريفات كيان نوع المعلومات الحساسة](sensitive-information-type-entity-definitions.md) لقائمة كاملة ب SITs المتوفرة. سيتعين عليك العثور على أحد الأشخاص الذين يكتشفون الفئة التي تريد أن يكشفها EDM SIT. على سبيل المثال، إذا كان مخطط EDM SIT يحتوي على رقم الضمان الاجتماعي الأمريكي كعنصر أساسي، عند إنشاء مخطط EDM الخاص بك، فإنك تقوم بإقرانه برقم [الضمان الاجتماعي الأمريكي (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT.
-
 
 ## <a name="how-matching-works"></a>كيفية عمل المطابقة
 
@@ -108,6 +105,19 @@ ms.locfileid: "65415915"
 
 > [!TIP]
 > من الممارسات الشائعة الجمع بين استخدام أنواع المعلومات الحساسة ل EDM وأنواع المعلومات الحساسة العادية التي تستند إليها في قواعد DLP، مع حدود مختلفة. على سبيل المثال، يمكنك استخدام نوع معلومات حساسة ل EDM يبحث عن أرقام الضمان الاجتماعي والبيانات الأخرى، مع متطلبات صارمة وتسامح منخفض حيث سيؤدي تطابق واحد أو أكثر إلى تنبيه DLP، واستخدام نوع المعلومات الحساسة العادية، مثل رقم الضمان الاجتماعي المضمن في الولايات المتحدة للحصول على أعداد أعلى.  
+
+## <a name="services-that-edm-supports"></a>الخدمات التي يدعمها EDM
+
+
+|الخدمة  |مواقع  |
+|---------|---------|
+| تفادي فقدان البيانات في Microsoft Purview    | - SharePoint online </br>- OneDrive for Business </br>- دردشة Teams </br>- Exchange Online </br>- الأجهزة       |
+|Microsoft Defender for Cloud Apps     | - SharePoint Online </br>- OneDrive for Business        |
+|التسمية التلقائية (جانب الخدمة)     |- SharePoint online </br>- OneDrive for Business </br>- Exchange Online         |
+|التسمية التلقائية (جانب العميل)     |- Word </br>- Excel </br>- PowerPoint </br>- عملاء Exchange لسطح المكتب         |
+|المفتاح المدار من قبل العميل     |- SharePoint online </br>- OneDrive for Business </br>- دردشة Teams </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- عملاء Exchange لسطح المكتب </br>- الأجهزة         |
+|eDiscovery     |- SharePoint online </br>- OneDrive for Business </br>- دردشة Teams </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- عملاء Exchange لسطح المكتب  |
+|Insider Risk Management     |- SharePoint online </br>- OneDrive for Business </br>- دردشة Teams </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- عملاء Exchange لسطح المكتب      |
 
 ## <a name="see-also"></a>راجع أيضًا
 

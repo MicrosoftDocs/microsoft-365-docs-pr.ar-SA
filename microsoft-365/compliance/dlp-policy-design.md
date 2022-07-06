@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: تعرف على كيفية تصميم نهج منع فقدان البيانات (DLP)
-ms.openlocfilehash: 2d7c370ab34eea2c708769674495a2c51f1a3fcf
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 32204659da3adcc2fd868568bf3a7bd909e5f2f9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782028"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622998"
 ---
 # <a name="design-a-data-loss-prevention-policy"></a>تصميم نهج منع فقدان البيانات
 
@@ -30,9 +30,9 @@ ms.locfileid: "64782028"
 
  if you have to do a lot of tuning to get a policy to yield the intended results can be time consuming .-->
 
-إذا كنت جديدا على Microsoft 365 DLP، فمن المفيد العمل من خلال هذه المقالات قبل البدء في تصميم نهج:
+إذا كنت جديدا على Microsoft Purview DLP، فمن المفيد العمل من خلال هذه المقالات قبل البدء في تصميم نهج:
 
-- [تعرف على منع فقدان البيانات](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) - تعرفك هذه المقالة على ضابط منع فقدان البيانات وتنفيذ Microsoft ل DLP
+- [تعرف على تفادي فقدان البيانات في Microsoft Purview](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) - تعرفك هذه المقالة على ضابط منع فقدان البيانات وتنفيذ Microsoft ل DLP
 - [التخطيط لمنع فقدان البيانات (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) - من خلال العمل من خلال هذه المقالة سوف:
   - [تحديد أصحاب المصلحة](dlp-overview-plan-for-dlp.md#identify-stakeholders)
   - [وصف فئات المعلومات الحساسة التي يجب حمايتها](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
@@ -56,7 +56,7 @@ ms.locfileid: "64782028"
 
 على سبيل المثال، إليك مسودة أولى وهمية لبيان الهدف الذي يوفر إجابات على جميع الأسئلة الأربعة:
 
-*"نحن مؤسسة مقرها الولايات المتحدة، ونحتاج إلى الكشف عن المستندات Office التي تحتوي على معلومات الرعاية الصحية الحساسة التي تغطيها HIPPA والمخزنة في OneDrive/SharePoint والحماية من تلك المعلومات التي تتم مشاركتها في Teams رسائل الدردشة والقنوات وتقييد الجميع من مشاركتها مع جهات خارجية غير مصرح بها".*
+*"نحن مؤسسة مقرها الولايات المتحدة، ونحتاج إلى الكشف عن مستندات Office التي تحتوي على معلومات الرعاية الصحية الحساسة التي تغطيها HIPPA والمخزنة في OneDrive/SharePoint والحماية من تلك المعلومات التي تتم مشاركتها في رسائل الدردشة والقنوات في Teams وتقييد الجميع من مشاركتها مع جهات خارجية غير مصرح بها".*
 
 أثناء تطوير تصميم نهج، من المحتمل أن تقوم بتعديل العبارة وتوسيعها.
 
@@ -66,8 +66,8 @@ ms.locfileid: "64782028"
 
 |بيان|تمت الإجابة عن سؤال التكوين وتعيين التكوين|
 |---|---|
-|"نحن مؤسسة مقرها الولايات المتحدة، ونحتاج إلى الكشف عن Office المستندات التي تحتوي على معلومات الرعاية الصحية الحساسة التي تغطيها HIPPA...|- **ما يجب مراقبته**: Office المستندات، استخدم قالب [قانون التأمين الصحي (HIPAA) في الولايات المتحدة](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) </br>- **شروط المطابقة**: (تم تكوينه مسبقا ولكن قابل للتحرير) - يحتوي العنصر على رقم SSN وCED Enforcement Agency (DEA) للولايات المتحدة، والتصنيف الدولي للأدوية (ICD-9-CM)، والتصنيف الدولي الأمراض (ICD-10-CM)، تتم مشاركة المحتوى مع أشخاص من خارج مؤسستي  </br> - يدفع المحادثات لتوضيح حد التشغيل للكشف مثل [مستويات الثقة](sensitive-information-type-learn-about.md#more-on-confidence-levels)، [وعدد المثيلات](dlp-policy-reference.md#content-contains) (يسمى التسامح مع التسرب).|
-|... التي يتم تخزينها في OneDrive/SharePoint والحماية من تلك المعلومات التي تتم مشاركتها Teams رسائل الدردشة والقنوات...|- **مكان المراقبة**: [تحديد نطاق الموقع](dlp-policy-reference.md#locations) عن طريق تضمين مواقع OneDrive ومواقع SharePoint أو استبعادها Teams حسابات الدردشة/القناة أو مجموعات التوزيع.|
+|"نحن مؤسسة مقرها الولايات المتحدة، ونحتاج إلى الكشف عن مستندات Office التي تحتوي على معلومات الرعاية الصحية الحساسة التي تغطيها HIPPA...|- **ما يجب مراقبته**: مستندات Office، استخدم قالب [قانون التأمين الصحي (HIPAA) في الولايات المتحدة](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) </br>- **شروط المطابقة**: (تم تكوينه مسبقا ولكن قابل للتحرير) - يحتوي العنصر على رقم SSN وCED Enforcement Agency (DEA) للولايات المتحدة، والتصنيف الدولي للأدوية (ICD-9-CM)، والتصنيف الدولي الأمراض (ICD-10-CM)، تتم مشاركة المحتوى مع أشخاص من خارج مؤسستي  </br> - يدفع المحادثات لتوضيح حد التشغيل للكشف مثل [مستويات الثقة](sensitive-information-type-learn-about.md#more-on-confidence-levels)، [وعدد المثيلات](dlp-policy-reference.md#content-contains) (يسمى التسامح مع التسرب).|
+|... المخزنة في OneDrive/SharePoint والحماية من تلك المعلومات التي تتم مشاركتها في دردشة Teams ورسائل القناة...|- **مكان المراقبة**:  [تحديد نطاق الموقع](dlp-policy-reference.md#locations) عن طريق تضمين مواقع OneDrive وSharePoint وحسابات الدردشة/القناة في Teams أو مجموعات التوزيع أو استبعادها.|
 |... وتقييد الجميع من مشاركة هذه العناصر مع جهات خارجية غير مصرح بها"."|- **الإجراءات التي يجب اتخاذها**: [يمكنك إضافة](dlp-policy-reference.md#actions) *تقييد الوصول أو تشفير المحتوى في مواقع Microsoft 365* </br> - يدفع المحادثة حول الإجراءات التي يجب اتخاذها عند تشغيل نهج، بما في ذلك إجراءات الحماية مثل قيود المشاركة، وإجراءات الوعي مثل الإعلامات والتنبيهات، وإجراءات تمكين المستخدم مثل السماح لتجاوز المستخدم لإجراء حظر|
 
 لا يغطي هذا المثال جميع نقاط التكوين لنهج DLP، بل يجب توسيعه. ولكن يجب أن تحصل على التفكير في الاتجاه الصحيح في أثناء تطوير بيانات هدف نهج DLP الخاصة بك.

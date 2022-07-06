@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: تحديث ملف جدول مصدر المعلومات الحساسة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a846f22b866b4b8adf75c44e55fde4b9d56b8ac4
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 310663caae55bb9b5e0d07cb38ba9fa4b45e8a73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008834"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621656"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>تحديث ملف جدول مصدر المعلومات الحساسة لتطابق البيانات الدقيقة 
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك تحديث قاعدة بيانات المعلومات الحساسة حتى 5 مرات كل 24 ساعة. سيتعين عليك إعادة تشغيل جدول مصدر المعلومات الحساسة وتحميله.
 
@@ -43,7 +41,7 @@ ms.locfileid: "66008834"
    |---|---|
    |PowerShell|راجع وثائق [ScheduledTasks](/powershell/module/scheduledtasks/) [ومثال البرنامج النصي PowerShell](#example-powershell-script-for-task-scheduler) في هذه المقالة|
    |واجهة برمجة تطبيقات مجدول المهام|راجع وثائق ["جدولة المهام"](/windows/desktop/TaskSchd/using-the-task-scheduler)|
-   |واجهة مستخدم Windows|في Windows، انقر فوق **"بدء"** واكتب "جدولة المهام". بعد ذلك، في قائمة النتائج، انقر بزر الماوس الأيمن فوق **"جدولة المهام"**، واختر **"تشغيل" كمسؤول**.|
+   |واجهة مستخدم Windows|في Windows، انقر فوق **"بدء**" واكتب "جدولة المهام". بعد ذلك، في قائمة النتائج، انقر بزر الماوس الأيمن فوق **"جدولة المهام"**، واختر **"تشغيل" كمسؤول**.|
 
 ## <a name="example-powershell-script-for-task-scheduler"></a>مثال على برنامج PowerShell النصي لمجدول المهام
 

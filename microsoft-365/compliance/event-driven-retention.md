@@ -20,18 +20,16 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: عادة ما تكون جزءا من حل إدارة السجلات، يمكنك تكوين تسمية استبقاء لبدء فترة الاستبقاء استنادا إلى حدث تحدده.
-ms.openlocfilehash: 753188e187bd3a80cd83c10d41b373b1507a1e24
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 953661a63c961273d54fde1041e4d85c5d786c26
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603114"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622976"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>بدء الاستبقاء عند وقوع حدث
 
 >*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند الاحتفاظ بالمحتوى، غالبا ما تستند فترة الاستبقاء إلى عمر المحتوى. على سبيل المثال، يمكنك الاحتفاظ بالمستندات لمدة سبع سنوات بعد إنشائها ثم حذفها. ولكن عند تكوين [تسميات الاستبقاء](retention.md#retention-labels)، يمكنك أيضا إنشاء فترة استبقاء استنادا إلى وقت حدوث نوع معين من الأحداث. يشغل الحدث بداية فترة الاستبقاء، ويتم فرض إجراءات استبقاء التسمية على جميع المحتويات التي تم تطبيق تسمية استبقاء عليها لهذا النوع من الأحداث.
   

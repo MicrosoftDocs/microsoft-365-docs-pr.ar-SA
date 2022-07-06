@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: يوسع ملحق Microsoft Purview مراقبة أنشطة الملفات وإجراءات الحماية والتحكم فيها إلى مستعرض Google Chrome
-ms.openlocfilehash: a74cfeb734f41622d491c8aaffe3a5e054479a2a
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 08078871765a75577475c93ba35cabda9ee3fd6a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172234"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622888"
 ---
 # <a name="learn-about-the-microsoft-purview-extension"></a>تعرف على ملحق Microsoft Purview
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تعمل [ميزة منع فقدان بيانات نقطة النهاية (DLP)](endpoint-dlp-learn-about.md) على توسيع قدرات مراقبة النشاط وحمايتها [لمنع فقدان بيانات Microsoft Purview (DLP)](dlp-learn-about-dlp.md) إلى العناصر الحساسة الموجودة على أجهزة Windows 10. بمجرد إلحاق الأجهزة في حلول Microsoft Purview، تصبح المعلومات حول ما يفعله المستخدمون بالعناصر الحساسة مرئية في [مستكشف النشاط](data-classification-activity-explorer.md) ويمكنك فرض إجراءات الحماية على تلك العناصر عبر [نهج DLP](create-test-tune-dlp-policy.md).
 

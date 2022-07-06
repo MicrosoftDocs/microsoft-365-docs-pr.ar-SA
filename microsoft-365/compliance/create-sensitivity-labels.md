@@ -18,18 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 'أحد متطلبات جميع حلول حماية البيانات في Microsoft Purview: إنشاء تسميات الحساسية وتكوينها ونشرها لتصنيف بيانات مؤسستك وحمايتها.'
-ms.openlocfilehash: 0f920c91e1e844a4feaab7f9d1d58e88da6791ca
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: ad7e9c9aeea0a1ef05f79214afd60ac479ba2e66
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573858"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625512"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>إنشاء وتكوين تسميات الحساسية ونهجها
 
 >*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتم تنفيذ جميع حلول حماية البيانات في Microsoft Purview باستخدام [أوصاف الحساسية](sensitivity-labels.md). لإنشاء هذه التسميات ونشرها، انتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>.
 

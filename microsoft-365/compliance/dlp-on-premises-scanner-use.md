@@ -1,5 +1,5 @@
 ---
-title: استخدام Microsoft 365 فقدان البيانات
+title: استخدم الماسح الضوئي المحلي لمنع فقدان البيانات
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,43 +18,43 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: تعرف على كيفية استخدام Microsoft 365 فقدان البيانات في الماسح الضوئي في الموقع لمسح البيانات ضوئيا في أي مكان وتنفيذ إجراءات حماية لمشتركات الملفات والملفات SharePoint ومكتبات المستندات.
-ms.openlocfilehash: d726bfccf7dff2e95e3ccf996544f1db26bf09a2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: تعرف على كيفية استخدام الماسح الضوئي المحلي لمنع فقدان البيانات لفحص البيانات الثابتة وتنفيذ إجراءات الحماية لمشاركات الملفات المحلية ومجلدات SharePoint المحلية ومكتبات المستندات.
+ms.openlocfilehash: ae5ffce9e664ada6e7476bb02b40f4a5c279d441
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63572223"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624168"
 ---
-# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>استخدام الماسح الضوئي Microsoft 365 فقدان البيانات
+# <a name="use-the-data-loss-prevention-on-premises-scanner"></a>استخدام الماسح الضوئي المحلي لمنع فقدان البيانات
 
-لمساعدتك على التعرف على ميزات DLP في الموقع وكيفية ظاهرها في سياسات DLP، قمنا بوضع بعض السيناريوهات معا لكي تتابعها.
+لمساعدتك في التعرف على تفادي فقدان البيانات في Microsoft Purview الميزات المحلية وكيفية إظهارها في نهج DLP، قمنا بتجميع بعض السيناريوهات لمتابعتها.
 
 > [!IMPORTANT]
-> لا تكون سيناريوهات DLP الداخلية هذه هي الإجراءات الرسمية لإنشاء سياسات DLP وضبطها. راجع المواضيع أدناه عندما تحتاج إلى استخدام سياسات DLP في الحالات العامة:
+> سيناريوهات DLP المحلية هذه ليست الإجراءات الرسمية لإنشاء نهج DLP وضبطها. راجع المواضيع أدناه عندما تحتاج إلى العمل مع نهج DLP في المواقف العامة:
 >
-> - [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md)
+> - [التعرّف على تفادي فقدان البيانات](dlp-learn-about-dlp.md)
 > - [بدء استخدام نهج DLP الافتراضي](get-started-with-the-default-dlp-policy.md)
 > - [إنشاء نهج DLP من قالب](create-a-dlp-policy-from-a-template.md)
 > - [إنشاء نهج DLP واختباره وضبطه](create-test-tune-dlp-policy.md)
 
 ### <a name="scenario-discover-files-matching-dlp-rules"></a>السيناريو: اكتشاف الملفات المطابقة لقواعد DLP
 
-البيانات من أسطح الماسح الضوئي ل DLP في مناطق متعددة
+بيانات من أسطح الماسح الضوئي المحلي ل DLP في عدة مناطق
 
 #### <a name="activity-explorer"></a>مستكشف النشاط
 
- يكشف Microsoft DLP للقاعدة في الموقع عن تطابقات قواعد DLP ويبل يها إلى ["مستكشف النشاط](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer)".
+ يكشف Microsoft DLP محليا عن تطابقات قاعدة DLP ويبلغ عنها إلى [مستكشف النشاط](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer).
 
-#### <a name="microsoft-365-audit-log"></a>Microsoft 365 التدقيق
+#### <a name="microsoft-365-audit-log"></a>سجل تدقيق Microsoft 365
 
-تتوفر تطابقات قواعد DLP في واجهة مستخدم سجل التدقيق، راجع البحث في [](search-the-audit-log-in-security-and-compliance.md) سجل التدقيق في مركز التوافق أو يمكن الوصول إليه بواسطة [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
+تتوفر تطابقات قاعدة DLP في واجهة مستخدم سجل التدقيق، راجع [البحث في سجل التدقيق في مدخل التوافق في Microsoft Purview](search-the-audit-log-in-security-and-compliance.md) أو يمكن الوصول إليه بواسطة [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
 
-#### <a name="aip"></a>AIP
+#### <a name="aip"></a>الوكاله
 
-تتوفر بيانات الاكتشاف في تقرير محلي بتنسيق csv يتم تخزينه ضمن:
+تتوفر بيانات الاكتشاف في تقرير محلي بتنسيق csv المخزن ضمن:
 
-**٪localappdata٪\Microsoft\MSIP\Scanner\Reports\DetailedReport_٪timestamp٪.csv report**.
+**٪localappdata٪\Microsoft\MSIP\Scanner\Reports\DetailedReport_٪timestamp٪.csv التقرير**.
 
  ابحث عن الأعمدة التالية:
 
@@ -63,25 +63,25 @@ ms.locfileid: "63572223"
 - تعليق DLP
 - اسم قاعدة DLP
 - إجراءات DLP
-- المالك
+- مالك
 - أذونات NTFS الحالية (SDDL)
 - أذونات NTFS المطبقة (SDDL)
 - نوع أذونات NTFS
 
 ### <a name="scenario-enforce-dlp-rule"></a>السيناريو: فرض قاعدة DLP
 
-إذا كنت تريد فرض قواعد DLP على الملفات الممسوحة ضوئيا، فيجب تمكين التنفيذ على كل من مهمة فحص المحتوى في AIP وعلى مستوى النهج في DLP.
+إذا كنت ترغب في فرض قواعد DLP على الملفات الممسوحة ضوئيا، يجب تمكين الإنفاذ على كل من مهمة فحص المحتوى في AIP وعلى مستوى النهج في DLP.
 
 #### <a name="configure-dlp-to-enforce-policy-actions"></a>تكوين DLP لفرض إجراءات النهج
 
-1. افتح صفحة [منع فقدان](https://compliance.microsoft.com/datalossprevention?viewid=policies) البيانات وحدد نهج DLP الذي يستهدف مستودعات المواقع المحلي التي قمت بتكوينها في AIP.
+1. افتح [صفحة منع فقدان البيانات](https://compliance.microsoft.com/datalossprevention?viewid=policies) وحدد نهج DLP الذي يستهدف مستودعات المواقع المحلية التي قمت بتكوينها في AIP.
 2. تحرير النهج.
-3. في صفحة **اختبار النهج أو تشغيلها** ، حدد **نعم، قم ب تشغيلها على الفور**.
+3. في صفحة **الاختبار أو تشغيل النهج** ، حدد **"نعم"، وقم بتشغيلها على الفور**.
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [تعرف على ماسح DLP في الموقع](dlp-on-premises-scanner-learn.md)
-- [بدء استخدام الماسح الضوئي ل DLP في الموقع](dlp-on-premises-scanner-get-started.md)
-- [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md)
+- [التعرف على الماسح الضوئي المحلي ل DLP](dlp-on-premises-scanner-learn.md)
+- [بدء استخدام الماسح الضوئي المحلي ل DLP](dlp-on-premises-scanner-get-started.md)
+- [التعرّف على تفادي فقدان البيانات](dlp-learn-about-dlp.md)
 - [إنشاء نهج DLP واختباره وضبطه](create-test-tune-dlp-policy.md)
-- [بدء استخدام "مستكشف النشاط"](data-classification-activity-explorer.md)
+- [بدء استخدام مستكشف النشاط](data-classification-activity-explorer.md)

@@ -374,7 +374,6 @@
       items:
         - name: أساليب حماية بيانات الجهاز والتطبيق
           href: devices/choose-device-security.md
-        - name: التحقق من صحة الإعدادات على Android أو iOS
         - name: أساسيات التنقل والأمان
           items:
             - name: نظرة عامة على التنقل والأمان الأساسيين

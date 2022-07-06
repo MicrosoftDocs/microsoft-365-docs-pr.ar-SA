@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: ابدأ في إنشاء أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات الدقيقة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 592a4c7342af9ffe5c18d0d25b99b12cd1b3e212
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 27a4f113e401076374ef0e52cd54133e46a21b52
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294658"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622030"
 ---
 # <a name="get-started-with-exact-data-match-based-sensitive-information-types"></a>بدء استخدام أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 إن إنشاء نوع معلومات حساسة (SIT) يستند إلى EDM وإجراء مطابقة دقيقة للبيانات (EDM) متاح هو عملية متعددة المراحل. يمكن استخدامها في نهج منع فقدان البيانات في Microsoft Purview وeDiscovery وبعض مهام إدارة المحتوى توضح هذه المقالة سير العمل وارتباطات الإجراءات لكل مرحلة من المراحل
 
@@ -58,10 +56,10 @@ ms.locfileid: "65294658"
 - المملكة المتحدة
 - الولايات المتحدة
 - US DoD
-- الولايات المتحدة سحابة القطاع الحكومي
+- دول مجلس التعاون في الولايات المتحدة
 - US GCCH
 
-يمكنك معرفة المنطقة التي يستضيف فيها المستأجر البيانات الثابتة باتباع الإجراءات الواردة في [مكان تخزين بيانات عميل Microsoft 365](../enterprise/o365-data-locations.md) والإشارة إلى مواقع مدينة مركز البيانات في المقالة نفسها.
+يمكنك معرفة المنطقة التي يستضيف فيها المستأجر البيانات الثابتة باتباع الإجراءات في [مكان تخزين بيانات عميل Microsoft 365](../enterprise/o365-data-locations.md) والإشارة إلى مواقع مدينة مركز البيانات في المقالة نفسها.
 
 ## <a name="required-licenses-and-permissions"></a>التراخيص والأذونات المطلوبة
 
@@ -71,7 +69,7 @@ ms.locfileid: "65294658"
 
 ## <a name="portal-links-for-your-subscription"></a>ارتباطات المدخل لاشتراكك
 
-|المدخل|العالم/سحابة القطاع الحكومي|GCC-High|وزاره الدفاع|
+|المدخل|العالم/دول مجلس التعاون في مجلس التعاون|GCC-High|وزاره الدفاع|
 |---|---|---|---|
 |Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
 |مدخل Microsoft 365 Defender|security.microsoft.com|security.microsoft.us|security.apps.mil|
@@ -86,9 +84,9 @@ ms.locfileid: "65294658"
 |---|---|
 |[المرحلة 1: تصدير بيانات المصدر لنوع المعلومات الحساسة المستندة إلى مطابقة البيانات الدقيقة](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|- قراءة الوصول إلى البيانات الحساسة|
 |[المرحلة 2: إنشاء مخطط لأنواع المعلومات الحساسة المستندة إلى مطابقة البيانات الدقيقة](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- الوصول إلى معالج نوع المعلومات الحساسة في مركز مسؤولي Microsoft 365 </br>- الوصول إلى [مركز مسؤولي Microsoft 365 عبر Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) |
-|[المرحلة 3: تجزئة جدول مصدر المعلومات الحساسة وتحميله لتطابق البيانات الدقيقة مع أنواع المعلومات الحساسة](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|- مجموعة أمان مخصصة وحساب مستخدم </br>- **التجزئة والتحميل من كمبيوتر واحد**: وصول المسؤول المحلي إلى كمبيوتر مع وصول مباشر إلى الإنترنت واستضافة وكيل Upload EDM </br>- **التجزئة والتحميل من أجهزة كمبيوتر منفصلة**: وصول المسؤول المحلي إلى كمبيوتر مع وصول مباشر إلى الإنترنت واستضافة عامل Upload EDM للتحميل ووصول المسؤول المحلي إلى كمبيوتر آمن لاستضافة عامل Upload EDM لتجزئة جدول مصدر المعلومات الحساسة </br>- قراءة الوصول إلى ملف جدول مصدر المعلومات الحساسة </br> ملف المخطط |
-|[المرحلة 4: إنشاء تطابق دقيق للبيانات مع نوع المعلومات الحساسة/حزمة القاعدة](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |- الوصول إلى مدخل الامتثال ل Microsoft Purview |
-|[اختبار نوع معلومات دقيق يطابق المعلومات الحساسة](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| - الوصول إلى مدخل الامتثال ل Microsoft Purview
+|[المرحلة 3: تجزئة جدول مصدر المعلومات الحساسة وتحميله لتطابق البيانات الدقيقة مع أنواع المعلومات الحساسة](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|- مجموعة أمان مخصصة وحساب مستخدم </br>- **التجزئة والتحميل من كمبيوتر واحد**: وصول المسؤول المحلي إلى كمبيوتر مع وصول مباشر إلى الإنترنت واستضافة عامل تحميل EDM </br>- **التجزئة والتحميل من أجهزة كمبيوتر منفصلة**: وصول المسؤول المحلي إلى كمبيوتر مع وصول مباشر إلى الإنترنت واستضافة عامل تحميل EDM للتحميل ووصول المسؤول المحلي إلى كمبيوتر آمن لاستضافة عامل تحميل EDM لتجزئة جدول مصدر المعلومات الحساسة </br>- قراءة الوصول إلى ملف جدول مصدر المعلومات الحساسة </br> ملف المخطط |
+|[المرحلة 4: إنشاء تطابق دقيق للبيانات مع نوع المعلومات الحساسة/حزمة القاعدة](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |- الوصول إلى مدخل التوافق في Microsoft Purview |
+|[اختبار نوع معلومات دقيق يطابق المعلومات الحساسة](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)| - الوصول إلى مدخل التوافق في Microsoft Purview
 
 ## <a name="see-also"></a>راجع أيضًا
 

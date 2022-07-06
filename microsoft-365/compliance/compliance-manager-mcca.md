@@ -17,16 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: فهم كيفية استخدام محلل التكوين ل Microsoft Purview للحصول على وتشغيلها بسرعة مع Microsoft Purview Compliance Manager.
-ms.openlocfilehash: d2e5fbc0d928fb5931139a274cf9cce5bdc4d983
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 96d44dd310361e8a9ca2c4239448ced863abaddc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573936"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621150"
 ---
 # <a name="configuration-analyzer-for-microsoft-purview-camp"></a>محلل التكوين ل Microsoft Purview (CAMP)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **في هذه المقالة:** تعرف على كيفية تثبيت وتشغيل أداة Configuration Analyzer ل Microsoft Purview (CAMP) للبدء بسرعة مع Microsoft Purview Compliance Manger.
 

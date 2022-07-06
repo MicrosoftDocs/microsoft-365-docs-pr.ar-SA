@@ -17,30 +17,28 @@ search.appverid:
 - MET150
 description: تعرف على كيفية تعديل مخطط edm لاستخدام مطابقة قابلة للتكوين.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f5eb282bd004956d6ca98a9347ef8d832784b55f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a90f81136bf6aa78aa11d732deca19ecd1d59b9c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014773"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622052"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>تعديل مخطط مطابقة البيانات الدقيقة لاستخدام مطابقة قابلة للتكوين
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك التصنيف المستند إلى مطابقة البيانات الدقيقة (EDM) من إنشاء أنواع معلومات حساسة مخصصة تشير إلى القيم الدقيقة في قاعدة بيانات المعلومات الحساسة. عندما تحتاج إلى السماح بمتغيرات سلسلة دقيقة، يمكنك استخدام *مطابقة قابلة للتكوين* لإخبار Microsoft Purview بتجاهل الحالة وبعض المحددات.
 
 > [!IMPORTANT]
 > استخدم هذا الإجراء لتعديل مخطط EDM وملف بيانات موجودين.
 
-1. قم بإلغاء تثبيت **EdmUploadAgent.exe** من الكمبيوتر الذي تستخدمه للاتصال Microsoft 365 لأغراض تحميل ملف البيانات ومخطط EDM.
+1. قم بإلغاء تثبيت **EdmUploadAgent.exe** من الكمبيوتر الذي تستخدمه للاتصال ب Microsoft 365 لمخطط EDM ولأغراض تحميل ملف البيانات.
 
 2. قم بتنزيل ملف **EdmUploadAgent.exe** المناسب لاشتراكك باستخدام الارتباطات أدناه:
-    - [تجاري + سحابة القطاع الحكومي](https://go.microsoft.com/fwlink/?linkid=2088639) - يجب على معظم العملاء التجاريين استخدام هذا
-    - [سحابة القطاع الحكومي-High](https://go.microsoft.com/fwlink/?linkid=2137521) - هذا مخصص لمشتركي السحابة الحكومية ذات الأمان العالي
+    - [التجاري + GCC](https://go.microsoft.com/fwlink/?linkid=2088639) - يجب على معظم العملاء التجاريين استخدام هذا
+    - [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521) - هذا مخصص لمشتركي السحابة الحكومية ذات الأمان العالي
     - [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) - هذا مخصص لعملاء السحابة في وزارة الدفاع الأمريكية
 
-3. قم بتخويل عامل Upload EDM، وافتح نافذة موجه الأوامر (كمسؤول) وقم بتشغيل الأمر التالي:
+3. تخويل عامل تحميل EDM وفتح نافذة موجه الأوامر (كمسؤول) وتشغيل الأمر التالي:
 
    ```dos
    EdmUploadAgent.exe /Authorize
@@ -107,10 +105,10 @@ ms.locfileid: "66014773"
     - \"
     - \,
 
-6. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+6. [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
     > [!NOTE]
-    > إذا قامت مؤسستك بإعداد [مفتاح العميل Microsoft 365 على مستوى المستأجر (معاينة عامة)،](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview) فستستفيد مطابقة البيانات الدقيقة من وظائف التشفير الخاصة بها تلقائيا. يتوفر هذا فقط للمستأجرين المرخصين E5 في السحابة التجارية.
+    > إذا قامت مؤسستك بإعداد [مفتاح العميل ل Microsoft 365 على مستوى المستأجر (معاينة عامة)،](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview) فستستفيد مطابقة البيانات الدقيقة من وظائف التشفير الخاصة بها تلقائيا. يتوفر هذا فقط للمستأجرين المرخصين E5 في السحابة التجارية.
 
 7. حدث المخطط عن طريق تشغيل الأمر التالي:
 
@@ -140,6 +138,6 @@ ms.locfileid: "66014773"
 - [التعرّف على أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [تعريفات نوع المعلومات الحساسة](sensitive-information-type-entity-definitions.md)
 - [أنواع المعلومات الحساسة المخصصة](./sensitive-information-type-learn-about.md)
-- [تعرف على منع فقدان بيانات Microsoft Purview](dlp-learn-about-dlp.md)
+- [تعرف على تفادي فقدان البيانات في Microsoft Purview](dlp-learn-about-dlp.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: الإعلان عن السجلات باستخدام تسميات الاستبقاء.
-ms.openlocfilehash: 0e8453bee843131a5781318f7adde8d19bb04d92
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 6a68f63c3f304ed4a5f3d79445cd713125327bd2
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016801"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624278"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>تعريف السجلات باستخدام تسميات الاستبقاء
 
->*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 للإعلان عن المستندات ورسائل البريد الإلكتروني [كسجلات](records-management.md#records)، يمكنك استخدام [تسميات الاستبقاء](retention.md#retention-labels) التي تضع علامة على المحتوى **كسجل** أو **سجل تنظيمي**.
 
@@ -43,7 +41,7 @@ ms.locfileid: "66016801"
 
 بشكل افتراضي، لا يتم عرض خيار تسمية الاستبقاء لوضع علامة على المحتوى كسجل تنظيمي في معالج تسمية الاستبقاء. لعرض هذا الخيار، يجب أولا تشغيل أمر PowerShell:
 
-1. [الاتصال إلى Office 365 Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [الاتصال Office 365 Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. تشغيل cmdlet التالي:
 
@@ -57,13 +55,13 @@ ms.locfileid: "66016801"
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>تكوين تسميات الاستبقاء للإعلان عن السجلات
 
-عند إنشاء تسمية استبقاء من حل **إدارة السجلات** في مدخل توافق Microsoft Purview، يكون لديك خيار وضع علامة على العناصر كسجل. إذا قمت بتشغيل أمر PowerShell من القسم السابق، يمكنك بدلا من ذلك وضع علامة على العناصر كسجل تنظيمي.
+عند إنشاء تسمية استبقاء من حل **إدارة السجلات** في مدخل التوافق في Microsoft Purview، يتوفر لديك خيار وضع علامة على العناصر كسجل. إذا قمت بتشغيل أمر PowerShell من القسم السابق، يمكنك بدلا من ذلك وضع علامة على العناصر كسجل تنظيمي.
 
 على سبيل المثال:
 
 ![تكوين تسمية استبقاء لوضع علامة على المحتوى كسجل أو تنظيمي.](../media/declare-records.png)
 
-باستخدام تسمية الاستبقاء هذه، يمكنك الآن تطبيقها على SharePoint أو OneDrive المستندات ورسائل البريد الإلكتروني Exchange، حسب الحاجة.
+باستخدام تسمية الاستبقاء هذه، يمكنك الآن تطبيقها على مستندات SharePoint أو OneDrive ورسائل البريد الإلكتروني Exchange، حسب الحاجة.
 
 للحصول على الإرشادات الكاملة:
 
@@ -73,16 +71,16 @@ ms.locfileid: "66016801"
 
 ## <a name="tenant-setting-for-editing-record-properties"></a>إعداد المستأجر لتحرير خصائص السجل
 
-إذا كنت ستستخدم تسميات الاستبقاء للإعلان عن العناصر كسجلات (بدلا من السجلات التنظيمية) في SharePoint OneDrive، ففكر فيما إذا كنت بحاجة إلى تغيير إعداد المستأجر الافتراضي الذي يسمح للمستخدمين بتحرير خصائص [سجل مؤمن](record-versioning.md) عندما تكون الملفات أكبر من 0 بايت.
+إذا كنت ستستخدم تسميات الاستبقاء للإعلان عن العناصر كسجلات (بدلا من السجلات التنظيمية) في SharePoint وOneDrive، ففكر فيما إذا كنت بحاجة إلى تغيير إعداد المستأجر الافتراضي الذي يسمح للمستخدمين بتحرير خصائص [سجل مؤمن](record-versioning.md) عندما تكون الملفات أكبر من 0 بايت.
 
-لتغيير هذا الإعداد الافتراضي، انتقل إلى **إعدادات استبقاء** >  إعدادات  >  إدارة سجلات [Microsoft Purview لمدخل](https://compliance.microsoft.com/) >  >  التوافق، ثم **قم** بإيقاف تشغيل الإعداد **"السماح للمستخدمين بتحرير خصائص السجل**".
+لتغيير هذا الإعداد الافتراضي، انتقل إلى تسميات  > **استبقاء****إعدادات إدارة سجلات إدارة** >  [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/) >  **Records** > **، ثم قم** بإيقاف تشغيل الإعداد **"السماح للمستخدمين بتحرير خصائص السجل**".
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>تطبيق تسمية الاستبقاء المكونة على المحتوى
 
 عند إتاحة تسميات الاستبقاء التي تضع علامة على العناصر كسجل أو سجل تنظيمي للمستخدمين لتطبيقها في التطبيقات:
 
-- بالنسبة Exchange، يمكن لأي مستخدم لديه حق الوصول للكتابة إلى علبة البريد تطبيق هذه التسميات.
-- بالنسبة SharePoint OneDrive، يمكن لأي مستخدم في مجموعة الأعضاء الافتراضية (مستوى أذونات المساهمة) تطبيق هذه التسميات.
+- بالنسبة إلى Exchange، يمكن لأي مستخدم لديه حق الوصول للكتابة إلى علبة البريد تطبيق هذه التسميات.
+- بالنسبة إلى SharePoint وOneDrive، يمكن لأي مستخدم في مجموعة الأعضاء الافتراضية (مستوى أذونات المساهمة) تطبيق هذه التسميات.
 
 مثال لمستند تم وضع علامة عليه كسجل باستخدام تسمية استبقاء:
 
@@ -92,14 +90,14 @@ ms.locfileid: "66016801"
 
 يتم تسجيل إجراءات التسمية للإعلان عن العناصر كسجلات في سجل التدقيق.
 
-للعناصر SharePoint:
+لعناصر SharePoint:
 - من **أنشطة الملف والصفحة**، حدد **تسمية الاستبقاء التي تم تغييرها لملف**. حدث التدقيق هذا هو لتسميات الاستبقاء التي تضع علامة على العناصر كسجلات أو سجلات تنظيمية أو تسميات استبقاء قياسية.
 
-للعناصر Exchange:
-- من **Exchange أنشطة علبة البريد**، حدد **الرسالة المسماة كسجل**. حدث التدقيق هذا هو لتسميات الاستبقاء التي تضع علامة على العناصر كسجلات أو سجلات تنظيمية.
+بالنسبة لعناصر Exchange:
+- من **أنشطة علبة بريد Exchange**، حدد **الرسالة المسماة كسجل**. حدث التدقيق هذا هو لتسميات الاستبقاء التي تضع علامة على العناصر كسجلات أو سجلات تنظيمية.
 
 لمزيد من المعلومات حول البحث عن هذه الأحداث، راجع [البحث في سجل التدقيق في مركز التوافق & الأمان](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-فهم كيفية استخدام [تعيين إصدار السجل لتحديث السجلات المخزنة في SharePoint أو OneDrive](record-versioning.md).
+فهم كيفية استخدام [تعيين إصدار السجلات لتحديث السجلات المخزنة في SharePoint أو OneDrive](record-versioning.md).

@@ -21,19 +21,17 @@ ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: تعرف على كيفية تشغيل برنامج نصي لإضافة علب بريد & OneDrive for Business مواقع إلى قائمة احتجاز جديدة مقترنة بحالة eDiscovery في مدخل توافق Microsoft Purview.
-ms.openlocfilehash: 04d41936e437740a39ab73aeafb9ca40b914dd2f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: تعرف على كيفية تشغيل برنامج نصي لإضافة علب بريد & OneDrive for Business المواقع إلى قائمة احتجاز جديدة مقترنة بحالة eDiscovery في مدخل التوافق في Microsoft Purview.
+ms.openlocfilehash: ebfe9bf2fc2784e8c590b949912aa15c1b773cc0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012737"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621634"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>استخدام برنامج نصي لإضافة مستخدمين إلى قائمة احتجاز في حالة eDiscovery (قياسي)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يوفر Security & Compliance PowerShell أوامر cmdlets تتيح لك أتمتة المهام التي تستغرق وقتا طويلا المتعلقة بإنشاء حالات eDiscovery وإدارتها. حاليا، يستغرق استخدام حالة Microsoft Purview eDiscovery (Standard) في مدخل الامتثال ل Microsoft Purview لوضع عدد كبير من مواقع محتوى الوصي قيد الاحتجاز وقتا وإعدادا. على سبيل المثال، قبل إنشاء قائمة احتجاز، يجب عليك جمع عنوان URL لكل موقع OneDrive for Business تريد وضعه قيد الاحتجاز. ثم لكل مستخدم تريد وضعه قيد الاحتجاز، يجب إضافة علبة بريده وموقع OneDrive for Business الخاص به إلى قائمة الاحتجاز. يمكنك استخدام البرنامج النصي في هذه المقالة لأتمتة هذه العملية.
+يوفر Security & Compliance PowerShell أوامر cmdlets تتيح لك أتمتة المهام التي تستغرق وقتا طويلا المتعلقة بإنشاء حالات eDiscovery وإدارتها. حاليا، يستغرق استخدام حالة Microsoft Purview eDiscovery (قياسي) في مدخل التوافق في Microsoft Purview لوضع عدد كبير من مواقع محتوى الوصي قيد الاحتجاز وقتا وإعدادا. على سبيل المثال، قبل إنشاء قائمة احتجاز، يجب عليك جمع عنوان URL لكل موقع OneDrive for Business تريد وضعه قيد الاحتجاز. ثم لكل مستخدم تريد وضعه قيد الاحتجاز، يجب إضافة علبة بريده وموقع OneDrive for Business الخاص به إلى قائمة الاحتجاز. يمكنك استخدام البرنامج النصي في هذه المقالة لأتمتة هذه العملية.
 
 يطالبك البرنامج النصي باسم مجال "الموقع الخاص بي" الخاص بالمؤسسة (على سبيل المثال، `contoso` في عنوان URL https://contoso-my.sharepoint.com)، واسم حالة eDiscovery الحالية، واسم قائمة الاحتجاز الجديدة المقترنة بالحالة، وقائمة عناوين البريد الإلكتروني للمستخدمين الذين تريد وضعهم قيد الاحتجاز، واستعلام بحث لاستخدامه إذا كنت تريد إنشاء قائمة احتجاز مستندة إلى استعلام. ثم يحصل البرنامج النصي على عنوان URL لموقع OneDrive for Business لكل مستخدم في القائمة، ويقوم بإنشاء قائمة الاحتجاز الجديدة، ثم يضيف علبة البريد وموقع OneDrive for Business لكل مستخدم في القائمة إلى قائمة الاحتجاز. يقوم البرنامج النصي أيضا بإنشاء ملفات السجل التي تحتوي على معلومات حول قائمة الاحتجاز الجديدة.
 
@@ -47,7 +45,7 @@ ms.locfileid: "66012737"
 
 ## <a name="before-you-add-users-to-a-hold"></a>قبل إضافة مستخدمين إلى قائمة احتجاز
 
-- يجب أن تكون عضوا في مجموعة دور eDiscovery Manager في مدخل التوافق ومسؤول SharePoint Online لتشغيل البرنامج النصي في الخطوة 3. لمزيد من المعلومات، راجع [تعيين أذونات eDiscovery في Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
+- يجب أن تكون عضوا في مجموعة أدوار eDiscovery Manager في مدخل التوافق ومسؤول SharePoint Online لتشغيل البرنامج النصي في الخطوة 3. لمزيد من المعلومات، راجع [تعيين أذونات eDiscovery في Office 365 Security & Compliance Center](assign-ediscovery-permissions.md).
 
 - يمكن إضافة 1000 علبة بريد و100 موقع كحد أقصى إلى قائمة احتجاز مقترنة بحالة eDiscovery في مدخل التوافق. بافتراض أن كل مستخدم تريد وضعه قيد الاحتجاز لديه موقع OneDrive for Business، يمكنك إضافة 100 مستخدم كحد أقصى إلى قائمة احتجاز باستخدام البرنامج النصي في هذه المقالة.
 
@@ -55,9 +53,9 @@ ms.locfileid: "66012737"
 
 - يضيف البرنامج النصي قائمة المستخدمين إلى قائمة احتجاز جديدة مقترنة بحالة موجودة. تأكد من إنشاء الحالة التي تريد إقران قائمة الاحتجاز بها قبل تشغيل البرنامج النصي.
 
-- يدعم البرنامج النصي في هذه المقالة المصادقة الحديثة عند الاتصال ب Security & Compliance PowerShell و SharePoint Online Management Shell. يمكنك استخدام البرنامج النصي كما هو إذا كنت Microsoft 365 أو مؤسسة Microsoft 365 سحابة القطاع الحكومي. إذا كنت مؤسسة Office 365 ألمانيا أو مؤسسة Microsoft 365 سحابة القطاع الحكومي عالية أو مؤسسة Microsoft 365 DoD، فستضطر إلى تحرير البرنامج النصي لتشغيله بنجاح. على وجه التحديد، يجب عليك تحرير الخط `Connect-IPPSSession` واستخدام معلمات *ConnectionUri* *وAzureADAuthorizationEndpointUri* (والقيم المناسبة لنوع مؤسستك) للاتصال ب Security & Compliance PowerShell. لمزيد من المعلومات، راجع الأمثلة في [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- يدعم البرنامج النصي في هذه المقالة المصادقة الحديثة عند الاتصال ب Security & Compliance PowerShell وSharePoint Online Management Shell. يمكنك استخدام البرنامج النصي كما هو إذا كنت مؤسسة Microsoft 365 أو Microsoft 365 GCC. إذا كنت مؤسسة Office 365 ألمانيا أو مؤسسة Microsoft 365 GCC High أو مؤسسة Microsoft 365 DoD، فستضطر إلى تحرير البرنامج النصي لتشغيله بنجاح. على وجه التحديد، يجب عليك تحرير الخط `Connect-IPPSSession` واستخدام معلمات *ConnectionUri* *وAzureADAuthorizationEndpointUri* (والقيم المناسبة لنوع مؤسستك) للاتصال ب Security & Compliance PowerShell. لمزيد من المعلومات، راجع الأمثلة في [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
-- ينقطع البرنامج النصي تلقائيا عن Security & Compliance PowerShell و SharePoint Online Management Shell.
+- يتم قطع اتصال البرنامج النصي تلقائيا ب Security & Compliance PowerShell وSharePoint Online Management Shell.
 
 - يتضمن البرنامج النصي الحد الأدنى من معالجة الأخطاء. الغرض الأساسي منه هو وضع علبة البريد وموقع OneDrive for Business لكل مستخدم بسرعة وسهولة قيد الاحتجاز.
 
@@ -87,7 +85,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 - **بيانات اعتماد المستخدم:** سيستخدم البرنامج النصي بيانات الاعتماد للاتصال ب Security & Compliance PowerShell. كما سيستخدم بيانات الاعتماد هذه للوصول إلى SharePoint Online للحصول على عناوين URL OneDrive for Business لقائمة المستخدمين.
 
-- **اسم مجال SharePoint:** يطالبك البرنامج النصي بإدخال هذا الاسم حتى يتمكن من الاتصال <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">بمركز إدارة SharePoint</a>. كما يستخدم اسم المجال لعناوين URL OneDrive في مؤسستك. على سبيل المثال، إذا كان URL لمركز الإدارة الخاص بك وعنوان `https://contoso-admin.sharepoint.com` URL الخاص OneDrive هو `https://contoso-my.sharepoint.com`، فستدخل `contoso` عندما يطالبك البرنامج النصي باسم مجالك.
+- **اسم مجال SharePoint:** يطالبك البرنامج النصي بإدخال هذا الاسم حتى يتمكن من الاتصال <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">بمركز إدارة SharePoint</a>. كما يستخدم اسم المجال لعناوين URL ل OneDrive في مؤسستك. على سبيل المثال، إذا كان عنوان URL لمركز الإدارة الخاص بك وURL `https://contoso-admin.sharepoint.com` ل OneDrive، `https://contoso-my.sharepoint.com`فسيتم إدخاله `contoso` عندما يطالبك البرنامج النصي باسم مجالك.
 
 - **اسم الحالة:** اسم حالة موجودة. سيقوم البرنامج النصي بإنشاء قائمة احتجاز جديدة مقترنة بهذه الحالة.
 

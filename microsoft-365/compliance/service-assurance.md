@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: قم بتنزيل عمليات تدقيق الجهات الخارجية، واكتشف كيف تحافظ Microsoft على أمان بيانات العملاء، وتعرف على كيفية التوافق مع ISO وHIAA وFINRA و FedRAMP عند استخدام Office 365.
-ms.openlocfilehash: 8247eee98d9c039e05aca2b621881f56b59c2ee5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: fdd60478266ee4ef55f550aa04a62d9e1148856e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077835"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622382"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>ضمان الخدمة في مركز توافق & الأمان
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم ضمان الخدمة في مركز توافق & الأمان للوصول إلى المستندات التي تصف مجموعة متنوعة من المواضيع، بما في ذلك: 
   
@@ -43,7 +41,7 @@ ms.locfileid: "65077835"
     
 - البرنامج الفيدرالي لإدارة المخاطر والتخويل (FedRAMP)
     
-## <a name="who-can-access-office-365-service-assurance-and-how"></a>روبوت Who يمكن الوصول إلى ضمان الخدمة Office 365، وكيف؟
+## <a name="who-can-access-office-365-service-assurance-and-how"></a>من يمكنه الوصول إلى ضمان خدمة Office 365، وكيف؟
 
  يمكن **للعملاء الجدد والعملاء الذين يقيمون Microsoft خدمات الإنترنت** الوصول إلى ضمان الخدمة المضمن مع خطط Office 365 Enterprise E3 وE5 (كل من الاشتراكات التجريبية والاشتراكات المدفوعة). إذا لم يكن لديك إحدى هذه الخطط وتريد تجربة ضمان الخدمة، يمكنك [التسجيل للحصول على إصدار تجريبي من Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
@@ -58,7 +56,7 @@ ms.locfileid: "65077835"
     
     ![إظهار صفحة إعدادات مركز الحماية.](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
-2. في صفحة **الإعدادات**، حدد السهم لأسفل إلى جانب **المنطقة** وتحقق من المناطق المناسبة لمؤسستك. 
+2. في **الصفحة "إعدادات"** ، حدد السهم لأسفل إلى جانب **"المنطقة** " وتحقق من المناطق المناسبة لمؤسستك. 
     
 3. حدد السهم لأسفل إلى جانب **الصناعة** وتحقق من الصناعات المناسبة لمؤسستك. 
     
@@ -97,7 +95,7 @@ ms.locfileid: "65077835"
 ## <a name="get-help-with-service-assurance"></a>الحصول على المساعدة في ضمان الخدمة
 <a name="addother"> </a>
 
-[الاتصال بدعم منتجات الأعمال - تعليمات المسؤول](../admin/get-help-support.md).
+[الاتصال بدعم منتجات الأعمال - مسؤول التعليمات](../admin/get-help-support.md).
   
 ## <a name="frequently-asked-questions"></a>الأسئلة المتداولة
 <a name="addother"> </a>

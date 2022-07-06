@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: يمكنك إصلاح خطأ معالجة في مستند في مجموعة مراجعة في eDiscovery (Premium) دون الحاجة إلى اتباع عملية معالجة الخطأ المجمع.
-ms.openlocfilehash: e8ace66eefadf5ce959bc01150ba21e232429131
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cb1b7248ff02a4aafce529b764efdf7408a05386
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092338"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622162"
 ---
 # <a name="single-item-error-remediation-in-ediscovery-premium"></a>معالجة خطأ عنصر واحد في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تمنح معالجة الخطأ مستخدمي Microsoft Purview eDiscovery (Premium) القدرة على تصحيح مشكلات البيانات التي تمنع eDiscovery (Premium) من معالجة المحتوى بشكل صحيح. على سبيل المثال، لا يمكن معالجة الملفات المحمية بكلمة مرور لأن هذه الملفات مؤمنة أو مشفرة. في السابق، كان بإمكانك معالجة الأخطاء بشكل مجمع فقط باستخدام [سير العمل هذا](error-remediation-when-processing-data-in-advanced-ediscovery.md). ولكن في بعض الأحيان، لا يكون من المنطقي معالجة الأخطاء في ملفات متعددة عندما تكون غير متأكد مما إذا كان أي من هذه الملفات يستجيب للحالة التي تحقق فيها. قد لا يكون من المنطقي أيضا معالجة الأخطاء قبل أن يكون لديك فرصة لمراجعة بيانات تعريف الملف (مثل موقع الملف أو من لديه حق الوصول) لمساعدتك على اتخاذ قرارات مقدما حول الاستجابة. ميزة جديدة تسمى *معالجة خطأ عنصر واحد* تمنح مديري eDiscovery القدرة على عرض بيانات تعريف الملفات مع خطأ معالجة، وإذا لزم الأمر، قم بمعالجة الخطأ مباشرة في مجموعة المراجعة. تناقش المقالة كيفية تحديد الملفات وتجاهلها ومعالجتها مع معالجة الأخطاء في مجموعة مراجعة.
 
@@ -55,7 +53,7 @@ ms.locfileid: "65092338"
 
 لمعالجة مستند واحد، اتبع الخطوات التالية:
 
-1. انقر فوق **DownloadDownload**  >  الأصلي لتنزيل نسخة من الملف إلى كمبيوتر محلي.
+1. انقر فوق **"تنزيل** > **التنزيل الأصلي** " لتنزيل نسخة من الملف إلى كمبيوتر محلي.
 
    ![قم بتنزيل المستند مع خطأ المعالجة.](../media/SIERimage5.png)
 

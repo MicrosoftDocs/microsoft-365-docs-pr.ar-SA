@@ -17,16 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على كيفية تنفيذ عناصر التحكم واختبارها من خلال العمل مع إجراءات التحسين في Microsoft Purview Compliance Manager. تعيين تقارير العمل وتخزين الوثائق وتصديرها.
-ms.openlocfilehash: ed52b6e9b3f6c817430383beebcb57f9c4dcf613
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: ca6855c544451661f9a8bd3cc9f59a111eeed360
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574267"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625490"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>العمل مع إجراءات التحسين في Compliance Manager
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **في هذه المقالة:** تشرح هذه المقالة كيفية **إدارة سير عمل التوافق** مع إجراءات التحسين. تعرف على كيفية **تعيين إجراءات التحسين** للتنفيذ والاختبار **وإدارة التحديثات** وتصدير **التقارير**.
 

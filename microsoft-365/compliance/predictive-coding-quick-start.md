@@ -14,16 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: تعرف على كيفية البدء باستخدام وحدة الترميز التنبؤية في eDiscovery (Premium). ترشدك هذه المقالة خلال العملية الشاملة لاستخدام الترميز التنبؤي لتحديد المحتوى في مجموعة المراجعة الأكثر صلة بالتحقيق الخاص بك.
-ms.openlocfilehash: ac8e31540fbe817b83b5fd0bdae2fadea7040b1a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ddf1762545765424891108f50cceea17999f0920
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100776"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625072"
 ---
-# <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>بداية سريعة: الترميز التنبؤي في eDiscovery (Premium) (معاينة)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="quick-start-predictive-coding-in-ediscovery-premium-preview"></a>بداية سريعة: ترميز تنبؤي في eDiscovery (Premium) (معاينة)
 
 تقدم هذه المقالة بداية سريعة لاستخدام الترميز التنبؤي في Microsoft Purview eDiscovery (Premium). تستخدم وحدة الترميز التنبؤية قدرات ذكية للتعلم الآلي لمساعدتك في اكتشاف كميات كبيرة من محتوى الحالة غير ذي صلة بالتحقيق الخاص بك. يتم تحقيق ذلك من خلال إنشاء نماذج الترميز التنبؤية الخاصة بك وتدريبها التي تساعدك على تحديد أولويات العناصر الأكثر صلة للمراجعة.
 
@@ -39,9 +37,9 @@ ms.locfileid: "65100776"
 
 الخطوة الأولى هي إنشاء نموذج ترميز تنبؤي جديد في مجموعة المراجعة
 
-1. في مدخل الامتثال ل Microsoft Purview، افتح حالة eDiscovery (Premium) ثم حدد علامة تبويب **مجموعات المراجعة**.
+1. في مدخل التوافق في Microsoft Purview، افتح حالة eDiscovery (Premium) ثم حدد علامة تبويب **مجموعات المراجعة**.
 
-2. افتح مجموعة مراجعة ثم انقر فوق الترميز التنبؤي **AnalyticsManage** >  **(معاينة).**
+2. افتح مجموعة مراجعة ثم انقر فوق **الترميز التنبؤي لإدارة** **التحليلات** >  (معاينة).
 
    ![انقر فوق القائمة المنسدلة "تحليل" في مجموعة المراجعة للانتقال إلى صفحة الترميز التنبؤي.](..\media\ManagePredictiveCoding.png)
 
@@ -59,7 +57,7 @@ ms.locfileid: "65100776"
 
 بعد إنشاء النموذج، الخطوة التالية هي إكمال جولة التدريب الأولى عن طريق تسمية العناصر على أنها ذات صلة أو غير ذات صلة.
 
-1. افتح مجموعة المراجعة ثم انقر فوق الترميز التنبؤي **AnalyticsManage** >  **(معاينة).**
+1. افتح مجموعة المراجعة ثم انقر فوق **الترميز****التنبؤي لإدارة** التحليلات  >  (معاينة).
 
 2. في صفحة **نماذج الترميز التنبؤي (معاينة)،** حدد النموذج الذي تريد تدريبه.
 

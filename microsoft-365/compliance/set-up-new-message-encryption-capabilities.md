@@ -16,64 +16,62 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: تعرف على Microsoft Purview Message Encryption الذي يتيح اتصالا محميا بالبريد الإلكتروني مع أشخاص داخل مؤسستك وخارجها.
+description: تعرف على تشفير الرسائل في Microsoft Purview التي تمكن الاتصال بالبريد الإلكتروني المحمي مع أشخاص داخل مؤسستك وخارجها.
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 48a5ca3bad7c0fb0d7120cb4e35bc5f24902a46e
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 828588491c3efbc696994f6073ca4ce849a64be5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043329"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622118"
 ---
 # <a name="set-up-message-encryption"></a>إعداد تشفير الرسائل
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+يسمح تشفير الرسائل في Microsoft Purview للمؤسسات بمشاركة البريد الإلكتروني المحمي مع أي شخص على أي جهاز. يمكن للمستخدمين تبادل الرسائل المحمية مع مؤسسات Microsoft 365 الأخرى، بالإضافة إلى جهات خارجية باستخدام Outlook.com وGmail وخدمات البريد الإلكتروني الأخرى.
 
-يسمح Microsoft Purview Message Encryption للمؤسسات بمشاركة البريد الإلكتروني المحمي مع أي شخص على أي جهاز. يمكن للمستخدمين تبادل الرسائل المحمية مع مؤسسات Microsoft 365 أخرى، بالإضافة إلى جهات خارجية باستخدام Outlook.com وGmail وخدمات البريد الإلكتروني الأخرى.
+اتبع الخطوات أدناه للتأكد من توفر تشفير الرسائل في Microsoft Purview في مؤسستك.
 
-اتبع الخطوات أدناه للتأكد من توفر تشفير رسائل "Microsoft Purview" في مؤسستك.
+## <a name="verify-that-azure-rights-management-is-active"></a>التحقق من أن إدارة حقوق Azure نشطة
 
-## <a name="verify-that-azure-rights-management-is-active"></a>التحقق من أن Azure Rights Management نشط
+يستفيد تشفير الرسائل في Microsoft Purview من ميزات الحماية في [خدمات إدارة حقوق Azure (Azure RMS)،](/azure/information-protection/what-is-information-protection) التقنية المستخدمة من قبل [Azure حماية البيانات](/azure/information-protection/what-is-azure-rms) لحماية رسائل البريد الإلكتروني والمستندات عبر عناصر التحكم في التشفير والوصول.
 
-يستفيد تشفير الرسائل من Microsoft Purview من ميزات الحماية في [Azure Rights Management Services (Azure RMS)،](/azure/information-protection/what-is-information-protection) التقنية المستخدمة من قبل [Azure حماية البيانات](/azure/information-protection/what-is-azure-rms) لحماية رسائل البريد الإلكتروني والمستندات عبر عناصر التحكم في التشفير والوصول.
+الشرط الأساسي الوحيد لاستخدام تشفير الرسائل في Microsoft Purview هو أنه يجب تنشيط [Azure Rights Management](/azure/information-protection/what-is-azure-rms) في مستأجر مؤسستك. إذا كان الأمر كذلك، يقوم Microsoft 365 بتنشيط تشفير الرسائل تلقائيا ولا تحتاج إلى القيام بأي شيء.
 
-الشرط الأساسي الوحيد لاستخدام تشفير رسائل Microsoft Purview هو أنه يجب تنشيط [Azure Rights Management](/azure/information-protection/what-is-azure-rms) في مستأجر مؤسستك. إذا كان الأمر كذلك، Microsoft 365 تنشيط تشفير الرسالة تلقائيا ولا تحتاج إلى القيام بأي شيء.
-
-يتم أيضا تنشيط Azure RMS تلقائيا لمعظم الخطط المؤهلة، لذلك ربما لا تضطر إلى القيام بأي شيء في هذا الصدد أيضا. راجع [تنشيط Rights Management Azure](/azure/information-protection/activate-service) لمزيد من المعلومات.
+يتم أيضا تنشيط Azure RMS تلقائيا لمعظم الخطط المؤهلة، لذلك ربما لا تضطر إلى القيام بأي شيء في هذا الصدد أيضا. راجع [تنشيط Azure Rights Management](/azure/information-protection/activate-service) للحصول على مزيد من المعلومات.
 
 > [!IMPORTANT]
-> إذا كنت تستخدم خدمة Rights Management Active Directory (AD RMS) مع Exchange Online، فستحتاج إلى [الترحيل إلى Azure حماية البيانات](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) قبل أن تتمكن من استخدام تشفير الرسالة. تشفير رسائل Microsoft Purview غير متوافق مع AD RMS.
+> إذا كنت تستخدم خدمة Active Directory Rights Management (AD RMS) مع Exchange Online، فستحتاج إلى [الترحيل إلى Azure حماية البيانات](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) قبل أن تتمكن من استخدام تشفير الرسائل. تشفير الرسائل في Microsoft Purview غير متوافق مع AD RMS.
 
 لمزيد من المعلومات، اطلع على:
 
 - [الأسئلة المتداولة حول تشفير الرسائل](ome-faq.yml) للتحقق مما إذا كانت خطة الاشتراك تتضمن Azure حماية البيانات (والتي تتضمن وظيفة Azure RMS).
 - [حماية البيانات Azure](https://azure.microsoft.com/services/information-protection/) للحصول على معلومات حول شراء اشتراك مؤهل.
 
-### <a name="manually-activating-azure-rights-management"></a>تنشيط Azure Rights Management يدويا
+### <a name="manually-activating-azure-rights-management"></a>تنشيط إدارة حقوق Azure يدويا
 
 إذا قمت بتعطيل Azure RMS، أو إذا لم يتم تنشيطه تلقائيا لأي سبب من الأسباب، يمكنك تنشيطه يدويا في:
 
-- **مركز مسؤولي Microsoft 365**: راجع [كيفية تنشيط azure Rights Management من مركز الإدارة](/azure/information-protection/activate-office365) للحصول على الإرشادات.
-- **مدخل Azure**: راجع [كيفية تنشيط azure Rights Management من مدخل Azure](/azure/information-protection/activate-azure) للحصول على الإرشادات.
+- **مركز مسؤولي Microsoft 365**: راجع [كيفية تنشيط Azure Rights Management من مركز الإدارة](/azure/information-protection/activate-office365) للحصول على الإرشادات.
+- **مدخل Azure**: راجع [كيفية تنشيط Azure Rights Management من مدخل Azure](/azure/information-protection/activate-azure) للحصول على الإرشادات.
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>تكوين إدارة مفتاح مستأجر Azure حماية البيانات
 
 هذه خطوة اختيارية. السماح ل Microsoft بإدارة المفتاح الجذر ل Azure حماية البيانات هو الإعداد الافتراضي وأفضل الممارسات الموصى بها لمعظم المؤسسات. إذا كانت هذه هي الحالة، فلن تحتاج إلى القيام بأي شيء.
 
-هناك العديد من الأسباب، على سبيل المثال متطلبات التوافق، التي قد تتطلب منك إنشاء المفتاح الجذر الخاص بك وإدارته (المعروف أيضا باسم إحضار المفتاح الخاص بك (BYOK)). إذا كان الأمر كذلك، نوصي بإكمال الخطوات المطلوبة قبل إعداد تشفير الرسائل من Microsoft Purview. راجع [تخطيط وتنفيذ مفتاح مستأجر Azure حماية البيانات](/information-protection/plan-design/plan-implement-tenant-key) للحصول على المزيد.
+هناك العديد من الأسباب، على سبيل المثال متطلبات التوافق، التي قد تتطلب منك إنشاء المفتاح الجذر الخاص بك وإدارته (المعروف أيضا باسم إحضار المفتاح الخاص بك (BYOK)). إذا كان الأمر كذلك، نوصي بإكمال الخطوات المطلوبة قبل إعداد تشفير الرسائل في Microsoft Purview. راجع [تخطيط وتنفيذ مفتاح مستأجر Azure حماية البيانات](/information-protection/plan-design/plan-implement-tenant-key) للحصول على المزيد.
 
-## <a name="verify-microsoft-purview-message-encryption-configuration-in-exchange-online-powershell"></a>التحقق من تكوين تشفير الرسائل ل Microsoft Purview في Exchange Online PowerShell
+## <a name="verify-microsoft-purview-message-encryption-configuration-in-exchange-online-powershell"></a>التحقق من تكوين تشفير الرسائل في Microsoft Purview في Exchange Online PowerShell
 
-يمكنك التحقق من تكوين مستأجر Microsoft 365 بشكل صحيح لاستخدام تشفير رسائل Microsoft Purview في [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
+يمكنك التحقق من تكوين مستأجر Microsoft 365 بشكل صحيح لاستخدام تشفير الرسائل في Microsoft Purview في [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
 
-1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) باستخدام حساب بأذونات المسؤول العام في مستأجر Microsoft 365.
+1. [اتصل Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) باستخدام حساب مع أذونات المسؤول العام في مستأجر Microsoft 365.
 
 2. تشغيل Get-IRMConfiguration cmdlet.
 
-     يجب أن تشاهد قيمة $True للمعلمة AzureRMSLicensingEnabled، والتي تشير إلى تكوين تشفير رسالة "Microsoft Purview" في المستأجر الخاص بك. إذا لم يكن كذلك، فاستخدم Set-IRMConfiguration لتعيين قيمة AzureRMSLicensingEnabled إلى $True لتمكين تشفير رسائل Microsoft Purview.
+     يجب أن تشاهد قيمة $True للمعلمة AzureRMSLicensingEnabled، والتي تشير إلى تكوين تشفير الرسائل في Microsoft Purview في المستأجر الخاص بك. إذا لم يكن كذلك، فاستخدم Set-IRMConfiguration لتعيين قيمة AzureRMSLicensingEnabled إلى $True لتمكين تشفير الرسائل في Microsoft Purview.
 
 3. تشغيل Test-IRMConfiguration cmdlet باستخدام بناء الجملة التالي:
 
@@ -117,15 +115,15 @@ ms.locfileid: "66043329"
    Set-IRMConfiguration -LicensingLocation $LicenseUri
    Set-IRMConfiguration -InternalLicensingEnabled $true
    ```
-5. قم بتشغيل Remove-PSSession cmdlet لقطع الاتصال بخدمة Rights Management.
+5. قم بتشغيل Remove-PSSession cmdlet لقطع الاتصال بخدمة إدارة الحقوق.
 
      ```powershell
      Remove-PSSession $session
      ```
 
-## <a name="next-steps-define-mail-flow-rules-to-use-microsoft-purview-message-encryption"></a>الخطوات التالية: تحديد قواعد تدفق البريد لاستخدام تشفير رسائل Microsoft Purview
+## <a name="next-steps-define-mail-flow-rules-to-use-microsoft-purview-message-encryption"></a>الخطوات التالية: تعريف قواعد تدفق البريد لاستخدام تشفير الرسائل في Microsoft Purview
 
-إذا كانت هناك قواعد تدفق بريد تم تكوينها مسبقا لتشفير البريد الإلكتروني في مؤسستك، فستحتاج إلى تحديث القواعد الموجودة لاستخدام تشفير رسائل Microsoft Purview. بالنسبة إلى عمليات النشر الجديدة، تحتاج إلى إنشاء قواعد تدفق بريد جديدة.
+إذا كانت هناك قواعد تدفق بريد تم تكوينها مسبقا لتشفير البريد الإلكتروني في مؤسستك، فستحتاج إلى تحديث القواعد الموجودة لاستخدام تشفير الرسائل في Microsoft Purview. بالنسبة إلى عمليات النشر الجديدة، تحتاج إلى إنشاء قواعد تدفق بريد جديدة.
 
 > [!IMPORTANT]
 > إذا لم تقم بتحديث قواعد تدفق البريد الموجودة، فسيستمر المستخدمون في تلقي البريد المشفر الذي يستخدم تنسيق مرفق HTML السابق، بدلا من التجربة السلسة الجديدة.
@@ -134,10 +132,10 @@ ms.locfileid: "66043329"
 
 للحصول على خطوات حول إنشاء تشفير رسائل قواعد تدفق البريد، راجع [تعريف قواعد تدفق البريد لتشفير رسائل البريد الإلكتروني في Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
-لتحديث القواعد الموجودة لاستخدام تشفير رسائل Microsoft Purview:
+لتحديث القواعد الموجودة لاستخدام تشفير الرسائل في Microsoft Purview:
 
-1. في مركز مسؤولي Microsoft 365، انتقل إلى **مراكز** >  الإدارة <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
-2. في مركز إدارة Exchange، انتقل إلى **"قواعد تدفق البريد" >**.
+1. في مركز مسؤولي Microsoft 365، انتقل إلى **مسؤول مراكز** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+2. في مركز إدارة Exchange، انتقل إلى **تدفق البريد > Rules**.
 3. لكل قاعدة، قم **بما يلي**:
     - حدد **تعديل أمان الرسالة**.
     - حدد **تطبيق تشفير الرسائل Office 365 وحماية الحقوق**.

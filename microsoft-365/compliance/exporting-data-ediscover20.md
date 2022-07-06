@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية تصدير المحتوى أو تنزيله من مجموعة مراجعة للعروض التقديمية أو المراجعات الخارجية في حالة eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d4ee1627587196527987afec5a675b9440ea806e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2650e38509baa11cbd93e014f13d15e734ee02c3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096931"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624124"
 ---
 # <a name="export-case-data-in-ediscovery-premium"></a>تصدير بيانات الحالة في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 هناك ثلاث طرق لتصدير البيانات من مجموعة مراجعة:
 

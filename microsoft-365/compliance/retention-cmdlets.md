@@ -15,18 +15,16 @@ ms.collection:
 - SPO_Content
 - m365initiative-compliance
 description: تحديد أوامر PowerShell cmdlets للاستبقاء التي تدعم التكوين على نطاق واسع، أو التنفيذ التلقائي، أو قد تكون مطلوبة لسيناريوهات التكوين المتقدمة.
-ms.openlocfilehash: 5e31fb7b92dbc1dc83af8f7047041a7d0b4b23b2
-ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
+ms.openlocfilehash: 23dda0c7e5cdc2ce52c2dfca8e5ab575d5653b99
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66612140"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625974"
 ---
 # <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>PowerShell cmdlets لنهج الاستبقاء وتسميات الاستبقاء
 
 >*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 استخدم الأقسام التالية لتحديد أوامر PowerShell cmdlets الرئيسية المتوفرة لنهج الاستبقاء وتسميات الاستبقاء التي قد تحتاجها للتكوين على نطاق واسع أو البرامج النصية التلقائية أو سيناريوهات التكوين المتقدمة. للحصول على القائمة الكاملة من أوامر cmdlets، راجع [قائمة الاحتفاظ بالنهج والتوافق](/powershell/module/exchange#policy-and-compliance-retention) من وثائق PowerShell.
 

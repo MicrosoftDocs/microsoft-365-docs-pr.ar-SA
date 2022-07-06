@@ -16,18 +16,16 @@ search.appverid:
 - MET150
 description: تكوين تسميات الحساسية للتشفير الذي يحمي بياناتك عن طريق تقييد الوصول والاستخدام.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23d59cada628b37942d7c97f8fb517eaf6f1e66a
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: 2f41fbec0018008d2a59ad8960a7a0cd89f1a556
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556867"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625380"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>تقييد الوصول إلى المحتوى باستخدام تسميات الحساسية لتطبيق التشفير
 
 >*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند إنشاء وصف حساسية، يمكنك تقييد الوصول إلى المحتوى الذي سيتم تطبيق التسمية عليه. على سبيل المثال، باستخدام إعدادات التشفير لتسمية الحساسية، يمكنك حماية المحتوى بحيث:
 

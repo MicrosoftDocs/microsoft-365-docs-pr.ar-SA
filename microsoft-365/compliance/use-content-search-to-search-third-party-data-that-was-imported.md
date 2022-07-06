@@ -15,20 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: استخدم أداة eDiscovery للبحث عن العناصر المستوردة إلى علب البريد في Microsoft 365 من مصدر بيانات تابع لجهة خارجية عن طريق إنشاء استعلامات.
+description: استخدم أداة البحث عن المحتوى eDiscovery للبحث عن العناصر المستوردة إلى علب البريد في Microsoft 365 من مصدر بيانات تابع لجهة خارجية عن طريق إنشاء استعلامات.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 73967c8897ee0fd5143b8e15dfe8874fc0c85755
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6d4475987cddb04e0ad49394eda14d638774c22e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095389"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624830"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>استخدام البحث عن المحتوى للبحث في بيانات الجهات الخارجية التي تم استيرادها بواسطة موصل شريك مخصص
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يمكنك استخدام [أداة البحث في المحتوى eDiscovery](content-search.md) في مدخل توافق Microsoft Purview للبحث عن العناصر المستوردة إلى علب البريد في Microsoft 365 من مصدر بيانات تابع لجهة خارجية. يمكنك إنشاء استعلام للبحث في كافة عناصر بيانات الجهات الخارجية المستوردة أو يمكنك إنشاء استعلام للبحث في عناصر بيانات خاصة بجهة خارجية. كما يمكنك أيضا إنشاء نهج استبقاء يستند إلى استعلام أو قائمة احتجاز eDiscovery مستندة إلى استعلام للاحتفاظ ببيانات الجهات الخارجية.
+يمكنك استخدام [أداة eDiscovery للبحث في المحتوى](content-search.md) في مدخل التوافق في Microsoft Purview للبحث عن العناصر المستوردة إلى علب البريد في Microsoft 365 من مصدر بيانات تابع لجهة خارجية. يمكنك إنشاء استعلام للبحث في كافة عناصر بيانات الجهات الخارجية المستوردة أو يمكنك إنشاء استعلام للبحث في عناصر بيانات خاصة بجهة خارجية. كما يمكنك أيضا إنشاء نهج استبقاء يستند إلى استعلام أو قائمة احتجاز eDiscovery مستندة إلى استعلام للاحتفاظ ببيانات الجهات الخارجية.
   
 لمزيد من المعلومات حول العمل مع شريك لاستيراد بيانات الجهات الخارجية وقائمة بأنواع بيانات الجهات الخارجية التي يمكنك استيرادها إلى Microsoft 365، راجع ["العمل مع شريك" لأرشفة بيانات الجهات الخارجية في Office 365](work-with-partner-to-archive-third-party-data.md).
 
@@ -71,7 +69,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |تفاحة فافة  <br/> | `ipm.externaldata.AppleJuice*` <br/> |
 |اريس  <br/> | `ipm.externaldata.Ares*` <br/> |
 |Axs Encrypted  <br/> | `ipm.externaldata.AxsEncrypted*` <br/> |
-|Exchange Axs  <br/> | `ipm.externaldata.AxsExchange*` <br/> |
+|Axs Exchange  <br/> | `ipm.externaldata.AxsExchange*` <br/> |
 |الأرشيف المحلي ل Axs  <br/> | `ipm.externaldata.AxsLocalArchive*` <br/> |
 |عنصر نائب ل Axs  <br/> | `ipm.externaldata.AxsPlaceHolder*` <br/> |
 |Axs Signed  <br/> | `ipm.externaldata.AxsSigned*` <br/> |
@@ -90,7 +88,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |خادم حالة حضور المراسلة الفورية &amp; في Cisco  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud ل Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
-|الاتصال المباشر  <br/> | `ipm.externaldata.DirectConnect*` <br/> |
+|اتصال مباشر  <br/> | `ipm.externaldata.DirectConnect*` <br/> |
 |ف يسبوك  <br/> | `ipm.externaldata.Facebook*` <br/> |
 |FastTrack  <br/> | `ipm.externaldata.FastTrack*` <br/> |
 |FXConnect  <br/> | `ipm.externaldata.FXConnect.chat` <br/> |
@@ -122,7 +120,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |ماي سبيس  <br/> | `ipm.externaldata.MySpace*` <br/> |
 |الشبكات المناظرة على شبكة الإنترنت  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
 |OpenNap  <br/> | `ipm.externaldata.OpenNap*` <br/> |
-|Pinterest  <br/> | `ipm.externaldata.Pinterest*` <br/> |
+|بينتيريست  <br/> | `ipm.externaldata.Pinterest*` <br/> |
 |Pivot  <br/> | `ipm.externaldata.Pivot*` <br/> |
 |QQ  <br/> | `ipm.externaldata.QQ*` <br/> |
 |Microsoft SharePoint  <br/> | `ipm.externaldata.SharePoint*` <br/> |

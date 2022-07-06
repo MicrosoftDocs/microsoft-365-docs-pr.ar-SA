@@ -1,5 +1,5 @@
 ---
-title: إلحاق أجهزة macOS وإلحاقها بحلول التوافق باستخدام PRO JAMF لعملاء Microsoft Defender لنقطة النهاية
+title: إلحاق أجهزة macOS وإلغاء إلحاقها بحلول التوافق باستخدام JAMF Pro ل Microsoft Defender لعملاء نقطة النهاية
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,19 +13,17 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: تعرف على كيفية إلحاق أجهزة macOS وإلحاقها بحلول Microsoft Purview باستخدام PRO JAMF لعملاء Microsoft Defender لنقطة النهاية
-ms.openlocfilehash: ba2ff7723e54451ace46823fafb5323dcb35069e
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+description: تعرف على كيفية إلحاق أجهزة macOS وإلحاقها بحلول Microsoft Purview باستخدام JAMF Pro لعملاء Microsoft Defender لنقطة النهاية
+ms.openlocfilehash: 97ab1dbccc28cd1f9d14635c2fa351d0295202c1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953372"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622910"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers"></a>إلحاق أجهزة macOS وإلحاقها بحلول التوافق باستخدام PRO JAMF لعملاء Microsoft Defender لنقطة النهاية
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers"></a>إلحاق أجهزة macOS وإلغاء إلحاقها بحلول التوافق باستخدام JAMF Pro ل Microsoft Defender لعملاء نقطة النهاية
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يمكنك استخدام PRO JAMF لإلحاق أجهزة macOS في حلول Microsoft Purview.
+يمكنك استخدام JAMF Pro لإلحاق أجهزة macOS في حلول Microsoft Purview.
 
 > [!IMPORTANT]
 > استخدم هذا الإجراء ***إذا قمت*** بنشر Microsoft Defender لنقطة النهاية (MDE) على أجهزة macOS
@@ -39,7 +37,7 @@ ms.locfileid: "64953372"
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-- تأكد من [إدارة أجهزة macOS من خلال JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) ومقترنة بهوية (انضم Azure AD إلى UPN) من خلال JAMF الاتصال أو Intune.
+- تأكد من [إدارة أجهزة macOS من خلال JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) ومقترنة بهوية (Azure AD انضم إلى UPN) من خلال JAMF Connect أو Intune.
 - تثبيت مستعرض v95+ Edge على أجهزة macOS
 
 ## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>إلحاق الأجهزة في حلول Microsoft Purview باستخدام JAMF Pro
@@ -82,19 +80,19 @@ ms.locfileid: "64953372"
 
 1. تحديث ملف تعريف الوصول إلى القرص الكامل الموجود مع ملف **fulldisk.mobileconfig** .
 
-1. Upload ملف **fulldisk.mobileconfig** إلى JAMF. راجع [نشر ملفات تعريف التكوين المخصصة باستخدام PRO JAMF](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
+1. تحميل ملف **fulldisk.mobileconfig** إلى JAMF. راجع [نشر ملفات تعريف التكوين المخصصة باستخدام JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
 ### <a name="grant-accessibility-access-to-dlp"></a>منح إمكانية وصول ذوي الاحتياجات الخاصة إلى DLP
 
 1. استخدم ملف accessibility.mobileconfig الذي قمت بتنزيله مسبقا.
 
-1. Upload إلى JAMF كما هو موضح في [نشر ملفات تعريف التكوين المخصصة باستخدام Pro Jamf](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+1. تحميل إلى JAMF كما هو موضح في [نشر ملفات تعريف التكوين المخصصة باستخدام Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### <a name="check-the-macos-device"></a>التحقق من جهاز macOS 
 
 1. أعد تشغيل جهاز macOS.
 
-1. افتح **System** **PreferencesProfiles** > .
+1. افتح **ملفات تعريف** **تفضيلات** >  النظام.
 
 1. يجب أن ترى:
     - إمكانية الوصول

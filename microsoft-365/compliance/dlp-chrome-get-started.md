@@ -1,5 +1,5 @@
 ---
-title: بدء العمل باستخدام ملحق التوافق من Microsoft
+title: بدء استخدام ملحق Microsoft Purview
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,262 +19,203 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: التحضير لملحق التوافق من Microsoft ونشره.
-ms.openlocfilehash: 1c4c0a79f65f8a58ed30a9170256ef93b2bb4cef
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: التحضير ل Microsoft Purview Extension ونشره.
+ms.openlocfilehash: 9593b75ea9bb858e9cd770ec4f40f4e6d7667a2e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681799"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622932"
 ---
-# <a name="get-started-with-microsoft-compliance-extension"></a>بدء العمل باستخدام ملحق التوافق من Microsoft
+# <a name="get-started-with-microsoft-purview-extension"></a>بدء استخدام ملحق Microsoft Purview
 
-استخدم هذه الإجراءات ل طرح ملحق التوافق من Microsoft.
+استخدم هذه الإجراءات لطرح ملحق Microsoft Purview.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-لاستخدام ملحق التوافق من Microsoft، يجب أن يكون الجهاز ملحقا في نقطة النهاية DLP. راجع هذه المقالات إذا كنت جديدا في DLP أو نقطة النهاية DLP
+لاستخدام ملحق Microsoft Purview، يجب إلحاق الجهاز ب DLP لنقطة النهاية. راجع هذه المقالات إذا كنت جديدا على DLP أو DLP لنقطة النهاية
 
-- [التعرف على ملحق التوافق من Microsoft](dlp-chrome-learn-about.md)
-- [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md)
+- [تعرف على ملحق Microsoft Purview](dlp-chrome-learn-about.md)
+- [تعرف على تفادي فقدان البيانات في Microsoft Purview](dlp-learn-about-dlp.md)
 - [إنشاء نهج DLP واختباره وضبطه](create-test-tune-dlp-policy.md)
 - [إنشاء نهج DLP من قالب](create-a-dlp-policy-from-a-template.md)
-- [التعرف على منع فقدان البيانات في نقطة النهاية](endpoint-dlp-learn-about.md)
-- [بدء استخدام منع فقدان بيانات نقطة النهاية](endpoint-dlp-getting-started.md)
-- [أدوات وأساليب التكهين للأجهزة Windows 10 الأجهزة](device-onboarding-overview.md)
-- [تكوين إعدادات اتصال الإنترنت ووكيل الجهاز لحماية المعلومات](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
-- [استخدام منع فقدان البيانات في نقطة النهاية](endpoint-dlp-using.md)
+- [التعرف على منع فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md)
+- [للحصول على متطلبات إضافية لنشر Endpoint DLP، راجع البدء في تفادي فقدان البيانات على الأجهزة.](endpoint-dlp-getting-started.md)
+- [أدوات وأساليب الإلحاق للأجهزة Windows 10](device-onboarding-overview.md)
+- [تكوين إعدادات اتصال الإنترنت ووكيل الجهاز حماية البيانات](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
+- [استخدام تفادي فقدان البيانات في نقطة النهاية](endpoint-dlp-using.md)
 
 ### <a name="skusubscriptions-licensing"></a>ترخيص SKU/الاشتراكات
 
-قبل البدء، يجب عليك [تأكيد اشتراكك](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) Microsoft 365 الوظائف الإضافية وأي من الوظائف الإضافية. للوصول إلى وظائف DLP لنقطة النهاية واستخدامها، يجب أن يكون لديك أحد هذه الاشتراكات أو الوظائف الإضافية.
+قبل البدء، يجب عليك تأكيد [اشتراكك في Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) وأي وظائف إضافية. للوصول إلى وظيفة DLP لنقطة النهاية واستخدامها، يجب أن يكون لديك أحد هذه الاشتراكات أو الوظائف الإضافية.
 
 - Microsoft 365 E5
 - Microsoft 365 A5 (EDU)
-- Microsoft 365 E5 التوافق
-- Microsoft 365 A5 التوافق
+- التوافق Microsoft 365 E5
+- التوافق Microsoft 365 A5
 - Microsoft 365 E5 حماية المعلومات والحوكمة
-- Microsoft 365 A5 حماية المعلومات والحوكمة
+- حماية المعلومات والحوكمة Microsoft 365 A5
 
-للحصول على إرشادات الترخيص التفصيلية، [راجع Microsoft 365 إرشادات الترخيص لتوافق & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+للحصول على إرشادات ترخيص مفصلة، راجع [إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
-- يجب أن تكون المؤسسة مرخصة ل Endpoint DLP
-- يجب أن تعمل أجهزتك Windows 10 x64 1809 أو أي وقت لاحق.
-- يجب أن يكون إصدار عميل مكافحة البرامج الضارة للجهاز هو 4.18.2101.9 أو إصدار أحدث. تحقق من الإصدار الحالي عن **طريق** أمن Windows التطبيق، **وحدد** الإعدادات، ثم حدد **حول**.
+- يجب أن تكون مؤسستك مرخصة ل DLP لنقطة النهاية
+- يجب أن تكون أجهزتك قيد التشغيل Windows 10 x64 الإصدار 1809 أو الإصدارات الأحدث.
+- يجب أن يكون لدى الجهاز إصدار عميل مكافحة البرامج الضارة هو 4.18.2202.x أو أحدث. تحقق من الإصدار الحالي من خلال فتح تطبيق **أمن Windows**، وحدد أيقونة **"الإعدادات"**، ثم حدد **"حول**".
 
 
 ### <a name="permissions"></a>الأذونات
 
-يمكن عرض البيانات من نقطة النهاية DLP في ["مستكشف النشاط](data-classification-activity-explorer.md)". هناك سبعة أدوار تمنح إذنا لمستكشف النشاط، يجب أن يكون الحساب الذي تستخدمه للوصول إلى البيانات عضوا في أي منها.
+يمكن عرض البيانات من DLP نقطة النهاية في [مستكشف النشاط](data-classification-activity-explorer.md). هناك سبعة أدوار تمنح الإذن لمستكشف النشاط، يجب أن يكون الحساب الذي تستخدمه للوصول إلى البيانات عضوا في أي منها.
 
-- المسؤول العام
+- مسؤول عمومي
 - مسؤول التوافق
 - مسؤول الأمان
 - مسؤول بيانات التوافق
-- القارئ العام
+- القارئ العمومي
 - قارئ الأمان
 - قارئ التقارير
 
 #### <a name="roles-and-role-groups-in-preview"></a>الأدوار ومجموعات الأدوار في المعاينة
 
-هناك أدوار ومجموعات أدوار في المعاينة يمكنك اختبارها لضبط عناصر التحكم بالوصول.
+هناك أدوار ومجموعات أدوار في المعاينة يمكنك اختبارها لضبط عناصر التحكم في الوصول.
 
-فيما يلي قائمة بأدوار حماية البيانات في Microsoft (MIP) في المعاينة. لمعرفة المزيد حولها، راجع [الأدوار في مركز & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+فيما يلي قائمة بالأدوار القابلة للتطبيق الموجودة في المعاينة. لمعرفة المزيد عنها، راجع ["الأدوار" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- مسؤول حماية المعلومات
-- محلل حماية المعلومات
-- حماية المعلوماتمحقق
-- قارئ حماية المعلومات
+- حماية البيانات مسؤول
+- محلل حماية البيانات
+- حماية البيانات المحقق
+- قارئ حماية البيانات
 
-فيما يلي قائمة مجموعات دور MIP التي تكون في المعاينة. لمعرفة المزيد حول، راجع [مجموعات الدور في مركز & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+فيما يلي قائمة بمجموعات الأدوار القابلة للتطبيق الموجودة في المعاينة. لمعرفة المزيد حول ذلك، راجع [مجموعات الأدوار في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
-- حماية المعلومات
-- مسؤولو حماية المعلومات
-- محللو حماية المعلومات
-- الباحثون عن حماية المعلومات
-- قراء حماية المعلومات
+- حماية البيانات
+- مسؤولو حماية البيانات
+- حماية البيانات المحللين
+- المحققون حماية البيانات
+- قارئات حماية البيانات
 
 ### <a name="overall-installation-workflow"></a>سير عمل التثبيت الكلي
 
-إن نشر ملحق التوافق من Microsoft عملية متعددة المراحل. يمكنك اختيار التثبيت على جهاز واحد في كل مرة، أو استخدام إدارة نقاط النهاية من Microsoft المجموعة أو نهج المجموعة للنشر على مستوى المؤسسة.
+نشر الملحق هو عملية متعددة المراحل. يمكنك اختيار التثبيت على جهاز واحد في كل مرة، أو استخدام Microsoft إدارة نقاط النهاية أو نهج المجموعة لعمليات النشر على مستوى المؤسسة.
 
-1. [تحضير أجهزتك](#prepare-your-devices).
-2. [الإعداد الأساسي المفرد للجهاز](#basic-setup-single-machine-selfhost)
-3. [النشر باستخدام إدارة نقاط النهاية من Microsoft](#deploy-using-microsoft-endpoint-manager)
+1. [قم بإعداد أجهزتك](#prepare-your-devices).
+2. [المضيف الذاتي لجهاز واحد للإعداد الأساسي](#basic-setup-single-machine-selfhost)
+3. [النشر باستخدام Microsoft إدارة نقاط النهاية](#deploy-using-microsoft-endpoint-manager)
 4. [النشر باستخدام نهج المجموعة](#deploy-using-group-policy)
 5. [اختبار الملحق](#test-the-extension)
 6. [استخدام لوحة معلومات إدارة التنبيهات لعرض تنبيهات Chrome DLP](#use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts)
-7. [عرض بيانات DLP في Chrome في مستكشف النشاط](#viewing-chrome-dlp-data-in-activity-explorer)
+7. [عرض بيانات Chrome DLP في مستكشف النشاط](#viewing-chrome-dlp-data-in-activity-explorer)
 
 ### <a name="prepare-infrastructure"></a>إعداد البنية الأساسية
 
-إذا كنت تقوم بإزالة ملحق التوافق من Microsoft إلى جميع الأجهزة التي Windows 10 مراقبتها، يجب إزالة Google Chrome من التطبيق غير المكفوف وقوائم المستعرض غير المدينة. لمزيد من المعلومات، راجع [المستعرضات غير مسموح بها](dlp-configure-endpoint-settings.md#unallowed-browsers). إذا كنت تقوم فقط بتركه في بعض الأجهزة، يمكنك ترك Chrome على المستعرض غير مسموح به أو قوائم التطبيقات غير مسموح بها. سيتجاوز ملحق التوافق ل Microsoft قيود القائمتين لأجهزة الكمبيوتر التي تم تثبيته عليها.
+إذا كنت تقوم بنشر الملحق إلى جميع أجهزة Windows 10 المراقبة، فيجب إزالة Google Chrome من التطبيق غير مسموح به وقوائم المستعرض غير مسموح بها. لمزيد من المعلومات، راجع [المستعرضات غير مسموح بها](dlp-configure-endpoint-settings.md#unallowed-browsers). إذا كنت تقوم بنشره على بعض الأجهزة فقط، يمكنك ترك Chrome على المستعرض غير مسموح به أو قوائم التطبيقات غير مسموح بها. سيتجاوز الملحق قيود كلتا القائمتين لأجهزة الكمبيوتر التي تم تثبيته فيها.
 
-### <a name="prepare-your-devices"></a>تحضير أجهزتك
+### <a name="prepare-your-devices"></a>إعداد أجهزتك
 
-1. استخدم الإجراءات في هذه المواضيع لتكهين أجهزتك:
-    1. [بدء استخدام منع فقدان بيانات نقطة النهاية](endpoint-dlp-getting-started.md)
-    1. [أجهزة Windows 10 Windows 11 الأجهزة](device-onboarding-overview.md)
-    1. [تكوين إعدادات اتصال الإنترنت ووكيل الجهاز لحماية المعلومات](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
+1. استخدم الإجراءات الواردة في هذه المواضيع لإلحاق أجهزتك:
+    1. [للحصول على متطلبات إضافية لنشر Endpoint DLP، راجع البدء في تفادي فقدان البيانات على الأجهزة.](endpoint-dlp-getting-started.md)
+    1. [إلحاق الأجهزة Windows 10 وأجهزة Windows 11](device-onboarding-overview.md)
+    1. [تكوين إعدادات اتصال الإنترنت ووكيل الجهاز حماية البيانات](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 
-### <a name="basic-setup-single-machine-selfhost"></a>الإعداد الأساسي المفرد للجهاز
+### <a name="basic-setup-single-machine-selfhost"></a>المضيف الذاتي لجهاز واحد للإعداد الأساسي
 
-هذا هو الأسلوب المستحسن.
+هذا هو الأسلوب الموصى به.
 
-1. سجل الدخول إلى الكمبيوتر Windows 10 الذي تريد تثبيت ملحق التوافق ل Microsoft عليه، ثم قم بتشغيل البرنامج النصي PowerShell هذا كمسؤول.
+1. انتقل إلى [ملحق Microsoft Purview - Chrome Web Store (google.com).](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco)
 
-   ```powershell
-   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ```
+2. قم بتثبيت الملحق باستخدام الإرشادات الموجودة على صفحة Chrome Web Store.
 
-2. انتقل إلى [ملحق التوافق من Microsoft - سوق Chrome الإلكتروني (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco).
+### <a name="deploy-using-microsoft-endpoint-manager"></a>النشر باستخدام Microsoft إدارة نقاط النهاية
 
-3. ثبت الملحق باستخدام الإرشادات الموجودة على سوق Chrome الإلكتروني.
+استخدم أسلوب الإعداد هذا لعمليات النشر على مستوى المؤسسة.
 
-### <a name="deploy-using-microsoft-endpoint-manager"></a>النشر باستخدام إدارة نقاط النهاية من Microsoft
+#### <a name="microsoft-endpoint-manager-force-install-steps"></a>Microsoft إدارة نقاط النهاية فرض خطوات التثبيت
 
-استخدم أسلوب الإعداد هذا للنشر على مستوى المؤسسة.
+قبل إضافة الملحق إلى قائمة الملحقات المثبتة بقوة، من المهم استيعاب Chrome ADMX. تم توثيق خطوات هذه العملية في Microsoft إدارة نقاط النهاية بواسطة Google: [إدارة مستعرض Chrome باستخدام Microsoft Intune - تعليمات Google Chrome Enterprise](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
 
-##### <a name="enabling-required-registry-value-via-microsoft-endpoint-manager"></a>تمكين قيمة السجل المطلوبة عبر إدارة نقاط النهاية من Microsoft
+ بعد استيعاب ADMX، يمكن اتباع الخطوات أدناه لإنشاء ملف تعريف تكوين لهذا الملحق.
 
-1. إنشاء برنامج نصي PowerShell بالمحتويات التالية:
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-2. سجل الدخول إلى إدارة نقاط النهاية من Microsoft [الإدارة](https://endpoint.microsoft.com).
-
-3. انتقل إلى **DevicesScripts**  >  وحدد **إضافة**.
-
-4. استعرض بحثا عن موقع البرنامج النصي الذي تم إنشاؤه عند مطالبتك بذلك.
-
-5. حدد الإعدادات التالية:
-    1. تشغيل هذا البرنامج النصي باستخدام بيانات اعتماد تسجيل الدخول: لا
-    1. فرض التحقق من توقيع البرنامج النصي: لا
-    1. تشغيل البرنامج النصي في مضيف PowerShell بالبت 64 بت: نعم
-
-6. حدد مجموعات الأجهزة المناسبة وطبق النهج.
-
-#### <a name="microsoft-endpoint-manager-force-install-steps"></a>إدارة نقاط النهاية من Microsoft فرض خطوات التثبيت
-
-قبل إضافة ملحق التوافق من Microsoft إلى قائمة الملحقات المثبتة بالقوة، من المهم استخدام Chrome ADMX. تم توثيق خطوات هذه العملية إدارة نقاط النهاية من Microsoft Google: [إدارة مستعرض Chrome باستخدام Microsoft Intune - تعليمات Google Chrome Enterprise](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune).
-
- بعد استخدام ADMX، يمكن اتباع الخطوات أدناه لإنشاء ملف تعريف تكوين لهذا الملحق.
-
-1. سجل الدخول إلى مركز إدارة إدارة نقاط النهاية من Microsoft (https://endpoint.microsoft.com).
+1. سجل الدخول إلى مركز microsoft إدارة نقاط النهاية مسؤول (https://endpoint.microsoft.com).
 
 2. انتقل إلى ملفات تعريف التكوين.
 
 3. حدد **إنشاء ملف تعريف**.
 
-4. حدد **Windows 10** ك النظام الأساسي.
+4. حدد **Windows 10** كمنصة.
 
-5. حدد **مخصص** كنوع ملف تعريف.
+5. حدد **"مخصص** " كنوع ملف تعريف.
 
-6. حدد علامة **التبويب الإعدادات**.
+6. حدد علامة التبويب **"إعدادات** ".
 
-7. حدد **إضافة**.
+7. حدد **"إضافة**".
 
 8. أدخل معلومات النهج التالية.
 
     OMA-URI: `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
     نوع البيانات: `String`<br/>
-    القيمة: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
+    قيمه: `<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
-9. انقر فوق إنشاء.
+9. انقر فوق "إنشاء".
 
 ### <a name="deploy-using-group-policy"></a>النشر باستخدام نهج المجموعة
 
-إذا كنت لا تريد استخدام إدارة نقاط النهاية من Microsoft، يمكنك استخدام سياسات المجموعة لنشر ملحق التوافق من Microsoft عبر مؤسستك
+إذا كنت لا تريد استخدام Microsoft إدارة نقاط النهاية، يمكنك استخدام نهج المجموعة لنشر الملحق عبر مؤسستك.
 
-1. يجب أن تكون أجهزتك قابلة للإدارة عبر "نهج المجموعة"، ويجب استيراد جميع أجهزة Chrome ADMX إلى المتجر المركزي لنهاء المجموعة. للحصول على مزيد من المعلومات، [راجع كيفية إنشاء](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) المتجر المركزي للقالب الإدارية لن نهج المجموعة وإدارته في Windows.
+#### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>إضافة ملحق Chrome إلى قائمة ForceInstall
 
-2. إنشاء برنامج نصي PowerShell باستخدام الأمر PowerShell هذا:
+1. في محرر إدارة نهج المجموعة، انتقل إلى الوحدة التنظيمية.
 
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
+2. قم بتوسيع المسار التالي **لقوالب** >  **نهج تكوين** >  >  الكمبيوتر/المستخدم الإدارية **للقوالب الإدارية الكلاسيكية** > **ل Google** > **Google Chrome** > **Extensions**. قد يختلف هذا المسار استنادا إلى التكوين الخاص بك.
 
-3. افتح وحدة **تحكم إدارة نهج المجموعة** وانتقل إلى الوحدة التنظيمية (OU).
+3. حدد **تكوين قائمة الملحقات المثبتة بقوة**.
 
-4. انقر بضغطة زر الماوس الأيمن وحدد **إنشاء GPO في هذا المجال وربطه هنا**. عند المطالبة، قم بتعيين اسم وصفي لكائن نهج المجموعة هذا (GPO) والانتهاء من إنشائه.
+4. انقر بزر الماوس الأيمن وحدد **"تحرير**".
 
-5. انقر بضغطة زر الماوس الأيمن فوق GPO وحدد **تحرير**.
+5. حدد **ممكن**.
 
-6. انتقل إلى **لوحة تكوين الكمبيوتر** >  >  **لوحة التحكم الإعدادات** >  **المهام التي تم جدولتها**.
+6. حدد **"إظهار**".
 
-7. قم بإنشاء مهمة فورية جديدة عن طريق تحديد النقر ب الماوس الأيمن وتحديد **مهمة** **NewImmediate** >  (على الأقل Windows 7).
+7. ضمن **Value**، أضف الإدخال التالي: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
 
-8. امنح المهمة اسما & الوصف.
-
-9. اختر الحساب المقابل لتشغيل المهمة الفورية، على سبيل المثال هيئة NT
-
-10. حدد **تشغيل مع أعلى امتيازات**.
-
-11. تكوين نهج Windows 10.
-
-12. في علامة **التبويب إجراءات** ، حدد الإجراء **بدء برنامج**.
-
-13. أدخل المسار إلى البرنامج/البرنامج النصي الذي تم إنشاؤه في الخطوة 1.
-
-14. حدد **تطبيق**.
-
-#### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>إضافة ملحق Chrome إلى القائمة "تثبيت القوة"
-
-1. في محرر إدارة نهج المجموعة، انتقل إلى OU.
-
-2. توسيع المسار التالي **تكوين الكمبيوتر/** > **المستخدمPoliciesAdministrative** >  **templates** >  >  الإداريةالقالب **الإداريةGoogleGoogle** >  **ChromeExtensions** > . قد يختلف هذا المسار وفقا لتكوينك.
-
-3. حدد **تكوين قائمة الملحقات المثبتة بشكل إجباري**.
-
-4. انقر بيمين وحدد **تحرير**.
-
-5. حدد **تمكين**.
-
-6. حدد **إظهار**.
-
-7. ضمن **قيمة**، أضف الإدخال التالي: `echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
-
-8. حدد **موافق** ثم **تطبيق**.
+8. حدد **"موافق** " ثم **"تطبيق**".
 
 ### <a name="test-the-extension"></a>اختبار الملحق
 
-#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>Upload إلى خدمة السحابة، أو الوصول بواسطة المستعرضات غير Egress
+#### <a name="upload-to-cloud-service-or-access-by-unallowed-browsers-cloud-egress"></a>تحميل إلى خدمة السحابة، أو الوصول بواسطة المستعرضات غير مسموح بها Cloud Egress
 
-1. قم بإنشاء عنصر حساس أو الحصول عليه، وحاول تحميل ملف إلى أحد مجالات الخدمة المقيدة في مؤسستك. يجب أن تتطابق البيانات الحساسة مع أحد أنواع المعلومات الحساسة المضمنة، أو أحد أنواع المعلومات الحساسة في مؤسستك.[](sensitive-information-type-entity-definitions.md) يجب أن تحصل على إعلام من المنبثق DLP على الجهاز الذي تقوم باختباره من الذي يظهر أن هذا الإجراء غير مسموح به عند فتح الملف.
+1. قم بإنشاء عنصر حساس أو الحصول عليه، وحاول تحميل ملف إلى أحد مجالات الخدمة المقيدة في مؤسستك. يجب أن تتطابق البيانات الحساسة مع أحد [أنواع المعلومات الحساسة المضمنة](sensitive-information-type-entity-definitions.md)، أو أحد أنواع المعلومات الحساسة لمؤسستك. يجب أن تحصل على إعلام منبثق DLP على الجهاز الذي تختبر منه هذا الإجراء الذي يظهر أن هذا الإجراء غير مسموح به عند فتح الملف.
 
 #### <a name="testing-other-dlp-scenarios-in-chrome"></a>اختبار سيناريوهات DLP الأخرى في Chrome
 
-الآن وقد قمت بإزالة Chrome من قائمة التطبيقات/المستعرضات غير مسموح بها، يمكنك اختبار السيناريوهات أدناه لتأكيد أن السلوك يلبي متطلبات مؤسستك:
+الآن بعد أن قمت بإزالة Chrome من قائمة المستعرضات/التطبيقات غير مسموح بها، يمكنك اختبار السيناريوهات أدناه لتأكيد أن السلوك يلبي متطلبات مؤسستك:
 
 - نسخ البيانات من عنصر حساس إلى مستند آخر باستخدام الحافظة
-  - للاختبار، افتح ملفا محميا من إجراءات النسخ إلى الحافظة في مستعرض Chrome، ثم حاول نسخ البيانات من الملف.
-  - النتيجة المتوقعة: إعلام من المنبثق ل DLP يظهر عدم السماح بهذا الإجراء عند فتح الملف.
+  - للاختبار، افتح ملفا محميا ضد النسخ إلى إجراءات الحافظة في مستعرض Chrome وحاول نسخ البيانات من الملف.
+  - النتيجة المتوقعة: إعلام منبثق DLP يظهر أن هذا الإجراء غير مسموح به عند فتح الملف.
 - طباعة مستند
-  - للاختبار، افتح ملفا محميا من إجراءات الطباعة في مستعرض Chrome، ثم حاول طباعة الملف.
-  - النتيجة المتوقعة: إعلام من المنبثق ل DLP يظهر عدم السماح بهذا الإجراء عند فتح الملف.
+  - للاختبار، افتح ملفا محميا ضد إجراءات الطباعة في مستعرض Chrome وحاول طباعة الملف.
+  - النتيجة المتوقعة: إعلام منبثق DLP يظهر أن هذا الإجراء غير مسموح به عند فتح الملف.
 - نسخ إلى وسائط USB القابلة للإزالة
   - للاختبار، حاول حفظ الملف في مساحة تخزين وسائط قابلة للإزالة.
-  - النتيجة المتوقعة: إعلام من المنبثق ل DLP يظهر عدم السماح بهذا الإجراء عند فتح الملف.
-- النسخ إلى مشاركة الشبكة
-  - للاختبار، حاول حفظ الملف في مشاركة شبكة.
-  - النتيجة المتوقعة: إعلام من المنبثق ل DLP يظهر عدم السماح بهذا الإجراء عند فتح الملف.
+  - النتيجة المتوقعة: إعلام منبثق DLP يظهر أن هذا الإجراء غير مسموح به عند فتح الملف.
+- نسخ إلى مشاركة الشبكة
+  - للاختبار، حاول حفظ الملف إلى مشاركة شبكة.
+  - النتيجة المتوقعة: إعلام منبثق DLP يظهر أن هذا الإجراء غير مسموح به عند فتح الملف.
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>استخدام لوحة معلومات إدارة التنبيهات لعرض تنبيهات Chrome DLP
 
-1. افتح صفحة **منع فقدان** <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">البيانات في مركز التوافق في Microsoft 365</a> وحدد **تنبيهات**.
+1. افتح صفحة **منع فقدان البيانات** في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a> وحدد **"Alerts**".
 
-2. راجع الإجراءات في كيفية تكوين التنبيهات وعرضها لنهج [DLP](dlp-configure-view-alerts-policies.md) لعرض التنبيهات لنهج DLP في نقطة النهاية.
+2. راجع الإجراءات في [كيفية تكوين وعرض التنبيهات لنهج DLP](dlp-configure-view-alerts-policies.md) لعرض التنبيهات لنهج DLP لنقطة النهاية.
 
-### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>عرض بيانات DLP في Chrome في مستكشف النشاط
+### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>عرض بيانات Chrome DLP في مستكشف النشاط
 
-1. افتح صفحة [تصنيف البيانات](https://compliance.microsoft.com/dataclassification?viewid=overview) لمجالك في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مركز التوافق في Microsoft 365 واختر</a> **مستكشف النشاط**.
+1. افتح [صفحة تصنيف البيانات](https://compliance.microsoft.com/dataclassification?viewid=overview) لمجالك في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a> واختر **مستكشف النشاط**.
 
-2. راجع الإجراءات في بدء استخدام "[](data-classification-activity-explorer.md)مستكشف النشاط" للوصول إلى كل البيانات الخاصة بأجهزتك في نقطة النهاية وتصفيتها.
+2. راجع الإجراءات في ["بدء استخدام مستكشف النشاط"](data-classification-activity-explorer.md) للوصول إلى جميع البيانات لأجهزة نقطة النهاية وتصفيتها.
 
    > [!div class="mx-imgBorder"]
-   > ![عامل تصفية مستكشف النشاط للأجهزة التي تعمل بنقطة النهاية.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![عامل تصفية مستكشف النشاط لأجهزة نقطة النهاية.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ### <a name="known-issues-and-limitations"></a>المشاكل والقيود المعروفة
 
@@ -282,19 +223,19 @@ ms.locfileid: "63681799"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-الآن وقد أصبح لديك أجهزة مجهزه للعمل ويمكنك عرض بيانات النشاط في "مستكشف النشاط"، أنت جاهز للانتقال إلى الخطوة التالية حيث تقوم بإنشاء سياسات DLP التي تحمي العناصر الحساسة.
+الآن بعد أن قمت بإلحاق الأجهزة ويمكنك عرض بيانات النشاط في مستكشف النشاط، فأنت مستعد للانتقال إلى الخطوة التالية حيث يمكنك إنشاء نهج DLP التي تحمي العناصر الحساسة.
 
-- [استخدام منع فقدان البيانات في نقطة النهاية](endpoint-dlp-using.md)
+- [استخدام تفادي فقدان البيانات في نقطة النهاية](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [التعرف على منع فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md)
-- [استخدام منع فقدان البيانات في نقطة النهاية](endpoint-dlp-using.md)
-- [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md)
+- [التعرّف على تفادي فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md)
+- [استخدام تفادي فقدان البيانات في نقطة النهاية](endpoint-dlp-using.md)
+- [التعرّف على تفادي فقدان البيانات](dlp-learn-about-dlp.md)
 - [إنشاء نهج DLP واختباره وضبطه](create-test-tune-dlp-policy.md)
-- [بدء استخدام "مستكشف النشاط"](data-classification-activity-explorer.md)
-- [Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/)
-- [أدوات وأساليب ال متنبها Windows 10 الأجهزة](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
-- [Microsoft 365 الاشتراك](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [الأجهزة المنضمة إلى Azure AD](/azure/active-directory/devices/concept-azure-ad-join)
-- [قم بتنزيل الملف Microsoft Edge استنادا إلى Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
+- [بدء استخدام مستكشف النشاط](data-classification-activity-explorer.md)
+- [مشكلات الأداء في Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/)
+- [أدوات وأساليب الإلحاق للأجهزة Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [اشتراك Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
+- [Azure AD الأجهزة المتصلة](/azure/active-directory/devices/concept-azure-ad-join)
+- [تنزيل Microsoft Edge الجديد استنادا إلى Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

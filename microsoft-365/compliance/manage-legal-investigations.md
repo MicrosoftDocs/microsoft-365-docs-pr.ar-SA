@@ -16,17 +16,15 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: استخدم حالات eDiscovery في مدخل توافق Microsoft Purview لإدارة التحقيق القانوني لمؤسستك.
-ms.openlocfilehash: f75d59e58ae51e5cb525044edb775c87b52686d1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: استخدم حالات eDiscovery في مدخل التوافق في Microsoft Purview لإدارة التحقيق القانوني لمؤسستك.
+ms.openlocfilehash: 9db3a1e9ad831c74c9468121eaa0800875c74e5a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010055"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623794"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>إدارة التحقيقات القانونية في Microsoft 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 لدى المؤسسات العديد من الأسباب للاستجابة لحالة قانونية تتعلق ببعض المديرين التنفيذيين أو الموظفين الآخرين في مؤسستك. قد يتضمن ذلك العثور على مزيد من المعلومات الخاصة بالتحقيق والاحتفاظ بها بسرعة في البريد الإلكتروني والمستندات ومحادثات المراسلة الفورية ومواقع المحتويات الأخرى التي يستخدمها الأشخاص في مهام العمل اليومية الخاصة بهم. يمكنك تنفيذ هذه الأنشطة والعديد من الأنشطة المماثلة الأخرى باستخدام أدوات حالة eDiscovery في مركز الأمان والتوافق.
   
@@ -50,19 +48,19 @@ ms.locfileid: "66010055"
   
 - [إنشاء تقرير احتجاز eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md) يحتوي على معلومات حول كافة عمليات الاحتجاز المقترنة بحالات eDiscovery في مؤسستك.
 
-- [إضافة علب بريد ومواقع OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) لقائمة مستخدمين إلى قائمة احتجاز eDiscovery.
+- [أضف علب البريد ومواقع OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) لقائمة مستخدمين إلى قائمة احتجاز eDiscovery.
   
 ## <a name="manage-legal-investigations-with-the-ediscovery-premium-solution-in-microsoft-365"></a>إدارة التحقيقات القانونية باستخدام حل eDiscovery (Premium) في Microsoft 365
 
-يعتمد حل Microsoft Purview eDiscovery (Premium) في Microsoft 365 على قدرات eDiscovery والتحليلات الموجودة في Office 365. يوفر هذا الحل الجديد، *المسمى eDiscovery (Premium)*، سير عمل شامل للاحتفاظ بالمحتوى الذي يستجيب للتحقيقات الداخلية والخارجية لمؤسستك وجمعه ومراجعته وتحليله وتصديره. كما يتيح للفرق القانونية إدارة سير عمل إعلام الاحتجاز القانوني بأكمله للتواصل مع أمناء الحفظ المعنيين بقضية ما.
+يعتمد حل Microsoft Purview eDiscovery (Premium) في Microsoft 365 على قدرات eDiscovery والتحليلات الموجودة في Office 365. يوفر هذا الحل الجديد، *المسمى eDiscovery (Premium)* سير عمل شامل للاحتفاظ بالمحتوى الذي يستجيب للتحقيقات الداخلية والخارجية لمؤسستك وجمعه ومراجعته وتحليله وتصديره. كما يتيح للفرق القانونية إدارة سير عمل إعلام الاحتجاز القانوني بأكمله للتواصل مع أمناء الحفظ المعنيين بقضية ما.
 
-يتطلب eDiscovery (Premium) اشتراك E5 Microsoft 365 أو مؤسسة Office 365. لمزيد من المعلومات حول الترخيص، راجع [إعداد eDiscovery (Premium).](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)
+يتطلب eDiscovery (Premium) اشتراك E5 لمؤسسة Microsoft 365 أو Office 365. لمزيد من المعلومات حول الترخيص، راجع [إعداد eDiscovery (Premium).](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)
 
 فيما يلي نظرة عامة سريعة على سير العمل المضمن في eDiscovery (Premium). لمزيد من المعلومات، راجع [إدارة سير عمل eDiscovery (Premium](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)).
 
 - [إنشاء حالة](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) للبدء.
 
-- [يمكنك إدارة أمناء الحفظ](managing-custodians.md) عن طريق إضافتهم إلى قضية ووضع محتوى في علبة بريدهم، وحساب OneDrive، Microsoft Teams أعضاء فيها.
+- [يمكنك إدارة أمناء الحفظ](managing-custodians.md) من خلال إضافتهم إلى قضية ووضع محتوى قانوني في علبة بريدهم وحساب OneDrive وMicrosoft Teams الأعضاء فيها.
 
 - [إدارة الاتصالات](managing-custodian-communications.md) مع أمناء الحفظ من خلال أتمتة عملية إعلام الاحتجاز القانوني.
 
@@ -76,4 +74,4 @@ ms.locfileid: "66010055"
 
 - [تصدير بيانات الحالة](exporting-data-ediscover20.md) للمراجعة من قبل مستشار خارجي.
 
-- [إدارة المهام طويلة الأمد](managing-jobs-ediscovery20.md) في eDiscovery (Premium).
+- [إدارة الوظائف طويلة الأمد](managing-jobs-ediscovery20.md) في eDiscovery (Premium).

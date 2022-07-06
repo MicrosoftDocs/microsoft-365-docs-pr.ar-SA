@@ -1,5 +1,5 @@
 ---
-title: ترحيل عمليات بحث eDiscovery القديمة وحتفظ بها إلى مدخل الامتثال ل Microsoft Purview
+title: ترحيل عمليات بحث eDiscovery القديمة وحتفظ بها إلى مدخل التوافق في Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,18 +15,16 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 3b80db06faea9c76c7df671468b94fc11f0c63df
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 607b66d863c0584ce1bb06c069de7870245cb167
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010077"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622580"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>ترحيل عمليات بحث eDiscovery القديمة وحتفظ بها إلى مدخل التوافق
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يوفر مدخل توافق Microsoft Purview تجربة محسنة لاستخدام eDiscovery، بما في ذلك: الموثوقية الأعلى والأداء الأفضل والعديد من الميزات المصممة لسير عمل eDiscovery بما في ذلك الحالات لتنظيم المحتوى حسب المسألة ومجموعات المراجعة لمراجعة المحتوى والتحليلات للمساعدة في احصاء البيانات للمراجعة مثل التجميع شبه المكرر ومؤشرات ترابط البريد الإلكتروني وتحليل النسق والترميز التنبؤي.
+يوفر مدخل التوافق في Microsoft Purview تجربة محسنة لاستخدام eDiscovery، بما في ذلك: الموثوقية الأعلى والأداء الأفضل والعديد من الميزات المصممة لسير عمل eDiscovery، بما في ذلك الحالات لتنظيم المحتوى حسب المسألة، ومجموعات المراجعة لمراجعة المحتوى والتحليلات للمساعدة في احصاء البيانات للمراجعة مثل التجميع شبه المتكرر، ومؤشرات ترابط البريد الإلكتروني، وتحليل النسق، والترميز التنبؤي.
 
 لمساعدة العملاء على الاستفادة من الوظائف الجديدة والمحسنة، توفر هذه المقالة إرشادات أساسية حول كيفية ترحيل عمليات البحث In-Place eDiscovery وسحبها من <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a> إلى مدخل التوافق.
 
@@ -50,7 +48,7 @@ Connect-IPPSSession
 Connect-ExchangeOnline -UseRPSSession
 ```
 
-للحصول على إرشادات مفصلة، راجع [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+للحصول على إرشادات مفصلة، راجع [الاتصال بالأمان & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) والاتصال [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>الخطوة 2: الحصول على قائمة بعمليات البحث In-Place eDiscovery باستخدام Get-MailboxSearch
 
@@ -85,7 +83,7 @@ $search | Format-List
 > [!NOTE]
 > مدة احتجاز In-Place في هذا المثال غير محددة (*ItemHoldPeriod: غير محدودة*). هذا نموذجي لسيناريوهات eDiscovery والتحقيق القانوني. إذا كانت مدة الاحتجاز مختلفة عن قيمة غير محددة، فمن المحتمل أن يكون السبب هو استخدام قائمة الاحتجاز للاحتفاظ بالمحتوى في سيناريو استبقاء. بدلا من استخدام أوامر cmdlets eDiscovery في Security & Compliance PowerShell لسيناريوهات الاستبقاء، نوصي باستخدام [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) و [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) للاحتفاظ بالمحتوى. ستكون نتيجة استخدام أوامر cmdlets هذه مشابهة لاستخدام **New-CaseHoldPolicy** و **New-CaseHoldRule**، ولكن ستتمكن من تحديد فترة استبقاء وإجراء استبقاء، مثل حذف المحتوى بعد انتهاء فترة الاستبقاء. أيضا، لا يتطلب استخدام أوامر cmdlets الاستبقاء إقران قوائم الاحتفاظ بحالة eDiscovery.
 
-## <a name="step-4-create-a-case-in-the-microsoft-purview-compliance-portal"></a>الخطوة 4: إنشاء حالة في مدخل توافق Microsoft Purview
+## <a name="step-4-create-a-case-in-the-microsoft-purview-compliance-portal"></a>الخطوة 4: إنشاء حالة في مدخل التوافق في Microsoft Purview
 
 لإنشاء قائمة احتجاز eDiscovery، يجب عليك إنشاء حالة eDiscovery لإقران قائمة الاحتجاز بها. ينشئ المثال التالي حالة eDiscovery باستخدام اسم من اختيارك. سنقوم بتخزين خصائص الحالة الجديدة في متغير للاستخدام لاحقا. يمكنك عرض هذه الخصائص عن طريق تشغيل `$case | FL` الأمر بعد إنشاء الحالة.
 
@@ -139,7 +137,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 للتأكد من إعداد كل شيء بشكل صحيح، انتقل إلى مدخل التوافق في [https://compliance.microsoft.com](https://compliance.microsoft.com)، وانقر فوق **eDiscovery > Core**.
 
-![Microsoft Purview compliance portal eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
+![مدخل التوافق في Microsoft Purview eDiscovery.](../media/MigrateLegacyeDiscovery7.png)
 
 يتم سرد الحالة التي قمت بإنشائها في الخطوة 3 في صفحة **eDiscovery (Standard** ). افتح الحالة ثم لاحظ قائمة الاحتجاز التي قمت بإنشائها في الخطوة 4 في القائمة ضمن علامة التبويب **"احتجاز** ". يمكنك تحديد قائمة الاحتجاز للاطلاع على التفاصيل في صفحة القائمة المنبثقة، بما في ذلك عدد علب البريد التي يتم تطبيق الاحتجاز عليها وحالة التوزيع.
 
@@ -153,7 +151,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ## <a name="more-information"></a>معلومات إضافية
 
-- لمزيد من المعلومات حول In-Place eDiscovery & في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>، راجع:
+- لمزيد من المعلومات حول In-Place & eDiscovery في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a>، راجع:
 
   - [eDiscovery موضعي](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
@@ -175,4 +173,4 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- لمزيد من المعلومات حول مدخل التوافق، راجع [نظرة عامة على مدخل توافق Microsoft Purview](microsoft-365-compliance-center.md).
+- لمزيد من المعلومات حول مدخل التوافق، راجع [نظرة عامة على مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center.md).

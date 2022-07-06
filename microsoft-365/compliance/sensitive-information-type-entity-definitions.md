@@ -19,16 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: هناك العديد من أنواع المعلومات الحساسة الجاهزة للاستخدام في نهج DLP. تسرد هذه المقالة كل أنواع المعلومات الحساسة هذه وتعرض ما يبحث عنه نهج DLP عند اكتشاف كل نوع.
-ms.openlocfilehash: af2cbd03de426aa34b9db82691a22684c4c1df0b
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 2d81410b86ca9a90b12dbaa850e36d8803af0d79
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130791"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622413"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>تعريفات كيان نوع المعلومات الحساسة
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تسرد هذه المقالة كافة تعريفات كيان نوع المعلومات الحساسة. يوضح كل تعريف ما يبحث عنه نهج DLP للكشف عن كل نوع. لمعرفة المزيد حول أنواع المعلومات الحساسة، راجع [أنواع المعلومات الحساسة](sensitive-information-type-learn-about.md)
 
@@ -1538,7 +1536,7 @@ ms.locfileid: "65130791"
 - الاختبارات.<!--no-hyperlink-->كوم
 - s-int.<!--no-hyperlink-->صافي
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>سلسلة اتصال قاعدة بيانات Azure IAAS وسلسلة اتصال azure SQL
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>سلسلة اتصال قاعدة بيانات Azure IAAS وسلسلة اتصال Azure SQL
 
 ### <a name="format"></a>تنسيق
 
@@ -13242,7 +13240,7 @@ Any term from the Dictionary_icd_9_codes keyword dictionary, which is based on t
 
 - يبحث التعبير `Regex_netherlands_eu_passport_number` العادي عن المحتوى الذي يطابق النمط.
 - تم العثور على كلمة أساسية من `Keywords_eu_passport_number` أو `Keywords_netherlands_eu_passport_number` تم العثور عليها.
-- يبحث التعبير العادي عن `Regex_netherlands_eu_passport_date` التاريخ بالتنسيق DD MMM/MMM YYYY (مثال - 26 MAA/MAR 2012)
+- يبحث التعبير `Regex_netherlands_eu_passport_date` العادي عن التاريخ بالتنسيق DD MMM/MMM YYYY (مثال - 26 MAA/MAR 2012)
 
 يتمتع نهج DLP بثقة متوسطة بأنه اكتشف هذا النوع من المعلومات الحساسة إذا كان، على مقربة من 300 حرف:
 

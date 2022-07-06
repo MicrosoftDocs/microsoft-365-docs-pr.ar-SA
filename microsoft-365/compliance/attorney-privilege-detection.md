@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: استخدم نموذج الكشف عن امتيازات الوكيل والعميل لاستخدام الكشف المستند إلى التعلم الآلي للمحتوى المتميز عند مراجعة المحتوى في حالة Microsoft Purview eDiscovery (Premium).
-ms.openlocfilehash: 359dccc041a0655ade291a37e511038a50148f7b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9f81ff216ecf0045aec69191b3a61916b6ea3081
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094020"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624620"
 ---
 # <a name="set-up-attorney-client-privilege-detection-in-ediscovery-premium"></a>إعداد الكشف عن امتيازات الوكيل والعميل في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتمثل أحد الجوانب الرئيسية والمكلفة لمرحلة المراجعة لأي عملية eDiscovery في مراجعة المستندات للحصول على محتوى مميز. يوفر Microsoft Purview eDiscovery (Premium) الكشف القائم على التعلم الآلي للمحتوى المتميز لجعل هذه العملية أكثر كفاءة. تسمى هذه الميزة *الكشف عن امتيازات الوكيل والعميل*.
 
@@ -59,17 +57,17 @@ ms.locfileid: "65094020"
 
 يجب على الشخص المسؤول عن eDiscovery في مؤسستك (عضو في المجموعة الفرعية لمسؤول eDiscovery في مجموعة أدوار eDiscovery Manager) توفير النموذج في حالات eDiscovery (Premium).
 
-1. في مدخل توافق Microsoft Purview، انتقل إلى [eDiscovery (Premium)](https://go.microsoft.com/fwlink/p/?linkid=2173764)، ثم انقر فوق **إعدادات eDiscovery (Premium**).
+1. في مدخل التوافق في Microsoft Purview، انتقل إلى [eDiscovery (Premium)،](https://go.microsoft.com/fwlink/p/?linkid=2173764) ثم انقر فوق **إعدادات eDiscovery (Premium**).
 
    ![تحديد إعدادات eDiscovery (Premium)](..\media\HistoricalVersions1.png)
 
-2. في صفحة **الإعدادات**، حدد علامة التبويب **"Analytics**"، ثم قم بتبديل تبديل **الكشف عن امتياز "الوكيل-العميل**" إلى التشغيل.
+2. في صفحة **"الإعدادات"** ، حدد علامة التبويب **"Analytics** "، ثم قم بتبديل تبديل **الكشف عن امتيازات "الوكيل-العميل** " إلى التشغيل.
 
    ![انقر فوق "تبديل" لتشغيل الكشف عن امتيازات "الوكيل-العميل"](..\media\TurnOnAttorneyClientPrivilegeDetection.png)
 
 3. انقر فوق **"حفظ"** لحفظ التغيير.
 
-### <a name="step-2-upload-a-list-of-attorneys-optional"></a>الخطوة 2: Upload قائمة من الوكلاء (اختياري)
+### <a name="step-2-upload-a-list-of-attorneys-optional"></a>الخطوة 2: تحميل قائمة الوكلاء (اختياري)
 
 للاستفادة الكاملة من نموذج الكشف عن امتيازات الوكيل والعميل واستخدام نتائج الكشف عن الامتيازات أو  **الامتيازات المحتملة التي تم وصفها** مسبقا، نوصي بتحميل قائمة بعناوين البريد الإلكتروني للمشرفين والموظفين القانونيين الذين يعملون في مؤسستك.
 
@@ -77,7 +75,7 @@ ms.locfileid: "65094020"
 
 1. إنشاء ملف .csv (بدون صف رأس) وإضافة عنوان البريد الإلكتروني لكل شخص مناسب على سطر منفصل. احفظ هذا الملف على الكمبيوتر المحلي.
 
-2. في صفحة **الإعدادات** eDiscovery (Premium)، حدد علامة التبويب **Analytics**.
+2. في صفحة **إعدادات** eDiscovery (Premium)، حدد علامة التبويب **Analytics** .
 
    يتم عرض صفحة **امتياز العميل-الوكيل** ، ويتم تشغيل تبديل **الكشف عن امتيازات الوكيل والعميل** .
 
@@ -111,7 +109,7 @@ ms.locfileid: "65094020"
 
 ### <a name="step-2-analyze-a-review-set"></a>الخطوة 2: تحليل مجموعة مراجعة
 
-عند تحليل المستندات في مجموعة مراجعة، سيتم أيضا تشغيل نموذج الكشف عن امتيازات الوكيل والعميل وستتم إضافة الخصائص المقابلة (الموضحة في [كيفية عمله؟](#how-does-it-work)) إلى كل مستند في مجموعة المراجعة. لمزيد من المعلومات حول تحليل البيانات في مجموعة المراجعة، راجع [تحليل البيانات في مجموعة مراجعة في eDiscovery (Premium)](analyzing-data-in-review-set.md).
+عند تحليل المستندات في مجموعة مراجعة، سيتم أيضا تشغيل نموذج الكشف عن امتيازات الوكيل والعميل وستتم إضافة الخصائص المقابلة (الموضحة في [كيفية عمله؟](#how-does-it-work)) إلى كل مستند في مجموعة المراجعة. لمزيد من المعلومات حول تحليل البيانات في مجموعة المراجعة، راجع [تحليل البيانات في مجموعة مراجعة في eDiscovery (Premium).](analyzing-data-in-review-set.md)
 
 ### <a name="step-3-use-the-smart-tag-group-for-review-of-privileged-content"></a>الخطوة 3: استخدام مجموعة العلامات الذكية لمراجعة المحتوى المتميز
 

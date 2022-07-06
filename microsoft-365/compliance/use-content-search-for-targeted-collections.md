@@ -18,22 +18,20 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: استخدم البحث في المحتوى في مدخل توافق Microsoft Purview لتنفيذ مجموعة مستهدفة، والتي تبحث عن عناصر في علبة بريد معينة أو مجلد موقع معين.
-ms.openlocfilehash: 224da8e651599d1d007684a069b0dbb9d30a6119
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: استخدم البحث في المحتوى في مدخل التوافق في Microsoft Purview لتنفيذ مجموعة مستهدفة تبحث عن عناصر في علبة بريد معينة أو مجلد موقع معين.
+ms.openlocfilehash: ab4fda56e3ccbd04ac8b7b820c4305e9c6e45093
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015529"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623662"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>استخدام البحث عن المحتوى للمجموعات المستهدفة
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-لا توفر أداة البحث في المحتوى في مدخل توافق Microsoft Purview طريقة مباشرة في واجهة المستخدم للبحث في مجلدات معينة في علب بريد Exchange أو SharePoint ومواقع OneDrive for Business. ومع ذلك، من الممكن البحث في مجلدات معينة (تسمى *مجموعة مستهدفة*) عن طريق تحديد خاصية معرف المجلد للبريد الإلكتروني أو المسار (DocumentLink) للمواقع في بناء جملة استعلام البحث الفعلي. يعد استخدام "البحث عن المحتوى" لتنفيذ مجموعة مستهدفة مفيدا عندما تكون واثقا من وجود العناصر التي تستجيب لحالة أو عناصر مميزة في علبة بريد معينة أو مجلد موقع معين. يمكنك استخدام البرنامج النصي في هذه المقالة للحصول على معرف المجلد لمجلدات علبة البريد أو المسار (DocumentLink) للمجلدات الموجودة على موقع SharePoint OneDrive for Business. ثم يمكنك استخدام معرف المجلد أو المسار في استعلام بحث لإرجاع العناصر الموجودة في المجلد.
+لا توفر أداة البحث في المحتوى في مدخل التوافق في Microsoft Purview طريقة مباشرة في واجهة المستخدم للبحث في مجلدات معينة في علب بريد Exchange أو SharePoint ومواقع OneDrive for Business. ومع ذلك، من الممكن البحث في مجلدات معينة (تسمى *مجموعة مستهدفة*) عن طريق تحديد خاصية معرف المجلد للبريد الإلكتروني أو المسار (DocumentLink) للمواقع في بناء جملة استعلام البحث الفعلي. يعد استخدام "البحث عن المحتوى" لتنفيذ مجموعة مستهدفة مفيدا عندما تكون واثقا من وجود العناصر التي تستجيب لحالة أو عناصر مميزة في علبة بريد معينة أو مجلد موقع معين. يمكنك استخدام البرنامج النصي في هذه المقالة للحصول على معرف المجلد لمجلدات علبة البريد أو المسار (DocumentLink) للمجلدات على موقع SharePoint وموقع OneDrive for Business. ثم يمكنك استخدام معرف المجلد أو المسار في استعلام بحث لإرجاع العناصر الموجودة في المجلد.
 
 > [!NOTE]
-> لإرجاع المحتوى الموجود في مجلد في موقع SharePoint أو OneDrive for Business، يستخدم البرنامج النصي في هذا الموضوع الخاصية المدارة في DocumentLink بدلا من خاصية المسار. تعد الخاصية DocumentLink أكثر قوة من خاصية "المسار" لأنها ستقوم بإرجاع كافة المحتويات في مجلد، في حين أن خاصية "المسار" لن ترجع بعض ملفات الوسائط.
+> لإرجاع محتوى موجود في مجلد في موقع SharePoint أو OneDrive for Business، يستخدم البرنامج النصي في هذا الموضوع الخاصية المدارة في DocumentLink بدلا من خاصية المسار. تعد الخاصية DocumentLink أكثر قوة من خاصية "المسار" لأنها ستقوم بإرجاع كافة المحتويات في مجلد، في حين أن خاصية "المسار" لن ترجع بعض ملفات الوسائط.
 
 ## <a name="before-you-run-a-targeted-collection"></a>قبل تشغيل مجموعة مستهدفة
 
@@ -41,7 +39,7 @@ ms.locfileid: "66015529"
 
 - يجب أيضا تعيين دور مستلمي البريد في مؤسستك Exchange Online. هذا مطلوب لتشغيل **Get-MailboxFolderStatistics** cmdlet، المضمن في البرنامج النصي. بشكل افتراضي، يتم تعيين دور مستلمي البريد إلى مجموعات دور إدارة المؤسسة وإدارة المستلمين في Exchange Online. لمزيد من المعلومات حول تعيين الأذونات في Exchange Online، راجع [إدارة أعضاء مجموعة الأدوار](/exchange/manage-role-group-members-exchange-2013-help). يمكنك أيضا إنشاء مجموعة أدوار مخصصة وتعيين دور مستلمي البريد إليها، ثم إضافة الأعضاء الذين يحتاجون إلى تشغيل البرنامج النصي في الخطوة 1. لمزيد من المعلومات، راجع [إدارة مجموعات الأدوار](/Exchange/permissions-exo/role-groups).
 
-- يدعم البرنامج النصي في هذه المقالة المصادقة الحديثة. يمكنك استخدام البرنامج النصي كما هو إذا كنت Microsoft 365 أو مؤسسة Microsoft 365 سحابة القطاع الحكومي. إذا كنت مؤسسة Office 365 ألمانيا أو مؤسسة Microsoft 365 سحابة القطاع الحكومي عالية أو مؤسسة Microsoft 365 DoD، فستضطر إلى تحرير البرنامج النصي لتشغيله بنجاح. وبشكل خاص، يجب عليك تحرير السطر `Connect-ExchangeOnline` واستخدام معلمة *ExchangeEnvironmentName* (والقيمة المناسبة لنوع مؤسستك) للاتصال Exchange Online PowerShell.  أيضا، يجب عليك تحرير السطر `Connect-IPPSSession` واستخدام معلمات *ConnectionUri* *وAzureADAuthorizationEndpointUri* (والقيم المناسبة لنوع مؤسستك) للاتصال ب Security & Compliance PowerShell. لمزيد من المعلومات، راجع الأمثلة في [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- يدعم البرنامج النصي في هذه المقالة المصادقة الحديثة. يمكنك استخدام البرنامج النصي كما هو إذا كنت مؤسسة Microsoft 365 أو Microsoft 365 GCC. إذا كنت مؤسسة Office 365 ألمانيا أو مؤسسة Microsoft 365 GCC High أو مؤسسة Microsoft 365 DoD، فستضطر إلى تحرير البرنامج النصي لتشغيله بنجاح. وبشكل خاص، يجب عليك تحرير السطر `Connect-ExchangeOnline` واستخدام معلمة *ExchangeEnvironmentName* (والقيمة المناسبة لنوع مؤسستك) للاتصال Exchange Online PowerShell.  أيضا، يجب عليك تحرير السطر `Connect-IPPSSession` واستخدام معلمات *ConnectionUri* *وAzureADAuthorizationEndpointUri* (والقيم المناسبة لنوع مؤسستك) للاتصال ب Security & Compliance PowerShell. لمزيد من المعلومات، راجع الأمثلة في [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) و [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
 - في كل مرة تقوم فيها بتشغيل البرنامج النصي، يتم إنشاء جلسة PowerShell بعيدة جديدة. وهذا يعني أنه يمكنك استخدام جميع جلسات PowerShell البعيدة المتوفرة لك. لمنع حدوث ذلك، قم بتشغيل الأوامر التالية لقطع اتصال جلسات عمل PowerShell البعيدة النشطة.
 
@@ -59,11 +57,11 @@ ms.locfileid: "66015529"
 
 سيقوم البرنامج النصي الذي تقوم بتشغيله في هذه الخطوة الأولى بإرجاع قائمة بمجلدات علبة البريد أو SharePoint ومجلدات OneDrive for Business ومعرف المجلد أو المسار المطابق لكل مجلد. عند تشغيل هذا البرنامج النصي، سيطالبك بالمعلومات التالية.
 
-- **عنوان البريد الإلكتروني أو عنوان URL للموقع**: اكتب عنوان بريد إلكتروني للوصي لإرجاع قائمة بمجلدات علبة البريد Exchange ومعرف المجلد. أو اكتب عنوان URL لموقع SharePoint أو موقع OneDrive for Business لإرجاع قائمة بالمسارات للموقع المحدد. فيما يلي بعض الأمثلة:
+- **عنوان البريد الإلكتروني أو عنوان URL للموقع**: اكتب عنوان بريد إلكتروني للوصي لإرجاع قائمة بمجلدات علبة بريد Exchange ومعرف المجلد. أو اكتب URL لموقع SharePoint أو موقع OneDrive for Business لإرجاع قائمة مسارات للموقع المحدد. فيما يلي بعض الأمثلة:
 
-  - **Exchange**:`stacig@contoso.onmicrosoft.com`
+  - **Exchange**: `stacig@contoso.onmicrosoft.com`
 
-  - **SharePoint**:`https://contoso.sharepoint.com/sites/marketing`
+  - **SharePoint**: `https://contoso.sharepoint.com/sites/marketing`
 
   - **OneDrive for Business**:`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
@@ -210,7 +208,7 @@ ms.locfileid: "66015529"
 
 ### <a name="script-output-for-site-folders"></a>إخراج البرنامج النصي لمجلدات الموقع
 
-إذا كنت تحصل على مسار خاصية **ارتباط المستند** من مواقع SharePoint أو OneDrive for Business، يتصل البرنامج النصي ب Security & Compliance PowerShell، ويقوم بإنشاء "بحث محتوى" جديد يبحث في الموقع عن المجلدات، ثم يعرض قائمة بالمجلدات الموجودة في الموقع المحدد. يعرض البرنامج النصي اسم كل مجلد ويضيف بادئة **ارتباط المستند** إلى عنوان URL للمجلد. نظرا لأن خاصية **ارتباط المستند** هي خاصية قابلة للبحث، فستستخدم `documentlink:<path>` زوج الخاصية:القيمة في استعلام بحث في الخطوة 2 للبحث في هذا المجلد. يعرض البرنامج النصي 100 مجلد موقع كحد أقصى. إذا كان هناك أكثر من 100 مجلد موقع، يتم عرض المجلدات الأحدث.
+إذا كنت تحصل على مسار خاصية **ارتباط المستند** من SharePoint أو مواقع OneDrive for Business، يتصل البرنامج النصي ب Security & Compliance PowerShell، ويقوم بإنشاء "بحث محتوى" جديد يبحث في الموقع عن مجلدات، ثم يعرض قائمة بالمجلدات الموجودة في الموقع المحدد. يعرض البرنامج النصي اسم كل مجلد ويضيف بادئة **ارتباط المستند** إلى عنوان URL للمجلد. نظرا لأن خاصية **ارتباط المستند** هي خاصية قابلة للبحث، فستستخدم `documentlink:<path>` زوج الخاصية:القيمة في استعلام بحث في الخطوة 2 للبحث في هذا المجلد. يعرض البرنامج النصي 100 مجلد موقع كحد أقصى. إذا كان هناك أكثر من 100 مجلد موقع، يتم عرض المجلدات الأحدث.
 
 فيما يلي مثال على الإخراج الذي تم إرجاعه بواسطة البرنامج النصي لمجلدات الموقع.
 
@@ -236,11 +234,11 @@ ms.locfileid: "66015529"
 
 5. قم بأحد الإجراءات التالية، استنادا إلى ما إذا كنت تبحث في مجلد علبة بريد أو مجلد موقع:
 
-    - إلى جانب **Exchange البريد الإلكتروني**، انقر فوق **اختيار مستخدمين أو مجموعات أو فرق** ثم أضف علبة البريد نفسها التي حددتها عند تشغيل البرنامج النصي في الخطوة 1.
+    - إلى جانب **البريد الإلكتروني في Exchange**، انقر فوق **"اختيار مستخدمين" أو "مجموعات" أو "فرق** " ثم أضف علبة البريد نفسها التي حددتها عند تشغيل البرنامج النصي في الخطوة 1.
 
       او
 
-    - إلى جانب **مواقع SharePoint**، انقر فوق **"اختيار المواقع**" ثم أضف نفس URL الموقع الذي حددته عند تشغيل البرنامج النصي في الخطوة 1.
+    - إلى جانب **مواقع SharePoint**، انقر فوق **"اختيار المواقع** " ثم أضف URL الموقع نفسه الذي حددته عند تشغيل البرنامج النصي في الخطوة 1.
 
 6. بعد حفظ موقع المحتوى للبحث فيه، انقر فوق **"حفظ & تشغيل**"، واكتب اسما ل "البحث في المحتوى"، ثم انقر فوق **"حفظ"** لبدء عملية البحث عن المجموعة المستهدفة.
 

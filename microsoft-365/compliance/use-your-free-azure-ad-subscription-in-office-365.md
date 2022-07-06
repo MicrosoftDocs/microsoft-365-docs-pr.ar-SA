@@ -19,18 +19,16 @@ description: تعرف على كيفية الوصول إلى Azure Active Directo
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: cc0863184aa00fdc26532267a56936b2ed93270b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2d6e274f286893adaeecb81b519b72dc5ba7927a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078812"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625930"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>استخدام اشتراك Azure Active Directory المجاني
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-إذا كان لدى مؤسستك اشتراك مدفوع في Microsoft 365 أو Microsoft Dynamics CRM Online أو Enterprise Mobility Suite أو خدمات Microsoft أخرى، فلديك اشتراك مجاني في Microsoft Azure Active Directory. يمكنك أنت والمسؤولين الآخرين استخدام Azure AD لإنشاء حسابات المستخدمين والمجموعة وإدارتها. لاستخدام Azure AD، ما عليك سوى الانتقال إلى مدخل Microsoft Azure وتسجيل الدخول إلى حسابك.
+إذا كان لدى مؤسستك اشتراك مدفوع في Microsoft 365 أو Microsoft Dynamics CRM Online أو Enterprise Mobility Suite أو خدمات Microsoft الأخرى، فلديك اشتراك مجاني في Microsoft Azure Active Directory. يمكنك أنت والمسؤولين الآخرين استخدام Azure AD لإنشاء حسابات المستخدمين والمجموعة وإدارتها. لاستخدام Azure AD، ما عليك سوى الانتقال إلى مدخل Azure وتسجيل الدخول إلى حسابك.
 
 ## <a name="open-a-private-browsing-session"></a>فتح جلسة استعراض خاصة
 
@@ -52,8 +50,8 @@ ms.locfileid: "65078812"
 
 ## <a name="more-information"></a>معلومات إضافية
 
-- لا يتضمن اشتراك Azure Active Directory المجاني تقرير نشاط تسجيل الدخول. لتسجيل نشاط تسجيل الدخول (الذي يمكن أن يكون مفيدا في خرق البيانات)، تحتاج إلى اشتراك Premium Azure Active Directory. لمزيد من المعلومات، راجع [المدة التي يخزن فيها Azure AD البيانات؟](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+- لا يتضمن اشتراك Azure Active Directory المجاني تقرير نشاط تسجيل الدخول. لتسجيل نشاط تسجيل الدخول (الذي يمكن أن يكون مفيدا في خرق البيانات)، تحتاج إلى اشتراك Azure Active Directory Premium. لمزيد من المعلومات، راجع [المدة التي يخزنها Azure AD البيانات؟](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
-- يمكنك أيضا الوصول إلى مركز إدارة **Azure Active Directory** من مركز مسؤولي Microsoft 365. في جزء التنقل الأيمن من مركز مسؤولي Microsoft 365، انقر فوق **"Admin center** \> [**Azure Active Directory**](https://go.microsoft.com/fwlink/p/?linkid=2067268)".
+- يمكنك أيضا الوصول إلى مركز إدارة **Azure Active Directory** من مركز مسؤولي Microsoft 365. في جزء التنقل الأيمن من مركز مسؤولي Microsoft 365، انقر فوق **مسؤول مراكز** \> [**Azure Active Directory**](https://go.microsoft.com/fwlink/p/?linkid=2067268).
 
-- للحصول على معلومات حول إدارة المستخدمين والمجموعات وتنفيذ مهام إدارة الدليل الأخرى، راجع [إدارة دليل Azure AD](/azure/active-directory/active-directory-administer).
+- للحصول على معلومات حول إدارة المستخدمين والمجموعات وتنفيذ مهام أخرى لإدارة الدليل، راجع [إدارة دليل Azure AD](/azure/active-directory/active-directory-administer).

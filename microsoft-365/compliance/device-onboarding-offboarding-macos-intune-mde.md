@@ -14,16 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: تعرف على كيفية إلحاق أجهزة macOS وإلحاقها بحلول Microsoft Purview باستخدام Microsoft Intune لعملاء MDE
-ms.openlocfilehash: c6b374ad3c35ba3441e82412d9897132006d0559
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 3e6947483a4d3320b61211edeb0f9fdc3e31095d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952831"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623020"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>إلحاق أجهزة macOS وإلحاقها في حلول التوافق باستخدام Intune لعملاء Microsoft Defender لنقطة النهاية
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>إلحاق أجهزة macOS وإلغاء إلحاقها بحلول التوافق باستخدام Intune ل Microsoft Defender لعملاء نقطة النهاية
 
 > [!IMPORTANT]
 > استخدم هذا الإجراء ***إذا قمت*** بنشر Microsoft Defender لنقطة النهاية (MDE) على أجهزة macOS
@@ -38,7 +36,7 @@ ms.locfileid: "64952831"
 ## <a name="before-you-begin"></a>قبل البدء
 
 - تأكد من [إلحاق أجهزة macOS في Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) وتسجيلها في [تطبيق Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
-- تأكد من أن لديك حق الوصول إلى [مركز إدارة نقاط النهاية من Microsoft](https://endpoint.microsoft.com/#home)
+- تأكد من أن لديك حق الوصول إلى [مركز إدارة نقاط النهاية Microsoft](https://endpoint.microsoft.com/#home)
 - هذا يدعم إصدار macOS Catalina 10.15 والإصدارات الأحدث
 - تثبيت مستعرض v95+ Edge على أجهزة macOS 
 
@@ -63,7 +61,7 @@ ms.locfileid: "64952831"
 
 ### <a name="create-system-configuration-profiles"></a>إنشاء ملفات تعريف تكوين النظام
 
-1. افتح **ملفات تعريف إدارة نقاط النهاية من Microsoft** **centerDevicesConfiguration** >  > .
+1. افتح **ملفات تعريف تكوين** **الأجهزة** >  لمركز  > **Microsoft إدارة نقاط النهاية**.
 
 1. اختر: **إنشاء ملف تعريف**. 
 
@@ -84,7 +82,7 @@ ms.locfileid: "64952831"
 
 1. راجع الإعدادات واختر **"إنشاء** " لنشر التكوين.
 
-1. افتح **ملفات تعريف DevicesConfiguration** > ، يجب أن تشاهد ملفات التعريف التي تم إنشاؤها هناك.
+1. افتح **ملفات تعريف تكوين** **الأجهزة** > ، يجب أن تشاهد ملفات التعريف التي تم إنشاؤها هناك.
 
 1. في صفحة **ملفات تعريف التكوين** ، اختر ملف التعريف الذي أنشأته للتو، في هذا المثال *AccessibilityformacOS* واختر **حالة الجهاز** لعرض قائمة بالأجهزة وحالة نشر ملف تعريف التكوين.
 
@@ -109,7 +107,7 @@ ms.locfileid: "64952831"
 > [!IMPORTANT]
 > يؤدي إلغاء الإلحاق إلى توقف الجهاز عن إرسال بيانات جهاز الاستشعار إلى المدخل ولكن سيتم الاحتفاظ بالبيانات من الجهاز، بما في ذلك الإشارة إلى أي تنبيهات كان قد تم الاحتفاظ بها لمدة تصل إلى 6 أشهر.
 
-1. في **مركز إدارة نقاط النهاية من Microsoft**، افتح **ملفات تعريف DevicesConfiguration** > ، يجب أن تشاهد ملفات التعريف التي تم إنشاؤها هناك.
+1. في **مركز microsoft إدارة نقاط النهاية**، افتح **ملفات تعريف تكوين** **الأجهزة** > ، يجب أن تشاهد ملفات التعريف التي تم إنشاؤها هناك.
 
 2. في صفحة **ملفات تعريف التكوين** ، اختر ملف تعريف تفضيلات MDE.
 

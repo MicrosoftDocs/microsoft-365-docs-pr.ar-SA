@@ -16,17 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: تكوين إعدادات Microsoft Purview eDiscovery (Premium) التي تنطبق على كل مجموعة المراجعة في حالة ما. يتضمن ذلك إعدادات التحليلات والتعرف البصري على الحروف.
-ms.openlocfilehash: 0ef76833d18b44a2a1c39db41f7d6fa31f99293e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: تكوين إعدادات Microsoft Purview eDiscovery (Premium) التي تنطبق على كافة مجموعة المراجعات في حالة ما. يتضمن ذلك إعدادات التحليلات والتعرف البصري على الحروف.
+ms.openlocfilehash: 315448606e99a768bacd8d7d4ac7f858c79c7bed
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097129"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624554"
 ---
 # <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>تكوين إعدادات البحث والتحليلات في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك تكوين الإعدادات لكل حالة Microsoft Purview eDiscovery (Premium) للتحكم في الوظائف التالية.
 
@@ -44,7 +42,7 @@ ms.locfileid: "65097129"
 
 1. في صفحة **eDiscovery (Premium)،** حدد الحالة.
 
-2. على علامة التبويب **الإعدادات**، ضمن **"بحث & التحليلات**"، انقر فوق **"تحديد**".
+2. ضمن علامة التبويب **"إعدادات"** ، ضمن **"بحث & التحليلات**"، انقر فوق **"تحديد**".
 
    يتم عرض صفحة إعدادات الحالة. يتم تطبيق هذه الإعدادات على كافة مجموعات المراجعة في حالة ما.
 
@@ -74,7 +72,7 @@ ms.locfileid: "65097129"
 
 ## <a name="review-set-query"></a>استعلام مجموعة المراجعة
 
-إذا قمت بتحديد خانة **الاختيار "إنشاء بحث محفوظ للمراجعة" تلقائيا بعد خانة الاختيار "تحليلات**"، يقوم eDiscovery (Premium) بإنشاء استعلام مجموعة المراجعة تلقائيا **المسمى "للمراجعة".** 
+إذا قمت بتحديد **تلقائيا إنشاء بحث محفوظ للمراجعة بعد** خانة اختيار التحليلات، يقوم eDiscovery (Premium) بإنشاء استعلام مجموعة المراجعة تلقائيا **المسمى "للمراجعة".** 
 
 ![الاستعلام "للمراجعة" الذي تم إنشاؤه تلقائيا.](../media/AeDForReviewQuery.png)
 

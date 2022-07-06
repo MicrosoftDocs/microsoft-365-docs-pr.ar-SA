@@ -18,18 +18,16 @@ ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: احصل على نظرة عامة على مرحلة التقييم ودورها في تحديد ثراء المشكلات أثناء التدريب على الصلة في Microsoft Purview eDiscovery (Premium).
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3bfd6087bbcade2c7e4d9afdcda0f47bbea6f53d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 19d518e116fbd86dc0f781443ba16c21890c4346
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096105"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625535"
 ---
-# <a name="assessment-in-the-relevance-module-in-ediscovery-premium"></a>التقييم في الوحدة النمطية الصلة في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="assessment-in-the-relevance-module-in-ediscovery-premium"></a>التقييم في وحدة الصلة في eDiscovery (Premium)
   
-يتيح Microsoft Purview eDiscovery (Premium) التقييم المبكر، على سبيل المثال، للمشكلات المحددة والبيانات المستوردة لحالة ما. يتيح eDiscovery (Premium) للخبراء اتخاذ قرارات بشأن نهج معتمد وتطبيق هذه القرارات على مشروع مراجعة المستندات.
+Microsoft Purview eDiscovery (Premium) يتيح التقييم المبكر، على سبيل المثال، للمشكلات المحددة والبيانات المستوردة لحالة ما. يتيح eDiscovery (Premium) للخبراء اتخاذ قرارات حول نهج معتمد وتطبيق هذه القرارات على مشروع مراجعة المستندات.
   
 ## <a name="understanding-assessment"></a>فهم التقييم
 

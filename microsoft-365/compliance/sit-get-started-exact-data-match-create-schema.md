@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: إنشاء المخطط لأنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 080bdff37893bcf0d41414c066b51727d2650f7a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d5c2038dd7f3b4a6a96ad5e320e73254b21519f8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017153"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622008"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>إنشاء المخطط لأنواع المعلومات الحساسة المستندة إلى مطابقة البيانات بدقة
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك إنشاء المخطط وEDM SIT باستخدام [مخطط مطابقة البيانات الدقيق ومعالج نمط المعلومات الحساسة](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) أو [يدويا](#create-exact-data-match-schema-manually-and-upload). يمكنك أيضا دمج كل من استخدام أسلوب واحد لإنشاء المخطط وتحريره لاحقا باستخدام الأسلوب الآخر.
 
@@ -50,7 +48,7 @@ ms.locfileid: "66017153"
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>استخدام مخطط مطابقة البيانات الدقيق ومعالج نمط نوع المعلومات الحساسة
 
-1. في مدخل توافق Microsoft Purview للمستأجر الخاص بك، انتقل إلى بيانات **تصنيف** >  البيانات **الدقيقة التي** >  تطابق **مخططات EDM**.
+1. في مدخل التوافق في Microsoft Purview للمستأجر الخاص بك انتقل إلى **بيانات تصنيف** >  البيانات **الدقيقة تتطابق** >  مع **مخططات EDM**.
 
 2. اختر **إنشاء مخطط EDM** لفتح القائمة المنبثقة لتكوين معالج المخطط.
 
@@ -80,7 +78,7 @@ ms.locfileid: "66017153"
 
 إذا قمت بإنشاء مخطط EDM في معالج مخطط EDM، يجب تصدير ملف مخطط EDM بتنسيق XML. ستحتاج إليها في [تجزئة وتحميل جدول مصدر المعلومات الحساسة لمرحلة أنواع المعلومات الحساسة المطابقة تماما للبيانات](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) .
 
-1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. لتصدير ملف مخطط EDM، استخدم بناء الجملة هذا:
 
@@ -153,7 +151,7 @@ ms.locfileid: "66017153"
       - استخدام أسماء الأعمدة لقيم *اسم الحقل* .
       - استخدم *searchable="true"* للحقول التي تريد أن تكون قابلة للبحث والحقول الأساسية بحد أقصى 5 حقول. يجب أن يكون حقل واحد على الأقل قابلا للبحث.
 
-      على سبيل المثال، يحدد ملف XML التالي مخطط قاعدة بيانات سجلات المرضى، مع خمسة حقول محددة على أنها قابلة للبحث: *PatientID* و *MRN* *وSSN* *الهاتف* و *DOB*.
+      على سبيل المثال، يحدد ملف XML التالي مخطط قاعدة بيانات سجلات المرضى، مع خمسة حقول محددة على أنها قابلة للبحث: *PatientID* و *MRN* *وSSN* و *Phone* و *DOB*.
 
       (يمكنك نسخ المثال وتعديله واستخدامه.)
 
@@ -175,7 +173,7 @@ ms.locfileid: "66017153"
 
    بمجرد إنشاء ملف مخطط EDM بتنسيق XML، يجب عليك تحميله إلى خدمة السحابة.
 
-2. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+2. [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 3. لتحميل مخطط قاعدة البيانات، قم بتشغيل الأمر التالي:
 

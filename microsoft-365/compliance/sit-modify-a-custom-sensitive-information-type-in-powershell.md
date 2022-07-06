@@ -15,16 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على كيفية تعديل معلومات حساسة مخصصة باستخدام PowerShell.
-ms.openlocfilehash: deb50679702cec69187392337511b4dde2d1ceb3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 639a52526924d3068ce2d1cd38006a1773b6d098
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014377"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621943"
 ---
 # <a name="modify-a-custom-sensitive-information-type-using-powershell"></a>تعديل نوع معلومات حساسة مخصص باستخدام PowerShell
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 في Security & Compliance PowerShell، يتطلب منك تعديل نوع معلومات حساسة مخصص:
 
@@ -90,6 +88,6 @@ Set-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllB
 
 ## <a name="more-information"></a>معلومات إضافية
 
-- [تعرف على منع فقدان بيانات Microsoft Purview](dlp-learn-about-dlp.md)
+- [تعرف على تفادي فقدان البيانات في Microsoft Purview](dlp-learn-about-dlp.md)
 - [تعريفات كيان نوع المعلومات الحساسة](sensitive-information-type-entity-definitions.md)
 - [دالات نوع المعلومات الحساسة](sit-functions.md)

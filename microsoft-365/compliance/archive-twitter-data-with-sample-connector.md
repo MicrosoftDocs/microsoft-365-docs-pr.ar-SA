@@ -15,20 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: تعرف على كيفية إعداد المسؤولين واستخدام موصل أصلي لاستيراد بيانات Twitter إلى Microsoft 365.
-ms.openlocfilehash: ba151d1ffae18a5df033fbb8696fcd3bf759f285
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1dd5de91484d04411b5216f6801589b32ef381ce
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094537"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625534"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>إعداد موصل Microsoft أرشفة بيانات Twitter (معاينة)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+استخدم موصلا في مدخل التوافق في Microsoft Purview لاستيراد البيانات وأرشفتها من Twitter إلى Microsoft 365. بعد إعداد الموصل وتكوينه، يتصل بحساب Twitter الخاص بمؤسستك (على أساس مجدول)، ويحول محتوى عنصر إلى تنسيق رسالة بريد إلكتروني، ثم يستورد هذه العناصر إلى علبة بريد في Microsoft 365.
 
-استخدم موصلا في مدخل توافق Microsoft Purview لاستيراد البيانات وأرشفتها من Twitter إلى Microsoft 365. بعد إعداد الموصل وتكوينه، يتصل بحساب Twitter الخاص بمؤسستك (على أساس مجدول)، ويحول محتوى عنصر إلى تنسيق رسالة بريد إلكتروني، ثم يستورد هذه العناصر إلى علبة بريد في Microsoft 365.
-
-بعد استيراد بيانات Twitter، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي والبحث في المحتوى In-Place الأرشفة والتدقيق ونهج استبقاء Microsoft 365 على بيانات Twitter. على سبيل المثال، عند وضع علبة بريد في احتجاز التقاضي أو تعيينها إلى نهج استبقاء، يتم الاحتفاظ ببيانات Twitter. يمكنك البحث في بيانات الجهات الخارجية باستخدام البحث عن المحتوى أو إقران علبة البريد حيث يتم تخزين بيانات Twitter مع أمين في حالة Microsoft Purview eDiscovery (Premium). يمكن أن يساعد استخدام موصل لاستيراد بيانات Twitter وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
+بعد استيراد بيانات Twitter، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي والبحث عن المحتوى In-Place نهج الاستبقاء والتدقيق والأرشفة وMicrosoft 365 على بيانات Twitter. على سبيل المثال، عند وضع علبة بريد في احتجاز التقاضي أو تعيينها إلى نهج استبقاء، يتم الاحتفاظ ببيانات Twitter. يمكنك البحث في بيانات الجهات الخارجية باستخدام "البحث عن المحتوى" أو إقران علبة البريد حيث يتم تخزين بيانات Twitter مع أمين في حالة Microsoft Purview eDiscovery (Premium). يمكن أن يساعد استخدام موصل لاستيراد بيانات Twitter وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
 
 بعد استيراد بيانات Twitter، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي والبحث في المحتوى In-Place الأرشفة والتدقيق وتوافق الاتصالات ونهج استبقاء Microsoft 365 على البيانات المخزنة في علبة البريد. على سبيل المثال، يمكنك البحث في بيانات Twitter باستخدام البحث عن المحتوى أو إقران علبة البريد حيث يتم تخزين البيانات مع أمين في حالة eDiscovery (Premium). يمكن أن يساعد استخدام موصل لاستيراد بيانات Twitter وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
 
@@ -45,27 +43,27 @@ ms.locfileid: "65094537"
     - [التسجيل للحصول على اشتراك Pay-As-You-Go Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > لا يدعم [اشتراك Azure Active Directory المجاني](use-your-free-azure-ad-subscription-in-office-365.md) المضمن في اشتراكك في Microsoft 365 الموصلات في مدخل التوافق.
+    > لا يدعم [اشتراك Azure Active Directory المجاني](use-your-free-azure-ad-subscription-in-office-365.md) المضمن مع اشتراكك في Microsoft 365 الموصلات في مدخل التوافق.
 
 - يمكن لموصل Twitter استيراد ما مجموعه 200000 عنصر في يوم واحد. إذا كان هناك أكثر من 200000 عنصر Twitter في يوم واحد، فلن يتم استيراد أي من هذه العناصر إلى Microsoft 365.
 
-- يجب تعيين دور مسؤول موصل البيانات للمستخدم الذي يقوم بإعداد موصل Twitter في مدخل التوافق (في الخطوة 5). هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل التوافق. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور مسؤول موصل البيانات، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع قسم "إنشاء مجموعة أدوار مخصصة" في [الأذونات في مدخل توافق Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
+- يجب تعيين دور مسؤول موصل البيانات للمستخدم الذي يقوم بإعداد موصل Twitter في مدخل التوافق (في الخطوة 5). هذا الدور مطلوب لإضافة موصلات على صفحة **موصلات البيانات** في مدخل التوافق. تتم إضافة هذا الدور بشكل افتراضي إلى مجموعات أدوار متعددة. للحصول على قائمة بمجموعات الأدوار هذه، راجع قسم "الأدوار في مراكز الأمان والتوافق" في ["الأذونات" في مركز توافق & الأمان](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center). بدلا من ذلك، يمكن للمسؤول في مؤسستك إنشاء مجموعة أدوار مخصصة، وتعيين دور موصل البيانات مسؤول، ثم إضافة المستخدمين المناسبين كأعضاء. للحصول على الإرشادات، راجع المقطع "إنشاء مجموعة أدوار مخصصة" في ["الأذونات" في مدخل التوافق في Microsoft Purview](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group).
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>الخطوة 1: إنشاء تطبيق في Azure Active Directory
 
-الخطوة الأولى هي تسجيل تطبيق جديد في Azure Active Directory (AAD (دليل Azure النشط)). يتوافق هذا التطبيق مع مورد تطبيق الويب الذي تنفذه في الخطوة 2 لموصل Twitter.
+الخطوة الأولى هي تسجيل تطبيق جديد في Azure Active Directory (AAD). يتوافق هذا التطبيق مع مورد تطبيق الويب الذي تنفذه في الخطوة 2 لموصل Twitter.
 
 للحصول على إرشادات مفصلة خطوة بخطوة، راجع [إنشاء تطبيق في Azure Active Directory](deploy-twitter-connector.md#step-1-create-an-app-in-azure-active-directory).
 
 أثناء إكمال هذه الخطوة (باتباع الإرشادات المفصلة خطوة بخطوة)، ستحفظ المعلومات التالية في ملف نصي. سيتم استخدام هذه القيم في خطوات لاحقة في عملية النشر.
 
-- معرف تطبيق AAD (دليل Azure النشط)
+- معرف تطبيق AAD
 
-- AAD (دليل Azure النشط) سر التطبيق
+- سر تطبيق AAD
 
 - معرف المستأجر
 
-## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a>الخطوة 2: نشر خدمة الويب للموصل من مستودع GitHub إلى حساب Azure الخاص بك
+## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a>الخطوة 2: نشر خدمة ويب الموصل من مستودع GitHub إلى حساب Azure الخاص بك
 
 الخطوة التالية هي نشر التعليمات البرمجية المصدر لتطبيق موصل Twitter الذي سيستخدم واجهة برمجة تطبيقات Twitter للاتصال بحساب Twitter واستخراج البيانات حتى تتمكن من استيرادها إلى Microsoft 365. سيقوم موصل Twitter الذي تنشره لمؤسستك بتحميل العناصر من حساب Twitter الخاص بمؤسستك إلى موقع Azure Storage الذي تم إنشاؤه في هذه الخطوة. بعد إنشاء موصل Twitter في مدخل التوافق (في الخطوة 5)، ستقوم خدمة استيراد Microsoft 365 بنسخ بيانات Twitter من موقع تخزين Azure إلى علبة بريد في Microsoft 365. كما هو موضح سابقا في قسم ["قبل إعداد الموصل](#before-you-set-up-a-connector) "، يجب أن يكون لديك اشتراك Azure صالح لإنشاء حساب Azure Storage.
 
@@ -81,7 +79,7 @@ ms.locfileid: "65094537"
 
 - APISecretKey: يمكنك إنشاء هذا السر أثناء إكمال هذه الخطوة. يتم استخدامه في الخطوة 5.
 
-- tenantId: معرف المستأجر لمؤسستك Microsoft 365 التي نسختها بعد إنشاء تطبيق Twitter في Azure Active Directory في الخطوة 1.
+- tenantId: معرف المستأجر لمؤسسة Microsoft 365 التي نسختها بعد إنشاء تطبيق Twitter في Azure Active Directory في الخطوة 1.
 
 بعد إكمال هذه الخطوة، تأكد من نسخ عنوان URL الخاص بخدمة التطبيق (على سبيل المثال، `https://twitterconnector.azurewebsites.net`). تحتاج إلى استخدام عنوان URL هذا لإكمال الخطوة 3 والخطوة 4 والخطوة 5).
 
@@ -117,15 +115,15 @@ ms.locfileid: "65094537"
 
 - Twitter Access Token Secret (تم الحصول عليه في الخطوة 3)
 
-- معرف تطبيق Azure Active Directory (معرف تطبيق AAD (دليل Azure النشط) الذي تم الحصول عليه في الخطوة 1)
+- معرف تطبيق Azure Active Directory (معرف تطبيق AAD الذي تم الحصول عليه في الخطوة 1)
 
-- سر تطبيق Azure Active Directory (سر تطبيق AAD (دليل Azure النشط) الذي تم الحصول عليه في الخطوة 1)
+- سر تطبيق Azure Active Directory (سر تطبيق AAD الذي تم الحصول عليه في الخطوة 1)
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-compliance-portal"></a>الخطوة 5: إعداد موصل Twitter في مدخل التوافق
 
-الخطوة الأخيرة هي إعداد موصل Twitter في مدخل التوافق الذي سيستورد البيانات من حساب Twitter الخاص بمؤسستك إلى علبة بريد محددة في Microsoft 365. بعد إكمال هذه الخطوة، ستبدأ خدمة استيراد Microsoft 365 باستيراد البيانات من حساب Twitter الخاص بمؤسستك إلى Microsoft 365.
+الخطوة الأخيرة هي إعداد موصل Twitter في مدخل التوافق الذي سيستورد البيانات من حساب Twitter الخاص بمؤسستك إلى علبة بريد محددة في Microsoft 365. بعد إكمال هذه الخطوة، ستبدأ خدمة استيراد Microsoft 365 في استيراد البيانات من حساب Twitter الخاص بمؤسستك إلى Microsoft 365.
 
-للحصول على إرشادات مفصلة خطوة بخطوة، راجع [إعداد موصل Twitter في مدخل توافق Microsoft Purview](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-compliance-portal).
+للحصول على إرشادات مفصلة خطوة بخطوة، راجع [إعداد موصل Twitter في مدخل التوافق في Microsoft Purview](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-compliance-portal).
 
 أثناء إكمال هذه الخطوة (باتباع الإرشادات المفصلة خطوة بخطوة)، ستوفر المعلومات التالية (التي قمت بنسخها إلى ملف نصي بعد إكمال الخطوات).
 

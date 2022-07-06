@@ -14,54 +14,54 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: استخدم أدوات إدارة الجهاز المحمول لنشر حزمة التكوين على الأجهزة بحيث يتم تهيئةها للخدمة.
-ms.openlocfilehash: 9b329ccf86a2364c13ac72bd4348711d72c17ff5
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+description: استخدم أدوات إدارة الجهاز الأجهزة المحمولة لنشر حزمة التكوين على الأجهزة بحيث يتم إلحاقها للخدمة.
+ms.openlocfilehash: d5c03c80c9a38d34ab27f888084604372874a64a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634482"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624190"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-using-mobile-device-management-tools"></a>إلحاق أجهزة Windows 10 وأجهزة Windows 11 باستخدام أدوات إدارة الأجهزة المحمولة
 
 **ينطبق على:**
 
-- [Microsoft 365 فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
-- [إدارة المخاطر الداخلية](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [منع فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
+- [إدارة المخاطر الداخلية](insider-risk-management.md)
 
-يمكنك استخدام حلول إدارة أجهزة المحمول (MDM) لتكوين الأجهزة. Microsoft 365 حماية المعلومات إلى دعم MDMs من خلال توفير OMA-URIs لإنشاء سياسات لإدارة الأجهزة.
+يمكنك استخدام حلول إدارة أجهزة المحمول (MDM) لتكوين الأجهزة. تدعم حماية المعلومات في Microsoft 365 أجهزة MDMs من خلال توفير OMA-URIs لإنشاء نهج لإدارة الأجهزة.
 
 
 ## <a name="before-you-begin"></a>قبل البدء
-إذا كنت تستخدم Microsoft Intune، فيجب أن يكون الجهاز MDM مسجلا. وإلا، لن يتم تطبيق الإعدادات بنجاح. 
+إذا كنت تستخدم Microsoft Intune، يجب أن يكون الجهاز MDM مسجلا. وإلا، فلن يتم تطبيق الإعدادات بنجاح. 
 
-لمزيد من المعلومات حول تمكين MDM باستخدام Microsoft Intune، راجع [تسجيل الجهاز (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
+لمزيد من المعلومات حول تمكين MDM باستخدام Microsoft Intune، راجع [تسجيل الجهاز (Microsoft Intune).](/mem/intune/enrollment/device-enrollment)
 
-## <a name="onboard-devices-using-microsoft-intune"></a>الأجهزة المجهزة باستخدام Microsoft Intune
+## <a name="onboard-devices-using-microsoft-intune"></a>إلحاق الأجهزة باستخدام Microsoft Intune
 
-اتبع الإرشادات الواردة [من Intune](/mem/intune/protect/advanced-threat-protection-configure).
+اتبع الإرشادات من [Intune](/mem/intune/protect/advanced-threat-protection-configure).
  
 > [!NOTE]
-> - يستخدم **نهج حالة الصحة** للأجهزة المجهزة خصائص للقراءة فقط ولا يمكن إصلاحها.
+> - يستخدم نهج **الحالة الصحية للأجهزة المضمنة** خصائص للقراءة فقط ولا يمكن معالجتها.
 
-## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>إيقاف تشغيل الأجهزة ومراقبتها باستخدام أدوات الأجهزة المحمولة إدارة الجهاز المحمول
+## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>إيقاف تشغيل الأجهزة ومراقبتها باستخدام أدوات إدارة الجهاز الأجهزة المحمولة
 
-لأسباب تتعلق الأمان، ستنتهي صلاحية الحزمة المستخدمة في أجهزة Offboard بعد 30 يوما من تاريخ تنزيلها. سيتم رفض حزم إيقاف التشغيل منتهية الصلاحية المرسلة إلى جهاز. عند تنزيل حزمة إيقاف التشغيل، سيتم إعلامك بتاريخ انتهاء صلاحية الحزم، كما سيتم تضمينها في اسم الحزمة.
+لأسباب تتعلق بالأمان، ستنتهي صلاحية الحزمة المستخدمة في أجهزة Offboard بعد 30 يوما من تاريخ تنزيلها. سيتم رفض حزم الإلحاق المنتهية الصلاحية المرسلة إلى جهاز. عند تنزيل حزمة الإلحاق، سيتم إعلامك بتاريخ انتهاء صلاحية الحزم وسيتم تضمينها أيضا في اسم الحزمة.
 
 > [!NOTE]
-> يجب عدم نشر سياسات التكئب أو إيقاف التشغيل على الجهاز نفسه في الوقت نفسه، وإلا سيتسبب ذلك في حدوث تضاربات لا يمكن التنبؤ بها.
+> يجب عدم نشر نهج الإلحاق والإلحاق على نفس الجهاز في نفس الوقت، وإلا فسيؤدي ذلك إلى تضاربات غير متوقعة.
 
-1. احصل على حزمة إيقاف التشغيل من <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مركز التوافق في Microsoft 365</a>.
+1. احصل على حزمة الإلحاق من <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>.
 
-2. في جزء التنقل **، حدد الإعدادات** >  **الإعادة الboardingOffboarding** > .
+2. في جزء التنقل، حدد **"إعدادات** > **الجهاز" ضمن** > **"إلغاء الإلحاق**".
 
-3. في الحقل **أسلوب النشر**، حدد الأجهزة المحمولة إدارة الجهاز **/ Microsoft Intune**.
+3. في حقل **أسلوب النشر**، حدد **"Mobile إدارة الجهاز/ Microsoft Intune**".
 
-4. انقر **فوق تنزيل الحزمة**، واحفظ .zip الملف.
+4. انقر فوق **"تنزيل الحزمة**"، واحفظ ملف .zip.
 
-5. استخراج محتويات ملف .zip إلى موقع مشترك للقراءة فقط يمكن الوصول إليه من قبل مسؤولي الشبكة الذين سينشرون الحزمة. يجب أن يكون لديك ملف *يسمى DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
+5. استخراج محتويات ملف .zip إلى موقع مشترك للقراءة فقط يمكن الوصول إليه من قبل مسؤولي الشبكة الذين سينشرون الحزمة. يجب أن يكون لديك ملف يسمى *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
 
-6. استخدم Microsoft Intune التكوين المخصص لنشر إعدادات OMA-URI المدعومة التالية.
+6. استخدم نهج التكوين المخصص Microsoft Intune لنشر إعدادات OMA-URI المدعومة التالية.
 
     ```text
     OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding
@@ -69,17 +69,17 @@ ms.locfileid: "64634482"
     Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
     ```
 > [!NOTE]
-> إذا Microsoft Defender لنقطة النهاية تم تكوينه بالفعل، يمكنك **تشغيل** تهيئة الجهاز ولم تعد الخطوة 6 مطلوبة.
+> إذا تم تكوين Microsoft Defender لنقطة النهاية بالفعل، يمكنك **تشغيل إلحاق الجهاز** ولم تعد الخطوة 6 مطلوبة.
 
 > [!NOTE]
-> يستخدم **نهج حالة الصحة** للأجهزة غير المجهزة خصائص للقراءة فقط ولا يمكن إصلاحها.
+> يستخدم نهج **الحالة الصحية للأجهزة التي تم إلغاء إلحاقها** خصائص للقراءة فقط ولا يمكن معالجتها.
 
 > [!IMPORTANT]
-> يؤدي إيقاف التشغيل إلى إيقاف الجهاز عن إرسال بيانات المستشعر إلى المدخل ولكن سيتم الاحتفاظ بالبيانات من الجهاز، بما في ذلك الإشارة إلى أي تنبيهات لديه لمدة تصل إلى 6 أشهر.
+> يؤدي إلغاء الإلحاق إلى توقف الجهاز عن إرسال بيانات جهاز الاستشعار إلى المدخل ولكن سيتم الاحتفاظ بالبيانات من الجهاز، بما في ذلك الإشارة إلى أي تنبيهات كان قد تم الاحتفاظ بها لمدة تصل إلى 6 أشهر.
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
-- [أجهزة Windows 10 باستخدام نهج المجموعة](device-onboarding-gp.md)
-- [أجهزة Windows 10 التي تستخدم Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
-- [أجهزة Windows 10 باستخدام برنامج نصي محلي](device-onboarding-script.md)
+- [إلحاق أجهزة Windows 10 باستخدام نهج المجموعة](device-onboarding-gp.md)
+- [إلحاق أجهزة Windows 10 باستخدام نقطة نهاية Microsoft Configuration Manager](device-onboarding-sccm.md)
+- [إلحاق أجهزة Windows 10 باستخدام برنامج نصي محلي](device-onboarding-script.md)
 - [أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة](device-onboarding-vdi.md)
-- [استكشاف مشاكل توفير الحماية المتقدمة من المخاطر ل Microsoft Defender وإصلاحها](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [استكشاف أخطاء الحماية المتقدمة من التهديدات في Microsoft Defender وإصلاحها](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

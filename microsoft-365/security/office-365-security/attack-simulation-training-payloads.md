@@ -1,5 +1,5 @@
 ---
-title: حمولات في تدريب محاكاة الهجوم
+title: البيانات الأساسية في تدريب محاكاة الهجوم
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إنشاء وإدارة حمولات التدريب على محاكاة الهجوم في Microsoft Defender لـ Office 365 الخطة 2.
 ms.technology: mdo
-ms.openlocfilehash: 38e9e60c50a7bc0dec4e8f9f75845fdc34e4b237
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6cb3f2b2edb3c55063db2640eab1dd888f9aa5b7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487213"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621282"
 ---
 # <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>حمولات في تدريب محاكاة الهجوم في Defender لـ Office 365
 
@@ -101,7 +101,7 @@ ms.locfileid: "66487213"
    ![إنشاء حمولة على علامة تبويب حمولة المستأجر في Payloads في تدريب محاكاة الهجوم في مدخل Microsoft 365 Defender.](../../media/attack-sim-training-payload-create.png)
 
    > [!NOTE]
-   > ![إنشاء أيقونة حمولة.](../../media/m365-cc-sc-create-icon.png) يتوفر **أيضا إنشاء حمولة** على صفحة **تحديد الحمولة** لمعالج إنشاء المحاكاة. لمزيد من المعلومات، راجع [محاكاة هجوم تصيد احتيالي في Defender لـ Office 365](attack-simulation-training.md).
+   > ![إنشاء أيقونة حمولة.](../../media/m365-cc-sc-create-icon.png) يتوفر **إنشاء حمولة** أيضا على خطوة **صفحة تحديد الحمولة وتسجيل الدخول** لمعالج إنشاء المحاكاة. لمزيد من المعلومات، راجع [إنشاء محاكاة: حدد صفحة الحمولة وتسجيل الدخول](attack-simulation-training.md#select-a-payload-and-login-page).
    >
    > في أي وقت أثناء معالج الإنشاء، يمكنك النقر فوق **"حفظ" و"إغلاق** " لحفظ تقدمك ومتابعة تكوين الحمولة لاحقا. يمكنك المتابعة من حيث توقفت عن طريق تحديد الإعلام على علامة تبويب **«Tenant payloads** » في **Payloads**، ثم النقر فوق أيقونة ![«Edit payload».](../../media/m365-cc-sc-edit-icon.png) **تحرير الحمولة**. سيكون للحمولة المكتملة جزئيا "**مسودة** قيمة **الحالة**".
 

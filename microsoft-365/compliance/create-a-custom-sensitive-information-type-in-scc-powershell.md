@@ -15,16 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على كيفية إنشاء نوع معلومات حساسة مخصص واستيراده للنهج في مركز التوافق.
-ms.openlocfilehash: 8678b7c218844d9963bd610b66e8b6c2c2647dea
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b71893afad2d68f9820f23e60ae9c3b15531f976
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014509"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625578"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>إنشاء نوع معلومات حساسة مخصص باستخدام PowerShell
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 توضح لك هذه المقالة كيفية إنشاء ملف *حزمة قاعدة* XML الذي يعرف [أنواع المعلومات الحساسة](sensitive-information-type-entity-definitions.md) المخصصة. تصف هذه المقالة نوع معلومات حساسة مخصص يعرف معرف الموظف. يمكنك استخدام نموذج XML في هذه المقالة كنقطة بداية لملف XML الخاص بك.
 
@@ -33,7 +31,7 @@ ms.locfileid: "66014509"
 بعد إنشاء ملف XML بشكل جيد، يمكنك تحميله إلى Microsoft 365 باستخدام PowerShell. بعد ذلك، أنت مستعد لاستخدام نوع المعلومات الحساسة المخصصة في النهج. يمكنك اختبار فعاليتها في الكشف عن المعلومات الحساسة كما أردت.
 
 > [!NOTE]
-> إذا لم تكن بحاجة إلى عنصر التحكم الدقيق الذي يوفره PowerShell، يمكنك إنشاء أنواع معلومات حساسة مخصصة في مدخل توافق Microsoft Purview. لمزيد من المعلومات، راجع [إنشاء نوع معلومات حساسة مخصص](create-a-custom-sensitive-information-type.md).
+> إذا لم تكن بحاجة إلى عنصر التحكم الدقيق الذي يوفره PowerShell، يمكنك إنشاء أنواع معلومات حساسة مخصصة في مدخل التوافق في Microsoft Purview. لمزيد من المعلومات، راجع [إنشاء نوع معلومات حساسة مخصص](create-a-custom-sensitive-information-type.md).
 
 ## <a name="important-disclaimer"></a>إخلاء مسؤولية مهم
 
@@ -327,7 +325,7 @@ ms.locfileid: "66014509"
 
 ## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>هل تريد دعم لغات أخرى في واجهة مستخدم مركز التوافق؟ [عنصر LocalizedStrings]
 
-إذا كان فريق التوافق يستخدم مدخل توافق Microsoft Purview لإنشاء نهج في لغات مختلفة وبغات مختلفة، يمكنك توفير إصدارات مترجمة لاسم ووصف نوع المعلومات الحساسة المخصص. عندما يستخدم فريق التوافق Microsoft 365 بلغة تدعمها، فسيرى الاسم المترجم في واجهة المستخدم.
+إذا كان فريق التوافق يستخدم مدخل التوافق في Microsoft Purview لإنشاء نهج في لغات مختلفة وبغات مختلفة، يمكنك توفير إصدارات مترجمة لاسم ووصف نوع المعلومات الحساسة المخصص. عندما يستخدم فريق التوافق Microsoft 365 بلغة تدعمها، سيرى الاسم المترجم في واجهة المستخدم.
 
 ![عدد المثيلات ومطابقة تكوين الدقة.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
@@ -343,7 +341,7 @@ ms.locfileid: "66014509"
 
 والأهم من ذلك، ستحتاج إلى إنشاء GUID ل RulePack. أعلاه، قمت بإنشاء GUID للكيان؛ هذا GUID ثان ل RulePack. هناك عدة طرق لإنشاء GUIDs، ولكن يمكنك القيام بذلك بسهولة في PowerShell عن طريق كتابة [guid]::NewGuid().
 
-عنصر الإصدار مهم أيضا. عند تحميل حزمة القواعد للمرة الأولى، Microsoft 365 ملاحظات رقم الإصدار. في وقت لاحق، إذا قمت بتحديث حزمة القواعد وتحميل إصدار جديد، فتأكد من تحديث رقم الإصدار أو Microsoft 365 لن يقوم بنشر حزمة القاعدة.
+عنصر الإصدار مهم أيضا. عند تحميل حزمة القواعد للمرة الأولى، يلاحظ Microsoft 365 رقم الإصدار. في وقت لاحق، إذا قمت بتحديث حزمة القواعد وتحميل إصدار جديد، فتأكد من تحديث رقم الإصدار أو لن يقوم Microsoft 365 بنشر حزمة القواعد.
 
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
@@ -372,7 +370,7 @@ ms.locfileid: "66014509"
 
 ## <a name="validators"></a>مدقق
 
-تعرض Microsoft 365 معالجات الوظائف ل SITs شائعة الاستخدام كمدققات. فيما يلي قائمة بها.
+يعرض Microsoft 365 معالجات الوظائف ل SITs شائعة الاستخدام كمدققات. فيما يلي قائمة بها.
 
 ### <a name="list-of-currently-available-validators"></a>قائمة بأجهزة التحقق من الصحة المتوفرة حاليا
 
@@ -418,7 +416,7 @@ ms.locfileid: "66014509"
 </Entity>
 ```
 
-يوفر Microsoft 365 اثنين من المدققات العامة
+يوفر Microsoft 365 اثنين من المدققين العامين
 
 ### <a name="checksum-validator"></a>مدقق المجموع الاختباري
 
@@ -452,17 +450,17 @@ ms.locfileid: "66014509"
 
 ## <a name="changes-for-exchange-online"></a>تغييرات Exchange Online
 
-في السابق، ربما استخدمت Exchange Online PowerShell لاستيراد أنواع المعلومات الحساسة المخصصة ل DLP. الآن يمكن استخدام أنواع المعلومات الحساسة المخصصة في كل من <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">مركز إدارة Exchange</a> ومركز التوافق. كجزء من هذا التحسين، يجب عليك استخدام Security & Compliance PowerShell لاستيراد أنواع المعلومات الحساسة المخصصة — لا يمكنك استيرادها من Exchange Online PowerShell بعد الآن. ستستمر أنواع المعلومات الحساسة المخصصة في العمل كما كان من قبل؛ ومع ذلك، قد يستغرق ظهور التغييرات التي تم إجراؤها على أنواع المعلومات الحساسة المخصصة في مركز التوافق في مركز إدارة Exchange ما يصل إلى ساعة واحدة.
+في السابق، ربما استخدمت Exchange Online PowerShell لاستيراد أنواع المعلومات الحساسة المخصصة ل DLP. الآن يمكن استخدام أنواع المعلومات الحساسة المخصصة في <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">كل من مركز إدارة Exchange</a> ومركز التوافق. كجزء من هذا التحسين، يجب عليك استخدام Security & Compliance PowerShell لاستيراد أنواع المعلومات الحساسة المخصصة — لا يمكنك استيرادها من Exchange Online PowerShell بعد الآن. ستستمر أنواع المعلومات الحساسة المخصصة في العمل كما كان من قبل؛ ومع ذلك، قد يستغرق ظهور التغييرات التي تم إجراؤها على أنواع المعلومات الحساسة المخصصة في مركز التوافق في مركز إدارة Exchange ما يصل إلى ساعة واحدة.
 
-لاحظ أنه في مركز التوافق، يمكنك استخدام **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet لتحميل حزمة قاعدة. (سابقا، في مركز إدارة Exchange، استخدمت **Cmdlet 'ClassificationRuleCollection**.)
+لاحظ أنه في مركز التوافق، يمكنك استخدام **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet لتحميل حزمة قاعدة. (سابقا، في مركز إدارة Exchange، استخدمت  **Cmdlet ل ClassificationRuleCollection**.)
 
-## <a name="upload-your-rule-package"></a>Upload حزمة القواعد
+## <a name="upload-your-rule-package"></a>تحميل حزمة القواعد
 
 لتحميل حزمة القواعد، قم بالخطوات التالية:
 
 1. احفظه كملف .xml مع ترميز Unicode.
 
-2. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
+2. [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
 
 3. استخدم بناء الجملة التالي:
 
@@ -561,7 +559,7 @@ ms.locfileid: "66014509"
 
 يستخدم Microsoft 365 متتبع ارتباطات البحث لتعريف المعلومات الحساسة وتصنيفها في محتوى الموقع. تتم إعادة تجميع المحتوى في SharePoint Online ومواقع OneDrive for Business تلقائيا كلما تم تحديثه. ولكن لتحديد نوع المعلومات الحساسة المخصص الجديد في كل المحتوى الموجود، يجب إعادة تتبع ارتباطات هذا المحتوى.
 
-في Microsoft 365، لا يمكنك طلب إعادة تتبع ارتباطات لمؤسسة بأكملها يدويا، ولكن يمكنك طلب إعادة تتبع الارتباطات يدويا لمجموعة مواقع مشتركة أو قائمة أو مكتبة. لمزيد من المعلومات، راجع [طلب تتبع الارتباطات يدويا وإعادة فهرسة موقع أو مكتبة أو قائمة](/sharepoint/crawl-site-content).
+في Microsoft 365، لا يمكنك طلب إعادة تتبع ارتباطات لمؤسسة بأكملها يدويا، ولكن يمكنك طلب إعادة التسجيل يدويا لمجموعة مواقع مشتركة أو قائمة أو مكتبة. لمزيد من المعلومات، راجع [طلب تتبع الارتباطات يدويا وإعادة فهرسة موقع أو مكتبة أو قائمة](/sharepoint/crawl-site-content).
 
 ## <a name="reference-rule-package-xml-schema-definition"></a>المرجع: تعريف مخطط XML لحزمة القواعد
 
@@ -912,6 +910,6 @@ ms.locfileid: "66014509"
 
 ## <a name="more-information"></a>معلومات إضافية
 
-- [تعرف على منع فقدان بيانات Microsoft Purview](dlp-learn-about-dlp.md)
+- [تعرف على تفادي فقدان البيانات في Microsoft Purview](dlp-learn-about-dlp.md)
 - [تعريفات كيان نوع المعلومات الحساسة](sensitive-information-type-entity-definitions.md)
 - [دالات نوع المعلومات الحساسة](sit-functions.md)

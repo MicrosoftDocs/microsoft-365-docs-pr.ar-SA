@@ -20,22 +20,20 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية إنشاء تقرير يحتوي على معلومات حول كافة قوائم الاحتجاز المقترنة بحالات eDiscovery.
-ms.openlocfilehash: 9db08335ff023172092e7bf8bada7a3976956d29
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 9820eba0e29a510a1881a9349f63c7e2d9650728
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016999"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625468"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>استخدام برنامج نصي لإنشاء تقرير حول قوائم الاحتجاز في حالات eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يتيح البرنامج النصي في هذه المقالة لمسؤولي eDiscovery ومديري eDiscovery إنشاء تقرير يحتوي على معلومات حول جميع قوائم الاحتجاز المقترنة بحالات eDiscovery (قياسي) وeDiscovery (Premium) في مدخل الامتثال ل Microsoft Purview. يحتوي التقرير على معلومات مثل اسم الحالة المقترنة باحتجاز، ومواقع المحتوى الموضوعة قيد الاحتجاز، وما إذا كان الاحتجاز مستندا إلى الاستعلام. إذا كانت هناك حالات لا تحتوي على أي قوائم احتجاز، فسينشئ البرنامج النصي تقريرا إضافيا بقائمة من الحالات دون احتجاز.
+يتيح البرنامج النصي في هذه المقالة لمسؤولي eDiscovery ومديري eDiscovery إنشاء تقرير يحتوي على معلومات حول جميع قوائم الاحتجاز المقترنة بحالات eDiscovery (قياسي) وeDiscovery (Premium) في مدخل التوافق في Microsoft Purview. يحتوي التقرير على معلومات مثل اسم الحالة المقترنة باحتجاز، ومواقع المحتوى الموضوعة قيد الاحتجاز، وما إذا كان الاحتجاز مستندا إلى الاستعلام. إذا كانت هناك حالات لا تحتوي على أي قوائم احتجاز، فسينشئ البرنامج النصي تقريرا إضافيا بقائمة من الحالات دون احتجاز.
 
 راجع القسم ["مزيد من المعلومات](#more-information) " للحصول على وصف مفصل للمعلومات المضمنة في التقرير.
 
-## <a name="admin-requirements-and-script-information"></a>متطلبات المسؤول ومعلومات البرنامج النصي
+## <a name="admin-requirements-and-script-information"></a>متطلبات مسؤول ومعلومات البرنامج النصي
 
 - لإنشاء تقرير حول جميع حالات eDiscovery في مؤسستك، يجب أن تكون مسؤول eDiscovery في مؤسستك. إذا كنت مدير eDiscovery، فسيتضمن التقرير معلومات حول الحالات التي يمكنك الوصول إليها فقط. لمزيد من المعلومات حول أذونات eDiscovery، راجع [تعيين أذونات eDiscovery](assign-ediscovery-permissions.md).
 
@@ -43,9 +41,9 @@ ms.locfileid: "66016999"
 
 - لا يتم دعم نماذج البرامج النصية المتوفرة في هذا الموضوع ضمن أي برنامج دعم أو خدمة قياسية من Microsoft. يتم توفير نماذج البرامج النصية AS IS دون ضمان من أي نوع. وتخلي Microsoft المزيد من المسؤولية عن جميع الضمانات الضمنية، بما في ذلك، على سبيل المثال لا الحصر، أي ضمانات ضمنية لقابلية تجارية أو للياقة لغرض معين. يبقى الخطر بأكمله الناشئ عن استخدام أو أداء نماذج البرامج النصية والوثائق معك. لن تتحمل شركة Microsoft أو كتابها أو أي شخص آخر مشارك في إنشاء البرامج النصية أو إنتاجها أو تسليمها مسؤولية أي أضرار مهما كانت (بما في ذلك، على سبيل المثال لا الحصر، الأضرار الناجمة عن فقدان أرباح الأعمال أو انقطاع العمل أو فقدان معلومات العمل أو أي خسارة في المالية الأخرى) الناتجة عن استخدام نماذج البرامج النصية أو الوثائق أو عدم القدرة على استخدامها،  حتى إذا تم إعلام Microsoft باحتمال حدوث مثل هذه الأضرار.
 
-## <a name="step-1-connect-to-security--compliance-powershell"></a>الخطوة 1: الاتصال إلى Security & Compliance PowerShell
+## <a name="step-1-connect-to-security--compliance-powershell"></a>الخطوة 1: الاتصال بالأمان & Compliance PowerShell
 
-الخطوة الأولى هي الاتصال ب Security & Compliance PowerShell لمؤسستك. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+الخطوة الأولى هي الاتصال ب Security & Compliance PowerShell لمؤسستك. للحصول على إرشادات مفصلة خطوة بخطوة، راجع [Connect to Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>الخطوة 2: تشغيل البرنامج النصي للإبلاغ عن عمليات الاحتجاز المقترنة بحالات eDiscovery
 

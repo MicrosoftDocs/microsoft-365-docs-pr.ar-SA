@@ -15,16 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على كيفية إزالة نوع معلومات حساسة مخصص باستخدام PowerShell
-ms.openlocfilehash: e935c9340c353561e71e25fdadfec5509da041e5
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: ba29c2f20133b94d87c14f527d454980c41373c9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014729"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621678"
 ---
 # <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>إزالة نوع معلومات حساسة مخصص باستخدام PowerShell
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 في Security & Compliance PowerShell، هناك طريقتان لإزالة أنواع المعلومات الحساسة المخصصة:
 
@@ -33,7 +31,7 @@ ms.locfileid: "66014729"
 - **إزالة حزمة قاعدة مخصصة وكافة أنواع المعلومات الحساسة المخصصة التي تحتوي عليها**: تم توثيق هذا الأسلوب في هذا المقطع.
 
 > [!NOTE]
-> قبل إزالة نوع معلومات حساسة مخصص، تحقق من عدم وجود نهج DLP أو Exchange قواعد تدفق البريد (المعروفة أيضا باسم قواعد النقل) لا تزال تشير إلى نوع المعلومات الحساسة.
+> قبل إزالة نوع معلومات حساسة مخصص، تحقق من عدم وجود نهج DLP أو قواعد تدفق بريد Exchange (المعروفة أيضا باسم قواعد النقل) لا تزال تشير إلى نوع المعلومات الحساسة.
 
 1. [Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell)
 
@@ -77,7 +75,7 @@ ms.locfileid: "66014729"
 
 ## <a name="more-information"></a>معلومات إضافية
 
-- [تعرف على منع فقدان بيانات Microsoft Purview](dlp-learn-about-dlp.md)
+- [تعرف على تفادي فقدان البيانات في Microsoft Purview](dlp-learn-about-dlp.md)
 
 - [تعريفات كيان نوع المعلومات الحساسة](sensitive-information-type-entity-definitions.md)
 

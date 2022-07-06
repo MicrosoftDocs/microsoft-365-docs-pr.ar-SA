@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: استخدم الكشف شبه المكرر لتجميع المستندات المتشابهة نصيا عند تحليل بيانات الحالة في eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4b6ad8a3a3775c8389e943aa249cffd16b6b84d2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 985374558189b2001c6f11e09581f7cb3ed6d11b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096623"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622558"
 ---
 # <a name="near-duplicate-detection-in-ediscovery-premium"></a>الكشف شبه المكرر في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 خذ بعين الاعتبار مجموعة من المستندات التي يجب مراجعتها حيث تستند مجموعة فرعية إلى نفس القالب ولها في الغالب نفس اللغة المتداولة، مع بعض الاختلافات هنا وهناك. إذا تمكن المراجع من تحديد هذه المجموعة الفرعية، ومراجعة إحداها بدقة، ومراجعة الاختلافات للبقية، فلن يفوتهم أي معلومات فريدة مع أخذ جزء صغير فقط من الوقت الذي كان سيستغرقه لقراءة جميع المستندات التي تغطيها. بالقرب من مجموعات الكشف المكررة، يتم تجميع مستندات متشابهة نصيا معا لمساعدتك على جعل عملية المراجعة أكثر كفاءة.
 
