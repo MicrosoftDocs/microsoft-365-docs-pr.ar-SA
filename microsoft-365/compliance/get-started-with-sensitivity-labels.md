@@ -19,18 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: هل أنت مستعد لنشر أوصاف الحساسية للمساعدة في حماية بيانات مؤسستك، ولكن لست متأكدا من مكان البدء؟ اقرأ بعض الإرشادات العملية لمساعدتك في رحلة التسمية.
-ms.openlocfilehash: 2998c993cd605f0371e728bba1cdea555b5e51e0
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 0161071c1dbfb8941c4f89a45ac2de52d58a2236
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574201"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641505"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>بدء استخدام تسميات الحساسية
 
 >*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 للحصول على معلومات حول تسميات الحساسية وكيف يمكن أن تساعدك على حماية بيانات مؤسستك، راجع [التعرف على تسميات الحساسية](sensitivity-labels.md).
 

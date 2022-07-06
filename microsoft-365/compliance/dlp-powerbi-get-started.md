@@ -20,16 +20,14 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: الاستعداد ل DLP وتوزيعه في مواقع PowerBI.
-ms.openlocfilehash: f831d42898e491258a53423c1d59b9f50c0b289d
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: e94ab7bce1fefc7ab370425a269f6e304aee165f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616926"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641845"
 ---
 # <a name="get-started-with-data-loss-prevention-policies-for-power-bi-preview"></a>بدء استخدام سياسات منع فقدان البيانات لـ Power BI (معاينة)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 لمساعدة المؤسسات على اكتشاف بياناتها الحساسة وحمايتها، تدعم [نهج منع فقدان بيانات Microsoft Purview (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) Power BI. عندما تتطابق مجموعة بيانات PowerBI مع المعايير في نهج DLP، يمكن تشغيل تنبيه يشرح طبيعة المحتوى الحساس. يتم تسجيل هذا التنبيه أيضا في علامة التبويب " **تنبيهات** منع فقدان البيانات" في مدخل توافق Microsoft للمراقبة والإدارة من قبل المسؤولين. بالإضافة إلى ذلك، يمكن إرسال تنبيهات البريد الإلكتروني إلى المسؤولين والمستخدمين المحددين.
 

@@ -1,5 +1,5 @@
 ---
-title: تكوين إدارة حقوق المعلومات (IRM) لاستخدام Azure Rights Management
+title: تكوين إدارة حقوق استخدام المعلومات (IRM) لاستخدام Azure Rights Management
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: تحتوي هذه المقالة على معلومات حول الإمكانيات الجديدة تشفير الرسائل من Office 365 (OME).
-ms.openlocfilehash: ec60ceb2843c03f3d91c95c2c4eca2d56e393a44
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: تحتوي هذه المقالة على معلومات حول تشفير الرسائل في Microsoft Purview.
+ms.openlocfilehash: 978d6356531da6b29bfe7b557cb419ba2958f040
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "63567131"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642207"
 ---
-# <a name="configure-irm-to-use-azure-rights-management"></a>تكوين إدارة حقوق المعلومات (IRM) لاستخدام Azure Rights Management
+# <a name="configure-irm-to-use-azure-rights-management"></a>تكوين إدارة حقوق استخدام المعلومات (IRM) لاستخدام Azure Rights Management
 
-مع إصدار الإمكانات الجديدة ل تشفير الرسائل من Office 365 (OME)، لم تعد بحاجة إلى إعداد إدارة المعلومات (IRM) بشكل منفصل. لا توصي Microsoft بإعداد عمليات نشر جديدة باستخدام OME و IRM القديمين مع Azure Rights Management. لمزيد من المعلومات حول إمكانات OME الجديدة، راجع تشفير الرسائل من Office 365 [الأسئلة الشائعة](./ome-faq.yml). إذا كنت جاهزا للبدء باستخدام قدرات OME الجديدة داخل مؤسستك، فحدد إعداد قدرات تشفير الرسائل من Office 365 الجديدة المضمنة في [حماية معلومات Azure](./set-up-new-message-encryption-capabilities.md).
+مع إصدار تشفير الرسائل في Microsoft Purview، لم تعد بحاجة إلى إعداد IRM بشكل منفصل. لا توصي Microsoft بإعداد عمليات نشر جديدة باستخدام OME القديم وIRM مع Azure Rights Management. لمزيد من المعلومات حول تشفير الرسائل في Microsoft Purview، راجع [الأسئلة المتداولة حول تشفير الرسالة](./ome-faq.yml). إذا كنت جاهزا لبدء استخدام تشفير الرسائل في Microsoft Purview داخل مؤسستك، فراجع [إعداد تشفير الرسائل في Microsoft Purview](./set-up-new-message-encryption-capabilities.md).

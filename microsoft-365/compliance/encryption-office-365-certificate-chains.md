@@ -16,33 +16,31 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: عرض قائمة كاملة بالشهادات الجذرية وشهادات المراجع المصدقة (CAs) في Microsoft 365.
-ms.openlocfilehash: a15c22218d481f62e1363e3ef4d521bd59283f10
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: عرض قائمة كاملة بشهادات الجذر وشهادات المراجع المصدقة (CAs) في Microsoft 365.
+ms.openlocfilehash: e131aa1c56890289735fd7605db7ace95d24fd7a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467987"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641779"
 ---
 # <a name="microsoft-365-encryption-chains"></a>سلاسل تشفير Microsoft 365
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يستفيد Microsoft 365 من عدد من موفري الشهادات المختلفين. يصف ما يلي القائمة الكاملة لشهادات الجذر المعروفة Microsoft 365 التي قد يواجهها العملاء عند الوصول إلى Microsoft 365. للحصول على معلومات حول الشهادات التي قد تحتاج إلى تثبيتها في البنية الأساسية الخاصة بك، راجع [خطة شهادات SSL التابعة لجهة خارجية Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md). تنطبق معلومات الشهادة التالية على جميع مثيلات السحابة العالمية والقومية Microsoft 365.
+يستفيد Microsoft 365 من عدد من موفري الشهادات المختلفين. يصف ما يلي القائمة الكاملة لشهادات جذر Microsoft 365 المعروفة التي قد يواجهها العملاء عند الوصول إلى Microsoft 365. للحصول على معلومات حول الشهادات التي قد تحتاج إلى تثبيتها في البنية الأساسية الخاصة بك، راجع [خطة شهادات SSL التابعة لجهة خارجية ل Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md). تنطبق معلومات الشهادة التالية على جميع مثيلات السحابة العالمية والقومية من Microsoft 365.
 
 تاريخ التحديث الأخير: **25/4/2022**
 
 > [!NOTE]
-> للحصول على معلومات الشهادة التي تنطبق على **DOD والعملاء سحابة القطاع الحكومي العاليين**، راجع [سلاسل تشفير Microsoft 365 - DOD و سحابة القطاع الحكومي High](encryption-office-365-certificate-chains-itar.md).
+> للحصول على معلومات الشهادة التي تنطبق على عملاء **DOD و GCC High** ، راجع [سلاسل تشفير Microsoft 365 - DOD و GCC High](encryption-office-365-certificate-chains-itar.md).
 
 | **نوع الشهادة** | **تنزيل P7b** | **نقاط نهاية CRL** | **نقاط نهاية OCSP** | **نقاط نهاية AIA** |
 | --- | --- | --- | --- | --- |
-| شهادات الجذر الموثوق بها بشكل عام | [Microsoft 365 مجموعة شهادات الجذر (P7B)](https://download.microsoft.com/download/4/a/b/4ab1c940-826b-444b-b287-b7a902e68da0/m365_root_certs_20220331.p7b) | crl.globalsign.net<br>www.d-trust.net | N/A | N/A |
-| شهادات متوسطة موثوق بها بشكل عام | [Microsoft 365 مجموعة الشهادات المتوسطة (P7B)](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
+| شهادات الجذر الموثوق بها بشكل عام | [مجموعة شهادات الجذر ل Microsoft 365 (P7B)](https://download.microsoft.com/download/4/a/b/4ab1c940-826b-444b-b287-b7a902e68da0/m365_root_certs_20220331.p7b) | crl.globalsign.net<br>www.d-trust.net | N/A | N/A |
+| شهادات متوسطة موثوق بها بشكل عام | [مجموعة الشهادات المتوسطة من Microsoft 365 (P7B)](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
 
 قم بتوسيع المقطعين الجذر والمتوسط أدناه للاطلاع على تفاصيل إضافية حول موفري الشهادات.
 
-## <a name="microsoft-365-root-certificate-details"></a>**Microsoft 365 تفاصيل شهادة الجذر**
+## <a name="microsoft-365-root-certificate-details"></a>**تفاصيل شهادة الجذر ل Microsoft 365**
 
 ### <a name="baltimore-cybertrust-root"></a>**جذر CyberTrust في Baltimore**
 
@@ -164,7 +162,7 @@ ms.locfileid: "65467987"
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net المرجع المصدق (2048)**
 
-| **الموضوع** | CN=Authority.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS2048\_ incorp. حسب ref. (limit s liab.)<br>O=Entrust.net |
+| **الموضوع** | CN=Authority.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS\_2048 incorp. حسب ref. (limit s liab.)<br>O=Entrust.net |
 | --- | --- |
 | **الرقم التسلسلي** | 38:63:DE:F8 |
 | **طول المفتاح العام** | RSA 2048 bits (e 65537) |
@@ -247,7 +245,7 @@ ms.locfileid: "65467987"
 | **بصمة الإبهام (SHA-256)** | 9ACFAB7E43C8D880D06B262A94DEE4B4659989C3D0CAF19BAF6405E41AB7DF |
 | **تثبيت (SHA-256)** | JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg= |
 
-## <a name="microsoft-365-intermediate-certificate-details"></a>**Microsoft 365 تفاصيل الشهادة المتوسطة**
+## <a name="microsoft-365-intermediate-certificate-details"></a>**تفاصيل الشهادة المتوسطة ل Microsoft 365**
 
 ### <a name="cnnic-sha256-ssl"></a>**CNNIC SHA256 SSL**
 
@@ -450,7 +448,7 @@ ms.locfileid: "65467987"
 
 | **الموضوع** | CN=إسناد المرجع المصدق - L1C<br>OU=&quot;(c) 2009 Tahoma, Inc.&quot;<br>يتم تضمين OU=www.au.net/rpa حسب المرجع<br>O=&quot;سند، Inc.&quot;<br>C=US |
 | --- | --- |
-| **المصدر** | CN=Authority.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS2048\_ incorp. حسب ref. (limits liab.)<br>O=Entrust.net |
+| **المصدر** | CN=Authority.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS\_2048 incorp. حسب ref. (limits liab.)<br>O=Entrust.net |
 | **الرقم التسلسلي** | 4C:0E:8C:39 |
 | **طول المفتاح العام** | RSA 2048 bits (e 65537) |
 | **خوارزمية التوقيع** | sha1RSA |

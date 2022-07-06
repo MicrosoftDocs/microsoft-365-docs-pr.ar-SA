@@ -20,20 +20,18 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: فهم كيفية نقل الملفات القديمة إلى Office 365 تشفير الرسائل (OME) لمؤسستك.
-ms.openlocfilehash: 2d994e2c521f11a70c6946e2f1a9a3a1a5766ba3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b34ccbcf077238ba3caee9da3b337cd0d32cf458
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014895"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642514"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>المعلومات القديمة لتشفير رسائل Office 365
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+إذا لم تقم بعد بنقل مؤسستك إلى تشفير الرسائل في Microsoft Purview، ولكنك قمت بالفعل بنشر OME، فإن المعلومات الواردة في هذه المقالة تنطبق على مؤسستك. توصي Microsoft بوضع خطة للانتقال إلى تشفير الرسائل في Microsoft Purview بمجرد أن يكون ذلك معقولا لمؤسستك. للحصول على الإرشادات، راجع [إعداد تشفير الرسائل في Microsoft Purview](set-up-new-message-encryption-capabilities.md). إذا كنت تريد معرفة المزيد حول كيفية تشفير الرسالة الجديدة أولا، فراجع [تشفير الرسالة](ome.md). يشير باقي هذه المقالة إلى سلوك OME قبل إصدار تشفير الرسائل في Microsoft Purview.
 
-إذا لم تكن قد نقلت مؤسستك بعد إلى Microsoft Purview Message Encryption، ولكنك قمت بالفعل بنشر OME، فإن المعلومات الواردة في هذه المقالة تنطبق على مؤسستك. توصي Microsoft بوضع خطة للانتقال إلى Microsoft Purview Message Encryption بمجرد أن يكون ذلك معقولا لمؤسستك. للحصول على الإرشادات، راجع [إعداد تشفير رسائل "Microsoft Purview](set-up-new-message-encryption-capabilities.md)". إذا كنت تريد معرفة المزيد حول كيفية تشفير الرسالة الجديدة أولا، فراجع [تشفير الرسالة](ome.md). تشير بقية هذه المقالة إلى سلوك OME قبل إصدار تشفير الرسائل من Microsoft Purview.
-
-باستخدام Office 365 تشفير الرسائل، يمكن لمؤسستك إرسال رسائل البريد الإلكتروني المشفرة وتلقيها بين أشخاص داخل مؤسستك وخارجها. Office 365 يعمل تشفير الرسائل مع Outlook.com وYahoo وGmail وخدمات البريد الإلكتروني الأخرى. يساعد تشفير رسالة البريد الإلكتروني على التأكد من أن المستلمين المقصودين فقط يمكنهم عرض محتوى الرسالة.
+باستخدام Office 365 تشفير الرسائل، يمكن لمؤسستك إرسال رسائل البريد الإلكتروني المشفرة وتلقيها بين أشخاص داخل مؤسستك وخارجها. يعمل Office 365 تشفير الرسائل مع Outlook.com وYahoo وGmail وخدمات البريد الإلكتروني الأخرى. يساعد تشفير رسالة البريد الإلكتروني على التأكد من أن المستلمين المقصودين فقط يمكنهم عرض محتوى الرسالة.
 
 فيما يلي بعض الأمثلة:
 
@@ -45,31 +43,31 @@ ms.locfileid: "66014895"
 
 ## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>كيفية عمل تشفير الرسائل Office 365 بدون القدرات الجديدة
 
-Office 365 تشفير الرسائل هي خدمة عبر الإنترنت تم إنشاؤها على Microsoft Azure Rights Management (Azure RMS). باستخدام Azure RMS، يمكن للمسؤولين تحديد قواعد تدفق البريد لتحديد شروط التشفير. على سبيل المثال، قد تتطلب القاعدة تشفير كافة الرسائل الموجهة إلى مستلم معين.
+Office 365 تشفير الرسائل هي خدمة عبر الإنترنت مبنية على Microsoft Azure Rights Management (Azure RMS). باستخدام Azure RMS، يمكن للمسؤولين تحديد قواعد تدفق البريد لتحديد شروط التشفير. على سبيل المثال، قد تتطلب القاعدة تشفير كافة الرسائل الموجهة إلى مستلم معين.
 
-عندما يرسل شخص ما رسالة بريد إلكتروني في Exchange Online تتطابق مع قاعدة تشفير، يتم إرسال الرسالة مع مرفق HTML. يفتح المستلم مرفق HTML ويتبع الإرشادات لعرض الرسالة المشفرة على مدخل تشفير الرسائل Office 365. يمكن للمستلم اختيار عرض الرسالة عن طريق تسجيل الدخول باستخدام حساب Microsoft أو العمل أو المؤسسة التعليمية المقترنة Office 365، أو باستخدام رمز مرور لمرة واحدة. يساعد كلا الخيارين على ضمان أن المستلم المقصود فقط يمكنه عرض الرسالة المشفرة. هذه العملية مختلفة جدا لتشفير رسالة "Microsoft Purview".
+عندما يرسل شخص ما رسالة بريد إلكتروني في Exchange Online تتطابق مع قاعدة تشفير، يتم إرسال الرسالة مع مرفق HTML. يفتح المستلم مرفق HTML ويتبع الإرشادات لعرض الرسالة المشفرة على مدخل تشفير الرسائل Office 365. يمكن للمستلم اختيار عرض الرسالة عن طريق تسجيل الدخول باستخدام حساب Microsoft أو العمل أو المؤسسة التعليمية المقترنة Office 365، أو باستخدام رمز مرور لمرة واحدة. يساعد كلا الخيارين على ضمان أن المستلم المقصود فقط يمكنه عرض الرسالة المشفرة. هذه العملية مختلفة جدا بالنسبة إلى تشفير الرسائل في Microsoft Purview.
 
 يلخص الرسم التخطيطي التالي مرور رسالة بريد إلكتروني من خلال عملية التشفير وفك التشفير.
 
 ![رسم تخطيطي يوضح مسار رسالة بريد إلكتروني مشفرة.](../media/O365-Office365MessageEncryption-Concept.png)
 
-لمزيد من المعلومات، راجع [معلومات الخدمة لتشفير الرسائل Office 365 القديم قبل إصدار تشفير الرسائل من Microsoft Purview](legacy-information-for-message-encryption.md#LegacyServiceInfo).
+لمزيد من المعلومات، راجع [معلومات الخدمة لتشفير الرسائل القديم Office 365 قبل إصدار تشفير الرسائل في Microsoft Purview](legacy-information-for-message-encryption.md#LegacyServiceInfo).
 
-## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-microsoft-purview-message-encryption"></a>تعريف قواعد تدفق البريد لتشفير الرسائل Office 365 التي لا تستخدم تشفير رسائل Microsoft Purview
+## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-microsoft-purview-message-encryption"></a>تعريف قواعد تدفق البريد لتشفير الرسائل Office 365 التي لا تستخدم تشفير الرسائل في Microsoft Purview
 
-لتمكين تشفير الرسائل Office 365 بدون القدرات الجديدة، يحدد المسؤولون Exchange Online والمسؤولين Exchange Online Protection قواعد تدفق البريد Exchange. تحدد هذه القواعد الشروط التي يجب تشفير رسائل البريد الإلكتروني فيها، بالإضافة إلى شروط إزالة تشفير الرسائل. عند تعيين إجراء تشفير لقاعدة، تنفذ الخدمة الإجراء على أي رسائل تطابق شروط القاعدة قبل إرسال الرسائل.
+لتمكين تشفير الرسائل Office 365 بدون الإمكانات الجديدة، يحدد المسؤولون Exchange Online والمسؤولين Exchange Online Protection قواعد تدفق بريد Exchange. تحدد هذه القواعد الشروط التي يجب تشفير رسائل البريد الإلكتروني فيها، بالإضافة إلى شروط إزالة تشفير الرسائل. عند تعيين إجراء تشفير لقاعدة، تنفذ الخدمة الإجراء على أي رسائل تطابق شروط القاعدة قبل إرسال الرسائل.
 
 قواعد تدفق البريد مرنة، مما يتيح لك دمج الشروط حتى تتمكن من تلبية متطلبات أمان معينة في قاعدة واحدة. على سبيل المثال، يمكنك إنشاء قاعدة لتشفير كافة الرسائل التي تحتوي على كلمات أساسية محددة ويتم توجيهها إلى مستلمين خارجيين. Office 365 تشفير الرسائل أيضا بتشفير الردود من مستلمي البريد الإلكتروني المشفر، ويمكنك إنشاء قاعدة تقوم بفك تشفير هذه الردود كوسيلة ملائمة لمستخدمي البريد الإلكتروني. وبهذه الطريقة، لن يضطر المستخدمون في مؤسستك إلى تسجيل الدخول إلى مدخل التشفير لعرض الردود.
 
-لمزيد من المعلومات حول كيفية إنشاء قواعد تدفق البريد Exchange، راجع [تعريف القواعد لتشفير الرسائل Office 365](define-mail-flow-rules-to-encrypt-email.md).
+لمزيد من المعلومات حول كيفية إنشاء قواعد تدفق بريد Exchange، راجع [تعريف القواعد لتشفير الرسائل Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
-### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-microsoft-purview-message-encryption"></a>استخدام EAC لإنشاء قاعدة تدفق بريد لتشفير رسائل البريد الإلكتروني دون تشفير رسائل Microsoft Purview
+### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-microsoft-purview-message-encryption"></a>استخدم EAC لإنشاء قاعدة تدفق بريد لتشفير رسائل البريد الإلكتروني دون تشفير الرسائل في Microsoft Purview
 
 1. في مستعرض ويب، باستخدام حساب العمل أو المؤسسة التعليمية الذي تم منحه أذونات المسؤول العام، [سجل الدخول إلى Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. اختر لوحة **المسؤول** .
+2. اختر **لوحة مسؤول**.
 
-3. في مركز مسؤولي Microsoft 365، اختر **مراكز** \> الإدارة <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. في مركز مسؤولي Microsoft 365، اختر **مسؤول مراكز** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
 4. في EAC، انتقل إلى **"قواعد** **تدفق** \> البريد" وحدد أيقونة **"جديد**![".](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**إنشاء قاعدة جديدة**. لمزيد من المعلومات حول استخدام EAC، راجع [مركز إدارة Exchange في Exchange Online](/exchange/exchange-admin-center).
 
@@ -97,7 +95,7 @@ Office 365 تشفير الرسائل هي خدمة عبر الإنترنت تم 
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>استخدام Exchange Online PowerShell لإنشاء قاعدة تدفق بريد لتشفير رسائل البريد الإلكتروني دون إمكانات OME الجديدة
 
-1. الاتصال إلى Exchange Online PowerShell. لمزيد من المعلومات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. الاتصال Exchange Online PowerShell. لمزيد من المعلومات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. إنشاء قاعدة باستخدام **New-TransportRule** cmdlet وتعيين المعلمة _ApplyOME_ إلى `$true`.
 
@@ -115,17 +113,17 @@ Office 365 تشفير الرسائل هي خدمة عبر الإنترنت تم 
 
    للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [New-TransportRule](/powershell/module/exchange/New-TransportRule).
 
-### <a name="remove-encryption-from-email-replies-encrypted-without-microsoft-purview-message-encryption"></a>إزالة التشفير من ردود البريد الإلكتروني المشفرة دون تشفير رسالة "Microsoft Purview"
+### <a name="remove-encryption-from-email-replies-encrypted-without-microsoft-purview-message-encryption"></a>إزالة التشفير من ردود البريد الإلكتروني المشفرة دون تشفير الرسائل في Microsoft Purview
 
 عندما يرسل مستخدمو البريد الإلكتروني رسائل مشفرة، يمكن لمستلمي هذه الرسائل الرد بردود مشفرة. يمكنك إنشاء قواعد تدفق البريد لإزالة التشفير تلقائيا من الردود حتى لا يضطر مستخدمو البريد الإلكتروني في مؤسستك إلى تسجيل الدخول إلى مدخل التشفير لعرضها. يمكنك استخدام EAC أو Exchange Online PowerShell cmdlets لتعريف هذه القواعد. يمكنك فك تشفير الرسائل المرسلة من داخل مؤسستك أو الرسائل التي تكون ردودا على الرسائل المرسلة من داخل مؤسستك. لا يمكنك فك تشفير الرسائل المشفرة التي تنشأ من خارج مؤسستك.
 
-#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-microsoft-purview-message-encryption"></a>استخدام EAC لإنشاء قاعدة لإزالة التشفير من ردود البريد الإلكتروني المشفرة دون تشفير الرسائل من Microsoft Purview
+#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-microsoft-purview-message-encryption"></a>استخدم EAC لإنشاء قاعدة لإزالة التشفير من ردود البريد الإلكتروني المشفرة دون تشفير الرسائل في Microsoft Purview
 
 1. في مستعرض ويب، باستخدام حساب العمل أو المؤسسة التعليمية الذي تم منحه أذونات المسؤول، [سجل الدخول إلى Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. اختر لوحة **المسؤول** .
+2. اختر **لوحة مسؤول**.
 
-3. في مركز مسؤولي Microsoft 365، اختر **مراكز** \> الإدارة <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. في مركز مسؤولي Microsoft 365، اختر **مسؤول مراكز** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
 4. في EAC، انتقل إلى **"قواعد** **تدفق** \> البريد" وحدد أيقونة **"جديد**![".](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**إنشاء قاعدة جديدة**. لمزيد من المعلومات حول استخدام EAC، راجع [مركز إدارة Exchange في Exchange Online](/exchange/exchange-admin-center).
 
@@ -139,7 +137,7 @@ Office 365 تشفير الرسائل هي خدمة عبر الإنترنت تم 
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>استخدم Exchange Online PowerShell لإنشاء قاعدة لإزالة التشفير من ردود البريد الإلكتروني المشفرة دون إمكانات OME الجديدة
 
-1. الاتصال إلى Exchange Online PowerShell. لمزيد من المعلومات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. الاتصال Exchange Online PowerShell. لمزيد من المعلومات، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. إنشاء قاعدة باستخدام **New-TransportRule** cmdlet وتعيين المعلمة _RemoveOME_ إلى `$true`.
 
@@ -182,7 +180,7 @@ Office 365 تشفير الرسائل هي خدمة عبر الإنترنت تم 
 
 ### <a name="to-customize-encryption-email-messages-and-the-encryption-portal-with-your-organizations-brand"></a>لتخصيص رسائل البريد الإلكتروني للتشفير ومدخل التشفير باستخدام العلامة التجارية لمؤسستك
 
-1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. استخدم Set-OMEConfiguration cmdlet كما هو موضح هنا: [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) أو استخدم الجدول التالي للحصول على إرشادات.
 
@@ -193,11 +191,11 @@ Office 365 تشفير الرسائل هي خدمة عبر الإنترنت تم 
    |النص الافتراضي الذي يصاحب رسائل البريد الإلكتروني المشفرة <p> يظهر النص الافتراضي فوق إرشادات عرض الرسائل المشفرة|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <p> **على سبيل المثال:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"`|
    |بيان إخلاء المسؤولية في البريد الإلكتروني الذي يحتوي على الرسالة المشفرة|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <p> **على سبيل المثال:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"`|
    |النص الذي يظهر في أعلى مدخل عرض البريد المشفر|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <p> **على سبيل المثال:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"`|
-   |شعار|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <p> **المثال:** `Set-OMEConfiguration -Identity "OME configuration" -Image ([System.IO.File]::ReadAllBytes('C:\Temp\contosologo.png'))` <p> تنسيقات الملفات المعتمدة: .png أو .jpg أو .bmp أو tiff. <p> الحجم الأمثل لملف الشعار: أقل من 40 كيلوبايت <p> الحجم الأمثل لصورة الشعار: 170x70 بكسل|
+   |شعار|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <p> **على سبيل المثال:** `Set-OMEConfiguration -Identity "OME configuration" -Image ([System.IO.File]::ReadAllBytes('C:\Temp\contosologo.png'))` <p> تنسيقات الملفات المعتمدة: .png أو .jpg أو .bmp أو tiff. <p> الحجم الأمثل لملف الشعار: أقل من 40 كيلوبايت <p> الحجم الأمثل لصورة الشعار: 170x70 بكسل|
 
 ### <a name="to-remove-brand-customizations-from-encryption-email-messages-and-the-encryption-portal"></a>لإزالة تخصيصات العلامة التجارية من رسائل البريد الإلكتروني للتشفير ومدخل التشفير
 
-1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. استخدم Set-OMEConfiguration cmdlet كما هو موضح هنا: [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration). لإزالة التخصيصات ذات العلامة التجارية لمؤسستك من قيم إخلاء المسؤولية و EmailText و PortalText، قم بتعيين القيمة إلى سلسلة فارغة. `""` بالنسبة لكافة قيم الصور، مثل الشعار، قم بتعيين القيمة إلى `"$null"`.
 
@@ -205,40 +203,40 @@ Office 365 تشفير الرسائل هي خدمة عبر الإنترنت تم 
 
    |لإعادة هذه الميزة من تجربة التشفير مرة أخرى إلى النص الافتراضي والصورة|استخدم أوامر PowerShell Exchange Online هذه|
    |---|---|
-   |النص الافتراضي الذي يصاحب رسائل البريد الإلكتروني المشفرة <p> يظهر النص الافتراضي فوق إرشادات عرض الرسائل المشفرة|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <p> **على سبيل المثال:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-   |بيان إخلاء المسؤولية في البريد الإلكتروني الذي يحتوي على الرسالة المشفرة <p> |`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <p> **المثال:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
+   |النص الافتراضي الذي يصاحب رسائل البريد الإلكتروني المشفرة <p> يظهر النص الافتراضي فوق إرشادات عرض الرسائل المشفرة|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <p> **المثال:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |بيان إخلاء المسؤولية في البريد الإلكتروني الذي يحتوي على الرسالة المشفرة <p> |`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <p> **على سبيل المثال:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
    |النص الذي يظهر في أعلى مدخل عرض البريد المشفر|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <p> **مثال على العودة إلى الوضع الافتراضي:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
    |شعار|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <p> **مثال على العودة إلى الوضع الافتراضي:** `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
 
 ## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>معلومات الخدمة لتشفير الرسائل Office 365 القديم قبل إصدار قدرات OME الجديدة
 <a name="LegacyServiceInfo"> </a>
 
-يوفر الجدول التالي تفاصيل تقنية لخدمة تشفير الرسائل Office 365 قبل إصدار تشفير الرسائل من Microsoft Purview.
+يوفر الجدول التالي تفاصيل تقنية لخدمة تشفير الرسائل Office 365 قبل إصدار تشفير الرسائل في Microsoft Purview.
 
 |تفاصيل الخدمة|الوصف|
 |---|---|
 |متطلبات جهاز العميل|يمكن عرض الرسائل المشفرة على أي جهاز عميل، طالما يمكن فتح مرفق HTML في مستعرض حديث يدعم "نشر النموذج".|
-|خوارزمية التشفير وتوافق معايير معالجة المعلومات الفيدرالية (FIPS)|Office 365 يستخدم تشفير الرسائل مفاتيح التشفير نفسها مثل Windows Rights Management معلومات Azure (IRM) ويدعم وضع التشفير 2 (مفتاح 2K لمفتاح RSA و256 بت لأنظمة SHA-1). لمزيد من المعلومات حول أوضاع تشفير IRM الأساسية، راجع [أوضاع تشفير AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10)).|
+|خوارزمية التشفير وتوافق معايير معالجة المعلومات الفيدرالية (FIPS)|Office 365 يستخدم تشفير الرسائل مفاتيح التشفير نفسها مثل Windows Azure Information Rights Management (IRM) ويدعم وضع التشفير 2 (مفتاح 2K لمفتاح RSA و256 بت لأنظمة SHA-1). لمزيد من المعلومات حول أوضاع تشفير IRM الأساسية، راجع [أوضاع تشفير AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10)).|
 |أنواع الرسائل المعتمدة|Office 365 تشفير الرسائل معتمد فقط للعناصر التي تحتوي على معرف فئة رسالة من **IPM. ملاحظة**. لمزيد من المعلومات، راجع [أنواع العناصر وفئات الرسائل](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
 |حدود حجم الرسالة|Office 365 يمكن لتشفير الرسائل تشفير الرسائل التي يصل حجمها إلى 25 ميغابايت. لمزيد من التفاصيل حول حدود حجم الرسالة، راجع [Exchange Online حدود](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).|
 |نهج استبقاء البريد الإلكتروني Exchange Online|لا يقوم Exchange Online بتخزين الرسائل المشفرة.|
-|دعم اللغة لتشفير الرسائل Office 365|يدعم تشفير Office 365 الرسائل اللغات Microsoft 365، كما يلي: <p> يتم ترجمة رسائل البريد الإلكتروني الواردة وملفات HTML المرفقة استنادا إلى إعدادات لغة المرسل. <p> يتم ترجمة مدخل العرض استنادا إلى إعدادات المستعرض للمستلم. <p> النص الأساسي (المحتوى) للرسالة المشفرة غير مترجم.|
+|دعم اللغة لتشفير الرسائل Office 365|Office 365 يدعم تشفير الرسائل لغات Microsoft 365، كما يلي: <p> يتم ترجمة رسائل البريد الإلكتروني الواردة وملفات HTML المرفقة استنادا إلى إعدادات لغة المرسل. <p> يتم ترجمة مدخل العرض استنادا إلى إعدادات المستعرض للمستلم. <p> النص الأساسي (المحتوى) للرسالة المشفرة غير مترجم.|
 |معلومات الخصوصية لمدخل OME وتطبيق عارض OME|يوفر [بيان خصوصية مدخل تشفير Office 365 المراسلة](https://privacy.microsoft.com/privacystatement) معلومات مفصلة حول ما تفعله Microsoft ولا تفعله بمعلوماتك الخاصة.|
 
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>الأسئلة المتداولة حول OME القديم
 <a name="LegacyServiceInfo"> </a>
 
-هل لديك أسئلة حول تشفير الرسائل Office 365؟ فيما يلي بعض الإجابات. إذا لم تتمكن من العثور على ما تحتاجه، فتحقق من [منتديات مجتمع Microsoft التقني للحصول على Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365).
+هل لديك أسئلة حول تشفير الرسائل Office 365؟ فيما يلي بعض الإجابات. إذا لم تتمكن من العثور على ما تحتاج إليه، فتحقق من [منتديات Microsoft Tech Community للحصول على Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365).
 
  **س. يرسل المستخدمون رسائل بريد إلكتروني مشفرة إلى مستلمين من خارج مؤسستنا. هل هناك أي شيء يتعين على المستلمين الخارجيين القيام به لقراءة رسائل البريد الإلكتروني المشفرة باستخدام تشفير الرسائل Office 365 والرد عليها؟**
 
-يمكن للمستلمين من خارج مؤسستك الذين يتلقون Microsoft 365 الرسائل المشفرة عرضها بإحدى طريقتين:
+يمكن للمستلمين من خارج مؤسستك الذين يتلقون رسائل مشفرة من Microsoft 365 عرضها بإحدى الطريقتين التاليتين:
 
 - بتسجيل الدخول باستخدام حساب Microsoft أو حساب العمل أو المؤسسة التعليمية المقترن Office 365.
 
 - باستخدام رمز تمرير لمرة واحدة.
 
- **س. هل يتم تخزين Microsoft 365 الرسائل المشفرة في السحابة أو على خوادم Microsoft؟**
+ **س. هل يتم تخزين الرسائل المشفرة من Microsoft 365 في السحابة أو على خوادم Microsoft؟**
 
 لا، يتم الاحتفاظ بالرسائل المشفرة على نظام البريد الإلكتروني للمستلم، وعندما يفتح المستلم الرسالة، يتم نشرها مؤقتا للعرض على خوادم Microsoft. لا يتم تخزين الرسائل هناك.
 
@@ -254,7 +252,7 @@ Office 365 تشفير الرسائل هي خدمة عبر الإنترنت تم 
 
 لا، لا يتطلب المستلمون الخارجيون اشتراكا لقراءة الرسائل المشفرة أو الرد عليها.
 
- **س. كيف يختلف Office 365 تشفير الرسائل عن خدمات Rights Management (RMS)؟**
+ **س. كيف يختلف Office 365 تشفير الرسائل عن خدمات إدارة الحقوق (RMS)؟**
 
 يوفر RMS قدرات حماية حقوق المعلومات لرسائل البريد الإلكتروني الداخلية للمؤسسة من خلال توفير قوالب مضمنة، مثل: عدم إعادة التوجيه وسرية الشركة. Office 365 يدعم تشفير الرسائل تشفير رسائل البريد الإلكتروني للرسائل المرسلة إلى مستلمين خارجيين بالإضافة إلى المستلمين الداخليين.
 
@@ -276,7 +274,7 @@ S/MIME هي في الأساس تقنية تشفير من جانب العميل،
 
  **س. ما أسلوب التشفير المستخدم لتشفير الرسائل Office 365؟**
 
-يستخدم تشفير الرسائل Office 365 خدمات Rights Management (RMS) كبنية تحتية للتشفير. يعتمد أسلوب التشفير المستخدم على المكان الذي تحصل فيه على مفاتيح RMS المستخدمة لتشفير الرسائل وفك تشفيرها.
+يستخدم تشفير الرسائل Office 365 خدمات إدارة الحقوق (RMS) كبنية تحتية للتشفير. يعتمد أسلوب التشفير المستخدم على المكان الذي تحصل فيه على مفاتيح RMS المستخدمة لتشفير الرسائل وفك تشفيرها.
 
 - إذا كنت تستخدم Microsoft Azure RMS للحصول على المفاتيح، يتم استخدام وضع التشفير 2. وضع التشفير 2 هو تطبيق تشفير AD RMS محدث ومحسن. وهو يدعم RSA 2048 للتوقيع والتشفير، ويدعم SHA-256 للتوقيع.
 
@@ -290,13 +288,13 @@ S/MIME هي في الأساس تقنية تشفير من جانب العميل،
 
  **س. أنا مشترك في Exchange Hosted Encryption (EHE). أين يمكنني معرفة المزيد حول الترقية إلى Office 365 تشفير الرسائل؟**
 
-تمت ترقية جميع عملاء EHE إلى تشفير الرسائل Office 365. لمزيد من المعلومات، تفضل بزيارة [Exchange مركز ترقية التشفير المستضاف](../security/office-365-security/exchange-online-protection-overview.md).
+تمت ترقية جميع عملاء EHE إلى تشفير الرسائل Office 365. لمزيد من المعلومات، تفضل بزيارة [Exchange Hosted Encryption Upgrade Center](../security/office-365-security/exchange-online-protection-overview.md).
 
  **س. هل أحتاج إلى فتح أي عناوين URL أو عناوين IP أو منافذ في جدار حماية مؤسستي لدعم تشفير الرسائل Office 365؟**
 
-نعم. يجب إضافة عناوين URL Exchange Online إلى قائمة السماح لمؤسستك لتمكين المصادقة للرسائل المشفرة بواسطة تشفير الرسائل Office 365. للحصول على قائمة بعناوين URL Exchange Online، راجع [عناوين URL Microsoft 365 ونطاقات عناوين IP](../enterprise/urls-and-ip-address-ranges.md).
+نعم. يجب إضافة عناوين URL Exchange Online إلى قائمة السماح لمؤسستك لتمكين المصادقة للرسائل المشفرة بواسطة تشفير الرسائل Office 365. للحصول على قائمة بعناوين URL Exchange Online، راجع [عناوين URL ل Microsoft 365 ونطاقات عناوين IP](../enterprise/urls-and-ip-address-ranges.md).
 
- **س. كم عدد المستلمين الذين يمكنني إرسال رسالة مشفرة Microsoft 365 إليها؟**
+ **س. كم عدد المستلمين الذين يمكنني إرسال رسالة مشفرة إلى Microsoft 365؟**
 
 الحد الأقصى للمستلم هو 500 مستلم لكل رسالة، أو عند دمجها بعد توسيع قائمة التوزيع، 11980 حرفا في الحقل " **إلى** " للرسالة، أيهما يأتي أولا.
 

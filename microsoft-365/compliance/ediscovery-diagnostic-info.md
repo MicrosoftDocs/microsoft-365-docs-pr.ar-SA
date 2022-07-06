@@ -17,18 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: تعرف على كيفية جمع معلومات تشخيص eDiscovery لحالة دعم Microsoft.
-ms.openlocfilehash: f5dba88a598a73441c67e3eaa08a59b7258ea712
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 46c85e822daf82cc88e6bf89ceea97dede3e2276
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014421"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641801"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>تجميع معلومات تشخيص eDiscovery
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يحتاج مهندسو دعم Microsoft أحيانا إلى معلومات محددة حول مشكلتك عند فتح حالة دعم متعلقة ب Microsoft Purview eDiscovery (قياسي) أو Microsoft Purview eDiscovery (Premium). توفر هذه المقالة إرشادات حول كيفية جمع معلومات التشخيص لمساعدة المهندسين على التحقق من المشاكل وحلها. عادة، لا تحتاج إلى جمع هذه المعلومات حتى يطلب منك مهندس دعم Microsoft القيام بذلك.
+يحتاج مهندسو دعم Microsoft أحيانا إلى معلومات محددة حول مشكلتك عند فتح حالة دعم تتعلق Microsoft Purview eDiscovery (قياسي) أو Microsoft Purview eDiscovery (Premium). توفر هذه المقالة إرشادات حول كيفية جمع معلومات التشخيص لمساعدة المهندسين على التحقق من المشاكل وحلها. عادة، لا تحتاج إلى جمع هذه المعلومات حتى يطلب منك مهندس دعم Microsoft القيام بذلك.
 
 > [!IMPORTANT]
 > قد تتضمن المخرجات من cmdlets والمعلومات التشخيصية الموضحة في هذه المقالة معلومات حساسة حول التقاضي أو التحقيقات الداخلية في مؤسستك. قبل إرسال معلومات التشخيص الأولية إلى دعم Microsoft، يجب عليك مراجعة المعلومات وتصعيد أي معلومات حساسة (مثل الأسماء أو معلومات أخرى حول أطراف التقاضي أو التحقيق) عن طريق استبدالها.`XXXXXXX` سيؤدي استخدام هذا الأسلوب أيضا إلى الإشارة إلى مهندس دعم Microsoft أنه تم تنقيح المعلومات.
@@ -42,7 +40,7 @@ ms.locfileid: "66014421"
 بعد مراجعة الملف النصي الذي تم إنشاؤه وتكرار المعلومات الحساسة، أرسله إلى مهندس دعم Microsoft الذي يعمل على حالتك.
 
 > [!NOTE]
-> يمكنك أيضا تشغيل الأوامر في هذا القسم لجمع معلومات تشخيصية لعمليات البحث والتصدير المدرجة في صفحة **البحث في المحتوى** في مدخل توافق Microsoft Purview.
+> يمكنك أيضا تشغيل الأوامر في هذا القسم لتجميع معلومات تشخيصية لعمليات البحث والتصدير المدرجة في صفحة **البحث في المحتوى** في مدخل التوافق في Microsoft Purview.
 
 ### <a name="collect-information-about-searches"></a>تجميع معلومات حول عمليات البحث
 
@@ -78,11 +76,11 @@ Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches=="
 
 ## <a name="collect-diagnostic-information-for-ediscovery-premium"></a>جمع معلومات تشخيصية ل eDiscovery (Premium)
 
-تتيح لك علامة التبويب **الإعدادات** في حالة eDiscovery (Premium) نسخ معلومات التشخيص للحالة بسرعة. يتم حفظ معلومات التشخيص في الحافظة حتى تتمكن من لصقها في ملف نصي وإرسالها إلى دعم Microsoft.
+تتيح لك علامة التبويب **"إعدادات** " في حالة eDiscovery (Premium) نسخ معلومات التشخيص للحالة بسرعة. يتم حفظ معلومات التشخيص في الحافظة حتى تتمكن من لصقها في ملف نصي وإرسالها إلى دعم Microsoft.
 
 1. انتقل إلى مدخل التوافق، وحدد **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
 
-2. حدد حالة ثم انقر فوق علامة التبويب **الإعدادات**.
+2. حدد حالة ثم انقر فوق علامة التبويب **"إعدادات** ".
 
 3. ضمن **"معلومات الحالة**"، انقر فوق **"تحديد**".
 

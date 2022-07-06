@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'يؤدي منع فقدان بيانات نقطة النهاية إلى توسيع مراقبة أنشطة الملفات وإجراءات الحماية لتلك الملفات إلى نقاط النهاية. يتم عرض الملفات في حلول التوافق '
-ms.openlocfilehash: 015e219d1b3ed41605ae3b331488d8dec6e7751f
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: d711a61c1c61df94311dfd409e94330bb8696d88
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530893"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641735"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>التعرّف على تفادي فقدان بيانات نقطة النهاية
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يمكنك استخدام تفادي فقدان البيانات في Microsoft Purview (DLP) لمراقبة الإجراءات التي يتم اتخاذها على العناصر التي حددت أنها حساسة وللمساعدة على منع المشاركة غير المقصودة لتلك العناصر. لمزيد من المعلومات حول DLP، راجع [التعرف على منع فقدان البيانات](dlp-learn-about-dlp.md).
 

@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على كيفية إنشاء تنبيهات للأنشطة في Microsoft Purview Compliance Manager التي يمكن أن تؤثر على درجة التوافق الخاصة بك.
-ms.openlocfilehash: c69e56c693a2994a93b1faccfe6f69fa317d8390
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 499d1f005b67b2a9583d7138ce784b2e7ae1c8ad
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839416"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642229"
 ---
 # <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>تنبيهات Microsoft Purview Compliance Manager ونهج التنبيه
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **في هذه المقالة:** تعرف على كيفية **تعيين تنبيهات** لأنشطة معينة في Compliance Manager، وكيفية إدارة التنبيهات، وكيفية **إنشاء نهج التنبيه** لتحديد شروط التنبيه.
 

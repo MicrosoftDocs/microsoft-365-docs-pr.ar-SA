@@ -17,12 +17,12 @@ ms.collection:
 description: يمكن للمسؤولين التعرف على الطرق المختلفة للإبلاغ عن الرسائل الجيدة والسيئة وعناوين URL ومرفقات البريد الإلكتروني والمسؤولين إلى Microsoft للتحليل.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4c967eec1f0bb13523c3e8bdbe2f7a312f35ef27
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 071e6329e16ecfce0e55649869d93ff31dfc9664
+ms.sourcegitcommit: 4a1efedd15146744511378a44a307d44b16f3fb5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621084"
+ms.locfileid: "66644013"
 ---
 # <a name="report-items-to-microsoft"></a>الإبلاغ عن العناصر إلى Microsoft
 
@@ -39,11 +39,11 @@ ms.locfileid: "66621084"
 
 |الاسلوب|الوصف|
 |---|---|
-|[استخدم مدخل عمليات الإرسال لإرسال البريد العشوائي المشتبه به والتصيد الاحتيالي وعناوين URL ومرفقات البريد الإلكتروني إلى Microsoft](admin-submission.md)|أسلوب إعداد التقارير الموصى به للمسؤولين في المؤسسات التي تحتوي على علب بريد Exchange Online (غير متوفر في EOP مستقل).|
+|[استخدم مدخل عمليات الإرسال لإرسال البريد العشوائي والتصيد الاحتيالي وعناوين URL والملفات المشتبه بها إلى Microsoft](admin-submission.md)|أسلوب إعداد التقارير الموصى به للمسؤولين في المؤسسات التي تحتوي على علب بريد Exchange Online (غير متوفر في EOP مستقل).|
 |[تمكين الوظيفة الإضافية "رسالة التقرير" أو الوظائف الإضافية "تصيد التقرير"](enable-the-report-message-add-in.md)|يعمل مع Outlook و Outlook على ويب (المعروف سابقا باسم Outlook Web App). <br/><br/> استنادا إلى اشتراكك، تتوفر الرسائل التي أبلغ عنها المستخدمون باستخدام الوظائف الإضافية في [مدخل مسؤول عمليات الإرسال](admin-submission.md) [ونتائج التحقيق والاستجابة التلقائية (AIR)](air-view-investigation-results.md) [وتقرير الرسائل التي أبلغ عنها المستخدم](view-email-security-reports.md#user-reported-messages-report) [والمستكشف](threat-explorer-views.md#email--submissions). <br/><br/> يمكنك تكوين الرسائل التي تم الإبلاغ عنها ليتم نسخها أو إعادة توجيهها إلى علبة بريد تحددها. لمزيد من المعلومات، راجع [نهج عمليات إرسال المستخدم](user-submission.md).
 |[الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة في Outlook](report-false-positives-and-false-negatives.md)|أرسل الإيجابيات الخاطئة (البريد الإلكتروني الجيد الذي تم حظره أو إرساله إلى مجلد غير هام) والسلبيات الخاطئة (البريد الإلكتروني غير المرغوب فيه أو التصيد الاحتيالي الذي تم تسليمه إلى علبة الوارد) إلى Exchange Online Protection (EOP) باستخدام ميزة "رسالة التقرير".|
 |[استخدام قواعد تدفق البريد لمعرفة المستخدمين الذين يبلغون إلى Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|تعرف على كيفية إنشاء قاعدة تدفق بريد (تعرف أيضا باسم قاعدة النقل) التي تعلمك عندما يقوم المستخدمون بالإبلاغ عن الرسائل إلى Microsoft للتحليل.|
-|[إرسال الملفات المشبوهة إلى Microsoft للتحليل](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|استخدم موقع التحليل الذكي لمخاطر الأمان من Microsoft لإرسال المرفقات والملفات الأخرى.|
+|[إرسال البرامج الضارة وغير الضارة إلى Microsoft للتحليل](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|استخدم موقع التحليل الذكي لمخاطر الأمان من Microsoft لإرسال المرفقات والملفات الأخرى.|
 
 > [!NOTE]
 > عند الإبلاغ عن كيان بريد إلكتروني إلى Microsoft، نقوم بعمل نسخة من كل شيء مقترن بالبريد الإلكتروني لتضمينه في مراجعات الخوارزمية المستمرة. تتضمن هذه النسخة محتوى البريد الإلكتروني ورؤوس البريد الإلكتروني والبيانات ذات الصلة حول توجيه البريد الإلكتروني. كما يتم تضمين المرفقات في الرسالة.
