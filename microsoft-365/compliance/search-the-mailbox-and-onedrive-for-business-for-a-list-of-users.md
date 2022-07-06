@@ -19,22 +19,20 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: استخدم البحث عن المحتوى والبرامج النصية في هذه المقالة للبحث في علب البريد ومواقع OneDrive for Business لمجموعة من المستخدمين.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 838e565d385077416d1001afc02e1aceeebb5188
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 02ee9790d35eca411a9e27607a7e99ca962ddf05
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011608"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629156"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>استخدام البحث عن المحتوى للبحث في علبة البريد وموقع OneDrive for Business عن قائمة المستخدمين
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يوفر Security & Compliance PowerShell عددا من أوامر cmdlets التي تتيح لك أتمتة المهام ذات الصلة ب eDiscovery التي تستغرق وقتا طويلا. حاليا، يستغرق إنشاء بحث في المحتوى في مدخل توافق Microsoft Purview للبحث في عدد كبير من مواقع محتوى الوصي وقتا وإعدادا. قبل إنشاء عملية بحث، يجب عليك جمع عنوان URL لكل موقع OneDrive for Business ثم إضافة كل علبة بريد وموقع OneDrive for Business إلى البحث. في الإصدارات المستقبلية، سيكون من الأسهل القيام بذلك في مدخل التوافق. حتى ذلك الحين، يمكنك استخدام البرنامج النصي في هذه المقالة لأتمتة هذه العملية. يطالبك هذا البرنامج النصي باسم مجال MySite الخاص بالمؤسسة (على سبيل المثال، **contoso** في عنوان URL `https://contoso-my.sharepoint.com`) وقائمة بعناوين البريد الإلكتروني للمستخدم واسم البحث عن المحتوى الجديد واستعلام البحث المطلوب استخدامه. يحصل البرنامج النصي على عنوان URL OneDrive for Business لكل مستخدم في القائمة، ثم يقوم بإنشاء "بحث المحتوى" وبدء تشغيله للبحث في علبة البريد وموقع OneDrive for Business لكل مستخدم في القائمة، باستخدام استعلام البحث الذي توفره.
+يوفر Security & Compliance PowerShell عددا من أوامر cmdlets التي تتيح لك أتمتة المهام ذات الصلة ب eDiscovery التي تستغرق وقتا طويلا. حاليا، يستغرق إنشاء البحث في المحتوى في مدخل التوافق في Microsoft Purview للبحث في عدد كبير من مواقع محتوى الوصي وقتا وإعدادا. قبل إنشاء عملية بحث، يجب عليك جمع عنوان URL لكل موقع OneDrive for Business ثم إضافة كل علبة بريد وموقع OneDrive for Business إلى البحث. في الإصدارات المستقبلية، سيكون من الأسهل القيام بذلك في مدخل التوافق. حتى ذلك الحين، يمكنك استخدام البرنامج النصي في هذه المقالة لأتمتة هذه العملية. يطالبك هذا البرنامج النصي باسم مجال MySite الخاص بالمؤسسة (على سبيل المثال، **contoso** في عنوان URL `https://contoso-my.sharepoint.com`) وقائمة بعناوين البريد الإلكتروني للمستخدم واسم البحث عن المحتوى الجديد واستعلام البحث المطلوب استخدامه. يحصل البرنامج النصي على عنوان URL OneDrive for Business لكل مستخدم في القائمة، ثم يقوم بإنشاء "بحث المحتوى" وبدء تشغيله للبحث في علبة البريد وموقع OneDrive for Business لكل مستخدم في القائمة، باستخدام استعلام البحث الذي توفره.
 
 ## <a name="permissions-and-script-information"></a>الأذونات ومعلومات البرنامج النصي
 
-- يجب أن تكون عضوا في مجموعة دور eDiscovery Manager في مدخل التوافق ومسؤولا عاما SharePoint Online لتشغيل البرنامج النصي في الخطوة 3.
+- يجب أن تكون عضوا في مجموعة أدوار eDiscovery Manager في مدخل التوافق ومسؤول عام في SharePoint Online لتشغيل البرنامج النصي في الخطوة 3.
 
 - تأكد من حفظ قائمة المستخدمين الذين تقوم بإنشائها في الخطوة 2 والبرامج النصية في الخطوة 3 إلى المجلد نفسه. وهذا سيجعل من السهل تشغيل البرنامج النصي.
 
@@ -46,11 +44,11 @@ ms.locfileid: "66011608"
 
 الخطوة الأولى هي تثبيت SharePoint Online Management Shell. ليس عليك استخدام shell في هذا الإجراء، ولكن عليك تثبيته لأنه يحتوي على متطلبات مسبقة مطلوبة من قبل البرنامج النصي الذي تقوم بتشغيله في الخطوة 3. تسمح هذه المتطلبات الأساسية للبرنامج النصي بالاتصال ب SharePoint Online للحصول على عناوين URL لمواقع OneDrive for Business.
 
-انتقل إلى [إعداد بيئة SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) وتنفيذ الخطوة 1 والخطوة 2 لتثبيت SharePoint Online Management Shell.
+انتقل إلى [إعداد بيئة SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) وقم بتنفيذ الخطوة 1 والخطوة 2 لتثبيت SharePoint Online Management Shell.
 
 ## <a name="step-2-generate-a-list-of-users"></a>الخطوة 2: إنشاء قائمة المستخدمين
 
-سيقوم البرنامج النصي في الخطوة 3 بإنشاء "بحث في المحتوى" للبحث في علب البريد وحسابات OneDrive لقائمة المستخدمين. يمكنك فقط كتابة عناوين البريد الإلكتروني في ملف نصي، أو يمكنك تشغيل أمر في PowerShell للحصول على قائمة بعناوين البريد الإلكتروني وحفظها في ملف (موجود في المجلد نفسه الذي ستحفظ البرنامج النصي إليه في الخطوة 3).
+سينشئ البرنامج النصي في الخطوة 3 "بحث في المحتوى" للبحث في علب البريد وحسابات OneDrive عن قائمة المستخدمين. يمكنك فقط كتابة عناوين البريد الإلكتروني في ملف نصي، أو يمكنك تشغيل أمر في PowerShell للحصول على قائمة بعناوين البريد الإلكتروني وحفظها في ملف (موجود في المجلد نفسه الذي ستحفظ البرنامج النصي إليه في الخطوة 3).
 
 إليك أمر [powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) يمكنك تشغيله للحصول على قائمة بعناوين البريد الإلكتروني لجميع المستخدمين في مؤسستك وحفظها في ملف نصي يسمى `Users.txt`.
 
@@ -64,7 +62,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 عند تشغيل البرنامج النصي في هذه الخطوة، سيطالبك بالمعلومات التالية. تأكد من أن هذه المعلومات جاهزة قبل تشغيل البرنامج النصي.
 
-- **بيانات اعتماد المستخدم -** سيستخدم البرنامج النصي بيانات الاعتماد الخاصة بك للوصول إلى SharePoint Online للحصول على عناوين URL OneDrive for Business والاتصال ب PowerShell للأمان & التوافق.
+- **بيانات اعتماد المستخدم** - سيستخدم البرنامج النصي بيانات الاعتماد للوصول إلى SharePoint Online للحصول على عناوين URL OneDrive for Business والاتصال ب PowerShell للأمان & التوافق.
 
 - **اسم مجال MySite** - مجال MySite هو المجال الذي يحتوي على كافة مواقع OneDrive for Business في مؤسستك. على سبيل المثال، إذا كان عنوان URL لمجال MySite الخاص بك ، **https://contoso-my.sharepoint.com** فستدخل  `contoso` عندما يطالبك البرنامج النصي باسم مجال MySite الخاص بك.
 

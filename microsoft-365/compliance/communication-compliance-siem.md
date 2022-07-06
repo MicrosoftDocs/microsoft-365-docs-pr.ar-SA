@@ -19,24 +19,22 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f111fbd831f36cd8f1647e4b99565a24372387b8
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 4d9ee561e033e98919063d1f344aa3207a6bb6cd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953859"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626524"
 ---
 # <a name="communication-compliance-with-siem-solutions"></a>توافق الاتصالات مع حلول إدارة معلومات الأمان والأحداث
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 [توافق الاتصالات](communication-compliance.md) هو حل مخاطر من الداخل في Microsoft Purview يساعد على تقليل مخاطر الاتصال من خلال مساعدتك في اكتشاف الرسائل غير المناسبة في مؤسستك والتقاطها والعمل عليها. عادة ما تستخدم حلول إدارة معلومات الأمان والأحداث (SIEM) مثل [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) أو [Splunk](https://www.splunk.com/) لتجميع التهديدات وتتبعها داخل المؤسسة.
 
-من الاحتياجات المشتركة للمؤسسات دمج تنبيهات الامتثال للاتصالات وحلول SIEM هذه. مع هذا التكامل، يمكن للمؤسسات عرض تنبيهات توافق الاتصالات في حل SIEM الخاص بها ثم معالجة التنبيهات ضمن سير عمل توافق الاتصالات وتجربة المستخدم. على سبيل المثال، يرسل موظف رسالة مسيئة إلى موظف آخر ويتم الكشف عن هذه الرسالة من خلال مراقبة نهج توافق الاتصالات للمحتوى غير المناسب. يتم تعقب هذه الأحداث في Microsoft 365 Audit (المعروف أيضا باسم "سجل التدقيق الموحد") بواسطة حل توافق الاتصالات واستيرادها إلى حل SIEM. ثم يتم تشغيل تنبيه في حل SIEM للمؤسسة من الأحداث المراقبة في Microsoft 365 التدقيق المقترنة بتنبيهات توافق الاتصالات. يتم إعلام المحققين بالتنبيه في حلول SIEM ثم يحققون في التنبيه ويعالجونه في حل التوافق مع الاتصالات.
+من الاحتياجات المشتركة للمؤسسات دمج تنبيهات الامتثال للاتصالات وحلول SIEM هذه. مع هذا التكامل، يمكن للمؤسسات عرض تنبيهات توافق الاتصالات في حل SIEM الخاص بها ثم معالجة التنبيهات ضمن سير عمل توافق الاتصالات وتجربة المستخدم. على سبيل المثال، يرسل موظف رسالة مسيئة إلى موظف آخر ويتم الكشف عن هذه الرسالة من خلال مراقبة نهج توافق الاتصالات للمحتوى غير المناسب. يتم تعقب هذه الأحداث في تدقيق Microsoft 365 (المعروف أيضا باسم "سجل التدقيق الموحد") بواسطة حل توافق الاتصالات واستيرادها إلى حل SIEM. ثم يتم تشغيل تنبيه في حل SIEM للمؤسسة من الأحداث المراقبة في تدقيق Microsoft 365 المقترنة بتنبيهات توافق الاتصالات. يتم إعلام المحققين بالتنبيه في حلول SIEM ثم يحققون في التنبيه ويعالجونه في حل التوافق مع الاتصالات.
 
-## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>تنبيهات التوافق مع الاتصالات في Microsoft 365 Audit
+## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>تنبيهات توافق الاتصالات في تدقيق Microsoft 365
 
-يتم تسجيل جميع تطابقات نهج التوافق مع الاتصالات في Microsoft 365 Audit. توضح الأمثلة التالية التفاصيل المتوفرة لأنشطة مطابقة نهج توافق الاتصالات المحددة:
+يتم تسجيل كافة تطابقات نهج التوافق مع الاتصالات في Microsoft 365 Audit. توضح الأمثلة التالية التفاصيل المتوفرة لأنشطة مطابقة نهج توافق الاتصالات المحددة:
 
 **مثال لإدخال سجل التدقيق لمطابقة قالب نهج المحتوى غير المناسب:**
 
@@ -54,7 +52,7 @@ IsValid: True
 ObjectState: Unchanged
 ```
 
-**مثال على إدخال سجل تدقيق Microsoft 365 لنهج مع مطابقة كلمة أساسية مخصصة (نوع معلومات حساسة مخصصة):**
+**مثال لإدخال سجل تدقيق Microsoft 365 لنهج مع مطابقة كلمة أساسية مخصصة (نوع معلومات حساسة مخصصة):**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -71,7 +69,7 @@ ObjectState: Unchanged
 ```
 
 > [!NOTE]
-> حاليا، قد يكون هناك تأخير لمدة 24 ساعة بين وقت تسجيل تطابق النهج في Microsoft 365 Audit والوقت الذي يمكنك فيه التحقق من تطابقات النهج في توافق الاتصالات.
+> حاليا، قد يكون هناك تأخير لمدة 24 ساعة بين وقت تسجيل تطابق النهج في تدقيق Microsoft 365 والوقت الذي يمكنك فيه التحقق من تطابقات النهج في توافق الاتصالات.
 
 ## <a name="configure-communication-compliance-and-microsoft-sentinel-integration"></a>تكوين توافق الاتصالات وتكامل Microsoft Sentinel
 
@@ -81,23 +79,23 @@ ObjectState: Unchanged
 2. تكوين [موصل بيانات](/azure/sentinel/data-connectors-reference#microsoft-office-365) Microsoft Sentinel Microsoft Office 365 وضمن تكوين الموصل، حدد *Exchange*.
 3. تكوين استعلام البحث لاسترداد تنبيهات التوافق مع الاتصالات. على سبيل المثال:
 
-    *| | OfficeActivity حيث OfficeWorkload == "Exchange" والعملية == "RangRuleMatch" | فرز حسب TimeGenerated*
+    *| | OfficeActivity حيث OfficeWorkload == "Exchange" و Operation == "RangRuleMatch" | فرز حسب TimeGenerated*
 
     للتصفية لمستخدم معين، يمكنك استخدام تنسيق الاستعلام التالي:
 
-    *| | OfficeActivity حيث OfficeWorkload == "Exchange" والعملية == "CorrelationRuleMatch" وUserId == "User1@Contoso.com" | فرز حسب TimeGenerated*
+    *| | OfficeActivity حيث OfficeWorkload == "Exchange" و Operation == "CorrelationRuleMatch" و UserId == "User1@Contoso.com" | فرز حسب TimeGenerated*
 
-لمزيد من المعلومات حول سجلات التدقيق Microsoft 365 Office 365 جمعها Microsoft Sentinel، راجع [مرجع سجلات Azure Monitor](/azure/azure-monitor/reference/tables/OfficeActivity).
+لمزيد من المعلومات حول سجلات تدقيق Microsoft 365 Office 365 التي تم تجميعها بواسطة Microsoft Sentinel، راجع [مرجع سجلات Azure Monitor](/azure/azure-monitor/reference/tables/OfficeActivity).
 
 ## <a name="configure-communication-compliance-and-splunk-integration"></a>تكوين توافق الاتصالات وتكامل Splunk
 
 لدمج تنبيهات توافق الاتصالات مع Splunk، أكمل الخطوات التالية:
 
 1. تثبيت [الوظيفة الإضافية Splunk ل Microsoft Office 365](https://docs.splunk.com/Documentation/AddOns/released/MSO365/ConfigureinputsmanagementAPI)
-2. تكوين تطبيق تكامل في Azure AD للوظيفة الإضافية Splunk Microsoft Office 365
+2. تكوين تطبيق تكامل في Azure AD لوظيفة Splunk الإضافية Microsoft Office 365
 3. تكوين استعلامات البحث في حل Splunk الخاص بك. استخدم مثال البحث التالي لتحديد جميع تنبيهات توافق الاتصالات:
 
-    *index=\* sourcetype="o365:management:activity" Workload=Exchange Operation=UmbrellaRuleMatch*
+    *index=\* sourcetype="o365:management:activity" Workload=Exchange Operation=CompliantRuleMatch*
 
 لتصفية النتائج لنهج توافق اتصالات محدد، يمكنك استخدام معلمة *SRPolicyMatchDetails.SRPolicyName* .
 
@@ -110,11 +108,11 @@ ObjectState: Unchanged
 | أنواع النهج | مثال على نتائج البحث |
 | :------------------ | :--------------------------------------- |
 | نهج الكشف عن قائمة كلمات أساسية مخصصة لنوع المعلومات الحساسة | { <br> وقت الإنشاء: 2021-09-17T16:29:57 <br> المعرف: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> Objectid: <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> العملية: NullRuleMatch <br> معرف المؤسسة: d6a06676-95e8-4632-b949-44bc00f0793f <br> نوع السجل: 68 <br> ResultStatus: {"ItemClass":"IPM. ملاحظة","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> معرف المستخدم: user1@contoso.OnMicrosoft.com <br> UserKey: الإشراف علىStoreDeliveryAgent <br> UserType: 0 <br> الإصدار: 1 <br> حمل العمل: Exchange <br> } |
-| نهج الكشف عن اللغة غير المناسبة | { <br> وقت الإنشاء: 2021-09-17T23:44:35 <br> المعرف: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> Objectid: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> العملية: NullRuleMatch <br> معرف المؤسسة: d6a06676-95e8-4632-b949-44bc00f0793f <br> نوع السجل: 68 <br> ResultStatus: {"ItemClass":"IPM.Yammer. رسالة","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> معرف المستخدم: user1@contoso.com <br> UserKey: الإشراف علىStoreDeliveryAgent <br> UserType: 0 <br> الإصدار: 1 <br> }  |
+| نهج الكشف عن اللغة غير المناسبة | { <br> وقت الإنشاء: 2021-09-17T23:44:35 <br> المعرف: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> Objectid: <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> العملية: NullRuleMatch <br> معرف المؤسسة: d6a06676-95e8-4632-b949-44bc00f0793f <br> نوع السجل: 68 <br> ResultStatus: {"ItemClass":"IPM. Yammer.Message","CcsiResults":""} <br> SRPolicyMatchDetails: { [+] } <br> معرف المستخدم: user1@contoso.com <br> UserKey: الإشراف علىStoreDeliveryAgent <br> UserType: 0 <br> الإصدار: 1 <br> }  |
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>تكوين توافق الاتصالات مع حلول SIEM الأخرى
 
-لاسترداد تطابقات نهج توافق الاتصالات من Microsoft 365 Audit، يمكنك إما استخدام PowerShell أو [واجهة برمجة تطبيقات إدارة Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
+لاسترداد تطابقات نهج توافق الاتصالات من تدقيق Microsoft 365، يمكنك إما استخدام PowerShell أو [واجهة برمجة تطبيقات إدارة Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
 عند استخدام PowerShell، يمكنك استخدام أي من هذه المعلمات مع أمر cmdlet **Search-UnifiedAuditLog** لتصفية أحداث سجل التدقيق لأنشطة توافق الاتصالات.
 
@@ -136,5 +134,5 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Compl
 ## <a name="resources"></a>الموارد
 
 - [تدقيق التوافق مع الاتصالات](communication-compliance-reports-audits.md#audit)
-- [تدقيق Microsoft Purview (Premium)](advanced-audit.md)
+- [Microsoft Purview Audit (Premium)](advanced-audit.md)
 - [مرجع واجهة برمجة تطبيقات نشاط إدارة Office 365](/office/office-365-management-api/office-365-management-activity-api-reference)

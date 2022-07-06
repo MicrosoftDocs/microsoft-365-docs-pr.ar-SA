@@ -12,22 +12,20 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 description: يتعامل العاملون في مجال المعلومات في مؤسستك مع أنواع عديدة من المعلومات الحساسة خلال يوم نموذجي. تسهل لك بصمة المستند حماية هذه المعلومات من خلال تحديد النماذج القياسية المستخدمة في جميع أنحاء مؤسستك. يصف هذا الموضوع المفاهيم وراء بصمة المستند وكيفية إنشاء واحد باستخدام PowerShell.
-ms.openlocfilehash: 3df4b7cf6f9fa09e81cf326cc58cc8114c025be9
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 1ad29126783b9d824789b06020b8f925be00ffbb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014465"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627614"
 ---
 # <a name="document-fingerprinting"></a>تعريف المستند ببصمة الإصبع
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يتعامل العاملون في مجال المعلومات في مؤسستك مع أنواع عديدة من المعلومات الحساسة خلال يوم نموذجي. في مدخل الامتثال ل Microsoft Purview، تسهل لك بصمة المستند حماية هذه المعلومات من خلال تحديد النماذج القياسية المستخدمة في جميع أنحاء مؤسستك. يصف هذا الموضوع المفاهيم وراء بصمة المستند وكيفية إنشاء واحد باستخدام PowerShell.
+يتعامل العاملون في مجال المعلومات في مؤسستك مع أنواع عديدة من المعلومات الحساسة خلال يوم نموذجي. في مدخل التوافق في Microsoft Purview، تسهل لك بصمة المستند حماية هذه المعلومات من خلال تحديد النماذج القياسية المستخدمة في جميع أنحاء مؤسستك. يصف هذا الموضوع المفاهيم وراء بصمة المستند وكيفية إنشاء واحد باستخدام PowerShell.
 
 ## <a name="basic-scenario-for-document-fingerprinting"></a>سيناريو أساسي لبصمة المستند
 
-بصمة المستند هي ميزة Microsoft Purview Data Loss Prevention (DLP) التي تحول نموذجا قياسيا إلى نوع معلومات حساسة، والتي يمكنك استخدامها في قواعد نهج DLP. على سبيل المثال، يمكنك إنشاء بصمة مستند استنادا إلى قالب براءة اختراع فارغ ثم إنشاء نهج DLP يكشف عن جميع قوالب براءة الاختراع الصادرة ويحظرها مع ملء محتوى حساس. بشكل اختياري، يمكنك إعداد [تلميحات النهج](use-notifications-and-policy-tips.md) لإعلام المرسلين بأنهم قد يرسلون معلومات حساسة، ويجب على المرسل التحقق من أن المستلمين مؤهلون لتلقي براءات الاختراع. تعمل هذه العملية مع أي نماذج مستندة إلى نص مستخدمة في مؤسستك. تتضمن الأمثلة الإضافية للنماذج التي يمكنك تحميلها ما يلي:
+بصمة المستند هي ميزة تفادي فقدان البيانات في Microsoft Purview (DLP) تحول نموذجا قياسيا إلى نوع معلومات حساسة، والتي يمكنك استخدامها في قواعد نهج DLP. على سبيل المثال، يمكنك إنشاء بصمة مستند استنادا إلى قالب براءة اختراع فارغ ثم إنشاء نهج DLP يكشف عن جميع قوالب براءة الاختراع الصادرة ويحظرها مع ملء محتوى حساس. بشكل اختياري، يمكنك إعداد [تلميحات النهج](use-notifications-and-policy-tips.md) لإعلام المرسلين بأنهم قد يرسلون معلومات حساسة، ويجب على المرسل التحقق من أن المستلمين مؤهلون لتلقي براءات الاختراع. تعمل هذه العملية مع أي نماذج مستندة إلى نص مستخدمة في مؤسستك. تتضمن الأمثلة الإضافية للنماذج التي يمكنك تحميلها ما يلي:
 
 - النماذج الحكومية
 - نماذج الامتثال لقانون نقل التأمين الصحي والمساءلة (HIPAA)
@@ -87,13 +85,13 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 
 يمكنك الآن استخدام **Get-DlpSensitiveInformationType** cmdlet للعثور على جميع حزم قواعد تصنيف بيانات DLP، وفي هذا المثال، "Contoso Customer Confidential" هو جزء من قائمة حزم قواعد تصنيف البيانات.
 
-وأخيرا، أضف حزمة قاعدة تصنيف البيانات "Contoso Customer Confidential" إلى نهج DLP في مدخل توافق Microsoft Purview. يضيف هذا المثال قاعدة إلى نهج DLP موجود يسمى "ConfidentialPolicy".
+وأخيرا، أضف حزمة قاعدة تصنيف البيانات "Contoso Customer Confidential" إلى نهج DLP في مدخل التوافق في Microsoft Purview. يضيف هذا المثال قاعدة إلى نهج DLP موجود يسمى "ConfidentialPolicy".
 
 ```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-يمكنك أيضا استخدام حزمة قاعدة تصنيف البيانات في قواعد تدفق البريد في Exchange Online، كما هو موضح في المثال التالي. لتشغيل هذا الأمر، تحتاج أولا إلى [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). لاحظ أيضا أن مزامنة حزمة القواعد من مدخل توافق Microsoft Purview إلى مركز إدارة Exchange يستغرق وقتا.
+يمكنك أيضا استخدام حزمة قاعدة تصنيف البيانات في قواعد تدفق البريد في Exchange Online، كما هو موضح في المثال التالي. لتشغيل هذا الأمر، تحتاج أولا إلى [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). لاحظ أيضا أن مزامنة حزمة القواعد من مدخل التوافق في Microsoft Purview إلى مركز إدارة Exchange يستغرق وقتا.
 
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}

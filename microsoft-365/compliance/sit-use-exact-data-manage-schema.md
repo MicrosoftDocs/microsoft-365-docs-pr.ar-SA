@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: تعرف على كيفية تحرير مخطط مطابقة البيانات الدقيق أو إزالته.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29cfefbd6bf9bb9f92fe5ed7664575ec75adfa12
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: fb8a9d014bb4654ce39b0bb6312f8b20cd6d781e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014663"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629134"
 ---
 # <a name="manage-your-exact-data-match-schema"></a>إدارة مخطط مطابقة البيانات بالضبط
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="editing-the-schema-for-edm-based-classification-manually"></a>تحرير مخطط التصنيف المستند إلى EDM يدويا
 
@@ -37,7 +35,7 @@ ms.locfileid: "66014663"
 
 1. قم بتحرير ملف **edm.xml** (هذا هو الملف الذي تمت مناقشته في [إنشاء المخطط لأنواع المعلومات الحساسة المستندة إلى تطابق البيانات الدقيقة](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types).
 
-2. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+2. [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 3. لتحديث مخطط قاعدة البيانات، قم بتشغيل الأمر التالي:
 
@@ -65,7 +63,7 @@ ms.locfileid: "66014663"
 
 إذا كنت تريد إزالة المخطط الذي تستخدمه للتصنيف المستند إلى EDM، فاتبع الخطوات التالية:
 
-1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. قم بتشغيل الأمر التالي، مع استبدال اسم مخزن البيانات "سجلات المرضى" مع الاسم الذي تريد إزالته (باستخدام مخزن patientrecords كمثال):
 

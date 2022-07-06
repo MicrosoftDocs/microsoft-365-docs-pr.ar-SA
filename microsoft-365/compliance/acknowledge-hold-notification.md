@@ -18,16 +18,14 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية استخدام eDiscovery (Premium) لإرسال إعلامات الاحتجاز القانوني ومتابعتها عبر البريد الإلكتروني، بالإضافة إلى مراقبة حالة الالتزام.
-ms.openlocfilehash: 21f02f25518fe2ff1c2e4bf80e43de476d381595
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3322228dbdc27463bde16de0aa71900cbc80ca58
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100600"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627780"
 ---
 # <a name="acknowledge-a-hold-notification"></a>الإقرار بإعلام الانتظار
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 عند الاستجابة لطلب تنظيمي أو تحقيق تنظيمي، قد يطلب منك إعلام أمناء الحفظ بالتزاماتهم بالحفاظ على المعلومات المخزنة إلكترونيا (ESI) وأي مواد قد تكون ذات صلة بالمسألة القانونية النشطة أو المحتمة. بمجرد إرسالها، يجب أن تعرف الفرق القانونية أن كل أمين قد تلقى واقرأ وفهم وافق على اتباع التعليمات المحددة.
 

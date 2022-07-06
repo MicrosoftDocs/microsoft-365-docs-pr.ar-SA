@@ -1,5 +1,5 @@
 ---
-title: استخدام تسميات الحساسية مع مواقع Microsoft Teams مجموعات Microsoft 365 SharePoint
+title: استخدام تسميات الحساسية مع Microsoft Teams ومواقع مجموعات Microsoft 365 وSharePoint
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,19 +17,17 @@ ms.custom: admindeeplinkSPO
 search.appverid:
 - MOE150
 - MET150
-description: استخدم تسميات الحساسية لحماية المحتوى في مواقع SharePoint Microsoft Teams والمجموعات Microsoft 365.
-ms.openlocfilehash: dfe76e31eb5816e53a3f6d4ab598f1737cdebaa1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: استخدم تسميات الحساسية لحماية المحتوى في مواقع SharePoint وMicrosoft Teams ومجموعات Microsoft 365.
+ms.openlocfilehash: 17b1a2aab1da0e2c901aac14b3bf675cbbabe740
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014289"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628672"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>استخدام تسميات الحساسية لحماية المحتوى في Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint
 
->*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 بالإضافة إلى استخدام [تسميات الحساسية](sensitivity-labels.md) لتصنيف المستندات ورسائل البريد الإلكتروني وحمايتها، يمكنك أيضا استخدام تسميات الحساسية لحماية المحتوى في الحاويات التالية: مواقع Microsoft Teams ومجموعات Microsoft 365 ([مجموعات Office 365 سابقا](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) ومواقع SharePoint. لهذا التصنيف والحماية على مستوى الحاوية، استخدم إعدادات التسمية التالية:
 
@@ -38,7 +36,7 @@ ms.locfileid: "66014289"
 - المشاركة الخارجية من مواقع SharePoint
 - الوصول من الأجهزة غير المدارة
 - سياقات المصادقة (في المعاينة)
-- ارتباط مشاركة افتراضي لموقع SharePoint (تكوين PowerShell فقط)
+- ارتباط المشاركة الافتراضي لموقع SharePoint (تكوين PowerShell فقط)
 - في المعاينة: إعدادات مشاركة الموقع (تكوين PowerShell فقط)
 
 > [!IMPORTANT]
@@ -46,26 +44,26 @@ ms.locfileid: "66014289"
 
 عند تطبيق وصف الحساسية هذا على حاوية مدعومة، تطبق التسمية تلقائيا إعدادات التصنيف والحماية المكونة على الموقع أو المجموعة.
 
-ومع ذلك، لا يرث المحتوى في هذه الحاويات تسميات التصنيف أو إعدادات الملفات ورسائل البريد الإلكتروني، مثل العلامات المرئية والتشفير. حتى يتمكن المستخدمون من تسمية مستنداتهم في مواقع SharePoint أو مواقع الفريق، تأكد من [تمكين تسميات الحساسية لملفات Office في SharePoint OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+ومع ذلك، لا يرث المحتوى في هذه الحاويات تسميات التصنيف أو إعدادات الملفات ورسائل البريد الإلكتروني، مثل العلامات المرئية والتشفير. لكي يتمكن المستخدمون من تسمية مستنداتهم في مواقع SharePoint أو مواقع الفريق، تأكد من [تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>استخدام تسميات الحساسية Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint
+## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>استخدام أوصاف الحساسية ل Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint
 
 قبل تمكين تسميات الحساسية للحاويات وتكوين تسميات الحساسية للإعدادات الجديدة، يمكن للمستخدمين رؤية تسميات الحساسية وتطبيقها في تطبيقاتهم. على سبيل المثال، من Word:
 
 ![وصف الحساسية المعروض في تطبيق Word لسطح المكتب.](../media/sensitivity-label-word.png)
 
-بعد تمكين وتكوين تسميات الحساسية للحاويات، يمكن للمستخدمين رؤية تسميات الحساسية وتطبيقها على مواقع فريق Microsoft ومجموعات Microsoft 365 ومواقع SharePoint. على سبيل المثال، عند إنشاء موقع فريق جديد من SharePoint:
+بعد تمكين تسميات الحساسية للحاويات وتكوينها، يمكن للمستخدمين أيضا رؤية تسميات الحساسية وتطبيقها على مواقع فريق Microsoft ومجموعات Microsoft 365 ومواقع SharePoint. على سبيل المثال، عند إنشاء موقع فريق جديد من SharePoint:
 
 ![وصف الحساسية عند إنشاء موقع فريق من SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
 > [!NOTE]
-> تدعم تسميات الحساسية للحاويات [Teams القنوات المشتركة](/MicrosoftTeams/shared-channels)، قيد المعاينة حاليا. إذا كان لدى الفريق أي قنوات مشتركة، فإنه يرث تلقائيا إعدادات وصف الحساسية من فريقه الأصل، ولا يمكن إزالة هذه التسمية أو استبدالها بتسمية مختلفة.
+> تدعم تسميات الحساسية للحاويات [القنوات المشتركة ل Teams](/MicrosoftTeams/shared-channels)، قيد المعاينة حاليا. إذا كان لدى الفريق أي قنوات مشتركة، فإنه يرث تلقائيا إعدادات وصف الحساسية من فريقه الأصل، ولا يمكن إزالة هذه التسمية أو استبدالها بتسمية مختلفة.
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>كيفية تمكين تسميات الحساسية للحاويات ومزامنة التسميات
 
 إذا لم تقم بعد بتمكين تسميات الحساسية للحاويات، فقم بمجموعة الخطوات التالية كإجراء لمرة واحدة:
 
-1. لأن هذه الميزة تستخدم وظائف Azure AD، اتبع الإرشادات من وثائق Azure AD لتمكين دعم وصف الحساسية: [تعيين تسميات الحساسية إلى مجموعات Microsoft 365 في Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
+1. لأن هذه الميزة تستخدم وظائف Azure AD، اتبع الإرشادات من وثائق Azure AD لتمكين دعم وصف الحساسية: [تعيين تسميات الحساسية لمجموعات Microsoft 365 في Azure Active Directory](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
 2. تحتاج الآن إلى مزامنة تسميات الحساسية الخاصة بك إلى Azure AD. أولا، [اتصل ب Security & Compliance PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
@@ -108,11 +106,11 @@ ms.locfileid: "66014289"
 
 4. إذا قمت بتحديد **إعدادات المشاركة الخارجية والوصول المشروط**، فكون الآن الإعدادات التالية:
     
-    - **التحكم في المشاركة الخارجية من مواقع SharePoint المسماة**: حدد هذا الخيار لتحديد إما المشاركة الخارجية لأي شخص أو الضيوف الجدد والموجودين أو الضيوف الحاليين أو الأشخاص في مؤسستك فقط. لمزيد من المعلومات حول هذا التكوين والإعدادات، راجع وثائق SharePoint [وتشغيل المشاركة الخارجية أو إيقاف تشغيلها لموقع](/sharepoint/change-external-sharing-site).
+    - **التحكم في المشاركة الخارجية من مواقع SharePoint المسماة**: حدد هذا الخيار لتحديد إما المشاركة الخارجية لأي شخص أو الضيوف الجدد والموجودين أو الضيوف الحاليين أو الأشخاص في مؤسستك فقط. لمزيد من المعلومات حول هذا التكوين والإعدادات، راجع وثائق SharePoint، [وقم بتشغيل المشاركة الخارجية أو إيقاف تشغيلها لموقع](/sharepoint/change-external-sharing-site).
     
     - **استخدم Azure AD الوصول المشروط لحماية مواقع SharePoint المسماة**: حدد هذا الخيار فقط إذا قامت مؤسستك بتكوين [الوصول المشروط ل Azure Active Directory وتستخدمه](/azure/active-directory/conditional-access/overview). ثم حدد أحد الإعدادات التالية:
     
-        - **تحديد ما إذا كان يمكن للمستخدمين الوصول إلى مواقع SharePoint من أجهزة غير مدارة**: يستخدم هذا الخيار ميزة SharePoint التي تستخدم الوصول المشروط Azure AD لحظر الوصول إلى SharePoint ومحتوى OneDrive أو تقييده من الأجهزة غير المدارة. لمزيد من المعلومات، راجع [التحكم في الوصول من الأجهزة غير المدارة](/sharepoint/control-access-from-unmanaged-devices) من وثائق SharePoint. الخيار الذي تحدده لإعداد التسمية هذا هو ما يعادل تشغيل أمر PowerShell لموقع، كما هو موضح في الخطوات من 3 إلى 5 من [الحظر أو تقييد الوصول إلى موقع SharePoint معين أو مقطع OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) من الإرشادات SharePoint.
+        - **تحديد ما إذا كان يمكن للمستخدمين الوصول إلى مواقع SharePoint من أجهزة غير مدارة**: يستخدم هذا الخيار ميزة SharePoint التي تستخدم Azure AD الوصول المشروط لحظر الوصول إلى محتوى SharePoint وOneDrive أو تقييده من الأجهزة غير المدارة. لمزيد من المعلومات، راجع [التحكم في الوصول من الأجهزة غير المدارة](/sharepoint/control-access-from-unmanaged-devices) من وثائق SharePoint. يعد الخيار الذي تحدده لإعداد التسمية هذا مكافئا لتشغيل أمر PowerShell لموقع، كما هو موضح في الخطوات من 3 إلى 5 من [الحظر أو تقييد الوصول إلى موقع SharePoint معين أو مقطع OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) من إرشادات SharePoint.
             
             للحصول على معلومات تكوين إضافية، راجع [المزيد من المعلومات حول تبعيات خيار الأجهزة غير المدارة](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) في نهاية هذا القسم.
             
@@ -133,11 +131,11 @@ ms.locfileid: "66014289"
 
 ##### <a name="more-information-about-the-dependencies-for-the-unmanaged-devices-option"></a>مزيد من المعلومات حول تبعيات خيار الأجهزة غير المدارة
 
-إذا لم تقم بتكوين نهج الوصول المشروط التابع SharePoint كما هو موثق في [القيود المفروضة على استخدام التطبيق](/sharepoint/app-enforced-restrictions)، فلن يكون للخيار الذي تحدده هنا أي تأثير. بالإضافة إلى ذلك، لن يكون له أي تأثير إذا كان أقل تقييدا من إعداد تم تكوينه على مستوى المستأجر. إذا قمت بتكوين إعداد على مستوى المؤسسة للأجهزة غير المدارة، فاختر إعداد تسمية يكون إما هو نفسه أو أكثر تقييدا
+إذا لم تقم بتكوين نهج الوصول المشروط التابع ل SharePoint كما هو موثق في [القيود المفروضة على استخدام التطبيق](/sharepoint/app-enforced-restrictions)، فلن يكون للخيار الذي تحدده هنا أي تأثير. بالإضافة إلى ذلك، لن يكون له أي تأثير إذا كان أقل تقييدا من إعداد تم تكوينه على مستوى المستأجر. إذا قمت بتكوين إعداد على مستوى المؤسسة للأجهزة غير المدارة، فاختر إعداد تسمية يكون إما هو نفسه أو أكثر تقييدا
 
 على سبيل المثال، إذا تم تكوين المستأجر **للسماح بالوصول المحدود على الويب فقط**، فلن يكون لإعداد التسمية الذي يسمح بالوصول الكامل أي تأثير لأنه أقل تقييدا. لهذا الإعداد على مستوى المستأجر، اختر إعداد التسمية لحظر الوصول (أكثر تقييدا) أو إعداد التسمية للوصول المحدود (نفس إعداد المستأجر).
 
-نظرا لأنه يمكنك تكوين إعدادات SharePoint بشكل منفصل عن تكوين التسمية، لا يوجد إيداع في تكوين وصف الحساسية بأن التبعيات في مكانها. يمكن تكوين هذه التبعيات بعد إنشاء التسمية ونشرها، وحتى بعد تطبيق التسمية. ومع ذلك، إذا تم تطبيق التسمية بالفعل، فلن يدخل إعداد التسمية حيز التنفيذ إلا بعد مصادقة المستخدم التالية.
+نظرا إلى أنه يمكنك تكوين إعدادات SharePoint بشكل منفصل عن تكوين التسمية، فلا يوجد أي إيداع في تكوين وصف الحساسية من وجود التبعيات. يمكن تكوين هذه التبعيات بعد إنشاء التسمية ونشرها، وحتى بعد تطبيق التسمية. ومع ذلك، إذا تم تطبيق التسمية بالفعل، فلن يدخل إعداد التسمية حيز التنفيذ إلا بعد مصادقة المستخدم التالية.
 
 ##### <a name="more-information-about-the-dependencies-for-the-authentication-context-option"></a>مزيد من المعلومات حول التبعيات الخاصة بخيار سياق المصادقة
 
@@ -147,17 +145,17 @@ ms.locfileid: "66014289"
 
 - Office على الويب، الذي يتضمن Outlook للويب
 
-- Microsoft Teams Windows macOS (يستثني تطبيق الويب Teams)
+- Microsoft Teams لنظامي التشغيل Windows وmacOS (باستثناء تطبيق Teams على الويب)
 
 - Microsoft Planner
 
-- Microsoft 365 Apps للإصدارات الدنيا من Word و Excel و PowerPoint:
+- Microsoft 365 Apps ل Word وExcel وPowerPoint؛ الحد الأدنى للإصدارات:
     - Windows: 2103
     - macOS: 16.45.1202
     - iOS: 2.48.303
     - Android: 16.0.13924.10000
 
-- Microsoft 365 Apps للإصدارات Outlook؛ الحد الأدنى من الإصدارات:
+- Microsoft 365 Apps ل Outlook؛ الحد الأدنى للإصدارات:
     - Windows: 2103
     - macOS: 16.45.1202
     - iOS: 4.2109.0
@@ -171,7 +169,7 @@ ms.locfileid: "66014289"
 
 القيود المعروفة لهذه المعاينة:
 
-- بالنسبة لتطبيق المزامنة من OneDrive، المعتمد OneDrive فقط وليس للمواقع الأخرى.
+- بالنسبة لتطبيق المزامنة من OneDrive، المعتمد ل OneDrive فقط وليس للمواقع الأخرى.
 
 - قد تكون الميزات والتطبيقات التالية غير متوافقة مع سياقات المصادقة، لذلك نشجعك على التحقق من استمرار عمل هذه الميزات والتطبيقات بعد أن يصل المستخدم بنجاح إلى موقع باستخدام سياق مصادقة:
     
@@ -180,16 +178,16 @@ ms.locfileid: "66014289"
 
 ### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>تكوين الإعدادات لنوع ارتباط المشاركة الافتراضي لموقع باستخدام إعدادات PowerShell المتقدمة
 
-بالإضافة إلى إعدادات التسمية للمواقع والمجموعات التي يمكنك تكوينها من مدخل توافق Microsoft Purview، يمكنك أيضا تكوين نوع ارتباط المشاركة الافتراضي لموقع. يمكن أيضا تكوين تسميات الحساسية للمستندات لنوع ارتباط مشاركة افتراضي. يتم تحديد هذه الإعدادات التي تساعد على منع الإفراط في المشاركة تلقائيا عندما يحدد المستخدمون الزر **"مشاركة"** في تطبيقاتهم Office. 
+بالإضافة إلى إعدادات التسمية للمواقع والمجموعات التي يمكنك تكوينها من مدخل التوافق في Microsoft Purview، يمكنك أيضا تكوين نوع ارتباط المشاركة الافتراضي لموقع. يمكن أيضا تكوين تسميات الحساسية للمستندات لنوع ارتباط مشاركة افتراضي. يتم تحديد هذه الإعدادات التي تساعد على منع الإفراط في المشاركة تلقائيا عندما يحدد المستخدمون الزر **"مشاركة"** في تطبيقات Office الخاصة بهم. 
 
-لمزيد من المعلومات والإرشادات، راجع [استخدام تسميات الحساسية لتكوين نوع ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint OneDrive](sensitivity-labels-default-sharing-link.md).
+لمزيد من المعلومات والإرشادات، راجع [استخدام تسميات الحساسية لتكوين نوع ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint وOneDrive](sensitivity-labels-default-sharing-link.md).
 
 ### <a name="configure-site-sharing-permissions-by-using-powershell-advanced-settings"></a>تكوين أذونات مشاركة الموقع باستخدام إعدادات PowerShell المتقدمة
 
 > [!NOTE]
 > إعداد التسمية هذا قيد المعاينة حاليا.
 
-إعداد PowerShell المتقدم الآخر الذي يمكنك تكوينه لتطبيق وصف الحساسية على موقع SharePoint هو **MembersCanShare**. هذا الإعداد هو التكوين المكافئ الذي يمكنك تعيينه من مركز إدارة SharePoint > تغيير **مشاركة** >  **الموقع لأذونات** >  الموقع **كيف يمكن للأعضاء مشاركة** > **أذونات المشاركة**. 
+إعداد PowerShell متقدم آخر يمكنك تكوينه لتطبيق وصف الحساسية على موقع SharePoint هو **MembersCanShare**. هذا الإعداد هو التكوين المكافئ الذي يمكنك تعيينه من مركز إدارة SharePoint > تغيير مشاركة **الموقع لأذونات** > **الموقع** > **كيف يمكن للأعضاء مشاركة** > **أذونات المشاركة**. 
 
 يتم سرد الخيارات الثلاثة بالقيم المكافئة للإعداد المتقدم ل PowerShell **MembersCanShare**:
 
@@ -199,7 +197,7 @@ ms.locfileid: "66014289"
 |**يمكن لمالكي الموقع وأعضاؤه والأشخاص الذين لديهم أذونات التحرير مشاركة الملفات والمجلدات، ولكن يمكن لمالكي الموقع فقط مشاركة الموقع.**|MemberShareFileAndFolder|
 |**يمكن لمالكي المواقع فقط مشاركة الملفات والمجلدات والموقع.**|MemberShareNone|
 
-لمزيد من المعلومات حول خيارات التكوين هذه، راجع [تغيير كيفية مشاركة الأعضاء](/microsoft-365/community/sharepoint-security-a-team-effort#change-how-members-can-share) من وثائق المجتمع SharePoint.
+لمزيد من المعلومات حول خيارات التكوين هذه، راجع [تغيير كيفية مشاركة الأعضاء](/microsoft-365/community/sharepoint-security-a-team-effort#change-how-members-can-share) من وثائق مجتمع SharePoint.
 
 مثال، حيث يكون GUID لتسمية الحساسية هو **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
 
@@ -207,7 +205,7 @@ ms.locfileid: "66014289"
 Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{MembersCanShare="MemberShareNone"}
 ````
 
-لمزيد من المساعدة في تحديد إعدادات PowerShell المتقدمة، راجع [تلميحات PowerShell لتحديد الإعدادات المتقدمة](sensitivity-labels-default-sharing-link.md#powershell-tips-for-specifying-the-advanced-settings).
+لمزيد من المساعدة في تحديد إعدادات PowerShell المتقدمة، راجع [تلميحات PowerShell لتحديد الإعدادات المتقدمة](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
 
 ## <a name="sensitivity-label-management"></a>إدارة وصف الحساسية
 
@@ -277,7 +275,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 يمكن للمستخدمين تحديد تسميات الحساسية عند إنشاء فرق جديدة في Microsoft Teams. عند تحديد التسمية من القائمة المنسدلة **الحساسية** ، قد يتغير إعداد الخصوصية ليعكس تكوين التسمية. استنادا إلى إعداد وصول المستخدمين الخارجيين الذي حددته للتسمية، يمكن للمستخدمين أو لا يمكنهم إضافة أشخاص من خارج المؤسسة إلى الفريق.
 
-[تعرف على المزيد حول تسميات الحساسية Teams](/microsoftteams/sensitivity-labels)
+[تعرف على المزيد حول أوصاف الحساسية ل Teams](/microsoftteams/sensitivity-labels)
 
 ![إعداد الخصوصية عند إنشاء فريق جديد.](../media/privacy-setting-new-team.png)
 
@@ -307,19 +305,19 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>استخدام PowerShell لتطبيق وصف الحساسية على مواقع متعددة
 
-يمكنك استخدام [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) و [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet مع *معلمة SensitivityLabel* من [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) الحالية لتطبيق وصف الحساسية على العديد من المواقع. يمكن أن تكون المواقع أي مجموعة مواقع مشتركة SharePoint أو موقع OneDrive.
+يمكنك استخدام [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) و [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet مع *معلمة SensitivityLabel* من [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) الحالية لتطبيق وصف الحساسية على العديد من المواقع. يمكن أن تكون المواقع عبارة عن أي مجموعة مواقع مشتركة في SharePoint أو موقع OneDrive.
 
 تأكد من أن لديك الإصدار 16.0.19418.12000 أو إصدار أحدث من SharePoint Online Management Shell.
 
 1. افتح جلسة عمل PowerShell باستخدام الخيار **"تشغيل كمسؤول** ".
 
-2. إذا كنت لا تعرف المعرف الفريد العمومي للتسمية: [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) واحصل على قائمة أوصاف الحساسية وGUIDs الخاصة بها.
+2. إذا كنت لا تعرف معرف GUID للتسمية: [اتصل ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) واحصل على قائمة أوصاف الحساسية وGUIDs الخاصة بها.
 
    ```powershell
    Get-Label |ft Name, Guid
    ```
 
-3. الآن [اتصل SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) وقم بتخزين المعرف الفريد العمومي للتسمية كمتغير. على سبيل المثال:
+3. اتصل الآن [ب SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) وقم بتخزين المعرف الفريد العمومي للتسمية كمتغير. على سبيل المثال:
 
    ```powershell
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
@@ -339,7 +337,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 تتيح لك هذه السلسلة من الأوامر تسمية مواقع متعددة عبر المستأجر الخاص بك بنفس تسمية الحساسية، ولهذا السبب تستخدم Set-SPOTenant cmdlet، بدلا من cmdlet Set-SPOSite للتكوين لكل موقع. ومع ذلك، استخدم Set-SPOSite cmdlet عندما تحتاج إلى تطبيق تسمية مختلفة على مواقع معينة عن طريق تكرار الأمر التالي لكل موقع من هذه المواقع: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
-## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>عرض أوصاف الحساسية وإدارتها في مركز إدارة SharePoint
+## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>عرض تسميات الحساسية وإدارتها في مركز إدارة SharePoint
 
 لعرض تسميات الحساسية المطبقة وفرزها والبحث فيها، استخدم <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**المواقع النشطة**</a> في مركز إدارة SharePoint الجديد. قد تحتاج أولا إلى إضافة عمود **الحساسية** :
 
@@ -361,7 +359,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 تدعم التطبيقات والخدمات التالية تسميات الحساسية التي تم تكوينها للمواقع وإعدادات المجموعة:
 
-- مراكز الإدارة:
+- مراكز مسؤول:
 
   - مركز إدارة SharePoint
   - مركز إدارة Teams
@@ -372,14 +370,14 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
   - SharePoint
   - الفرق
-  - Outlook على ويب Windows macOS وiOS وAndroid
+  - Outlook على ويب وWindows وmacOS وiOS وAndroid
   - اشكال
   - تيار
   - Planner 
 
 لا تدعم التطبيقات والخدمات التالية حاليا تسميات الحساسية التي تم تكوينها للمواقع وإعدادات المجموعة:
 
-- مراكز الإدارة:
+- مراكز مسؤول:
 
   - مركز إدارة Exchange
 
@@ -393,9 +391,9 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 ## <a name="classic-azure-ad-group-classification"></a>تصنيف مجموعة Azure AD الكلاسيكية
 
-بعد تمكين تسميات الحساسية للحاويات، لم تعد تصنيفات المجموعات من Azure AD مدعومة من قبل Microsoft 365 ولن يتم عرضها على المواقع التي تدعم تسميات الحساسية. ومع ذلك، يمكنك تحويل تصنيفاتك القديمة إلى تسميات الحساسية.
+بعد تمكين تسميات الحساسية للحاويات، لن يتم دعم تصنيفات المجموعات من Azure AD من قبل Microsoft 365 ولن يتم عرضها على المواقع التي تدعم تسميات الحساسية. ومع ذلك، يمكنك تحويل تصنيفاتك القديمة إلى تسميات الحساسية.
 
-كمثال على كيفية استخدام تصنيف المجموعة القديمة SharePoint، راجع [SharePoint تصنيف المواقع "الحديثة".](/sharepoint/dev/solution-guidance/modern-experience-site-classification)
+كمثال على كيفية استخدام تصنيف المجموعة القديمة ل SharePoint، راجع [تصنيف مواقع SharePoint "الحديثة".](/sharepoint/dev/solution-guidance/modern-experience-site-classification)
 
 تم تكوين هذه التصنيفات باستخدام Azure AD PowerShell أو مكتبة PnP Core وتحديد قيم `ClassificationList` الإعداد. إذا كان المستأجر الخاص بك يحتوي على قيم تصنيف معرفة، يتم عرضها عند تشغيل الأمر التالي من [الوحدة النمطية AzureADPreview PowerShell](https://www.powershellgallery.com/packages/AzureADPreview):
 
@@ -411,7 +409,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 ثم:
 
-1. استخدم PowerShell لتطبيق تسميات الحساسية على مجموعات Microsoft 365 الموجودة ومواقع SharePoint باستخدام تعيين الاسم. راجع القسم التالي للحصول على الإرشادات.
+1. استخدم PowerShell لتطبيق تسميات الحساسية على مجموعات Microsoft 365 ومواقع SharePoint الموجودة باستخدام تعيين الاسم. راجع القسم التالي للحصول على الإرشادات.
 
 2. إزالة التصنيفات القديمة من المجموعات والمواقع الموجودة.
 
@@ -431,7 +429,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
    Get-Label |ft Name, Guid
    ```
 
-3. دون ملاحظات عن معرفات GUID لتسميات الحساسية التي تريد تطبيقها على مجموعات Microsoft 365 الخاصة بك.
+3. دون ملاحظات حول معرفات المستخدم الرسومية (GUID) لأوصاف الحساسية التي تريد تطبيقها على مجموعات Microsoft 365.
 
 4. اتصل الآن [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) في نافذة Windows PowerShell منفصلة.
 
@@ -455,7 +453,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 > [!IMPORTANT]
 > إذا كنت تستخدم فصل التسميات عن طريق تحديد نطاق **مواقع "المجموعات &** " فقط للتسميات التي تحمي الحاويات: نظرا لحدث تدقيق عدم تطابق **حساسية المستند المكتشف** والبريد الإلكتروني الموضح في هذا القسم، ففكر في [ترتيب التسميات قبل التسميات](sensitivity-labels.md#label-priority-order-matters) التي تحتوي على نطاق **لرسائل البريد الإلكتروني &** "ملفات". 
 
-إذا قام شخص ما بتحميل مستند إلى موقع محمي بتسمية حساسية وكان لمستنده تسمية حساسية [ذات أولوية أعلى](sensitivity-labels.md#label-priority-order-matters) من تسمية الحساسية المطبقة على الموقع، فلن يتم حظر هذا الإجراء. على سبيل المثال، قمت بتطبيق التسمية **"عام**" على موقع SharePoint، ويحمل شخص ما إلى هذا الموقع مستندا يسمى **"سري**". لأن تسمية الحساسية ذات الأولوية الأعلى تحدد المحتوى الذي يكون أكثر حساسية من المحتوى الذي له ترتيب أولوية أقل، فقد يكون هذا الموقف مصدر قلق أمني.
+إذا قام شخص ما بتحميل مستند إلى موقع محمي بتسمية حساسية وكان لمستنده تسمية حساسية [ذات أولوية أعلى](sensitivity-labels.md#label-priority-order-matters) من تسمية الحساسية المطبقة على الموقع، فلن يتم حظر هذا الإجراء. على سبيل المثال، قمت بتطبيق التسمية **"عام** " على موقع SharePoint، ويحمل شخص ما إلى هذا الموقع مستندا يسمى **"سري**". لأن تسمية الحساسية ذات الأولوية الأعلى تحدد المحتوى الذي يكون أكثر حساسية من المحتوى الذي له ترتيب أولوية أقل، فقد يكون هذا الموقف مصدر قلق أمني.
 
 على الرغم من أن الإجراء غير محظور، إلا أنه يتم تدقيقه وبشكل افتراضي، ينشئ تلقائيا رسالة بريد إلكتروني إلى الشخص الذي قام بتحميل المستند ومسؤول الموقع. ونتيجة لذلك، يمكن لكل من المستخدم والمسؤولين تحديد المستندات التي تحتوي على هذا المحاذاة الخاطئة من أولوية التسمية واتخاذ إجراء إذا لزم الأمر. على سبيل المثال، حذف المستند الذي تم تحميله أو نقله من الموقع.
 
@@ -478,18 +476,18 @@ Set-SPOTenant -BlockSendLabelMismatchEmail $True
 
 ## <a name="how-to-disable-sensitivity-labels-for-containers"></a>كيفية تعطيل تسميات الحساسية للحاويات
 
-يمكنك إيقاف تشغيل أوصاف الحساسية Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint باستخدام نفس الإرشادات من [تمكين دعم وصف الحساسية في PowerShell](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). ومع ذلك، لتعطيل الميزة، في الخطوة 5، حدد `$setting["EnableMIPLabels"] = "False"`.
+يمكنك إيقاف تشغيل تسميات الحساسية لمجموعات Microsoft Teams وMicrosoft 365 ومواقع SharePoint باستخدام الإرشادات نفسها من [تمكين دعم وصف الحساسية في PowerShell](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). ومع ذلك، لتعطيل الميزة، في الخطوة 5، حدد `$setting["EnableMIPLabels"] = "False"`.
 
-بالإضافة إلى جعل جميع الإعدادات غير متوفرة للمجموعات والمواقع عند إنشاء تسميات الحساسية أو تحريرها، يعيد هذا الإجراء خاصية الحاويات التي تستخدمها لتكوينها. يؤدي تمكين تسميات الحساسية Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint إلى تبديل الخاصية المستخدمة من **التصنيف** (المستخدم [لتصنيف مجموعة Azure AD](#classic-azure-ad-group-classification)) إلى **الحساسية**. عند تعطيل تسميات الحساسية للحاويات، تتجاهل الحاويات خاصية الحساسية وتستخدم خاصية التصنيف مرة أخرى.
+بالإضافة إلى جعل جميع الإعدادات غير متوفرة للمجموعات والمواقع عند إنشاء تسميات الحساسية أو تحريرها، يعيد هذا الإجراء خاصية الحاويات التي تستخدمها لتكوينها. يؤدي تمكين تسميات الحساسية لمجموعات Microsoft Teams وMicrosoft 365 ومواقع SharePoint إلى تبديل الخاصية المستخدمة من **التصنيف** (المستخدم [لتصنيف مجموعة Azure AD](#classic-azure-ad-group-classification)) إلى **الحساسية**. عند تعطيل تسميات الحساسية للحاويات، تتجاهل الحاويات خاصية الحساسية وتستخدم خاصية التصنيف مرة أخرى.
 
 وهذا يعني أنه لن يتم فرض أي إعدادات تسمية من المواقع والمجموعات التي تم تطبيقها مسبقا على الحاويات، ولم تعد الحاويات تعرض التسميات.
 
-إذا كانت هذه الحاويات Azure AD قيم التصنيف المطبقة عليها، فستعود الحاويات إلى استخدام التصنيفات مرة أخرى. تجدر الإشارة إلى أن أي مواقع أو مجموعات جديدة تم إنشاؤها بعد تمكين الميزة لن تعرض تسمية أو تحتوي على تصنيف. بالنسبة لهذه الحاويات، وأي حاويات جديدة، يمكنك الآن تطبيق قيم التصنيف. لمزيد من المعلومات، راجع [SharePoint تصنيف المواقع "الحديثة"](/sharepoint/dev/solution-guidance/modern-experience-site-classification) [وإنشاء تصنيفات لمجموعات Office في مؤسستك](../enterprise/manage-microsoft-365-groups-with-powershell.md).
+إذا كانت هذه الحاويات Azure AD قيم التصنيف المطبقة عليها، فستعود الحاويات إلى استخدام التصنيفات مرة أخرى. تجدر الإشارة إلى أن أي مواقع أو مجموعات جديدة تم إنشاؤها بعد تمكين الميزة لن تعرض تسمية أو تحتوي على تصنيف. بالنسبة لهذه الحاويات، وأي حاويات جديدة، يمكنك الآن تطبيق قيم التصنيف. لمزيد من المعلومات، راجع [تصنيف مواقع SharePoint "الحديثة"](/sharepoint/dev/solution-guidance/modern-experience-site-classification) [وإنشاء تصنيفات لمجموعات Office في مؤسستك](../enterprise/manage-microsoft-365-groups-with-powershell.md).
 
 ## <a name="additional-resources"></a>موارد إضافية
 
-راجع تسجيل مؤتمر ويب والأسئلة التي تمت الإجابة عليها [لاستخدام تسميات الحساسية مع Microsoft Teams ومجموعات O365 ومواقع SharePoint Online](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
+راجع تسجيل مؤتمر ويب والإجابة على الأسئلة المتعلقة [باستخدام تسميات الحساسية مع Microsoft Teams ومجموعات O365 ومواقع SharePoint Online](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
 
 تم تسجيل مؤتمر ويب هذا عندما كانت الميزة لا تزال قيد المعاينة، لذلك قد تلاحظ بعض الاختلافات في واجهة المستخدم. ومع ذلك، لا تزال المعلومات الخاصة بهذه الميزة دقيقة، مع أي قدرات جديدة موثقة في هذه الصفحة.
 
-لمزيد من المعلومات حول إدارة مواقع Teams المتصلة ومواقع القنوات، راجع [إدارة مواقع Teams المتصلة ومواقع القنوات](/SharePoint/teams-connected-sites).
+لمزيد من المعلومات حول إدارة المواقع المتصلة ب Teams ومواقع القنوات، راجع [إدارة المواقع المتصلة ب Teams ومواقع القنوات](/SharePoint/teams-connected-sites).

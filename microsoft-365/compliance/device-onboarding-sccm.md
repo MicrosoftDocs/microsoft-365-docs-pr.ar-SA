@@ -15,27 +15,27 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: استخدم Configuration Manager لنشر حزمة التكوين على الأجهزة بحيث يتم إلحاقها للخدمة.
-ms.openlocfilehash: 2cca9cc073ca08c7fabb19511a4253e4a682057a
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 3bfeadd0008b548b8193333b3509e82831b162c9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760702"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630004"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-using-configuration-manager"></a>إلحاق الأجهزة Windows 10 وأجهزة Windows 11 باستخدام Configuration Manager
 
 **ينطبق على:**
 
-- [Microsoft 365 منع فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
-- [إدارة المخاطر الداخلية](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [منع فقدان بيانات نقطة النهاية (DLP)](./endpoint-dlp-learn-about.md)
+- [إدارة المخاطر الداخلية](insider-risk-management.md)
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>إلحاق الأجهزة باستخدام System Center Configuration Manager
 
-1. احصل على ملف حزمة التكوين .zip (*DeviceComplianceOnboardingPackage.zip*) من [مركز التوافق من Microsoft](https://compliance.microsoft.com/).
+1. احصل على ملف حزمة التكوين .zip (*DeviceComplianceOnboardingPackage.zip*) من [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/).
 
-2. في جزء التنقل، حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> >  **Device OnboardingOnboarding** > .
+2. في جزء التنقل، حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> >  "إلحاق **الجهاز** > **".**
 
-3. في حقل **أسلوب النشر**، حدد **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
+3. في حقل **أسلوب النشر**، حدد **نقطة نهاية Microsoft Configuration Manager 2012/2012 R2/1511/1602**.
 
 4. حدد **حزمة التنزيل**، واحفظ ملف .zip.
 
@@ -46,7 +46,7 @@ ms.locfileid: "64760702"
 7. اختر مجموعة أجهزة معرفة مسبقا لنشر الحزمة إليها.
 
 > [!NOTE]
-> لا تدعم حماية المعلومات Microsoft 365 الإلحاق أثناء مرحلة التجربة الجاهزة [(OOBE](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87)). تأكد من أن المستخدمين يكملون OOBE بعد تشغيل تثبيت Windows أو ترقيته.
+> لا تدعم حماية المعلومات في Microsoft 365 الإلحاق أثناء مرحلة ["تجربة خارج الصندوق" (OOBE](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) ). تأكد من أن المستخدمين يكملون OOBE بعد تشغيل تثبيت Windows أو ترقيته.
 
 > [!TIP]
 > بعد إلحاق الجهاز، يمكنك اختيار تشغيل اختبار الكشف للتحقق من أن الجهاز تم إلحاقه بشكل صحيح للخدمة. لمزيد من المعلومات، راجع [تشغيل اختبار الكشف على جهاز Microsoft Defender لنقطة النهاية تم إلحاقه حديثا](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test).
@@ -77,7 +77,7 @@ Name: "AllowSampleCollection"
 Value: 0 or 1
 ```
 
-حيث:
+المكان:
 
 نوع المفتاح هو D-WORD.
 
@@ -138,19 +138,19 @@ Value: 0 or 1
 > [!NOTE]
 > يجب عدم نشر نهج الإلحاق والإلحاق على نفس الجهاز في نفس الوقت، وإلا فسيؤدي ذلك إلى تضاربات غير متوقعة.
 
-### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>إيقاف تشغيل الأجهزة باستخدام الفرع الحالي Microsoft Endpoint Configuration Manager
+### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>إيقاف تشغيل الأجهزة باستخدام نقطة نهاية Microsoft Configuration Manager الفرع الحالي
 
-إذا كنت تستخدم Microsoft Endpoint Configuration Manager الفرع الحالي، فراجع [إنشاء ملف تكوين الإلحاق](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
+إذا كنت تستخدم نقطة النهاية من Microsoft Configuration Manager الفرع الحالي، فراجع [إنشاء ملف تكوين الإلحاق](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>إيقاف تشغيل الأجهزة باستخدام System Center 2012 R2 Configuration Manager
 
-1. احصل على حزمة الإلحاق من <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مركز التوافق في Microsoft 365</a>:
+1. احصل على حزمة الإلحاق من <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a>:
 
-2. في جزء التنقل، حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**الإعدادات**</a> >   **Device onboardingOffboarding**> .
+2. في جزء التنقل، حدد <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**"إعدادات**</a> >  **الجهاز" ضمن**> **"إلغاء الإلحاق**".
 
 3. حدد Windows 10 كنظام التشغيل.
 
-4. في حقل **أسلوب النشر**، حدد **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
+4. في حقل **أسلوب النشر**، حدد **نقطة نهاية Microsoft Configuration Manager 2012/2012 R2/1511/1602**.
 
 5. حدد **حزمة التنزيل**، واحفظ ملف .zip.
 
@@ -165,13 +165,13 @@ Value: 0 or 1
 
 ## <a name="monitor-device-configuration"></a>مراقبة تكوين الجهاز
 
-إذا كنت تستخدم الفرع الحالي Microsoft Endpoint Configuration Manager، فاستخدم لوحة معلومات Microsoft Defender لنقطة النهاية المضمنة في وحدة التحكم Configuration Manager. لمزيد من المعلومات، راجع [الحماية المتقدمة من التهديدات من Microsoft Defender - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
+إذا كنت تستخدم نقطة نهاية Microsoft Configuration Manager الفرع الحالي، فاستخدم لوحة معلومات Microsoft Defender لنقطة النهاية المضمنة في وحدة التحكم Configuration Manager. لمزيد من المعلومات، راجع [الحماية المتقدمة من التهديدات من Microsoft Defender - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
 إذا كنت تستخدم System Center 2012 R2 Configuration Manager، تتكون المراقبة من جزأين:
 
 1. تأكيد توزيع حزمة التكوين بشكل صحيح وتشغيلها (أو تشغيلها بنجاح) على الأجهزة في الشبكة.
 
-2. التحقق من أن الأجهزة متوافقة مع خدمة إلحاق الجهاز Microsoft 365 (وهذا يضمن أن الجهاز يمكنه إكمال عملية الإلحاق ويمكنه الاستمرار في الإبلاغ عن البيانات إلى الخدمة).
+2. التحقق من أن الأجهزة متوافقة مع خدمة إلحاق جهاز Microsoft 365 (وهذا يضمن أن الجهاز يمكنه إكمال عملية الإلحاق ويمكنه الاستمرار في الإبلاغ عن البيانات إلى الخدمة).
 
 ### <a name="confirm-the-configuration-package-has-been-correctly-deployed"></a>تأكيد نشر حزمة التكوين بشكل صحيح
 
@@ -187,7 +187,7 @@ Value: 0 or 1
 
     ![Configuration Manager تظهر عملية نشر ناجحة بدون أخطاء.](../media/sccm-deployment.png)
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-365-endpoint-data-loss-prevention-service"></a>تحقق من أن الأجهزة متوافقة مع خدمة منع فقدان بيانات نقطة النهاية Microsoft 365
+### <a name="check-that-the-devices-are-compliant-with-the-endpoint-data-loss-prevention-service"></a>تحقق من أن الأجهزة متوافقة مع خدمة منع فقدان بيانات نقطة النهاية
 
 يمكنك تعيين قاعدة توافق لعنصر التكوين في System Center 2012 R2 Configuration Manager لمراقبة التوزيع.
 

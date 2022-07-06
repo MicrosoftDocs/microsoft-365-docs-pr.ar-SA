@@ -13,24 +13,22 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 74194d4bca71350c180799e071936b75044a6b4e
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 631df77a6f10c15dafcb78e58a715a029d32bb73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663679"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627536"
 ---
 # <a name="double-key-encryption"></a>تشفير المفتاح المزدوج
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-> *ينطبق على: تشفير المفتاح المزدوج Microsoft Purview [، Microsoft Purview](https://www.microsoft.com/microsoft-365/business/compliance-management)، [وAzure حماية البيانات](https://azure.microsoft.com/pricing/)*
+> *ينطبق على: تشفير المفتاح المزدوج ل Microsoft Purview [وMicrosoft Purview](https://www.microsoft.com/microsoft-365/business/compliance-management) [وAzure حماية البيانات](https://azure.microsoft.com/pricing/)*
 >
-> *إرشادات ل: [عميل تسمية موحد ل Azure حماية البيانات Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *إرشادات ل: [Azure حماية البيانات عميل تسمية موحد لنظام التشغيل Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 > *وصف الخدمة ل: [Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-يستخدم تشفير المفتاح المزدوج (DKE) مفتاحين معا للوصول إلى المحتوى المحمي. تخزن Microsoft مفتاحا واحدا في Microsoft Azure، وتحتفظ بالمفتاح الآخر. يمكنك الحفاظ على التحكم الكامل لأحد مفاتيحك باستخدام خدمة تشفير المفتاح المزدوج. يمكنك تطبيق الحماية باستخدام عميل التسمية الموحد ل Azure حماية البيانات على المحتوى الحساس للغاية.
+يستخدم تشفير المفتاح المزدوج (DKE) مفتاحين معا للوصول إلى المحتوى المحمي. تخزن Microsoft مفتاحاً واحداً في Microsoft Azure، وتحتفظ بالمفتاح الآخر. يمكنك الحفاظ على التحكم الكامل لأحد مفاتيحك باستخدام خدمة تشفير المفتاح المزدوج. يمكنك تطبيق الحماية باستخدام عميل التسمية الموحد ل Azure حماية البيانات على المحتوى الحساس للغاية.
 
 يدعم تشفير المفتاح المزدوج كلا من عمليات النشر السحابية والمحلية. تساعد عمليات النشر هذه على ضمان بقاء البيانات المشفرة معتمة أينما قمت بتخزين البيانات المحمية.
 
@@ -60,21 +58,21 @@ ms.locfileid: "65663679"
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>متطلبات النظام والترخيص ل DKE
 
-يأتي **تشفير المفتاح المزدوج** مع Microsoft 365 E5. إذا لم يكن لديك ترخيص Microsoft 365 E5، يمكنك التسجيل للحصول على [إصدار تجريبي](https://aka.ms/M365E5ComplianceTrial). لمزيد من المعلومات حول هذه التراخيص، راجع [إرشادات الترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+يأتي **تشفير المفتاح المزدوج** مع Microsoft 365 E5. إذا لم يكن لديك ترخيص Microsoft 365 E5، يمكنك التسجيل للحصول على [إصدار تجريبي](https://aka.ms/M365E5ComplianceTrial). لمزيد من المعلومات حول هذه التراخيص، راجع [إرشادات ترخيص Microsoft 365 للأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure حماية البيانات**. يعمل DKE مع تسميات الحساسية ويتطلب حماية البيانات Azure.
 
-يتم توفير تسميات حساسية DKE للمستخدمين النهائيين من خلال زر الحساسية في عميل الوصف الموحد AIP في تطبيقات سطح المكتب Office. قم بتثبيت هذه المتطلبات الأساسية على كل كمبيوتر عميل حيث تريد حماية المستندات المحمية واستهلاكها.
+يتم توفير تسميات حساسية DKE للمستخدمين النهائيين من خلال زر الحساسية في عميل الوصف الموحد ل AIP في تطبيقات Office لسطح المكتب. قم بتثبيت هذه المتطلبات الأساسية على كل كمبيوتر عميل حيث تريد حماية المستندات المحمية واستهلاكها.
 
-**Microsoft Office Apps for enterprise** الإصدار 2009 أو الإصدارات الأحدث (إصدارات سطح المكتب من Word و PowerPoint Excel) على Windows.
+**Microsoft Office Apps for enterprise** الإصدار 2009 أو الإصدارات الأحدث (إصدارات سطح المكتب من Word وPowerPoint وExcel) على Windows.
 
 **Azure حماية البيانات إصدارات عميل التسمية الموحدة** 2.7.93.0 أو أحدث. قم بتنزيل عميل التسمية الموحدة وتثبيته من [مركز تنزيل Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
 
 ## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>البيئات المدعومة لتخزين المحتوى المحمي ب DKE وعرضه
 
-**التطبيقات المدعومة**. [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) العملاء على Windows، بما في ذلك Word و Excel و PowerPoint.
+**التطبيقات المدعومة**. [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) العملاء على Windows، بما في ذلك Word وExcel وPowerPoint.
 
-**دعم المحتوى عبر الإنترنت**. يمكنك تخزين المستندات والملفات المحمية بتشفير المفتاح المزدوج عبر الإنترنت في كل من Microsoft SharePoint OneDrive for Business. يجب عليك تسمية المستندات والملفات وحمايتها باستخدام DKE بواسطة التطبيقات المدعومة قبل التحميل إلى هذه المواقع. يمكنك مشاركة المحتوى المشفر عبر البريد الإلكتروني، ولكن لا يمكنك عرض المستندات والملفات المشفرة عبر الإنترنت. بدلا من ذلك، يجب عرض المحتوى المحمي باستخدام تطبيقات سطح المكتب والعملاء المعتمدين على الكمبيوتر المحلي.
+**دعم المحتوى عبر الإنترنت**. يمكنك تخزين المستندات والملفات المحمية بتشفير المفتاح المزدوج عبر الإنترنت في كل من Microsoft SharePoint و OneDrive for Business. يجب عليك تسمية المستندات والملفات وحمايتها باستخدام DKE بواسطة التطبيقات المدعومة قبل التحميل إلى هذه المواقع. يمكنك مشاركة المحتوى المشفر عبر البريد الإلكتروني، ولكن لا يمكنك عرض المستندات والملفات المشفرة عبر الإنترنت. بدلا من ذلك، يجب عرض المحتوى المحمي باستخدام تطبيقات سطح المكتب والعملاء المعتمدين على الكمبيوتر المحلي.
 
 ## <a name="overview-of-deploying-dke"></a>نظرة عامة على توزيع DKE
 
@@ -84,7 +82,7 @@ ms.locfileid: "65663679"
 
 2. إنشاء تسمية باستخدام تشفير المفتاح المزدوج. في مدخل التوافق في Microsoft Purview، انتقل إلى **حماية المعلومات** وأنشئ تسمية جديدة باستخدام تشفير المفتاح المزدوج. راجع [تقييد الوصول إلى المحتوى باستخدام تسميات الحساسية لتطبيق التشفير](./encryption-sensitivity-labels.md).
 
-3. استخدم تسميات تشفير المفتاح المزدوج. حماية البيانات عن طريق تحديد تسمية مشفر المفتاح المزدوج من شريط الحساسية في Microsoft Office.
+3. استخدم تسميات تشفير المفتاح المزدوج. قم بحماية البيانات عن طريق تحديد التسمية "تشفير المفتاح المزدوج" من شريط الحساسية في Microsoft Office.
 
 هناك عدة طرق يمكنك من خلالها إكمال بعض الخطوات لنشر تشفير المفتاح المزدوج. توفر هذه المقالة إرشادات مفصلة بحيث يقوم المسؤولون الأقل خبرة بنشر الخدمة بنجاح. إذا كنت مرتاحا للقيام بذلك، يمكنك اختيار استخدام أساليبك الخاصة.
 
@@ -92,12 +90,11 @@ ms.locfileid: "65663679"
 
 تستخدم هذه المقالة وفيديو النشر Azure كوجهة توزيع لخدمة DKE. إذا كنت تقوم بالنشر في موقع آخر، فستحتاج إلى توفير قيمك الخاصة.
 
-شاهد [فيديو نشر تشفير المفتاح المزدوج](https://youtu.be/vDWfHN_kygg) للاطلاع على نظرة عامة خطوة بخطوة على المفاهيم الواردة في هذه المقالة. يستغرق إكمال الفيديو حوالي 18 دقيقة.
 
 ستتبع هذه الخطوات العامة لإعداد تشفير المفتاح المزدوج لمؤسستك.
 
 1. [تثبيت المتطلبات الأساسية للبرامج لخدمة DKE](#install-software-prerequisites-for-the-dke-service)
-1. [استنساخ مستودع GitHub تشفير المفتاح المزدوج](#clone-the-dke-github-repository)
+1. [استنساخ مستودع GitHub لتشفير المفتاح المزدوج](#clone-the-dke-github-repository)
 1. [تعديل إعدادات التطبيق](#modify-application-settings)
 1. [إنشاء مفاتيح اختبار](#generate-test-keys)
 1. [إنشاء المشروع](#build-the-project)
@@ -108,7 +105,7 @@ ms.locfileid: "65663679"
 1. [تمكين DKE في عميلك](#enable-dke-in-your-client)
 1. [ترحيل الملفات المحمية من تسميات HYOK إلى تسميات DKE](#migrate-protected-files-from-hyok-labels-to-dke-labels)
 
-عند الانتهاء، يمكنك تشفير المستندات والملفات باستخدام DKE. للحصول على معلومات، راجع [تطبيق تسميات الحساسية على ملفاتك والبريد الإلكتروني في Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
+عند الانتهاء، يمكنك تشفير المستندات والملفات باستخدام DKE. للحصول على معلومات، راجع [تطبيق أوصاف الحساسية على ملفاتك وبريدك الإلكتروني في Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
 ### <a name="install-software-prerequisites-for-the-dke-service"></a>تثبيت المتطلبات الأساسية للبرامج لخدمة DKE
 
@@ -116,25 +113,25 @@ ms.locfileid: "65663679"
 
 **.NET Core 3.1 SDK**. قم بتنزيل SDK وتثبيته من [تنزيل .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 
-**Visual Studio التعليمات البرمجية**. تنزيل Visual Studio Code من [https://code.visualstudio.com/](https://code.visualstudio.com). بمجرد التثبيت، قم بتشغيل Visual Studio التعليمات البرمجية وحدد **View** \> **Extensions**. تثبيت هذه الملحقات.
+**Visual Studio Code**. تنزيل Visual Studio Code من [https://code.visualstudio.com/](https://code.visualstudio.com). بمجرد التثبيت، قم بتشغيل Visual Studio Code وحدد **View** \> **Extensions**. تثبيت هذه الملحقات.
 
-- C# للتعليمات البرمجية Visual Studio
+- C# ل Visual Studio Code
 
-- nuGet مدير الحِزَم
+- NuGet Package Manager
 
 **موارد Git**. قم بتنزيل أحد الإجراءات التالية وتثبيته.
 
 - [بوابه](https://git-scm.com/downloads)
 
-- [GitHub سطح المكتب](https://desktop.github.com/)
+- [GitHub Desktop](https://desktop.github.com/)
 
 - [GitHub Enterprise](https://github.com/enterprise)
 
 **بينسل** يجب أن يكون [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) مثبتا [لإنشاء مفاتيح اختبار](#generate-test-keys) بعد نشر DKE. تأكد من استدعائه بشكل صحيح من مسار متغيرات البيئة الخاصة بك. على سبيل المثال، راجع "إضافة دليل التثبيت إلى PATH" للحصول على [https://www.osradar.com/install-openssl-windows/](https://www.osradar.com/install-openssl-windows/) التفاصيل.
 
-### <a name="clone-the-dke-github-repository"></a>استنساخ مستودع GitHub DKE
+### <a name="clone-the-dke-github-repository"></a>استنساخ مستودع DKE GitHub
 
-توفر Microsoft ملفات مصدر DKE في مستودع GitHub. يمكنك استنساخ المستودع لإنشاء المشروع محليا لاستخدام مؤسستك. يوجد مستودع GitHub DKE في [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService).
+توفر Microsoft ملفات مصدر DKE في مستودع GitHub. يمكنك استنساخ المستودع لإنشاء المشروع محليا لاستخدام مؤسستك. يوجد مستودع DKE GitHub في [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService).
 
 الإرشادات التالية مخصصة لمستخدمي git أو Visual Studio Code عديمي الخبرة:
 
@@ -147,10 +144,10 @@ ms.locfileid: "65663679"
    > [!div class="mx-imgBorder"]
    > ![استنساخ مستودع خدمة تشفير المفتاح المزدوج من GitHub.](../media/dke-clone.png)
 
-3. في Visual Studio Code، حدد **View** \> **Command Palette** وحدد **Git: Clone**. للانتقال إلى الخيار في القائمة، ابدأ الكتابة `git: clone` لتصفية الإدخالات ثم حددها من القائمة المنسدلة. على سبيل المثال:
+3. في Visual Studio Code، حدد **«View** \> **Command Palette** » وحدد **«Git: Clone»**. للانتقال إلى الخيار في القائمة، ابدأ الكتابة `git: clone` لتصفية الإدخالات ثم حددها من القائمة المنسدلة. على سبيل المثال:
 
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Code GIT:Clone option.](../media/dke-vscode-clone.png)
+   > ![خيار Visual Studio Code GIT:Clone.](../media/dke-vscode-clone.png)
 
 4. في مربع النص، الصق عنوان URL الذي نسخته من Git وحدد **Clone من GitHub**.
 
@@ -158,7 +155,7 @@ ms.locfileid: "65663679"
 
     يفتح المستودع في Visual Studio Code، ويعرض فرع Git الحالي في أسفل اليسار. على سبيل المثال، يجب أن يكون الفرع **رئيسيا**. على سبيل المثال:
 
-   ![لقطة شاشة لمورد DKE في Visual Studio Code يعرض الفرع الرئيسي.](../media/dke-vscode-main-branch.jpg)
+   ![لقطة شاشة لمستودع DKE في Visual Studio Code تعرض الفرع الرئيسي.](../media/dke-vscode-main-branch.jpg)
 
 6. إذا لم تكن في الفرع الرئيسي، فستحتاج إلى تحديده. في Visual Studio Code، حدد الفرع واختر **الفرع الرئيسي** من قائمة الفروع التي يتم عرضها.
 
@@ -249,10 +246,10 @@ ms.locfileid: "65663679"
 > [!NOTE]
 > إذا كنت تريد تمكين وصول B2B الخارجي إلى مخزن المفاتيح الخاص بك، فستحتاج أيضا إلى تضمين هذه المستأجرين الخارجيين كجزء من قائمة المصدرين الصالحين.
 
-`JwtAudience`حدد موقع . استبدل `<yourhostname>` باسم مضيف الجهاز حيث سيتم تشغيل خدمة DKE. على سبيل المثال:
+`JwtAudience`حدد موقع . استبدل `<yourhostname>` باسم مضيف الجهاز حيث سيتم تشغيل خدمة DKE. على سبيل المثال: "https://dkeservice.contoso.com"
 
   > [!IMPORTANT]
-  > يجب أن تتطابق قيمة `JwtAudience` المضيف *تماما* مع اسم المضيف. يمكنك استخدام **localhost:5001** أثناء تصحيح الأخطاء. ومع ذلك، عند الانتهاء من تصحيح الأخطاء، تأكد من تحديث هذه القيمة إلى اسم مضيف الخادم.
+  > يجب أن تتطابق قيمة `JwtAudience` المضيف *تماما* مع اسم المضيف.  
 
 - `TestKeys:Name`. أدخل اسما للمفتاح. على سبيل المثال: `TestKey1`
 - `TestKeys:Id`. إنشاء GUID وإدخاله كقيمة `TestKeys:ID` . على سبيل المثال، `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. يمكنك استخدام موقع مثل [منشئ GUID عبر الإنترنت](https://guidgenerator.com/) لإنشاء GUID عشوائيا.
@@ -267,7 +264,7 @@ ms.locfileid: "65663679"
 
 لإنشاء المفاتيح:
 
-1. من Windows قائمة البدء، قم بتشغيل موجه الأوامر OpenSSL.
+1. من قائمة البدء في Windows، قم بتشغيل موجه الأوامر OpenSSL.
 
 1. قم بالتغيير إلى المجلد حيث تريد حفظ مفاتيح الاختبار. يتم تخزين الملفات التي تقوم بإنشائها بإكمال الخطوات الواردة في هذه المهمة في المجلد نفسه.
 
@@ -305,7 +302,7 @@ ms.locfileid: "65663679"
     > [!IMPORTANT]
     > عند نسخ هذا المحتوى، لا تحذف أيا من بيانات PEM.
 
-1. في Visual Studio Code، استعرض وصولا إلى ملف **Startup.cs**. يوجد هذا الملف في مستودع DoubleKeyEncryptionService الذي نسخته محليا ضمن DoubleKeyEncryptionService\src\customer-key-store\.
+1. في Visual Studio Code، استعرض وصولا إلى ملف **Startup.cs** . يوجد هذا الملف في مستودع DoubleKeyEncryptionService الذي نسخته محليا ضمن DoubleKeyEncryptionService\src\customer-key-store\.
 
 1. حدد موقع الأسطر التالية:
 
@@ -333,7 +330,7 @@ ms.locfileid: "65663679"
 
 استخدم الإرشادات التالية لإنشاء مشروع DKE محليا:
 
-1. في Visual Studio Code، في مستودع خدمة DKE، حدد **"View** \> **Command Palette"** ثم اكتب **الإنشاء** في المطالبة.
+1. في Visual Studio Code، في مستودع خدمة DKE، حدد **"عرض** \> **لوح الأوامر"** ثم اكتب **الإنشاء** في المطالبة.
 
 2. من القائمة، اختر **المهام: تشغيل مهمة الإنشاء**.
 
@@ -361,17 +358,8 @@ ms.locfileid: "65663679"
 
    إذا كانت هناك أخطاء حمراء، فتحقق من إخراج وحدة التحكم. تأكد من إكمال كافة الخطوات السابقة بشكل صحيح وأن إصدارات الإصدار الصحيحة موجودة.
 
-4. حدد **تشغيل تصحيح** \> **أخطاء البدء** لتصحيح العملية. إذا تمت مطالبتك بتحديد بيئة، فحدد **.NET core**.
 
-   عادة ما يتم تشغيل مصحح أخطاء .NET الأساسي إلى `https://localhost:5001`. لعرض مفتاح الاختبار الخاص بك، انتقل إلى `https://localhost:5001` شرطة مائلة للأمام (/) وإلحاقها واسم المفتاح الخاص بك. على سبيل المثال:
-
-   ```https
-   https://localhost:5001/TestKey1
-   ```
-
-   يجب عرض المفتاح بتنسيق JSON.
-
-اكتمل الإعداد الآن. قبل نشر مخزن المفاتيح، في appsettings.json، لإعداد JwtAudience، تأكد من تطابق قيمة اسم المضيف تماما مع اسم مضيف App Service. ربما قمت بتغييره إلى localhost لاستكشاف أخطاء البنية وإصلاحها.
+اكتمل الإعداد الآن. قبل نشر مخزن المفاتيح، في appsettings.json، لإعداد JwtAudience، تأكد من تطابق قيمة اسم المضيف تماما مع اسم مضيف App Service. 
 
 ### <a name="deploy-the-dke-service-and-publish-the-key-store"></a>نشر خدمة DKE ونشر مخزن المفاتيح
 
@@ -404,13 +392,13 @@ ms.locfileid: "65663679"
 
    - [النشر عبر ZipDeployUI](#publish-via-zipdeployui)
    - [النشر عبر FTP](#publish-via-ftp)
-   - [النشر عبر Visual Studio 2019 أو أحدث](/aspnet/core/tutorials/)
+   - [النشر عبر Visual Studio 2019 أو إصدار أحدث](/aspnet/core/tutorials/)
 
 #### <a name="publish-via-zipdeployui"></a>النشر عبر ZipDeployUI
 
 1. الانتقال إل `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`
 
-   على سبيل المثال: `https://dkeservice.scm.azurewebsites.net/ZipDeployUI`
+   على سبيل المثال: `https://dkeservice.contoso.scm.azurewebsites.net/ZipDeployUI`
 
 2. في قاعدة التعليمات البرمجية لمخزن المفاتيح، انتقل إلى مجلد **customer-key-store\src\customer-key-store** ، وتحقق من أن هذا المجلد يحتوي على ملف **customerkeystore.csproj** .
 
@@ -428,7 +416,7 @@ ms.locfileid: "65663679"
 
 #### <a name="publish-via-ftp"></a>النشر عبر FTP
 
-1. الاتصال إلى App Service التي أنشأتها [أعلاه](#deploy-the-dke-service-and-publish-the-key-store).
+1. الاتصال بخدمة التطبيقات التي أنشأتها [أعلاه](#deploy-the-dke-service-and-publish-the-key-store).
 
    في المستعرض، انتقل إلى: لوحة **معلومات** **FTP** > **للتوزيع** >  اليدوي **لمركز** > **نشر خدمة** >  التطبيقات **لمدخل** >  Microsoft Azure.
 
@@ -450,7 +438,7 @@ ms.locfileid: "65663679"
 
 6. إرسال كافة الملفات في دليل النشر إلى ملف مضغوط. عند إنشاء ملف .zip، تأكد من أن كافة الملفات الموجودة في الدليل في المستوى الجذر لملف .zip.
 
-7. من عميل FTP، استخدم معلومات الاتصال التي نسختها للاتصال بخدمة التطبيقات. Upload ملف .zip الذي أنشأته في الخطوة السابقة إلى الدليل الجذر لتطبيق الويب الخاص بك.
+7. من عميل FTP، استخدم معلومات الاتصال التي نسختها للاتصال بخدمة التطبيقات. قم بتحميل ملف .zip الذي أنشأته في الخطوة السابقة إلى الدليل الجذر لتطبيق الويب الخاص بك.
 
 يتم نشر DKE ويمكنك الاستعراض للوصول إلى مفاتيح الاختبار التي قمت بإنشائها. بعد ذلك، [تحقق من صحة التوزيع.](#validate-your-deployment)
 
@@ -467,7 +455,7 @@ src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
 على سبيل المثال:
 
 ```powershell
-key_store_tester.ps1 https://mydkeservice.com/mykey
+key_store_tester.ps1 https://dkeservice.contoso.com/TestKey1
 ```
 
 تأكد من عدم ظهور أي أخطاء في الإخراج. عندما تصبح جاهزا، [قم بتسجيل مخزن المفاتيح.](#register-your-key-store)
@@ -486,9 +474,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 3. حدد نوع حساب من الخيارات المعروضة.
 
-   إذا كنت تستخدم Microsoft Azure مع مجال غير مخصص، مثل **onmicrosoft.com**، فحدد **الحسابات في دليل المؤسسة هذا فقط (Microsoft فقط - مستأجر واحد).**
-
-   على سبيل المثال:
+    على سبيل المثال:
 
    > [!div class="mx-imgBorder"]
    > ![تسجيل تطبيق جديد.](../media/dke-app-registration.png)
@@ -507,10 +493,9 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
    - يجب أن يتطابق URL الذي تقوم بإدخاله مع اسم المضيف حيث يتم نشر خدمة DKE.
    - يجب أن يكون المجال [مجالا تم التحقق منه](/azure/active-directory/develop/reference-breaking-changes#appid-uri-in-single-tenant-applications-will-require-use-of-default-scheme-or-verified-domains).
-   - إذا كنت تختبر محليا باستخدام Visual Studio، فاستخدم `https://localhost:5001`.
-   - في جميع الحالات، يجب أن يكون النظام **https**.
+    - في جميع الحالات، يجب أن يكون النظام **https**.
 
-   تأكد من تطابق اسم المضيف تماما مع اسم مضيف App Service. ربما قمت بتغييره إلى `localhost` استكشاف أخطاء البنية وإصلاحها. في **appsettings.json**، هذه القيمة هي اسم المضيف الذي قمت بتعيينه ل `JwtAudience`.
+   تأكد من تطابق اسم المضيف تماما مع اسم مضيف App Service.
 
 9. ضمن **"منحة ضمنية**"، حدد خانة الاختيار **"رموز المعرف المميزة** ".
 
@@ -534,7 +519,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
     في تطبيق العميل الجديد:
 
-    1. تعريف معرف العميل ك `d3590ed6-52b3-4102-aeff-aad2292ab01c`. هذه القيمة هي معرف العميل Microsoft Office، وتمكن Office من الحصول على رمز وصول مميز لمخزن المفاتيح.
+    1. تعريف معرف العميل ك `d3590ed6-52b3-4102-aeff-aad2292ab01c`. هذه القيمة هي معرف عميل Microsoft Office، وتمكن Office من الحصول على رمز مميز للوصول إلى مخزن المفاتيح.
 
     2. ضمن **النطاقات المعتمدة**، حدد نطاق **user_impersonation** .
 
@@ -562,7 +547,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 ### <a name="enable-dke-in-your-client"></a>تمكين DKE في عميلك
 
-إذا كنت Office Insider، يتم تمكين DKE لك. بخلاف ذلك، قم بتمكين DKE للعميل عن طريق إضافة مفاتيح التسجيل التالية:
+إذا كنت أحد مشتركي Office Insider، يتم تمكين DKE لك. بخلاف ذلك، قم بتمكين DKE للعميل عن طريق إضافة مفاتيح التسجيل التالية:
 
 ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]

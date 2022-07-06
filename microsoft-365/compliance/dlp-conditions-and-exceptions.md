@@ -15,16 +15,14 @@ search.appverid:
 - MET150
 recommendations: false
 description: التعرف على شروط واستثناءات نهج dlp
-ms.openlocfilehash: cd252002f2fcef3e3935dd44b1333e801bcba46d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9e1c27e8b4aa79da94fd035bbeb15912b1618be8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090440"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629916"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions"></a>شروط نهج DLP والاستثناءات والإجراءات
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 تحدد الشروط والاستثناءات في نهج DLP العناصر الحساسة التي يتم تطبيق النهج عليها. تحدد الإجراءات ما يحدث كنتيجة لاستيفاء شرط الاستثناء.
 
@@ -32,7 +30,7 @@ ms.locfileid: "65090440"
 - تحدد الاستثناءات ما يجب استبعاده.
 - تحدد الإجراءات ما يحدث كنتيجة لاستيفاء الشرط أو الاستثناء
 
-تحتوي معظم الشروط والاستثناءات على خاصية واحدة تدعم قيمة واحدة أو أكثر. على سبيل المثال، إذا تم تطبيق نهج DLP على رسائل البريد الإلكتروني Exchange، فإن **المرسل** هو الشرط الذي يتطلب مرسل الرسالة. تحتوي بعض الشروط على الخاصيتين. على سبيل المثال، **يتضمن رأس الرسالة أيا من شرط الكلمات هذه** يتطلب خاصية واحدة لتحديد حقل رأس الرسالة، وخاصية ثانية لتحديد النص الذي تريد البحث عنه في حقل الرأس. لا تحتوي بعض الشروط أو الاستثناءات على أي خصائص. على سبيل المثال، **المرفق هو شرط محمي بكلمة مرور** يبحث ببساطة عن المرفقات في الرسائل المحمية بكلمة مرور.
+تحتوي معظم الشروط والاستثناءات على خاصية واحدة تدعم قيمة واحدة أو أكثر. على سبيل المثال، إذا تم تطبيق نهج DLP على رسائل البريد الإلكتروني في Exchange، **فإن المرسل** هو الشرط الذي يتطلب مرسل الرسالة. تحتوي بعض الشروط على الخاصيتين. على سبيل المثال، **يتضمن رأس الرسالة أيا من شرط الكلمات هذه** يتطلب خاصية واحدة لتحديد حقل رأس الرسالة، وخاصية ثانية لتحديد النص الذي تريد البحث عنه في حقل الرأس. لا تحتوي بعض الشروط أو الاستثناءات على أي خصائص. على سبيل المثال، **المرفق هو شرط محمي بكلمة مرور** يبحث ببساطة عن المرفقات في الرسائل المحمية بكلمة مرور.
 
 تتطلب الإجراءات عادة خصائص إضافية. على سبيل المثال، عندما تعيد قاعدة نهج DLP توجيه رسالة، تحتاج إلى تحديد مكان إعادة توجيه الرسالة.
 <!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
@@ -68,21 +66,21 @@ Set-PolicyConfig -SenderAddressLocation Envelope
 
 - **الرأس أو المغلف** (`HeaderOrEnvelope`) فحص المرسلين في رأس الرسالة ومغلف الرسالة.
 
-|شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Microsoft 365 PowerShell|نوع الخاصية|وصف|
+|شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Security & Compliance PowerShell|نوع الخاصية|وصف|
 |---|---|---|---|
-|المرسل هو|الشرط: *من* <br/><br/> استثناء: *ExceptIfFrom*|العناوين|الرسائل التي يتم إرسالها بواسطة علب البريد المحددة أو مستخدمي البريد أو جهات اتصال البريد أو مجموعات Microsoft 365 المحددة في المؤسسة.|
-|المرسل عضو في |*FromMemberOf* <br/><br/> *ExceptIfFromMemberOf*|العناوين|الرسائل التي يتم إرسالها من قبل عضو في مجموعة التوزيع المحددة أو مجموعة الأمان الممكنة للبريد أو مجموعة Microsoft 365.|
+|المرسل هو|الشرط: *من* <br/><br/> استثناء: *ExceptIfFrom*|العناوين|الرسائل التي يتم إرسالها بواسطة علب البريد المحددة أو مستخدمي البريد أو جهات اتصال البريد أو مجموعات Microsoft 365 في المؤسسة.|
+|المرسل عضو في |*FromMemberOf* <br/><br/> *ExceptIfFromMemberOf*|العناوين|الرسائل التي يتم إرسالها بواسطة عضو في مجموعة التوزيع المحددة أو مجموعة الأمان الممكنة للبريد أو مجموعة Microsoft 365.|
 |عنوان IP للمرسل هو|الشرط: *SenderIPRanges*<br/><br/> الاستثناء: *ExceptIfSenderIPRanges*|عناوين IPAddressRanges|الرسائل التي يتطابق فيها عنوان IP الخاص بالمرسل مع عنوان IP المحدد، أو يقع ضمن نطاق عنوان IP المحدد.|
 |يحتوي عنوان المرسل على كلمات|الشرط: *FromAddressContainsWords* <br/><br/> الاستثناء: *ExceptIfFromAddressContainsWords*|الكلمات|الرسائل التي تحتوي على الكلمات المحددة في عنوان البريد الإلكتروني للمرسل.|
 |يتطابق عنوان المرسل مع الأنماط|الشرط: *FromAddressMatchesPatterns* <br/><br/> الاستثناء: *ExceptFromAddressMatchesPatterns*|انماط|الرسائل التي يحتوي فيها عنوان البريد الإلكتروني للمرسل على أنماط نصية تتطابق مع التعبيرات العادية المحددة.|
-|مجال المرسل هو|الشرط: *SenderDomainIs* <br/><br/> الاستثناء: *ExceptIfSenderDomainIs*|Domainname|الرسائل التي يتطابق فيها مجال عنوان البريد الإلكتروني للمرسل مع القيمة المحددة. إذا كنت بحاجة إلى البحث عن مجالات المرسلين التي *تحتوي على* المجال المحدد (على سبيل المثال، أي مجال فرعي لمجال)، فاستخدم شرط **مطابقة عنوان المرسل** (*FromAddressMatchesPatterns*) وحدد المجال باستخدام بناء الجملة: '\.domaincom\.$'.|
+|مجال المرسل هو|الشرط: *SenderDomainIs* <br/><br/> الاستثناء: *ExceptIfSenderDomainIs*|Domainname|الرسائل التي يتطابق فيها مجال عنوان البريد الإلكتروني للمرسل مع القيمة المحددة. إذا كنت بحاجة إلى البحث عن مجالات المرسلين التي *تحتوي على* المجال المحدد (على سبيل المثال، أي مجال فرعي لمجال)، فاستخدم شرط **مطابقة عنوان المرسل** (*FromAddressMatchesPatterns*) وحدد المجال باستخدام بناء الجملة: '\.domain\.com$'.|
 |نطاق المرسل|الشرط: *FromScope* <br/><br/> الاستثناء: *ExceptIfFromScope*|UserScopeFrom|الرسائل التي يتم إرسالها من قبل مرسلين داخليين أو خارجيين.|
 |تتضمن الخصائص المحددة للمرسل أيا من هذه الكلمات|الشرط: *SenderADAttributeContainsWords* <br/><br/> الاستثناء: *ExceptIfSenderADAttributeContainsWords*|الخاصية الأولى: `ADAttribute` <br/><br/> الخاصية الثانية: `Words`|الرسائل التي تحتوي فيها سمة Active Directory المحددة للمرسل على أي من الكلمات المحددة.|
 |تتطابق الخصائص المحددة للمرسل مع أنماط النص هذه|الشرط: *SenderADAttributeMatchesPatterns* <br/><br/> الاستثناء: *ExceptIfSenderADAttributeMatchesPatterns*|الخاصية الأولى: `ADAttribute` <br/><br/> الخاصية الثانية: `Patterns`|تحتوي الرسائل التي تحتوي فيها سمة Active Directory المحددة للمرسل على أنماط نص تتطابق مع التعبيرات العادية المحددة.|
 
 ### <a name="recipients"></a>المستلمين
 
-|شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Microsoft 365 PowerShell|نوع الخاصية|وصف|
+|شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Security & Compliance PowerShell|نوع الخاصية|وصف|
 |---|---|---|---|
 |المستلم هو|الشرط: *SentTo* <br/><br/> استثناء: *ExceptIfSentTo*|العناوين|الرسائل التي يكون فيها أحد المستلمين هو علبة البريد المحددة أو مستخدم البريد أو جهة اتصال البريد في المؤسسة. يمكن أن يكون المستلمون في الحقول **"إلى"** أو **"نسخة**" أو **"نسخة مخفية"** في الرسالة.|
 |مجال المستلم هو|الشرط: *RecipientDomainIs* <br/><br/> الاستثناء: *ExceptIfRecipientDomainIs*|Domainname|الرسائل التي يتطابق فيها مجال عنوان البريد الإلكتروني للمستلم مع القيمة المحددة.|
@@ -94,40 +92,40 @@ Set-PolicyConfig -SenderAddressLocation Envelope
 
 ### <a name="message-subject-or-body"></a>موضوع الرسالة أو النص الأساسي
 
-|شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Microsoft 365 PowerShell|نوع الخاصية|وصف|
+|شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Security & Compliance PowerShell|نوع الخاصية|وصف|
 |---|---|---|---|
 |يحتوي الموضوع على كلمات أو عبارات|الشرط: *SubjectContainsWords* <br/> الاستثناء: *ExceptIf SubjectContainsWords*|الكلمات|الرسائل التي تحتوي على الكلمات المحددة في الحقل "الموضوع".|
 |أنماط مطابقة الموضوع|الشرط: *SubjectMatchesPatterns* <br/> الاستثناء: *ExceptIf SubjectMatchesPatterns*|انماط|الرسائل التي يحتوي فيها حقل الموضوع على نقوش نصية تتطابق مع التعبيرات العادية المحددة.|
-|يحتوي المحتوى على|الشرط: *ContentContainsSensitiveInformation* <br/> استثناء *باستثناء ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|الرسائل أو المستندات التي تحتوي على معلومات حساسة كما هو محدد بواسطة نهج منع فقدان البيانات (DLP) من Microsoft Purview.|
+|يحتوي المحتوى على|الشرط: *ContentContainsSensitiveInformation* <br/> استثناء *باستثناء ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|الرسائل أو المستندات التي تحتوي على معلومات حساسة كما هو محدد بواسطة نهج تفادي فقدان البيانات في Microsoft Purview (DLP).|
 |نمط مطابقة الموضوع أو النص الأساسي|الشرط: *SubjectOrBodyMatchesPatterns* <br/> الاستثناء: *ExceptIfSubjectOrBodyMatchesPatterns*|انماط|الرسائل التي يحتوي فيها حقل الموضوع أو النص الأساسي للرسالة على نقوش نصية تتطابق مع التعبيرات العادية المحددة.|
 |يحتوي الموضوع أو النص الأساسي على كلمات|الشرط: *SubjectOrBodyContainsWords* <br/> الاستثناء: *ExceptIfSubjectOrBodyContainsWords*|الكلمات|الرسائل التي تحتوي على الكلمات المحددة في حقل الموضوع أو نص الرسالة|
 |
 
 ### <a name="attachments"></a>المرفقات
 
-|شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Microsoft 365 PowerShell|نوع الخاصية|وصف|
+|شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Security & Compliance PowerShell|نوع الخاصية|وصف|
 |---|---|---|---|
-|المرفق محمي بكلمة مرور|الشرط: *DocumentIsPasswordProtected* <br/><br/> الاستثناء: *ExceptIfDocumentIsPasswordProtected*|اي|الرسائل التي يكون فيها المرفق محميا بكلمة مرور (وبالتالي لا يمكن مسحه ضوئيا). يعمل الكشف عن كلمة المرور فقط لمستندات Office وملفات .zip وملفات 7z.|
+|المرفق محمي بكلمة مرور|الشرط: *DocumentIsPasswordProtected* <br/><br/> الاستثناء: *ExceptIfDocumentIsPasswordProtected*|اي|الرسائل التي يكون فيها المرفق محميا بكلمة مرور (وبالتالي لا يمكن مسحه ضوئيا). لا يعمل الكشف عن كلمة المرور إلا لمستندات Office وملفات .zip وملفات .7z.|
 |ملحق ملف المرفق هو|الشرط: *ContentExtensionMatchesWords* <br/><br/> الاستثناء: *ExceptIfContentExtensionMatchesWords*|الكلمات|الرسائل التي يتطابق فيها ملحق ملف المرفق مع أي من الكلمات المحددة.|
 |تعذر مسح محتوى أي مرفق بريد إلكتروني|الشرط: *DocumentIsUnsupported* <br/><br/>الاستثناء: *ExceptIf DocumentIsUnsupported*|n/a|الرسائل التي لا يتعرف Exchange Online على مرفق فيها.|
 |لم يكتمل مسح محتوى أي مرفق بريد إلكتروني|الشرط: *ProcessingLimitExceeded* <br/><br/> الاستثناء: *ExceptIfProcessingLimitExceeded*|n/a|الرسائل التي لم يتمكن مشغل القواعد فيها من إكمال مسح المرفقات. يمكنك استخدام هذا الشرط لإنشاء قواعد تعمل معا لتحديد الرسائل ومعالجتها حيث تعذر مسح المحتوى ضوئيا بشكل كامل.|
 |يحتوي اسم المستند على كلمات|الشرط: *DocumentNameMatchesWords* <br/><br/> الاستثناء: *ExceptIfDocumentNameMatchesWords*|الكلمات|الرسائل التي يتطابق فيها اسم ملف المرفق مع أي من الكلمات المحددة.|
 |اسم المستند يطابق الأنماط|الشرط: *DocumentNameMatchesPatterns* <br/><br/> الاستثناء: *ExceptIfDocumentNameMatchesPatterns*|انماط|الرسائل التي يحتوي فيها اسم ملف المرفق على نقوش نصية تتطابق مع التعبيرات العادية المحددة.|
-|خاصية المستند هي|الشرط: *ContentPropertyContainsWords* <br/><br/> الاستثناء: *ExceptIfContentPropertyContainsWords*|الكلمات|الرسائل أو المستندات التي يتطابق فيها ملحق ملف المرفق مع أي من الكلمات المحددة.|
+|خاصية المستند هي|الشرط: *ContentPropertyContainsWords* <br/><br/> الاستثناء: *ExceptIfContentPropertyContainsWords*|الكلمات|الرسائل التي تحتوي على مستندات تتطابق فيها الخاصية المخصصة للمرفق مع القيمة المحددة.|
 |حجم المستند يساوي أو أكبر من|الشرط: *DocumentSizeOver* <br/><br/> الاستثناء: *ExceptIfDocumentSizeOver*|حجم|الرسائل التي يكون فيها أي مرفق أكبر من القيمة المحددة أو مساويا لها.|
 |يتضمن محتوى أي مرفق أيا من هذه الكلمات|الشرط: *DocumentContainsWords* <br/><br/> الاستثناء: *ExceptIfDocumentContainsWords*|`Words`|الرسائل التي يحتوي فيها المرفق على الكلمات المحددة.|
 |يتطابق أي محتوى مرفقات مع أنماط النص هذه|الشرط: *DocumentMatchesPatterns* <br/><br/> الاستثناء: *ExceptIfDocumentMatchesPatterns*|`Patterns`|الرسائل التي يحتوي فيها المرفق على نقوش نصية تتطابق مع التعبيرات العادية المحددة.|
 
 ### <a name="message-headers"></a>رؤوس الرسائل
 
-|شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Microsoft 365 PowerShell|نوع الخاصية|وصف|
+|شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Security & Compliance PowerShell|نوع الخاصية|وصف|
 |---|---|---|---|
 |يحتوي الرأس على كلمات أو عبارات|الشرط: *HeaderContainsWords* <br/><br/> الاستثناء: *ExceptIfHeaderContainsWords*|جدول التجزئة|تحتوي الرسائل التي تحتوي على حقل الرأس المحدد وقيمة حقل الرأس هذا على الكلمات المحددة.|
 |يطابق الرأس الأنماط|الشرط: *HeaderMatchesPatterns* <br/><br/> الاستثناء: *ExceptIfHeaderMatchesPatterns*|جدول التجزئة|تحتوي الرسائل التي تحتوي على حقل الرأس المحدد وقيمة حقل الرأس هذا على التعبيرات العادية المحددة.|
 
 ### <a name="message-properties"></a>خصائص الرسالة
 
-|شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Microsoft 365 PowerShell|نوع الخاصية|وصف|
+|شرط أو استثناء في DLP|معلمات الشرط/الاستثناء في Security & Compliance PowerShell|نوع الخاصية|وصف|
 |---|---|---|---|
 |مع الأهمية|الشرط: *WithImportance* <br/><br/> الاستثناء: *ExceptIfWithImportance*|اهميه|الرسائل التي تم وضع علامة عليها بمستوى الأهمية المحدد.|
 |تحتوي مجموعة أحرف المحتوى على كلمات|الشرط: *ContentCharacterSetContainsWords* <br/><br/> *باستثناءIfContentCharacterSetContainsWords*|مجموعات الأحرف|الرسائل التي تحتوي على أي من أسماء مجموعة الأحرف المحددة.|
@@ -139,7 +137,7 @@ Set-PolicyConfig -SenderAddressLocation Envelope
 
 يصف هذا الجدول الإجراءات المتوفرة في DLP.
 
-|إجراء في DLP|معلمات الإجراء في Microsoft 365 PowerShell|نوع الخاصية|وصف|
+|إجراء في DLP|معلمات الإجراء في Security & Compliance PowerShell|نوع الخاصية|وصف|
 |---|---|---|---|
 |تعيين رأس الصفحة|تعيين رأس الصفحة|الخاصية الأولى: *اسم الرأس* <br/><br/> الخاصية الثانية: *قيمة الرأس*|تحدد المعلمة SetHeader إجراء لقاعدة DLP التي تضيف أو تعدل حقل رأس وقيمة في رأس الرسالة. تستخدم هذه المعلمة بناء الجملة "HeaderName:HeaderValue". يمكنك تحديد أسماء رؤوس متعددة وأزواج قيم مفصولة بفواصل|
 |إزالة الرأس|إزالة رأس الصفحة|الخاصية الأولى: *MessageHeaderField*<br/><br/> الخاصية الثانية: *سلسلة*|تحدد المعلمة RemoveHeader إجراء لقاعدة DLP التي تزيل حقل رأس من رأس الرسالة. تستخدم هذه المعلمة بناء الجملة "HeaderName" أو "HeaderName:HeaderValue". يمكنك تحديد أسماء رؤوس متعددة أو أسماء رؤوس وأزواج قيم مفصولة بفواصل|

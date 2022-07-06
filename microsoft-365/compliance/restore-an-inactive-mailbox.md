@@ -17,16 +17,14 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: تعرف على كيفية استعادة (أو دمج) محتويات علبة بريد غير نشطة إلى علبة بريد موجودة.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 66f9e75a76b4fb1bda0f9ae0f70cfe12c816d2bb
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 7c1a976013f522e45b4e96d6b28653fa860fe16f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438214"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629212"
 ---
 # <a name="restore-an-inactive-mailbox"></a>استعادة علبة بريد غير نشطة
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يتم استخدام علبة بريد غير نشطة (وهي نوع من علبة البريد المحذوفة مبدئيا) للاحتفاظ بالبريد الإلكتروني لموظف سابق بعد مغادرة مؤسستك. إذا كان هناك موظف آخر يتحمل المسؤوليات الوظيفية للموظف المغادر أو إذا عاد هذا الموظف إلى مؤسستك، فهناك طريقتان لجعل محتويات علبة البريد غير النشطة متوفرة للمستخدم:
 

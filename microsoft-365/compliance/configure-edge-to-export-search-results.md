@@ -13,18 +13,16 @@ search.appverid:
 - MOE150
 - MET150
 description: يجب تمكين دعم ClickOnce لاستخدام أحدث إصدار من Microsoft Edge لتنزيل نتائج البحث من البحث في المحتوى وeDiscovery في مركز الأمان والتوافق.
-ms.openlocfilehash: 13556b08a0eaec5ed11bdaf09014a3988cd56829
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f93ab1da1b76d435cc1ce684aa459b4c131dfff8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092426"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630378"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>استخدام أداة تصدير eDiscovery في Microsoft Edge
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-نتيجة للتغييرات الأخيرة في أحدث إصدار من Microsoft Edge، لم يعد دعم ClickOnce ممكنا بشكل افتراضي. لمتابعة استخدام أداة التصدير eDiscovery لتنزيل نتائج البحث في المحتوى أو eDiscovery، تحتاج إما إلى استخدام [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) أو تمكين دعم ClickOnce في أحدث إصدار من Microsoft Edge.
+نتيجة للتغييرات الأخيرة في الإصدار الأحدث من Microsoft Edge، لم يعد دعم ClickOnce ممكنا بشكل افتراضي. لمتابعة استخدام أداة تصدير eDiscovery لتنزيل نتائج البحث في المحتوى أو eDiscovery، تحتاج إما إلى استخدام [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) أو تمكين دعم ClickOnce في أحدث إصدار من Microsoft Edge.
 
 ## <a name="enable-clickonce-support-in-microsoft-edge"></a>تمكين دعم ClickOnce في Microsoft Edge
 
@@ -38,7 +36,7 @@ ms.locfileid: "65092426"
 
    ![انقر فوق "إعادة التشغيل".](../media/ClickOnceimage2.png)
 
-**ملاحظه:** يمكن للمؤسسات استخدام نهج المجموعة لتعطيل دعم ClickOnce. للتحقق مما إذا كان هناك نهج تنظيمي لدعم ClickOnce، انتقل إلى **edge://policy**. تظهر لقطة الشاشة التالية تمكين ClickOnce عبر المؤسسة بأكملها. إذا تم تعيين قيمة النهج هذه إلى **خطأ**، فستحتاج إلى الاتصال بمسؤول في مؤسستك.
+**ملاحظه:** يمكن للمؤسسات استخدام نهج المجموعة لتعطيل دعم ClickOnce. للتحقق مما إذا كان هناك نهج تنظيمي لدعم ClickOnce، انتقل إلى **edge://policy**. تظهر لقطة الشاشة التالية أنه تم تمكين ClickOnce عبر المؤسسة بأكملها. إذا تم تعيين قيمة النهج هذه إلى **خطأ**، فستحتاج إلى الاتصال بمسؤول في مؤسستك.
 
 ![قائمة نهج Edge التنظيمية.](../media/ClickOnceimage3.png)
 

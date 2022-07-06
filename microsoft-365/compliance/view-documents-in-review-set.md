@@ -15,16 +15,14 @@ search.appverid:
 - MET150
 description: اختر طريقة عرض المحتوى في eDiscovery (Premium)، مثل النص أو التعليق التوضيحي أو المحول أو طريقة العرض الأصلية.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d21ee5f24b12f010ba9869ca1dfe9af9251ab64c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c5373734b0442d872f5c98ce40876c7be8d95990
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093515"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627008"
 ---
 # <a name="view-documents-in-a-review-set-in-ediscovery-premium"></a>عرض المستندات في مجموعة مراجعة في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يعرض eDiscovery (Premium) المحتوى عبر العديد من المشاهدين لكل منها أغراض مختلفة. يمكن استخدام العارضين المختلفين بالنقر فوق أي مستند ضمن مجموعة مراجعة. المشاهدون المتوفرون حاليا هم:
 
@@ -42,7 +40,7 @@ ms.locfileid: "65093515"
 
 ## <a name="native-view"></a>طريقة العرض الأصلية
 
-يعرض العارض الأصلي أغنى طريقة عرض للمستند. وهو يدعم المئات من أنواع الملفات ويقصد به عرض التجربة الأصلية الأكثر صواب الممكنة. بالنسبة لملفات Microsoft Office، يستخدم العارض إصدار الويب لتطبيقات Office لعرض محتوى مثل تعليقات المستند وصيغ Excel والصفوف/الأعمدة المخفية والملاحظات PowerPoint.
+يعرض العارض الأصلي أغنى طريقة عرض للمستند. وهو يدعم المئات من أنواع الملفات ويقصد به عرض التجربة الأصلية الأكثر صواب الممكنة. بالنسبة لملفات Microsoft Office، يستخدم العارض إصدار الويب لتطبيقات Office لعرض محتوى مثل تعليقات المستند وصيغ Excel والصفوف/الأعمدة المخفية وملاحظات PowerPoint.
 
 ![طريقة العرض الأصلية
 ](../media/Reviewimage3.png)

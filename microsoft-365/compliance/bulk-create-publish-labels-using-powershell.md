@@ -18,21 +18,19 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: تعرف على كيفية استخدام PowerShell لإنشاء تسميات الاستبقاء ونشرها من سطر الأوامر، بشكل مستقل عن مدخل توافق Microsoft Purview.
-ms.openlocfilehash: fb39e3dee9f1bd0492c443e4a3c5f5c878808990
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: تعرف على كيفية استخدام PowerShell لإنشاء تسميات الاستبقاء ونشرها من سطر الأوامر، بشكل مستقل عن مدخل التوافق في Microsoft Purview.
+ms.openlocfilehash: c94c2c77ffc948aa55aa7f230e471957fdb2701f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043492"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626766"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>إنشاء تسميات الاستبقاء ونشرها باستخدام PowerShell
 
->*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+>*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-بعد أن تقرر استخدام [تسميات الاستبقاء](retention.md) لمساعدتك على الاحتفاظ بالمستندات ورسائل البريد الإلكتروني أو حذفها في Microsoft 365، ربما تكون قد أدركت أن لديك العديد من تسميات الاستبقاء وربما مئات منها لإنشاءها ونشرها. الطريقة الموصى بها لإنشاء تسميات الاستبقاء على نطاق واسع هي باستخدام [خطة الملف](file-plan-manager.md) من مدخل توافق Microsoft Purview. ومع ذلك، يمكنك أيضا استخدام [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
+بعد أن تقرر استخدام [تسميات الاستبقاء](retention.md) لمساعدتك على الاحتفاظ بالمستندات ورسائل البريد الإلكتروني أو حذفها في Microsoft 365، ربما تكون قد أدركت أن لديك العديد من تسميات الاستبقاء وربما مئات منها لإنشاءها ونشرها. الأسلوب الموصى به لإنشاء تسميات الاستبقاء على نطاق واسع هو استخدام [خطة ملف](file-plan-manager.md) من مدخل التوافق في Microsoft Purview. ومع ذلك، يمكنك أيضا استخدام [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
 
 استخدم المعلومات وملفات القوالب والأمثلة والبرامج النصية في هذه المقالة لمساعدتك على إنشاء تسميات استبقاء بشكل مجمع ونشرها في نهج تسمية الاستبقاء. بعد ذلك، يمكن تطبيق تسميات الاستبقاء [من قبل المسؤولين والمستخدمين](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
 
@@ -40,7 +38,7 @@ ms.locfileid: "66043492"
 
 نظره عامه:
 
-1. في Excel، قم بإنشاء قائمة بتسميات الاستبقاء وقائمة بنهج تسميات الاستبقاء الخاصة بها.
+1. في Excel، أنشئ قائمة بتسميات الاستبقاء وقائمة بنهج تسميات الاستبقاء الخاصة بها.
 
 2. استخدم PowerShell لإنشاء تسميات الاستبقاء ونهج تسمية الاستبقاء في تلك القوائم.
 
@@ -50,7 +48,7 @@ ms.locfileid: "66043492"
 
 ## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>الخطوة 1: إنشاء ملف .csv لتسميات الاستبقاء
 
-1. انسخ نموذج ملف .csv التالي لقالب وإدخالات نموذجية لأربع تسميات استبقاء مختلفة، والصقها في Excel.
+1. انسخ نموذج ملف .csv التالي لقالب ومثال إدخالات لأربع تسميات استبقاء مختلفة، والصقها في Excel.
 
 2. تحويل النص إلى أعمدة: نص علامة تبويب \> **البيانات** **إلى أعمدة** \> **محددة بفواصل** \>  \> **عامة**
 
@@ -736,7 +734,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>الخطوة 4: تشغيل البرنامج النصي PowerShell
 
-أولا، [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+أولا، [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ثم قم بتشغيل البرنامج النصي الذي يقوم بإنشاء تسميات الاستبقاء ونشرها:
 

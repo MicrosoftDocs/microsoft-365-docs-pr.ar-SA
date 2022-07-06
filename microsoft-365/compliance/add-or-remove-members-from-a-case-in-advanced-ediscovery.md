@@ -17,22 +17,20 @@ search.appverid:
 ms.assetid: ''
 description: تعرف على كيفية إضافة الأعضاء الذين يمكنهم الوصول إلى حالة أو إزالتهم عند إدارة حالة eDiscovery (Premium).
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 85a8673e7e3c31ab12cda0109f6c06762adeabf3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0b3ed53ee897e88d70a7b1322999e5b81de8ed81
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091848"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627702"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>إضافة أعضاء أو إزالتهم من حالة
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-يمكنك إضافة أعضاء أو إزالتهم لإدارة من يمكنه الوصول إلى الحالة. ومع ذلك، قبل أن يتمكن أحد الأعضاء من الوصول إلى حالة eDiscovery (Premium) (وتنفيذ المهام في هذه الحالة)، يجب إضافة المستخدم إلى مجموعة أدوار eDiscovery Manager على صفحة **الأذونات** في مدخل توافق Microsoft Purview. لمزيد من المعلومات، راجع [تعيين أذونات eDiscovery](./assign-ediscovery-permissions.md).
+يمكنك إضافة أعضاء أو إزالتهم لإدارة من يمكنه الوصول إلى الحالة. ومع ذلك، قبل أن يتمكن أحد الأعضاء من الوصول إلى حالة eDiscovery (Premium) (وتنفيذ المهام في هذه الحالة)، يجب إضافة المستخدم إلى مجموعة أدوار eDiscovery Manager في صفحة **الأذونات** في مدخل التوافق في Microsoft Purview. لمزيد من المعلومات، راجع [تعيين أذونات eDiscovery](./assign-ediscovery-permissions.md).
 
 1. في صفحة **eDiscovery (Premium)،** انتقل إلى الحالة التي تريد إضافة عضو إليها.
 
-2. انقر فوق علامة تبويب **الإعدادات** ثم انقر فوق **"تحديد**" في لوحة **أذونات & Access**.
+2. انقر فوق علامة التبويب **"إعدادات"** ، ثم انقر فوق **"تحديد** " في لوحة **أذونات Access &** .
 
 3. ضمن **"إدارة الأعضاء**"، انقر فوق **"إضافة** " لإضافة أعضاء إلى الحالة. يمكنك أيضا اختيار إضافة مجموعة أدوار إلى الحالة بالنقر فوق  **"إضافة"** ضمن **"إدارة مجموعات الأدوار**".
 

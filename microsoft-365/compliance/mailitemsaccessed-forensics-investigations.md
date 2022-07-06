@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: استخدم إجراء تدقيق علبة البريد MailItemsAccessed لإجراء التحقيقات الجنائية لحسابات المستخدمين المخترقة.
-ms.openlocfilehash: 5ff3c078dfd29b5b44bfac5f04b329bf014507ea
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a2c6d8030ba90f213f665036157b3efe0c267e80
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090928"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629454"
 ---
-# <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>استخدام تدقيق Microsoft Purview (Premium) للتحقيق في الحسابات المخترقة
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="use-microsoft-purview-audit-premium-to-investigate-compromised-accounts"></a>استخدام Microsoft Purview Audit (Premium) للتحقيق في الحسابات المخترقة
 
 حساب مستخدم مخترق (يسمى أيضا *تولي الحساب*) هو نوع من الهجوم عندما يحصل المهاجم على حق الوصول إلى حساب مستخدم ويعمل كمستخدم. تسبب هذه الأنواع من الهجمات أحيانا ضررا أكثر مما قد يكون المهاجم مقصودا. عند التحقق من حسابات البريد الإلكتروني المخترقة، يجب أن تفترض أن بيانات البريد قد تم اختراقها أكثر مما يمكن الإشارة إليه من خلال تتبع حالة الحضور الفعلي للمهاجم. استنادا إلى نوع البيانات في رسائل البريد الإلكتروني، يجب أن تفترض أن المعلومات الحساسة قد تم اختراقها أو مواجهة غرامات تنظيمية ما لم تتمكن من إثبات عدم كشف المعلومات الحساسة. على سبيل المثال، تواجه المؤسسات المنظمة ل HIPAA غرامات كبيرة إذا كان هناك دليل على كشف معلومات صحة المرضى (PHI). في هذه الحالات، من غير المحتمل أن يكون المهاجمون مهتمين ب PHI، ولكن لا يزال يتعين على المؤسسات الإبلاغ عن انتهاكات البيانات ما لم تتمكن من إثبات خلاف ذلك.
 
@@ -39,7 +37,7 @@ ms.locfileid: "65090928"
 
 ### <a name="auditing-sync-access"></a>تدقيق الوصول إلى المزامنة
 
-يتم تسجيل عمليات المزامنة فقط عند الوصول إلى علبة بريد بواسطة إصدار سطح المكتب من عميل Outlook Windows أو Mac. أثناء عملية المزامنة، يقوم هؤلاء العملاء عادة بتنزيل مجموعة كبيرة من عناصر البريد من السحابة إلى كمبيوتر محلي. حجم التدقيق لعمليات المزامنة كبير. لذلك، بدلا من إنشاء سجل تدقيق لكل عنصر بريد تمت مزامنته، نقوم بإنشاء حدث تدقيق لمجلد البريد الذي يحتوي على عناصر تمت مزامنتها ونفترض أن *كافة* عناصر البريد في المجلد المتزامن قد تم اختراقها. يتم تسجيل نوع الوصول في حقل OperationProperties لسجل التدقيق.
+يتم تسجيل عمليات المزامنة فقط عند الوصول إلى علبة بريد بواسطة إصدار سطح المكتب من عميل Outlook لنظام التشغيل Windows أو Mac. أثناء عملية المزامنة، يقوم هؤلاء العملاء عادة بتنزيل مجموعة كبيرة من عناصر البريد من السحابة إلى كمبيوتر محلي. حجم التدقيق لعمليات المزامنة كبير. لذلك، بدلا من إنشاء سجل تدقيق لكل عنصر بريد تمت مزامنته، نقوم بإنشاء حدث تدقيق لمجلد البريد الذي يحتوي على عناصر تمت مزامنتها ونفترض أن *كافة* عناصر البريد في المجلد المتزامن قد تم اختراقها. يتم تسجيل نوع الوصول في حقل OperationProperties لسجل التدقيق.
 
 راجع الخطوة 2 في [قسم استخدام سجلات التدقيق MailItemsAccessed للتحقيقات الجنائية](#use-mailitemsaccessed-audit-records-for-forensic-investigations) للحصول على مثال لعرض نوع الوصول إلى المزامنة في سجل تدقيق.
 
@@ -171,7 +169,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 |ClientIPAddress|عنوان IP لكمبيوتر العميل.|
 |ClientInfoString|بروتوكول العميل، العميل المستخدم للوصول إلى علبة البريد.|
 |ParentFolder|مسار المجلد الكامل لعنصر البريد الذي تم الوصول إليه.|
-|Logon_type|نوع تسجيل الدخول للمستخدم الذي نفذ الإجراء. أنواع تسجيل الدخول (وقيمة قائمة التعداد المقابلة لها) هي المالك (0) أو المسؤول (1) أو المفوض (2).|
+|Logon_type|نوع تسجيل الدخول للمستخدم الذي نفذ الإجراء. أنواع تسجيل الدخول (وقيمة قائمة التعداد المقابلة لها) هي المالك (0) أو مسؤول (1) أو المفوض (2).|
 |MailAccessType|ما إذا كان الوصول عملية ربط أو مزامنة.|
 |MailboxUPN|UPN الخاص بعلبة البريد حيث توجد الرسالة التي تتم قراءتها.|
 |User|UPN للمستخدم الذي يقرأ الرسالة.|
@@ -188,8 +186,8 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
 |سجل التدقيق 1|سجل التدقيق 2|سجل التدقيق 3|
 |---|---|---|
-|ClientIPAddress1<br/>**SessionId2**|ClientIPAddress2<br/>**SessionId2**|ClientIPAddress1<br/>**SessionId3**|
-|InternetMessageIdA<br/>InternetMessageIdD<br/>InternetMessageIdE<br/>InternetMessageIdF<br/>|InternetMessageIdA<br/>InternetMessageIdC|InternetMessageIdB|
+|ClientIPAddress **1**<br/>SessionId **2**|ClientIPAddress **2**<br/>SessionId **2**|ClientIPAddress **1**<br/>SessionId **3**|
+|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B**|
 |
 
 إذا كانت أي من الخصائص المدرجة في الجدول في [المقطع السابق](#filtering-of-duplicate-audit-records) مختلفة، يتم إنشاء سجل تدقيق منفصل لتعقب السياق الجديد. سيتم فرز عمليات الوصول إلى سجلات تدقيق منفصلة وفقا للسياق الذي حدث فيه النشاط.

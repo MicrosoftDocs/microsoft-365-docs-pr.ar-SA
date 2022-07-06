@@ -1,5 +1,5 @@
 ---
-title: تهيئة أجهزة macOS في نظرة عامة على Microsoft 365
+title: إلحاق أجهزة macOS في نظرة عامة على Microsoft 365
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -14,16 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: التعرف على إلحاق أجهزة macOS في حلول التوافق
-ms.openlocfilehash: 09a35e47a237639a722047b11c24f9b2d09cf51d
-ms.sourcegitcommit: 5b321693214e3859f5af8f1774d2a5ff685ab3b7
+ms.openlocfilehash: 59ccb78060c7749f5690015dc4bab948a88e5222
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65014969"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630027"
 ---
-# <a name="onboard-macos-devices-into-microsoft-365-overview"></a>تهيئة أجهزة macOS في نظرة عامة على Microsoft 365
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="onboard-macos-devices-into-microsoft-365-overview"></a>إلحاق أجهزة macOS في نظرة عامة على Microsoft 365
 
 يمكن إلحاق أجهزة MacOS في حلول Microsoft Purview باستخدام إما Intune أو JAMF Pro. تختلف إجراءات الإلحاق استنادا إلى حل الإدارة الذي تستخدمه. إذا تم بالفعل إلحاق أجهزة macOS في Microsoft Defender لنقطة النهاية (MDE)، فهناك خطوات أقل. راجع [الخطوات التالية](#next-steps) للحصول على ارتباطات للإجراءات المناسبة لك.
 
@@ -50,10 +48,10 @@ ms.locfileid: "65014969"
  - [إدارة المخاطر الداخلية](insider-risk-management.md)
  - [خطة لإدارة المخاطر الداخلية](insider-risk-management-plan.md#plan-for-insider-risk-management)
 
-يجب أن تتم إدارة أجهزة macOS بالفعل من خلال Pro Intune أو JAMF.
+يجب أن تتم إدارة أجهزة macOS بالفعل من خلال Intune أو JAMF Pro.
  
 - لإلحاق Intune، راجع [دليل النشر: إدارة أجهزة macOS في Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) [وتسجيل جهاز Mac باستخدام Intune Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
-- للإلحاق ب JAMF Pro راجع، [دليل مسؤولي PRO JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) و [JAMF Pro دليل التثبيت والتكوين ل Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
+- للإلحاق ب JAMF Pro، راجع [دليل مسؤولي JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) [ودليل التثبيت والتكوين JAMF Pro ل Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
 <!--- Install the v95+ Edge browser on your macOS devices--> 
 
 ### <a name="supported-browsers"></a>المستعرضات المدعومة
@@ -67,7 +65,7 @@ ms.locfileid: "65014969"
 
 ## <a name="licensing-guidance"></a>إرشادات الترخيص
 
-راجع Microsoft 365 [إرشادات الترخيص لحماية المعلومات](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+راجع [إرشادات ترخيص Microsoft 365 لحماية المعلومات](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ## <a name="activities-that-can-be-restricted-on-macos"></a>الأنشطة التي يمكن تقييدها على macOS 
 
@@ -81,19 +79,19 @@ ms.locfileid: "65014969"
 
 **نسخ إلى الحافظة** – عند فرضه، يقوم هذا الإجراء بحظر أو تحذير أو تدقيق البيانات في ملف محمي يتم نسخه إلى حافظة على جهاز نقطة النهاية 
 
-**Upload إلى السحابة** – يحظر هذا الإجراء الملفات المحمية أو يحذر منها أو يدققها عندما يتم منع تحميل الملفات المحمية أو يسمح بتحميلها إلى الخدمات السحابية استنادا إلى قائمة المجالات المسموح بها/غير المسموح بها في الإعدادات العمومية. عند تعيين هذا الإجراء للتحذير أو الحظر، يتم حظر المستعرضات الأخرى (المعرفة في قائمة المستعرضات غير مسموح بها ضمن الإعدادات العمومية) من الوصول إلى الملف. 
+**التحميل إلى السحابة** – يحظر هذا الإجراء أو يحذر أو يدقق عندما يتم منع الملفات المحمية من تحميلها أو السماح بتحميلها إلى الخدمات السحابية استنادا إلى قائمة المجالات المسموح بها/غير المسموح بها في الإعدادات العمومية. عند تعيين هذا الإجراء للتحذير أو الحظر، يتم حظر المستعرضات الأخرى (المعرفة في قائمة المستعرضات غير مسموح بها ضمن الإعدادات العمومية) من الوصول إلى الملف. 
 
 **يتم الوصول إليها بواسطة التطبيقات غير مسموح بها** – عند فرضه، يمنع هذا الإجراء التطبيقات الموجودة في قائمة التطبيقات غير مسموح بها (كما هو محدد في الإعدادات العمومية) من الوصول إلى الملفات المحمية على جهاز نقطة النهاية. نماذج السيناريوهات 
 
 ## <a name="onboarding-devices-into-device-management"></a>إلحاق الأجهزة بإدارة الأجهزة
 
-يجب تمكين مراقبة الجهاز وإلحاق نقاط النهاية قبل أن تتمكن من مراقبة العناصر الحساسة وحمايتها على الجهاز. يتم تنفيذ كلا الإجراءين في مدخل توافق Microsoft Purview.
+يجب تمكين مراقبة الجهاز وإلحاق نقاط النهاية قبل أن تتمكن من مراقبة العناصر الحساسة وحمايتها على الجهاز. يتم تنفيذ كلا الإجراءين في مدخل التوافق في Microsoft Purview.
 
 عندما تريد إلحاق الأجهزة التي لم يتم إلحاقها بعد، ستقوم بتنزيل البرنامج النصي المناسب ونشره على تلك الأجهزة. <!--Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).-->
 
 <!--If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list.-->
 
-1. افتح صفحة **الإعدادات** [مدخل الامتثال ل Microsoft Purview](https://compliance.microsoft.com) واختر **تمكين مراقبة الجهاز**.
+1. افتح صفحة [إعدادات مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com)  واختر **تمكين مراقبة الجهاز**.
 
    > [!NOTE]
    > على الرغم من أن تمكين إلحاق الجهاز يستغرق عادة حوالي 60 ثانية، يرجى السماح بما يصل إلى 30 دقيقة قبل التعامل مع دعم Microsoft.
@@ -107,9 +105,9 @@ ms.locfileid: "65014969"
 الموضوع | الوصف
 :---|:---
 |[إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام Intune](device-onboarding-offboarding-macos-intune.md)|لأجهزة macOS التي تتم إدارتها من خلال Intune
-|[إلحاق أجهزة macOS وإلحاقها في حلول التوافق باستخدام Intune لعملاء Microsoft Defender لنقطة النهاية](device-onboarding-offboarding-macos-intune-mde.md) |لأجهزة macOS التي تتم إدارتها من خلال Intune والتي تم توزيع Microsoft Defender لنقطة النهاية (MDE) إليها
+|[إلحاق أجهزة macOS وإلغاء إلحاقها بحلول التوافق باستخدام Intune ل Microsoft Defender لعملاء نقطة النهاية](device-onboarding-offboarding-macos-intune-mde.md) |لأجهزة macOS التي تتم إدارتها من خلال Intune والتي تم توزيع Microsoft Defender لنقطة النهاية (MDE) إليها
 |[إلحاق أجهزة macOS وإلحاقها في حلول Microsoft Purview باستخدام JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | لأجهزة macOS التي تتم إدارتها من خلال JAMF Pro
-|[إلحاق أجهزة macOS وإلحاقها بحلول التوافق باستخدام PRO JAMF لعملاء Microsoft Defender لنقطة النهاية](device-onboarding-offboarding-macos-jamfpro-mde.md)|لأجهزة macOS التي تتم إدارتها من خلال PRO JAMF والتي تم توزيع Microsoft Defender لنقطة النهاية (MDE) عليها
+|[إلحاق أجهزة macOS وإلغاء إلحاقها بحلول التوافق باستخدام JAMF Pro ل Microsoft Defender لعملاء نقطة النهاية](device-onboarding-offboarding-macos-jamfpro-mde.md)|لأجهزة macOS التي تتم إدارتها من خلال JAMF Pro والتي تم توزيع Microsoft Defender لنقطة النهاية (MDE) إليها
 
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة

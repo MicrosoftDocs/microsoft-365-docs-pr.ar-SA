@@ -18,18 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: إرشادات لنشر تسميات الاستبقاء حتى تتمكن بعد ذلك من تطبيقها في التطبيقات للاحتفاظ بما تحتاجه وحذف ما لا تحتاج إليه.
-ms.openlocfilehash: b96d5f3df440db58aff63bffca11523f7c09d8ee
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 54e2a7f5f9776438ad36d51d43b38ed379cb35d0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128888"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630334"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>نشر تسميات الاستبقاء وتطبيقها في التطبيقات
 
->*[Microsoft 365 إرشادات الترخيص للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+>*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > هذا السيناريو مدعوم لجميع تكوينات تسمية الاستبقاء، بما في ذلك [السجلات التنظيمية](records-management.md#records).
@@ -76,7 +74,7 @@ ms.locfileid: "66128888"
 
 5. استنادا إلى النطاق المحدد:
     
-    - إذا اخترت **Adaptive**: في صفحة **اختيار نطاقات النهج التكيفي والمواقع** ، حدد **"إضافة نطاقات** " وحدد نطاقا أو أكثر من النطاقات التكيفية التي تم إنشاؤها. ثم حدد موقعا واحدا أو أكثر. تعتمد المواقع التي يمكنك تحديدها على [أنواع النطاقات](retention-settings.md#configuration-information-for-adaptive-scopes) المضافة. على سبيل المثال، إذا قمت بإضافة نوع نطاق **من المستخدمين** فقط، فستتمكن من تحديد **Exchange البريد الإلكتروني** ولكن ليس **SharePoint المواقع**. 
+    - إذا اخترت **Adaptive**: في صفحة **اختيار نطاقات النهج التكيفي والمواقع** ، حدد **"إضافة نطاقات** " وحدد نطاقا أو أكثر من النطاقات التكيفية التي تم إنشاؤها. ثم حدد موقعا واحدا أو أكثر. تعتمد المواقع التي يمكنك تحديدها على [أنواع النطاقات](retention-settings.md#configuration-information-for-adaptive-scopes) المضافة. على سبيل المثال، إذا أضفت نوع نطاق **مستخدم** فقط، فستتمكن من تحديد **بريد Exchange الإلكتروني** وليس **مواقع SharePoint**. 
     
     - إذا اخترت **"ثابت"**: في صفحة **"اختيار المواقع** "، قم بتبديل أي من المواقع أو إيقاف تشغيلها. لكل موقع، يمكنك تركه في الوضع الافتراضي [لتطبيق النهج على الموقع بأكمله](retention-settings.md#a-policy-that-applies-to-entire-locations)، أو [تحديد تضمين واستثناء](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
     
@@ -86,35 +84,35 @@ ms.locfileid: "66128888"
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>عندما تصبح تسميات الاستبقاء متوفرة للتطبيق
 
-إذا نشرت تسميات استبقاء إلى SharePoint أو OneDrive، فستظهر هذه التسميات عادة للمستخدمين لتحديدها في غضون يوم واحد. ومع ذلك، اسمح بما يصل إلى سبعة أيام. 
+إذا نشرت تسميات الاستبقاء إلى SharePoint أو OneDrive، فستظهر هذه التسميات عادة للمستخدمين للتحديد في غضون يوم واحد. ومع ذلك، اسمح بما يصل إلى سبعة أيام. 
 
-إذا نشرت تسميات الاستبقاء إلى Exchange، فقد يستغرق ظهور تسميات الاستبقاء هذه للمستخدمين ما يصل إلى سبعة أيام. كما هو الحال مع كافة إعدادات الاستبقاء Exchange، يجب أن تحتوي علبة البريد على 10 ميغابايت على الأقل من البيانات.
+إذا نشرت تسميات الاستبقاء إلى Exchange، فقد يستغرق ظهور تسميات الاستبقاء هذه للمستخدمين ما يصل إلى سبعة أيام. كما هو الحال مع كافة إعدادات الاستبقاء ل Exchange، يجب أن تحتوي علبة البريد على 10 ميغابايت على الأقل من البيانات.
 
 ![رسم تخطيطي عندما يتم تطبيق التسميات المنشورة.](../media/retention-labels-published-timings.png)
 
 إذا لم تظهر التسميات بعد سبعة أيام، فتحقق من **حالة** نهج التسمية عن طريق تحديدها من صفحة **نهج التسمية** في مدخل التوافق في Microsoft Purview. إذا رأيت **(خطأ)** مضمنا في الحالة وفي تفاصيل المواقع، فراجع رسالة تفيد بأن نشر النهج يستغرق وقتا أطول من المتوقع أو محاولة إعادة نشر النهج، فحاول تشغيل [الأمر Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) أو [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell لإعادة محاولة توزيع النهج:
 
-1. [الاتصال إلى Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. [الاتصال ب Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. تشغيل أحد الأوامر التالية:
     
-    - بالنسبة إلى مواقع النهج **Teams رسائل القناة الخاصة**، **Yammer رسائل المستخدم ورسائل** **المجتمع Yammer**:
+    - بالنسبة لمواقع النهج، **رسائل قناة Teams الخاصة** **ورسائل مستخدم Yammer** **ورسائل مجتمع Yammer**:
     
         ```PowerShell
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - بالنسبة إلى جميع مواقع النهج الأخرى، مثل **البريد الإلكتروني Exchange** **ومواقع SharePoint** **ورسائل القناة Teams** وما إلى ذلك:
+    - بالنسبة إلى كافة مواقع النهج الأخرى، مثل **البريد الإلكتروني Exchange** **ومواقع SharePoint** **ورسائل قناة Teams** وما إلى ذلك:
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
 
-### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>كيفية التحقق من حالة تسميات الاستبقاء المنشورة على Exchange
+### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>كيفية التحقق من حالة تسميات الاستبقاء المنشورة إلى Exchange
 
 في Exchange Online، يتم توفير تسميات الاستبقاء للمستخدمين النهائيين من خلال عملية يتم تشغيلها كل سبعة أيام. باستخدام PowerShell، يمكنك معرفة متى تم تشغيل هذه العملية آخر مرة، وبالتالي تحديد متى سيتم تشغيلها مرة أخرى.
   
-1. [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. تشغيل هذه الأوامر.
     

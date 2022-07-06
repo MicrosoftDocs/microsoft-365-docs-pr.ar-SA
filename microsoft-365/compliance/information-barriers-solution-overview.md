@@ -1,7 +1,7 @@
 ---
 title: عوائق المعلومات
 description: تعرف على كيفية تكوين حواجز المعلومات في Microsoft Purview.
-keywords: حواجز Microsoft 365، Microsoft Purview، التوافق، المعلومات
+keywords: Microsoft 365 وMicrosoft Purview والامتثال وحواجز المعلومات
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -16,20 +16,18 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: aaba1c642d4615d3eb5163736450f3f8f3c27062
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: 21ad4f0cc6614bed3c579a8025d83200446fec18
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396168"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627228"
 ---
 # <a name="information-barriers"></a>عوائق المعلومات
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+يتيح Microsoft 365 الاتصال والتعاون عبر المجموعات والمؤسسات ويدعم طرقا لتقييد الاتصال والتعاون بين مجموعات معينة من المستخدمين عند الضرورة. قد يتضمن ذلك المواقف أو السيناريوهات التي تريد فيها تقييد الاتصال والتعاون بين مجموعتين لتجنب حدوث تعارض في الاهتمام في مؤسستك. قد يشمل ذلك أيضا المواقف التي تحتاج فيها إلى تقييد الاتصال والتعاون بين أشخاص معينين داخل مؤسستك لحماية المعلومات الداخلية.
 
-يتيح Microsoft 365 الاتصال والتعاون عبر المجموعات والمؤسسات ويدعم طرقا لتقييد الاتصال والتعاون بين مجموعات محددة من المستخدمين عند الضرورة. قد يتضمن ذلك المواقف أو السيناريوهات التي تريد فيها تقييد الاتصال والتعاون بين مجموعتين لتجنب حدوث تعارض في الاهتمام في مؤسستك. قد يشمل ذلك أيضا المواقف التي تحتاج فيها إلى تقييد الاتصال والتعاون بين أشخاص معينين داخل مؤسستك لحماية المعلومات الداخلية.
-
-Microsoft Purview حواجز المعلومات (IB) مدعومة في Microsoft Teams SharePoint Online و OneDrive for Business. يمكن لمسؤول التوافق أو مسؤول IB تحديد نهج للسماح بالاتصالات بين مجموعات المستخدمين في Microsoft Teams أو منعها. يمكن استخدام نهج IB لحالات مثل هذه:
+Microsoft Purview Information Barriers (IB) مدعوم في Microsoft Teams وSharePoint Online OneDrive for Business. يمكن لمسؤول التوافق أو مسؤول IB تحديد النهج للسماح بالاتصالات بين مجموعات المستخدمين في Microsoft Teams أو منعها. يمكن استخدام نهج IB لحالات مثل هذه:
 
 - يجب ألا يتصل المستخدم في مجموعة التاجر اليومي بالملفات أو يشاركها مع فريق التسويق
 - يجب ألا يقوم موظفو الشؤون المالية الذين يعملون على معلومات سرية للشركة بتوصيل الملفات أو مشاركتها مع مجموعات معينة داخل مؤسستهم

@@ -14,18 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: قائمة بأنواع الملفات المعتمدة في Microsoft 365 eDiscovery (Premium)، بما في ذلك أنواع ملفات الصور المعتمدة من قبل وظيفة التعرف البصري على الحروف في eDiscovery (Premium).
+description: قائمة بأنواع الملفات المعتمدة في Microsoft 365 eDiscovery (Premium)، بما في ذلك أنواع ملفات الصور المدعومة بوظيفة التعرف البصري على الحروف في eDiscovery (Premium).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 422200b3015ff86566507cbe3f63bc2a75a84bea
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: faa367800653e320621336e98f9e8fc684b222ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095785"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631018"
 ---
 # <a name="supported-file-types-in-ediscovery-premium"></a>أنواع الملفات المعتمدة في eDiscovery (Premium)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 يدعم Microsoft Purview eDiscovery (Premium) العديد من أنواع الملفات على العديد من المستويات المختلفة. يتم وصف أنواع ملفات الدعم في الجداول التالية في هذه المقالة. لم يتم إنهاء هذه القائمة، وسنضيف أنواع ملفات جديدة بينما نواصل اختبار التحقق من الصحة. تشير هذه الجداول إلى ما إذا كان نوع الملف معتمدا لاستخراج النص (والتعرف البصري على الحروف أو استخراج نص التعرف البصري على الحروف لملفات الصور)، ويمكن عرضه في العارض الأصلي وأيضا دعم في العارض "تعليق توضيحي" في eDiscovery (Premium).
 
@@ -292,7 +290,7 @@ ms.locfileid: "65095785"
 |application/vnd.wordperfect; الإصدار=6.x|نعم|نعم|نعم|لا|لا|.wpd|
 |
 
-## <a name="word-pro"></a>Pro Word
+## <a name="word-pro"></a>Word Pro
 
 <br>
 

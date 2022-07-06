@@ -1,5 +1,5 @@
 ---
-title: تعديل قوالب التقييم في Microsoft Compliance Manager
+title: تعديل قوالب التقييم في Microsoft Purview Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,15 +17,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: فهم كيفية تعديل قوالب التقييم في Microsoft Compliance Manager.
-ms.openlocfilehash: 589e13e766e35d38eed985a0e7bb9e21544c370d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: فهم كيفية تعديل قوالب التقييم في Microsoft Purview Compliance Manager.
+ms.openlocfilehash: f21ff61f6bb06f00d1db8381e3760e7c4b5343aa
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758520"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630400"
 ---
-# <a name="modify-assessment-templates-in-microsoft-compliance-manager"></a>تعديل قوالب التقييم في Microsoft Compliance Manager
+# <a name="modify-assessment-templates-in-microsoft-purview-compliance-manager"></a>تعديل قوالب التقييم في Microsoft Purview Compliance Manager
 
 عند العمل مع التقييمات في Compliance Manager، قد تحتاج إلى تعديل قالب تقييم قمت بإنشائه. تشبه العملية عملية [إنشاء القالب](compliance-manager-templates-create.md) حيث ستقوم بتحميل ملف Excel منسق مع بيانات القالب.
 
@@ -35,7 +35,7 @@ ms.locfileid: "64758520"
 
 ## <a name="format-your-excel-file-to-modify-an-existing-template"></a>تنسيق ملف Excel لتعديل قالب موجود
 
-من صفحة **قوالب التقييم** ، حدد القالب الذي تريد تعديله، والذي سيظهر صفحة التفاصيل الخاصة به. ثم حدد **"تصدير" إلى Excel**. سيتم تنزيل ملف Excel مع جميع بيانات القالب. احفظ الملف إلى جهازك المحلي.
+من صفحة **قوالب التقييم** ، حدد القالب الذي تريد تعديله، والذي سيظهر صفحة التفاصيل الخاصة به. ثم حدد **"تصدير إلى Excel**". سيتم تنزيل ملف Excel مع كل بيانات القالب. احفظ الملف إلى جهازك المحلي.
 
 لاستخدام هذا الملف، انتقل إلى مقطع أدناه للعثور بسرعة على الإرشادات التي تحتاج إليها:
 
@@ -103,8 +103,8 @@ ms.locfileid: "64758520"
 بعد اكتمال ملف Excel وحفظه، اتبع الخطوات التالية.
 
 1. افتح صفحة قالب التقييم مرة أخرى وحدد قالبك. في صفحة تفاصيل القالب، حدد **"تعديل القالب** " لبدء معالج التعديل.
-2. في شاشة **ملف Upload**، حدد **"استعراض**" للبحث عن ملف Excel وتحميله.
-3. إذا لم تكن هناك أي مشاكل في الملف، تعرض الشاشة التالية اسم الملف الذي تم تحميله. حدد **"التالي**" للمتابعة (إذا كنت بحاجة إلى تغيير الملف، فحدد **Upload ملف آخر**).
+2. في شاشة **"تحميل الملف** "، حدد **"استعراض** " للبحث عن ملف Excel وتحميله.
+3. إذا لم تكن هناك أي مشاكل في الملف، تعرض الشاشة التالية اسم الملف الذي تم تحميله. حدد **"التالي** " للمتابعة (إذا كنت بحاجة إلى تغيير الملف، فحدد **"تحميل ملف مختلف**").
     - إذا كانت هناك مشكلة في الملف، فإن رسالة الخطأ في الأعلى تشرح ما هو الخطأ. ستحتاج إلى إصلاح الملف وتحميله مرة أخرى. ستحدث أخطاء إذا تم تنسيق جدول البيانات بشكل غير صحيح، أو إذا كانت هناك معلومات غير صحيحة في حقول معينة.
 
 4. تعرض شاشة **المراجعة والانتهاء** عدد إجراءات التحسين وعناصر التحكم والحد الأقصى للدرجة للقالب. عندما تصبح جاهزا للموافقة، حدد **"التالي**".

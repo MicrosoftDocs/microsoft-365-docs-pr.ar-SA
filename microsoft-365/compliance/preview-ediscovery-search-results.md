@@ -19,23 +19,21 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: معاينة عينة من النتائج التي تم إرجاعها بواسطة بحث محتوى أو بحث eDiscovery (قياسي) في مدخل توافق Microsoft Purview.
-ms.openlocfilehash: acbfebc5935666299dc6a717d70f9c426a6d61cd
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: معاينة عينة من النتائج التي تم إرجاعها بواسطة بحث محتوى أو بحث eDiscovery (قياسي) في مدخل التوافق في Microsoft Purview.
+ms.openlocfilehash: f369148c6f898c4150d0c86f898640f71ab367a0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099620"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628584"
 ---
 # <a name="preview-ediscovery-search-results"></a>معاينة نتائج بحث eDiscovery
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 بعد تشغيل بحث في المحتوى أو بحث مقترن بحالة Microsoft Purview eDiscovery (قياسي)، يمكنك معاينة عينة من النتائج التي تم إرجاعها بواسطة البحث. يمكن أن تساعدك معاينة العناصر التي تم إرجاعها بواسطة استعلام البحث في تحديد ما إذا كان البحث يرجع النتائج التي تأملها أو إذا كنت بحاجة إلى تغيير استعلام البحث وإعادة تشغيل البحث.
 
 لمعاينة عينة من النتائج التي تم إرجاعها بواسطة عملية بحث:
 
-1. في مدخل توافق Microsoft Purview، انتقل إلى صفحة البحث في المحتوى أو حالة eDiscovery (قياسي).
+1. في مدخل التوافق في Microsoft Purview، انتقل إلى صفحة البحث في المحتوى أو حالة eDiscovery (قياسي).
 
 2. حدد البحث لعرض صفحة القائمة المنبثقة.
 
