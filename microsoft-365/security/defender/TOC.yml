@@ -4,8 +4,10 @@
   items:
     - name: نظرة عامة
       items:
-        - name: Microsoft 365 Defender
+        - name: ما هو Microsoft 365 Defender؟
           href: microsoft-365-defender.md
+        - name: مدخل Microsoft 365 Defender
+          href: microsoft-365-defender-portal.md
         - name: الجديد في Microsoft 365 Defender
           href: whats-new.md
         - name: خدمات Microsoft 365 Defender
