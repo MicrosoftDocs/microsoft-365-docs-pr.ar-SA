@@ -20,16 +20,16 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 39a30b7fcc853ac96d14df4fa04f9e727f98628c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 4dc790b780b6c066eda635b081d412654468b52f
+ms.sourcegitcommit: 244ab1b8fe98363f2bfeec337bf68e88ab31d789
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686020"
+ms.locfileid: "66687115"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>التحقيق ومعالجة تنبيهات الامتثال للاتصالات
 
-بعد تكوين نهج التوافق مع الاتصالات، ستبدأ في تلقي تنبيهات في مدخل التوافق في Microsoft Purview للمشاكل المتعلقة بالرسائل التي تتطابق مع شروط نهجك. اتبع إرشادات سير العمل هنا للتحقيق في مشكلات التنبيه ومعالجتها.
+بعد تكوين [نهج التوافق مع الاتصالات](/microsoft-365/compliance/communication-compliance-policies)، ستبدأ في تلقي تنبيهات في [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com) للمشاكل المتعلقة بالرسائل التي تتطابق مع شروط نهجك. اتبع إرشادات سير العمل هنا للتحقيق في مشكلات التنبيه ومعالجتها.
 
 ## <a name="investigate-alerts"></a>التحقق من التنبيهات
 
