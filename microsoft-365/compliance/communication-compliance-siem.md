@@ -1,5 +1,5 @@
 ---
-title: توافق الاتصالات مع حلول إدارة معلومات الأمان والأحداث
+title: استخدام توافق الاتصالات مع حلول SIEM
 description: تعرف على تكامل توافق الاتصالات مع حلول SIEM.
 keywords: Microsoft 365، وMicrosoft Purview، والامتثال، وتوافق الاتصالات
 f1.keywords:
@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4d9ee561e033e98919063d1f344aa3207a6bb6cd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 247999954e6ff69fdfbd2ff681bb79c0bf22c8bc
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626524"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686108"
 ---
-# <a name="communication-compliance-with-siem-solutions"></a>توافق الاتصالات مع حلول إدارة معلومات الأمان والأحداث
+# <a name="use-communication-compliance-with-siem-solutions"></a>استخدام توافق الاتصالات مع حلول SIEM
 
-[توافق الاتصالات](communication-compliance.md) هو حل مخاطر من الداخل في Microsoft Purview يساعد على تقليل مخاطر الاتصال من خلال مساعدتك في اكتشاف الرسائل غير المناسبة في مؤسستك والتقاطها والعمل عليها. عادة ما تستخدم حلول إدارة معلومات الأمان والأحداث (SIEM) مثل [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) أو [Splunk](https://www.splunk.com/) لتجميع التهديدات وتتبعها داخل المؤسسة.
+[توافق الاتصالات](/microsoft-365/compliance/communication-compliance) هو حل مخاطر من الداخل في Microsoft Purview يساعد على تقليل مخاطر الاتصال من خلال مساعدتك في اكتشاف الرسائل غير المناسبة في مؤسستك والتقاطها والعمل عليها. عادة ما تستخدم حلول إدارة معلومات الأمان والأحداث (SIEM) مثل [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) أو [Splunk](https://www.splunk.com/) لتجميع التهديدات وتتبعها داخل المؤسسة.
 
 من الاحتياجات المشتركة للمؤسسات دمج تنبيهات الامتثال للاتصالات وحلول SIEM هذه. مع هذا التكامل، يمكن للمؤسسات عرض تنبيهات توافق الاتصالات في حل SIEM الخاص بها ثم معالجة التنبيهات ضمن سير عمل توافق الاتصالات وتجربة المستخدم. على سبيل المثال، يرسل موظف رسالة مسيئة إلى موظف آخر ويتم الكشف عن هذه الرسالة من خلال مراقبة نهج توافق الاتصالات للمحتوى غير المناسب. يتم تعقب هذه الأحداث في تدقيق Microsoft 365 (المعروف أيضا باسم "سجل التدقيق الموحد") بواسطة حل توافق الاتصالات واستيرادها إلى حل SIEM. ثم يتم تشغيل تنبيه في حل SIEM للمؤسسة من الأحداث المراقبة في تدقيق Microsoft 365 المقترنة بتنبيهات توافق الاتصالات. يتم إعلام المحققين بالتنبيه في حلول SIEM ثم يحققون في التنبيه ويعالجونه في حل التوافق مع الاتصالات.
 
@@ -133,6 +133,6 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Compl
 ```
 ## <a name="resources"></a>الموارد
 
-- [تدقيق التوافق مع الاتصالات](communication-compliance-reports-audits.md#audit)
-- [Microsoft Purview Audit (Premium)](advanced-audit.md)
+- [تدقيق التوافق مع الاتصالات](/microsoft-365/compliance/communication-compliance-reports-audits#audit)
+- [Microsoft Purview Audit (Premium)](/microsoft-365/compliance/advanced-audit)
 - [مرجع واجهة برمجة تطبيقات نشاط إدارة Office 365](/office/office-365-management-api/office-365-management-activity-api-reference)

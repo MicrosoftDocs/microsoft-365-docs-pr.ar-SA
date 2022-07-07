@@ -24,25 +24,25 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d5a26aaa78b1a67acf3dd39ec3fbfa0b3fcb26b9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 17b80d00cfb8c5855dda7d21371097dd413fb707
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638827"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685646"
 ---
 # <a name="case-study---contoso-quickly-configures-an-inappropriate-text-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>دراسة حالة - تعمل Contoso بسرعة على تكوين نهج نص غير مناسب لاتصالات Microsoft Teams وExchange وYamer
 
-يساعد توافق الاتصالات في Microsoft Purview على تقليل مخاطر الاتصال من خلال مساعدتك في اكتشاف الرسائل التي تحتوي على نص غير مناسب في مؤسستك والتقاطها والعمل عليها. قد يتضمن النص غير المناسب الألفاظ النابية والتهديدات والتعرض للتهديدات والصور غير المناسبة. تسمح لك النهج المحددة مسبقا والمخصصة بفحص الاتصالات الداخلية والخارجية بحثا عن تطابقات النهج بحيث يمكن فحصها من قبل المراجعين المعينين. يمكن للمراجعين التحقق من البريد الإلكتروني الممسوح ضوئيا أو Microsoft Teams أو Yammer أو اتصالات الجهات الخارجية في مؤسستك واتخاذ إجراءات المعالجة المناسبة للتأكد من أنها متوافقة مع معايير الرسائل الخاصة بمؤسستك.
+تساعد [توافق الاتصالات في Microsoft Purview](/microsoft-365/compliance/communication-compliance) على تقليل مخاطر الاتصال من خلال مساعدتك في اكتشاف الرسائل التي تحتوي على نص غير مناسب في مؤسستك والتقاطها والعمل عليها. قد يتضمن النص غير المناسب الألفاظ النابية والتهديدات والتعرض للتهديدات والصور غير المناسبة. تسمح لك [النهج](/microsoft-365/compliance/communication-compliance-policies) المحددة مسبقا والمخصصة بفحص الاتصالات الداخلية والخارجية بحثا عن تطابقات النهج بحيث يمكن فحصها من قبل المراجعين المعينين. يمكن للمراجعين [التحقق من تنبيهات](/microsoft-365/compliance/communication-compliance-investigate-remediate#investigate-alerts) البريد الإلكتروني أو Microsoft Teams أو Yammer أو اتصالات الجهات الخارجية في مؤسستك واتخاذ [إجراءات المعالجة](/microsoft-365/compliance/communication-compliance-investigate-remediate#remediate-alerts) المناسبة للتأكد من أنها متوافقة مع معايير الرسائل الخاصة بمؤسستك.
 
 شركة Contoso هي مؤسسة خيالية تحتاج إلى تكوين نهج بسرعة للكشف عن النص غير المناسب. لقد كانوا يستخدمون Microsoft 365 بشكل أساسي للبريد الإلكتروني وMicrosoft Teams ودعم Yammer لمستخدميهم ولكن لديهم متطلبات جديدة لفرض نهج الشركة حول الملاحقات في مكان العمل. يتمتع مسؤولو تكنولوجيا المعلومات في Contoso والمتخصصون في التوافق بفهم أساسي لأساسيات العمل مع Microsoft 365 ويبحثون عن إرشادات من البداية إلى النهاية حول كيفية البدء بسرعة في توافق الاتصالات.
 
 ستغطي دراسة الحالة هذه أساسيات تكوين نهج توافق الاتصالات بسرعة للكشف عن النص غير المناسب. تتضمن هذه الإرشادات ما يلي:
 
-- الخطوة 1 - التخطيط للامتثال للاتصالات
-- الخطوة 2 - الوصول إلى توافق الاتصالات
-- الخطوة 3 - تكوين المتطلبات الأساسية وإنشاء نهج توافق الاتصالات
-- الخطوة 4 - التحقيق في التنبيهات ومعالجتها
+- [الخطوة 1: التخطيط للامتثال للاتصالات](#step-1-planning-for-communication-compliance)
+- [الخطوة 2: الوصول إلى توافق الاتصالات](#step-2-accessing-communication-compliance)
+- [الخطوة 3: تكوين المتطلبات الأساسية وإنشاء نهج توافق الاتصالات](#step-3-configuring-prerequisites-and-creating-a-communication-compliance-policy)
+- [الخطوة 4: التحقيق في التنبيهات ومعالجتها](#step-4-investigate-and-remediate-alerts)
 
 ## <a name="step-1-planning-for-communication-compliance"></a>الخطوة 1: التخطيط للامتثال للاتصالات
 
@@ -71,9 +71,9 @@ ms.locfileid: "66638827"
 
 يتخذ مسؤولو تكنولوجيا المعلومات في Contoso الخطوات التالية للتحقق من دعم الترخيص لشركة Contoso:
 
-1. يقوم مسؤولو تكنولوجيا المعلومات بتسجيل الدخول إلى مركز مسؤولي Microsoft 365 <https://admin.microsoft.com> والانتقال إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**تراخيص**</a> **الفوترة** >  مركز مسؤولي Microsoft 365 >.
+1. يقوم مسؤولو تكنولوجيا المعلومات بتسجيل الدخول إلى [مركز مسؤولي Microsoft 365](https://admin.microsoft.com) والانتقال إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**تراخيص**</a> **الفوترة** >  مركز مسؤولي Microsoft 365 >.
 
-2. هنا يؤكدون أن لديهم أحد [خيارات الترخيص](communication-compliance-configure.md#subscriptions-and-licensing) التي تتضمن دعم التوافق مع الاتصالات.
+2. هنا يؤكدون أن لديهم أحد [خيارات الترخيص](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing) التي تتضمن دعم التوافق مع الاتصالات.
 
 ![ترخيص توافق الاتصالات.](../media/communication-compliance-case-licenses.png)
 
@@ -110,7 +110,7 @@ ms.locfileid: "66638827"
 
 ### <a name="starting-directly-from-the-communication-compliance-solution"></a>البدء مباشرة من حل توافق الاتصالات
 
-أسرع طريقة للوصول إلى الحل هي تسجيل الدخول مباشرة إلى حل **توافق الاتصالات** (<https://compliance.microsoft.com/supervisoryreview>). باستخدام هذا الارتباط، سيتم توجيه مسؤولي تكنولوجيا المعلومات ومتخصصين التوافق في Contoso إلى الصفحة الرئيسية لتوافق الاتصالات حيث يمكنك مراجعة حالة التنبيهات بسرعة وإنشاء نهج جديدة من القوالب المعرفة مسبقا.
+أسرع طريقة للوصول إلى الحل هي تسجيل الدخول مباشرة إلى [حل توافق الاتصالات](https://compliance.microsoft.com/supervisoryreview). باستخدام هذا الارتباط، سيتم توجيه مسؤولي تكنولوجيا المعلومات ومتخصصين التوافق في Contoso إلى الصفحة الرئيسية لتوافق الاتصالات حيث يمكنك مراجعة حالة التنبيهات بسرعة وإنشاء نهج جديدة من القوالب المعرفة مسبقا.
 
 ![الصفحة الرئيسية لتوافق الاتصالات.](../media/communication-compliance-home.png)
 
@@ -128,7 +128,7 @@ ms.locfileid: "66638827"
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>بدءا من مركز مسؤولي Microsoft 365
 
-للوصول إلى توافق الاتصالات عند البدء من مركز مسؤولي Microsoft 365، يقوم مسؤولو تكنولوجيا المعلومات في Contoso ومتخصصو التوافق بتسجيل الدخول إلى مركز مسؤولي Microsoft 365 [(https://admin.microsoft.com)](https://admin.microsoft.com) وانتقل إلى [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com)
+للوصول إلى توافق الاتصالات عند البدء من مركز مسؤولي Microsoft 365، يقوم مسؤولو تكنولوجيا المعلومات في Contoso ومتخصصو التوافق بتسجيل الدخول إلى [مركز مسؤولي Microsoft 365](https://admin.microsoft.com) والانتقال إلى [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com)
 
 ![ارتباط توافق الاتصالات.](../media/communication-compliance-case-compliance-link.png)
 
@@ -152,7 +152,7 @@ ms.locfileid: "66638827"
 
 يتطلب توافق الاتصالات سجلات تدقيق لإظهار التنبيهات وتتبع إجراءات المعالجة التي يتخذها المراجعون. سجلات التدقيق هي ملخص لجميع الأنشطة المرتبطة بنهج تنظيمي محدد أو في أي وقت يحدث فيه تغيير في نهج توافق الاتصالات.
 
-يقوم مسؤولو تكنولوجيا المعلومات في Contoso بمراجعة [الإرشادات المفصلة خطوة بخطوة وإكمالها](turn-audit-log-search-on-or-off.md) لتشغيل التدقيق. بعد تشغيل التدقيق، يتم عرض رسالة تفيد بأنه يتم إعداد سجل التدقيق وأنه يمكنهم إجراء بحث بعد ساعتين من اكتمال الإعداد. يجب على مسؤولي تكنولوجيا المعلومات في Contoso القيام بهذا الإجراء مرة واحدة فقط.
+يقوم مسؤولو تكنولوجيا المعلومات في Contoso بمراجعة [الإرشادات المفصلة خطوة بخطوة وإكمالها](/microsoft-365/compliance/turn-audit-log-search-on-or-off) لتشغيل التدقيق. بعد تشغيل التدقيق، يتم عرض رسالة تفيد بأنه يتم إعداد سجل التدقيق وأنه يمكنهم إجراء بحث بعد ساعتين من اكتمال الإعداد. يجب على مسؤولي تكنولوجيا المعلومات في Contoso القيام بهذا الإجراء مرة واحدة فقط.
 
 ### <a name="configuring-yammer-tenant-for-native-mode"></a>تكوين مستأجر Yammer في الوضع الأصلي
 
@@ -166,12 +166,12 @@ ms.locfileid: "66638827"
 
 إنهم بحاجة إلى إنشاء مجموعة جديدة لتضمين جميع مستخدمي Contoso، حتى يتخذوا الخطوات التالية:
 
-1. يقوم مسؤولو تكنولوجيا المعلومات في Contoso بتسجيل الدخول إلى مركز مسؤولي Microsoft 365 [(https://admin.microsoft.com)](https://admin.microsoft.com)وانتقل إلى مجموعات مجموعات <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**مركز مسؤولي Microsoft 365 >).**</a> > 
+1. يقوم مسؤولو تكنولوجيا المعلومات في Contoso بتسجيل الدخول إلى [مركز مسؤولي Microsoft 365](https://admin.microsoft.com) والانتقال إلى مجموعات <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**مركز مسؤولي Microsoft 365 >.**</a> > 
 2. يقومون بتحديد **إضافة مجموعة** وإكمال المعالج لإنشاء *مجموعة Microsoft 365* جديدة أو *مجموعة توزيع*.
 
     ![مجموعات.](../media/communication-compliance-case-all-employees.png)
 
-3. بعد إنشاء المجموعة الجديدة، يحتاجون إلى إضافة جميع مستخدمي Contoso إلى المجموعة الجديدة. يفتحون **مركز إدارة Exchange** [(https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp)ويتنقلون إلى <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**مجموعات**</a> **مستلمي** >  مركز  > **إدارة Exchange**. يحدد مسؤولو تكنولوجيا المعلومات في Contoso منطقة العضوية ومجموعة *جميع الموظفين* الجديدة التي قاموا بإنشائها وحدد عنصر التحكم **Edit** لإضافة كافة مستخدمي Contoso إلى المجموعة الجديدة في المعالج.
+3. بعد إنشاء المجموعة الجديدة، يحتاجون إلى إضافة جميع مستخدمي Contoso إلى المجموعة الجديدة. يفتحون [مركز إدارة Exchange](https://outlook.office365.com/ecp) ويتنقلون إلى <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**مجموعات**</a> **مستلمي** >  مركز  > **إدارة Exchange**. يحدد مسؤولو تكنولوجيا المعلومات في Contoso منطقة العضوية ومجموعة *جميع الموظفين* الجديدة التي قاموا بإنشائها وحدد عنصر التحكم **Edit** لإضافة كافة مستخدمي Contoso إلى المجموعة الجديدة في المعالج.
 
     ![مركز إدارة Exchange.](../media/communication-compliance-case-eac.png)
 
@@ -192,4 +192,4 @@ ms.locfileid: "66638827"
 
 الآن بعد أن تم تكوين نهج توافق الاتصالات للكشف عن النص غير المناسب، فإن الخطوة التالية لمتخصصي التوافق في Contoso هي التحقق من أي تنبيهات تم إنشاؤها بواسطة النهج ومعالجتها. سيستغرق النهج ما يصل إلى ساعة لمعالجة الاتصالات بشكل كامل في جميع قنوات مصدر الاتصالات ولظهور التنبيهات في **لوحة معلومات التنبيه**.
 
-بعد إنشاء التنبيهات، سيتبع متخصصو التوافق في Contoso [إرشادات سير العمل](communication-compliance-investigate-remediate.md) للتحقيق في مشكلات النص غير المناسبة ومعالجتها.
+بعد إنشاء التنبيهات، سيتبع متخصصو التوافق في Contoso [إرشادات سير العمل](/microsoft-365/compliance/communication-compliance-investigate-remediate) للتحقيق في مشكلات النص غير المناسبة ومعالجتها.

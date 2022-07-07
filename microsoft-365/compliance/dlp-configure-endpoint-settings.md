@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: تعرف على كيفية تكوين الإعدادات المركزية لمنع فقدان بيانات نقطة النهاية (DLP).
-ms.openlocfilehash: 99598880515dd14bc453ebd61a633be7eb66a9fc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6265cb39c496a75ebc1bebed494a27798552417b
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629938"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686218"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>تكوين إعدادات تفادي فقدان البيانات في نقطة النهاية
 
@@ -251,9 +251,12 @@ ms.locfileid: "66629938"
 
 على سبيل المثال:
 
- `www.contoso.com` 
 
-أحرف البدل غير معتمدة.
+| الادخال | سلوك مطابقة URL |
+|---|---|
+| **CONTOSO.COM** |**يطابق اسم المجال المحدد وأي موقع فرعي**: <p>*://contoso.com<p>*:/ /contoso.com/ <p>*://contoso.com/anysubsite1 <p>*:/ /contoso.com/anysubsite1/anysubsite2 (إلخ) <p>**لا يتطابق مع المجالات الفرعية أو المجالات غير المحددة**: <p>*://anysubdomain.contoso.com <p>*:/ /anysubdomain.contoso.com.AU |
+| ***.CONTOSO.COM** |**يطابق اسم المجال المحدد وأي مجال فرعي وأي موقع**: <p>*://contoso.com <p>*:/ /contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*:/ /anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*:/ /anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (إلخ) <p>**لا يتطابق مع المجالات غير المحددة** <p>*://anysubdomain.contoso.com.AU/ |
+| **`www.contoso.com`** |**يطابق اسم المجال المحدد**: <p>`www.contoso.com` <p>**لا يتطابق مع المجالات أو المجالات الفرعية غير المحددة** <p>*://anysubdomain.contoso.com/، في هذه الحالة، يجب وضع اسم مجال FQDN نفسه `www.contoso.com`|
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>إعدادات إضافية ل DLP لنقطة النهاية
 

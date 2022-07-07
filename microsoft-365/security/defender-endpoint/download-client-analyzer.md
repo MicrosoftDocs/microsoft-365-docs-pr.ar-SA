@@ -1,7 +1,7 @@
 ---
-title: تنزيل محلل عميل Microsoft Defender for Endpoint
-description: تعرف على كيفية تنزيل Microsoft Defender for Endpoint Client Analyzer على Windows أو macOS أو Linux.
-keywords: تنزيل، محلل العملاء، مستشعر استكشاف الأخطاء وإصلاحها، محلل، mdeanalyzer
+title: تنزيل محلل عميل Microsoft Defender لنقطة النهاية
+description: تعرف على كيفية تنزيل Microsoft Defender لنقطة النهاية Client Analyzer على Windows أو macOS أو Linux.
+keywords: التنزيل، محلل العميل، مستشعر استكشاف الأخطاء وإصلاحها، المحلل، mdeanalyzer
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,27 +16,28 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a2763cdd670ee3916dfe4e9d3cbd42df21709f41
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f209f3b91c0b11c72f12195c2d376116ceedef95
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63583648"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686430"
 ---
-# <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>تنزيل محلل عميل Microsoft Defender for Endpoint
+# <a name="download-the-microsoft-defender-for-endpoint-client-analyzer"></a>تنزيل محلل عميل Microsoft Defender لنقطة النهاية
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-تعرف على كيفية تنزيل محلل عميل Microsoft Defender for Endpoint على أنظمة التشغيل Windows و macOS و Linux المعتمدة.
+تعرف على كيفية تنزيل محلل عميل Microsoft Defender لنقطة النهاية على أنظمة التشغيل Windows وmacOS وLinux المدعومة.
 
-## <a name="download-client-analyzer-for-windows-os"></a>تنزيل محلل العملاء Windows OS
+## <a name="download-client-analyzer-for-windows-os"></a>تنزيل محلل العميل لنظام التشغيل Windows
 
-1. يتوفر أحدث إصدار ثابت للتنزيل من عنوان URL التالي: <https://aka.ms/MDEAnalyzer>
-2. يتوفر إصدار المعاينة الأخير للتنزيل من عنوان URL التالي: <https://aka.ms/BetaMDEAnalyzer>
+1. يتوفر أحدث إصدار مستقر للتنزيل من عنوان URL التالي: <https://aka.ms/MDEAnalyzer>
+2. يتوفر أحدث إصدار معاينة للتنزيل من عنوان URL التالي: <https://aka.ms/BetaMDEAnalyzer>
 
-## <a name="download-client-analyzer-for-macos-or-linux"></a>تنزيل محلل العملاء ل macOS أو Linux
+## <a name="download-client-analyzer-for-macos-or-linux"></a>تنزيل محلل العميل لنظام التشغيل macOS أو Linux
 
-1. سيتم دمج الإصدار الأخير والمستقر في عامل MDE لنقطة النهاية. تأكد من تشغيل الإصدار الأخير إما [ل macOS](mac-whatsnew.md) أو [Linux](linux-whatsnew.md).
+1. سيتم دمج أحدث إصدار مستقر في عامل MDE لنقطة النهاية. تأكد من تشغيل أحدث إصدار لنظام [التشغيل macOS](mac-whatsnew.md) أو [Linux](linux-whatsnew.md).
 
-2. يتوفر إصدار المعاينة الأخير للتنزيل المباشر من عنوان URL التالي: <https://aka.ms/XMDEClientAnalyzer>
+2. يتوفر أحدث إصدار معاينة للتنزيل المباشر من عنوان URL التالي: <https://aka.ms/XMDEClientAnalyzer>

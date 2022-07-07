@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: e24401762906f66592d12efa42c5305a2c3d6d2e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0d0e99442ac11a92ce99d922ac170dc6939d56e1
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626436"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686306"
 ---
 # <a name="communication-compliance"></a>توافق الاتصالات
 
@@ -33,12 +33,12 @@ ms.locfileid: "66626436"
 
 ![خطوات الامتثال لاتصال حل المخاطر الداخلية.](../media/ir-solution-cc-steps.png)
 
-1. التعرف على [توافق الاتصالات](communication-compliance.md)
-2. التخطيط [للامتثال للاتصال](communication-compliance-plan.md) [والتحقق من الترخيص](communication-compliance-configure.md#subscriptions-and-licensing)
-3. تكوين [المتطلبات الأساسية](communication-compliance-configure.md#step-2-required-enable-the-audit-log) [والأذونات](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
-4. إنشاء نهج [توافق الاتصالات](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy) وتكوينها
+1. التعرف على [توافق الاتصالات](/microsoft-365/compliance/communication-compliance)
+2. التخطيط [للامتثال للاتصال](/microsoft-365/compliance/communication-compliance-plan) [والتحقق من الترخيص](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing)
+3. تكوين [المتطلبات الأساسية](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log) [والأذونات](/microsoft-365/compliance/communication-compliance-configure#step-1-required-enable-permissions-for-communication-compliance)
+4. إنشاء نهج [توافق الاتصالات](/microsoft-365/compliance/communication-compliance-configure#step-5-required-create-a-communication-compliance-policy) وتكوينها
 
 ## <a name="more-information-about-communication-compliance"></a>مزيد من المعلومات حول توافق الاتصالات
 
-- [التحقيق في التنبيهات ومعالجتها](communication-compliance-investigate-remediate.md)
-- [دراسة حالة - تعمل Contoso بسرعة على تكوين نهج محتوى غير مناسب لاتصالات Microsoft Teams وExchange وYamer](communication-compliance-case-study.md)
+- [التحقيق في التنبيهات ومعالجتها](/microsoft-365/compliance/communication-compliance-investigate-remediate)
+- [دراسة حالة - تعمل Contoso بسرعة على تكوين نهج محتوى غير مناسب لاتصالات Microsoft Teams وExchange وYamer](/microsoft-365/compliance/communication-compliance-case-study)

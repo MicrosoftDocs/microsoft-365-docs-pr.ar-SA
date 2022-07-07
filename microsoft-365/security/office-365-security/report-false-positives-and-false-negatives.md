@@ -13,12 +13,12 @@ ms.collection:
 description: تعرف على كيفية الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة في Outlook باستخدام ميزة "رسالة التقرير".
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 60f9a9eff9694752630170991b7a800f52a2952d
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 5955f6b5c4e376f296dcdad2d54a627bbcce04c3
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602127"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685668"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة في Outlook
 
@@ -50,6 +50,9 @@ ms.locfileid: "66602127"
 
 شاهد هذا الفيديو القصير لمعرفة كيفية استخدام Microsoft Defender لـ Office 365 للتحقق بسهولة من عمليات إرسال المستخدم لتحديد محتويات الرسالة، والاستجابة للإرسال من خلال تطبيق إجراء المعالجة المناسب. 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
+
+> [!IMPORTANT]
+> لعرض الرسائل التي تم الإبلاغ عنها إلى Microsoft على علامة تبويب **الرسائل التي أبلغ عنها المستخدم** ، <https://security.microsoft.com/reportsubmission>لا توقف تشغيل تجربة إعداد التقارير المضمنة.
 
 ## <a name="use-the-report-message-feature"></a>استخدام ميزة "رسالة التقرير"
 

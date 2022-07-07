@@ -1,5 +1,5 @@
 ---
-title: قم بإعداد Microsoft 365 Business Premium
+title: إعداد Microsoft 365 Business Premium
 description: كيفية إعداد Microsoft 365 Business Premium أو العمل مع موفر حلول للقيام بذلك.
 search.appverid: MET150
 author: denisebmsft
@@ -15,14 +15,14 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 6edfd60b5f5a3d10200191cd676fb66fa72ec1ba
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: b76735130d768edfa9c71b25081040a7f4b6718c
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556757"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685998"
 ---
-# <a name="set-up-microsoft-365-business-premium"></a>قم بإعداد Microsoft 365 Business Premium
+# <a name="set-up-microsoft-365-business-premium"></a>إعداد Microsoft 365 Business Premium
 
 بعد [بدء إصدار تجريبي أو شراء Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)، تكون خطوتك التالية هي إعداد كل شيء. لديك العديد من الخيارات المتاحة. يمكنك:
 
@@ -38,7 +38,7 @@ ms.locfileid: "66556757"
 | الاشتراك | Microsoft 365 Business Premium أو Microsoft 365 for Campaigns <br/><br/> لبدء إصدار تجريبي أو شراء اشتراكك، راجع المقالات التالية: <br/>- [الحصول على Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [الحصول على Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
 | الأذونات  | لإكمال عملية الإعداد الأولية، يجب أن تكون مسؤول عمومي. [تعرف على المزيد حول أدوار المسؤولين](../admin/add-users/about-admin-roles.md). |
 | متطلبات المستعرض | Microsoft Edge أو Safari أو Chrome أو Firefox. [تعرف على المزيد حول متطلبات المستعرض](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
-| نظام التشغيل | **Windows**: Windows 11 أو Windows 10 أو Windows 8.1 أو Windows Server 2019 أو إصدار أحدث أو Windows Server 2016<br/><br/>**macOS**: أحد أحدث ثلاثة إصدارات من macOS |
+| نظام التشغيل | **Windows**: Windows 11، Windows 10، Windows 8.1<br/>**macOS**: أحد أحدث ثلاثة إصدارات من macOS <br/>حاليا، لا يدعم Microsoft 365 Business Premium والإصدار المستقل من Microsoft Defender for Business الخوادم.  |
 
 > [!TIP]
 > لمزيد من المعلومات التفصيلية حول Microsoft 365 وOffice ومتطلبات النظام، راجع [Microsoft 365 وموارد Office](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).

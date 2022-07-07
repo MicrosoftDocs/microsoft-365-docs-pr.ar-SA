@@ -20,12 +20,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f8d44cd032e658e28242c89f3fbd938bfd1fb320
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f668efd6c205d67d5aaf4ffa86fae6933f9a257a
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490542"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686130"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>حماية إعدادات الأمان باستخدام الحماية من العبث
 
@@ -65,6 +65,7 @@ ms.locfileid: "66490542"
 - إزالة تحديثات التحليل الذكي للأمان
 - تعطيل الإجراءات التلقائية على التهديدات المكتشفة
 - منع الإعلامات في تطبيق أمن Windows
+- تعطيل فحص الأرشيفات وملفات الشبكة
 
 ### <a name="how-it-works"></a>كيفية عملها
 
