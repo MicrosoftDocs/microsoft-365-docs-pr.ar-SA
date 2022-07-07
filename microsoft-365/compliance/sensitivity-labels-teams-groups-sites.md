@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم تسميات الحساسية لحماية المحتوى في مواقع SharePoint وMicrosoft Teams ومجموعات Microsoft 365.
-ms.openlocfilehash: 17b1a2aab1da0e2c901aac14b3bf675cbbabe740
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 53278feccc7b2741453c20d37bbd995226a21dbe
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628672"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662506"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>استخدام تسميات الحساسية لحماية المحتوى في Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint
 
@@ -50,7 +50,7 @@ ms.locfileid: "66628672"
 
 قبل تمكين تسميات الحساسية للحاويات وتكوين تسميات الحساسية للإعدادات الجديدة، يمكن للمستخدمين رؤية تسميات الحساسية وتطبيقها في تطبيقاتهم. على سبيل المثال، من Word:
 
-![وصف الحساسية المعروض في تطبيق Word لسطح المكتب.](../media/sensitivity-label-word.png)
+:::image type="content" source=".. /media/sensitivity-label-word.png" alt-text="وصف الحساسية المعروض في تطبيق Word لسطح المكتب." lightbox=".. /media/sensitivity-label-word.png"
 
 بعد تمكين تسميات الحساسية للحاويات وتكوينها، يمكن للمستخدمين أيضا رؤية تسميات الحساسية وتطبيقها على مواقع فريق Microsoft ومجموعات Microsoft 365 ومواقع SharePoint. على سبيل المثال، عند إنشاء موقع فريق جديد من SharePoint:
 
@@ -301,7 +301,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 عند تطبيق التسمية، واستعرض المستخدمون وصولا إلى الموقع، فإنهم يرون اسم التسمية والنهج المطبقة. على سبيل المثال، تمت تسمية هذا الموقع على أنه **"سري**"، وتم تعيين إعداد الخصوصية إلى **"خاص**":
 
-![موقع تم تطبيق وصف الحساسية عليه.](../media/sensitivity-label-site.png)
+:::image type ="content" source="../media/sensitivity-label-site.png" alt-text="موقع تم تطبيق وصف الحساسية عليه." lightbox="../media/sensitivity-label-site.png":::
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>استخدام PowerShell لتطبيق وصف الحساسية على مواقع متعددة
 
@@ -341,7 +341,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 لعرض تسميات الحساسية المطبقة وفرزها والبحث فيها، استخدم <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**المواقع النشطة**</a> في مركز إدارة SharePoint الجديد. قد تحتاج أولا إلى إضافة عمود **الحساسية** :
 
-![عمود الحساسية على صفحة المواقع النشطة.](../media/manage-site-sensitivity-labels.png)
+:::image type="content" source=".. /media/manage-site-sensitivity-labels.png" alt-text="عمود الحساسية على صفحة المواقع النشطة." lightbox=".. /media/manage-site-sensitivity-labels.png"
 
 لمزيد من المعلومات حول إدارة المواقع من صفحة المواقع النشطة، بما في ذلك كيفية إضافة عمود، راجع [إدارة المواقع في مركز إدارة SharePoint الجديد](/sharepoint/manage-sites-in-new-admin-center).
 
@@ -451,7 +451,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 ## <a name="auditing-sensitivity-label-activities"></a>تدقيق أنشطة وصف الحساسية
 
 > [!IMPORTANT]
-> إذا كنت تستخدم فصل التسميات عن طريق تحديد نطاق **مواقع "المجموعات &** " فقط للتسميات التي تحمي الحاويات: نظرا لحدث تدقيق عدم تطابق **حساسية المستند المكتشف** والبريد الإلكتروني الموضح في هذا القسم، ففكر في [ترتيب التسميات قبل التسميات](sensitivity-labels.md#label-priority-order-matters) التي تحتوي على نطاق **لرسائل البريد الإلكتروني &** "ملفات". 
+> إذا كنت تستخدم فصل التسميات عن طريق تحديد نطاق **مواقع "المجموعات &"** فقط للتسميات التي تحمي الحاويات: نظرا لحدث تدقيق عدم **تطابق حساسية المستند المكتشف** والبريد الإلكتروني الموضح في هذا القسم، ففكر في [ترتيب التسميات](sensitivity-labels.md#label-priority-order-matters) قبل التسميات التي تحتوي على نطاق **للعناصر**. 
 
 إذا قام شخص ما بتحميل مستند إلى موقع محمي بتسمية حساسية وكان لمستنده تسمية حساسية [ذات أولوية أعلى](sensitivity-labels.md#label-priority-order-matters) من تسمية الحساسية المطبقة على الموقع، فلن يتم حظر هذا الإجراء. على سبيل المثال، قمت بتطبيق التسمية **"عام** " على موقع SharePoint، ويحمل شخص ما إلى هذا الموقع مستندا يسمى **"سري**". لأن تسمية الحساسية ذات الأولوية الأعلى تحدد المحتوى الذي يكون أكثر حساسية من المحتوى الذي له ترتيب أولوية أقل، فقد يكون هذا الموقف مصدر قلق أمني.
 

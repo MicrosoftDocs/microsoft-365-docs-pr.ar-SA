@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: عند إنشاء وصف حساسية، يمكنك تعيين تسمية تلقائيا للملفات ورسائل البريد الإلكتروني، أو يمكنك مطالبة المستخدمين بتحديد التسمية التي توصي بها.
-ms.openlocfilehash: 48affe223db5f2c1a63246b7d4ff473188cabd63
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 06e769f3e6aa616d8b725ec37c52e2a24289ceb2
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640909"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662287"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>تطبيق تسمية حساسية على المحتوى تلقائياً
 
@@ -148,7 +148,7 @@ For more information on parent labels and sublabels, see [Sublabels (grouping la
 
 يدعم عميل التسمية الموحدة ل Azure حماية البيانات الوصف التلقائي فقط لأنواع المعلومات الحساسة المضمنة والمخصصة، ولا يدعم المصنفات القابلة للتدريب أو أنواع المعلومات الحساسة التي تستخدم مطابقة البيانات الدقيقة (EDM) أو الكيانات المسماة.
 
-تتوفر إعدادات التسمية التلقائية لتطبيقات Office عند [إنشاء وصف الحساسية أو تحريره](create-sensitivity-labels.md). تأكد من تحديد **"ملفات" & رسائل البريد الإلكتروني** لنطاق التسمية:
+تتوفر إعدادات التسمية التلقائية لتطبيقات Office عند [إنشاء وصف الحساسية أو تحريره](create-sensitivity-labels.md). تأكد من تحديد **العناصر** لنطاق التسمية:
 
 ![خيارات نطاق وصف الحساسية للملفات ورسائل البريد الإلكتروني.](../media/filesandemails-scope-options-sensitivity-label.png)
 

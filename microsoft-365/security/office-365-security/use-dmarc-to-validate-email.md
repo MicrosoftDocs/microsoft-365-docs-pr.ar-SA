@@ -18,12 +18,12 @@ ms.collection:
 description: تعرف على كيفية تكوين مصادقة الرسائل وإعداد التقارير والمطابقة المستندة إلى المجال (DMARC) للتحقق من صحة الرسائل المرسلة من مؤسستك.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3e5cc711aef4e81833540572027b8d06087c510
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 55fd24a033526053e8006c3d70f3abeeef1c94d2
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486918"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663383"
 ---
 # <a name="use-dmarc-to-validate-email"></a>استخدام DMARC للتحقق من صحة البريد الإلكتروني
 
@@ -100,7 +100,7 @@ _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=
 
 ## <a name="set-up-dmarc-for-outbound-mail-from-microsoft-365"></a>إعداد DMARC للبريد الصادر من Microsoft 365
 
-إذا كنت تستخدم Microsoft 365 ولكنك لا تستخدم مجالا مخصصا (تستخدم onmicrosoft.com)، فلن تحتاج إلى القيام بأي شيء آخر. تم إعداد SPF لك بالفعل، ويقوم Microsoft 365 تلقائيا بإنشاء توقيع DKIM للبريد الصادر. لا يوجد شيء أكثر للقيام به لتكوين DMARC لمؤسستك. لمزيد من المعلومات حول هذا التوقيع، راجع [السلوك الافتراضي ل DKIM وMicrosoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+إذا كنت تستخدم Microsoft 365 ولكنك لا تستخدم مجالا مخصصا (تستخدم onmicrosoft.com)، فهذا يعني أن SPF قد تم إعداده لك بالفعل ويقوم Microsoft 365 تلقائيا بإنشاء توقيع DKIM للبريد الصادر (لمزيد من المعلومات حول هذا التوقيع، راجع [السلوك الافتراضي ل DKIM وMicrosoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)). لإعداد DMARC لمؤسستك، تحتاج إلى [تكوين سجل DMARC TXT](#step-4-form-the-dmarc-txt-record-for-your-domain) لمجال onmicrosoft.com ونشره إلى DNS عبر إعدادات > مركز [Office 365 Admin](https://admin.microsoft.com) > المجالات > النقر فوق onmicrosoft.com المجال > إضافة سجل.
 
  إذا كان لديك مجال مخصص أو تستخدم خوادم Exchange المحلية مع Microsoft 365، فستحتاج إلى إعداد DMARC للبريد الصادر يدويا. يتضمن إعداد DMARC لمجالك المخصص الخطوات التالية:
 
@@ -281,4 +281,4 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 [**استخدم DKIM للتحقق من صحة البريد الإلكتروني الصادر المرسل من مجالك المخصص في Microsoft 365**](use-dkim-to-validate-outbound-email.md)
 
-[استخدام مرسلي ARC الموثوق بهم لتدفقات البريد المشروعة](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
+[استخدام مرسلي ARC الموثوق بهم لتدفقات البريد المشروعة](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet)

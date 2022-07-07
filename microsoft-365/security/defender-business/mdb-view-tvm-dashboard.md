@@ -16,27 +16,22 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 8301119b0169e0ee2ac56cc7a85b3037ccb75907
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 6b0c67aeac244b214e5c017511192225be05d454
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090553"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663185"
 ---
-# <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>استخدام لوحة معلومات إدارة الثغرات الأمنية & المخاطر في Microsoft Defender for Business
+# <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>استخدم لوحة معلومات إدارة الثغرات الأمنية في Microsoft Defender for Business
 
-تتضمن Microsoft Defender for Business لوحة معلومات إدارة الثغرات الأمنية & المخاطر المصممة لتوفير الوقت والجهد لفريق الأمان. بالإضافة إلى توفير درجة التعرض، يمكنك أيضا عرض معلومات حول الأجهزة المكشوفة وتوصيات الأمان. يمكنك استخدام لوحة معلومات إدارة المخاطر & الثغرات الأمنية من أجل:
+يتضمن Microsoft Defender for Business لوحة معلومات لإدارة الثغرات الأمنية تم تصميمها لتوفير وقت فريق الأمان والجهد. بالإضافة إلى توفير درجة التعرض، يمكنك أيضا عرض معلومات حول الأجهزة المكشوفة وتوصيات الأمان. يمكنك استخدام لوحة معلومات إدارة المخاطر & الثغرات الأمنية من أجل:
 
 - عرض درجة التعرض، المقترنة بالأجهزة في شركتك
-- عرض توصيات الأمان العليا، مثل معالجة الاتصالات الضعيفة مع الأجهزة، أو تشغيل حماية جدار الحماية، أو تحديث تعريفات برنامج الحماية من الفيروسات من Microsoft Defender
+- عرض أفضل توصيات الأمان، مثل معالجة الاتصالات الضعيفة مع الأجهزة، أو تشغيل حماية جدار الحماية، أو تحديث تعريفات برنامج الحماية من الفيروسات من Microsoft Defender
 - عرض أنشطة المعالجة، مثل أي ملفات تم إرسالها إلى العزل، أو الثغرات الأمنية الموجودة على الأجهزة
 
-هل تريد معرفة كيفية عملها؟ شاهد هذا الفيديو الذي يصف [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y1FX]
-
 [تعرف على المزيد حول إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/defender-vulnerability-management.md).
-
 
 ## <a name="next-steps"></a>الخطوات التالية
 

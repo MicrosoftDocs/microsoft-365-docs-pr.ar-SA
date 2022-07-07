@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: تكوين تسميات الحساسية للتشفير الذي يحمي بياناتك عن طريق تقييد الوصول والاستخدام.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f41fbec0018008d2a59ad8960a7a0cd89f1a556
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ef00ca10ca932322e51d71449e42f45842ce4c97
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625380"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663758"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>تقييد الوصول إلى المحتوى باستخدام تسميات الحساسية لتطبيق التشفير
 
@@ -81,13 +81,13 @@ ms.locfileid: "66625380"
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>كيفية تكوين تسمية للتشفير
 
-1. اتبع الإرشادات العامة [لإنشاء وصف حساسية أو تحريره](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) وتأكد من تحديد **"ملفات" & رسائل البريد الإلكتروني** لنطاق التسمية: 
+1. اتبع الإرشادات العامة [لإنشاء تسمية حساسية أو تحريرها](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) وتأكد من تحديد **العناصر** لنطاق التسمية: 
     
     ![خيارات نطاق وصف الحساسية للملفات ورسائل البريد الإلكتروني.](../media/filesandemails-scope-options-sensitivity-label.png)
 
-2. بعد ذلك، في صفحة **اختيار إعدادات الحماية للملفات ورسائل البريد الإلكتروني** ، تأكد من تحديد **تشفير الملفات ورسائل البريد الإلكتروني**
+2. بعد ذلك، في صفحة **"اختيار إعدادات الحماية للعناصر المسماة** "، تأكد من تحديد **"تشفير العناصر"**
     
-    ![خيارات حماية وصف الحساسية للملفات ورسائل البريد الإلكتروني.](../media/protection-options-sensitivity-label.png)
+    :::image type="content" source="../media/protection-options-sensitivity-label.png" alt-text="خيارات حماية وصف الحساسية للعناصر." Lightbox="../media/protection-options-sensitivity-label.png":::
 
 4.  في صفحة **التشفير** ، حدد أحد الخيارات التالية:
     
@@ -97,7 +97,7 @@ ms.locfileid: "66625380"
     
     - **تكوين إعدادات التشفير**: تشغيل التشفير ويجعل إعدادات التشفير مرئية:
         
-        ![خيارات وصف الحساسية للتشفير.](../media/encrytion-options-sensitivity-label.png)
+        :::image type="content" source="../media/encrytion-options-sensitivity-label.png" alt-text="خيارات وصف الحساسية للتشفير. "lightbox="../media/encrytion-options-sensitivity-label.png":::
         
         توجد إرشادات هذه الإعدادات في قسم [إعدادات التكوين](#configure-encryption-settings) التالي.
 
@@ -412,7 +412,7 @@ ms.locfileid: "66625380"
 
 يتمتع هذا التكوين بميزة لا تحتاجها لتحديد المستخدمين أو المجموعات أو المجالات لتشفير بريد إلكتروني أو مستند. سيظل المحتوى مشفرا ولا يزال بإمكانك تحديد حقوق الاستخدام وتاريخ انتهاء الصلاحية والوصول دون اتصال.
 
-استخدم هذا التكوين فقط عندما لا تحتاج إلى تقييد من يمكنه فتح المستند المحمي أو البريد الإلكتروني المحمي. [مزيد من المعلومات حول هذا الإعداد](#requirements-and-limitations-for-add-any-authenticated-users)
+استخدم هذا التكوين فقط عندما لا تحتاج إلى تقييد من يمكنه فتح المستند المحمي أو البريد الإلكتروني المحمي. اطلع على [مزيد من المعلومات حول هذا الإعداد](#requirements-and-limitations-for-add-any-authenticated-users).
 
 1. في صفحة **التشفير** : لتعيين **الأذونات الآن أو السماح للمستخدمين بتحديدها؟** تأكد من تحديد **تعيين الأذونات الآن** .
 

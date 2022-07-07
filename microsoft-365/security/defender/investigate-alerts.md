@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: b80bbb747ab9a0aefebaa4dd5721370ba56a3890
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: b0c9e5793ec0ffc97cbbac0308a7e362da279e1b
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057704"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663541"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>التحقيق في التنبيهات في Microsoft 365 Defender
 
@@ -174,10 +174,90 @@ ms.locfileid: "66057704"
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="مثال على تحديد توصيات تنبيه":::
 
-توفر علامة التبويب **التوصيات** إجراءات الخطوة التالية ونصائح للتحقيق والمعالجة والوقاية. فيما يلي مثال على ذلك.
+توفر علامة التبويب **"توصيات** " إجراءات الخطوة التالية ونصائح للتحقيق والمعالجة والوقاية. فيما يلي مثال على ذلك.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="مثال لتوصيات التنبيه":::
 
+ 
+## <a name="suppress-an-alert"></a>منع تنبيه
+
+كمحلل مركز عمليات الأمان (SOC)، تتمثل إحدى أهم المشكلات في فرز العدد الهائل من التنبيهات التي يتم تشغيلها يوميا. بالنسبة للتنبيهات ذات الأولوية المنخفضة، لا يزال المحلل مطلوبا لفرز التنبيه وحله الذي يميل إلى أن يكون عملية يدوية. وقت محلل SOC مهم، حيث يريد التركيز فقط على التنبيهات عالية الخطورة والأولوية العالية.
+
+يوفر منع التنبيه القدرة على ضبط التنبيهات وإدارتها مسبقا. يؤدي ذلك إلى تبسيط قائمة انتظار التنبيه وتوفير وقت الفرز عن طريق إخفاء التنبيهات أو حلها تلقائيا، وفي كل مرة يحدث فيها سلوك تنظيمي متوقع معين، ويتم استيفاء شروط القاعدة. 
+
+يمكنك إنشاء شروط القاعدة استنادا إلى "أنواع الأدلة" مثل الملفات والعمليات والمهام المجدولة والعديد من أنواع الأدلة الأخرى التي تؤدي إلى التنبيه. بعد إنشاء القاعدة، يمكن للمستخدم تطبيق القاعدة على التنبيه المحدد أو أي نوع تنبيه يفي بشروط القاعدة لمنع التنبيه. 
+
+> [!NOTE]
+> لا يوصى بمنع التنبيهات. ومع ذلك، في بعض الحالات، يؤدي تطبيق عمل داخلي معروف أو اختبارات أمان إلى تشغيل نشاط متوقع ولا تريد رؤية هذه التنبيهات. لذلك، يمكنك إنشاء قاعدة منع للتنبيه. 
+
+### <a name="create-rule-conditions-to-suppress-alerts"></a>إنشاء شروط القاعدة لمنع التنبيهات
+
+لإنشاء قاعدة منع للتنبيهات:
+
+1. حدد التنبيه الذي تم التحقيق فيه. في صفحة التنبيه الرئيسية، حدد **إنشاء قاعدة منع** في قسم تفاصيل الملخص في صفحة التنبيه. 
+
+    :::image type="content" source="../../media/investigate-alerts/suppression-click.png" lightbox="../../media/investigate-alerts/suppression-click.png" alt-text="لقطة شاشة لإنشاء إجراء قاعدة الفصل.":::
+
+2. في جزء **إنشاء قاعدة المنع** ، حدد **نوع التنبيه هذا فقط** لتطبيق القاعدة على التنبيه المحدد.
+
+    ومع ذلك، لتطبيق القاعدة على أي نوع تنبيه يفي بشروط القاعدة، حدد **أي نوع تنبيه استنادا إلى شروط IOC**.
+ 
+    IOCs هي مؤشرات مثل الملفات والعمليات والمهام المجدولة وأنواع الأدلة الأخرى التي تشغل التنبيه.
+     
+3. في قسم **IOCs** ، حدد **"Any IOC** " لمنع التنبيه بغض النظر عن "الأدلة" التي تسببت في التنبيه. 
+
+    لتعيين شروط قواعد متعددة، حدد **اختيار IOCs**. استخدم خيارات **AND** **وOR** والتجميع لإنشاء علاقة بين "أنواع الأدلة" المتعددة هذه التي تسبب التنبيه.
+ 
+    1. على سبيل المثال، في قسم **الشروط**، حدد دور الكيان للدليل المشغل **: المشغل****، يساوي**، وحدد نوع الدليل من القائمة المنسدلة. 
+
+    :::image type="content" source="../../media/investigate-alerts/evidence-types-drop-down-list.png" alt-text="لقطة شاشة للقائمة المنسدلة لأنواع الأدلة." lightbox="../../media/investigate-alerts/evidence-types-drop-down-list.png":::
+
+    2. سيتم ملء جميع خصائص "الدليل" هذا تلقائيا كتجمع فرعي جديد في الحقول المعنية أدناه.
+    :::image type="content" source="../../media/investigate-alerts/properties-evidence.png" alt-text="Screenshot of properties of evidence auto-populating." lightbox="../../media/investigate-alerts/properties-evidence.png" :::
+
+    > [!NOTE]
+    > قيم الشرط ليست حساسة لحالة الأحرف. 
+
+    3. يمكنك تحرير خصائص "الدليل" و/أو حذفها وفقا لمتطلباتك (باستخدام أحرف البدل، عند دعمها).
+
+    4. بخلاف الملفات والعمليات، فإن البرنامج النصي AMSI وحدث WMI والمهام المجدولة هي بعض أنواع الأدلة المضافة حديثا التي يمكنك تحديدها من القائمة المنسدلة لأنواع الأدلة.
+    :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="لقطة شاشة لأنواع أخرى من الأدلة." lightbox="../../media/investigate-alerts/other-evidence-types.png":::
+
+    5. لإضافة IOC آخر، انقر فوق **"إضافة عامل تصفية**". 
+    > [!NOTE]
+    > إضافة IOC واحد على الأقل إلى شرط القاعدة مطلوب لمنع أي نوع تنبيه.
+    
+4. بدلا من ذلك، يمكنك تحديد **التعبئة التلقائية لجميع IOCs ذات الصلة بالتنبيه 7** في قسم **IOC** لإضافة جميع أنواع الأدلة ذات الصلة بالتنبيه وخصائصها في وقت واحد في قسم **الشروط** .
+    :::image type="content" source="../../media/investigate-alerts/autofill-iocs.png" alt-text="Screenshot of auto fill all alert related IOCs." lightbox="../../media/investigate-alerts/autofill-iocs.png":::
+
+5. في قسم **"النطاق"** ، قم بتعيين النطاق في القسم الفرعي " **الشروط** " عن طريق تحديد جهاز معين أو أجهزة متعددة أو مجموعات أجهزة أو المؤسسة بأكملها أو حسب المستخدم.
+    > [!NOTE]
+    > يجب أن يكون لديك إذن مسؤول عند تعيين **النطاق** **للمستخدم** فقط. مسؤول الإذن غير مطلوب عند تعيين **النطاق** **للمستخدم** مع **مجموعات الأجهزة** والأجهزة. 
+
+:::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="لقطة شاشة لجزء قاعدة منع الإنشاء: الشروط، النطاق، الإجراء.":::
+ 
+6. في قسم **"الإجراء** "، اتخذ الإجراء المناسب إما **"إخفاء التنبيه** " أو **"حل التنبيه**".
+    أدخل **الاسم** **والتعليق** وانقر فوق **"حفظ**".
+
+7. **منع حظر IOCs في المستقبل:**<br>
+بمجرد حفظ قاعدة المنع، في صفحة **إنشاء قاعدة المنع الناجحة** التي تظهر، يمكنك إضافة IOCs المحددة كمؤشرات إلى "قائمة السماح" ومنع حظرها في المستقبل. <br>
+سيتم عرض جميع IOCs المتعلقة بالتنبيه في القائمة. <br>
+سيتم تحديد IOCs التي تم تحديدها في شروط المنع بشكل افتراضي.
+      1. على سبيل المثال، يمكنك إضافة ملفات ليتم السماح بها إلى **دليل التحديد (IOC) للسماح به**. يتم تحديد الملف الذي قام بتشغيل التنبيه بشكل افتراضي.
+      1. أدخل النطاق إلى **نطاق التحديد الذي يجب تطبيقه عليه**. يتم تحديد النطاق الافتراضي للتنبيه ذي الصلة.
+      1. انقر فوق **حفظ**. الآن لم يتم حظر الملف كما هو في قائمة السماح.
+
+    :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="لقطة شاشة لإنشاء قاعدة منع ناجحة. ":::
+
+8.  تتوفر وظيفة تنبيه المنع الجديدة بشكل افتراضي. <br> ومع ذلك، يمكنك العودة إلى التجربة السابقة في مدخل Microsoft 365 Defender عن طريق الانتقال إلى **الإعدادات > نقاط النهاية > منع التنبيه**، ثم إيقاف تشغيل تبديل **تمكين إنشاء قواعد منع جديدة**. 
+ 
+    :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="لقطة شاشة للتبديل لتشغيل/إيقاف تشغيل ميزة إنشاء قاعدة المنع.":::
+
+9.  **تحرير القواعد الموجودة:** <br> يمكنك دائما إضافة شروط القواعد ونطاقها أو تغييرها في مدخل Microsoft Defender، عن طريق تحديد القاعدة ذات الصلة والنقر فوق **"تحرير القاعدة**".    
+    لتحرير القواعد الموجودة، تأكد من **تمكين التبديل الممكن لإنشاء قواعد منع جديدة** .         
+
+    :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="لقطة شاشة لتحرير قاعدة المنع.":::
+  
 ## <a name="resolve-an-alert"></a>حل تنبيه
 
 بمجرد الانتهاء من تحليل تنبيه ويمكن حله، انتقل إلى جزء **"إدارة التنبيه** " للتنبيه أو التنبيهات المماثلة وضع علامة على الحالة على أنها **"تم حلها** " ثم قم بتصنيفها على أنها **إيجابية True** مع نوع من التهديد، **أو نشاط إعلامي، أو متوقع** بنوع من النشاط، أو **إيجابية خطأ**.
@@ -196,11 +276,11 @@ ms.locfileid: "66057704"
 
 إذا كان كلاهما صحيحا، فإن SecOps يضع علامة على التنبيه على أنه سفر شرعي ويحله. يتم نشر إعلام في Microsoft Teams بعد حل التنبيه.
 
-### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>الاتصال Power Automate إلى Microsoft Defender for Cloud Apps
+### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>توصيل Power Automate ب Microsoft Defender for Cloud Apps
 
 لإنشاء التشغيل التلقائي، ستحتاج إلى رمز مميز لواجهة برمجة التطبيقات قبل أن تتمكن من توصيل Power Automate Microsoft Defender for Cloud Apps.
 
-1. انقر فوق **الإعدادات**، وحدد **ملحقات الأمان**، ثم انقر فوق **"إضافة رمز مميز**" في علامة التبويب **"رموز API المميزة**".
+1. انقر فوق **"إعدادات"**، وحدد **ملحقات الأمان**، ثم انقر فوق **"إضافة رمز مميز** " في علامة التبويب **"رموز API المميزة** ".
 
 2. أدخل اسما للرمز المميز، ثم انقر فوق **"إنشاء**". احفظ الرمز المميز كما ستحتاج إليه لاحقا.
 

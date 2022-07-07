@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: تعرف على كيفية الحصول على تقرير استخدام مستعرض Microsoft باستخدام لوحة معلومات تقارير Microsoft 365 في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: 67abf461102fe56f8515db0b0a73a8c852a2224e
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: bd247e839c69726039fb80531444eb7b4b650346
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601532"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662141"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>تقارير Microsoft 365 في مركز الإدارة - استخدام مستعرض Microsoft
 
@@ -44,14 +44,14 @@ ms.locfileid: "66601532"
 
 يعرض مخطط **المستخدمين النشطين اليومي** عدد المستخدمين اليومي ل Microsoft Edge عند استخدامه للوصول إلى خدمات Microsoft 365.
 
-يعرض مخطط **"المستخدمون النشطون** " إجمالي عدد المستخدمين الذين يستخدمون Microsoft Edge عند استخدامه للوصول إلى خدمات Microsoft 365 خلال الفترة الزمنية المحددة.
+يعرض مخطط **"المستخدمون النشطون** " إجمالي عدد المستخدمين الذين يصلون إلى خدمات Microsoft 365 أثناء استخدام Microsoft Edge خلال الفترة الزمنية المحددة.
 
 يعرض الجدول تصنيفا تفصيليا للبيانات على مستوى كل مستخدم. يمكنك إضافة أعمدة أو إزالتها من الجدول.
 
 |البند|الوصف|
 |:-----|:-----|
 |**المستخدم** | عنوان البريد الإلكتروني للمستخدم الذي اتصل بخدمات Microsoft 365 باستخدام Microsoft Edge.|
-| **Microsoft Edge المستخدم**| يعرض علامة التجزئة إذا استخدم المستخدم Microsoft Edge للاتصال بخدمات Microsoft 365.|
+| **Microsoft Edge المستخدم**| يعرض DDisplay علامة التجزئة إذا كان مستخدم خدمات Microsoft 365 متصلا ب Microsoft Edge.|
 
 حدد أيقونة **"اختيار أعمدة** " لإضافة أعمدة أو إزالتها من التقرير.
 

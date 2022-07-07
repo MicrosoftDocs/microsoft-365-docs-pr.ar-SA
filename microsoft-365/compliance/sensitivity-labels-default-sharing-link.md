@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم تسميات الحساسية لتكوين نوع ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint وOneDrive.
-ms.openlocfilehash: ca4b74c2fb25c4f1f1ef96b8ae0241481358797d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0e2fbe762483ff3997484b32448ce96711147e43
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628562"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663163"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>استخدام تسميات الحساسية لتكوين نوع ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint وOneDrive
 
@@ -92,11 +92,11 @@ ms.locfileid: "66628562"
 
 لمزيد من المساعدة لتحديد إعدادات PowerShell المتقدمة، راجع [تلميحات PowerShell لتحديد الإعدادات المتقدمة](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings).
 
-لتكوين إعدادات نوع ارتباط المشاركة الافتراضي لموقع ما، يجب أن يتضمن [نطاق وصف الحساسية](sensitivity-labels.md#label-scopes) **مجموعات & المواقع** عند إنشاء تسمية الحساسية في مدخل التوافق في Microsoft Purview. بعد إنشائه، سترى هذا معروضا **كموقع، وUn unifiedGroup** في عمود **النطاق** على صفحة **التسميات** ، كما يعرض إعداد PowerShell *ContentType* هذه القيمة نفسها. بالنسبة للمستندات، يجب أن يتضمن النطاق **"ملفات" & رسائل البريد الإلكتروني** التي يتم عرضها **كملف و"بريد إلكتروني**". ثم:
+لتكوين إعدادات نوع ارتباط المشاركة الافتراضي لموقع ما، يجب أن يتضمن [نطاق وصف الحساسية](sensitivity-labels.md#label-scopes) **مجموعات & المواقع** عند إنشاء تسمية الحساسية في مدخل التوافق في Microsoft Purview. بعد إنشائه، سترى هذا معروضا **كموقع، وUn unifiedGroup** في عمود **النطاق** على صفحة **التسميات** ، كما يعرض إعداد PowerShell *ContentType* هذه القيمة نفسها. بالنسبة للمستندات، يجب أن يتضمن النطاق **"عناصر**"، والتي يتم عرضها **كملف، و"بريد إلكتروني**". ثم:
 
 - عندما يتضمن النطاق **"مجموعات" & المواقع**، يمكنك تطبيق التسمية على موقع، مما يؤدي إلى تعيين نوع ارتباط المشاركة الافتراضي لهذا الموقع. للحصول على معلومات حول كيفية تطبيق وصف الحساسية على موقع، راجع [كيفية تطبيق تسميات الحساسية على الحاويات](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
 
-- عندما يتضمن نطاق وصف الحساسية **"ملفات" & رسائل البريد الإلكتروني**، يمكنك تطبيق التسمية على المستندات، مما يعين نوع ارتباط المشاركة الافتراضي لهذا المستند. يمكن تطبيق التسمية [يدويا](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) أو [تلقائيا](apply-sensitivity-label-automatically.md).
+- عندما يتضمن نطاق وصف الحساسية **عناصر**، يمكنك تطبيق التسمية على المستندات، والتي تعين نوع ارتباط المشاركة الافتراضي لهذا المستند. يمكن تطبيق التسمية [يدويا](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) أو [تلقائيا](apply-sensitivity-label-automatically.md).
 
 > [!TIP]
 > يمكنك أيضا تحديد أن التسمية هي وصف الحساسية الافتراضي الذي سيتم تطبيقه على المواقع الجديدة أو المستندات الجديدة، [كإعداد نهج التسمية](sensitivity-labels.md#what-label-policies-can-do).

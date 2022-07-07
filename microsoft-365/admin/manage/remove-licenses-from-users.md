@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: يعتمد الأسلوب الذي تستخدمه لإلغاء تعيين تراخيص المنتجات على ما إذا كنت تقوم بإلغاء تعيين التراخيص من مستخدمين محددين أو من منتج معين.
 ms.date: 06/23/2022
-ms.openlocfilehash: 87e62b8c39e5ba0a8f61caeea3560438a716881d
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 956391e8eeda1d17fdba76cf406a0291d1850b6f
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486165"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663493"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>إلغاء تعيين تراخيص Microsoft 365 من المستخدمين
 
@@ -129,7 +129,7 @@ ms.locfileid: "66486165"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-إذا كنت لن [تعيد تعيين التراخيص غير المستخدمة إلى مستخدمين آخرين](../../managed-desktop/get-started/assign-licenses.md)، ففكر [في إزالة التراخيص من اشتراكك](../../commerce/licenses/buy-licenses.md) بحيث لا تدفع مقابل تراخيص أكثر مما تحتاج إليه.
+إذا كنت لن [تعيد تعيين التراخيص غير المستخدمة إلى مستخدمين آخرين](assign-licenses-to-users.md)، ففكر [في إزالة التراخيص من اشتراكك](../../commerce/licenses/buy-licenses.md) بحيث لا تدفع مقابل تراخيص أكثر مما تحتاج إليه.
 
 ## <a name="related-content"></a>المحتوى ذو الصلة
 
