@@ -23,12 +23,12 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: 05edb03d34644d1f09acaad22bbcff01b3654ac3
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 113905d76864fecdc4fc38d46e4dc6f3e625348f
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753837"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663801"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>كيفية دفع قيمة اشتراكك
 
@@ -53,7 +53,7 @@ ms.locfileid: "65753837"
 
 [تعرّف على المزيد حول لائحة البنك الاحتياطي الهندي للمدفوعات المتكررة](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0).
 
-في 1 يوليو 2022، لن تقوم Microsoft وغيرها من البائعين عبر الإنترنت بتخزين معلومات بطاقة الائتمان بعد الآن. للامتثال لهذا القانون، ستقوم Microsoft بإزالة جميع تفاصيل البطاقة المخزنة من مركز مسؤولي Microsoft 365. لتجنب انقطاع الخدمة، يجب إضافة طريقة دفع وإجراء دفع لمرة واحدة لكل الاشتراكات وملفات تعريف الفوترة.
+في 30 سبتمبر 2022، لن تقوم Microsoft وغيرها من البائعين عبر الإنترنت بتخزين معلومات بطاقة الائتمان بعد الآن. للامتثال لهذا القانون، ستقوم Microsoft بإزالة جميع تفاصيل البطاقة المخزنة من مركز مسؤولي Microsoft 365. لتجنب انقطاع الخدمة، يجب إضافة طريقة دفع وإجراء دفع لمرة واحدة لكل الاشتراكات وملفات تعريف الفوترة.
 
 [تعرّف حول قانون البنك الاحتياطي الهندي للمدفوعات المتكررة](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211).
 

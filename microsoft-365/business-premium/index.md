@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: تعرّف على كيفية تنفيذ الأمان عبر الإنترنت للشركات الصغيرة أو متوسطة الحجم مع Microsoft 365 Business Premium. تم تحسين قدرات وميزات الأمان عبر الإنترنت لمنع الهجمات الإلكترونية والخروقات الأمنية، والمساعدة في حماية البيانات والأجهزة والمعلومات باستخدام الدفاعات الإلكترونية عالية الدرجة.
-ms.openlocfilehash: 2e8a5a5c9a1d4e9fcdcb75a3b7b9d4d6e3284e2f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f3752393e32ab151edcaa8166eabe862ad3f90c2
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634964"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663097"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; للأمان عبر الإنترنت للشركات الصغيرة
 
@@ -39,42 +39,15 @@ ms.locfileid: "66634964"
 
 يعد إكمال جميع المهام الطريقة الأكثر فاعلية لإحباط المتسللين والحماية من برامج الفدية الضارة والمساعدة في ضمان حماية مستقبل مؤسستك بأفضل دفاعات الأمن عبر الإنترنت. لنبدأ في العمل.
 
-استخدم علامات التبويب التالية للتعرف على كل مهمة وكيفية إعداد أمان Microsoft 365 Business Premium.
-
-## <a name="fortify-your-environment"></a>[**تقوية بيئتك**](#tab/Fortify)
-
 ## <a name="fortify-your-environment"></a>تقوية بيئتك
 
 في هذه المهام الأولى، تقوم بتسجيل الدخول وإعداد جدران الدفاع الأولية الخاصة بك، بدءًا من حماية الوصول إلى الحساب.
 
 1. [**إعداد البيئة الخاصة بك**](m365bp-setup-overview.md). أكمل عملية الإعداد الأساسية لـ Microsoft 365 لشركتك.
 
-2. [**قم برفع عمليات الحماية من الأمان عبر الإنترنت**](m365bp-security-overview.md). قم بإعداد إجراءات أمان هامة على الخط الأمامي لمنع الهجمات عبر الإنترنت.
+2. [**رفع حماية الأمان عبر الإنترنت**](m365bp-security-overview.md). إعداد تدابير أمان الواجهة الأمامية الهامة لمنع الهجمات الإلكترونية.
 
-[:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="Microsoft 365 Business Premium يحمي التطبيقات وتخزين الملفات والبريد الإلكتروني والأجهزة والهويات.":::](m365bp-setup-overview.md)
-
-## <a name="cybersecurity-playbook"></a>دليل مبادئ الأمان عبر الإنترنت
-
-تستند الإرشادات الواردة في هذه المهام إلى أسلوب صفر ثقة وتساعد شركتك على تحقيق الأهداف الموضحة في  [دليل الحملة على الأمان عبر الإنترنت](https://go.microsoft.com/fwlink/p/?linkid=2015598) لمدرسة جامعة هارفرد. يتوفر ملخص لتنزيله.
-
-انقر (أو اضغط) فوق مخطط المعلومات البياني للاطلاع على إصدار أكبر، أو [قم بتنزيل نسخة من ملصق دليل مبادئ الأمان عبر الإنترنت](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
-
-:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="دليل مبادئ الأمان عبر الإنترنت" lightbox="media/m365bp-cyber-security-playbook.png":::
-
-[احصل على ملف PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
-
-## <a name="how-microsoft-365-business-premium-helps-your-business"></a>كيف يساعد Microsoft 365 Business Premium عملك
-
-Microsoft 365 Business Premium هو حل شامل للأمان والتعاون للشركات الصغيرة والمتوسطة. [تعرّف على المزيد حول فوائد Microsoft 365 Business Premium](m365bp-secure-users.md).
-
-## <a name="next-steps"></a>الخطوات التالية
-
-الآن، دعونا [نحصن بيئتك ضد الهجمات الإلكترونية](m365bp-setup-overview.md)!
-
-> [!NOTE]
-> عندما يكون المصطلح أو التوجيه غير واضح، يمكنك العثور على تعريفات في [قائمة المصطلحات](m365bp-glossary.yml).
-
-## <a name="train-your-team"></a>[**تدريب فريقك**](#tab/Train)
+[:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="رسم تخطيطي يوضح مهامك مع تحديد &quot;تقوية بيئتك&quot;.":::](m365bp-setup-overview.md)
 
 ## <a name="train-your-team"></a>تدريب فريقك
 
@@ -86,38 +59,15 @@ Microsoft 365 Business Premium هو حل شامل للأمان والتعاون 
 
 3. [**تعاون وشارك بأمان**](m365bp-collaborate-share-securely.md). تتطلب أهداف هذه المهمة إعداد مشاركة الملفات الآمنة لجميع أعضاء المؤسسة.
 
-[:::image type="content" source="media/m365bp-train-team.jpg" alt-text="Microsoft 365 Business Premium يحمي تطبيقاتك ويقوم بتخزين الملفات والبريد الإلكتروني والأجهزة والهويات.":::](m365bp-devices-overview.md)
-
-## <a name="cybersecurity-playbook"></a>دليل مبادئ الأمان عبر الإنترنت
-
-تستند الإرشادات الواردة في هذه المهام إلى أسلوب صفر ثقة وتساعد شركتك على تحقيق الأهداف الموضحة في  [دليل الحملة على الأمان عبر الإنترنت](https://go.microsoft.com/fwlink/p/?linkid=2015598) لمدرسة جامعة هارفرد. يتوفر ملخص لتنزيله.
-
-انقر (أو اضغط) فوق مخطط المعلومات البياني للاطلاع على إصدار أكبر، أو [قم بتنزيل نسخة من ملصق دليل مبادئ الأمان عبر الإنترنت](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
-
-:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="دليل مبادئ الأمان عبر الإنترنت" lightbox="media/m365bp-cyber-security-playbook.png":::
-
-[احصل على ملف PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
-
-## <a name="how-microsoft-365-business-premium-helps-your-business"></a>كيف يساعد Microsoft 365 Business Premium عملك
-
-Microsoft 365 Business Premium هو حل شامل للأمان والتعاون للشركات الصغيرة والمتوسطة. [تعرّف على المزيد حول فوائد Microsoft 365 Business Premium](m365bp-secure-users.md).
-
-## <a name="next-steps"></a>الخطوات التالية
-
-الآن، دعونا [نحصن بيئتك ضد الهجمات الإلكترونية](m365bp-setup-overview.md)!
-
-> [!NOTE]
-> عندما يكون هناك مصطلح أو توجيه غير واضح، اطّلع على [قاموس المصطلحات](m365bp-glossary.yml).
-
-## <a name="safeguard-managed-devices"></a>[**حماية الأجهزة المدارة**](#tab/Safeguard)
+[:::image type="content" source="media/m365bp-train-team.jpg" alt-text="رسم تخطيطي يوضح مهامك مع تحديد تدريب فريقك.":::](m365bp-devices-overview.md)
 
 ## <a name="safeguard-managed-devices"></a>حماية الأجهزة المدارة
 
 تعتبر الأجهزة المدارة أكثر أمانًا لأنها تخضع للمراقبة لاكتشاف التهديدات. في هذه المهمة الهامة الأخيرة، يمكنك إلحاق الأجهزة وتسجيلها في Defender for Business، بحيث يتم تأمينها وحمايتها باستخدام أفضل الأدوات المتاحة.
 
-- [**إعداد الأجهزة المدارة وتأمينها**](m365bp-protect-devices.md). اتخذ الخطوات لتأمين هذه الأجهزة حتى تتم مراقبتها وحمايتها من قبل المؤسسة!
+- [**إعداد الأجهزة المدارة وتأمينها**](m365bp-protect-devices.md). اتخذ الخطوات لتأمين تلك الأجهزة بحيث تتم مراقبتها وحمايتها من قبل المؤسسة!
 
-[:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Microsoft 365 Business Premium يحمي تطبيقاتك ويقوم بتخزين الملفات والبريد الإلكتروني والأجهزة والهويات.":::](m365bp-protect-devices.md)
+[:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="رسم تخطيطي يوضح بعثاتك مع تحديد &quot;حماية الأجهزة المدارة&quot;.":::](m365bp-protect-devices.md)
 
 ## <a name="cybersecurity-playbook"></a>دليل مبادئ الأمان عبر الإنترنت
 
@@ -129,7 +79,7 @@ Microsoft 365 Business Premium هو حل شامل للأمان والتعاون 
 
 [احصل على ملف PDF](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf).
 
-## <a name="how-microsoft-365-business-premium-helps-your-business"></a>كيف يساعد Microsoft 365 Business Premium عملك
+## <a name="learn-more-about-how-microsoft-365-business-premium-helps-your-business"></a>تعرّف على المزيد حول كيفية مساعدة Microsoft 365 Business Premium لعملك
 
 Microsoft 365 Business Premium هو حل شامل للأمان والتعاون للشركات الصغيرة والمتوسطة. [تعرّف على المزيد حول فوائد Microsoft 365 Business Premium](m365bp-secure-users.md).
 

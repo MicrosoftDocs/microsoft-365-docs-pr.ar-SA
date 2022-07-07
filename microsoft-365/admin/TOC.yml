@@ -440,6 +440,8 @@
           href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: الانضمام إلى Teams اجتماع مع مستخدمين ضيوف
           href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
+    - name: أوصاف ميزة Microsoft 365
+      href: m365-feature-descriptions.md
     - name: استكشاف الأخطاء وإصلاحها
       href: /office/troubleshoot/
     - name: الاتصال بقسم الدعم
