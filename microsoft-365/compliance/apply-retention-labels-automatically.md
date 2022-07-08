@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: إنشاء نهج استبقاء التسميات التلقائية حتى تتمكن من تطبيق التسميات تلقائيا للاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه
-ms.openlocfilehash: 570f2a6e684dbe160f8de2f43817fde996f0b92c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f3af46b59134a815f3ba3a02154f9ecfd6f95627
+ms.sourcegitcommit: 019e8a62ab07a42d4ede4a87ccfaed527914412d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640887"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66689164"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>تطبيق تسمية استبقاء تلقائيا للاحتفاظ بالمحتوى أو حذفه
 
@@ -272,9 +272,6 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 عند اختيار الخيار لمصنف قابل للتدريب، يمكنك تحديد مصنف واحد أو أكثر من المصنفات المدربة مسبقا أو المخصصة القابلة للتدريب:
 
 ![اختر مصنفا قابلا للتدريب.](../media/retention-label-classifers.png)
-
-> [!CAUTION]
-> نحن نإهمال المصنف المدرب مسبقا **للغة المسيئة** لأنه ينتج عددا كبيرا من النتائج الإيجابية الخاطئة. لا تستخدم هذا المصنف وإذا كنت تستخدمه حاليا، نوصيك بنقل عمليات عملك منه واستخدام المصنفات **المستهدفة** **والألفاظ النابية** **والتهديدات** المدربة مسبقا بدلا من ذلك.
 
 لتطبيق تسمية تلقائيا باستخدام هذا الخيار، يجب أن تحتوي مواقع SharePoint وعلب البريد على 10 ميغابايت على الأقل من البيانات.
 

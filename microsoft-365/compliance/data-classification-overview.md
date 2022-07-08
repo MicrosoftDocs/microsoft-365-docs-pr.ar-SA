@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تمنحك لوحة معلومات تصنيف البيانات رؤية إلى مقدار البيانات الحساسة التي تم العثور عليها وتصنيفها في مؤسستك.
-ms.openlocfilehash: e84205a0357e87f28a77f5186265cf421add1483
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 828a5c5d61c1b662f42e34ae95825dbc5994c816
+ms.sourcegitcommit: 019e8a62ab07a42d4ede4a87ccfaed527914412d
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640753"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66689141"
 ---
 # <a name="learn-about-data-classification"></a>التعرّف على تصنيف البيانات
 
@@ -46,9 +46,9 @@ ms.locfileid: "66640753"
 
 يمكنك العثور على تصنيف البيانات في <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">مدخل التوافق في Microsoft Purview</a> أو **تصنيف بيانات تصنيف** > **مدخل** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
-قم بجولة فيديو حول ميزات تصنيف البيانات.
+<!--Take a video tour of our data classification features.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]-->
 
 سيقوم تصنيف البيانات بفحص المحتوى الحساس والمحتوى المسمى قبل إنشاء أي نهج. وهذا ما يسمى **صفر إدارة التغيير**. يتيح لك ذلك رؤية التأثير الذي تحدثه جميع تسميات الاستبقاء والحساسية في بيئتك وتمكينك من البدء في تقييم احتياجات سياسة الحماية والحوكمة.
 
