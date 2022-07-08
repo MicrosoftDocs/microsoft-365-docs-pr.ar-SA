@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: يمكن للمسؤولين تمكين دعم وصف الحساسية لملفات Word وExcel وPowerPoint في SharePoint وOneDrive.
-ms.openlocfilehash: cc5a72a3e36c36ec752699f488450adee4a037aa
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 15985ea95c3e4a562a4cbc51f84a10af2592d53f
+ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637828"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66687685"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive
 
@@ -123,7 +123,9 @@ ms.locfileid: "66637828"
 
 ## <a name="how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in"></a>كيفية تمكين تسميات الحساسية ل SharePoint وOneDrive (الاشتراك)
 
-يمكنك تمكين القدرات الجديدة باستخدام مدخل التوافق في Microsoft Purview، أو باستخدام PowerShell. كما هو الحال مع جميع تغييرات التكوين على مستوى المستأجر ل SharePoint وOneDrive، يستغرق سريان التغيير حوالي 15 دقيقة.
+يمكنك تمكين القدرات الجديدة باستخدام مدخل التوافق في Microsoft Purview، أو باستخدام PowerShell. راجع الأقسام التالية للحصول على الإرشادات.
+
+كما هو الحال مع جميع تغييرات التكوين على مستوى المستأجر ل SharePoint وOneDrive، يستغرق سريان التغيير حوالي 15 دقيقة.
 
 ### <a name="use-the-microsoft-purview-compliance-portal-to-enable-support-for-sensitivity-labels"></a>استخدام مدخل التوافق في Microsoft Purview لتمكين دعم أوصاف الحساسية
 

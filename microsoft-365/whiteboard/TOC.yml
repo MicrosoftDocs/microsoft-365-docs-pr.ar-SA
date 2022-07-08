@@ -20,7 +20,7 @@
   items:
     - name: تكوين إعدادات الخصوصية
       href: configure-privacy-settings.md
-    - name: طلبات القانون العام لحماية البيانات (GDPR)
+    - name: إدارة طلبات القانون العام لحماية البيانات (GDPR)
       href: gdpr-requests.md
 - name: لوح المعلومات للحكومة
   items:

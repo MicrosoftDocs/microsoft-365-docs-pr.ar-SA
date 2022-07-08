@@ -22,12 +22,12 @@ description: استخدم أوصاف الحساسية من حماية البيا
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 879b412ff6efa743756a6c41b322516952dec93c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f06b4a2f40987481c3870ee512e60497f57d851a
+ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685954"
+ms.locfileid: "66687795"
 ---
 # <a name="learn-about-sensitivity-labels"></a>التعرّف على تسميات الحساسية
 
@@ -134,11 +134,11 @@ ms.locfileid: "66685954"
 
 ![خيارات النطاق لأوصاف الحساسية.](../media/sensitivity-labels-scopes.png)
 
-بشكل افتراضي، يتم تحديد نطاق **العناصر** دائما. يتم تحديد النطاقات الأخرى بشكل افتراضي عند تمكين الميزات للمستأجر الخاص بك:
+بشكل افتراضي، يتم دائما تحديد نطاق **العناصر** ( **الملفات المسماة مسبقا & رسائل البريد الإلكتروني**). يتم تحديد النطاقات الأخرى بشكل افتراضي عند تمكين الميزات للمستأجر الخاص بك:
 
-- **المجموعات & المواقع**: [تمكين تسميات الحساسية للحاويات ومزامنة التسميات](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
+- **المجموعات & المواقع**: راجع [تمكين تسميات الحساسية للحاويات ومزامنة التسميات](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **أصول البيانات المهيأة**: [تسمية المحتوى تلقائيا في Microsoft Purview Data Map](/azure/purview/create-sensitivity-label)
+- **أصول البيانات المهيأة**: راجع [تسمية المحتوى تلقائيا في Microsoft Purview Data Map](/azure/purview/create-sensitivity-label)
 
 إذا قمت بتغيير الإعدادات الافتراضية بحيث لا يتم تحديد كافة النطاقات، فسترى الصفحة الأولى من إعدادات التكوين للنطاقات التي لم تحددها، ولكن لا يمكنك تكوين الإعدادات. على سبيل المثال، إذا لم يتم تحديد نطاق العناصر، فلا يمكنك تحديد الخيارات الموجودة في الصفحة التالية:
 
