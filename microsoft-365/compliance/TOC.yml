@@ -238,9 +238,9 @@
           href: communication-compliance-policies.md
         - name: التحقيق ومعالجة تنبيهات الامتثال للاتصالات
           href: communication-compliance-investigate-remediate.md
-        - name: تعرّف على تقارير الامتثال للاتصالات والتدقيق
+        - name: تعرّف على تقارير وتدقيقات توافق الاتصالات
           href: communication-compliance-reports-audits.md
-        - name: توافق الاتصالات مع حلول إدارة معلومات الأمان والأحداث
+        - name: استخدام توافق الاتصالات مع حلول SIEM
           href: communication-compliance-siem.md
         - name: دراسة حالة - تقوم Contoso بتكوين نهج نص غير مناسب بسرعة
           href: communication-compliance-case-study.md
