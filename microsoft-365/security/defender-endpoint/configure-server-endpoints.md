@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4c21d0bdf8a96347e60b79d998c0b8c64fd507a1
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 547b41deceae01045baf119aeba1c15b8573a23f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531089"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695847"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية
 
@@ -53,7 +53,7 @@ ms.locfileid: "66531089"
 
 :::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="رسم توضيحي لتدفق الإلحاق لخوادم Windows والأجهزة Windows 10" lightbox="images/server-onboarding-tools-methods.png":::
 
-## <a name="integration-with-microsoft-defender-for-cloud"></a>التكامل مع Microsoft Defender for Cloud
+## <a name="integration-with-microsoft-defender-for-servers"></a>التكامل مع Microsoft Defender for Servers
 
 يتكامل Microsoft Defender لنقطة النهاية بسلاسة مع Microsoft Defender for Servers. يمكنك إلحاق الخوادم تلقائيا، وظهور الخوادم التي يراقبها Microsoft Defender for Cloud في Defender لنقطة النهاية، وإجراء تحقيقات مفصلة كعميل Microsoft Defender for Cloud.
 
@@ -196,6 +196,9 @@ ms.locfileid: "66531089"
 ### <a name="step-1-download-installation-and-onboarding-packages"></a>الخطوة 1: تنزيل حزم التثبيت والإلحاق
 
 ستحتاج إلى تنزيل حزم **التثبيت** **والإلحاق** من المدخل.
+
+> [!NOTE]
+> يتم تحديث حزمة التثبيت شهريا. تأكد من تنزيل أحدث حزمة قبل الاستخدام.
 
 > [!div class="mx-imgBorder"]
 > ![صورة لوحة معلومات الإلحاق](images/install-agent-onboard.png)

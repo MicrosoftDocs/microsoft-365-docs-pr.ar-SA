@@ -22,20 +22,20 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: اجعل مؤسستك أكثر أمانا ضد هجمات كلمات المرور، وحظر كلمات المرور الشائعة وتمكين المصادقة متعددة العوامل المستندة إلى المخاطر.
-ms.openlocfilehash: bd33d98a33d136f06bfe8e7741bb14c79f0a6160
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 474dbaf6877c3b4da9cd9d345e53cd95b2f42452
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043199"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695561"
 ---
-# <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>توصيات نهج كلمة المرور لكل Microsoft 365 كلمات المرور
+# <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>توصيات نهج كلمة المرور لكلمه مرور Microsoft 365
 
 بصفتك مسؤول المؤسسة، فأنت مسؤول عن تعيين نهج كلمة المرور للمستخدمين في مؤسستك. قد يكون تعيين نهج كلمة المرور معقدا ومربكا، وتقدم هذه المقالة توصيات لجعل مؤسستك أكثر أمانا ضد هجمات كلمات المرور.
 
 تحتوي حسابات Microsoft السحابية فقط على نهج كلمة مرور محدد مسبقا لا يمكن تغييره. العناصر الوحيدة التي يمكنك تغييرها هي عدد الأيام حتى تنتهي صلاحية كلمة المرور وما إذا كانت صلاحية كلمات المرور تنتهي على الإطلاق أم لا. 
   
-لتحديد عدد مرات انتهاء صلاحية كلمات المرور Microsoft 365 في مؤسستك، راجع [تعيين نهج انتهاء صلاحية كلمة المرور Microsoft 365](../manage/set-password-expiration-policy.md).
+لتحديد عدد مرات انتهاء صلاحية كلمات مرور Microsoft 365 في مؤسستك، راجع [تعيين نهج انتهاء صلاحية كلمة المرور ل Microsoft 365](../manage/set-password-expiration-policy.md).
 
 لمزيد من المعلومات حول كلمات مرور Microsoft 365، راجع:
 
@@ -45,7 +45,7 @@ ms.locfileid: "66043199"
 
 [السماح للمستخدمين بإعادة تعيين كلمات المرور الخاصة بهم](../add-users/let-users-reset-passwords.md) (المقالة)
 
-[إعادة إرسال كلمة مرور مستخدم - تعليمات المسؤول](../add-users/resend-user-password.md) (مقالة)
+[إعادة إرسال كلمة مرور مستخدم - تعليمات مسؤول](../add-users/resend-user-password.md) (مقالة)
   
 ## <a name="understanding-password-recommendations"></a>فهم توصيات كلمة المرور
 
@@ -61,7 +61,7 @@ ms.locfileid: "66043199"
 
 الهدف الأساسي من نظام كلمات المرور الأكثر أمانا هو تنوع كلمات المرور. تريد أن يحتوي نهج كلمة المرور على الكثير من كلمات المرور المختلفة ويصعب تخمينها. فيما يلي بعض التوصيات للحفاظ على أمان مؤسستك قدر الإمكان.
   
-- الحفاظ على متطلبات الحد الأدنى للطول المكونة من 14 حرفا
+- الحفاظ على متطلبات الحد الأدنى للطول المكونة من ثمانية أحرف
 
 - لا تتطلب متطلبات تكوين الأحرف. على سبيل المثال، \*&amp;(^٪$
 
@@ -156,4 +156,4 @@ ms.locfileid: "66043199"
 [إعادة تعيين كلمات المرور](../add-users/reset-passwords.md) (مقالة)\
 [تعيين كلمة مرور مستخدم فردية إلى عدم انتهاء صلاحيتها](../add-users/set-password-to-never-expire.md) (مقالة)\
 [السماح للمستخدمين بإعادة تعيين كلمات المرور الخاصة بهم](../add-users/let-users-reset-passwords.md) (المقالة)\
-[إعادة إرسال كلمة مرور مستخدم - تعليمات المسؤول](../add-users/resend-user-password.md) (مقالة)
+[إعادة إرسال كلمة مرور مستخدم - تعليمات مسؤول](../add-users/resend-user-password.md) (مقالة)

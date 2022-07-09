@@ -17,20 +17,20 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcc67b2d2a9ad03dc1235eebd577e3525ab07a03
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ac2c34359686da45998fab1076b7501357651318
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665921"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695846"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>مشكلات الأداء في Microsoft Defender لنقطة النهاية على iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -40,7 +40,7 @@ ms.locfileid: "64665921"
 > [!CAUTION]
 > من المحتمل أن يؤدي تشغيل منتجات حماية نقطة نهاية أخرى تابعة لجهة خارجية إلى جانب Defender لنقطة النهاية على iOS إلى حدوث مشاكل في الأداء وأخطاء في النظام لا يمكن التنبؤ بها.
 
-## <a name="pre-requisites"></a>المتطلبات الأساسية
+## <a name="prerequisites"></a>المتطلبات الأساسية
 
 **للمستخدمين النهائيين**
 
@@ -52,7 +52,8 @@ ms.locfileid: "64665921"
     
     >[!NOTE]
     >لا تسمح Apple بإعادة توجيه المستخدمين لتنزيل تطبيقات أخرى من متجر التطبيقات لذلك يجب أن يقوم المستخدم بتنفيذ هذه الخطوة قبل إلحاقه بتطبيق Microsoft Defender لنقطة النهاية.)
-    
+
+
     - يتم تسجيل الأجهزة (الأجهزة) مع Azure Active Directory. يتطلب ذلك تسجيل دخول المستخدم النهائي من خلال [تطبيق Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
 - **للأجهزة غير المسجلة**: يتم تسجيل الجهاز (الأجهزة) مع Azure Active Directory. يتطلب ذلك تسجيل دخول المستخدم النهائي من خلال [تطبيق Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458).
@@ -63,7 +64,7 @@ ms.locfileid: "64665921"
 
 - الوصول إلى مدخل Microsoft 365 Defender.
 
-- الوصول إلى [مركز إدارة إدارة نقاط النهاية من Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)، إلى:
+- الوصول إلى [مركز إدارة Microsoft إدارة نقاط النهاية](https://go.microsoft.com/fwlink/?linkid=2109431)، من أجل:
    - نشر التطبيق لمجموعات المستخدمين المسجلين في مؤسستك.
    - تكوين إشارات مخاطر Microsoft Defender لنقطة النهاية في نهج حماية التطبيقات (MAM)
 
@@ -78,11 +79,14 @@ ms.locfileid: "64665921"
 
 - إما أن يكون الجهاز مسجلا في [تطبيق Intune Company Portal](https://apps.apple.com/us/app/intune-company-portal/id719171358) أو مسجلا مع Azure Active Directory من خلال [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) بنفس الحساب.
 
+ > [!NOTE]
+ > Microsoft Defender لنقطة النهاية على iOS غير مدعوم حاليا أثناء استخدام تسجيل مستخدم iOS.
+
 ## <a name="installation-instructions"></a>إرشادات التثبيت
 
-يمكن نشر Microsoft Defender لنقطة النهاية على iOS عبر إدارة نقاط النهاية من Microsoft (MEM) ويتم دعم كل من الأجهزة الخاضعة للإشراف وغير الخاضعة للإشراف. يمكن للمستخدمين النهائيين أيضا تثبيت التطبيق مباشرة من [متجر تطبيقات Apple](https://aka.ms/mdatpiosappstore).
+يمكن نشر Microsoft Defender لنقطة النهاية على iOS عبر Microsoft إدارة نقاط النهاية (MEM) ويتم دعم كل من الأجهزة الخاضعة للإشراف وغير الخاضعة للإشراف. يمكن للمستخدمين النهائيين أيضا تثبيت التطبيق مباشرة من [متجر تطبيقات Apple](https://aka.ms/mdatpiosappstore).
 
-- للحصول على معلومات حول النشر على الأجهزة المسجلة من خلال إدارة نقاط النهاية من Microsoft أو Intune، راجع [نشر Microsoft Defender لنقطة النهاية على iOS](ios-install.md).
+- للحصول على معلومات حول النشر على الأجهزة المسجلة من خلال Microsoft إدارة نقاط النهاية أو Intune، راجع [نشر Microsoft Defender لنقطة النهاية على iOS](ios-install.md).
 - للحصول على معلومات حول استخدام Defender لنقطة النهاية في نهج حماية التطبيقات (MAM)، راجع [تكوين نهج حماية التطبيق لتضمين إشارات مخاطر Defender لنقطة النهاية (MAM)](ios-install-unmanaged.md)
 
 ## <a name="resources"></a>الموارد
@@ -95,6 +99,6 @@ ms.locfileid: "64665921"
 
 - [نشر Microsoft Defender لنقطة النهاية على iOS من خلال Intune للأجهزة المسجلة](ios-install.md)
 - [تكوين نهج حماية التطبيق لتضمين إشارات مخاطر Defender لنقطة النهاية (MAM)](ios-install-unmanaged.md)
-- [تكوين Microsoft Defender لنقطة النهاية على ميزات iOS](ios-configure-features.md)
+- [تكوين Microsoft Defender for Endpoint على ميزات iOS](ios-configure-features.md)
 - [تكوين نهج الوصول المشروط استنادا إلى درجة مخاطر الجهاز من Microsoft Defender لنقطة النهاية](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios)
 - [أساسيات إدارة تطبيقات المحمول (MAM)](/mem/intune/apps/app-management#mobile-application-management-mam-basics)

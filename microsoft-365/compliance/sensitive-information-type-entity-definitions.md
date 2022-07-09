@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: هناك العديد من أنواع المعلومات الحساسة الجاهزة للاستخدام في نهج DLP. تسرد هذه المقالة كل أنواع المعلومات الحساسة هذه وتعرض ما يبحث عنه نهج DLP عند اكتشاف كل نوع.
-ms.openlocfilehash: 2d81410b86ca9a90b12dbaa850e36d8803af0d79
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 45ec1e04181de6bb6d3a7c15b9efa219fbe2d43e
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622413"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696108"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>تعريفات كيان نوع المعلومات الحساسة
 
@@ -132,7 +132,6 @@ ms.locfileid: "66622413"
 
 - الإنجليزية
 - البلغارية
-- الصينية
 - الكرواتية
 - التشيكية
 - الدانمركية

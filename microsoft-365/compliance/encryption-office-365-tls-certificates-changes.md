@@ -9,12 +9,12 @@ audience: Developer
 ms.date: 3/7/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.openlocfilehash: 65b0ffd5d605302dd62369471b65c1ac10aacd40
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d5390c97c097bdbf52e496336e3a239d975a88aa
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641757"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696217"
 ---
 # <a name="office-tls-certificate-changes"></a>تغييرات شهادة Office TLS
 
@@ -143,7 +143,8 @@ ms.locfileid: "66641757"
 في ظل ظروف نادرة جدا، قد يرى مستخدمو المؤسسة أخطاء التحقق من صحة الشهادة حيث يظهر المرجع المصدق الجذري "DigiCert Global Root G2" كما تم إبطاله. يعود سبب ذلك إلى وجود خطأ Windows معروف ضمن كلا الشرطين التاليين:
 
 - المرجع المصدق الجذري موجود في [مخزن شهادات CurrentUser\Root](/windows/win32/seccrypto/system-store-locations#cert_system_store_current_user) ويفقد `NotBeforeFileTime` `NotBeforeEKU` الخصائص
-- المرجع المصدق الجذري موجود أيضا في [مخزن شهادات LocalMachine\AuthRoot](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine) ولكنه يحتوي على كل من `NotBeforeFileTime` الخصائص والخصائص `NotBeforeEKU`
+- المرجع المصدق الجذري موجود في [مخزن شهادات LocalMachine\AuthRoot](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine) ولكنه يحتوي على كل من `NotBeforeFileTime` الخصائص والخصائص `NotBeforeEKU`
+- المرجع المصدق الجذري غير موجود في [مخزن شهادات LocalMachine\Root](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine)
 
 تظهر كافة شهادات الكائن الطرفي التي تم إصدارها من المرجع المصدق الجذري هذا بعد إبطالها `NotBeforeFileTime` . 
 
@@ -182,7 +183,12 @@ certutil -store -v authroot DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 certutil -user -store -v root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
 
-يمكن للمستخدم حل المشكلة عن طريق حذف نسخة المرجع المصدق الجذري في مخزن الشهادات `CurrentUser\Root` :
+يمكن للمستخدم حل المشكلة عن طريق حذف نسخة المرجع المصدق الجذري في مخزن الشهادات `CurrentUser\Root` عن طريق القيام بما يلي:
 ```
 certutil -user -delstore root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
+او 
+```
+reg delete HKCU\SOFTWARE\Microsoft\SystemCertificates\Root\Certificates\DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 /f
+```
+ينشئ الأسلوب الأول مربع حوار Windows الذي يجب على المستخدم النقر خلاله بينما لا يقوم الأسلوب الثاني بذلك. 

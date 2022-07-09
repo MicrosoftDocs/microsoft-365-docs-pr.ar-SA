@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 461a3e4ebb97d809bf61c11591f40448ef97f8cb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: dca4745b5058ed7b98bf0821e2b715393f7bf77f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490520"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695955"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>سيناريوهات ترحيل الخادم من الحل Microsoft Defender لنقطة النهاية السابق المستند إلى MMA
 
@@ -39,14 +39,13 @@ ms.locfileid: "66490520"
 
 تنطبق هذه الإرشادات على حزمة الحل الموحد الجديد والمثبت (MSI) من Microsoft Defender لنقطة النهاية ل Windows Server 2012 R2 وWindows Server 2016. تحتوي هذه المقالة على إرشادات عالية المستوى لمختلف سيناريوهات الترحيل المحتملة من الحل السابق إلى الحل الحالي. تهدف هذه الخطوات عالية المستوى إلى تعديلها وفقا لأدوات التوزيع والتكوين المتوفرة في بيئتك. 
 
-**إذا كنت تستخدم Microsoft Defender for Cloud لتنفيذ النشر، يمكنك أتمتة التثبيت والترقية. راجع [يتكامل Defender for Servers Plan 2 الآن مع الحل الموحد MDE] (https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)**
+**إذا كنت تستخدم Microsoft Defender for Cloud لتنفيذ النشر، يمكنك أتمتة التثبيت والترقية. راجع [تكامل Defender for Servers Plan 2 الآن مع الحل الموحد MDE](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)**
 
 > [!NOTE]
 > ترقيات نظام التشغيل مع تثبيت Microsoft Defender لنقطة النهاية غير معتمدة. يرجى إلغاء التثبيت ثم إلغاء التثبيت قبل متابعة الترقية.
 
 > [!NOTE]
 > ستتوفر نقطة نهاية Microsoft الكاملة Configuration Manager الأتمتة والتكامل لإجراء ترقية تلقائية في إصدار لاحق من MECM. من إصدار 2107 مع أحدث مجموعة إصلاح عاجل، يمكنك استخدام عقدة Endpoint Protection للتكوين بالإضافة إلى نهج المجموعة أو PowerShell أو إرفاق مستأجر Microsoft إدارة نقاط النهاية أو التكوين المحلي. بالإضافة إلى ذلك، يمكنك الاستفادة من الوظائف الموجودة في نقطة نهاية Microsoft Configuration Manager لأتمتة خطوات الترقية اليدوية؛ الأساليب الموضحة أدناه.
-
 
 ## <a name="installer-script"></a>البرنامج النصي للمثبت
 
@@ -107,6 +106,7 @@ ms.locfileid: "66490520"
 
 المسار: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode Type: قيمة REG_DWORD: 0
 
+لمزيد من المعلومات حول ترحيل الخوادم من MMA إلى الحل الموحد، راجع [ترحيل الخوادم من Microsoft Monitoring Agent إلى الحل الموحد](application-deployment-via-mecm.md).
 
 ## <a name="other-migration-scenarios"></a>سيناريوهات الترحيل الأخرى
 

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: fbfb20b233f1f942faaddd2a235a55beeb48d2c6
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 0ceb24b5da0947dbb2b79ca7560ffbb46b701b38
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043111"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696261"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>استكشاف مشكلات الإلحاق المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية
 
@@ -28,12 +28,12 @@ ms.locfileid: "66043111"
 
 **ينطبق على:**
 
-- [إدارة Microsoft Defender لنقطة النهاية على الأجهزة باستخدام إدارة نقاط النهاية من Microsoft](/mem/intune/protect/mde-security-integration)
+- [إدارة Microsoft Defender لنقطة النهاية على الأجهزة باستخدام Microsoft إدارة نقاط النهاية](/mem/intune/protect/mde-security-integration)
 - [مشكلات الأداء في Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-إدارة الأمان Microsoft Defender لنقطة النهاية هي إمكانية للأجهزة التي لا تتم إدارتها بواسطة إدارة نقاط النهاية من Microsoft، إما Microsoft Intune أو Microsoft Endpoint Configuration Manager، لتلقي تكوينات الأمان Microsoft Defender لنقطة النهاية مباشرة من إدارة نقاط النهاية.
-لمزيد من المعلومات حول إدارة الأمان Microsoft Defender لنقطة النهاية، راجع [إدارة Microsoft Defender لنقطة النهاية على الأجهزة التي تحتوي على إدارة نقاط النهاية من Microsoft](/mem/intune/protect/mde-security-integration).
+إدارة الأمان Microsoft Defender لنقطة النهاية هي إمكانية للأجهزة التي لا تديرها إدارة نقاط النهاية Microsoft، إما Microsoft Intune أو Configuration Manager نقطة نهاية Microsoft، لتلقي الأمان تكوينات Microsoft Defender لنقطة النهاية مباشرة من إدارة نقاط النهاية.
+لمزيد من المعلومات حول إدارة الأمان Microsoft Defender لنقطة النهاية، راجع [إدارة Microsoft Defender لنقطة النهاية على الأجهزة باستخدام Microsoft إدارة نقاط النهاية](/mem/intune/protect/mde-security-integration).
 
 للحصول على إرشادات حول "إدارة الأمان" Microsoft Defender لنقطة النهاية الإلحاق، راجع [Microsoft Defender لنقطة النهاية إدارة تكوين الأمان](security-config-management.md)
 
@@ -53,10 +53,10 @@ ms.locfileid: "66043111"
   - /windows/iot/iot-enterprise/commercialization/licensing
   - https://login.microsoftonline.com
   - https://device.login.microsoftonline.com
-- تم تكوين Azure AD الاتصال لمزامنة كائنات الكمبيوتر. بشكل افتراضي، تكون الوحدات التنظيمية للكمبيوتر في نطاق مزامنة الاتصال Azure AD. إذا كانت كائنات الكمبيوتر تنتمي إلى وحدات تنظيمية معينة (OUs)، فكون الوحدات التنظيمية للمزامنة في Azure AD الاتصال. لمعرفة المزيد حول كيفية مزامنة كائنات الكمبيوتر باستخدام Azure AD الاتصال، راجع [التصفية المستندة إلى وحدة تنظيمية](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
+- تم تكوين Azure AD الاتصال لمزامنة كائنات الكمبيوتر. بشكل افتراضي، تكون الوحدات التنظيمية للكمبيوتر في نطاق مزامنة الاتصال Azure AD. إذا كانت كائنات الكمبيوتر تنتمي إلى وحدات تنظيمية معينة (OUs)، فكون الوحدات التنظيمية للمزامنة في Azure AD Connect. لمعرفة المزيد حول كيفية مزامنة كائنات الكمبيوتر باستخدام Azure AD Connect، راجع [التصفية المستندة إلى وحدة تنظيمية](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
 
 > [!IMPORTANT]
-> لا تتم مزامنة Azure AD الاتصال Windows كائنات الكمبيوتر Server 2012 R2. إذا كنت بحاجة إلى تسجيلها في Azure AD لإدارة الأمان Microsoft Defender لنقطة النهاية، فستحتاج إلى تخصيص قاعدة مزامنة الاتصال Azure AD لتضمين عناصر الكمبيوتر هذه في نطاق المزامنة. راجع [إرشادات تطبيق قاعدة انضمام الكمبيوتر في الاتصال Azure Active Directory]().
+> لا يقوم Azure AD connect بمزامنة كائنات كمبيوتر Windows Server 2012 R2. إذا كنت بحاجة إلى تسجيلها في Azure AD لإدارة الأمان Microsoft Defender لنقطة النهاية، فستحتاج إلى تخصيص قاعدة مزامنة الاتصال Azure AD لتضمين عناصر الكمبيوتر هذه في نطاق المزامنة. راجع [إرشادات تطبيق قاعدة انضمام الكمبيوتر في Azure Active Directory Connect]().
 
 > [!NOTE]
 > لإكمال تدفق الإلحاق بنجاح، وبمعزل عن نظام التشغيل الخاص بالجهاز، يمكن أن تتغير حالة Azure Active Directory للجهاز، استنادا إلى الحالة الأولية للأجهزة:
@@ -115,26 +115,21 @@ ms.locfileid: "66043111"
 
 يسرد الجدول التالي الأخطاء والاتجاهات حول ما يجب تجربته/إيداعه لمعالجة الخطأ. لاحظ أن قائمة الأخطاء غير مكتملة وتستند إلى الأخطاء النموذجية/الشائعة التي واجهها العملاء في الماضي:
 
-<br>
-
-****
-
 |رمز الخطأ|حالة التسجيل|إجراءات المسؤول|
 |---|---|---|
 |`5-7`, `9`, `11-12`, `26-33`|خطأ عام|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان. قد يرجع ذلك إلى عدم استيفاء الجهاز [للمتطلبات الأساسية لقناة إدارة Microsoft Defender لنقطة النهاية](security-config-management.md). يمكن أن يساعد تشغيل ["محلل العميل"](https://aka.ms/BetaMDEAnalyzer) على الجهاز في تحديد السبب الجذري للمشكلة. إذا لم ينجح هذا الإجراء، فالرجاء الاتصال بالدعم.|
-| `8`, `44` | مشكلة تكوين إدارة نقاط النهاية من Microsoft | تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، لم يتم تكوين إدارة نقاط النهاية من Microsoft من خلال مركز الإدارة للسماح بتكوين الأمان Microsoft Defender لنقطة النهاية. تأكد من [تكوين المستأجر إدارة نقاط النهاية من Microsoft وتشغيل الميزة](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
-|`13-14`,`20`,`24`,`25`|مشكلة في الاتصال|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان الذي قد يكون بسبب مشكلة في الاتصال. تحقق من فتح [Azure Active Directory ونقاط نهاية إدارة نقاط النهاية من Microsoft](security-config-management.md#connectivity-requirements) في جدار الحماية الخاص بك.|
+| `8`, `44` | مشكلة تكوين إدارة نقاط النهاية Microsoft | تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، لم يتم تكوين Microsoft إدارة نقاط النهاية من خلال مركز مسؤول للسماح بتكوين الأمان Microsoft Defender لنقطة النهاية. تأكد من [تكوين مستأجر Microsoft إدارة نقاط النهاية وتشغيل الميزة](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management).|
+|`13-14`,`20`,`24`,`25`|مشكلة في الاتصال|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان الذي قد يكون بسبب مشكلة في الاتصال. تحقق من فتح [نقاط نهاية Azure Active Directory وMicrosoft إدارة نقاط النهاية](security-config-management.md#connectivity-requirements) في جدار الحماية.|
 |`10`,`42`|فشل الانضمام المختلط العام|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان وفشل نظام التشغيل في تنفيذ الصلة المختلطة. استخدم [استكشاف أخطاء الأجهزة المختلطة المتصلة ب Azure Active Directory](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) وإصلاحها لاستكشاف أخطاء الانضمام المختلط على مستوى نظام التشغيل وإصلاحها.|
 |`15`|عدم تطابق المستأجر|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان لأن معرف المستأجر Microsoft Defender لنقطة النهاية لا يتطابق مع معرف مستأجر Azure Active Directory. تأكد من أن معرف مستأجر Azure Active Directory من مستأجر Defender لنقطة النهاية يطابق معرف المستأجر في إدخال SCP لمجالك. لمزيد من التفاصيل، [قم باستكشاف المشكلات المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية وإصلاحها](troubleshoot-security-config-mgt.md).|
 |`16`,`17`|خطأ مختلط - نقطة اتصال الخدمة|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، لم يتم تكوين سجل نقطة اتصال الخدمة (SCP) بشكل صحيح وتعذر ربط الجهاز Azure AD. قد يرجع ذلك إلى تكوين SCP للانضمام إلى DRS على مستوى المؤسسة. تأكد من تكوين نقاط سجل SCP إلى AAD وSCP باتباع أفضل الممارسات. لمزيد من المعلومات، راجع [تكوين نقطة اتصال خدمة](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point).|
 |`18`|خطأ في الشهادة|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان بسبب خطأ في شهادة الجهاز. تنتمي شهادة الجهاز إلى مستأجر مختلف. تحقق من اتباع أفضل الممارسات عند إنشاء [ملفات تعريف شهادات موثوق بها](/mem/intune/protect/certificates-trusted-root#create-trusted-certificate-profiles).|
-|`36` , `37`| تكوين الاتصال AAD بشكل خاطئ |تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان بسبب تكوين خاطئ في الاتصال AAD. لتحديد ما يمنع الجهاز من التسجيل في AAD، ضع في اعتبارك تشغيل [أداة مستكشف أخطاء تسجيل الجهاز ومصلحها](/samples/azure-samples/dsregtool/dsregtool). بالنسبة Windows Server 2012 R2، قم بتشغيل [إرشادات استكشاف الأخطاء وإصلاحها المخصصة](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy).  |
+|`36` , `37`| التكوين الخاطئ ل AAD Connect |تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان بسبب تكوين خطأ في AAD Connect. لتحديد ما يمنع الجهاز من التسجيل في AAD، ضع في اعتبارك تشغيل [أداة مستكشف أخطاء تسجيل الجهاز ومصلحها](/samples/azure-samples/dsregtool/dsregtool). بالنسبة ل Windows Server 2012 R2، قم بتشغيل  [إرشادات استكشاف الأخطاء وإصلاحها المخصصة](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy).  |
 |`38`,`41`|خطأ DNS|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان بسبب خطأ DNS. تحقق من اتصال الإنترنت و/أو إعدادات DNS على الجهاز. قد تكون إعدادات DNS غير صالحة على جانب محطة العمل. يتطلب منك Active Directory استخدام DNS للمجال للعمل بشكل صحيح (وليس عنوان الموجه). لمزيد من المعلومات، راجع [استكشاف المشكلات المتعلقة بإدارة الأمان Microsoft Defender لنقطة النهاية وإصلاحها](troubleshoot-security-config-mgt.md).|
 |`40`|مشكلة مزامنة الساعة|تم إلحاق الجهاز بنجاح Microsoft Defender لنقطة النهاية. ومع ذلك، حدث خطأ في تدفق إدارة تكوين الأمان. تحقق من تعيين الساعة بشكل صحيح ومزامنتها على الجهاز الذي يحدث فيه الخطأ.|
+|`43`|MDE و ConfigMgr|تتم إدارة الجهاز باستخدام Configuration Manager Microsoft Defender لنقطة النهاية. قد يؤدي التحكم في النهج من خلال القناتين إلى حدوث تعارضات ونتائج غير مرغوب فيها. لتجنب ذلك، يجب عزل نهج أمان نقطة النهاية إلى مستوى تحكم واحد. |
 
 ## <a name="azure-active-directory-runtime-troubleshooting"></a>استكشاف أخطاء وقت تشغيل Azure Active Directory وإصلاحها
-
-### <a name="azure-active-directory-runtime"></a>وقت تشغيل Azure Active Directory
 
 تتمثل الآلية الرئيسية لاستكشاف أخطاء وقت تشغيل Azure Active Directory (AADRT) وإصلاحها في جمع تتبعات تتبع الأخطاء. يستخدم وقت تشغيل Azure Active Directory على Windows **موفر ETW مع المعرف bd67e65c-9cc2-51d8-7399-0bb9899e75c1**. يجب التقاط تتبعات ETW مع إعادة إنتاج الفشل (على سبيل المثال، إذا حدث فشل في الانضمام، يجب تمكين التتبعات طوال مدة تغطية المكالمات إلى واجهات برمجة تطبيقات AADRT لتنفيذ الانضمام).
 
@@ -144,12 +139,12 @@ ms.locfileid: "66043111"
 
 من المعلومات الموجودة في الرسالة، من الممكن في معظم الحالات فهم الخطأ الذي تمت مواجهته، وما أرجعه Win32 API الخطأ (إن أمكن)، وعنوان URL (إذا كان قابلا للتطبيق) الذي تم استخدامه وما حدث من خطأ واجهة برمجة تطبيقات وقت تشغيل AAD.
 
-## <a name="instructions-for-applying-computer-join-rule-in-aad-connect"></a>إرشادات تطبيق قاعدة "انضمام الكمبيوتر" في الاتصال AAD
+## <a name="instructions-for-applying-computer-join-rule-in-aad-connect"></a>إرشادات تطبيق قاعدة انضمام الكمبيوتر في AAD Connect
 
-بالنسبة لإدارة الأمان Microsoft Defender لنقطة النهاية على أجهزة الكمبيوتر المتصلة بمجال Windows Server 2012 R2، يلزم تحديث قاعدة مزامنة Azure AD الاتصال "من AD-Computer Join". يمكن تحقيق ذلك عن طريق استنساخ القاعدة وتعديلها، والتي ستعطل قاعدة "In from AD - Computer Join" الأصلية. يوفر Azure AD الاتصال بشكل افتراضي هذه التجربة لإجراء تغييرات على القواعد المضمنة.
+بالنسبة إلى إدارة الأمان Microsoft Defender لنقطة النهاية على أجهزة الكمبيوتر المنضمة إلى مجال Windows Server 2012 R2، يلزم إجراء تحديث لقاعدة مزامنة الاتصال Azure AD "من AD-Computer Join". يمكن تحقيق ذلك عن طريق استنساخ القاعدة وتعديلها، والتي ستعطل قاعدة "In from AD - Computer Join" الأصلية. يوفر Azure AD Connect بشكل افتراضي هذه التجربة لإجراء تغييرات على القواعد المضمنة.
 
 > [!NOTE]
->يجب تطبيق هذه التغييرات على الخادم حيث يتم تشغيل الاتصال AAD. إذا كان لديك مثيلات متعددة الاتصال نشر AAD، فيجب تطبيق هذه التغييرات على كافة المثيلات.
+>يجب تطبيق هذه التغييرات على الخادم حيث يتم تشغيل AAD Connect. إذا كان لديك مثيلات متعددة من AAD Connect تم توزيعها، فيجب تطبيق هذه التغييرات على كافة المثيلات.
 
 1. افتح تطبيق محرر قواعد المزامنة من قائمة البدء. في قائمة القواعد، حدد موقع القاعدة المسماة **In من AD – Computer Join**. **لاحظ القيمة الموجودة في عمود "الأسبقية" لهذه القاعدة.**
 
@@ -159,7 +154,7 @@ ms.locfileid: "66043111"
 
    :::image type="content" source="images/8854440d6180a5580efda24110551c68.png" alt-text="صفحة تأكيد القاعدة المحجوزة للتحرير" lightbox="images/8854440d6180a5580efda24110551c68.png":::
 
-3. سيتم عرض نافذة **قاعدة تحرير المزامنة الواردة** . حدث وصف القاعدة لتلاحظ أنه ستتم مزامنة Windows Server 2012R2 باستخدام هذه القاعدة. اترك كافة الخيارات الأخرى دون تغيير باستثناء قيمة الأسبقية. أدخل قيمة للأسبقية أعلى من القيمة من القاعدة الأصلية (كما هو موضح في قائمة القواعد).
+3. سيتم عرض نافذة **قاعدة تحرير المزامنة الواردة** . قم بتحديث وصف القاعدة لتلاحظ أنه سيتم مزامنة Windows Server 2012R2 باستخدام هذه القاعدة. اترك كافة الخيارات الأخرى دون تغيير باستثناء قيمة الأسبقية. أدخل قيمة للأسبقية أعلى من القيمة من القاعدة الأصلية (كما هو موضح في قائمة القواعد).
 
    :::image type="content" source="images/ee0f29162bc3f2fbe666c22f14614c45.png" alt-text="صفحة قاعدة تحرير المزامنة الواردة التي تقوم بإدخال القيم فيها" lightbox="images/ee0f29162bc3f2fbe666c22f14614c45.png":::
 
@@ -208,4 +203,4 @@ ms.locfileid: "66043111"
 
 ## <a name="related-topic"></a>الموضوع ذو الصلة
 
-- [إدارة Microsoft Defender لنقطة النهاية على الأجهزة باستخدام إدارة نقاط النهاية من Microsoft](/mem/intune/protect/mde-security-integration)
+- [إدارة Microsoft Defender لنقطة النهاية على الأجهزة باستخدام Microsoft إدارة نقاط النهاية](/mem/intune/protect/mde-security-integration)

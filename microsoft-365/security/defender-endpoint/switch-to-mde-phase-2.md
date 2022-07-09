@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 5667519a499443ddcfc02a3c8a22151f06cbcbc7
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 7f22d5d1162e01afe737e6e3f25450cc22e25c76
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486606"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695715"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>التبديل إلى Microsoft Defender لنقطة النهاية - المرحلة 2: الإعداد
 
@@ -84,19 +84,20 @@ ms.locfileid: "66486606"
 
    ```powershell
    # For Windows Server 2016
-   Dism /online /Enable-Feature /FeatureName:Windows-Defender-Features
-   Dism /online /Enable-Feature /FeatureName:Windows-Defender
-   Dism /online /Enable-Feature /FeatureName:Windows-Defender-Gui
+   Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
+   Dism /Online /Enable-Feature /FeatureName:Windows-Defender
+   Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Gui
+   
    # For Windows Server 2019 and Windows Server 2022
-   Dism /online /Enable-Feature /FeatureName:Windows-Defender
+   Dism /Online /Enable-Feature /FeatureName:Windows-Defender
    ```
 
    عند استخدام الأمر DISM ضمن تسلسل مهمة يقوم بتشغيل PowerShell، المسار التالي إلى cmd.exe مطلوب.
    على سبيل المثال:
 
    ```powershell
-   c:\windows\sysnative\cmd.exe /c Dism /online /Enable-Feature /FeatureName:Windows-Defender-Features
-   c:\windows\sysnative\cmd.exe /c Dism /online /Enable-Feature /FeatureName:Windows-Defender
+   C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
+   C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender
    ```
 
 3. أعد تشغيل الجهاز.
@@ -115,7 +116,7 @@ ms.locfileid: "66486606"
    - ضمن **Base**، حدد **سداسي عشري**.
 
 > [!NOTE]
-> بعد الإلحاق ب Defender لنقطة النهاية، قد تحتاج إلى تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي على Windows Server. للتحقق من تعيين الوضع السلبي كما هو متوقع، ابحث عن *الحدث 5007* في سجل **تشغيل Microsoft-Windows-Windows Defender** (الموجود في `C:\Windows\System32\winevt\Logs`)، وتأكد من تعيين إما مفاتيح تسجيل  **ForceDefenderPassiveMode** أو **PassiveMode** إلى **0x1**.
+> بعد الإلحاق ب Defender لنقطة النهاية، قد تحتاج إلى تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى الوضع السلبي على Windows Server. للتحقق من تعيين الوضع الخامل كما هو متوقع، ابحث عن **الحدث 5007** في السجل **التشغيلي ل Microsoft-Windows-Windows Defender** (الموجود في `C:\Windows\System32\winevt\Logs`)، وتأكد من تعيين إما مفاتيح تسجيل **ForceDefenderPassiveMode** أو **PassiveMode** إلى **0x1**.
 
 ### <a name="are-you-using-windows-server-2012-r2-or-windows-server-2016"></a>هل تستخدم Windows Server 2012 R2 أو Windows Server 2016؟
 
@@ -128,7 +129,7 @@ ms.locfileid: "66486606"
 |الاسلوب|ما يجب فعله|
 |---|---|
 |[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/><br/> **ملاحظة**: أصبح Intune الآن جزءا من Microsoft إدارة نقاط النهاية.|1. انتقل إلى [مركز إدارة Microsoft إدارة نقاط النهاية](https://go.microsoft.com/fwlink/?linkid=2109431) وسجل الدخول.<br/><br/>2. حدد **ملفات تعريف تكوين** **الأجهزة**\>، ثم حدد نوع ملف التعريف الذي تريد تكوينه. إذا لم تكن قد أنشأت بعد نوع ملف تعريف **قيود الجهاز**، أو إذا كنت تريد إنشاء ملف تعريف جديد، فراجع [تكوين إعدادات تقييد الجهاز في Microsoft Intune](/intune/device-restrictions-configure).<br/><br/>3. حدد **الخصائص**، ثم حدد **إعدادات التكوين: تحرير**<br/><br/>4. توسيع **برنامج الحماية من الفيروسات من Microsoft Defender**.<br/><br/>5. تمكين **الحماية المقدمة من السحابة**.<br/><br/>6. في **"المطالبة بالمستخدمين" قبل القائمة المنسدلة "إرسال العينة** "، حدد **"إرسال كافة العينات" تلقائيا**.<br/><br/>7. في القائمة المنسدلة **"الكشف عن التطبيقات غير المرغوب فيها"** ، حدد **"تمكين** " أو **"تدقيق**".<br/><br/>8. حدد **"مراجعة + حفظ**"، ثم اختر **"حفظ**". <br/><br/> **تلميح**: لمزيد من المعلومات حول ملفات تعريف أجهزة Intune، بما في ذلك كيفية إنشاء إعداداتها وتكوينها، راجع [ما هي ملفات تعريف الأجهزة Microsoft Intune؟](/intune/device-profiles).|
-|Microsoft Endpoint Configuration Manager|راجع [إنشاء نهج مكافحة البرامج الضارة ونشرها لحماية نقطة النهاية في Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies). <br/><br/> عند إنشاء نهج مكافحة البرامج الضارة وتكوينها، تأكد من مراجعة [إعدادات الحماية في الوقت الحقيقي](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) [وتمكين الكتلة من النظرة الأولى](configure-block-at-first-sight-microsoft-defender-antivirus.md).
+|[Microsoft Endpoint Configuration Manager](/mem/configmgr)|راجع [إنشاء نهج مكافحة البرامج الضارة ونشرها لحماية نقطة النهاية في Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies). <br/><br/> عند إنشاء نهج مكافحة البرامج الضارة وتكوينها، تأكد من مراجعة [إعدادات الحماية في الوقت الحقيقي](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) [وتمكين الكتلة من النظرة الأولى](configure-block-at-first-sight-microsoft-defender-antivirus.md).
 |لوحة التحكم في Windows|اتبع الإرشادات هنا: [قم بتشغيل برنامج الحماية من الفيروسات من Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows). (قد ترى *برنامج الحماية من الفيروسات لـ Windows Defender* بدلا من *برنامج الحماية من الفيروسات من Microsoft Defender* في بعض إصدارات Windows.)|
 |[إدارة نهج المجموعة المتقدمة](/microsoft-desktop-optimization-pack/agpm/) <br/><br/> او <br/><br/> [وحدة تحكم إدارة نهج المجموعة](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. انتقل إلى **قوالب إدارة** **تكوين** \> الكمبيوتر مكونات \> **Windows** \> **Microsoft Defender Antivirus**.<br/><br/>2. ابحث عن نهج يسمى **إيقاف تشغيل برنامج الحماية من الفيروسات من Microsoft Defender**.<br/><br/>3. اختر **إعداد تحرير النهج**، وتأكد من تعطيل النهج. يتيح هذا الإجراء برنامج الحماية من الفيروسات من Microsoft Defender. <br/>(قد ترى *برنامج الحماية من الفيروسات لـ Windows Defender* بدلا من *برنامج الحماية من الفيروسات من Microsoft Defender* في بعض إصدارات Windows.)|
 
@@ -146,7 +147,7 @@ ms.locfileid: "66486606"
 
 | OS |الاستثناءات |
 |:--|:--|
-|Windows 11 <br/><br/>Windows 10 أو [الإصدار 1803](/lifecycle/announcements/windows-server-1803-end-of-servicing) أو الإصدارات الأحدث (راجع [معلومات إصدار Windows 10](/windows/release-health/release-information))<br/><br/>Windows 10 أو الإصدار 1703 أو 1709 مع تثبيت [KB4493441](https://support.microsoft.com/help/4493441) <br/><br/> Windows Server 2022<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server، الإصدار 1803](/windows-server/get-started/whats-new-in-windows-server-1803) | `C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollection`<br/><br/> بالإضافة إلى ذلك، في Windows Server 2012 R2 و2016 الذي يقوم بتشغيل الحل الحديث الموحد، تكون الاستثناءات التالية مطلوبة بعد تحديث مكون Sense EDR باستخدام [KB5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac):<br/> <br/> `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe` <br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe`|
+|[Windows 11](/windows/whats-new/windows-11-overview) <br/><br/>Windows 10 أو [الإصدار 1803](/lifecycle/announcements/windows-server-1803-end-of-servicing) أو الإصدارات الأحدث (راجع [معلومات إصدار Windows 10](/windows/release-health/release-information))<br/><br/>Windows 10 أو الإصدار 1703 أو 1709 مع تثبيت [KB4493441](https://support.microsoft.com/help/4493441) <br/><br/> [Windows Server 2022](/windows/release-health/status-windows-server-2022)<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server، الإصدار 1803](/windows-server/get-started/whats-new-in-windows-server-1803) | `C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\DataCollection`<br/><br/> بالإضافة إلى ذلك، في Windows Server 2012 R2 و2016 الذي يقوم بتشغيل الحل الحديث الموحد، تكون الاستثناءات التالية مطلوبة بعد تحديث مكون Sense EDR باستخدام [KB5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac):<br/> <br/> `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe` <br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe`|
 |[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/><br/>**ملاحظة**: يمكن أن تكون مراقبة الملفات المؤقتة للمضيف 6\45 مجلدات فرعية ذات تعداد رقمي مختلفة.<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>إضافة الحل الموجود إلى قائمة الاستبعاد لبرنامج الحماية من الفيروسات من Microsoft Defender
@@ -159,7 +160,7 @@ ms.locfileid: "66486606"
 |[Microsoft Endpoint Configuration Manager](/mem/configmgr/)|1. باستخدام [وحدة التحكم Configuration Manager](/mem/configmgr/core/servers/manage/admin-console)، انتقل إلى نهج **الحماية**\> من البرامج الضارة في **نقطة النهاية** للأصول **والامتثال**\>، ثم حدد النهج الذي تريد تعديله.<br/><br/>2. حدد إعدادات الاستثناء للملفات والمجلدات والملحقات والعمليات التي يجب استبعادها من عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender.|
 |[كائن نهج المجموعة](/previous-versions/windows/desktop/Policy/group-policy-objects)|1. على كمبيوتر إدارة نهج المجموعة، افتح [وحدة تحكم إدارة نهج المجموعة](https://technet.microsoft.com/library/cc731212.aspx)، وانقر بزر الماوس الأيمن فوق العنصر نهج المجموعة الذي تريد تكوينه ثم حدد **"تحرير**".<br/><br/>2. في **محرر إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.<br/><br/>3. قم بتوسيع الشجرة إلى **مكونات \> Windows استثناءات برنامج الحماية من الفيروسات \> من Microsoft Defender**. (قد ترى *برنامج الحماية من الفيروسات لـ Windows Defender* بدلا من *برنامج الحماية من الفيروسات من Microsoft Defender* في بعض إصدارات Windows.)<br/><br/>4. انقر نقرا مزدوجا فوق إعداد **"استثناءات المسار"** وأضف الاستثناءات.<br/><br/>5. تعيين الخيار إلى **ممكن**.<br/><br/>6. ضمن المقطع **"خيارات** "، حدد **"إظهار...**".<br/><br/>7. حدد كل مجلد على السطر الخاص به ضمن عمود **اسم القيمة** . إذا قمت بتحديد ملف، فتأكد من إدخال مسار مؤهل بالكامل إلى الملف، بما في ذلك حرف محرك الأقراص ومسار المجلد واسم الملف والملحق. أدخل **0** في عمود **"القيمة** ".<br/><br/>8. حدد **"موافق**".<br/><br/>9. انقر نقرا مزدوجا فوق إعداد " **استثناءات** الملحق" وأضف الاستثناءات.<br/><br/>10. تعيين الخيار إلى **ممكن**.<br/><br/>11. ضمن المقطع **"خيارات** "، حدد **"إظهار...**".<br/><br/>12. أدخل كل ملحق ملف على السطر الخاص به ضمن عمود **اسم القيمة** . أدخل **0** في عمود **"القيمة** ".<br/><br/>13. حدد **"موافق**".|
 |كائن نهج المجموعة المحلية|1. على نقطة النهاية أو الجهاز، افتح محرر نهج المجموعة المحلي.<br/><br/>2. انتقل إلى **قوالب** \> إدارة **تكوين** \> الكمبيوتر Windows **Components** \> **Microsoft Defender Antivirus** \> **Exclusions**. (قد ترى *برنامج الحماية من الفيروسات لـ Windows Defender* بدلا من *برنامج الحماية من الفيروسات من Microsoft Defender* في بعض إصدارات Windows.)<br/><br/>3. حدد المسار واستثناءات العملية.|
-|مفتاح التسجيل|1. تصدير مفتاح التسجيل التالي: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions`.<br/><br/>2. استيراد مفتاح التسجيل. فيما يلي مثالان:<br/>- المسار المحلي: `regedit.exe /s c:\temp\ MDAV_Exclusion.reg`<br/>- مشاركة الشبكة: `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg`|
+|مفتاح التسجيل|1. تصدير مفتاح التسجيل التالي: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions`.<br/><br/>2. استيراد مفتاح التسجيل. فيما يلي مثالان:<br/>- المسار المحلي: `regedit.exe /s c:\temp\MDAV_Exclusion.reg`<br/>- مشاركة الشبكة: `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg`|
 
 ### <a name="keep-the-following-points-about-exclusions-in-mind"></a>ضع النقاط التالية حول الاستثناءات في الاعتبار
 

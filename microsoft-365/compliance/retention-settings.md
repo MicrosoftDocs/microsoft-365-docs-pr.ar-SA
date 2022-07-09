@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: فهم الإعدادات التي يمكنك تكوينها في نهج الاستبقاء أو نهج تسمية الاستبقاء للاحتفاظ بما تريده والتخلص مما لا تريده.
-ms.openlocfilehash: 87ecdc932932befc24441a59fb0dd8c023e982c2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 34d71c0ae96c09dc2ac4569ae1de5fe386509550
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639633"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695737"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>الإعدادات الشائعة لنهج الاستبقاء ونهج تسمية الاستبقاء
 
@@ -407,7 +407,7 @@ ms.locfileid: "66639633"
 #### <a name="relabeling-at-the-end-of-the-retention-period"></a>إعادة التسمية في نهاية فترة الاستبقاء
 
 > [!NOTE]
-> يتم طرح هذا الخيار حاليا في المعاينة وهو عرضة للتغيير.
+> هذا الخيار قيد المعاينة وخاضعا للتغيير.
 
 عند تكوين تسمية استبقاء لتطبيق تسمية استبقاء مختلفة تلقائيا في نهاية فترة الاستبقاء، يخضع العنصر بعد ذلك لإعدادات الاستبقاء الخاصة بتسمية الاستبقاء المحددة حديثا. يتيح لك هذا الخيار تغيير إعدادات الاستبقاء للعنصر تلقائيا.
 

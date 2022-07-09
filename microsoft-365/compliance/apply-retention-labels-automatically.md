@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: إنشاء نهج استبقاء التسميات التلقائية حتى تتمكن من تطبيق التسميات تلقائيا للاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه
-ms.openlocfilehash: f3af46b59134a815f3ba3a02154f9ecfd6f95627
-ms.sourcegitcommit: 019e8a62ab07a42d4ede4a87ccfaed527914412d
+ms.openlocfilehash: 7530b50aca1ed50ad5735f12f12b48b06d539b2e
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66689164"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695977"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>تطبيق تسمية استبقاء تلقائيا للاحتفاظ بالمحتوى أو حذفه
 
@@ -273,9 +273,11 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 ![اختر مصنفا قابلا للتدريب.](../media/retention-label-classifers.png)
 
-لتطبيق تسمية تلقائيا باستخدام هذا الخيار، يجب أن تحتوي مواقع SharePoint وعلب البريد على 10 ميغابايت على الأقل من البيانات.
+غالبا ما يتم تحديث المصنفات المتوفرة المدربة مسبقا، لذلك قد يكون هناك المزيد من الإدخالات للاختيار من تلك المعروضة في لقطة الشاشة هذه.
 
 لمزيد من المعلومات حول المصنفات القابلة للتدريب، راجع [التعرف على المصنفات القابلة للتدريب](classifier-learn-about.md).
+
+لتطبيق تسمية تلقائيا باستخدام هذا الخيار، يجب أن تحتوي مواقع SharePoint وعلب البريد على 10 ميغابايت على الأقل من البيانات.
 
 > [!TIP]
 > إذا كنت تستخدم مصنفات قابلة للتدريب ل Exchange، فراجع [كيفية إعادة تدريب مصنف في مستكشف المحتوى](classifier-how-to-retrain-content-explorer.md).

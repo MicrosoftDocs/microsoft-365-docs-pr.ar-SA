@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: عند استخدام عميل التسمية الموحد ل Azure حماية البيانات (AIP)، فهم مزايا استخدام التسمية المضمنة لتطبيقات Office بدلا من الوظيفة الإضافية AIP.
-ms.openlocfilehash: 0a521dbabd6a9db52dd8405beabab29400d38d82
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 69bef8c18398a371f53fc88e17d261790b3ab16f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628606"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696151"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>لماذا اختر تسمية مضمنة عبر الوظيفة الإضافية AIP لتطبيقات Office
 
@@ -109,6 +109,8 @@ ms.locfileid: "66628606"
 بدلا من ذلك، يمكنك تعطيل وظيفة **Microsoft Azure الإضافية حماية البيانات أو** إزالتها بشكل تفاعلي من Word وExcel وPowerPoint وOutlook أو إزالتها. هذا الأسلوب مناسب لجهاز كمبيوتر واحد، واختبار مخصص. للحصول على الإرشادات، راجع [عرض الوظائف الإضافية وإدارتها وتثبيتها في برامج Office](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d).
 
 أيا كانت الطريقة التي تختارها، فستدخل التغييرات حيز التنفيذ عند إعادة تشغيل تطبيقات Office.
+
+إذا لم يظهر الزر **"الحساسية** " على شريط Office بعد إجراء هذه التغييرات، فتحقق مما إذا كان قد تم [إيقاف تشغيل](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows) وصف الحساسية.  على الرغم من أن هذا ليس التكوين الافتراضي، قد يكون المسؤول قد عين هذا التكوين بشكل صريح باستخدام نهج المجموعة أو عن طريق تحرير السجل مباشرة.
 
 > [!NOTE]
 > تتطلب التسميات المضمنة إصدار اشتراك من تطبيقات Office. إذا كان لديك إصدارات مستقلة من Office، تسمى أحيانا "Office الدائم"، نوصيك بالترقية إلى Microsoft 365 Apps للمؤسسات للاستفادة من [أحدث إمكانيات التسمية](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).

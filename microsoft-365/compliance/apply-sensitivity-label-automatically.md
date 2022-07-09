@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: عند إنشاء وصف حساسية، يمكنك تعيين تسمية تلقائيا للملفات ورسائل البريد الإلكتروني، أو يمكنك مطالبة المستخدمين بتحديد التسمية التي توصي بها.
-ms.openlocfilehash: 06e769f3e6aa616d8b725ec37c52e2a24289ceb2
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: bdf45f614434c5097a9c5ce656c94cab01a462b6
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662287"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696021"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>تطبيق تسمية حساسية على المحتوى تلقائياً
 
@@ -194,8 +194,7 @@ For more information on parent labels and sublabels, see [Sublabels (grouping la
 
 ![خيارات للمصنفات القابلة للتدريب وتسميات الحساسية.](../media/sensitivity-labels-classifers.png)
 
-> [!CAUTION]
-> نحن نإهمال المصنف المدرب مسبقا **للغة المسيئة** لأنه ينتج عددا كبيرا من النتائج الإيجابية الخاطئة. لا تستخدم هذا المصنف وإذا كنت تستخدمه حاليا، نوصيك بنقل عمليات عملك منه واستخدام المصنفات **المستهدفة** **والألفاظ النابية** **والتهديدات** المدربة مسبقا بدلا من ذلك.
+غالبا ما يتم تحديث المصنفات المتوفرة المدربة مسبقا، لذلك قد يكون هناك المزيد من الإدخالات للاختيار من تلك المعروضة في لقطة الشاشة هذه.
 
 لمزيد من المعلومات حول هذه المصنفات، راجع [التعرف على المصنفات القابلة للتدريب](classifier-learn-about.md).
 
