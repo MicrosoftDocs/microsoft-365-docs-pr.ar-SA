@@ -43,6 +43,7 @@
 #### [استخدام نهج المجموعة](manage-mde-post-migration-group-policy-objects.md)
 #### [استخدم PowerShell أو WMI أو MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [سيناريوهات ترحيل الخادم](server-migration.md)
+##### [ترحيل الخوادم من عامل المراقبة من Microsoft إلى الحل الموحد](application-deployment-via-mecm.md)
 
 ## [إلحاق الأجهزة وتكوينها]()
 ### [أجهزة التجهيز وتكوين Microsoft Defender لنقطة النهاية](onboard-configure.md)

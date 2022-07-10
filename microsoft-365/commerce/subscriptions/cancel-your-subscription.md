@@ -20,24 +20,24 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: تعرف على كيفية إلغاء الاشتراكات التجريبية أو المدفوعة من Dynamics 365 وIntune Power Platform وMicrosoft 365 للأعمال في مركز مسؤولي Microsoft 365.
-ms.date: 06/02/2022
-ms.openlocfilehash: 962553d620b9cc3477f5eb7c91fa0b822dc5de07
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 07/07/2022
+ms.openlocfilehash: f7d967d14f7f0e23e3d422318bddf25eb6772dcf
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490354"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695693"
 ---
 # <a name="cancel-your-microsoft-subscription"></a>إلغاء اشتراكك في Microsoft
 
 إذا كنت تريد إلغاء اشتراكك، فإن أسهل طريقة للقيام بذلك [إيقاف تشغيل الفوترة المتكررة](renew-your-subscription.md). عند إيقاف تشغيل الفوترة المتكررة، يمكنك الاستمرار في استخدام اشتراكك حتى تنتهي صلاحيته في نهاية فترة الاشتراك. إذا كنت تريد الإلغاء على الفور، فاستخدم المعلومات والخطوات الواردة في هذه المقالة للقيام بذلك.
 
+يمكنك إلغاء الإصدار التجريبي المجاني في أي وقت لإيقاف الرسوم المستقبلية. بعد انتهاء الفترة التجريبية المجانية لمدة شهر واحد، سيتم تحصيل رسوم الاشتراك المعمول بها.
+
 > [!IMPORTANT]
-> - لا تنطبق هذه المقالة إلا على Dynamics 365، وIntune، ومنصة Power، وMicrosoft 365 لاشتراكات الأعمال. إذا كان لديك Microsoft 365 Family أو Personal، فراجع [إلغاء اشتراك Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
+> - تنطبق هذه المقالة فقط على اشتراكات Dynamics 365 و Intune و Power Platform وWindows 365 Microsoft 365 للأعمال. إذا كان لديك Microsoft 365 Family أو Personal، فراجع [إلغاء اشتراك Microsoft 365](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
 > - إذا اشتريت اشتراكك من خلال أحد ممثلي Microsoft أو شريك بائع، فلديك سبعة أيام للإلغاء لاسترداد المبلغ المدفوع بالتناسب. اتصل بالبائع أو الشريك لمساعدتك في إلغاء اشتراكك. [تعرّف على المزيد حول الشركاء](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school).
 > - إذا كانت مؤسستك تقع في جمهورية تشيلي، واشتريت اشتراكك من خلال شريك في جمهورية تشيلي، فلديك 10 أيام للإلغاء لاسترداد المبلغ المدفوع بالتناسب.
-
-إذا كنت تريد إلغاء اشتراكك، فإن أسهل طريقة للقيام بذلك [إيقاف تشغيل الفوترة المتكررة](renew-your-subscription.md). عند إيقاف تشغيل الفوترة المتكررة، يمكنك الاستمرار في استخدام اشتراكك حتى تنتهي صلاحيته في نهاية فترة الاشتراك. إذا كنت تريد الإلغاء على الفور، فاستخدم المعلومات والخطوات الواردة في هذه المقالة للقيام بذلك.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
@@ -58,9 +58,6 @@ ms.locfileid: "66490354"
 إذا كنت بحاجة إلى الإلغاء خلال سبعة أيام بعد بدء اشتراكك أو تجديده، فانتقل إلى [الخطوات لإلغاء اشتراكك](#steps-to-cancel-your-subscription) لاحقاً في هذه المقالة.
 
 إذا انقضت أكثر من سبعة أيام، فقم [بإيقاف تشغيل](renew-your-subscription.md)الفوترة المتكررة. يمنع هذا تجديد اشتراكك عند نهاية فترته.  ستظل تتمتع بوصول إلى منتجاتك وخدماتك خلال الفترة المتبقية من اشتراكك. إذا كنت تمتلك اشتراكاً سنوياً وتقوم بدفع قيمته شهرياً، فإنه يتم تحصيل الرسوم منك كل شهر خلال الفترة المتبقية من اشتراكك.
-
-> [!NOTE]
-> قم بإلغاء الإصدار التجريبي المجاني في أي وقت لإيقاف الرسوم المستقبلية. بعد الإصدار التجريبي المجاني لمدة شهر واحد، سيتم تحصيل رسوم الاشتراك المعمول بها.
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>إذا لم يكن لديك ملف تعريف للفوترة
 
