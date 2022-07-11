@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3d13c3b126f4aae75ff775ac3170049dfc9c0a2e
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 8a369aba012d7de23f72501ef1ce042750c57f7d
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679429"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714586"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>مختبر تقييم Microsoft Defender لنقطة النهاية
 
@@ -43,7 +43,7 @@ ms.locfileid: "65679429"
 
 سيكون لديك حق الوصول الكامل إلى القدرات القوية للنظام الأساسي مثل التحقيقات التلقائية والتتبع المتقدم وتحليلات التهديدات، ما يسمح لك باختبار مكدس الحماية الشاملة الذي يقدمه Defender لنقطة النهاية.
 
-يمكنك إضافة أجهزة Windows 10، Windows 11، Windows Server 2019، Windows Server 2016، وLinux (Ubuntu) التي تم تكوينها مسبقا لتثبيت أحدث إصدارات نظام التشغيل ومكونات الأمان الصحيحة بالإضافة إلى Office 2019 Standard.
+يمكنك إضافة أجهزة Windows 10 Windows 11 وWindows Server 2019 وWindows Server 2016 وLinux (Ubuntu) التي تم تكوينها مسبقا لتثبيت أحدث إصدارات نظام التشغيل ومكونات الأمان الصحيحة بالإضافة إلى Office 2019 Standard.
 
 يمكنك أيضا تثبيت أجهزة محاكاة المخاطر. شارك Defender لنقطة النهاية مع منصات محاكاة المخاطر الرائدة في الصناعة لمساعدتك في اختبار قدرات Defender لنقطة النهاية دون الحاجة إلى مغادرة المدخل.
 
@@ -105,13 +105,13 @@ ms.locfileid: "65679429"
 
 ## <a name="add-devices"></a>إضافة أجهزة
 
-عند إضافة جهاز إلى بيئتك، يقوم Defender for Endpoint بإعداد جهاز تم تكوينه بشكل جيد مع تفاصيل الاتصال. يمكنك إضافة Windows 10، Windows 11، Windows Server 2019، Windows Server 2016، وLinux (Ubuntu).
+عند إضافة جهاز إلى بيئتك، يقوم Defender for Endpoint بإعداد جهاز تم تكوينه بشكل جيد مع تفاصيل الاتصال. يمكنك إضافة Windows 10 Windows 11 وWindows Server 2019 وWindows Server 2016 وLinux (Ubuntu).
 
-سيتم تكوين الجهاز بأحدث إصدار من نظام التشغيل Office 2019 Standard بالإضافة إلى تطبيقات أخرى مثل Java وPython وSysIntenals.
+سيتم تكوين الجهاز باستخدام أحدث إصدار من نظام التشغيل وOffice 2019 Standard بالإضافة إلى تطبيقات أخرى مثل Java وPython وSysIntenals.
 
 إذا اخترت إضافة محاكي مخاطر أثناء إعداد المختبر، فستحتوي جميع الأجهزة على عامل محاكاة المخاطر مثبت في الأجهزة التي تضيفها.
 
-سيتم إلحاق الجهاز تلقائيا بالمستأجر الخاص بك مع تشغيل مكونات الأمان الموصى بها Windows وفي وضع التدقيق - دون أي جهد من جانبك.
+سيتم إلحاق الجهاز تلقائيا بالمستأجر الخاص بك مع تشغيل مكونات أمان Windows الموصى بها وفي وضع التدقيق - دون أي جهد من جانبك.
 
 يتم تكوين مكونات الأمان التالية مسبقا في أجهزة الاختبار:
 
@@ -125,7 +125,7 @@ ms.locfileid: "65679429"
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> سيكون برنامج الحماية من الفيروسات من Microsoft Defender قيد التشغيل (وليس في وضع التدقيق). إذا كانت برنامج الحماية من الفيروسات من Microsoft Defender تمنعك من تشغيل المحاكاة الخاصة بك، يمكنك إيقاف تشغيل الحماية في الوقت الحقيقي على الجهاز من خلال أمن Windows. لمزيد من المعلومات، راجع [تكوين الحماية الدائمة](configure-real-time-protection-microsoft-defender-antivirus.md).
+> سيكون برنامج الحماية من الفيروسات من Microsoft Defender قيد التشغيل (ليس في وضع التدقيق). إذا منعك برنامج الحماية من الفيروسات من Microsoft Defender من تشغيل المحاكاة، يمكنك إيقاف تشغيل الحماية في الوقت الحقيقي على الجهاز من خلال أمن Windows. لمزيد من المعلومات، راجع [تكوين الحماية الدائمة](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 ستعتمد إعدادات التحقيق التلقائي على إعدادات المستأجر. سيتم تكوينه ليكون شبه مؤتمت بشكل افتراضي. لمزيد من المعلومات، راجع [نظرة عامة على التحقيقات التلقائية](automated-investigations.md).
 
@@ -134,7 +134,7 @@ ms.locfileid: "65679429"
 
 1. من لوحة المعلومات، حدد **"إضافة جهاز**".
 
-2. اختر نوع الجهاز المطلوب إضافته. يمكنك اختيار إضافة Windows 10، Windows 11، Windows Server 2019، Windows Server 2016، وLinux (Ubuntu).
+2. اختر نوع الجهاز المطلوب إضافته. يمكنك اختيار إضافة Windows 10 Windows 11 وWindows Server 2019 وWindows Server 2016 وLinux (Ubuntu).
 
    :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="إعداد المعمل مع خيارات الجهاز" lightbox="../../media/add-machine-optionsnew.png":::
 
@@ -159,10 +159,7 @@ ms.locfileid: "65679429"
    > في عمود **حالة المحاكي** ، يمكنك المرور فوق أيقونة المعلومات لمعرفة حالة تثبيت عامل.
 
 
-## <a name="add-a-domain-controller-preview"></a>إضافة وحدة تحكم بالمجال (معاينة)
-
-> [!IMPORTANT]
-> تتعلق بعض المعلومات بالناتج الذي تم إصداره مسبقا والذي قد يتم تعديله بشكل كبير قبل إصداره تجاريا. لا تقدم Microsoft أي ضمانات، صريحة أو ضمنية، فيما يتعلق بالمعلومات المقدمة هنا.
+## <a name="add-a-domain-controller"></a>إضافة وحدة تحكم بالمجال 
 
 أضف وحدة تحكم بالمجال لتشغيل سيناريوهات معقدة مثل الحركة الجانبية والهجمات متعددة المستويات عبر أجهزة متعددة.
 
@@ -172,7 +169,7 @@ ms.locfileid: "65679429"
 
 1. من لوحة المعلومات، حدد **"إضافة جهاز**".
 
-2. حدد **Windows Server 2019**، ثم حدد **Set as domain controller**. 
+2. حدد **Windows Server 2019**، ثم حدد **"تعيين كوحدة تحكم بالمجال**". 
 
 3. عند توفير وحدة التحكم بالمجال، ستتمكن من إنشاء أجهزة مرتبطة بالمجال بالنقر فوق **"إضافة جهاز**". ثم حدد Windows 10 / Windows 11، وحدد **"انضمام إلى المجال**". 
 
@@ -219,9 +216,9 @@ ms.locfileid: "65679429"
 > [!NOTE]
 > يتم الاتصال بأجهزة الاختبار باستخدام RDP. تأكد من أن إعدادات جدار الحماية تسمح باتصالات RDP.
 
-1. الاتصال إلى جهازك وتشغيل محاكاة الهجوم عن طريق تحديد **الاتصال**.
+1. الاتصال بجهازك وتشغيل محاكاة الهجوم عن طريق تحديد **Connect**.
 
-    :::image type="content" source="images/test-machine-table.png" alt-text="زر الاتصال لأجهزة الاختبار" lightbox="images/test-machine-table.png":::
+    :::image type="content" source="images/test-machine-table.png" alt-text="الزر &quot;اتصال&quot; لأجهزة الاختبار" lightbox="images/test-machine-table.png":::
 
 
    :::image type="content" source="images/remote-connection.png" alt-text="شاشة اتصال سطح المكتب البعيد" lightbox="images/remote-connection.png":::

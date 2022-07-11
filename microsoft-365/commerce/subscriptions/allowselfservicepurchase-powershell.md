@@ -21,12 +21,12 @@ search.appverid:
 description: تعرف على كيفية استخدام AllowSelfServicePurchase PowerShell cmdlet لتشغيل عملية شراء الخدمة الذاتية أو إيقاف تشغيلها.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 4/7/2022
-ms.openlocfilehash: 7c9ac6a1e58049d188d4cd29441d8e0689f2c787
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: d9be7179ed26a35b2e04af8386f161de935b1ae1
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530827"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714695"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>استخدام AllowSelfServicePurchase للوحدة النمطية MSCommerce PowerShell
 
@@ -108,6 +108,10 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Business باستخدام ميزة Windows المختلطة | CFQ7TTC0HX99 |
 | Microsoft 365 F3 | CFQ7TTC0LH05 |
+| Dynamics 365 Marketing | CFQ7TTC0LH3N |
+| إرفاق تسويق Dynamics 365 | CFQ7TTC0LHWP | 
+| Dynamics 365 Marketing Additional Application | CFQ7TTC0LHVK |
+| Dynamics 365 Marketing Additional Non-Prod Application | CFQ7TTC0LHWM |
 
 *تم تغيير هذه المعرفات. إذا قمت مسبقا بحظر المنتجات باستخدام المعرف القديم، يتم حظرها تلقائيا باستخدام المعرفات الجديدة. لا يلزم عمل إضافي.
 
@@ -183,7 +187,7 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 Uninstall-Module -Name MSCommerce
 ```-->
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [إدارة مشتريات الخدمة الذاتية (مسؤول)](manage-self-service-purchases-admins.md) (مقالة)
 

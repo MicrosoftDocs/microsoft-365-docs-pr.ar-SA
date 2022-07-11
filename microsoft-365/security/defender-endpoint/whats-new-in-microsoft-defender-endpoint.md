@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9cc85dc768696169c8da164975278a661c755f94
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 0949e979bfc2f0e2f784342e2a7c2f326908b49d
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492414"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714608"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>ما الجديد في Microsoft Defender لنقطة النهاية؟
 
@@ -60,13 +60,19 @@ ms.locfileid: "66492414"
 - [ما الجديد في Defender لنقطة النهاية على iOS](ios-whatsnew.md)
 - [ما الجديد في Defender لنقطة النهاية على Linux](linux-whatsnew.md)
 
+
+## <a name="july-2022"></a>يوليو 2022
+- - [إضافة أجهزة وحدة التحكم بالمجال - تحسين مختبر التقييم](evaluation-lab.md#add-a-domain-controller)<br>متوفر الآن بشكل عام - أضف وحدة تحكم بالمجال لتشغيل سيناريوهات معقدة مثل الحركة الجانبية والهجمات متعددة المراحل عبر أجهزة متعددة.
+
+
+
 ## <a name="june-2022"></a>يونيو 2022
 - [يتكامل Defender for Servers Plan 2 الآن مع الحل الموحد MDE](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)<br>يمكنك الآن البدء في نشر الحل الحديث الموحد ل Windows Server 2012 R2 و2016 على الخوادم التي يغطيها Defender for Servers Plan 2 باستخدام زر واحد.
 
 ## <a name="may-2022"></a>مايو 2022
 - [الحماية من العبث ب macOS (معاينة)](tamperprotection-macos.md)<br>تساعد الحماية من العبث بالبيانات على منع الإزالة غير المصرح بها Microsoft Defender لنقطة النهاية على macOS.
 
-- [إضافة أجهزة وحدة التحكم بالمجال - تحسين مختبر التقييم (معاينة)](evaluation-lab.md#add-a-domain-controller-preview)<br>أضف وحدة تحكم بالمجال لتشغيل سيناريوهات معقدة مثل الحركة الجانبية والهجمات متعددة المستويات عبر أجهزة متعددة.
+- [إضافة أجهزة وحدة التحكم بالمجال - تحسين مختبر التقييم (معاينة)](evaluation-lab.md#add-a-domain-controller)<br>أضف وحدة تحكم بالمجال لتشغيل سيناريوهات معقدة مثل الحركة الجانبية والهجمات متعددة المستويات عبر أجهزة متعددة.
 
 ## <a name="april-2022"></a>أبريل 2022
 - [تحديث الإلحاق وتماثل الميزات ل Windows Server 2012 R2 وWindows Server 2016)](configure-server-endpoints.md)<br/> حزمة الحلول الموحدة الجديدة متاحة الآن بشكل عام وتجعل من السهل إلحاق الخوادم عن طريق إزالة التبعيات وخطوات التثبيت. بالإضافة إلى ذلك، تأتي حزمة الحلول الموحدة هذه مع العديد من تحسينات الميزات الجديدة.

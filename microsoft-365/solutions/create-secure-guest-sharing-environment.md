@@ -1,5 +1,5 @@
 ---
-title: إنشاء بيئة مشاركة ضيف آمنة
+title: إنشاء بيئة مشاركة ضيف أكثر أمانا
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,17 +18,17 @@ ms.custom:
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
-description: تعرف على الخيارات المتوفرة لإنشاء بيئة مشاركة ضيف آمنة في Microsoft 365، مما يوفر وصول الضيف لتحسين التعاون.
-ms.openlocfilehash: 26daea8795084a87a2891a5dd04da172692990cb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+description: تعرف على الخيارات المتوفرة لإنشاء بيئة مشاركة ضيف أكثر أمانا في Microsoft 365، ما يوفر وصول الضيف لتحسين التعاون.
+ms.openlocfilehash: ce635d96cf793b0c655b02ccdb9e7077cd245bb4
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490908"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714717"
 ---
-# <a name="create-a-secure-guest-sharing-environment"></a>إنشاء بيئة مشاركة ضيف آمنة
+# <a name="create-a-more-secure-guest-sharing-environment"></a>إنشاء بيئة مشاركة ضيف أكثر أمانا
 
-في هذه المقالة، سنستعرض مجموعة متنوعة من الخيارات لإنشاء بيئة مشاركة ضيف آمنة في Microsoft 365. هذه أمثلة لإعطائها فكرة عن الخيارات المتاحة. يمكنك استخدام هذه الإجراءات في مجموعات مختلفة لتلبية احتياجات الأمان والتوافق لمؤسستك.
+في هذه المقالة، سنستعرض مجموعة متنوعة من الخيارات لإنشاء بيئة مشاركة ضيف أكثر أمانا في Microsoft 365. هذه أمثلة لإعطائها فكرة عن الخيارات المتاحة. يمكنك استخدام هذه الإجراءات في مجموعات مختلفة لتلبية احتياجات الأمان والتوافق لمؤسستك.
 
 تتضمن هذه المقالة:
 

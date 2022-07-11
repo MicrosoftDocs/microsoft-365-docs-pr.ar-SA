@@ -1,5 +1,5 @@
 ---
-title: التعرف على نهج الاستبقاء & التسميات للاحتفاظ بالمحتوى أو حذفه تلقائيا
+title: التعرف على نهج الاستبقاء & التسميات للاحتفاظ بها أو حذفها
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,13 +17,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: تعرف على نهج الاستبقاء وتسميات الاستبقاء التي تساعدك على الاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه.
-ms.openlocfilehash: c78bcae040ae1c210c58923b924f099a5ec396bc
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: تعرف على نهج الاستبقاء وتسميات الاستبقاء للاحتفاظ بما تحتاج إليه وحذف ما لا تحتاج إليه.
+ms.openlocfilehash: 2fd1d2e792a7b1d0635ff59ad5e63ce963e38ccc
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622514"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714520"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>التعرف على نهج الاستبقاء وتسميات الاستبقاء
 

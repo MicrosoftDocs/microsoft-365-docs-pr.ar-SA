@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 04/08/2022
+ms.date: 07/08/2022
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: تعرف على حل eDiscovery (Premium) في Microsoft Purview. توفر هذه المقالة نظرة عامة على eDiscovery (Premium) في Microsoft Purview، وهي أداة لمساعدتك على إدارة التحقيقات الداخلية والخارجية. كما أنها تقوم بتدوين أسباب العمل لاستخدام eDiscovery (Premium) لإدارة تحقيقاتك القانونية.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5331ada9baf364f62c44c63a5e2e5b2b4d060292
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 95dbeb33ad054845b7d2a7a5bc019ce0cd727093
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639831"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714564"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>نظرة عامة على Microsoft Purview eDiscovery (Premium)
 
@@ -93,38 +93,9 @@ ms.locfileid: "66639831"
 
 ## <a name="subscriptions-and-licensing"></a>الاشتراكات والترخيص
 
-يتطلب ترخيص eDiscovery (Premium) اشتراك المؤسسة المناسب والترخيص لكل مستخدم.
+للحصول على معلومات حول التراخيص التي توفر للمستخدم حقوق الاستفادة من eDiscovery (Premium) يرجى مراجعة [إرشادات Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) والاطلاع على قسم "eDiscovery والتدقيق" في [جدول مقارنة Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145). 
 
-- **اشتراك المؤسسة:** للوصول إلى eDiscovery (Premium) في مدخل التوافق في Microsoft Purview، يجب أن يكون لدى مؤسستك أحد الإجراءات التالية:
-
-  - اشتراك Microsoft 365 E5 أو Office 365 E5
-  
-  - اشتراك Microsoft 365 E3 مع المكوّن الإضافي لتوافق E5
-
-  - اشتراك Microsoft 365 E3 مع الوظيفة الإضافية E5 eDiscovery و Audit
-
-  - اشتراك Microsoft 365 Education A5 أو Office 365 Education A5
-
-   إذا لم يكن لديك خطة Microsoft 365 E5 موجودة وتريد تجربة eDiscovery (Premium)، يمكنك [إضافة Microsoft 365](/office365/admin/try-or-buy-microsoft-365) إلى اشتراكك الحالي أو [التسجيل للحصول على إصدار تجريبي](https://www.microsoft.com/microsoft-365/enterprise) من Microsoft 365 E5.
-
-- **ترخيص لكل مستخدم:** لإضافة مستخدم كوصي في حالة eDiscovery مسبقة، يجب تعيين أحد التراخيص التالية لهذا المستخدم، اعتمادا على اشتراك مؤسستك:
-
-  - Microsoft 365: يجب تعيين أي مما يلي للمستخدمين:
-  
-    - ترخيص Microsoft 365 E5 أو ترخيص وظيفة E5 Compliance الإضافية أو وظيفة E5 eDiscovery الإضافية والتدقيق
-
-    - يجب تعيين وظيفة توافق F5 أو F5 Security & Compliance لمستخدمي Microsoft 365 Frontline
-
-    - يجب تعيين ترخيص A5 لمستخدمي Microsoft 365 Education
-
-  - Office 365: يجب تعيين ترخيص Office 365 E5 أو Office 365 Education A5 للمستخدمين.
-
-للحصول على معلومات حول الترخيص، قم بتنزيل قسم "eDiscovery والتدقيق" وراجعه في [جدول مقارنة Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145).
-
-للحصول على معلومات حول كيفية تعيين التراخيص، راجع [تعيين التراخيص للمستخدمين](/microsoft-365/admin/manage/assign-licenses-to-users).
-
-> [!NOTE]
-> يحتاج المستخدمون فقط إلى ترخيص E5 أو A5 (أو ترخيص الوظيفة الإضافية المناسب) لإضافته كوصيين على حالة eDiscovery (Premium). لا يحتاج مسؤولو تكنولوجيا المعلومات أو مديرو eDiscovery أو المساعدون أو المساعدون أو المحققون الذين يستخدمون eDiscovery (Premium) لإدارة الحالات ومراجعة بيانات الحالة إلى ترخيص E5 أو A5 أو وظيفة إضافية.
+للحصول على معلومات حول كيفية تعيين التراخيص، راجع [تعيين التراخيص للمستخدمين](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## <a name="get-started-with-ediscovery-premium"></a>بدء استخدام eDiscovery (Premium)
 

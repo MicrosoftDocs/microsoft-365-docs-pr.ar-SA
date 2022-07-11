@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إدارة الأذونات والكتل في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ea60746554c9ad52c3e8b6d23989b2b7659cd0ad
-ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
+ms.openlocfilehash: ad8920ae83b99528c47b00d375affb0fbfa6c330
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66060927"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714498"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>إدارة قائمة السماح/الحظر للمستأجر
 
@@ -33,7 +33,7 @@ ms.locfileid: "66060927"
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-في المؤسسات Microsoft 365 التي لها علب بريد في مؤسسات Exchange Online Protection Exchange Online أو مستقلة (EOP) بدون علب بريد Exchange Online، قد لا توافق على قرار تصفية EOP. على سبيل المثال، قد يتم وضع علامة على رسالة جيدة على أنها سيئة (إيجابية خاطئة)، أو قد يتم السماح برسالة سيئة من خلال (سلبي خطأ).
+في مؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، قد لا توافق على قرار تصفية EOP. على سبيل المثال، قد يتم وضع علامة على رسالة جيدة على أنها سيئة (إيجابية خاطئة)، أو قد يتم السماح برسالة سيئة من خلال (سلبي خطأ).
 
 توفر لك قائمة السماح/الحظر للمستأجر في مدخل Microsoft 365 Defender طريقة لتجاوز أحكام تصفية Microsoft 365 يدويا. يتم استخدام قائمة السماح/الحظر للمستأجر أثناء تدفق البريد للرسائل الواردة (لا ينطبق على الرسائل داخل المؤسسة) وفي وقت نقرات المستخدم. يمكنك تحديد أنواع التجاوزات التالية:
 
@@ -45,7 +45,10 @@ ms.locfileid: "66060927"
 - الملفات المطلوب السماح بها.
 - رسائل البريد الإلكتروني أو المجالات التي يجب السماح بها للمرسل.
 
-تصف هذه المقالة كيفية تكوين الإدخالات في قائمة السماح/الحظر للمستأجر في مدخل Microsoft 365 Defender أو في PowerShell (Exchange Online PowerShell للمؤسسات Microsoft 365 مع علب البريد في Exchange Online؛ EOP PowerShell مستقل للمؤسسات دون Exchange Online علب البريد).
+تصف هذه المقالة كيفية تكوين الإدخالات في قائمة السماح/الحظر للمستأجر في مدخل Microsoft 365 Defender أو في PowerShell (Exchange Online PowerShell لمؤسسات Microsoft 365 مع علب بريد في Exchange Online؛ EOP PowerShell مستقل للمؤسسات دون Exchange Online  علب البريد).
+
+> [!NOTE]
+> [قائمة "حظر عناوين URL التالية" في نهج الارتباطات الآمنة](safe-links.md#block-the-following-urls-list-for-safe-links) قيد الإهمال. يمكنك الآن إدارة إدخالات عنوان URL للكتلة في قائمة السماح/الحظر للمستأجر. سنحاول ترحيل الإدخالات الموجودة من قائمة "حظر عناوين URL التالية" لحظر إدخالات URL في قائمة السماح/الحظر للمستأجر. سيتم عزل الرسائل التي تحتوي على عنوان URL المحظور.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
@@ -71,7 +74,7 @@ ms.locfileid: "66060927"
 
 - بشكل افتراضي، ستنتهي صلاحية الإدخالات في قائمة السماح/الحظر للمستأجر بعد 30 يوما. يمكنك تحديد تاريخ أو تعيينه على ألا تنتهي صلاحيته أبدا.
 
-- للاتصال Exchange Online PowerShell، راجع [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell مستقل، راجع [الاتصال إلى Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- للاتصال Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell المستقل، راجع [الاتصال Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - يجب تعيين أذونات لك في **Exchange Online** قبل أن تتمكن من تنفيذ الإجراءات الواردة في هذه المقالة:
   - لإضافة إدخالات وإزالتها من قائمة السماح/الحظر للمستأجر، يجب أن تكون عضوا في إحدى مجموعات الأدوار التالية:

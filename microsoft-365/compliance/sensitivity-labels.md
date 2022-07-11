@@ -22,12 +22,12 @@ description: استخدم أوصاف الحساسية من حماية البيا
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: f06b4a2f40987481c3870ee512e60497f57d851a
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: 4d1c0f590535691f0ac7c10fdff8c67261753577
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687795"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714125"
 ---
 # <a name="learn-about-sensitivity-labels"></a>التعرّف على تسميات الحساسية
 
@@ -130,7 +130,7 @@ ms.locfileid: "66687795"
 - إعدادات التسمية التي يمكنك تكوينها لتلك التسمية
 - مكان ظهور التسمية للمستخدمين
 
-يتيح لك تكوين النطاق هذا الحصول على تسميات الحساسية الخاصة بالمستندات ورسائل البريد الإلكتروني فقط ولا يمكن تحديدها للحاويات. وبالمثل، تسميات الحساسية التي هي فقط للحاويات ولا يمكن تحديدها للمستندات ورسائل البريد الإلكتروني. يمكنك أيضا تحديد نطاق أصول Microsoft Purview Data Map:
+يتيح لك تكوين النطاق هذا الحصول على تسميات الحساسية فقط لعناصر مثل المستندات ورسائل البريد الإلكتروني، ولا يمكن تحديدها للحاويات. وبالمثل، تسميات الحساسية التي هي فقط للحاويات ولا يمكن تحديدها للمستندات ورسائل البريد الإلكتروني. يمكنك أيضا تحديد نطاق أصول البيانات المخططة ل Microsoft Purview Data Map:
 
 ![خيارات النطاق لأوصاف الحساسية.](../media/sensitivity-labels-scopes.png)
 
