@@ -11,12 +11,12 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: تعيين المدة التي تستغرقها جلسة عمل المستخدم في Microsoft 365 قبل انتهاء مهلتها.
-ms.openlocfilehash: 611541ebc16c3ee8c187b8fc1a5b33661b221897
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 3dd845d5488d2385297a87908253740ef774eb5d
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487466"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720402"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>مهلة جلسة العمل الخاملة ل Microsoft 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "66487466"
 
 ## <a name="turn-on-idle-session-timeout"></a>تشغيل عطل جلسة العمل
 
-إذا لم تكن مسؤولا عموميا في Microsoft 365 أو Office 365، فلن ترى علامة تبويب **الخصوصية & الأمان**.
+يجب أن تكون عضوا في أدوار المسؤول العمومي أو مسؤول الأمان أو مسؤول التطبيق أو مسؤول تطبيق السحابة للاطلاع على إعداد مهلة جلسة العمل الخاملة.
 
 1. في مركز مسؤولي Microsoft 365، حدد علامة تبويب [الخصوصية & "أمان](https://go.microsoft.com/fwlink/p/?linkid=2072756) **إعدادات** **->** المؤسسة" وحدد **مهلة جلسة العمل "خاملة**".  
 

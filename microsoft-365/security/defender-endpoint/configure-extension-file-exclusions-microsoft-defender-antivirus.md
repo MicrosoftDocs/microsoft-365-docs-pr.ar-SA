@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7b1614738b17d7f3cf78a6bfabb84f85196d42ff
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 8e9c153f55b38871ebf6af7a4511af2e637fad68
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873237"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720468"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>تكوين الاستثناءات والتحقق من صحتها استنادا إلى ملحق الملف وموقع المجلد
 
@@ -32,26 +32,25 @@ ms.locfileid: "65873237"
 **الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
-يمكنك تحديد استثناءات برنامج الحماية من الفيروسات من Microsoft Defender التي تنطبق على [عمليات الفحص المجدولة](schedule-antivirus-scans.md)، [والمسح حسب الطلب](run-scan-microsoft-defender-antivirus.md)، [والحماية والمراقبة في الوقت الحقيقي دائما](configure-real-time-protection-microsoft-defender-antivirus.md). **بشكل عام، يجب ألا تحتاج إلى تطبيق الاستثناءات**. إذا كنت بحاجة إلى تطبيق الاستثناءات، يمكنك الاختيار من بين عدة أنواع مختلفة:
+يمكنك تحديد استثناءات برنامج الحماية من الفيروسات من Microsoft Defender التي تنطبق على [عمليات الفحص المجدولة](schedule-antivirus-scans.md)، [والمسح حسب الطلب](run-scan-microsoft-defender-antivirus.md)[، والحماية والمراقبة في الوقت الحقيقي دائما](configure-real-time-protection-microsoft-defender-antivirus.md). **بشكل عام، يجب ألا تحتاج إلى تطبيق الاستثناءات**. إذا كنت بحاجة إلى تطبيق الاستثناءات، يمكنك الاختيار من بين عدة أنواع مختلفة:
 
 - الاستثناءات المستندة إلى ملحقات الملفات ومواقع المجلدات (الموضحة في هذه المقالة)
 - [استثناءات الملفات التي يتم فتحها بواسطة العمليات](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> لا تنطبق استثناءات برنامج الحماية من الفيروسات من Microsoft Defender على قدرات Microsoft Defender لنقطة النهاية الأخرى، مثل [قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction) [والوصول إلى المجلدات الخاضعة للرقابة](/microsoft-365/security/defender-endpoint/controlled-folders). لا يزال بإمكان الملفات التي تستثنيها باستخدام الأساليب الموضحة في هذه المقالة تشغيل تنبيهات الكشف التلقائي والاستجابة على النقط النهائية وغيرها من عمليات الكشف.
-> لاستبعاد الملفات على نطاق واسع، أضفها إلى [المؤشرات المخصصة](/microsoft-365/security/defender-endpoint/manage-indicators) Microsoft Defender لنقطة النهاية.
+> لا تنطبق استثناءات برنامج الحماية من الفيروسات من Microsoft Defender على إمكانيات Microsoft Defender لنقطة النهاية الأخرى، مثل [قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction.md) [والوصول إلى المجلدات التي يتم التحكم فيها](controlled-folders.md). لا يزال بإمكان الملفات التي تستثنيها باستخدام الأساليب الموضحة في هذه المقالة تشغيل تنبيهات الكشف عن نقاط النهاية والاستجابة لها (EDR) وغيرها من عمليات الكشف.
+> لاستبعاد الملفات على نطاق واسع، أضفها إلى [المؤشرات المخصصة](manage-indicators.md) Microsoft Defender لنقطة النهاية.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-راجع [التوصيات لتعريف الاستثناءات](configure-exclusions-microsoft-defender-antivirus.md) قبل تعريف قوائم الاستبعاد الخاصة بك.
+راجع [توصيات تعريف الاستثناءات](configure-exclusions-microsoft-defender-antivirus.md) قبل تحديد قوائم الاستبعاد.
 
 ## <a name="exclusion-lists"></a>قوائم الاستبعاد
 
-لاستبعاد ملفات معينة من عمليات المسح الضوئي برنامج الحماية من الفيروسات من Microsoft Defender، يمكنك تعديل قوائم الاستبعاد الخاصة بك. تتضمن برنامج الحماية من الفيروسات من Microsoft Defender العديد من الاستثناءات التلقائية استنادا إلى سلوكيات نظام التشغيل المعروفة وملفات الإدارة النموذجية، مثل تلك المستخدمة في إدارة المؤسسة وإدارة قاعدة البيانات وسيناريوهات المؤسسة وحالاتها الأخرى.
+لاستبعاد ملفات معينة من عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender، يمكنك تعديل قوائم الاستبعاد. يتضمن برنامج الحماية من الفيروسات من Microsoft Defender العديد من الاستثناءات التلقائية استنادا إلى سلوكيات نظام التشغيل المعروفة وملفات الإدارة النموذجية، مثل تلك المستخدمة في إدارة المؤسسة وإدارة قاعدة البيانات وسيناريوهات المؤسسة وحالاتها الأخرى.
 
 > [!NOTE]
-> تنطبق الاستثناءات على عمليات الكشف عن التطبيقات غير المرغوب فيها (PUA) أيضا.
->
+> تنطبق الاستثناءات على [اكتشافات التطبيقات غير المرغوب فيها (PUA)](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) أيضا.
 > تنطبق الاستثناءات التلقائية فقط على Windows Server 2016 والإي وقت لاحق. هذه الاستثناءات غير مرئية في تطبيق أمن Windows وفي PowerShell.
 
 يسرد الجدول التالي بعض الأمثلة على الاستثناءات استنادا إلى ملحق الملف وموقع المجلد.
@@ -74,7 +73,7 @@ ms.locfileid: "65873237"
 
 - لا تستبعد محركات أقراص الشبكة المعينة. حدد مسار الشبكة الفعلي.
 
-- لن يتم تضمين المجلدات التي يتم إعادة توزيع النقاط التي تم إنشاؤها بعد بدء تشغيل الخدمة برنامج الحماية من الفيروسات من Microsoft Defender والتي تمت إضافتها إلى قائمة الاستبعاد. أعد تشغيل الخدمة (عن طريق إعادة تشغيل Windows) ليتم التعرف على نقاط إعادة التوزيع الجديدة كهدف استبعاد صالح.
+- لن يتم تضمين المجلدات التي يتم إعادة توزيع النقاط التي تم إنشاؤها بعد بدء تشغيل خدمة الحماية من الفيروسات من Microsoft Defender والتي تمت إضافتها إلى قائمة الاستبعاد. أعد تشغيل الخدمة (عن طريق إعادة تشغيل Windows) ليتم التعرف على نقاط إعادة التوزيع الجديدة كهدف استبعاد صالح.
 
 - تنطبق الاستثناءات على [عمليات الفحص المجدولة](scheduled-catch-up-scans-microsoft-defender-antivirus.md)، [والمسح الضوئي عند الطلب](run-scan-microsoft-defender-antivirus.md)، [والحماية في الوقت الحقيقي](configure-real-time-protection-microsoft-defender-antivirus.md)، ولكن ليس عبر Defender لنقطة النهاية. لتحديد الاستثناءات عبر Defender لنقطة النهاية، استخدم [المؤشرات المخصصة](manage-indicators.md).
 
@@ -84,18 +83,18 @@ ms.locfileid: "65873237"
 
 ## <a name="configure-the-list-of-exclusions-based-on-folder-name-or-file-extension"></a>تكوين قائمة الاستثناءات استنادا إلى اسم المجلد أو ملحق الملف
 
-يمكنك الاختيار من بين عدة أساليب لتعريف الاستثناءات برنامج الحماية من الفيروسات من Microsoft Defender.
+يمكنك الاختيار من بين عدة طرق لتحديد الاستثناءات لبرنامج الحماية من الفيروسات من Microsoft Defender.
 
 ### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>استخدام Intune لتكوين استثناءات اسم الملف أو المجلد أو ملحق الملف
 
 راجع المقالات التالية:
 
 - [تكوين إعدادات تقييد الجهاز في Microsoft Intune](/intune/device-restrictions-configure)
-- [برنامج الحماية من الفيروسات من Microsoft Defender إعدادات تقييد الجهاز Windows 10 في Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+- [إعدادات تقييد جهاز الحماية من الفيروسات من Microsoft Defender Windows 10 في Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>استخدام Configuration Manager لتكوين استثناءات اسم الملف أو المجلد أو ملحق الملف
 
-راجع [كيفية إنشاء نهج مكافحة البرامج الضارة ونشرها: إعدادات الاستثناء](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) للحصول على تفاصيل حول تكوين إدارة نقاط النهاية من Microsoft (الفرع الحالي).
+راجع [كيفية إنشاء نهج مكافحة البرامج الضارة ونشرها: إعدادات الاستثناء](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) للحصول على تفاصيل حول تكوين Microsoft إدارة نقاط النهاية (الفرع الحالي).
 
 ### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>استخدام نهج المجموعة لتكوين استثناءات ملحق المجلد أو الملف
 
@@ -157,14 +156,14 @@ ms.locfileid: "65873237"
 > [!IMPORTANT]
 > إذا قمت بإنشاء قائمة، إما باستخدام `Set-MpPreference` cmdlet أو `Add-MpPreference`باستخدامه `Set-MpPreference` مرة أخرى، فسيؤدي ذلك إلى الكتابة فوق القائمة الموجودة.
 
-على سبيل المثال، قد تتسبب القصاصة البرمجية التالية في إجراء عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender لاستبعاد أي ملف ذي `.test` ملحق الملف:
+على سبيل المثال، قد تتسبب القصاصة البرمجية التالية في أن تقوم عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender باستبعاد أي ملف بملحق `.test` الملف:
 
 ```PowerShell
 Add-MpPreference -ExclusionExtension ".test"
 ```
 
 > [!TIP]
-> لمزيد من المعلومات، راجع [استخدام أوامر Cmdlets PowerShell لتكوين وتشغيل برنامج الحماية من الفيروسات من Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) [وSmdlets لبرنامج الحماية من الفيروسات من Defender](/powershell/module/defender/).
+> لمزيد من المعلومات، راجع [استخدام أوامر Cmdlets PowerShell لتكوين أوامر cmdlets لبرنامج الحماية من الفيروسات والحماية من الفيروسات من Microsoft Defender وتشغيلها](use-powershell-cmdlets-microsoft-defender-antivirus.md).[](/powershell/module/defender/)
 
 ### <a name="use-windows-management-instrumentation-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>استخدام Windows Management Instrumentation (WMI) لتكوين اسم الملف أو المجلد أو استثناءات ملحق الملف
 
@@ -178,7 +177,7 @@ ExclusionPath
 يعد استخدام **Set** **وإضافة** **وإزالة** مماثلا لنظيراتها في PowerShell: `Set-MpPreference`و، `Add-MpPreference`و.`Remove-MpPreference`
 
 > [!TIP]
-> لمزيد من المعلومات، راجع [واجهات برمجة التطبيقات Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+> لمزيد من المعلومات، راجع [واجهات برمجة تطبيقات Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 <a id="man-tools"></a>
 
@@ -198,7 +197,6 @@ ExclusionPath
 > - يمكنك فقط استخدام ستة أحرف بدل كحد أقصى لكل إدخال.
 > - لا يمكنك استخدام حرف بدل بدلا من حرف محرك الأقراص.
 > - توجد علامة نجمية `*` في استثناء مجلد في مكانها لمجلد واحد. استخدم مثيلات `\*\` متعددة للإشارة إلى مجلدات متعددة متداخلة بأسماء غير محددة.
-> - حاليا، لا يعتمد Microsoft Endpoint Configuration Manager أحرف البدل (مثل `*` أو`?`).
     
 يصف الجدول التالي كيفية استخدام أحرف البدل ويوفر بعض الأمثلة.
 
@@ -298,7 +296,7 @@ ExclusionPath
 
 إذا كنت تستخدم PowerShell، يمكنك استرداد القائمة بطريقتين:
 
-- استرداد حالة كافة تفضيلات برنامج الحماية من الفيروسات من Microsoft Defender. يتم عرض كل قائمة على أسطر منفصلة، ولكن يتم دمج العناصر الموجودة داخل كل قائمة في نفس السطر.
+- استرداد حالة جميع تفضيلات برنامج الحماية من الفيروسات من Microsoft Defender. يتم عرض كل قائمة على أسطر منفصلة، ولكن يتم دمج العناصر الموجودة داخل كل قائمة في نفس السطر.
 - اكتب حالة كافة التفضيلات إلى متغير، واستخدم هذا المتغير لاستدعاء القائمة المحددة التي تهتم بها فقط. تتم كتابة كل استخدام لسطر `Add-MpPreference` جديد.
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>التحقق من صحة قائمة الاستبعاد باستخدام MpCmdRun
@@ -313,9 +311,9 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> يتطلب التحقق من الاستثناءات باستخدام MpCmdRun برنامج الحماية من الفيروسات من Microsoft Defender إصدار 4.18.2111-5.0 (الذي تم إصداره في ديسمبر 2021) أو إصدار أحدث.
+> يتطلب التحقق من الاستثناءات باستخدام MpCmdRun الإصدار 4.18.2111-5.0 من برنامج الحماية من الفيروسات من Microsoft Defender (الذي تم إصداره في ديسمبر 2021) أو إصدار أحدث.
 
-### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>مراجعة قائمة الاستثناءات إلى جانب جميع تفضيلات برنامج الحماية من الفيروسات من Microsoft Defender الأخرى باستخدام PowerShell
+### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>مراجعة قائمة الاستثناءات إلى جانب جميع تفضيلات برنامج الحماية من الفيروسات الأخرى في Microsoft Defender باستخدام PowerShell
 
 استخدم cmdlet التالي:
 
@@ -327,7 +325,7 @@ Get-MpPreference
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="إخراج PowerShell ل Get-MpPreference" lightbox="../../media/wdav-powershell-get-exclusions-variable.png":::
 
-لمزيد من المعلومات، راجع [استخدام أوامر Cmdlets PowerShell لتكوين وتشغيل برنامج الحماية من الفيروسات من Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) [وSmdlets لبرنامج الحماية من الفيروسات من Defender](/powershell/module/defender/).
+لمزيد من المعلومات، راجع [استخدام أوامر Cmdlets PowerShell لتكوين أوامر cmdlets لبرنامج الحماية من الفيروسات والحماية من الفيروسات من Microsoft Defender وتشغيلها](use-powershell-cmdlets-microsoft-defender-antivirus.md).[](/powershell/module/defender/)
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>استرداد قائمة استثناءات معينة باستخدام PowerShell
 
@@ -343,7 +341,7 @@ $WDAVprefs.ExclusionPath
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="إخراج PowerShell يعرض الإدخالات في قائمة الاستبعاد فقط" lightbox="../../media/wdav-powershell-get-exclusions-variable.png":::
 
-لمزيد من المعلومات، راجع [استخدام أوامر Cmdlets PowerShell لتكوين وتشغيل برنامج الحماية من الفيروسات من Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) [وSmdlets لبرنامج الحماية من الفيروسات من Defender](/powershell/module/defender/).
+لمزيد من المعلومات، راجع [استخدام أوامر Cmdlets PowerShell لتكوين أوامر cmdlets لبرنامج الحماية من الفيروسات والحماية من الفيروسات من Microsoft Defender وتشغيلها](use-powershell-cmdlets-microsoft-defender-antivirus.md).[](/powershell/module/defender/)
 
 <a id="validate"></a>
 
@@ -357,7 +355,7 @@ $WDAVprefs.ExclusionPath
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
 ```
 
-إذا برنامج الحماية من الفيروسات من Microsoft Defender الإبلاغ عن البرامج الضارة، فإن القاعدة لا تعمل. إذا لم يكن هناك أي تقرير عن البرامج الضارة وكان الملف الذي تم تنزيله موجودا، فإن الاستبعاد يعمل. يمكنك فتح الملف لتأكيد أن المحتويات هي نفسها ما هو موضح على [موقع ويب ملف اختبار EICAR](http://www.eicar.org/86-0-Intended-use.html).
+إذا كان برنامج الحماية من الفيروسات من Microsoft Defender يبلغ عن برامج ضارة، فلن تعمل القاعدة. إذا لم يكن هناك أي تقرير عن البرامج الضارة وكان الملف الذي تم تنزيله موجودا، فإن الاستبعاد يعمل. يمكنك فتح الملف لتأكيد أن المحتويات هي نفسها ما هو موضح على [موقع ويب ملف اختبار EICAR](http://www.eicar.org/86-0-Intended-use.html).
 
 يمكنك أيضا استخدام التعليمات البرمجية PowerShell التالية، التي تستدعي فئة .NET WebClient لتنزيل ملف الاختبار - كما هو الحال مع `Invoke-WebRequest` cmdlet؛ استبدال `c:\test.txt` بملف يتوافق مع القاعدة التي تقوم بالتحقق من صحتها:
 
@@ -386,7 +384,7 @@ $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt"
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [تكوين الاستثناءات والتحقق من صحتها في عمليات المسح الضوئي برنامج الحماية من الفيروسات من Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+- [تكوين الاستثناءات والتحقق من صحتها في عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
 - [تكوين الاستثناءات للملفات التي يتم فتحها بواسطة العمليات والتحقق من صحتها](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [تكوين استثناءات برنامج الحماية من الفيروسات من Microsoft Defender على خادم Windows](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [تكوين استثناءات برنامج الحماية من الفيروسات من Microsoft Defender على Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [الأخطاء الشائعة التي يجب تجنبها عند تحديد الاستثناءات](common-exclusion-mistakes-microsoft-defender-antivirus.md)

@@ -20,12 +20,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f668efd6c205d67d5aaf4ffa86fae6933f9a257a
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: e5ab7630ad0e749eedb6ced8b9895c0a632a527f
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686130"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720490"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>حماية إعدادات الأمان باستخدام الحماية من العبث
 
@@ -152,7 +152,6 @@ ms.locfileid: "66686130"
 
 ### <a name="requirements-for-managing-tamper-protection-in-endpoint-manager"></a>متطلبات إدارة الحماية من العبث في إدارة نقاط النهاية
 
-- يجب إلحاق أجهزتك [Microsoft Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/onboarding).
 - يجب أن يكون لديك [الأذونات المناسبة المعينة](/microsoft-365/security/defender-endpoint/assign-portal-access) ، مثل المسؤول العام أو مسؤول الأمان أو عمليات الأمان.
 - تستخدم مؤسستك [Microsoft إدارة نقاط النهاية لإدارة الأجهزة](/mem/endpoint-manager-getting-started). تراخيص (MICROSOFT إدارة نقاط النهاية (MEM) مطلوبة؛ يتم تضمين MEM في Microsoft 365 E3/E5، Enterprise Mobility + Security E3/E5، Microsoft 365 Business Premium، Microsoft 365 F1/F3، وMicrosoft 365 Government G3/G5، وتراخيص التعليم المقابلة.)
 - يجب أن تكون أجهزة Windows قيد التشغيل Windows 11 أو Windows 10 [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709) أو [1803](/lifecycle/announcements/windows-server-1803-end-of-servicing) أو [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) أو إصدار أحدث. (لمزيد من المعلومات حول الإصدارات، راجع [Windows 10 معلومات الإصدار](/windows/release-health/release-information).)

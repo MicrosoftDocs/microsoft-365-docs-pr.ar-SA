@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 06/17/2022
+ms.date: 07/11/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 34a5bd740b50eba561e2e138366ac05e732b016f
-ms.sourcegitcommit: ad30b6bfccb402a338a198cb13e250b6ea21d545
+ms.openlocfilehash: d90e39028f563c7b3913f6fd0dbf97222d1068d2
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66612764"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720424"
 ---
 # <a name="compare-microsoft-defender-for-endpoint-plans"></a>مقارنة خطط Microsoft Defender لنقطة النهاية
 
@@ -48,6 +48,16 @@ Microsoft Defender لنقطة النهاية هو نظام أساسي لأمان
 
 > [!IMPORTANT]
 > لا تتضمن الإصدارات المستقلة من Defender لنقطة النهاية الخطة 1 والخطة 2 تراخيص الخادم. لإلحاق الخوادم، مثل نقاط النهاية التي تعمل بنظام Windows Server أو Linux، ستحتاج إلى Defender for Servers Plan 1 أو الخطة 2 كجزء من عرض [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . لمعرفة المزيد. راجع [نظرة عامة على Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
+
+يتوفر Microsoft Defender لنقطة النهاية الخطة 1 كترخيص اشتراك مستخدم مستقل للعملاء التجاريين والتعليمين. كما يتم تضمينه كجزء من Microsoft 365 E3/A3.
+
+Microsoft Defender لنقطة النهاية الخطة 2، التي كانت تسمى سابقا Microsoft Defender لنقطة النهاية، متوفرة كترخيص مستقل وكجزء من الخطط التالية:
+
+- Windows 11 Enterprise E5/A5
+- Windows 10 Enterprise E5/A5
+- Microsoft 365 E5/A5/G5 (الذي يتضمن Windows 10 أو Windows 11 Enterprise E5)
+- Microsoft 365 E5/A5/G5/F5 Security
+- توافق & أمان Microsoft 365 F5
 
 ## <a name="mixed-licensing-scenarios"></a>سيناريوهات الترخيص المختلط
 
