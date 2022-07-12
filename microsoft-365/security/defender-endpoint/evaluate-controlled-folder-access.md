@@ -15,39 +15,33 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 4ccb91f0a8c181697eb525dd8f5576e6f6cdc0d1
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8e251222d71ad9559084ec39d7fa65a18b9e2c1a
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789811"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717109"
 ---
 # <a name="evaluate-controlled-folder-access"></a>تقييم الوصول المتحكم به إلى المجلد
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
-**منصات**
+**الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[الوصول إلى المجلدات التي يتم التحكم فيها](controlled-folders.md) هي ميزة تساعد على حماية المستندات والملفات من التعديل من قبل التطبيقات المشبوهة أو الضارة. يتم دعم الوصول إلى المجلدات التي يتم التحكم فيها على عملاء Windows Server 2019 و Windows Server 2022 و Windows 10 و Windows 11.
+[الوصول إلى المجلدات التي يتم التحكم فيها](controlled-folders.md) هي ميزة تساعد على حماية المستندات والملفات من التعديل من قبل التطبيقات المشبوهة أو الضارة. يتم دعم الوصول إلى المجلدات الخاضعة للرقابة على عملاء Windows Server 2019 وWindows Server 2022 Windows 10 Windows 11.
 
 وهو مفيد بشكل خاص في المساعدة على الحماية من [برامج الفدية الضارة](https://www.microsoft.com/wdsi/threats/ransomware) التي تحاول تشفير ملفاتك والاحتفاظ بها.
 
 تساعدك هذه المقالة على تقييم الوصول المتحكم به إلى المجلد. يشرح كيفية تمكين وضع التدقيق حتى تتمكن من اختبار الميزة مباشرة في مؤسستك.
-
-> [!TIP]
-> يمكنك أيضا زيارة موقع سيناريو العرض التوضيحي Microsoft Defender لنقطة النهاية على [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) لتأكيد عمل الميزة ومعرفة كيفية عملها.
-
-> [!NOTE]
-> تم إهمال الموقع التجريبي ل Defender لنقطة النهاية في demo.wd.microsoft.com وستتم إزالته في المستقبل.
 
 ## <a name="use-audit-mode-to-measure-impact"></a>استخدام وضع التدقيق لقياس التأثير
 
@@ -61,7 +55,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > إذا كنت تريد التدقيق الكامل في كيفية عمل الوصول إلى المجلدات التي يتم التحكم فيها في مؤسستك، فستحتاج إلى استخدام أداة إدارة لنشر هذا الإعداد على الأجهزة في الشبكة (الشبكات).
-يمكنك أيضا استخدام نهج المجموعة أو Intune أو إدارة الأجهزة المحمولة (MDM) أو إدارة نقاط النهاية من Microsoft لتكوين الإعداد ونشره، كما هو موضح في [موضوع الوصول إلى المجلد الرئيسي الذي يتم التحكم فيه](controlled-folders.md).
+يمكنك أيضا استخدام نهج المجموعة أو Intune أو إدارة الأجهزة المحمولة (MDM) أو Microsoft إدارة نقاط النهاية لتكوين الإعداد وتوزيعه، كما هو موضح في [موضوع الوصول إلى المجلد الرئيسي الذي يتم التحكم فيه](controlled-folders.md).
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>مراجعة أحداث الوصول إلى المجلدات التي يتم التحكم فيها في Windows عارض الأحداث
 
@@ -74,7 +68,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
  1123 | حدث الوصول إلى المجلدات المتحكم فيها المحظور
 
 > [!TIP]
-> يمكنك تكوين [اشتراك Windows Event Forwarding](/windows/win32/wec/setting-up-a-source-initiated-subscription) لتجميع السجلات مركزيا. 
+> يمكنك تكوين [اشتراك Windows Event Forwarding](/windows/win32/wec/setting-up-a-source-initiated-subscription) لجمع السجلات مركزيا. 
 
 ## <a name="customize-protected-folders-and-apps"></a>تخصيص المجلدات والتطبيقات المحمية
 

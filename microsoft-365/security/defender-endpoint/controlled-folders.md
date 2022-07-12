@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 02017a614544cfb10eb43d375212fc7e37124ad3
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 00c2f6f490a09e76e097a20419f8d8137b32a467
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840376"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717264"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>حماية المجلدات المهمة باستخدام الوصول المتحكم به إلى المجلدات
 
@@ -42,7 +42,7 @@ ms.locfileid: "65840376"
 
 ## <a name="what-is-controlled-folder-access"></a>ما هو الوصول إلى المجلدات التي يتم التحكم فيها؟
 
-يساعد الوصول المتحكم به إلى المجلد على حماية بياناتك القيمة من التطبيقات والتهديدات الضارة، مثل برامج الفدية الضارة. يحمي الوصول المتحكم به إلى المجلدات بياناتك من خلال التحقق من التطبيقات مقابل قائمة بالتطبيقات المعروفة الموثوق بها. يمكن تشغيل الوصول إلى المجلدات التي يتم التحكم فيها باستخدام تطبيق أمن Windows، وذلك معتمدا على عملاء Windows Server 2019 وserver Windows Server 2022 و Windows 10 Windows 11. Microsoft Endpoint Configuration Manager أو Intune (للأجهزة المدارة).
+يساعد الوصول المتحكم به إلى المجلد على حماية بياناتك القيمة من التطبيقات والتهديدات الضارة، مثل برامج الفدية الضارة. يحمي الوصول المتحكم به إلى المجلدات بياناتك من خلال التحقق من التطبيقات مقابل قائمة بالتطبيقات المعروفة الموثوق بها. يمكن تشغيل الوصول إلى المجلدات التي يتم التحكم فيها باستخدام تطبيق أمن Windows أو نقطة نهاية Microsoft Configuration Manager أو Intune (للأجهزة المدارة) المعتمد على عملاء Windows Server 2019 وWindows Server 2022 Windows 10 Windows 11.
 
 > [!NOTE]
 > محركات البرمجة النصية غير موثوق بها ولا يمكنك السماح لها بالوصول إلى المجلدات المحمية التي يتم التحكم فيها. على سبيل المثال، PowerShell غير موثوق به من قبل الوصول المتحكم به إلى المجلد، حتى لو سمحت باستخدام [مؤشرات الشهادة والملفات](/microsoft-365/security/defender-endpoint/indicator-certificates).
@@ -68,10 +68,7 @@ ms.locfileid: "65840376"
 
 تتضمن [المجلدات المحمية](#review-controlled-folder-access-events-in-windows-event-viewer) مجلدات النظام الشائعة (بما في ذلك قطاعات التمهيد)، ويمكنك [إضافة المزيد من المجلدات](customize-controlled-folders.md#protect-additional-folders). يمكنك أيضا [السماح للتطبيقات](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) بمنحها حق الوصول إلى المجلدات المحمية.
 
-يمكنك استخدام [وضع التدقيق](audit-windows-defender.md) لتقييم كيفية تأثير الوصول المتحكم به إلى المجلدات على مؤسستك إذا تم تمكينه. يمكنك أيضا زيارة موقع ويب Windows Defender Test على [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) لتأكيد عمل الميزة ومعرفة كيفية عملها.
-
-> [!NOTE]
-> تم إهمال الموقع التجريبي ل Defender لنقطة النهاية في demo.wd.microsoft.com وستتم إزالته في المستقبل.
+يمكنك استخدام [وضع التدقيق](audit-windows-defender.md) لتقييم كيفية تأثير الوصول المتحكم به إلى المجلدات على مؤسستك إذا تم تمكينه.
 
 يتم دعم الوصول إلى المجلدات التي يتم التحكم فيها على الإصدارات التالية من Windows:
 
@@ -82,9 +79,9 @@ ms.locfileid: "65840376"
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - Windows Server 2022
 
-## <a name="windows-system-folders-are-protected-by-default"></a>Windows مجلدات النظام محمية بشكل افتراضي
+## <a name="windows-system-folders-are-protected-by-default"></a>مجلدات نظام Windows محمية بشكل افتراضي
 
-Windows مجلدات النظام محمية بشكل افتراضي، إلى جانب عدة مجلدات أخرى:
+تكون مجلدات نظام Windows محمية بشكل افتراضي، إلى جانب العديد من المجلدات الأخرى:
 
 تتضمن المجلدات المحمية مجلدات النظام الشائعة (بما في ذلك قطاعات التمهيد)، ويمكنك إضافة مجلدات إضافية. يمكنك أيضا السماح للتطبيقات بمنحها حق الوصول إلى المجلدات المحمية.  مجلدات أنظمة Windows المحمية بشكل افتراضي هي:
 
@@ -100,14 +97,14 @@ Windows مجلدات النظام محمية بشكل افتراضي، إلى ج
 
 تظهر المجلدات الافتراضية في ملف تعريف المستخدم، ضمن **هذا الكمبيوتر.**
    > [!div class="mx-imgBorder"]
-   > ![مجلدات الأنظمة الافتراضية Windows المحمية](images/defaultfolders.png)
+   > ![مجلدات الأنظمة الافتراضية المحمية في Windows](images/defaultfolders.png)
 
 > [!NOTE]
-> يمكنك تكوين مجلدات إضافية كمحمية، ولكن لا يمكنك إزالة مجلدات النظام Windows المحمية بشكل افتراضي.
+> يمكنك تكوين مجلدات إضافية كمحمية، ولكن لا يمكنك إزالة مجلدات نظام Windows المحمية بشكل افتراضي.
 
 ## <a name="requirements-for-controlled-folder-access"></a>متطلبات الوصول إلى المجلدات التي يتم التحكم فيها
 
-يتطلب الوصول إلى المجلدات التي يتم التحكم فيها تمكين [الحماية برنامج الحماية من الفيروسات من Microsoft Defender في الوقت الحقيقي](configure-real-time-protection-microsoft-defender-antivirus.md).
+يتطلب الوصول إلى المجلد الذي يتم التحكم فيه تمكين [حماية Microsoft Defender Antivirus في الوقت الحقيقي](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>مراجعة أحداث الوصول إلى المجلدات التي تم التحكم فيها في مدخل Microsoft 365 Defender
 
@@ -124,10 +121,10 @@ DeviceEvents
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>مراجعة أحداث الوصول إلى المجلدات التي يتم التحكم فيها في Windows عارض الأحداث
 
-يمكنك مراجعة سجل أحداث Windows للاطلاع على الأحداث التي يتم إنشاؤها عند التحكم في كتل الوصول إلى المجلدات (أو عمليات التدقيق) للتطبيق:
+يمكنك مراجعة سجل أحداث Windows للاطلاع على الأحداث التي يتم إنشاؤها عندما يتم التحكم في كتل الوصول إلى المجلدات (أو عمليات التدقيق) الخاصة بالتطبيق:
 
 1. قم بتنزيل [حزمة التقييم](https://aka.ms/mp7z2w) واستخراج *الملفcfa-events.xml* إلى موقع يمكن الوصول إليه بسهولة على الجهاز.
-2. اكتب **عارض الأحداث** في قائمة البدء لفتح Windows عارض الأحداث.
+2. اكتب **عارض الأحداث** في قائمة البدء لفتح عارض الأحداث Windows.
 3. في اللوحة اليمنى، ضمن **"إجراءات"**، حدد **"استيراد طريقة عرض مخصصة"...**.
 4. انتقل إلى المكان الذي قمت باستخراج *cfa-events.xml* وحدده. بدلا من ذلك، [انسخ XML مباشرة](event-views.md).
 5. حدد **موافق**.
@@ -155,4 +152,4 @@ DeviceEvents
    - لإزالة مجلد، حدده، ثم حدد **"إزالة**".
 
 > [!NOTE]
-> [Windows مجلدات النظام](#windows-system-folders-are-protected-by-default) محمية بشكل افتراضي، ولا يمكنك إزالتها من القائمة.
+> تكون [مجلدات نظام Windows](#windows-system-folders-are-protected-by-default) محمية بشكل افتراضي، ولا يمكنك إزالتها من القائمة.

@@ -1,5 +1,5 @@
 ---
-title: الإبلاغ عن البريد العشوائي وغير العشوائي والتصيد الاحتيالي ورسائل البريد الإلكتروني المشبوهة إلى Microsoft
+title: الإبلاغ عن البريد العشوائي وغير العشوائي والتصيد الاحتيالي ورسائل البريد الإلكتروني والملفات المشبوهة إلى Microsoft
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -14,17 +14,17 @@ search.appverid:
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
-description: كيف أعمل الإبلاغ عن بريد إلكتروني مريب إلى Microsoft؟ قم بالإبلاغ عن الرسائل وعناوين URL ومرفقات البريد الإلكتروني إلى Microsoft للتحليل. تعلم كيفية الإبلاغ عن البريد الإلكتروني العشوائي ورسائل البريد الإلكتروني للتصيد الاحتيالي.
+description: كيف أعمل الإبلاغ عن بريد إلكتروني أو ملف مريب إلى Microsoft؟ قم بالإبلاغ عن الرسائل وعناوين URL ومرفقات البريد الإلكتروني والملفات إلى Microsoft لتحليلها. تعلم كيفية الإبلاغ عن البريد الإلكتروني العشوائي ورسائل البريد الإلكتروني للتصيد الاحتيالي.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 67b4d0a2dc3f52c66c1fea406a51005daa43093a
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 3ccb01e63011b48fa341b7ce3198b05505940a01
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714432"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717769"
 ---
-# <a name="how-do-i-report-a-suspicious-email-to-microsoft"></a>كيف أعمل الإبلاغ عن بريد إلكتروني مريب إلى Microsoft؟
+# <a name="how-do-i-report-a-suspicious-email-or-file-to-microsoft"></a>كيف أعمل الإبلاغ عن بريد إلكتروني أو ملف مريب إلى Microsoft؟
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "66714432"
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-هل تتساءل عما يجب فعله برسائل البريد الإلكتروني المشبوهة؟ في مؤسسات Microsoft 365 التي لديها علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، تتوفر *للمستخدمين* *والمسؤولين* طرق مختلفة للإبلاغ عن رسالة بريد إلكتروني مريبة أو عنوان URL أو مرفق بريد إلكتروني مريب إلى Microsoft.
+هل تتساءل عما يجب فعله برسائل البريد الإلكتروني أو الملفات المشبوهة؟ في مؤسسات Microsoft 365 التي لديها علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، تتوفر *للمستخدمين* *والمسؤولين* طرق مختلفة للإبلاغ عن رسالة بريد إلكتروني مريبة أو عنوان URL أو مرفق بريد إلكتروني مريب إلى Microsoft.
 
 بالإضافة إلى ذلك، لدى مؤسسات Microsoft 365 مع مسؤولي Microsoft Defender لنقطة النهاية العديد من الأساليب لإعداد التقارير عن الملفات.
 

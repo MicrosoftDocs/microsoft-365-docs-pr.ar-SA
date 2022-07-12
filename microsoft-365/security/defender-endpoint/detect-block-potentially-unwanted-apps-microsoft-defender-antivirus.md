@@ -1,7 +1,7 @@
 ---
 title: حظر التطبيقات التي يحتمل أن تكون غير مرغوب فيها باستخدام برنامج الحماية من الفيروسات من Microsoft Defender
 description: تمكين ميزة الحماية من الفيروسات (PUA) للتطبيق غير المرغوب فيه لحظر البرامج غير المرغوب فيها مثل البرامج الضارة.
-keywords: pua, enable, unwanted software, unwanted apps, adware, browser toolbar, detect, block, برنامج الحماية من الفيروسات من Microsoft Defender
+keywords: pua, enable, unwanted software, unwanted apps, adware, browser toolbar, detect, block, Microsoft Defender Antivirus
 ms.prod: m365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d93587867a2fea0921a1ac9711eed0f8c1b1beec
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: defccd8d570ec54cd033dcf7fbe29df8254661c8
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468295"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717747"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>الكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها وحظرها
 
@@ -44,72 +44,66 @@ ms.locfileid: "65468295"
 > [!TIP]
 > لمزيد من الأمثلة ومناقشة المعايير التي نستخدمها لتسمية التطبيقات بعناية خاصة من ميزات الأمان، راجع [كيفية تحديد Microsoft للبرامج الضارة والتطبيقات التي يحتمل أن تكون غير مرغوب فيها](/windows/security/threat-protection/intelligence/criteria).
 
-يمكن للتطبيقات غير المرغوب فيها أن تزيد من خطر إصابة شبكتك بالبرامج الضارة الفعلية، أو تجعل من الصعب التعرف على عدوى البرامج الضارة، أو إهدار موارد تكنولوجيا المعلومات في تنظيفها. يتم دعم حماية PUA على Windows 10 و Windows 11 و Windows Server 2019 و Windows Server 2022 و Windows Server 2016. في Windows 10 (الإصدار 2004 والإصدارات الأحدث)، يحظر برنامج الحماية من الفيروسات من Microsoft Defender التطبيقات التي تعتبر PUA لأجهزة Enterprise (E5) بشكل افتراضي.
+يمكن للتطبيقات غير المرغوب فيها أن تزيد من خطر إصابة شبكتك بالبرامج الضارة الفعلية، أو تجعل من الصعب التعرف على عدوى البرامج الضارة، أو إهدار موارد تكنولوجيا المعلومات في تنظيفها. يتم دعم حماية PUA على Windows 10 Windows 11 وWindows Server 2019 وWindows Server 2022 وWindows Server 2016. في Windows 10 (الإصدار 2004 والإصدارات الأحدث)، يحظر Microsoft Defender Antivirus التطبيقات التي تعتبر PUA لأجهزة Enterprise (E5) بشكل افتراضي.
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
-تمنع [Microsoft Edge الجديدة](https://support.microsoft.com/microsoft-edge/get-to-know-microsoft-edge-3f4bb0ff-58de-2188-55c0-f560b7e20bea)، المستندة إلى Chromium، تنزيلات التطبيقات التي يحتمل أن تكون غير مرغوب فيها وعناوين URL للموارد المرتبطة بها. يتم توفير هذه الميزة عبر [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview).
+يحظر [Microsoft Edge الجديد](https://support.microsoft.com/microsoft-edge/get-to-know-microsoft-edge-3f4bb0ff-58de-2188-55c0-f560b7e20bea)، المستند إلى Chromium، تنزيلات التطبيقات التي يحتمل أن تكون غير مرغوب فيها وعناوين URL للموارد المرتبطة بها. يتم توفير هذه الميزة عبر [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview).
 
-### <a name="enable-pua-protection-in-chromium-based-microsoft-edge"></a>تمكين حماية PUA في Microsoft Edge المستندة إلى Chromium
+### <a name="enable-pua-protection-in-chromium-based-microsoft-edge"></a>تمكين حماية PUA في Microsoft Edge المستند إلى Chromium
 
-على الرغم من إيقاف تشغيل حماية التطبيقات غير المرغوب فيها في Microsoft Edge (الإصدار 80.0.0.361.50 المستند إلى Chromium) بشكل افتراضي، إلا أنه يمكن تشغيلها بسهولة من داخل المستعرض.
+على الرغم من إيقاف تشغيل حماية التطبيقات غير المرغوب فيها في Microsoft Edge (المستندة إلى Chromium، الإصدار 80.0.361.50) بشكل افتراضي، إلا أنه يمكن تشغيلها بسهولة من داخل المستعرض.
 
-1. في مستعرض Edge، حدد علامات الحذف، ثم اختر **الإعدادات**.
+1. في مستعرض Edge، حدد علامات الحذف، ثم اختر **"إعدادات**".
 
 2. حدد **الخصوصية والبحث والخدمات**.
 
 3. ضمن قسم **"الأمان** "، قم بتشغيل **"حظر التطبيقات التي يحتمل أن تكون غير مرغوب فيها**".
 
 > [!TIP]
-> إذا كنت تقوم بتشغيل Microsoft Edge (مستند إلى Chromium)، يمكنك استكشاف ميزة حظر عنوان URL لحماية PUA بأمان عن طريق اختبارها على إحدى [صفحات العرض التوضيحي Microsoft Defender SmartScreen](https://demo.smartscreen.msft.net/).
+> إذا كنت تقوم بتشغيل Microsoft Edge (المستند إلى Chromium)، يمكنك استكشاف ميزة حظر عنوان URL لحماية PUA بأمان عن طريق اختبارها على إحدى [صفحات العرض التوضيحي ل Microsoft Defender SmartScreen](https://demo.smartscreen.msft.net/).
 
 ### <a name="block-urls-with-microsoft-defender-smartscreen"></a>حظر عناوين URL باستخدام Microsoft Defender SmartScreen
 
-في Edge المستند إلى Chromium مع تشغيل حماية PUA، Microsoft Defender SmartScreen يحميك من عناوين URL المقترنة ب PUA.
+في Edge المستند إلى Chromium مع تشغيل حماية PUA، يحميك Microsoft Defender SmartScreen من عناوين URL المقترنة ب PUA.
 
-يمكن لمسؤولي الأمان [تكوين](/DeployEdge/configure-microsoft-edge) كيفية عمل Microsoft Edge Microsoft Defender SmartScreen معا لحماية مجموعات المستخدمين من عناوين URL المقترنة ب PUA. هناك العديد من [إعدادات نهج المجموعة](/DeployEdge/microsoft-edge-policies#smartscreen-settings) بشكل صريح Microsoft Defender SmartScreen المتاحة، بما [في ذلك واحدة لحظر PUA](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). بالإضافة إلى ذلك، يمكن للمسؤولين [تكوين Microsoft Defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) ككل، باستخدام إعدادات نهج المجموعة لتشغيل Microsoft Defender SmartScreen أو إيقاف تشغيلها.
+يمكن لمسؤولي الأمان [تكوين](/DeployEdge/configure-microsoft-edge) كيفية عمل Microsoft Edge وMicrosoft Defender SmartScreen معا لحماية مجموعات المستخدمين من عناوين URL المقترنة ب PUA. تتوفر العديد من [إعدادات نهج المجموعة](/DeployEdge/microsoft-edge-policies#smartscreen-settings) بشكل صريح ل Microsoft Defender SmartScreen، بما في ذلك [إعدادات لحظر PUA](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). بالإضافة إلى ذلك، يمكن للمسؤولين [تكوين Microsoft Defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) ككل، باستخدام إعدادات نهج المجموعة لتشغيل Microsoft Defender SmartScreen أو إيقاف تشغيله.
 
-على الرغم من أن Microsoft Defender لنقطة النهاية لديه قائمة حظر خاصة به استنادا إلى مجموعة بيانات تديرها Microsoft، يمكنك تخصيص هذه القائمة استنادا إلى التحليل الذكي للمخاطر الخاصة بك. إذا قمت [بإنشاء المؤشرات وإدارتها](manage-indicators.md) في مدخل Microsoft Defender لنقطة النهاية، Microsoft Defender SmartScreen تحترم الإعدادات الجديدة.
+على الرغم من أن Microsoft Defender لنقطة النهاية لديه قائمة حظر خاصة به استنادا إلى مجموعة بيانات تديرها Microsoft، يمكنك تخصيص هذه القائمة استنادا إلى التحليل الذكي للمخاطر الخاصة بك. إذا قمت [بإنشاء المؤشرات وإدارتها](manage-indicators.md) في مدخل Microsoft Defender لنقطة النهاية، فإن Microsoft Defender SmartScreen تحترم الإعدادات الجديدة.
 
-## <a name="microsoft-defender-antivirus-and-pua-protection"></a>حماية برنامج الحماية من الفيروسات من Microsoft Defender و PUA
+## <a name="microsoft-defender-antivirus-and-pua-protection"></a>حماية Microsoft Defender Antivirus و PUA
 
-يمكن لميزة حماية التطبيق (PUA) غير المرغوب فيها في برنامج الحماية من الفيروسات من Microsoft Defender اكتشاف حظر PUA على نقاط النهاية في شبكتك.
+يمكن لميزة حماية التطبيق (PUA) غير المرغوب فيها في برنامج الحماية من الفيروسات من Microsoft Defender الكشف عن PUA ومنعه على نقاط النهاية في شبكتك.
 
 > [!NOTE]
-> تتوفر هذه الميزة في Windows 10 و Windows 11 و Windows Server 2019 و Windows Server 2022 و Windows Server 2016.
+> تتوفر هذه الميزة في Windows 10 Windows 11 وWindows Server 2019 وWindows Server 2022 وWindows Server 2016.
 
-برنامج الحماية من الفيروسات من Microsoft Defender كتل ملفات PUA المكتشفة وأي محاولات لتنزيلها أو نقلها أو تشغيلها أو تثبيتها. ثم يتم نقل ملفات PUA المحظورة إلى العزل. عند اكتشاف ملف PUA على نقطة نهاية، برنامج الحماية من الفيروسات من Microsoft Defender يرسل إعلاما إلى المستخدم ([ما لم يتم تعطيل الإعلامات](configure-notifications-microsoft-defender-antivirus.md) بنفس تنسيق عمليات الكشف عن التهديدات الأخرى. يتم تمهيد `PUA:` الإعلام للإشارة إلى محتواه.
+اكتشفت كتل برنامج الحماية من الفيروسات من Microsoft Defender ملفات PUA وأي محاولات لتنزيلها أو نقلها أو تشغيلها أو تثبيتها. ثم يتم نقل ملفات PUA المحظورة إلى العزل. عند اكتشاف ملف PUA على نقطة نهاية، يرسل برنامج الحماية من الفيروسات من Microsoft Defender إعلاما إلى المستخدم ([ما لم يتم تعطيل الإعلامات](configure-notifications-microsoft-defender-antivirus.md) بنفس تنسيق عمليات الكشف عن التهديدات الأخرى. يتم تمهيد `PUA:` الإعلام للإشارة إلى محتواه.
 
 يظهر الإعلام في [قائمة العزل المعتادة داخل تطبيق أمن Windows](microsoft-defender-security-center-antivirus.md).
 
 ## <a name="configure-pua-protection-in-microsoft-defender-antivirus"></a>تكوين حماية PUA في برنامج الحماية من الفيروسات من Microsoft Defender
 
-يمكنك تمكين حماية PUA باستخدام [Microsoft Intune أو](/mem/intune/protect/device-protect) [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection) [أو نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) أو عبر [PowerShell cmdlets](/powershell/module/defender/?preserve-view=true&view=win10-ps).
+يمكنك تمكين حماية PUA باستخدام [Microsoft Intune](/mem/intune/protect/device-protect) [أو نقطة نهاية Microsoft Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection) [أو نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) أو عبر [PowerShell cmdlets](/powershell/module/defender/?preserve-view=true&view=win10-ps).
 
-يمكنك أيضا استخدام حماية PUA في وضع التدقيق للكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها دون حظرها. يتم تسجيل عمليات الكشف في سجل الأحداث Windows.
-
-> [!TIP]
-> تفضل بزيارة موقع العرض التوضيحي Microsoft Defender لنقطة النهاية على [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) للتأكد من أن الميزة تعمل، واطلع عليها أثناء العمل.
-
-> [!NOTE]
-> تم إهمال الموقع التجريبي ل Defender لنقطة النهاية في demo.wd.microsoft.com وستتم إزالته في المستقبل.
+يمكنك أيضا استخدام حماية PUA في وضع التدقيق للكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها دون حظرها. يتم تسجيل عمليات الكشف في سجل أحداث Windows.
 
 تعد حماية PUA في وضع التدقيق مفيدة إذا كانت شركتك تجري فحصا داخليا لتوافق أمان البرامج وكنت ترغب في تجنب أي إيجابيات خاطئة.
 
 ### <a name="use-intune-to-configure-pua-protection"></a>استخدام Intune لتكوين حماية PUA
 
-راجع [تكوين إعدادات تقييد الجهاز في Microsoft Intune](/intune/device-restrictions-configure) [وإعدادات تقييد الجهاز برنامج الحماية من الفيروسات من Microsoft Defender Windows 10 في Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) للحصول على مزيد من التفاصيل.
+راجع [تكوين إعدادات تقييد الجهاز في إعدادات](/intune/device-restrictions-configure) [تقييد جهاز Microsoft Intune وMicrosoft Defender Antivirus Windows 10 في Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) للحصول على مزيد من التفاصيل.
 
 ### <a name="use-configuration-manager-to-configure-pua-protection"></a>استخدام Configuration Manager لتكوين حماية PUA
 
-يتم تمكين حماية PUA بشكل افتراضي في إدارة نقاط النهاية من Microsoft (الفرع الحالي).
+يتم تمكين حماية PUA بشكل افتراضي في Microsoft إدارة نقاط النهاية (الفرع الحالي).
 
-راجع [كيفية إنشاء نهج مكافحة البرامج الضارة وتوزيعها: إعدادات الفحص المجدول](/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) للحصول على تفاصيل حول تكوين إدارة نقاط النهاية من Microsoft (الفرع الحالي).
+راجع [كيفية إنشاء نهج مكافحة البرامج الضارة ونشرها: إعدادات الفحص المجدول](/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) للحصول على تفاصيل حول تكوين Microsoft إدارة نقاط النهاية (الفرع الحالي).
 
-للحصول على Configuration Manager System Center 2012، راجع [كيفية نشر نهج حماية التطبيقات غير المرغوب فيه المحتمل Endpoint Protection في Configuration Manager](/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#BKMK_PUA).
+للحصول على Configuration Manager System Center 2012، راجع [كيفية نشر نهج حماية التطبيقات غير المرغوب فيه لحماية نقطة النهاية في Configuration Manager](/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#BKMK_PUA).
 
 > [!NOTE]
-> يتم الإبلاغ عن أحداث PUA المحظورة بواسطة برنامج الحماية من الفيروسات من Microsoft Defender في Windows عارض الأحداث وليس في Microsoft Endpoint Configuration Manager.
+> يتم الإبلاغ عن أحداث PUA المحظورة بواسطة برنامج الحماية من الفيروسات من Microsoft Defender في عارض الأحداث Windows وليس في نقطة نهاية Microsoft Configuration Manager.
 
 ### <a name="use-group-policy-to-configure-pua-protection"></a>استخدام نهج المجموعة لتكوين حماية PUA
 
@@ -121,7 +115,7 @@ ms.locfileid: "65468295"
 
 4. في **محرر إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
 
-5. توسيع الشجرة إلى **Windows المكونات** \> **برنامج الحماية من الفيروسات من Microsoft Defender**.
+5. قم بتوسيع الشجرة إلى **Windows Components** \> **Microsoft Defender Antivirus**.
 
 6. انقر نقرا **مزدوجا فوق تكوين الكشف للتطبيقات التي يحتمل أن تكون غير مرغوب فيها**.
 
@@ -159,11 +153,11 @@ Set-MpPreference -PUAProtection Disabled
 
 تعيين قيمة أمر cmdlet هذا لإيقاف `Disabled` تشغيل الميزة إذا تم تمكينها.
 
-لمزيد من المعلومات، راجع [استخدام أوامر Cmdlets PowerShell لتكوين وتشغيل برنامج الحماية من الفيروسات من Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) [وSmdlets لبرنامج الحماية من الفيروسات من Defender](/powershell/module/defender/index).
+لمزيد من المعلومات، راجع [استخدام أوامر Cmdlets PowerShell لتكوين أوامر cmdlets لبرنامج الحماية من الفيروسات والحماية من الفيروسات من Microsoft Defender وتشغيلها](use-powershell-cmdlets-microsoft-defender-antivirus.md).[](/powershell/module/defender/index)
 
 ## <a name="view-pua-events-using-powershell"></a>عرض أحداث PUA باستخدام PowerShell
 
-يتم الإبلاغ عن أحداث PUA في Windows عارض الأحداث، ولكن ليس في إدارة نقاط النهاية من Microsoft أو Intune. يمكنك أيضا استخدام `Get-MpThreat` cmdlet لعرض التهديدات التي برنامج الحماية من الفيروسات من Microsoft Defender التعامل معها. فيما يلي مثال على ذلك:
+يتم الإبلاغ عن أحداث PUA في عارض الأحداث Windows، ولكن ليس في Microsoft إدارة نقاط النهاية أو Intune. يمكنك أيضا استخدام `Get-MpThreat` cmdlet لعرض التهديدات التي عالجها برنامج الحماية من الفيروسات من Microsoft Defender. فيما يلي مثال على ذلك:
 
 ```console
 CategoryID       : 27

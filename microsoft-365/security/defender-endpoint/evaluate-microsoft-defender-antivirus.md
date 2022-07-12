@@ -1,7 +1,7 @@
 ---
 title: تقييم برنامج الحماية من الفيروسات من Microsoft Defender
-description: يمكن للشركات من جميع الأحجام استخدام هذا الدليل لتقييم واختبار الحماية التي تقدمها برنامج الحماية من الفيروسات من Microsoft Defender في Windows.
-keywords: برنامج الحماية من الفيروسات من Microsoft Defender، حماية السحابة، السحابة، الحماية من البرامج الضارة، الأمان، Defender، التقييم، الاختبار، الحماية، المقارنة، الحماية في الوقت الحقيقي
+description: يمكن للشركات من جميع الأحجام استخدام هذا الدليل لتقييم واختبار الحماية التي يوفرها برنامج الحماية من الفيروسات من Microsoft Defender في Windows.
+keywords: Microsoft Defender Antivirus، حماية السحابة، السحابة، الحماية من البرامج الضارة، الأمان، Defender، التقييم، الاختبار، الحماية، المقارنة، الحماية في الوقت الحقيقي
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: da13d621b350955a7de93d5abe2ee3f4c0c1b27a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 89da56c0230772dab59ad02a751c3bb1ada164e7
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416047"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717791"
 ---
 # <a name="evaluate-microsoft-defender-antivirus"></a>تقييم برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -30,25 +30,13 @@ ms.locfileid: "65416047"
 **ينطبق على:**
 
 - برنامج الحماية من الفيروسات من Microsoft Defender
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 **الأنظمة الأساسية**
 - بالنسبة لنظام التشغيل
 
-استخدم هذا الدليل لتحديد مدى حماية برنامج الحماية من الفيروسات من Microsoft Defender لك من الفيروسات والبرامج الضارة والتطبيقات التي يحتمل أن تكون غير مرغوب فيها.
-
-> [!TIP]
->يمكنك أيضا زيارة موقع العرض التوضيحي Microsoft Defender لنقطة النهاية في [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) لتأكيد عمل الميزات التالية ومعرفة كيفية عملها:
->
-> - الحماية المقدمة من السحابة
-> - التعلم السريع (بما في ذلك الحظر من النظرة الأولى)
-> - حظر التطبيقات غير المرغوب فيها
-
-> [!NOTE]
-> تم إهمال الموقع التجريبي ل Defender لنقطة النهاية في demo.wd.microsoft.com وستتم إزالته في المستقبل.
-
-وهو يشرح ميزات الحماية من الجيل التالي المهمة برنامج الحماية من الفيروسات من Microsoft Defender المتاحة لكل من الشركات الصغيرة والكبيرة، وكيف تزيد من الكشف عن البرامج الضارة وحمايتها عبر شبكتك.
+استخدم هذا الدليل لتحديد مدى حماية Microsoft Defender Antivirus لك من الفيروسات والبرامج الضارة والتطبيقات التي قد تكون غير مرغوب فيها. وهو يشرح ميزات الحماية من الجيل التالي الهامة من برنامج الحماية من الفيروسات من Microsoft Defender المتوفرة لكل من المؤسسات الصغيرة والكبيرة، وكيف تزيد من الكشف عن البرامج الضارة وحمايتها عبر شبكتك.
 
 يمكنك اختيار تكوين وتقييم كل إعداد بشكل مستقل، أو كل ذلك في وقت واحد. لقد قمنا بتجميع إعدادات مماثلة استنادا إلى سيناريوهات التقييم النموذجية، وقمنا بتضمين إرشادات لاستخدام PowerShell لتمكين الإعدادات.
 
@@ -61,12 +49,12 @@ ms.locfileid: "65416047"
 - [تنزيل البرنامج النصي PowerShell لتكوين الإعدادات تلقائيا](https://www.powershellgallery.com/packages/WindowsDefender_InternalEvaluationSettings)
 
 > [!IMPORTANT]
-> الدليل مخصص حاليا لتقييم برنامج الحماية من الفيروسات من Microsoft Defender أحادية الجهاز. قد لا يكون تمكين جميع الإعدادات في هذا الدليل مناسبا للتوزيع في العالم الحقيقي.
+> الدليل مخصص حاليا لتقييم جهاز واحد من برنامج الحماية من الفيروسات من Microsoft Defender. قد لا يكون تمكين جميع الإعدادات في هذا الدليل مناسبا للتوزيع في العالم الحقيقي.
 >
-> للحصول على أحدث التوصيات لنشر ومراقبة برنامج الحماية من الفيروسات من Microsoft Defender في العالم الحقيقي عبر شبكة، راجع [Deploy برنامج الحماية من الفيروسات من Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md).
+> للحصول على أحدث التوصيات لنشر ومراقبة برنامج الحماية من الفيروسات في العالم الحقيقي من Microsoft Defender عبر شبكة، راجع [نشر برنامج الحماية من الفيروسات من Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md).
 
 > [!TIP]
-> إذا كنت تبحث عن معلومات متعلقة بالحماية من الفيروسات للأنظمة الأساسية الأخرى، فراجع:
+> إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:
 > - [تعيين تفضيلات Microsoft Defender لنقطة النهاية على نظام التشغيل macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint على Mac](microsoft-defender-endpoint-mac.md)
 > - [إعدادات نهج برنامج الحماية من الفيروسات في macOS لبرنامج الحماية من الفيروسات من Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)

@@ -16,12 +16,12 @@ ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e06b2a37f45ccf0febc35e31d33ece55c03e3303
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: c38136aa8d6616613968de5ef352e326c41c4137
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492049"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717813"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>تكوين اتصالات الشبكة برنامج الحماية من الفيروسات من Microsoft Defender والتحقق من صحتها
 
@@ -38,10 +38,6 @@ ms.locfileid: "66492049"
 
 > [!IMPORTANT]
 > تحتوي هذه المقالة على معلومات حول تكوين اتصالات الشبكة فقط لبرنامج الحماية من الفيروسات من Microsoft Defender. إذا كنت تستخدم Microsoft Defender لنقطة النهاية (الذي يتضمن برنامج الحماية من الفيروسات من Microsoft Defender)، فراجع [تكوين إعدادات وكيل الجهاز والاتصال بالإنترنت ل Defender لنقطة النهاية](configure-proxy-internet.md).
-
-
-> [!NOTE]
-> تم إهمال الموقع التجريبي ل Defender لنقطة النهاية في demo.wd.microsoft.com وستتم إزالته في المستقبل.
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>السماح بالاتصالات بخدمة سحابة الحماية من الفيروسات من Microsoft Defender
 

@@ -16,12 +16,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 2826c623437760d86aad54e4aa36900bdad68082
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 4c9c0618db34df38168dca881117288832abf4a5
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603913"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717835"
 ---
 # <a name="evaluate-network-protection"></a>تقييم حماية الشبكة
 
@@ -35,12 +35,6 @@ ms.locfileid: "66603913"
 تساعد [حماية الشبكة](network-protection.md) الموظفين على منع الموظفين من استخدام أي تطبيق للوصول إلى المجالات الخطرة التي قد تستضيف رسائل التصيد الاحتيالي وعمليات الاستغلال والمحتوى الضار الآخر على الإنترنت.
 
 تساعدك هذه المقالة على تقييم حماية الشبكة من خلال تمكين الميزة وتوجيهك إلى موقع اختبار. المواقع الموجودة في مقالة التقييم هذه ليست ضارة. إنها مواقع ويب تم إنشاؤها بشكل خاص تتظاهر بأنها ضارة. سيقوم الموقع بنسخ السلوك الذي قد يحدث إذا قام مستخدم بزيارة موقع أو مجال ضار.
-
-> [!TIP]
-> يمكنك أيضا زيارة موقع سيناريوهات العرض التوضيحي ل Microsoft Defender على [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) لمعرفة كيفية عمل ميزات الحماية الأخرى.
-
-> [!NOTE]
-> تم إهمال الموقع التجريبي ل Defender لنقطة النهاية في demo.wd.microsoft.com وستتم إزالته في المستقبل.
 
 ## <a name="enable-network-protection-in-audit-mode"></a>تمكين حماية الشبكة في وضع التدقيق
 

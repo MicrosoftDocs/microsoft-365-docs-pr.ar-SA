@@ -17,20 +17,20 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على صفحة المستخدمين.
-ms.openlocfilehash: d817ab74d6dd24e644561684073189e68cf7e072
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 05c889167cc7359900c0dea3396e657c0aa93fba
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007273"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717525"
 ---
 # <a name="overview-of-the-users-page-in-microsoft-365-lighthouse"></a>نظرة عامة على صفحة المستخدمين في Microsoft 365 Lighthouse 
 
-يتيح لك Microsoft 365 Lighthouse إدارة المستخدمين عبر حسابات مستأجري العملاء عن طريق تحديد **المستخدمين** في جزء التنقل الأيمن لفتح صفحة المستخدمين. من هذه الصفحة، يمكنك البحث عن المستخدمين وتقييم حالة الأمان لحسابات المستخدمين والعمل عليها. يمكنك أيضا عرض رؤى حول المستخدمين المعرضين للمخاطر وحالة المصادقة متعددة العوامل وإعادة تعيين كلمة مرور الخدمة الذاتية.  
+يتيح لك Microsoft 365 Lighthouse إدارة المستخدمين عبر حسابات مستأجري العملاء عن طريق تحديد أي من الارتباطات ضمن **"المستخدمون** " في جزء التنقل الأيمن. من صفحة المستخدمين، يمكنك البحث عن المستخدمين وتقييم حالة الأمان لحسابات المستخدمين والعمل عليها. يمكنك أيضا عرض رؤى حول المستخدمين المعرضين للمخاطر وحالة المصادقة متعددة العوامل وإعادة تعيين كلمة مرور الخدمة الذاتية.  
   
 ## <a name="search-users-tab"></a>علامة التبويب "البحث عن المستخدمين"  
   
-من علامة التبويب "البحث عن المستخدمين"، يمكنك البحث بسرعة عبر المستأجرين عن مستخدمين محددين وتنفيذ إجراءات إدارة المستخدم الأساسية مثل إعادة تعيين كلمة مرور الحساب.
+من علامة التبويب "البحث عن المستخدمين"، يمكنك البحث بسرعة عبر المستأجرين عن مستخدمين محددين وتنفيذ مهام إدارة المستخدمين الشائعة مثل تحديث معلومات حساب المستخدم وإعادة تعيين كلمات المرور وتعيين التراخيص وإدارة مجموعات المستخدم أو علبة البريد أو OneDrive.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Screenshot of the Search users tab.":::
 
@@ -62,5 +62,5 @@ ms.locfileid: "66007273"
 
 ## <a name="related-content"></a>المحتويات ذات الصلة
 
-[نظرة عامة على صفحة توافق جهاز Lighthouse Microsoft 365](m365-lighthouse-device-compliance-page-overview.md) (مقالة)\
+[نظرة عامة على صفحة توافق أجهزة Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (مقالة)\
 [الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)

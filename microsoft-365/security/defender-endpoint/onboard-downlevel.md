@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c330d3c8210ea0c83605a2b5e9f9f43d1c930442
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 4d8665f379683ccc113a10e6308c6fa4026616c6
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554390"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717195"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>الإصدارات السابقة من Windows
 
@@ -73,20 +73,20 @@ ms.locfileid: "66554390"
 
 راجع التفاصيل التالية للتحقق من الحد الأدنى لمتطلبات النظام:
 
-- تثبيت [حزمة التحديث الشهري لشهر فبراير 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+- تثبيت [حزمة التحديث الشهري لشهر فبراير 2018](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598) - يتوفر ارتباط التنزيل المباشر من كتالوج Windows Update [هنا](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598)
+
+- تثبيت [تحديث مكدس خدمة 12 مارس 2019 (أو أحدث)](https://support.microsoft.com/topic/servicing-stack-update-for-windows-7-sp1-and-windows-server-2008-r2-sp1-march-12-2019-b4dc0cff-d4f2-a408-0cb1-cb8e918feeba) - ارتباط تنزيل مباشر من كتالوج Windows Update متوفر [هنا](https://www.catalog.update.microsoft.com/search.aspx?q=4490628)
+
+- تثبيت [تحديث دعم توقيع التعليمات البرمجية SHA-2](https://support.microsoft.com/topic/sha-2-code-signing-support-update-for-windows-server-2008-r2-windows-7-and-windows-server-2008-september-23-2019-84a8aad5-d8d9-2d5c-6d78-34f9aa5f8339) - يتوفر ارتباط التنزيل المباشر من كتالوج Windows Update [هنا](https://www.catalog.update.microsoft.com/search.aspx?q=kb4474419)
 
   > [!NOTE]
   > ينطبق فقط على Windows Server 2008 R2 وWindows 7 SP1 Enterprise وWindows 7 SP1 Pro.
 
 - تثبيت [التحديث لتجربة العملاء وبيانات تتبع الاستخدام التشخيصية](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
-- تثبيت [إطار عمل .NET 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (أو أحدث) أو [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+- تثبيت [Microsoft .Net Framework 4.5.2 أو إصدار أحدث](https://www.microsoft.com/en-US/download/details.aspx?id=42642)
 
     > [!NOTE]
-    > ينطبق فقط على Windows Server 2008 R2 وWindows 7 SP1 Enterprise وWindows 7 SP1 Pro.
-    >
-    > لا تقم بتثبيت .NET Framework 4.0.x، لأنه سيبطل التثبيت أعلاه.
-    >
     > قد يتطلب تثبيت .NET 4.5 إعادة تشغيل الكمبيوتر بعد التثبيت.
 
 - تلبية الحد الأدنى لمتطلبات النظام الخاصة بعامل Azure Log Analytics. لمزيد من المعلومات، راجع ["تجميع البيانات من أجهزة الكمبيوتر" في بيئة باستخدام Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)

@@ -21,20 +21,45 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 9acc7cd4147f2fdf29b82ecb2d211ef30ea4e6dc
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 8c2472456feb21662e48a5b377a16a1c539569cc
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616945"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717173"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>ما الجديد في نقاط Microsoft الآمنة
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-لجعل Microsoft Secure Score ممثل أفضل لوضع الأمان الخاص بك، أجرينا بعض التغييرات. للتعرف على التغييرات المخطط لها، راجع [ما الذي سيتوفر في نقاط Microsoft الآمنة؟](microsoft-secure-score-whats-coming.md)
+لجعل نقاط الأمان من Microsoft تمثل وضع الأمان بشكل أفضل، نستمر في إضافة ميزات وإجراءات تحسين جديدة.
+
+كلما زادت إجراءات التحسين التي تتخذها، زادت درجة الأمان الخاصة بك. لمزيد من المعلومات، راجع [نقاط أمان Microsoft](microsoft-secure-score.md).
 
 يمكن العثور على نقاط الأمان من Microsoft في مدخل https://security.microsoft.com/securescore [Microsoft 365 Defender](microsoft-365-defender-portal.md).
+
+## <a name="june-2022"></a>يونيو 2022
+
+- تتوفر الآن توصيات Microsoft Defender لنقطة النهاية جديدة وتوصيات إدارة الثغرات الأمنية في Microsoft Defender كإجراءات تحسين نقاط آمنة:
+
+  - عدم السماح بالوصول دون اتصال إلى المشاركات
+  - إزالة تعيين أذونات الكتابة للمشاركة إلى **الجميع**
+  - إزالة المشاركات من المجلد الجذر
+  - تعيين تعداد قائم على الوصول إلى المجلدات للمشاركات
+  - تحديث المكونات الأساسية Microsoft Defender لنقطة النهاية
+
+- تتوفر توصية Microsoft Defender for Identity جديدة كإجراء تحسين درجة الأمان:
+
+  - حل تكوينات المجال غير المهيأة
+
+- تتوفر الآن توصية جديدة [لحوكمة التطبيق](/defender-cloud-apps/app-governance-manage-app-governance) كإجراء تحسين نقاط آمنة:
+
+  - تنظيم التطبيقات بموافقة من حسابات الأولوية
+
+- تتوفر الآن توصيات Salesforce و ServiceNow الجديدة كإجراءات تحسين نقاط آمنة للعملاء Microsoft Defender for Cloud Apps. لمزيد من المعلومات، راجع [نظرة عامة على إدارة الوضع الأمني ل SaaS](https://aka.ms/saas_security_posture_management).
+
+>[!Note]
+>تتوفر الآن عناصر تحكم Salesforce و ServiceNow في المعاينة العامة.
 
 ## <a name="april-2022"></a>أبريل 2022
 
