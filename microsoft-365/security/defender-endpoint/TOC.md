@@ -262,6 +262,12 @@
 ##### [تقييم الوصول المتحكم به إلى المجلد](evaluate-controlled-folder-access.md)
 ##### [تمكين الوصول إلى المجلدات الخاضعة للتحكم](enable-controlled-folders.md)
 ##### [تخصيص الوصول إلى المجلدات الخاضعة للتحكم](customize-controlled-folders.md)
+#### [التحكم في الجهاز]()
+##### [حماية التخزين القابلة للإزالة](device-control-removable-storage-protection.md)
+##### [التحكم بالوصول إلى التخزين القابل للإزالة](device-control-removable-storage-access-control.md)
+##### [تثبيت الجهاز](mde-device-control-device-installation.md)
+##### [حماية الطابعة للتحكم في الجهاز](printer-protection.md)
+##### [تقارير التحكم في الجهاز](device-control-report.md)
 #### [الحماية من استغلال]()
 ##### [حماية الأجهزة من استغلالها](exploit-protection.md)
 ##### [تقييم الحماية من المخاطر](evaluate-exploit-protection.md)
@@ -273,6 +279,14 @@
 ##### [حماية الشبكة](network-protection.md)
 ##### [تقييم حماية الشبكة](evaluate-network-protection.md)
 ##### [تشغيل حماية الشبكة](enable-network-protection.md)
+#### [حماية ويب]()
+##### [نظرة عامة حول حماية الويب](web-protection-overview.md)
+##### [الحماية من المخاطر على الويب]()
+###### [نظرة عامة حول الحماية من المخاطر على الويب](web-threat-protection.md)
+###### [مراقبة أمان الويب](web-protection-monitoring.md)
+###### [الاستجابة إلى تهديدات الويب](web-protection-response.md)
+##### [تصفية محتوى ويب](web-content-filtering.md)
+
 
 ### حماية الجيل التالي
 #### [نظرة عامة حول حماية الجيل التالي](next-generation-protection.md)
@@ -353,21 +367,6 @@
 ##### [مراجعة سجلات الأحداث ورموز الأخطاء لا استكشاف المشاكل المتعلقة بالأحداث وإصلاحها برنامج الحماية من الفيروسات من Microsoft Defender](troubleshoot-microsoft-defender-antivirus.md)
 ##### [استكشاف الأخطاء برنامج الحماية من الفيروسات من Microsoft Defender أثناء عملية إعادة التهجر من حل جهة خارجية](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
-#### [حماية ويب]()
-##### [نظرة عامة حول حماية الويب](web-protection-overview.md)
-##### [الحماية من المخاطر على الويب]()
-###### [نظرة عامة حول الحماية من المخاطر على الويب](web-threat-protection.md)
-###### [مراقبة أمان الويب](web-protection-monitoring.md)
-###### [الاستجابة إلى تهديدات الويب](web-protection-response.md)
-##### [تصفية محتوى ويب](web-content-filtering.md)
-
-#### [التحكم في الجهاز]()
-##### [حماية التخزين القابلة للإزالة](device-control-removable-storage-protection.md)
-##### [التحكم بالوصول إلى التخزين القابل للإزالة](device-control-removable-storage-access-control.md)
-##### [تثبيت الجهاز](mde-device-control-device-installation.md)
-##### [حماية الطابعة للتحكم في الجهاز](printer-protection.md)
-##### [تقارير التحكم في الجهاز](device-control-report.md)
-
 #### [الحظر السلوكي والاحتواء]()
 ##### [الحظر السلوكي والاحتواء](behavioral-blocking-containment.md)
 ##### [الحظر السلوكي للعميل](client-behavioral-blocking.md)
@@ -379,9 +378,6 @@
 
 #### [زيادة التوافق مع خط الأمان الأساسي](configure-machines-security-baseline.md)
 #### [تحسين نشر قاعدة الحد من الهجمات والكشف عنها](configure-machines-asr.md)
-
-## [إرشادات التهديدات والحملات النشطة]()
-### [إدارة ثغرة Log4Shell الأمنية](tvm-manage-log4shell-guidance.md)
 
 ## [التحقق من التهديدات والاستجابة لها]()
 ### [الكشف عن نقطة النهاية والاستجابة لها]()
