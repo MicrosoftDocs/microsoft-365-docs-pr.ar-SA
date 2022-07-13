@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8c2472456feb21662e48a5b377a16a1c539569cc
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 25860b27ee5d677f3349f82f63f64983255d2d32
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717173"
+ms.locfileid: "66750199"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>ما الجديد في نقاط Microsoft الآمنة
 
@@ -40,7 +40,7 @@ ms.locfileid: "66717173"
 
 ## <a name="june-2022"></a>يونيو 2022
 
-- تتوفر الآن توصيات Microsoft Defender لنقطة النهاية جديدة وتوصيات إدارة الثغرات الأمنية في Microsoft Defender كإجراءات تحسين نقاط آمنة:
+- تتوفر الآن توصيات Microsoft Defender لنقطة النهاية جديدة وتوصيات إدارة الثغرات الأمنية في Microsoft Defender كإجراءات تحسين درجة الأمان:
 
   - عدم السماح بالوصول دون اتصال إلى المشاركات
   - إزالة تعيين أذونات الكتابة للمشاركة إلى **الجميع**

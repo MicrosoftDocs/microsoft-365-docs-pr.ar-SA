@@ -1,6 +1,6 @@
 ---
-title: مراجعة متطلبات البنية وإطار العمل التقني ل Microsoft Defender for Identity
-description: سيساعدك الرسم التخطيطي التقني ل Microsoft Defender for Identity Microsoft 365 Defender على فهم الهوية في Microsoft 365 قبل إنشاء المعمل التجريبي أو بيئة الإصدار التجريبي.
+title: مراجعة متطلبات البنية والإطار التقني Microsoft Defender for Identity
+description: سيساعدك الرسم التخطيطي التقني Microsoft Defender for Identity في Microsoft 365 Defender على فهم الهوية في Microsoft 365 قبل إنشاء مختبر تجريبي أو بيئة تجريبية.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,77 +19,75 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e534211008ea560642ba306844b9223170ac0140
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e92fa629b49664b6f87c8e72c23a2f9cae74afe6
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63579677"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750221"
 ---
-# <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>مراجعة متطلبات البنية والمفاهيم الأساسية ل Microsoft Defender for Identity
+# <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>مراجعة متطلبات البنية والمفاهيم الرئيسية Microsoft Defender for Identity
 
 
 **ينطبق على:**
 - Microsoft 365 Defender
 
-هذه المقالة هي [الخطوة 1 من 3](eval-defender-identity-overview.md) في عملية إعداد بيئة التقييم ل Microsoft Defender for Identity. لمزيد من المعلومات حول هذه العملية، راجع [مقالة النظرة العامة](eval-defender-identity-overview.md).
+هذه المقالة هي [الخطوة 1 من 3](eval-defender-identity-overview.md) في عملية إعداد بيئة التقييم Microsoft Defender for Identity. لمزيد من المعلومات حول هذه العملية، راجع [مقالة النظرة العامة](eval-defender-identity-overview.md).
 
-قبل تمكين Microsoft Defender for Identity، تأكد من فهم البنية ويمكنها تلبية المتطلبات.
+قبل تمكين Microsoft Defender for Identity، تأكد من فهمك للبنية ويمكن أن تفي بالمتطلبات.
 
-يستخدم Microsoft Defender for Identity التحليلات السلوكية والتعلم الآلي لتحديد الهجمات عبر شبكتك المحلية إلى جانب الكشف عن مخاطر تسجيل الدخول من قبل المستخدمين المقترنة بالهويات السحابية ومنعها بشكل استباقي. لمزيد من المعلومات، [راجع ما هو Microsoft Defender for Identity؟](/defender-for-identity/what-is)
+تستخدم Microsoft Defender for Identity التعلم الآلي والتحليلات السلوكية لتحديد الهجمات عبر شبكتك المحلية إلى جانب الكشف عن مخاطر تسجيل دخول المستخدم المرتبطة بالهويات السحابية ومنعها بشكل استباقي. لمزيد من المعلومات، راجع [ما هو Microsoft Defender for Identity؟](/defender-for-identity/what-is)
 
-يحمي Defender for Identity مستخدمي Active Directory المحلي و/أو المستخدمين الذين متزامنوا مع Azure Active Directory (Azure AD). لحماية بيئة تكون من مستخدمي Azure AD فقط، راجع [حماية هوية Azure AD](/azure/active-directory/identity-protection/overview-identity-protection).
+يحمي Defender for Identity المستخدمين Active Directory محلي و/أو المستخدمين الذين تمت مزامنتهم مع Azure Active Directory (Azure AD). لحماية بيئة مكونة من مستخدمين Azure AD فقط، راجع [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 ## <a name="understand-the-architecture"></a>فهم البنية
 
 يوضح الرسم التخطيطي التالي بنية الأساس ل Defender for Identity. 
 
-![هندسة Microsoft Defender for Identity.](../../media/defender/m365-defender-identity-architecture.png)
+:::image type="content" source="../../media/defender/m365-defender-identity-architecture.png" alt-text="بنية الهوية Microsoft Defender for Identity" lightbox="../../media/defender/m365-defender-identity-architecture.png":::
 
 في هذا الرسم التوضيحي:
-- تقوم أدوات الاستشعار المثبتة على وحدات التحكم في مجال AD بتحليل السجلات وازدحام الشبكة وإرسالها إلى Microsoft Defender for Identity لتحليلها وإعداد التقارير بشأنها.
--  يمكن أن تقوم أدوات الاستشعار أيضا تحليل خدمات اتحاد Active Directory (AD FS) عند تكوين Azure AD لاستخدام المصادقة المتحدة (الخط المنقطة في الرسم التوضيحي). 
-- يشارك Microsoft Defender for Identity الإشارات Microsoft 365 Defender للكشف والاستجابة الموسعة (XDR).
+
+- تقوم أجهزة الاستشعار المثبتة على وحدات تحكم مجال AD بتحليل السجلات وحركة مرور الشبكة وإرسالها إلى Microsoft Defender for Identity للتحليل وإعداد التقارير.
+-  يمكن لأدوات الاستشعار أيضا تحليل خدمات الأمان المشترك لـ Active Directory (AD FS) عند تكوين Azure AD لاستخدام المصادقة الموحدة (خط منقط في الرسم التوضيحي). 
+- Microsoft Defender for Identity تشارك الإشارات إلى Microsoft 365 Defender للكشف والاستجابة الموسعين (XDR).
+
+يمكن تثبيت أجهزة استشعار Defender for Identity مباشرة على الخوادم التالية:
+
+- وحدات التحكم بالمجال: يراقب جهاز الاستشعار مباشرة حركة مرور وحدة التحكم بالمجال، دون الحاجة إلى خادم مخصص، أو تكوين النسخ المتطابق للمنفذ.
+- AD FS: يراقب جهاز الاستشعار مباشرة حركة مرور الشبكة وأحداث المصادقة.
+
+لإلقاء نظرة أعمق على بنية Defender for Identity، بما في ذلك التكامل مع Defender for Cloud Apps، راجع [بنية Microsoft Defender for Identity](/defender-for-identity/architecture).
 
 
-يمكن تثبيت Defender for Identity sensors مباشرة على الخوادم التالية:
+## <a name="understand-key-concepts"></a>فهم المفاهيم الرئيسية
 
-- وحدات التحكم بالمجال: يراقب المستشعر بشكل مباشر حركة مرور وحدة التحكم بالمجال، دون الحاجة إلى خادم مخصص، أو تكوين انعكاس المنفذ.
-- AD FS: يراقب المستشعر مباشرة أحداث حركة مرور الشبكة والمصادقة.
+حدد الجدول التالي المفاهيم الرئيسية التي من المهم فهمها عند تقييم Microsoft Defender for Identity وتكوينها ونشرها.
 
-للحصول على نظرة أعمق على بنية Defender for Identity، بما في ذلك التكامل مع Defender for Cloud Apps، راجع [هندسة Microsoft Defender for Identity](/defender-for-identity/architecture).
-
-
-## <a name="understand-key-concepts"></a>فهم المفاهيم الأساسية
-
-حدد الجدول التالي المفاهيم الأساسية التي من المهم فهمها عند تقييم Microsoft Defender for Identity وتكوينه ونشره.
-
-
-|المفهوم  |الوصف |معلومات إضافية  |
+|مفهوم  |الوصف |معلومات إضافية  |
 |---------|---------|---------|
-| الأنشطة التي يتم مراقبتها | يراقب Defender for Identity الإشارات التي يتم إنشاؤها من داخل مؤسستك للكشف عن نشاط مريب أو ضار ويساعدك على تحديد مدى صلاحية كل خطر محتمل حتى تتمكن من الفرز والاستجابة بفعالية.  |  [أنشطة Microsoft Defender for Identity التي يتم مراقبتها](/defender-for-identity/monitored-activities)       |
-| تنبيهات الأمان    | تشرح تنبيهات أمان Defender for Identity الأنشطة المريبة التي تكتشفها أدوات الاستشعار على شبكتك إلى جانب الجهات الخارجية وأجهزة الكمبيوتر المتدخلة في كل خطر.   | [تنبيهات أمان Microsoft Defender لالهوية](/defender-for-identity/suspicious-activity-guide?tabs=external)    |
-| ملفات تعريف الكيانات    | توفر ملفات تعريف الكيانات عملية تحقيق شاملة حول المستخدمين وأجهزة الكمبيوتر والأجهزة والموارد إلى جانب محفوظات الوصول الخاصة بهم.   | [فهم ملفات تعريف الكيانات](/defender-for-identity/entity-profiles)  |
-| مسارات الحركة اللاحقة    | أحد المكونات الأساسية رؤى أمان MDI هو تحديد مسارات الحركة اللاحقة التي يستخدم فيها المهاجم الحسابات غير الحساسة للوصول إلى الحسابات أو الأجهزة الحساسة في جميع أنحاء الشبكة.  | [مسارات الحركة اللاحقة ل Microsoft Defender for Identity (LMPs)](/defender-for-identity/use-case-lateral-movement-path)  |
-| دقة اسم الشبكة    |  إن دقة اسم الشبكة (NNR) هي أحد مكونات وظيفة MDI التي تقوم بالتقاط الأنشطة استنادا إلى حركة مرور الشبكة، والأحداث Windows، و ETW، وما إلى ذلك، وربط هذه البيانات الخام بأجهزة الكمبيوتر ذات الصلة المتدخلة في كل نشاط.       | [ما هي دقة اسم الشبكة؟](/defender-for-identity/nnr-policy)      |
-| التقارير    | تتيح لك تقارير Defender for Identity جدولة التقارير التي توفر معلومات حالة النظام والكيانات أو إنشاءها وتنزيلها على الفور.  يمكنك إنشاء تقارير حول حماية النظام وتنبيهات الأمان ومسارات الحركة اللاحقة المحتملة التي تم الكشف عنها في بيئتك.   | [Microsoft Defender لتقارير الهوية ](/defender-for-identity/reports)       |
-| مجموعات الدور    | يوفر Defender for Identity مجموعات مستندة إلى الدور والوصول المفوض لحماية البيانات وفقا لاحتياجات التوافق والأمان الخاصة في مؤسستك التي تتضمن المسؤولين والمستخدمين والعارضين.        |  [مجموعات دور Microsoft Defender for Identity](/defender-for-identity/role-groups)       |
-| المدخل الإداري    |  بالإضافة إلى مدخل Microsoft 365 Defender، يمكن استخدام مدخل Defender for Identity لمراقبة النشاط المريب والاستجابة له.      | [العمل مع مدخل Microsoft Defender for Identity](/defender-for-identity/workspace-portal)        |
-| تكامل Microsoft Defender for Cloud Apps   | يتكامل Microsoft Defender for Cloud Apps مع Microsoft Defender for Identity لتوفير تحليلات سلوكية (UEBA) لكيان المستخدم عبر بيئة مختلطة - كل من تطبيق السحابة والتطبيق المحلي   | تكامل Microsoft Defender for Identity  |
-| | | |
-
+| الأنشطة المراقبة | يراقب Defender for Identity الإشارات التي تم إنشاؤها من داخل مؤسستك للكشف عن النشاط المشبوه أو الضار ويساعدك على تحديد صلاحية كل تهديد محتمل حتى تتمكن من الفرز والاستجابة بفعالية.  |  [Microsoft Defender for Identity الأنشطة المراقبة](/defender-for-identity/monitored-activities)       |
+| تنبيهات الأمان    | تشرح تنبيهات أمان Defender for Identity الأنشطة المشبوهة التي اكتشفتها أجهزة الاستشعار على شبكتك إلى جانب الجهات الفاعلة وأجهزة الكمبيوتر المشاركة في كل تهديد.   | [Microsoft Defender for Identity تنبيهات الأمان](/defender-for-identity/suspicious-activity-guide?tabs=external)    |
+| ملفات تعريف الكيان    | توفر ملفات تعريف الكيانات استقصاء شاملا متعمقا للمستخدمين وأجهزة الكمبيوتر والأجهزة والموارد جنبا إلى جنب مع محفوظات الوصول الخاصة بهم.   | [فهم ملفات تعريف الكيان](/defender-for-identity/entity-profiles)  |
+| مسارات الحركة الجانبية    | أحد المكونات الرئيسية لتفاصيل أمان MDI هو تحديد مسارات الحركة الجانبية التي يستخدم فيها المهاجم حسابات غير حساسة للوصول إلى الحسابات أو الأجهزة الحساسة في جميع أنحاء شبكتك.  | [Microsoft Defender for Identity مسارات الحركة الجانبية (LMPs)](/defender-for-identity/use-case-lateral-movement-path)  |
+| تحليل اسم الشبكة    |  تحليل اسم الشبكة (NNR) هو مكون من وظائف MDI التي تلتقط الأنشطة استنادا إلى نسبة استخدام الشبكة وأحداث Windows و ETW وما إلى ذلك وربط هذه البيانات الأولية بأجهزة الكمبيوتر ذات الصلة المشاركة في كل نشاط.       | [ما هو تحليل اسم الشبكة؟](/defender-for-identity/nnr-policy)      |
+| التقارير    | تسمح لك تقارير Defender for Identity بجدولة التقارير التي توفر معلومات حالة النظام والكيان أو إنشاءها وتنزيلها على الفور.  يمكنك إنشاء تقارير حول صحة النظام، وتنبيهات الأمان، ومسارات الحركة الجانبية المحتملة المكتشفة في بيئتك.   | [تقارير Microsoft Defender for Identity](/defender-for-identity/reports)       |
+| مجموعات الأدوار    | يوفر Defender for Identity المجموعات المستندة إلى الأدوار والوصول المفوض لحماية البيانات وفقا لاحتياجات الأمان والتوافق المحددة لمؤسستك والتي تتضمن المسؤولين والمستخدمين والعارضين.        |  [مجموعات الأدوار Microsoft Defender for Identity](/defender-for-identity/role-groups)       |
+| مدخل إداري    |  بالإضافة إلى مدخل Microsoft 365 Defender، يمكن استخدام مدخل Defender for Identity لمراقبة النشاط المشبوه والاستجابة له.      | [العمل مع مدخل Microsoft Defender for Identity](/defender-for-identity/workspace-portal)        |
+| تكامل Microsoft Defender for Cloud Apps   | يتكامل Microsoft Defender for Cloud Apps مع Microsoft Defender for Identity لتوفير التحليلات السلوكية لكيانات المستخدم (UEBA) عبر بيئة مختلطة - سواء تطبيق السحابة أو محليا   | تكامل Microsoft Defender for Identity  |
 
 ## <a name="review-prerequisites"></a>مراجعة المتطلبات الأساسية
 
-يتطلب Defender for Identity بعض العمل الأساسي لضمان تلبية مكونات الشبكة وهويتك المحلية للحد الأدنى من المتطلبات. استخدم هذه المقالة كقائمة اختيار للتأكد من أن بيئتك جاهزة: [المتطلبات الأساسية ل Microsoft Defender for Identity](/defender-for-identity/prerequisites).
+يتطلب Defender for Identity بعض العمل المسبق لضمان تلبية مكونات الهوية والشبكات المحلية للحد الأدنى من المتطلبات. استخدم هذه المقالة كلقائمة اختيار للتأكد من أن بيئتك جاهزة: [Microsoft Defender for Identity المتطلبات الأساسية](/defender-for-identity/prerequisites).
 
 
 ## <a name="next-steps"></a>الخطوات التالية
 
 الخطوة 2 من 3: [تمكين بيئة التقييم Defender for Identity](eval-defender-identity-enable-eval.md)
 
-العودة إلى نظرة عامة حول [تقييم Microsoft Defender for Identity](eval-defender-identity-overview.md)
+العودة إلى النظرة العامة لتقييم [Microsoft Defender for Identity](eval-defender-identity-overview.md)
 
-العودة إلى النظرة العامة لتقييم التقييم [Microsoft 365 Defender](eval-overview.md) 
+العودة إلى النظرة العامة لتقييم [Microsoft 365 Defender](eval-overview.md) 

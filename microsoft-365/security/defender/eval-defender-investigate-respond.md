@@ -1,6 +1,6 @@
 ---
-title: التحقق والاستجابة باستخدام Microsoft 365 Defender في بيئة تجريبية
-description: يمكنك إعداد عمليات محاكاة الهجمات في Microsoft 365 Defender تجريبية أو بيئة تجريبية لتجرب حل الأمان المصمم لتعليم المستخدمين حماية الأجهزة والهوية والبيانات والتطبيقات.
+title: التحقيق والاستجابة باستخدام Microsoft 365 Defender في بيئة تجريبية
+description: قم بإعداد عمليات محاكاة الهجوم في Microsoft 365 Defender التجربة أو بيئة الاختبار لتجربة حل الأمان المصمم لتعليم المستخدمين حماية الأجهزة والهوية والبيانات والتطبيقات.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,34 +19,35 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b382b1cd096f57f5667db7661b1ef4b69acc1451
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 71ba536b3d93a4bff003e9094a1e6fab83660253
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499892"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748000"
 ---
-# <a name="step-6-investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>الخطوة 6. التحقق والاستجابة باستخدام Microsoft 365 Defender في بيئة تجريبية
+# <a name="step-6-investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>الخطوة 6. التحقيق والاستجابة باستخدام Microsoft 365 Defender في بيئة تجريبية
 
 **ينطبق على:**
 - Microsoft 365 Defender
 
-توضح هذه المقالة العملية لإنشاء أحداث باستخدام عمليات محاكاة الهجمات والبرامج التعليمية واستخدام Microsoft 365 Defender التحقيق والرد. قبل بدء هذه العملية، تأكد من مراجعة العملية الشاملة لتقييم Microsoft 365 Defender وإنشاء بيئة Microsoft 365 Defender [التقييم](eval-create-eval-environment.md).[](eval-overview.md)
+توضح هذه المقالة عملية إنشاء حوادث باستخدام عمليات محاكاة الهجوم والبرامج التعليمية واستخدام Microsoft 365 Defender للتحقيق والاستجابة. قبل بدء هذه العملية، تأكد من مراجعة العملية الشاملة [لتقييم Microsoft 365 Defender](eval-overview.md) [وقمت بإنشاء بيئة تقييم Microsoft 365 Defender](eval-create-eval-environment.md).
 
 استخدم الخطوات التالية.
 
-:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png" alt-text="خطوات تنفيذ استجابة لحادث محاكاة في Microsoft 365 Defender التقييم" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png":::
+:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png" alt-text="خطوات تنفيذ محاكاة الاستجابة للحوادث في بيئة تقييم Microsoft 365 Defender" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png":::
 
-يصف الجدول التالي الخطوات في الرسم التوضيحي.
+يصف الجدول التالي الخطوات الواردة في الرسم التوضيحي.
 
-|الخطوة  |الوصف  |
+|خطوه  |الوصف  |
 |---------|---------|
-| 1. [محاكاة الهجمات](eval-defender-investigate-respond-simulate-attack.md)     |   يمكنك محاكاة الهجمات على بيئة التقييم واستخدام مدخل Microsoft 365 Defender لتنفيذ استجابة للحوادث.      |
-| 2. [جرب إمكانات الاستجابة للحوادث ](eval-defender-investigate-respond-additional.md)    |    جرب ميزات إضافية للاستجابة للحوادث وإمكانياتها في Microsoft 365 Defender.     |
+| 1. [محاكاة الهجمات](eval-defender-investigate-respond-simulate-attack.md)     |   محاكاة الهجمات على بيئة التقييم الخاصة بك واستخدام مدخل Microsoft 365 Defender لتنفيذ الاستجابة للحوادث.      |
+| 2. [تجربة قدرات الاستجابة للحوادث ](eval-defender-investigate-respond-additional.md)    |    جرب ميزات وقدرات إضافية للاستجابة للحوادث في Microsoft 365 Defender.     |
 |||
 
 ### <a name="navigation-you-may-need"></a>التنقل الذي قد تحتاج إليه
 
-[إنشاء Microsoft 365 Defender التقييم](eval-create-eval-environment.md)
+[إنشاء بيئة تقييم Microsoft 365 Defender](eval-create-eval-environment.md)

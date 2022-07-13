@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a70b61ff9a27b10e66b6f4537751790eaabc59af
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: f32d521fe83c9e72566228bb10efb37b851b6e05
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617271"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748066"
 ---
 # <a name="onboard-with-microsoft-defender-for-iot"></a>الإلحاق مع Microsoft Defender ل IoT
 
@@ -29,7 +29,7 @@ ms.locfileid: "66617271"
 
 **ينطبق على:**
 
-- [مشكلات الأداء في Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender لنقطة النهاية P2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]

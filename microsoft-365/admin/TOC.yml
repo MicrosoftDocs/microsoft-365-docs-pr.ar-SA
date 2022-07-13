@@ -3,7 +3,7 @@
   items:
     - name: أهم 20 مقالة من مقالات تعليمات المسؤول
       href: top-m365-admin-articles.yml
-    - name: مكتبة فيديو تدريب المسؤول
+    - name: YouTube - تعليمات Microsoft 365 للشركات الصغيرة
       href: 'https://go.microsoft.com/fwlink/?linkid=2197659'
     - name: بدء الاستخدام
       items:

@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: تعرف على كيفية استخدام Compliance Score and Compliance Manager لتحسين مستوى الحماية للبيانات الشخصية.
-ms.openlocfilehash: 469584abbf784fe6c556aab14a49a5ed44280a69
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bd0ae7f748a2a3cd5ff52b6363780032033ead44
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947440"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748682"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>استخدام Compliance Manager لإدارة إجراءات التحسين
 
@@ -31,13 +32,13 @@ ms.locfileid: "64947440"
 توفر هذه المقالة إرشادات حول استخدام هذه الأداة لأغراض خصوصية البيانات.
 
 > [!NOTE]
-> لا ينبغي تفسير التوصيات من Compliance Manager على أنه ضمان للامتثال. الأمر متروك لك لتقييم والتحقق من فعالية عناصر تحكم العملاء وفقا للبيئة التنظيمية الخاصة بك. تخضع هذه الخدمات للأحكام والشروط الواردة في [شروط الخدمات عبر الإنترنت](https://go.microsoft.com/fwlink/?linkid=2108910). راجع أيضا [Microsoft 365 إرشادات الترخيص للأمان والتوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+> وينبغي عدم تفسير التوصيات الواردة من Compliance Manager على أنها ضمان للامتثال. الأمر متروك لك لتقييم والتحقق من فعالية عناصر تحكم العملاء وفقا للبيئة التنظيمية الخاصة بك. تخضع هذه الخدمات للأحكام والشروط الواردة في [شروط الخدمات عبر الإنترنت](https://go.microsoft.com/fwlink/?linkid=2108910). راجع أيضا [إرشادات ترخيص Microsoft 365 للأمان والتوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 ## <a name="getting-started-with-compliance-manager"></a>بدء استخدام Compliance Manager
 
 #### <a name="what-is-compliance-manager"></a>ما هو Compliance Manager
 
-[Compliance Manager](../compliance/compliance-manager.md) هي أداة لتقييم المخاطر المستندة إلى سير العمل في مدخل توافق Microsoft Purview لإدارة أنشطة الامتثال التنظيمي المتعلقة بخدمات Microsoft السحابية. كجزء من اشتراكك في Microsoft 365 أو Azure Active Directory (Azure AD)، يساعدك Compliance Manager على إدارة الامتثال التنظيمي ضمن نموذج المسؤولية المشتركة لخدمات Microsoft السحابية.
+[Compliance Manager](../compliance/compliance-manager.md) هي أداة لتقييم المخاطر المستندة إلى سير العمل في مدخل التوافق في Microsoft Purview لإدارة أنشطة الامتثال التنظيمي المتعلقة بخدمات Microsoft السحابية. كجزء من اشتراك Microsoft 365 أو Azure Active Directory (Azure AD)، يساعدك Compliance Manager على إدارة الامتثال التنظيمي ضمن نموذج المسؤولية المشتركة لخدمات Microsoft السحابية.
 
 **جاهز لاستخدام التقييمات**
 
@@ -58,14 +59,14 @@ ms.locfileid: "64947440"
 - [أول زيارة: التعرف على Compliance Manager](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - العمل مع لوحة معلومات Compliance Manager
     - فهم درجة التوافق الخاصة بك
-    - Learning حول إجراءات التحسين
+    - التعرف على إجراءات التحسين
     - فهم التقييمات والقوالب
 - [زيادة: تكوين Compliance Manager لإدارة أنشطة التوافق الخاصة بك](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - بناء تقييمك الأول وإدارته
     - تنفيذ أعمال التنفيذ والاختبار على إجراءات التحسين لإكمال عناصر التحكم في تقييماتك
     - فهم كيفية تأثير الإجراءات المختلفة على درجة التوافق الخاصة بك
 - [التحجيم: استخدام وظائف متقدمة لتلبية احتياجاتك المخصصة](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - إنشاء تقييمات مخصصة لتعقب المنتجات غير Microsoft 365
+    - إنشاء تقييمات مخصصة لتعقب المنتجات غير الخاصة ب Microsoft 365
     - تعديل القوالب الموجودة لإضافة عناصر تحكم أو إزالتها
     - إعداد الاختبار التلقائي لإجراءات التحسين
 
@@ -79,9 +80,9 @@ ms.locfileid: "64947440"
 
 لا تسرد واجهة مستخدم مسؤول نقاط التوافق هذه المعلمات، كما أنها لا توفر القدرة على التصفية حسبها. ومع ذلك، إذا قمت بتنزيل القالب المقترن من Compliance Manager، فإن مجموعة البيانات الناتجة تسرد هذه المعلمات لمعظم اللوائح.
 
-بالنسبة إلى عناصر التحكم التقنية، يقوم Compliance Manager تلقائيا بتحديث درجة إجراء التحسين بمجرد تنفيذ الإجراء واختباره بنجاح. إجراءات&mdash; أخرى غير تقنية للتحكم، مثل تلك التي تكون تشغيلية أو ذات صلة بالوثائق&mdash; المطلوبة ليتم تسجيلها يدويا كما هو مطبق قبل احتساب النقاط نحو درجاتك.
+بالنسبة إلى عناصر التحكم التقنية، يقوم Compliance Manager تلقائيا بتحديث درجة إجراء التحسين بمجرد تنفيذ الإجراء واختباره بنجاح. يجب تسجيل إجراءات&mdash;التحكم الأخرى غير التقنية مثل تلك التي تعمل أو المتعلقة بالوثائق&mdash;يدويا كما يتم تنفيذها قبل حساب النقاط في نقاطك.
 
-تقوم العديد منكم أيضا بتنفيذ إجراءات تحسين معينة لأغراض&mdash; أخرى على سبيل المثال باستخدام تسميات الاستبقاء لأسباب أخرى غير امتثال&mdash; تنظيم خصوصية البيانات التي ستحصل على رصيد لاستخدام مثل هذه الميزة حتى لو كانت تستخدم لأغراض أخرى، وليس جزءا من إجراء توافق متعمد.
+كما تنفذ العديد منكم إجراءات تحسين معينة لأغراض&mdash;أخرى، على سبيل المثال، استخدام تسميات الاستبقاء لأسباب أخرى غير الامتثال&mdash;لتنظيم خصوصية البيانات بحيث تحصل على رصيد لاستخدام مثل هذه الميزة حتى لو كانت تستخدم لأغراض أخرى، وليس جزءا من إجراء توافق متعمد.
 
 يجب اعتبار درجة الامتثال الخاصة بك مقياسا نسبيا لتتبع التحسين على نطاق واسع. يجب ألا تسعى للحصول على درجة مثالية.
 

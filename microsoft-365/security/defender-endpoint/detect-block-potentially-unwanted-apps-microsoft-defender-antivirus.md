@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: defccd8d570ec54cd033dcf7fbe29df8254661c8
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 43cb2c4230bd48260ecd1cf4e4f6f92518a47b43
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717747"
+ms.locfileid: "66747912"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>الكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها وحظرها
 
@@ -44,7 +44,9 @@ ms.locfileid: "66717747"
 > [!TIP]
 > لمزيد من الأمثلة ومناقشة المعايير التي نستخدمها لتسمية التطبيقات بعناية خاصة من ميزات الأمان، راجع [كيفية تحديد Microsoft للبرامج الضارة والتطبيقات التي يحتمل أن تكون غير مرغوب فيها](/windows/security/threat-protection/intelligence/criteria).
 
-يمكن للتطبيقات غير المرغوب فيها أن تزيد من خطر إصابة شبكتك بالبرامج الضارة الفعلية، أو تجعل من الصعب التعرف على عدوى البرامج الضارة، أو إهدار موارد تكنولوجيا المعلومات في تنظيفها. يتم دعم حماية PUA على Windows 10 Windows 11 وWindows Server 2019 وWindows Server 2022 وWindows Server 2016. في Windows 10 (الإصدار 2004 والإصدارات الأحدث)، يحظر Microsoft Defender Antivirus التطبيقات التي تعتبر PUA لأجهزة Enterprise (E5) بشكل افتراضي.
+يمكن للتطبيقات غير المرغوب فيها أن تزيد من خطر إصابة شبكتك بالبرامج الضارة الفعلية، أو تجعل من الصعب تحديد عدوى البرامج الضارة، أو تكلف فرق تكنولوجيا المعلومات والأمان الوقت والجهد لتنظيفها. يتم دعم حماية PUA على Windows 11 Windows 10 وWindows Server 2022 وWindows Server 2019 وWindows Server 2016. إذا كان اشتراك مؤسستك يتضمن [Microsoft Defender لنقطة النهاية](microsoft-defender-endpoint.md)، يحظر برنامج الحماية من الفيروسات من Microsoft Defender التطبيقات التي تعتبر PUA بشكل افتراضي على أجهزة Windows. 
+
+[تعرف على المزيد حول اشتراكات Windows Enterprise](https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise).
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -76,7 +78,7 @@ ms.locfileid: "66717747"
 يمكن لميزة حماية التطبيق (PUA) غير المرغوب فيها في برنامج الحماية من الفيروسات من Microsoft Defender الكشف عن PUA ومنعه على نقاط النهاية في شبكتك.
 
 > [!NOTE]
-> تتوفر هذه الميزة في Windows 10 Windows 11 وWindows Server 2019 وWindows Server 2022 وWindows Server 2016.
+> تتوفر هذه الميزة في Windows 11 Windows 10 وWindows Server 2022 وWindows Server 2019 وWindows Server 2016.
 
 اكتشفت كتل برنامج الحماية من الفيروسات من Microsoft Defender ملفات PUA وأي محاولات لتنزيلها أو نقلها أو تشغيلها أو تثبيتها. ثم يتم نقل ملفات PUA المحظورة إلى العزل. عند اكتشاف ملف PUA على نقطة نهاية، يرسل برنامج الحماية من الفيروسات من Microsoft Defender إعلاما إلى المستخدم ([ما لم يتم تعطيل الإعلامات](configure-notifications-microsoft-defender-antivirus.md) بنفس تنسيق عمليات الكشف عن التهديدات الأخرى. يتم تمهيد `PUA:` الإعلام للإشارة إلى محتواه.
 
@@ -86,9 +88,7 @@ ms.locfileid: "66717747"
 
 يمكنك تمكين حماية PUA باستخدام [Microsoft Intune](/mem/intune/protect/device-protect) [أو نقطة نهاية Microsoft Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection) [أو نهج المجموعة](/azure/active-directory-domain-services/manage-group-policy) أو عبر [PowerShell cmdlets](/powershell/module/defender/?preserve-view=true&view=win10-ps).
 
-يمكنك أيضا استخدام حماية PUA في وضع التدقيق للكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها دون حظرها. يتم تسجيل عمليات الكشف في سجل أحداث Windows.
-
-تعد حماية PUA في وضع التدقيق مفيدة إذا كانت شركتك تجري فحصا داخليا لتوافق أمان البرامج وكنت ترغب في تجنب أي إيجابيات خاطئة.
+يمكنك أيضا استخدام حماية PUA في وضع التدقيق للكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها دون حظرها. يتم تسجيل عمليات الكشف في سجل أحداث Windows. تعد حماية PUA في وضع التدقيق مفيدة إذا كانت شركتك تجري فحصا داخليا لتوافق أمان البرامج وكنت ترغب في تجنب أي إيجابيات خاطئة.
 
 ### <a name="use-intune-to-configure-pua-protection"></a>استخدام Intune لتكوين حماية PUA
 

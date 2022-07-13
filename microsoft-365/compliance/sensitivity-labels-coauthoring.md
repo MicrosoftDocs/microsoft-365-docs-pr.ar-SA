@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: قم بتشغيل إعداد يمكن التأليف المشترك والحفظ التلقائي في تطبيقات سطح المكتب للمستندات المسماة والمشتفرة في SharePoint وOneDrive.
-ms.openlocfilehash: e82249f3d42eb71345bb998d16a6c2a24e11130c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f2a1bffdc156d5c3ae35ac38fb92f1f88c3af3ea
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628628"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749188"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>تمكين التأليف المشترك للملفات المشفرة بتسميات الحساسية
 
@@ -74,10 +74,10 @@ ms.locfileid: "66628628"
 - يجب تمكين تسميات الحساسية [لملفات Office في SharePoint وOneDrive](sensitivity-labels-sharepoint-onedrive-files.md) للمستأجر. إذا لم تكن هذه الميزة ممكنة بالفعل، فسيتم تمكينها تلقائيا عند تحديد الإعداد لتشغيل التأليف المشترك للملفات التي تحتوي على تسميات الحساسية.
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: الحد الأدنى للإصدار 2107 من خيار التحديث الحالي أو خيار التحديث الشهري للمؤسسة، أو الحد الأدنى للإصدار 2202 من Semi-Annual Enterprise Channel (معاينة)
+    - **Windows**: الحد الأدنى للإصدار 2107 من خيار التحديث الحالي أو خيار التحديث الشهري للمؤسسة، أو الحد الأدنى للإصدار 2202 من Semi-Annual قناة المؤسسة
     - **macOS**: الإصدار الأدنى 16.51
-    - **iOS**: الآن في المعاينة عند [الاشتراك](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) مع الحد الأدنى للإصدار 2.58
-    - **Android**: الآن في المعاينة عند [الاشتراك](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) باستخدام الحد الأدنى للإصدار 16.0.14931
+    - **iOS**: في المعاينة عند [الاشتراك باستخدام](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) الإصدار 2.58 الأدنى
+    - **Android**: في المعاينة عند [الاشتراك](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) باستخدام الحد الأدنى للإصدار 16.0.14931
 
 - يجب أن تدعم جميع التطبيقات والخدمات والأدوات التشغيلية في المستأجر [بيانات تعريف التسمية](#metadata-changes-for-sensitivity-labels) الجديدة. إذا كنت تستخدم أيا مما يلي، فتحقق من الحد الأدنى للإصدارات المطلوبة:
     

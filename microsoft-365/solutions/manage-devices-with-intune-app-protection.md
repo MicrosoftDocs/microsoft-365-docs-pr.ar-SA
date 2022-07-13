@@ -18,14 +18,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: e421a62d3b1fa60df7a64a5b9a94e6e46b0a139f
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: 829d650b6d815a84203e43e7256442bfee6bac0d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651500"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749276"
 ---
 # <a name="step-1-implement-app-protection-policies"></a>الخطوة 1. تنفيذ نهج حماية التطبيقات
 
@@ -38,24 +39,24 @@ ms.locfileid: "64651500"
 - إذا قام مستخدم بتسجيل الدخول باستخدام بيانات اعتماد المؤسسة الخاصة به، يطبق Intune نهجا في طبقة التطبيق لمنع نسخ بيانات مؤسستك ولصقها في التطبيقات الشخصية ولطلب الوصول إلى هذه البيانات.
 - بعد إنشاء نهج حماية التطبيقات، يمكنك فرض حماية البيانات باستخدام نهج الوصول المشروط. 
 
-هذا التكوين يزيد بشكل كبير من وضع الأمان الخاص بك مع أي تأثير تقريبا على تجربة المستخدم.  يمكن للموظفين استخدام تطبيقات مثل Office Microsoft Teams، التي يعرفونها ويحبونها، بينما في الوقت نفسه يمكن لمؤسستك حماية البيانات المضمنة داخل التطبيقات والأجهزة.
+هذا التكوين يزيد بشكل كبير من وضع الأمان الخاص بك مع أي تأثير تقريبا على تجربة المستخدم.  يمكن للموظفين استخدام تطبيقات مثل Office وMicrosoft Teams، التي يعرفونها ويحبونها، بينما في الوقت نفسه يمكن لمؤسستك حماية البيانات المضمنة داخل التطبيقات والأجهزة.
 
 إذا كان لديك تطبيقات خط العمل المخصصة التي تحتاج إلى حماية، يمكنك حاليا استخدام أداة التفاف التطبيق لتمكين APP مع هذه التطبيقات. أو، يمكنك التكامل باستخدام Intune App SDK. عندما يكون لتطبيقك نهج حماية تطبيق مطبقة عليه، يمكن إدارته بواسطة Intune ويتم التعرف عليه من قبل Intune كتطبيق مدار. لمزيد من المعلومات حول حماية تطبيقات خط العمل باستخدام Intune، راجع [إعداد التطبيقات لإدارة تطبيقات الأجهزة المحمولة باستخدام Microsoft Intune](/mem/intune/developer/apps-prepare-mobile-application-management).
 
 ## <a name="configuring-mobile-app-protection"></a>تكوين حماية تطبيق الأجهزة المحمولة
 
-وينسق هذا التوجيه بإحكام مع [نهج الهوية ثقة معدومة والوصول إلى الجهاز](../security/office-365-security/microsoft-365-policies-configurations.md) الموصى بها. بعد إنشاء نهج حماية التطبيقات الأجهزة المحمولة في Intune، اعمل مع فريق الهوية لتكوين نهج الوصول المشروط في Azure AD الذي يفرض حماية تطبيق الأجهزة المحمولة. 
+وينسق هذا التوجيه بإحكام مع [نهج الهوية ثقة معدومة والوصول إلى الجهاز](../security/office-365-security/microsoft-365-policies-configurations.md) الموصى بها. بعد إنشاء نهج حماية التطبيقات الأجهزة المحمولة في Intune، اعمل مع فريق الهوية لتكوين نهج الوصول المشروط في Azure AD التي تفرض حماية تطبيق الأجهزة المحمولة. 
 
 يميز هذا الرسم التوضيحي النهجين (كما هو موضح في الجدول أسفل الرسم التوضيحي).
 
 [![ثقة معدومة نهج الوصول إلى الهوية والجهاز](../media/devices/identity-device-starting-point.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/devices/identity-device-starting-point.png)
 
-لتكوين هذه النهج، استخدم الإرشادات والإعدادات الموصى بها المحددة في [ثقة معدومة نهج الوصول إلى الهوية والجهاز](../security/office-365-security/microsoft-365-policies-configurations.md). يرتبط الجدول أدناه مباشرة بإرشادات تكوين هذه النهج في Intune وAzure AD.
+لتكوين هذه النهج، استخدم الإرشادات والإعدادات الموصى بها المحددة في [ثقة معدومة نهج الوصول إلى الهوية والجهاز](../security/office-365-security/microsoft-365-policies-configurations.md). يرتبط الجدول أدناه مباشرة بإرشادات تكوين هذه النهج في Intune Azure AD.
 
 
 |خطوه  |السياسات  |معلومات إضافية  |الترخيص  |
 |---------|---------|---------|---------|
-|1   |  [تطبيق حماية البيانات لنهج حماية التطبيقات (APP)](../security/office-365-security/identity-access-policies.md#apply-app-data-protection-policies)       | نهج حماية تطبيق Intune واحد لكل نظام أساسي (Windows وiOS/iPadOS وAndroid).        | Microsoft 365 E3 أو E5        |
+|1   |  [تطبيق حماية البيانات لنهج حماية التطبيقات (APP)](../security/office-365-security/identity-access-policies.md#apply-app-data-protection-policies)       | نهج حماية تطبيق Intune واحد لكل نظام أساسي (Windows، iOS/iPadOS، Android).        | Microsoft 365 E3 أو E5        |
 |2     | [طلب التطبيقات المعتمدة وحماية التطبيقات ](../security/office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)       |  يفرض حماية تطبيقات الأجهزة المحمولة للهواتف وأجهزة الكمبيوتر اللوحية باستخدام iOS أو iPadOS أو Android.   |  Microsoft 365 E3 أو E5       |
 | | | | |
 

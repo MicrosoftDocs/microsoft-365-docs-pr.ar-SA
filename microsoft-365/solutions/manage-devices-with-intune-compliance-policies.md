@@ -15,14 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: f93642984ecb2439ab6e4ad484ea4f6f3303c0ce
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: ae2866d2cabf21616b7aea74220dcf5ce8e4d4eb
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651356"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750287"
 ---
 # <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>الخطوة 3. إعداد نهج التوافق للأجهزة باستخدام Intune
 
@@ -30,7 +31,7 @@ ms.locfileid: "64651356"
 
 ![خطوات إدارة الأجهزة](../media/devices/intune-mdm-step-2.png#lightbox)
 
-تريد التأكد من أن الأجهزة التي تصل إلى تطبيقاتك وبياناتك تلبي الحد الأدنى من المتطلبات، على سبيل المثال، إنها محمية بكلمة مرور أو محمية بواسطة الدبوس ونظام التشغيل محدث. نهج التوافق هي الطريقة لتحديد المتطلبات التي يجب أن تفي بها الأجهزة. تستخدم MEM نهج التوافق هذه لوضع علامة على جهاز على أنه متوافق أو غير متوافق، يتم تمرير هذه الحالة الثنائية إلى Azure AD الذي يمكنه استخدام هذه الحالة في قواعد الوصول المشروط للسماح لجهاز أو منعه من الوصول إلى الموارد. 
+تريد التأكد من أن الأجهزة التي تصل إلى تطبيقاتك وبياناتك تلبي الحد الأدنى من المتطلبات، على سبيل المثال، إنها محمية بكلمة مرور أو محمية بواسطة الدبوس ونظام التشغيل محدث. نهج التوافق هي الطريقة لتحديد المتطلبات التي يجب أن تفي بها الأجهزة. تستخدم MEM نهج التوافق هذه لوضع علامة على جهاز على أنه متوافق أو غير متوافق، يتم تمرير هذه الحالة الثنائية إلى Azure AD التي يمكنها استخدام هذه الحالة في قواعد الوصول المشروط للسماح لجهاز أو منعه من الوصول إلى الموارد. 
 
 ## <a name="configuring-device-compliance-policies"></a>تكوين نهج توافق الجهاز
 

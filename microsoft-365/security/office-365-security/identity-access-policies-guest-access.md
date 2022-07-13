@@ -1,6 +1,6 @@
 ---
-title: سياسات الوصول إلى الأجهزة والهوية للسماح بالوصول إلى الضيف والمستخدم الخارجي B2B - Microsoft 365 للمؤسسات | Microsoft Docs
-description: يصف الوصول الشرطي الموصى به والسياسات ذات الصلة لحماية وصول الضيوف والمستخدمين الخارجيين.
+title: نهج الوصول إلى الهوية والجهاز للسماح للمستخدم الضيف والمستخدم الخارجي بالوصول إلى B2B - Microsoft 365 للمؤسسات | Microsoft Docs
+description: يصف الوصول المشروط الموصى به والنهج ذات الصلة لحماية وصول الضيوف والمستخدمين الخارجيين.
 ms.prod: m365-security
 ms.topic: article
 ms.author: dansimp
@@ -18,72 +18,73 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
+- zerotrust-solution
 ms.technology: mdo
-ms.openlocfilehash: 28b389292ed733318e5796a1be3ed9c11d2df462
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: c6784f73b431826063d94794606b373662446324
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466598"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750133"
 ---
-# <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>سياسات السماح بالوصول إلى الضيف والوصول إلى المستخدم الخارجي B2B
+# <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>نهج السماح بوصول الضيف ووصول المستخدم الخارجي إلى B2B
 
-تناقش هذه المقالة ضبط ثقة معدومة الوصول إلى الأجهزة وهويتها الموصى بها للسماح بالوصول إلى الضيوف والمستخدمين الخارجيين الذين لديهم حساب Azure Active Directory (Azure AD) Business-to-Business (B2B). يعتمد هذا الإرشاد على [الهوية المشتركة ونهج الوصول إلى الأجهزة](identity-access-policies.md).
+تناقش هذه المقالة تعديل نهج الهوية ثقة معدومة والوصول إلى الأجهزة الموصى بها للسماح بالوصول إلى الضيوف والمستخدمين الخارجيين الذين لديهم حساب Azure Active Directory (Azure AD) Business-to-Business (B2B). يعتمد هذا التوجيه على [نهج الهوية والوصول إلى الجهاز الشائعة](identity-access-policies.md).
 
-تم تصميم هذه التوصيات لتطبيقها على **مستوى** الحماية لنقطة البداية. ولكن يمكنك أيضا ضبط التوصيات استنادا إلى احتياجاتك **الخاصة لحماية المؤسسة** **والأمان** المتخصصة.
+تم تصميم هذه التوصيات لتطبيقها على مستوى الحماية **لنقطة البداية** . ولكن يمكنك أيضا ضبط التوصيات بناء على احتياجاتك الخاصة لحماية الأمان الخاصة **بالمؤسسات** **والمتخصصة** .
 
-لا يمنح توفير مسار حسابات B2B للمصادقة مع مستأجر Azure AD هذه الحسابات إمكانية الوصول إلى بيئتك بالكامل. يمكن لمستخدمي B2B وحساباتهم الوصول إلى الخدمات والموارد، مثل الملفات، التي تمت مشاركتها معهم بواسطة نهج الوصول الشرطي.
+لا يمنح توفير مسار لحسابات B2B للمصادقة مع مستأجر Azure AD هذه الحسابات الوصول إلى بيئتك بأكملها. يمكن لمستخدمي B2B وحساباتهم الوصول إلى الخدمات والموارد، مثل الملفات، التي تمت مشاركتها معهم بواسطة نهج الوصول المشروط.
 
-## <a name="updating-the-common-policies-to-allow-and-protect-guests-and-external-user-access"></a>تحديث السياسات الشائعة للسماح للضيوف والوصول إلى المستخدمين الخارجيين وحمايتهم
+## <a name="updating-the-common-policies-to-allow-and-protect-guests-and-external-user-access"></a>تحديث النهج الشائعة للسماح للضيوف والوصول إلى المستخدمين الخارجيين وحمايتها
 
-يعرض هذا الرسم التخطيطي السياسات التي تريد إضافتها أو تحديثها بين سياسات الوصول إلى الأجهزة والهوية المشتركة، لضيف B2B والوصول إلى المستخدم الخارجي.
+يوضح هذا الرسم التخطيطي النهج التي يجب إضافتها أو تحديثها بين نهج الهوية والوصول إلى الأجهزة الشائعة، للوصول إلى الضيف B2B والمستخدم الخارجي.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="ملخص تحديثات النهج لحماية وصول الضيف" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
 
-يسرد الجدول التالي السياسات التي تحتاج إما إلى إنشائها وتحديثها. ترتبط النهج الشائعة بتعليمات التكوين المقترنة [في مقالة](identity-access-policies.md) سياسات الوصول إلى الأجهزة والهوية الشائعة.
+يسرد الجدول التالي النهج التي تحتاج إلى إنشائها وتحديثها. ترتبط النهج الشائعة بإرشادات التكوين المقترنة في مقالة [نهج الوصول إلى الأجهزة والهوية الشائعة](identity-access-policies.md) .
 
 |مستوى الحماية|السياسات|معلومات إضافية|
 |---|---|---|
-|**نقطة البداية**|[طلب MFA دائما للضيوف والمستخدمين الخارجيين](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|قم بإنشاء هذا النهج الجديد وتكوين: <ul><li>**للواجبات > المستخدمون** والمجموعات > تضمين، اختر تحديد المستخدمين والمجموعات، ثم حدد كل المستخدمين **الضيوف والخارجيين**.</li><li>بالنسبة **إلى > شروط >** تسجيل الدخول، اترك كل الخيارات غير محددة لفرض المصادقة متعددة العوامل (MFA) دائما.</li></ul>|
-||[يتطلب MFA عندما تكون مخاطر تسجيل الدخول *متوسطة* أو *عالية*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|قم بتعديل هذا النهج لاستبعاد الضيوف والمستخدمين الخارجيين.|
+|**نقطة البداية**|[طلب المصادقة متعددة العوامل دائما للضيوف والمستخدمين الخارجيين](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|إنشاء هذا النهج الجديد وتكوين: <ul><li>بالنسبة **إلى "الواجبات" > "المستخدمون" والمجموعات > "تضمين**"، اختر **"تحديد مستخدمين ومجموعات**"، ثم حدد **"كافة المستخدمين الضيوف والخارجيين**".</li><li>بالنسبة **إلى التعيينات > الشروط > تسجيل الدخول**، اترك كافة الخيارات غير محددة لفرض المصادقة متعددة العوامل (MFA) دائما.</li></ul>|
+||[طلب المصادقة متعددة العوامل (MFA) عندما يكون خطر تسجيل الدخول *متوسطا* أو *مرتفعا*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|تعديل هذا النهج لاستبعاد الضيوف والمستخدمين الخارجيين.|
 
-لتضمين الضيوف والمستخدمين الخارجيين أو استبعادهم في سياسات الوصول الشرطي، بالنسبة إلى الواجبات > المستخدمون والمجموعات > تضمين أو **استبعاد**، تحقق من جميع المستخدمين **الخارجيين والضيوف**.
+لتضمين الضيوف والمستخدمين الخارجيين أو استبعادهم في نهج الوصول المشروط، بالنسبة **للواجبات > المستخدمين والمجموعات > تضمينها** أو **استبعادها**، تحقق من **كافة المستخدمين الضيوف والخارجيين**.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png" alt-text="عناصر التحكم الخاصة باستبعاد الضيوف والمستخدمين الخارجيين" lightbox="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png" alt-text="عناصر التحكم لاستبعاد الضيوف والمستخدمين الخارجيين" lightbox="../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png":::
 
 ## <a name="more-information"></a>معلومات إضافية
 
 ### <a name="guests-and-external-user-access-with-microsoft-teams"></a>وصول الضيوف والمستخدمين الخارجيين باستخدام Microsoft Teams
 
-Microsoft Teams المستخدمين التاليين:
+يحدد Microsoft Teams المستخدمين التاليين:
 
-- **يستخدم وصول** الضيف حساب Azure AD B2B الذي يمكن إضافته كعضو في فريق والحصول على حق الوصول إلى الاتصالات والموارد الخاصة بالفريق.
+- يستخدم **وصول الضيف** حساب B2B Azure AD الذي يمكن إضافته كعضو في فريق ويمكن الوصول إلى اتصالات الفريق وموارده.
 
-- **الوصول الخارجي** للمستخدم الخارجي الذي ليس لديه حساب B2B. يتضمن وصول المستخدم الخارجي الدعوات والمكالمات والمحادثات والاجتماعات، ولكنه لا يتضمن عضوية الفريق والوصول إلى موارد الفريق.
+- **الوصول الخارجي** هو لمستخدم خارجي ليس لديه حساب B2B. يتضمن وصول المستخدم الخارجي الدعوات والمكالمات والدردشات والاجتماعات، ولكنه لا يتضمن عضوية الفريق والوصول إلى موارد الفريق.
 
-لمزيد من المعلومات، راجع [المقارنة بين الضيوف والوصول إلى المستخدم الخارجي للفرق](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
+لمزيد من المعلومات، راجع [المقارنة بين وصول الضيوف والمستخدم الخارجي للفرق](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
 
-لمزيد من المعلومات حول تأمين نهج الوصول إلى Teams، راجع توصيات النهج لتأمين Teams والملفات [والمجموعات](teams-access-policies.md).
+لمزيد من المعلومات حول تأمين نهج الوصول إلى الهوية والجهاز ل Teams، راجع [توصيات النهج لتأمين دردشات Teams ومجموعاته وملفاته](teams-access-policies.md).
 
-### <a name="require-mfa-always-for-guest-and-external-users"></a>طلب MFA دائما للمستخدمين الخارجيين والضيوف
+### <a name="require-mfa-always-for-guest-and-external-users"></a>طلب المصادقة متعددة العوامل دائما للمستخدمين الضيوف والخارجيين
 
-يطالب هذا النهج الضيوف بالتسجيل للحصول على MFA في المستأجر الخاص بك، بغض النظر عما إذا كانوا مسجلين ل MFA في المستأجر المنزلي. عند الوصول إلى الموارد في المستأجر، يجب على الضيوف والمستخدمين الخارجيين استخدام MFA لكل طلب.
+يطالب هذا النهج الضيوف بالتسجيل للحصول على المصادقة متعددة العوامل (MFA) في المستأجر الخاص بك، بغض النظر عما إذا كانوا مسجلين في المصادقة متعددة العوامل (MFA) في مستأجر المنزل الخاص بهم. عند الوصول إلى الموارد في المستأجر الخاص بك، يطلب من الضيوف والمستخدمين الخارجيين استخدام المصادقة متعددة العوامل لكل طلب.
 
-### <a name="excluding-guests-and-external-users-from-risk-based-mfa"></a>استبعاد الضيوف والمستخدمين الخارجيين من MFA المستند إلى المخاطر
+### <a name="excluding-guests-and-external-users-from-risk-based-mfa"></a>استبعاد الضيوف والمستخدمين الخارجيين من المصادقة متعددة العوامل المستندة إلى المخاطر
 
-في حين يمكن أن تفرض المؤسسات سياسات مستندة إلى المخاطر لمستخدمي B2B الذين يستخدمون Azure AD Identity Protection، هناك قيود في تنفيذ Azure AD Identity Protection لمستخدمي التعاون في B2B في دليل موارد بسبب هويتهم الموجودة في دليل المنزل. نظرا لهذه القيود، توصي Microsoft باستبعاد الضيوف من سياسات MFA المستندة إلى المخاطر ومطلب هؤلاء المستخدمين استخدام MFA دائما.
+بينما يمكن للمؤسسات فرض نهج تستند إلى المخاطر لمستخدمي B2B باستخدام Azure AD Identity Protection، هناك قيود في تنفيذ Azure AD Identity Protection لمستخدمي التعاون B2B في دليل الموارد بسبب هويتهم الموجودة في دليلهم الرئيسي. نظرا لهذه القيود، توصي Microsoft باستبعاد الضيوف من نهج المصادقة متعددة العوامل المستندة إلى المخاطر وتتطلب من هؤلاء المستخدمين استخدام المصادقة متعددة العوامل دائما.
 
-لمزيد من المعلومات، راجع قيود [حماية الهوية لمستخدمي التعاون في B2B](/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users).
+لمزيد من المعلومات، راجع [قيود Identity Protection لمستخدمي تعاون B2B](/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users).
 
 ### <a name="excluding-guests-and-external-users-from-device-management"></a>استبعاد الضيوف والمستخدمين الخارجيين من إدارة الأجهزة
 
-يمكن لمنظمه واحدة فقط إدارة الجهاز. إذا لم تستثني الضيوف والمستخدمين الخارجيين من السياسات التي تتطلب توافق الأجهزة، فإن هذه السياسات ستحظر هؤلاء المستخدمين.
+يمكن لمؤسسة واحدة فقط إدارة جهاز. إذا لم تستبعد الضيوف والمستخدمين الخارجيين من النهج التي تتطلب توافق الجهاز، فستؤدي هذه النهج إلى حظر هؤلاء المستخدمين.
 
 ## <a name="next-step"></a>الخطوة التالية
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="سياسات تطبيقات Microsoft 365 السحابة Microsoft Defender for Cloud Apps" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="النهج الخاصة بتطبيقات سحابة Microsoft 365 Microsoft Defender for Cloud Apps" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
-تكوين سياسات الوصول الشرطي ل:
+تكوين نهج الوصول المشروط من أجل:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)

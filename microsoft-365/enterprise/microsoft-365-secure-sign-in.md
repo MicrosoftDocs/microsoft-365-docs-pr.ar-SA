@@ -1,5 +1,5 @@
 ---
-title: 'الخطوة 3: حماية حسابات المستخدمين Microsoft 365'
+title: 'الخطوة 3: حماية حسابات مستخدمي Microsoft 365'
 f1.keywords:
 - NOCSH
 author: kelleyvice-msft
@@ -14,21 +14,24 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 description: مطالبة المستخدمين بتسجيل الدخول بأمان باستخدام المصادقة متعددة العوامل (MFA) والميزات الأخرى.
-ms.openlocfilehash: 4566b2c8c73ce258899e1de6ef621715092e50a5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 56ccd1df24bbfb09920cb0c7138ed2e5dc9ca3cb
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090264"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749957"
 ---
-# <a name="step-3-protect-your-microsoft-365-user-accounts"></a>الخطوة 3: حماية حسابات المستخدمين Microsoft 365
+# <a name="step-3-protect-your-microsoft-365-user-accounts"></a>الخطوة 3: حماية حسابات مستخدمي Microsoft 365
 
 لزيادة أمان عمليات تسجيل دخول المستخدم:
 
 - استخدام Windows Hello للأعمال
-- استخدام حماية كلمة مرور Azure Active Directory (Azure AD)
+- استخدام Azure Active Directory (Azure AD) Password Protection
 - استخدام المصادقة متعددة العوامل (MFA)
 - توزيع تكوينات الوصول إلى الهوية والجهاز
 - الحماية من اختراق بيانات الاعتماد باستخدام Azure AD Identity Protection
@@ -40,11 +43,11 @@ Windows Hello للأعمال في Windows 10 Enterprise يستبدل كلمات 
 لمزيد من المعلومات، راجع [Windows Hello للأعمال نظرة عامة](/windows/security/identity-protection/hello-for-business/hello-overview).
 
 
-## <a name="azure-ad-password-protection"></a>حماية كلمة مرور Azure AD
+## <a name="azure-ad-password-protection"></a>Azure AD Password Protection
 
-تكتشف Azure AD Password Protection كلمات المرور الضعيفة المعروفة ومتغيراتها وتحظرها ويمكنها أيضا حظر المصطلحات الضعيفة الإضافية الخاصة بمؤسستك. يتم تطبيق قوائم كلمات المرور المحظورة العمومية الافتراضية تلقائيا على جميع المستخدمين في مستأجر Azure AD. يمكنك تحديد إدخالات إضافية في قائمة كلمات مرور محظورة مخصصة. عندما يغير المستخدمون كلمات المرور الخاصة بهم أو يعيدون تعيينها، يتم التحقق من قوائم كلمات المرور المحظورة هذه لفرض استخدام كلمات مرور قوية.
+Azure AD تكتشف الحماية بكلمة مرور كلمات المرور الضعيفة المعروفة ومتغيراتها وتحظرها، كما يمكنها حظر المصطلحات الضعيفة الإضافية الخاصة بمؤسستك. يتم تطبيق قوائم كلمات المرور المحظورة العمومية الافتراضية تلقائيا على جميع المستخدمين في مستأجر Azure AD. يمكنك تحديد إدخالات إضافية في قائمة كلمات مرور محظورة مخصصة. عندما يغير المستخدمون كلمات المرور الخاصة بهم أو يعيدون تعيينها، يتم التحقق من قوائم كلمات المرور المحظورة هذه لفرض استخدام كلمات مرور قوية.
 
-لمزيد من المعلومات، راجع [تكوين حماية كلمة مرور Azure AD](/azure/active-directory/authentication/concept-password-ban-bad).
+لمزيد من المعلومات، راجع [تكوين Azure AD الحماية بكلمة مرور](/azure/active-directory/authentication/concept-password-ban-bad).
 
 ## <a name="mfa"></a>المصادقة متعددة العوامل
 
@@ -54,20 +57,20 @@ Windows Hello للأعمال في Windows 10 Enterprise يستبدل كلمات 
 
 خطوتك الأولى في استخدام المصادقة متعددة العوامل هي [طلبها لجميع حسابات المسؤولين](protect-your-global-administrator-accounts.md)، والمعروفة أيضا باسم الحسابات المتميزة. بعد هذه الخطوة الأولى، توصي Microsoft ب MFA لجميع المستخدمين.
 
-هناك ثلاث طرق لمطلب المستخدمين استخدام المصادقة متعددة العوامل استنادا إلى خطة Microsoft 365 الخاصة بك.
+هناك ثلاث طرق لتطلب من المستخدمين استخدام المصادقة متعددة العوامل استنادا إلى خطة Microsoft 365.
 
 | الخطة | توصية |
 |---------|---------|
-|كافة خطط Microsoft 365 (بدون تراخيص Azure AD Premium P1 أو P2)     |[تمكين إعدادات الأمان الافتراضية في Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). تتضمن إعدادات الأمان الافتراضية في Azure AD المصادقة متعددة العوامل للمستخدمين والمسؤولين.   |
+|جميع خطط Microsoft 365 (بدون Azure AD تراخيص Premium P1 أو P2)     |[تمكين إعدادات الأمان الافتراضية في Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). تتضمن إعدادات الأمان الافتراضية في Azure AD المصادقة متعددة العوامل للمستخدمين والمسؤولين.   |
 |Microsoft 365 E3 (بما في ذلك تراخيص Azure AD Premium P1)     | استخدم [نهج الوصول المشروط الشائعة](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) لتكوين النهج التالية: <br>- [طلب المصادقة متعددة العوامل للمسؤولين](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [طلب المصادقة متعددة العوامل لجميع المستخدمين](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [حظر المصادقة القديمة](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (بما في ذلك تراخيص Azure AD Premium P2)     | الاستفادة من Azure AD Identity Protection، ابدأ في تنفيذ مجموعة Microsoft الموصى بها من الوصول المشروط والسياسات ذات الصلة من خلال إنشاء هاتين النهجتين:<br> - [طلب المصادقة متعددة العوامل (MFA) عندما يكون خطر تسجيل الدخول متوسطا أو مرتفعا](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) <br>- [يجب على المستخدمين المعرضين لمخاطر عالية تغيير كلمة المرور](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)       |
+|Microsoft 365 E5 (بما في ذلك تراخيص Azure AD Premium P2)     | الاستفادة من Azure AD Identity Protection، ابدأ في تنفيذ مجموعة Microsoft الموصى بها من الوصول المشروط والسياسات ذات الصلة عن طريق إنشاء هاتين النهجتين:<br> - [طلب المصادقة متعددة العوامل (MFA) عندما يكون خطر تسجيل الدخول متوسطا أو مرتفعا](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) <br>- [يجب على المستخدمين المعرضين لمخاطر عالية تغيير كلمة المرور](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)       |
 | | |
 
 ### <a name="security-defaults"></a>إعدادات الأمان الافتراضية
 
-إعدادات الأمان الافتراضية هي ميزة جديدة Microsoft 365 والاشتراكات المدفوعة أو التجريبية Office 365 التي تم إنشاؤها بعد 21 أكتوبر 2019. تحتوي هذه الاشتراكات على إعدادات الأمان الافتراضية قيد التشغيل، مما ***يتطلب من جميع المستخدمين استخدام المصادقة متعددة العوامل مع تطبيق Microsoft Authenticator***.
+إعدادات الأمان الافتراضية هي ميزة جديدة ل Microsoft 365 والاشتراكات المدفوعة أو التجريبية Office 365 التي تم إنشاؤها بعد 21 أكتوبر 2019. تحتوي هذه الاشتراكات على إعدادات الأمان الافتراضية قيد التشغيل، مما ***يتطلب من جميع المستخدمين استخدام المصادقة متعددة العوامل مع تطبيق Microsoft Authenticator***.
  
-لدى المستخدمين 14 يوما للتسجيل للحصول على المصادقة متعددة العوامل باستخدام تطبيق Microsoft Authenticator من هواتفهم الذكية، والذي يبدأ من المرة الأولى التي يسجلون فيها الدخول بعد تمكين إعدادات الأمان الافتراضية. بعد مرور 14 يوما، لن يتمكن المستخدم من تسجيل الدخول حتى يكتمل تسجيل المصادقة متعددة العوامل.
+لدى المستخدمين 14 يوما للتسجيل للحصول على المصادقة متعددة العوامل (MFA) باستخدام تطبيق Microsoft Authenticator من هواتفهم الذكية، والتي تبدأ من المرة الأولى التي يسجلون فيها الدخول بعد تمكين إعدادات الأمان الافتراضية. بعد مرور 14 يوما، لن يتمكن المستخدم من تسجيل الدخول حتى يكتمل تسجيل المصادقة متعددة العوامل.
 
 تضمن إعدادات الأمان الافتراضية أن جميع المؤسسات لديها مستوى أساسي من الأمان لتسجيل دخول المستخدم الذي يتم تمكينه بشكل افتراضي. يمكنك تعطيل إعدادات الأمان الافتراضية لصالح المصادقة متعددة العوامل مع نهج الوصول المشروط أو للحسابات الفردية.
 
@@ -77,13 +80,13 @@ Windows Hello للأعمال في Windows 10 Enterprise يستبدل كلمات 
 
 نهج الوصول المشروط هي مجموعة من القواعد التي تحدد الشروط التي يتم بموجبها تقييم عمليات تسجيل الدخول ومنح حق الوصول. على سبيل المثال، يمكنك إنشاء نهج الوصول المشروط الذي ينص على:
 
-- إذا كان اسم حساب المستخدم عضوا في مجموعة للمستخدمين الذين تم تعيينهم Exchange أو المستخدم أو كلمة المرور أو الأمان أو SharePoint **أو مسؤول Exchange** أو **مسؤول SharePoint** أو أدوار **المسؤول العمومي**، فاطلب المصادقة متعددة العوامل (MFA) قبل السماح بالوصول.
+- إذا كان اسم حساب المستخدم عضوا في مجموعة للمستخدمين الذين تم تعيينهم لأدوار Exchange أو المستخدم أو كلمة المرور أو الأمان أو SharePoint أو **مسؤول Exchange** أو **مسؤول SharePoint** أو **أدوار المسؤول العمومي** ، فاطلب المصادقة متعددة العوامل (MFA) قبل السماح بالوصول.
 
 يسمح لك هذا النهج بتطلب المصادقة متعددة العوامل استنادا إلى عضوية المجموعة، بدلا من محاولة تكوين حسابات المستخدمين الفردية ل MFA عند تعيينها أو إلغاء تعيينها من أدوار المسؤول هذه.
 
 يمكنك أيضا استخدام نهج الوصول المشروط لإمكانيات أكثر تقدما، مثل طلب أن يتم تسجيل الدخول من جهاز متوافق، مثل الكمبيوتر المحمول الذي يعمل Windows 10.
 
-يتطلب الوصول المشروط تراخيص Azure AD Premium P1، والتي يتم تضمينها مع Microsoft 365 E3 وE5.
+يتطلب الوصول المشروط Azure AD تراخيص Premium P1، والتي يتم تضمينها مع Microsoft 365 E3 وE5.
 
 لمزيد من المعلومات، راجع [نظرة عامة على الوصول المشروط](/azure/active-directory/conditional-access/overview).
 
@@ -106,10 +109,10 @@ Windows Hello للأعمال في Windows 10 Enterprise يستبدل كلمات 
 
 ## <a name="zero-trust-identity-and-device-access-configurations"></a>ثقة معدومة تكوينات الهوية والوصول إلى الجهاز
 
-ثقة معدومة إعدادات الوصول إلى الهوية والجهاز والنهج هي ميزات متطلب أساسي موصى بها وإعداداتها جنبا إلى جنب مع نهج الوصول المشروط وIntune وAzure AD Identity Protection التي تحدد ما إذا كان يجب منح طلب وصول معين وتحت أي شروط. يستند هذا التحديد إلى حساب المستخدم لتسجيل الدخول، والجهاز المستخدم، والتطبيق الذي يستخدمه المستخدم للوصول، والموقع الذي يتم منه طلب الوصول، وتقييم مخاطر الطلب. تساعد هذه الإمكانية على ضمان أن المستخدمين والأجهزة المعتمدة فقط يمكنهم الوصول إلى مواردك الهامة.
+ثقة معدومة إعدادات الوصول إلى الهوية والجهاز والنهج هي ميزات متطلب أساسي موصى بها وإعداداتها جنبا إلى جنب مع الوصول المشروط وIntune ونهج حماية الهوية Azure AD التي تحدد ما إذا كان يجب منح طلب وصول معين وتحت أي شروط. يستند هذا التحديد إلى حساب المستخدم لتسجيل الدخول، والجهاز المستخدم، والتطبيق الذي يستخدمه المستخدم للوصول، والموقع الذي يتم منه طلب الوصول، وتقييم مخاطر الطلب. تساعد هذه الإمكانية على ضمان أن المستخدمين والأجهزة المعتمدة فقط يمكنهم الوصول إلى مواردك الهامة.
 
 >[!Note]
->تتطلب Azure AD Identity Protection تراخيص Azure AD Premium P2، والتي يتم تضمينها مع Microsoft 365 E5.
+>تتطلب Azure AD Identity Protection Azure AD تراخيص Premium P2، والتي يتم تضمينها مع Microsoft 365 E5.
 >
 
 يتم تعريف نهج الوصول إلى الهوية والجهاز لاستخدامها في ثلاثة مستويات: 
@@ -120,7 +123,7 @@ Windows Hello للأعمال في Windows 10 Enterprise يستبدل كلمات 
 
 توفر هذه المستويات وتكويناتها المقابلة مستويات متسقة من الحماية عبر بياناتك وهوياتك وأجهزتك.
 
-توصي Microsoft بشدة بتكوين ثقة معدومة الهوية ونهج الوصول إلى الجهاز في مؤسستك، بما في ذلك إعدادات محددة Microsoft Teams Exchange Online SharePoint. لمزيد من المعلومات، راجع [ثقة معدومة تكوينات الهوية والوصول إلى الجهاز](../security/office-365-security/microsoft-365-policies-configurations.md).
+توصي Microsoft بشدة بتكوين ثقة معدومة نهج الوصول إلى الهوية والجهاز في مؤسستك، بما في ذلك إعدادات معينة ل Microsoft Teams Exchange Online وSharePoint. لمزيد من المعلومات، راجع [ثقة معدومة تكوينات الهوية والوصول إلى الجهاز](../security/office-365-security/microsoft-365-policies-configurations.md).
 
 ## <a name="azure-ad-identity-protection"></a>حماية الهوية في Azure AD
 
@@ -130,21 +133,21 @@ Windows Hello للأعمال في Windows 10 Enterprise يستبدل كلمات 
 
 |القدره|الوصف|
 |:---------|:---------|
-| تحديد الثغرات الأمنية المحتملة في هويات مؤسستك ومعالجتها | يستخدم Azure AD التعلم الآلي للكشف عن الحالات الشاذة والنشاط المشبوه، مثل عمليات تسجيل الدخول وأنشطة ما بعد تسجيل الدخول. باستخدام هذه البيانات، تنشئ Azure AD Identity Protection تقارير وتنبيهات تساعدك على تقييم المشكلات واتخاذ إجراء.|
-|الكشف عن الإجراءات المشبوهة المتعلقة بهويات مؤسستك والاستجابة لها تلقائيا|يمكنك تكوين النهج المستندة إلى المخاطر التي تستجيب تلقائيا للمشكلات المكتشفة عند الوصول إلى مستوى مخاطر محدد. يمكن لهذه النهج، بالإضافة إلى عناصر تحكم الوصول المشروط الأخرى التي يوفرها Azure AD و Microsoft Intune، إما حظر الوصول تلقائيا أو اتخاذ إجراءات تصحيحية، بما في ذلك إعادة تعيين كلمة المرور وتتطلب مصادقة Azure AD متعددة العوامل لتسجيل الدخول اللاحق. |
+| تحديد الثغرات الأمنية المحتملة في هويات مؤسستك ومعالجتها | تستخدم Azure AD التعلم الآلي للكشف عن الحالات الشاذة والأنشطة المشبوهة، مثل عمليات تسجيل الدخول وأنشطة ما بعد تسجيل الدخول. باستخدام هذه البيانات، Azure AD Identity Protection بإنشاء تقارير وتنبيهات تساعدك على تقييم المشكلات واتخاذ إجراء.|
+|الكشف عن الإجراءات المشبوهة المتعلقة بهويات مؤسستك والاستجابة لها تلقائيا|يمكنك تكوين النهج المستندة إلى المخاطر التي تستجيب تلقائيا للمشكلات المكتشفة عند الوصول إلى مستوى مخاطر محدد. يمكن لهذه النهج، بالإضافة إلى عناصر تحكم الوصول المشروط الأخرى التي توفرها Azure AD Microsoft Intune، إما حظر الوصول تلقائيا أو اتخاذ إجراءات تصحيحية، بما في ذلك إعادة تعيين كلمة المرور وتتطلب مصادقة متعددة العوامل Azure AD لتسجيل الدخول اللاحق. |
 | التحقيق في الحوادث المشبوهة وحلها باستخدام الإجراءات الإدارية | يمكنك التحقيق في أحداث المخاطر باستخدام معلومات حول حادث الأمان. تتوفر مهام سير العمل الأساسية لتعقب التحقيقات وبدء إجراءات المعالجة، مثل إعادة تعيين كلمة المرور. |
 |||
 
-راجع [المزيد من المعلومات حول Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
+اطلع على [مزيد من المعلومات حول Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 راجع [الخطوات لتمكين Azure AD Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
 
-## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>الموارد التقنية للمسؤول للمصادقة متعددة العوامل (MFA) وتسجيل الدخول الآمن
+## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>مسؤول الموارد التقنية للمصادقة متعددة العوامل (MFA) وتسجيل الدخول الآمن
 
-- [المصادقة متعددة العوامل Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
-- [نشر الهوية Microsoft 365](deploy-identity-solution-overview.md)
-- [مقاطع فيديو تدريبية حول Azure Azure AD لأكاديمية Azure](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [تكوين نهج تسجيل Azure AD Multi-Factor Authentication](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+- [المصادقة متعددة العوامل ل Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
+- [نشر الهوية ل Microsoft 365](deploy-identity-solution-overview.md)
+- [أكاديمية Azure Azure AD مقاطع فيديو تدريبية](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
+- [تكوين نهج تسجيل المصادقة متعددة العوامل Azure AD](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [تكوينات الوصول إلى الأجهزة والهويات](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>الخطوة التالية

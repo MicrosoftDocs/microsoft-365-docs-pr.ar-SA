@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2acde87daaff88ec9ce7458218919342a9f1edd8
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 0e3cd7a16b45a7dfd78011d7753866069d3144dc
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782490"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748858"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>تمكين بيئة تقييم Microsoft Defender لنقطة النهاية
 
@@ -54,7 +55,7 @@ ms.locfileid: "64782490"
 
    :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="صفحة ترخيص Azure في مدخل Microsoft 365 Defender" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
 
-1. بدلا من ذلك، في مركز الإدارة، انتقل إلى **BillingSubscriptions** > .
+1. بدلا من ذلك، في مركز الإدارة، انتقل إلى **اشتراكات** **الفوترة** > .
 
     على الشاشة، سترى جميع التراخيص المتوفرة وحالتها **الحالية**.
 
@@ -65,7 +66,7 @@ ms.locfileid: "64782490"
 
 بعد التحقق من توفير حالة الترخيص بشكل صحيح، يمكنك البدء في إلحاق الأجهزة إلى الخدمة. 
 
-لغرض تقييم Microsoft Defender لنقطة النهاية، نوصي باختيار جهازين Windows لإجراء التقييم.
+لغرض تقييم Microsoft Defender لنقطة النهاية، نوصي باختيار جهازين من أجهزة Windows لإجراء التقييم علىهما.
 
 يمكنك اختيار استخدام أي من أدوات الإدارة المدعومة، ولكن يوفر Intune التكامل الأمثل. لمزيد من المعلومات، راجع [تكوين Microsoft Defender لنقطة النهاية في Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
@@ -81,8 +82,8 @@ ms.locfileid: "64782490"
 
 نقطه النهايه | خيارات الأدوات
 :---|:---
-**بالنسبة لنظام التشغيل** | [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](../defender-endpoint/configure-endpoints-script.md) [نهج المجموعة](../defender-endpoint/configure-endpoints-gp.md) [إدارة نقاط النهاية من Microsoft/ الجوال إدارة الأجهزة](../defender-endpoint/configure-endpoints-mdm.md) [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) [والبرامج النصية](../defender-endpoint/configure-endpoints-vdi.md) [ل VDI التكامل مع Microsoft Defender for Cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
-**ماك** | [البرامج النصية المحلية](../defender-endpoint/mac-install-manually.md)، [إدارة نقاط النهاية من Microsoft](../defender-endpoint/mac-install-with-intune.md)، [PRO JAMF](../defender-endpoint/mac-install-with-jamf.md)، [إدارة الجهاز الجوال](../defender-endpoint/mac-install-with-other-mdm.md)
+**بالنسبة لنظام التشغيل** | [البرنامج النصي المحلي (ما يصل إلى 10 أجهزة)](../defender-endpoint/configure-endpoints-script.md) [نهج المجموعة](../defender-endpoint/configure-endpoints-gp.md) [وMicrosoft إدارة نقاط النهاية/ Mobile إدارة الأجهزة](../defender-endpoint/configure-endpoints-mdm.md) [ونقطة النهاية من Microsoft Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) [والبرامج النصية ل VDI](../defender-endpoint/configure-endpoints-vdi.md) [والتكامل مع Microsoft Defender for Cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
+**ماك** | [البرامج النصية المحلية](../defender-endpoint/mac-install-manually.md) [وMicrosoft إدارة نقاط النهاية](../defender-endpoint/mac-install-with-intune.md) و [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md) [و Mobile إدارة الجهاز](../defender-endpoint/mac-install-with-other-mdm.md)
 **Linux Server** | [البرنامج النصي المحلي](../defender-endpoint/linux-install-manually.md)،  [Puppet](../defender-endpoint/linux-install-with-puppet.md)،  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **دائره الرقابه الداخليه** | [مستند إلى التطبيق](../defender-endpoint/ios-install.md)
 **الروبوت** | [إدارة نقاط النهاية من Microsoft](../defender-endpoint/android-intune.md)

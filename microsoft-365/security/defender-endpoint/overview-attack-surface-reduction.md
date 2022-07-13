@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: 0bcc45907cc5d57b592f96296282f65cc3e3d772
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 7c09db2138502ee8c1b491028308c56f23687a0d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717108"
+ms.locfileid: "66748990"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>فهم واستخدام قدرات تقليل الأجزاء المعرضة للهجوم
 
@@ -53,21 +53,25 @@ ms.locfileid: "66717108"
 
 1. [تمكين العزل المستند إلى الأجهزة ل Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
 
-2. تمكين التحكم في التطبيق.
+2. [تمكين قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-deployment.md)
+
+3. تمكين التحكم في التطبيق.
 
    1. مراجعة النهج الأساسية في Windows. راجع [نهج قاعدة الأمثلة](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies).
    2. راجع [دليل تصميم Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide).
    3. راجع [نشر نهج التحكم في تطبيق Windows Defender (WDAC](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)).
 
-3. [تمكين الوصول المتحكم به إلى المجلد](enable-controlled-folders.md).
+4. [تمكين الوصول المتحكم به إلى المجلد](enable-controlled-folders.md).
 
-4. [تشغيل حماية الشبكة](enable-network-protection.md).
+5. [حماية التخزين القابلة للإزالة](device-control-removable-storage-protection.md)
 
-5. [تمكين الحماية من الاستغلال](enable-exploit-protection.md).
+6. [تشغيل حماية الشبكة](enable-network-protection.md).
 
-6. [نشر قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-deployment.md).
+7. [تمكين نظرة عامة على حماية الويب](web-protection-overview.md)
 
-7. إعداد جدار حماية الشبكة.
+8. [تمكين الحماية من الاستغلال](enable-exploit-protection.md).
+
+9. إعداد جدار حماية الشبكة.
 
    1. احصل على نظرة عامة على [جدار حماية Windows Defender مع أمان متقدم](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
    2. استخدم [دليل تصميم جدار حماية Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) لتحديد كيفية تصميم نهج جدار الحماية.
@@ -296,7 +300,7 @@ ms.locfileid: "66717108"
 | [حماية الشبكة](network-protection.md) | توسيع نطاق الحماية لنسبة استخدام الشبكة والاتصال على أجهزة مؤسستك. (يتطلب برنامج الحماية من الفيروسات من Microsoft Defender). |
 | [الحماية من استغلال](exploit-protection.md) | المساعدة في حماية أنظمة التشغيل والتطبيقات التي تستخدمها مؤسستك من الاستغلال. تعمل الحماية من الاستغلال أيضا مع حلول مكافحة الفيروسات من الجهات الخارجية. |
 | [عنصر تحكم الجهاز](device-control-report.md) | يحمي من فقدان البيانات من خلال مراقبة الوسائط المستخدمة على الأجهزة والتحكم فيها، مثل التخزين القابل للإزالة ومحركات أقراص USB، في مؤسستك. |
-| [دليل نشر قواعد الحد من سطح الهجوم (ASR)](attack-surface-reduction-rules-deployment.md) | يقدم معلومات النظرة العامة والمتطلبات الأساسية لنشر قواعد تقليل الأجزاء المعرضة للهجوم. |
+| [دليل نشر قواعد الحد من سطح الهجوم (ASR)](attack-surface-reduction-rules-deployment.md) | يقدم معلومات النظرة العامة والمتطلبات الأساسية لنشر قواعد تقليل الأجزاء المعرضة للهجوم، متبوعة بإرشادات مفصلة خطوة بخطوة للاختبار والتمكين والمراقبة. |
 | [تخطيط نشر قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-plan.md) | يسرد الخطوات الموصى بها لتوزيع قواعد تقليل الأجزاء المعرضة للهجوم. |
 | [اختبار قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-test.md) | يوفر خطوات لاستخدام وضع التدقيق لاختبار قواعد تقليل الأجزاء المعرضة للهجوم. |
 | [تمكين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-implement.md) | يعرض خطوات نقل قواعد تقليل الأجزاء المعرضة للهجوم من وضع الاختبار (التدقيق) إلى الوضع النشط والممكن (حظر). |

@@ -1,6 +1,6 @@
 ---
-title: تقييم حل XDR Microsoft 365 Defender تجريبي
-description: ما هو أمان XDR؟ كيف يمكنك تقييم Microsoft XDR في Microsoft 365 Defender؟ استخدم سلسلة المدونة هذه لتخطط Microsoft 365 Defender التجريبية أو الاختبارية لاختبار حل أمان مصمم لحماية الأجهزة والهوية والبيانات والتطبيقات واختباره. ابدأ رحلة الأمن الإلكتروني ل XDR هنا واختبر هذا الاختبار للإنتاج.
+title: تقييم Microsoft 365 Defender وتجربتها، وهو حل XDR
+description: ما هو أمان XDR؟ كيف يمكنك تقييم Microsoft XDR في Microsoft 365 Defender؟ استخدم سلسلة المدونات هذه لتخطيط بيئة الاختبار التجريبي أو التجربة Microsoft 365 Defender لاختبار حل أمان مصمم لحماية الأجهزة والهوية والبيانات والتطبيقات وتجربته. ابدأ رحلة الأمان السيبراني ل XDR هنا وابدأ هذا الاختبار إلى الإنتاج.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,100 +19,101 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f7830bb25f2572c43d665d059e0a36bc1fdaa172
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 5256a578abb515f7d8d2d6e73b5a01fe71404dd0
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500772"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750067"
 ---
-# <a name="evaluate-and-pilot-microsoft-365-defender"></a>تقييم التقييم Microsoft 365 Defender
+# <a name="evaluate-and-pilot-microsoft-365-defender"></a>تقييم Microsoft 365 Defender وإعداد إصدار تجريبي منه
 
 **ينطبق على:**
 
 - Microsoft 365 Defender
 
-## <a name="how-this-article-series-works"></a>كيفية عمل سلسلة المقالة هذه
+## <a name="how-this-article-series-works"></a>كيفية عمل سلسلة المقالات هذه
 
-تم تصميم هذه السلسلة من المقالات لتخطو خطواتك خلال عملية إعداد بيئة XDR تجريبية، من نهاية إلى نهاية، بحيث يمكنك تقييم ميزات وإمكانات Microsoft 365 Defender وحتى ترقية بيئة التقييم مباشرة إلى الإنتاج عندما تكون جاهزا وإذا كنت جاهزا.
+تم تصميم هذه السلسلة من المقالات لترشدك خلال العملية بأكملها لإعداد بيئة XDR تجريبية، من *طرف إلى طرف*، حتى تتمكن من تقييم ميزات وإمكانيات Microsoft 365 Defender وحتى الترويج لبيئة التقييم مباشرة إلى الإنتاج عندما تكون جاهزا وإذا كنت جاهزا.
 
-إذا كنت تفكر في XDR للمرة الجديدة، يمكنك فحص هذه المقالات السبع المرتبطة للحصول على شعور حول مدى شمولية الحل.
+إذا كنت جديدا في التفكير في XDR، يمكنك مسح هذه المقالات المرتبطة 7 ضوئيا للتعرف على مدى شمولية الحل.
 
 - [كيفية إنشاء البيئة](eval-create-eval-environment.md)
-- إعداد أو التعرف على كل تقنية من تقنيات Microsoft XDR هذه
-  - [Microsoft Defender for Identity](eval-defender-identity-overview.md)
-  - [Microsoft Defender Office](eval-defender-office-365-overview.md)
-  - [Microsoft Defender لنقطة النهاية](eval-defender-endpoint-overview.md)
+- إعداد كل تقنية من تقنيات Microsoft XDR هذه أو التعرف عليها
+  - [Microsoft Defender للهوية](eval-defender-identity-overview.md)
+  - [Microsoft Defender ل Office](eval-defender-office-365-overview.md)
+  - [مشكلات الأداء في Microsoft Defender لنقطة النهاية](eval-defender-endpoint-overview.md)
   - [Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
-- [كيفية التحقق والرد باستخدام XDR هذا](eval-defender-investigate-respond.md)
-- [الترويج لبيئة الإصدار التجريبي للإنتاج](eval-defender-promote-to-production.md)
+- [كيفية التحقيق والاستجابة باستخدام XDR هذا](eval-defender-investigate-respond.md)
+- [ترقية بيئة الإصدار التجريبي إلى الإنتاج](eval-defender-promote-to-production.md)
 
-## <a name="microsoft-365-defender-is-a-microsoft-xdr-cyber-security-solution"></a>Microsoft 365 Defender هو حل أمان Microsoft XDR عبر الإنترنت
+## <a name="microsoft-365-defender-is-a-microsoft-xdr-cyber-security-solution"></a>Microsoft 365 Defender هو حل أمان إلكتروني من Microsoft XDR
 
-Microsoft 365 Defender هو حل للكشف والاستجابة **(XDR)** تم استنيره يجمع بيانات الإشارة والتهديد والتنبيه ويجمعها ويحللها تلقائيا من بيئة Microsoft 365، بما في ذلك نقطة النهاية  والبريد الإلكتروني والتطبيقات والهويات *.* فهي تستفيد من الذكاء الاصطناعي (AI) والتلقائي  لإيقاف الهجمات تلقائيا، وتحول الأصول المتأثرة إلى حالة آمنة.
+Microsoft 365 Defender هو **حل الكشف والاستجابة eXtended (XDR)** الذي يجمع تلقائيا بيانات الإشارة والتهديدات والتنبيهات ويربطها ويحللها من *خلال* بيئة Microsoft 365، بما *في ذلك نقطة النهاية والبريد الإلكتروني والتطبيقات والهويات*. فهو يستفيد من الذكاء الاصطناعي (الذكاء الاصطناعي) والأتمتة لإيقاف الهجمات *تلقائيا* ، ومعالجة الأصول المتأثرة في حالة آمنة.
 
-فكر في XDR كخطوة تبويب في الأمان وتوحيد نقطة النهاية (الكشف عن تهديدات نقاط النهاية والرد عليها أو الكشف التلقائي والاستجابة على النقط النهائية) والبريد الإلكتروني والتطبيق والأمان الهويات في مكان واحد.
+فكر في XDR كخطوة تالية في الأمان، ونقطة النهاية الموحدة (الكشف عن نقطة النهاية والاستجابة لها أو EDR)، والبريد الإلكتروني، والتطبيق، وأمان الهوية في مكان واحد.
 
 ## <a name="microsoft-recommendations-for-evaluating-microsoft-365-defender"></a>توصيات Microsoft لتقييم Microsoft 365 Defender
 
-توصي Microsoft بإنشاء تقييمك في اشتراك إنتاج موجود Office 365. بهذه الطريقة، ستكتسب أفكارا حول العالم الحقيقي على الفور، كما يمكنك ضبط الإعدادات للعمل على مكافحة التهديدات الحالية في بيئتك. بعد اكتسابك التجربة وراحتك مع النظام الأساسي، ما عليك سوى ترقية كل مكون، واحدا تلو الآخر، إلى الإنتاج.
+توصي Microsoft بإنشاء تقييمك في اشتراك إنتاج موجود من Office 365. بهذه الطريقة سوف تحصل على رؤى في العالم الحقيقي على الفور ويمكنك ضبط الإعدادات للعمل ضد التهديدات الحالية في بيئتك. بعد اكتساب الخبرة والراحة مع النظام الأساسي، ما عليك سوى ترقية كل مكون، واحدا تلو الآخر، إلى الإنتاج.
 
-## <a name="the-anatomy-of-a-cyber-security-attack"></a>تشريح هجوم أمان عبر الإنترنت
+## <a name="the-anatomy-of-a-cyber-security-attack"></a>تشريح هجوم أمني عبر الإنترنت
 
-Microsoft 365 Defender مجموعة الدفاع الخاصة بالمؤسسات المستندة إلى السحابة والموحدة والمستندة إلى ما قبل الخرق وبعده. وهو ينسق *المنع والكشف* *والتحري* والاستجابة عبر نقاط النهاية والهويات والتطبيقات والبريد الإلكتروني والتطبيقات التعاونية وكل بياناتها. 
+Microsoft 365 Defender هي مجموعة دفاع مؤسسة مستندة إلى السحابة وموحدة وما قبل الاختراق وما بعدها. وهو ينسق *الوقاية* *والكشف* *والتحقيق* *والاستجابة* عبر نقاط النهاية والهويات والتطبيقات والبريد الإلكتروني والتطبيقات التعاونية وجميع بياناتها.
 
-في هذا الرسم التوضيحي، هناك هجوم قيد التقدم. يصل البريد الإلكتروني التصيد الاحتيالي إلى علبة الوارد الخاصة بموظف في مؤسستك، يفتح مرفق البريد الإلكتروني دون أن يدري. يؤدي ذلك إلى تثبيت البرامج الضارة، مما يؤدي إلى سلسلة من الأحداث التي قد تنتهي بسرقة البيانات الحساسة. ولكن في هذه الحالة، Defender لـ Office 365 في العملية.
+في هذا التوضيح، هناك هجوم جار. يصل البريد الإلكتروني للتصيد الاحتيالي إلى علبة الوارد الخاصة بموظف في مؤسستك، يفتح مرفق البريد الإلكتروني دون علم. يؤدي ذلك إلى تثبيت البرامج الضارة، ما يؤدي إلى سلسلة من الأحداث التي قد تنتهي بسرقة البيانات الحساسة. ولكن في هذه الحالة، Defender لـ Office 365 قيد التشغيل.
 
 :::image type="content" source="../../media/defender/m365-defender-eval-threat-chain.png" alt-text="محاولات الهجوم المختلفة" lightbox="../../media/defender/m365-defender-eval-threat-chain.png":::
 
 في الرسم التوضيحي:
 
-- **Exchange Online Protection**، وهو جزء من Microsoft Defender لـ Office 365، الكشف عن البريد الإلكتروني التصيد الاحتيالي واستخدام قواعد تدفق البريد للتأكد من عدم وصوله أبدا إلى علبة الوارد.
-- **Defender لـ Office 365** يختبر المرفق الآمن المرفق ويحدد أنه ضار، وبالتالي لا يمكن للمستخدم تنفيذ أي إجراء على البريد الذي يصل، أو تمنع السياسات وصول البريد على الإطلاق.
-- **يدير Defender for Endpoint** الأجهزة التي تتصل بشبكة الشركة ويكشف عن الثغرات في الجهاز والشبكات التي قد يتم استغلالها بخلاف ذلك.
-- **يأخذ Defender for Identity** في الاعتبار التغييرات المفاجئة في الحساب مثل تصاعد الامتيازات أو الحركة اللاحقة عالية المخاطر. كما أنه يقدم تقارير حول مشاكل الهوية التي يتم استغلالها بسهولة مثل التفويض غير المقيد في Kerberos، لتصحيحها من قبل فريق الأمان.
-- **Microsoft Defender for Cloud Apps** سلوكا غريبا مثل السفر المستحيل أو الوصول إلى بيانات الاعتماد والتنزيل غير المعتاد أو مشاركة الملفات أو نشاط إعادة توجيه البريد، كما يتم الإبلاغ عن ذلك إلى فريق الأمان.
+- **Exchange Online Protection**، جزء من Microsoft Defender لـ Office 365، يمكنه الكشف عن البريد الإلكتروني للتصيد الاحتيالي واستخدام قواعد تدفق البريد للتأكد من عدم وصوله إلى علبة الوارد.
+- **Defender لـ Office 365** تختبر المرفقات الآمنة المرفق وتحدد أنه ضار، وبالتالي فإن البريد الذي يصل إما غير قابل للتنفيذ من قبل المستخدم، أو تمنع النهج وصول البريد على الإطلاق.
+- يدير **Defender لنقطة النهاية** الأجهزة التي تتصل بشبكة الشركة ويكتشف ثغرات الجهاز والشبكة التي قد يتم استغلالها بخلاف ذلك.
+- يدون **Defender for Identity** التغييرات المفاجئة في الحساب مثل تصعيد الامتيازات أو الحركة الجانبية عالية المخاطر. كما أنه يبلغ عن مشكلات الهوية التي تم استغلالها بسهولة مثل تفويض Kerberos غير المقيد، لتصحيحها من قبل فريق الأمان.
+- **Microsoft Defender for Cloud Apps** تلاحظ سلوكا غير طبيعي مثل السفر المستحيل أو الوصول إلى بيانات الاعتماد والتنزيل غير العادي أو مشاركة الملفات أو نشاط إعادة توجيه البريد ويبلغ فريق الأمان عن ذلك.
 
-### <a name="microsoft-365-defender-components-secure-devices-identity-data-and-applications"></a>Microsoft 365 Defender المكونات الآمنة للأجهزة والهوية والبيانات والتطبيقات
+### <a name="microsoft-365-defender-components-secure-devices-identity-data-and-applications"></a>مكونات Microsoft 365 Defender أجهزة وهوية وبيانات وتطبيقات آمنة
 
-Microsoft 365 Defender من تقنيات الأمان هذه، التي تعمل جنبا إلى جنب. لست بحاجة إلى كل هذه المكونات للاستفادة من قدرات XDR Microsoft 365 Defender. ستدرك المكاسب والفعالية من خلال استخدام واحد أو اثنين أيضا.
+تتكون Microsoft 365 Defender من تقنيات الأمان هذه، وتعمل جنبا إلى جنب. لا تحتاج إلى جميع هذه المكونات للاستفادة من قدرات XDR Microsoft 365 Defender. ستحقق المكاسب والكفاءات من خلال استخدام واحد أو اثنين أيضا.
 
-|مكون|الوصف|المادة المرجعية|
+|مكون|الوصف|مادة مرجعية|
 |---|---|---|
-|Microsoft Defender for Identity|Microsoft Defender for Identity إشارات Active Directory للتعرف على التهديدات المتقدمة والهويات المخلة والإجراءات الضارة ل insider الموجهة إلى مؤسستك والكشف عنها والتقصي عنها.|[ما هو Microsoft Defender for Identity؟](/defender-for-identity/what-is)|
-|Exchange Online Protection|Exchange Online Protection هي خدمة ترحيل SMTP الأصلية المستندة إلى السحابة وتصفيتها التي تساعد على حماية مؤسستك من البريد العشوائي والبرامج الضارة.|[Exchange Online Protection (EOP) - Office 365](../office-365-security/overview.md)|
-|Microsoft Defender لـ Office 365|Microsoft Defender لـ Office 365 مؤسستك من التهديدات الضارة التي تفرضها رسائل البريد الإلكتروني والربط (عناوين URL) وأدوات التعاون.|[Microsoft Defender لـ Office 365 - Office 365](../office-365-security/overview.md)|
-|Microsoft Defender لنقطة النهاية|Microsoft Defender لنقطة النهاية هو نظام أساسي موحد لحماية الجهاز، والكشف بعد الخرق، والتحري التلقائي، والاستجابة الموصى بها.|[Microsoft Defender لنقطة النهاية - Windows الأمان](../defender-endpoint/microsoft-defender-endpoint.md)|
-|Microsoft Defender for Cloud Apps|Microsoft Defender for Cloud Apps هو حل شامل عبر SaaS ورؤية أعمق، وتحكم قوي في البيانات، وحماية محسنة من المخاطر لتطبيقات السحابة.|[ما هو Defender for Cloud Apps؟](/cloud-app-security/what-is-cloud-app-security)|
-|حماية هوية Azure AD|تقيم Azure AD Identity Protection بيانات المخاطر من ملايين محاولات تسجيل الدخول وتستخدم هذه البيانات لتقييم مخاطر كل تسجيل الدخول إلى بيئتك. يتم استخدام هذه البيانات بواسطة Azure AD للسماح بالوصول إلى الحساب أو منعه، استنادا إلى كيفية تكوين سياسات الوصول الشرطي. يتم ترخيص Azure AD Identity Protection بشكل منفصل عن Microsoft 365 Defender. يتم تضمينه مع Azure Active Directory Premium P2.|[ما هي حماية الهوية؟](/azure/active-directory/identity-protection/overview-identity-protection)|
+|Microsoft Defender للهوية|يستخدم Microsoft Defender for Identity إشارات Active Directory لتحديد التهديدات المتقدمة والهويات المخترقة والإجراءات الداخلية الضارة الموجهة إلى مؤسستك واكتشافها والتحقيق فيها.|[ما هو Microsoft Defender للهوية؟](/defender-for-identity/what-is)|
+|Exchange Online Protection|Exchange Online Protection هي خدمة ترحيل وتصفية SMTP الأصلية المستندة إلى السحابة التي تساعد على حماية مؤسستك من البريد العشوائي والبرامج الضارة.|[نظرة عامة على Exchange Online Protection (EOP) - Office 365](../office-365-security/overview.md)|
+|Microsoft Defender لـ Office 365|Microsoft Defender لـ Office 365 يحمي مؤسستك من التهديدات الضارة التي تشكلها رسائل البريد الإلكتروني والارتباطات (عناوين URL) وأدوات التعاون.|[Microsoft Defender لـ Office 365 - Office 365](../office-365-security/overview.md)|
+|Microsoft Defender for Endpoint|Microsoft Defender لنقطة النهاية هو نظام أساسي موحد لحماية الجهاز، والكشف بعد الاختراق، والتحقيق التلقائي، والاستجابة الموصى بها.|[Microsoft Defender لنقطة النهاية - أمان Windows](../defender-endpoint/microsoft-defender-endpoint.md)|
+|Microsoft Defender for Cloud Apps|Microsoft Defender for Cloud Apps هو حل شامل عبر SaaS يجلب رؤية عميقة، وعناصر تحكم قوية في البيانات، وحماية محسنة من التهديدات لتطبيقات السحابة الخاصة بك.|[ما هو Defender for Cloud Apps؟](/cloud-app-security/what-is-cloud-app-security)|
+|حماية الهوية في Azure AD|تقوم Azure AD Identity Protection بتقييم بيانات المخاطر من مليارات محاولات تسجيل الدخول وتستخدم هذه البيانات لتقييم مخاطر كل تسجيل دخول إلى بيئتك. يتم استخدام هذه البيانات من قبل Azure AD للسماح بالوصول إلى الحساب أو منعه، اعتمادا على كيفية تكوين نهج الوصول المشروط. Azure AD Identity Protection مرخص بشكل منفصل عن Microsoft 365 Defender. يتم تضمينه مع Azure Active Directory Premium P2.|[ما هي Identity Protection؟](/azure/active-directory/identity-protection/overview-identity-protection)|
 ||||
 
-## <a name="microsoft-365-defender-architecture"></a>Microsoft 365 Defender التصميم
+## <a name="microsoft-365-defender-architecture"></a>تصميم Microsoft 365 Defender
 
-يوضح الرسم التخطيطي أدناه البنية عالية المستوى للمكونات Microsoft 365 Defender الأساسية. *يتم* توفير تصميم تفصيلي لكل مكون Defender، وسيناريوهات حالة الاستخدام، في سلسلة المقالات هذه.
+يوضح الرسم التخطيطي أدناه بنية عالية المستوى لمكونات Microsoft 365 Defender الرئيسية والتكاملات. يتم توفير بنية *مفصلة* لكل مكون Defender، وسيناريوهات حالة الاستخدام، خلال هذه السلسلة من المقالات.
 
 :::image type="content" source="../../media/defender/m365-defender-eval-architecture.png" alt-text="بنية عالية المستوى لمدخل Microsoft 365 Defender" lightbox="../../media/defender/m365-defender-eval-architecture.png":::
 
 في هذا الرسم التوضيحي:
 
-- Microsoft 365 Defender بين الإشارات من كل مكونات Defender لتوفير استجابة للكشف والاستجابة الموسعة (XDR) عبر المجالات. يشمل ذلك قائمة انتظار موحدة للحوادث، والاستجابة التلقائية لإيقاف الهجمات، والتدبير الذاتي (للأجهزة المعرضة للخطر وهويات المستخدمين، علب البريد)، والصيد عبر التهديدات، وتحليلات التهديدات.
-- Microsoft Defender لـ Office 365 مؤسستك من التهديدات الضارة التي تفرضها رسائل البريد الإلكتروني والربط (عناوين URL) وأدوات التعاون. وهي تشارك الإشارات الناتجة عن هذه الأنشطة مع Microsoft 365 Defender. Exchange Online Protection (EOP) لتوفير حماية شاملة لر واردة من رسائل البريد الإلكتروني والمرفقات.
-- Microsoft Defender for Identity على الإشارات من الخوادم التي تعمل بالخدمات المتحدة ل Active Directory (AD FS) Active Directory محلي Domain Services (AD DS). فهو يستخدم هذه الإشارات لحماية بيئة الهوية المختلطة، بما في ذلك الحماية من المتسللين الذين يستخدمون الحسابات المخترقة للتنقل بشكل لاحق عبر محطات العمل في البيئة المحلية.
-- Microsoft Defender لنقطة النهاية على جمع الإشارات من الأجهزة التي تستخدمها مؤسستك وحمايتها.
-- Microsoft Defender for Cloud Apps جمع الإشارات من استخدام مؤسستك لتطبيقات السحابة وحماية البيانات المتدفقة بين بيئتك وهذه التطبيقات، بما في ذلك تطبيقات السحابة المفروضة وغير المضمنة.
-- تقيم Azure AD Identity Protection بيانات المخاطر من ملايين محاولات تسجيل الدخول وتستخدم هذه البيانات لتقييم مخاطر كل تسجيل الدخول إلى بيئتك. يتم استخدام هذه البيانات بواسطة Azure AD للسماح بالوصول إلى الحساب أو منعه، استنادا إلى كيفية تكوين سياسات الوصول الشرطي. يتم ترخيص Azure AD Identity Protection بشكل منفصل عن Microsoft 365 Defender. يتم تضمينه مع Azure Active Directory Premium P2.
+- Microsoft 365 Defender يجمع بين الإشارات من جميع مكونات Defender لتوفير الكشف الموسع والاستجابة (XDR) عبر المجالات. يتضمن ذلك قائمة انتظار موحدة للحوادث، والاستجابة التلقائية لإيقاف الهجمات، والمعالجة الذاتية (للأجهزة المخترقة وهويات المستخدمين وعلب البريد)، والتتبع عبر التهديدات، وتحليلات التهديدات.
+- Microsoft Defender لـ Office 365 تحمي مؤسستك من التهديدات الضارة التي تشكلها رسائل البريد الإلكتروني والارتباطات (عناوين URL) وأدوات التعاون. وهو يشارك الإشارات الناتجة عن هذه الأنشطة مع Microsoft 365 Defender. يتم دمج Exchange Online Protection (EOP) لتوفير الحماية الشاملة لرسائل البريد الإلكتروني والمرفقات الواردة.
+- يجمع Microsoft Defender for Identity الإشارات من الخوادم التي تعمل ب Active Directory Federated Services (AD FS) وخدمات المجال Active Directory محلي (AD DS). ويستخدم هذه الإشارات لحماية بيئة الهوية المختلطة الخاصة بك، بما في ذلك الحماية من المتسللين الذين يستخدمون الحسابات المخترقة للتنقل لاحقا عبر محطات العمل في البيئة المحلية.
+- Microsoft Defender لنقطة النهاية يجمع الإشارات من الأجهزة التي تستخدمها مؤسستك ويحميها.
+- Microsoft Defender for Cloud Apps يجمع إشارات من استخدام مؤسستك لتطبيقات السحابة ويحمي البيانات المتدفقة بين بيئتك وهذه التطبيقات، بما في ذلك تطبيقات السحابة المعتمدة وغير المفروضة.
+- تقوم Azure AD Identity Protection بتقييم بيانات المخاطر من مليارات محاولات تسجيل الدخول وتستخدم هذه البيانات لتقييم مخاطر كل تسجيل دخول إلى بيئتك. يتم استخدام هذه البيانات من قبل Azure AD للسماح بالوصول إلى الحساب أو منعه، اعتمادا على كيفية تكوين نهج الوصول المشروط. Azure AD Identity Protection مرخص بشكل منفصل عن Microsoft 365 Defender. يتم تضمينه مع Azure Active Directory Premium P2.
 
-## <a name="microsoft-siem-and-soar-can-use-data-from-microsoft-365-defender"></a>يمكن ل Microsoft SIEM و SOAR استخدام البيانات من Microsoft 365 Defender
+## <a name="microsoft-siem-and-soar-can-use-data-from-microsoft-365-defender"></a>يمكن ل Microsoft SIEM وSOAR استخدام البيانات من Microsoft 365 Defender
 
-مكونات هندسة اختيارية إضافية غير مضمنة في هذا الرسم التوضيحي:
+مكونات البنية الاختيارية الإضافية غير مضمنة في هذا الرسم التوضيحي:
 
-- يمكن دمج بيانات الإشارة المفصلة **من Microsoft 365 Defender في Microsoft Sentinel** ودمجها مع مصادر التسجيل الأخرى لتقديم قدرات SIEM وSAR الكاملة ورؤى.
-- لمزيد من القراءة حول استخدام **Microsoft Sentinel، Azure SIEM**، مع Microsoft 365 Defender ك XDR، أطلع على مقالة النظرة العامة هذه [](/azure/sentinel/microsoft-365-defender-sentinel-integration) والخطوات Microsoft 365 Defender Microsoft Sentinel [.](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE)
-- لمزيد من المعلومات حول SOAR في Microsoft Sentinel (بما في ذلك الارتباطات إلى دفاتر التشغيل في مستودع Microsoft Sentinel GitHub)، يرجى قراءة [هذه المقالة](/azure/sentinel/automate-responses-with-playbooks).
+- **يمكن دمج بيانات الإشارة المفصلة من جميع مكونات Microsoft 365 Defender في Microsoft Sentinel** ودمجها مع مصادر التسجيل الأخرى لتقديم إمكانات وتفاصيل SIEM وSOAR الكاملة.
+- **لمزيد من القراءة حول استخدام Microsoft Sentinel، وهو AZURE SIEM، مع Microsoft 365 Defender** ك XDR، ألق نظرة على [مقالة النظرة العامة](/azure/sentinel/microsoft-365-defender-sentinel-integration) هذه [وخطوات تكامل](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE) Microsoft Sentinel Microsoft 365 Defender.
+- لمزيد من المعلومات حول SOAR في Microsoft Sentinel (بما في ذلك ارتباطات أدلة المبادئ في مستودع Microsoft Sentinel GitHub)، يرجى قراءة [هذه المقالة](/azure/sentinel/automate-responses-with-playbooks).
 
-## <a name="the-evaluation-process-for-microsoft-365-defender-cyber-security"></a>عملية التقييم Microsoft 365 Defender الإنترنت
+## <a name="the-evaluation-process-for-microsoft-365-defender-cyber-security"></a>عملية التقييم Microsoft 365 Defender الأمن السيبراني
 
 توصي Microsoft بتمكين مكونات Microsoft 365 بالترتيب الموضح:
 
@@ -120,18 +121,18 @@ Microsoft 365 Defender من تقنيات الأمان هذه، التي تعمل
 
 يصف الجدول التالي هذا الرسم التوضيحي.
 
-|  الرقم التسلسلي   |الخطوة  |الوصف  |
+|  الرقم التسلسلي   |خطوه  |الوصف  |
 |------|---------|---------|
 |1     | [إنشاء بيئة التقييم](eval-create-eval-environment.md)       |تضمن هذه الخطوة حصولك على الترخيص التجريبي Microsoft 365 Defender.         |
-|2     | [تمكين Defender for Identity](eval-defender-identity-overview.md)        | راجع متطلبات التصميم، وتمكين التقييم، وتعرف على البرامج التعليمية للتعرف على أنواع الهجمات المختلفة وتداركها.   |
-|3     | [تمكين Defender لـ Office 365 ](eval-defender-office-365-overview.md)       | تأكد من تلبية متطلبات البنية، وتمكين التقييم، ثم إنشاء بيئة التجربة. يتضمن هذا المكون Exchange Online Protection وبالتالي سيتم تقييم *كليهما* هنا.      |
-|4     | [تمكين Defender لنقطة النهاية ](eval-defender-endpoint-overview.md)       | تأكد من تلبية متطلبات البنية، وتمكين التقييم، ثم إنشاء بيئة التجربة.         |
-|5     | [تمكين Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)        |  تأكد من تلبية متطلبات البنية، وتمكين التقييم، ثم إنشاء بيئة التجربة.        |
+|2     | [تمكين Defender for Identity](eval-defender-identity-overview.md)        | راجع متطلبات البنية، وتمكين التقييم، وتصفح البرامج التعليمية لتحديد ومعالجة أنواع الهجمات المختلفة.   |
+|3     | [تمكين Defender لـ Office 365 ](eval-defender-office-365-overview.md)       | تأكد من تلبية متطلبات البنية وتمكين التقييم ثم إنشاء بيئة الإصدار التجريبي. يتضمن هذا المكون Exchange Online Protection وهكذا ستقوم بالفعل بتقييم *كليهما* هنا.      |
+|4     | [تمكين Defender لنقطة النهاية ](eval-defender-endpoint-overview.md)       | تأكد من تلبية متطلبات البنية وتمكين التقييم ثم إنشاء بيئة الإصدار التجريبي.         |
+|5     | [تمكين Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)        |  تأكد من تلبية متطلبات البنية وتمكين التقييم ثم إنشاء بيئة الإصدار التجريبي.        |
 |6     | [التحقق من التهديدات والاستجابة لها](eval-defender-investigate-respond.md)        |   محاكاة هجوم والبدء في استخدام قدرات الاستجابة للحوادث.      |
-|7     | [ترقية الإصدار التجريبي إلى إنتاج](eval-defender-promote-to-production.md)        | ترقية Microsoft 365 الإنتاجية إلى إنتاج واحد إلى واحد.        |
+|7     | [ترقية الإصدار التجريبي إلى الإنتاج](eval-defender-promote-to-production.md)        | ترقية مكونات Microsoft 365 إلى الإنتاج واحدا تلو الآخر.        |
 
-هذا أمر مستحسن بشكل شائع مصمم للاستفادة من قيمة الإمكانات بسرعة استنادا إلى مقدار الجهد المطلوب عادة لنشر القدرات وتكوينها. على سبيل المثال، Defender لـ Office 365 تكوين الأجهزة في وقت أقل من الوقت الذي يستغرقه تسجيل الأجهزة في Defender for Endpoint. وبالطبع، يجب تحديد أولويات المكونات لتلبية احتياجات أعمالك، كما يمكنك تمكينها بترتيب مختلف.
+هذا أمر موصى به عادة مصمم للاستفادة من قيمة القدرات بسرعة استنادا إلى مقدار الجهد المطلوب عادة لنشر القدرات وتكوينها. على سبيل المثال، يمكن تكوين Defender لـ Office 365 في وقت أقل من الوقت المستغرق لتسجيل الأجهزة في Defender لنقطة النهاية. بالطبع، يجب عليك تحديد أولويات المكونات لتلبية احتياجات عملك، ويمكن تمكينها بترتيب مختلف.
 
 ## <a name="go-to-the-next-step"></a>الانتقال إلى الخطوة التالية
 
-[التعرف على و/أو إنشاء Microsoft 365 Defender التقييم](eval-create-eval-environment.md)
+[التعرف على بيئة التقييم Microsoft 365 Defender و/أو إنشائها](eval-create-eval-environment.md)

@@ -1,5 +1,5 @@
 ---
-title: نهج الهوية والوصول إلى الأجهزة الشائعة ثقة معدومة - Microsoft 365 | المؤسسة Microsoft Docs
+title: نهج الهوية ثقة معدومة الشائعة والوصول إلى الأجهزة - Microsoft 365 for enterprise | Microsoft Docs
 description: يصف نهج وتكوينات الهوية ثقة معدومة الشائعة الموصى بها والوصول إلى الجهاز.
 ms.author: dansimp
 author: dansimp
@@ -19,17 +19,18 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
+- zerotrust-solution
 ms.technology: mdo
-ms.openlocfilehash: 0c7facc2ac5a20b21a6862b115b62c576ebaeb1f
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 35acb32c9a27ec32c78f4f247257d589a9fefc04
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972178"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750045"
 ---
 # <a name="common-zero-trust-identity-and-device-access-policies"></a>نهج الهوية ثقة معدومة الشائعة والوصول إلى الجهاز
 
-تصف هذه المقالة نهج الهوية والوصول إلى الأجهزة الموصى بها الشائعة ثقة معدومة لتأمين الوصول إلى خدمات السحابة Microsoft 365، بما في ذلك التطبيقات المحلية المنشورة باستخدام وكيل تطبيق Azure Active Directory (Azure AD).
+تصف هذه المقالة نهج الهوية والوصول إلى الأجهزة الموصى بها ثقة معدومة الشائعة لتأمين الوصول إلى خدمات سحابة Microsoft 365، بما في ذلك التطبيقات المحلية المنشورة باستخدام وكيل تطبيق Azure Active Directory (Azure AD).
 
 تناقش هذه الإرشادات كيفية نشر النهج الموصى بها في بيئة تم توفيرها حديثا. يتيح لك إعداد هذه النهج في بيئة مختبر منفصلة فهم النهج الموصى بها وتقييمها قبل بدء التشغيل المرحلي لبيئات الإنتاج والإنتاج المسبقة. يمكن أن تكون بيئتك التي تم توفيرها حديثا سحابية فقط أو مختلطة لتعكس احتياجات التقييم الخاصة بك.
 
@@ -59,11 +60,11 @@ Here's a one-page PDF summary:
 |**نقطة البداية**|[طلب المصادقة متعددة العوامل (MFA) عندما يكون خطر تسجيل الدخول *متوسطا* أو *مرتفعا*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 أو Microsoft 365 E3 باستخدام الوظيفة الإضافية E5 Security|
 ||[حظر العملاء الذين لا يدعمون المصادقة الحديثة](#block-clients-that-dont-support-multi-factor)|يمكن للعملاء الذين لا يستخدمون المصادقة الحديثة تجاوز نهج الوصول المشروط، لذلك من المهم حظرها.|Microsoft 365 E3 أو E5|
 ||[يجب على المستخدمين المعرضين لمخاطر عالية تغيير كلمة المرور](#high-risk-users-must-change-password)|يجبر المستخدمين على تغيير كلمة المرور الخاصة بهم عند تسجيل الدخول إذا تم الكشف عن نشاط عالي المخاطر لحسابهم.|Microsoft 365 E5 أو Microsoft 365 E3 باستخدام الوظيفة الإضافية E5 Security|
-||[تطبيق حماية البيانات لنهج حماية التطبيقات (APP)](#apply-app-data-protection-policies)|نهج حماية تطبيق Intune واحد لكل نظام أساسي (Windows وiOS/iPadOS وAndroid).|Microsoft 365 E3 أو E5|
+||[تطبيق حماية البيانات لنهج حماية التطبيقات (APP)](#apply-app-data-protection-policies)|نهج حماية تطبيق Intune واحد لكل نظام أساسي (Windows، iOS/iPadOS، Android).|Microsoft 365 E3 أو E5|
 ||[طلب التطبيقات المعتمدة وحماية التطبيقات](#require-approved-apps-and-app-protection)|يفرض حماية تطبيقات الأجهزة المحمولة للهواتف وأجهزة الكمبيوتر اللوحية باستخدام iOS أو iPadOS أو Android.|Microsoft 365 E3 أو E5|
 |**Enterprise**|[طلب المصادقة متعددة العوامل (MFA) عندما يكون خطر تسجيل الدخول *منخفضا* أو *متوسطا* أو *مرتفعا*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 أو Microsoft 365 E3 باستخدام الوظيفة الإضافية E5 Security|
 ||[تحديد نهج توافق الجهاز](#define-device-compliance-policies)|نهج واحد لكل نظام أساسي.|Microsoft 365 E3 أو E5|
-||[طلب أجهزة كمبيوتر وأجهزة محمولة متوافقة](#require-compliant-pcs-and-mobile-devices)|يفرض إدارة Intune لكل من أجهزة الكمبيوتر (Windows أو macOS) والهواتف أو الأجهزة اللوحية (iOS أو iPadOS أو Android).|Microsoft 365 E3 أو E5|
+||[طلب أجهزة كمبيوتر وأجهزة محمولة متوافقة](#require-compliant-pcs-and-mobile-devices)|يفرض إدارة Intune لكل من أجهزة الكمبيوتر الشخصية (Windows أو macOS) والهواتف أو الأجهزة اللوحية (iOS أو iPadOS أو Android).|Microsoft 365 E3 أو E5|
 |**أمان متخصص**|[*طلب المصادقة* متعددة العوامل (MFA) دائما](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 أو E5|
 
 ## <a name="assigning-policies-to-groups-and-users"></a>تعيين نهج للمجموعات والمستخدمين
@@ -84,19 +85,19 @@ Here's a one-page PDF summary:
 
   في هذه الحالة، يتطابق أعضاء مجموعة الموظفين التنفيذيين مع كل من نهج نقطة البداية والوصول المشروط للمؤسسة. يتم دمج عناصر التحكم في الوصول لكلا النهجين، والتي تكون في هذه الحالة مكافئة لنهج الوصول المشروط للمؤسسة.
 
-- يطلب من أعضاء مجموعة X Project السرية للغاية دائما استخدام المصادقة متعددة العوامل
+- يطلب من أعضاء مجموعة Top Secret Project X دائما استخدام المصادقة متعددة العوامل
 
-  في هذه الحالة، يتطابق أعضاء مجموعة Top Secret Project X مع كل من نقطة البداية ونهج الوصول المشروط للأمان المتخصصة. يتم دمج عناصر التحكم في الوصول لكلا النهجين. نظرا لأن التحكم في الوصول لنهج الوصول المشروط للأمان المخصص أكثر تقييدا، يتم استخدامه.
+  في هذه الحالة، يتطابق أعضاء مجموعة Top Secret Project X مع كل من نهج الوصول المشروط لنقطة البداية والأمان المتخصصة. يتم دمج عناصر التحكم في الوصول لكلا النهجين. نظرا لأن التحكم في الوصول لنهج الوصول المشروط للأمان المخصص أكثر تقييدا، يتم استخدامه.
 
-كن حذرا عند تطبيق مستويات أعلى من الحماية على المجموعات والمستخدمين. على سبيل المثال، سيطلب من أعضاء مجموعة "السرية العليا" Project X استخدام المصادقة متعددة العوامل في كل مرة يسجلون فيها الدخول، حتى لو لم يكونوا يعملون على محتوى الأمان المخصص ل Project X.
+كن حذرا عند تطبيق مستويات أعلى من الحماية على المجموعات والمستخدمين. على سبيل المثال، سيطلب من أعضاء مجموعة Top Secret Project X استخدام المصادقة متعددة العوامل (MFA) في كل مرة يسجلون فيها الدخول، حتى لو لم يكونوا يعملون على محتوى الأمان المخصص ل Project X.
 
-يجب إنشاء جميع مجموعات Azure AD التي تم إنشاؤها كجزء من هذه التوصيات كالمجموعات Microsoft 365. وهذا مهم لنشر أوصاف الحساسية عند تأمين المستندات في Microsoft Teams SharePoint.
+يجب إنشاء كافة مجموعات Azure AD التي تم إنشاؤها كجزء من هذه التوصيات كالمجموعات Microsoft 365. يعد هذا الأمر مهما لنشر تسميات الحساسية عند تأمين المستندات في Microsoft Teams وSharePoint.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png" alt-text="إنشاء مجموعة Microsoft 365" lightbox="../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png":::
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>طلب المصادقة متعددة العوامل استنادا إلى مخاطر تسجيل الدخول
 
-يجب أن يقوم المستخدمون بالتسجيل للحصول على المصادقة متعددة العوامل قبل طلب استخدامها. إذا كان لديك Microsoft 365 E5 أو Microsoft 365 E3 باستخدام الوظيفة الإضافية E5 Security أو Office 365 مع EMS E5 أو تراخيص Azure AD الفردية Premium P2، يمكنك استخدام نهج تسجيل المصادقة متعددة العوامل مع Azure AD Identity Protection لمطلب تسجيل المستخدمين للحصول على المصادقة متعددة العوامل. يتضمن [العمل المتطلب الأساسي](identity-access-prerequisites.md) تسجيل جميع المستخدمين الذين لديهم المصادقة متعددة العوامل.
+يجب أن يقوم المستخدمون بالتسجيل للحصول على المصادقة متعددة العوامل قبل طلب استخدامها. إذا كان لديك Microsoft 365 E5 أو Microsoft 365 E3 باستخدام الوظيفة الإضافية E5 Security أو Office 365 مع EMS E5 أو تراخيص Azure AD Premium P2 الفردية، يمكنك استخدام نهج تسجيل المصادقة متعددة العوامل مع Azure AD Identity Protection لمطلب تسجيل المستخدمين للحصول على المصادقة متعددة العوامل. يتضمن [العمل المتطلب الأساسي](identity-access-prerequisites.md) تسجيل جميع المستخدمين الذين لديهم المصادقة متعددة العوامل.
 
 بعد تسجيل المستخدمين، يمكنك طلب المصادقة متعددة العوامل لتسجيل الدخول باستخدام نهج وصول مشروط جديد.
 
@@ -145,7 +146,7 @@ Here's a one-page PDF summary:
 
 استخدم الإعدادات الموجودة في هذه الجداول لنهج الوصول المشروط لحظر العملاء الذين لا يدعمون المصادقة متعددة العوامل.
 
-راجع [هذه المقالة](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md) للحصول على قائمة العملاء في Microsoft 365 التي تدعم المصادقة متعددة العوامل.
+راجع [هذه المقالة](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md) للحصول على قائمة العملاء في Microsoft 365 الذين يدعمون المصادقة متعددة العوامل.
 
 في قسم **"الواجبات"** :
 
@@ -175,7 +176,7 @@ Here's a one-page PDF summary:
 
 للتأكد من أن جميع الحسابات المعرضة للخطر الخاصة بالمستخدمين المعرضة للخطر تضطر إلى إجراء تغيير في كلمة المرور عند تسجيل الدخول، يجب تطبيق النهج التالي.
 
-سجل الدخول إلى [مدخل Microsoft Azure (https://portal.azure.com)](https://portal.azure.com/) باستخدام بيانات اعتماد المسؤول، ثم انتقل إلى **Azure AD Identity Protection > نهج مخاطر المستخدم**.
+سجل الدخول إلى [مدخل Microsoft Azure (https://portal.azure.com)](https://portal.azure.com/)باستخدام بيانات اعتماد المسؤول، ثم انتقل إلى **Azure AD Identity Protection > نهج مخاطر المستخدم**.
 
 في قسم **"الواجبات"** :
 
@@ -197,7 +198,7 @@ Here's a one-page PDF summary:
 
 ضع في اعتبارك استخدام أداة ["ماذا لو](/azure/active-directory/active-directory-conditional-access-whatif) " لاختبار النهج.
 
-استخدم هذا النهج بالتزامن مع [تكوين حماية كلمة مرور Azure AD](/azure/active-directory/authentication/concept-password-ban-bad)، والتي تكشف عن كلمات المرور الضعيفة المعروفة ومتغيراتها ومصطلحات ضعيفة إضافية خاصة بمؤسستك وتحظرها. يضمن استخدام حماية كلمة مرور Azure AD أن كلمات المرور التي تم تغييرها هي كلمات مرور قوية.
+استخدم هذا النهج بالتزامن مع [تكوين الحماية بكلمة مرور Azure AD](/azure/active-directory/authentication/concept-password-ban-bad)، والتي تكشف عن كلمات المرور الضعيفة المعروفة ومتغيراتها والمصطلحات الضعيفة الإضافية الخاصة بمؤسستك وتحظرها. يضمن استخدام الحماية بكلمة مرور Azure AD أن كلمات المرور التي تم تغييرها هي كلمات مرور قوية.
 
 ## <a name="apply-app-data-protection-policies"></a>تطبيق نهج حماية بيانات APP
 
@@ -219,7 +220,7 @@ Here's a one-page PDF summary:
 |Enterprise|[حماية البيانات المحسنة من المستوى 2](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|تتضمن إعدادات النهج المفروضة في المستوى 2 جميع إعدادات النهج الموصى بها للمستوى 1 وتضيف فقط إلى إعدادات النهج أدناه أو تحدثها لتنفيذ المزيد من عناصر التحكم وتكوين أكثر تطورا من المستوى 1.|
 |أمان متخصص|[مستوى 3 حماية عالية من البيانات للمؤسسات](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|تتضمن إعدادات النهج المفروضة في المستوى 3 جميع إعدادات النهج الموصى بها للمستوى 1 و2 وإضافة إعدادات النهج أدناه أو تحديثها فقط لتنفيذ المزيد من عناصر التحكم وتكوين أكثر تطورا من المستوى 2.|
 
-لإنشاء نهج حماية تطبيق جديد لكل نظام أساسي (iOS وAndroid) داخل إدارة نقاط النهاية من Microsoft باستخدام إعدادات إطار حماية البيانات، يمكنك:
+لإنشاء نهج حماية تطبيق جديد لكل نظام أساسي (iOS وAndroid) داخل Microsoft إدارة نقاط النهاية باستخدام إعدادات إطار حماية البيانات، يمكنك:
 
 1. إنشاء النهج يدويا باتباع الخطوات الواردة في [كيفية إنشاء نهج حماية التطبيقات ونشرها باستخدام Microsoft Intune](/mem/intune/apps/app-protection-policies).
 2. استيراد نموذج [قوالب Intune App Protection Policy Configuration Framework JSON](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) مع [البرامج النصية PowerShell الخاصة ب Intune](https://github.com/microsoftgraph/powershell-intune-samples).
@@ -230,10 +231,10 @@ Here's a one-page PDF summary:
 
 يتطلب فرض نهج حماية التطبيقات مجموعة من النهج الموضحة في ["المطالبة بنهج حماية التطبيقات" للوصول إلى تطبيق السحابة باستخدام الوصول المشروط](/azure/active-directory/conditional-access/app-protection-based-conditional-access). يتم تضمين كل من هذه النهج في هذه المجموعة الموصى بها من نهج تكوين الهوية والوصول.
 
-لإنشاء نهج الوصول المشروط الذي يتطلب التطبيقات المعتمدة وحماية التطبيقات، اتبع الخطوات الواردة في [طلب تطبيقات العميل المعتمدة أو نهج حماية التطبيقات باستخدام الأجهزة المحمولة](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices)، والذي يسمح فقط للحسابات داخل تطبيقات الأجهزة المحمولة المحمية بنهج حماية التطبيقات بالوصول إلى نقاط النهاية Microsoft 365.
+لإنشاء نهج الوصول المشروط الذي يتطلب التطبيقات المعتمدة وحماية التطبيقات، اتبع الخطوات الواردة في [طلب تطبيقات العميل المعتمدة أو نهج حماية التطبيقات مع الأجهزة المحمولة](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices)، والذي يسمح فقط للحسابات داخل تطبيقات الأجهزة المحمولة المحمية بواسطة نهج حماية التطبيقات بالوصول إلى نقاط نهاية Microsoft 365.
 
    > [!NOTE]
-   > يضمن هذا النهج إمكانية وصول مستخدمي الأجهزة المحمولة إلى جميع نقاط النهاية Microsoft 365 باستخدام التطبيقات القابلة للتطبيق.
+   > يضمن هذا النهج إمكانية وصول مستخدمي الأجهزة المحمولة إلى جميع نقاط نهاية Microsoft 365 باستخدام التطبيقات القابلة للتطبيق.
 
 يمنع هذا النهج أيضا عملاء Exchange ActiveSync على الأجهزة المحمولة من الاتصال Exchange Online. ومع ذلك، يمكنك إنشاء نهج منفصل لمعالجة Exchange ActiveSync عبر جميع الأجهزة. لمزيد من المعلومات، راجع [عملاء Block ActiveSync](secure-email-recommended-policies.md#block-activesync-clients)، مما يمنع عملاء Exchange ActiveSync الاستفادة من المصادقة الأساسية من الاتصال Exchange Online. لم يتم تمثيل هذا النهج في الرسم التوضيحي الموجود أعلى هذه المقالة. يتم وصفها وتصورها في [توصيات النهج لتأمين البريد الإلكتروني](secure-email-recommended-policies.md).
 
@@ -258,7 +259,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 ## <a name="define-device-compliance-policies"></a>تحديد نهج توافق الجهاز
 
-تحدد نهج توافق الأجهزة المتطلبات التي يجب أن تفي بها الأجهزة ليتم تحديدها على أنها متوافقة. يمكنك إنشاء نهج توافق جهاز Intune من داخل مركز إدارة إدارة نقاط النهاية من Microsoft.
+تحدد نهج توافق الأجهزة المتطلبات التي يجب أن تفي بها الأجهزة ليتم تحديدها على أنها متوافقة. يمكنك إنشاء نهج توافق جهاز Intune من داخل مركز إدارة Microsoft إدارة نقاط النهاية.
 
 يجب إنشاء نهج لكل نظام أساسي للكمبيوتر الشخصي أو الهاتف أو الكمبيوتر اللوحي:
 
@@ -269,7 +270,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 - Windows 8.1 والإي وقت لاحق
 - Windows 10 والإي وقت لاحق
 
-لإنشاء نهج توافق الأجهزة، سجل الدخول إلى [مركز إدارة إدارة نقاط النهاية من Microsoft](https://endpoint.microsoft.com) باستخدام بيانات اعتماد المسؤول، ثم انتقل إلى **نهج**\> **توافق** **الأجهزة**\>. حدد **إنشاء نهج**.
+لإنشاء نهج توافق الأجهزة، سجل الدخول إلى [مركز إدارة نقاط النهاية مسؤول Microsoft](https://endpoint.microsoft.com) باستخدام بيانات اعتماد المسؤول، ثم انتقل إلى **نهج**\> **توافق** **الأجهزة**\>. حدد **إنشاء نهج**.
 
 لكي يتم نشر نهج توافق الجهاز، يجب تعيينها إلى مجموعات المستخدمين. يمكنك تعيين نهج بعد إنشائه وحفظه. في مركز الإدارة، حدد النهج ثم حدد **الواجبات**. بعد تحديد المجموعات التي تريد تلقي النهج، حدد **"حفظ"** لحفظ تعيين المجموعة هذا ونشر النهج.
 
@@ -344,7 +345,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 يوصى بالإعدادات التالية لأجهزة الكمبيوتر التي تعمل Windows 10 والإصدارات الأحدث، كما تم تكوينها في **الخطوة 2: إعدادات التوافق**، لعملية إنشاء النهج.
 
-للحصول على **قواعد تقييم خدمة إثبات صحة الجهاز > Windows**، راجع هذا الجدول.
+للحصول على **حماية الجهاز > قواعد تقييم خدمة Windows Health Attestation**، راجع هذا الجدول.
 
 |خصائص|قيمه|العمل|
 |---|---|---|
@@ -381,7 +382,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 |نوع|خصائص|قيمه|العمل|
 |---|---|---|---|
-|قواعد Microsoft Defender لنقطة النهاية في مركز إدارة إدارة نقاط النهاية من Microsoft|[مطالبة الجهاز أن يكون في درجة مخاطر الجهاز أو تحتها](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|المتوسطه|حدد|
+|قواعد Microsoft Defender لنقطة النهاية في مركز إدارة Microsoft إدارة نقاط النهاية|[مطالبة الجهاز أن يكون في درجة مخاطر الجهاز أو تحتها](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|المتوسطه|حدد|
 
 <!--
 ## Require compliant PCs (but not compliant phones and tablets)
