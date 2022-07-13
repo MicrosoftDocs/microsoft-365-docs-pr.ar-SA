@@ -1,8 +1,8 @@
 ---
-title: نظرة عامة على Microsoft Threat Experts في Microsoft 365 Defender
+title: نظرة عامة على خبراء المخاطر في Microsoft في Microsoft 365 Defender
 ms.reviewer: ''
-description: يوفر Microsoft Threat Experts طبقة إضافية من الخبرة ل Microsoft 365 Defender.
-keywords: خدمة تتبع التهديدات المدارة، والتتبع المدار للمخاطر، وخدمة الكشف والاستجابة المدارة (MDR)، وMTE، وMicrosoft Threat Experts
+description: يوفر خبراء المخاطر في Microsoft طبقة إضافية من الخبرة Microsoft 365 Defender.
+keywords: خدمة تتبع التهديدات المدارة، والتتبع المدار للمخاطر، وخدمة الكشف والاستجابة المدارة (MDR)، وMTE، خبراء المخاطر في Microsoft
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: d256aea992eda2426ab719bf3ee67c2fa0d3c9ea
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: bf40aa8ede1f65d22bd319b3a2fcfe82c778e754
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922384"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756694"
 ---
-# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>نظرة عامة على خبراء المخاطر من Microsoft في Microsoft 365
+# <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>نظرة عامة على خبراء المخاطر في Microsoft في Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,27 +36,27 @@ ms.locfileid: "65922384"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-خبراء التهديد من Microsoft - إعلامات الهجوم المستهدف هي خدمة تتبع المخاطر المدارة. بمجرد تقديم الطلب وقبوله، ستتلقى إعلامات الهجوم المستهدف من خبراء تهديدات Microsoft، لذلك لن تفوتك التهديدات الحرجة التي تتعرض لها بيئتك. ستساعدك هذه الإعلامات على حماية نقاط النهاية والبريد الإلكتروني والهويات في مؤسستك.
-خبراء المخاطر من Microsoft – يتيح لك الخبراء عند الطلب الحصول على نصائح الخبراء حول التهديدات التي تواجهها مؤسستك. يمكنك التواصل للحصول على المساعدة بشأن التهديدات التي تواجهها مؤسستك. وهي متوفرة كخدمة اشتراك.
+إشعارات هجوم نقطة النهاية (يشار إليها سابقا باسم خبراء المخاطر في Microsoft - إشعار الهجوم المستهدف) هي خدمة تتبع المخاطر المدارة. بمجرد تقديم الطلب وقبوله، ستتلقى إعلامات هجوم نقطة النهاية من خبراء التهديدات في Microsoft، لذلك لن تفوتك التهديدات الحرجة التي تتعرض لها بيئتك. ستساعدك هذه الإعلامات على حماية نقاط النهاية والبريد الإلكتروني والهويات في مؤسستك.
+خبراء المخاطر في Microsoft – يتيح لك الخبراء عند الطلب الحصول على نصائح الخبراء حول التهديدات التي تواجهها مؤسستك. يمكنك التواصل للحصول على المساعدة بشأن التهديدات التي تواجهها مؤسستك. وهي متوفرة كخدمة اشتراك.
 
-## <a name="apply-for-microsoft-threat-experts--targeted-attack-notifications"></a>تقدم بطلب لخبراء التهديد من Microsoft – إعلامات الهجوم المستهدف
+## <a name="apply-for-endpoint-attack-notifications"></a>تطبيق على إعلامات هجوم نقطة النهاية
 
 > [!IMPORTANT]
-> قبل التقدم بطلب، تأكد من مناقشة متطلبات الأهلية لخبراء المخاطر من Microsoft - إعلامات الهجوم المستهدف مع موفر الخدمة التقنية من Microsoft وفريق الحساب.
+> قبل التقدم بطلب، تأكد من مناقشة متطلبات الأهلية لإشعارات هجوم نقطة النهاية مع موفر خدمة Microsoft التقنية وفريق الحساب.
 
-إذا كان لديك بالفعل Microsoft Defender لنقطة النهاية وMicrosoft 365 Defender، يمكنك التقدم بطلب لخبراء المخاطر من Microsoft - إعلامات الهجوم المستهدف من خلال مدخل Microsoft 365 Defender الخاص بهم. انتقل إلى **الإعدادات > نقاط النهاية > الميزات المتقدمة > العامة > خبراء المخاطر من Microsoft – إعلامات الهجوم المستهدف**، وحدد **تطبيق**. راجع [تكوين قدرات خبراء المخاطر من Microsoft](./configure-microsoft-threat-experts.md) للحصول على وصف كامل.
+إذا كان لديك بالفعل Microsoft Defender لنقطة النهاية Microsoft 365 Defender، يمكنك التقدم بطلب للحصول على إعلامات هجوم نقطة النهاية من خلال مدخل Microsoft 365 Defender الخاص بهم. انتقل إلى **الإعدادات > نقاط النهاية > الميزات المتقدمة > العامة > إعلامات هجوم نقطة النهاية**، وحدد **تطبيق**. راجع [تكوين قدرات خبراء المخاطر في Microsoft](./configure-microsoft-threat-experts.md) للحصول على وصف كامل.
 
 :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="خيار الميزات المتقدمة في جزء التنقل الأيمن من صفحة نقاط النهاية في مدخل Microsoft 365 Defender" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
-بمجرد الموافقة على التطبيق الخاص بك، ستبدأ في تلقي إعلامات الهجوم المستهدف كلما اكتشف خبراء التهديد تهديدا للبيئة الخاصة بك.
+بمجرد الموافقة على التطبيق الخاص بك، ستبدأ في تلقي إعلامات هجوم نقطة النهاية كلما اكتشف خبراء التهديد تهديدا للبيئة الخاصة بك.
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>الاشتراك في خبراء المخاطر من Microsoft - الخبراء عند الطلب
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>الاشتراك في خبراء المخاطر في Microsoft - الخبراء عند الطلب
 
-اتصل بممثل Microsoft للاشتراك في الخبراء عند الطلب.  راجع [تكوين قدرات خبراء المخاطر من Microsoft](./configure-microsoft-threat-experts.md) للحصول على التفاصيل الكاملة.
+اتصل بممثل Microsoft للاشتراك في الخبراء عند الطلب.  راجع [تكوين قدرات خبراء المخاطر في Microsoft](./configure-microsoft-threat-experts.md) للحصول على التفاصيل الكاملة.
 
-## <a name="receive-targeted-attack-notification"></a>تلقي إعلام بالهجوم المستهدف
+## <a name="receive-endpoint-attack-notification"></a>تلقي إعلام هجوم نقطة النهاية
 
-خبراء المخاطر من Microsoft – توفر إمكانية الإعلام بالهجوم المستهدف تتبعا استباقيا لأهم التهديدات التي تتعرض لها شبكتك. يتتبع خبراء التهديد لدينا عمليات اختراق الخصوم البشريين، والهجمات العملية على لوحة المفاتيح، والهجمات المتقدمة، مثل الهجمات الإلكترونية. ستظهر هذه الإعلامات كتنبيه جديد. تتضمن خدمة التتبع المدارة ما يلي:
+توفر إمكانية إعلام هجوم نقطة النهاية تتبعا استباقيا لأهم التهديدات التي تتعرض لها شبكتك. يتتبع خبراء التهديد لدينا عمليات اختراق الخصوم البشريين، والهجمات العملية على لوحة المفاتيح، والهجمات المتقدمة، مثل الهجمات الإلكترونية. ستظهر هذه الإعلامات كتنبيه جديد. تتضمن خدمة التتبع المدارة ما يلي:
 
 - مراقبة التهديدات وتحليلها، ما يقلل من وقت الوداع والمخاطر التي تتعرض لها شركتك
 - الذكاء الاصطناعي المدرب على التتبع لاكتشاف الهجمات المعروفة والتهديدات الناشئة واستهدافها
@@ -94,7 +94,7 @@ ms.locfileid: "65922384"
 :::image type="content" source="../../media/mte/incidents-inventory-mte-highlighted.png" alt-text="خيار قائمة MTE-EOD في صفحة مخزون الحوادث في مدخل Microsoft 365 Defender" lightbox="../../media/mte/incidents-inventory-mte-highlighted.png":::
 
 > [!NOTE]
-> إذا كان لديك اشتراك في Premier Support تم تعيينه إلى ترخيص Microsoft Defender ل Office 365، يمكنك تعقب حالة حالات الخبراء عند الطلب من خلال Microsoft Services Hub.
+> إذا كان لديك اشتراك في Premier Support تم تعيينه إلى ترخيص Microsoft Defender لـ Office 365، يمكنك تعقب حالة حالات الخبراء عند الطلب من خلال Microsoft Services Hub.
 
 شاهد هذا الفيديو للحصول على نظرة عامة سريعة على مركز خدمات Microsoft.
 
@@ -102,4 +102,4 @@ ms.locfileid: "65922384"
 
 ## <a name="see-also"></a>راجع أيضًا
 
-- [تكوين قدرات خبراء المخاطر من Microsoft](./configure-microsoft-threat-experts.md)
+- [تكوين قدرات خبراء المخاطر في Microsoft](./configure-microsoft-threat-experts.md)

@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d3b6cee3212ea7d98782a9e073343321c31c8990
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 860c1cd36568705b2646cf14b6fea071af4a19a5
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750309"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756594"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>توافق برنامج الحماية من الفيروسات من Microsoft Defender مع منتجات الأمان الأخرى
 
@@ -107,6 +107,8 @@ ms.locfileid: "66750309"
 - نوع: `REG_DWORD`
 - قيمه: `1`
 
+يمكنك عرض حالة الحماية في PowerShell باستخدام الأمر [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus). تحقق من قيمة `AMRunningMode`. يجب أن تشاهد وضع كتلة **Normal** أو **Passive** أو **EDR** إذا تم تمكين برنامج الحماية من الفيروسات من Microsoft Defender على نقطة النهاية. 
+
  > [!NOTE]
  > لكي يعمل الوضع السلبي على نقاط النهاية التي تعمل بنظامي التشغيل Windows Server 2016 وWindows Server 2012 R2، يجب إلحاق نقاط النهاية هذه بالحل الحديث والموحد الموضح في [خوادم Windows المحلية](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
 
@@ -176,9 +178,14 @@ ms.locfileid: "66750309"
 
 ## <a name="how-to-confirm-the-state-of-microsoft-defender-antivirus"></a>كيفية تأكيد حالة برنامج الحماية من الفيروسات من Microsoft Defender
 
-يمكنك استخدام إحدى الطرق المتعددة لتأكيد حالة برنامج الحماية من الفيروسات من Microsoft Defender:
+يمكنك استخدام إحدى الطرق المتعددة لتأكيد حالة برنامج الحماية من الفيروسات من Microsoft Defender. يمكنك:
 
-### <a name="use-the-windows-security-app"></a>استخدام تطبيق أمن Windows
+- [استخدم تطبيق أمن Windows لتحديد تطبيق الحماية من الفيروسات](#use-the-windows-security-app-to-identify-your-antivirus-app).
+- [استخدم إدارة المهام لتأكيد تشغيل برنامج الحماية من الفيروسات من Microsoft Defender](#use-task-manager-to-confirm-that-microsoft-defender-antivirus-is-running).
+- [استخدم Windows PowerShell لتأكيد تشغيل برنامج الحماية من الفيروسات من Microsoft Defender](#use-windows-powershell-to-confirm-that-microsoft-defender-antivirus-is-running).
+- [استخدم Windows PowerShell لتأكيد تشغيل الحماية من الفيروسات](#use-windows-powershell-to-confirm-that-antivirus-protection-is-running).
+
+### <a name="use-the-windows-security-app-to-identify-your-antivirus-app"></a>استخدام تطبيق أمن Windows لتحديد تطبيق الحماية من الفيروسات
 
 1. على جهاز Windows، افتح تطبيق أمن Windows.
 
@@ -188,7 +195,7 @@ ms.locfileid: "66750309"
 
 4. في صفحة **موفري الأمان** ، ضمن **برنامج الحماية من الفيروسات**، يجب أن ترى **أن برنامج الحماية من الفيروسات من Microsoft Defender قيد التشغيل**.
 
-### <a name="use-task-manager"></a>استخدام إدارة المهام
+### <a name="use-task-manager-to-confirm-that-microsoft-defender-antivirus-is-running"></a>استخدام إدارة المهام لتأكيد تشغيل برنامج الحماية من الفيروسات من Microsoft Defender
 
 1. على جهاز Windows، افتح تطبيق Task Manager.
 

@@ -19,12 +19,12 @@ ms.collection:
 description: ما هي أفضل الممارسات لإعدادات الأمان Exchange Online Protection (EOP) Defender لـ Office 365؟ ما هي التوصيات الحالية للحماية القياسية؟ ما الذي يجب استخدامه إذا كنت تريد أن تكون أكثر صرامة؟ وما هي الإضافات التي تحصل عليها إذا كنت تستخدم Defender لـ Office 365 أيضا؟
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7798bc177cf6d3a864644fdfa6563ced14cd0ab8
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4abfee62caea6e11b525f558bb4e6e8408655c17
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489761"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756816"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>الإعدادات الموصى بها ل EOP والأمان Microsoft Defender لـ Office 365
 
@@ -283,9 +283,6 @@ ms.locfileid: "66489761"
 |اسم ميزة الأمان|افتراضي|الحماية المضمنة|التعليق|
 |---|:---:|:---:|---|
 |**حظر عناوين URL التالية** <p> _عناوين Url المستبعدة_|فارغه <p> `$null`|فارغه <p> `$null`|ليس لدينا توصية محددة لهذا الإعداد. <p> لمزيد من المعلومات، راجع [قائمة "حظر عناوين URL التالية" للارتباطات الآمنة](safe-links.md#block-the-following-urls-list-for-safe-links). <p> **ملاحظة**: يمكنك الآن إدارة إدخالات عنوان URL للكتلة في [قائمة السماح/الحظر للمستأجر](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list). قائمة "حظر عناوين URL التالية" قيد الإهمال. سنحاول ترحيل الإدخالات الموجودة من قائمة "حظر عناوين URL التالية" لحظر إدخالات URL في قائمة السماح/الحظر للمستأجر. سيتم عزل الرسائل التي تحتوي على عنوان URL المحظور.|
-|**استخدام الارتباطات الآمنة في تطبيقات Office 365** <p> _EnableSafeLinksForO365Clients_|في <p> `$true`|في <p> `$true`|استخدم "الارتباطات الآمنة" في تطبيقات Office 365 المدعومة لسطح المكتب والجوال (iOS وAndroid). لمزيد من المعلومات، راجع [إعدادات الارتباطات الآمنة لتطبيقات Office 365](safe-links.md#safe-links-settings-for-office-365-apps).|
-|**عدم التعقب عندما ينقر المستخدمون فوق الارتباطات المحمية في تطبيقات Office 365** <p> _TrackClicks_|في <p> `$false`|قباله <p> `$true`|يؤدي إيقاف تشغيل هذا الإعداد (تعيين _TrackClicks_ إلى) إلى `$true`تعقب نقرات المستخدم في تطبيقات Office 365 المدعومة.|
-|**عدم السماح للمستخدمين بالنقر فوق عنوان URL الأصلي في تطبيقات Office 365** <p> _AllowClickThrough_|في <p> `$false`|في <p> `$false`|يؤدي تشغيل هذا الإعداد (تعيين _AllowClickThrough_ إلى ) إلى `$false`منع النقر إلى عنوان URL الأصلي في تطبيقات Office 365 المدعومة.|
 
 #### <a name="safe-links-policy-settings"></a>إعدادات نهج الارتباطات الآمنة
 
@@ -310,6 +307,9 @@ ms.locfileid: "66489761"
 |**عدم إعادة كتابة عناوين URL التالية في البريد الإلكتروني** <p> _عناوين Url DoNotRewrite_|غير محدد <p> فارغه|غير محدد <p> فارغه|غير محدد <p> فارغه|غير محدد <p> فارغه|ليس لدينا توصية محددة لهذا الإعداد. <p> **ملاحظة**: الغرض من قائمة "عدم إعادة كتابة عناوين URL التالية" هو تخطي التفاف الارتباطات الآمنة لعناوين URL المحددة. بدلا من استخدام هذه القائمة، يمكنك الآن [إنشاء إدخالات عنوان URL للسماح في قائمة السماح/الحظر للمستأجر](allow-block-urls.md#create-allow-url-entries).|
 |**إجراء لعناوين URL التي يحتمل أن تكون ضارة في Microsoft Teams**||||||
 |**تشغيل: تتحقق "الارتباطات الآمنة" من قائمة الارتباطات الضارة المعروفة عندما ينقر المستخدمون فوق الارتباطات في Microsoft Teams** <p> _EnableSafeLinksForTeams_|غير محدد <p> `$false`|المحدد <p> `$true`|المحدد <p> `$true`|المحدد <p> `$true`||
+|**استخدام الارتباطات الآمنة في تطبيقات Office 365** <p> _EnableSafeLinksForO365Clients_|في <p> `$true`|في <p> `$true`|استخدم "الارتباطات الآمنة" في تطبيقات Office 365 المدعومة لسطح المكتب والجوال (iOS وAndroid). لمزيد من المعلومات، راجع [إعدادات الارتباطات الآمنة لتطبيقات Office 365](safe-links.md#safe-links-settings-for-office-365-apps).|
+|**عدم التعقب عندما ينقر المستخدمون فوق الارتباطات المحمية في تطبيقات Office 365** <p> _TrackClicks_|في <p> `$false`|قباله <p> `$true`|يؤدي إيقاف تشغيل هذا الإعداد (تعيين _TrackClicks_ إلى) إلى `$true`تعقب نقرات المستخدم في تطبيقات Office 365 المدعومة.|
+|**عدم السماح للمستخدمين بالنقر فوق عنوان URL الأصلي في تطبيقات Office 365** <p> _AllowClickThrough_|في <p> `$false`|في <p> `$false`|يؤدي تشغيل هذا الإعداد (تعيين _AllowClickThrough_ إلى ) إلى `$false`منع النقر إلى عنوان URL الأصلي في تطبيقات Office 365 المدعومة.|
 |**انقر فوق إعدادات الحماية**||||||
 |**تعقب نقرات المستخدم** <p> _TrackUserClicks_|المحدد <p> `$true`|المحدد <p> `$true`|المحدد <p> `$true`|المحدد <p> `$true`||
 |**السماح للمستخدمين بالنقر فوق عنوان URL الأصلي** <p> _AllowClickThrough_|المحدد <p> `$true`|المحدد <p> `$true`|غير محدد <p> `$false`|غير محدد <p> `$false`|يؤدي إيقاف تشغيل هذا الإعداد (تعيين _AllowClickThrough_ إلى ) إلى `$false`منع النقر إلى عنوان URL الأصلي.|

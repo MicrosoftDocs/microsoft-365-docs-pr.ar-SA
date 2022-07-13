@@ -11,12 +11,12 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: تعيين المدة التي تستغرقها جلسة عمل المستخدم في Microsoft 365 قبل انتهاء مهلتها.
-ms.openlocfilehash: 3dd845d5488d2385297a87908253740ef774eb5d
-ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
+ms.openlocfilehash: 15de72fef4dc45705b78dc83941faff1d835d6ae
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66720402"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756616"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>مهلة جلسة العمل الخاملة ل Microsoft 365
 

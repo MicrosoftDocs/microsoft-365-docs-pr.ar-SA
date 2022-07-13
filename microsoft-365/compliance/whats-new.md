@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: سواء كان ذلك بإضافة حلول جديدة إلى مركز الامتثال، أو تحديث الميزات الحالية استنادا إلى ملاحظاتك، أو طرح وثائق جديدة ومحدثة، يساعدك Microsoft 365 على البقاء على اطلاع على مشهد التوافق المتغير باستمرار. تعرف على ما كنا عليه حتى هذا الشهر.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 828389ded4e62b7cc7f7bbb1a0da8ef3534b6a58
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fc553b60132da31dbcc6e131ddb29bcbfa99548b
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637772"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756738"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>ما الجديد في حلول المخاطر والتوافق ل Microsoft Purview
 
@@ -40,6 +40,47 @@ ms.locfileid: "66637772"
 > - [الجديد في Microsoft 365 Defender](../security/defender/whats-new.md)
 >
 > وقم بزيارة [مخطط Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) للتعرف على ميزات Microsoft 365 التي تم إطلاقها أو نشرها أو قيد التطوير أو تم إلغاؤها أو إصدارها مسبقا.
+
+## <a name="june-2022"></a>يونيو 2022
+
+### <a name="compliance-manager"></a>إدارة التوافق
+
+- [تنبيهات Microsoft Purview Compliance Manager ونهج التنبيه](compliance-manager-alert-policies.md) - تمت إضافة ثلاثة أدوار ADD لديها أذونات لإنشاء نهج التنبيه أو تحريرها.
+- [محلل التكوين ل Microsoft Purview](compliance-manager-mcca.md) - اسم جديد وارتباطات مرجعية محدثة لأداة بدء الاستخدام هذه ل Compliance Manager المسمى سابقا "محلل تكوين التوافق من Microsoft".
+
+### <a name="data-loss-prevention"></a>منع فقدان البيانات
+
+- العديد من تحديثات الصفحات للقطات الشاشة ذات العلامة التجارية ل Microsoft Purview.
+
+### <a name="data-lifecycle-management-and-records-management"></a>إدارة دورة حياة البيانات وإدارة السجلات
+
+- في المعاينة: [Microsoft Graph API لإدارة السجلات](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview)
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [طلبات حقوق الموضوع](/privacy/priva/subject-rights-requests) - تحديثات هامة، وإعادة هيكلة محتوى SRR لمساعدة المستخدمين بشكل أفضل خلال كل خطوة تقدم؛ التفاصيل أدناه.
+  - [تعرف على طلبات حقوق أصحاب البيانات في Priva](/privacy/priva/subject-rights-requests) - توضيح أكثر وضوحا لمسند قيمة العميل والمخطط التفصيلي العام لعملية SRR.
+  - [فهم صفحات سير العمل والتفاصيل](/privacy/priva/subject-rights-requests-workflow) - توضيح الخطوات في إكمال الطلب، والإشارة إلى التقدم اليدوي مقابل التقدم التلقائي، والربط بمحتوى مفصل؛ يشرح قسم كيفية تفسير صفحة تفاصيل الطلب والعمل معها، بما في ذلك علامة التبويب "محفوظات" الجديدة.
+  - [إنشاء طلب وتحديد إعدادات البحث](/privacy/priva/subject-rights-requests-create) - إطار جديد مع عناوين فرعية تشرح أن هناك الآن طريقتين لإنشاء طلب: عبر أسلوب مخصص باستخدام عملية موجهة، وعبر ميزة جديدة لاستخدام قالب، الذي تهدف معلمات البحث الخاصة به إلى استرداد المحتوى الأكثر صلة للحالة.
+  - [تقدير البيانات واسترجاعها](/privacy/priva/subject-rights-requests-data-retrieval) - يشرح سبب توقف بعض الطلبات مؤقتا في مرحلة تقدير البيانات وكيفية ضبط البحث نتيجة لذلك؛ يشرح أيضا كيفية تعيين طلب لإيقافه مؤقتا أولا قبل التقدم تلقائيا إلى استرداد البيانات.
+  - [مراجعة البيانات لطلب حقوق الموضوع](/privacy/priva/subject-rights-requests-data-review) - تسمح ميزات ملف الاستيراد الجديدة للمستخدمين بإحضار الملفات من مواقع غير Microsoft 365، أو الملفات التي لم يتم التقاطها بواسطة البحث، إلى علامة التبويب "البيانات" التي تم جمعها.
+  - [إنشاء التقارير وطلبات الإغلاق](/privacy/priva/subject-rights-requests-reports) - توضح وقت إنشاء حزم البيانات النهائية وأنواع الملفات التي تتضمنها.
+  - [التكامل والتوسع من خلال واجهة برمجة تطبيقات Microsoft Graph وPower Automate](/privacy/priva/subject-rights-requests-automate) - تمت مراجعة عنوان صفحة Power Automate السابقة هذه وتوسيع محتوى الصفحة لتضمين محتوى واجهة برمجة تطبيقات Graph والارتباطات المرجعية التي كانت موجودة مسبقا على صفحة أخرى.
+
+### <a name="sensitive-information-types"></a>أنواع المعلومات الحساسة
+
+- [تعرف على أنواع المعلومات الحساسة المستندة إلى مطابقة البيانات الدقيقة](sit-learn-about-exact-data-match-based-sits.md) - قسم إضافي حول الخدمات التي يدعمها EDM.
+
+### <a name="sensitivity-labels"></a>تسميات الحساسية
+
+- في المعاينة: [دعم PDF لتطبيقات Office](sensitivity-labels-office-apps.md#pdf-support)، والذي يتضمن تحويل المستندات إلى تنسيق PDF، وراثة التسمية بأي علامات مرئية وتشفير. الطباعة إلى PDF غير معتمدة، ويصبح هذا الخيار غير متوفر للمستخدمين إذا تم تكوين نهج التسمية الخاص بهم للتسمية الإلزامية.
+- في المعاينة: يتم تحديث مربع الحوار الذي يراه المستخدمون عند تكوين نهج التسمية الخاص بهم لطلب مبرر لإزالة تسمية أو تخفيضها لتحذير المستخدمين من أن استجابتهم المطبوعة يجب ألا تتضمن بيانات حساسة. تظهر لقطة الشاشة في قسم ["ما يمكن لنهج التسمية القيام به](sensitivity-labels.md#what-label-policies-can-do) " مربع الحوار المحدث هذا الذي سيدخل قنوات نشر Office لاستخدام الإنتاج.
+- في المعاينة: بدأ [دعم Outlook لتطبيق حماية S/MIME](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) للتو في الظهور عبر الأنظمة الأساسية للعميل.
+- بالنسبة إلى [نهج التسمية التلقائية](apply-sensitivity-label-automatically.md#creating-an-auto-labeling-policy)، إعداد جديد يمكنه تشغيل النهج تلقائيا إذا لم يتم تحريره في غضون عدد معين من الأيام.
+
+### <a name="trainable-classifiers"></a>المصنفات القابلة للتدريب
+
+- [تعرف على المصنفات القابلة للتدريب](classifier-learn-about.md) - إضافة مصنف قابل للتدريب لصور البالغين، و Racy، وGory.
 
 ## <a name="may-2022"></a>مايو 2022
 
@@ -293,32 +334,3 @@ ms.locfileid: "66637772"
 - [قدرات مراقبة](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) جديدة لنهج التسمية التلقائية.
 - الطرح الآن: التسمية الافتراضية للمستندات الموجودة، ونص الضبط Office على الويب.
 - تم الإعلان عنه لقناة شهر يوليو Semi-Annual Enterprise مع الإصدار 2202+: التأليف المشترك والتدقيق ل Outlook.
-
-## <a name="december-2021"></a>ديسمبر 2021
-
-### <a name="compliance-and-service-assurance"></a>الامتثال وضمان الخدمة
-
-- [إعلام خرق Azure وDynamics 365 وWindows بموجب القانون العام لحماية البيانات ( GDPR](/compliance/regulatory/gdpr-breach-notification) ) - تم تحديثه لتوضيح أن العملاء لا يحتاجون إلى استخدام خدمة دفع مثل Defender for Cloud لتلقي إعلامات الأمان والخصوصية
-
-### <a name="ediscovery"></a>eDiscovery
-
-- [سير عمل eDiscovery (Premium) للمحتوى في Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) - محدث بدليل مرجعي سريع جديد قابل للتنزيل لإدارة محتوى Teams في eDiscovery (Premium)
-
-### <a name="data-lifecycle-management"></a>إدارة دورة حياة البيانات
-
-- [تمكين علب بريد الأرشيف في مركز التوافق](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) - المقطع المضاف حول أداة التشخيص الجديدة لعلب بريد الأرشيف
-- [استخدام تحميل الشبكة لاستيراد ملفات PST لمؤسستك إلى Microsoft 365](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) - يدعم استيراد PST الآن AzCopy v10
-- [استعادة علبة بريد غير نشطة](restore-an-inactive-mailbox.md) - إجراء تمت مراجعته لاستعادة علبة بريد غير نشطة عن طريق إضافة LegacyExchangeDN من علبة البريد غير النشطة إلى علبة البريد الهدف أولا
-
-### <a name="information-protection"></a>حماية المعلومات
-
-- [نشر حل حماية المعلومات باستخدام Microsoft Purview](information-protection-solution.md) - إرشادات خطوة بخطوة للعملاء الذين يبحثون عن مخطط توجيهي لنشر حماية البيانات في Microsoft Purview
-
-### <a name="retention-and-records-management"></a>إدارة الاستبقاء والسجلات
-
-- إرشادات جديدة [للمدة التي يستغرقها تطبيق نهج الاستبقاء](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
-- إعدادات المستأجر الجديدة التي يتم طرحها: إعداد إدارة السجلات الذي يمنع تحرير خصائص عناصر SharePoint المسماة التي تم وضع علامة عليها كسجل ومؤمنة، وإعدادات أخرى لمنع المستخدمين من إلغاء تأمين العناصر التي تم وضع علامة عليها كسجل
-
-### <a name="sensitivity-labels"></a>تسميات الحساسية
-
-- تتوفر الآن التسمية الإلزامية والتسمية الافتراضية ل Power BI بشكل عام (GA)

@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e344c98fd136569015a032bcc83569bc38e06621
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 0efacb67cb3ba6b5126bbe5de327fa0b9f2092cf
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438784"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720380"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>برنامج الحماية من الفيروسات من Microsoft Defender في Windows
 
@@ -47,8 +47,6 @@ ms.locfileid: "65438784"
 
 يصف الجدول التالي ما يجب توقعه عندما يكون برنامج الحماية من الفيروسات من Microsoft Defender في الوضع النشط أو الوضع الخامل أو معطلا.
 
-<br/><br/>
-
 | الوضع | ما يحدث |
 |---|---|
 | الوضع النشط | في الوضع النشط، يتم استخدام برنامج الحماية من الفيروسات من Microsoft Defender كتطبيق مكافحة الفيروسات الأساسي على الجهاز. يتم فحص الملفات، وتتم معالجة التهديدات، ويتم سرد التهديدات المكتشفة في تقارير الأمان الخاصة بمؤسستك وفي تطبيق أمن Windows. |
@@ -59,21 +57,21 @@ ms.locfileid: "65438784"
 
 ## <a name="check-the-state-of-microsoft-defender-antivirus-on-your-device"></a>التحقق من حالة برنامج الحماية من الفيروسات من Microsoft Defender على جهازك
 
-إذا كنت تريد التحقق من حالة برنامج الحماية من الفيروسات من Microsoft Defender على جهازك، فيمكنك استخدام إحدى الطرق المتعددة، مثل تطبيق أمن Windows أو Windows PowerShell.
+فيمكنك استخدام إحدى الطرق المتعددة، مثل تطبيق أمن Windows أو Windows PowerShell للتحقق من حالة برنامج Microsoft Defender Antivirus على جهازك.
 
-### <a name="use-the-windows-security-app-to-check-status-of-microsoft-defender-antivirus"></a>استخدم تطبيق أمن Windows للتحقق من حالة برنامج الحماية من الفيروسات من Microsoft Defender
+### <a name="use-the-windows-security-app-to-check-the-status-of-microsoft-defender-antivirus"></a>استخدم تطبيق أمن Windows للتحقق من حالة برنامج الحماية من الفيروسات من Microsoft Defender
 
-1. على جهاز Windows، حدد قائمة البدء، وابدأ بالكتابة `Security`. ثم افتح تطبيق أمن Windows في النتائج.
+1. على جهاز Windows، حدد قائمة **البدء**، وابدأ بالكتابة `Security`. ثم افتح تطبيق أمن Windows في النتائج.
 
 2. حدد **الحماية من الفيروسات والمخاطر**.
 
-3. ضمن إعدادات **الحماية من الفيروسات والمخاطر**، اختر **إدارة الإعدادات**.
+3. ضمن **من يقوم بحمايتي؟**، اختار **إدارة المُوفّرون**.
 
-سترى اسم حل الحماية من الفيروسات/الحماية من البرامج الضارة على صفحة الإعدادات.
+سترى اسم حل الحماية من الفيروسات/الحماية من البرامج الضارة على صفحة موفرو الأمان.
 
-### <a name="use-powershell-to-check-status-of-microsoft-defender-antivirus"></a>استخدام PowerShell للتحقق من حالة برنامج الحماية من الفيروسات من Microsoft Defender
+### <a name="use-powershell-to-check-the-status-of-microsoft-defender-antivirus"></a>استخدام PowerShell للتحقق من حالة برنامج الحماية من الفيروسات من Microsoft Defender
 
-1. حدد قائمة البدء، وابدأ الكتابة `PowerShell`. ثم افتح Windows PowerShell في النتائج.
+1. حدد قائمة **البدء**، وابدأ الكتابة `PowerShell`. ثم افتح Windows PowerShell في النتائج.
 
 2. النوع `Get-MpComputerStatus`.
 
@@ -92,7 +90,7 @@ ms.locfileid: "65438784"
 
 ## <a name="get-your-antivirusantimalware-platform-updates"></a>الحصول على تحديثات النظام الأساسي للحماية من الفيروسات/الحماية من البرامج الضارة
 
-من المهم الحفاظ على تحديث برنامج الحماية من الفيروسات من Microsoft Defender أو أي حل للحماية من الفيروسات/الحماية من البرامج الضارة. تصدر Microsoft تحديثات منتظمة للمساعدة في ضمان حصول أجهزتك على أحدث التقنيات للحماية من البرامج الضارة وتقنيات الهجوم الجديدة. لمعرفة المزيد، راجع [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](manage-updates-baselines-microsoft-defender-antivirus.md).
+من المهم الحفاظ على تحديث برنامج الحماية من الفيروسات من Microsoft Defender (أو أي حل للحماية من الفيروسات/الحماية من البرامج الضارة). تصدر Microsoft تحديثات منتظمة للمساعدة في ضمان حصول أجهزتك على أحدث التقنيات للحماية من البرامج الضارة وتقنيات الهجوم الجديدة. لمعرفة المزيد، راجع [إدارة تحديثات برنامج الحماية من الفيروسات من Microsoft Defender وتطبيق الخطوط الأساسية](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 > [!TIP]
 > إذا كنت تبحث عن معلومات متعلقة ببرنامج الحماية من الفيروسات للأنظمة الأساسية الأخرى، فاطلع على:

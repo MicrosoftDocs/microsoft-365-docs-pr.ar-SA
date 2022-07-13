@@ -20,12 +20,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على التحليل الذكي المخادعة في Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9455ddf17d26e33ed5b2669a27ee93cf5f56b8f9
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 3be83ee7174934439643320f2ac9d0db72d745bd
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016043"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756638"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>تزييف التحليل الذكي في EOP
 
@@ -36,7 +36,7 @@ ms.locfileid: "66016043"
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-في المؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، تتم حماية رسائل البريد الإلكتروني الواردة تلقائيا من الانتحال. يستخدم EOP التحليل **الذكي للانتحال** كجزء من الدفاع العام لمؤسستك ضد التصيد الاحتيالي. لمزيد من المعلومات، راجع [الحماية من الانتحال في EOP](anti-spoofing-protection.md).
+في مؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، تتم حماية رسائل البريد الإلكتروني الواردة تلقائيا من الانتحال. يستخدم EOP التحليل **الذكي للانتحال** كجزء من الدفاع العام لمؤسستك ضد التصيد الاحتيالي. لمزيد من المعلومات، راجع [الحماية من الانتحال في EOP](anti-spoofing-protection.md).
 
 عندما ينتحل المرسل عنوان بريد إلكتروني، يبدو أنه مستخدم في أحد مجالات مؤسستك، أو مستخدم في مجال خارجي يرسل بريدا إلكترونيا إلى مؤسستك. يجب حظر المهاجمين الذين ينتحلون هوية المرسلين لإرسال البريد الإلكتروني العشوائي أو التصيد الاحتيالي. ولكن هناك سيناريوهات حيث ينتحل المرسلون الشرعيون. على سبيل المثال:
 
@@ -56,7 +56,7 @@ ms.locfileid: "66016043"
 
 وبالمثل، يمكنك مراجعة المرسلين المخادعة الذين تم السماح بهم بواسطة التحليل الذكي المخادعة وحظر هؤلاء المرسلين يدويا من رؤى التحليل الذكي المخادعة.
 
-تشرح بقية هذه المقالة كيفية استخدام التحليل الذكي للانتحال في مدخل Microsoft 365 Defender وفي PowerShell (Exchange Online PowerShell للمؤسسات Microsoft 365 مع علب البريد في Exchange Online؛ EOP PowerShell مستقل للمؤسسات دون Exchange Online علب البريد).
+تشرح بقية هذه المقالة كيفية استخدام التحليل الذكي للانتحال في مدخل Microsoft 365 Defender وفي PowerShell (Exchange Online PowerShell لمؤسسات Microsoft 365 مع علب بريد في Exchange Online؛ EOP PowerShell مستقل للمؤسسات دون Exchange Online  علب البريد).
 
 > [!NOTE]
 >
@@ -64,18 +64,20 @@ ms.locfileid: "66016043"
 >
 > - تستبدل نتيجة التحليل الذكي للانتحال وعلامة التبويب **"تزييف** الهوية" في قائمة "السماح بالمستأجر/الحظر" وظيفة نهج التحليل الذكي الذي كان متوفرا على صفحة نهج مكافحة البريد العشوائي في مركز التوافق & الأمان.
 >
->- تظهر نتيجة التحليل الذكي المخادعة بيانات بقيمة 7 أيام. يعرض **الأمر Get-SpoofIntelligenceInsight** cmdlet بيانات بقيمة 30 يوما.
+> - تظهر نتيجة التحليل الذكي المخادعة بيانات بقيمة 7 أيام. يعرض **الأمر Get-SpoofIntelligenceInsight** cmdlet بيانات بقيمة 30 يوما.
+>
+> - أحدث البيانات المتوفرة هي من 3 إلى 4 أيام.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
 - يمكنك فتح مدخل Microsoft 365 Defender في <https://security.microsoft.com>. للانتقال مباشرة إلى علامة التبويب **"انتحال** " في صفحة **"السماح بالمستأجر/قائمة الحظر** "، استخدم <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. للانتقال مباشرة إلى صفحة **التحليل الذكي للانتحال** ، استخدم <https://security.microsoft.com/spoofintelligence>.
 
-- للاتصال Exchange Online PowerShell، راجع [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell مستقل، راجع [الاتصال إلى Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- للاتصال Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell المستقل، راجع [الاتصال Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - يجب تعيين أذونات لك في **Exchange Online** قبل أن تتمكن من تنفيذ الإجراءات الواردة في هذه المقالة:
-  - لتعديل نهج التحليل الذكي المخادعة أو تمكين التحليل الذكي للانتحال أو تعطيله، يجب أن تكون عضوا في 
-    -   **إدارة المؤسسة**
-    -   **مسؤول الأمان** <u>وتكوين</u> **العرض فقط** أو **إدارة المؤسسة للعرض فقط**.
+  - لتعديل نهج التحليل الذكي للانتحال أو تمكين أو تعطيل التحليل الذكي للانتحال، يجب أن تكون عضوا في إحدى مجموعات الأدوار التالية:
+    - **إدارة المؤسسة**
+    - **مسؤول الأمان** <u>وتكوين</u> **العرض فقط** أو **إدارة المؤسسة للعرض فقط**.
   - للوصول للقراءة فقط إلى نهج التحليل الذكي المخادعة، يجب أن تكون عضوا في مجموعات دور **القارئ العمومي** أو **قارئ الأمان** .
 
   لمزيد من المعلومات، راجع [الأذونات في Exchange Online](/exchange/permissions-exo/permissions-exo).
@@ -174,7 +176,7 @@ Get-SpoofIntelligenceInsight
 
 - تحقق من **تقرير البريد المخادعة**. يمكنك استخدام هذا التقرير غالبا لعرض المرسلين المخادعة والمساعدة في إدارتهم. للحصول على معلومات، راجع [تقرير عمليات الكشف عن الانتحال](view-email-security-reports.md#spoof-detections-report).
 
-- راجع تكوين إطار نهج المرسل (SPF). للحصول على مقدمة سريعة إلى SPF وتكوينه بسرعة، راجع [إعداد SPF في Microsoft 365 للمساعدة في منع انتحال هوية](set-up-spf-in-office-365-to-help-prevent-spoofing.md). للحصول على فهم أكثر تعمقا لكيفية استخدام Office 365 ل SPF، أو لاستكشاف الأخطاء وإصلاحها أو عمليات النشر غير القياسية مثل عمليات النشر المختلطة، ابدأ [بكيفية استخدام Office 365 إطار نهج المرسل (SPF) لمنع تزييف الهوية](how-office-365-uses-spf-to-prevent-spoofing.md).
+- راجع تكوين إطار نهج المرسل (SPF). للحصول على مقدمة سريعة حول SPF وتكوينه بسرعة، راجع [إعداد SPF في Microsoft 365 للمساعدة في منع الانتحال](set-up-spf-in-office-365-to-help-prevent-spoofing.md). للحصول على فهم أكثر تعمقا لكيفية استخدام Office 365 ل SPF، أو لاستكشاف الأخطاء وإصلاحها أو عمليات النشر غير القياسية مثل عمليات النشر المختلطة، ابدأ [بكيفية استخدام Office 365 إطار نهج المرسل (SPF) لمنع تزييف الهوية](how-office-365-uses-spf-to-prevent-spoofing.md).
 
 - راجع تكوين DomainKeys Identified Mail (DKIM). يجب عليك استخدام DKIM بالإضافة إلى SPF وDMARC للمساعدة في منع المهاجمين من إرسال الرسائل التي تبدو وكأنها واردة من مجالك. يتيح لك DKIM إضافة توقيع رقمي إلى رسائل البريد الإلكتروني في رأس الرسالة. للحصول على معلومات، راجع [استخدام DKIM للتحقق من صحة البريد الإلكتروني الصادر المرسل من مجالك المخصص في Office 365](use-dkim-to-validate-outbound-email.md).
 
