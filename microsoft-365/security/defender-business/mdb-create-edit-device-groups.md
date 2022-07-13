@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 9d788ee4dac2e922898204fdd13e977c50e66b2e
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 84029946abe064219622fdd1b9ce0dd9a6dfc048
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090421"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773185"
 ---
 # <a name="device-groups-in-microsoft-defender-for-business"></a>مجموعات الأجهزة في Microsoft Defender for Business
 
-في Microsoft Defender for Business، يتم تطبيق النهج على الأجهزة من خلال مجموعات معينة تسمى مجموعات الأجهزة. 
+في Defender for Business، يتم تطبيق النهج على الأجهزة من خلال مجموعات معينة تسمى مجموعات الأجهزة. 
 
 **تصف هذه المقالة**:  
 
@@ -37,14 +37,14 @@ ms.locfileid: "66090421"
 
 ## <a name="what-is-a-device-group"></a>ما هي مجموعة الأجهزة؟
 
-مجموعة الأجهزة هي مجموعة من الأجهزة التي يتم تجميعها معا بسبب معايير معينة، مثل إصدار نظام التشغيل. يتم تضمين الأجهزة التي تفي بالمعايير في مجموعة الأجهزة هذه، إلا إذا قمت باستبعادها. في Microsoft Defender for Business، يتم تطبيق النهج على الأجهزة باستخدام مجموعات الأجهزة.
+مجموعة الأجهزة هي مجموعة من الأجهزة التي يتم تجميعها معا بسبب معايير معينة، مثل إصدار نظام التشغيل. يتم تضمين الأجهزة التي تفي بالمعايير في مجموعة الأجهزة هذه، إلا إذا قمت باستبعادها. في Defender for Business، يتم تطبيق النهج على الأجهزة باستخدام مجموعات الأجهزة.
 
-يتضمن Defender for Business مجموعات الأجهزة الافتراضية التي يمكنك استخدامها. تتضمن مجموعات الأجهزة الافتراضية جميع الأجهزة التي تم إلحاقها ب Defender for Business. على سبيل المثال، هناك مجموعة أجهزة افتراضية للأجهزة Windows. كلما قمت بإلحاق أجهزة Windows، تتم إضافتها إلى مجموعة الأجهزة الافتراضية تلقائيا.
+يتضمن Defender for Business مجموعات الأجهزة الافتراضية التي يمكنك استخدامها. تتضمن مجموعات الأجهزة الافتراضية جميع الأجهزة التي تم إلحاقها ب Defender for Business. على سبيل المثال، هناك مجموعة أجهزة افتراضية لأجهزة Windows. كلما قمت بإلحاق أجهزة Windows، تتم إضافتها إلى مجموعة الأجهزة الافتراضية تلقائيا.
 
 يمكنك أيضا إنشاء مجموعات أجهزة جديدة لتعيين نهج ذات إعدادات معينة إلى أجهزة معينة. على سبيل المثال، قد يكون لديك نهج جدار حماية معين لمجموعة واحدة من أجهزة Windows، ونهج جدار حماية مختلف معين لمجموعة أخرى من أجهزة Windows. يمكنك تعريف مجموعات أجهزة معينة لاستخدامها مع النهج الخاصة بك.
 
 > [!NOTE]
-> أثناء إنشاء نهج في Defender for Business، يتم تعيين ترتيب الأولوية. إذا قمت بتطبيق نهج متعددة على مجموعة معينة من الأجهزة، فستتلقى هذه الأجهزة النهج المطبق الأول فقط. لمزيد من المعلومات، راجع [فهم ترتيب النهج في Microsoft Defender for Business](mdb-policy-order.md).
+> أثناء إنشاء نهج في Defender for Business، يتم تعيين ترتيب الأولوية. إذا قمت بتطبيق نهج متعددة على مجموعة معينة من الأجهزة، فستتلقى هذه الأجهزة النهج المطبق الأول فقط. لمزيد من المعلومات، راجع [فهم ترتيب النهج في Defender for Business](mdb-policy-order.md).
 
 يتم تخزين جميع مجموعات الأجهزة، بما في ذلك مجموعات الأجهزة الافتراضية وأي مجموعات أجهزة مخصصة تقوم بتعريفها، في [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
@@ -62,7 +62,7 @@ ms.locfileid: "66090421"
     2. اختر **+ إضافة** لإنشاء نهج جديد.
 
     > [!TIP]
-    > للحصول على المساعدة في إنشاء نهج أو تحريره، راجع [عرض النهج أو تحريرها في Microsoft Defender for Business](mdb-view-edit-policies.md).
+    > للحصول على المساعدة في إنشاء نهج أو تحريره، راجع [عرض النهج أو تحريرها في Defender for Business](mdb-view-edit-policies.md).
 
 4. في خطوة **المعلومات العامة** ، راجع المعلومات، وقم بالتحرير إذا لزم الأمر، ثم اختر **"التالي**".
 
@@ -92,7 +92,7 @@ ms.locfileid: "66090421"
     2. اختر **+ إضافة** لإنشاء نهج جديد.
 
     > [!TIP]
-    > للحصول على المساعدة في إنشاء نهج أو تحريره، راجع [عرض النهج أو تحريرها في Microsoft Defender for Business](mdb-view-edit-policies.md).
+    > للحصول على المساعدة في إنشاء نهج أو تحريره، راجع [عرض النهج أو تحريرها في Defender for Business](mdb-view-edit-policies.md).
 
 4. في خطوة **المعلومات العامة** ، راجع المعلومات، وقم بالتحرير إذا لزم الأمر، ثم اختر **"التالي**".
 
@@ -112,6 +112,6 @@ ms.locfileid: "66090421"
 
 - [عرض النهج أو تحريرها](mdb-view-edit-policies.md)
 - [إنشاء نهج جديد](mdb-create-new-policy.md)
-- [عرض الحوادث وإدارتها في Microsoft Defender for Business](mdb-view-manage-incidents.md)
-- [الاستجابة للتهديدات وتخفيفها في Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [عرض الحوادث وإدارتها في Defender for Business](mdb-view-manage-incidents.md)
+- [الاستجابة للتهديدات وتخفيفها في Defender for Business](mdb-respond-mitigate-threats.md)
 - [مراجعة إجراءات المعالجة في مركز الصيانة](mdb-review-remediation-actions.md)

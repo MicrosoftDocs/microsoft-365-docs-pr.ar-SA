@@ -15,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: b76735130d768edfa9c71b25081040a7f4b6718c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f769d79baa2dc17abe179f09af3bdb6f4571440c
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685998"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771318"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>إعداد Microsoft 365 Business Premium
 
@@ -45,12 +45,13 @@ ms.locfileid: "66685998"
 
 ## <a name="guided-setup-process"></a>عملية الإعداد الموجهة
 
-تتضمن Microsoft 365 Business Premium عملية موجهة. يعرض الفيديو التالي عملية الإعداد الموجهة Microsoft 365 Business Standard، والتي تنطبق أيضا على Microsoft 365 Business Premium.<br/><br/>
+تتضمن Microsoft 365 Business Premium عملية موجهة. يعرض الفيديو التالي عملية الإعداد الموجهة Microsoft 365 Business Standard، والتي تنطبق أيضا على Microsoft 365 Business Premium. بمجرد الانتهاء من عملية الإعداد الموجهة، تأكد من المتابعة إلى [رفع الأمان](m365bp-security-overview.md).<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
 > بعد إضافة مستخدمين، امنحهم ارتباطا إلى [دليل الإعداد السريع للموظف](../admin/setup/employee-quick-setup.md). يرشدهم الدليل عبر تسجيل الدخول والحصول على تطبيقات Office وحفظ الملفات ونسخها ومشاركتها.
+> تأكد من المتابعة إلى [الأمان الأعلى](m365bp-security-overview.md).
 
 ## <a name="work-with-a-microsoft-partner"></a>العمل مع شريك Microsoft
 

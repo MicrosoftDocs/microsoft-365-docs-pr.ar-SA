@@ -15,20 +15,22 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: daa32cf5b20d62a9574ed90660bfc705ad7ed5e5
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 2fd10eb56eec1c35015bff2f63163ee9394f8d42
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090531"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771296"
 ---
 # <a name="get-microsoft-defender-for-business"></a>الحصول على Microsoft Defender for Business
 
+Defender for Business هو حل أمان نقطة نهاية جديد مصمم خصيصا للشركات الصغيرة والمتوسطة الحجم (ما يصل إلى 300 موظف). تصف هذه المقالة كيفية الحصول على Defender for Business.
+
 إذا لم يكن لديك Microsoft Defender for Business بالفعل، يمكنك الاختيار من بين عدة خيارات:
 
-- [جرب الإصدار المستقل من Defender for Business أو اشتره](#try-or-buy-microsoft-defender-for-business)
-- [الحصول على Microsoft 365 Business Premium](#get-microsoft-365-business-premium)، والتي تتضمن الآن Defender for Business
-- [العمل مع موفر حلول Microsoft](#work-with-a-microsoft-solution-provider) الذي يمكنه مساعدتك في إعداد كل شيء وتكوينه
+- [جرب الإصدار المستقل من Defender for Business أو اشتره](#try-or-buy-microsoft-defender-for-business).
+- [احصل على Microsoft 365 Business Premium](#get-microsoft-365-business-premium)، والتي تتضمن الآن Defender for Business.
+- [العمل مع موفر حلول Microsoft](#work-with-a-microsoft-solution-provider) الذي يمكنه مساعدتك في إعداد كل شيء وتكوينه.
 
 إذا قمت بالتسجيل للحصول على إصدار تجريبي، بعد تلقي بريدك الإلكتروني للقبول، يمكنك [تنشيط الإصدار التجريبي وتعيين تراخيص المستخدمين](#how-to-activate-your-trial)، ثم المتابعة إلى [الخطوات التالية](#next-steps).
 
@@ -50,7 +52,7 @@ ms.locfileid: "66090531"
 
 1. تفضل بزيارة [صفحة منتج Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot%3aoverviewtab).
 
-2. اختر تجربة اشتراكك أو شراؤه. راجع [تجربة اشتراك Microsoft 365 للأعمال أو شرائه](../../commerce/try-or-buy-microsoft-365.md). في [موقع منتجات Microsoft 365](https://www.aka.ms/office365signup)، اختر **Microsoft 365 Business Premium**.
+2. اختر تجربة اشتراكك أو شراؤه. راجع [تجربة اشتراك Microsoft 365 للأعمال أو شرائه](../../commerce/try-or-buy-microsoft-365.md). على [موقع منتجات Microsoft 365](https://www.aka.ms/office365signup)، اختر **Microsoft 365 Business Premium**.
 
 3. بعد التسجيل للحصول على Microsoft 365 Business Premium، ستتلقى رسالة بريد إلكتروني تتضمن ارتباطا لتسجيل الدخول وبدء الاستخدام. تابع لإعداد [Microsoft 365 Business Premium](../../business-premium/m365bp-setup.md).
 
@@ -76,11 +78,11 @@ ms.locfileid: "66090531"
 
 3. عند تسجيل الدخول للمرة الأولى، ستنتقل إلى مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)). راجع [نظرة عامة على مركز مسؤولي Microsoft 365](../../admin/admin-overview/admin-center-overview.md).
 
-4. استخدم أحد الإجراءات التالية:<br/>
+4. استخدم أحد الإجراءات التالية، استنادا إلى السيناريو الخاص بك:<br/>
 
    | السيناريو | الاجراء |
    |:---|:---|
-   | تقوم بإعداد اشتراك Microsoft 365 للمرة الأولى. | حدد **Go للإعداد الموجه** وأكمل الخطوات التالية:<ol><li>قم بتثبيت تطبيقات Office الآن، أو اختر **"متابعة**" لتخطي هذه الخطوة. (يمكنك تثبيت تطبيقات Office لاحقا.)</li><li>إذا كان لدى شركتك مجال، يمكنك إضافته الآن (يوصى بهذا الخيار). بدلا من ذلك، يمكنك اختيار استخدام مجالك الافتراضي `.onmicrosoft.com` في الوقت الحالي.</li><li>إضافة مستخدمين وتعيين التراخيص. سيتم تعيين ترخيص تلقائيا لكل مستخدم تسرده. راجع [إضافة مستخدمين وتعيين التراخيص في الوقت نفسه](mdb-add-users.md).</li></ol> |
+   | تقوم بإعداد اشتراك Microsoft 365 للمرة الأولى. | حدد **Go للإعداد الموجه** وأكمل الخطوات التالية:<ol><li>قم بتثبيت تطبيقات Office الآن، أو اختر **"متابعة** " لتخطي هذه الخطوة. (يمكنك تثبيت تطبيقات Office لاحقا.)</li><li>إذا كان لدى شركتك مجال، يمكنك إضافته الآن (يوصى بهذا الخيار). بدلا من ذلك، يمكنك اختيار استخدام مجالك الافتراضي `.onmicrosoft.com` في الوقت الحالي.</li><li>إضافة مستخدمين وتعيين التراخيص. سيتم تعيين ترخيص تلقائيا لكل مستخدم تسرده. راجع [إضافة مستخدمين وتعيين التراخيص في الوقت نفسه](mdb-add-users.md).</li></ol> |
    | تقوم بإضافة إصدار تجريبي إلى مستأجر Microsoft 365 موجود. | <ol><li>انتقل إلى مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com/](https://admin.microsoft.com/)) وسجل الدخول.</li><li>في جزء التنقل، اختر **"المستخدمون** > **النشطاء**". راجع قائمة المستخدمين. </li><li>لتعيين التراخيص، اتبع الإرشادات الواردة في [تعيين التراخيص للمستخدمين](../../admin/manage/assign-licenses-to-users.md).</li></ol> |
 
 ## <a name="two-portals-for-setup"></a>مدخلان للإعداد
@@ -93,7 +95,7 @@ ms.locfileid: "66090531"
 | مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))     | استخدم مدخل Microsoft 365 Defender لإعداد وتكوين Defender for Business.<p>ستستخدم مدخل Microsoft 365 Defender من أجل: <ul><li>عرض أجهزتك ونهج حماية الجهاز.</li><li>عرض التهديدات المكتشفة واتخاذ إجراء.</li><li>عرض توصيات الأمان وإدارة إعدادات الأمان.</li></ul><p>لمعرفة المزيد، راجع [بدء استخدام مدخل Microsoft 365 Defender](mdb-get-started.md).        |
 
 > [!TIP]
-> إذا كان لديك Microsoft 365 Business Premium، فلديك أيضا Microsoft Intune. يمكنك استخدام مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) لإدارة الأجهزة وتكوين إعدادات الأمان. لمعرفة المزيد حول Intune، راجع [Microsoft Intune هو موفر MDM وMAM لأجهزتك](/mem/intune/fundamentals/what-is-intune).
+> إذا كان لديك Microsoft 365 Business Premium، فلديك أيضا Microsoft Intune. يمكنك استخدام مركز إدارة Microsoft إدارة نقاط النهاية ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) لإدارة الأجهزة وتكوين إعدادات الأمان. لمعرفة المزيد حول Intune، راجع [Microsoft Intune هو موفر MDM وMAM لأجهزتك](/mem/intune/fundamentals/what-is-intune).
 
 
 ## <a name="next-steps"></a>الخطوات التالية

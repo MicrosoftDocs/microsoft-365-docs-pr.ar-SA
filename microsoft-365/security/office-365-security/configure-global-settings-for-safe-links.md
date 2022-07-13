@@ -19,12 +19,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية عرض الإعدادات العمومية وتكوينها (قائمة "حظر عناوين URL التالية" وحمايتها لتطبيقات Office 365) للارتباطات الآمنة في Microsoft Defender لـ Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c8b40109f20215b86a2264ed1a9f69c8db43bda
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 8914430808a5829732a7ea5ca86081774f7cb121
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487554"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771252"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>تكوين الإعدادات العمومية للارتباطات الآمنة في Microsoft Defender لـ Office 365
 
@@ -39,19 +39,17 @@ ms.locfileid: "66487554"
 
 تعد الارتباطات الآمنة ميزة في [Microsoft Defender لـ Office 365](defender-for-office-365.md) توفر مسح URL لرسائل البريد الإلكتروني الواردة في تدفق البريد، ووقت التحقق من صحة عناوين URL والارتباطات في رسائل البريد الإلكتروني وفي مواقع أخرى. لمزيد من المعلومات، راجع ["الارتباطات الآمنة" في Microsoft Defender لـ Office 365](safe-links.md).
 
-يمكنك تكوين معظم إعدادات الارتباطات الآمنة في نهج الارتباطات الآمنة. للحصول على الإرشادات، راجع [إعداد نهج الارتباطات الآمنة في Microsoft Defender لـ Office 365](set-up-safe-links-policies.md).
+يمكنك تكوين معظم إعدادات الارتباطات الآمنة في نهج الارتباطات الآمنة، بما في ذلك [إعدادات الارتباطات الآمنة لتطبيقات Office المدعومة](safe-links.md#safe-links-settings-for-office-apps). للحصول على الإرشادات، راجع [إعداد نهج الارتباطات الآمنة في Microsoft Defender لـ Office 365](set-up-safe-links-policies.md).
 
 ولكن، تستخدم "الارتباطات الآمنة" أيضا الإعدادات العمومية التالية التي تقوم بتكوينها خارج نهج "الارتباطات الآمنة" نفسها:
 
 - **قائمة "حظر عناوين URL" التالية**. ينطبق هذا الإعداد على كافة المستخدمين المضمنين في أي نهج ارتباطات آمنة نشطة. لمزيد من المعلومات، راجع [قائمة "حظر عناوين URL التالية" للارتباطات الآمنة](safe-links.md#block-the-following-urls-list-for-safe-links)
 
-- حماية الارتباطات الآمنة لتطبيقات Office 365. تنطبق هذه الإعدادات على جميع المستخدمين في المؤسسة المرخص لهم Defender لـ Office 365، بغض النظر عما إذا كان المستخدمون مضمنين في نهج الارتباطات الآمنة النشطة أم لا. لمزيد من المعلومات، راجع [إعدادات الارتباطات الآمنة لتطبيقات Office 365](safe-links.md#safe-links-settings-for-office-365-apps).
-
 يمكنك تكوين إعدادات "الارتباطات الآمنة" العمومية في مدخل Microsoft 365 Defender أو في PowerShell (Exchange Online PowerShell لمؤسسات Microsoft 365 المؤهلة التي لها علب بريد في Exchange Online؛ وEOP PowerShell مستقل للمؤسسات دون Exchange Online علب البريد، ولكن مع Microsoft Defender لـ Office 365 اشتراكات الوظائف الإضافية).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>ما الذي تحتاج إلى معرفته قبل البدء؟
 
-- على الرغم من عدم وجود نهج افتراضي للارتباطات الآمنة، يوفر نهج الأمان المعين مسبقا **للحماية المضمنة** حماية الارتباطات الآمنة لجميع المستلمين (المستخدمين الذين لم يتم تعريفهم في نهج الارتباطات الآمنة المخصصة). لمزيد من المعلومات، راجع [نهج الأمان التي تم تعيينها مسبقا في EOP Microsoft Defender لـ Office 365](preset-security-policies.md). يمكنك أيضا إنشاء نهج ارتباطات آمنة لتطبيقها على مستخدمين أو مجموعات أو مجالات معينة. للحصول على الإرشادات، راجع [إعداد نهج الارتباطات الآمنة في Microsoft Defender لـ Office 365](set-up-safe-links-policies.md).
+- على الرغم من عدم وجود نهج افتراضي للارتباطات الآمنة، يوفر نهج الأمان المعين مسبقا **للحماية المضمنة** حماية الارتباطات الآمنة لجميع المستلمين (المستخدمين الذين لم يتم تعريفهم في نهج الارتباطات الآمنة المخصصة أو نهج الأمان القياسية أو الصارمة المعينة مسبقا). لمزيد من المعلومات، راجع [نهج الأمان التي تم تعيينها مسبقا في EOP Microsoft Defender لـ Office 365](preset-security-policies.md). يمكنك أيضا إنشاء نهج ارتباطات آمنة لتطبيقها على مستخدمين أو مجموعات أو مجالات معينة. للحصول على الإرشادات، راجع [إعداد نهج الارتباطات الآمنة في Microsoft Defender لـ Office 365](set-up-safe-links-policies.md).
 
 - يمكنك فتح مدخل Microsoft 365 Defender في <https://security.microsoft.com>. للانتقال مباشرة إلى صفحة **"الارتباطات الآمنة** "، استخدم <https://security.microsoft.com/safelinksv2>.
 
@@ -121,42 +119,6 @@ ms.locfileid: "66487554"
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
-
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal"></a>تكوين حماية الارتباطات الآمنة لتطبيقات Office 365 في مدخل Microsoft 365 Defender
-
-تنطبق حماية الارتباطات الآمنة لتطبيقات Office 365 على المستندات في تطبيقات Office لسطح المكتب والأجهزة المحمولة والويب المعتمدة. لمزيد من المعلومات، راجع [إعدادات الارتباطات الآمنة لتطبيقات Office 365](safe-links.md#safe-links-settings-for-office-365-apps).
-
-1. في مدخل Microsoft 365 Defender، <https://security.microsoft.com>انتقل إلى **"نهج التعاون** \> & البريد الإلكتروني **" &** **"الارتباطات الآمنة** **لنهج** \> مخاطر القواعد\>" في قسم **"النهج**". للانتقال مباشرة إلى صفحة **"الارتباطات الآمنة** "، استخدم <https://security.microsoft.com/safelinksv2>.
-
-2. في الصفحة **"ارتباطات آمنة** "، انقر فوق **الإعدادات العمومية**. في **نهج الارتباطات الآمنة لمؤسستك** الذي يظهر، قم بتكوين الإعدادات التالية في **الإعدادات التي تنطبق على المحتوى في قسم تطبيقات Office 365 المعتمدة**:
-
-   - **استخدم "الارتباطات الآمنة" في تطبيقات Office 365**: تحقق من أن التبديل إلى اليسار لتمكين "الارتباطات الآمنة" لتطبيقات Office 365 المدعومة: ![التبديل.](../../media/scc-toggle-on.png)
-
-   - **لا تتعقب عندما ينقر المستخدمون فوق الارتباطات المحمية في تطبيقات Office 365**: انقل التبديل إلى اليسار لتعقب نقرات المستخدم المتعلقة بعناوين URL المحظورة في تطبيقات Office 365 المعتمدة: ![قم بالتبديل.](../../media/scc-toggle-off.png)
-
-   - **لا تسمح للمستخدمين بالنقر فوق عنوان URL الأصلي في تطبيقات Office 365**: تحقق من أن التبديل إلى اليسار لمنع المستخدمين من النقر فوق عنوان URL المحظور الأصلي في تطبيقات Office 365 المعتمدة: ![التبديل.](../../media/scc-toggle-on.png)
-
-   عند الانتهاء، انقر فوق **حفظ**.
-
-### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>تكوين حماية الارتباطات الآمنة لتطبيقات Office 365 في PowerShell
-
-إذا كنت تفضل استخدام PowerShell لتكوين حماية الارتباطات الآمنة لتطبيقات Office 365، فاستخدم بناء الجملة التالي في Exchange Online PowerShell أو Exchange Online Protection PowerShell:
-
-```powershell
-Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowClickThrough <$true | $false>] [-TrackClicks <$true | $false>]
-```
-
-يقوم هذا المثال بتكوين الإعدادات التالية لحماية الارتباطات الآمنة في تطبيقات Office 365:
-
-- الارتباطات الآمنة لتطبيقات Office 365 قيد التشغيل (لا نستخدم المعلمة _EnableSafeLinksForO365Clients_، والقيمة الافتراضية هي $true).
-- يتم تعقب نقرات المستخدم المتعلقة بعناوين URL المحظورة في تطبيقات Office 365 المدعومة.
-- لا يسمح للمستخدمين بالنقر عبر عنوان URL المحظور الأصلي في تطبيقات Office 365 المعتمدة (لا نستخدم المعلمة _AllowClickThrough_، والقيمة الافتراضية $false).
-
-```powershell
-Set-AtpPolicyForO365 -TrackClicks $true
-```
-
-للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>كيف تعرف أن هذه الإجراءات تعمل؟
 

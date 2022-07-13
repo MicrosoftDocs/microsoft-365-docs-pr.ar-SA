@@ -17,12 +17,12 @@ ms.custom:
 description: يمكن للمسؤولين التعرف على نهج مكافحة التصيد الاحتيالي المتوفرة في Exchange Online Protection (EOP) Microsoft Defender لـ Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a1265e70c0d22182e8ee4db865eeb53ac8168b7
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: cb33af08174890565994ffc253cf2332c01c31eb
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115884"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66770988"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>نهج مكافحة التصيد الاحتيالي في Microsoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "66115884"
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-تتوفر نهج تكوين إعدادات الحماية من التصيد الاحتيالي في المؤسسات Microsoft 365 مع علب بريد Exchange Online، والمؤسسات المستقلة Exchange Online Protection (EOP) دون علب بريد Exchange Online، و Microsoft Defender لـ Office 365 المؤسسات.
+تتوفر نهج تكوين إعدادات الحماية من التصيد الاحتيالي في مؤسسات Microsoft 365 مع علب بريد Exchange Online، والمؤسسات المستقلة Exchange Online Protection (EOP) بدون علب بريد Exchange Online، و Microsoft Defender لـ Office 365 المؤسسات.
 
 تتضمن أمثلة المؤسسات Microsoft Defender لـ Office 365 ما يلي:
 
@@ -50,7 +50,7 @@ ms.locfileid: "66115884"
 |إنشاء نهج مخصصة|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
 |إعدادات النهج الشائعة<sup>\*</sup>|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
 |إعدادات تزييف هوية|![علامة الاختيار.](../../media/checkmark.png)|![علامة الاختيار.](../../media/checkmark.png)|
-|تلميح الأمان جهة الاتصال الأولى|![علامة الاختيار.](../../media/checkmark.png)|![علامة اختيار](../../media/checkmark.png)|
+|تلميح أمان الاتصال الأول|![علامة الاختيار.](../../media/checkmark.png)|![علامة اختيار](../../media/checkmark.png)|
 |إعدادات الانتحال||![علامة اختيار](../../media/checkmark.png)|
 |حدود التصيد الاحتيالي المتقدمة||![علامة اختيار](../../media/checkmark.png)|
 
@@ -77,7 +77,7 @@ ms.locfileid: "66115884"
 
   - **المستخدمون**: علبة بريد واحدة أو أكثر أو مستخدمو بريد أو جهات اتصال بريد في مؤسستك.
   - **المجموعات**: مجموعة واحدة أو أكثر في مؤسستك.
-  - **المجالات**: مجال واحد أو أكثر من [المجالات المقبولة التي تم تكوينها](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) في Microsoft 365.
+  - **المجالات**: مجال واحد أو أكثر من [المجالات المقبولة المكونة](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) في Microsoft 365.
 
   - **استبعاد هؤلاء المستخدمين والمجموعات والمجالات**: استثناءات للنهج. تشبه الإعدادات والسلوك الشروط تماما:
     - **المستخدمون**
@@ -92,9 +92,9 @@ ms.locfileid: "66115884"
   > - المستلم هو: romain@contoso.com
   > - المستلم هو عضو في: المديرين التنفيذيين
   >
-  > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
+  > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعة المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
   >
-  > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
+  > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعة المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
 
 ## <a name="spoof-settings"></a>إعدادات تزييف هوية
 
@@ -142,23 +142,23 @@ ms.locfileid: "66115884"
 
 لمزيد من المعلومات، راجع [تحديد الرسائل المشبوهة في Outlook.com Outlook على ويب](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
-## <a name="first-contact-safety-tip"></a>تلميح الأمان جهة الاتصال الأولى
+## <a name="first-contact-safety-tip"></a>تلميح أمان الاتصال الأول
 
-تتوفر إعدادات **"إظهار تلميح الأمان جهة الاتصال الأولى**" في مؤسسات EOP Defender لـ Office 365، ولا تعتمد على إعدادات الحماية من الانتحال أو التحليل الذكي للانتحال. يتم عرض تلميح الأمان للمستلمين في السيناريوهات التالية:
+تتوفر إعدادات **تلميح أمان جهة الاتصال "إظهار" الأولى** في مؤسسات EOP Defender لـ Office 365، ولا تعتمد على إعدادات الحماية من الانتحال أو التحليل الذكي للانتحال. يظهر تلميح الأمان للمستلمين في السيناريوهات التالية:
 
 - في المرة الأولى التي يحصلون فيها على رسالة من مرسل
 - لا يحصلون غالبا على رسائل من المرسل.
 
-:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="تلميح الأمان جهة الاتصال الأولى للرسائل مع مستلم واحد" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
+:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="تلميح أمان جهة الاتصال الأولى للرسائل التي تتضمن مستلما واحدا" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
-:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="تلميح الأمان جهة الاتصال الأولى للرسائل التي تحتوي على عدة مستلمين" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
+:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="تلميح أمان الاتصال الأول للرسائل التي تحتوي على عدة مستلمين" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
 تضيف هذه الإمكانية طبقة إضافية من الحماية الأمنية ضد هجمات الانتحال المحتملة، لذلك نوصي بتشغيلها.
 
-تستبدل تلميح الأمان جهة الاتصال الأولى أيضا الحاجة إلى إنشاء قواعد تدفق البريد (المعروفة أيضا بقواعد النقل) التي تضيف الرأس المسمى **X-MS-Exchange-EnableFirstContactSafetyTip** بالقيمة **Enable** to messages (على الرغم من أن هذه الإمكانية لا تزال متوفرة).
+يستبدل تلميح أمان جهة الاتصال الأول أيضا الحاجة إلى إنشاء قواعد تدفق البريد (المعروفة أيضا بقواعد النقل) التي تضيف الرأس المسمى **X-MS-Exchange-EnableFirstContactSafetyTip** بالقيمة **"تمكين** للرسائل" (على الرغم من أن هذه الإمكانية لا تزال متوفرة).
 
 > [!NOTE]
-> إذا كانت الرسالة تحتوي على عدة مستلمين، سواء تم عرض التلميح ولمن يستند إلى نموذج غالبية. إذا لم يتلق معظم المستلمين رسائل من المرسل أو لم يتلقواها في أغلب الأحيان، فسيتلقى المستلمون المتأثرون **بعض الأشخاص الذين تلقوا هذه الرسالة...** تلميح. إذا كنت قلقا من أن هذا السلوك يعرض عادات الاتصال لأحد المستلمين إلى مستلم آخر، يجب عدم تمكين جهة الاتصال الأولى تلميح الأمان والاستمرار في استخدام قواعد تدفق البريد بدلا من ذلك.
+> إذا كانت الرسالة تحتوي على عدة مستلمين، سواء تم عرض التلميح ولمن يستند إلى نموذج غالبية. إذا لم يتلق معظم المستلمين رسائل من المرسل أو لم يتلقواها في أغلب الأحيان، فسيتلقى المستلمون المتأثرون **بعض الأشخاص الذين تلقوا هذه الرسالة...** تلميح. إذا كنت قلقا من أن هذا السلوك يعرض عادات الاتصال لأحد المستلمين للآخر، يجب عدم تمكين تلميح أمان جهة الاتصال الأول والاستمرار في استخدام قواعد تدفق البريد بدلا من ذلك.
 
 ## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>الإعدادات الحصرية في نهج مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365
 

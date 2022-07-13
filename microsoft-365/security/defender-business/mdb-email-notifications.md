@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b6ffc1325eb71bf366761545c8e21bfe5da3b4fa
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 62f21a13578850b1d66f7ff26b0b360adecb7875
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090091"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66770910"
 ---
 # <a name="set-up-email-notifications"></a>إعداد إعلامات البريد الإلكتروني
 
@@ -46,7 +46,7 @@ ms.locfileid: "66090091"
 > 
 > تعد إعلامات البريد الإلكتروني طريقة ملائمة للمساعدة في إبقاء فريق الأمان على علم، في الوقت الحقيقي. ولكن هناك آخرون! على سبيل المثال، كلما قام فريق الأمان بتسجيل الدخول إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، سيرى البطاقات التي تسلط الضوء على التهديدات والتنبيهات والثغرات الأمنية الجديدة. تم تصميم Defender for Business لتسليط الضوء على المعلومات المهمة التي يهتم بها فريق الأمان بمجرد تسجيل الدخول.
 > 
-> يمكن لفريق الأمان أيضا اختيار **"الحوادث"** في جزء التنقل لعرض المعلومات. لمعرفة المزيد، راجع [عرض الحوادث وإدارتها في Microsoft Defender for Business](mdb-view-manage-incidents.md).
+> يمكن لفريق الأمان أيضا اختيار **"الحوادث"** في جزء التنقل لعرض المعلومات. لمعرفة المزيد، راجع [عرض الحوادث وإدارتها في Defender for Business](mdb-view-manage-incidents.md).
 
 ## <a name="view-and-edit-email-notifications"></a>عرض إعلامات البريد الإلكتروني وتحريرها
 
@@ -71,4 +71,4 @@ ms.locfileid: "66090091"
 
 تابع إلى:
 
-- [الخطوة 4: إلحاق الأجهزة Microsoft Defender for Business](mdb-onboard-devices.md)
+- [الخطوة 4: إلحاق الأجهزة ب Defender for Business](mdb-onboard-devices.md)

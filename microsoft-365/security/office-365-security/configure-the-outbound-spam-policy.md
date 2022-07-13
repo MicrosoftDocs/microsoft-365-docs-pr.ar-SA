@@ -19,12 +19,12 @@ ms.custom:
 description: يمكن للمسؤولين معرفة كيفية عرض نهج البريد العشوائي الصادرة وإنشاءها وتعديلها وحذفها في Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 690d4def4081812653cb533765f6c61cca7d1e90
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 3c3c6fd32d03e5df84d35d399d963c28c3d745a6
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115818"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772073"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>تكوين تصفية البريد العشوائي الصادر في EOP
 
@@ -35,15 +35,15 @@ ms.locfileid: "66115818"
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-في المؤسسات Microsoft 365 التي لها علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، يتم تلقائيا التحقق من رسائل البريد الإلكتروني الصادرة التي يتم إرسالها عبر EOP بحثا عن البريد العشوائي ونشاط الإرسال غير العادي.
+في مؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، يتم تلقائيا التحقق من رسائل البريد الإلكتروني الصادرة التي يتم إرسالها عبر EOP بحثا عن البريد العشوائي ونشاط الإرسال غير المعتاد.
 
-يشير البريد العشوائي الصادر من مستخدم في مؤسستك عادة إلى حساب تم اختراقه. يتم وضع علامة على الرسائل الصادرة المشبوهة كبرم عشوائي (بغض النظر عن مستوى الثقة في البريد العشوائي أو SCL) ويتم توجيهها من خلال [تجمع التسليم عالي المخاطر](high-risk-delivery-pool-for-outbound-messages.md) للمساعدة في حماية سمعة الخدمة (أي الحفاظ على Microsoft 365 خوادم البريد الإلكتروني المصدر بعيدا عن قوائم حظر IP). يتم إعلام المسؤولين تلقائيا بنشاط البريد الإلكتروني الصادر المشبوه والمستخدمين المحظورين عبر [نهج التنبيه](../../compliance/alert-policies.md).
+يشير البريد العشوائي الصادر من مستخدم في مؤسستك عادة إلى حساب تم اختراقه. يتم وضع علامة على الرسائل الصادرة المشبوهة كبرم عشوائي (بغض النظر عن مستوى الثقة في البريد العشوائي أو SCL) ويتم توجيهها عبر [تجمع التسليم عالي المخاطر](high-risk-delivery-pool-for-outbound-messages.md) للمساعدة في حماية سمعة الخدمة (أي الاحتفاظ بخوادم البريد الإلكتروني المصدر ل Microsoft 365 بعيدا عن قوائم حظر IP). يتم إعلام المسؤولين تلقائيا بنشاط البريد الإلكتروني الصادر المشبوه والمستخدمين المحظورين عبر [نهج التنبيه](../../compliance/alert-policies.md).
 
 يستخدم EOP نهج البريد العشوائي الصادرة كجزء من الدفاع العام لمؤسستك ضد البريد العشوائي. لمزيد من المعلومات، راجع [الحماية من البريد العشوائي](anti-spam-protection.md).
 
 يمكن للمسؤولين عرض نهج البريد العشوائي الصادر الافتراضي وتحريره وتكوينه (وليس حذفه). لمزيد من التفاصيل، يمكنك أيضا إنشاء نهج بريد عشوائي صادر مخصصة تنطبق على مستخدمين محددين أو مجموعات أو مجالات معينة في مؤسستك. دائما ما يكون للنهج المخصصة الأسبقية على النهج الافتراضي، ولكن يمكنك تغيير الأولوية (ترتيب التشغيل) للنهج المخصصة.
 
-يمكنك تكوين نهج البريد العشوائي الصادرة في مدخل Microsoft 365 Microsoft 365 Defender أو في PowerShell (Exchange Online PowerShell للمؤسسات Microsoft 365 مع علب بريد في Exchange Online؛ EOP PowerShell مستقل ل المؤسسات التي لا تحتوي على علب بريد Exchange Online).
+يمكنك تكوين نهج البريد العشوائي الصادرة في مدخل Microsoft 365 Microsoft 365 Defender أو في PowerShell (Exchange Online PowerShell لمؤسسات Microsoft 365 مع علب بريد في Exchange Online؛ EOP PowerShell مستقل للمؤسسات دون Exchange Online علب البريد).
 
 العناصر الأساسية لنهج البريد العشوائي الصادر في EOP هي:
 
@@ -70,7 +70,7 @@ ms.locfileid: "66115818"
 
 - يمكنك فتح مدخل Microsoft 365 Defender في <https://security.microsoft.com>. للانتقال مباشرة إلى صفحة **إعدادات مكافحة البريد العشوائي** ، استخدم <https://security.microsoft.com/antispam>.
 
-- للاتصال Exchange Online PowerShell، راجع [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell مستقل، راجع [الاتصال إلى Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- للاتصال Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell المستقل، راجع [الاتصال Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - يجب تعيين أذونات لك في **Exchange Online** قبل أن تتمكن من تنفيذ الإجراءات الواردة في هذه المقالة:
   - لإضافة نهج البريد العشوائي الصادرة وتعديلها وحذفها، يجب أن تكون عضوا في مجموعات دور مسؤول **الأمان** أو **إدارة المؤسسة**.
@@ -122,9 +122,9 @@ ms.locfileid: "66115818"
    > - المستلم هو: romain@contoso.com
    > - المستلم هو عضو في: المديرين التنفيذيين
    >
-   > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
+   > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعة المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
    >
-   > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
+   > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعة المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
 
    عند الانتهاء، انقر فوق **"التالي**".
 

@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: b7a911991935407f9d512213c9d76c92106b74c8
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 9330584979bc6c47204809a0408be7950c0d5612
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089551"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772806"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>الاستجابة للتهديدات وتخفيفها في Microsoft Defender for Business
 
@@ -50,10 +50,10 @@ ms.locfileid: "66089551"
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="لقطة شاشة للإجراءات المتوفرة لجهاز محدد":::
 
-6. حدد إجراء متوفرا. على سبيل المثال، يمكنك اختيار **تشغيل فحص مكافحة الفيروسات**، مما سيؤدي إلى برنامج الحماية من الفيروسات من Microsoft Defender لبدء فحص سريع على الجهاز. أو، يمكنك تحديد **بدء التحقيق التلقائي** لتشغيل تحقيق تلقائي على الجهاز.
+6. حدد إجراء متوفرا. على سبيل المثال، قد تختار **تشغيل فحص مكافحة الفيروسات**، مما سيؤدي إلى بدء برنامج الحماية من الفيروسات من Microsoft Defender عملية فحص سريعة على الجهاز. أو، يمكنك تحديد **بدء التحقيق التلقائي** لتشغيل تحقيق تلقائي على الجهاز.
 
 ## <a name="next-steps"></a>الخطوات التالية
 
 - [مراجعة إجراءات المعالجة في مركز الصيانة](mdb-review-remediation-actions.md)
-- [إدارة الأجهزة في Microsoft Defender for Business](mdb-manage-devices.md)
-- [عرض الحوادث وإدارتها في Microsoft Defender for Business](mdb-view-manage-incidents.md)
+- [إدارة الأجهزة في Defender for Business](mdb-manage-devices.md)
+- [عرض الحوادث وإدارتها في Defender for Business](mdb-view-manage-incidents.md)

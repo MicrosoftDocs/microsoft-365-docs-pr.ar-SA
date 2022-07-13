@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: f9efef4d1b63f35ac544e99a44df0fd99256820a
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: dd4dfa5bf173f0109eb9da993a18930c5b67f667
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089639"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771362"
 ---
 # <a name="what-is-microsoft-defender-for-business"></a>ما هو Microsoft Defender for Business؟
 
-Microsoft Defender for Business هو حل أمان نقطة نهاية جديد تم تصميمه خصيصا للأعمال الصغيرة والمتوسطة الحجم (ما يصل إلى 300 موظف). باستخدام حل أمان نقطة النهاية هذا، تكون أجهزة شركتك محمية بشكل أفضل من برامج الفدية الضارة والبرامج الضارة والتصيد الاحتيالي والتهديدات الأخرى. 
+Defender for Business هو حل أمان نقطة نهاية جديد تم تصميمه خصيصا للأعمال الصغيرة والمتوسطة الحجم (ما يصل إلى 300 موظف). باستخدام حل أمان نقطة النهاية هذا، تكون أجهزة شركتك محمية بشكل أفضل من برامج الفدية الضارة والبرامج الضارة والتصيد الاحتيالي والتهديدات الأخرى. 
 
 تصف هذه المقالة ما هو مضمن في Defender for Business، مع ارتباطات لمعرفة المزيد حول هذه الميزات والقدرات.
 
@@ -39,7 +39,7 @@ Microsoft Defender for Business هو حل أمان نقطة نهاية جديد 
 
 ## <a name="whats-included-with-defender-for-business"></a>ما هو مضمن مع Defender for Business
 
-:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business الميزات والقدرات.":::
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="ميزات وإمكانات Defender for Business.":::
 
 باستخدام Defender for Business، يمكنك المساعدة في حماية الأجهزة والبيانات التي تستخدمها شركتك مع:
 
@@ -47,34 +47,33 @@ Microsoft Defender for Business هو حل أمان نقطة نهاية جديد 
 
 - **حل أمان سهل الاستخدام**. يقدم Defender for Business تجارب مبسطة ترشدك إلى العمل مع التوصيات والرؤى حول أمان نقاط النهاية الخاصة بك. لا توجد معرفة متخصصة مطلوبة، لأن Defender for Business يوفر التكوين المستند إلى المعالج ونهج الأمان الافتراضية المصممة للمساعدة في حماية أجهزة شركتك من اليوم الأول.
 
-- **المرونة في بيئتك**. يمكن ل Defender for Business العمل مع بيئة عملك، سواء كنت تستخدم Microsoft Intune أو كنت تستخدم Microsoft Cloud للمرة الجديدة. يعمل Defender for Business مع المكونات المضمنة في Windows، ومع تطبيقات لأجهزة macOS وiOS وAndroid.
+- **المرونة في بيئتك**. يمكن ل Defender for Business العمل مع بيئة عملك، سواء كنت تستخدم Microsoft Intune أو كنت تستخدم Microsoft Cloud للمرة الجديدة. يعمل Defender for Business مع المكونات المضمنة في Windows، ومع تطبيقات أجهزة Mac وiOS وAndroid.
 
-- **التكامل مع Microsoft 365 Lighthouse**. إذا كنت موفر خدمة مدارة (MSP) باستخدام [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)، فستتوفر المزيد من القدرات. إذا كان عملاؤك يستخدمون Microsoft 365 Business Premium مع Defender for Business، يمكنك عرض حوادث الأمان والتنبيهات عبر مستأجري العملاء الذين تم إلحاقهم Microsoft 365 Lighthouse.
+- **التكامل مع Microsoft 365 Lighthouse وأدوات RMM وبرامج PSA**. إذا كنت موفر حلول سحابة Microsoft (CSP) باستخدام [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)، يمكنك عرض حوادث الأمان والتنبيهات عبر مستأجري عملائك (راجع [Microsoft 365 Lighthouse و Defender for Business](mdb-lighthouse-integration.md)). إذا كنت موفر خدمة مدارة من Microsoft (MSP)، يمكنك دمج Defender for Business مع أدوات المراقبة والإدارة عن بعد (RMM) وبرامج أتمتة الخدمة الاحترافية (PSA) (راجع [موارد Defender for Business وMSP](mdb-partners.md)).
 
 ## <a name="how-to-use-this-guide"></a>كيفية استخدام هذا الدليل
 
 **يهدف هذا الدليل إلى**:
 
-- **تزويدك بنظرة عامة حول Defender for Business** حتى تعرف ما هو مضمن وكيفية عمله
-   - استخدام هذه المقالة كنقطة بداية
-   - [مقارنة ميزات الأمان في Microsoft Defender for Business بالخطط الأخرى](compare-mdb-m365-plans.md) 
-   - [تعرف على كيفية الحصول على Microsoft Defender for Business](get-defender-business.md)
+- **قدم لك نظرة عامة على Defender for Business** حتى تعرف ما هو مضمن وكيفية عمله. استخدم هذه المقالة كنقطة بداية.
+   - [مقارنة ميزات الأمان في Defender for Business بالخطط الأخرى](compare-mdb-m365-plans.md).
+   - [تعرف على كيفية الحصول على Defender for Business](get-defender-business.md).
 
-- **التنقل في إعداد قدرات الحماية من التهديدات وتكوينها** 
-   - [استخدام دليل المبادئ التجريبي: Microsoft Defender for Business](trial-playbook-defender-business.md)
-   - [تعرف على عملية التكوين المبسطة](mdb-simplified-configuration.md)
-   - [تعرف على كيفية إعداد وتكوين Defender for Business](mdb-setup-configuration.md)
+- **تعرف على كيفية إعداد قدرات الحماية من التهديدات**. 
+   - [استخدم دليل المبادئ التجريبي: Defender for Business](trial-playbook-defender-business.md).
+   - [تعرف على عملية التكوين المبسطة](mdb-simplified-configuration.md).
+   - [تعرف على كيفية إعداد وتكوين Defender for Business](mdb-setup-configuration.md).
 
-- **مساعدتك على البدء باستخدام Defender for Business**، بدءا من مدخل Microsoft 365 Defender 
-   - [التنقل في مدخل Microsoft 365 Defender](mdb-get-started.md)
-   - [جرب السيناريوهات والبرامج التعليمية والمحاكاة](mdb-tutorials.md)
+- **ساعدك على البدء باستخدام Defender for Business**، بدءا من مدخل Microsoft 365 Defender. 
+   - [انتقل إلى مدخل Microsoft 365 Defender](mdb-get-started.md).
+   - [جرب السيناريوهات والبرامج التعليمية والمحاكاة](mdb-tutorials.md).
 
-- **توفير إرشادات حول إدارة الأجهزة ونهج الأمان**
-   - [مراقبة الأجهزة أو إدارتها](mdb-manage-devices.md)
-   - [عرض نهج الأمان أو تحريرها](mdb-view-edit-policies.md)
+- **توفير إرشادات حول إدارة الأجهزة ونهج الأمان**.
+   - [مراقبة الأجهزة أو إدارتها](mdb-manage-devices.md).
+   - [عرض نهج الأمان أو تحريرها](mdb-view-edit-policies.md).
 
 ## <a name="next-steps"></a>الخطوات التالية
 
 - [جرب الدليل التفاعلي: بدء استخدام Defender for Business](https://aka.ms/MDB-GetStartedGuide)
-- [تعرف على المزيد حول عملية التكوين المبسطة في Microsoft Defender for Business](mdb-simplified-configuration.md)
-- [تعرف على كيفية الحصول على Microsoft Defender for Business](get-defender-business.md)
+- [تعرف على المزيد حول عملية التكوين المبسطة في Defender for Business](mdb-simplified-configuration.md)
+- [تعرف على كيفية الحصول على Defender for Business](get-defender-business.md)

@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 276bcd6616abe3cf68731bad6f62b3d996557719
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 796320ce2a9b51a01663b553317318e387814d37
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490111"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772654"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business"></a>Microsoft 365 Lighthouse و Microsoft Defender for Business
 
@@ -34,14 +34,16 @@ ms.locfileid: "66490111"
 
 ## <a name="learn-more-about-microsoft-365-lighthouse"></a>تعرف على المزيد حول Microsoft 365 Lighthouse
 
-يمكن Microsoft 365 Lighthouse موفري خدمات السحابة من Microsoft من تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع لعملاء الأعمال الصغيرة والمتوسطة الحجم الذين يستخدمون أحد الاشتراكات التالية:
+يتيح Microsoft 365 Lighthouse ل Microsoft CSPs تأمين وإدارة الأجهزة والبيانات والمستخدمين على نطاق واسع للعملاء الذين يستخدمون أحد الاشتراكات التالية:
 
 - [Microsoft Defender for Business](/security/defender-business/mdb-overview.md)
 - [Microsoft 365 Business Premium](../../admin/admin-overview/what-is-microsoft-365.md)
 - [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md) (التي تتضمن الآن [Microsoft Defender لنقطة النهاية الخطة 1](../defender-endpoint/defender-endpoint-plan-1.md))
+- [Microsoft 365 E5](../../enterprise/microsoft-365-overview.md) (التي تتضمن [Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)، [Defender لـ Office 365 الخطة 2](../office-365-security/defender-for-office-365.md)، [و Defender for Identity](/defender-for-identity/what-is)، [وقدرات الأمان الأخرى](../defender/microsoft-365-defender.md))
+- [Windows 365 Business أو Enterprise](/windows-365/overview)
 
 لمعرفة المزيد، راجع [نظرة عامة على Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md).
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[Microsoft Defender for Business وموارد موفر الخدمة المدارة](mdb-partners.md)
+[Microsoft Defender for Business وموارد موفر الخدمة المدارة](mdb-partners.md) (يوفر معلومات حول تكامل RMM وPSA ل MSPs)

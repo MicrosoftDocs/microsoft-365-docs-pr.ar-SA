@@ -15,16 +15,16 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5b321b15e608c96a18e756c2f6634b5fb4f69e6f
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: a21c3b1779c3a8ffa32ca4bbd777b377536ec870
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089451"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772610"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>تعيين الأدوار والأذونات في Microsoft Defender for Business
 
-لتنفيذ المهام في مدخل Microsoft 365 Defender، مثل تكوين Microsoft Defender for Business أو عرض التقارير أو اتخاذ إجراءات استجابة بشأن التهديدات المكتشفة، يجب تعيين الأذونات المناسبة لفريق الأمان. يتم منح الأذونات من خلال الأدوار التي يتم تعيينها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) أو في [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
+لتنفيذ المهام في مدخل Microsoft 365 Defender، مثل تكوين Defender for Business أو عرض التقارير أو اتخاذ إجراءات استجابة بشأن التهديدات المكتشفة، يجب تعيين الأذونات المناسبة لفريق الأمان. يتم منح الأذونات من خلال الأدوار التي يتم تعيينها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) أو في [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal). 
 
 ## <a name="what-to-do"></a>ما يجب فعله
 
@@ -39,9 +39,9 @@ ms.locfileid: "66089451"
 
 | مستوى الأذونات | الوصف |
 |:---|:---|
-| **المسؤولون العموميون** (يشار إليهم أيضا باسم المسؤولين العموميين) <br/><br/> *وكأفضل ممارسة، قم بتحديد عدد المسؤولين العموميين.* | يمكن للمسؤولين العموميين تنفيذ جميع أنواع المهام. الشخص الذي سجل شركتك للحصول على Microsoft 365 أو Microsoft Defender for Business هو مسؤول عام بشكل افتراضي. <br/><br/> يمكن للمسؤولين العموميين الوصول/تغيير الإعدادات عبر جميع بوابات Microsoft 365، مثل: <br/>- مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) |
-| **مسؤولو الأمان** (يشار إليهم أيضا باسم مسؤولي الأمان) | يمكن لمسؤولي الأمان تنفيذ المهام التالية: <br/>- عرض نهج الأمان وإدارتها <br/>- عرض تهديدات الأمان والتنبيهات وإدارتها (تتضمن هذه الأنشطة اتخاذ إجراءات الاستجابة على نقاط النهاية) <br/>- عرض معلومات وتقارير الأمان |
-| **قارئ الأمان** | يمكن لقارئي الأمان تنفيذ المهام التالية: <br/>- عرض نهج الأمان <br/>- عرض التهديدات والتنبيهات الأمنية <br/>- عرض معلومات وتقارير الأمان  |
+| **المسؤولون العموميون** (يشار إليهم أيضا باسم المسؤولين العموميين) <p> *وكأفضل ممارسة، قم بتحديد عدد المسؤولين العموميين.* | يمكن للمسؤولين العموميين تنفيذ جميع أنواع المهام. الشخص الذي سجل شركتك في Microsoft 365 أو Defender for Business هو مسؤول عام بشكل افتراضي. <p> يمكن للمسؤولين العموميين تعديل الإعدادات عبر جميع بوابات Microsoft 365، مثل: <ul><li>مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))</li><li>مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))</li></ul> |
+| **مسؤولو الأمان** (يشار إليهم أيضا باسم مسؤولي الأمان) | يمكن لمسؤولي الأمان تنفيذ المهام التالية: <ul><li>عرض نهج الأمان وإدارتها</li><li>عرض تهديدات الأمان وتنبيهاته وإدارتها (تتضمن هذه الأنشطة اتخاذ إجراءات الاستجابة على نقاط النهاية)</li><li>عرض معلومات وتقارير الأمان</li></ul> |
+| **قارئ الأمان** | يمكن لقارئي الأمان تنفيذ المهام التالية:<ul><li>عرض نهج الأمان</li><li>عرض التهديدات والتنبيهات الأمنية</li><li>عرض معلومات وتقارير الأمان</li></ul>  |
 
 
 ## <a name="view-or-edit-role-assignments"></a>عرض تعيينات الأدوار أو تحريرها
@@ -59,7 +59,7 @@ ms.locfileid: "66089451"
    > [!IMPORTANT]
    > توصي Microsoft بمنح الأشخاص حق الوصول إلى ما يحتاجون إليه فقط لأداء مهامهم. نطلق على هذا المفهوم *أقل امتياز* للأذونات. لمعرفة المزيد، راجع [أفضل الممارسات للوصول الأقل امتيازا للتطبيقات](/azure/active-directory/develop/secure-least-privileged-access). 
 
-4. في الجزء الجانبي، حدد "**إدارة الأعضاء" في ارتباط Azure AD**. ينقلك هذا الإجراء إلى Azure Active Directory (Azure AD) حيث يمكنك عرض تعيينات الأدوار وإدارتها.
+4. في الجزء الجانبي، حدد "**إدارة الأعضاء" في ارتباط Azure AD**. ينقلك هذا الإجراء إلى Azure Active Directory (Azure AD)، حيث يمكنك عرض تعيينات الأدوار وإدارتها.
 
 5. حدد مستخدما لفتح ملف التعريف الخاص به، ثم اختر **الأدوار المعينة**.
 
@@ -72,7 +72,7 @@ ms.locfileid: "66089451"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-تابع إلى:
+الانتقال إلى:
 
 - [الخطوة 3: إعداد إعلامات البريد الإلكتروني](mdb-email-notifications.md)
-- [الخطوة 4: إلحاق الأجهزة Microsoft Defender for Business](mdb-onboard-devices.md)
+- [الخطوة 4: إلحاق الأجهزة ب Defender for Business](mdb-onboard-devices.md)

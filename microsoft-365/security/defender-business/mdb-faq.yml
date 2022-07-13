@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: الأسئلة المتداولة حول Microsoft Defender for Business
+  title: Microsoft Defender for Business الأسئلة المتداولة
   description: احصل على إجابات للأسئلة حول Defender for Business، وهو حل أمان عبر الإنترنت للشركات الصغيرة والمتوسطة الحجم.
   search.appverid: MET150
   author: denisebmsft
@@ -16,12 +16,12 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 308ad086678b398c3bef13c1503717f04978415a
-  ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+  ms.openlocfilehash: 3b11cd3fa74d822baf0d4662fea43e53c6e5ef3e
+  ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
   ms.translationtype: MT
   ms.contentlocale: ar-SA
-  ms.lasthandoff: 06/04/2022
-  ms.locfileid: "65892484"
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66772183"
 title: Microsoft Defender for Business - الأسئلة والأجوبة المتداولة
 summary: >
   استخدم هذه المقالة للحصول على إجابات للأسئلة التي قد تكون لديك حول Defender for Business.
@@ -29,13 +29,13 @@ sections:
 - name: عام
   questions:
   - question: هل يمكنني تمديد إصدار المعاينة التجريبي من Defender for Business؟
-    answer: "نظرا لأن Defender for Business متوفر الآن بشكل عام، فقد انتهى برنامج المعاينة ولا يمكن تمديده. \n\nراجع [Get Microsoft Defender for Business](get-defender-business.md).\n"
-  - question: كيف يمكنني تجربة Defender for Business أو شرائه؟
+    answer: "نظرا لأن Defender for Business متوفر الآن بشكل عام، فقد انتهى برنامج المعاينة ولا يمكن تمديده. \n\nراجع [Get Defender for Business](get-defender-business.md).\n"
+  - question: كيف أعمل تجربة Defender for Business أو شرائه؟
     answer: >
-      انتقل إلى صفحة ويب [Microsoft Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) ، وحدد خيار تجربة Defender for Business أو شرائه.
+      انتقل إلى صفحة ويب [Defender for Business](https://www.microsoft.com/security/business/threat-protection/microsoft-defender-business) ، وحدد خيار تجربة Defender for Business أو شرائه.
 
 
-      لمزيد من المعلومات، راجع [الحصول على Microsoft Defender for Business](get-defender-business.md).
+      لمزيد من المعلومات، راجع [Get Defender for Business](get-defender-business.md).
   - question: هل هناك حد لعدد المستخدمين الذين يمكن ترخيصهم ل Defender for Business؟
     answer: >
       تم تصميم Defender for Business للشركات الصغيرة والمتوسطة الحجم التي لديها ما يصل إلى 300 مستخدم. إذا كان لديك أكثر من 300 مستخدم، ففكر في حل المؤسسة، مثل أحد الحلول التالية:
@@ -48,11 +48,11 @@ sections:
       - [Microsoft 365 للمؤسسات](/microsoft-365/enterprise/microsoft-365-overview)
   - question: كم عدد الأجهزة التي يمكنني إلحاقها وتأمينها باستخدام Defender for Business؟
     answer: >
-      يمكنك إلحاق ما يصل إلى خمسة أجهزة وتأمينها لكل ترخيص مستخدم.
+      يمكنك إلحاق ما يصل إلى خمسة أجهزة عميل وتأمينها لكل ترخيص مستخدم.
   - question: هل يدعم Defender for Business الخوادم؟
-    answer: "سيتوفر دعم الخادم قريبا. سيكون عرض الخادم الجديد هذا شرطا أساسيا لترخيص Microsoft 365 Business Premium أو Microsoft Defender for Business (مستقل).  \n"
-  - question: هل يحمي Defender for Business أجهزة عميل macOS وAndroid وiOS/iPadOS؟
-    answer: "نعم. يدعم Defender for Business الحماية لأجهزة macOS وAndroid وiOS/iPadOS. راجع [الأجهزة الملحقة](mdb-onboard-devices.md).\n\n- يمكنك إلحاق أجهزة macOS باستخدام برنامج نصي محلي في مدخل Microsoft 365 Defender. \n- لإلحاق أجهزة Android وiOS/iPadOS، يجب أن يكون لديك ترخيص ل [Microsoft Intune](/mem/intune/). يتم تضمين Intune في Microsoft 365 Business Premium، ويمكن شراؤه ل Defender for Business (مستقل).\n\nيوجد المزيد من التبسيط لأجهزة macOS وiOS/iPadOS وAndroid على المخطط. \n"
+    answer: "دعم الخادم قيد المعاينة الآن! راجع [كيفية الحصول على خوادم Microsoft Defender for Business (معاينة).](get-defender-business-servers.md)  \n"
+  - question: هل يحمي Defender for Business أجهزة عميل Mac وAndroid وiOS/iPadOS؟
+    answer: "نعم. يدعم Defender for Business الحماية لأجهزة Mac وAndroid وiOS/iPadOS. راجع [الأجهزة الملحقة](mdb-onboard-devices.md).\n\n- يمكنك إلحاق أجهزة Mac باستخدام برنامج نصي محلي في مدخل Microsoft 365 Defender. \n- لإلحاق أجهزة Android وiOS/iPadOS، يجب أن يكون لديك ترخيص [Microsoft Intune](/mem/intune/). يتم تضمين Intune في Microsoft 365 Business Premium، ويمكن شراؤه ل Defender for Business (مستقل).\n\nيوجد المزيد من التبسيط لأجهزة Mac وiOS/iPadOS وAndroid على المخطط. \n"
   - question: هل يمكنني تكوين أكثر من نهج تصفية محتوى ويب واحد في Defender for Business؟
     answer: "حاليا، يدعم Defender for Business سياسة تصفية ويب موحدة واحدة فقط لكل مستأجر Defender for Business. \n\nراجع [إعداد تصفية محتوى ويب](mdb-configure-security-settings.md#set-up-web-content-filtering).\n"
   - question: هل يمكنني استخدام برامج الحماية من الفيروسات/الحماية من البرامج الضارة غير التابعة ل Microsoft مع Defender for Business؟
@@ -62,23 +62,23 @@ sections:
       يتضمن Defender for Business حاليا مجموعة من واجهات برمجة التطبيقات لدعم التقارير المخصصة القوية وموصل Power BI. يمكنك جدولة برنامج نصي PowerShell لإنشاء ملخصات تنفيذية منسقة في HTML، وإرسال هذه الملخصات عبر البريد الإلكتروني. راجع [معلومات مرجع واجهة برمجة التطبيقات](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners).
   - question: أنا شريك Microsoft. هل سأتمكن من إدارة مستأجرين متعددين من لوحة تحكم واحدة، أم سيتعين علي تسجيل الدخول إلى كل مستأجر على حدة؟
     answer: "يتم تمكين Defender for Business في Microsoft 365 Lighthouse للحصول على دعم متعدد المستأجرين في وحدة تحكم واحدة ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). \n\nلمعرفة المزيد، راجع [نظرة عامة على Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-overview).\n"
-  - question: كيف يمكنني تكوين قواعد تقليل الأجزاء المعرضة للهجوم وقدراتها في Defender for Business؟
+  - question: كيف أعمل تكوين قواعد تقليل الأجزاء المعرضة للهجوم وقدراتها في Defender for Business؟
     answer: >
-      التكوين المبسط لقواعد وإمكانيات تقليل الأجزاء المعرضة للهجوم عبر Defender for Business في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) غير مدعوم حتى الآن. إذا كان لديك Microsoft Intune، يمكنك استخدام مركز إدارة نقاط النهاية من Microsoft لتكوين نهج تقليل الأجزاء المعرضة للهجوم. راجع [نهج تقليل الأجزاء المعرضة للهجوم لأمان نقطة النهاية في Intune](/mem/intune/protect/endpoint-security-asr-policy).
-  - question: إذا لم يكن لدي حاليا Microsoft Intune، فهل أحتاج إلى ترخيص آخر لاستخدام الميزات المضمنة في كل من Defender for Business وIntune؟
-    answer: "إذا كان لديك Defender for Business باعتباره اشتراكا مستقلا ولم يكن لديك Intune، يمكنك إلحاق أجهزة Windows وmacOS وتأمينها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). \n \nيمكنك أيضا إدارة نهج حماية الجيل التالي وحماية جدار الحماية في مدخل Microsoft 365 Defender [باستخدام تجربة تكوين مبسطة](mdb-simplified-configuration.md). \n \nلإدارة الإعدادات الأخرى، مثل نهج تقليل الأجزاء المعرضة للهجوم، أو لإلحاق أجهزة أخرى، مثل أجهزة Android أو iOS/iPadOS، ستحتاج إلى Intune. يتم تضمين Intune في Microsoft 365 Business Premium، ويمكن شراؤه لاشتراكات Defender for Business (المستقلة). \n"
+      التكوين المبسط لقواعد وقدرات تقليل الأجزاء المعرضة للهجوم عبر Defender for Business في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) غير مدعوم حتى الآن. إذا كان لديك Microsoft Intune، يمكنك استخدام مركز إدارة Microsoft إدارة نقاط النهاية لتكوين نهج تقليل الأجزاء المعرضة للهجوم. راجع [نهج تقليل الأجزاء المعرضة للهجوم لأمان نقطة النهاية في Intune](/mem/intune/protect/endpoint-security-asr-policy).
+  - question: إذا لم يكن لدي Microsoft Intune حاليا، فهل أحتاج إلى ترخيص آخر لاستخدام الميزات المضمنة في كل من Defender for Business وIntune؟
+    answer: "إذا كان لديك Defender for Business باعتباره اشتراكا مستقلا ولم يكن لديك Intune، يمكنك إلحاق أجهزة Windows وMac وتأمينها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). \n \nيمكنك أيضا إدارة نهج حماية الجيل التالي وحماية جدار الحماية في مدخل Microsoft 365 Defender [مع تجربة تكوين مبسطة](mdb-simplified-configuration.md). \n \nلإدارة الإعدادات الأخرى، مثل نهج تقليل الأجزاء المعرضة للهجوم، أو لإلحاق أجهزة أخرى، مثل أجهزة Android أو iOS/iPadOS، ستحتاج إلى Intune. يتم تضمين Intune في Microsoft 365 Business Premium، ويمكن شراؤه لاشتراكات Defender for Business (المستقلة). \n"
   - question: إذا كنت أستخدم Microsoft 365 Business Premium بالفعل، لماذا أحتاج إلى Defender for Business؟
-    answer: "إذا كان لديك Microsoft 365 Business Premium، فسيتم تضمين Defender for Business في اشتراكك. لمعرفة المزيد، راجع المقالات التالية:\n \n- [نظرة عامة على Defender for Business](mdb-overview.md)\n- [مقارنة Microsoft Defender for Business ب Microsoft 365 Business Premium](compare-mdb-m365-plans.md)\n\nيقوم Defender for Business بتوسيع قدرات الأمان في Microsoft 365 Business Premium مع حماية نقطة النهاية لأجهزة شركتك.\n"
+    answer: "إذا كان لديك Microsoft 365 Business Premium، فسيتم تضمين Defender for Business في اشتراكك. لمعرفة المزيد، راجع المقالات التالية:\n \n- [نظرة عامة على Defender for Business](mdb-overview.md)\n- [مقارنة Defender for Business ب Microsoft 365 Business Premium](compare-mdb-m365-plans.md)\n\nيقوم Defender for Business بتوسيع قدرات الأمان في Microsoft 365 Business Premium مع حماية نقطة النهاية لأجهزة شركتك.\n"
   - question: ما هي الاختلافات بين Defender for Business و Defender لخطط نقطة النهاية 1 و2؟
-    answer: "يوفر كل من Defender for Business و Defender لنقطة النهاية قدرات قوية للحماية من التهديدات لنقاط نهاية شركتك. تم تصميم Defender for Business للشركات الصغيرة والمتوسطة الحجم (ما يصل إلى 300 موظف). مع [عملية تكوين مبسطة](mdb-simplified-configuration.md) [وخيارات إلحاق الجهاز](mdb-onboard-devices.md)، يتيح Defender for Business للعملاء الذين ليس لديهم بالضرورة خلفية أمان إعداد وتكوين واستخدام Defender for Business لحماية أجهزة الشركة.  \n\nلمعرفة المزيد حول الاختلافات، راجع [مقارنة Microsoft Defender for Business ب Microsoft 365 Business Premium](compare-mdb-m365-plans.md).\n"
+    answer: "يوفر كل من Defender for Business و Defender لنقطة النهاية قدرات قوية للحماية من التهديدات لنقاط نهاية شركتك. تم تصميم Defender for Business للشركات الصغيرة والمتوسطة الحجم (ما يصل إلى 300 موظف). مع [عملية تكوين مبسطة](mdb-simplified-configuration.md) [وخيارات إلحاق الجهاز](mdb-onboard-devices.md)، يتيح Defender for Business للعملاء الذين ليس لديهم بالضرورة خلفية أمان إعداد وتكوين واستخدام Defender for Business لحماية أجهزة الشركة.  \n\nلمعرفة المزيد حول الاختلافات، راجع [مقارنة Defender for Business Microsoft 365 Business Premium](compare-mdb-m365-plans.md).\n"
   - question: ماذا يحدث إذا كان لدي مزيج من اشتراكات أمان نقطة النهاية من Microsoft؟
     answer: "*لنفترض أنك قمت بتعيين ترخيص Defender for Business ل 10 مستخدمين، وقمت بتعيين ترخيص الخطة 2 من Defender لنقطة النهاية إلى 10 مستخدمين آخرين. ماذا يحدث إذا كان لديك مزيج من الاشتراكات مثل هذا المثال في المستأجر الخاص بك؟*\n\nيعين اشتراك أمان نقطة نهاية Microsoft الأعلى وظيفية تجربة المستأجر الخاص بك. باستخدام مثالنا، ستكون تجربة المستأجر الخاصة بك هي Defender لنقطة النهاية الخطة 2 لجميع المستخدمين العشرين. **يمكنك الآن الاتصال بالدعم وطلب تجاوز لتجربة المستأجر**. \n\nبالإشارة إلى مثالنا، يمكنك طلب تجاوز للحفاظ على تجربة Defender for Business المبسطة، حتى لو كان لديك بعض تراخيص Defender for Endpoint Plan 2. راجع [الحصول على دعم Microsoft 365 للأعمال](/microsoft-365/admin/get-help-support).\n\nفي الأشهر القادمة، ستتغير الإعدادات الافتراضية. عند حدوث ذلك، سيكون المستأجر الذي له Defender for Business افتراضيا إلى نكهة Defender for Business، على نطاق المستأجر. سيساعد هذا السلوك الافتراضي على ضمان الحفاظ على التجربة المبسطة لعملاء الأعمال الصغيرة والمتوسطة الحجم.\n\nللحصول على تفاصيل حول التراخيص وشروط المنتج، راجع [شروط الترخيص والمنتج لاشتراكات Microsoft 365](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).\n"
   - question: تطورت مؤسستي إلى أكثر من 300 موظف، ولدي مزيج من اشتراكات أمان نقطة النهاية من Microsoft. هل يمكنني الاستمرار في استخدام Defender for Business؟
-    answer: "*لنفترض أن شركتك قد تطورت من 250 مستخدما إلى 330 مستخدما، ولديك الآن مزيج من اشتراكات أمان نقاط النهاية من Microsoft، مثل 300 ترخيص Defender for Business و30 ترخيص Microsoft 365 E3.*\n\n[Defender for Business](mdb-overview.md) [وMicrosoft 365 Business Premium](/microsoft-365/business-premium/) للعملاء الذين لديهم ما يصل إلى 300 مستخدم. للحصول على تفاصيل حول التراخيص وشروط المنتج، راجع [شروط الترخيص والمنتج لاشتراكات Microsoft 365](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).\n\nإذا كان لديك الآن أكثر من 300 مستخدم، نوصي بالحصول على اشتراك يتضمن [Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) لجميع المستخدمين. ومع ذلك، نحن نفهم أن هناك سيناريوهات حيث ينمو العميل إلى أكثر من 300 مستخدم ضمن فترة ترخيص. \n\nبالإشارة إلى مثالنا، افترض أنك بدأت فترة ترخيصك باستخدام 250 ترخيص Defender for Business، والآن لديك 300 ترخيص Defender for Business و30 ترخيص Microsoft 365 E3 (يتضمن Microsoft 365 E3 Defender لنقطة النهاية الخطة 1). في هذه الحالة، يظل Defender for Business أعلى اشتراك أمان لنقطة نهاية Microsoft وظيفيا، وسيطبق نوع Defender for Business على نطاق المستأجر. عندما يكون الوقت قد حان لتجديد اشتراكك، نوصي باختيار خطة مؤسسة، مثل أحد الاشتراكات التالية:\n\n- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/E5) (بما في ذلك Defender لنقطة النهاية الخطة 2 بالإضافة إلى Defender ل Office 365 الخطة 2)\n- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/E3) (بما في ذلك Defender لنقطة النهاية الخطة 1)\n- [Defender لنقطة النهاية الخطة 1 أو 2](https://www.microsoft.com/security/business/threat-protection/endpoint-defender)\n"
+    answer: "*لنفترض أن شركتك قد تطورت من 250 مستخدما إلى 330 مستخدما، ولديك الآن مزيج من اشتراكات أمان نقطة النهاية من Microsoft، مثل 300 ترخيص Defender for Business و30 ترخيصا Microsoft 365 E3.*\n\n[Defender for Business](mdb-overview.md) و [Microsoft 365 Business Premium](/microsoft-365/business-premium/) للعملاء الذين لديهم ما يصل إلى 300 مستخدم. للحصول على تفاصيل حول التراخيص وشروط المنتج، راجع [شروط الترخيص والمنتج لاشتراكات Microsoft 365](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).\n\nإذا كان لديك الآن أكثر من 300 مستخدم، نوصي بالحصول على اشتراك يتضمن [Defender لنقطة النهاية](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2) لجميع المستخدمين. ومع ذلك، نحن نفهم أن هناك سيناريوهات حيث ينمو العميل إلى أكثر من 300 مستخدم ضمن فترة ترخيص. \n\nبالإشارة إلى مثالنا، افترض أنك بدأت فترة ترخيصك باستخدام 250 ترخيص Defender for Business، والآن لديك 300 ترخيص Defender for Business و30 ترخيصا Microsoft 365 E3 (Microsoft 365 E3 يتضمن Defender for Endpoint Plan 1). في هذه الحالة، يظل Defender for Business أعلى اشتراك أمان لنقطة نهاية Microsoft وظيفيا، وسيطبق نوع Defender for Business على نطاق المستأجر. عندما يكون الوقت قد حان لتجديد اشتراكك، نوصي باختيار خطة مؤسسة، مثل أحد الاشتراكات التالية:\n\n- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/E5) (بما في ذلك Defender لنقطة النهاية الخطة 2 بالإضافة إلى Defender لـ Office 365 الخطة 2)\n- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/E3) (بما في ذلك Defender لنقطة النهاية الخطة 1)\n- [Defender لنقطة النهاية الخطة 1 أو 2](https://www.microsoft.com/security/business/threat-protection/endpoint-defender)\n"
   - question: كيف تتأثر تقارير أمان Defender for Business إذا كان لدي أكثر من 300 مستخدم؟
-    answer: "تم تصميم Defender for Business للعملاء الذين لديهم ما يصل إلى 300 موظف. إذا كان لديك أكثر من 300 مستخدم ومزيج من التراخيص، مثل تراخيص 300 Defender for Business و30 Defender for Endpoint Plan 1، فستظهر تقارير الأمان الخاصة بك ل Defender for Business بيانات للمستخدمين الذين تم تعيين تراخيص Defender for Business لهم فقط. \n\nفي هذه الحالة، ستتم حماية جميع المستخدمين بواسطة Defender for Business، ولكن تقارير Defender for Business لن تعرض بيانات المستخدمين ال 30 الذين تم تعيين تراخيص Defender لنقطة النهاية 1 لهم.  \n\nلمعرفة المزيد حول التقارير في Defender for Business، راجع [التقارير في Microsoft Defender for Business](mdb-reports.md). \n       \n"
+    answer: "تم تصميم Defender for Business للعملاء الذين لديهم ما يصل إلى 300 موظف. إذا كان لديك أكثر من 300 مستخدم ومزيج من التراخيص، مثل تراخيص 300 Defender for Business و30 Defender for Endpoint Plan 1، فستظهر تقارير الأمان الخاصة بك ل Defender for Business بيانات للمستخدمين الذين تم تعيين تراخيص Defender for Business لهم فقط. \n\nفي هذه الحالة، ستتم حماية جميع المستخدمين بواسطة Defender for Business، ولكن تقارير Defender for Business لن تعرض بيانات المستخدمين ال 30 الذين تم تعيين تراخيص Defender لنقطة النهاية 1 لهم.  \n\nلمعرفة المزيد حول التقارير في Defender for Business، راجع [التقارير في Defender for Business](mdb-reports.md). \n       \n"
   - question: كيف يمكنني عرض اشتراكات Microsoft الخاصة بمؤسستي وتراخيص المستخدمين؟
-    answer: "يمكنك عرض الاشتراكات والتراخيص الحالية في مركز إدارة Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)). \n\nاطلع [على فهم الاشتراكات والتراخيص في Microsoft 365 للأعمال](/microsoft-365/commerce/licenses/subscriptions-and-licenses).\n"
+    answer: "يمكنك عرض الاشتراكات والتراخيص الحالية في مركز مسؤولي Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)). \n\nاطلع [على فهم الاشتراكات والتراخيص في Microsoft 365 للأعمال](/microsoft-365/commerce/licenses/subscriptions-and-licenses).\n"
 additionalContent: >-
   ## <a name="see-also"></a>راجع أيضًا
 
@@ -86,7 +86,7 @@ additionalContent: >-
   - [نظرة عامة على Microsoft 365 Business Premium](/microsoft-365/business-premium/)
 
 
-  - [نظرة عامة على Microsoft Defender for Business](mdb-overview.md)
+  - [نظرة عامة على Defender for Business](mdb-overview.md)
 
 
-  - [مقارنة Microsoft Defender for Business ب Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
+  - [مقارنة Defender for Business ب Microsoft 365 Business Premium](compare-mdb-m365-plans.md)

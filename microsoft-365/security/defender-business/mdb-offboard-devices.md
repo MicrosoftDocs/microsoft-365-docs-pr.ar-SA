@@ -16,25 +16,25 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 00b9b8b9a4ac1cfad07741de84bd99db5403ef1a
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: bd6ea78daa1a19d84efc23c34bdb58704484c0d1
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174447"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772412"
 ---
 # <a name="offboard-a-device-from-microsoft-defender-for-business"></a>إيقاف تشغيل جهاز من Microsoft Defender for Business
 
 إذا كنت تريد إيقاف تشغيل جهاز، فاستخدم أحد الإجراءات التالية:
 
 - [إيقاف تشغيل جهاز Windows](#offboard-a-windows-device)
-- [إيقاف تشغيل كمبيوتر macOS](#offboard-a-macos-computer)
+- [إيقاف تشغيل جهاز Mac](#offboard-a-mac)
 
 ## <a name="offboard-a-windows-device"></a>إيقاف تشغيل جهاز Windows
 
 1. انتقل إلى مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) وسجل الدخول.
 
-2. في جزء التنقل، اختر **الإعدادات**، ثم اختر **نقاط النهاية**.
+2. في جزء التنقل، اختر **"إعدادات"**، ثم اختر **"نقاط النهاية**".
 
 3. ضمن **إدارة الأجهزة**، اختر **"إيقاف الإلحاق**".
 
@@ -46,11 +46,11 @@ ms.locfileid: "65174447"
 
 7. قم بتشغيل البرنامج النصي على كل جهاز تريد إيقاف تشغيله.
 
-## <a name="offboard-a-macos-computer"></a>إيقاف تشغيل كمبيوتر macOS
+## <a name="offboard-a-mac"></a>إيقاف تشغيل جهاز Mac
 
-1. انتقل إلى **FinderApplications** > . 
+1. انتقل إلى **تطبيقات** **الباحث** > . 
 
-2. انقر بزر الماوس الأيمن فوق Microsoft Defender for Business، ثم اختر **"نقل إلى سلة المهملات**". <br/>--- أو --- <br/> استخدم الأمر التالي: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
+2. انقر بزر **الماوس** الأيمن فوق Microsoft Defender for Business، ثم اختر **"نقل إلى سلة المهملات**". <br/>--- أو --- <br/> استخدم الأمر التالي: `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`.
 
 > [!IMPORTANT]
 > يؤدي إلغاء إلحاق جهاز إلى توقف الأجهزة عن إرسال البيانات إلى Defender for Business. ومع ذلك، يتم الاحتفاظ بالبيانات التي تم تلقيها قبل الإلحاق لمدة تصل إلى ستة (6) أشهر.

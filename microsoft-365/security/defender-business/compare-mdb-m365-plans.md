@@ -16,38 +16,39 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 245063299df0df25f8a4c14ed9a3ee26b880ea15
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 9c3c4cf2914e268abeabc199e72ef28dac81a0f1
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089871"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771985"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>مقارنة ميزات الأمان في خطط Microsoft 365 للشركات الصغيرة والمتوسطة الحجم
 
-تقدم Microsoft مجموعة متنوعة من الحلول والخدمات السحابية، بما في ذلك العديد من الخطط المختلفة للشركات الصغيرة والمتوسطة الحجم. على سبيل المثال، [تتضمن Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) قدرات الأمان وإدارة الأجهزة، بالإضافة إلى ميزات الإنتاجية، مثل تطبيقات Office. تم تصميم هذه المقالة للمساعدة في توضيح ميزات الأمان، مثل حماية الجهاز، المضمنة في Microsoft 365 Business Premium Microsoft Defender for Business Microsoft Defender لنقطة النهاية.
+تقدم Microsoft مجموعة متنوعة من الحلول والخدمات السحابية، بما في ذلك خطط للشركات الصغيرة والمتوسطة الحجم. على سبيل المثال، [تتضمن Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) إمكانات الأمان وإدارة الأجهزة، بالإضافة إلى ميزات الإنتاجية مثل تطبيقات Office. تصف هذه المقالة ميزات الأمان في Microsoft 365 Business Premium [Microsoft Defender for Business Microsoft Defender لنقطة النهاية.](../defender-endpoint/microsoft-defender-endpoint.md)
 
 
 **استخدم هذه المقالة ل**:
 
-- [مقارنة Microsoft Defender for Business (مستقل) مع Microsoft 365 Business Premium](#compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium)
-- [مقارنة Defender for Business (مستقل) بعروض المؤسسة Microsoft Defender لنقطة النهاية](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2)
+- [قارن Defender for Business (مستقل) مع Microsoft 365 Business Premium](#compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium).
+- [قارن Defender for Business (مستقل) بعروض مؤسسة Defender for Endpoint](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
-**ليس عليك أن يكون لديك اشتراك Microsoft 365 لشراء Microsoft Defender for Business واستخدامها.** يتم تضمين Microsoft Defender for Business في Microsoft 365 Business Premium، وهي متوفرة كحل أمني مستقل للشركات الصغيرة والمتوسطة الحجم. إذا كان لديك بالفعل Microsoft 365 Business Basic أو قياسي، ففكر في إضافة إما الترقية إلى Microsoft 365 Business Premium أو إضافة Microsoft Defender for Business للحصول على المزيد من قدرات الحماية من التهديدات.
+> [!TIP]
+> يتوفر Defender for Business كحل أمني مستقل للشركات الصغيرة والمتوسطة الحجم. كما أنها مضمنة في Microsoft 365 Business Premium. إذا كان لديك بالفعل Microsoft 365 Business Basic أو قياسي، ففكر في الترقية إلى Microsoft 365 Business Premium أو إضافة Defender for Business إلى اشتراكك للحصول على المزيد من قدرات الحماية من التهديدات لأجهزتك.
 
 ## <a name="compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>مقارنة ميزات الأمان في Microsoft Defender for Business مع Microsoft 365 Business Premium
 
 > [!NOTE]
-> تهدف هذه المقالة إلى تقديم نظرة عامة عالية المستوى حول ميزات الحماية من التهديدات المضمنة في Microsoft Defender for Business (كخطط مستقلة) Microsoft 365 Business Premium (والتي تتضمن Defender for Business). لا تهدف هذه المقالة إلى أن تكون بمثابة وصف للخدمة أو مستند عقد الترخيص. لمزيد من المعلومات، راجع [إرشادات الترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> توفر هذه المقالة نظرة عامة عالية المستوى على ميزات الحماية من التهديدات المضمنة في Microsoft Defender for Business (كخطط مستقلة) Microsoft 365 Business Premium (والتي تتضمن Defender for Business). ليس المقصود منه أن يكون وصفا للخدمة أو مستند عقد ترخيص. لمزيد من المعلومات التفصيلية، راجع [إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-**اعتبارا من 1 مارس 2022، يتم تضمين Defender for Business في Microsoft 365 Business Premium. يتوفر Defender for Business أيضا باعتباره اشتراكا مستقلا.** يقارن الجدول التالي ميزات الأمان وإمكانياته في Defender for Business (مستقل) مع Microsoft 365 Business Premium.
+يتوفر Defender for Business أيضا باعتباره اشتراكا مستقلا، كما أنه مضمن في Microsoft 365 Business Premium. يقارن الجدول التالي ميزات الأمان وإمكانياته في Defender for Business (مستقل) مع Microsoft 365 Business Premium.
 
 |الميزة/القدرة|[Microsoft Defender for Business](mdb-overview.md)<br/>(مستقل)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(بما في ذلك Defender for Business)|
 |---|---|---|
-|حماية البريد الإلكتروني|نعم <br/>- [مسح البريد الإلكتروني باستخدام برنامج الحماية من الفيروسات من Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|نعم <br/>- [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>- [مسح البريد الإلكتروني باستخدام برنامج الحماية من الفيروسات من Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|حماية Antispam|نعم <br/>- للأجهزة|نعم <br/>- للأجهزة<br/>- لمحتوى البريد الإلكتروني Microsoft 365، مثل الرسائل والمرفقات|
-|الحماية من البرامج الضارة|نعم<br/>- للأجهزة|نعم <br/>- للأجهزة<br/>- لمحتوى البريد الإلكتروني Microsoft 365، مثل الرسائل والمرفقات|
-|[حماية الجيل التالي](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (الحماية من الفيروسات والحماية من البرامج الضارة)|نعم<br/>- يتم تضمين برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10 والإي وقت لاحق|نعم <br/>- يتم تضمين برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10 والإي وقت لاحق<br/>- نهج الحماية من الجيل التالي للأجهزة التي تم إلحاقها|
+|حماية البريد الإلكتروني|نعم <br/>[مسح البريد الإلكتروني باستخدام برنامج الحماية من الفيروسات من Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|نعم <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[مسح البريد الإلكتروني باستخدام برنامج الحماية من الفيروسات من Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
+|حماية Antispam|نعم<br/>للأجهزة|نعم <ul><li>للأجهزة</li><li>لمحتوى البريد الإلكتروني ل Microsoft 365، مثل الرسائل والمرفقات</li></ul>|
+|الحماية من البرامج الضارة|نعم<br/>للأجهزة|نعم<ul><li>للأجهزة</li><li>لمحتوى البريد الإلكتروني ل Microsoft 365، مثل الرسائل والمرفقات</li></ul>|
+|[حماية الجيل التالي](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (الحماية من الفيروسات والحماية من البرامج الضارة)|نعم<br/>يتم تضمين برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10 والإي وقت لاحق|نعم <ul><li>يتم تضمين برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10 والإي وقت لاحق</li><li>نهج الحماية من الجيل التالي للأجهزة التي تم إلحاقها</li></ul>|
 |[قواعد تقليل الأجزاء المعرضة للهجوم](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(قواعد ASR في Windows 10 أو الأحدث وحماية جدار الحماية)|نعم|نعم|
 |[الكشف عن نقطة النهاية والاستجابة لها](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(إجراءات الكشف والاستجابة اليدوية المستندة إلى السلوك)|نعم|نعم|
 |[التحقيق التلقائي والاستجابة (AIR)](../defender-endpoint/automated-investigations.md)|نعم|نعم|
@@ -70,20 +71,20 @@ ms.locfileid: "66089871"
 |[التحقيق التلقائي والاستجابة (AIR)](../defender-endpoint/automated-investigations.md)|نعم <sup>[[3](#fn3)]</sup>|لا|نعم|
 |[تتبع التهديدات](../defender-endpoint/advanced-hunting-overview.md) واستبقاء البيانات لمدة ستة أشهر |لا <sup>[[4](#fn4)]</sup>|لا|نعم|
 |[تحليلات المخاطر](../defender-endpoint/threat-analytics.md)|نعم <sup>[[5](#fn5)]</sup>|لا|نعم|
-|[دعم عبر الأنظمة الأساسية](../defender-endpoint/minimum-requirements.md) <br/>(Windows macOS وiOS وAndroid OS)|نعم <sup>[[6](#fn6)]</sup>|نعم|نعم|
+|[دعم عبر الأنظمة الأساسية](../defender-endpoint/minimum-requirements.md) <br/>(Windows وMac وiOS وAndroid OS)|نعم <sup>[[6](#fn6)]</sup>|نعم|نعم|
 |[خبراء المخاطر في Microsoft](../defender-endpoint/microsoft-threat-experts.md)|لا|لا|نعم|
 |واجهات برمجة التطبيقات الخاصة بالشركاء|نعم|نعم|نعم|
 |[تكامل Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md) <br/>(لعرض حوادث الأمان عبر مستأجري العملاء)|نعم |نعم <sup>[[7](#fn7)]</sup>|نعم <sup>[[7](#fn7)]</sup>|
 
-(<a id="fn1">1</a>) إلحاق الأجهزة وإدارتها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) أو باستخدام Microsoft Intune، تتم إدارتها في مركز إدارة إدارة نقاط النهاية من Microsoft ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
+(<a id="fn1">1</a>) إلحاق الأجهزة وإدارتها في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)) أو باستخدام Microsoft Intune، تتم إدارتها في مركز إدارة Microsoft إدارة نقاط النهاية ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
-(<a id="fn2">2</a>) تتضمن قدرات الكشف عن نقاط النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية) في Defender for Business الكشف المستند إلى السلوك والأنواع الأربعة التالية من إجراءات الاستجابة اليدوية: 
+(<a id="fn2">2</a>) تتضمن قدرات الكشف عن نقاط النهاية والاستجابة لها (EDR) في Defender for Business الكشف المستند إلى السلوك وإجراءات الاستجابة اليدوية التالية: 
 - تشغيل مسح الحماية من الفيروسات
 - عزل الجهاز
 - إيقاف ملف وعزله
 - إضافة مؤشر لحظر ملف أو السماح به
 
-(<a id="fn3">3</a>) في Defender for Business، يتم تشغيل التحقيق التلقائي والاستجابة بشكل افتراضي، على نطاق المستأجر. إذا أوقفت تشغيل التحقيق التلقائي والاستجابة، فإنه يؤثر على الحماية في الوقت الحقيقي. راجع [إعدادات المراجعة للميزات المتقدمة](mdb-configure-security-settings.md#review-settings-for-advanced-features).  
+(<a id="fn3">3</a>) في Defender for Business، يتم تشغيل التحقيق التلقائي والاستجابة بشكل افتراضي، على نطاق المستأجر. إذا أوقفت تشغيل التحقيق التلقائي والاستجابة، فإن ذلك يؤثر على الحماية في الوقت الحقيقي. راجع [إعدادات المراجعة للميزات المتقدمة](mdb-configure-security-settings.md#review-settings-for-advanced-features).  
 
 (<a id="fn4">4</a>) لا توجد طريقة عرض للمخطط الزمني في Defender for Business.
 

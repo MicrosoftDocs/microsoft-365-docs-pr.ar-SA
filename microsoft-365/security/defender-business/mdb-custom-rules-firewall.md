@@ -15,18 +15,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e8ab0981b2e4cfbcd5d885bdfc26f42c6f432aa6
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: cb584d01f2ca135a25ef715fe7152c1fe33ce0f3
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090377"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772698"
 ---
 # <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>إدارة القواعد المخصصة لنهج جدار الحماية في Microsoft Defender for Business
 
-تتضمن Microsoft Defender for Business نهج جدار الحماية التي تساعد على حماية أجهزتك من نسبة استخدام الشبكة غير المرغوب فيها. يمكنك استخدام القواعد المخصصة لتعريف الاستثناءات لنهج جدار الحماية. أي، يمكنك استخدام قواعد مخصصة لحظر اتصالات معينة أو السماح بها.
+يتضمن Defender for Business نهج جدار الحماية التي تساعد على حماية أجهزتك من نسبة استخدام الشبكة غير المرغوب فيها. يمكنك استخدام القواعد المخصصة لتعريف الاستثناءات لنهج جدار الحماية. أي، يمكنك استخدام قواعد مخصصة لحظر اتصالات معينة أو السماح بها.
 
-لمعرفة المزيد حول نهج جدار الحماية وإعداداته، راجع [جدار الحماية في Microsoft Defender for Business](mdb-firewall.md).
+لمعرفة المزيد حول نهج جدار الحماية وإعداداته، راجع [جدار الحماية في Defender for Business](mdb-firewall.md).
 
 **تصف هذه المقالة كيفية**:
 
@@ -99,6 +99,6 @@ ms.locfileid: "66090377"
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-- [عرض الحوادث وإدارتها في Microsoft Defender for Business](mdb-view-manage-incidents.md)
-- [الاستجابة للتهديدات وتخفيفها في Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [عرض الحوادث وإدارتها في Defender for Business](mdb-view-manage-incidents.md)
+- [الاستجابة للتهديدات وتخفيفها في Defender for Business](mdb-respond-mitigate-threats.md)
 - [مراجعة إجراءات المعالجة في مركز الصيانة](mdb-review-remediation-actions.md)

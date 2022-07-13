@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: حماية الأجهزة غير المدارة أو إحضار أجهزتك الخاصة (BYOD) من الهجمات الإلكترونية باستخدام Microsoft 365 Business Premium. كيفية إعداد الأمان عبر الإنترنت لأجهزة الكمبيوتر الشخصية وأجهزة Mac التي تعمل بنظام التشغيل Windows.
-ms.openlocfilehash: 5a1239f84e801c6327eb18c1049e410cc0859bdb
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 033fdd41c8df09f983e1abc296bd0b33de20a61a
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631761"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773070"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>حماية أجهزة كمبيوتر Windows وأجهزة Mac غير المدارة في Microsoft 365 Business Premium
 
@@ -66,9 +66,9 @@ Windows Update تنزيل تحديثات أمن Windows تلقائيا للمس�
 
 حسنا، اكتملت المهمة! الآن، دعونا نعمل على [تأمين نظام البريد الإلكتروني](m365bp-protect-email-overview.md) ضد التصيد الاحتيالي والهجمات الأخرى.
 
-## <a name="macos"></a>[ماك](#tab/macOS)
+## <a name="mac"></a>[ماك](#tab/Mac)
 
-## <a name="macos"></a>ماك
+## <a name="mac"></a>ماك
 
 ### <a name="use-filevault-to-encrypt-your-mac-disk"></a>استخدام FileVault لتشفير قرص Mac
 

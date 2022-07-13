@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: يمكن للمسؤولين التعرف على الوضع التجريبي Microsoft Defender لـ Office 365
-ms.openlocfilehash: 086ea200b6f8519c487622d02ba2d2fc8347f68a
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 9cce1e910f5497ce2dfe265923f66e87306fb90e
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554192"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773246"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>حول الإصدار التجريبي Microsoft Defender لـ Office 365
 
@@ -64,7 +64,7 @@ Microsoft Defender لـ Office 365 تحمي مؤسستك من التهديدات
 > [!NOTE]
 > من المحتمل أن يتم تكوين نهج مكافحة البريد العشوائي الحالية باستخدام الإجراء **"نقل الرسالة إلى مجلد البريد الإلكتروني غير الهام** " لحكم البريد العشوائي عالي الثقة في نهج مكافحة البريد العشوائي. يستخدم القالب القياسي لنهج الأمان المعينة مسبقا **رسالة الفحص** الإجرائية للبريد العشوائي عالي الثقة، ويتم دائما تطبيق نهج الأمان المعينة مسبقا قبل نهج مكافحة البريد العشوائي المخصصة أو نهج مكافحة البريد العشوائي الافتراضي. لمزيد من المعلومات حول الإعدادات الافتراضية والمعيارية والضيقة، راجع [الإعدادات المستحسنة ل EOP والأمان Microsoft Defender لـ Office 365](recommended-settings-for-eop-and-office365.md).
 
-تتوفر أحمال العمل الأخرى أيضا للحماية (على سبيل المثال، [المرفقات الآمنة ل SharePoint وOneDrive وMicrosoft Teams](mdo-for-spo-odb-and-teams.md) [والارتباطات الآمنة لتطبيقات Office 365 المدعومة](safe-links.md#safe-links-settings-for-office-365-apps).
+تتوفر أحمال العمل الأخرى أيضا للحماية (على سبيل المثال، [المرفقات الآمنة ل SharePoint وOneDrive وMicrosoft Teams](mdo-for-spo-odb-and-teams.md) [والارتباطات الآمنة لتطبيقات Office المدعومة](safe-links.md#safe-links-settings-for-office-apps).
 
 أثناء إعداد الإصدار التجريبي، يتم إعداد وظيفة الاستجابة الحصرية Defender لـ Office 365 الخطة 2 (على سبيل المثال، [AIR](office-365-air.md) [وS threat Explorer](threat-explorer.md) للمؤسسة بأكملها. لا يلزم تحديد نطاق النهج.
 

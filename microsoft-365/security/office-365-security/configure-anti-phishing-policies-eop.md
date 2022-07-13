@@ -16,12 +16,12 @@ ms.custom: ''
 description: يمكن للمسؤولين التعرف على كيفية إنشاء نهج مكافحة التصيد الاحتيالي المتوفرة في مؤسسات Exchange Online Protection (EOP) وتعديلها وحذفها باستخدام علب بريد Exchange Online أو بدونها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 384494fdd625fe050079ecd99f59b68d1ba87cad
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 8545eed078a676055206870e5c55ed3ca2e82a9a
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115686"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773224"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>تكوين نهج مكافحة التصيد الاحتيالي في EOP
 
@@ -30,7 +30,7 @@ ms.locfileid: "66115686"
 **ينطبق على**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-في المؤسسات Microsoft 365 التي لها علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، هناك نهج افتراضي لمكافحة التصيد الاحتيالي يحتوي على عدد محدود من ميزات مكافحة الانتحال التي تم تمكينها بشكل افتراضي. لمزيد من المعلومات، راجع [إعدادات الانتحال في نهج مكافحة التصيد الاحتيالي](set-up-anti-phishing-policies.md#spoof-settings).
+في مؤسسات Microsoft 365 التي تحتوي على علب بريد في Exchange Online أو مؤسسات Exchange Online Protection مستقلة (EOP) بدون علب بريد Exchange Online، هناك نهج افتراضي لمكافحة التصيد الاحتيالي يحتوي على عدد محدود من ميزات مكافحة الانتحال التي يتم تمكينها بشكل افتراضي. لمزيد من المعلومات، راجع [إعدادات الانتحال في نهج مكافحة التصيد الاحتيالي](set-up-anti-phishing-policies.md#spoof-settings).
 
 يمكن للمسؤولين عرض نهج مكافحة التصيد الاحتيالي الافتراضي وتحريره وتكوينه (وليس حذفه). لمزيد من التفاصيل، يمكنك أيضا إنشاء نهج مخصصة لمكافحة التصيد الاحتيالي تنطبق على مستخدمين أو مجموعات أو مجالات معينة في مؤسستك. دائما ما يكون للنهج المخصصة الأسبقية على النهج الافتراضي، ولكن يمكنك تغيير الأولوية (ترتيب التشغيل) للنهج المخصصة.
 
@@ -63,7 +63,7 @@ ms.locfileid: "66115686"
 
 - يمكنك فتح مدخل Microsoft 365 Defender في <https://security.microsoft.com>. للانتقال مباشرة إلى صفحة **مكافحة التصيد الاحتيالي** ، استخدم <https://security.microsoft.com/antiphishing>.
 
-- للاتصال Exchange Online PowerShell، راجع [الاتصال إلى Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- للاتصال Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
   لا يمكنك إدارة نهج مكافحة التصيد الاحتيالي في EOP PowerShell المستقل.
 
@@ -119,9 +119,9 @@ ms.locfileid: "66115686"
    > - المستلم هو: romain@contoso.com
    > - المستلم هو عضو في: المديرين التنفيذيين
    >
-   > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
+   > يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعة المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فلن يتم تطبيق النهج عليه.
    >
-   > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعات المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
+   > وبالمثل، إذا كنت تستخدم عامل تصفية المستلم نفسه استثناء للنهج، فلن يتم تطبيق النهج على romain@contoso.com _فقط_ إذا كان أيضا عضوا في مجموعة المديرين التنفيذيين. إذا لم يكن عضوا في المجموعة، فإن النهج لا يزال ينطبق عليه.
 
    عند الانتهاء، انقر فوق **"التالي**".
 
@@ -142,7 +142,7 @@ ms.locfileid: "66115686"
        تعني قيمة **نهج تطبيق العزل** الفارغة استخدام نهج العزل الافتراضي (DefaultFullAccessPolicy للكشف عن التحليل الذكي للانتحال). عند تحرير نهج مكافحة التصيد الاحتيالي لاحقا أو عرض الإعدادات، يظهر اسم نهج العزل الافتراضي. لمزيد من المعلومات حول نهج العزل الافتراضية المستخدمة في أحكام تصفية الحماية المدعومة، راجع [هذا الجدول](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
    - **تلميحات الأمان & المؤشرات**:
-     - **إظهار تلميح الأمان جهة الاتصال الأولى**: لمزيد من المعلومات، راجع [تلميح الأمان جهة الاتصال الأولى](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+     - **إظهار تلميح أمان جهة الاتصال الأول**: لمزيد من المعلومات، راجع [تلميح أمان جهة الاتصال الأولى](set-up-anti-phishing-policies.md#first-contact-safety-tip).
      - **إظهار (؟) للمرسلين غير المصادق عليهم للانتحال**<sup>\*</sup>: إضافة علامة استفهام (؟) إلى صورة المرسل في المربع "من" في Outlook إذا لم تمر الرسالة بفحوصات SPF أو DKIM **ولا** تمر الرسالة بمصادقة DMARC أو [مصادقة مركبة](email-validation-and-authentication.md#composite-authentication).
      - **إظهار علامة**<sup>\*</sup> "via": إضافة علامة عبر (chris@contoso.com عبر fabrikam.com) إلى عنوان "من" إذا كان مختلفا عن المجال في توقيع DKIM أو عنوان **MAIL FROM** .
 
