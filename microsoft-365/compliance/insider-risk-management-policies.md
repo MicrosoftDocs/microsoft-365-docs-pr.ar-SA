@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 22682a801123d4f8c24cbc11e2d0e35d42228bba
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5eb528db1199ab637634fefb5a31ff1344276051
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627272"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787859"
 ---
 # <a name="insider-risk-management-policies"></a>نهج إدارة المخاطر الداخلية
 
@@ -340,7 +340,7 @@ ms.locfileid: "66627272"
 2. في لوحة معلومات النهج، حدد النهج الذي تريد إدارته.
 3. في صفحة تفاصيل النهج، حدد **"تحرير النهج"**
 4. في معالج النهج، لا يمكنك تحرير ما يلي:
-    - **قالب النهج**: القالب المستخدم لتحديد أنواع مؤشرات المخاطر التي يراقبها النهج.
+    - **قالب النهج**: القالب المستخدم لتحديد أنواع مؤشرات المخاطر التي كشفها النهج.
     - **الاسم**: الاسم المألوف للنهج
 5. في صفحة **"الاسم والوصف** "، قم بتحديث وصف النهج في حقل **"الوصف** ".
 6. حدد **"التالي** " للمتابعة.

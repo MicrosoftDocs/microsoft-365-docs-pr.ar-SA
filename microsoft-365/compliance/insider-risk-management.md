@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 2055d5ce71766a3c1cd1846c6287e5c15c8d621c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: db99267bc7d55e6e069e984dc4b419ed379fd088
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622822"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787195"
 ---
 # <a name="learn-about-insider-risk-management"></a>تعرّف على إدارة المخاطر الداخلية
 
@@ -89,7 +89,7 @@ ms.locfileid: "66622822"
 
 ### <a name="policies"></a>السياسات
 
-يتم إنشاء [نهج إدارة المخاطر الداخلية](insider-risk-management-policies.md) باستخدام قوالب محددة مسبقا وشروط نهج تحدد الأحداث المشغلة ومؤشرات المخاطر التي يتم فحصها في مؤسستك. وتشمل هذه الشروط كيفية استخدام مؤشرات المخاطر للتنبيهات، وما هو المستخدمون المضمنون في النهج، والخدمات التي يتم ترتيب أولوياتها، والفترة الزمنية للمراقبة.
+يتم إنشاء [نهج إدارة المخاطر الداخلية](insider-risk-management-policies.md) باستخدام قوالب محددة مسبقا وشروط نهج تحدد الأحداث المشغلة ومؤشرات المخاطر التي يتم فحصها في مؤسستك. وتشمل هذه الشروط كيفية استخدام مؤشرات المخاطر للتنبيهات، وما هو المستخدمون المضمنون في النهج، والخدمات التي يتم ترتيب أولوياتها، والفترة الزمنية للكشف.
 
 يمكنك الاختيار من قوالب النهج التالية للبدء بسرعة في إدارة المخاطر الداخلية:
 

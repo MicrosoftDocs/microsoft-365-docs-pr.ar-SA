@@ -3,7 +3,7 @@ title: مواقع بيانات Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/02/2022
+ms.date: 07/13/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,27 +17,27 @@ ms.custom:
 - Ent_TLGs
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: تحديد مكان تخزين بيانات عميلك Microsoft 365 في جميع أنحاء العالم
-ms.openlocfilehash: 07d137c6eda243a1ffa33b486d7cdbea5b37f9d9
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+description: تحديد مكان تخزين بيانات عميل Microsoft 365 في جميع أنحاء العالم
+ms.openlocfilehash: 6652d9076a5b2ecd11b0793104924690d14a1f98
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874042"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787617"
 ---
-# <a name="where-your-microsoft-365-customer-data-is-stored"></a>حيث يتم تخزين بيانات عميل Microsoft 365
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>مكان تخزين بيانات عميل Microsoft 365
 
-توضح الجداول أدناه مكان تخزين بيانات العملاء الثابتة لخدمات Microsoft 365 عبر جميع مواقع Microsoft السحابية العمومية. قم بتوسيع موقع بلد عنوان الفوترة لمعرفة مكان تخزين بيانات العملاء لكل خدمة.
+توضح الجداول أدناه مكان تخزين بيانات العملاء الثابتة لخدمات Microsoft 365 عبر جميع مواقع Microsoft السحابية العالمية. قم بتوسيع موقع بلد عنوان الفوترة لمعرفة مكان تخزين بيانات العملاء لكل خدمة.
 
 إذا كانت شركتك موجودة في الاتحاد الأوروبي، فراجع [مواقع البيانات التابعة للاتحاد الأوروبي](EU-data-storage-locations.md) للحصول على مزيد من المعلومات.
 
-يجب على العملاء عرض معلومات موقع بيانات خاصة بالمستأجر في مركز مسؤولي Microsoft 365 في **موقع بيانات** <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">علامة تبويب</a> >  ملف تعريف المؤسسة **لإعدادات** >  **الإعدادات** >  Org. إذا [طلبت الانتقال إلى Geo جديد](request-your-data-move.md)، فقد تعرض معلومات موقع البيانات في مركز مسؤولي Microsoft 365 الموقع الجغرافي الجديد فقط على الرغم من أنه قد يتم تخزين بعض البيانات مؤقتا في Geo السابق أثناء الانتقال.
+يجب على العملاء عرض معلومات موقع بيانات خاصة بالمستأجر في مركز مسؤولي Microsoft 365 في **موقع** <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">بيانات علامة تبويب **ملف**</a> >  تعريف المؤسسة **لإعدادات مؤسسة الإعدادات** >  > . إذا [طلبت الانتقال إلى Geo جديد](request-your-data-move.md)، فقد تعرض معلومات موقع البيانات في مركز مسؤولي Microsoft 365 الموقع الجغرافي الجديد فقط على الرغم من أنه قد يتم تخزين بعض البيانات مؤقتا في Geo السابق أثناء الانتقال.
 
-يتم تعيين المستأجرين Microsoft 365 الجدد افتراضيا إلى Geo استنادا إلى بلد المعاملة المقترنة باشتراك المستأجر الأول.
+يتم تعيين مستأجري Microsoft 365 الجدد افتراضيا إلى Geo استنادا إلى بلد المعاملة المقترنة باشتراك المستأجر الأول.
 
 ابحث عن معلومات حول الالتزامات التعاقدية لموقع تخزين بيانات العملاء الثابتة في [ملحق حماية بيانات منتجات وخدمات Microsoft (DPA).](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)
 
-بالنسبة إلى مواقع بيانات Azure Active Directory، يرجى زيارة [AAD Data Map](https://go.microsoft.com/fwlink/p/?linkid=2092972).
+بالنسبة إلى مواقع بيانات Azure Active Directory، يرجى زيارة [موقع البيانات في Azure](https://azure.microsoft.com/global-infrastructure/data-residency/#overview).
 
 إذا كان عنوان فوترة العميل خارج أوروبا وكان للعميل اشتراك Office 365 Education، فخلافا لقسم "موقع بيانات العميل في Rest for Core Online Services" في OST، يجوز لشركة Microsoft توفير مستأجر Office 365 العميل في بيانات العملاء ونقلها وتخزينها في أي مكان داخل أوروبا أو أمريكا الشمالية وتخزينها.  إذا كان عنوان فوترة العميل في أوروبا وكان العميل لديه اشتراك Office 365 Education، فعندئذ بغض النظر عن قسم "موقع بيانات العميل في Rest for Core Online Services" في OST، يجوز لشركة Microsoft توفير مستأجر Office 365 الخاص بالعميل في بيانات العملاء ونقلها وتخزينها في أي مكان داخل الاتحاد الأوروبي.
 
@@ -61,18 +61,18 @@ ms.locfileid: "65874042"
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>هل لموقع بيانات العميل تأثير مباشر على تجربة المستخدمين النهائيين؟
 <details><summary>انقر للتوسيع</summary>
 
-لا يتناسب أداء Microsoft 365 ببساطة مع مسافة المستخدم إلى مواقع مركز البيانات. تساعد استثمارات Microsoft المستمرة في شبكتها السحابية العالمية والبنية الأساسية السحابية العالمية وبنية خدمات Microsoft 365 على تزويد المستخدمين بتجربة مفردة ومتسقة بصرف النظر عن مكان تخزين بيانات العملاء الثابتة. إذا كان المستخدمون يواجهون مشاكل في الأداء، فيجب استكشاف الأخطاء وإصلاحها بعمق. نشرت Microsoft إرشادات لعملاء Microsoft 365 للتخطيط لأداء المستخدم النهائي وتحسينه على [موقع دعم Office على الويب](./network-planning-and-performance.md).
+لا يتناسب أداء Microsoft 365 ببساطة مع مسافة المستخدم إلى مواقع مركز البيانات. تساعد استثمارات Microsoft المستمرة في شبكتها السحابية العالمية والبنية الأساسية السحابية العالمية وبنية خدمات Microsoft 365 على تزويد المستخدمين بتجربة مفردة ومتسقة بصرف النظر عن مكان تخزين بيانات العملاء الثابتة. إذا كان المستخدمون يواجهون مشاكل في الأداء، فيجب استكشاف الأخطاء وإصلاحها بعمق. نشرت Microsoft إرشادات لعملاء Microsoft 365 للتخطيط لأداء المستخدم النهائي وتحسينه على [موقع دعم Office على ويب](./network-planning-and-performance.md).
 
 </details>
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>كيف تساعدني Microsoft على الامتثال للوائح الوطنية والإقليمية والأنظمة الخاصة بالصناعة؟
 <details><summary>انقر للتوسيع</summary>
 
-لمساعدتك على الامتثال للمتطلبات الوطنية والإقليمية والمتطلبات الخاصة بالصناعة التي تحكم جمع بيانات الأفراد واستخدامها، يقدم Microsoft 365 المجموعة الأكثر شمولا من عروض التوافق لأي موفر عالمي للإنتاجية السحابية. يرجى مراجعة [عروض التوافق](/compliance/regulatory/offering-home) والمزيد من التفاصيل في قسم [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) في مركز توثيق Microsoft. كما توفر بعض خطط Microsoft 365 المزيد من حلول التوافق لمساعدتك على إدارة بياناتك، والامتثال للمتطلبات القانونية والتنظيمية، ومراقبة الإجراءات المتخذة على بياناتك.
+لمساعدتك على الامتثال للمتطلبات الوطنية والإقليمية والمتطلبات الخاصة بالصناعة التي تحكم جمع بيانات الأفراد واستخدامها، تقدم Microsoft 365 المجموعة الأكثر شمولا من عروض التوافق لأي موفر عالمي للإنتاجية السحابية. يرجى مراجعة [عروض التوافق](/compliance/regulatory/offering-home) والمزيد من التفاصيل في قسم [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) في مركز توثيق Microsoft. بالإضافة إلى ذلك، توفر بعض خطط Microsoft 365 المزيد من حلول التوافق لمساعدتك على إدارة بياناتك، والامتثال للمتطلبات القانونية والتنظيمية، ومراقبة الإجراءات المتخذة على بياناتك.
 
 </details>
 
-### <a name="who-can-access-your-data-and-according-to-what-rules"></a>روبوت Who يمكن الوصول إلى بياناتك ووفقا للقواعد؟
+### <a name="who-can-access-your-data-and-according-to-what-rules"></a>من يمكنه الوصول إلى بياناتك ووفقا للقواعد؟
 <details><summary>انقر للتوسيع</summary>
 
  تطبق Microsoft إجراءات قوية للمساعدة في حماية بيانات العملاء من الوصول غير المناسب أو الاستخدام من قبل أشخاص غير مصرح لهم. ويشمل ذلك تقييد الوصول من قبل موظفي Microsoft والمتعاقدين من الباطن، وتحديد متطلبات الاستجابة للطلبات الحكومية لبيانات العملاء بعناية. ومع ذلك، يمكنك الوصول إلى بيانات العميل الخاصة بك في أي وقت ولأي سبب من الأسباب. تتوفر المزيد من التفاصيل في [مركز توثيق Microsoft](https://go.microsoft.com/fwlink/p/?linkid=864392).
@@ -82,7 +82,7 @@ ms.locfileid: "65874042"
 ### <a name="does-microsoft-access-your-data"></a>هل تقوم Microsoft بالوصول إلى بياناتك؟
 <details><summary>انقر للتوسيع</summary>
 
-تقوم Microsoft بأتمتة معظم عمليات Microsoft 365 مع تقييد وصولها الخاص إلى بيانات العملاء عن قصد. وهذا يساعدنا على إدارة Microsoft 365 على نطاق واسع ومعالجة مخاطر التهديدات الداخلية لبيانات العملاء. بشكل افتراضي، لا يتمتع مهندسو Microsoft بامتيازات إدارية دائمة ولا يتمتعون بإمكانية وصول دائمة إلى بيانات العملاء في Microsoft 365. قد يكون لدى مهندس Microsoft وصول محدود ومسجل إلى بيانات العميل لفترة محدودة من الوقت، ولكن فقط عند الضرورة لعمليات الخدمة العادية وفقط عند الموافقة من قبل أحد أعضاء الإدارة العليا في Microsoft (وبالنسبة للعملاء المرخص لهم ميزة مربع تأمين العميل، من قبل العميل).
+تقوم Microsoft بأتمتة معظم عمليات Microsoft 365 مع تقييد وصولها الخاص إلى بيانات العملاء عن قصد. يساعدنا ذلك على إدارة Microsoft 365 على نطاق واسع ومعالجة مخاطر التهديدات الداخلية لبيانات العملاء. بشكل افتراضي، لا يتمتع مهندسو Microsoft بامتيازات إدارية دائمة ولا يتمتعون بإمكانية وصول دائمة إلى بيانات العملاء في Microsoft 365. قد يكون لدى مهندس Microsoft وصول محدود ومسجل إلى بيانات العميل لفترة محدودة من الوقت، ولكن فقط عند الضرورة لعمليات الخدمة العادية وفقط عند الموافقة من قبل أحد أعضاء الإدارة العليا في Microsoft (وبالنسبة للعملاء المرخص لهم ميزة مربع تأمين العميل، من قبل العميل).
 
 </details>
 
@@ -93,10 +93,10 @@ ms.locfileid: "65874042"
 
 </details>
 
-### <a name="does-microsoft-365-encrypt-your-data"></a>هل Microsoft 365 تشفير بياناتك؟
+### <a name="does-microsoft-365-encrypt-your-data"></a>هل يقوم Microsoft 365 بتشفير بياناتك؟
 <details><summary>انقر للتوسيع</summary>
 
-تستخدم Microsoft 365 تقنيات من جانب الخدمة تقوم بتشفير بيانات العملاء الثابتة والمتنقلة. بالنسبة لبيانات العملاء الثابتة، تستخدم Microsoft 365 التشفير على مستوى وحدة التخزين ومستوى الملفات. بالنسبة لبيانات العملاء المتنقلة، تستخدم Microsoft 365 تقنيات تشفير متعددة للاتصالات بين مراكز البيانات وبين العملاء والخوادم، مثل بروتوكول أمان طبقة النقل (TLS) وأمان بروتوكول الإنترنت (IPsec). يتضمن Microsoft 365 أيضا ميزات التشفير التي يديرها العميل.
+يستخدم Microsoft 365 تقنيات من جانب الخدمة تقوم بتشفير بيانات العملاء الثابتة والمتنقلة. بالنسبة لبيانات العملاء الثابتة، يستخدم Microsoft 365 التشفير على مستوى وحدة التخزين ومستوى الملفات. بالنسبة لبيانات العملاء المتنقلة، يستخدم Microsoft 365 تقنيات تشفير متعددة للاتصالات بين مراكز البيانات وبين العملاء والخوادم، مثل بروتوكول أمان طبقة النقل (TLS) وأمان بروتوكول الإنترنت (IPsec). يتضمن Microsoft 365 أيضا ميزات التشفير التي يديرها العملاء.
 
 </details>
 
@@ -107,21 +107,21 @@ ms.locfileid: "65874042"
 
 </details>
 
-### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>ما هي القدرات متعددة المناطق الجغرافية في Microsoft 365؟
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>ما هي الإمكانات متعددة المناطق الجغرافية في Microsoft 365؟
 <details><summary>انقر للتوسيع</summary>
 
-يمنح [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) العملاء القدرة على تخصيص بيانات العملاء الأساسية الثابتة إلى مواقعنا المتاحة في سحابة Microsoft 365.
+يمنح [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) العملاء القدرة على تخصيص بيانات العملاء الأساسية الثابتة إلى مواقعنا المتوفرة في سحابة Microsoft 365.
 
 </details>  
 
 ### <a name="what-services-support-multi-geo"></a>ما هي الخدمات التي تدعم Multi-Geo؟
 <details><summary>انقر للتوسيع</summary>
 
-يتوفر [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) Exchange Online OneDrive for Business SharePoint Online و Teams.
+يتوفر [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) Exchange Online OneDrive for Business وSharePoint Online وTeams.
 
 </details>
 
-### <a name="why-do-i-see-my-microsoft-365-service-requests-for-my-data-at-rest-connecting-to-servers-in-countries-outside-of-my-region"></a>لماذا أرى طلبات خدمة Microsoft 365 لبياناتي الثابتة التي تتصل بالخوادم في بلدان خارج منطقتي؟
+### <a name="why-do-i-see-my-microsoft-365-service-requests-for-my-data-at-rest-connecting-to-servers-in-countries-outside-of-my-region"></a>لماذا يمكنني رؤية طلبات خدمة Microsoft 365 لبياناتي الثابتة التي تتصل بالخوادم في بلدان خارج منطقتي؟
 <details><summary>انقر للتوسيع</summary>
 
 في بعض الأحيان، قد تتم معالجة طلب العميل بواسطة خوادم في منطقة مختلفة عن الموقع حيث يتم تخزين بياناتك في وضع السكون. قد يحدث هذا عندما تختار قرارات توجيه الشبكة خادما مختلفا لمعالجة الطلب، ولكن في هذه الحالات لا يتم نقل بياناتك إلى موقع جديد في وضع السكون.
@@ -143,12 +143,12 @@ ms.locfileid: "65874042"
 
 </details>
 
-### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>ما هي الاعتبارات الخاصة بمواقع البيانات Microsoft Viva؟
+### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>ما هي الاعتبارات الخاصة بمواقع بيانات Microsoft Viva؟
 <details><summary>انقر للتوسيع</summary>
 
 - Viva Connections
   - يتم تخزين بيانات تطبيق لوحة المعلومات والموارد وسطح المكتب في SharePoint Online.
-  - يتضمن الموجز محتوى من SharePoint Online (News) و Stream (مخزن في وضع السكون في SharePoint Online) Yammer (مخزن في Yammer).
+  - يتضمن الموجز محتوى من SharePoint Online (أخبار) و Stream (مخزن في وضع السكون في SharePoint Online) و Yammer (مخزن في Yammer).
 - Viva Insights
   - تستند موقع البيانات للتطبيق الشخصي إلى موقع علبة بريد المستخدم.
   - يتم تحديد منطقة البيانات ل Manager/Leader و Advanced بواسطة المنطقة الأساسية للمستأجر، وليس المستخدمين الفرديين.
@@ -192,7 +192,7 @@ ms.locfileid: "65874042"
 | المملكة المتحدة | دورهام، لندن، كارديف |
 | الولايات المتحدة |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Santa, Santa Clara, San Boy |
 
-يتم تعيين المستأجرين Microsoft 365 الجدد افتراضيا إلى Geo استنادا إلى بلد عنوان الفوترة المقترن باشتراك المستأجر الأول. لتأكيد مكان تخزين بيانات العميل لخدمات Office 365 الموجودة، الرجاء عرض معلومات موقع بيانات المستأجر المحدد في مركز Office 365 Admin في الإعدادات | إعدادات المؤسسة | | ملف تعريف المؤسسة بطاقة موقع البيانات. بدلا من ذلك، قم بتوسيع البلد الذي تستند إليه شركتك، من القائمة أدناه، لمعرفة مكان تخزين بيانات العملاء إذا كنت ستبدأ في استخدام خدمة Microsoft 365 اليوم.
+يتم تعيين مستأجري Microsoft 365 الجدد افتراضيا إلى Geo استنادا إلى بلد عنوان الفوترة المقترن باشتراك المستأجر الأول. لتأكيد مكان تخزين بيانات العميل لخدمات Office 365 الموجودة، الرجاء عرض معلومات موقع بيانات خاصة بالمستأجر في مركز Office 365 Admin في "الإعدادات" | إعدادات المؤسسة | | ملف تعريف المؤسسة بطاقة موقع البيانات. بدلا من ذلك، قم بتوسيع البلد الذي تستند إليه شركتك، من القائمة أدناه، لمعرفة مكان تخزين بيانات العملاء إذا كنت ستبدأ في استخدام خدمة Microsoft 365 اليوم.
 
 ## <a name="afghanistan"></a>أفغانستان
 <details><summary>انقر للتوسيع</summary><p>
@@ -203,7 +203,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -231,7 +231,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -259,7 +259,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -287,7 +287,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -315,7 +315,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -343,7 +343,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -371,7 +371,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -399,7 +399,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -427,7 +427,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -455,7 +455,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -483,7 +483,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 3 – الاميركتان |
 | SharePoint Online | الجغرافيا العالمية 3 – الاميركتان |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الجغرافيا العالمية 3 – الاميركتان |
+| Office Online &amp; Mobile | الجغرافيا العالمية 3 – الاميركتان |
 | EOP | الجغرافيا العالمية 3 – الاميركتان |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -511,7 +511,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -539,7 +539,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -567,7 +567,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | أستراليا |
 | SharePoint Online | أستراليا |
 | Microsoft Teams | أستراليا |
-| Office Online &amp; المحمول | أستراليا |
+| Office Online &amp; Mobile | أستراليا |
 | EOP | أستراليا |
 | Intune | أستراليا |
 | Planner | أستراليا |
@@ -595,7 +595,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -623,7 +623,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -651,7 +651,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -679,7 +679,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -707,7 +707,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -735,7 +735,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -763,7 +763,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -791,7 +791,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -819,7 +819,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -847,7 +847,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -875,7 +875,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -903,7 +903,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -931,7 +931,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 3 – الاميركتان |
 | SharePoint Online | الجغرافيا العالمية 3 – الاميركتان |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الجغرافيا العالمية 3 – الاميركتان |
+| Office Online &amp; Mobile | الجغرافيا العالمية 3 – الاميركتان |
 | EOP | الجغرافيا العالمية 3 – الاميركتان |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -959,7 +959,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 3 – الاميركتان |
 | SharePoint Online | الجغرافيا العالمية 3 – الاميركتان |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الجغرافيا العالمية 3 – الاميركتان |
+| Office Online &amp; Mobile | الجغرافيا العالمية 3 – الاميركتان |
 | EOP | الجغرافيا العالمية 3 – الاميركتان |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -987,7 +987,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1015,7 +1015,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1043,7 +1043,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -1071,7 +1071,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | البرازيل |
 | SharePoint Online | البرازيل |
 | Microsoft Teams | البرازيل |
-| Office Online &amp; المحمول | البرازيل |
+| Office Online &amp; Mobile | البرازيل |
 | EOP | البرازيل |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -1099,7 +1099,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -1127,7 +1127,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -1155,7 +1155,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -1183,7 +1183,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -1211,7 +1211,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1239,7 +1239,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1267,7 +1267,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -1295,7 +1295,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1323,7 +1323,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | كندا |
 | SharePoint Online | كندا |
 | Microsoft Teams | كندا |
-| Office Online &amp; المحمول | كندا |
+| Office Online &amp; Mobile | كندا |
 | EOP | كندا |
 | Intune | الولايات المتحدة |
 | Planner | كندا |
@@ -1351,7 +1351,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1379,7 +1379,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -1407,7 +1407,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1435,7 +1435,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1463,7 +1463,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 3 – الاميركتان |
 | SharePoint Online | الجغرافيا العالمية 3 – الاميركتان |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الجغرافيا العالمية 3 – الاميركتان |
+| Office Online &amp; Mobile | الجغرافيا العالمية 3 – الاميركتان |
 | EOP | الجغرافيا العالمية 3 – الاميركتان |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -1491,7 +1491,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -1519,7 +1519,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -1547,7 +1547,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -1575,7 +1575,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -1603,7 +1603,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1631,7 +1631,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1659,7 +1659,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1687,7 +1687,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -1715,7 +1715,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -1743,7 +1743,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1771,7 +1771,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -1799,7 +1799,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 3 – الاميركتان |
 | SharePoint Online | الجغرافيا العالمية 3 – الاميركتان |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الجغرافيا العالمية 3 – الاميركتان |
+| Office Online &amp; Mobile | الجغرافيا العالمية 3 – الاميركتان |
 | EOP | الجغرافيا العالمية 3 – الاميركتان |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -1827,7 +1827,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -1855,7 +1855,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -1883,7 +1883,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -1911,7 +1911,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -1939,7 +1939,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -1967,7 +1967,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -1995,7 +1995,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 3 – الاميركتان |
 | SharePoint Online | الجغرافيا العالمية 3 – الاميركتان |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الجغرافيا العالمية 3 – الاميركتان |
+| Office Online &amp; Mobile | الجغرافيا العالمية 3 – الاميركتان |
 | EOP | الجغرافيا العالمية 3 – الاميركتان |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -2023,7 +2023,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2051,7 +2051,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -2079,7 +2079,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2107,7 +2107,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2135,7 +2135,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -2163,7 +2163,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2191,7 +2191,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 3 – الاميركتان |
 | SharePoint Online | الجغرافيا العالمية 3 – الاميركتان |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الجغرافيا العالمية 3 – الاميركتان |
+| Office Online &amp; Mobile | الجغرافيا العالمية 3 – الاميركتان |
 | EOP | الجغرافيا العالمية 3 – الاميركتان |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -2219,7 +2219,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2247,7 +2247,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -2275,7 +2275,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | أستراليا |
 | SharePoint Online | أستراليا |
 | Microsoft Teams | أستراليا |
-| Office Online &amp; المحمول | أستراليا |
+| Office Online &amp; Mobile | أستراليا |
 | EOP | أستراليا |
 | Intune | أستراليا |
 | Planner | أستراليا |
@@ -2303,7 +2303,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -2331,7 +2331,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | فرنسا |
 | SharePoint Online | فرنسا |
 | Microsoft Teams | فرنسا |
-| Office Online &amp; المحمول | فرنسا |
+| Office Online &amp; Mobile | فرنسا |
 | EOP | فرنسا |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -2359,7 +2359,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 3 – الاميركتان |
 | SharePoint Online | الجغرافيا العالمية 3 – الاميركتان |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الجغرافيا العالمية 3 – الاميركتان |
+| Office Online &amp; Mobile | الجغرافيا العالمية 3 – الاميركتان |
 | EOP | الجغرافيا العالمية 3 – الاميركتان |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -2387,7 +2387,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -2415,7 +2415,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -2443,7 +2443,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2471,7 +2471,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2499,7 +2499,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2527,7 +2527,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | ألمانيا |
 | SharePoint Online | ألمانيا |
 | Microsoft Teams | ألمانيا |
-| Office Online &amp; المحمول | ألمانيا |
+| Office Online &amp; Mobile | ألمانيا |
 | EOP | ألمانيا |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -2555,7 +2555,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2583,7 +2583,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2611,7 +2611,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -2639,7 +2639,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -2667,7 +2667,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -2695,7 +2695,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -2723,7 +2723,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -2751,7 +2751,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -2779,7 +2779,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2807,7 +2807,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2835,7 +2835,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2863,7 +2863,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 3 – الاميركتان |
 | SharePoint Online | الجغرافيا العالمية 3 – الاميركتان |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الجغرافيا العالمية 3 – الاميركتان |
+| Office Online &amp; Mobile | الجغرافيا العالمية 3 – الاميركتان |
 | EOP | الجغرافيا العالمية 3 – الاميركتان |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -2891,7 +2891,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -2919,7 +2919,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -2947,7 +2947,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -2975,7 +2975,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3003,7 +3003,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -3031,7 +3031,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -3059,7 +3059,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -3087,7 +3087,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3115,7 +3115,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الهند |
 | SharePoint Online | الهند |
 | Microsoft Teams | الهند |
-| Office Online &amp; المحمول | الهند |
+| Office Online &amp; Mobile | الهند |
 | EOP | الهند |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -3143,7 +3143,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -3171,7 +3171,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3199,7 +3199,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -3227,7 +3227,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3255,7 +3255,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3283,7 +3283,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -3311,7 +3311,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -3339,7 +3339,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | اليابان |
 | SharePoint Online | اليابان |
 | Microsoft Teams | اليابان |
-| Office Online &amp; المحمول | اليابان |
+| Office Online &amp; Mobile | اليابان |
 | EOP | اليابان |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | اليابان |
@@ -3367,7 +3367,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3395,7 +3395,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3423,7 +3423,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3451,7 +3451,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3479,7 +3479,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -3507,7 +3507,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | كوريا الجنوبية |
 | SharePoint Online | كوريا الجنوبية |
 | Microsoft Teams | كوريا الجنوبية |
-| Office Online &amp; المحمول | كوريا الجنوبية |
+| Office Online &amp; Mobile | كوريا الجنوبية |
 | EOP | كوريا الجنوبية |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -3535,7 +3535,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3563,7 +3563,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3591,7 +3591,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3619,7 +3619,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -3647,7 +3647,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -3675,7 +3675,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3703,7 +3703,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3731,7 +3731,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3759,7 +3759,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3787,7 +3787,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | سويسرا |
 | SharePoint Online | سويسرا |
 | Microsoft Teams | سويسرا |
-| Office Online &amp; المحمول | سويسرا |
+| Office Online &amp; Mobile | سويسرا |
 | EOP | سويسرا |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -3815,7 +3815,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -3843,7 +3843,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -3871,7 +3871,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3899,7 +3899,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -3927,7 +3927,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -3955,7 +3955,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -3983,7 +3983,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4011,7 +4011,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -4039,7 +4039,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -4067,7 +4067,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -4095,7 +4095,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4123,7 +4123,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4151,7 +4151,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4179,7 +4179,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -4207,7 +4207,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4235,7 +4235,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4263,7 +4263,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -4291,7 +4291,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4319,7 +4319,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -4347,7 +4347,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4375,7 +4375,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4403,7 +4403,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -4431,7 +4431,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4459,7 +4459,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -4487,7 +4487,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -4515,7 +4515,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -4543,7 +4543,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -4571,7 +4571,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -4599,7 +4599,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | أستراليا |
 | SharePoint Online | أستراليا |
 | Microsoft Teams | أستراليا |
-| Office Online &amp; المحمول | أستراليا |
+| Office Online &amp; Mobile | أستراليا |
 | EOP | أستراليا |
 | Intune | أستراليا |
 | Planner | أستراليا |
@@ -4627,7 +4627,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -4655,7 +4655,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4683,7 +4683,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4711,7 +4711,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -4739,7 +4739,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -4767,7 +4767,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -4795,7 +4795,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | النرويج |
 | SharePoint Online | النرويج |
 | Microsoft Teams | النرويج |
-| Office Online &amp; المحمول | النرويج |
+| Office Online &amp; Mobile | النرويج |
 | EOP | النرويج |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4824,7 +4824,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4852,7 +4852,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -4880,7 +4880,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -4908,7 +4908,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -4936,7 +4936,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -4964,7 +4964,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -4992,7 +4992,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 3 – الاميركتان |
 | SharePoint Online | الجغرافيا العالمية 3 – الاميركتان |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الجغرافيا العالمية 3 – الاميركتان |
+| Office Online &amp; Mobile | الجغرافيا العالمية 3 – الاميركتان |
 | EOP | الجغرافيا العالمية 3 – الاميركتان |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -5020,7 +5020,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 3 – الاميركتان |
 | SharePoint Online | الجغرافيا العالمية 3 – الاميركتان |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الجغرافيا العالمية 3 – الاميركتان |
+| Office Online &amp; Mobile | الجغرافيا العالمية 3 – الاميركتان |
 | EOP | الجغرافيا العالمية 3 – الاميركتان |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -5048,7 +5048,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -5076,7 +5076,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -5104,7 +5104,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -5132,7 +5132,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -5160,7 +5160,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -5188,7 +5188,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5216,7 +5216,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5244,7 +5244,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5272,7 +5272,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -5300,7 +5300,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5328,7 +5328,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5356,7 +5356,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5384,7 +5384,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -5412,7 +5412,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -5440,7 +5440,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -5468,7 +5468,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -5496,7 +5496,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -5524,7 +5524,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -5552,7 +5552,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -5580,7 +5580,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5608,7 +5608,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5636,7 +5636,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5664,7 +5664,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5692,7 +5692,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5720,7 +5720,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5748,7 +5748,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5776,7 +5776,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -5804,7 +5804,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -5832,7 +5832,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -5860,7 +5860,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -5888,7 +5888,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -5916,7 +5916,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -5944,7 +5944,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | جمهورية جنوب أفريقيا |
 | SharePoint Online | جمهورية جنوب أفريقيا |
 | Microsoft Teams | جمهورية جنوب أفريقيا |
-| Office Online &amp; المحمول | جمهورية جنوب أفريقيا |
+| Office Online &amp; Mobile | جمهورية جنوب أفريقيا |
 | EOP | جمهورية جنوب أفريقيا |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الولايات المتحدة |
@@ -5972,7 +5972,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -6000,7 +6000,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الاتحاد الأوروبي |
 | SharePoint Online | الاتحاد الأوروبي |
 | Microsoft Teams | الاتحاد الأوروبي |
-| Office Online &amp; المحمول | الاتحاد الأوروبي |
+| Office Online &amp; Mobile | الاتحاد الأوروبي |
 | EOP | الاتحاد الأوروبي |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -6028,7 +6028,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -6056,7 +6056,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -6084,7 +6084,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6112,7 +6112,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6140,7 +6140,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | السويد |
 | SharePoint Online | السويد |
 | Microsoft Teams | السويد |
-| Office Online &amp; المحمول | السويد |
+| Office Online &amp; Mobile | السويد |
 | EOP | السويد |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -6168,7 +6168,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | سويسرا |
 | SharePoint Online | سويسرا |
 | Microsoft Teams | سويسرا |
-| Office Online &amp; المحمول | سويسرا |
+| Office Online &amp; Mobile | سويسرا |
 | EOP | سويسرا |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -6196,7 +6196,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -6224,7 +6224,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6252,7 +6252,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6280,7 +6280,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -6308,7 +6308,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -6336,7 +6336,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6364,7 +6364,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -6392,7 +6392,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -6420,7 +6420,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -6448,7 +6448,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6476,7 +6476,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6504,7 +6504,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6532,7 +6532,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -6560,7 +6560,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -6588,7 +6588,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -6616,7 +6616,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6644,7 +6644,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6672,7 +6672,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الإمارات العربية المتحدة |
 | SharePoint Online | الإمارات العربية المتحدة |
 | Microsoft Teams | الإمارات العربية المتحدة |
-| Office Online &amp; المحمول | الإمارات العربية المتحدة |
+| Office Online &amp; Mobile | الإمارات العربية المتحدة |
 | EOP | الإمارات العربية المتحدة |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6700,7 +6700,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | المملكة المتحدة |
 | SharePoint Online | المملكة المتحدة |
 | Microsoft Teams | المملكة المتحدة |
-| Office Online &amp; المحمول | المملكة المتحدة |
+| Office Online &amp; Mobile | المملكة المتحدة |
 | EOP | المملكة المتحدة |
 | Intune | الاتحاد الأوروبي |
 | Planner | الاتحاد الأوروبي |
@@ -6728,7 +6728,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -6756,7 +6756,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 3 – الاميركتان |
 | SharePoint Online | الجغرافيا العالمية 3 – الاميركتان |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الجغرافيا العالمية 3 – الاميركتان |
+| Office Online &amp; Mobile | الجغرافيا العالمية 3 – الاميركتان |
 | EOP | الجغرافيا العالمية 3 – الاميركتان |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -6784,7 +6784,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -6812,7 +6812,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6840,7 +6840,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -6867,7 +6867,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الولايات المتحدة |
 | SharePoint Online | الولايات المتحدة |
 | Microsoft Teams | الولايات المتحدة |
-| Office Online &amp; المحمول | الولايات المتحدة |
+| Office Online &amp; Mobile | الولايات المتحدة |
 | EOP | الولايات المتحدة |
 | Intune | الولايات المتحدة |
 | Planner | الولايات المتحدة |
@@ -6895,7 +6895,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -6923,7 +6923,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | SharePoint Online | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Microsoft Teams | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
-| Office Online &amp; المحمول | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
+| Office Online &amp; Mobile | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | EOP | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Intune | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
 | Planner | الجغرافيا العالمية 2 – آسيا والمحيط الهادئ |
@@ -6951,7 +6951,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -6979,7 +6979,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -7007,7 +7007,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
@@ -7035,7 +7035,7 @@ ms.locfileid: "65874042"
 | OneDrive for Business | الجغرافيا العالمية 1 – EMEA |
 | SharePoint Online | الجغرافيا العالمية 1 – EMEA |
 | Microsoft Teams | الجغرافيا العالمية 1 – EMEA |
-| Office Online &amp; المحمول | الجغرافيا العالمية 1 – EMEA |
+| Office Online &amp; Mobile | الجغرافيا العالمية 1 – EMEA |
 | EOP | الجغرافيا العالمية 1 – EMEA |
 | Intune | الجغرافيا العالمية 1 – EMEA |
 | Planner | الجغرافيا العالمية 1 – EMEA |
