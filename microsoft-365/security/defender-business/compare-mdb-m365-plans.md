@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 9c3c4cf2914e268abeabc199e72ef28dac81a0f1
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: be57910a1f6b2387a1b826e6cff17e418ec3da2b
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771985"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795367"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>مقارنة ميزات الأمان في خطط Microsoft 365 للشركات الصغيرة والمتوسطة الحجم
 
@@ -48,7 +48,7 @@ ms.locfileid: "66771985"
 |حماية البريد الإلكتروني|نعم <br/>[مسح البريد الإلكتروني باستخدام برنامج الحماية من الفيروسات من Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|نعم <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[مسح البريد الإلكتروني باستخدام برنامج الحماية من الفيروسات من Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
 |حماية Antispam|نعم<br/>للأجهزة|نعم <ul><li>للأجهزة</li><li>لمحتوى البريد الإلكتروني ل Microsoft 365، مثل الرسائل والمرفقات</li></ul>|
 |الحماية من البرامج الضارة|نعم<br/>للأجهزة|نعم<ul><li>للأجهزة</li><li>لمحتوى البريد الإلكتروني ل Microsoft 365، مثل الرسائل والمرفقات</li></ul>|
-|[حماية الجيل التالي](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (الحماية من الفيروسات والحماية من البرامج الضارة)|نعم<br/>يتم تضمين برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10 والإي وقت لاحق|نعم <ul><li>يتم تضمين برنامج الحماية من الفيروسات من Microsoft Defender في Windows 10 والإي وقت لاحق</li><li>نهج الحماية من الجيل التالي للأجهزة التي تم إلحاقها</li></ul>|
+|[حماية الجيل التالي](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (الحماية من الفيروسات والحماية من البرامج الضارة للأجهزة الملحقة)|نعم |نعم |
 |[قواعد تقليل الأجزاء المعرضة للهجوم](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(قواعد ASR في Windows 10 أو الأحدث وحماية جدار الحماية)|نعم|نعم|
 |[الكشف عن نقطة النهاية والاستجابة لها](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(إجراءات الكشف والاستجابة اليدوية المستندة إلى السلوك)|نعم|نعم|
 |[التحقيق التلقائي والاستجابة (AIR)](../defender-endpoint/automated-investigations.md)|نعم|نعم|

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 547b41deceae01045baf119aeba1c15b8573a23f
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: ac40dcc986dfb4c66b9030cdf8c22ebabe1bd3d2
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695847"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795411"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية
 
@@ -298,11 +298,10 @@ Msiexec /x md4ws.msi /quiet
     ```
 
     > [!NOTE]
-    > إذا كنت بحاجة إلى استكشاف مشكلات تثبيت العامل وإصلاحها، فإضافة '-etl -log' إلى معلمات البرنامج النصي install.ps1.
-    >
+
     > إعداد نهج التنفيذ الموصى به هو `Allsigned`. يتطلب هذا استيراد شهادة توقيع البرنامج النصي إلى مخزن الناشرين الموثوق بهم للكمبيوتر المحلي إذا كان البرنامج النصي قيد التشغيل ك SYSTEM على نقطة النهاية.
 
-    استبدل \\servername-or-dfs-space\share-name بمسار UNC، باستخدام اسم المجال المؤهل بالكامل لخادم الملفات (FQDN)، لملف *install.ps1* المشترك. يجب وضع حزمة المثبت md4ws.msi في نفس الدليل.  تأكد أيضا من أن أذونات مسار UNC تسمح بالوصول للقراءة إلى حساب الكمبيوتر الذي يقوم بتثبيت النظام الأساسي.
+    استبدل \\servername-or-dfs-space\share-name بمسار UNC، باستخدام اسم المجال المؤهل بالكامل لخادم الملفات (FQDN)، لملف *install.ps1* المشترك. يجب وضع حزمة المثبت md4ws.msi في نفس الدليل.  تأكد من أن أذونات مسار UNC تسمح بالوصول للكتابة إلى حساب الكمبيوتر الذي يقوم بتثبيت الحزمة، لدعم إنشاء ملفات السجل. إذا كنت ترغب في تعطيل إنشاء ملفات السجل (غير مستحسن)، يمكنك استخدام معلمات -noETL -noETW.
 
     بالنسبة للسيناريوهات التي تريد أن يتعايش فيها برنامج الحماية من الفيروسات من Microsoft Defender مع حلول مكافحة البرامج الضارة غير الخاصة ب Microsoft، أضف المعلمة $Passive لتعيين الوضع السلبي أثناء التثبيت.
 

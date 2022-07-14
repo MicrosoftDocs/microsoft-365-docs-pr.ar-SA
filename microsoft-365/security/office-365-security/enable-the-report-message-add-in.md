@@ -17,12 +17,12 @@ ms.collection:
 description: تعرف على كيفية تمكين الوظائف الإضافية "رسالة التقرير" أو "الإبلاغ عن التصيد الاحتيالي" ل Outlook Outlook على ويب أو للمستخدمين الفرديين أو لمؤسستك بأكملها.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 636effd1f3d9f0fd824ead4ed59e48fdee26ef20
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f1d51499558780f1b20fa5f6955e7c4a7c2ff5e8
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685690"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795433"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>تمكين الوظيفة الإضافية "رسالة التقرير" أو الوظائف الإضافية "تصيد التقرير"
 
@@ -205,3 +205,24 @@ ms.locfileid: "66685690"
     > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="القائمة المنبثقة &quot;الإبلاغ عن التصيد الاحتيالي&quot;." lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
 3. لإزالة الوظيفة الإضافية، حدد **"إزالة التطبيق** " ضمن **"الإجراءات"** في القائمة المنبثقة نفسها.
+
+## <a name="get-the-report-message-or-the-report-phishing-add-ins-for-the-gcc-and-gcch-users"></a>الحصول على "رسالة التقرير" أو الوظائف الإضافية "الإبلاغ عن التصيد الاحتيالي" لمستخدمي GCC و GCCH
+
+إذا كنت مسؤولا في Government Community Cloud High (GCCH) أو مسؤول سحابة مجتمع حكومي (GCC)، فاستخدم الخطوات التالية للحصول على "رسالة التقرير" أو الوظائف الإضافية "الإبلاغ عن التصيد الاحتيالي" لمؤسستك. لاحظ أنه إذا كنت مستخدما فرديا، فلا يمكنك الحصول على الوظيفة الإضافية باستخدام Microsoft AppSource.
+
+> [!NOTE]
+> قد يستغرق ظهور الوظيفة الإضافية في مؤسستك ما يصل إلى 24 ساعة. 
+
+1. في مركز مسؤولي Microsoft 365، انتقل إلى "الوظائف **الإضافية** **للإعدادات**\>"، وحدد **"نشر الوظيفة الإضافية**". 
+
+2. يتم فتح القائمة **المنبثقة لنشر وظيفة إضافية جديدة** . انقر فوق **"التالي**"، ثم حدد **"تحميل التطبيقات المخصصة**".  
+
+3. حدد **أن لدي عنوان URL لملف البيان**. استخدم عناوين URL التالية للحصول على ["رسالة التقرير](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml) " والوظائف الإضافية ["تصيد التقرير](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportPhishingAzure.xml) ". 
+
+4. اختر المستخدمين الذين سيكون لديهم حق الوصول إلى الوظيفة الإضافية وحدد أسلوب توزيع، ثم حدد **Deploy**. 
+
+5. لتكوين الإعدادات بشكل كامل، راجع [إعدادات الرسالة التي أبلغ عنها المستخدم](user-submission.md). 
+
+## <a name="use-the-report-message-or-the-report-phishing-add-ins"></a>استخدام "رسالة التقرير" أو الوظائف الإضافية "الإبلاغ عن التصيد الاحتيالي"
+
+يمكنك استخدام الوظائف الإضافية "رسالة التقرير" أو "الإبلاغ عن التصيد الاحتيالي" لإرسال إيجابيات خاطئة (بريد إلكتروني جيد تم حظره أو إرساله إلى مجلد غير هام) وسلبيات خاطئة (بريد إلكتروني غير مرغوب فيه أو تصيد احتيالي تم تسليمه إلى علبة الوارد) في Outlook. لمزيد من المعلومات، راجع ["الإبلاغ عن الإيجابيات الخاطئة والسلبيات الخاطئة" في Outlook](report-false-positives-and-false-negatives.md).
