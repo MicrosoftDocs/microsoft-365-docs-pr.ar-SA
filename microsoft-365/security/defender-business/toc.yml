@@ -11,10 +11,12 @@
           href: trial-playbook-defender-business.md
         - name: مقارنة الخطط للشركات الصغيرة والمتوسطة الحجم
           href: compare-mdb-m365-plans.md
-        - name: التكامل مع Microsoft 365 Lighthouse
-          href: mdb-lighthouse-integration.md
+        - name: ميزات المعاينة
+          href: mdb-preview.md
         - name: موارد للشركاء
           href: mdb-partners.md
+        - name: التكامل مع Microsoft 365 Lighthouse
+          href: mdb-lighthouse-integration.md
     - name: بدء الاستخدام
       items:
         - name: الحصول على Defender for Business
@@ -75,6 +77,8 @@
           href: mdb-offboard-devices.md
     - name: معلومات المرجع
       items:
+        - name: كيفية الحصول على خوادم Microsoft Defender for Business (معاينة)
+          href: get-defender-business-servers.md
         - name: كيفية الحصول على المساعدة أو الاتصال بالدعم
           href: mdb-get-help.md
         - name: الأسئلة الشائعة
