@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 8afb59606f4d13e96db5d4f03ffd8126c6ee9ba2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fc812b399cb6c80dfd41cc5ff4840a8288daac1f
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642558"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787463"
 ---
 # <a name="get-started-with-insider-risk-management"></a>بدء استخدام إدارة المخاطر الداخلية
 
@@ -231,7 +231,7 @@ ms.locfileid: "66642558"
 
 ## <a name="step-5-required-configure-insider-risk-settings"></a>الخطوة 5 (مطلوبة): تكوين إعدادات المخاطر الداخلية
 
-تنطبق [إعدادات المخاطر](insider-risk-management-settings.md) الداخلية على جميع نهج إدارة المخاطر الداخلية، بغض النظر عن القالب الذي اخترته عند إنشاء نهج. يتم تكوين الإعدادات باستخدام عنصر تحكم **إعدادات المخاطر Insider** الموجود في أعلى جميع علامات تبويب إدارة المخاطر الداخلية. تتحكم هذه الإعدادات في الخصوصية والمؤشرات ونوافذ المراقبة والكشف الذكي.
+تنطبق [إعدادات المخاطر](insider-risk-management-settings.md) الداخلية على جميع نهج إدارة المخاطر الداخلية، بغض النظر عن القالب الذي اخترته عند إنشاء نهج. يتم تكوين الإعدادات باستخدام عنصر تحكم **إعدادات المخاطر Insider** الموجود في أعلى جميع علامات تبويب إدارة المخاطر الداخلية. تتحكم هذه الإعدادات في الخصوصية والمؤشرات والكشف الذكي والمزيد.
 
 قبل تكوين نهج، حدد إعدادات المخاطر الداخلية التالية:
 

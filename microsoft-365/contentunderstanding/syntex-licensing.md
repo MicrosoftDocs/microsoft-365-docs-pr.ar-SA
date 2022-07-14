@@ -13,19 +13,19 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: تعرف على ترخيص SharePoint Syntex
-ms.openlocfilehash: 7a7f310cb9c925fdb98a38ee12335abde91ea1db
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 31b10c0107bf871f827244889ac7ec77f7958e1f
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839319"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787485"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>ترخيص SharePoint Syntex
 
-لاستخدام SharePoint Syntex، يجب أن يكون لدى مؤسستك اشتراك في SharePoint Syntex، ويجب أن يكون لكل مستخدم SharePoint Syntex ترخيص. إذا قمت بإلغاء اشتراكك في SharePoint Syntex في تاريخ مستقبلي (أو تنتهي صلاحية الإصدار التجريبي)، فلن يتمكن المستخدمون من إنشاء نماذج فهم المستندات أو نماذج معالجة النماذج أو نشرها أو تشغيلها. بالإضافة إلى ذلك، لن تتوفر تقارير مخزن المصطلحات واستيراد تصنيف SKOS ودفع نوع المحتوى. لن يتم حذف أي نماذج أو محتوى أو بيانات تعريف ولن يتم تغيير أذونات الموقع.
+لاستخدام SharePoint Syntex، يجب أن يكون لكل مستخدم Syntex ترخيص له. إذا قمت بإلغاء تراخيص SharePoint Syntex في تاريخ مستقبلي (أو تنتهي صلاحية الإصدار التجريبي)، فلن يتمكن المستخدمون من إنشاء نماذج فهم المستندات أو نماذج معالجة النماذج أو نشرها أو تشغيلها. بالإضافة إلى ذلك، لن تتوفر تقارير مخزن المصطلحات واستيراد تصنيف SKOS ودفع نوع المحتوى. لن يتم حذف أي نماذج أو محتوى أو بيانات تعريف ولن يتم تغيير أذونات الموقع.
  
 > [!NOTE] 
-> SharePoint Syntex هو ترخيص وظيفة إضافية ويتطلب من المستخدمين أيضا الحصول على ترخيص Microsoft 365.
+> SharePoint Syntex هو ترخيص وظيفة إضافية ويتطلب من المستخدمين أيضا الحصول على ترخيص ل Microsoft 365.
  
 ## <a name="tasks-requiring-a-license"></a>المهام التي تتطلب ترخيصا
  
@@ -35,7 +35,7 @@ ms.locfileid: "65839319"
 - إنشاء نموذج معالجة نموذج عبر نقطة الإدخال في مكتبة
 - تحميل المحتوى إلى مكتبة حيث تم تطبيق نموذج فهم المستند أو معالجة النموذج
 - تشغيل نموذج فهم المستند عند الطلب
-- استخدام خدمات التصنيف المتميزة. (تتضمن خدمات التصنيف Premium استيراد مجموعة المصطلحات المستندة إلى SKOS، ودفع أنواع محتويات المؤسسة إلى المواقع المرتبطة بالمركز، وتقارير مخزن المصطلحات.)
+- استخدام خدمات التصنيف المتميزة. (تتضمن خدمات التصنيف المتميزة استيراد مجموعة المصطلحات المستندة إلى SKOS، ودفع أنواع محتويات المؤسسة إلى المواقع المرتبطة بالمركز، وتقارير مخزن المصطلحات.)
 
 يمكن منح المستخدمين غير المرخصين حق الوصول إلى مركز محتوى ويمكنهم إنشاء نماذج لفهم المستندات هناك ولكن لا يمكنهم تطبيقها على مكتبة مستندات.
  
@@ -64,4 +64,4 @@ ms.locfileid: "65839319"
 
 [نظرة عامة على الترخيص ل Microsoft Power Platform](/power-platform/admin/pricing-billing-skus)
 
-[الأسئلة المتداولة حول ترخيص Power Apps و Power Automate](/power-platform/admin/powerapps-flow-licensing-faq)
+[الأسئلة المتداولة حول ترخيص Power Apps وPower Automate](/power-platform/admin/powerapps-flow-licensing-faq)
