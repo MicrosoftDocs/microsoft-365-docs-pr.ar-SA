@@ -17,16 +17,16 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b302231d7dbdcc92ee2e8e2e0564cedb27a4218e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4b2a45a667aa654a8ff3111313b542433e692f1f
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621106"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823374"
 ---
 # <a name="learn-about-information-barriers"></a>التعرّف على عوائق المعلومات
 
-يعد Microsoft Purview Information Barriers (IB) حلا للامتثال يسمح لك بتقييد الاتصال والتعاون ثنائي الاتجاه بين المجموعات والمستخدمين في Microsoft Teams وSharePoint Online OneDrive for Business. غالبا ما يستخدم في الصناعات المنظمة للغاية، يمكن أن يساعد IB في تجنب تضاربات الاهتمام وحماية المعلومات الداخلية بين المستخدمين والمجالات التنظيمية.
+يعد Microsoft Purview Information Barriers (IB) حلا للامتثال يسمح لك بتقييد الاتصال والتعاون ثنائي الاتجاه بين المجموعات والمستخدمين في Microsoft Teams وSharePoint وOneDrive. غالبا ما يستخدم في الصناعات المنظمة للغاية، يمكن أن يساعد IB في تجنب تضاربات الاهتمام وحماية المعلومات الداخلية بين المستخدمين والمجالات التنظيمية.
 
 عندما تكون نهج IB في مكانها، لن يتمكن المستخدمون الذين لا يجب عليهم الاتصال بالملفات أو مشاركتها مع مستخدمين محددين آخرين من العثور على هؤلاء المستخدمين أو تحديدهم أو الدردشة معهم أو الاتصال معهم. تضع نهج IB عمليات التحقق تلقائيا للكشف عن الاتصالات غير المصرح بها والتعاون بين المجموعات والمستخدمين المحددين ومنعها. نهج IB مستقلة عن [حدود التوافق](/microsoft-365/compliance/set-up-compliance-boundaries) لتحقيقات eDiscovery التي تتحكم في مواقع محتوى المستخدم التي يمكن لمديري eDiscovery البحث فيها.
 
@@ -61,7 +61,7 @@ ms.locfileid: "66621106"
 
 ## <a name="information-barriers-and-sharepoint-and-onedrive"></a>حواجز المعلومات وSharePoint وOneDrive
 
-في SharePoint Online وOneDrive، تكتشف نهج IB الأنواع التالية من التعاون غير المصرح به وتمنعها:
+في SharePoint وOneDrive، تكتشف نهج IB الأنواع التالية من التعاون غير المصرح به وتمنعها:
 
 - إضافة عضو إلى موقع
 - الوصول إلى الموقع أو المحتوى من قبل مستخدم

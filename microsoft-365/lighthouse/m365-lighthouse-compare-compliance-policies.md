@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية مقارنة إعدادات نهج توافق الجهاز.
-ms.openlocfilehash: 5b82067f7d06ddd599a0e8da73825e536cf2d3fd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0a0c5127a86832637a16449e06c3df70299b49a3
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008408"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822890"
 ---
 # <a name="compare-device-compliance-policy-settings-in-microsoft-365-lighthouse"></a>مقارنة إعدادات نهج توافق الجهاز في Microsoft 365 Lighthouse
 
@@ -30,11 +30,11 @@ ms.locfileid: "66008408"
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-تأكد من أن الأجهزة لديها ترخيص Microsoft Intune ومن أنها مسجلة في إدارة نقاط النهاية من Microsoft (MEM).
+تأكد من أن الأجهزة لديها ترخيص Microsoft Intune ومن أنها مسجلة في Microsoft إدارة نقاط النهاية (MEM).
 
 ## <a name="compare-policy-settings"></a>مقارنة إعدادات النهج
 
-1. في جزء التنقل الأيمن في Lighthouse، حدد **الأجهزة**.
+1. في جزء التنقل الأيمن في Lighthouse، حدد **توافق الأجهزة** > .
 
 2. حدد علامة التبويب **"النهج** ".
 
@@ -47,17 +47,17 @@ ms.locfileid: "66008408"
 
 5. حدد **"مقارنة**".
 
-يمكنك تصفية النتائج للاطلاع **على الإعدادات التي تختلف** أو **الإعدادات التي تتطابق** مع **الإعدادات أو التي تم تكوينها**.
+يمكنك تصفية النتائج للاطلاع على **الإعدادات التي تختلف** أو **الإعدادات المتطابقة** أو **الإعدادات المكونة**.
 
 ## <a name="configure-a-policy-setting"></a>تكوين إعداد نهج
 
-1. في جزء التنقل الأيمن في Lighthouse، حدد **الأجهزة**.
+1. في جزء التنقل الأيمن في Lighthouse، حدد **توافق الأجهزة** > .
 
 2. حدد علامة التبويب **"النهج** ".
 
 3. من القائمة، حدد اسم نهج.
 
-4. من جزء تفاصيل النهج، حدد **عرض هذا النهج في إدارة نقاط النهاية من Microsoft**.
+4. من جزء تفاصيل النهج، حدد **عرض هذا النهج في Microsoft إدارة نقاط النهاية**.
 
 5. في MEM، قم بتحرير إعدادات النهج حسب الحاجة.
 
@@ -69,4 +69,4 @@ ms.locfileid: "66008408"
 
 [ما هو تسجيل الجهاز في Intune؟](/mem/intune/enrollment/device-enrollment) (مقالة)  
 [استخدام نهج التوافق لتعيين قواعد للأجهزة التي تديرها باستخدام Intune](/mem/intune/protect/device-compliance-get-started) (مقالة)  
-[نظرة عامة حول استخدام Microsoft 365 أساسيات Lighthouse لنشر تكوينات المستأجر القياسية](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (المقالة)
+[نظرة عامة حول استخدام أساسيات Microsoft 365 Lighthouse لنشر تكوينات المستأجر القياسية](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (المقالة)

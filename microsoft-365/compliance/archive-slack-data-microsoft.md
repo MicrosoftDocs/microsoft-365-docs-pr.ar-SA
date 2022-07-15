@@ -5,23 +5,25 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: تعرف على كيفية إعداد موصل بيانات Slack eDiscovery الذي توفره Microsoft واستخدامه لاستيراد بيانات المراسلة الفورية وأرشفتها.
-ms.openlocfilehash: 138a93449b4b2a9ce7b57b4c240f2e42c553d818
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9068679ce612f811e899b6f37f6e57e4ac4ac1b4
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631470"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823430"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>إعداد موصل إلى أرشفة بيانات Slack eDiscovery (معاينة)
 
 يساعدك موصل بيانات Slack eDiscovery الذي توفره Microsoft على استيراد بيانات المراسلة الفورية وأرشفتها (مثل الرسائل والمرفقات والارتباطات والمراجعات) من مساحات عمل Slack في مؤسستك إلى Microsoft 365. يسحب موصل البيانات البيانات من Slack API، ويحولها إلى تنسيق رسالة بريد إلكتروني، ثم يستورد هذه العناصر إلى علب بريد المستخدمين في Microsoft 365. بعد استيراد بيانات Slack، يمكنك تطبيق حلول التوافق، مثل احتجاز التقاضي Microsoft Purview eDiscovery (Premium) وتوافق الاتصالات وإعدادات الاستبقاء على محتوى Slack. يمكن أن يساعد استخدام موصل بيانات Slack eDiscovery لاستيراد البيانات وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
+
+إذا كنت ترغب في المشاركة في المعاينة، فالرجاء التواصل مع الفريق في dcfeedback@microsoft.com.
 
 ## <a name="overview-of-archiving-slack-ediscovery-data"></a>نظرة عامة على أرشفة بيانات Slack eDiscovery
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -15,18 +15,20 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: تعرف على كيفية إعداد & استخدام موصل في مدخل التوافق في Microsoft Purview لاستيراد بيانات أرشفة & من صفحات Facebook Business إلى Microsoft 365.
-ms.openlocfilehash: d8b951e7f0b9733dacca7cfd16eed1042d84c460
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 79238bbbdcea71cf83342894d3b61e8047f5897a
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623342"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822868"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>إعداد موصل أرشفة بيانات Facebook (معاينة)
 
 استخدم موصلا في مدخل التوافق في Microsoft Purview لاستيراد البيانات وأرشفتها من صفحات Facebook Business إلى Microsoft 365. بعد إعداد الموصل وتكوينه، يتصل بصفحة Facebook Business (على أساس مجدول)، ويحول محتوى عناصر Facebook إلى تنسيق رسالة بريد إلكتروني، ثم يستورد هذه العناصر إلى علبة بريد في Microsoft 365.
 
 بعد استيراد بيانات Facebook، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي والبحث في المحتوى In-Place الأرشفة والتدقيق وتوافق الاتصالات ونهج استبقاء Microsoft 365 على بيانات Facebook. على سبيل المثال، عند وضع علبة بريد في احتجاز التقاضي أو تعيينها إلى نهج استبقاء، يتم الاحتفاظ ببيانات Facebook. يمكنك البحث في بيانات الجهات الخارجية باستخدام "البحث عن المحتوى" أو إقران علبة البريد حيث يتم تخزين بيانات Facebook مع أمين في حالة Microsoft Purview eDiscovery (Premium). يمكن أن يساعد استخدام موصل لاستيراد بيانات Facebook وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
+
+إذا كنت ترغب في المشاركة في المعاينة، فالرجاء التواصل مع الفريق في dcfeedback@microsoft.com.
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>المتطلبات الأساسية لإعداد موصل لصفحات Facebook Business
 

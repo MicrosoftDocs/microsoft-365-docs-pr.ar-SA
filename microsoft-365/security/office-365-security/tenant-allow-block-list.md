@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية إدارة الأذونات والكتل في قائمة السماح/الحظر للمستأجر في مدخل الأمان.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad8920ae83b99528c47b00d375affb0fbfa6c330
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 1267c0316150f36562b145b14633d9d6562ad196
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714498"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822214"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>إدارة قائمة السماح/الحظر للمستأجر
 
@@ -72,7 +72,7 @@ ms.locfileid: "66714498"
 
 - يجب أن يكون الإدخال نشطا في غضون 30 دقيقة.
 
-- بشكل افتراضي، ستنتهي صلاحية الإدخالات في قائمة السماح/الحظر للمستأجر بعد 30 يوما. يمكنك تحديد تاريخ أو تعيينه على ألا تنتهي صلاحيته أبدا.
+- بشكل افتراضي، ستنتهي صلاحية الإدخالات في قائمة السماح/الحظر للمستأجر بعد 30 يوما. يمكنك تحديد تاريخ أو تعيينه على عدم انتهاء صلاحيته (للكتل فقط).
 
 - للاتصال Exchange Online PowerShell، راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). للاتصال ب EOP PowerShell المستقل، راجع [الاتصال Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -490,6 +490,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>ما يجب توقعه بعد إضافة إدخال السماح أو الحظر
 
-بعد إضافة إدخال سماح من خلال مدخل عمليات الإرسال أو إدخال حظر في قائمة السماح/الحظر للمستأجر، يجب أن يبدأ الإدخال في العمل على الفور.
+بعد إضافة إدخال سماح من خلال مدخل عمليات الإرسال أو إدخال حظر في قائمة السماح/الحظر للمستأجر، يجب أن يبدأ الإدخال في العمل على الفور بمجرد أن يكون الإدخال نشطا. سيكون الإدخال نشطا في الغالب في غضون 30 دقيقة، ولكن في بعض الأحيان قد يستغرق الأمر ما يصل إلى 24 ساعة.
 
 نوصي بالسماح بانتهاء صلاحية الإدخالات تلقائيا بعد 30 يوما لمعرفة ما إذا كان النظام قد تعرف على السماح أو الحظر. إذا لم يكن الأمر، يجب عليك إدخال إدخال آخر لمنح النظام 30 يوما أخرى للتعلم.

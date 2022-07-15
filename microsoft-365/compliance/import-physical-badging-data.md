@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: يمكن للمسؤولين إعداد موصل بيانات لاستيراد البيانات من نظام اللصق الفعلي لمؤسستهم إلى Microsoft 365. يتيح لك هذا استخدام هذه البيانات في نهج إدارة المخاطر الداخلية لمساعدتك على اكتشاف الوصول إلى المباني المادية الخاصة بك من قبل مستخدمين محددين قد يشير إلى تهديد داخلي محتمل لمؤسستك.
-ms.openlocfilehash: 90e0a421397683fe05161b27b1743354713de516
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e34706e7fc6be5d813d718e0d927859ca91d9ee8
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641417"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823098"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>إعداد موصل لاستيراد بيانات البادئة الفعلية (معاينة)
 
@@ -37,6 +37,8 @@ ms.locfileid: "66641417"
 - تشغيل برنامج نصي لدفع بيانات الريش المادية إلى نقطة نهاية واجهة برمجة التطبيقات.
 
 - اختياريا، جدولة البرنامج النصي لتشغيله تلقائيا لاستيراد بيانات البادئة الفعلية حاليا.
+
+إذا كنت ترغب في المشاركة في المعاينة، فالرجاء التواصل مع الفريق في dcfeedback@microsoft.com.
 
 ## <a name="before-you-set-up-the-connector"></a>قبل إعداد الموصل
 

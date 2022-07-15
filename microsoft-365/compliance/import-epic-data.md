@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل بيانات لاستيراد بيانات سجلات الرعاية الصحية الإلكترونية (EHR) من نظام Epic الخاص بمؤسستك إلى Microsoft 365. يتيح لك ذلك استخدام بيانات Epic EHR في نهج إدارة المخاطر الداخلية لمساعدتك على اكتشاف نشاط وصول غير مصرح به إلى بيانات المرضى من قبل موظفيك.
-ms.openlocfilehash: c2caef93a8bb1c5cb272e0420b0c3ab8cfe4499b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d12dd85fb084813e730c4c1e02e8e440d3acc16f
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624036"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822768"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>إعداد موصل لاستيراد بيانات تدقيق Epic EHR (معاينة)
 
@@ -36,6 +36,8 @@ ms.locfileid: "66624036"
 - تشغيل برنامج نصي لدفع سجلات تدقيق Epic EHR إلى نقطة نهاية واجهة برمجة التطبيقات.
 
 - اختياريا، جدولة البرنامج النصي لتشغيله تلقائيا لاستيراد سجلات التدقيق.
+
+إذا كنت ترغب في المشاركة في المعاينة، فالرجاء التواصل مع الفريق في dcfeedback@microsoft.com.
 
 ## <a name="before-you-set-up-the-connector"></a>قبل إعداد الموصل
 

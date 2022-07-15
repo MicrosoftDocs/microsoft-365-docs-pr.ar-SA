@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c743b54e27bc9caa60bb6b4e24191d626ece6fcf
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9c00ea16bddb7aa9094b41b30692493b530acbb3
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490498"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823153"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>نشر Microsoft Defender لنقطة النهاية على Android باستخدام Microsoft Intune
 
@@ -154,7 +154,14 @@ ms.locfileid: "66490498"
         - اختر **ملف تعريف العمل كنوع** ملف تعريف فقط.
         - انقر فوق **"تحديد تطبيق**"، واختر **Microsoft Defender ATP**، وحدد **"موافق** " ثم **"التالي**".
 
-        :::image type="content" source="images/android-create-app.png" alt-text=" جزء تفاصيل التطبيق المقترن" lightbox="images/android-create-app.png":::
+        :::image type="content" source="images/android-create-app.png" alt-text=" لقطة شاشة لجزء تفاصيل التطبيق المقترن." lightbox="images/android-create-app.png":::
+     
+    1. حدد **الأذونات > إضافة**. من القائمة، حدد أذونات التطبيق المتوفرة > **موافق**.
+    2. حدد خيارا لكل إذن لمنحه باستخدام هذا النهج:
+
+       - **المطالبة** - مطالبة المستخدم بقبوله أو رفضه.
+       - **منح تلقائي** - يوافق تلقائيا دون إعلام المستخدم.
+       - **الرفض التلقائي** - رفض تلقائيا دون إعلام المستخدم. 
 
     1. في **الصفحة "إعدادات"** ، انتقل إلى قسم **إعدادات التكوين** واختر **"استخدام مصمم التكوين"** بتنسيق إعدادات التكوين. 
 
@@ -229,9 +236,9 @@ ms.locfileid: "66490498"
 
 4. **التعيين**
 
-   في صفحة **"الواجبات** "، حدد مجموعة المستخدمين التي سيتم تعيين نهج تكوين التطبيق إليها. اختر **"تحديد المجموعات** " لتضمين المجموعة القابلة للتطبيق وتحديدها، ثم حدد **"التالي**". عادة ما تكون المجموعة المحددة هنا هي نفس المجموعة التي ستقوم بتعيين Microsoft Defender لنقطة النهاية تطبيق Android إليها.
+   في صفحة **"الواجبات** "، حدد مجموعة المستخدمين التي سيتم تعيين نهج تكوين التطبيق لها. اختر **"تحديد المجموعات** " لتضمين المجموعة القابلة للتطبيق وتحديدها، ثم حدد **"التالي**". عادة ما تكون المجموعة المحددة هنا هي نفس المجموعة التي ستقوم بتعيين Microsoft Defender لنقطة النهاية تطبيق Android إليها.
 
-   :::image type="content" source="images/4autosetupofvpn.png" alt-text="جزء تعيين ملف تعريف تكوين الأجهزة في قيود الجهاز" lightbox="images/4autosetupofvpn.png":::
+   :::image type="content" source="images/4autosetupofvpn.png" alt-text="لقطة شاشة لجزء تعيين ملف تعريف تكوين الأجهزة في قيود الجهاز." lightbox="images/4autosetupofvpn.png":::
 
 5. في الصفحة **Review + Create** التي تأتي بعد ذلك، راجع كافة المعلومات ثم حدد **Create**.
 تم الآن تعيين ملف تعريف تكوين الجهاز إلى مجموعة المستخدمين المحددة.

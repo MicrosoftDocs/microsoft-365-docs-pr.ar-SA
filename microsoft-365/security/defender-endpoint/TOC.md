@@ -55,7 +55,6 @@
 #### [إلحاق Windows Client باستخدام برنامج نصي محلي](configure-endpoints-script.md)
 #### [أجهزة البنية الأساسية لسطح المكتب الظاهري (VDI) غير الثابتة](configure-endpoints-vdi.md)
 #### [أجهزة Windows 10 متعددة جلسات العمل في Windows سطح المكتب الظاهري](onboard-windows-multi-session-device.md)
-#### [أجهزة التجهيز بدون اتصال بالإنترنت](onboard-offline-machines.md)
 #### [الإصدارات السابقة من Windows](onboard-downlevel.md)
 
 
@@ -182,6 +181,7 @@
 ### [التكامل مع Microsoft Defender for Cloud](azure-server-integration.md)
 ### [تشغيل اختبار الكشف على جهاز تم تشغيله حديثاً](run-detection-test.md)
 ### [تشغيل هجمات محاكاة على الأجهزة](attack-simulations.md)
+### [أجهزة التجهيز بدون اتصال بالإنترنت](onboard-offline-machines.md)
 ### [تكوين إعدادات الوكيل والاتصال بالإنترنت](configure-proxy-internet.md)
 ### [إنشاء قاعدة إعلامات التهيئة أو إيقاف التشغيل](onboarding-notification.md)
 
@@ -308,7 +308,7 @@
 #### [الكشف عن التطبيقات التي يحتمل أن تكون غير مرغوب فيها وحظرها](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 #### [تمكين الحماية برنامج الحماية من الفيروسات من Microsoft Defender دائما وتكوينها في نهج المجموعة](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [تكوين المعالجة برنامج الحماية من الفيروسات من Microsoft Defender الكشف](configure-remediation-microsoft-defender-antivirus.md)
-#### [للحصول على التفاصيل، اطلع على تكوين الاستثناءات والتحقق من صحتها لعمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender](schedule-antivirus-scans.md)
+#### للحصول على التفاصيل، اطلع على [تكوين الاستثناءات والتحقق من صحتها لعمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender](schedule-antivirus-scans.md).
 ##### [جدولة عمليات الفحص باستخدام نهج المجموعة](schedule-antivirus-scans-group-policy.md)
 ##### [جدولة عمليات الفحص باستخدام PowerShell](schedule-antivirus-scans-powershell.md)
 ##### [جدولة عمليات الفحص باستخدام WMI](schedule-antivirus-scans-wmi.md)

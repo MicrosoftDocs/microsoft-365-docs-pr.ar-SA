@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: تعرف على ترخيص SharePoint Syntex
-ms.openlocfilehash: 31b10c0107bf871f827244889ac7ec77f7958e1f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 86776af3184e44cb88f17e0164859f0ba0e2f334
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787485"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822258"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>ترخيص SharePoint Syntex
 
@@ -52,8 +52,8 @@ ms.locfileid: "66787485"
 انتقل إلى [مركز إدارة Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) للتحقق من رصيدك واستخدامك.
   
 ## <a name="additional-term-store-features"></a>ميزات مخزن المصطلحات الإضافية
- 
-يتميز الاشتراك في SharePoint Syntex بميزات مخزن المصطلحات الإضافية التالية:
+
+يتيح وجود ترخيص SharePoint Syntex واحد أو أكثر في مؤسستك ميزات مخزن المصطلحات الإضافية التالية لمسؤولي SharePoint:
  
 - استيراد مجموعة المصطلحات المستندة إلى SKOS
 - دفع أنواع محتويات المؤسسة إلى موقع مركز، والذي يضيفها أيضا إلى المواقع المقترنة وأي قوائم أو مكتبات تم إنشاؤها حديثا

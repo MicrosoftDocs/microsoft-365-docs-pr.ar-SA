@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: تعرف على كيفية إعداد المسؤولين واستخدام موصل أصلي لاستيراد بيانات Twitter إلى Microsoft 365.
-ms.openlocfilehash: 1dd5de91484d04411b5216f6801589b32ef381ce
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 83558b4a2f188853b4deac31cf636476480a2557
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625534"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822236"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>إعداد موصل Microsoft أرشفة بيانات Twitter (معاينة)
 
@@ -29,6 +29,8 @@ ms.locfileid: "66625534"
 بعد استيراد بيانات Twitter، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي والبحث عن المحتوى In-Place نهج الاستبقاء والتدقيق والأرشفة وMicrosoft 365 على بيانات Twitter. على سبيل المثال، عند وضع علبة بريد في احتجاز التقاضي أو تعيينها إلى نهج استبقاء، يتم الاحتفاظ ببيانات Twitter. يمكنك البحث في بيانات الجهات الخارجية باستخدام "البحث عن المحتوى" أو إقران علبة البريد حيث يتم تخزين بيانات Twitter مع أمين في حالة Microsoft Purview eDiscovery (Premium). يمكن أن يساعد استخدام موصل لاستيراد بيانات Twitter وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
 
 بعد استيراد بيانات Twitter، يمكنك تطبيق ميزات Microsoft Purview مثل احتجاز التقاضي والبحث في المحتوى In-Place الأرشفة والتدقيق وتوافق الاتصالات ونهج استبقاء Microsoft 365 على البيانات المخزنة في علبة البريد. على سبيل المثال، يمكنك البحث في بيانات Twitter باستخدام البحث عن المحتوى أو إقران علبة البريد حيث يتم تخزين البيانات مع أمين في حالة eDiscovery (Premium). يمكن أن يساعد استخدام موصل لاستيراد بيانات Twitter وأرشفتها في Microsoft 365 مؤسستك على البقاء متوافقة مع السياسات الحكومية والتنظيمية.
+
+إذا كنت ترغب في المشاركة في المعاينة، فالرجاء التواصل مع الفريق في dcfeedback@microsoft.com.
 
 ## <a name="before-you-set-up-a-connector"></a>قبل إعداد موصل
 

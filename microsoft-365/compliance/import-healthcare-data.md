@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: يمكن للمسؤولين إعداد موصل بيانات لاستيراد بيانات سجلات الرعاية الصحية الإلكترونية (EHR) من نظام الرعاية الصحية إلى Microsoft 365. يتيح لك ذلك استخدام بيانات EHR في نهج إدارة المخاطر الداخلية لمساعدتك على اكتشاف نشاط وصول غير مصرح به إلى بيانات المرضى من قبل موظفيك.
-ms.openlocfilehash: be5429ea1a5fb4e2e2be6a7029f2401fcbdab94e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: dd34fc1e14680a5189c74443211f50fa51b87132
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641373"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822946"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>إعداد موصل لاستيراد بيانات تدقيق EHR للرعاية الصحية (معاينة)
 
@@ -36,6 +36,8 @@ ms.locfileid: "66641373"
 - تشغيل برنامج نصي لدفع بيانات تدقيق EHR للرعاية الصحية إلى نقطة نهاية واجهة برمجة التطبيقات.
 
 - اختياريا، جدولة البرنامج النصي لتشغيله تلقائيا لاستيراد بيانات التدقيق.
+
+إذا كنت ترغب في المشاركة في المعاينة، فالرجاء التواصل مع الفريق في dcfeedback@microsoft.com.
 
 ## <a name="before-you-set-up-the-connector"></a>قبل إعداد الموصل
 
