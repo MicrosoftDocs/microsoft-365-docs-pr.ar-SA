@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: معلومات لمسؤولي تكنولوجيا المعلومات لإدارة تسميات الحساسية في تطبيقات Office لسطح المكتب والأجهزة المحمولة والويب.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c0557f53ee50189969f7e2225cabd74354b28055
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f5f404df8d8cbf5d4ac755c17c2a6c07717d8360
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640467"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66797962"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>إدارة تسميات الحساسية في تطبيقات Office
 
@@ -104,7 +104,7 @@ Office لنظامي التشغيل iOS و Office for Android: يتم تضمين 
 |[تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /> - استخدام المصنفات القابلة للتدريب                    | خيار التحديث الحالي: 2105+ <br /><br> قناة المؤسسة الشهرية: 2105+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.49+ | قيد المراجعة           | قيد المراجعة               | نعم |
 |[إعدادات مختلفة للتسمية الافتراضية والتسمية الإلزامية](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | خيار التحديث الحالي: 2105+ <br /><br> قناة المؤسسة الشهرية: 2105+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | نعم |
 |[دعم PDF](#pdf-support) | قيد المراجعة|  قيد المراجعة | قيد المراجعة | قيد المراجعة | قيد المراجعة |
-|[تطبيق حماية S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook)                    | قيد المراجعة | طرح: 16.61+ <sup>\*</sup>                   | طرح: 4.2208+ | طرح: 4.2203+ | قيد المراجعة |
+|[تطبيق حماية S/MIME](#configure-a-label-to-apply-smime-protection-in-outlook)                    | قيد المراجعة | طرح: 16.61+ <sup>\*</sup>                   | طرح: 4.2226+ | طرح: 4.2203+ | قيد المراجعة |
 
 **الحواشي السفليه:**
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 828588491c3efbc696994f6073ca4ce849a64be5
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a77dcb557901f8a159e0c82a084dd02255193c72
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622118"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66797940"
 ---
 # <a name="set-up-message-encryption"></a>إعداد تشفير الرسائل
 
@@ -52,10 +52,9 @@ ms.locfileid: "66622118"
 
 ### <a name="manually-activating-azure-rights-management"></a>تنشيط إدارة حقوق Azure يدويا
 
-إذا قمت بتعطيل Azure RMS، أو إذا لم يتم تنشيطه تلقائيا لأي سبب من الأسباب، يمكنك تنشيطه يدويا في:
+إذا قمت بتعطيل Azure RMS، أو إذا لم يتم تنشيطه تلقائيا لأي سبب من الأسباب، يمكنك تنشيطه يدويا. 
 
-- **مركز مسؤولي Microsoft 365**: راجع [كيفية تنشيط Azure Rights Management من مركز الإدارة](/azure/information-protection/activate-office365) للحصول على الإرشادات.
-- **مدخل Azure**: راجع [كيفية تنشيط Azure Rights Management من مدخل Azure](/azure/information-protection/activate-azure) للحصول على الإرشادات.
+للحصول على الإرشادات، راجع [كيفية تنشيط حالة خدمة الحماية أو تأكيدها](/azure/information-protection/activate-service#how-to-activate-or-confirm-the-status-of-the-protection-service).
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>تكوين إدارة مفتاح مستأجر Azure حماية البيانات
 

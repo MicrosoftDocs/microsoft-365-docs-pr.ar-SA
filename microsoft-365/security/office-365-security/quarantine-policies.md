@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية استخدام نهج العزل للتحكم في ما يمكن للمستخدمين القيام به للرسائل المعزولة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 780d2bade0713bac295cf9597662c5ef2313a093
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9d23083927d50d226692afe19223ed93aceb0b7b
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490089"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66798121"
 ---
 # <a name="quarantine-policies"></a>سياسات العزل
 
@@ -99,6 +99,8 @@ ms.locfileid: "66490089"
 ## <a name="step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal"></a>الخطوة 1: إنشاء نهج العزل في مدخل Microsoft 365 Defender
 
 1. في [مدخل Microsoft 365 Defender](https://security.microsoft.com)، انتقل إلى **نهج التعاون** \> & البريد الإلكتروني **&** \> نهج **"قواعد التهديد** \> **" في** قسم **"القواعد**". أو للانتقال مباشرة إلى صفحة **نهج العزل** ، استخدم <https://security.microsoft.com/quarantinePolicies>.
+
+   :::image type="content" source="../../media/mdo-quarantine-policy-page.png" alt-text="صفحة نهج العزل في مدخل Microsoft 365 Defender." lightbox="../../media/mdo-quarantine-policy-page.png":::
 
 2. في صفحة **نهج العزل** ، انقر فوق ![أيقونة "إضافة نهج مخصص".](../../media/m365-cc-sc-create-icon.png) **إضافة نهج مخصص**.
 
@@ -530,6 +532,8 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
    - **إرسال إعلام بالبريد العشوائي للمستخدم النهائي كل (أيام):** حدد معدل تكرار إعلامات العزل. القيمة الافتراضية هي 3 أيام، ولكن يمكنك تحديد من يوم إلى 15 يوما.
 
 4. عند الانتهاء، انقر فوق **حفظ**.
+
+   :::image type="content" source="../../media/mdo-quarantine-policy-quarantine-notification-settings.png" alt-text="القائمة المنبثقة لإعدادات إعلام العزل في مدخل Microsoft 365 Defender." lightbox="../../media/mdo-quarantine-policy-quarantine-notification-settings.png":::
 
 ## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>عرض نهج العزل في مدخل Microsoft 365 Defender
 

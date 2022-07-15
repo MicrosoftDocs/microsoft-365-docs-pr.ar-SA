@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية معالجة أدوات microsoft 365 eDiscovery للمستندات المشفرة المرفقة برسائل البريد الإلكتروني والمخزنة في SharePoint Online OneDrive for Business.
-ms.openlocfilehash: 5e94c7b09745d017d5fa91d39a58c9d5351e911a
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: bec0b4c600f3bb7b08d10f2b32b00edb627a1165
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66770844"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66798072"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>أدوات فك التشفير في Microsoft 365 eDiscovery
 
@@ -35,7 +35,7 @@ ms.locfileid: "66770844"
 
 ## <a name="supported-encryption-technologies"></a>تقنيات التشفير المدعومة
 
-بالنسبة إلى Exchange، تدعم أدوات Microsoft eDiscovery العناصر المشفرة باستخدام تقنيات تشفير Microsoft. هذه التقنيات هي Azure Rights Management (Azure RMS)<sup>3</sup> و حماية البيانات في Microsoft Purview (على وجه التحديد تسميات الحساسية). لمزيد من المعلومات حول تقنيات تشفير Microsoft، راجع [التشفير](encryption.md). المحتوى المشفر بواسطة تقنيات تشفير S/MIME أو تقنيات التشفير التابعة لجهة خارجية غير مدعوم. على سبيل المثال، لا يتم دعم معاينة المحتوى المشفر أو تصديره باستخدام تقنيات غير Microsoft.
+بالنسبة إلى Exchange، تدعم أدوات Microsoft eDiscovery العناصر المشفرة باستخدام تقنيات تشفير Microsoft. هذه التقنيات هي Azure Rights Management (Azure RMS)<sup>3</sup> و حماية البيانات في Microsoft Purview (على وجه التحديد تسميات الحساسية). لمزيد من المعلومات حول تقنيات تشفير Microsoft، راجع [التشفير](encryption.md) وخيارات [تشفير البريد الإلكتروني](email-encryption.md#comparing-email-encryption-options-available-in-office-365) المختلفة المتوفرة. المحتوى المشفر بواسطة تقنيات تشفير S/MIME أو تقنيات التشفير التابعة لجهة خارجية غير مدعوم. على سبيل المثال، لا يتم دعم معاينة المحتوى المشفر أو تصديره باستخدام تقنيات غير Microsoft.
 
 > [!NOTE]
 > لا تدعم أدوات Microsoft eDiscovery فك تشفير رسائل البريد الإلكتروني المرسلة باستخدام [قالب علامة تجارية مخصص تشفير الرسائل في Microsoft Purview](add-your-organization-brand-to-encrypted-messages.md). عند استخدام قالب علامة تجارية مخصصة ل OME، يتم تسليم رسائل البريد الإلكتروني إلى مدخل OME بدلا من علبة بريد المستلم. لذلك، لن تتمكن من استخدام أدوات eDiscovery للبحث عن الرسائل المشفرة لأن علبة بريد المستلم لا تتلقى هذه الرسائل أبدا.
@@ -91,7 +91,7 @@ ms.locfileid: "66770844"
 
 ## <a name="notes"></a>ملاحظات
 
-<sup>1</sup> لا يتم فك تشفير الملفات المشفرة الموجودة على كمبيوتر محلي ومرفقات السحابة المنسوخة إلى رسالة بريد إلكتروني وفهرستها ل eDiscovery. 
+<sup>1</sup> لا يتم فك تشفير الملفات المشفرة الموجودة على كمبيوتر محلي والمنسوخة إلى رسالة بريد إلكتروني وفهرستها ل eDiscovery. بالنسبة إلى eDiscovery (Premium)، يجب فهرسة البريد الإلكتروني المشفر والمرفقات في علبة بريد المستلم لفك تشفيرها. لمزيد من المعلومات حول الفهرسة المتقدمة، راجع [الفهرسة المتقدمة لبيانات الوصي](indexing-custodian-data.md).
 
 <sup>2</sup> سيتم فك تشفير العناصر المسماة ضمن خدمة SharePoint عبر الإنترنت فقط، وكل شيء آخر غير معتمد بما في ذلك التسمية أو التشفير في العميل قبل التحميل أو قوالب أو إعدادات RMS القديمة لمكتبة المستندات أو SMIME أو أي معيار آخر وما إلى ذلك. راجع [تمكين تسميات الحساسية لملفات Office](sensitivity-labels-sharepoint-onedrive-files.md).
 
