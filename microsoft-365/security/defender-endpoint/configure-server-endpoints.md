@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ac40dcc986dfb4c66b9030cdf8c22ebabe1bd3d2
-ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
+ms.openlocfilehash: 3d742733903faf876257e42a9ea9d15a648f9984
+ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66795411"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "66827191"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>إلحاق خوادم Windows بخدمة Microsoft Defender لنقطة النهاية
 
@@ -150,7 +150,7 @@ ms.locfileid: "66795411"
 
 يتكامل Microsoft Defender لنقطة النهاية بسلاسة مع Microsoft Defender for Cloud. يمكنك إلحاق الخوادم تلقائيا، وظهور الخوادم التي يراقبها Microsoft Defender for Cloud في Defender لنقطة النهاية، وإجراء تحقيقات مفصلة كعميل Microsoft Defender for Cloud. 
 
-لمزيد من المعلومات، راجع [التكامل مع Microsoft Defender for Cloud](azure-server-integration.md). سيتم تعيين التكوين الأولي للخوادم التي تم إلحاقها من خلال Microsoft Defender for Cloud لتشغيل Defender Antivirus في [الوضع السلبي](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
+لمزيد من المعلومات، راجع [التكامل مع Microsoft Defender for Cloud](azure-server-integration.md). سيكون لخوادم Linux التي تم إلحاقها من خلال Microsoft Defender for Cloud تكوينها الأولي لتشغيل برنامج الحماية من الفيروسات Defender في [الوضع السلبي](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions).
 
 > [!NOTE]
 > - تم توسيع التكامل بين Microsoft Defender للخوادم Microsoft Defender لنقطة النهاية لدعم Windows Server 2022 [وWindows Server 2019 وWindows Virtual Desktop (WVD).](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)

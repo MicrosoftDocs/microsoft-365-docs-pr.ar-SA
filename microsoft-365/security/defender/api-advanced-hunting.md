@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: e485bcf400dbaf36c63e3a0ed8677c9bf7c8f23a
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+ms.openlocfilehash: 4b8a8e67bc7bd69b9ae20648ad66eb539101441e
+ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692750"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "66827169"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender واجهة برمجة تطبيقات التتبع المتقدمة
 
@@ -67,7 +67,7 @@ Application | AdvancedWating.Read.All| تشغيل الاستعلامات الم�
 >[!Note]
 > عند الحصول على رمز مميز باستخدام بيانات اعتماد المستخدم:
 >
->- يحتاج المستخدم إلى الحصول على دور "عرض البيانات" AD
+>- يجب أن يكون للمستخدم دور "عرض البيانات".
 >- يحتاج المستخدم إلى الوصول إلى الجهاز، استنادا إلى إعدادات مجموعة الأجهزة.
 
 ## <a name="http-request"></a>طلب HTTP
