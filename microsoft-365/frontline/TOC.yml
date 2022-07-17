@@ -1,0 +1,149 @@
+- name: Microsoft 365 لموظفي الخطوط الأمامية
+  href: index.yml
+  items:
+    - name: بدء استخدام Microsoft 365 لموظفي الخطوط الأمامية
+      href: flw-overview.md
+    - name: اختيار السيناريوهات الخاصة بك
+      href: flw-choose-scenarios.md
+    - name: جرب Microsoft 365 لموظفي الخطوط الأمامية
+      href: flw-trial.md
+    - name: إعداد وتكوين
+      items:
+        - name: نظرة عامة
+          href: flw-deploy-overview.md
+        - name: المديرون - بدء فريقك
+          href: get-up-and-running.md
+        - name: البدء باستخدام نشر تجريبي
+          href: flw-pilot.md
+        - name: إعداد Microsoft 365 وTeams
+          items:
+            - name: إعداد Microsoft 365 والخدمات ذات الصلة
+              href: flw-setup-microsoft-365.md
+            - name: نشر الفرق على نطاق واسع
+              href: deploy-teams-at-scale.md
+            - name: إلحاق المستخدمين باستخدام معالج الإلحاق
+              href: flw-onboarding-wizard.md
+        - name: إدارة الأجهزة
+          items:
+            - name: إدارة الأجهزة الشخصية والمشتركة
+              href: flw-devices.md
+            - name: تسجيل الدخول إلى Teams
+              href: /microsoftteams/sign-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+            - name: تسجيل الخروج من Teams
+              href: /microsoftteams/sign-out-of-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: تكوين إعدادات Teams لموظفي الخطوط الأمامية
+          items:
+            - name: تخصيص تطبيقات Teams لموظفي الخطوط الأمامية
+              href: pin-teams-apps-based-on-license.md
+            - name: حزم نهج Teams لمديري الخطوط الأمامية وموظفيها
+              href: /microsoftteams/policy-packages-flw?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+            - name: المراسلة الآمنة
+              href: messaging-policies-hc.md
+            - name: تفويض الرسالة
+              href: hc-delegates.md
+        - name: التبديل من عامل المؤسسة إلى عامل الخطوط الأمامية
+          items:
+            - name: خيارات الترخيص للعاملين في الخطوط الأمامية
+              href: flw-licensing-options.md
+            - name: اعتبارات التبديل من E إلى F
+              href: switch-from-enterprise-to-frontline.md
+    - name: الاتصالات
+      items:
+        - name: تعاون فريق الخطوط الأمامية
+          href: flw-team-collaboration.md
+        - name: اتصالات الشركة مع عمال الخطوط الأمامية
+          href: flw-corp-comms.md
+    - name: الرفاهية والمشاركة
+      items:
+        - name: إشراك الموظفين والتركيز على الرفاهية
+          href: flw-wellbeing-engagement.md
+    - name: التدريب والإلحاق
+      items:
+        - name: إلحاق الموظفين وتدريبهم
+          href: flw-onboarding-training.md
+    - name: إدارة الجداول الزمنية
+      items:
+        - name: بدء استخدام الورديات لـ Teams
+          href: shifts-for-teams-landing-page.md
+        - name: إدارة ملاك الجدول الزمني لإدارة الورديات
+          href: schedule-owner-for-shift-management.md
+        - name: إدارة الوصول المستند إلى الوردية في Teams
+          href: manage-shift-based-access-flw.md
+        - name: موصلات الورديات
+          items:
+            - name: نظرة عامة
+              href: shifts-connectors.md
+            - name: استخدام معالج موصل الورديات لإعداد اتصال بـ Blue Yonder WFM
+              href: shifts-connector-wizard.md
+            - name: استخدام PowerShell لإعداد اتصال بـ Blue Yonder WFM
+              href: shifts-connector-blue-yonder-powershell-setup.md
+            - name: استخدام PowerShell لإدارة الورديات إلى اتصال Blue Yonder WFM
+              href: shifts-connector-powershell-manage.md
+    - name: العمليات الرقمية
+      items:
+        - name: تبسيط العمليات التجارية
+          href: simplify-business-processes.md
+    - name: المواعيد الظاهرية
+      items:
+        - name: نظرة عامة
+          href: virtual-appointments.md
+        - name: المواعيد الظاهرية مع Teams والحجوزات
+          href: bookings-virtual-visits.md
+        - name: المواعيد الظاهرية مع Teams والسجل الإلكتروني للمعلومات الصحية من Cerner
+          href: ehr-admin-cerner.md
+        - name: المواعيد الظاهرية مع Teams والسجل الإلكتروني للمعلومات الصحية من Epic
+          href: ehr-admin-epic.md
+        - name: تقرير المواعيد الظاهرية لموصل السجل الإلكتروني للمعلومات الصحية
+          href: ehr-connector-report.md
+        - name: تقرير استخدام الزيارات الظاهرية
+          href: virtual-visits-usage-report.md
+        - name: إدارة تجربة الانضمام على المستعرضات
+          href: browser-join.md
+        - name: مساعدة زبائنك وعملائك على استخدام المواعيد الظاهرية
+          href: virtual-appointments-toolkit.md
+    - name: حلول خاصة بالمجال
+      items:
+        - name: الخدمات المالية
+          href: teams-for-financial-services.md
+        - name: الرعاية الصحية
+          items:
+            - name: نظرة عامة
+              href: teams-in-hc.md
+            - name: قوالب فريق الرعاية الصحية
+              href: /microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+            - name: حزم نهج Teams الرعاية الصحية
+              href: /microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: البيع بالتجزئة
+          items:
+            - name: نظرة عامة
+              href: teams-for-retail-landing-page.md
+            - name: استخدام قوالب فريق البيع بالتجزئة
+              href: /microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: التصنيع
+          href: teams-for-manufacturing.md
+    - name: تطبيقات للعاملين في الخطوط الأمامية
+      items:
+        - name: حول التطبيقات في Microsoft Teams
+          href: /microsoftteams/deploy-apps-microsoft-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: نظرة عامة حول إدارة التطبيقات في Microsoft Teams
+          href: /microsoftteams/manage-apps?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: إدارة تطبيق الموافقات
+          href: /microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: إدارة تطبيق الحجوزات
+          href: /microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: إدارة تطبيق التحديثات
+          href: /microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: إدارة تطبيق القوائم
+          href: /microsoftteams/manage-lists-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: إدارة تطبيق المديح
+          href: /microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Microsoft Teams لـ RealWear
+          href: /microsoftteams/flw-realwear?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: إدارة تطبيق الورديات
+          href: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: الأسئلة المتداولة حول بيانات الورديات
+          href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: إدارة تطبيق المهام
+          href: /microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: إدارة تطبيق التواصل الصوتي
+          href: /microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json

@@ -66,7 +66,7 @@
           href: archive-bloomberg-message-data.md
         - name: بيانات الرعاية الصحية في Epic EHR (معاينة)
           href: import-epic-data.md
-        - name: Facebook Business
+        - name: Facebook Business (معاينة)
           href: archive-facebook-data-with-sample-connector.md
         - name: بيانات الرعاية الصحية العامة لـ EHR (معاينة)
           href: import-healthcare-data.md
@@ -78,11 +78,11 @@
           href: archive-instant-bloomberg-data.md
         - name: LinkedIn
           href: archive-linkedin-data.md
-        - name: بيانات الشارات الفعلية
+        - name: بيانات الشارة الفعلية (معاينة)
           href: import-physical-badging-data.md
         - name: Slack eDiscovery (معاينة)
           href: archive-slack-data-microsoft.md
-        - name: Twitter
+        - name: Twitter (معاينة)
           href: archive-twitter-data-with-sample-connector.md
     - name: موصلات بيانات Veritas
       items:
