@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4f2ab696b728244e495ec04933b83eaafeeb3db0
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: b9689cb0a3470a19e4ceeeb80cd3e77f2d2d8edf
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616948"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843554"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>الجديد في Microsoft 365 Defender
 
@@ -45,6 +45,9 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 يمكنك أيضا الحصول على تحديثات المنتج والإعلامات المهمة من خلال [مركز الرسائل](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
+## <a name="july-2022"></a>يوليو 2022
+- (معاينة) يمكن الآن للمشاركين في المعاينة العامة ل Microsoft Defender للتتبع التطلع إلى تلقي تقارير شهرية لمساعدتهم على فهم التهديدات التي ظهرت بها خدمة التتبع في بيئتهم، إلى جانب التنبيهات التي تم إنشاؤها بواسطة منتجاتهم Microsoft 365 Defender. للحصول على التفاصيل، راجع [فهم تقرير Defender Experts for Hunting في Microsoft 365 Defender](defender-experts-report.md).
+
 ## <a name="june-2022"></a>يونيو 2022
 - (معاينة) تتوفر جداول [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) [وDevitTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) الآن في مخطط التتبع المتقدم. استخدم هذه الجداول لتتبع أحداث التقييم في Defender Vulnerability Management بما في ذلك حالة التكوينات المختلفة وحالات مساحة سطح الهجوم للأجهزة.
 
@@ -66,7 +69,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="november-2021"></a>نوفمبر 2021
 
-- (معاينة) تتوفر الآن ميزة الوظيفة الإضافية لإدارة التطبيقات إلى Defender for Cloud Apps في Microsoft 365 Defender. توفر حوكمة التطبيقات إمكانية إدارة الأمان والنهج المصممة للتطبيقات التي تدعم OAuth والتي تصل إلى بيانات Microsoft 365 من خلال واجهات برمجة تطبيقات Microsoft Graph. توفر حوكمة التطبيقات الرؤية الكاملة والمعالجة والحوكمة في كيفية وصول هذه التطبيقات ومستخدميها إلى بياناتك الحساسة المخزنة في Microsoft 365 واستخدامها ومشاركتها من خلال رؤى قابلة للتنفيذ وتنبيهات وإجراءات نهج تلقائية. [تعرف على المزيد حول حوكمة التطبيق](/cloud-app-security/app-governance-manage-app-governance).
+- (معاينة) تتوفر الآن ميزة الوظيفة الإضافية لإدارة التطبيقات إلى Defender for Cloud Apps في Microsoft 365 Defender. توفر حوكمة التطبيقات إمكانية إدارة الأمان والنهج المصممة للتطبيقات التي تدعم OAuth والتي تصل إلى بيانات Microsoft 365 من خلال واجهات برمجة تطبيقات Microsoft Graph. توفر حوكمة التطبيقات الرؤية الكاملة والمعالجة والحوكمة في كيفية وصول هذه التطبيقات ومستخدميها إلى بياناتك الحساسة المخزنة في Microsoft 365 واستخدامها ومشاركتها من خلال رؤى قابلة للتنفيذ وتنبيهات وإجراءات نهج تلقائية. [Mer informasjon حول إدارة التطبيق](/cloud-app-security/app-governance-manage-app-governance).
 - (معاينة) تحتوي صفحة [التتبع المتقدمة](advanced-hunting-overview.md) الآن على دعم متعدد المستويات، والتمرير الذكي، وعلامات تبويب المخطط المبسطة، وخيارات التحرير السريع للاستعلامات، ومؤشر استخدام موارد الاستعلام، والتحسينات الأخرى لجعل الاستعلام أكثر سلاسة وأسهل في ضبطه.
 - (معاينة) يمكنك الآن استخدام [الارتباط إلى ميزة الحدث](advanced-hunting-link-to-incident.md) لتضمين الأحداث أو السجلات من نتائج استعلام التتبع المتقدمة مباشرة في حادث جديد أو موجود تقوم بالتحقيق فيه.
 

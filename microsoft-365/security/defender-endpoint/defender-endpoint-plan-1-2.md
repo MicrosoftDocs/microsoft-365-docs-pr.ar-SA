@@ -1,7 +1,7 @@
 ---
-title: مقارنة خطط Microsoft Defender لنقطة النهاية
-description: مقارنة Defender لنقطة النهاية الخطة 1 بالخطة 2. تعرف على الاختلافات بين الخطط وحدد الخطة التي تناسب احتياجات مؤسستك.
-keywords: Defender لنقطة النهاية، الحماية المتقدمة من التهديدات، حماية نقطة النهاية
+title: مقارنة خطط أمان نقطة النهاية من Microsoft
+description: قارن خطط أمان نقاط النهاية من Microsoft، مثل Defender for Endpoint Plan 1 مع Defender for Endpoint Plan 2. تعرف على الاختلافات بين الخطط وحدد الخطة التي تناسب احتياجات مؤسستك.
+keywords: Defender لنقطة النهاية، الحماية المتقدمة من التهديدات، حماية نقطة النهاية، أمان نقطة النهاية، أمان الجهاز، الأمان عبر الإنترنت
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d41c228ceeae0dcd373f98c6dcd89bf88b0feacd
-ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
+ms.openlocfilehash: 1b18bc6ed3f7992a774bfd90fd2913cfe4e9c050
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66795389"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843468"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>مقارنة خطط أمان نقطة النهاية من Microsoft
 
@@ -68,8 +68,7 @@ ms.locfileid: "66795389"
 
 لا تتضمن الإصدارات المستقلة من Defender for Business و Defender لنقطة النهاية الخطة 1 و2 Microsoft 365 Business Premium تراخيص الخادم. لإلحاق الخوادم، اختر من بين الخيارات التالية:
 
-- **Defender for Servers Plan 1 أو الخطة 2** كجزء من عرض [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . لمعرفة المزيد. راجع [نظرة عامة على Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
-
+- **Microsoft Defender for Servers Plan 1 أو الخطة 2** كجزء من عرض [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) . لمعرفة المزيد. راجع [نظرة عامة على Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction).
 - **Microsoft Defender for Business الخوادم (معاينة)** للشركات الصغيرة والمتوسطة الحجم. راجع [كيفية الحصول على خوادم Microsoft Defender for Business (معاينة).](../defender-business/get-defender-business-servers.md)
 
 ## <a name="mixed-licensing-scenarios"></a>سيناريوهات الترخيص المختلط
@@ -94,5 +93,5 @@ ms.locfileid: "66795389"
 ## <a name="see-also"></a>راجع أيضًا
 
 - [بدء استخدام Microsoft Security (العروض التجريبية)](https://www.microsoft.com/security/business/get-started/start-free-trial)
-
+- [مشكلات الأداء في Microsoft Defender لنقطة النهاية](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (حماية نقطة النهاية للشركات الصغيرة والمتوسطة الحجم)

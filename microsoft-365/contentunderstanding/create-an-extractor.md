@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: تعرف على كيفية إنشاء مستخرج في Microsoft SharePoint Syntex.
-ms.openlocfilehash: f1e50b7eaeaaf669c682741c0e02df883523d888
-ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
+ms.openlocfilehash: 20edce834ee9a55a9c748d59751a2f38ed08f85f
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842111"
+ms.locfileid: "66843511"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>إنشاء مستخرج في Microsoft SharePoint Syntex
 
@@ -47,7 +47,7 @@ ms.locfileid: "66842111"
     ![لقطة شاشة لجزء الإعدادات المتقدمة من لوحة مستخرج الكيان الجديد تعرض خيار نوع العمود.](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
-    > بالنسبة إلى المستخرجات ذات نوع العمود **سطر واحد من النص**، الحد الأقصى للأحرف هو 255. يتم اقتطاع أي أحرف تحددها تتجاوز الحد. لتحديد أكثر من 255 حرفا، اختر نوع عمود **"الأسطر المتعددة للنص** " عند إنشاء المستخرج.
+    > بالنسبة إلى المستخرجات ذات نوع العمود **سطر واحد من النص**، الحد الأقصى للأحرف هو 255. يتم اقتطاع أي أحرف تحددها تتجاوز الحد. لتحديد أكثر من 255 حرفا، اختر **الأسطر المتعددة لنوع عمود النص** عند إنشاء المستخرج.
     >
     >بشكل افتراضي، يتم إنشاء **أسطر متعددة من أعمدة النص** بحد أقصى لمقدار النص الذي يمكن إضافته. في هذه الحالة، قد يظهر النص المستخرج مقتطعا. إذا حدث ذلك، يمكن استخدام إعداد العمود **"السماح بطول غير محدود" في مكتبات المستندات** لإزالة الحد.
 

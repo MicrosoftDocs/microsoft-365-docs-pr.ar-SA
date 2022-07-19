@@ -17,12 +17,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: e61a59e769052d69494d327b2e1770f643375ab9
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: d8938c06e42a546b4cf28bf55fc2b6ba49269492
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772095"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843446"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>تكوين قدرات خبراء المخاطر في Microsoft وإدارتها من خلال Microsoft 365 Defender
 
@@ -51,8 +51,6 @@ ms.locfileid: "66772095"
 1. من جزء التنقل، انتقل إلى **الإعدادات > نقاط النهاية > الميزات المتقدمة > العامة > إشعارات هجوم نقطة النهاية**.
 
 2. حدد **Apply**.
-
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="صفحة إعدادات خبراء المخاطر في Microsoft في مدخل Microsoft 365 Defender" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 3. أدخل عنوان بريدك الإلكتروني حتى تتمكن Microsoft من الاتصال بك حول تطبيقك.
 
@@ -94,7 +92,7 @@ ms.locfileid: "66772095"
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>استشارة خبير مخاطر Microsoft حول أنشطة الأمان عبر الإنترنت المشبوهة في مؤسستك
 
-يمكنك الاتصال خبراء المخاطر في Microsoft من داخل مدخل Microsoft 365 Defender. يمكن للخبراء مساعدتك على فهم التهديدات المعقدة وإعلامات الهجمات المستهدفة. يمكنك الشراكة مع الخبراء للحصول على مزيد من التفاصيل حول التنبيهات والحوادث، أو تقديم المشورة بشأن التعامل مع التسوية. اكتساب نظرة ثاقبة على سياق التحليل الذكي للمخاطر الذي تم وصفه بواسطة لوحة معلومات المدخل.
+يمكنك الاتصال خبراء المخاطر في Microsoft من داخل مدخل Microsoft 365 Defender. يمكن للخبراء مساعدتك على فهم التهديدات المعقدة وإعلامات هجوم نقطة النهاية. يمكنك الشراكة مع الخبراء للحصول على مزيد من التفاصيل حول التنبيهات والحوادث، أو تقديم المشورة بشأن التعامل مع التسوية. اكتساب نظرة ثاقبة على سياق التحليل الذكي للمخاطر الذي تم وصفه بواسطة لوحة معلومات المدخل.
 
 > [!NOTE]
 >
