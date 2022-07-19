@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: تعرف على حل eDiscovery (Premium) في Microsoft Purview. توفر هذه المقالة نظرة عامة على eDiscovery (Premium) في Microsoft Purview، وهي أداة لمساعدتك على إدارة التحقيقات الداخلية والخارجية. كما أنها تقوم بتدوين أسباب العمل لاستخدام eDiscovery (Premium) لإدارة تحقيقاتك القانونية.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95dbeb33ad054845b7d2a7a5bc019ce0cd727093
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 7d534012466300675a7143cdada0b43468027104
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714564"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855076"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>نظرة عامة على Microsoft Purview eDiscovery (Premium)
 
@@ -83,7 +83,7 @@ ms.locfileid: "66714564"
 
 - **جمع.** بعد تحديد (والحفاظ) على مصادر البيانات ذات الصلة بالتحقيق، يمكنك استخدام أداة البحث المضمنة في eDiscovery (Premium) للبحث عن البيانات المباشرة وجمعها من مصادر البيانات الاحتجازية (ومصادر البيانات غير الاحتجازية، إن أمكن) التي قد تكون ذات صلة بالحالة.
 
-- **معالجه.** بعد جمع جميع البيانات ذات الصلة بالحالة، فإن الخطوة التالية هي معالجتها لمزيد من المراجعة والتحليل. في eDiscovery (Premium)، يتم نسخ البيانات الموضعية التي حددتها في مرحلة التجميع إلى موقع تخزين Azure (يسمى *مجموعة مراجعة*)، والذي يوفر لك طريقة عرض ثابتة لبيانات الحالة. 
+- **معالجه.** بعد جمع جميع البيانات ذات الصلة بالحالة، فإن الخطوة التالية هي معالجتها لمزيد من المراجعة والتحليل. في eDiscovery (Premium)، يتم نسخ البيانات الموضعية التي حددتها في مرحلة التجميع إلى موقع تخزين Azure (يسمى *مجموعة مراجعة*)، والذي يوفر لك طريقة عرض ثابتة لبيانات الحالة.
 
 - **استعراض.** بعد إضافة البيانات إلى مجموعة مراجعة، يمكنك عرض مستندات معينة وتشغيل استعلامات إضافية لتقليل البيانات إلى ما هو أكثر ملاءمة للحالة. كما يمكن إضافة تعليقات توضيحية إلى مستندات معينة ووضع علامة عليها.
 
@@ -93,9 +93,9 @@ ms.locfileid: "66714564"
 
 ## <a name="subscriptions-and-licensing"></a>الاشتراكات والترخيص
 
-للحصول على معلومات حول التراخيص التي توفر للمستخدم حقوق الاستفادة من eDiscovery (Premium) يرجى مراجعة [إرشادات Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) والاطلاع على قسم "eDiscovery والتدقيق" في [جدول مقارنة Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145). 
+للحصول على معلومات حول التراخيص التي توفر للمستخدم حقوق الاستفادة من eDiscovery (Premium) يرجى مراجعة [إرشادات Microsoft 365 للأمان & التوافق](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) والاطلاع على قسم "eDiscovery والتدقيق" في [جدول مقارنة Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-للحصول على معلومات حول كيفية تعيين التراخيص، راجع [تعيين التراخيص للمستخدمين](/microsoft-365/admin/manage/assign-licenses-to-users).
+للحصول على معلومات حول كيفية تعيين التراخيص، راجع [تعيين التراخيص للمستخدمين](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## <a name="get-started-with-ediscovery-premium"></a>بدء استخدام eDiscovery (Premium)
 

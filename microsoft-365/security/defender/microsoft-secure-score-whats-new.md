@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 25860b27ee5d677f3349f82f63f64983255d2d32
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: e869317a8a88545c058075909a95ead02177ff10
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750199"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855010"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>ما الجديد في نقاط Microsoft الآمنة
 
@@ -36,7 +36,7 @@ ms.locfileid: "66750199"
 
 كلما زادت إجراءات التحسين التي تتخذها، زادت درجة الأمان الخاصة بك. لمزيد من المعلومات، راجع [نقاط أمان Microsoft](microsoft-secure-score.md).
 
-يمكن العثور على نقاط الأمان من Microsoft في مدخل https://security.microsoft.com/securescore [Microsoft 365 Defender](microsoft-365-defender-portal.md).
+يمكن العثور على نقاط الأمان من Microsoft في مدخل <https://security.microsoft.com/securescore> [Microsoft 365 Defender](microsoft-365-defender-portal.md).
 
 ## <a name="june-2022"></a>يونيو 2022
 
@@ -58,8 +58,8 @@ ms.locfileid: "66750199"
 
 - تتوفر الآن توصيات Salesforce و ServiceNow الجديدة كإجراءات تحسين نقاط آمنة للعملاء Microsoft Defender for Cloud Apps. لمزيد من المعلومات، راجع [نظرة عامة على إدارة الوضع الأمني ل SaaS](https://aka.ms/saas_security_posture_management).
 
->[!Note]
->تتوفر الآن عناصر تحكم Salesforce و ServiceNow في المعاينة العامة.
+> [!NOTE]
+> تتوفر الآن عناصر تحكم Salesforce و ServiceNow في المعاينة العامة.
 
 ## <a name="april-2022"></a>أبريل 2022
 
