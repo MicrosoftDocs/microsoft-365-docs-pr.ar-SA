@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: تعرف على كيفية إنشاء مستخرج في Microsoft SharePoint Syntex.
-ms.openlocfilehash: 5bfca45442386c15fb8418e306a5631795204c5f
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: f1e50b7eaeaaf669c682741c0e02df883523d888
+ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679603"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66842111"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>إنشاء مستخرج في Microsoft SharePoint Syntex
 
@@ -48,6 +48,8 @@ ms.locfileid: "65679603"
 
     > [!NOTE]
     > بالنسبة إلى المستخرجات ذات نوع العمود **سطر واحد من النص**، الحد الأقصى للأحرف هو 255. يتم اقتطاع أي أحرف تحددها تتجاوز الحد. لتحديد أكثر من 255 حرفا، اختر نوع عمود **"الأسطر المتعددة للنص** " عند إنشاء المستخرج.
+    >
+    >بشكل افتراضي، يتم إنشاء **أسطر متعددة من أعمدة النص** بحد أقصى لمقدار النص الذي يمكن إضافته. في هذه الحالة، قد يظهر النص المستخرج مقتطعا. إذا حدث ذلك، يمكن استخدام إعداد العمود **"السماح بطول غير محدود" في مكتبات المستندات** لإزالة الحد.
 
 3. عند الانتهاء، حدد **"إنشاء**".
 
