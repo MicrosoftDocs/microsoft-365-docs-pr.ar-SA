@@ -1,5 +1,5 @@
 ---
-title: نظرة عامة على الإعداد Microsoft 365 للحملات
+title: نظرة عامة على الإعداد ل Microsoft 365 for Campaigns
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -26,11 +26,11 @@ search.appverid:
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: نظرة عامة على الإعداد Microsoft 365 Business Premium للحملات أو الشركات الأخرى
 ms.openlocfilehash: 0dc5fcda0d2f3ece91e294fea3a59d5e536c8088
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65086964"
+ms.lasthandoff: 06/05/2022
+ms.locfileid: "66857362"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>إعداد Microsoft 365 للحملات
 
@@ -51,4 +51,4 @@ ms.locfileid: "65086964"
 
  **إذا كنت بحاجة إلى الاتصال بالدعم:**
   
-بصفتك مسؤولا Microsoft 365، يمكنك الوصول إلى فريق دعم العملاء، **[والاتصال بدعم منتجات الأعمال - تعليمات المسؤول](../business-video/get-help-support.md)**
+بصفتك مسؤول Microsoft 365، يمكنك الوصول إلى فريق دعم العملاء، **[والاتصال بدعم منتجات الأعمال - مسؤول التعليمات](../business-video/get-help-support.md)**

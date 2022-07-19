@@ -1,9 +1,9 @@
 ---
-title: إنشاء حساب Test Base جديد
-description: تفاصيل حول كيفية إنشاء حساب جديد في Test Base
+title: إنشاء حساب قاعدة الاختبار
+description: تفاصيل حول كيفية إنشاء حساب جديد على قاعدة الاختبار
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
@@ -14,47 +14,73 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: ba2625f94411dbb00a7e56cde991957242fc2486
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: bf1830e1f166a3ecef1c7d50cf1f54f4c5b39dec
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "63578289"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66857386"
 ---
-# <a name="step-1-create-a-test-base-account"></a>الخطوة 1: إنشاء حساب Test Base
+# <a name="creating-a-test-base-account"></a>إنشاء حساب قاعدة الاختبار
 
-إذا لم يكن لديك اشتراك Azure، فنشئ [حسابا مجانيا](https://azure.microsoft.com/free/) قبل البدء.
+لإنشاء حساب **قاعدة الاختبار** ، نفذ الخطوات التالية. 
 
-## <a name="enter-details-for-test-base-account"></a>إدخال تفاصيل الحساب الأساسي للاختبار
+> [!IMPORTANT]
+> ستحتاج إلى اشتراك للتسجيل في حساب **قاعدة الاختبار** . إذا لم يكن لديك اشتراك Azure، فراجع **الاشتراكات** على صفحة [Azure الرئيسية](https://ms.portal.azure.com/#home) لمعرفة كيفية إنشاء اشتراك. 
+
+## <a name="to-create-a-test-base-account"></a>لإنشاء حساب قاعدة الاختبار
  
-1. ابحث عن **"قاعدة الاختبار"** في مدخل Azure.
+1. في الصفحة الرئيسية [Azure-Portal](https://ms.portal.azure.com/#home)، ابحث في **قاعدة الاختبار ل Microsoft 365** في سوق Azure لعرض عناصر التحكم لإنشاء حساب **قاعدة الاختبار**. 
 
-![إنشاء صورة بحث حساب الأساس الاختباري.](Media/CreateTestAccount1.png)
+   > [!div class="mx-imgBorder"]
+   > [![قاعدة](Media/creatingaccount01-search.png) اختبار البحث ](Media/creatingaccount01-search.png#lightbox)
 
-2. انقر **فوق "إنشاء"** لإنشاء حساب Test Base.
+2. في حقل عناصر التحكم في صفحة **"قاعدة الاختبار" ل Microsoft 365** ، حدد الزر **"إنشاء** " كما يلي لفتح صفحة **"إنشاء حساب قاعدة الاختبار** ". 
 
-![النقر فوق إضافة لإنشاء الحساب.](Media/CreateTestAccount2.png)
+   > [!div class="mx-imgBorder"]
+   > [![صفحة](Media/creatingaccount02-testbase.png) قاعدة الاختبار ](Media/creatingaccount02-testbase.png#lightbox)
 
-3.  اقرأ ثم ```Terms of Use``` حدد خانة الاختيار لتأكيد رضاك عن ```Terms of Use```.
+3. في الصفحة **"إنشاء حساب قاعدة الاختبار"** ، أضف معلوماتك إلى حقول الإدخال المطلوبة التالية في صفحة **"إنشاء حساب قاعدة الاختبار** ": 
 
-![راجع شروط الاستخدام.](Media/CreateTestAccount3.png)
+   - **الاشتراك** — من القائمة المنسدلة، حدد موقع معرف اشتراك Azure وحدده. 
+   - **مجموعة الموارد** — إنشاء مجموعة موارد جديدة عن طريق تحديد **إنشاء اسم جديد** وتحديد اسم تم اختياره في مربع نص إدخال **الاسم** الذي يتم عرضه. حدد **"موافق"** عند الانتهاء. إذا كان لديك **بالفعل مجموعة موارد**، فحدد موقع اسمها في القائمة المنسدلة وحددها. 
+   - **حساب قاعدة الاختبار** - ضمن **"تفاصيل الحساب**"، كما هو موضح في الشكل التالي، حدد اسما تم اختياره لحساب **"قاعدة الاختبار"** عن طريق كتابته في حقل نص الإدخال. 
 
-4.  قم بتعبئة المعلومات الصحيحة ضمن المتطلبات التالية: 
-    -   الاشتراك: مجموعة الموارد
-    -   تفاصيل المثيل: الاسم.
+   > [!NOTE]
+   > يجب توفير إدخال لكافة الحقول المطلوبة (*). 
 
-**حاليا، لا تدعم Test Base سوى مستوى الأسعار القياسية.**
+   > [!div class="mx-imgBorder"]
+   > [![معلومات](Media/creatingaccount03-basics.png) الأساسيات ](Media/creatingaccount03-basics.png#lightbox)
 
-![حدد الاشتراك، مجموعة الموارد وا اكتب التفاصيل.](Media/CreateTestAccount4.png)
+   > [!NOTE]
+   > اعتبارا من أبريل 2022، تدعم **قاعدة الاختبار** مستوى التسعير **القياسي** فقط. يحدد **مستوى التسعير** تكلفة المورد والخدمة كل ساعة التي يتم فرضها على اشتراك Azure الخاص بك. 
 
-5.  وأخيرا، انقر فوق للتحقق ```Review + Create``` من صحة حسابك الذي تم إنشاؤه حديثا وتمكينه.
+   > [!div class="mx-imgBorder"]
+   > ![مستوى التسعير](Media/creatingaccount04-pricing-tier.png)
 
-## <a name="next-steps"></a>الخطوات التالية
+4. اقرأ **شروط الاستخدام**. إذا كانت الشروط مقبولة، فحدد خانة الاختيار لتأكيد قراءة شروط الاستخدام وقبولها. 
 
-التقدم إلى المقالة التالية للبدء في الخطوة 2: **تعرف على كيفية تحميل الحزمة.**
-> [!div class="nextstepaction"]
-> [الخطوة التالية](uploadApplication.md)
+   > [!div class="mx-imgBorder"]
+   > ![شروط الاستخدام](Media/creatingaccount05-terms.png)
 
-<!---
-Add button for next page
--->
+5. في القطاع السفلي من صفحة **إنشاء حساب قاعدة الاختبار** ، حدد **Review + create** للتحقق من صحة بيانات الإدخال التي حددتها. 
+
+   إذا نجحت عملية التحقق من الصحة، يمكنك مراجعة تكوين بيانات الإدخال في صفحة **إنشاء حساب قاعدة الاختبار** . 
+
+   > [!div class="mx-imgBorder"]
+   > [![مراجعة الإنشاء](Media/creatingaccount06-review.png) ](Media/creatingaccount06-review.png#lightbox)
+
+6. حدد الزر **"إنشاء** " الذي يظهر في القطاع السفلي من صفحة **"إنشاء حساب قاعدة الاختبار"** السابقة. 
+
+   > [!div class="mx-imgBorder"]
+   > ![الزر "إنشاء"](Media/creatingaccount07-create.png)
+
+7. في صفحة **نشر** المستخدم، حدد **Go to resource** لفتح صفحة نظرة عامة على حساب **Test Base** الجديد وبدء استكشاف قاعدة **الاختبار** وتكوينها ورحلتها. 
+
+   > [!div class="mx-imgBorder"]
+   > [![](Media/creatingaccount08-complete.png) الإنشاء الكامل ](Media/creatingaccount08-complete.png#lightbox)
+
+
+
+
+
