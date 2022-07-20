@@ -13,17 +13,17 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: تعرف على التوافق وكيفية تكوين إعدادات الخصوصية في Microsoft Whiteboard.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fcdd5a61e772d273fc9620219e7772afcdcc4312
-ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
+ms.openlocfilehash: a2708d3eda92f3d29ea9ad6ee15e518d32d93a22
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/19/2022
-ms.locfileid: "66858095"
+ms.locfileid: "66882773"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>تكوين إعدادات الخصوصية في Microsoft Whiteboard
 
 >[!NOTE]
-> إذا أراد المستخدمون معرفة المزيد حول إعدادات الخصوصية الافتراضية وكيفية تجميع البيانات التشخيصية، فوجههم إلى [خصوصية Microsoft Whiteboard وتوافقه](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1).
+> إذا أردت أنت أو المستخدمون معرفة المزيد حول إعدادات الخصوصية الافتراضية والتجارب المتصلة الاختيارية وكيفية تجميع البيانات التشخيصية، فوجهها إلى [خصوصية Microsoft Whiteboard وتوافقها](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1).
 
 إذا كنت مسؤول Microsoft Whiteboard لمؤسستك، يمكنك التحكم في ما يلي:
 
@@ -31,13 +31,13 @@ ms.locfileid: "66858095"
 
 - ما إذا كانت التجارب المتصلة الاختيارية في Whiteboard متوفرة للمستخدمين.
 
-لتكوين مستوى البيانات التشخيصية، سجل الدخول إلى [مركز مسؤولي Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) باستخدام حساب المسؤول. من الصفحة الرئيسية لمركز الإدارة، انتقل إلى **إظهار كافة إعدادات > > إعدادات المؤسسة > لوح المعلومات**.
+لتكوين مستوى البيانات التشخيصية، سجل الدخول إلى [مركز مسؤولي Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) باستخدام حساب المسؤول. من الصفحة الرئيسية لمركز الإدارة، انتقل إلى **إظهار كافة إعدادات > > إعدادات المؤسسة > لوح المعلومات**.
 
-لتكوين توفر التجارب المتصلة الاختيارية، استخدم [خدمة نهج السحابة في Office](https://docs.microsoft.com/deployoffice/admincenter/overview-office-cloud-policy-service) في [مركز إدارة Microsoft 365 Apps](https://config.office.com). سجل الدخول باستخدام حساب المسؤول وانتقل إلى **تخصيص > Policy Management**. تمت تسمية النهج الذي تريد تكوينه: **السماح باستخدام تجارب إضافية اختيارية متصلة في Office**.
+لتكوين توفر التجارب المتصلة الاختيارية، استخدم [خدمة نهج السحابة في Office](/deployoffice/admincenter/overview-office-cloud-policy-service) في [مركز إدارة Microsoft 365 Apps](https://config.office.com). سجل الدخول باستخدام حساب المسؤول وانتقل إلى **تخصيص > Policy Management**. تمت تسمية النهج الذي تريد تكوينه: **السماح باستخدام تجارب إضافية اختيارية متصلة في Office**.
 
 ## <a name="diagnostic-data-setting-for-your-organization"></a>إعداد البيانات التشخيصية لمؤسستك
 
-يمكنك اختيار مستوى [البيانات التشخيصية](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1#diagnostic_data)التي يتم جمعها وإرسالها إلى Microsoft حول برنامج عميل Whiteboard الذي يعمل على الأجهزة في مؤسستك. سيتم إرسال البيانات التشخيصية الاختيارية إلى Microsoft، إلا إذا قمت بتغيير الإعداد في مركز مسؤولي Microsoft 365. وإذا اخترت إرسال البيانات التشخيصية الاختيارية، فسيتم أيضًا تضمين إلى البيانات التشخيصية المطلوبة.
+يمكنك اختيار مستوى البيانات التشخيصية التي يتم جمعها وإرسالها إلى Microsoft حول برنامج عميل Whiteboard الذي يعمل على الأجهزة في مؤسستك. سيتم إرسال البيانات التشخيصية الاختيارية إلى Microsoft، إلا إذا قمت بتغيير الإعداد في مركز مسؤولي Microsoft 365. وإذا اخترت إرسال البيانات التشخيصية الاختيارية، فسيتم أيضًا تضمين إلى البيانات التشخيصية المطلوبة.
 
 بالإضافة إلى **مطلوب** أو **اختياري**، هناك أيضا خيار **لا من أي** منهما. إذا اخترت هذا الخيار، فلن يتم إرسال أي بيانات تشخيصية حول برنامج عميل Whiteboard الذي يعمل على جهاز المستخدم إلى Microsoft. ومع ذلك، يحد هذا الخيار بشكل كبير من قدرة Microsoft على اكتشاف المشاكل التي قد يواجهها المستخدمون أثناء استخدام Whiteboard وتشخيصها ومعالجتها.
 
@@ -45,7 +45,7 @@ ms.locfileid: "66858095"
 
 ## <a name="optional-connected-experiences-setting-for-your-organization"></a>إعداد التجارب المتصلة الاختياري لمؤسستك
 
-يمكنك اختيار ما إذا كنت تريد جعل [التجارب المتصلة الاختيارية](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1?storagetype=live#optional) في Whiteboard متوفرة للمستخدمين. ستتوفر هذه التجارب المتصلة للمستخدمين ما لم تقم بتغيير الإعداد في مركز مسؤولي Microsoft 365.
+يمكنك اختيار ما إذا كنت تريد جعل التجارب المتصلة الاختيارية في Whiteboard متوفرة للمستخدمين. ستتوفر هذه التجارب المتصلة للمستخدمين ما لم تقم بتغيير الإعداد في مركز مسؤولي Microsoft 365. 
 
 تختلف هذه التجارب المتصلة نظراً لأنها لا تندرج في الاتفاقية التجارية المبرمة بين مؤسستك وMicrosoft. وهذه التجارب المتصلة الاختيارية مقدمة من Microsoft مباشرة للمستخدمين وتخضع [لاتفاقية خدمات Microsoft](https://www.microsoft.com/servicesagreement) وليس [شروط الخدمات عبر الإنترنت](https://www.microsoft.com/licensing/product-licensing/products).
 

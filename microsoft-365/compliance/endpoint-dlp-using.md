@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: تعرف على كيفية تكوين نهج منع فقدان البيانات (DLP) لاستخدام مواقع منع فقدان بيانات نقطة النهاية.
-ms.openlocfilehash: 9107759e137d7b8dd86253f9c6567b76686d2518
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f58c7aec00a91ebc63b410abdd4c6342eef47a0e
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632366"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66881984"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>استخدام تفادي فقدان البيانات في نقطة النهاية
 
@@ -128,7 +128,6 @@ ms.locfileid: "66632366"
 في هذا السيناريو، يتم حظر مزامنة الملفات مع تسمية الحساسية **عالية السرية** إلى OneDrive. هذا سيناريو معقد مع مكونات وإجراءات متعددة. ستحتاج إلى:
 
 - حساب مستخدم AAD لاستهدافه وكمبيوتر Windows 10 ملحق يقوم بالفعل بمزامنة مجلد OneDrive محلي مع التخزين السحابي في OneDrive.
-- تم تثبيت Microsoft Word على الكمبيوتر Windows 10 الهدف
 - أوصاف الحساسية التي تم تكوينها ونشرها — راجع [بدء استخدام تسميات الحساسية](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) [وإنشاء وتكوين تسميات الحساسية ونهجها](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies).
 
 هناك ثلاثة إجراءات.
@@ -234,7 +233,7 @@ ms.locfileid: "66632366"
 
 ## <a name="scenario-5-restrict-unintentional-sharing-to-unallowed-cloud-apps-and-services"></a>السيناريو 5: تقييد المشاركة غير المقصودة بتطبيقات وخدمات سحابية غير مسموح بها
 
-باستخدام DLP نقطة النهاية ومستعرض Edge على الويب، يمكنك تقييد المشاركة غير المقصودة للعناصر الحساسة إلى تطبيقات وخدمات سحابية غير مسموح بها. يفهم Edge متى يتم تقييد عنصر بواسطة نهج DLP نقطة النهاية ويفرض قيود الوصول.
+باستخدام DLP نقطة النهاية ومستعرض ويب Microisoft Edge، يمكنك تقييد المشاركة غير المقصودة للعناصر الحساسة إلى تطبيقات وخدمات سحابية غير مسموح بها. يفهم Edge متى يتم تقييد عنصر بواسطة نهج DLP نقطة النهاية ويفرض قيود الوصول.
 
 عند تحديد **الأجهزة** كموقع في نهج DLP تم تكوينه بشكل صحيح واستخدام مستعرض Microsoft Edge، سيتم منع المستعرضات غير مسموح بها التي قمت بتعريفها في هذه الإعدادات من الوصول إلى العناصر الحساسة التي تطابق عناصر تحكم نهج DLP. بدلا من ذلك، ستتم إعادة توجيه المستخدمين لاستخدام Microsoft Edge الذي، مع فهمه للقيود المفروضة على DLP، يمكنه حظر الأنشطة أو تقييدها عند استيفاء الشروط في نهج DLP.
 
@@ -249,6 +248,58 @@ ms.locfileid: "66632366"
 يمكنك الاستمرار في إضافة خدمات وتطبيقات ونهج جديدة لتوسيع قيودك وزيادةها لتلبية احتياجات عملك وحماية البيانات الحساسة. 
 
 سيساعد هذا التكوين على ضمان بقاء بياناتك آمنة مع تجنب القيود غير الضرورية التي تمنع المستخدمين من الوصول إلى العناصر غير الحساسة ومشاركتها أو تقيدهم.
+
+## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview"></a>السيناريو 6 مراقبة أنشطة المستخدم أو تقييدها على مجالات الخدمة الحساسة (معاينة)
+
+استخدم هذا السيناريو عندما تريد التدقيق أو الحظر باستخدام التجاوز أو حظر أنشطة المستخدم هذه على موقع ويب.
+
+- الطباعة من موقع ويب
+- نسخ البيانات من موقع ويب
+- حفظ موقع ويب كملفات محلية
+
+يجب أن يصل المستخدم إلى موقع الويب من خلال Microsoft Edge.
+
+### <a name="supported-syntax-for-designating-websites-in-a-website-group"></a>بناء الجملة المعتمد لتعيين مواقع ويب في مجموعة مواقع ويب
+
+يمكنك استخدام بناء جملة مرن لتضمين المجالات والمجالات الفرعية ومواقع الويب والمواقع الفرعية في مجموعات مواقع الويب الخاصة بك واستبعادها.
+
+- استخدام `*` حرف بدل لتحديد كافة المجالات أو كافة المجالات الفرعية
+- يستخدم `/` كإنهاء في نهاية عنوان URL لنطاق هذا الموقع المحدد فقط.
+
+عند إضافة URL بدون إنهاء `/`، يتم تحديد نطاق URL هذا إلى هذا الموقع وكافة المواقع الفرعية.
+
+ينطبق بناء الجملة هذا على كافة مواقع الويب http/https.
+
+فيما يلي بعض الأمثلة:
+
+
+|URL الذي تضيفه إلى مجموعة مواقع الويب  |سيتطابق URL  | لن يتطابق URL|
+|---------|---------|---------|
+|contoso.com  | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/ </br> //<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2|        //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com.au    |
+|contoso.com/     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/         |//<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/au   |
+|*.contoso.com   | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/allsubsites </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/allsubsites </br> //<!--nourl-->allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | //<!--nourl-->allsubdomains.contoso.com.au|
+|*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
+|*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
+
+
+### <a name="configure-sensitive-service-domains"></a>تكوين مجالات الخدمة الحساسة
+
+1. في مدخل التوافق في Microsoft Purview فتح إعدادات  > **DLP** **لمنع** >  فقدان البيانات **في المستعرض وقيود المجال لمجالات الخدمة الحساسة للبيانات** > **الحساسة**.
+1. حدد **إضافة مجموعة جديدة من مجالات الخدمة الحساسة**.
+1. قم بتسمية المجموعة.
+1. حدد **نوع المطابقة** الذي تريده. يمكنك التحديد من **عنوان URL** **وعنوان IP** **ونطاق عنوان IP**.
+1. اكتب القيمة المناسبة في **"إضافة مجالات خدمة جديدة" إلى هذه المجموعة**. يمكنك إضافة مواقع ويب متعددة إلى مجموعة واستخدام أحرف البدل لتغطية المجالات الفرعية.  على سبيل المثال، www.contoso.com لموقع ويب المستوى الأعلى فقط أو *.contoso.com corp.contoso.com أو hr.contoso.com أو fin.contoso.com
+1. حدد **حفظ**.
+1. حدد **النهج**.
+1. إنشاء نهج يتم تطبيقه على **الأجهزة** فقط وتحديد نطاقه. راجع نهج [DLP وقم بإنشائه واختباره وضبطه](create-test-tune-dlp-policy.md) للحصول على مزيد من المعلومات حول كيفية إنشاء نهج.
+1. إنشاء قاعدة تستخدم **المستخدم الذي قام بالوصول إلى موقع حساس من Edge**، وإجراء **التدقيق أو تقييد الأنشطة عند وصول المستخدمين إلى المواقع الحساسة في مستعرض Microsoft Edge على أجهزة Windows**.
+1. في الإجراء، حدد **إضافة مجموعات المواقع الحساسة أو إزالتها**.
+1. حدد **مجموعات المواقع الحساسة** التي تريدها.
+1. حدد **"إضافة**".
+1. حدد أنشطة المستخدم التي تريد مراقبتها أو تقييدها والإجراءات التي يجب أن تتخذها استجابة لتلك الأنشطة.
+1. قم بإنهاء تكوين القاعدة والنهج وتطبيقه.
+
+
 ## <a name="see-also"></a>راجع أيضًا
 
 - [التعرّف على تفادي فقدان بيانات نقطة النهاية](endpoint-dlp-learn-about.md)

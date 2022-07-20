@@ -1,11 +1,11 @@
 ---
-title: إضافة المزيد من مساحة التخزين SharePoint إلى اشتراكك
+title: إضافة المزيد من مساحة تخزين SharePoint إلى اشتراكك
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinms, jmueller
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,27 +25,27 @@ ms.custom:
 search.appverid: MET150
 description: أضف تخزين الملفات في اشتراكك في Microsoft 365. باستخدام مساحة تخزين إضافية للملفات، يمكنك تخزين المزيد من المحتوى في SharePoint.
 ms.date: 05/24/2022
-ms.openlocfilehash: bd0edd85718acc51559f5e409de4661a756cd787
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: a8029f9b51c678b80e4a8fde77d02663da6e89af
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043961"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882485"
 ---
-# <a name="add-more-sharepoint-storage-to-your-subscription"></a>إضافة المزيد من مساحة التخزين SharePoint إلى اشتراكك
+# <a name="add-more-sharepoint-storage-to-your-subscription"></a>إضافة المزيد من مساحة تخزين SharePoint إلى اشتراكك
 
-إذا بدأت في نفاد مساحة التخزين لمواقع SharePoint، يمكنك إضافة مساحة تخزين إلى اشتراكك إذا كانت خطتك مؤهلة. إذا لم تتمكن من رؤية **Office 365 "تخزين الملفات الإضافية**" في قائمة الوظائف الإضافية المتوفرة، فهذا يعني أن خطتك غير مؤهلة. لمزيد من المعلومات، راجع [هل خطتي مؤهلة؟](#is-my-plan-eligible-for-office-365-extra-file-storage)
+إذا بدأت في نفاد مساحة التخزين لمواقع SharePoint، فيمكنك إضافة مساحة تخزين إلى اشتراكك إذا كانت خطتك مؤهلة. إذا لم تتمكن من رؤية **Office 365 "تخزين الملفات الإضافية**" في قائمة الوظائف الإضافية المتوفرة، فهذا يعني أن خطتك غير مؤهلة. لمزيد من المعلومات، راجع [هل خطتي مؤهلة؟](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
 > إذا اشتريت اشتراكك من خلال الترخيص المجمع أو موفر الخدمات المشتركة (CSP)، فلا يمكنك شراء **Office 365 "تخزين الملفات الإضافية**" لمؤسستك مباشرة من Microsoft. اتصل بالممثل أو الشريك للحصول على المساعدة.
-> للحصول على معلومات حول التخزين OneDrive، راجع [تعيين مساحة التخزين الافتراضية لمستخدمي OneDrive](/onedrive/set-default-storage-space).
+> للحصول على معلومات حول تخزين OneDrive، راجع [تعيين مساحة التخزين الافتراضية لمستخدمي OneDrive](/onedrive/set-default-storage-space).
 
 > [!TIP]
 > إذا كنت بحاجة إلى مساعدة في الخطوات الواردة في هذا الموضوع، ففكر في [العمل مع أحد متخصصي الشركات الصغيرة من Microsoft](https://go.microsoft.com/fwlink/?linkid=2186871). باستخدام مساعد الأعمال، يمكنك أنت وموظفيك الوصول على مدار الساعة إلى خبراء الشركات الصغيرة أثناء تنمية أعمالك، بدءا من الإلحاق إلى الاستخدام اليومي.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-يجب أن تكون مسؤولا عموميا أو SharePoint لتنفيذ المهام الواردة في هذه المقالة. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../admin/add-users/about-admin-roles.md).
+يجب أن تكون مسؤولا عموميا أو مسؤول SharePoint لتنفيذ المهام الواردة في هذه المقالة. لمزيد من المعلومات، راجع [حول أدوار المسؤولين](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>عرض التخزين المتوفر
 
@@ -70,7 +70,7 @@ ms.locfileid: "66043961"
 4. إذا لزم الأمر، فاختر الاشتراك الأساسي، ثم أدخل عدد غيغابايت من مساحة التخزين التي تريد إضافتها.
 5. حدد **السحب الآن**.
 6. في الصفحة **"كيف يبدو هذا؟** "، تحقق من عدد غيغابايت من مساحة التخزين التي حددتها، وراجع معلومات التسعير، ثم حدد **"التالي**".
-7. في صفحة **"إكمال الطلب** "، تحقق من الإجمالي. إذا كنت بحاجة إلى إجراء أي تغييرات، فحدد **"تحرير الترتيب**". إذا كان الطلب يتطلب فحص ائتمان، فحدد خانة الاختيار. عند الانتهاء، حدد **"مكان الطلب** \> **الانتقال إلى الصفحة الرئيسية للمسؤول**".
+7. في صفحة **"إكمال الطلب** "، تحقق من الإجمالي. إذا كنت بحاجة إلى إجراء أي تغييرات، فحدد **"تحرير الترتيب**". إذا كان الطلب يتطلب فحص ائتمان، فحدد خانة الاختيار. عند الانتهاء، حدد **"وضع الطلب** \> **الانتقال إلى مسؤول Home**".
 
 ## <a name="increase-or-decrease-your-extra-storage"></a>زيادة مساحة التخزين الإضافية أو تقليلها
 
@@ -94,10 +94,10 @@ ms.locfileid: "66043961"
 - Office 365 Enterprise E5
 - Office 365 A3 (هيئة التدريس)
 - Office 365 A5 (هيئة التدريس)
-- Office على الويب مع خطة SharePoint 1
-- Office على الويب مع خطة SharePoint 2
-- SharePoint الخطة 1 عبر الإنترنت
-- SharePoint الخطة 2 عبر الإنترنت
+- Office على الويب باستخدام خطة SharePoint 1
+- Office على الويب باستخدام خطة SharePoint 2
+- الخطة 1 من SharePoint Online
+- الخطة 2 ل SharePoint Online
 - Microsoft 365 Business Basic
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
@@ -107,7 +107,7 @@ ms.locfileid: "66043961"
 - Microsoft 365 F3
 
 > [!NOTE]
-> Office 365 يتوفر "تخزين الملفات الإضافية" أيضا لخطط سحابة القطاع الحكومي و"سحابة القطاع الحكومي High" و"DOD".
+> Office 365 يتوفر "تخزين الملفات الإضافية" أيضا لخطط GCC و GCC High و DOD.
 
 ## <a name="related-content"></a>المحتويات ذات الصلة
 

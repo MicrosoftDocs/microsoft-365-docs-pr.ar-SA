@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: تعرف على كيفية حماية معلوماتك الحساسة باستخدام نهج وأدوات منع فقدان بيانات Microsoft Purview وقم بجولة خلال دورة حياة DLP.
-ms.openlocfilehash: 2bcc82f0609f617219d626f8180e7f4c9df51060
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 46c29b8aa19ce9b70cdb9127ab2c6270c0009a0e
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641899"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882401"
 ---
 # <a name="learn-about-data-loss-prevention"></a>التعرّف على تفادي فقدان البيانات
 
@@ -61,8 +61,6 @@ DLP هي مجرد واحدة من أدوات Microsoft Purview التي ستست
 - [نشر نهجك في الإنتاج](#deploy-your-policies-in-production)
 
 
-<!--ADD DIAGRAM OF THE DLP LIFECYCLE WORK ON WITH MAS-->
-
 ### <a name="plan-for-dlp"></a>التخطيط لـ DLP
 
 تعد مراقبة DLP وحمايتها أصلية للتطبيقات التي يستخدمها المستخدمون كل يوم. يساعد ذلك على حماية العناصر الحساسة لمؤسستك من الأنشطة المحفوفة بالمخاطر حتى إذا لم يكن المستخدمون مخصصين للتفكير والممارسات الخاصة بمنع فقدان البيانات. إذا كانت مؤسستك والمستخدمون حديثي الاستخدام لممارسات منع فقدان البيانات، فقد يتطلب اعتماد DLP تغييرا في عمليات عملك وسيكون هناك تحول في الثقافة للمستخدمين. ولكن، من خلال التخطيط والاختبار والضبط المناسبين، ستحمي نهج DLP العناصر الحساسة الخاصة بك مع تقليل أي انقطاعات محتملة في عمليات الأعمال.
@@ -94,7 +92,7 @@ DLP هي مجرد واحدة من أدوات Microsoft Purview التي ستست
 - المستودعات المحلية
 - مواقع PowerBI
 
-كل واحد له متطلبات مسبقة مختلفة. يمكن إحضار العناصر الحساسة في بعض المواقع، مثل Exchange online، تحت مظلة DLP من خلال تكوين نهج ينطبق عليها فقط. تتطلب الملفات الأخرى، مثل مستودعات الملفات المحلية نشر الماسح الضوئي ل Azure حماية البيانات (AIP). ستحتاج إلى إعداد البيئة والتعليمات البرمجية ونهج مسودة التعليمات البرمجية واختبارها بدقة قبل تنشيط أي إجراءات حظر.
+كل واحد له متطلبات مسبقة مختلفة. يمكن إحضار العناصر الحساسة في بعض المواقع، مثل Exchange online، تحت مظلة DLP من خلال تكوين نهج ينطبق عليها فقط. تتطلب المستودعات الأخرى، مثل مستودعات الملفات المحلية نشر الماسح الضوئي ل Azure Information Protection (AIP). ستحتاج إلى إعداد البيئة والتعليمات البرمجية ونهج مسودة التعليمات البرمجية واختبارها بدقة قبل تنشيط أي إجراءات حظر.
 
 ### <a name="deploy-your-policies-in-production"></a>نشر نهجك في الإنتاج
 
@@ -226,4 +224,4 @@ All DLP policies are created and maintained in the Microsoft Purview center. See
 
 ## <a name="licensing-and-subscriptions"></a>الترخيص والاشتراكات
 
-راجع [متطلبات الترخيص حماية البيانات](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) للحصول على تفاصيل حول الاشتراكات التي تدعم DLP.
+راجع [متطلبات الترخيص Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) للحصول على تفاصيل حول الاشتراكات التي تدعم DLP.

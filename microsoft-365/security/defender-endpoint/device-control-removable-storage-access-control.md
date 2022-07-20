@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender لنقطة النهاية التحكم في الوصول إلى التخزين القابل للإزالة لعنصر تحكم الجهاز، وسائط التخزين القابلة للإزالة
+title: Microsoft Defender لنقطة النهاية 存取控制 التخزين القابل للإزالة لعنصر تحكم الجهاز، وسائط التخزين القابلة للإزالة
 description: إرشادات حول Microsoft Defender لنقطة النهاية
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/24/2022
-ms.openlocfilehash: d9ff97aa50a03c1a75f073328a250a9acc3faf54
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 1900487e4249c344981630d7a11aafd02862f863
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490742"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882108"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>التحكم في الوصول إلى التخزين القابل للإزالة Microsoft Defender لنقطة النهاية Device Control
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>存取控制 التخزين القابل للإزالة لعنصر تحكم الجهاز Microsoft Defender لنقطة النهاية
 
 **ينطبق على:**
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -30,9 +30,9 @@ ms.locfileid: "66490742"
 > [!NOTE]
 > تتوفر الآن إدارة نهج المجموعة وإدارة Intune OMA-URI/Custom Policy لهذا المنتج بشكل عام (4.18.2106): راجع [مدونة المجتمع التقني: حماية التخزين والطابعة القابلين للإزالة باستخدام Microsoft Defender لنقطة النهاية](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
-## <a name="device-control-removable-storage-access-control-overview"></a>نظرة عامة على التحكم في الوصول إلى التخزين القابل للإزالة لعنصر تحكم الجهاز
+## <a name="device-control-removable-storage-access-control-overview"></a>نظرة عامة على 存取控制 التخزين القابل للإزالة لعنصر تحكم الجهاز
 
-Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم في الوصول إلى التخزين القابل للإزالة للتحكم في الأجهزة إمكانية تدقيق الوصول إلى التخزين القابل للإزالة أو السماح به أو منعه أو قراءته أو كتابته أو تنفيذه مع استثناء أو بدونه.
+تمكنك Microsoft Defender لنقطة النهاية ميزة 存取控制 التخزين القابل للإزالة لعنصر تحكم الجهاز من تدقيق الوصول إلى التخزين القابل للإزالة أو السماح به أو منعه أو قراءته أو كتابته أو تنفيذه باستخدام الاستبعاد أو بدونه.
 
 |امتياز|اذن|
 |---|---|
@@ -43,19 +43,19 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 |الدعم المستند إلى المستخدم|نعم|
 |الدعم المستند إلى الجهاز|نعم|
 
-تمنحك ميزة التحكم في الوصول إلى التخزين القابل للإزالة Microsoft Defender لنقطة النهاية Device Control الإمكانات التالية:
+تمنحك ميزة 存取控制 التخزين القابل للإزالة لعنصر تحكم الجهاز Microsoft Defender لنقطة النهاية الإمكانات التالية:
 
 |القدره|الوصف|التوزيع من خلال Intune|التوزيع من خلال نهج المجموعة|
 |---|---|---|---|
-|إنشاء مجموعة وسائط قابلة للإزالة|يسمح لك بإنشاء مجموعة وسائط قابلة للإزالة قابلة لإعادة الاستخدام|الخطوة 4 و6 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوة 4 و6 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
-|إنشاء النهج|يسمح لك بإنشاء نهج لفرض كل مجموعة وسائط قابلة للإزالة|الخطوة 5 و7 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوان 5 و7 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
-|فرض افتراضي|يسمح لك بتعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج|الخطوة 2 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri) | الخطوة 2 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
-|تمكين التحكم في الوصول إلى التخزين القابل للإزالة أو تعطيله|إذا قمت بتعيين تعطيل، فسيتم تعطيل نهج التحكم في الوصول إلى التخزين القابل للإزالة على هذا الجهاز| الخطوة 1 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوة 1 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
-|التقاط معلومات الملف|يسمح لك بإنشاء نهج لتسجيل معلومات الملف عند حدوث الوصول للكتابة|  | الخطوة 10 في القسم، [نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy) |
+|إنشاء مجموعة وسائط قابلة للإزالة|يسمح لك بإنشاء مجموعة وسائط قابلة للإزالة قابلة لإعادة الاستخدام|الخطوة 4 و6 في القسم، [نشر التخزين القابل للإزالة 存取控制 باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوة 4 و6 في القسم، [نشر التخزين القابل للإزالة 存取控制 باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
+|إنشاء النهج|يسمح لك بإنشاء نهج لفرض كل مجموعة وسائط قابلة للإزالة|الخطوة 5 و7 في القسم، [نشر التخزين القابل للإزالة 存取控制 باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوان 5 و7 في القسم، [نشر التخزين القابل للإزالة 存取控制 باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
+|فرض افتراضي|يسمح لك بتعيين الوصول الافتراضي (رفض أو السماح) إلى الوسائط القابلة للإزالة إذا لم يكن هناك نهج|الخطوة 2 في القسم، [نشر التخزين القابل للإزالة 存取控制 باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri) | الخطوة 2 في القسم، [نشر 存取控制 التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
+|تمكين 存取控制 التخزين القابل للإزالة أو تعطيله|إذا قمت بتعيين Disable، فسيتم تعطيل نهج 存取控制 التخزين القابل للإزالة على هذا الجهاز| الخطوة 1 في القسم، [نشر التخزين القابل للإزالة 存取控制 باستخدام Intune OMA-URI](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| الخطوة 1 في القسم، [نشر 存取控制 التخزين القابل للإزالة باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy)|
+|التقاط معلومات الملف|يسمح لك بإنشاء نهج لتسجيل معلومات الملف عند حدوث الوصول للكتابة|  | الخطوة 10 في القسم، [نشر التخزين القابل للإزالة 存取控制 باستخدام نهج المجموعة](#deploying-removable-storage-access-control-by-using-group-policy) |
 
 ### <a name="prepare-your-endpoints"></a>إعداد نقاط النهاية
 
-نشر التحكم في الوصول إلى التخزين القابل للإزالة على أجهزة Windows 10 وأجهزة Windows 11 التي تحتوي على إصدار عميل مكافحة البرامج الضارة **4.18.2103.3 أو إصدار أحدث**.
+نشر 存取控制 التخزين القابل للإزالة على أجهزة Windows 10 وأجهزة Windows 11 التي تحتوي على إصدار عميل مكافحة البرامج الضارة **4.18.2103.3 أو إصدار أحدث**.
 
 - **4.18.2104 أو أحدث**: إضافة `SerialNumberId`دعم `VID_PID`عنصر نهج المجموعة المستند إلى filepath و `ComputerSid`
 
@@ -68,9 +68,9 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 :::image type="content" source="images/powershell.png" alt-text="واجهة PowerShell" lightbox="images/powershell.png":::
 
 > [!NOTE]
-> لا تحتاج أي من مكونات أمن Windows إلى أن تكون نشطة حيث يمكنك تشغيل التحكم في الوصول إلى التخزين القابل للإزالة بشكل مستقل عن حالة أمن Windows.
+> لا يجب أن يكون أي من مكونات أمن Windows نشطا حيث يمكنك تشغيل "التخزين القابل للإزالة" 存取控制 مستقلا عن حالة أمن Windows.
 
-## <a name="device-control-removable-storage-access-control-policies"></a>نهج التحكم في الوصول إلى التخزين القابلة للإزالة لعنصر تحكم الجهاز
+## <a name="device-control-removable-storage-access-control-policies"></a>نهج 存取控制 التخزين القابل للإزالة لعنصر تحكم الجهاز
 
 يمكنك استخدام الخصائص التالية لإنشاء مجموعة تخزين قابلة للإزالة:
 
@@ -85,7 +85,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 |**قائمة واصفة**|سرد خصائص الجهاز التي تريد استخدامها للتغطية في المجموعة. للحصول على كل خاصية من خصائص الجهاز، راجع ["خصائص الجهاز](device-control-removable-storage-protection.md) " للحصول على مزيد من التفاصيل. جميع الخصائص حساسة لحالة الأحرف. |**PrimaryId**: `RemovableMediaDevices`, , `CdRomDevices``WpdDevices`<p>**BusId**: على سبيل المثال، USB وSCSI<p>**معرف الجهاز**<p>**معرف الأجهزة**<p>**InstancePathId**: InstancePathId هي سلسلة تعرف الجهاز في النظام بشكل فريد، على سبيل المثال. `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0` يمثل الرقم الموجود في النهاية (على سبيل المثال &0) المساحة المتوفرة وقد يتغير من جهاز إلى آخر. للحصول على أفضل النتائج، استخدم حرف بدل في النهاية. على سبيل المثال، `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**معرف الرقم التسلسلي**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: مطابقة زوج VID/PID هذا بالضبط<p>`_55E0`: مطابقة أي وسائط مع PID=55E0 <p>`0751_`: مطابقة أي وسائط مع VID=0751|
 |**نوع المطابقة**|عند وجود خصائص جهاز متعددة يتم استخدامها في `DescriptorIDList`، يحدد MatchType العلاقة.|**MatchAll**: ستكون أي سمات ضمن `DescriptorIdList` العلاقة **و** ، على سبيل المثال، إذا وضع `DeviceID` المسؤول و `InstancePathID`، لكل USB متصل، سيتحقق النظام لمعرفة ما إذا كان USB يلبي القيمتين أم لا. <p> **MatchAny**: السمات ضمن DescriptorIdList ستكون **علاقة أو** ؛ على سبيل المثال، إذا وضع `DeviceID` المسؤول و `InstancePathID`، لكل USB متصل، سيقوم النظام بالإنفاذ طالما أن USB يحتوي على قيمة **DeviceID** أو **InstanceID** متطابقة.|
 
-### <a name="access-control-policy"></a>نهج التحكم بالوصول
+### <a name="access-control-policy"></a>نهج 存取控制
 يمكنك استخدام الخصائص التالية لإنشاء نهج التحكم في الوصول:
 
 | اسم الخاصية | الوصف | خيارات |
@@ -100,9 +100,9 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 | **خيارات** | تحديد ما إذا كان يجب عرض الإعلام أم لا |**عند تحديد "السماح بالنوع"**: <p>0: لا شيء<p>4: تعطيل **AuditAllowed** و **AuditDenied** لهذا الإدخال. حتى إذا حدث **السماح** وتم تكوين AuditAllowed، فلن يرسل النظام الحدث. <p>8: التقاط معلومات الملف والحصول على نسخة من الملف كدليل للوصول إلى الكتابة. <p>16: التقاط معلومات الملف للوصول للكتابة. <p>**عند تحديد رفض النوع**: <p>0: لا شيء<p>4: تعطيل **AuditDenied** لهذا الإدخال. حتى إذا حدث **الحظر** وتم تكوين AuditDenied، فلن يعرض النظام الإعلام. <p>**عند تحديد Type **AuditAllowed****: <p>0: لا شيء <p>1: لا شيء <p>2: إرسال الحدث<p> **عند تحديد Type **AuditDenied****: <p>0: لا شيء <p>1: إظهار الإعلام <p>2: إرسال الحدث<p>3: إظهار الإعلام وإرسال الحدث |
 |AccessMask|تعريف الوصول. | **الوصول إلى مستوى القرص**: <p>1: قراءة <p>2: الكتابة <p>4: تنفيذ <p>**الوصول إلى مستوى نظام الملفات**: <p>8: قراءة نظام الملفات <p>16: كتابة نظام الملفات <p>32: تنفيذ نظام الملفات <p><p>يمكنك الحصول على وصول متعدد عن طريق تنفيذ عملية OR الثنائية، على سبيل المثال، سيكون AccessMask للقراءة والكتابة والتنفيذ 7؛ سيكون AccessMask للقراءة والكتابة 3.|
 
-## <a name="device-control-removable-storage-access-control-scenarios"></a>سيناريوهات التحكم في الوصول إلى التخزين القابلة للإزالة لعنصر تحكم الجهاز
+## <a name="device-control-removable-storage-access-control-scenarios"></a>سيناريوهات 存取控制 التخزين القابل للإزالة لعنصر تحكم الجهاز
 
-لمساعدتك على الإلمام Microsoft Defender لنقطة النهاية التحكم في الوصول إلى التخزين القابل للإزالة، قمنا بتجميع بعض السيناريوهات الشائعة لمتابعتها.
+لمساعدتك على الإلمام Microsoft Defender لنقطة النهاية 存取控制 التخزين القابل للإزالة، قمنا بتجميع بعض السيناريوهات الشائعة لمتابعتها.
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>السيناريو 1: منع الكتابة والتنفيذ من الوصول إلى الكل ولكن السماح ب USBs محددة تمت الموافقة عليها
 
@@ -138,13 +138,13 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
     2. النهج 2: تدقيق الكتابة وتنفيذ الوصول إلى الآخرين. مثال على حالة الاستخدام هذه هو: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** في نموذج [السيناريو 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
-## <a name="deploying-and-managing-removable-storage-access-control-by-using-intune-oma-uri"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة وإدارته باستخدام Intune OMA-URI
+## <a name="deploying-and-managing-removable-storage-access-control-by-using-intune-oma-uri"></a>نشر وإدارة 存取控制 التخزين القابل للإزالة باستخدام Intune OMA-URI
 
-تمكنك ميزة التحكم في الوصول إلى التخزين القابل للإزالة من تطبيق النهج باستخدام OMA-URI على المستخدم أو الجهاز أو كليهما.
+تمكنك ميزة 存取控制 Storage القابلة للإزالة من تطبيق النهج باستخدام OMA-URI على المستخدم أو الجهاز أو كليهما.
 
 ### <a name="licensing-requirements"></a>متطلبات الترخيص
 
-قبل البدء في التحكم في الوصول إلى التخزين القابل للإزالة، يجب عليك تأكيد [اشتراكك في Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). للوصول إلى التحكم في الوصول إلى التخزين القابل للإزالة واستخدامه، يجب أن يكون لديك Microsoft 365 E3 أو Microsoft 365 E5.
+قبل البدء باستخدام 存取控制 التخزين القابل للإزالة، يجب عليك تأكيد [اشتراكك في Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). للوصول إلى 存取控制 التخزين القابل للإزالة واستخدامه، يجب أن يكون لديك Microsoft 365 E3 أو Microsoft 365 E5.
 
 ### <a name="permission"></a>اذن
 
@@ -154,7 +154,9 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 - دور مخصص مع تشغيل أذونات إنشاء/تحرير/تحديث/قراءة/حذف/عرض التقارير لملفات تعريف تكوين الجهاز
 - المسؤول العام
 
-### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام Intune OMA-URI
+### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>نشر 存取控制 التخزين القابل للإزالة باستخدام Intune OMA-URI
+
+لحظر فئة تخزين معينة قابلة للإزالة ولكن السماح بوسائط معينة، يمكنك استخدام 'IncludedIdList مجموعة من خلال PrimaryId و ExcludedIDList مجموعة من خلال DeviceId/HardwareId/etc.'
 
 انتقل إلى مركز إدارة Microsoft إدارة نقاط النهاية (<https://endpoint.microsoft.com/>) **> Devices > إنشاء > النظام الأساسي لملف التعريف: Windows 10 والإيجابيات الأحدث، نوع ملف التعريف: قوالب > مخصص**
 
@@ -172,7 +174,7 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
      - انقر فوق **حفظ**.
 
-   :::image type="content" source="images/enable-rsac.png" alt-text="لقطة شاشة لتمكين نهج التحكم في الوصول إلى التخزين القابل للإزالة" lightbox="images/enable-rsac.png":::
+   :::image type="content" source="images/enable-rsac.png" alt-text="لقطة شاشة لتمكين نهج 存取控制 التخزين القابل للإزالة" lightbox="images/enable-rsac.png":::
 
 2. تعيين الإنفاذ الافتراضي:
 
@@ -292,17 +294,17 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
 تتوفر هذه الإمكانية في مركز إدارة Microsoft إدارة نقاط النهاية (<https://endpoint.microsoft.com/>). انتقل إلى نهج **إنشاء** **تقليل** >  الأجزاء المعرضة للهجوم **الأمني** >  لنقطة النهاية. اختر **النظام الأساسي: Windows 10 والإي وقت لاحق** باستخدام **ملف التعريف: التحكم في الجهاز**.
 
-## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة وإدارته باستخدام نهج المجموعة
+## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>نشر 存取控制 التخزين القابل للإزالة وإدارتها باستخدام نهج المجموعة
 
-تمكنك ميزة التحكم في الوصول إلى التخزين القابل للإزالة من تطبيق نهج باستخدام نهج المجموعة على المستخدم أو الجهاز أو كليهما.
+تمكنك ميزة 存取控制 Storage القابلة للإزالة من تطبيق نهج باستخدام نهج المجموعة على المستخدم أو الجهاز أو كليهما.
 
 ### <a name="licensing"></a>الترخيص
 
-قبل البدء في التحكم في الوصول إلى التخزين القابل للإزالة، يجب عليك تأكيد [اشتراكك في Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). للوصول إلى التحكم في الوصول إلى التخزين القابل للإزالة واستخدامه، يجب أن يكون لديك Microsoft 365 E3 أو Microsoft 365 E5.
+قبل البدء باستخدام 存取控制 التخزين القابل للإزالة، يجب عليك تأكيد [اشتراكك في Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). للوصول إلى 存取控制 التخزين القابل للإزالة واستخدامه، يجب أن يكون لديك Microsoft 365 E3 أو Microsoft 365 E5.
 
-### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>نشر التحكم في الوصول إلى التخزين القابل للإزالة باستخدام نهج المجموعة
+### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>نشر 存取控制 التخزين القابل للإزالة باستخدام نهج المجموعة
 
-1. تمكين التحكم في الوصول إلى التخزين القابل للإزالة أو تعطيله:
+1. تمكين 存取控制 التخزين القابل للإزالة أو تعطيله:
 
    يمكنك تمكين التحكم في الجهاز كما يلي:
 
@@ -401,9 +403,9 @@ Microsoft Defender لنقطة النهاية تتيح لك ميزة التحكم
 
       :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="لقطة شاشة لتحديد موقع بيانات دليل التحكم في الأجهزة عن بعد" lightbox="images/evidence-data-remote-location-gp.png":::
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>عرض بيانات التحكم في الوصول إلى التخزين القابلة للإزالة لعنصر تحكم الجهاز في Microsoft Defender لنقطة النهاية
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>عرض بيانات 存取控制 التخزين القابل للإزالة لعنصر تحكم الجهاز في Microsoft Defender لنقطة النهاية
 
-يعرض [مدخل Microsoft 365 Defender](https://security.microsoft.com/advanced-hunting) الأحداث التي تم تشغيلها بواسطة التحكم في الوصول إلى التخزين القابل للإزالة ل Device Control. للوصول إلى أمان Microsoft 365، يجب أن يكون لديك الاشتراك التالي:
+يعرض [مدخل Microsoft 365 Defender](https://security.microsoft.com/advanced-hunting) الأحداث التي تم تشغيلها بواسطة 存取控制 التخزين القابل للإزالة لعنصر تحكم الجهاز. للوصول إلى أمان Microsoft 365، يجب أن يكون لديك الاشتراك التالي:
 
 - تقارير Microsoft 365 for E5
 
@@ -453,13 +455,13 @@ DeviceEvents
 
 ### <a name="how-to-generate-guid-for-group-idpolicyrule-identry-id"></a>كيفية إنشاء معرف GUID لمعرف المجموعة/معرف PolicyRule/معرف الإدخال؟
 
-يمكنك إنشاء GUID من خلال مصدر مفتوح عبر الإنترنت، أو من خلال PowerShell - [كيفية إنشاء GUID من خلال PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)
+يمكنك إنشاء GUID من خلال Open Source عبر الإنترنت، أو من خلال PowerShell - [كيفية إنشاء GUID من خلال PowerShell](/powershell/module/microsoft.powershell.utility/new-guid)
 
 ![الصوره](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>ما هي وسائط التخزين القابلة للإزالة وقيود النهج؟
 
-إما من مركز إدارة Microsoft إدارة نقاط النهاية (Intune) أو من خلال Microsoft Graph API، يتم إجراء الاستدعاء الخلفي من خلال OMA-URI (GET للقراءة أو PATCH للتحديث) وبالتالي فإن القيد هو نفسه أي ملف تعريف تكوين مخصص ل OMA-URI في Microsoft وهو رسميا 350000 حرف لملفات XML.
+إما من مركز إدارة Microsoft إدارة نقاط النهاية (Intune) أو من خلال Microsoft Graph API، يتم إجراء المكالمة الخلفية من خلال OMA-URI (GET للقراءة أو PATCH للتحديث) وبالتالي فإن القيد هو نفسه أي ملف تعريف تكوين مخصص ل OMA-URI في Microsoft وهو رسميا 350000 حرف لملفات XML.
 
 على سبيل المثال، إذا كنت بحاجة إلى كتلتين من الإدخالات لكل معرف أمان مستخدم ل "السماح"/"التدقيق مسموح به" لمستخدمين محددين وكتلتين من الإدخالات في نهاية "رفض" الكل، فستتمكن من إدارة 2276 مستخدما.
 

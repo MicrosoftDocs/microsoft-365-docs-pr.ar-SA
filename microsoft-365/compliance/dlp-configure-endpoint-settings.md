@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: تعرف على كيفية تكوين الإعدادات المركزية لمنع فقدان بيانات نقطة النهاية (DLP).
-ms.openlocfilehash: 6265cb39c496a75ebc1bebed494a27798552417b
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 91460c63b2286a8c2be4e5fe1aa94ea5ee31fec7
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686218"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882379"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>تكوين إعدادات تفادي فقدان البيانات في نقطة النهاية
 
@@ -257,6 +257,17 @@ ms.locfileid: "66686218"
 | **CONTOSO.COM** |**يطابق اسم المجال المحدد وأي موقع فرعي**: <p>*://contoso.com<p>*:/ /contoso.com/ <p>*://contoso.com/anysubsite1 <p>*:/ /contoso.com/anysubsite1/anysubsite2 (إلخ) <p>**لا يتطابق مع المجالات الفرعية أو المجالات غير المحددة**: <p>*://anysubdomain.contoso.com <p>*:/ /anysubdomain.contoso.com.AU |
 | ***.CONTOSO.COM** |**يطابق اسم المجال المحدد وأي مجال فرعي وأي موقع**: <p>*://contoso.com <p>*:/ /contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*:/ /anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*:/ /anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (إلخ) <p>**لا يتطابق مع المجالات غير المحددة** <p>*://anysubdomain.contoso.com.AU/ |
 | **`www.contoso.com`** |**يطابق اسم المجال المحدد**: <p>`www.contoso.com` <p>**لا يتطابق مع المجالات أو المجالات الفرعية غير المحددة** <p>*://anysubdomain.contoso.com/، في هذه الحالة، يجب وضع اسم مجال FQDN نفسه `www.contoso.com`|
+
+#### <a name="sensitive-service-domains-preview"></a>مجالات الخدمة الحساسة (معاينة)
+
+عند سرد موقع ويب في مجالات الخدمات الحساسة، يمكنك التدقيق أو الحظر باستخدام التجاوز أو حظر المستخدمين عند محاولة:
+
+- الطباعة من موقع ويب
+- نسخ البيانات من موقع ويب
+- حفظ موقع ويب كملفات محلية
+
+يجب أن يكون كل موقع ويب مدرجا في مجموعة مواقع ويب ويجب أن يصل المستخدم إلى موقع الويب من خلال Microsoft Edge. يتم استخدام مجالات الخدمة الحساسة (معاينة) بالتزامن مع نهج DLP للأجهزة. راجع [السيناريو 6 مراقبة أنشطة المستخدم أو تقييدها على مجالات الخدمة الحساسة (معاينة)](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) لمزيد من المعلومات.
+
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>إعدادات إضافية ل DLP لنقطة النهاية
 
