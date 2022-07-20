@@ -138,6 +138,7 @@
 ###### [استكشاف مشاكل تثبيت RHEL 6 وإصلاحها](linux-support-rhel.md)
 ###### [استكشاف مشاكل الأداء وإصلاحها](linux-support-perf.md)
 ###### [استكشاف مشاكل الأحداث المفقودة وإصلاحها](linux-support-events.md)
+###### [استكشاف مشاكل الأداء وإصلاحها](troubleshoot-auditd-performance-issues.md)
 
 ##### [الخصوصية](linux-privacy.md)
 ##### [الموارد](linux-resources.md)
