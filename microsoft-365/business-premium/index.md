@@ -9,6 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -20,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: تعرّف على كيفية تنفيذ الأمان عبر الإنترنت للشركات الصغيرة أو متوسطة الحجم مع Microsoft 365 Business Premium. تم تحسين قدرات وميزات الأمان عبر الإنترنت لمنع الهجمات الإلكترونية والخروقات الأمنية، والمساعدة في حماية البيانات والأجهزة والمعلومات باستخدام الدفاعات الإلكترونية عالية الدرجة.
-ms.openlocfilehash: 0fec3c5117759cc0cdb5d13fe8c04809cfcf8356
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: cd21390c144d6a175edd2091fb531fe881a9b65e
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685910"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894274"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; للأمان عبر الإنترنت للشركات الصغيرة
 
