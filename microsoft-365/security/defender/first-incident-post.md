@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d2d137ea2a97bb183187ca83eb12a34ab336bc53
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1856548b8cb3fd1c8b09844d04adaa21f6fd8776
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665987"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892893"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>الخطوة 3. إجراء مراجعة ما بعد الحدث لحدثك الأول
 

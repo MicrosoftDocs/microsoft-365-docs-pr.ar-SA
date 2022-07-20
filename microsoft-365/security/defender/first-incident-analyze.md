@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c58bc4eb30c819ae0cbc1654173e8d9dc4ecb7a7
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 596966c7c1975ebb8f20b306be5e4ab0a34bd99e
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664909"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893628"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>الخطوة 1. فرز الحادث الأول وتحليله
 
@@ -44,7 +44,7 @@ ms.locfileid: "64664909"
 
 يتلقى Microsoft 365 Defender التنبيهات والأحداث من أنظمة أمان Microsoft الأساسية المتعددة كمصادر للكشف لإنشاء صورة شاملة وسياق للنشاط الضار. مصادر الكشف المحتملة هي:
 
-- [Microsoft Defender لنقطة النهاية](../defender-endpoint/microsoft-defender-endpoint.md) هو حل الكشف عن تهديدات نقاط النهاية والرد عليها (الكشف التلقائي والاستجابة على النقط النهائية) يستخدم برنامج الحماية من الفيروسات من Microsoft Defender والحماية المتقدمة من التهديدات الممكنة بواسطة السحابة استخدام Graph أمان Microsoft. Defender لنقطة النهاية هو نظام أساسي موحد للحماية الوقائية، والكشف بعد الاختراق، والتحقيق التلقائي، والاستجابة. فهو يحمي نقاط النهاية من التهديدات الإلكترونية، ويكشف عن الهجمات المتقدمة وخروقات البيانات، ويأتمتة الحوادث الأمنية، ويحسن الوضع الأمني.
+- [Microsoft Defender لنقطة النهاية](../defender-endpoint/microsoft-defender-endpoint.md) هو حل الكشف عن نقطة النهاية والاستجابة (EDR) الذي يستخدم برنامج الحماية من الفيروسات من Microsoft Defender والحماية المتقدمة من التهديدات الممكنة على السحابة باستخدام Microsoft Security Graph. Defender لنقطة النهاية هو نظام أساسي موحد للحماية الوقائية، والكشف بعد الاختراق، والتحقيق التلقائي، والاستجابة. فهو يحمي نقاط النهاية من التهديدات الإلكترونية، ويكشف عن الهجمات المتقدمة وخروقات البيانات، ويأتمتة الحوادث الأمنية، ويحسن الوضع الأمني.
 - [Microsoft Defender for Identity](/defender-for-identity/what-is) هو حل أمان مستند إلى السحابة يستخدم إشارات خدمات المجال Active Directory محلي (AD DS) لتحديد التهديدات المتقدمة والهويات المخترقة والإجراءات الداخلية الضارة الموجهة إلى مؤسستك واكتشافها والتحقيق فيها.
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/) بمثابة أداة بوابة للتوسط في الوصول في الوقت الحقيقي بين مستخدمي المؤسسة وموارد السحابة التي يستخدمونها، أينما كان المستخدمون بغض النظر عن الجهاز الذي يستخدمونه.
 - [Microsoft Defender لـ Office 365](../office-365-security/overview.md) تحمي مؤسستك من التهديدات الضارة في رسائل البريد الإلكتروني والارتباطات (عناوين URL) وأدوات التعاون.
@@ -70,15 +70,15 @@ ms.locfileid: "64664909"
 
 1. انتقل إلى صفحة [الأحداث لبدء الفرز](incidents-overview.md) . يمكنك هنا الاطلاع على قائمة بالحوادث التي تؤثر على مؤسستك. بشكل افتراضي، يتم ترتيبها من الحدث الأحدث إلى الحدث الأقدم. من هنا، يمكنك أيضا رؤية أعمدة مختلفة لكل حادث تظهر خطورتها، وفئة، وعدد التنبيهات النشطة، والكيانات المتأثرة، من بين أمور أخرى. يمكنك تخصيص مجموعة الأعمدة وفرز قائمة انتظار الأحداث حسب بعض هذه الأعمدة عن طريق تحديد اسم العمود. يمكنك أيضا تصفية قائمة انتظار الحوادث وفقا لاحتياجاتك. للحصول على قائمة كاملة بعوامل التصفية المتوفرة، راجع [تحديد أولويات الحوادث](incident-queue.md#available-filters).
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-queue.png" alt-text="الحوادث في مدخل الأمان Microsoft 365" lightbox="../../media/first-incident-analyze/first-incident-analyze-queue.png":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-queue.png" alt-text="الحوادث في مدخل أمان Microsoft 365" lightbox="../../media/first-incident-analyze/first-incident-analyze-queue.png":::
 
     أحد الأمثلة على كيفية إجراء الفرز لهذه المجموعة من الحوادث هو تحديد أولويات الحوادث التي أثرت على المزيد من المستخدمين والأجهزة. في هذا المثال، قد تعطي الأولوية لمعرف الحدث 6769 لأنه أثر على أكبر عدد من الكيانات: سبعة أجهزة وستة مستخدمين وعلبتي بريد. وعلاوة على ذلك، يبدو أن الحادث يحتوي على تنبيهات من Microsoft Defender for Identity، والتي تشير إلى تنبيه قائم على الهوية وسرقة محتملة لبيانات الاعتماد.
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="صفحة Incidents** تعرض مثالا لحادث شديد التأثير في مدخل الأمان Microsoft 365" lightbox="../../media/first-incident-analyze/first-incident-analyze-high-impact.png":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="صفحة Incidents** تعرض مثالا لحادث شديد التأثير في مدخل أمان Microsoft 365" lightbox="../../media/first-incident-analyze/first-incident-analyze-high-impact.png":::
 
 2. حدد الدائرة الموجودة بجانب اسم الحدث لمراجعة التفاصيل. سيظهر جزء جانبي على الجانب الأيسر، والذي يحتوي على معلومات إضافية يمكن أن تساعد في الفرز بشكل أكبر.
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="صفحة الحوادث تعرض مثالا لجزء جانب الحادث في مدخل الأمان Microsoft 365" lightbox="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png" alt-text="صفحة الحوادث تعرض مثالا لجزء جانب الحادث في مدخل أمان Microsoft 365" lightbox="../../media/first-incident-analyze/first-incident-analyze-incident-flyout.png":::
 
    على سبيل المثال، بالنظر إلى تكتيكات [MITRE ATT&CK](https://attack.mitre.org/) التي استخدمها المهاجم استنادا إلى فئات الحادث، قد تعطي الأولوية لهذا الحدث لأن المهاجم استخدم بيانات الاعتماد المسروقة، وثبت الأمر والتحكم، ونفذ حركة جانبية، وصادر بعض البيانات. تشير هذه الإجراءات إلى أن المهاجم قد تعمق بالفعل في الشبكة وربما قام بسرقة معلومات سرية.
 
@@ -92,7 +92,7 @@ ms.locfileid: "64664909"
 
    في هذا المثال، تم تحديد 87 تنبيها فرديا كجزء من حادث أمني واحد. يمكنك عرض جميع التنبيهات للحصول على عرض سريع لكيفية تشغيل الهجوم.
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-alerts.png" alt-text="التنبيهات في جزء جانب الحادث في مدخل الأمان Microsoft 365" lightbox="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-alerts.png":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-alerts.png" alt-text="التنبيهات في جزء جانب الحادث في مدخل أمان Microsoft 365" lightbox="../../media/first-incident-analyze/first-incident-analyze-incident-flyout-alerts.png":::
 
 ## <a name="analyze-your-first-incident"></a>تحليل الحدث الأول
 

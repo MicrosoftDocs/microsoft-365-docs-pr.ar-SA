@@ -8,19 +8,15 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.collection:
-- M365-subscription-management
-- Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.date: 07/19/2022
 search.appverid: MET150
 description: تعرف على كيفية حماية Microsoft Defender Antivirus لأجهزة Windows من تهديدات البرامج، مثل الفيروسات والبرامج الضارة وبرامج التجسس.
-ms.openlocfilehash: 4f8c023bee4605e5ed0da9268688c25b551174dd
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 293ea476783e81f34856a3c7cc80d40ed254e4ac
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66857428"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893068"
 ---
 # <a name="overview-of-threat-protection-by-microsoft-defender-antivirus"></a>نظرة عامة على الحماية من التهديدات بواسطة برنامج الحماية من الفيروسات من Microsoft Defender
 

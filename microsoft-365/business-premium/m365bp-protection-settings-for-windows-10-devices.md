@@ -11,29 +11,21 @@ f1.keywords:
 - BCS365_Win10AppPolicy
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.collection:
-- M365-subscription-management
-- M365-identity-device-management
-- Adm_TOC
+ms.date: 07/19/2022
+ms.collection: ''
 ms.custom:
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: تعرف على كيفية إنشاء نهج إدارة التطبيقات أو تحريرها وحماية ملفات العمل على أجهزة Windows الشخصية للمستخدمين.
-ms.openlocfilehash: 9e9c98af4279b3e7370959375fc4872f21b73f55
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d02b406f98aadcaaf21005686212b4da9e4fac2c
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66857460"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893912"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-devices"></a>تعيين إعدادات حماية التطبيقات أو تحريرها لأجهزة Windows
 

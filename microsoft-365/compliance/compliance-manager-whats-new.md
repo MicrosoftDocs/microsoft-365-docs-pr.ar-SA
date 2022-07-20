@@ -17,16 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على أحدث الميزات في Compliance Manger وما هو جديد. اقرأ حول التقييمات المحدثة وقوالب التقييم الجديدة والإجراءات الجديدة والمزيد.
-ms.openlocfilehash: aab0ccefd6f139212e8e045eacd458e22f498f9b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: be6527822798a518753897b5d104899077264ee3
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638687"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894328"
 ---
 # <a name="whats-new-in-microsoft-purview-compliance-manager"></a>ما الجديد في Microsoft Purview Compliance Manager
 
 **في هذه المقالة:** تعرف على التحديثات الأخيرة في Compliance Manager.
+
+## <a name="july-2022"></a>يوليو 2022
+
+نشر Compliance Manager قالب التقييم الجديد التالي:
+
+- هونغ كونغ - رمز الممارسة المصرفية وبطاقة الدفع
+
+عرض [القائمة الكاملة لقوالب التقييم](compliance-manager-templates-list.md).
+
 
 ## <a name="may-2022"></a>مايو 2022
 

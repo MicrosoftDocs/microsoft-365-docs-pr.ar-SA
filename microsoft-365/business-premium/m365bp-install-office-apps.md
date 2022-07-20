@@ -9,27 +9,23 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: كيفية تثبيت Office على جميع الأجهزة في Microsoft 365 Business Premium.
-ms.openlocfilehash: b06edb2ee6e4427e61ba25f1149c3a2ee0fcf034
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 112e83a0473dc9c0e8019c2b0a63a04fb7b72f7c
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66857527"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894570"
 ---
 # <a name="install-office-apps-on-all-devices"></a>تثبيت تطبيقات Office على جميع الأجهزة
 
@@ -43,10 +39,10 @@ ms.locfileid: "66857527"
 
 اطلب منهم تنفيذ ما يلي:
 
-1. انتقل إلى office.com. قد تحتاج إلى تسجيل الدخول باستخدام حساب العمل الخاص بك.
+1. انتقل إلى [https://office.com](https://office.com)، وسجل الدخول باستخدام حساب العمل الخاص بك.
 2. حدد **تثبيت****تشغيل** تطبيقات   >   Office   >  **Microsoft 365**، ثم حدد **"نعم**".
 3. تم تثبيت تطبيقات Office. قد تستغرق العملية عدة دقائق. عند اكتماله، حدد  **"إغلاق**".
-4. لتثبيت Microsoft Teams، انتقل إلى صفحة office.com، واختر  **Teams**.
+4. لتثبيت Microsoft Teams، انتقل إلى [صفحة office.com](https://office.com)، ثم اختر  **Teams**.
 5. احصل على تطبيق Windows، ثم حدد  **"تشغيل**". يعرض Teams مطالبة عند اكتمال التثبيت.
 
 ## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>إعداد الأجهزة المحمولة لمستخدمي Microsoft 365 Business Premium

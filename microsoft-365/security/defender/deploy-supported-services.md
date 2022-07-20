@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-getstarted
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4ac6186f3ec8ca7d4888a995b2352ec50529e4f1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: cf2e95a4d129280537f1d7a9d7dcf1b76b492ead
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664887"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893760"
 ---
 # <a name="deploy-supported-services"></a>نشر الخدمات المعتمدة
 
@@ -49,7 +49,7 @@ ms.locfileid: "64664887"
 | ------ | ------ |
 | Microsoft Defender for Endpoint | مجموعة حماية نقطة النهاية المبنية حول أجهزة الاستشعار السلوكية القوية والتحليلات السحابية والتحليل الذكي للمخاطر |
 |Microsoft Defender لـ Office 365 | حماية متقدمة لتطبيقاتك وبياناتك في Office 365، بما في ذلك البريد الإلكتروني وأدوات التعاون الأخرى |
-| Microsoft Defender for Identity | الدفاع ضد التهديدات المتقدمة والهويات المخترقة والمطلعين الضارين باستخدام إشارات Active Directory المرتبطة |
+| Microsoft Defender للهوية | الدفاع ضد التهديدات المتقدمة والهويات المخترقة والمطلعين الضارين باستخدام إشارات Active Directory المرتبطة |
 | Microsoft Defender for Cloud Apps | تحديد التهديدات الإلكترونية ومكافحتها عبر خدمات Microsoft والخدمات السحابية لجهات خارجية |
 
 ## <a name="deployed-services-and-functionality"></a>الخدمات والوظائف المنشورة
@@ -72,9 +72,9 @@ ms.locfileid: "64664887"
 
 | الخدمة | البيانات (الإشارات & معلومات مرتبطة) | نطاق استجابة & المعالجة |
 | ------ | ------ | ------ |
-| Microsoft Defender for Endpoint |<ul><li>حالات نقطة النهاية والأحداث الأولية</li><li>عمليات الكشف عن نقاط النهاية والتنبيهات، بما في ذلك مكافحة الفيروسات، الكشف التلقائي والاستجابة على النقط النهائية، تقليل الأجزاء المعرضة للهجوم</li><li>معلومات حول الملفات والكيانات الأخرى التي تمت ملاحظتها على نقاط النهاية</li></ul> | النهايه |
+| Microsoft Defender for Endpoint |<ul><li>حالات نقطة النهاية والأحداث الأولية</li><li>عمليات الكشف عن نقاط النهاية والتنبيهات، بما في ذلك مكافحة الفيروسات، وEDR، وتقليل الأجزاء المعرضة للهجوم</li><li>معلومات حول الملفات والكيانات الأخرى التي تمت ملاحظتها على نقاط النهاية</li></ul> | النهايه |
 |Microsoft Defender لـ Office 365 |<ul><li>حالات البريد وعلب البريد والأحداث الأولية</li><li>عمليات الكشف عن البريد الإلكتروني والمرفقات والارتباطات</li></ul> | <ul><li>صناديق البريد</li><li>حسابات Microsoft 365</li></ul> |
-| Microsoft Defender for Identity |<ul><li>إشارات Active Directory، بما في ذلك أحداث المصادقة</li><li>عمليات الكشف السلوكية المتعلقة بالهوية</li></ul> | الهويات |
+| Microsoft Defender للهوية |<ul><li>إشارات Active Directory، بما في ذلك أحداث المصادقة</li><li>عمليات الكشف السلوكية المتعلقة بالهوية</li></ul> | الهويات |
 | Microsoft Defender for Cloud Apps |<ul><li>الكشف عن تطبيقات وخدمات السحابة غير الملغاة (Shadow IT)</li><li>تعرض البيانات لتطبيقات السحابة</li><li>نشاط التهديد المقترن بتطبيقات السحابة</li></ul> | تطبيقات السحابة |
 
 ## <a name="deploy-the-services"></a>توزيع الخدمات
@@ -85,8 +85,8 @@ ms.locfileid: "64664887"
 | ------ | ------ | ------ |
 | Microsoft Defender for Endpoint | [دليل نشر Microsoft Defender لنقطة النهاية](../defender-endpoint/deployment-phases.md) | *راجع إرشادات التزويد* |
 |Microsoft Defender لـ Office 365 | *بلا، تم توفيره مع Office 365* | [تكوين نهج Microsoft Defender لـ Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
-| Microsoft Defender for Identity | [التشغيل السريع: إنشاء مثيل Microsoft Defender for Identity](/azure-advanced-threat-protection/install-atp-step1) | *راجع إرشادات التزويد* |
-| Microsoft Defender for Cloud Apps | *بلا* | [التشغيل السريع: بدء استخدام Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security) |
+| Microsoft Defender للهوية | [التشغيل السريع: إنشاء مثيل Microsoft Defender for Identity](/azure-advanced-threat-protection/install-atp-step1) | *راجع إرشادات التزويد* |
+| Microsoft Defender for Cloud Apps | *None* | [التشغيل السريع: بدء استخدام Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security) |
 
 بمجرد نشر الخدمات المدعومة، [قم بتشغيل Microsoft 365 Defender](m365d-enable.md).
 

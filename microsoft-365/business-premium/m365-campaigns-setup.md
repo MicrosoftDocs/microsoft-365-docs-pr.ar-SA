@@ -9,27 +9,23 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: نظرة عامة على الإعداد ل Microsoft 365 Business للحملات أو الشركات الأخرى
-ms.openlocfilehash: 5e8669b92297688119e9262e0d2f14d1ecfae3a2
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: b22519c023b53a284611e7efe38f078bee70799f
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66857560"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893024"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>إعداد Microsoft 365 Business for Campaigns
 
@@ -42,8 +38,8 @@ ms.locfileid: "66857560"
 | شرط | الوصف |
 |:---|:---|
 | الاشتراك | Microsoft 365 Business Premium أو Microsoft 365 for Campaigns <br/><br/> لبدء إصدار تجريبي أو شراء اشتراكك، راجع المقالات التالية: <br/>- [الحصول على Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)<br/>- [الحصول على Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) |
-| الأذونات  | لإكمال عملية الإعداد الأولية، يجب أن تكون مسؤول عمومي. [Mer informasjon حول أدوار المسؤولين](../admin/add-users/about-admin-roles.md). |
-| متطلبات المستعرض | Microsoft Edge أو Safari أو Chrome أو Firefox. [Mer informasjon حول متطلبات المستعرض](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
+| الأذونات  | لإكمال عملية الإعداد الأولية، يجب أن تكون مسؤول عمومي. [تعرف على المزيد حول أدوار المسؤولين](../admin/add-users/about-admin-roles.md). |
+| متطلبات المستعرض | Microsoft Edge أو Safari أو Chrome أو Firefox. [تعرف على المزيد حول متطلبات المستعرض](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | نظام التشغيل | **Windows**: Windows 11 أو Windows 10 أو Windows 8.1 أو Windows Server 2019 أو إصدار أحدث أو Windows Server 2016<br/><br/>**Mac**: أحد أحدث ثلاثة إصدارات من macOS |
 
 > [!TIP]

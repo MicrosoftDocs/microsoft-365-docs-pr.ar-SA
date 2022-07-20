@@ -9,17 +9,18 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 044f81ddaa3ddf1cb0ddaf6c96e05f9d186e36ce
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 0578aa2e672a0d485057ac983ed85d10828c952d
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772259"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893944"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>إلحاق الأجهزة المسجلة Microsoft Defender for Business
 
@@ -71,13 +72,9 @@ ms.locfileid: "66772259"
 
 ## <a name="what-about-servers"></a>ماذا عن الخوادم؟
 
-الخوادم غير معتمدة بشكل افتراضي في Microsoft 365 Business Premium و Defender for Business. ومع ذلك، فإن القدرة على إلحاق خادم، مثل نقطة نهاية تعمل ب Windows Server أو Linux Server، هي الآن قيد المعاينة. تأكد من مراجعة المتطلبات قبل إلحاق خادم:
+بشكل افتراضي، لا يتم دعم الخوادم في Microsoft 365 Business Premium والإصدار المستقل من Defender for Business. ومع ذلك، **فإن القدرة على إلحاق خادم، مثل نقطة نهاية تعمل بنظام Windows Server أو Linux Server، أصبحت الآن في وضع المعاينة**! 
 
-- لديك ترخيص خادم لكل مثيل خادم في Microsoft 365 Business Premium أو Defender for Business (مستقل).
-- تم تشغيل إعداد **ميزات المعاينة** . في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com))، انتقل إلى **ميزات معاينة الميزات** المتقدمة **العامة** > **لنقاط النهاية** **للإعدادات** >  >  > .
-- نطاق فرض Windows Server قيد التشغيل. انتقل إلى **نطاق فرض** **إدارة** >  تكوين **نقاط النهاية** **للإعدادات** >  > . حدد **"استخدام MDE" لفرض إعدادات تكوين الأمان من MEM**، وحدد  **Windows Server**، ثم حدد **"حفظ**".
-
-راجع علامة تبويب **الخوادم** في [الأجهزة الملحقة Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md) للحصول على إرشادات مفصلة.
+راجع [كيفية الحصول على خوادم Microsoft Defender for Business (معاينة).](../security/defender-business/get-defender-business-servers.md)
 
 ## <a name="run-a-detection-test-on-a-windows-device"></a>تشغيل اختبار الكشف على جهاز Windows
 

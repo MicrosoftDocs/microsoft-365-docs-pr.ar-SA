@@ -16,16 +16,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-getstarted
 ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d4b17e0b8a57c5f3778eff15d8961713c642409e
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 7cc3a28062ffa052d42172adabb72443eb5b10bb
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739960"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893486"
 ---
 # <a name="get-started-with-microsoft-365-defender"></a>بدء العمل باستخدام Microsoft 365 Defender
 

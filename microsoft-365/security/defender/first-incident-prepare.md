@@ -1,6 +1,6 @@
 ---
 title: إعداد وضع الأمان الخاص بك لحادثك الأول
-description: قم بإعداد وضع الأمان لمستأجر Microsoft 365 الخاص بك للحدث الأول في Microsoft 365 Defender.
+description: قم بإعداد وضع الأمان لمستأجر Microsoft 365 للحدث الأول في Microsoft 365 Defender.
 keywords: الحوادث والتنبيهات والتحقيق والارتباط والهجوم والأجهزة والأجهزة والمستخدمين والهويات والهوية وعلبة البريد والبريد الإلكتروني و365 وmicrosoft وm365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0dbff9e88ed00dd8aa08fd64543266c3aef75d79
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 690e1c48a452cfa00f0ae8d4fd87849b1c2e79dc
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664073"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893508"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>إعداد وضع الأمان الخاص بك لحادثك الأول
 

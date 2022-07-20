@@ -9,28 +9,22 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
-- admindeeplinkMAC
-- admindeeplinkEXCHANGE
-- admindeeplinkSPO
 search.appverid:
 - BCS160
 - MET150
 description: الحصول على المساعدة في زيادة مستوى الحماية في Microsoft 365 Business Premium
-ms.openlocfilehash: b5d1c7c241be8e61c7f1dcb3ccd08f9c3a0e93af
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d0bda85aaa6691a16a34dd70434fb4426ad36a09
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631926"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892848"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>زيادة الحماية من التهديدات Microsoft 365 Business Premium
 
@@ -40,6 +34,7 @@ ms.locfileid: "66631926"
 - [نهج الأمان المخصصة](#create-custom-security-policies) التي يمكنك تحديدها لتناسب احتياجات عملك.
 - [كيفية ضبط إعدادات المشاركة لملفات ومجلدات SharePoint وOneDrive](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders).
 - [نهج التنبيه](#review-your-alert-policies) التي تراقب ملفات معينة وكيفية استخدامها.
+- [الخطوات التالية](#next-steps) (مثل تأمين الأجهزة غير المدارة)
 
 ## <a name="review-and-apply-preset-security-policies"></a>مراجعة نهج الأمان المعدة مسبقا وتطبيقها
 

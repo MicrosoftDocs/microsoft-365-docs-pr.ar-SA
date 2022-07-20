@@ -9,29 +9,20 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
-- Adm_TOC
+ms.date: 07/19/2022
+ms.collection: ''
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: تعرف على كيفية تعيين ميزات الحماية في Microsoft 365 Business Premium إلى إعدادات Intune. يوفر لك الاشتراك ترخيصا لتعديل إعدادات Intune.
-ms.openlocfilehash: cdfd607745326d1d5a95a9e61b3134fb939bcacb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b3a428e43bc42eb0d23cacc584afc370ab27dc10
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66857437"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893156"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>كيف يتم تعيين ميزات الحماية في Microsoft 365 Business Premium إلى إعدادات Intune
 
@@ -72,7 +63,7 @@ ms.locfileid: "66857437"
 
 يوضح الجدول التالي بالتفصيل كيفية تعيين إعدادات نهج تطبيق Windows 10 إلى إعدادات Intune.
   
-للعثور على إعداد Intune، سجل الدخول باستخدام بيانات اعتماد المسؤول Microsoft 365 Business Premium، وانتقل إلى [Azure-Portal](https://portal.azure.com). حدد **المزيد من الخدمات**، واكتب Intune في **عامل التصفية**. حدد **Intune App Protection** \> **App Policy**.
+للعثور على إعداد Intune، سجل الدخول باستخدام بيانات اعتماد مسؤول Microsoft 365 Business Premium، وانتقل إلى [مدخل Azure](https://portal.azure.com). حدد **المزيد من الخدمات**، واكتب Intune في **عامل التصفية**. حدد **Intune App Protection** \> **App Policy**.
   
  > [!IMPORTANT]
  > يمنحك اشتراك Microsoft 365 Business Premium ترخيصا لتعديل إعدادات Intune فقط التي يتم تعيينها إلى الإعدادات المتوفرة في Microsoft 365 Business Premium. 
@@ -82,7 +73,7 @@ ms.locfileid: "66857437"
 |**إعداد نهج تطبيق Windows 10**|**إعداد (إعدادات) Intune**|
 |:-----|:-----|
 |تشفير ملفات العمل  |**الإعدادات** \> المتقدمة **حماية البيانات**: **يتم تعيين كل من إلغاء مفاتيح التشفير عند إلغاء التسجيل** **وإبطال الوصول إلى تسجيلات أجهزة البيانات المحمية إلى MDM** إلى **تشغيل**.  |
-|منع المستخدمين من نسخ بيانات الشركة إلى الملفات الشخصية.  |**الإعدادات** \> المطلوبة **وضع windows Information Protection**. **في** Microsoft 365 Business Premium تعيين إلى: **إخفاء التجاوزات**، **إيقاف التشغيل** في Microsoft 365 Business Premium تعيين إلى: **إيقاف التشغيل**.  |
+|منع المستخدمين من نسخ بيانات الشركة إلى الملفات الشخصية.  |**الإعدادات** \> المطلوبة **وضع windows حماية البيانات**. **في** Microsoft 365 Business Premium تعيين إلى: **إخفاء التجاوزات**، **إيقاف التشغيل** في Microsoft 365 Business Premium تعيين إلى: **إيقاف التشغيل**.  |
 |التحكم في الوصول إلى مستندات Office  | إذا تم تعيين هذا إلى **"تشغيل**" في Microsoft 365 Business Premium، ثم  <br/> **الإعدادات** \> المتقدمة **تم تعيين Access**، **استخدم Windows Hello للأعمال كأسلوب لتسجيل الدخول إلى Windows** إلى **"تشغيل**"، مع الإعدادات الإضافية التالية:  <br/> **تعيين الحد الأدنى لعدد الأحرف المطلوبة لبطاقة PIN** إلى **4**.  <br/> **تكوين استخدام الأحرف الكبيرة في Windows Hello للأعمال تم تعيين رقم التعريف الشخصي (PIN)** إلى **عدم السماح باستخدام الأحرف الكبيرة ل PIN**.  <br/> **تكوين استخدام الأحرف الصغيرة في Windows Hello للأعمال تم تعيين رقم التعريف الشخصي (PIN**) إلى **عدم السماح باستخدام الأحرف الصغيرة ل PIN**.  <br/> **تكوين استخدام أحرف خاصة في Windows Hello للأعمال تم تعيين رقم التعريف الشخصي (PIN)** إلى **عدم السماح باستخدام أحرف خاصة في رقم التعريف الشخصي (PIN**).  <br/> **حدد الفترة الزمنية (بالأيام) التي يمكن استخدام رمز PIN قبل أن يطلب النظام من المستخدم التغيير** تعيينها إلى **0**.  <br/> **حدد عدد أرقام PIN السابقة التي يمكن إقرانها بحساب مستخدم لا يمكن إعادة استخدامه** إلى **0**.  <br/> **يتم تعيين عدد حالات فشل المصادقة المسموح بها قبل مسح الجهاز** إلى نفس العدد في Microsoft 365 Business (5 بشكل افتراضي).  <br/> **الحد الأقصى للمقدار من الوقت (بالدقائق) المسموح به بعد أن يكون الجهاز معطلا مما يؤدي إلى تعيين الجهاز إلى رقم PIN أو تأمين كلمة المرور** إلى ما هو عليه في Microsoft 365 Business.  |
 |تمكين استرداد البيانات المحمية  |**الإعدادات** \> المتقدمة **حماية البيانات**: **إظهار أيقونة حماية بيانات المؤسسة** **وتعيين استخدام Azure RMS ل WIP** إلى **تشغيل**.  |
 |حماية مواقع سحابية إضافية للشركة  |**الإعدادات** \> المتقدمة تعرض **المجالات المحمية** **وموارد السحابة** المجالات ومواقع SharePoint.  |
@@ -92,7 +83,7 @@ ms.locfileid: "66857437"
 
 يوضح الجدول التالي بالتفصيل كيفية تعيين إعدادات تكوين الجهاز Windows 10 إلى إعدادات Intune.
   
-للعثور على إعداد Intune، سجل الدخول باستخدام بيانات اعتماد المسؤول Microsoft 365 Business Premium، وانتقل إلى [Azure-Portal](https://portal.azure.com)، ثم حدد **المزيد من الخدمات**، واكتب Intune في **عامل التصفية**، وحدد **ملفات** **تعريف تكوين** \> جهاز **Intune**\>. ثم حدد **نهج الجهاز لإعدادات خصائص Windows 10** \>  \>.
+للعثور على إعداد Intune، سجل الدخول باستخدام بيانات اعتماد المسؤول Microsoft 365 Business Premium، وانتقل إلى [مدخل Azure](https://portal.azure.com)، ثم حدد **المزيد من الخدمات**، واكتب Intune في **عامل التصفية**، وحدد **ملفات تعريف** **تكوين** \> جهاز **Intune**\>. ثم حدد **نهج الجهاز لإعدادات خصائص Windows 10** \>  \>.
   
 |**إعداد نهج الجهاز Windows 10**|**إعداد (إعدادات) Intune**|
 |:-----|:-----|

@@ -8,6 +8,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
+ms.date: 07/19/2022
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -15,12 +16,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: تعرف على كيفية مراجعة وإدارة التهديدات التي اكتشفها برنامج الحماية من الفيروسات من Microsoft Defender على أجهزة Windows.
-ms.openlocfilehash: 763a2ae035507a772d44da6cfffa6a58802745d5
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: e389eea971c2d9763816f7b1184cf98b3f41113a
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66857447"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893553"
 ---
 # <a name="review-detected-threats"></a>مراجعة التهديدات المكتشفة
 

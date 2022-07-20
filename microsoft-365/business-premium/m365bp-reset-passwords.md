@@ -9,10 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: medium
-ms.collection:
-- M365-subscription-management
-- Adm_O365
-- Adm_TOC
+ms.date: 07/19/2022
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +17,12 @@ search.appverid:
 - BEA160
 - GEA150
 description: إعادة تعيين كلمات المرور للمستخدمين في Microsoft 365 Business Premium.
-ms.openlocfilehash: baa83c54eafbee5f53ac59c9769b802e11485af3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 66cfb73693a11c2229c294aa09fd90b54c14c413
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633202"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893870"
 ---
 # <a name="reset-passwords-in-microsoft-365-business-premium"></a>إعادة تعيين كلمات المرور في Microsoft 365 Business Premium
 
@@ -103,7 +100,7 @@ ms.locfileid: "66633202"
 
 للحصول على معلومات حول النظرة العامة، راجع [إدارة Microsoft 365 باستخدام PowerShell](../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
   
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
   
 [السماح للمستخدمين بإعادة تعيين كلمات المرور](../admin/add-users/let-users-reset-passwords.md)
  الخاصة بهم [إعادة تعيين كلمات المرور في Microsoft 365 للأعمال](../admin/add-users/reset-passwords.md)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: يوفر Microsoft Purview Compliance Manager قوالب لإنشاء تقييمات تتماشى مع اللوائح والمعايير والقوانين الوطنية والإقليمية والصناعية.
-ms.openlocfilehash: bfac79126f167b6ec8faaacb0134f97aaea0fe4d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2870378d25a66661cdc720c8073e5bbab283790b
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631194"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895086"
 ---
 # <a name="compliance-manager-templates-list"></a>قائمة قوالب إدارة التوافق
 
@@ -295,7 +295,8 @@ ms.locfileid: "66631194"
 - معايير أمان البيانات المحمية في لاتيني V2.0 (VPDSS 2.0)  
 - معيار إدارة المعلومات للحكومة الأسترالية - الأرشيفات الوطنية في أستراليا (NAA)  
 - الصين - مواصفات أمان المعلومات الشخصية  
-- قانون الأمن السيبراني في جمهورية الصين الشعبية  
+- قانون الأمن السيبراني في جمهورية الصين الشعبية
+- هونغ كونغ - رمز الممارسة المصرفية وبطاقة الدفع
 - هونغ كونغ - البيانات الشخصية (الخصوصية)  
 - قواعد تكنولوجيا المعلومات في الهند (الممارسات والإجراءات الأمنية المعقولة والبيانات الشخصية الحساسة أو المعلومات)
 - الهند - قانون تكنولوجيا المعلومات  

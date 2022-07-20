@@ -9,17 +9,18 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: a8d132669319e26adea53498e7dcf78a82a3250d
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: cde398c0ee13b7c06be3e0158b4f993476348b3d
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489715"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893934"
 ---
 # <a name="device-groups-and-categories-in-microsoft-365-business-premium"></a>مجموعات الأجهزة وفئاتها في Microsoft 365 Business Premium
 

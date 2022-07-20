@@ -9,27 +9,22 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: نظرة عامة على كيفية إعداد جميع الأجهزة الخاصة بك (BYOD) مع الحماية من الهجمات الإلكترونية وغيرها من التهديدات الضارة والثغرات الأمنية.
-ms.openlocfilehash: ac20d80f97d000414a81e9637a69b2678fa0d3b1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b4896d07e29e39f66f559d22aa7031f63dec54ed
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66857509"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895042"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>إعداد أجهزة غير مدارة (BYOD)
 
