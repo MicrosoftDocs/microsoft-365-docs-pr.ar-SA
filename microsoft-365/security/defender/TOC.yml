@@ -348,6 +348,8 @@
           items:
             - name: نظرة عامة
               href: defenderexpertsforhuntingprev.md
+            - name: فهم تقارير Defender Experts for Hunting
+              href: defender-experts-report.md
         - name: أدلة مبادئ برامج الفدية الضارة
           items:
             - name: الكشف عن هجمات برامج الفدية الضارة التي يديرها الإنسان باستخدام Microsoft 365 Defender

@@ -3,7 +3,7 @@
 ## [نظرة عامة]()
 ### [ما هو Microsoft Defender لنقطة النهاية؟](microsoft-defender-endpoint.md)
 ### [دليل المبادئ التجريبي: تحقيق أقصى استفادة من الإصدار التجريبي](defender-endpoint-trial-playbook.md)
-### [مقارنة Defender لخطط نقطة النهاية](defender-endpoint-plan-1-2.md)
+### [مقارنة خطط أمان نقطة النهاية من Microsoft](defender-endpoint-plan-1-2.md)
 ### [الحد الأدنى للمتطلبات](minimum-requirements.md)
 ### [ما الجديد في Microsoft Defender لنقطة النهاية؟](whats-new-in-microsoft-defender-endpoint.md)
 ### [ميزات المعاينة](preview.md)

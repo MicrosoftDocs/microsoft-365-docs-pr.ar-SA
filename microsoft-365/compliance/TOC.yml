@@ -969,6 +969,8 @@
               href: permissions-filtering-for-content-search.md
             - name: المحتوى المخزن في علب البريد لـ eDiscovery
               href: what-is-stored-in-exo-mailbox.md
+            - name: موصل eDiscovery Graph
+              href: ediscovery-graph-connector.md
             - name: فك التشفير في أدوات eDiscovery
               href: ediscovery-decryption.md
             - name: مجموعات مراجعة المحادثة
