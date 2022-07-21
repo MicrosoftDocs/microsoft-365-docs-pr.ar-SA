@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: التعرف على إلحاق أجهزة macOS في حلول التوافق
-ms.openlocfilehash: 59ccb78060c7749f5690015dc4bab948a88e5222
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b697b805b8a4c65a0528054ca301f16d203e5a64
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630027"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912748"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>إلحاق أجهزة macOS في نظرة عامة على Microsoft 365
 
@@ -67,7 +67,7 @@ ms.locfileid: "66630027"
 
 راجع [إرشادات ترخيص Microsoft 365 لحماية المعلومات](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
-## <a name="activities-that-can-be-restricted-on-macos"></a>الأنشطة التي يمكن تقييدها على macOS 
+## <a name="activities-that-can-be-audited-and-restricted-on-macos"></a>الأنشطة التي يمكن تدقيقها وتقييدها على macOS 
 
 بمجرد إلحاق جهاز macOS في حلول Microsoft Purview، يمكنك مراقبة هذه الإجراءات وتقييدها باستخدام نهج منع فقدان البيانات (DLP).
 
