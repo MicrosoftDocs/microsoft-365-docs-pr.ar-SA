@@ -108,12 +108,12 @@
       href: m365bp-maintain-environment.md
     - name: دليل عمليات الأمان
       href: m365bp-security-incident-quick-start.md
-    - name: إزالة مستخدمين
-      href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: إضافة المستخدمين
       href: m365bp-add-users.md
     - name: إعادة تعيين كلمات المرور
       href: m365bp-reset-passwords.md
+    - name: إزالة المستخدمين الذين غادروا
+      href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: إزالة البيانات من الأجهزة
       href: m365bp-remove-company-data.md
     - name: إعادة تعيين الأجهزة إلى إعدادات المصنع
