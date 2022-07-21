@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: ابحث عن موارد حول كيفية إعداد Microsoft Whiteboard وإدارته.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 70f1252d8a583fc317af30a6eaaa6ccaf0df7a1e
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 1b76b829d0db173257243b49076bf5938121fb3d
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66857482"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917311"
 ---
 # <a name="introduction-to-microsoft-whiteboard"></a>مقدمة حول Microsoft Whiteboard
 
@@ -43,10 +42,13 @@ ms.locfileid: "66857482"
 
 | إذا كنت تبحث عن هذه المعلومات | الانتقال إلى هذا المورد |
 |:-----|:-----|
-|تعرف على كيفية إعداد الوصول إلى Whiteboard وإدارته لمؤسستك|[إدارة الوصول إلى Whiteboard](manage-whiteboard-access-organizations.md)|
+|تعرف على كيفية إعداد Whiteboard لمؤسستك|[إعداد لوح المعلومات واستخدامه](/surface-hub/whiteboard-collaboration)|
+|نشر لوح المعلومات على الأجهزة التي تعمل Windows 10 أو الأحدث باستخدام Microsoft Intune أو Microsoft Configuration Manager|[توزيع Microsoft Whiteboard على أجهزة Windows](deploy-on-windows-organizations.md)|
+|تعرف على كيفية إدارة الوصول إلى Whiteboard لمؤسستك|[إدارة الوصول إلى Whiteboard](manage-whiteboard-access-organizations.md)|
 |ابحث عن مكان تخزين محتوى Whiteboard وبياناتك في Azure OneDrive for Business  |[إدارة البيانات ل Whiteboard](manage-data-organizations.md)  |
 |تعرف على تجربة المشاركة في Teams وكيفية مشاركة الارتباطات لمستخدمين محددين  |[إدارة المشاركة ل Whiteboard](manage-sharing-organizations.md)  |
-|نشر لوح المعلومات على الأجهزة التي تعمل Windows 10 أو الأحدث باستخدام Microsoft Intune أو Microsoft Configuration Manager  |[توزيع لوح المعلومات على Windows](deploy-on-windows-organizations.md)  |
+|تعرف على كيفية تكوين إعدادات الخصوصية والبيانات التشخيصية ل Whiteboard |[تكوين إعدادات الخصوصية في Whiteboard](configure-privacy-settings.md)  |
+|تعرف على كيفية إدارة متطلبات القانون العام لحماية البيانات (GDPR) للبيانات الشخصية التي تم جمعها في Whiteboard |[إدارة طلبات موضوع بيانات القانون العام لحماية البيانات في Whiteboard](gdpr-requests.md)  |
 
 ### <a name="for-government"></a>بالنسبة إلى الحكومة
 

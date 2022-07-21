@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 37cea2e88afacb14285e10960fba81989ffb387f
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 67c7648238ecc3a46188b36f3ab61525739d53d4
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686408"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917662"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>تشغيل محلل العميل على macOS وLinux
 
@@ -69,7 +69,7 @@ ms.locfileid: "66686408"
 > 
 > - بالإضافة إلى ذلك، تتطلب الأداة حاليا تثبيت الإصدار 3 من Python أو إصدار أحدث.
 >
-> - إذا كنت تعمل على جهاز لا يمكنه استخدام Python 3 أو إحضار مكون lxml، يمكنك تنزيل إصدار ثنائي يستند إلى محلل لا يحتوي على أي من المتطلبات: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
+> - إذا كنت تعمل على جهاز لا يمكنه استخدام Python 3 أو إحضار مكون lxml، يمكنك تنزيل إصدار ثنائي يستند إلى محلل لا يحتوي على أي من المتطلبات: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary). <br> لاحظ أن الملف الثنائي غير موقع حاليا. للسماح بتشغيل الحزمة على MacOS، ستحتاج إلى استخدام بناء الجملة: "spctl --add /Path/To/Application.app".
 >
 > - إذا كان جهازك خلف وكيل، يمكنك ببساطة تمرير الخادم الوكيل كمتغير بيئة إلى البرنامج النصي mde_support_tool.sh. على سبيل المثال: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 

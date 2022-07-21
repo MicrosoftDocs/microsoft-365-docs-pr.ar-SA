@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: يتيح لك مستكشف النشاط رؤية الإجراءات التي يتخذها المستخدمون على المحتوى المسمى وتصفيتها.
-ms.openlocfilehash: fc74e8c5e11834b14c6aa8a3f80d43e20c43ec11
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c33ff2653eef6813caf9b9281903b7248af12359
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642009"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917991"
 ---
 # <a name="get-started-with-activity-explorer"></a>بدء استخدام مستكشف النشاط
 
@@ -99,7 +99,7 @@ ms.locfileid: "66642009"
 
 يجمع مستكشف النشاط معلومات النشاط من سجلات التدقيق على مصادر متعددة للأنشطة. لمزيد من المعلومات التفصيلية حول نشاط التسمية الذي يجعله في مستكشف النشاط، راجع [أحداث التسمية المتوفرة في مستكشف النشاط](data-classification-activity-explorer-available-events.md).
 
-**أنشطة وصف الحساسية** **وأنشطة تسمية الاستبقاء** من تطبيقات Office الأصلية وAzure حماية البيانات الوظيفة الإضافية وSharePoint Online Exchange Online (تسميات الحساسية فقط) وOneDrive. بعض الأمثلة هي:
+**أنشطة وصف الحساسية** **وأنشطة تسمية الاستبقاء** من تطبيقات Office الأصلية، وعميل الوصف الموحد ل Azure حماية البيانات (AIP) والماسح الضوئي، وSharePoint Online، Exchange Online (تسميات الحساسية فقط)، وOneDrive. بعض الأمثلة هي:
 
 - تم تطبيق التسمية
 - تم تغيير التسمية (تمت ترقيتها أو تخفيضها أو إزالتها)

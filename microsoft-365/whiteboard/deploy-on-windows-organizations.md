@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: تعرف على كيفية نشر Microsoft Whiteboard على الأجهزة التي تعمل Windows 10 أو الإصدارات الأحدث.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2ce1ff5b07774d07b3b67404e0b04d42b44759ba
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 31341bc446313c54d95e14efdf569ba6e0b5263f
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66857474"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917178"
 ---
 # <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>نشر Microsoft Whiteboard على أجهزة Windows 10
 
@@ -51,7 +50,7 @@ ms.locfileid: "66857474"
 
 6. حدد **الحصول على التطبيق**، ثم اقبل شروط الترخيص.
 
-7. Go back إلى صفحة التطبيق.
+7. ارجع إلى صفحة التطبيق.
 
 8. في القائمة المنسدلة **"نوع الترخيص** "، حدد **"دون اتصال**".
 

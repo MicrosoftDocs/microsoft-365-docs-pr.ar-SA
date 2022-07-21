@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 2fd10eb56eec1c35015bff2f63163ee9394f8d42
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 5f0c1f63223498995d04814434bbf4000e55d918
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771296"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917874"
 ---
 # <a name="get-microsoft-defender-for-business"></a>الحصول على Microsoft Defender for Business
 
@@ -30,7 +31,7 @@ Defender for Business هو حل أمان نقطة نهاية جديد مصمم �
 
 - [جرب الإصدار المستقل من Defender for Business أو اشتره](#try-or-buy-microsoft-defender-for-business).
 - [احصل على Microsoft 365 Business Premium](#get-microsoft-365-business-premium)، والتي تتضمن الآن Defender for Business.
-- [العمل مع موفر حلول Microsoft](#work-with-a-microsoft-solution-provider) الذي يمكنه مساعدتك في إعداد كل شيء وتكوينه.
+- [العمل مع شريك Microsoft](#work-with-a-microsoft-partner) الذي يمكنه مساعدتك في إعداد كل شيء وتكوينه.
 
 إذا قمت بالتسجيل للحصول على إصدار تجريبي، بعد تلقي بريدك الإلكتروني للقبول، يمكنك [تنشيط الإصدار التجريبي وتعيين تراخيص المستخدمين](#how-to-activate-your-trial)، ثم المتابعة إلى [الخطوات التالية](#next-steps).
 
@@ -56,17 +57,22 @@ Defender for Business هو حل أمان نقطة نهاية جديد مصمم �
 
 3. بعد التسجيل للحصول على Microsoft 365 Business Premium، ستتلقى رسالة بريد إلكتروني تتضمن ارتباطا لتسجيل الدخول وبدء الاستخدام. تابع لإعداد [Microsoft 365 Business Premium](../../business-premium/m365bp-setup.md).
 
-## <a name="work-with-a-microsoft-solution-provider"></a>العمل مع موفر حلول Microsoft
+## <a name="work-with-a-microsoft-partner"></a>العمل مع شريك Microsoft
 
 لدى Microsoft قائمة بموفري الحلول المخولين لبيع العروض، بما في ذلك Microsoft 365 Business Premium Microsoft Defender for Business. للعثور على موفر حلول في منطقتك، اتبع الخطوات التالية:
 
-1. انتقل إلى صفحة **موفري حلول Microsoft** ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
- 
-2. في مربع البحث، املأ موقعك وحجم شركتك. 
+1. انتقل إلى [استعراض الشركاء](https://appsource.microsoft.com/marketplace/partner-dir).
 
-3. في مربع **البحث عن المنتجات والخدمات والمهارات والصناعات** ، ضع `Microsoft 365`، ثم حدد **Go**.
+2. في جزء **عوامل التصفية** ، حدد معايير البحث، مثل:
 
-4. راجع قائمة النتائج. حدد موفرا لمعرفة المزيد حول خبراته والخدمات التي يقدمها. يمكن أن يساعدك الموفر في التسجيل في Defender for Business.
+   - موقعك
+   - حجم مؤسستك
+   - **مجالات التركيز**، مثل **الأمان** و/أو **الحماية من التهديدات** 
+   - **خدمات**، مثل **الترخيص** أو **الخدمات المدارة (MSP)**
+
+   بمجرد تحديد معيار واحد أو أكثر، يتم تحديث قائمة الشركاء.
+
+3. راجع قائمة النتائج. حدد موفرا لمعرفة المزيد حول خبراته والخدمات التي يقدمها.
 
 ## <a name="how-to-activate-your-trial"></a>كيفية تنشيط الإصدار التجريبي
 

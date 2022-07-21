@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: تعرف على التوافق وكيفية تكوين إعدادات الخصوصية في Microsoft Whiteboard.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a2708d3eda92f3d29ea9ad6ee15e518d32d93a22
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 38c7d3fc80b825a8b701f84d729e9bb9a7cc1b63
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882773"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917222"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>تكوين إعدادات الخصوصية في Microsoft Whiteboard
 
@@ -31,7 +30,7 @@ ms.locfileid: "66882773"
 
 - ما إذا كانت التجارب المتصلة الاختيارية في Whiteboard متوفرة للمستخدمين.
 
-لتكوين مستوى البيانات التشخيصية، سجل الدخول إلى [مركز مسؤولي Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide) باستخدام حساب المسؤول. من الصفحة الرئيسية لمركز الإدارة، انتقل إلى **إظهار كافة إعدادات > > إعدادات المؤسسة > لوح المعلومات**.
+لتكوين مستوى البيانات التشخيصية، سجل الدخول إلى [مركز مسؤولي Microsoft 365](/microsoft-365/admin/admin-overview/admin-center-overview) باستخدام حساب المسؤول. من الصفحة الرئيسية لمركز الإدارة، انتقل إلى **إظهار كافة إعدادات > > إعدادات المؤسسة > لوح المعلومات**.
 
 لتكوين توفر التجارب المتصلة الاختيارية، استخدم [خدمة نهج السحابة في Office](/deployoffice/admincenter/overview-office-cloud-policy-service) في [مركز إدارة Microsoft 365 Apps](https://config.office.com). سجل الدخول باستخدام حساب المسؤول وانتقل إلى **تخصيص > Policy Management**. تمت تسمية النهج الذي تريد تكوينه: **السماح باستخدام تجارب إضافية اختيارية متصلة في Office**.
 

@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: تعرف على كيفية إضافة تلميح نهج إلى نهج منع فقدان البيانات (DLP) لإعلام المستخدم بأنه يعمل مع المحتوى الذي يتعارض مع نهج DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 04743bdabba4089a7cfdbb46fbb25d427927f6c0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 074283fbdf22d4a7ed645539f706a7b292c20485
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638334"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917266"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>تلميحات حول نهج تفادي فقد البيانات (DLP)
 
@@ -404,4 +404,5 @@ ms.locfileid: "66638334"
 |**تطبيقات سحابة الجهات الخارجية**|:::image type="icon" source="../media/crsmrk.png" border="false":::|اي|اي|تلميحات نهج تفادي فقدان البيانات غير معتمدة على تطبيقات السحابة التابعة لجهات خارجية|
 |**الإعدادات الجاهزة**|:::image type="icon" source="../media/crsmrk.png" border="false":::|اي|اي||
 |**Word وExcel وPowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|فرعيه|فرعيه|الرجاء مراجعة [Outlook 2013 والإصدارات الأحدث، كما يعرض دعم Office على سطح المكتب تلميحات النهج لبعض أنواع المعلومات الحساسة فقط](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) لقائمة أنواع المعلومات الحساسة المعتمدة</br></br>ستعمل تلميحات النهج لتطبيقات عميل WXP مع المستندات المخزنة على SharePoint Online أو مواقع OneDrive for Business لكافة نهج DLP التي تحتوي على ما يلي أو مجموعة فرعية من الشروط أو الإجراءات في نهج DLP:</br> <ul><li>يحتوي المحتوى على أنواع معلومات حساسة</li><li>نطاق الوصول (تتم مشاركة المحتوى داخليا/خارجيا)</li><li>إعلام المستخدم (تلميحات النهج/إعلامات المستخدم)</li><li>حظر الجميع</li><li>تقارير الحوادث</li></ul></br> إذا كان هناك أي شرط أو إجراء آخر موجود، فلن يظهر تلميح نهج DLP لهذا النهج في تطبيقات سطح المكتب الخاصة ب Word أو Excel أو PowerPoint.</br>راجع [تلميحات النهج في Excel وPowerPoint وWord](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) للحصول على مزيد من التفاصيل|
+|**Power BI**|:::image type="icon" source="../media/crsmrk.png" border="false":::|فرعيه|فرعيه|توجد نهج منع فقدان البيانات في Power BI في المعاينة العامة. </br></br> يتم دعم تلميحات النهج وتنبيهات المسؤول. |
 ||||||

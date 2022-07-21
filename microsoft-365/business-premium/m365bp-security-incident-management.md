@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 07/20/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,22 +19,22 @@ search.appverid:
 - BCS160
 - MET150
 description: نظرة عامة على إدارة الحوادث الأمنية
-ms.openlocfilehash: bf748a87fcdbc3898caf6fb86c68a51823da5ba3
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 9f99dda8b1226e051b17dcd4a7a96c236c222fa7
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892672"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917904"
 ---
 # <a name="security-incident-management"></a>إدارة الحوادث الأمنية
 
-يتطلب أمان مؤسستك مراقبة مستمرة، ومع اكتشاف التهديدات، يتم تشغيل إجراءات المعالجة. اعتمادا على التهديد المعين وكيفية تكوين إعدادات الأمان الخاصة بك، قد يتم اتخاذ الإجراءات تلقائيا أو فقط بناء على الموافقة. يجب أن تحدث الموافقات بشكل منتظم.
+بعد إعداد قدرات الأمان وتكوينها في Microsoft 365 Business Premium، يمكن لفريق الأمان مراقبة أي تهديدات تم اكتشافها ومعالجتها. مع اكتشاف التهديدات، يتم إنشاء التنبيهات وإنشاء الحوادث. يمكن أن تلعب إجراءات المعالجة دورا للمساعدة في التخفيف من التهديدات. 
 
-شاهد مقطع فيديو قصيرا حول استجابة نموذجية للحوادث.
+هل تريد معرفة كيفية عملها؟ شاهد هذا الفيديو القصير على استجابة نموذجية للحوادث.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Zvew]
 
-لمعرفة المزيد حول الاستجابات للحوادث، استخدم الخطوات التالية:
+لمعرفة المزيد حول الاستجابات للحوادث، راجع المقالات التالية:
 
 1. [مراجعة توصيات الأمان](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json).
 

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: تعرف على كيفية تحديد التنبيهات وإدارتها لنهج منع فقدان البيانات.
-ms.openlocfilehash: 60d5188b9288b1e131e36e145f7abb98a34d5ead
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d4e520a236c3658106a8311df0beed7f6c54ac4e
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627636"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918013"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>تكوين وعرض التنبيهات لشرطات منع فقدان البيانات
 
@@ -63,6 +63,7 @@ ms.locfileid: "66627636"
 
 - **تكوين تنبيه حدث واحد**: يمكن للمؤسسات التي لديها اشتراك E1 أو F1 أو G1 أو اشتراك E3 أو G3 إنشاء نهج تنبيه فقط حيث يتم تشغيل تنبيه في كل مرة يحدث فيها نشاط.
 - **تكوين التنبيه المجمع**: لتكوين نهج التنبيه التجميعية استنادا إلى حد، يجب أن يكون لديك أي من التكوينات التالية:
+  - اشتراك A5
   - اشتراك E5 أو G5
   - اشتراك E1 أو F1 أو G1 أو اشتراك E3 أو G3 يتضمن إحدى الميزات التالية:
     - Office 365 الخطة 2 المتقدمة للحماية من التهديدات

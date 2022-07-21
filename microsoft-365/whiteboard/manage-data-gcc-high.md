@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: تعرف على كيفية تمكين الوصول إلى Whiteboard وتعطيله وإدارته.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5bb41d806d0db901cf826b05b4a569ccb7bb2c1b
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 72da71d7d2c57fca9b4f006326e2d4bf506fe8bf
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66857471"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917288"
 ---
 # <a name="manage-data-for-microsoft-whiteboard-in-gcc-high-environments"></a>إدارة البيانات ل Microsoft Whiteboard في بيئات GCC High
 
