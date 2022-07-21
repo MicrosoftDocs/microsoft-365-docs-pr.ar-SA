@@ -1,7 +1,7 @@
 ---
 title: نشر Microsoft Whiteboard على أجهزة Windows 10
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: تعرف على كيفية نشر Microsoft Whiteboard على الأجهزة التي تعمل Windows 10 أو الإصدارات الأحدث.
-ms.openlocfilehash: 31341bc446313c54d95e14efdf569ba6e0b5263f
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 96670b594babd8a2c61723ceab6ef826c1229764
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917178"
+ms.locfileid: "66943453"
 ---
 # <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>نشر Microsoft Whiteboard على أجهزة Windows 10
 

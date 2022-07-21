@@ -1,7 +1,7 @@
 ---
-title: موارد ل Microsoft Defender لنقطة النهاية على Mac
-description: موارد ل Microsoft Defender ل Endpoint على Mac، بما في ذلك كيفية إلغاء تثبيته، وكيفية تجميع سجلات التشخيص، وأوامر CLI، وا المشاكل المعروفة في المنتج.
-keywords: microsoft، defender، Microsoft Defender ل Endpoint، mac، التثبيت، النشر، إلغاء التثبيت، intune، jamf، macos، catalina، mojave، high sierra
+title: موارد Microsoft Defender لنقطة النهاية على Mac
+description: موارد Microsoft Defender لنقطة النهاية على Mac، بما في ذلك كيفية إلغاء تثبيته، وكيفية جمع سجلات التشخيص، وأوامر CLI، والمشاكل المعروفة في المنتج.
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، التثبيت، التوزيع، إلغاء التثبيت، intune، jamf، macos، catalina، mojave، high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,28 +15,28 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5c8580e1bc0869f28da1b23a813bba9d2f3c612e
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: d7f01e3336fef9382ae6556180deaf14155b6d44
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "63570665"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943607"
 ---
-# <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>موارد ل Microsoft Defender ل Endpoint على macOS
+# <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>موارد Microsoft Defender لنقطة النهاية على macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="collecting-diagnostic-information"></a>تجميع المعلومات التشخيصية
 
-إذا كان بإمكانك إعادة إنتاج مشكلة، فالزيادة في مستوى التسجيل وتشغيل النظام لبعض الوقت واستعادة مستوى التسجيل إلى الإعداد الافتراضي.
+إذا كان بإمكانك إعادة إنشاء مشكلة، فزيد مستوى التسجيل، وقم بتشغيل النظام لبعض الوقت، واستعادة مستوى التسجيل إلى المستوى الافتراضي.
 
 1. زيادة مستوى التسجيل:
 
@@ -50,10 +50,10 @@ ms.locfileid: "63570665"
 
 2. إعادة إنتاج المشكلة
 
-3. قم `sudo mdatp diagnostic create` بتشغيل للحصول على دعم لسجلات نقطة النهاية ل Microsoft Defender. سيتم تخزين الملفات داخل أرشيف .zip. سيطبع هذا الأمر أيضا مسار الملف إلى النسخة الاحتياطية بعد نجاح العملية.
+3. قم بتشغيل `sudo mdatp diagnostic create` النسخ الاحتياطي لسجلات Microsoft Defender لنقطة النهاية. سيتم تخزين الملفات داخل أرشيف .zip. سيقوم هذا الأمر أيضا بطباعة مسار الملف إلى النسخة الاحتياطية بعد نجاح العملية.
 
    > [!TIP]
-   > بشكل افتراضي، يتم حفظ سجلات التشخيص في `/Library/Application Support/Microsoft/Defender/wdavdiag/`. لتغيير الدليل حيث يتم حفظ السجلات التشخيصية `--path [directory]` ، مرر إلى الأمر أدناه `[directory]` ، مع استبدال الدليل المطلوب.
+   > بشكل افتراضي، يتم حفظ سجلات التشخيص إلى `/Library/Application Support/Microsoft/Defender/wdavdiag/`. لتغيير الدليل حيث يتم حفظ سجلات التشخيص، قم بالتمرير `--path [directory]` إلى الأمر أدناه، واستبداله `[directory]` بالدليل المطلوب.
 
    ```bash
    sudo mdatp diagnostic create
@@ -75,21 +75,21 @@ ms.locfileid: "63570665"
 
 ## <a name="logging-installation-issues"></a>مشاكل تثبيت التسجيل
 
-إذا حدث خطأ أثناء التثبيت، سيقر المثبت بفشل عام فقط.
+إذا حدث خطأ أثناء التثبيت، فسيبلغ المثبت عن فشل عام فقط.
 
-سيتم حفظ السجل التفصيلي في `/Library/Logs/Microsoft/mdatp/install.log`. إذا واجهت مشاكل أثناء التثبيت، أرسل لنا هذا الملف حتى يمكننا مساعدتك في تشخيص السبب.
+سيتم حفظ السجل التفصيلي في `/Library/Logs/Microsoft/mdatp/install.log`. إذا واجهت مشاكل أثناء التثبيت، فأرسل لنا هذا الملف حتى نتمكن من المساعدة في تشخيص السبب.
 
-## <a name="uninstalling"></a>إلغاء تثبيت
+## <a name="uninstalling"></a>الغاء تثبيت
 
-هناك عدة طرق  إلغاء تثبيت Microsoft Defender ل Endpoint على macOS. لاحظ أنه على الرغم من توفر إلغاء التثبيت المدار مركزيا على JAMF، إلا أنه غير متوفر Microsoft Intune.
+هناك عدة طرق لإلغاء تثبيت Microsoft Defender لنقطة النهاية على macOS. لاحظ أنه على الرغم من توفر إلغاء التثبيت المدار مركزيا على JAMF، إلا أنه غير متوفر حتى الآن Microsoft Intune.
 
-### <a name="interactive-uninstallation"></a>إزالة التثبيت التفاعلي
+### <a name="interactive-uninstallation"></a>إزالة تثبيت تفاعلي
 
-- افتح **"البحث" > التطبيقات**. انقر بيمين فوق **Microsoft Defender لنقطة النهاية > الانتقال إلى سلة المهملات**.
+- افتح **تطبيقات > الباحث**. انقر بزر الماوس الأيمن فوق **Microsoft Defender لنقطة النهاية > نقل إلى سلة المهملات**.
 
 ### <a name="supported-output-types"></a>أنواع الإخراج المعتمدة
 
-يدعم الجدول وأنواع إخراجات تنسيق JSON. لكل أمر، يوجد سلوك إخراج افتراضي. يمكنك تعديل الإخراج بتنسيق الإخراج المفضل لديك باستخدام الأوامر التالية:
+يدعم أنواع إخراج تنسيقات الجدول وJSON. لكل أمر، هناك سلوك إخراج افتراضي. يمكنك تعديل الإخراج بتنسيق الإخراج المفضل لديك باستخدام الأوامر التالية:
 
 `-output json`
 
@@ -99,62 +99,63 @@ ms.locfileid: "63570665"
 
 - `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
 
-## <a name="configuring-from-the-command-line"></a>تكوين من سطر الأوامر
+## <a name="configuring-from-the-command-line"></a>التكوين من سطر الأوامر
 
-يمكن تنفيذ المهام المهمة، مثل التحكم في إعدادات المنتج وتحريك عمليات الفحص عند الطلب، من سطر الأوامر:
+يمكن تنفيذ المهام الهامة، مثل التحكم في إعدادات المنتج وتشغيل عمليات الفحص عند الطلب، من سطر الأوامر:
 
-|مجموعة|السيناريو|الأمر|
+|مجموعة|السيناريو|الامر|
 |---|---|---|
-|تكوين|تشغيل/إيقاف تشغيل الحماية في الوقت الحقيقي|`mdatp config real-time-protection --value [enabled/disabled]`|
-|تكوين|تشغيل/إيقاف تشغيل الحماية السحابية|`mdatp config cloud --value [enabled/disabled]`|
-|تكوين|تشغيل/إيقاف تشغيل تشخيص المنتج|`mdatp config cloud-diagnostic --value [enabled/disabled]`|
-|تكوين|تشغيل/إيقاف تشغيل إرسال العينة التلقائي|`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`|
-|تكوين|إضافة اسم خطر إلى القائمة المسموح بها|`mdatp threat allowed add --name [threat-name]`|
-|تكوين|إزالة اسم خطر من القائمة المسموح بها|`mdatp threat allowed remove --name [threat-name]`|
-|تكوين|سرد جميع أسماء التهديدات المسموح بها|`mdatp threat allowed list`|
-|تكوين|تشغيل حماية PUA|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
-|تكوين|إيقاف تشغيل حماية PUA|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
-|تكوين|تشغيل وضع التدقيق لحماية PUA|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
-|تكوين|تشغيل/إيقاف تشغيل وضع الحماية من الفيروسات السلبي|`mdatp config passive-mode --value [enabled/disabled]`|
-|تكوين|تكوين درجة التوازي لمسح عند الطلب|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
-|تكوين|تشغيل/إيقاف تشغيل عمليات الفحص بعد تحديثات معلومات الأمان|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
-|تكوين|تشغيل/إيقاف تشغيل مسح الأرشيف (عمليات المسح عند الطلب فقط)|`mdatp config scan-archives --value [enabled/disabled]`|
-|التشخيصات|تغيير مستوى السجل|`mdatp log level set --level [error/warning/info/verbose]`|
-|التشخيصات|إنشاء سجلات تشخيصية|`mdatp diagnostic create --path [directory]`|
-|الصحة|التحقق من صحة المنتج|`mdatp health`|
-|الصحة|التحقق من سمة منتج سفلي|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
-|الحماية|مسح مسار ضوئيا|`mdatp scan custom --path [path] [--ignore-exclusions]`|
-|الحماية|إجراء فحص سريع|`mdatp scan quick`|
-|الحماية|إجراء فحص كامل|`mdatp scan full`|
-|الحماية|إلغاء فحص مستمر عند الطلب|`mdatp scan cancel`|
-|الحماية|طلب تحديث معلومات الأمان|`mdatp definitions update`|
-|الكشف التلقائي والاستجابة على النقط النهائية|علامة "تعيين/إزالة"، المجموعة المعتمدة فقط|`mdatp edr tag set --name GROUP --value [name]`|
-|الكشف التلقائي والاستجابة على النقط النهائية|إزالة علامة المجموعة من الجهاز|`mdatp edr tag remove --tag-name [name]`|
-|الكشف التلقائي والاستجابة على النقط النهائية|إضافة "معرّف المجموعة"|`mdatp edr group-ids --group-id [group]`|
+|التكوين|تشغيل/إيقاف تشغيل الحماية في الوقت الحقيقي|`mdatp config real-time-protection --value [enabled/disabled]`|
+|التكوين|تشغيل/إيقاف تشغيل حماية السحابة|`mdatp config cloud --value [enabled/disabled]`|
+|التكوين|تشغيل/إيقاف تشغيل تشخيصات المنتجات|`mdatp config cloud-diagnostic --value [enabled/disabled]`|
+|التكوين|تشغيل/إيقاف تشغيل الإرسال التلقائي للعينة|`mdatp config cloud-automatic-sample-submission --value [enabled/disabled]`|
+|التكوين|إضافة اسم تهديد إلى القائمة المسموح بها|`mdatp threat allowed add --name [threat-name]`|
+|التكوين|إزالة اسم تهديد من القائمة المسموح بها|`mdatp threat allowed remove --name [threat-name]`|
+|التكوين|سرد كافة أسماء التهديدات المسموح بها|`mdatp threat allowed list`|
+|التكوين|تشغيل حماية PUA|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
+|التكوين|إيقاف تشغيل حماية PUA|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
+|التكوين|تشغيل وضع التدقيق لحماية PUA|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
+|التكوين|تشغيل/إيقاف تشغيل الوضع السلبي لمكافحة الفيروسات|`mdatp config passive-mode --value [enabled/disabled]`|
+|التكوين|تكوين درجة التوازي لإجراء عمليات الفحص عند الطلب|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|التكوين|تشغيل/إيقاف تشغيل عمليات الفحص بعد تحديثات معلومات الأمان|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|التكوين|تشغيل/إيقاف تشغيل فحص الأرشيف (عمليات المسح حسب الطلب فقط)|`mdatp config scan-archives --value [enabled/disabled]`|
+|التكوين|تشغيل/إيقاف تشغيل حساب تجزئة الملف|`mdatp config enable-file-hash-computation --value [enabled/disabled]`|
+|تشخيص|تغيير مستوى السجل|`mdatp log level set --level [error/warning/info/verbose]`|
+|تشخيص|إنشاء سجلات تشخيصية|`mdatp diagnostic create --path [directory]`|
+|الحماية|التحقق من صحة المنتج|`mdatp health`|
+|الحماية|التحقق من سمة منتج spefic|`mdatp health --field [attribute: healthy/licensed/engine_version...]`|
+|حمايه|مسح مسار ضوئيا|`mdatp scan custom --path [path] [--ignore-exclusions]`|
+|حمايه|إجراء فحص سريع|`mdatp scan quick`|
+|حمايه|إجراء فحص كامل|`mdatp scan full`|
+|حمايه|إلغاء فحص مستمر عند الطلب|`mdatp scan cancel`|
+|حمايه|طلب تحديث معلومات الأمان|`mdatp definitions update`|
+|يدر|تعيين/إزالة العلامة، المجموعة المعتمدة فقط|`mdatp edr tag set --name GROUP --value [name]`|
+|يدر|إزالة علامة المجموعة من الجهاز|`mdatp edr tag remove --tag-name [name]`|
+|يدر|إضافة معرف المجموعة|`mdatp edr group-ids --group-id [group]`|
 
-### <a name="how-to-enable-autocompletion"></a>كيفية تمكين الإبهار التلقائي
+### <a name="how-to-enable-autocompletion"></a>كيفية تمكين الإكمال التلقائي
 
-لتمكين الإبعاد التلقائي في bash، قم بتشغيل الأمر التالي ثم أعد تشغيل جلسة عمل المحطة الطرفية:
+لتمكين الإكمال التلقائي في bash، قم بتشغيل الأمر التالي وأعد تشغيل جلسة عمل Terminal:
 
 ```bash
 echo "source /Applications/Microsoft\ Defender.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
 ```
 
-لتمكين الإبهار التلقائي بالتنسيق zsh:
+لتمكين الإكمال التلقائي في zsh:
 
-- تحقق مما إذا كان الإبهار التلقائي ممكنا على جهازك:
+- تحقق مما إذا كان الإكمال التلقائي ممكنا على جهازك:
 
    ```zsh
    cat ~/.zshrc | grep autoload
    ```
 
-- إذا لم ينتج عن الأمر السابق أي إخراج، يمكنك تمكين الإبهار التلقائي باستخدام الأمر التالي:
+- إذا لم ينتج عن الأمر السابق أي إخراج، يمكنك تمكين الإكمال التلقائي باستخدام الأمر التالي:
 
    ```zsh
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- قم بتشغيل الأوامر التالية لتمكين الإبعاد التلقائي ل Microsoft Defender ل Endpoint على macOS وإعادة تشغيل جلسة عمل المحطة الطرفية:
+- تشغيل الأوامر التالية لتمكين الإكمال التلقائي Microsoft Defender لنقطة النهاية على macOS وإعادة تشغيل جلسة عمل المحطة الطرفية:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
@@ -162,10 +163,10 @@ echo "source /Applications/Microsoft\ Defender.app/Contents/Resources/Tools/mdat
    sudo ln -svf "/Applications/Microsoft Defender.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
-## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>دليل الفحص الخاص ب Microsoft Defender for Endpoint
+## <a name="client-microsoft-defender-for-endpoint-quarantine-directory"></a>دليل عزل Microsoft Defender لنقطة النهاية العميل
 
-`/Library/Application Support/Microsoft/Defender/quarantine/` يحتوي على الملفات التي تم فحصها بواسطة `mdatp`. مسماة الملفات باسم "تعقب التهديدات". يتم عرض التعقب الحاليمعيارات التعقب مع `mdatp threat list`.
+`/Library/Application Support/Microsoft/Defender/quarantine/` يحتوي على الملفات التي تم عزلها بواسطة `mdatp`. تتم تسمية الملفات بعد معرف تتبع المخاطر. تظهر معرفات التعقب الحالية مع `mdatp threat list`.
 
-## <a name="microsoft-defender-for-endpoint-portal-information"></a>معلومات مدخل Microsoft Defender for Endpoint
+## <a name="microsoft-defender-for-endpoint-portal-information"></a>معلومات مدخل Microsoft Defender لنقطة النهاية
 
-[الكشف التلقائي والاستجابة على النقط النهائية قدرات macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801) الآن، على مدونة Microsoft Defender for Endpoint، توفر إرشادات مفصلة حول ما يجب توقعه في مركز أمان نقطة النهاية ل Microsoft Defender.
+[لقد وصلت الآن إمكانات EDR لنظام التشغيل macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)، في مدونة Microsoft Defender لنقطة النهاية، وتوفر إرشادات مفصلة حول ما يجب توقعه في مركز الأمان Microsoft Defender لنقطة النهاية.

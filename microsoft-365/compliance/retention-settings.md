@@ -1,5 +1,5 @@
 ---
-title: تكوين إعدادات الاستبقاء للاحتفاظ بالمحتوى أو حذفه تلقائيا
+title: تكوين إعدادات استبقاء Microsoft 365 للاحتفاظ بالمحتوى أو حذفه تلقائيا
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: فهم الإعدادات التي يمكنك تكوينها في نهج الاستبقاء أو نهج تسمية الاستبقاء للاحتفاظ بما تريده والتخلص مما لا تريده.
-ms.openlocfilehash: 34d71c0ae96c09dc2ac4569ae1de5fe386509550
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+description: فهم الإعدادات التي يمكنك تكوينها لنهج الاستبقاء وتسميات الاستبقاء ل Microsoft 365 للاحتفاظ ببيانات مؤسستك أو حذفها.
+ms.openlocfilehash: b329b7f2ebb73e791c4fc2330d66faf35d67a960
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695737"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943321"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>الإعدادات الشائعة لنهج الاستبقاء ونهج تسمية الاستبقاء
 

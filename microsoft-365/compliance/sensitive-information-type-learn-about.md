@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: تقدم هذه المقالة نظرة عامة على أنواع المعلومات الحساسة وكيفية اكتشافها للمعلومات الحساسة مثل الضمان الاجتماعي أو بطاقة الائتمان أو أرقام الحسابات المصرفية لتحديد العناصر الحساسة
-ms.openlocfilehash: 34c40c99cf759341ece1948164a5f7d904996b44
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2a7f639097203f06795945dbd08fa64db3a1f0df
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639369"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944032"
 ---
 # <a name="learn-about-sensitive-information-types"></a>التعرّف على أنواع المعلومات الحساسة
 
@@ -44,6 +44,8 @@ ms.locfileid: "66639369"
 - [توافق الاتصالات](communication-compliance.md)
 - [سياسات وضع العلامات التلقائية](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
+
+
 
 ## <a name="categories-of-sensitive-information-types"></a>فئات أنواع المعلومات الحساسة
 

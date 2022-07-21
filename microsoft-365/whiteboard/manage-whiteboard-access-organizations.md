@@ -1,7 +1,7 @@
 ---
 title: إدارة الوصول إلى Microsoft Whiteboard لمؤسستك
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: تعرف على كيفية إعداد Microsoft Whiteboard لمؤسستك في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: 3c75bbfe6b2babf130f8980fe627ec05a8b431e3
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: cbffaaf0573ce5763c200b96630af3fbb2f73218
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917640"
+ms.locfileid: "66942925"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-your-organization"></a>إدارة الوصول إلى Microsoft Whiteboard لمؤسستك
 

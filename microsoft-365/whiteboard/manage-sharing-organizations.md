@@ -1,7 +1,7 @@
 ---
 title: إدارة المشاركة ل Microsoft Whiteboard
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: تعرف على كيفية إدارة المشاركة ل Microsoft Whiteboard.
-ms.openlocfilehash: 22f5d80a914ce7b97765fca1e20f00a30732b820
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 6aa0d3ba9415bba32663cd868cfc94743f354fd4
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917596"
+ms.locfileid: "66942997"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>إدارة المشاركة ل Microsoft Whiteboard
 

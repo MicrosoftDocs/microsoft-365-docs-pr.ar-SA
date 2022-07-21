@@ -9,21 +9,21 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 05/12/2022
+ms.date: 07/21/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: تتوفر سجلات الوصول للرسائل المشفرة التي يتم استردادها من خلال مدخل الرسائل المشفرة.
-ms.openlocfilehash: 50656d1695d8fc3d6e81de6afc03b3f4e3c5ccee
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 0877463ce317f4d38a3251f75b349fb8abb5a027
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "66857287"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942619"
 ---
-# <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption-preview"></a>سجل نشاط مدخل الرسالة المشفرة بواسطة تشفير الرسائل المتقدم ل Microsoft Purview (معاينة)
+# <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption"></a>سجل نشاط مدخل الرسالة المشفرة بواسطة تشفير الرسائل المتقدم ل Microsoft Purview
 
 تتوفر سجلات الوصول للرسائل المشفرة من خلال مدخل الرسائل المشفرة الذي يسمح لمؤسستك بتحديد وقت قراءة الرسائل وإعادة توجيهها من قبل المستلمين الخارجيين. لضمان توفر السجلات لأي مستلمين خارجيين، يجب تطبيق قالب علامة تجارية مخصص على رسائل البريد الإلكتروني المحمية التي ترسلها مؤسستك إلى المستلمين الخارجيين الذين يفرضون تجربة المدخل. راجع [إضافة العلامة التجارية لمؤسستك إلى الرسائل المشفرة](add-your-organization-brand-to-encrypted-messages.md).
 

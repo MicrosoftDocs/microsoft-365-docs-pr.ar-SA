@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: تعرف على كيفية الحصول على تقرير استخدام مستعرض Microsoft باستخدام لوحة معلومات تقارير Microsoft 365 في مركز مسؤولي Microsoft 365.
-ms.openlocfilehash: bd247e839c69726039fb80531444eb7b4b650346
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 3eff031f4f621764a6713c34d3dbe8fc8009aced
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662141"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942046"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>تقارير Microsoft 365 في مركز الإدارة - استخدام مستعرض Microsoft
 
@@ -51,7 +51,7 @@ ms.locfileid: "66662141"
 |البند|الوصف|
 |:-----|:-----|
 |**المستخدم** | عنوان البريد الإلكتروني للمستخدم الذي اتصل بخدمات Microsoft 365 باستخدام Microsoft Edge.|
-| **Microsoft Edge المستخدم**| يعرض DDisplay علامة التجزئة إذا كان مستخدم خدمات Microsoft 365 متصلا ب Microsoft Edge.|
+| **Microsoft Edge المستخدم**| يعرض علامة التجزئة إذا كان مستخدم خدمات Microsoft 365 متصلا ب Microsoft Edge.|
 
 حدد أيقونة **"اختيار أعمدة** " لإضافة أعمدة أو إزالتها من التقرير.
 

@@ -1,7 +1,7 @@
 ---
 title: مقدمة حول Microsoft Whiteboard
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: ابحث عن موارد حول كيفية إعداد Microsoft Whiteboard وإدارته.
-ms.openlocfilehash: 1b76b829d0db173257243b49076bf5938121fb3d
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 18c2b56e37d6c683c46b3bfa62e5d859d9813c10
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917311"
+ms.locfileid: "66943431"
 ---
 # <a name="introduction-to-microsoft-whiteboard"></a>مقدمة حول Microsoft Whiteboard
 

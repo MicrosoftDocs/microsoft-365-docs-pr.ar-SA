@@ -1,7 +1,7 @@
 ---
 title: تكوين إعدادات الخصوصية في Microsoft Whiteboard
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: تعرف على التوافق وكيفية تكوين إعدادات الخصوصية في Microsoft Whiteboard.
-ms.openlocfilehash: 38c7d3fc80b825a8b701f84d729e9bb9a7cc1b63
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 7f5026115b1d15b05dcf5dbb57293b22bf573c61
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917222"
+ms.locfileid: "66942461"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>تكوين إعدادات الخصوصية في Microsoft Whiteboard
 

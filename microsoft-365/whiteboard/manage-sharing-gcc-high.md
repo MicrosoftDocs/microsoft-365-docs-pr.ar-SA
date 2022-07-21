@@ -1,7 +1,7 @@
 ---
 title: إدارة المشاركة ل Microsoft Whiteboard في بيئات GCC High
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: تعرف على كيفية إدارة المشاركة ل Microsoft Whiteboard في بيئات GCC High.
-ms.openlocfilehash: c2223c82a4b55e6391d384d115965f7a4a9c46c7
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 0cd4dc8e4bf39cfbaab79a0140bac544de9e9015
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917156"
+ms.locfileid: "66943365"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard-in-gcc-high-environments"></a>إدارة المشاركة ل Microsoft Whiteboard في بيئات GCC High
 

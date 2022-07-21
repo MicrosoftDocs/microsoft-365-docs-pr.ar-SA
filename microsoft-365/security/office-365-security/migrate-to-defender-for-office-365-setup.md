@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: اتخذ الخطوات لبدء الترحيل من خدمة حماية أو جهاز تابع لجهة خارجية إلى الحماية Microsoft Defender لـ Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 899cf3894936ac154e61ef56204294d526aab33e
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 26eb779e3c1123d9c8586aebcaddea671c0c9c09
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772007"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943878"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>الترحيل إلى Microsoft Defender لـ Office 365 - المرحلة 2: الإعداد
 
@@ -85,7 +85,7 @@ ms.locfileid: "66772007"
 
 - [الوظيفة الإضافية "رسالة التقرير"](enable-the-report-message-add-in.md)
 - [الوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي"](enable-the-report-phish-add-in.md)
-- أدوات إعداد التقارير المعتمدة من الجهات الخارجية كما هو موضح [هنا](user-submission.md#third-party-reporting-tools).
+- أدوات إعداد التقارير المعتمدة من الجهات الخارجية كما هو موضح [هنا](user-submission.md#third-party-email-reporting-tools)
 
 لا تقلل من أهمية هذه الخطوة. ستوفر لك البيانات من عمليات إرسال المستخدم حلقة الملاحظات التي تحتاجها للتحقق من تجربة مستخدم نهائي جيدة ومتسقة قبل الترحيل وبعده. تساعدك هذه التعليقات على اتخاذ قرارات تكوين نهج مستنيرة، بالإضافة إلى تقديم تقارير مدعومة بالبيانات إلى الإدارة بأن الترحيل سار بسلاسة.
 

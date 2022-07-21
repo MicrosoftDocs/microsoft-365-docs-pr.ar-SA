@@ -18,19 +18,19 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: هل أنت مستعد لبدء التحكم في بيانات مؤسستك، ولكن لست متأكدا من أين تبدأ؟ اقرأ بعض الإرشادات الإرشادية للبدء.
-ms.openlocfilehash: 97890f7d873cf19ddc1050cc77f20aa2408c18af
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: خطوات توجيهية للمسؤولين ومتطلبات الترخيص والسيناريوهات الشائعة التي تدير دورة حياة بيانات مؤسستك.
+ms.openlocfilehash: f07d83a26f874fe9f4572ab0656b542beb9b8a91
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629652"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942373"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>بدء استخدام إدارة دورة حياة البيانات
 
 >*[إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-هل أنت جاهز لبدء التحكم في بيانات مؤسستك من خلال الاحتفاظ بالمحتوى الذي تحتاج إلى الاحتفاظ به، وحذف المحتوى الذي لا تريده؟ للبدء، استخدم الإرشادات التالية إدارة دورة البيانات في Microsoft Purview (المعروف سابقا ب Microsoft Information Governance):
+هل أنت جاهز لبدء إدارة دورة حياة بيانات مؤسستك من خلال الاحتفاظ بالمحتوى الذي تحتاج إلى الاحتفاظ به، وحذف المحتوى الذي لا تريده؟ للبدء، استخدم الإرشادات التالية إدارة دورة البيانات في Microsoft Purview (المعروف سابقا ب Microsoft Information Governance):
 
 1. **فهم كيفية عمل الاستبقاء والحذف** في Microsoft 365، ثم تحديد أحمال العمل التي تحتاج إلى نهج استبقاء وما إذا كنت بحاجة إلى إنشاء تسميات استبقاء للاستثناءات: [تعرف على الاستبقاء](retention.md)
     

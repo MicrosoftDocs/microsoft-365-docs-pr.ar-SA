@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 629d475c160d5836d155ca0374630ad64b0928b4
-ms.sourcegitcommit: 3226bdf213b290ec5262670873c3a75f17b66ddd
+ms.openlocfilehash: 1a9e899c1f3292dd0a665c7cbf7ccfd5e561c2aa
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65372010"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943256"
 ---
 # <a name="enable-corelight-data-integration"></a>تمكين تكامل بيانات Corelight
 
@@ -40,6 +40,13 @@ ms.locfileid: "65372010"
 
 مع تمكين مصدر البيانات هذا، يتم إرسال جميع الأحداث من أجهزة شبكة Corelight إلى Microsoft 365 Defender. يمكنك عرض هذه الأنشطة في المخطط الزمني للأجهزة غير المدارة، والمتوفر في مخزون جهاز Microsoft Defender لنقطة النهاية. لمزيد من المعلومات، راجع [اكتشاف الجهاز](device-discovery.md).
 
+## <a name="prerequisites"></a>المتطلبات الأساسية
+
+1. لإعداد تكامل بيانات Corelight، يجب أن يكون للمستخدم الأدوار التالية:
+   - المسؤول العام للمستأجر في Azure Active Directory
+   - مسؤول الأمان لاشتراك Azure الذي سيتم استخدامه من أجل تكامل Microsoft Defender ل IoT
+2. A onboarded Defender for IoT plan. لمزيد من المعلومات، راجع [إلحاق Microsoft Defender ل IoT مع Microsoft Defender لنقطة النهاية](enable-microsoft-defender-for-iot-integration.md).
+
 ## <a name="enabling-the-corelight-integration"></a>تمكين تكامل Corelight
 
 لتمكين تكامل Corelight، ستحتاج إلى اتخاذ الخطوات التالية:
@@ -50,9 +57,9 @@ ms.locfileid: "65372010"
 
 ### <a name="step-1-turn-on-corelight-as-a-data-source"></a>الخطوة 1: تشغيل Corelight كمصدر بيانات
 
-1. في جزء التنقل من [https://security.microsoft.com](https://security.microsoft.com/) المدخل، حدد **الإعدادات** \> **Device discovery** \> **Data sources**.
+1. في جزء التنقل من [https://security.microsoft.com](https://security.microsoft.com/) المدخل، حدد **مصادر بيانات** **اكتشاف** \> جهاز **الإعدادات**\>.
 
-   :::image type="content" source="images/enable-corelight.png" alt-text="صفحة مصادر البيانات في مدخل Microsoft 365 Defender" lightbox="images/enable-corelight.png":::
+   :::image type="content" source="../../media/defender-endpoint/enable-corelight.png" alt-text="صفحة مصادر البيانات في مدخل Microsoft 365 Defender" lightbox="../../media/defender-endpoint/enable-corelight.png":::
 
 2. حدد **إرسال بيانات Corelight إلى M365D** وحدد **Save**.
 
@@ -62,7 +69,7 @@ ms.locfileid: "65372010"
 > يجب أن تكون مسؤولا عاما لمنح Corelight الإذن للوصول إلى الموارد في مؤسستك.
 
 1. كمسؤول عام للمستأجر، انتقل إلى هذا [الارتباط](<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true>) لمنح الإذن.
-2. انتقل إلى [https://security.microsoft.com](https://security.microsoft.com/) المدخل، وحدد **الإعدادات** \> **Microsoft 365 Defender**، ولاحظ **معرف المستأجر**. ستحتاج إلى هذه المعلومات عند تكوين جهاز Corelight.
+2. انتقل إلى [https://security.microsoft.com](https://security.microsoft.com/) المدخل، وحدد **الإعدادات** \> **Microsoft 365 Defender**، ودون **معرف المستأجر**. ستحتاج إلى هذه المعلومات عند تكوين جهاز Corelight.
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>الخطوة 3: تكوين جهاز Corelight لإرسال البيانات إلى Microsoft 365 Defender
 

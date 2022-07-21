@@ -1,5 +1,5 @@
 ---
-title: حدود نهج الاستبقاء ونهج تسمية الاستبقاء
+title: حدود نهج الاستبقاء في Microsoft 365 ونهج تسمية الاستبقاء
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,13 +17,13 @@ search.appverid:
 - MOE150
 - MET150
 hideEdit: true
-description: فهم الحد الأقصى لعدد النهج والعناصر لكل نهج لنهج الاستبقاء ونهج تسمية الاستبقاء
-ms.openlocfilehash: fba8d0385831b4f05bbf0a967072d64eead5644a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: فهم الحد الأقصى لعدد النهج والعناصر لكل نهج لنهج الاستبقاء في Microsoft 365 ونهج تسمية الاستبقاء
+ms.openlocfilehash: 768f2711c873696aabfc71df8817b0be6beec891
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633400"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942351"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>حدود نهج الاستبقاء ونهج تسمية الاستبقاء
 

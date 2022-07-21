@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: في هذه المقالة، ستتعلم كيفية إنشاء نهج DLP واختباره وضبطه وفقا لاحتياجات مؤسستك.
-ms.openlocfilehash: dff47d07a582be807d877471fb7621960b776f24
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 231c055fb9a67b921e3e6796f82e5c1a8161593d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624720"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943299"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>إنشاء نهج DLP واختباره وضبطه
 
@@ -225,7 +225,7 @@ ms.locfileid: "66624720"
 
 بالإضافة إلى تغيير عدد المثيلات، يمكنك أيضا ضبط دقة المطابقة (أو مستوى الثقة). إذا كان نوع المعلومات الحساسة يحتوي على أنماط متعددة، يمكنك ضبط دقة المطابقة في القاعدة، بحيث تتطابق القاعدة مع أنماط معينة فقط. على سبيل المثال، للمساعدة في تقليل الإيجابيات الخاطئة، يمكنك تعيين دقة مطابقة القاعدة بحيث تتطابق فقط مع النمط مع أعلى مستوى ثقة. لمزيد من المعلومات حول مستويات الثقة، راجع [كيفية استخدام مستوى الثقة لضبط القواعد.](data-loss-prevention-policies.md#match-accuracy)
 
-وأخيرا، إذا كنت ترغب في الحصول على المزيد من التقدم، يمكنك تخصيص أي نوع معلومات حساسة - على سبيل المثال، يمكنك إزالة "سيدني NSW" من قائمة الكلمات الأساسية [لرقم رخصة القيادة في أستراليا](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)، لإزالة الإيجابية الخاطئة التي تم تشغيلها أعلاه. لمعرفة كيفية القيام بذلك باستخدام XML وPowerShell، راجع [تخصيص نوع معلومات حساسة مضمن](customize-a-built-in-sensitive-information-type.md).
+وأخيرا، إذا كنت ترغب في الحصول على المزيد من التقدم، يمكنك تخصيص أي نوع معلومات حساسة - على سبيل المثال، يمكنك إزالة "سيدني NSW" من قائمة الكلمات الأساسية [لرقم ترخيص برامج تشغيل أستراليا](sit-defn-australia-drivers-license-number.md)، لإزالة الإيجابية الخاطئة التي تم تشغيلها أعلاه. لمعرفة كيفية القيام بذلك باستخدام XML وPowerShell، راجع [تخصيص نوع معلومات حساسة مضمن](customize-a-built-in-sensitive-information-type.md).
 
 ## <a name="turn-on-a-dlp-policy"></a>تشغيل نهج DLP
 

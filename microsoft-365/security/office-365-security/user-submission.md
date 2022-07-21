@@ -18,12 +18,12 @@ ms.custom: ''
 description: كيفية تكوين علبة بريد لجمع البريد الإلكتروني العشوائي والتصيد الاحتيالي الذي أبلغ عنه المستخدمون. إنشاء علبة بريد للرسائل التي يبلغ المستخدمون عن أنها بريد عشوائي أو تصيد احتيالي أو ضار أو غير ضار.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 40a52e5e3db8a1e11087d4a8beb33b9ba1f3a3aa
-ms.sourcegitcommit: 08ad8636b029ffd19130e2da0de72f37f67e412e
+ms.openlocfilehash: 02356f03f60e2bfc0c6c7de992fdc0c4331f3a4c
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66885521"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942505"
 ---
 # <a name="user-reported-message-settings"></a>إعدادات الرسائل التي أبلغ عنها المستخدم
 
@@ -40,7 +40,7 @@ ms.locfileid: "66885521"
 
 - [الوظيفة الإضافية "رسالة التقرير"](enable-the-report-message-add-in.md)
 - [الوظيفة الإضافية "الإبلاغ عن التصيد الاحتيالي"](enable-the-report-phish-add-in.md)
-- [أدوات إعداد التقارير لجهة خارجية](#third-party-reporting-tools)
+- [أدوات إعداد التقارير لجهة خارجية](user-submission.md#third-party-email-reporting-tools)
 
 يسمح تسليم الرسائل التي أبلغ عنها المستخدم إلى علبة بريد مخصصة بدلا من إرسالها مباشرة إلى Microsoft للمسؤولين بالإبلاغ عن رسائل البريد الإلكتروني بشكل انتقائي ويدوي إلى Microsoft باستخدام [إرسال مسؤول](admin-submission.md). *كانت هذه الإعدادات تعرف سابقا باسم نهج عمليات إرسال المستخدم*.
 

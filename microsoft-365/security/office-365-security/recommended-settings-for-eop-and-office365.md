@@ -19,12 +19,12 @@ ms.collection:
 description: ما هي أفضل الممارسات لإعدادات الأمان Exchange Online Protection (EOP) Defender لـ Office 365؟ ما هي التوصيات الحالية للحماية القياسية؟ ما الذي يجب استخدامه إذا كنت تريد أن تكون أكثر صرامة؟ وما هي الإضافات التي تحصل عليها إذا كنت تستخدم Defender لـ Office 365 أيضا؟
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bc9fd823bac4bd3dca3ba9234c3d7fb6c15a6fc4
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 4653ac9212ef20d7baecdbfa11885e25b514a067
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787133"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943856"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>الإعدادات الموصى بها ل EOP والأمان Microsoft Defender لـ Office 365
 
@@ -304,7 +304,7 @@ ms.locfileid: "66787133"
 |**تطبيق فحص URL في الوقت الحقيقي للارتباطات والارتباطات المشبوهة التي تشير إلى الملفات** <br><br> _فحوصات ضوئية_|غير محدد <br><br> `$false`|المحدد <br><br> `$true`|المحدد <br><br> `$true`|المحدد <br><br> `$true`||
 |**انتظر حتى يكتمل مسح URL قبل تسليم الرسالة** <br><br> _DeliverMessageAfterScan_|غير محدد <br><br> `$false`|المحدد <br><br> `$true`|المحدد <br><br> `$true`|المحدد <br><br> `$true`||
 |**لا تقم بإعادة كتابة عناوين URL، قم بالتحقق عبر واجهة برمجة تطبيقات الارتباطات الآمنة فقط** <br><br> _DisableURLRewrite_|غير محدد <br><br> `$false`|المحدد <br><br> `$true`|غير محدد <br><br> `$false`|غير محدد <br><br> `$false`||
-|**عدم إعادة كتابة عناوين URL التالية في البريد الإلكتروني** <br><br> _عناوين Url DoNotRewrite_|فارغه <br><br> `$null`|فارغه <br><br> `$null`|فارغه <br><br> `$null`|فارغه <br><br> `$null`|ليس لدينا توصية محددة لهذا الإعداد. <br><br> **ملاحظة**: الغرض من قائمة "عدم إعادة كتابة عناوين URL التالية" هو تخطي التفاف الارتباطات الآمنة لعناوين URL المحددة. بدلا من استخدام هذه القائمة، يمكنك الآن [إنشاء إدخالات عنوان URL للسماح في قائمة السماح/الحظر للمستأجر](allow-block-urls.md#create-allow-url-entries).|
+|**عدم إعادة كتابة عناوين URL التالية في البريد الإلكتروني** <br><br> _عناوين Url DoNotRewrite_|فارغه <br><br> `$null`|فارغه <br><br> `$null`|فارغه <br><br> `$null`|فارغه <br><br> `$null`|ليس لدينا توصية محددة لهذا الإعداد. <br><br> **ملاحظة**: لا يتم مسح الإدخالات الموجودة في قائمة "عدم إعادة كتابة عناوين URL التالية" ضوئيا أو تضمينها بواسطة "ارتباطات آمنة" أثناء تدفق البريد. استخدم [إدخالات عنوان URL المسموح به في قائمة السماح/الحظر للمستأجر](allow-block-urls.md#create-allow-url-entries) بحيث لا يتم مسح عناوين URL ضوئيا أو تضمينها بواسطة الارتباطات الآمنة أثناء تدفق البريد _ووقت_ النقر.|
 |**إجراء لعناوين URL التي يحتمل أن تكون ضارة في Microsoft Teams**||||||
 |**تشغيل: تتحقق "الارتباطات الآمنة" من قائمة الارتباطات الضارة المعروفة عندما ينقر المستخدمون فوق الارتباطات في Microsoft Teams** <br><br> _EnableSafeLinksForTeams_|غير محدد <br><br> `$false`|المحدد <br><br> `$true`|المحدد <br><br> `$true`|المحدد <br><br> `$true`||
 |**إجراء لعناوين URL التي يحتمل أن تكون ضارة في تطبيقات Microsoft Office**||||||
