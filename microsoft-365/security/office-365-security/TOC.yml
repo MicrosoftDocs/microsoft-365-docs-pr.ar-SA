@@ -322,7 +322,7 @@
               href: mfi-domain-mail-flow-status-insight.md
         - name: الإبلاغ عن الرسائل والملفات إلى Microsoft
           items:
-            - name: الإبلاغ عن الرسائل والملفات إلى Microsoft
+            - name: كيف أبلغ عن بريد إلكتروني أو ملف مشبوه إلى Microsoft
               href: report-junk-email-messages-to-microsoft.md
             - name: عمليات إرسال المسؤول
               href: admin-submission.md
