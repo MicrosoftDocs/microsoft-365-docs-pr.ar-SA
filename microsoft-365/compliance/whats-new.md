@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: سواء كان ذلك بإضافة حلول جديدة إلى مركز الامتثال، أو تحديث الميزات الحالية استنادا إلى ملاحظاتك، أو طرح وثائق جديدة ومحدثة، يساعدك Microsoft 365 على البقاء على اطلاع على مشهد التوافق المتغير باستمرار. تعرف على ما كنا عليه حتى هذا الشهر.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fc553b60132da31dbcc6e131ddb29bcbfa99548b
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 0b2a55b686c310fc8d864229655c6815e7afef38
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756738"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949140"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>ما الجديد في حلول المخاطر والتوافق ل Microsoft Purview
 
@@ -45,7 +45,7 @@ ms.locfileid: "66756738"
 
 ### <a name="compliance-manager"></a>إدارة التوافق
 
-- [تنبيهات Microsoft Purview Compliance Manager ونهج التنبيه](compliance-manager-alert-policies.md) - تمت إضافة ثلاثة أدوار ADD لديها أذونات لإنشاء نهج التنبيه أو تحريرها.
+- [تنبيهات Microsoft Purview Compliance Manager ونهج التنبيه](compliance-manager-alert-policies.md) - تمت إضافة ثلاثة أدوار AAD لديها أذونات لإنشاء نهج التنبيه أو تحريرها.
 - [محلل التكوين ل Microsoft Purview](compliance-manager-mcca.md) - اسم جديد وارتباطات مرجعية محدثة لأداة بدء الاستخدام هذه ل Compliance Manager المسمى سابقا "محلل تكوين التوافق من Microsoft".
 
 ### <a name="data-loss-prevention"></a>منع فقدان البيانات

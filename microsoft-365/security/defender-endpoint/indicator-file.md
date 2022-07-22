@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: da9e030d929f65c7ea5bd83010d2b7f49b1d90d9
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 0414f85c9d461a2f676f9bc248a1ce065f7547d7
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535581"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949492"
 ---
 # <a name="create-indicators-for-files"></a>إنشاء مؤشرات للملفات
 
@@ -48,14 +48,14 @@ ms.locfileid: "65535581"
 
 من المهم فهم المتطلبات الأساسية التالية قبل إنشاء مؤشرات للملفات:
 
-- تتوفر هذه الميزة إذا كانت مؤسستك تستخدم **برنامج الحماية من الفيروسات من Microsoft Defender (في الوضع النشط)** **وتم تمكين الحماية المستندة إلى السحابة**. لمزيد من المعلومات، راجع [إدارة الحماية المستندة إلى السحابة](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- تتوفر هذه الميزة إذا كانت مؤسستك تستخدم **برنامج الحماية من الفيروسات من Microsoft Defender (في الوضع النشط)** وتم **تمكين الحماية المستندة إلى السحابة**. لمزيد من المعلومات، راجع [إدارة الحماية المستندة إلى السحابة](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - يجب أن يكون إصدار عميل مكافحة البرامج الضارة 4.18.1901.x أو أحدث. الاطلاع [على إصدارات النظام الأساسي والمحرك الشهرية](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- معتمدة على الأجهزة التي تحتوي على Windows 10 والإصدار 1703 أو الإصدارات الأحدث Windows Server 2019 Windows Server 2016 Windows Server 2012 R2 Windows Server 2022.
+- معتمد على الأجهزة التي تحتوي على Windows 10 والإصدار 1703 أو الإصدارات الأحدث وWindows Server 2019 وWindows Server 2016 وWindows Server 2012 R2 وWindows Server 2022.
     
    > [!NOTE]
-   > يجب إلحاق Windows Server 2016 وserver Windows 2012 R2 باستخدام الإرشادات الموجودة في [خوادم Windows](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) المحلية لكي تعمل هذه الميزة. مؤشرات الملفات المخصصة مع إجراءات السماح والحظر والمعالجة متوفرة الآن أيضا في [المعاينة العامة لقدرات محرك مكافحة البرامج الضارة المحسنة macOS وLinux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
+   > يجب إلحاق Windows Server 2016 وWindows Server 2012 R2 باستخدام الإرشادات الموجودة في [خوادم Windows المحلية](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) لكي تعمل هذه الميزة. تتوفر مؤشرات الملفات المخصصة مع إجراءات السماح والحظر والمعالجة الآن أيضا في [المعاينة العامة لقدرات محرك مكافحة البرامج الضارة المحسنة لنظامي التشغيل macOS وLinux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
 
 - لبدء حظر الملفات، تحتاج أولا إلى [تشغيل ميزة "الحظر أو السماح"](advanced-features.md) في الإعدادات.
 
@@ -66,7 +66,7 @@ ms.locfileid: "65535581"
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>إنشاء مؤشر للملفات من صفحة الإعدادات
 
-1. في جزء التنقل، حدد **الإعدادات** \> **مؤشرات** **نقاط** \> النهاية (ضمن **القواعد**).
+1. في جزء التنقل، حدد مؤشرات \> **نقاط النهاية** **للإعدادات** \> (ضمن **القواعد**).
 
 2. حدد علامة التبويب **"تجزئة الملف** ".
 
@@ -92,7 +92,7 @@ ms.locfileid: "65535581"
 
 الإجراءات الحالية المدعومة لملف IOC هي السماح والتدقيق والحظر والمعالجة. بعد اختيار حظر ملف، يمكنك اختيار ما إذا كان هناك حاجة إلى تشغيل تنبيه. وبهذه الطريقة ستتمكن من التحكم في عدد التنبيهات التي يتم الوصول إليها في فرق عمليات الأمان الخاصة بك والتأكد من رفع التنبيهات المطلوبة فقط.
 
-في Microsoft 365 Defender، انتقل إلى **الإعدادات** >  EndpointsIndicatorsAdd >  >  **New File Hash**.
+في Microsoft 365 Defender، انتقل إلى **مؤشرات** > **نقاط نهاية الإعدادات** >  > **إضافة تجزئة ملف جديد**.
 
 اختر حظر الملف ومعالجتها.
 
@@ -114,6 +114,8 @@ ms.locfileid: "65535581"
 > - إذا تم تعطيل نهج مجموعة EnableFileHashComputation، يتم تقليل دقة حظر IoC للملف. ومع ذلك، قد يؤثر التمكين `EnableFileHashComputation` على أداء الجهاز. على سبيل المثال، قد يكون لنسخ ملفات كبيرة من مشاركة شبكة اتصال على جهازك المحلي، خاصة عبر اتصال VPN، تأثير على أداء الجهاز.
 >
 > لمزيد من المعلومات حول نهج مجموعة EnableFileHashComputation، راجع [Defender CSP](/windows/client-management/mdm/defender-csp).
+>
+> لمزيد من التفاصيل حول تكوين هذه الميزة على Defender لنقطة النهاية على Linux وmacOS، راجع [تكوين ميزة حساب تجزئة الملف على Linux](linux-preferences.md#configure-file-hash-computation-feature) وتكوين [ميزة حساب تجزئة الملف على macOS](mac-preferences.md#configure-file-hash-computation-feature).
 
 ## <a name="public-preview-advanced-hunting-capabilities"></a>المعاينة العامة: قدرات التتبع المتقدمة
 
@@ -147,22 +149,22 @@ Timestamp > ago(30d)
 
 سيتبع تعارض معالجة نهج Cert وFily IoC الترتيب أدناه:
 
-- إذا لم يسمح Windows Defender Application Control وAppLocker بفرض نهج/نهج الوضع، **فحظر**
+- إذا لم يكن الملف مسموحا به من قبل Windows Defender Application Control وفرض AppLocker نهج/نهج الوضع، ثم **حظر**
 - وإلا إذا كان الملف مسموحا به من قبل استبعاد برنامج الحماية من الفيروسات من Microsoft Defender، **فاسمح**
 - وإلا إذا تم حظر الملف أو تحذيره بواسطة حظر أو تحذير IoC، **فحظر/احذر**
 - وإلا إذا كان الملف مسموحا به من قبل نهج IoC لملف السماح، **فاسمح**
 - وإلا إذا تم حظر الملف بواسطة قواعد ASR، CFA، AV، SmartScreen، ثم **الحظر**
-- Else **Allow** (يمرر Windows Defender Application Control & نهج AppLocker، لا تنطبق قواعد IoC عليه)
+- Else **Allow** (يمرر التحكم في تطبيق Windows Defender & نهج AppLocker، لا تنطبق أي قواعد IoC عليه)
 
 >[!NOTE]
-> في الحالات التي يتم فيها تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى **"حظر**"، ولكن تم تعيين Defender لنقطة النهاية إلى **"السماح**"، سيتم تعيين النهج الافتراضي إلى **"السماح**".
+> في الحالات التي يتم فيها تعيين برنامج الحماية من الفيروسات من Microsoft Defender إلى **Block**، ولكن تم تعيين Defender for Endpoint إلى **Allow**، سيتم تعيين النهج الافتراضي إلى **Allow**.
 
 إذا كانت هناك نهج IoC ملف متضاربة بنفس نوع الإنفاذ والهدف، فسيتم تطبيق نهج تجزئة أكثر أمانا (بمعنى أطول). على سبيل المثال، سيفوز نهج IoC لتجزئة ملف SHA-256 على نهج IoC لتجزئة ملف MD5 إذا كان كلا النوعين من التجزئة يعرفان الملف نفسه.
 
 > [!WARNING]
 > تختلف معالجة تعارض النهج للملفات والشهادات عن معالجة تعارض النهج للمجالات/عناوين URL/عناوين IP.
 
-تستخدم ميزات التطبيق المعرض للخطر للمخاطر وحظر إدارة الثغرات الأمنية IoCs الملف للتنفيذ وستتبع ترتيب معالجة التعارض أعلاه.
+تستخدم ميزات التطبيق المعرضة للخطر لإدارة المخاطر والثغرات الأمنية ميزات ملفات IoCs للتنفيذ وستتبع ترتيب معالجة التعارض أعلاه.
 
 ### <a name="examples"></a>أمثلة
 

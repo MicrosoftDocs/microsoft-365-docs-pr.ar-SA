@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: aa6255289ddffd7edb9025e36c69a49f4a3b855b
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: f927133a99e73af11c29690b1c51e3bda3a6d5a7
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603495"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949426"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>ما الجديد في Microsoft Defender لنقطة النهاية على Linux
 
@@ -34,6 +34,28 @@ ms.locfileid: "66603495"
 
 - [ما الجديد في Defender لنقطة النهاية على macOS](mac-whatsnew.md)
 - [ما الجديد في Defender لنقطة النهاية على iOS](ios-whatsnew.md)
+
+<details>
+  <summary>Jul-2022 (النسخة: 101.73.77 | إصدار الإصدار: 30.122062.17377.0)</summary>
+
+&ensp;تم الإصدار بتاريخ: **21 يوليو 2022**<br/>
+&ensp;نشر بتاريخ: **21 يوليو 2022**<br/>
+&ensp;النسخة: **101.73.77**<br/>
+&ensp;إصدار الإصدار: **30.122062.17377.0**<br/>
+&ensp;إصدار المحرك: **1.1.19200.3**<br/>
+&ensp;إصدار التوقيع: **1.367.1011.0**<br/>
+
+
+**أحدث الميزات**
+
+- إضافة خيار [لتكوين حساب تجزئة الملف](linux-preferences.md#configure-file-hash-computation-feature)
+- من هذا الإصدار فصاعدا، سيكون للمنتج محرك مكافحة البرامج الضارة الجديد بشكل افتراضي
+- تحسينات الأداء لعمليات نسخ الملفات
+- إصلاحات الأخطاء
+</br>
+
+<br/><br/>
+</details>
 
 <details>
   <summary>Jun-2022 (النسخة: 101.71.18 | إصدار الإصدار: 30.122052.17118.0)</summary>

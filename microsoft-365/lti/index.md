@@ -11,14 +11,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - M365-modern-desktop
-ms.localizationpriority: ''
+ms.localizationpriority: medium
 description: تعرف على تطبيقات Microsoft لـ "إمكانية التشغيل التفاعلي لأدوات التعلم" (LTI)، وكيف ستساعد المعلمين عند دمج تطبيقات Microsoft في نظام الإدارة التعليمية (LMS).
-ms.openlocfilehash: 994abf0351a3694e1eeb534a328745691cb6a379
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 7431b9a48ae7f0fec7199583592a515a6aadd772
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044280"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943519"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>دمج منتجات Microsoft مع نظام إدارة Learning (LMS)
 
@@ -75,13 +75,14 @@ ms.locfileid: "66044280"
 
 ### <a name="teams-meetings-lti"></a>اجتماعات Teams LTI
 
-اجتماعات Microsoft Teams يدمج تطبيق LTI اجتماعات Teams في دورات LMS. يمكن للمعلمين والطلاب عرض الاجتماعات السابقة والقادمة وجدولة اجتماعات فردية أو متكررة والانضمام إلى اجتماعات الفريق المتعلقة بالدورة التدريبية، كل ذلك من داخل LMS.
+يقوم تطبيق LTI لاجتماعات Teams من Microsoft بتضمين اجتماعات Teams في دورات LMS. يمكن للمعلمين والطلاب عرض الاجتماعات السابقة والقادمة وجدولة اجتماعات فردية أو متكررة والانضمام إلى اجتماعات الفريق المتعلقة بالدورة التدريبية، كل ذلك من داخل LMS.
 
 للحصول على خطوات التكوين، راجع:
 
 - [اجتماعات Microsoft Teams باستخدام Canvas](teams-meetings-with-canvas.md).
 - [اجتماعات Microsoft Teams باستخدام Moodle](teams-classes-meetings-with-moodle.md).
 - [اجتماعات Microsoft Teams مع Open LMS](open-lms-teams-classes-and-meetings.md).
+- [اجتماعات Microsoft Teams مع Desire2Learn Brightspace](teams-classes-meetings-with-brightspace.md).
 
 ### <a name="teams-classes-lti"></a>Teams Classes LTI
 
@@ -89,7 +90,8 @@ ms.locfileid: "66044280"
 
 للحصول على خطوات التكوين، راجع:
 
-- [صفوف LTI من Microsoft Teams مع Canvas](teams-classes-with-canvas.md).
-- [صفوف LTI من Microsoft Teams مع Blackboard](teams-classes-with-blackboard.md).
-- [صفوف LTI من Microsoft Teams مع Moodle](teams-classes-meetings-with-moodle.md).
-- [صفوف LTI من Microsoft Teams مع Open LMS](open-lms-teams-classes-and-meetings.md).
+- [Microsoft Teams Classes مع Canvas](teams-classes-with-canvas.md).
+- [Microsoft Teams Classes مع Blackboard](teams-classes-with-blackboard.md).
+- [Microsoft Teams Classes مع Moodle](teams-classes-meetings-with-moodle.md).
+- [Microsoft Teams Classes مع Open LMS](open-lms-teams-classes-and-meetings.md).
+- [Microsoft Teams Classes مع Desire2Learn Brightspace](teams-classes-meetings-with-brightspace.md).

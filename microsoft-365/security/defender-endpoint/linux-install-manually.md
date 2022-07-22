@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 35358ec572fbb6ed0a7256e9af6be73db04e5f59
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: a38c94ff225c0792a1e6f13d1a57a68a8c322cff
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822058"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944054"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>نشر Microsoft Defender لنقطة النهاية على Linux يدويا
 
@@ -79,7 +79,6 @@ ms.locfileid: "66822058"
     |---|---|
     |بالنسبة إلى RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
     |ل RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
-    <!--|بالنسبة إلى RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
     |ل Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |ل Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
@@ -197,10 +196,10 @@ ms.locfileid: "66822058"
 - تثبيت المفتاح العام ل Microsoft GPG:
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
     ```
 
-- تثبيت برنامج تشغيل https إذا لم يكن موجودا بالفعل:
+- تثبيت برنامج تشغيل HTTPS إذا لم يكن مثبتا بالفعل:
 
     ```bash
     sudo apt-get install apt-transport-https
