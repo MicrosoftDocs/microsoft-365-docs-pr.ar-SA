@@ -373,7 +373,613 @@
         - name: مرجع نوع المعلومات الحساسة
           items:
             - name: تعريفات كيان نوع المعلومات الحساسة
-              href: sensitive-information-type-entity-definitions.md
+              items:
+                - name: تعريفات كيان نوع المعلومات الحساسة
+                  href: sensitive-information-type-entity-definitions.md
+                - name: رقم توجيه ABA
+                  href: sit-defn-aba-routing.md
+                - name: كل الأسماء الكاملة
+                  href: sit-defn-all-full-names.md
+                - name: جميع الشروط والأحكام الطبية
+                  href: sit-defn-all-medical-terms-conditions.md
+                - name: كل العناوين الفعلية
+                  href: sit-defn-all-physical-addresses.md
+                - name: مفتاح الوصول السري لعميل Amazon S3
+                  href: sit-defn-amazon-s3-client-secret-access-key.md
+                - name: رقم الهوية الوطنية للارجنتين (DNI)
+                  href: sit-defn-argentina-national-identity-numbers.md
+                - name: مفتاح التعريف الضريبي الفريد في الأرجنتين
+                  href: sit-defn-argentina-unique-tax-identification-key.md
+                - name: مفتاح الجهازASP.NET
+                  href: sit-defn-asp-net-machine-key.md
+                - name: رقم الحساب البنكي في أستراليا
+                  href: sit-defn-australia-bank-account-number.md
+                - name: رقم العمل في أستراليا
+                  href: sit-defn-australia-business-number.md
+                - name: رقم شركة أستراليا
+                  href: sit-defn-australia-company-number.md
+                - name: رقم ترخيص برامج التشغيل في أستراليا
+                  href: sit-defn-australia-drivers-license-number.md
+                - name: رقم الحساب الطبي في أستراليا
+                  href: sit-defn-australia-medical-account-number.md
+                - name: رقم جواز سفر أستراليا
+                  href: sit-defn-australia-passport-number.md
+                - name: عناوين فعلية في أستراليا
+                  href: sit-defn-australia-physical-addresses.md
+                - name: رقم ملف الضريبة في أستراليا
+                  href: sit-defn-australia-tax-file-number.md
+                - name: رقم رخصة القيادة في النمسا
+                  href: sit-defn-austria-drivers-license-number.md
+                - name: بطاقة هوية النمسا
+                  href: sit-defn-austria-identity-card.md
+                - name: رقم جواز سفر النمسا
+                  href: sit-defn-austria-passport-number.md
+                - name: العناوين المادية في النمسا
+                  href: sit-defn-austria-physical-addresses.md
+                - name: رقم الضمان الاجتماعي في النمسا
+                  href: sit-defn-austria-social-security-number.md
+                - name: رقم التعريف الضريبي في النمسا
+                  href: sit-defn-austria-tax-identification-number.md
+                - name: ضريبة القيمة المضافة في النمسا
+                  href: sit-defn-austria-value-added-tax.md
+                - name: الرمز المميز للوصول إلى العميل Azure AD
+                  href: sit-defn-azure-ad-client-access-token.md
+                - name: سر العميل Azure AD
+                  href: sit-defn-azure-ad-client-secret.md
+                - name: بيانات اعتماد المستخدم Azure AD
+                  href: sit-defn-azure-ad-user-credentials.md
+                - name: كلمة مرور نشر خدمة تطبيق Azure
+                  href: sit-defn-azure-app-service-deployment-password.md
+                - name: مفتاح الوصول المشترك لدفعة Azure
+                  href: sit-defn-azure-batch-shared-access-key.md
+                - name: المفتاح السري لـ Azure Bot Framework
+                  href: sit-defn-azure-bot-framework-secret-key.md
+                - name: سر تطبيق خدمة Azure Bot
+                  href: sit-defn-azure-bot-service-app-secret.md
+                - name: مفتاح واجهة برمجة تطبيقات البحث المعرفي من Azure
+                  href: sit-defn-azure-cognitive-search-api-key.md
+                - name: مفتاح خدمة Azure Cognitive
+                  href: sit-defn-azure-cognitive-service-key.md
+                - name: مفتاح الوصول إلى Azure Container Registry
+                  href: sit-defn-azure-container-registry-access-key.md
+                - name: مفتاح الوصول إلى حساب Azure COSMOS DB
+                  href: sit-defn-azure-cosmos-db-account-access-key.md
+                - name: الرمز المميز للوصول الشخصي إلى Azure Databricks
+                  href: sit-defn-azure-databricks-personal-access-token.md
+                - name: سر تطبيق Azure DevOps
+                  href: sit-defn-azure-devops-app-secret.md
+                - name: الرمز المميز للوصول الشخصي إلى Azure DevOps
+                  href: sit-defn-azure-devops-personal-access-token.md
+                - name: مفتاح مصادقة Azure DocumentDB
+                  href: sit-defn-azure-document-db-auth-key.md
+                - name: مفتاح الوصول إلى Azure EventGrid
+                  href: sit-defn-azure-eventgrid-access-key.md
+                - name: مفتاح Azure Function Master / API
+                  href: sit-defn-azure-function-master-api-key.md
+                - name: سلسلة اتصال قاعدة بيانات Azure IAAS وسلسلة اتصال Azure SQL
+                  href: sit-defn-azure-iaas-database-connection-string-azure-sql-connection-string.md
+                - name: سلسلة اتصال Azure IoT
+                  href: sit-defn-azure-iot-connection-string.md
+                - name: مفتاح الوصول المشترك لـ Azure IoT
+                  href: sit-defn-azure-iot-shared-access-key.md
+                - name: توقيع الوصول المشترك لـ Azure Logic App
+                  href: sit-defn-azure-logic-app-shared-access-signature.md
+                - name: مفتاح واجهة برمجة تطبيقات خدمة التعلم الآلي من Azure
+                  href: sit-defn-azure-machine-learning-web-service-api-key.md
+                - name: مفتاح الاشتراك خرائط Azure
+                  href: sit-defn-azure-maps-subscription-key.md
+                - name: كلمة مرور إعداد نشر Azure
+                  href: sit-defn-azure-publish-setting-password.md
+                - name: سلسلة اتصال ذاكرة التخزين المؤقت لـ Azure Redis
+                  href: sit-defn-azure-redis-cache-connection-string.md
+                - name: كلمة مرور سلسلة اتصال ذاكرة التخزين المؤقت لـ Azure Redis
+                  href: sit-defn-azure-redis-cache-connection-string-password.md
+                - name: Azure SAS
+                  href: sit-defn-azure-sas.md
+                - name: سلسلة اتصال ناقل خدمة Azure
+                  href: sit-defn-azure-service-bus-connection-string.md
+                - name: توقيع الوصول المشترك لناقل خدمة Azure
+                  href: sit-defn-azure-service-bus-shared-access-signature.md
+                - name: مفتاح Azure Shared Access / رمز Web Hook المميز
+                  href: sit-defn-azure-shared-access-key-web-hook-token.md
+                - name: مفتاح الوصول إلى Azure SignalR
+                  href: sit-defn-azure-signalr-access-key.md
+                - name: سلسلة اتصال Azure SQL
+                  href: sit-defn-azure-sql-connection-string.md
+                - name: مفتاح الوصول إلى حساب تخزين Azure
+                  href: sit-defn-azure-storage-account-access-key.md
+                - name: مفتاح حساب تخزين Azure
+                  href: sit-defn-azure-storage-account-key.md
+                - name: مفتاح حساب Azure دنن(عام)
+                  href: sit-defn-azure-storage-account-key-generic.md
+                - name: توقيع الوصول المشترك لحساب تخزين Azure
+                  href: sit-defn-azure-storage-account-shared-access-signature.md
+                - name: توقيع الوصول المشترك لحساب تخزين Azure للموارد عالية المخاطر
+                  href: sit-defn-azure-storage-account-shared-access-signature-high-risk-resources.md
+                - name: شهادة إدارة اشتراك Azure
+                  href: sit-defn-azure-subscription-management-certificate.md
+                - name: رقم رخصة القيادة في بلجيكا
+                  href: sit-defn-belgium-drivers-license-number.md
+                - name: الرقم الوطني في بلجيكا
+                  href: sit-defn-belgium-national-number.md
+                - name: رقم جواز سفر بلجيكا
+                  href: sit-defn-belgium-passport-number.md
+                - name: عناوين فعلية لبلجكيا
+                  href: sit-defn-belgium-physical-addresses.md
+                - name: رقم الضريبة للقيمة المضافة في بلجيكا
+                  href: sit-defn-belgium-value-added-tax-number.md
+                - name: مصطلحات اختبار الدم
+                  href: sit-defn-blood-test-terms.md
+                - name: أسماء أدوية العلامة التجارية
+                  href: sit-defn-brand-medication-names.md
+                - name: رقم CPF في البرازيل
+                  href: sit-defn-brazil-cpf-number.md
+                - name: رقم الكيان القانوني البرازيلي (CNPJ)
+                  href: sit-defn-brazil-legal-entity-number.md
+                - name: بطاقة تعريف البرازيل الوطنية (RG)
+                  href: sit-defn-brazil-national-identification-card.md
+                - name: العناوين المادية في البرازيل
+                  href: sit-defn-brazil-physical-addresses.md
+                - name: رقم ترخيص برامج التشغيل في بلغاريا
+                  href: sit-defn-bulgaria-drivers-license-number.md
+                - name: رقم جواز سفر بلغاريا
+                  href: sit-defn-bulgaria-passport-number.md
+                - name: عناوين فعلية في بلغاريا
+                  href: sit-defn-bulgaria-physical-addresses.md
+                - name: الرقم المدني الموحد لبلغاريا
+                  href: sit-defn-bulgaria-uniform-civil-number.md
+                - name: رقم الحساب البنكي في كندا
+                  href: sit-defn-canada-bank-account-number.md
+                - name: رقم ترخيص برامج التشغيل في كندا
+                  href: sit-defn-canada-drivers-license-number.md
+                - name: رقم خدمة الصحة في كندا
+                  href: sit-defn-canada-health-service-number.md
+                - name: رقم جواز سفر كندا
+                  href: sit-defn-canada-passport-number.md
+                - name: رقم التعريف الصحي الشخصي لكندا (PHIN)
+                  href: sit-defn-canada-personal-health-identification-number.md
+                - name: العناوين الفعلية لكندا
+                  href: sit-defn-canada-physical-addresses.md
+                - name: رقم التأمين الاجتماعي في كندا
+                  href: sit-defn-canada-social-insurance-number.md
+                - name: رقم بطاقة هوية تشيلي
+                  href: sit-defn-chile-identity-card-number.md
+                - name: رقم بطاقة هوية مقيمة في الصين (PRC)
+                  href: sit-defn-china-resident-identity-card-number.md
+                - name: سر العميل / مفتاح واجهة برمجة التطبيقات
+                  href: sit-defn-client-secret-api-key.md
+                - name: بيانات الاعتماد في URL
+                  href: sit-defn-credentials-in-url.md
+                - name: رقم بطاقة الائتمان
+                  href: sit-defn-credit-card-number.md
+                - name: رقم ترخيص برامج التشغيل في كرواتيا
+                  href: sit-defn-croatia-drivers-license-number.md
+                - name: رقم بطاقة هوية كرواتية
+                  href: sit-defn-croatia-identity-card-number.md
+                - name: رقم جواز سفر بكرواتيا
+                  href: sit-defn-croatia-passport-number.md
+                - name: رقم التعريف الشخصي لكرواتيا (OIB)
+                  href: sit-defn-croatia-personal-identification-number.md
+                - name: عناوين فعلية في كرواتيا
+                  href: sit-defn-croatia-physical-addresses.md
+                - name: رقم ترخيص برامج التشغيل في البرنامج الرئيسي
+                  href: sit-defn-cyprus-drivers-license-number.md
+                - name: بطاقة هوية للسينية
+                  href: sit-defn-cyprus-identity-card.md
+                - name: رقم جواز سفر في قبرص
+                  href: sit-defn-cyprus-passport-number.md
+                - name: عناوين فعلية في قبرص
+                  href: sit-defn-cyprus-physical-addresses.md
+                - name: رقم التعريف الضريبي لقبرص
+                  href: sit-defn-cyprus-tax-identification-number.md
+                - name: رقم ترخيص برامج التشغيل التشيكية
+                  href: sit-defn-czech-drivers-license-number.md
+                - name: رقم جواز السفر التشيكي
+                  href: sit-defn-czech-passport-number.md
+                - name: رقم الهوية الشخصية التشيكية
+                  href: sit-defn-czech-personal-identity-number.md
+                - name: العناوين المادية للتشيك
+                  href: sit-defn-czech-republic-physical-addresses.md
+                - name: رقم ترخيص برامج تشغيل الدانمارك
+                  href: sit-defn-denmark-drivers-license-number.md
+                - name: رقم جواز سفر الدانمارك
+                  href: sit-defn-denmark-passport-number.md
+                - name: رقم التعريف الشخصي للدانمرك
+                  href: sit-defn-denmark-personal-identification-number.md
+                - name: عناوين فعلية في الدانمرك
+                  href: sit-defn-denmark-physical-addresses.md
+                - name: الأمراض
+                  href: sit-defn-diseases.md
+                - name: رقم وكالة إنفاذ مكافحة الأدوية (DEA)
+                  href: sit-defn-drug-enforcement-agency-number.md
+                - name: رقم رخصة القيادة الإستونية
+                  href: sit-defn-estonia-drivers-license-number.md
+                - name: رقم جواز السفر الإستوني
+                  href: sit-defn-estonia-passport-number.md
+                - name: رمز التعريف الشخصي الإستوني
+                  href: sit-defn-estonia-personal-identification-code.md
+                - name: عناوين فعلية في إستونيا
+                  href: sit-defn-estonia-physical-addresses.md
+                - name: رقم بطاقة خصم الاتحاد الأوروبي
+                  href: sit-defn-eu-debit-card-number.md
+                - name: رقم ترخيص برامج تشغيل الاتحاد الأوروبي
+                  href: sit-defn-eu-drivers-license-number.md
+                - name: رقم التعريف الوطني للاتحاد الأوروبي
+                  href: sit-defn-eu-national-identification-number.md
+                - name: رقم جواز سفر الاتحاد الأوروبي
+                  href: sit-defn-eu-passport-number.md
+                - name: رقم الضمان الاجتماعي في الاتحاد الأوروبي أو التعريف المكافئ
+                  href: sit-defn-eu-social-security-number-equivalent-identification.md
+                - name: رقم التعريف الضريبي للاتحاد الأوروبي
+                  href: sit-defn-eu-tax-identification-number.md
+                - name: رقم ترخيص برامج تشغيل فنلندا
+                  href: sit-defn-finland-drivers-license-number.md
+                - name: رقم التأمين الصحي الأوروبي ل فنلندا
+                  href: sit-defn-finland-european-health-insurance-number.md
+                - name: المعرف الوطني ل فنلندا
+                  href: sit-defn-finland-national-id.md
+                - name: رقم جواز سفر فنلندا
+                  href: sit-defn-finland-passport-number.md
+                - name: عناوين فعلية في فنلندا
+                  href: sit-defn-finland-physical-addresses.md
+                - name: رقم ترخيص برامج تشغيل فرنسا
+                  href: sit-defn-france-drivers-license-number.md
+                - name: رقم التأمين الصحي في فرنسا
+                  href: sit-defn-france-health-insurance-number.md
+                - name: بطاقة المعرف الوطنية الفرنسية (CNI)
+                  href: sit-defn-france-national-id-card.md
+                - name: رقم جواز سفر فرنسا
+                  href: sit-defn-france-passport-number.md
+                - name: عناوين فعلية في فرنسا
+                  href: sit-defn-france-physical-addresses.md
+                - name: رقم الضمان الاجتماعي (INSEE) في فرنسا
+                  href: sit-defn-france-social-security-number.md
+                - name: رقم التعريف الضريبي في فرنسا
+                  href: sit-defn-france-tax-identification-number.md
+                - name: رقم الضريبة للقيمة المضافة في فرنسا
+                  href: sit-defn-france-value-added-tax-number.md
+                - name: كلمة المرور العامة
+                  href: sit-defn-general-password.md
+                - name: مفتاح متماثل عام
+                  href: sit-defn-general-symmetric-key.md
+                - name: أسماء الأدوية العامة
+                  href: sit-defn-generic-medication-names.md
+                - name: رقم ترخيص برامج التشغيل في ألمانيا
+                  href: sit-defn-germany-drivers-license-number.md
+                - name: رقم بطاقة الهوية في ألمانيا
+                  href: sit-defn-germany-identity-card-number.md
+                - name: رقم جواز سفر ألمانيا
+                  href: sit-defn-germany-passport-number.md
+                - name: عناوين فعلية في ألمانيا
+                  href: sit-defn-germany-physical-addresses.md
+                - name: رقم التعريف الضريبي في ألمانيا
+                  href: sit-defn-germany-tax-identification-number.md
+                - name: رقم ضريبة القيمة المضافة في ألمانيا
+                  href: sit-defn-germany-value-added-tax-number.md
+                - name: الرمز المميز للوصول الشخصي إلى GitHub
+                  href: sit-defn-github-personal-access-token.md
+                - name: مفتاح واجهة برمجة تطبيقات Google
+                  href: sit-defn-google-api-key.md
+                - name: رقم ترخيص برامج التشغيل في اليونان
+                  href: sit-defn-greece-drivers-license-number.md
+                - name: بطاقة المعرف الوطنية في اليونان
+                  href: sit-defn-greece-national-id-card.md
+                - name: رقم جواز سفر اليونان
+                  href: sit-defn-greece-passport-number.md
+                - name: عناوين فعلية في اليونان
+                  href: sit-defn-greece-physical-addresses.md
+                - name: رقم التأمين الاجتماعي في اليونان (AMKA)
+                  href: sit-defn-greece-social-security-number.md
+                - name: رقم التعريف الضريبي في اليونان
+                  href: sit-defn-greece-tax-identification-number.md
+                - name: رقم بطاقة هوية هونغ كونغ (HKID)
+                  href: sit-defn-hong-kong-identity-card-number.md
+                - name: رأس تخويل Http
+                  href: sit-defn-http-authorization-header.md
+                - name: رقم ترخيص برامج التشغيل في المجر
+                  href: sit-defn-hungary-drivers-license-number.md
+                - name: رقم جواز سفر المجر
+                  href: sit-defn-hungary-passport-number.md
+                - name: رقم التعريف الشخصي في المجر
+                  href: sit-defn-hungary-personal-identification-number.md
+                - name: عناوين فعلية في هنغاريا
+                  href: sit-defn-hungary-physical-addresses.md
+                - name: رقم الضمان الاجتماعي في المجر (TAJ)
+                  href: sit-defn-hungary-social-security-number.md
+                - name: رقم التعريف الضريبي في المجر
+                  href: sit-defn-hungary-tax-identification-number.md
+                - name: رقم الضريبة للقيمة المضافة في المجر
+                  href: sit-defn-hungary-value-added-tax-number.md
+                - name: عناوين آيسلندا المادية
+                  href: sit-defn-iceland-physical-addresses.md
+                - name: الإعاقات المدرجة في تقييم الولايات المتحدة للإعاقة التابع للتأمين الاجتماعي
+                  href: sit-defn-impairments-us-disability-evaluation-under-social-security.md
+                - name: رقم رخصة القيادة في الهند
+                  href: sit-defn-india-drivers-license-number.md
+                - name: رقم GST في الهند
+                  href: sit-defn-india-gst-number.md
+                - name: رقم الحساب الدائم في الهند (PAN)
+                  href: sit-defn-india-permanent-account-number.md
+                - name: رقم التعريف الفريد (Aadhaar) في الهند
+                  href: sit-defn-india-unique-identification-number.md
+                - name: بطاقة هوية المقترعين في الهند
+                  href: sit-defn-india-voter-id-card.md
+                - name: رقم بطاقة هوية إندونيسيا (KTP)
+                  href: sit-defn-indonesia-identity-card-number.md
+                - name: رقم الحساب المصرفي الدولي (IBAN)
+                  href: sit-defn-international-banking-account-number.md
+                - name: التصنيف الدولي الأمراض (ICD-10-CM)
+                  href: sit-defn-international-classification-of-diseases-icd-10-cm.md
+                - name: التصنيف الدولي الأمراض (ICD-9-CM)
+                  href: sit-defn-international-classification-of-diseases-icd-9-cm.md
+                - name: عنوان IP
+                  href: sit-defn-ip-address.md
+                - name: عنوان IP v4
+                  href: sit-defn-ip-address-v4.md
+                - name: عنوان IP v6
+                  href: sit-defn-ip-address-v6.md
+                - name: رقم ترخيص برامج تشغيل أيرلندا
+                  href: sit-defn-ireland-drivers-license-number.md
+                - name: رقم جواز سفر أيرلندا
+                  href: sit-defn-ireland-passport-number.md
+                - name: رقم الخدمة العامة الشخصية (PPS) في أيرلندا
+                  href: sit-defn-ireland-personal-public-service-number.md
+                - name: عناوين فعلية في أيرلندا
+                  href: sit-defn-ireland-physical-addresses.md
+                - name: رقم الحساب البنكي في إسرائيل
+                  href: sit-defn-israel-bank-account-number.md
+                - name: رقم التعريف الوطني في إسرائيل
+                  href: sit-defn-israel-national-identification-number.md
+                - name: رقم رخصة القيادة في إيطاليا
+                  href: sit-defn-italy-drivers-license-number.md
+                - name: الرمز المالي في إيطاليا
+                  href: sit-defn-italy-fiscal-code.md
+                - name: رقم جواز سفر إيطاليا
+                  href: sit-defn-italy-passport-number.md
+                - name: عناوين فعلية في إيطاليا
+                  href: sit-defn-italy-physical-addresses.md
+                - name: رقم ضريبة القيمة المضافة في إيطاليا
+                  href: sit-defn-italy-value-added-tax-number.md
+                - name: رقم الحساب البنكي الياباني
+                  href: sit-defn-japan-bank-account-number.md
+                - name: رقم ترخيص برامج التشغيل اليابانية
+                  href: sit-defn-japan-drivers-license-number.md
+                - name: رقم هاتفي في اليابان - الشركة
+                  href: sit-defn-japan-my-number-corporate.md
+                - name: رقم هاتفي في اليابان - شخصي
+                  href: sit-defn-japan-my-number-personal.md
+                - name: رقم جواز سفر ياباني
+                  href: sit-defn-japan-passport-number.md
+                - name: رقم بطاقة الإقامة في اليابان
+                  href: sit-defn-japan-residence-card-number.md
+                - name: رقم التسجيل المقيم في اليابان
+                  href: sit-defn-japan-resident-registration-number.md
+                - name: رقم التأمين الاجتماعي الياباني (SIN)
+                  href: sit-defn-japan-social-insurance-number.md
+                - name: مصطلحات الاختبار المعملي
+                  href: sit-defn-lab-test-terms.md
+                - name: رقم ترخيص برامج تشغيل لاتفيا
+                  href: sit-defn-latvia-drivers-license-number.md
+                - name: رقم جواز سفر لاتفيا
+                  href: sit-defn-latvia-passport-number.md
+                - name: رمز لاتفيا الشخصي
+                  href: sit-defn-latvia-personal-code.md
+                - name: عناوين فعلية في لاتفيا
+                  href: sit-defn-latvia-physical-addresses.md
+                - name: عناوين ليشتاندا المادية
+                  href: sit-defn-liechtenstein-physical-addresses.md
+                - name: أنماط الحياة التي تتعلق بالظروف الطبية
+                  href: sit-defn-lifestyles-relate-to-medical-conditions.md
+                - name: رقم ترخيص برامج تشغيل ليتوانيا
+                  href: sit-defn-lithuania-drivers-license-number.md
+                - name: رقم جواز سفر ليتوانيا
+                  href: sit-defn-lithuania-passport-number.md
+                - name: الرقم الشخصي في ليتوانيا
+                  href: sit-defn-lithuania-personal-code.md
+                - name: عناوين فعلية في ليتوانيا
+                  href: sit-defn-lithuania-physical-addresses.md
+                - name: رقم رخصة القيادة في لوكسمبورغ
+                  href: sit-defn-luxemburg-drivers-license-number.md
+                - name: رقم التعريف الوطني في لوسيمبورغ (الأشخاص الطبيعيون)
+                  href: sit-defn-luxemburg-national-identification-number-natural-persons.md
+                - name: رقم التعريف الوطني في لوسمبيرغ (أشخاص غير طبيعيين)
+                  href: sit-defn-luxemburg-national-identification-number-non-natural-persons.md
+                - name: رقم جواز السفر اللوكسمبورغي
+                  href: sit-defn-luxemburg-passport-number.md
+                - name: عناوين فعلية في لوكسمبورغ
+                  href: sit-defn-luxemburg-physical-addresses.md
+                - name: رقم بطاقة تعريف ماليزيا
+                  href: sit-defn-malaysia-identification-card-number.md
+                - name: رقم ترخيص برامج التشغيل في مالطة
+                  href: sit-defn-malta-drivers-license-number.md
+                - name: رقم بطاقة هوية الهويات في مالطا
+                  href: sit-defn-malta-identity-card-number.md
+                - name: رقم جواز سفر الحيوانات
+                  href: sit-defn-malta-passport-number.md
+                - name: عناوين فعلية في مالطا
+                  href: sit-defn-malta-physical-addresses.md
+                - name: رقم التعريف الضريبي في دائرة الضرائب
+                  href: sit-defn-malta-tax-identification-number.md
+                - name: التخصصات الطبية
+                  href: sit-defn-medical-specialities.md
+                - name: بطاقة معرف Medicare للمستفيد (MBI)
+                  href: sit-defn-medicare-beneficiary-Identifier-card.md
+                - name: رمز سجل المحتوى الفريد في المكسيك (CURP)
+                  href: sit-defn-mexico-unique-population-registry-code.md
+                - name: مفتاح خرائط Microsoft Bing
+                  href: sit-defn-microsoft-bing-maps-key.md
+                - name: رقم خدمة المواطنين الهولنديين (BSN)
+                  href: sit-defn-netherlands-citizens-service-number.md
+                - name: رقم ترخيص برامج التشغيل في هولندا
+                  href: sit-defn-netherlands-drivers-license-number.md
+                - name: رقم جواز سفر هولندا
+                  href: sit-defn-netherlands-passport-number.md
+                - name: عناوين فعلية في هولندا
+                  href: sit-defn-netherlands-physical-addresses.md
+                - name: رقم التعريف الضريبي في هولندا
+                  href: sit-defn-netherlands-tax-identification-number.md
+                - name: رقم الضريبة للقيمة المضافة في هولندا
+                  href: sit-defn-netherlands-value-added-tax-number.md
+                - name: رقم الحساب المصرفي النيوزيلندي
+                  href: sit-defn-new-zealand-bank-account-number.md
+                - name: رقم ترخيص برامج تشغيل نيوزيلندا
+                  href: sit-defn-new-zealand-drivers-license-number.md
+                - name: رقم إيرادات نيوزيلندا الداخلية
+                  href: sit-defn-new-zealand-inland-revenue-number.md
+                - name: وزارة الصحة في نيوزيلندا
+                  href: sit-defn-new-zealand-ministry-of-health-number.md
+                - name: العناوين المادية في نيوزيلندا
+                  href: sit-defn-new-zealand-physical-addresses.md
+                - name: رقم الرعاية الاجتماعية في نيوزيلندا
+                  href: sit-defn-new-zealand-social-welfare-number.md
+                - name: رقم تعريف النرويج
+                  href: sit-defn-norway-identification-number.md
+                - name: العناوين المادية في النرويج
+                  href: sit-defn-norway-physical-addresses.md
+                - name: رقم تعريف موحد متعدد الأغراض في الفليبين
+                  href: sit-defn-philippines-unified-multi-purpose-identification-number.md
+                - name: رقم ترخيص برامج التشغيل في بولندا
+                  href: sit-defn-poland-drivers-license-number.md
+                - name: بطاقة هوية في بولندا
+                  href: sit-defn-poland-identity-card.md
+                - name: المعرف الوطني في بولندا (PESEL)
+                  href: sit-defn-poland-national-id.md
+                - name: رقم جواز سفر بولندا
+                  href: sit-defn-poland-passport-number.md
+                - name: عناوين فعلية في بولندا
+                  href: sit-defn-poland-physical-addresses.md
+                - name: رقم REGON في بولندا
+                  href: sit-defn-poland-regon-number.md
+                - name: رقم التعريف الضريبي في بولندا
+                  href: sit-defn-poland-tax-identification-number.md
+                - name: رقم بطاقة المواطنين البرتغاليين
+                  href: sit-defn-portugal-citizen-card-number.md
+                - name: رقم ترخيص برامج تشغيل البرتغال
+                  href: sit-defn-portugal-drivers-license-number.md
+                - name: رقم جواز سفر البرتغال
+                  href: sit-defn-portugal-passport-number.md
+                - name: عناوين فعلية في البرتغال
+                  href: sit-defn-portugal-physical-addresses.md
+                - name: رقم التعريف الضريبي في البرتغال
+                  href: sit-defn-portugal-tax-identification-number.md
+                - name: رقم ترخيص برامج التشغيل في رومانيا
+                  href: sit-defn-romania-drivers-license-number.md
+                - name: رقم جواز سفر رومانيا
+                  href: sit-defn-romania-passport-number.md
+                - name: تعليمة برمجية رقمية شخصية في رومانيا (CNP)
+                  href: sit-defn-romania-personal-numeric-code.md
+                - name: عناوين فعلية في رومانيا
+                  href: sit-defn-romania-physical-addresses.md
+                - name: رقم جواز سفر روسيا محلياً
+                  href: sit-defn-russia-passport-number-domestic.md
+                - name: رقم جواز سفر روسيا الدولي
+                  href: sit-defn-russia-passport-number-international.md
+                - name: بطاقة الهوية الوطنية في المملكة العربية السعودية
+                  href: sit-defn-saudi-arabia-national-id.md
+                - name: رقم بطاقة هوية التسجيل الوطنية في سنغافورة (NRIC)
+                  href: sit-defn-singapore-national-registration-identity-card-number.md
+                - name: الرمز المميز للوصول إلى فترة السماح
+                  href: sit-defn-slack-access-token.md
+                - name: رقم ترخيص برامج التشغيل في سلوفاكيا
+                  href: sit-defn-slovakia-drivers-license-number.md
+                - name: رقم جواز سفر سلوفاكيا
+                  href: sit-defn-slovakia-passport-number.md
+                - name: الرقم الشخصي سلوفاكيا
+                  href: sit-defn-slovakia-personal-number.md
+                - name: عناوين فعلية في سلوفاكيا
+                  href: sit-defn-slovakia-physical-addresses.md
+                - name: رقم ترخيص برامج التشغيل السلوفينية
+                  href: sit-defn-slovenia-drivers-license-number.md
+                - name: رقم جواز السفر السلوفيني
+                  href: sit-defn-slovenia-passport-number.md
+                - name: عناوين فعلية في سلوفينيا
+                  href: sit-defn-slovenia-physical-addresses.md
+                - name: رقم التعريف الضريبي السلوفيني
+                  href: sit-defn-slovenia-tax-identification-number.md
+                - name: رقم المواطن الرئيسي الفريد في سلوفينيا
+                  href: sit-defn-slovenia-unique-master-citizen-number.md
+                - name: رقم تعريف جنوب أفريقيا
+                  href: sit-defn-south-africa-identification-number.md
+                - name: رقم التسجيل المقيم في كوريا الجنوبية
+                  href: sit-defn-south-korea-resident-registration-number.md
+                - name: بطاقة الهوية الوطنية (DNI) الإسبانية
+                  href: sit-defn-spain-dni.md
+                - name: رقم ترخيص برامج التشغيل الإسبانية
+                  href: sit-defn-spain-drivers-license-number.md
+                - name: رقم جواز سفر إسبانيا
+                  href: sit-defn-spain-passport-number.md
+                - name: عناوين فعلية في إسبانيا
+                  href: sit-defn-spain-physical-addresses.md
+                - name: رقم الضمان الاجتماعي الإسباني (SSN)
+                  href: sit-defn-spain-social-security-number.md
+                - name: رقم التعريف الضريبي الإسباني
+                  href: sit-defn-spain-tax-identification-number.md
+                - name: سلسلة اتصال SQL Server
+                  href: sit-defn-sql-server-connection-string.md
+                - name: الإجراءات الجراحية
+                  href: sit-defn-surgical-procedures.md
+                - name: رقم ترخيص برامج تشغيل السويد
+                  href: sit-defn-sweden-drivers-license-number.md
+                - name: المعرف الوطني للسويد
+                  href: sit-defn-sweden-national-id.md
+                - name: رقم جواز سفر السويد
+                  href: sit-defn-sweden-passport-number.md
+                - name: عناوين فعلية في السويد
+                  href: sit-defn-sweden-physical-addresses.md
+                - name: رقم التعريف الضريبي في السويد
+                  href: sit-defn-sweden-tax-identification-number.md
+                - name: رمز SWIFT
+                  href: sit-defn-swift-code.md
+                - name: العناوين المادية في سويسرا
+                  href: sit-defn-switzerland-physical-addresses.md
+                - name: رقم SSN AHV في سويسرا
+                  href: sit-defn-switzerland-ssn-ahv-number.md
+                - name: رقم التعريف الوطني التايواني
+                  href: sit-defn-taiwan-national-identification-number.md
+                - name: رقم جواز سفر تايوان
+                  href: sit-defn-taiwan-passport-number.md
+                - name: رقم الشهادة المقيمة في تايوان (ARC/TARC)
+                  href: sit-defn-taiwan-resident-certificate-number.md
+                - name: رمز تعريف السكان التايلاندي
+                  href: sit-defn-thai-population-identification-code.md
+                - name: رقم التعريف الوطني لتركيا
+                  href: sit-defn-turkey-national-identification-number.md
+                - name: العناوين المادية لتركيا
+                  href: sit-defn-turkey-physical-addresses.md
+                - name: أنواع الأدوية
+                  href: sit-defn-types-of-medication.md
+                - name: المملكة المتحدة رقم ترخيص برامج التشغيل
+                  href: sit-defn-uk-drivers-license-number.md
+                - name: المملكة المتحدة رقم لفة
+                  href: sit-defn-uk-electoral-roll-number.md
+                - name: المملكة المتحدة رقم خدمة الصحة الوطنية
+                  href: sit-defn-uk-national-health-service-number.md
+                - name: المملكة المتحدة رقم التأمين الوطني (NINO)
+                  href: sit-defn-uk-national-insurance-number.md
+                - name: المملكة المتحدة العناوين الفعلية
+                  href: sit-defn-uk-physical-addresses.md
+                - name: المملكة المتحدة رقم مرجع فريد لـ "مرجع ما بعد الإسناد"
+                  href: sit-defn-uk-unique-taxpayer-reference-number.md
+                - name: رقم الحساب البنكي الأمريكي
+                  href: sit-defn-us-bank-account-number.md
+                - name: رقم ترخيص برامج التشغيل الأمريكية
+                  href: sit-defn-us-drivers-license-number.md
+                - name: رقم التعريف الفردي للولايات المتحدة (ITIN)
+                  href: sit-defn-us-individual-taxpayer-identification-number.md
+                - name: عناوين فعلية في الولايات المتحدة
+                  href: sit-defn-us-physical-addresses.md
+                - name: رقم الضمان الاجتماعي (SSN) في الولايات المتحدة
+                  href: sit-defn-us-social-security-number.md
+                - name: الولايات المتحدة/المملكة المتحدة رقم جواز السفر
+                  href: sit-defn-us-uk-passport-number.md
+                - name: جواز سفر محلي في أوكرانيا
+                  href: sit-defn-ukraine-passport-domestic.md
+                - name: جواز سفر نيازكي دولي
+                  href: sit-defn-ukraine-passport-international.md
+                - name: بيانات اعتماد تسجيل دخول المستخدم
+                  href: sit-defn-user-login-credentials.md
+                - name: مفتاح خاص لشهادة X.509
+                  href: sit-defn-x-509-certificate-private-key.md
             - name: دالات نوع المعلومات الحساسة
               href: sit-functions.md
             - name: مرجع عوامل تصفية نوع المعلومات الحساسة المخصصة
