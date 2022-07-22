@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-defender-office365
+- m365solution-mdo-migration
 ms.custom: migrationguides
 description: اتخذ الخطوات لبدء الترحيل من خدمة حماية أو جهاز تابع لجهة خارجية إلى الحماية Microsoft Defender لـ Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 26eb779e3c1123d9c8586aebcaddea671c0c9c09
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9fc63db0c51c4e8478b426cc37002fbfcb23f6d1
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943878"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969464"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>الترحيل إلى Microsoft Defender لـ Office 365 - المرحلة 2: الإعداد
 

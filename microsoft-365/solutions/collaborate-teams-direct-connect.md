@@ -17,16 +17,16 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: تعرف على كيفية تمكين القنوات المشتركة في Microsoft Teams للتعاون مع أشخاص من خارج مؤسستك.
-ms.openlocfilehash: ae076b5bfb653fd1a90d9260d699d454246200a0
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 0e8d4ab09509e801fc54a4bb435dc78d2bdee516
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66857543"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969781"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>التعاون مع المشاركين الخارجيين في قناة مشتركة
 
-إذا كنت تريد تمكين المستخدمين من التعاون مع أشخاص من خارج مؤسستك في [قنوات مشتركة](/MicrosoftTeams/shared-channels)، فستحتاج إلى تكوين اتصال B2B مباشر لكل مؤسسة تريد التعاون معها. (بدلا من ذلك، يمكنك [تمكين القنوات المشتركة مع كافة المؤسسات الخارجية](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
+إذا كنت تريد تمكين المستخدمين من التعاون مع أشخاص في مؤسسات Microsoft 365 الأخرى في [القنوات المشتركة](/MicrosoftTeams/shared-channels)، فأنت بحاجة إلى تكوين الاتصال المباشر B2B لكل مؤسسة تريد التعاون معها. (بدلا من ذلك، يمكنك [تمكين القنوات المشتركة مع كافة المؤسسات الخارجية](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
 
 عند تمكين القنوات المشتركة في Teams مع مؤسسة أخرى:
 
@@ -81,7 +81,7 @@ Azure AD يتم تعطيل الاتصال المباشر B2B بشكل افترا
 أضف كل مؤسسة تريد المشاركة فيها في القنوات المشتركة.
 
 لإضافة مؤسسة
-1. سجل الدخول إلى [Azure Active Directory](https://aad.portal.azure.com) باستخدام حساب مسؤول глобальный администратор أو مسؤول الأمان.
+1. سجل الدخول إلى [Azure Active Directory](https://aad.portal.azure.com) باستخدام حساب مسؤول مسؤول عمومي أو الأمان.
 1. حدد **الهويات الخارجية**، ثم حدد **إعدادات الوصول عبر المستأجرين**.
 1. حدد **إعدادات المؤسسة**.
 1. حدد **"إضافة مؤسسة**".

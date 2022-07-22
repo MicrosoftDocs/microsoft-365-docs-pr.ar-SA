@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 33b539018f479c1b023a656ab056ca892d27e526
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9c3dc16904672d32ab8399e693c2066b8e04c187
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822170"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969803"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>إلحاق الأجهزة بدون الوصول إلى الإنترنت إلى Microsoft Defender لنقطة النهاية
 
@@ -55,12 +55,25 @@ ms.locfileid: "66822170"
 > - لا يمكن استخدام خادم بوابة OMS كوكيل لأجهزة Windows أو Windows Server غير المتصلة عند تكوينه عبر سجل "TelemetryProxyServer" أو عنصر نهج المجموعة.
 > - بالنسبة إلى Windows أو Windows Server - بينما يمكنك استخدام TelemetryProxyServer، فإنه يجب أن يشير إلى جهاز وكيل قياسي أو جهاز.
 
-- إعداد Azure Log Analytics (المعروف سابقا باسم بوابة OMS) للعمل كوكيل أو مركز:
+- إعداد Azure Log Analytics (المعروفة سابقا باسم بوابة OMS) للعمل كوكيل أو مركز:
   - [عامل Azure Log Analytics](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
   - [تثبيت نقطة عامل مراقبة Microsoft (MMA) وتكوينها](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) إلى مفتاح مساحة عمل Defender لنقطة النهاية & معرف
 
 [الإصدارات السابقة من Windows](onboard-downlevel.md)
 
-### <a name="microsoft-defender-for-cloud"></a>Microsoft Defender للسحابة
+### <a name="azure-virtual-machines"></a>أجهزة Azure الظاهرية
 
-- راجع قسم المتطلبات الأساسية في [حماية نقاط النهاية باستخدام حل EDR المتكامل ل Defender for Cloud: Microsoft Defender لنقطة النهاية](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#prerequisites)
+- بالنسبة للأجهزة التي تعمل بالحل السابق المستند إلى MMA، قم بإعداد بوابة Azure Log Analytics (المعروفة سابقا باسم بوابة OMS) للعمل كوكيل أو مركز:
+    - [Azure Log Analytics Gateway](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+    - [تثبيت نقطة عامل مراقبة Microsoft (MMA) وتكوينها](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) إلى مفتاح مساحة عمل Defender لنقطة النهاية & معرف
+- أجهزة Azure الظاهرية غير المتصلة في نفس شبكة بوابة OMS
+    - تكوين Azure Log Analytics IP كوكيل
+    - معرف & مفتاح مساحة عمل Azure Log Analytics
+- Microsoft Defender للسحابة
+    - [مساحة عمل Security Policy \> Log Analytics](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - [الكشف عن \> التهديدات السماح ل Defender لنقطة النهاية بالوصول إلى بياناتي](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+
+    لمزيد من المعلومات، راجع [استخدام نهج الأمان](/azure/security-center/tutorial-security-policy).
+
+> [!NOTE]
+> لا يمكن إلحاق أي عميل ليس لديه حق الوصول إلى الإنترنت بنقطة نهاية Microsoft Defender. يجب أن يكون للعميل حق الوصول إلى عناوين URL المطلوبة مباشرة، أو يجب أن يكون لديه حق الوصول عبر وكيل.

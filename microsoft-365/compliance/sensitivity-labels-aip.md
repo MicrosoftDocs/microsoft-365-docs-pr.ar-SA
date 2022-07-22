@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: عند استخدام عميل التسمية الموحد ل Azure حماية البيانات (AIP)، فهم مزايا استخدام التسمية المضمنة لتطبيقات Office بدلا من الوظيفة الإضافية AIP.
-ms.openlocfilehash: 79d4ed4f81c3768ec85c17699257a18678ef82d1
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 01f75905dc5fea76613393828d42f23ea1d3ff79
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756661"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970155"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>لماذا اختر تسمية مضمنة عبر الوظيفة الإضافية AIP لتطبيقات Office
 
@@ -110,7 +110,7 @@ ms.locfileid: "66756661"
 
 أيا كانت الطريقة التي تختارها، فستدخل التغييرات حيز التنفيذ عند إعادة تشغيل تطبيقات Office.
 
-إذا لم يظهر الزر **"الحساسية** " على شريط Office بعد إجراء هذه التغييرات، فتحقق مما إذا كان قد تم [إيقاف تشغيل](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows) وصف الحساسية.  على الرغم من أن هذا ليس التكوين الافتراضي، قد يكون المسؤول قد عين هذا التكوين بشكل صريح باستخدام نهج المجموعة أو عن طريق تحرير السجل مباشرة.
+إذا لم يظهر الزر **"الحساسية** " على شريط Office بعد إجراء هذه التغييرات، فتحقق مما إذا كان قد تم [إيقاف تشغيل](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows) تسمية الحساسية. على الرغم من أن هذا ليس التكوين الافتراضي، قد يكون المسؤول قد عين هذا التكوين بشكل صريح باستخدام نهج المجموعة أو عن طريق تحرير السجل مباشرة.
 
 > [!NOTE]
 > تتطلب التسميات المضمنة إصدار اشتراك من تطبيقات Office. إذا كان لديك إصدارات مستقلة من Office، تسمى أحيانا "Office الدائم"، نوصيك بالترقية إلى Microsoft 365 Apps للمؤسسات للاستفادة من [أحدث إمكانيات التسمية](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
@@ -150,7 +150,7 @@ ms.locfileid: "66756661"
 | **الفئة: التشفير** | |
 |أذونات معرفة مسؤول | ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](encryption-sensitivity-labels.md#assign-permissions-now) |
 |الأذونات المعرفة من قبل المستخدم <br> - عدم إعادة التوجيه ل Outlook <br> - الأذونات المخصصة للمستخدم والمجموعة ل Word وExcel وPowerPoint| ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](encryption-sensitivity-labels.md#let-users-assign-permissions)|
-|الأذونات المعرفة من قبل المستخدم <br> - أذونات مخصصة على مستوى المؤسسة عن طريق تحديد مجالات ل Word وExcel وPowerPoint | في التخطيط أو التطوير |
+|الأذونات المعرفة من قبل المستخدم <br> - أذونات مخصصة على مستوى المؤسسة عن طريق تحديد مجالات ل Word وExcel وPowerPoint | [في المعاينة](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) |
 |التأليف المشترك والحفظ التلقائي | ![دعم.](../media/yes-icon.png) <br>[معرفة المزيد](sensitivity-labels-coauthoring.md) |
 |تشفير المفتاح المزدوج | في التخطيط أو التطوير |
 |إبطال المستند للمستخدمين | قيد المراجعة |

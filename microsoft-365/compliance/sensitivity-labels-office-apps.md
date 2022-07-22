@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: معلومات لمسؤولي تكنولوجيا المعلومات لإدارة تسميات الحساسية في تطبيقات Office لسطح المكتب والأجهزة المحمولة والويب.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f5f404df8d8cbf5d4ac755c17c2a6c07717d8360
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 3161a26a8b22304e9343e9e16a1dd1e313d47df9
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66797962"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970089"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>إدارة تسميات الحساسية في تطبيقات Office
 
@@ -70,13 +70,14 @@ Office لنظامي التشغيل iOS و Office for Android: يتم تضمين 
 |[وضع علامة على المحتوى](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[العلامات الديناميكية مع المتغيرات](#dynamic-markings-with-variables)                                              | خيار التحديث الحالي: 2010+ <br /><br> قناة المؤسسة الشهرية: 2010+ <br /><br> Semi-Annual قناة المؤسسة: 2102+ | 16.42+     | 2.42+ | 16.0.13328+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[تعيين الأذونات الآن](encryption-sensitivity-labels.md#assign-permissions-now)                                 | خيار التحديث الحالي: 1910+ <br /><br> قناة المؤسسة الشهرية: 1910+ <br /><br> Semi-Annual قناة المؤسسة: 2002+ | 16.21+     | 2.21+ | 16.0.11231+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[السماح للمستخدمين بتعيين الأذونات: <br /> - مطالبة المستخدمين](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |خيار التحديث الحالي: 2004+ <br /><br> قناة المؤسسة الشهرية: 2004+ <br /><br> Semi-Annual قناة المؤسسة: 2008+ | 16.35+   | قيد المراجعة   | قيد المراجعة         | قيد المراجعة                                                        |
+|[السماح للمستخدمين بتعيين الأذونات: <br /> - مطالبة المستخدمين بالأذونات المخصصة (المستخدمين والمجموعات)](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |خيار التحديث الحالي: 2004+ <br /><br> قناة المؤسسة الشهرية: 2004+ <br /><br> Semi-Annual قناة المؤسسة: 2008+ | 16.35+   | قيد المراجعة   | قيد المراجعة         | قيد المراجعة                                                        |
+|[السماح للمستخدمين بتعيين الأذونات: <br /> - مطالبة المستخدمين بالأذونات المخصصة (المستخدمين والمجموعات والمؤسسات)](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |معاينة: النشر إلى [خيار التحديث بيتا](https://office.com/insider)  | قيد المراجعة   | قيد المراجعة   | قيد المراجعة         | قيد المراجعة                                                        |
 |[تدقيق نشاط المستخدم المرتبط بالتسمية](#auditing-labeling-activities)                      | خيار التحديث الحالي: 2011+ <br /><br> قناة المؤسسة الشهرية: 2011+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.43+ | 2.46+ | 16.0.13628+ | نعم |
 |[مطالبة المستخدمين بتطبيق تسمية على بريدهم الإلكتروني ومستنداتهم](#require-users-to-apply-a-label-to-their-email-and-documents)   | خيار التحديث الحالي: 2101+ <br /><br> قناة المؤسسة الشهرية: 2101+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.45+         | 2.47+ | 16.0.13628+ | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /> - استخدام أنواع المعلومات الحساسة                    | خيار التحديث الحالي: 2009+ <br /><br> قناة المؤسسة الشهرية: 2009+ <br /><br> Semi-Annual قناة المؤسسة: 2102+ | 16.44+ | قيد المراجعة | قيد المراجعة | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /> - استخدام المصنفات القابلة للتدريب                    | خيار التحديث الحالي: 2105+ <br /><br> قناة المؤسسة الشهرية: 2105+ <br /><br> Semi-Annual قناة المؤسسة: 2108+ | 16.49+ | قيد المراجعة | قيد المراجعة | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[دعم التأليف المشترك والحفظ التلقائي](sensitivity-labels-coauthoring.md) للمستندات المسماة والمشتفرة | خيار التحديث الحالي: 2107+ <br /><br> قناة المؤسسة الشهرية: 2107+ <br /><br> Semi-Annual قناة المؤسسة: 2202+ |  16.51+ | معاينة: 2.58+ عند [الاشتراك](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | معاينة: 16.0.14931+ عند [الاشتراك](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) | [نعم - الاشتراك](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[دعم PDF](#pdf-support)| معاينة: النشر إلى [خيار التحديث بيتا](https://office.com/insider) |  قيد المراجعة | قيد المراجعة | قيد المراجعة | قيد المراجعة |
+|[دعم PDF](#pdf-support)| معاينة: [خيار التحديث بيتا](https://office.com/insider) |  قيد المراجعة | قيد المراجعة | قيد المراجعة | قيد المراجعة |
 
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>قدرات وصف الحساسية في Outlook

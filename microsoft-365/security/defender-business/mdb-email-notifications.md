@@ -12,13 +12,15 @@ ms.technology: mdb
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
-ms.openlocfilehash: 62f21a13578850b1d66f7ff26b0b360adecb7875
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.collection:
+- M365-security-compliance
+- m365solution-mdb-setup
+ms.openlocfilehash: 7b74a58601d5d6463d81d244a7f3cb2119486d15
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66770910"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969343"
 ---
 # <a name="set-up-email-notifications"></a>إعداد إعلامات البريد الإلكتروني
 

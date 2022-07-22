@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: تكوين تسميات الحساسية للتشفير الذي يحمي بياناتك عن طريق تقييد الوصول والاستخدام.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef00ca10ca932322e51d71449e42f45842ce4c97
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: ab08f733be374710674bfae65f4a0b56e952a199
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663758"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970200"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>تقييد الوصول إلى المحتوى باستخدام تسميات الحساسية لتطبيق التشفير
 
@@ -288,7 +288,7 @@ ms.locfileid: "66663758"
 
     هذا الخيار مدعوم من قبل عميل التسمية الموحد حماية البيانات Azure وبعض التطبيقات التي تستخدم التسمية المضمنة. بالنسبة للتطبيقات التي لا تدعم هذه الإمكانية، لن تكون التسمية مرئية للمستخدمين، أو أن التسمية مرئية للتناسق ولكن لا يمكن تطبيقها مع رسالة شرح للمستخدمين.
     
-    للتحقق من التطبيقات التي تستخدم التسمية المضمنة التي تدعم هذا الخيار، استخدم [جدول القدرات ل Word وExcel وPowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) والصف **الذي يسمح للمستخدمين بتعيين الأذونات: - مطالبة المستخدمين**.
+    للتحقق من التطبيقات التي تستخدم التسمية المضمنة التي تدعم هذا الخيار، استخدم [جدول القدرات ل Word وExcel وPowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) والصفوف **للسماح للمستخدمين بتعيين الأذونات**.
 
 عند دعم الخيارات، استخدم الجدول التالي لتحديد متى يرى المستخدمون وصف الحساسية:
 
@@ -343,6 +343,16 @@ ms.locfileid: "66663758"
 
 > [!TIP]
 > إذا كان المستخدمون على دراية بتكوين الأذونات المخصصة باستخدام عميل التسمية الموحد في Azure حماية البيانات قبل [تمكين التأليف المشترك](sensitivity-labels-coauthoring.md)، فقد تجد أنه من المفيد مراجعة تعيين مستويات الأذونات إلى حقوق الاستخدام الفردية: [الحقوق المضمنة في مستويات الأذونات](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels).
+
+#### <a name="support-for-organization-wide-custom-permissions"></a>دعم الأذونات المخصصة على مستوى المؤسسة
+
+الآن طرح في المعاينة للتسمية المضمنة في Windows، يمكن للمستخدمين تحديد اسم مجال سيتم تطبيقه على جميع المستخدمين في مؤسسة تمتلك المجال وهو في Azure Active Directory. توفر هذه الإمكانية [التماثل مع عميل التسمية الموحد حماية البيانات Azure](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps):
+
+![مربع الحوار المحدث لدعم الأذونات المخصصة على مستوى المؤسسة.](../media/org-wide-custom-permissions-dialog.png)
+
+على سبيل المثال، يقوم مستخدم بكتابة "@contoso.com" (أو "contoso.com") ويمنح حق الوصول للقراءة. نظرا لأن شركة Contoso Corporation تمتلك المجال contoso.com، سيتم منح جميع المستخدمين في هذا المجال وجميع المجالات الأخرى التي تمتلكها المؤسسة في Azure Active Directory حق الوصول للقراءة.
+
+من المهم إعلام المستخدمين بأن الوصول لا يقتصر على المستخدمين فقط في المجال المحدد. على سبيل المثال، لن تقيد "@sales.contoso.com" الوصول إلى المستخدمين في مجال المبيعات الفرعي فقط، ولكنها تمنح أيضا حق الوصول إلى المستخدمين في مجال marketing.contoso.com، وحتى المستخدمين الذين لديهم مساحة اسم غير مرتبطة في نفس مستأجر Azure Active Directory.
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>أمثلة على التكوينات لإعدادات التشفير
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f49132b67f51872cf9b5f07e6cca4c659d955b80
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 3ea2822adabcd0a747d34fbdb8c6d8d2c944afdf
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943475"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969519"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>أحدث الميزات في Microsoft Defender لنقطة النهاية على Mac
 
@@ -48,6 +48,7 @@ ms.locfileid: "66943475"
 
 **أحدث الميزات**
 
+- معالجة مشكلة تعذر إكمال الطباعة بنجاح بسبب ملحق الشبكة
 - إضافة خيار [لتكوين حساب تجزئة الملف](mac-preferences.md#configure-file-hash-computation-feature)
 - من هذا الإصدار فصاعدا، سيكون للمنتج محرك مكافحة البرامج الضارة الجديد بشكل افتراضي
 - تحسينات الأداء لعمليات نسخ الملفات

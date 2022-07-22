@@ -44,8 +44,6 @@
           href: ./defender-business/index.yml
     - name: Microsoft 365 Enterprise
       href: ../enterprise/index.yml
-    - name: Microsoft 365 للأعمال
-      href: ./index.yml
     - name: Microsoft Purview
       href: ../compliance/index.yml
     - name: إدارة المحتوى النشط في مستندات Office

@@ -1,7 +1,7 @@
 ---
-title: استكشاف مشاكل الأداء وإصلاحها Microsoft Defender لنقطة النهاية على macOS
-description: استكشاف مشاكل الأداء وإصلاحها في Microsoft Defender لنقطة النهاية macOS.
-keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، أداء
+title: استكشاف مشكلات الأداء وإصلاحها Microsoft Defender لنقطة النهاية على macOS
+description: استكشاف مشكلات الأداء وإصلاحها في Microsoft Defender لنقطة النهاية على macOS.
+keywords: microsoft، defender، Microsoft Defender لنقطة النهاية، mac، الأداء
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e83400e444d4c8c733bea5552a31954bb019e358
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 7c60a61ca1a0a1179abd27c0f6d59970a0c09866
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474036"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969520"
 ---
-# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>استكشاف مشاكل الأداء وإصلاحها Microsoft Defender لنقطة النهاية على macOS
+# <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>استكشاف مشكلات الأداء وإصلاحها Microsoft Defender لنقطة النهاية على macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,46 +30,46 @@ ms.locfileid: "64474036"
 **ينطبق على:**
 
 - [Microsoft Defender لنقطة النهاية على macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-يوفر هذا الموضوع بعض الخطوات العامة التي يمكن استخدامها لتضييق نطاق مشاكل الأداء المتعلقة Microsoft Defender لنقطة النهاية على macOS.
+يوفر هذا الموضوع بعض الخطوات العامة التي يمكن استخدامها لتضييق مشكلات الأداء المتعلقة Microsoft Defender لنقطة النهاية على macOS.
 
-الحماية في الوقت الحقيقي (RTP) هي ميزة من ميزات Microsoft Defender لنقطة النهاية macOS التي تراقب جهازك وتحميه بشكل مستمر من التهديدات. وهي تتكون من مراقبة الملفات وعملية وغيرها من الأسلوبات الاورستاتية.
+الحماية في الوقت الحقيقي (RTP) هي ميزة من ميزات Microsoft Defender لنقطة النهاية على macOS الذي يراقب ويحمي جهازك باستمرار من التهديدات. وهو يتكون من مراقبة الملفات والعمليات وغيرها من الأساليب الاستباقية.
 
-استنادا إلى التطبيقات التي تقوم بتشغيلها وخصائص جهازك، قد تواجه أداء دون المستوى الأمثل عند تشغيل Microsoft Defender لنقطة النهاية macOS. بشكل خاص، يمكن للتطبيقات أو عمليات النظام التي يمكنها الوصول إلى العديد من الموارد خلال فترة زمنية قصيرة أن تؤدي إلى مشاكل الأداء في Microsoft Defender لنقطة النهاية على macOS.
+اعتمادا على التطبيقات التي تقوم بتشغيلها وخصائص جهازك، قد تواجه أداء دون المستوى الأمثل عند تشغيل Microsoft Defender لنقطة النهاية على macOS. على وجه الخصوص، يمكن للتطبيقات أو عمليات النظام التي تصل إلى العديد من الموارد على مدى فترة زمنية قصيرة أن تؤدي إلى مشكلات في الأداء في Microsoft Defender لنقطة النهاية على macOS.
 
-يمكن استخدام الخطوات التالية في استكشاف الأخطاء وإصلاحها وتخفيف هذه المشاكل:
+يمكن استخدام الخطوات التالية لاستكشاف الأخطاء وإصلاحها والتخفيف من حدة هذه المشكلات:
 
-1. قم بتعطيل الحماية في الوقت الحقيقي باستخدام أحد الأساليب التالية ولاحظ ما إذا كان الأداء يتحسن أم لا. يساعد هذا النهج على تضييق ما إذا Microsoft Defender لنقطة النهاية على macOS يساهم في مشاكل الأداء.
+1. تعطيل الحماية في الوقت الحقيقي باستخدام أحد الأساليب التالية ومراقبة ما إذا كان الأداء يتحسن. يساعد هذا النهج على تضييق نطاق ما إذا كان Microsoft Defender لنقطة النهاية على macOS يساهم في مشكلات الأداء.
 
       إذا لم تكن مؤسستك تدير جهازك، يمكن تعطيل الحماية في الوقت الحقيقي باستخدام أحد الخيارات التالية:
 
-    - من واجهة المستخدم. افتح Microsoft Defender لنقطة النهاية على macOS وانتقل إلى **إدارة الإعدادات**.
+    - من واجهة المستخدم. افتح Microsoft Defender لنقطة النهاية على macOS وانتقل إلى **"إدارة الإعدادات**".
 
       :::image type="content" source="images/mdatp-36-rtp.png" alt-text=" صفحة إدارة الحماية في الوقت الحقيقي" lightbox="images/mdatp-36-rtp.png":::
       
 
-    - من المحطة الطرفية. لأغراض الأمان، تتطلب هذه العملية رفعا.
+    - من المحطة الطرفية. لأغراض أمنية، تتطلب هذه العملية رفع المستوى.
 
       ```bash
       mdatp config real-time-protection --value disabled
       ```
 
-      إذا كانت مؤسستك تدير جهازك، يمكن للمسؤول تعطيل الحماية في الوقت الحقيقي باستخدام الإرشادات الواردة في تعيين تفضيلات Microsoft Defender لنقطة النهاية [macOS](mac-preferences.md).
+      إذا كانت مؤسستك تدير جهازك، يمكن تعطيل الحماية في الوقت الحقيقي من قبل المسؤول باستخدام الإرشادات الواردة في [تعيين التفضيلات Microsoft Defender لنقطة النهاية على macOS](mac-preferences.md).
 
-      إذا استمرت مشكلة الأداء أثناء إيقاف تشغيل الحماية في الوقت الحقيقي، فمن الممكن أن يكون مصدر المشكلة هو الكشف عن تهديدات نقاط النهاية والرد عليها الأساسي. في هذه الحالة، يرجى الاتصال بدعم العملاء للحصول على مزيد من الإرشادات وتخفيف الأثر.
+      إذا استمرت مشكلة الأداء أثناء إيقاف تشغيل الحماية في الوقت الحقيقي، فقد يكون أصل المشكلة هو مكون الكشف عن نقطة النهاية والاستجابة. في هذه الحالة، يرجى الاتصال بدعم العملاء للحصول على مزيد من الإرشادات والتخفيف من المخاطر.
 
-2. افتح "البحث" وانتقل إلى **أدوات مساعدة** \> **التطبيقات**. افتح **مراقب النشاط** وتحلل التطبيقات التي تستخدم الموارد على النظام. تتضمن الأمثلة النموذجية برامج تحديث البرامج وبرامج التحويل البرمجي.
+2. افتح "الباحث" وانتقل إلى **"أدوات مساعدة التطبيقات**\>". افتح **Activity Monitor** وحلل التطبيقات التي تستخدم الموارد على النظام الخاص بك. تتضمن الأمثلة النموذجية برامج تحديث البرامج والمحولات البرمجية.
 
-3. للعثور على التطبيقات التي تقوم بتشغيل معظم عمليات الفحص، يمكنك استخدام إحصائيات الوقت الحقيقي التي يجمعها Defender for Endpoint على Mac.
+3. للعثور على التطبيقات التي تقوم بتشغيل معظم عمليات الفحص، يمكنك استخدام الإحصائيات في الوقت الحقيقي التي جمعها Defender لنقطة النهاية على Mac.
 
       > [!NOTE]
-      > تتوفر هذه الميزة في الإصدار 100.90.70 أو الإصدارات الأحدث.
-      يتم تمكين هذه الميزة بشكل افتراضي على **قنوات Dogfood** و **InsiderFast** . إذا كنت تستخدم قناة تحديث مختلفة، يمكن تمكين هذه الميزة من سطر الأوامر:
+      > تتوفر هذه الميزة في الإصدار 100.90.70 أو أحدث.
+      يتم تمكين هذه الميزة بشكل افتراضي على قناتين **Dogfood** و **InsiderFast** . إذا كنت تستخدم قناة تحديث مختلفة، يمكن تمكين هذه الميزة من سطر الأوامر:
 
       ```bash
       mdatp config real-time-protection-statistics  --value enabled
@@ -81,7 +81,7 @@ ms.locfileid: "64474036"
       mdatp health --field real_time_protection_enabled
       ```
 
-    تحقق من صحة **real_time_protection_enabled** الإدخال. بخلاف ذلك، يمكنك تشغيل الأمر التالي لتمكينه:
+    تحقق من صحة إدخال **real_time_protection_enabled** . وإلا، فشغل الأمر التالي لتمكينه:
 
       ```bash
       mdatp config real-time-protection --value enabled
@@ -91,23 +91,23 @@ ms.locfileid: "64474036"
       Configuration property updated
       ```
 
-      لجمع الإحصائيات الحالية، تشغيل:
+      لجمع الإحصائيات الحالية، قم بتشغيل:
 
       ```bash
       mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
       ```
 
       > [!NOTE]
-      > يضمن **استخدام --output json** (ملاحظة الشرطة المزدوجة) أن تنسيق الإخراج جاهز للتقيس.
+      > يضمن استخدام **--output json** (لاحظ الشرطة المزدوجة) أن تنسيق الإخراج جاهز لتحليله.
       سيعرض إخراج هذا الأمر جميع العمليات ونشاط الفحص المقترن بها.
 
-4. على نظام Mac، قم بتنزيل عينة تحليل Python high_cpu_parser.py باستخدام الأمر:
+4. على نظام Mac، قم بتنزيل نموذج محلل Python high_cpu_parser.py باستخدام الأمر:
 
     ```bash
     curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
 
-    يجب أن يكون إخراج هذا الأمر مماثلا للمخرجات التالية:
+    يجب أن يكون إخراج هذا الأمر مشابها لما يلي:
 
     ```Output
     --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.
@@ -131,9 +131,9 @@ ms.locfileid: "64474036"
         cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
       ```
 
-      إخراج ما سبق هو قائمة من أهم المساهمين في مشاكل الأداء. العمود الأول هو معرف العملية (PID)، العمود الثاني هو اسم عملية te، العمود الأخير هو عدد الملفات الممسوحة ضوئيا، التي تم فرزها حسب التأثير.
+      إخراج ما سبق هو قائمة بأفضل المساهمين في مشكلات الأداء. العمود الأول هو معرف العملية (PID)، والعمود الثاني هو اسم العملية te، والعمود الأخير هو عدد الملفات الممسوحة ضوئيا، والتي تم فرزها حسب التأثير.
 
-      على سبيل المثال، سيكون إخراج الأمر مثل ما يلي:
+      على سبيل المثال، سيكون إخراج الأمر شيئا مثل ما يلي:
 
       ```output
         ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
@@ -149,11 +149,11 @@ ms.locfileid: "64474036"
         125  CrashPlanService 164
       ```
 
-      لتحسين أداء Defender for Endpoint على Mac، حدد موقع الرقم الأعلى ضمن الصف إجمالي الملفات الممسوحة ضوئيا وأضف استثناء له. لمزيد من المعلومات، راجع تكوين الاستثناءات ل [Defender for Endpoint على Linux والتحقق من صحتها](linux-exclusions.md).
+      لتحسين أداء Defender لنقطة النهاية على Mac، حدد موقع الملف الذي يحتوي على أعلى رقم ضمن صف إجمالي الملفات الممسوحة ضوئيا وأضف استثناء له. لمزيد من المعلومات، راجع [تكوين الاستثناءات والتحقق من صحتها ل Defender لنقطة النهاية على macOS](mac-exclusions.md).
 
       > [!NOTE]
-      > يخزن التطبيق الإحصائيات في الذاكرة ويتعقب نشاط الملف فقط منذ بدء العمل عليه وتمكين الحماية في الوقت الحقيقي. لا يتم حساب العمليات التي تم تشغيلها قبل فترات إيقاف تشغيل الحماية في الوقت الحقيقي أو أثناءها. بالإضافة إلى ذلك، يتم حساب الأحداث التي تم تشغيل عمليات الفحص فيها فقط.
+      > يخزن التطبيق الإحصائيات في الذاكرة ويتعقب نشاط الملف فقط منذ بدئه وتم تمكين الحماية في الوقت الحقيقي. لا يتم حساب العمليات التي تم تشغيلها قبل أو خلال الفترات التي كانت فيها الحماية في الوقت الحقيقي متوقفة عن التشغيل. بالإضافة إلى ذلك، يتم حساب الأحداث التي قامت بتشغيل عمليات الفحص فقط.
       >
-6. قم بتكوين Microsoft Defender لنقطة النهاية macOS مع استثناءات للعمليات أو مواقع الأقراص التي تساهم في مشاكل الأداء وتتمكن من إعادة تمكين الحماية في الوقت الحقيقي.
+6. تكوين Microsoft Defender لنقطة النهاية على macOS مع استثناءات للعمليات أو مواقع القرص التي تساهم في مشكلات الأداء وإعادة تمكين الحماية في الوقت الحقيقي.
 
-     راجع [تكوين الاستثناءات والتحقق](mac-exclusions.md) من صحتها Microsoft Defender لنقطة النهاية على macOS للحصول على التفاصيل.
+     راجع [تكوين الاستثناءات والتحقق من صحتها Microsoft Defender لنقطة النهاية على macOS للحصول على](mac-exclusions.md) التفاصيل.

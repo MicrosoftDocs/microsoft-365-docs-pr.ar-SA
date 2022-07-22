@@ -14,26 +14,26 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9e149a883a24093c503bb1487870d2efe83592e0
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 0ef0cd210b405440c4dd16f9b8ea7a707d8f6197
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874019"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970244"
 ---
 # <a name="supported-managed-security-service-providers"></a>موفرو خدمات الأمان المدارة المعتمدون
 
 **ينطبق على:**
+
 - [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+يمكن الوصول إلى موفري خدمة الأمان المدارة التالية من خلال المدخل.
 
-يمكن الوصول إلى موفري خدمة الأمان المدارة التالية من خلال المدخل. 
-
-شعار |اسم الشريك   | الوصف 
+شعار |اسم الشريك   | الوصف
 :---|:---|:---
 ![صورة شعار التمييز.](images/accenture-logo.png)|[استجابة & الكشف المدار من Accenture (MDR)](https://go.microsoft.com/fwlink/?linkid=2164353) | إدارة عمليات الأمان عبر الإنترنت العالمية وصيانتها وتعزيزها باستخدام قدرات موسعة تكشف عن الهجمات الإلكترونية المتقدمة وتتتبعها وتستجيب لها بشكل استباقي عبر بيئات تكنولوجيا المعلومات وOT الموجودة في السحابة وفي الموقع.
 ![صورة شعار Aujas.](images/aujas-logo.png) | [خدمة MDE المدارة من Aujas](https://go.microsoft.com/fwlink/?linkid=2162429) | يوفر الأمان عبر الإنترنت في Aujas 24*7 خدمات أمان مدارة عبر طيف المؤسسة بأكمله، باستخدام Microsoft Defender لنقطة النهاية من خلال مراكز الدفاع السيبراني الخاصة بها.
@@ -45,11 +45,11 @@ ms.locfileid: "65874019"
 ![صورة شعار CSIS Managed Detection & Response.](images/csis-logo.png)| [استجابة & الكشف المدار ل CSIS](https://go.microsoft.com/fwlink/?linkid=2091005) | مراقبة وتحليل التنبيهات الأمنية على مدار الساعة و24/7 مما يمنح الشركات رؤى قابلة للتنفيذ حول ما حدث من حوادث أمنية ومتى وكيفية حدوثها
 ![صورة شعار CyberProof.](images/cyberproof-logo.png) |[استجابة & الكشف المدار عبر الإنترنت (MDR)](https://go.microsoft.com/fwlink/?linkid=2163964) | خدمات الكشف عن التهديدات والاستجابة المدارة على مدار الساعة 24×7 متكاملة تماما مع Microsoft Sentinel و Defender لنقطة النهاية.
 ![Image of Dell Technologies Advanced Threat Protection logo.](images/dell-logo.png)| [الحماية المتقدمة من التهديدات من خلال تقنيات تقنيات التشغيل](https://go.microsoft.com/fwlink/?linkid=2091004) | خدمة مراقبة احترافية للسلوك الضار والشذوذ مع إمكانية 24/7
-![صورة شعار الكشف عن تهديدات نقطة النهاية والاستجابة لها DXC-Managed.](images/dxc-logo.png)| [الكشف عن تهديدات نقطة النهاية المدارة بواسطة DXC والاستجابة لها](https://go.microsoft.com/fwlink/?linkid=2090395) | تحديد تهديدات نقطة النهاية التي تتجنب الدفاعات الأمنية التقليدية وتحتوي عليها في ساعات أو دقائق، وليس أياما
+:::image type="content" source="images/dxc-logo.png" alt-text="Image of DXC-Managed Endpoint Threat Detection and Response logo.":::.| [الكشف عن تهديدات نقطة النهاية المدارة بواسطة DXC والاستجابة لها](https://go.microsoft.com/fwlink/?linkid=2090395) | تحديد تهديدات نقطة النهاية التي تتجنب الدفاعات الأمنية التقليدية وتحتوي عليها في ساعات أو دقائق، وليس أياما.
 ![صورة سجل eSentire.](images/esentire-logo.png) | [الكشف والاستجابة المدارين في eSentire](https://go.microsoft.com/fwlink/?linkid=2154970) | 24x7 من التحقيقات والاستجابة للمخاطر عبر Microsoft Defender لنقطة النهاية.
 ![Image of expel logo.](images/expel-logo.png)| [الكشف عن البيانات المدارة والاستجابة لها من أجل Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/?linkid=2162430) | يساعد Expel أمانك على المتابعة من خلال الكشف عن مخاطر الأمان في Microsoft Defender لنقطة النهاية.
 ![صورة شعار Mandiant.](images/mandiant-logo.png) | [الدفاع المدار الماندي (MDR) Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/?linkid=2164352) | قم بتحصين Defender لنقطة النهاية الخاصة بك باستخدام ذكاء وخبرة MDR للخطوط الأمامية 24/7 من Mandiant.
-![صورة شعار أمان NTT.](images/ntt-logo.png)| [أمان NTT](https://go.microsoft.com/fwlink/?linkid=2095320) | توفر خدمة الكشف التلقائي والاستجابة على النقط النهائية NTT استجابة & مراقبة الأمان على مدار الساعة على مدار الساعة عبر نقطة النهاية والشبكة
+![صورة شعار أمان NTT.](images/ntt-logo.png)| [أمان NTT](https://go.microsoft.com/fwlink/?linkid=2095320) | توفر خدمة EDR ل NTT استجابة & مراقبة الأمان على مدار الساعة على مدار الساعة عبر نقطة النهاية والشبكة
 ![صورة شعار OneVinn.](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 24/7 الكشف والاستجابة المدارة المبنية على Microsoft 365 Defender وMicrosoft Sentinel، والتي تم إثراؤها بذكاء التهديد في Onevinn.
 ![Image of Quorum Cyber logo.](images/quorum-logo.png) | [الحصة الإلكترونية](https://go.microsoft.com/fwlink/?linkid=2155202)| خدمة متطورة لتتبع المخاطر & هندسة الأمان.
 ![صورة شعار الكناري الأحمر.](images/redcanary-logo.png)| [الكناري الأحمر](https://go.microsoft.com/fwlink/?linkid=2103852) | Red Canary هو شريك عمليات أمان للفرق الحديثة، تم نشر MDR في دقائق
@@ -61,4 +61,5 @@ ms.locfileid: "65874019"
 ![صورة شعار ثقة معدومة Analytics Platform (ZTAP).](images/ztap-logo.png)| [ثقة معدومة Analytics Platform (ZTAP)](https://go.microsoft.com/fwlink/?linkid=2090971) | تقليل التنبيهات بنسبة 99٪ والوصول إلى مجموعة كاملة من قدرات الأمان من الأجهزة المحمولة
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
+
 - [تكوين تكامل موفر أمان الخدمة المدارة](configure-mssp-support.md)
