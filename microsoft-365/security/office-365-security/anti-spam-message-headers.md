@@ -18,12 +18,12 @@ description: يمكن للمسؤولين التعرف على حقول الرأس
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 592a583b572c134dd4ecd33dd18f392f6e9b36ce
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: fa5b107853a67d31e184ca744bcb8d0631d11aea
+ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493054"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "66983928"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>رؤوس رسائل مكافحة البريد العشوائي في Microsoft 365
 
@@ -63,7 +63,7 @@ ms.locfileid: "66493054"
 |الميدان|الوصف|
 |---|---|
 |`ARC`|`ARC` يحتوي البروتوكول على الحقول التالية: <ul><li>`AAR`: يسجل محتوى رأس **نتائج المصادقة** من DMARC.</li><li>`AMS`: يتضمن تواقيع التشفير للرسالة.</li><li>`AS`: يتضمن تواقيع التشفير لرؤوس الرسائل. يحتوي هذا الحقل على علامة للتحقق من صحة السلسلة تسمى `"cv="`، والتي تتضمن نتيجة التحقق من صحة السلسلة ك **بلا أو** **تمرير** أو **فشل**.</li></ul>|
-|`CAT:`|فئة نهج الحماية، المطبقة على الرسالة: <ul><li>`BULK`: مجمع</li><li>`DIMP`: انتحال المجال</li><li>`GIMP`: [انتحال يستند إلى تحليل معلومات علبة البريد](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` أو `HPHISH`: التصيد الاحتيالي عالي الثقة</li><li>`HSPM`: بريد عشوائي عالي الثقة</li><li>`MALW`: البرامج الضارة</li><li>`PHSH`: التصيد الاحتيالي</li><li>`SPM`: بريد عشوائي</li><li>`SPOOF`: تزييف هوية</li><li>`UIMP`: انتحال المستخدم</li><li>`AMP`: مكافحة البرامج الضارة</li><li>`SAP`: مرفقات آمنة</li><li>`OSPM`: البريد العشوائي الصادر</li></ul> <p> قد يتم وضع علامة على رسالة واردة بواسطة أشكال متعددة من الحماية ومسح الكشف المتعدد. وللنهج أولويات مختلفة، ويتم تطبيق النهج ذي الأولوية القصوى أولا. لمزيد من المعلومات، راجع [النهج الذي يطبق عند تشغيل أساليب حماية متعددة وفحص الكشف على بريدك الإلكتروني](how-policies-and-protections-are-combined.md).|
+|`CAT:`|فئة نهج الحماية، المطبقة على الرسالة: <ul><li>`BULK`: مجمع</li><li>`DIMP`: انتحال المجال</li><li>`GIMP`: [انتحال يستند إلى تحليل معلومات علبة البريد](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` أو `HPHISH`: التصيد الاحتيالي عالي الثقة</li><li>`HSPM`: بريد عشوائي عالي الثقة</li><li>`MALW`: البرامج الضارة</li><li>`PHSH`: التصيد الاحتيالي</li><li>`SPM`: بريد عشوائي</li><li>`SPOOF`: تزييف هوية</li><li>`UIMP`: انتحال المستخدم</li><li>`AMP`: مكافحة البرامج الضارة</li><li>`SAP`: مرفقات آمنة</li><li>`FTBP`: نهج نوع ملف مكافحة البرامج الضارة</li><li>`OSPM`: البريد العشوائي الصادر</li></ul> <p> قد يتم وضع علامة على رسالة واردة بواسطة أشكال متعددة من الحماية ومسح الكشف المتعدد. وللنهج أولويات مختلفة، ويتم تطبيق النهج ذي الأولوية القصوى أولا. لمزيد من المعلومات، راجع [النهج الذي يطبق عند تشغيل أساليب حماية متعددة وفحص الكشف على بريدك الإلكتروني](how-policies-and-protections-are-combined.md).|
 |`CIP:[IP address]`|عنوان IP المتصل. يمكنك استخدام عنوان IP هذا في قائمة السماح ب IP أو قائمة كتلة IP. لمزيد من المعلومات، راجع [تكوين تصفية الاتصال](configure-the-connection-filter-policy.md).|
 |`CTRY`|البلد المصدر كما يحدده عنوان IP المتصل، والذي قد لا يكون هو نفسه عنوان IP المرسل الأصلي.|
 |`H:[helostring]`|سلسلة HELO أو EHLO لخادم البريد الإلكتروني المتصل.|

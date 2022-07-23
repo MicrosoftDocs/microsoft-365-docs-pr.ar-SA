@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية إنشاء تقرير يحتوي على معلومات حول كافة قوائم الاحتجاز المقترنة بحالات eDiscovery.
-ms.openlocfilehash: 9820eba0e29a510a1881a9349f63c7e2d9650728
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 8f3c3d56e59508c061776643e743a1ff5c2fe2db
+ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625468"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "66984036"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>استخدام برنامج نصي لإنشاء تقرير حول قوائم الاحتجاز في حالات eDiscovery
 
@@ -145,7 +145,7 @@ ms.locfileid: "66625468"
    if($cc.status -eq 'Closed')
    {
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
-   add-tocasereport -casename $cc.name -casestatus -casetype $cc.casetype $cc.Status -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
+   add-tocasereport -casename $cc.name -casestatus $cc.Status -casetype $cc.casetype -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
    }
    else{
    $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'

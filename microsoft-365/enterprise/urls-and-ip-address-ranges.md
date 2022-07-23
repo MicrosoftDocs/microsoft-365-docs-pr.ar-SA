@@ -3,7 +3,7 @@ title: نطاقات عناوين IP وعناوين URL في Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/01/2022
+ms.date: 06/29/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'الملخص: يتطلب Office 365 الاتصال بالإنترنت. يجب أن تكون نقاط النهاية أدناه قابلة للوصول للعملاء الذين يستخدمون خطط Office 365، بما في ذلك سحابة القطاع الحكومي (GCC).'
 hideEdit: true
-ms.openlocfilehash: 8a878d9be63411d891f0f42e9c9a0df722317666
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: e01ee3d14889d03c8501b18f48a308a69f75c2e1
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493753"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970177"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>نطاقات عناوين IP وعناوين URL في Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "66493753"
 
 |ملاحظات|تنزيل|استخدام |
 |---|---|---|
-|**تاريخ التحديث الأخير:** 06/01/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [اشتراك في سجلّ التغييرات](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**التنزيل:** كل الوجهات المطلوبة والاختيارية في قائمة [تنسيق JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) واحدة.|**استخدام:** وكيلنا [ملفات PAC](managing-office-365-endpoints.md#pacfiles)|
+|**تاريخ التحديث الأخير:** 06/29/2022 - ![RSS.](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [اشتراك في سجلّ التغييرات](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**التنزيل:** كل الوجهات المطلوبة والاختيارية في قائمة [تنسيق JSON](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) واحدة.|**استخدام:** وكيلنا [ملفات PAC](managing-office-365-endpoints.md#pacfiles)|
 |
 
 ابدأ ب [إدارة نقاط نهاية Office 365](managing-office-365-endpoints.md) لفهم توصياتنا لإدارة اتصال الشبكة باستخدام هذه البيانات. يتم تحديث بيانات نقاط النهاية كما تقتضي الحاجة في بداية كل شهر باستخدام عناوين IP وعناوين URL الجديدة المنشورة قبل 30 يوما من تنشيطها. يسمح هذا الإيقاع للعملاء الذين ليس لديهم تحديثات تلقائية حتى الآن بإكمال عملياتهم قبل الحاجة إلى اتصال جديد. قد يتم أيضا تحديث نقاط النهاية خلال الشهر إذا لزم الأمر لمعالجة تصعيد الدعم أو أحداث الأمان أو المتطلبات التشغيلية الفورية الأخرى. يتم إنشاء كافة البيانات المعروضة في هذه الصفحة أدناه من خدمات ويب المستندة إلى REST. إذا كنت تستخدم برنامج نصي أو جهاز شبكة للوصول إلى هذه البيانات، فيجب الانتقال إلى [خدمة ويب](microsoft-365-ip-web-service.md) مباشرة.
