@@ -1,0 +1,119 @@
+### YamlMime:FAQ
+metadata:
+  title: الأسئلة المتداولة حول برنامج الخصم في مكان عمل Microsoft
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  manager: scotv
+  ms.reviewer: tugu, jmueller
+  audience: Admin
+  ms.topic: faq
+  ms.service: o365-administration
+  ms.localizationpriority: medium
+  ms.collection:
+  - M365-subscription-management
+  - Adm_O365
+  ms.custom:
+  - commerce_subscriptions
+  - okr_SMB
+  - AdminSurgePortfolio
+  search.appverid: MET150
+  description: الأسئلة المتداولة حول برنامج الخصم في مكان العمل من Microsoft.
+  ms.date: 07/19/2022
+  ms.openlocfilehash: 79420d82f778de953be436609140ba7a9cf6709d
+  ms.sourcegitcommit: 08ad8636b029ffd19130e2da0de72f37f67e412e
+  ms.translationtype: MT
+  ms.contentlocale: ar-SA
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66988240"
+title: الأسئلة المتداولة حول برنامج الخصم في مكان العمل من Microsoft
+summary: >
+  يستخدم عملاء الترخيص المجمع برنامج خصم Microsoft Workplace (المعروف سابقا باسم Home Use Program أو HUP) في [موقع ويب Microsoft Store للأعمال](https://go.microsoft.com/fwlink/?linkid=2139192) أو في [مركز مسؤولي Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+
+
+  يصل جميع العملاء الآخرين إلى برنامج الخصم في مكان العمل باستخدام هذه الخطوة:
+
+
+  - في مركز إدارة Microsoft، انتقل إلى صفحة **الفوترة** > [**لمنتجاتك**](https://go.microsoft.com/fwlink/p/?linkid=842054)، وحدد علامة التبويب **"فوائد**"، ثم حدد **اسم الميزة** لبرنامج خصم Microsoft Workplace.
+sections:
+- name: تم التجاهل
+  questions:
+  - question: >
+      ما هو برنامج خصم مساحة عمل Microsoft؟
+    answer: >
+      يتيح برنامج الخصم في مكان عمل Microsoft للموظفين في الشركات المؤهلة شراء منتجات المستهلكين من Microsoft بخصم. يمكنك التحقق من الخصومات الحالية لكل عرض منتج من خلال زيارة [صفحة منتج برنامج الخصم في مكان العمل](https://www.microsoft.com/workplace-discount-program).
+  - question: >
+      في أي الأسواق يتم عرض برنامج الخصم في مكان العمل؟
+    answer: "يتم تقديم خصومات على اشتراكات Microsoft 365 Family و Personal للشركات المؤهلة في جميع أنحاء العالم مع هذه الاستثناءات:\n\n- لا يتوفر هذا العرض في هذه الأسواق، وهو ماكاو، وماكاو، وفيلاروسيا: هذا العرض غير متوفر في هذه الأسواق.\n- الصين وهونغ كونغ: يتوفر اشتراك لمدة عام واحد في هذه الأسواق. بالنسبة إلى الصين، تفضل بزيارة [Microsoft 365 في الصين](https://www.microsoftstore.com.cn/home-use-program/invite). بالنسبة إلى هونغ كونغ، تفضل بزيارة [شراء Microsoft 365 بسعر مخفض](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).\n- يتم تقديم خصومات على أجهزة Surface وملحقاته المحددة للشركات المؤهلة في أسواق محددة. \n"
+  - question: >
+      كيف تتأهل مؤسسة لمزايا برنامج الخصم في مكان العمل من Microsoft؟
+    answer: "لتمكين الموظفين من الاستفادة من ميزة برنامج الخصم في مكان العمل من Microsoft، يجب أن يكون لديهم عنوان بريد إلكتروني صالح للشركة وحساب Microsoft نشط، ويجب أن تفي مؤسستك بأحد المعايير التالية:\n\n- العملاء الذين لديهم ضمان برنامج نشط لتطبيقات Office المؤهلة\n- العملاء الذين لديهم Microsoft 365/Microsoft 365 E3/E5 من ضمان البرنامج\n- العملاء التجاريون والعملاء الحكوميون الذين اشتروا 2000 ترخيص أو أكثر من ترخيص واحد أو مزيج من Microsoft 365 E3/E5\n- عملاء التعليم وغير الربح\n- العملاء التجاريون والحكومية الذين أنفقوا 250,000 دولار أمريكي أو أكثر خلال الأشهر ال 12 الماضية على Power BI وOffice وأجهزة Surface المؤهلة & الملحقات وWindows وEnterprise Mobility \n"
+  - question: >
+      ماذا حدث لبرنامج Home Use Program؟
+    answer: >
+      لا يزال برنامج الاستخدام المنزلي من Microsoft متوفرا. تم تغيير اسم البرنامج إلى برنامج الخصم في مكان عمل Microsoft. لا تتأثر أي منتجات مخفضة تم شراؤها مسبقا بالتغيير في اسم البرنامج.  ستستمر في تلقي أسعار مخفضة على الاشتراكات المؤهلة، شريطة استمرار تشغيل التجديد التلقائي.
+  - question: >
+      لماذا يتعين علي إنشاء حساب Azure Active Directory (AAD) لاستخدام برنامج الخصم في مكان العمل؟
+    answer: >
+      لتحديث وتحديث برنامج الخصم في مكان العمل إلى مجموعة أوسع من مزايا الترخيص والمنتج، قمنا بتغيير الطريقة التي ننفذ بها البرنامج. يتم استخدام Microsoft Store للأعمال للتحقق من الأهلية وتعيين المزايا، ويعتمد على AAD لتوصيل المعلومات من VLSC والتحقق من صحة مجالات البريد الإلكتروني التي يعمل عليها موظفو مؤسستك. لمزيد من المعلومات، راجع [التسجيل للحصول على Microsoft Store للأعمال أو Microsoft Store للتعليم](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome). بدلا من ذلك، يمكنك استخدام علامة التبويب **"فوائد**" على صفحة **منتجاتك** [في مركز مسؤولي Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) لإدارة مزايا البرنامج.
+  - question: >
+      كيف أعمل تصبح مسؤول تكنولوجيا المعلومات المعينة لمستأجر مدار؟
+    answer: >
+      يجب إنشاء سجل خاص في DNS لإثبات ملكيتك لمجال شركتك، على سبيل المثال، contoso.com.
+
+
+      للحصول على عملية خطوة بخطوة لتصبح مستأجرا مدارا، راجع [تولي دليل غير مدار كمسؤول في Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+  - question: >
+      ما الموارد المتوفرة للمساعدة في تعزيز ميزة برنامج الخصم في مكان العمل للموظفين؟
+    answer: >
+      استخدم الموارد الموجودة على الصفحة الرئيسية [لبرنامج الخصم في مكان العمل](http://www.microsoft.com/workplace-discount-program/employer-resources) لمساعدتك على ترقية البرنامج إلى موظفيك. ستجد نشرات إعلانية رقمية وقابلة للطباعة، ورسالة برمجية للاستخدام في رسائل البريد الإلكتروني والرسائل الإخبارية، وإرشادات حول أفضل طريقة للترويج لبرنامج الخصم في مكان العمل.
+  - question: >
+      ما هي الخطوات التي يجب على الموظف المؤهل إجراء عملية شراء لبرنامج الخصم في مكان العمل من Microsoft؟
+    answer: >
+      1. **التسجيل** انتقل إلى [صفحة Microsoft Workplace Discount Program](http://www.microsoft.com/workplace-discount-program)، وحدد الزر **"بدء الاستخدام** ". يدخل الموظفون عنوان البريد الإلكتروني للشركة.
+
+      2. **تاكيد**  يتم إرسال بريد إلكتروني إلى علبة الوارد الخاصة بعنوان البريد الإلكتروني للشركة مع ارتباط يصادق على أهليتهم للبرنامج.
+
+      3. **تسجيل الدخول** بعد مصادقتهم، يبدئون عملية الشراء من خلال توفير حساب Microsoft المرتبط بعنوان بريدهم الإلكتروني الشخصي، مما يسمح لهم بعرض الخصومات على المنتجات المتوفرة لهم استنادا إلى ميزة برنامج الخصم في مكان العمل للمؤسسة. لمزيد من المعلومات، راجع [كيفية تسجيل الدخول إلى حساب Microsoft الخاص بك](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
+
+      4. **متجر** تتم معالجة عملية الشراء وإكمالها في Microsoft Store.
+  - question: >
+      إذا اشترك أحد الموظفين في Microsoft 365 من خلال برنامج خصم Microsoft Workplace، فكيف يؤثر ذلك على اشتراك Microsoft 365 Business والحد الأقصى للجهاز في مؤسستنا؟
+    answer: >
+      لا تؤثر عمليات التثبيت التي تم إجراؤها من خلال برنامج الخصم في مكان العمل على اشتراك Microsoft 365 Business الخاص بمؤسستك. عندما يقوم الموظفون بتنشيط Microsoft 365 على أجهزتهم الشخصية، فإنهم يستخدمون حساب Microsoft الشخصي الخاص بهم، وليس حساب العمل الخاص بهم. لا يدير مسؤولو تكنولوجيا المعلومات في مؤسستك أي عمليات شراء تتم من خلال برنامج الخصم في مكان العمل أو يدعمونها.
+  - question: >
+      أواجه مشكلة في إدارة ميزة برنامج خصم Microsoft Workplace في مؤسستي. أين يمكنني الحصول على الدعم؟
+    answer: >
+      للحصول على دعم للمشاكل التي يتم ترحيلها من مركز خدمات الترخيص المجمع أو للوصول إلى Microsoft Store للأعمال، راجع [دعم VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
+
+
+      للاطلاع على المشاكل المتعلقة بعرض الميزة بعد الوصول بالفعل إلى Microsoft Store للأعمال، راجع [دعم مسؤول Store for Business](/microsoft-store/)
+  - question: >
+      ماذا لو كان لدى الموظفين أسئلة حول هذا البرنامج أو يحتاجون إلى دعم في الشراء والتثبيت؟
+    answer: >
+      إذا كان لدى الموظفين أسئلة، فراجعها إلى الموارد التالية:
+
+
+      - [الأسئلة المتداولة حول ما بعد الشراء والتثبيت](https://www.microsoft.com/microsoft-365/microsoft-365-for-home-and-school-faq?rtc=1)
+
+      - [الأسئلة المتداولة حول الموظفين في برنامج الخصم في مكان العمل](http://www.microsoft.com/workplace-discount-program/faq)
+
+       للحصول على تعليمات حول المشاكل التقنية، راجع [دعم Microsoft](https://support.microsoft.com/). ستجد تعليمات ل:
+
+      - حالة الطلب
+
+      - الفوترة
+
+      - تثبيت Office
+
+      - تسجيل الدخول إلى Office
+  - question: >
+      لماذا يجب أن تشارك شركتي في برنامج الخصم في مكان العمل؟
+    answer: "يساعد برنامج الخصم في مكان العمل شركتك على زيادة العائد على استثمارها في Microsoft إلى أقصى حد. تشمل فوائد المشاركة في البرنامج ما يلي: \n\n- تقليل الحاجة إلى التدريب على تكنولوجيا المعلومات \n- خفض تكاليف مكتب المساعدة والتدريب \n- السماح للموظفين بالتعرف على Microsoft 365 في المنزل \n- زيادة كفاءة البرامج، والتي يمكن أن تزيد من الإنتاجية \n"
+  - question: >
+      كيف يستفيد برنامج خصم Microsoft Workplace من الموظفين؟
+    answer: >
+      عندما يشتري الموظفون منتجات Microsoft 365 بخصم كبير، فإنهم قادرون على استخدام نفس البرامج في المنزل التي يستخدمونها في المكتب. وهذا يساعد على تعزيز إنتاجيتهم، وتحسين مهاراتهم، وتعزيز رضاهم الوظيفي.
+  - question: >
+      ماذا يحدث عندما يترك موظف الشركة؟
+    answer: "بالنسبة للموظفين المؤهلين لعرض اشتراك Microsoft 365 والذين اشتروا من خلال البرنامج، يتم تطبيق السعر المخفض طالما ظل اشتراك الموظف نشطا، بغض النظر عن حالة توظيفهم لدى مؤسستك. \n"
+additionalContent: "\n## <a name=\"related-content\"></a>المحتويات ذات الصلة\n  [الأسئلة المتداولة حول برنامج الخصم في مكان العمل من Microsoft](http://www.microsoft.com/workplace-discount-program/faq). (مقالة)\\\n  [مركز خدمات الترخيص المجمع من Microsoft](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (صفحة الارتباط)\\\n  [دعم Microsoft Store للأعمال مسؤول](/microsoft-store/) (صفحة الارتباط)\\\n  [Microsoft Store للأعمال](https://go.microsoft.com/fwlink/?linkid=2139192) (صفحة الارتباط)\\\n  [متجر موظفي برنامج الخصم في مكان العمل](http://www.microsoft.com/workplace-discount-program/faq) (صفحة الارتباط)\\\n  [ترخيص Microsoft: نظرة عامة على برنامج الخصم في مكان العمل](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (صفحة الارتباط)"
