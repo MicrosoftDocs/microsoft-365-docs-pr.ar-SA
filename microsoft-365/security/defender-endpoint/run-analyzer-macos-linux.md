@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 67c7648238ecc3a46188b36f3ab61525739d53d4
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 28d1c3cd9ded0d2a4e0d2bf7444aaa5e0ac2ae37
+ms.sourcegitcommit: e852dafda3c0d1dfdde492600093aa17a3dcf5a6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917662"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67002483"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>تشغيل محلل العميل على macOS وLinux
 
@@ -35,7 +35,7 @@ ms.locfileid: "66917662"
 1. قم بتنزيل أداة [محلل عميل XMDE](https://aka.ms/XMDEClientAnalyzer) إلى جهاز macOS أو Linux الذي تحتاج إلى التحقيق فيه.
 
    > [!NOTE]
-   > تجزئة SHA256 الحالية ل 'XMDEClientAnalyzer.zip' التي يتم تنزيلها من الارتباط أعلاه هي: '94DBD785249C10F37D7BE9C1E881AA096CF3A9F30E829DBBFD42683717BC5DA8'.
+   > تجزئة SHA256 الحالية ل 'XMDEClientAnalyzer.zip' التي يتم تنزيلها من الارتباط أعلاه هي: 'AC086D65202D31EBCF9DC76F7CA29A5B8B355CD6F78D31BBF89289EB7AA2B67D'.
 
 2. استخراج محتويات XMDEClientAnalyzer.zip على الجهاز.
 
@@ -70,6 +70,7 @@ ms.locfileid: "66917662"
 > - بالإضافة إلى ذلك، تتطلب الأداة حاليا تثبيت الإصدار 3 من Python أو إصدار أحدث.
 >
 > - إذا كنت تعمل على جهاز لا يمكنه استخدام Python 3 أو إحضار مكون lxml، يمكنك تنزيل إصدار ثنائي يستند إلى محلل لا يحتوي على أي من المتطلبات: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary). <br> لاحظ أن الملف الثنائي غير موقع حاليا. للسماح بتشغيل الحزمة على MacOS، ستحتاج إلى استخدام بناء الجملة: "spctl --add /Path/To/Application.app".
+> - تجزئة SHA256 الحالية ل 'XMDEClientAnalyzerBinary.zip' التي يتم تنزيلها من الارتباط أعلاه هي: '7FE67373CDF493BF2748FD778BD106EE85A71C968D594BCC67C7374620506EF2'
 >
 > - إذا كان جهازك خلف وكيل، يمكنك ببساطة تمرير الخادم الوكيل كمتغير بيئة إلى البرنامج النصي mde_support_tool.sh. على سبيل المثال: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 

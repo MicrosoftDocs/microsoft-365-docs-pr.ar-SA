@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fb771dbb4126cba1a5636e7ad3ad19fa267d7905
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 1ea738bfec4f9779bae87a769b784f399e165a07
+ms.sourcegitcommit: e852dafda3c0d1dfdde492600093aa17a3dcf5a6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66857534"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67002439"
 ---
 # <a name="export-incidents-queue-to-csv-files"></a>تصدير قائمة انتظار الأحداث إلى ملفات CSV
 
@@ -49,5 +49,8 @@ ms.locfileid: "66857534"
 على سبيل المثال، بالنسبة إلى البيانات الموجودة في ملف CSV، يمكنك تطبيق عوامل التصفية لعرض البيانات التالية:
 - بيانات تتعلق بعدد الحوادث عالية الخطورة التي وقعت في آخر 30 يوما.
 - البيانات المتعلقة بمن هو المحلل الأكثر إنتاجية.
+
+> [!NOTE]
+> الحد الأقصى لعدد السجلات التي يمكنك تصديرها إلى ملف CSV هو 10000. 
 
 إذا كانت لديك أفكار أو اقتراحات حول ميزة **التصدير** الجديدة (الزر **"تصدير**") لقائمة انتظار الأحداث، فاتصل بفريق Microsoft أو أرسل ملاحظاتك عبر مدخل Microsoft 365 Defender.
