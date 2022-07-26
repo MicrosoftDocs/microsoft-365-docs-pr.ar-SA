@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: موارد لمساعدتك على تلبية المتطلبات التنظيمية لإدارة دورة حياة البيانات وإدارة السجلات.
-ms.openlocfilehash: 1fdae5c765d940c3f1b37cb7cff68fa736fcbd33
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b3fe0a6c22645f67c99053a45e76e6dc9439e513
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638136"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019978"
 ---
 # <a name="regulatory-requirements-for-data-lifecycle-management-and-records-management"></a>المتطلبات التنظيمية لإدارة دورة حياة البيانات وإدارة السجلات
 
@@ -44,11 +44,11 @@ ms.locfileid: "66638136"
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17a-4(f) وFINRA 4511(c) و CFTC 1.31(c)-(d)
 
-**تقييم Cohasset - Microsoft 365 - SEC Rule 17a-4(f) - تخزين غير قابل للتغيير ل SharePoint وOneDrive وTeams وExchange وSkype** -  [تقييم التنزيل](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+**تقييم Cohasset - Microsoft 365 - SEC Rule 17a-4(f) - تخزين غير قابل للتغيير ل SharePoint وOneDrive وExchange وTeams وYamer** -  [تقييم التنزيل](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-أحمال العمل القابلة للتطبيق: SharePoint وOneDrive وTeams وExchange Skype for Business
+أحمال العمل القابلة للتطبيق: SharePoint وOneDrive وTeams وExchange وYamer
 
-تم إصدار هذا التقرير في نوفمبر 2020 بالشراكة مع Cohasset Associates, Inc. (Cohasset) لتقييم قدرات خدمات Microsoft 365 لتسجيل المتطلبات الخاصة بالسجلات الإلكترونية وتخزينها وإدارتها، كما هو محدد من قبل:  
+أحدث إصدار تم إصداره في يوليو 2022، تم إنتاج هذا التقرير بالشراكة مع Cohasset Associates, Inc. (Cohasset) لتقييم قدرات خدمات Microsoft 365 لتسجيل متطلبات التسجيل والتخزين وإدارتها للسجلات الإلكترونية، كما هو محدد من قبل:  
 
 - الأوراق المالية وExchange Commission (SEC) في 17 CFR - 240.17a-4(f)، الذي ينظم أعضاء البورصة أو الوسطاء أو البائعين.  
 

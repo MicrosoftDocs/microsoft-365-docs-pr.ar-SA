@@ -15,20 +15,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d679ac0d01a7e922e49b72b574a43e6f684179f9
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3bdb35b4251725dc4b2e69fc077d0edf29693cef
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664491"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020550"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>دمج أدوات SIEM مع Microsoft Defender لنقطة النهاية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -38,7 +38,7 @@ ms.locfileid: "64664491"
 >
 > [Microsoft Defender لنقطة النهاية يتكون التنبيه](alerts.md) من حدث أو أكثر من الأحداث المشبوهة أو الضارة التي حدثت على الجهاز وتفاصيلها ذات الصلة. واجهة برمجة تطبيقات التنبيه Microsoft Defender لنقطة النهاية هي أحدث واجهة برمجة تطبيقات لاستهلاك التنبيه وتحتوي على قائمة مفصلة بالأدلة ذات الصلة لكل تنبيه. لمزيد من المعلومات، راجع [أساليب التنبيه وخصائصه](alerts.md) [وتنبيهات القائمة](get-alerts.md).
 
-يدعم Microsoft Defender لنقطة النهاية أدوات إدارة معلومات الأمان والأحداث (SIEM) لاستيعاب المعلومات من مستأجر المؤسسة في Azure Active Directory (AAD (دليل Azure النشط)) باستخدام بروتوكول مصادقة OAuth 2.0 AAD (دليل Azure النشط)  تطبيق يمثل حل أو موصل SIEM المحدد المثبت في بيئتك.
+يدعم Microsoft Defender لنقطة النهاية أدوات إدارة معلومات الأمان والأحداث (SIEM) لاستيعاب المعلومات من مستأجر المؤسسة في Azure Active Directory (AAD) باستخدام بروتوكول مصادقة OAuth 2.0 لتطبيق AAD مسجل يمثل حل SIEM المحدد أو الموصل المثبت في بيئتك.
 
 لمزيد من المعلومات، اطلع على:
 
@@ -73,6 +73,15 @@ ms.locfileid: "64664491"
 - تحديث التنبيهات في Microsoft Defender لنقطة النهاية من داخل Splunk
 
 لمزيد من المعلومات حول الوظيفة الإضافية Microsoft 365 Defender ل Splunk، راجع [splunkbase](https://splunkbase.splunk.com/app/4959/).
+
+### <a name="datadog"></a>Datadog
+
+يدعم Microsoft 365 Defender لنقطة النهاية مع Datadog ما يلي:
+
+- استيعاب التنبيهات والحوادث Microsoft Defender لنقطة النهاية
+- لوحات المعلومات التي تمكن مقاييس المراقبة عبر نقاط النهاية والتهديدات والثغرات الأمنية والبرامج
+
+لمزيد من المعلومات حول التكامل، راجع [Datadog Marketplace](https://app.datadoghq.com/marketplace/app/crest-data-systems-microsoft-defender/support).
 
 ### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 

@@ -1,5 +1,5 @@
 ---
-title: تكوين خصائص حساب المستخدم Microsoft 365 باستخدام PowerShell
+title: تكوين خصائص حساب مستخدم Microsoft 365 باستخدام PowerShell
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -18,23 +18,23 @@ ms.custom:
 - PowerShell
 - admindeeplinkMAC
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: استخدم PowerShell Microsoft 365 لتكوين خصائص حسابات المستخدمين الفردية أو المتعددة في مستأجر Microsoft 365.
-ms.openlocfilehash: 3a1aa77a6af3995d7cd4d072b6b6c6047bf89942
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: استخدم PowerShell ل Microsoft 365 لتكوين خصائص حسابات المستخدمين الفردية أو المتعددة في مستأجر Microsoft 365.
+ms.openlocfilehash: 14d302bca030b8310c4956c44cccab91d357233f
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091336"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019934"
 ---
-# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>تكوين خصائص حساب المستخدم Microsoft 365 باستخدام PowerShell
+# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>تكوين خصائص حساب مستخدم Microsoft 365 باستخدام PowerShell
 
 *تنطبق هذه المقالة على كل من Microsoft 365 Enterprise و Office 365 Enterprise.*
 
-يمكنك استخدام <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a> لتكوين خصائص لحسابات المستخدمين لمستأجر Microsoft 365 الخاص بك. في PowerShell، يمكنك أيضا القيام بذلك، بالإضافة إلى بعض الأشياء الأخرى التي لا يمكنك القيام بها في مركز الإدارة.
+يمكنك استخدام <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">مركز مسؤولي Microsoft 365</a> لتكوين خصائص لحسابات المستخدمين لمستأجر Microsoft 365. في PowerShell، يمكنك أيضا القيام بذلك، بالإضافة إلى بعض الأشياء الأخرى التي لا يمكنك القيام بها في مركز الإدارة.
   
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>استخدام Azure Active Directory PowerShell للوحدة النمطية Graph
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>استخدام Azure Active Directory PowerShell للوحدة النمطية للرسم البياني
 
-لتكوين خصائص لحسابات المستخدمين في Azure Active Directory PowerShell للوحدة النمطية Graph، استخدم [**Set-AzureADUser**](/powershell/module/azuread/set-azureaduser) cmdlet وحدد الخصائص لتعيينها أو تغييرها.
+لتكوين خصائص لحسابات المستخدمين في الوحدة النمطية Azure Active Directory PowerShell ل Graph، استخدم [**Set-AzureADUser**](/powershell/module/azuread/set-azureaduser) cmdlet وحدد الخصائص لتعيينها أو تغييرها.
 
 أولا، [اتصل بمستأجر Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
@@ -114,7 +114,7 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 ```powershell
 $userName="Belinda Newman"
 $upn=(Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
-Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
+Set-AzureADUser -ObjectID $upn -UsageLocation FR
 ```
 
 ### <a name="change-properties-for-all-user-accounts"></a>تغيير الخصائص لكافة حسابات المستخدمين
@@ -122,21 +122,21 @@ Set-AzureADUser -ObjectID $upn -UsageLocation "FR"
 لتغيير الخصائص لجميع المستخدمين، يمكنك استخدام مزيج من **Get-AzureADUser** و **Set-AzureADUser** cmdlets. يغير المثال التالي موقع الاستخدام لكافة المستخدمين إلى *فرنسا*:
   
 ```powershell
-Get-AzureADUser | Set-AzureADUser -UsageLocation "FR"
+Get-AzureADUser -All $true | Set-AzureADUser -UsageLocation FR
 ```
 
 يوجه هذا الأمر PowerShell إلى:
   
 1. احصل على جميع المعلومات على حسابات المستخدمين (**Get-AzureADUser**) وأرسلها إلى الأمر التالي (**|**).
 
-1. تعيين موقع المستخدم إلى فرنسا (**Set-AzureADUser -UsageLocation "FR"**).
+1. تعيين موقع المستخدم إلى فرنسا (**Set-AzureADUser -UsageLocation FR**).
 
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>تغيير الخصائص لمجموعة معينة من حسابات المستخدمين
 
 لتغيير خصائص مجموعة معينة من حسابات المستخدمين، يمكنك استخدام مزيج من **Get-AzureADUser** و **Where** و **Set-AzureADUser** cmdlets. يغير المثال التالي موقع الاستخدام لكافة المستخدمين في قسم المحاسبة إلى *فرنسا*:
   
 ```powershell
-Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation "FR"
+Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -UsageLocation FR
 ```
 
 يوجه هذا الأمر PowerShell إلى:
@@ -145,7 +145,7 @@ Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -Usag
 
 1.  ابحث عن جميع حسابات المستخدمين التي تم تعيين خاصية *القسم* الخاصة بها إلى "المحاسبة" (**حيث {$_. القسم -eq "Accounting"}**)، وإرسال المعلومات الناتجة إلى الأمر التالي (**|**).
 
-1. تعيين موقع المستخدم إلى فرنسا (**Set-AzureADUser -UsageLocation "FR"**).
+1. تعيين موقع المستخدم إلى فرنسا (**Set-AzureADUser -UsageLocation FR**).
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>استخدام الوحدة النمطية Microsoft Azure Active Directory Windows PowerShell
 
@@ -233,7 +233,7 @@ Write-Host (Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalNa
 ```powershell
 $userName="<display name>"
 $upn=(Get-MsolUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
-Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
+Set-MsolUser -UserPrincipalName $upn -UsageLocation FR
 ```
 
 ### <a name="change-properties-for-all-user-accounts"></a>تغيير الخصائص لكافة حسابات المستخدمين
@@ -241,21 +241,21 @@ Set-MsolUser -UserPrincipalName $upn -UsageLocation "FR"
 لتغيير الخصائص لجميع المستخدمين، استخدم مزيجا من **Get-MsolUser** و **Set-MsolUser** cmdlets. يغير المثال التالي موقع الاستخدام لكافة المستخدمين إلى *فرنسا*:
   
 ```powershell
-Get-MsolUser | Set-MsolUser -UsageLocation "FR"
+Get-MsolUser | Set-MsolUser -UsageLocation FR
 ```
 
 يوجه هذا الأمر PowerShell إلى:
   
 1. احصل على جميع المعلومات لحسابات المستخدمين (**Get-MsolUser**) وأرسلها إلى الأمر التالي (**|**).
 
-1. تعيين موقع المستخدم إلى فرنسا (**Set-MsolUser -UsageLocation "FR"**).
+1. تعيين موقع المستخدم إلى فرنسا (**Set-MsolUser -UsageLocation FR**).
 
 ### <a name="change-properties-for-a-specific-set-of-user-accounts"></a>تغيير الخصائص لمجموعة معينة من حسابات المستخدمين
 
 لتغيير خصائص مجموعة معينة من حسابات المستخدمين، يمكنك استخدام مجموعة من أوامر cmdlets **Get-MsolUser** و **Where** و **Set-MsolUser** . يغير المثال التالي موقع الاستخدام لكافة المستخدمين في قسم المحاسبة إلى *فرنسا*:
   
 ```powershell
-Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation "FR"
+Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocation FR
 ```
 
 يوجه هذا الأمر PowerShell إلى:
@@ -264,11 +264,11 @@ Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocat
 
 1. ابحث عن كافة حسابات المستخدمين التي تم تعيين خاصية *القسم* الخاصة بها إلى "المحاسبة" (**حيث {$_. Department -eq "Accounting"}**) وإرسال المعلومات الناتجة إلى الأمر التالي (**|**).
 
-1. تعيين موقع المستخدم إلى فرنسا (**Set-MsolUser -UsageLocation "FR"**).
+1. تعيين موقع المستخدم إلى فرنسا (**Set-MsolUser -UsageLocation FR**).
 
 ## <a name="see-also"></a>راجع أيضًا
 
-[إدارة حسابات المستخدمين والتراخيص والمجموعات Microsoft 365 باستخدام PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[إدارة حسابات المستخدمين والتراخيص والمجموعات في Microsoft 365 باستخدام PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
 [إدارة Microsoft 365 باستخدام PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   

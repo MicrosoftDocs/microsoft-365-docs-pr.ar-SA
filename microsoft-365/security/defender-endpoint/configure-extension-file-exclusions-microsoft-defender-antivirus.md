@@ -7,19 +7,20 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 07/25/2022
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8e9c153f55b38871ebf6af7a4511af2e637fad68
-ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
+ms.openlocfilehash: 5976d09bfbfd42798dda38d2479ac9535ae3b68b
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66720468"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020411"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>تكوين الاستثناءات والتحقق من صحتها استنادا إلى ملحق الملف وموقع المجلد
 
@@ -30,9 +31,10 @@ ms.locfileid: "66720468"
 - برنامج الحماية من الفيروسات من Microsoft Defender
 
 **الأنظمة الأساسية**
+
 - بالنسبة لنظام التشغيل
 
-يمكنك تحديد استثناءات برنامج الحماية من الفيروسات من Microsoft Defender التي تنطبق على [عمليات الفحص المجدولة](schedule-antivirus-scans.md)، [والمسح حسب الطلب](run-scan-microsoft-defender-antivirus.md)[، والحماية والمراقبة في الوقت الحقيقي دائما](configure-real-time-protection-microsoft-defender-antivirus.md). **بشكل عام، يجب ألا تحتاج إلى تطبيق الاستثناءات**. إذا كنت بحاجة إلى تطبيق الاستثناءات، يمكنك الاختيار من بين عدة أنواع مختلفة:
+يمكنك تحديد استثناءات برنامج الحماية من الفيروسات من Microsoft Defender التي تنطبق على [عمليات الفحص المجدولة](schedule-antivirus-scans.md)، [والمسح حسب الطلب](run-scan-microsoft-defender-antivirus.md)[، والحماية والمراقبة في الوقت الحقيقي دائما](configure-real-time-protection-microsoft-defender-antivirus.md). **بشكل عام، لا تحتاج إلى تطبيق الاستثناءات**. إذا كنت بحاجة إلى تطبيق الاستثناءات، يمكنك الاختيار من بين ما يلي:
 
 - الاستثناءات المستندة إلى ملحقات الملفات ومواقع المجلدات (الموضحة في هذه المقالة)
 - [استثناءات الملفات التي يتم فتحها بواسطة العمليات](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
@@ -47,7 +49,7 @@ ms.locfileid: "66720468"
 
 ## <a name="exclusion-lists"></a>قوائم الاستبعاد
 
-لاستبعاد ملفات معينة من عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender، يمكنك تعديل قوائم الاستبعاد. يتضمن برنامج الحماية من الفيروسات من Microsoft Defender العديد من الاستثناءات التلقائية استنادا إلى سلوكيات نظام التشغيل المعروفة وملفات الإدارة النموذجية، مثل تلك المستخدمة في إدارة المؤسسة وإدارة قاعدة البيانات وسيناريوهات المؤسسة وحالاتها الأخرى.
+لاستبعاد ملفات معينة من عمليات فحص برنامج الحماية من الفيروسات من Microsoft Defender، قم بتعديل قوائم الاستبعاد. يتضمن برنامج الحماية من الفيروسات من Microsoft Defender العديد من الاستثناءات التلقائية استنادا إلى سلوكيات نظام التشغيل المعروفة وملفات الإدارة النموذجية، مثل تلك المستخدمة في إدارة المؤسسة وإدارة قاعدة البيانات وسيناريوهات المؤسسة وحالاتها الأخرى.
 
 > [!NOTE]
 > تنطبق الاستثناءات على [اكتشافات التطبيقات غير المرغوب فيها (PUA)](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) أيضا.
@@ -73,9 +75,9 @@ ms.locfileid: "66720468"
 
 - لا تستبعد محركات أقراص الشبكة المعينة. حدد مسار الشبكة الفعلي.
 
-- لن يتم تضمين المجلدات التي يتم إعادة توزيع النقاط التي تم إنشاؤها بعد بدء تشغيل خدمة الحماية من الفيروسات من Microsoft Defender والتي تمت إضافتها إلى قائمة الاستبعاد. أعد تشغيل الخدمة (عن طريق إعادة تشغيل Windows) ليتم التعرف على نقاط إعادة التوزيع الجديدة كهدف استبعاد صالح.
+- يتم إنشاء المجلدات التي يتم إعادة توزيعها بعد بدء تشغيل خدمة الحماية من الفيروسات من Microsoft Defender، ولن يتم تضمين المجلدات التي تمت إضافتها إلى قائمة الاستبعاد. أعد تشغيل الخدمة عن طريق إعادة تشغيل Windows للنقاط الجديدة لإعادة التوزيع ليتم التعرف عليها كهدف استبعاد صالح.
 
-- تنطبق الاستثناءات على [عمليات الفحص المجدولة](scheduled-catch-up-scans-microsoft-defender-antivirus.md)، [والمسح الضوئي عند الطلب](run-scan-microsoft-defender-antivirus.md)، [والحماية في الوقت الحقيقي](configure-real-time-protection-microsoft-defender-antivirus.md)، ولكن ليس عبر Defender لنقطة النهاية. لتحديد الاستثناءات عبر Defender لنقطة النهاية، استخدم [المؤشرات المخصصة](manage-indicators.md).
+- تنطبق الاستثناءات على [عمليات الفحص المجدولة](scheduled-catch-up-scans-microsoft-defender-antivirus.md)، [والمسح الضوئي عند الطلب](run-scan-microsoft-defender-antivirus.md)، [والحماية في الوقت الحقيقي](configure-real-time-protection-microsoft-defender-antivirus.md)، ولكن ليس عبر جميع قدرات Defender لنقطة النهاية. لتحديد الاستثناءات عبر Defender لنقطة النهاية، استخدم [المؤشرات المخصصة](manage-indicators.md).
 
 - بشكل افتراضي، سيتم دمج التغييرات المحلية التي تم إجراؤها على القوائم (من قبل المستخدمين الذين لديهم امتيازات المسؤول، بما في ذلك التغييرات التي تم إجراؤها باستخدام PowerShell وWMI) مع القوائم كما تم تحديدها (ونشرها) بواسطة نهج المجموعة أو Configuration Manager أو Intune. تأخذ قوائم نهج المجموعة الأسبقية عند وجود تعارضات. بالإضافة إلى ذلك، تظهر تغييرات قائمة الاستبعاد التي تم إجراؤها باستخدام نهج المجموعة في [تطبيق أمن Windows](microsoft-defender-security-center-antivirus.md).
 
@@ -101,9 +103,9 @@ ms.locfileid: "66720468"
 > [!NOTE]
 > إذا قمت بتحديد مسار مؤهل بالكامل إلى ملف، فسيتم استبعاد هذا الملف فقط. إذا تم تعريف مجلد في الاستثناء، فسيتم استبعاد كافة الملفات والدلائل الفرعية ضمن هذا المجلد.
 
-1. على كمبيوتر إدارة نهج المجموعة، افتح [وحدة تحكم إدارة نهج المجموعة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))، وانقر بزر الماوس الأيمن فوق العنصر نهج المجموعة الذي تريد تكوينه وحدد **"تحرير**".
+1. على كمبيوتر إدارة نهج المجموعة، افتح [وحدة تحكم إدارة نهج المجموعة](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))، وانقر بزر الماوس الأيمن فوق العنصر نهج المجموعة الذي تريد تكوينه، ثم حدد **"تحرير**".
 
-2. في **محرر إدارة نهج المجموعة**، انتقل إلى **تكوين الكمبيوتر** وحدد **القوالب الإدارية**.
+2. في **نهج المجموعة انتقل محرر الإدارة** إلى **تكوين الكمبيوتر**، وحدد **القوالب الإدارية**.
 
 3. قم بتوسيع الشجرة إلى **مكونات** \> Windows **برنامج الحماية من الفيروسات لـ Windows Defender** \> **الاستثناءات**.
 
@@ -130,7 +132,7 @@ ms.locfileid: "66720468"
 
 ### <a name="use-powershell-cmdlets-to-configure-file-name-folder-or-file-extension-exclusions"></a>استخدام أوامر cmdlets PowerShell لتكوين اسم الملف أو المجلد أو استثناءات ملحق الملف
 
-يتطلب استخدام PowerShell لإضافة استثناءات للملفات أو إزالتها استنادا إلى اسم الملحق أو الموقع أو الملف استخدام مجموعة من ثلاثة أوامر cmdlets ومعلمة قائمة الاستبعاد المناسبة. أوامر cmdlets كلها في [وحدة Defender](/powershell/module/defender/).
+يتطلب استخدام PowerShell لإضافة استثناءات للملفات أو إزالتها استنادا إلى اسم الملف أو الموقع أو الملحق استخدام مجموعة من ثلاثة أوامر cmdlets ومعلمة قائمة الاستبعاد المناسبة. أوامر cmdlets كلها في [وحدة Defender](/powershell/module/defender/).
 
 تنسيق أوامر cmdlets هو كما يلي:
 
@@ -189,7 +191,7 @@ ExclusionPath
 
 ## <a name="use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>استخدام أحرف البدل في اسم الملف ومسار المجلد أو قوائم استثناء الملحق
 
-يمكنك استخدام العلامة النجمية `*`أو علامة الاستفهام `?`أو متغيرات البيئة (مثل `%ALLUSERSPROFILE%`) كأحرف البدل عند تعريف العناصر في اسم الملف أو قائمة استبعاد مسار المجلد. تختلف الطريقة التي يتم بها تفسير أحرف البدل هذه عن استخدامها المعتاد في التطبيقات واللغات الأخرى. تأكد من قراءة هذا القسم لفهم قيودها المحددة.
+يمكنك استخدام العلامة النجمية `*`أو علامة الاستفهام `?`أو متغيرات البيئة (مثل `%ALLUSERSPROFILE%`) كأحرف البدل عند تعريف العناصر في اسم الملف أو قائمة استبعاد مسار المجلد. تختلف طريقة تفسير أحرف البدل هذه عن استخدامها المعتاد في التطبيقات واللغات الأخرى. تأكد من قراءة هذا القسم لفهم قيودها المحددة.
 
 > [!IMPORTANT]
 > هناك قيود رئيسية وسيناريوهات استخدام لأحرف البدل هذه:
@@ -202,7 +204,7 @@ ExclusionPath
 
 |بدل|أمثلة|
 |---|---|
-|`*` (علامة نجمية) <p> في **تضمينات اسم الملف وملحق الملف**، تحل العلامة النجمية محل أي عدد من الأحرف، وتنطبق فقط على الملفات الموجودة في المجلد الأخير المعرف في الوسيطة. <p> في **استثناءات المجلد**، تحل العلامة النجمية محل مجلد واحد. استخدم مضاعفا `*` مع شرطة مائلة `\` للمجلدات للإشارة إلى مجلدات متعددة متداخلة. بعد مطابقة عدد المجلدات المسماة وبطاقة البدل، يتم أيضا تضمين كافة المجلدات الفرعية.|`C:\MyData\*.txt` يتضمن `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` يتضمن أي ملف في `C:\somepath\Archives\Data` ومجلداته الفرعية `C:\somepath\Authorized\Data` ومجلداته الفرعية <p> `C:\Serv\*\*\Backup` يتضمن أي ملف في `C:\Serv\Primary\Denied\Backup` ومجلداته الفرعية ومجلداته `C:\Serv\Secondary\Allowed\Backup` الفرعية|
+|`*` (علامة نجمية) <p> في **تضمينات اسم الملف وملحق الملف**، تحل العلامة النجمية محل أي عدد من الأحرف، وتنطبق فقط على الملفات الموجودة في المجلد الأخير المعرف في الوسيطة. <p> في **استثناءات المجلد**، تحل العلامة النجمية محل مجلد واحد. استخدم مضاعفا `*` مع شرطة مائلة `\` للمجلدات للإشارة إلى مجلدات متعددة متداخلة. بعد مطابقة عدد المجلدات المسماة وبطاقة البدل، يتم أيضا تضمين كافة المجلدات الفرعية.|`C:\MyData\*.txt` يتضمن `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` يتضمن أي ملف في `C:\somepath\Archives\Data` ومجلداته الفرعية `C:\somepath\Authorized\Data` ومجلداته الفرعية <p> `C:\Serv\*\*\Backup` يتضمن أي ملف في `C:\Serv\Primary\Denied\Backup` ومجلداته الفرعية `C:\Serv\Secondary\Allowed\Backup` ومجلداته الفرعية|
 |`?` (علامة استفهام)  <p> في **تضمينات اسم الملف وملحق الملف**، تحل علامة الاستفهام محل حرف واحد، وتنطبق فقط على الملفات الموجودة في المجلد الأخير المعرف في الوسيطة. <p> في **استثناءات المجلد**، تحل علامة الاستفهام محل حرف واحد في اسم مجلد. بعد مطابقة عدد المجلدات المسماة وبطاقة البدل، يتم أيضا تضمين كافة المجلدات الفرعية.|`C:\MyData\my?.zip` يتضمن `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` يتضمن أي ملف في `C:\somepath\P\Data` ومجلداته الفرعية  <p> `C:\somepath\test0?\Data` سيتضمن أي ملف في `C:\somepath\test01\Data` ومجلداته الفرعية|
 |متغيرات البيئة <p> يتم ملء المتغير المحدد كمسار عند تقييم الاستبعاد.|`%ALLUSERSPROFILE%\CustomLogFiles` ستتضمن `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
@@ -219,7 +221,7 @@ ExclusionPath
 
 |متغير بيئة النظام هذا...|إعادة التوجيه إلى هذا|
 |---|---|
-|`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
+|`%APPDATA%`|`C:\Windows\system32\config\systemprofile\Appdata\Roaming`|
 |`%APPDATA%\Microsoft\Internet Explorer\Quick Launch`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch`|
 |`%APPDATA%\Microsoft\Windows\Start Menu`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu`|
 |`%APPDATA%\Microsoft\Windows\Start Menu\Programs`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`|
@@ -275,14 +277,14 @@ ExclusionPath
 |`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
 |`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
 |`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
-|`%USERPROFILE%`|`C:\Users\UserName`|
-|`%USERPROFILE%\AppData\Local`|`C:\Users\UserName\AppData\Local`|
-|`%USERPROFILE%\AppData\LocalLow`|`C:\Users\UserName\AppData\LocalLow`|
-|`%USERPROFILE%\AppData\Roaming`|`C:\Users\UserName\AppData\Roaming`|
+|`%USERPROFILE%`|`C:\Windows\system32\config\systemprofile`|
+|`%USERPROFILE%\AppData\Local`|`C:\Windows\system32\config\systemprofile\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\system32\config\systemprofile\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\system32\config\systemprofile\AppData\Roaming`|
 
 ## <a name="review-the-list-of-exclusions"></a>مراجعة قائمة الاستثناءات
 
-يمكنك استرداد العناصر الموجودة في قائمة الاستبعاد باستخدام إحدى الطرق التالية:
+يمكنك استرداد العناصر في قائمة الاستبعاد باستخدام أحد الأساليب التالية:
 
 - [Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
@@ -291,10 +293,10 @@ ExclusionPath
 - [تطبيق أمن Windows](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> **ستظهر** تغييرات قائمة الاستبعاد التي تم إجراؤها باستخدام نهج المجموعة في القوائم في [تطبيق أمن Windows](microsoft-defender-security-center-antivirus.md).
+> **ستظهر** تغييرات قائمة الاستبعاد التي تم إجراؤها باستخدام نهج المجموعة في قوائم [تطبيق أمن Windows](microsoft-defender-security-center-antivirus.md).
 > **لن تظهر** التغييرات التي تم إجراؤها في تطبيق أمن Windows في قوائم نهج المجموعة.
 
-إذا كنت تستخدم PowerShell، يمكنك استرداد القائمة بطريقتين:
+إذا كنت تستخدم PowerShell، يمكنك استرداد القائمة بطريقتين التاليتين:
 
 - استرداد حالة جميع تفضيلات برنامج الحماية من الفيروسات من Microsoft Defender. يتم عرض كل قائمة على أسطر منفصلة، ولكن يتم دمج العناصر الموجودة داخل كل قائمة في نفس السطر.
 - اكتب حالة كافة التفضيلات إلى متغير، واستخدم هذا المتغير لاستدعاء القائمة المحددة التي تهتم بها فقط. تتم كتابة كل استخدام لسطر `Add-MpPreference` جديد.

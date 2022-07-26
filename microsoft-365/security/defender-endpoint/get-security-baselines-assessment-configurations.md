@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cef91fd3aabb8d857abe8386933c986d62953c42
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 4b6360fd62eab766614ae9e0d2da76042cab6df6
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839280"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020484"
 ---
 # <a name="list-security-baselines-assessment-configurations"></a>سرد تكوينات تقييم أساسيات الأمان
 
@@ -32,7 +32,7 @@ ms.locfileid: "65839280"
 - [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة إدارة الثغرات الأمنية في Microsoft Defender؟ [التسجيل للحصول على إصدار تجريبي مجاني.- تحديث](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> هل تريد تجربة إدارة الثغرات الأمنية في Microsoft Defender؟ تعرف على المزيد حول كيفية التسجيل في [الإصدار التجريبي من المعاينة العامة إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 ## <a name="1-get-all-security-baselines-assessment-configurations"></a>1. الحصول على كافة تكوينات تقييم أساسات الأمان
 

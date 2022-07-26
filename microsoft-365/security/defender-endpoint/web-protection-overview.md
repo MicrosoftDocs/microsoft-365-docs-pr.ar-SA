@@ -10,17 +10,18 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4184948316e683a59b45b9397aaea74260e290ee
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e54b3c1c696d05bb0f3815b532a4f0e7e92c6331
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664161"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020638"
 ---
 # <a name="web-protection"></a>حماية ويب
 
@@ -28,12 +29,12 @@ ms.locfileid: "64664161"
 
 **ينطبق على:**
 
-- [Microsoft Defender لنقطة النهاية الخطة 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender لنقطة النهاية الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 
 ## <a name="about-web-protection"></a>حول حماية الويب
@@ -83,7 +84,7 @@ ms.locfileid: "64664161"
 تتكون حماية الويب من المكونات التالية، المدرجة بترتيب الأسبقية. يتم فرض كل مكون من هذه المكونات بواسطة عميل SmartScreen في Microsoft Edge ومن قبل عميل Network Protection في جميع المستعرضات والعمليات الأخرى.
 
 - المؤشرات المخصصة (IP/URL، نهج Microsoft Defender for Cloud Apps)
-  - السماح
+  - سماح
   - تحذير
   - حظر
 
@@ -108,12 +109,12 @@ ms.locfileid: "64664161"
 
 |نهج المؤشر المخصص|نهج مخاطر الويب|نهج WCF|نهج Defender for Cloud Apps|نتيجه|
 |---|---|---|---|---|
-|السماح|حظر|حظر|حظر|السماح (تجاوز حماية ويب)|
-|السماح|السماح|حظر|حظر|السماح (استثناء WCF)|
+|سماح|حظر|حظر|حظر|السماح (تجاوز حماية ويب)|
+|سماح|سماح|حظر|حظر|السماح (استثناء WCF)|
 |تحذير|حظر|حظر|حظر|تحذير (تجاوز)|
 |
 
-لا تدعم المؤشرات المخصصة عناوين IP الداخلية. بالنسبة إلى نهج التحذير عند تجاوزه من قبل المستخدم النهائي، سيتم إلغاء حظر الموقع لمدة 24 ساعة لهذا المستخدم بشكل افتراضي. يمكن تعديل هذا الإطار الزمني من قبل المسؤول ويتم تمريره لأسفل بواسطة خدمة SmartScreen السحابية. يمكن أيضا تعطيل القدرة على تجاوز التحذير في Microsoft Edge باستخدام CSP لحجب تهديدات الويب (البرامج الضارة/التصيد الاحتيالي). لمزيد من المعلومات، راجع [Microsoft Edge الإعدادات SmartScreen](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
+لا تدعم المؤشرات المخصصة عناوين IP الداخلية. بالنسبة إلى نهج التحذير عند تجاوزه من قبل المستخدم النهائي، سيتم إلغاء حظر الموقع لمدة 24 ساعة لهذا المستخدم بشكل افتراضي. يمكن تعديل هذا الإطار الزمني بواسطة مسؤول ويتم تمريره لأسفل بواسطة خدمة SmartScreen السحابية. يمكن أيضا تعطيل القدرة على تجاوز تحذير في Microsoft Edge باستخدام CSP لحجب تهديدات الويب (البرامج الضارة/التصيد الاحتيالي). لمزيد من المعلومات، راجع [إعدادات الشاشة الذكية ل Microsoft Edge](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
 
 ## <a name="protect-browsers"></a>حماية المستعرضات
 
@@ -151,7 +152,7 @@ DeviceEvents
 | where ActionType == "SmartScreenUrlWarning"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomBlockList"
+| where Experience == "CustomPolicy"
 ```
 
 وبالمثل، يمكنك استخدام الاستعلام أدناه لإدراج كافة كتل WCF التي تنشأ من Network Protection (على سبيل المثال، كتلة WCF في مستعرض جهة خارجية). لاحظ أنه تم تحديث ActionType وتم تغيير "Experience" إلى "ResponseCategory".
@@ -168,10 +169,10 @@ DeviceEvents
 
 ## <a name="user-experience"></a>تجربة المستخدم
 
-إذا قام مستخدم بزيارة صفحة ويب تشكل خطرا من البرامج الضارة أو التصيد الاحتيالي أو تهديدات ويب أخرى، فسيؤدي Microsoft Edge إلى تشغيل صفحة حظر تقرأ "تم الإبلاغ عن هذا الموقع على أنه غير آمن" إلى جانب المعلومات المتعلقة بالخطر.
+إذا قام مستخدم بزيارة صفحة ويب تشكل مخاطر البرامج الضارة أو التصيد الاحتيالي أو تهديدات الويب الأخرى، فسيشغل Microsoft Edge صفحة حظر تقرأ "تم الإبلاغ عن هذا الموقع على أنه غير آمن" إلى جانب المعلومات المتعلقة بالخطر.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="تم حظر الصفحة بواسطة Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
+> :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="الصفحة المحظورة بواسطة Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
 
 إذا تم حظره بواسطة WCF أو مؤشر مخصص، تظهر صفحة كتلة في Microsoft Edge تخبر المستخدم بأن هذا الموقع محظور من قبل مؤسسته.
 

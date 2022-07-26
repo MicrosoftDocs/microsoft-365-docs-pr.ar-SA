@@ -1,7 +1,7 @@
 ---
 title: الحصول على توصيات الأمان
 description: استرداد مجموعة من توصيات الأمان المتعلقة بمعرف جهاز معين.
-keywords: واجهة برمجة التطبيقات، واجهة برمجة تطبيقات الرسم البياني، واجهة برمجة التطبيقات المدعومة، الحصول على قائمة، ملف، معلومات، توصية الأمان لكل جهاز، واجهة برمجة تطبيقات & إدارة الثغرات الأمنية التهديد، واجهة برمجة تطبيقات Microsoft Defender لنقطة النهاية tvm
+keywords: واجهة برمجة التطبيقات، واجهة برمجة تطبيقات الرسم البياني، واجهة برمجة التطبيقات المدعومة، الحصول على، قائمة، ملف، معلومات، توصية الأمان لكل جهاز، واجهة برمجة تطبيقات إدارة الثغرات الأمنية & التهديد، واجهة برمجة تطبيقات Microsoft Defender لنقطة النهاية tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,23 +15,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ebe07abd4e7f87e7abfe4d4a8ccd131e20dc4958
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: e00937145cfff6eb9a0996683eacfb424b68091b
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839692"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020022"
 ---
 # <a name="get-security-recommendations"></a>الحصول على توصيات الأمان
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**ينطبق على:** 
+**ينطبق على:**
 
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 
 > هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> هل تريد تجربة إدارة الثغرات الأمنية في Microsoft Defender؟ تعرف على المزيد حول كيفية التسجيل في [الإصدار التجريبي من المعاينة العامة إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

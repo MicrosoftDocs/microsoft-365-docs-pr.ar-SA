@@ -11,16 +11,19 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: تعيين المدة التي تستغرقها جلسة عمل المستخدم في Microsoft 365 قبل انتهاء مهلتها.
-ms.openlocfilehash: 15de72fef4dc45705b78dc83941faff1d835d6ae
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 527862e77f8fdfba3c418ba13607bc1389875cab
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756616"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019912"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>مهلة جلسة العمل الخاملة ل Microsoft 365
 
 <!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
+
+> [!IMPORTANT]
+> مهلة جلسة العمل الخاملة غير متوفرة ل Microsoft 365 المشغل بواسطة 21Vianet أو Microsoft 365 Germany.
 
 استخدم مهلة جلسة العمل الخاملة لتكوين نهج حول المدة التي يكون فيها المستخدمون غير نشطين في مؤسستك قبل تسجيل خروجهم من تطبيقات ويب Microsoft 365. يساعد ذلك على حماية بيانات الشركة الحساسة ويضيف طبقة أمان أخرى للمستخدمين النهائيين الذين يعملون على أجهزة غير شركية أو مشتركة.
 
@@ -74,10 +77,7 @@ ms.locfileid: "66756616"
 
 - لن يتم تسجيل خروج المستخدمين في هذه الحالات.
     - إذا تم تسجيل الدخول الأحادي (SSO) إلى تطبيق الويب من حساب الجهاز المنضم أو حدد **"البقاء قيد تسجيل الدخول** " في وقت تسجيل الدخول. لمزيد من المعلومات حول إخفاء هذا الخيار لمؤسستك، راجع [إضافة علامة تجارية إلى صفحة تسجيل الدخول الخاصة بمؤسستك](/azure/active-directory/fundamentals/customize-branding).
-    - إذا كانوا على جهاز مدار (جهاز متوافق أو منضم إلى مجال) ويستخدم مستعرضا مدعوما مثل Microsoft Edge أو Google Chrome (مع [ملحق حسابات Windows](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). لكي لا يتم تشغيل هذه الميزة على جهاز مدار، يلزم وجود اشتراك مؤهل Azure AD Premium P1 أو P2 ونهج وصول مشروط محدد. راجع أدناه للحصول على مزيد من التفاصيل.
-
-> [!IMPORTANT]
-> مهلة جلسة العمل الخاملة غير متوفرة ل Microsoft 365 المشغل بواسطة 21Vianet أو Microsoft 365 Germany.
+    - إذا كانوا على جهاز مدار (جهاز متوافق أو منضم إلى مجال) ويستخدم مستعرضا مدعوما مثل Microsoft Edge أو Google Chrome (مع [ملحق حسابات Windows](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)). لكي يتم تشغيل هذه الميزة على جهاز غير مدار، يلزم وجود اشتراك مؤهل Azure AD Premium P1 أو P2 ونهج وصول مشروط محدد. راجع أدناه للحصول على مزيد من التفاصيل.
 
 ## <a name="idle-session-timeout-on-unmanaged-devices"></a>مهلة جلسة العمل الخاملة على الأجهزة غير المدارة  
 

@@ -1,6 +1,6 @@
 ---
 title: أساليب وخصائص نشاط الإصلاح
-description: تحتوي استجابة واجهة برمجة التطبيقات على أنشطة معالجة & إدارة الثغرات الأمنية التهديد التي تم إنشاؤها في المستأجر الخاص بك. يمكنك طلب جميع أنشطة المعالجة أو نشاط معالجة واحد فقط أو معلومات حول الأجهزة المكشوفة لمهمة معالجة محددة.
+description: تحتوي استجابة واجهة برمجة التطبيقات على أنشطة معالجة إدارة الثغرات الأمنية & التهديد التي تم إنشاؤها في المستأجر الخاص بك. يمكنك طلب جميع أنشطة المعالجة أو نشاط معالجة واحد فقط أو معلومات حول الأجهزة المكشوفة لمهمة معالجة محددة.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation methods, remediation properties,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 14f57d6590d580e0145abc2da788f184c88a721e
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 86218bb1dc3a30ab38e3df07496aa40a5775e88c
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840244"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020462"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>أساليب وخصائص نشاط الإصلاح
 
@@ -32,7 +32,9 @@ ms.locfileid: "65840244"
 - [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> هل تريد تجربة إدارة الثغرات الأمنية في Microsoft Defender؟ تعرف على المزيد حول كيفية التسجيل في [الإصدار التجريبي من المعاينة العامة إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
@@ -40,7 +42,7 @@ ms.locfileid: "65840244"
 
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
-تحتوي استجابة واجهة برمجة التطبيقات على أنشطة معالجة [& إدارة الثغرات الأمنية التهديد](next-gen-threat-and-vuln-mgt.md) التي تم إنشاؤها في المستأجر الخاص بك.
+تحتوي استجابة واجهة برمجة التطبيقات على أنشطة معالجة [إدارة الثغرات الأمنية & التهديد](next-gen-threat-and-vuln-mgt.md) التي تم إنشاؤها في المستأجر الخاص بك.
 
 ## <a name="methods"></a>اساليب
 
@@ -93,6 +95,6 @@ targetDevices|طويله|عدد الأجهزة المكشوفة التي تنط�
 
 - [سرد الأجهزة التي تم عرضها لنشاط معالجة واحد](get-remediation-exposed-devices-activities.md)
 
-- [& إدارة الثغرات الأمنية المخاطر المستندة إلى المخاطر](next-gen-threat-and-vuln-mgt.md)
+- [إدارة الثغرات الأمنية & المخاطر المستندة إلى المخاطر](next-gen-threat-and-vuln-mgt.md)
 
 - [الثغرات الأمنية في مؤسستك](tvm-weaknesses.md)

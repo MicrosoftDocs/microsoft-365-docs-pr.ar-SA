@@ -1,7 +1,7 @@
 ---
 title: الحصول على نقاط الضعف المكتشفة
 description: استرداد مجموعة من الثغرات الأمنية المكتشفة المتعلقة بمعرف جهاز معين.
-keywords: واجهة برمجة التطبيقات، وواجهة برمجة تطبيقات الرسم البياني، وواجهة برمجة التطبيقات المدعومة، والحصول على، وقائمة، وملف، ومعلومات، ونقاط الضعف المكتشفة، وواجهة برمجة تطبيقات & إدارة الثغرات الأمنية التهديد، وواجهة برمجة تطبيقات Microsoft Defender لنقطة النهاية tvm
+keywords: واجهة برمجة التطبيقات، وواجهة برمجة تطبيقات الرسم البياني، وواجهة برمجة التطبيقات المدعومة، والحصول على، وقائمة، وملف، ومعلومات، ونقاط الضعف المكتشفة، وواجهة برمجة تطبيقات إدارة الثغرات الأمنية & التهديد، وواجهة برمجة تطبيقات Microsoft Defender لنقطة النهاية tvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b3271637b1b275fe26d07975d0592bf1e7ae672
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 95e350a6288ecefabe86aaa7b802deae0ffafaa1
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840464"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020000"
 ---
 # <a name="get-discovered-vulnerabilities"></a>الحصول على نقاط الضعف المكتشفة
 
@@ -32,7 +32,9 @@ ms.locfileid: "65840464"
 - [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> هل تريد تجربة إدارة الثغرات الأمنية في Microsoft Defender؟ تعرف على المزيد حول كيفية التسجيل في [الإصدار التجريبي من المعاينة العامة إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 

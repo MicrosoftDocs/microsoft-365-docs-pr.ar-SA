@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 74f0d1986cb9b2551c9eabc217b23789ae8e6f6b
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 2540e1d9521771bd9ae4d49b96384fefd8766aec
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65838950"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020025"
 ---
 # <a name="list-all-remediation-activities"></a>سرد كل أنشطة المعالجة
 
@@ -32,7 +32,9 @@ ms.locfileid: "65838950"
 - [إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> هل تريد تجربة إدارة الثغرات الأمنية في Microsoft Defender؟ تعرف على المزيد حول كيفية التسجيل في [الإصدار التجريبي من المعاينة العامة إدارة الثغرات الأمنية في Microsoft Defender](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
@@ -80,7 +82,7 @@ fixedDevices|.|عدد الأجهزة التي تم تصحيحها|2
 الاولويه|سلسلة|الأولوية التي عينها المنشئ لنشاط المعالجة هذا (عالي\متوسط\منخفض)|عاليه
 Productid|سلسلة|معرف المنتج ذي الصلة|microsoft-_-silverlight
 productivityImpactRemediationType|سلسلة|يمكن طلب بعض تغييرات التكوين فقط للأجهزة التي لا تؤثر على المستخدمين. تشير هذه القيمة إلى التحديد بين "كافة الأجهزة المكشوفة" أو "الأجهزة التي لا تؤثر على المستخدم فقط".|AllExposedAssets
-rbacGroupNames|سلسلة|أسماء مجموعات الأجهزة ذات الصلة|[ "Windows Servers", "Windows 11", "Windows 10" ]
+rbacGroupNames|سلسلة|أسماء مجموعات الأجهزة ذات الصلة|[ "خوادم Windows"، "Windows 11"، "Windows 10" ]
 مخطط موصى به|سلسلة|البرنامج الموصى به للترقية إلى|فارغه
 RecommendedVendor|سلسلة|المورد الموصى به للترقية إلى|فارغه
 recommendedVersion|سلسلة|الإصدار الموصى به للتحديث/الترقية إليه|فارغه
@@ -152,5 +154,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 - [أساليب وخصائص المعالجة](get-remediation-methods-properties.md)
 - [الحصول على نشاط معالجة واحد بواسطة المعرّف](get-remediation-one-activity.md)
 - [سرد الأجهزة التي تم عرضها لنشاط معالجة واحد](get-remediation-exposed-devices-activities.md)
-- [& إدارة الثغرات الأمنية المخاطر المستندة إلى المخاطر](next-gen-threat-and-vuln-mgt.md)
+- [إدارة الثغرات الأمنية & المخاطر المستندة إلى المخاطر](next-gen-threat-and-vuln-mgt.md)
 - [الثغرات الأمنية في مؤسستك](tvm-weaknesses.md)
