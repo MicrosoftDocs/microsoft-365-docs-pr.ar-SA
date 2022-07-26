@@ -19,12 +19,12 @@ ms.collection:
 description: ما هي أفضل الممارسات لإعدادات الأمان Exchange Online Protection (EOP) Defender لـ Office 365؟ ما هي التوصيات الحالية للحماية القياسية؟ ما الذي يجب استخدامه إذا كنت تريد أن تكون أكثر صرامة؟ وما هي الإضافات التي تحصل عليها إذا كنت تستخدم Defender لـ Office 365 أيضا؟
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4653ac9212ef20d7baecdbfa11885e25b514a067
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6d1c7486f3ead422e6daafbedacd59c34b34963b
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943856"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004356"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>الإعدادات الموصى بها ل EOP والأمان Microsoft Defender لـ Office 365
 
@@ -242,7 +242,7 @@ ms.locfileid: "66943856"
 |اسم ميزة الأمان|افتراضي|الحماية المضمنة|التعليق|
 |---|:---:|:---:|---|
 |**تشغيل Defender لـ Office 365 ل SharePoint وOneDrive وMicrosoft Teams** <br><br> _EnableATPForSPOTeamsODB_|قباله <br><br> `$false`|في <br><br> `$true`|لمنع المستخدمين من تنزيل ملفات ضارة، راجع [استخدام SharePoint Online PowerShell لمنع المستخدمين من تنزيل ملفات ضارة](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).|
-|**تشغيل المستندات الآمنة لعملاء Office** <br><br> _EnableSafeDocs_|قباله <br><br> `$false`|في <br><br> `$true`|هذه الميزة متوفرة وذات معنى فقط مع التراخيص غير المضمنة في Defender لـ Office 365 (على سبيل المثال، Microsoft 365 E5 أو الأمان في Microsoft 365 E5). لمزيد من المعلومات، راجع ["المستندات الآمنة" في Microsoft 365 E5](safe-docs.md).|
+|**تشغيل المستندات الآمنة لعملاء Office** <br><br> _EnableSafeDocs_|قباله <br><br> `$false`|في <br><br> `$true`|هذه الميزة متوفرة وذات معنى فقط مع التراخيص غير المضمنة في Defender لـ Office 365 (على سبيل المثال، Microsoft 365 A5 أو الأمان في Microsoft 365 E5). لمزيد من المعلومات، راجع ["المستندات الآمنة" في Microsoft 365 A5 أو أمان E5](safe-docs.md).|
 |**السماح للأشخاص بالنقر عبر "طريقة عرض محمية" حتى لو حددت "المستندات الآمنة" الملف على أنه ضار** <br><br> _AllowSafeDocsOpen_|قباله <br><br> `$false`|قباله <br><br> `$false`|يرتبط هذا الإعداد بالمستندات الآمنة.|
 
 #### <a name="safe-attachments-policy-settings"></a>إعدادات نهج المرفقات الآمنة

@@ -17,26 +17,26 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - intro-overview
-description: تتضمن Microsoft Defender لـ Office 365 خزينة المرفقات وارتباطات خزينة وأدوات مكافحة التصيد الاحتيالي المتقدمة وأدوات إعداد التقارير وقدرات التحليل الذكي للمخاطر.
+description: تتضمن Microsoft Defender لـ Office 365 المرفقات الآمنة والارتباطات الآمنة وأدوات مكافحة التصيد الاحتيالي المتقدمة وأدوات إعداد التقارير وقدرات التحليل الذكي للمخاطر.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9be72102f9813394cb2d9eab1e4d163c6d87bd4b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: fe021a2ba40f6e5e4d2bb9221ef0e2bef70a2371
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417809"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004313"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender لـ Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **ينطبق على**
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> هذه المقالة مخصصة لعملاء الأعمال الذين لديهم [Microsoft Defender لـ Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). إذا كنت تستخدم Outlook.com أو Microsoft 365 Family أو Microsoft 365 Personal، وكنت تبحث عن معلومات حول ارتباطات خزينة أو مرفقات خزينة في Outlook، فراجع [الأمان المتقدم Outlook.com للحصول على Microsoft 365 المشتركين](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> هذه المقالة مخصصة لعملاء الأعمال الذين لديهم [Microsoft Defender لـ Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). إذا كنت تستخدم Outlook.com أو Microsoft 365 Family أو Microsoft 365 Personal، وكنت تبحث عن معلومات حول الارتباطات الآمنة أو المرفقات الآمنة في Outlook، فراجع [الأمان المتقدم Outlook.com لمشتركي Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Microsoft Defender لـ Office 365 تحمي مؤسستك من التهديدات الضارة التي تشكلها رسائل البريد الإلكتروني والارتباطات (عناوين URL) وأدوات التعاون. تتضمن Defender لـ Office 365 ما يلي:
 
@@ -64,8 +64,8 @@ Microsoft Defender لـ Office 365 تحمي مؤسستك من التهديدات
   - مكافحة البريد العشوائي
 - قم بإعداد كل شيء باستخدام "*safe*" في الاسم.
   - الارتباطات الآمنة
-  - مرفقات خزينة
-- الدفاع عن أحمال العمل (على سبيل المثال. SharePoint Online و OneDrive و Teams)
+  - مرفقات آمنة
+- الدفاع عن أحمال العمل (على سبيل المثال. SharePoint Online وOneDrive وTeams)
 - الحماية باستخدام الإزالة التلقائية بدون ساعة (ZAP).
 
 للتعلم من خلال القيام بذلك، [انقر فوق هذا الارتباط](protect-against-threats.md).
@@ -87,7 +87,7 @@ Microsoft Defender لـ Office 365 تحمي مؤسستك من التهديدات
 
 - يتوفر كل من Microsoft Defender لـ Office 365 (الخطة 1) وDefender لـ Office 365 (الخطة 2) كإضافة لبعض الاشتراكات. لمعرفة المزيد، يوجد ارتباط آخر [متوفر عبر خطط Microsoft Defender لـ Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 
-- ميزة [المستندات الآمنة](safe-docs.md) متاحة فقط للمستخدمين الذين لديهم تراخيص أمان Microsoft 365 E5 أو Microsoft 365 E5 (غير مضمنة في خطط Microsoft Defender لـ Office 365).
+- تتوفر ميزة ["المستندات الآمنة"](safe-docs.md) فقط للمستخدمين الذين لديهم تراخيص Microsoft 365 A5 أو الأمان في Microsoft 365 E5 (غير مضمنة في خطط Microsoft Defender لـ Office 365).
 
 - إذا كان اشتراكك الحالي لا يتضمن Microsoft Defender لـ Office 365 وتريده، [فاتصل بالمبيعات لبدء نسخة تجريبية](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)، واكتشف كيف يمكن أن يعمل Microsoft Defender لـ Office 365 في مؤسستك.
 
@@ -110,11 +110,11 @@ Microsoft Defender لـ Office 365 تحمي مؤسستك من التهديدات
 
 تحدد النهج المحددة لمؤسستك مستوى السلوك والحماية للتهديدات المعرفة مسبقا. خيارات النهج مرنة للغاية. على سبيل المثال، يمكن لفريق الأمان في مؤسستك تعيين حماية دقيقة من التهديدات على مستوى المستخدم والمؤسسة والمستلم والمجال. من المهم مراجعة سياساتك بانتظام لأن التهديدات والتحديات الجديدة تظهر يوميا.
 
-- **[خزينة المرفقات](safe-attachments.md)**: يوفر حماية لمدة صفر يوم لحماية نظام المراسلة، من خلال التحقق من مرفقات البريد الإلكتروني بحثا عن محتوى ضار. يقوم بتوجيه جميع الرسائل والمرفقات التي لا تحتوي على توقيع فيروس/برامج ضارة إلى بيئة خاصة، ثم يستخدم تقنيات التعلم الآلي والتحليل للكشف عن الأهداف الضارة. إذا لم يتم العثور على أي نشاط مريب، تتم إعادة توجيه الرسالة إلى علبة البريد. لمعرفة المزيد، راجع [إعداد نهج المرفقات خزينة](set-up-safe-attachments-policies.md).
+- **[المرفقات الآمنة](safe-attachments.md)**: توفر حماية لمدة صفر يوم لحماية نظام المراسلة، من خلال التحقق من مرفقات البريد الإلكتروني بحثا عن محتوى ضار. يقوم بتوجيه جميع الرسائل والمرفقات التي لا تحتوي على توقيع فيروس/برامج ضارة إلى بيئة خاصة، ثم يستخدم تقنيات التعلم الآلي والتحليل للكشف عن الأهداف الضارة. إذا لم يتم العثور على أي نشاط مريب، تتم إعادة توجيه الرسالة إلى علبة البريد. لمعرفة المزيد، راجع ["إعداد نهج المرفقات الآمنة](set-up-safe-attachments-policies.md)".
 
-- **[ارتباطات خزينة](safe-links.md)**: توفر التحقق من وقت النقر لعناوين URL، على سبيل المثال، في رسائل البريد الإلكتروني وملفات Office. الحماية مستمرة ويتم تطبيقها عبر المراسلة وبيئة Office. يتم مسح الارتباطات ضوئيا لكل نقرة: تظل الارتباطات الآمنة قابلة للوصول ويتم حظر الارتباطات الضارة ديناميكيا. لمعرفة المزيد، راجع [إعداد نهج الارتباطات خزينة](set-up-safe-links-policies.md).
+- **[الارتباطات الآمنة](safe-links.md)**: توفر التحقق من وقت النقر لعناوين URL، على سبيل المثال، في رسائل البريد الإلكتروني وملفات Office. الحماية مستمرة ويتم تطبيقها عبر المراسلة وبيئة Office. يتم مسح الارتباطات ضوئيا لكل نقرة: تظل الارتباطات الآمنة قابلة للوصول ويتم حظر الارتباطات الضارة ديناميكيا. لمعرفة المزيد، راجع [إعداد نهج الارتباطات الآمنة](set-up-safe-links-policies.md).
 
-- **[خزينة المرفقات SharePoint OneDrive Microsoft Teams](mdo-for-spo-odb-and-teams.md)**: يحمي مؤسستك عند تعاون المستخدمين ومشاركة الملفات، من خلال تحديد الملفات الضارة ومنعها في مواقع الفريق ومكتبات المستندات. لمعرفة المزيد، راجع [تشغيل Defender لـ Office 365 SharePoint OneDrive Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+- **[المرفقات الآمنة ل SharePoint وOneDrive وMicrosoft Teams](mdo-for-spo-odb-and-teams.md)**: يحمي مؤسستك عند تعاون المستخدمين ومشاركة الملفات، من خلال تحديد الملفات الضارة ومنعها في مواقع الفرق ومكتبات المستندات. لمعرفة المزيد، راجع [تشغيل Defender لـ Office 365 ل SharePoint وOneDrive وMicrosoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 - **[الحماية من التصيد الاحتيالي في Defender لـ Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: الكشف عن محاولات انتحال هوية المستخدمين والمجالات الداخلية أو المخصصة. وهو يطبق نماذج التعلم الآلي والخوارزميات المتقدمة للكشف عن الانتحال لتجنب هجمات التصيد الاحتيالي. لمعرفة المزيد، راجع [تكوين نهج مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365](configure-mdo-anti-phishing-policies.md).
 
@@ -170,7 +170,7 @@ Microsoft Defender لـ Office 365 تحمي مؤسستك من التهديدات
 
 تتم إضافة ميزات جديدة إلى Microsoft Defender لـ Office 365 باستمرار. لمعرفة المزيد، راجع الموارد التالية:
 
-- يوفر [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365) قائمة بالميزات الجديدة في التطوير والطرح.
+- توفر [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365) قائمة بالميزات الجديدة في التطوير والطرح.
 
 - يصف [وصف الخدمة Microsoft Defender لـ Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) الميزات والتوفر عبر خطط Defender لـ Office 365.
 

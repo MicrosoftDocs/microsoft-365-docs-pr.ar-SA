@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 6bc62a4179ba712cbf74e3205fd372727db03182
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 28232f888b925b6a0f930d464b1dcdfca00b2c3b
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823675"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004225"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>توزيع الفرق على نطاق واسع للعاملين في الخطوط الأمامية في Microsoft Teams
 
@@ -127,7 +127,7 @@ ms.locfileid: "66823675"
     ```
 
     إذا تلقيت رسالة خطأ، فأنت معين بالفعل. انتقل إلى الخطوة التالية.
-1. قم بتنزيل [أحدث إصدار من الوحدة النمطية Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams) وتثبيته.
+1. قم بتنزيل [أحدث إصدار معاينة من الوحدة النمطية Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams) وتثبيته. يجب تشغيل الإصدار 4.3.1 (معاينة) أو إصدار معاينة أحدث.  
 
 1. قم بتشغيل ما يلي للاتصال ب Teams.
 
