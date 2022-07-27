@@ -1,5 +1,5 @@
 ---
-title: معلومات الدعم لمصر
+title: معلومات الدعم لجمهورية مصر العربية
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,31 +10,31 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 ms.localizationpriority: medium
-description: تعرف على كيفية الاتصال بالدعم لبلدك أو إقليمك.
+description: تعرّف على كيفية دعم جهة الاتصال في دولتك أو منطقتك.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 0809ab94ffed94250ea48f977e374cab0149523b
 ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ar-SA
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "63567935"
 ---
-# <a name="contact-support-for-egypt"></a>الاتصال بالدعم في مصر
+# <a name="contact-support-for-egypt"></a>الاتصال بالدعم في جمهورية مصر العربية
 
 [ابحث عن بلد أو منطقة أخرى](../get-help-support.md).
 
-## <a name="phone-number"></a>الهاتف رقم
+## <a name="phone-number"></a>رقم الهاتف
 0800 000 0325
 
 ## <a name="hours"></a>الساعات
 ### <a name="billing-support"></a>دعم الفوترة:
 
-العربية: Sun-Thu 10 صباحا-6 م
+العربية: الأحد-الخميس من 10 صباحاً إلى 6 مساءً
 
-الإنجليزية: Mon-Fri 10 صباحا-6 م
+الإنجليزية: الاثنين-الجمعة، 10 صباحاً إلى 6 مساءً
 
 ### <a name="technical-support"></a>الدعم التقني:
 
-العربية: Sun-Thu 10 صباحا-6 م
+العربية: الأحد-الخميس من 10 صباحاً إلى 6 مساءً
 
-الإنجليزية: 24 ساعة في اليوم و7 أيام في الأسبوع
+الإنجليزية: على مدار اليوم، طوال الأسبوع
