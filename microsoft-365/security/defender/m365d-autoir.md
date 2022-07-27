@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/19/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 332802150235ec6f47c4bdea34b34edb94ea1b90
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: deb0a7be8dcf359c901d714006ea3b46862586fb
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731318"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050690"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>التحقيق التلقائي والاستجابة في Microsoft 365 Defender
 
@@ -98,6 +99,15 @@ ms.locfileid: "64731318"
 ## <a name="viewing-a-list-of-investigations"></a>عرض قائمة بالتحقيقات
 
 لعرض التحقيقات، انتقل إلى صفحة **الحوادث** . حدد حدثا، ثم حدد علامة التبويب **"التحقيقات** ". لمعرفة المزيد، راجع [تفاصيل ونتائج التحقيق التلقائي](m365d-autoir-results.md).
+
+## <a name="automated-investigation--response-card"></a>بطاقة استجابة & التحقيق التلقائي 
+
+تتوفر بطاقة استجابة & التحقيق التلقائي الجديد في مدخل Microsoft 365 Defender ([https://security.microsoft.com](https://security.microsoft.com)). رؤية البطاقة الجديدة هذه إلى العدد الإجمالي لإجراءات المعالجة المتوفرة. كما تقدم البطاقة نظرة عامة على جميع التنبيهات ووقت الموافقة المطلوب لكل تنبيه.
+
+:::image type="content" source="../../media/automated-investigation-response-card.png" alt-text="لقطة شاشة تعرض بطاقة استجابة & التحقيق التلقائي.":::
+
+باستخدام بطاقة الاستجابة & التحقيق التلقائي، يمكن لفريق عمليات الأمان الانتقال بسرعة إلى مركز الصيانة عن طريق تحديد الارتباط **"موافقة في مركز الصيانة** "، ثم اتخاذ الإجراءات المناسبة. تمكن البطاقة فريق عمليات الأمان من إدارة الإجراءات التي تنتظر الموافقة بشكل أكثر فعالية. 
+
 
 ## <a name="training-for-security-analysts"></a>تدريب لمحللين أمنيين
 

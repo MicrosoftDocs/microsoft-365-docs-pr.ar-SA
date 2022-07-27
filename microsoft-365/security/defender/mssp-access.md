@@ -2,7 +2,7 @@
 title: توفير وصول موفر خدمة الأمان المدار (MSSP)
 description: تعرف على التغييرات من مركز حماية Microsoft Defender إلى مدخل Microsoft 365 Defender
 keywords: الشروع في العمل مع مدخل Microsoft 365 Defender، Microsoft Defender لـ Office 365، Microsoft Defender لنقطة النهاية، MDO، MDE، جزء واحد من الزجاج، المدخل المتقارب، مدخل الأمان، مدخل أمان defender
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 4eccd4d6140810bae4caef5e194082aeb3054217
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 3df43fd4de6bd040db0acd13678434c7302aff5d
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102361"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050692"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>توفير وصول موفر خدمة الأمان المدار (MSSP) 
 
@@ -123,7 +123,7 @@ ms.locfileid: "66102361"
 
     على سبيل المثال:`https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 
-2. الموافقة على الطلبات أو رفضها في قسم **الموافقات** من واجهة المستخدم.
+2. الموافقة على الطلبات أو رفضها في قسم **"الموافقات** " في واجهة المستخدم.
 
      في هذه المرحلة، تم توفير وصول المحللين، ويجب أن يكون كل محلل قادرا على الوصول إلى مدخل Microsoft 365 Defender العميل:
 

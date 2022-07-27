@@ -11,22 +11,21 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b9689cb0a3470a19e4ceeeb80cd3e77f2d2d8edf
-ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
+ms.openlocfilehash: 5c9adadb46ce040c6c98f2551c14c41fdda333e1
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66843554"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051525"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>الجديد في Microsoft 365 Defender
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 يسرد الميزات والوظائف الجديدة في Microsoft 365 Defender. 
 
@@ -51,6 +50,10 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="june-2022"></a>يونيو 2022
 - (معاينة) تتوفر جداول [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) [وDevitTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) الآن في مخطط التتبع المتقدم. استخدم هذه الجداول لتتبع أحداث التقييم في Defender Vulnerability Management بما في ذلك حالة التكوينات المختلفة وحالات مساحة سطح الهجوم للأجهزة.
 
+- توفر بطاقة الاستجابة & التحقيق التلقائي المقدمة حديثا في مدخل Microsoft 365 Defender نظرة عامة على إجراءات المعالجة المعلقة.
+يمكن لفريق عمليات الأمان عرض جميع الإجراءات التي تنتظر الموافقة، والوقت المحدد للموافقة على هذه الإجراءات في البطاقة نفسها. يمكن لفريق الأمان الانتقال بسرعة إلى مركز الصيانة واتخاذ إجراءات المعالجة المناسبة. تحتوي بطاقة الاستجابة & التحقيق التلقائي أيضا على ارتباط إلى صفحة الأتمتة الكاملة. وهذا يمكن فريق عمليات الأمان من إدارة التنبيهات بشكل فعال وإكمال إجراءات المعالجة في الوقت المناسب.
+
+
 ## <a name="may-2022"></a>مايو 2022
 - (معاينة) اتساقا مع التوسع الذي تم الإعلان عنه مؤخرا في فئة خدمة جديدة تسمى [خبراء الأمان من Microsoft](https://aka.ms/MicrosoftSecurityExperts)، نقدم توفر [خبراء Microsoft Defender للتتبع](defenderexpertsforhuntingprev.md) (Defender Experts for Hunting) للمعاينة العامة. إن Defender Experts for Hunting مخصص للعملاء الذين لديهم مركز عمليات أمان قوي ولكنهم يريدون من Microsoft مساعدتهم في البحث بشكل استباقي عن التهديدات عبر بيانات Microsoft Defender، بما في ذلك نقاط النهاية Office 365 والتطبيقات السحابية والهوية. 
 
@@ -69,7 +72,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="november-2021"></a>نوفمبر 2021
 
-- (معاينة) تتوفر الآن ميزة الوظيفة الإضافية لإدارة التطبيقات إلى Defender for Cloud Apps في Microsoft 365 Defender. توفر حوكمة التطبيقات إمكانية إدارة الأمان والنهج المصممة للتطبيقات التي تدعم OAuth والتي تصل إلى بيانات Microsoft 365 من خلال واجهات برمجة تطبيقات Microsoft Graph. توفر حوكمة التطبيقات الرؤية الكاملة والمعالجة والحوكمة في كيفية وصول هذه التطبيقات ومستخدميها إلى بياناتك الحساسة المخزنة في Microsoft 365 واستخدامها ومشاركتها من خلال رؤى قابلة للتنفيذ وتنبيهات وإجراءات نهج تلقائية. [Mer informasjon حول إدارة التطبيق](/cloud-app-security/app-governance-manage-app-governance).
+- (معاينة) تتوفر الآن ميزة الوظيفة الإضافية لإدارة التطبيقات إلى Defender for Cloud Apps في Microsoft 365 Defender. توفر حوكمة التطبيقات إمكانية إدارة الأمان والنهج المصممة للتطبيقات التي تدعم OAuth والتي تصل إلى بيانات Microsoft 365 من خلال واجهات برمجة تطبيقات Microsoft Graph. توفر حوكمة التطبيقات الرؤية الكاملة والمعالجة والحوكمة في كيفية وصول هذه التطبيقات ومستخدميها إلى بياناتك الحساسة المخزنة في Microsoft 365 واستخدامها ومشاركتها من خلال رؤى قابلة للتنفيذ وتنبيهات وإجراءات نهج تلقائية. [تعرف على المزيد حول حوكمة التطبيق](/cloud-app-security/app-governance-manage-app-governance).
 - (معاينة) تحتوي صفحة [التتبع المتقدمة](advanced-hunting-overview.md) الآن على دعم متعدد المستويات، والتمرير الذكي، وعلامات تبويب المخطط المبسطة، وخيارات التحرير السريع للاستعلامات، ومؤشر استخدام موارد الاستعلام، والتحسينات الأخرى لجعل الاستعلام أكثر سلاسة وأسهل في ضبطه.
 - (معاينة) يمكنك الآن استخدام [الارتباط إلى ميزة الحدث](advanced-hunting-link-to-incident.md) لتضمين الأحداث أو السجلات من نتائج استعلام التتبع المتقدمة مباشرة في حادث جديد أو موجود تقوم بالتحقيق فيه.
 

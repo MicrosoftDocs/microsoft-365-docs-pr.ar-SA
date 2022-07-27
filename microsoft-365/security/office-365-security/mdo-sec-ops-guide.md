@@ -18,12 +18,12 @@ ms.custom: ''
 description: دليل مبادئ توجيهي لموظفي SecOps لإدارة Microsoft Defender لـ Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 389d48f5b7952f3d89a0bb75746babaa9430e7c5
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 97d7a03843fd9c4059bbaa99fa6a406919133026
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "66857324"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051063"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>دليل عمليات الأمان Microsoft Defender لـ Office 365
 
@@ -77,7 +77,7 @@ ms.locfileid: "66857324"
 
 - [مدخل عمليات الإرسال (عمليات إرسال المسؤول).](admin-submission.md)
 - [قائمة السماح/الحظر للمستأجر](tenant-allow-block-list.md)
-- [مستكشف المخاطر](threat-explorer.md)
+- [طرق عرض مستكشف المخاطر](threat-explorer.md)
 
 لمزيد من المعلومات، راجع القسم ["إدارة الاكتشافات الإيجابية الخاطئة والسلبية الخاطئة](#manage-false-positive-and-false-negative-detections) " لاحقا في هذه المقالة.
 
@@ -236,7 +236,7 @@ ms.locfileid: "66857324"
 
 لتوصيل أحداث Defender لـ Office 365 والبيانات الأولية باستخدام Microsoft Sentinel، يمكنك استخدام [موصل Microsoft 365 Defender (M365D)](/azure/sentinel/connect-microsoft-365-defender?tabs=MDO)
 
-يمكنك استخدام هذا المثال البسيط "Hallo Welt" لاختبار وصول واجهة برمجة التطبيقات إلى واجهات برمجة تطبيقات Microsoft Defender: [Hallo Welt لواجهة برمجة تطبيقات REST Microsoft 365 Defender](/microsoft-365/security/defender/api-hello-world).
+يمكنك استخدام هذا المثال البسيط "مرحبًا بالعالم" لاختبار وصول واجهة برمجة التطبيقات إلى واجهات برمجة تطبيقات Microsoft Defender: [مرحبًا بالعالم لواجهة برمجة تطبيقات REST Microsoft 365 Defender](/microsoft-365/security/defender/api-hello-world).
 
 لمزيد من المعلومات حول تكامل أداة SIEM، راجع [دمج أدوات SIEM مع Microsoft 365 Defender](/microsoft-365/security/defender/configure-siem-defender).
 
@@ -295,7 +295,7 @@ ms.locfileid: "66857324"
 >
 > - علبة البريد المخصصة هي علبة بريد Exchange Online.
 > - يجب أن تتضمن أداة إعداد التقارير الخاصة بالجهة الخارجية الرسالة الأصلية المبلغ عنها كرسالة غير مضغوطة. EML أو . مرفق MSG في الرسالة المرسلة إلى علبة البريد المخصصة (لا تقم فقط بإعادة توجيه الرسالة الأصلية إلى علبة البريد المخصصة).
-> - تتطلب علبة البريد المخصصة متطلبات أساسية محددة للسماح بتسليم الرسائل التي يحتمل أن تكون سيئة. لمزيد من المعلومات، راجع [المتطلبات الأساسية لعل بريد مخصص](user-submission.md#custom-mailbox-prerequisites).
+> - تتطلب علبة البريد المخصصة متطلبات أساسية محددة للسماح بتسليم الرسائل التي يحتمل أن تكون سيئة. لمزيد من المعلومات، راجع [متطلبات التكوين لعل بريد عمليات إرسال المستخدم](user-submission.md#configuration-requirements-for-the-user-submissions-mailbox).
 
 عند وصول البريد الإلكتروني الذي أبلغ عنه المستخدم إلى علبة البريد المخصصة، Defender لـ Office 365 ينشئ تلقائيا التنبيه المسمى **"البريد الإلكتروني" الذي أبلغ عنه المستخدم كبريد ضار أو تصيد احتيالي**. يقوم هذا التنبيه بتشغيل [دليل مبادئ AIR](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). ينفذ دليل المبادئ سلسلة من خطوات التحقيقات التلقائية:
 

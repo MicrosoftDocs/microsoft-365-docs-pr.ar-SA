@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: b94c52feb88703ac28f9cd72267d7fa8c952a741
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 03538b93115d28ed033097f99f446def673c5cdb
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489958"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050932"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>أحدث الميزات في Microsoft Defender لنقطة النهاية على iOS
 
@@ -31,16 +31,28 @@ ms.locfileid: "66489958"
 - [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="network-protection"></a>حماية الشبكة
+
 حماية الشبكة على Microsoft Defender لنقطة النهاية الآن في المعاينة العامة. توفر حماية الشبكة الحماية من التهديدات Wi-Fi المحتالة ذات الصلة، والأجهزة المحتالة مثل أجهزة الأناناس وإعلام المستخدم إذا تم الكشف عن تهديد ذي صلة. سيرى المستخدمون أيضا تجربة موجهة للاتصال بشبكات آمنة وتغيير الشبكات عند الاتصال باتصال غير آمن.
 
 يتضمن العديد من عناصر تحكم المسؤول لتوفير المرونة، مثل القدرة على تكوين الميزة من داخل مركز إدارة نقاط النهاية مسؤول Microsoft. يمكن للمسؤولين أيضا تمكين عناصر التحكم في الخصوصية لتكوين البيانات التي يتم إرسالها بواسطة Defender لنقطة النهاية من أجهزة iOS. لمزيد من المعلومات، اقرأ [تكوين حماية الشبكة](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
 
 تم تمكين حماية الشبكة لنظام التشغيل iOS بالفعل للمستأجر الخاص بك. يمكن للمستخدمين النهائيين الذين يختبرون ميزة حماية الشبكة تثبيت إصدار المعاينة من التطبيق عبر TestFlight. استعرض وصولا إلى https://aka.ms/mdeiospp جهاز iOS. سيطالبك هذا بتثبيت تطبيق TestFlight على جهازك أو فتح TestFlight في حالة تثبيته بالفعل. في تطبيق TestFlight، اتبع الإرشادات التي تظهر على الشاشة لتثبيت نقطة نهاية Microsoft Defender. الرجاء التحقق من أن رقم إصدار MDE هو 1.1.29270104.
 
+## <a name="privacy-controls"></a>عناصر التحكم في الخصوصية
+
+يتيح Microsoft Defender لنقطة النهاية على iOS عناصر تحكم الخصوصية لكل من المسؤولين والمستخدمين النهائيين. يتضمن ذلك عناصر التحكم للأجهزة المسجلة (MDM) وكذلك الأجهزة غير المسجلة (MAM). يمكن للمسؤولين تكوين الخصوصية في تقرير تنبيه التصيد الاحتيالي بينما يمكن للمستخدمين النهائيين تكوين المعلومات المشتركة لمؤسستهم.
+
+## <a name="optional-permissions-and-disable-web-protection"></a>الأذونات الاختيارية وتعطيل حماية الويب
+
+يتيح Microsoft Defender لنقطة النهاية على iOS **الأذونات الاختيارية** في تدفق الإلحاق. حاليا الأذونات المطلوبة من قبل MDE إلزامية في تدفق الإلحاق. باستخدام هذه الميزة، يمكن للمسؤول نشر MDE على أجهزة BYOD دون فرض **إذن VPN** الإلزامي أثناء الإلحاق. يمكن للمستخدمين إلحاق التطبيق دون الأذونات الإلزامية ويمكنهم مراجعة هذه الأذونات لاحقا. هذه الميزة موجودة حاليا فقط للأجهزة المسجلة (MDM).
+
+مع **تعطيل حماية الويب**، يمكن للعملاء الذين لا يرغبون في إعداد VPN تكوين لتعطيل **حماية الويب** ونشر MDE دون تلك الميزة. ستستمر ميزات MDE الأخرى في العمل. يتوفر هذا التكوين لكل من الأجهزة المسجلة (MDM) بالإضافة إلى أجهزة (MAM) غير المسجلة.
+
 ## <a name="integration-with-tunnel"></a>التكامل مع النفق
+
 يمكن Microsoft Defender لنقطة النهاية على iOS الآن التكامل مع Microsoft Tunnel، وهو حل بوابة VPN لتمكين الأمان والاتصال في تطبيق واحد.  يوفر التكامل مع Tunnel تجربة VPN أبسط وآمنة على iOS مع تطبيق واحد فقط. كانت هذه الميزة متوفرة مسبقا على Android فقط. لمزيد من التفاصيل، [راجع منشور «techcommunity» هنا](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## <a name="improved-experience-on-supervised-ios-devices"></a>تجربة محسنة على أجهزة iOS الخاضعة للإشراف
@@ -59,7 +71,6 @@ ms.locfileid: "66489958"
 - **التكامل مع Tunnel** - يمكن Microsoft Defender لنقطة النهاية على iOS الآن التكامل مع Microsoft Tunnel، وهو حل بوابة VPN لتمكين الأمان والاتصال في تطبيق واحد. لمزيد من المعلومات، راجع [نظرة عامة على نفق Microsoft](/mem/intune/protect/microsoft-tunnel-overview).
 - يتوفر **الإعداد بدون لمس لأجهزة iOS المسجلة** من خلال Microsoft إدارة نقاط النهاية (Intune) بشكل عام. لمزيد من المعلومات، راجع [عدم إلحاق Microsoft Defender لنقطة النهاية باللمس](/microsoft-365/security/defender-endpoint/ios-install#zero-touch-onboarding-of-microsoft-defender-for-endpoint).
 - إصلاحات الأخطاء.
-
 
 ## <a name="1124210103"></a>1.1.24210103
 

@@ -5,7 +5,7 @@ description: تعرف على قسم تقرير المحلل في كل تقرير
 keywords: تقرير المحلل، وتحليلات التهديدات، والكشف، واستعلامات التتبع المتقدمة، والتخفيف من المخاطر،
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 396be53e4c238a8de21082f025762a1a4243b57c
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 9f699be27f3ad0bee522a3e9d0f5550428aacc91
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731131"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051481"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>فهم تقرير المحلل في تحليلات التهديدات في Microsoft 365 Defender
 
@@ -73,20 +73,20 @@ _قسم تقرير المحلل في تقرير تحليلات المخاطر_
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>فهم كيفية الكشف عن كل تهديد
 
-يوفر تقرير المحلل أيضا عمليات الكشف من _برنامج الحماية من الفيروسات من Microsoft Defender الكشف عن تهديدات نقاط النهاية والرد عليها (_ الكشف التلقائي والاستجابة على النقط النهائية) قدرات.
+يوفر تقرير المحلل أيضا عمليات الكشف من قدرات Microsoft Defender Antivirus _ونقطة النهاية للكشف والاستجابة_ (EDR).
 
 ### <a name="antivirus-detections"></a>عمليات الكشف عن الحماية من الفيروسات
 
-تتوفر عمليات الكشف هذه على الأجهزة التي [برنامج الحماية من الفيروسات من Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) تشغيلها. عند حدوث عمليات الكشف هذه على الأجهزة التي تم إلحاقها Microsoft Defender لنقطة النهاية، فإنها تؤدي أيضا إلى تشغيل التنبيهات التي تضيء المخططات في التقرير.
+تتوفر عمليات الكشف هذه على الأجهزة مع تشغيل [برنامج الحماية من الفيروسات من Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) . عند حدوث عمليات الكشف هذه على الأجهزة التي تم إلحاقها Microsoft Defender لنقطة النهاية، فإنها تؤدي أيضا إلى تشغيل التنبيهات التي تضيء المخططات في التقرير.
 
 >[!NOTE]
 >يسرد تقرير المحلل أيضا **عمليات الكشف العامة** التي يمكن أن تحدد مجموعة واسعة من التهديدات، بالإضافة إلى المكونات أو السلوكيات الخاصة بالخطر المتعقب. لا تنعكس عمليات الكشف العامة هذه في المخططات.
 
-### <a name="endpoint-detection-and-response-edr-alerts"></a>تنبيهات الكشف عن نقطة النهاية والاستجابة لها (الكشف التلقائي والاستجابة على النقط النهائية)
+### <a name="endpoint-detection-and-response-edr-alerts"></a>تنبيهات الكشف عن نقاط النهاية والاستجابة لها (EDR)
 
-يتم رفع تنبيهات الكشف التلقائي والاستجابة على النقط النهائية [للأجهزة التي تم إلحاقها Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). تعتمد هذه التنبيهات بشكل عام على إشارات الأمان التي تم جمعها بواسطة مستشعر Microsoft Defender لنقطة النهاية وقدرات نقطة النهاية الأخرى - مثل الحماية من الفيروسات، وحماية الشبكة، والحماية من العبث - التي تعمل كمصادر إشارة قوية.
+يتم رفع تنبيهات EDR [للأجهزة التي تم إلحاقها Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). تعتمد هذه التنبيهات بشكل عام على إشارات الأمان التي تم جمعها بواسطة مستشعر Microsoft Defender لنقطة النهاية وقدرات نقطة النهاية الأخرى - مثل الحماية من الفيروسات، وحماية الشبكة، والحماية من العبث - التي تعمل كمصادر إشارة قوية.
 
-مثل قائمة اكتشافات مكافحة الفيروسات، تم تصميم بعض التنبيهات الكشف التلقائي والاستجابة على النقط النهائية لوضع علامة عامة على السلوك المشبوه الذي قد لا يكون مقترنا بالخطر المتعقب. في مثل هذه الحالات، سيحدد التقرير بوضوح التنبيه على أنه "عام" وأنه لا يؤثر على أي من المخططات في التقرير.
+مثل قائمة اكتشافات مكافحة الفيروسات، تم تصميم بعض تنبيهات EDR لوضع علامة عامة على السلوك المشبوه الذي قد لا يكون مقترنا بالخطر المتعقب. في مثل هذه الحالات، سيحدد التقرير بوضوح التنبيه على أنه "عام" وأنه لا يؤثر على أي من المخططات في التقرير.
 
 ### <a name="email-related-detections-and-mitigations"></a>عمليات الكشف والتخفيف المتعلقة بالبريد الإلكتروني
 
@@ -103,7 +103,7 @@ _قسم تقرير المحلل في تقرير تحليلات المخاطر_
 تم فحص استعلامات التتبع المتقدمة في تقارير المحللين من قبل محللي Microsoft وهي جاهزة لتشغيلها في [محرر استعلام التتبع المتقدم](https://security.microsoft.com/advanced-hunting). يمكنك أيضا استخدام الاستعلامات لإنشاء [قواعد الكشف المخصصة](custom-detection-rules.md) التي تقوم بتشغيل التنبيهات للتطابقات المستقبلية.
 
 >[!NOTE]
-> كما تتوفر تحليلات المخاطر في [Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). ومع ذلك، فإنه لا يحتوي على تكامل البيانات بين Microsoft Defender Office و Microsoft Defender لنقطة النهاية.
+> كما تتوفر تحليلات المخاطر في [Microsoft Defender لنقطة النهاية](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). ومع ذلك، لا يحتوي على تكامل البيانات بين Microsoft Defender ل Office Microsoft Defender لنقطة النهاية.
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
 

@@ -2,7 +2,7 @@
 title: إلحاق أجهزة Windows في Azure Virtual Desktop
 description: تعرف على إعداد أجهزة Windows إلى Defender لنقطة النهاية في Azure Virtual Desktop
 keywords: Azure Virtual Desktop وAVD وmicrosoft defender ونقطة النهاية والإلحاق
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 63966b84fc2d5a57f9c8b405a97d61ba17450dfb
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: c7f0896d55d5971b3f9e3848ddddb118f024ac54
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822124"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050623"
 ---
 # <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>إلحاق أجهزة Windows في Azure Virtual Desktop
 

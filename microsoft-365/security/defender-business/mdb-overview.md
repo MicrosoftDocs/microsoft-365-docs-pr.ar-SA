@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: dd4dfa5bf173f0109eb9da993a18930c5b67f667
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: e4210c2540e3d6d85dae38134148b5564d18fcf4
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771362"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051569"
 ---
 # <a name="what-is-microsoft-defender-for-business"></a>ما هو Microsoft Defender for Business؟
 
@@ -31,7 +31,7 @@ Defender for Business هو حل أمان نقطة نهاية جديد تم تص�
 تصف هذه المقالة ما هو مضمن في Defender for Business، مع ارتباطات لمعرفة المزيد حول هذه الميزات والقدرات.
 
 
-## <a name="video-enterprise-grade-protection-for-small-and-medium-sized-businesses"></a>فيديو: حماية على مستوى المؤسسة للشركات الصغيرة والمتوسطة الحجم
+## <a name="video-enterprise-grade-protection-for-small--and-medium-sized-businesses"></a>فيديو: الحماية على مستوى المؤسسة للشركات الصغيرة والمتوسطة الحجم
 
 شاهد الفيديو التالي لمعرفة المزيد حول Defender for Business: <br/><br/>
 

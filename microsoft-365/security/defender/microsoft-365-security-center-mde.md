@@ -2,7 +2,7 @@
 title: Microsoft Defender لنقطة النهاية في Microsoft 365 Defender
 description: تعرف على التغييرات من مركز حماية Microsoft Defender إلى Microsoft 365 Defender
 keywords: الشروع في العمل مع Microsoft 365 Defender، Microsoft Defender لـ Office 365، Microsoft Defender لنقطة النهاية، MDO، MDE، مدخل الأمان، مدخل أمان defender
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: dd8721bd8c62a99180f9e8cf34b05c5ec6c8b4c8
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 9d0bff0caec40fa0f4503508643f9aae95a27389
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617183"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051503"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft Defender لنقطة النهاية في Microsoft 365 Defender
 

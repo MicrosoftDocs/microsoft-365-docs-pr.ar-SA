@@ -1,10 +1,10 @@
 ---
-title: الحصول على برمجة برمجة API (برمجة برمجة برمجة) لمجموعات أمان الأجهزة
-description: استرداد مجموعة من ولايات أمان الجهاز باستخدام Microsoft Defender لنقطة النهاية.
-keywords: apis، api للرسم البياني، apis المعتمدة، الحصول، الجهاز، الأمان، الحالة
+title: الحصول على واجهة برمجة تطبيقات مجموعة حالات أمان الأجهزة
+description: استرداد مجموعة من حالات أمان الجهاز باستخدام Microsoft Defender لنقطة النهاية.
+keywords: واجهة برمجة التطبيقات، واجهة برمجة تطبيقات الرسم البياني، واجهة برمجة التطبيقات المدعومة، الحصول، الجهاز، الأمان، الحالة
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,29 +16,29 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 91df2aab70b2bb8edb46700feefdae59df4ac68b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c7750868c557ba4ebb4c37584b69e710ae1a449b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "63571539"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051437"
 ---
-# <a name="get-machines-security-states-collection-api"></a>الحصول على API (API) لمجموعات أجهزة الأمان
+# <a name="get-machines-security-states-collection-api"></a>الحصول على واجهة برمجة تطبيقات مجموعة حالات أمان الأجهزة
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **ينطبق على:** 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
-استرداد مجموعة من الحالات الأمنية للأجهزة.
+استرداد مجموعة من حالات أمان الأجهزة.
 
 ## <a name="permissions"></a>الأذونات
 
@@ -50,24 +50,24 @@ ms.locfileid: "63571539"
 GET /testwdatppreview/machinesecuritystates
 ```
 
-## <a name="request-headers"></a>طلب رؤوس
+## <a name="request-headers"></a>عناوين الطلبات
 
-رأس|القيمة
+عنوان|قيمه
 :---|:---
 التخويل|حامل {token}. **مطلوب**.
-نوع المحتوى|application/json
+نوع المحتوى|تطبيق/json
 
-## <a name="request-body"></a>طلب الحصول على "هيئة"
+## <a name="request-body"></a>نص الطلب
 
-فارغ
+فارغه
 
-## <a name="response"></a>الاستجابة
+## <a name="response"></a>استجابه
 
-إذا نجح - 200 موافق.
+إذا نجحت - 200 موافق.
 
-## <a name="example"></a>مثال
+## <a name="example"></a>المثال
 
-### <a name="request-example"></a>مثال على طلب
+### <a name="request-example"></a>مثال على الطلب
 
 فيما يلي مثال على الطلب.
 
@@ -80,7 +80,7 @@ Content-type: application/json
 
 فيما يلي مثال على الاستجابة.
 
-يحتوي *"معرّف* الحقل" على "معرّف الجهاز" ويساوي "معرّف *الحقل** في معلومات الأجهزة".
+يحتوي *معرف* الحقل على معرف الجهاز ومساوي *لمعرف* الحقل* في معلومات الأجهزة.
 
 ```json
 HTTP/1.1 200 OK

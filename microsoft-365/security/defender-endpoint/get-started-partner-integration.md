@@ -1,9 +1,9 @@
 ---
-title: كن أحد شركاء Microsoft Defender for Endpoint
+title: كن شريكاً Microsoft Defender لنقطة النهاية
 ms.reviewer: ''
-description: تعرف على الخطوات والمتطلبات لدمج الحل مع Microsoft Defender لنقطة النهاية وأن تكون شريكا
-keywords: الشريك، التكامل، التحقق من صحة الحل، المصادقة، المتطلبات، العضو، misa، مدخل التطبيق
-ms.prod: w10
+description: تعرف على الخطوات والمتطلبات لدمج الحل الخاص بك مع Microsoft Defender لنقطة النهاية وأن تكون شريكا
+keywords: شريك، تكامل، التحقق من صحة الحل، المصادقة، المتطلبات، العضو، misa، مدخل التطبيق
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,51 +14,51 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: b063d8435817d7dd64c3febf6e3399f3876ef894
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 276f411699f4a9db61850a04da3ff18d3c6bb2a7
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63575790"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051195"
 ---
-# <a name="become-a-microsoft-defender-for-endpoint-partner"></a>كن أحد شركاء Microsoft Defender for Endpoint
+# <a name="become-a-microsoft-defender-for-endpoint-partner"></a>كن شريكاً Microsoft Defender لنقطة النهاية
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-لكي تصبح شريك حل Defender for Endpoint، ستحتاج إلى اتباع الخطوات التالية وإكمالها.
+لتصبح شريك حل Defender لنقطة النهاية، ستحتاج إلى اتباع الخطوات التالية وإكمالها.
 
 ## <a name="step-1-subscribe-to-a-microsoft-defender-for-endpoint-license"></a>الخطوة 1: الاشتراك في ترخيص Microsoft Defender لنقطة النهاية
 
-هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink). يسمح لك الاشتراك باستخدام مستأجر Microsoft Defender لنقطة النهاية مع ما يصل إلى ثلاثة أجهزة لتطوير حلول تتكامل مع Microsoft Defender ل Endpoint.
+هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink) يسمح لك الاشتراك باستخدام مستأجر Microsoft Defender لنقطة النهاية مع ما يصل إلى ثلاثة أجهزة لتطوير حلول تتكامل مع Microsoft Defender لنقطة النهاية.
 
-## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>الخطوة 2: تلبية متطلبات التحقق من صحة الحل والمصادقة
+## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>الخطوة 2: استيفاء متطلبات التحقق من صحة الحل والمصادقة
 
-أفضل طريقة لشركاء التقنية للمصادقة على عمل تكاملهم هي أن يوافق عميل مشترك على تصميم التكامل المقترح  (\(يمكن للعميل استخدام الخيار موصى بخيار الشريك شركاء و API > [](https://security.microsoft.com/interoperability/partnersapps)\) في صفحة تطبيق الشريك في Microsoft 365 Defender واختباره وتخفضه إلى فريق Microsoft Defender لنقطة النهاية.
+أفضل طريقة لشركاء التكنولوجيا للمصادقة على عمل التكامل الخاص بهم هي أن يوافق العميل المشترك على تصميم التكامل المقترح (يمكن للعميل استخدام خيار \(**التوصية بشركاء** وواجهة برمجة التطبيقات > تطبيقات\) الشريك في [صفحة تطبيق الشريك](https://security.microsoft.com/interoperability/partnersapps) في Microsoft 365 Defender واختباره وعرضه على فريق Microsoft Defender لنقطة النهاية.
 
-بمجرد مراجعة فريق Microsoft Defender لنقطة النهاية للتكامل والموافقة عليه، سنوجهك لتضمينك كشريك في "اقتران الأمان الذكي ل Microsoft".
+بمجرد قيام فريق Microsoft Defender لنقطة النهاية بمراجعة التكامل والموافقة عليه، سنوجهك إلى تضمينك كشريك في Microsoft Intelligent Security Association.
 
-## <a name="step-3-get-listed-in-the-microsoft-defender-for-endpoint-partner-application-portal"></a>الخطوة 3: إدراجك في مدخل تطبيق شريك Microsoft Defender for Endpoint
+## <a name="step-3-get-listed-in-the-microsoft-defender-for-endpoint-partner-application-portal"></a>الخطوة 3: إدراج في مدخل تطبيق الشريك Microsoft Defender لنقطة النهاية
 
-يدعم Microsoft Defender ل Endpoint اكتشاف التطبيقات الخارجية والتكامل باستخدام صفحة الشريك داخل المنتج المضمنة في مدخل [](partner-applications.md) إدارة Microsoft Defender for Endpoint.
+يدعم Microsoft Defender لنقطة النهاية اكتشاف تطبيقات الجهات الخارجية والتكامل باستخدام [صفحة الشريك](partner-applications.md) داخل المنتج المضمنة في مدخل إدارة Microsoft Defender لنقطة النهاية.
 
-لكي تكون شركتك مدرجة كشركاء في صفحة الشريك داخل المنتج، ستحتاج إلى توفير المعلومات التالية:
+لإدراج شركتك كشريك في صفحة الشريك داخل المنتج، ستحتاج إلى توفير المعلومات التالية:
 
 1. شعار مربع (SVG).
-2. اسم المنتج الذي سيتم تقديمه.
-3. توفير وصف منتج من 15 كلمة.
-4. قم بالارتباط بالصفحة المنتقلة للعميل لإكمال عملية التكامل أو منشور المدونة الذي سيتضمن معلومات كافية للعملاء. يجب مراجعة أي إصدار صحفي بما في ذلك اسم منتج Microsoft Defender for Endpoint بواسطة فرق التسويق والهندسة. انتظر 10 أيام على الأقل حتى تتم عملية المراجعة.
-5. إذا كنت تستخدم نهج Azure AD متعدد المستأجرين، فنحن بحاجة إلى اسم تطبيق Azure AD لتعقب استخدام التطبيق.
-6. قم بتضمين User-Agent في كل مكالمة API التي يتم إتصالها ب Microsoft Defender for Endpoint مجموعة عامة من واجهات برمجة التطبيقات أو Graph واجهات برمجة تطبيقات الأمان. سيتم استخدام هذا لأغراض إحصائية، استكشاف الأخطاء وإصلاحها، التعرف على الشريك. بالإضافة إلى ذلك، هذه الخطوة هي أحد متطلبات العضوية في Microsoft Intelligent Security Association (MISA).
+2. اسم المنتج المطلوب تقديمه.
+3. توفير وصف منتج مكون من 15 كلمة.
+4. قم بإنشاء ارتباط إلى الصفحة المنتقل إليها ليكمل العميل عملية التكامل أو منشور المدونة الذي سيتضمن معلومات كافية للعملاء. يجب مراجعة أي إصدار اضغط بما في ذلك اسم المنتج Microsoft Defender لنقطة النهاية من قبل فرق التسويق والهندسة. انتظر 10 أيام على الأقل حتى تتم عملية المراجعة.
+5. إذا كنت تستخدم نهج Azure AD متعدد المستأجرين، فسنحتاج إلى اسم التطبيق Azure AD لتعقب استخدام التطبيق.
+6. قم بتضمين حقل User-Agent في كل استدعاء API تم إجراؤه Microsoft Defender لنقطة النهاية مجموعة عامة من واجهات برمجة التطبيقات أو واجهات برمجة تطبيقات أمان الرسم البياني. سيتم استخدام هذا لأغراض إحصائية واستكشاف الأخطاء وإصلاحها والتعرف على الشريك. بالإضافة إلى ذلك، تعد هذه الخطوة شرطا للعضوية في Microsoft Intelligent Security Association (MISA).
 
    اتبع الخطوات التالية:
 
-   - قم بتعيين User-Agent في كل رأس طلب HTTP إلى التنسيق أدناه.
+   - قم بتعيين حقل User-Agent في كل عنوان طلب HTTP إلى التنسيق أدناه.
 
      ```http
      MdePartner-{CompanyName}-{ProductName}/{Version}
@@ -70,12 +70,12 @@ ms.locfileid: "63575790"
      MdePartner-Contoso-ContosoCognito/1.0.0
      ```
 
-   - لمزيد من المعلومات، راجع [المقطع RFC 2616-14.43](https://tools.ietf.org/html/rfc2616#section-14.43).
+   - لمزيد من المعلومات، راجع [RFC 2616 section-14.43](https://tools.ietf.org/html/rfc2616#section-14.43).
 
-تساعد الشراكة مع Microsoft Defender for Endpoint عملائنا المتبادلين على زيادة تنظيم الدفاعات وتكاملها وتوحيدها. يسعدنا أنك اخترت أن تصبح شريك Microsoft Defender لنقطة النهاية وأن تحقق هدفنا المشترك وهو حماية العملاء وأصولهم بفعالية من خلال منع التهديدات الحديثة والاستجابة لها معا.
+تساعد الشراكات مع Microsoft Defender لنقطة النهاية عملائنا المشتركين على زيادة تبسيط الدفاعات وتكاملها وتنسيقها. يسعدنا اختيارك أن تصبح شريكا Microsoft Defender لنقطة النهاية وتحقيق هدفنا المشترك المتمثل في حماية العملاء وأصولهم بشكل فعال من خلال منع التهديدات الحديثة والاستجابة لها معا.
 
-## <a name="misa-nomination"></a>مهى 
-يمكن تسمية موفري خدمات الأمان المدارة (MSSP) وموردي البرامج المستقلة (ISV) إلى "جمعية الأمان الذكي ل Microsoft" (MISA). لمزيد من المعلومات، راجع [صفحة معلومات MISA](https://www.microsoft.com/security/business/intelligent-security-association).
+## <a name="misa-nomination"></a>تسمية MISA 
+يمكن مرشح موفري خدمات الأمان المدارة (MSSP) وموردي البرامج المستقلين (ISV) لمؤسسة الأمان الذكي من Microsoft (MISA). لمزيد من المعلومات، راجع [صفحة معلومات MISA](https://www.microsoft.com/security/business/intelligent-security-association).
 
 
 ## <a name="related-topics"></a>المواضيع ذات الصلة
