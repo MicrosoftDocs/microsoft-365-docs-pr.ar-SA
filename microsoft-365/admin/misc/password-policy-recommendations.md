@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: اجعل مؤسستك أكثر أمانا ضد هجمات كلمات المرور، وحظر كلمات المرور الشائعة وتمكين المصادقة متعددة العوامل المستندة إلى المخاطر.
-ms.openlocfilehash: 474dbaf6877c3b4da9cd9d345e53cd95b2f42452
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: e99ca9a878ef6a37b2a50dbf27c565661d52ad0e
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695561"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037457"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>توصيات نهج كلمة المرور لكلمه مرور Microsoft 365
 
@@ -61,6 +61,7 @@ ms.locfileid: "66695561"
 
 الهدف الأساسي من نظام كلمات المرور الأكثر أمانا هو تنوع كلمات المرور. تريد أن يحتوي نهج كلمة المرور على الكثير من كلمات المرور المختلفة ويصعب تخمينها. فيما يلي بعض التوصيات للحفاظ على أمان مؤسستك قدر الإمكان.
   
+
 - الحفاظ على متطلبات الحد الأدنى للطول المكونة من ثمانية أحرف
 
 - لا تتطلب متطلبات تكوين الأحرف. على سبيل المثال، \*&amp;(^٪$

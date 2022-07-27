@@ -1,5 +1,5 @@
 ---
-title: كيف يساعد Microsoft 365 Business Premium عملك
+title: Microsoft 365 Business Premium - الإنتاجية والأمان
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 07/26/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,20 +19,27 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: تعرف على كيفية مساعدة Microsoft 365 Business Premium شركتك في الإنتاجية والأمان.
-ms.openlocfilehash: 9d4faf1f954b750d2710a946ad1632e4913809fe
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+description: تعرف على كيفية مساعدة Microsoft 365 Business Premium في إدارة أعمالك بشكل أكثر أمانا مع الإنتاجية والأمان.
+ms.openlocfilehash: cffab130bf64220b47a425b25824fbad2d39c540
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892782"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037677"
 ---
-# <a name="how-microsoft-365-business-premium-helps-your-business"></a>كيف يساعد Microsoft 365 Business Premium عملك
+# <a name="productivity-and-security-for-small--and-medium-sized-businesses"></a>الإنتاجية والأمان للشركات الصغيرة والمتوسطة الحجم 
 
-Microsoft 365 Business Premium هو حل فعال من حيث التكلفة يمكن الشركات الصغيرة والمتوسطة الحجم من العمل بشكل أكثر كفاءة وأمانا من ذي قبل. تصف هذه المقالة كيف يمكن Microsoft 365 Business Premium مساعدة شركتك أو حملتك. تتضمن هذه المقالة الأقسام التالية:
+Microsoft 365 Business Premium هو حل شامل للإنتاجية والأمان على السحابة تم تصميمه وبنائه للشركات الصغيرة والمتوسطة الحجم (1-300 موظف). باستخدام Microsoft 365 Business Premium، يمكنك:
+
+- تمكين موظفيك من أن يكونوا متصلين ومنتجين، سواء كانوا يعملون على الموقع أو عن بعد، باستخدام أفضل أدوات التعاون في فئتها مثل Microsoft Teams.
+- قم بتوفير وصول آمن لموظفيك إلى بيانات العمل والتطبيقات الخاصة بهم، والمساعدة على ضمان أن الموظفين المخولين فقط يمكنهم الوصول إلى بيانات العمل السرية.
+- يمكنك الدفاع ضد التهديدات الإلكترونية المتطورة وحماية بيانات عملك من خلال الحماية من التصيد الاحتيالي وفيروسات الفدية وفقدان البيانات.
+- يمكنك إدارة الأجهزة (Windows وMac وiOS وAndroid) التي تتصل ببياناتك وتأمينها، والمساعدة على تحديث هذه الأجهزة.
+
+يوفر لك Microsoft 365 Business Premium حلا شاملا واحدا للإنتاجية والأمان. بصفتك مسؤولا أو محترفا في مجال تكنولوجيا المعلومات، لديك كل ما تحتاجه في مكان واحد للإدارة والفوترة ودعم 24x7، مع تقليل التكلفة والتعقيد لعملك. تصف هذه المقالة كيف يمكن Microsoft 365 Business Premium مساعدة شركتك أو حملتك، وتتضمن الأقسام التالية:
 
 - [فيديو: أفضل 5 مزايا Microsoft 365 Business Premium](#video-top-5-benefits-of-microsoft-365-business-premium)
-- [الإنتاجية وقدرات الأمان المتقدمة](#productivity-and-security) التي تمكنك من إدارة أعمالك بشكل أكثر أمانا، وعبر الأجهزة، ومن أي مكان تقريبا
+- [الإنتاجية وقدرات الأمان المتقدمة](#productivity-and-security) التي تمكنك من إدارة أعمالك بشكل أكثر أمانا، عبر الأجهزة، ومن أي مكان تقريبا
 - [موارد لتدريب فريقك وجميع الموظفين](#resources-to-train-your-users) على كيفية العمل بشكل منتج مع الحفاظ على بيئة أكثر أمانا
 - [دليل التهديدات الرقمية القابل للتنزيل](#download-the-digital-threats-guide) الذي يصف أنواعا مختلفة من التهديدات وكيفية الحماية منها في عملك اليومي
 - [الخطوات التالية](#next-steps)

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم تسميات الحساسية لحماية المحتوى في مواقع SharePoint وMicrosoft Teams ومجموعات Microsoft 365.
-ms.openlocfilehash: 820ed3e8c629056165661c90ec9cd612222cdbbf
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: d05c2e5a7dfb1fc0c7da1bcaced640bf7c20d3e7
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882264"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037633"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>استخدام تسميات الحساسية لحماية المحتوى في Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint
 
@@ -59,7 +59,7 @@ ms.locfileid: "66882264"
 ![وصف الحساسية عند إنشاء موقع فريق من SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
 > [!NOTE]
-> تدعم تسميات الحساسية للحاويات [القنوات المشتركة ل Teams](/MicrosoftTeams/shared-channels)، قيد المعاينة حاليا. إذا كان لدى الفريق أي قنوات مشتركة، فإنه يرث تلقائيا إعدادات وصف الحساسية من فريقه الأصل، ولا يمكن إزالة هذه التسمية أو استبدالها بتسمية مختلفة.
+> تدعم تسميات الحساسية للحاويات [القنوات المشتركة ل Teams](/MicrosoftTeams/shared-channels). إذا كان لدى الفريق أي قنوات مشتركة، فإنه يرث تلقائيا إعدادات وصف الحساسية من فريقه الأصل، ولا يمكن إزالة هذه التسمية أو استبدالها بتسمية مختلفة.
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>كيفية تمكين تسميات الحساسية للحاويات ومزامنة التسميات
 
@@ -267,17 +267,17 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
 
 أنت الآن جاهز لتطبيق وصف الحساسية أو التسميات على مجموعات Microsoft 365. ارجع إلى وثائق Azure AD للحصول على التعليمات:
 
-- [تعيين تسمية إلى مجموعة جديدة في Azure-Portal](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
+- [تعيين تسمية إلى مجموعة جديدة في مدخل Azure](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
 
-- [تعيين تسمية إلى مجموعة موجودة في Azure-Portal](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
+- [تعيين تسمية إلى مجموعة موجودة في مدخل Azure](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
 
-- [إزالة تسمية من مجموعة موجودة في Azure-Portal](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).
+- [إزالة تسمية من مجموعة موجودة في مدخل Azure](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).
 
 ### <a name="apply-a-sensitivity-label-to-a-new-team"></a>تطبيق وصف الحساسية على فريق جديد
 
 يمكن للمستخدمين تحديد تسميات الحساسية عند إنشاء فرق جديدة في Microsoft Teams. عند تحديد التسمية من القائمة المنسدلة **الحساسية** ، قد يتغير إعداد الخصوصية ليعكس تكوين التسمية. استنادا إلى إعداد وصول المستخدمين الخارجيين الذي حددته للتسمية، يمكن للمستخدمين أو لا يمكنهم إضافة أشخاص من خارج المؤسسة إلى الفريق.
 
-[Mer informasjon حول تسميات الحساسية ل Teams](/microsoftteams/sensitivity-labels)
+[تعرف على المزيد حول أوصاف الحساسية ل Teams](/microsoftteams/sensitivity-labels)
 
 ![إعداد الخصوصية عند إنشاء فريق جديد.](../media/privacy-setting-new-team.png)
 
@@ -389,7 +389,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Mem
   - Yammer
   - Project
   - Power BI
-  - مدخل Uygulamalarım
+  - مدخل تطبيقاتي
 
 ## <a name="classic-azure-ad-group-classification"></a>تصنيف مجموعة Azure AD الكلاسيكية
 

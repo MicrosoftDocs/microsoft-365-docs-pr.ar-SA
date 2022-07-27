@@ -9,19 +9,16 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: استخدم مركز مسؤولي Microsoft 365 أو Windows PowerShell لحذف تقويمات Bookings.
-ms.openlocfilehash: 5b91a6b2c3d3d0637a017b0250ec45394958e147
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 57ad1ea0e7857a1d7af4f98d196a67f27f743dd0
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714362"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037545"
 ---
-# <a name="delete-a-booking-calendar-in-bookings"></a>حذف تقويم حجز في Bookings
+# <a name="delete-a-booking-calendar-in-bookings"></a>حذف تقويم الحجز في Bookings
 
-> [!NOTE]
-> تساعدك هذه المقالة على التفاعل مع أحدث إصدار من Microsoft Bookings. سيتم إيقاف الإصدارات السابقة في الأشهر القادمة.
-
-تشرح هذه المقالة كيفية حذف تقويم حجز غير مرغوب فيه. يمكنك حذف تقويم الحجز في مركز مسؤولي Microsoft 365 أو يمكنك استخدام PowerShell. التقويم Bookings عبارة عن علبة بريد في Exchange Online بحيث تحذف حساب المستخدم المناظر لحذف تقويم الحجز.
+تشرح هذه المقالة كيفية حذف تقويم حجز غير مرغوب فيه. يمكنك حذف تقويم الحجز في مركز مسؤولي Microsoft 365 أو يمكنك استخدام PowerShell. تقويم Bookings هو علبة بريد في Exchange Online لذلك يمكنك حذف حساب المستخدم المطابق لحذف تقويم الحجز.
 
 > [!IMPORTANT]
 > يجب حذف كافة تقويمات الحجز التي أنشأتها في عام 2017 أو قبله باستخدام إرشادات PowerShell حول هذا الموضوع. يمكن حذف كافة تقويمات الحجز التي تم إنشاؤها في عام 2018 أو بعده في مركز مسؤولي Microsoft 365.
@@ -39,17 +36,17 @@ ms.locfileid: "64714362"
 
 1. انتقل إلى مركز مسؤولي Microsoft 365.
 
-1. في مركز الإدارة، حدد **"المستخدمون**".
+1. في مركز مسؤول، حدد **"المستخدمون**".
 
    ![صورة لواجهة مستخدم المستخدمين في مركز مسؤولي Microsoft 365.](../media/bookings-admin-center-users.png)
 
-1. في صفحة **"المستخدمون النشطون** "، اختر أسماء المستخدمين الذين تريد حذفهم، ثم حدد **"حذف مستخدم**".
+1. في صفحة **"المستخدمون النشطون** "، اختر اسم تقويم الحجز الذي تريد حذفه ثم حدد **"حذف مستخدم**".
 
    ![صورة لحذف واجهة مستخدم المستخدم في مركز مسؤولي Microsoft 365.](../media/bookings-delete-user.png)
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>حذف تقويم حجز باستخدام Exchange Online PowerShell
 
-راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2) للمتطلبات الأساسية وإرشادات الاتصال Exchange Online PowerShell.
+راجع [الاتصال Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2) للحصول على المتطلبات الأساسية والإرشادات اللازمة للاتصال Exchange Online PowerShell.
 
 لتنفيذ هذه الخطوات، يجب أن تستخدم نافذة أوامر Microsoft PowerShell نشطة قمت بتشغيلها عن طريق اختيار الخيار "تشغيل كمسؤول".
 
@@ -70,7 +67,7 @@ ms.locfileid: "64714362"
 
    - _\<UPN\>_ هو حسابك بتنسيق اسم المستخدم الأساسي (على سبيل المثال، `john@contoso.com`).
 
-3. عند مطالبتك، قم بتسجيل الدخول باستخدام بيانات اعتماد مسؤول المستأجر إلى المستأجر Microsoft 365 الذي يستضيف تقويم الحجز الذي تريد حذفه بشكل دائم.
+3. عند مطالبتك، قم بتسجيل الدخول باستخدام بيانات اعتماد مسؤول المستأجر إلى مستأجر Microsoft 365 الذي يستضيف تقويم الحجز الذي تريد حذفه بشكل دائم.
 
 4. بمجرد الانتهاء من معالجة هذا الأمر، أدخل الأمر التالي للحصول على قائمة بعلب بريد الحجز في المستأجر الخاص بك:
 

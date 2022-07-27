@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: fc812b399cb6c80dfd41cc5ff4840a8288daac1f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 334e94844c16a386d2b96cd34627877c7584a6bc
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787463"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037699"
 ---
 # <a name="get-started-with-insider-risk-management"></a>بدء استخدام إدارة المخاطر الداخلية
 
@@ -101,7 +101,7 @@ ms.locfileid: "66787463"
 |عرض سجلات تدقيق التصدير &|نعم|لا|لا|لا|نعم|
 
 > [!IMPORTANT]
-> تأكد من أن لديك دائما مستخدما واحدا على الأقل في مجموعات أدوار *Insider Risk Management* أو *Insider مسؤول risk Management (* اعتمادا على الخيار الذي تختاره) بحيث لا يصل تكوين إدارة المخاطر الداخلية إلى سيناريو "صفر مسؤول" إذا غادر مستخدمون معينون مؤسستك.
+> تأكد من أن لديك دائما مستخدما واحدا على الأقل في مجموعات أدوار *Insider Risk Management* المضمنة أو *Insider Risk Management مسؤول* (اعتمادا على الخيار الذي تختاره) بحيث لا يدخل تكوين إدارة المخاطر الداخلية في سيناريو "صفر مسؤول" إذا غادر مستخدمون معينون مؤسستك.
 
 يمكن لأعضاء الأدوار التالية تعيين مستخدمين لمجموعات أدوار إدارة المخاطر الداخلية ولديهم نفس أذونات الحل المضمنة في مجموعة دور *Insider Risk Management مسؤول*:
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: استخدم نهج الاستبقاء للحفاظ على التحكم في المحتوى الذي ينشئه المستخدمون باستخدام البريد الإلكتروني والمستندات والمحادثات بكفاءة. احتفظ بما تريده واتخلص مما لا تريده.
-ms.openlocfilehash: 0f0fa2da9c41700216b0142827897980870f006d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 39405a14fcde6ff41821d3b30c933f5ac226019e
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627658"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037721"
 ---
 # <a name="create-and-configure-retention-policies"></a>إنشاء نهج الاستبقاء وتكوينها
 
@@ -74,7 +74,7 @@ ms.locfileid: "66627658"
 ### <a name="retention-policy-for-teams-locations"></a>نهج الاستبقاء لمواقع Teams
 
 > [!NOTE]
-> تدعم نهج الاستبقاء الآن [القنوات المشتركة](/MicrosoftTeams/shared-channels)، قيد المعاينة حاليا. عند تكوين إعدادات الاستبقاء لموقع **رسالة قناة Teams** ، إذا كان لدى الفريق أي قنوات مشتركة، فإنهم يرثون إعدادات الاستبقاء من فريقهم الأصل.
+> تدعم نهج الاستبقاء [القنوات المشتركة](/MicrosoftTeams/shared-channels). عند تكوين إعدادات الاستبقاء لموقع **رسالة قناة Teams** ، إذا كان لدى الفريق أي قنوات مشتركة، فإنهم يرثون إعدادات الاستبقاء من فريقهم الأصل.
 
 1. من [مدخل التوافق في Microsoft Purview](https://compliance.microsoft.com/)، حدد نهج **استبقاء** **إدارة** >  دورة حياة البيانات.
 

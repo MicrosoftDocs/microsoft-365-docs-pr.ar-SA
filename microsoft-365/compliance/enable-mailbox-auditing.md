@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: يتم تشغيل تسجيل تدقيق علبة البريد بشكل افتراضي في Microsoft 365 (يسمى أيضا "تدقيق علبة البريد الافتراضي" أو "تدقيق علبة البريد بشكل افتراضي"). يعني هذا التكوين أن بعض الإجراءات التي يقوم بها مالكو علب البريد والمفوضون والمسؤولين يتم تسجيلها تلقائيا في سجل تدقيق علبة البريد، حيث يمكنك البحث عن الأنشطة التي يتم تنفيذها على علبة البريد.
-ms.openlocfilehash: c59e1e552f6598287c10adfb2661ec4d358529f9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: edf73e41d5f8f2f977d9f1256ac9a2299be182d6
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627382"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037194"
 ---
 # <a name="manage-mailbox-auditing"></a>إدارة تدقيق علبة البريد
 
@@ -116,7 +116,6 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**SoftDelete**|تم حذف رسالة بشكل دائم أو حذفها من مجلد "العناصر المحذوفة". يتم نقل العناصر المحذوفة مبدئيا إلى مجلد العناصر القابلة للاسترداد.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
 |**تحديث**|تم تغيير رسالة أو أي من خصائصها.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateCalendarDelegation**|تم تعيين تفويض تقويم إلى علبة بريد. يمنح تفويض التقويم شخصا آخر في المؤسسة نفسها أذونات لإدارة تقويم مالك علبة البريد.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>||![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
-|**UpdateComplianceTag**|يتم تطبيق تسمية استبقاء مختلفة على عنصر بريد (يمكن أن يكون للعنصر تسمية استبقاء واحدة فقط معينة له).|![علامة الاختيار.](../media/checkmark.png)|![علامة اختيار](../media/checkmark.png)|![علامة اختيار](../media/checkmark.png)|
 |**UpdateFolderPermissions**|تم تغيير إذن مجلد. تتحكم أذونات المجلد في المستخدمين في مؤسستك في إمكانية الوصول إلى المجلدات الموجودة في علبة البريد والرسائل الموجودة في تلك المجلدات.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
 |**UpdateInboxRules**|تمت إضافة قاعدة علبة الوارد أو إزالتها أو تغييرها. يتم استخدام قواعد علبة الوارد لمعالجة الرسائل في علبة الوارد الخاصة بالمستخدم استنادا إلى الشروط المحددة واتخاذ إجراءات عند استيفاء شروط القاعدة، مثل نقل رسالة إلى مجلد محدد أو حذف رسالة.|![علامة الاختيار.](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|![علامة اختيار](../media/checkmark.png)<sup>\*</sup>|
 

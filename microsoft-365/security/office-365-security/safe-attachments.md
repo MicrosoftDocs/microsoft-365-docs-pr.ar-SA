@@ -20,12 +20,12 @@ ms.collection:
 description: يمكن للمسؤولين التعرف على ميزة "المرفقات الآمنة" في Microsoft Defender لـ Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd2a037ee8ffc87f64bf01b794b468242976fa0b
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 6ba76616e931810aadaeded61a30386c84e46029
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772588"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037501"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>المرفقات الآمنة في Microsoft Defender لـ Office 365
 
@@ -38,6 +38,8 @@ ms.locfileid: "66772588"
 توفر المرفقات الآمنة في [Microsoft Defender لـ Office 365](defender-for-office-365.md) طبقة حماية إضافية لمرفقات البريد الإلكتروني التي تم فحصها بالفعل بواسطة [الحماية من البرامج الضارة في Exchange Online Protection (EOP).](anti-malware-protection.md) على وجه التحديد، تستخدم "المرفقات الآمنة" بيئة ظاهرية للتحقق من المرفقات في رسائل البريد الإلكتروني قبل تسليمها إلى المستلمين (وهي عملية تعرف باسم _التلقي_).
 
 يتم التحكم في الحماية الآمنة للمرفقات لرسائل البريد الإلكتروني بواسطة نهج "المرفقات الآمنة". على الرغم من عدم وجود نهج افتراضي للمرفقات الآمنة، يوفر نهج الأمان المعين مسبقا **للحماية المضمنة** حماية المرفقات الآمنة لجميع المستلمين (المستخدمين الذين لم يتم تعريفهم في نهج المرفقات الآمنة المخصصة). لمزيد من المعلومات، راجع [نهج الأمان التي تم تعيينها مسبقا في EOP Microsoft Defender لـ Office 365](preset-security-policies.md). يمكنك أيضا إنشاء نهج "المرفقات الآمنة" التي تنطبق على مستخدمين أو مجموعات أو مجالات معينة. للحصول على الإرشادات، راجع [إعداد نهج المرفقات الآمنة في Microsoft Defender لـ Office 365](set-up-safe-attachments-policies.md).
+
+إذا كان مرفق الملف مشفرا أو محميا بكلمة مرور، فلا يمكن فحصه بواسطة "المرفقات الآمنة". سيتم تسليم الرسالة التي تحتوي على المرفق، ولا يتلقى المستلم أي تحذير بأن الملف لم يتم مسحه ضوئيا بواسطة "المرفقات الآمنة".
 
 يصف الجدول التالي سيناريوهات للمرفقات الآمنة في Microsoft 365 والمؤسسات Office 365 التي تتضمن Microsoft Defender لـ Office 365 (بمعنى آخر، عدم وجود ترخيص ليس مشكلة في الأمثلة).
 

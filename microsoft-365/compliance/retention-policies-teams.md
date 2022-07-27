@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: تعرف على نهج استبقاء Microsoft 365 التي تنطبق على Microsoft Teams حتى تتمكن من إدارة الاستبقاء التلقائي لرسائل Teams أو حذفها لمؤسستك.
-ms.openlocfilehash: d3a405735ece7cdfd453a946d2350b15cfab6978
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 00b8932c1d529a236a0d70f15443d1afa74c3213
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943387"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037502"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>تعرف على استبقاء Microsoft Teams
 
@@ -44,7 +44,7 @@ ms.locfileid: "66943387"
 ## <a name="whats-included-for-retention-and-deletion"></a>ما هو مضمن للاستبقاء والحذف
 
 > [!NOTE]
-> تدعم نهج الاستبقاء الآن [القنوات المشتركة](/MicrosoftTeams/shared-channels)، قيد المعاينة حاليا. ترث أي قنوات مشتركة إعدادات الاستبقاء من القناة الأصل.
+> تدعم نهج الاستبقاء [القنوات المشتركة](/MicrosoftTeams/shared-channels). ترث أي قنوات مشتركة إعدادات الاستبقاء من القناة الأصل.
 
 يمكن حذف رسائل دردشة Teams ورسائل القناة ورسائل القناة الخاصة باستخدام نهج الاستبقاء ل Teams، بالإضافة إلى النص الموجود في الرسائل، يمكن الاحتفاظ بالعناصر التالية لأسباب تتعلق بالتوافق: الصور المضمنة والجداول وارتباطات النص التشعبي والارتباطات إلى رسائل وملفات Teams الأخرى [ومحتوى البطاقة](/microsoftteams/platform/task-modules-and-cards/what-are-cards). تتضمن رسائل الدردشة ورسائل القناة الخاصة جميع أسماء الأشخاص في المحادثة، وتتضمن رسائل القناة اسم الفريق وعنوان الرسالة (إذا تم توفيرها). 
 
