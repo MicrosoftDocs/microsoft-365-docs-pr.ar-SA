@@ -16,6 +16,7 @@
 #### [الصيانة والعمليات](mde-p1-maintenance-operations.md)
 ### [Microsoft Defender لنقطة النهاية لعملاء الحكومة الأمريكية](gov.md)
 ### [Microsoft Defender لنقطة النهاية على الأنظمة الأساسية غير Windows](non-windows.md)
+### [ توافق حلول مكافحة الفيروسات مع Defender for Endpoint ](defender-compatibility.md)
 
 
 ## [تقييم القدرات](evaluation-lab.md)
@@ -203,6 +204,7 @@
 
 #### [الأذونات]()
 ##### [استخدام الأذونات الأساسية للوصول إلى المدخل](basic-permissions.md)
+##### [تعيين وصول المستخدم إلى مركز حماية Microsoft Defender](assign-portal-access.md)
 ##### [إدارة الوصول إلى المدخل باستخدام RBAC](rbac.md)
 ###### [إنشاء أدوار وإدارتها](user-roles.md)
 ###### [إنشاء مجموعات الأجهزة وإدارتها](machine-groups.md)
@@ -256,8 +258,9 @@
 ###### [تمكين قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-implement.md)
 ###### [تشغيل قواعد تقليل الأجزاء المعرضة للهجوم (ASR)](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [مرجع قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-rules-reference.md)
+##### [استكشاف مشاكل تقليل الأجزاء المعرضة للهجوم وإصلاحها](troubleshoot-asr-rules.md)
 ##### [تمكين أساليب التكوين البديلة لقواعد ASR](enable-attack-surface-reduction.md)
-##### [الأسئلة المتداولة حول قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-faq.yml)
+#### [الأسئلة المتداولة حول قواعد تقليل الأجزاء المعرضة للهجوم](attack-surface-reduction-faq.yml)
 #### [الوصول إلى المجلدات الخاضعة للتحكم]()
 ##### [حماية المجلدات](controlled-folders.md)
 ##### [تقييم الوصول المتحكم به إلى المجلد](evaluate-controlled-folder-access.md)
@@ -292,6 +295,7 @@
 ### حماية الجيل التالي
 #### [نظرة عامة حول حماية الجيل التالي](next-generation-protection.md)
 ##### [نظرة عامة برنامج الحماية من الفيروسات من Microsoft Defender](microsoft-defender-antivirus-windows.md)
+##### [برنامج الحماية من الفيروسات من Microsoft Defender في Windows](microsoft-defender-antivirus-windows.md)
 ##### [معاً بشكل أفضل: برنامج الحماية من الفيروسات من Microsoft Defender Microsoft Defender لنقطة النهاية](why-use-microsoft-defender-antivirus.md)
 ##### [معاً بشكل أفضل: برنامج الحماية من الفيروسات من Microsoft Defender Office 365](office-365-microsoft-defender-antivirus.md)
 #### [تقييم برنامج الحماية من الفيروسات من Microsoft Defender](evaluate-microsoft-defender-antivirus.md)
@@ -302,6 +306,7 @@
 ##### [تحديد مستوى الحماية السحابية](specify-cloud-protection-level-microsoft-defender-antivirus.md)
 ##### [الحماية السحابية ونموذج الإرسال](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [تكوين اتصالات الشبكة برنامج الحماية من الفيروسات من Microsoft Defender والتحقق من صحتها](configure-network-connections-microsoft-defender-antivirus.md)
+#### [تحديد مجموعات تعريف إضافية لفحص حركة مرور الشبكة](specify-additional-definitions-network-traffic-inspection-mdav.md)
 #### [حماية إعدادات الأمان باستخدام الحماية من العبث](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [تشغيل الحظر من النظرة الأولى](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 #### [تكوين الفترة الزمنية لحظر السحابة](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
@@ -335,6 +340,7 @@
 ##### [تكوين الإعلامات التي تظهر على نقاط النهاية](configure-notifications-microsoft-defender-antivirus.md)
 ##### [تحديد ما إذا كان يمكن للمستخدمين تعديل إعدادات نهج برنامج الحماية من الفيروسات من Microsoft Defender محلياً أم لا](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 ##### [تحديد ما إذا كان يمكن للمستخدمين رؤية واجهة مستخدم برنامج الحماية من الفيروسات من Microsoft Defender أو التفاعل معها](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+##### [تشغيل إيقاف التعريف](turn-on-definition-retirement.md)
 
 #### [نشر تقرير حول برنامج الحماية من الفيروسات من Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [نشر برنامج الحماية من الفيروسات من Microsoft Defender](deploy-microsoft-defender-antivirus.md)
@@ -362,6 +368,8 @@
 ##### [تقارير حول صحة الجهاز وتوافقه](machine-reports.md)
 ##### [استكشاف مشاكل الأداء المتعلقة بالحماية في الوقت الحقيقي وإصلاحها](troubleshoot-performance-issues.md) 
 ##### [استكشاف الأخطاء وإصلاحها برنامج الحماية من الفيروسات من Microsoft Defender التقارير في تحديث التوافق](troubleshoot-reporting.md)
+##### [تجميع البيانات التشخيصية برنامج الحماية من الفيروسات من Microsoft Defender](collect-diagnostic-data.md)
+##### [تجميع البيانات التشخيصية لتوافق التحديث برنامج الحماية من الفيروسات من Microsoft Defender](collect-diagnostic-data-update-compliance.md)
 ##### [ضبط أداء برنامج الحماية من الفيروسات من Microsoft Defender](tune-performance-defender-antivirus.md)
 
 #### استكشاف الأخطاء وإصلاحها برنامج الحماية من الفيروسات من Microsoft Defender
@@ -454,12 +462,14 @@
 #### [نظرة عامة على AIR](automated-investigations.md)
 #### [مستويات التنفيذ التلقائي في AIR](automation-levels.md)
 #### [تكوين قدرات AIR](configure-automated-investigations-remediation.md)
+#### [عرض تفاصيل ونتائج الاختبارات التلقائية](autoir-investigation-results.md)
 
 ### [خبراء المخاطر في Microsoft]()
 #### [خبراء المخاطر في Microsoft عامة](microsoft-threat-experts.md)
 #### [تكوين قدرات خبراء المخاطر في Microsoft وإدارتها](configure-microsoft-threat-experts.md)
 
-
+### [حماية الجيل التالي]()
+#### [تشغيل عمليات الفحص المجدولة والمحددة حسب الطلب وتخصيصها](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
 ## المرجع
 ### [فهم مفاهيم المعلومات الاستخبارية للتهديدات](threat-indicator-concepts.md)
@@ -547,11 +557,13 @@
 ####### [الحصول على جهاز بواسطة المعرّف](get-machine-by-id.md)
 ####### [الحصول على سجل الجهاز للمستخدمين](get-machine-log-on-users.md)
 ####### [الحصول على تنبيهات متعلقة بالآلة](get-machine-related-alerts.md)
+####### [الحصول على واجهة برمجة تطبيقات مجموعة حالات أمان الأجهزة](get-machinesecuritystates-collection.md)
 ####### [الحصول على البرامج المثبتة](get-installed-software.md)
 ####### [الحصول على نقاط الضعف المكتشفة](get-discovered-vulnerabilities.md)
 ####### [الحصول على توصيات الأمان](get-security-recommendations.md)
 ####### [إضافة علامات الجهاز أو إزالتها](add-or-remove-machine-tags.md)
 ####### [البحث عن الأجهزة حسب IP](find-machines-by-ip.md)
+####### [البحث عن معلومات الجهاز حسب IP الداخلي](find-machine-info-by-ip.md)
 ####### [البحث عن الأجهزة حسب العلامة](find-machines-by-tag.md)
 ####### [فقدان KBs](get-missing-kbs-machine.md)
 ####### [تعيين قيمة الجهاز](set-device-value.md)
@@ -607,6 +619,7 @@
 ####### [سرد الأجهزة حسب البرنامج](get-machines-by-software.md)
 ####### [الثغرات في القائمة حسب البرنامج](get-vuln-by-software.md)
 ####### [فقدان KBs](get-missing-kbs-software.md)
+####### [الحصول على مجموعة واجهة برمجة تطبيقات قاعدة المعارف](get-machinegroups-collection.md)
 
 ###### [User]()
 ####### [أساليب المستخدم](user.md)
@@ -618,6 +631,8 @@
 ####### [نقاط الضعف في القائمة](get-all-vulnerabilities.md)
 ####### [الثغرات في القائمة حسب الجهاز والبرامج](get-all-vulnerabilities-by-machines.md)
 ####### [الحصول على ثغرة أمنية بواسطة المعرّف](get-vulnerability-by-id.md)
+####### [الحصول على واجهة برمجة تطبيقات خريطة CVE-KB](get-cvekbmap-collection.md)
+####### [الحصول على مجموعة واجهة برمجة تطبيقات قاعدة المعارف](get-kbinfo-collection.md)
 ####### [أجهزة القائمة حسب الثغرة الأمنية](get-machines-by-vulnerability.md)
 
 ##### [كيفية استخدام واجهات برمجة التطبيقات - نماذج]()
@@ -626,6 +641,7 @@
 ###### ["الصيد المتقدم" باستخدام Python](run-advanced-query-sample-python.md)
 ###### [الصيد المتقدم باستخدام PowerShell](run-advanced-query-sample-powershell.md)
 ###### [استخدام استعلامات OData](exposed-apis-odata-samples.md)
+###### [دليل واجهة برمجة تطبيقات PowerShell للتعقب المتقدم](exposed-apis-full-sample-powershell.md)
 
 
 #### [واجهة برمجة التطبيقات لبث البيانات الخام]()
