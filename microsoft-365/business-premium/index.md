@@ -21,14 +21,14 @@ search.appverid:
 - BCS160
 - MET150
 description: تعرّف على كيفية تنفيذ الأمان عبر الإنترنت للشركات الصغيرة أو متوسطة الحجم مع Microsoft 365 Business Premium. تم تحسين قدرات وميزات الأمان عبر الإنترنت لمنع الهجمات الإلكترونية والخروقات الأمنية، والمساعدة في حماية البيانات والأجهزة والمعلومات باستخدام الدفاعات الإلكترونية عالية الدرجة.
-ms.openlocfilehash: cd21390c144d6a175edd2091fb531fe881a9b65e
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 798a5f6ee02ff0b949cb57d818cb40e3221e4a35
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894274"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037743"
 ---
-# <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; للأمان عبر الإنترنت للشركات الصغيرة
+# <a name="microsoft-365-business-premium--cybersecurity-for-small-business"></a>Microsoft 365 Business Premium للأمان عبر الإنترنت للشركات الصغيرة
 
 لنبدأ بقول أنك اتخذت خياراً حكيماً في اعتماد Microsoft 365 Business Premium وأدوات الإنتاجية ذات المستوى العالمي. تم تصميم Microsoft 365 Business Premium مع مراعاة الأمان عبر الإنترنت، لحماية بياناتك وأجهزتك ومعلوماتك. أنت أول وأفضل دفاع لمؤسستك ضد المتسللين والهجمات عبر الإنترنت، بما في ذلك الأفراد العشوائيين أو الجريمة المنظمة أو الدول القومية المتطورة للغاية.
 

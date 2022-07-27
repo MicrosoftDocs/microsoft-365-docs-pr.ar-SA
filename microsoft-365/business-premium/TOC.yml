@@ -2,7 +2,7 @@
   items:
     - name: نظرة عامة
       href: index.md
-    - name: كيفية مساعدة Microsoft 365 عملك
+    - name: سيرِّ أعمالك بشكل أكثر أمانًا
       href: m365bp-secure-users.md
     - name: دليل المبادئ لـ Microsoft 365 Business Premium التجريبي
       href: m365bp-trial-playbook-microsoft-business-premium.md
