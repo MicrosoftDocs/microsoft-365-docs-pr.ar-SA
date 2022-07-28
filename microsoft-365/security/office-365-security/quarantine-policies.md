@@ -17,12 +17,12 @@ ms.custom: ''
 description: يمكن للمسؤولين معرفة كيفية استخدام نهج العزل للتحكم في ما يمكن للمستخدمين القيام به للرسائل المعزولة.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d23083927d50d226692afe19223ed93aceb0b7b
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: d5b95ca3b763bafe2689caf4ab77df9eea9df6d8
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798121"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056867"
 ---
 # <a name="quarantine-policies"></a>سياسات العزل
 
@@ -32,7 +32,7 @@ ms.locfileid: "66798121"
 - [خطة 1 وخطة 2 من Microsoft Defender لـ Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-تسمح نهج العزل (المعروفة سابقا باسم _علامات العزل_) في Exchange Online Protection (EOP) والمسؤولين Microsoft Defender لـ Office 365 بالتحكم في ما يمكن للمستخدمين القيام به للرسائل المعزولة استنادا إلى سبب عزل الرسالة.
+تسمح نهج العزل (المعروفة سابقا _بعلامات العزل_) في Exchange Online Protection (EOP) Pertahanan Microsoft untuk Office 365 للمسؤولين بالتحكم في ما يمكن للمستخدمين القيام به للرسائل المعزولة استنادا إلى سبب عزل الرسالة.
 
 تقليديا، تم السماح للمستخدمين أو رفض مستويات التفاعل لرسائل العزل بناء على سبب عزل الرسالة. على سبيل المثال، يمكن للمستخدمين عرض الرسائل التي تم عزلها من قبل تصفية مكافحة البريد العشوائي أو كرسائل غير هامة أو مجمعة وإصدارها، ولكن لا يمكنهم عرض الرسائل التي تم عزلها على أنها تصيد احتيالي عالي الثقة أو برامج ضارة.
 
@@ -200,10 +200,10 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 
 في ميزات الحماية _المدعومة_ التي تقوم بعزل رسائل البريد الإلكتروني، يمكنك تعيين نهج عزل إلى إجراءات العزل المتوفرة. يتم وصف الميزات التي تقوم بعزل الرسائل وتوفر نهج العزل في الجدول التالي:
 
-|ميزه|هل سياسات العزل مدعومة؟|نهج العزل الافتراضية المستخدمة|
+|الميزة|هل سياسات العزل مدعومة؟|نهج العزل الافتراضية المستخدمة|
 |---|:---:|---|
 |[نهج مكافحة البريد العشوائي](configure-your-spam-filter-policies.md): <ul><li>**البريد العشوائي** (_SpamAction_)</li><li>**البريد العشوائي عالي الثقة** (_HighConfidenceSpamAction_)</li><li>**التصيد الاحتيالي** (_PhishSpamAction_)</li><li>**التصيد الاحتيالي عالي الثقة** (_HighConfidencePhishAction_)</li><li>**Bulk** (_BulkSpamAction_)</li></ul>|نعم|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>AdminOnlyAccessPolicy (بدون وصول)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li></ul>|
-|نهج مكافحة التصيد الاحتيالي: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[حماية انتحال الهوية في Defender لـ Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**إذا تم الكشف عن الرسالة كمستخدم منتحل** (_TargetedUserProtectionAction_)</li><li>**إذا تم الكشف عن الرسالة كمجال منتحل** (_TargetedDomainProtectionAction_)</li><li>**إذا كشف تحليل معلومات علبة البريد عن مستخدم منتحل** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|نعم|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>حماية الانتحال:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li></ul></li></ul>|
+|نهج مكافحة التصيد الاحتيالي: <ul><li>[Spoof intelligence protection](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[حماية انتحال الهوية في Defender pre Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<ul><li>**إذا تم الكشف عن الرسالة كمستخدم منتحل** (_TargetedUserProtectionAction_)</li><li>**إذا تم الكشف عن الرسالة كمجال منتحل** (_TargetedDomainProtectionAction_)</li><li>**إذا كشف تحليل معلومات علبة البريد عن مستخدم منتحل** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul>|نعم|<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>حماية الانتحال:<ul><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li><li>DefaultFullAccessPolicy<sup>\*</sup> (الوصول الكامل)</li></ul></li></ul>|
 |[نهج مكافحة البرامج الضارة](configure-anti-malware-policies.md): يتم عزل جميع الرسائل المكتشفة دائما.|نعم|AdminOnlyAccessPolicy (بدون وصول)|
 |[حماية المرفقات الآمنة](safe-attachments.md): <ul><li>رسائل البريد الإلكتروني التي تحتوي على مرفقات تم عزلها كبرود ضار بواسطة نهج "المرفقات الآمنة" (_تمكين_ _وإجراء)_</li><li>الملفات التي تم عزلها كبرمجيات ضارة بواسطة ["المرفقات الآمنة" ل SharePoint وOneDrive وMicrosoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>نعم</li><li>لا</li></ul>|<ul><li>AdminOnlyAccessPolicy (بدون وصول)</li><li>n/a</li></ul>|
 |[قواعد تدفق البريد](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (المعروفة أيضا باسم قواعد النقل) مع الإجراء: **تسليم الرسالة إلى العزل المستضاف** (_العزل_).|لا|n/a|
@@ -289,7 +289,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 ### <a name="anti-phishing-policies"></a>نُهج مكافحة التصيد الاحتيالي
 
-يتوفر التحليل الذكي للانتحال في EOP Defender لـ Office 365. لا تتوفر حماية انتحال المستخدم وحماية انتحال المجال وتحليل معلومات علبة البريد إلا في Defender لـ Office 365. لمزيد من المعلومات، راجع [نهج مكافحة التصيد الاحتيالي في Microsoft 365](set-up-anti-phishing-policies.md).
+يتوفر التحليل الذكي للانتحال في EOP و Defender pre Office 365. لا تتوفر حماية انتحال المستخدم وحماية انتحال المجال وتحليل معلومات علبة البريد إلا في Defender pre Office 365. لمزيد من المعلومات، راجع [نهج مكافحة التصيد الاحتيالي في Microsoft 365](set-up-anti-phishing-policies.md).
 
 1. في [مدخل Microsoft 365 Defender](https://security.microsoft.com)، انتقل إلى **"نهج التعاون** \> & البريد الإلكتروني **" & قواعد** \> "**نهج** \> التهديد **" لمكافحة التصيد الاحتيالي** في قسم **"النهج**".
 
@@ -323,7 +323,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 تتوفر إرشادات كاملة لإنشاء نهج مكافحة التصيد الاحتيالي وتعديلها في المواضيع التالية:
 
 - [تكوين نهج مكافحة التصيد الاحتيالي في EOP](configure-anti-phishing-policies-eop.md)
-- [تكوين نهج مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365](configure-mdo-anti-phishing-policies.md)
+- [تكوين نهج مكافحة التصيد الاحتيالي في Pertahanan Microsoft untuk Office 365](configure-mdo-anti-phishing-policies.md)
 
 #### <a name="anti-phishing-policies-in-powershell"></a>نهج مكافحة التصيد الاحتيالي في PowerShell
 
@@ -343,7 +343,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
   Get-AntiPhishPolicy | Format-List Name,Enable*Intelligence,Enable*Protection,*Action,*QuarantineTag
   ```
 
-  للحصول على معلومات حول قيم الإجراء الافتراضية وقيم الإجراءات الموصى بها للمقاييس والمقاييس الصارمة، راجع [إعدادات نهج مكافحة التصيد الاحتيالي وإعدادات انتحال EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) [في نهج مكافحة التصيد الاحتيالي في Microsoft Defender لـ Office 365](recommended-settings-for-eop-and-office365.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+  للحصول على معلومات حول قيم الإجراء الافتراضية وقيم الإجراءات الموصى بها للمقاييس والمقاييس الصارمة، راجع [إعدادات نهج مكافحة التصيد الاحتيالي وإعدادات انتحال EOP](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings) [في نهج مكافحة التصيد الاحتيالي في Pertahanan Microsoft untuk Office 365](recommended-settings-for-eop-and-office365.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 - عند إنشاء نهج مكافحة التصيد الاحتيالي، فإن إجراء مكافحة التصيد الاحتيالي دون معلمة نهج عزل مقابلة يعني استخدام [نهج العزل الافتراضي](#step-2-assign-a-quarantine-policy-to-supported-features) لهذا الحكم.
 
@@ -428,7 +428,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
 للحصول على معلومات مفصلة حول بناء الجملة والمعلمة، راجع [Set-MalwareFilterPolicy](/powershell/module/exchange/set-malwarefilterpolicy).
 
-### <a name="safe-attachments-policies-in-defender-for-office-365"></a>نهج المرفقات الآمنة في Defender لـ Office 365
+### <a name="safe-attachments-policies-in-defender-for-office-365"></a>نهج المرفقات الآمنة في Defender pre Office 365
 
 1. في [مدخل Microsoft 365 Defender](https://security.microsoft.com)، انتقل إلى **"نهج تعاون** \> & البريد الإلكتروني **" & قواعد** **"المرفقات الآمنة** **لنهج** \> \> التهديد" في قسم **"النهج**".
 
@@ -448,7 +448,7 @@ New-MalwareFilterPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
    **ملاحظة**: عند إنشاء نهج جديد، تشير قيمة **نهج العزل** الفارغة إلى استخدام نهج العزل الافتراضي. عند تحرير النهج لاحقا، يتم استبدال القيمة الفارغة باسم نهج العزل الافتراضي الفعلي كما هو موضح في الجدول السابق.
 
-يتم وصف الإرشادات الكاملة لإنشاء نهج المرفقات الآمنة وتعديلها في ["إعداد نهج المرفقات الآمنة" في Microsoft Defender لـ Office 365](set-up-safe-attachments-policies.md).
+يتم وصف الإرشادات الكاملة لإنشاء نهج المرفقات الآمنة وتعديلها في ["إعداد نهج المرفقات الآمنة" في Pertahanan Microsoft untuk Office 365](set-up-safe-attachments-policies.md).
 
 #### <a name="safe-attachments-policies-in-powershell"></a>نهج المرفقات الآمنة في PowerShell
 
@@ -516,7 +516,7 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      اتبع هذه الخطوات لتخصيص إعلامات العزل استنادا إلى لغة المستلم:
 
-     1. حدد اللغة من المربع **"اختيار اللغة** ". القيمة الافتراضية هي **الافتراضية**، ما يعني اللغة الإنجليزية.
+     1. حدد اللغة من المربع **"اختيار اللغة** ". القيمة الافتراضية هي **"افتراضي**"، ما يعني اللغة الافتراضية لمؤسسة Microsoft 365. لمزيد من المعلومات، راجع [كيفية تعيين إعدادات اللغة والمنطقة ل Microsoft 365](/office365/troubleshoot/access-management/set-language-and-region).
      2. أدخل **قيما لاسم العرض** **وإخلاء المسؤولية**. يجب أن تكون القيم فريدة لكل لغة. إذا حاولت إعادة استخدام **اسم عرض** أو قيمة **إخلاء مسؤولية** للغات متعددة، فستتلقى رسالة خطأ عند النقر فوق **"حفظ**".
      3. انقر فوق الزر **"إضافة** ".
      4. كرر الخطوات السابقة لإنشاء ثلاثة إعلامات عزل مخصصة كحد أقصى استنادا إلى لغة المستلم. يعرض المربع غير المسمى اللغات التي قمت بتكوينها:

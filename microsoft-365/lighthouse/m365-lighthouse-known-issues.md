@@ -1,5 +1,5 @@
 ---
-title: المشاكل المعروفة مع Microsoft 365 Lighthouse
+title: المشاكل المعروفة في Microsoft 365 Lighthouse
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -16,17 +16,17 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthous
 search.appverid: MET150
-description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، راجع قائمة بالمشكلات المعروفة ل Lighthouse حسب منطقة الميزة.
-ms.openlocfilehash: 61073729b9589033ab361973c1c87bac2b28959a
-ms.sourcegitcommit: 04a93269fbbbdb5513335422cabdc1b269ead5ac
+description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، راجع قائمة بالمشكلات المعروفة ل Lighthouse حسب منطقة الميزات.
+ms.openlocfilehash: ce2ad15e6b4863546693175c509c0220f1383406
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160809"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056845"
 ---
-# <a name="known-issues-with-microsoft-365-lighthouse"></a>المشاكل المعروفة مع Microsoft 365 Lighthouse
+# <a name="known-issues-with-microsoft-365-lighthouse"></a>المشاكل المعروفة في Microsoft 365 Lighthouse
 
-تسرد هذه المقالة المشاكل المعروفة Microsoft 365 Lighthouse حسب منطقة الميزة. لمزيد من المعلومات حول Lighthouse، راجع [نظرة عامة على Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+تسرد هذه المقالة المشاكل المعروفة ل Microsoft 365 Lighthouse حسب منطقة الميزة. لمزيد من المعلومات حول Lighthouse، راجع [نظرة عامة على Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
 
 ## <a name="users"></a>المستخدمون
 
@@ -44,7 +44,7 @@ ms.locfileid: "66160809"
 
 | مشكلة | الوصف | الحل |
 | ---------------- | ---------------- | ---------------- |
-| **اسم التهديد مفقود** | عندما يعرض فنيو MSP قائمة التهديدات من صفحة إدارة المخاطر، قد تفتقد بعض التهديدات إلى اسم التهديد. سيحدث هذا عندما تتم إزالة الجهاز الذي تم الكشف عن التهديد عليه مؤخرا من Intune. | سيتم حل المشكلة في غضون 48 ساعة. لا توجد خطوات إضافية مطلوبة. |
+| **اسم التهديد مفقود** | عندما يعرض فنيو MSP قائمة التهديدات من صفحة إدارة المخاطر، قد تفتقد بعض التهديدات إلى اسم التهديد. سيحدث ذلك عندما تتم إزالة الجهاز الذي تم الكشف عن التهديد عليه مؤخرا من Intune. | سيتم حل المشكلة في غضون 48 ساعة. لا توجد خطوات إضافية مطلوبة. |
 
 ## <a name="baselines"></a>خطوط الاساس
 
@@ -86,8 +86,8 @@ ms.locfileid: "66160809"
 | ---------------- | ---------------- | ---------------- |
 | **مشكلات الترجمة** | قد يواجه المستخدمون مشاكل في ترجمة اللغة عندما تكون لغة المستعرض أو تحديد اللغة في Lighthouse أي شيء آخر غير اللغة الإنجليزية. | لتقليل مشكلات الترجمة في Lighthouse، تأكد من أن تحديد لغة المستعرض يطابق إعداد اللغة في مدخل Lighthouse. لتغيير تحديد اللغة في Lighthouse، سجل الدخول إلى Lighthouse وحدد أيقونة الترس في أعلى الصفحة لفتح صفحة إعدادات المدخل، وحدد **اللغة + المنطقة**، ثم حدد اللغة المناسبة والتنسيقات الإقليمية. |
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
-[الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)\
+[الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقال)\
 [استكشاف أخطاء رسائل الخطأ والمشاكل وإصلاحها في Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (مقالة)\
-[الحصول على التعليمات والدعم Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (مقالة)
+[الحصول على التعليمات والدعم ل Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (مقالة)

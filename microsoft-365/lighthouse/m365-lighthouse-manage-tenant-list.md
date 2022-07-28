@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية إدارة قائمة المستأجرين.
-ms.openlocfilehash: deba0800ee422982e7379d7797d23a977602bbb9
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: f8d1c47dc5fc349cd78b7a5f364b80244900554b
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839766"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056505"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>إدارة قائمة المستأجرين في Microsoft 365 Lighthouse
 
@@ -34,9 +34,9 @@ ms.locfileid: "65839766"
 
 - تلبية [متطلبات Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-- أكمل العمليات الموضحة في المقالة ["التسجيل للحصول على Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md)".
+- أكمل العمليات الموضحة في [مقالة التسجيل في Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) .
 
-- أكمل العمليات الموضحة في [مقالة أمان مدخل "Configure Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md)".
+- أكمل العمليات الموضحة في [مقالة أمان مدخل Microsoft 365 Lighthouse.](m365-lighthouse-configure-portal-security.md)
 
 - كن مسؤولا عاما للمستأجر الشريك.
 
@@ -46,7 +46,7 @@ ms.locfileid: "65839766"
 
 2. حدد **إدارة العلامات**.
 
-3. في جزء **"Manage tags** "، حدد **"Add tag**".
+3. في جزء **"Manage tags** "، حدد **"Create tag**".
 
 4. أدخل اسما ووصفا.
 
@@ -68,13 +68,13 @@ ms.locfileid: "65839766"
 
 1. في جزء التنقل الأيمن في Lighthouse، حدد **Tenants**.
 
-2. من قائمة المستأجرين، حدد النقاط الثلاث (المزيد من الإجراءات) إلى جانب المستأجر الذي تريد وضع علامة عليه.
+2. من قائمة المستأجرين، حدد النقاط الثلاث (إجراءات إضافية) إلى جانب المستأجر الذي تريد وضع علامة عليه.
 
 3. حدد **العلامات**.
 
 4. حدد علامة من القائمة. يمكنك تحديد علامة واحدة فقط في كل مرة.
 
-العلامات التي تم تعيينها بالفعل للمستأجر سيكون لها علامة اختيار على يمين اسم العلامة. يمكنك أيضا تعيين علامة لمستأجرين متعددين عن طريق تحديد خانة الاختيار إلى جانب كل مستأجر في القائمة، وتحديد **"تعيين العلامات**"، ثم تحديد علامة من القائمة.
+العلامات التي تم تعيينها بالفعل للمستأجر لها علامة اختيار على يمين اسم العلامة. يمكنك أيضا تعيين علامة لمستأجرين متعددين عن طريق تحديد خانة الاختيار إلى جانب كل مستأجر في القائمة، وتحديد **"تعيين العلامات**"، ثم تحديد علامة من القائمة.
 
 > [!NOTE]
 > يمكنك إنشاء ما يصل إلى 30 علامة فريدة وتعيينها إلى أكبر عدد ممكن من المستأجرين حسب الحاجة.
@@ -87,7 +87,9 @@ ms.locfileid: "65839766"
 
 3. في جزء **"إدارة العلامات** "، حدد العلامة التي تريد حذفها.
 
-4. حدد **علامة الحذف**.
+4. حدد **حذف**.
+
+5. في مربع حوار التأكيد، حدد **"تأكيد**".
 
 ## <a name="remove-a-tag"></a>إزالة علامة
 
@@ -107,6 +109,6 @@ ms.locfileid: "65839766"
 
 ## <a name="related-content"></a>المحتويات ذات الصلة
 
-[التسجيل للحصول على Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (مقالة)\
-[نظرة عامة على صفحة توافق الجهاز في Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (article)\
+[التسجيل في Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (مقال)\
+[نظرة عامة على صفحة توافق الجهاز في Microsoft 365 Lighthouse](m365-lighthouse-device-compliance-page-overview.md) (مقالة)\
 [الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)

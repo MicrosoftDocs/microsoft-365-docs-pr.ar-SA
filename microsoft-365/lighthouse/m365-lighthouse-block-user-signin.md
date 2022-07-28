@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية حظر حساب مستخدم إذا كنت تعتقد أنه تم اختراقه حتى لا يتمكن المستخدمون من تسجيل الدخول.
-ms.openlocfilehash: feb683c93da25580e41f36a81a89c2be35f8cc85
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: b9e02ba0696d76ec58ec880e12001cdc6800430c
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66821992"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056494"
 ---
 # <a name="block-user-sign-in-in-microsoft-365-lighthouse"></a>حظر تسجيل دخول المستخدم في Microsoft 365 Lighthouse
 
@@ -38,9 +38,9 @@ ms.locfileid: "66821992"
 
 4. في جزء تفاصيل المستخدم، حدد **"حظر تسجيل الدخول**".
 
-5. في جزء إدارة حالة تسجيل الدخول، حدد **حظر المستخدمين من تسجيل الدخول**.
+5. في جزء **"حظر تسجيل الدخول** "، حدد **"حظر" هذا المستخدم من تسجيل الدخول**.
 
-6. حدد **حفظ**.
+6. حدد **"حفظ التغييرات**".
 
 ## <a name="block-sign-in-for-risky-users"></a>حظر تسجيل الدخول للمستخدمين المعرضين للمخاطر
 
@@ -50,7 +50,7 @@ ms.locfileid: "66821992"
 
 3. حدد **حظر تسجيل الدخول**.
 
-4. في جزء إدارة حالة تسجيل الدخول، حدد **حظر المستخدمين من تسجيل الدخول**.
+4. في جزء **إدارة حالة تسجيل الدخول** ، حدد **حظر المستخدمين من تسجيل الدخول**.
 
 5. حدد **حفظ**.
 

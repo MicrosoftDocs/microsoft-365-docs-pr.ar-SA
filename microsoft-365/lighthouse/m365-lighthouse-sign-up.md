@@ -18,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs)، تعرف على كيفية التسجيل في Microsoft 365 Lighthouse.
-ms.openlocfilehash: 19acad120e6796369e5de511b13ad37c4d9e4623
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 03ab19f55d7ab46c798daf0e0b49836739e1e9fd
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489069"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056823"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>التسجيل في Microsoft 365 Lighthouse
 
@@ -50,9 +50,9 @@ ms.locfileid: "66489069"
 
     للتحقق من إضافة Lighthouse بنجاح إلى المستأجر الخاص بك، ابحث عن Microsoft 365 Lighthouse ضمن **Billing > Your Products** في مركز مسؤولي Microsoft 365.
 
-1. إذا لم تتم إعادة توجيهك إلى مدخل Lighthouse، فانتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
+5. إذا لم تتم إعادة توجيهك إلى مدخل Lighthouse، فانتقل إلى <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
 
-1. حدد **"موافق" & متابعة** إكمال تعديل اتفاقية الشريك.
+6. حدد **"موافق" & متابعة** إكمال تعديل اتفاقية الشريك.
 
     > [!NOTE]
     > بعد إكمال التسجيل، قد يستغرق ظهور بيانات العميل في Lighthouse ما يصل إلى 48 ساعة.
@@ -61,7 +61,7 @@ ms.locfileid: "66489069"
 
 [تكوين أمان مدخل Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) 
 
-## <a name="related-content"></a>المحتوى ذو الصلة
+## <a name="related-content"></a>المحتويات ذات الصلة
 
 [نظرة عامة على Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (مقال)   
 [الأسئلة المتداولة حول Microsoft 365 Lighthouse](m365-lighthouse-faq.yml) (مقالة)   

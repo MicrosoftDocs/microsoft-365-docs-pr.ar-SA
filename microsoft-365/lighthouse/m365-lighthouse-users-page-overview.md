@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على صفحة المستخدمين.
-ms.openlocfilehash: 05c889167cc7359900c0dea3396e657c0aa93fba
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 0c4a0fd7f715fec45cbb359ef21b448941451a0a
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717525"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056691"
 ---
 # <a name="overview-of-the-users-page-in-microsoft-365-lighthouse"></a>نظرة عامة على صفحة المستخدمين في Microsoft 365 Lighthouse 
 
@@ -34,7 +34,7 @@ ms.locfileid: "66717525"
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-search-users-tab.png" alt-text="Screenshot of the Search users tab.":::
 
-## <a name="risky-users-tab"></a>علامة تبويب المستخدمين المحفوفة بالمخاطر
+## <a name="risky-users-tab"></a>علامة التبويب "المستخدمون المحفوفوفة بالمخاطر"
 
 تعرض علامة التبويب "المستخدمون المحفوفوفة بالمخاطر" حسابات المستخدمين عبر المستأجرين الذين تم وضع علامة عليهم للسلوك المحفيف. حدد أي من المستخدمين لعرض مزيد من المعلومات حول المخاطر المكتشفة أو للتخفيف من المخاطر عن طريق إعادة تعيين كلمة مرور المستخدم أو حظر تسجيل الدخول. لمزيد من المعلومات حول أنواع المخاطر والكشف، راجع [ما هي المخاطر؟](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 

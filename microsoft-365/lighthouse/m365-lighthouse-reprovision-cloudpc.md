@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية إعادة توفير الكمبيوتر السحابي لـ Windows 365 في Microsoft 365 Lighthouse.
-ms.openlocfilehash: 9ce402d1db83b07653c3e93a5e1e1c25406ae3e9
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: b4e4c4596718ccb09c490d582396de3494eeabf7
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66858088"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056461"
 ---
 # <a name="reprovision-a-windows-365-cloud-pc-in-microsoft-365-lighthouse"></a>إعادة توفير الكمبيوتر السحابي لـ Windows 365 في Microsoft 365 Lighthouse
 
@@ -38,7 +38,7 @@ ms.locfileid: "66858088"
 
 2. حدد علامة التبويب **"كافة أجهزة الكمبيوتر السحابية** ".
 
-3. من القائمة المنسدلة **"عوامل التصفية** "، حدد نوع الترخيص.
+3. من القائمة المنسدلة **عوامل التصفية** ، حدد نوع الترخيص.
 
 4. من القائمة التي تمت تصفيتها، حدد جهازا.
 

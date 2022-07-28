@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على التخفيف من التهديدات باستخدام برنامج الحماية من الفيروسات من Microsoft Defender.
-ms.openlocfilehash: 13583b66ab1251ae5cb5db1122813783ff3b861e
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 005e1c527b8989b7689740e54229768decaebbc3
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822036"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055933"
 ---
 # <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>التخفيف من التهديدات في Microsoft 365 Lighthouse باستخدام برنامج الحماية من الفيروسات من Microsoft Defender
 
@@ -44,11 +44,11 @@ ms.locfileid: "66822036"
 
 2. حدد علامة التبويب **Threats** .
 
-3. من قائمة المخاطر، حدد التهديد الذي تريد التحقيق فيه.
+3. من قائمة التهديدات، حدد التهديد الذي تريد التحقيق فيه.
 
 يوفر جزء تفاصيل التهديد المعلومات التالية:
 
-| الفئة                                      | تعريف                                                                                                   |
+| الفئة                                      | التعريف                                                                                                   |
 |-----------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | الجهاز والمستأجر                             | اسم الجهاز والمستأجر حيث تم العثور على التهديد. حدد اسم الجهاز للاطلاع على معلومات إضافية. |
 | حالة التهديد                                 | حالة التهديد.                                                                                    |
@@ -100,7 +100,7 @@ ms.locfileid: "66822036"
 
 يمكنك الحصول على تحديثات لأجهزة متعددة عن طريق تحديد خانة الاختيار الموجودة بجانب كل اسم جهاز في القائمة ثم تحديد **"تحديث برنامج الحماية من الفيروسات**".
 
-إذا كنت بحاجة إلى إنشاء نهج جديد، فحدد **"تحديث النهج** " من جزء تفاصيل الجهاز. ستقوم Lighthouse بإعادة توجيهك إلى Microsoft إدارة نقاط النهاية (MEM). لمزيد من المعلومات حول إنشاء نهج، راجع [إنشاء نهج توافق في Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+إذا كنت بحاجة إلى إنشاء نهج جديد، فحدد **نهج التحديث** في جزء تفاصيل الجهاز. ستقوم Lighthouse بإعادة توجيهك إلى Microsoft Endpoint Manager (MEM). لمزيد من المعلومات حول إنشاء نهج، راجع [إنشاء نهج توافق في Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 ## <a name="check-pending-antivirus-actions-on-a-device"></a>التحقق من إجراءات الحماية من الفيروسات المعلقة على جهاز
 

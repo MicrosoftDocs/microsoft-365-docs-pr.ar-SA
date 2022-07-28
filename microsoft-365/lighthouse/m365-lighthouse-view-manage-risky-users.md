@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية عرض المستخدمين المعرضين للمخاطر وإدارتهم.
-ms.openlocfilehash: b4f34ccfafa1a002a9c798924641eaeeebdb04fe
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 6f3fdaca1b89561e623d195faa4804c431e43a69
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823408"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055823"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>عرض المستخدمين المعرضين للمخاطر وإدارتها في Microsoft 365 Lighthouse
 

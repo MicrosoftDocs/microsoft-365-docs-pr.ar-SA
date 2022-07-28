@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية عرض فشل اتصال شبكة كمبيوتر سحابي للمؤسسة.
-ms.openlocfilehash: 273e0737cbe59d9ecae40fad0c114f58881a5d05
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e557c2cd01851c77d11aadf75e20b394b2944987
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66858092"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055845"
 ---
 # <a name="view-an-enterprise-cloud-pc-failed-network-connection-in-microsoft-365-lighthouse"></a>عرض فشل اتصال شبكة الكمبيوتر السحابي للمؤسسة في Microsoft 365 Lighthouse
 
-يوفر Microsoft 365 Lighthouse حالة الاتصال بين مستأجري العملاء وAzure Active Directory (Azure AD). عندما يكون اتصال الشبكة في Cloud PC فاشلا، يمكنك عرض معلومات مفصلة في مركز إدارة Microsoft إدارة نقاط النهاية.
+يوفر Microsoft 365 Lighthouse حالة الاتصال بين مستأجري العملاء وAzure Active Directory (Azure AD). عندما يكون اتصال الشبكة في Cloud PC فاشلا، يمكنك عرض معلومات مفصلة في مركز إدارة Microsoft Endpoint Manager.
 
 ## <a name="before-you-begin"></a>قبل البدء
 
@@ -39,11 +39,11 @@ ms.locfileid: "66858092"
 
 2. حدد علامة تبويب **اتصالات شبكة Azure** .
 
-3. من قسم ملخص الاتصال، حدد **الاتصالات الفاشلة**.
+3. من شريط التعليقات التوضيحية الملونة، حدد **الاتصالات الفاشلة**.
 
-4. من القائمة التي تمت تصفيتها، حدد **عرض تفاصيل الاتصال في Microsoft إدارة نقاط النهاية** بجوار الاتصال الذي تريد التحقق منه.
+4. من القائمة التي تمت تصفيتها، حدد **عرض تفاصيل الاتصال في Microsoft Endpoint Manager** بجوار الاتصال الذي تريد التحقق منه.
 
-5. من مركز مسؤولي Microsoft إدارة نقاط النهاية، حدد **"عرض التفاصيل**" لمعرفة المزيد حول الخطأ.
+5. من مركز إدارة Microsoft Endpoint Manager، حدد **"عرض التفاصيل**" لمعرفة المزيد حول الخطأ.
 
 ## <a name="next-steps"></a>الخطوات التالية
 

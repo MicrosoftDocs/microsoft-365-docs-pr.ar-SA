@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية مقارنة إعدادات نهج توافق الجهاز.
-ms.openlocfilehash: 0a0c5127a86832637a16449e06c3df70299b49a3
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9640fcb1438de70c6283c177e64c12fb6da57349
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822890"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056581"
 ---
 # <a name="compare-device-compliance-policy-settings-in-microsoft-365-lighthouse"></a>مقارنة إعدادات نهج توافق الجهاز في Microsoft 365 Lighthouse
 
@@ -30,7 +30,7 @@ ms.locfileid: "66822890"
 
 ## <a name="before-you-begin"></a>قبل البدء
 
-تأكد من أن الأجهزة لديها ترخيص Microsoft Intune ومن أنها مسجلة في Microsoft إدارة نقاط النهاية (MEM).
+تأكد من أن الأجهزة لديها ترخيص Microsoft Intune ومن أنها مسجلة في Microsoft Endpoint Manager (MEM).
 
 ## <a name="compare-policy-settings"></a>مقارنة إعدادات النهج
 
@@ -55,9 +55,9 @@ ms.locfileid: "66822890"
 
 2. حدد علامة التبويب **"النهج** ".
 
-3. من القائمة، حدد اسم نهج.
+3. من قائمة النهج، حدد النهج الذي تريد عرضه.
 
-4. من جزء تفاصيل النهج، حدد **عرض هذا النهج في Microsoft إدارة نقاط النهاية**.
+4. في جزء تفاصيل النهج، حدد **عرض هذا النهج في Microsoft Endpoint Manager**.
 
 5. في MEM، قم بتحرير إعدادات النهج حسب الحاجة.
 

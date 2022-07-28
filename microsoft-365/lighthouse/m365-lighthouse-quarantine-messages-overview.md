@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية إدارة الرسائل المعزولة.
-ms.openlocfilehash: 3a295802ba806c48f01f6f64c8b148169fe28102
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: fcf9978ccbc72e1913e9015a8de40aa6da498394
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66857489"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055889"
 ---
 # <a name="overview-of-quarantined-messages-in-microsoft-365-lighthouse"></a>نظرة عامة على الرسائل المعزولة في Microsoft 365 Lighthouse
 
 يتيح لك Microsoft 365 Lighthouse الاطلاع على رؤى ومعلومات حول رسائل البريد الإلكتروني المعزولة عبر جميع مستأجري العملاء. من طريقة عرض واحدة، يمكنك فرز رسائل البريد الإلكتروني المعزولة واتخاذ الإجراءات المناسبة. تتوفر البيانات إذا قام المستأجر بتنفيذ Exchange Online Protection (EOP) وMicrosoft Defender للخطة 1 من Office365 (MDO).
 
-يمكنك الوصول إلى المعلومات عن طريق تحديد **"حماية البيانات"** من جزء التنقل الأيمن أو الصفحة **الرئيسية** .
+يمكنك الوصول إلى المعلومات عن طريق تحديد **"الصفحة الرئيسية"** في جزء التنقل الأيمن، أو عن طريق تحديد **"حماية البيانات"** في جزء التنقل الأيمن لفتح صفحة الرسائل المعزولة.
 
 ## <a name="quarantined-messages-page"></a>صفحة الرسائل المعزولة
 
@@ -44,7 +44,7 @@ ms.locfileid: "66857489"
 
 تعكس البيانات آخر 30 يوما؛ ومع ذلك، يمكنك استخدام عامل تصفية **النطاق الزمني** لتعديل طريقة العرض.
 
-يحتوي مخطط **سبب** **العزل** على تصنيف تفصيلي لعدد العزل حسب نوع نهج Exchange Online Protection (EOP) وMicrosoft Defender لنهج الخطة 1 من Office365 (MDO). تتضمن هذه الأنواع
+يحتوي قسم **سبب العزل** على تصنيف تفصيلي لعدد العزل حسب نوع نهج Exchange Online Protection (EOP) وMicrosoft Defender لنهج الخطة 1 من Office365 (MDO). تتضمن هذه الأنواع
 
 - البرامج الضاره
 - التصيّد الاحتيالي
@@ -67,5 +67,5 @@ ms.locfileid: "66857489"
 ## <a name="related-content"></a>المحتويات ذات الصلة
 
 [رسائل البريد الإلكتروني المعزولة](../security/office-365-security/quarantine-email-messages.md) (مقالة)\
-[توصيات Microsoft لإعدادات أمان EOP و Defender لـ Office 365](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (مقالة)\
+[توصيات Microsoft لإعدادات أمان EOP و Defender pre Office 365](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (مقالة)\
 [نظرة عامة على Exchange Online Protection (EOP)](../security/office-365-security/exchange-online-protection-overview.md) (مقالة)

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: بالنسبة لموفري الخدمات المدارة (MSPs) الذين يستخدمون Microsoft 365 Lighthouse، تعرف على كيفية إدارة المصادقة متعددة العوامل.
-ms.openlocfilehash: 79690fb052c611fd9d89cf0cdbde8fc8b3f37832
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: aa9d25ce633088d840a38e1927c4ebf3baef56b3
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695627"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056450"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>إدارة المصادقة متعددة العوامل في Microsoft 365 Lighthouse
 
@@ -40,7 +40,7 @@ ms.locfileid: "66695627"
 
 ## <a name="enable-mfa-for-a-tenant"></a>تمكين المصادقة متعددة العوامل لمستأجر
 
-1. في جزء التنقل الأيمن في Lighthouse، حدد **Users** > **Multifactor Authentication**.
+1. في جزء التنقل الأيمن في Lighthouse، حدد مصادقة **المستخدمين** > **متعددة العوامل**.
 
 2. في علامة التبويب **"المصادقة متعددة العوامل** "، ابحث عن مستأجر لا يستخدم المصادقة متعددة العوامل حاليا، ثم حدد هذا المستأجر لفتح جزء تفاصيل المستأجر.
 
@@ -52,7 +52,7 @@ ms.locfileid: "66695627"
 
 ## <a name="notify-users-who-arent-registered-for-mfa"></a>إعلام المستخدمين غير المسجلين في المصادقة متعددة العوامل
 
-1. في جزء التنقل الأيمن في Lighthouse، حدد **Users** > **Multifactor Authentication**.
+1. في جزء التنقل الأيمن في Lighthouse، حدد مصادقة **المستخدمين** > **متعددة العوامل**.
 
 2. في علامة التبويب **"مصادقة متعددة العوامل** "، ابحث عن المستأجرين الذين لديهم مستخدمين غير مسجلين للحصول على المصادقة متعددة العوامل، ثم حدد المستأجر لفتح جزء تفاصيل المستأجر.
 
