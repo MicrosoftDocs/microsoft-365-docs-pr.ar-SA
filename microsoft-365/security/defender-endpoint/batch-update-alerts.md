@@ -1,7 +1,7 @@
 ---
-title: API (API) لكيانات تنبيهات "تحديث الدفعات"
-description: تعرف على كيفية تحديث تنبيهات Microsoft Defender لنقطة النهاية في دفعة باستخدام API هذه. يمكنك تحديث خصائص الحالة وتحديدها وتصنيفها وتعيينها إلى.
-keywords: apis، api الخاصة بالرسم البياني، apis المعتمدة، الحصول، التنبيه، المعلومات، الم id
+title: واجهة برمجة تطبيقات كيانات تنبيه Batch Update
+description: تعرف على كيفية تحديث تنبيهات Microsoft Defender لنقطة النهاية في دفعة واحدة باستخدام واجهة برمجة التطبيقات هذه. يمكنك تحديث الحالة، وتحديد، والتصنيف، والخصائص المعينة إلى.
+keywords: واجهة برمجة التطبيقات، وواجهة برمجة تطبيقات الرسم البياني، وواجهة برمجة التطبيقات المدعومة، والحصول على، والتنبيه، والمعلومات، والمعرف
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a2d695a2b406d4850f0e9896af3ec3b2aede8870
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4837bde82ad11545e17a7432cc701be7c14a28f7
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "63570696"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059790"
 ---
 # <a name="batch-update-alerts"></a>تنبيهات التحديثات الدفعية
 
@@ -28,43 +28,43 @@ ms.locfileid: "63570696"
 
 
 **ينطبق على:** 
-- [خطة Microsoft Defender لنقطة النهاية 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [الخطة 1 من Microsoft Defender لنقطة النهاية](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
->هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a>وصف API
+## <a name="api-description"></a>وصف واجهة برمجة التطبيقات
 
-تحديث خصائص دفعة من التنبيهات [الموجودة](alerts.md).
+التحديثات خصائص دفعة من [التنبيهات](alerts.md) الموجودة.
 
-يتوفر إرسال **التعليق** مع خصائص التحديث أو بدونها.
+تتوفر عمليات إرسال **التعليق** مع تحديث الخصائص أو بدونها.
 
-الخصائص القابلة للتحديث هي: `status`و `classification` `determination``assignedTo`.
+الخصائص القابلة للتحديث هي: `status`و، `determination`و `classification` `assignedTo`.
 
 ## <a name="limitations"></a>القيود
 
-1. يمكنك تحديث التنبيهات المتوفرة في API. لمزيد [من المعلومات، راجع تنبيهات](get-alerts.md) القائمة.
-2. قيود السعر ل API هذه هي 10 مكالمات في الدقيقة و500 مكالمة في الساعة.
+1. يمكنك تحديث التنبيهات المتوفرة في واجهة برمجة التطبيقات. راجع ["تنبيهات القائمة"](get-alerts.md) للحصول على مزيد من المعلومات.
+2. قيود المعدل لواجهة برمجة التطبيقات هذه هي 10 مكالمات في الدقيقة و500 مكالمة في الساعة.
 
 ## <a name="permissions"></a>الأذونات
 
-أحد الأذونات التالية مطلوبة لاستدعاء API هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام Microsoft Defender ل واجهات برمجة تطبيقات نقطة النهاية](apis-intro.md)
+أحد الأذونات التالية مطلوب لاستدعاء واجهة برمجة التطبيقات هذه. لمعرفة المزيد، بما في ذلك كيفية اختيار الأذونات، راجع [استخدام واجهات برمجة التطبيقات Microsoft Defender لنقطة النهاية](apis-intro.md)
 
-نوع الإذن | الإذن | اسم عرض الأذونات
+نوع الإذن | اذن | اسم عرض الإذن
 :---|:---|:---
-Application | Alert.ReadWrite.All | "قراءة كل التنبيهات وكتابتها"
-مفوض (حساب العمل أو المدرسة) | Alert.ReadWrite | "قراءة التنبيهات وكتابتها"
+Application | Alert.ReadWrite.All | "قراءة كافة التنبيهات وكتابتها"
+مفوض (حساب العمل أو المؤسسة التعليمية) | Alert.ReadWrite | "تنبيهات القراءة والكتابة"
 
 > [!NOTE]
 > عند الحصول على رمز مميز باستخدام بيانات اعتماد المستخدم:
 >
-> - يجب أن يكون لدى المستخدم إذن الدور التالي على الأقل: "التحقيق في التنبيهات" (راجع [إنشاء أدوار وإدارتها](user-roles.md) للحصول على مزيد من المعلومات)
-> - يحتاج المستخدم إلى الوصول إلى الجهاز المقترن بالتنبيه، استنادا إلى إعدادات مجموعة الأجهزة (راجع إنشاء [مجموعات](machine-groups.md) الأجهزة وإدارتها للحصول على مزيد من المعلومات)
+> - يحتاج المستخدم إلى الحصول على إذن الدور التالي على الأقل: "التحقيق في التنبيهات" (راجع [إنشاء الأدوار وإدارتها](user-roles.md) لمزيد من المعلومات)
+> - يحتاج المستخدم إلى الوصول إلى الجهاز المقترن بالتنبيه، استنادا إلى إعدادات مجموعة الأجهزة (راجع [إنشاء مجموعات الأجهزة وإدارتها](machine-groups.md) لمزيد من المعلومات)
 
 ## <a name="http-request"></a>طلب HTTP
 
@@ -72,35 +72,38 @@ Application | Alert.ReadWrite.All | "قراءة كل التنبيهات وكتا
 POST /api/alerts/batchUpdate
 ```
 
-## <a name="request-headers"></a>طلب رؤوس
+## <a name="request-headers"></a>عناوين الطلبات
 
-الاسم|النوع|الوصف
+الاسم|نوع|الوصف
 :---|:---|:---
 التخويل | سلسلة | حامل {token}. **مطلوب**.
-نوع المحتوى | سلسلة | application/json. **مطلوب**.
+نوع المحتوى | سلسلة | التطبيق/json. **مطلوب**.
 
-## <a name="request-body"></a>طلب الحصول على "هيئة"
+## <a name="request-body"></a>نص الطلب
 
-في جزء الطلب، قم بتزويدك ب IDs الخاصة بالتنبيهات المطلوب تحديثها وقيم الحقول ذات الصلة التي تريد تحديثها لهذه التنبيهات.
+في نص الطلب، قم بتوفير معرفات التنبيهات التي سيتم تحديثها وقيم الحقول ذات الصلة التي ترغب في تحديثها لهذه التنبيهات.
 
-ستحافظ الخصائص الموجودة غير المضمنة في هيئة الطلب على قيمها السابقة أو سيتم إعادة حسابها استنادا إلى التغييرات التي تم إدخالها على قيم الخصائص الأخرى.
+ستحتفظ الخصائص الموجودة غير المضمنة في نص الطلب بقيمها السابقة أو إعادة حسابها استنادا إلى التغييرات التي أجريت على قيم الخصائص الأخرى.
 
 للحصول على أفضل أداء، يجب عدم تضمين القيم الموجودة التي لم تتغير.
 
-الخاصية | النوع | الوصف
+الخاصيه | نوع | الوصف
 :---|:---|:---
-alertIds | ListString&lt;&gt;| قائمة بالم IDs الخاصة بالتنبيهات التي سيتم تحديثها. **مطلوب**
-الحالة | سلسلة | يحدد الحالة المحدثة للتنبيهات المحددة. قيم الخاصية هي: 'جديد' و'InProgress' و'تم الحل'.
-assignedTo | سلسلة | مالك التنبيهات المحددة
-تصنيف | سلسلة | يحدد مواصفات التنبيهات المحددة. قيم الخاصية هي: 'غير معروف'، 'FalsePositive'، 'TruePositive'. 
-تحديد | سلسلة | يحدد تحديد التنبيهات المحددة. قيم الخاصية هي: 'NotAvailable' و'Apt' و'Malware' و'SecurityPersonnel' و'SecurityTesting' و'UnwantedSoftware' و'أخرى'
-تعليق | سلسلة | التعليق الذي يجب إضافته إلى التنبيهات المحددة.
+alertIds | سلسلة قائمة&lt;&gt;| قائمة بمعرفات التنبيهات التي سيتم تحديثها. **مطلوب**
+حاله | سلسلة | تحديد الحالة المحدثة للتنبيهات المحددة. قيم الخاصية هي: "جديد" و"InProgress" و"تم الحل".
+معين إلى | سلسلة | مالك التنبيهات المحددة
+تصنيف | سلسلة | تحديد مواصفات التنبيهات المحددة. قيم الخاصية هي: "True positive" و"Informational, expected activity" و"False positive".
+تحديد | سلسلة | تحديد التنبيهات المحددة. قيم الخصائص هي: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+التعليق | سلسلة | تعليق لإضافته إلى التنبيهات المحددة.
 
-## <a name="response"></a>الاستجابة
+>[!NOTE]
+>حوالي 29 أغسطس 2022، سيتم إهمال قيم تحديد التنبيه المدعومة مسبقا ('Apt' و'SecurityPersonnel') ولن تعود متوفرة عبر واجهة برمجة التطبيقات.
 
-إذا نجح هذا الأسلوب، فيرجع 200 موافق، مع وجود هيئة استجابة فارغة.
+## <a name="response"></a>استجابه
 
-## <a name="example"></a>مثال
+إذا نجحت هذه الطريقة، ترجع 200 موافق، مع نص استجابة فارغ.
+
+## <a name="example"></a>المثال
 
 ### <a name="request"></a>طلب
 

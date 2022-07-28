@@ -1,7 +1,7 @@
 ---
-title: الحصول على API للتنبيهات
+title: الحصول على واجهة برمجة تطبيقات التنبيهات
 description: تعرف على أساليب وخصائص نوع مورد التنبيه في Microsoft Defender لنقطة النهاية.
-keywords: apis، api الخاصة بالرسم البياني، apis المعتمدة، الحصول، التنبيهات، الأخيرة
+keywords: واجهة برمجة التطبيقات، واجهة برمجة تطبيقات الرسم البياني، واجهة برمجة التطبيقات المدعومة، get، التنبيهات، الأخيرة
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,86 +15,89 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3344bb13d785739f7957c3b0d000b04ae7fea95b
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: e03de336dbbcdad5b9e18730936a507bf1d627bc
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "63570497"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059789"
 ---
 # <a name="alert-resource-type"></a>نوع مورد التنبيه
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **ينطبق على:**
-- [خطة Microsoft Defender لنقطة النهاية 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Defender for Endpoint الخطة 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
->هل تريد تجربة Microsoft Defender لنقطة النهاية؟ [التسجيل للحصول على تجربة مجانية.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+>هل تريد تجربة Defender لنقطة النهاية؟ [التسجيل للحصول على إصدار تجريبي مجاني.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="methods"></a>الأساليب
+## <a name="methods"></a>اساليب
 
 <br>
 
 ****
 
-|الأسلوب|نوع الإرجاع|الوصف|
+|الاسلوب|نوع الإرجاع|الوصف|
 |---|---|---|
-|[الحصول على تنبيه](get-alert-info-by-id.md)|[تنبيه](alerts.md)|احصل على [كائن تنبيه](alerts.md) واحد.|
-|[تنبيهات القائمة](get-alerts.md)|[مجموعة التنبيهات](alerts.md)|مجموعة [تنبيهات](alerts.md) القائمة.|
-|[تحديث التنبيه](update-alert.md)|[تنبيه](alerts.md)|تحديث تنبيه [معين](alerts.md).|
+|[الحصول على تنبيه](get-alert-info-by-id.md)|[تنبيه](alerts.md)|الحصول على كائن [تنبيه](alerts.md) واحد.|
+|[تنبيهات القائمة](get-alerts.md)|مجموعة [التنبيهات](alerts.md)|قائمة مجموعة [التنبيهات](alerts.md) .|
+|[تحديث التنبيه](update-alert.md)|[تنبيه](alerts.md)|تحديث [تنبيه](alerts.md) معين.|
 |[تنبيهات التحديثات الدفعية](batch-update-alerts.md)||تحديث دفعة من [التنبيهات](alerts.md).|
-|[إنشاء تنبيه](create-alert-by-reference.md)|[تنبيه](alerts.md)|قم بإنشاء تنبيه استنادا إلى بيانات الحدث التي تم الحصول عليها من ["البحث المتقدم](run-advanced-query-api.md)".|
-|[سرد المجالات ذات الصلة](get-alert-related-domain-info.md)|مجموعة المجالات|قائمة عناوين URL المقترنة بالتنبيه.|
-|[سرد الملفات ذات الصلة](get-alert-related-files-info.md)|[مجموعة](files.md) الملفات|سرد [كيانات الملفات](files.md) المقترنة [بالتنبيه](alerts.md).|
-|[قائمة ب IPs ذات الصلة](get-alert-related-ip-info.md)|مجموعة IP|قائمة ب IPs المقترنة بالتنبيه.|
-|[الحصول على الأجهزة ذات الصلة](get-alert-related-machine-info.md)|[الجهاز](machine.md)|[الجهاز المقترن](machine.md) [بالتنبيه](alerts.md).|
-|[الحصول على مستخدمين مرتبطين](get-alert-related-user-info.md)|[User](user.md)|[المستخدم المقترن](user.md) [بالتنبيه](alerts.md).|
+|[إنشاء تنبيه](create-alert-by-reference.md)|[تنبيه](alerts.md)|إنشاء تنبيه استنادا إلى بيانات الحدث التي تم الحصول عليها من [التتبع المتقدم](run-advanced-query-api.md).|
+|[سرد المجالات ذات الصلة](get-alert-related-domain-info.md)|مجموعة المجالات|سرد عناوين URL المقترنة بالتنبيه.|
+|[سرد الملفات ذات الصلة](get-alert-related-files-info.md)|[مجموعة الملفات](files.md)|سرد كيانات [الملف](files.md) المقترنة [بالتنبيه](alerts.md).|
+|[سرد عناوين IP ذات الصلة](get-alert-related-ip-info.md)|مجموعة IP|سرد عناوين IP المقترنة بالتنبيه.|
+|[الحصول على الأجهزة ذات الصلة](get-alert-related-machine-info.md)|[الجهاز](machine.md)|[الجهاز](machine.md) المقترن [بالتنبيه](alerts.md).|
+|[الحصول على المستخدمين المرتبطين](get-alert-related-user-info.md)|[User](user.md)|[المستخدم](user.md) المقترن [بالتنبيه](alerts.md).|
 |
 
-## <a name="properties"></a>الخصائص
+## <a name="properties"></a>خصائص
 
 <br>
 
 ****
 
-|الخاصية|النوع|الوصف|
+|الخاصيه|نوع|الوصف|
 |---|---|---|
-|الم id|سلسلة|"معرّف التنبيه".|
-|العنوان|سلسلة|عنوان التنبيه.|
-|الوصف|سلسلة|وصف التنبيه.|
-|alertCreationTime|DateTimeOffset قابل للبطلان|التاريخ والوقت (في UTC) تم إنشاء التنبيه.|
-|lastEventTime|DateTimeOffset قابل للبطلان|آخر تكرار للحدث الذي تم من خلال تشغيل التنبيه على الجهاز نفسه.|
-|firstEventTime|DateTimeOffset قابل للبطلان|التكرار الأول للحدث الذي تسبب في تشغيل التنبيه على هذا الجهاز.|
-|lastUpdateTime|DateTimeOffset قابل للبطلان|التاريخ والوقت (في UTC) تم آخر تحديث للتنبيه.|
-|resolvedTime|DateTimeOffset قابل للبطلان|التاريخ والوقت الذي تم فيه تغيير حالة التنبيه إلى "تم الحل".|
-|incidentId|Long قابل للبطلان|هو ["](view-incidents-queue.md) المايود" للتنبيه.|
-|investigationId|Long قابل للبطلان|إن ["معرّف](automated-investigations.md) التحقيق" مرتبط بالتنبيه.|
-|investigationState|تعداد قابل للبطلان|الحالة الحالية [للتحري](automated-investigations.md). القيم المحتملة هي: "غير معروف"، "تم إنهاؤه"، "تم المعالجة بنجاح"، "نينا"، 'فشل'، 'تم الإصلاح جزئيا'، 'قيد التشغيل'، 'معلقApproval'، 'PendingResource'، 'PartiallyInvestigated'، 'TerminatedByUser'، 'TerminatedBySystem'، 'قائمة الانتظار'، 'InnerFailure'، 'PreexistingAlert'، 'UnsupportedOs'، 'UnsupportedAlertType'، 'SuppressedAlert'.|
-|assignedTo|سلسلة|مالك التنبيه.|
+|id|سلسلة|معرف التنبيه.|
+|عنوان|سلسلة|عنوان التنبيه.|
+|وصف|سلسلة|وصف التنبيه.|
+|alertCreationTime|Nullable DateTimeOffset|التاريخ والوقت (في UTC) تم إنشاء التنبيه.|
+|lastEventTime|Nullable DateTimeOffset|آخر تكرار للحدث الذي أدى إلى تشغيل التنبيه على نفس الجهاز.|
+|firstEventTime|Nullable DateTimeOffset|التكرار الأول للحدث الذي أدى إلى تشغيل التنبيه على هذا الجهاز.|
+|lastUpdateTime|Nullable DateTimeOffset|التاريخ والوقت (في UTC) تم آخر تحديث للتنبيه.|
+|resolvedTime|Nullable DateTimeOffset|التاريخ والوقت الذي تم فيه تغيير حالة التنبيه إلى "تم الحل".|
+|معرف الحدث|قيمة طويلة فارغة|معرف [الحادث](view-incidents-queue.md) الخاص بالتنبيه.|
+|معرف التحقيق|قيمة طويلة فارغة|معرف [التحقيق](automated-investigations.md) المتعلق بالتنبيه.|
+|حالة التحقيق|قائمة تعداد فارغة|الحالة الحالية [للتحقيق](automated-investigations.md). القيم المحتملة هي: 'غير معروف'، 'تم الإنهاء'، 'SuccessfullyRemediated'، 'Benign'، 'Failed'، 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.|
+|معين إلى|سلسلة|مالك التنبيه.|
 |rbacGroupName|سلسلة|اسم مجموعة أجهزة RBAC.|
-|mitreTechniques|سلسلة|ID أسلوب Mitre Enterprise.|
-|relatedUser|سلسلة|تفاصيل المستخدم ذات الصلة بتنبيه معين.|
-|الخطورة|تعداد|خطورة التنبيه. القيم المحتملة هي: "غير محدد" و"معلوماتي" و"منخفض" و"متوسط" و"عال".|
-|الحالة|تعداد|يحدد الحالة الحالية للتنبيه. القيم المحتملة هي: "غير معروف" و"جديد" و"InProgress" و"تم الحل".|
-|تصنيف|تعداد قابل للبطلان|مواصفات التنبيه. القيم المحتملة هي: "غير معروف"، "FalsePositive"، "TruePositive".|
-|تحديد|تعداد قابل للبطلان|يحدد تحديد التنبيه. القيم المحتملة هي: 'NotAvailable' و'Apt' و'Malware' و'SecurityPersonnel' و'SecurityTesting' و'UnwantedSoftware' و'أخرى'.|
-|الفئة|سلسلة|فئة التنبيه.|
-|detectionSource|سلسلة|مصدر الكشف.|
-|threatFamilyName|سلسلة|العائلة التي تواجه خطر.|
-|threatName|سلسلة|اسم التهديد.|
-|machineId|سلسلة|الم ID الخاص [بكيان](machine.md) جهاز مقترن بالتنبيه.|
-|computerDnsName|سلسلة|[اسم](machine.md) مؤهل بالكامل للجهاز.|
-|aadTenantId|سلسلة|ID Azure Active Directory.|
-|id|سلسلة|هو الملهم الذي تسبب في تشغيل التنبيه.|
-|التعليقات|قائمة تعليقات التنبيه|يحتوي كائن تنبيه التعليق على: سلسلة التعليق وسلسلة createdBy وإنشاء وقت التاريخ.|
-|الدليل|قائمة بدلليل التنبيه|الدليل المتعلق بالتنبيه. راجع المثال أدناه.|
+|mitreTechniques|سلسلة|معرف تقنية Mitre Enterprise.|
+|مستخدم ذي صلة|سلسلة|تفاصيل المستخدم المتعلقة بتنبيه معين.|
+|شده|التعداد|خطورة التنبيه. القيم المحتملة هي: "غير محدد"، و"معلوماتي"، و"منخفض"، و"متوسط" و"مرتفع".|
+|حاله|التعداد|تحديد الحالة الحالية للتنبيه. القيم المحتملة هي: "غير معروف" و"جديد" و"InProgress" و"تم الحل".|
+|تصنيف|قائمة تعداد فارغة|مواصفات التنبيه. القيم المحتملة هي: 'غير معروف'، 'FalsePositive'، 'TruePositive'.|
+|تحديد|قائمة تعداد فارغة|يحدد تحديد التنبيه. القيم المحتملة هي: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.|
+|الفئه|سلسلة|فئة التنبيه.|
+|مصدر الكشف|سلسلة|مصدر الكشف.|
+|threatFamilyName|سلسلة|عائلة المخاطر.|
+|اسم التهديد|سلسلة|اسم التهديد.|
+|معرف الجهاز|سلسلة|معرف كيان [جهاز](machine.md) مقترن بالتنبيه.|
+|اسم الكمبيوتر|سلسلة|اسم [الجهاز](machine.md) المؤهل بالكامل.|
+|aadTenantId|سلسلة|معرف Azure Active Directory.|
+|معرف الكشف|سلسلة|معرف جهاز الكشف الذي قام بتشغيل التنبيه.|
+|تعليقات|قائمة تعليقات التنبيه|يحتوي كائن تعليق التنبيه على: سلسلة تعليق وسلسلة createdBy ووقت تاريخ createTime.|
+|الادله|قائمة بأدلة التنبيه|الأدلة المتعلقة بالتنبيه. راجع المثال أدناه.|
 |
 
-### <a name="response-example-for-getting-single-alert"></a>مثال الاستجابة للحصول على تنبيه واحد:
+>[!NOTE]
+>حوالي 29 أغسطس 2022، سيتم إهمال قيم تحديد التنبيه المدعومة مسبقا ('Apt' و'SecurityPersonnel') ولن تعود متوفرة عبر واجهة برمجة التطبيقات.
+
+### <a name="response-example-for-getting-single-alert"></a>مثال استجابة للحصول على تنبيه واحد:
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_1364969609
