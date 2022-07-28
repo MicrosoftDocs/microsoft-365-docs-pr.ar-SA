@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: قم بتشغيل إعداد يمكن التأليف المشترك والحفظ التلقائي في تطبيقات سطح المكتب للمستندات المسماة والمشتفرة في SharePoint وOneDrive.
-ms.openlocfilehash: f2a1bffdc156d5c3ae35ac38fb92f1f88c3af3ea
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 80fbc8b598f07efec761e9222612345601f1994e
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749188"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944208"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>تمكين التأليف المشترك للملفات المشفرة بتسميات الحساسية
 
@@ -83,6 +83,7 @@ ms.locfileid: "66749188"
     
     - **Azure حماية البيانات عميل وصف موحد وماسح ضوئي:**
         - الحد الأدنى للإصدار [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) الذي يمكنك تثبيته من [مركز تنزيل Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
+        - بالنسبة لتطبيقات Office، يتطلب الحد الأدنى من الإصدارات المدرجة Microsoft 365 Apps for enterprise
     
     - **تطبيق المزامنة من OneDrive لنظام التشغيل Windows أو macOS:**
         - الحد الأدنى للإصدار 19.002.0121.0008
