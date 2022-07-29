@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: يمكن للمسؤولين تمكين دعم وصف الحساسية لملفات Word وExcel وPowerPoint في SharePoint وOneDrive.
-ms.openlocfilehash: 15985ea95c3e4a562a4cbc51f84a10af2592d53f
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: b995d1b97676eb3251c33069ed20f9ce382a61bb
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687685"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069658"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive
 
@@ -274,6 +274,9 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 ## <a name="next-steps"></a>الخطوات التالية
 
-بعد تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive، ضع في اعتبارك تسمية هذه الملفات تلقائيا باستخدام نهج التسمية التلقائية. لمزيد من المعلومات، راجع [تطبيق وصف الحساسية على المحتوى تلقائيا](apply-sensitivity-label-automatically.md).
+بعد تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive، ضع في اعتبارك تسمية الملفات تلقائيا باستخدام أي من أساليب التسمية التالية أو كليهما:
+
+- تطبيق وصف حساسية افتراضي لمكتبات المستندات، للملفات الجديدة والمحررة في SharePoint. لمزيد من المعلومات، راجع [تكوين وصف حساسية افتراضي لمكتبة مستندات SharePoint](sensitivity-labels-sharepoint-default-label.md).
+- نهج التسمية التلقائية التي تستخدم فحص المحتوى للملفات في SharePoint وOneDrive. لمزيد من المعلومات، راجع [تطبيق وصف الحساسية على المحتوى تلقائيا](apply-sensitivity-label-automatically.md).
 
 هل تحتاج إلى مشاركة مستنداتك المسماة والمتشفرة مع أشخاص من خارج مؤسستك؟  راجع [مشاركة المستندات المشفرة مع مستخدمين خارجيين](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).

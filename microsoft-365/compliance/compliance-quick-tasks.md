@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: 5e5b0aa9efb5d00602bba39ca18ef582cf34271a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 39af52a0c2b402a007899c0f13e718d4b90eada1
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632630"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071492"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>المهام السريعة لبدء التوافق في Microsoft Purview
 
@@ -37,7 +37,7 @@ ms.locfileid: "66632630"
 
 ابدأ بتعيين أذونات التوافق للأشخاص في مؤسستك حتى يتمكنوا من تنفيذ هذه المهام ومنع الأشخاص غير المصرح لهم من الوصول إلى مناطق خارج مسؤولياتهم. ستحتاج إلى التأكد من تعيين الأشخاص المناسبين إلى **مسؤول بيانات التوافق** وأدوار **مسؤول التوافق** قبل البدء في تكوين حلول التوافق المضمنة في Microsoft 365 وتنفيذها. ستحتاج أيضا إلى تعيين مستخدمين لدور القارئ العمومي ل Azure Active Directory لعرض البيانات في Compliance Manager.
 
-للحصول على إرشادات مفصلة خطوة بخطوة لتكوين الأذونات وتعيين الأشخاص لأدوار المسؤول، راجع [الأذونات في مركز توافق & الأمان](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+للحصول على إرشادات مفصلة خطوة بخطوة لتكوين الأذونات وتعيين الأشخاص لأدوار المسؤول، راجع [الأذونات في مدخل التوافق في Microsoft Purview](/microsoft-365/compliance/microsoft-365-compliance-center-permissions).
 
 ## <a name="task-2-know-your-state-of-compliance"></a>المهمة 2: معرفة حالة التوافق
 

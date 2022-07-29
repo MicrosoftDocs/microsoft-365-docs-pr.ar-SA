@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: عند إنشاء وصف حساسية، يمكنك تعيين تسمية تلقائيا للملفات ورسائل البريد الإلكتروني، أو يمكنك مطالبة المستخدمين بتحديد التسمية التي توصي بها.
-ms.openlocfilehash: bdf45f614434c5097a9c5ce656c94cab01a462b6
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 8c7ffa9ca56806daecb086dc828002eff3ccd663
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696021"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069592"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>تطبيق تسمية حساسية على المحتوى تلقائياً
 
@@ -457,7 +457,9 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 
 على الرغم من أن التسمية التلقائية هي واحدة من أكثر الطرق كفاءة لتصنيف ملفات Office التي تمتلكها مؤسستك وتسميتها وحمايتها، فتحقق مما إذا كان يمكنك إكمالها بأي من الطرق التالية لزيادة وصولك إلى التسمية:
 
-- باستخدام SharePoint Syntex، يمكنك [تطبيق وصف الحساسية على نموذج فهم المستندات](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)، بحيث يتم تسمية المستندات المحددة في مكتبة SharePoint تلقائيا.
+- بالنسبة لمكتبات مستندات SharePoint، يمكنك تطبيق وصف حساسية افتراضي للملفات الجديدة والمحررة. لمزيد من المعلومات، راجع [تكوين وصف حساسية افتراضي لمكتبة مستندات SharePoint](sensitivity-labels-sharepoint-default-label.md).
+
+- باستخدام SharePoint Syntex، يمكنك [تطبيق وصف الحساسية على نموذج فهم المستندات](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)، بحيث يتم تسمية المستندات المحددة في مكتبة مستندات SharePoint تلقائيا.
 
 - عند استخدام [عميل التسمية الموحد ل Azure حماية البيانات](/azure/information-protection/rms-client/aip-clientv2):
 

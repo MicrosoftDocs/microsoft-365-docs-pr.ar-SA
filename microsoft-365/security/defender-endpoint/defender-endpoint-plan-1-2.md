@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 78d5e0c8b3b8405dcd4e0a33b315e000d661b7f4
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
+ms.openlocfilehash: 43d07f2ec10117232e7ac1317bec1f8216bc62ae
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004464"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071602"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>مقارنة خطط أمان نقطة النهاية من Microsoft
 
@@ -47,7 +47,7 @@ ms.locfileid: "67004464"
 | [Defender لنقطة النهاية الخطة 1](defender-endpoint-plan-1.md) <sup>[[1](#fn1)]</sup> | <ul><li>[حماية الجيل التالي](defender-endpoint-plan-1.md#next-generation-protection) (بما في ذلك مكافحة البرامج الضارة ومكافحة الفيروسات)</li><li>[قواعد تقليل الأجزاء المعرضة للهجوم](defender-endpoint-plan-1.md#attack-surface-reduction)</li><li> [إجراءات الاستجابة اليدوية](defender-endpoint-plan-1.md#manual-response-actions)</li><li>[الإدارة المركزية](defender-endpoint-plan-1.md#centralized-management)</li><li>[تقارير الأمان](defender-endpoint-plan-1.md#reporting)</li><li>[واجهات برمجه التطبيقات](defender-endpoint-plan-1.md#apis)</li><li>[دعم أجهزة Windows 10 وiOS وAndroid OS وmacOS](defender-endpoint-plan-1.md#cross-platform-support)</li></ul>|
 | [Defender لنقطة النهاية الخطة 2](microsoft-defender-endpoint.md) <sup>[[2](#fn2)]</sup> | جميع إمكانيات Defender for Endpoint Plan 1، بالإضافة إلى:<ul><li>[اكتشاف الجهاز](device-discovery.md)</li><li>[بيانات الجهاز](machines-view-overview.md)</li><li>[قدرات إدارة الثغرات الأمنية في Core Defender](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[تحليلات التهديدات](threat-analytics.md)</li><li>[التحقيق التلقائي والاستجابة (AIR)](automated-investigations.md)</li><li>[الصيد المتقدم](advanced-hunting-overview.md)</li><li>[الكشف عن نقطة النهاية والاستجابة لها](overview-endpoint-detection-response.md)</li><li>[خبراء المخاطر في Microsoft](microsoft-threat-experts.md)</li><li>دعم [Windows](configure-endpoints.md) (العميل والخادم) [والأنظمة الأساسية غير التابعة ل Windows](configure-endpoints-non-windows.md) (macOS وiOS وAndroid وLinux)</li></ul> |
 | [الوظيفة الإضافية Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | المزيد من قدرات إدارة الثغرات الأمنية ل Defender لخطة نقطة النهاية 2:<ul><li>[تقييم خطوط الأمان الأساسية](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[حظر التطبيقات المعرضة للخطر](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[ملحقات المستعرض](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[تقييم الشهادات الرقمية](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[تحليل مشاركة الشبكة](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>دعم [Windows](configure-endpoints.md) (العميل والخادم) [والأنظمة الأساسية غير التابعة ل Windows](configure-endpoints-non-windows.md) (macOS وiOS وAndroid وLinux)</li></ul> |
-| [Defender for Business](../defender-business/mdb-overview.md) <sup>[[3](#fn3)]</sup> <br/>و<br/>[Microsoft 365 Business Premium](../../business-premium/index.md) | تتضمن [الخدمات المحسنة للشركات الصغيرة والمتوسطة الحجم](../defender-business/compare-mdb-m365-plans.md) ما يلي: <ul><li>حماية البريد الإلكتروني</li><li>حماية Antispam</li><li>الحماية من البرامج الضارة</li><li>حماية الجيل التالي</li><li>قواعد تقليل الأجزاء المعرضة للهجوم</li><li>الكشف عن نقطة النهاية والاستجابة لها</li><li>التحقيق التلقائي والاستجابة (AIR) </li><li>التهديدات وإدارة الثغرات الأمنية</li><li>إعداد التقارير المركزية</li><li>واجهات برمجة التطبيقات (للتكامل مع التطبيقات المخصصة أو حلول التقارير)</li><li>[التكامل مع Microsoft 365 Lighthouse](../defender-business/mdb-lighthouse-integration.md)</li></ul> |
+| [Defender for Business](../defender-business/mdb-overview.md) <sup>[[3](#fn3)]</sup>  | تتضمن [الخدمات المحسنة للشركات الصغيرة والمتوسطة الحجم](../defender-business/compare-mdb-m365-plans.md) ما يلي: <ul><li>حماية البريد الإلكتروني</li><li>حماية Antispam</li><li>الحماية من البرامج الضارة</li><li>حماية الجيل التالي</li><li>قواعد تقليل الأجزاء المعرضة للهجوم</li><li>الكشف عن نقطة النهاية والاستجابة لها</li><li>التحقيق التلقائي والاستجابة (AIR) </li><li>التهديدات وإدارة الثغرات الأمنية</li><li>إعداد التقارير المركزية</li><li>واجهات برمجة التطبيقات (للتكامل مع التطبيقات المخصصة أو حلول التقارير)</li><li>[التكامل مع Microsoft 365 Lighthouse](../defender-business/mdb-lighthouse-integration.md)</li></ul> |
 
 (<a id="fn1">1</a>) يتوفر Microsoft Defender لنقطة النهاية الخطة 1 كتكوين اشتراك مستقل للعملاء التجاريين والتعليمين. كما يتم تضمينه كجزء من Microsoft 365 E3/A3.
 

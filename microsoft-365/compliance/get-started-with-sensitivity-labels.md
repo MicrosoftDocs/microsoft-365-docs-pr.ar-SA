@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: خطوات توجيهية للمسؤولين ومتطلبات الترخيص والسيناريوهات الشائعة التي تستخدم تسميات الحساسية للمساعدة في حماية بيانات مؤسستك.
-ms.openlocfilehash: 84e111bbcc6b0d12f1f209993b9c9a0404fa7a77
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2a82a788ae766050c663d3d35332470aa48d9a20
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949316"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069636"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>بدء استخدام تسميات الحساسية
 
@@ -94,6 +94,7 @@ ms.locfileid: "66949316"
 |توسيع التسمية إلى مستكشف الملفات وPowerShell، مع ميزات إضافية لتطبيقات Office على Windows (إذا لزم الأمر)|[عميل تسمية موحد ل Azure حماية البيانات لنظام التشغيل Windows](/azure/information-protection/rms-client/aip-clientv2)|
 |تشفير المستندات ورسائل البريد الإلكتروني باستخدام تسميات الحساسية وتقييد الأشخاص الذين يمكنهم الوصول إلى هذا المحتوى وكيفية استخدامه |[تقييد الوصول إلى المحتوى باستخدام تسميات الحساسية لتطبيق التشفير](encryption-sensitivity-labels.md)|
 |تمكين أوصاف الحساسية Office على الويب، مع دعم التأليف المشترك، eDiscovery، منع فقدان البيانات، البحث - حتى عندما يتم تشفير المستندات | [تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
+|تسمية الملفات في SharePoint تلقائيا بتسمية حساسية افتراضية | [تكوين وصف حساسية افتراضي لمكتبة مستندات SharePoint](sensitivity-labels-sharepoint-default-label.md)
 |استخدام التأليف المشترك والحفظ التلقائي في تطبيقات Office لسطح المكتب عند تشفير المستندات | [تمكين التأليف المشترك للملفات المشفرة بتسميات الحساسية](sensitivity-labels-coauthoring.md)
 |تطبيق أوصاف الحساسية تلقائيا على المستندات ورسائل البريد الإلكتروني | [تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md)|
 |استخدام تسميات الحساسية لحماية المحتوى في Teams وSharePoint |[استخدام تسميات الحساسية مع Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint](sensitivity-labels-teams-groups-sites.md)|

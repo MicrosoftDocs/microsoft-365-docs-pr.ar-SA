@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: be57910a1f6b2387a1b826e6cff17e418ec3da2b
-ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
+ms.openlocfilehash: 32eb46a4acd51c65681607e1fb122ac4542f7dd9
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66795367"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069614"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>مقارنة ميزات الأمان في خطط Microsoft 365 للشركات الصغيرة والمتوسطة الحجم
 
@@ -30,31 +30,24 @@ ms.locfileid: "66795367"
 
 **استخدم هذه المقالة ل**:
 
-- [قارن Defender for Business (مستقل) مع Microsoft 365 Business Premium](#compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium).
+- [مقارنة Microsoft Defender for Business ب Microsoft 365 Business Premium](#compare-microsoft-defender-for-business-to-microsoft-365-business-premium).
 - [قارن Defender for Business (مستقل) بعروض مؤسسة Defender for Endpoint](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2).
 
 > [!TIP]
-> يتوفر Defender for Business كحل أمني مستقل للشركات الصغيرة والمتوسطة الحجم. كما أنها مضمنة في Microsoft 365 Business Premium. إذا كان لديك بالفعل Microsoft 365 Business Basic أو قياسي، ففكر في الترقية إلى Microsoft 365 Business Premium أو إضافة Defender for Business إلى اشتراكك للحصول على المزيد من قدرات الحماية من التهديدات لأجهزتك.
+> يتوفر Defender for Business كحل أمني مستقل للشركات الصغيرة والمتوسطة الحجم. تم تضمين Defender for Business الآن في Microsoft 365 Business Premium. إذا كان لديك بالفعل Microsoft 365 Business Basic أو قياسي، ففكر في الترقية إلى Microsoft 365 Business Premium أو إضافة Defender for Business إلى اشتراكك الحالي للحصول على المزيد من قدرات الحماية من التهديدات لأجهزتك.
 
-## <a name="compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>مقارنة ميزات الأمان في Microsoft Defender for Business مع Microsoft 365 Business Premium
+## <a name="compare-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>مقارنة Microsoft Defender for Business ب Microsoft 365 Business Premium
 
 > [!NOTE]
-> توفر هذه المقالة نظرة عامة عالية المستوى على ميزات الحماية من التهديدات المضمنة في Microsoft Defender for Business (كخطط مستقلة) Microsoft 365 Business Premium (والتي تتضمن Defender for Business). ليس المقصود منه أن يكون وصفا للخدمة أو مستند عقد ترخيص. لمزيد من المعلومات التفصيلية، راجع [إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> توفر هذه المقالة نظرة عامة عالية المستوى حول الميزات والقدرات المضمنة في Microsoft Defender for Business (كخطط مستقلة) Microsoft 365 Business Premium (والتي تتضمن Defender for Business). ليس المقصود منه أن يكون وصفا للخدمة أو مستند عقد ترخيص. لمزيد من المعلومات التفصيلية، راجع [إرشادات ترخيص Microsoft 365 للامتثال & الأمان](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-يتوفر Defender for Business أيضا باعتباره اشتراكا مستقلا، كما أنه مضمن في Microsoft 365 Business Premium. يقارن الجدول التالي ميزات الأمان وإمكانياته في Defender for Business (مستقل) مع Microsoft 365 Business Premium.
+| Microsoft Defender for Business (مستقل) | Microsoft 365 Business Premium |
+|:---|:---|
+| <br/>تتضمن قدرات الحماية من الفيروسات والبرامج الضارة والحماية من برامج الفدية الضارة للأجهزة ما يلي: <ul><li>[حماية الجيل التالي](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) (الحماية من الفيروسات/الحماية من البرامج الضارة على الأجهزة جنبا إلى جنب مع حماية السحابة)</li><li>[تقليل الأجزاء المعرضة للهجوم](../defender-endpoint/overview-attack-surface-reduction.md) (حماية الشبكة وجدار الحماية وقواعد تقليل الأجزاء <sup>[المعرضة](#fna) للهجوم) [a]</sup></li><li>[الكشف عن نقطة النهاية والاستجابة](../defender-endpoint/overview-endpoint-detection-response.md) لها (إجراءات الكشف والاستجابة اليدوية المستندة إلى السلوك)</li><li>[التحقيق التلقائي والاستجابة](../defender/m365d-autoir.md) (مع الإصلاح الذاتي للتهديدات المكتشفة)</li><li>[إدارة المخاطر والثغرات الأمنية](mdb-view-tvm-dashboard.md) (عرض الأجهزة والتوصيات المكشوفة)</li><li>[دعم عبر الأنظمة الأساسية للأجهزة](mdb-onboard-devices.md) (Windows وMac وiOS وAndroid) <sup>[[b](#fnb)]</sup></li><li>[الإدارة المركزية وإعداد التقارير](mdb-get-started.md) (مدخل Microsoft 365 Defender)</li><li>[واجهات برمجة التطبيقات للتكامل](../defender-endpoint/management-apis.md) (لشركاء Microsoft أو الأدوات والتطبيقات المخصصة)</li></ul> | تتضمن قدرات الإنتاجية والأمان ما يلي:<ul><li>[Microsoft 365 Business Standard](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (تطبيقات وخدمات Office وMicrosoft Teams)</li><li>[تنشيط الكمبيوتر المشترك](/deployoffice/overview-shared-computer-activation) (لنشر Microsoft 365 Apps)</li><li>[Windows 10/11 Business](../../business-premium/m365bp-upgrade-windows-10-pro.md) (الترقية من الإصدارات السابقة من Windows Pro)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (لإعداد أجهزة Windows وتكوينها)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (مكافحة الفيش، ومكافحة الspam، ومكافحة البرامج الضارة، والانتحال الذكي للبريد الإلكتروني)</li><li>[Defender for Business](mdb-overview.md) (الحماية من الفيروسات والبرامج الضارة وحماية برامج الفدية للأجهزة) </li><li>[Microsoft Defender لـ Office 365 الخطة 1](../office-365-security/overview.md) (مكافحة الكتابة المتقدمة، والكشف في الوقت الحقيقي، والمرفقات الآمنة، والارتباطات الآمنة)</li><li>[التوسيع التلقائي لأرشفة](../../compliance/autoexpanding-archiving.md) (للبريد الإلكتروني)</li><li>[الخطة 1 من Azure Active Directory Premium](/azure/active-directory/fundamentals/active-directory-whatis) (إدارة الهوية)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (إلحاق الجهاز وإدارته)</li><li>[Azure حماية البيانات الخطة 1 المتميزة](/azure/information-protection/what-is-information-protection) (حماية المعلومات الحساسة)</li><li>[Azure Virtual Desktop](/azure/virtual-desktop/overview) (الأجهزة الظاهرية الآمنة المدارة مركزيا في السحابة)</li></ul> |
 
-|الميزة/القدرة|[Microsoft Defender for Business](mdb-overview.md)<br/>(مستقل)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(بما في ذلك Defender for Business)|
-|---|---|---|
-|حماية البريد الإلكتروني|نعم <br/>[مسح البريد الإلكتروني باستخدام برنامج الحماية من الفيروسات من Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|نعم <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[مسح البريد الإلكتروني باستخدام برنامج الحماية من الفيروسات من Microsoft Defender](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
-|حماية Antispam|نعم<br/>للأجهزة|نعم <ul><li>للأجهزة</li><li>لمحتوى البريد الإلكتروني ل Microsoft 365، مثل الرسائل والمرفقات</li></ul>|
-|الحماية من البرامج الضارة|نعم<br/>للأجهزة|نعم<ul><li>للأجهزة</li><li>لمحتوى البريد الإلكتروني ل Microsoft 365، مثل الرسائل والمرفقات</li></ul>|
-|[حماية الجيل التالي](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (الحماية من الفيروسات والحماية من البرامج الضارة للأجهزة الملحقة)|نعم |نعم |
-|[قواعد تقليل الأجزاء المعرضة للهجوم](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(قواعد ASR في Windows 10 أو الأحدث وحماية جدار الحماية)|نعم|نعم|
-|[الكشف عن نقطة النهاية والاستجابة لها](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(إجراءات الكشف والاستجابة اليدوية المستندة إلى السلوك)|نعم|نعم|
-|[التحقيق التلقائي والاستجابة (AIR)](../defender-endpoint/automated-investigations.md)|نعم|نعم|
-|[التهديدات وإدارة الثغرات الأمنية](../defender-endpoint/tvm-dashboard-insights.md)|نعم|نعم|
-|الإدارة المركزية وإعداد التقارير|نعم|نعم|
-|[واجهات برمجه التطبيقات](../defender-endpoint/apis-intro.md) <br/>(للتكامل مع التطبيقات المخصصة أو حلول التقارير)|نعم|نعم|
+(<a id="fna">أ</a>) Microsoft Intune مطلوب لتعديل قواعد تقليل الأجزاء المعرضة للهجوم أو تخصيصها.
+
+(<a id="fnb">ب</a>) Microsoft Intune مطلوب لإلحاق أجهزة iOS وAndroid. راجع [الأجهزة الملحقة Microsoft Defender for Business](mdb-onboard-devices.md).
 
 ## <a name="compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2"></a>مقارنة Microsoft Defender for Business بالخطط Microsoft Defender لنقطة النهاية 1 و2
 
@@ -93,6 +86,8 @@ ms.locfileid: "66795367"
 (<a id="fn6">6</a>) راجع [الأجهزة الملحقة Microsoft Defender for Business](mdb-onboard-devices.md).
 
 (<a id="fn7">7</a>) القدرة على عرض الحوادث عبر المستأجرين باستخدام Defender لنقطة النهاية جديدة!
+
+راجع أيضا [مقارنة خطط أمان نقطة نهاية Microsoft](../defender-endpoint/defender-endpoint-plan-1-2.md).
 
 ## <a name="next-steps"></a>الخطوات التالية
 

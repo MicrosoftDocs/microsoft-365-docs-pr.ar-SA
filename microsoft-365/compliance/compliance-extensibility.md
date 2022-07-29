@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على توسيع حلول Microsoft Purview باستخدام موصلات بيانات الجهات الخارجية وواجهات برمجة تطبيقات Microsoft Graph.
-ms.openlocfilehash: 8cda9ea3a5ef69af69ab802ca21aa8c4c0e716b9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7082f98cce61dce8130de6de69d2a52f827dcd13
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621172"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071536"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>إمكانية توسعة Microsoft Purview وقابلية Microsoft Priva
 
@@ -41,7 +41,7 @@ ms.locfileid: "66621172"
 
 توفر Microsoft موصلات بيانات تابعة لجهة خارجية يمكن تكوينها في مدخل التوافق في Microsoft Purview. للحصول على قائمة بموصلات البيانات التي توفرها Microsoft، راجع جدول [موصلات البيانات التابعة لجهة خارجية](archiving-third-party-data.md#third-party-data-connectors) . يلخص جدول موصلات البيانات التابعة لجهة خارجية أيضا حلول التوافق التي يمكنك تطبيقها على بيانات الجهات الخارجية بعد استيراد البيانات وأرشفتها في Microsoft 365، وارتباطات إلى الإرشادات المفصلة خطوة بخطوة لكل موصل.
 
-لمعرفة المزيد حول موصلات بيانات Microsoft 365، راجع [أرشفة بيانات الجهات الخارجية](archiving-third-party-data.md). إذا لم يكن نوع بيانات جهة خارجية مدعوما من قبل موصلات البيانات المتوفرة في مدخل التوافق، يمكنك العمل مع شريك يمكنه تزويدك بموصل مخصص. للحصول على قائمة بالشركاء الذين يمكنك العمل معهم والعملية المفصلة خطوة بخطوة لهذا الأسلوب، راجع ["العمل مع شريك" لأرشفة بيانات الجهات الخارجية](work-with-partner-to-archive-third-party-data.md).
+لمعرفة المزيد حول Microsoft Purview Data Connectors، راجع [أرشفة بيانات الجهات الخارجية](archiving-third-party-data.md). إذا لم يكن نوع بيانات جهة خارجية مدعوما من قبل موصلات البيانات المتوفرة في مدخل التوافق، يمكنك العمل مع شريك يمكنه تزويدك بموصل مخصص. للحصول على قائمة بالشركاء الذين يمكنك العمل معهم والعملية المفصلة خطوة بخطوة لهذا الأسلوب، راجع ["العمل مع شريك" لأرشفة بيانات الجهات الخارجية](work-with-partner-to-archive-third-party-data.md).
 
 ### <a name="prerequisites-for-data-connectors"></a>المتطلبات الأساسية لموصلات البيانات
 

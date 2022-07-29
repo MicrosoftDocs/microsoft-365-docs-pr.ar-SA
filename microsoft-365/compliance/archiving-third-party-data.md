@@ -21,12 +21,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: تعرف على كيفية استيراد بيانات الجهات الخارجية وأرشفتها من منصات وسائل التواصل الاجتماعي وأنظمة المراسلة الفورية وأنظمة التعاون الأساسية للمستندات إلى علب بريد Microsoft 365.
-ms.openlocfilehash: b27d45577b98c1eef0f3dab11412f048adff6bcd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 41a7b37980919e28ecb4dbfd6e28b5d08b905a3d
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637538"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071646"
 ---
 # <a name="learn-about-connectors-for-third-party-data"></a>التعرّف على الموصلات لبيانات الأطراف الخارجية
 
@@ -48,7 +48,7 @@ ms.locfileid: "66637538"
 
 - [CellTrust](#celltrust-data-connectors)
 
-يتم استيراد بيانات الجهات الخارجية المدرجة في الأقسام التالية (باستثناء بيانات الموارد البشرية وبيانات التالفة الفعلية المستخدمة لحل إدارة المخاطر في Microsoft 365 Insider) إلى علب بريد المستخدمين. يتم تطبيق حلول Microsoft Purview التي تدعم بيانات الجهات الخارجية على علبة بريد المستخدم حيث يتم تخزين البيانات.
+يتم استيراد بيانات الجهات الخارجية المدرجة في الأقسام التالية (باستثناء بيانات الموارد البشرية وبيانات التالفة الفعلية المستخدمة لحل إدارة المخاطر الداخلية في Microsoft Purview) إلى علب بريد المستخدمين. يتم تطبيق حلول Microsoft Purview التي تدعم بيانات الجهات الخارجية على علبة بريد المستخدم حيث يتم تخزين البيانات.
 
 ### <a name="microsoft-data-connectors"></a>موصلات بيانات Microsoft
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-compliance
 - zerotrust-solution
 description: إرشادات توجيهية لنشر حماية البيانات في Microsoft Purview لمؤسستك.
-ms.openlocfilehash: 9cbf7f98cb3a758b06c2060f27b179a0e20d556b
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 4954680126bc4390f88c28819950032aab36348b
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: ar-SA
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748352"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069444"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>نشر حل حماية المعلومات باستخدام Microsoft Purview
 
@@ -70,7 +70,7 @@ ms.locfileid: "66748352"
 |خطوه|الوصف|معلومات إضافية|
 |:---|-----------|:---------------|
 | 1|حدد [أوصاف الحساسية](sensitivity-labels.md) والنهج التي ستحمي بيانات مؤسستك. <br /><br />بالإضافة إلى تحديد حساسية المحتوى، يمكن لهذه التسميات تطبيق إجراءات الحماية، مثل الرؤوس والتذييلات والعلامات المائية والتشفير. | [بدء استخدام تسميات الحساسية](get-started-with-sensitivity-labels.md) <br /><br /> [إنشاء وتكوين تسميات الحساسية ونهجها](create-sensitivity-labels.md) <br /><br /> [تقييد الوصول إلى المحتوى باستخدام تسميات الحساسية لتطبيق التشفير](encryption-sensitivity-labels.md) |
-| 2|تسمية العناصر وحمايتها لتطبيقات وخدمات Microsoft 365. <br /><br />يتم دعم تسميات الحساسية ل Microsoft 365 Word وExcel وPowerPoint وOutlook والحاويات التي تتضمن مواقع SharePoint وOneDrive ومجموعات Microsoft 365. استخدم مجموعة من أساليب التسمية مثل التسمية اليدوية والتسمية التلقائية والتسمية الافتراضية والتسمية الإلزامية.| [إدارة تسميات الحساسية في تطبيقات Office](sensitivity-labels-office-apps.md) <br /><br /> [تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive](sensitivity-labels-sharepoint-onedrive-files.md) <br /><br /> [تمكين التأليف المشترك للملفات المشفرة بتسميات الحساسية](sensitivity-labels-coauthoring.md) <br /><br /> [تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /><br /> [استخدام تسميات الحساسية مع Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint](sensitivity-labels-teams-groups-sites.md) <br /><br /> [استخدام تسميات الحساسية لتعيين ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint وOneDrive](sensitivity-labels-default-sharing-link.md) <br /><br /> [تطبيق وصف الحساسية على نموذج في Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) <br /><br /> [أوصاف الحساسية في Power BI](/power-bi/admin/service-security-sensitivity-label-overview) |
+| 2|تسمية العناصر وحمايتها لتطبيقات وخدمات Microsoft 365. <br /><br />يتم دعم تسميات الحساسية ل Microsoft 365 Word وExcel وPowerPoint وOutlook والحاويات التي تتضمن مواقع SharePoint وOneDrive ومجموعات Microsoft 365. استخدم مجموعة من أساليب التسمية مثل التسمية اليدوية والتسمية التلقائية والتسمية الافتراضية والتسمية الإلزامية.| [إدارة تسميات الحساسية في تطبيقات Office](sensitivity-labels-office-apps.md) <br /><br /> [تمكين تسميات الحساسية لملفات Office في SharePoint وOneDrive](sensitivity-labels-sharepoint-onedrive-files.md) <br /><br /> [تمكين التأليف المشترك للملفات المشفرة بتسميات الحساسية](sensitivity-labels-coauthoring.md) <br /><br /> [تكوين وصف حساسية افتراضي لمكتبة مستندات SharePoint](sensitivity-labels-sharepoint-default-label.md) <br /><br /> [تطبيق تسمية حساسية على المحتوى تلقائياً](apply-sensitivity-label-automatically.md) <br /><br /> [استخدام تسميات الحساسية مع Microsoft Teams ومجموعات Microsoft 365 ومواقع SharePoint](sensitivity-labels-teams-groups-sites.md) <br /><br /> [استخدام تسميات الحساسية لتعيين ارتباط المشاركة الافتراضي للمواقع والمستندات في SharePoint وOneDrive](sensitivity-labels-default-sharing-link.md) <br /><br /> [تطبيق وصف الحساسية على نموذج في Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) <br /><br /> [أوصاف الحساسية في Power BI](/power-bi/admin/service-security-sensitivity-label-overview) |
 |3|اكتشف العناصر الحساسة الموجودة في مخازن البيانات في السحابة وقم بتسميتها وحمايتها باستخدام [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) مع تسميات الحساسية الخاصة بك.| [اكتشاف البيانات المنظمة والحساسة المخزنة في السحابة وتصنيفها وتسميتها وحمايتها](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |4|اكتشف العناصر الحساسة الموجودة في مخازن البيانات في أماكن العمل وقم بتسميتها وحمايتها من خلال توزيع [الماسح الضوئي الموحد للوصف في Azure حماية البيانات](/azure/information-protection/deploy-aip-scanner) مع تسميات الحساسية الخاصة بك.| [تكوين الماسح الضوئي الموحد للوصف حماية البيانات Azure وتثبيته](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |5|قم بتوسيع تسميات الحساسية الخاصة بك إلى Azure باستخدام [Microsoft Purview Data Map](/azure/purview/overview)، لاكتشاف العناصر وتسميتها ل Azure Blob Storage وملفات Azure Azure Data Lake Storage Gen1 Azure Data Lake Storage Gen12. | [التسمية في Microsoft Purview Data Map](/azure/purview/create-sensitivity-label)|
